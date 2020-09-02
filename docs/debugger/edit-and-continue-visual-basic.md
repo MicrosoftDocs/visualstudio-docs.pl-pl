@@ -1,5 +1,5 @@
 ---
-title: Edytuj i Kontynuuj (Visual Basic) | Dokumentacja firmy Microsoft
+title: Edytuj i Kontynuuj (Visual Basic) | Microsoft Docs
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,34 +20,34 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62851252"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Edytuj i kontynuuj (Visual Basic)
-Edytuj i Kontynuuj jest funkcją, aby uzyskać [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] debugowania, która umożliwia zmianę kodu, podczas wykonywania w trybie przerwania. Po zastosowaniu edycji kodu można wznowić wykonywania kodu za pomocą nowego edycji w miejscu i zobaczyć efekt.
+Edytuj i Kontynuuj to funkcja [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] debugowania, która umożliwia zmianę kodu podczas wykonywania w trybie przerwania. Po zastosowaniu zmian w kodzie można wznowić wykonywanie kodu przy użyciu nowych zmian w miejscu i zobaczyć efekt.
 
- Możesz użyć edycji i kontynuowania funkcji zawsze wtedy, gdy tryb przerwania. W trybie przerwania, wskaźnika instrukcji, żółty grot strzałki w oknie źródłowym wskazuje na wiersz zawierający instrukcji wykonywalnej w treści metody lub właściwości, który ma być wykonany dalej.
+ Możesz użyć funkcji Edytuj i Kontynuuj za każdym razem, gdy wprowadzisz tryb Break. W trybie przerwania wskaźnik instrukcji, żółta strzałka w oknie źródło, wskazuje wiersz zawierający instrukcję wykonywalną w metodzie lub treści właściwości, która zostanie wykonana dalej.
 
- Edytuj i Kontynuuj obsługuje większość zmian, które można wprowadzić podczas sesji debugowania, ale istnieją pewne wyjątki. Aby uzyskać więcej informacji, zobacz [obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md).
+ Polecenie Edytuj i Kontynuuj obsługuje większość zmian, które mogą zostać wprowadzone podczas sesji debugowania, ale istnieją pewne wyjątki. Aby uzyskać więcej informacji, zobacz [obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md).
 
- Po wprowadzeniu nieautoryzowane zmiany, zmiana jest oznaczona za pomocą purpurowy falistą i zadaniem jest wyświetlana na liście zadań. Jeśli chcesz nadal korzystać, Edytuj i Kontynuuj, musisz cofnąć nieautoryzowane zmiany. Może być dozwolony nieautoryzowanych zmian, jeśli będą wykonywane poza Edytuj i Kontynuuj. Jeśli chcesz zachować wyniki nieautoryzowanych edycji, należy zatrzymać debugowanie i ponownie uruchom aplikację.
+ Po wprowadzeniu nieautoryzowanej edycji zmiana jest oznaczona przy użyciu purpurowego podkreślenia, a zadanie jest wyświetlane w Lista zadań. Jeśli chcesz kontynuować korzystanie z polecenia Edytuj i Kontynuuj, musisz cofnąć nieautoryzowaną edycję. Niektóre nieautoryzowane zmiany mogą być dozwolone, jeśli są gotowe poza Edytuj i Kontynuuj. Jeśli chcesz zachować wyniki takiej nieautoryzowanej edycji, musisz zatrzymać debugowanie i ponownie uruchomić aplikację.
 
- Edytuj i Kontynuuj jest obsługiwana w aplikacjach platformy uniwersalnej systemu Windows dla systemu Windows 10 i x86 i x64 aplikacji, przeznaczonych dla platformy .NET Framework 4.6 pulpitu lub nowszej wersji (.NET Framework jest tylko wersja desktop).
+ Polecenie Edytuj i Kontynuuj jest obsługiwane w aplikacjach platformy UWP dla systemu Windows 10 oraz dla aplikacji x86 i x64 przeznaczonych dla komputerów z systemem .NET Framework 4,6 lub nowszym (.NET Framework jest tylko wersja klasyczna).
 
  > [!NOTE]
- > Platform i nieobsługiwanych aplikacji obejmują platformy ASP.NET 5, Silverlight 5 i Windows 8.1.
+ > Nieobsługiwane aplikacje i platformy obejmują ASP.NET 5, Silverlight 5 i Windows 8.1.
 
- Edytuj i Kontynuuj nie jest obsługiwana podczas uruchamiania debugowania przy użyciu **dołączyć do procesu**. Edytuj i Kontynuuj nie jest obsługiwane dla zoptymalizowanego kodu lub mieszane kodu zarządzanego i natywnego. Aby uzyskać więcej informacji, zobacz [obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md).
+ Polecenia Edytuj i Kontynuuj nie są obsługiwane po rozpoczęciu debugowania za pomocą **dołączania do procesu**. Tryb Edytuj i Kontynuuj nie jest obsługiwany w przypadku zoptymalizowanego kodu lub kodu zarządzanego i natywnego. Aby uzyskać więcej informacji, zobacz [obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md).
 
- Tematy w tej sekcji zawierają dodatkowe szczegóły dotyczące sposobu używania tej funkcji i jakiego rodzaju zmiany są niedozwolone.
+ Tematy w tej sekcji zawierają dodatkowe informacje na temat sposobu korzystania z tej funkcji oraz tego, jakiego rodzaju zmiany są niedozwolone.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Instrukcje: Zastosowanie zmian w trybie przerwania z funkcją Edytuj i Kontynuuj](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md) wyjaśnia sposób stosowania zmian kodu w trybie przerwania.
+ [Instrukcje: stosowanie edycji w trybie przerwania za pomocą Edytuj i Kontynuuj](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md) Wyjaśnia, jak zastosować edycje kodu w trybie przerwania.
 
- [Obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md) w tym artykule opisano, jakie typy zmian nie mogą być wykonywane w [!INCLUDE [vb_current_short](../debugger/includes/vb_current_short_md.md)] Edytuj i Kontynuuj.
+ [Obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md) Opisuje rodzaje edycji, które nie mogą być wykonywane w [!INCLUDE [vb_current_short](../debugger/includes/vb_current_short_md.md)] Edytuj i Kontynuuj.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Edytuj i Kontynuuj](../debugger/edit-and-continue.md) zawiera listę tematów dotyczących Edytuj i Kontynuuj.
+ [Edytuj i Kontynuuj](../debugger/edit-and-continue.md) Zawiera listę tematów dotyczących Edytuj i Kontynuuj.

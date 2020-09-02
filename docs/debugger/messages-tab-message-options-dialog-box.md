@@ -1,5 +1,5 @@
 ---
-title: Karta komunikaty, okno dialogowe opcji komunikatów | Dokumentacja firmy Microsoft
+title: Karta komunikaty, okno dialogowe Opcje komunikatów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,31 +11,31 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: de50e6fe997ce10266cbb51f2fd91c318ab2bd1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62905535"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Karta Komunikaty, okno dialogowe opcji komunikatów
-Użyj **wiadomości** kartę, aby wybrać, które wiadomości typów do listy w [widoku komunikatów](../debugger/messages-view.md)i określić kryteria wyszukiwania komunikatu. Aby wyświetlić [okno dialogowe opcji komunikatów](../debugger/message-options-dialog-box.md), wybierz **komunikaty dziennika** z **Spy** menu.
+Karta **komunikaty** służy do wybierania typów komunikatów, które mają być [wyświetlane w widoku komunikatów](../debugger/messages-view.md)oraz do określania kryteriów wyszukiwania komunikatów. Aby wyświetlić okno [dialogowe Opcje wiadomości](../debugger/message-options-dialog-box.md), wybierz pozycję **komunikaty dziennika** z menu **Spy** .
 
- Zwykle, najpierw wybierz **grupy komunikatów**, a następnie dostosować wybór, wybierając poszczególne **wiadomości do widoku**. **Wszystkich** przycisk wybiera wszystkie typy komunikatów, a **Brak** przycisku powoduje wyczyszczenie wszystkich typów.
+ Zazwyczaj najpierw wybiera się **grupy komunikatów**, a następnie precyzyjnie dostosowuje zaznaczenie, wybierając poszczególne **wiadomości do wyświetlenia**. Przycisk **wszystko** wybiera wszystkie typy komunikatów, a przycisk **Brak** czyści wszystkie typy.
 
- Następujące ustawienia są dostępne na **wiadomości** karty:
+ Na karcie **komunikaty** dostępne są następujące ustawienia:
 
- **Komunikaty do widoku** wybierz określone komunikaty do wyświetlenia. Podczas tworzenia nowego okna komunikatów ją wyświetlić wszystkie komunikaty. Podczas filtrowania wiadomości z **wiadomości** kartę, czy filtr ma zastosowanie tylko do nowych wiadomości, a nie w przypadku wiadomości, które już zostały wyświetlone w widoku Windows.
+ **Komunikaty do wyświetlenia** Wybierz konkretne komunikaty do wyświetlenia. Po utworzeniu okna nowe komunikaty można wyświetlić wszystkie komunikaty. Filtrowanie komunikatów z karty **komunikaty** dotyczy tylko nowych komunikatów, a nie komunikatów, które zostały już wyświetlone w widoku systemu Windows.
 
- **Komunikat grup** wybierz grupy komunikat do wyświetlenia. Dostępne grupy obejmują:
+ **Grupy komunikatów** Wybierz grupy wiadomości do wyświetlenia. Dostępne są następujące grupy:
 
-- WM_USER: z kodem, jest większa niż lub równa WM_USER
+- WM_USER: przy użyciu kodu o wartości większej lub równej WM_USER
 
-- Zarejestrowany: zarejestrowany **RegisterWindowMessage** wywołania
+- Zarejestrowano: zarejestrowano w wywołaniu **RegisterWindowMessage**
 
-- Nieznane: nieznany komunikaty w zakresie od 0 do (WM_USER - 1)
+- Nieznane: nieznane komunikaty z zakresu od 0 do (WM_USER-1)
 
-  Należy pamiętać, że te **grupy komunikatów** nie zostaną zamapowani na określonych wpisów w obszarze **widoku komunikatów**. Po wybraniu grupy, wybór jest stosowane bezpośrednio do strumienia komunikatów.
+  Należy zauważyć, że te **grupy komunikatów** nie mapują na określone wpisy w obszarze **komunikaty do wyświetlenia**. Po wybraniu grupy zaznaczenie jest stosowane bezpośrednio do strumienia komunikatów.
 
-  Wygaszone pole wyboru w ramach **grupy komunikatów** wskazuje, że **widoku komunikatów** pole listy został zmodyfikowany dla wiadomości w tej grupie; nie wszystkie typy komunikatów w tej grupie są zaznaczone.
+  Szare pole wyboru w **grupach komunikatów** wskazuje, że pola listy **wiadomości do wyświetlenia** zostały zmodyfikowane dla wiadomości w tej grupie; nie wszystkie typy komunikatów w tej grupie są zaznaczone.
 
-  **Zapisz ustawienia jako domyślne** zapisać bieżące ustawienia w celu późniejszego użycia jako opcje wyszukiwania komunikatu. Te ustawienia są również zapisywane podczas zamykania programu Spy ++.
+  **Zapisz ustawienia jako domyślne** Zapisz bieżące ustawienia do późniejszego użycia jako opcje wyszukiwania wiadomości. Te ustawienia są również zapisywane podczas kończenia działania Spy + +.

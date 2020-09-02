@@ -1,5 +1,5 @@
 ---
-title: Widok wykorzystania | Dokumenty firmy Microsoft
+title: Widok wykorzystania | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,40 +13,40 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 926c67261f91aa8787d9be4a33dadbd3a890c568
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62823530"
 ---
 # <a name="utilization-view"></a>Widok wykorzystania
-W **widoku Wykorzystanie** są wyświetlane informacje o procesorze CPU, procesorze GRAFICZNYm i innych zasobach systemowych, które są używane przez bieżący proces (wybierz opcję **Analizuj** > **wizualizator współbieżności,** aby uruchomić wizualizator współbieżności). Pokazuje średnie wykorzystanie rdzenia przez analizowany proces, proces bezczynny, proces systemowy i inne procesy, które są uruchomione w systemie w czasie. Nie pokazuje, który konkretny rdzeń jest aktywny w danym momencie. Na przykład jeśli dwa rdzenie są uruchomione na 50 procent pojemności dla danego okresu czasu, a następnie ten widok pokazuje jeden rdzeń logiczny są wykorzystywane. Widok jest generowany przez podzielenie czasu profilowania na krótkie segmenty czasu. Dla każdego segmentu wykres kreśli średnią liczbę wątków procesu, które są wykonywane na rdzeniach logicznych w tym przedziale.
+**Widok wykorzystania** zawiera informacje dotyczące procesora CPU, procesora GPU i innych zasobów systemowych, które są używane przez bieżący proces (wybierz pozycję **Analizuj**  >  **Wizualizator współbieżności** , aby uruchomić Wizualizator współbieżności). Pokazuje średnie wykorzystanie rdzenia przez przeanalizowany proces, proces bezczynny, proces systemowy i inne procesy, które są uruchamiane w systemie w miarę upływu czasu. Nie wskazuje, który konkretny rdzeń jest aktywny w danym momencie. Na przykład, jeśli dwa rdzenie są uruchamiane o 50 procent pojemności w danym okresie, ten widok pokazuje jeden rdzeń logiczny, który jest używany. Widok jest generowany przez podzielenie czasu profilowania na krótkie segmenty czasu. Dla każdego segmentu wykres przedstawia średnią liczbę wątków procesów, które są wykonywane w przypadku rdzeni logicznych w tym interwale.
 
- ![Widok wykorzystania procesora](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")
+ ![Widok wykorzystania procesora CPU](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")
 
- Wykres przedstawia czas (na osi x) i średnie rdzenie logiczne, które są wykorzystywane przez proces docelowy, proces bezczynny i proces systemowy. (Proces bezczynny pokazuje bezczynne rdzenie. Proces systemowy jest procesem w systemie Windows, który może wykonywać pracę w imieniu innych procesów.) Pozostałe procesy, które są uruchomione na koncie systemowym do wykorzystania wszystkich pozostałych rdzeni.
+ Wykres przedstawia czas (na osi x) i średnie rdzenie logiczne, które są wykorzystywane przez proces docelowy, proces bezczynności i proces systemowy. (Bezczynny proces pokazuje rdzenie bezczynne. Proces systemowy to proces w systemie Windows, który może działać w imieniu innych procesów. Pozostałe procesy, które są uruchomione na koncie systemowym w celu wykorzystania wszystkich pozostałych rdzeni.
 
- Liczba rdzeni logicznych jest wyświetlana na osi y. System Windows traktuje jednoczesną obsługę wielowątkową w sprzęcie jako rdzenie logiczne (na przykład Hyper-Threading). W związku z tym system, który ma czterordzeniowy procesor, który obsługuje dwa wątki sprzętowe na rdzeń pojawia się jako system ośmiu rdzenia logicznego. Dotyczy to również widoku Rdzenie. Aby uzyskać więcej informacji, zobacz [Widok Rdzenie](../profiling/cores-view.md).
+ Liczba rdzeni logicznych jest pokazywana na osi y. System Windows traktuje równoczesną obsługę wielowątkowości w sprzęcie jako rdzenie logiczne (na przykład funkcja Hyper-Threading). W związku z tym system z procesorem Quad-Core, który obsługuje dwa wątki sprzętowe na rdzeń, pojawia się jako system ośmiu rdzeni. Dotyczy to również widoku rdzeni. Aby uzyskać więcej informacji, zobacz [Widok rdzeni](../profiling/cores-view.md).
 
- Wykres aktywności gpu pokazuje liczbę aparatów DirectX używanych w czasie.  Aparat jest używany, jeśli przetwarza pakiet DMA.  Wykres nie pokazuje określonego aparatu DirectX (na przykład silnika 3D, aparatu wideo i innych).
+ Wykres aktywności procesora GPU przedstawia liczbę aparatów DirectX używanych w czasie.  Aparat jest używany, jeśli przetwarza pakiet DMA.  Na wykresie nie jest wyświetlany konkretny aparat DirectX (na przykład aparat 3W, aparat wideo i inne).
 
 ## <a name="purpose"></a>Przeznaczenie
- Zaleca się widok wykorzystania jako punkt wyjścia dla badań wydajności podczas korzystania z wizualizatora współbieżności. Ponieważ zapewnia przegląd stopnia współbieżności w aplikacji w czasie, można go używać do szybkiego identyfikowania obszarów, które wymagają dostrajania wydajności lub równoległości.
+ Jeśli używasz wizualizatora współbieżności, zalecamy widok wykorzystania jako punkt wyjścia dla badań wydajności. Ponieważ zawiera przegląd stopnia współbieżności aplikacji z upływem czasu, można użyć go do szybkiego zidentyfikowania obszarów wymagających dostrajania wydajności lub przetwarzanie równoległe.
 
- Jeśli jesteś zainteresowany dostrajaniem wydajności, możesz próbować zidentyfikować zachowanie, które nie spełnia Twoich oczekiwań. Możesz również szukać istnienia i przyczyny regionów, które mają niskie wykorzystanie logicznych rdzeni procesora. Możesz również szukać wzorców użycia między procesorem CPU a procesorem GPU.
+ Jeśli interesuje Cię dostrajanie wydajności, możesz spróbować zidentyfikować zachowanie, które nie spełnia oczekiwań. Możesz również wyszukać istnienie i przyczynę regionów, które mają niskie wykorzystanie logicznych rdzeni procesora CPU. Możesz również wyszukać wzorce użycia między procesorem CPU i procesorem GPU.
 
- Jeśli jesteś zainteresowany równoległości aplikacji, prawdopodobnie szukasz albo obszarów związanych z procesorem CPU wykonania lub obszarów, w których nie są one z wykorzystaniem procesora CPU.
+ Jeśli interesuje Cię przekształcają aplikację, prawdopodobnie szukasz obszarów związanych z procesorem CPU lub obszarów, w których nie korzystasz z procesora.
 
- Obszary związane z procesorem SĄ zielone. Wykres pokazuje jeden rdzeń jest używany, jeśli aplikacja jest szeregowa.
+ Obszary powiązane z PROCESORem są zielone. Na wykresie jest wyświetlany jeden rdzeń, który jest używany, jeśli aplikacja jest serializowana.
 
- Obszary, w których procesor nie korzysta z procesora, są szare. Mogą one reprezentować punkty, w których aplikacja jest bezczynna lub wykonywania blokowania we/wy, które zapewniają możliwości równoległości przez nakładanie się z innymi pracami związanymi z procesorem CPU.
+ Obszary, w których nie korzystasz z procesora CPU, są szare. Mogą one reprezentować punkty, w których aplikacja jest bezczynna lub blokująca operację we/wy, która zapewnia możliwości równoległości przez nakładanie się na inne prace powiązane z PROCESORem.
 
- Po znalezieniu interesującego zachowania możesz powiększyć ten region, zaznaczając je. Po powiększeniu można przełączyć się do widoku wątków lub widoku rdzeni, aby uzyskać bardziej szczegółową analizę.
+ Po znalezieniu zachowania zainteresowania możesz powiększyć ten region, zaznaczając go. Po powiększeniu, możesz przełączyć się do widoku wątki lub widoku rdzenie w celu uzyskania bardziej szczegółowej analizy.
 
- Jeśli używasz gpu przy użyciu C++ AMP lub DirectX, może być zainteresowany określeniem liczby aparatów GPU w użyciu lub obszarów, w których gpu jest nieoczekiwanie bezczynny.
+ Jeśli używasz procesora GPU przy użyciu C++ AMP lub DirectX, możesz chcieć zidentyfikować liczbę używanych aparatów GPU lub obszary, w których procesor GPU jest nieoczekiwanie bezczynny.
 
 ## <a name="zoom"></a>Zoom
- Aby powiększyć wykres wykorzystania procesora CPU lub wykres aktywności gpu, wybierz sekcję lub użyj narzędzia suwaka powiększenia nad wykresem. Ustawienie powiększenia będzie się powtarzać po przełączeniu się do innych widoków. Aby ponownie pomniejszyć widok, użyj narzędzia suwaka powiększenia. Można również powiększyć za pomocą**zwoju** **Ctrl**+.
+ Aby powiększyć wykres użycia procesora CPU lub wykres aktywności procesora GPU, wybierz sekcję lub użyj suwaka powiększenia powyżej wykresu. Ustawienie powiększenia utrzymuje się w trakcie przełączania do innych widoków. Aby ponownie pomniejszyć, użyj suwaka powiększenia. Możesz również powiększać, używając **klawisza Ctrl** + **Scroll**.
 
 ## <a name="see-also"></a>Zobacz też
 - [Concurrency Visualizer](../profiling/concurrency-visualizer.md)

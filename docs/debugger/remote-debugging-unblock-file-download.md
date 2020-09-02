@@ -1,5 +1,5 @@
 ---
-title: Odblokuj pobieranie narzędzi zdalnych
+title: Odblokuj pobieranie zdalnych narzędzi
 ms.date: 07/19/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -10,33 +10,33 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a243033bf5831952d83fdf688302651e02b76b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62903030"
 ---
-# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Instrukcje: Odblokuj pobierania narzędzia zdalnej w systemie Windows Server
+# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Instrukcje: Odblokowywanie pobierania narzędzi zdalnych w systemie Windows Server
 
-Domyślne ustawienia zabezpieczeń w programie Internet Explorer w systemie Windows Server można tworzyć i czasochłonne pobrać składników, takich jak remote tools.
+Domyślne ustawienia zabezpieczeń w programie Internet Explorer w systemie Windows Server mogą spowodować czasochłonne pobieranie składników, takich jak narzędzia zdalne.
 
-* Włączeniu konfiguracji zwiększonych zabezpieczeń programu Internet Explorer, która uniemożliwia otwarcie witryny sieci Web i uzyskiwanie dostępu do zasobów sieci web, chyba że domenę zawierającą zasobu jest jawnie dozwolone (to znaczy, że zaufane). Mimo że to ustawienie zostanie wyłączone, nie zalecamy tego, ponieważ może on stwarzać zagrożenie bezpieczeństwa.
+* Konfiguracja zwiększonych zabezpieczeń jest włączona w programie Internet Explorer, co uniemożliwia otwieranie witryn sieci Web i uzyskiwanie dostępu do zasobów internetowych, chyba że domena zawierająca zasób jest jawnie dozwolona (to jest zaufana). Mimo że to ustawienie można wyłączyć, nie jest to zalecane, ponieważ może stanowić zagrożenie bezpieczeństwa.
 
-* W systemie Windows Server 2016, domyślne ustawienie w **Opcje internetowe** > **zabezpieczeń** > **Internet**  >   **Poziom niestandardowy** > **pliki do pobrania** również wyłącza pobierania plików. Jeśli wybierzesz pobieranie narzędzi zdalnych bezpośrednio w systemie Windows Server, należy włączyć pobieranie plików.
+* W systemie Windows Server 2016 domyślne ustawienie **opcji Internet Opcje**  >  **zabezpieczeń**  >  **Internet**na  >  **poziomie niestandardowym**  >  **Downloads** powoduje także wyłączenie pobierania plików. Jeśli zdecydujesz się pobrać narzędzia zdalne bezpośrednio w systemie Windows Server, musisz włączyć pobieranie plików.
 
-Aby pobrać narzędzia w systemie Windows Server, zaleca się jedną z następujących czynności:
+Aby pobrać narzędzia w systemie Windows Server, zalecamy jedną z następujących czynności:
 
-* Pobieranie narzędzi zdalnych na innym komputerze, takie jak jednego uruchomionego programu Visual Studio, a następnie skopiuj *.exe* plików do systemu Windows Server.
+* Pobierz narzędzia zdalne na innym komputerze, takim jak uruchomiony program Visual Studio, a następnie skopiuj plik *exe* do systemu Windows Server.
 
-* Uruchom zdalny debuger [z udziału plików](../debugger/remote-debugging.md#fileshare_msvsmon) na komputerze programu Visual Studio.
+* Uruchom zdalny debuger [z udziału plików](../debugger/remote-debugging.md#fileshare_msvsmon) na komputerze z programem Visual Studio.
 
-* Pobierz narzędzia zdalne bezpośrednio w systemie Windows Server i akceptowanie poleceń, aby dodać Zaufane witryny. Nowoczesnych witryn internetowych często zawierają wiele innych zasobów, więc może to spowodować wiele monitów. Ponadto wszystkie linki przekierowanego może być konieczne należy dodać ręcznie. Można dodać niektóre Zaufane witryny przed rozpoczęciem pobierania. Przejdź do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny** i dodaj następujące witryny.
+* Pobierz narzędzia zdalne bezpośrednio w systemie Windows Server i zaakceptuj odpowiednie instrukcje, aby dodać Zaufane witryny. Nowoczesne witryny sieci Web często zawierają wiele zasobów innych firm, dzięki czemu może to skutkować wieloma komunikatami. Ponadto może być konieczne ręczne dodanie wszelkich przekierowanych linków. Przed rozpoczęciem pobierania można dodać niektóre Zaufane witryny. Przejdź do **opcji internetowych > zabezpieczenia > zaufane lokacje > Lokacje** i Dodaj następujące lokacje.
 
   * visualstudio.microsoft.com
   * download.visualstudio.microsoft.com
-  * temat: puste
+  * informacje: puste
 
-  Dla starszych wersji debugera na my.visualstudio.com Dodaj te dodatkowe lokacje, aby upewnić się, że ten użytkownik zaloguje się ponownie:
+  W przypadku starszych wersji debugera w systemie my.visualstudio.com Dodaj te dodatkowe lokacje, aby upewnić się, że logowanie zakończyło się pomyślnie:
 
   * microsoft.com
   * go.microsoft.com
@@ -51,8 +51,8 @@ Aby pobrać narzędzia w systemie Windows Server, zaleca się jedną z następuj
   * vlscppe.microsoft.com
   * query.prod.cms.rt.microsoft.com
 
-    Jeśli możesz dodać te domeny podczas pobierania narzędzi zdalnych, a następnie wybierz **Dodaj** po wyświetleniu monitu.
+    Jeśli zdecydujesz się dodać te domeny podczas pobierania narzędzi zdalnych, wybierz opcję **Dodaj** po wyświetleniu monitu.
 
-    ![Okno dialogowe zawartości zablokowane](../debugger/media/remotedbg-blocked-content.png)
+    ![Zablokowana zawartość — okno dialogowe](../debugger/media/remotedbg-blocked-content.png)
 
-    Po pobraniu oprogramowania, możesz uzyskać niektóre dodatkowe żądania, aby przyznać uprawnienie do ładowania różnych skrypty witryny sieci web i zasobami. Na my.visualstudio.com zaleca się, że dodasz dodatkowe domeny, aby upewnić się, że ten użytkownik zaloguje się ponownie.
+    Po pobraniu oprogramowania otrzymujesz dodatkowe żądania, aby udzielić uprawnień do ładowania różnych skryptów i zasobów witryny sieci Web. W systemie my.visualstudio.com zalecamy dodanie dodatkowych domen, aby upewnić się, że logowanie zakończyło się pomyślnie.

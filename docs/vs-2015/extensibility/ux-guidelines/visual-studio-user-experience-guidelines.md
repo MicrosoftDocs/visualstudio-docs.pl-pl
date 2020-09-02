@@ -1,5 +1,5 @@
 ---
-title: Wskazówki dotyczące interfejsu użytkownika programu Visual Studio | Dokumentacja firmy Microsoft
+title: Wskazówki dotyczące środowiska użytkownika programu Visual Studio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -9,23 +9,23 @@ caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 02b01c2c1262d6c48f51f9c1867094913b8cd715
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62584934"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Wskazówki dotyczące interfejsu użytkownika w programie Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio wskazówki dotyczące interfejsu użytkownika są przeznaczone dla tych, którzy tworzą nowe funkcje programu Visual Studio. Te wytyczne zawierają informacje o typowych modeli użytkownika i wzorce interakcji, umożliwiające projektantów nowe interfejsy użytkownika (UI) można utworzyć funkcji użytkownika, które są bezproblemową i spójną w środowisku deweloperskim.  
+Wytyczne dotyczące środowiska użytkownika programu Visual Studio są przeznaczone dla użytkowników, którzy projektują nowe funkcje dla programu Visual Studio. Te wytyczne zawierają informacje o typowych modelach użytkowników i wzorcach interakcji, dzięki którym projektanci nowych interfejsów użytkownika mogą tworzyć środowiska użytkownika, które są bezproblemowe i spójne w środowisku programistycznym.  
   
- Tworzenie oprogramowania dla średnich produktów firmy Microsoft, informacje o wskazówki udostępniane przez Windows. Istnieją trzy ważne zasoby, których trzeba pamiętać:  
+ Opracowywanie oprogramowania dla produktów firmy Microsoft oznacza wskazówki zapewniane przez system Windows. Istnieją trzy ważne zasoby, z którymi należy się zapoznać:  
   
-- [Windows User Experience Interaction Guidelines](https://msdn.microsoft.com/library/aa511258.aspx). Te wytyczne są jego podstawy for Windows desktop zachowania i wyglądu.  
+- [Wskazówki dotyczące interakcji użytkownika systemu Windows](https://msdn.microsoft.com/library/aa511258.aspx). Te wytyczne są podstawą zachowania i wyglądu pulpitu systemu Windows.  
   
-- Te wytyczne programu Visual Studio, które znajdują się wytyczne specyficzne dla platformy, zastępujące ogólne wytyczne Windows wszędzie, gdzie jest to odpowiednie dla naszego środowiska.  
+- Te wskazówki dotyczące programu Visual Studio, które są wskazówkami specyficznymi dla platformy, które zastępują ogólne wytyczne systemu Windows, tam gdzie jest to odpowiednie dla środowiska.  
   
-- [Kontrolek i wzorce dla aplikacji platformy UWP](/windows/uwp/design/controls-and-patterns) są odwołaniem pojawiających się wzorców, które mogą być używane w niektórych przypadkach, w programie Visual Studio.  
+- [Kontrolki i wzorce dla aplikacji platformy UWP](/windows/uwp/design/controls-and-patterns) są odwołaniem do nowych wzorców, które mogą być używane w niektórych wystąpieniach w programie Visual Studio.  
   
-  Te wytyczne podają informacje o tym, co należy zrobić podczas projektowania dla programu Visual Studio, a w niektórych przypadkach informacje na temat jak to zrobić również jest dołączony. Aby uzyskać bardziej szczegółowe informacje o implementacji i Dowiedz się więcej o określonych interfejsów programowania aplikacji (API), które umożliwiają pisanie kodu dla rozwiązania, które integrują się w programie Visual Studio zintegrowane środowisko projektowe (IDE), należy użyć [Programu visual Studio Software Development Kit (SDK)](https://msdn.microsoft.com/library/bb166441.aspx).
+  Te wskazówki zawierają informacje o tym, co należy zrobić podczas projektowania programu Visual Studio, a w niektórych przypadkach należy również zapoznać się z informacjami dotyczącymi tego, jak to zrobić. Aby uzyskać bardziej szczegółowe informacje o implementacji i poznać konkretne interfejsy programowania aplikacji (API), które umożliwiają pisanie kodu dla rozwiązań, które integrują się z zintegrowanym środowiskiem programistycznym (IDE) programu Visual Studio, użyj [zestawu SDK programu Visual Studio](https://msdn.microsoft.com/library/bb166441.aspx).

@@ -1,5 +1,5 @@
 ---
-title: Mierzenie tryb wł. / wył | Dokumentacja firmy Microsoft
+title: Tryb pomiaru wyłączonego | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,20 +14,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 92db719f8af2688dc70ddb5ac253c17095302766
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62563275"
 ---
 # <a name="measure-mode-onoff"></a>Tryb pomiarowy Wł./Wył.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Za pomocą tego narzędzia, należy dokładnie mierzyć długość czasu na osi czasu. Aby włączyć tryb miary, kliknij przycisk miary (który zawiera ikonę linijki), a następnie przeciągnij na osi czasu. Podczas przeciągania Zwróć uwagę, że w obszarze poniżej wskaźnik jest wyróżniony na żółto i czas, który pojawia się na pasku narzędzi po prawej stronie przycisku. Ta wartość jest obliczana dynamicznie podczas przeciągania, dzięki czemu można natychmiast zobaczyć, jak długo trwa określonego zdarzenia. Po zwolnieniu przycisku myszy wartość czasu pozostaje widoczna.  
+Za pomocą tego narzędzia można precyzyjnie zmierzyć długość czasu na osi czasu. Aby włączyć tryb miary, kliknij przycisk miary (ma ikonę linijki), a następnie przeciągnij na osi czasu. Podczas przeciągania należy zauważyć, że obszar pod wskaźnikiem jest wyróżniony kolorem żółtym, a pomiar czasu pojawia się na pasku narzędzi po prawej stronie przycisku. Ta wartość jest obliczana dynamicznie podczas przeciągania, dzięki czemu można natychmiast zobaczyć, jak długo trwa konkretne zdarzenie. Po zwolnieniu przycisku myszy wartość czasu będzie widoczna.  
   
- Powtórzyć miary, ale tylko najnowsze miary są wyświetlane. Kliknij przycisk miary, ponownie, aby wyłączyć tryb pomiarowy.  
+ Można powtórzyć proces pomiaru, ale pokazywana jest tylko Ostatnia pomiar. Kliknij ponownie przycisk miary, aby wyłączyć tryb miary.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zarządzanie kanałami](../profiling/manage-channels.md)   
- [Formant powiększania (Widok wątków)](../profiling/zoom-control-threads-view.md)   
+ [Kontrolka powiększenia (Widok wątków)](../profiling/zoom-control-threads-view.md)   
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

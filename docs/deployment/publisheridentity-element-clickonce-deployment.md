@@ -1,5 +1,5 @@
 ---
-title: '&lt;publisheridentity —&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
+title: '&lt;publisherIdentity —, &gt; element (wdrażanie ClickOnce) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62927542"
 ---
-# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisheridentity —&gt; — element (wdrażanie ClickOnce)
-Zawiera informacje o wydawcy, który podpisał tego manifestu wdrażania.
+# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity —, &gt; element (wdrażanie ClickOnce)
+Zawiera informacje o wydawcy, który podpisał ten manifest wdrożenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,17 +35,17 @@ Zawiera informacje o wydawcy, który podpisał tego manifestu wdrażania.
 />
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `publisherIdentity` Element jest wymagany dla podpisanych manifestów. W poniższej tabeli przedstawiono atrybuty `publisherIdentity` obsługuje element.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `publisherIdentity`Element jest wymagany dla podpisanych manifestów. W poniższej tabeli przedstawiono atrybuty `publisherIdentity` obsługiwane przez element.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`name`|Wymagana. W tym artykule opisano tożsamości innych firm, która opublikowała tę aplikację.|
-|`issuerKeyHash`|Wymagana. Zawiera skrót SHA-1 wystawca certyfikatu klucza publicznego.|
+|`name`|Wymagany. Opisuje tożsamość strony, która opublikowała tę aplikację.|
+|`issuerKeyHash`|Wymagany. Zawiera skrót SHA-1 klucza publicznego wystawcy certyfikatu.|
 
 #### <a name="parameters"></a>Parametry
 
-## <a name="property-valuereturn-value"></a>Właściwość wartości/zwracana wartość
+## <a name="property-valuereturn-value"></a>Wartość właściwości/zwracana wartość
 
 ## <a name="exceptions"></a>Wyjątki
 

@@ -1,5 +1,5 @@
 ---
-title: Polecenia Menu Pomoc | Dokumentacja firmy Microsoft
+title: Polecenia menu Pomoc | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c58bc069b3d38c4086a5642d13bb907528923bb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62895107"
 ---
 # <a name="help-menu-commands"></a>Polecenia menu Pomoc
-**Pomocy** menu zawiera polecenia służące do otwierania plików pomocy.
+Menu **Pomoc** zawiera polecenia służące do otwierania plików pomocy.
 
- **Indeks** Otwiera ekran zawartość programu Spy ++ pomocy.
+ **Indeks** Otwiera ekran zawartości dla narzędzia Spy + +.
 
- **Korzystanie z pomocy** spowoduje otwarcie pliku pomocy, która opisuje, jak korzystać z pomocy.
+ **Korzystanie z pomocy** Otwiera plik pomocy, który opisuje sposób korzystania z pomocy.
 
- **Informacje o programie Spy ++** pokazuje wersji i prawach autorskich informacje o oprogramowaniu dla Spy ++.
+ **Informacje o programie Spy + +** Pokazuje wersję oprogramowania i informacje o prawach autorskich dla programu Spy + +.

@@ -1,5 +1,5 @@
 ---
-title: Kody komunikatów | Dokumentacja firmy Microsoft
+title: Kody komunikatów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1c09245056bf7e947985bfa55dc9cc4a3a96b8cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62846277"
 ---
 # <a name="message-codes"></a>Kody komunikatów
-Każdy wiersz komunikat wyświetlany w [widoku komunikatów](../debugger/messages-view.md) zawiera "P", użytkownika, "firmy," lub "R" kodu. Te kody mają następujące znaczenie:
+Każdy wiersz komunikatu wyświetlany w [widoku komunikatów](../debugger/messages-view.md) zawiera kod "P", "," lub "R". Kody te mają następujące znaczenie:
 
 |Kod|Znaczenie|
 |----------|-------------|
-|P|Opublikowano wiadomość do kolejki za pomocą **funkcji PostMessage** funkcji. Nie są dostępne informacje dotyczące ultimate dyspozycji wiadomości.|
-|S|Wiadomość została wysłana z **SendMessage** funkcji. Oznacza to, nadawca nie odzyskać kontrolę do momentu Odbiorca przetwarza i zwraca komunikat. Odbiornik w związku z tym, przekazać wartość zwracaną do nadawcy.|
-|s|Komunikat został wysłany, ale zabezpieczeń uniemożliwia dostęp do wartości zwracanej.|
-|R|W każdym "wiersz ma odpowiedni wiersz"R"(zwrot), zawierającego wartość zwracaną wiadomości. Czasami wywołania wiadomości są zagnieżdżone, co oznacza, że ten program obsługi komunikatów co wysyła kolejną wiadomość.|
+|P|Wiadomość została opublikowana w kolejce przy użyciu funkcji **PostMessage** . Brak dostępnych informacji dotyczących ostatecznej dyspozycji wiadomości.|
+|S|Komunikat został wysłany przy użyciu funkcji **SendMessage** . Oznacza to, że nadawca nie odzyska kontroli do momentu, gdy odbiornik nie przetwarza i nie zwróci komunikatu. W związku z tym odbiornik może przekazać wartość zwrotną z powrotem do nadawcy.|
+|s|Wiadomość została wysłana, ale zabezpieczenia uniemożliwiają dostęp do wartości zwracanej.|
+|R|Każdy element "line" ma odpowiadający wiersz "R" (Return), który wyświetla wartość zwracaną przez komunikat. Czasami wywołania komunikatów są zagnieżdżane, co oznacza, że jeden program obsługi komunikatów wysyła kolejny komunikat.|

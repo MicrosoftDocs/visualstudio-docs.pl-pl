@@ -1,5 +1,5 @@
 ---
-title: '&lt;Polecenia&gt; — Element (program inicjujący) | Dokumentacja firmy Microsoft'
+title: '&lt;Commands — &gt; element (program inicjujący) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5f52c862adcdaf7a95de6a90c2c330c39edcea13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900347"
 ---
-# <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Polecenia&gt; — element (program inicjujący)
-`Commands` Element implementuje badania opisane przez elementy poniżej `InstallChecks` elementu i oświadcza, które pakiety [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] należy zainstalować program inicjujący, jeśli test zakończy się niepowodzeniem.
+# <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Commands — &gt; element (program inicjujący)
+`Commands`Element implementuje testy opisane przez elementy poniżej `InstallChecks` elementu i deklaruje pakiet, który program [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] inicjujący powinien zainstalować, jeśli test zakończy się niepowodzeniem.
 
 ## <a name="syntax"></a>Składnia
 
@@ -65,68 +65,68 @@ ms.locfileid: "62900347"
 </Commands>
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `Commands` Element jest wymagany. Element ma atrybut.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `Commands`Element jest wymagany. Element ma następujący atrybut.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Reboot`|Opcjonalna. Określa, czy jeśli żadnych pakietów zwróci kod zakończenia ponownego uruchomienia należy ponownie uruchomić system. Poniższa lista przedstawia prawidłowe wartości:<br /><br /> `Defer`. Ponowne uruchomienie jest odroczone do czasu niektóre czas w przyszłości.<br /><br /> `Immediate`. Powoduje natychmiastowe ponowne uruchomienie, jeśli jeden z pakietów zwrócił kod zakończenia ponownego uruchomienia.<br /><br /> `None`. Powoduje, że wszystkie żądania ponownego uruchomienia, są ignorowane.<br /><br /> Wartość domyślna to `Immediate`.|
+|`Reboot`|Opcjonalny. Określa, czy system ma być uruchamiany ponownie, jeśli którykolwiek z pakietów zwróci kod zakończenia ponownego uruchomienia. Poniższa lista zawiera prawidłowe wartości:<br /><br /> `Defer`. Ponowne uruchomienie jest odroczone do czasu w przyszłości.<br /><br /> `Immediate`. Powoduje natychmiastowe ponowne uruchomienie, jeśli jeden z pakietów zwrócił kod zakończenia ponownego uruchomienia.<br /><br /> `None`. Powoduje ignorowanie żądań ponownego uruchomienia.<br /><br /> Wartość domyślna to `Immediate`.|
 
 ## <a name="command"></a>Polecenie
- `Command` Element jest elementem podrzędnym `Commands` elementu. A `Commands` element może mieć co najmniej jeden `Command` elementów. Element ma następujące atrybuty.
+ `Command`Element jest elementem podrzędnym `Commands` elementu. `Commands`Element może mieć jeden lub więcej `Command` elementów. Element ma następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`PackageFile`|Wymagana. Nazwa pakietu do zainstalowania należy co najmniej jeden z warunków określonych przez `InstallConditions` zwróci wartość false. Pakiet musi być zdefiniowany w tym samym pliku przy użyciu `PackageFile` elementu.|
-|`Arguments`|Opcjonalna. Zestaw argumenty wiersza polecenia do przekazania do pliku pakietu.|
-|`EstimatedInstallSeconds`|Opcjonalna. Szacowany czas w sekundach, trwa instalowanie pakietu. Ta wartość określa rozmiar paska postępu, który program inicjujący wyświetla dla użytkownika. Wartość domyślna to 0, w którym to przypadku nie razem, gdy określono szacowania.|
-|`EstimatedDiskBytes`|Opcjonalna. Szacowana ilość miejsca na dysku, w bajtach, które zajmują po zakończeniu instalacji pakietu zostało zakończone. Ta wartość jest używana w wymagania dotyczące miejsca na dysku twardym, które program inicjujący wyświetla dla użytkownika. Wartość domyślna to 0, w przypadku program inicjujący nie wyświetla żadnych wymagań dotyczących miejsca na dysku twardym.|
-|`EstimatedTempBytes`|Opcjonalna. Szacowana ilość tymczasowego miejsca na dysku, w bajtach, które wymagają pakietu.|
-|`Log`|Opcjonalna. Ścieżka do pliku dziennika, który generuje pakiet, względem katalogu głównego pakietu.|
+|`PackageFile`|Wymagany. Nazwa pakietu do zainstalowania powinna mieć co najmniej jeden warunek określony przez `InstallConditions` zwrócenie wartości false. Pakiet musi być zdefiniowany w tym samym pliku przy użyciu `PackageFile` elementu.|
+|`Arguments`|Opcjonalny. Zestaw argumentów wiersza polecenia do przekazania do pliku pakietu.|
+|`EstimatedInstallSeconds`|Opcjonalny. Szacowany czas, w sekundach, zajmie się instalacją pakietu. Ta wartość określa rozmiar paska postępu wyświetlanego użytkownikowi przez program inicjujący. Wartość domyślna to 0, w tym przypadku nie określono oszacowania czasu.|
+|`EstimatedDiskBytes`|Opcjonalny. Szacowana ilość miejsca na dysku (w bajtach), którą zajmie pakiet po zakończeniu instalacji. Ta wartość jest używana w wymaganiach dotyczących miejsca na dysku twardym, które program inicjujący wyświetla użytkownikowi. Wartość domyślna to 0, w takim przypadku program inicjujący nie wyświetla żadnych wymagań dotyczących miejsca na dysku twardym.|
+|`EstimatedTempBytes`|Opcjonalny. Szacowana ilość miejsca na dysku (w bajtach), które będzie wymagane przez pakiet.|
+|`Log`|Opcjonalny. Ścieżka do pliku dziennika generowanego przez pakiet względem katalogu głównego pakietu.|
 
 ## <a name="installconditions"></a>InstallConditions
- `InstallConditions` Element jest elementem podrzędnym `Command` elementu. Każdy `Command` element może mieć co najwyżej jeden `InstallConditions` elementu. Jeśli nie `InstallConditions` element istnieje pakiet określony przez `Condition` zawsze działa.
+ `InstallConditions`Element jest elementem podrzędnym `Command` elementu. Każdy `Command` element może mieć co najwyżej jeden `InstallConditions` element. Jeśli żaden `InstallConditions` element nie istnieje, pakiet określony przez `Condition` jest zawsze uruchamiany.
 
 ## <a name="bypassif"></a>BypassIf
- `BypassIf` Element jest elementem podrzędnym `InstallConditions` elementu oraz opis warunku dodatnią, w ramach której polecenia nie powinien być wykonywany. Każdy `InstallConditions` element może mieć zero lub więcej `BypassIf` elementów.
+ `BypassIf`Element jest elementem podrzędnym `InstallConditions` elementu i opisuje pozytywny warunek, pod którym polecenie nie powinno być wykonywane. Każdy `InstallConditions` element może mieć zero lub więcej `BypassIf` elementów.
 
  `BypassIf` ma następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Property`|Wymagana. Nazwa właściwości do testowania. Właściwość musi wcześniej zostały zdefiniowane przez element podrzędny elementu `InstallChecks` elementu. Aby uzyskać więcej informacji, zobacz [ \<InstallChecks > Element](../deployment/installchecks-element-bootstrapper.md).|
-|`Compare`|Wymagana. Typ porównania do wykonania. Poniższa lista przedstawia prawidłowe wartości:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
-|`Value`|Wymagana. Wartość do porównania z właściwościami.|
-|`Schedule`|Opcjonalna. Nazwa `Schedule` tag, który definiuje, gdy ta reguła powinna być oceniana.|
+|`Property`|Wymagany. Nazwa właściwości do przetestowania. Właściwość musi wcześniej być zdefiniowana przez `InstallChecks` element podrzędny elementu. Aby uzyskać więcej informacji, zobacz [ \<InstallChecks> element](../deployment/installchecks-element-bootstrapper.md).|
+|`Compare`|Wymagany. Typ porównania do wykonania. Poniższa lista zawiera prawidłowe wartości:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
+|`Value`|Wymagany. Wartość do porównania z właściwością.|
+|`Schedule`|Opcjonalny. Nazwa `Schedule` tagu, który definiuje, kiedy ta reguła powinna być Szacowana.|
 
 ## <a name="failif"></a>FailIf
- `FailIf` Element jest elementem podrzędnym `InstallConditions` element i opisuje dodatnią warunek, pod którym ma zostać zatrzymana, instalacji. Każdy `InstallConditions` element może mieć zero lub więcej `FailIf` elementów.
+ `FailIf`Element jest elementem podrzędnym `InstallConditions` elementu i opisuje pozytywne warunki, w których instalacja powinna zostać zatrzymana. Każdy `InstallConditions` element może mieć zero lub więcej `FailIf` elementów.
 
  `FailIf` ma następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Property`|Wymagana. Nazwa właściwości do testowania. Właściwość musi wcześniej zostały zdefiniowane przez element podrzędny elementu `InstallChecks` elementu. Aby uzyskać więcej informacji, zobacz [ \<InstallChecks > Element](../deployment/installchecks-element-bootstrapper.md).|
-|`Compare`|Wymagana. Typ porównania do wykonania. Poniższa lista przedstawia prawidłowe wartości:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
-|`Value`|Wymagana. Wartość do porównania z właściwościami.|
-|`String`|Opcjonalna. Tekst do wyświetlenia dla użytkownika w przypadku awarii.|
-|`Schedule`|Opcjonalna. Nazwa `Schedule` tag, który definiuje, gdy ta reguła powinna być oceniana.|
+|`Property`|Wymagany. Nazwa właściwości do przetestowania. Właściwość musi wcześniej być zdefiniowana przez `InstallChecks` element podrzędny elementu. Aby uzyskać więcej informacji, zobacz [ \<InstallChecks> element](../deployment/installchecks-element-bootstrapper.md).|
+|`Compare`|Wymagany. Typ porównania do wykonania. Poniższa lista zawiera prawidłowe wartości:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
+|`Value`|Wymagany. Wartość do porównania z właściwością.|
+|`String`|Opcjonalny. Tekst, który ma być wyświetlany użytkownikowi w przypadku niepowodzenia.|
+|`Schedule`|Opcjonalny. Nazwa `Schedule` tagu, który definiuje, kiedy ta reguła powinna być Szacowana.|
 
 ## <a name="exitcodes"></a>ExitCodes
- `ExitCodes` Element jest elementem podrzędnym `Command` elementu. `ExitCodes` Elementu zawiera jeden lub więcej `ExitCode` elementów, które określają, jakie instalacji należy wykonać w odpowiedzi kod wyjściowy z pakietu. Może istnieć tylko jeden opcjonalny `ExitCode` element poniżej `Command` elementu. `ExitCodes` nie ma żadnych atrybutów.
+ `ExitCodes`Element jest elementem podrzędnym `Command` elementu. `ExitCodes`Element zawiera jeden lub więcej `ExitCode` elementów, które określają, jak instalacja powinna zostać podjęta w odpowiedzi na kod zakończenia z pakietu. Może istnieć jeden opcjonalny `ExitCode` element poniżej `Command` elementu. `ExitCodes` nie ma atrybutów.
 
 ## <a name="exitcode"></a>ExitCode
- `ExitCode` Element jest elementem podrzędnym `ExitCodes` elementu. `ExitCode` Element określa, jakie instalacji należy wykonać w odpowiedzi kod wyjściowy z pakietu. `ExitCode` nie zawiera żadnych elementów podrzędnych i ma następujące atrybuty.
+ `ExitCode`Element jest elementem podrzędnym `ExitCodes` elementu. `ExitCode`Element określa, co proces instalacji powinien wykonać w odpowiedzi na kod zakończenia z pakietu. `ExitCode` nie zawiera elementów podrzędnych i ma następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Value`|Wymagana. Wartość kodu zakończenia, do którego należy to `ExitCode` element ma zastosowanie.|
-|`Result`|Wymagana. Sposób instalacji powinien reagować na ten kod wyjścia. Poniższa lista przedstawia prawidłowe wartości:<br /><br /> `Success`. Flag pakietów, jak pomyślnie zainstalowane.<br /><br /> `SuccessReboot`. Flagi pakietu, jak pomyślnie zainstalować i powoduje, że ponowne uruchomienie systemu.<br /><br /> `Fail`. Flagi pakietu jako zakończony niepowodzeniem.<br /><br /> `FailReboot`. Flagi pakietu, ponieważ nie powiodło się i powoduje, że ponowne uruchomienie systemu.|
-|`String`|Opcjonalna. Wartość do wyświetlania użytkownikowi w odpowiedzi na ten kod wyjścia.|
-|`FormatMessageFromSystem`|Opcjonalna. Określa, czy należy użyć dostarczane przez system komunikat o błędzie odpowiadający kod zakończenia lub wartość podana w `String`. Prawidłowe wartości to `true`, co oznacza, że do użycia dostarczane przez system błąd i `false`, co oznacza, że użyć parametrów dostarczonych przez `String`. Wartość domyślna to `false`. Jeśli ta właściwość jest `false`, ale `String` nie jest ustawiona, błąd dostarczane przez system, który będzie używany.|
+|`Value`|Wymagany. Wartość kodu zakończenia, do której `ExitCode` ma zastosowanie ten element.|
+|`Result`|Wymagany. Jak instalacja powinna reagować na ten kod zakończenia. Poniższa lista zawiera prawidłowe wartości:<br /><br /> `Success`. Flaguje pakiet jako pomyślnie zainstalowany.<br /><br /> `SuccessReboot`. Flaguje pakiet jako pomyślnie zainstalowany i instruuje system do ponownego uruchomienia.<br /><br /> `Fail`. Flaguje pakiet jako niepowodzenie.<br /><br /> `FailReboot`. Flaguje pakiet jako zakończony niepowodzeniem i powoduje ponowne uruchomienie systemu.|
+|`String`|Opcjonalny. Wartość, która ma zostać wyświetlona dla użytkownika w odpowiedzi na ten kod zakończenia.|
+|`FormatMessageFromSystem`|Opcjonalny. Określa, czy należy użyć komunikatu o błędzie dostarczonego przez system odpowiadającego kodowi zakończenia lub użyć wartości podanej w `String` . Prawidłowe wartości to `true` , co oznacza użycie błędu dostarczonego przez system i `false` , który oznacza użycie ciągu dostarczonego przez `String` . Wartość domyślna to `false`. Jeśli ta właściwość ma `false` wartość, ale `String` nie jest ustawiona, zostanie użyty błąd dostarczony przez system.|
 
 ## <a name="example"></a>Przykład
- Poniższy kod definiuje polecenia dotyczące instalowania programu .NET Framework 2.0.
+ Poniższy przykład kodu definiuje polecenia instalacji .NET Framework 2,0.
 
 ```xml
 <Commands Reboot="Immediate">
@@ -203,6 +203,6 @@ ms.locfileid: "62900347"
 </Commands>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)
-- [\<InstallChecks > element](../deployment/installchecks-element-bootstrapper.md)
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)
+- [\<InstallChecks> postaci](../deployment/installchecks-element-bootstrapper.md)

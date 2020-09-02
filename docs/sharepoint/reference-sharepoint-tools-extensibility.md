@@ -1,5 +1,5 @@
 ---
-title: Odwołanie (rozszerzalność narzędzi SharePoint) | Dokumentacja firmy Microsoft
+title: Odwołanie (rozszerzalność narzędzi SharePoint) | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,26 +13,26 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4ab3b60e727f7f4ce113b86fc3491bf244115551
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62827106"
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a>Odwołanie (rozszerzalność narzędzi SharePoint)
 
-Ta sekcja zawiera dokumentacja dotycząca Rozszerzanie narzędzi SharePoint w programie Visual Studio.
+Ta sekcja zawiera dokumentację referencyjną dotyczącą rozszerzania narzędzi programu SharePoint w programie Visual Studio.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
-[Odwołanie do schematu elementu projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
+[Odwołanie do schematu elementu projektu programu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
 
-Zawiera dokumentację referencyjną dla *spdata* pliku schematu.
+Zawiera dokumentację referencyjną dla schematu pliku *. spdata* .
 
-[Dokumentacja interfejsu API &#40;rozszerzalność narzędzi SharePoint&#41;](../sharepoint/api-reference-sharepoint-tools-extensibility.md)
+[Dokumentacja interfejsu API &#40;rozszerzalność narzędzi SharePoint Tools&#41;](../sharepoint/api-reference-sharepoint-tools-extensibility.md)
 
-Zawiera dokumentację API rozszerzania narzędzi programu SharePoint w Visual Studio.
+Zawiera dokumentację referencyjną interfejsu API na potrzeby rozszerzania narzędzi programu SharePoint w programie Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Poszerzanie narzędzi programu SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)

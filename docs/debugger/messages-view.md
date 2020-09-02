@@ -1,5 +1,5 @@
 ---
-title: Widoku komunikatów | Dokumentacja firmy Microsoft
+title: Widok komunikatów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,61 +13,61 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62845858"
 ---
 # <a name="messages-view"></a>Widok komunikatów
-Każde okno ma strumienia skojarzonych komunikatów. Okno widoku komunikatów wyświetla ten strumień komunikatu. Uchwyt okna, kod komunikatu i wiadomości są wyświetlane. Można utworzyć widoku komunikatów dla wątku lub również proces. Dzięki temu można wyświetlić komunikaty wysyłane do wszystkich okien należące do określonego proces lub wątek, który jest szczególnie przydatne w przypadku przechwytywania komunikaty inicjowania okna.
+Każde okno ma skojarzony strumień komunikatów. W oknie widok komunikatów jest wyświetlany ten strumień komunikatów. Wyświetlany jest uchwyt okna, kod komunikatu i komunikat. Możesz również utworzyć widok komunikatów dla wątku lub procesu. Umożliwia to wyświetlanie komunikatów wysyłanych do wszystkich okien należących do określonego procesu lub wątku, co jest szczególnie przydatne w przypadku przechwytywania komunikatów o inicjacji okna.
 
- Typowe okno widoku komunikatów pojawia się poniżej. Pamiętaj, że pierwsza kolumna zawiera uchwyt okna, a druga kolumna zawiera kod komunikatu (wyjaśnione w [kody komunikatów](../debugger/message-codes.md)). Zdekodowany komunikat parametrów i zwracanych wartości są po prawej stronie.
+ Poniżej znajduje się typowe okno wyświetlania komunikatów. Należy zauważyć, że pierwsza kolumna zawiera uchwyt okna, a druga kolumna zawiera kod komunikatu (wyjaśniony w [kodach komunikatów](../debugger/message-codes.md)). Dekodowane parametry komunikatu i zwracane wartości są po prawej stronie.
 
- ![Spy&#43;&#43; Messages View](../debugger/media/spy--_messagesview.png "Spy++_MessagesView") Spy++ Messages View
+ ![Widok komunikatów&#43;&#43; Spy](../debugger/media/spy--_messagesview.png "_MessagesView Spy + +") Widok komunikatów w programie Spy + +
 
 ## <a name="procedures"></a>Procedury
 
-#### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Aby otworzyć widok wiadomości dla okna, proces lub wątek
+#### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Aby otworzyć widok komunikatów dla okna, procesu lub wątku
 
-1. Przenieś fokus do [widoku Windows](../debugger/windows-view.md), [widok procesy](../debugger/processes-view.md), lub [Widok wątków](../debugger/threads-view.md) okna.
+1. Przenieś fokus do okna widok [systemu Windows](../debugger/windows-view.md), [procesów widoku](../debugger/processes-view.md)lub [wątków](../debugger/threads-view.md) .
 
-2. Znajdź węzeł dla elementu, dla których wiadomości, które chcesz zbadać i zaznacz go.
+2. Znajdź węzeł elementu, którego wiadomości chcesz sprawdzić, i wybierz go.
 
-3. Z **Spy** menu, wybierz **komunikaty w dzienniku**.
+3. Z menu **Spy** wybierz pozycję **komunikaty dziennika**.
 
-     [Okno dialogowe opcji komunikatów](../debugger/message-options-dialog-box.md) zostanie otwarty.
+     Zostanie otwarte okno [dialogowe Opcje komunikatów](../debugger/message-options-dialog-box.md) .
 
-4. Wybierz opcje dla komunikatu, który chcesz wyświetlić.
+4. Wybierz Opcje wiadomości, które chcesz wyświetlić.
 
-5. Naciśnij klawisz **OK** aby rozpocząć rejestrowanie komunikatów.
+5. Naciśnij przycisk **OK** , aby rozpocząć rejestrowanie komunikatów.
 
-     Zostanie otwarte okno Widok wiadomości oraz w **wiadomości** menu jest dodawany do programu Spy ++ — pasek narzędzi. W zależności od opcji wybranych wiadomości było rozpocząć przesyłanie strumieniowe do aktywnego okna widoku komunikatów.
+     Zostanie otwarte okno widok komunikatów, a do paska narzędzi Spy + + zostanie dodane menu **komunikatów** . W zależności od wybranych opcji komunikaty rozpoczynają przesyłanie strumieniowe do okna widok aktywnych komunikatów.
 
-6. Jeśli masz wystarczającej liczby wiadomości, wybierz **Zatrzymaj rejestrowanie** z **wiadomości** menu.
+6. Gdy masz wystarczającą liczbę komunikatów, wybierz pozycję **Zatrzymaj rejestrowanie** z menu **wiadomości** .
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Kontrolowanie widoku komunikatów](../debugger/how-to-control-messages-view.md) wyjaśnia, jak zarządzać widoku komunikatów.
+ [Kontrolowanie widoku komunikatów](../debugger/how-to-control-messages-view.md) Wyjaśnia, jak zarządzać widokiem komunikatów.
 
- [Otwieranie widoku komunikatów w Znajdź okno](../debugger/how-to-open-messages-view-from-find-window.md) wyjaśnia, jak otwieranie widoku komunikatów w Znajdź okno dialogowe.
+ [Otwieranie widoku komunikatów z okna wyszukiwania](../debugger/how-to-open-messages-view-from-find-window.md) Wyjaśnia, jak otworzyć widok komunikatów z okna dialogowego Znajdowanie okna.
 
- [Wyszukiwanie komunikatu w widoku komunikatów](../debugger/how-to-search-for-a-message-in-messages-view.md) wyjaśnia, jak znaleźć szczegółowy komunikat o błędzie w widoku komunikatów.
+ [Wyszukiwanie komunikatu w widoku komunikatów](../debugger/how-to-search-for-a-message-in-messages-view.md) Wyjaśnia, jak znaleźć konkretny komunikat w widoku komunikatów.
 
- [Uruchamianie i zatrzymywanie wyświetlania dziennika komunikatów](../debugger/how-to-start-and-stop-the-message-log-display.md) wyjaśnia, jak uruchamianie i zatrzymywanie rejestrowania komunikatów.
+ [Uruchamianie i zatrzymywanie wyświetlania dziennika komunikatów](../debugger/how-to-start-and-stop-the-message-log-display.md) Wyjaśnia sposób uruchamiania i zatrzymywania rejestrowania komunikatów.
 
- [Kody komunikatów](../debugger/message-codes.md) definiuje kody komunikatów na liście w widoku komunikatów.
+ [Kody komunikatów](../debugger/message-codes.md) Definiuje kody komunikatów znajdujących się w widoku komunikatów.
 
- [Wyświetlanie właściwości komunikatu](../debugger/how-to-display-message-properties.md) sposób wyświetlić więcej informacji na temat wiadomości.
+ [Wyświetlanie właściwości komunikatów](../debugger/how-to-display-message-properties.md) Jak wyświetlić więcej informacji o komunikacie.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Widoków programu Spy ++](../debugger/spy-increment-views.md) wyjaśnia widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.
+ [Widoki Spy + +](../debugger/spy-increment-views.md) Wyjaśnia widoki drzewa Spy + + systemu Windows, komunikatów, procesów i wątków.
 
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md) wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.
+ [Korzystanie z programu Spy + +](../debugger/using-spy-increment.md) Wprowadzenie do narzędzia Spy + + i wyjaśnienie, jak można go użyć.
 
- [Okno dialogowe Opcje komunikatów](../debugger/message-options-dialog-box.md) używany do wybierania, wiadomości, które są wymienione w bieżącym widokiem wiadomości.
+ Okno [dialogowe opcji komunikatów](../debugger/message-options-dialog-box.md) Służy do wybierania komunikatów, które są wyświetlane w widoku aktywnych komunikatów.
 
- [Okno dialogowe Wyszukiwanie komunikatów](../debugger/message-search-dialog-box.md) używana do znajdowania węzeł, aby uzyskać szczegółowy komunikat o błędzie w widoku komunikatów.
+ [Wyszukiwanie komunikatów](../debugger/message-search-dialog-box.md) — okno dialogowe Służy do znajdowania węzła określonego komunikatu w widoku komunikatów.
 
- [Okno dialogowe Właściwości komunikatu](../debugger/message-properties-dialog-box.md) używany do wyświetlania właściwości wiadomości wybrany w widoku komunikatów.
+ Okno [dialogowe Właściwości komunikatu](../debugger/message-properties-dialog-box.md) Służy do wyświetlania właściwości komunikatu wybranego w widoku wiadomości.
 
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md) zawiera sekcje opisujące każdy Spy ++ menu i okno dialogowe.
+ [Spy + + — Odwołanie](../debugger/spy-increment-reference.md) Zawiera sekcje opisujące poszczególne menu Spy + + i okna dialogowego.

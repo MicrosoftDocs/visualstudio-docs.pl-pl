@@ -1,5 +1,5 @@
 ---
-title: Polecenia Menu okna | Dokumentacja firmy Microsoft
+title: Polecenia menu okna | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,25 +11,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a0d6332be7049d575b15c229b5892112fc972895
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900970"
 ---
 # <a name="window-menu-commands"></a>Polecenia menu Okna
-**Okna** menu zawiera polecenia do zarządzania programu Spy ++ systemu windows.
+Menu **okno** zawiera polecenia do zarządzania oknami programu Spy + +.
 
- **Kaskadowe** Reorganizuje wszystkie systemy windows we wzorcu cascade.
+ **Kaskada** Rozmieszcza ponownie wszystkie okna we wzorcu kaskadowym.
 
- **Sąsiadująco w poziomie** rozmieszczanie wszystkich okien we wzorcu poziomie kafelka.
+ **Kafelek w poziomie** Rozmieść ponownie wszystkie okna w poziomie wzorca kafelków.
 
- **Sąsiadująco w pionie** Reorganizuje wszystkie systemy windows we wzorcu sąsiadująco w pionie.
+ **Sąsiadująco w pionie** Rozmieszcza ponownie wszystkie okna w pionowym wzorcu kafelków.
 
- **Rozmieść ikony** Rozmieszcza ikony, jeśli zminimalizowany systemu windows.
+ **Rozmieść ikony** Zmienia kolejność ikon widoku, jeśli system Windows został zminimalizowany.
 
- **Zamknij / Zamknij wszystkie** zamyka jeden lub wszystkie okna w programie Spy ++.
+ **Zamknij/Zamknij wszystko** Zamyka jedno lub wszystkie okna w programie Spy + +.
 
- **Odśwież** odświeża aktualnie wybranego widoku.
+ **Odśwież** Odświeża aktualnie wybrany widok.
 
- **Okno** pozwala na wybór określonego okna.
+ **Okno** Umożliwia wybór określonego okna.

@@ -1,5 +1,5 @@
 ---
-title: Raport podsumowujący na wątek | Dokumenty firmy Microsoft
+title: Na raport podsumowujący wątek | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,21 +13,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ab5e88db9f539dd79482044ab3834b27a6b1747
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62794329"
 ---
-# <a name="per-thread-summary-report"></a>Raport podsumowujący na wątek
-Ten wykres słupkowy pokazuje proporcję czasu, przez który każdy nieukryty wątek spędza w każdej kategorii aktywności podczas aktualnie widocznego zakresu czasu. "Wykonanie" oznacza, że wątek jest wykonywany; wszystkie inne kategorie oznaczają, że wątek czeka na coś.
+# <a name="per-thread-summary-report"></a>Na raport podsumowujący wątek
+Ten wykres słupkowy przedstawia proporcje czasu, w którym każdy nieukryty wątek spędza w poszczególnych kategoriach działań w ramach obecnie widocznego zakresu czasu. "Wykonywanie" oznacza, że wątek jest wykonywany; wszystkie inne kategorie oznaczają, że wątek oczekuje na coś.
 
 ## <a name="see-also"></a>Zobacz też
-- [Czas wykonania (widok wątków)](../profiling/execution-time-threads-view.md)
-- [Czas we/wy (widok wątków)](../profiling/i-o-time-threads-view.md)
+- [Czas wykonywania (Widok wątków)](../profiling/execution-time-threads-view.md)
+- [Czas operacji we/wy (Widok wątków)](../profiling/i-o-time-threads-view.md)
 - [Czas zarządzania pamięcią](../profiling/memory-management-time.md)
-- [Czas wywłaszczenia](../profiling/preemption-time.md)
-- [Czas snu](../profiling/sleep-time.md)
+- [Czas zastępujący](../profiling/preemption-time.md)
+- [Czas uśpienia](../profiling/sleep-time.md)
 - [Czas synchronizacji](../profiling/synchronization-time.md)
 - [Czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md)
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

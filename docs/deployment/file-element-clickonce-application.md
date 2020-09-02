@@ -1,5 +1,5 @@
 ---
-title: '&lt;plik&gt; — Element (aplikacja ClickOnce) | Dokumentacja firmy Microsoft'
+title: '&lt;File — &gt; element (Aplikacja ClickOnce) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -23,14 +23,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9345f3f094e1c48204892cd40cca71a7e28eba7c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900282"
 ---
-# <a name="ltfilegt-element-clickonce-application"></a>&lt;plik&gt; — element (aplikacja ClickOnce)
-Identyfikuje wszystkie pliki nonassembly pobierane i używane przez aplikację.
+# <a name="ltfilegt-element-clickonce-application"></a>&lt;File — &gt; element (Aplikacja ClickOnce)
+Identyfikuje wszystkie pliki niezestawowe pobrane i używane przez aplikację.
 
 ## <a name="syntax"></a>Składnia
 
@@ -83,108 +83,108 @@ Identyfikuje wszystkie pliki nonassembly pobierane i używane przez aplikację.
 </file>
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `file` Element jest opcjonalne. Element ma następujące atrybuty.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `file`Element jest opcjonalny. Element ma następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`name`|Wymagana. Określa nazwę pliku.|
-|`size`|Wymagana. Określa rozmiar w bajtach, pliku.|
-|`group`|Opcjonalny, jeśli `optional` atrybut jest określony lub nie ustawiono `false`; wymagany, jeżeli `optional` jest `true`. Nazwa grupy, do której należy ten plik. Nazwa może być dowolną wartością ciągu Unicode, wybierany przez deweloperów i służy do pobierania plików na żądanie przy użyciu <xref:System.Deployment.Application.ApplicationDeployment> klasy.|
-|`optional`|Opcjonalna. Określa, czy ten plik musi uruchomić pobieranie, gdy aplikacja jest pierwszym, czy plik powinien znajdować się tylko na serwerze do momentu aplikacja żąda ją na żądanie. Jeśli `false` lub niezdefiniowany, plik jest pobierany podczas najpierw uruchomić lub zainstalować aplikacji. Jeśli `true`, `group` musi być określony dla manifestu aplikacji był prawidłowy. `optional` nie może mieć wartość true, jeśli `writeableType` jest określony z wartością `applicationData`.|
-|`writeableType`|Opcjonalna. Określa, że ten plik jest plikiem danych. Obecnie jedyna prawidłowa wartość to `applicationData`.|
+|`name`|Wymagany. Określa nazwę pliku.|
+|`size`|Wymagany. Określa rozmiar pliku w bajtach.|
+|`group`|Opcjonalne, jeśli `optional` atrybut nie jest określony lub ma wartość `false` ; wymagane, jeśli `optional` jest `true` . Nazwa grupy, do której należy ten plik. Nazwa może być dowolną wartością ciągu Unicode wybraną przez dewelopera i służy do pobierania plików na żądanie z <xref:System.Deployment.Application.ApplicationDeployment> klasą.|
+|`optional`|Opcjonalny. Określa, czy ten plik musi zostać pobrany podczas pierwszego uruchomienia aplikacji, czy plik powinien znajdować się tylko na serwerze, dopóki aplikacja nie zażąda tej aplikacji na żądanie. Jeśli `false` lub niezdefiniowany, plik zostanie pobrany podczas pierwszego uruchomienia lub zainstalowania aplikacji. Jeśli `true` `group` musi być określony, aby manifest aplikacji był prawidłowy. `optional` nie można wykonać wartości true, jeśli `writeableType` określono wartość `applicationData` .|
+|`writeableType`|Opcjonalny. Określa, że ten plik jest plikiem danych. Obecnie jedyna prawidłowa wartość to `applicationData` .|
 
-## <a name="typelib"></a>typelib
- `typelib` Element jest opcjonalny element podrzędny elementu file. Element zawiera opis biblioteki typów, który należy do składnika COM. Element ma następujące atrybuty.
+## <a name="typelib"></a>Eksport
+ `typelib`Element jest opcjonalnym elementem podrzędnym elementu pliku. Element opisuje bibliotekę typów, która należy do składnika COM. Element ma następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`tlbid`|Wymagana. Identyfikator GUID jest przypisany do biblioteki typów.|
-|`version`|Wymagana. Numer wersji biblioteki typów.|
-|`helpdir`|Wymagana. Katalog, który zawiera pliki pomocy dla tego składnika. Może mieć długości zerowej.|
-|`resourceid`|Opcjonalna. Reprezentacja ciągu szesnastkowego identyfikator ustawień regionalnych (LCID). Jest jednej do czterech liczb szesnastkowych bez prefiksu 0 x i bez zer wiodących. Identyfikator LCID może mieć identyfikator podjęzyk neutralne.|
-|`flags`|Opcjonalna. Ciąg reprezentujący flagi biblioteki typów dla tego typu biblioteki. W szczególności powinien być jednym z "RESTRICTED", "CONTROL", "HIDDEN" i "HASDISKIMAGE".|
+|`tlbid`|Wymagany. Identyfikator GUID przypisany do biblioteki typów.|
+|`version`|Wymagany. Numer wersji biblioteki typów.|
+|`helpdir`|Wymagany. Katalog zawierający pliki pomocy dla składnika. Może mieć długość 0.|
+|`resourceid`|Opcjonalny. Szesnastkowa reprezentacja identyfikatora ustawień regionalnych (LCID). Jest to jeden do czterech cyfr szesnastkowych bez prefiksu 0x i bez zer wiodących. Identyfikator LCID może mieć neutralne identyfikatory języka.|
+|`flags`|Opcjonalny. Ciąg reprezentujący flagi biblioteki typów dla tej biblioteki typów. W przypadku powinna być to jeden z wartości "z OGRANICZENIAmi", "CONTROL", "HIDDEN" i "HASDISKIMAGE".|
 
 ## <a name="comclass"></a>comClass
- `comClass` Element jest opcjonalny element podrzędny elementu `file` elementu, ale jest wymagany, jeśli [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja zawiera składnik COM zamierza wdrażanie przy użyciu rejestracji wolnego modelu COM. Element ma następujące atrybuty.
+ `comClass`Element jest opcjonalnym elementem podrzędnym `file` elementu, ale jest wymagany, jeśli [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja zawiera składnik com, który zamierza wdrożyć przy użyciu modelu COM bez rejestracji. Element ma następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`clsid`|Wymagana. Identyfikator klasy składnika modelu COM, wyrażony jako identyfikator GUID.|
-|`description`|Opcjonalna. Nazwa klasy.|
-|`threadingModel`|Opcjonalna. Model wątkowości, używane przez klasy modelu COM w procesie. Jeśli ta właściwość ma wartość null, jest używany bez modelu wątkowości. Składnik jest tworzony w głównym wątku klienta i wywołania z innych wątków są przekazywane do tego wątku. Poniższa lista przedstawia prawidłowe wartości:<br /><br /> `Apartment`, `Free`, `Both`, i `Neutral`.|
-|`tlbid`|Opcjonalna. Identyfikator GUID dla biblioteki typów dla tego składnika COM.|
-|`progid`|Opcjonalna. Identyfikator programowy zależne od wersji skojarzony z składnika COM. Format `ProgID` jest `<vendor>.<component>.<version>`.|
-|`miscStatus`|Opcjonalna. Duplikaty w zestawie manifestu informacji dostarczonych przez `MiscStatus` klucza rejestru. Jeśli wartości `miscStatusIcon`, `miscStatusContent`, `miscStatusDocprint`, lub `miscStatusThumbnail` atrybutów nie zostaną znalezione, odpowiadająca wartość w domyślnej liście `miscStatus` służy do brakujących atrybutów. Wartość może być rozdzielana przecinkami lista wartości atrybutu z poniższej tabeli. Można użyć tego atrybutu, jeśli klasa COM jest klasą OCX, która wymaga `MiscStatus` wartości kluczy rejestru.|
-|`miscStatusIcon`|Opcjonalna. Duplikaty w zestawie manifestu informacji dostarczonych przez DVASPECT_ICON. Umożliwia ona ikoną obiektu. Wartość może być rozdzielana przecinkami lista wartości atrybutu z poniższej tabeli. Można użyć tego atrybutu, jeśli klasa COM jest klasą OCX, która wymaga `Miscstatus` wartości kluczy rejestru.|
-|`miscStatusContent`|Opcjonalna. Duplikaty w zestawie manifestu informacji dostarczonych przez DVASPECT_CONTENT. Może ona dokumencie złożonym, którą można wyświetlić dla ekranu lub drukarki. Wartość może być rozdzielana przecinkami lista wartości atrybutu z poniższej tabeli. Można użyć tego atrybutu, jeśli klasa COM jest klasą OCX, która wymaga `MiscStatus` wartości kluczy rejestru.|
-|`miscStatusDocPrint`|Opcjonalna. Duplikaty w zestawie manifestu informacji dostarczonych przez DVASPECT_DOCPRINT. Umożliwia ona reprezentację obiektu w postaci wyświetlanej na ekranie tak, jakby drukowania na drukarce. Wartość może być rozdzielana przecinkami lista wartości atrybutu z poniższej tabeli. Można użyć tego atrybutu, jeśli klasa COM jest klasą OCX, która wymaga `MiscStatus` wartości kluczy rejestru.|
-|`miscStatusThumbnail`|Opcjonalna. Duplikaty w zestawie manifestu informacji dostarczonych przez DVASPECT_THUMBNAIL. Umożliwia ona miniaturę wyświetlanej w narzędziu do przeglądania obiektu. Wartość może być rozdzielana przecinkami lista wartości atrybutu z poniższej tabeli. Można użyć tego atrybutu, jeśli klasa COM jest klasą OCX, która wymaga `MiscStatus` wartości kluczy rejestru.|
+|`clsid`|Wymagany. Identyfikator klasy składnika COM wyrażony jako identyfikator GUID.|
+|`description`|Opcjonalny. Nazwa klasy.|
+|`threadingModel`|Opcjonalny. Model wątkowości używany przez klasy modelu COM w procesie. Jeśli ta właściwość ma wartość null, nie jest używany żaden model wątkowy. Składnik jest tworzony w głównym wątku klienta i wywołania z innych wątków są organizowane w tym wątku. Poniższa lista zawiera prawidłowe wartości:<br /><br /> `Apartment`, `Free` , `Both` i `Neutral` .|
+|`tlbid`|Opcjonalny. Identyfikator GUID dla biblioteki typów dla tego składnika COM.|
+|`progid`|Opcjonalny. Identyfikator programistyczny zależny od wersji skojarzony ze składnikiem COM. Format `ProgID` jest `<vendor>.<component>.<version>` .|
+|`miscStatus`|Opcjonalny. Duplikaty w manifeście zestawu informacje dostarczone przez `MiscStatus` klucz rejestru. Jeśli `miscStatusIcon` `miscStatusContent` nie można odnaleźć wartości dla atrybutów,, lub, `miscStatusDocprint` `miscStatusThumbnail` odpowiednia wartość domyślna wymieniona w `miscStatus` jest używana dla brakujących atrybutów. Wartość może być rozdzielaną przecinkami listą wartości atrybutów z poniższej tabeli. Tego atrybutu można użyć, jeśli Klasa COM jest klasą OCX wymagającą `MiscStatus` wartości klucza rejestru.|
+|`miscStatusIcon`|Opcjonalny. Duplikaty w manifeście zestawu informacje dostarczone przez DVASPECT_ICON. Może zapewnić ikonę obiektu. Wartość może być rozdzielaną przecinkami listą wartości atrybutów z poniższej tabeli. Tego atrybutu można użyć, jeśli Klasa COM jest klasą OCX wymagającą `Miscstatus` wartości klucza rejestru.|
+|`miscStatusContent`|Opcjonalny. Duplikaty w manifeście zestawu informacje dostarczone przez DVASPECT_CONTENT. Może zapewnić możliwość wyświetlania dokumentu złożonego dla ekranu lub drukarki. Wartość może być rozdzielaną przecinkami listą wartości atrybutów z poniższej tabeli. Tego atrybutu można użyć, jeśli Klasa COM jest klasą OCX wymagającą `MiscStatus` wartości klucza rejestru.|
+|`miscStatusDocPrint`|Opcjonalny. Duplikaty w manifeście zestawu informacje dostarczone przez DVASPECT_DOCPRINT. Może zapewnić, że na ekranie ma być wyświetlana reprezentacja obiektu, tak jakby była drukowana na drukarce. Wartość może być rozdzielaną przecinkami listą wartości atrybutów z poniższej tabeli. Tego atrybutu można użyć, jeśli Klasa COM jest klasą OCX wymagającą `MiscStatus` wartości klucza rejestru.|
+|`miscStatusThumbnail`|Opcjonalny. Duplikaty w manifeście zestawu informacje dostarczone przez DVASPECT_THUMBNAIL. Może zapewnić miniaturę obiektu, który można wyświetlić w narzędziu do przeglądania. Wartość może być rozdzielaną przecinkami listą wartości atrybutów z poniższej tabeli. Tego atrybutu można użyć, jeśli Klasa COM jest klasą OCX wymagającą `MiscStatus` wartości klucza rejestru.|
 
 ## <a name="cominterfaceexternalproxystub"></a>comInterfaceExternalProxyStub
- `comInterfaceExternalProxyStub` Element jest opcjonalny element podrzędny elementu `file` elementu, ale może być wymagane, jeśli [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja zawiera składnik COM zamierza wdrażanie przy użyciu rejestracji wolnego modelu COM. Element zawiera następujące atrybuty.
+ `comInterfaceExternalProxyStub`Element jest opcjonalnym elementem podrzędnym `file` elementu, ale może być wymagana, jeśli [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja zawiera składnik com, który zamierza wdrożyć przy użyciu modelu COM bez rejestracji. Element zawiera następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`iid`|Wymagana. Interfejs identyfikator (IID), który jest obsługiwany przez ten serwer proxy. Identyfikator IID musi mieć nawiasów klamrowych otaczających je.|
-|`baseInterface`|Opcjonalna. IID interfejsu, z którego odwołuje się interfejs `iid` pochodzi.|
-|`numMethods`|Opcjonalna. Liczba metod zaimplementowanych przez interfejs.|
-|`name`|Opcjonalna. Nazwa interfejsu, ponieważ pojawi się w kodzie.|
-|`tlbid`|Opcjonalna. Biblioteki typów, który zawiera opis interfejs określony przez `iid` atrybutu.|
-|`proxyStubClass32`|Opcjonalna. Mapuje IID CLSID serwera proxy 32-bitowych bibliotek DLL.|
+|`iid`|Wymagany. Identyfikator interfejsu (IID) obsługiwany przez ten serwer proxy. Identyfikator IID musi zawierać nawiasy klamrowe.|
+|`baseInterface`|Opcjonalny. Identyfikator IID interfejsu, z którego pochodzi interfejs wywoływany przez program `iid` .|
+|`numMethods`|Opcjonalny. Liczba metod implementowanych przez interfejs.|
+|`name`|Opcjonalny. Nazwa interfejsu w postaci, w jakiej będzie wyświetlana w kodzie.|
+|`tlbid`|Opcjonalny. Biblioteka typów, która zawiera opis interfejsu określonego przez `iid` atrybut.|
+|`proxyStubClass32`|Opcjonalny. Mapuje identyfikator IID na identyfikator CLSID w 32-bitowych bibliotekach DLL serwera proxy.|
 
 ## <a name="cominterfaceproxystub"></a>comInterfaceProxyStub
- `comInterfaceProxyStub` Element jest opcjonalny element podrzędny elementu `file` elementu, ale może być wymagane, jeśli [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja zawiera składnik COM zamierza wdrażanie przy użyciu rejestracji wolnego modelu COM. Element zawiera następujące atrybuty.
+ `comInterfaceProxyStub`Element jest opcjonalnym elementem podrzędnym `file` elementu, ale może być wymagana, jeśli [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja zawiera składnik com, który zamierza wdrożyć przy użyciu modelu COM bez rejestracji. Element zawiera następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`iid`|Wymagana. Interfejs identyfikator (IID), który jest obsługiwany przez ten serwer proxy. Identyfikator IID musi mieć nawiasów klamrowych otaczających je.|
-|`baseInterface`|Opcjonalna. IID interfejsu, z którego odwołuje się interfejs `iid` pochodzi.|
-|`numMethods`|Opcjonalna. Liczba metod zaimplementowanych przez interfejs.|
-|`Name`|Opcjonalna. Nazwa interfejsu, ponieważ pojawi się w kodzie.|
-|`Tlbid`|Opcjonalna. Biblioteki typów, który zawiera opis interfejs określony przez `iid` atrybutu.|
-|`proxyStubClass32`|Opcjonalna. Mapuje IID CLSID serwera proxy 32-bitowych bibliotek DLL.|
-|`threadingModel`|Opcjonalna. Opcjonalna. Model wątkowości, używane przez klasy modelu COM w procesie. Jeśli ta właściwość ma wartość null, jest używany bez modelu wątkowości. Składnik jest tworzony w głównym wątku klienta i wywołania z innych wątków są przekazywane do tego wątku. Poniższa lista przedstawia prawidłowe wartości:<br /><br /> `Apartment`, `Free`, `Both`, i `Neutral`.|
+|`iid`|Wymagany. Identyfikator interfejsu (IID) obsługiwany przez ten serwer proxy. Identyfikator IID musi zawierać nawiasy klamrowe.|
+|`baseInterface`|Opcjonalny. Identyfikator IID interfejsu, z którego pochodzi interfejs wywoływany przez program `iid` .|
+|`numMethods`|Opcjonalny. Liczba metod implementowanych przez interfejs.|
+|`Name`|Opcjonalny. Nazwa interfejsu w postaci, w jakiej będzie wyświetlana w kodzie.|
+|`Tlbid`|Opcjonalny. Biblioteka typów, która zawiera opis interfejsu określonego przez `iid` atrybut.|
+|`proxyStubClass32`|Opcjonalny. Mapuje identyfikator IID na identyfikator CLSID w 32-bitowych bibliotekach DLL serwera proxy.|
+|`threadingModel`|Opcjonalny. Opcjonalny. Model wątkowości używany przez klasy modelu COM w procesie. Jeśli ta właściwość ma wartość null, nie jest używany żaden model wątkowy. Składnik jest tworzony w głównym wątku klienta i wywołania z innych wątków są organizowane w tym wątku. Poniższa lista zawiera prawidłowe wartości:<br /><br /> `Apartment`, `Free` , `Both` i `Neutral` .|
 
 ## <a name="windowclass"></a>windowClass
- `windowClass` Element jest opcjonalny element podrzędny elementu `file` elementu, ale może być wymagane, jeśli [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja zawiera składnik COM zamierza wdrażanie przy użyciu rejestracji wolnego modelu COM. Element odwołuje się do klasy okna, zdefiniowane przez składnik COM, który musi mieć wersję stosowane do niego. Element zawiera następujące atrybuty.
+ `windowClass`Element jest opcjonalnym elementem podrzędnym `file` elementu, ale może być wymagana, jeśli [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja zawiera składnik com, który zamierza wdrożyć przy użyciu modelu COM bez rejestracji. Element odwołuje się do klasy okna zdefiniowanej przez składnik COM, do której należy zastosować wersję. Element zawiera następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`versioned`|Opcjonalna. Czy wewnętrzny okna klasy nazwa używana podczas rejestracji zawiera wersję zestawu, który zawiera klasę okna kontrolki. Wartość tego atrybutu może być `yes` lub `no`. Wartość domyślna to `yes`. Wartość `no` należy używać tylko jeśli w tej samej klasy okna jest definiowany przez side-by-side i równoważne składnik nie side-by-side i chcesz je traktować jako tej samej klasy okna. Należy zauważyć, że zwykle stosuje się zasady o rejestrowanie klasy okna — tylko pierwszy składnik, który rejestruje klasę okna będzie można zarejestrować go, ponieważ nie ma wersji stosowane do niego.|
+|`versioned`|Opcjonalny. Określa, czy nazwa wewnętrznej klasy okna używana w rejestracji zawiera wersję zestawu, który zawiera klasę okna. Wartość tego atrybutu może być `yes` lub `no` . Wartość domyślna to `yes`. Wartość `no` powinna być używana tylko wtedy, gdy ta sama klasa okna jest definiowana przez składnik side-by-Side i równoważny składnik nienależący do siebie i chcesz traktować je jako tę samą klasę okna. Należy pamiętać, że reguły dotyczące rejestracji klas okien są stosowane — tylko pierwszy składnik, który rejestruje klasę okna, będzie mógł go zarejestrować, ponieważ nie ma zastosowanej wersji.|
 
 ## <a name="hash"></a>hash
- `hash` Element jest opcjonalny element podrzędny elementu `file` elementu. `hash` Element nie ma żadnych atrybutów.
+ `hash`Element jest opcjonalnym elementem podrzędnym `file` elementu. `hash`Element nie ma żadnych atrybutów.
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] używa konsolidatorze skrótów wszystkich plików w aplikacji w celu sprawdzenia zabezpieczeń, aby upewnić się, że żaden z plików zostały zmienione po wdrożeniu. Jeśli `hash` element nie jest uwzględniony, ten test nie zostanie wykonane. W związku z pominięciem `hash` element nie jest zalecane.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] używa skrótu algorytmu dla wszystkich plików w aplikacji jako sprawdzenie zabezpieczeń, aby upewnić się, że żaden z plików nie został zmieniony po wdrożeniu. Jeśli `hash` element nie jest uwzględniony, to sprawdzenie nie zostanie wykonane. W związku z tym pominięcie `hash` elementu nie jest zalecane.
 
- Jeśli manifest zawiera plik, który nie jest mieszany, że manifest nie może być cyfrowo podpisany, ponieważ użytkownicy nie może sprawdzić zawartość pliku bez haszowania.
+ Jeśli manifest zawiera plik, który nie jest poddany mieszania, ten manifest nie może być podpisany cyfrowo, ponieważ użytkownicy nie mogą zweryfikować zawartości niezmieszanego pliku.
 
-## <a name="dsigtransforms"></a>DSIG:TRANSFORMS
- `dsig:Transforms` Element jest wymagany element podrzędny elementu `hash` elementu. `dsig:Transforms` Element nie ma żadnych atrybutów.
+## <a name="dsigtransforms"></a>dsig: przekształcenia
+ `dsig:Transforms`Element jest wymaganym elementem podrzędnym `hash` elementu. `dsig:Transforms`Element nie ma żadnych atrybutów.
 
-## <a name="dsigtransform"></a>DSIG:Transform
- `dsig:Transform` Element jest wymagany element podrzędny elementu `dsig:Transforms` elementu. `dsig:Transform` Element ma następujące atrybuty.
-
-| Atrybut | Opis |
-|-------------| - |
-| `Algorithm` | Algorytm używany do obliczania skrótu dla tego pliku. Obecnie tylko wartość używana przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] jest `urn:schemas-microsoft-com:HashTransforms.Identity`. |
-
-## <a name="dsigdigestmethod"></a>DSIG:DigestMethod
- `dsig:DigestMethod` Element jest wymagany element podrzędny elementu `hash` elementu. `dsig:DigestMethod` Element ma następujące atrybuty.
+## <a name="dsigtransform"></a>dsig: Przekształć
+ `dsig:Transform`Element jest wymaganym elementem podrzędnym `dsig:Transforms` elementu. `dsig:Transform`Element ma następujące atrybuty.
 
 | Atrybut | Opis |
 |-------------| - |
-| `Algorithm` | Algorytm używany do obliczania skrótu dla tego pliku. Obecnie tylko wartość używana przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] jest `http://www.w3.org/2000/09/xmldsig#sha1`. |
+| `Algorithm` | Algorytm używany do obliczania skrótu dla tego pliku. Obecnie jedyną wartością używaną przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] is jest `urn:schemas-microsoft-com:HashTransforms.Identity` . |
 
-## <a name="dsigdigestvalue"></a>dsig:DigestValue
- `dsig:DigestValue` Element jest wymagany element podrzędny elementu `hash` elementu. `dsig:DigestValue` Element nie ma żadnych atrybutów. Jego wartość tekstowa jest obliczana wartość skrótu dla określonego pliku.
+## <a name="dsigdigestmethod"></a>dsig: DigestMethod
+ `dsig:DigestMethod`Element jest wymaganym elementem podrzędnym `hash` elementu. `dsig:DigestMethod`Element ma następujące atrybuty.
+
+| Atrybut | Opis |
+|-------------| - |
+| `Algorithm` | Algorytm używany do obliczania skrótu dla tego pliku. Obecnie jedyną wartością używaną przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] is jest `http://www.w3.org/2000/09/xmldsig#sha1` . |
+
+## <a name="dsigdigestvalue"></a>dsig: DigestValue
+ `dsig:DigestValue`Element jest wymaganym elementem podrzędnym `hash` elementu. `dsig:DigestValue`Element nie ma żadnych atrybutów. Wartość tekstowa jest obliczanym skrótem dla określonego pliku.
 
 ## <a name="remarks"></a>Uwagi
- Ten element określa wszystkie pliki nonassembly, które tworzą aplikację, a w szczególności wartości skrótu dla pliku weryfikacji. Ten element może także zawierać dane izolacji Component Object Model (COM), skojarzone z plikiem. Jeśli zmieni się pliku, plik manifestu aplikacji musi można również zaktualizować do odzwierciedlenia zmiany.
+ Ten element identyfikuje wszystkie pliki niebędące zestawami, które składają się na aplikację, a w szczególności wartości skrótu dla weryfikacji pliku. Ten element może również zawierać dane izolacji Component Object Model (COM) skojarzone z plikiem. Jeśli plik zostanie zmieniony, plik manifestu aplikacji również musi zostać zaktualizowany w celu odzwierciedlenia zmiany.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie kodu pokazano `file` elementów w aplikacji manifestu dla aplikacji wdrożonych za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
+ Poniższy przykład kodu ilustruje `file` elementy w manifeście aplikacji dla aplikacji wdrożonej przy użyciu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
 ```xml
 <file name="Icon.ico" size="9216">
@@ -198,5 +198,5 @@ Identyfikuje wszystkie pliki nonassembly pobierane i używane przez aplikację.
 </file>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)

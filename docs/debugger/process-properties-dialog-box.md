@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe właściwości procesu | Dokumentacja firmy Microsoft
+title: Okno dialogowe właściwości procesu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,35 +12,35 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2448659a8725c7e284e12a99d52478144ebec1b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62903759"
 ---
 # <a name="process-properties-dialog-box"></a>Okno dialogowe właściwości procesu
-Użyj tego okna dialogowego, aby dowiedzieć się więcej na temat określonego procesu. Aby wyświetlić to okno dialogowe, Przenieś fokus do [widok procesy](../debugger/processes-view.md) okna. Zaznacz dowolny węzeł procesu w drzewie, a następnie wybierz **właściwości** z **widoku** menu.
+Użyj tego okna dialogowego, aby dowiedzieć się więcej o określonym procesie. Aby wyświetlić to okno dialogowe, Przenieś fokus do okna [widok procesów](../debugger/processes-view.md) . Wybierz dowolny węzeł procesu w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .
 
- W systemach operacyjnych Windows 98 i Windows 95, tylko zmodyfikowanej wersji **ogólne** karta jest wyświetlana.
+ W systemach operacyjnych Windows 98 i Windows 95 zostanie wyświetlona tylko zmodyfikowana wersja karty **Ogólne** .
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Karta Ogólne, okno dialogowe właściwości procesu](../debugger/general-tab-thread-properties-dialog-box.md) Użyj tego okna dialogowego dowiedzieć się więcej o wybrany proces.
+ [Karta Ogólne, okno dialogowe właściwości procesu](../debugger/general-tab-thread-properties-dialog-box.md) To okno dialogowe zawiera więcej informacji o wybranym procesie.
 
- [Karta pamięć, okno dialogowe właściwości procesu](../debugger/memory-tab-process-properties-dialog-box.md) ta karta służy do pokazywania, jak korzysta z pamięci procesu.
+ [Karta pamięć, okno dialogowe właściwości procesu](../debugger/memory-tab-process-properties-dialog-box.md) Użyj tej karty, aby pokazać, w jaki sposób proces używa pamięci.
 
- [Karta plik stronicowania, okno dialogowe właściwości procesu](../debugger/page-file-tab-process-properties-dialog-box.md) ta karta służy do sprawdzenia pliku stronicowania procesu.
+ [Karta plik strony, okno dialogowe właściwości procesu](../debugger/page-file-tab-process-properties-dialog-box.md) Użyj tej karty, aby przeanalizować plik stronicowania procesu.
 
- [Karta przestrzeń, okno dialogowe właściwości procesu](../debugger/space-tab-process-properties-dialog-box.md) ta karta służy do zbadania przestrzeni adresowej procesu.
+ [Karta przestrzeń, okno dialogowe właściwości procesu](../debugger/space-tab-process-properties-dialog-box.md) Ta karta służy do badania przestrzeni adresowej procesu.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Okno dialogowe Wyszukiwanie procesów](../debugger/process-search-dialog-box.md) umożliwia znalezienie węzła dla określonego procesu w widoku proces.
+ [Wyszukiwanie procesów](../debugger/process-search-dialog-box.md) — okno dialogowe Służy do znajdowania węzła dla określonego procesu w widoku procesu.
 
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md) zawiera sekcje opisujące każdy Spy ++ menu i okno dialogowe.
+ [Spy + + — Odwołanie](../debugger/spy-increment-reference.md) Zawiera sekcje opisujące poszczególne menu Spy + + i okna dialogowego.
 
- [Trwa wyszukiwanie procesu w widoku procesów](../debugger/how-to-search-for-a-process-in-processes-view.md) wyjaśnia, jak można znaleźć określonego procesu w widoku procesów.
+ [Wyszukiwanie procesu w widoku procesów](../debugger/how-to-search-for-a-process-in-processes-view.md) Wyjaśnia, jak znaleźć konkretny proces w widoku procesy.
 
- [Widok procesów](../debugger/processes-view.md) Wyświetla aktywne procesy w widoku drzewa.
+ [Widok procesów](../debugger/processes-view.md) Wyświetla widok drzewa aktywnych procesów.
 
- [Widoków programu Spy ++](../debugger/spy-increment-views.md) wyjaśnia widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.
+ [Widoki Spy + +](../debugger/spy-increment-views.md) Wyjaśnia widoki drzewa Spy + + systemu Windows, komunikatów, procesów i wątków.
 
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md) wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.
+ [Korzystanie z programu Spy + +](../debugger/using-spy-increment.md) Wprowadzenie do narzędzia Spy + + i wyjaśnienie, jak można go użyć.

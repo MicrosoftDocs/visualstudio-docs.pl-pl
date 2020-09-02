@@ -1,5 +1,5 @@
 ---
-title: Przetwarzanie kartę, okno dialogowe właściwości | Dokumentacja firmy Microsoft
+title: Karta proces, okno dialogowe Właściwości okna | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ecd6bc2c5612424b91a9b2cd121de780848be8bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62903746"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>Karta Proces, okno dialogowe właściwości okna
-Użyj **procesu** kartę, aby zidentyfikować proces wybranego okna. Aby wyświetlić [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md), Przenieś fokus do [widoku Windows](../debugger/windows-view.md) okna. Zaznacz dowolny węzeł okna w drzewie, a następnie wybierz **właściwości** z **widoku** menu.
+Za pomocą karty **proces** Zidentyfikuj proces wybranego okna. Aby wyświetlić okno [dialogowe Właściwości okna](../debugger/window-properties-dialog-box.md), Przenieś fokus do okna [Widok systemu Windows](../debugger/windows-view.md) . Wybierz dowolny węzeł okna w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .
 
- Następujące ustawienia są dostępne na **procesu** karty:
+ Na karcie **proces** dostępne są następujące ustawienia:
 
 |Wpis|Opis|
 |-----------|-----------------|
-|**Identyfikator procesu**|Identyfikator procesu, który jest właścicielem wątek, który utworzył tego okna. Wybierz tę wartość, aby wyświetlić właściwości tego procesu.|
-|**Identyfikator wątku**|Identyfikator wątku, który utworzone w tym oknie. Wybierz tę wartość, aby wyświetlić właściwości tego wątku.|
+|**Identyfikator procesu**|Identyfikator procesu, który jest właścicielem wątku, który utworzył to okno. Wybierz tę wartość, aby wyświetlić właściwości tego procesu.|
+|**Identyfikator wątku**|Identyfikator wątku, który utworzył to okno. Wybierz tę wartość, aby wyświetlić właściwości tego wątku.|

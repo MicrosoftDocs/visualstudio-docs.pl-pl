@@ -1,5 +1,5 @@
 ---
-title: Brak aktywności wątku do wyświetlenia (widok wątków) | Dokumenty firmy Microsoft
+title: Brak aktywności wątku do wyświetlenia (Widok wątków) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,24 +13,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91cc840a69135edf59603ba62d15985eb541df0e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62794471"
 ---
-# <a name="no-thread-activity-to-show-threads-view"></a>Brak działania wątku do wyświetlenia (widok wątków)
-Ten obszar zawiera dane dotyczące wątków nieuprzejmych w aktualnie widocznym zakresie czasu.
+# <a name="no-thread-activity-to-show-threads-view"></a>Brak aktywności wątku do wyświetlenia (Widok wątków)
+Ten obszar pokazuje dane dotyczące nieukrytych wątków w aktualnie widocznym zakresie czasu.
 
- Jeśli żadne informacje nie są widoczne, sprawdź następujące ustawienia:
+ Jeśli informacje nie są widoczne, sprawdź następujące ustawienia:
 
-- Czy poziom powiększenia jest wysoki? Spróbuj pomniejszyć lub przewinąć, aby uzyskać większą aktywność wątku w zasięgu.
+- Czy poziom powiększenia jest wysoki? Spróbuj powiększyć lub przewinięcie, aby zwiększyć liczbę działań wątku w zakresie.
 
 - Czy zbyt wiele wątków jest ukrytych? Jeśli tak, spróbuj pokazać wszystkie wątki
 
-- Jeśli wybrano **opcję Tylko mój kod,** można wyświetlać tylko dane dotyczące kodu. Spróbuj wyczyścić ustawienie, aby upewnić się, czy istnieje jakaś aktywność wątku systemowego.
+- W przypadku wybrania **tylko mój kod** można wyświetlać tylko dane o kodzie. Spróbuj wyczyścić to ustawienie, aby upewnić się, czy jest jakieś działanie wątku systemowego.
 
-- Upewnij się, że redukcja szumów jest ustawiona na niski próg.
+- Upewnij się, że redukcja szumu jest ustawiona na niski próg.
 
 ## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

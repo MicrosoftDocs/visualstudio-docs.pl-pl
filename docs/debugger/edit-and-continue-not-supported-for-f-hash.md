@@ -1,5 +1,5 @@
 ---
-title: Edytuj i Kontynuuj nie obsługiwanie dla F# | Dokumentacja firmy Microsoft
+title: 'Edytuj i Kontynuuj nie są obsługiwane w języku F # | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ceb0ca767b1ac6364e103925fb86ed639c3d321d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62851160"
 ---
 # <a name="edit-and-continue-not-supported-for-f"></a>Opcje edytuj i kontynuuj nie są obsługiwane w F# #
-Edytuj i Kontynuuj nie jest obsługiwana podczas debugowania F# kodu. Edytuje F# kodu są możliwe podczas sesji debugowania, ale należy unikać. Zmiany w kodzie nie są stosowane podczas sesji debugowania. W związku z tym, wszelkie zmiany wprowadzone do F# spowoduje kodu podczas debugowania kodu źródłowego, który nie jest zgodny z debugowany kod.
+Polecenie Edytuj i Kontynuuj nie jest obsługiwane podczas debugowania kodu F #. Podczas sesji debugowania można edytować kod języka F #, ale należy go unikać. Zmiany kodu nie są stosowane podczas sesji debugowania. W związku z tym wszystkie zmiany w kodzie języka F # podczas debugowania spowodują kod źródłowy, który nie pasuje do debugowanego kodu.

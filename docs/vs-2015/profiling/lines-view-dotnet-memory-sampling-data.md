@@ -1,5 +1,5 @@
 ---
-title: Widok linii — dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft
+title: Widok linii — dane próbkowania pamięci platformy .NET | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,56 +12,56 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 251dc4279530c2d10ba8b404ee515824d0671037
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62579994"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Widok linii — dane próbkowania pamięci platformy .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Widok linii dla platformy .NET dane alokacji pamięci profilowania, która używa metody pobierania próbek Wyświetla listę instrukcji, które pamięci przydzielonej podczas uruchomienia profilowania. Kolumny także rozmiar i liczba przydziałów.  
+Widok linie dla danych profilowania przydziału pamięci platformy .NET, które używają metody próbkowania, zawiera listę instrukcji, które przydzieliły pamięć podczas przebiegu profilowania. Kolumny obejmują również rozmiar i liczbę alokacji.  
   
- W pliku źródłowym instrukcji może obejmować więcej niż jeden wiersz w pliku źródłowym, a jeden wiersz może zawierać więcej niż jedną instrukcję.  
+ W pliku źródłowym instrukcja może obejmować więcej niż jeden wiersz w pliku źródłowym, a pojedynczy wiersz może zawierać więcej niż jedną instrukcję.  
   
- Instrukcja jest identyfikowane przez następujące elementy:  
+ Instrukcja jest identyfikowana przez następujące elementy:  
   
-- Plik źródłowy, który zawiera deklarację funkcji.  
+- Plik źródłowy, który zawiera instrukcję Function.  
   
 - Funkcja, która zawiera instrukcję.  
   
-- Wiersza źródłowego, w którym rozpoczyna się wykonywanie instrukcji.  
+- Wiersz źródłowy, w którym rozpocznie się wykonywanie instrukcji.  
   
-- Znak w wierszu źródłowym, w którym rozpoczyna się wykonywanie instrukcji.  
+- Znak w wierszu źródłowym, w którym rozpocznie się wykonywanie instrukcji.  
   
-- Wiersza źródłowego, w którym kończy się instrukcji.  
+- Wiersz źródłowy, w którym zostanie zakończona instrukcja.  
   
-- Znak w wierszu źródłowym, w którym kończy się instrukcji.  
+- Znak w wierszu źródłowym, w którym następuje zakończenie instrukcji.  
   
-  Kolumna Nazwa wiersza zawiera wzorzec sortowalnej łączenia danych identyfikator.  
+  Kolumna Nazwa wiersza zawiera konkatenację łączenia danych identyfikatora.  
   
-  Zgodnie z definicją instrukcja wywołuje inne funkcje. W związku z tym są wyświetlane tylko wyłączne wartości.  
+  Zgodnie z definicją instrukcja nie wywołuje innych funkcji. W związku z tym wyświetlane są tylko wartości wykluczane.  
   
 |Kolumna|Opis|  
 |------------|-----------------|  
-|**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|  
-|**Nazwa procesu**|Nazwa procesu.|  
+|**Identyfikator procesu**|Identyfikator procesu (PID) przebiegu profilowania.|  
+|**Nazwa procesu**|Nazwa procesu|  
 |**Nazwa modułu**|Nazwa modułu, który zawiera instrukcję.|  
 |**Ścieżka modułu**|Ścieżka modułu, który zawiera instrukcję.|  
-|**Plik źródłowy**|Plik źródłowy, który zawiera deklarację.|  
+|**Plik źródłowy**|Plik źródłowy, który zawiera instrukcję.|  
 |**Nazwa funkcji**|Nazwa funkcji, która zawiera instrukcję.|  
 |**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
 |**Adres funkcji**|Adres początkowy funkcji.|  
-|**Początkowy wiersz w źródle**|Numer wiersza początkowego w pliku źródłowym, w którym wystąpiła Alokacja.|  
-|**Końcowy wiersz w źródle**|Końcowy numer wiersza w pliku źródłowym, w którym wystąpiła Alokacja.|  
-|**Początkowy znak w źródle**|Przesunięcie początkowy znak w wierszu pliku źródłowego, w którym wystąpiła Alokacja.|  
-|**Końcowy znak w źródle**|Przesunięcie końcowy znak w wierszu pliku źródłowego, w którym wystąpiła Alokacja.|  
-|**Nazwa wiersza**|Generowane przez program profilujący identyfikator wiersza przy użyciu następującej składni:`Source File`**; [**  `Line Number Start` **,**`Character Start`**] ->; [** `Line Number Start,Character Start`**]**|  
-|**Przydziały wyłączne**|Całkowita liczba obiektów, które zostały utworzone w tym wierszu.|  
-|**% Przydziałów wyłącznych**|Procent wszystkich obiektów, które zostały utworzone podczas uruchomienia profilowania, przydzielonych w taki sposób, w tym wierszu.|  
-|**Bajty wyłączne**|Procent przydzielonych w taki sposób, w tym wierszu wszystkich bajtów pamięci, która została przydzielona podczas uruchomienia profilowania.|  
-|**% Bajtów wyłącznych**|Procent przydzielonych w taki sposób, w tym wierszu wszystkich bajtów pamięci, która została przydzielona podczas uruchomienia profilowania.|  
+|**Początek linii źródłowej**|Numer wiersza początkowego w pliku źródłowym, w którym wystąpiła alokacja.|  
+|**Koniec linii źródłowej**|Numer wiersza końcowego w pliku źródłowym, w którym wystąpiła alokacja.|  
+|**Początek znaku źródłowego**|Przesunięcie znaku początkowego w wierszu pliku źródłowego, w którym wystąpiła alokacja.|  
+|**Końcowy znak źródłowy**|Przesunięcie znaku końcowego w wierszu pliku źródłowego, w którym wystąpiła alokacja.|  
+|**Nazwa wiersza**|Wygenerowany przez profiler Identyfikator wiersza o następującej składni: `Source File` **; [** `Line Number Start` **,**`Character Start` **]->; [**`Line Number Start,Character Start`**]**|  
+|**Alokacje wyłączne**|Całkowita liczba obiektów, które zostały utworzone w tym wierszu.|  
+|**% Przydziałów wyłącznych**|Procent wszystkich obiektów, które zostały utworzone w ramach uruchomienia profilowania, które zostały przydzieloną w tym wierszu.|  
+|**Bajty wyłączne**|Wartość procentowa wszystkich bajtów pamięci przydzieloną w ramach uruchomienia profilowania, która została przypisana w tym wierszu.|  
+|**% Bajtów wyłącznych**|Wartość procentowa wszystkich bajtów pamięci przydzieloną w ramach uruchomienia profilowania, która została przypisana w tym wierszu.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok linii](../profiling/lines-view-sampling-data.md)

@@ -1,6 +1,6 @@
 ---
-title: Publikowanie aplikacji języka Python w usłudze Azure App Service
-description: Opcje publikowania aplikacji języka Python w usłudze Azure App Service, w tym wdrażania git i kontenerów dla systemu Linux i wdrażania w usługach IIS.
+title: Publikowanie aplikacji w języku Python w celu Azure App Service
+description: Opcje publikowania aplikacji w języku Python do Azure App Service, w tym narzędzia Git Deploy i kontenerów dla systemu Linux oraz wdrażania w usługach IIS.
 ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -12,40 +12,40 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: c3c8d6c16f2f7e432b6b5e988bf63521f3dfc8c0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62784118"
 ---
 # <a name="publish-to-azure-app-service"></a>Publikowanie w usłudze Azure App Service
 
-Obecnie python jest obsługiwany w usłudze Azure App Service dla systemu Linux i można publikować aplikacje przy użyciu [git wdrażania](#publish-to-app-service-on-linux-using-git-deploy) i [kontenerów](#publish-to-app-service-on-linux-using-containers), zgodnie z opisem w tym artykule.
+W tej chwili środowisko Python jest obsługiwane w Azure App Service dla systemu Linux i można publikować aplikacje za pomocą [narzędzia Git Deploy](#publish-to-app-service-on-linux-using-git-deploy) and [Containers](#publish-to-app-service-on-linux-using-containers), zgodnie z opisem w tym artykule.
 
 > [!Note]
-> Obsługa języka Python w usłudze Azure App Service dla systemu Windows jest oficjalnie przestarzała. W rezultacie polecenie **Publikowania** w programie Visual Studio jest oficjalnie obsługiwane tylko dla [obiektu docelowego usług IIS,](#publish-to-iis)a zdalne debugowanie w usłudze Azure App Service nie jest już oficjalnie obsługiwane.
+> Obsługa języka Python w Azure App Service dla systemu Windows jest oficjalnie przestarzała. W efekcie polecenie **Publikuj** w programie Visual Studio jest oficjalnie obsługiwane tylko dla [obiektu docelowego usług IIS](#publish-to-iis)i zdalne debugowanie na Azure App Service nie jest już oficjalnie obsługiwane.
 >
-> Jednak [publikowanie w usłudze app service w systemie Windows](publish-to-app-service-windows.md) funkcje nadal działa na razie, jak rozszerzenia Języka Python dla usługi App Service w systemie Windows pozostają dostępne, ale nie będą obsługiwane lub aktualizowane.
+> Jednak [Publikowanie w usłudze App Service w funkcjach systemu Windows](publish-to-app-service-windows.md) nadal działa przez czas, ponieważ rozszerzenia języka Python dla App Service w systemie Windows pozostają dostępne, ale nie będą obsługiwane ani aktualizowane.
 
-## <a name="publish-to-app-service-on-linux-using-git-deploy"></a>Publikowanie w usłudze App Service w systemie Linux przy użyciu wdrożenia git
+## <a name="publish-to-app-service-on-linux-using-git-deploy"></a>Publikowanie w usłudze App Service w systemie Linux przy użyciu narzędzia Git Deploy
 
-Git deploy łączy usługę aplikacji w systemie Linux z określoną gałęzią repozytorium Git. Zatwierdzanie kodu w tej gałęzi automatycznie wdraża w usłudze App Service, a usługa App Service automatycznie instaluje wszystkie zależności wymienione w *pliku requirements.txt*. W takim przypadku usługa App Service w systemie Linux uruchamia kod w wstępnie skonfigurowanym obrazie kontenera, który używa serwera sieci Web Gunicorn. Obecnie ta usługa jest w wersji zapoznawczej i nie jest obsługiwana do użytku produkcyjnego.
+Funkcja wdrażania usługi git łączy App Service w systemie Linux z określoną gałęzią repozytorium git. Zatwierdzenie kodu do tej gałęzi powoduje automatyczne wdrożenie do App Service, a App Service automatycznie instaluje wszystkie zależności wymienione w *requirements.txt*. W takim przypadku App Service w systemie Linux uruchamia swój kod w wstępnie skonfigurowanym obrazie kontenera, który używa serwera sieci Web Gunicorn. W tej chwili ta usługa jest dostępna w wersji zapoznawczej i nie jest obsługiwana w przypadku użycia w środowisku produkcyjnym.
 
 Aby uzyskać więcej informacji, zobacz następujące artykuły w dokumentacji platformy Azure:
 
-- [Szybki start: Tworzenie aplikacji sieci Web języka Python w usłudze App Service](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) zawiera krótki instruktaż procesu wdrażania Git przy użyciu prostej aplikacji Flask i wdrożenia z lokalnego repozytorium Git.
-- [Jak skonfigurować Python](/azure/app-service/containers/how-to-configure-python) opisuje cechy usługi App Service w kontenerze systemu Linux i jak dostosować gunicorn polecenia uruchamiania dla aplikacji.
+- [Szybki Start: Tworzenie aplikacji sieci Web w języku Python w App Service](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) zawiera krótki przewodnik po procesie wdrażania usługi git przy użyciu prostej aplikacji do kolby i wdrożenia z lokalnego repozytorium git.
+- [Jak skonfigurować język Python](/azure/app-service/containers/how-to-configure-python) zawiera opis cech App Service w kontenerze systemu Linux i sposobu dostosowywania Gunicorn uruchamiania aplikacji.
 
 ## <a name="publish-to-app-service-on-linux-using-containers"></a>Publikowanie w usłudze App Service w systemie Linux przy użyciu kontenerów
 
-Zamiast polegać na wstępnie utworzony kontener z usługą App Service w systemie Linux, można podać własny kontener. Ta opcja umożliwia wybranie serwerów sieci Web, których używasz, oraz dostosowanie zachowania kontenera.
+Zamiast polegać na wstępnie skompilowanym kontenerze z App Service w systemie Linux, możesz udostępnić własny kontener. Ta opcja umożliwia wybranie używanych serwerów sieci Web i dostosowanie zachowania kontenera.
 
-Istnieją dwie opcje tworzenia kontenerów, zarządzania nimi i wypychania:
+Dostępne są dwie opcje kompilowania i wypychania kontenerów, zarządzania nimi:
 
-- Użyj programu Visual Studio Code i rozszerzenia platformy Docker, zgodnie z opisem w [deploy Python przy użyciu kontenerów platformy Docker](https://code.visualstudio.com/docs/python/tutorial-deploy-containers). Nawet jeśli nie używasz programu Visual Studio Code, w tym artykule przedstawiono przydatne szczegóły dotyczące tworzenia obrazów kontenerów dla aplikacji Flask i Django przy użyciu gotowych do produkcji serwerów sieci Web uwsgi i nginx. Następnie można wdrożyć te same kontenery przy użyciu interfejsu wiersza polecenia platformy Azure.
+- Użyj Visual Studio Code i rozszerzenia Docker, zgodnie z opisem w temacie [wdrażanie języka Python przy użyciu kontenerów platformy Docker](https://code.visualstudio.com/docs/python/tutorial-deploy-containers). Nawet jeśli nie używasz Visual Studio Code, artykuł zawiera przydatne szczegóły dotyczące tworzenia obrazów kontenerów dla aplikacji do kolb i Django przy użyciu uwsgiych w środowisku produkcyjnym i serwerów sieci Web Nginx. Następnie można wdrożyć te same kontenery przy użyciu interfejsu wiersza polecenia platformy Azure.
 
-- Użyj wiersza polecenia i interfejsu wiersza polecenia platformy Azure, zgodnie z opisem w [temacie Użyj niestandardowego obrazu platformy Docker](/azure/app-service/containers/tutorial-custom-docker-image) w dokumentacji platformy Azure. Ten przewodnik jest jednak ogólny i nie jest specyficzny dla Języka Python.
+- Użyj wiersza poleceń i interfejsu wiersza polecenia platformy Azure, zgodnie z opisem na stronie [Korzystanie z niestandardowego obrazu platformy Docker](/azure/app-service/containers/tutorial-custom-docker-image) w dokumentacji platformy Azure. Ten przewodnik jest jednak ogólny i nie jest specyficzny dla języka Python.
 
-## <a name="publish-to-iis"></a>Publikowanie w uis
+## <a name="publish-to-iis"></a>Publikowanie w usługach IIS
 
-W programie Visual Studio można publikować na maszynie wirtualnej systemu Windows lub innym komputerze obsługującym usługi IIS za pomocą polecenia **Publikuj.** Korzystając z usług IIS, należy utworzyć lub zmodyfikować plik *web.config* w aplikacji, który informuje usługi IIS, gdzie znajduje się interpreter języka Python. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji sieci Web dla usług IIS](configure-web-apps-for-iis-windows.md).
+Program Visual Studio umożliwia publikowanie na maszynie wirtualnej z systemem Windows lub innym komputerze z obsługą usług IIS za pomocą polecenia **Publikuj** . W przypadku korzystania z usług IIS należy utworzyć lub zmodyfikować plik *web.config* w aplikacji, która informuje usługi IIS, gdzie znajduje się interpreter języka Python. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji sieci Web dla usług IIS](configure-web-apps-for-iis-windows.md).

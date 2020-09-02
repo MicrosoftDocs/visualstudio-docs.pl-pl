@@ -1,5 +1,5 @@
 ---
-title: CustomDataSignature, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: CustomDataSignature, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,10 +12,10 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 784704bea43a87f1aebdc42941906179dca815ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580420"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature — Element (szablony Visual Studio)
@@ -46,16 +46,16 @@ Określa podpis tekstowy do lokalizowania danych niestandardowych.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób jego wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- Tekst jest ciąg, który ma podpis tekst, który jest wymagany do zlokalizowania danych niestandardowych.  
+ Tekst jest ciągiem zawierającym podpis tekstowy, który jest wymagany do lokalizowania danych niestandardowych.  
   
 ## <a name="remarks"></a>Uwagi  
- `CustomDataSignature` element jest opcjonalny.  
+ `CustomDataSignature` jest elementem opcjonalnym.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
+ [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

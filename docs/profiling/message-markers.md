@@ -1,5 +1,5 @@
 ---
-title: Znaczniki wiadomości | Dokumenty firmy Microsoft
+title: Znaczniki komunikatów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b668f0331345e6a1022ef79105614f4a22e91d9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62830081"
 ---
-# <a name="message-markers"></a>Znaczniki wiadomości
-Znacznik komunikatu reprezentuje dane wyjściowe dziennika. Komunikat jest ciągiem, który jest wystawiany przez określony wątek w określonym czasie. Wiadomości można eksportować do pliku tekstowego do użytku z innymi narzędziami. Można opowiedzieć wskaźnik na komunikat w współbieżności wizualizatora, aby wyświetlić ciąg wiadomości. I można wyświetlić wszystkie znaczniki wiadomości w [raporcie Znaczniki](../profiling/markers-report.md).  Na poniższej ilustracji przedstawiono znacznik wiadomości.
+# <a name="message-markers"></a>Znaczniki komunikatów
+Znacznik komunikatu reprezentuje dane wyjściowe dziennika. Komunikat jest ciągiem, który jest wystawiony przez określony wątek w określonym czasie. Komunikaty można eksportować do pliku tekstowego, który ma być używany z innymi narzędziami. Możesz ustawić wskaźnik na wiadomości w wizualizatorze współbieżności, aby wyświetlić ciąg komunikatu. W [raporcie znaczniki](../profiling/markers-report.md)można wyświetlić wszystkie znaczniki komunikatów.  Na poniższej ilustracji przedstawiono znacznik komunikatu.
 
-## <a name="message-aggregation-markers"></a>Znaczniki agregacji wiadomości
- Czasami wiele komunikatów występuje tak blisko siebie w wizualizatora współbieżności, że nie można ich narysować indywidualnie. W takim przypadku wyświetlany jest *znacznik agregacji wiadomości* reprezentujący podstawowe komunikaty. Po umieszczeniu wskaźnika na jednej z tych ikon, etykietka narzędzia wyświetla liczbę podstawowych wiadomości, które są reprezentowane. Aby wyświetlić wiadomości, powiększ.  Jeśli powiększysz cały sposób i nadal otrzymujesz znacznik agregacji, możesz wyświetlić podstawowe wiadomości w [raporcie znaczników](../profiling/markers-report.md).
+## <a name="message-aggregation-markers"></a>Znaczniki agregacji komunikatów
+ Czasami wiele komunikatów występuje blisko siebie w wizualizatorze współbieżności, które nie mogą być narysowane pojedynczo. W takim przypadku zostanie wyświetlony *znacznik agregacji komunikatów* reprezentujący bazowe komunikaty. Po umieszczeniu wskaźnika na jednej z tych ikon, w etykietce narzędzia zostanie wyświetlona liczba przedstawionych podstawowych komunikatów. Aby wyświetlić komunikaty, Powiększ.  W przypadku powiększania wszystkich sposobów i nadal uzyskiwania znacznika agregacji w [raporcie znaczniki](../profiling/markers-report.md)można wyświetlić podstawowe komunikaty.
 
 ## <a name="see-also"></a>Zobacz też
 - [Znaczniki wizualizatora współbieżności](../profiling/concurrency-visualizer-markers.md)
-- [Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)
+- [Concurrency Visualizer SDK](../profiling/concurrency-visualizer-sdk.md)

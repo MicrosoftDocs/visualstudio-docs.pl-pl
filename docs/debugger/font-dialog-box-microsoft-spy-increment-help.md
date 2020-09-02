@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe czcionek (Microsoft Spy ++ — pomoc) | Dokumentacja firmy Microsoft
+title: Okno dialogowe czcionki (Pomoc programu Microsoft Spy + +) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,28 +11,28 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1746b8419c342b5627e1c6374b2b29f08f7ee75c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62849868"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Okno dialogowe czcionek (Microsoft Spy++ — Pomoc)
-To okno dialogowe służy do konfigurowania znak czcionki używanej w [widoków programu Spy ++](../debugger/spy-increment-views.md) okna. Aby wyświetlić to okno dialogowe, rozwiń węzeł **widoku** menu i wybierz polecenie **czcionki**.
+To okno dialogowe służy do konfigurowania czcionki znakowej używanej w oknie [widoki programu Spy + +](../debugger/spy-increment-views.md) . Aby wyświetlić to okno dialogowe, rozwiń menu **Widok** i wybierz polecenie **czcionka**.
 
  Dostępne są następujące ustawienia:
 
- **Czcionka** czcionki znaku dla okna widoków programu Spy ++, który ma fokus.
+ **Czcionka** Czcionka znaku okna widoków Spy + +, które ma fokus.
 
- **Styl czcionki** styl czcionki dla okna widoków programu Spy ++, który ma fokus.
+ **Styl czcionki** Styl czcionki okna widoki programu Spy + +, które ma fokus.
 
- **Rozmiar** rozmiar czcionki dla okna widoków programu Spy ++, który ma fokus.
+ **Rozmiar** Rozmiar czcionki okna widoków programu Spy + +, które ma fokus.
 
- **Zapisz czcionkę jako domyślny** zapisuje bieżące ustawienia czcionek w postaci preferencje podczas otwierania widoków programu Spy ++.
+ **Zapisz czcionkę jako domyślną** Zapisuje bieżące ustawienia czcionki jako Preferencje podczas otwierania widoków Spy + +.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Widoków programu Spy ++](../debugger/spy-increment-views.md) wyjaśnia widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.
+ [Widoki Spy + +](../debugger/spy-increment-views.md) Wyjaśnia widoki drzewa Spy + + systemu Windows, komunikatów, procesów i wątków.
 
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md) wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.
+ [Korzystanie z programu Spy + +](../debugger/using-spy-increment.md) Wprowadzenie do narzędzia Spy + + i wyjaśnienie, jak można go użyć.
 
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md) zawiera sekcje opisujące każdy Spy ++ menu i okno dialogowe.
+ [Spy + + — Odwołanie](../debugger/spy-increment-reference.md) Zawiera sekcje opisujące poszczególne menu Spy + + i okna dialogowego.

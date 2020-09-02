@@ -1,5 +1,5 @@
 ---
-title: Polecenia Menu komunikaty | Dokumentacja firmy Microsoft
+title: Polecenia menu komunikaty | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62845893"
 ---
 # <a name="messages-menu-commands"></a>Polecenia menu Komunikaty
-**Wiadomości** menu zawiera polecenia służące do kontrolowania widoków komunikatu.
+Menu **komunikaty** zawiera polecenia służące do kontrolowania widoków komunikatów.
 
- **Rozpocznij/Zatrzymaj rejestrowanie** uruchamia lub zatrzymuje wyświetlanie wiadomości.
+ **Rozpocznij/Zatrzymaj rejestrowanie** Uruchamia lub kończy widok komunikatów.
 
- **Opcje rejestrowania** otwiera **MessageOptions** okno dialogowe, w którym można określić kryteria wyszukiwania komunikatu.
+ **Opcje rejestrowania** Otwiera okno dialogowe **MessageOptions** , w którym można określić kryteria wyszukiwania wiadomości.
 
- **Wyczyść dziennik** Czyści zawartość aktywnego widoku komunikatów.
+ **Wyczyść dziennik** Czyści zawartość widoku aktywnych komunikatów.

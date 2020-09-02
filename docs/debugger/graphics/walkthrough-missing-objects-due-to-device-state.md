@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Brak obiektów spowodowany stanem urządzenia | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: brak obiektów ze względu na stan urządzenia | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
@@ -9,99 +9,99 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62895453"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Przewodnik: brak obiektów spowodowany stanem urządzenia
-W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostyki grafiki do zbadania obiekt, który nie istnieje ze względu na nieprawidłowo skonfigurowany stan urządzenia.
+W tym instruktażu pokazano, jak za pomocą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Diagnostyka grafiki zbadać nieobecny obiekt z powodu nieprawidłowego skonfigurowania stanu urządzenia.
 
- W tym instruktażu przedstawiono sposób:
+ W tym instruktażu pokazano, jak:
 
-- Użyj **Lista zdarzeń graficznych** do lokalizowania potencjalnych źródeł problemu.
+- Użyj **listy zdarzeń grafiki** , aby znaleźć potencjalne źródła problemu.
 
-- Użyj **etapy potoku grafiki** okna, aby sprawdzić efekt skonfigurowania `DrawIndexed` wywołań interfejsu API Direct3D.
+- Użyj okna **etapy potoku grafiki** , aby sprawdzić efekt `DrawIndexed` wywołań interfejsu API Direct3D.
 
-- Użyj **Historia pikseli grafiki** okna, aby dokładniej zlokalizowania problemu.
+- Użyj okna **Historia pikseli grafiki** , aby dokładniej zlokalizować problem.
 
-- Sprawdzanie stanu urządzenia dla potencjalnych problemów i błędów konfiguracji.
+- Sprawdź stan urządzenia pod kątem potencjalnych problemów lub niepożądanych konfiguracji.
 
 ## <a name="scenario"></a>Scenariusz
- Jednym z powodów obiektów może nie być widoczna gdy dana osoba w 3-app to błędnej konfiguracji urządzenia grafiki, który powoduje, że obiekty, które mają być wykluczone z renderowaniem — na przykład, gdy kolejność zakręcania powoduje trójkąty uboju, w wyniku błędu , lub kiedy funkcja test głębi powoduje, że wszystkie piksele w obiekcie odrzucona.
+ Jedną z przyczyn, w których obiekty mogą się nie pojawić, jeśli są one oczekiwane w aplikacji 3-D, jest błędna konfiguracja urządzenia graficznego, które powoduje, że obiekty są wykluczone z renderowania — na przykład, gdy porządek wiatru powoduje odrzucanie trójkątów, lub gdy funkcja testu głębokości powoduje odrzucenie wszystkich pikseli w obiekcie.
 
- W scenariuszu, który jest opisany w tym przewodniku po prostu osiągnęły pierwszej odsłony w trakcie opracowywania aplikacji 3-w i gotowości do testowania go po raz pierwszy. Po uruchomieniu aplikacji, tylko interfejs użytkownika jest renderowany na ekranie. Za pomocą Graphics Diagnostics, możesz przechwytywać problemy do plik dziennika grafiki, dzięki czemu można debugować aplikację. Problem wygląda to w aplikacji:
+ W scenariuszu opisanym w tym instruktażu właśnie został osiągnięty pierwszy punkt kontrolny podczas opracowywania aplikacji 3-D i jest gotowy do przetestowania go po raz pierwszy. Jednak po uruchomieniu aplikacji tylko interfejs użytkownika jest renderowany na ekranie. Korzystając z Diagnostyka grafiki, można przechwytywać problem do pliku dziennika grafiki, dzięki czemu można debugować aplikację. Problem wygląda następująco w aplikacji:
 
- ![Aplikację, zanim problem został rozwiązany](media/vsg_walkthru1_firstview.png "vsg_walkthru1_firstview")
+ ![Aplikacja przed usunięciem problemu](media/vsg_walkthru1_firstview.png "vsg_walkthru1_firstview")
 
- Aby uzyskać informacje o sposobie przechwytywania problemów z grafiką w dzienniku grafiki, zobacz [Capturing Graphics Information](capturing-graphics-information.md).
+ Aby uzyskać informacje o sposobach przechwytywania problemów graficznych w dzienniku grafiki, zobacz [Przechwytywanie informacji graficznych](capturing-graphics-information.md).
 
 ## <a name="investigation"></a>Badanie
- Korzystając z narzędzi programu Graphics Diagnostics, należy załadować plik dziennika grafiki, aby sprawdzić ramek, które zostały przechwycone podczas testu.
+ Za pomocą narzędzi Diagnostyka grafiki, można załadować plik dziennika grafiki, aby sprawdzić ramki, które zostały przechwycone podczas testu.
 
-#### <a name="to-examine-a-frame-in-a-graphics-log"></a>Aby sprawdzić ramkę w dzienniku grafiki
+#### <a name="to-examine-a-frame-in-a-graphics-log"></a>Aby przeanalizować ramkę w dzienniku grafiki
 
-1. W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], załaduj dziennik grafiki zawierający ramkę, która wykazuje Brak modelu. Nowa karta Diagnostyka grafiki pojawia się w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. W górnej części na tej karcie jest dane wyjściowe docelowy renderowania zaznaczonej klatki. W dolnej części jest **lista ramek**, powoduje wyświetlenie jako miniaturę każdej uchwyconej klatki.
+1. W programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Załaduj dziennik grafiki zawierający ramkę, która wykazuje brakujący model. Zostanie wyświetlona nowa karta Diagnostyka grafiki [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . W górnej części tej karty są docelowe wyniki renderowania dla wybranej ramki. W dolnej części jest **listą ramek**, która wyświetla każdą przechwyconą ramkę jako obraz miniatury.
 
-2. W **lista ramek**, zaznacz klatkę, która pokazuje, że model nie jest wyświetlany. Obiektu docelowego renderowania jest aktualizowana, aby odzwierciedlić wybraną ramkę. W tym scenariuszu dziennika grafiki w karcie wygląda następująco:
+2. Na **liście ramka**Wybierz ramkę, która pokazuje, że model nie jest wyświetlany. Obiekt docelowy renderowania zostanie zaktualizowany w celu odzwierciedlenia wybranej ramki. W tym scenariuszu karta Dziennik grafiki wygląda następująco:
 
-    ![.Vsglog kartę bufor ramki (wersja zapoznawcza) i ramki listy](media/vsg_walkthru1_experiment.png "vsg_walkthru1_experiment")
+    ![Karta. vsglog w wersji zapoznawczej i lista ramek](media/vsg_walkthru1_experiment.png "vsg_walkthru1_experiment")
 
-   Po zaznaczeniu klatki, która demonstruje problem, można użyć **Lista zdarzeń graficznych** do zdiagnozowania go. **Lista zdarzeń graficznych** zawiera każdego interfejsu API Direct3D wywołania wykonanego do renderowania aktywną ramkę, na przykład wywołania interfejsu API, aby skonfigurować stan urządzenia, do tworzenia i aktualizowania buforów i aby rysować obiekty, które pojawiają się w ramce. Wiele rodzajów wywołania są interesujące, ponieważ często (ale nie zawsze) analogiczna zmiana obiektu docelowego renderowania, gdy aplikacja działa zgodnie z oczekiwaniami, na przykład rysowania, wysyłania, kopiowanie lub wyczyść połączenia. Wywołania rysowania są szczególnie interesujące, ponieważ każdy z nich reprezentuje geometrię, która aplikacja renderowania (wywołań wysyłania umożliwia również renderowanie geometrii).
+   Po wybraniu ramki, która demonstruje ten problem, można użyć **listy zdarzeń grafiki** do zdiagnozowania. **Lista zdarzeń grafiki** zawiera wszystkie wywołania interfejsu API Direct3D, które zostały wykonane w celu renderowania aktywnej ramki, na przykład wywołania interfejsu API w celu skonfigurowania stanu urządzenia, tworzenia i aktualizowania buforów oraz do rysowania obiektów, które pojawiają się w ramce. Wiele rodzajów wywołań jest interesujących, ponieważ występuje często (ale nie zawsze) odpowiednia zmiana w miejscu docelowym renderowania, gdy aplikacja działa zgodnie z oczekiwaniami, na przykład rysowanie, wysyłanie, kopiowanie lub czyszczenie wywołań. Wywołania rysowania są szczególnie interesujące, ponieważ każda z nich reprezentuje geometrię renderowaną przez aplikację (wywołania wysyłania mogą również renderować geometrię).
 
-#### <a name="to-ensure-that-draw-calls-are-being-made"></a>Aby upewnić się, że rysowania wywołania są wykonywane
+#### <a name="to-ensure-that-draw-calls-are-being-made"></a>Aby upewnić się, że są wykonywane wywołania rysowania
 
-1. Otwórz **Lista zdarzeń graficznych** okna. Na **Graphics Diagnostics** narzędzi, wybierz **listy zdarzeń**.
+1. Otwórz okno **Lista zdarzeń grafiki** . Na pasku narzędzi **Diagnostyka grafiki** wybierz pozycję **Lista zdarzeń**.
 
-2. Sprawdzanie **Lista zdarzeń graficznych** narysuj wywołania. Aby to ułatwić, wprowadź "Draw" w **wyszukiwania** polu w prawym górnym rogu **Lista zdarzeń graficznych** okna. Filtruje listę, tak aby zawiera tylko zdarzenia, które mają "Draw" w tytułach. W tym scenariuszu można wykryć, czy nie wprowadzono kilka wywołań rysowania:
+2. Sprawdź **listę zdarzeń grafiki** dla wywołań rysowania. Aby to ułatwić, wprowadź ciąg "Draw" w polu **wyszukiwania** w prawym górnym rogu okna **Lista zdarzeń grafiki** . Filtruje listę, tak aby zawierała tylko zdarzenia, które mają "Draw" w swoich tytułach. W tym scenariuszu wykryjesz, że wykonano kilka wywołań rysowania:
 
-    ![Lista zdarzeń graficznych przedstawiający przechwycone zdarzenia](media/vsg_walkthru1_.png "vsg_walkthru1_")
+    ![Lista zdarzeń grafiki przedstawiająca przechwycone zdarzenia](media/vsg_walkthru1_.png "vsg_walkthru1_")
 
-   Po upewnieniu się, że rysowania, który trwa wywołań, można określić, która odnosi się do brakujących geometrii. Ponieważ wiadomo, że brakuje Geometria nie rysowania do elementu docelowego renderowania (w tym przypadku), można użyć **etapy potoku grafiki** okna, aby określić, które wywołania rysowania odnosi się do brakujących geometrii. **Etapy potoku grafiki** okno pokazuje geometrię, która została wysłana do każdego wywołania rysowania, niezależnie od jego wpływ na obiektu docelowego renderowania. Po przeniesieniu za pośrednictwem wywołania rysowania etapy potoku są aktualizowane, aby pokazać geometrię, która jest skojarzona z tym wywołaniem, a wyjście docelowego renderowania jest aktualizowany do wyświetlenia stanu obiektu docelowego renderowania po wywołaniu zostało ukończone.
+   Po potwierdzeniu, że są wykonywane wywołania rysowania, można określić, która z nich odpowiada brakującej geometrii. Ponieważ wiesz, że brakująca geometria nie jest rysowana do elementu docelowego renderowania (w tym przypadku), możesz użyć okna **etapy potoku grafiki** , aby określić, które wywołanie rysowania odnosi się do brakującej geometrii. Okno **etapy potoku grafiki** pokazuje geometrię, która została wysłana do każdego wywołania rysowania, niezależnie od jej wpływu na obiekt docelowy renderowania. Podczas poruszania się po wywołaniach rysowania etapy potoku są aktualizowane w celu wyświetlenia geometrii, która jest skojarzona z tym wywołaniem, a docelowe dane wyjściowe renderowania są aktualizowane w celu wyświetlenia stanu obiektu docelowego renderowania po zakończeniu wywołania.
 
-#### <a name="to-find-the-draw-call-for-the-missing-geometry"></a>Aby znaleźć wywołanie rysowania Brak geometrii
+#### <a name="to-find-the-draw-call-for-the-missing-geometry"></a>Aby znaleźć połączenie rysowania dla brakującej geometrii
 
-1. Otwórz **etapy potoku grafiki** okna. Na **Graphics Diagnostics** narzędzi, wybierz **etapy potoku**.
+1. Otwórz okno **etapy potoku grafiki** . Na pasku narzędzi **Diagnostyka grafiki** wybierz pozycję **etapy potoku**.
 
-2. Przechodzenie między każdym wywołaniem rysowania podczas oglądania **etapy potoku grafiki** okno Brak modelu. **Asemblera dane wejściowe** etap zawiera dane pierwotne modelu. **Program do cieniowania wierzchołków** etapu pokazuje dane po przekształceniu modelu. **Programu do cieniowania pikseli** etap zawiera dane wyjściowe programu do cieniowania pikseli. **Scalanie danych wyjściowych** etapu pokazuje scalony renderowania celem tego wywołania rysowania i poprzednich wywołań rysowania.
+2. Przechodź przez każde wywołanie rysowania podczas oglądania okna **etapy potoku grafiki** dla brakującego modelu. Etap **asemblera wejściowego** przedstawia dane surowego modelu. Etap **cieniowania wierzchołka** przedstawia przekształcone dane modelu. Etap **cieniowania pikseli** przedstawia dane wyjściowe programu do cieniowania pikseli. Etap **łączenia danych wyjściowych** pokazuje scalony obiekt docelowy renderowania tego wywołania rysowania i wszystkie poprzednie wywołania rysowania.
 
-3. Zatrzymaj, gdy został osiągnięty wywołanie rysowania, które odnosi się do brakujących modelu. W tym scenariuszu **etapy potoku grafiki** okno wskazuje, czy geometrii była renderowana, ale nie znajdował się w celu renderowania:
+3. Zatrzymaj po osiągnięciu wywołania rysowania odpowiadającego brakującemu modelowi. W tym scenariuszu okno **etapy potoku grafiki** wskazuje, że geometria została renderowana, ale nie została wyświetlona w miejscu docelowym renderowania:
 
-    ![Przeglądarka potoku przedstawiający nieistniejącego obiektu](media/vsg_walkthru1_pipeline.png "vsg_walkthru1_pipeline")
+    ![Podgląd potoku pokazujący brakujący obiekt](media/vsg_walkthru1_pipeline.png "vsg_walkthru1_pipeline")
 
-   Po upewnieniu się, że aplikacja renderowane Brak geometrii i możesz znaleźć odpowiedniego wywołania rysowania, możesz wybrać fragment danych wyjściowych docelowego renderowania, powinien wyświetlić brakujące geometrii, a następnie za pomocą **Historia pikseli grafiki** okno, aby dowiedzieć się, dlaczego piksele zostały wykluczone. Historia pikseli zawiera listę każde wywołanie rysowania może wywrzeć wpływ na piksela. Wywołania rysowania każdego **Historia pikseli grafiki** okna jest identyfikowany przez numer, który jest wyświetlany na **Lista zdarzeń graficznych** okna. Dzięki temu można potwierdzić, że piksel powinien wyświetlić brakujące geometrii i aby dowiedzieć się, dlaczego piksel został wykluczony
+   Po upewnieniu się, że aplikacja wykazała brakującą geometrię i odszukasz odpowiednie wywołanie rysowania, możesz wybrać część docelowego danych wyjściowych renderowania, która powinna zawierać brakującą geometrię, a następnie użyć okna **Historia pikseli grafiki** , aby dowiedzieć się, dlaczego piksele zostały wykluczone. Historia pikseli zawiera listę wszystkich wywołań rysowania, które mogły mieć wpływ na określony piksel. Każde wywołanie rysowania w oknie **Historia pikseli grafiki** jest identyfikowane przez liczbę, która jest również wyświetlana w oknie **Lista zdarzeń grafiki** . Dzięki temu można potwierdzić, że piksel powinien wyświetlać brakującą geometrię i aby dowiedzieć się, dlaczego piksel został wykluczony
 
-#### <a name="to-determine-why-the-pixel-was-excluded"></a>Aby ustalić, dlaczego piksel został wykluczony
+#### <a name="to-determine-why-the-pixel-was-excluded"></a>Aby określić, dlaczego piksel został wykluczony
 
-1. Otwórz **Historia pikseli grafiki** okna. Na **Graphics Diagnostics** narzędzi, wybierz **historii pikseli**.
+1. Otwórz okno **Historia pikseli grafiki** . Na pasku narzędzi **Diagnostyka grafiki** wybierz pozycję **Historia pikseli**.
 
-2. Na podstawie **programu do cieniowania pikseli** miniaturę, wybierz piksel w bufor ramki danych wyjściowych może zawierać części Brak geometrii. W tym scenariuszu dane wyjściowe programu do cieniowania pikseli powinna obejmować większość obiektu docelowego renderowania; Po wybraniu piksel **Historia pikseli grafiki** okna wygląda następująco:
+2. W oparciu o miniaturę programu do **cieniowania pikseli** wybierz piksel w danych wyjściowych bufor ramki, który powinien zawierać część brakującej geometrii. W tym scenariuszu dane wyjściowe programu do cieniowania pikseli powinny obejmować większość elementów docelowych renderowania; Po wybraniu piksela okno **Historia pikseli grafiki** będzie wyglądać następująco:
 
-    ![Okno Historia pikseli pokazujący pokrewne Rysowanie wywołania](media/vsg_walkthru1_hist1.png "vsg_walkthru1_hist1")
+    ![Okno historii pikseli przedstawiające powiązane wywołania rysowania](media/vsg_walkthru1_hist1.png "vsg_walkthru1_hist1")
 
-3. Upewnij się, czy pikseli docelowego renderowania wybranego zawiera część geometrię, dopasowując liczba wywołania rysowania są sprawdzania (z **Lista zdarzeń graficznych** okna) do jednego wywołania rysowania w **grafiki Historia pikseli** okna. Jeśli żadna z wywołań w **Historia pikseli grafiki** okna dopasowania wywołania rysowania, w przypadku sprawdzania, powtórz te kroki (z wyjątkiem kroku 1) do momentu znalezienia dopasowania. W tym scenariuszu dopasowania wywołania rysowania wygląda następująco:
+3. Upewnij się, że wybrany piksel docelowy renderowania zawiera część geometrii, dopasowując liczbę sprawdzanych wywołań rysowania (z okna **Lista zdarzeń grafiki** ) do jednego z wywołań rysowania w oknie **Historia pikseli grafiki** . Jeśli żadne z wywołań w oknie **Historia pikseli graficznych** nie jest zgodne z wyszukiwanym wywołaniem rysowania, Powtórz te kroki (z wyjątkiem kroku 1) do momentu znalezienia dopasowania. W tym scenariuszu pasujące wywołanie rysowania wygląda następująco:
 
-    ![Okno Historia pikseli, przedstawiający informacje o fragmentu](media/vsg_walkthru1_hist2.png "vsg_walkthru1_hist2")
+    ![Okno historii pikseli przedstawiające informacje o fragmentacji](media/vsg_walkthru1_hist2.png "vsg_walkthru1_hist2")
 
-4. Po znalezieniu dopasowania, rozwiń dopasowania wywołanie rysowania w **Historia pikseli grafiki** okna i upewnij się, że piksel został wykluczony. Wywołania rysowania każdego **Historia pikseli grafiki** okna odnosi się do co najmniej jeden geometrycznych podstawowych (punkty, linie lub trójkąty), które mieszają piksela wyniku geometrii odpowiedni obiekt. Takie przecięciu może przyczynić się do końcowy kolor piksela. Elementu podstawowego, który jest wykluczony, ponieważ nie powiodło się test głębi jest reprezentowany przez ikonę która zawiera literę Z nad strzałką, który odchyla dół od lewej do prawej.
+4. Po znalezieniu dopasowania rozwiń pasujące wywołanie rysowania w oknie **Historia pikseli grafiki** i upewnij się, że piksel został wykluczony. Każde wywołanie rysowania w oknie **Historia pikseli grafiki** odpowiada jednemu lub więcej geometrycznym elementom podstawowym (punktom, wierszom lub trójkątom), które przecinają ten piksel w wyniku geometrii odpowiedniego obiektu. Każda taka przecięcie może współtworzyć końcowy kolor piksela. Element pierwotny, który jest wykluczony, ponieważ nie powiódł się, test głębokości jest reprezentowany przez ikonę pokazującą literę Z nad strzałką biegnącą w dół od lewej do prawej.
 
-5. Rozwiń prymityw wykluczonych dalszego zbadania stanu, który spowodował jego mają być wykluczone. W **scalanie danych wyjściowych** grupy, przesuń wskaźnik nad **wynik**. Etykietka narzędzia wskazuje, dlaczego element pierwotny został wykluczony. W tym scenariuszu badanie ujawnia, że element pierwotny został wykluczony, ponieważ test głębi nie powiódł się i dlatego nie miało wpływu na ostateczny koloru piksela.
+5. Rozwiń wykluczony element podstawowy, aby kontynuować badanie stanu, który spowodował jego wykluczenie. W grupie **fuzja danych wyjściowych** przesuń wskaźnik myszy na **wynik**. Etykietka narzędzia wskazuje, dlaczego element pierwotny został wykluczony. W tym scenariuszu badanie wykaże, że element pierwotny został wykluczony, ponieważ test głębokości nie zakończył się powodzeniem, w związku z czym nie doprowadził do końcowego koloru piksela.
 
-   Po ustaleniu, że geometrii niewidoczny, ponieważ jego podstawowych nie powiodło się test głębi, może być podejrzewać, czy ten problem jest związany ze stanu nieprawidłowo skonfigurowane urządzenia. Stan urządzenia i inne Direct3D obiektu danych można sprawdzić za pomocą **Graphics Object Table**.
+   Po ustaleniu, że geometria nie jest wyświetlana, ponieważ jej pierwotne testy głębokości zakończyły się niepowodzeniem, może się zdarzyć, że ten problem jest związany ze stanem nieprawidłowym skonfigurowanym urządzeniem. Stan urządzenia i inne dane obiektów Direct3D można sprawdzić za pomocą **tabeli obiektów graficznych**.
 
-#### <a name="to-examine-device-state"></a>Aby sprawdzić stan urządzenia
+#### <a name="to-examine-device-state"></a>Aby przejrzeć stan urządzenia
 
-1. Otwórz **Graphics Object Table** okna. Na **Graphics Diagnostics** narzędzi, wybierz **tabeli obiektów**.
+1. Otwórz okno **tabeli obiektów graficznych** . Na pasku narzędzi **Diagnostyka grafiki** wybierz pozycję **tabela obiektów**.
 
-2. Znajdź **urządzeniem D3D10** obiektu **Graphics Object Table**, a następnie otwórz **urządzeniem D3D10** obiektu. Nowy **urządzeniem d3d10** Otwiera zakładkę w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Aby to ułatwić, można sortować **Graphics Object Table** przez **typu**:
+2. Zlokalizuj obiekt **urządzenia d3d10** w **tabeli obiektów graficznych**, a następnie otwórz obiekt **urządzenia d3d10** . Zostanie otwarta nowa karta **urządzenia d3d10** [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Aby to ułatwić, można posortować **tabelę obiektów graficznych** według **typu**:
 
-    ![Tabela obiektów graficznych i stan urządzenia powiązanych](media/vsg_walkthru1_objtable.png "vsg_walkthru1_objtable")
+    ![Tabela obiektów graficznych i stan pokrewnych urządzeń](media/vsg_walkthru1_objtable.png "vsg_walkthru1_objtable")
 
-3. Sprawdź stan urządzenia, która jest wyświetlana w **urządzeniem d3d10** kartę potencjalnych problemach. Ponieważ Geometria nie pojawia się, ponieważ jego podstawowych nie powiodło się test głębi, można skoncentrować się na stanie urządzenia, takie jak wzornika głębi, który ma wpływ na test głębi. W tym scenariuszu **opis wzornika głębi** (w obszarze **dane wyjściowe stanu połączenia**) zawiera wartość nietypowe **głębokość funkcji** elementu członkowskiego, `D3D10_COMPARISON_GREATER`:
+3. Sprawdź stan urządzenia, który jest wyświetlany na karcie **Urządzenie D3D10** , aby poznać potencjalne problemy. Ponieważ geometria nie zostanie wyświetlona, ponieważ jej elementy pierwotne nie powiodły się testu głębokości, można skupić się na stanie urządzenia, takim jak wzornik głębokości, który ma wpływ na test głębokości. W tym scenariuszu **Opis wzornika głębokości** (w obszarze **stan scalania danych wyjściowych**) zawiera nietypową wartość elementu członkowskiego **głębokości funkcji** `D3D10_COMPARISON_GREATER` :
 
-    ![Okno urządzenia D3D10 przedstawiający informacje o wzornika głębi](media/vsg_walkthru1_devicestate.png "vsg_walkthru1_devicestate")
+    ![Okno urządzenia D3D10 z informacjami o wzorniku głębokości](media/vsg_walkthru1_devicestate.png "vsg_walkthru1_devicestate")
 
-   Po ustaleniu, czy funkcja nieprawidłowo głębokość może to być spowodowane problemem renderowania, dzięki tym informacjom wraz ze swojej znajomości kodu do zlokalizowania, gdzie funkcja głębi został ustawiony niepoprawnie, a następnie Rozwiąż ten problem. Jeśli nie jesteś zaznajomiony z kodem, wyszukaj frazę problemu przy użyciu wskazówek, które są zbierane podczas Gdybyś debugował — na przykład na podstawie **opis wzornika głębi** w tym scenariuszu możesz wyszukać kod słów np. "Głębokość" lub "Wyższa". Po rozwiązaniu kodu skompilować go ponownie i uruchomić aplikację ponownie, aby odnaleźć rozwiązany problem renderowania:
+   Po ustaleniu, że przyczyną problemu z renderowaniem może być błędnie skonfigurowana funkcja głębokości, można użyć tych informacji razem z wiedzą o kodzie, aby zlokalizować, gdzie funkcja głębokości została ustawiona nieprawidłowo, a następnie rozwiązać ten problem. Jeśli nie znasz kodu, możesz wyszukać problem, wykorzystując wskazówki zebrane podczas debugowania — na przykład na podstawie **opisu wzornika głębokości** w tym scenariuszu można wyszukać w kodzie słowa takie jak "głębokość" lub "większe". Po naprawieniu kodu ponownie skompiluj go i ponownie uruchom aplikację, aby poznać, że problem z renderowaniem został rozwiązany:
 
-   ![Aplikacja po problem został rozwiązany](media/vsg_walkthru1_finalview.png "vsg_walkthru1_finalview")
+   ![Aplikacja po rozwiązaniu problemu](media/vsg_walkthru1_finalview.png "vsg_walkthru1_finalview")

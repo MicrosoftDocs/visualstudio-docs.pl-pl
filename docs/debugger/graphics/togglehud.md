@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb05bb6a424b5639e0ee98e96c80315c51081ace
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62848476"
 ---
 # <a name="togglehud"></a>ToggleHUD
-Włącza/wyłącza diagnostyki grafiki *HUD* nakładki (wyświetlanie Head telefoniczny), lub wyłączyć.
+Włącza lub wyłącza nakładkę diagnostyki grafiki ( *HUD* Display).
 
 ## <a name="syntax"></a>Składnia
 
@@ -25,6 +25,6 @@ void ToggleHUD();
 ```
 
 ## <a name="remarks"></a>Uwagi
- HUD diagnostyki grafiki jest wyświetlany w lewym górnym rogu aplikacji, która jest uruchomiona w ramach diagnostyki grafiki. Wyświetla informacje czasu wykonywania dotyczące aplikacji i przechwytywanie informacji graficznych i komunikaty, które są dodawane przez wywołanie metody [AddMessage](addmessage.md) funkcja elementu członkowskiego.
+ HUD diagnostyki grafiki jest wyświetlana w lewym górnym rogu aplikacji, która jest uruchamiana w obszarze Diagnostyka grafiki. Są w nim wyświetlane informacje dotyczące aplikacji i przechwytywania informacji graficznych oraz komunikaty dodawane przez wywołanie funkcji elementu członkowskiego [AddMessage](addmessage.md) .
 
- Aby przełączyć HUD, nie trzeba być aktywnie przechwytywanie informacji graficznych — czyli może być przełączane przez wystąpienie `VsgDbg` klasy, ale [Init](init.md) funkcji składowej nie musi być wywołana jako pierwsza.
+ Aby przełączać HUD, nie trzeba aktywnie przechwycić informacji graficznych — to znaczy, że można ją przełączać przez wystąpienie `VsgDbg` klasy, ale nie trzeba najpierw wywołać funkcji [inicjującej](init.md) elementu członkowskiego.

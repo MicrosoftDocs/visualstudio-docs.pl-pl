@@ -1,5 +1,5 @@
 ---
-title: Techniki debugowania CRT | Dokumentacja firmy Microsoft
+title: Techniki debugowania CRT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,41 +20,41 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 88cdc78fd739de412b4cf796d0ca7a42f9174e0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62564038"
 ---
 # <a name="crt-debugging-techniques"></a>Techniki testowania CRT
-Jeśli debugujesz program, który używa biblioteki wykonawczej języka C, te techniki debugowania mogą być przydatne.
+W przypadku debugowania programu korzystającego z biblioteki wykonawczej C te techniki debugowania mogą być przydatne.
 
 ## <a name="in-this-section"></a>W tej sekcji
  [Korzystanie z biblioteki debugowania CRT](../debugger/crt-debug-library-use.md)
 
- W tym artykule opisano obsługę debugowania, dostarczone przez biblioteki wykonawczej C i zawiera instrukcje dotyczące uzyskiwania dostępu do narzędzi.
+ Zawiera opis obsługi debugowania dostarczonej przez bibliotekę wykonawczą C i instrukcje dotyczące uzyskiwania dostępu do narzędzi.
 
  [Makra raportowania](../debugger/macros-for-reporting.md)
 
- Zawiera informacje na temat **_RPTn** i **_RPTFn** makra (zdefiniowane w CRTDBG. Godz.), która zastępuje użycia `printf` instrukcje do debugowania.
+ Zawiera informacje dotyczące **_RPTn** i **_RPTFn** makr (zdefiniowane w CRTDBG. H), która zastąpi stosowanie `printf` instrukcji dla debugowania.
 
- [Wersje debugowania funkcji alokacji sterty](../debugger/debug-versions-of-heap-allocation-functions.md)
+ [Wersja debugowania funkcji alokacji stosu](../debugger/debug-versions-of-heap-allocation-functions.md)
 
- W tym artykule omówiono specjalne wersje do debugowania funkcji alokacji sterty, w tym: sposób CRT mapowania wywołań, korzyści wynikające z wywołania ich jawnie, jak uniknąć konwersji, śledzenia oddzielne typy alokacji w blokach klienta i nie Definiowanie _ wyniki DEBUGOWANIE.
+ Omawia specjalne wersje debugowania funkcji alokacji sterty, w tym: jak są wywoływane mapowania CRT, zalety wywołania ich jawnie, sposób zapobiegania konwersji, śledzenie oddzielnych typów alokacji w blokach klienta oraz wyniki niedefiniowania _DEBUG.
 
  [Szczegóły dotyczące sterty debugowania CRT](../debugger/crt-debug-heap-details.md)
 
- Zawiera łącza do zarządzania pamięcią i stosu debugowania, typy bloków na stercie debugowania przy użyciu sterty debugowania, stanu sterty funkcje raportowania i śledzenie żądań alokacji sterty.
+ Oferuje linki do zarządzania pamięcią i sterty debugowania, typy bloków na stercie debugowania, używanie sterty debugowania, funkcji raportowania stanu sterty i śledzenie żądań alokacji sterty.
 
- [Pisanie funkcji debugowania punktów zaczepienia](../debugger/debug-hook-function-writing.md)
+ [Pisanie debugowanie funkcji punktów zaczepienia](../debugger/debug-hook-function-writing.md)
 
- Utworzenie punktu zaczepienia Wyświetla łącza do bloku klienta, functions, funkcje punktu zaczepienia alokacji, punkty zaczepienia alokacji i alokacji pamięci CRT i raportowanie funkcji punktów zaczepienia.
+ Wyświetla listę linków do funkcji punktu zaczepienia bloku klienta, funkcje punktu zaczepienia alokacji, punkty zaczepienia alokacji i alokacje pamięci CRT oraz raporty funkcji punktu zaczepienia.
 
  [Wyszukiwanie przecieków pamięci za pomocą biblioteki CRT](../debugger/finding-memory-leaks-using-the-crt-library.md)
 
- Opisano techniki wykrywanie i izolowanie przecieków pamięci za pomocą debugera i biblioteki wykonawczej C.
+ Obejmuje techniki wykrywania i izolowania przecieków pamięci przy użyciu debugera i biblioteki wykonawczej C.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
-- [Debugowanie kodu natywnego](../debugger/debugging-native-code.md) — w tym artykule omówiono niektóre typowe problemy z debugowania i technik dla aplikacji C i C++.
-- [Zabezpieczenia debugera](../debugger/debugger-security.md) — zawiera zalecenia dotyczące debugowania bardziej bezpieczne.
+- [Debugowanie kodu natywnego](../debugger/debugging-native-code.md) — omawia niektóre typowe problemy z debugowaniem i techniki dla aplikacji C i C++.
+- [Zabezpieczenia debugera](../debugger/debugger-security.md) — zawiera zalecenia dotyczące bezpieczniejszego debugowania.

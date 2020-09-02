@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe Wyszukiwanie procesów | Dokumentacja firmy Microsoft
+title: Wyszukiwanie procesów — okno dialogowe | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,32 +11,32 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 190ec35d014e6b443a9f80bf79433ac14b8fb8ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62903772"
 ---
 # <a name="process-search-dialog-box"></a>Wyszukiwanie procesów — Okno dialogowe
-Umożliwia to okno dialogowe Znajdź i wybierz węzeł dla określonego procesu w [widok procesy](../debugger/processes-view.md). Aby wyświetlić to okno dialogowe, Przenieś fokus do **procesy** okno widoku. Następnie wybierz **Znajdź proces** z **wyszukiwania** menu.
+To okno dialogowe służy do znajdowania i wybierania węzła dla określonego procesu w [widoku procesy](../debugger/processes-view.md). Aby wyświetlić to okno dialogowe, Przenieś fokus do okna widok **procesów** . Następnie wybierz pozycję **Znajdź proces** z menu **wyszukiwania** .
 
  Dostępne są następujące ustawienia:
 
- **Proces** identyfikator procesu, aby wyszukać.
+ **Proces** Identyfikator procesu, który ma zostać wyszukany.
 
- **Moduł** ciąg modułu do wyszukania.
+ **Moduł** Ciąg modułu do wyszukania.
 
- **Wyszukaj kierunek w górę lub w dół** początkowej kierunek wyszukiwania.
+ **Kierunek wyszukiwania w górę lub w dół** Początkowy kierunek wyszukiwania.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Trwa wyszukiwanie procesu w widoku procesów](../debugger/how-to-search-for-a-process-in-processes-view.md) wyjaśnia, jak można znaleźć określonego procesu w widoku procesów.
+ [Wyszukiwanie procesu w widoku procesów](../debugger/how-to-search-for-a-process-in-processes-view.md) Wyjaśnia, jak znaleźć konkretny proces w widoku procesy.
 
- [Widok procesów](../debugger/processes-view.md) Wyświetla aktywne procesy w widoku drzewa.
+ [Widok procesów](../debugger/processes-view.md) Wyświetla widok drzewa aktywnych procesów.
 
- [Widoków programu Spy ++](../debugger/spy-increment-views.md) wyjaśnia widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.
+ [Widoki Spy + +](../debugger/spy-increment-views.md) Wyjaśnia widoki drzewa Spy + + systemu Windows, komunikatów, procesów i wątków.
 
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md) wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.
+ [Korzystanie z programu Spy + +](../debugger/using-spy-increment.md) Wprowadzenie do narzędzia Spy + + i wyjaśnienie, jak można go użyć.
 
- [Okno dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md) używany do wyświetlania właściwości procesem, który został wybrany w widoku procesów.
+ Okno [dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md) Służy do wyświetlania właściwości procesu wybranego w widoku procesy.
 
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md) zawiera sekcje opisujące każdy Spy ++ menu i okno dialogowe.
+ [Spy + + — Odwołanie](../debugger/spy-increment-reference.md) Zawiera sekcje opisujące poszczególne menu Spy + + i okna dialogowego.

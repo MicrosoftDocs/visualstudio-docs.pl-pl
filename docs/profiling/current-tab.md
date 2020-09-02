@@ -1,5 +1,5 @@
 ---
-title: Bieżąca karta | Dokumenty firmy Microsoft
+title: Bieżąca karta | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f48ba44d41286f1cf5eda6ececb68d21d39abd14
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62552791"
 ---
 # <a name="current-tab"></a>Bieżąca karta
-Klikając **bieżącą** kartę, można wyświetlić stos wywołań (jeśli jest dostępny), który znajduje się najbliżej bieżącego punktu wyboru na osi czasu, jeśli wybrano segment wątku procesora CPU.  W takim przypadku punkt wyboru jest reprezentowany przez czarną strzałkę lub cieszę nad osią czasu. Po wybraniu segmentu blokowania nie jest wyświetlany, ponieważ nie było wykonywania. Jednak segment jest nadal wyróżniony i wyświetlany jest stos wywołań.
+Klikając **bieżącą** kartę, w przypadku wybrania segmentu wątku procesora można zobaczyć stos wywołań (jeśli jest dostępny) znajdujący się najbliżej bieżącego punktu zaznaczenia na osi czasu.  W takim przypadku punkt wyboru jest reprezentowany przez czarną strzałkę lub karetkę powyżej osi czasu. Gdy zaznaczony jest segment blokujący, karetka nie jest wyświetlana, ponieważ nie było żadnego wykonania. Jednak segment jest nadal wyróżniony i zostanie wyświetlony stos wywołań.
 
- Na karcie **Bieżący** są również wyświetlane informacje o segmentach aktywności DirectX, znacznikach i dostępie we/wy.  W przypadku segmentów aktywności DirectX wyświetlane są informacje o sposobie przetwarzania pakietów DMA przez kolejkę sprzętową.  W przypadku znaczników wyświetlane są informacje o opisie i typie znacznika.  W przypadku dostępu we/wy wyświetlane są informacje o pliku i liczbie bajtów odczytanych lub zapisanych.
+ **Bieżąca** karta zawiera również informacje o segmentach aktywności DirectX, znacznikach i dostępie we/wy.  W przypadku segmentów aktywności DirectX informacje o sposobie przetwarzania pakietów DMA przez kolejkę sprzętu są wyświetlane.  Dla znaczników są wyświetlane informacje o opisie i typie znacznika.  W przypadku dostępu we/wy zostanie wyświetlona informacja o pliku i liczbie bajtów odczytywanych lub zapisywana.
 
 ## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

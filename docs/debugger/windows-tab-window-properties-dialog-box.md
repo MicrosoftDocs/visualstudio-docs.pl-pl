@@ -1,5 +1,5 @@
 ---
-title: Karta Windows, okno dialogowe właściwości | Dokumentacja firmy Microsoft
+title: Karta okna, okno dialogowe Właściwości okna | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,21 +11,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ce1015741b2a1e7ba1608eea7f198b726e808f7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900786"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Karta Okna, okno dialogowe właściwości okna
-Użyj **Windows** kartę, aby wyświetlić informacje dotyczące systemu windows powiązane z wybranego okna. Aby wyświetlić [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md), Przenieś fokus do [widoku Windows](../debugger/windows-view.md) okna. Zaznacz dowolny węzeł okna w drzewie, a następnie wybierz **właściwości** z **widoku** menu.
+Użyj karty **Windows** , aby wyświetlić informacje dotyczące systemu Windows powiązane z wybranym oknem. Aby wyświetlić okno [dialogowe Właściwości okna](../debugger/window-properties-dialog-box.md), Przenieś fokus do okna [Widok systemu Windows](../debugger/windows-view.md) . Wybierz dowolny węzeł okna w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .
 
- Następujące ustawienia są dostępne na **Windows** karty:
+ Na karcie **Windows** dostępne są następujące ustawienia:
 
 |Wpis|Opis|
 |-----------|-----------------|
-|**Następne okno**|Uchwyt okna następnego równorzędnego w takiej samej kolejności (w porządku) wyświetlane w widoku drzewa okna ("none" w przypadku nie następnego okna). Wybierz ten wpis, aby wyświetlić właściwości następnego okna.|
-|**Poprzednie okno**|Uchwyt okna równorzędne poprzedniego w takiej samej kolejności (w porządku) wyświetlane w widoku drzewa okna ("none" w przypadku żadnego poprzedniego okna). Wybierz ten wpis, aby wyświetlić właściwości poprzedniego okna.|
-|**Okno nadrzędne**|Uchwyt okna nadrzędnego tego okna, ("none" w przypadku elementu nadrzędnego). Wybierz ten wpis, aby wyświetlić właściwości okna nadrzędnego.|
-|**First Child**|Uchwyt to okno pierwsze okno podrzędne, w kolejności (w porządku) wyświetlane w widoku drzewa okna ("none" w przypadku nie okien podrzędnych). Wybierz tę wartość, aby wyświetlić właściwości pierwsze okno podrzędne.|
-|**Okno właściciela**|Uchwyt okna właściciela tego okna. Okno główne aplikacji jest zwykle właścicielem okno modalne systemowe systemu windows, na przykład ("none" Jeśli nie ma właściciela). Wybierz ten wpis, aby wyświetlić właściwości okno właściciela.|
+|**Następne okno**|Uchwyt następnego okna równorzędnego w tej samej sekwencji (Z kolejnością Z) widoczny w widoku drzewa okna ("Brak", jeśli nie ma następnego okna). Wybierz ten wpis, aby wyświetlić właściwości następnego okna.|
+|**Poprzednie okno**|Uchwyt poprzedniego okna równorzędnego w tej samej sekwencji (Z kolejnością Z) widoczny w widoku drzewa okna ("Brak", jeśli nie ma poprzedniego okna). Wybierz ten wpis, aby wyświetlić właściwości poprzedniego okna.|
+|**Okno nadrzędne**|Uchwyt okna nadrzędnego tego okna ("Brak", jeśli nie ma żadnych elementów nadrzędnych). Wybierz ten wpis, aby wyświetlić właściwości okna nadrzędnego.|
+|**Pierwszy element podrzędny**|Dojście pierwszego okna podrzędnego tego okna, w sekwencji (porządku osi Z) widoczne w widoku drzewa okna ("Brak", jeśli nie ma okien podrzędnych). Wybierz tę wartość, aby wyświetlić właściwości pierwszego okna podrzędnego.|
+|**Okno właściciela**|Uchwyt okna właściciela tego okna. Główne okno aplikacji zazwyczaj należy do okien dialogowych modalnych systemu Windows, na przykład ("Brak", jeśli nie ma właściciela). Wybierz ten wpis, aby wyświetlić właściwości okna właściciela.|

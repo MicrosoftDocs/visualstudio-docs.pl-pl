@@ -1,5 +1,5 @@
 ---
-title: Karta plik stronicowania, okno dialogowe właściwości procesu | Dokumentacja firmy Microsoft
+title: Karta plik strony, okno dialogowe właściwości procesu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25dc3b0aca1b58c18ae4038540c14fc4dbfe4036
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62904110"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>Karta Plik stronicowania, okno dialogowe właściwości procesu
-Użyj **pliku stronicowania** kartę, aby przejrzeć plik stronicowania procesu. Aby wyświetlić [okno dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md), Przenieś fokus do [widok procesy](../debugger/processes-view.md) okna. Zaznacz dowolny węzeł procesu w drzewie, a następnie wybierz **właściwości** z **widoku** menu.
+Użyj karty **plik strony** , aby przejrzeć plik stronicowania procesu. Aby wyświetlić okno [dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md), Przenieś fokus do okna [widok procesów](../debugger/processes-view.md) . Wybierz dowolny węzeł procesu w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .
 
- Następujące ustawienia są dostępne na **pliku stronicowania** karty:
+ Na karcie **plik strony** dostępne są następujące ustawienia:
 
 |Wpis|Opis|
 |-----------|-----------------|
-|**Bajty pliku stronicowania**|Bieżąca liczba stron, które tego procesu są używane w pliku stronicowania. Plik stronicowania przechowuje stron danych używane w procesie, ale nie jest zawarta w innych plikach. Plik stronicowania jest używany przez wszystkie procesy i braku miejsca w pliku stronicowania może powodować błędy, gdy są uruchomione inne procesy.|
-|**Szczytowe Bajty pliku stronicowania**|Maksymalna liczba stron, które ten proces został użyty w pliku stronicowania.|
-|**Błędy stron**|Liczba błędów strony w wątkach wykonywanych w ramach tego procesu. Błąd strony występuje, gdy wątek odwołuje się do strony pamięci wirtualnej, która nie znajduje się w jego zestawie roboczym w pamięci głównej. W związku z tym, strona nie zostanie pobrany z dysku jeśli znajduje się na liście gotowości i dlatego już w pamięci głównej, lub jeśli jest on używany przez inny procesu zostały udostępnione strony.|
+|**Bajty pliku stronicowania**|Bieżąca liczba stron, których ten proces używa w pliku stronicowania. Plik stronicowania przechowuje strony danych używanych przez proces, ale nie zawarte w innych plikach. Plik stronicowania jest używany przez wszystkie procesy, a brak miejsca w pliku stronicowania może spowodować błędy, podczas gdy inne procesy są uruchomione.|
+|**Szczytowe bajty pliku stronicowania**|Maksymalna liczba stron, których ten proces użył w pliku stronicowania.|
+|**Błędy stron**|Liczba błędów stron przez wątki wykonywane w ramach tego procesu. Błąd strony występuje, gdy wątek odwołuje się do strony pamięci wirtualnej, która nie znajduje się w jego zestawie roboczym w pamięci głównej. W związku z tym strona nie zostanie pobrana z dysku, jeśli znajduje się na liście gotowości, a tym samym już w głównej pamięci, lub jeśli jest używana przez inny proces, w którym strona jest udostępniona.|

@@ -1,5 +1,5 @@
 ---
-title: Projectextensions — Element (MSBuild) | Dokumentacja firmy Microsoft
+title: ProjectExtensions — — element (MSBuild) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0afc4f73ed287f753acf87bd0b112e6f5303e996
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551265"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Umożliwia [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pliki, aby zawierała non - projektu[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] informacji. Wszystko wewnątrz elementu `ProjectExtensions` element zostanie zignorowana przez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
+Zezwala [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] na pliki projektu, które nie zawierają [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] informacji. Wszystkie elementy wewnątrz `ProjectExtensions` elementu zostaną zignorowane przez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .  
   
  \<Project>  
  \<ProjectExtensions>  
@@ -55,13 +55,13 @@ Umożliwia [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pliki, aby z
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Element główny wymagany [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pliku projektu.|  
+|[Project](../msbuild/project-element-msbuild.md)|Wymagany element główny [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pliku projektu.|  
   
 ## <a name="remarks"></a>Uwagi  
- Tylko jeden `ProjectExtensions` element może być używany w [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] projektu.  
+ `ProjectExtensions`W projekcie może być użyty tylko jeden element [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu pokazuje informacje z zintegrowanego środowiska programistycznego znajdujących się w `ProjectExtensions` elementu.  
+ Poniższy przykład kodu przedstawia informacje z zintegrowanego środowiska programistycznego, które są przechowywane w `ProjectExtensions` elemencie.  
   
 ```  
 <ProjectExtensions>  

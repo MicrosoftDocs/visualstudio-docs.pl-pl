@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CauseBreak | Dokumentacja firmy Microsoft
+title: 'IDebugProgram2:: CauseBreak | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5520d624b2789488c7ab6a5cab353d78d2cd69ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555712"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Żądania, że program zatrzymać wykonywanie następnej czasu jeden z jego próby uruchomienia wątków.  
+Żąda zatrzymania wykonania programu przy następnym uruchomieniu jednego z jego wątków.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,12 +37,12 @@ int CauseBreak();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) jest wysyłane zdarzenie, gdy program obok podejmuje próbę uruchomienia kodu po wykonaniu ta metoda jest wywoływana.  
+ Zdarzenie [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) jest wysyłane, gdy program następnym próbuje uruchomić kod po wywołaniu tej metody.  
   
- Ta metoda jest asynchroniczne, metoda zwraca natychmiast bez oczekiwania musi być zatrzymanie programu.  
+ Ta metoda jest asynchroniczna, ponieważ metoda zwraca natychmiast bez konieczności oczekiwania na zatrzymanie programu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

@@ -1,6 +1,6 @@
 ---
-title: Eksplorator zmiennych dla R
-description: Eksplorator zmiennych w programie Visual Studio pokazuje wszystkie zmienne w danym zakresie w bieżącej sesji języka R.
+title: Eksplorator zmiennych dla języka R
+description: Eksplorator zmiennych w programie Visual Studio Wyświetla wszystkie zmienne w danym zakresie w bieżącej sesji języka R.
 ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 799b7f2789898e0d02d9588f9a3ad7d1e8098a00
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62809873"
 ---
 # <a name="variable-explorer"></a>Eksplorator zmiennych
 
-Okno **Eksplorator zmiennych,** otwarte przy użyciu **R Tools** > **Eksplorator** > **zmiennych windows** (lub **Ctrl**+**8,** jeśli używano ustawień nauki**danych**R **Tools),** > pokazuje wszystkie zmienne w danym zakresie w bieżącej sesji języka R. Na przykład, jeśli otworzysz **Eksplorator zmiennych** i wprowadzisz następujące wiersze w [oknie interaktywnym:](interactive-repl-for-r-in-visual-studio.md)
+Okno **Eksplorator zmiennych** , otwarte przy użyciu **narzędzi r Tools**  >  **Windows**  >  **Eksplorator zmiennych** (lub **Ctrl** + **8** , jeśli użyto **narzędzi r Tools**  >  **nauka o danych — ustawienia**), pokazuje wszystkie zmienne w danym zakresie w bieżącej sesji języka r. Na przykład, jeśli otworzysz **Eksplorator zmiennych** i wprowadzisz następujące wiersze w [oknie interaktywnym](interactive-repl-for-r-in-visual-studio.md):
 
 ```R
 x <- 42
@@ -25,52 +25,52 @@ y <- 43
 n <- c(1,2,3,5,8,13)
 ```
 
-Następnie okno **Eksplorator zmiennych** jest wyświetlane w następujący sposób:
+Okno **Eksplorator zmiennych** zostanie wyświetlone w następujący sposób:
 
 ![Okno Eksploratora zmiennych w programie Visual Studio](media/variable-explorer-window.png)
 
-Jeśli w sesji zdefiniowano bardziej złożoną ramkę danych R, możesz przejść do danych. Na przykład po `cars <- mtcars` uruchomieniu można poruszać się po zestawie danych, rozwijając różne węzły w **Eksploratorze zmiennych:**
+Jeśli w sesji zdefiniowano bardziej złożoną ramkę danych języka R, możesz przejść do danych. Na przykład po uruchomieniu można `cars <- mtcars` nawigować przez zestaw danych, rozszerzając różne węzły w **Eksplorator zmiennych**:
 
-![Rozszerzony widok Eksploratora zmiennych](media/variable-explorer-expanded-results.png)
+![Rozwinięty widok Eksplorator zmiennych](media/variable-explorer-expanded-results.png)
 
-Aby usunąć zmienne, kliknij prawym przyciskiem myszy i wybierz polecenie **Usuń**lub zaznacz ją i naciśnij klawisz **Delete.**
+Aby usunąć zmienne, kliknij prawym przyciskiem myszy i wybierz polecenie **Usuń**lub wybierz zmienną i naciśnij klawisz **delete** .
 
-Można również wyszukać obserwację w ramce danych za pomocą wyszukiwania przyrostowego. Najpierw rozwiń węzły w ramce danych, którą chcesz przeszukać, a następnie wprowadź wyszukiwane terminy w polu wyszukiwania.
+Możesz również wyszukać obserwację w ramce danych przy użyciu wyszukiwania przyrostowego. Najpierw rozwiń węzły w ramce danych, którą chcesz wyszukać, a następnie wprowadź terminy wyszukiwania w polu wyszukiwania.
 
-## <a name="details-table-view"></a>Widok szczegóły (tabela)
+## <a name="details-table-view"></a>Widok szczegółów (tabela)
 
-Ponieważ dane są często tabelaryczne, można wyświetlić dowolny złożony typ danych jako osobną tabelę, wybierając ikonę lupy lub klikając prawym przyciskiem myszy i wybierając polecenie **Pokaż szczegóły**.
+Ponieważ dane są często tabelaryczne, można wyświetlić dowolny złożony typ danych jako osobną tabelę, wybierając ikonę lupy lub klikając prawym przyciskiem myszy i wybierając pozycję **Pokaż szczegóły**.
 
-![Widok tabeli Eksploratora zmiennych](media/variable-explorer-table-view.png)
+![Widok tabeli Eksplorator zmiennych](media/variable-explorer-table-view.png)
 
-Kliknięcie nagłówka kolumny sortuje dane według kolumny (na przemian rosnąco i malejąco). Przytrzymanie **klawisza Shift** i kliknięcie dodatkowych kolumn powoduje dodanie tych kolumn do sortowania. Kliknięcie kolumny bez **zmiany** powoduje powrót do sortowania pojedynczych kolumn.
+Kliknięcie nagłówka kolumny sortuje dane według kolumny (zmienne między rosnącą i malejącą). Wciśnięcie **klawisza Shift** i kliknięcie pozycji dodatkowe kolumny spowoduje również dodanie tych kolumn do sortowania. Kliknięcie kolumny bez **przesunięcia** do sortowania pojedynczej kolumny.
 
-Kolejność klikania nagłówków kolumn określa kolejność wykonywania sortowania. Na przykład **shift**+**kliknij** kolumnę **cyl,** a następnie **shift**+**kliknij** dwukrotnie kolumnę **mpg,** aby posortować listę rosnących cylindrów i malejących mil na galon:
+Sekwencja, w której klikasz nagłówki kolumn określa kolejność wykonywania sortowania. Na przykład naciśnij **klawisz Shift** + , a następnie**kliknij kolumnę** **CYL** , a następnie **Shift** + **kliknij dwukrotnie przycisk** " **MPG** ", aby posortować listę dla rosnących cylindrów oraz malejące mile na galon:
 
 ![Widok tabeli sortowania danych według dwóch kolumn.](media/variable-explorer-table-view-sorting.png)
 
-Ponieważ **Eksplorator zmiennych** i widoki tabel znajdują się w oddzielnych oknach programu Visual Studio, można je rozmieścić w trybie rzeczywistym do pracy obok siebie. Zobacz [Dostosowywanie układów okien w programie Visual Studio,](../ide/customizing-window-layouts-in-visual-studio.md) aby uzyskać ogólne instrukcje.
+Ponieważ **Eksplorator zmiennych** i widoki tabel znajdują się w osobnych oknach programu Visual Studio, można je rozmieścić w taki sam sposób, jak w przypadku pracy obok siebie. Ogólne instrukcje można znaleźć [w temacie Dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md) .
 
-## <a name="open-in-excel-or-other-csv-capable-application"></a>Otwórz w programie Excel (lub innej aplikacji obsługującej csv)
+## <a name="open-in-excel-or-other-csv-capable-application"></a>Otwórz w programie Excel (lub innej aplikacji obsługującej CSV)
 
-Do dalszej manipulacji i analizy często warto eksportować zmienne sesji do pliku CSV. Eksportowanie odbywa się za pomocą![małej](media/variable-explorer-excel-icon.png)ikony programu Excel (ikona eksportu programu Excel) obok każdego węzła w **Eksploratorze zmiennych**lub przez kliknięcie prawym przyciskiem myszy elementu i wybranie opcji **Otwórz w aplikacji CSV**. Wybranie ikony powoduje zapisanie danych w nowym pliku CSV w folderze *%userprofile%\Documents\RTVS_CSV_Exports,* a następnie uruchomienie tego pliku, który otwiera go w dowolnej aplikacji skojarzonej z rozszerzeniem *csv.*
+Aby zapewnić dalsze manipulowanie i analizę, często warto wyeksportować zmienne sesji do woluminu CSV. Eksportowanie odbywa się z małą ikoną programu Excel ( ![ ikona eksportu programu Excel ](media/variable-explorer-excel-icon.png) ) obok każdego węzła w **Eksplorator zmiennych**lub klikając prawym przyciskiem myszy element i wybierając polecenie **Otwórz w aplikacji CSV**. Wybranie ikony spowoduje zapisanie danych w nowym pliku CSV w folderze *%userprofile%\documents\ RTVS_CSV_Exports* , a następnie uruchomienie tego pliku, otwierając go w dowolnej aplikacji skojarzonej z rozszerzeniem *CSV* .
 
 ## <a name="scopes"></a>Zakresy
 
-Domyślnie **Eksplorator zmiennych** otwiera zakres globalny. Można przełączyć się do zakresu pakietu, wybierając pakiet z listy rozwijanej w górnej części okna.
+Domyślnie **Eksplorator zmiennych** otwiera zakres globalny. Możesz przełączyć się do zakresu pakietu, wybierając pakiet z listy rozwijanej w górnej części okna.
 
-![Eksplorator zmiennych przedstawiający zakres pakietu](media/variable-explorer-package-scopes.png)
+![Eksplorator zmiennych pokazujący zakres pakietu](media/variable-explorer-package-scopes.png)
 
-Można również przełączyć się do zakresu funkcji po zatrzymaniu w punkcie przerwania w debugerze (należy pamiętać, że **Eksplorator zmiennych** nie przełącza się automatycznie do zakresu funkcji kodu, który jest debugowany):
+Możesz również przełączyć się do zakresu funkcji po zatrzymaniu w punkcie przerwania w debugerze (należy zauważyć, że **Eksplorator zmiennych** nie przełączy się automatycznie z zakresem funkcji debugowanego kodu):
 
-![Eksplorator zmiennych przedstawiający ramkę danych podczas debugowania](media/variable-explorer-as-locals-window.png)
+![Eksplorator zmiennych wyświetlania ramki danych podczas debugowania](media/variable-explorer-as-locals-window.png)
 
-**Eksplorator zmiennych** automatycznie zmienia zakres funkcji podczas przechodzenia przez kod w debugerze, na przykład pokazując zmienne lokalne w funkcji.
+**Eksplorator zmiennych** automatycznie zmienia zakres funkcji podczas przechodzenia przez kod w debugerze, takich jak wyświetlanie zmiennych lokalnych w funkcji.
 
-## <a name="import-data-into-variable-explorer"></a>Importowanie danych do Eksploratora zmiennych
+## <a name="import-data-into-variable-explorer"></a>Importuj dane do Eksplorator zmiennych
 
-Dwa polecenia na pasku narzędzi **Eksploratora zmiennych,** które są również dostępne za pośrednictwem menu > **Dane** **narzędzi R,** importują zewnętrzne zestawy danych CSV do sesji R: **Importuj zestaw danych do sesji R z adresu URL sieci Web** i **Importuj zestaw danych do sesji R z pliku tekstowego**.
+Dwa polecenia na pasku narzędzi **Eksplorator zmiennych** , które są również dostępne za pośrednictwem menu dane **Narzędzia R Tools**  >  **Data** , Importuj zewnętrzne zestawy danych CSV do sesji języka r: **Importuj zestaw danych do sesji języka r z internetowego adresu URL** i **Importuj zestaw danych do sesji języka r z pliku tekstowego**.
 
-Po zidentyfikowaniu pliku CSV do zaimportowania program Visual Studio wyświetla okno dialogowe **Importuj zestaw danych,** w którym dostępne są opcje kontrolowania sposobu analizowania tego pliku danych (czyli separatora pól i sposobu obsługi cudzysłowów). Można również wyświetlić podgląd importowanej ramki danych i oryginalnego pliku danych:
+Po zidentyfikowaniu pliku CSV, który ma zostać zaimportowany, program Visual Studio wyświetli okno dialogowe **Importowanie zestawu danych** , w którym można kontrolować sposób analizowania tego pliku danych (czyli to, co to jest separator pola i jak obsługiwać cudzysłowy). Możesz również wyświetlić podgląd zaimportowanej ramki danych i oryginalnego pliku danych:
 
 ![Okno dialogowe Importowanie zestawu danych](media/variable-explorer-import-dataset-dialog.png)

@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe Znajdź okno | Dokumentacja firmy Microsoft
+title: Okno dialogowe Znajdowanie okna | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,44 +12,44 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 392c0150c9bfb653a3a52c11c0d31097e04c9cc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62849991"
 ---
 # <a name="find-window-dialog-box"></a>Okno dialogowe Znajdź okno
-Aby wybrać okno i wyświetlić jej właściwości lub komunikaty, należy użyć tego okna dialogowego. Aby wyświetlić to okno dialogowe, wybierz **Znajdź okno** z **Spy** menu.
+To okno dialogowe służy do wybierania okna i wyświetlania jego właściwości lub komunikatów. Aby wyświetlić to okno dialogowe, wybierz pozycję **Znajdź okno** z menu **Spy** .
 
  Dostępne są następujące ustawienia:
 
- **Narzędzia wyszukiwania** używany do wybierania okna Narzędzie przeciągania i upuszczania.
+ **Narzędzie wyszukiwania** Narzędzie do przeciągania i upuszczania używane do wybierania okna.
 
- **Ukryj narzędzie Spy ++** usuwa głównego okna programu Spy ++ i pozostawia **Znajdź okno** okno dialogowe widoczne na podstawie innych aplikacji.
+ **Ukryj Spy + +** Usuwa główne okno programu Spy + + i pozostawia okno dialogowe **Znajdowanie okna** widoczne na wierzchu innych aplikacji.
 
- **Obsługa** Unikatowy identyfikator okna, aby znaleźć.
+ **Obsługa** Unikatowy identyfikator okna do odnalezienia.
 
- **Podpis** tekst tytuł okna.
+ **Podpis** Tekst napisu okna.
 
- **Klasa** klasy okna.
+ **Klasa** Klasa okna.
 
- **Styl** styl okna.
+ **Styl** Styl okna.
 
- **Prostokąt** prostokąt otaczający okna.
+ **Prostokąt** Prostokąt ograniczający dla okna.
 
- **Pokaż właściwości lub komunikaty** Określa, czy naciśnięcie przycisku OK spowoduje wyświetlenie [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md) lub Otwórz [widoku komunikatów](../debugger/messages-view.md).
+ **Pokaż właściwości lub komunikaty** Określa, czy naciśnięcie przycisku OK wyświetli okno [dialogowe Właściwości okna](../debugger/window-properties-dialog-box.md) lub Otwórz [Widok komunikatów](../debugger/messages-view.md).
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Za pomocą narzędzia Znajdź](../debugger/how-to-use-the-finder-tool.md) pokazuje, jak to narzędzie skanowania systemu windows do właściwości lub komunikaty.
+ [Korzystanie z narzędzia wyszukiwania](../debugger/how-to-use-the-finder-tool.md) Pokazuje, w jaki sposób to narzędzie skanuje okna pod kątem właściwości lub komunikatów.
 
- [Wyświetl Windows](../debugger/windows-view.md) wyświetlany widok drzewa dostępne okien i formantów.
+ [Widok systemu Windows](../debugger/windows-view.md) Wyświetla widok drzewa dostępnych okien i kontrolek.
 
- [Widoków programu Spy ++](../debugger/spy-increment-views.md) wyjaśnia widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.
+ [Widoki Spy + +](../debugger/spy-increment-views.md) Wyjaśnia widoki drzewa Spy + + systemu Windows, komunikatów, procesów i wątków.
 
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md) wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.
+ [Korzystanie z programu Spy + +](../debugger/using-spy-increment.md) Wprowadzenie do narzędzia Spy + + i wyjaśnienie, jak można go użyć.
 
- [Okno dialogowe Wyszukiwanie](../debugger/window-search-dialog-box.md) używana do znajdowania węzła w określonym oknie, w widoku Windows.
+ [Wyszukiwanie okna](../debugger/window-search-dialog-box.md) — okno dialogowe Służy do znajdowania węzła dla określonego okna w widoku systemu Windows.
 
- [Okno dialogowe właściwości](../debugger/window-properties-dialog-box.md) używany do wyświetlania właściwości przedziału wybrany w widoku Windows.
+ Okno [dialogowe Właściwości okna](../debugger/window-properties-dialog-box.md) Służy do wyświetlania właściwości okna wybranego w widoku systemu Windows.
 
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md) zawiera sekcje opisujące każdy Spy ++ menu i okno dialogowe.
+ [Spy + + — Odwołanie](../debugger/spy-increment-reference.md) Zawiera sekcje opisujące poszczególne menu Spy + + i okna dialogowego.

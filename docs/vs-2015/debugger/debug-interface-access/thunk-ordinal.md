@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b98098c0b6e1de9c3c2ceda5c644bc2957ab22bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576411"
 ---
-# <a name="thunkordinal"></a>THUNK_ORDINAL
+# <a name="thunk_ordinal"></a>THUNK_ORDINAL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Określa typy thunk.  
+Wyznacza typy thunk.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,31 +43,31 @@ typedef enum THUNK_ORDINAL { 
   
 ## <a name="elements"></a>Elementy  
  THUNK_ORDINAL_NOTYPE  
- Standardowe wywołanie.  
+ Standardowa thunk.  
   
  THUNK_ORDINAL_ADJUSTOR  
- A `this` adjustor thunk.  
+ `this`Thunk korygowania.  
   
  THUNK_ORDINAL_VCALL  
- Thunk wywołanie wirtualne.  
+ Thunk wywołania wirtualnego.  
   
  THUNK_ORDINAL_PCODE  
- Thunk P-code.  
+ P-Code thunk.  
   
  THUNK_ORDINAL_LOAD  
- Thunk obciążenia opóźnienia.  
+ Opóźnij thunk ładowania.  
   
  THUNK_ORDINAL_TRAMP_INCREMENTAL  
- Thunk trampoline przyrostowej (trampoline sekcją thunk służy do Odbijanie wywołania z miejsca w pamięci z jednego do drugiego).  
+ Przyrostowe Trampoline thunk (Trampoline thunk służy do odbijania wywołań z jednego miejsca w pamięci do innej).  
   
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
- Thunk trampoline punktu gałęzi.  
+ Punkt rozgałęzienia Trampoline thunk.  
   
 ## <a name="remarks"></a>Uwagi  
- Wartości w tym wyliczeniu są zwracane z wywołania [idiasymbol::get_thunkordinal —](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) metody.  
+ Wartości w tym wyliczeniu są zwracane z wywołania metody [IDiaSymbol:: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: cvconst.h  
+ Nagłówek: cvconst. h  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)   

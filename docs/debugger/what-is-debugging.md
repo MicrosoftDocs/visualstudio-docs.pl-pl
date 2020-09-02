@@ -1,6 +1,6 @@
 ---
 title: Co to jest debugowanie?
-description: Zrozumienie, co oznacza debugować aplikację
+description: Informacje o tym, co oznacza debugowanie aplikacji
 ms.custom: debug-experiment
 ms.date: 10/17/2018
 ms.topic: conceptual
@@ -12,43 +12,43 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62901236"
 ---
 # <a name="what-is-debugging"></a>Co to jest debugowanie?
 
-Debuger programu Visual Studio jest zaawansowanym narzędziem. Przed pokazujemy, jak z niej korzystać, chcemy, aby można było mówić o niektórych warunków, takich jak *debugera*, *debugowania*, i *tryb debugowania*. W ten sposób odnosimy później wyszukując i naprawiając usterki, firma Microsoft będzie mówić tak samo.
+Debuger programu Visual Studio jest zaawansowanym narzędziem. Zanim poinformujemy, jak z niej korzystać, chcemy porozmawiać na temat pewnych warunków, takich jak *debuger*, *debugowanie*i *tryb debugowania*. W ten sposób podczas kolejnej rozmowy o Znajdowanie i naprawianie usterek będziemy mówić o tym samym zakresie.
 
-## <a name="debugger-vs-debugging"></a>Debuger i debugowanie
+## <a name="debugger-vs-debugging"></a>Debuger a debugowanie
 
-Termin *debugowania* może oznaczać wiele różnych rzeczy, ale najbardziej dosłownie, oznacza to, usuwania usterek w kodzie. Teraz istnieje wiele sposobów, aby to zrobić. Na przykład debug przez zeskanowanie kodu szuka literówki lub za pomocą analizator kodu. Może debugować kod, za pomocą profilera wydajności. Lub może debugować przy użyciu *debugera*.
+Termin *debugowania* może oznaczać wiele różnych rzeczy, ale najbardziej dosłownie oznacza usunięcie usterek z kodu. Teraz istnieje wiele sposobów, aby to zrobić. Na przykład możesz debugować, skanując kod szukający literówki lub używając analizatora kodu. Kod można debugować za pomocą profilera wydajności. Lub można debugować za pomocą *debugera*.
 
-Debuger jest narzędziem bardzo wyspecjalizowany dla deweloperów, dołącza do uruchomionej aplikacji, która umożliwia inspekcję kodu. W dokumentacji debugowania programu Visual Studio jest to zazwyczaj co mamy na myśli gdy mówimy "debugowanie".
+Debuger to bardzo wyspecjalizowane narzędzie programistyczne, które dołącza do uruchomionej aplikacji i umożliwia sprawdzenie kodu. W dokumentacji debugowania dla programu Visual Studio jest to zazwyczaj znaczenie, gdy będziemy mówić "Debugowanie".
 
-## <a name="debug-mode-vs-running-your-app"></a>Debugowanie trybu w porównaniu z tą aplikacją
+## <a name="debug-mode-vs-running-your-app"></a>Tryb debugowania a uruchamianie aplikacji
 
-Po uruchomieniu aplikacji w programie Visual Studio po raz pierwszy, może uruchomić ją, naciskając przycisk zielona strzałka ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi (lub **F5**). Domyślnie **debugowania** wartość znajduje się w rozwijanej po lewej stronie. Jeśli jesteś nowym użytkownikiem programu Visual Studio, to pozostawienie wrażenie, że debugowanie aplikacji ma coś zrobić z uruchomioną aplikację — którego jest--, ale są one całkowicie dwóch zupełnie inne zadania.
+Po uruchomieniu aplikacji w programie Visual Studio po raz pierwszy możesz ją uruchomić, naciskając przycisk Zielona strzałka ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi (lub **F5**). Domyślnie wartość **debugowania** pojawia się na liście rozwijanej po lewej stronie. Jeśli dopiero zaczynasz używać programu Visual Studio, może to pozostawać wrażenie, że debugowanie aplikacji ma coś do działania w celu uruchomienia aplikacji — co robi, ale są one zasadniczo dwa bardzo różne zadania.
 
 ![Wybierz kompilację debugowania](../debugger/media/what-is-debugging-debug-build.png)
 
-A **debugowania** wartość wskazuje konfiguracji debugowania. Po uruchomieniu aplikacji (naciśnij klawisz zieloną strzałkę lub **F5**) w konfiguracji debugowania, możesz uruchomić aplikację w *tryb debugowania*, co oznacza, że używasz aplikacji załączonym debuggerze. Dzięki temu pełny zestaw funkcji służących do znajdowania usterek w aplikacji do debugowania.
+Wartość **debugowania** wskazuje konfigurację debugowania. Po uruchomieniu aplikacji (Naciśnij zieloną strzałkę lub **F5**) w konfiguracji debugowania uruchamiasz aplikację w *trybie debugowania*, co oznacza, że aplikacja jest uruchamiana z dołączonym debugerem. Pozwala to na pełny zestaw funkcji debugowania, których można użyć, aby pomóc w znalezieniu usterek w aplikacji.
 
-Jeśli jest otwarty projekt, wybierz selektorze listy rozwijanej, w którym jest wyświetlany komunikat **debugowania** i wybierz polecenie **wersji** zamiast tego.
+Jeśli masz otwarty projekt, wybierz selektor listy rozwijanej, gdzie mówi **debugowania** , a następnie wybierz pozycję **Zwolnij** .
 
 ![Wybierz kompilację wydania](../debugger/media/what-is-debugging-release-build.png)
 
-Gdy przełączysz to ustawienie, możesz zmienić projekt z konfiguracji debugowania, konfiguracja wydania. Projektów programu Visual Studio mają oddzielnych wersji i konfiguracji programu do debugowania. Kompilujesz wersję debugera do debugowania i wersję zwolnienia do ostatecznej dystrybucji zwolnienia. Kompilacja wydania jest zoptymalizowana pod kątem wydajności, ale Kompilacja debugowania jest lepszym rozwiązaniem dla debugowania.
+Po przełączeniu tego ustawienia projekt zostanie zmieniony z konfiguracji debugowania na konfigurację wydania. Projekty programu Visual Studio mają osobne konfiguracje wersji i debugowania dla Twojego programu. Można skompilować wersję do debugowania dla debugowania i wersję wydania dla ostatecznej dystrybucji wersji. Kompilacja wydania jest zoptymalizowana pod kątem wydajności, ale Kompilacja debugowania jest lepsza dla debugowania.
 
-## <a name="when-to-use-a-debugger"></a>Kiedy należy używać w debugerze
+## <a name="when-to-use-a-debugger"></a>Kiedy używać debugera
 
-Debuger to podstawowe narzędzie do znajdowania i rozwiązywania usterek w aplikacjach. Kontekst jest najważniejsza i ważne jest, aby wykorzystać wszystkie narzędzia w swojej jednorazowe ułatwiające szybkie usunięcia usterki lub błędy. Czasami po prawej stronie "narzędzia" może być rozwiązaniem lepiej kodowania. Dzięki informacjom, kiedy należy używać debugera, a inne narzędzie, zostanie też nauczysz się bardziej efektywne wykorzystanie debugera.
+Debuger to podstawowe narzędzie do znajdowania i naprawiania usterek w aplikacjach. Jednak kontekst to król i ważne jest, aby korzystać z wszystkich narzędzi w miejscu, aby pomóc szybko wyeliminować błędy lub błędy. Czasami odpowiednie "Narzędzie" może być lepszym rozwiązaniem do tworzenia kodu. Pouczenie się, kiedy należy używać debugera a innego narzędzia, dowiesz się również, jak wydajniej korzystać z debugera.
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym artykule wyjaśniono kilka ogólnych pojęć debugowania. Następnie można uruchomić uczenia sposób debugowania w programie Visual Studio oraz pisania kodu z mniej błędów. Następujące artykuły show C# przykłady kodu, ale pojęcia dotyczą wszystkich językach obsługiwanych przez program Visual Studio.
+W tym artykule przedstawiono kilka ogólnych pojęć dotyczących debugowania. Następnie możesz zacząć uczenie się, jak debugować program Visual Studio i jak pisać kod z mniejszą ilością błędów. W poniższych artykułach przedstawiono przykłady kodu w języku C#, ale pojęcia dotyczą wszystkich języków obsługiwanych przez program Visual Studio.
 
 > [!div class="nextstepaction"]
 > [Debugowanie dla całkowicie początkujących](../debugger/debugging-absolute-beginners.md)

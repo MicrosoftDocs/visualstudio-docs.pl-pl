@@ -1,5 +1,5 @@
 ---
-title: Praca z zakresami
+title: Pracuj z zakresami
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,32 +16,32 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d64e774fe418bb7373a6e632b1e8c2cebecc2854
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62815027"
 ---
-# <a name="work-with-ranges"></a>Praca z zakresami
-  <xref:Microsoft.Office.Tools.Excel.NamedRange> i <xref:Microsoft.Office.Interop.Excel.Range> klasy zawierają metody i właściwości, które umożliwiają wykonywanie zadań z zakresami.
+# <a name="work-with-ranges"></a>Pracuj z zakresami
+  <xref:Microsoft.Office.Tools.Excel.NamedRange>Klasy i <xref:Microsoft.Office.Interop.Excel.Range> zawierają metody i właściwości używane do wykonywania zadań z zakresami.
 
 |Zadanie|Procedura|
 |----------|---------------|
-|Uzyskiwać dostęp do zakresu, a następnie ustaw wartość.|[Instrukcje: Programowe odwoływanie do zakresów arkusza w kodzie](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)|
-|Wprowadź zakres, w oparciu o wartości początkowej.|[Instrukcje: Programowe automatyczne wypełnienie zakresów przyrostowo zmieniającymi się danymi](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)|
-|Pobieranie i ustawianie wartości daty w komórkach.|[Instrukcje: Programowe przechowywanie i pobieranie wartości daty w zakresach programu Excel](../vsto/how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges.md)|
-|Stosowanie stylów do komórki w regionie.|[Instrukcje: Programowe stosowanie stylów do zakresów arkusza w skoroszycie](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)|
-|Wyszukiwanie tekstu w zakresach arkusza.|[Instrukcje: Programowe wyszukiwanie tekstu w zakresach arkusza](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)|
-|Stosowanie koloru do tekstu zakresu komórek.|[Instrukcje: Programowe stosowanie koloru do zakresów programu Excel](../vsto/how-to-programmatically-apply-color-to-excel-ranges.md)|
-|Programowe wykonywanie obliczeń programu Excel.|[Instrukcje: Programowe wykonywanie obliczeń programu Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)|
-|Wyświetlanie ciągu w komórce.|[Instrukcje: Programowe wyświetlanie ciągu w komórce arkusza](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md)|
+|Uzyskaj dostęp do zakresu i ustaw wartość.|[Instrukcje: programowe odwoływanie się do zakresów arkusza w kodzie](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)|
+|Wypełnij zakres na podstawie wartości początkowej.|[Instrukcje: Programowane automatyczne wypełnianie zakresów przyrostowo zmieniającymi się danymi](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)|
+|Pobierz i ustaw wartości daty w komórkach.|[Instrukcje: Programowane przechowywanie i pobieranie wartości daty w zakresach programu Excel](../vsto/how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges.md)|
+|Zastosuj style do komórek w regionie.|[Instrukcje: Programowane stosowanie stylów do zakresów w skoroszytach](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)|
+|Wyszukiwanie tekstu w zakresach arkusza.|[Instrukcje: programowe wyszukiwanie tekstu w zakresach arkusza](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)|
+|Zastosuj kolor do tekstu w zakresie komórek.|[Instrukcje: Programowane stosowanie koloru do zakresów programu Excel](../vsto/how-to-programmatically-apply-color-to-excel-ranges.md)|
+|Programowe wykonywanie obliczeń w programie Excel.|[Instrukcje: Programowane uruchamianie obliczeń programu Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)|
+|Wyświetla ciąg w komórce.|[Instrukcje: Programowane wyświetlanie ciągu w komórce arkusza](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md)|
 
- Aby uzyskać więcej informacji o zadaniach programu Excel i modelu obiektów programu Excel, zobacz [model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).
+ Aby uzyskać więcej informacji o zadaniach programu Excel i modelu obiektów programu Excel, zobacz [model obiektów programu Excel — Omówienie](../vsto/excel-object-model-overview.md).
 
- W niektórych przypadkach sposób wykonywania tych zadań w dodatkach VSTO różni się od metody, wykonać je w dostosowaniach na poziomie dokumentu.
+ W niektórych przypadkach sposoby wykonywania tych zadań w dodatkach narzędzia VSTO różnią się od sposobów ich wykonywania w dostosowywaniu na poziomie dokumentu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)
-- [Praca z arkuszami](../vsto/working-with-worksheets.md)
-- [Praca ze skoroszytami](../vsto/working-with-workbooks.md)
-- [Użyj kontrolek Windows Forms w arkuszach Excel](../vsto/using-windows-forms-controls-on-excel-worksheets.md)
+- [Pracuj z arkuszami](../vsto/working-with-worksheets.md)
+- [Pracuj ze skoroszytami](../vsto/working-with-workbooks.md)
+- [Używanie formantów Windows Forms w arkuszach programu Excel](../vsto/using-windows-forms-controls-on-excel-worksheets.md)

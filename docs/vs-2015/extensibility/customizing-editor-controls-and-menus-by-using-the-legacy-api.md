@@ -1,5 +1,5 @@
 ---
-title: Dostosowywanie menu i formantów w edytorze za pomocą starszej wersji interfejsu API | Dokumentacja firmy Microsoft
+title: Dostosowywanie formantów i menu edytora przy użyciu starszej wersji interfejsu API | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,30 +11,30 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2f6faa99ad0ff9d564522baad47f9d252157ff2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62556054"
 ---
-# <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Dostosowywanie menu i formantów w edytorze za pomocą starszej wersji interfejsu API
+# <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Dostosowywanie kontrolek i menu w edytorze za pomocą starszego interfejsu API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Usługa języka lub widoku tekstu można kontrolować menu kontekstowe i formantów w edytorze. Strony w tej sekcji zawierają szczegółowe instrukcje dotyczące korzystania z tych funkcji.  
+Usługa językowa lub Widok tekstowy mogą kontrolować menu kontekstowe i kontrolki w edytorze. Strony w tej sekcji szczegółowo opisują sposób pracy z tymi funkcjami.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Pasek list rozwijanych](../extensibility/drop-down-bar.md)  
- W tym artykule opisano pasek listy rozwijanej i zawiera instrukcje dotyczące jego wykonania.  
+ Opisuje pasek listy rozwijanej i zawiera instrukcje dotyczące jego wdrożenia.  
   
  [Obsługa poleceń](../extensibility/command-handling.md)  
- Obsługa w edytorach polecenie details.  
+ Obsługa poleceń Details w edytorach.  
   
  [Menu kontekstowe](../extensibility/context-menus.md)  
- W tym artykule opisano menu kontekstowe edytora.  
+ Opisuje menu kontekstowe edytora.  
   
- [Instrukcje: Aktualizacja paska stanu](../extensibility/how-to-update-the-status-bar.md)  
- Zawiera instrukcje dotyczące aktualizowania **pasek stanu**.  
+ [Instrukcje: aktualizowanie paska stanu](../extensibility/how-to-update-the-status-bar.md)  
+ Zawiera instrukcje dotyczące aktualizowania **paska stanu**.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Rozszerzenia edytora i usługi językowej](../extensibility/editor-and-language-service-extensions.md)  
- Przedstawia różne rodzaje edytorach, których można używać w programie Visual Studio.
+ Wprowadza różne typy edytorów, których można użyć w programie Visual Studio.
