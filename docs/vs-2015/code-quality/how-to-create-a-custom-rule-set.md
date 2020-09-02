@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6e4aef02a2bb320112d7d268da28cf66b1ec6751
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657446"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Porady: tworzenie niestandardowego zestawu reguł
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] i [!INCLUDE[vsPro](../includes/vspro-md.md)] można utworzyć i zmodyfikować *zestaw reguł* niestandardowych w celu spełnienia określonych wymagań projektu skojarzonych z analizą kodu. Aby utworzyć niestandardowy zestaw reguł, należy otworzyć co najmniej jeden standardowy zestaw reguł w edytorze zestawu reguł. Następnie można dodać lub usunąć określone reguły, a także zmienić akcję, która występuje, gdy analiza kodu ustali, że reguła została naruszona.
+W programie, [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] i można [!INCLUDE[vsPro](../includes/vspro-md.md)] utworzyć i zmodyfikować *zestaw reguł* niestandardowych, aby spełniał wymagania dotyczące projektu związane z analizą kodu. Aby utworzyć niestandardowy zestaw reguł, należy otworzyć co najmniej jeden standardowy zestaw reguł w edytorze zestawu reguł. Następnie można dodać lub usunąć określone reguły, a także zmienić akcję, która występuje, gdy analiza kodu ustali, że reguła została naruszona.
 
  Aby utworzyć nowy niestandardowy zestaw reguł, Zapisz go przy użyciu nowej nazwy pliku. Niestandardowy zestaw reguł jest automatycznie przypisywany do projektu.
 
@@ -31,7 +31,7 @@ W [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](..
 
 #### <a name="to-open-an-empty-rule-set-file-in-the-rule-set-editor"></a>Aby otworzyć pusty plik zestawu reguł w edytorze zestawu reguł
 
-1. W menu **plik** [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wskaż polecenie **Nowy** , a następnie kliknij polecenie **plik**.
+1. W menu **plik** [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , wskaż **Nowy** , a następnie kliknij **plik**.
 
 2. W oknie dialogowym **nowy plik** kliknij pozycję **Ogólne** na liście **zainstalowane szablony** , a następnie wybierz pozycję **zestaw reguł analizy kodu**.
 
@@ -47,9 +47,9 @@ W [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](..
 
    - Wybierz zestaw reguł, który chcesz dostosować.
 
-     \- lub-
+     \- oraz
 
-   - Wybierz **\<Browse... >** , aby określić istniejący zestaw reguł, którego nie ma na liście.
+   - Wybierz **\<Browse...>** , aby określić istniejący zestaw reguł, którego nie ma na liście.
 
 4. Kliknij przycisk **Otwórz** , aby wyświetlić reguły w edytorze zestawu reguł.
 
@@ -59,7 +59,7 @@ W [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](..
 
 2. Na karcie **Właściwości** kliknij pozycję **Analiza kodu**.
 
-3. Wybierz **\<Choose wiele zestawów reguł... >** **uruchamiania tego zestawu reguł**.
+3. Wybierz opcję **\<Choose multiple rule sets...>** z **uruchamiania tego zestawu reguł**.
 
 4. W oknie dialogowym **Dodawanie lub usuwanie zestawów reguł** wybierz zestawy reguł, dla których chcesz utworzyć nowy zestaw reguł, a następnie kliknij przycisk **OK**.
 
@@ -97,7 +97,7 @@ W [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](..
 
 - Aby zwinąć reguły we wszystkich grupach, kliknij przycisk **Zwiń wszystko**.
 
-- Aby zmienić pole, według którego reguły są grupowane, wybierz pole z listy **Grupuj według** . Aby wyświetlić reguły niezgrupowane, wybierz pozycję **\<None >** .
+- Aby zmienić pole, według którego reguły są grupowane, wybierz pole z listy **Grupuj według** . Aby wyświetlić reguły niezgrupowane, wybierz opcję **\<None>** .
 
 - Aby dodać lub usunąć pola w kolumnach reguł, kliknij przycisk **Opcje kolumn**.
 

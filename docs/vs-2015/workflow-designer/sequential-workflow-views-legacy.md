@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 76d357c1f6ebc770d0e625e60bae237e37e0a6aa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846214"
 ---
 # <a name="sequential-workflow-views-legacy"></a>Widoki sekwencyjnego przepływu pracy (starsza wersja)
-[!INCLUDE[vs2010](../includes/vs2010-md.md)] zapewnia starszą [!INCLUDE[wfd1](../includes/wfd1-md.md)], której można użyć do [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+[!INCLUDE[vs2010](../includes/vs2010-md.md)] zapewnia starszą wersję [!INCLUDE[wfd1](../includes/wfd1-md.md)] , której można użyć do użycia [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
- [!INCLUDE[wfd2](../includes/wfd2-md.md)] zapewnia sposób graficznego tworzenia aplikacji [!INCLUDE[wf](../includes/wf-md.md)] przy użyciu znanego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu użytkownika. [!INCLUDE[wf](../includes/wf-md.md)] aplikacje składają się z kroków procesu przepływu pracy o nazwie Activities. Aby utworzyć przepływ pracy, Zredaguj działania na powierzchni projektowej, przeciągając odpowiednie Projektanci działań z **przybornika** na powierzchnię projektu.
+ [!INCLUDE[wfd2](../includes/wfd2-md.md)]Zapewnia sposób graficznego tworzenia [!INCLUDE[wf](../includes/wf-md.md)] aplikacji przy użyciu znanego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu użytkownika. [!INCLUDE[wf](../includes/wf-md.md)] aplikacje składają się z kroków procesu przepływu pracy nazywanych działaniami. Aby utworzyć przepływ pracy, Zredaguj działania na powierzchni projektowej, przeciągając odpowiednie Projektanci działań z **przybornika** na powierzchnię projektu.
 
  Po utworzeniu sekwencyjnego przepływu pracy, który jest [SequentialWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequentialworkflowactivity.aspx), dostępne są trzy widoki przepływu pracy. Te widoki są dostępne z menu **przepływ pracy** oraz z menu kontekstowego na powierzchni projektowej.
 

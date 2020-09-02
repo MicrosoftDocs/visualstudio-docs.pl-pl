@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 501b7f040cb841d19c06ccc8fe7615a5b4a5e70d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657343"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Porady: generowanie szablonów z szablonów przy użyciu sekwencji unikowych
@@ -25,7 +25,7 @@ Można utworzyć szablon tekstu, który tworzy inny szablon tekstowy jako wygene
 
 ### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Aby wygenerować szablon tekstowy z poziomu szablonu tekstowego
 
-- Użyj ukośnika odwrotnego (\\) jako znaku ucieczki, aby utworzyć niezbędne znaczniki znaczników w szablonie tekstowym dla dyrektyw, instrukcji, wyrażeń i funkcji klasy w osobnym pliku szablonu tekstowego.
+- Użyj ukośnika odwrotnego ( \\ ) jako znaku ucieczki, aby utworzyć niezbędne znaczniki znaczników w szablonie tekstowym dla dyrektyw, instrukcji, wyrażeń i funkcji klasy w osobnym pliku szablonu tekstowego.
 
     ```
     \<#@ directive \#>
@@ -35,7 +35,7 @@ Można utworzyć szablon tekstu, który tworzy inny szablon tekstowy jako wygene
     ```
 
 ## <a name="example"></a>Przykład
- Poniższy przykład używa znaków ucieczki, aby utworzyć szablon tekstowy z szablonu tekstu. Dyrektywa `output` ustawia typ pliku docelowego na typ pliku szablonu tekstu (. tt).
+ Poniższy przykład używa znaków ucieczki, aby utworzyć szablon tekstowy z szablonu tekstu. `output`Dyrektywa ustawia typ pliku docelowego na typ pliku szablonu tekstu (. tt).
 
 ```csharp
 \<#@ output extension=".tt" \#>

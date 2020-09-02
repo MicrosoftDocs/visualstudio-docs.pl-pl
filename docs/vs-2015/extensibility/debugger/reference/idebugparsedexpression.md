@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression | Dokumentacja firmy Microsoft
+title: IDebugParsedExpression | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,19 +13,19 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4756a346cc059b1f80aba98439b993ac84f1136f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431417"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64816303"
 ---
 # <a name="idebugparsedexpression"></a>IDebugParsedExpression
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> W programie Visual Studio 2015 ten sposób implementowania oceniania wyrażeń jest przestarzały. Aby uzyskać informacje na temat implementowania oceniania wyrażeń CLR, zobacz [oszacowania wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykłady ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Ten interfejs reprezentuje wyrażenie przeanalizowany, gotowy do obliczenia.  
+ Ten interfejs reprezentuje wyrażenie analizowane gotowe do oceny.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,29 +34,29 @@ IDebugParsedExpression : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Ewaluatora wyrażeń implementuje ten interfejs do reprezentowania przeanalizowany wyrażenie, które jest gotowe do oceny.  
+ Ewaluatora wyrażeń implementuje ten interfejs, aby reprezentować wyrażenie analizowane, które jest gotowe do oceny.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wywołanie [przeanalizować](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) zwraca ten interfejs.  
+ Wywołanie metody [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) zwraca ten interfejs.  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IDebugParsedExpression`.  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ W poniższej tabeli przedstawiono metodę `IDebugParsedExpression` .  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)|Oblicza wyrażenie przeanalizowany.|  
+|[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)|Szacuje przeanalizowane wyrażenie.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeżeli obiekt wywołujący jest gotowy do obliczenia wyrażenia, wywołuje [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) do zwrócenia [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) zawierającą wynik obliczenia. Takie podejście legalną dwuczęściową do oceny, analizowanie, a następnie ocenę, umożliwia przeanalizowany wyrażenie do obliczenia wiele razy, z pominięciem czasochłonnym procesem analizowania wyrażenia.  
+ Gdy obiekt wywołujący jest gotowy do oceny wyrażenia, wywołuje [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) , aby zwrócić [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , który zawiera wynik oceny. To dwuczęściowe podejście do oceny, analizowanie i ocenianie, umożliwia Obliczanie wyrażenia przeanalizowanego wiele razy, pomijając czasochłonny proces analizowania wyrażenia.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: ee.h  
+ Nagłówek: EE. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Analizy](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)   
+ [Przetwarzania](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

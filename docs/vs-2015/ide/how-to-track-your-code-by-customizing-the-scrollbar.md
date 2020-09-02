@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a852b0e5ac6c6a677caab97279a0b0cb0299d27f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670635"
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Instrukcje: śledzenie kodu przez dostosowanie paska przewijania
+# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Instrukcje: Śledzenie kodu przez dostosowania paska przewijania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podczas pracy z długimi plikami kodu może być trudno zachować wszystko. Możesz dostosować pasek przewijania okna kod, aby dać ci wgląd w oczy dotyczące tego, co dzieje się w kodzie.
@@ -25,7 +25,7 @@ Podczas pracy z długimi plikami kodu może być trudno zachować wszystko. Moż
 
 1. Pasek przewijania można skonfigurować tak, aby pokazywał zmiany kodu, punkty przerwania, błędy i zakładki.
 
-     Otwórz stronę opcje **paska przewijania** (**menu Narzędzia, opcje Edytor tekstu. Wszystkie języki** lub określony język lub wpisz **pasek przewijania** w oknie szybkie uruchamianie).
+     Otwórz stronę opcje **paska przewijania** (**menu Narzędzia, opcje Edytor tekstu. Wszystkie języki** lub określony język lub wpisz  **pasek przewijania** w oknie szybkie uruchamianie).
 
 2. Wybierz pozycję **Pokaż adnotacje na pionowym pasku przewijania**, a następnie wybierz Adnotacje, które chcesz zobaczyć. ( **Znaczniki** opcji obejmują punkty przerwania i zakładki).
 

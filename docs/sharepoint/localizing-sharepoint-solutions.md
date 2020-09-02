@@ -18,9 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0a7b04ab1f77eba15f2bc617f89514a8d0952674
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017139"
 ---
 # <a name="localize-sharepoint-solutions"></a>Lokalizowanie rozwiązań SharePoint
@@ -108,7 +109,7 @@ $Resources:String ID
 ### <a name="localize-code"></a>Lokalizowanie kodu
  Oprócz lokalizowania ciągów i znaczników funkcji należy [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] również lokalizować ciągi komunikatów i ciągi błędów, które pojawiają się w kodzie rozwiązania. Zlokalizowane informacje informacyjne i komunikaty o błędach są zawarte w zestawach satelickich. Zestawy satelickie zawierają ciągi, które są widoczne dla użytkowników, takie jak [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] komunikaty tekstowe i wyjściowe, takie jak wyjątki.
 
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]używa standardowego modelu .NET Framework Hub i szprych. Koncentrator lub zestaw programu głównego zawiera zasoby języka domyślnego. Szprychy lub zestawy satelickie zawierają zasoby specyficzne dla języka. Aby uzyskać więcej informacji, zobacz [pakowanie i wdrażanie zasobów](/previous-versions/dotnet/netframework-4.0/sb6a8618(v=vs.100)). Zestawy satelickie są kompilowane z plików zasobów (*. resx*). Po dodaniu plików zasobów specyficznych dla języka do projektu i pakietu rozwiązania program [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kompiluje pliki zasobów do zestawów satelickich o nazwie *{Project Name} .resources.dll*.
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] używa standardowego modelu .NET Framework Hub i szprych. Koncentrator lub zestaw programu głównego zawiera zasoby języka domyślnego. Szprychy lub zestawy satelickie zawierają zasoby specyficzne dla języka. Aby uzyskać więcej informacji, zobacz [pakowanie i wdrażanie zasobów](/previous-versions/dotnet/netframework-4.0/sb6a8618(v=vs.100)). Zestawy satelickie są kompilowane z plików zasobów (*. resx*). Po dodaniu plików zasobów specyficznych dla języka do projektu i pakietu rozwiązania program [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kompiluje pliki zasobów do zestawów satelickich o nazwie *{Project Name} .resources.dll*.
 
  Podobnie jak w przypadku znaczników ASPX, można zlokalizować kod aplikacji programu SharePoint, dodając oddzielne elementy projektu pliku zasobów do projektu; jeden dla języka domyślnego i jeden dla każdego zlokalizowanego języka. Jednak jak wspomniano wcześniej, jeśli masz już pliki zasobów do lokalizowania znaczników ASPX, można użyć ich ponownie w celu zlokalizowania kodu. Jeśli musisz utworzyć pliki zasobów, Nadaj plikowi zasobów języka domyślnego nazwę dołączoną z rozszerzeniem *resx* . Nazwij zlokalizowane pliki zasobów o tej samej nazwie dołączonej do kultury specyficznej dla języka [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] . Ustaw właściwość Akcja kompilacji każdego pliku zasobów na zasób osadzony, aby umożliwić tworzenie zestawów zasobów satelity.
 
@@ -127,7 +128,7 @@ HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
 
  W klasie pochodnej odwołuje się do identyfikatora ciągu z pliku zasobów i obiektu ResourceManager, aby uzyskać zlokalizowaną wartość identyfikatora ciągu. Zwróć tę wartość do atrybutu edytora właściwości.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Lokalizowanie funkcji](../sharepoint/how-to-localize-a-feature.md)
 - [Instrukcje: Lokalizowanie znacznika ASPX](../sharepoint/how-to-localize-aspx-markup.md)
 - [Instrukcje: lokalizowanie kodu](../sharepoint/how-to-localize-code.md)

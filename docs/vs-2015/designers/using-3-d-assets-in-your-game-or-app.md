@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f290c68933a71f40899ce454eb6ba788ef31a56f
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846501"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Korzystanie z obiektów 3-D w grach i aplikacjach
@@ -28,14 +28,14 @@ ms.locfileid: "75846501"
 
 W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do przetwarzania zasobów 3-D i uwzględniania ich w kompilacjach.
 
- Po użyciu narzędzi w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do tworzenia zasobów 3-D następnym krokiem jest użycie ich w aplikacji. Jednak zanim będzie można z nich korzystać, Twoje zasoby muszą zostać przekształcone w format, który może być zrozumiały dla technologii DirectX. Aby ułatwić transformację zasobów, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zapewnia dostosowania kompilacji dla każdego rodzaju elementu zawartości, który może utworzyć. Aby uwzględnić zasoby w kompilacji, wystarczy skonfigurować projekt do korzystania z dostosowań kompilacji, dodać zasoby do projektu i skonfigurować zasoby do korzystania z poprawnego dostosowania kompilacji. Następnie można załadować zasoby do aplikacji i użyć ich przez tworzenie i wypełnianie zasobów DirectX tak samo jak w przypadku dowolnej innej aplikacji DirectX.
+ Po użyciu narzędzi w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do tworzenia zasobów 3-D następnym krokiem jest użycie ich w aplikacji. Jednak zanim będzie można z nich korzystać, Twoje zasoby muszą zostać przekształcone w format, który może być zrozumiały dla technologii DirectX. Aby ułatwić transformację zasobów, program [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zapewnia dostosowania kompilacji dla każdego rodzaju elementu zawartości, który może utworzyć. Aby uwzględnić zasoby w kompilacji, wystarczy skonfigurować projekt do korzystania z dostosowań kompilacji, dodać zasoby do projektu i skonfigurować zasoby do korzystania z poprawnego dostosowania kompilacji. Następnie można załadować zasoby do aplikacji i użyć ich przez tworzenie i wypełnianie zasobów DirectX tak samo jak w przypadku dowolnej innej aplikacji DirectX.
 
 ## <a name="configuring-your-project"></a>Konfigurowanie projektu
- Przed wdrożeniem zasobów 3-D w ramach kompilacji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] należy wiedzieć o typach zasobów, które mają zostać wdrożone. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] już wie o wielu wspólnych typach plików, ale ponieważ tylko niektóre typy aplikacji używają zasobów 3-D, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie zakłada, że projekt będzie kompilować te rodzaje plików. Możesz powiedzieć, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], że aplikacja używa tych rodzajów zasobów przy użyciu *dostosowań kompilacji*— pliki, które informują [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o sposobie przetwarzania różnych typów plików w sposób przydatny, które są dostępne dla każdego typu zasobu. Ponieważ te dostosowania są stosowane do poszczególnych projektów, wystarczy dodać odpowiednie dostosowania do projektu.
+ Przed wdrożeniem zasobów 3-D w ramach kompilacji należy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wiedzieć o typach zasobów, które mają zostać wdrożone. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] już wie o wielu wspólnych typach plików, ale ponieważ tylko niektóre typy aplikacji używają zasobów 3-D, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie zakłada się, że projekt będzie kompilować te rodzaje plików. Możesz sprawdzić [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , czy aplikacja używa tych rodzajów zasobów przy użyciu *dostosowań kompilacji*— plików, które poinformują o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sposobie przetwarzania różnych typów plików w sposób przydatny, które są dostępne dla każdego typu zasobu. Ponieważ te dostosowania są stosowane do poszczególnych projektów, wystarczy dodać odpowiednie dostosowania do projektu.
 
 #### <a name="to-add-the-build-customizations-to-your-project"></a>Aby dodać dostosowania kompilacji do projektu
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz pozycję **zależności kompilacji**i **Utwórz dostosowania**. Zostanie wyświetlone okno dialogowe **pliki dostosowania kompilacji wizualizacji C++**  .
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz pozycję **zależności kompilacji**i **Utwórz dostosowania**. Zostanie wyświetlone okno dialogowe **pliki dostosowania kompilacji Visual C++** .
 
 2. W obszarze **dostępne pliki dostosowania kompilacji**zaznacz pola wyboru odpowiadające typom zasobów, które mają być używane w projekcie, zgodnie z opisem w tej tabeli:
 
@@ -45,7 +45,7 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
     |Modele 3-D|**MeshContentTask (. targets,. props)**|
     |Programy do cieniowania|**ShaderGraphContentTask (. targets,. props)**|
 
-3. Wybierz **OK** przycisku.
+3. Wybierz przycisk **OK** .
 
 ## <a name="including-assets-in-your-build"></a>Uwzględnianie zasobów w kompilacji
  Teraz, gdy Twój projekt wie o różnych typach zasobów 3-D, których chcesz użyć, następnym krokiem jest poinformowanie o tym, które pliki są zasobami 3-D i jakie są ich zasoby.
@@ -59,9 +59,9 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
 3. W obszarze **Właściwości konfiguracji**wybierz opcję **Ogólne**, a następnie w siatce właściwości w obszarze **Ogólne**ustaw właściwość **Typ elementu** na odpowiedni typ elementu potoku zawartości. Na przykład dla pliku obrazu lub tekstury wybierz pozycję **potok zawartości obrazu**.
 
    > [!IMPORTANT]
-   > Domyślnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zakłada, że wiele rodzajów plików obrazów należy klasyfikować przy użyciu typu elementu **obrazu** wbudowanego w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. W związku z tym należy zmienić właściwość **typu elementu** dla każdego obrazu, który ma być przetwarzany przez potok zawartości obrazu. Inne typy plików źródłowych potoku zawartości dla modeli trójwymiarowych i grafiki programu Visual Shader są domyślne dla poprawnego **typu elementu**.
+   > Domyślnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zakłada się, że wiele rodzajów plików obrazów należy klasyfikować przy użyciu typu elementu **obrazu** wbudowanego w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . W związku z tym należy zmienić właściwość **typu elementu** dla każdego obrazu, który ma być przetwarzany przez potok zawartości obrazu. Inne typy plików źródłowych potoku zawartości dla modeli trójwymiarowych i grafiki programu Visual Shader są domyślne dla poprawnego **typu elementu**.
 
-4. Wybierz **OK** przycisku.
+4. Wybierz przycisk **OK** .
 
    Oto trzy typy elementów potoku zawartości i skojarzone z nimi typy plików źródłowych i wyjściowych.
 
@@ -82,14 +82,14 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
 
 3. W obszarze **Właściwości konfiguracji**wybierz węzeł potoku zawartości — na przykład **potok zawartości obrazu** dla tekstury i zasobów obrazu — a następnie w siatce właściwości ustaw odpowiednie wartości właściwości. Na przykład, aby wygenerować mipmapy dla elementu zawartości tekstury w czasie kompilacji, należy ustawić właściwość **Generuj MIPS** na **wartość tak**.
 
-4. Wybierz **OK** przycisku.
+4. Wybierz przycisk **OK** .
 
 ### <a name="image-content-pipeline-configuration"></a>Konfiguracja potoku zawartości obrazu
  Korzystając z narzędzia potoku zawartości obrazów do tworzenia zasobów tekstury, można skompresować teksturę na różne sposoby, wskazać, czy poziomy MIP mają być generowane w czasie kompilacji, i zmienić nazwę pliku wyjściowego.
 
 |Właściwość|Opis|
 |--------------|-----------------|
-|**Kompresuj**|Określa typ kompresji, który jest używany dla pliku wyjściowego.<br /><br /> Dostępne opcje:<br /><br /> -   **bez kompresji**<br />-   **BC1_UNORM kompresji**<br />-   **BC1_UNORM_SRGB kompresji**<br />-   **BC2_UNORM kompresji**<br />-   **BC2_UNORM_SRGB kompresji**<br />-   **BC3_UNORM kompresji**<br />-   **BC3_UNORM_SRGB kompresji**<br />-   **BC4_UNORM kompresji**<br />-   **BC4_SNORM kompresji**<br />-   **BC5_UNORM kompresji**<br />-   **BC5_SNORM kompresji**<br />-   **BC6H_UF16 kompresji**<br />-   **BC6H_SF16 kompresji**<br />-   **BC7_UNORM kompresji**<br />-   **BC7_UNORM_SRGB kompresji**<br /><br /> Aby uzyskać informacje o tym, które formaty kompresji są obsługiwane w różnych wersjach programu DirectX, zobacz [Przewodnik programowania dla infrastruktury dxgi](https://msdn.microsoft.com/library/windows/desktop/bb219822(v=vs.85).aspx).|
+|**Kompresuj**|Określa typ kompresji, który jest używany dla pliku wyjściowego.<br /><br /> Dostępne są następujące opcje:<br /><br /> -   **Brak kompresji**<br />-   **Kompresja BC1_UNORM**<br />-   **Kompresja BC1_UNORM_SRGB**<br />-   **Kompresja BC2_UNORM**<br />-   **Kompresja BC2_UNORM_SRGB**<br />-   **Kompresja BC3_UNORM**<br />-   **Kompresja BC3_UNORM_SRGB**<br />-   **Kompresja BC4_UNORM**<br />-   **Kompresja BC4_SNORM**<br />-   **Kompresja BC5_UNORM**<br />-   **Kompresja BC5_SNORM**<br />-   **Kompresja BC6H_UF16**<br />-   **Kompresja BC6H_SF16**<br />-   **Kompresja BC7_UNORM**<br />-   **Kompresja BC7_UNORM_SRGB**<br /><br /> Aby uzyskać informacje o tym, które formaty kompresji są obsługiwane w różnych wersjach programu DirectX, zobacz [Przewodnik programowania dla infrastruktury dxgi](https://msdn.microsoft.com/library/windows/desktop/bb219822(v=vs.85).aspx).|
 |Konwertuj na wstępnie przemnożony format alfa|**Tak** , aby przekonwertować obraz na wstępnie przemnożony format alfa w pliku wyjściowym; w przeciwnym razie **nie**. Tylko plik wyjściowy zostanie zmieniony, obraz źródłowy nie zmieni się.|
 |**Generuj MIPS**|**Wartość tak** powoduje wygenerowanie pełnego łańcucha MIP w czasie kompilacji i uwzględnienie go w pliku wyjściowym; w przeciwnym razie **nie**. Jeśli **nie**, a plik źródłowy zawiera już łańcuch mipmappingu, plik wyjściowy będzie miał łańcuch MCI; w przeciwnym razie plik wyjściowy nie będzie miał łańcucha MIP.|
 |**Dane wyjściowe zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego nie ma wpływu na jego format pliku.|
@@ -198,12 +198,12 @@ cbuffer MiscVars : register(b3)
 };
 ```
 
-## <a name="related-topics"></a>Tematy pokrewne
+## <a name="related-topics"></a>Powiązane tematy
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Instrukcje: eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Opisuje sposób użycia potoku zawartości obrazu do wyeksportowania tekstury zawierającej wstępnie obliczony mipmapy.|
-|[Instrukcje: eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Opisuje sposób użycia potoku zawartości obrazu do wyeksportowania tekstury zawierającej wstępnie przemnożone wartości alfa.|
-|[Instrukcje: eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Opisuje sposób użycia potoku zawartości obrazu do wyeksportowania tekstury, która może być używana w aplikacji Direct2D lub JavaScript.|
+|[Porady: eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Opisuje sposób użycia potoku zawartości obrazu do wyeksportowania tekstury zawierającej wstępnie obliczony mipmapy.|
+|[Instrukcje: eksportowanie tekstury z wstępnie przemnożoną alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Opisuje sposób użycia potoku zawartości obrazu do wyeksportowania tekstury zawierającej wstępnie przemnożone wartości alfa.|
+|[Instrukcje: eksportowanie tekstury do użycia z aplikacjami Direct2D lub aplikacjami JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Opisuje sposób użycia potoku zawartości obrazu do wyeksportowania tekstury, która może być używana w aplikacji Direct2D lub JavaScript.|
 |[Praca z obiektami 3-D do gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Opisuje narzędzia do edycji, które program Visual Studio oferuje do tworzenia i manipulowania zasobami 3-D, które obejmują tekstury i obrazy, modele trójwymiarowe i programy do cieniowania.|
-|[Instrukcje: eksport cieniowania](../designers/how-to-export-a-shader.md)|Opisuje sposób eksportowania programu do cieniowania z projektanta cieniowania.|
+|[Instrukcje: Eksportowanie cieniowania](../designers/how-to-export-a-shader.md)|Opisuje sposób eksportowania programu do cieniowania z projektanta cieniowania.|

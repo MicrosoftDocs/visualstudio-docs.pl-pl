@@ -10,10 +10,10 @@ ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
 ms.openlocfilehash: a651aaa74465f053aa0ae7eee0f3caba3f288192
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238910"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Odwołanie do wartości koloru dla programu Visual Studio
@@ -337,7 +337,7 @@ W przypadku korzystania z tego przewodnika referencyjnego należy pamiętać o:
 > [!NOTE]
 > **Próbki duży kontrast są wyświetlane tylko w celu porównania.** Użyj nazwy koloru systemu dla duży kontrast interfejsu użytkownika i nie używaj kroplomierza lub selektora kolorów na tych próbkach. Próbki duży kontrast w tym temacie odzwierciedlają motyw duży kontrast #1 w systemie Windows. Kolory będą wyglądać inaczej w innych duży kontrast motywach.
 
-### <a name="default"></a>Domyślny
+### <a name="default"></a>Domyślne
 
 | | Motyw jasny | Motyw ciemny | Motyw niebieski | duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
@@ -387,7 +387,7 @@ W przypadku korzystania z tego przewodnika referencyjnego należy pamiętać o:
 > [!NOTE]
 > **Próbki duży kontrast są wyświetlane tylko w celu porównania.** Użyj nazwy koloru systemu dla duży kontrast interfejsu użytkownika i nie używaj kroplomierza lub selektora kolorów na tych próbkach. Próbki duży kontrast w tym temacie odzwierciedlają motyw duży kontrast #1 w systemie Windows. Kolory będą wyglądać inaczej w innych duży kontrast motywach.
 
-### <a name="default"></a>Domyślny
+### <a name="default"></a>Domyślne
 
 | | Motyw jasny | Motyw ciemny | Motyw niebieski | duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
@@ -444,7 +444,7 @@ W przypadku korzystania z tego przewodnika referencyjnego należy pamiętać o:
 
 ### <a name="initial-appearance"></a>Wygląd początkowy
 
-#### <a name="default"></a>Domyślny
+#### <a name="default"></a>Domyślne
 
 | | Motyw jasny | Motyw ciemny | Motyw niebieski | duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
@@ -509,7 +509,7 @@ W przypadku korzystania z tego przewodnika referencyjnego należy pamiętać o:
 | :---: | :---: | :---: | :---: |
 | ![Domyślny wygląd listy rozwijanej/pola kombi w motywie jasnym](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.list.png "Domyślny wygląd listy rozwijanej/pola kombi w motywie jasnym") | ![Domyślny wygląd listy rozwijanej/pola kombi w motywie ciemnym](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.list.dark.png "Domyślny wygląd listy rozwijanej/pola kombi w motywie ciemnym") | ![Domyślny wygląd listy rozwijanej/pola kombi w motywie niebieskim](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.list.blue.png "Domyślny wygląd listy rozwijanej/pola kombi w motywie niebieskim") | ![Domyślny wygląd listy rozwijanej/pola kombi w motywie duży kontrast](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.list.hc.png "Domyślny wygląd listy rozwijanej/pola kombi w motywie duży kontrast") |
 
-#### <a name="default"></a>Domyślny
+#### <a name="default"></a>Domyślne
 
 | | Motyw jasny | Motyw ciemny | Motyw niebieski | duży kontrast |
 | --- | :---: | :---: | :---: | :---: |

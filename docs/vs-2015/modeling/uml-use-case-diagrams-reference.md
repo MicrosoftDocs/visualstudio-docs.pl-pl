@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cbea61c2a26b1dc81487365ef8fc3f320ac95943
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657303"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>Diagramy przypadków użycia UML: Odwołanie
@@ -44,12 +44,12 @@ W programie Visual Studio *Diagram przypadków użycia* podsumowuje, kto używa 
 ### <a name="actors-use-cases-and-subsystems"></a>Aktory, przypadki użycia i podsystemy
  ![Elementy na diagramie przypadków użycia](../modeling/media/uml-ucovactor.png "UML_UCOvActor")
 
-|**Przekształca**|**Element**|**Opis i główne właściwości**|
+|**Kształt**|**Element**|**Opis i główne właściwości**|
 |---------------|-----------------|-----------------------------------------|
-|1|**Zewnętrzny**|Reprezentuje użytkownika, organizację lub system zewnętrzny, który współdziała z aplikacją lub systemem. Aktor jest rodzajem typu.<br /><br /> **ścieżka obrazu** -   -ścieżka pliku obrazu, który powinien zostać użyty zamiast domyślnej ikony aktora. Ikona powinna być plikiem zasobów w projekcie programu Visual Studio.|
-|2|**Przypadek użycia**|Reprezentuje akcje wykonywane przez co najmniej jedną aktora w celu osiągnięcia określonego celu. Przypadek użycia jest rodzajem typu.<br /><br /> **tematy** -    — podsystem, w którym występuje przypadek użycia.|
+|1|**Aktor**|Reprezentuje użytkownika, organizację lub system zewnętrzny, który współdziała z aplikacją lub systemem. Aktor jest rodzajem typu.<br /><br /> -   **Ścieżka obrazu** — ścieżka do pliku obrazu, który ma zostać użyty zamiast domyślnej ikony aktora. Ikona powinna być plikiem zasobów w projekcie programu Visual Studio.|
+|2|**Przypadek użycia**|Reprezentuje akcje wykonywane przez co najmniej jedną aktora w celu osiągnięcia określonego celu. Przypadek użycia jest rodzajem typu.<br /><br /> -   **Tematy** — podsystem, w którym występuje przypadek użycia.|
 |3|**Skojarzenie**|Wskazuje, że aktor uczestniczy w przypadku użycia.|
-|4|**Podsystem lub składnik**|System lub aplikacja, nad którą pracujesz, lub jej część. Mogą to być elementy z dużej sieci do pojedynczej klasy w aplikacji.<br /><br /> Przypadki użycia, które system lub składnik obsługuje w obrębie swojego prostokąta. Może być przydatne, aby pokazać niektóre przypadki użycia poza prostokątem, aby wyjaśnić zakres Twojego systemu.<br /><br /> Podsystem w diagramie przypadku użycia ma zasadniczo ten sam typ co składnik na diagramie składników.<br /><br /> -   **jest pośrednio skonkretyzowany** — w przypadku wartości false, wykonywany system ma jeden lub więcej obiektów, które bezpośrednio odpowiadają temu podsystemowi. W przypadku wartości true podsystem jest konstrukcja w projekcie, która jest wyświetlana w systemie wykonywanym tylko przez utworzenie wystąpienia jego części składowych.|
+|4|**Podsystem lub składnik**|System lub aplikacja, nad którą pracujesz, lub jej część. Mogą to być elementy z dużej sieci do pojedynczej klasy w aplikacji.<br /><br /> Przypadki użycia, które system lub składnik obsługuje w obrębie swojego prostokąta. Może być przydatne, aby pokazać niektóre przypadki użycia poza prostokątem, aby wyjaśnić zakres Twojego systemu.<br /><br /> Podsystem w diagramie przypadku użycia ma zasadniczo ten sam typ co składnik na diagramie składników.<br /><br /> -   **Jest pośrednio skonkretyzowany** — w przypadku wartości false, wykonywany system ma jeden lub więcej obiektów, które są bezpośrednio odnoszące się do tego podsystemu. W przypadku wartości true podsystem jest konstrukcja w projekcie, która jest wyświetlana w systemie wykonywanym tylko przez utworzenie wystąpienia jego części składowych.|
 
 ### <a name="structuring-use-cases"></a>Tworzenie struktury przypadków użycia
  ![Przypadki użycia z opcją include, rozszerzając i generalize](../modeling/media/uml-ucovstructure.png "UML_UCOvStructure")
@@ -57,11 +57,11 @@ W programie Visual Studio *Diagram przypadków użycia* podsumowuje, kto używa 
 |Kształt|**Element**|Opis|
 |-----------|-----------------|-----------------|
 |5|**Być**|W tym wywołania przypadku użycia lub wywołuje dołączone. Dołączenie służy do pokazania, jak przypadek użycia jest podzielony na mniejsze kroki. Uwzględniony przypadek użycia znajduje się na końcu grotu strzałki.<br /><br /> Należy zauważyć, że diagram nie pokazuje kolejności kroków. Aby opisać te szczegóły, można użyć diagramu aktywności, diagramu sekwencji lub innego dokumentu.|
-|6|**Sunąć**|Rozszerzenie przypadku użycia dodaje cele i kroki do rozszerzonego przypadku użycia. Rozszerzenia działają tylko w określonych warunkach. Rozszerzony przypadek użycia znajduje się na końcu strzałki.<br /><br /> Należy zauważyć, że na diagramie nie są widoczne dokładne sytuacje, w których ma zastosowanie rozszerzenie: można je zarejestrować w komentarzu lub w innym dokumencie.|
+|6|**Rozwijanie**|Rozszerzenie przypadku użycia dodaje cele i kroki do rozszerzonego przypadku użycia. Rozszerzenia działają tylko w określonych warunkach. Rozszerzony przypadek użycia znajduje się na końcu strzałki.<br /><br /> Należy zauważyć, że na diagramie nie są widoczne dokładne sytuacje, w których ma zastosowanie rozszerzenie: można je zarejestrować w komentarzu lub w innym dokumencie.|
 |7|**Dziedziczenie**|Odnosi się do wyspecjalizowanego i uogólnionego elementu. Uogólniony element znajduje się na końcu strzałki.<br /><br /> Wyspecjalizowany przypadek użycia dziedziczy cele i uczestników jego generalizacji oraz może dodać bardziej szczegółowe cele i kroki w celu ich osiągnięcia.<br /><br /> Wyspecjalizowany aktor dziedziczy przypadki użycia, atrybuty i skojarzenia jego generalizacji i może dodać więcej.|
-|8|**Zależności**|Wskazuje, że projekt źródła zależy od projektu obiektu docelowego.|
+|8|**Zależność**|Wskazuje, że projekt źródła zależy od projektu obiektu docelowego.|
 |9|**Komentarz**|Służy do dodawania notatek ogólnych do diagramu.|
-|10|**Artefaktu**|Artefakt zawiera link do innego diagramu lub dokumentu. Można go utworzyć, przeciągając plik z Eksplorator rozwiązań. Może być połączony z zależnością do dowolnego innego elementu na diagramie. Artefakt jest zazwyczaj używany do łączenia przypadku użycia z diagramem sekwencji, stroną programu OneNote, dokumentem programu Word lub prezentacją programu PowerPoint, która szczegółowo opisuje. Dokument może być elementem w rozwiązaniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lub dokumentem w lokalizacji udostępnionej, takiej jak witryna programu SharePoint.<br /><br /> -   **Hyperlink**. Adres URL lub ścieżka pliku diagramu lub dokumentu.<br /><br /> Kliknij dwukrotnie artefakt, aby otworzyć plik lub stronę sieci Web, do której się łączą.|
+|10|**Artefakt**|Artefakt zawiera link do innego diagramu lub dokumentu. Można go utworzyć, przeciągając plik z Eksplorator rozwiązań. Może być połączony z zależnością do dowolnego innego elementu na diagramie. Artefakt jest zazwyczaj używany do łączenia przypadku użycia z diagramem sekwencji, stroną programu OneNote, dokumentem programu Word lub prezentacją programu PowerPoint, która szczegółowo opisuje. Dokument może być elementem w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązaniu lub dokumentem w lokalizacji udostępnionej, takiej jak witryna programu SharePoint.<br /><br /> -   **Hiperlink**. Adres URL lub ścieżka pliku diagramu lub dokumentu.<br /><br /> Kliknij dwukrotnie artefakt, aby otworzyć plik lub stronę sieci Web, do której się łączą.|
 |11 (niepokazywany)|**Pakiety**|Przypadki użycia, aktory i podsystemy mogą być zawarte w pakietach. Kształty pakietów nie są wyświetlane na diagramie, ale można ustawić właściwość **LinkedPackage** diagramu. Elementy, które następnie tworzysz na diagramie, są umieszczane w pakiecie. Aby uzyskać więcej informacji, zobacz [Definiowanie pakietów i przestrzeni nazw](../modeling/define-packages-and-namespaces.md).|
 
 ## <a name="see-also"></a>Zobacz też

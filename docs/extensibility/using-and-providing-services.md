@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z usług i świadczenie usług | Dokumenty firmy Microsoft
+title: Używanie i świadczenie usług | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,35 +13,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8741d8d66af96ad4c6abea44b238393a34c5aa95
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698742"
 ---
 # <a name="using-and-providing-services"></a>Korzystanie z usług i dostarczanie ich
-Usługa jest umową między dwoma vspackages. Jeden VSPackage oferuje określony zestaw interfejsów dla innego VSPackage do wykorzystania. Na przykład [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oferuje <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> usługę do dowolnego VSPackage ładuje. Ta usługa <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> udostępnia interfejs, który może służyć do zapisu w dzienniku aktywności. Aby uzyskać więcej informacji, zobacz [Jak: Korzystanie z dziennika aktywności](../extensibility/how-to-use-the-activity-log.md).
+Usługa jest umową między dwoma pakietów VSPackage. Jeden pakietu VSPackage oferuje określony zestaw interfejsów dla innego pakietu VSPackage do użycia. Program udostępnia na przykład [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> usługę pakietu VSPackage. Ta usługa udostępnia <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfejs, który może być używany do zapisywania w dzienniku aktywności. Aby uzyskać więcej informacji, zobacz [How to: Use the Activity Log](../extensibility/how-to-use-the-activity-log.md).
 
- Pakiety VSPackages można oferować własne <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> usługi przy użyciu interfejsu..
+ Pakietów VSPackage mogą oferować własne usługi przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interfejsu.
 
- Visual Studio oferuje ważne usługi, takie jak następujące:
+ Program Visual Studio oferuje ważne usługi, takie jak następujące:
 
 |Usługa IDE|Opis|
 |-----------------|-----------------|
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|Zapewnia dostęp do usług IDE zajmujących się podstawowymi funkcjami, pakietami VSPackage i rejestrem.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Zapewnia podstawowe okna i funkcje związane z interfejsem użytkownika w IDE, takie jak możliwość tworzenia narzędzi i okien dokumentów.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Zapewnia podstawowe funkcje związane z rozwiązaniami, takie jak możliwość wyliczanie projektów, tworzenie nowych projektów i monitorowanie zmian projektu.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|Zapewnia dostęp do usług IDE związanych z podstawowymi funkcjami, pakietów VSPackage i rejestrem.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Zapewnia podstawowe funkcje związane z oknami i interfejsem użytkownika w IDE, takie jak możliwość tworzenia narzędzi i okien dokumentów.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Zawiera podstawowe funkcje związane z rozwiązaniami, takie jak możliwość wyliczania projektów, tworzenia nowych projektów i monitorowania zmian w projekcie.|
 
 ## <a name="in-this-section"></a>W tej sekcji
-- [Podstawowe usługi](../extensibility/internals/service-essentials.md) Przedstawia ważne elementy usługi Visual Studio.
+- [Podstawowa usługa](../extensibility/internals/service-essentials.md) Przedstawia ważne elementy usługi Visual Studio.
 
-- [Jak: Uzyskaj usługę](../extensibility/how-to-get-a-service.md) W tym artykule omówiono sposób żądania (zużywają) usługi.
+- [Instrukcje: Uzyskiwanie usługi](../extensibility/how-to-get-a-service.md) W tym artykule omówiono sposób żądania (użytkowania) usługi.
 
-- [Jak: Świadczenie usług](../extensibility/how-to-provide-a-service.md) W tym artykule omówiono sposób świadczenia usługi.
+- [Instrukcje: dostarczanie usługi](../extensibility/how-to-provide-a-service.md) W tym artykule omówiono sposób świadczenia usługi.
 
-- [Jak: Zapewnienie usługi Asynchronous Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md) W tym artykule omówiono sposób świadczenia usługi asynchroniiowej.
+- [Instrukcje: dostarczanie asynchronicznej usługi programu Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md) W tym artykule omówiono sposób dostarczania usługi asynchronicznej.
 
-- [Jak: Rozwiązywanie problemów z usługami](../extensibility/how-to-troubleshoot-services.md) Omawia typowe problemy i przedstawia rozwiązania dla nich.
+- [Instrukcje: Rozwiązywanie problemów z usługami](../extensibility/how-to-troubleshoot-services.md) Omawia typowe problemy i prezentuje do nich rozwiązania.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

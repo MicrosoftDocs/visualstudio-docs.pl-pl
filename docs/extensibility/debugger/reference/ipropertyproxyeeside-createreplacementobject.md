@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::CreateReplacementObject | Dokumenty firmy Microsoft
+title: 'IPropertyProxyEESide:: replacementobject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f449a505c56c180f1bab021007f1b635a2461996
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715037"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
-Tworzy kopię obiektu danych specyficznego dla oceniającego wyrażenie (EE).
+Tworzy kopię obiektu danych specyficzną dla ewaluatora wyrażeń (EE).
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,18 +43,18 @@ int CreateReplacementObject(
 
 ## <a name="parameters"></a>Parametry
 `dataIn`\
-[w] [Obiekt IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) przechowujący dane do skopiowania.
+podczas Obiekt [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) przechowujący dane, które mają zostać skopiowane.
 
 `dataOut`\
-[na zewnątrz] Zwraca nowy `IEEDataStorage` obiekt.
+określoną Zwraca nowy `IEEDataStorage` obiekt.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest podana [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) obiektu reprezentującego tablicę bajtów. Ten obiekt danych przychodzących zazwyczaj nie jest implementowany przez EE. Jednak obiekt zwracany przez tę metodę jest zawsze implementowany przez EE, który umożliwia EE implementowania `IEEDataStorage` interfejsu na cokolwiek klasy jest pożądane.
+ W tej metodzie jest przyznany obiekt [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) reprezentujący tablicę bajtów. Ten obiekt danych przychodzących zazwyczaj nie jest implementowany przez EE. Jednak obiekt zwrócony przez tę metodę jest zawsze zaimplementowany przez EE, co umożliwia implementację `IEEDataStorage` interfejsu na dowolnej klasie.
 
- Należy zauważyć, że dane `IEEDataStorage` dostarczane przez obiekt przychodzący `IEEDataStorage` muszą być takie same dane w obiekcie wychodzącym.
+ Należy pamiętać, że dane dostarczane przez obiekt przychodzący `IEEDataStorage` muszą być tymi samymi danymi w obiekcie wychodzącym `IEEDataStorage` .
 
 ## <a name="see-also"></a>Zobacz też
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

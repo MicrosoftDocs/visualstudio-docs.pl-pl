@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Ponowne podpisywanie aplikacji i manifestów wdrożenia | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: ponowne podpisywanie aplikacji i manifestów wdrożenia | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,35 +20,35 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5956ad23fe22c7c36b712fac61df268586142df
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697561"
 ---
-# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Instrukcje: Ponowne podpisywanie manifestów wdrożenia i aplikacji
+# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Porady: ponowne podpisywanie aplikacji i manifestów wdrożenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Po wprowadzeniu zmian do właściwości wdrożenia w manifeście aplikacji dla aplikacji Windows Forms, aplikacji Windows Presentation Foundation (xbap) lub rozwiązań pakietu Office, musisz ją ponownie podpisać zarówno aplikację i manifesty wdrożenia za pomocą certyfikat. Ten proces pozwala upewnić się, że zmodyfikowany pliki nie są zainstalowane na komputerach użytkowników końcowych.  
+Po wprowadzeniu zmian we właściwościach wdrożenia w manifeście aplikacji dla aplikacji Windows Forms, aplikacji Windows Presentation Foundation (XBAP) lub rozwiązań pakietu Office należy jeszcze raz podpisać aplikacje i manifesty wdrożenia przy użyciu certyfikatu. Ten proces zapewnia, że naruszone pliki nie są zainstalowane na komputerach użytkowników końcowych.  
   
- Inny scenariusz, w którym może ponownie podpisać manifesty jest, gdy Twoi klienci wymagają podpisać aplikację i manifesty wdrożenia za pomocą ich własnych certyfikatów.  
+ Innym scenariuszem, w którym można podpisywać manifesty, jest to, że klienci chcą podpisać aplikacje i manifesty wdrożenia przy użyciu własnego certyfikatu.  
   
-## <a name="re-signing-the-application-and-deployment-manifests"></a>Ponowne podpisywanie aplikacji i wdrażania manifestów  
- W tej procedurze założono, że zostały już wprowadzone zmiany do pliku manifestu aplikacji (manifest). Aby uzyskać więcej informacji, zobacz [jak: Zmień właściwości wdrożenia](https://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472).  
+## <a name="re-signing-the-application-and-deployment-manifests"></a>Ponowne podpisywanie aplikacji i manifestów wdrożenia  
+ W tej procedurze przyjęto założenie, że wprowadzono już zmiany w pliku manifestu aplikacji (manifest). Aby uzyskać więcej informacji, zobacz [How to: Change Deployment Properties](https://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472).  
   
-#### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Ponowne podpisywanie aplikacji i wdrażania manifestów za pomocą Mage.exe  
+#### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Aby ponowne podpisać aplikacje i manifesty wdrożenia za pomocą Mage.exe  
   
-1. Otwórz **Visual Studio Command Prompt** okna.  
+1. Otwórz okno **wiersza polecenia programu Visual Studio** .  
   
-2. Zmień katalogi na folder, który zawiera pliki manifestu, które chcesz się zalogować.  
+2. Zmień katalogi na folder zawierający pliki manifestu, które chcesz podpisać.  
   
-3. Wpisz następujące polecenie, aby utworzyć plik manifestu aplikacji. Zamień ManifestFileName nazwę pliku manifestu, plus rozszerzenie. Zamień certyfikatu względną lub w pełni kwalifikowana ścieżka do pliku certyfikatu, a następnie zastąp hasło hasło dla certyfikatu.  
+3. Wpisz następujące polecenie, aby podpisać plik manifestu aplikacji. Zastąp ManifestFileName nazwą pliku manifestu oraz rozszerzeniem. Zastąp certyfikat ścieżką względną lub w pełni kwalifikowaną nazwą pliku certyfikatu i Zastąp hasło hasłem dla certyfikatu.  
   
     ```  
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password  
     ```  
   
-     Na przykład można uruchomić następujące polecenie, aby podpisać manifest aplikacji dla dodatku, aplikacja formularza Windows lub aplikacji Windows Presentation Foundation przeglądarki. Certyfikaty tymczasowe, utworzone przez program Visual Studio nie są zalecane dla wdrożenia w środowisku produkcyjnym.  
+     Na przykład można uruchomić następujące polecenie, aby podpisać manifest aplikacji dla dodatku, aplikacji formularzy systemu Windows lub aplikacji w Windows Presentation Foundation Browser. Nie zaleca się wdrażania certyfikatów tymczasowych utworzonych przez program Visual Studio w środowiskach produkcyjnych.  
   
     ```  
     mage -sign WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
@@ -56,13 +56,13 @@ Po wprowadzeniu zmian do właściwości wdrożenia w manifeście aplikacji dla a
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-4. Wpisz następujące polecenie, aby zaktualizować i podpisać plik manifestu wdrażania, zastępując nazw zastępczych, jak w poprzednim kroku.  
+4. Wpisz następujące polecenie, aby zaktualizować i podpisać plik manifestu wdrożenia, zastępując nazwy symboli zastępczych jak w poprzednim kroku.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
     ```  
   
-     Na przykład można uruchomić następujące polecenie, aby zaktualizować i podpisać manifest wdrożenia dla dodatku programu Excel, aplikacji programu Windows Forms lub aplikacja przeglądarki Windows Presentation Foundation.  
+     Można na przykład uruchomić następujące polecenie, aby zaktualizować i podpisać manifest wdrożenia dla dodatku programu Excel, aplikacji Windows Forms lub aplikacji przeglądarki Windows Presentation Foundation.  
   
     ```  
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
@@ -70,26 +70,26 @@ Po wprowadzeniu zmian do właściwości wdrożenia w manifeście aplikacji dla a
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5. Opcjonalnie, skopiuj manifest wdrażania wzorca (publikowanie\\*appname*.application) do katalogu wdrażania wersji (pliki publish\Application\\*appname*_ *wersji*).  
+5. Opcjonalnie Skopiuj manifest wdrożenia głównego (Opublikuj \\ *nazwa_aplikacji*. Application) do katalogu wdrożenia wersji (publish\Application Files \\ *nazwa_aplikacji*_*wersja*).  
   
 ## <a name="updating-and-re-signing-the-application-and-deployment-manifests"></a>Aktualizowanie i ponowne podpisywanie aplikacji i manifestów wdrożenia  
- Ta procedura zakłada, że już wprowadzono zmiany do aplikacji (manifest) plik manifestu, ale czy istnieją inne pliki, które zostały zaktualizowane. Podczas aktualizacji plików skrótu, który reprezentuje plik również musi zostać zaktualizowany.  
+ W tej procedurze przyjęto założenie, że wprowadzono już zmiany w pliku manifestu aplikacji (manifest), ale istnieją inne pliki, które zostały zaktualizowane. Gdy pliki są aktualizowane, skrót reprezentujący plik musi również zostać zaktualizowany.  
   
-#### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Aktualizowanie i ponowne podpisywanie aplikacji i wdrażania manifestów za pomocą Mage.exe  
+#### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Aby zaktualizować i podpisać aplikacje i manifesty wdrożenia za pomocą Mage.exe  
   
-1. Otwórz **Visual Studio Command Prompt** okna.  
+1. Otwórz okno **wiersza polecenia programu Visual Studio** .  
   
-2. Zmień katalogi na folder, który zawiera pliki manifestu, które chcesz się zalogować.  
+2. Zmień katalogi na folder zawierający pliki manifestu, które chcesz podpisać.  
   
-3. Usuń rozszerzenie pliku .deploy z plików w folderze Publikuj dane wyjściowe.  
+3. Usuń rozszerzenie. deploy pliku z plików w folderze danych wyjściowych publikowania.  
   
-4. Wpisz następujące polecenie, aby zaktualizować manifest aplikacji przy użyciu nowych skrótów do zaktualizowanych plików i podpisać plik manifestu aplikacji. Zamień ManifestFileName nazwę pliku manifestu, plus rozszerzenie. Zamień certyfikatu względną lub w pełni kwalifikowana ścieżka do pliku certyfikatu, a następnie zastąp hasło hasło dla certyfikatu.  
+4. Wpisz następujące polecenie, aby zaktualizować manifest aplikacji przy użyciu nowych skrótów dla zaktualizowanych plików, a następnie podpisz plik manifestu aplikacji. Zastąp ManifestFileName nazwą pliku manifestu oraz rozszerzeniem. Zastąp certyfikat ścieżką względną lub w pełni kwalifikowaną nazwą pliku certyfikatu i Zastąp hasło hasłem dla certyfikatu.  
   
     ```  
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password  
     ```  
   
-     Na przykład można uruchomić następujące polecenie, aby podpisać manifest aplikacji dla dodatku, aplikacja formularza Windows lub aplikacji Windows Presentation Foundation przeglądarki. Certyfikaty tymczasowe, utworzone przez program Visual Studio nie są zalecane dla wdrożenia w środowisku produkcyjnym.  
+     Na przykład można uruchomić następujące polecenie, aby podpisać manifest aplikacji dla dodatku, aplikacji formularzy systemu Windows lub aplikacji w Windows Presentation Foundation Browser. Nie zaleca się wdrażania certyfikatów tymczasowych utworzonych przez program Visual Studio w środowiskach produkcyjnych.  
   
     ```  
     mage -update WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
@@ -97,13 +97,13 @@ Po wprowadzeniu zmian do właściwości wdrożenia w manifeście aplikacji dla a
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5. Wpisz następujące polecenie, aby zaktualizować i podpisać plik manifestu wdrażania, zastępując nazw zastępczych, jak w poprzednim kroku.  
+5. Wpisz następujące polecenie, aby zaktualizować i podpisać plik manifestu wdrożenia, zastępując nazwy symboli zastępczych jak w poprzednim kroku.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
     ```  
   
-     Na przykład można uruchomić następujące polecenie, aby zaktualizować i podpisać manifest wdrożenia dla dodatku programu Excel, aplikacji programu Windows Forms lub aplikacja przeglądarki Windows Presentation Foundation.  
+     Można na przykład uruchomić następujące polecenie, aby zaktualizować i podpisać manifest wdrożenia dla dodatku programu Excel, aplikacji Windows Forms lub aplikacji przeglądarki Windows Presentation Foundation.  
   
     ```  
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
@@ -111,18 +111,18 @@ Po wprowadzeniu zmian do właściwości wdrożenia w manifeście aplikacji dla a
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-6. Powrót do plików, należy dodać rozszerzenie pliku .deploy, z wyjątkiem pliki manifestu aplikacji i wdrożenia.  
+6. Dodaj rozszerzenie. deploy z powrotem do plików, z wyjątkiem plików manifestu aplikacji i wdrożenia.  
   
-7. Opcjonalnie, skopiuj manifest wdrażania wzorca (publikowanie\\*appname*.application) do katalogu wdrażania wersji (pliki publish\Application\\*appname*_ *wersji*).  
+7. Opcjonalnie Skopiuj manifest wdrożenia głównego (Opublikuj \\ *nazwa_aplikacji*. Application) do katalogu wdrożenia wersji (publish\Application Files \\ *nazwa_aplikacji*_*wersja*).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
- [ClickOnce i podpis Authenticode](../deployment/clickonce-and-authenticode.md)   
- [Przegląd wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md)   
- [Instrukcje: Włączenie ustawień zabezpieczeń technologii ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Instrukcje: Ustawienie strefy zabezpieczeń dla aplikacji ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Instrukcje: Ustawienie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Instrukcje: Debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [ClickOnce i Authenticode](../deployment/clickonce-and-authenticode.md)   
+ [Omówienie wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md)   
+ [Instrukcje: Włączanie ustawień zabezpieczeń technologii ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Instrukcje: Ustawianie strefy zabezpieczeń dla aplikacji ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Instrukcje: Ustawianie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Instrukcje: debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Instrukcje: Dodawanie zaufanego wydawcy do komputera klienckiego dla aplikacji ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [Instrukcje: Konfigurowanie zachowania zaufanego monitowania technologii ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
+ [Instrukcje: konfigurowanie funkcji zaufanego monitowania technologii ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

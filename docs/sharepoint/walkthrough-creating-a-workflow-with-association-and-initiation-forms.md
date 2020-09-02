@@ -18,9 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f257dfed2fe439c5ab22ab9951b6258116c6567
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017126"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Przewodnik: tworzenie przepływu pracy z formularzami skojarzenia i inicjowania
@@ -58,7 +59,7 @@ ms.locfileid: "86017126"
 
 - Obsługiwane wersje programów [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i SharePoint.
 
-- Program Visual Studio.
+- Programu Visual Studio.
 
 ## <a name="create-a-sharepoint-sequential-workflow-project"></a>Utwórz projekt sekwencyjnego przepływu pracy programu SharePoint
  Najpierw utwórz projekt sekwencyjnego przepływu pracy w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Sekwencyjny przepływ pracy to seria kroków, które są wykonywane w kolejności do momentu zakończenia ostatniego działania. W tej procedurze utworzysz sekwencyjny przepływ pracy, który jest stosowany do listy Dokumenty udostępnione w programie SharePoint. Kreator przepływu pracy umożliwia skojarzenie przepływu pracy z witryną lub definicją listy i pozwala określić, kiedy zostanie uruchomiony przepływ pracy.
@@ -167,7 +168,7 @@ ms.locfileid: "86017126"
 
 2. Na pasku menu wybierz **projekt**  >  **Dodaj nowy element** Wyświetl okno dialogowe **Dodaj nowy element** .
 
-3. W widoku drzewa okna dialogowego rozwiń pozycję **Visual C#** lub **Visual Basic** (w zależności od języka projektu), rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
+3. W widoku drzewa okna dialogowego rozwiń pozycję **Visual C#** lub **Visual Basic**  (w zależności od języka projektu), rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
 4. Na liście szablonów wybierz szablon **formularza inicjowania przepływu pracy** .
 
@@ -444,6 +445,6 @@ ms.locfileid: "86017126"
 
 - Aby dowiedzieć się więcej na temat przepływów pracy programu SharePoint, zobacz [przepływy pracy w programie Windows SharePoint Services](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14)).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie rozwiązań przepływu pracy programu SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Przewodnik: Dodawanie strony aplikacji do przepływu pracy](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)

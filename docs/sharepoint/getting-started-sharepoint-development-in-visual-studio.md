@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 999a23f8765a72feb22822120a11e1b38b9ac946
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017093"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Wprowadzenie (Programowanie SharePoint w Visual Studio)
@@ -25,7 +26,7 @@ ms.locfileid: "86017093"
 
  Aby uzyskać informacje na temat dodatków SharePoint 2013 i SharePoint, zobacz [sharepoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) i [Build Add-ins programu SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
- Program SharePoint oferuje platformy współpracy opartej na sieci Web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Program udostępnia wiele szablonów projektów do tworzenia witryn i zawartości programu SharePoint, w tym definicji list, przepływów pracy, modeli łączności danych firmowych i definicji lokacji. Ponadto można tworzyć rozszerzenia dla projektów i narzędzi programu SharePoint w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
+ Program SharePoint oferuje platformy współpracy opartej na sieci Web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Program udostępnia wiele szablonów projektów do tworzenia witryn i zawartości programu SharePoint, w tym definicji list, przepływów pracy, modeli łączności danych firmowych i definicji lokacji. Ponadto można tworzyć rozszerzenia dla projektów i narzędzi programu SharePoint w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 ## <a name="in-this-section"></a>W tej sekcji
 
@@ -50,7 +51,7 @@ ms.locfileid: "86017093"
 |[Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|Opisuje sposób tworzenia pakietów i wdrażania rozwiązań programu SharePoint.|
 |[Poszerzanie narzędzi programu SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|Opisuje sposób rozszerzający narzędzia programu SharePoint w celu utworzenia potrzebnych funkcji.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Przeglądanie połączeń programu SharePoint przy użyciu Eksplorator serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

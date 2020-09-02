@@ -1,5 +1,5 @@
 ---
-title: Usingtask — Element (MSBuild) | Dokumentacja firmy Microsoft
+title: UsingTask — element (MSBuild) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bf2882120f2e4c27e33b105585ba56261122055d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445653"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64815402"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.md) element do zestawu zawierającego implementację zadania.  
+Mapuje zadanie, do którego odwołuje się element [zadania](../msbuild/task-element-msbuild.md) , do zestawu, który zawiera implementację zadania.  
   
  \<Project>  
  \<UsingTask>  
@@ -50,35 +50,35 @@ Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`AssemblyName`|Albo `AssemblyName` atrybutu lub `AssemblyFile` atrybut jest wymagany.<br /><br /> Nazwa zestawu do załadowania. `AssemblyName` Atrybut akceptuje zestawy o silnych nazwach, silne nazwy nie jest wymagany. Przy użyciu tego atrybutu jest równoważne z ładowaniem zestawu, za pomocą <xref:System.Reflection.Assembly.Load%2A> metody na platformie .NET.<br /><br /> Nie można używać tego atrybutu, jeśli `AssemblyFile` atrybut jest używany.|  
-|`AssemblyFile`|Albo `AssemblyName` lub `AssemblyFile` atrybut jest wymagany.<br /><br /> Ścieżka pliku zestawu. Ten atrybut akceptuje pełne ścieżki lub ścieżek względnych. Względne ścieżki są względne wobec katalogu pliku projektu lub pliku obiektów docelowych gdzie `UsingTask` elementu jest zadeklarowany. Przy użyciu tego atrybutu jest równoważne z ładowaniem zestawu, za pomocą <xref:System.Reflection.Assembly.LoadFrom%2A> metody na platformie .NET.<br /><br /> Nie można używać tego atrybutu, jeśli `AssemblyName` atrybut jest używany.|  
-|`TaskFactory`|Atrybut opcjonalny.<br /><br /> Określa klasę w zestawie, który jest odpowiedzialny za Generowanie wystąpień z określonym `Task` nazwy.  Użytkownik może również określić `TaskBody` jako element podrzędny, która fabryka zadań odbiera używana do generowania zadania. Zawartość `TaskBody` są specyficzne dla fabryki zadań.|  
-|`TaskName`|Atrybut wymagany.<br /><br /> Nazwa zadania, odwołanie z zestawu. Możliwe są niejasności, ten atrybut należy zawsze określić pełną przestrzeni nazw. Jeśli występują niejasności, program MSBuild wybiera dopasowanie dowolnego spowodować uzyskanie nieoczekiwanych wyników.|  
-|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do oceny. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
+|`AssemblyName`|`AssemblyName`Atrybut lub `AssemblyFile` atrybut jest wymagany.<br /><br /> Nazwa zestawu do załadowania. `AssemblyName`Atrybut akceptuje zestawy o silnych nazwach, chociaż silne nazewnictwo nie jest wymagane. Użycie tego atrybutu jest równoznaczne z załadowaniem zestawu przy użyciu <xref:System.Reflection.Assembly.Load%2A> metody z platformy .NET.<br /><br /> Tego atrybutu nie można użyć, jeśli `AssemblyFile` atrybut jest używany.|  
+|`AssemblyFile`|Albo `AssemblyName` `AssemblyFile` atrybut jest wymagany.<br /><br /> Ścieżka pliku zestawu. Ten atrybut akceptuje pełne ścieżki lub ścieżki względne. Ścieżki względne są względne dla katalogu pliku projektu lub pliku docelowego, gdzie `UsingTask` jest zadeklarowany element. Użycie tego atrybutu jest równoznaczne z załadowaniem zestawu przy użyciu <xref:System.Reflection.Assembly.LoadFrom%2A> metody z platformy .NET.<br /><br /> Tego atrybutu nie można użyć, jeśli `AssemblyName` atrybut jest używany.|  
+|`TaskFactory`|Atrybut opcjonalny.<br /><br /> Określa klasę w zestawie, która jest odpowiedzialna za generowanie wystąpień określonej `Task` nazwy.  Użytkownik może także określić `TaskBody` jako element podrzędny, który fabryka zadań odbiera i używa do generowania zadania. Zawartość programu `TaskBody` jest specyficzna dla fabryki zadań.|  
+|`TaskName`|Atrybut wymagany.<br /><br /> Nazwa zadania do odwołania z zestawu. Jeśli niejasności są możliwe, ten atrybut powinien zawsze określać pełne przestrzenie nazw. Jeśli jest niejasności, MSBuild wybiera dowolne dopasowanie, co może spowodować nieoczekiwane wyniki.|  
+|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[ParameterGroup](../msbuild/parametergroup-element.md)|Zestaw parametrów, które pojawiają się na zadanie, który jest generowany przez określony `TaskFactory`.|  
-|[Zadanie](../msbuild/task-element-msbuild.md)|Dane, które są przekazywane do `TaskFactory` do generowania wystąpienia zadania.|  
+|[ParameterGroup —](../msbuild/parametergroup-element.md)|Zestaw parametrów, które są wyświetlane w zadaniu wygenerowanym przez określony `TaskFactory` .|  
+|[Zadanie](../msbuild/task-element-msbuild.md)|Dane, które są przesyłane do programu `TaskFactory` w celu wygenerowania wystąpienia zadania.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Element główny wymagany [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pliku projektu.|  
+|[Project](../msbuild/project-element-msbuild.md)|Wymagany element główny [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pliku projektu.|  
   
 ## <a name="remarks"></a>Uwagi  
- Zmienne środowiskowe, właściwości wiersza polecenia i właściwości na poziomie projektu może znajdować się gdziekolwiek w `UsingTask` element, jeśli występuje on w pliku projektu jawne lub za pośrednictwem zaimportowanego pliku projektu. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).  
+ Zmienne środowiskowe, właściwości wiersza polecenia i właściwości na poziomie projektu mogą być przywoływane w dowolnym miejscu `UsingTask` elementu, jeśli pojawia się w pliku projektu jawnie lub za pomocą zaimportowanego pliku projektu. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).  
   
 > [!NOTE]
-> Właściwości na poziomie projektu nie mają znaczenia jeśli `UsingTask` element pochodzi z jednego z plików .tasks, które są globalnie zarejestrowane w usłudze aparatu MSBuild. Właściwości na poziomie projektu nie są globalne do programu MSBuild.  
+> Właściwości na poziomie projektu nie mają znaczenia, jeśli `UsingTask` element pochodzi z jednego z plików. Tasks, które są globalnie zarejestrowane w aparacie MSBuild. Właściwości na poziomie projektu nie są globalne dla programu MSBuild.  
   
- W wersji 4.0 programu MSBuild przy użyciu zadań może być załadowany z .overridetask plików.  
+ W programie MSBuild 4,0 przy użyciu zadań można ładować z plików. overridetask.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak używać `UsingTask` element z `AssemblyName` atrybutu.  
+ Poniższy przykład pokazuje, jak używać `UsingTask` elementu z `AssemblyName` atrybutem.  
   
 ```  
 <UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">  
@@ -94,7 +94,7 @@ Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.
 ```  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak używać `UsingTask` element z `AssemblyFile` atrybutu.  
+ Poniższy przykład pokazuje, jak używać `UsingTask` elementu z `AssemblyFile` atrybutem.  
   
 ```  
 <UsingTask TaskName="Email"  
@@ -102,6 +102,6 @@ Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zadania](../msbuild/msbuild-tasks.md)   
+ [Widoku](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)

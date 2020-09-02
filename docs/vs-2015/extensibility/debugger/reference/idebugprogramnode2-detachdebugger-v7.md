@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::DetachDebugger_V7 | Dokumentacja firmy Microsoft
+title: IDebugProgramNode2::D etachDebugger_V7 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 25c60bc42895a0527f1638dada5a28a1631314e0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417886"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64806613"
 ---
-# <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
+# <a name="idebugprogramnode2detachdebugger_v7"></a>IDebugProgramNode2::DetachDebugger_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-PRZESTARZAŁE. NIE NALEŻY UŻYWAĆ.  
+Przestarzałe. NIE NALEŻY UŻYWAĆ.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,14 +38,14 @@ int DetachDebugger_V7 ();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja zawsze powinna zwrócić `E_NOTIMPL`.  
+ Implementacja powinna zawsze zwrócić `E_NOTIMPL` .  
   
 ## <a name="remarks"></a>Uwagi  
   
 > [!WARNING]
-> Począwszy od programu [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], ta metoda nie jest już używany i powinien zawsze zwracają `E_NOTIMPL`.  
+> Począwszy od programu [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] , ta metoda nie jest już używana i zawsze powinna zwracać `E_NOTIMPL` .  
   
- Ta metoda jest wywoływana, gdy debuger jest nieoczekiwanie zamykany. Gdy ta metoda jest wywoływana, DE powinna zostać wznowiona program, jak gdyby użytkownik jest odłączony od niego. Powinny być przesyłane bez więcej zdarzeń debugowania. Program, należy w stanie, gdy jest można dołączyć z innego wystąpienia debugera.  
+ Ta metoda jest wywoływana, gdy debuger nieoczekiwanie kończy pracę. Po wywołaniu tej metody DE powinien wznowić program tak, jakby został odłączony przez użytkownika. Nie należy wysyłać więcej zdarzeń debugowania. Program powinien znajdować się w stanie, w którym jest możliwy do dołączenia z innego wystąpienia debugera.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

@@ -1,5 +1,5 @@
 ---
-title: Zapisywanie danych w plikach projektu | Dokumentacja firmy Microsoft
+title: Zapisywanie danych w plikach projektu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,28 +13,28 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc671963854e4fa0c2af763de5000fac82a839b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432517"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64817563"
 ---
 # <a name="saving-data-in-project-files"></a>Zapisywanie danych w plikach projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podtypu projektu można zapisywać i pobierać dane specyficzne dla podtypu w pliku projektu. Framework pakietu zarządzanego (MPF) zawiera dwa interfejsy do wykonania tego zadania:  
+Podtyp projektu może zapisać i pobrać dane specyficzne dla określonego typu w pliku projektu. Struktura pakietu zarządzanego (MPF) udostępnia dwa interfejsy do wykonania tego zadania:  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> Interfejs umożliwia dostęp do wartości właściwości z **MSBuild** sekcji w pliku projektu. Metod dostarczonych przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> może być wywoływany przez dowolnego użytkownika przy każdym których użytkownik potrzebuje do załadowania lub zapisania kompilacji powiązane dane.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>Interfejs umożliwia dostęp do wartości właściwości z sekcji programu **MSBuild** w pliku projektu. Metody dostarczone przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> mogą być wywoływane przez dowolnego użytkownika za każdym razem, gdy użytkownik musi załadować lub zapisać dane związane z kompilacją.  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Służy do utrwalenia-build powiązane dane w dowolnej postaci XML. Metod dostarczonych przez <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> są wywoływane przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zawsze wtedy, gdy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ma zostać zachowany-build powiązane dane w pliku projektu.  
+- Służy <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> do utrwalania danych niezwiązanych z niekompilacją w postaci pliku XML o dowolnej postaci. Metody dostarczone przez <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> są wywoływane przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zawsze, gdy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] muszą utrzymywać dane niezwiązane z niekompilacją w pliku projektu.  
   
-  Aby uzyskać więcej informacji na temat zachować kompilacji i powiązane dane-build, zobacz [przechowywanie danych w pliku projektu MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
+  Aby uzyskać więcej informacji na temat utrwalania danych kompilacji i niezwiązanych z kompilacją, zobacz [utrwalanie danych w pliku projektu MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
   
-## <a name="saving-and-retrieving-build-related-data"></a>Zapisywanie i pobieranie kompilacji powiązanych danych  
+## <a name="saving-and-retrieving-build-related-data"></a>Zapisywanie i pobieranie danych związanych z kompilacją  
   
-#### <a name="to-save-a-build-related-data-in-the-project-file"></a>Aby zapisać kompilacji powiązane dane w pliku projektu  
+#### <a name="to-save-a-build-related-data-in-the-project-file"></a>Aby zapisać dane dotyczące kompilacji w pliku projektu  
   
-- Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> metodę, aby zapisać pełną ścieżkę pliku projektu.  
+- Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> metodę, aby zapisać pełną ścieżkę do pliku projektu.  
   
     ```  
     private SpecializedProject project;  
@@ -47,9 +47,9 @@ Podtypu projektu można zapisywać i pobierać dane specyficzne dla podtypu w pl
         (uint)_PersistStorageType.PST_PROJECT_FILE, newFullPath));  
     ```  
   
-#### <a name="to-retrieve-build-related-data-from-the-project-file"></a>Aby pobrać kompilacji z danych związanych z pliku projektu  
+#### <a name="to-retrieve-build-related-data-from-the-project-file"></a>Aby pobrać dane dotyczące kompilacji z pliku projektu  
   
-- Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> metodę, aby pobrać pełną ścieżkę pliku projektu.  
+- Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> metodę, aby pobrać pełną ścieżkę do pliku projektu.  
   
     ```  
     private SpecializedProject project;  
@@ -62,11 +62,11 @@ Podtypu projektu można zapisywać i pobierać dane specyficzne dla podtypu w pl
         (uint)_PersistStorageType.PST_PROJECT_FILE, out fullPath));  
     ```  
   
-## <a name="saving-and-retrieving-non-build-related-data"></a>Zapisywanie i pobieranie innego niż build powiązanych danych  
+## <a name="saving-and-retrieving-non-build-related-data"></a>Zapisywanie i pobieranie danych niezwiązanych z kompilacją  
   
-#### <a name="to-save-non-build-related-data-in-the-project-file"></a>Aby zapisać bez kompilacji powiązane dane w pliku projektu  
+#### <a name="to-save-non-build-related-data-in-the-project-file"></a>Aby zapisać dane niezwiązane z niekompilacją w pliku projektu  
   
-1. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> metodę, aby określić, czy XML fragment został zmieniony od momentu jego ostatniego zapisane w jego bieżącym pliku.  
+1. Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> metodę, aby określić, czy fragment kodu XML został zmieniony od czasu ostatniego zapisania go w bieżącym pliku.  
   
     ```  
     public int IsFragmentDirty(uint storage, out int pfDirty)  
@@ -96,7 +96,7 @@ Podtypu projektu można zapisywać i pobierać dane specyficzne dla podtypu w pl
     }  
     ```  
   
-2. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> metodę, aby zapisać dane XML w pliku projektu.  
+2. Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> metodę, aby zapisać dane XML w pliku projektu.  
   
     ```  
     public int Save(ref Guid guidFlavor, uint storage, out string pbstrXMLFragment, int fClearDirty)  
@@ -145,9 +145,9 @@ Podtypu projektu można zapisywać i pobierać dane specyficzne dla podtypu w pl
     }  
     ```  
   
-#### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>Aby pobrać-build powiązane dane w pliku projektu  
+#### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>Aby pobrać dane niezwiązane z kompilacją w pliku projektu  
   
-1. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> metodę, aby zainicjować właściwości rozszerzenia projektu i inne dane niezależnie od kompilacji. Ta metoda jest wywoływana, jeśli nie ma żadnych danych konfiguracji XML w pliku projektu.  
+1. Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> metodę, aby zainicjować właściwości rozszerzenia projektu i innych danych niezależnych od kompilacji. Ta metoda jest wywoływana, jeśli w pliku projektu nie ma danych konfiguracji XML.  
   
     ```  
     public int InitNew(ref Guid guidFlavor, uint storage)  
@@ -163,7 +163,7 @@ Podtypu projektu można zapisywać i pobierać dane specyficzne dla podtypu w pl
         return VSConstants.S_OK;  
     ```  
   
-2. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> metodę, aby załadować dane XML z pliku projektu.  
+2. Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> metodę w celu załadowania danych XML z pliku projektu.  
   
     ```  
     public int Load(ref Guid guidFlavor, uint storage, string pszXMLFragment)  
@@ -208,7 +208,7 @@ Podtypu projektu można zapisywać i pobierać dane specyficzne dla podtypu w pl
     ```  
   
 > [!NOTE]
-> Wszystkie przykłady kodu, podane w tym temacie stanowią część większego przykładu [przykłady VSSDK](../misc/vssdk-samples.md).  
+> Wszystkie przykłady kodu podane w tym temacie są częścią większego przykładu [VSSDK Samples](../misc/vssdk-samples.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Utrwalanie danych w pliku projektu programu MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

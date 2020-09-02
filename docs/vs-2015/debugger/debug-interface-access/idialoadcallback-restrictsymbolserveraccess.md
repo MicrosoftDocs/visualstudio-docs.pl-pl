@@ -1,5 +1,5 @@
 ---
-title: Idialoadcallback::restrictsymbolserveraccess — | Dokumentacja firmy Microsoft
+title: 'IDiaLoadCallback:: RestrictSymbolServerAccess | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fddf9812810e7d184859f60d98f51000b824092a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150593"
 ---
 # <a name="idialoadcallbackrestrictsymbolserveraccess"></a>IDiaLoadCallback::RestrictSymbolServerAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Określa, jeśli jest dozwolony dostęp do serwera symboli można rozpoznać symboli.  
+Określa, czy dostęp jest dozwolony do serwera symboli, aby rozpoznać symbole.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -32,10 +32,10 @@ HRESULT RestrictSymbolServerAccess();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Dowolny kod powrotu innych niż `S_OK` uniemożliwia korzystanie z serwera symboli w celu rozpoznania symboli.  
+ Każdy kod powrotny inny niż `S_OK` uniemożliwia korzystanie z serwera symboli do rozpoznawania symboli.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

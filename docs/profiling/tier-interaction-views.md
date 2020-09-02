@@ -1,5 +1,5 @@
 ---
-title: Widoki interakcji warstwy | Dokumenty firmy Microsoft
+title: Widoki interakcji między warstwami | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 96b5fed31238fbc0e46d9982080b3acb1082e9f9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778131"
 ---
 # <a name="tier-interaction-views"></a>Widok interakcji warstwowej
 
-Profilowanie interakcji warstwy zawiera dodatkowe informacje na temat czasów wykonywania funkcji w [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]wielowarstwowych aplikacjach, które komunikują się z bazami danych za pośrednictwem . Dane są zbierane tylko dla wywołań funkcji synchronicznych. Dane interakcji warstwy można uwzględnić we wszystkich metodach profilowania.
+Profilowanie interakcji między warstwami zawiera dodatkowe informacje o czasach wykonywania funkcji w aplikacjach wielowarstwowych, które komunikują się z bazami danych za pomocą programu [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] . Dane są zbierane tylko dla wywołań funkcji synchronicznych. Możesz uwzględnić dane interakcji warstwy we wszystkich metodach profilowania.
 
-Widoki interakcji warstwy są dostępne tylko w programie Visual Studio Enterprise.
+Widoki interakcji między warstwami są dostępne tylko w Visual Studio Enterprise.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
