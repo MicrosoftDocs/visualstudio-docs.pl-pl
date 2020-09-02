@@ -1,5 +1,5 @@
 ---
-title: Zasoby w pakietach VSPackage | Dokumenty firmy Microsoft
+title: Zasoby w pakietów VSPackage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,42 +13,42 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 493e9834e3d7cf6d82cebb8dd93d5369678c7be0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705600"
 ---
 # <a name="resources-in-vspackages"></a>Zasoby w pakietach VSPackage
-Zlokalizowane zasoby można osadzać w natywnych bibliotekach DLL interfejsu użytkownika, zarządzanych bibliotekach DLL satelitarnych lub w zarządzanym programie VSPackage.
+Zlokalizowane zasoby można osadzać w natywnych bibliotekach DLL interfejsu użytkownika, zarządzanej satelitarnej biblioteki DLL lub w zarządzanym pakietu VSPackage.
 
- Niektóre zasoby nie mogą być osadzone w vspackages. Można osadzać następujące typy zarządzane:
+ Niektórych zasobów nie można osadzić w pakietów VSPackage. Można osadzić następujące typy zarządzane:
 
 - Ciągi
 
 - Klucze ładowania pakietu (które są również ciągami)
 
-- Ikony okien narzędzi
+- Ikony okna narzędzi
 
-- Pliki Skompilowanych plików CTO (Compiled Command Table Output)
+- Skompilowane pliki wyjściowe tabeli poleceń (Dyrektor ds)
 
-- Mapy bitowe CTO
+- Mapy bitowe dyrektor ds
 
 - Pomoc wiersza polecenia
 
-- Informacje o danych okna dialogowego
+- Dane okna dialogowego — Informacje
 
-  Zasoby w pakiecie zarządzanym są wybierane według identyfikatora zasobu. Wyjątkiem jest plik CTO, który musi mieć nazwę CTMENU. Plik CTO musi być wyświetlany w `byte[]`tabeli zasobów jako plik . Wszystkie inne elementy zasobów są identyfikowane według typu.
+  Zasoby w pakiecie zarządzanym są wybierane według identyfikatora zasobu. Wyjątkiem jest plik dyrektor ds, który musi mieć nazwę CTMENU. Plik dyrektor ds musi znajdować się w tabeli zasobów jako `byte[]` . Wszystkie inne elementy zasobów są identyfikowane według typu.
 
-  Można użyć <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> atrybutu, aby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wskazać, że zasoby zarządzane są dostępne.
+  Możesz użyć atrybutu, <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> Aby wskazać [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , że zarządzane zasoby są dostępne.
 
   [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
   [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]
 
-  Ustawienie <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> w ten sposób [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wskazuje, że należy ignorować niezarządzane biblioteki DLL satelity podczas wyszukiwania zasobów, na przykład za pomocą programu <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Jeśli [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] napotka dwa lub więcej zasobów, które mają ten sam identyfikator zasobu, używa pierwszego zasobu, który znajdzie.
+  Ustawienie <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> w ten sposób wskazuje, że [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] powinny być ignorowane niezarządzane satelity dll, gdy wyszukiwanie zasobów, na przykład przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> . Jeśli [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] napotka dwa lub więcej zasobów, które mają ten sam identyfikator zasobu, używa pierwszego znalezionego zasobu.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład jest zarządzaną reprezentacją ikony okna narzędzia.
+ Poniższy przykład jest zarządzaną reprezentacją ikony okna narzędzi.
 
 ```
 <data name="1001"
@@ -64,7 +64,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>
 ```
 
- W poniższym przykładzie pokazano, jak osadzić tablicę bajtów CTO, która musi mieć nazwę CTMENU.
+ W poniższym przykładzie pokazano, jak osadzić tablicę bajtów dyrektor ds, która musi mieć nazwę CTMENU.
 
 ```
 <data name="CTMENU"
@@ -81,10 +81,10 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```
 
 ## <a name="implementation-notes"></a>Uwagi dotyczące implementacji
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]opóźnia ładowanie pakietów VSPackages, gdy tylko jest to możliwe. Konsekwencją osadzania pliku CTO w vsPackage jest to, że [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] musi załadować wszystkie takie VSPackages w pamięci podczas instalacji, czyli podczas tworzenia scalonej tabeli poleceń. Zasoby można wyodrębnić z vspackage przez badanie metadanych bez uruchamiania kodu w VSPackage. VSPackage nie jest inicjowany w tej chwili, więc utrata wydajności jest minimalna.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] opóźnia ładowanie pakietów VSPackage, gdy jest to możliwe. Wynikiem osadzenia pliku dyrektor ds w pakietu VSPackage jest to, że [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] należy załadować wszystkie takie pakietów VSPackage w pamięci podczas instalacji, co jest możliwe podczas kompilacji Scalonej tabeli poleceń. Zasoby można wyodrębnić z pakietu VSPackage, sprawdzając metadane bez uruchamiania kodu w pakietu VSPackage. W tej chwili nie zainicjowano pakietu VSPackage, więc utrata wydajności jest minimalna.
 
- Gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] żąda zasobu z VSPackage po instalacji, ten pakiet może być już załadowany i zainicjowany, więc utrata wydajności jest minimalna.
+ Gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] żąda zasobu z pakietu VSPackage po zakończeniu instalacji, ten pakiet prawdopodobnie jest już załadowany i zainicjowany, więc utrata wydajności jest minimalna.
 
 ## <a name="see-also"></a>Zobacz też
 - [Zarządzanie pakietami VSPackage](../../extensibility/managing-vspackages.md)
-- [Zasoby zlokalizowane w aplikacjach MFC: biblioteki DLL Satellite](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)
+- [Zlokalizowane zasoby w aplikacjach MFC: satelitarne biblioteki DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)

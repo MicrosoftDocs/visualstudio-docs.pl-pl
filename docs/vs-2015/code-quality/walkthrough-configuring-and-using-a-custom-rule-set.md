@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8239afd1cf4e8c0a5e702f2b0e4ed64408cada09
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645739"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Wskazówki: konfigurowanie niestandardowego zestawu reguł i korzystanie z niego
@@ -49,9 +49,9 @@ W tym instruktażu pokazano, jak używać narzędzi analizy kodu, które został
 
 1. W menu **plik** kliknij pozycję **Nowy** , a następnie kliknij pozycję **projekt**.
 
-2. W oknie dialogowym **Nowy projekt** w obszarze **typy projektów**kliknij pozycję **Wizualizacja C#** .
+2. W oknie dialogowym **Nowy projekt** w obszarze **typy projektów**kliknij pozycję **Visual C#**.
 
-3. W **obszarze C#Wizualizacja** wybierz pozycję **Biblioteka klas**.
+3. W obszarze **Visual C#** wybierz pozycję **Biblioteka klas**.
 
 4. W polu tekstowym **Nazwa** wpisz **RuleSetSample** , a następnie kliknij przycisk **OK**.
 
@@ -70,7 +70,7 @@ W tym instruktażu pokazano, jak używać narzędzi analizy kodu, które został
     W menu plik kliknij polecenie **Zapisz wybrane elementy** , aby zaktualizować plik projektu o informacje o wybranym zestawie reguł i jego ustawieniach.
 
    > [!TIP]
-   > W świecie rzeczywistym dobrym sposobem użycia w celu określania priorytetów problemów, które mają być przeznaczone do analizy kodu, jest rozpoczęcie od **minimalnych zalecanych reguł** zestawu reguł i skorygowanie potrzebnych problemów, a następnie przyrostowe dodanie większej liczby reguł lub zestawów reguł do Znajdź i Rozwiąż dodatkowe problemy.
+   > W przypadku rzeczywistej sytuacji dobrą metodą określania priorytetu problemów, które mają zostać użyte do analizy kodu, jest rozpoczęcie od **minimalnych zalecanych reguł** zestawu reguł i skorygowanie potrzebnych problemów, a następnie przyrostowe dodanie większej liczby reguł lub zestawów reguł w celu znalezienia i rozwiązania dodatkowych problemów.
 
    Następnie dodasz kod do biblioteki klas, która zostanie użyta do zademonstrowania naruszeń identyfikatorów CA1704 "w kodzie". Aby uzyskać więcej informacji, zobacz [CA1704: Identyfikatory powinny być poprawnie napisane](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
@@ -140,7 +140,7 @@ W tym instruktażu pokazano, jak używać narzędzi analizy kodu, które został
 
 2. Na karcie **Właściwości** kliknij pozycję **Analiza kodu**.
 
-    Na liście rozwijanej **Uruchom ten zestaw reguł** kliknij pozycję **\<Browse. >** . Przejdź do folderu głównego projektu kodu, a następnie wybierz **MyCustomRuleSet. zestaw reguł**. To jest nowy zestaw reguł, który został utworzony w poprzedniej procedurze.
+    Na liście rozwijanej **Uruchom ten zestaw reguł** kliknij pozycję **\<Browse..>** . Przejdź do folderu głównego projektu kodu, a następnie wybierz **MyCustomRuleSet. zestaw reguł**. To jest nowy zestaw reguł, który został utworzony w poprzedniej procedurze.
 
 3. W menu **plik** kliknij polecenie **Zapisz** , aby zapisać konfigurację projektu. Niestandardowy zestaw reguł może być teraz używany z projektem.
 

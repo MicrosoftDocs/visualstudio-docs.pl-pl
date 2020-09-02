@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetBreakpointRozrozwiązany | Dokumenty firmy Microsoft
+title: 'IDebugBoundBreakpoint2:: GetBreakpointResolution | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ab88009eb1c1bbbd59bbad2dfcbf62567db3941f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735578"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
-Pobiera rozdzielczość punktu przerwania, który opisuje ten punkt przerwania.
+Pobiera rozdzielczość punktu przerwania opisującą ten punkt przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,20 +42,20 @@ int GetBreakpointResolution( 
 
 ## <a name="parameters"></a>Parametry
 `ppBPResolution`\
-[na zewnątrz] Zwraca interfejs [IDebugBreakpointResolution2,](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) który reprezentuje jedną z następujących opcji:
+określoną Zwraca interfejs [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) , który reprezentuje jedną z następujących wartości:
 
-- Obiekt rozpoznawania punktu przerwania, który opisuje lokalizację w kodzie, w którym został powiązany punkt przerwania kodu.
+- Obiekt rozpoznawania punktu przerwania, który opisuje lokalizację w kodzie, w którym powiązano punkt przerwania kodu.
 
-- Lokalizacja danych, w której ma powiązany punkt przerwania danych.
+- Lokalizacja danych, w której powiązano punkt przerwania danych.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` wartość, jeśli stan obiektu powiązanego `BPS_DELETED` punktu przerwania jest ustawiony na (część wyliczenia [BP_STATE).](../../../extensibility/debugger/reference/bp-state.md)
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` czy stan powiązanego obiektu punktu przerwania jest ustawiony na `BPS_DELETED` (część wyliczenia [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
 ## <a name="remarks"></a>Uwagi
-Wywołanie [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) metody, aby ustalić, czy rozdzielczość punktu przerwania jest dla kodu lub danych.
+Wywołaj metodę [Getpunktem przerwania](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) , aby określić, czy rozdzielczość punktu przerwania dotyczy kodu lub danych.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak `CBoundBreakpoint` zaimplementować tę metodę dla prostego obiektu, który udostępnia interfejs [IDebugBoundBreakpoint2.](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CBoundBreakpoint` obiektu, który uwidacznia Interfejs [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .
 
 ```
 HRESULT CBoundBreakpoint::GetBreakpointResolution(

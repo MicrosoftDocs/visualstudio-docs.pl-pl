@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointBoundEvent2 | Dokumenty firmy Microsoft
+title: IDebugBreakpointBoundEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7943addb4334710da3252a4d822330e45b6e0f80
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735310"
 ---
 # <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
-Ten interfejs informuje menedżera debugowania sesji (SDM), że oczekujący punkt przerwania został pomyślnie powiązany z załadowanym programem.
+Ten interfejs nakazuje menedżerowi debugowania sesji (SDM), że oczekujący punkt przerwania został pomyślnie powiązany z załadowanym programem.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,26 +29,26 @@ IDebugBreakpointBoundEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- DE implementuje ten interfejs jako część jego obsługi punktów przerwania. Interfejs [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musi być zaimplementowany na tym samym obiekcie co ten `IDebugEvent2` interfejs (SDM używa [QueryInterface,](/cpp/atl/queryinterface) aby uzyskać dostęp do interfejsu).
+ DE implementuje ten interfejs w ramach obsługi punktów przerwania. Interfejs [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musi być zaimplementowany w tym samym obiekcie co ten interfejs (model SDM używa [metody QueryInterface](/cpp/atl/queryinterface) do uzyskiwania dostępu do `IDebugEvent2` interfejsu).
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- DE tworzy i wysyła ten obiekt zdarzenia, gdy oczekujący punkt przerwania jest pomyślnie powiązany z programem debugowanym. Zdarzenie jest wysyłane przy użyciu funkcji wywołania zwrotnego [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) dostarczonej przez SDM po podłączeniu do programu, który jest debugowany.
+ Element DE tworzy i wysyła ten obiekt Event, gdy oczekujący punkt przerwania został pomyślnie powiązany z debugowanym programem. Zdarzenie jest wysyłane przy użyciu funkcji wywołania zwrotnego [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) dostarczonej przez model SDM, gdy jest on dołączony do debugowanego programu.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- W poniższej tabeli `IDebugBreakpointBoundEvent2`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ W poniższej tabeli przedstawiono metody `IDebugBreakpointBoundEvent2` .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)|Pobiera oczekujących punktu przerwania, który jest powiązany.|
-|[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)|Tworzy wyliczacza punktów przerwania, które były powiązane w tym zdarzeniu.|
+|[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)|Pobiera oczekujący punkt przerwania.|
+|[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)|Tworzy moduł wyliczający punktów przerwania, które zostały powiązane z tym zdarzeniem.|
 
 ## <a name="remarks"></a>Uwagi
- Zawsze, gdy punkt przerwania jest powiązany, zdarzenie jest wysyłane do SDM. Jeśli nie można wiązać punktu przerwania, jest wysyłany [iDebugBreakpointErrorEvent2;](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) w przeciwnym `IDebugBreakpointBoundEvent2` razie jest wysyłany.
+ Za każdym razem, gdy punkt przerwania jest powiązany, do modelu SDM jest wysyłane zdarzenie. Jeśli punkt przerwania nie może być powiązany, wysyłany jest [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) . w przeciwnym razie `IDebugBreakpointBoundEvent2` jest wysyłane.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::QueryIsLocal | Dokumentacja firmy Microsoft
+title: 'IDebugCoreServer3:: QueryIsLocal | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 26bed2a60d7412682588a5a39fd6f1301005da01
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62569084"
 ---
 # <a name="idebugcoreserver3queryislocal"></a>IDebugCoreServer3::QueryIsLocal
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa, czy serwer lokalny do obiektu wywołującego.  
+Określa, czy serwer jest lokalnym obiektem wywołującym.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,7 +37,7 @@ int QueryIsLocal();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca `S_OK` aby wskazać serwer lokalny. Zwraca `S_FALSE` Jeśli serwer jest uruchomiony z wystąpienia msvsmon.exe, który jest zazwyczaj używany do zdalnego debugowania.  
+ Zwraca wartość `S_OK` wskazującą, że serwer jest lokalny. Zwraca `S_FALSE` czy serwer działa z wystąpienia msvsmon.exe, które jest zwykle używane do zdalnego debugowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

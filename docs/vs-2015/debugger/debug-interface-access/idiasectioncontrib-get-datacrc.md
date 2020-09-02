@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib::get_datacrc — | Dokumentacja firmy Microsoft
+title: 'IDiaSectionContrib:: get_dataCrc | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 309ecc0269b911afb1f8e1b753811ac0b1c36e6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576551"
 ---
-# <a name="idiasectioncontribgetdatacrc"></a>IDiaSectionContrib::get_dataCrc
+# <a name="idiasectioncontribget_datacrc"></a>IDiaSectionContrib::get_dataCrc
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera wyboru cyklicznej kontroli nadmiarowości (CRC) danych w tej sekcji.  
+Pobiera cykliczne sprawdzenie nadmiarowości (CRC) danych w sekcji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,10 +35,10 @@ HRESULT get_dataCrc ( 
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca wartość sumy kontrolnej danych w sekcji.  
+ określoną Zwraca wartość CRC danych w sekcji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

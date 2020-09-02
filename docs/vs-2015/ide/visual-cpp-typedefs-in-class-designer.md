@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 980c49aafba55e29714d786e492f7bb37a8ca621
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646748"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Definicje typów Visual C++ w Projektancie klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Typedef — instrukcje Utwórz co najmniej jedną warstwę pośrednika między nazwą i jej typem podstawowym. Projektant klas obsługuje C++ typy typedef, które są zadeklarowane za pomocą słowa kluczowego `typedef`, na przykład:
+Typedef — instrukcje Utwórz co najmniej jedną warstwę pośrednika między nazwą i jej typem podstawowym. Projektant klas obsługuje typy C++ typedef, które są zadeklarowane za pomocą słowa kluczowego `typedef` , na przykład:
 
 ```
 typedef class coord
@@ -50,9 +50,9 @@ typedef class coord
 };
 ```
 
- Aby uzyskać więcej informacji o używaniu typu `typedef`, zobacz [(NOTINBUILD) specyfikator typedef](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1).
+ Aby uzyskać więcej informacji na temat używania `typedef` typu, zobacz [(NOTINBUILD) specyfikator typedef](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1).
 
- Kształt C++ typedef ma kształt typu określonego w elemencie typedef. Na przykład, jeśli źródło deklaruje `typedef class`, kształt ma zaokrąglone rogi i **klasę**etykiet. W przypadku `typedef struct` kształt ma prostokąty kwadratowe i **strukturę**etykiet.
+ Kształt języka C++ typedef ma kształt typu określonego w elemencie typedef. Na przykład, jeśli źródło deklaruje `typedef class` , kształt ma zaokrąglone rogi i **klasę**etykiet. Dla `typedef struct` , kształt ma narożniki kwadratowe i **strukturę**etykiet.
 
  Klasy i struktury mogą mieć zagnieżdżone definicje TypeDef zadeklarowane w nich; w związku z tym kształty klas i struktur mogą wyświetlać zagnieżdżone deklaracje typedef jako kształty zagnieżdżone.
 
@@ -64,7 +64,7 @@ typedef class coord
 
  *Nazwa* : *wpisz*
 
- — klasa typedef
+  — klasa typedef
 
  Rysuje linię skojarzenia łączącą się z *nazwą*typu, jeśli jest to możliwe.
 
@@ -72,7 +72,7 @@ typedef class coord
 
  `func: void (*)(int)`
 
- — klasa typedef
+  — klasa typedef
 
  Element typedef dla wskaźników funkcji. Nie jest rysowany żaden wiersz skojarzenia.
 
@@ -87,11 +87,11 @@ class A {
 
  `MyInt: int`
 
- — klasa typedef
+  — klasa typedef
 
  `A`
 
- Class
+ Klasa
 
  Rysuje linię skojarzenia wskazującą kształt typu źródła do kształtu typu docelowego.
 
@@ -101,11 +101,11 @@ class A {
 
  `B`
 
- Class
+ Klasa
 
  `MyB : B`
 
- — klasa typedef
+  — klasa typedef
 
  Kliknięcie prawym przyciskiem myszy kształtu typedef i kliknięcie pozycji **Pokaż jako skojarzenie** powoduje wyświetlenie elementu typedef lub klasy oraz **aliasu** linii łączącej dwa kształty (podobnie jak w przypadku linii skojarzenia).
 
@@ -115,7 +115,7 @@ class A {
 
  `MyBar : Bar`
 
- — klasa typedef
+  — klasa typedef
 
  Tak samo jak powyżej.
 
@@ -130,15 +130,15 @@ class A {
 
  `B`
 
- Class
+ Klasa
 
  `MyB : B`
 
- — klasa typedef
+  — klasa typedef
 
  `A`
 
- Class
+ Klasa
 
  `MyB` jest zagnieżdżonym kształtem typedef.
 
@@ -152,11 +152,11 @@ class A {
 
  `typedef vector<int> MyIntVect;`
 
- `vector<T>`Class
+ `vector<T>`Klasa
 
  `MyIntVect : vector<int>`
 
- — klasa typedef
+  — klasa typedef
 
  `class B {};`
 
@@ -166,7 +166,7 @@ class A {
 
  `MyB : B`
 
- — klasa typedef
+  — klasa typedef
 
  -> B
 
@@ -174,7 +174,7 @@ class A {
 
  `A`
 
- Class
+ Klasa
 
  -> MyB
 
@@ -188,17 +188,17 @@ class A {
 
  `std::vector<T>`
 
- Class
+ Klasa
 
  `MyIntVect : std::vector<int>`
 
- — klasa typedef
+  — klasa typedef
 
  `MyVect`
 
- Class
+ Klasa
 
  -> MyIntVect
 
 ## <a name="see-also"></a>Zobacz też
- [Praca z kodem C++ Visual Code (Projektant klas)](../ide/working-with-visual-cpp-code-class-designer.md) [(NOTINBUILD) typedef — specyfikator](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)
+ [Praca z specyfikatorem "Visual C++ Code (Projektant klas)](../ide/working-with-visual-cpp-code-class-designer.md) [(NOTINBUILD) typedef](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)

@@ -1,5 +1,5 @@
 ---
-title: Przycisk Eksportuj (Concurrency Visualizer) | Dokumentacja firmy Microsoft
+title: Przycisk Eksportuj (Concurrency Visualizer) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,17 +14,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1717c17a3a881d138b566f37e07456ded16f22c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197727"
 ---
 # <a name="export-button-concurrency-visualizer"></a>Przycisk Eksportuj (Concurrency Visualizer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Wyeksportować** przycisk umożliwia eksportowanie stos wywołań jako plik CSV dla własnych rekordów lub do użytku z innego narzędzia takiego jak program Microsoft Excel.  
+Przycisk **Eksportuj** umożliwia eksportowanie stosu wywołań jako pliku CSV dla własnych rekordów lub do użytku z innymi narzędziami, takimi jak program Microsoft Excel.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Narzędzie CONCURRENCY Visualizer](../profiling/concurrency-visualizer.md)   
+ [Wizualizator współbieżności](../profiling/concurrency-visualizer.md)   
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

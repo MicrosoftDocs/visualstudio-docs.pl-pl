@@ -1,5 +1,5 @@
 ---
-title: Idiasession::get_loadaddress — | Dokumentacja firmy Microsoft
+title: 'IDiaSession:: get_loadAddress | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 00ac9345001983aa9829848c4adafae69151d81a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62558294"
 ---
-# <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
+# <a name="idiasessionget_loadaddress"></a>IDiaSession::get_loadAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera adres obciążenia dla pliku wykonywalnego, który odnosi się do symboli w tym magazynie symboli.  
+Pobiera adres ładowania pliku wykonywalnego, który odnosi się do symboli w tym magazynie symboli.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,14 +35,14 @@ HRESULT get_loadAddress ( 
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca adresów wirtualnych (oceny luk w zabezpieczeniach), gdzie jest ładowany pliku .exe lub .dll.  
+ określoną Zwraca adres wirtualny (VA), w którym jest ładowany plik exe lub plik dll.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Adres zwrócone obciążenia zawsze wynosi zero, chyba że specjalnie można ustawić przy użyciu [idiasession::put_loadaddress —](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) metody.  
+ Zwrócony adres ładowania jest zawsze zerem, chyba że jest to określone przy użyciu metody [IDiaSession::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) .  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
+ [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)

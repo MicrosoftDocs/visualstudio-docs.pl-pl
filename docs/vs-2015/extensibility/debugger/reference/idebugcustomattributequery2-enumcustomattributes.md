@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::EnumCustomAttributes | Dokumentacja firmy Microsoft
+title: 'IDebugCustomAttributeQuery2:: EnumCustomAttributes — | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b09285b2fbab65321d0949be7fbd9c7a03c54ed3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62568411"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera moduł wyliczający dla wszystkich atrybutów niestandardowych, dołączony do tego pola.  
+Pobiera moduł wyliczający dla wszystkich atrybutów niestandardowych dołączonych do tego pola.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,10 +40,10 @@ int EnumCustomAttributes(
   
 #### <a name="parameters"></a>Parametry  
  `ppEnum`  
- [out] Zwraca [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) obiekt reprezentujący listę atrybutów niestandardowych; w przeciwnym razie zwraca wartość null, jeśli istnieją żadne atrybuty niestandardowe.  
+ określoną Zwraca obiekt [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) reprezentujący listę atrybutów niestandardowych; w przeciwnym razie zwraca wartość null, jeśli nie ma żadnych atrybutów niestandardowych.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca S_OK lub S_FALSE, jeśli istnieją żadne atrybuty niestandardowe dla tego pola. W przeciwnym razie zwraca kod błędu;  
+ Jeśli to się powiedzie, zwraca S_OK lub S_FALSE, jeśli nie ma żadnych atrybutów niestandardowych tego pola. W przeciwnym razie zwraca kod błędu;  
   
 ## <a name="remarks"></a>Uwagi  
  Pole może mieć wiele atrybutów niestandardowych.  

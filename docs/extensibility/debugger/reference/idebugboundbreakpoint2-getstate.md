@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetState | Dokumenty firmy Microsoft
+title: 'IDebugBoundBreakpoint2:: GetState | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 30e36880fda8b94eefcbe8b3110685b2114476a3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735475"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
@@ -42,13 +42,13 @@ int GetState( 
 
 ## <a name="parameters"></a>Parametry
 `pState`\
-[na zewnątrz] Zwraca wartość z wyliczenia [BP_STATE,](../../../extensibility/debugger/reference/bp-state.md) który opisuje stan punktu przerwania.
+określoną Zwraca wartość z wyliczenia [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) , która opisuje stan punktu przerwania.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak `CBoundBreakpoint` zaimplementować tę metodę dla prostego obiektu, który udostępnia interfejs [IDebugBoundBreakpoint2.](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CBoundBreakpoint` obiektu, który uwidacznia Interfejs [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .
 
 ```
 HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)

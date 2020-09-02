@@ -1,5 +1,5 @@
 ---
-title: ResumeTracking | Dokumentacja firmy Microsoft
+title: ResumeTracking | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -18,16 +18,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 75c1a94e9db6e1a141668f6ba314c39cedc3fd6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159219"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wznawia śledzenia w bieżącym kontekście.  
+Wznawia śledzenie w bieżącym kontekście.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,10 +36,10 @@ HRESULT WINAPI ResumeTracking();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) with ([sukces]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) ustawiony bit, jeśli śledzenie zostało wznowione. [E_FAIL] (<!-- TODO: review code entity reference <xref:assetId:///E_FAIL?qualifyHint=False&amp;autoUpgrade=True>  -->) jest zwracany, jeśli nie można wznowić śledzenia, ponieważ kontekst nie jest dostępna.  
+ [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) z [powodzenie] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->), jeśli śledzenie zostało wznowione. [E_FAIL] (<!-- TODO: review code entity reference <xref:assetId:///E_FAIL?qualifyHint=False&amp;autoUpgrade=True>  -->) jest zwracany, jeśli nie można wznowić śledzenia, ponieważ kontekst nie jest dostępny.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** FileTracker.h  
+ **Nagłówek:** FileTracker. h  
   
 ## <a name="see-also"></a>Zobacz też  
  [SuspendTracking](../msbuild/suspendtracking.md)

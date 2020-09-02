@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetIndex | Dokumentacja firmy Microsoft
+title: 'IDebugGenericParamField:: getIndex | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 327bf1eb28e3313ee8072e6330f9bbc23d3b83ce
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580381"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera indeks tego parametru ogólnego.  
+Pobiera indeks tego parametru generycznego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,16 +38,16 @@ int GetIndex(
   
 #### <a name="parameters"></a>Parametry  
  `pIndex`  
- [out] Indeks wartości tego parametru ogólnego.  
+ określoną Wartość indeksu tego parametru generycznego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Na przykład dla Dictionary(K,V), K jest indeksem 0, V jest indeks 1.  
+ Na przykład w przypadku słownika (K, V), K jest indeksem 0, V jest indeksem 1.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugGenericParamFieldType** obiekt ujawniający [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CDebugGenericParamFieldType** , który uwidacznia Interfejs [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) .  
   
 ```cpp#  
 HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)  

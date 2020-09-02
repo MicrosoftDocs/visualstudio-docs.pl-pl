@@ -1,5 +1,5 @@
 ---
-title: Removeduplicates — zadanie | Dokumentacja firmy Microsoft
+title: RemoveDuplicates — — zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,32 +20,32 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73ad829c86305ff4d9a54025467e262d56e24dbc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159243"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Usuwa zduplikowane elementy z kolekcji określonego elementu.  
+Usuwa zduplikowane elementy z określonej kolekcji elementów.  
   
 ## <a name="parameters"></a>Parametry  
  W poniższej tabeli opisano parametry `RemoveDuplicates` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`Filtered`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera kolekcję elementów z elementami wszystkie zduplikowane usunięte.|  
-|`Inputs`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Kolekcja elementów, aby usunąć zduplikowane elementy z.|  
+|`Filtered`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera kolekcję elementów z usuniętymi wszystkimi zduplikowanymi elementami.|  
+|`Inputs`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Kolekcja elementów, z której mają zostać usunięte zduplikowane elementy.|  
   
 ## <a name="remarks"></a>Uwagi  
- To zadanie jest uwzględniana wielkość liter i nie porównuje metadanych elementu, określając duplikaty.  
+ To zadanie uwzględnia wielkość liter i nie porównuje metadanych elementów podczas określania duplikatów.  
   
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie użyto `RemoveDuplicates` zadanie, aby usunąć zduplikowane elementy z `MyItems` elementu kolekcji. Po zakończeniu zadania `FilteredItems` kolekcji elementów zawiera jeden element.  
+ W poniższym przykładzie użyto `RemoveDuplicates` zadania, aby usunąć zduplikowane elementy z `MyItems` kolekcji elementów. Po zakończeniu zadania `FilteredItems` Kolekcja elementów zawiera jeden element.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

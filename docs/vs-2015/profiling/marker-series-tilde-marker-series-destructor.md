@@ -1,5 +1,5 @@
 ---
-title: 'marker_series:: ~ marker_series — destruktor | Dokumentacja firmy Microsoft'
+title: 'marker_series:: ~ marker_series destruktor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4d363b554babfbac994d9ec71eddbefd68f38d50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62562819"
 ---
-# <a name="markerseriesmarkerseries-destructor"></a>marker_series::~marker_series — Destruktor
+# <a name="marker_seriesmarker_series-destructor"></a>marker_series::~marker_series — Destruktor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Niszczy obiekt marker_series i zwalnia wszystkie zasoby przydzielone.  
+Niszczy obiekt marker_series i zwalnia wszystkie przydzieloną zasoby.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -32,9 +32,9 @@ Niszczy obiekt marker_series i zwalnia wszystkie zasoby przydzielone.
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkersobj.h  
+ **Nagłówek:** cvmarkersobj. h  
   
- **Namespace:** CONCURRENCY::Diagnostic —  
+ **Przestrzeń nazw:** Współbieżność::d przesła  
   
 ## <a name="see-also"></a>Zobacz też  
- [marker_series, klasa](../profiling/marker-series-class.md)
+ [marker_series — Klasa](../profiling/marker-series-class.md)

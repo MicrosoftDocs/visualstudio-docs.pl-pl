@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_maxStack | Microsoft Docs
+title: 'IDiaFrameData:: get_maxStack | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bacefc74c4699ef2d2d75ff7ca7af47a56cfb44b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62562892"
 ---
-# <a name="idiaframedatagetmaxstack"></a>IDiaFrameData::get_maxStack
+# <a name="idiaframedataget_maxstack"></a>IDiaFrameData::get_maxStack
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera maksymalną liczbę bajtów wypychane na stos w ramce.  
+Pobiera maksymalną liczbę bajtów wypychanych na stosie w ramce.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,13 +35,13 @@ HRESULT get_maxStack ( 
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca maksymalną liczbę bajtów wypychane na stos.  
+ określoną Zwraca maksymalną liczbę bajtów wypychanych na stosie.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wartość zwrócona przez tę metodę jest zwykle używanych w interpretacji ciągu program (zobacz [idiaframedata::get_program —](../../debugger/debug-interface-access/idiaframedata-get-program.md) metody dla definicji ciąg program).  
+ Wartość zwracana przez tę metodę jest zwykle używana w interpretacji ciągu programu (zobacz [IDiaFrameData:: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) Metoda dla definicji ciągu programu).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

@@ -1,5 +1,5 @@
 ---
-title: Funkcja CvWriteAlert | Dokumentacja firmy Microsoft
+title: Funkcja CvWriteAlert | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,16 +20,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f5c428b471c576c1ca15b73a1c8b2ccfa2cc7b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551224"
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert — Funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zapisuje plik śledzenia Concurrency Visualizer alertu.  
+Zapisuje alert do pliku śledzenia Concurrency Visualizer.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -62,20 +62,20 @@ HRESULT CvWriteAlertVA(
  Lista argumentów.  
   
  `pMarkerSeries`  
- Kontekst serii prawidłowe znacznika. Nie może mieć wartości NULL.  
+ Prawidłowy kontekst serii znaczników. Nie może mieć wartości NULL.  
   
  `pMessage`  
- Ciąg formatu komunikatów. Nie może mieć wartości NULL.  
+ Ciąg formatu komunikatu. Nie może mieć wartości NULL.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- S_OK, gdy komunikat jest pomyślnie zapisane. Kod błędu w przypadku, gdy było żadnych błędów. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.  
+ S_OK, gdy komunikat został pomyślnie zapisany. Kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkers.h  
+ **Nagłówek:** cvmarkers. h  
   
  **Unicode:** CvWriteAlertW, CvWriteAlertVW  
   
  **ANSI:** CvWriteAlertA, CvWriteAlertVA  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+ [Dokumentacja biblioteki C++](../profiling/cpp-library-reference.md)

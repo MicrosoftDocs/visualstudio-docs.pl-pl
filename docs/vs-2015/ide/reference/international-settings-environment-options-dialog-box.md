@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 26ed1ef8941db17c9cc087a80afcad2b4ce982de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650832"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>Ustawienia międzynarodowe, środowisko, opcje — Okno dialogowe
@@ -37,7 +37,7 @@ Strona Ustawienia międzynarodowe umożliwia zmianę języka domyślnego w przyp
  **Język** Wyświetla listę języków dostępnych dla zainstalowanych wersji językowych produktu. Ta opcja jest niedostępna, jeśli na maszynie nie zainstalowano więcej niż jednej wersji językowej. Jeśli wiele języków produktów lub instalacja języka mieszanego współużytkuje środowisko, wybór języka zostanie zmieniony na **taki sam, jak system Microsoft Windows**.
 
 > [!CAUTION]
-> W systemie z zainstalowanymi wieloma językami narzędzia Visual C++ Build Tools (CL. exe, link. exe, NMAKE. exe, BSCMAKE. exe i powiązane pliki) nie wpływają na to ustawienie. Narzędzia te używają wersji dla ostatniego zainstalowanego języka, a narzędzia dla zainstalowanego wcześniej języka są zastępowane, ponieważ narzędzia do kompilacji C++ wizualizacji nie korzystają z modelu satelitarnej biblioteki DLL.
+> W systemie, w którym zainstalowano wiele języków, to ustawienie nie ma wpływ na narzędzia do kompilacji Visual C++ (cl.exe, link.exe, nmake.exe, bscmake.exe i powiązane pliki). Narzędzia te używają wersji dla ostatniego zainstalowanego języka, a narzędzia dla zainstalowanego wcześniej języka są zastępowane, ponieważ narzędzia do kompilowania Visual C++ nie korzystają z modelu satelitarnej biblioteki DLL.
 
 ## <a name="see-also"></a>Zobacz też
  [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)

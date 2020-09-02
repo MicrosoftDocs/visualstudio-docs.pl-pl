@@ -1,5 +1,5 @@
 ---
-title: Idiaenuminjectedsources::Next — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumInjectedSources:: Next | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d40ed9acf9e8c82fa315517c0abc3eb6f6d3b036
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580521"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera określoną liczbę źródeł wprowadzonego w kolejności wyliczenia.  
+Pobiera określoną liczbę wstrzykniętych źródeł w sekwencji wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>Parametry  
  celt  
- [in] Liczba źródeł wprowadzonego w modułu wyliczającego do pobrania.  
+ podczas Liczba wprowadzonych źródeł w module wyliczającym do pobrania.  
   
  rgelt  
- [out] Zwraca tablicę [idiainjectedsource —](../../debugger/debug-interface-access/idiainjectedsource.md) obiektów, które reprezentuje żądany wprowadzonego źródeł.  
+ określoną Zwraca tablicę obiektów [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) , która reprezentuje żądane źródła.  
   
  pceltFetched  
- [out] Zwraca liczbę źródeł wprowadzonego w pobrano modułu wyliczającego.  
+ określoną Zwraca liczbę wprowadzonych źródeł do pobranego modułu wyliczającego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` przypadku nie ma więcej wprowadzonego źródeł. W przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca `S_FALSE` czy nie ma więcej wprowadzonych źródeł. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiaenuminjectedsources —](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   
+ [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

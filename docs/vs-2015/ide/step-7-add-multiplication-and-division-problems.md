@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7f7efb0acf6611346abe67a7a94e5c221919665
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646975"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Krok 7. Dodawanie problemów mnożenia i dzielenia
@@ -28,17 +28,17 @@ W siódmej części tego samouczka dodasz problemy mnożenia i dzielenia, ale na
      [!code-csharp[VbExpressTutorial3Step7#15](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step7/cs/form1.cs#15)]
      [!code-vb[VbExpressTutorial3Step7#15](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step7/vb/form1.vb#15)]
 
-2. Tak jak wcześniej, zmodyfikuj metodę `StartTheQuiz()`, aby wprowadzić liczby losowe dla problemów mnożenia i dzielenia.
+2. Tak jak wcześniej, zmodyfikuj metodę, `StartTheQuiz()` Aby wprowadzić liczby losowe dla problemów mnożenia i dzielenia.
 
      [!code-csharp[VbExpressTutorial3Step7#16](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step7/cs/form1.cs#16)]
      [!code-vb[VbExpressTutorial3Step7#16](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step7/vb/form1.vb#16)]
 
-3. Zmodyfikuj metodę `CheckTheAnswer()` tak, aby sprawdzał również problemy z mnożeniem i dzieleniem.
+3. Zmodyfikuj `CheckTheAnswer()` metodę, tak aby sprawdzali również problemy z mnożeniem i dzieleniem.
 
      [!code-csharp[VbExpressTutorial3Step7#17](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step7/cs/form1.cs#17)]
      [!code-vb[VbExpressTutorial3Step7#17](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step7/vb/form1.vb#17)]
 
-     Nie można łatwo wprowadzić znaku mnożenia (x) i znaku dzielenia (÷) przy użyciu klawiatury, dlatego Wizualizacja C# i Visual Basic akceptują gwiazdkę (*) dla mnożenia i ukośnika (/) dla dzielenia.
+     Nie można łatwo wprowadzić znaku mnożenia (x) i znaku dzielenia (÷) przy użyciu klawiatury, dlatego Visual C# i Visual Basic akceptują gwiazdkę (*) dla mnożenia i ukośnika (/) dla dzielenia.
 
 4. Zmień ostatnią część programu obsługi zdarzeń taktu czasomierza, tak aby wypełnił poprawną odpowiedź, gdy skończy się czas.
 

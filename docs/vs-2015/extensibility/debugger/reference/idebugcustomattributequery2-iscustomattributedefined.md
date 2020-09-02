@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Dokumentacja firmy Microsoft
+title: 'IDebugCustomAttributeQuery2:: IsCustomAttributeDefined | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6ef6a04d263e322d408bb7d7c95da1929d89010c
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62569322"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
@@ -40,13 +40,13 @@ int IsCustomAttributeDefined(
   
 #### <a name="parameters"></a>Parametry  
  `pszCustomAttributeName`  
- [in] Ciąg zawierający nazwę atrybutu niestandardowego można znaleźć.  
+ podczas Ciąg zawierający nazwę atrybutu niestandardowego do znalezienia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca wartość S_OK, jeśli atrybut niestandardowy jest zdefiniowany w tym polu, w przeciwnym razie zwraca S_FALSE.  
+ Zwraca S_OK, jeśli atrybut niestandardowy jest zdefiniowany w tym polu, w przeciwnym razie zwraca S_FALSE.  
   
 ## <a name="remarks"></a>Uwagi  
- Aby uzyskać bajtów atrybut skojarzony z atrybutu niestandardowego, należy wywołać [getcustomattributebyname —](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) metody.  
+ Aby uzyskać atrybut bajty skojarzone z atrybutem niestandardowym, wywołaj metodę [GetCustomAttributeByName —](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) .  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

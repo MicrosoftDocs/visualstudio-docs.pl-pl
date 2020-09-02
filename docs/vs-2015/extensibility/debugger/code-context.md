@@ -1,5 +1,5 @@
 ---
-title: Kontekst kodu | Dokumentacja firmy Microsoft
+title: Kontekst kodu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,26 +11,26 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d59a4c79cb21386fa6f6e7031404aeb0b435b3b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197373"
 ---
 # <a name="code-context"></a>Kontekst kodu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-W [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugowania **kontekst kodu**:  
+W [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugowaniu, **kontekst kodu**:  
   
-- Udostępnia abstrakcję pozycji w kodzie, ponieważ wiadomo, że aparat debugowania (DE). Dla większości architektury w czasie wykonywania, kontekst kodu można traktować jako adres w usłudze stream instrukcji programu. Nietradycyjnych języków, w którym kod nie może być reprezentowany przez instrukcje, kontekst kodu mogą być reprezentowane za pomocą innych środków.  
+- Zapewnia abstrakcję pozycji w kodzie, która jest znana aparatowi debugowania (DE). W przypadku większości architektur w czasie wykonywania dzisiaj, kontekst kodu może być uważany za adres w strumieniu instrukcji programu. W przypadku języków nietradycyjnych, gdzie kod nie może być reprezentowany przez instrukcje, kontekst kodu może być reprezentowany przez inny sposób.  
   
-- W tym artykule opisano bieżącą pozycję w strumieniu wykonywanie debugowanego programu.  
+- Opisuje bieżącą pozycję w strumieniu wykonywania debugowanego programu.  
   
-- Istnieje tylko wtedy, gdy programu zostało zatrzymane w punkcie przerwania.  
+- Występuje tylko wtedy, gdy program został zatrzymany w punkcie przerwania.  
   
-- Nie ma skojarzonego kontekstu.  
+- Ma skojarzony kontekst dokumentu.  
   
-- Jest implementowana przez [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) interfejsu.  
+- Jest zaimplementowany przez interfejs [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Kontekst dokumentu](../../extensibility/debugger/document-context.md)   

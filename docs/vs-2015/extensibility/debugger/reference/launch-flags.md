@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS | Dokumentacja firmy Microsoft
+title: LAUNCH_FLAGS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,13 +13,13 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f209ed773a72c3925661bd81ecfe2685408b3189
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147464"
 ---
-# <a name="launchflags"></a>LAUNCH_FLAGS
+# <a name="launch_flags"></a>LAUNCH_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Określa flagi uruchamiania debugowania.  
@@ -50,23 +50,23 @@ public enum enum_LAUNCH_FLAGS { 
  Uruchamia proces debugowania.  
   
  LAUNCH_NODEBUG  
- Uruchamia proces bez debugowania go.  
+ Uruchamia proces bez debugowania.  
   
  LAUNCH_ENABLE_ENC  
  PRZESTARZAŁE, NIE NALEŻY UŻYWAĆ.  
   
  LAUNCH_MERGE_ENV  
- Uruchamia proces i scala środowiska za pomocą uruchamiania hosta.  
+ Uruchamia proces i scala środowisko z hostem uruchamianym.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wartości są przekazywane jako argument do [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metody.  
+ Te wartości są przesyłane jako argument do metody [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) .  
   
- Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.  
+ Flagi te mogą być połączone z bitową `OR` .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

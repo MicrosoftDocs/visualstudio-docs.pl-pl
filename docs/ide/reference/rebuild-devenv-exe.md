@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76fe4bcf3441163604d93e9264ed6f78fcf0224b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565620"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 
-Czyści, a następnie tworzy konfigurację określonego rozwiązania.
+Czyści, a następnie kompiluje określoną konfigurację rozwiązania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,33 +37,33 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
   Wymagany. Pełna ścieżka i nazwa pliku rozwiązania.
 
-- *Nazwa SolnConfigName*
+- *SolnConfigName*
 
-  Element opcjonalny. Nazwa konfiguracji rozwiązania (na `Debug` przykład `Release`lub ) do przebudowy rozwiązania o nazwie w *SolutionName*. Jeśli dostępna jest więcej niż jedna platforma rozwiązania, należy `Debug|Win32`również określić platformę (na przykład). Jeśli ten argument jest nieokreślony lub`""`pusty ciąg ( ), narzędzie używa aktywnej konfiguracji rozwiązania.
+  Opcjonalny. Nazwa konfiguracji rozwiązania (na przykład `Debug` lub `Release` ), która ma zostać użyta do odbudowania rozwiązania o nazwie w *SolutionName*. Jeśli jest dostępna więcej niż jedna platforma rozwiązania, należy również określić platformę (na przykład `Debug|Win32` ). Jeśli ten argument jest nieokreślony lub jest ciągiem pustym ( `""` ), narzędzie używa aktywnej konfiguracji rozwiązania.
 
-- `/Project`*Nazwa proj*
+- `/Project` *ProjName*
 
-  Element opcjonalny. Ścieżka i nazwa pliku projektu w rozwiązaniu. Można wprowadzić nazwę wyświetlaną projektu lub ścieżkę względną z folderu *SolutionName* do pliku projektu. Można również wprowadzić pełną ścieżkę i nazwę pliku projektu.
+  Opcjonalny. Ścieżka i nazwa pliku projektu w ramach rozwiązania. Możesz wprowadzić nazwę wyświetlaną projektu lub ścieżkę względną z folderu *SolutionName* do pliku projektu. Możesz również wprowadzić pełną ścieżkę i nazwę pliku projektu.
 
-- `/ProjectConfig`*Nazwa ProjConfigName*
+- `/ProjectConfig`*ProjConfigName*
 
-  Element opcjonalny. Nazwa konfiguracji kompilacji projektu (na przykład `Debug` lub `Release`) do `/Project` użycia podczas przebudowy o nazwie. Jeśli dostępna jest więcej niż jedna platforma rozwiązania, należy `Debug|Win32`również określić platformę (na przykład). Jeśli ten przełącznik jest określony, zastępuje *SolnConfigName* argument.
+  Opcjonalny. Nazwa konfiguracji kompilacji projektu (taka jak `Debug` lub), `Release` która ma być używana podczas odbudowywania `/Project` nazwanego. Jeśli jest dostępna więcej niż jedna platforma rozwiązania, należy również określić platformę (na przykład `Debug|Win32` ). Jeśli ten przełącznik jest określony, zastępuje argument *SolnConfigName* .
 
-- `/Out`*Plik wyjściowy*
+- `/Out`*OutputFilename*
 
-  Element opcjonalny. Nazwa pliku, do którego chcesz wysłać dane wyjściowe narzędzia. Jeśli plik już istnieje, narzędzie dołącza dane wyjściowe na końcu pliku.
+  Opcjonalny. Nazwa pliku, do którego chcesz wysłać dane wyjściowe narzędzia. Jeśli plik już istnieje, narzędzie dołącza dane wyjściowe do końca pliku.
 
 ## <a name="remarks"></a>Uwagi
 
-- Ten przełącznik robi to samo, co polecenie menu **Odbuduj rozwiązanie** w środowisku IDE.
+- Ten przełącznik działa tak samo jak polecenie menu **Kompiluj rozwiązanie** w środowisku IDE.
 
-- Łącz ciągi, które zawierają spacje w cudzysłowie podwójnym.
+- Ujmij ciągi, które zawierają spacje w podwójnym cudzysłowie.
 
-- Podsumowanie informacji dotyczących czyszczenia i tworzenia, w tym błędów, mogą być wyświetlane w oknie **polecenia** lub w dowolnym pliku dziennika określonym za pomocą przełącznika [/Out.](out-devenv-exe.md)
+- Informacje podsumowujące dla czyszczenia i kompilowania, w tym błędy, można wyświetlić w oknie **polecenia** lub w dowolnym pliku dziennika określonym za pomocą przełącznika [/out](out-devenv-exe.md) .
 
 ## <a name="example"></a>Przykład
 
-W tym przykładzie czyści `CSharpWinApp`i `Debug` odbudowuje projekt, przy użyciu konfiguracji kompilacji projektu w ramach `MySolution`.
+Ten przykład czyści i rekonstruuje projekt `CSharpWinApp` przy użyciu `Debug` konfiguracji kompilacji projektu w programie `MySolution` .
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug

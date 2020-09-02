@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio 2015 | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio 2015 | Microsoft Docs'
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -11,34 +11,34 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ec050cf8f365bfae2290593a0c7f215dcb2f39cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185998"
 ---
-# <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Instrukcje: Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio
+# <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Porady: automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
 
-Można zastosować klucz produktu programowego jako część skryptu, który umożliwia automatyzowanie wdrażania programu Visual Studio 2015. Klucze produktów można ustawić na urządzeniu programowo podczas instalacji programu Visual Studio lub po ukończeniu instalacji.
+Możesz programowo zastosować swój klucz produktu w ramach skryptu służącego do automatyzowania wdrożenia programu Visual Studio 2015. Klucze produktów można ustawiać na urządzeniu programowo podczas instalacji programu Visual Studio lub po zakończeniu instalacji.
 
-## <a name="apply-the-license-during-installation"></a>Zastosować licencję podczas instalacji
- Aby zastosować klucz produktu podczas procesu instalacji programu Visual Studio, należy użyć parametru/ProductKey. Ten parametr instalacji może służyć za pomocą/silent parametru, aby zainstalować program Visual Studio w stanie już licencjonowane dla użytkownika końcowego. Aby użyć parametru/ProductKey, otwórz wiersz polecenia. Uruchomienie programu instalacyjnego (na przykład vs_enterprise.exe lub vs_professional.exe) i ustaw dla parametru/ProductKey za pomocą klucza produktu (25 znaków), który zawiera nie kresek:
+## <a name="apply-the-license-during-installation"></a>Zastosuj licencję podczas instalacji
+ Użyj parametru/ProductKey, aby zastosować klucz produktu podczas procesu instalacji programu Visual Studio. Tego parametru instalacji można użyć z parametrem/Silent, aby zainstalować program Visual Studio w stanie już licencjonowanym dla użytkownika końcowego. Aby użyć parametru/ProductKey, Otwórz wiersz polecenia. Uruchom program instalacyjny (na przykład vs_enterprise.exe lub vs_professional.exe) i ustaw parametr/ProductKey za pomocą klucza produktu (25 znaków) bez kresek:
 
- To przykładowe polecenie dotyczące instalowania programu Visual Studio Enterprise 2015 z kluczem produktu AAAAABBBBBCCCCCDDDDDEEEEEEE:
+ Jest to przykładowe polecenie służące do instalowania programu Visual Studio 2015 Enterprise z użyciem klucza produktu AAAAABBBBBCCCCCDDDDDEEEEEEE:
 
  `vs_enterprise.exe [any other setup parameters] /ProductKey AAAAABBBBBCCCCCDDDDDDEEEEEE`
 
-## <a name="apply-the-license-after-installation"></a>Po zainstalowaniu Zastosuj licencji
- Zainstalowana wersja programu Visual Studio za pomocą klucza produktu można aktywować za pomocą narzędzia storePID.exe na komputerach docelowych w trybie dyskretnym. StorePID.exe to program narzędzie instalowanej razem z Visual Studio na  **\<dysku >:\\\Program pliki (x86) \Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe**.
+## <a name="apply-the-license-after-installation"></a>Zastosuj licencję po instalacji
+ Zainstalowaną wersję programu Visual Studio można aktywować za pomocą klucza produktu przy użyciu narzędzia storePID.exe na komputerach docelowych w trybie dyskretnym. StorePID.exe to program narzędziowy instalowany razem z programem Visual Studio w lokalizacji ** \<drive> : \\ \Program Files (x86) \Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe**.
 
- Uruchom storePID.exe z podwyższonym poziomem uprawnień, przy użyciu agenta programu System Center lub wiersz polecenia, a następnie za pomocą klucza produktu (z kreskami) i kod produktu firmy Microsoft (MPC). Pamiętaj uwzględnić kresek klucz produktu!
+ Uruchom storePID.exe z podniesionymi uprawnieniami, korzystając z programu System Center Agent lub wiersza polecenia z podwyższonym poziomem uprawnień, a następnie klucza produktu (w tym kresek) i kodu produktu firmy Microsoft (MPC). Pamiętaj o uwzględnieniu kresek w kluczu produktu!
 
  `StorePID.exe [product key including the dashes] [MPC]`
 
- Oto przykładowy wiersz polecenia dotyczące instalowania programu Visual Studio 2015 Enterprise, która ma MPC 07060, za pomocą klucza produktu "AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE":
+ Jest to przykładowy wiersz polecenia służący do instalowania programu Visual Studio 2015 Enterprise, który ma MPC 07060 z kluczem produktu "AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE":
 
  `C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 07060`
 
@@ -54,10 +54,10 @@ Można zastosować klucz produktu programowego jako część skryptu, który umo
 |Visual Studio Professional 2013|06177|
 |Visual Studio Test Professional 2013|06194|
 
-Aby uzyskać więcej informacji na temat pobierania klucza produktu, zobacz [jak: Znajdź klucz produktu programu Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md).
+Aby uzyskać więcej informacji na temat uzyskiwania klucza produktu, zobacz [How to: Lokalizowanie klucza produktu Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md).
 
-StorePID.exe pomyślnie zastosować klucz produktu, zwróci 0. W przypadku wykrycia błędów, zwróci liczbę z zakresu od 1 do 6.
+Jeśli StorePID.exe pomyślnie zastosować klucz produktu, zwróci 0. Jeśli wystąpią błędy, zwróci liczbę z zakresu od 1 do 6.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instalowanie programu Visual Studio](../install/install-visual-studio-2015.md)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2e8891307520ee841fbed1591565624f2016939
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565906"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Opis modeli, klas i relacji
@@ -22,7 +22,7 @@ Język specyficzny dla domeny (DSL) jest zdefiniowany przez plik definicji DSL, 
  W tym temacie objaśniono centralne funkcje definicji DSL.
 
 ## <a name="the-dsl-definition"></a>Definicja DSL
- Po otwarciu `Dsl\DslDefinition.dsl`okno programu Visual Studio będzie wyglądać podobnie do poniższej ilustracji.
+ Po otwarciu `Dsl\DslDefinition.dsl` okno programu Visual Studio będzie wyglądać podobnie do poniższej ilustracji.
 
  ![Projektant DSL](../modeling/media/dsl_designer.png)
 
@@ -128,9 +128,9 @@ Język specyficzny dla domeny (DSL) jest zdefiniowany przez plik definicji DSL, 
  Podczas tworzenia relacji w definicji DSL, nazwy właściwości i relacji są określone wartościami domyślnymi. Można jednak je zmienić.
 
 ## <a name="multiplicities"></a>Liczebnościami
- Liczebność określają, ile elementów może mieć tę samą rolę w relacji domeny. W tym przykładzie ustawienie liczebności zero-do-wielu (0..\*) w roli **katalogu** określa, że każde wystąpienie klasy domeny **wydawcy** może mieć dowolną liczbę linków relacji **PublisherCatalog** , które chcesz nadać.
+ Liczebność określają, ile elementów może mieć tę samą rolę w relacji domeny. W tym przykładzie ustawienie liczebności zero-do-wielu (0.. \* ) w roli **wykazu** określa, że każde wystąpienie klasy domeny **wydawcy** może mieć dowolną liczbę linków relacji **PublisherCatalog** , które chcesz nadać.
 
- Skonfiguruj liczebność roli, wpisując ją na diagramie lub modyfikując właściwość `Multiplicity` w oknie **Właściwości** . W poniższej tabeli opisano ustawienia dla tej właściwości.
+ Skonfiguruj liczebność roli, wpisując ją na diagramie lub modyfikując `Multiplicity` Właściwość w oknie **Właściwości** . W poniższej tabeli opisano ustawienia dla tej właściwości.
 
 |Typ mnożenia|Opis|
 |-|-|
@@ -148,6 +148,6 @@ Język specyficzny dla domeny (DSL) jest zdefiniowany przez plik definicji DSL, 
 
  Relacja pochodna określa swoją relację podstawową. Klasy domeny, z którymi łączy się, powinny pochodzić lub takie same, jak klasy połączone przez relację podstawową. Gdy w modelu tworzony jest link do relacji pochodnej, jest to wystąpienie zarówno pochodne, jak i podstawowych relacji. W kodzie programu można przejść do przeciwległego końca łącza przy użyciu właściwości generowanych przez bazę lub klasę pochodną.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

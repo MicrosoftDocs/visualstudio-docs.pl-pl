@@ -38,10 +38,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 025ba2eb95514efc740d1f8f7b3bf674d6bf237a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645637"
 ---
 # <a name="finding-and-replacing-text"></a>Znajdowanie i zastępowanie tekstu
@@ -61,7 +61,7 @@ Możesz znaleźć i zamienić tekst w edytorze kodu programu Visual Studio oraz 
 
  Możesz uzyskać dostęp do opcji zamiany, wybierając przycisk obok pola tekstowego **Znajdź** . Aby dokonać jednej zamiany, wybierz przycisk **Zamień następny** obok pola tekstowego **Zastąp** . Aby zastąpić wszystkie dopasowania, wybierz przycisk **Zamień wszystko** .
 
- Aby zmienić kolor podświetlenia dla dopasowania, wybierz menu **Narzędzia** , wybierz pozycję **Opcje**, a następnie wybierz pozycję **środowisko**i wybierz pozycję **czcionki i kolory**. Na liście **Pokaż ustawienia dla** wybierz pozycję **Edytor tekstu**, a następnie na liście **Wyświetl elementy** wybierz pozycję **Znajdź Wyróżnij (rozszerzenie)** .
+ Aby zmienić kolor podświetlenia dla dopasowania, wybierz menu **Narzędzia** , wybierz pozycję **Opcje**, a następnie wybierz pozycję **środowisko**i wybierz pozycję **czcionki i kolory**. Na liście **Pokaż ustawienia dla** wybierz pozycję **Edytor tekstu**, a następnie na liście **Wyświetl elementy** wybierz pozycję **Znajdź Wyróżnij (rozszerzenie)**.
 
 ### <a name="searching-tool-windows"></a>Wyszukiwanie okien narzędzi
  Możesz użyć kontrolki **Znajdź** w oknach kodu lub tekstu, takich jak okna **danych wyjściowych** , i **znajdować wyniki** w systemie Windows, wybierając **Znajdź i Zamień** w menu **Edycja** lub (Ctrl + F).
@@ -74,7 +74,7 @@ Możesz znaleźć i zamienić tekst w edytorze kodu programu Visual Studio oraz 
  Po wybraniu przycisku **Znajdź wszystkie**zostanie otwarte okno **Znajdź wyniki** i zostanie wyświetlona lista dopasowań dla wyszukiwania. Wybranie wyniku z listy powoduje wyświetlenie skojarzonego pliku i wyróżnienie dopasowania. Jeśli plik nie jest jeszcze otwarty do edycji, zostanie otwarty na karcie podglądu po prawej stronie w obszarze karty. Możesz użyć kontrolki **Znajdź** , aby przeszukać listę **Znajdź wyniki** .
 
 ### <a name="creating-custom-search-folder-sets"></a>Tworzenie niestandardowych zestawów folderów wyszukiwania
- Zakres wyszukiwania można zdefiniować, wybierając przycisk **Wybierz foldery wyszukiwania** (wygląda jak **...** ) obok pola **Szukaj w** . W oknie dialogowym **Wybieranie folderów wyszukiwania** możesz określić zestaw folderów do wyszukania, a także zapisać specyfikację, aby później można było użyć jej ponownie. Foldery na komputerze zdalnym można określić tylko wtedy, gdy dysk został zmapowany na komputer lokalny.
+ Zakres wyszukiwania można zdefiniować, wybierając przycisk **Wybierz foldery wyszukiwania** (wygląda jak **...**) obok pola **Szukaj w** . W oknie dialogowym **Wybieranie folderów wyszukiwania** możesz określić zestaw folderów do wyszukania, a także zapisać specyfikację, aby później można było użyć jej ponownie. Foldery na komputerze zdalnym można określić tylko wtedy, gdy dysk został zmapowany na komputer lokalny.
 
 ### <a name="creating-custom-component-sets"></a>Tworzenie niestandardowych zestawów składników
  Zestawy składników można definiować jako zakres wyszukiwania, wybierając przycisk **Edytuj niestandardowy zestaw składników** obok pola **Szukaj w** . Można określić zainstalowane składniki .NET lub COM, projekty programu Visual Studio, które znajdują się w rozwiązaniu lub dowolnego zestawu lub biblioteki typów (. dll,. tlb,. olb,. exe lub. ocx). Aby wyszukać odwołania, zaznacz pole **odszukaj w odwołaniach** .

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetReference | Dokumenty firmy Microsoft
+title: 'IDebugProperty2:: GetReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4f119a00139e2af44f771fa0903c73b8003dd77f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721354"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
@@ -41,10 +41,10 @@ int GetReference(
 
 ## <a name="parameters"></a>Parametry
 `ppRererence`\
-[na zewnątrz] Zwraca obiekt [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) reprezentujący odwołanie do wartości właściwości.
+określoną Zwraca obiekt [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) reprezentujący odwołanie do wartości właściwości.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod `E_NOTIMPL` `E_GETREFERENCE_NO_REFERENCE`błędu, zazwyczaj lub .
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu, zwykle `E_NOTIMPL` lub `E_GETREFERENCE_NO_REFERENCE` .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
