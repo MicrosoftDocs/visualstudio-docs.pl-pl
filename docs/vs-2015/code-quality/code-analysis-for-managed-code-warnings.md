@@ -1,6 +1,6 @@
 ---
 title: Analiza kodu dla ostrzeżeń związanych z kodem zarządzanym | Microsoft Docs
-ms.date: 11/15/2016
+ms.date: 08/31/2020
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - code analysis,managed code
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
 caps.latest.revision: 22
-author: jillre
-ms.author: jillfra
+author: mikadumont
+ms.author: midumont
 manager: wpickett
-ms.openlocfilehash: 5294840e4669f28f4e8a04978274ad130d1397ee
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e689d137e071096d096e117ef3b79df405a060ed
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535736"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89285752"
 ---
-# <a name="code-analysis-for-managed-code-warnings"></a>Analiza kodu dla zarządzanego kodu — Ostrzeżenia
+# <a name="net-code-analysis-rules"></a>Reguły analizy kodu platformy .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Narzędzie do analizy kodu zarządzanego zawiera ostrzeżenia wskazujące naruszenia reguł w zarządzanych bibliotekach kodu. Ostrzeżenia są zorganizowane w obszary reguły, takie jak projektowanie, lokalizacja, wydajność i zabezpieczenia. Każde ostrzeżenie oznacza naruszenie reguły analizy kodu zarządzanego. Ta sekcja zawiera szczegółowe omówienie i przykłady dla każdego ostrzeżenia analizy kodu zarządzanego.
