@@ -1,5 +1,5 @@
 ---
-title: Manifesty aplikacji i wdrożenia w rozwiązaniach pakietu Office
+title: Aplikacje i manifesty wdrożenia w rozwiązaniach pakietu Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,35 +16,35 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d22d58eb8a2264d5c7765a15726db556c7d5569f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62942905"
 ---
-# <a name="application-and-deployment-manifests-in-office-solutions"></a>Manifesty aplikacji i wdrożenia w rozwiązaniach pakietu Office
-  Manifest aplikacji jest plikiem XML, który dostarcza informacje o używanym przez rozwiązania do pakietu Office, aby znaleźć i zaktualizować jego zestawów. Manifest aplikacji może służyć z manifestu wdrażania jest plikiem XML przechowywane na serwerze, który zawiera informacje potrzebne do zlokalizowania aktualna wersja manifestu aplikacji i zestawy.
+# <a name="application-and-deployment-manifests-in-office-solutions"></a>Aplikacje i manifesty wdrożenia w rozwiązaniach pakietu Office
+  Manifest aplikacji to plik XML, który zawiera informacje, które są używane przez rozwiązanie pakietu Office do lokalizowania i aktualizowania zestawów. Manifest aplikacji może być używany z manifestem wdrożenia, który jest plikiem XML przechowywanym na serwerze, który zawiera informacje konieczne do zlokalizowania najnowszej wersji manifestu aplikacji i zestawów.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="manifest-structure-for-office-solutions"></a>Struktura manifestu dla rozwiązań pakietu Office
- Rozwiązania Microsoft Office utworzone przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio wszystkie manifesty opierają się na schemat standardowy ClickOnce. Podczas wdrażania rozwiązania pakietu Office, manifestów aplikacji na poziomie dokumentu i projektów dodatku VSTO znajdują się w pamięci podręcznej funkcji ClickOnce. Manifesty wdrożenia nie są kopiowane do komputera klienckiego.
+ W przypadku rozwiązań Microsoft Office utworzonych przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio wszystkie manifesty są oparte na standardowym schemacie technologii ClickOnce. Podczas wdrażania rozwiązań pakietu Office manifesty aplikacji dla projektów dodatków na poziomie dokumentu i VSTO znajdują się w pamięci podręcznej ClickOnce. Manifesty wdrożenia nie są kopiowane na komputer kliencki.
 
- Aby uzyskać informacje o zawartości aplikacji i manifestów wdrożenia dla projektów pakietu Office, zobacz [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md) i [manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md).
+ Aby uzyskać informacje o zawartości manifestów aplikacji i wdrażania dla projektów pakietu Office, zobacz [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md) i [manifestów wdrażania dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md).
 
-## <a name="create-application-and-deployment-manifests"></a>Tworzenie aplikacji i wdrażania manifestów
- Manifesty aplikacji są tworzone automatycznie jako część procesu kompilacji. Za każdym razem, gdy tworzysz projekt poziomie dokumentu, lokalizację pliku manifestu wdrożenia zostanie osadzony w dokumencie niestandardową właściwość dokumentu. Dla dodatków narzędzi VSTO dla programów lokalizację pliku manifestu wdrożenia są przechowywane w rejestrze.
+## <a name="create-application-and-deployment-manifests"></a>Tworzenie manifestów aplikacji i wdrażania
+ Manifesty aplikacji są tworzone automatycznie w ramach procesu kompilacji. Za każdym razem, gdy kompilujesz projekt na poziomie dokumentu, lokalizacja manifestu wdrożenia jest osadzona w dokumencie jako właściwość dokumentu niestandardowego. W przypadku dodatków narzędzi VSTO lokalizacja manifestu wdrożenia jest przechowywana w rejestrze.
 
- Aby uzyskać więcej informacji na temat **Kreatora publikacji**, zobacz [wdrażania rozwiązania pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
+ Aby uzyskać więcej informacji na temat **Kreatora publikacji**, zobacz [wdrażanie rozwiązania z pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
- Aby uzyskać więcej informacji na temat manifestów współpracują z rozwiązań pakietu Office, zobacz [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).
+ Aby uzyskać więcej informacji na temat sposobu działania manifestów z rozwiązaniami pakietu Office, zobacz [wdrażanie rozwiązania pakietu Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)
+- [Architektura dostosowań na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)
 - [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)
 - [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)
-- [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)
+- [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)

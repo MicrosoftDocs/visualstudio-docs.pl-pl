@@ -1,5 +1,5 @@
 ---
-title: Złącze gotowe do gwintu | Dokumenty firmy Microsoft
+title: Łącznik gotowy do wątku | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20842cc277246bba6c9e05c6c59a937a89b5f6bc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62943500"
 ---
-# <a name="thread-ready-connector"></a>Złącze gotowe do gwintu
-Po kliknięciu segmentu blokowania, aby zobaczyć stos wywołań i jego odblokowywanie stosu, łącznik gotowy do wątku może również pojawić się. Jeśli zdarzenie odblokowania wystąpiło w innym wątku w bieżącym procesie, łącznik gotowy do wątku wizualnie identyfikuje segment wątku i wykonywania, który umożliwił zablokowanemu wątkowi wznowienie wykonywania.
+# <a name="thread-ready-connector"></a>Łącznik gotowy do wątku
+Po kliknięciu segmentu blokującego, aby wyświetlić stos wywołań i jego stos odblokowywania, może również pojawić się łącznik gotowy do wątku. Jeśli wystąpiło odblokowanie zdarzenia w innym wątku w bieżącym procesie, łącznik gotowy do wątku wizualnie zidentyfikuje wątek i segment wykonywania, który włączył zablokowany wątek, aby wznowić wykonywanie.

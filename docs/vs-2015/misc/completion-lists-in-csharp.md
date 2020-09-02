@@ -1,5 +1,5 @@
 ---
-title: Listy uzupełniania w języku C# | Dokumentacja firmy Microsoft
+title: Listy uzupełniania w języku C# | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -13,15 +13,15 @@ author: BillWagner
 ms.author: wiwagn
 manager: jillfra
 ms.openlocfilehash: a9806a5f092ab4924533f67c22d0adf78b99fb8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62946781"
 ---
 # <a name="completion-lists-in-c"></a>Listy uzupełniania w języku C\#
 
-Ta zawartość została przeniesiona do [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)
+Ta zawartość została przeniesiona do funkcji [IntelliSense języka Visual C#](../ide/visual-csharp-intellisense.md)
 
 ## <a name="see-also"></a>Zobacz też
-- [Fragmenty kodu Visual C#](../ide/visual-csharp-code-snippets.md)
+- [Fragmenty kodu w języku Visual C#](../ide/visual-csharp-code-snippets.md)

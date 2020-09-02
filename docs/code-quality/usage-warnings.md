@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 66d78988ef70e4f991dd02cb16a164cbf48e55f1
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89176081"
 ---
 # <a name="usage-warnings"></a>Wykorzystanie — Ostrzeżenia 
@@ -77,4 +77,4 @@ Ostrzeżenia dotyczące użycia obsługują poprawne użycie platformy .NET.
 |[CA2246: Nie przypisuj symbolu i jego składowej w tej samej instrukcji](../code-quality/ca2246.md)|Przypisanie symbolu i jego elementu członkowskiego, czyli pola lub właściwości, w tej samej instrukcji nie jest zalecane. Nie jest jasne, jeśli dostęp do elementu członkowskiego był przeznaczony do użycia starej wartości symbolu przed przypisaniem lub nową wartością z przypisania w tej instrukcji.|
 |[CA2247: Argument przekazany do konstruktora TaskCompletionSource musi być wyliczeniem TaskCreationOptions, a nie wyliczeniem TaskContinuationOptions](../code-quality/ca2246.md)|TaskCompletionSource ma konstruktory, które przyjmują opcji TaskCreationOptions, które kontrolują podstawowe zadanie, i konstruktorów, które przyjmują stan obiektu, który jest przechowywany w zadaniu.  Przypadkowe przekazanie TaskContinuationOptions zamiast opcji TaskCreationOptions spowoduje wywołanie opcji jako stanu.|
 |[CA2248: Podaj poprawny argument "enum" dla elementu "enum. HasFlag"](../code-quality/ca2248.md)|Typ wyliczeniowy przesłany jako argument `HasFlag` wywołania metody różni się od typu wyliczeniowego wywołującego.|
-|[CA2249: Rozważ użycie ciągu. Contains zamiast String. IndexOf](../code-quality/ca2249.md)|Wywołania, do `string.IndexOf` których wynik służy do sprawdzania obecności lub braku podciągu, mogą zostać zastąpione przez `string.Contains` .|
+|[CA2249: Rozważ użycie metody String.Contains zamiast String.IndexOf](../code-quality/ca2249.md)|Wywołania, do `string.IndexOf` których wynik służy do sprawdzania obecności lub braku podciągu, mogą zostać zastąpione przez `string.Contains` .|

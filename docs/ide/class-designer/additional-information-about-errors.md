@@ -29,22 +29,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dc8b2c013a3e685a6071f4a12d63e3ca475051a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596518"
 ---
 # <a name="class-designer-errors"></a>Błędy Projektanta klas
 
-**Projektant klas** nie śledzi lokalizacji plików źródłowych, więc modyfikowanie struktury projektu lub przenoszenie plików źródłowych w projekcie może spowodować, że **Projektant klas** utracił śledzenie typu, Na przykład często modyfikuje typ źródłowy type typedef, klas podstawowych i typów skojarzeń. Może pojawić się błąd, taki jak **Projektant klas nie może wyświetlić tego typu**. Aby rozwiązać ten problem, przeciągnij zmodyfikowany lub przeniesiony kod źródłowy do diagramu klas ponownie, aby go wyświetlić.
+**Projektant klas** nie śledzi lokalizacji plików źródłowych, dlatego zmodyfikowanie struktury projektu lub przeniesienie plików źródłowych w projekcie może spowodować, że **Projektant klas** utraci śledzenie typu, na przykład, często modyfikuje typ źródła typedef, klas bazowych i typów skojarzeń. Może zostać wyświetlony błąd, taki jak **Projektant klas nie może wyświetlić tego typu**. Aby rozwiązać ten problem, przeciągnij zmodyfikowany lub ponownie zlokalizowany kod źródłowy do diagramu klas, aby go wyświetlić.
 
 ## <a name="resources"></a>Zasoby
 
 Pomoc dotyczącą innych błędów i ostrzeżeń można znaleźć w następujących zasobach:
 
-- [Praca z kodem języka Visual C++](working-with-visual-cpp-code.md) zawiera informacje dotyczące rozwiązywania problemów z wyświetlaniem języka C++ na diagramie klasy.
-- [Forum projektanta klas programu Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner) zawiera forum pytań dotyczących **projektanta klas.**
+- [Współpraca z kodem Visual C++](working-with-visual-cpp-code.md) zawiera informacje dotyczące rozwiązywania problemów z wyświetlaniem języka C++ w diagramie klas.
+- [Forum Projektant klas programu Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner) zawiera Forum dotyczące pytań dotyczących **Projektant klas**.
 
 ## <a name="see-also"></a>Zobacz też
 
