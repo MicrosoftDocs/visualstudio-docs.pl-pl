@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 113d6aafbd09f6b726613405a8c1eb82f9e202e5
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330037"
 ---
 # <a name="cvleavespan-function"></a>Cvleavespan —, funkcja
@@ -31,7 +31,7 @@ HRESULT CvLeaveSpan(
 ```
 
 #### <a name="parameters"></a>Parametry
- `pSpan`Obiekt span zwrócony przez poprzednie wywołanie do CvEnterSpan *. Nie może mieć wartości NULL.
+ `pSpan` Obiekt span zwrócony przez poprzednie wywołanie do CvEnterSpan *. Nie może mieć wartości NULL.
 
 ## <a name="return-value"></a>Wartość zwracana
  S_OK, gdy komunikat został pomyślnie zapisany. Kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.

@@ -1,5 +1,5 @@
 ---
-title: Element CustomDataSignature (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: CustomDataSignature, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,16 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ec8bae34da0f007bac65f26c4e442c1d03e56d08
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739442"
 ---
-# <a name="customdatasignature-element-visual-studio-templates"></a>Element CustomDataSignature (szablony programu Visual Studio)
-Określa podpis tekstowy, aby zlokalizować dane niestandardowe.
+# <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature, element (szablony Visual Studio)
+Określa podpis tekstowy do lokalizowania danych niestandardowych.
 
- \<> \<templatedata> \<>
+ \<VSTemplate> \<TemplateData>
+ \<CustomDataSignature>
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,15 +44,15 @@ Określa podpis tekstowy, aby zlokalizować dane niestandardowe.
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób jego wyświetlania w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób jego wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst jest ciągiem, który ma podpis tekstowy, który jest wymagany do zlokalizowania danych niestandardowych.
+ Tekst jest ciągiem zawierającym podpis tekstowy, który jest wymagany do lokalizowania danych niestandardowych.
 
 ## <a name="remarks"></a>Uwagi
- `CustomDataSignature`jest elementem opcjonalnym.
+ `CustomDataSignature` jest elementem opcjonalnym.
 
 ## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

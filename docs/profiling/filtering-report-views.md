@@ -1,5 +1,5 @@
 ---
-title: Filtrowanie widoków raportu | Dokumenty firmy Microsoft
+title: Filtrowanie widoków raportów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,83 +12,83 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: acdfe8f96d30ad881d8c9c0f0a9ff48c3353afee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779249"
 ---
-# <a name="filter-report-views"></a>Filtruj widoki raportu
-Filtry można zastosować do plików danych profilowania, aby ograniczyć dane profilowania wyświetlane w widokach raportu wydajności i eksportowane do plików raportów. Można ograniczyć raport do danych między wartościami sygnatury czasowej i można ograniczyć dane do określonych procesów i wątków. Filtry można zapisać w pliku, a następnie utworzyć filtr na innym pliku danych profilowania, importując zapisany filtr.
+# <a name="filter-report-views"></a>Filtruj widoki raportów
+Można zastosować filtry do profilowania plików danych, aby ograniczyć dane profilowania, które są wyświetlane w widokach raportu wydajności i eksportowane do plików raportów. Można ograniczyć raport do danych między wartościami sygnatur czasowych, a dane można ograniczyć do określonych procesów i wątków. Filtry można zapisać do pliku, a następnie utworzyć filtr dla innego pliku danych profilowania, importując zapisany filtr.
 
- Raport można również ograniczyć do segmentu czasu, korzystając z graficznej osi czasu w widoku podsumowania. Zobacz [Jak: Filtruj widoki raportu z osi czasu podsumowania](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
+ Możesz również ograniczyć raport do segmentu czasu przy użyciu graficznej osi czasu w widoku podsumowania. Zobacz [jak: filtrowanie widoków raportu na podstawie podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
 
- Aby wykluczyć kod systemowy i kod innych firm z raportu, zobacz [Jak: Filtrowanie widoków raportów narzędzi profilowania w celu wyświetlenia tylko mojego kodu](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)
+ Aby wykluczyć system i kod innej firmy z raportu, zobacz [How to: Filter narzędzia profilowania widoki raportów do wyświetlenia tylko mój kod](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)
 
 ## <a name="procedures"></a>Procedury
 
 #### <a name="to-create-a-profiler-report-filter"></a>Aby utworzyć filtr raportu profilera
 
-1. Jeśli okno Filtr widoku raportu wydajności nie jest wyświetlane, kliknij pozycję **Pokaż filtr** na pasku narzędzi Widok raportu wydajności.
+1. Jeśli okno filtru wydajności widok raportu nie jest wyświetlane, kliknij przycisk **Pokaż filtr** na pasku narzędzi Widok raportu wydajności.
 
-     Filtr widoku raportu wydajności jest tabelą. Każdy wiersz tabeli reprezentuje klauzulę filtru. Do filtru można dodać dowolną liczbę klauzul.
+     Filtr widoku raportu wydajności jest tabelą. Każdy wiersz tabeli reprezentuje klauzulę filtru. Możesz dodać dowolną liczbę klauzul do filtru.
 
-2. Dla każdej klauzuli, którą chcesz dodać do filtru, zaznacz lub wprowadź wartości w następujących polach wiersza.
+2. Dla każdej klauzuli, która ma zostać dodana do filtru, wybierz lub wprowadź wartości w następujących polach wiersza.
 
     |Pole|Opis|
     |-----------|-----------------|
-    |**Lub**|Wybierz **i** jeśli ta klauzula i następna klauzula musi być true, aby dopasować wynik. Wybierz **lub** jeśli ta klauzula lub następna klauzula może być spełniony, aby dopasować wynik.|
-    |**Pole**|Wybierz pole raportu, które ma być używane w klauzuli filtru, z wyświetlona lista pól danych.|
-    |**Operator**|Wybierz operatora, który określa relację, która ma w klauzuli między polem a wartością.<br /><br /> = Równa się<br /><br /> <>  nie równa się<br /><br /> < mniej niż<br /><br /> > większa niż<br /><br /> <= Mniej niż lub Równo<br /><br /> >= większa lub równa|
-    |**Wartość**|Wybierz lub wprowadź wartość, która ma być wyszukane. Niektóre pola wyświetlają listę dostępnych wartości pola.|
+    |**I/lub**|Wybierz **i** czy klauzula i klauzula Next muszą mieć obie wartości prawda, aby dopasować wynik. Wybierz **lub** , jeśli ta klauzula lub Następna klauzula może mieć wartość true, aby dopasować wynik.|
+    |**Pole**|Wybierz pole raportu, które ma być używane w klauzuli Filter z wyświetlonej listy pól danych.|
+    |**Operator**|Wybierz operator, który określa relację, która ma być używana w klauzuli między polem a wartością.<br /><br /> = Równa się<br /><br /> <>  nie równa się<br /><br /> < mniejsze niż<br /><br /> > większe niż<br /><br /> <= mniejsze niż lub równe<br /><br /> >= większe niż lub równe|
+    |**Wartość**|Wybierz lub wprowadź wartość do wyszukania. Niektóre pola wyświetlają dostępne wartości dla pola.|
 
-#### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Aby utworzyć filtr raportu profilera z widoku Raport znaczników
+#### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Aby utworzyć filtr raportu profilera z widoku raportu znaczników
 
-1. Wybierz **znaczniki** z listy **Widok bieżący** na pasku narzędzi Widok raportu wydajności.
+1. Wybierz pozycję **znaczniki** z listy **bieżący widok** na pasku narzędzi Widok raportu wydajności.
 
     Zostanie wyświetlony raport profilera znaczników.
 
-2. Wybierz ETW lub próbkowanie nawet, które chcesz użyć jako punkt wyjścia raportu.
+2. Wybierz pozycję ETW lub próbkowanie, nawet jeśli chcesz użyć jako punktu początkowego raportu.
 
-3. Naciśnij i przytrzymaj klawisz CTRL i kliknij zdarzenie, które ma być używane jako punkt końcowy raportu.
+3. Naciśnij i przytrzymaj klawisz CTRL, a następnie kliknij zdarzenie, którego chcesz użyć jako punktu końcowego raportu.
 
 4. Kliknij prawym przyciskiem myszy, a następnie kliknij jedną z następujących opcji:
 
-   - **Dodaj filtr na znacznikach** tworzy klauzule filtru, które używają kolumny Oznacz jako pola filtru.
+   - **Dodaj filtr dla znaczników** tworzy klauzule filtru, które używają kolumny Oznacz jako pola filtru.
 
-   - **Dodaj filtr na znacznikach czasu** tworzy klauzule filtru, które używają kolumny Sygnatura czasowa w milisekundach jako pola filtru.
+   - **Dodaj filtr dla sygnatur czasowych** tworzy klauzule filtru, które używają sygnatury czasowej w kolumnie w milisekundach jako pola filtru.
 
-     Dwie opcje filtrują bieżący plik danych w tym samym punkcie początkowym i końcowym. Każda z tych opcji może być lepsza, jeśli eksportujesz filtr do użycia w innych raportach.
+     Dwie opcje filtrują bieżący plik danych w tym samym punkcie początkowym i końcowym. Każda opcja może być lepsza w przypadku eksportowania filtru do użycia w innych raportach.
 
 #### <a name="to-load-an-existing-filter-from-a-file"></a>Aby załadować istniejący filtr z pliku
 
-1. Na pasku narzędzi Widok raportu wydajności kliknij pozycję **Filtr importu**.
+1. Na pasku narzędzi Widok raportu wydajności kliknij przycisk **Importuj filtr**.
 
-     Zostanie wyświetlone okno dialogowe **Filtr obciążenia.**
+     Zostanie wyświetlone okno dialogowe **ładowanie filtru** .
 
-2. Określ lokalizację i nazwę pliku filtru (.vspf), który ma być załadowany.
+2. Określ lokalizację i nazwę pliku filtru (. vspf) do załadowania.
 
 #### <a name="to-execute-a-filter"></a>Aby wykonać filtr
 
 - Na pasku narzędzi Widok raportu wydajności kliknij pozycję **Wykonaj filtr**.
 
-#### <a name="to-stop-a-filter-that-is-taking-too-long-to-execute"></a>Aby zatrzymać filtr, który trwa zbyt długo, aby wykonać
+#### <a name="to-stop-a-filter-that-is-taking-too-long-to-execute"></a>Aby zatrzymać filtr, który trwa zbyt długo
 
-- Na pasku narzędzi Widok raportu wydajności kliknij pozycję **Zatrzymaj filtr**.
+- Na pasku narzędzi Widok raportu wydajności kliknij przycisk **Zatrzymaj filtr**.
 
 #### <a name="to-remove-a-filter-on-a-report-view"></a>Aby usunąć filtr w widoku raportu
 
-1. Usuń wiersze klauzul w filtrze widoku raportu wydajności.
+1. Usuń wiersze klauzul w filtr widoku raportu wydajności.
 
 2. Na pasku narzędzi Widok raportu wydajności kliknij pozycję **Wykonaj filtr**.
 
-#### <a name="to-save-a-filter-to-a-file"></a>Aby zapisać filtr w pliku
+#### <a name="to-save-a-filter-to-a-file"></a>Aby zapisać filtr do pliku
 
-1. Na pasku narzędzi Widok raportu wydajności kliknij pozycję **Filtr eksportu**.
+1. Na pasku narzędzi Widok raportu wydajności kliknij przycisk **Eksportuj filtr**.
 
-     Zostanie wyświetlone okno dialogowe **Zapisz filtr.**
+     Zostanie wyświetlone okno dialogowe **Zapisywanie filtru** .
 
-2. Określ lokalizację i nazwę pliku filtru (vspf) do zapisania.
+2. Określ lokalizację i nazwę pliku filtru (vspf), który ma zostać zapisany.
 
 ## <a name="see-also"></a>Zobacz też
 - [Dostosowywanie widoków raportów narzędzi do oceny wydajności](../profiling/customizing-performance-tools-report-views.md)

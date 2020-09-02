@@ -1,5 +1,5 @@
 ---
-title: Interfejsy dostawców symboli | Dokumenty firmy Microsoft
+title: Interfejsy dostawcy symboli | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,50 +13,50 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7929ba36c76f0db1cabab087afe3590de509efff
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715847"
 ---
 # <a name="symbol-provider-interfaces"></a>Symbol Provider Interfaces
-Poniżej przedstawiono interfejsy obsługi [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]symboli dla pliku .
+Poniżej przedstawiono interfejsy obsługi symboli dla [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] .
 
-## <a name="discussion"></a>Dyskusji
- Interfejsy te są używane do oceny zmiennych w stosie wywołań w trybie przerwania. Są one implementowane tylko dla dostawców symboli środowiska uruchomieniowego języka wspólnego (SP).
+## <a name="discussion"></a>Dyskusja
+ Te interfejsy są używane do obliczania zmiennych w stosie wywołań w trybie przerwania. Są one implementowane tylko dla dostawców symboli środowiska uruchomieniowego języka wspólnego (SP).
 
-|Interface|Zaimplementowane przez|Opis|
+|Interfejs|Zaimplementowane przez|Opis|
 |---------------|--------------------|-----------------|
-|[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|Sp|Reprezentuje adres elementu.|
-|[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|Sp|Reprezentuje adres elementu, zapewniając dostęp do identyfikatora procesu.|
-|[IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)|Sp|Reprezentuje symbol tablicy lub typ tablicy.|
-|[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)|Sp|Reprezentuje symbol klasy lub typ klasy.|
-|[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)|Sp|Reprezentuje dostawcę symboli COM+ z metodami specyficznymi dla kodu zarządzanego.|
-|[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)|Sp|Reprezentuje dostawcę symboli COM+ z metodami specyficznymi dla kodu zarządzanego i rozszerza **IDebugComPlusSymbolProvider**.|
-|[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)|Sp|Reprezentuje symbol lub typ, który jest kontenerem dla innych symboli lub typów.|
-|[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)|Sp|Reprezentuje atrybut niestandardowy, który może być dołączony do symbolu.|
-|[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)|Sp|Reprezentuje kwerendę dla atrybutów niestandardowych w metodzie lub typie.|
-|[IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)|Sp|Zapewnia dostęp do atrybutów niestandardowych na symbolu.|
-|[IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)|Sp|Interfejs podstawowy dla dowolnego typu, który można określić w czasie wykonywania.|
-|[IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)|Sp|Reprezentuje pole dynamiczne dla obiektu [IDebugBinder.](../../../extensibility/debugger/reference/idebugbinder.md)|
-|[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)|Sp|Reprezentuje typ wyliczenia.|
-|[IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)|Sp|Rozszerza typy dostępnych pól do obsługi kodów ogólnych kodu zarządzanego.|
-|[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)|Sp|Klasa podstawowa dla wszystkich pól; reprezentuje opis symbolu lub typu.|
-|[IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)|Sp|Reprezentuje definicję pola dla typu ogólnego kodu zarządzanego.|
-|[IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)|Sp|Reprezentuje wystąpienie pola dla typu ogólnego kodu zarządzanego.|
-|[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)|Sp|Reprezentuje parametr dla typu ogólnego kodu zarządzanego.|
-|[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)|Sp|Reprezentuje metodę.|
-|[IDebugModOpt](../../../extensibility/debugger/reference/idebugmodopt.md)|Sp|Reprezentuje modyfikator opcjonalny debugowania.|
-|[IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)|Sp|Reprezentuje wskaźnik.|
-|[IDebugPrimitiveTypeField](../../../extensibility/debugger/reference/idebugprimitivetypefield.md)|Sp|Reprezentuje wartość wyliczenia typu pierwotnego z interfejsu [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)|
-|[IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)|Sp|Reprezentuje właściwość klasy kodu zarządzanego, które można uzyskać lub ustawić.|
-|[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)|Sp|Reprezentuje dostawcę symboli, który udostępnia symbole i typy.|
-|[IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)|Sp|Reprezentuje dostawcę symboli z bezpośrednim dostępem do metadanych i interfejsów symboli podstawowych.|
-|[IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)|Sp|Reprezentuje możliwość tworzenia pola, które reprezentuje typ.|
-|[IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)|Sp|Rozszerza **IDebugTypeFieldBuilder,** aby móc tworzyć typy tablic.|
-|[IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)|Sp|Reprezentuje kolekcję [obiektów IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)|
-|[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)|Sp|Reprezentuje kolekcję [obiektów IDebugCustomAttribute.](../../../extensibility/debugger/reference/idebugcustomattribute.md)|
-|[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)|Sp|Reprezentuje kolekcję obiektów [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)|
+|[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|REQUIREMENT|Reprezentuje adres elementu.|
+|[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|REQUIREMENT|Reprezentuje adres elementu, zapewniając dostęp do identyfikatora procesu.|
+|[IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)|REQUIREMENT|Reprezentuje symbol tablicy lub typ tablicy.|
+|[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)|REQUIREMENT|Reprezentuje symbol klasy lub typ klasy.|
+|[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)|REQUIREMENT|Reprezentuje dostawcę symboli modelu COM+ z metodami specyficznymi dla kodu zarządzanego.|
+|[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)|REQUIREMENT|Reprezentuje dostawcę symboli modelu COM+ z metodami specyficznymi dla kodu zarządzanego i rozszerza **IDebugComPlusSymbolProvider**.|
+|[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)|REQUIREMENT|Reprezentuje symbol lub typ, który jest kontenerem dla innych symboli lub typów.|
+|[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)|REQUIREMENT|Reprezentuje atrybut niestandardowy, który może być dołączany do symbolu.|
+|[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)|REQUIREMENT|Reprezentuje zapytanie dla atrybutów niestandardowych metody lub typu.|
+|[IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)|REQUIREMENT|Zapewnia dostęp do atrybutów niestandardowych dla symbolu.|
+|[IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)|REQUIREMENT|Interfejs podstawowy dla dowolnego typu, który można określić w czasie wykonywania.|
+|[IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)|REQUIREMENT|Reprezentuje dynamiczne pole dla obiektu [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) .|
+|[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)|REQUIREMENT|Reprezentuje typ wyliczeniowy.|
+|[IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)|Requirement|Rozszerza typy dostępnych pól w celu obsługi typów ogólnych w kodzie zarządzanym.|
+|[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)|REQUIREMENT|Klasa bazowa dla wszystkich pól; reprezentuje opis symbolu lub typu.|
+|[IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)|REQUIREMENT|Reprezentuje definicję pola dla ogólnego typu kodu zarządzanego.|
+|[IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)|REQUIREMENT|Reprezentuje wystąpienie pola dla ogólnego typu kodu zarządzanego.|
+|[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)|REQUIREMENT|Reprezentuje parametr dla ogólnego typu kodu zarządzanego.|
+|[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)|REQUIREMENT|Reprezentuje metodę.|
+|[IDebugModOpt](../../../extensibility/debugger/reference/idebugmodopt.md)|REQUIREMENT|Reprezentuje opcjonalny modyfikator debugowania.|
+|[IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)|REQUIREMENT|Reprezentuje wskaźnik.|
+|[IDebugPrimitiveTypeField](../../../extensibility/debugger/reference/idebugprimitivetypefield.md)|REQUIREMENT|Reprezentuje wartość wyliczenia typu pierwotnego z interfejsu [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .|
+|[IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)|REQUIREMENT|Reprezentuje właściwość zarządzanej klasy kodu, którą można pobrać lub ustawić.|
+|[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)|REQUIREMENT|Reprezentuje dostawcę symboli, który zawiera symbole i typy.|
+|[IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)|REQUIREMENT|Reprezentuje dostawcę symboli, który ma bezpośredni dostęp do metadanych i podstawowych interfejsów symboli.|
+|[IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)|REQUIREMENT|Reprezentuje możliwość utworzenia pola, które reprezentuje typ.|
+|[IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)|REQUIREMENT|Rozszerza **IDebugTypeFieldBuilder** , aby można było tworzyć typy tablic.|
+|[IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)|REQUIREMENT|Reprezentuje kolekcję obiektów [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .|
+|[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)|REQUIREMENT|Reprezentuje kolekcję obiektów [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) .|
+|[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)|REQUIREMENT|Reprezentuje kolekcję obiektów [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .|
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja interfejsu API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

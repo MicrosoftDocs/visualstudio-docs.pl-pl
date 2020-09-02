@@ -10,17 +10,17 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 4cba043d8300d47ae5ffba1c175a19fcfa2e65ed
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330340"
 ---
 # <a name="events-viewer"></a>Podgląd zdarzeń
 
 Podgląd zdarzeń ogólnych przedstawia aktywność aplikacji za pomocą listy zdarzeń, takich jak obciążenie modułu, uruchomienie wątku i konfiguracja systemu. Ten widok pomaga lepiej zdiagnozować sposób działania aplikacji w programie Visual Studio profiler.
 
-## <a name="setup"></a>Konfigurowanie
+## <a name="setup"></a>Konfiguracja
 
 1. Wybierz **kombinację klawiszy Alt + F2** , aby otworzyć Profiler wydajności w programie Visual Studio.
 

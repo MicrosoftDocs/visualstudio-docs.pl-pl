@@ -27,25 +27,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 58500e59a624dac55824033b8b9667754a9040c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657374"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Bezpośredni dostęp do bazy danych za pomocą adaptera TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Oprócz `InsertCommand`, `UpdateCommand` i `DeleteCommand`, TableAdapters są tworzone przy użyciu metod, które mogą być uruchamiane bezpośrednio w bazie danych. Te metody (`TableAdapter.Insert`, `TableAdapter.Update` i `TableAdapter.Delete`) mogą być wywoływane w celu manipulowania danymi bezpośrednio w bazie danych.
+Oprócz `InsertCommand` , `UpdateCommand` , i `DeleteCommand` , TableAdapters są tworzone przy użyciu metod, które mogą być uruchamiane bezpośrednio w bazie danych. Te metody ( `TableAdapter.Insert` , `TableAdapter.Update` i `TableAdapter.Delete` ) mogą być wywoływane w celu manipulowania danymi bezpośrednio w bazie danych.
 
- Jeśli nie chcesz tworzyć tych metod bezpośrednich, ustaw właściwość `GenerateDbDirectMethods` TableAdapter na `false` w oknie **Właściwości** . Jeśli jakiekolwiek zapytania zostaną dodane do TableAdapter oprócz głównego zapytania TableAdapter, są to zapytania autonomiczne, które nie generują tych metod DBDirect.
+ Jeśli nie chcesz tworzyć tych metod bezpośrednich, ustaw `GenerateDbDirectMethods` Właściwość TableAdapter `false` w oknie **Właściwości** . Jeśli jakiekolwiek zapytania zostaną dodane do TableAdapter oprócz głównego zapytania TableAdapter, są to zapytania autonomiczne, które nie generują tych metod DBDirect.
 
 ## <a name="sendcommandsdirectly-to-a-database"></a>Sendcommandsdirectly do bazy danych
  Wywołaj metodę TableAdapter DBDirect, która wykonuje zadanie, które próbujesz wykonać.
 
 #### <a name="to-insert-new-records-directly-into-a-database"></a>Aby wstawić nowe rekordy bezpośrednio do bazy danych
 
-- Wywołaj metodę `Insert` TableAdapter, przekazując wartości dla każdej kolumny jako parametry. Poniższa procedura używa tabeli `Region` w przykładzie Northwind databaseas.
+- Wywołaj metodę TableAdapter `Insert` , przekazując wartości dla każdej kolumny jako parametry. Poniższa procedura używa `Region` tabeli w przykładzie Northwind databaseas.
 
     > [!NOTE]
     > Jeśli nie masz dostępnego wystąpienia, Utwórz wystąpienie TableAdapter, którego chcesz użyć.
@@ -55,7 +55,7 @@ Oprócz `InsertCommand`, `UpdateCommand` i `DeleteCommand`, TableAdapters są tw
 
 #### <a name="to-update-records-directly-in-a-database"></a>Aby zaktualizować rekordy bezpośrednio w bazie danych
 
-- Wywołaj metodę `Update` TableAdapter, przekazując nowe i oryginalne wartości dla każdej kolumny jako parametry.
+- Wywołaj metodę TableAdapter `Update` , przekazując nowe i oryginalne wartości dla każdej kolumny jako parametry.
 
     > [!NOTE]
     > Jeśli nie masz dostępnego wystąpienia, Utwórz wystąpienie TableAdapter, którego chcesz użyć.
@@ -65,7 +65,7 @@ Oprócz `InsertCommand`, `UpdateCommand` i `DeleteCommand`, TableAdapters są tw
 
 #### <a name="to-delete-records-directly-from-a-database"></a>Aby usunąć rekordy bezpośrednio z bazy danych
 
-- Wywołaj metodę `Delete` TableAdapter, przekazując wartości dla każdej kolumny jako parametry metody `Delete`. Poniższa procedura używa tabeli `Region` w przykładzie Northwind databaseas.
+- Wywołaj metodę TableAdapter `Delete` , przekazując wartości dla każdej kolumny jako parametry `Delete` metody. Poniższa procedura używa `Region` tabeli w przykładzie Northwind databaseas.
 
     > [!NOTE]
     > Jeśli nie masz dostępnego wystąpienia, Utwórz wystąpienie TableAdapter, którego chcesz użyć.

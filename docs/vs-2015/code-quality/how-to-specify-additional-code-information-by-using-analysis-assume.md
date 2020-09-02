@@ -14,28 +14,28 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: f2f18c9284ec96de7a7b8663aff485962d194282
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277974"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-__analysis_assume"></a>Porady: określanie informacji o dodatkowym kodzie za pomocą __analysis_assume
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz dostarczyć wskazówki do narzędzia do analizy kodu dla języka C/C++ kodu, które ułatwią proces analizy i zmniejszają ostrzeżenia. Aby podać dodatkowe informacje, użyj następującej funkcji:  
+Możesz dostarczyć wskazówki do narzędzia analizy kodu dla kodu C/C++, które ułatwią proces analizy i zmniejszają ostrzeżenia. Aby podać dodatkowe informacje, użyj następującej funkcji:  
   
  `__analysis_assume(`  `expr`  `)`  
   
- `expr` — dowolne wyrażenie, które ma zostać obliczone na wartość true.  
+ `expr` — Dowolne wyrażenie, które ma zostać obliczone na wartość true.  
   
  Narzędzie do analizy kodu zakłada, że warunek reprezentowany przez wyrażenie ma wartość true w punkcie, w którym funkcja jest wyświetlana i pozostaje prawdziwa do momentu zmiany wyrażenia, na przykład przez przypisanie do zmiennej.  
   
 > [!NOTE]
-> `__analysis_assume` nie ma wpływu na optymalizację kodu. Na zewnątrz narzędzia do analizy kodu `__analysis_assume` jest definiowana jako No-op.  
+> `__analysis_assume` nie ma wpływu na optymalizację kodu. Poza narzędzia do analizy kodu, `__analysis_assume` jest definiowana jako No-op.  
   
 ## <a name="example"></a>Przykład  
- Poniższy kod używa `__analysis_assume` do skorygowania ostrzeżenia analizy kodu [C6388](../code-quality/c6388.md):  
+ Poniższy kod używa `__analysis_assume` do korygowania ostrzeżenia analizy kodu [C6388](../code-quality/c6388.md):  
   
 ```  
 #include<windows.h>  

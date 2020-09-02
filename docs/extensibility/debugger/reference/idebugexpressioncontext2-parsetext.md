@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::ParseText | Dokumenty firmy Microsoft
+title: IDebugExpressionContext2::P arseText | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a8494c9c90c4cb6e94115c542a25e12e948f7064
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729646"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
-Analizuje wyrażenie w formularzu tekstowym do późniejszej oceny.
+Analizuje wyrażenie w postaci tekstowej na potrzeby późniejszej oceny.
 
 ## <a name="syntax"></a>Składnia
 
@@ -51,33 +51,33 @@ int ParseText(
 
 ## <a name="parameters"></a>Parametry
 `pszCode`\
-[w] Wyrażenie, które ma być analizowane.
+podczas Wyrażenie, które ma zostać przeanalizowane.
 
 `dwFlags`\
-[w] Kombinacja flag z [wyliczenia PARSEFLAGS,](../../../extensibility/debugger/reference/parseflags.md) która kontroluje analizowanie.
+podczas Kombinacja flag z wyliczenia [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) , które sterują analizowaniem.
 
 `nRadix`\
-[w] Radix do wykorzystania w analizowaniu wszelkich informacji `pszCode`liczbowych w .
+podczas Podstawy do użycia podczas analizowania jakichkolwiek informacji liczbowych w programie `pszCode` .
 
 `ppExpr`\
-[na zewnątrz] Zwraca [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) obiekt, który reprezentuje wyrażenie analizowane, który jest gotowy do powiązania i oceny.
+określoną Zwraca obiekt [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) , który reprezentuje wyrażenie analizowane, które jest gotowe do powiązania i oceny.
 
 `pbstrError`\
-[na zewnątrz] Zwraca komunikat o błędzie, jeśli wyrażenie zawiera błąd.
+określoną Zwraca komunikat o błędzie, jeśli wyrażenie zawiera błąd.
 
 `pichError`\
-[na zewnątrz] Zwraca indeks znaków `pszCode` błędu, jeśli wyrażenie zawiera błąd.
+określoną Zwraca indeks znaku błędu w `pszCode` przypadku, gdy wyrażenie zawiera błąd.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Gdy ta metoda jest wywoływana, aparat debugowania (DE) należy przeanalizować wyrażenie i sprawdzić poprawność go pod kątem poprawności. Parametry `pbstrError` `pichError` i mogą być wypełnione, jeśli wyrażenie jest nieprawidłowe.
+Gdy ta metoda jest wywoływana, aparat debugowania (DE) powinien analizować wyrażenie i sprawdzać poprawność. `pbstrError`Parametry i `pichError` mogą być wypełnione, jeśli wyrażenie jest nieprawidłowe.
 
-Należy zauważyć, że wyrażenie nie jest oceniane, tylko analizowane. Późniejsze wywołanie [Metody EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) lub [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) ocenia wyrażenie analizowane.
+Należy zauważyć, że wyrażenie nie jest oceniane, tylko przeanalizowane. Późniejsze wywołanie metod [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) lub [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) szacuje przeanalizowane wyrażenie.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak `CEnvBlock` zaimplementować tę metodę dla prostego obiektu, który udostępnia interfejs [IDebugExpressionContext2.](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) W tym przykładzie uważa wyrażenie, które ma być analizowane jako nazwa zmiennej środowiskowej i pobiera wartość z tej zmiennej.
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CEnvBlock` obiektu, który uwidacznia Interfejs [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) . Ten przykład traktuje wyrażenie, które ma być analizowane jako nazwa zmiennej środowiskowej i pobiera wartość z tej zmiennej.
 
 ```cpp
 HRESULT CEnvBlock::ParseText(

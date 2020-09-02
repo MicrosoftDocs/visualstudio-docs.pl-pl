@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c713759a8ea75eed3048469327f962668efa4f70
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657638"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Łączenie przypadków użycia z dokumentami i diagramami
@@ -74,14 +74,14 @@ Możesz połączyć przypadek użycia w diagramie przypadku użycia z innym diag
 
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Aby połączyć się z dokumentem udostępnionym, elementem programu OneNote lub stroną sieci Web
 
-1. Uzyskaj adres URL elementu udostępnionego. Może to być na przykład ścieżką pliku sieciowego rozpoczynającą się "\\ \\" lub stronę sieci Web lub adres URL programu SharePoint, zaczynając od "http://" lub link do sekcji programu OneNote, strony lub akapitu rozpoczynającego się "OneNote:".
+1. Uzyskaj adres URL elementu udostępnionego. Może to być na przykład ścieżka pliku sieciowego rozpoczynająca się " \\ \\ " lub strona sieci Web lub adres URL programu SharePoint zaczynający się od "http://" albo link do sekcji lub strony programu OneNote, zaczynając od "OneNote:".
 
 2. W przyborniku kliknij pozycję **artefakt** , a następnie kliknij pozycję na diagramie przypadku użycia.
 
 3. Po wybraniu nowego artefaktu wpisz lub wklej adres URL do właściwości **Hyperlink** .
 
     > [!NOTE]
-    > Jeśli chcesz podać ścieżkę pliku, najlepiej wybrać plik w wspólnym obszarze roboczym (rozpoczynając od "\\ \\") lub pliku w rozwiązaniu programu Visual Studio. Gwarantuje to, że ścieżka pliku pozostanie prawidłowa na komputerze z innym członkiem zespołu lub jeśli rozwiązanie zostanie przeniesione. Aby dodać do rozwiązania dokument, taki jak dokument programu Word, kliknij prawym przyciskiem myszy rozwiązanie w Eksplorator rozwiązań, wskaż polecenie **Dodaj** , a następnie kliknij pozycję **istniejący element**.
+    > Jeśli chcesz podać ścieżkę pliku, najlepiej wybrać plik w wspólnym obszarze roboczym (rozpoczynającym się od ' \\ \\ ') lub pliku w ramach rozwiązania programu Visual Studio. Gwarantuje to, że ścieżka pliku pozostanie prawidłowa na komputerze z innym członkiem zespołu lub jeśli rozwiązanie zostanie przeniesione. Aby dodać do rozwiązania dokument, taki jak dokument programu Word, kliknij prawym przyciskiem myszy rozwiązanie w Eksplorator rozwiązań, wskaż polecenie **Dodaj** , a następnie kliknij pozycję **istniejący element**.
 
 ## <a name="see-also"></a>Zobacz też
  [Diagramy przypadków użycia UML: referencyjne](../modeling/uml-use-case-diagrams-reference.md) [diagramy przypadków użycia UML: wytyczne](../modeling/uml-use-case-diagrams-guidelines.md) [Edytowanie modeli UML i diagramów](../modeling/edit-uml-models-and-diagrams.md) [Tworzenie modeli dla aplikacji](../modeling/create-models-for-your-app.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a2fa9581d94b3b70ca427c292c147562a11d55a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847998"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Narzędzia do oceny wydajności w aplikacjach systemów Windows 8 i Windows Server 2012
@@ -24,7 +24,7 @@ Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wyma
 > [!NOTE]
 > Narzędzia do oceny wydajności dla innych obsługiwanych wersji systemu Windows (Windows 7, Windows Server 2008 R2) nie zostały zmienione.  
   
-## <a name="BKMK_In_this_topic"></a> W tym temacie  
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> W tym temacie  
  [Zbieranie danych w aplikacjach ze sklepu Windows z programu Visual Studio IDE](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [Zbieranie danych w aplikacjach uruchamianych na pulpicie systemu Windows 8 lub w systemie Windows Server 2012 z programu Visual Studio IDE](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
@@ -35,8 +35,8 @@ Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wyma
   
   [Zbieranie danych o interakcji warstwy (TIP)](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-## <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a>Zbieranie danych w aplikacjach ze sklepu Windows z programu Visual Studio IDE  
- W przypadku profilowania aplikacji ze sklepu Windows, która jest zapisywana w języku JavaScript i HTML 5, zbierane są dane Instrumentacji dla kodu JavaScript. W przypadku profilowania aplikacji ze sklepu Windows lub składnika, który jest pisany w C++wizualizacji C#, wizualizacji lub Visual Basic, zbierane są dane próbkowania dla kodu natywnego i zarządzanego. Aplikację można profilować lokalnie lub na komputerze zdalnym.  
+## <a name="collecting-data-on-windows-store-apps-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Zbieranie danych w aplikacjach ze sklepu Windows z programu Visual Studio IDE  
+ W przypadku profilowania aplikacji ze sklepu Windows, która jest zapisywana w języku JavaScript i HTML 5, zbierane są dane Instrumentacji dla kodu JavaScript. Podczas profilowania aplikacji ze sklepu Windows lub składnika, który jest pisany w Visual C++, Visual C# lub Visual Basic, zbierane są dane próbkowania dla kodu natywnego i zarządzanego. Aplikację można profilować lokalnie lub na komputerze zdalnym.  
   
  Te funkcje i opcje profilowania nie są obsługiwane podczas profilowania aplikacji ze sklepu Windows:  
   
@@ -56,7 +56,7 @@ Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wyma
   
   Aby uzyskać więcej informacji na temat profilowania aplikacji ze sklepu Windows, zobacz następujące tematy w centrum deweloperów systemu Windows:  
   
-  [Uruchamianie aplikacji ze Sklepu Windows na komputerze lokalnym](../debugger/run-windows-store-apps-on-the-local-machine.md)  
+  [Uruchamianie aplikacji ze Sklepu Windows na maszynie lokalnej](../debugger/run-windows-store-apps-on-the-local-machine.md)  
   
   [Uruchamianie aplikacji ze Sklepu Windows na maszynie zdalnej](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
@@ -68,27 +68,27 @@ Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wyma
   
 - [Analizuj dane chronometrażu funkcji JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
-- [Profilowanie C++wizualizacji C#, wizualizacji i Visual Basic w aplikacjach do sklepu Windows na komputerze lokalnym](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [Profile Visual C++, Visual C# i Visual Basic kod w aplikacjach do sklepu Windows na komputerze lokalnym](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
-- [Profilowanie C++wizualizacji C#, wizualizacji i Visual Basic w aplikacjach ze sklepu Windows na urządzeniu zdalnym](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+- [Profile Visual C++, Visual C# i Visual Basic kod w aplikacjach ze sklepu Windows na urządzeniu zdalnym](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
-- [Analizowanie danych wydajności dla wizualizacji C++, C#wizualizacji i Visual Basic kodu w aplikacjach ze sklepu Windows](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+- [Analizowanie danych wydajności dla Visual C++, Visual C# i kodu Visual Basic w aplikacjach ze sklepu Windows](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
   [W tym temacie](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a>Zbieranie danych w aplikacjach uruchamianych na pulpicie systemu Windows 8 lub w systemie Windows Server 2012 z programu Visual Studio IDE  
+## <a name="collecting-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Zbieranie danych w aplikacjach uruchamianych na pulpicie systemu Windows 8 lub w systemie Windows Server 2012 z programu Visual Studio IDE  
  Profilowanie przy użyciu metody instrumentacji nie zostało zmienione dla systemu Windows 8.  
   
  Profilowanie interakcji między warstwami (TIP) nie jest obsługiwane przy użyciu metody próbkowania.  
   
-### <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a>Zbieranie danych w aplikacjach uruchamianych na pulpicie systemu Windows 8 lub w systemie Windows Server 2012 przy użyciu próbkowania z programu Visual Studio IDE  
+### <a name="collecting-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-by-using-sampling-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Zbieranie danych w aplikacjach uruchamianych na pulpicie systemu Windows 8 lub w systemie Windows Server 2012 przy użyciu próbkowania z programu Visual Studio IDE  
  Te funkcje i opcje profilowania nie są obsługiwane podczas profilowania aplikacji klasycznych systemu Windows 8 lub systemu Windows Server 2012 przy użyciu metody próbkowania:  
   
 - Profilowanie interakcji między warstwami (TIP). Zbieranie danych TIP jest obsługiwane przy użyciu instrumentacji.  
   
 - Opcje próbkowania, takie jak ustawienie zdarzenia próbkowania i interwał czasowy lub gromadzenie dodatkowych danych licznika wydajności.  
   
-## <a name="BKMK_Profiling_from_the_command_line"></a>Profilowanie z wiersza polecenia  
+## <a name="profiling-from-the-command-line"></a><a name="BKMK_Profiling_from_the_command_line"></a> Profilowanie z wiersza polecenia  
  Za pomocą dwóch narzędzi wiersza polecenia można zbierać dane profilowania na urządzeniach z systemami Windows 8 i Windows Server 2012, w tym urządzeń, które nie mają instalacji programu Visual Studio:  
   
 |Nazwa narzędzia|Opis|  
@@ -111,16 +111,16 @@ Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wyma
   
 - Zbieranie danych z aplikacji sieci Web systemu Windows 8 i Windows Server 2012 przy użyciu trybu próbkowania z [VSPerfASPNETCmd](../profiling/vsperfaspnetcmd.md).  
   
-- Zbieranie danych próbkowania przy użyciu programu VsPerfCmd. exe.  
+- Zbieranie danych próbkowania przy użyciu VsPerfCmd.exe.  
   
 - Opcje próbkowania, takie jak ustawienie zdarzenia próbkowania i interwał czasowy lub gromadzenie dodatkowych danych licznika wydajności.  
   
-## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a>Zbieranie danych o interakcji warstwy (TIP)  
+## <a name="collecting-tier-interaction-tip-data"></a><a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Zbieranie danych o interakcji warstwy (TIP)  
  Profilowanie interakcji między warstwami zawiera dodatkowe informacje o czasach wykonywania funkcji aplikacji wielowarstwowych, które komunikują się z bazami danych za pomocą usług ADO.NET Services. Dane są zbierane tylko dla wywołań funkcji synchronicznych.  
   
- **Visual Studio editions**  
+ **Wersje programu Visual Studio**  
   
- Dane profilowania interakcji między warstwami można zbierać przy użyciu [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]lub [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Jednak dane profilowania interakcji między warstwami mogą być wyświetlane tylko w [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] i [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+ Dane profilowania interakcji między warstwami można zbierać przy użyciu [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] , [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] lub [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] . Jednak dane profilowania interakcji między warstwami mogą być wyświetlane tylko w [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] i [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] .  
   
  **Windows 8 i Windows Server 2012**  
   
@@ -136,13 +136,13 @@ Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wyma
   
    **Zbieranie danych TIP na komputerze zdalnym**  
   
-   Aby zbierać dane interakcji warstwy na komputerze zdalnym, należy skopiować program **vs\_profiler\_** _\<Platform >_ **\_** _\<Language >_ **. exe** z folderu _% VSInstallDir%_ **\Team Tools\Performance Tools\Setups** na komputerze zdalnym i zainstalować go. Nie można używać narzędzi profilowania w pakiecie pobierania [narzędzi zdalnych programu Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
+   Aby zbierać dane interakcji warstwy na komputerze zdalnym, należy skopiować plik programu **vs \_ Profiler \_ ** _\<Platform>_ **\_** _\<Language>_ **. exe** z folderu _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** maszyny programu Visual Studio na komputerze zdalnym i zainstalować go. Nie można używać narzędzi profilowania w pakiecie pobierania [narzędzi zdalnych programu Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
    Aby zebrać dane profilowania, można użyć [VSPerfCmd](../profiling/vsperfcmd.md) lub [VSPerfASPNETCmd](../profiling/vsperfaspnetcmd.md) .  
   
    **Raporty TIP**  
   
-   Dane interakcji warstwy można wyświetlać tylko w [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] lub [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE. Raporty interakcji z warstwą opartą na plikach za pośrednictwem [VSPerfReport](../profiling/vsperfreport.md) są niedostępne.  
+   Dane interakcji warstwy można wyświetlać tylko w środowisku [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] lub [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE. Raporty interakcji z warstwą opartą na plikach za pośrednictwem [VSPerfReport](../profiling/vsperfreport.md) są niedostępne.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Eksplorator wydajności](../profiling/performance-explorer.md)   

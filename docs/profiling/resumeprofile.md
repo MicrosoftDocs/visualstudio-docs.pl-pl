@@ -1,5 +1,5 @@
 ---
-title: ResumeProfile | Dokumenty firmy Microsoft
+title: ResumeProfile | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d65d5fcf8961493c2b780453f2143de788551a5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778313"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
-Metoda `ResumeProfile` zmniejsza wstrzymanie/wznowienie licznika dla określonego poziomu profilowania.
+`ResumeProfile`Metoda zmniejsza licznik wstrzymania/wznawiania dla określonego poziomu profilowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,46 +32,46 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 #### <a name="parameters"></a>Parametry
  `Level`
 
- Wskazuje poziom profilu, do którego można zastosować zbieranie danych o wydajności. Następujące **PROFILE_CONTROL_LEVEL** wyliczaczy może służyć do wskazania jednego z trzech poziomów, do których można zastosować zbieranie danych wydajności:
+ Wskazuje poziom profilu, do którego można zastosować zbieranie danych wydajności. Poniższe moduły wyliczające **PROFILE_CONTROL_LEVEL** mogą służyć do wskazania jednego z trzech poziomów, do których można zastosować zbieranie danych o wydajności:
 
-|Moduł wyliczający|Opis|
+|Liczeni|Opis|
 |----------------|-----------------|
-|PROFILE_GLOBALLEVEL|Ustawienie poziomu globalnego wpływa na wszystkie procesy i wątki w przebiegu profilowania.|
+|PROFILE_GLOBALLEVEL|Globalne ustawienie poziomu ma wpływ na wszystkie procesy i wątki w przebiegu profilowania.|
 |PROFILE_PROCESSLEVEL|Ustawienie poziomu procesu wpływa na wszystkie wątki, które są częścią określonego procesu.|
-|PROFILE_THREADLEVEL|Ustawienie poziom profilowania wątku wpływa na określony wątek.|
+|PROFILE_THREADLEVEL|Ustawienie poziomu profilowania wątku ma wpływ na określony wątek.|
 
  `dwId`
 
  Identyfikator procesu lub wątku generowany przez system.
 
-## <a name="property-valuereturn-value"></a>Wartość właściwości/wartość zwracana
- Funkcja wskazuje sukces lub niepowodzenie przy użyciu **PROFILE_COMMAND_STATUS** wyliczenia. Zwracana wartość może być jedną z następujących wartości:
+## <a name="property-valuereturn-value"></a>Wartość właściwości/zwracana wartość
+ Funkcja wskazuje powodzenie lub niepowodzenie przy użyciu wyliczenia **PROFILE_COMMAND_STATUS** . Zwracana wartość może być jedną z następujących:
 
-|Moduł wyliczający|Opis|
+|Liczeni|Opis|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|Identyfikator elementu profilowania nie istnieje.|
 |PROFILE_ERROR_LEVEL_NOEXIST|Określony poziom profilowania nie istnieje.|
-|PROFILE_ERROR_MODE_NEVER|Tryb profilowania został ustawiony na NIGDY, gdy funkcja została wywołana.|
-|PROFILE_ERROR_NOT_YET_IMPLEMENTED|Wywołanie funkcji profilowania, poziom profilowania lub kombinacja wywołania i poziomu nie została jeszcze zaimplementowana.|
-|PROFILE_OK|Połączenie zakończyło się pomyślnie.|
+|PROFILE_ERROR_MODE_NEVER|Tryb profilowania został ustawiony tak, aby nigdy nie był wywoływany przez funkcję.|
+|PROFILE_ERROR_NOT_YET_IMPLEMENTED|Nie zaimplementowano jeszcze wywołania funkcji profilowania, poziomu profilowania lub kombinacji wywołania i poziomu.|
+|PROFILE_OK|Wywołanie zakończyło się pomyślnie.|
 
 ## <a name="remarks"></a>Uwagi
- Wartość początkowa licznika wstrzymania/wznowienia wynosi 0. Każde wywołanie SuspendProfile dodaje 1 do liczby Wstrzymaj/Wznów; każde wywołanie resumeProfile odejmuje 1.
+ Początkowa wartość licznika Wstrzymanie/wznowienie wynosi 0. Każde wywołanie SuspendProfile dodaje 1 do liczby wstrzymania/wznowienia; Każde wywołanie ResumeProfile odejmuje 1.
 
- Gdy liczba wstrzymania/wznowienia jest większa niż 0, stan Wstrzymaj/Wznów dla poziomu jest wyłączony. Gdy liczba jest mniejsza lub równa 0, stan Wstrzymaj/Wznów jest włączony.
+ Gdy liczba wstrzymań/wznowień jest większa niż 0, stan wstrzymania/wznowienia dla poziomu jest wyłączony. Gdy liczba jest mniejsza lub równa 0, stan wstrzymania/wznowienia jest włączony.
 
- Gdy stan Start/Stop i stan Wstrzymaj/Wznów są włączone, stan profilowania dla poziomu jest włączony. Aby wątek ma być profilowany, stany poziomu globalnego, procesu i wątku dla wątku muszą być włączone.
+ Gdy stan uruchomienia/zatrzymania i wstrzymania/wznowienia jest włączony, stan profilowania dla poziomu jest włączony. W przypadku wątku, który ma zostać profilowany, Stany globalne, proces i poziom wątku dla wątku muszą być włączone.
 
-## <a name="net-framework-equivalent"></a>Odpowiednik programu .NET Framework
- *Plik dll Microsoft.VisualStudio.Profiler.dll*
+## <a name="net-framework-equivalent"></a>.NET Framework równoważne
+ *Microsoft.VisualStudio.Profiler.dll*
 
-## <a name="function-information"></a>Informacje o funkcjach
- Nagłówek: Zadeklarowany w *vsPerf.h*
+## <a name="function-information"></a>Informacje o funkcji
+ Nagłówek: zadeklarowany w *VSPerf. h*
 
- Import biblioteki: *VSPerf.lib*
+ Biblioteka importowana: *VSPerf. lib*
 
 ## <a name="example"></a>Przykład
- Poniższy przykład ilustruje ResumeProfile funkcji. W przykładzie przyjęto założenie, że wywołanie SuspendProfile metoda została wykonana dla tego samego wątku lub procesu zidentyfikowanego przez [PROFILE_CURRENTID](../profiling/profile-currentid.md).
+ Poniższy przykład ilustruje funkcję ResumeProfile. W przykładzie przyjęto założenie, że wywołanie metody SuspendProfile zostało wykonane dla tego samego wątku lub procesu identyfikowanego przez [PROFILE_CURRENTID](../profiling/profile-currentid.md).
 
 ```cpp
 void ExerciseResumeProfile()
@@ -104,4 +104,4 @@ void ExerciseResumeProfile()
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Odwołanie do interfejsu API profilera programu Visual Studio (natywne)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)

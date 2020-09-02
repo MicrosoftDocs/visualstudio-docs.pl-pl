@@ -1,5 +1,5 @@
 ---
-title: Wysyłanie wymaganych zdarzeń | Dokumentacja firmy Microsoft
+title: Wysyłanie wymaganych zdarzeń | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,32 +11,32 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 457e2daf3e52c23ba9733d09d3aeb94750b5fab9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446243"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64831373"
 ---
 # <a name="sending-the-required-events"></a>Wysyłanie wymaganych zdarzeń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Użyj tej procedury związane z przesyłaniem zdarzeń wymagane.  
+Użyj tej procedury, aby wysłać wymagane zdarzenia.  
   
-## <a name="process-for-sending-required-events"></a>Proces wysyłanie wymaganych zdarzeń  
- Następujące zdarzenia są wymagane w następującej kolejności podczas tworzenia debugowania aparatu (DE) i dołączania ich do programu:  
+## <a name="process-for-sending-required-events"></a>Proces wysyłania wymaganych zdarzeń  
+ Podczas tworzenia aparatu debugowania (DE) i dołączania do programu wymagane są następujące zdarzenia:  
   
-1. Wyślij [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) obiekt zdarzenia do Menedżer debugowania sesji (SDM) DE jest inicjowany do jednego lub wielu programów w procesie debugowania.  
+1. Wyślij obiekt zdarzenia [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) do Menedżera debugowania sesji (SDM), gdy wyjątek jest zainicjowany do debugowania jednego lub kilku programów w procesie.  
   
-2. Gdy program ma być debugowany jest dołączony do, Wyślij [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) obiekt zdarzenia do SDM. To zdarzenie może być to zdarzenie zatrzymywania, w zależności od projektu aparatu.  
+2. Gdy jest dołączony program do debugowania, Wyślij obiekt zdarzenia [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) do modelu SDM. To zdarzenie może być zdarzeniem zatrzymania, w zależności od projektu aparatu.  
   
-3. Jeśli program jest dołączony do, gdy proces jest uruchamiany, Wyślij [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) obiekt zdarzenia do SDM, by powiadomić IDE nowy wątek. To zdarzenie może być to zdarzenie zatrzymywania, w zależności od projektu aparatu.  
+3. Jeśli program jest dołączony do momentu uruchomienia procesu, Wyślij obiekt zdarzenia [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) do modelu SDM, aby powiadomić IDE o nowym wątku. To zdarzenie może być zdarzeniem zatrzymania, w zależności od projektu aparatu.  
   
-4. Wyślij [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) obiekt zdarzenia do SDM po debugowanego Zakończono ładowania lub po wykonaniu dołączanie do programu. To zdarzenie musi być zdarzeń zatrzymywania.  
+4. Wyślij obiekt zdarzenia [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) do modelu SDM, gdy debugowany program zakończył ładowanie lub po zakończeniu dołączania do programu. To zdarzenie musi być zdarzeniem zatrzymania.  
   
-5. Jeśli nie uruchomiono aplikacji przeznaczonej do debugowania, Wyślij [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) obiekt zdarzenia do SDM, gdy pierwsza instrukcja kodu w architekturze środowiska wykonawczego ma zostać wykonana. To zdarzenie jest zawsze zdarzeń zatrzymywania. Po przejściu do sesji debugowania, IDE zatrzymuje się na to zdarzenie.  
+5. Jeśli uruchamiana jest aplikacja, która ma być debugowana, Wyślij obiekt zdarzenia [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) do modelu SDM, gdy pierwsza instrukcja kodu w architekturze czasu wykonywania ma zostać wykonana. To zdarzenie jest zawsze zdarzeniem zatrzymywania. Podczas przechodzenia do sesji debugowania środowisko IDE zostaje zatrzymane na tym zdarzeniu.  
   
 > [!NOTE]
-> Wiele języków użycia inicjatorów globalnych lub zewnętrznymi, wstępnie skompilowanych funkcji (od biblioteki CRT lub _Main) na początku swój kod. Jeśli język programu debugowania zawierają dowolne z tych typów elementów przed punktu wejścia początkową, a następnie uruchamiać ten kod i jest wysyłane zdarzenie punktu wejścia po użytkownik punkt wejścia, takich jak **głównego** lub `WinMain`, zostanie osiągnięty.  
+> W wielu językach są używane globalne inicjatory lub zewnętrzne, wstępnie skompilowane funkcje (z biblioteki CRT lub _Main) na początku ich kodu. Jeśli język debugowania programu zawiera jeden z tych typów elementów przed początkowym punktem wejścia, ten kod jest uruchamiany, a zdarzenie punktu wejścia jest wysyłane, gdy punkt wejścia użytkownika, taki jak **Main** lub `WinMain` , zostanie osiągnięty.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Włączanie debugowania programu](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

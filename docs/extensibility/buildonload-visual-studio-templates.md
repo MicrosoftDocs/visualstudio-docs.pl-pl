@@ -1,5 +1,5 @@
 ---
-title: BuildOnLoad atrybut i element (szablony programu Visual Studio)
+title: BuildOnLoad — atrybut i element (szablony Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3be4016822ccaaae2f1352f91ecc10f09273a889
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739949"
 ---
-# <a name="buildonload-attribute-and-element"></a>BuildOnLoad atrybut i element
+# <a name="buildonload-attribute-and-element"></a>BuildOnLoad — atrybut i element
 
-Określa, czy projekt ma być tworzony natychmiast po jego utworzeniu. **BuildOnLoad** jest zarówno atrybutem, jak i elementem.
+Określa, czy projekt ma być kompilowany natychmiast po jego utworzeniu. **BuildOnLoad** to zarówno atrybut, jak i element.
 
 Hierarchia elementów:
 
@@ -43,19 +43,19 @@ Hierarchia elementów:
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
 
-Wartość tekstowa jest wymagana dla **BuildOnLoad** elementu. Tekst musi być `true` albo `false`lub , wskazując, czy utworzyć projekt natychmiast po jego utworzeniu.
+Wartość tekstowa jest wymagana dla elementu **BuildOnLoad** . Tekst musi być albo `true` lub `false` , wskazujący, czy należy kompilować projekt bezpośrednio po jego utworzeniu.
 
 ## <a name="remarks"></a>Uwagi
 
-**BuildOnLoad** jest atrybutem opcjonalnym. Wartością domyślną jest `false`.
+**BuildOnLoad** jest opcjonalnym atrybutem. Wartość domyślna to `false`.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład ilustruje metadane dla szablonu języka C#, gdy **BuildOnLoad** jest używany jako element:
+Poniższy przykład ilustruje metadane dla szablonu C#, gdy **BuildOnLoad** jest używany jako element:
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,7 +84,7 @@ Poniższy przykład ilustruje metadane dla szablonu języka C#, gdy **BuildOnLoa
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Element BuildProjectOnload](buildprojectonload-element-visual-studio-templates.md)
-- [Element elementu TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)
+- [BuildProjectOnload, element](buildprojectonload-element-visual-studio-templates.md)
+- [TemplateContent, element](../extensibility/templatecontent-element-visual-studio-templates.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

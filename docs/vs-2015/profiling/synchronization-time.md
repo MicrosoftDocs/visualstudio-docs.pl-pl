@@ -1,5 +1,5 @@
 ---
-title: Czas synchronizacji | Dokumentacja firmy Microsoft
+title: Czas synchronizacji | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,22 +14,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 218f333f97e8252993f87893238a0f51f964d6c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151382"
 ---
 # <a name="synchronization-time"></a>Czas synchronizacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Te segmenty na osi czasu są skojarzone z zablokowania prób są klasyfikowane jako synchronizacji. Gdy wątek jest oznaczony jako zablokowane na synchronizacji, jeden z nich jest implikowane:  
+Te segmenty na osi czasu są skojarzone z czasem blokowania, które są klasyfikowane jako synchronizacja. Gdy wątek zostanie oznaczony jako zablokowany podczas synchronizacji, jest to implikowana jedna z następujących sytuacji:  
   
-- Wykonywanie wątku może spowodować utworzenie wywołanie synchronizacji wątków dobrze znanych interfejsów API takich jak `EnterCriticalSection()` lub `WaitForSingleObject()`.  
+- Wykonanie wątku mogło spowodować wywołanie dobrze znanego interfejsu API synchronizacji wątku, takiego jak `EnterCriticalSection()` lub `WaitForSingleObject()` .  
   
-- Algorytm dopasowania interfejsu API nie może być całkowicie kompleksowe i w związku z tym niektóre interfejsy API, który mógłby być mapowany na innych kategoriach może również wystąpić, ponieważ synchronizacji, ponieważ ramki w wywołaniu stosu po pewnym czasie osiągnięto bazowego jądra blokuje pierwotnych, która została mapowany do tej kategorii.  
+- Algorytm dopasowywania interfejsów API nie może być całkowicie kompleksowy, a w związku z tym niektóre interfejsy API, które mogą być mapowane na inne kategorie mogą być również wyświetlane jako synchronizacja, ponieważ ramka w stosie wywołań ostatecznie osiągnęła bazowe, blokowe elementy podstawowe, które zostały zmapowane do tej kategorii.  
   
-  Aby zrozumieć przyczyny wydarzeniu blokowania wątku, należy dokładnie bada blokowania stosy wywołań i profilu, raportów.  
+  Aby zrozumieć podstawową przyczynę zdarzenia blokowania wątku, należy uważnie sprawdzić stosy wywołań i raporty profilowe.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

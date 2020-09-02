@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Znaki specjalne ucieczki w MSBuild | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: znaki specjalne ucieczki w MSBuild | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -15,36 +15,36 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94fc8d858e2db9bd1e00bb8770cf52672a900ab0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178348"
 ---
-# <a name="how-to-escape-special-characters-in-msbuild"></a>Instrukcje: Znaki specjalne ucieczki w programie MSBuild
+# <a name="how-to-escape-special-characters-in-msbuild"></a>Porady: znaki specjalne ucieczki w MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Niektóre znaki mają specjalne znaczenie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pliki projektu. Przykłady znaków średnikami (;) i gwiazdki (*). Aby uzyskać pełną listę tych znaków specjalnych, zobacz [znaki specjalne MSBuild](../msbuild/msbuild-special-characters.md).  
+Niektóre znaki mają specjalne znaczenie w [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] plikach projektu. Przykłady znaków obejmują średnika (;) i gwiazdki (*). Aby uzyskać pełną listę tych znaków specjalnych, zobacz [znaki specjalne MSBuild](../msbuild/msbuild-special-characters.md).  
   
- Aby można było używać tych znaków specjalnych jako literały w pliku projektu, muszą one być określone za pomocą składni %*xx*, gdzie *xx* reprezentuje wartości szesnastkowej znaku ASCII.  
+ Aby można było używać tych znaków specjalnych jako literałów w pliku projektu, muszą one być określone przy użyciu składni%*XX*, gdzie *XX* reprezentuje wartość szesnastkową ASCII znaku.  
   
 ## <a name="msbuild-special-characters"></a>Znaki specjalne w programie MSBuild  
- Co znajduje się przykład użycia znaków specjalnych w `Include` atrybutu elementu listy. Na przykład na poniższej liście elementu deklaruje dwa elementy: `MyFile.cs` i `MyClass.cs`.  
+ Przykładem miejsca, w którym są używane znaki specjalne, znajduje się w `Include` atrybucie list elementów. Na przykład następująca lista elementów deklaruje dwa elementy: `MyFile.cs` i `MyClass.cs` .  
   
 ```  
 <Compile Include="MyFile.cs;MyClass.cs"/>  
 ```  
   
- Jeśli chcesz zadeklarować elementu, który zawiera średnikami w nazwie, należy użyć %*xx* składni ucieczki średnika i zapobiec [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] od zadeklarowania dwa oddzielne elementy. Na przykład, następujący element specjalne średnika i deklaruje jeden element o nazwie `MyFile.cs;MyClass.cs`.  
+ Jeśli chcesz zadeklarować element, który zawiera średnik w nazwie, należy użyć składni%*XX* , aby wyjść z średnika i zapobiec [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] deklarowaniu dwóch oddzielnych elementów. Na przykład poniższy element wyprowadza średnik i deklaruje jeden element o nazwie `MyFile.cs;MyClass.cs` .  
   
 ```  
 <Compile Include="MyFile.cs%3BMyClass.cs"/>  
 ```  
   
-#### <a name="to-use-an-msbuild-special-character-as-a-literal-character"></a>Aby użyć znaku specjalnego MSBuild jako znak literału  
+#### <a name="to-use-an-msbuild-special-character-as-a-literal-character"></a>Aby użyć znaku specjalnego MSBuild jako znaku literału  
   
-- Użyj % notacji*xx* zamiast znaki specjalne, gdzie *xx* reprezentuje wartości szesnastkowej znaku ASCII. Na przykład, aby użyć gwiazdki (*) jako znak literałowy, użyj wartości `%2A`.  
+- Użyj notacji%*XX* zamiast znaku specjalnego, gdzie *XX* reprezentuje wartość szesnastkową znaku ASCII. Na przykład, aby użyć gwiazdki (*) jako znaku literału, użyj wartości `%2A` .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
- [Program MSBuild](msbuild.md) [elementów](../msbuild/msbuild-items.md)
+ [MSBuild](msbuild.md) [Elementy](../msbuild/msbuild-items.md) programu MSBuild

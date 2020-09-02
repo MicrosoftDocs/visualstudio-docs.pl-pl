@@ -1,5 +1,5 @@
 ---
-title: Tworzenie aplikacji OpenGL ES w systemach Android i iOS | Dokumentacja firmy Microsoft
+title: Tworzenie aplikacji OpenGL ES w systemach Android i iOS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -12,142 +12,142 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: b9f5db4ccd70136b711f5bd221244418cf843485
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151169"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Tworzenie aplikacji OpenGL ES w systemach Android i iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Po zainstalowaniu Visual C++ for Cross-Platform Mobile Development opcji, można utworzyć rozwiązania programu Visual Studio i projektów dla aplikacji systemu iOS i aplikacje dla systemu Android, które współużytkują wspólny kod. Ten temat przeprowadzi Cię przez szablon rozwiązania, która tworzy zarówno w przypadku aplikacji systemu iOS proste, jak i aplikacji Android Native Activity. Aplikacje wspólnym kodu w języku C++, których używa OpenGL ES do wyświetlenia tego samego modułu rotacji animowany na każdej platformie. OpenGL ES (OpenGL dla systemów osadzone lub GLES) jest grafiki 2D i 3D interfejsu API, który jest obsługiwany na wiele urządzeń przenośnych.  
+Po zainstalowaniu opcji Visual C++ dla opracowywania aplikacji mobilnych na wiele platform można tworzyć rozwiązania i projekty programu Visual Studio dla aplikacji systemu iOS i aplikacji systemu Android, które współużytkują wspólny kod. Ten temat przeprowadzi Cię przez szablon rozwiązania, który tworzy prostą aplikację systemu iOS i aplikację z natywnym działaniem systemu Android. Aplikacje mają wspólny kod języka C++, który używa technologii OpenGL ES do wyświetlania tego samego animowanego sześcianu obracającego na każdej platformie. Oprogramowanie OpenGL ES (OpenGL for Embedded Systems lub GLES) jest interfejsem API grafiki 2D i 3D, który jest obsługiwany na wielu urządzeniach przenośnych.  
   
  [Wymagania](#req)   
- [Utwórz nowy projekt aplikacja OpenGLES](#Create)   
+ [Utwórz nowy projekt aplikacji OpenGL](#Create)   
  [Kompilowanie i uruchamianie aplikacji systemu Android](#BuildAndroid)   
- [Kompilowanie i uruchamianie aplikacji dla systemu iOS](#BuildIOS)   
+ [Kompilowanie i uruchamianie aplikacji systemu iOS](#BuildIOS)   
  [Dostosowywanie aplikacji](#Customize)  
   
-## <a name="req"></a> Wymagania  
- Przed utworzeniem aplikacji OpenGL ES dla systemów iOS i Android, upewnij się, że zostały spełnione wszystkie wymagania systemowe. Należy zainstalować Visual C++ for Cross-Platform Mobile Development opcji w programie Visual Studio 2015. Upewnij się, że wymagane narzędzia innych firm i zestawy SDK są uwzględniane w instalacji programu i czy jest zainstalowany program Visual Studio Emulator for Android. Aby uzyskać więcej informacji oraz szczegółowe instrukcje, zobacz [zainstalować Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Do tworzenia i testowania aplikacji dla systemu iOS, będzie potrzebny jest komputer Mac komputer, skonfigurowany zgodnie z instrukcjami instalacji. Aby uzyskać więcej informacji o tym, jak skonfigurować do tworzenia aplikacji dla systemu iOS, zobacz [Instalowanie i Konfigurowanie narzędzi do kompilacji przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
+## <a name="requirements"></a><a name="req"></a> Wymagania  
+ Aby można było utworzyć aplikację OpenGL ES dla systemów iOS i Android, należy upewnić się, że zostały spełnione wszystkie wymagania systemowe. Należy zainstalować opcję Visual C++ dla opracowywania aplikacji mobilnych na wiele platform w programie Visual Studio 2015. Upewnij się, że wymagane narzędzia i zestawy SDK innych firm są zawarte w instalacji oraz że zainstalowano Emulator programu Visual Studio dla systemu Android. Aby uzyskać więcej informacji i uzyskać szczegółowe instrukcje, zobacz [Install Visual C++ dla opracowywania aplikacji mobilnych na wiele platform](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Aby skompilować i przetestować aplikację dla systemu iOS, musisz mieć komputer Mac, a następnie skonfigurować go zgodnie z instrukcjami instalacji. Aby uzyskać więcej informacji na temat sposobu konfigurowania programu do tworzenia aplikacji dla systemu iOS, zobacz [Instalowanie i Konfigurowanie narzędzi do kompilowania przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
-## <a name="Create"></a> Utwórz nowy projekt aplikacja OpenGLES  
- W tym samouczku najpierw utwórz nowy projekt aplikacji OpenGL ES i następnie skompilować i uruchomić aplikację domyślnej w Visual Studio Emulator dla systemu Android. Następnie utwórz aplikację dla systemu iOS i uruchomić aplikację w symulatorze systemu iOS.  
+## <a name="create-a-new-opengles-application-project"></a><a name="Create"></a> Utwórz nowy projekt aplikacji OpenGL  
+ W tym samouczku należy najpierw utworzyć nowy projekt aplikacji OpenGL ES, a następnie skompilować i uruchomić aplikację domyślną w emulatorze programu Visual Studio dla systemu Android. Następnie można skompilować aplikację dla systemu iOS i uruchomić aplikację w symulatorze systemu iOS.  
   
 #### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1. Otwórz program Visual Studio. Na pasku menu wybierz **pliku**, **New**, **projektu**.  
+1. Otwórz program Visual Studio. Na pasku menu wybierz **plik**, **Nowy**, **projekt**.  
   
-2. W **nowy projekt** dialogowego **szablony**, wybierz **Visual C++** , **Międzyplatformowe**, a następnie wybierz  **Aplikacja OpenGLES (Android, iOS)** szablonu.  
+2. W oknie dialogowym **Nowy projekt** w obszarze **szablony**wybierz pozycję **Visual C++**, **Międzyplatformowy**, a następnie wybierz szablon **aplikacja opengls (Android, iOS)** .  
   
-3. Nadaj aplikacji nazwę, takich jak `MyOpenGLESApp`, a następnie wybierz **OK**.  
+3. Nadaj aplikacji nazwę, na przykład `MyOpenGLESApp` , a następnie wybierz **przycisk OK**.  
   
-    ![Nowy projekt aplikacji OpenGLES](../cross-platform/media/cppmdd-opengles-newproj.PNG "CPPMDD_OpenGLES_NewProj")  
+    ![Nowy projekt aplikacji OpenGL](../cross-platform/media/cppmdd-opengles-newproj.PNG "CPPMDD_OpenGLES_NewProj")  
   
-    Visual Studio tworzy nowego rozwiązania i otwiera w Eksploratorze rozwiązań.  
+    Program Visual Studio tworzy nowe rozwiązanie i otwiera Eksplorator rozwiązań.  
   
-    ![MyOpenGLESApp w Eksploratorze rozwiązań](../cross-platform/media/cppmdd-opengles-solexpl.PNG "CPPMDD_OpenGLES_SolExpl")  
+    ![MyOpenGLESApp w Eksplorator rozwiązań](../cross-platform/media/cppmdd-opengles-solexpl.PNG "CPPMDD_OpenGLES_SolExpl")  
   
-   Nowe rozwiązanie aplikacji OpenGL ES obejmuje trzy projekty biblioteki i dwa projekty aplikacji. Folder biblioteki zawiera projekt współużytkowanego kodu i dwa projekty specyficzne dla platformy, odwołujące się do udostępnionego kodu:  
+   Nowe rozwiązanie aplikacji OpenGL ES zawiera trzy projekty biblioteki i dwa projekty aplikacji. Folder biblioteki zawiera współużytkowany projekt kodu i dwa projekty specyficzne dla platformy, które odwołują się do udostępnionego kodu:  
   
-- **MyOpenGLESApp.Android.NativeActivity** zawiera odwołania i kod sklejający, który implementuje aplikację jako działania natywnego w systemie Android. Implementacja punkty wejścia z kodu pośredniczącego znajdują się w main.cpp, która obejmuje wspólny kod udostępniony w MyOpenGLESApp.Shared. Prekompilowane nagłówki są w pliku pch.h. Ten projekt aplikacji Native Activity jest kompilowany do pliku biblioteki udostępnionej (SO), który zostaje pobrana przez projekt MyOpenGLESApp.Android.Packaging.  
+- **MyOpenGLESApp. Android. Native** zawiera odwołania i kod przyklejania, który implementuje aplikację jako natywną aktywność w systemie Android. Implementacja punktów wejścia z kodu przyklejania znajduje się w Main. cpp, który obejmuje wspólny kod współużytkowany w MyOpenGLESApp. Shared. Wstępnie skompilowane nagłówki znajdują się w pliku PCH. h. Ten projekt aplikacji natywnej aktywności jest kompilowany do pliku biblioteki udostępnionej (. so), który jest wybierany przez projekt MyOpenGLESApp. Android. opakowanie.  
   
-- **MyOpenGLESApp.iOS.StaticLibrary** tworzy plik biblioteka statyczna (.a) dla systemu iOS, która zawiera kod udostępniony w MyOpenGLESApp.Shared. Aplikację utworzoną przez projekt MyOpenGLESApp.iOS.Application jest połączony.  
+- **MyOpenGLESApp. iOS. StaticLibrary** tworzy plik statycznej biblioteki systemu iOS (. a), który zawiera kod współużytkowany w MyOpenGLESApp. Shared. Jest on połączony z aplikacją utworzoną przez projekt MyOpenGLESApp. iOS. Application.  
   
-- **MyOpenGLESApp.Shared** zawiera kod udostępniony, który działa na wielu platformach. Makra preprocesora używa dla kompilacji warunkowej kodu specyficznego dla platformy. Kod udostępniony zostaje pobrana przez odwołanie do projektu w MyOpenGLESApp.Android.NativeActivity i MyOpenGLESApp.iOS.StaticLibrary.  
+- **MyOpenGLESApp. Shared** zawiera kod współużytkowany, który działa na różnych platformach. Używa makr preprocesora do kompilacji warunkowej kodu specyficznego dla platformy. Kod współużytkowany jest wybierany przez odwołanie do projektu zarówno w MyOpenGLESApp. Android. Native, jak i MyOpenGLESApp. iOS. StaticLibrary.  
   
-  Rozwiązanie zawiera dwa projekty do tworzenia aplikacji dla platformy Android i iOS:  
+  Rozwiązanie ma dwa projekty do kompilowania aplikacji dla platform Android i iOS:  
   
-- **MyOpenGLESApp.Android.Packaging** tworzy plik apk do wdrożenia na urządzeniu z systemem Android lub w emulatorze. Zawiera zasoby i pliku AndroidManifest.xml, można ustawić właściwości manifestu. Zawiera ona także build.xml pliku, który kontroluje proces kompilacji narzędzia Ant. Ustawiana jest jako projekt startowy domyślnie, tak że można wdrożyć i uruchomić bezpośrednio z programu Visual Studio.  
+- **MyOpenGLESApp. Android. pakowanie** tworzy plik. apk do wdrożenia na urządzeniu z systemem Android lub w emulatorze. Zawiera ona zasoby i AndroidManifest.xml plik, w którym są ustawiane właściwości manifestu. Zawiera również plik build.xml, który kontroluje proces kompilacji ANT. Domyślnie jest ustawiony jako projekt startowy, aby można go było wdrożyć i uruchomić bezpośrednio z programu Visual Studio.  
   
-- **MyOpenGLESApp.iOS.Application** zawiera zasoby i kodu pośredniczącego języka Objective-C, aby utworzyć aplikację dla systemu iOS prowadzący do kodu C++ w bibliotece statycznej w MyOpenGLESApp.iOS.StaticLibrary. Ten projekt tworzy pakiet kompilacji, który jest przekazywany do komputera Mac, program Visual Studio i zdalnego agenta. Podczas tworzenia tego projektu programu Visual Studio wysyła pliki i polecenia do tworzenia i wdrażania aplikacji na komputerach Mac.  
+- **MyOpenGLESApp. iOS. Application** zawiera kod przyklejania zasobów i celu utworzenia aplikacji dla systemu iOS, który łączy się z kodem biblioteki statycznej C++ w MyOpenGLESApp. iOS. StaticLibrary. Ten projekt tworzy pakiet kompilacji, który jest przesyłany do komputera Mac przez program Visual Studio i agenta zdalnego. Podczas kompilowania projektu program Visual Studio wysyła pliki i polecenia, aby kompilować i wdrażać aplikację na komputerze Mac.  
   
-## <a name="BuildAndroid"></a> Kompilowanie i uruchamianie aplikacji systemu Android  
- Rozwiązanie utworzone przez szablon ustawia aplikacji dla systemu Android jako domyślny projekt.  Można skompilować i uruchomić tę aplikację, aby zweryfikować instalacji i konfiguracji. Dla testu wstępnego, uruchom aplikację na jeden z profilów urządzeń instalowane przez Visual Studio Emulator for Android. Jeśli chcesz testować swoją aplikację na innym elementem docelowym można ładować emulatora docelowego, lub podłącz urządzenie do komputera.  
+## <a name="build-and-run-the-android-app"></a><a name="BuildAndroid"></a> Kompilowanie i uruchamianie aplikacji systemu Android  
+ Rozwiązanie utworzone przez szablon ustawia aplikację dla systemu Android jako projekt domyślny.  Możesz skompilować i uruchomić tę aplikację, aby zweryfikować instalację i konfigurację. W przypadku testu wstępnego Uruchom aplikację na jednym z profili urządzeń zainstalowanych przez emulator programu Visual Studio dla systemu Android. Jeśli wolisz przetestować aplikację w innym miejscu docelowym, możesz załadować emulator docelowy lub podłączyć urządzenie do komputera.  
   
-#### <a name="to-build-and-run-the-android-native-activity-app"></a>Aby skompilować i uruchomić aplikację systemu Android działania natywnego  
+#### <a name="to-build-and-run-the-android-native-activity-app"></a>Aby skompilować i uruchomić aplikację natywnego działania systemu Android  
   
-1. Jeśli nie została jeszcze wybrana, wybierz opcję **x86** z **platformy rozwiązania** listy rozwijanej.  
+1. Jeśli nie została jeszcze wybrana, wybierz pozycję **x86** z listy rozwijanej **platformy rozwiązań** .  
   
-    ![Ustaw platforma rozwiązania x86](../cross-platform/media/cppmdd-opengles-solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")  
+    ![Ustaw platformę rozwiązania na x86](../cross-platform/media/cppmdd-opengles-solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")  
   
-    Użyj x86 pod kątem emulatora systemu Android do Windows. Jeśli są przeznaczone dla urządzenia, wybierz platformę rozwiązania oparte na procesorze urządzenia. Jeśli **platformy rozwiązania** lista nie jest wyświetlona, wybierz polecenie **platformy rozwiązania** z **Dodaj lub usuń przyciski** , a następnie wybierz platformy.  
+    Użyj procesora x86, aby określić Emulator systemu Android dla systemu Windows. W przypadku określania docelowej urządzenia wybierz platformę rozwiązania opartą na procesorze urządzeń. Jeśli lista **platform rozwiązania** nie zostanie wyświetlona, wybierz pozycję **platformy rozwiązań** z listy **Dodaj/Usuń przyciski** , a następnie wybierz swoją platformę.  
   
-2. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu MyOpenGLESApp.Android.Packaging, a następnie wybierz **kompilacji**.  
+2. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu MyOpenGLESApp. Android. pakowanie, a następnie wybierz polecenie **Kompiluj**.  
   
-    ![Kompiluj projekt pakowania dla systemu Android](../cross-platform/media/cppmdd-opengles-andbuild.png "CPPMDD_OpenGLES_AndBuild")  
+    ![Kompiluj projekt pakietu systemu Android](../cross-platform/media/cppmdd-opengles-andbuild.png "CPPMDD_OpenGLES_AndBuild")  
   
-    W oknie danych wyjściowych wyświetla dane wyjściowe z procesu kompilacji dla programu Android udostępnionych, biblioteki i aplikacji dla systemu Android.  
+    W oknie danych wyjściowych zostaną wyświetlone dane wyjściowe procesu kompilacji dla biblioteki udostępnionej systemu Android i aplikacji systemu Android.  
   
     ![Dane wyjściowe kompilacji dla projektów systemu Android](../cross-platform/media/cppmdd-opengles-andoutput.png "CPPMDD_OpenGLES_AndOutput")  
   
-3. Wybierz jedną z emulatora VS profile telefon z systemem Android (x86) jako urządzenie docelowe wdrożenia.  
+3. Wybierz jeden z profilów systemu Android (x86) dla programu VS jako cel wdrożenia.  
   
     ![Wybierz cel wdrożenia](../cross-platform/media/cppmdd-opengles-pickemulator.png "CPPMDD_OpenGLES_PickEmulator")  
   
-    Jeśli masz zainstalowany innych emulatorów lub podłączone urządzenie z systemem Android, można je na liście rozwijanej cel wdrożenia. Aby uruchomić aplikację, wbudowanego platforma rozwiązania muszą być zgodne platforma urządzenia docelowego.  
+    Jeśli zostały zainstalowane inne emulatory lub podłączone urządzenie z systemem Android, możesz je wybrać z listy rozwijanej cel wdrożenia. Aby uruchomić aplikację, skompilowana platforma rozwiązania musi być zgodna z platformą urządzenia docelowego.  
   
-4. Naciśnij klawisz F5, aby rozpocząć debugowanie lub Shift + F5, aby uruchomić bez debugowania.  
+4. Naciśnij klawisz F5, aby rozpocząć debugowanie, lub klawisze Shift + F5, aby rozpocząć bez debugowania.  
   
-    Program Visual Studio uruchamia emulatora, który zajmuje kilka sekund, aby załadować i wdrożyć swój kod. Oto, jak aplikacja jest wyświetlana w emulatora programu Visual Studio dla systemu Android.  
+    Program Visual Studio uruchamia emulator, który zajmuje kilka sekund, aby załadować i wdrożyć swój kod. Oto jak aplikacja pojawia się w emulatorze programu Visual Studio dla systemu Android.  
   
-    ![Aplikacja uruchomiona w emulatorze systemu Android](../cross-platform/media/cppmdd-opengles-andemulator.png "CPPMDD_OpenGLES_AndEmulator")  
+    ![Aplikacja działająca w Emulator systemu Android](../cross-platform/media/cppmdd-opengles-andemulator.png "CPPMDD_OpenGLES_AndEmulator")  
   
-    Po uruchomieniu aplikacji, możesz ustawić punkty przerwania i użyć debugera, aby przejść przez kod, Sprawdź zmienne lokalne i obejrzyj wartości.  
+    Po rozpoczęciu pracy aplikacji można ustawić punkty przerwania i użyć debugera do przechodzenia przez kod, badania wartości lokalnych i obserwacji.  
   
 5. Naciśnij klawisze Shift + F5, aby zatrzymać debugowanie.  
   
-    Emulator jest oddzielny proces, który będzie nadal działać. Można edytować, skompiluj i wdróż swój kod wielokrotnie do tego samego emulatora. Aplikacja pojawia się w kolekcji aplikacji w emulatorze, i może być uruchamiany z tego miejsca bezpośrednio.  
+    Emulator to oddzielny proces, który jest nadal uruchamiany. Można edytować, kompilować i wdrażać kod wielokrotnie w tym samym emulatorze. Aplikacja zostanie wyświetlona w kolekcji aplikacji na emulatorze i może być od razu uruchomiona.  
   
-   Wygenerowany Android Native Activity aplikacji i bibliotekę projektów C++ kodu udostępnionego w Biblioteka dynamiczna, która zawiera kod "skleić" interfejs za pomocą platformy systemu Android. Oznacza to większość kodu aplikacji znajduje się w bibliotece, i manifestu, zasoby i instrukcje kompilacji podczas pakowania projektu. Kod udostępniony jest wywoływana z main.cpp w projekcie klasy NativeActivity. Aby uzyskać więcej informacji na temat sposobu programowania dla systemu Android Native Activity Zobacz zestawu Android NDK Developer [pojęcia](https://developer.android.com/ndk/guides/concepts.html) strony.  
+   Wygenerowana aplikacja systemu Android Native i projekty bibliotek umieszczają kod współużytkowany C++ w bibliotece dynamicznej, która zawiera kod "Glue" do interfejsu z platformą systemu Android. Oznacza to, że większość kodu aplikacji znajduje się w bibliotece, a instrukcje manifestu, zasobów i kompilacji znajdują się w projekcie pakietu. Kod współużytkowany jest wywoływany z Main. cpp w projekcie natywnym. Aby uzyskać więcej informacji o tym, jak programować działanie systemu Android Native, zobacz stronę [pojęcia](https://developer.android.com/ndk/guides/concepts.html) dla deweloperów systemu Android.  
   
-   Program Visual Studio tworzy Android Native Activity projektów przy użyciu zestawu Android NDK, który używa zestawu narzędzi platformy Clang. Program Visual Studio mapuje właściwości w projekcie klasy NativeActivity przełączniki wiersza polecenia i opcje, które są używane do kompilowania, link i debugowanie na platformie docelowej. Aby uzyskać szczegółowe informacje, otwórz **stron właściwości** okno dialogowe dla projektu MyOpenGLESApp.Android.NativeActivity. Aby uzyskać więcej informacji na temat przełączników wiersza polecenia, zobacz [Clang kompilatora obsługi](http://clang.llvm.org/docs/UsersManual.html).  
+   Visual Studio kompiluje natywne projekty aktywności systemu Android przy użyciu zestawu Android NDK, który używa Clang jako zestawu narzędzi platformy. Program Visual Studio mapuje właściwości w projekcie natywnym do przełączników wiersza polecenia i opcji, które są używane do kompilowania, łączenia i debugowania na platformie docelowej. Aby uzyskać szczegółowe informacje, Otwórz okno dialogowe **strony właściwości** dla projektu MyOpenGLESApp. Android. Native. Aby uzyskać więcej informacji na temat przełączników wiersza polecenia, zobacz [Podręcznik użytkownika kompilatora Clang](http://clang.llvm.org/docs/UsersManual.html).  
   
-## <a name="BuildIOS"></a> Kompilowanie i uruchamianie aplikacji dla systemu iOS  
- Projekt aplikacji systemu iOS jest tworzony i edytować w programie Visual Studio, ale z powodu ograniczeń licencyjnych, musi być utworzone i wdrożone z komputerów Mac. Program Visual Studio komunikuje się z agenta zdalnego uruchomiona na komputerze Mac do przesyłania plików projektu i wykonania kompilacji, wdrażania i debugowania poleceń. Musisz skonfigurować i konfigurowanie systemów Mac i Visual Studio, do komunikowania się przed utworzeniem aplikacji dla systemu iOS. Aby uzyskać szczegółowe instrukcje, zobacz [Instalowanie i Konfigurowanie narzędzi do kompilacji przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Gdy zdalny agent jest uruchomiony i programu Visual Studio jest powiązany z Twoim komputerem Mac, można tworzyć i uruchom aplikację dla systemu iOS, aby zweryfikować instalacji i konfiguracji.  
+## <a name="build-and-run-the-ios-app"></a><a name="BuildIOS"></a> Kompilowanie i uruchamianie aplikacji systemu iOS  
+ Projekt aplikacji systemu iOS jest tworzony i edytowany w programie Visual Studio, ale z powodu ograniczeń licencjonowania należy go skompilować i wdrożyć z poziomu komputera Mac. Program Visual Studio komunikuje się ze zdalnym agentem uruchomionym na komputerze Mac w celu transferu plików projektu oraz wykonywania poleceń kompilowania, wdrażania i debugowania. Aby można było skompilować aplikację dla systemu iOS, należy najpierw skonfigurować i skonfigurować komputery Mac i program Visual Studio. Aby uzyskać szczegółowe instrukcje, zobacz [Instalowanie i Konfigurowanie narzędzi do kompilowania przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Gdy Agent zdalny jest uruchomiony i program Visual Studio jest sparowany z komputerem Mac, możesz skompilować i uruchomić aplikację systemu iOS, aby zweryfikować instalację i konfigurację.  
   
 #### <a name="to-build-and-run-the-ios-app"></a>Aby skompilować i uruchomić aplikację systemu iOS  
   
-1. Sprawdź, czy zdalny agent jest uruchomiony na komputerze Mac, i że program Visual Studio jest sparowana z agentem zdalnym. Aby uruchomić agenta zdalnego, Otwórz okno terminalu aplikacji, a następnie wprowadź `vcremote`. Aby uzyskać więcej informacji, zobacz [skonfigurować agenta zdalnego w programie Visual Studio](../cross-platform/install-and-configure-tools-to-build-using-ios.md#ConfigureVS).  
+1. Sprawdź, czy Agent zdalny jest uruchomiony na komputerze Mac, a program Visual Studio jest sparowany z agentem zdalnym. Aby uruchomić agenta zdalnego, Otwórz okno aplikacji terminalowej i wprowadź `vcremote` . Aby uzyskać więcej informacji, zobacz [Konfigurowanie zdalnego agenta w programie Visual Studio](../cross-platform/install-and-configure-tools-to-build-using-ios.md#ConfigureVS).  
   
-    ![Okno terminala na komputerze Mac vcremote](../cross-platform/media/cppmdd-common-vcremote.png "CPPMDD_common_vcremote")  
+    ![Okno terminalu Mac z systemem vcremote](../cross-platform/media/cppmdd-common-vcremote.png "CPPMDD_common_vcremote")  
   
-2. Jeśli nie została jeszcze wybrana, wybierz opcję **x86** z **platformy rozwiązania** listy rozwijanej.  
+2. Jeśli nie została jeszcze wybrana, wybierz pozycję **x86** z listy rozwijanej **platformy rozwiązań** .  
   
-    ![Ustaw platforma rozwiązania x86](../cross-platform/media/cppmdd-opengles-solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")  
+    ![Ustaw platformę rozwiązania na x86](../cross-platform/media/cppmdd-opengles-solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")  
   
-    Użyj x86 pod kątem symulatora systemu iOS. Jeśli urządzenie z systemem iOS, wybierz platformę rozwiązania oparte na procesorze urządzenia (zazwyczaj z procesorem ARM). Jeśli **platformy rozwiązania** lista nie jest wyświetlona, wybierz polecenie **platformy rozwiązania** z **Dodaj lub usuń przyciski** , a następnie wybierz platformy.  
+    Użyj procesora x86, aby przekierować symulatorem systemu iOS. Jeśli chcesz uzyskać urządzenie z systemem iOS, Wybierz platformę rozwiązania opartą na procesorze urządzeń (zazwyczaj procesor ARM). Jeśli lista **platform rozwiązania** nie zostanie wyświetlona, wybierz pozycję **platformy rozwiązań** z listy **Dodaj/Usuń przyciski** , a następnie wybierz swoją platformę.  
   
-3. W Eksploratorze rozwiązań Otwórz menu skrótów dla projektu MyOpenGLESApp.iOS.Application, a następnie wybierz **kompilacji**.  
+3. W Eksplorator rozwiązań otwórz menu skrótów dla projektu MyOpenGLESApp. iOS. Application i wybierz polecenie **Kompiluj**.  
   
-    ![Tworzenie projektu aplikacji systemu iOS](../cross-platform/media/cppmdd-opengles-iosbuild.png "CPPMDD_OpenGLES_iOSBuild")  
+    ![Kompiluj projekt aplikacji systemu iOS](../cross-platform/media/cppmdd-opengles-iosbuild.png "CPPMDD_OpenGLES_iOSBuild")  
   
-    W oknie danych wyjściowych wyświetla dane wyjściowe z procesu kompilacji dla biblioteki statycznej dla systemu iOS oraz aplikacji dla systemu iOS. Na komputerze Mac, uruchamianie zdalnego agenta Pokazuje okno terminalu polecenia i transferu plików działania.  
+    W oknie danych wyjściowych zostaną wyświetlone dane wyjściowe procesu kompilacji dla biblioteki statycznej systemu iOS i aplikacji systemu iOS. Na komputerze Mac okno terminalu z uruchomionym agentem zdalnym pokazuje działanie polecenia i transferu plików.  
   
-    Na komputerze Mac, może pojawić się prośba o akceptować żądania do podpisywania kodu. Wybierz pozycję Zezwalaj, aby kontynuować.  
+    Na komputerze Mac może zostać wyświetlony monit o zaakceptowanie żądania podpisania kodu. Wybierz pozycję Zezwól, aby kontynuować.  
   
-4. Wybierz **symulatora systemu iOS** na pasku narzędzi, aby uruchomić aplikację w symulatorze systemu iOS na komputerze Mac. Może upłynąć kilka minut, aby uruchomić symulator. Może być konieczne przenieść symulatorze na pierwszy plan na komputerze Mac, aby wyświetlić jego dane wyjściowe.  
+4. Wybierz **symulator systemu iOS** na pasku narzędzi, aby uruchomić aplikację w symulatorze systemu iOS na komputerze Mac. Uruchomienie symulatora może chwilę potrwać. Może być konieczne przełączenie symulatora na pierwszy plan na komputerze Mac, aby zobaczyć jego dane wyjściowe.  
   
-    ![Aplikacja działająca w systemie iOS Simulator](../cross-platform/media/cppmdd-opengles-iossimulator.png "CPPMDD_OpenGLES_iOSSimulator")  
+    ![Aplikacja działająca w symulatorze systemu iOS](../cross-platform/media/cppmdd-opengles-iossimulator.png "CPPMDD_OpenGLES_iOSSimulator")  
   
-    Po uruchomieniu aplikacji, możesz ustawić punkty przerwania i za pomocą debugera programu Visual Studio do badania zmiennych lokalnych, zobaczyć stos wywołań i obejrzyj wartości.  
+    Po rozpoczęciu pracy aplikacji można ustawić punkty przerwania i użyć debugera programu Visual Studio, aby sprawdzić ustawienia regionalne, zobaczyć stos wywołań i obserwować wartości.  
   
-    ![Debuger w punkcie przerwania w aplikacji dla systemu iOS](../cross-platform/media/cppmdd-opengles-iosdebug.png "CPPMDD_OpenGLES_iOSDebug")  
+    ![Debuger w aplikacji systemu iOS](../cross-platform/media/cppmdd-opengles-iosdebug.png "CPPMDD_OpenGLES_iOSDebug")  
   
 5. Naciśnij klawisze Shift + F5, aby zatrzymać debugowanie.  
   
-    IOS Simulator jest oddzielny proces, który będzie działać na komputerze Mac. Można edytować, skompiluj i wdróż swój kod wielokrotnie do tego samego wystąpienia symulatora systemu iOS. Po jej wdrożeniu, można uruchomić kod bezpośrednio w symulatorze.  
+    Symulator systemu iOS to oddzielny proces, który jest nadal uruchamiany na komputerze Mac. Można edytować, kompilować i wdrażać kod wielokrotnie w tym samym wystąpieniu symulatora systemu iOS. Możesz również uruchomić kod bezpośrednio w symulatorze po jego wdrożeniu.  
   
-   Projekty aplikacji i biblioteki wygenerowany dla systemu iOS umieść kod C++ w bibliotece statycznej, która implementuje udostępnionego kodu. Większość kodu aplikacji znajduje się w projekcie aplikacji. Wywołania do biblioteki udostępnionej kodu w tym projekcie szablonu są wprowadzane w pliku GameViewController.m. Tworzenie aplikacji dla systemu iOS, Visual Studio korzysta z narzędzia Xcode zestaw narzędzi platformy, która wymaga komunikacji z klientem zdalnym, który działa na komputerach Mac.  
+   Wygenerowane projekty aplikacji i biblioteki systemu iOS umieszczają kod języka C++ w bibliotece statycznej, która implementuje tylko kod współużytkowany. Większość kodu aplikacji znajduje się w projekcie aplikacji. Wywołania kodu biblioteki udostępnionej w tym projekcie szablonu są wykonywane w pliku GameViewController. m. Aby skompilować aplikację dla systemu iOS, program Visual Studio używa zestawu narzędzi platformy Xcode, który wymaga komunikacji z klientem zdalnym działającym na komputerze Mac.  
   
-   Visual Studio przesyła pliki projektu i wysyła polecenia do zdalnego klienta, aby skompilować aplikację za pomocą środowiska Xcode. Klient zdalny wysyła kompilacji informacje o stanie do programu Visual Studio. Gdy aplikacja została pomyślnie skompilowane, można użyć programu Visual Studio do wysyłania poleceń do uruchamiania i debugowania aplikacji. W debugerze programu Visual Studio steruje aplikacji uruchomionej w uruchamiania symulatora systemu iOS, na komputerze Mac lub urządzenia z systemem iOS dołączone. Program Visual Studio mapuje właściwości w projekcie StaticLibrary przełączniki wiersza polecenia i opcje, które są używane do tworzenia, link i debugowanie na platformę docelową dla systemu iOS. Dla opcji wiersza polecenia kompilatora uzyskać więcej informacji, otwórz **stron właściwości** okno dialogowe dla projektu MyOpenGLESApp.iOS.StaticLibrary.  
+   Program Visual Studio transferuje pliki projektu i wysyła polecenia do zdalnego klienta w celu skompilowania aplikacji przy użyciu Xcode. Klient zdalny wysyła informacje o stanie kompilacji z powrotem do programu Visual Studio. Po pomyślnym skompilowaniu aplikacji możesz użyć programu Visual Studio do wysyłania poleceń do uruchamiania i debugowania aplikacji. Debuger w programie Visual Studio kontroluje aplikację działającą w symulatorze systemu iOS działającym na komputerze Mac lub na podłączonym urządzeniu z systemem iOS. Program Visual Studio mapuje właściwości w projekcie StaticLibrary do przełączników wiersza polecenia i opcji, które są używane do kompilowania, łączenia i debugowania na docelowej platformie systemu iOS. Aby uzyskać szczegółowe informacje na temat opcji wiersza polecenia kompilatora, Otwórz okno dialogowe **strony właściwości** dla projektu MyOpenGLESApp. iOS. StaticLibrary.  
   
-## <a name="Customize"></a> Dostosowywanie aplikacji  
- Można zmodyfikować współdzielonym kodem C++, aby dodać lub zmienić typowych funkcji. Należy zmienić wywołania do udostępnionego kodu w projektach MyOpenGLESApp.Android.NativeActivity i MyOpenGLESApp.iOS.Application do dopasowania. Makra preprocesora służy do określania sekcje specyficzne dla platformy w kodzie wspólnej. Makro preprocesora `__ANDROID__` jest wstępnie zdefiniowane podczas kompilowania dla systemu Android. Makro preprocesora `__APPLE__` jest wstępnie zdefiniowane podczas kompilowania dla systemu iOS.  
+## <a name="customize-your-apps"></a><a name="Customize"></a> Dostosowywanie aplikacji  
+ Możesz zmodyfikować współużytkowany kod języka C++, aby dodać lub zmienić typowe funkcje. Należy zmienić wywołania kodu udostępnionego w projektach MyOpenGLESApp. Android. Native i MyOpenGLESApp. iOS. Application w celu dopasowania. Można użyć makr preprocesora, aby określić sekcje specyficzne dla platformy w danym wspólnym kodzie. Makro preprocesora `__ANDROID__` jest wstępnie zdefiniowane podczas kompilowania dla systemu Android. Makro preprocesora `__APPLE__` jest wstępnie zdefiniowane podczas kompilowania dla systemu iOS.  
   
- Aby wyświetlić funkcję IntelliSense dla platform konkretnego projektu, wybierz projekt w menu rozwijanym przełącznik kontekstu na pasku nawigacyjnym, w górnej części okna edytora.  
+ Aby wyświetlić funkcję IntelliSense dla konkretnej platformy projektu, wybierz projekt na liście rozwijanej przełącznik kontekstu na pasku nawigacyjnym w górnej części okna edytora.  
   
- ![Projekt z listy rozwijanej przełącznik kontekst, w edytorze](../cross-platform/media/cppmdd-opengles-contextswitcher.png "CPPMDD_OpenGLES_ContextSwitcher")  
+ ![Lista rozwijana z przełącznikiem kontekstu projektu w edytorze](../cross-platform/media/cppmdd-opengles-contextswitcher.png "CPPMDD_OpenGLES_ContextSwitcher")  
   
- Czerwona linia falista są oznaczone problemów IntelliSense w bieżącym projekcie. Purpurowa linia falista są oznaczone problemów w innych projektach. Domyślnie program Visual Studio nie obsługuje kod kolorowania i technologii IntelliSense dla plików języka Java lub języka Objective-C. Można nadal zmodyfikować pliki źródłowe i zmienić zasoby, aby ustawić nazwę swojej aplikacji, ikony i inne szczegóły implementacji.
+ Problemy z technologią IntelliSense w bieżącym projekcie są oznaczone czerwoną linią falistą. Problemy w innych projektach są oznaczone purpurową linią falistą. Domyślnie program Visual Studio nie obsługuje kolorowania kodu ani funkcji IntelliSense dla plików Java lub języków języka C. Jednak nadal można modyfikować pliki źródłowe i zmieniać zasoby, aby ustawić nazwę aplikacji, ikonę i inne szczegóły implementacji.

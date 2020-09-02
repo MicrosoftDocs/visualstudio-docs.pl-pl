@@ -1,5 +1,5 @@
 ---
-title: Element AppliesTo (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: AppliesTo — element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,19 +10,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 39b5ee1e3cad0b4d8ddbe0fc2dfa1c2d478ec063
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740074"
 ---
-# <a name="appliesto-element-visual-studio-templates"></a>Element AppliesTo (szablony programu Visual Studio)
+# <a name="appliesto-element-visual-studio-templates"></a>AppliesTo — element (szablony Visual Studio)
 
-Określa wyrażenie opcjonalne, aby dopasować jedną <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>lub więcej możliwości (patrz ). Możliwości są udostępniane przez typy projektów za pośrednictwem hierarchii jako właściwość [__VSHPROPID5. VSHPROPID_ProjectCapabilities](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5.VSHPROPID_ProjectCapabilities>). W ten sposób szablon może być współużytkowany przez wiele typów projektów, które mają wspólne odnośne funkcje.
+Określa opcjonalne wyrażenie odpowiadające jednemu lub większej liczbie funkcji (zobacz <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher> ). Możliwości są udostępniane przez typy projektów przez hierarchię jako __VSHPROPID5 właściwości [. VSHPROPID_ProjectCapabilities](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5.VSHPROPID_ProjectCapabilities>). W ten sposób szablon może być współużytkowany przez wiele typów projektów, które mają wspólne odnośne funkcje.
 
-Ten element jest opcjonalny. Plik szablonu może zawierać maksymalnie jedno jego wystąpienie. Element umożliwia jedynie potwierdzenie zgodności szablonu elementu z funkcjami aktualnie zaznaczonego aktywnego projektu. Nie można za jego pomocą ustawić niezgodności szablonu. Jeśli `AppliesTo` jest nieobecny lub wyrażenie nie `TemplateID` zobowiązuje się pomyślnie, to lub `TemplateGroupID` jest używany do tego, aby szablon miał zastosowanie, tak jak w przypadku poprzednich wersji produktu.
+Ten element jest opcjonalny. Plik szablonu może zawierać maksymalnie jedno jego wystąpienie. Element umożliwia jedynie potwierdzenie zgodności szablonu elementu z funkcjami aktualnie zaznaczonego aktywnego projektu. Nie można za jego pomocą ustawić niezgodności szablonu. Jeśli `AppliesTo` jest nieobecny lub wyrażenie nie powiodło się w, a `TemplateID` następnie `TemplateGroupID` jest używane w celu zastosowania szablonu, tak jak w poprzednich wersjach produktu.
 
-Wprowadzono w programie Visual Studio 2013 Aktualizacja 2. Aby odwołać się do poprawnej wersji, zobacz [Odwoływanie się do zestawów dostarczonych w aktualizacji SDK programu Visual Studio 2013 2](/previous-versions/dn632168(v=vs.120)).
+Wprowadzono w Visual Studio 2013 Update 2. Aby odwołać się do odpowiedniej wersji, zobacz [odwołania do zestawów dostarczonych w Visual Studio 2013 SDK Update 2](/previous-versions/dn632168(v=vs.120)).
 
 ```xml
 <VSTemplate>
@@ -64,7 +64,7 @@ Prawidłową składnię wyrażeń definiuje się następująco:
 
 - "&#124;" jest operatorem OR.
 
-- Znaki "&" i "+" są zarówno operatorami AND.
+- Znaki "&" i "+" są zarówno operatorami, jak i.
 
 - Znak „!” jest operatorem NIE.
 
@@ -72,11 +72,11 @@ Prawidłową składnię wyrażeń definiuje się następująco:
 
 - Wyrażenie o wartości null lub puste jest interpretowane jako zgodność.
 
-- Możliwości projektu mogą być dowolnym znakiem z wyjątkiem tych zastrzeżonych znaków:\\"'':;,+-*/{}!~&#124;&%$@^()= []<>? \t\b\n\r
+- Możliwości projektu mogą być dowolnego znaku z wyjątkiem tych, które są zarezerwowane: "' ':;, +-*/ \\ ! ~&#124;&% $ @ ^ () = {} [] <>? \t\b\n\r
 
 ## <a name="example"></a>Przykład
 
-W przykładzie poniżej widać trzy różne szablony. `Template1`ma zastosowanie do wszystkich typów projektu Języka C# lub `WindowsAppContainer` innego typu projektu, który obsługuje możliwości. `Template2`dotyczy wszystkich projektów C# dowolnego rodzaju. `Template3`dotyczy projektów języka C#, `WindowsAppContainer` które nie są projektami.
+W przykładzie poniżej widać trzy różne szablony. `Template1` stosuje się do wszystkich typów projektów C# lub dowolnego innego typu projektu, który obsługuje tę `WindowsAppContainer` funkcję. `Template2` dotyczy wszystkich projektów w języku C# dowolnego rodzaju. `Template3` dotyczy projektów języka C#, które nie są `WindowsAppContainer` projektami.
 
 ```xml
 <!--  Template 1 -->

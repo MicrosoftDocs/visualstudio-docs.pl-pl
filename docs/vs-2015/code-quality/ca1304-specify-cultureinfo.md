@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d874d69f36fc8520a7cfbe3e946116c2d85ed88f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539064"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: Określ argument CultureInfo
@@ -61,7 +61,7 @@ ms.locfileid: "85539064"
  Istnieje możliwość bezpiecznego pomijania ostrzeżenia z tej reguły, gdy jest to pewne, że domyślna wartość dla wybranego dostawcy kultury/formatu jest poprawna, a łatwość utrzymania kodu nie jest ważnym priorytetem programistycznym.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie `BadMethod` powoduje dwa naruszenia tej reguły. `GoodMethod`koryguje pierwsze naruszenie, przekazując niezmienną kulturę do System. String. Compare i koryguje drugie naruszenie, przekazując bieżącą kulturę do, <xref:System.String.ToLower%2A> ponieważ jest ona `string3` wyświetlana użytkownikowi.
+ W poniższym przykładzie `BadMethod` powoduje dwa naruszenia tej reguły. `GoodMethod` koryguje pierwsze naruszenie, przekazując niezmienną kulturę do System. String. Compare i koryguje drugie naruszenie, przekazując bieżącą kulturę do, <xref:System.String.ToLower%2A> ponieważ jest ona `string3` wyświetlana użytkownikowi.
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 

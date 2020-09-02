@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccRemove | Dokumenty firmy Microsoft
+title: Funkcja SccRemove | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 17889d50dbdcf68dd4cca161d6703b8b6d69ad47
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700452"
 ---
 # <a name="sccremove-function"></a>SccRemove, funkcja
@@ -39,45 +39,45 @@ SCCRTN SccRemove(
 #### <a name="parameters"></a>Parametry
  pvContext
 
-[w] Struktura kontekstu wtyczki formantu źródła.
+podczas Struktura kontekstu wtyczki kontroli źródła.
 
- Hwnd
+ Właściwość
 
-[w] Dojście do okna IDE, którego wtyczka formantu źródła może używać jako element nadrzędny dla wszystkich okien dialogowych, które udostępnia.
+podczas Uchwyt okna środowiska IDE, który może być używany przez wtyczkę kontroli źródła jako element nadrzędny dla dowolnych okien dialogowych, które zapewnia.
 
  nFiles
 
-[w] Liczba plików określonych `lpFileNames` w tablicy.
+podczas Liczba plików określona w `lpFileNames` tablicy.
 
  lpFileNames
 
-[w] Tablica w pełni kwalifikowanych nazw ścieżek lokalnych plików do usunięcia.
+podczas Tablica w pełni kwalifikowanych nazw ścieżek lokalnych dla plików do usunięcia.
 
- lpKomentuj
+ lpComment
 
-[w] Komentarz, który ma zostać zastosowany do każdego usuwanych plików.
+podczas Komentarz, który ma zostać zastosowany do każdego usuniętego pliku.
 
- Foptions
+ fOptions
 
-[w] Flagi poleceń (nieużywane).
+podczas Flagi poleceń (nieużywane).
 
- pvOpcje
+ pvOptions
 
-[w] Opcje specyficzne dla wtyczki sterowania źródłem.
+podczas Opcje dotyczące wtyczki kontroli źródła.
 
 ## <a name="return-value"></a>Wartość zwracana
- Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Usunięcie zakończyło się sukcesem.|
+|SCC_OK|Usuwanie powiodło się.|
 |SCC_E_FILENOTCONTROLLED|Wybrany plik nie znajduje się pod kontrolą źródła.|
 |SCC_E_OPNOTSUPPORTED|System kontroli źródła nie obsługuje tej operacji.|
-|SCC_E_ISCHECKEDOUT|Nie można usunąć pliku, ponieważ użytkownik aktualnie go wyewidencjonował.|
-|SCC_E_ACCESSFAILURE|Wystąpił problem z dostępem do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacją.|
+|SCC_E_ISCHECKEDOUT|Nie można usunąć pliku, ponieważ użytkownik jest aktualnie wyewidencjonowany.|
+|SCC_E_ACCESSFAILURE|Wystąpił problem z uzyskaniem dostępu do systemu kontroli źródła prawdopodobnie z powodu problemów z siecią lub rywalizacją.|
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|
-|SCC_E_NONSPECIFICERROR|Niespecyficzna awaria; nie został usunięty.|
-|SCC_I_OPERATIONCANCELED|Operacja została anulowana przed zakończeniem.|
+|SCC_E_NONSPECIFICERROR|Nieokreślony błąd; plik nie został usunięty.|
+|SCC_I_OPERATIONCANCELED|Operacja została anulowana przed ukończeniem.|
 
 ## <a name="remarks"></a>Uwagi
  Ta funkcja usuwa pliki z systemu kontroli źródła, ale nie usuwa ich z lokalnego dysku twardego użytkownika.

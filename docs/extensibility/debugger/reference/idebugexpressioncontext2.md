@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2 | Dokumenty firmy Microsoft
+title: IDebugExpressionContext2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 344ae287b3784ceca87fbbab09ad2b2e0a304205
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729639"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
@@ -29,28 +29,28 @@ IDebugExpressionContext2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Aparat debugowania (DE) implementuje ten interfejs do reprezentowania kontekstu, w którym wyrażenie może być oceniane.
+ Aparat debugowania (DE) implementuje ten interfejs, aby reprezentować kontekst, w którym można obliczyć wyrażenie.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Wywołanie [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) zwraca ten interfejs. Ten interfejs jest dostępny tylko wtedy, gdy program debugowany został wstrzymany i ramka stosu jest dostępna.
+ Wywołanie [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) zwraca ten interfejs. Ten interfejs jest dostępny tylko wtedy, gdy debugowany program został wstrzymany i jest dostępna Ramka stosu.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- W poniższej tabeli `IDebugExpressionContext2`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ W poniższej tabeli przedstawiono metody `IDebugExpressionContext2` .
 
 |Metoda|Opis|
 |------------|-----------------|
 |[GetName](../../../extensibility/debugger/reference/idebugexpressioncontext2-getname.md)|Pobiera nazwę kontekstu oceny.|
-|[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)|Analizuje wyrażenie tekstowe do oceny.|
+|[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)|Analizuje wyrażenie tekstowe na potrzeby oceny.|
 
 ## <a name="remarks"></a>Uwagi
- Kontekst oceny można traktować jako zakres wykonywania oceny wyrażenia.
+ Kontekst oceny można traktować jako zakres do wykonywania obliczeń wyrażeń.
 
- Po zatrzymaniu programu menedżer debugowania sesji (SDM) uzyskuje ramkę stosu z DE z wywołaniem [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md). SDM następnie wywołuje [GetExpressionContext,](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) aby uzyskać `IDebugExpressionContext2` interfejs. Po tym następuje [wywołanie ParseText,](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) aby utworzyć interfejs [IDebugExpression2,](../../../extensibility/debugger/reference/idebugexpression2.md) który reprezentuje analizowane wyrażenie gotowe do oceny.
+ Gdy program został zatrzymany, Menedżer debugowania sesji (SDM) uzyskuje ramkę stosu od DE z wywołaniem do [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md). Model SDM następnie wywołuje [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) , aby uzyskać `IDebugExpressionContext2` interfejs. Następuje wywołanie [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) w celu utworzenia interfejsu [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) , który reprezentuje wyrażenie analizowane gotowe do oceny.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

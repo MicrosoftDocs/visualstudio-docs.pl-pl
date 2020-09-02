@@ -1,5 +1,5 @@
 ---
-title: Cl — zadanie | Dokumentacja firmy Microsoft
+title: CL — zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -23,783 +23,783 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8307bc2c9efcbbab531754cd2d49fa18b04cc48a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698639"
 ---
 # <a name="cl-task"></a>CL — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wykonywalne (.exe), pliki biblioteki dołączanej (dynamicznie dll) lub pliki modułów (.netmodule) kodu. Aby uzyskać więcej informacji, zobacz [opcje kompilatora](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
+Zawija Visual C++ narzędzia kompilatora, cl.exe. Kompilator tworzy pliki wykonywalne (. exe), pliki bibliotek dołączanych dynamicznie (dll) lub moduły kodu (. module). Aby uzyskać więcej informacji, zobacz [Opcje kompilatora](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry **CL** zadania. Większość parametrów zadania oraz kilka zestawów parametrów, odpowiada opcji wiersza polecenia.  
+ W poniższej tabeli opisano parametry zadania **CL** . Większość parametrów zadań i kilku zestawów parametrów odpowiada opcji wiersza polecenia.  
   
 - **AdditionalIncludeDirectories**  
   
-   Opcjonalny parametr typu String [].  
+   Opcjonalny parametr String [].  
   
-   Dodaje katalog do listy katalogów przeszukiwanych w poszukiwaniu plików dołączanych.  
+   Dodaje katalog do listy katalogów, które są przeszukiwane w poszukiwaniu plików dołączanych.  
   
-   Aby uzyskać więcej informacji, zobacz [/I (dodatkowe katalogi dołączenia)](https://msdn.microsoft.com/library/3e9add2a-5ed8-4d15-ad79-5b411e313a49).  
+   Aby uzyskać więcej informacji, zobacz [/i (Dodatkowe katalogi dołączane)](https://msdn.microsoft.com/library/3e9add2a-5ed8-4d15-ad79-5b411e313a49).  
   
 - **AdditionalOptions**  
   
-   Parametr opcjonalny ciąg.  
+   Opcjonalny parametr ciągu.  
   
-   Listę opcji wiersza polecenia. Na przykład "/*opcja1* /*opcja2* /*opcja #*". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez inne parametry zadania.  
+   Lista opcji wiersza polecenia. Na przykład "/*opcja1*  / *opcja2*  / *Option #*". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez żaden inny parametr zadania.  
   
-   Aby uzyskać więcej informacji, zobacz [opcje kompilatora](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
+   Aby uzyskać więcej informacji, zobacz [Opcje kompilatora](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
-- **AdditionalUsingDirectories** opcjonalny ciąg [] parametru.  
+- **AdditionalUsingDirectories** Opcjonalny parametr String [].  
   
-   Określa katalog, który kompilator będzie przeszukiwał, aby rozwiązać odwołania do plików przekazywane do **#using** dyrektywy.  
+   Określa katalog, który będzie przeszukiwany przez kompilator w celu rozpoznania odwołań do plików przesłanych do dyrektywy **#using** .  
   
    Aby uzyskać więcej informacji, zobacz [/AI (Określ katalogi metadanych)](https://msdn.microsoft.com/library/fb9c1846-504c-4a3b-bb39-c8696de32f6f).  
   
 - **AlwaysAppend**  
   
-   Parametr opcjonalny ciąg.  
+   Opcjonalny parametr ciągu.  
   
-   Ciąg to zawsze pobiera emitowane w wierszu polecenia. Jego wartość domyślna to "**/c**".  
+   Ciąg, który zawsze jest emitowany w wierszu polecenia. Wartość domyślna to "**/c**".  
   
 - **AssemblerListingLocation**  
   
-   Tworzy plik listingu, który zawiera kod zestawu.  
+   Tworzy plik listy zawierający kod asemblera.  
   
-   Aby uzyskać więcej informacji, zobacz **/Fa** opcji [/FA, /Fa (wyświetlanie listy plików)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
+   Aby uzyskać więcej informacji, zobacz opcja **/Fa** w [/FA,/FA (lista plików)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
 - **AssemblerOutput**  
   
-   Parametr opcjonalny ciąg.  
+   Opcjonalny parametr ciągu.  
   
-   Tworzy plik listingu, który zawiera kod zestawu.  
+   Tworzy plik listy zawierający kod asemblera.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **NoListing** - *\<Brak >*  
+  - **Nolisting** - *\<none>*  
   
-  - **AssemblyCode** - **/FA**  
+  - **AssemblyCode**  -  **/FA**  
   
-  - **AssemblyAndMachineCode** - **/FAc**  
+  - **AssemblyAndMachineCode**  -  **/FAc**  
   
-  - **AssemblyAndSourceCode** - **/FAs**  
+  - **AssemblyAndSourceCode**  -  **/FAS**  
   
-  - **Wszystkie** -   **/facs**  
+  - **Wszystkie**  -  **/FACS**  
   
-    Aby uzyskać więcej informacji, zobacz **/FA**, **/FAC**, **/FAS**, i **/facs** opcji na liście [/FA, /Fa (wyświetlanie listy plików)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
+    Aby uzyskać więcej informacji, zobacz Opcje **/Fa**, **/FAc**, **/FAS**i **/FACS** w [/FA,/FA (lista plików)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
 - **BasicRuntimeChecks**  
   
-   Parametr opcjonalny ciąg.  
+   Opcjonalny parametr ciągu.  
   
-   Włącza i wyłącza funkcję Sprawdzanie błędów czasu wykonywania w połączeniu z [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) pragmy.  
+   Włącza i wyłącza funkcję sprawdzania błędów czasu wykonywania w połączeniu z [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) pragma.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Domyślne** -                          *\<Brak >*  
+  - **Wartooć** -                          *\<none>*  
   
-  - **StackFrameRuntimeCheck** - **/RTCs**  
+  - **StackFrameRuntimeCheck**  -  **/RTCs**  
   
-  - **UninitializedLocalUsageCheck** - **/RTCu**  
+  - **UninitializedLocalUsageCheck**  -  **/RTCu**  
   
-  - **EnableFastChecks** -                          **/RTC1**  
+  - **EnableFastChecks**  -                           **/RTC1**  
   
-    Aby uzyskać więcej informacji, zobacz [usunęliśmy (kontrole błąd czasu wykonywania)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
+    Aby uzyskać więcej informacji, zobacz [/RTC (sprawdzanie błędów czasu wykonywania)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
   
 - **BrowseInformation**  
   
-   Opcjonalny parametr typu Boolean.  
+   Opcjonalny parametr logiczny.  
   
-   Jeśli `true`, tworzy plik informacji przeglądania.  
+   Jeśli `true` , program tworzy plik informacji o przeglądaniu.  
   
-   Aby uzyskać więcej informacji, zobacz **/FR** opcji [/FR, /Fr (Utwórz. Plik SBR)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896).  
+   Aby uzyskać więcej informacji, zobacz opcja **/fr** w [/fr,/fr (Create. Plik SBR)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896).  
   
 - **BrowseInformationFile**  
   
-   Parametr opcjonalny ciąg.  
+   Opcjonalny parametr ciągu.  
   
-   Określa nazwę pliku dla pliku informacyjnego przeglądarki.  
+   Określa nazwę pliku dla pliku informacji o przeglądaniu.  
   
-   Aby uzyskać więcej informacji, zobacz **BrowseInformation** parametru w tej tabeli, a także znaleźć [/FR, /Fr (Utwórz. Plik SBR)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896).  
+   Aby uzyskać więcej informacji, zobacz **BrowseInformation** parametr w tej tabeli, a także zobacz [/fr,/fr (Create. Plik SBR)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896).  
   
 - **BufferSecurityCheck**  
   
-   Opcjonalny parametr typu Boolean.  
+   Opcjonalny parametr logiczny.  
   
-   Jeśli `true`, wykrywa niektóre przepełnienia buforów, które zastępują adres zwrotny technikę wydobywania kod, który nie wymusza ograniczeń rozmiaru buforu.  
+   Jeśli `true` program wykryje pewne przepełnienia buforów, które zastępują adres zwrotny, typową techniką wykorzystania kodu, który nie wymusza ograniczeń rozmiaru buforu.  
   
-   Aby uzyskać więcej informacji, zobacz [/GS (Sprawdzanie zabezpieczeń bufora)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e).  
+   Aby uzyskać więcej informacji, zobacz [/GS (sprawdzanie zabezpieczeń bufora)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e).  
   
 - **BuildingInIDE**  
   
-   Opcjonalny parametr typu Boolean.  
+   Opcjonalny parametr logiczny.  
   
-   Jeśli `true`, oznacza to, że **MSBuild** jest wywoływany przez środowisko IDE. W przeciwnym razie **MSBuild** jest wywoływany w wierszu polecenia.  
+   Jeśli `true` , wskazuje, że program **MSBuild** jest wywoływany przez IDE. W przeciwnym razie program **MSBuild** jest wywoływany w wierszu polecenia.  
   
 - **CallingConvention**  
   
-   Parametr opcjonalny ciąg.  
+   Opcjonalny parametr ciągu.  
   
-   Określa konwencję wywołania zamówienia w funkcji argumenty są wypychane na stosie, należy określić, czy wywołujący funkcję lub wywołana funkcja usuwa argumenty ze stosu na końcu wywołania, oraz Konwencję dekorowania nazwy, Kompilator używa do identyfikowania poszczególnych funkcji.  
+   Określa konwencję wywoływania, która określa kolejność, w której argumenty funkcji są wypychane na stosie, niezależnie od tego, czy funkcja wywołująca lub wywoływana funkcja usuwa argumenty ze stosu na końcu wywołania, oraz Konwencję Name-dekorowania nazwy, której kompilator używa do identyfikacji poszczególnych funkcji.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Cdecl** - **/Gd**  
+  - **CDECL**  -  **/GD**  
   
-  - **FastCall** -                          **/Gr**  
+  - **FastCall**  -                           **/Gr**  
   
-  - **StdCall** -                          **/Gz**  
+  - **Stdcall**  -                           **/GZ**  
   
-    Aby uzyskać więcej informacji, zobacz [/Gd, / GR, / GV, /Gz (Konwencja wywoływania)](https://msdn.microsoft.com/library/fd3110cb-2d77-49f2-99cf-a03f9ead00a3).  
+    Aby uzyskać więcej informacji, zobacz [/GD,/gr,/GV,/GZ (Konwencja wywoływania)](https://msdn.microsoft.com/library/fd3110cb-2d77-49f2-99cf-a03f9ead00a3).  
   
 - **CompileAs**  
   
-   Parametr opcjonalny ciąg.  
+   Opcjonalny parametr ciągu.  
   
-   Określa, czy można skompilować pliku wejściowego jako plik źródłowy C lub C++.  
+   Określa, czy kompilować plik wejściowy jako plik źródłowy C lub C++.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Domyślne** - *\<Brak >*  
+  - **Wartooć** - *\<none>*  
   
-  - **CompileAsC** - **/TC**  
+  - **CompileAsC**  -  **/TC**  
   
-  - **CompileAsCpp** - **/TP**  
+  - **CompileAsCpp**  -  **/TP**  
   
-    Aby uzyskać więcej informacji, zobacz [TP, /Tp, TP, /TP (Określ źródło pliku typu)](https://msdn.microsoft.com/library/7d9d0a65-338b-427c-8b48-fff30e2f9d2b).  
+    Aby uzyskać więcej informacji, zobacz [/TC,/TP,/TC,/TP (Określ typ pliku źródłowego)](https://msdn.microsoft.com/library/7d9d0a65-338b-427c-8b48-fff30e2f9d2b).  
   
 - **CompileAsManaged**  
   
-   Parametr opcjonalny ciąg.  
+   Opcjonalny parametr ciągu.  
   
-   Umożliwia aplikacji i składników korzystać z funkcji z środowisko uruchomieniowe języka wspólnego (CLR).  
+   Umożliwia aplikacjom i składnikom korzystanie z funkcji środowiska uruchomieniowego języka wspólnego (CLR).  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **FALSE** - *\<Brak >*  
+  - **false** - *\<none>*  
   
-  - **true** - **/clr**  
+  - **wartość true**  -  **/CLR**  
   
-  - **Czysty** -   **/CLR: pure**  
+  - **Czysty**  -  **/CLR: Pure**  
   
-  - **Safe** - **/clr:safe**  
+  - **Bezpieczne**  -  **/CLR: Safe**  
   
-  - **OldSyntax** - **/clr:oldSyntax**  
+  - **OldSyntax**  -  **/CLR: oldSyntax**  
   
-    Aby uzyskać więcej informacji, zobacz [/CLR (kompilacja języka wspólnego środowiska uruchomieniowego)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+    Aby uzyskać więcej informacji, zobacz [/CLR (Kompilacja środowiska uruchomieniowego języka wspólnego)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 - **CreateHotpatchableImage**  
   
-   Opcjonalny parametr typu Boolean.  
+   Opcjonalny parametr logiczny.  
   
-   Jeśli `true`, informuje kompilator, aby przygotować obraz dla *poprawki*. Tego parametru gwarantuje, że pierwsza instrukcja każdej funkcji jest dwubajtowa, który jest wymagany dla poprawki.  
+   Jeśli `true` , nakazuje kompilatorowi przygotowanie obrazu do zastosowania *poprawek na gorąco*. Ten parametr zapewnia, że pierwsza instrukcja każdej funkcji ma dwa bajty, co jest wymagane w przypadku stosowania poprawek na gorąco.  
   
-   Aby uzyskać więcej informacji, zobacz [/hotpatch (Utwórz obraz Hotpatchable)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798).  
+   Aby uzyskać więcej informacji, zobacz [/hotpatch (Create możliwy do poprawiania Image)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798).  
   
 - **DebugInformationFormat**  
   
-   Parametr opcjonalny ciąg.  
+   Opcjonalny parametr ciągu.  
   
-   Wybiera typ informacji o debugowaniu utworzonych dla programu, czy te informacje są przechowywane w plikach obiektowych (.obj) lub w bazie danych programu (PDB).  
+   Wybiera typ informacji o debugowaniu utworzonych dla programu oraz tego, czy te informacje są przechowywane w plikach obiektu (. obj), czy w bazie danych programu (PDB).  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **OldStyle** - **/Z7**  
+  - **OldStyle**  -  **/Z7**  
   
-  - **ProgramDatabase** - **/Zi**  
+  - **ProgramDatabase**  -  **/Zi**  
   
-  - **EditAndContinue** - **/ZI**  
+  - **EditAndContinue**  -  **/Zi**  
   
-    Aby uzyskać więcej informacji, zobacz [/z7, / zi, /ZI (Format informacji debugowania)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8).  
+    Aby uzyskać więcej informacji, zobacz [/Z7,/Zi,/ZI (format informacji o debugowaniu)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8).  
   
 - **DisableLanguageExtensions**  
   
-   Opcjonalny parametr typu Boolean.  
+   Opcjonalny parametr logiczny.  
   
-   Jeśli **true**, informuje kompilator będzie emitował błąd dotyczące konstrukcji języka, które nie są zgodne z ANSI C lub ANSI C++.  
+   Jeśli **ma wartość true**, instruuje kompilator, aby emituje błąd dla konstrukcji językowych, które nie są zgodne ze standardem ANSI C lub ANSI C++.  
   
-   Aby uzyskać więcej informacji, zobacz **/Za** opcji [/za, /Ze (Wyłącz rozszerzenia językowe)](https://msdn.microsoft.com/library/65e49258-7161-4289-a176-7c5c0656b1a2).  
+   Aby uzyskać więcej informacji, zobacz opcja **/za** w [/za,/ze (Wyłącz rozszerzenia językowe)](https://msdn.microsoft.com/library/65e49258-7161-4289-a176-7c5c0656b1a2).  
   
 - **DisableSpecificWarnings**  
   
-   Opcjonalny parametr typu String [].  
+   Opcjonalny parametr String [].  
   
-   Wyłącza numery ostrzeżeń, które są określone w liście rozdzielanej średnikami.  
+   Wyłącza numery ostrzeżeń, które są określone na liście rozdzielanej średnikami.  
   
-   Aby uzyskać więcej informacji, zobacz `/wd` opcji [Wn /W0, / W1, / W2, / W3, / W4, / W1, / W2, / W3, / W4, / Wall / wo, WV, /WX (poziom ostrzegawczy)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+   Aby uzyskać więcej informacji, zobacz `/wd` Opcje w opcjach [/W,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/we,/wo,/WV,/WX (poziom ostrzeżeń)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **EnableEnhancedInstructionSet**  
   
-   Parametr opcjonalny ciąg.  
+   Opcjonalny parametr ciągu.  
   
-   Określa architekturę do generowania kodu, który używa rozszerzenia SSE (Streaming SIMD) i instrukcji Streaming SIMD Extensions 2 (SSE2).  
+   Określa architekturę generowania kodu, który używa instrukcji Streaming SIMD Extensions (SSE) i Streaming SIMD Extensions 2 (SSE2).  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **StreamingSIMDExtensions** - **/arch:SSE**  
+  - **StreamingSIMDExtensions**  -  **/arch: SSE**  
   
-  - **StreamingSIMDExtensions2** - **SSE2**  
+  - **StreamingSIMDExtensions2**  -  **/arch: SSE2**  
   
     Aby uzyskać więcej informacji, zobacz [/arch (x86)](https://msdn.microsoft.com/library/9dd5a75d-06e4-4674-aade-33228486078d).  
   
 - **EnableFiberSafeOptimizations**  
   
-   Opcjonalny parametr typu Boolean.  
+   Opcjonalny parametr logiczny.  
   
-   Jeśli `true`, obsługuje bezpieczeństwo włókien dla danych przydzielonych przy użyciu statycznego magazynu wątków lokalnych, czyli danych przydzielonych przy użyciu `__declspec(thread)`.  
+   Jeśli `true` firma obsługuje zabezpieczenia włókna danych przydzielone przy użyciu statycznego magazynu wątków lokalnych, to znaczy dane przydzielone za pomocą `__declspec(thread)` .  
   
-   Aby uzyskać więcej informacji, zobacz [/GT (Obsługa włókien magazynu wątków lokalnych)](https://msdn.microsoft.com/library/071fec79-c701-432b-9970-457344133159).  
+   Aby uzyskać więcej informacji, zobacz [/gt (Obsługa bezpiecznego włókna — magazyn lokalny)](https://msdn.microsoft.com/library/071fec79-c701-432b-9970-457344133159).  
   
 - **EnablePREfast**  
   
-   Opcjonalny parametr typu Boolean.  
+   Opcjonalny parametr logiczny.  
   
-   Jeśli `true`, Włącz analizę kodu.  
+   Jeśli `true` , Włącz analizę kodu.  
   
-   Aby uzyskać więcej informacji, zobacz [/ analyze (analiza kodu)](https://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08).  
+   Aby uzyskać więcej informacji, zobacz [/analyze (analiza kodu)](https://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08).  
   
 - **ErrorReporting**  
   
-   Parametr opcjonalny ciąg.  
+   Opcjonalny parametr ciągu.  
   
-   Pozwala zapewnić wewnętrznych kompilatora-informacje o błędzie (ICE) bezpośrednio do firmy Microsoft. Domyślnie to ustawienie w kompilacjach IDE **monitu** i ustawienie w kompilacji z wiersza polecenia jest **kolejki**.  
+   Umożliwia dostarczenie informacji o wewnętrznym błędzie kompilatora (lodem) bezpośrednio do firmy Microsoft. Domyślnie ustawienie w obszarze kompilacje IDE jest **monitem** , a ustawienie w kompilacjach w wierszu polecenia jest **kolejką**.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **None** - **/errorReport:none**  
+  - **Brak**  -  **/errorReport: brak**  
   
-  - **Wiersz** - **/errorReport:prompt**  
+  - **Monituj**  -  **/errorReport: Monituj**  
   
-  - **Queue** - **/errorReport:queue**  
+  - **Kolejka**  -  **/errorReport: Queue**  
   
-  - **Send** - **/errorReport:send**  
+  - **Wyślij**  -  **/errorReport: Wyślij**  
   
     Aby uzyskać więcej informacji, zobacz [/errorreport (zgłaszaj wewnętrzne błędy kompilatora)](https://msdn.microsoft.com/library/819828f8-b0a5-412c-9c57-bf822f17e667).  
   
 - **ExceptionHandling**  
   
-   Parametr opcjonalny ciąg.  
+   Opcjonalny parametr ciągu.  
   
-   Określa model obsługi wyjątków, aby używane przez kompilator.  
+   Określa model obsługi wyjątków, który ma być używany przez kompilator.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **FALSE** - *\<Brak >*  
+  - **false** - *\<none>*  
   
-  - **Async** - **/EHa**  
+  - **Async**  -  **/EHa**  
   
-  - **Sync** - **/EHsc**  
+  - **Synchronizacja**  -  **/EHsc**  
   
-  - **SyncCThrow** - **/EHs**  
+  - **SyncCThrow**  -  **/EHS**  
   
-    Aby uzyskać więcej informacji, zobacz [/EH (Model obsługi wyjątku)](https://msdn.microsoft.com/library/754b916f-d206-4472-b55a-b6f1b0f2cb4d).  
+    Aby uzyskać więcej informacji, zobacz [/EH (model obsługi wyjątków)](https://msdn.microsoft.com/library/754b916f-d206-4472-b55a-b6f1b0f2cb4d).  
   
 - **ExpandAttributedSource**  
   
-   Opcjonalny parametr typu Boolean.  
+   Opcjonalny parametr logiczny.  
   
-   Jeśli `true`, tworzy plik listingu, która została rozszerzona atrybuty, które są wstrzykiwane do pliku źródłowego.  
+   Jeśli `true` program utworzy plik listy z rozwiniętymi atrybutami, które zostały dodane do pliku źródłowego.  
   
-   Aby uzyskać więcej informacji, zobacz [/Fx (Scal wprowadzony kod)](https://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560).  
+   Aby uzyskać więcej informacji, zobacz [/FX (Scalanie wstrzykniętego kodu)](https://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560).  
   
 - **FavorSizeOrSpeed**  
   
-   Parametr opcjonalny ciąg.  
+   Opcjonalny parametr ciągu.  
   
-   Określa, czy preferować rozmiar czy prędkość kodu.  
+   Określa, czy ma być preferowany rozmiar kodu czy szybkość kodu.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Neither** - *\<none>*  
+  - **Zarówno** - *\<none>*  
   
-  - **Rozmiar** -   **/OS**  
+  - **Rozmiar**  -  **/OS**  
   
-  - **Szybkość** - **/Ot**  
+  - **Szybkość**  -  **/OT**  
   
-    Aby uzyskać więcej informacji, zobacz [/OS, /Ot (Preferuj mały kod, Preferuj szybko kod)](https://msdn.microsoft.com/library/9a340806-fa15-4308-892c-355d83cac0f2).  
+    Aby uzyskać więcej informacji, zobacz [/OS,/OT (Preferuj mały kod, Preferuj szybki kod)](https://msdn.microsoft.com/library/9a340806-fa15-4308-892c-355d83cac0f2).  
   
 - **FloatingPointExceptions**  
   
-   Opcjonalny parametr typu Boolean.  
+   Opcjonalny parametr logiczny.  
   
-   Jeśli `true`, umożliwia wiarygodny model wyjątków zmiennopozycyjnych. Wyjątki będą zgłaszane, natychmiast po ich wygenerowaniu.  
+   Jeśli `true` , włącza niezawodny model wyjątku zmiennoprzecinkowego. Wyjątki będą wywoływane natychmiast po ich wyzwoleniu.  
   
-   Aby uzyskać więcej informacji, zobacz /**fp: except** opcji [/FP (określenie zachowania zmiennopozycyjna)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
+   Aby uzyskać więcej informacji, zobacz opcję/**FP: except** w [/FP (Określ zachowanie zmiennoprzecinkowe)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
   
 - **FloatingPointModel**  
   
-   Parametr opcjonalny ciąg.  
+   Opcjonalny parametr ciągu.  
   
-   Ustawia wartość zmiennoprzecinkowa punktu modelu.  
+   Ustawia model zmiennoprzecinkowy.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Dokładne** -   **/FP: precise**  
+  - **Precyzyjna**  -  **/FP: Precyzyjna**  
   
-  - **Ścisłe** -   **/FP: strict**  
+  - **Strict**  -  **/FP: Strict**  
   
-  - **Fast** - **/fp:fast**  
+  - **Szybkie**  -  **/FP: szybka**  
   
-    Aby uzyskać więcej informacji, zobacz [/FP (określenie zachowania zmiennopozycyjna)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
+    Aby uzyskać więcej informacji, zobacz [/FP (Określ zachowanie zmiennoprzecinkowe)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
   
 - **ForceConformanceInForLoopScope**  
   
-   Opcjonalny parametr typu Boolean.  
+   Opcjonalny parametr logiczny.  
   
-   Jeśli `true`, implementuje standardowego zachowania C++ w [dla](https://msdn.microsoft.com/library/6c7d01b3-c4c1-4c6a-aa58-e2d198f33d4a) pętli, które należy użyć rozszerzeń firmy Microsoft ([/Ze](https://msdn.microsoft.com/library/65e49258-7161-4289-a176-7c5c0656b1a2)).  
+   Jeśli `true` , implementuje standardowe zachowanie języka C++ w programie [dla](https://msdn.microsoft.com/library/6c7d01b3-c4c1-4c6a-aa58-e2d198f33d4a) pętli, które używają rozszerzeń Microsoft ([/ze](https://msdn.microsoft.com/library/65e49258-7161-4289-a176-7c5c0656b1a2)).  
   
-   Aby uzyskać więcej informacji, zobacz [/Zc: forscope (Wymuszaj zgodność w zakresie pętli for)](https://msdn.microsoft.com/library/3031f02d-3b14-4ad0-869e-22b0110c3aed).  
+   Aby uzyskać więcej informacji, zobacz [/Zc: forScope (Wymuszaj zgodność w zakresie pętli for)](https://msdn.microsoft.com/library/3031f02d-3b14-4ad0-869e-22b0110c3aed).  
   
 - **ForcedIncludeFiles**  
   
-   Opcjonalnie `String[]` parametru.  
+   Opcjonalny `String[]` parametr.  
   
-   Powoduje, że preprocesor do przetworzenia jeden lub więcej plików określony nagłówek.  
+   Powoduje, że preprocesor przetwarza jeden lub więcej określonych plików nagłówkowych.  
   
-   Aby uzyskać więcej informacji, zobacz [/FI (nazwij wymuszone obejmują plik)](https://msdn.microsoft.com/library/07e79577-8152-4df9-a64c-aae08c603397).  
+   Aby uzyskać więcej informacji, zobacz [/Fi (Nazwij plik z wymuszonym dołączeniem)](https://msdn.microsoft.com/library/07e79577-8152-4df9-a64c-aae08c603397).  
   
 - **ForcedUsingFiles**  
   
-   Opcjonalnie **String []** parametru.  
+   Opcjonalny parametr **String []** .  
   
-   Powoduje, że preprocesora aby przetworzyć jednego lub więcej określonych **#using** plików.  
+   Powoduje, że preprocesor przetwarza jeden lub więcej określonych **#using** plików.  
   
-   Aby uzyskać więcej informacji, zobacz [/FU (nazwij wymuszone #using)](https://msdn.microsoft.com/library/698f8603-457f-435a-baff-5ac9243d6ca1).  
+   Aby uzyskać więcej informacji, zobacz [/Fu (nazwa pliku wymuszonego #using)](https://msdn.microsoft.com/library/698f8603-457f-435a-baff-5ac9243d6ca1).  
   
 - **FunctionLevelLinking**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, umożliwia kompilatorowi pakowanie indywidualnych funkcji w formę spakowanych funkcji (Comdat).  
+   Jeśli `true` , umożliwia kompilatorowi pakowanie poszczególnych funkcji w postaci spakowanych funkcji (COMDAT).  
   
-   Aby uzyskać więcej informacji, zobacz [/Gy (Włącz łączenie poziomie funkcji)](https://msdn.microsoft.com/library/0d3cf14c-ed7d-4ad3-b4b6-104e56f61046).  
+   Aby uzyskać więcej informacji, zobacz [/Gy (Włącz łączenie na poziomie funkcji)](https://msdn.microsoft.com/library/0d3cf14c-ed7d-4ad3-b4b6-104e56f61046).  
   
 - **GenerateXMLDocumentationFiles**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, powoduje, że kompilator, aby przetworzyć dokumentacji komentarzy w kodu pliki źródłowe i Utwórz plik .xdc dla każdego źródła kodu pliku, który ma komentarze dokumentacji.  
+   Jeśli `true` , powoduje, że kompilator przetwarza komentarze dokumentacji w plikach kodu źródłowego i tworzy plik. xdc dla każdego pliku kodu źródłowego, który zawiera komentarze dokumentacji.  
   
-   Aby uzyskać więcej informacji, zobacz [/doc (Przetwarzaj komentarze dokumentacji) (C/C++)](https://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Zobacz też **XMLDocumentationFileName** parametru w tej tabeli.  
+   Aby uzyskać więcej informacji, zobacz [/doc (Przetwarzaj komentarze dokumentacji) (C/C++)](https://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Zobacz również parametr **XMLDocumentationFileName** w tej tabeli.  
   
 - **IgnoreStandardIncludePath**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, zabezpiecza kompilator przed wyszukiwaniem dołączonych plików w katalogach określonych w zmiennych środowiskowych PATH lub INCLUDE.  
+   Jeśli `true` , program uniemożliwia kompilatorowi wyszukiwanie plików dołączanych w katalogach określonych w ścieżce i zawiera zmienne środowiskowe.  
   
-   Aby uzyskać więcej informacji, zobacz [/X (Ignoruj standardowe ścieżki dołączanych plików)](https://msdn.microsoft.com/library/16bdf2cc-c8dc-46e4-bdcc-f3caeba5e1ef).  
+   Aby uzyskać więcej informacji, zobacz [/x (Ignoruj standardowe ścieżki dołączanych plików)](https://msdn.microsoft.com/library/16bdf2cc-c8dc-46e4-bdcc-f3caeba5e1ef).  
   
 - **InlineFunctionExpansion**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa poziom rozwijania funkcji inline w kompilacji.  
+   Określa poziom rozwinięcia funkcji wbudowanej dla kompilacji.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Domyślne** - *\<Brak >*  
+  - **Wartooć** - *\<none>*  
   
-  - **Wyłączone** - **/Ob0**  
+  - **Wyłączony**  -  **/Ob0**  
   
-  - **OnlyExplicitInline** - **/Ob1**  
+  - **OnlyExplicitInline**  -  **/OB1**  
   
-  - **AnySuitable** - **/Ob2**  
+  - **AnySuitable**  -  **/Ob2**  
   
-    Aby uzyskać więcej informacji, zobacz [/Ob (rozszerzenie funkcji wbudowanej)](https://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a).  
+    Aby uzyskać więcej informacji, zobacz [/ob (rozszerzenie funkcji wbudowanej)](https://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a).  
   
 - **IntrinsicFunctions**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, zastępuje niektórych funkcji wywołuje z wewnętrznych lub w przeciwnym razie specjalnych formy funkcji pomagających aplikacji działają szybciej.  
+   W przypadku `true` zastąpienia niektórych wywołań funkcji za pomocą wewnętrznych lub w inny sposób specjalnych form funkcji, która ułatwia działanie aplikacji.  
   
    Aby uzyskać więcej informacji, zobacz [/Oi (Generuj funkcje wewnętrzne)](https://msdn.microsoft.com/library/fa4a3bf6-0ed8-481b-91c0-add7636132b4).  
   
 - **MinimalRebuild**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, włącza minimalną ponowną kompilację, która określa, czy pliki źródłowe C++, które zawierają zmienione C++ klasy definicje (przechowywane w plikach nagłówków (.h)) musi być ponownie kompilowane.  
+   Jeśli `true` program włączy minimalną ponowną kompilację, która określa, czy pliki źródłowe c++, które zawierają zmienione definicje klas c++ (przechowywane w plikach nagłówkowych (h)), muszą być ponownie skompilowane.  
   
-   Aby uzyskać więcej informacji, zobacz [/Gm (Włącz minimalną ponowną kompilację)](https://msdn.microsoft.com/library/d8869ce0-d2ea-40eb-8dae-6d2cdb61dd59).  
+   Aby uzyskać więcej informacji, zobacz [/GM (Włącz minimalną](https://msdn.microsoft.com/library/d8869ce0-d2ea-40eb-8dae-6d2cdb61dd59)ponowną kompilację).  
   
 - **MultiProcessorCompilation**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, użycie wielu procesorów do skompilowania. Ten parametr tworzy proces dla każdego procesora skuteczne na komputerze.  
+   Jeśli `true` używasz wielu procesorów do kompilowania. Ten parametr tworzy proces dla każdego efektywnego procesora na komputerze.  
   
-   Aby uzyskać więcej informacji, zobacz [/MP (kompilacja z wieloma procesami)](https://msdn.microsoft.com/library/a932b14a-74fe-4b45-84e4-6bf53f0f5e07). Zobacz też **ProcessorNumber** parametru w tej tabeli.  
+   Aby uzyskać więcej informacji, zobacz [/MP (kompilacja z wieloma procesami)](https://msdn.microsoft.com/library/a932b14a-74fe-4b45-84e4-6bf53f0f5e07). Zobacz również parametr **ProcessorNumber** w tej tabeli.  
   
 - **ObjectFileName**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa nazwę pliku obiektu (.obj) lub katalog ma być używany zamiast domyślnego.  
+   Określa nazwę lub katalog pliku obiektu (. obj), który ma być używany zamiast domyślnego.  
   
-   Aby uzyskać więcej informacji, zobacz [/Fo (nazwa pliku obiektu)](https://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6).  
+   Aby uzyskać więcej informacji, zobacz [/FO (nazwa pliku obiektu)](https://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6).  
   
 - **ObjectFiles**  
   
-   Opcjonalnie **String []** parametru.  
+   Opcjonalny parametr **String []** .  
   
    Lista plików obiektów.  
   
 - **OmitDefaultLibName**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, pomija domyślną nazwę biblioteki wykonawczej języka C z pliku obiektu (.obj). Domyślnie kompilator umieszcza nazwę biblioteki z pliku .obj, aby nakazać konsolidator odpowiedniej biblioteki.  
+   Jeśli `true` , pomija domyślną nazwę biblioteki wykonawczej C z pliku obiektu (. obj). Domyślnie kompilator umieszcza nazwę biblioteki w pliku. obj, aby skierować konsolidator do odpowiedniej biblioteki.  
   
-   Aby uzyskać więcej informacji, zobacz [/Zl (Pomiń domyślną nazwę biblioteki)](https://msdn.microsoft.com/library/b27d39d0-44d6-498c-84ae-27c1326fee59).  
+   Aby uzyskać więcej informacji, zobacz [/zl (Pomiń domyślną nazwę biblioteki)](https://msdn.microsoft.com/library/b27d39d0-44d6-498c-84ae-27c1326fee59).  
   
 - **OmitFramePointers**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, pomija tworzenie wskaźników ramek na stosie wywołań.  
+   Jeśli `true` , pomija tworzenie wskaźników ramek na stosie wywołań.  
   
    Aby uzyskać więcej informacji, zobacz [/Oy (pominięcie wskaźnika ramki)](https://msdn.microsoft.com/library/c451da86-5297-4c5a-92bc-561d41379853).  
   
 - **OpenMPSupport**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, powoduje, że kompilator przetwarzania klauzule OpenMP i dyrektywy.  
+   Jeśli `true` , powoduje, że kompilator przetwarza klauzule OpenMP i dyrektywy.  
   
-   Aby uzyskać więcej informacji, zobacz [/OpenMP (Włącz obsługę OpenMP 2.0)](https://msdn.microsoft.com/library/9082b175-18d3-4378-86a7-c0eb95664e13).  
+   Aby uzyskać więcej informacji, zobacz [/OpenMP (Włączanie obsługi openmp 2,0)](https://msdn.microsoft.com/library/9082b175-18d3-4378-86a7-c0eb95664e13).  
   
 - **Optymalizacja**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa różne optymalizacje kodu szybkości i rozmiaru.  
+   Określa różne optymalizacje kodu dla szybkości i rozmiaru.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Wyłączone** - **/Od**  
+  - **Wyłączony**  -  **/Od**  
   
-  - **MinSpace** - **/O1**  
+  - **MinSpace**  -  **/O1**  
   
-  - **MaxSpeed** -   **/O2**  
+  - **MaxSpeed**  -  **/O2**  
   
-  - **Full** - **/Ox**  
+  - **Pełny**  -  **/OX**  
   
     Aby uzyskać więcej informacji, zobacz [/O opcje (Optymalizuj kod)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d).  
   
 - **PrecompiledHeader**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Utwórz lub przy użyciu pliku prekompilowanego pliku nagłówkowego (.pch) podczas kompilacji.  
+   Podczas kompilowania Utwórz lub użyj prekompilowanego pliku nagłówkowego (. pch).  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **NotUsing** - *\<Brak >*  
+  - **NotUsing** - *\<none>*  
   
-  - **Tworzenie** - **/Yc**  
+  - **Utwórz**  -  **/YC**  
   
-  - **Use** - **/Yu**  
+  - **Użyj**  -  **/Yu**  
   
-    Aby uzyskać więcej informacji, zobacz [/Yc (Utwórz prekompilowany plik nagłówkowy)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) i [/Yu (Korzystaj Prekompilowanego pliku nagłówka)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f). Zobacz też **PrecompiledHeaderFile** i **PrecompiledHeaderOutputFile** parametrów w tej tabeli.  
+    Aby uzyskać więcej informacji, zobacz [/YC (Create prekompilowany plik nagłówkowy)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) i [/Yu (Użyj prekompilowanego pliku nagłówkowego)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f). Zobacz również parametry **PrecompiledHeaderFile** i **PrecompiledHeaderOutputFile** w tej tabeli.  
   
 - **PrecompiledHeaderFile**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa nazwę prekompilowanego pliku nagłówka do utworzenia lub używania.  
+   Określa nazwę prekompilowanego pliku nagłówkowego do utworzenia lub użycia.  
   
-   Aby uzyskać więcej informacji, zobacz [/Yc (Utwórz prekompilowany plik nagłówkowy)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) i [/Yu (Korzystaj Prekompilowanego pliku nagłówka)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f).  
+   Aby uzyskać więcej informacji, zobacz [/YC (Create prekompilowany plik nagłówkowy)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) i [/Yu (Użyj prekompilowanego pliku nagłówkowego)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f).  
   
 - **PrecompiledHeaderOutputFile**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa nazwę ścieżki dla prekompilowanego nagłówka, zamiast używać domyślnej nazwy ścieżki.  
+   Określa nazwę ścieżki prekompilowanego nagłówka zamiast używania domyślnej nazwy ścieżki.  
   
-   Aby uzyskać więcej informacji, zobacz  [ /FP (nazwa. Plik pch)](https://msdn.microsoft.com/library/0fcd9cbd-e09f-44d3-9715-b41efb5d0be2).  
+   Aby uzyskać więcej informacji, zobacz [/FP (Name. Plik PCH)](https://msdn.microsoft.com/library/0fcd9cbd-e09f-44d3-9715-b41efb5d0be2).  
   
 - **PreprocessKeepComments**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, zachowuje komentarze podczas przetwarzania wstępnego.  
+   If `true` zachowuje komentarze podczas przetwarzania wstępnego.  
   
-   Aby uzyskać więcej informacji, zobacz [/C (Zachowaj komentarze podczas przetwarzania wstępnego)](https://msdn.microsoft.com/library/944567ca-16bc-4728-befe-d414a7787f26).  
+   Aby uzyskać więcej informacji, zobacz [/c (Zachowaj komentarze podczas przetwarzania wstępnego)](https://msdn.microsoft.com/library/944567ca-16bc-4728-befe-d414a7787f26).  
   
 - **PreprocessorDefinitions**  
   
-   Opcjonalnie `String[]` parametru.  
+   Opcjonalny `String[]` parametr.  
   
    Definiuje symbol przetwarzania wstępnego dla pliku źródłowego.  
   
-   Aby uzyskać więcej informacji, zobacz [/D (definicje preprocesora)](https://msdn.microsoft.com/library/b53fdda7-8da1-474f-8811-ba7cdcc66dba).  
+   Aby uzyskać więcej informacji, zobacz [/d (Definicje preprocesora)](https://msdn.microsoft.com/library/b53fdda7-8da1-474f-8811-ba7cdcc66dba).  
   
 - **PreprocessOutput**  
   
-   Opcjonalnie `ITaskItem[]` parametru.  
+   Opcjonalny `ITaskItem[]` parametr.  
   
-   Określa tablicę elementów dane wyjściowe preprocesora, które może być używany i wyemitowane przez zadania.  
+   Definiuje tablicę elementów wyjściowych preprocesora, które mogą być używane i emitowane przez zadania.  
   
 - **PreprocessOutputPath**  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
-   Określa nazwę pliku wyjściowego, do którego **PreprocessToFile** parametr zapisuje wstępnie przetworzone produkty wyjściowe.  
+   Określa nazwę pliku wyjściowego, do którego parametr **PreprocessToFile** zapisuje wstępnie przetworzone dane wyjściowe.  
   
-   Aby uzyskać więcej informacji, zobacz [/Fi (Przetwarzaj wstępnie dane wyjściowe pliku nazwa)](https://msdn.microsoft.com/library/6d0ba983-a8b7-41ec-84f5-b4688ef8efee).  
+   Aby uzyskać więcej informacji, zobacz [/Fi (Przetwarzaj wstępnie nazwę pliku wyjściowego)](https://msdn.microsoft.com/library/6d0ba983-a8b7-41ec-84f5-b4688ef8efee).  
   
 - **PreprocessSuppressLineNumbers**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`wstępnie przetwarza pliki źródłowe C i C++ oraz kopiuje pliki wstępnie przetworzony do urządzenia wyjścia standardowego.  
+   Jeśli `true` program wstępnie przetworzy pliki źródłowe C i C++ i skopiuje wstępnie przetworzone pliki na standardowe urządzenie wyjściowe.  
   
-   Aby uzyskać więcej informacji, zobacz [/EP (wstępnie Przetwórz do stdout bez dyrektyw #line)](https://msdn.microsoft.com/library/6ec411ae-e33d-4ef5-956e-0054635eabea).  
+   Aby uzyskać więcej informacji, zobacz [/EP (wstępnie przetwórz do stdout bez dyrektyw #line)](https://msdn.microsoft.com/library/6ec411ae-e33d-4ef5-956e-0054635eabea).  
   
 - **PreprocessToFile**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`wstępnie przetwarza pliki źródłowe C i C++ i zapisuje wstępnie przetworzone produkty wyjściowe do pliku.  
+   Jeśli `true` program wstępnie przetworzy pliki źródłowe C i C++ i zapisze wstępnie przetworzone dane wyjściowe do pliku.  
   
-   Aby uzyskać więcej informacji, zobacz [/P (Przetwarzaj wstępnie do pliku)](https://msdn.microsoft.com/library/123ee54f-8219-4a6f-9876-4227023d83fc).  
+   Aby uzyskać więcej informacji, zobacz [/p (Przetwarzaj wstępnie do pliku)](https://msdn.microsoft.com/library/123ee54f-8219-4a6f-9876-4227023d83fc).  
   
 - **ProcessorNumber**  
   
-   Opcjonalnie `Integer` parametru.  
+   Opcjonalny `Integer` parametr.  
   
-   Określa maksymalną liczbę procesorów, którą należy używać w kompilacji wieloprocesorowej. Tego parametru należy użyć w połączeniu z **MultiProcessorCompilation** parametru.  
+   Określa maksymalną liczbę procesorów do użycia w kompilacji wieloprocesorowej. Tego parametru należy używać w połączeniu z parametrem **MultiProcessorCompilation** .  
   
 - **ProgramDataBaseFileName**  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
-   Określa nazwę pliku dla pliku bazy danych (PDB) programu.  
+   Określa nazwę pliku bazy danych programu (PDB).  
   
-   Aby uzyskać więcej informacji, zobacz [/Fd (nazwa pliku bazy danych programu)](https://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a).  
+   Aby uzyskać więcej informacji, zobacz [/FD (nazwa pliku bazy danych programu)](https://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a).  
   
 - **RuntimeLibrary**  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
-   Wskazuje, czy moduł wielowątkowy jest biblioteką DLL i wybiera sprzedaży detalicznej lub debugowania wersji biblioteki wykonawczej.  
+   Wskazuje, czy moduł wielowątkowy jest biblioteką DLL, i wybiera wersje detaliczne lub debugowania biblioteki wykonawczej.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **MultiThreaded** - **/MT**  
+  - **Wielowątkowe**  -  **/MT**  
   
-  - **MultiThreadedDebug** - **/MTd**  
+  - **MultiThreadedDebug**  -  **/MTD**  
   
-  - **MultiThreadedDLL** - **/MD**  
+  - **MultiThreadedDLL**  -  **/MD**  
   
-  - **MultiThreadedDebugDLL** - **/MDd**  
+  - **MultiThreadedDebugDLL**  -  **/MDD**  
   
-    Aby uzyskać więcej informacji, zobacz [/ / MD, / MT, /LD (Korzystaj z bibliotek wykonawczych)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579).  
+    Aby uzyskać więcej informacji, zobacz [/MD,/MT,/LD (Korzystanie z biblioteki wykonawczej)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579).  
   
 - **RuntimeTypeInfo**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, dodaje kod do sprawdzania typów obiektów C++ w czasie wykonywania (informacje typu run-time).  
+   Jeśli `true` , dodaje kod do sprawdzania typów obiektów C++ w czasie wykonywania (informacje o typie czasu wykonywania).  
   
-   Aby uzyskać więcej informacji, zobacz [/GR (Włącz Run-Time informacje o typie)](https://msdn.microsoft.com/library/d1f9f850-dcec-49fd-96ef-e72d01148906).  
+   Aby uzyskać więcej informacji, zobacz [/gr (Włącz informacje typu run-time)](https://msdn.microsoft.com/library/d1f9f850-dcec-49fd-96ef-e72d01148906).  
   
 - **ShowIncludes**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, powoduje, że kompilator danych wyjściowych listy plików dołączanych.  
+   Jeśli `true` , powoduje, że kompilator wyprowadza listę plików dołączanych.  
   
-   Aby uzyskać więcej informacji, zobacz [/showincludes (Wymień pliki dołączane)](https://msdn.microsoft.com/library/0b74b052-f594-45a6-a7c7-09e1a319547d).  
+   Aby uzyskać więcej informacji, zobacz [/showIncludes (lista plików dołączanych)](https://msdn.microsoft.com/library/0b74b052-f594-45a6-a7c7-09e1a319547d).  
   
 - **SmallerTypeCheck**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, zgłasza błąd w czasie wykonywania, jeśli wartość jest przypisana do mniejszych typów danych i powoduje utratę danych.  
+   Jeśli `true` program zgłosi błąd czasu wykonywania, jeśli wartość zostanie przypisana do mniejszego typu danych i spowoduje utratę danych.  
   
-   Aby uzyskać więcej informacji, zobacz **/RTCc** opcji [usunęliśmy (kontrole błąd czasu wykonywania)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
+   Aby uzyskać więcej informacji, zobacz **/RTCc** Option in [/RTC (sprawdzanie błędów czasu wykonywania)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
   
 - **Źródła**  
   
-   Wymagane `ITaskItem[]` parametru.  
+   Wymagany parametr interfejsu `ITaskItem[]`.  
   
-   Określa listę plików źródłowych, rozdzielone spacjami.  
+   Określa listę plików źródłowych rozdzielonych spacjami.  
   
 - **StringPooling**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, umożliwia kompilatorowi tworzenie po jednej kopii identycznych ciągów w obrazie programu.  
+   Jeśli `true` , umożliwia kompilatorowi utworzenie jednej kopii identycznych ciągów w obrazie programu.  
   
    Aby uzyskać więcej informacji, zobacz [/GF (eliminowanie ciągów zduplikowanych)](https://msdn.microsoft.com/library/bb7b5d1c-8e1f-453b-9298-8fcebf37d16c).  
   
 - **StructMemberAlignment**  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
-   Określa bajtowe wyrównanie dla wszystkich członków w strukturze.  
+   Określa wyrównanie bajtów dla wszystkich elementów członkowskich w strukturze.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Default** - **/Zp1**  
+  - **Wartość domyślna**  -  **/ZP1**  
   
-  - **1Byte** - **/Zp1**  
+  - **1Byte**  -  **/ZP1**  
   
-  - **2Bytes** - **/Zp2**  
+  - **2Bytes**  -  **/Zp2**  
   
-  - **4Bytes** - **/Zp4**  
+  - **4Bytes**  -  **/Zp4**  
   
-  - **8Bytes** - **/Zp8**  
+  - **8Bytes**  -  **/ZP8**  
   
-  - **16Bytes** - **/Zp16**  
+  - **16Bytes**  -  **/Zp16**  
   
-    Aby uzyskać więcej informacji, zobacz [/ZP (wyrównanie członka struktury)](https://msdn.microsoft.com/library/5242f656-ed9b-48a3-bc73-cfcf3ed2520f).  
+    Aby uzyskać więcej informacji, zobacz [/ZP (wyrównanie składowej struktury)](https://msdn.microsoft.com/library/5242f656-ed9b-48a3-bc73-cfcf3ed2520f).  
   
 - **SuppressStartupBanner**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, uniemożliwia wyświetlanie wiadomości praw autorskich i wersji, podczas uruchamiania zadania.  
+   Jeśli `true` , program zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji, gdy zadanie zostanie uruchomione.  
   
    Aby uzyskać więcej informacji, zobacz [/nologo (Pomijaj transparent startowy) (C/C++)](https://msdn.microsoft.com/library/75930d8b-b11c-4db8-99e5-b52f97da0693).  
   
-- **TrackerLogDirectory**  
+- **Katalog trackerlogdirectory**  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
    Określa katalog pośredni, w którym są przechowywane dzienniki śledzenia dla tego zadania.  
   
-   Aby uzyskać więcej informacji, zobacz **TLogReadFiles** i **TLogWriteFiles** parametrów w tej tabeli.  
+   Aby uzyskać więcej informacji, zobacz parametry **TLogReadFiles** i **TLogWriteFiles** w tej tabeli.  
   
 - **TreatSpecificWarningsAsErrors**  
   
-   Opcjonalnie **String []** parametru.  
+   Opcjonalny parametr **String []** .  
   
-   Traktuje określona lista ostrzeżenia kompilatora jako błędy.  
+   Traktuje określoną listę ostrzeżeń kompilatora jako błędy.  
   
-   Aby uzyskać więcej informacji, zobacz **/we** `n` opcji [Wn /W0, / W1, / W2, / W3, / W4, / W1, / W2, / W3, / W4, / Wall / wo, WV, /WX (poziom ostrzegawczy)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+   Aby uzyskać więcej informacji, zobacz **/we** `n` opcja w [/W,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/we,/wo,/WV,/WX (poziom ostrzeżenia)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **TreatWarningAsError**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, traktuje wszystkie ostrzeżenia kompilatora jako błędy.  
+   Jeśli `true` wszystkie ostrzeżenia kompilatora mają być traktowane jako błędy.  
   
-   Aby uzyskać więcej informacji, zobacz **/WX** opcji [Wn /W0, / W1, / W2, / W3, / W4, / W1, / W2, / W3, / W4, / Wall / wo, WV, /WX (poziom ostrzegawczy)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+   Aby uzyskać więcej informacji, zobacz **/WX** Option in [/w,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/we,/wo,/WV,/WX (poziom ostrzeżeń)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **TreatWChar_tAsBuiltInType**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, Traktuj `wchar_t` typu jako typu natywnego.  
+   Jeśli `true` Typ ma być traktowany `wchar_t` jako typ natywny.  
   
-   Aby uzyskać więcej informacji, zobacz [/Zc: wchar_t (wchar_t jest typem natywnym)](https://msdn.microsoft.com/library/b0de5a84-da72-4e5a-9a4e-541099f939e0).  
+   Aby uzyskać więcej informacji, zobacz [/Zc: wchar_t (Wchar_t jest typem natywnym)](https://msdn.microsoft.com/library/b0de5a84-da72-4e5a-9a4e-541099f939e0).  
   
 - **UndefineAllPreprocessorDefinitions**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, jedno anulowanie definicji symboli specyficzne dla firmy Microsoft, które definiuje kompilator.  
+   Jeśli `true` , definiuje zdefiniowane przez kompilator symbole specyficzne dla firmy Microsoft.  
   
-   Aby uzyskać więcej informacji, zobacz **/u** opcji [/U, /u (Usuń definicje symboli)](https://msdn.microsoft.com/library/7bc0474f-6d1f-419b-807d-0d8816763b2a).  
+   Aby uzyskać więcej informacji, zobacz **/u** opcji w [/u,/u (Usuń definicje symboli)](https://msdn.microsoft.com/library/7bc0474f-6d1f-419b-807d-0d8816763b2a).  
   
 - **UndefinePreprocessorDefinitions**  
   
-   Opcjonalnie `String[]` parametru.  
+   Opcjonalny `String[]` parametr.  
   
-   Określa listę jednego lub wielu symboli preprocesora usunięcia definicji.  
+   Określa listę co najmniej jednego symbolu preprocesora do usunięcia.  
   
-   Aby uzyskać więcej informacji, zobacz **/U** opcji [/U, /u (Usuń definicje symboli)](https://msdn.microsoft.com/library/7bc0474f-6d1f-419b-807d-0d8816763b2a).  
+   Aby uzyskać więcej informacji, zobacz **/u** opcji w [/u,/u (Usuń definicje symboli)](https://msdn.microsoft.com/library/7bc0474f-6d1f-419b-807d-0d8816763b2a).  
   
 - **UseFullPaths**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, wyświetla pełną ścieżkę plików kodu źródłowego przekazane do kompilatora w diagnostyce.  
+   Jeśli `true` , wyświetla pełną ścieżkę do plików kodu źródłowego przekazaną do kompilatora w diagnostyce.  
   
-   Aby uzyskać więcej informacji, zobacz [/FC (pełna ścieżka z pliku kodu źródłowego w diagnostyce)](https://msdn.microsoft.com/library/1f11414e-cb42-421b-be68-9d369aab036b).  
+   Aby uzyskać więcej informacji, zobacz [/FC (Pełna ścieżka pliku kodu źródłowego w diagnostyce)](https://msdn.microsoft.com/library/1f11414e-cb42-421b-be68-9d369aab036b).  
   
 - **UseUnicodeForAssemblerListing**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, powoduje, że plik wyjściowy będzie utworzony w formacie UTF-8.  
+   Jeśli `true` , powoduje, że plik wyjściowy zostanie utworzony w formacie UTF-8.  
   
-   Aby uzyskać więcej informacji, zobacz **/fau** opcji [/FA, /Fa (wyświetlanie listy plików)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
+   Aby uzyskać więcej informacji, zobacz opcja **/FAU** w [/FA,/FA (lista plików)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
-- **Poziom_ostrzeżeń**  
+- **WarningLevel**  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
-   Określa najwyższy poziom ostrzeżenia, który ma zostać wygenerowane przez kompilator.  
+   Określa najwyższy poziom ostrzeżeń, który ma zostać wygenerowany przez kompilator.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **TurnOffAllWarnings** - **/W0**  
+  - **TurnOffAllWarnings**  -  **/W0**  
   
-  - **Level1** - **/W1**  
+  - **Level1**  -  **/W1**  
   
-  - **Level2** - **/W2**  
+  - **Level2**  -  **/W2**  
   
-  - **Level3** - **/W3**  
+  - **LEVEL3**  -  **/W3**  
   
-  - **Level4** - **/W4**  
+  - **Level4**  -  **/W4**  
   
-  - **EnableAllWarnings** -   **/Wall**  
+  - **Włącz wszystkie ostrzeżenia**  -  **/Wall**  
   
-    Aby uzyskać więcej informacji, zobacz **Wn**_n_ opcji [Wn /W0, / W1, / W2, / W3, / W4, / W1, / W2, / W3, / W4, / Wall / wo, WV, /WX (poziom ostrzegawczy)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+    Aby uzyskać więcej informacji, zobacz sekcję **/w**_n_ w opcjach [/w,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/we,/wo,/WV,/WX (poziom ostrzeżeń)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **WholeProgramOptimization**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, włącza optymalizację całego programu.  
+   Jeśli `true` , włącza optymalizację całego programu.  
   
-   Aby uzyskać więcej informacji, zobacz [/GL (Optymalizacja Całoprogramowa)](https://msdn.microsoft.com/library/09d51e2d-9728-4bd0-b5dc-3b8284aca1d1).  
+   Aby uzyskać więcej informacji, zobacz [/GL (Optymalizacja całego programu)](https://msdn.microsoft.com/library/09d51e2d-9728-4bd0-b5dc-3b8284aca1d1).  
   
 - **XMLDocumentationFileName**  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
-   Określa nazwę wygenerowanego pliki dokumentacji XML. Ten parametr może być nazwa pliku lub katalogu.  
+   Określa nazwę wygenerowanego pliku dokumentacji XML. Ten parametr może być nazwą pliku lub katalogu.  
   
-   Aby uzyskać więcej informacji, zobacz `name` argument [/doc (Przetwarzaj komentarze dokumentacji) (C/C++)](https://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Zobacz też **GenerateXMLDocumentationFiles** parametru w tej tabeli.  
+   Aby uzyskać więcej informacji, zobacz `name` argument w [/doc (Przetwarzaj komentarze dokumentacji) (C/C++)](https://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Zobacz również parametr **GenerateXMLDocumentationFiles** w tej tabeli.  
   
 - **MinimalRebuildFromTracking**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, śledzonych kompilacja przyrostowa odbywa się; Jeśli `false`, ponownej kompilacji jest wykonywane.  
+   Jeśli `true` jest wykonywana śledzona kompilacja przyrostowa; w przypadku `false` przetworzenia odbudowy.  
   
 - **TLogReadFiles**  
   
-   Opcjonalnie `ITaskItem[]` parametru.  
+   Opcjonalny `ITaskItem[]` parametr.  
   
-   Określa tablicę elementów, które reprezentują *odczytać pliku dzienniki śledzenia*.  
+   Określa tablicę elementów, które reprezentują *dzienniki śledzenia plików odczytywane*.  
   
-   Śledzenie odczytu pliku dziennika (.tlog) zawiera nazwy plików wejściowych, które są odczytywane przez zadanie i jest używana przez system kompilacji projektu do obsługi kompilacje przyrostowe. Aby uzyskać więcej informacji, zobacz **katalog TrackerLogDirectory** i **element TrackFileAccess** parametrów w tej tabeli.  
+   Dziennik śledzenia plików (. tlog) zawiera nazwy plików wejściowych, które są odczytywane przez zadanie i są używane przez system kompilacji projektu do obsługi kompilacji przyrostowych. Aby uzyskać więcej informacji, zobacz parametry **katalog trackerlogdirectory** i **TrackFileAccess** w tej tabeli.  
   
 - **TLogWriteFiles**  
   
-   Opcjonalnie `ITaskItem[]` parametru.  
+   Opcjonalny `ITaskItem[]` parametr.  
   
-   Określa tablicę elementów, które reprezentują *wpisywanie do pliku tekstowego dzienniki śledzenia*.  
+   Określa tablicę elementów, które reprezentują *dzienniki śledzenia plików zapisu*.  
   
-   Zapisu pliku dziennika śledzenia (.tlog) zawiera nazwy plików wyjściowych, które są zapisywane przez zadanie i jest używana przez system kompilacji projektu do obsługi kompilacje przyrostowe. Aby uzyskać więcej informacji, zobacz **katalog TrackerLogDirectory** i **element TrackFileAccess** parametrów w tej tabeli.  
+   Dziennik śledzenia plików zapisu (. tlog) zawiera nazwy plików wyjściowych, które są zapisywane przez zadanie, i jest używany przez system kompilacji projektu do obsługi kompilacji przyrostowych. Aby uzyskać więcej informacji, zobacz parametry **katalog trackerlogdirectory** i **TrackFileAccess** w tej tabeli.  
   
 - **TrackFileAccess**  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, śledzi wzorce dostępu do pliku.  
+   Jeśli `true` śledzi wzorce dostępu do plików.  
   
-   Aby uzyskać więcej informacji, zobacz **TLogReadFiles** i **TLogWriteFiles** parametrów w tej tabeli.  
+   Aby uzyskać więcej informacji, zobacz parametry **TLogReadFiles** i **TLogWriteFiles** w tej tabeli.  
   
 ## <a name="remarks"></a>Uwagi  
   

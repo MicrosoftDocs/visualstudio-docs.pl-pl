@@ -1,5 +1,5 @@
 ---
-title: Extern, Element | Dokumentacja firmy Microsoft
+title: Element extern | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,18 +14,18 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17477b7eb60aa332f6910019e28f4c53aa31ebf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204395"
 ---
 # <a name="extern-element"></a>Extern, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Extern, element odwołuje się do żadnych plików zewnętrzne nagłówków (.h) do scalenia przy użyciu pliku vsct w czasie kompilacji. Pliki do scalenia muszą znajdować się w ścieżce Include podane do kompilatora VSCT lub jest przywoływany przez [obejmują Element](../extensibility/include-element.md). Pliki mogą być inne .vsct — pliki lub pliki nagłówkowe C++.  
+Element extern odwołuje się do wszystkich plików zewnętrznego nagłówka (. h) do scalenia z plikiem. vsct w czasie kompilacji. Pliki, które mają zostać scalone, muszą znajdować się na ścieżce dołączania do kompilatora VSCT lub odwołania do [elementu include](../extensibility/include-element.md). Pliki mogą być innymi plikami. vsct lub plikami nagłówkowe języka C++.  
   
- Definicje w plikach nagłówkowych musi mieć postać "#define [Symbol] [wartość]" wartość może być inny symbol, jeśli został wcześniej zdefiniowany. Definicje mogą być używane w instrukcjach warunkowych elementów polecenia. Dowolny symbol nie rzeczywistej zostaną odrzucone.  
+ Definicje w plikach nagłówkowych muszą mieć postać "#define [symbol] [Value]" wartość może być innym symbolem, jeśli jest wcześniej zdefiniowana. Definicje mogą być używane w instrukcjach warunkowych elementów poleceń. Wszelkie symbole, które nie są faktycznie używane, zostaną odrzucone.  
   
  CommandTable, element  
 Extern, element  
@@ -43,9 +43,9 @@ Extern, element
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|{1&gt;href&lt;1}|Wymagany. Ścieżka do pliku nagłówka:<br /><br /> href="stdidcmd.h"|  
-|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-|język|Opcjonalny. Domyślny język wszystkich [ \<ciągi >](../extensibility/strings-element.md) elementów w tabeli poleceń:<br /><br /> Language = "en-us"|  
+|Tag|Wymagany. Ścieżka do pliku nagłówkowego:<br /><br /> href = "Stdidcmd. h"|  
+|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|language|Opcjonalny. Język domyślny wszystkich [\<Strings>](../extensibility/strings-element.md) elementów w tabeli poleceń:<br /><br /> Language = "pl-US"|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
@@ -57,7 +57,7 @@ Extern, element
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują poleceń — czyli elementy menu, menu, paski narzędzi i pola kombi — zapewniającej pakietu VSPackage IDE.|  
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia — czyli elementy menu, menu, paski narzędzi i pola kombi, które pakietu VSPackage zapewnia IDE.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -72,6 +72,6 @@ Extern, element
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tabeli poleceń programu Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Tabela poleceń programu Visual Studio (. Vsct) — pliki](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

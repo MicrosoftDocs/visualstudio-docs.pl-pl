@@ -1,5 +1,5 @@
 ---
-title: Historia pikseli grafiki | Dokumentacja firmy Microsoft
+title: Grafika — historia pikseli | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,71 +12,71 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 614977aef83092c64071524e33507848c34bf442
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420075"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64831527"
 ---
 # <a name="graphics-pixel-history"></a>Historia pikseli grafiki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Okno Historia pikseli grafiki w analizatora grafiki programu Visual Studio pomaga zrozumieć wpływ piksela określone przez zdarzenia Direct3D występujących podczas ramki grach i aplikacjach.  
+Okno Historia pikseli grafiki w analizator grafiki programu Visual Studio pomaga zrozumieć, w jaki sposób zdarzenia programu Direct3D występują na określonym pikselu, które wystąpiły w ramach gry lub aplikacji.  
   
- Jest to okno Historia pikseli:  
+ Jest to okno historii pikseli:  
   
- ![Piksel z trzech zdarzenia Direct3D w jego historię. ](../debugger/media/gfx-diag-demo-pixel-history-orientation.png "gfx_diag_demo_pixel_history_orientation")  
+ ![Piksel z trzema zdarzeniami Direct3D w swojej historii.](../debugger/media/gfx-diag-demo-pixel-history-orientation.png "gfx_diag_demo_pixel_history_orientation")  
   
-## <a name="understanding-the-pixel-history-window"></a>Opis w oknie Historia pikseli  
- Korzystając z historii pikseli, można analizować, piksel określonego obiektu docelowego renderowania wpływu zdarzenia Direct3D horyzoncie. Można wyznaczyć z problemem renderowania do określonego zdarzenia Direct3D, nawet jeśli jest to kolejne zdarzenia — lub kolejnych elementów podstawowych, w tym samym zdarzeniu — ulegają zmianie wartości ostateczny koloru piksela. Na przykład jeden piksel może niepoprawnie renderowany i następnie zasłonięte przez inną, półprzezroczyste pikseli, aby ich kolorów są mieszane ze sobą w bufor ramki. Tego rodzaju problemy będą trudne do zdiagnozowania, jeśli masz tylko zawartość końcowego obiektu docelowego renderowania przeprowadzenie Cię.  
+## <a name="understanding-the-pixel-history-window"></a>Zrozumienie okna historii pikseli  
+ Za pomocą historii pikseli można analizować, w jaki sposób zdarzenia Direct3D mają wpływ na określony piksel obiektu docelowego renderowania. Możesz wskazać problem z renderowaniem w konkretnym zdarzeniu Direct3D, nawet gdy kolejne zdarzenia — lub kolejne elementy podstawowe w tym samym zdarzeniu — Kontynuuj zmianę końcowej wartości koloru piksela. Na przykład piksel może być niepoprawnie renderowany, a następnie zasłonięty przez inny, półprzezroczysty piksel, tak aby ich kolory zostały zmieszane w bufor ramki. Ten rodzaj problemu może być trudny do zdiagnozowania, jeśli masz tylko ostateczną zawartość elementu docelowego renderowania, aby Ci pomóc.  
   
- W oknie historii pikseli wyświetlane pełnej historii pikseli w miarę upływu zaznaczonej klatki. **Końcowego buforu ramki** u góry okna wyświetla kolor, który jest zapisywany bufor ramki na końcu ramki, oraz dodatkowe informacje na temat pikseli, takie jak jego ekranu i ramkę, która pochodzi z współrzędne. Ten obszar zawiera również **Renderuj alfa** pole wyboru. Gdy to pole wyboru jest zaznaczone, **końcowego buforu ramki** koloru i wartości pośrednich kolorów są wyświetlane z przezroczystością na wzorzec szachownicy. Jeśli pole wyboru jest wyczyszczone, kanał alfa, wartości kolorów jest ignorowana.  
+ W oknie Historia pikseli zostanie wyświetlona kompletna Historia pikseli w ramach kursu wybranej ramki. **Ostatni bufor ramki** w górnej części okna wyświetla kolor, który jest zapisywana w bufor ramki na końcu ramki, wraz z dodatkowymi informacjami o pikselach, takimi jak klatka, z której pochodzi i współrzędne ekranu. Ten obszar zawiera również pole wyboru **Renderuj alfa** . Gdy to pole wyboru jest zaznaczone, kolor **buforu ramki końcowej** i pośrednich wartości koloru są wyświetlane z przezroczystością na wzorcu szachownicy. Jeśli pole wyboru jest wyczyszczone, kanał alfa wartości koloru jest ignorowany.  
   
- W dolnej części okna Wyświetla zdarzenia, które mieli Państwo możliwość wpływają na kolor piksela, wraz z **początkowej** i **końcowego** pseudo-zdarzenia, które reprezentują wartości początkowe i końcowe kolorów piksel w bufor ramki. Początkowa wartość koloru jest określana przez pierwsze zdarzenie, która się zmieniła kolor piksela (zazwyczaj `Clear` zdarzeń). Piksel w zawsze znajdują się te dwa pseudo-zdarzenia jego historię nawet wtedy, gdy żadne inne zdarzenia, wpływ na jej. Jeśli inne zdarzenia mieli Państwo możliwość wpływają na piksel, zostaną one wyświetlone między **początkowej** i **końcowego** zdarzenia. Zdarzenia można rozszerzyć, aby wyświetlić jego szczegóły. Proste zdarzeń, takich jak te, które czyszczą docelowego renderowania zdarzenia powoduje po prostu wartość koloru. Bardziej złożone zdarzenia, takie jak wywołania rysowania Wygeneruj jeden lub więcej elementów podstawowych, które mogą przyczynić się do koloru piksela.  
+ W dolnej części okna są wyświetlane zdarzenia, które miały wpływ na kolor piksela oraz **początkowe** i **końcowe** pseudo zdarzeń, które reprezentują początkowe i końcowe wartości koloru piksela w bufor ramki. Początkowa wartość koloru jest określana przez pierwsze zdarzenie, które zmieniło kolor piksela (zazwyczaj jest to `Clear` zdarzenie). Piksel zawsze mają te dwa pseudo zdarzeń w swojej historii, nawet jeśli nie ma żadnych innych zdarzeń. Gdy inne zdarzenia mają wpływ na piksel, są wyświetlane między zdarzeniami **początkowymi** i **końcowymi** . Zdarzenia mogą być rozwinięte, aby pokazać ich szczegóły. W przypadku prostych zdarzeń, takich jak te, które wyczyścili obiekt docelowy renderowania, efekt zdarzenia jest tylko wartością koloru. Bardziej złożone zdarzenia, takie jak wywołania rysowania, generują co najmniej jeden element pierwotny, który może współtworzyć kolor piksela.  
   
- Elementy podstawowe rysowanych przez zdarzenie są identyfikowane przez ich typ pierwotny i indeks, wraz z całkowitą liczbą pierwotnego obiektu. Na przykład identyfikator, takie jak **trójkąt (1456) (6214)** oznacza, że element pierwotny odpowiada 1456th trójkąta w obiekcie, który składa się z 6214 trójkąty. Po lewej stronie każdej pierwotny identyfikator znajduje się ikona, który podsumowuje wpływ, jaki element pierwotny miał na piksel. Elementy podstawowe, które wpływają na kolor piksela są reprezentowane przez zaokrąglony prostokąt, który zostanie wypełniony kolorem wynik. Elementy podstawowe, które są wykluczone z mające wpływ na kolor piksela są reprezentowane przez ikony wskazujące przyczynę, piksel został wykluczony. Te ikony są opisane w sekcji [pierwotnych wykluczeń](../debugger/graphics-pixel-history.md#exclusion) w dalszej części tego artykułu.  
+ Elementy pierwotne, które były rysowane przez zdarzenie, są identyfikowane przez ich typ pierwotny i indeks oraz łączną liczbę pierwotną dla obiektu. Na przykład, identyfikator, taki jak **Trójkąt (1456) z (6214)** oznacza, że pierwotna odnosi się do trójkąta 1456th w obiekcie, który składa się z 6214 trójkąty. Po lewej stronie każdego identyfikatora pierwotnego jest ikona, która podsumowuje efekt pierwotny w pikselach. Elementy pierwotne, które wpływają na kolor pikseli, są reprezentowane przez zaokrąglony prostokąt, który jest wypełniony kolorem wynikowym. Elementy pierwotne, które są wykluczone z mają wpływ na kolor pikseli, są reprezentowane przez ikony wskazujące przyczynę wykluczenia piksela. Te ikony są opisane w sekcji [pierwotne wykluczenie](../debugger/graphics-pixel-history.md#exclusion) w dalszej części tego artykułu.  
   
- Można rozwinąć każdego podstawowego, aby sprawdzić, jak dane wyjściowe programu do cieniowania pikseli została scalona z istniejących kolor piksela, aby otrzymać kolor wyniku. W tym miejscu można zbadać lub debugowanie kodu programu do cieniowania pikseli, która jest skojarzona z podstawowego i można rozwinąć węzła programu do cieniowania wierzchołków do zbadania cieniowania wierzchołków, danych wejściowych.  
+ Można rozwinąć każdy element pierwotny, aby określić, jak dane wyjściowe programu do cieniowania pikseli zostały scalone z istniejącym kolorem pikseli w celu uzyskania koloru wynikowego. W tym miejscu można również przeanalizować lub debugować kod programu do cieniowania pikseli skojarzony z elementem pierwotnym, a następnie można rozwinąć węzeł cieniowania wierzchołków, aby przeanalizować dane wejściowe programu do cieniowania wierzchołków.  
   
-### <a name="exclusion"></a> Pierwotny wykluczeń  
- Jeśli podstawowy jest wykluczony z wpływu na kolor piksela, wyłączenie może wystąpić z różnych powodów. Każdy powód jest reprezentowany przez ikonę która jest opisane w poniższej tabeli:  
+### <a name="primitive-exclusion"></a><a name="exclusion"></a> Wykluczenia pierwotne  
+ Jeśli element pierwotny jest wykluczony z wpływu na kolor pikseli, wykluczenie może wystąpić z różnych powodów. Każdy powód jest reprezentowany przez ikonę, która jest opisana w tej tabeli:  
   
-|Ikona|Przyczynę wyłączenia|  
+|Ikona|Przyczyna wykluczenia|  
 |----------|--------------------------|  
-|![Ikona niepowodzenia testu głębi. ](../debugger/media/vsg-hist-icon-failed-depth.png "vsg_hist_icon_failed_depth")|Piksel został wykluczony, ponieważ nie powiodło się test głębi.|  
-|![Ikona niepowodzenia testu przycinania. ](../debugger/media/vsg-hist-icon-failed-scissor.png "vsg_hist_icon_failed_scissor")|Piksel został wykluczony, ponieważ test przycinania został zakończony niepowodzeniem.|  
-|![Ikona błędu test wzornika. ](../debugger/media/vsg-hist-icon-failed-stencil.png "vsg_hist_icon_failed_stencil")|Piksel został wykluczony, ponieważ test wzornika zakończone niepowodzeniem.|  
+|![Ikona niepowodzenia testu głębokości.](../debugger/media/vsg-hist-icon-failed-depth.png "vsg_hist_icon_failed_depth")|Piksel został wykluczony, ponieważ test głębokości został zakończony niepowodzeniem.|  
+|![Ikona niepowodzenia testu podbiegu.](../debugger/media/vsg-hist-icon-failed-scissor.png "vsg_hist_icon_failed_scissor")|Piksel został wykluczony, ponieważ test przycinania został zakończony niepowodzeniem.|  
+|![Ikona niepowodzenia testu wzornika.](../debugger/media/vsg-hist-icon-failed-stencil.png "vsg_hist_icon_failed_stencil")|Piksel został wykluczony, ponieważ test wzornika został zakończony niepowodzeniem.|  
   
-### <a name="draw-call-exclusion"></a>Wykluczenie wywołania rysowania  
- Jeśli wywołanie wszystkich elementów podstawowych do rysowania są wykluczane z wpływu na obiektu docelowego renderowania, ponieważ one zakończyć niepowodzeniem test, a następnie wywołania rysowania, nie można rozwijać i ikonę która odpowiada z przyczyn wyłączenia jest wyświetlany obok niej. Powody wykluczenia wywołanie rysowania przypominają powody wykluczenia pierwotnych, a ich ikony są podobne.  
+### <a name="draw-call-exclusion"></a>Wykluczanie wywołania rysowania  
+ Jeśli wszystkie elementy podstawowe w wywołaniu rysowania są wykluczone z wpływu na obiekt docelowy renderowania, ponieważ kończą się niepowodzeniem testu, wywołanie rysowania nie może być rozwinięte, a ikona odpowiadająca przyczynie wykluczenia jest wyświetlana obok niej. Przyczyny wykluczenia z połączeń rysowania są podobne do przyczyn wykluczenia pierwotnego, a ich ikony są podobne.  
   
 ### <a name="viewing-and-debugging-shader-code"></a>Wyświetlanie i debugowanie kodu programu do cieniowania  
- Można zbadać i debugowania kodu dla wierzchołków, kadłuba, domeny, programów do cieniowania geometrii i piksela za pomocą kontrolek poniżej podstawowego, który jest skojarzony z modułem cieniującym.  
+ Można przeanalizować i debugować kod dla wierzchołków, kadłuba, domeny, geometrii i cieniowania pikseli przy użyciu kontrolek poniżej elementu podstawowego, który jest skojarzony z cieniem.  
   
-##### <a name="to-view-a-shaders-source-code"></a>Aby wyświetlić kod źródłowy modułu cieniującego  
+##### <a name="to-view-a-shaders-source-code"></a>Aby wyświetlić kod źródłowy programu do cieniowania  
   
-1. W **Historia pikseli grafiki** oknie Znajdź wywołania rysowania, która odnosi się do programu do cieniowania chcesz zbadać i rozwiń go.  
+1. W oknie **Historia pikseli grafiki** zlokalizuj wywołanie rysowania odpowiadające programowi cieniującego, który ma zostać sprawdzony i rozwinięty.  
   
-2. W obszarze rysowania Zadzwonimy do Ciebie po prostu rozwinięte, wybierz podstawowy, który demonstruje problem, który chcesz wziąć i rozwiń go.  
+2. W obszarze właśnie rozwinięte wywołanie rysowania wybierz element podstawowy, który pokazuje problem, który Cię interesuje, i rozwiń go.  
   
-3. W obszarze podstawowego interesuje Cię, skorzystaj z linku tytuł programu do cieniowania — na przykład, kliknij link **obj:30 program do cieniowania wierzchołków** Aby wyświetlić kod źródłowy modułu cieniującego wierzchołek.  
+3. W obszarze pierwotny, który Cię interesuje, postępuj zgodnie z linkiem do tytułu modułu cieniującego — na przykład postępuj zgodnie z tym, aby wyświetlić kod źródłowy programu **do cieniowania** wierzchołka.  
   
     > [!TIP]
-    > Liczba obiektów **obj:30**, identyfikuje ten program do cieniowania w całym interfejsu analizatora grafiki przykład w oknie etapy potoku i tabela obiektu.  
+    > Numer obiektu, **obj: 30**, identyfikuje ten program do cieniowania w interfejsie analizatora grafiki, na przykład w oknie tabela obiektów i etapy potoku.  
   
-##### <a name="to-debug-a-shader"></a>Do debugowania cieniowania  
+##### <a name="to-debug-a-shader"></a>Aby debugować cieniowanie  
   
-1. W **Historia pikseli grafiki** oknie Znajdź wywołania rysowania, która odnosi się do programu do cieniowania chcesz zbadać i rozwiń go.  
+1. W oknie **Historia pikseli grafiki** zlokalizuj wywołanie rysowania odpowiadające programowi cieniującego, który ma zostać sprawdzony i rozwinięty.  
   
-2. Następnie w obszarze wywołanie rysowania właśnie rozwiniętej, wybierz podstawowy, który pokazuje problem interesuje i rozwiń go.  
+2. Następnie w obszarze dokładnie rozwinięte wywołanie rysowania wybierz element podstawowy, który pokazuje problem, który Cię interesuje, i rozwiń go.  
   
-3. W obszarze podstawowego interesuje Cię, wybierz opcję **Rozpocznij debugowanie**. Ten punkt wejścia do wartości domyślnych debugera HLSL pierwszego wywołania modułu cieniującego dla odpowiedniego podstawowego — czyli pierwszej pikseli lub wierzchołek, który jest przetwarzany przez programu do cieniowania. Istnieje tylko jeden piksel, skojarzony element pierwotny, ale ma więcej niż jednego wywołania programu do cieniowania wierzchołków linii i trójkąty.  
+3. W obszarze pierwotny interes wybierz pozycję **Rozpocznij debugowanie**. Ten punkt wejścia do debugera HLSL domyślnie określa pierwsze wywołanie cieniowania dla odpowiadającego elementu pierwotnego — czyli pierwszy piksel lub wierzchołek przetworzony przez program do cieniowania. Istnieje tylko jeden piksel skojarzony z elementem pierwotnym, ale istnieje więcej niż jedno wywołanie programu do cieniowania wierzchołka dla linii i trójkątów.  
   
-     Aby debugować wywołania programu do cieniowania wierzchołków dla określonego wierzchołka, rozwiń link tytułu VertexShader i Znajdź wierzchołka interesuje Cię, następnie wybierz **Rozpocznij debugowanie** obok niej.  
+     Aby debugować wywołanie programu do cieniowania wierzchołków dla określonego wierzchołka, rozwiń link tytułu VertexShader i Znajdź interesujący Cię wierzchołek, a następnie wybierz **Rozpocznij debugowanie** obok niego.  
   
-### <a name="links-to-graphics-objects"></a>Łącza do obiektów graficznych  
- Aby poznać zdarzenia grafiki w historii pikseli, może być konieczne informacje dotyczące stanu urządzenia w czasie zdarzenia lub obiekty Direct3D, które są przywoływane przez zdarzenie. Dla każdego zdarzenia w historii pikseli **Historia pikseli grafiki** zawiera łącza do urządzenia obowiązywały stanu i do powiązanych obiektów.  
+### <a name="links-to-graphics-objects"></a>Linki do obiektów graficznych  
+ Aby zrozumieć zdarzenia grafiki w historii pikseli, może być konieczne informacje o stanie urządzenia w momencie zdarzenia lub o obiektach Direct3D, do których odwołuje się zdarzenie. Dla każdego zdarzenia w historii pikseli, **Historia pikseli grafiki** zawiera linki do stanu bieżącego urządzenia i pokrewnych obiektów.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Brak obiektów spowodowany stanem urządzenia](../debugger/walkthrough-missing-objects-due-to-device-state.md)   
- [Przewodnik: Debugowanie błędów renderowania spowodowanych cieniowaniem](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)
+ [Przewodnik: brak obiektów ze względu na stan urządzenia](../debugger/walkthrough-missing-objects-due-to-device-state.md)   
+ [Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

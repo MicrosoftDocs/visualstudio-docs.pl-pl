@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugReferenceInfo2 | Dokumenty firmy Microsoft
+title: IEnumDebugReferenceInfo2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6132235a7e4789c7d9efe5bae9d7fd531112dab4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715268"
 ---
 # <a name="ienumdebugreferenceinfo2"></a>IEnumDebugReferenceInfo2
@@ -29,29 +29,29 @@ IEnumDebugReferenceInfo2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Aparat debugowania (DE) implementuje ten interfejs jako część jego obsługi odwołań do obiektów w pamięci. Ten interfejs musi być zaimplementowany tylko wtedy, gdy odwołania są obsługiwane.
+ Aparat debugowania (DE) implementuje ten interfejs w ramach obsługi odwołań do obiektów w pamięci. Ten interfejs musi być zaimplementowany tylko w przypadku, gdy odwołania są obsługiwane.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Visual Studio wywołuje [EnumChildren,](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) aby uzyskać ten interfejs.
+ Program Visual Studio wywołuje [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) , aby uzyskać ten interfejs.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- W poniższej tabeli `IEnumDebugReferenceInfo2`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ W poniższej tabeli przedstawiono metody `IEnumDebugReferenceInfo2` .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[Dalej](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|Pobiera określoną liczbę [struktur DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) w sekwencji wyliczenia.|
-|[Pominąć](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|Pomija określoną liczbę [struktur DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) w sekwencji wyliczenia.|
-|[Resetuj](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-reset.md)|Resetuje sekwencję wyliczenia do początku.|
-|[Klonowanie](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-clone.md)|Tworzy wyliczenia, który zawiera ten sam stan wyliczenia jako bieżącego wylicznika.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-getcount.md)|Pobiera liczbę [struktur DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) w wyliczacza.|
+|[Dalej](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|Pobiera określoną liczbę struktur [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) w sekwencji wyliczenia.|
+|[Pomiń](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|Pomija określoną liczbę struktur [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) w sekwencji wyliczenia.|
+|[Reset](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-reset.md)|Resetuje sekwencję wyliczenia na początek.|
+|[Klonowanie](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-getcount.md)|Pobiera liczbę struktur [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) w module wyliczającym.|
 
 ## <a name="remarks"></a>Uwagi
- Odwołanie jest zasadniczo typu i adresu, podczas gdy właściwość jest nazwa, typ i adres. Odwołanie będzie się powtarzać tak długo, jak obiekt, o którym mowa istnieje w pamięci. Zobacz [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) aby uzyskać więcej informacji.
+ Odwołanie jest zasadniczo typem i adresem, natomiast właściwość jest nazwą, typem i adresem. Odwołanie będzie utrwalane, o ile obiekt istnieje w pamięci. Aby uzyskać więcej informacji, zobacz [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) .
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

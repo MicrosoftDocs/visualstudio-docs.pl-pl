@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9b4b412d2e9456142c1be1af388e2803634d15c0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438541"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64834312"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Przewodnik: Tworzenie menu skrótów dla zakładek
-  W tym instruktażu przedstawiono sposób tworzenia menu skrótów dla <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolek w dostosowywania poziomie dokumentu dla programu Word. Gdy użytkownik kliknie prawym przyciskiem myszy tekst w zakładki, menu skrótów pojawia się i oferuje opcje użytkownika dotyczące formatowania tekstu.
+  W tym instruktażu przedstawiono sposób tworzenia menu skrótów dla <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolek w dostosowaniu na poziomie dokumentu dla programu Word. Gdy użytkownik kliknie prawym przyciskiem myszy tekst w zakładce, pojawi się menu skrótów i nadaje Opcje użytkownika do formatowania tekstu.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
@@ -31,11 +31,11 @@ ms.locfileid: "63438541"
 
 - [Utwórz projekt](#BKMK_CreateProject).
 
-- [Dodawanie tekstu i zakładki w dokumencie](#BKMK_addtextandbookmarks).
+- [Dodaj tekst i zakładki do dokumentu](#BKMK_addtextandbookmarks).
 
-- [Dodawanie poleceń do menu skrótów](#BKMK_AddCmndsShortMenu).
+- [Dodaj polecenia do menu skrótów](#BKMK_AddCmndsShortMenu).
 
-- [Formatowanie tekstu w zakładce](#BKMK_formattextbkmk).
+- [Sformatuj tekst w zakładce](#BKMK_formattextbkmk).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -46,68 +46,68 @@ ms.locfileid: "63438541"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]
 
-## <a name="BKMK_CreateProject"></a> Tworzenie projektu
+## <a name="create-the-project"></a><a name="BKMK_CreateProject"></a> Tworzenie projektu
  Pierwszym krokiem jest utworzenie projektu dokumentu programu Word w programie Visual Studio.
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-- Tworzenie projektu dokumentu programu Word, który ma nazwę **Moje Menu skrótów zakładki**. W kreatorze Wybierz **Utwórz nowy dokument**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+- Utwórz projekt dokumentu programu Word, który ma **menu skrótów Nazwa My zakładka**. W kreatorze wybierz pozycję **Utwórz nowy dokument**. Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio otwiera nowy dokument programu Word w Projektancie i dodaje **Moje Menu skrótów zakładki** projekt **Eksploratora rozwiązań**.
+     Program Visual Studio otwiera nowy dokument programu Word w Projektancie i dodaje projekt **menu skrótów moje zakładki** do **Eksplorator rozwiązań**.
 
-## <a name="BKMK_addtextandbookmarks"></a> Dodawanie tekstu i zakładki do dokumentu
- Dodaj jakiś tekst do dokumentu, a następnie dodaj dwie nakładające się zakładek.
+## <a name="add-text-and-bookmarks-to-the-document"></a><a name="BKMK_addtextandbookmarks"></a> Dodaj tekst i zakładki do dokumentu
+ Dodaj tekst do dokumentu, a następnie Dodaj dwa nakładające się zakładki.
 
-### <a name="to-add-text-to-your-document"></a>Dodawanie tekstu do dokumentu
+### <a name="to-add-text-to-your-document"></a>Aby dodać tekst do dokumentu
 
-- W dokumencie, który pojawia się w Projektancie projektu wpisz następujący tekst.
+- W dokumencie, który pojawia się w projektancie projektu, wpisz następujący tekst.
 
-     **Jest to przykład tworzenia menu skrótów, po kliknięciu prawym przyciskiem myszy tekstu w zakładce.**
+     **Jest to przykład tworzenia menu skrótów po kliknięciu prawym przyciskiem myszy tekstu w zakładce.**
 
-### <a name="to-add-a-bookmark-control-to-your-document"></a>Aby dodać kontrolkę zakładki w dokumencie
+### <a name="to-add-a-bookmark-control-to-your-document"></a>Aby dodać kontrolkę zakładki do dokumentu
 
-1. W **przybornika**, z **formanty programu Word** kartę, przeciągnij <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu.
+1. W **przyborniku**, na karcie **formanty programu Word** przeciągnij <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolkę do dokumentu.
 
-    **Dodaj kontrolkę zakładki** pojawi się okno dialogowe.
+    Zostanie wyświetlone okno dialogowe **Dodawanie kontrolki zakładki** .
 
-2. Zaznaczanie słów "Tworzenie menu skrótów, po kliknięciu prawym przyciskiem myszy tekst", a następnie kliknij przycisk **OK**.
+2. Wybierz słowa "Tworzenie menu skrótów po kliknięciu prawym przyciskiem myszy tekstu", a następnie kliknij przycisk **OK**.
 
-    `bookmark1` zostanie dodany do dokumentu.
+    `bookmark1` jest dodawany do dokumentu.
 
-3. Dodaj kolejną <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolę słowa "right-click tekstu zakładki".
+3. Dodaj kolejną <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolkę do wyrazów "kliknij prawym przyciskiem myszy tekst w zakładce".
 
-    `bookmark2` zostanie dodany do dokumentu.
+    `bookmark2` jest dodawany do dokumentu.
 
    > [!NOTE]
-   > Wyrazy "right-click tekst" znajdują się w obu `bookmark1` i `bookmark2`.
+   > Słowa "kliknij prawym przyciskiem myszy tekst" znajdują się w obu `bookmark1` i `bookmark2` .
 
-   Po dodaniu zakładki do dokumentu w czasie projektowania <xref:Microsoft.Office.Tools.Word.Bookmark> formant zostanie utworzony. Można programować względem kilka zdarzeń zakładki. Można wpisać kod w <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> zdarzeń zakładki, aby po użytkownik kliknie prawym przyciskiem myszy tekst w zakładki, zostanie wyświetlone menu skrótów.
+   Po dodaniu zakładki do dokumentu w czasie projektowania, <xref:Microsoft.Office.Tools.Word.Bookmark> zostanie utworzony formant. Można programować na kilka zdarzeń zakładki. Można napisać kod w <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> zdarzeniu zakładki, aby po kliknięciu prawym przyciskiem myszy tekstu w zakładce pojawiło się menu skrótów.
 
-## <a name="BKMK_AddCmndsShortMenu"></a> Dodawanie poleceń do menu skrótów
- Dodawanie przycisków do menu skrótów, które pojawia się po kliknięciu prawym przyciskiem myszy dokument.
+## <a name="add-commands-to-a-shortcut-menu"></a><a name="BKMK_AddCmndsShortMenu"></a> Dodawanie poleceń do menu skrótów
+ Dodaj przyciski do menu skrótów, które pojawia się po kliknięciu prawym przyciskiem myszy dokumentu.
 
 ### <a name="to-add-commands-to-a-shortcut-menu"></a>Aby dodać polecenia do menu skrótów
 
-1. Dodaj **kodu XML wstążki** do projektu. Aby uzyskać więcej informacji, zobacz [jak: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md).
+1. Dodaj element **XML wstążki** do projektu. Aby uzyskać więcej informacji, zobacz [How to: wprowadzenie dostosowywanie wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2. W **Eksploratora rozwiązań**, wybierz opcję **ThisDocument.cs** lub **ThisDocument.vb**.
+2. W **Eksplorator rozwiązań**wybierz pozycję **ThisDocument.cs** lub **ThisDocument. vb**.
 
-3. Na pasku menu wybierz **widoku** > **kodu**.
+3. Na pasku menu wybierz polecenie **Wyświetl**  >  **kod**.
 
-     **ThisDocument** plik klas zostanie otwarty w edytorze kodu.
+     Plik klasy **ThisDocument** zostanie otwarty w edytorze kodu.
 
-4. Dodaj następujący kod do **ThisDocument** klasy. Ten kod zastępuje metodę CreateRibbonExtensibilityObject i zwraca klasę kodu XML wstążki do aplikacji pakietu Office.
+4. Dodaj następujący kod do klasy **ThisDocument** . Ten kod przesłania metodę CreateRibbonExtensibilityObject i zwraca klasę XML wstążki do aplikacji pakietu Office.
 
      [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
      [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
 
-5. W **Eksploratora rozwiązań**, wybierz plik XML wstążki. Domyślnie nosi nazwę pliku XML wstążki Ribbon1.xml.
+5. W **Eksplorator rozwiązań**wybierz plik XML wstążki. Domyślnie plik XML wstążki ma nazwę Ribbon1.xml.
 
-6. Na pasku menu wybierz **widoku** > **kodu**.
+6. Na pasku menu wybierz polecenie **Wyświetl**  >  **kod**.
 
-     Plik xml wstążki, zostanie otwarty w edytorze kodu.
+     Plik XML wstążki zostanie otwarty w edytorze kodu.
 
-7. W edytorze kodu Zastąp zawartość pliku XML wstążki z następującym kodem.
+7. W edytorze kodu Zastąp zawartość pliku XML wstążki poniższym kodem.
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -123,78 +123,78 @@ ms.locfileid: "63438541"
     </customUI>
     ```
 
-     Ten kod dodaje dwa przyciski do menu skrótów, które pojawia się po kliknięciu prawym przyciskiem myszy dokument.
+     Ten kod dodaje dwa przyciski do menu skrótów, które pojawia się po kliknięciu prawym przyciskiem myszy dokumentu.
 
-8. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy `ThisDocument`, a następnie kliknij przycisk **Wyświetl kod**.
+8. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy `ThisDocument` , a następnie kliknij polecenie **Wyświetl kod**.
 
 9. Zadeklaruj następujące zmienne i zmienną zakładki na poziomie klasy.
 
      [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]
      [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]
 
-10. W **Eksploratora rozwiązań**, zaznacz plik kodu wstążki. Domyślnie plik kodu wstążki o nazwie **Ribbon1.cs** lub **Ribbon1.vb**.
+10. W **Eksplorator rozwiązań**wybierz plik kodu wstążki. Domyślnie plik kodu wstążki ma nazwę **Ribbon1.cs** lub **Ribbon1. vb**.
 
-11. Na pasku menu wybierz **widoku** > **kodu**.
+11. Na pasku menu wybierz polecenie **Wyświetl**  >  **kod**.
 
-     Plik kodu wstążki, zostanie otwarty w edytorze kodu.
+     Plik kodu wstążki zostanie otwarty w edytorze kodu.
 
-12. W pliku kodu wstążki Dodaj następującą metodę. Jest to metoda wywołania zwrotnego dla dwóch przycisków, które zostały dodane do menu skrótów w dokumencie. Ta metoda określa, czy przyciski te są wyświetlane w menu skrótów. Pogrubiony i kursywę przyciski są wyświetlane tylko wtedy, gdy kliknij prawym przyciskiem myszy tekstu w zakładce.
+12. W pliku kodu wstążki Dodaj następującą metodę. Jest to metoda wywołania zwrotnego dla dwóch przycisków, które zostały dodane do menu skrótów dokumentu. Ta metoda określa, czy te przyciski są wyświetlane w menu skrótów. Przyciski pogrubiania i kursywy są wyświetlane tylko po kliknięciu prawym przyciskiem myszy tekstu w zakładce.
 
      [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
      [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]
 
-## <a name="BKMK_formattextbkmk"></a> Formatowanie tekstu w zakładce
+## <a name="format-the-text-in-the-bookmark"></a><a name="BKMK_formattextbkmk"></a> Formatowanie tekstu w zakładce
 
-### <a name="to-format-the-text-in-the-bookmark"></a>Do formatowania tekstu w zakładce
+### <a name="to-format-the-text-in-the-bookmark"></a>Aby sformatować tekst w zakładce
 
-1. W pliku kodu wstążki, Dodaj `ButtonClick` program obsługi zdarzeń, aby zastosować formatowanie do zakładki.
+1. W pliku kodu wstążki Dodaj `ButtonClick` procedurę obsługi zdarzeń, aby zastosować formatowanie do zakładki.
 
      [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]
      [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]
 
-2. **Eksplorator rozwiązań**, wybierz opcję **ThisDocument.cs** lub **ThisDocument.vb**.
+2. **Eksplorator rozwiązań**, wybierz pozycję **ThisDocument.cs** lub **ThisDocument. vb**.
 
-3. Na pasku menu wybierz **widoku** > **kodu**.
+3. Na pasku menu wybierz polecenie **Wyświetl**  >  **kod**.
 
-     **ThisDocument** plik klas zostanie otwarty w edytorze kodu.
+     Plik klasy **ThisDocument** zostanie otwarty w edytorze kodu.
 
-4. Dodaj następujący kod do **ThisDocument** klasy.
+4. Dodaj następujący kod do klasy **ThisDocument** .
 
      [!code-csharp[Trin_Word_Document_Menus#3](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#3)]
      [!code-vb[Trin_Word_Document_Menus#3](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#3)]
 
     > [!NOTE]
-    > Należy napisać kod, aby obsłużyć przypadek, w którym nakładają się zakładek. W przeciwnym razie, domyślnie, kod będzie wywoływana dla wszystkie zakładki w zaznaczeniu.
+    > Musisz napisać kod, aby obsłużyć przypadek, w którym zakładki nakładają się. W przeciwnym razie kod zostanie wywołany dla wszystkich zakładek w zaznaczeniu.
 
-5. W języku C#, należy dodać procedury obsługi zdarzeń dla kontrolek zakładek do <xref:Microsoft.Office.Tools.Word.Document.Startup> zdarzeń. Aby dowiedzieć się, jak tworzenie procedur obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+5. W języku C# należy dodać procedury obsługi zdarzeń dla kontrolek zakładek do <xref:Microsoft.Office.Tools.Word.Document.Startup> zdarzenia. Aby uzyskać informacje na temat tworzenia programów obsługi zdarzeń, zobacz [How to: Create Event Handles in Office projects](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]
 
 ## <a name="test-the-application"></a>Testowanie aplikacji
- Przetestuj dokumencie, aby sprawdzić, czy elementy menu pogrubiony i kursywę są wyświetlane w menu skrótów, po kliknięciu prawym przyciskiem myszy tekstu zakładki i tekst jest poprawnie sformatowana.
+ Przetestuj dokument, aby sprawdzić, czy elementy menu pogrubienia i kursywy pojawiają się w menu skrótów po kliknięciu prawym przyciskiem myszy tekstu w zakładce oraz że tekst jest poprawnie sformatowany.
 
-### <a name="to-test-your-document"></a>Aby przetestować dokumentu
+### <a name="to-test-your-document"></a>Aby przetestować dokument
 
-1. Naciśnij klawisz **F5** Aby uruchomić projekt.
+1. Naciśnij klawisz **F5** , aby uruchomić projekt.
 
-2. Kliknij prawym przyciskiem myszy w pierwszej zakładce, a następnie kliknij przycisk **Bold**.
+2. Kliknij prawym przyciskiem myszy pierwszą zakładkę, a następnie kliknij pozycję **pogrubienie**.
 
-3. Upewnij się, że cały tekst w `bookmark1` jest formatowana jako pogrubiony.
+3. Upewnij się, że cały tekst w `bookmark1` jest sformatowany jako pogrubiony.
 
-4. Kliknij prawym przyciskiem myszy tekstu zakładki nakładają się, a następnie kliknij przycisk **Kursywa**.
+4. Kliknij prawym przyciskiem myszy tekst, w którym nakładają się zakładki, a następnie kliknij **kursywę**.
 
-5. Upewnij się, że cały tekst w `bookmark2` kursywa i tylko część tekstu w `bookmark1` która nakłada `bookmark2` jest pochylony.
+5. Upewnij się, że cały tekst w `bookmark2` jest kursywą, a tylko część tekstu w tym zasobie `bookmark1` `bookmark2` jest kursywą.
 
 ## <a name="next-steps"></a>Następne kroki
- Poniżej przedstawiono niektóre zadania, które mogą pochodzić dalej:
+ Poniżej przedstawiono kilka zadań, które mogą wystąpić poniżej:
 
-- Pisanie kodu w celu reagowania na zdarzenia kontrolki hosta w programie Excel. Aby uzyskać więcej informacji, zobacz [instruktażu: Program w odniesieniu do zdarzeń kontrolki NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
+- Napisz kod, aby odpowiedzieć na zdarzenia formantów hosta w programie Excel. Aby uzyskać więcej informacji, zobacz [Przewodnik: program dla zdarzeń formantu NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
 
-- Pole wyboru umożliwia zmienianie formatowania w zakładki. Aby uzyskać więcej informacji, zobacz [instruktażu: Dokument Zmienianie formatowania za pomocą formantów CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
+- Użyj pola wyboru, aby zmienić formatowanie w zakładce. Aby uzyskać więcej informacji, zobacz [Przewodnik: zmienianie formatowania dokumentu przy użyciu kontrolek CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Zobacz także
-- [Wskazówki dotyczące przy użyciu programu Word](../vsto/walkthroughs-using-word.md)
+## <a name="see-also"></a>Zobacz też
+- [Wskazówki dotyczące korzystania z programu Word](../vsto/walkthroughs-using-word.md)
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
-- [BOOKMARK, kontrolka](../vsto/bookmark-control.md)
+- [Kontrolka zakładki](../vsto/bookmark-control.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

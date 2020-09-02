@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: d5d40878e40641b9a54a411af122f6207a02a7a1
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331033"
 ---
 # <a name="debug-xaml-in-blend"></a>Debugowanie XAML w Blend
@@ -102,7 +102,7 @@ Po wykryciu błędów XAML na powierzchni projektowej zostanie wyświetlony aler
 
 1. Kliknij dwukrotnie pierwszy błąd na liście. Opis to "wartość <" jest nieprawidłowa w atrybucie "". Po dwukrotnym kliknięciu błędu wskaźnik znajdzie odpowiednią lokalizację w kodzie. `<`Poprzednia wartość `Button` jest prawidłowa, a nie atrybut zgodnie z sugestią w komunikacie o błędzie. Jeśli zobaczysz poprzedni wiersz kodu, Zauważ, że brakuje cudzysłowu zamykającego dla atrybutu `Top` . Wpisz cudzysłów zamykający. Zwróć uwagę, że lista błędów w panelu **wyników** jest aktualizowana w celu odzwierciedlenia zmian.
 
-2. Kliknij dwukrotnie opis "0" jest nieprawidłowy na początku nazwy "". `Margin="0,149,0,0"`wydaje się być poprawnie sformułowane. Należy jednak zauważyć, że Kodowanie koloru `Margin` nie jest zgodne z innymi wystąpieniami `Margin` w kodzie. Ponieważ brakuje cudzysłowu zamykającego w poprzedniej parze nazwa/wartość ( `VerticalAlignment="Top` ), `Margin="` jest on odczytywany jako część wartości poprzedzającego atrybutu, a 0 jest odczytywany jako początek pary nazwa/wartość. Wpisz znaki cudzysłowu zamykającego `Top` . Lista błędów w panelu **wyników** jest aktualizowana w celu odzwierciedlenia zmian.
+2. Kliknij dwukrotnie opis "0" jest nieprawidłowy na początku nazwy "". `Margin="0,149,0,0"` wydaje się być poprawnie sformułowane. Należy jednak zauważyć, że Kodowanie koloru `Margin` nie jest zgodne z innymi wystąpieniami `Margin` w kodzie. Ponieważ brakuje cudzysłowu zamykającego w poprzedniej parze nazwa/wartość ( `VerticalAlignment="Top` ), `Margin="` jest on odczytywany jako część wartości poprzedzającego atrybutu, a 0 jest odczytywany jako początek pary nazwa/wartość. Wpisz znaki cudzysłowu zamykającego `Top` . Lista błędów w panelu **wyników** jest aktualizowana w celu odzwierciedlenia zmian.
 
 3. Kliknij dwukrotnie pozostały błąd, "przycisk zamykający tag XML" jest niezgodny. " Wskaźnik znajduje się w tagu **siatki** zamykającej ( `</Grid>` ), sugerując, że błąd znajduje się wewnątrz `Grid` obiektu. Zwróć uwagę, że w drugim `Button` obiekcie brakuje taga zamykającego. Po dodaniu zamknięcia `/` lista paneli **wyników** zostanie zaktualizowana. Teraz, gdy te początkowe błędy zostały rozwiązane, zidentyfikowano dwa dodatkowe błędy.
 

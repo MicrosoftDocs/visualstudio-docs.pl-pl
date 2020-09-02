@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Konfigurowanie monitowania technologii ClickOnce zaufania | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Konfigurowanie zachowania monitowania zaufania ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,28 +20,28 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 58e5f0e9154137097a94637799966ee94818fca4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150831"
 ---
-# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Instrukcje: Konfigurowanie funkcji zaufanego monitowania technologii ClickOnce
+# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Porady: konfigurowanie funkcji zaufanego monitowania technologii ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy użytkownicy końcowi otrzymają możliwość instalowania aplikacji ClickOnce, takich jak aplikacje Windows Presentation Foundation, aplikacji konsoli, przeglądarki WPF w aplikacjach Windows Forms aplikacje i rozwiązania dla pakietu Office. Możesz skonfigurować monit o udzielenie zaufania poprzez ustawienie kluczy rejestru na komputerze użytkownika końcowego.  
+Można skonfigurować monit zaufania ClickOnce, aby określić, czy użytkownicy końcowi mogą instalować aplikacje ClickOnce, takie jak aplikacje Windows Forms, aplikacje Windows Presentation Foundation, aplikacje konsolowe, aplikacje przeglądarki WPF i rozwiązania pakietu Office. Aby skonfigurować monit zaufania, należy ustawić klucze rejestru na komputerze użytkownika końcowego.  
   
- W poniższej tabeli przedstawiono opcje konfiguracji, które mogą być stosowane do każdej z pięciu strefy (Internet, UntrustedSites, Mój komputer, LocalIntranet i TrustedSites:).  
+ W poniższej tabeli przedstawiono opcje konfiguracji, które można zastosować do każdej z pięciu stref (Internet, UntrustedSites, mójkomputer, LocalIntranet i TrustedSites).  
   
 |Opcja|Wartość ustawienia rejestru|Opis|  
 |------------|----------------------------|-----------------|  
-|Włącz monit o udzielenie zaufania.|`Enabled`|Monit o udzielenie zaufania ClickOnce jest wyświetlana tak, aby użytkownicy końcowi mogą udzielić zaufania dla aplikacji ClickOnce.|  
-|Ogranicz monit o udzielenie zaufania.|`AuthenticodeRequired`|Monit o udzielenie zaufania ClickOnce jest wyświetlana tylko w sytuacji, gdy aplikacji ClickOnce są podpisane za pomocą certyfikatu, który identyfikuje wydawcy.|  
-|Wyłącz monit o udzielenie zaufania.|`Disabled`|Monit o udzielenie zaufania ClickOnce jest wyświetlana tylko dla dowolnej aplikacji ClickOnce, które nie są podpisane za pomocą jawnego zaufanego certyfikatu.|  
+|Włącz monit zaufania.|`Enabled`|Zostanie wyświetlony monit zaufania ClickOnce, aby użytkownicy końcowi mogli udzielić zaufania aplikacjom ClickOnce.|  
+|Ogranicz monit zaufania.|`AuthenticodeRequired`|Monit zaufania ClickOnce jest wyświetlany tylko wtedy, gdy aplikacje ClickOnce są podpisane przy użyciu certyfikatu, który identyfikuje wydawcę.|  
+|Wyłącz monit zaufania.|`Disabled`|Monit zaufania ClickOnce nie jest wyświetlany dla żadnych aplikacji ClickOnce, które nie są podpisane przy użyciu jawnie zaufanego certyfikatu.|  
   
- W poniższej tabeli przedstawiono domyślne zachowanie dla każdej strefy. Kolumna aplikacji odwołuje się do aplikacji Windows Forms, aplikacji Windows Presentation Foundation, aplikacje przeglądarki WPF i aplikacji konsoli.  
+ W poniższej tabeli przedstawiono zachowanie domyślne dla każdej strefy. Kolumna aplikacje odnosi się do Windows Forms aplikacji, aplikacji Windows Presentation Foundation, aplikacji przeglądarki WPF i aplikacji konsolowych.  
   
-|Strefy|Aplikacje|rozwiązania pakietu Office|  
+|Strefa|Aplikacje|rozwiązania pakietu Office|  
 |----------|------------------|----------------------|  
 |`MyComputer`|`Enabled`|`Enabled`|  
 |`LocalIntranet`|`Enabled`|`Enabled`|  
@@ -49,28 +49,28 @@ Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy uż
 |`Internet`|`Enabled`|`AuthenticodeRequired`|  
 |`UntrustedSites`|`Disabled`|`Disabled`|  
   
- Możesz zastąpić te ustawienia, włączając, ograniczenie lub wyłączając monit o udzielenie zaufania ClickOnce.  
+ Te ustawienia można zastąpić, włączając, ograniczając lub wyłączając monit zaufania ClickOnce.  
   
-## <a name="enabling-the-clickonce-trust-prompt"></a>Włączanie monitowania technologii ClickOnce zaufania  
- Włącz monit o udzielenie zaufania strefie, jeśli chcesz, aby użytkownicy końcowi będą prezentowane za pomocą opcji instalowania i uruchamiania dowolnej aplikacji ClickOnce, która pochodzi z tej strefy.  
+## <a name="enabling-the-clickonce-trust-prompt"></a>Włączanie monitu zaufania ClickOnce  
+ Włącz monit zaufania dla strefy, gdy chcesz, aby użytkownicy końcowi mogli korzystać z opcji instalowania i uruchamiania dowolnej aplikacji ClickOnce pochodzącej z tej strefy.  
   
-#### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Aby włączyć monit o udzielenie zaufania ClickOnce za pomocą Edytora rejestru  
+#### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Aby włączyć monit zaufania ClickOnce przy użyciu Edytora rejestru  
   
-1. Otwórz Edytor rejestru:  
+1. Otwórz edytor rejestru:   
   
-    1. Kliknij przycisk **Start**, a następnie kliknij przycisk **Uruchom**.  
+    1. Kliknij przycisk **Start**, a następnie kliknij polecenie **Uruchom**.  
   
-    2. W **Otwórz** wpisz `regedit` (lub `regedit32` na Windows 32-bitowy), a następnie kliknij przycisk **OK**.  
+    2. W polu **Otwórz** wpisz `regedit` (lub `regedit32` w 32-bitowym systemie Windows), a następnie kliknij przycisk **OK**.  
   
 2. Znajdź następujący klucz rejestru:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
+     \ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel  
   
-     Jeśli klucz nie istnieje, należy go utworzyć.  
+     Jeśli klucz nie istnieje, utwórz go.  
   
-3. Dodaj poniższe podklucze jako **wartość ciągu**, jeśli ich jeszcze nie istnieje, z powiązanymi wartościami, które są wyświetlane w poniższej tabeli.  
+3. Dodaj następujące podklucze jako **wartość ciągu**, jeśli jeszcze nie istnieją, ze skojarzonymi wartościami podanymi w poniższej tabeli.  
   
-    |Ciąg wartość podklucza|Wartość|  
+    |Podklucz wartości ciągu|Wartość|  
     |-------------------------|-----------|  
     |`Internet`|`Enabled`|  
     |`UntrustedSites`|`Disabled`|  
@@ -78,13 +78,13 @@ Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy uż
     |`LocalIntranet`|`Enabled`|  
     |`TrustedSites`|`Enabled`|  
   
-     Dla rozwiązań pakietu Office `Internet` ma wartości domyślnej `AuthenticodeRequired` i `UntrustedSites` ma wartość `Disabled`. Dla wszystkich innych `Internet` ma wartości domyślnej `Enabled`.  
+     Dla rozwiązań pakietu Office `Internet` ma wartość domyślną `AuthenticodeRequired` i `UntrustedSites` ma wartość `Disabled` . Dla wszystkich innych, `Internet` ma wartość domyślną `Enabled` .  
   
-#### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Aby programowo włączyć monit o udzielenie zaufania ClickOnce  
+#### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Aby programowo włączyć monit zaufania ClickOnce  
   
-1. Utwórz aplikację konsoli języka Visual Basic lub Visual C# w programie Visual Studio.  
+1. Utwórz aplikację konsolową Visual Basic lub Visual C# w programie Visual Studio.  
   
-2. Otwórz plik Program.vb lub pliku Program.cs do edycji i Dodaj następujący kod.  
+2. Otwórz plik program. vb lub Program.cs do edycji i Dodaj następujący kod.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -110,26 +110,26 @@ Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy uż
   
 3. Skompiluj i uruchom aplikację.  
   
-## <a name="restricting-the-clickonce-trust-prompt"></a>Ograniczanie monit o udzielenie zaufania ClickOnce  
- Ograniczyć monit o udzielenie zaufania rozwiązania muszą być podpisane za pomocą jeszcze opracowywana tożsamość, zanim użytkownicy będą monitowani o decyzji dotyczącej zaufania certyfikatom Authenticode.  
+## <a name="restricting-the-clickonce-trust-prompt"></a>Ograniczanie monitu zaufania ClickOnce  
+ Ogranicz monit zaufania, aby rozwiązania musiały być podpisane przy użyciu certyfikatów Authenticode, które mają znaną tożsamość przed wyświetleniem monitu o decyzję zaufania.  
   
-#### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Aby ograniczyć monit o udzielenie zaufania ClickOnce za pomocą Edytora rejestru  
+#### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Aby ograniczyć monit zaufania ClickOnce przy użyciu Edytora rejestru  
   
-1. Otwórz Edytor rejestru:  
+1. Otwórz edytor rejestru:   
   
-    1. Kliknij przycisk **Start**, a następnie kliknij przycisk **Uruchom**.  
+    1. Kliknij przycisk **Start**, a następnie kliknij polecenie **Uruchom**.  
   
-    2. W **Otwórz** wpisz `regedit` (lub `regedit32` na Windows 32-bitowy), a następnie kliknij przycisk **OK**.  
+    2. W polu **Otwórz** wpisz `regedit` (lub `regedit32` w 32-bitowym systemie Windows), a następnie kliknij przycisk **OK**.  
   
 2. Znajdź następujący klucz rejestru:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
+     \ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel  
   
-     Jeśli klucz nie istnieje, należy go utworzyć.  
+     Jeśli klucz nie istnieje, utwórz go.  
   
-3. Dodaj poniższe podklucze jako **wartość ciągu**, jeśli ich jeszcze nie istnieje, z powiązanymi wartościami, które są wyświetlane w poniższej tabeli.  
+3. Dodaj następujące podklucze jako **wartość ciągu**, jeśli jeszcze nie istnieją, ze skojarzonymi wartościami podanymi w poniższej tabeli.  
   
-    |Ciąg wartość podklucza|Wartość|  
+    |Podklucz wartości ciągu|Wartość|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`AuthenticodeRequired`|  
@@ -137,11 +137,11 @@ Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy uż
     |`LocalIntranet`|`AuthenticodeRequired`|  
     |`TrustedSites`|`AuthenticodeRequired`|  
   
-#### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Aby ograniczyć programowo monit o udzielenie zaufania ClickOnce  
+#### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Aby programowo ograniczyć monit zaufania ClickOnce  
   
-1. Utwórz aplikację konsoli języka Visual Basic lub Visual C# w programie Visual Studio.  
+1. Utwórz aplikację konsolową Visual Basic lub Visual C# w programie Visual Studio.  
   
-2. Otwórz plik Program.vb lub pliku Program.cs do edycji i Dodaj następujący kod.  
+2. Otwórz plik program. vb lub Program.cs do edycji i Dodaj następujący kod.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -167,26 +167,26 @@ Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy uż
   
 3. Skompiluj i uruchom aplikację.  
   
-## <a name="disabling-the-clickonce-trust-prompt"></a>Wyłączenie wiersza zaufania ClickOnce  
- Monit o udzielenie zaufania można wyłączyć, tak aby użytkownicy końcowi nie otrzymują możliwość zainstalowania rozwiązania, które nie są już zaufane w swoich zasad zabezpieczeń.  
+## <a name="disabling-the-clickonce-trust-prompt"></a>Wyłączanie monitu zaufania ClickOnce  
+ Możesz wyłączyć monit zaufania, aby użytkownicy końcowi nie mieli możliwości instalacji rozwiązań, które nie są jeszcze zaufane w zasadach zabezpieczeń.  
   
-#### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Aby wyłączyć monit o udzielenie zaufania ClickOnce za pomocą Edytora rejestru  
+#### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Aby wyłączyć monit zaufania ClickOnce przy użyciu Edytora rejestru  
   
-1. Otwórz Edytor rejestru:  
+1. Otwórz edytor rejestru:   
   
-    1. Kliknij przycisk **Start**, a następnie kliknij przycisk **Uruchom**.  
+    1. Kliknij przycisk **Start**, a następnie kliknij polecenie **Uruchom**.  
   
-    2. W **Otwórz** wpisz `regedit` (lub `regedit32` na Windows 32-bitowy), a następnie kliknij przycisk **OK**.  
+    2. W polu **Otwórz** wpisz `regedit` (lub `regedit32` w 32-bitowym systemie Windows), a następnie kliknij przycisk **OK**.  
   
 2. Znajdź następujący klucz rejestru:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
+     \ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel  
   
-     Jeśli klucz nie istnieje, należy go utworzyć.  
+     Jeśli klucz nie istnieje, utwórz go.  
   
-3. Dodaj poniższe podklucze jako **wartość ciągu**, jeśli ich jeszcze nie istnieje, z powiązanymi wartościami, które są wyświetlane w poniższej tabeli.  
+3. Dodaj następujące podklucze jako **wartość ciągu**, jeśli jeszcze nie istnieją, ze skojarzonymi wartościami podanymi w poniższej tabeli.  
   
-    |Ciąg wartość podklucza|Wartość|  
+    |Podklucz wartości ciągu|Wartość|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`Disabled`|  
@@ -194,11 +194,11 @@ Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy uż
     |`LocalIntranet`|`Disabled`|  
     |`TrustedSites`|`Disabled`|  
   
-#### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>Aby wyłączyć programowo monit o udzielenie zaufania ClickOnce  
+#### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>Aby programowo wyłączyć monit zaufania ClickOnce  
   
-1. Utwórz aplikację konsoli języka Visual Basic lub Visual C# w programie Visual Studio.  
+1. Utwórz aplikację konsolową Visual Basic lub Visual C# w programie Visual Studio.  
   
-2. Otwórz plik Program.vb lub pliku Program.cs do edycji i Dodaj następujący kod.  
+2. Otwórz plik program. vb lub Program.cs do edycji i Dodaj następujący kod.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -228,11 +228,11 @@ Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy uż
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
- [ClickOnce i podpis Authenticode](../deployment/clickonce-and-authenticode.md)   
- [Przegląd wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md)   
- [Instrukcje: Włączenie ustawień zabezpieczeń technologii ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Instrukcje: Ustawienie strefy zabezpieczeń dla aplikacji ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Instrukcje: Ustawienie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Instrukcje: Debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [ClickOnce i Authenticode](../deployment/clickonce-and-authenticode.md)   
+ [Omówienie wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md)   
+ [Instrukcje: Włączanie ustawień zabezpieczeń technologii ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Instrukcje: Ustawianie strefy zabezpieczeń dla aplikacji ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Instrukcje: Ustawianie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Instrukcje: debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Instrukcje: Dodawanie zaufanego wydawcy do komputera klienckiego dla aplikacji ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [Instrukcje: Ponowne podpisywanie manifestów wdrożenia i aplikacji](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+ [Instrukcje: ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

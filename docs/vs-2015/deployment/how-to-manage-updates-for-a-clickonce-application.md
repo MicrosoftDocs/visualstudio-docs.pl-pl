@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Zarządzanie aktualizacjami dla aplikacji ClickOnce | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Zarządzanie aktualizacjami aplikacji ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -21,97 +21,97 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0754d816104832f92a0be8d754046d1ee18e7a09
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697650"
 ---
-# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Instrukcje: Zarządzanie aktualizacjami dla aplikacji ClickOnce
+# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Porady: zarządzanie aktualizacji dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacje można sprawdzić dostępność aktualizacji automatycznie lub programowo. Jako deweloper masz dużą elastyczność określania moment i sposób aktualizacji są sprawdzane, czy aktualizacje są obowiązkowe i którym aplikacja ma sprawdzać dostępność aktualizacji.  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacje mogą automatycznie sprawdzać dostępność aktualizacji lub programowo. Jako deweloper możesz określić, kiedy i w jaki sposób testy aktualizacji są wykonywane, czy aktualizacje są obowiązkowe i gdzie aplikacja ma sprawdzać dostępność aktualizacji.  
   
- Można skonfigurować aplikację, aby sprawdzał dostępność aktualizacji, automatycznie przed uruchomieniem aplikacji lub w ustalonych odstępach czasu, po uruchomieniu aplikacji. Ponadto można określić minimalnej wymaganej wersji; oznacza to jeśli jego wersja jest starsza niż wymagana wersja jest instalowana aktualizacja.  
+ Można skonfigurować aplikację, aby automatycznie sprawdzać dostępność aktualizacji przed uruchomieniem aplikacji, lub w ustalonych odstępach czasu po uruchomieniu aplikacji. Dodatkowo można określić minimalną wymaganą wersję; oznacza to, że aktualizacja jest zainstalowana, jeśli wersja użytkownika jest niższa niż wymagana wersja.  
   
- Można skonfigurować aplikację, aby wyszukać aktualizacje programowo oparte na zdarzenie, takie jak żądania użytkownika. W procedurze "Aby wyszukać aktualizacje programowo" w tym temacie pokazano, jak należy napisać kod, który używa <xref:System.Deployment.Application.ApplicationDeployment> klasy, aby sprawdzał dostępność aktualizacji na podstawie zdarzenia.  
+ Można skonfigurować aplikację, aby program mógł sprawdzać dostępność aktualizacji na podstawie zdarzenia, takiego jak żądanie użytkownika. Procedura "aby wyszukiwać aktualizacje programowo" w tym temacie pokazuje, w jaki sposób napisać kod, który używa <xref:System.Deployment.Application.ApplicationDeployment> klasy do sprawdzania dostępności aktualizacji na podstawie zdarzenia.  
   
- Możesz również wdrożyć aplikację z jednej lokalizacji i zaktualizować go z innego. Zapoznaj się z procedurą "Aby określić lokalizację inną aktualizację."  
+ Możesz również wdrożyć aplikację z jednej lokalizacji i zaktualizować ją z innej. Zobacz procedurę "aby określić inną lokalizację aktualizacji".  
   
  Aby uzyskać więcej informacji, zobacz [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
   
- Zachowanie aktualizacji są zarządzane w **aktualizacje aplikacji** okno dialogowe, dostępnym **Publikuj** strony **projektanta projektu.**  
+ Zachowaniem aktualizacji zarządza się w oknie dialogowym **aktualizacje aplikacji** dostępnym na stronie **Publikuj** w **projektancie projektu.**  
   
-### <a name="to-check-for-updates-before-the-application-starts"></a>Aby sprawdzić dostępność aktualizacji, przed uruchomieniem aplikacji  
+### <a name="to-check-for-updates-before-the-application-starts"></a>Aby sprawdzić dostępność aktualizacji przed uruchomieniem aplikacji  
   
-1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.  
   
-2. Kliknij przycisk **Publikuj** kartę.  
+2. Kliknij kartę **Publikowanie** .  
   
-3. Kliknij przycisk **aktualizacje** przycisk, aby otworzyć **aktualizacje aplikacji** okno dialogowe.  
+3. Kliknij przycisk **aktualizacje** , aby otworzyć okno dialogowe **aktualizacje aplikacji** .  
   
-4. W **aktualizacje aplikacji** okna dialogowego pole, upewnij się, że **aplikacja ma sprawdzać dostępność aktualizacji** pole wyboru jest zaznaczone.  
+4. W oknie dialogowym **aktualizacje aplikacji** upewnij się, że jest zaznaczone pole wyboru **aplikacja powinna sprawdzać dostępność aktualizacji** .  
   
-5. W **wybierz, kiedy aplikacja ma sprawdzać dostępność aktualizacji** zaznacz **przed uruchomieniem aplikacji**. Daje to gwarancję, że użytkownicy zawsze podłączone do sieci uruchomić aplikację z najnowszymi aktualizacjami.  
+5. W sekcji **Wybierz, kiedy aplikacja ma sprawdzać dostępność aktualizacji** wybierz **przed uruchomieniem aplikacji**. Dzięki temu użytkownicy połączeni z siecią zawsze będą uruchamiać aplikacje z najnowszymi aktualizacjami.  
   
-### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>Aby sprawdzić dostępność aktualizacji w tle, po uruchomieniu aplikacji  
+### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>Aby sprawdzić dostępność aktualizacji w tle po uruchomieniu aplikacji  
   
-1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.  
   
-2. Kliknij przycisk **Publikuj** kartę.  
+2. Kliknij kartę **Publikowanie** .  
   
-3. Kliknij przycisk **aktualizacje** przycisk, aby otworzyć **aktualizacje aplikacji** okno dialogowe.  
+3. Kliknij przycisk **aktualizacje** , aby otworzyć okno dialogowe **aktualizacje aplikacji** .  
   
-4. W **aktualizacje aplikacji** okna dialogowego pole, upewnij się, że pole wyboru **aplikacja ma sprawdzać dostępność aktualizacji** jest zaznaczone.  
+4. W oknie dialogowym **aktualizacje aplikacji** upewnij się, że zaznaczone jest pole wyboru **aplikacja powinna sprawdzać dostępność aktualizacji** .  
   
-5. W **wybierz, kiedy aplikacja powinna sprawdzać, czy aktualizacje sekcji**, wybierz opcję **po uruchomieniu aplikacji**. Aplikacja rozpocznie się szybciej dzięki temu, a następnie go będzie sprawdzać dostępność aktualizacji w tle, a tylko Powiadom użytkownika, gdy aktualizacja jest dostępna. Po zainstalowaniu aktualizacji nie zostały zastosowane do ponownego uruchomienia aplikacji.  
+5. W **sekcji Wybierz, kiedy aplikacja ma sprawdzać dostępność aktualizacji**wybierz pozycję **po uruchomieniu aplikacji**. Aplikacja zacznie szybciej w ten sposób, a następnie będzie sprawdzać dostępność aktualizacji w tle, a następnie powiadamia użytkownika tylko o dostępności aktualizacji. Po zainstalowaniu aktualizacje zaczną obowiązywać dopiero po ponownym uruchomieniu aplikacji.  
   
-6. W **Określ, jak często aplikacja ma sprawdzać dostępność aktualizacji** sekcji, wybierz opcję **Sprawdź za każdym razem, gdy aplikacja zostanie uruchomiona** (ustawienie domyślne) lub **Sprawdź każdy** a następnie wprowadź interwał liczby i czasu.  
+6. W sekcji **Określ, jak często aplikacja ma sprawdzać dostępność aktualizacji** zaznacz opcję **sprawdzaj przy każdym uruchomieniu aplikacji** (wartość domyślna) lub **Sprawdzaj co** i wprowadź liczbę i przedział czasu.  
   
-### <a name="to-specify-a-minimum-required-version-for-the-application"></a>Do określenia minimalnej wymaganej wersji aplikacji  
+### <a name="to-specify-a-minimum-required-version-for-the-application"></a>Aby określić minimalną wersję wymaganą dla aplikacji  
   
-1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.  
   
-2. Kliknij przycisk **Publikuj** kartę.  
+2. Kliknij kartę **Publikowanie** .  
   
-3. Kliknij przycisk **aktualizacje** przycisk, aby otworzyć **aktualizacje aplikacji** okno dialogowe.  
+3. Kliknij przycisk **aktualizacje** , aby otworzyć okno dialogowe **aktualizacje aplikacji** .  
   
-4. W **aktualizacje aplikacji** okna dialogowego pole, upewnij się, że **aplikacja ma sprawdzać dostępność aktualizacji** pole wyboru jest zaznaczone.  
+4. W oknie dialogowym **aktualizacje aplikacji** upewnij się, że jest zaznaczone pole wyboru **aplikacja powinna sprawdzać dostępność aktualizacji** .  
   
-5. Wybierz **określanie minimalnej wymaganej wersji tej aplikacji** pole wyboru, a następnie wprowadź **głównych**, **pomocnicza**, **kompilacji**i  **Poprawka** liczb dla aplikacji.  
+5. Zaznacz pole **wyboru Określ minimalną wersję wymaganą dla tej aplikacji** , a następnie wprowadź numery **Główne**, **pomocnicze**, **kompilacje**i **poprawki** dla aplikacji.  
   
-### <a name="to-specify-a-different-update-location"></a>Aby określić lokalizację inną aktualizację  
+### <a name="to-specify-a-different-update-location"></a>Aby określić inną lokalizację aktualizacji  
   
-1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.  
   
-2. Kliknij przycisk **Publikuj** kartę.  
+2. Kliknij kartę **Publikowanie** .  
   
-3. Kliknij przycisk **aktualizacje** przycisk, aby otworzyć **aktualizacje aplikacji** okno dialogowe.  
+3. Kliknij przycisk **aktualizacje** , aby otworzyć okno dialogowe **aktualizacje aplikacji** .  
   
-4. W **aktualizacje aplikacji** okna dialogowego pole, upewnij się, że **aplikacja ma sprawdzać dostępność aktualizacji** pole wyboru jest zaznaczone.  
+4. W oknie dialogowym **aktualizacje aplikacji** upewnij się, że jest zaznaczone pole wyboru **aplikacja powinna sprawdzać dostępność aktualizacji** .  
   
-5. W **zaktualizować lokalizację** wprowadź lokalizacji aktualizacji za pomocą w pełni kwalifikowanym adresem URL, przy użyciu formatu http://Hostname/ApplicationName, lub ścieżkę UNC w formacie \\\Server\ApplicationName lub kliknij przycisk **Przeglądaj** przycisku Przeglądaj w poszukiwaniu lokalizacji aktualizacji.  
+5. W polu **Lokalizacja aktualizacji** wprowadź lokalizację aktualizacji z w pełni kwalifikowanym adresem URL, używając formatu http://Hostname/ApplicationName lub ścieżki UNC przy użyciu formatu \\ \Server\ApplicationName, lub kliknij przycisk **Przeglądaj** , aby przejść do lokalizacji aktualizacji.  
   
-### <a name="to-check-for-updates-programmatically"></a>Aby wyszukać aktualizacje programowo  
+### <a name="to-check-for-updates-programmatically"></a>Aby programowo sprawdzić dostępność aktualizacji  
   
-1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.  
   
-2. Kliknij przycisk **Publikuj** kartę.  
+2. Kliknij kartę **Publikowanie** .  
   
-3. Kliknij przycisk **aktualizacje** przycisk, aby otworzyć **aktualizacje aplikacji** okno dialogowe.  
+3. Kliknij przycisk **aktualizacje** , aby otworzyć okno dialogowe **aktualizacje aplikacji** .  
   
-4. W **aktualizacje aplikacji** okna dialogowego pole, upewnij się, że **aplikacja ma sprawdzać dostępność aktualizacji** pole wyboru jest wyczyszczone. (Opcjonalnie można wybrać to pole wyboru w celu wyszukania aktualizacji programowo, a także umożliwić środowiska uruchomieniowego ClickOnce, Sprawdź aktualizacje automatycznie.)  
+4. W oknie dialogowym **aktualizacje aplikacji** upewnij się, że pole wyboru **aplikacja powinna sprawdzać dostępność aktualizacji** , jest wyczyszczone. (Opcjonalnie możesz zaznaczyć to pole wyboru, aby wyszukać aktualizacje programowo, a także umożliwić automatyczne sprawdzanie aktualizacji w środowisku uruchomieniowym ClickOnce).  
   
-5. W **zaktualizować lokalizację** wprowadź lokalizacji aktualizacji za pomocą w pełni kwalifikowanym adresem URL, przy użyciu formatu http://Hostname/ApplicationName, lub ścieżkę UNC w formacie \\\Server\ApplicationName lub kliknij przycisk **Przeglądaj** przycisku Przeglądaj w poszukiwaniu lokalizacji aktualizacji. Lokalizacja aktualizacji jest, gdzie aplikacja będzie szukać zaktualizowaną wersję samego.  
+5. W polu **Lokalizacja aktualizacji** wprowadź lokalizację aktualizacji z w pełni kwalifikowanym adresem URL, używając formatu http://Hostname/ApplicationName lub ścieżki UNC przy użyciu formatu \\ \Server\ApplicationName, lub kliknij przycisk **Przeglądaj** , aby przejść do lokalizacji aktualizacji. Lokalizacja aktualizacji polega na tym, że aplikacja będzie szukać zaktualizowanej wersji.  
   
-6. Utwórz przycisk, element menu lub innego elementu interfejsu użytkownika w formularzu Windows, która będzie wybierać użytkowników, aby sprawdzał dostępność aktualizacji. Z tego elementu procedura obsługi zdarzeń Wywołaj metodę, aby wyszukać i zainstalować aktualizacje. Można znaleźć przykład Visual Basic i Visual C# kod dla metody w [jak: Sprawdzanie aktualizacji aplikacji, programowo przy użyciu wdrażania interfejsu API ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
+6. Utwórz przycisk, element menu lub inny element interfejsu użytkownika w formularzu systemu Windows, który użytkownicy będą wybierać w celu sprawdzenia dostępności aktualizacji. Z procedury obsługi zdarzeń tego elementu Wywołaj metodę, aby sprawdzić i zainstalować aktualizacje. Przykładowy kod Visual Basic i Visual C# można znaleźć w tej metodzie [: sprawdzanie aktualizacji aplikacji programowo przy użyciu interfejsu API wdrażania ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   
-7. Tworzenie aplikacji.  
+7. Kompiluj aplikację.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.Deployment.Application.ApplicationDeployment>   
- [Okno dialogowe aktualizacji aplikacji](https://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
+ [Okno dialogowe aktualizacje aplikacji](https://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
  [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Instrukcje: Sprawdzanie aktualizacji aplikacji w sposób programowy za pomocą interfejsu API wdrażania ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)
+ [Instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Instrukcje: sprawdzanie aktualizacji aplikacji w sposób programowy za pomocą wdrażania interfejsu API technologii ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

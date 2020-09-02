@@ -1,5 +1,5 @@
 ---
-title: UNMANAGED_ADDRESS_THIS_RELATIVE | Dokumentacja firmy Microsoft
+title: UNMANAGED_ADDRESS_THIS_RELATIVE | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: aaed99b669946f4d2885009ff328ce4e2e62fcae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204747"
 ---
-# <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
+# <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta struktura reprezentuje adres który będzie względne `this` wskaźnika (`Me` w języku Visual Basic).  
+Ta struktura reprezentuje adres względem `this` wskaźnika ( `Me` w Visual Basic).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,26 +42,26 @@ public struct UNMANAGED_THIS_RELATIVE {
 }  
 ```  
   
-## <a name="terms"></a>Warunki  
+## <a name="terms"></a>Terminologia  
  dwOffset  
- Przesunięcie bajtu od pozycji bazowej (na przykład początek vtable klasy).  
+ Przesunięcie bajtowe z pozycji podstawowej (na przykład początek klasy tablic wirtualnych).  
   
  dwBitOffset  
- Przesunięcie w bitach od pozycji bazowej (zawsze 0, chyba że odwołujące się do pola bitowego).  
+ Przesunięcie w bitach z pozycji podstawowej (zawsze 0, chyba że odwołuje się do pola bitowego).  
   
  dwBitLength  
- Liczba bitów reprezentująca adres (zawsze 0, chyba że odwołujące się do pola bitowego).  
+ Liczba bitów reprezentująca adres (zawsze 0, chyba że odwołuje się do pola bitowego).  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest częścią Unii w [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struktury, kiedy `dwKind` pole `DEBUG_ADDRESS_UNION` struktury jest ustawiona na `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (wartość z zakresu od [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Wyliczenie).  
+ Ta struktura jest częścią Unii w strukturze [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) , gdy `dwKind` pole `DEBUG_ADDRESS_UNION` struktury jest ustawione na `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (wartość z wyliczenia [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: sh.h  
+ Nagłówek: sh. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

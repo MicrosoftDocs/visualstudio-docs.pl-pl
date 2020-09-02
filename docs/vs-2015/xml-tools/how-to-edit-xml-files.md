@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c099839cda87819ec0ec7932c2b2e6aa7698fa52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670884"
 ---
-# <a name="how-to-edit-xml-files"></a>Instrukcje: edytowanie plików XML
+# <a name="how-to-edit-xml-files"></a>Instrukcje: Edytowanie plików XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Edytor XML jest nowym edytorem plików XML. Może być używany w autonomicznym pliku XML lub w pliku skojarzonym z projektem programu Visual Studio. Edytor XML jest skojarzony z następującymi rozszerzeniami plików:. config,. DTD,. XML,. xsd,. XDR,. xsl,. XSLT i. vssettings. Edytor XML jest również skojarzony z innym typem pliku, który nie ma określonego edytora, i zawiera zawartość XML lub DTD.
@@ -36,7 +36,7 @@ Edytor XML jest nowym edytorem plików XML. Może być używany w autonomicznym 
 
 3. Wprowadź nazwę pliku w polu **Nazwa** i naciśnij przycisk **Dodaj**.
 
-     Plik XML zostanie dodany do projektu i otwarty w edytorze XML. Plik zawiera domyślną deklarację XML, `<?xml version="1.0" encoding="utf-8" ?>`.
+     Plik XML zostanie dodany do projektu i otwarty w edytorze XML. Plik zawiera domyślną deklarację XML, `<?xml version="1.0" encoding="utf-8" ?>` .
 
 ### <a name="to-add-an-existing-xml-file-to-a-project"></a>Aby dodać istniejący plik XML do projektu
 
@@ -60,7 +60,7 @@ Edytor XML jest nowym edytorem plików XML. Może być używany w autonomicznym 
 
 1. Z menu **plik** wybierz pozycję **Nowy**, a następnie wybierz pozycję **projekt**.
 
-     Pojawi się okno dialogowe **Nowy projekt** .
+     Zostanie wyświetlone okno dialogowe **Nowy projekt**.
 
 2. Wybierz wybrany język kodu, wybierz pozycję **pusty projekt**, a następnie kliknij przycisk **OK**.
 
@@ -69,4 +69,4 @@ Edytor XML jest nowym edytorem plików XML. Może być używany w autonomicznym 
      Edytor XML znajduje schematy dodawane do tego projektu i używa ich do sprawdzania poprawności i IntelliSense w dowolnym pliku XML, schemacie lub XSLT, który można edytować, gdy ten projekt jest otwarty.
 
 ## <a name="see-also"></a>Zobacz też
- [](../xml-tools/xml-editor.md) [Właściwości dokumentu XML edytora XML, okno właściwości](../xml-tools/xml-document-properties-properties-window.md) [instrukcje: Tworzenie schematu XML na podstawie dokumentu XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+ [XML Editor](../xml-tools/xml-editor.md) [Właściwości dokumentu XML edytora XML, okno właściwości](../xml-tools/xml-document-properties-properties-window.md) [instrukcje: Tworzenie schematu XML na podstawie dokumentu XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

@@ -1,5 +1,5 @@
 ---
-title: Generowanie szybkiej akcji dekonstruktora
+title: Generuj szybką akcję dekonstruktora
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,43 +10,43 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5a3a89d15d05b44575fede98d3043d706b24c1d9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65531886"
 ---
-# <a name="generate-a-deconstructor-in-visual-studio"></a>Generowanie dekonstruktora w programie Visual Studio
+# <a name="generate-a-deconstructor-in-visual-studio"></a>Generuj Konstruktor w programie Visual Studio
 
-To generowanie kodu dotyczy:
+Ta generacja kodu ma zastosowanie do:
 
 - C#
 
-**Co:** Umożliwia natychmiastowe wygenerowanie skrótu metody dla nowego dekonstruktora.
+**Co:** Umożliwia natychmiastowe wygenerowanie elementu pośredniczącego metody dla nowego dekonstruktora.
 
-**Kiedy:** Chcesz automatycznie zdekonstruować typ.
+**Kiedy:** Chcesz prawidłowo dekonstruować typ.
 
-**Dlaczego?** Można ręcznie wpisać dekonstruktora, ale ta funkcja generuje skrót dla Ciebie z poprawnymi parametrami out.
+**Dlaczego:** Można ręcznie wpisać dekonstruktor, ale ta funkcja generuje skrót dla użytkownika z poprawnymi parametrami out.
 
-## <a name="generate-a-deconstructor"></a>Generowanie dekonstruktora
+## <a name="generate-a-deconstructor"></a>Generuj Konstruktor
 
-1. Zadeklaruj nowy typ z określonymi żądanymi parametrami. Ta deklaracja spowoduje błąd, gdy nie można znaleźć wystąpienia dekonstrukcji pasującego do deklaracji.
+1. Zadeklaruj nowy typ z określonymi pożądanymi parametrami out. Ta deklaracja spowoduje błąd, gdy nie można znaleźć wystąpienia dekonstrukcji pasującego do deklaracji.
 
    ![Brak błędu dekonstruktora](media/deconstruct.png)
 
-2. Wykonać jeden z następujących kroków:
+2. Wykonaj jedną z następujących czynności:
 
    - **Klawiatura**
-      - Za pomocą kursora w deklaracji wybierz pozycję Ctrl+. , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
+      - Za pomocą kursora w deklaracji wybierz pozycję Ctrl +. Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
    - **Mysz**
-      - Kliknij prawym przyciskiem myszy i wybierz menu **Szybkie akcje i Refaktoryzowania.**
-      - Wybierz ikonę ![Śrubokręt](media/screwdriver.png) ikona, która pojawia się na lewym marginesie, jeśli kursor tekstowy znajduje się już w pustym wierszu w klasie.
+      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
+      - Wybierz ikonę ![śrubokręt](media/screwdriver.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w pustym wierszu w klasie.
 
-      ![Generowanie poprawki kodu dekonstruktora](media/deconstruct-codefix.png)
+      ![Generuj poprawkę kodu dekonstruktora](media/deconstruct-codefix.png)
 
-3. Wybierz **opcję Wygeneruj metodę "MyInternalClass.Deconstruct",** aby wygenerować dekonstruktora.
+3. Wybierz pozycję **Generuj metodę "MyInternalClass. dekonstrukcja"** , aby wygenerować Konstruktor.
 
-   ![Wynikowy kod dekonstruktora](media/deconstruct-result.png)
+   ![Otrzymany kod dekonstruktora](media/deconstruct-result.png)
 
 ## <a name="see-also"></a>Zobacz też
 

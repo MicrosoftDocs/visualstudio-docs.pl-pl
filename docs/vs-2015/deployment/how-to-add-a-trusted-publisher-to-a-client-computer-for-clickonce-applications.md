@@ -17,23 +17,23 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 296aec3b2b5cd307400b230375a7171f158fee60
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847697"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Porady: dodawanie zaufanego wydawcy do komputera klienckiego dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dzięki wdrożeniu zaufanej aplikacji można skonfigurować komputery klienckie w taki sposób, aby aplikacje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] działały z wyższym poziomem zaufania bez monitowania użytkownika. W poniższych procedurach pokazano, jak za pomocą narzędzia wiersza polecenia CertMgr. exe dodać certyfikat wydawcy do magazynu zaufanych wydawców na komputerze klienckim.  
+Dzięki wdrożeniu zaufanej aplikacji można skonfigurować komputery klienckie w taki sposób, aby [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacje były uruchamiane z wyższym poziomem zaufania bez monitowania użytkownika. W poniższych procedurach pokazano, jak za pomocą narzędzia wiersza polecenia CertMgr.exe dodać certyfikat wydawcy do magazynu zaufanych wydawców na komputerze klienckim.  
   
  Używane polecenia różnią się nieco w zależności od tego, czy urząd certyfikacji (CA), który wystawił certyfikat, jest częścią zaufanego katalogu głównego klienta. Jeśli komputer kliencki z systemem Windows jest częścią domeny, będzie zawierać listę urzędów certyfikacji, które są uznawane za zaufane certyfikaty główne. Ta lista jest zazwyczaj konfigurowana przez administratora systemu. Jeśli certyfikat został wystawiony przez jeden z zaufanych katalogów głównych lub przez urząd certyfikacji, który tworzy łańcuch do jednego z tych zaufanych katalogów głównych, można dodać certyfikat do zaufanego magazynu głównego klienta. Jeśli z drugiej strony certyfikat nie został wystawiony przez jeden z tych zaufanych katalogów głównych, należy dodać ten certyfikat zarówno do zaufanego magazynu głównego klienta, jak i do magazynu zaufanych wydawców.  
   
 > [!NOTE]
-> W ten sposób należy dodać certyfikaty na każdym komputerze klienckim, na którym planujesz wdrożyć aplikację [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], która wymaga podniesionych uprawnień. Certyfikaty można dodać ręcznie lub za pomocą wdrażanej aplikacji na klientach. Wystarczy tylko skonfigurować te komputery, aby można było wdrożyć dowolną liczbę [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji podpisanych za pomocą tego samego certyfikatu.  
+> W ten sposób należy dodać certyfikaty na każdym komputerze klienckim, na którym planujesz wdrożyć [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikację wymagającą podwyższonego poziomu uprawnień. Certyfikaty można dodać ręcznie lub za pomocą wdrażanej aplikacji na klientach. Wystarczy tylko skonfigurować te komputery, aby można było wdrożyć dowolną liczbę [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji podpisanych za pomocą tego samego certyfikatu.  
   
- Certyfikat można także dodać do magazynu programowo przy użyciu klasy <xref:System.Security.Cryptography.X509Certificates.X509Store>.  
+ Certyfikat można także dodać do magazynu programowo przy użyciu <xref:System.Security.Cryptography.X509Certificates.X509Store> klasy.  
   
  Omówienie wdrażania zaufanych aplikacji można znaleźć w temacie [Omówienie wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md).  
   
@@ -45,7 +45,7 @@ Dzięki wdrożeniu zaufanej aplikacji można skonfigurować komputery klienckie 
   
 3. W wierszu polecenia na komputerach klienckich Uruchom następujące polecenie:  
   
-     **certmgr. exe-Add Certificate. cer-c-s-r localMachine TrustedPublisher**  
+     **certmgr.exe-Add Certificate. cer-c-s-r localMachine TrustedPublisher**  
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-a-different-root"></a>Aby dodać certyfikat do magazynu zaufanych wydawców w innym katalogu głównym  
   
@@ -55,20 +55,20 @@ Dzięki wdrożeniu zaufanej aplikacji można skonfigurować komputery klienckie 
   
 3. W wierszu polecenia na komputerach klienckich Uruchom następujące polecenie:  
   
-     **certmgr. exe-Add dobry. cer-c-s-r localMachine root**  
+     **certmgr.exe-Add dobry. cer-c-s-r localMachine root**  
   
-     **certmgr. exe-Add dobry. cer-c-s-r localMachine TrustedPublisher**  
+     **certmgr.exe-Add dobry. cer-c-s-r localMachine TrustedPublisher**  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
- Technologia [ClickOnce i  Authenticode](../deployment/clickonce-and-authenticode.md)  
+ [ClickOnce i Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Omówienie wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md)   
- [Instrukcje: Włączanie ustawień zabezpieczeń ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Instrukcje: Włączanie ustawień zabezpieczeń technologii ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
  [Instrukcje: Ustawianie strefy zabezpieczeń dla aplikacji ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [Instrukcje: Ustawianie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Instrukcje: debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Instrukcje: Dodawanie zaufanego wydawcy do komputera klienckiego dla aplikacji ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [Instrukcje: ponowne podpisywanie manifestów aplikacji i wdrażania](../deployment/how-to-re-sign-application-and-deployment-manifests.md)   
+ [Instrukcje: ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md)   
  [Instrukcje: konfigurowanie funkcji zaufanego monitowania technologii ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 45e664b153c4d643d8fbe8f1cefb207e0a76e18e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204877"
 ---
-# <a name="seekstart"></a>SEEK_START
+# <a name="seek_start"></a>SEEK_START
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa położenie, z którym ma zostać rozpoczęte wyszukiwanie w strumieniu dezasemblacji.  
+Określa położenie, od którego należy zacząć odszukać w strumieniu demontażu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -49,31 +49,31 @@ public enum enum_SEEK_START { 
   
 ## <a name="members"></a>Elementy członkowskie  
  SEEK_START_BEGIN  
- Rozpoczyna się wyszukiwanie od początku bieżącego dokumentu.  
+ Rozpoczyna wyszukiwanie na początku bieżącego dokumentu.  
   
  SEEK_START_END  
- Rozpoczyna się wyszukiwanie na koniec bieżącego dokumentu.  
+ Zaczyna przeszukiwanie na końcu bieżącego dokumentu.  
   
  SEEK_START_CURRENT  
- Rozpoczyna się wyszukiwanie w bieżącym położeniu bieżącego dokumentu.  
+ Zaczyna wyszukiwanie w bieżącym położeniu bieżącego dokumentu.  
   
  SEEK_START_CODECONTEXT  
- Rozpoczyna się wyszukiwanie w kontekście danego kodu bieżącego dokumentu.  
+ Zaczyna wyszukiwanie w danym kontekście kodu bieżącego dokumentu.  
   
  SEEK_START_CODELOCID  
- Rozpoczyna się wyszukiwanie na identyfikator lokalizacji danego kodu. Identyfikatory lokalizacji kodu są pobierane przez wywołanie metody [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).  
+ Zaczyna wyszukiwanie w danym identyfikatorze lokalizacji kodu. Identyfikatory lokalizacji kodu są uzyskiwane przez wywołanie [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazywany jako argument do [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) metody.  
+ Przekazanie jako argument do metody [wyszukiwania](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Wyszukiwanie](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
+ [Azyl](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
  [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)

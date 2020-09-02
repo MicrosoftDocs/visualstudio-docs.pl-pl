@@ -1,5 +1,5 @@
 ---
-title: Pole TASK_STATE_WAITING_ON_CHILDREN | Dokumentacja firmy Microsoft
+title: TASK_STATE_WAITING_ON_CHILDREN pole | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2dfb7ca683b7a05151539feda92a2575197b189
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176712"
 ---
-# <a name="taskstatewaitingonchildren-field"></a>TASK_STATE_WAITING_ON_CHILDREN, pole
+# <a name="task_state_waiting_on_children-field"></a>TASK_STATE_WAITING_ON_CHILDREN, pole
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Zadanie zostało zakończone, wykonywanie jej delegata i niejawnie Trwa oczekiwanie na ukończenie dołączonych zadań podrzędnych.  
+Zadanie zakończyło wykonywanie delegata i nieoczekiwanie oczekuje na ukończenie dołączonych zadań podrzędnych.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Zestaw:** mscorlib (w mscorlib.dll)  
   
- Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,7 +35,7 @@ Zadanie zostało zakończone, wykonywanie jej delegata i niejawnie Trwa oczekiwa
 ```  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) pole zawiera wartość ta <xref:System.Threading.Tasks.Task.Status%2A> właściwość zwraca <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
+ Jeśli pole [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) zawiera tę wartość, <xref:System.Threading.Tasks.Task.Status%2A> Właściwość zwraca <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Task, klasa](../../extensibility/debugger/task-class-internal-members.md)
