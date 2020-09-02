@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b9e20f0d14b2940fdbe8096442848f38183b1db7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985728"
 ---
 # <a name="office-development-samples"></a>Przykłady programowania dla pakietu Office
@@ -28,7 +28,7 @@ ms.locfileid: "72985728"
 
 ## <a name="office-development-samples"></a>Przykłady programowania dla pakietu Office
 
-|Przykład|Opis|
+|Sample|Opis|
 |------------|-----------------|
 |Przykład danych szczegółów wzorca programu Excel|Pokazuje, jak pobrać dane z relacyjnej bazy danych lub pliku XML i używać tych danych w programie Excel.|
 |Przykłady technik ochrony dokumentów programu Excel|Pokazuje różne techniki, których można użyć do ochrony składników strukturalnych arkusza, aby zapobiec przypadkowemu usunięciu formantów lub zmianie ważnych części dokumentu rozwiązania.|
@@ -40,5 +40,5 @@ ms.locfileid: "72985728"
 |Przykład Menedżera interfejsu użytkownika|Demonstruje sposób tworzenia dostosowywania wstążki, niestandardowego okienka zadań i niestandardowego regionu formularzy dla programu Outlook przez implementację interfejsów rozszerzalności w dodatku narzędzi VSTO. Każde wystąpienie wstążki, okienka zadań i regionu formularza może prawidłowo komunikować się ze sobą.|
 |Przykład współpracy VBA i programu VSTO|Pokazuje, jak wywołać metodę w dostosowaniu na poziomie dokumentu dla programu Excel z kodu Visual Basic for Applications (VBA) w skoroszycie.<br /><br /> Ten przykład jest dostępny tylko w trybie online.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)

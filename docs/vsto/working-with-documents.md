@@ -1,5 +1,5 @@
 ---
-title: Praca z dokumentami
+title: Pracuj z dokumentami
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,33 +15,33 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1b21f8c84082e19c1d9f43d6a2ae36d158a15c01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63008693"
 ---
-# <a name="work-with-documents"></a>Praca z dokumentami
-  Tematy w tej sekcji Obejmij procedury krok po kroku i przykłady kodu za pomocą modelu obiektów programu Microsoft Word pakietu Office do pracy z dokumentami w projektach pakietu Office.
+# <a name="work-with-documents"></a>Pracuj z dokumentami
+  Tematy w tej sekcji zawierają procedury krok po kroku i przykłady kodu umożliwiające używanie modelu obiektów programu Microsoft Office Word do pracy z dokumentami w projektach pakietu Office.
 
- W niektórych przypadkach sposób wykonywania tych zadań w dodatkach VSTO różni się od metody, wykonać je w dostosowaniach na poziomie dokumentu.
+ W niektórych przypadkach sposoby wykonywania tych zadań w dodatkach narzędzia VSTO różnią się od sposobów ich wykonywania w dostosowywaniu na poziomie dokumentu.
 
 |Zadanie|Procedura|
 |----------|---------------|
-|Utwórz dokument na podstawie szablonu normalnej lub inny szablon.|[Instrukcje: Programowe tworzenie nowych dokumentów](../vsto/how-to-programmatically-create-new-documents.md)|
-|Otwórz określonego dokumentu w trybie odczytu/zapisu lub tylko do odczytu.|[Instrukcje: Programowe otwieranie istniejących dokumentów](../vsto/how-to-programmatically-open-existing-documents.md)|
-|Zamknij aktywny dokument lub określonego dokumentu.|[Instrukcje: Programowe zamykanie dokumentów](../vsto/how-to-programmatically-close-documents.md)|
-|Zapisywanie dokumentu o takiej samej nazwie lub nową nazwę.|[Instrukcje: Programowe zapisywanie dokumentów](../vsto/how-to-programmatically-save-documents.md)|
-|Wydrukuj cały dokument lub tylko bieżącej strony.|[Instrukcje: Programowe drukowanie dokumentów](../vsto/how-to-programmatically-print-documents.md)|
-|Wyświetlanie podglądu wydruku dla dokumentu.|[Instrukcje: Programowe wyświetlanie dokumentów w podglądzie wydruku](../vsto/how-to-programmatically-display-documents-in-print-preview.md)|
-|Wyświetl okno dialogowe wbudowanych i zbierania danych wejściowych użytkownika.|[Instrukcje: Programowe używanie wbudowanych okien dialogowych w programie Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)|
-|Korzystać z funkcji w oknie dialogowym wbudowanych bez wyświetlania go.|[Instrukcje: Programowe korzystanie dialogowych programu Word w trybie ukrytym](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)|
-|Dodawanie obrazu lub WordArt do dokumentu.|[Instrukcje: Programowe Dodawanie zdjęć i WordArt do dokumentów](../vsto/how-to-programmatically-add-pictures-and-word-art-to-documents.md)|
-|Uniemożliwić użytkownikom edytowanie dokumentu lub części dokumentu.|[Instrukcje: Programowe Włączanie ochrony dokumentów i części dokumentów](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)|
-|Sprawdzanie pisowni.|[Instrukcje: Programowe sprawdzanie pisowni w dokumentach](../vsto/how-to-programmatically-check-spelling-in-documents.md)|
-|Dodaj nagłówek lub stopka do dokumentu.|[Instrukcje: Programowe Dodawanie nagłówków i stopek do dokumentów](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md)|
-|Usuwanie wszystkich komentarzy z dokumentu.|[Instrukcje: Programowe usuwanie wszystkich komentarzy z dokumentów](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)|
+|Utwórz dokument na podstawie normalnego szablonu lub innego szablonu.|[Instrukcje: Programowane tworzenie nowych dokumentów](../vsto/how-to-programmatically-create-new-documents.md)|
+|Otwórz określony dokument jako do odczytu/zapisu lub tylko do odczytu.|[Instrukcje: programowe otwieranie istniejących dokumentów](../vsto/how-to-programmatically-open-existing-documents.md)|
+|Zamknij aktywny dokument lub określony dokument.|[Instrukcje: programowe Zamykanie dokumentów](../vsto/how-to-programmatically-close-documents.md)|
+|Zapisz dokument o tej samej nazwie lub nowej nazwie.|[Instrukcje: programowe zapisywanie dokumentów](../vsto/how-to-programmatically-save-documents.md)|
+|Drukowanie całego dokumentu lub tylko bieżącej strony.|[Instrukcje: Programowane drukowanie dokumentów](../vsto/how-to-programmatically-print-documents.md)|
+|Wyświetl podgląd wydruku dla dokumentu.|[Instrukcje: Programowane wyświetlanie dokumentów w podglądzie wydruku](../vsto/how-to-programmatically-display-documents-in-print-preview.md)|
+|Wyświetlanie wbudowanego okna dialogowego i zbieranie danych wejściowych użytkownika.|[Instrukcje: Programowane Używanie wbudowanych okien dialogowych w programie Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)|
+|Używanie funkcji w wbudowanym oknie dialogowym bez wyświetlania go.|[Instrukcje: Programowane korzystanie z okien dialogowych programu Word w trybie ukrytym](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)|
+|Dodaj obraz lub element WordArt do dokumentu.|[Instrukcje: programowe Dodawanie zdjęć i rysunków programu Word do dokumentów](../vsto/how-to-programmatically-add-pictures-and-word-art-to-documents.md)|
+|Uniemożliwiaj użytkownikom edytowanie dokumentu lub części dokumentu.|[Instrukcje: programowe Włączanie ochrony dokumentów i części dokumentów](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)|
+|Sprawdź pisownię.|[Instrukcje: Programowane sprawdzanie pisowni w dokumentach](../vsto/how-to-programmatically-check-spelling-in-documents.md)|
+|Dodawanie nagłówka lub stopki do dokumentu.|[Instrukcje: programowe Dodawanie nagłówków i stopek do dokumentów](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md)|
+|Usuń wszystkie komentarze z dokumentu.|[Instrukcje: programowe usuwanie wszystkich komentarzy z dokumentów](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)|
 
-## <a name="see-also"></a>Zobacz także
-- [Model obiektu Word — omówienie](../vsto/word-object-model-overview.md)
-- [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+## <a name="see-also"></a>Zobacz też
+- [Model obiektów programu Word — omówienie](../vsto/word-object-model-overview.md)
+- [Omówienie programowania rozwiązań dla pakietu Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

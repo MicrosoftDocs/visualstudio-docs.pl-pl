@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 55418f40f57e2279100fbb1c9ba4d12fae83a19c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664443"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Porady: eksportowanie tekstury zawierającej mipmapy
@@ -36,7 +36,7 @@ Potok zawartości obrazu może generować mipmapy z obrazu źródłowego jako cz
 
 2. Skonfiguruj utworzony plik tekstury w taki sposób, aby był przetwarzany przez potok zawartości obrazu. W **Eksplorator rozwiązań**Otwórz menu skrótów dla właśnie utworzonego pliku tekstury, a następnie wybierz polecenie **Właściwości**. Na stronie **Właściwości konfiguracji**, **Ogólne** ustaw właściwość **Typ elementu** na **potok zawartości obrazu**. Upewnij się, że właściwość **Content** jest ustawiona na **wartość Yes (tak** ), **Wyklucz z kompilacji** jest ustawiony na **nie**, a następnie wybierz przycisk **Zastosuj** . Zostanie wyświetlona strona właściwości konfiguracja **potoku zawartości obrazu** .
 
-3. Skonfiguruj potok zawartości obrazu w celu wygenerowania mipmapy. Na stronie **Właściwości konfiguracji**, **potoku zawartości obrazu**, **Ogólne** ustaw właściwość Generuj wartość właściwości **MIPS** na **wartość tak (/generatemips)** .
+3. Skonfiguruj potok zawartości obrazu w celu wygenerowania mipmapy. Na stronie **Właściwości konfiguracji**, **potoku zawartości obrazu**, **Ogólne** ustaw właściwość Generuj wartość właściwości **MIPS** na **wartość tak (/generatemips)**.
 
 4. Wybierz przycisk **OK** .
 

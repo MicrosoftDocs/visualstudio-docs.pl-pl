@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af49535233a809006f6109449ae524611b1adc45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645595"
 ---
 # <a name="globalizing-applications"></a>Globalizowanie aplikacji
@@ -33,6 +33,6 @@ Globalizacja to proces projektowania i opracowywania produktu oprogramowania, kt
 
  [Globalizacja i lokalizacja](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Zawiera łącza do stron pomocy dotyczące globalizacji stron formularzy sieci Web.
 
- [Wprowadzenie do aplikacji międzynarodowych opartych na .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) W tym artykule omówiono podstawowe pojęcia związane z tworzeniem oprogramowania na rynku międzynarodowym przy użyciu C#Visual Basic lub wizualizacji.
+ [Wprowadzenie do aplikacji międzynarodowych opartych na .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) W tym artykule omówiono podstawowe pojęcia związane z tworzeniem oprogramowania na rynku międzynarodowym przy użyciu Visual Basic lub Visual C#.
 
  [Najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych do użytku na całym świecie](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Zawiera informacje na temat programowania dla użytkowników międzynarodowych, takich jak problemy z projektem i terminologia.

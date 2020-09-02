@@ -1,5 +1,5 @@
 ---
-title: Zadanie wiadomości | Dokumenty firmy Microsoft
+title: Zadanie komunikatu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,34 +19,34 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78865365"
 ---
 # <a name="message-task"></a>Komunikat — Zadanie
 
-Rejestruje komunikat podczas kompilacji.
+Rejestruje komunikat w trakcie kompilacji.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli `Message` opisano parametry zadania.
+ W poniższej tabeli opisano parametry `Message` zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`Importance`|Parametr `String` opcjonalny.<br /><br /> Określa znaczenie wiadomości. Ten parametr może mieć `high` `normal` wartość `low`, lub . Wartością domyślną jest `normal`.|
-|`Text`|Parametr `String` opcjonalny.<br /><br /> Tekst błędu do zalogowania.|
+|`Importance`|Opcjonalny `String` parametr.<br /><br /> Określa ważność komunikatu. Ten parametr może mieć wartość `high` `normal` lub `low` . Wartość domyślna to `normal`.|
+|`Text`|Opcjonalny `String` parametr.<br /><br /> Tekst błędu do zarejestrowania.|
 
 ## <a name="remarks"></a>Uwagi
 
- Zadanie `Message` umożliwia msbuild projektów do wystawiania komunikatów do rejestratorów na różnych etapach procesu kompilacji.
+ `Message`Zadanie pozwala projektom MSBuild wystawiać komunikaty do rejestratorów w różnych krokach procesu kompilacji.
 
- Jeśli `Condition` parametr zostanie `true`obliczony na `Text` , wartość parametru zostanie zarejestrowana, a kompilacja będzie nadal wykonywana. Jeśli `Condition` parametr nie istnieje, tekst wiadomości jest rejestrowany. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).
+ Jeśli `Condition` parametr daje w to `true` , wartość `Text` parametru zostanie zarejestrowana, a kompilacja będzie kontynuowana. Jeśli `Condition` parametr nie istnieje, tekst komunikatu jest rejestrowany. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [pobieranie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Domyślnie wiadomość jest wysyłana do wszystkich zarejestrowanych rejestratorów. Rejestrator interpretuje `Importance` parametr. Zazwyczaj komunikat ustawiony jest `high` wysyłany, gdy szczegółowość rejestratora <xref:Microsoft.Build.Framework.LoggerVerbosity>jest ustawiona na .`Minimal` lub wyższe. Komunikat ustawiony `low` na jest wysyłany, gdy szczegółowość <xref:Microsoft.Build.Framework.LoggerVerbosity>rejestratora jest ustawiona na . `Detailed`.
+ Domyślnie komunikat jest wysyłany do wszystkich zarejestrowanych rejestratorów. Rejestrator interpretuje `Importance` parametr. Zwykle komunikat `high` jest wysyłany, gdy poziom szczegółowości rejestratora jest ustawiony na <xref:Microsoft.Build.Framework.LoggerVerbosity> .`Minimal` lub wyższy. Wiadomość ustawiona na `low` jest wysyłana, gdy poziom szczegółowości rejestratora jest ustawiony na <xref:Microsoft.Build.Framework.LoggerVerbosity> . `Detailed`
 
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 
@@ -64,5 +64,5 @@ Rejestruje komunikat podczas kompilacji.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)
 - [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)

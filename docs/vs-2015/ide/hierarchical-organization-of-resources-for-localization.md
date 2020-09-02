@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0a79caca18c7813605ff851eea6bda642e6300a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645612"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Hierarchiczna organizacja zasobów do lokalizacji
@@ -50,4 +50,4 @@ W programie Visual Studio zlokalizowane zasoby (dane, takie jak ciągi i obrazy 
   ![Grafika NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")
 
 ## <a name="see-also"></a>Zobacz też
- [Neutralne Języki zasobów dla zabezpieczeń lokalizacji](../ide/neutral-resources-languages-for-localization.md) [i zlokalizowanych zestawów satelickich](../ide/security-and-localized-satellite-assemblies.md) [lokalizowania aplikacji](../ide/localizing-applications.md) [globalizacji i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md) [instrukcje: Ustawianie kultury i kulturę interfejsu użytkownika dla Windows Forms Globalizacja](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0) [How to: Set kulturę i kulturę interfejsu użytkownika dla globalizacji strony sieci Web ASP.NET](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)
+ [Neutralne Języki zasobów dla](../ide/neutral-resources-languages-for-localization.md) [zabezpieczeń lokalizacji i zlokalizowanych zestawów satelickich](../ide/security-and-localized-satellite-assemblies.md) [Localizing Applications](../ide/localizing-applications.md) , które umożliwiają [globalizację aplikacji i lokalizowanie aplikacji,](../ide/globalizing-and-localizing-applications.md) [jak: ustawić kulturę i kultury interfejsu użytkownika dla Windows Forms globalizacja](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0) [How to: Set kulturę i kulturę interfejsu użytkownika dla ASP.NET globalizacji strony sieci Web](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)

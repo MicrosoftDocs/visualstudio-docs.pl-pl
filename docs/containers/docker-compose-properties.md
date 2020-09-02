@@ -7,10 +7,10 @@ ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: reference
 ms.openlocfilehash: 6d352461fd6ad96ae40d9c38a250c93018b1cd9a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283154"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose właściwości kompilacji
@@ -36,12 +36,12 @@ W poniższej tabeli przedstawiono właściwości programu MSBuild dostępne dla 
 | Nazwa właściwości | Lokalizacja | Opis | Wartość domyślna  |
 |---------------|----------|-------------|----------------|
 |AdditionalComposeFilePaths|dcproj|Określa dodatkowe pliki redagowania na liście rozdzielanej średnikami do wysłania do docker-compose.exe dla wszystkich poleceń. Ścieżki względne z pliku projektu platformy Docker (dcproj) są dozwolone.|-|
-|DockerComposeBaseFilePath|dcproj|Określa pierwszą część nazw plików w plikach do redagowania platformy Docker bez rozszerzenia *. yml* . Przykład: <br>1. DockerComposeBaseFilePath = null/undefined: Użyj podstawowej ścieżki pliku *Docker-Zredaguj*, a pliki będą nazwane *Docker-Compose. yml* i *Docker-Compose. override. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: pliki będą nazwane *mydockercompose. yml* i *mydockercompose. override. yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose*: pliki będą mieć jeden poziom. |Docker-Compose|
-|DockerComposeBuildArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do `docker-compose build` polecenia. Na przykład: `--parallel --pull` |
-|DockerComposeDownArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do `docker-compose down` polecenia. Na przykład: `--timeout 500`|-|  
+|DockerComposeBaseFilePath|dcproj|Określa pierwszą część nazw plików w plikach do redagowania platformy Docker bez rozszerzenia *. yml* . Na przykład: <br>1. DockerComposeBaseFilePath = null/undefined: Użyj podstawowej ścieżki pliku *Docker-Zredaguj*, a pliki będą nazwane *Docker-Compose. yml* i *Docker-Compose. override. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: pliki będą nazwane *mydockercompose. yml* i *mydockercompose. override. yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose*: pliki będą mieć jeden poziom. |Docker-Compose|
+|DockerComposeBuildArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do `docker-compose build` polecenia. Na przykład `--parallel --pull` |
+|DockerComposeDownArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do `docker-compose down` polecenia. Na przykład `--timeout 500`|-|  
 |DockerComposeProjectPath|CSPROJ lub vbproj|Ścieżka względna do pliku platformy Docker-redagowanie projektu (dcproj). Ustaw tę właściwość podczas publikowania projektu usługi, aby znaleźć skojarzone ustawienia kompilacji obrazu przechowywane w pliku Docker-Compose. yml.|-|
-|DockerComposeUpArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do `docker-compose up` polecenia. Na przykład: `--timeout 500`|-|
-|DockerDevelopmentMode|dcproj| Kontroluje, czy jest włączona optymalizacja "Kompiluj-on-host" (debugowanie w trybie szybkim).  Dozwolone wartości są **szybkie** i **regularne**. | Fast |
+|DockerComposeUpArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do `docker-compose up` polecenia. Na przykład `--timeout 500`|-|
+|DockerDevelopmentMode|dcproj| Kontroluje, czy jest włączona optymalizacja "Kompiluj-on-host" (debugowanie w trybie szybkim).  Dozwolone wartości są **szybkie** i **regularne**. | Duża |
 |DockerLaunchAction| dcproj | Określa akcję uruchamiania do wykonania na F5 lub CTRL + F5.  Dozwolone wartości to None, LaunchBrowser i LaunchWCFTestClient|Brak|
 |DockerLaunchBrowser| dcproj | Wskazuje, czy ma zostać uruchomiona przeglądarka. Ignorowany, jeśli określono DockerLaunchAction. | Fałsz |
 |DockerServiceName| dcproj|Jeśli określono DockerLaunchAction lub DockerLaunchBrowser, DockerServiceName jest nazwą usługi, która powinna zostać uruchomiona.  Użyj tej właściwości, aby określić, który z potencjalnie wielu projektów, do których może się odwoływać plik platformy Docker, zostanie uruchomiony.|-|
@@ -135,4 +135,4 @@ Aby uzyskać ogólne informacje na temat właściwości programu MSBuild, zobacz
 
 [Ustawienia uruchamiania narzędzi kontenera](container-launch-settings.md)
 
-[Właściwości zarezerwowane i dobrze znane dla programu MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)
+[Zarezerwowane i dobrze znane właściwości programu MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

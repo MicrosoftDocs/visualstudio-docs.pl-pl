@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a80488408f680530ed3c9b4094b2997e97484ce3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544446"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Wskazówki: powiązywanie kontrolek zawartości z niestandardowymi częściami XML
@@ -61,7 +61,7 @@ ms.locfileid: "85544446"
 
 1. Utwórz projekt dokumentu programu Word o nazwie **EmployeeControls**. Utwórz nowy dokument dla rozwiązania. Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]otwiera nowy dokument programu Word w Projektancie i dodaje projekt **EmployeeControls** do **Eksplorator rozwiązań**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] otwiera nowy dokument programu Word w Projektancie i dodaje projekt **EmployeeControls** do **Eksplorator rozwiązań**.
 
 ## <a name="add-content-controls-to-the-document"></a>Dodawanie kontrolek zawartości do dokumentu
  Utwórz tabelę zawierającą trzy różne typy kontrolek zawartości, w których użytkownik może wyświetlać lub edytować informacje o pracowniku.
@@ -148,7 +148,7 @@ ms.locfileid: "85544446"
 
      Zostanie otwarty projektant schematów.
 
-4. W **Eksplorator rozwiązań**Otwórz menu skrótów dla **Employees. xsd**, a następnie wybierz polecenie **Wyświetl kod**.
+4. W **Eksplorator rozwiązań**Otwórz menu skrótów dla  **Employees. xsd**, a następnie wybierz polecenie  **Wyświetl kod**.
 
 5. Zastąp zawartość pliku **Employees. xsd** następującym schematem.
 
@@ -225,7 +225,7 @@ ms.locfileid: "85544446"
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>Aby dodać niestandardową część XML do dokumentu
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla **ThisDocument.cs** lub **ThisDocument. vb**, a następnie wybierz polecenie **Wyświetl kod**.
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla  **ThisDocument.cs** lub **ThisDocument. vb**, a następnie wybierz polecenie **Wyświetl kod**.
 
 2. Dodaj następujące deklaracje do `ThisDocument` klasy. Ten kod deklaruje kilka obiektów, które zostaną użyte do dodania niestandardowej części XML do dokumentu.
 

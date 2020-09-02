@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cd1781b133b4c3ee95b4207a0dd237e2dd7298a1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685651"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ten interfejs zapewnia dostęp do informacji o serwerze, który proces jest uruchomiony w.  
+Ten interfejs zapewnia dostęp do informacji o serwerze, na którym jest uruchomiony proces.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,29 +34,29 @@ IDebugCoreServer3 : IDebugCoreServer2
  Program Visual Studio implementuje ten interfejs.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Użyj [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) uzyskać ten interfejs z [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) interfejsu. Wywołanie [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) może również zwracać ten interfejs. Ten interfejs jest używany przez dostawcę numery portów w większości przypadków można uruchomić programy na serwerze (lokalnego lub zdalnego).  
+ Użyj [polecenia QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) , aby uzyskać ten interfejs z interfejsu [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) . Wywołanie metody [getserver](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) może również zwrócić ten interfejs. Ten interfejs jest najczęściej używany przez niestandardowego dostawcę portu do uruchamiania programów na serwerze (lokalna lub zdalna).  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- Oprócz metod na [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) interfejsu, ten interfejs implementuje następujące metody:  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ Oprócz metod interfejsu [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) , ten interfejs implementuje następujące metody:  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)|Pobiera nazwę serwera.|  
-|[GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)|Pobiera wersję przyjazną nazwę serwera|  
-|[EnableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-enableautoattach.md)|Informuje aparaty debugowania określonych umożliwia automatyczne dołączanie do procesów, po uruchomieniu tych procesów.|  
-|[DiagnoseWebDebuggingError](../../../extensibility/debugger/reference/idebugcoreserver3-diagnosewebdebuggingerror.md)|Pobiera określonego kodu błędu, gdy automatyczne dołączanie kończy się niepowodzeniem.|  
+|[GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)|Pobiera przyjazną wersję nazwy serwera|  
+|[EnableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-enableautoattach.md)|Instruuje określone aparaty debugowania, aby automatycznie dołączać do procesów, gdy te procesy zostały uruchomione.|  
+|[DiagnoseWebDebuggingError](../../../extensibility/debugger/reference/idebugcoreserver3-diagnosewebdebuggingerror.md)|Pobiera określony kod błędu, jeśli automatyczne dołączanie nie powiedzie się.|  
 |[CreateInstanceInServer](../../../extensibility/debugger/reference/idebugcoreserver3-createinstanceinserver.md)|Tworzy wystąpienie aparatu debugowania na serwerze.|  
-|[QueryIsLocal](../../../extensibility/debugger/reference/idebugcoreserver3-queryislocal.md)|Pobiera flagę wskazującą, czy serwer znajduje się na tym samym komputerze, co obiekt wywołujący.|  
-|[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)|Pobiera wartość wskazującą, protokół używany do komunikacji z serwerem.|  
-|[DisableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-disableautoattach.md)|Wyłącza wszystkie automatyczne dołączanie ustawienia dla wszystkich aparaty debugowania, który zna tego serwera.|  
+|[QueryIsLocal](../../../extensibility/debugger/reference/idebugcoreserver3-queryislocal.md)|Pobiera flagę wskazującą, czy serwer znajduje się na tym samym komputerze co obiekt wywołujący.|  
+|[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)|Pobiera wartość wskazującą protokół używany do komunikacji z serwerem.|  
+|[DisableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-disableautoattach.md)|Wyłącza wszystkie ustawienia automatyczne dołączania dla wszystkich aparatów debugowania, o których wie ten serwer.|  
   
 ## <a name="remarks"></a>Uwagi  
- Dostawca niestandardowy port otrzymuje [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) interfejsu w wywołaniu [zdarzeń](../../../extensibility/debugger/reference/idebugportevents2-event.md). `IDebugCoreServer3` Interfejsu można uzyskać z interfejsu.  
+ Dostawca portu niestandardowego odbiera Interfejs [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) w wywołaniu [zdarzenia](../../../extensibility/debugger/reference/idebugportevents2-event.md). `IDebugCoreServer3`Interfejs można uzyskać z tego interfejsu.  
   
 ## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -1,5 +1,5 @@
 ---
-title: Widok drzewa wywołań - dane Instrumentacji | Dokumentacja firmy Microsoft
+title: Widok drzewa wywołań — dane Instrumentacji | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,81 +12,81 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 385d12550692f5f27521afe4dea12e5bdb0aa9d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147930"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Widok drzewa wywołań — dane instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wartości dla funkcji w drzewie wywołań wskazują godzinę dla wystąpień funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań. Wartości procentowe są obliczane przez porównanie wartości wystąpień funkcji łączny całkowity czas, który upłynął, wszystkich funkcji w trakcie uruchomienia profilowania.  
+Wartości funkcji w drzewie wywołania wskazują czas dla wystąpień funkcji, które zostały wywołane przez funkcję nadrzędną w drzewie wywołań. Wartości procentowe są obliczane przez porównanie wartości wystąpień funkcji z łącznym czasem trwania wszystkich funkcji w przebiegu profilowania.  
   
 ## <a name="general"></a>Ogólne  
- Ogólne kolumn identyfikować ich funkcję w wierszu widoku.  
+ Kolumny ogólne identyfikują funkcję w wierszu widoku.  
   
 |Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa funkcji**|Nazwa funkcji.|  
 |**Adres funkcji**|Adres funkcji.|  
 |**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
-|**Liczba wywołań**|Całkowita liczba wywołań, które zostały wprowadzone do tej funkcji.|  
+|**Liczba połączeń**|Całkowita liczba wywołań wykonanych dla tej funkcji.|  
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|  
-|**Nazwa modułu**|Nazwa modułu, która zawiera funkcję.|  
-|**Ścieżka modułu**|Ścieżka modułu, która zawiera funkcję.|  
-|**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|  
+|**Nazwa modułu**|Nazwa modułu, który zawiera funkcję.|  
+|**Ścieżka modułu**|Ścieżka modułu, który zawiera funkcję.|  
+|**Identyfikator procesu**|Identyfikator procesu (PID) przebiegu profilowania.|  
 |**Nazwa procesu**|Nazwa, która jest przypisana do procesu.|  
-|**Narzut sondy czasu wyłącznego**|Narzut czasu dla tej funkcji, które zostało spowodowane przez Instrumentację. Narzut sondy odjęciu z cały czas wyłączny.|  
-|**Narzut sondy czasu Włącznego**|Narzut czasu dla tej funkcji i jej funkcji podrzędnych, które zostało spowodowane przez Instrumentację. Narzut sondy odjęciu z cały czas (włącznie).|  
-|**Poziom**|Głębokość funkcji w drzewie wywołań. Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|  
+|**Obciążenie sondy czasu wyłącznego**|Narzut czasu dla tej funkcji, który został spowodowany przez instrumentację. Narzuty sondowania zostały odjęte od wszystkich wyłączeń.|  
+|**Narzut sondy czasu włącznego**|Narzut czasu dla tej funkcji i jej funkcji podrzędnych, która została spowodowana przez instrumentację. Narzuty sondowania zostały odjęte od wszystkich czasów włączania.|  
+|**Poziomie**|Głębokość funkcji w drzewie wywołań. Tylko w raportach wiersza polecenia [VSPerfReport](../profiling/vsperfreport.md) .|  
   
-## <a name="elapsed-inclusive-values"></a>Upłynęło włącznie wartości  
- Upłynęło wartości włącznie wskazują godzinę na stosie wywołań wystąpień tych funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań. Czas obejmuje czas spędzony w funkcji podrzędnych, które zostały wywołane przez funkcję, jak i w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.  
-  
-|Kolumna|Opis|  
-|------------|-----------------|  
-|**Całkowity czas, który upłynął**|Łączny całkowity czas wszystkie wywołania do tej funkcji, w tym kontekście, który upłynął.|  
-|**% Całkowitego czasu, który upłynął**|Wartość procentowa całkowity czas całkowity czas uruchomienia profilowania przeznaczony całkowity czas całkowity czas tej funkcji, w tym kontekście.|  
-|**Średnia liczba upłynęło włącznie czasu**|Średni całkowity czas wywołania tej funkcji, w tym kontekście, który upłynął.|  
-|**Maksymalny czas, który upłynął (włącznie)**|Maksymalny całkowity czas wywołania tej funkcji, w tym kontekście, który upłynął.|  
-|**Min upłynęło włącznie czasu**|Minimalny całkowity czas wywołania tej funkcji, w tym kontekście, który upłynął.|  
-  
-## <a name="elapsed-exclusive-values"></a>Czas wyłączny wartości  
- Czas wyłączny wartości wskazują czasu wystąpień funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań zostały wykonywanie kodu w treści funkcji; oznacza to, kiedy funkcja znajdowała się w górnej części stosu wywołań. Czas obejmuje czas w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia. Jednak podczas nie obejmuje czas spędzony w funkcji podrzędnych, które zostały wywołane przez funkcję.  
+## <a name="elapsed-inclusive-values"></a>Wartości włączne, które upłynęły  
+ Wartości włączne, które upłynęły, wskazują na czas w stosie wywołań tych wystąpień funkcji, które zostały wywołane przez funkcję nadrzędną w drzewie wywołań. Czas obejmuje czas spędzony w funkcjach podrzędnych, które zostały wywołane przez funkcję i w wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia.  
   
 |Kolumna|Opis|  
 |------------|-----------------|  
-|**Czas wyłączny, który upłynął**|Suma własny czas wszystkie wywołania do tej funkcji, w tym kontekście, który upłynął.|  
-|**% Wyłącznego czasu, który upłynął**|Łączny czas wyłączny czas tej funkcji, w tym kontekście przeznaczony procent całkowity czas własny czas uruchomienia profilowania.|  
-|**Średnia liczba upłynęło wyłącznie czasu**|Średni własny czas wywołania tej funkcji, w tym kontekście, który upłynął.|  
-|**Maksymalny czas wyłączny, który upłynął**|Maksymalny własny czas wywołania tej funkcji, w tym kontekście, który upłynął.|  
-|**Min upłynęło wyłącznie czasu**|Minimalny własny czas wywołania tej funkcji, w tym kontekście, który upłynął.|  
+|**Czas włączny, który upłynął**|Łączny czas, który upłynął włącznie dla wszystkich wywołań tej funkcji w tym kontekście.|  
+|**% Czasu włącznego, który upłynął**|Wartość procentowa łącznego czasu trwania przebiegu profilowania w łącznym czasie trwania tej funkcji w tym kontekście.|  
+|**Średni łączny czas, który upłynął**|Średni czas włączny, który upłynął w tym kontekście w przypadku wywołania tej funkcji.|  
+|**Maksymalny łączny czas, który upłynął**|Maksymalny łączny czas, który upłynął w przypadku wywołania tej funkcji w tym kontekście.|  
+|**Minimalny łączny czas, który upłynął**|Minimalny łączny czas, który upłynął w przypadku wywołania tej funkcji w tym kontekście.|  
   
-## <a name="application-inclusive-values"></a>Wartości Włączne aplikacji  
- Aplikacji wartości włącznie wskazują czas wystąpień funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań znajdowały się w stosie wywołań. Czas nie obejmuje czas spędzony w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia, jednak czas uwzględnia czas spędzony w funkcji podrzędnych, które zostały wywołane przez funkcję.  
+## <a name="elapsed-exclusive-values"></a>Wartości wyłączne, które upłynęły  
+ Wykluczone wartości wskazują czas, przez jaki te wystąpienia funkcji, które zostały wywołane przez funkcję nadrzędną w drzewie wywołań, wykonywały kod w treści funkcji. oznacza to, że gdy funkcja znajduje się w górnej części stosu wywołań. Czas obejmuje czas wywołań systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia. Jednak czas nie obejmuje czasu spędzonego w funkcjach podrzędnych, które zostały wywołane przez funkcję.  
   
 |Kolumna|Opis|  
 |------------|-----------------|  
-|**Całkowity czas aplikacji**|Łączny całkowity czas aplikacji dla wszystkich wywołań tej funkcji, w tym kontekście.|  
-|**% Całkowitego czasu aplikacji**|Wartość procentowa całkowity czas całkowity czas uruchomienia profilowania był poświęcony w kompletnej aplikacji, całkowity czas tej funkcji, w tym kontekście.|  
-|**Średni całkowity czas aplikacji**|Średni całkowity czas aplikacji wywołania tej funkcji, w tym kontekście.|  
-|**Maksymalny całkowity czas aplikacji**|Maksymalny całkowity czas aplikacji wywołania tej funkcji, w tym kontekście.|  
-|**Minimalny całkowity czas aplikacji**|Minimalny całkowity czas aplikacji wywołania tej funkcji, w tym kontekście.|  
+|**Czas wyłączny, który upłynął**|Łączny czas wyłączny wszystkich wywołań tej funkcji w tym kontekście.|  
+|**% Czasu wyłącznego, który upłynął**|Wartość procentowa całkowitego czasu, który upłynął w przypadku uruchomienia profilowania w łącznym czasie trwania tej funkcji w tym kontekście.|  
+|**Średni czas wyłączny, który upłynął**|Średni czas wyłączny dla wywołania tej funkcji w tym kontekście.|  
+|**Maksymalny czas wyłączny, który upłynął**|Maksymalny czas wyłączny w wywołaniu tej funkcji w tym kontekście.|  
+|**Minimalny czas, który upłynął**|Minimalny czas, który upłynął w przypadku wywołania tej funkcji w tym kontekście.|  
+  
+## <a name="application-inclusive-values"></a>Wartości włączne aplikacji  
+ Wartości włącznie obejmują czas, przez jaki wystąpienia funkcji, które zostały wywołane przez funkcję nadrzędną w drzewie wywołań, były na stosie wywołań. Czas nie obejmuje czasu spędzonego w wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia, jednak czas ten obejmuje czas spędzony w funkcjach podrzędnych, które zostały wywołane przez funkcję.  
+  
+|Kolumna|Opis|  
+|------------|-----------------|  
+|**Czas włączny aplikacji**|Łączny czas (włącznie) wszystkich wywołań tej funkcji w tym kontekście.|  
+|**% Włącznego czasu aplikacji**|Wartość procentowa łącznego czasu trwania przebiegu profilowania, która została wykorzystana w łącznym czasie włącznie aplikacji w tym kontekście.|  
+|**Średni czas włączny aplikacji**|Średni czas włączny aplikacji wywołania tej funkcji w tym kontekście.|  
+|**Maksymalny czas włączny aplikacji**|Maksymalny czas włączny aplikacji wywołania tej funkcji w tym kontekście.|  
+|**Minimalny czas włączny aplikacji**|Minimalny czas włączny aplikacji w tym kontekście w przypadku wywołania tej funkcji.|  
   
 ## <a name="application-exclusive-values"></a>Wartości wyłączne aplikacji  
- Aplikacja wyłączne wartości wskazują czasu, że wystąpień funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań bezpośrednio wykonywały kod w treści funkcji; oznacza to, kiedy funkcja znajdowała się w górnej części stosu wywołań. Czas nie obejmuje czas spędzony w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia. Ponadto nie obejmuje czas spędzony w funkcji podrzędnych, które zostały wywołane przez funkcję.  
+ Wartości wyłączne aplikacji wskazują czas, przez jaki te wystąpienia funkcji, które zostały wywołane przez funkcję nadrzędną w drzewie wywołań, były bezpośrednio wykonywane w treści funkcji. oznacza to, że gdy funkcja znajduje się w górnej części stosu wywołań. Czas nie obejmuje czasu spędzonego w wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia. Nie obejmuje to również czasu spędzonego w funkcjach podrzędnych, które zostały wywołane przez funkcję.  
   
 |Kolumna|Opis|  
 |------------|-----------------|  
-|**Własny czas aplikacji**|Łączna liczba własny czas aplikacji dla wszystkich wywołań tej funkcji, w tym kontekście.|  
-|**% Własnego czasu aplikacji**|Wartość procentowa całkowity czas własny czas uruchomienia profilowania przeznaczony własny czas aplikacji całkowita tej funkcji, w tym kontekście.|  
-|**Średni własny czas aplikacji**|Średni własny czas aplikacji wywołania tej funkcji, w tym kontekście.|  
-|**Maksymalny własny czas aplikacji**|Maksymalny własny czas aplikacji wywołania tej funkcji, w tym kontekście.|  
-|**Minimalny własny czas aplikacji**|Minimalny własny czas aplikacji wywołania tej funkcji, w tym kontekście.|  
+|**Czas wyłączny aplikacji**|Łączny czas wyłączny aplikacji wszystkich wywołań tej funkcji w tym kontekście.|  
+|**% Wyłącznego czasu aplikacji**|Wartość procentowa całkowitego czasu, który upłynął w przypadku uruchomienia profilowania, który został spędzony w łącznym czasie trwania tej funkcji aplikacji w tym kontekście.|  
+|**Średni czas wyłączny aplikacji**|Średni czas wyłączny aplikacji wywołania tej funkcji w tym kontekście.|  
+|**Maksymalny czas wyłączny aplikacji**|Maksymalny czas wyłączny aplikacji wywołania tej funkcji w tym kontekście.|  
+|**Minimalny czas wyłączny aplikacji**|Minimalny czas wyłączny aplikacji w wywołaniu tej funkcji w tym kontekście.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
+ [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok drzewa wywołań](../profiling/call-tree-view-sampling-data.md)   
- [Widok drzewa wywołań - Instrumentacja](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [Widok drzewa wywołań — Próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+ [Widok drzewa wywołań-Instrumentacja](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+ [Widok drzewa wywołań — próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

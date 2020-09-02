@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 21e6478bb0f02383066a2c63dad1bdaf980a0b5b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985672"
 ---
 # <a name="outlook-solutions"></a>rozwiązania programu Outlook
@@ -38,9 +38,9 @@ ms.locfileid: "72985672"
  Aby uzyskać więcej informacji na temat sposobu tworzenia projektu dodatku VSTO, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Aby uzyskać więcej informacji o szablonach projektów, zobacz [Office Project Templates Overview](../vsto/office-project-templates-overview.md).
 
 ## <a name="outlook-vsto-add-in-programming-model"></a>Model programowania dodatku programu Outlook VSTO
- Podczas tworzenia projektu dodatku VSTO programu Outlook program Visual Studio generuje klasę o nazwie `ThisAddIn`, która jest podstawą rozwiązania. Ta klasa udostępnia punkt wyjścia do pisania kodu, a także udostępnia model obiektów programu Outlook do dodatku VSTO.
+ Podczas tworzenia projektu dodatku VSTO programu Outlook program Visual Studio generuje klasę o nazwie `ThisAddIn` , która jest podstawą rozwiązania. Ta klasa udostępnia punkt wyjścia do pisania kodu, a także udostępnia model obiektów programu Outlook do dodatku VSTO.
 
- Aby uzyskać więcej informacji na temat klasy `ThisAddIn` i innych funkcji, których można użyć w dodatku narzędzi VSTO, zobacz [dodatek narzędzi VSTO dla programu](../vsto/programming-vsto-add-ins.md).
+ Aby uzyskać więcej informacji o `ThisAddIn` klasie i innych funkcjach, których można użyć w dodatku narzędzi VSTO, zobacz [dodatek narzędzi VSTO dla programu](../vsto/programming-vsto-add-ins.md).
 
 ## <a name="automate-outlook-by-using-the-outlook-object-model"></a>Automatyzowanie programu Outlook przy użyciu modelu obiektów programu Outlook
  Model obiektów programu Outlook ujawnia wiele typów, których można użyć do automatyzowania programu Outlook. Te typy umożliwiają pisanie kodu w celu wykonywania typowych zadań:
@@ -64,7 +64,7 @@ ms.locfileid: "72985672"
 
  Aby uzyskać więcej informacji na temat dostosowywania interfejsu użytkownika programu Outlook i innych aplikacji Microsoft Office, zobacz temat [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).
 
-## <a name="related-topics"></a>Tematy pokrewne
+## <a name="related-topics"></a>Powiązane tematy
 
 |Tytuł|Opis|
 |-----------|-----------------|

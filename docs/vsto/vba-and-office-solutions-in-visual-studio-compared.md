@@ -1,5 +1,5 @@
 ---
-title: Rozwiązania VBA i pakietu Office w Visual Studio
+title: Język VBA i rozwiązania pakietu Office w programie Visual Studio
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,42 +14,42 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 24e7d3674712a17d940b94637db808c0d91d2d6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62982119"
 ---
-# <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Rozwiązania VBA i pakietu Office w Visual Studio
-  Microsoft Visual Basic for Applications (VBA) używa kod niezarządzany, który jest ściśle zintegrowany z aplikacjami pakietu Office. Projekty programu Microsoft Office utworzone przy użyciu programu Visual Studio umożliwiają korzystanie z zalet platformy .NET Framework i narzędzi projektowania programu Visual Studio.
+# <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Język VBA i rozwiązania pakietu Office w programie Visual Studio
+  Program Microsoft Visual Basic for Applications (VBA) korzysta z niezarządzanego kodu, który jest ściśle zintegrowany z aplikacjami pakietu Office. Projekty Microsoft Office utworzone za pomocą programu Visual Studio umożliwiają korzystanie z narzędzi do projektowania .NET Framework i programu Visual Studio.
 
- Aby uzyskać informacji na temat typów rozwiązań dla pakietu Office, można utworzyć przy użyciu programu Visual Studio, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
+ Aby uzyskać informacje na temat typów rozwiązań biurowych, które można utworzyć przy użyciu programu Visual Studio, zobacz [Omówienie tworzenia rozwiązań pakietu office &#40;narzędzi VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
 ## <a name="comparison"></a>Porównanie
- Poniższa tabela zawiera podstawowe porównanie rozwiązań VBA i rozwiązania pakietu Office w programie Visual Studio.
+ Poniższa tabela zawiera podstawowe porównanie rozwiązań w języku VBA i rozwiązań pakietu Office w programie Visual Studio.
 
-|Rozwiązania VBA|Rozwiązań pakietu Office w Visual Studio|
+|Rozwiązania VBA|Rozwiązania pakietu Office w programie Visual Studio|
 |-------------------|---------------------------------------|
-|Używa kodu, który jest połączony i utrwalane z określonym dokumentem.|Używa kodu, które były przechowywane osobno od dokumentu (dla dostosowania na poziomie dokumentu), lub w zestawie, który jest ładowany przez aplikację (dla dodatków narzędzi VSTO).|
-|Współdziałanie z usługami modele obiektów pakietu Office i interfejsy API języka VBA.|Zapewnia dostęp do obu modele obiektów pakietu Office i [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] interfejsów API.|
-|Zaprojektowana na potrzeby rejestrowanie makra i środowiska deweloperów uproszczone.|Zaprojektowana na potrzeby zabezpieczeń, łatwiejsze utrzymanie kodu i możliwość używania pełnej programu Visual Studio zintegrowane środowisko programistyczne (IDE).|
-|Działa dobrze dla rozwiązania, które korzystają ze ścisłej integracji z aplikacjami pakietu Office.|Działa dobrze dla rozwiązania, które korzystają z zasobów stanowych programu Visual Studio i [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].|
-|Ma ograniczenia w organizacji, szczególnie w zakresie zabezpieczeń i wdrażania.|Przeznaczony do użytku w przedsiębiorstwie.|
+|Używa kodu, który jest połączony z określonym dokumentem i utrwalał go.|Używa kodu, który jest przechowywany niezależnie od dokumentu (dla dostosowań na poziomie dokumentu) lub w zestawie, który jest ładowany przez aplikację (dla dodatków VSTO).|
+|Współpracuje z modelami obiektów pakietu Office i interfejsami API języka VBA.|Zapewnia dostęp zarówno do modeli obiektów pakietu Office, jak i [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] interfejsów API.|
+|Zaprojektowana na potrzeby rejestrowania makr i uproszczonego środowiska deweloperskiego.|Zaprojektowana pod kątem bezpieczeństwa, łatwiejszej konserwacji kodu i możliwości korzystania z pełnego zintegrowanego środowiska programistycznego (IDE) programu Visual Studio.|
+|Dobrze sprawdza się w przypadku rozwiązań, które korzystają z ścisłej integracji z aplikacjami pakietu Office.|Dobrze sprawdza się w przypadku rozwiązań, które korzystają z pełnych zasobów programu Visual Studio i [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] .|
+|Ma ograniczenia dotyczące przedsiębiorstwa, szczególnie w zakresie zabezpieczeń i wdrażania.|Przeznaczone do użycia w przedsiębiorstwie.|
 
- Niektóre elementy są nadal prostsze szybko za pomocą języka VBA. Ściślej mówiąc możesz chcieć kontynuować korzystanie z języka VBA do:
+ Niektóre rzeczy są nadal łatwiejsze w użyciu języka VBA. W odniesieniu do programu można nadal używać języka VBA dla:
 
-- Funkcje niestandardowe arkusza.
+- Niestandardowe funkcje arkusza.
 
-- Rejestrowanie makra.
+- Rejestrowanie makr.
 
-## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>Łączenie VBA rozwiązań i rozwiązań pakietu Office utworzonych przy użyciu programu Visual Studio
- Możesz wywołać kod VBA z rozwiązań pakietu Office utworzonych przy użyciu programu Visual Studio, a kod można również wywołać w rozwiązaniach pakietu Office utworzone przy użyciu programu Visual Studio z języka VBA. Technika określonych różnią się zależnie od tego, czy rozwiązania pakietu Office jest dodatku narzędzi VSTO dla programów lub dostosowywania poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) i [łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md).
+## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>Łączenie rozwiązań VBA i rozwiązań pakietu Office utworzonych przy użyciu programu Visual Studio
+ Możesz wywołać kod VBA z rozwiązań pakietu Office utworzonych przy użyciu programu Visual Studio, a także wywołać kod w rozwiązaniach pakietu Office utworzonych przy użyciu programu Visual Studio z języka VBA. Konkretna technika różni się w zależności od tego, czy rozwiązanie pakietu Office jest dodatkiem narzędzia VSTO, czy też dostosowaniu na poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) i [łączenie języka VBA i dostosowań na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md).
 
-## <a name="see-also"></a>Zobacz także
-- [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+## <a name="see-also"></a>Zobacz też
+- [Omówienie programowania rozwiązań dla pakietu Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
-- [Łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md)
-- [Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)
+- [Łączenie języka VBA i dostosowań na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md)
+- [Architektura dostosowań na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)
 - [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)
-- [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

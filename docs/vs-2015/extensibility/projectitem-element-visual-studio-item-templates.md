@@ -1,5 +1,5 @@
 ---
-title: Projectitem — Element (szablony elementów Visual Studio) | Dokumentacja firmy Microsoft
+title: ProjectItem, element (szablony elementów Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,19 +14,19 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4778603278bf07dc7b0a45544b4835d2ed2cbf8a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438363"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64780937"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem Element (szablony elementów Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Określa plik, który znajduje się w szablonie elementu.  
+Określa plik, który jest zawarty w szablonie elementu.  
   
 > [!NOTE]
-> `ProjectItem` Akceptuje różnych atrybutów w zależności od tego, czy szablon projektu lub elementu. W tym temacie opisano `ProjectItem` elementu dla elementu. Aby uzyskać informacje o `ProjectItem` element dla szablonów projektu, zobacz [ProjectItem, Element (szablony projektu Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
+> `ProjectItem`Element akceptuje różne atrybuty w zależności od tego, czy szablon dotyczy projektu lub elementu. W tym temacie objaśniono `ProjectItem` element dla elementu. Aby uzyskać wyjaśnienie `ProjectItem` elementu szablonów projektu, zobacz [ProjectItem element (szablony projektów Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
   
  \<VSTemplate>  
  \<TemplateContent>  
@@ -52,11 +52,11 @@ Określa plik, który znajduje się w szablonie elementu.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`SubType`|Atrybut opcjonalny.<br /><br /> Określa podtyp elementu w szablonie elementów wielu plików. Ta wartość służy do określania edytora, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] będzie używać, aby otworzyć element.|  
+|`SubType`|Atrybut opcjonalny.<br /><br /> Określa podtyp elementu w szablonie elementu wieloplikowego. Ta wartość służy do określenia edytora, który [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] będzie używany do otwierania elementu.|  
 |`CustomTool`|Atrybut opcjonalny.<br /><br /> Ustawia CustomTool dla elementu w pliku projektu.|  
 |`ItemType`|Atrybut opcjonalny.<br /><br /> Ustawia ItemType dla elementu w pliku projektu.|  
-|`ReplaceParameters`|Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element ma wartości parametrów, które muszą zostać przesłonięte, gdy projekt jest tworzony na podstawie tego szablonu. Wartość domyślna to `false`.|  
-|`TargetFileName`|Atrybut opcjonalny.<br /><br /> Określa nazwę elementu, który jest tworzone na podstawie szablonu. Ten atrybut jest przydatne w przypadku za pomocą zastąpienia parametrów do utworzenia nazwy elementu.|  
+|`ReplaceParameters`|Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element zawiera wartości parametrów, które muszą zostać zastąpione, gdy projekt jest tworzony na podstawie szablonu. Wartość domyślna to `false` .|  
+|`TargetFileName`|Atrybut opcjonalny.<br /><br /> Określa nazwę elementu, który jest tworzony na podstawie szablonu. Ten atrybut jest przydatny do tworzenia nazwy elementu przy użyciu zastąpienia parametrów.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  
@@ -70,21 +70,21 @@ Określa plik, który znajduje się w szablonie elementu.
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- A `string` reprezentujący nazwę pliku w pliku zip szablonu.  
+ `string`Reprezentuje nazwę pliku w pliku Template. zip.  
   
 ## <a name="remarks"></a>Uwagi  
- `ProjectItem` jest podrzędnym opcjonalne `TemplateContent`.  
+ `ProjectItem` jest opcjonalnym elementem podrzędnym `TemplateContent` .  
   
- `TargetFileName` Atrybut może służyć do zmiany nazwy plików z parametrami. Na przykład jeśli plik `MyFile.vb` istnieje w katalogu głównym pliku zip szablonu, ale chcesz plik miała nazwę oparty na nazwę pliku, dostarczone przez użytkownika w **Dodaj nowy element** okno dialogowe, należy użyć następujący kod XML:  
+ Ten `TargetFileName` atrybut może służyć do zmiany nazwy plików z parametrami. Jeśli na przykład plik `MyFile.vb` istnieje w katalogu głównym pliku Template. zip, ale plik ma być nazwany na podstawie nazwy pliku dostarczonej przez użytkownika w oknie dialogowym **Dodaj nowy element** , należy użyć następującego kodu XML:  
   
 ```  
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- Po utworzeniu elementu za pomocą tego szablonu, nazwa pliku będzie zależeć od nazwy użytkownik wprowadzi w **Dodaj nowy element** okno dialogowe. Jest to przydatne podczas tworzenia szablonów elementów wielu plików. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md) i [parametry szablonu](../ide/template-parameters.md).  
+ Gdy element jest tworzony na podstawie tego szablonu, nazwa pliku będzie oparta na nazwie wprowadzonej przez użytkownika w oknie dialogowym **Dodaj nowy element** . Jest to przydatne podczas tworzenia szablonów elementów wieloplikowych. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie szablonów elementów wieloplikowych](../ide/how-to-create-multi-file-item-templates.md) i [parametrów szablonu](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie pokazano metadanych dla szablonu elementu standardowego dla [!INCLUDE[csprcs](../includes/csprcs-md.md)] klasy.  
+ Poniższy przykład ilustruje metadane dla szablonu elementu standardowego dla [!INCLUDE[csprcs](../includes/csprcs-md.md)] klasy.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -103,7 +103,7 @@ Określa plik, który znajduje się w szablonie elementu.
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
+ [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Instrukcje: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md)   
+ [Instrukcje: Tworzenie szablonów elementów wieloplikowych](../ide/how-to-create-multi-file-item-templates.md)   
  [Parametry szablonu](../ide/template-parameters.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArgument | Dokumenty firmy Microsoft
+title: 'IDebugBinder3:: GetTypeArguments — | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b7667b06348c5e1b2865b24ab49095772808d6c4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735700"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
@@ -47,22 +47,22 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>Parametry
 `skip`\
-[w] Liczba pól do pominięcia przed uzyskaniem typów argumentów.
+podczas Liczba pól do pominięcia przed pobraniem typów argumentów.
 
 `count`\
-[w] Liczba pól argumentów do zwrócenia (określa również `ppFields` rozmiar tablicy).
+podczas Liczba pól argumentów do zwrócenia (określa również rozmiar `ppFields` tablicy).
 
 `ppFields`\
-[w, na zewnątrz] Tablica pól, które zostaną wypełnione po zwrocie tej metody.
+[in. out] Tablica pól, które będą wypełniane po powrocie tej metody.
 
 `pFetched`\
-[na zewnątrz] \(opcjonalnie) Liczba pól typu argumentów faktycznie zwróconych.
+[out] \( Opcjonalnie) liczba pól typu argumentu faktycznie zwróconych.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Liczbę typów argumentów można uzyskać wcześniej za pomocą [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
+ Liczbę typów argumentów można uzyskać wcześniej za pomocą [GetTypeArgumentCount —](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

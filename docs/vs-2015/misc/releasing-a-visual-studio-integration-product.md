@@ -1,5 +1,5 @@
 ---
-title: Zwalnianie produktu do integracji | Dokumentacja firmy Microsoft
+title: Zwalnianie produktu integracyjnego | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,21 +11,21 @@ ms.assetid: c94ed6a5-d5a2-40d3-b227-65318a3eb364
 caps.latest.revision: 17
 manager: jillfra
 ms.openlocfilehash: 5de6d500de86645ae7e86a7e69d2556168e9078a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686597"
 ---
-# <a name="releasing-a-visual-studio-integration-product"></a>Zwalnianie produktu integracji programu Visual Studio
-Tematy w tej sekcji pokazano, jak wersji produktu do integracji programu Visual Studio przez tworzenie i instalowanie pakietów VSPackage przy użyciu programu Visual Studio Integration testu (VSIT).
+# <a name="releasing-a-visual-studio-integration-product"></a>Zwalnianie produktu do integracji z programem Visual Studio
+W tematach w tej sekcji pokazano, jak zwolnić produkt do integracji z programem Visual Studio, kompilując i instalując pakietów VSPackage oraz używając testu integracji z programem Visual Studio (VSIT).
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Instalowanie pakietów VSPackage](../misc/installing-vspackages.md) w tym artykule omówiono sposób tworzenia i instalowania pakietów VSPackage i sposób obsługi użytkowników korzystających z wielu wersji programu Visual Studio, w tym samym czasie.
+ [Instalowanie pakietów VSPackage](../misc/installing-vspackages.md) W tym artykule omówiono sposób kompilowania i instalowania pakietów VSPackage oraz obsługi użytkowników, którzy uruchamiali wiele wersji programu Visual Studio w tym samym czasie.
 
- [Narzędzie RegPkg](../extensibility/internals/regpkg-utility.md) Opisuje narzędzie RegPkg, który jest używany do rejestrowania pakietu VSPackage i przygotować go do wdrożenia.
+ [Narzędzie RegPkg](../extensibility/internals/regpkg-utility.md) Opisuje narzędzie RegPkg, które służy do rejestrowania pakietu VSPackage i przygotowania go do wdrożenia.
 
- [Premier Partner wersji Instalatora i Podręcznik użytkownika](https://msdn.microsoft.com/8ee4dad7-95d3-4f2d-a8d4-3ba9a80ecae2) zapewnia VSIP w ramach której partnerzy z wersją pakiet redystrybucyjny programu Visual Studio zintegrowane środowisko programistyczne (IDE), w którym można dodawać własne narzędzia programistyczne i językami komputera.
+ [Instalator wersji Premium Partner Edition i Podręcznik użytkownika](https://msdn.microsoft.com/8ee4dad7-95d3-4f2d-a8d4-3ba9a80ecae2) Umożliwia partnerom VSIP z redystrybucyjną wersją zintegrowanego środowiska programistycznego (IDE) programu Visual Studio, dzięki czemu mogą oni dodawać własne narzędzia programistyczne i języki komputerowe.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Dostosowywanie testów za pomocą programu Visual Studio SDK](https://msdn.microsoft.com/9cf7a840-dd66-4b00-90f7-e00e40370a69) w tym artykule opisano sposób używania [!INCLUDE[esprtest](../includes/esprtest-md.md)] pakiet do tworzenia, zarządzania, edytować i uruchamiać testy i również uzyskać i przechowywać wyniki testu.
+ [Dostosowywanie do testowania przy użyciu zestawu Visual Studio SDK](https://msdn.microsoft.com/9cf7a840-dd66-4b00-90f7-e00e40370a69) Opisuje, jak używać [!INCLUDE[esprtest](../includes/esprtest-md.md)] pakietu do tworzenia, edytowania i uruchamiania testów oraz zarządzania nimi, a także uzyskiwania i przechowywania wyników testów.

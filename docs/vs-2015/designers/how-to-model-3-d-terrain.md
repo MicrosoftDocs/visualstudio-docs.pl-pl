@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ab202ed97ce2056313eb661d51d7150bb9689829
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664412"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Porady: model terenu 3-D
@@ -38,7 +38,7 @@ W tym dokumencie przedstawiono sposób użycia Edytora modelu do utworzenia mode
 
  Po zakończeniu model powinien wyglądać następująco:
 
- ![Scena 3&#45;D, która przedstawia model terenu](../designers/media/digit-terrain-model.png "Cyfra — model terenu")
+ ![3&#45;D sceny, która przedstawia model terenu](../designers/media/digit-terrain-model.png "Cyfra — model terenu")
 
  Przed rozpoczęciem upewnij się, że okno **Właściwości** i **Przybornik** są wyświetlane.
 
@@ -66,7 +66,7 @@ W tym dokumencie przedstawiono sposób użycia Edytora modelu do utworzenia mode
 
    Model terenu został ukończony. Oto ponownie ostateczny model z zastosowanym cieniowaniem podstawowego Phong:
 
-   ![Scena 3&#45;D, która przedstawia model terenu](../designers/media/digit-terrain-model.png "Cyfra — model terenu")
+   ![3&#45;D sceny, która przedstawia model terenu](../designers/media/digit-terrain-model.png "Cyfra — model terenu")
 
    Możesz użyć tego modelu terenu, aby zademonstrować efekt cieniowania gradientu, który jest opisany w [instrukcje: Tworzenie cieniowania gradientowego opartego na geometrii](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 

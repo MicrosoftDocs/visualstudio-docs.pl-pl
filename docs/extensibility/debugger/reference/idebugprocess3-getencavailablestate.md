@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetENCAvailableState | Dokumenty firmy Microsoft
+title: 'IDebugProcess3:: GetENCAvailableState | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 77345cfc3aa1dd95482052893e7c09591ad7cd4e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723644"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
-Ta metoda pobiera bieżący stan edycji i kontynuuj procesu. Niestandardowy dostawca portu `E_NOTIMPL`powinien zawsze zwracać .
+Ta metoda pobiera bieżący stan edycji i kontynuowania procesu. Niestandardowy dostawca portu zawsze powinien zwrócić `E_NOTIMPL` .
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,13 +41,13 @@ int GetENCAvailableState(
 
 ## <a name="parameters"></a>Parametry
 `pReason`\
-[na zewnątrz] Wartość z [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) wyliczenia.
+określoną Wartość z wyliczenia [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 > [!NOTE]
-> Niestandardowy dostawca portu `E_NOTIMPL`powinien zawsze zwracać .
+> Niestandardowy dostawca portu zawsze powinien zwrócić `E_NOTIMPL` .
 
 ## <a name="remarks"></a>Uwagi
  Na ten stan może mieć wpływ [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).

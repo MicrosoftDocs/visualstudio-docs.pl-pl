@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetEngineFilter | Dokumenty firmy Microsoft
+title: 'IDebugProcess3:: GetEngineFilter | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a3f22a55b9a02f567b2f5ab353d4b15ac9532fdb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723635"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
@@ -40,10 +40,10 @@ public int GetEngineFilter(
 
 ## <a name="parameters"></a>Parametry
 `pEngineArray`\
-[na zewnątrz] Odwołanie do struktury, która zawiera unikatowe identyfikatory dla aparatów debugowania.
+określoną Odwołanie do struktury zawierającej unikatowe identyfikatory dla aparatów debugowania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
