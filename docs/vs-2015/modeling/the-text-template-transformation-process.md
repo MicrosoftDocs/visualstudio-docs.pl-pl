@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7322724b2118cb8b844262696a6e7cbd91a74e9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658503"
 ---
 # <a name="the-text-template-transformation-process"></a>Proces transformacji szablonu tekstowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Proces przekształcania szablonu tekstu pobiera plik szablonu tekstu jako dane wejściowe i generuje nowy plik tekstowy jako dane wyjściowe. Na przykład można użyć szablonów tekstowych do generowania Visual Basic lub C# kodu lub można wygenerować raport HTML.
+Proces przekształcania szablonu tekstu pobiera plik szablonu tekstu jako dane wejściowe i generuje nowy plik tekstowy jako dane wyjściowe. Na przykład można użyć szablonów tekstowych do generowania kodu Visual Basic lub C# lub można wygenerować raport HTML.
 
  Trzy składniki biorą udział w tym procesie: silnik, Host i procesory dyrektywy. Aparat kontroluje proces; współdziała z hostem i procesorem dyrektywy w celu utworzenia pliku wyjściowego. Host zapewnia wszelkie interakcje ze środowiskiem, takie jak Lokalizowanie plików i zestawów. Procesor dyrektywy dodaje funkcje, takie jak odczytywanie danych z pliku XML lub bazy danych.
 
@@ -31,7 +31,7 @@ Proces przekształcania szablonu tekstu pobiera plik szablonu tekstu jako dane w
 
 |Składnik|Opis|Dostosowywalne (tak/nie)|
 |---------------|-----------------|------------------------------|
-|Wyszukiwarce|Składnik silnika kontroluje proces transformacji szablonu tekstu|Nie.|
+|Aparat|Składnik silnika kontroluje proces transformacji szablonu tekstu|Nie.|
 |Host|Host jest interfejsem między aparatem i środowiskiem użytkownika. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jest hostem procesu transformacji tekstu.|Tak. Można napisać hosta niestandardowego.|
 |Procesory dyrektywy|Procesory dyrektywy to klasy, które obsługują dyrektywy w szablonach tekstowych. Możesz użyć dyrektyw, aby dostarczyć dane do szablonu tekstu ze źródła danych wejściowych.|Tak. Możesz pisać niestandardowe procesory dyrektywy|
 
@@ -51,7 +51,7 @@ Proces przekształcania szablonu tekstu pobiera plik szablonu tekstu jako dane w
 
 - Ustawianie domyślnego rozszerzenia dla wygenerowanego pliku wyjściowego.
 
-- Obsługa błędów transformacji szablonu tekstu. Na przykład host może wyświetlać Błędy w interfejsie użytkownika lub zapisywać je do pliku. (W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] błędy są wyświetlane w oknie komunikatu o błędzie).
+- Obsługa błędów transformacji szablonu tekstu. Na przykład host może wyświetlać Błędy w interfejsie użytkownika lub zapisywać je do pliku. (W programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Błędy są wyświetlane w oknie komunikatu o błędzie).
 
 - Podanie wymaganej wartości parametru, jeśli użytkownik wywołał dyrektywę bez podawania wartości. Procesor dyrektywy może określić nazwę dyrektywy i parametr i poprosił hosta o podanie wartości domyślnej, jeśli ma.
 
@@ -60,8 +60,8 @@ Proces przekształcania szablonu tekstu pobiera plik szablonu tekstu jako dane w
 
  Procesor dyrektywy może przetworzyć jedną lub więcej dyrektyw. Podczas przekształcania szablonu należy zainstalować procesor dyrektywy, który może zajmować się dyrektywami w szablonie.
 
- Dyrektywy działają przez dodanie kodu do wygenerowanej klasy transformacji. Należy wywołać dyrektywy z szablonu tekstowego, a aparat przetwarza wszystkie wywołania dyrektywy podczas tworzenia wygenerowanej klasy transformacji. Po pomyślnym wywołaniu dyrektywy pozostała część kodu, którą można napisać w szablonie tekstu, może opierać się na funkcjach dostępnych w dyrektywie. Na przykład w szablonie można wykonać następujące wywołanie dyrektywy `import`:
+ Dyrektywy działają przez dodanie kodu do wygenerowanej klasy transformacji. Należy wywołać dyrektywy z szablonu tekstowego, a aparat przetwarza wszystkie wywołania dyrektywy podczas tworzenia wygenerowanej klasy transformacji. Po pomyślnym wywołaniu dyrektywy pozostała część kodu, którą można napisać w szablonie tekstu, może opierać się na funkcjach dostępnych w dyrektywie. Na przykład w szablonie można wykonać następujące wywołanie do `import` dyrektywy:
 
  `<#@ import namespace="System.Text" #>`
 
- Procesor dyrektywy standardowej konwertuje ten element na instrukcję `using` w wygenerowanej klasie transformacji. Następnie można użyć klasy `StringBuilder` w pozostałej części kodu szablonu bez kwalifikowania go jako `System.Text.StringBuilder`.
+ Procesor dyrektywy standardowej konwertuje ten element na `using` instrukcję w wygenerowanej klasie transformacji. Następnie można użyć `StringBuilder` klasy w pozostałej części kodu szablonu bez kwalifikowania go jako `System.Text.StringBuilder` .

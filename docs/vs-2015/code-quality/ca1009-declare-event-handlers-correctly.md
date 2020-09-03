@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6a4a4e2e6990772b50568043c4d18ff29248571d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547891"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Poprawnie deklaruj procedury obsługi zdarzeń
@@ -47,7 +47,7 @@ ms.locfileid: "85547891"
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia delegata, który jest odpowiedni do obsługi zdarzeń. Metody, które mogą być wywoływane przez ten program obsługi zdarzeń, są zgodne z podpisem określonym w wytycznych dotyczących projektowania. `AlarmEventHandler`jest nazwą typu delegata. `AlarmEventArgs`pochodzi z klasy podstawowej dla danych zdarzenia, <xref:System.EventArgs> i przechowuje dane zdarzenia alarmu.
+ Poniższy przykład przedstawia delegata, który jest odpowiedni do obsługi zdarzeń. Metody, które mogą być wywoływane przez ten program obsługi zdarzeń, są zgodne z podpisem określonym w wytycznych dotyczących projektowania. `AlarmEventHandler` jest nazwą typu delegata. `AlarmEventArgs` pochodzi z klasy podstawowej dla danych zdarzenia, <xref:System.EventArgs> i przechowuje dane zdarzenia alarmu.
 
  [!code-cpp[FxCop.Design.EventsTwoParams#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/cpp/FxCop.Design.EventsTwoParams.cpp#1)]
  [!code-csharp[FxCop.Design.EventsTwoParams#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/cs/FxCop.Design.EventsTwoParams.cs#1)]

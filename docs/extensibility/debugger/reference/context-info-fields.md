@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO_FIELDS | Dokumenty firmy Microsoft
+title: CONTEXT_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b398e7ee549026750cbdff7b7fede8522116f346
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737595"
 ---
 # <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
-Określa, jakie informacje mają być pobierane o kontekście pamięci.
+Określa informacje do pobrania dotyczące kontekstu pamięci.
 
 ## <a name="syntax"></a>Składnia
 
@@ -54,34 +54,34 @@ public enum enum_CONTEXT_INFO_FIELDS {
 
 ## <a name="fields"></a>Pola
 `CIF_MODULEURL`\
-Inicjuj/użyj `bstrModuleUrl` pola [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struktury.
+Zainicjuj/Użyj `bstrModuleUrl` pola struktury [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) .
 
 `CIF_FUNCTION`\
-Inicjuj/użyj `bstrFunction` `CONTEXT_INFO` pola konstrukcji.
+Zainicjuj/Użyj `bstrFunction` pola `CONTEXT_INFO` struktury.
 
 `CIF_FUNCTIONOFFSET`\
-Inicjuj/użyj `posFunctionOffset` `CONTEXT_INFO` pola konstrukcji.
+Zainicjuj/Użyj `posFunctionOffset` pola `CONTEXT_INFO` struktury.
 
 `CIF_ADDRESS`\
-Inicjuj/użyj `bstrAddress` `CONTEXT_INFO` pola konstrukcji.
+Zainicjuj/Użyj `bstrAddress` pola `CONTEXT_INFO` struktury.
 
 `CIF_ADDRESSOFFSET`\
-Inicjuj/użyj `bstrAddressOffset` `CONTEXT_INFO` pola konstrukcji.
+Zainicjuj/Użyj `bstrAddressOffset` pola `CONTEXT_INFO` struktury.
 
 `CIF_ALLFIELDS`\
-Inicjuj/użyj `CONTEXT_INFO` wszystkich pól struktury.
+Inicjuj/używaj wszystkich pól `CONTEXT_INFO` struktury.
 
 ## <a name="remarks"></a>Uwagi
-Wartości te są przekazywane parametr do [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) metody, aby wskazać, które pola [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struktury mają być inicjowane.
+Te wartości są przekazywane do metody [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) , aby wskazać, które pola struktury [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) mają być inicjowane.
 
-Flagi te są również używane do `CONTEXT_INFO` wskazania, które pola struktury są używane i prawidłowe, gdy struktura jest zwracana.
+Te flagi są również używane do wskazywania, które pola `CONTEXT_INFO` struktury są używane i są prawidłowe podczas zwracania struktury.
 
-Wartości te mogą być łączone z bitowym OR.
+Te wartości mogą być połączone z bitowym lub.
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

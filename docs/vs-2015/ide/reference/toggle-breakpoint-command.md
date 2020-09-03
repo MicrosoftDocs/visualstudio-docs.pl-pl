@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 25c9a22db7ae136068ec374f874453dbd4a7c4b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658616"
 ---
 # <a name="toggle-breakpoint-command"></a>Przełącz punkt przerwania — Polecenie
@@ -34,7 +34,7 @@ Debug.ToggleBreakpoint [text]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `text` opcjonalny. Jeśli tekst jest określony, linia jest oznaczona jako nazwany punkt przerwania. W przeciwnym razie wiersz jest oznaczony jako nienazwany punkt przerwania, który jest podobny do tego, co się dzieje po naciśnięciu klawisza F9.
+ `text` Obowiązkowe. Jeśli tekst jest określony, linia jest oznaczona jako nazwany punkt przerwania. W przeciwnym razie wiersz jest oznaczony jako nienazwany punkt przerwania, który jest podobny do tego, co się dzieje po naciśnięciu klawisza F9.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład przełącza bieżący punkt przerwania.

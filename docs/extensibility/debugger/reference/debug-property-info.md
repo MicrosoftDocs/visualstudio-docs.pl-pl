@@ -1,5 +1,5 @@
 ---
-title: DEBUG_PROPERTY_INFO | Dokumenty firmy Microsoft
+title: DEBUG_PROPERTY_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 34fc1b5103949a767a3ee448618cbb708ea6a48b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737451"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
@@ -53,10 +53,10 @@ public struct DEBUG_PROPERTY_INFO {
 
 ## <a name="members"></a>Elementy członkowskie
 `dwValidFields`\
-Kombinacja flag z wyliczenia [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) określająca, które pola są wypełniane.
+Kombinacja flag z wyliczenia [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) , która określa, które pola są wypełnione.
 
 `bstrFullName`\
-Pełna nazwa obiektu.
+Pełna nazwa właściwości.
 
 `bstrName`\
 Nazwa właściwości w kontekście.
@@ -68,20 +68,20 @@ Typ właściwości jako sformatowany ciąg.
 Wartość właściwości jako sformatowany ciąg.
 
 `pProperty`\
-[Obiekt IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) opisany przez tę strukturę.
+Obiekt [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) opisany przez tę strukturę.
 
 `dwAttrib`\
-Kombinacja flag z wyliczenia [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) opisujące atrybuty tej właściwości.
+Kombinacja flag z wyliczenia [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) opisującego atrybuty tej właściwości.
 
 ## <a name="remarks"></a>Uwagi
-Właściwość jest obiektem o charakterze hierarchicznym, który ma nazwę, typ i wartość. Na przykład właściwość może opisywać zmienne lokalne, parametry, obserwować zmienne i wyrażenia oraz rejestry.
+Właściwość jest obiektem o charakterze hierarchicznym, który ma nazwę, typ i wartość. Na przykład właściwość może opisywać zmienne lokalne, parametry, obserwacje zmiennych i wyrażeń oraz rejestrów.
 
-Ta struktura jest przekazywana do [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) metody, gdzie jest wypełniona. Ta struktura jest również zwracana jako część listy tej struktury z interfejsu [IEnumDebugPropertyInfo2,](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) który z kolei jest zwracany z wywołania do [Metod Wyliczenia i](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) [EnumProperties.](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)
+Ta struktura jest przenoszona do metody [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) , gdzie jest wypełniona. Ta struktura jest również zwracana jako część listy tej struktury z interfejsu [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) , który z kolei jest zwracany z wywołania metod [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) i [EnumProperties —](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

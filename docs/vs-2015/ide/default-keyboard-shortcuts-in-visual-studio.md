@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2fb9fa4d9c4faaf01ec64e9eb722af8589de5588
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548099"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyśle skróty klawiaturowe w Visual Studio
@@ -27,7 +27,7 @@ ms.locfileid: "85548099"
 
 Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, wybierając odpowiednie skróty klawiaturowe. Ten temat wyświetla listę domyślnych skrótów dla profilu Ogólnego projektowania, który być może wybrano podczas instalacji Visual Studio. Niezależnie od tego, który profil został wybrany, możesz zidentyfikować skrót do polecenia, otwierając okno dialogowe **Opcje** , rozwijając węzeł **środowisko** , a następnie wybierając pozycję **Klawiatura**. Możesz również dostosować skróty, przypisując różne skróty do dowolnego polecenia.
 
- Aby uzyskać listę typowych skrótów klawiaturowych i innych informacji o produktywności, zobacz [porady i](../ide/tips-and-tricks-for-visual-studio.md) wskazówki oraz [porady dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md).
+ Aby uzyskać listę typowych skrótów klawiaturowych i innych informacji o produktywności, zobacz  [porady i](../ide/tips-and-tricks-for-visual-studio.md) wskazówki oraz [porady dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md).
 
  Sekcje na poniższej liście zawierają polecenia, które są globalne w programie, aby można było uzyskać do nich dostęp z dowolnego miejsca w programie Visual Studio za pomocą skrótów klawiaturowych:
 
@@ -46,7 +46,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 - [Menu kontekstowe Widok klasy](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)
 - [Pomoc](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)
 - [Eksplorator rozwiązań](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)
-- [Widok](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
+- [Wyświetlanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
 - [Debugowanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)
 - [Test obciążenia](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)
 - [Zespół](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)
@@ -83,7 +83,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 - [Narzędzia danych Microsoft SQL Server, Edytor T-SQL](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TSQLeditor)
 - [Edytor tekstu](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TextEditor)
 - [Edytor elementu roboczego](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workItemEditor)
-- [F# Interactive](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_FSharp)
+- [Interaktywny F#](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_FSharp)
 - [Narzędzia danych Microsoft SQL Server, Edytor T-SQL PDW](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_linkfix)
 - [Diagram aktywności UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLactivityDiagram)
 - [Widok zapytania o elementy robocze](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIqueryview)
@@ -108,22 +108,22 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 - [Edytor okien dialogowych VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcdialogeditor)
 - [Projektant schematu XML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlSchemaDesigner)
 
-## <a name="global"></a><a name="bkmk_global"></a>Globalne
+## <a name="global"></a><a name="bkmk_global"></a> Globalne
 
-### <a name="analyze"></a><a name="bkmk_analyze"></a>Analiza
+### <a name="analyze"></a><a name="bkmk_analyze"></a> Analiza
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |Analyze.NavigateBackward|Shift+Alt+3|
 |Analyze.NavigateForward|Shift+Alt+4|
 
-### <a name="architecture"></a><a name="bkmk_architecture"></a>Będąc
+### <a name="architecture"></a><a name="bkmk_architecture"></a> Będąc
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |Architecture.NewDiagram|Ctrl + \\ , CTRL + N|
 
-### <a name="build"></a><a name="bkmk_build"></a>Utworzenia
+### <a name="build"></a><a name="bkmk_build"></a> Utworzenia
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -132,13 +132,13 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Build.Compile|Ctrl+F7|
 |Build.RunCodeAnalysisonSolution|Alt+F11|
 
-### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a>Menu kontekstowe Widok klasy
+### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a> Menu kontekstowe Widok klasy
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|Alt+Enter|
 
-### <a name="debug"></a><a name="bkmk_debug"></a>Rozpocząć
+### <a name="debug"></a><a name="bkmk_debug"></a> Rozpocząć
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -206,7 +206,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Debug.Watch3|Ctrl + Alt + W, 3|
 |Debug.Watch4|Ctrl + Alt + W, 4|
 
-### <a name="debugger-context-menus"></a><a name="bkmk_debugger"></a>Menu kontekstowe debugera
+### <a name="debugger-context-menus"></a><a name="bkmk_debugger"></a> Menu kontekstowe debugera
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -214,13 +214,13 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|Alt+F9, A|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|Alt+F9, S|
 
-### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a>Centrum diagnostyki
+### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a> Centrum diagnostyki
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
 |DiagnosticsHub.StopCollection|Ctrl+Alt+F2|
 
-### <a name="edit"></a><a name="bkmk_edit"></a>Edytowania
+### <a name="edit"></a><a name="bkmk_edit"></a> Edytowania
 
 |Polecenia||
 |--------------|-|
@@ -279,7 +279,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Edit.SurroundWith|Ctrl+K, Ctrl+S|
 |Edit.Undo|Ctrl+Z<br /><br /> lub<br /><br /> Alt+Backspace|
 
-### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a>Menu kontekstowe edytora
+### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a> Menu kontekstowe edytora
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -290,7 +290,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|Ctrl+K, Ctrl+O|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|Ctrl+K, Ctrl+T<br /><br /> lub<br /><br /> Ctrl+K, T|
 
-### <a name="file"></a><a name="bkmk_file"></a>Rozszerzeniem
+### <a name="file"></a><a name="bkmk_file"></a> Rozszerzeniem
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -306,7 +306,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |File.SaveSelectedItems|Ctrl+S|
 |File.ViewinBrowser|Ctrl+Shift+W|
 
-### <a name="help"></a><a name="bkmk_help"></a>Pomoc
+### <a name="help"></a><a name="bkmk_help"></a> Pomoc
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -315,13 +315,13 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Help.ViewHelp|Ctrl+F1|
 |Help.WindowHelp|Shift+F1|
 
-### <a name="load-test"></a><a name="bkmk_loadtest"></a>Test obciążenia
+### <a name="load-test"></a><a name="bkmk_loadtest"></a> Test obciążenia
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
 |LoadTest.JumpToCounterPane|Ctrl+R, Q|
 
-### <a name="other-context-menus"></a><a name="bkmk_otherContext"></a>Inne menu kontekstowe
+### <a name="other-context-menus"></a><a name="bkmk_otherContext"></a> Inne menu kontekstowe
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
@@ -339,14 +339,14 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Project.Publishselectedfiles|Alt+;, Alt+P|
 |Project.Replaceselectedfilesfromserver|Alt+;, Alt+R|
 
-### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a>Menu kontekstowe projektu i rozwiązania
+### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a> Menu kontekstowe projektu i rozwiązania
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |ProjectandSolutionContextMenus.Item.MoveDown|Alt+Strzałka w dół|
 |ProjectandSolutionContextMenus.Item.MoveUp|Alt+Strzałka w górę|
 
-### <a name="refactor"></a><a name="bkmk_refactor"></a>Refaktoryzuj
+### <a name="refactor"></a><a name="bkmk_refactor"></a> Refaktoryzuj
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -357,7 +357,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Refactor.Rename|Ctrl+R, Ctrl+R|
 |Refactor.ReorderParameters|Ctrl+R, Ctrl+O|
 
-### <a name="solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a>Eksplorator rozwiązań
+### <a name="solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a> Eksplorator rozwiązań
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -365,7 +365,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |SolutionExplorer.PendingChangesFilter|Ctrl+[, P<br /><br /> lub<br /><br /> Ctrl+[, Ctrl+P|
 |SolutionExplorer.SyncWithActiveDocument|Ctrl+[, S<br /><br /> lub<br /><br /> Ctrl+[, Ctrl+S|
 
-### <a name="team"></a><a name="bkmk_team"></a>Dział
+### <a name="team"></a><a name="bkmk_team"></a> Dział
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -374,7 +374,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Team.Git.GoToGitCommits|Ctrl+0, Ctrl+O<br /><br /> lub<br /><br /> Ctrl+0, O|
 |Team.TeamExplorerSearch|Ctrl+'|
 
-### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a>Menu kontekstowe Team Foundation
+### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a> Menu kontekstowe Team Foundation
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -389,7 +389,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |TeamFoundationContextMenus.Commands.GoToWebAccess|Ctrl+0, Ctrl+A<br /><br /> lub<br /><br /> Ctrl+0, A|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|Ctrl+0, Ctrl+W<br /><br /> lub<br /><br /> Ctrl+0, W|
 
-### <a name="test"></a><a name="bkmk_test"></a>Badan
+### <a name="test"></a><a name="bkmk_test"></a> Badan
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -406,7 +406,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |TestExplorer.RunAllTests|Ctrl+R, A|
 |TestExplorer.RunAllTestsInContext|Ctrl+R, T|
 
-### <a name="tools"></a><a name="bkmk_tools"></a>Narzędzi
+### <a name="tools"></a><a name="bkmk_tools"></a> Narzędzi
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -415,7 +415,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Tools.ForceGC|Ctrl+Shift+Alt+F12, Ctrl+Shift+Alt+F12|
 |Tools.GoToCommandLine|Ctrl+/|
 
-### <a name="view"></a><a name="bkmk_view"></a>Widokiem
+### <a name="view"></a><a name="bkmk_view"></a> Widokiem
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -464,7 +464,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |View.ZoomIn|Ctrl+Shift+.|
 |View.ZoomOut|Ctrl+Shift+,|
 
-### <a name="window"></a><a name="bkmk_window"></a>Dział
+### <a name="window"></a><a name="bkmk_window"></a> Dział
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -495,14 +495,14 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Window.SolutionExplorerSearch|Ctrl+;|
 |Window.WindowSearch|Alt+`|
 
-### <a name="azure"></a><a name="bkmk_windowsazure"></a>Azure
+### <a name="azure"></a><a name="bkmk_windowsazure"></a> Azure
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |WindowsAzure.RetryMobileServiceScriptOperation|Ctrl+Num *, Ctrl+R|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|Ctrl+Num *, Ctrl+D|
 
-## <a name="adonet-entity-data-model-designer"></a><a name="bkmk_ADONET"></a>Projektant Entity Data Model ADO.NET
+## <a name="adonet-entity-data-model-designer"></a><a name="bkmk_ADONET"></a> Projektant Entity Data Model ADO.NET
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -517,7 +517,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |View.EntityDataModelBrowser|Ctrl+1|
 |View.EntityDataModelMappingDetails|Ctrl+2|
 
-## <a name="class-diagram"></a><a name="bkmk_classDiagram"></a>Diagram klas
+## <a name="class-diagram"></a><a name="bkmk_classDiagram"></a> Diagram klas
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -529,7 +529,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Edit.RemovefromDiagram|Usuń|
 |View.ViewCode|Enter|
 
-## <a name="coded-ui-test-editor"></a><a name="bkmk_codedUItest"></a>Edytor kodowanego testu interfejsu użytkownika
+## <a name="coded-ui-test-editor"></a><a name="bkmk_codedUItest"></a> Edytor kodowanego testu interfejsu użytkownika
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -540,14 +540,14 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |OtherContextMenus.UITestEditorContextMenu.Movecode|Ctrl+Alt+C|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|Ctrl+Shift+T|
 
-## <a name="dataset-editor"></a><a name="bkmk_dataset"></a>Edytor zestawu danych
+## <a name="dataset-editor"></a><a name="bkmk_dataset"></a> Edytor zestawu danych
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |OtherContextMenus.ColumnContext.InsertColumn|Insert|
 |OtherContextMenus.DbTableContext.Add.Column|Ctrl+L|
 
-## <a name="difference-viewer"></a><a name="bkmk_diff"></a>Podgląd różnic
+## <a name="difference-viewer"></a><a name="bkmk_diff"></a> Podgląd różnic
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
@@ -563,7 +563,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |EditorContextMenus.CodeWindow.AddComment|Ctrl+Shift+K|
 |EditorContextMenus.CodeWindow.EditLocalFile|Ctrl+Shift+P|
 
-## <a name="dom-explorer"></a><a name="bkmk_DOM"></a>DOM Explorer
+## <a name="dom-explorer"></a><a name="bkmk_DOM"></a> DOM Explorer
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -571,13 +571,13 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |DOMExplorer.SelectElement|Ctrl+B|
 |DOMExplorer.ShowLayout|Ctrl+Shift+I|
 
-## <a name="f-interactive"></a><a name="bkmk_FSharp"></a>F# Interactive
+## <a name="f-interactive"></a><a name="bkmk_FSharp"></a> F# Interactive
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|Ctrl+Break|
 
-## <a name="graph-document-editor"></a><a name="bkmk_graphDoc"></a>Edytor dokumentów grafu
+## <a name="graph-document-editor"></a><a name="bkmk_graphDoc"></a> Edytor dokumentów grafu
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -589,7 +589,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|Usuń|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|F2|
 
-## <a name="graphics-diagnostics"></a><a name="bkmk_graphicsDebugger"></a>Diagnostyka grafiki
+## <a name="graphics-diagnostics"></a><a name="bkmk_graphicsDebugger"></a> Diagnostyka grafiki
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -603,13 +603,13 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Graphics. zoom|Shift+Alt+=|
 |Graphics. ZoomOut|Shift+Alt+-|
 
-## <a name="html-editor"></a><a name="bkmk_HTMLeditor"></a>Edytor HTML
+## <a name="html-editor"></a><a name="bkmk_HTMLeditor"></a> Edytor HTML
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
 |OtherContextMenus.HTMLContext.GoToController|Ctrl+M, Ctrl+G|
 
-## <a name="html-editor-design-view"></a><a name="bkmk_HTMLeditorDesign"></a>Widok projektu edytora HTML
+## <a name="html-editor-design-view"></a><a name="bkmk_HTMLeditorDesign"></a> Widok projektu edytora HTML
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -632,7 +632,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |View.ViewMarkup|Shift+F7|
 |Window.PreviousTab|Ctrl+PgUp|
 
-## <a name="html-editor-source-view"></a><a name="bkmk_HTMLeditorSource"></a>Widok źródła edytora HTML
+## <a name="html-editor-source-view"></a><a name="bkmk_HTMLeditorSource"></a> Widok źródła edytora HTML
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -642,13 +642,13 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |View.ViewDesigner|Shift+F7|
 |Window.PreviousTab|Ctrl+PgUp|
 
-## <a name="layer-diagram"></a><a name="bkmk_layerDiagram"></a>Diagram warstwowy
+## <a name="layer-diagram"></a><a name="bkmk_layerDiagram"></a> Diagram warstwowy
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
 |Edit.Delete|Shift+Delete|
 
-## <a name="managed-resources-editor"></a><a name="bkmk_managedResources"></a>Edytor zarządzanych zasobów
+## <a name="managed-resources-editor"></a><a name="bkmk_managedResources"></a> Edytor zarządzanych zasobów
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -663,7 +663,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Resources.Other|Ctrl+6|
 |Resources.Strings|Ctrl+1|
 
-## <a name="merge-editor-window"></a><a name="bkmk_MergeEditor"></a>Okno edytora scalania
+## <a name="merge-editor-window"></a><a name="bkmk_MergeEditor"></a> Okno edytora scalania
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -671,7 +671,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|Alt+2|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|Alt+3|
 
-## <a name="microsoft-sql-server-data-tools-schema-compare"></a><a name="bkmk_SchemaCompare"></a>Narzędzia danych Microsoft SQL Server, porównanie schematów
+## <a name="microsoft-sql-server-data-tools-schema-compare"></a><a name="bkmk_SchemaCompare"></a> Narzędzia danych Microsoft SQL Server, porównanie schematów
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -682,7 +682,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |SQL.SSDTSchemaCompareStop|Alt+Break|
 |SQL.SSDTSchemaCompareWriteUpdates|Shift+Alt+U|
 
-## <a name="microsoft-sql-server-data-tools-table-designer"></a><a name="bkmk_TableDesigner"></a>Narzędzia danych Microsoft SQL Server, Projektant tabel
+## <a name="microsoft-sql-server-data-tools-table-designer"></a><a name="bkmk_TableDesigner"></a> Narzędzia danych Microsoft SQL Server, Projektant tabel
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -693,7 +693,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |SQL.Rename|F2<br /><br /> lub<br /><br /> Ctrl+R, R<br /><br /> lub<br /><br /> Ctrl+R, Ctrl+R|
 |ViewFileInScriptPanel|Shift+Alt+PgDn|
 
-## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a><a name="bkmk_TSQLeditor"></a>Narzędzia danych Microsoft SQL Server, Edytor T-SQL
+## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a><a name="bkmk_TSQLeditor"></a> Narzędzia danych Microsoft SQL Server, Edytor T-SQL
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -714,7 +714,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |TSqlEditorCloneQuery|Ctrl+Alt+N|
 |TSqlEditorDatabaseCombo|Shift+Alt+PgDn|
 
-## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a><a name="bkmk_linkfix"></a>Microsoft SQL Server narzędzia danych, Edytor T-SQL PDW
+## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a><a name="bkmk_linkfix"></a> Microsoft SQL Server narzędzia danych, Edytor T-SQL PDW
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -729,13 +729,13 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |TSqlEditorCloneQuery|Ctrl+Alt+N|
 |TSqlEditorDatabaseCombo|Shift+Alt+PgDn|
 
-## <a name="page-inspector"></a><a name="bkmk_PageInspector"></a>Inspektor strony
+## <a name="page-inspector"></a><a name="bkmk_PageInspector"></a> Inspektor strony
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
 |PageInspector.Minimize|F12|
 
-## <a name="query-designer"></a><a name="bkmk_QueryDesigner"></a>Projektant zapytań
+## <a name="query-designer"></a><a name="bkmk_QueryDesigner"></a> Projektant zapytań
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -748,7 +748,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |QueryDesigner.Results|Ctrl+4|
 |QueryDesigner.SQL|Ctrl+3|
 
-## <a name="query-results"></a><a name="bkmk_QueryResults"></a>Wyniki zapytania
+## <a name="query-results"></a><a name="bkmk_QueryResults"></a> Wyniki zapytania
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -756,7 +756,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |SQL.QueryResultsRefresh|Shift+Alt+R|
 |SQL.QueryResultsStop|Alt+Break|
 
-## <a name="report-designer"></a><a name="bkmk_ReportDesigner"></a>Projektant raportów
+## <a name="report-designer"></a><a name="bkmk_ReportDesigner"></a> Projektant raportów
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -782,14 +782,14 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Edit.TabLeft|Shift+Tab|
 |View.ReportData|Ctrl+Alt+D|
 
-## <a name="sequence-diagram"></a><a name="bkmk_SequenceDiagram"></a>Diagram sekwencji
+## <a name="sequence-diagram"></a><a name="bkmk_SequenceDiagram"></a> Diagram sekwencji
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |ArchitectureDesigner.Sequence.NavigateToCode|F12|
 |Edit.Delete|Shift+Del|
 
-## <a name="settings-designer"></a><a name="bkmk_SettingsDesigner"></a>Projektant ustawień
+## <a name="settings-designer"></a><a name="bkmk_SettingsDesigner"></a> Projektant ustawień
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -798,7 +798,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Edit.SelectionCancel|Esc|
 |View.ViewCode|F7|
 
-## <a name="solution-explorer"></a><a name="bkmk_SolutionExplorer"></a>Eksplorator rozwiązań
+## <a name="solution-explorer"></a><a name="bkmk_SolutionExplorer"></a> Eksplorator rozwiązań
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
@@ -829,7 +829,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|Shift+Alt+L|
 |View.Refresh|F5|
 
-## <a name="team-foundation-build-detail-editor"></a><a name="bkmk_TFBuild"></a>Edytor szczegółów Team Foundation Build
+## <a name="team-foundation-build-detail-editor"></a><a name="bkmk_TFBuild"></a> Edytor szczegółów Team Foundation Build
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
@@ -841,7 +841,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |-------------|-----------------------|
 |TestExplorer.OpenTest|F12|
 
-## <a name="text-editor"></a><a name="bkmk_TextEditor"></a>Edytor tekstu
+## <a name="text-editor"></a><a name="bkmk_TextEditor"></a> Edytor tekstu
 
 |                             Polecenia                              |                  Skróty klawiaturowe                   |
 |-------------------------------------------------------------------|-------------------------------------------------------|
@@ -951,38 +951,38 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |   TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion   |                       Alt+PgDn                        |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion |                       Alt+PgUp                        |
 
-## <a name="uml-activity-diagram"></a><a name="bkmk_UMLactivityDiagram"></a>Diagram aktywności UML
+## <a name="uml-activity-diagram"></a><a name="bkmk_UMLactivityDiagram"></a> Diagram aktywności UML
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
 |Edit.Delete|Shift+Del|
 
-## <a name="uml-class-diagram"></a><a name="bkmk_UMLclassDiagram"></a>Diagram klas UML
+## <a name="uml-class-diagram"></a><a name="bkmk_UMLclassDiagram"></a> Diagram klas UML
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|Shift+Del|
 
-## <a name="uml-component-diagram"></a><a name="bkmk_UMLcomponentDiagram"></a>Diagram składników UML
+## <a name="uml-component-diagram"></a><a name="bkmk_UMLcomponentDiagram"></a> Diagram składników UML
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|Shift+Del|
 
-## <a name="uml-use-case-diagram"></a><a name="bkmk_UMLusecaseDiagram"></a>Diagram przypadków użycia UML
+## <a name="uml-use-case-diagram"></a><a name="bkmk_UMLusecaseDiagram"></a> Diagram przypadków użycia UML
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|Shift+Del|
 
-## <a name="vc-accelerator-editor"></a><a name="bkmk_vcaccelerator"></a>Edytor akceleratorów VC
+## <a name="vc-accelerator-editor"></a><a name="bkmk_vcaccelerator"></a> Edytor akceleratorów VC
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |Edit.NewAccelerator|Insert|
 |Edit.NextKeyTyped|Ctrl+W|
 
-## <a name="vc-dialog-editor"></a><a name="bkmk_vcdialogeditor"></a>Edytor okien dialogowych VC
+## <a name="vc-dialog-editor"></a><a name="bkmk_vcdialogeditor"></a> Edytor okien dialogowych VC
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -1016,7 +1016,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Format.TestDialog|Ctrl+T|
 |Format.ToggleGuides|Ctrl+G|
 
-## <a name="vc-image-editor"></a><a name="bkmk_vcimageeditor"></a>Edytor obrazów VC
+## <a name="vc-image-editor"></a><a name="bkmk_vcimageeditor"></a> Edytor obrazów VC
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -1058,13 +1058,13 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Image.ZoomIn|Ctrl+Shift+.<br /><br /> lub<br /><br /> Ctrl+Strzałka w górę|
 |Image.ZoomOut|Ctrl+Shift+,<br /><br /> lub<br /><br /> Ctrl+strzałka w dół|
 
-## <a name="vc-string-editor"></a><a name="bkmk_vcstringeditor"></a>Edytor ciągów VC
+## <a name="vc-string-editor"></a><a name="bkmk_vcstringeditor"></a> Edytor ciągów VC
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
 |Edit.NewString|Insert|
 
-## <a name="view-designer"></a><a name="bkmk_viewDesigner"></a>Projektant widoków
+## <a name="view-designer"></a><a name="bkmk_viewDesigner"></a> Projektant widoków
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -1077,13 +1077,13 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |QueryDesigner.Results|Ctrl+4|
 |QueryDesigner.SQL|Ctrl+3|
 
-## <a name="visual-studio"></a><a name="bkmk_visualstudio"></a>Program Visual Studio
+## <a name="visual-studio"></a><a name="bkmk_visualstudio"></a> Program Visual Studio
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|Ctrl+1|
 
-## <a name="windows-forms-designer"></a><a name="bkmk_wfdesigner"></a>Projektant formularzy systemu Windows
+## <a name="windows-forms-designer"></a><a name="bkmk_wfdesigner"></a> Projektant formularzy systemu Windows
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -1112,7 +1112,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Edit.SizeControlUp|Ctrl+Shift+Strzałka w górę|
 |Edit.TabLeft|Shift+Tab|
 
-## <a name="work-item-editor"></a><a name="bkmk_workItemEditor"></a>Edytor elementów roboczych
+## <a name="work-item-editor"></a><a name="bkmk_workItemEditor"></a> Edytor elementów roboczych
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -1120,7 +1120,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Edit.RefreshWorkItem|F5|
 |Team.NewLinkedWorkItem|Shift+Alt+L|
 
-## <a name="work-item-query-view"></a><a name="bkmk_WIqueryview"></a>Widok zapytania elementu pracy
+## <a name="work-item-query-view"></a><a name="bkmk_WIqueryview"></a> Widok zapytania elementu pracy
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -1131,7 +1131,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Team.Refresh|F5|
 |Window.Toggle|Shift+Alt+V|
 
-## <a name="work-item-results-view"></a><a name="bkmk_WIresultsview"></a>Widok wyników elementu pracy
+## <a name="work-item-results-view"></a><a name="bkmk_WIresultsview"></a> Widok wyników elementu pracy
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -1144,7 +1144,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |Team.Refresh|F5|
 |Window.Toggle|Shift+Alt+V|
 
-## <a name="workflow-designer"></a><a name="bkmk_workflowdesigner"></a>Projektant przepływu pracy
+## <a name="workflow-designer"></a><a name="bkmk_workflowdesigner"></a> Projektant przepływu pracy
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -1172,7 +1172,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |WorkflowDesigner.ZoomIn|Ctrl+Num +|
 |WorkflowDesigner.ZoomOut|Ctrl+Num -|
 
-## <a name="xaml-ui-designer"></a><a name="bkmk_xamluidesigner"></a>Projektant interfejsu użytkownika XAML
+## <a name="xaml-ui-designer"></a><a name="bkmk_xamluidesigner"></a> Projektant interfejsu użytkownika XAML
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -1188,14 +1188,14 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
 |View.EdgeRightMoveRight|Ctrl+Shift+Alt+.|
 |Uruchom kod projektu|Ctrl+F9|
 
-## <a name="xml-text-editor"></a><a name="bkmk_xmlTextEditor"></a>Edytor XML (tekst)
+## <a name="xml-text-editor"></a><a name="bkmk_xmlTextEditor"></a> Edytor XML (tekst)
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |XML.StartXSLTDebugging|Alt+F5|
 |XML.StartXSLTWithoutDebugging|Ctrl+Alt+F5|
 
-## <a name="xml-schema-designer"></a><a name="bkmk_xmlSchemaDesigner"></a>Projektant schematu XML
+## <a name="xml-schema-designer"></a><a name="bkmk_xmlSchemaDesigner"></a> Projektant schematu XML
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|

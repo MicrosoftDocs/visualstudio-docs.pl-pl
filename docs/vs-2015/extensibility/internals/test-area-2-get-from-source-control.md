@@ -1,5 +1,5 @@
 ---
-title: 'Obszar testowy 2: Pobieranie z kontroli źródła | Dokumentacja firmy Microsoft'
+title: 'Obszar testowy 2: pobieranie z kontroli źródła | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,48 +12,48 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 069c396ce4cb75c9153082fdbb352b2ba713c8a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156007"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Obszar testowy 2: pobieranie z kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Obszar ten test obejmuje przypadki testowe do pobierania elementów z magazynu w wersji za pomocą polecenia Get. Te przypadki testowe można zastosować do lokalnego i projektów sieci Web.  
+Ten obszar testowy obejmuje przypadki testowe związane z pobieraniem elementów z magazynu wersji za pomocą polecenia Get. Te przypadki testowe mogą być stosowane zarówno do projektów lokalnych, jak i w sieci Web.  
   
-## <a name="command-menu-access"></a>Dostęp do Menu polecenia  
- Następujące [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ścieżki menu środowiska zintegrowanego rozwoju są używane w przypadkach testowych.  
+## <a name="command-menu-access"></a>Dostęp do menu poleceń  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]W przypadku przypadków testowych używane są następujące ścieżki menu zintegrowanego środowiska deweloperskiego.  
   
 ##### <a name="get-latest-version"></a>Pobierz najnowszą wersję:  
   
-- **Plik**, **kontroli źródła**, **Pobierz najnowszą wersję**.  
+- **Plik**, **Kontrola źródła**, **pobieranie najnowszej wersji**.  
   
-- **Plik**, **Pobierz najnowszą wersję**.  
+- **Pobierz najnowszą wersję** **pliku**.  
   
-- Menu skrótów **Pobierz najnowszą wersję**.  
+- Menu skrótów, **Pobierz najnowszą wersję**.  
   
-- Pobierz: **Plik**, **kontroli źródła**, **uzyskać**.  
+- Pobieranie: **plik**, **Kontrola źródła**, **pobieranie**.  
   
 ## <a name="expected-behavior"></a>Oczekiwane zachowanie  
   
 ##### <a name="get-latest-version"></a>Pobierz najnowszą wersję:  
- Wykonuje pobierania silent (nie interfejsu użytkownika) w najnowszej wersji elementu z magazynu wersji.  
+ Wykonuje ciche (bez interfejsu użytkownika) pobieranie najnowszej wersji elementu z magazynu wersji.  
   
 ##### <a name="get"></a>Pobierz:  
- Wyświetla **uzyskać** okno dialogowe i umożliwia użytkownikowi wprowadzić zmiany do zestawu plików, który zostanie pobrany, a także zmodyfikować opcje, które wpływają na sposób pliki są pobierane.  
+ Wyświetla okno dialogowe **pobieranie** i umożliwia użytkownikowi wprowadzanie zmian w zestawie plików, który zostanie pobrany, oraz modyfikowanie opcji, które mają wpływ na sposób pobierania plików.  
   
 ## <a name="test-cases"></a>Przypadki testowe  
   
-|Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
+|Akcja|Kroki testu|Oczekiwane wyniki do zweryfikowania|  
 |------------|----------------|--------------------------------|  
-|Pobierz najnowszą wersję pliku, który nie istnieje lokalnie|1.  Utwórz projekt.<br />2.  Dodaj element do projektu.<br />3.  Umieść projektu objętego kontrolą źródła.<br />4.  Usuń lokalną kopię elementu.<br />5.  Pobierz najnowszą wersję elementu (Menu skrótów **Pobierz najnowszą wersję**).|Plik elementu jest pobierana lokalnie.|  
-|Pobierz plik, który nie istnieje lokalnie|1.  Utwórz projekt.<br />2.  Dodaj element do projektu.<br />3.  Umieść projektu objętego kontrolą źródła.<br />4.  Usuń lokalną kopię elementu.<br />5.  Pobierz element (**pliku**, **kontroli źródła**, **uzyskać** \<element >).|Plik elementu jest pobierana lokalnie.|  
-|Pobieranie pliku, który został wyewidencjonowany w trybie wyłączności i zmodyfikowany lokalnie|1.  Utwórz projekt.<br />2.  Dodaj element do projektu.<br />3.  Umieść projektu objętego kontrolą źródła.<br />4.  Zapoznaj się z elementu projektu wyłącznie.<br />5.  Modyfikowanie kopii lokalnej.<br />6.  Pobierz najnowszą wersję elementu (**pliku**, **Pobierz najnowszą wersję** \<element >). Jeśli ta czynność zakończy się powodzeniem, przejdź do następnego kroku.<br />7.  Kliknij przycisk **Zastąp** przycisku w oknie dialogowym ostrzeżenia.|**ReResult w kroku 6** `:`<br /><br /> Okno dialogowe ostrzeżenia wskazuje, że ten plik został wyewidencjonowany.<br /><br /> **ReResult w kroku 7:**<br /><br /> Zmodyfikowany plik lokalny zastępuje oryginalną wersję z magazynu wersji.<br /><br /> Plik jest odczytu/zapisu.|  
-|Pobierz i zastąpić plik, który jest wyewidencjonowany, udostępniony i zmodyfikowany lokalnie|1.  Utwórz nowy projekt.<br />2.  Dodaj element do projektu.<br />3.  Umieść projektu objętego kontrolą źródła.<br />4.  Zapoznaj się z elementu projektu jako udostępniony.<br />5.  Modyfikowanie kopii lokalnej.<br />6.  Pobierz najnowszą wersję elementu (**pliku**, **Pobierz najnowszą wersję** \<element >). Jeśli ta czynność zakończy się powodzeniem, przejdź do następnego kroku.<br />7.  Kliknij przycisk **Zastąp** w oknie dialogowym ostrzeżenia.|**Wynikiem krok 6:**<br /><br /> Okno dialogowe ostrzeżenia wskazuje, że ten plik został wyewidencjonowany.<br /><br /> **Wynikiem kroku 7:**<br /><br /> Zmodyfikowany plik lokalny zastępuje oryginalną wersję z magazynu wersji.<br /><br /> Plik jest odczytu/zapisu.|  
-|Pobierz plik, który istnieje lokalnie w taki sam jak najnowszej wersji usługi magazynu w wersji|1.  Utwórz nowy projekt.<br />2.  Dodaj element do projektu.<br />3.  Umieść projektu objętego kontrolą źródła.<br />4.  Pobierz element (**pliku**, **kontroli źródła**, **uzyskać** \<element >).|Lokalny plik pozostaje bez zmian.|  
-|Rozwiązanie z jednym projektem|1.  Tworzenie rozwiązań za pomocą jednego projektu.<br />2.  Umieść rozwiązanie pod kontrolą źródła.<br />3.  Usuń wszystkie pliki projektu lokalnie.<br />4.  Pobieranie rozwiązania (**pliku**, **kontroli źródła**, **uzyskać**).|Wszystkie usunięte pliki zostaną przywrócone lokalnie.|  
+|Pobierz najnowszą wersję pliku, który nie istnieje lokalnie|1. Utwórz projekt.<br />2. Dodaj element do projektu.<br />3. Umieść projekt pod kontrolą źródła.<br />4. Usuń lokalną kopię elementu.<br />5. Pobierz najnowszą wersję elementu (menu skrótów, **Pobierz najnowszą wersję**).|Plik elementu jest pobierany lokalnie.|  
+|Pobierz plik, który nie istnieje lokalnie|1. Utwórz projekt.<br />2. Dodaj element do projektu.<br />3. Umieść projekt pod kontrolą źródła.<br />4. Usuń lokalną kopię elementu.<br />5. Pobierz element (**plik**, **Kontrola źródła**, **Pobierz** \<item> ).|Plik elementu jest pobierany lokalnie.|  
+|Pobierz plik, który został wyewidencjonowany na wyłączność i zmodyfikowany lokalnie|1. Utwórz projekt.<br />2. Dodaj element do projektu.<br />3. Umieść projekt pod kontrolą źródła.<br />4. Wyewidencjonuj element projektu w trybie wyłączności.<br />5. Zmodyfikuj kopię lokalną.<br />6. Pobierz najnowszą wersję elementu (**plik**, **Pobierz najnowszą wersję** \<item> ). Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />7. kliknij przycisk **Zamień** w oknie dialogowym ostrzeżenia.|**Wynik z kroku 6**`:`<br /><br /> Okno dialogowe ostrzeżenia wskazuje, że plik jest wyewidencjonowany.<br /><br /> **Wynik z kroku 7:**<br /><br /> Zmodyfikowany plik lokalny jest zastępowany przez oryginalną wersję z magazynu wersji.<br /><br /> Plik jest do odczytu/zapisu.|  
+|Pobierz i Zamień plik, który jest wyewidencjonowany, udostępniony i zmodyfikowany lokalnie|1. Utwórz nowy projekt.<br />2. Dodaj element do projektu.<br />3. Umieść projekt pod kontrolą źródła.<br />4. Sprawdź element projektu jako udostępniony.<br />5. Zmodyfikuj kopię lokalną.<br />6. Pobierz najnowszą wersję elementu (**plik**, **Pobierz najnowszą wersję** \<item> ). Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />7. kliknij pozycję **Zamień** w oknie dialogowym ostrzeżenia.|**Wynik z kroku 6:**<br /><br /> Okno dialogowe ostrzeżenia wskazuje, że plik jest wyewidencjonowany.<br /><br /> **Wynik z kroku 7:**<br /><br /> Zmodyfikowany plik lokalny jest zastępowany przez oryginalną wersję z magazynu wersji.<br /><br /> Plik jest do odczytu/zapisu.|  
+|Pobierz plik, który istnieje lokalnie, tak samo jak Najnowsza wersja w sklepie z wersjami|1. Utwórz nowy projekt.<br />2. Dodaj element do projektu.<br />3. Umieść projekt pod kontrolą źródła.<br />4. Pobierz element (**plik**, **Kontrola źródła**, **Pobierz** \<item> ).|Plik lokalny jest niezmieniony.|  
+|Uzyskaj rozwiązanie z jednym projektem|1. Utwórz rozwiązanie z jednym projektem.<br />2. Umieść rozwiązanie pod kontrolą źródła.<br />3. Usuń wszystkie pliki projektu lokalnie.<br />4. Pobierz rozwiązanie (**plik**, **Kontrola źródła**, **Pobierz**).|Wszystkie usunięte pliki zostaną przywrócone lokalnie.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

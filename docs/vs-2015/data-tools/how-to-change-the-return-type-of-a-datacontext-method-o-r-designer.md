@@ -10,35 +10,35 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 351a2f53d8ad8c5f29821d905c292cd988390869
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658839"
 ---
-# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Instrukcje: zmiana zwracanego typu metody DataContext (Projektant O/R)
+# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Instrukcje: zmienianie zwracanego typu metody DataContext (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zwracany typ metody <xref:System.Data.Linq.DataContext> (utworzony na podstawie procedury składowanej lub funkcji) różni się w zależności od tego, gdzie porzucasz procedurę składowaną lub funkcję w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. W przypadku porzucenia elementu bezpośrednio do istniejącej klasy jednostki zostanie utworzona Metoda <xref:System.Data.Linq.DataContext>, która ma zwracany typ klasy jednostki (Jeśli schemat danych zwracanych przez procedurę składowaną lub funkcję dopasowuje kształt klasy jednostki). W przypadku usunięcia elementu do pustego obszaru [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] zostanie utworzony <xref:System.Data.Linq.DataContext> Metoda zwracająca automatycznie wygenerowany typ. Zwracany typ metody <xref:System.Data.Linq.DataContext> można zmienić po dodaniu jej do okienka metody. Aby sprawdzić lub zmienić zwracany typ metody <xref:System.Data.Linq.DataContext>, zaznacz ją, a następnie kliknij właściwość **Typ zwracany** w oknie **Właściwości** .
+Zwracany typ <xref:System.Data.Linq.DataContext> metody (utworzony w oparciu o procedurę składowaną lub funkcję) różni się w zależności od tego, gdzie porzucasz procedurę składowaną lub funkcję w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] . W przypadku porzucenia elementu bezpośrednio do istniejącej klasy jednostki <xref:System.Data.Linq.DataContext> zostanie utworzona Metoda, która ma zwracany typ klasy jednostki (Jeśli schemat danych zwróconych przez procedurę składowaną lub funkcję dopasowuje kształt klasy jednostki). Jeśli upuszczasz element na pusty obszar [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] , <xref:System.Data.Linq.DataContext> zostanie utworzona Metoda zwracająca automatycznie wygenerowany typ. Można zmienić zwracany typ <xref:System.Data.Linq.DataContext> metody po dodaniu jej do okienka metod. Aby sprawdzić lub zmienić zwracany typ <xref:System.Data.Linq.DataContext> metody, zaznacz ją i kliknij właściwość **Typ zwracany** w oknie **Właściwości** .
 
 > [!NOTE]
-> Nie można przywrócić <xref:System.Data.Linq.DataContext> metod, które mają ustawiony typ zwracany na klasę jednostki, aby zwracał typ wygenerowany automatycznie przy użyciu okna **Właściwości** . Aby przywrócić metodę <xref:System.Data.Linq.DataContext> w celu zwrócenia automatycznie generowanego typu, należy ponownie przeciągnąć oryginalny obiekt bazy danych do projektanta O/R.
+> Nie można przywrócić <xref:System.Data.Linq.DataContext> metod, które mają ustawiony typ zwracany na klasę jednostki, aby zwracał typ wygenerowany automatycznie przy użyciu okna **Właściwości** . Aby przywrócić <xref:System.Data.Linq.DataContext> metodę zwracającą automatycznie wygenerowany typ, należy ponownie przeciągnąć oryginalny obiekt bazy danych do projektanta O/R.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>Aby zmienić zwracany typ metody DataContext z automatycznie generowanego typu do klasy Entity
 
-1. Wybierz metodę <xref:System.Data.Linq.DataContext> w okienku metody.
+1. Wybierz <xref:System.Data.Linq.DataContext> metodę w okienku metody.
 
-2. W oknie **Właściwości** wybierz pozycję **Typ zwracany** , a następnie wybierz dostępną klasę jednostki na liście **Typ zwracany** . Jeśli żądana Klasa jednostki nie znajduje się na liście, Dodaj ją do lub Utwórz w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], aby dodać ją do listy.
+2. W oknie **Właściwości** wybierz pozycję **Typ zwracany** , a następnie wybierz dostępną klasę jednostki na liście **Typ zwracany** . Jeśli żądana Klasa jednostki nie znajduje się na liście, Dodaj ją do lub utwórz ją w programie, [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Aby dodać ją do listy.
 
 3. Zapisz plik. dbml.
 
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>Aby zmienić zwracany typ metody DataContext z klasy Entity z powrotem na typ wygenerowany automatycznie
 
-1. Wybierz metodę <xref:System.Data.Linq.DataContext> w okienku metody i usuń ją.
+1. Wybierz <xref:System.Data.Linq.DataContext> metodę w okienku metody i usuń ją.
 
-2. Przeciągnij obiekt bazy danych z **Eksplorator serwera** /**Eksplorator bazy danych** do pustego obszaru projektanta o/R.
+2. Przeciągnij obiekt bazy danych z **Eksplorator serwera** / **Eksplorator bazy danych** do pustego obszaru projektanta o/R.
 
 3. Zapisz plik. dbml.
 

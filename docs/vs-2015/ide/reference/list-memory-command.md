@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2630402e03d1256f63e542818a9066745206d2c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672747"
 ---
 # <a name="list-memory-command"></a>Lista pamięci — Polecenie
@@ -35,16 +35,16 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `expression` opcjonalny. Adres pamięci, z którego ma zostać rozpoczęte wyświetlanie pamięci.
+ `expression` Obowiązkowe. Adres pamięci, z którego ma zostać rozpoczęte wyświetlanie pamięci.
 
 ## <a name="switches"></a>Przełączniki
- /ANSI&#124;Unicode — opcjonalny. Wyświetl pamięć jako znaki odpowiadające bajtom pamięci, ANSI lub Unicode.
+ /ANSI&#124;Unicode. Wyświetl pamięć jako znaki odpowiadające bajtom pamięci, ANSI lub Unicode.
 
- /Count: `number` opcjonalny. Określa liczbę bajtów pamięci do wyświetlenia, zaczynając od `expression`.
+ /Count: `number` opcjonalne. Określa liczbę bajtów pamięci do wyświetlenia, rozpoczynając od `expression` .
 
- @No__t_0 opcjonalny. Typ formatu do wyświetlania informacji o pamięci w oknie **pamięci** ; może być OneByte, TwoBytes, FourBytes, EightBytes, float (32-bitowy) lub Double (64-bitowy). Jeśli OneByte jest używany, `/Unicode` jest niedostępny.
+ /Format: `formattype` Optional. Typ formatu do wyświetlania informacji o pamięci w oknie **pamięci** ; może być OneByte, TwoBytes, FourBytes, EightBytes, float (32-bitowy) lub Double (64-bitowy). Jeśli jest używana OneByte, `/Unicode` jest niedostępna.
 
- /HEX&#124;podpisane&#124;nieoznaczone jako opcjonalne. Określa format wyświetlania liczb: jako podpisane, niepodpisane lub szesnastkowe.
+ /HEX&#124;podpisane&#124;niepodpisane jako opcjonalne. Określa format wyświetlania liczb: jako podpisane, niepodpisane lub szesnastkowe.
 
 ## <a name="remarks"></a>Uwagi
  Zamiast zapisywać kompletne polecenie **Debug. ListMemory —** ze wszystkimi przełącznikami, można wywołać polecenie przy użyciu wstępnie zdefiniowanych aliasów z określonymi przełącznikami ustawionymi na określone wartości. Na przykład zamiast wprowadzania:
@@ -64,7 +64,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 |Alias|Polecenia i przełączniki|
 |-----------|--------------------------|
 |**Wykres**|Debuguj. ListMemory —|
-|**funkcją**|Debug. ListMemory —/ANSI|
+|**da**|Debug. ListMemory —/ANSI|
 |**bazą**|Debug. ListMemory —/format: OneByte|
 |**DC**|Debug. ListMemory —/format: FourBytes/ANSI|
 |**Dodaj**|Debug. ListMemory —/format: FourBytes|
@@ -79,4 +79,4 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ```
 
 ## <a name="see-also"></a>Zobacz też
- [Lista poleceń stosu wywołań](../../ide/reference/list-call-stack-command.md) [](../../ide/reference/list-threads-command.md) poleceń polecenie [Visual Studio](../../ide/reference/visual-studio-commands.md) Commands [okno](../../ide/reference/command-window.md) [Find/Command Box](../../ide/find-command-box.md) [Visual Studio Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+ [Lista poleceń stosu wywołań](../../ide/reference/list-call-stack-command.md) [List Threads Command](../../ide/reference/list-threads-command.md) poleceń polecenie [Visual Studio](../../ide/reference/visual-studio-commands.md) Commands [okno](../../ide/reference/command-window.md) [Find/Command Box](../../ide/find-command-box.md) [Visual Studio Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

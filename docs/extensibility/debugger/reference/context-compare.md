@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_COMPARE | Dokumenty firmy Microsoft
+title: CONTEXT_COMPARE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1c88b50644d1adda2dd0eaa3b74a828f9739d70b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737601"
 ---
 # <a name="context_compare"></a>CONTEXT_COMPARE
-Określa kryteria porównywania dwóch kontekstów pamięci.
+Określa kryteria do porównywania dwóch kontekstów pamięci.
 
 ## <a name="syntax"></a>Składnia
 
@@ -67,10 +67,10 @@ Znajdź pierwszy kontekst pamięci na liście, który jest mniejszy niż konteks
 Znajdź pierwszy kontekst pamięci na liście, który jest większy niż kontekst pamięci docelowej.
 
 `CONTEXT_LESS_THAN_OR_EQUAL`\
-Znajdź pierwszy kontekst pamięci na liście, który jest mniejszy lub równy kontekstowi pamięci docelowej.
+Znajdź pierwszy kontekst pamięci na liście, który jest mniejszy niż lub równy kontekstowi pamięci docelowej.
 
 `CONTEXT_GREATER_THAN_OR_EQUAL`\
-Znajdź pierwszy kontekst pamięci na liście, który jest większy lub równy kontekstowi pamięci docelowej.
+Znajdź pierwszy kontekst pamięci na liście, który jest większy niż lub równy kontekstowi pamięci docelowej.
 
 `CONTEXT_SAME_SCOPE`\
 Znajdź pierwszy kontekst pamięci na liście, który znajduje się w tym samym zakresie co kontekst pamięci docelowej.
@@ -85,17 +85,17 @@ Znajdź pierwszy kontekst pamięci na liście, który znajduje się w tym samym 
 Znajdź pierwszy kontekst pamięci na liście, który jest w tym samym procesie co kontekst pamięci docelowej.
 
 ## <a name="remarks"></a>Uwagi
-Przekazany jako argument do [Metody Porównania.](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+Przeszedł jako argument do metody [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) .
 
-Wartości te są używane do znajdowania pierwszego kontekstu pamięci na liście, która spełnia określone kryteria porównania. Kontekst pamięci otrzymuje listę kontekstów pamięci, aby porównać się za pośrednictwem `IDebugMemoryContext2::Compare` metody. Pierwszy kontekst pamięci na liście, dla `true` którego jest zwracany operator porównania.
+Te wartości są używane do znajdowania pierwszego kontekstu pamięci na liście, która spełnia określone kryteria porównania. Kontekst pamięci otrzymuje listę kontekstów pamięci, aby porównać siebie z nią za pomocą `IDebugMemoryContext2::Compare` metody. Pierwszy kontekst pamięci na liście, dla którego zwracany jest operator porównania `true` .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Porównanie](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+- [Porównaj](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

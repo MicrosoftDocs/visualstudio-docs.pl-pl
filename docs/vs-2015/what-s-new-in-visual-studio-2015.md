@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bdfae6235e7efb833eca0b87631af9204b4a678
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387112"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Co&#39;s Nowość w programie Visual Studio 2015
@@ -66,14 +66,14 @@ Aby dowiedzieć się więcej na temat wielu ulepszeń i nowych funkcji w program
 ### <a name="universal-windows-apps-for-any-windows-10-device"></a>Aplikacje uniwersalne systemu Windows dla dowolnego urządzenia z systemem Windows 10
  Dzięki platforma uniwersalna systemu Windows i naszym jednemu rdzeńowi systemu Windows można uruchomić tę samą aplikację na dowolnym urządzeniu z systemem Windows 10 z telefonów na komputerach stacjonarnych. Twórz te aplikacje uniwersalne systemu Windows za pomocą programu Visual Studio 2015 i narzędzi do tworzenia aplikacji uniwersalnych systemu Windows.
 
- ![platforma uniwersalna systemu Windows](./cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")
+ ![Platforma uniwersalna systemu Windows](./cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")
 
  Uruchom aplikację na telefonie z systemem Windows 10, Windows 10 Desktop lub Xbox. Jest to ten sam pakiet aplikacji. Wraz z wprowadzeniem pojedynczego, ujednoliconego rdzeń systemu Windows 10 jeden pakiet aplikacji może być uruchamiany na wszystkich platformach. Kilka platform zawiera zestawy SDK rozszerzeń, które można dodać do aplikacji, aby korzystać z zachowań specyficznych dla platformy. Na przykład zestaw SDK rozszerzenia dla urządzeń przenośnych obsługuje naciśnięcie przycisku Wstecz w systemie Windows Phone. Jeśli odwołujesz się do zestawu SDK rozszerzenia w projekcie, po prostu Dodaj testy środowiska uruchomieniowego, aby sprawdzić, czy ten zestaw SDK jest dostępny na tej platformie. Oznacza to, że możesz mieć ten sam pakiet aplikacji dla każdej platformy.
 
  Utwórz te [aplikacje uniwersalne systemu Windows](https://msdn.microsoft.com/library/dn975273.aspx)przy użyciu języków C#, Visual Basic, C++ lub JavaScript.
 
-### <a name="web"></a>sieć Web
- ASP.NET 5 to ważna aktualizacja do MVC, WebAPI i sygnalizująca, która działa w systemach Windows, Mac i Linux.  Program ASP.NET 5 został zaprojektowany od podstaw w celu zapewnienia do tworzenia nowoczesnych aplikacji opartych na chmurze, które tworzą stosy architektury .NET. Narzędzia programu Visual Studio 2015 są ściśle zintegrowane z popularnymi narzędziami deweloperskimi dla sieci Web, takimi jak Bower i grunt. Aby rozpocząć, zapoznaj się z artykułem dotyczącym wielu wpisów w blogu w [blogu programowanie i projektowanie w sieci Web](https://devblogs.microsoft.com/aspnet/).
+### <a name="web"></a>Sieć Web
+ ASP.NET 5 to ważna aktualizacja do MVC, WebAPI i sygnalizująca, która działa w systemach Windows, Mac i Linux.  Program ASP.NET 5 został zaprojektowany od podstaw w celu zapewnienia do tworzenia nowoczesnych aplikacji opartych na chmurze, które tworzą stosy architektury .NET. Narzędzia programu Visual Studio 2015 są ściśle zintegrowane z popularnymi narzędziami deweloperskimi dla sieci Web, takimi jak Bower i grunt. Aby rozpocząć, zapoznaj się z artykułem dotyczącym wielu wpisów w blogu w  [blogu programowanie i projektowanie w sieci Web](https://devblogs.microsoft.com/aspnet/).
 
 ### <a name="classic-desktop-and-windows-store"></a>Klasyczny pulpit i Sklep Windows
  Program Visual Studio 2015 nadal obsługuje klasyczny pulpit i programowanie dla Sklepu Windows. Wraz z rozwojem systemu Windows program Visual Studio rozwiąże się z nim.  W programie Visual Studio 2015 biblioteki i języki dla programu .NET, a także C++ mają znaczne postępy, które mają zastosowanie do wszystkich wersji systemu Windows.

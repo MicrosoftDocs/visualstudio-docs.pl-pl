@@ -9,10 +9,10 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 68bff8dbe2d0e5d85c8b18eeafaeaad06ba3982e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540078"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Testy jednostkowe istniejących aplikacji C++ za pomocą narzędzia Eksplorator testów
@@ -49,7 +49,7 @@ Zalecamy, aby przed zmianą istniejącej aplikacji upewnić się, że ma ona dob
 
 ## <a name="creating-the-tests"></a>Tworzenie testów
 
-### <a name="to-change-the-code-under-test-to-a-static-library"></a><a name="staticLink"></a>Aby zmienić testowany kod na bibliotekę statyczną
+### <a name="to-change-the-code-under-test-to-a-static-library"></a><a name="staticLink"></a> Aby zmienić testowany kod na bibliotekę statyczną
 
 - Jeśli testy muszą używać elementów członkowskich, które nie są eksportowane przez badany projekt, a badany projekt jest skompilowany jako Biblioteka dynamiczna, Rozważ przekonwertowanie go na bibliotekę statyczną.
 
@@ -61,7 +61,7 @@ Zalecamy, aby przed zmianą istniejącej aplikacji upewnić się, że ma ona dob
 
   Kontynuuj procedurę [łączenia testów z plikami obiektów lub bibliotek](#objectRef).
 
-### <a name="to-reference-exported-functions-from-the-test-project"></a><a name="projectRef"></a>Aby odwołać się do funkcji wyeksportowanych z projektu testowego
+### <a name="to-reference-exported-functions-from-the-test-project"></a><a name="projectRef"></a> Aby odwołać się do funkcji wyeksportowanych z projektu testowego
 
 - Jeśli badany projekt eksportuje funkcje, które chcesz przetestować, możesz dodać odwołanie do projektu kodu z projektu testowego.
 
@@ -85,7 +85,7 @@ Zalecamy, aby przed zmianą istniejącej aplikacji upewnić się, że ma ona dob
 
   Przejdź do pozycji [pisanie testów jednostkowych](#addTests).
 
-### <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="objectRef"></a>Aby połączyć testy z plikami obiektu lub biblioteki
+### <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="objectRef"></a> Aby połączyć testy z plikami obiektu lub biblioteki
 
 - Jeśli testowy kod nie eksportuje funkcji, które mają zostać przetestowane, można dodać plik Output **. obj** lub **. lib** do zależności projektu testowego.
 
@@ -109,7 +109,7 @@ Zalecamy, aby przed zmianą istniejącej aplikacji upewnić się, że ma ona dob
 
   Przejdź do pozycji [pisanie testów jednostkowych](#addTests).
 
-### <a name="to-add-unit-tests-in-the-same-project"></a><a name="sameProject"></a>Aby dodać testy jednostkowe w tym samym projekcie
+### <a name="to-add-unit-tests-in-the-same-project"></a><a name="sameProject"></a> Aby dodać testy jednostkowe w tym samym projekcie
 
 1. Zmodyfikuj właściwości projektu kodu produktu w celu uwzględnienia nagłówków i plików bibliotek, które są wymagane do testowania jednostkowego.
 
@@ -130,11 +130,11 @@ Zalecamy, aby przed zmianą istniejącej aplikacji upewnić się, że ma ona dob
 
    Przejdź do pozycji [pisanie testów jednostkowych](#addTests).
 
-## <a name="writing-the-unit-tests"></a><a name="addTests"></a>Pisanie testów jednostkowych
+## <a name="writing-the-unit-tests"></a><a name="addTests"></a> Pisanie testów jednostkowych
 
 1. W każdym pliku kodu testu jednostkowego Dodaj `#include` instrukcję do nagłówków w badanym projekcie.
 
-2. Dodaj klasy testowe i metody do plików kodu testu jednostkowego. Przykład:
+2. Dodaj klasy testowe i metody do plików kodu testu jednostkowego. Na przykład:
 
    ```cpp
    #include "stdafx.h"

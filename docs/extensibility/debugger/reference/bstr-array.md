@@ -1,5 +1,5 @@
 ---
-title: BSTR_ARRAY | Dokumenty firmy Microsoft
+title: BSTR_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7e9859267cc26ec012852a1150e458c81383dfd3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737707"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
-Struktura, która opisuje tablicę ciągów.
+Struktura opisująca tablicę ciągów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,20 +43,20 @@ struct BSTR_ARRAY {
 
 ## <a name="members"></a>Elementy członkowskie
 `dwCount`\
-Liczba ciągów `Members` w tablicy.
+Liczba ciągów w `Members` tablicy.
 
 `Members`\
 Tablica ciągów.
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest zwracana z [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) metody.
+Ta struktura jest zwracana z metody [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) .
 
- [Tylko C++] Każdy pojedynczy ciąg musi `SysFreeString`zostać `Members` zwolniony przy `CoTaskMemFree`użyciu , a tablica musi zostać zwolniona za pomocą programu .
+ [Tylko C++] Każdy pojedynczy ciąg musi być zwolniony przy użyciu `SysFreeString` , a `Members` Tablica musi być zwolniona z `CoTaskMemFree` .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: CANSTOP_REASON | Dokumenty firmy Microsoft
+title: CANSTOP_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d7be361d4468584c109db52f487b3de3c1fdff0a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737681"
 ---
 # <a name="canstop_reason"></a>CANSTOP_REASON
-Służy do określenia, czy program może zatrzymać wykonanie po osiągnięciu określonego punktu w wykonaniu.
+Służy do określenia, czy program może zatrzymać wykonywanie po osiągnięciu określonego punktu w wykonaniu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -50,12 +50,12 @@ Określa punkt wejścia danego programu.
 Określa przechodzenie do funkcji.
 
 ## <a name="remarks"></a>Uwagi
-Przekazany jako argument do [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metody, aby potwierdzić za pomocą Menedżera debugowania sesji (SDM), jeśli jest w porządku, aby zatrzymać po osiągnięciu punktu wejścia programu lub po przejściu do funkcji lub metody.
+Przeszedł jako argument do metody [Getpowód](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) , aby potwierdzić z menedżerem debugowania sesji (SDM), jeśli nie można go zatrzymać po osiągnięciu punktu wejścia programu lub po przejściu do funkcji lub metody.
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

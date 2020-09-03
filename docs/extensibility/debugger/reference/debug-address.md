@@ -1,5 +1,5 @@
 ---
-title: DEBUG_ADDRESS | Dokumenty firmy Microsoft
+title: DEBUG_ADDRESS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fe778ba3ed80930a4cd7b4fa1170f286b3ccf6ec
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737511"
 ---
 # <a name="debug_address"></a>DEBUG_ADDRESS
@@ -56,17 +56,17 @@ Identyfikator GUID modułu zawierającego ten adres.
 Token identyfikujący klasę lub typ tego adresu.
 
 > [!NOTE]
-> Ta wartość jest specyficzna dla dostawcy symbolu i dlatego nie ma ogólnego znaczenia innego niż jako identyfikator dla typu klasy.
+> Ta wartość jest specyficzna dla dostawcy symboli, dlatego nie ma ogólnego znaczenia innego niż identyfikator dla typu klasy.
 
 `addr`\
-Struktura [DEBUG_ADDRESS_UNION,](../../../extensibility/debugger/reference/debug-address-union.md) która zawiera unię struktur opisujących poszczególne typy adresów. Wartość `addr`.`dwKind` pochodzi z wyliczenia [ADDRESS_KIND,](../../../extensibility/debugger/reference/address-kind.md) które wyjaśnia, jak interpretować związek.
+Struktura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) , która zawiera Unię struktur, które opisują poszczególne typy adresów. Wartość `addr` .`dwKind` pochodzi z wyliczenia [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) , w którym wyjaśniono, jak interpretować Unię.
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest przekazywana do [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) metody do wypełnienia.
+Ta struktura jest przenoszona do metody [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) do wypełnienia.
 
-**Ostrzeżenie [Tylko C++]**
+**Ostrzeżenie [tylko C++]**
 
-Jeśli `addr.dwKind` `ADDRESS_KIND_METADATA_LOCAL` jest, `addr.addr.addrLocal.pLocal` a jeśli nie jest wartością null, należy wywołać `Release` wskaźnik tokenu:
+Jeśli `addr.dwKind` jest `ADDRESS_KIND_METADATA_LOCAL` i jeśli `addr.addr.addrLocal.pLocal` nie jest wartością null, należy wywołać `Release` wskaźnik tokenu:
 
 ```
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != NULL)
@@ -76,9 +76,9 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != 
 ```
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: sh.h
+Nagłówek: sh. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

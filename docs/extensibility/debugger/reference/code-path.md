@@ -1,5 +1,5 @@
 ---
-title: CODE_PATH | Dokumenty firmy Microsoft
+title: CODE_PATH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d3148b75e56b61ee545c6bc82b972c13572199af
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737669"
 ---
 # <a name="code_path"></a>CODE_PATH
@@ -46,15 +46,15 @@ public struct CODE_PATH {
 Nazwa ścieżki kodu.
 
 `pCode`\
-[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który identyfikuje, gdzie w kodzie, aby przejść do funkcji.
+Obiekt [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , który określa, gdzie w kodzie mają być wkroczenie do funkcji.
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest używana do implementacji przechodzenia do funkcji. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) zwraca wszystkie wywołania z bieżącej lokalizacji w debugowanym programie. Ta struktura reprezentuje jedno takie wywołanie.
+Ta struktura służy do implementowania funkcji krok po kroku. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) zwraca wszystkie wywołania z bieżącej lokalizacji w debugowanym programie. Ta struktura reprezentuje jedno takie wywołanie.
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

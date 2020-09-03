@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e2ad067adf79a2a7d08c6a45e7c205480621abf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658955"
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>Starsza wersja projektanta pomocy interfejsu użytkownika programu Windows Workflow Foundation
-Ta sekcja zawiera tematy pomocy kontekstowej dla starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)] w [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Użyj starszego projektanta, gdy chcesz określić [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+Ta sekcja zawiera tematy pomocy kontekstowej dla starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] programu [!INCLUDE[vs2010](../includes/vs2010-md.md)] . Użyj starszego projektanta, gdy musisz mieć miejsce docelowe [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
- Możesz uzyskać dostęp do tych tematów z poziomu interfejsu użytkownika [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)], naciskając klawisz **F1** , gdy zostanie otwarte okno dialogowe starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)].
+ Dostęp do tych tematów można uzyskać [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] za pomocą interfejsu użytkownika, naciskając klawisz **F1** , gdy [!INCLUDE[wfd2](../includes/wfd2-md.md)] jest otwarte okno dialogowe.
 
 ## <a name="in-this-section"></a>W tej sekcji
  [Powiązanie z właściwością działania, okno dialogowe (starsza wersja)](../workflow-designer/bind-to-an-activity-s-property-dialog-box-legacy.md)
@@ -40,4 +40,4 @@ Ta sekcja zawiera tematy pomocy kontekstowej dla starszej [!INCLUDE[wfd1](../inc
 
  [Konfigurowanie motywu, okno dialogowe (starsza wersja)](../workflow-designer/theme-configuration-dialog-box-legacy.md)
 
- [Motywy, Projektant przepływu pracy, opcje — okno dialogowe (starsza wersja)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)
+ [Motywy, Projektant przepływu pracy, Opcje, okno dialogowe (starsza wersja)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)

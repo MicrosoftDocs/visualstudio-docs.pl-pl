@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON | Dokumenty firmy Microsoft
+title: DEBUG_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 59954ea7e89390a5e35dbe0bfb0412da1aabc80f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737422"
 ---
 # <a name="debug_reason"></a>DEBUG_REASON
-Określa, dlaczego proces został uruchomiony do debugowania.
+Określa, dlaczego proces został uruchomiony na potrzeby debugowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -50,27 +50,27 @@ public enum enum_DEBUG_REASON {
 
 ## <a name="fields"></a>Pola
 `DEBUG_REASON_ERROR`\
-Wystąpił błąd niespecyficznych (jest używany jako warunek domyślny, gdy żaden z innych powodów nie pasuje).
+Wystąpił błąd nieokreślony (jest używany jako warunek domyślny, gdy żadna z innych przyczyn nie jest zgodna).
 
 `DEBUG_REASON_USER_LAUNCHED`\
 Proces został uruchomiony na żądanie użytkownika.
 
 `DEBUG_REASON_USER_ATTACHED`\
-Już uruchomiony proces został dołączony przez użytkownika.
+Użytkownik załączył już uruchomiony proces.
 
 `DEBUG_REASON_AUTO_ATTACHED`\
 Proces został automatycznie dołączony do momentu jego uruchomienia.
 
 `DEBUG_REASON_CAUSALITY`\
-Proces został uruchomiony z powodu zdarzenia debugowania *Just-In-Time* (JIT).
+Proces został uruchomiony z powodu zdarzenia debugowania *just-in-Time* (JIT).
 
 ## <a name="remarks"></a>Uwagi
-Zwrócono z [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) metody.
+Zwrócone z metody [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

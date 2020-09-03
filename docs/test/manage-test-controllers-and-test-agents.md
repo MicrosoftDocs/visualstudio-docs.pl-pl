@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 78bd0143ee2584bcabb5e8ed4946818ee2590789
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286703"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Zarządzanie kontrolerami testów i agentami testowymi
@@ -117,7 +117,7 @@ Jeśli kontroler testów nie jest zarejestrowany w projekcie, wykonaj następuj�
 3. W okienku **agenci** wybierz nazwę agenta testowego. Jeśli Agent jest nadal w trybie online, wybierz opcję **offline.** Aby go usunąć, wybierz pozycję **Usuń**.
 
    > [!NOTE]
-   > Usunięcie agenta testowego tylko odkojarzy go z kontrolerem testów. Aby całkowicie odinstalować agenta testowego, należy użyć **apletu programy i funkcje** w panelu sterowania na komputerze agenta testowego.
+   > Usunięcie agenta testowego tylko odkojarzy go z kontrolerem testów. Aby całkowicie odinstalować agenta testowego, należy użyć  **apletu programy i funkcje** w panelu sterowania na komputerze agenta testowego.
 
 ::: moniker range="vs-2017"
 Jeśli kontroler testów jest zarejestrowany w projekcie, Usuń agenta przy użyciu Microsoft Test Manager.
@@ -131,7 +131,7 @@ Stan agenta testowego może być jedną z następujących wartości:
 |-|-----------------|
 |Uruchamianie testu|Uruchamianie testów|
 |Gotowy|Dostępne do uruchamiania testów lub zbierania danych i diagnostyki|
-|W trybie offline|Niedostępne do uruchamiania testów lub zbierania danych i diagnostyki|
+|Tryb offline|Niedostępne do uruchamiania testów lub zbierania danych i diagnostyki|
 |Odłączony|Agent testowy nie został uruchomiony|
 
 Można zmienić stan i inne ustawienia dla agenta testowego, korzystając z poniższych procedur.

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ddfc95d27179f48aef9444819cc0437a3143d5a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539259"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach
@@ -65,24 +65,24 @@ ms.locfileid: "85539259"
 
  Następujące wyjątki mogą być zgłaszane z metody get właściwości:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>i wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName> )
+- <xref:System.InvalidOperationException?displayProperty=fullName> i wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName>i wszystkie pochodne
+- <xref:System.NotSupportedException?displayProperty=fullName> i wszystkie pochodne
 
-- <xref:System.ArgumentException?displayProperty=fullName>(tylko ze indeksowanych Get)
+- <xref:System.ArgumentException?displayProperty=fullName> (tylko ze indeksowanych Get)
 
-- <xref:System.Collections.Generic.KeyNotFoundException>(tylko ze indeksowanych Get)
+- <xref:System.Collections.Generic.KeyNotFoundException> (tylko ze indeksowanych Get)
 
 ### <a name="event-accessor-methods"></a>Metody dostępu do zdarzeń
  Metody dostępu zdarzeń powinny być prostymi operacjami, które nie generują wyjątków. Zdarzenie nie powinno zgłosić wyjątku podczas próby dodania lub usunięcia programu obsługi zdarzeń.
 
  Następujące wyjątki mogą zostać zgłoszone przez obiekt dostępu do zdarzeń:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>i wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName> )
+- <xref:System.InvalidOperationException?displayProperty=fullName> i wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName>i wszystkie pochodne
+- <xref:System.NotSupportedException?displayProperty=fullName> i wszystkie pochodne
 
-- <xref:System.ArgumentException>i pochodne
+- <xref:System.ArgumentException> i pochodne
 
 ### <a name="equals-methods"></a>Equals — metody
  Następujące metody **równości** nie powinny generować wyjątków:
