@@ -1,5 +1,5 @@
 ---
-title: Udostępnianie obiektów projektu | Dokumentacja firmy Microsoft
+title: Udostępnianie obiektów projektu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,26 +12,26 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f40c523c058bf215cc4574b3aa4a2e038c833beb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196644"
 ---
 # <a name="exposing-project-objects"></a>Udostępnianie obiektów projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Typy projektów niestandardowych można podać obiektów automatyzacji, aby zezwolić na dostęp do projektu przy użyciu interfejsów automatyzacji. Każdy typ projektu powinien zapewniać standard <xref:EnvDTE.Project> obiektu automatyzacji, który jest dostępny z <xref:EnvDTE.Solution>, który zawiera zbiór wszystkich projektów, które są otwarte w środowisku IDE. Każdy element w projekcie powinien być udostępniane przez <xref:EnvDTE.ProjectItem> obiektu uzyskuje się z czasem <xref:EnvDTE.Project.ProjectItems>. Oprócz tych obiektów automatyzacji w wersji standard projektów można zaoferować obiektów automatyzacji specyficznych dla projektu.  
+Niestandardowe typy projektów mogą zapewniać obiekty automatyzacji, aby zezwolić na dostęp do projektu za pomocą interfejsów automatyzacji. Każdy typ projektu jest oczekiwany do udostępnienia standardowego <xref:EnvDTE.Project> obiektu automatyzacji, do którego jest uzyskiwany dostęp z <xref:EnvDTE.Solution> , który zawiera kolekcję wszystkich projektów, które są otwarte w IDE. Każdy element w projekcie powinien być uwidoczniony przez <xref:EnvDTE.ProjectItem> obiekt, do którego można uzyskać dostęp za pomocą <xref:EnvDTE.Project.ProjectItems> . Oprócz tych standardowych obiektów automatyzacji projekty mogą oferować obiekty automatyzacji specyficzne dla projektu.  
   
- Możesz utworzyć niestandardowe poziomu głównego obiektów automatyzacji, które mogą uzyskać dostęp z późnym wiązaniem z głównego DTE obiektu przy użyciu `DTE.<customeObjectName>` lub `DTE.GetObject(“<customObjectName>”)`. Na przykład Visual C++ Tworzy kolekcję projektu specyficznego dla projektu C++ o nazwie "VCProjects", której będziesz mieć dostęp, za pomocą obiektu DTE. VCProjects lub DTE. GetObject("VCProjects"). Można również utworzyć Project.Object, która jest unikatowa dla typu projektu Project.CodeModel, które mogą być wyszukiwane w jego najbardziej pochodnego obiektu ProjectItem, który uwidacznia ProjectItem.Object i ProjectItem.FileCodeModel.  
+ Można utworzyć niestandardowe obiekty automatyzacji na poziomie głównym, do których można uzyskać dostęp z późnym wiązaniem z głównego obiektu DTE przy użyciu `DTE.<customeObjectName>` lub `DTE.GetObject(“<customObjectName>”)` . Na przykład Visual C++ tworzy kolekcję projektów specyficzną dla projektu C++ o nazwie "VCProjects", do której można uzyskać dostęp przy użyciu DTE. VCProjects lub DTE. GetObject ("VCProjects"). Można również utworzyć obiekt Project. Object, który jest unikatowy dla typu projektu, projektu. CodeModel, który może być zapytania dla jego najbardziej pochodnego obiektu, ProjectItem, który uwidacznia ProjectItem. Object i ProjectItem. FileCodeModel.  
   
- Jest typową Konwencją projekty do udostępnienia jako zbiór projektów niestandardowych, specyficzne dla projektu. Na przykład [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] tworzy kolekcję określonego projektu C++, który można następnie uzyskać dostęp za pomocą `DTE.VCProjects` lub `DTE.GetObject("VCProjects")`. Można również utworzyć `Project.Object`, który jest unikatowy dla typu projektu `Project.CodeModel`, może być odpytywany dla swoich najbardziej pochodnego obiektu `ProjectItem`, który ujawnia `ProjectItem.Object`, a `ProjectItem.FileCodeModel`.  
+ Jest to wspólna Konwencja dla projektów, która umożliwia uwidocznienie niestandardowej kolekcji projektów specyficznych dla projektu. Na przykład program [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] tworzy kolekcję projektu specyficzną dla języka C++, do której można uzyskać dostęp przy użyciu `DTE.VCProjects` lub `DTE.GetObject("VCProjects")` . Można również utworzyć obiekt `Project.Object` , który jest unikatowy dla typu projektu, a `Project.CodeModel` , który może być zapytania dla jego najbardziej pochodnego obiektu, a `ProjectItem` , który uwidacznia `ProjectItem.Object` i `ProjectItem.FileCodeModel` .  
   
-### <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Aby współtworzyć obiekt pakietu VSPackage specyficzne dla projektu  
+### <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Aby współtworzyć obiekt specyficzny dla pakietu VSPackage dla projektu  
   
-1. Dodaj odpowiednie klucze do Twojego pakietu VSPackage plik .pkgdef.  
+1. Dodaj odpowiednie klucze do pliku pkgdef pakietu VSPackage.  
   
-     Na przykład poniżej przedstawiono ustawienia .pkgdef dla projektów języka C++:  
+     Na przykład poniżej przedstawiono ustawienia. pkgdef dla projektu języka C++:  
   
     ```  
     [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\Automation]  
@@ -40,7 +40,7 @@ Typy projektów niestandardowych można podać obiektów automatyzacji, aby zezw
     "VCProjectEngineEventsObject"=""  
     ```  
   
-2. Wdrożyć kod w <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metody, jak w poniższym przykładzie.  
+2. Zaimplementuj kod w <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metodzie, tak jak w poniższym przykładzie.  
   
     ```cpp  
     STDMETHODIMP CVsPackage::GetAutomationObject(  
@@ -70,7 +70,7 @@ Typy projektów niestandardowych można podać obiektów automatyzacji, aby zezw
     }   
     ```  
   
-     W kodzie `g_wszAutomationProjects` jest nazwą kolekcji projektów. `GetAutomationProjects` Metoda tworzy obiekt, który implementuje `Projects` interfejsu i zwraca `IDispatch` wskaźnik do obiektu wywołującego, jak pokazano w poniższym przykładzie kodu.  
+     W kodzie, `g_wszAutomationProjects` jest nazwą kolekcji projektu. `GetAutomationProjects`Metoda tworzy obiekt, który implementuje `Projects` interfejs i zwraca `IDispatch` wskaźnik do obiektu wywołującego, jak pokazano w poniższym przykładzie kodu.  
   
     ```cpp  
     HRESULT CVsPackage::GetAutomationProjects(/* [out] */ IDispatch ** ppIDispatch)  
@@ -88,9 +88,9 @@ Typy projektów niestandardowych można podać obiektów automatyzacji, aby zezw
     }  
     ```  
   
-     Należy wybrać unikatową nazwę dla obiektu automatyzacji. Konflikty nazw są nieprzewidywalne i kolizji powodują konflikt nazwy obiektów arbitralnie zostanie wygenerowany użycie tej samej nazwie, wiele typów projektów. Należy dołączyć nazwę firmy lub niektóre unikatowe aspekty jego nazwę produktu, nazwę obiektu automatyzacji.  
+     Należy wybrać unikatową nazwę obiektu automatyzacji. Konflikty nazw są nieprzewidywalne, a kolizje powodują arbitralne zgłaszanie sprzecznych nazw obiektów, jeśli wiele typów projektów używa tej samej nazwy. Należy podać nazwę firmy lub unikatowy aspekt nazwy produktu w nazwie obiektu automatyzacji.  
   
-     Niestandardowy `Projects` obiekt kolekcji jest punktem wejścia jako udogodnienie dla pozostałej części projektu modelu automatyzacji. Obiekt projektu jest także dostępny z <xref:EnvDTE.Solution> kolekcji projektów. Po utworzeniu odpowiedni kod i wpisy rejestru, które zapewniają klientom `Projects` obiekty kolekcji implementacji należy podać pozostałe standardowe obiekty modelu projektu. Aby uzyskać więcej informacji, zobacz [projektu modelowania](../../extensibility/internals/project-modeling.md).  
+     `Projects`Obiekt kolekcji niestandardowej jest wygodnym punktem wejścia dla pozostałej części modelu automatyzacji projektu. Obiekt projektu jest również dostępny z <xref:EnvDTE.Solution> kolekcji projektu. Po utworzeniu odpowiedniego kodu i wpisów rejestru, które dostarczają odbiorców z `Projects` obiektami kolekcji, implementacja musi udostępniać pozostałe obiekty standardowe dla modelu projektu. Aby uzyskać więcej informacji, zobacz artykuł [Modeling Project](../../extensibility/internals/project-modeling.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

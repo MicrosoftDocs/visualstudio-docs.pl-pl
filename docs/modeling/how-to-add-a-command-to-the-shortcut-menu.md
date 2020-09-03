@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6aac779a3c165d10262c078ff431731d9d248f3a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545720"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Instrukcje: Dodawanie polecenia do menu skrótów
@@ -48,7 +48,7 @@ Użyj metody w tym temacie, jeśli:
 
    W przeciwnym razie Rozważ użycie metody MEF w celu zdefiniowania poleceń. Aby uzyskać więcej informacji, zobacz sekcję "Rozpoznaj [swój DSL" przy użyciu MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
-## <a name="declare-the-command-in-commandsvsct"></a><a name="VSCT"></a>Zadeklaruj polecenie w poleceniach. vsct
+## <a name="declare-the-command-in-commandsvsct"></a><a name="VSCT"></a> Zadeklaruj polecenie w poleceniach. vsct
  Polecenia menu są zadeklarowane w DslPackage\Commands.vsct. Te definicje określają etykiety elementów menu i miejsca, w których są wyświetlane w menu.
 
  Plik, który edytujesz, Commands. vsct, Importuje definicje z kilku plików. h, które znajdują się w katalogu *Visual Studio SDK ścieżka instalacji*\VisualStudioIntegration\Common\Inc. Zawiera również GeneratedVsct. vsct, który jest generowany na podstawie definicji DSL.
@@ -128,7 +128,7 @@ Użyj metody w tym temacie, jeśli:
 
     - `My Context Menu Command`
 
-## <a name="update-the-package-version-in-packagett"></a><a name="version"></a>Aktualizowanie wersji pakietu w programie Package.tt
+## <a name="update-the-package-version-in-packagett"></a><a name="version"></a> Aktualizowanie wersji pakietu w programie Package.tt
  Za każdym razem, gdy dodasz lub zmienisz polecenie, zaktualizuj `version` parametr, <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> który jest stosowany do klasy pakietu przed wydaniem nowej wersji języka specyficznego dla domeny.
 
  Ponieważ Klasa pakietu jest zdefiniowana w wygenerowanym pliku, zaktualizuj atrybut w pliku szablonu tekstu, który generuje plik Package.cs.
@@ -139,11 +139,11 @@ Użyj metody w tym temacie, jeśli:
 
 2. Znajdź `ProvideMenuResource` atrybut.
 
-3. Zwiększ `version` parametr atrybutu, który jest drugim parametrem. Jeśli chcesz, możesz jawnie napisać nazwę parametru, aby przypominać o swoim przeznaczeniu. Przykład:
+3. Zwiększ `version` parametr atrybutu, który jest drugim parametrem. Jeśli chcesz, możesz jawnie napisać nazwę parametru, aby przypominać o swoim przeznaczeniu. Na przykład:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
-## <a name="define-the-behavior-of-the-command"></a><a name="CommandSet"></a>Zdefiniuj zachowanie polecenia
+## <a name="define-the-behavior-of-the-command"></a><a name="CommandSet"></a> Zdefiniuj zachowanie polecenia
 
 Twoje DSL ma już kilka poleceń, które są zaimplementowane w klasie częściowej zadeklarowanej w DslPackage\GeneratedCode\CommandSet.cs. Aby dodać nowe polecenia, należy ją rozwinąć, tworząc nowy plik, który zawiera częściową deklarację tej samej klasy. Nazwa klasy jest zwykle *\<YourDslName>* `CommandSet` . Warto zacząć od zweryfikowania nazwy klasy i sprawdzenia jej zawartości.
 
@@ -159,7 +159,7 @@ Klasa zestawu poleceń pochodzi od <xref:Microsoft.VisualStudio.Modeling.Shell.C
 
 2. W **DslPackage**Utwórz folder o nazwie **kod niestandardowy**. W tym folderze Utwórz nowy plik klasy o nazwie `CommandSet.cs` .
 
-3. W nowym pliku Napisz deklarację częściową, która ma taką samą przestrzeń nazw i nazwę jak wygenerowana Klasa częściowa. Przykład:
+3. W nowym pliku Napisz deklarację częściową, która ma taką samą przestrzeń nazw i nazwę jak wygenerowana Klasa częściowa. Na przykład:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -222,15 +222,15 @@ Następujące fragmenty są często przydatne w metodach OnStatus:
 
 - `this.CurrentSelection`. Kształt, który kliknięto prawym przyciskiem myszy, jest zawsze uwzględniony na tej liście. Jeśli użytkownik kliknie pustą część diagramu, diagram jest jedyną składową listy.
 
-- `this.IsDiagramSelected()` - `true`Jeśli użytkownik kliknął pustą część diagramu.
+- `this.IsDiagramSelected()` - `true` Jeśli użytkownik kliknął pustą część diagramu.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`-Użytkownik nie wybrał wielu obiektów
+- `this.IsSingleSelection()` -Użytkownik nie wybrał wielu obiektów
 
-- `this.SingleSelection`-kształt lub diagram, który kliknął użytkownik prawym przyciskiem myszy.
+- `this.SingleSelection` -kształt lub diagram, który kliknął użytkownik prawym przyciskiem myszy.
 
-- `shape.ModelElement as MyLanguageElement`— element modelu reprezentowany przez kształt.
+- `shape.ModelElement as MyLanguageElement` — element modelu reprezentowany przez kształt.
 
 Ogólnie rzecz biorąc, ustaw `Visible` Właściwość zależnie od tego, co jest zaznaczone, i ustaw `Enabled` Właściwość zależnie od stanu wybranych elementów.
 
@@ -297,7 +297,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 > Jeśli zmienisz sekcję symboli pliku VSCT, musisz również zmienić te deklaracje tak, aby były zgodne. Należy również zwiększyć numer wersji w Package.tt
 
- Zarejestruj polecenia menu w ramach tego zestawu poleceń. `GetMenuCommands()`jest wywoływana jednokrotnie po zainicjowaniu diagramu:
+ Zarejestruj polecenia menu w ramach tego zestawu poleceń. `GetMenuCommands()` jest wywoływana jednokrotnie po zainicjowaniu diagramu:
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()
@@ -329,7 +329,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 4. Kliknij prawym przyciskiem myszy różne elementy na diagramie, aby sprawdzić, czy polecenie jest prawidłowo włączone lub wyłączone, i odpowiednio wyświetlane lub ukryte, w zależności od wybranego elementu.
 
-## <a name="troubleshoot"></a>Rozwiąż problemy
+## <a name="troubleshoot"></a>Rozwiązywanie problemów
 
 **Polecenie nie jest wyświetlane w menu:**
 
@@ -357,7 +357,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Upewnij się, że zostały odinstalowane wcześniejsze wersje pakietu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Pisanie kodu w celu dostosowania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Instrukcje: modyfikowanie standardowego polecenia menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)

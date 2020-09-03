@@ -1,5 +1,5 @@
 ---
-title: Opcje ustawień projektu języka C++
+title: Opcje ustawień projektu C++
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -19,27 +19,27 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68918882"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Ustawienia projektu VC++, projekty i rozwiązania, opcje — Okno dialogowe
 
-To okno dialogowe umożliwia definiowanie ustawień kompilacji i projektu języka C++ związanych z rejestrowaniem, wydajnością i obsługiwanymi typami plików.
+To okno dialogowe umożliwia zdefiniowanie ustawień kompilacji i projektu języka C++ związanych z rejestrowaniem, wydajnością i typami plików pomocniczych.
 
 ## <a name="to-access-this-dialog-box"></a>Aby uzyskać dostęp do tego okna dialogowego
 
 1. W menu **Tools** (Narzędzia) kliknij pozycję **Options** (Opcje).
 
-2. Wybierz **pozycję Projekty i rozwiązania**, a następnie wybierz pozycję Ustawienia projektu **VC++**.
+2. Wybierz **projekty i rozwiązania**, a następnie wybierz pozycję **Ustawienia projektu VC + +**.
 
-## <a name="build-logging"></a>Tworzenie rejestrowania
+## <a name="build-logging"></a>Rejestrowanie kompilacji
 
  **Tak**
 
-  Włącza generowanie pliku dziennika kompilacji. Ta opcja generuje BuildLog.htm, który można znaleźć w katalogu plików pośrednich projektu. Każda świeża kompilacja zastępuje poprzedni plik BuildLog.htm.
+  Włącza generowanie pliku dziennika kompilacji. Ta opcja generuje BuildLog.htm, które znajdują się w katalogu pośrednich plików projektu. Każda nowa kompilacja zastępuje poprzedni plik BuildLog.htm.
 
  **Nie**
 
@@ -49,7 +49,7 @@ To okno dialogowe umożliwia definiowanie ustawień kompilacji i projektu język
 
  **Tak**
 
-Wyświetla listę zmiennych środowiskowych w pliku dziennika kompilacji. Ta opcja określa echo wszystkich zmiennych środowiskowych, podczas kompilacji projektów C++ do pliku dziennika kompilacji.
+Wyświetla listę zmiennych środowiskowych w pliku dziennika kompilacji. Ta opcja określa, że wszystkie zmienne środowiskowe są wyświetlane podczas kompilacji projektów C++ w pliku dziennika kompilacji.
 
  **Nie**
 
@@ -59,47 +59,47 @@ Wyklucz zmienne środowiskowe z pliku dziennika kompilacji.
 
  **Tak**
 
-  Włącza czas kompilacji. Jeśli ta opcja jest zaznaczona, czas potrzebny na ukończenie kompilacji jest księgowane w oknie Dane wyjściowe. Aby uzyskać więcej informacji, zobacz [Okno wyjściowe](../../ide/reference/output-window.md).
+  Włącza czas kompilacji. W przypadku wybrania tej operacji w oknie danych wyjściowych zostanie opublikowany czas potrzebny na zakończenie kompilacji. Aby uzyskać więcej informacji, zobacz [okno dane wyjściowe](../../ide/reference/output-window.md).
 
  **Nie**
 
 Wyłącza czas kompilacji.
 
-## <a name="maximum-concurrent-c-compilations"></a>Maksymalna jednoczesna kompilacja języka C++
+## <a name="maximum-concurrent-c-compilations"></a>Maksymalna liczba współbieżnych kompilacji języka C++
 
-Określa maksymalną liczbę rdzeni procesora CPU do użycia dla równoległej kompilacji C++.
+Określa maksymalną liczbę rdzeni procesora CPU, które mają być używane do równoległej kompilacji w języku C++.
 
 ## <a name="extensions-to-include"></a>Rozszerzenia do uwzględnienia
 
-Określa rozszerzenia nazw plików, które mogą być przenoszone do projektu.
+Określa rozszerzenia nazw plików, które można przenieść do projektu.
 
 ## <a name="extensions-to-hide"></a>Rozszerzenia do ukrycia
 
-Określa rozszerzenia nazw plików, które nie będą wyświetlane w **Eksploratorze rozwiązań** po włączeniu **funkcji Pokaż wszystkie pliki.**
+Określa rozszerzenia nazw plików, które nie będą wyświetlane w **Eksplorator rozwiązań** po włączeniu **wyświetlania wszystkich plików** .
 
 ## <a name="build-customization-search-path"></a>Ścieżka wyszukiwania dostosowywania kompilacji
 
-Określa listę katalogów zawierających pliki .rules, które ułatwiają definiowanie reguł kompilacji dla projektów.
+Określa listę katalogów zawierających pliki reguł, które ułatwiają definiowanie reguł kompilacji dla projektów.
 
-## <a name="solution-explorer-mode"></a>Tryb Eksploratora rozwiązań
+## <a name="solution-explorer-mode"></a>Tryb Eksplorator rozwiązań
 
 **Pokaż tylko pliki w projekcie**
 
-Konfiguruje **Eksploratora rozwiązań,** aby wyświetlał tylko pliki w projekcie.
+Konfiguruje **Eksplorator rozwiązań** tylko do wyświetlania plików w projekcie.
 
 **Pokaż wszystkie pliki**
 
-Konfiguruje **Eksploratora rozwiązań,** aby wyświetlał pliki w projekcie i pliki na dysku w folderze projektu.
+Konfiguruje **Eksplorator rozwiązań** do wyświetlania plików w projekcie i plikach na dysku w folderze projektu.
 
 ## <a name="enable-project-caching"></a>Włącz buforowanie projektu
 
 **Tak**
 
-Umożliwia programowi Visual Studio buforowanie danych projektu, dzięki czemu podczas następnego otwarcia projektu można załadować te dane w pamięci podręcznej, a nie ponownie obliczyć je z plików projektu. Korzystanie z danych w pamięci podręcznej może znacznie przyspieszyć czas ładowania projektu.
+Umożliwia programowi Visual Studio buforowanie danych projektu w taki sposób, aby po otwarciu projektu w następnym momencie można było załadować te dane w pamięci podręcznej, a nie ponownie obliczać je na podstawie plików projektu. Użycie danych w pamięci podręcznej może znacznie skrócić czas ładowania projektu.
 
 **Nie**
 
-Nie należy używać buforowanych danych projektu. Analizuj pliki projektu za każdym razem, gdy projekt się ładuje.
+Nie używaj danych projektu w pamięci podręcznej. Analizuj pliki projektu za każdym razem, gdy projekt jest ładowany.
 
 ## <a name="see-also"></a>Zobacz też
 

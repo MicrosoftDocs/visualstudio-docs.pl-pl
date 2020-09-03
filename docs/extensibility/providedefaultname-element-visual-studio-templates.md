@@ -1,5 +1,5 @@
 ---
-title: Element ProvideDefaultName (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: ProvideDefaultName —, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 192716198f605a5f6b4f62730e84dcf83b4229cc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701715"
 ---
-# <a name="providedefaultname-element-visual-studio-templates"></a>Element ProvideDefaultName (szablony programu Visual Studio)
-Określa, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] czy system projektu wygeneruje domyślną nazwę szablonu w oknie dialogowym **Dodawanie nowego elementu** lub nowego **projektu.**
+# <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName —, element (szablony Visual Studio)
+Określa, czy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] system projektu będzie generował nazwę domyślną dla szablonu w oknie dialogowym **Dodaj nowy element** lub **Nowy projekt** .
 
- \<>> \<TemplateData \<> ProvideDefaultName
+ \<VSTemplate> \<TemplateData>
+ \<ProvideDefaultName>
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,22 +45,22 @@ Określa, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] czy system p
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst musi być `true` albo `false`, wskazując, czy wygenerować domyślną nazwę szablonu w oknie dialogowym **Dodawanie nowego elementu** lub nowego **projektu.**
+ Tekst musi mieć wartość `true` lub `false` , wskazujący, czy generować nazwę domyślną szablonu w oknie dialogowym **Dodaj nowy element** lub **Nowy projekt** .
 
 ## <a name="remarks"></a>Uwagi
- `ProvideDefaultName`jest elementem opcjonalnym. Wartością domyślną jest `true`.
+ `ProvideDefaultName` jest elementem opcjonalnym. Wartość domyślna to `true`.
 
- Jeśli `ProvideDefaultName` element `false`jest , pola **Nazwa** okna dialogowego **Dodaj nowy** `<Enter_name>`element i Nowy **projekt** zawierają wartość .
+ Jeśli `ProvideDefaultName` element to `false` , pola **nazwy** okna dialogowego **Dodaj nowy element** i **Nowy projekt** zawierają wartość `<Enter_name>` .
 
- Użyj elementu [DefaultName,](../extensibility/defaultname-element-visual-studio-templates.md) aby określić domyślną nazwę projektu lub elementu w oknach dialogowych **Dodawanie nowego elementu** i nowego **projektu.** Gdy `ProvideDefaultName` wartość elementu jest `true`, pominięcie `DefaultName` elementu dla projektów wypełnia okno dialogowe z nazwą szablonu, czyli wartość z [Name](../extensibility/name-element-visual-studio-templates.md) elementu.
+ Użyj elementu [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) , aby określić nazwę domyślną projektu lub elementu w oknach dialogowych **Dodaj nowy element** i **Nowy projekt** . Gdy wartość `ProvideDefaultName` elementu jest `true` , pominięcie `DefaultName` elementu dla projektów powoduje wypełnienie okna dialogowego nazwą szablonu, czyli wartością z elementu [Nazwa](../extensibility/name-element-visual-studio-templates.md) ...
 
 ## <a name="example"></a>Przykład
- Poniższy przykład kodu `ProvideDefaultName` ustawia `false`element na .
+ Poniższy przykład kodu ustawia `ProvideDefaultName` element na `false` .
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"

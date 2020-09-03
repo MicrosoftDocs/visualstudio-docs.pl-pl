@@ -9,10 +9,10 @@ caps.latest.revision: 10
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2442bf4cc31eeb51332aa28325924e18ccb1ffb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660727"
 ---
 # <a name="analyzing-code-coverage-in-build-verification-tests"></a>Analiza pokrycia kodu w testach weryfikacji kompilacji
@@ -28,7 +28,7 @@ Analiza pokrycia kodu w Microsoft Visual Studio pokazuje, ile kodu jest wykonywa
 
     Jeśli masz więcej niż jedną definicję źródła testów, powtórz ten krok dla każdej z nich.
 
-   - <em>Ale nie istnieje pole o nazwie **typu pliku parametrów uruchomieniowych</em>* . *
+   - <em>Ale nie istnieje pole o nazwie **typu pliku parametrów uruchomieniowych</em>*. *
 
       W obszarze **testy automatyczne**wybierz pozycję **zestaw testowy** i wybierz przycisk wielokropka **[...]** na końcu wiersza. W oknie dialogowym **Dodawanie/edytowanie przebiegu testu** w obszarze moduł uruchamiający **testy**wybierz pozycję **Visual Studio Test Runner**.
 

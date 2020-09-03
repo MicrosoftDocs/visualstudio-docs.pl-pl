@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition | Dokumentacja firmy Microsoft
+title: 'IDebugComPlusSymbolProvider:: GetAddressesInModuleFromPosition | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4471997a5497413869c3c4662592f4c585c2d76d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194822"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Mapuje położenie dokumentu, w określonym module na tablicę adresów debugowania.  
+Mapuje pozycję dokumentu w określonym module na tablicę adresów debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -51,28 +51,28 @@ int GetAddressesInModuleFromPosition(
   
 #### <a name="parameters"></a>Parametry  
  `ulAppDomainID`  
- [in] Identyfikator domeny aplikacji.  
+ podczas Identyfikator domeny aplikacji.  
   
  `guidModule`  
- [in] Unikatowy identyfikator modułu.  
+ podczas Unikatowy identyfikator modułu.  
   
  `pDocPos`  
- [in] Położenie dokumentu.  
+ podczas Pozycja dokumentu.  
   
  `fStatmentOnly`  
- [in] Jeśli `TRUE`, ogranicza adresy debugowania do pojedynczej instrukcji.  
+ podczas Jeśli `TRUE` , ogranicza adresy debugowania do pojedynczej instrukcji.  
   
  `ppEnumBegAddresses`  
- [out] Zwraca moduł wyliczający dla wyjścia adresów debugowania, które są skojarzone z tym instrukcji lub wierszu.  
+ określoną Zwraca moduł wyliczający dla początkowych adresów debugowania, które są skojarzone z tą instrukcją lub wierszem.  
   
  `ppEnumEndAddresses`  
- [out] Zwraca moduł wyliczający dla końcowy adresów debugowania, które są skojarzone z tym instrukcji lub wierszu.  
+ określoną Zwraca moduł wyliczający dla końcowych adresów debugowania, które są skojarzone z tą instrukcją lub wierszem.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CDebugSymbolProvider** , który uwidacznia Interfejs [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(  

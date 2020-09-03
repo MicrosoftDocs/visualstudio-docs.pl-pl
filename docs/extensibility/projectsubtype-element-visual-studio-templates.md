@@ -1,5 +1,5 @@
 ---
-title: Element ProjectSubType (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: ProjectSubType, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 27396ad1bcc4e181b2b8cecd6ca863db2412630d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701833"
 ---
-# <a name="projectsubtype-element-visual-studio-templates"></a>Element ProjectSubType (szablony programu Visual Studio)
-Klasyfikuje szablon do podkategorii wartości `ProjectType` określonej w elemencie.
+# <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType, element (szablony Visual Studio)
+Klasyfikuje szablon do podkategorii wartości określonej w `ProjectType` elemencie.
 
- \<> \<> TemplateData \<> ProjectSubType
+ \<VSTemplate> \<TemplateData>
+ \<ProjectSubType>
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,30 +46,30 @@ Klasyfikuje szablon do podkategorii wartości `ProjectType` określonej w elemen
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Ta wartość określa podkategorię szablonu.
+ Ta wartość Określa podkategorię szablonu.
 
 ## <a name="remarks"></a>Uwagi
- `ProjectSubType`jest opcjonalnym elementem podrzędnym . `TemplateData`
+ `ProjectSubType` jest opcjonalnym elementem podrzędnym `TemplateData` .
 
- Element `ProjectSubType` zawiera podkategorię [elementu ProjectType.](../extensibility/projecttype-element-visual-studio-templates.md) Wartość ta może obejmować:
+ `ProjectSubType`Element zawiera podkategorię dla elementu [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) . Ta wartość może obejmować:
 
-- `SmartDevice-NETCFv1`: Określa, że szablon [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] jest przeznaczony dla wersji 1.0.
+- `SmartDevice-NETCFv1`: Określa, że szablon jest przeznaczony dla [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] wersji 1,0.
 
-- `SmartDevice-NETCFv2`: Określa, że szablon [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] jest przeznaczony dla wersji 2.0.
+- `SmartDevice-NETCFv2`: Określa, że szablon jest przeznaczony dla [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] wersji 2,0.
 
-  Jeśli szablon zawiera `ProjectType` element o `Web`wartości `ProjectSubType` , element określa język programowania szablonu. Ten element może mieć następujące wartości:
+  Jeśli szablon zawiera `ProjectType` element o wartości `Web` , `ProjectSubType` element określa język programowania szablonu. Ten element może mieć następujące wartości:
 
-- `CSharp`: Określa, że szablon [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] tworzy projekt lub element sieci Web.
+- `CSharp`: Określa, że szablon tworzy [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projekt lub element sieci Web.
 
-- `VisualBasic`: Określa, że szablon [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] tworzy projekt lub element sieci Web.
+- `VisualBasic`: Określa, że szablon tworzy [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projekt lub element sieci Web.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono metadane dla szablonu projektu dla aplikacji [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] urządzenia przeznaczonej [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] dla wersji 2.0.
+ W poniższym przykładzie przedstawiono metadane szablonu projektu dla aplikacji urządzenia przeznaczonej dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] wersji 2,0.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -98,4 +99,4 @@ Klasyfikuje szablon do podkategorii wartości `ProjectType` określonej w elemen
 ## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Element ProjectType (szablony programu Visual Studio)](../extensibility/projecttype-element-visual-studio-templates.md)
+- [ProjectType — element (szablony Visual Studio)](../extensibility/projecttype-element-visual-studio-templates.md)

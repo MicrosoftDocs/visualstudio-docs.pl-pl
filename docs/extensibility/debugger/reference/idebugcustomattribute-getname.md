@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetName | Dokumenty firmy Microsoft
+title: 'IDebugCustomAttribute:: GetName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 15d435d043d0e3863358628fa12016431a417918
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732775"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
@@ -41,13 +41,13 @@ int GetName(
 
 ## <a name="parameters"></a>Parametry
 `bstrName`\
-[na zewnątrz] Zwraca ciąg zawierający nazwę atrybutu niestandardowego.
+określoną Zwraca ciąg zawierający nazwę atrybutu niestandardowego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Nazwa zwrócona przez tę metodę odpowiada nazwie klasy używanej do deklarowania atrybutu. Może to nie dokładnie odpowiadać nazwie samej klasy atrybutu niestandardowego, ponieważ C# umożliwia upuszczenia sufiksu "Atrybut" z niestandardowej nazwy atrybutu, gdy jest on używany w deklaracji.
+ Nazwa zwrócona przez tę metodę odpowiada nazwie klasy użytej do zadeklarowania atrybutu. Może to nie odpowiadać dokładnie nazwie klasy atrybutu niestandardowego, ponieważ C# umożliwia porzucenie sufiksu "Attribute" z nazwy atrybutu niestandardowego, gdy jest on używany w deklaracji.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

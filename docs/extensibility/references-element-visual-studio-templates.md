@@ -1,5 +1,5 @@
 ---
-title: Element odwołania (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: References — element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ef31c5e7550ec7c6e4570d156d364afcf4ad6819
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701613"
 ---
-# <a name="references-element-visual-studio-templates"></a>Element Odwołania (szablony programu Visual Studio)
-Grupuje odwołania do zestawu, które szablon dodaje do projektów.
+# <a name="references-element-visual-studio-templates"></a>References — element (szablony Visual Studio)
+Grupuje odwołania zestawu, które szablon dodaje do projektów.
 
- \<\<Odwołania> \<szablon>u> vsTemplate>
+ \<VSTemplate> \<TemplateContent>
+ \<References>
 
 ## <a name="syntax"></a>Składnia
 
@@ -46,7 +47,7 @@ Grupuje odwołania do zestawu, które szablon dodaje do projektów.
 
 |Element|Opis|
 |-------------|-----------------|
-|[Tematy pomocy](../extensibility/reference-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Określa odwołanie do złożenia, które należy dodać po dodaniu elementu do projektu. Musi istnieć jeden `Reference` lub `References` więcej elementów w elemencie.|
+|[Odwołanie](../extensibility/reference-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Określa odwołanie do zestawu, które ma zostać dodane, gdy element zostanie dodany do projektu. Element musi mieć jeden lub więcej `Reference` elementów `References` .|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
@@ -55,12 +56,12 @@ Grupuje odwołania do zestawu, które szablon dodaje do projektów.
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Określa zawartość szablonu.|
 
 ## <a name="remarks"></a>Uwagi
- `References`jest opcjonalnym elementem podrzędnym . `TemplateContent`
+ `References` jest opcjonalnym elementem podrzędnym `TemplateContent` .
 
- Elementy `Reference` `References` i elementy mogą być używane tylko w plikach `Type` *vstemplate,* które mają wartość atrybutu `Item`.
+ `Reference`Elementy i `References` mogą być używane tylko w plikach *. vstemplate* , które mają `Type` wartość atrybutu `Item` .
 
 ## <a name="example"></a>Przykład
- Poniższy przykład ilustruje `TemplateContent` element szablonu elementu. Ten kod XML dodaje odwołania do zestawów *System.dll* i *System.Data.dll.*
+ Poniższy przykład ilustruje `TemplateContent` element szablonu elementu. Ten kod XML dodaje odwołania do zestawów *System.dll* i *System.Data.dll* .
 
 ```xml
 <TemplateContent>

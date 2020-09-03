@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0d54ca9a31e8a1bbd2496bf8689a119e53580c79
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660218"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Porady: wymuszanie kodu za pomocą zasad ewidencjonowania analizy kodu
@@ -25,7 +25,7 @@ Deweloperzy mogą używać narzędzia metryki kodu do mierzenia stopnia złożon
 
  Deweloperzy mogą włączać głębokość dziedziczenia, sprzęgania klas, indeks utrzymania i reguły złożoności, aby wymusić obsługę kodu za pomocą zasad ewidencjonowania analizy kodu. Wszystkie cztery te reguły są dostępne w kategorii "reguły utrzymania" w edytorze zasad analizy kodu.
 
- Administratorzy kontroli wersji dla [!INCLUDE[esprfound](../includes/esprfound-md.md)] mogą dodać reguły utrzymania analizy kodu do wymagań zasad ewidencjonowania. Te zasady ewidencjonowania wymagają od deweloperów uruchomienia analizy kodu na podstawie tych zmian reguł przed zainicjowaniem zaewidencjonowania.
+ Administratorzy kontroli wersji programu [!INCLUDE[esprfound](../includes/esprfound-md.md)] mogą dodać reguły utrzymania analizy kodu do wymagań zasad ewidencjonowania. Te zasady ewidencjonowania wymagają od deweloperów uruchomienia analizy kodu na podstawie tych zmian reguł przed zainicjowaniem zaewidencjonowania.
 
 ### <a name="to-open-the-code-analysis-policy-editor"></a>Aby otworzyć Edytor zasad analizy kodu
 

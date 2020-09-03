@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2 | Dokumenty firmy Microsoft
+title: IDebugDefaultPort2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f560a3dabefb0a8dede6520dcd8fd47f609a7780
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732317"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
-Ten interfejs zapewnia kilka metod uzyskiwania dostępu do serwera portu i obiektów powiadomień.
+Ten interfejs zapewnia kilka metod uzyskiwania dostępu do serwera i usług powiadamiania o porcie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,27 +29,27 @@ IDebugDefaultPort2 : IDebugPort2
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Visual Studio implementuje ten interfejs do reprezentowania portu debugowania dla uzyskiwania dostępu do programów. Dostawca portu niestandardowego można również zaimplementować ten interfejs, jeśli obsługuje zdalne debugowanie.
+ Program Visual Studio implementuje ten interfejs, aby reprezentować port debugowania w celu uzyskania dostępu do programów. Dostawca portu niestandardowego może również zaimplementować ten interfejs, jeśli obsługuje debugowanie zdalne.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Argument do metod w interfejsie [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) dostarcza tego interfejsu. Wywołanie [QueryInterface](/cpp/atl/queryinterface) na [interfejsie IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) można również uzyskać ten interfejs.
+ Argument metod w interfejsie [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) dostarcza ten interfejs. Wywołanie [polecenia QueryInterface](/cpp/atl/queryinterface) w interfejsie [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) może również uzyskać ten interfejs.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- Oprócz metod zdefiniowanych w [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)interfejs ten implementuje następujące metody:
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ Oprócz metod zdefiniowanych w [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md), ten interfejs implementuje następujące metody:
 
 |Metoda|Opis|
 |------------|-----------------|
 |[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|Pobiera interfejs powiadomień portu z tego portu.|
-|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Pobiera interfejs do serwera hostowania tego portu.|
+|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Pobiera interfejs do serwera obsługującego ten port.|
 |[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|Określa, czy ten port jest uruchomiony na komputerze lokalnym.|
 
 ## <a name="remarks"></a>Uwagi
- Nazwa "`IDebugDefaultPort2`" jest trochę mylące, ponieważ nie reprezentuje domyślnego portu. Można go nazwać "IDebugPort3".
+ Nazwa " `IDebugDefaultPort2` " jest bitem elementu Misnomer, ponieważ nie reprezentuje domyślnego portu. Może być wywoływana "IDebugPort3".
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

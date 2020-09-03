@@ -1,5 +1,5 @@
 ---
-title: Debugowanie kodu natywnego | Dokumentacja firmy Microsoft
+title: Debugowanie kodu natywnego | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,58 +23,58 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61ee852f75737d85604fda106b15e61dc3634899
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196423"
 ---
 # <a name="debugging-native-code"></a>Debugowanie kodu natywnego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sekcji omówiono niektóre typowe problemy z debugowania i technik dla natywnych aplikacji. Technik opisanych w tej sekcji są techniki wysokiego poziomu. Mechanika przy użyciu debugera programu Visual Studio, można zobaczyć [plan debugera](../debugger/debugger-basics.md).  
+Sekcja dotyczy niektórych typowych problemów z debugowaniem i technik dla aplikacji natywnych. Techniki omówione w tej sekcji są technikami wysokiego poziomu. Aby Mechanics za pomocą debugera programu Visual Studio, zobacz [Plan debugera](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Instrukcje: Debugowanie zoptymalizowanego kodu](../debugger/how-to-debug-optimized-code.md)  
- Zawiera wskazówki dotyczące debugowania zoptymalizowane pod kątem kodu, w szczególności dlatego powinna debugowania niezoptymalizowanym wersję usługi programu, domyślne ustawienia pozycji Optymalizacja konfiguracji Debug i Release i porady dotyczące znajdowania błędów, które są wyświetlane tylko w zoptymalizowanym kodzie (włączenie Optymalizacja w konfiguracji kompilacji debugowania).  
+ [Porady: debugowanie zoptymalizowanego kodu](../debugger/how-to-debug-optimized-code.md)  
+ Podaje porady dotyczące debugowania zoptymalizowanego kodu, w tym, dlaczego należy debugować niezoptymalizowaną wersję programu, domyślne ustawienia optymalizacji konfiguracji debugowania i wydania oraz porady dotyczące znajdowania błędów, które pojawiają się tylko w zoptymalizowanym kodzie (włączenie optymalizacji w konfiguracji kompilacji debugowania).  
   
  [DebugBreak i __debugbreak](../debugger/debugbreak-and-debugbreak.md)  
- W tym artykule opisano Win32 `DebugBreak` funkcji i Link do jego temat referencyjny w zestawie SDK platformy. Opisano również `__debugbreak` wewnętrzne.  
+ Opisuje funkcję Win32 `DebugBreak` i zawiera łącze do jej tematu referencyjnego w zestawie SDK platformy. Zawiera również informacje o programie `__debugbreak` wewnętrznym.  
   
- [Instrukcje asercji w języku C/C++](../debugger/c-cpp-assertions.md)  
- W tym artykule omówiono instrukcji potwierdzania, jak to działa, zalety korzystania z nich (połowowe błędy logiczne, sprawdzanie wyników operacji i testowanie warunki błędu), ich interakcji z `_DEBUG`oraz typy potwierdzenia obsługiwane w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ [Potwierdzenia C/C++](../debugger/c-cpp-assertions.md)  
+ W tym artykule omówiono instrukcje potwierdzania, sposób ich działania, korzyści z używania ich (przechwytywanie błędów logiki, sprawdzanie wyników operacji i testowanie warunków błędów), interakcje z programem `_DEBUG` oraz typy potwierdzeń, które są obsługiwane w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
- [Instrukcje: Debugowanie śródwierszowego kodu zestawu](../debugger/how-to-debug-inline-assembly-code.md)  
- Zawiera instrukcje na temat korzystania z okna dezasemblacji Aby wyświetlić instrukcje zestawu i z okna rejestrów, aby wyświetlić zawartość rejestru i zawiera łącza do tematów dotyczących tych oknach.  
+ [Instrukcje: Debugowanie kodu zestawu wbudowanego](../debugger/how-to-debug-inline-assembly-code.md)  
+ Zawiera krótkie instrukcje dotyczące korzystania z okna demontażu w celu wyświetlenia instrukcji zestawu i okna rejestrów, aby wyświetlić zawartość rejestru i zawiera łącza do tematów dotyczących tych okien.  
   
- [Techniki debugowania MFC](../debugger/mfc-debugging-techniques.md)  
- Podano łącza do debugowania programów MFC, łącznie z: afxdebugbreak —, TRACE — makro, wykrywanie pamięci przecieki w MFC, MFC, asercje i zmniejszenie rozmiaru debugowania MFC kompilacji.  
+ [Techniki testowania MFC](../debugger/mfc-debugging-techniques.md)  
+ Łącza do technik debugowania dla programów MFC, w tym: afxDebugBreak, makro śledzenia, Wykrywanie przecieków pamięci w MFC, potwierdzenia MFC i zmniejszanie rozmiaru kompilacji debugowania MFC.  
   
- [Techniki debugowania CRT](../debugger/crt-debugging-techniques.md)  
- Łącza do debugowania dla biblioteki wykonawczej C, w tym o korzystaniu z biblioteki debugowania CRT, makra dla raportowania, różnice funkcji malloc i _malloc_dbg, pisanie debugowanie funkcji punktów zaczepienia i CRT debugowania sterty.  
+ [Techniki testowania CRT](../debugger/crt-debugging-techniques.md)  
+ Łącza do technik debugowania dla biblioteki wykonawczej C, w tym przy użyciu biblioteki debugowania CRT, makr dla raportowania, różnic między funkcjami malloc i _malloc_dbg, pisania funkcji punktu zaczepienia debugowania i sterty debugowania CRT.  
   
- [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)  
+ [Debugowanie kodu natywnego — Często zadawane pytania](../debugger/debugging-native-code-faqs.md)  
  Zawiera odpowiedzi na często zadawane pytania dotyczące debugowania programów Visual C++  
   
- [Debugowanie aplikacji COM i kontrolek ActiveX](../debugger/com-and-activex-debugging.md)  
- Zawiera informacje dotyczące debugowania aplikacji modelu COM i ActiveX, w tym narzędzia, których można używać dla modelu COM i debugowanie ActiveX.  
+ [COM i debugowanie ActiveX](../debugger/com-and-activex-debugging.md)  
+ Zawiera informacje dotyczące debugowania aplikacji COM i ActiveX, w tym narzędzi, których można użyć do debugowania obiektów COM i ActiveX.  
   
- [Instrukcje: Debugowanie natywnych bibliotek DLL](../debugger/how-to-debug-native-dlls.md)  
- Wyjaśnia, jak skonfigurować debugowanie bibliotek DLL z kodu natywnego.  
+ [Instrukcje: debugowanie natywnych bibliotek DLL](../debugger/how-to-debug-native-dlls.md)  
+ Wyjaśnia, jak skonfigurować debugowanie dla bibliotek DLL z kodu natywnego.  
   
- [Instrukcje: Debugowanie wprowadzonego kodu](../debugger/how-to-debug-injected-code.md)  
- Wskazówki dotyczące debugowania kodu, który używa atrybutów. Instrukcje zawierają włączanie adnotacji źródła, jak wyświetlić wprowadzonego kodu i sposób wyświetlić kod dezasemblacji w bieżącym punkcie Wykonywanie.  
+ [Instrukcje: debugowanie wprowadzonego kodu](../debugger/how-to-debug-injected-code.md)  
+ Zawiera wskazówki dotyczące debugowania kodu, który używa atrybutów. Instrukcje obejmują Włączanie adnotacji źródłowej, sposób wyświetlania wstrzykniętego kodu i sposób wyświetlania kodu demontażu w bieżącym punkcie wykonywania.  
   
- [Przewodnik: Debugowanie aplikacji równoległej](../debugger/walkthrough-debugging-a-parallel-application.md)  
- Opisuje sposób używania **zadań równoległych** i **stosów równoległych** narzędzia systemu windows do debugowania aplikacji równoległej.  
+ [Przewodnik: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ Opisuje sposób używania okienek **zadań równoległych** i **stosów równoległych** do debugowania aplikacji równoległej.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Typy projektów Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)  
- Zawiera łącza do tematów opisujących sposób debugowania natywnego projektu typów, utworzone przez Szablony projektów Visual C++.  
+ Zawiera łącza do tematów opisujących sposób debugowania natywnych typów projektów utworzonych przez Visual C++ szablonów projektu.  
   
- [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)  
- Zawiera łącza do większych sekcji dokumentacji debugowania. Informacje dotyczące nowości w debugerze, ustawienia i przygotowania, punkty przerwania, obsługa wyjątków, Edytuj i Kontynuuj, debugowanie kodu zarządzanego, debugowanie kodu natywnego, debugowanie SQL i odwołania interfejsu użytkownika.  
+ [Debugowanie w Visual Studio](../debugger/debugging-in-visual-studio.md)  
+ Zawiera łącza do większych sekcji dokumentacji debugowania. Informacje obejmują nowości w debugerze, ustawienia i przygotowania, punkty przerwania, obsługa wyjątków, edytowanie i kontynuowanie, debugowanie kodu zarządzanego, debugowanie kodu natywnego, debugowanie SQL i odwołania do interfejsu użytkownika.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)
+ [Debugowanie w Visual Studio](../debugger/debugging-in-visual-studio.md)

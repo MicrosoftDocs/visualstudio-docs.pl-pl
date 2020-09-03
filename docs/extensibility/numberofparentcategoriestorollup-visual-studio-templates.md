@@ -1,5 +1,5 @@
 ---
-title: Element NumberOfParentCategoriesToRollUp (szablony)
+title: NumberOfParentCategoriesToRollUp, element (szablony)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b903b9d0bdab2c17dd2e489de01badad82c15473
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702367"
 ---
-# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>Element NumberOfParentCategoriesToRollUp (szablony programu Visual Studio)
-Określa liczbę kategorii nadrzędnych, które będą wyświetlać szablon w oknie dialogowym **Nowy projekt.**
+# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp, element (szablony Visual Studio)
+Określa liczbę kategorii nadrzędnych, które będą wyświetlać szablon w oknie dialogowym **Nowy projekt** .
 
- \<VSTemplate> \<TemplateData> \<NumberOfParentCategoriesToRollUp>
+ \<VSTemplate> \<TemplateData>
+ \<NumberOfParentCategoriesToRollUp>
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,18 +48,18 @@ Określa liczbę kategorii nadrzędnych, które będą wyświetlać szablon w ok
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
- Wymagana `integer` jest wartość.
+ `integer`Wartość jest wymagana.
 
- Ta wartość określa liczbę kategorii nadrzędnych, które będą wyświetlane szablon w oknie dialogowym **Nowy projekt.**
+ Ta wartość określa liczbę kategorii nadrzędnych, które będą wyświetlać szablon w oknie dialogowym **Nowy projekt** .
 
 ## <a name="remarks"></a>Uwagi
- `NumberOfParentCategoriesToRollUp`jest elementem opcjonalnym.
+ `NumberOfParentCategoriesToRollUp` jest elementem opcjonalnym.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie przedstawiono [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] metadane dla aplikacji systemu Windows. Jeśli szablon z tymi metadanymi zostanie umieszczony [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] dwa poziomy folderów poniżej węzła najwyższego poziomu, szablon pojawi się w węźle najwyższego poziomu w oknie dialogowym **Nowy projekt.** Jeśli `NumberOfParentCategoriesToRollUp` nie jest ustawiona, szablon pojawia się tylko w węźle, w którym jest fizycznie zlokalizowany.
+ Ten przykład ilustruje metadane dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji systemu Windows. Jeśli szablon z tymi metadanymi zostanie umieszczony na dwóch poziomach folderów poniżej węzła najwyższego poziomu [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] , szablon pojawi się w węźle najwyższego poziomu w oknie dialogowym **Nowy projekt** . Jeśli `NumberOfParentCategoriesToRollUp` nie jest ustawiona, szablon pojawia się tylko w węźle, w którym znajduje się fizycznie.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

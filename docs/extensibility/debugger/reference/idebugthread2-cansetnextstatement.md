@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::CanSetNextStatement | Dokumenty firmy Microsoft
+title: 'IDebugThread2:: CanSetNextStatement | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4232c25bfe9acd7f17c88c28aa4211a9c62175f8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718866"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
-Określa, czy bieżący wskaźnik instrukcji można ustawić na ramkę danego stosu.
+Określa, czy bieżący wskaźnik instrukcji może być ustawiony na daną ramkę stosu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,16 +43,16 @@ int CanSetNextStatement ( 
 
 ## <a name="parameters"></a>Parametry
 `pStackFrame`\
-Zarezerwowane do wykorzystania w przyszłości; ustawiona na wartość null. Jeśli jest to wartość null, należy użyć bieżącej ramki stosu.
+Zarezerwowane do użytku w przyszłości; Ustaw wartość null. Jeśli jest to wartość null, Użyj bieżącej ramki stosu.
 
 `pCodeContext`\
-[w] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który opisuje lokalizację kodu, które mają być wykonywane i jego kontekstu.
+podczas Obiekt [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , który opisuje lokalizację kodu do wykonania i jego kontekst.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli ta `S_OK`metoda zwraca , a następnie wywołać [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) metody faktycznie ustawić następną instrukcję.
+ Jeśli ta metoda zwróci metodę `S_OK` , należy wywołać metodę [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) , aby faktycznie ustawić następną instrukcję.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

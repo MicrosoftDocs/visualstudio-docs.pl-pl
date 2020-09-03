@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::IsUserData | Microsoft Docs
+title: 'IDebugObject2:: isuserdata | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fd595ce041ae1968e085e3b63b49d308cfd14452
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194582"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
@@ -40,13 +40,13 @@ int IsUserData(
   
 #### <a name="parameters"></a>Parametry  
  `pfUser`  
- [out] Zwraca wartość różną od zera (`TRUE`) obiekt reprezentuje dane użytkownika; wartość zero (`FALSE`) Jeśli nie jest.  
+ określoną Zwraca wartość `TRUE` różną od zera (), jeśli obiekt reprezentuje dane użytkownika; zero ( `FALSE` ), jeśli nie.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Dane użytkownika są dowolnego obiektu, który jest częścią modułu wyznaczony jako JustMyCode (konfigurowanych przez użytkownika opcji oznaczający moduł jako kod użytkownika i dlatego są widoczne w śladzie stosu).  
+ Dane użytkownika to każdy obiekt, który jest częścią modułu wyznaczono jako JustMyCode (opcja konfigurowalną przez użytkownika, która oznacza moduł jako kod użytkownika i dlatego widoczny w śladzie stosu).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

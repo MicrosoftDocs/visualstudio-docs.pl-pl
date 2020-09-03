@@ -9,10 +9,10 @@ caps.latest.revision: 12
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2bd087dc0b06cbf8ffe4c08f84d819e8ef1c2f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660512"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalowanie platform testów jednostkowych innych firm
@@ -20,7 +20,7 @@ ms.locfileid: "72660512"
 
 Program Visual Studio Test Explorer może uruchomić dowolną strukturę testów jednostkowych, która opracowała interfejs adaptera dla Eksploratora. Program instalacyjny platformy instaluje pliki binarne i dodaje szablony projektów programu Visual Studio dla obsługiwanych języków. Podczas tworzenia projektu z szablonem, struktura jest zarejestrowana w Eksploratorze testów. Rozwiązanie programu Visual Studio może zawierać projekty testów jednostkowych, które korzystają z różnych platform i które są przeznaczone dla różnych języków. Eksplorator testów uruchamia je wszystkie.
 
- **Requirements**
+ **Wymagania**
 
 - Visual Studio Enterprise, Visual Studio Professional
 

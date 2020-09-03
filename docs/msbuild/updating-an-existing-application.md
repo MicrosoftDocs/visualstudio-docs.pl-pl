@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c141d1e35db1e5ce334606b255d99ce2c0afc29b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184032"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aktualizowanie istniejącej aplikacji dla programu MSBuild 15
@@ -22,11 +22,11 @@ Aby można było obsłużyć szybsze, mniejsze i równoległe instalacje, progra
 
 ## <a name="use-msbuild-from-visual-studio"></a>Korzystanie z programu MSBuild w programie Visual Studio
 
-Aby zapewnić kompilacje programistyczne z aplikacji w programie Visual Studio lub *MSBuild. exe*, Załaduj zestawy MSBuild z programu Visual Studio i użyj zestawów SDK dostępnych w programie Visual Studio. Pakiet NuGet Microsoft. Build. Locator usprawnia ten proces.
+Aby upewnić się, że kompilacje programistyczne z aplikacji są gotowe do użycia w programie Visual Studio lub *MSBuild.exe*, Załaduj zestawy MSBuild z programu Visual Studio i użyj zestawów SDK dostępnych w programie Visual Studio. Pakiet NuGet Microsoft. Build. Locator usprawnia ten proces.
 
 ## <a name="use-microsoftbuildlocator"></a>Korzystanie z Microsoft. Build. Locator
 
-W przypadku ponownej dystrybucji *pliku Microsoft. Build. Locator. dll* z aplikacją nie będzie konieczne dystrybuowanie innych zestawów programu MSBuild.
+W przypadku ponownej dystrybucji *Microsoft.Build.Locator.dll* z aplikacją nie będzie konieczne dystrybuowanie innych zestawów programu MSBuild.
 
 Aktualizacja projektu do korzystania z programu MSBuild 15 i interfejsu API lokalizatora wymaga kilku zmian w projekcie opisanych poniżej. Aby zobaczyć przykład zmian wymaganych do zaktualizowania projektu, zobacz [zatwierdzenia wykonane w przykładowym projekcie w repozytorium MSBuildLocator](https://github.com/Microsoft/MSBuildLocator/commits/example-updating-to-msbuild-15).
 
@@ -69,7 +69,7 @@ Odwołuje się do pakietu Microsoft. Build. Locator, aby upewnić się, że apli
 
 ### <a name="ensure-output-is-clean"></a>Upewnij się, że dane wyjściowe są czyste
 
-Skompiluj projekt i Sprawdź katalog danych wyjściowych, aby upewnić się, że nie zawiera on żadnych *Microsoft. Build. \* . Zestawy dll* inne niż *Microsoft. Build. Locator. dll*, dodane w następnym kroku.
+Skompiluj projekt i Sprawdź katalog danych wyjściowych, aby upewnić się, że nie zawiera on żadnych *Microsoft. Build. \* . Zestawy dll* inne niż *Microsoft.Build.Locator.dll*dodane w następnym kroku.
 
 ### <a name="add-package-reference-for-microsoftbuildlocator"></a>Dodawanie odwołania do pakietu dla elementu Microsoft. Build. Locator
 

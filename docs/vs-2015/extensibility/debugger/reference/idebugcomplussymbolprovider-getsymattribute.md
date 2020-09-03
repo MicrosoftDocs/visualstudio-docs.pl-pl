@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetSymAttribute | Dokumentacja firmy Microsoft
+title: 'IDebugComPlusSymbolProvider:: GetSymAttribute — | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09ca280bafc7ffbf5c48f1a73479bdc99f46fd56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194771"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera symbole debugowania z atrybutem nadrzędnym podanego dla określonego modułu.  
+Pobiera symbole debugowania z podanym atrybutem nadrzędnym dla określonego modułu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -51,31 +51,31 @@ int GetSymAttribute (
   
 #### <a name="parameters"></a>Parametry  
  `ulAppDomainID`  
- [in] Identyfikator domeny aplikacji.  
+ podczas Identyfikator domeny aplikacji.  
   
  `guidModule`  
- [in] Unikatowy identyfikator modułu.  
+ podczas Unikatowy identyfikator modułu.  
   
  `tokParent`  
- [in] Token dla atrybutu nadrzędnego.  
+ podczas Token dla atrybutu nadrzędnego.  
   
  `pstrName`  
- [in] Nazwa modułu.  
+ podczas Nazwa modułu.  
   
  `cBuffer`  
- [in] Liczba bajtów potrzebnych dla danych wyjściowych `buffer`.  
+ podczas Liczba bajtów wymagana dla danych wyjściowych `buffer` .  
   
  `pcBuffer`  
- [out] Długość danych wyjściowych `buffer`.  
+ określoną Długość danych wyjściowych `buffer` .  
   
  `buffer`  
- [out] Tablica, która zawiera symbole.  
+ określoną Tablica zawierająca symbole.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CDebugSymbolProvider** , który uwidacznia Interfejs [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetSymAttribute(  
