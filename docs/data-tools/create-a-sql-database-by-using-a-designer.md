@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: e31be90ff24f110fda66449187d3372976f269a7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282725"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Tworzenie bazy danych i Dodawanie tabel w programie Visual Studio

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 29e8a2206432555e58b47691233bd46c49791046
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519863"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Dokumentacja zarządzana (Programowanie Office w Visual Studio)
@@ -70,7 +70,7 @@ ms.locfileid: "85519863"
 
  Zawiera klasy zadań programu MSBuild, które są używane do kompilowania projektów pakietu Office.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Omówienie programu Visual Studio Tools for Office Runtime](visual-studio-tools-for-office-runtime-overview.md)
 - [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 - [Przykłady i przewodniki dotyczące programowania pakietu Office](office-development-samples-and-walkthroughs.md)

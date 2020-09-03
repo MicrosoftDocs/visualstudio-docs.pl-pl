@@ -19,16 +19,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99c4a20939ed2e3a036831930749bb59b5a42315
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670052"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującej złożone powiązanie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można wybrać istniejące kontrolki z **przybornika**lub można utworzyć niestandardowe kontrolki, jeśli aplikacja wymaga funkcjonalności, która nie jest dostępna w kontrolkach standardowych. W tym instruktażu pokazano, jak utworzyć kontrolkę implementującą <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. Kontrolki implementujące <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> zawierają Właściwość `DataSource` i `DataMember`, która może być powiązana z danymi. Takie kontrolki są podobne do <xref:System.Windows.Forms.DataGridView> lub <xref:System.Windows.Forms.ListBox>.
+Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można wybrać istniejące kontrolki z **przybornika**lub można utworzyć niestandardowe kontrolki, jeśli aplikacja wymaga funkcjonalności, która nie jest dostępna w kontrolkach standardowych. W tym instruktażu pokazano, jak utworzyć kontrolkę implementującą <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> . Kontrolki implementujące <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> Właściwość zawiera `DataSource` i `DataMember` , które mogą być powiązane z danymi. Takie kontrolki są podobne do <xref:System.Windows.Forms.DataGridView> lub <xref:System.Windows.Forms.ListBox> .
 
  Aby uzyskać więcej informacji na temat tworzenia kontroli, zobacz [Opracowywanie formantów Windows Forms w czasie projektowania](https://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).
 
@@ -36,11 +36,11 @@ Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można
 
 |Użycie atrybutu powiązania danych|
 |-----------------------------------|
-|Zaimplementuj <xref:System.ComponentModel.DefaultBindingPropertyAttribute> na prostych kontrolkach, takich jak <xref:System.Windows.Forms.TextBox>, które wyświetlają pojedynczą kolumnę (lub właściwość) danych. Aby uzyskać więcej informacji, zobacz [Tworzenie kontrolki użytkownika Windows Forms, która obsługuje proste powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|
-|Zaimplementuj <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> na kontrolkach, takich jak <xref:System.Windows.Forms.DataGridView>, które wyświetlają listy (lub tabele) danych. (Ten proces został opisany na stronie przewodnika).|
-|Zaimplementuj <xref:System.ComponentModel.LookupBindingPropertiesAttribute> na kontrolkach, takich jak <xref:System.Windows.Forms.ComboBox>, które wyświetlają listy (lub tabele) danych, ale również muszą przedstawić pojedynczą kolumnę lub właściwość. Aby uzyskać więcej informacji, zobacz [Tworzenie kontrolki użytkownika Windows Forms, która obsługuje powiązanie danych wyszukiwania](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
+|Zaimplementuj <xref:System.ComponentModel.DefaultBindingPropertyAttribute> proste kontrolki, takie jak <xref:System.Windows.Forms.TextBox> , które wyświetlają pojedynczą kolumnę (lub właściwość) danych. Aby uzyskać więcej informacji, zobacz [Tworzenie kontrolki użytkownika Windows Forms, która obsługuje proste powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|
+|Zaimplementuj <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> kontrolki on, na przykład <xref:System.Windows.Forms.DataGridView> , które wyświetlają listy (lub tabele) danych. (Ten proces został opisany na stronie przewodnika).|
+|Zaimplementuj <xref:System.ComponentModel.LookupBindingPropertiesAttribute> kontrolki on, na przykład <xref:System.Windows.Forms.ComboBox> , które wyświetla listę (lub tabele) danych, ale również muszą przedstawić pojedynczą kolumnę lub właściwość. Aby uzyskać więcej informacji, zobacz [Tworzenie kontrolki użytkownika Windows Forms, która obsługuje powiązanie danych wyszukiwania](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
 
- Ten Instruktaż tworzy złożony formant, który wyświetla wiersze danych z tabeli. Ten przykład używa tabeli `Customers` z przykładowej bazy danych Northwind. Złożona kontrolka użytkownika wyświetli tabelę Customers w <xref:System.Windows.Forms.DataGridView> w kontrolce niestandardową.
+ Ten Instruktaż tworzy złożony formant, który wyświetla wiersze danych z tabeli. W tym przykładzie zastosowano `Customers` tabelę z przykładowej bazy danych Northwind. Złożona kontrolka użytkownika wyświetli tabelę Customers w <xref:System.Windows.Forms.DataGridView> kontrolce niestandardowej.
 
  W tym instruktażu dowiesz się, jak:
 
@@ -50,7 +50,7 @@ Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można
 
 - Wizualne projektowanie kontrolki użytkownika.
 
-- Zaimplementuj atrybut `ComplexBindingProperty`.
+- Zaimplementuj `ComplexBindingProperty` atrybut.
 
 - Utwórz zestaw danych za pomocą [Kreatora konfiguracji źródła danych](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).
 
@@ -95,13 +95,13 @@ Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można
 - Przeciągnij <xref:System.Windows.Forms.DataGridView> z **przybornika** na powierzchnię projektu kontrolki użytkownika.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Dodawanie wymaganego atrybutu powiązania danych
- W przypadku złożonych formantów, które obsługują powiązanie danych, można zaimplementować <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>.
+ W przypadku złożonych formantów, które obsługują powiązanie danych, można zaimplementować <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> .
 
 #### <a name="to-implement-the-complexbindingproperties-attribute"></a>Aby zaimplementować atrybut ComplexBindingProperties
 
 1. Przełącz formant **ComplexDataGridView** do widoku kodu. (W menu **Widok** wybierz pozycję **kod**).
 
-2. Zastąp kod w `ComplexDataGridView` następującym:
+2. Zastąp kod w `ComplexDataGridView` następującej postaci:
 
      [!code-csharp[VbRaddataDisplaying#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/ComplexDataGridView.cs#4)]
      [!code-vb[VbRaddataDisplaying#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/ComplexDataGridView.vb#4)]
@@ -109,7 +109,7 @@ Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można
 3. Z menu **kompilacja** wybierz polecenie **Kompiluj rozwiązanie**.
 
 ## <a name="creating-a-data-source-from-your-database"></a>Tworzenie źródła danych z bazy danych
- Ten krok powoduje użycie kreatora **konfiguracji źródła danych** w celu utworzenia źródła danych na podstawie tabeli `Customers` w przykładowej bazie danych Northwind. Aby utworzyć połączenie, musisz mieć dostęp do przykładowej bazy danych Northwind. Aby uzyskać informacje na temat konfigurowania przykładowej bazy danych Northwind, zobacz [instalowanie SQL Server przykładowych baz danych](../data-tools/install-sql-server-sample-databases.md).
+ Ten krok powoduje użycie kreatora **konfiguracji źródła danych** w celu utworzenia źródła danych na podstawie `Customers` tabeli w przykładowej bazie danych Northwind. Aby utworzyć połączenie, musisz mieć dostęp do przykładowej bazy danych Northwind. Aby uzyskać informacje na temat konfigurowania przykładowej bazy danych Northwind, zobacz [instalowanie SQL Server przykładowych baz danych](../data-tools/install-sql-server-sample-databases.md).
 
 #### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych
 
@@ -131,9 +131,9 @@ Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można
 
 7. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** .
 
-8. Wybierz tabelę `Customers` a następnie kliknij przycisk **Zakończ**.
+8. Wybierz `Customers` tabelę, a następnie kliknij przycisk **Zakończ**.
 
-     **NorthwindDataSet** jest dodawany do projektu, a tabela `Customers` zostanie wyświetlona w oknie **źródła danych** .
+     **NorthwindDataSet** jest dodawany do projektu, a `Customers` tabela pojawia się w oknie **źródła danych** .
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Ustaw tabelę Customers na używanie formantu ComplexDataGridView
  W oknie **źródła danych** można ustawić kontrolkę, która ma zostać utworzona przed przeciągnięciem elementów na formularz.
@@ -148,7 +148,7 @@ Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można
 
 4. Wybierz **ComplexDataGridView** z listy **skojarzonych kontrolek** w oknie dialogowym **Opcje dostosowywania interfejsu użytkownika danych** .
 
-5. Kliknij strzałkę listy rozwijanej w tabeli `Customers` i wybierz pozycję **ComplexDataGridView** z listy kontrolek.
+5. Kliknij strzałkę listy rozwijanej w `Customers` tabeli, a następnie wybierz pozycję **ComplexDataGridView** z listy kontrolek.
 
 ## <a name="addcontrols-to-the-form"></a>Addcontrols do formularza
  Można utworzyć formanty powiązane z danymi, przeciągając elementy z okna **źródła danych** na formularz.

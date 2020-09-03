@@ -12,17 +12,17 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dae99166b8b811df75f2e2777d176e6778b60c7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670149"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Edytor kolekcji typów, okno dialogowe
 Okno dialogowe **Edytor kolekcji typów** służy do dodawania znanych typów do działań **wysyłania** i **odbierania** . To okno dialogowe służy również do dodawania argumentów typu ogólnego do działania **InvokeMethod** . W przypadku użycia dla działań **wysyłania** i **odbierania** do dodawania znanych typów okno dialogowe **Edytor kolekcji typów** wymaga, aby dodatki typu były unikatowe. Jeśli zostanie dodany zduplikowany typ, a zmiana zostanie zatwierdzona przez kliknięcie przycisku **OK**, zostanie zwrócony komunikat o błędzie. Gdy jest używane dla działania **InvokeMethod** do dodawania argumentów typu generycznego, okno dialogowe **Edytor kolekcji typów** umożliwia dodanie zduplikowanych typów.
 
 > [!NOTE]
-> [!INCLUDE[crabout](../includes/crabout-md.md)] znanych typów, zobacz [znane typy kontraktu danych](https://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337).
+> [!INCLUDE[crabout](../includes/crabout-md.md)] znane typy, zobacz [znane typy kontraktu danych](https://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337).
 
  W poniższej tabeli opisano elementy interfejsu użytkownika (UI) okna dialogowego **kolekcji typów** .
 

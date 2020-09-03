@@ -1,5 +1,5 @@
 ---
-title: Zapewnianie obsługi ukrytego tekstu w starszej usłudze językowej
+title: Zapewnianie obsługi tekstu ukrytego w starszej wersji usługi językowej
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,35 +13,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8a9d5fe85932f87eb68b6b5a0f5868ebbf8f2b5f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707929"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Jak: Zapewnienie obsługi ukrytego tekstu w starszej usłudze językowej
-Oprócz regionów konspektu można tworzyć ukryte obszary tekstowe. Ukryte regiony tekstu mogą być kontrolowane przez klienta lub kontrolowane przez edytor i są używane do całkowitego ukrycia regionu tekstu. Edytor wyświetla ukryty obszar jako linie poziome. Przykładem tego jest widok **Tylko skrypt** w edytorze HTML.
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Instrukcje: zapewnianie obsługi tekstu ukrytego w starszej wersji usługi językowej
+Oprócz regionów konspektu można tworzyć ukryte regiony tekstowe. Ukryte regiony tekstu mogą być sterowane przez klienta lub kontrolowane przez Edytor i służą do całkowitego ukrywania regionu tekstu. Edytor wyświetla ukryty region jako poziome linie. Przykładem jest widok **tylko skrypt** w edytorze html.
 
-## <a name="to-implement-a-hidden-text-region"></a>Aby zaimplementować obszar tekstu ukrytego
+## <a name="to-implement-a-hidden-text-region"></a>Aby zaimplementować ukryty obszar tekstu
 
-1. Zadzwoń `QueryService` <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>do .
+1. Wywołaj metodę `QueryService` <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> .
 
-     Spowoduje to powrót <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>wskaźnika do .
+     Zwraca wskaźnik do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> .
 
-2. Wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, przechodząc w wskaźnik dla danego buforu tekstu. Określa to, czy sesja ukrytego tekstu już istnieje dla buforu.
+2. Wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A> , przekazanie wskaźnika dla danego buforu tekstu. Określa, czy dla buforu istnieje już Ukryta sesja tekstu.
 
-3. Jeśli jeden już istnieje, to nie trzeba go utworzyć i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> zwracany jest wskaźnik do istniejącego obiektu. Ten wskaźnik służy do wyliczanie i tworzenie obszarów tekstu ukrytego. W przeciwnym <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> razie wywołanie utworzenia ukrytej sesji tekstowej dla buforu.
+3. Jeśli taki już istnieje, nie musisz tworzyć jednego i zwracany jest wskaźnik do istniejącego <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> obiektu. Użyj tego wskaźnika, aby wyliczyć i utworzyć ukryte regiony tekstowe. W przeciwnym razie Zadzwoń <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> do tworzenia sesji tekstu ukrytego dla buforu.
 
-     Zwracany jest <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> wskaźnik do obiektu.
+     Zwracany jest wskaźnik do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> obiektu.
 
     > [!NOTE]
-    > Podczas wywoływania `CreateHiddenTextSession`można określić ukrytego klienta <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>tekstowego (czyli ). Klient ukrytego tekstu powiadamia użytkownika, gdy ukryty tekst lub tworzenie obliczenia jest rozwinięty lub zwinięty przez użytkownika.
+    > Po wywołaniu można `CreateHiddenTextSession` określić klienta tekstu ukrytego (czyli <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> ). Klient tekstu ukrytego powiadamia użytkownika, gdy ukryty lub zwinięty tekst jest rozwinięty lub zwijany.
 
-4. Wywołanie, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> aby dodać jeden lub więcej nowych regionów konspektu naraz, określając następujące informacje w parametrze `reHidReg` (<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>):
+4. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> , aby dodać jeden lub więcej nowych regionów konspektu, określając następujące informacje w `reHidReg` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> parametrze ():
 
-    1. Określ wartość `hrtConcealed` w `iType` człozie struktury, <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> aby wskazać, że tworzysz ukryty region, a nie region konspektu.
+    1. Określ wartość `hrtConcealed` w `iType` składowej <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struktury, aby wskazać, że tworzysz ukryty region, a nie region konspektu.
 
         > [!NOTE]
-        > Gdy ukryte regiony są ukryte, edytor automatycznie wyświetla linie wokół ukrytych regionów, aby wskazać ich obecność.
+        > Gdy ukrywane regiony są ukryte, Edytor automatycznie wyświetla linie wokół ukrytych regionów, aby wskazać ich obecność.
 
-    2. Określ, czy region jest kontrolowany przez `dwBehavior` klienta <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> lub kontrolowany przez edytor w elementach członkowskich struktury. Inteligentna implementacja konspektu może zawierać kombinację regionów konspektu i ukrytego tekstu kontrolowanego przez edytora i klienta.
+    2. Określ, czy region jest kontrolowany przez klienta czy w edytorze w `dwBehavior` składowej <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struktury. Twoja implementacja inteligentnego tworzenia konspektu może zawierać kombinację konspektu i ukrytych regionów tekstu, które są kontrolowane przez klienta.

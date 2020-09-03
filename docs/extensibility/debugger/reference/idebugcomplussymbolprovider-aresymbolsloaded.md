@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::AreSymbolsLoaded | Dokumenty firmy Microsoft
+title: 'IDebugComPlusSymbolProvider:: AreSymbolsLoaded | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 44dceaa8b5cffd3bd81b7e8527368c38a6faaf18
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734161"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
-Określa, czy symbole debugowania są ładowane dla określonego modułu, biorąc pod uwagę identyfikator domeny aplikacji.
+Określa, czy symbole debugowania są ładowane dla określonego modułu o identyfikatorze domeny aplikacji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,16 +42,16 @@ int AreSymbolsLoaded (
 
 ## <a name="parameters"></a>Parametry
 `ulAppDomainID`\
-[w] Identyfikator domeny aplikacji.
+podczas Identyfikator domeny aplikacji.
 
 `guidModule`\
-[w] Unikatowy identyfikator modułu.
+podczas Unikatowy identyfikator modułu.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli symbole debugowania są `S_OK`ładowane, zwraca ; w przeciwnym `S_FALSE`razie zwraca plik .
+Jeśli symbole debugowania są załadowane, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` .
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CDebugSymbolProvider,** który udostępnia interfejs [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CDebugSymbolProvider** , który uwidacznia Interfejs [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::AreSymbolsLoaded(

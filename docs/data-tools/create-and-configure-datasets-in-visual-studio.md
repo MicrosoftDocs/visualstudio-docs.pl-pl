@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 1065c5efdcf73016e61ee0f016511579d41acd88
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282751"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Instrukcje: Tworzenie i konfigurowanie zestawów danych w programie Visual Studio

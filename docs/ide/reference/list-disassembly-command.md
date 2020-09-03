@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91319a8d25aaec6bdd676ed6d709dffc47100195
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770647"
 ---
 # <a name="list-disassembly-command"></a>Lista dezasemblacji — Polecenie
@@ -34,11 +34,11 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 ## <a name="switches"></a>Przełączniki
 Każdy przełącznik może być wywoływany przy użyciu kompletnego formularza lub krótkiej formy.
 
-/Count: `number` [lub]/c: `number` [lub]/length: `number` [lub]/l:`number`
+/Count: `number` [lub]/c: `number` [lub]/length: `number` [lub]/l: `number`
 
 Opcjonalny. Liczba instrukcji do wyświetlenia. Wartość domyślna to 8.
 
-/endaddress: `expression` [lub]/e:`expression`
+/endaddress: `expression` [lub]/e: `expression`
 
 Opcjonalny. Adres, pod który ma zostać zatrzymany demontaż.
 
@@ -64,7 +64,7 @@ Opcjonalny. Włącza wyświetlanie numerów wierszy skojarzonych z kodem źród�
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Listing stosu wywołań — polecenie](../../ide/reference/list-call-stack-command.md)
 - [Lista wątków — polecenie](../../ide/reference/list-threads-command.md)

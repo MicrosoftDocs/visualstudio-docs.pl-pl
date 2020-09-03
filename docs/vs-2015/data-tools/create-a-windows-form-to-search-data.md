@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 81980f38cbd8fb595530cc52b2cf32056feb43a7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670061"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych
@@ -64,7 +64,7 @@ Typowym scenariuszem aplikacji jest wyświetlenie wybranych danych w formularzu.
 
 1. Z menu **plik** Utwórz nowy projekt.
 
-2. Nadaj nazwę projektowi `WindowsSearchForm`.
+2. Nadaj nazwę projektowi `WindowsSearchForm` .
 
 3. Wybierz pozycję **aplikacja systemu Windows** i kliknij przycisk **OK**.
 
@@ -106,14 +106,14 @@ Typowym scenariuszem aplikacji jest wyświetlenie wybranych danych w formularzu.
 
 2. Przeciągnij węzeł **Customers** z okna **źródła danych** do formularza.
 
-     W formularzu pojawiają się <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) służący do nawigowania po rekordach. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+     <xref:System.Windows.Forms.DataGridView>A i pasek narzędzi ( <xref:System.Windows.Forms.BindingNavigator> ) na potrzeby nawigowania po rekordach pojawia się w formularzu. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
 
 ## <a name="addparameterization-search-functionality-to-the-query"></a>Addparameterization (funkcja wyszukiwania) do zapytania
  Można dodać klauzulę WHERE do oryginalnego zapytania przy użyciu okna dialogowego **Konstruktor kryteriów wyszukiwania** .
 
 #### <a name="to-create-a-parameterized-query-and-controls-to-enter-the-parameters"></a>Aby utworzyć zapytanie parametryczne i kontrolki do wprowadzania parametrów
 
-1. Wybierz kontrolkę <xref:System.Windows.Forms.DataGridView>, a następnie wybierz polecenie **Dodaj zapytanie** w menu **dane** .
+1. Zaznacz <xref:System.Windows.Forms.DataGridView> kontrolkę, a następnie wybierz polecenie **Dodaj zapytanie** w menu **dane** .
 
 2. Wpisz `FillByCity` w obszarze **Nowa nazwa zapytania** w oknie dialogowym **Konstruktor kryteriów wyszukiwania** .
 
@@ -128,7 +128,7 @@ Typowym scenariuszem aplikacji jest wyświetlenie wybranych danych w formularzu.
      `WHERE City = @City`
 
     > [!NOTE]
-    > Dostęp i OLE DB źródła danych używają znaku zapytania ("?") do oznaczania parametrów, więc klauzula WHERE będzie wyglądać następująco: `WHERE City = ?`.
+    > Dostęp do źródeł danych i ich OLE DB Użyj znaku zapytania ("?") w celu określenia parametrów, więc klauzula WHERE będzie wyglądać następująco: `WHERE City = ?` .
 
 4. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Konstruktor kryteriów wyszukiwania** .
 

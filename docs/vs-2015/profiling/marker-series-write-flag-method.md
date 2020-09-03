@@ -1,5 +1,5 @@
 ---
-title: Metoda marker_series::write_flag | Dokumentacja firmy Microsoft
+title: 'marker_series:: write_flag Metoda | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b44c7cf2d2eb0f538b3819265298f1ca4166e6be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200747"
 ---
-# <a name="markerserieswriteflag-method"></a>marker_series::write_flag — Metoda
+# <a name="marker_serieswrite_flag-method"></a>marker_series::write_flag — Metoda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zapisuje plik śledzenia Concurrency Visualizer flagę.  
+Zapisuje flagę w pliku śledzenia Concurrency Visualizer.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -52,18 +52,18 @@ void write_flag(
   
 #### <a name="parameters"></a>Parametry  
  `_Format`  
- Ciąg formatu złożonego, który zawiera tekst zmieszać z zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.  
+ Ciąg formatu złożonego, który zawiera tekst, który jest przemieszany z zerem lub więcej elementów formatu, który odpowiada obiektom na liście argumentów.  
   
  `_Importance`  
  Poziom ważności.  
   
  `_Category`  
- Kategoria.  
+ Kategorii.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkersobj.h  
+ **Nagłówek:** cvmarkersobj. h  
   
- **Namespace:** CONCURRENCY::Diagnostic —  
+ **Przestrzeń nazw:** Współbieżność::d przesła  
   
 ## <a name="see-also"></a>Zobacz też  
- [marker_series, klasa](../profiling/marker-series-class.md)
+ [marker_series — Klasa](../profiling/marker-series-class.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 562990b14edba11abf50dc735279cba36bb21518
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671188"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Udostępnianie modeli i eksportowanie diagramów
@@ -31,7 +31,7 @@ W programie Visual Studio można udostępniać modele i diagramy współpracowni
 
  Różni użytkownicy mogą w tym samym czasie korzystać z modelu UML, ale powinny korzystać z różnych pakietów.
 
- Zalecamy używanie [!INCLUDE[esprscc](../includes/esprscc-md.md)].
+ Zalecamy korzystanie z programu [!INCLUDE[esprscc](../includes/esprscc-md.md)] .
 
  Aby uzyskać więcej informacji, zobacz [Zarządzanie modelami i diagramami w obszarze kontroli wersji](../modeling/manage-models-and-diagrams-under-version-control.md).
 

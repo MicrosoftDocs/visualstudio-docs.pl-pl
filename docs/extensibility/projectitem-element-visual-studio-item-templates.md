@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770725"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem, element (szablony elementów Visual Studio)
@@ -71,7 +71,7 @@ Określa plik, który jest zawarty w szablonie elementu.
  `string`Reprezentuje nazwę pliku w pliku template *. zip* .
 
 ## <a name="remarks"></a>Uwagi
- `ProjectItem`jest opcjonalnym elementem podrzędnym `TemplateContent` .
+ `ProjectItem` jest opcjonalnym elementem podrzędnym `TemplateContent` .
 
  Ten `TargetFileName` atrybut może służyć do zmiany nazwy plików z parametrami. Na przykład jeśli plik *. vb* istnieje w katalogu głównym pliku template *. zip* , ale plik ma być nazwany na podstawie nazwy pliku dostarczonej przez użytkownika w oknie dialogowym **Dodaj nowy element** , należy użyć następującego kodu XML:
 
@@ -100,7 +100,7 @@ Określa plik, który jest zawarty w szablonie elementu.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Instrukcje: Tworzenie szablonów elementów wieloplikowych](../ide/how-to-create-multi-file-item-templates.md)

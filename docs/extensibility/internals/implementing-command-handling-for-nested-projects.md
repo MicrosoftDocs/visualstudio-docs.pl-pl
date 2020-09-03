@@ -1,5 +1,5 @@
 ---
-title: Wdrażanie obsługi poleceń dla projektów zagnieżdżonych | Dokumenty firmy Microsoft
+title: Implementowanie obsługi poleceń dla zagnieżdżonych projektów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,33 +11,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2092fc8033d5a5cc53b12bd63a945bd9865ca30e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707607"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementowanie obsługi poleceń dla zagnieżdżonych projektów
-IDE może przekazywać polecenia, które <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> są <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> przekazywane przez interfejsy i do projektów zagnieżdżonych lub projektów nadrzędnych można filtrować lub zastąpić polecenia.
+IDE może przekazać polecenia, które są przekazywane za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsów do projektów zagnieżdżonych, lub projekty nadrzędne mogą filtrować lub przesłaniać polecenia.
 
 > [!NOTE]
-> Tylko polecenia zwykle obsługiwane przez projekt nadrzędny mogą być filtrowane. Nie można filtrować poleceń, takich jak **Kompilacja** i **Wdrażanie,** które są obsługiwane przez IDE.
+> Można filtrować tylko polecenia zwykle obsługiwane przez projekt nadrzędny. Nie można filtrować poleceń, takich jak **Kompilowanie** i **wdrażanie** , które są obsługiwane przez IDE.
 
- W poniższych krokach opisano proces implementowania obsługi poleceń.
+ Poniższe kroki opisują proces wdrażania obsługi poleceń.
 
 ## <a name="procedures"></a>Procedury
 
 #### <a name="to-implement-command-handling"></a>Aby zaimplementować obsługę poleceń
 
-1. Gdy użytkownik wybierze projekt zagnieżdżony lub węzeł w projekcie zagnieżdżonego:
+1. Gdy użytkownik wybierze zagnieżdżony projekt lub węzeł w projekcie zagnieżdżonym:
 
    1. IDE wywołuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodę.
 
-      — lub —
+      oraz
 
-   2. Jeśli polecenie pochodzi z okna hierarchii, takie jak polecenie menu skrótów <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> w Eksploratorze rozwiązań, IDE wywołuje metodę w łzowym projekcie.
+   2. Jeśli polecenie pochodzi z okna hierarchii, takiego jak polecenie menu skrótów w Eksplorator rozwiązań, IDE wywoła <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> metodę w obiekcie nadrzędnym projektu.
 
-2. Projekt nadrzędny może zbadać parametry, które mają być przekazywane do `QueryStatus`, takich jak `pguidCmdGroup` i `prgCmds`, aby ustalić, czy projekt nadrzędny powinien filtrować polecenia. Jeśli projekt nadrzędny jest implementowany do filtrowania poleceń, należy ustawić:
+2. Projekt nadrzędny może sprawdzić parametry, które mają zostać przesłane do `QueryStatus` , takie jak `pguidCmdGroup` i `prgCmds` , aby określić, czy projekt nadrzędny powinien filtrować polecenia. Jeśli projekt nadrzędny jest zaimplementowany do filtrowania poleceń, powinien on zostać ustawiony:
 
    ```
    prgCmds[0].cmdf = OLECMDF_SUPPORTED;
@@ -45,11 +45,11 @@ IDE może przekazywać polecenia, które <xref:Microsoft.VisualStudio.Shell.Inte
    prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;
    ```
 
-    Następnie projekt nadrzędny `S_OK`powinien zwrócić .
+    Następnie projekt nadrzędny powinien zwrócić `S_OK` .
 
-    Jeśli projekt nadrzędny nie filtruje polecenia, `S_OK`powinien po prostu zwrócić . W takim przypadku IDE automatycznie kieruje polecenie do projektu podrzędnego.
+    Jeśli projekt nadrzędny nie filtruje polecenia, powinien po prostu zwrócić `S_OK` . W takim przypadku IDE automatycznie kieruje polecenie do projektu podrzędnego.
 
-    Projekt nadrzędny nie musi kierować polecenia do projektu podrzędnego. IDE wykonuje to zadanie..
+    Projekt nadrzędny nie musi kierować polecenia do projektu podrzędnego. IDE wykonuje to zadanie...
 
 ## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>

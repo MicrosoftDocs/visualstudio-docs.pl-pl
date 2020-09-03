@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eba4d110b06147db384a4d7aafe01c7d9f272ba3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519902"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>Instrukcje: programowe otwieranie istniejących dokumentów
@@ -44,7 +44,7 @@ ms.locfileid: "85519902"
 
 - Dokument o nazwie *NewDocument.doc* musi znajdować się w katalogu o nazwie *test* na dysku C.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Programowane tworzenie nowych dokumentów](../vsto/how-to-programmatically-create-new-documents.md)
 - [Instrukcje: programowe Zamykanie dokumentów](../vsto/how-to-programmatically-close-documents.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 4a4f0c50fc0a3fe21da560356d3551ca85ef9d66
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284428"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Instrukcje: Tworzenie szablonów elementów wieloplikowych
@@ -36,7 +36,7 @@ Szablon elementu wieloplikowego można utworzyć w taki sam sposób jak szablon 
 
 1. Utwórz szablon elementu, jak utworzysz ręcznie szablon elementu jednoplikowego, ale Uwzględnij każdy plik stanowiący element wieloplikowy.
 
-1. W pliku XML *. vstemplate* Dodaj `ProjectItem` element dla każdego pojedynczego pliku i Dodaj `TargetFileName` atrybut do tego elementu. Ustaw wartość `TargetFileName` atrybutu na *$fileinputname $. FileExtension*, gdzie *FileExtension* to rozszerzenie pliku, który jest dołączany do szablonu. Przykład:
+1. W pliku XML *. vstemplate* Dodaj `ProjectItem` element dla każdego pojedynczego pliku i Dodaj `TargetFileName` atrybut do tego elementu. Ustaw wartość `TargetFileName` atrybutu na *$fileinputname $. FileExtension*, gdzie *FileExtension* to rozszerzenie pliku, który jest dołączany do szablonu. Na przykład:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">

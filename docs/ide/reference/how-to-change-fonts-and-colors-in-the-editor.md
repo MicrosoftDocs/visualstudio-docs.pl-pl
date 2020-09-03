@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa56a7ab8b3147cc3e8fbb784211d9a34536189d
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770422"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Instrukcje: zmiana czcionek i kolorów dla edytora w programie Visual Studio
@@ -55,7 +55,7 @@ Można zmienić domyślną krój czcionki, dostosować rozmiar czcionki i zmieni
 
 Aby dowiedzieć się więcej o zmianach czcionki i koloru, które można wprowadzić do środowiska IDE, za pomocą okna dialogowego **Opcje** , zobacz stronę [czcionki i kolory, środowisko, Opcje okno dialogowe](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Funkcje edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [Instrukcje: zmiana czcionek i kolorów w programie Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

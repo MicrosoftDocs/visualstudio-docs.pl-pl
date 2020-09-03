@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a17ce633515979ca7a3fd3ac5a7e1d8802996944
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770412"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Zarządzanie podpisywaniem zestawu i manifestu
@@ -58,7 +58,7 @@ Ogólnie rzecz biorąc nie należy podpisywać plików wykonywalnych. Silnie naz
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Jak podpisać zestaw w programie Visual Studio
 
-Aplikację lub składnik należy podpisać przy użyciu karty **podpisywanie** okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**). Wybierz kartę **podpisywanie** , a następnie zaznacz pole wyboru **podpisz zestaw** .
+Aplikację lub składnik należy podpisać przy użyciu karty **podpisywanie** okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**). Wybierz kartę **podpisywanie** , a następnie zaznacz pole wyboru **podpisz zestaw**  .
 
 Określ plik klucza. Jeśli zdecydujesz się utworzyć nowy plik klucza, nowe pliki kluczy są zawsze tworzone w formacie *PFX* . Musisz mieć nazwę i hasło dla nowego pliku.
 
@@ -67,11 +67,11 @@ Określ plik klucza. Jeśli zdecydujesz się utworzyć nowy plik klucza, nowe pl
 
 Możesz również wskazać klucz, który został już utworzony. Aby uzyskać więcej informacji na temat tworzenia kluczy, zobacz [Tworzenie pary kluczy publiczny-prywatny](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
-Jeśli masz tylko dostęp do klucza publicznego, możesz użyć podpisywania opóźnień, aby odroczyć przypisanie klucza. Aby włączyć podpisywanie opóźnień, należy zaznaczyć pole wyboru **Opóźnij tylko znak** . Projekt podpisany z opóźnieniem nie jest uruchomiony i nie można go debugować. Można jednak pominąć weryfikację podczas opracowywania przy użyciu [narzędziaSn.exe silnej nazwy](/dotnet/framework/tools/sn-exe-strong-name-tool) z `-Vr` opcją.
+Jeśli masz tylko dostęp do klucza publicznego, możesz użyć podpisywania opóźnień, aby odroczyć przypisanie klucza. Aby włączyć podpisywanie opóźnień, należy zaznaczyć pole wyboru **Opóźnij tylko znak** . Projekt podpisany z opóźnieniem nie jest uruchomiony i nie można go debugować. Można jednak pominąć weryfikację podczas opracowywania przy użyciu [ narzędziaSn.exe silnej nazwy](/dotnet/framework/tools/sn-exe-strong-name-tool) z `-Vr` opcją.
 
 Informacje o podpisywaniu manifestów znajdują się w temacie [How to: Signing Application and Deployment Manifests](../ide/how-to-sign-application-and-deployment-manifests.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zestawy o silnych nazwach](/dotnet/framework/app-domains/strong-named-assemblies)
 - [Zestawy o silnych nazwach (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

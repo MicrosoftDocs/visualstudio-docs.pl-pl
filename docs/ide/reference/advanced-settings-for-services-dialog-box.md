@@ -13,18 +13,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 967e99102f3b88e82a5466e7ce8d2cac2412d286
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585681"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Zaawansowane ustawienia dla usług — Okno dialogowe
-Usługi aplikacji klienckich [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] zapewniają uproszczony dostęp do usług logowania, ról i profili z aplikacji Windows Forms i Windows Presentation Foundation (WPF). Za pomocą strony **Usługi** w **projektancie projektu** można skonfigurować usługi aplikacji klienckich. Aby uzyskać więcej informacji na temat strony **Usługi,** zobacz [Strona usług, Projektant projektu](../../ide/reference/services-page-project-designer.md).
+Usługi aplikacji klienta zapewniają uproszczony dostęp do danych [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] logowania, ról i usług profilów z aplikacji Windows Forms i Windows Presentation Foundation (WPF). Aby skonfigurować usługi aplikacji klienta, można użyć strony **usługi** w **projektancie projektu** . Aby uzyskać więcej informacji o stronie **usług** , zobacz [stronę usług, Projektant projektu](../../ide/reference/services-page-project-designer.md).
 
-Użyj okna dialogowego **Ustawienia zaawansowane dla usług** na stronie **Usługi** w **Projektancie projektu,** aby skonfigurować ustawienia zaawansowane dla usług aplikacji klienckich. Za pomocą tych ustawień, można zastąpić niektóre domyślne zachowania usługi aplikacji, aby włączyć mniej typowych scenariuszy. Aby uzyskać więcej informacji, zobacz [Usługi aplikacji klienta](/dotnet/framework/common-client-technologies/client-application-services).
+Za pomocą okna dialogowego **Ustawienia zaawansowane dla usług** na stronie **usługi** w **projektancie projektu** można skonfigurować zaawansowane ustawienia dla usług aplikacji klienta. Korzystając z tych ustawień, można zastąpić niektóre domyślne zachowania usługi aplikacji, aby włączyć mniej typowe scenariusze. Aby uzyskać więcej informacji, zobacz [usługi aplikacji klienta](/dotnet/framework/common-client-technologies/client-application-services).
 
-Aby uzyskać dostęp do okna dialogowego **Ustawienia zaawansowane dla usług,** wybierz węzeł projektu w **Eksploratorze rozwiązań,** a następnie w menu **Projekt** kliknij polecenie **Właściwości.** Po wyświetleniu **projektanta projektu** kliknij kartę **Usługi,** a następnie kliknij przycisk **Zaawansowane.** Ten przycisk zostanie wyłączony, dopóki nie włączysz usług aplikacji klienckich.
+Aby uzyskać dostęp do okna dialogowego **Ustawienia zaawansowane dla usług** , wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie kliknij pozycję **Właściwości** w menu **projekt** . Gdy zostanie wyświetlony **Projektant projektu** , kliknij kartę **usługi** , a następnie kliknij przycisk **Zaawansowane** . Ten przycisk zostanie wyłączony do momentu włączenia usług aplikacji klienta.
 
 ## <a name="task-list"></a>Lista zadań
 
@@ -32,15 +32,15 @@ Aby uzyskać dostęp do okna dialogowego **Ustawienia zaawansowane dla usług,**
 
 ## <a name="uielement-list"></a>Lista elementów UI
 
- **Zapisywanie skrótu hasła lokalnie w celu włączenia logowania w trybie offline** Określa, czy zaszyfrowana forma hasła użytkownika będzie buforowana lokalnie, aby umożliwić użytkownikowi logowanie się, gdy aplikacja jest w trybie offline. Ta opcja jest domyślnie wybrana.
+ **Zapisywanie skrótu hasła lokalnie w celu włączenia logowania w trybie offline** Określa, czy zaszyfrowana postać hasła użytkownika będzie buforowana lokalnie, aby umożliwić użytkownikowi zalogowanie się, gdy aplikacja działa w trybie offline. Ta opcja jest domyślnie wybrana.
 
- **Wymagaj od użytkowników ponownego zalogowania się przy każdym wygaśnięciu pliku cookie serwera** Określa, czy wcześniej uwierzytelnieni użytkownicy są automatycznie reauthenticated, gdy aplikacja uzyskuje dostęp do ról lub usługi profilu i plik cookie uwierzytelniania serwera wygasła. Wybierz tę opcję, aby odmówić dostępu do usług aplikacji i wymagać jawnego ponownego uwierzytelnienia po wygaśnięciu pliku cookie. Jest to przydatne w przypadku aplikacji wdrożonych w lokalizacjach publicznych, aby upewnić się, że użytkownicy, którzy opuszczają aplikację po użyciu, nie pozostaną uwierzytelnieni przez czas nieokreślony. Ta opcja jest domyślnie wyczyszczona.
+ **Wymagaj od użytkowników ponownego zalogowania się za każdym razem, gdy plik cookie serwera wygaśnie** Określa, czy wcześniej uwierzytelnieni użytkownicy są automatycznie uwierzytelniani, gdy aplikacja uzyskuje dostęp do ról lub usługi profilu, a plik cookie uwierzytelniania serwera wygasł. Wybierz tę opcję, aby odmówić dostępu do usług aplikacji i wymagać jawnego ponownego uwierzytelnienia po wygaśnięciu pliku cookie. Jest to przydatne w przypadku aplikacji wdrożonych w lokalizacjach publicznych, aby upewnić się, że użytkownicy, którzy opuszczają aplikację po jej użyciu, nie będą uwierzytelniani przez czas nieokreślony. Ta opcja jest domyślnie wyczyszczona.
 
- **Limit czasu pamięci podręcznej usługi roli** Określa czas, przez przez który dostawca roli klienta będzie używał buforowanych wartości ról zamiast uzyskiwania dostępu do usługi ról. Ustaw ten przedział czasu na małą wartość, gdy role są często aktualizowane lub do większej wartości, gdy role są aktualizowane rzadko. Wartość domyślna to jeden dzień.
+ **Limit czasu pamięci podręcznej usługi roli** Określa czas, przez jaki dostawca roli klienta będzie używał wartości roli w pamięci podręcznej zamiast uzyskiwania dostępu do usługi ról. Ustaw ten przedział czasu na małą wartość, gdy role są aktualizowane często lub do większej wartości, gdy role są aktualizowane rzadko. Wartość domyślna to jeden dzień.
 
-Dostawca roli uzyskuje dostęp do wartości ról buforowanych lub <xref:System.Web.Security.RolePrincipal.IsInRole%2A> usługi ról podczas wywoływania metody. Aby programowo wyczyścić pamięć podręczną i wymusić dostęp <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A> do usługi zdalnej, należy wywołać metodę.
+Dostawca roli uzyskuje dostęp do buforowanych wartości ról lub usługi ról po wywołaniu <xref:System.Web.Security.RolePrincipal.IsInRole%2A> metody. Aby programowo wyczyścić pamięć podręczną i wymusić dostęp tej metody do usługi zdalnej, wywołaj <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A> metodę.
 
- **Użyj niestandardowego ciągu połączenia** Określa, czy dostawcy usług klienckich będą używać niestandardowego magazynu danych dla lokalnej pamięci podręcznej. Domyślnie dostawcy usług będą używać lokalnego systemu plików dla pamięci podręcznej. Wybranie tej opcji spowoduje automatyczne wypełnienie pola tekstowego domyślnym ciągiem połączenia. Domyślny ciąg połączenia można zachować w celu automatycznego generowania i używania bazy danych programu SQL Server Compact Edition lub można określić parametry połączenia z istniejącą bazą danych programu SQL Server. Aby uzyskać więcej informacji, zobacz [Jak: Konfigurowanie usług aplikacji klienckich](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services). Ta opcja jest domyślnie wyczyszczona.
+ **Użyj niestandardowych parametrów połączenia** Określa, czy dostawcy usług klienta będą używać niestandardowego magazynu danych dla lokalnej pamięci podręcznej. Domyślnie dostawcy usług będą używać lokalnego systemu plików dla pamięci podręcznej. Wybranie tej opcji spowoduje automatyczne wypełnienie pola tekstowego domyślnymi parametrami połączenia. Można zachować domyślne parametry połączenia, aby automatycznie generować i korzystać z bazy danych SQL Server Compact Edition, lub określić parametry połączenia do istniejącej bazy danych SQL Server. Aby uzyskać więcej informacji, zobacz [How to: Configure Client usługi aplikacji](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services). Ta opcja jest domyślnie wyczyszczona.
 
 ## <a name="see-also"></a>Zobacz też
 

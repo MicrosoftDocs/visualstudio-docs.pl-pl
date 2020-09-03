@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: fdf3ff02c86a878e9c955d2b3b92879870700efa
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521150"
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006: Używaj klasy SafeHandle w celu hermetyzacji zasobów natywnych
@@ -40,7 +40,7 @@ ms.locfileid: "85521150"
 
  W takich scenariuszach istnieją również problemy z zabezpieczeniami lub niezawodnością, jeśli dostęp wielowątkowy jest dozwolony do i w sposób umożliwiający `IntPtr` zwolnienie zasobu reprezentowanego przez program `IntPtr` . Te problemy obejmują odtwarzanie `IntPtr` wartości w wydaniu zasobów podczas jednoczesnego używania zasobu w innym wątku. Może to spowodować sytuacje wyścigu, w których jeden wątek może odczytywać lub zapisywać dane skojarzone z niewłaściwym zasobem. Na przykład, jeśli typ przechowuje dojście systemu operacyjnego jako `IntPtr` i umożliwia użytkownikom wywoływanie zarówno **zamknięcia** , jak i innej metody, która używa tego uchwytu jednocześnie i bez pewnego rodzaju synchronizacji, kod ma problem z odtwarzaniem obsługi.
 
- Ten problem z odtwarzaniem obsłudze może spowodować uszkodzenie danych i często lukę w zabezpieczeniach. `SafeHandle`i jej klasy równorzędnej <xref:System.Runtime.InteropServices.CriticalHandle> zapewniają mechanizm hermetyzowania natywnego uchwytu do zasobu, co pozwala uniknąć takich problemów z wątkami. Ponadto można użyć `SafeHandle` klasy i jej elementów równorzędnych `CriticalHandle` do innych problemów związanych z wątkami, na przykład w celu starannej kontroli okresu istnienia zarządzanych obiektów, które zawierają kopię natywnego uchwytu w przypadku wywołań metod natywnych. W takiej sytuacji często można usunąć wywołania do `GC.KeepAlive` . Narzuty wydajnościowe Thay naliczane podczas korzystania z `SafeHandle` i, w mniejszym stopniu, `CriticalHandle` , często można je zmniejszyć poprzez staranne projektowanie.
+ Ten problem z odtwarzaniem obsłudze może spowodować uszkodzenie danych i często lukę w zabezpieczeniach. `SafeHandle` i jej klasy równorzędnej <xref:System.Runtime.InteropServices.CriticalHandle> zapewniają mechanizm hermetyzowania natywnego uchwytu do zasobu, co pozwala uniknąć takich problemów z wątkami. Ponadto można użyć `SafeHandle` klasy i jej elementów równorzędnych `CriticalHandle` do innych problemów związanych z wątkami, na przykład w celu starannej kontroli okresu istnienia zarządzanych obiektów, które zawierają kopię natywnego uchwytu w przypadku wywołań metod natywnych. W takiej sytuacji często można usunąć wywołania do `GC.KeepAlive` . Narzuty wydajnościowe Thay naliczane podczas korzystania z `SafeHandle` i, w mniejszym stopniu, `CriticalHandle` , często można je zmniejszyć poprzez staranne projektowanie.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Konwertuj `IntPtr` użycie na `SafeHandle` , aby bezpiecznie zarządzać dostępem do zasobów natywnych. Przykłady można znaleźć w <xref:System.Runtime.InteropServices.SafeHandle> temacie Reference.

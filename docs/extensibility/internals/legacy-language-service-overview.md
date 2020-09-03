@@ -1,5 +1,5 @@
 ---
-title: Przegląd usługi języka starszego | Dokumenty firmy Microsoft
+title: Omówienie starszej wersji usługi językowej | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aed653ec200063e72434fc758c7920e6caabafe1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707357"
 ---
 # <a name="legacy-language-service-overview"></a>Omówienie starszej wersji usługi językowej
-Usługa języka zapewnia obsługę edytora, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] która umożliwia implementowanie niektórych funkcji. Klasy usługi języka managed package framework (MPF) zapewniają pełną obsługę często używanych funkcji i częściową obsługę innych funkcji.
+Usługa językowa zapewnia obsługę edytora, która umożliwia implementowanie niektórych [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funkcji. Klasy usługi języka Managed Package Framework (MPF) zapewniają pełną obsługę często używanych funkcji i częściową obsługę innych funkcji.
 
-## <a name="fully-supported-features-in-the-mpf"></a>W pełni obsługiwane funkcje w mpf
- Klasy usługi języka MPF obsługują następujące funkcje:
+## <a name="fully-supported-features-in-the-mpf"></a>W pełni obsługiwane funkcje w MPF
+ Klasy usługi językowej MPF obsługują następujące funkcje:
 
-- Wyróżnianie składni
+- Podświetlanie składni
 
 - Tworzenie konspektu
 
@@ -37,25 +37,25 @@ Usługa języka zapewnia obsługę edytora, [!INCLUDE[vsprvs](../../code-quality
 
 - Informacje o parametrach IntelliSense
 
-- Szybkie informacje intellisense
+- Szybkie informacje funkcji IntelliSense
 
-- Ukończenie członkostwa w uszczynakłam IntelliSense
+- Uzupełnienie elementu członkowskiego IntelliSense
 
-- Zakończenie słowa IntelliSense
+- Uzupełnianie wyrazów IntelliSense
 
-## <a name="partially-supported-features-in-the-mpf"></a>Częściowo obsługiwane funkcje w mpf
- MPF zapewnia tylko częściową obsługę następujących funkcji. Oznacza to, że należy zaimplementować metody, które są wywoływane przez MPF.
+## <a name="partially-supported-features-in-the-mpf"></a>Częściowo obsługiwane funkcje w MPF
+ MPF zapewnia tylko częściową pomoc techniczną dla następujących funkcji. Oznacza to, że należy zaimplementować metody, które są wywoływane przez MPF.
 
-- Kod do formatowania. Podać kod, który implementuje formatowanie.
+- Ponowne formatowanie kodu. Należy podać kod, który implementuje ponowne formatowanie.
 
-- Sprawdzanie poprawności punktów przerwania przez identyfikowanie prawidłowych zakresów kodu. Podać kod, który identyfikuje zakresy kodu.
+- Sprawdzanie poprawności punktów przerwania przez zidentyfikowanie prawidłowych zakresów kodu. Należy podać kod, który identyfikuje zakresy kodu.
 
-- Obsługa okna **Autos** debugera do wyświetlania zmiennych. Podać kod, który określa, co ma być wyświetlane w oknie.
+- Obsługa okna debugera **autoodtwarzania** do wyświetlania zmiennych. Należy podać kod określający, co ma być wyświetlane w oknie.
 
-- Obsługa **paska nawigacyjnego** do szybkiej nawigacji między typami i członkami. Implementujesz i zwracasz klasę pomocnika, która wypełnia listy w polach kombi **paska nawigacyjnego.**
+- Obsługa **paska nawigacyjnego** w celu szybkiej nawigacji między typami i elementami członkowskimi. Zaimplementowanie i zwrócenie klasy pomocnika, która wypełnia listy w polach kombi na **pasku nawigacyjnym** .
 
-## <a name="implementation"></a>Wdrażanie
- Należy wykonać kilka kroków, aby zaimplementować samą usługę języka i funkcje usługi języka, które mają być obsługiwane dla języka. Te kroki są omówione w następujących tematach:
+## <a name="implementation"></a>Implementacja
+ Należy wykonać kilka czynności w celu zaimplementowania samej usługi językowej i funkcji usługi językowej, które mają być obsługiwane w Twoim języku. Te kroki omówiono w następujących tematach:
 
 - [Implementowanie starszej wersji usługi językowej](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 

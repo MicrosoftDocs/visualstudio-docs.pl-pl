@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 89a667e3254be8161d4defb54d524756a5eb02fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670010"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Porady: dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-*Odwołanie do usługi* umożliwia projektowi dostęp do co najmniej jednego [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]. Za pomocą okna dialogowego **Dodaj odwołanie do usługi** można wyszukiwać [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] w bieżącym rozwiązaniu, lokalnie, w sieci lokalnej lub w Internecie.
+*Odwołanie do usługi* umożliwia projektowi dostęp do co najmniej jednego elementu [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] . Użyj okna dialogowego **Dodaj odwołanie do usługi** , aby wyszukać [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] w bieżącym rozwiązaniu, lokalnie, w sieci lokalnej lub w Internecie.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
@@ -52,7 +52,7 @@ ms.locfileid: "72670010"
 
 5. Kliknij przycisk **OK** , aby dodać odwołanie do projektu.
 
-     Zostanie wygenerowany klient usługi (proxy), a metadane opisujące usługę zostaną dodane do pliku App. config.
+     Zostanie wygenerowany klient usługi (proxy), a metadane opisujące usługę zostaną dodane do pliku app.config.
 
 #### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>Aby dodać odwołanie do usługi w bieżącym rozwiązaniu
 
@@ -60,9 +60,9 @@ ms.locfileid: "72670010"
 
      Zostanie wyświetlone okno dialogowe **Dodaj odwołanie do usługi** .
 
-2. Kliknij przycisk **odkryj**.
+2. Kliknij pozycję **Odnajdź**.
 
-     Wszystkie usługi (zarówno [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], jak i usługi WCF) w bieżącym rozwiązaniu są dodawane do listy **usług** .
+     Wszystkie usługi ( [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] i usługi WCF) w bieżącym rozwiązaniu są dodawane do listy **usług** .
 
 3. Na liście **usługi** rozwiń węzeł usługi, która ma zostać użyta, a następnie wybierz zestaw jednostek.
 
@@ -70,10 +70,10 @@ ms.locfileid: "72670010"
 
 5. Kliknij przycisk **OK** , aby dodać odwołanie do projektu.
 
-     Zostanie wygenerowany klient usługi (proxy), a metadane opisujące usługę zostaną dodane do pliku App. config.
+     Zostanie wygenerowany klient usługi (proxy), a metadane opisujące usługę zostaną dodane do pliku app.config.
 
 ## <a name="updating-a-service-reference"></a>Aktualizowanie odwołania do usługi
- Entity Data Model dla [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] czasami ulegnie zmianie. W takim przypadku należy zaktualizować odwołanie do usługi.
+ Entity Data Model dla a [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] czasami ulegnie zmianie. W takim przypadku należy zaktualizować odwołanie do usługi.
 
 #### <a name="to-update-a-service-reference"></a>Aby zaktualizować odwołanie do usługi
 
@@ -88,7 +88,7 @@ ms.locfileid: "72670010"
 
 - W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy odwołanie do usługi, a następnie kliknij pozycję **Usuń**.
 
-     Klient usługi zostanie usunięty z rozwiązania, a metadane opisujące usługę zostaną usunięte z pliku App. config.
+     Klient usługi zostanie usunięty z rozwiązania, a metadane opisujące usługę zostaną usunięte z pliku app.config.
 
     > [!NOTE]
     > Każdy kod odwołujący się do odwołania do usługi będzie musiał zostać usunięty ręcznie.

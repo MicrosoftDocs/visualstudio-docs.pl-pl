@@ -1,5 +1,5 @@
 ---
-title: Rozszerzalność usługi języka starszego | Dokumenty firmy Microsoft
+title: Rozszerzalność starszej wersji usługi językowej | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,39 +12,39 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 81b5ec3de8d7b0b9466e162c3ee193c130634cd4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707406"
 ---
 # <a name="legacy-language-service-extensibility"></a>Rozszerzalność starszej wersji usługi językowej
-Usługa języka zapewnia obsługę specyficzne dla języka do edycji kodu źródłowego w IDE.
+Usługa języka zapewnia obsługę specyficzną dla języka na potrzeby edytowania kodu źródłowego w środowisku IDE.
 
- Starsze usługi języka są implementowane jako część VSPackage, ale nowszym sposobem implementowania funkcji usługi języka jest użycie rozszerzeń MEF. Aby dowiedzieć się więcej o nowym sposobie implementacji usługi językowej, zobacz [Rozszerzenia edytora i usługi językowej](../../extensibility/editor-and-language-service-extensions.md).
+ Starsze usługi językowe są implementowane w ramach pakietu VSPackage, ale nowszym sposobem implementacji funkcji usługi językowej jest korzystanie z rozszerzeń MEF. Aby dowiedzieć się więcej o nowym sposobie implementacji usługi językowej, zobacz [edytory i rozszerzenia usługi językowej](../../extensibility/editor-and-language-service-extensions.md).
 
- W tej sekcji omówiono strukturę i implementację usługi języka starszego.
+ W tej sekcji omówiono strukturę i implementację starszej wersji usługi językowej.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Migrowanie starszej wersji usługi językowej](../../extensibility/internals/migrating-a-legacy-language-service.md)
 
- W tym artykule wyjaśniono, jak zaktualizować usługę językową z programu Visual Studio 2008 do najnowszej wersji.
+ Wyjaśnia, jak zaktualizować usługę języka z programu Visual Studio 2008 do najnowszej wersji.
 
 - [Podstawowe informacje dotyczące starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-essentials.md)
 
- Zawiera ważne informacje dotyczące sposobu tworzenia usług językowych w celu zintegrowania języka programowania z programem Visual Studio.
+ Zawiera ważne informacje dotyczące sposobu tworzenia usług językowych w celu integracji języka programowania z programem Visual Studio.
 
 - [Tworzenie starszej wersji usługi językowej](../../extensibility/internals/developing-a-legacy-language-service.md)
 
- Zawiera łącza do tematów, które mogą pomóc w utworzeniu usługi językowej.
+ Zawiera łącza do tematów, które mogą pomóc w tworzeniu usługi językowej.
 
 - [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 
- Zawiera informacje dotyczące podświetlania składni w usłudze językowej.
+ Zawiera informacje na temat obsługi wyróżniania składni w usłudze językowej.
 
 - [Implementowanie starszej wersji usługi językowej](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 
- Zawiera informacje dotyczące sposobu korzystania z struktury pakietów zarządzanych (MPF) w celu zaimplementowania w pełni funkcjonej usługi języka w kodzie zarządzanym.
+ Zawiera informacje dotyczące sposobu korzystania z struktury pakietu zarządzanego (MPF) w celu zaimplementowania w pełni funkcjonalnej usługi językowej w kodzie zarządzanym.
 
 - [Obsługa narzędzi do przeglądania symboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 
@@ -57,4 +57,4 @@ Usługa języka zapewnia obsługę specyficzne dla języka do edycji kodu źród
 
 - [Obsługa usługi językowej do debugowania](../../extensibility/internals/language-service-support-for-debugging.md)
 
- Zawiera informacje o i łącze do visual studio debugowania SDK, który zawiera informacje, które są wymagane do tworzenia i dostosowywania składników debugera używane do debugowania programów.
+ Zawiera informacje i link do zestawu SDK debugowania programu Visual Studio, który zawiera informacje wymagane do tworzenia i dostosowywania składników debugera używanych do debugowania programów.

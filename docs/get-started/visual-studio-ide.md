@@ -1,5 +1,5 @@
 ---
-title: Przegląd programu Visual Studio
+title: Omówienie programu Visual Studio
 titleSuffix: ''
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5790d652ad98c684786efaa39a1fd23948d3b36e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770882"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Wprowadzenie do środowiska IDE programu Visual Studio
@@ -44,7 +44,7 @@ Jeśli wszystko jest gotowe do szczegółowe do większej ilości kodu, jeden z 
 
 - [Tworzenie pierwszej aplikacji konsolowej w języku C++ za pomocą programu Visual Studio](/cpp/get-started/tutorial-console-cpp)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - Odkryj [więcej funkcji programu Visual Studio](../ide/advanced-feature-overview.md)
 - Odwiedź witrynę [VisualStudio.Microsoft.com](https://visualstudio.microsoft.com/vs/)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3d812316de46caf7480146003f7ba1950ae3b9e2
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283037"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Wiązanie kontrolek z danymi w programie Visual Studio
@@ -32,7 +32,7 @@ W kontekście powiązania danych źródło danych reprezentuje dane w pamięci, 
 
 | Źródło danych | Obsługa przeciągania i upuszczania w **Projektant formularzy systemu Windows** | Obsługa przeciągania i upuszczania w **PROJEKTANCIE WPF** | Obsługa przeciągania i upuszczania w **projektancie Silverlight** |
 | - | - | - | - |
-| Dataset | Tak | Yes | Nie |
+| Zestaw danych | Tak | Tak | Nie |
 | Entity Data Model | Tak<sup>1</sup> | Tak | Tak |
 | Klasy LINQ to SQL | Nr<sup>2</sup> | Nr<sup>2</sup> | Nr<sup>2</sup> |
 | Usługi ( [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] w tym usługi WCF i usługi sieci Web) | Tak | Tak | Tak |

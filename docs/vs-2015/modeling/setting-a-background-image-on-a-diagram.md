@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2b7d206852101a1d99a08eac710d88e93afe4a04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671205"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Ustawienie obrazu tła w diagramie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Wizualizacja i Modeling SDK, można ustawić obraz tła dla wygenerowanego projektanta przy użyciu kodu niestandardowego.
+W programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Wizualizacja i modelowanie SDK można ustawić obraz tła dla wygenerowanego projektanta przy użyciu kodu niestandardowego.
 
 ## <a name="setting-the-background-image"></a>Ustawianie obrazu tła
 
@@ -47,7 +47,7 @@ W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Wizualizacja i Modeling SDK, moż
 
 11. Jeśli brakuje Resources.Designer.cs, kliknij plik resources. resx w **Eksplorator rozwiązań**.
 
-12. W oknie **Właściwości** ustaw właściwość `Custom Tool` na `ResXFileCodeGenerator`.
+12. W oknie **Właściwości** Ustaw `Custom Tool` Właściwość na `ResXFileCodeGenerator` .
 
 13. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt DSL, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy folder**.
 
@@ -57,7 +57,7 @@ W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Wizualizacja i Modeling SDK, moż
 
 16. W oknie dialogowym **Dodaj nowy element** na liście **Szablony** kliknij pozycję **plik kodu**.
 
-17. W polu **Nazwa** wpisz `BackgroundImage.cs`, a następnie kliknij przycisk **Dodaj**.
+17. W polu **Nazwa** wpisz `BackgroundImage.cs` , a następnie kliknij przycisk **Dodaj**.
 
 18. Skopiuj następujący kod do pliku BackgroundImage.cs, dostosowując przestrzeń nazw, nazwę klasy diagramu i nazwę zasobu pliku obrazu.
 

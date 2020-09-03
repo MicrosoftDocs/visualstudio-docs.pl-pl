@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 272f2f5e04ad8d87da45c98ed38c30751658d5c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585915"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Korzystanie z modelu koncepcyjnego (Usługi danych programu WCF)
@@ -45,7 +45,7 @@ W poniższych tematach pokazano, jak dodać sprawdzanie poprawności do aplikacj
 |[Instrukcje: Dodawanie, modyfikowanie i usuwanie jednostek](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Pokazuje, jak tworzyć, aktualizować i usuwać dane jednostki w usłudze danych.|
 |[Instrukcje: Definiowanie relacji jednostek](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Pokazuje, jak utworzyć lub zmienić relacje w usłudze danych.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [Wykonywanie zapytań do usługi danych](/dotnet/framework/data/wcf/querying-the-data-service-wcf-data-services)

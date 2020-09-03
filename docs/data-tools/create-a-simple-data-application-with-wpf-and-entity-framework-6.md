@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4aa978098c459d9e55ef0dc1423080357e067a5b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282764"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Tworzenie prostej aplikacji do obsługi danych za pomocą platform WPF i Entity Framework 6

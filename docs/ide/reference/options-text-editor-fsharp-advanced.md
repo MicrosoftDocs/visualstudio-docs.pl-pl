@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 64626a0ebd8850098bbbc056d523b6a3f034bf4e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770948"
 ---
 # <a name="options-text-editor-f-advanced"></a>Opcje, Edytor tekstu, F #, zaawansowane
@@ -28,7 +28,7 @@ Po wybraniu linie pionowe pojawiają się w edytorze, który jest wierszem ze st
 
 Zaznacz to pole wyboru, aby automatycznie utworzyć konspekt pliku kodu, który tworzy zwijane bloki kodu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
 - [Opcje, Edytor tekstów, Wszystkie języki, Karty](../../ide/reference/options-text-editor-all-languages-tabs.md)

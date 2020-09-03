@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: c7532bed6a7d43c24d698870723d2265fc2b176f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585928"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Praca z zestawami danych w aplikacjach n-warstwowych
@@ -34,12 +34,12 @@ Wpisane zestawy danych zostały ulepszone, aby klasy TableAdapters i DataSet mog
 
 Obsługa n-warstwowa w typach danych typu umożliwia iteracyjne programowanie architektury aplikacji do projektu n-warstwowego. Powoduje również usunięcie wymagania, aby ręcznie rozdzielić kod na więcej niż jeden projekt. Rozpocznij projektowanie warstwy danych przy użyciu **Projektant obiektów DataSet**. Gdy wszystko jest gotowe do przełączenia architektury aplikacji do projektu n-warstwowego, ustaw właściwość **projektu** DataSet zestawu danych, aby wygenerować klasę zestawu danych w osobnym projekcie.
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
 
 - <xref:System.Data.DataSet>
 - <xref:System.Data.TypedTableBase%601>
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [N-warstwowe aplikacje dotyczące danych — omówienie](../data-tools/n-tier-data-applications-overview.md)
 - [Przewodnik: Tworzenie wielowarstwowej aplikacji danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

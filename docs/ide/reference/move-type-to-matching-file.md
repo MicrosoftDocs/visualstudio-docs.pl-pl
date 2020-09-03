@@ -1,6 +1,6 @@
 ---
-title: Przenoszenie typu do pasującego refaktoryzacji plików
-description: Przenieś typ do oddzielnego pliku o tej samej nazwie. Kliknij prawym przyciskiem myszy typ, wybierz szybkie akcje i refaktoryzowania, a następnie wybierz polecenie Przenieś typ do <TypeName>cs.
+title: Przenieś typ do zgodnego refaktoryzacji pliku
+description: Przenieś typ do oddzielnego pliku o tej samej nazwie. Kliknij prawym przyciskiem myszy typ, wybierz polecenie szybkie akcje i refaktoryzacje, a następnie wybierz pozycję Przenieś typ do <TypeName> . cs.
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,29 +12,29 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: ba082e90c2447d1da7510ce16f888f67a52b5ac0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585274"
 ---
-# <a name="move-a-type-to-a-matching-file-refactoring"></a>Przenoszenie typu do pasującego refaktoryzacji plików
+# <a name="move-a-type-to-a-matching-file-refactoring"></a>Przenoszenie typu do zgodnego refaktoryzacji pliku
 
-Ten refaktoryzator ma zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
 - Visual Basic
 
-**Co:** Umożliwia przeniesienie zaznaczonego typu do oddzielnego pliku o tej samej nazwie.
+**Co:** Umożliwia przeniesienie wybranego typu do oddzielnego pliku o tej samej nazwie.
 
-**Kiedy:** Masz wiele klas, struktur, interfejsów itp w tym samym pliku, który chcesz oddzielić.
+**Kiedy:** Istnieje wiele klas, struktur, interfejsów itp. w tym samym pliku, który ma zostać rozdzielony.
 
-**Dlaczego?** Umieszczenie wielu typów w tym samym pliku może utrudnić znalezienie tych typów. Przenosząc typy do plików o tej samej nazwie, kod staje się bardziej czytelny i łatwiejszy w nawigacji.
+**Dlaczego:** Umieszczenie wielu typów w tym samym pliku może utrudnić znalezienie tych typów. Przenosząc typy do plików o tej samej nazwie, kod będzie bardziej czytelny i łatwiejszy do nawigowania.
 
 ## <a name="how-to"></a>Porady
 
-1. Umieść kursor wewnątrz nazwy typu, w którym jest zdefiniowany. Przykład:
+1. Umieść kursor wewnątrz nazwy typu, w którym jest zdefiniowany. Na przykład:
 
    ```csharp
    class Person
@@ -46,20 +46,20 @@ Ten refaktoryzator ma zastosowanie do:
 
 2. Następnie wykonaj jedną z następujących czynności:
 
-   - Naciśnij **klawisze Ctrl**+**.**
-   - Kliknij prawym przyciskiem myszy nazwę typu i wybierz **szybkie akcje i refaktoryzowania**
+   - Naciśnij klawisz **Ctrl** + **.**
+   - Kliknij prawym przyciskiem myszy nazwę typu i wybierz polecenie **szybkie akcje i refaktoryzacje**
 
-1. Z menu **wybierz polecenie Przenieś typ do nazwy *typu*.cs,** w którym *nazwa typename* jest nazwą wybranego typu.
+1. Wybierz pozycję **Przenieś typ do *TypeName*. cs** z menu, gdzie *TypeName* jest nazwą wybranego typu.
 
    Typ jest przenoszony do nowego pliku w projekcie, który ma taką samą nazwę jak typ.
 
    - C#:
 
-      ![Wynik wbudowany - C #](media/movetype-result-cs.png)
+      ![Wynik wbudowany-C #](media/movetype-result-cs.png)
 
    - Visual Basic:
 
-      ![Wynik wbudowany — visual basic](media/movetype-result-vb.png)
+      ![Wynik wbudowany — Visual Basic](media/movetype-result-vb.png)
 
 ## <a name="see-also"></a>Zobacz też
 

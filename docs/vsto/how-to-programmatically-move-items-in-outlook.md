@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 97f686a47d18fa91909de489f12f9c7a8c1306d1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519915"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Instrukcje: Programowane przenoszenie elementów w programie Outlook
@@ -34,7 +34,7 @@ ms.locfileid: "85519915"
 
 - Wiadomość e-mail, która dociera do programu Word **test** w `Subject` polu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pracuj z folderami](../vsto/working-with-folders.md)
 - [Instrukcje: programowe pobieranie folderu według nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [Instrukcje: programowe wyszukiwanie w określonym folderze](../vsto/how-to-programmatically-search-within-a-specific-folder.md)

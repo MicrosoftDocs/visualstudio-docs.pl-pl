@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 366567a13ad23ab19ffd88f19997b92025abe952
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671080"
 ---
-# <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Przewodnik: tworzenie prostej usługi WCF w Windows Forms
+# <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Przewodnik: tworzenie prostej usługi WCF w aplikacji Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym instruktażu pokazano, jak utworzyć prostą usługę [!INCLUDE[vsindigo](../includes/vsindigo-md.md)], przetestować ją, a następnie uzyskać do niej dostęp z poziomu aplikacji Windows Forms.
+W tym instruktażu pokazano, jak utworzyć prostą [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] usługę, przetestować ją, a następnie uzyskać do niej dostęp z aplikacji Windows Forms.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
@@ -34,7 +34,7 @@ W tym instruktażu pokazano, jak utworzyć prostą usługę [!INCLUDE[vsindigo](
 
 1. W menu **plik** wskaż polecenie **Nowy** , a następnie kliknij pozycję **projekt**.
 
-2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual Basic** lub **element wizualny C#**  , a następnie kliknij opcję **WCF**, a następnie pozycję **Biblioteka usług WCF**. Kliknij przycisk **OK** , aby otworzyć projekt.
+2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual Basic** lub **Visual C#** , a następnie kliknij pozycję **WCF**, a następnie **bibliotekę usługi WCF**. Kliknij przycisk **OK** , aby otworzyć projekt.
 
      ![Projekt biblioteki usługi WCF](../data-tools/media/wcf1.PNG "wcf1")
 
@@ -48,12 +48,12 @@ W tym instruktażu pokazano, jak utworzyć prostą usługę [!INCLUDE[vsindigo](
      [!code-csharp[WCFWalkthrough#4](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1_2.cs#4)]
      [!code-vb[WCFWalkthrough#4](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1_2.vb#4)]
 
-     Zmień typ parametru `value` na `String`:
+     Zmień typ `value` parametru na `String` :
 
      [!code-csharp[WCFWalkthrough#1](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1.cs#1)]
      [!code-vb[WCFWalkthrough#1](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1.vb#1)]
 
-     W powyższym kodzie Zwróć uwagę na atrybuty `<OperationContract()>` lub `[OperationContract]`. Te atrybuty są wymagane dla każdej metody uwidocznionej przez usługę.
+     W powyższym kodzie Zwróć uwagę `<OperationContract()>` na `[OperationContract]` atrybuty lub. Te atrybuty są wymagane dla każdej metody uwidocznionej przez usługę.
 
 4. ![Plik Service1](../data-tools/media/wcf3.png "wcf3")
 
@@ -62,7 +62,7 @@ W tym instruktażu pokazano, jak utworzyć prostą usługę [!INCLUDE[vsindigo](
      [!code-csharp[WCFWalkthrough#5](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/service1_2.cs#5)]
      [!code-vb[WCFWalkthrough#5](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/service1_2.vb#5)]
 
-     Zmień typ parametru Value na `String`:
+     Zmień typ parametru Value na `String` :
 
      [!code-csharp[WCFWalkthrough#2](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/service1.cs#2)]
      [!code-vb[WCFWalkthrough#2](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/service1.vb#2)]
@@ -75,9 +75,9 @@ W tym instruktażu pokazano, jak utworzyć prostą usługę [!INCLUDE[vsindigo](
 
 2. W formularzu **klienta testowego WCF** kliknij dwukrotnie metodę **GetData ()** w obszarze **IService1**. Zostanie wyświetlona karta **GetData** .
 
-     ![Metoda GetData&#40; &#41;](../data-tools/media/wcf4.png "wcf4")
+     ![Metoda GetData&#40;&#41; ](../data-tools/media/wcf4.png "wcf4")
 
-3. W polu **żądanie** wybierz pole **wartość** i wpisz `Hello`.
+3. W polu **żądanie** wybierz pole **wartość** i wpisz `Hello` .
 
      ![Pole wartości](../data-tools/media/wcf5.png "wcf5")
 
@@ -93,7 +93,7 @@ W tym instruktażu pokazano, jak utworzyć prostą usługę [!INCLUDE[vsindigo](
 
 1. W menu **plik** wskaż polecenie **Dodaj** , a następnie kliknij pozycję **Nowy projekt**.
 
-2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual Basic** lub **element wizualny C#**  , a następnie wybierz pozycję **Windows**, a następnie wybierz pozycję **aplikacja Windows Forms**. Kliknij przycisk **OK** , aby otworzyć projekt.
+2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual Basic** lub **Visual C#** , a następnie wybierz pozycję **Windows**, a następnie wybierz pozycję **aplikacja Windows Forms**. Kliknij przycisk **OK** , aby otworzyć projekt.
 
      ![Projekt Windows Forms aplikacji](../data-tools/media/wcf7.png "wcf7")
 
@@ -111,11 +111,11 @@ W tym instruktażu pokazano, jak utworzyć prostą usługę [!INCLUDE[vsindigo](
 
 1. W **Eksplorator rozwiązań**kliknij dwukrotnie przycisk **Form1. vb** lub **Form1.cs** , aby otworzyć Projektant formularzy systemu Windows, jeśli nie jest jeszcze otwarty.
 
-2. Z **przybornika**przeciągnij kontrolkę `TextBox`, kontrolkę `Label` i kontrolkę `Button` na formularz.
+2. Z **przybornika**przeciągnij `TextBox` kontrolkę, `Label` kontrolkę i `Button` kontrolkę na formularz.
 
      ![Dodawanie kontrolek do formularza](../data-tools/media/wcf9.png "wcf9")
 
-3. Kliknij dwukrotnie `Button` i Dodaj następujący kod do programu obsługi zdarzeń `Click`:
+3. Kliknij dwukrotnie `Button` , a następnie Dodaj następujący kod do `Click` programu obsługi zdarzeń:
 
      [!code-csharp[WCFWalkthrough#3](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/form1.cs#3)]
      [!code-vb[WCFWalkthrough#3](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/form1.vb#3)]

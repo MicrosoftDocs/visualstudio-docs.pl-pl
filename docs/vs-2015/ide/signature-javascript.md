@@ -1,5 +1,5 @@
 ---
-title: '&lt;signature &gt; (JavaScript) | Microsoft Docs'
+title: '&lt;podpis &gt; (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,13 +13,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b4c640c28ada16a8a03943fcd1362d4fd521772c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671130"
 ---
-# <a name="ltsignaturegt-javascript"></a>&gt; &lt;signature (JavaScript)
+# <a name="ltsignaturegt-javascript"></a>&lt;Signature &gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Grupowanie zestawu powiązanych elementów dla funkcji lub metody, aby udostępnić dokumentację dla przeciążonych funkcji.
@@ -33,18 +33,18 @@ Grupowanie zestawu powiązanych elementów dla funkcji lub metody, aby udostępn
 ```
 
 #### <a name="parameters"></a>Parametry
- `externalid` opcjonalny. Jeśli atrybut `format` dla elementu [> \<loc](../ide/loc-javascript.md) jest `vsdoc`, ten ATRYBUT określa identyfikator elementu członkowskiego używany do lokalizowania kodu XML skojarzonego z podpisem. W przeciwieństwie do atrybutu `locid`, ten atrybut określa, czy wszystkie elementy w elemencie członkowskim, które mają ten identyfikator powinny być ładowane. Wszystkie skojarzone informacje opisu występujące w kodzie XML również zostaną scalone z elementami określonymi w podpisie. Dzięki temu można określić dodatkowe elementy, takie jak `<capability>`, w pliku sidecar bez określania ich w pliku źródłowym. `externalid` jest atrybutem opcjonalnym.
+ `externalid` Obowiązkowe. Jeśli `format` atrybut dla [\<loc>](../ide/loc-javascript.md) elementu ma wartość `vsdoc` , ten atrybut określa identyfikator elementu członkowskiego, który jest używany do lokalizowania kodu XML, który jest skojarzony z podpisem. W przeciwieństwie do atrybutu `locid`, ten atrybut określa, czy wszystkie elementy w elemencie członkowskim, które mają ten identyfikator powinny być ładowane. Wszystkie skojarzone informacje opisu występujące w kodzie XML również zostaną scalone z elementami określonymi w podpisie. Dzięki temu można określić dodatkowe elementy, takie jak `<capability>`, w pliku sidecar bez określania ich w pliku źródłowym. `externalid` jest opcjonalnym atrybutem.
 
- `externalFile` opcjonalny. Określa nazwę pliku, w którym ma znaleźć `externalid`. Atrybut ten jest ignorowany, jeśli nie występuje żaden `externalid`. Jest to atrybut opcjonalny. Wartością domyślną jest nazwa bieżącego pliku, ale z rozszerzeniem pliku .xml zamiast js. Domyślnie reguły wyszukiwania zarządzanego zasobu dla lokalizacji są używane do lokalizowania pliku.
+ `externalFile` Obowiązkowe. Określa nazwę pliku, w którym ma znaleźć `externalid`. Atrybut ten jest ignorowany, jeśli nie występuje żaden `externalid`. Jest to atrybut opcjonalny. Wartością domyślną jest nazwa bieżącego pliku, ale z rozszerzeniem pliku .xml zamiast js. Domyślnie reguły wyszukiwania zarządzanego zasobu dla lokalizacji są używane do lokalizowania pliku.
 
- `helpKeyword` opcjonalny. Słowo kluczowe dla pomocy F1.
+ `helpKeyword` Obowiązkowe. Słowo kluczowe dla pomocy F1.
 
- `locid` opcjonalny. Identyfikator informacji o lokalizacji na temat pola. Identyfikator jest albo identyfikatorem elementu członkowskiego albo odpowiada wartości atrybutu `name` w wiązce wiadomości zdefiniowanej przez metadane OpenAjax. Typ identyfikatora zależy od formatu określonego w tagu [\<loc >](../ide/loc-javascript.md) .
+ `locid` Obowiązkowe. Identyfikator informacji o lokalizacji na temat pola. Identyfikator jest albo identyfikatorem elementu członkowskiego albo odpowiada wartości atrybutu `name` w wiązce wiadomości zdefiniowanej przez metadane OpenAjax. Typ identyfikatora zależy od formatu określonego w [\<loc>](../ide/loc-javascript.md) tagu.
 
 ## <a name="remarks"></a>Uwagi
  Należy użyć jednego elementu `<signature>` dla każdego przeciążonego opisu funkcji w pliku .js, lub użyć jednego elementu `<signature>` dla każdego określonego zewnętrznego identyfikatora elementu członkowskiego.
 
- Element `<signature>` musi być umieszczony w ciele funkcji przed wszystkimi instrukcjami. Przy użyciu [\<summary >](../ide/summary-javascript.md), [\<param >](../ide/param-javascript.md)lub [\<returns](../ide/returns-javascript.md) > elementów z elementem `<signature>`, umieść pozostałe elementy wewnątrz bloku `<signature>`.
+ Element `<signature>` musi być umieszczony w ciele funkcji przed wszystkimi instrukcjami. W przypadku używania [\<summary>](../ide/summary-javascript.md) , [\<param>](../ide/param-javascript.md) , lub [\<returns>](../ide/returns-javascript.md) elementów z `<signature>` elementem, umieść pozostałe elementy wewnątrz `<signature>` bloku.
 
 ## <a name="example"></a>Przykład
  Poniższy kod ilustruje przykład użycia elementu `<signature>`.

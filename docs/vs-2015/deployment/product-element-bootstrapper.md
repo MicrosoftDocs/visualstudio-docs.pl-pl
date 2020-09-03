@@ -1,5 +1,5 @@
 ---
-title: '&lt;Produkt&gt; — Element (program inicjujący) | Dokumentacja firmy Microsoft'
+title: '&lt;Produkt — &gt; element (program inicjujący) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,16 +17,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3c1304a0ff93c58add65f20aa417bb547f5bb31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200645"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;Produkt&gt; — Element (program inicjujący)
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;Product — &gt; element (program inicjujący)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Product` Element jest elementem XML najwyższego poziomu w pliku produktu.  
+`Product`Element jest elementem XML najwyższego poziomu w pliku produktu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -140,15 +140,15 @@ ProductCode
 </Package>  
 ```  
   
-## <a name="elements-and-attributes"></a>Atrybuty i elementy  
- `Product` Element jest wymagany w pliku produktu. Następujący atrybut w nim.  
+## <a name="elements-and-attributes"></a>Elementy i atrybuty  
+ `Product`Element jest wymagany w pliku produktu. Ma następujący atrybut.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`ProductCode`|Unikatowy identyfikator dla tego produktu.|  
+|`ProductCode`|Unikatowy identyfikator produktu.|  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu pokazuje plik kompletnego produktu dla instalacji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+ Poniższy przykład kodu przedstawia kompletny plik produktu na potrzeby instalacji programu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -253,4 +253,4 @@ ProductCode
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)
+ [Produkt i pakiet — odwołanie do schematu](../deployment/product-and-package-schema-reference.md)

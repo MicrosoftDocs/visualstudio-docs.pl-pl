@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7a0f1b384aafb491183a750f17653ab55f2003e2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519836"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Instrukcje: programowe otwieranie plików tekstowych jako skoroszytów
@@ -37,7 +37,7 @@ ms.locfileid: "85519836"
 
 - Plik tekstowy, `Test.txt` który ma być przechowywany na dysku C.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pracuj ze skoroszytami](../vsto/working-with-workbooks.md)
 - [Instrukcje: Programowane otwieranie skoroszytów](../vsto/how-to-programmatically-open-workbooks.md)
 - [Instrukcje: Programowane tworzenie nowych skoroszytów](../vsto/how-to-programmatically-create-new-workbooks.md)

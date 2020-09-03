@@ -1,5 +1,5 @@
 ---
-title: Konteksty debugera | Dokumentacja firmy Microsoft
+title: Konteksty debugera | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,42 +11,42 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 771a3cd8ae25173f3033b3a3229e516570f5dedc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200632"
 ---
 # <a name="debugger-contexts"></a>Konteksty debugera
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-W [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugowania, aparat debugowania (DE) działa jednocześnie w ramach kilku różnych kontekstach, w następujący sposób:  
+W [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugowaniu aparat debugowania (de) działa jednocześnie w kilku odrębnych kontekstach w następujący sposób:  
   
-- Kontekst kodu w tym artykule opisano bieżącej lokalizacji w usłudze stream wykonywania programu.  
+- Kontekst kodu, który opisuje bieżącą lokalizację w strumieniu wykonywania programu.  
   
-- Dokumentacja kontekstu lub pozycji, który opisuje bieżącą pozycję w dokumencie źródłowym.  
+- Kontekst lub pozycja dokumentacji, która opisuje bieżące położenie w dokumencie źródłowym.  
   
-- Kontekst oceny wyrażeń, który opisuje kontekst, w wyrażeniu, które odbędzie się oceny.  
+- Kontekst oceny wyrażenia, który opisuje kontekst, w którym będą wykonywane obliczenia wyrażeń.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Kontekst kodu](../../extensibility/debugger/code-context.md)  
- W tym artykule omówiono kontekst kodu jako adresu program strumień instrukcji w współczesnych środowiska wykonawczego architektury i nietradycyjnych języków, gdzie kod nie może być reprezentowany przez instrukcje, ale w inny sposób.  
+ Omawia kontekst kodu jako adres w strumieniu instrukcji programu w dzisiejszych architekturach czasu wykonywania i nietradycyjnych językach, gdzie kod nie może być reprezentowany przez instrukcje, ale inne sposoby.  
   
  [Położenie dokumentu](../../extensibility/debugger/document-position.md)  
- Definiuje położenie dokumentu w programie Visual Studio debugowania za pomocą abstrakcję pozycji w pliku źródłowym, ponieważ wiadomo, że środowisko IDE.  
+ Definiuje położenie dokumentu w debugowaniu w programie Visual Studio za pomocą abstrakcji pozycji w pliku źródłowym, jak znany IDE.  
   
  [Kontekst dokumentu](../../extensibility/debugger/document-context.md)  
- W tym artykule omówiono jakie kontekstu dokumentu reprezentuje podczas debugowania programu Visual Studio w odniesieniu do pliku źródłowego. Omówiono również sposób obsługi symboli mapowania kontekst kodu do kontekstu dokumentacji.  
+ Omówienie kontekstu dokumentu reprezentowanego w debugowaniu programu Visual Studio w odniesieniu do pliku źródłowego. Omówiono również sposób mapowania kontekstu kodu do kontekstu dokumentacji przez program obsługi symboli.  
   
  [Kontekst oceny wyrażeń](../../extensibility/debugger/expression-evaluation-context.md)  
- Zawiera informacje dotyczące oceny wyrażenia kontekstu w programie Visual Studio. Na przykład oceny wyrażenia kontekstu skojarzonego z ramką stosu udostępnia kontekst dla ocenianie zmiennych lokalnych, parametrów metod i składowych klasy.  
+ Zawiera informacje o kontekście oceny wyrażenia w programie Visual Studio. Na przykład kontekst oceny wyrażenia skojarzonego z ramką stosu zawiera kontekst do oceny zmiennych lokalnych, parametrów metody i elementów członkowskich klasy.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Pojęcia dotyczące debugowania](../../extensibility/debugger/debugger-concepts.md)  
- W tym artykule opisano główne pojęcia dotyczące architektury debugowania.  
+ [Koncepcje debugowania](../../extensibility/debugger/debugger-concepts.md)  
+ Opisuje główne koncepcje dotyczące architektury debugowania.  
   
  [Składniki debugowania](../../extensibility/debugger/debugger-components.md)  
- Zawiera omówienie składników debugowania programu Visual Studio, które obejmują aparat debugowania (DE), Ewaluator wyrażeń (EE) i obsługi symboli (SH).  
+ Zawiera omówienie składników debugowania programu Visual Studio, które obejmują aparat debugowania (DE), ewaluatora wyrażeń (EE) i obsługę symboli (SH).  
   
  [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)  
- Zawiera łącza do różnych zadań debugowania, takie jak uruchamianie programu i wyrażeń.
+ Zawiera linki do różnych zadań debugowania, takich jak uruchamianie programu i ocenianie wyrażeń.

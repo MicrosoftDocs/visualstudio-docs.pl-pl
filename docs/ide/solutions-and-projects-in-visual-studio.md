@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ad0ee64afa78a962271d2b702ee525287c5b2457
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468733"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
@@ -53,7 +53,7 @@ Projekt jest zawarty w *rozwiązaniu*. Pomimo nazwy, rozwiązanie nie jest "odpo
 
 Program Visual Studio używa dwóch typów plików (*. sln* i *. suo*) do przechowywania ustawień rozwiązań:
 
-|Wewnętrzny|Nazwa|Opis|
+|Rozszerzenie|Nazwa|Opis|
 |---------------|----------|-----------------|
 |. sln|Rozwiązanie programu Visual Studio|Organizuje projekty, elementy projektu i elementy rozwiązania w rozwiązaniu.|
 |. suo|Opcje użytkownika rozwiązania|Przechowuje ustawienia i dostosowania na poziomie użytkownika, takie jak punkty przerwania.|

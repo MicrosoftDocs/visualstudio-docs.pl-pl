@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1d35ec92a76c9ecbf933256229b64ce06a03a4fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670986"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfejs użytkownika debugera (XSLT)
@@ -78,13 +78,13 @@ W tym temacie opisano okna debugera i okna dialogowe. Omawia tylko elementy inte
  Kliknięcie elementu poza nim znajdującego się w górnej części listy wskazuje Podgląd, w którym wystąpiła gałąź wykonywania XSLT, przy użyciu standardowego, wyróżniania i zielona strzałek.
 
 ## <a name="quickwatch-dialog-box"></a>QuickWatch — okno dialogowe
- Okno dialogowe **QuickWatch** służy do obliczania wyrażeń XPath 1,0. Węzeł kontekstu (węzeł `self::node()` z okna lokalnego) zawiera kontekst wykonywania wyrażenia XPath. W okno wyrażeń kontrolnych zostanie wyświetlony wynik wykonywania wyrażenia XPath.
+ Okno dialogowe **QuickWatch** służy do obliczania wyrażeń XPath 1,0. Węzeł kontekstu ( `self::node()` węzeł z okna zmiennych lokalnych) zawiera kontekst wykonywania wyrażenia XPath. W okno wyrażeń kontrolnych zostanie wyświetlony wynik wykonywania wyrażenia XPath.
 
  Na poniższej liście opisano niektóre ograniczenia dotyczące oceny wyrażenia XPath.
 
 - Dozwolone są tylko wbudowane funkcje XPath.
 
-- Wbudowane funkcje XSLT, takie jak `document()`, `key()` i tak dalej, są niedozwolone.
+- Wbudowane funkcje XSLT, takie jak `document()` , `key()` , i tak dalej, są niedozwolone.
 
 - Funkcje zdefiniowane przez użytkownika są niedozwolone.
 
@@ -96,4 +96,4 @@ W tym temacie opisano okna debugera i okna dialogowe. Omawia tylko elementy inte
  Aby uzyskać więcej informacji, w [jaki sposób: użyć okna demontażu](../debugger/how-to-use-the-disassembly-window.md).
 
 ## <a name="see-also"></a>Zobacz też
- [](../xml-tools/debugging-xslt.md) [Podstawowe informacje](../debugger/debugger-basics.md) o [zmiennej](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e) debugowania debugera XSLT
+ [Debugging XSLT](../xml-tools/debugging-xslt.md) [Podstawowe informacje](../debugger/debugger-basics.md) o [zmiennej](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e) debugowania debugera XSLT

@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie plików za pomocą polecenia Otwórz plik | Dokumenty firmy Microsoft
+title: Wyświetlanie plików przy użyciu polecenia Otwórz plik | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,46 +13,46 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cc18442c55b6989c4d8668e1425fdd62a2d4b1b6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708598"
 ---
-# <a name="display-files-by-using-the-open-file-command"></a>Wyświetlanie plików za pomocą polecenia Otwórz plik
-W poniższych krokach opisano sposób obsługi polecenia **Otwórz plik,** które [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]jest dostępne w menu **Plik** w programie . Kroki opisują również, jak projekty powinny reagować na wywołania, które pochodzą z tego polecenia.
+# <a name="display-files-by-using-the-open-file-command"></a>Wyświetlanie plików przy użyciu polecenia Otwórz plik
+Poniższe kroki opisują, jak środowisko IDE obsługuje polecenie **Otwórz plik** , które jest dostępne w menu **plik** w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . W tym kroku opisano również sposób, w jaki projekty powinny odpowiadać na wywołania pochodzące z tego polecenia.
 
- Gdy użytkownik kliknie polecenie **Otwórz plik** w menu **Plik** i wybierze plik z okna dialogowego **Otwórz plik,** następuje następujący proces:
+ Gdy użytkownik kliknie polecenie **Otwórz plik** w menu **plik** i wybierze plik z okna dialogowego **Otwórz plik** , wystąpi następujący proces:
 
-1. Przy użyciu uruchomionej tabeli dokumentów IDE określa, czy plik jest już otwarty w projekcie.
+1. Przy użyciu tabeli dokumentu, IDE Określa, czy plik jest już otwarty w projekcie.
 
-    - Jeśli plik jest otwarty, IDE pojawia się ponownie okna.
+    - Jeśli plik jest otwarty, środowisko IDE będzie odpowierzchnię okna.
 
-    - Jeśli plik nie jest otwarty, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> IDE wywołuje kwerendy każdego projektu, aby określić, który projekt można otworzyć plik.
+    - Jeśli plik nie jest otwarty, środowisko IDE wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> zapytania o każdy projekt, aby określić, który projekt może otworzyć plik.
 
         > [!NOTE]
-        > W implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>projektu , podaj wartość priorytetu, która wskazuje poziom, na którym projekt otwiera plik. Wartości priorytetu są <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> podane w wyliczeniu.
+        > W implementacji projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> , podaj wartość priorytetu, która wskazuje poziom, na którym projekt otwiera plik. Wartości priorytetów są podane w <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> wyliczeniu.
 
-2. Każdy projekt odpowiada z poziomem priorytetu, który wskazuje znaczenie, jakie nakłada na projekt, aby otworzyć plik.
+2. Każdy projekt reaguje na poziom priorytetu, który wskazuje istotność, w której ma nastąpić projekt, aby otworzyć plik.
 
-3. IDE używa następujących kryteriów, aby określić, który projekt otwiera plik:
+3. Środowisko IDE używa następujących kryteriów do określenia, który projekt otwiera plik:
 
-    - Projekt, który odpowiada z najwyższym`DP_Intrinsic`priorytetem ( ) otwiera plik. Jeśli więcej niż jeden projekt odpowiada z tym priorytetem, pierwszy projekt, aby odpowiedzieć otwiera plik.
+    - Projekt, który odpowiada z najwyższym priorytetem ( `DP_Intrinsic` ) otwiera plik. Jeśli więcej niż jeden projekt odpowie z tym priorytetem, pierwszy projekt do odpowiedzenia spowoduje otwarcie pliku.
 
-    - Jeśli żaden projekt nie odpowiada`DP_Intrinsic`z najwyższym priorytetem ( ), ale wszystkie projekty odpowiadają z tym samym, niższym priorytetem, aktywny projekt otwiera plik. Jeśli żaden projekt nie jest aktywny, pierwszy projekt, aby odpowiedzieć otwiera plik.
+    - Jeśli żaden projekt nie odpowie z najwyższym priorytetem ( `DP_Intrinsic` ), ale wszystkie projekty odpowiadają z tym samym, niższym priorytetem, aktywny projekt otwiera plik. Jeśli żaden projekt nie jest aktywny, pierwszy projekt do odpowiedzi otwiera plik.
 
-    - Jeśli żaden projekt nie twierdzi, że jest właścicielem pliku (`DP_Unsupported`), projekt Różne pliki otwiera plik.
+    - Jeśli żaden udział w projekcie nie ma własności pliku ( `DP_Unsupported` ), projekt różne pliki otwiera plik.
 
-         Jeśli zostanie utworzone wystąpienie projektu Różne pliki, projekt zawsze odpowiada `DP_CanAddAsExternal`wartością . Ta wartość wskazuje, że projekt może otworzyć plik. Ten projekt jest używany do mieszczenia otwartych plików, które nie są w żadnym innym projekcie. Lista elementów w tym projekcie nie jest utrwalona; ten projekt jest widoczny w **Eksploratorze rozwiązań** tylko wtedy, gdy jest używany do otwierania pliku.
+         Jeśli zostanie utworzone wystąpienie projektu różne pliki, projekt zawsze odpowiada wartości `DP_CanAddAsExternal` . Ta wartość wskazuje, że projekt może otworzyć plik. Ten projekt jest używany do przechowywania otwartych plików, które nie znajdują się w żadnym innym projekcie. Lista elementów w tym projekcie nie jest utrwalona; Ten projekt jest widoczny w **Eksplorator rozwiązań** tylko wtedy, gdy jest używany do otwierania pliku.
 
-         Jeśli projekt Różne pliki nie wskazuje, że można otworzyć plik, wystąpienie projektu nie został utworzony. W takim przypadku IDE tworzy wystąpienie projektu Różne pliki i informuje projekt, aby otworzyć plik.
+         Jeśli projekt różne pliki nie wskazuje, że może otworzyć plik, wystąpienie projektu nie zostało utworzone. W takim przypadku IDE tworzy wystąpienie projektu różne pliki i instruuje projekt, aby otworzył plik.
 
-4. Jak tylko IDE określa, który projekt otwiera plik, wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> metodę w tym projekcie.
+4. Gdy tylko środowisko IDE określi, który projekt otwiera plik, wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> metodę dla tego projektu.
 
-5. Następnie projekt ma możliwość otwarcia pliku przy użyciu edytora specyficznego dla projektu lub standardowego edytora. Aby uzyskać więcej informacji, zobacz [Jak: Otwórz edytory specyficzne dla projektu](../../extensibility/how-to-open-project-specific-editors.md) i [Jak: Otwórz edytory standardowe](../../extensibility/how-to-open-standard-editors.md), odpowiednio.
+5. Projekt zawiera również opcję otwierania pliku przy użyciu edytora specyficznego dla projektu lub edytora standardowego. Aby uzyskać więcej informacji, zobacz [jak: otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md) i [instrukcje: otwieranie edytorów standardowych](../../extensibility/how-to-open-standard-editors.md).
 
 ## <a name="see-also"></a>Zobacz też
-- [Wyświetlanie plików za pomocą polecenia Otwórz za pomocą](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
+- [Wyświetlanie plików przy użyciu polecenia Otwórz za pomocą](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
 - [Otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md)
-- [Jak: Otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md)
-- [Jak: Otwórz edytory standardowe](../../extensibility/how-to-open-standard-editors.md)
+- [Instrukcje: otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md)
+- [Instrukcje: otwieranie edytorów standardowych](../../extensibility/how-to-open-standard-editors.md)
