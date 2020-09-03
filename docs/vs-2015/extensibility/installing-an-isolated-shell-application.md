@@ -12,10 +12,10 @@ caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0adc81cfe9ea4462940c31a02c6429be89709565
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75944262"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalowanie aplikacji w programie Shell (izolowanym)
@@ -34,7 +34,7 @@ Aby zainstalować aplikację powłoki, należy wykonać następujące czynności
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby wykonać procedury opisane w tym temacie, należy zainstalować na komputerze następujące narzędzia.  
   
-- Visual Studio SDK  
+- Zestaw Visual Studio SDK  
   
 - Zestaw [narzędzi Instalator Windows XML](https://documentation.help/WiX-Toolset/index.html/) w wersji 3,6  
   
@@ -47,7 +47,7 @@ Aby zainstalować aplikację powłoki, należy wykonać następujące czynności
   
 1. Edytuj każdy plik. vsixmanifest w rozwiązaniu.  
   
-     W `Identifier` elementu Dodaj element `InstalledByMSI` i element `SystemComponent`, a następnie ustaw ich wartości na `true`.  
+     W `Identifier` elemencie Dodaj `InstalledByMSI` element i `SystemComponent` element, a następnie ustaw ich wartości na `true` .  
   
      Te elementy uniemożliwiają Instalatorowi VSIX próbę zainstalowania składników i odinstalowanie ich przez użytkownika przy użyciu okna dialogowego **rozszerzenia i aktualizacje** .  
   
@@ -61,7 +61,7 @@ Aby zainstalować aplikację powłoki, należy wykonać następujące czynności
  Następnie utwórz wpisy rejestru, zarówno w pliku reg dla Twojego rozwiązania, jak i w ApplicationRegistry. WXS.  
   
 ### <a name="detection-blocks"></a>Bloki wykrywania  
- Blok wykrywania składa się z `Property` elementu, który określa warunek wstępny do wykrycia i `Condition` elementu, który określa komunikat, który ma zostać zwrócony, jeśli na komputerze nie ma wymagań wstępnych. Na przykład aplikacja powłoki będzie wymagała redystrybucyjnej powłoki Microsoft Visual Studio, a blok wykrywania będzie wyglądać następująco.  
+ Blok wykrywania składa się z `Property` elementu, który określa warunek wstępny do wykrycia, i `Condition` element, który określa komunikat, który ma zostać zwrócony, jeśli wymaganie wstępne nie jest obecne na komputerze. Na przykład aplikacja powłoki będzie wymagała redystrybucyjnej powłoki Microsoft Visual Studio, a blok wykrywania będzie wyglądać następująco.  
   
 ```xml  
 <Property Id="ISOSHELLSFX">  
@@ -85,7 +85,7 @@ Aby zainstalować aplikację powłoki, należy wykonać następujące czynności
   
 ##### <a name="to-set-the-layout-of-shell-components"></a>Aby ustawić układ składników powłoki  
   
-1. Utwórz hierarchię elementów `Directory`, aby reprezentować wszystkie katalogi do utworzenia w systemie plików na komputerze docelowym, jak pokazano w poniższym przykładzie.  
+1. Utwórz hierarchię `Directory` elementów reprezentującą wszystkie katalogi do utworzenia w systemie plików na komputerze docelowym, jak pokazano w poniższym przykładzie.  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -103,7 +103,7 @@ Aby zainstalować aplikację powłoki, należy wykonać następujące czynności
     </Directory>  
     ```  
   
-     Te katalogi są określane przez `Id`, gdy należy określić pliki, które muszą być zainstalowane.  
+     Te katalogi są określane przez, `Id` gdy należy określić pliki, które muszą być zainstalowane.  
   
 2. Zidentyfikuj składniki wymagane przez powłokę i aplikację powłoki, jak pokazano w poniższym przykładzie.  
   
@@ -123,7 +123,7 @@ Aby zainstalować aplikację powłoki, należy wykonać następujące czynności
     </Feature>  
     ```  
   
-    1. Element `ComponentRef` odwołuje się do innego pliku. WXS, który identyfikuje pliki wymagane przez bieżący składnik. Na przykład GeneralProfile ma następującą definicję w HelpAbout. WXS.  
+    1. `ComponentRef`Element odwołuje się do innego pliku. WXS, który identyfikuje pliki wymagane przez bieżący składnik. Na przykład GeneralProfile ma następującą definicję w HelpAbout. WXS.  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -137,9 +137,9 @@ Aby zainstalować aplikację powłoki, należy wykonać następujące czynności
         </Fragment>  
         ```  
   
-         Element `DirectoryRef` określa, gdzie te pliki są przekazywane na komputerze użytkownika. `Directory` element określa, że zostanie on zainstalowany w podkatalogu, a każdy element `File` reprezentuje plik, który jest skompilowany lub który istnieje jako część rozwiązania i identyfikuje, gdzie można znaleźć ten plik podczas tworzenia pliku MSI.  
+         `DirectoryRef`Element określa, gdzie te pliki są przekazywane na komputerze użytkownika. `Directory`Element określa, że zostanie on zainstalowany w podkatalogu, a każdy `File` element reprezentuje plik, który jest skompilowany lub który istnieje jako część rozwiązania i wskazuje, gdzie można znaleźć ten plik podczas tworzenia pliku msi.  
   
-    2. `ComponentGroupRef` element odnosi się do grupy innych składników (lub składników i grup składników). Na przykład `ComponentGroupRef` w obszarze aplikacja jest zdefiniowana w następujący sposób w Application. WXS.  
+    2. `ComponentGroupRef`Element odnosi się do grupy innych składników (lub składników i grup składników). Na przykład, `ComponentGroupRef` w obszarze aplikacja jest zdefiniowana w następujący sposób w Application. WXS.  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -178,10 +178,10 @@ Aby zainstalować aplikację powłoki, należy wykonać następujące czynności
   
     |*ProjectName*. reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "PhotoStudio DTE"|\<RegistryKey ID = "DteClsidRegKey" root = "HKCR" Key = "$ (var. DteClsidRegKey) "Action =" createAndRemoveOnUninstall "><br /><br /> \<RegistryValue Type = "String" name = "@" value = "$ (var. ShortProductName) obiekt DTE "/><br /><br /> \</RegistryKey >|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @ = "$RootFolder $ \PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type = "String" name = "@" value = "[INSTALLDIR] $ (var. ShortProductName). exe "/><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT \CLSID \\ {bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "PhotoStudio DTE"|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='$(var.ShortProductName) DTE Object' /><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT \CLSID \\ {bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @ = "$RootFolder $\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey>|  
   
-     W tym przykładzie var. DteClsidRegKey jest rozpoznawany jako klucz rejestru w górnym wierszu. Var. ShortProductName jest rozpoznawana jako `PhotoStudio`.  
+     W tym przykładzie var. DteClsidRegKey jest rozpoznawany jako klucz rejestru w górnym wierszu. Var. ShortProductName jest rozpoznawany jako `PhotoStudio` .  
   
 ## <a name="creating-a-setup-bootstrapper"></a>Tworzenie programu inicjującego Instalatora  
  Ukończony plik MSI zostanie zainstalowany tylko wtedy, gdy najpierw zostaną zainstalowane wszystkie wymagania wstępne. Aby uprościć środowisko użytkownika końcowego, należy utworzyć program instalacyjny, który zbiera i instaluje wszystkie wymagania wstępne przed zainstalowaniem aplikacji. Aby zapewnić pomyślną instalację, wykonaj następujące czynności:  
@@ -197,7 +197,7 @@ Aby zainstalować aplikację powłoki, należy wykonać następujące czynności
 - Uruchom plik MSI.  
   
 ### <a name="enforcing-installation-by-administrator"></a>Wymuszanie instalacji przez administratora  
- Ta procedura jest wymagana, aby umożliwić programowi Instalatora dostęp do wymaganych katalogów, takich jak \Program Files\\.  
+ Ta procedura jest wymagana, aby umożliwić programowi Instalatora dostęp do wymaganych katalogów, takich jak \Program Files \\ .  
   
 ##### <a name="to-enforce-installation-by-administrator"></a>Aby wymusić instalację przez administratora  
   
@@ -215,9 +215,9 @@ Aby zainstalować aplikację powłoki, należy wykonać następujące czynności
   
  HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder Określa lokalizację, w której zainstalowano powłokę programu Visual Studio, i można tam sprawdzić pliki.  
   
- Aby zapoznać się z przykładem wykrywania instalacji powłoki, zobacz funkcję `GetProductDirFromReg` narzędzi. cpp w przykładowym wdrożeniu powłoki.  
+ Aby zapoznać się z przykładem wykrywania instalacji powłoki, zobacz `GetProductDirFromReg` Funkcja Utilities. cpp w przykładowym wdrożeniu powłoki.  
   
- Jeśli na komputerze nie zainstalowano jednej lub obu powłok programu Visual Studio, których wymaga pakiet, należy dodać je do listy składników do zainstalowania. Aby zapoznać się z przykładem, zapoznaj się z funkcją `ComponentsPage::OnInitDialog` ComponentsPage. cpp w przykładowym wdrożeniu powłoki.  
+ Jeśli na komputerze nie zainstalowano jednej lub obu powłok programu Visual Studio, których wymaga pakiet, należy dodać je do listy składników do zainstalowania. Aby zapoznać się z przykładem, zobacz `ComponentsPage::OnInitDialog` funkcję ComponentsPage. cpp w przykładowym wdrożeniu powłoki.  
   
 ### <a name="running-the-shell-installers"></a>Uruchamianie instalatorów powłoki  
  Aby uruchomić instalatorów powłoki, wywołaj pakiet redystrybucyjny programu Visual Studio Shell przy użyciu prawidłowych argumentów wiersza polecenia. Aby określić, co należy wykonać, należy użyć argumentów wiersza polecenia **/norestart/q** i obserwować Kod powrotu. W poniższym przykładzie zostanie uruchomiony pakiet redystrybucyjny programu Shell (izolowany).  
@@ -235,9 +235,9 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
 ```  
   
 ### <a name="deciphering-return-values"></a>Deszyfrowanie wartości zwracanych  
- W niektórych systemach operacyjnych instalacja programu Visual Studio Shell (izolowana) będzie wymagała ponownego uruchomienia. Ten stan może być określony przez kod powrotu wywołania do `ExecCmd`.  
+ W niektórych systemach operacyjnych instalacja programu Visual Studio Shell (izolowana) będzie wymagała ponownego uruchomienia. Ten stan może być określony przez kod powrotu wywołania do `ExecCmd` .  
   
-|Wartość zwrócona|Opis|  
+|Wartość zwracana|Opis|  
 |------------------|-----------------|  
 |ERROR_SUCCESS|Instalacja została ukończona. Teraz można zainstalować aplikację.|  
 |ERROR_SUCCESS_REBOOT_REQUIRED|Instalacja została ukończona. Po ponownym uruchomieniu komputera można zainstalować aplikację.|  
@@ -351,7 +351,7 @@ CString GetSetupPath()
 ```  
   
 ### <a name="running-the-application-msi"></a>Uruchamianie aplikacji MSI  
- Po powrocie Instalatora powłoki programu Visual Studio ERROR_SUCCESS można uruchomić plik MSI dla swojej aplikacji. Ponieważ Twój program instalacyjny udostępnia interfejs użytkownika, uruchom plik MSI w trybie cichym ( **/q**) i z funkcją rejestrowania ( **/l**), jak pokazano w poniższym przykładzie.  
+ Po powrocie Instalatora powłoki programu Visual Studio ERROR_SUCCESS można uruchomić plik MSI dla swojej aplikacji. Ponieważ Twój program instalacyjny udostępnia interfejs użytkownika, uruchom plik MSI w trybie cichym (**/q**) i z funkcją rejestrowania (**/l**), jak pokazano w poniższym przykładzie.  
   
 ```cpp#  
 TCHAR temp[MAX_PATH];  

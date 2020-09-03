@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9f4f8f1e2fb014dc812bb5980d333e0a851f9222
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476814"
 ---
 # <a name="limitations-on-script-debugging"></a>Ograniczenia debugowania skryptu
@@ -33,15 +33,15 @@ ms.locfileid: "77476814"
 ## <a name="limitations-on-breakpoint-mapping-with-client-side-script"></a>Ograniczenia dotyczące mapowania punktów przerwania za pomocą skryptu po stronie klienta  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] umożliwia ustawienie punktu przerwania w pliku ASPX lub HTML po stronie serwera, który jest przekształcany na plik po stronie klienta w czasie wykonywania. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mapuje punkt przerwania z pliku po stronie serwera do odpowiedniego punktu przerwania w pliku po stronie klienta, z uwzględnieniem następujących ograniczeń:  
   
-- Punkty przerwania muszą być ustawione wewnątrz bloków `<script>`. Nie można zamapować punktów przerwania w skrypcie wbudowanym lub blokach `<% %>`.  
+- Punkty przerwania muszą być ustawione wewnątrz `<script>` bloków. Nie można zamapować punktów przerwania w skrypcie wbudowanym lub `<% %>` blokach.  
   
-- Adres URL przeglądarki dla strony musi zawierać nazwę strony. Na przykład `http://microsoft.com/default.apsx`. Mapowanie punktów przerwania nie może rozpoznać przekierowania z adresu, takiego jak `http://microsoft.com`, do domyślnej strony.  
+- Adres URL przeglądarki dla strony musi zawierać nazwę strony. Na przykład `http://microsoft.com/default.apsx`. Mapowanie punktów przerwania nie może rozpoznać przekierowania z adresu, takiego jak `http://microsoft.com` na stronie domyślnej.  
   
 - Punkt przerwania musi być ustawiony na stronie określonej w adresie URL przeglądarki, a nie w pliku kontrolki ASPX (ascx), stronie wzorcowej ani w innym pliku dołączonym do tej strony. Nie można zamapować punktów przerwania ustawionych na uwzględnionych stronach.  
   
-- Nie można zamapować punktów przerwania ustawionych w blokach `<script defer=true>`.  
+- Punkty przerwania ustawione w `<script defer=true>` blokach nie mogą być mapowane.  
   
-- W przypadku punktów przerwania ustawionych w blokach `<script id="">` mapowanie punktów przerwania ignoruje atrybut `id`.  
+- W przypadku punktów przerwania ustawionych w `<script id="">` blokach, mapowanie punktów przerwania ignoruje `id` atrybut.  
   
 ## <a name="breakpoint-mapping-and-duplicate-lines"></a>Mapowanie punktów przerwania i zduplikowane linie  
  Aby znaleźć odpowiednią lokalizację w skrypcie po stronie serwera i po stronie klienta, algorytm mapowania punktu przerwania bada kod w każdym wierszu. Algorytm zakłada, że każdy wiersz jest unikatowy. Jeśli co najmniej dwie linie zawierają ten sam kod i ustawisz punkt przerwania dla jednego z tych zduplikowanych wierszy, algorytm mapowania punktu przerwania może wybrać nieprawidłowy duplikat w pliku po stronie klienta. Aby tego uniknąć, Dodaj komentarz do wiersza, w którym ustawiono punkt przerwania. Na przykład:  

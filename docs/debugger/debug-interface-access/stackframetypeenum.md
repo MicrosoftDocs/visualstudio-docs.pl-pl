@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f83cdb163881366a1a0bede95a07e1dae1fc50a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461099"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
@@ -36,17 +36,17 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>Elementy
-`FrameTypeFPO`Pominięto wskaźnik ramki; Dostępne są informacje FPO.
+`FrameTypeFPO` Pominięto wskaźnik ramki; Dostępne są informacje FPO.
 
-`FrameTypeTrap`Ramka pułapki jądra.
+`FrameTypeTrap` Ramka pułapki jądra.
 
-`FrameTypeTSS`Ramka pułapki jądra.
+`FrameTypeTSS` Ramka pułapki jądra.
 
-`FrameTypeStandard`Standardowa Ramka stosu EBP.
+`FrameTypeStandard` Standardowa Ramka stosu EBP.
 
-`FrameTypeFrameData`Pominięto wskaźnik ramki; Dostępne są informacje o danych ramek.
+`FrameTypeFrameData` Pominięto wskaźnik ramki; Dostępne są informacje o danych ramek.
 
-`FrameTypeUnknown`Ramka, która nie zawiera żadnych informacji debugowania.
+`FrameTypeUnknown` Ramka, która nie zawiera żadnych informacji debugowania.
 
 ## <a name="remarks"></a>Uwagi
 Wartości w tym wyliczeniu są zwracane przez wywołanie metody [IDiaStackFrame:: get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) .

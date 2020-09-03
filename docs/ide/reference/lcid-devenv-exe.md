@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77557936"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
-Ustawia domyślny język używany dla tekstu, waluty i innych wartości w środowisku IDE.
+Ustawia domyślny język używany na potrzeby tekstu, waluty i innych wartości w IDE.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,38 +37,38 @@ devenv {/LCID|/L} LocaleID
 
 ## <a name="arguments"></a>Argumenty
 
-- *Localeid*
+- *LocaleID*
 
   Wymagany. Identyfikator ustawień regionalnych (LCID) określonego języka.
 
 ## <a name="remarks"></a>Uwagi
 
-Ładuje IDE i ustawia domyślny język naturalny dla środowiska. Ta zmiana jest zachowywana między sesjami, a IDE pokazuje tę zmianę w**polu** Język**ustawień międzynarodowych** > **ustawień** > **Environment** > środowiska **narzędzi.** > 
+Ładuje IDE i ustawia domyślny język naturalny dla środowiska. Ta zmiana jest utrwalana między sesjami, a środowisko IDE pokazuje tę zmianę w polu **Narzędzia**  >  **Opcje**  >  **środowisko**  >  **ustawień międzynarodowych**  >  **Language** .
 
-Jeśli określony język nie jest dostępny w `/LCID` systemie, przełącznik jest ignorowany.
+Jeśli określony język nie jest dostępny w systemie, `/LCID` przełącznik zostanie zignorowany.
 
-W poniższej tabeli wymieniono identyfikatory LCID języków obsługiwanych przez program Visual Studio.
+W poniższej tabeli przedstawiono identyfikatory LCID języków obsługiwanych przez program Visual Studio.
 
 |Język|Identyfikator LCID|
 |--------------|----------|
-|Chiński uproszczony|2052|
+|Chiński (uproszczony)|2052|
 |Chiński (tradycyjny)|1028|
 |Czeski|1029|
-|Polski|1045|
+|Angielski|1045|
 |Francuski|1036|
 |Niemiecki|1031|
 |Włoski|1040|
-|Japoński|1041|
+|japoński|1041|
 |Koreański|1042|
 |Polski|1045|
-|portugalski (Brazylia)|1046|
+|Portugalski (Brazylia)|1046|
 |Rosyjski|1049|
 |Hiszpański|3082|
 |Turecki|1055
 
 ## <a name="example"></a>Przykład
 
-W tym przykładzie ładuje IDE z ciągami zasobów w języku angielskim.
+Ten przykład ładuje środowisko IDE z ciągami zasobów w języku angielskim.
 
 ```shell
 devenv /LCID 1033

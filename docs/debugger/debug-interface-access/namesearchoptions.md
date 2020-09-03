@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 696ad3e659b503b27da73056dafb57c5852d5133
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461176"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
@@ -43,17 +43,17 @@ enum NameSearchOptions {
 ```
 
 ## <a name="elements"></a>Elementy
-`nsNone`Nie określono żadnych opcji.
+`nsNone` Nie określono żadnych opcji.
 
-`nsfCaseSensitive`Stosuje dopasowanie nazw z uwzględnieniem wielkości liter.
+`nsfCaseSensitive` Stosuje dopasowanie nazw z uwzględnieniem wielkości liter.
 
-`nsfCaseInsensitive`Stosuje dopasowanie nazw bez uwzględniania wielkości liter.
+`nsfCaseInsensitive` Stosuje dopasowanie nazw bez uwzględniania wielkości liter.
 
-`nsfFNameExt`Traktuje nazwy jako ścieżki i stosuje dopasowanie nazwy pliku. ext.
+`nsfFNameExt` Traktuje nazwy jako ścieżki i stosuje dopasowanie nazwy pliku. ext.
 
-`nsfRegularExpression`Stosuje dopasowanie nazwy z uwzględnieniem wielkości liter przy użyciu gwiazdek (*) i znaków zapytania (?) jako symboli wieloznacznych. (Inne typowe znaki wyrażenia regularnego nie są obsługiwane).
+`nsfRegularExpression` Stosuje dopasowanie nazwy z uwzględnieniem wielkości liter przy użyciu gwiazdek (*) i znaków zapytania (?) jako symboli wieloznacznych. (Inne typowe znaki wyrażenia regularnego nie są obsługiwane).
 
-`nsfUndecoratedName`Dotyczy tylko symboli, które mają nazwy niedekoracyjne i dekoracyjne.
+`nsfUndecoratedName` Dotyczy tylko symboli, które mają nazwy niedekoracyjne i dekoracyjne.
 
 ## <a name="remarks"></a>Uwagi
 Wartości z tego wyliczenia są przesyłane do następujących metod:

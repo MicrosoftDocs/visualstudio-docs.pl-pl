@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 984b9d5d9bfd5c3800ec816e1f57489e0348f53c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461288"
 ---
 # <a name="idiatable"></a>IDiaTable
@@ -66,7 +66,7 @@ Następujące interfejsy są implementowane za pomocą `IDiaTable` interfejsu (o
 Pierwsza funkcja, `ShowTableNames` , wyświetla nazwy wszystkich tabel w sesji. Druga funkcja, `GetTable` ,, przeszukuje wszystkie tabele tabeli, która implementuje określony interfejs. Trzecia funkcja, `UseTable` , pokazuje, jak używać `GetTable` funkcji.
 
 > [!NOTE]
-> `CDiaBSTR`jest klasą, która zawija `BSTR` i automatycznie obsługuje zwalnianie ciągu, gdy utworzenie wystąpienia wykracza poza zakres.
+> `CDiaBSTR` jest klasą, która zawija `BSTR` i automatycznie obsługuje zwalnianie ciągu, gdy utworzenie wystąpienia wykracza poza zakres.
 
 ```C++
 void ShowTableNames(IDiaSession *pSession)

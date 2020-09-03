@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76234eea6c689459728e0da876b6a9cce7c290a5
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114591"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Programy obsługi zdarzeń propagujące zmiany poza modelem
@@ -25,21 +25,21 @@ Graficzna powierzchnia i inne kontrolki interfejsu użytkownika to przykłady za
 
 ### <a name="to-define-a-store-event"></a>Aby zdefiniować zdarzenie magazynu
 
-1. Wybierz typ zdarzenia, które chcesz monitorować. Aby zapoznać się z pełną listą, zapoznaj się z właściwościami <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Każda właściwość odpowiada typowi zdarzenia. Najczęściej używane typy zdarzeń to:
+1. Wybierz typ zdarzenia, które chcesz monitorować. Aby zapoznać się z pełną listą, zapoznaj się z właściwościami <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory> . Każda właściwość odpowiada typowi zdarzenia. Najczęściej używane typy zdarzeń to:
 
-    - wyzwolone `ElementAdded` po utworzeniu elementu modelu, linku relacji, kształtu lub łącznika.
+    - `ElementAdded` -wyzwalane po utworzeniu elementu modelu, linku relacji, kształtu lub łącznika.
 
-    - ElementPropertyChanged-wyzwalane, gdy zostanie zmieniona wartość właściwości domeny `Normal`. Zdarzenie jest wyzwalane tylko wtedy, gdy nowe i stare wartości nie są równe. Nie można zastosować zdarzenia do właściwości magazynu obliczeniowego i niestandardowego.
+    - ElementPropertyChanged — wyzwalane, gdy wartość `Normal` właściwości domeny zostanie zmieniona. Zdarzenie jest wyzwalane tylko wtedy, gdy nowe i stare wartości nie są równe. Nie można zastosować zdarzenia do właściwości magazynu obliczeniowego i niestandardowego.
 
          Nie można jej zastosować do właściwości roli, które odpowiadają linkom relacji. Zamiast tego należy użyć `ElementAdded` do monitorowania relacji domeny.
 
-    - `ElementDeleted`-wyzwolone po usunięciu elementu modelu, relacji, kształtu lub łącznika. Nadal można uzyskać dostęp do wartości właściwości elementu, ale nie będzie on miał żadnych relacji z innymi elementami.
+    - `ElementDeleted` -wyzwolone po usunięciu elementu modelu, relacji, kształtu lub łącznika. Nadal można uzyskać dostęp do wartości właściwości elementu, ale nie będzie on miał żadnych relacji z innymi elementami.
 
 2. Dodaj definicję klasy częściowej dla _YourDsl_**DocData** w osobnym pliku kodu w projekcie **DslPackage** .
 
-3. Napisz kod zdarzenia jako metodę, jak w poniższym przykładzie. Może być `static`, chyba że chcesz uzyskać dostęp do `DocData`.
+3. Napisz kod zdarzenia jako metodę, jak w poniższym przykładzie. Może tak być `static` , chyba że chcesz uzyskać dostęp do programu `DocData` .
 
-4. Zastąp `OnDocumentLoaded()`, aby zarejestrować procedurę obsługi. Jeśli masz więcej niż jedną procedurę obsługi, możesz zarejestrować je wszystkie w tym samym miejscu.
+4. Przesłoń `OnDocumentLoaded()` , aby zarejestrować procedurę obsługi. Jeśli masz więcej niż jedną procedurę obsługi, możesz zarejestrować je wszystkie w tym samym miejscu.
 
 Lokalizacja kodu rejestracji nie jest krytyczna. `DocView.LoadView()` jest lokalizacją alternatywną.
 
@@ -160,9 +160,9 @@ private static void AlbumTitleAdjuster(object sender,
 
 Jeśli piszesz zdarzenie, które aktualizuje Sklep:
 
-- Użyj `store.InUndoRedoOrRollback`, aby uniknąć wprowadzania zmian do elementów modelu w Cofnij. Menedżer transakcji ustawi wszystkie elementy w sklepie z powrotem do stanu pierwotnego.
+- Użyj `store.InUndoRedoOrRollback` , aby uniknąć wprowadzania zmian do elementów modelu w Cofnij. Menedżer transakcji ustawi wszystkie elementy w sklepie z powrotem do stanu pierwotnego.
 
-- Użyj `store.InSerializationTransaction`, aby uniknąć wprowadzania zmian podczas ładowania modelu z pliku.
+- Użyj `store.InSerializationTransaction` , aby uniknąć wprowadzania zmian podczas ładowania modelu z pliku.
 
 - Zmiany spowodują wyzwolenie dalszych zdarzeń. Upewnij się, że unikasz pętli nieskończonej.
 
@@ -170,7 +170,7 @@ Jeśli piszesz zdarzenie, które aktualizuje Sklep:
 
 Każdy typ zdarzenia odpowiada kolekcji w sklepie. EventManagerDirectory. Obsługę zdarzeń można dodać lub usunąć w dowolnym momencie, ale zazwyczaj należy dodać je po załadowaniu dokumentu.
 
-|Nazwa właściwości `EventManagerDirectory`|Wykonywane, gdy|
+|`EventManagerDirectory` Nazwa właściwości|Wykonywane, gdy|
 |-|-|
 |ElementAdded|Tworzone jest wystąpienie klasy domeny, relacji domeny, kształtu, łącznika lub diagramu.|
 |ElementDeleted|Element modelu został usunięty z katalogu elementów magazynu i nie jest już źródłem ani celem żadnej relacji. Element nie został faktycznie usunięty z pamięci, ale jest zachowywany w przypadku późniejszego cofnięcia.|
@@ -184,7 +184,7 @@ Każdy typ zdarzenia odpowiada kolekcji w sklepie. EventManagerDirectory. Obsłu
 |TransactionCommitted||
 |TransactionRolledBack||
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Odpowiadanie na zmiany i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md)
 - [Przykładowy kod: diagramy obwodów](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

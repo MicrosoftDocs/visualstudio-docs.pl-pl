@@ -21,26 +21,26 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 523867a8f9aa074e9122c74deb8bcd91cddd8bee
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75944219"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Co nowego w debugerze w programie Visual Studio 2017
 
 Debuger obejmuje następujące nowe funkcje:
 
-- Nowość w wersji 15,5, **Snapshot Debugger** wykonuje migawkę aplikacji w produkcji, gdy interesujący kod jest wykonywany. Aby nakazać debugera, aby utworzyć migawkę, należy ustawić punkty przyciągania i punkty rejestrowania w kodzie. Debuger pozwala zobaczyć dokładnie tego, co poszło, bez wywierania wpływu na ruch z aplikacji produkcyjnej. Rozszerzenie Snapshot Debugger może pomóc w znacznie skrócić czas potrzebny do rozwiązywania problemów występujących w środowiskach produkcyjnych.
+- Nowość w wersji 15,5, **Snapshot Debugger** wykonuje migawkę aplikacji w produkcji, gdy interesujący kod jest wykonywany. Aby polecić debugerowi wykonanie migawki, należy ustawić punkty przyciągania i punkty rejestrowania w kodzie. Debuger pozwala zobaczyć dokładnie, co poszło źle, bez wpływu na ruch aplikacji produkcyjnej. Snapshot Debugger może pomóc znacząco skrócić czas potrzebny do rozwiązania problemów występujących w środowiskach produkcyjnych.
 
-    Zbieranie migawek jest dostępna dla następujących aplikacji sieci web działające w usłudze Azure App Service:
+    Kolekcja migawek jest dostępna dla następujących aplikacji sieci Web działających w Azure App Service:
 
-  * Aplikacji ASP.NET uruchomionych w programie .NET Framework 4.6.1 lub nowszej.
-  * Aplikacje platformy ASP.NET Core uruchomiony w programie .NET Core 2.0 lub nowszych na Windows.
+  * ASP.NET aplikacje działające w .NET Framework 4.6.1 lub nowszych.
+  * ASP.NET Core aplikacje działające na platformie .NET Core 2,0 lub nowszej w systemie Windows.
 
     Aby uzyskać więcej informacji, zobacz [debugowanie live ASP.NET Apps przy użyciu Snapshot Debugger](../debugger/debug-live-azure-applications.md).
 
-- Nowość w wersji 15,5 tylko w Visual Studio Enterprise, **IntelliTrace krokowo do tyłu** wykonuje migawkę aplikacji przy każdym punkcie przerwania i zdarzeniu debugera. Zarejestrowane migawek umożliwiają wrócić do poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, tak jak w przeszłości. IntelliTrace krok do tyłu pozwalają zaoszczędzić czas podczas mają być wyświetlane poprzedni stan aplikacji, ale nie chcesz ponownie uruchomić debugowanie lub Utwórz ponownie stan żądaną aplikację.
+- Nowość w wersji 15,5 tylko w Visual Studio Enterprise, **IntelliTrace krokowo do tyłu** wykonuje migawkę aplikacji przy każdym punkcie przerwania i zdarzeniu debugera. Zapisane migawki umożliwiają powrót do poprzednich punktów przerwania lub kroków oraz wyświetlanie stanu aplikacji w przeszłości. IntelliTrace krokowo umożliwia zaoszczędzenie czasu, gdy chcesz zobaczyć poprzedni stan aplikacji, ale nie chcesz ponownie uruchomić debugowania ani odtworzyć żądanego stanu aplikacji.
 
     Możesz nawigować i przeglądać migawki przy użyciu przycisków **krok wstecz** i **dalej** na pasku narzędzi debugowania. Te przyciski służą do przechodzenia do zdarzeń, które pojawiają się na karcie **zdarzenia** w oknie **Narzędzia diagnostyczne** .
 
@@ -68,9 +68,9 @@ Debuger obejmuje następujące nowe funkcje:
 
     ![Wyszukaj w obszarze Dołącz do procesu](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Aby uzyskać więcej informacji o tych nowych funkcjach, zapoznaj się z informacjami o [wersji [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]](/visualstudio/releasenotes/vs2017-relnotes).
+Aby uzyskać więcej informacji o tych nowych funkcjach, zobacz [Informacje o [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] wersji programu ](/visualstudio/releasenotes/vs2017-relnotes).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Debugowanie w programie Visual Studio](../debugger/index.yml)
+- [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

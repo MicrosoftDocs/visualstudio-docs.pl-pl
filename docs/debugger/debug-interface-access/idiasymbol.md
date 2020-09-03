@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0214d3e8d097efa31b3f8b02e67f419226a093a4
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461344"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
@@ -261,7 +261,7 @@ Uzyskaj ten interfejs, wywołując jedną z następujących metod:
 Ten przykład pokazuje, jak wyświetlić zmienne lokalne dla funkcji pod podanym względnym adresem wirtualnym. Pokazuje również, jak symbole różnych typów są ze sobą powiązane.
 
 > [!NOTE]
-> `CDiaBSTR`jest klasą, która zawija `BSTR` i automatycznie obsługuje zwalnianie ciągu, gdy utworzenie wystąpienia wykracza poza zakres.
+> `CDiaBSTR` jest klasą, która zawija `BSTR` i automatycznie obsługuje zwalnianie ciągu, gdy utworzenie wystąpienia wykracza poza zakres.
 
 ```C++
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )
@@ -336,7 +336,7 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 ```
 
 ## <a name="requirements"></a>Wymagania
-`Header:`Dia2. h
+`Header:` Dia2. h
 
 Biblioteka: diaguids. lib
 
@@ -348,5 +348,5 @@ DLL: msdia80.dll
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
-- [Symbole i znaczniki symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+- [Symbole i tagi symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
 - [Jednostka kompilacji](../../debugger/debug-interface-access/compiland.md)
