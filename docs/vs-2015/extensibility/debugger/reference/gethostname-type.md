@@ -1,5 +1,5 @@
 ---
-title: GETHOSTNAME_TYPE | Dokumentacja firmy Microsoft
+title: GETHOSTNAME_TYPE | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b3f7d09e29489dac0598b9558df595aedd0c5d61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203057"
 ---
-# <a name="gethostnametype"></a>GETHOSTNAME_TYPE
+# <a name="gethostname_type"></a>GETHOSTNAME_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Określa typ nazwy hosta.  
@@ -49,12 +49,12 @@ public enum enum_GETHOSTNAME_TYPE { 
  Określa nazwę pliku hosta.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wartości są przekazywane jako argument do [gethostname —](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) metodę, aby pobrać nazwy hosta, w różnych formatach.  
+ Te wartości są przesyłane jako argument do metody [gethostname](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) w celu pobrania nazwy hosta w różnych formatach.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

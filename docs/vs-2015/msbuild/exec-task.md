@@ -1,5 +1,5 @@
 ---
-title: Exec — zadanie | Dokumentacja firmy Microsoft
+title: Exec — zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2a69fc64c3371a2970c03ec0129d4c733f5ae9cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201754"
 ---
 # <a name="exec-task"></a>Exec — Zadanie
@@ -36,26 +36,26 @@ Uruchamia określony program lub polecenie przy użyciu określonych argumentów
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`Command`|Wymagane `String` parametru.<br /><br /> Polecenia do uruchomienia. Mogą to być polecenia systemowe, takie jak atrybuty, lub pliku wykonywalnego, takie jak program.exe, runprogram.bat lub setup.msi.<br /><br /> Ten parametr może zawierać wiele wierszy poleceń. Alternatywnie można umieścić wiele poleceń w pliku wsadowym i uruchom go przy użyciu tego parametru.|  
-|`CustomErrorRegularExpression`|Opcjonalnie `String` parametru.<br /><br /> Określa wyrażenie regularne, który jest używany wierszom dodatkowy błąd w danych wyjściowych narzędzia. Jest to przydatne dla narzędzi, które generują niezwykle sformatowane wyniki.|  
-|`CustomWarningRegularExpression`|Opcjonalnie `String` parametru.<br /><br /> Określa wyrażenie regularne, który służy do dodatkowych wierszy ostrzeżenie w danych wyjściowych narzędzia. Jest to przydatne dla narzędzi, które generują niezwykle sformatowane wyniki.|  
-|`ExitCode`|Opcjonalnie `Int32` parametr tylko do odczytu danych wyjściowych.<br /><br /> Określa kod zakończenia, dostarczone przez wykonanego polecenia.|  
-|`IgnoreExitCode`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, zadanie ignoruje kod zakończenia, dostarczone przez wykonanego polecenia. W przeciwnym razie zwraca zadanie `false` Jeśli wykonanego polecenia zwróci kod zakończenia różny od zera.|  
-|`IgnoreStandardErrorWarningFormat`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `false`, wybiera wiersze w danych wyjściowych, który jest zgodny z formatem standardowy błąd/ostrzeżenie i rejestruje je jako błędy i ostrzeżenia. Jeśli `true`, wyłączyć to zachowanie.|  
-|`Outputs`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera elementy danych wyjściowych z zadania. `Exec` Zadanie nie powoduje ustawienia te sam. Zamiast tego możesz podać je tak, jakby ona ustawiona, dzięki czemu mogą być używane w dalszej części projektu.|  
-|`StdErrEncoding`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Określa kodowanie przechwyconych zadań Standardowy strumień błędów. Ustawieniem domyślnym jest bieżący konsoli danych wyjściowych kodowania.|  
-|`StdOutEncoding`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Określa kodowanie przechwyconych zadań standardowego strumienia wyjściowego. Ustawieniem domyślnym jest bieżący konsoli danych wyjściowych kodowania.|  
-|`WorkingDirectory`|Opcjonalnie `String` parametru.<br /><br /> Określa katalog, w którym będą uruchamiane polecenie.|  
+|`Command`|Wymagany parametr interfejsu `String`.<br /><br /> Polecenia do uruchomienia. Mogą to być polecenia systemowe, takie jak attrib lub wykonywalny, takie jak program.exe, runprogram.bat lub setup.msi.<br /><br /> Ten parametr może zawierać wiele wierszy poleceń. Alternatywnie można umieścić wiele poleceń w pliku wsadowym i uruchomić je za pomocą tego parametru.|  
+|`CustomErrorRegularExpression`|Opcjonalny `String` parametr.<br /><br /> Określa wyrażenie regularne, które jest używane do określania wierszy błędów w danych wyjściowych narzędzia. Jest to przydatne w przypadku narzędzi generujących nietypowo sformatowane dane wyjściowe.|  
+|`CustomWarningRegularExpression`|Opcjonalny `String` parametr.<br /><br /> Określa wyrażenie regularne, które jest używane do wyświetlania wierszy ostrzeżeń w danych wyjściowych narzędzia. Jest to przydatne w przypadku narzędzi generujących nietypowo sformatowane dane wyjściowe.|  
+|`ExitCode`|Opcjonalny `Int32` wyjściowy parametr tylko do odczytu.<br /><br /> Określa kod zakończenia, który jest dostarczany przez wykonane polecenie.|  
+|`IgnoreExitCode`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , zadanie zignoruje kod zakończenia, który jest dostarczany przez wykonane polecenie. W przeciwnym razie zadanie zwraca wartość, `false` Jeśli wykonane polecenie zwróci niezerowy kod zakończenia.|  
+|`IgnoreStandardErrorWarningFormat`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `false` program wybierze wiersze w danych wyjściowych, które pasują do standardowego formatu błędu/ostrzeżenia, i rejestruje je jako błędy/ostrzeżenia. Jeśli `true` to zachowanie jest wyłączone.|  
+|`Outputs`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera elementy wyjściowe zadania. `Exec`Zadanie nie ustawia tych samych wartości. Zamiast tego można je określić tak, jakby je ustawił, tak aby mogły być używane później w projekcie.|  
+|`StdErrEncoding`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Określa kodowanie strumienia błędów standardowego przechwyconego zadania. Wartość domyślna to bieżące kodowanie danych wyjściowych konsoli.|  
+|`StdOutEncoding`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Określa kodowanie przechwyconego strumienia wyjściowego zadania standardowego. Wartość domyślna to bieżące kodowanie danych wyjściowych konsoli.|  
+|`WorkingDirectory`|Opcjonalny `String` parametr.<br /><br /> Określa katalog, w którym zostanie uruchomione polecenie.|  
   
 ## <a name="remarks"></a>Uwagi  
- To zadanie jest przydatne, gdy określony [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zadań dla zadania, które mają być wykonywane jest niedostępny. Jednak `Exec` zadania, w przeciwieństwie do bardziej szczegółowe zadania, nie zebranie danych wyjściowych z narzędzia lub polecenia, że działa.  
+ To zadanie jest przydatne, gdy określone [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zadanie dla zadania, które chcesz wykonać, jest niedostępne. Jednak `Exec` zadanie, w przeciwieństwie do bardziej konkretnego zadania, nie umożliwia zebrania danych wyjściowych z narzędzia lub polecenia, które jest uruchamiane.  
   
- `Exec` Zadanie wywołuje cmd.exe zamiast bezpośrednie wywołanie procesu.  
+ `Exec`Zadanie wywołuje cmd.exe, zamiast bezpośrednio wywołując proces.  
   
- Oprócz parametrów wymienionych w niniejszym dokumencie, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.ToolTask> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [tooltaskextension — klasa bazowa](../msbuild/tooltaskextension-base-class.md).  
+ Oprócz parametrów wymienionych w tym dokumencie, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.ToolTask> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie użyto `Exec` zadania do uruchomienia polecenia.  
+ Poniższy przykład używa `Exec` zadania do uruchomienia polecenia.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -72,5 +72,5 @@ Uruchamia określony program lub polecenie przy użyciu określonych argumentów
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zadania](../msbuild/msbuild-tasks.md)   
+ [Widoku](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

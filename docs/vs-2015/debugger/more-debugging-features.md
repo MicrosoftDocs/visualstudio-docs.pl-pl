@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f20d9679bb0eb726c594ab75fd7a04bc821b97d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300540"
 ---
 # <a name="more-debugging-features"></a>Więcej funkcji debugowania
@@ -45,9 +45,9 @@ Ta sekcja zawiera dodatkowe funkcje, których można używać z debugerem progra
  Pokazuje, jak używać okna bezpośredniego programu Visual Studio do wykonywania funkcji lub procedury podrzędnej, gdy aplikacja nie jest uruchomiona. 
   
  [Edytuj i kontynuuj](../debugger/edit-and-continue.md)  
- Opisuje narzędzie Edycja i kontynuacja, które pozwala na zmianę kodu źródłowego, gdy program jest w trybie przerwania i zastosuje te zmiany bez konieczności kończenia sesji debugowania i kompilowania programu, a także zawiera instrukcje dotyczące włączania lub wyłączania tego elementu ona.  
+ Opisuje narzędzie Edycja i kontynuacja, które pozwala na zmianę kodu źródłowego, gdy program jest w trybie przerwania i zastosuje te zmiany bez konieczności kończenia sesji debugowania i kompilowania programu i zawiera instrukcje dotyczące włączania lub wyłączania tej funkcji.  
   
  [Korzystanie z plików zrzutu](../debugger/using-dump-files.md) Opisuje pliki zrzutu, w tym instrukcje dotyczące zapisywania i otwierania. Pliki zrzutu zawierają migawkę stanu programu w pewnym momencie, zwykle po awarii. Jeśli testujesz program na komputerze, na którym nie zainstalowano plików źródłowych lub plików PDB, można zapisać plik zrzutu, gdy wystąpi awaria, i użyć pliku zrzutu do debugowania awarii na maszynie kompilacji zawierającej pliki źródłowe i plików PDB. 
   
- [Instrukcje: przywracanie ukrytych poleceń debugera](../debugger/how-to-restore-hidden-debugger-commands.md)  
+ [Instrukcje: Przywracanie ukrytych poleceń debugera](../debugger/how-to-restore-hidden-debugger-commands.md)  
  Opisuje sposób wyświetlania widocznych poleceń debugera, które zostały ukryte przez domyślne ustawienia środowiska IDE.

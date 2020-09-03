@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 10a410b18391b3fbaee98f10be56cdc70c0f3562
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288419"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Instrukcje: Dodawanie parametrów kontekstu do ustawienia przebiegu testu obciążenia
@@ -36,9 +36,9 @@ Jeśli przypiszesz wartość parametru kontekstowego webserwer1 do `http://Corpo
 
 Ponadto, przypisując różne wartości do parametru kontekstowego za pomocą tej samej nazwy w różnych ustawieniach przebiegu testu obciążenia, można uruchomić test obciążenia przy użyciu różnych środowisk:
 
-- Ustawienie uruchomieniowe serwera sieci Web w firmie: parametr kontekstowy o nazwie`WebServer1=http://CorporateStagingWebServer`
+- Ustawienie uruchomieniowe serwera sieci Web w firmie: parametr kontekstowy o nazwie `WebServer1=http://CorporateStagingWebServer`
 
-- Ustawienie uruchomieniowe serwera sieci Web firmowego: parametr kontekstu o nazwie`WebServer1=http://CorporateProductionWebServer`
+- Ustawienie uruchomieniowe serwera sieci Web firmowego: parametr kontekstu o nazwie `WebServer1=http://CorporateProductionWebServer`
 
   **Zmiana ustawienia uruchomieniowego z wiersza polecenia**
 

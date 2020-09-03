@@ -1,5 +1,5 @@
 ---
-title: 'Jak: Odwoływanie się do sdk projektu MSBuild | Dokumenty firmy Microsoft'
+title: 'Instrukcje: odwoływanie się do zestawu SDK projektu MSBuild | Microsoft Docs'
 ms.date: 01/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76826474"
 ---
-# <a name="how-to-use-msbuild-project-sdks"></a>Jak: Korzystanie z sdk projektów MSBuild
+# <a name="how-to-use-msbuild-project-sdks"></a>Instrukcje: korzystanie z zestawów SDK projektu MSBuild
 
-Program MSBuild 15.0 wprowadził koncepcję "zestawu SDK projektu", która upraszcza korzystanie z zestawów programistycznych, które wymagają importowania właściwości i obiektów docelowych.
+Program MSBuild 15,0 wprowadził koncepcję "zestawu SDK projektu", która upraszcza korzystanie z zestawów deweloperskich oprogramowania, które wymagają zaimportowania właściwości i obiektów docelowych.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -28,7 +28,7 @@ Program MSBuild 15.0 wprowadził koncepcję "zestawu SDK projektu", która upras
 </Project>
 ```
 
-Podczas oceny projektu MSBuild dodaje niejawne importy u góry i u dołu pliku projektu:
+Podczas obliczania projektu, MSBuild dodaje niejawne Importy u góry i u dołu pliku projektu:
 
 ```xml
 <Project>
@@ -44,11 +44,11 @@ Podczas oceny projektu MSBuild dodaje niejawne importy u góry i u dołu pliku p
 </Project>
 ```
 
-## <a name="reference-a-project-sdk"></a>Odwoływanie się do sdk projektu
+## <a name="reference-a-project-sdk"></a>Odwoływanie się do zestawu SDK projektu
 
-Istnieją trzy sposoby odwoływania się do sdk projektu:
+Istnieją trzy sposoby odwoływania się do zestawu SDK projektu:
 
-- Użyj `Sdk` atrybutu w `<Project/>` elemencie:
+- Użyj `Sdk` atrybutu dla `<Project/>` elementu:
 
     ```xml
     <Project Sdk="My.Custom.Sdk">
@@ -56,9 +56,9 @@ Istnieją trzy sposoby odwoływania się do sdk projektu:
     </Project>
     ```
 
-    Niejawny import jest dodawany do górnej i dolnej części projektu, jak wspomniano wcześniej.
+    Niejawny import jest dodawany do góry i u dołu projektu, jak opisano wcześniej.
     
-    Aby określić określoną wersję sdk, dołącz `Sdk` go do atrybutu:
+    Aby określić określoną wersję zestawu SDK, Dołącz ją do `Sdk` atrybutu:
 
     ```xml
     <Project Sdk="My.Custom.Sdk/1.2.3">
@@ -67,9 +67,9 @@ Istnieją trzy sposoby odwoływania się do sdk projektu:
     ```
 
     > [!NOTE]
-    > Jest to obecnie jedyny obsługiwany sposób odwoływania się do sdk projektu w programie Visual Studio dla komputerów Mac.
+    > Obecnie jedynym obsługiwanym sposobem odwoływania się do zestawu SDK projektu w Visual Studio dla komputerów Mac.
 
-- Użyj elementu najwyższego poziomu: `<Sdk/>`
+- Użyj elementu najwyższego poziomu `<Sdk/>` :
 
     ```xml
     <Project>
@@ -78,9 +78,9 @@ Istnieją trzy sposoby odwoływania się do sdk projektu:
     </Project>
    ```
 
-   Niejawny import jest dodawany do górnej i dolnej części projektu, jak wspomniano wcześniej.
+   Niejawny import jest dodawany do góry i u dołu projektu, jak opisano wcześniej.
    
-   Atrybut `Version` nie jest wymagany.
+   Ten `Version` atrybut nie jest wymagany.
 
 - Użyj `<Import/>` elementu w dowolnym miejscu w projekcie:
 
@@ -95,25 +95,25 @@ Istnieją trzy sposoby odwoływania się do sdk projektu:
     </Project>
    ```
 
-   Jawnie włączenie importu w projekcie umożliwia pełną kontrolę nad zamówieniem.
+   Jawne uwzględnienie Importy w projekcie umożliwia pełną kontrolę nad kolejnością.
 
-   Podczas korzystania `<Import/>` z elementu, można `Version` określić atrybut opcjonalny, jak również. Na przykład można `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`określić .
+   W przypadku używania `<Import/>` elementu można również określić opcjonalny `Version` atrybut. Na przykład można określić `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />` .
 
-## <a name="how-project-sdks-are-resolved"></a>Jak rozwiązywane są rozwiązania dotyczące skusi SDK projektów
+## <a name="how-project-sdks-are-resolved"></a>Jak są rozwiązywane zestawy SDK projektu
 
-Podczas oceny importu MSBuild dynamicznie rozpoznaje ścieżkę do sdk projektu na podstawie nazwy i wersji, które zostały określone.  MSBuild ma również listę zarejestrowanych programów rozpoznawania nazw SDK, które są wtyczkami, które lokalizują sdk projektu na komputerze. Wtyczki te obejmują:
+Podczas oceny importu program MSBuild dynamicznie rozpoznaje ścieżkę do zestawu SDK projektu na podstawie określonej nazwy i wersji.  Program MSBuild zawiera również listę zarejestrowanych narzędzi do rozwiązywania problemów z zestawem SDK, które są wtyczkami do lokalizowania zestawów SDK projektu na komputerze. Te wtyczki obejmują:
 
-- Program rozpoznawania nazw oparty na nuget, który wysyła kwerendy skonfigurowane źródła danych pakietu dla pakietów NuGet, które pasują do identyfikatora i wersji zestawu SDK, który został określony.
+- Mechanizm rozwiązywania konfliktów oparty na pakiecie NuGet, który wysyła zapytanie do skonfigurowanych kanałów informacyjnych pakietu dla pakietów NuGet zgodnych z IDENTYFIKATORem i wersją określonego zestawu SDK.
 
-   Ten program rozpoznawania nazw jest aktywny tylko wtedy, gdy określono wersję opcjonalną. Może być używany dla dowolnego niestandardowego sdk projektu.
+   Ten mechanizm rozwiązywania konfliktów jest aktywny tylko w przypadku wybrania wersji opcjonalnej. Może być używana dla dowolnego niestandardowego zestawu SDK projektu.
    
-- Program rozpoznawcza interfejsu wiersza polecenia .NET, który rozpoznaje pakiety SDK zainstalowane z [programem .NET CLI](/dotnet/core/tools/).
+- Program rozpoznawania interfejsu wiersza polecenia platformy .NET, który rozwiązuje zestawy SDK instalowane z [interfejsem wiersza polecenia platformy .NET](/dotnet/core/tools/).
 
-   Ten program rozpoznawania nazw lokalizuje zestaw `Microsoft.NET.Sdk` `Microsoft.NET.Sdk.Web` sdk projektu, takich jak i które są częścią produktu.
+   Ten program rozpoznawania nazw lokalizuje zestawy projektów, takie jak `Microsoft.NET.Sdk` i `Microsoft.NET.Sdk.Web` , które są częścią produktu.
    
-- Domyślny program rozpoznawania nazw, który rozpoznaje sks, które zostały zainstalowane z MSBuild.
+- Domyślny program rozpoznawania nazw, który rozwiązuje zestawy SDK, które zostały zainstalowane z programem MSBuild.
 
-Program rozpoznawania nazw SDK oparty na nuget obsługuje określanie wersji w pliku [global.json,](/dotnet/core/tools/global-json) który umożliwia sterowanie wersją SDK projektu w jednym miejscu, a nie w każdym projekcie:
+Mechanizm rozwiązywania konfliktów oparty na pakiecie NuGet obsługuje określanie wersji w [global.js](/dotnet/core/tools/global-json) pliku, co umożliwia kontrolowanie wersji zestawu SDK projektu w jednym miejscu, a nie w każdym projekcie:
 
 ```json
 {
@@ -124,11 +124,11 @@ Program rozpoznawania nazw SDK oparty na nuget obsługuje określanie wersji w p
 }
 ```
 
-Tylko jedna wersja każdego sdk projektu może służyć podczas kompilacji. Jeśli odwołujesz się do dwóch różnych wersji tego samego sdk projektu, MSBuild emituje ostrzeżenie. Zaleca **się,** aby nie określać wersji w projektach, jeśli wersja jest określona w pliku *global.json.*
+Podczas kompilacji można używać tylko jednej wersji zestawu SDK projektu. Jeśli odwołujesz się do dwóch różnych wersji tego samego zestawu SDK projektu, MSBuild emituje ostrzeżenie. Zaleca się, aby **nie** określać wersji w projektach, jeśli w pliku *global.js* jest określona wersja.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Koncepcje MSBuild](../msbuild/msbuild-concepts.md)
+- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
 - [Dostosowywanie kompilacji](../msbuild/customize-your-build.md)
 - [Pakiety, metadane i struktury](/dotnet/core/packages)
-- [Dodatki do formatu csproj dla .NET Core](/dotnet/core/tools/csproj)
+- [Dodatki do formatu csproj dla platformy .NET Core](/dotnet/core/tools/csproj)

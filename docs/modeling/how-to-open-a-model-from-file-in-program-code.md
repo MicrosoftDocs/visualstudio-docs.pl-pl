@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19cec066d66b08d3f02f3885908722aad047172b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532486"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Porady: otwieranie modelu z pliku w kodzie programu
@@ -33,7 +33,7 @@ Ustaw **platformę docelową** projektu aplikacji na .NET Framework 4 lub nowszy
 > [!NOTE]
 > Struktura docelowa nie powinna być **.NET Framework 4 profilu klienta**.
 
-## <a name="references"></a>Odwołania
+## <a name="references"></a>Dokumentacja
 
 Dodaj te odwołania do projektu aplikacji Visual Studio:
 

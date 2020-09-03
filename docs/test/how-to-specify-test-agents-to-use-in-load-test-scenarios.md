@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5d9e22200a63544b4539f7bf78c48d5711974776
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287496"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Instrukcje: Określanie agentów testowych do użycia w scenariuszach testów obciążenia
@@ -35,11 +35,11 @@ Można określić agentów, których scenariusz ma używać, jeśli używasz kon
 > [!TIP]
 > Zamiast fizycznego umieszczania agenta w zdalnej lokacji, kolejną opcją jest użycie emulacji sieci do emulowania powolnej sieci. Aby uzyskać więcej informacji, zobacz [Określanie typów sieci wirtualnych](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-Aby uzyskać więcej informacji, zobacz [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).
+Aby uzyskać więcej informacji, zobacz  [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).
 
 Innym powodem jest to, że niektóre, ale nie wszystkie, agenci mogą mieć zainstalowane na nich oprogramowanie, które jest wymagane w konkretnym scenariuszu.
 
-Można kontrolować wybór agenta dla danego przebiegu testowego za pomocą ról w ustawieniach testu. Aby uzyskać więcej informacji, zobacz [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
+Można kontrolować wybór agenta dla danego przebiegu testowego za pomocą ról w ustawieniach testu. Aby uzyskać więcej informacji, zobacz  [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
 Jeśli maszyna testowa ma więcej niż 75 procent użycia procesora CPU lub ma mniej niż 10% dostępnej pamięci fizycznej, Dodaj więcej agentów do testu obciążenia, aby upewnić się, że maszyna agenta nie stanie się wąskim gardłem w teście obciążenia.
 

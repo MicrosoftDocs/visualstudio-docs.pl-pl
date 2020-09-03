@@ -1,5 +1,5 @@
 ---
-title: Udtkind — | Dokumentacja firmy Microsoft
+title: Udtkind — | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9fb22471cea7cd717b8969682a0e1f643f912150
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202380"
 ---
 # <a name="udtkind"></a>UdtKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-W tym artykule opisano różne typy zdefiniowane przez użytkownika (UDT).  
+Opisuje różnorodność typu zdefiniowanego przez użytkownika (UDT).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,22 +38,22 @@ enum UdtKind { 
   
 ## <a name="elements"></a>Elementy  
  UdtStruct  
- UDT to struktura.  
+ UDT jest strukturą.  
   
  UdtClass  
  UDT jest klasą.  
   
  UdtUnion  
- UDT to Unii.  
+ UDT jest Unią.  
   
  UdtInterface  
  UDT jest interfejsem.  
   
 ## <a name="remarks"></a>Uwagi  
- Wartości w tym wyliczeniu są zwracane przez [idiasymbol::get_udtkind —](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) metody.  
+ Wartości w tym wyliczeniu są zwracane przez metodę [IDiaSymbol:: get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: cvconst.h  
+ Nagłówek: cvconst. h  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)   

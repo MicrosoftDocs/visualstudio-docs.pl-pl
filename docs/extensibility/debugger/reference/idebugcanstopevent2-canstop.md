@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::CanStop | Dokumenty firmy Microsoft
+title: 'IDebugCanStopEvent2:: Anuluj zatrzymanie | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2915938c966bac7f842d0745c973c7d0b7033e2b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734592"
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
-Powiadamia aparat debugowania (DE), czy zatrzymać się w bieżącej lokalizacji kodu lub po prostu kontynuować wykonywanie.
+Powiadamia aparat debugowania (DE), czy ma zostać zatrzymany w bieżącej lokalizacji kodu, czy po prostu kontynuuje wykonywanie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,15 +41,15 @@ int CanStop ( 
 
 ## <a name="parameters"></a>Parametry
 `fCanStop`\
-[w] Non-zero`TRUE`( ), jeśli DE powinien zatrzymać się w bieżącej lokalizacji kodu; w przeciwnym`FALSE`razie zero ( ).
+podczas Wartość niezerowa ( `TRUE` ), jeśli de powinna zatrzymać się w bieżącej lokalizacji kodu; w przeciwnym razie, zero ( `FALSE` ).
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Odbiornik tego zdarzenia zazwyczaj wywołuje [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metody, aby określić przyczynę DE chce `IDebugCanStopEvent2::CanStop` zatrzymać, a następnie wywołuje metodę z odpowiednią odpowiedzią.
+ Odbiorca tego zdarzenia zazwyczaj wywołuje metodę [getpowód](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) , aby ustalić przyczynę zatrzymania, a następnie wywołuje `IDebugCanStopEvent2::CanStop` metodę z odpowiednią odpowiedzią.
 
- Jeśli DE zatrzymuje, wysyła zdarzenie, które opisuje przyczynę zatrzymania. Zazwyczaj są dwa zdarzenia, które są wysyłane, przerwa użytkownika lub sygnału reprezentowane przez interfejs [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) i zdarzenie punktu przerwania reprezentowane przez interfejs [IDebugBreakpointEvent2.](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)
+ Jeśli ANULUJe, wysyła Zdarzenie opisujące powód zatrzymywania. Zazwyczaj są wysyłane dwa zdarzenia, czyli przerwanie użytkownika lub sygnału reprezentowane przez interfejs [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) oraz zdarzenie punktu przerwania reprezentowane przez interfejs [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 331722df4749ca59241259e13c3b387d8303b69f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300508"
 ---
 # <a name="graphics-frame-analysis"></a>Analiza ramek grafiki
@@ -77,7 +77,7 @@ Użyj analiza klatek grafiki w analizator grafiki programu Visual Studio, aby pr
 #### <a name="timeline"></a>Oś czasu  
  Oś czasu zawiera przegląd chronometrażu rysowania połączeń względem siebie. Ponieważ większe słupki odnoszą się do dłuższego czasu rysowania, można użyć jej do szybkiego zlokalizowania najbardziej kosztownych wywołań rysowania w ramce. Gdy przechwycone ramki zawiera bardzo dużą liczbę wywołań rysowania, wielokrotne wywołania rysowania są łączone na jeden pasek, którego długość jest sumą tych wywołań rysowania.  
   
- ![Oś czasu pokazuje koszty&#45;połączeń.](../debugger/media/pix-frame-analysis-timeline.png "pix_frame_analysis_timeline")  
+ ![Oś czasu pokazuje rysowanie&#45;kosztów wywołań.](../debugger/media/pix-frame-analysis-timeline.png "pix_frame_analysis_timeline")  
   
  Możesz obsłużyć wskaźnik na pasku, aby zobaczyć, które zdarzenie rysowania, do którego odnosi się pasek. Wybranie paska powoduje synchronizację listy zdarzeń z tym zdarzeniem.  
   
@@ -91,7 +91,7 @@ Użyj analiza klatek grafiki w analizator grafiki programu Visual Studio, aby pr
  Wartości zarówno bezwzględny czas odniesienia, jak i względny czas dla wariantów renderowania są rzeczywistą średnią orednią wielu przebiegów — domyślnie 5. Ta uśrednianie pomaga zagwarantować, że dane chronometrażu są niezawodne i spójne. Możesz obsłużyć wskaźnik dla każdej komórki w tabeli, aby przeanalizować wartości minimalne, maksymalne, średnie i średniego czasu, które zostały zaobserwowane podczas generowania wyników dla tego wywołania rysowania i wariantu renderowania. Zostanie również wyświetlony chronometraż punktu odniesienia.  
   
 #### <a name="hot-draw-calls"></a>Wywołania rysowania "gorąca"  
- Aby zwrócić uwagę na łączenie wywołań, które zużywają większą część całkowitego czasu renderowania lub które mogą być nietypowo powolne z przyczyn, które można uniknąć, wiersz zawierający te wywołania rysowania "gorąca" ma kolor czerwony, gdy jego własny chronometraż jest większy niż jeden odchylenie standardowe dłużej niż średni czas trwania wszystkich wywołań rysowania w ramce.  
+ Aby zwrócić uwagę na narysowanie wywołań, które zużywają większą część całkowitego czasu renderowania lub które mogą być nietypowo powolne z przyczyn, które można uniknąć, wiersz zawierający te wywołania rysowania "gorąca" jest zacieniowany czerwono, gdy jego własny chronometraż jest większy od średniego czasu odniesienia wszystkich wywołań w ramce.  
   
  ![To wywołanie DrawIndexed ma gorącą i zimną varients.](../debugger/media/pix-frame-analysis-hot-calls.png "pix_frame_analysis_hot_calls")  
   
@@ -139,7 +139,7 @@ Użyj analiza klatek grafiki w analizator grafiki programu Visual Studio, aby pr
   
  Analiza klatek ogranicza liczbę ponownych prób do 10. Jeśli platforma ma agresywne zarządzanie zużyciem lub kontroli zegarem, może to spowodować niepowodzenie analizy klatek i zgłosić błąd, ponieważ Przekroczono limit ponownych prób. Może być możliwe uniknięcie tego problemu przez zresetowanie funkcji zarządzania zasilaczami i szybkości zegara, aby było mniej agresywne, jeśli ta platforma zostanie włączona.  
   
-## <a name="HardwareSupport"></a>Obsługa sprzętu  
+## <a name="hardware-support"></a><a name="HardwareSupport"></a> Obsługa sprzętu  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Sygnatury czasowe i zapytania zamknięcia  
  Sygnatury czasowe są obsługiwane na wszystkich platformach, które obsługują analizę klatek. Głębokości zapytania zamknięcia — wymagane dla pikseli zamknięte licznik — są obsługiwane na platformach, które obsługują funkcję Level 9,2 lub wyższą.  
@@ -161,14 +161,14 @@ Użyj analiza klatek grafiki w analizator grafiki programu Visual Studio, aby pr
 > [!NOTE]
 > Ponieważ liczniki sprzętowe procesora GPU są zasobami sprzętowymi, może to potrwać wiele przebiegów w celu zebrania kompletnego zestawu liczników sprzętu dla każdego wariantu renderowania. W związku z tym nie określono kolejności, w której zbierane są liczniki GPU.  
   
-### <a name="windows-phone"></a>System Windows Phone  
+### <a name="windows-phone"></a>Telefon z systemem Windows  
  Sygnatury czasowe, zapytania zamknięcia i liczniki sprzętu procesora GPU są obsługiwane tylko w Windows Phone słuchawki, które pierwotnie zostały dostarczone z Windows Phone 8,1. Analiza klatek wymaga, aby odtworzyć plik dziennika grafiki. Windows Phone słuchawki, które zostały pierwotnie dostarczone z Windows Phone 8 nie obsługują analizy ramek, nawet w przypadku słuchawek, które zostały zaktualizowane do Windows Phone 8,1.  
   
 ## <a name="unsupported-scenarios"></a>Nieobsługiwane scenariusze  
  Niektóre sposoby używania analizy klatek są nieobsługiwane lub są tylko niewłaściwymi pomysłami.  
   
 ### <a name="warp"></a>ZNIEKSZTAŁCENI  
- Analiza klatek ma służyć do profilowania i ulepszania wydajności renderowania na rzeczywistym sprzęcie. Uruchamianie analizy klatek na urządzeniach wypaczania nie jest blokowane — Windows Phone Emulator jest uruchamiany przy wypaczeniu — ale nie jest to zwykle wartościowa, ponieważ Wypaczenie działające na wysokim poziomie procesora jest wolniejsze niż nawet najbardziej obsługujące Nowoczesne procesory GPU i ponieważ wydajność ZNIEKSZTAŁCAnia może się różnić znacznie w zależności od konkretnego procesora, na którym jest uruchomiony.  
+ Analiza klatek ma służyć do profilowania i ulepszania wydajności renderowania na rzeczywistym sprzęcie. Uruchamianie analizy klatek na urządzeniach do wypaczania nie jest blokowane — emulator Windows Phone jest uruchamiany przy wypaczeniu — ale nie jest to zwykle wartościowa, ponieważ Wypaczenie działające na wysokim poziomie procesora jest wolniejsze niż nawet w przypadku nowoczesnych procesorów GPU, a ponieważ wydajność ZNIEKSZTAŁCAnia może się znacznie różnić w zależności od konkretnego procesora, na którym jest uruchomiony.  
   
 ### <a name="playback-of-high-feature-level-captures-on-down-level-devices"></a>Odtwarzanie przechwytywania wysokiej klasy na urządzeniach niższego poziomu  
  W analizatorze grafiki podczas odtwarzania pliku dziennika grafiki, który korzysta z wyższego poziomu funkcji niż obsługiwana przez maszynę odtwarzania, automatycznie wraca do wypaczenia. W analizie klatek jawnie nie wraca do OSNOWy i generuje błąd — Wypaczenie jest przydatne do sprawdzania poprawności aplikacji Direct3D, ale nie do badania jej wydajności.  
@@ -182,20 +182,20 @@ Użyj analiza klatek grafiki w analizator grafiki programu Visual Studio, aby pr
 > [!NOTE]
 > Dotyczy to tylko wywołań interfejsu API Direct3D, które są używane, a nie poziomów funkcji. O ile korzystasz z interfejsu API Direct3D 11, Direct3D 11,1 lub Direct3D 11,2, możesz użyć dowolnego poziomu funkcji, który chcesz, a analiza klatek będzie działać.  
   
-## <a name="Variants"></a>Variant  
- Każda zmiana, którą analiza klatek wprowadza do sposobu renderowania ramki podczas odtwarzania, jest znana jako *wariant*. Warianty, które analizuje analiza klatek, odpowiadają wspólnym, stosunkowo łatwym zmianom, które można zwiększyć w celu poprawy wydajności renderowania lub jakości wizualnej aplikacji — na przykład zmniejszenie rozmiaru tekstury, użycie kompresji tekstury lub włączenie różne rodzaje wygładzania. Warianty przesłaniają zwykły kontekst renderowania i parametry aplikacji. Oto podsumowanie:  
+## <a name="variants"></a><a name="Variants"></a> Variant  
+ Każda zmiana, którą analiza klatek wprowadza do sposobu renderowania ramki podczas odtwarzania, jest znana jako *wariant*. Warianty, które analizuje analiza klatek, odpowiadają wspólnym, stosunkowo łatwym zmianom, które można poprawić, aby zwiększyć wydajność renderowania lub jakość wizualną aplikacji — na przykład zmniejszenie rozmiaru tekstury, użycie kompresji tekstury lub włączenie różnych rodzajów wygładzania. Warianty przesłaniają zwykły kontekst renderowania i parametry aplikacji. Oto podsumowanie:  
   
-|Typu|Opis|  
+|Wariant|Opis|  
 |-------------|-----------------|  
 |**Rozmiar okienka ekranu 1x1**|Zmniejsza wymiary okienka ekranu dla wszystkich obiektów docelowych renderowania do 1x1 pikseli.<br /><br /> Aby uzyskać więcej informacji, zobacz [1x1a rozmiaru okienka ekranu](../debugger/1x1-viewport-size-variant.md)|  
 |**0x MSAA**|Wyłącza wiele próbkowania wygładzania (MSAA) na wszystkich celach renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz odmiany w liczbie [0x/2x/4X MSAA](../debugger/0x-2x-4x-msaa-variants.md)|  
 |**2. MSAA**|Włącza 2. wygładzanie wielobajtowe (MSAA) na wszystkich celach renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz odmiany w liczbie [0x/2x/4X MSAA](../debugger/0x-2x-4x-msaa-variants.md)|  
 |**MSAA 4x**|Włącza 4x dla wielobajtowego połączenia (MSAA) dla wszystkich obiektów docelowych renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz odmiany w liczbie [0x/2x/4X MSAA](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**Filtrowanie tekstury punktów**|Ustawia tryb filtrowania na `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtr tekstury punktów) dla wszystkich odpowiednich próbek tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [trójliniowego i różne warianty filtrowania tekstury anizotropowego](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtrowanie tekstury punktów**|Ustawia tryb filtrowania do `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtrowanie tekstury punktów) dla wszystkich odpowiednich próbek tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [trójliniowego i różne warianty filtrowania tekstury anizotropowego](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtrowanie tekstury liniowej**|Ustawia tryb filtrowania na `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtrowanie tekstury liniowej) dla wszystkich odpowiednich próbek tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [trójliniowego i różne warianty filtrowania tekstury anizotropowego](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtrowanie tekstury trójliniowego**|Ustawia tryb filtrowania na `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtrowanie tekstury trójliniowego) dla wszystkich odpowiednich próbek tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [trójliniowego i różne warianty filtrowania tekstury anizotropowego](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtrowanie tekstury anizotropowego**|Ustawia tryb filtrowania na `DXD11_FILTER_ANISOTROPIC` i `MaxAnisotropy` do `16` (filtr "16x anizotropowego Texture Filter") dla wszystkich odpowiednich próbek tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [trójliniowego i różne warianty filtrowania tekstury anizotropowego](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Format docelowy renderowania 16bpp**|Ustawia format pikseli na `DXGI_FORMAT_B5G6R5_UNORM` (format 565) dla wszystkich obiektów docelowych renderowania i buforów.<br /><br /> Aby uzyskać więcej informacji, zobacz [16Bpp format docelowy renderowania](../debugger/16bpp-render-target-format-variant.md)|  
+|**Filtrowanie tekstury trójliniowego**|Ustawia tryb filtrowania `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtrowanie tekstury trójliniowego) dla wszystkich odpowiednich próbek tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [trójliniowego i różne warianty filtrowania tekstury anizotropowego](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtrowanie tekstury anizotropowego**|Ustawia tryb filtrowania na `DXD11_FILTER_ANISOTROPIC` i `MaxAnisotropy` na (" `16` 16x anizotropowego Texture Filtering") dla wszystkich odpowiednich próbek tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [trójliniowego i różne warianty filtrowania tekstury anizotropowego](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Format docelowy renderowania 16bpp**|Ustawia format piksela na format `DXGI_FORMAT_B5G6R5_UNORM` (16bpp, 565) dla wszystkich obiektów docelowych renderowania i buforów.<br /><br /> Aby uzyskać więcej informacji, zobacz [16Bpp format docelowy renderowania](../debugger/16bpp-render-target-format-variant.md)|  
 |**MCI — Generowanie mapy**|Włączenie MCI — odwzorowuje wszystkie tekstury, które nie są obiektami docelowymi.<br /><br /> Aby uzyskać więcej informacji, zobacz [wariant generowania mapy MIP](../debugger/mip-map-generation-variant.md).|  
 |**Wymiary pół tekstury**|Zmniejsza wymiary tekstury dla wszystkich tekstur, które nie renderują obiektów docelowych do połowy rozmiaru oryginalnego w każdym wymiarze. Na przykład tekstura 256x128 jest zredukowana do 128x64 tekseli.<br /><br /> Aby uzyskać więcej informacji, zobacz [wymiar tekstury połówkowej/kwartalnej](../debugger/half-quarter-texture-dimensions-variant.md).|  
 |**Wymiary tekstury kwartału**|Zmniejsza wymiary tekstury dla wszystkich tekstur, które nie renderują obiektów docelowych do kwartału oryginalnego rozmiaru w każdym wymiarze. Na przykład tekstura 256x128 jest zredukowana do 64x32 tekseli.<br /><br /> Aby uzyskać więcej informacji, zobacz [wymiar tekstury połówkowej/kwartalnej](../debugger/half-quarter-texture-dimensions-variant.md).|  

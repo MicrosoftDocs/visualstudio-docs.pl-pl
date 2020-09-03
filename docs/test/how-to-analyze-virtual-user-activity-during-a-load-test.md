@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 64b69ba926e3c978efa60bd9946da94d846c383f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288406"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Instrukcje: analizowanie, co robią Użytkownicy wirtualną podczas testu obciążenia za pomocą wykresu aktywności wirtualnego użytkownika
@@ -51,7 +51,7 @@ W poniższych procedurach przedstawiono sposób wyświetlania **wykresu aktywno�
 
    - **Adres URL** (nie jest wyświetlany w teście lub transakcji)
 
-   - **Wynik**
+   - **Wynikiem**
 
    - **Przeglądarka** (nie jest wyświetlana w teście lub transakcji)
 
@@ -99,7 +99,7 @@ W poniższych procedurach przedstawiono sposób wyświetlania **wykresu aktywno�
    - **Pokaż wyniki z błędami** Wyświetla wyniki z błędami, które mogą pomóc w debugowaniu.
 
      > [!NOTE]
-     > Lista typów błędów, które są wymienione w węźle **Pokaż wyniki z błędami** , można dokładniej zbadać, wybierając przycisk **tabele** na pasku narzędzi **podglądu wyniki testów wydajności sieci Web** . Aby uzyskać więcej informacji, zobacz [Analizowanie wyników testów obciążenia i błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+     > Lista typów błędów, które są wymienione w węźle **Pokaż wyniki z błędami** , można dokładniej zbadać, wybierając przycisk **tabele** na pasku narzędzi **podglądu wyniki testów wydajności sieci Web** . Aby uzyskać więcej informacji, zobacz  [Analizowanie wyników testów obciążenia i błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
      **Wykres aktywności wirtualnego użytkownika** jest odpowiednio aktualizowany.
 

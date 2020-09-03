@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2b2cefc56d299c9ec917aea555aec1cd9ca53887
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288471"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Porady: dodawanie i usuwanie liczników na wykresach w wynikach testów obciążenia
@@ -34,7 +34,7 @@ Poniżej przedstawiono niektóre wskazówki dotyczące stawek próbek:
 
 |Czas trwania testu obciążenia|Zalecana częstotliwość próbkowania|
 |-|-----------------------------|
-|\<1 godzina|5 sekund|
+|\< 1 godzina|5 sekund|
 |1-8 godzin|15 sekund|
 |8-24 godzin|30 sekund|
 |> 24 godziny|60 sekund|
@@ -71,11 +71,11 @@ Aby uzyskać więcej informacji, zobacz [How to: Określ właściwość Storage 
 
 5. Aby usunąć dane licznika wydajności z grafu, kliknij prawym przyciskiem myszy licznik wydajności w kolumnie **licznik** legendy i wybierz polecenie **Usuń**.
 
-     \-oraz
+     \- oraz
 
      Kliknij prawym przyciskiem myszy wiersz danych na grafie i wybierz polecenie **Usuń**.
 
-     \-oraz
+     \- oraz
 
      Wybierz licznik wydajności w kolumnie **licznik** legendy lub wiersz danych na grafie, a następnie naciśnij klawisz **delete** .
 

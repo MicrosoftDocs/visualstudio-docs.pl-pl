@@ -12,10 +12,10 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 58529dabbb52ceb751c67be24beb1d21285a1de6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74301129"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Tworzenie pakietu Instalatora Windows
@@ -26,15 +26,15 @@ Dane są dyskami Instalator Windows modelem. Zamiast pisać skrypt proceduralny 
 ## <a name="database-entries"></a>Wpisy bazy danych  
  Aby zainstalować pakietu VSPackage, pakiet Instalator Windows musi zawierać wpisy bazy danych, aby wykonać następujące zadania:  
   
-- Przeszukaj system, aby zlokalizować wersje [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obsługiwane przez pakietu VSPackage (przy użyciu tabel Instalator Windows, które zawierają AppSearch, CompLocator, RegLocator, DrLocator i Signature).  
+- Przeszukaj system, aby zlokalizować wersje programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pakietu VSPackage (przy użyciu tabel Instalator Windows zawierających AppSearch, CompLocator, RegLocator, DrLocator i Signature).  
   
-- Anuluj instalację, jeśli nie jest zainstalowana żadna obsługiwana wersja programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] lub jeśli nie jest spełnione inne wymaganie systemowe pakietu VSPackage (za pomocą tabeli LaunchCondition).  
+- Jeśli nie zainstalowano żadnej obsługiwanej wersji programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] lub nie jest spełnione inne wymaganie systemowe pakietu VSPackage (za pomocą tabeli LaunchCondition), Anuluj instalację.  
   
 - Zainstaluj pliki pakietu VSPackage i zależne (przy użyciu katalogu, składnika i tabel plików).  
   
 - Dodaj odpowiednie informacje dotyczące pakietu VSPackage do rejestru (przy użyciu tabeli rejestru).  
   
-- Zintegruj pakietu VSPackage w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], wywołując **devenv. exe/setup** (za pomocą tabeli GetProcAddress).  
+- Zintegruj pakietu VSPackage w programie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , wywołując **devenv.exe/Setup** (przy użyciu tabeli GetProcAddress).  
   
   Aby uzyskać więcej informacji, zobacz [Instalator Windows](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
   
@@ -47,9 +47,9 @@ Dane są dyskami Instalator Windows modelem. Zamiast pisać skrypt proceduralny 
   
 - Zestaw narzędzi XML Instalatora Windows  
   
-   Zestaw narzędzi kompiluje pakiety Instalator Windows ze źródłowych plików XML. Zestaw narzędzi jest projektem typu open source firmy Microsoft. Kod źródłowy i pliki wykonywalne można pobrać z [http://sourceforge.net/projects/wix](https://sourceforge.net/projects/wix/).  
+   Zestaw narzędzi kompiluje pakiety Instalator Windows ze źródłowych plików XML. Zestaw narzędzi jest projektem typu open source firmy Microsoft. Kod źródłowy i pliki wykonywalne można pobrać z programu [http://sourceforge.net/projects/wix](https://sourceforge.net/projects/wix/) .  
   
-  W przypadku produktów komercyjnych, które integrują się z [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] przy użyciu [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], zobacz [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/).  
+  Aby uzyskać komercyjne produkty, które integrują się z [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usługą [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] , zobacz [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/) .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

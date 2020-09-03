@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION | Dokumenty firmy Microsoft
+title: BP_LOCATION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c98fde516a3e836302cd7eb2c73abd730d5cc8c5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737930"
 ---
 # <a name="bp_location"></a>BP_LOCATION
-Określa typ struktury używanej do opisywania lokalizacji punktu przerwania.
+Określa typ struktury używany do opisywania lokalizacji punktu przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -55,58 +55,58 @@ public struct BP_LOCATION {
 
 ## <a name="members"></a>Elementy członkowskie
 `bpLocationType`\
-Wartość z [wyliczenia BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) używane do interpretacji `bpLocation` unii `unionmemberX` lub członków.
+Wartość z wyliczenia [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) używanego do interpretacji `bpLocation` Unii lub `unionmemberX` członków.
 
 `bpLocation`.`bplocCodeFileLine`\
-[Tylko C++] Zawiera [strukturę BP_LOCATION_CODE_FILE_LINE,](../../../extensibility/debugger/reference/bp-location-code-file-line.md) `bpLocationType`  =  `BPLT_CODE_FILE_LINE`jeśli .
+[Tylko C++] Zawiera strukturę [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) , jeśli `bpLocationType`  =  `BPLT_CODE_FILE_LINE` .
 
 `bpLocation.bplocCodeFuncOffset`\
-[Tylko C++] Zawiera [strukturę BP_LOCATION_CODE_FUNC_OFFSET,](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`jeśli .
+[Tylko C++] Zawiera strukturę [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) , jeśli `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET` .
 
 `bpLocation.bplocCodeContext`\
-[Tylko C++] Zawiera [strukturę BP_LOCATION_CODE_CONTEXT,](../../../extensibility/debugger/reference/bp-location-code-context.md) `bpLocationType`  =  `BPLT_CODE_CONTEXT`jeśli .
+[Tylko C++] Zawiera strukturę [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) , jeśli `bpLocationType`  =  `BPLT_CODE_CONTEXT` .
 
 `bpLocation.bplocCodeString`\
-[Tylko C++] Zawiera [strukturę BP_LOCATION_CODE_STRING,](../../../extensibility/debugger/reference/bp-location-code-string.md) `bpLocationType`  =  `BPLT_CODE_STRING`jeśli .
+[Tylko C++] Zawiera strukturę [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) , jeśli `bpLocationType`  =  `BPLT_CODE_STRING` .
 
 `bpLocation.bplocCodeAddress`\
-[Tylko C++] Zawiera [strukturę BP_LOCATION_CODE_ADDRESS,](../../../extensibility/debugger/reference/bp-location-code-address.md) `bpLocationType`  =  `BPLT_CODE_ADDRESS`jeśli .
+[Tylko C++] Zawiera strukturę [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) , jeśli `bpLocationType`  =  `BPLT_CODE_ADDRESS` .
 
 `bpLocation.bplocDataString`\
-[Tylko C++] Zawiera [strukturę BP_LOCATION_DATA_STRING,](../../../extensibility/debugger/reference/bp-location-data-string.md) `bpLocationType`  =  `BPLT_DATA_STRING`jeśli .
+[Tylko C++] Zawiera strukturę [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) , jeśli `bpLocationType`  =  `BPLT_DATA_STRING` .
 
 `bpLocation.bplocResolution`\
-[Tylko C++] Zawiera [strukturę BP_LOCATION_RESOLUTION,](../../../extensibility/debugger/reference/bp-location-resolution.md) jeśli `bpLocationType`  =  `BPLT_RESOLUTION`.
+[Tylko C++] Zawiera strukturę [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) , jeśli `bpLocationType`  =  `BPLT_RESOLUTION` .
 
 `unionmember1`\
-[Tylko C#] Zobacz Uwagi dotyczące interpretacji.
+[Tylko w C#] Zobacz uwagi dotyczące sposobu interpretacji.
 
 `unionmember2`\
-[Tylko C#] Zobacz Uwagi dotyczące interpretacji.
+[Tylko w C#] Zobacz uwagi dotyczące sposobu interpretacji.
 
 `unionmember3`\
-[Tylko C#] Zobacz Uwagi dotyczące interpretacji.
+[Tylko w C#] Zobacz uwagi dotyczące sposobu interpretacji.
 
 `unionmember4`\
-[Tylko C#] Zobacz Uwagi dotyczące interpretacji.
+[Tylko w C#] Zobacz uwagi dotyczące sposobu interpretacji.
 
 ## <a name="remarks"></a>Uwagi
-Struktura ta jest członkiem [struktur BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
+Ta struktura jest elementem członkowskim struktur [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
- [Tylko C#] Elementy `unionmemberX` członkowskie są interpretowane zgodnie z poniższą tabelą. Spójrz w dół lewej `bpLocationType` kolumny dla wartości, a następnie `unionmemberX` spojrzeć na `unionmemberX` inne kolumny, aby określić, co każdy element członkowski reprezentuje i marshal odpowiednio. Zobacz przykład, aby dokonywać interpretacji części tej struktury w języku C#.
+ [Tylko w C#] `unionmemberX` Elementy członkowskie są interpretowane zgodnie z poniższą tabelą. Wyszukaj w lewej kolumnie `bpLocationType` wartość, a następnie poszukaj innych kolumn, aby określić, co każdy `unionmemberX` element członkowski reprezentuje i `unionmemberX` odpowiednio zorganizować. Zobacz przykład, aby poznać sposób interpretacji części tej struktury w języku C#.
 
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|
 |----------------------|--------------------|--------------------|--------------------|--------------------|
-|`BPLT_CODE_FILE_LINE`|`string`(kontekst)|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|-|-|
-|`BPLT_CODE_FUNC_OFFSET`|`string`(kontekst)|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|-|-|
+|`BPLT_CODE_FILE_LINE`|`string` (kontekst)|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|-|-|
+|`BPLT_CODE_FUNC_OFFSET`|`string` (kontekst)|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|-|-|
 |`BPLT_CODE_CONTEXT`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|
-|`BPLT_CODE_STRING`|`string`(kontekst)|`string`(wyrażenie warunkowe)|-|-|
-|`BPLT_CODE_ADDRESS`|`string`(kontekst)|`string`(adres URL modułu)|`string`(nazwa funkcji)|`string`(adres)|
-|`BPLT_DATA_STRING`|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|`string`(kontekst)|`string`(wyrażenie danych)|`uint`(liczba elementów)|
+|`BPLT_CODE_STRING`|`string` (kontekst)|`string` (wyrażenie warunkowe)|-|-|
+|`BPLT_CODE_ADDRESS`|`string` (kontekst)|`string` (adres URL modułu)|`string` (nazwa funkcji)|`string` Ulica|
+|`BPLT_DATA_STRING`|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|`string` (kontekst)|`string` (wyrażenie danych)|`uint` (liczba elementów)|
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|
 
 ## <a name="example"></a>Przykład
-W tym przykładzie `BP_LOCATION` pokazano, jak interpretować strukturę w języku C# dla `BPLT_DATA_STRING` typu. Ten konkretny typ pokazuje, `unionmemberX` jak interpretować wszystkie cztery elementy członkowskie we wszystkich możliwych formatach (obiekt, ciąg i liczba).
+Ten przykład pokazuje, jak interpretować `BP_LOCATION` strukturę w języku C# dla `BPLT_DATA_STRING` typu. Ten konkretny typ pokazuje, jak interpretować wszystkie cztery `unionmemberX` elementy członkowskie we wszystkich możliwych formatach (Object, String i Number).
 
 ```csharp
 using System;
@@ -132,9 +132,9 @@ namespace MyPackage
 ```
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

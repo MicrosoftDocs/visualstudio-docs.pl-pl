@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ea3fe0027827396a49eec4c6b245a9ea59652b7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114898"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generowanie i konfigurowanie aplikacji na podstawie modeli
@@ -37,7 +37,7 @@ Można generować lub konfigurować części aplikacji z modelu.
 ## <a name="configuring-your-application-from-a-model"></a>Konfigurowanie aplikacji z modelu
  Jeśli chcesz zmienić zachowanie aplikacji w czasie wykonywania, nie możesz użyć generowania kodu, który generuje kod źródłowy przed skompilowaniem aplikacji. Zamiast tego można zaprojektować aplikację w celu odczytania modelu i odpowiednio zmienić jej zachowanie. Aby uzyskać więcej informacji, zobacz:
 
-- [Instrukcje: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Porady: otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
   Ta metoda może być również stosowana przyrostowo, ale na początku występuje więcej pracy. Należy napisać kod, który będzie odczytywać model, i skonfigurować platformę, która umożliwia dostęp do elementów zmiennych. Tworzenie części zmiennych ogólnych jest droższe niż generowanie kodu.
 
@@ -70,8 +70,8 @@ Można generować lub konfigurować części aplikacji z modelu.
 
      Na przykład Diagram klas UML jest kolekcją pól i strzałek; za pomocą tej notacji można określić wszystko. Nie zaleca się jednak używania diagramu klas, z wyjątkiem sytuacji, w których fakt opisywania zestawu typów. Na przykład można dostosować diagramy klas do opisywania różnych typów stron sieci Web.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)
-- [Instrukcje: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Porady: otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

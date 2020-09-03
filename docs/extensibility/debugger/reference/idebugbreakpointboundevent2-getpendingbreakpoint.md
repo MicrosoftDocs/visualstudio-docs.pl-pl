@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointBoundEvent2::GetPendingBreakpoint | Dokumenty firmy Microsoft
+title: 'IDebugBreakpointBoundEvent2:: GetPendingBreakpoint | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 85c137445e2255a76f7fa3be2fb56e2579e578c6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735254"
 ---
 # <a name="idebugbreakpointboundevent2getpendingbreakpoint"></a>IDebugBreakpointBoundEvent2::GetPendingBreakpoint
-Pobiera oczekujących punktu przerwania, który jest powiązany.
+Pobiera oczekujący punkt przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,13 +41,13 @@ int GetPendingBreakpoint(
 
 ## <a name="parameters"></a>Parametry
 `ppPendingBP`\
-[na zewnątrz] Zwraca [obiekt IDebugPendingBreakpoint2,](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) który reprezentuje oczekujący punkt przerwania jest powiązany.
+określoną Zwraca obiekt [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) reprezentujący oczekujący punkt przerwania.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CBreakpointSetDebugEventBase,** który udostępnia interfejs [IDebugBreakpointBoundEvent2.](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CBreakpointSetDebugEventBase** , który uwidacznia Interfejs [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) .
 
 ```cpp
 STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(

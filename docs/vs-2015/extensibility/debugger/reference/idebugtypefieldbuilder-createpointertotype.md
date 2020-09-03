@@ -1,5 +1,5 @@
 ---
-title: IDebugTypeFieldBuilder::CreatePointerToType | Dokumentacja firmy Microsoft
+title: 'IDebugTypeFieldBuilder:: CreatePointerToType | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: af549b9b5bb7c70ab8ae9e685c9335836ae757ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202287"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
@@ -41,13 +41,13 @@ int CreatePointerToType(
   
 #### <a name="parameters"></a>Parametry  
  `pTypeField`  
- [in] Wpisz, aby wskazać. Jest reprezentowany przez [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejsu.  
+ podczas Wpisz, aby wskazać. Jest reprezentowany przez interfejs [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .  
   
  `pPtrToTypeField`  
- [out] Zwraca wskaźnik, reprezentowane przez nowy **IDebugField** obiektu.  
+ określoną Zwraca wskaźnik reprezentowany przez nowy obiekt **IDebugField** .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)

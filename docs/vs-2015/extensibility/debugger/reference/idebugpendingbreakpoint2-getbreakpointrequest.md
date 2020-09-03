@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::GetBreakpointRequest | Dokumentacja firmy Microsoft
+title: 'IDebugPendingBreakpoint2:: GetBreakpointRequest | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 50f4c2f2e0358819683fff281898278c7096327b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201065"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera żądanie przerwania, który został użyty do utworzenia tego oczekujący punkt przerwania.  
+Pobiera żądanie punktu przerwania, które zostało użyte do utworzenia tego oczekującego punktu przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,10 +41,10 @@ int GetBreakpointRequest( 
   
 #### <a name="parameters"></a>Parametry  
  `ppBPRequest`  
- [out] Zwraca [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) obiekt reprezentujący żądania punktu przerwania, który został użyty do utworzenia tego oczekujących punktów przerwania.  
+ określoną Zwraca obiekt [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) reprezentujący żądanie punktu przerwania, który został użyty do utworzenia tego oczekującego punktu przerwania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli punkt przerwania został usunięty.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` czy punkt przerwania został usunięty.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

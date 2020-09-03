@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_CODE | Dokumenty firmy Microsoft
+title: BP_RESOLUTION_CODE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fbfd16025d338b54bec8e2e4276de62c8d00477e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737858"
 ---
 # <a name="bp_resolution_code"></a>BP_RESOLUTION_CODE
@@ -41,15 +41,15 @@ public struct BP_RESOLUTION_CODE {
 
 ## <a name="members"></a>Elementy członkowskie
 `pCodeContext`\
-[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który identyfikuje położenie punktu przerwania w kodzie.
+Obiekt [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , który identyfikuje położenie punktu przerwania w kodzie.
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest członkiem [struktury BP_RESOLUTION_LOCATION,](../../../extensibility/debugger/reference/bp-resolution-location.md) która z kolei jest członkiem [struktury BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) zwracana przez [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) metody.
+Ta struktura jest składową struktury [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) , która jest z kolei członkiem struktury [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) zwróconej przez metodę [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

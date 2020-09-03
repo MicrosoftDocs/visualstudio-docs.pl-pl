@@ -1,7 +1,7 @@
 ---
-title: Obciążenie i identyfikatory składników kontrolera testów programu Visual Studio 2017
+title: Pakiety i identyfikatory składników programu Visual Studio Test Controller 2017
 titleSuffix: ''
-description: Dystrybucja automatycznych testów na wielu komputerach za pomocą obciążenia i identyfikatorów składników programu Visual Studio
+description: Używanie obciążeń i identyfikatorów składników programu Visual Studio do dystrybuowania automatycznych testów do wielu maszyn
 keywords: ''
 author: ornellaalt
 ms.author: ornella
@@ -11,28 +11,28 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: fa0b776cd2f99ec2a5b648cdcad16fe046bf570d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76159537"
 ---
-## <a name="test-controller"></a>Kontroler testowy
+## <a name="test-controller"></a>Test Controller
 
-**Identyfikator:** Kontroler Microsoft.VisualStudio.Workload.TestController
+**Identyfikator:** Microsoft. VisualStudio. obciążeni. TestController
 
-**Opis:** Dystrybucja zautomatyzowanych testów na wiele maszyn
+**Opis:** Rozpowszechnianie zautomatyzowanych testów na wielu maszynach
 
-### <a name="components-included-by-this-workload"></a>Składniki objęte tym obciążeniem
+### <a name="components-included-by-this-workload"></a>Składniki zawarte w tym obciążeniu
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Podstawowe funkcje kontrolera testów | 15.6.27309.0 | Wymagany
+Microsoft. VisualStudio. Component. TestTools. TestController | Podstawowe funkcje Test Controller | 15.6.27309.0 | Wymagane
 
-## <a name="unaffiliated-components"></a>Składniki niepowiązane
+## <a name="unaffiliated-components"></a>Niestowarzyszone składniki
 
-Są to składniki, które nie są dołączone do żadnego obciążenia, ale mogą być wybrane jako pojedynczy składnik.
+Są to składniki, które nie są uwzględnione w obciążeniu, ale mogą być wybierane jako poszczególne składniki.
 
 Identyfikator składnika | Nazwa | Wersja
 --- | --- | ---
-Nie dotyczy | Nie dotyczy | Nie dotyczy
+nie dotyczy | nie dotyczy | nie dotyczy

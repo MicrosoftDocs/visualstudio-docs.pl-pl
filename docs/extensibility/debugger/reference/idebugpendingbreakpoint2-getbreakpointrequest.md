@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::GetBreakpointRequest | Dokumenty firmy Microsoft
+title: 'IDebugPendingBreakpoint2:: GetBreakpointRequest | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5440db69a3ceb763fb3e64e07d04a1e4f67f822a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725816"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
-Pobiera żądanie punktu przerwania, który został użyty do utworzenia tego oczekującego punktu przerwania.
+Pobiera żądanie punktu przerwania, które zostało użyte do utworzenia tego oczekującego punktu przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,10 +42,10 @@ int GetBreakpointRequest( 
 
 ## <a name="parameters"></a>Parametry
 `ppBPRequest`\
-[na zewnątrz] Zwraca obiekt [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) reprezentujący żądanie punktu przerwania, które zostało użyte do utworzenia tego oczekującego punktu przerwania.
+określoną Zwraca obiekt [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) reprezentujący żądanie punktu przerwania, który został użyty do utworzenia tego oczekującego punktu przerwania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` wartość, jeśli punkt przerwania został usunięty.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` czy punkt przerwania został usunięty.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

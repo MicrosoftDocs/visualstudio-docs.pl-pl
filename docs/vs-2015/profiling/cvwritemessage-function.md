@@ -1,5 +1,5 @@
 ---
-title: Funkcja CvWriteMessage | Dokumentacja firmy Microsoft
+title: Funkcja CvWriteMessage | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,16 +28,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f6a364498306758f8c2f01de741aed50166cc8f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202238"
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage — Funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zapisuje komunikat do pliku śledzenia w Wizualizatorze współbieżności.  
+Zapisuje komunikat do pliku śledzenia Concurrency Visualizer.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -106,20 +106,20 @@ HRESULT CvWriteMessageExVA(
  Poziom ważności zakresu.  
   
  `pMarkerSeries`  
- Kontekst serii prawidłowe znacznika. Nie może mieć wartości NULL.  
+ Prawidłowy kontekst serii znaczników. Nie może mieć wartości NULL.  
   
  `pMessage`  
- Ciąg formatu komunikatów. Nie może mieć wartości NULL.  
+ Ciąg formatu komunikatu. Nie może mieć wartości NULL.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- S_OK, gdy komunikat jest pomyślnie zapisane. Kod błędu w przypadku, gdy było żadnych błędów. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.  
+ S_OK, gdy komunikat został pomyślnie zapisany. Kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkers.h  
+ **Nagłówek:** cvmarkers. h  
   
- **Unicode:** Cvwritemessagew —, cvwritemessageexvw — cvwritemessagevw —, cvwritemessageexw —,  
+ **Unicode:** CvWriteMessageW, CvWriteMessageVW, CvWriteMessageExW, CvWriteMessageExVW  
   
  **ANSI:** CvWriteMessageA, CvWriteMessageVA, CvWriteMessageExA, CvWriteMessageExVA  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+ [Dokumentacja biblioteki C++](../profiling/cpp-library-reference.md)

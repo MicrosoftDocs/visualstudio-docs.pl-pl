@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115197"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Obliczone i niestandardowe właściwości przechowywania
@@ -25,8 +25,8 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
 |Rodzaj właściwości domeny|Opis|
 |-|-|
 |**Standardowa** (domyślnie)|Właściwość domeny, która jest zapisywana w *magazynie* i serializowana do pliku.|
-|**Oblicza**|Właściwość domeny tylko do odczytu, która nie jest zapisywana w sklepie, ale jest obliczana na podstawie innych wartości.<br /><br /> Na przykład `Person.Age` można obliczyć z `Person.BirthDate`.<br /><br /> Musisz podać kod, który wykonuje obliczenia. Zwykle oblicza się wartość z innych właściwości domeny. Można jednak również używać zasobów zewnętrznych.|
-|**Magazyn niestandardowy**|Właściwość domeny, która nie jest zapisywana bezpośrednio w magazynie, ale może być zarówno Get, jak i Set.<br /><br /> Musisz podać metody pobierające i ustawiające wartość.<br /><br /> Na przykład `Person.FullAddress` mogą być przechowywane w `Person.StreetAddress`, `Person.City`i `Person.PostalCode`.<br /><br /> Możesz również uzyskać dostęp do zasobów zewnętrznych, na przykład w celu pobrania i ustawienia wartości z bazy danych.<br /><br /> Kod nie powinien określać wartości w magazynie, gdy `Store.InUndoRedoOrRollback` ma wartość true. Zobacz [transakcje i niestandardowe metody ustawiające](#setters).|
+|**Obliczeniowy**|Właściwość domeny tylko do odczytu, która nie jest zapisywana w sklepie, ale jest obliczana na podstawie innych wartości.<br /><br /> Na przykład `Person.Age` można obliczyć z `Person.BirthDate` .<br /><br /> Musisz podać kod, który wykonuje obliczenia. Zwykle oblicza się wartość z innych właściwości domeny. Można jednak również używać zasobów zewnętrznych.|
+|**Magazyn niestandardowy**|Właściwość domeny, która nie jest zapisywana bezpośrednio w magazynie, ale może być zarówno Get, jak i Set.<br /><br /> Musisz podać metody pobierające i ustawiające wartość.<br /><br /> Na przykład `Person.FullAddress` może być przechowywana w `Person.StreetAddress` , `Person.City` , i `Person.PostalCode` .<br /><br /> Możesz również uzyskać dostęp do zasobów zewnętrznych, na przykład w celu pobrania i ustawienia wartości z bazy danych.<br /><br /> Kod nie powinien określać wartości w magazynie, gdy `Store.InUndoRedoOrRollback` ma wartość true. Zobacz [transakcje i niestandardowe metody ustawiające](#setters).|
 
 ## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Dostarczanie kodu dla właściwości magazynu obliczeniowego lub niestandardowego
  W przypadku ustawienia rodzaju właściwości domeny na obliczeniową lub niestandardową magazyn należy zapewnić metody dostępu. Podczas kompilowania rozwiązania raport o błędach informuje o tym, co jest wymagane.
@@ -41,7 +41,7 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
 
 3. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi **Eksplorator rozwiązań**.
 
-4. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+4. W menu **Kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
      Zostanie wyświetlony następujący komunikat o błędzie: "*YourClass* nie zawiera definicji dla get*YourProperty*".
 
@@ -52,11 +52,11 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
     > [!NOTE]
     > Ten plik jest generowany z DslDefinition. DSL. Jeśli edytujesz ten plik, zmiany zostaną utracone przy następnym kliknięciu pozycji **Przekształć wszystkie szablony**. Zamiast tego należy dodać wymaganą metodę w oddzielnym pliku.
 
-6. Utwórz lub Otwórz plik klasy w oddzielnym folderze, na przykład atrybut CustomCode\\*YourDomainClass*. cs.
+6. Utwórz lub Otwórz plik klasy w oddzielnym folderze, na przykład atrybut CustomCode \\ *YourDomainClass*. cs.
 
      Upewnij się, że przestrzeń nazw jest taka sama jak w wygenerowanym kodzie.
 
-7. W pliku klasy Napisz częściową implementację klasy domeny. W klasie Napisz definicję dla brakującej metody `Get` podobnej do poniższego przykładu:
+7. W pliku klasy Napisz częściową implementację klasy domeny. W klasie Napisz definicję brakującej `Get` metody podobnej do poniższego przykładu:
 
     ```
     namespace Company.FamilyTree
@@ -66,7 +66,7 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
     }  }
     ```
 
-8. W przypadku ustawienia **rodzaju** na **Magazyn niestandardowy**należy również podać metodę `Set`. Na przykład:
+8. W przypadku ustawienia **rodzaju** na **Magazyn niestandardowy**należy również podać `Set` metodę. Na przykład:
 
     ```
     void SetAgeValue(int value)
@@ -81,7 +81,7 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
 
 10. Przetestuj właściwość. Upewnij się, że próbujesz **cofnąć** i **ponownie**wykonać operację.
 
-## <a name="setters"></a>Transakcje i niestandardowe metody ustawiające
+## <a name="transactions-and-custom-setters"></a><a name="setters"></a> Transakcje i niestandardowe metody ustawiające
  W metodzie Set niestandardowej właściwości magazynu nie trzeba otwierać transakcji, ponieważ metoda jest zwykle wywoływana wewnątrz aktywnej transakcji.
 
  Jednak Metoda set może być również wywoływana, jeśli użytkownik wywołuje polecenie Cofnij lub Ponów, lub jeśli transakcja jest wycofywana. Gdy <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> ma wartość true, Metoda Set powinna zachowywać się w następujący sposób:
@@ -107,7 +107,7 @@ void SetAgeValue(int value)
 
  Aby uzyskać więcej informacji na temat transakcji, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Właściwości właściwości domeny](../modeling/properties-of-domain-properties.md)

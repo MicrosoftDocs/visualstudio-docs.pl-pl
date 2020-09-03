@@ -14,10 +14,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532239"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Przewodnik: tworzenie niestandardowego procesora dyrektywy
@@ -601,7 +601,7 @@ End Property
 
 4. W przypadku tylko Visual Basic Otwórz menu **projekt** , a następnie kliknij pozycję **Właściwości CustomDP**. Na karcie **aplikacja** w **obszarze główny obszar nazw**usuń wartość domyślną `CustomDP` .
 
-5. W menu **plik** kliknij polecenie **Zapisz wszystko**.
+5. W menu **File** kliknij pozycję **Save All**.
 
 6. W menu **Kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 

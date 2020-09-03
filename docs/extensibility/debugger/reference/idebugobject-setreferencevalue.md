@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetReferenceValue | Dokumenty firmy Microsoft
+title: 'IDebugObject:: SetReferenceValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cc0db8ee7f0581a4c336111d3876c24f0e5c12d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726381"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
@@ -41,13 +41,13 @@ int SetReferenceValue(
 
 ## <a name="parameters"></a>Parametry
 `pObject`\
-[w] [Obiekt IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący nową wartość referencyjną.
+podczas Obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący nową wartość referencyjną.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda sprawia, że ten [obiekt IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) odwołanie `pObject` do wartości obiektu podane w parametrze, wyrzucając wszelkie poprzednie odwołanie. Należy zauważyć, że ten `IDebugObject` obiekt musi być już typem odwołania.
+ Ta metoda sprawia, że obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) odwołuje się do wartości obiektu podaną w `pObject` parametrze, zwracając wszystkie poprzednie odwołanie. Należy pamiętać, że ten `IDebugObject` obiekt musi już być typem referencyjnym.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

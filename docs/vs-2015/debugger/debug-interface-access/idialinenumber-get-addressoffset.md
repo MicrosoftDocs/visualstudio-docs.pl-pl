@@ -1,5 +1,5 @@
 ---
-title: Idialinenumber::get_addressoffset — | Dokumentacja firmy Microsoft
+title: 'IDiaLineNumber:: get_addressOffset | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 47e98a9052b682b7127aa3218809a3002624e361
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203600"
 ---
-# <a name="idialinenumbergetaddressoffset"></a>IDiaLineNumber::get_addressOffset
+# <a name="idialinenumberget_addressoffset"></a>IDiaLineNumber::get_addressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera przesunięcia część adresu pamięci, gdzie rozpoczyna się w bloku.  
+Pobiera część przesunięcia adresu pamięci, w której rozpoczyna się blok.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,10 +35,10 @@ HRESULT get_addressOffset ( 
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca przesunięcia częściami składowymi adresu pamięci, gdzie rozpoczyna się w bloku.  
+ określoną Zwraca część przesunięcia adresu pamięci, w której rozpoczyna się blok.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
   
@@ -49,5 +49,5 @@ pLine->get_addressOffset( &offset);
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idialinenumber —](../../debugger/debug-interface-access/idialinenumber.md)   
+ [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)

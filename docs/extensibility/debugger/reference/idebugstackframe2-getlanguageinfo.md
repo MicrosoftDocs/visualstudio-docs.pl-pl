@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetLanguageInfo | Dokumenty firmy Microsoft
+title: 'IDebugStackFrame2:: GetLanguageInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cefb4bdd9d0c85311c63e6a988956301a6c2cc14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719703"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 
-Pobiera język skojarzony z tej ramki stosu.
+Pobiera język skojarzony z tą ramką stosu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,10 +45,10 @@ int GetLanguageInfo ( 
 ## <a name="parameters"></a>Parametry
 
 `pbstrLanguage`\
-[na zewnątrz] Zwraca nazwę języka, który implementuje metodę skojarzoną z tą ramką stosu.
+określoną Zwraca nazwę języka implementującego metodę skojarzoną z tą ramką stosu.
 
 `pguidLanguage`\
-[na zewnątrz] `GUID` Zwraca język. Na [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] przykład w przypadku języków można zwrócić następujące elementy:
+określoną Zwraca wartość `GUID` języka. Na [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] przykład dla języków można zwrócić następujące elementy:
 
 - `guidVBScriptLang`\
 
@@ -64,7 +64,7 @@ int GetLanguageInfo ( 
 
 ## <a name="return-value"></a>Wartość zwracana
 
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 

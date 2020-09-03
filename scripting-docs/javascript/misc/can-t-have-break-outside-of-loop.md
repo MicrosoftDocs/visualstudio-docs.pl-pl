@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0959bad452d3b24ca1475b66e37fbdab1e9c3e7f
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817661"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>Instrukcja „break" nie może występować poza pętlą
@@ -34,7 +34,7 @@ break labelname;
   
 - Upewnij się, że słowo kluczowe **Break** pojawia się wewnątrz otaczającej pętli lub instrukcji switch.  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Break, instrukcja](../../javascript/reference/break-statement-javascript.md)   
  [Sterowanie przepływem programu](../../javascript/controlling-program-flow-javascript.md)   
  [Rozwiązywanie problemów ze skryptami](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

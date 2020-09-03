@@ -1,5 +1,5 @@
 ---
-title: Okno Eksploratora wydajności | Dokumenty firmy Microsoft
+title: Okno Eksplorator wydajności | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,44 +14,44 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a365892f606da90c608e43b7ccce73b902ec0e98
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772442"
 ---
 # <a name="performance-explorer-window"></a>Okno Eksploratora wydajności
 
-Okno **Eksplorator wydajności** w programie Visual Studio IDE umożliwia konfigurowanie i uruchamianie sesji wydajności przy użyciu narzędzi do profilowania programu Visual Studio. Jeśli chcesz otworzyć okno, postępuj zgodnie z instrukcjami w [Przewodnik dla początkujących do profilowania wydajności](../profiling/beginners-guide-to-cpu-sampling.md).
+Okno **Eksplorator wydajności** w środowisku IDE programu Visual Studio umożliwia konfigurowanie i uruchamianie sesji wydajności przy użyciu narzędzia profilowania programu Visual Studio. Jeśli musisz otworzyć okno, postępuj zgodnie z instrukcjami w [przewodniku początkujących, aby przeprowadzić profilowanie wydajności](../profiling/beginners-guide-to-cpu-sampling.md).
 
-## <a name="performance-explorer-toolbar"></a>Pasek narzędzi Eksploratora wydajności
+## <a name="performance-explorer-toolbar"></a>Eksplorator wydajności pasek narzędzi
 
-Na pasku narzędzi **Eksploratora wydajności** dostępne są następujące opcje:
+Na pasku narzędzi **Eksplorator wydajności** są dostępne następujące opcje:
 
-- **Uruchom Kreatora wydajności** — wyświetla Kreatora wydajności w celu dodania nowej sesji wydajności do okna Eksploratora wydajności.
+- **Uruchom Kreatora wydajności** — wyświetla Kreatora wydajności, aby dodać nową sesję wydajności do okna Eksplorator wydajności.
 
-- **Nowa sesja wydajności** — dodaje pustą sesję wydajności do okna Eksploratora wydajności.
+- **Nowa sesja wydajności** — dodaje pustą sesję wydajności do okna Eksplorator wydajności.
 
-- **Uruchom** - **Uruchom** listę przycisków polecenia umożliwia uruchomienie aplikacji docelowej, która ma profilowanie natychmiast włączone **(Uruchom z profilowania)** lub profilowania zawieszone **(Uruchom z profilowania wstrzymane).**
+- **Uruchom** — lista przycisków poleceń **uruchamiania** umożliwia uruchomienie aplikacji docelowej, która ma natychmiastowe włączenie profilowania (**Uruchom z profilowania**) lub profilowanie zawieszone (**Uruchom z wstrzymanym profilem**).
 
-- **Metoda** — określa, czy metoda profilowania sesji jest próbkowanie lub instrumentacji.
+- **Metoda** — określa, czy metoda profilowania sesji jest próbką lub Instrumentacją.
 
-- **Zatrzymaj** — natychmiast kończy działanie aplikacji docelowej i profilera.
+- **Zatrzymaj** — natychmiast zamyka aplikację docelową i Profiler.
 
-- **Dołącz/Odłącz** — wyświetla okno dialogowe **Dołączanie profilera do procesu,** aby wybrać uruchomiony proces, do którego ma być dołączany profiler.
+- **Dołącz/Odłącz** — wyświetla okno dialogowe **Dołącz profiler do procesu** , aby wybrać uruchomiony proces, do którego ma zostać dołączony Profiler.
 
 ## <a name="performance-explorer-window"></a>Okno Eksploratora wydajności
 
-Okno **Eksplorator wydajności** zawiera formant drzewa, który wyświetla pliki binarne i pliki danych raportu jednej lub więcej sesji wydajności.
+Okno **Eksplorator wydajności** zawiera kontrolkę drzewa, która wyświetla pliki binarne i dane raportów z co najmniej jednej sesji wydajności.
 
-- **Nazwa sesji** — katalog główny formantu drzewa zawiera nazwę sesji. Kliknij prawym przyciskiem myszy nazwę sesji, aby ustawić właściwości sesji lub uruchomić aplikację docelową i profiler.
+- **Nazwa sesji** — katalog główny kontrolki drzewa zawiera nazwę sesji. Kliknij prawym przyciskiem myszy nazwę sesji, aby ustawić właściwości sesji lub uruchomić aplikację docelową oraz Profiler.
 
-- **Obiekty docelowe** — wyświetla nazwy plików binarnych, które mają być profilowane w sesji. Kliknij prawym przyciskiem myszy pozycję [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **Obiekty docelowe,** aby dodać lub usunąć plik binarny, projekt lub witrynę sieci Web. Kliknij prawym przyciskiem myszy nazwę obiektu docelowego, aby ustawić właściwości dla poszczególnych plików binarnych.
+- **Elementy docelowe** — wyświetla nazwy plików binarnych, które mają być profilowane w sesji. Kliknij prawym przyciskiem myszy **obiekt docelowy** , aby dodać lub usunąć plik binarny, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projekt lub witrynę sieci Web. Kliknij prawym przyciskiem myszy nazwę docelową, aby ustawić właściwości dla poszczególnych plików binarnych.
 
-- **Raporty** — wyświetla nazwy plików danych profilera, które są generowane dla sesji. Kliknij prawym przyciskiem myszy **raporty,** aby dodać istniejący raport lub porównać dwa pliki danych profilera. Kliknij prawym przyciskiem myszy nazwę raportu, aby otworzyć, usunąć lub wyeksportować plik danych profilera.
+- **Raporty** — wyświetla nazwy plików danych profilera, które są generowane dla danej sesji. Kliknij prawym przyciskiem myszy pozycję **raporty** , aby dodać istniejący raport lub porównać dwa pliki danych profilera. Kliknij prawym przyciskiem myszy nazwę raportu, aby otworzyć, usunąć lub wyeksportować plik danych profilera.
 
 ## <a name="see-also"></a>Zobacz też
 
-[Przeglądy](../profiling/overviews-performance-tools.md)
-[Konfigurowanie sesji](../profiling/configuring-performance-sessions.md)
-wydajności[kontrolujących zbieranie danych](../profiling/controlling-data-collection.md)
+[Omówienia](../profiling/overviews-performance-tools.md) 
+ [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 
+ [Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)

@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO | Dokumenty firmy Microsoft
+title: BP_REQUEST_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 35a1202f4990f4f6370ad031c896ba85ebb6d816
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737895"
 ---
 # <a name="bp_request_info"></a>BP_REQUEST_INFO
@@ -59,44 +59,44 @@ public struct BP_REQUEST_INFO {
 
 ## <a name="members"></a>Elementy członkowskie
 `dwFields`\
-Kombinacja flag z wyliczenia [BPREQI_FIELDS,](../../../extensibility/debugger/reference/bpreqi-fields.md) która określa, które pola są wypełniane.
+Kombinacja flag z wyliczenia [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) , która określa, które pola są wypełniane.
 
 `guidLanguage`\
 Identyfikator GUID języka.
 
 `bpLocation`\
-Struktura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) określająca typ lokalizacji punktu przerwania.
+Struktura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) , która określa typ lokalizacji punktu przerwania.
 
 `pProgram`\
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje aplikację, w której występuje punkt przerwania.
+Obiekt [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , który reprezentuje aplikację, w której występuje punkt przerwania.
 
 `bstrProgramName`\
 Nazwa aplikacji, w której występuje punkt przerwania.
 
 `pThread`\
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątek, w którym występuje punkt przerwania.
+Obiekt [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , który reprezentuje wątek, w którym występuje punkt przerwania.
 
 `bstrThreadName`\
 Nazwa wątku, w którym występuje punkt przerwania.
 
 `bpCondition`\
-[Struktura BP_CONDITION,](../../../extensibility/debugger/reference/bp-condition.md) która opisuje warunki, w których punkt przerwania będzie uruchamiany.
+Struktura [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) opisująca warunki, w których zostanie uruchomiony punkt przerwania.
 
 `bpPassCount`\
-[Struktura BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) zawierająca informacje o liczbie przebiegów punktu przerwania.
+Struktura [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) , która zawiera informacje o liczbie przebiegu punktu przerwania.
 
 `dwFlags`\
-Kombinacja flag z wyliczenia [BP_FLAGS,](../../../extensibility/debugger/reference/bp-flags.md) która określa flagi żądanego punktu przerwania.
+Kombinacja flag z wyliczenia [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) , która określa flagi dla żądanego punktu przerwania.
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest zwracana przez [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) metody.
+Ta struktura jest zwracana przez metodę [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) .
 
-Jeśli chcesz uzyskać identyfikator GUID dostawcy aparatu debugowania, ograniczenie punktu przerwania lub punkt śledzenia, zobacz [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) strukturę.
+Jeśli musisz uzyskać identyfikator GUID dostawcy aparatu debugowania, ograniczenie punktu przerwania lub punkt śledzenia, zobacz strukturę [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

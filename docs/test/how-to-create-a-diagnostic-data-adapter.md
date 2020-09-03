@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 43519a96e0718a0864065864d9dd4fbd2ac16b23
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288081"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Instrukcje: Tworzenie adaptera danych diagnostycznych
@@ -32,7 +32,7 @@ Zdarzenia są wywoływane po uruchomieniu testów, aby adapter danych diagnostyc
 
 Poniżej znajduje się częściowa lista kluczowych zdarzeń, których można użyć podczas tworzenia adaptera danych diagnostycznych. Aby uzyskać pełną listę zdarzeń karty danych diagnostycznych, zobacz Klasa abstract <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> .
 
-|Zdarzenie|Opis|
+|Wydarzenie|Opis|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Początek przebiegu testu|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Koniec przebiegu testu|

@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_DATA | Dokumenty firmy Microsoft
+title: BP_RESOLUTION_DATA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 93a78f84c10af047e596459b68211b885d3c3085
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737839"
 ---
 # <a name="bp_resolution_data"></a>BP_RESOLUTION_DATA
@@ -47,24 +47,24 @@ public struct BP_RESOLUTION_DATA {
 
 ## <a name="members"></a>Elementy członkowskie
 `bstrDataExpr`\
-Wyrażenie danych, które zostało powiązane.
+Powiązane wyrażenie danych.
 
 `bstrFunc`\
-Nazwa funkcji, do którego ma powiązany punkt przerwania danych (jeśli istnieje).
+Nazwa funkcji, w której został powiązany punkt przerwania danych (jeśli istnieje).
 
 `bstrImage`\
-Nazwa modułu (MyModule.dll, na przykład), że punkt przerwania danych ma powiązane w.
+Nazwa modułu (na przykład MyModule.dll), z którym jest powiązany punkt przerwania danych.
 
 `dwFlags`\
-Wartość z [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) wyliczenia, opisujące sposób implementacji punktu przerwania danych.
+Wartość z wyliczenia [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) , opisująca sposób implementacji punktu przerwania danych.
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest członkiem [struktury BP_RESOLUTION_LOCATION,](../../../extensibility/debugger/reference/bp-resolution-location.md) która z kolei jest członkiem [struktury BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) zwracana przez [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) metody.
+Ta struktura jest składową struktury [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) , która jest z kolei członkiem struktury [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) zwróconej przez metodę [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

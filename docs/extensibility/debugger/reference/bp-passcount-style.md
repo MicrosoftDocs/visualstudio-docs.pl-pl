@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT_STYLE | Dokumenty firmy Microsoft
+title: BP_PASSCOUNT_STYLE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1633c5e9aa6ff251fedce83a0243664cd9e0e0a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737916"
 ---
 # <a name="bp_passcount_style"></a>BP_PASSCOUNT_STYLE
-Określa warunek skojarzony z liczbą przebiegów punktu przerwania, która powoduje, że punkt przerwania jest uruchamiany.
+Określa warunek skojarzony z licznikiem przebiegu punktu przerwania, który powoduje, że punkt przerwania jest wyzwalany.
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,24 +48,24 @@ public enum enum_BP_PASSCOUNT_STYLE {
 
 ## <a name="fields"></a>Pola
 `BP_PASSCOUNT_NONE`\
-Określa styl liczby przebiegów punktu przerwania.
+Określa styl liczby przebiegów przerwań.
 
 `BP_PASSCOUNT_EQUAL`\
-Ustawia styl liczby przebiegów punktu przerwania na równy. Punkt przerwania jest uruchamiany, gdy liczba trafień punktu przerwania jest równa liczbie przebiegów.
+Ustawia styl liczby przebiegów punktu przerwania na równy. Punkt przerwania jest uruchamiany, gdy liczba trafień punktu przerwania jest większa niż liczba przebiegów.
 
 `BP_PASSCOUNT_EQUAL_OR_GREATER`\
 Ustawia styl liczby przebiegów punktu przerwania na równy lub większy. Punkt przerwania jest uruchamiany, gdy liczba trafień punktu przerwania jest równa lub większa niż liczba przebiegów.
 
 `BP_PASSCOUNT_MOD`\
-Określa liczbę przebiegów modulo. Na przykład jeśli liczba przebiegów `BP_PASSCOUNT_MOD` jest typu i liczba przebiegów wartość wynosi 4, punkt przerwania uruchamia za każdym razem, gdy liczba trafień jest wielokrotnością 4.
+Określa liczbę przebiegów modulo. Na przykład, jeśli liczba przebiegów jest typu `BP_PASSCOUNT_MOD` i wartość liczby przeskoków wynosi 4, punkt przerwania jest uruchamiany za każdym razem, gdy liczba trafień jest wielokrotnością 4.
 
 ## <a name="remarks"></a>Uwagi
-Używany dla `stylePassCount` członka [struktury BP_PASSCOUNT,](../../../extensibility/debugger/reference/bp-passcount.md) który z kolei jest członkiem [struktur BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
+Używane dla `stylePassCount` składowej struktury [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) , która jest w przekształcaniu składowej struktur [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

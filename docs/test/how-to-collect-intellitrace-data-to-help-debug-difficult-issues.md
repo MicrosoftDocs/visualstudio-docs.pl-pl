@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d0983967d42c6daa89b9a690b93fb97872e98603
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288263"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Instrukcje: zbieranie danych IntelliTrace w celu ułatwienia debugowania trudnych problemów
@@ -81,7 +81,7 @@ Przed wykonaniem kroków opisanych w tej procedurze należy otworzyć ustawienia
     > [!WARNING]
     > Po włączeniu funkcji gromadzenia danych przez narzędzie IntelliTrace funkcja zbierania danych o pokryciu kodu nie będzie działać.
 
-5. Wybierz kartę **Ogólne** . Wybierz pozycję **IntelliTrace zdarzenia tylko** w celu zarejestrowania znaczących zdarzeń diagnostycznych, które mają minimalny wpływ na wydajność podczas testowania.
+5. Wybierz kartę **Ogólne** . Wybierz pozycję **zdarzenia IntelliTrace tylko** do rejestrowania znaczących zdarzeń diagnostycznych, które mają minimalny wpływ na wydajność podczas testowania.
 
      -lub-
 
@@ -89,7 +89,7 @@ Przed wykonaniem kroków opisanych w tej procedurze należy otworzyć ustawienia
 
 6. Aby zbierać dane z aplikacji ASP.NET działającej na Internet Information Services, wybierz pozycję **Zbierz dane z aplikacji ASP.NET, które działają w Internet Information Services**. Skonfiguruj i Skonfiguruj agenta testowego w roli serwera sieci Web. Zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
-7. Wybierz kartę **moduły** . Wybierz opcję **Zbierz dane ze wszystkich modułów, z wyjątkiem następujących** , a następnie użyj polecenia **Dodaj** do dodania do listy modułów i **Usuń** , aby usunąć moduł. Ta opcja pozwala objąć wszystkie moduły działające w systemie poza konkretnie wskazanymi.
+7. Wybierz kartę **moduły** . Wybierz opcję **Zbierz dane ze wszystkich modułów, z wyjątkiem następujących** , a następnie użyj opcji **Dodaj** , aby dodać do listy modułów i **usunąć** go w celu usunięcia modułu. Ta opcja pozwala objąć wszystkie moduły działające w systemie poza konkretnie wskazanymi.
 
      -lub-
 
@@ -98,7 +98,7 @@ Przed wykonaniem kroków opisanych w tej procedurze należy otworzyć ustawienia
     > [!NOTE]
     > O ile to tylko możliwe, należy zaznaczać konkretne procesy, które mają być monitorowane. Zapewni to optymalne działanie systemu.
 
-8. Wybierz kartę **procesy** . Wybierz pozycję **Zbierz dane ze wszystkich procesów, z wyjątkiem następujących** , a następnie użyj polecenia **Dodaj** do dodania do listy procesów i **Usuń** , aby usunąć proces. Ta opcja pozwala objąć gromadzeniem danych wszystkie procesy działające w systemie poza konkretnie wskazanymi.
+8. Wybierz kartę **procesy** . Wybierz pozycję **Zbierz dane ze wszystkich procesów z wyjątkiem następujących** i użyj opcji **Dodaj** , aby dodać do listy procesów i **usunąć** je w celu usunięcia procesu. Ta opcja pozwala objąć gromadzeniem danych wszystkie procesy działające w systemie poza konkretnie wskazanymi.
 
      -lub-
 

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284922"
 ---
 # <a name="how-to-search-for-topics"></a>Instrukcje: wyszukiwanie tematów
@@ -72,7 +72,7 @@ Algorytm wyszukiwania stosuje pewne kryteria, aby pomóc w ustalaniu rangi wynik
 
 3. Zawartość zawierająca wyższą gęstość wyrazów wyszukiwania jest wyższa niż zawartość, która ma niższą gęstość słów wyszukiwania.
 
-### <a name=""></a><a name="stopwords">Słowa ignorowane podczas wyszukiwania (Zatrzymywanie wyrazów)</a>
+### <a name=""></a><a name="stopwords"> Słowa ignorowane podczas wyszukiwania (Zatrzymywanie wyrazów) </a>
 
 Często występujące wyrazy lub liczby, które są czasami nazywane słowami stop, są automatycznie ignorowane podczas wyszukiwania pełnotekstowego. Na przykład jeśli szukasz frazy "Przekazuj do", wyniki wyszukiwania będą wyświetlały tematy zawierające wyraz "Pass", ale nie "do".
 

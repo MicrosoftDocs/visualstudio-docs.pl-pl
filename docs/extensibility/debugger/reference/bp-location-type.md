@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_TYPE | Dokumenty firmy Microsoft
+title: BP_LOCATION_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 50e6bdc0dba8f6bcbdd55c45132dff02735786d6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737942"
 ---
 # <a name="bp_location_type"></a>BP_LOCATION_TYPE
@@ -73,28 +73,28 @@ public enum enum_BP_LOCATION_TYPE {
 Określa lokalizację punktu przerwania.
 
 `BPLT_FILE_LINE`\
-Określa typ lokalizacji punktu przerwania jako wiersz pliku.
+Określa typ lokalizacji punktu przerwania w postaci wiersza pliku.
 
 `BPLT_FUNC_OFFSET`\
-Określa typ lokalizacji punktu przerwania jako przesunięcie funkcji.
+Określa typ lokalizacji punktu przerwania w postaci przesunięcia funkcji.
 
 `BPLT_CONTEXT`\
-Określa typ lokalizacji punktu przerwania jako kontekst.
+Określa typ lokalizacji punktu przerwania jako kontekstu.
 
 `BPLT_STRING`\
-Określa typ lokalizacji punktu przerwania jako ciąg.
+Określa typ lokalizacji punktu przerwania w postaci ciągu.
 
 `BPLT_ADDRESS`\
 Określa typ lokalizacji punktu przerwania jako adres.
 
 `BPLT_RESOLUTION`\
-Określa typ lokalizacji punktu przerwania jako rozdzielczość.
+Określa typ lokalizacji punktu przerwania jako rozwiązanie.
 
 `BPLT_CODE_FILE_LINE`\
-Określa typ lokalizacji punktu przerwania jako wiersz kodu źródłowego.
+Określa typ lokalizacji punktu przerwania w postaci wiersza kodu źródłowego.
 
 `BPLT_CODE_FUNC_OFFSET`\
-Określa typ lokalizacji punktu przerwania jako przesunięcie funkcji kodu.
+Określa typ lokalizacji punktu przerwania w postaci przesunięcia funkcji kodu.
 
 `BPLT_CODE_CONTEXT`\
 Określa typ lokalizacji punktu przerwania jako kontekst kodu.
@@ -109,22 +109,22 @@ Określa typ lokalizacji punktu przerwania jako adres kodu.
 Określa typ lokalizacji punktu przerwania jako ciąg danych.
 
 `BPLT_TYPE_MASK`\
-Określa maskę bitową, dzięki czemu typ punktu przerwania może zostać wyodrębniony z wartości.
+Określa maskę bitową, tak aby typ punktu przerwania można wyodrębnić z wartości.
 
 `BPLT_LOCATION_TYPE_MASK`\
-Określa maskę bitową, dzięki czemu typ lokalizacji punktu przerwania może zostać wyodrębniony z wartości.
+Określa maskę bitową, tak aby typ lokalizacji punktu przerwania można wyodrębnić z wartości.
 
 ## <a name="remarks"></a>Uwagi
-Przekazany jako parametr do [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) metody.
+Przekazanie jako parametr do metody [Getlocationtype](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) .
 
-Typ lokalizacji punktu przerwania składa się z typu punktu przerwania i typu lokalizacji. Oznacza to, że typ lokalizacji punktu przerwania nigdy nie `BPT_CODE`jest tylko typem punktu `BPLT_FILE_LINE`przerwania (na przykład) lub typem lokalizacji (na przykład). Wstępnie zdefiniowane stałe dla wszystkich typów lokalizacji punktu przerwania obecnie obsługiwanych są`BPLT_CODE_FILE_LINE` `BPLT_DATA_STRING`uwzględnione w tym wyliczeniu (przez ).
+Typ lokalizacji punktu przerwania składa się z typu punktu przerwania i typu lokalizacji. Oznacza to, że typ lokalizacji punktu przerwania nigdy nie jest tylko typem punktu przerwania (na przykład `BPT_CODE` ) lub typem lokalizacji (na przykład `BPLT_FILE_LINE` ). Wstępnie zdefiniowane stałe dla wszystkich aktualnie obsługiwanych typów lokalizacji punktu przerwania są zawarte w tym wyliczeniu ( `BPLT_CODE_FILE_LINE` do `BPLT_DATA_STRING` ).
 
-`BPT_CODE`i `BPT_DATA` są członkami wyliczenia [BP_TYPE.](../../../extensibility/debugger/reference/bp-type.md)
+`BPT_CODE` i `BPT_DATA` są członkami wyliczenia [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

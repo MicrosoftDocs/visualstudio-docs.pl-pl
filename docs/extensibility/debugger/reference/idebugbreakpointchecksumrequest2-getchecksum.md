@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum | Dokumenty firmy Microsoft
+title: 'IDebugBreakpointChecksumRequest2:: GetCheckSum | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6fe1d2828f15b295f42c7fd756f2ffc407a632c9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735173"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-Pobiera sumę kontrolną dokumentu dla żądania punktu przerwania, biorąc pod uwagę unikatowy identyfikator algorytmu sumy kontrolnej do użycia.
+Pobiera sumę kontrolną dokumentu dla żądania punktu przerwania, który ma unikatowy identyfikator algorytmu sumy kontrolnej do użycia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,16 +41,16 @@ public int GetChecksum(
 
 ## <a name="parameters"></a>Parametry
 `guidAlgorithm`\
-[w] Unikatowy identyfikator algorytmu sumy kontrolnej.
+podczas Unikatowy identyfikator algorytmu sum kontrolnych.
 
 `pChecksumData`\
-[na zewnątrz] Suma kontrolna dokumentu dla żądania punktu przerwania.
+określoną Suma kontrolna dokumentu dla żądania punktu przerwania.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano funkcję, która sprawdza, czy suma kontrolna dokumentu, który ma być powiązany, pasuje do jednego z interfejsu użytkownika.
+Poniższy przykład pokazuje funkcję, która sprawdza, czy suma kontrolna dokumentu, która ma zostać powiązana, dopasowuje jeden z interfejsu użytkownika.
 
 ```cpp
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)

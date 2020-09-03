@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Określanie plików binarnych do uruchomienia | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Określanie pliku binarnego do uruchomienia | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,34 +16,34 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 919e84393cf4aef929a504aadbefe905afe24bfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203430"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>Instrukcje: Określanie plików binarnych do uruchomienia
+# <a name="how-to-specify-the-binary-to-start"></a>Porady: określanie plików binarnych do uruchomienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Do profilu plików binarnych takich jak biblioteki dll, należy wprowadzić informacje w  **\<docelowy > strony właściwości** okno dialogowe. Te informacje wskazują, gdzie znaleźć aplikacji wywołującej projektu DLL.  
+Aby profilować pliki binarne, takie jak biblioteki DLL, należy wprowadzić informacje w oknie dialogowym ** \<Target> strony właściwości** . Te informacje wskazują, gdzie projekt DLL może znaleźć aplikację wywołującą.  
   
  **Wymagania**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
-### <a name="to-specify-the-executable-to-start"></a>Określ plik wykonywalny do uruchomienia  
+### <a name="to-specify-the-executable-to-start"></a>Aby określić plik wykonywalny do uruchomienia  
   
-1. W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy docelowy plik binarny, a następnie kliknij **właściwości**.  
+1. W **Eksplorator wydajności**kliknij prawym przyciskiem myszy docelowy plik binarny, a następnie kliknij polecenie **Właściwości**.  
   
-2. W **stron właściwości** okno dialogowe, kliknij przycisk **Uruchom** właściwości.  
+2. W oknie dialogowym **strony właściwości** kliknij przycisk właściwości **uruchamiania** .  
   
-3. Wybierz **zastąpienie właściwości projektu** pole wyboru.  
+3. Zaznacz pole wyboru **Zastąp właściwości projektu** .  
   
-4. W **pliku wykonywalnego do uruchomienia** tekst pola, określ lokalizację pliku.  
+4. W polu tekstowym **plik wykonywalny do uruchomienia** Określ lokalizację pliku.  
   
-5. W **argumenty** tekstu należy określić argumenty, które są wymagane do uruchamiania aplikacji.  
+5. W polu tekstowym **argumenty** określ argumenty wymagane do uruchomienia aplikacji.  
   
-6. W **katalog roboczy** tekstu określ lokalizację katalogu.  
+6. W polu tekstowym **katalog roboczy** Określ lokalizację katalogu.  
   
 7. Kliknij przycisk **OK**.  
   
