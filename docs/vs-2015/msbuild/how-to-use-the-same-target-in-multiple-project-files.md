@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Użyj tej samej wartości docelowej w wielu plikach projektów | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: korzystanie z tego samego obiektu docelowego w wielu plikach projektu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,34 +13,34 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d388d32b288e47a7e92f5d0f727230ffa00a2621
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178321"
 ---
-# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Instrukcje: Użycie tej samej wartości docelowej w wielu plikach projektów
+# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Porady: użycie tej samej wartości docelowej w wielu plikach projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Jeśli jesteś autorem kilku [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pliki projektu może znasz muszą używać tych samych zadań i obiekty docelowe w plikach inny projekt. Zamiast w każdym pliku projektu w tym pełny opis tych zadań lub miejsc docelowych, można zapisać elementu docelowego w oddzielny plik projektu i następnie zaimportować ten projekt do innego projektu, który musi używać obiektu docelowego.  
+Jeśli utworzono kilka [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] plików projektu, być może wykryto, że należy użyć tych samych zadań i elementów docelowych w różnych plikach projektu. Zamiast dołączać pełny opis tych zadań lub obiektów docelowych w każdym pliku projektu, można zapisać obiekt docelowy w osobnym pliku projektu, a następnie zaimportować ten projekt do dowolnego innego projektu, który musi używać celu.  
   
-## <a name="using-the-import-element"></a>Za pomocą elementu importu  
- `Import` Element jest używany, aby wstawić jeden plik projektu do innego pliku projektu. Plik projektu, który jest importowany musi być prawidłowym [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pliku projektu i zawierać poprawnie sformułowany dokument XML. `Project` Atrybut określa ścieżkę do plików importowany projektów. Aby uzyskać więcej informacji na temat `Import` elementu, zobacz [Import — Element (MSBuild)](../msbuild/import-element-msbuild.md).  
+## <a name="using-the-import-element"></a>Korzystanie z elementu import  
+ `Import`Element jest używany do wstawiania jednego pliku projektu do innego pliku projektu. Importowany plik projektu musi być prawidłowym [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] plikiem projektu i zawierać poprawnie sformułowany kod XML. Ten `Project` atrybut określa ścieżkę do zaimportowanego pliku projektu. Aby uzyskać więcej informacji na temat `Import` elementu, zobacz [import elementu (MSBuild)](../msbuild/import-element-msbuild.md).  
   
 #### <a name="to-import-a-project"></a>Aby zaimportować projekt  
   
-1. Zdefiniuj w importowania pliku projektu, wszystkie właściwości i elementy, które są używane jako parametry dla właściwości i elementy w projekcie zaimportowane.  
+1. Zdefiniuj w pliku projektu importowania wszystkie właściwości i elementy, które są używane jako parametry właściwości i elementów w zaimportowanym projekcie.  
   
-2. Użyj `Import` element Importowanie projektu. Przykład:  
+2. Użyj `Import` elementu, aby zaimportować projekt. Na przykład:  
   
      `<Import Project="MyCommon.targets"/>`  
   
-3. Następujące `Import` elementu zdefiniować wszystkie właściwości i elementy, które musisz przesłonić domyślny definicji właściwości i elementy w projekcie zaimportowane.  
+3. Po `Import` elemencie Zdefiniuj wszystkie właściwości i elementy, które muszą przesłaniać domyślne definicje właściwości i elementów w zaimportowanym projekcie.  
   
 ## <a name="order-of-evaluation"></a>Kolejność obliczania  
- Gdy [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] osiągnie `Import` elementu zaimportowanego projektu skutecznie są wstawiane do importowania projektu w lokalizacji `Import` elementu. W związku z tym, lokalizacja `Import` element może mieć wpływ na wartości właściwości i elementów. Należy zapoznać się z właściwości i elementy, które są skonfigurowane przy importowany projekt i właściwości i elementy, których używa zaimportowanego projektu.  
+ Gdy [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] osiągnie `Import` element, importowany projekt jest efektywnie wstawiany do projektu importowania w lokalizacji `Import` elementu. W związku z tym lokalizacja `Import` elementu może mieć wpływ na wartości właściwości i elementów. Ważne jest zrozumienie właściwości i elementów ustawionych przez zaimportowany projekt oraz właściwości i elementów używanych przez zaimportowany projekt.  
   
- Gdy projekt zostanie skompilowany, wszystkie właściwości są obliczane jako pierwsze, a następnie elementy. Na przykład następujący kod XML definiuje plik importowany projektów MyCommon.targets:  
+ Podczas kompilacji projektu wszystkie właściwości są oceniane jako pierwsze, a następnie elementy. Na przykład poniższy kod XML definiuje zaimportowany plik projektu. targets:  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -54,7 +54,7 @@ Jeśli jesteś autorem kilku [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md
 </Project>  
 ```  
   
- Następujący kod XML definiuje MyApp.proj, który importuje MyCommon.targets:  
+ Poniższy kod XML definiuje plik MojaApl. proj, który importuje wspólne elementy. targets:  
   
 ```  
 <Project  
@@ -67,24 +67,24 @@ Jeśli jesteś autorem kilku [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md
 </Project>  
 ```  
   
- Gdy projekt zostanie skompilowany, zostanie wyświetlony następujący komunikat:  
+ Podczas kompilacji projektu zostanie wyświetlony następujący komunikat:  
   
  `Name="MyCommon"`  
   
- Ponieważ projekt jest importowany po właściwość `Name` został zdefiniowany w MyApp.proj, definicja `Name` w MyCommon.targets zastępuje definicję w MyApp.proj. Jeśli projekt jest importowany przed właściwość, której nazwa jest zdefiniowana, kompilacja zostanie wyświetlony następujący komunikat:  
+ Ponieważ projekt został zaimportowany po `Name` zdefiniowaniu właściwości w MojaApl. proj, definicja elementu `Name` webcommon. targets zastępuje definicję w programie MojaApl. proj. Jeśli projekt zostanie zaimportowany przed zdefiniowaniem nazwy właściwości, kompilacja wyświetli następujący komunikat:  
   
  `Name="MyApp"`  
   
-#### <a name="use-the-following-approach-when-importing-projects"></a>Podczas importowania projektów, zastosuj następujące podejście  
+#### <a name="use-the-following-approach-when-importing-projects"></a>Podczas importowania projektów należy stosować następujące podejście:  
   
-1. Zdefiniuj w pliku projektu, wszystkie właściwości i elementy, które są używane jako parametry dla właściwości i elementy w projekcie zaimportowane.  
+1. Zdefiniuj w pliku projektu wszystkie właściwości i elementy, które są używane jako parametry właściwości i elementów w zaimportowanym projekcie.  
   
-2. Importowanie projektu.  
+2. Zaimportuj projekt.  
   
-3. Wszystkie właściwości i elementów, które musisz przesłonić domyślny definicji właściwości i elementów w zaimportowanego projektu, należy zdefiniować w pliku projektu.  
+3. Zdefiniuj w pliku projektu wszystkie właściwości i elementy, które muszą przesłaniać domyślne definicje właściwości i elementów w zaimportowanym projekcie.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu pokazuje MyCommon.targets pliku, który importuje drugi przykład kodu. W pliku .targets ocenia właściwości z importowania projektu do konfigurowania kompilacji.  
+ Poniższy przykład kodu pokazuje plik webcommon. Target, który został zaimportowany przez drugi przykład kodu. Plik. targets szacuje właściwości z projektu importowania, aby skonfigurować kompilację.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -102,7 +102,7 @@ Jeśli jesteś autorem kilku [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md
 ```  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykładowy kod importuje plik MyCommon.targets.  
+ Poniższy przykład kodu importuje plik webcommon. targets.  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -115,5 +115,5 @@ Jeśli jesteś autorem kilku [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Import — Element (MSBuild)](../msbuild/import-element-msbuild.md)   
- [Docelowe elementy](../msbuild/msbuild-targets.md)
+ [Import — element (MSBuild)](../msbuild/import-element-msbuild.md)   
+ [Targets (Obiekty docelowe)](../msbuild/msbuild-targets.md)

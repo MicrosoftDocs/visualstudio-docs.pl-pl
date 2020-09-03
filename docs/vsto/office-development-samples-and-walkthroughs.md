@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a9a8e71395190647fa7a908949a186c511b24610
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551683"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Przykłady i przewodniki dotyczące programowania pakietu Office
@@ -51,8 +51,8 @@ ms.locfileid: "69551683"
 
 |Temat|Opis|
 |-----------|-----------------|
-|[Wprowadzenie &#40;do programowania pakietu Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Zawiera łącza do informacji na temat instalacji, szablonów projektów, podstawowych zestawów międzyoperacyjnych pakietu Office oraz nowości w programowaniu pakietu Office.|
+|[Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Zawiera łącza do informacji na temat instalacji, szablonów projektów, podstawowych zestawów międzyoperacyjnych pakietu Office oraz nowości w programowaniu pakietu Office.|
 |[Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Wyjaśnia, jak zarządzane rozwiązania pakietu Office Code działają od perspektywy dewelopera i użytkownika końcowego oraz zawierają informacje o tym, jak działa kod zarządzany z dokumentami i aplikacjami pakietu Office.|
 |[Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)|Wyświetla listę często zadawanych pytań dotyczących programowania w programie Visual Studio i zawiera łącza do tematów, które mogą pomóc w rozwiązywaniu typowych problemów.|
 |[Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)|Zawiera łącza do informacji o sposobach tworzenia rozwiązań Microsoft Office i o roli zestawów w rozwiązaniu.|
-|[Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)|Zawiera przegląd okienka zadań na poziomie dokumentu, zwanego okienkiem akcje.|
+|[Przegląd okienka Akcje](../vsto/actions-pane-overview.md)|Zawiera przegląd okienka zadań na poziomie dokumentu, zwanego okienkiem akcje.|

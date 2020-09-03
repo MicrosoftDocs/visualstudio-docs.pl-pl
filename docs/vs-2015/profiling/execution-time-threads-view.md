@@ -1,5 +1,5 @@
 ---
-title: Czas wykonywania (Widok wątków) | Dokumentacja firmy Microsoft
+title: Czas wykonywania (Widok wątków) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,23 +14,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b4306e030c2f48d87b12ba6338a847dc9e9aa892
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179030"
 ---
 # <a name="execution-time-threads-view"></a>Czas wykonywania (Widok wątków)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Te segmenty na osi czasu w widoku wątków reprezentują czas wykonywania, gdy wątek aktywnie wykonywania zadania na rdzeń logiczny w systemie.  
+Te segmenty widoku wątki przedstawiają czas wykonywania, gdy wątek aktywnie wykonuje prace na logicznym rdzeń w systemie.  
   
- Zmiany w stan wątku są wykrywane przez przekazywanie zdarzeń jądra kontekstu przełącznika. Śledzenie zdarzeń dla Windows (ETW) przechwytuje stosów próbka co milisekund. W bardzo krótkim zielonym segmencie możliwe jest nie pobraniu próbki. Dlatego niektóre segmentów wykonania na krótki mogą być wyświetlane żaden stos wywołań.  
+ Zmiany stanu wątku są wykrywane za poorednictwem zdarzeń przełącznika kontekstu jądra. Śledzenie zdarzeń systemu Windows (ETW) przechwytuje przykładowe stosy co milisekundy. W bardzo krótkim, zielonym segmencie jest możliwe, że nie jest pobierana żadna próba. W związku z tym niektóre krótkie segmenty wykonania mogą nie wyświetlać stosu wywołań.  
   
- Po kliknięciu segmentu wykonania, Wizualizator współbieżności przedstawia przykładowy stos najbliższą lokalizację kliknięcie. Lokalizacja tego stosu próbki jest wyświetlany za pomocą czarne strzałki lub daszek powyżej osi czasu i Przykładowy stos jest wyświetlana na **bieżącego** kartę.  
+ Po kliknięciu segmentu wykonywania, Wizualizator współbieżności Wyświetla przykładowy stos znajdujący się najbliżej lokalizacji kliknięcia. Położenie tego przykładowego stosu jest pokazane przez czarną strzałkę lub karetkę, nad osią czasu, a przykładowy stos pojawia się na **bieżącej** karcie.  
   
- Aby wyświetlić profil próbkowania tradycyjny dla wszystkich segmentów wykonania w bieżącym widoku, kliknij **wykonywania** w profil widocznej osi czasu.  
+ Aby wyświetlić tradycyjny profil próbkowania dla wszystkich segmentów wykonywania w bieżącym widoku, kliknij opcję **wykonywanie** w profilu widocznej osi czasu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Raport profilu wykonania](../profiling/execution-profile-report.md)   
+ [Raport profilu wykonywania](../profiling/execution-profile-report.md)   
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

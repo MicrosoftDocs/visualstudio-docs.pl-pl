@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField | Dokumenty firmy Microsoft
+title: IDebugContainerField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a72296517a64c6dcfcb8e347fb00588504aa75a4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733218"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
@@ -29,25 +29,25 @@ IDebugContainerField : IDebugField
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Dostawca symbolu implementuje ten interfejs na tym samym obiekcie, który implementuje interfejs [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md) Ten interfejs jest również klasą podstawową dla wszystkich interfejsów, które reprezentują kontenery.
+ Dostawca symboli implementuje ten interfejs na tym samym obiekcie, który implementuje interfejs [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) . Ten interfejs jest również klasą bazową dla wszystkich interfejsów, które reprezentują kontenery.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Wiele metod w wielu interfejsach zwraca ten interfejs. Ponieważ jest to klasa podstawowa dla wszystkich kontenerów, bardziej wyspecjalizowane interfejsy można uzyskać z tego interfejsu przy użyciu [QueryInterface](/cpp/atl/queryinterface). Takie interfejsy obejmują [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)i [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).
+ Wiele metod w wielu interfejsach zwraca ten interfejs. Ponieważ jest to klasa bazowa dla wszystkich kontenerów, bardziej wyspecjalizowane interfejsy można uzyskać z tego interfejsu za pomocą [polecenia QueryInterface](/cpp/atl/queryinterface). Takie interfejsy obejmują [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)i [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- Oprócz metod w interfejsie [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ten interfejs implementuje następującą metodę:
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ Oprócz metod w interfejsie [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ten interfejs implementuje następujące metody:
 
 |Metoda|Opis|
 |------------|-----------------|
-|[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|Tworzy wyliczenie dla pól kontenera.|
+|[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|Tworzy moduł wyliczający dla pól kontenera.|
 
 ## <a name="remarks"></a>Uwagi
- Tablice (kontenery dla zmiennych), klasy (kontenery dla metod i zmiennych) i metody (kontenery dla parametrów i zmiennych lokalnych) są przykładami kontenerów.
+ Tablice (kontenery dla zmiennych), klasy (kontenery dla metod i zmiennych) i metody (kontenery dla parametrów i zmiennych lokalnych) to wszystkie przykłady kontenerów.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: sh.h
+ Nagłówek: sh. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule | Dokumenty firmy Microsoft
+title: 'IDebugComPlusSymbolProvider2:: LoadSymbolsWithCorModule | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ef4750de223b133e30e620f5dc0eec526e98526d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733317"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
-Ładuje symbole debugowania, biorąc pod uwagę obiekt **ICorDebugModule.**
+Ładuje symbole debugowania danego obiektu **ICorDebugModule** .
 
 ## <a name="syntax"></a>Składnia
 
@@ -52,31 +52,31 @@ int LoadSymbolsWithCorModule(
 
 ## <a name="parameters"></a>Parametry
 `ulAppDomainID`\
-[w] Identyfikator domeny aplikacji.
+podczas Identyfikator domeny aplikacji.
 
 `guidModule`\
-[w] Unikatowy identyfikator modułu.
+podczas Unikatowy identyfikator modułu.
 
 `baseAddress`\
-[w] Adres pamięci podstawowej.
+podczas Adres pamięci podstawowej.
 
 `pUnkMetadataImport`\
-[w] Obiekt zawierający metadane symbolu debugowania.
+podczas Obiekt, który zawiera metadane symboli debugowania.
 
 `pUnkCorDebugModule`\
-[w] Obiekt implementuje [interfejs ICorDebugModule .](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)
+podczas Obiekt, który implementuje [interfejs ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
 `bstrModuleName`\
-[w] Nazwa modułu.
+podczas Nazwa modułu.
 
 `bstrSymSearchPath`\
-[w] Ścieżka do wyszukiwania pliku symbolu.
+podczas Ścieżka do wyszukiwania pliku symboli.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CDebugSymbolProvider,** który udostępnia interfejs [IDebugComPlusSymbolProvider2.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CDebugSymbolProvider** , który uwidacznia Interfejs [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsWithCorModule(

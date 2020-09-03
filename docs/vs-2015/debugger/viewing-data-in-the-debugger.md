@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie danych w debugerze | Dokumentacja firmy Microsoft
+title: Wyświetlanie danych w debugerze | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,22 +24,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ade6c38a8edd73c181a3f135dd5e967901bf63f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178928"
 ---
 # <a name="viewing-data-in-the-debugger"></a>Wyświetlanie danych w debugerze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Debugera zawiera szereg narzędzi do inspekcji i modyfikacji stanu programu. Większość tych narzędzi działa tylko w trybie przerwania.  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Debuger oferuje różne narzędzia do sprawdzania i modyfikowania stanu programu. Większość z tych narzędzi działa tylko w trybie przerwania.  
   
 ## <a name="datatips"></a>DataTips  
- DataTips to jedno z najwygodniejszych narzędzi służących do wyświetlania informacji na temat zmiennych i obiektów w programie podczas debugowania. Gdy debuger jest w trybie przerwania, umieszczając wskaźnik myszy nad zmienną w oknie źródła można wyświetlić wartość zmiennej w bieżącym zakresie. Aby uzyskać więcej informacji, zobacz [wyświetlanie wartości danych w poradach dotyczących](../debugger/view-data-values-in-data-tips-in-the-code-editor.md).  
+ Etykietki danych są jednym z najbardziej wygodnych narzędzi do wyświetlania informacji o zmiennych i obiektach w programie podczas debugowania. Gdy debuger jest w trybie przerwania, można wyświetlić wartość zmiennej w bieżącym zakresie, umieszczając wskaźnik myszy nad zmienną w oknie źródłowym. Aby uzyskać więcej informacji, zobacz [Wyświetlanie wartości danych w etykietkach danych](../debugger/view-data-values-in-data-tips-in-the-code-editor.md).  
   
 ## <a name="visualizers"></a>Wizualizatory  
- Wizualizacje są nowym składnikiem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debugera, które umożliwiają wyświetlanie zawartości zmiennej lub obiektu w znaczący sposób. Na przykład można użyć wizualizatora HTML do wyświetlenia ciągu HTML, jak byłby interpretowany i wyświetlany w przeglądarce. Dostęp wizualizatorów można uzyskać poprzez DataTips, **Obejrzyj** oknie **Autos** oknie **zmiennych lokalnych** oknie lub **QuickWatch** okna dialogowego pole. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md).  
+ Wizualizatory są nowym składnikiem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debugera, który umożliwia wyświetlanie zawartości obiektu lub zmiennej w zrozumiały sposób. Można na przykład użyć wizualizatora HTML do wyświetlenia ciągu HTML, ponieważ będzie on interpretowany i wyświetlany w przeglądarce. Można uzyskać dostęp do wizualizatorów z etykietek danych, okna **czujki** , okna **autostarts** , okien **zmiennych lokalnych** lub okna dialogowego **QuickWatch** . Aby uzyskać więcej informacji, zobacz [Tworzenie wizualizacji niestandardowych](../debugger/create-custom-visualizers-of-data.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   

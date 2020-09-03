@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551844"
 ---
 # <a name="build-office-solutions"></a>Tworzenie rozwiązań pakietu Office
@@ -94,20 +94,20 @@ ms.locfileid: "69551844"
  W przypadku projektów na poziomie dokumentu należy również dodać w pełni kwalifikowaną lokalizację dokumentu do listy zaufanych folderów pakietu Office. Aby uzyskać więcej informacji, zobacz [przyznawanie zaufania do dokumentów](../vsto/granting-trust-to-documents.md).
 
 ## <a name="change-the-platform-target"></a>Zmień obiekt docelowy platformy
- Domyślnie platforma docelowa platformy dla projektów pakietu Office to **dowolny procesor**. Zazwyczaj nie należy zmieniać tego ustawienia. Rozwiązania pakietu Office utworzone przy użyciu dowolnego ustawienia docelowej platformy **procesora CPU** działają w 32-bitowych i 64-bitowych wersjach firmy Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] lub [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
+ Domyślnie platforma docelowa platformy dla projektów pakietu Office to **dowolny procesor**. Zazwyczaj nie należy zmieniać tego ustawienia. Rozwiązania pakietu Office utworzone przy użyciu dowolnego ustawienia docelowej platformy **procesora CPU** działają w 32-bitowych i 64-bitowych wersjach firmy Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] lub [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] .
 
- Należy ustawić platformę docelową na x64 tylko wtedy, gdy tworzysz rozwiązanie, które będzie działać tylko w 64-bitowych wersjach firmy [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] Microsoft [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]lub, a rozwiązanie wywoła natywne, 64-bitowe interfejsy API. Aby uzyskać więcej informacji na temat zmiany ustawienia obiektu docelowego platformy [, zobacz How to: Skonfiguruj projekty na platformach](../ide/how-to-configure-projects-to-target-platforms.md)docelowych.
+ Należy ustawić platformę docelową na x64 tylko wtedy, gdy tworzysz rozwiązanie, które będzie działać tylko w 64-bitowych wersjach firmy Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] lub [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] , a rozwiązanie wywoła natywne, 64-bitowe interfejsy API. Aby uzyskać więcej informacji na temat zmiany ustawienia obiektu docelowego platformy, zobacz [How to: Configure projects to target platforms](../ide/how-to-configure-projects-to-target-platforms.md).
 
  Jeśli ustawisz platformę docelową x64, rozwiązanie nie będzie działać w 32-bitowych wersjach systemu Windows lub Office. Obiekt docelowy platformy x64 wymaga, aby rozwiązanie było uruchamiane w procesie 64-bitowym.
 
 ## <a name="use-the-clean-command"></a>Użyj czystego polecenia
- Aby usunąć skompilowane pliki projektu z komputera deweloperskiego, można użyć polecenia **Oczyść** w menu **kompilacja** w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Polecenie **Clean** usuwa wszystkie pliki w lokalizacji danych wyjściowych kompilacji. W przypadku projektów na poziomie aplikacji **czyste** polecenie usuwa również wpisy rejestru, które są tworzone przez proces kompilacji.
+ Aby usunąć skompilowane pliki projektu z komputera deweloperskiego, można użyć polecenia **Oczyść** w menu **kompilacja** w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Polecenie **Clean** usuwa wszystkie pliki w lokalizacji danych wyjściowych kompilacji. W przypadku projektów na poziomie aplikacji **czyste** polecenie usuwa również wpisy rejestru, które są tworzone przez proces kompilacji.
 
-## <a name="related-topics"></a>Tematy pokrewne
+## <a name="related-topics"></a>Powiązane tematy
 
 |Tytuł|Opis|
 |-----------|-----------------|
 |[Debugowanie projektów pakietu Office](../vsto/debugging-office-projects.md)|Przedstawia problemy związane z debugowaniem projektów pakietu Office.|
-|[Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Pokazuje, jak utworzyć podstawowe dostosowanie poziomu dokumentu dla programu Excel.|
-|[Instrukcje: Ponownie włącz dodatek narzędzi VSTO, który został wyłączony](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|W tym artykule opisano, jak ponownie włączyć dodatek narzędzi VSTO, który jest trwały lub elastyczny.|
+|[Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Pokazuje, jak utworzyć podstawowe dostosowanie na poziomie dokumentu dla programu Excel.|
+|[Instrukcje: Ponowne włączanie dodatku VSTO, który został wyłączony](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|W tym artykule opisano, jak ponownie włączyć dodatek narzędzi VSTO, który jest trwały lub elastyczny.|
 |[Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)|Zawiera łącza do informacji na temat tworzenia rozwiązań pakietu Office oraz o roli zestawów w rozwiązaniu.|
