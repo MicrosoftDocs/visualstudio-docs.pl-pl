@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fbb84dd8c8a8240e4fec7791305029304ccce8f7
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183733"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Dodaj polecenie do paska narzędzi Eksplorator rozwiązań
@@ -38,7 +38,7 @@ W tym instruktażu pokazano, jak dodać przycisk do paska narzędzi **Eksplorato
 ## <a name="add-a-button-to-the-solution-explorer-toolbar"></a>Dodaj przycisk do Eksplorator rozwiązań pasku narzędzi
  W tej części przewodnika pokazano, jak dodać przycisk do paska narzędzi **Eksplorator rozwiązań** . Gdy przycisk zostanie kliknięty, kod w metodzie wywołania zwrotnego jest uruchamiany.
 
-1. W pliku *ToolbarButtonPackage. vsct* przejdź do `<Symbols>` sekcji. `<GuidSymbol>`Węzeł zawiera grupę menu i polecenie, które zostało wygenerowane przez szablon pakietu. Dodaj `<IDSymbol>` element do tego węzła, aby zadeklarować grupę, w której będzie przechowywane Polecenie.
+1. W pliku *ToolbarButtonPackage. vsct* przejdź do  `<Symbols>` sekcji. `<GuidSymbol>`Węzeł zawiera grupę menu i polecenie, które zostało wygenerowane przez szablon pakietu. Dodaj `<IDSymbol>` element do tego węzła, aby zadeklarować grupę, w której będzie przechowywane Polecenie.
 
     ```xml
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>
@@ -116,5 +116,5 @@ W tym instruktażu pokazano, jak dodać przycisk do paska narzędzi **Eksplorato
 
    Widoczność przycisku jest kontrolowana przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do momentu załadowania pakietu VSPackage. Po załadowaniu pakietu VSPackage widoczność przycisku jest kontrolowana przez pakietu VSPackage.  Aby uzyskać więcej informacji, zobacz [MenuCommands vs. OleMenuCommands](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

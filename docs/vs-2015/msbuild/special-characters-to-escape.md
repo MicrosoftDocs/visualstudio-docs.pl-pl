@@ -1,5 +1,5 @@
 ---
-title: Znaki specjalne wyjścia | Dokumentacja firmy Microsoft
+title: Znaki specjalne do ucieczki | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -18,33 +18,33 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: beeed84db240ecf57ca18dd9aef08622f14b06fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161355"
 ---
 # <a name="special-characters-to-escape"></a>Znaki specjalne wyjścia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Tylko wtedy, gdy mają one specjalnego znaczenia w kontekście, w którym są one używane, należy użyć znaków ucieczki znaków specjalnych. Na przykład znak gwiazdki (*) jest znakiem specjalnym, tylko w atrybutach "Include" i "Wyklucz" definicji elementu lub w wywołaniu <xref:Microsoft.Build.Tasks.CreateItem>. We wszystkich innych przypadkach gwiazdka jest traktowany jako literał gwiazdki. Gdy jest konieczne ucieczki gwiazdki wszędzie, gdzie w plikach projektu, to to samo dotyczy żadnych szkód.  
+Znaki specjalne muszą być wyprowadzane tylko wtedy, gdy mają specjalne znaczenie w kontekście, w którym są używane. Na przykład gwiazdka (*) jest znakiem specjalnym tylko w atrybutach "include" i "exclude" definicji elementu lub w wywołaniu <xref:Microsoft.Build.Tasks.CreateItem> . We wszystkich innych przypadkach gwiazdka jest traktowana jako literał gwiazdki. Mimo że nie ma potrzeby ucieczki gwiazdek w plikach projektu, nie jest to szkodliwe.  
   
- Użyj % notacji*xx* zamiast znaki specjalne, gdzie *xx* reprezentuje wartości szesnastkowej znaku ASCII. Na przykład, aby użyć gwiazdki (*) jako znak literałowy, użyj wartości `%2A`.  
+ Użyj notacji%*XX* zamiast znaku specjalnego, gdzie *XX* reprezentuje wartość szesnastkową znaku ASCII. Na przykład, aby użyć gwiazdki (*) jako znaku literału, użyj wartości `%2A` .  
   
- Pełną listę znaki specjalne wyjścia są następujące:  
+ Pełna lista znaków specjalnych do wyjścia w następujący sposób:  
   
 |Znak|Opis|  
 |---------------|-----------------|  
-|%|Używany znak procentu, aby odwoływać się do metadanych.|  
-|$|Znak dolara, używany do odwoływać się do właściwości.|  
-|@|Znak używany do odwoływać się do elementu listy.|  
-|(|Nawiasem otwierającym używane na listach.|  
-|)|Nawiasu zamykającego używane na listach.|  
-|`| Apostrof (lub znacznika) używane w warunkach i inne wyrażenia.|  
-|;|Średnik jest separatorem listy.|  
-|?|Znak zapytania, symbolu wieloznacznego w opisie specyfikacji pliku, w sekcji uwzględniania/wykluczania elementów.|  
-|*|Gwiazdka jest symbolem wieloznacznym podczas opisywania specyfikacji pliku, w sekcji uwzględniania/wykluczania elementów.|  
+|%|Znak procentu używany do odwoływania się do metadanych.|  
+|$|Znak dolara używany do odwoływania się do właściwości.|  
+|@|Znak używany do odwoływania się do list elementów.|  
+|(|Otwórz nawias, używany na listach.|  
+|)|Nawias zamykający używany na listach.|  
+|`|Apostrof (lub znacznik) używany w warunkach i innych wyrażeniach.|  
+|;|Średnik, separator listy.|  
+|?|Znak zapytania, symbol wieloznaczny podczas opisywania specyfikacji pliku w sekcji dołączania/wykluczania elementu.|  
+|*|Gwiazdka, symbol wieloznaczny podczas opisywania specyfikacji pliku w sekcji dołączania/wykluczania elementu.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Znaki specjalne ucieczki w MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+ [Instrukcje: znaki specjalne ucieczki w MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
+ [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

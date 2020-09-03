@@ -1,5 +1,5 @@
 ---
-title: Uruchamianie kompilacji w środowisku IDE | Dokumentacja firmy Microsoft
+title: Uruchamianie kompilacji z poziomu środowiska IDE | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -12,23 +12,23 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94685a2b06b14c232d9e1f79a1d7440e1ceb765b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161342"
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>Uruchamianie kompilacji w środowisku IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Niestandardowe systemy projektu muszą używać <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> do uruchomienia kompilacji. W tym temacie opisano przyczyny tego i opisano procedurę.  
+Niestandardowe systemy projektów muszą używać <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> do uruchamiania kompilacji. W tym temacie opisano przyczyny tej procedury i przedstawiono procedurę.  
   
 ## <a name="parallel-builds-and-threads"></a>Kompilacje równoległe i wątki  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umożliwia równoległe kompilacje, który wymagają mediacji dotyczącej dostępu do wspólnych zasobów. Systemy projektu mogą kompilować asynchronicznie, ale takie systemy nie mogą wywołać funkcji kompilacji z wywołania tworzy kopię jest dostarczane do Menadżera kompilacji.  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] umożliwia kompilacje równoległe, które wymagają mediacji w celu uzyskania dostępu do typowych zasobów. Systemy projektów mogą uruchamiać kompilacje asynchronicznie, ale te systemy nie mogą wywoływać funkcji kompilacji z wywołania zwrotnego w programie Build Manager.  
   
- Jeśli system projektu modyfikuje zmienne środowiskowe, jego musi ustawić NodeAffinity kompilacji outofproc. Oznacza to, że nie można używać obiektów hosta, ponieważ wymagają one węzła w proc.  
+ Jeśli system projektu modyfikuje zmienne środowiskowe, musi ustawić NodeAffinity kompilacji na OutOfProc. Oznacza to, że nie można używać obiektów hosta, ponieważ wymagają węzła w procesie.  
   
-## <a name="using-ivsbuildmanageraccessor"></a>Przy użyciu IVSBuildManagerAccessor  
+## <a name="using-ivsbuildmanageraccessor"></a>Korzystanie z IVSBuildManagerAccessor  
  Poniższy kod przedstawia metodę, którą system projektu może użyć do uruchomienia kompilacji:  
   
 ```  

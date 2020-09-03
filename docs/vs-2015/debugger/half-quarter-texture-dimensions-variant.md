@@ -1,5 +1,5 @@
 ---
-title: Ósmej tekstury wymiarów wariant | Dokumentacja firmy Microsoft
+title: Wariant wymiarów tekstury półrocza | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,42 +10,42 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03485a3b9df9c06b1ef4755a5758cf2c8c997d1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161156"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Wariant wymiarów połowy/ćwiartki tekstury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Maksymalne wymiary tekstury na tekstury, które nie są renderowane elementów docelowych.  
+Zmniejsza wymiary tekstury dla tekstury, które nie są obiektami docelowymi.  
   
 ## <a name="interpretation"></a>Interpretacja  
- Mniejsze tekstury zajmują mniej pamięci i w związku z tym zmniejszenia przepustowości przez mniej pamięci i zmniejszyć nacisk na pamięć podręczną teksturą procesora GPU. Ich szczegóły mniejszym może jednak spowodować jakości obrazu mniejsze, szczególnie w przypadku, gdy są one wyświetlane ściśle w scenie 3-D lub przeglądać w obszarze powiększenia.  
+ Mniejsze tekstury zajmują mniej pamięci i w związku z tym zużywają mniejszą przepustowość pamięci i zmniejszają nacisk na pamięć podręczną tekstury procesora GPU. Jednak ich mniejsze szczegóły mogą spowodować zmniejszenie jakości obrazu, zwłaszcza wtedy, gdy są one widoczne blisko sceny trójwymiarowych lub wyświetlane w obszarze powiększenia.  
   
- Jeśli ten wariant wykazuje duże są bardziej wydajne, może to wskazywać, że aplikacja zużywa zbyt dużej ilości pamięci przepustowość i/lub nieefektywnie pamięci podręcznej tekstury używa. Można również określić, że Twoje tekstury zajmować więcej pamięci procesora GPU nie jest dostępny, co powoduje, że tekstury, które ma być stronicowana do pamięci systemowej.  
+ Jeśli ten wariant pokazuje duży wzrost wydajności, może to wskazywać, że aplikacja zużywa zbyt dużą przepustowość pamięci, używa niewydajnej pamięci podręcznej tekstury lub obu tych metod. Może również wskazywać, że tekstury zajmują większą ilość pamięci GPU niż dostępna, co powoduje, że tekstury są stronicowane do pamięci systemowej.  
   
- Jeśli Twoja aplikacja zużywa zbyt dużej ilości pamięci przepustowość lub nieefektywnie korzysta z pamięci podręcznej tekstury, Rozważ zmniejszenie rozmiaru usługi tekstury, ale tylko wtedy, gdy należy rozważyć włączenie mapy mip dla odpowiednich tekstury. Podobnie jak tekstury mniejszych mapowane mip tekstury zmniejszenia przepustowości przez mniej pamięci — mimo że zajmują więcej pamięci procesora GPU — i wykorzystania pamięci podręcznej zwiększyć, ale nie zmniejszyć szczegółów tekstury. Firma Microsoft zaleca mapy mip, zawsze wtedy, gdy zwiększone użycie pamięci nie powoduje tekstury, które ma być stronicowana do pamięci systemowej.  
+ Jeśli aplikacja zużywa zbyt dużo pamięci lub używa niewydajnej pamięci podręcznej tekstury, należy rozważyć zmniejszenie rozmiaru tekstury, ale tylko po włączeniu funkcji mapy MIP dla odpowiednich tekstur. Podobnie jak w przypadku mniejszych tekstur, tekstury mapowane przez MCI zużywają mniejszą przepustowość pamięci, chociaż zajmują więcej pamięci GPU i zwiększają wykorzystanie pamięci podręcznej, ale nie redukują szczegółów tekstury. Zaleca się, aby w każdym przypadku zwiększone użycie pamięci nie powodowało, aby tekstury były stronicowane do pamięci systemowej.  
   
- Jeśli Twoje tekstury zajmują więcej pamięci procesora GPU nie jest dostępna, należy rozważyć zmniejszenie rozmiaru tekstury, ale tylko wtedy, gdy należy wziąć pod uwagę kompresji tekstury odpowiednie. Podobnie jak tekstury mniejszych skompresowany tekstury zajmują mniej pamięci i zmniejszyć do strony, aby pamięci systemowej, ale zmniejsza się ich wierności kolorów. Kompresja nie jest odpowiednia dla wszystkich tekstury, w zależności od ich zawartości — na przykład tych, które mają znaczący kolor zmienność mały obszar — przy zachowaniu dla wielu tekstury kompresji mogą lepiej ogólnej jakości obrazu niż zmniejszyć ich rozmiar.  
+ Jeśli tekstury zajmują większą ilość pamięci GPU niż jest dostępna, należy rozważyć zmniejszenie rozmiaru tekstury, ale dopiero po rozważeniu kompresji odpowiednich tekstur. Podobnie jak w przypadku mniejszych tekstur, skompresowane tekstury zajmują mniej pamięci i zmniejszają potrzebę przenoszące się do pamięci systemowej, ale ich wierność kolorów są ograniczone. Kompresja nie jest odpowiednia dla wszystkich tekstur, w zależności od ich zawartości — na przykład te, które mają znaczącą odmianę koloru w niewielkim obszarze — ale w przypadku wielu tekstur kompresja może zachować lepszą ogólną jakość obrazu niż zmniejszenie ich rozmiaru.  
   
 ## <a name="remarks"></a>Uwagi  
- Wymiary tekstury są ograniczane na każde wywołanie `ID3D11Device::CreateTexture2D` tworząca źródłową teksturę. W szczególności wymiarów tekstury są ograniczone, gdy obiekt D3D11_TEXTURE2D_DESC przekazany w `pDesc` tekstury, które jest używane w czasie renderowania; opis:  
+ Wymiary tekstury są skracane dla każdego wywołania `ID3D11Device::CreateTexture2D` , które tworzy teksturę źródłową. Wymiary tekstury są skracane, gdy obiekt D3D11_TEXTURE2D_DESC przeszedł w programie `pDesc` opisuje teksturę, która jest używana podczas renderowania; to jest:  
   
-- Element członkowski BindFlags ma tylko D3D11_BIND_SHADER_RESOURCE ustawiona jest flaga.  
+- Element członkowski BindFlags ma tylko ustawioną flagę D3D11_BIND_SHADER_RESOURCE.  
   
-- Element członkowski MiscFlags nie ma flagi D3D11_RESOURCE_MISC_TILE_POOL lub ustawiona flaga D3D11_RESOURCE_MISC_TILED (fragmentacji zasobów nie są rozmiaru).  
+- Element członkowski MiscFlags nie ma flagi D3D11_RESOURCE_MISC_TILE_POOL lub zestawu flag D3D11_RESOURCE_MISC_TILED (nie zmieniono rozmiaru zasobów sąsiadujących).  
   
-- Format tekstury jest obsługiwany jako obiekt docelowy renderowania — zgodnie z ustaleniami D3D11_FORMAT_SUPPORT_RENDER_TARGET — co jest niezbędne do zmniejszenia rozmiaru tekstury. Formaty BC1, BC2 i BC3 również są obsługiwane, nawet jeśli nie są obsługiwane jako elementy docelowe renderowania.  
+- Format tekstury jest obsługiwany jako obiekt docelowy renderowania — określony przez D3D11_FORMAT_SUPPORT_RENDER_TARGET — który jest wymagany do zmniejszenia rozmiaru tekstury. Formaty BC1, BC2 i BC3 są również obsługiwane, mimo że nie są obsługiwane jako elementy docelowe renderowania.  
   
-  Jeśli początkowe dane są dostarczane przez aplikację, ten wariant skaluje danych tekstury do odpowiedniego rozmiaru, zanim utworzy tekstury. Jeśli początkowe dane są dostarczane w formacie skompresowanego bloku, takich jak BC1, BC2 lub BC3, dekodowana, skalować i ponownie zakodowany, zanim zostaną one użyte do utworzenia mniejszych tekstury. (Rodzaj kompresji opartej na blokach oznacza, że proces bardzo dekodowania skalowania zakodować w prawie zawsze powoduje, że obniżyć jakość obrazu niż gdy tekstury skompresowanego bloku jest generowany na podstawie skalowana wersja teksturę, która nie była wcześniej zakodowany).  
+  Jeśli dane początkowe są dostarczane przez aplikację, ten wariant skaluje dane tekstury do odpowiedniego rozmiaru przed utworzeniem tekstury. Jeśli dane początkowe są dostarczane w formacie skompresowanym bloku, takim jak BC1, BC2 lub BC3, jest dekodowane, skalowane i ponownie kodowane przed użyciem do utworzenia mniejszej tekstury. (Charakter kompresji opartej na blokach oznacza, że proces dodatkowego kodowania skalowania w poziomie prawie zawsze powoduje obniżenie jakości obrazu, niż w przypadku generowania tekstury skompresowanej bloków z skalowanej wersji tekstury, która nie była wcześniej zakodowana).  
   
-  Włączenie mapy mip dla tekstury wariant odpowiednio zmniejsza liczbę poziomów mip — co mniej podczas skalowania w połowie lub dwóch mniejszej podczas skalowania do rozmiaru kwartału.  
+  Jeśli dla tekstury włączone są mapy MIP, wariant zmniejszy odpowiednio liczbę poziomów MIP, co jest mniejsze w przypadku skalowania na połowę lub dwa mniejsze skalowanie do rozmiaru kwartału.  
   
 ## <a name="example"></a>Przykład  
- Ten wariant zmienia rozmiar tekstury w czasie wykonywania przed wywołaniem do `CreateTexture2D`. Zalecamy takie podejście dla kodu produkcyjnego, ponieważ pełnym wymiarze tekstury zużywać więcej miejsca na dysku i dodatkowego kroku może zwiększyć czas ładowania w swojej aplikacji — zwłaszcza w przypadku skompresowanych tekstury, które wymagają znaczących obliczeniową zasoby do zakodowania. Zamiast tego zaleca się rozmiar tekstury w trybie offline przy użyciu edytora obrazów lub procesor obrazów, który jest częścią potoku kompilacji. Tych metod zmniejszyć wymagania dotyczące miejsca na dysku i wyeliminować koszty środowiska uruchomieniowego w aplikacji i zapewniają więcej czasu na przetwarzanie tak, aby można zachować najlepszej jakości obrazu podczas zmniejszania lub kompresowanie swoje tekstury.  
+ Ten wariant zmienia rozmiar tekstury w czasie wykonywania przed wywołaniem do `CreateTexture2D` . Zalecamy stosowanie tego podejścia do kodu produkcyjnego, ponieważ tekstury o pełnym rozmiarze zużywają więcej miejsca na dysku, ponieważ dodatkowy krok może zwiększyć czas ładowania w aplikacji — szczególnie w przypadku skompresowanych tekstur, które wymagają znaczących zasobów obliczeniowych. Zamiast tego zalecamy zmianę rozmiaru tekstury w tryb offline przy użyciu edytora obrazu lub procesora obrazu, który jest częścią potoku kompilacji. Te podejścia zmniejszają wymagania dotyczące miejsca na dysku i eliminują obciążenie środowiska uruchomieniowego w aplikacji oraz zapewniają większy czas przetwarzania, dzięki czemu można zachować najlepszą jakość obrazu podczas zmniejszania lub kompresowania tekstur.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wariant generowania mipmapy](../debugger/mip-map-generation-variant.md)   
+ [MIP — wariant generacji mapy](../debugger/mip-map-generation-variant.md)   
  [Wariant kompresji tekstury BC](../debugger/bc-texture-compression-variant.md)

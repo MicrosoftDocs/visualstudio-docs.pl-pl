@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3e8d82712a2fb8e30b13f9f369bf87be5292c199
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659491"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rozwiązanie języka specyficznego dla domeny (DSL) generuje interfejs API, za pomocą którego można odczytywać i aktualizować wystąpienia DSL w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ten interfejs API jest zdefiniowany w kodzie, który jest generowany na podstawie definicji DSL. W tym temacie opisano wygenerowany interfejs API.
+Rozwiązanie języka specyficznego dla domeny (DSL) generuje interfejs API, za pomocą którego można odczytywać i aktualizować wystąpienia DSL w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Ten interfejs API jest zdefiniowany w kodzie, który jest generowany na podstawie definicji DSL. W tym temacie opisano wygenerowany interfejs API.
 
 ## <a name="the-example-solution-component-diagrams"></a>Przykładowe rozwiązanie: diagramy składników
  Aby utworzyć rozwiązanie, które jest źródłem większości przykładów w tym temacie, Utwórz DSL na podstawie szablonu rozwiązania **model składników** . Jest to jeden z szablonów standardowych, które pojawiają się podczas tworzenia nowego rozwiązania DSL.
@@ -34,14 +34,14 @@ Rozwiązanie języka specyficznego dla domeny (DSL) generuje interfejs API, za p
  ![Składniki i połączone porty](../modeling/media/componentsample.png "ComponentSample")
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Struktura rozwiązania DSL
- Projekt **DSL** definiuje interfejs API dla języka DSL. Projekt **DslPackage** definiuje, w jaki sposób integruje się z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Możesz również dodać własne projekty, które mogą również zawierać kod generowany na podstawie modelu.
+ Projekt **DSL** definiuje interfejs API dla języka DSL. Projekt **DslPackage** definiuje sposób integracji z programem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Możesz również dodać własne projekty, które mogą również zawierać kod generowany na podstawie modelu.
 
 ### <a name="the-code-directories"></a>Katalogi kodu
  Większość kodu w każdym z tych projektów jest generowana z **Dsl\DslDefinition.DSL**. Wygenerowany kod znajduje się w folderze **wygenerowanego kodu** . Aby wyświetlić wygenerowany plik, kliknij przycisk **[+]** obok wygenerowanego pliku. **TT** .
 
  Zalecamy sprawdzenie wygenerowanego kodu, aby pomóc w zrozumieniu DSL. Aby wyświetlić wygenerowane pliki, rozwiń pliki *. tt w Eksplorator rozwiązań.
 
- Pliki \*. tt zawierają bardzo mały wygenerowany kod. Zamiast tego wykorzystują dyrektywy `<#include>` do dołączania udostępnionych plików szablonów. Udostępnione pliki można znaleźć w **folderze \Program Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**
+ \*Pliki. tt zawierają bardzo mały wygenerowany kod. Zamiast tego wykorzystują `<#include>` dyrektywy do dołączania udostępnionych plików szablonów. Udostępnione pliki można znaleźć w **folderze \Program Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**
 
  Dodając własny kod programu do rozwiązania DSL, Dodaj go do oddzielnego pliku poza wygenerowanym folderem kodu. Może być konieczne utworzenie niestandardowego folderu **kodu** . (Po dodaniu nowego pliku kodu do folderu niestandardowego Pamiętaj o skorygowaniu przestrzeni nazw w początkowym szkieletzie kodu).
 
@@ -55,12 +55,12 @@ Rozwiązanie języka specyficznego dla domeny (DSL) generuje interfejs API, za p
 
      Na przykład jeśli ustawisz opcję **ma niestandardowy Konstruktor** klasy domeny, a następnie skompilujesz rozwiązanie, zobaczysz komunikaty o błędach. Po dwukrotnym kliknięciu jednego z tych komunikatów o błędach zobaczysz komentarze w wygenerowanym kodzie, który wyjaśni, jakie dane mają być podane w kodzie niestandardowym.
 
-- Napisz własne szablony tekstowe, aby wygenerować kod specyficzny dla aplikacji. Można użyć plików dołączanych do udostępniania części szablonów, które są wspólne dla wielu projektów, i można utworzyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablonów projektu, aby skonfigurować projekty, które są inicjowane przy użyciu własnej struktury plików.
+- Napisz własne szablony tekstowe, aby wygenerować kod specyficzny dla aplikacji. Można użyć plików dołączanych do udostępniania części szablonów, które są wspólne dla wielu projektów, i można utworzyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Szablony projektów, aby skonfigurować projekty, które są inicjowane przy użyciu własnej struktury plików.
 
 ## <a name="generated-files-in-dsl"></a>Wygenerowane pliki w DSL
  Następujące wygenerowane pliki pojawiają się w projekcie **DSL** .
 
- *YourDsl* `Schema.xsd`
+ *YourDsl*`Schema.xsd`
 
  Schemat dla plików, które zawierają wystąpienia elementu DSL. Ten plik jest kopiowany do katalogu kompilacji (**bin**). Podczas instalowania programu DSL można skopiować ten plik do **folderu \Program Files\Microsoft Visual Studio 11.0 \ Xml\Schemas** , aby umożliwić zweryfikowanie plików modelu. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](../modeling/deploying-domain-specific-language-solutions.md).
 
@@ -72,7 +72,7 @@ Rozwiązanie języka specyficznego dla domeny (DSL) generuje interfejs API, za p
 
  (W przykładowym rozwiązaniu składnika jeden z konstruktorów połączeń nosi nazwę elemencie ConnectionBuilder, jest to współdziałanie, ponieważ relacja domeny nosi nazwę połączenie).
 
- Relacja jest tworzona w metodzie `Builder.Connect()` *relacji* . Wersja domyślna sprawdza, czy źródłowe i docelowe elementy modelu są akceptowalne, a następnie tworzy wystąpienie relacji. Na przykład:
+ Relacja jest tworzona w *Relationship* `Builder.Connect()` metodzie Relationship. Wersja domyślna sprawdza, czy źródłowe i docelowe elementy modelu są akceptowalne, a następnie tworzy wystąpienie relacji. Na przykład:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -90,35 +90,35 @@ Rozwiązanie języka specyficznego dla domeny (DSL) generuje interfejs API, za p
 
  Aby kolor i inne funkcje stylu były zmienne w czasie wykonywania, kliknij prawym przyciskiem myszy klasę na diagramie definicji DSL i wskaż polecenie **Dodaj uwidocznione**.
 
- Aby utworzyć dodatkowe funkcje stylu w czasie wykonywania, zobacz na przykład <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> i <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>.
+ Aby utworzyć dodatkowe funkcje stylu w czasie wykonywania, zobacz na przykład <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> i <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement> .
 
  `Diagram.cs`
 
- Zawiera klasę, która definiuje diagram. Pochodzi ona od <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>.
+ Zawiera klasę, która definiuje diagram. Pochodzi ona od <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> .
 
  Aby kolor i inne funkcje stylu były zmienne w czasie wykonywania, kliknij prawym przyciskiem myszy klasę na diagramie definicji DSL i wskaż polecenie **Dodaj uwidocznione**.
 
- Ponadto ten plik zawiera regułę `FixupDiagram`, która reaguje, gdy nowy element zostanie dodany do modelu. Reguła dodaje nowy kształt i łączy kształt z elementem modelu.
+ Ponadto ten plik zawiera `FixupDiagram` regułę, która reaguje, gdy nowy element zostanie dodany do modelu. Reguła dodaje nowy kształt i łączy kształt z elementem modelu.
 
  `DirectiveProcessor.cs`
 
- Ten procesor dyrektywy ułatwia użytkownikom pisanie szablonów tekstowych, które odczytują wystąpienie DSL. Procesor dyrektywy ładuje zestawy (dll) dla DSL i efektywnie wstawia `using` instrukcji dla przestrzeni nazw. Pozwala to kodowi w szablonach tekstowych używać klas i relacji zdefiniowanych w DSL.
+ Ten procesor dyrektywy ułatwia użytkownikom pisanie szablonów tekstowych, które odczytują wystąpienie DSL. Procesor dyrektywy ładuje zestawy (dll) dla DSL i efektywnie wstawia `using` instrukcje dla przestrzeni nazw. Pozwala to kodowi w szablonach tekstowych używać klas i relacji zdefiniowanych w DSL.
 
  Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md) i [Tworzenie niestandardowych procesorów dyrektywy T4](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
  `DomainClasses.cs`
 
- Implementacje klas domen zdefiniowanych przez użytkownika, w tym klasy abstrakcyjne i klasy głównej modelu. Są one uzyskiwane z <xref:Microsoft.VisualStudio.Modeling.ModelElement>.
+ Implementacje klas domen zdefiniowanych przez użytkownika, w tym klasy abstrakcyjne i klasy głównej modelu. Są one wyprowadzane z <xref:Microsoft.VisualStudio.Modeling.ModelElement> .
 
  Każda klasa domeny zawiera:
 
 - Definicja właściwości i zagnieżdżona Klasa obsługi dla każdej właściwości domeny. Można przesłonić OnValueChanging () i OnValueChanged (). Aby uzyskać więcej informacji, zobacz [Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md).
 
-   W przykładzie DSL Klasa `Comment` zawiera `Text` właściwości i klasę procedury obsługi `TextPropertyHandler`.
+   W przykładzie DSL `Comment` Klasa zawiera właściwość `Text` i klasę programu obsługi `TextPropertyHandler` .
 
 - Właściwości metody dostępu dla relacji, w których uczestniczy Ta klasa domeny. (Nie istnieje Klasa zagnieżdżona dla właściwości roli.)
 
-   W przykładzie DSL Klasa `Comment` ma metody dostępu, które uzyskują dostęp do modelu nadrzędnego za pomocą `ComponentModelHasComments` relacji osadzania.
+   W przykładzie DSL `Comment` Klasa ma metody dostępu, które uzyskują dostęp do modelu nadrzędnego przy użyciu relacji osadzania `ComponentModelHasComments` .
 
 - Konstruktor. Jeśli chcesz przesłonić te ustawienia, zestaw **ma konstruktora niestandardowego** dla klasy domeny.
 
@@ -130,7 +130,7 @@ Rozwiązanie języka specyficznego dla domeny (DSL) generuje interfejs API, za p
 
   `DomainModel.cs`
 
-  Klasa, która reprezentuje model domeny. Pochodzi ona od <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
+  Klasa, która reprezentuje model domeny. Pochodzi ona od <xref:Microsoft.VisualStudio.Modeling.DomainModel> .
 
 > [!NOTE]
 > Ta wartość nie jest taka sama jak Klasa główna modelu.
@@ -145,7 +145,7 @@ Rozwiązanie języka specyficznego dla domeny (DSL) generuje interfejs API, za p
 
  `DomainRelationships.cs`
 
- Każdy link między dwoma elementami w modelu jest reprezentowany przez wystąpienie klasy relacji domeny. Wszystkie klasy relacji pochodzą od <xref:Microsoft.VisualStudio.Modeling.ElementLink>, które z kolei są wyprowadzane z <xref:Microsoft.VisualStudio.Modeling.ModelElement>. Ponieważ jest to ModelElement, wystąpienie relacji może mieć właściwości i może być źródłem lub celem relacji.
+ Każdy link między dwoma elementami w modelu jest reprezentowany przez wystąpienie klasy relacji domeny. Wszystkie klasy relacji pochodzą od <xref:Microsoft.VisualStudio.Modeling.ElementLink> , które z kolei są wyprowadzane z <xref:Microsoft.VisualStudio.Modeling.ModelElement> . Ponieważ jest to ModelElement, wystąpienie relacji może mieć właściwości i może być źródłem lub celem relacji.
 
  `HelpKeywordHelper.cs`
 
@@ -175,7 +175,7 @@ Rozwiązanie języka specyficznego dla domeny (DSL) generuje interfejs API, za p
 
   `Shapes.cs`
 
-  Klasa dla każdej klasy kształtu w definicji DSL. Kształty są wyprowadzane z <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>. Aby uzyskać więcej informacji, zobacz [Dostosowywanie serializacji File Storage i XML](../modeling/customizing-file-storage-and-xml-serialization.md).
+  Klasa dla każdej klasy kształtu w definicji DSL. Kształty są wyprowadzane z <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> . Aby uzyskać więcej informacji, zobacz [Dostosowywanie serializacji File Storage i XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
   Aby zastąpić wygenerowane metody własnymi metodami w klasie częściowej, zestaw **generuje podwójne pochodne** dla łącznika w definicji DSL. Aby zastąpić Konstruktor własnym kodem, ustaw atrybut **ma konstruktora niestandardowego**.
 
@@ -187,10 +187,10 @@ Rozwiązanie języka specyficznego dla domeny (DSL) generuje interfejs API, za p
 
   Konfiguruje Przybornik, instalując prototypy grupy elementów w narzędziach elementów. Kopie tych prototypów są scalane z elementami docelowymi, gdy użytkownik uruchamia narzędzie.
 
-  @No__t_0 można przesłonić w celu zdefiniowania elementu przybornika, który tworzy grupę wielu obiektów. Można na przykład zdefiniować element reprezentujący obiekty, które mają podskładniki. Po zmianie kodu Zresetuj eksperymentalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], aby wyczyścić pamięć podręczną przybornika.
+  Można przesłonić, `CreateElementPrototype()` Aby zdefiniować element przybornika, który tworzy grupę kilku obiektów. Można na przykład zdefiniować element reprezentujący obiekty, które mają podskładniki. Po zmianie kodu Zresetuj wystąpienie eksperymentalne, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Aby wyczyścić pamięć podręczną przybornika.
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>Wygenerowane pliki w projekcie DslPackage
- DslPackage Couples model DSL do powłoki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zarządzania oknem, przybornikiem i poleceniami menu. Większość klas jest podwójnym pochodnym, dzięki czemu można przesłonić dowolną metodę.
+ DslPackage Couples model DSL do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] powłoki, zarządzanie oknem, przybornikiem i poleceniami menu. Większość klas jest podwójnym pochodnym, dzięki czemu można przesłonić dowolną metodę.
 
  `CommandSet.cs`
 
@@ -204,7 +204,7 @@ Rozwiązanie języka specyficznego dla domeny (DSL) generuje interfejs API, za p
 
  *YourDsl* `DocData` zarządza ładowaniem i zapisywaniem modelu do pliku, a następnie tworzy wystąpienie magazynu.
 
- Jeśli na przykład chcesz zapisać DSL w bazie danych zamiast pliku, możesz przesłonić metody `Load` i `Save`.
+ Jeśli na przykład chcesz zapisać DSL w bazie danych zamiast pliku, możesz przesłonić `Load` `Save` metody i.
 
  `DocView.cs`
 
@@ -281,7 +281,7 @@ namespace Company.EmbedInForm
 
  `EditorFactory.cs`
 
- Tworzy wystąpienia `DocData` i `DocView`. Jest on realizowany przy użyciu standardowego interfejsu, który [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] używany do otwierania edytora podczas uruchamiania pakietu DSL. Jest on przywoływany w atrybucie `ProvideEditorFactory` w Package.cs
+ Tworzy wystąpienia `DocData` i `DocView` . Jest to standardowy interfejs [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] używany do otwierania edytora podczas uruchamiania pakietu DSL. Odwołuje się do niego w `ProvideEditorFactory` atrybucie w Package.cs
 
  `GeneratedVSCT.vsct`
 
@@ -291,7 +291,7 @@ namespace Company.EmbedInForm
 
  Definiuje Eksploratora modeli dla DSL. Jest to widok drzewa modelu, który użytkownik widzi obok diagramu.
 
- Na przykład można przesłonić `InsertTreeView()`, aby zmienić kolejność, w jakiej elementy pojawiają się w Eksploratorze modelu.
+ Na przykład można przesłonić `InsertTreeView()` zmianę kolejności, w której elementy pojawiają się w Eksploratorze modelu.
 
  Jeśli chcesz, aby zaznaczenie w Eksploratorze modelu było zsynchronizowane z wybranym diagramem, możesz użyć następującego kodu:
 
@@ -337,14 +337,14 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  `Package.cs`
 
- Ten plik definiuje sposób integracji DSL z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Atrybuty klasy pakietu rejestrują DSL jako program obsługi dla plików, które mają rozszerzenie pliku, definiują jego Przybornik i definiują sposób otwierania nowego okna. Metoda Initialize () jest wywoływana jednokrotnie, gdy pierwszy DSL jest ładowany do wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Ten plik definiuje, w jaki sposób integruje się z usługą DSL [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Atrybuty klasy pakietu rejestrują DSL jako program obsługi dla plików, które mają rozszerzenie pliku, definiują jego Przybornik i definiują sposób otwierania nowego okna. Metoda Initialize () jest wywoływana jednokrotnie, gdy pierwszy DSL jest ładowany do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wystąpienia.
 
  `Source.extension.vsixmanifest`
 
- Aby dostosować ten plik, edytuj plik `.tt`.
+ Aby dostosować ten plik, Edytuj `.tt` plik.
 
 > [!WARNING]
-> Jeśli edytujesz plik TT w celu uwzględnienia zasobów, takich jak ikony lub obrazy, upewnij się, że zasób jest uwzględniony w kompilacji VSIX. W Eksplorator rozwiązań wybierz plik i upewnij się, że właściwość **include in VSIX** jest `True`.
+> Jeśli edytujesz plik TT w celu uwzględnienia zasobów, takich jak ikony lub obrazy, upewnij się, że zasób jest uwzględniony w kompilacji VSIX. W Eksplorator rozwiązań wybierz plik i upewnij się, że właściwość **include in VSIX** ma wartość `True` .
 
  Ten plik kontroluje sposób pakowania DSL do rozszerzenia integracji z programem Visual Studio (VSIX). Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](../modeling/deploying-domain-specific-language-solutions.md).
 

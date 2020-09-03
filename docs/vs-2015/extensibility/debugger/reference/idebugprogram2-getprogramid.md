@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetProgramId | Dokumentacja firmy Microsoft
+title: 'IDebugProgram2:: GetProgramId | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 19c29b5cec555f9e3ad5157d7b4581777be42c98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148673"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
@@ -40,15 +40,15 @@ int GetProgramId( 
   
 #### <a name="parameters"></a>Parametry  
  `pguidProgramId`  
- [out] Zwraca `GUID` dla tego programu.  
+ określoną Zwraca wartość `GUID` dla tego programu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Aparat debugowania (DE) musi zwrócić identyfikatora programu pierwotnie przekazana do [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) lub [Dołącz](../../../extensibility/debugger/reference/idebugengine2-attach.md) metody. Dzięki temu identyfikacji programu przez debuger składników.  
+ Aparat debugowania (DE) musi zwrócić identyfikator programu pierwotnie przesłany do metod [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) i [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) . Pozwala to na identyfikację programu we wszystkich składnikach debugera.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+ [Dołącz](../../../extensibility/debugger/reference/idebugengine2-attach.md)
