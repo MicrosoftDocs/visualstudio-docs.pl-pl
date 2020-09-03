@@ -18,17 +18,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b703d3ccc6ffbd5e2449a1768071b930f606f37f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281997"
 ---
 # <a name="insert-new-records-into-a-database"></a>Wstawianie nowych rekordów do bazy danych
 
 Aby wstawić nowe rekordy do bazy danych, można użyć `TableAdapter.Update` metody lub jednej z metod DBDirect TableAdapter ( `TableAdapter.Insert` Metoda). Aby uzyskać więcej informacji, zobacz [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
-Jeśli aplikacja nie używa TableAdapters, można użyć obiektów poleceń (na przykład <xref:System.Data.SqlClient.SqlCommand> ) do wstawienia nowych rekordów w bazie danych.
+Jeśli aplikacja nie używa TableAdapters, można użyć obiektów poleceń (na przykład  <xref:System.Data.SqlClient.SqlCommand> ) do wstawienia nowych rekordów w bazie danych.
 
 Jeśli Twoja aplikacja korzysta z zestawów danych do przechowywania, użyj `TableAdapter.Update` metody. `Update`Metoda wysyła wszystkie zmiany (aktualizacje, wstawienia i usunięcia) do bazy danych programu.
 

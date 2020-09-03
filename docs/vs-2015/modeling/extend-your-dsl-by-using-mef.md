@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d3257acde8d3c62aca64e3401ec18134601973e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669645"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozszerzanie DSL za pomocą MEF
@@ -104,13 +104,13 @@ Język specyficzny dla domeny można rozłożyć przy użyciu Managed Extensibil
    <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
    ```
 
-    Wstaw wiersz po istniejącej dyrektywie `<Include>`.
+    Wstaw wiersz po istniejącej `<Include>` dyrektywie.
 
 4. `Open DslDefinition.dsl.`
 
 5. W Eksploratorze DSL wybierz pozycję **Editor\Validation**.
 
-6. W okno Właściwości upewnij się, że co najmniej jedna z właściwości o nazwie **używa...** jest `true`.
+6. W okno Właściwości upewnij się, że co najmniej jedna z właściwości o nazwie **używa...** jest `true` .
 
 7. Na pasku narzędzi Eksplorator rozwiązań kliknij pozycję **Przekształć wszystkie szablony**.
 
@@ -118,36 +118,36 @@ Język specyficzny dla domeny można rozłożyć przy użyciu Managed Extensibil
 
 8. Kompiluj i uruchamiaj rozwiązanie, aby upewnić się, że nadal działa.
 
-   Funkcja DSL jest teraz MEF. Można pisać polecenia menu, programy obsługi gestów i ograniczenia sprawdzania poprawności jako rozszerzenia MEF. Te rozszerzenia można napisać w rozwiązaniu DSL wraz z innym kodem niestandardowym. Ponadto ty lub inni deweloperzy mogą pisać oddzielne rozszerzenia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], które rozszerzają język DSL.
+   Funkcja DSL jest teraz MEF. Można pisać polecenia menu, programy obsługi gestów i ograniczenia sprawdzania poprawności jako rozszerzenia MEF. Te rozszerzenia można napisać w rozwiązaniu DSL wraz z innym kodem niestandardowym. Ponadto ty lub inni deweloperzy mogą pisać oddzielne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia, które rozszerzają język DSL.
 
 ## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>Tworzenie rozszerzenia dla DSL z włączoną obsługą MEF
- Jeśli masz dostęp do MEF DSL utworzonego przez siebie lub inną osobę, możesz napisać dla niego rozszerzenia. Rozszerzenia mogą służyć do dodawania poleceń menu, programów obsługi gestów lub ograniczeń walidacji. Do tworzenia tych rozszerzeń służy rozwiązanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX). Rozwiązanie ma dwie części: projekt biblioteki klas, który kompiluje zestaw kodu, oraz projekt VSIX, który jest pakietem zestawu.
+ Jeśli masz dostęp do MEF DSL utworzonego przez siebie lub inną osobę, możesz napisać dla niego rozszerzenia. Rozszerzenia mogą służyć do dodawania poleceń menu, programów obsługi gestów lub ograniczeń walidacji. Do tworzenia tych rozszerzeń służy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązanie rozszerzenia (VSIX). Rozwiązanie ma dwie części: projekt biblioteki klas, który kompiluje zestaw kodu, oraz projekt VSIX, który jest pakietem zestawu.
 
 #### <a name="to-create-a-dsl-extension-vsix"></a>Aby utworzyć VSIX rozszerzenia DSL
 
-1. Utwórz nowy projekt biblioteki klas. W tym celu w oknie dialogowym **Nowy projekt** wybierz pozycję **Visual Basic** lub  **C# Wizualizacja** , a następnie wybierz pozycję **Biblioteka klas**.
+1. Utwórz nowy projekt biblioteki klas. W tym celu w oknie dialogowym **Nowy projekt** wybierz pozycję **Visual Basic** lub **Visual C#** , a następnie wybierz pozycję **Biblioteka klas**.
 
 2. W nowy projekt biblioteki klas Dodaj odwołanie do zestawu DSL.
 
-   - Ten zestaw ma zwykle nazwę kończącą się ciągiem ". DSL. dll ".
+   - Ten zestaw ma zwykle nazwę kończącą się ciągiem ".Dsl.dll".
 
-   - Jeśli masz dostęp do projektu DSL, możesz znaleźć plik zestawu w katalogu **\\bin DSL \\ \***
+   - Jeśli masz dostęp do projektu DSL, możesz znaleźć plik zestawu w ** \\ \\ \* koszu katalogu DSL**
 
    - Jeśli masz dostęp do pliku VSIX DSL, możesz znaleźć zestaw, zmieniając rozszerzenie nazwy pliku VSIX na ". zip". Dekompresowanie pliku zip.
 
 3. Dodaj odwołania do następujących zestawów .NET:
 
-   - Microsoft. VisualStudio. Modeling. Sdk. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   - Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   - Microsoft. VisualStudio. Modeling. Sdk. Shell. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
    - System.ComponentModel.Composition.dll
 
-   - System. Windows. Forms. dll
+   - System.Windows.Forms.dll
 
-4. Utwórz projekt VSIX w tym samym rozwiązaniu. W tym celu w oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual Basic** lub **C#Wizualizacja**, kliknij pozycję **rozszerzalność**, a następnie wybierz pozycję **Projekt VSIX**.
+4. Utwórz projekt VSIX w tym samym rozwiązaniu. W tym celu w oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual Basic** lub **Visual C#**, kliknij pozycję **rozszerzalność**, a następnie wybierz pozycję **Projekt VSIX**.
 
 5. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt VSIX, a następnie kliknij pozycję **Ustaw jako projekt startowy**.
 
@@ -159,25 +159,25 @@ Język specyficzny dla domeny można rozłożyć przy użyciu Managed Extensibil
 
    1. W polu **source. Extension. vsixmanifest**kliknij pozycję **Dodaj odwołanie** .
 
-   2. W oknie dialogowym kliknij pozycję **Dodaj ładunek** , a następnie Znajdź plik VSIX DSL. Plik VSIX jest skompilowany w rozwiązaniu DSL, w **DslPackage \\bin \\ \*** .
+   2. W oknie dialogowym kliknij pozycję **Dodaj ładunek** , a następnie Znajdź plik VSIX DSL. Plik VSIX jest skompilowany w rozwiązaniu DSL w **DslPackage \\ bin \\ \* **.
 
        Dzięki temu użytkownicy mogą instalować jednocześnie DSL i Twoje rozszerzenie. Jeśli użytkownik zainstalował już modem DSL, zostanie zainstalowane tylko rozszerzenie.
 
-9. Przejrzyj i zaktualizuj pozostałe pola **source. Extension. vsixmanifest**. Kliknij pozycję **Wybierz wersje** i sprawdź, czy są ustawione poprawne wersje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+9. Przejrzyj i zaktualizuj pozostałe pola **source. Extension. vsixmanifest**. Kliknij pozycję **Wybierz wersje** i sprawdź, czy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] są ustawione poprawne wersje.
 
 10. Dodaj kod do projektu biblioteki klas. Skorzystaj z przykładów w następnej sekcji jako przewodnika.
 
      Można dodać dowolną liczbę klas poleceń, gestów i walidacji.
 
-11. Aby przetestować rozszerzenie, naciśnij klawisz **F5**. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Utwórz lub Otwórz przykładowy plik DSL.
+11. Aby przetestować rozszerzenie, naciśnij klawisz **F5**. W eksperymentalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Utwórz lub Otwórz przykładowy plik DSL.
 
 ## <a name="writing-mef-extensions-for-dsls"></a>Pisanie rozszerzeń MEF dla językami DSL
  Można pisać rozszerzenia w projekcie kodu zestawu oddzielnego rozwiązania do rozszerzenia DSL. Możesz również użyć MEF w projekcie DslPackage, jako wygodny sposób pisania poleceń, gestów i kodu sprawdzania poprawności jako części DSL.
 
 ### <a name="menu-commands"></a>Polecenia menu
- Aby napisać polecenie menu, zdefiniuj klasę implementującą <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> i prefiks klasy z atrybutem, który jest zdefiniowany w DSL o nazwie *YourDsl* `CommandExtension`. Można napisać więcej niż jedną klasę poleceń menu.
+ Aby napisać polecenie menu, zdefiniuj klasę implementującą <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> i prefiks klasy z atrybutem, który jest zdefiniowany w DSL o nazwie *YourDsl* `CommandExtension` . Można napisać więcej niż jedną klasę poleceń menu.
 
- `QueryStatus()` jest wywoływana za każdym razem, gdy użytkownik kliknie prawym przyciskiem myszy diagram. Powinien on sprawdzić bieżące zaznaczenie i ustawić `command.Enabled`, aby wskazać, kiedy polecenie ma zastosowanie.
+ `QueryStatus()` jest wywoływana za każdym razem, gdy użytkownik kliknie prawym przyciskiem myszy diagram. Powinien on sprawdzić bieżące zaznaczenie i ustawić, `command.Enabled` Aby wskazać, kiedy polecenie ma zastosowanie.
 
 ```
 using System.ComponentModel.Composition;
@@ -245,7 +245,7 @@ namespace MyMefExtension
 ```
 
 ### <a name="gesture-handlers"></a>Programy obsługi gestu
- Procedura obsługi gestu może obsłużyć obiekty przeciągane na diagram z dowolnego miejsca, wewnątrz lub na zewnątrz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Poniższy przykład umożliwia użytkownikowi przeciąganie plików z Eksploratora Windows na diagram. Tworzy elementy, które zawierają nazwy plików.
+ Procedura obsługi gestu może obsłużyć obiekty przeciągane na diagram z dowolnego miejsca, wewnątrz lub na zewnątrz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Poniższy przykład umożliwia użytkownikowi przeciąganie plików z Eksploratora Windows na diagram. Tworzy elementy, które zawierają nazwy plików.
 
  Procedury obsługi można pisać, aby przeciągać z innych modeli DSL i modeli UML. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
@@ -322,7 +322,7 @@ namespace MefExtension
 ```
 
 ### <a name="validation-constraints"></a>Ograniczenia walidacji
- Metody walidacji są oznaczane przez atrybut `ValidationExtension` generowany przez DSL, a także przez <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>. Metoda może pojawić się w dowolnej klasie, która nie jest oznaczona przez atrybut.
+ Metody walidacji są oznaczane przez `ValidationExtension` atrybut generowany przez DSL, a także przez <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> . Metoda może pojawić się w dowolnej klasie, która nie jest oznaczona przez atrybut.
 
  Aby uzyskać więcej informacji, zobacz [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md).
 

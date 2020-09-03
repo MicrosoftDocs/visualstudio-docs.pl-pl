@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ffa2b0fd8cab35fc73031d3ead8a5803558c2c07
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667940"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Poradnik: Wykluczanie projektów z kompilacji
@@ -43,7 +43,7 @@ Możesz skompilować rozwiązanie bez kompilowania wszystkich projektów, które
 
 1. Na pasku menu wybierz **kompilacja**, **Configuration Manager**.
 
-2. Na liście **Konfiguracja aktywnego rozwiązania** wybierz pozycję **\<New >** .
+2. Na liście **Konfiguracja aktywnego rozwiązania** wybierz opcję **\<New>** .
 
 3. W polu **Nazwa** wprowadź nazwę konfiguracji rozwiązania.
 

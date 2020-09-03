@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 84d27dc6f5081a36a237748c091429cfdabbe841
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667178"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Ta powiązana metoda to metoda zapasowa następujących domyślnych metod wstawiania, aktualizowania lub usuwania
@@ -21,11 +21,11 @@ ms.locfileid: "72667178"
 
 Ta powiązana Metoda to metoda tworzenia kopii zapasowej dla następujących domyślnych metod INSERT, Update lub DELETE. Jeśli zostanie usunięty, te metody również zostaną usunięte. Czy chcesz kontynuować?
 
- Wybrana metoda `DataContext` jest obecnie używana jako jedna z metod INSERT, Update lub DELETE dla jednej z klas obiektów w Projektancie O/R. Usunięcie wybranej metody spowoduje, że Klasa jednostki, która używa tej metody, przywraca domyślne zachowanie w czasie wykonywania dla operacji INSERT, Update lub DELETE podczas aktualizacji.
+ Wybrana `DataContext` Metoda jest obecnie używana jako jedna z metod INSERT, Update lub DELETE dla jednej z klas obiektów w projektancie o/R. Usunięcie wybranej metody spowoduje, że Klasa jednostki, która używa tej metody, przywraca domyślne zachowanie w czasie wykonywania dla operacji INSERT, Update lub DELETE podczas aktualizacji.
 
 ### <a name="to-delete-the-selected-method-causing-the-entity-class-to-use-runtime-updates"></a>Aby usunąć wybraną metodę, powodując, że Klasa jednostki używa aktualizacji środowiska uruchomieniowego
 
-- Kliknij przycisk **Tak**.
+- Kliknij przycisk **Yes** (Tak).
 
      Wybrana metoda jest usuwana, a wszystkie klasy, które używają tej metody do przesłaniania zachowania aktualizacji, są przywracane przy użyciu domyślnego zachowania środowiska uruchomieniowego LINQ to SQL.
 

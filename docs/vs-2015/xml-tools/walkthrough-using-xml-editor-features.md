@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fa954cfb356593a4f22a44faddd69acdcfc93e37
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669565"
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>Przewodnik: korzystanie z funkcji edytora XML
@@ -30,13 +30,13 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
 2. W okienku **Szablony** wybierz pozycję **plik XML** , a następnie kliknij pozycję **Otwórz**.
 
-     Nowy plik zostanie otwarty w edytorze. Plik zawiera domyślną deklarację XML, `<?xml version="1.0" encoding="utf-8">`.
+     Nowy plik zostanie otwarty w edytorze. Plik zawiera domyślną deklarację XML, `<?xml version="1.0" encoding="utf-8">` .
 
-3. W oknie właściwości dokumentu kliknij przycisk przeglądania ( **...** ) w polu **schematy** .
+3. W oknie właściwości dokumentu kliknij przycisk przeglądania (**...**) w polu **schematy** .
 
      Zostanie wyświetlone okno dialogowe **schematy XSD** .
 
-4. Kliknij przycisk **Dodaj**.
+4. Kliknij pozycję **Dodaj**.
 
      Zostanie wyświetlone okno dialogowe **otwieranie schematu XSD** .
 
@@ -60,21 +60,21 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
     - **Pracownik** , aby dodać element główny.
 
-2. Wybierz pozycję **\<!--** , aby dodać węzeł komentarza, a następnie naciśnij klawisz ENTER.
+2. Wybierz pozycję ** \< !--** , aby dodać węzeł komentarza, a następnie naciśnij klawisz ENTER.
 
      Edytor wstawia tag końcowy komentarza i umieszcza kursor między tagami początkowymi i końcowymi komentarzami.
 
 3. Wpisz w **testowym pliku XML**.
 
-4. W nowym wierszu wpisz `<` i wybierz pozycję **Pracownik** z listy członków.
+4. W nowym wierszu wpisz `<` i wybierz pozycję **Employee** z listy członków.
 
-     Edytor dodaje początek elementu XML, `<employee`. W tym momencie można dodać atrybuty do elementu lub zamknąć tag początkowy, wpisując `>`.
+     Edytor dodaje początek elementu XML, `<employee` . W tym momencie można dodać atrybuty do elementu lub zamknąć tag początkowy, wpisując ciąg `>` .
 
-5. Wpisz `>`, aby zamknąć tag.
+5. Wpisz, `>` Aby zamknąć tag.
 
 6. Edytor dodaje tag końcowy. Tag końcowy jest dodawany ze falistą podkreśleniem wskazującym błąd walidacji. Etykietka narzędzia wyświetla komunikat: element "Employee" ma niekompletną zawartość. Oczekiwano elementu "ID".
 
-7. Wpisz `<` i wybierz **Identyfikator** z listy elementów członkowskich. Następnie wpisz `>`.
+7. Wpisz `<` i wybierz **Identyfikator** z listy elementów członkowskich. Następnie wpisz polecenie `>` .
 
      Edytor dodaje element XML, `<ID></ID>` i położenie kursora po tagu początkowym ID.
 
@@ -90,9 +90,9 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
      Podkreślenie faliste i etykietka narzędzia są czyszczone pod wartością elementu ID. Etykietka narzędzia dla tagu końcowego pracownika wyświetla teraz komunikat: element "pracownik" ma niekompletną zawartość. Oczekiwano daty "zatrudnienie".
 
-11. Umieść kursor po tagu End ID, wpisz `<`, wybierz pozycję Zatrudnij z listy członków, a następnie wpisz `>`.
+11. Umieść kursor po tagu End ID, wpisz tekst `<` , wybierz pozycję Zatrudnij z listy członków, a następnie wpisz tekst `>` .
 
-     Edytor dodaje element XML, `<hire-date></hire-date>` i położenie kursora po tagu początkowym zatrudnienia.
+     Edytor dodaje element XML, i umieszcza `<hire-date></hire-date>` kursor po tagu początkowym data zatrudnienia.
 
 12. Wpisz wartość **2003-01-10** dla wartości daty zatrudnienia.
 
@@ -104,7 +104,7 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
 ### <a name="to-save-the-xml-document"></a>Aby zapisać dokument XML
 
-1. Z menu **plik** wybierz polecenie **Zapisz jako**.
+1. Z menu **Plik** wybierz pozycję **Zapisz jako**.
 
      Zostanie wyświetlone okno dialogowe **Zapisywanie pliku jako** . Domyślną nazwą pliku jest "xmlplik1".
 

@@ -1,5 +1,5 @@
 ---
-title: Zadanie FindInList | Dokumenty firmy Microsoft
+title: FindInList — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,34 +17,34 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 915265a775f572467ad1296499bdd3201adc1f8b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634152"
 ---
 # <a name="findinlist-task"></a>FindInList — zadanie
 
-Na określonej liście znajduje element, który ma pasujące itemspec.
+Na określonej liście znajduje się element, który ma pasującą specyfikacja_elementu.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli opisano parametry [zadania FindInList](../msbuild/findinlist-task.md).
+ W poniższej tabeli opisano parametry [zadania FindInList —](../msbuild/findinlist-task.md).
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`CaseSensitive`|Parametr `Boolean` opcjonalny.<br /><br /> Jeśli `true`w wyszukiwaniu rozróżniana jest wielkość liter; w przeciwnym razie tak nie jest. Wartością `true`domyślną jest .|
-|`FindLastMatch`|Parametr `Boolean` opcjonalny.<br /><br /> Jeśli `true`, powrót ostatniego dopasowania; w przeciwnym razie zwróć pierwszy mecz. Wartością `false`domyślną jest .|
-|`ItemFound`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy tylko do odczytu.<br /><br /> Pierwszy pasujący element znaleziony na liście, jeśli istnieje.|
-|`ItemSpecToFind`|Wymagany parametr interfejsu `String`.<br /><br /> Itemspec do wyszukania.|
-|`List`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Lista, na której ma być wyszukiwana itemspec.|
-|`MatchFileNameOnly`|Parametr `Boolean` opcjonalny.<br /><br /> Jeśli `true`, dopasować tylko część nazwy pliku itemspec; w przeciwnym razie, dopasować do całego itemspec. Wartością `true`domyślną jest .|
+|`CaseSensitive`|Opcjonalny `Boolean` parametr.<br /><br /> W przypadku `true` wyszukiwania rozróżniana jest wielkość liter; w przeciwnym razie nie jest. Wartość domyślna to `true` .|
+|`FindLastMatch`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , zwróć ostatni odpowiednik; w przeciwnym razie Zwróć pierwsze dopasowanie. Wartość domyślna to `false` .|
+|`ItemFound`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy tylko do odczytu.<br /><br /> Pierwszy pasujący element znajduje się na liście, jeśli istnieje.|
+|`ItemSpecToFind`|Wymagany parametr interfejsu `String`.<br /><br /> Specyfikacja_elementu do wyszukania.|
+|`List`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Lista, w której ma zostać wyszukana wartość specyfikacja_elementu.|
+|`MatchFileNameOnly`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` dopasowuje się tylko do części nazwy pliku specyfikacja_elementu; w przeciwnym razie dopasowuje się do całej klasy specyfikacja_elementu. Wartość domyślna to `true` .|
 
 ## <a name="remarks"></a>Uwagi
 
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Zadania](../msbuild/msbuild-tasks.md)
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

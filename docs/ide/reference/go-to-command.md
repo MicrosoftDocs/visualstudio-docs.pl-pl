@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 535906d8b8d7f8ba0c2984d22ceead18a0d47c2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569208"
 ---
 # <a name="go-to-command"></a>Przejdź do — Polecenie
@@ -31,14 +31,14 @@ Edit.GoTo [linenumber]
 
 ## <a name="arguments"></a>Argumenty
 `linenumber`\
-Element opcjonalny. Liczba całkowita reprezentująca numer wiersza, do który ma się udać.
+Opcjonalny. Liczba całkowita reprezentująca liczbę wierszy, które mają zostać przechodzenie.
 
 ## <a name="remarks"></a>Uwagi
-Numerowanie wierszy rozpoczyna się od jednego. Jeśli wartość `linenumber` jest mniejsza niż jedna, zostanie wyświetlona pierwsza linia. Jeśli wartość `linenumber` jest większa niż liczba ostatniego wiersza, zostanie wyświetlona ostatnia linia.
+Numerowanie wierszy rozpoczyna się od jednej. Jeśli wartość `linenumber` jest mniejsza od 1, zostanie wyświetlona pierwsza linia. Jeśli wartość `linenumber` jest większa niż liczba ostatniego wiersza, zostanie wyświetlony ostatni wiersz.
 
-Jeśli wartość `linenumber` dla nie jest określona, zostanie wyświetlone okno dialogowe **Przejdź do wiersza.**
+Jeśli wartość `linenumber` nie jest określona, zostanie wyświetlone okno dialogowe **Przejdź do wiersza** .
 
-Alias tego polecenia to GoToLn.
+Alias dla tego polecenia to GoToLn.
 
 ## <a name="example"></a>Przykład
 
@@ -48,7 +48,7 @@ Alias tego polecenia to GoToLn.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)
-- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
+- [Znajdź/pole polecenia](../../ide/find-command-box.md)
 - [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

@@ -18,13 +18,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bb46d3bf7096d0a7e14ce3926514d946d7536e2d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668115"
 ---
-# <a name="how-to-create-associations-between-types-class-designer"></a>Instrukcje: tworzenie skojarzeń między typami (Projektant klas)
+# <a name="how-to-create-associations-between-types-class-designer"></a>Instrukcje: Tworzenie skojarzeń między typami (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Linie skojarzenia w Konstruktorze klasy pokazują relacje klas na diagramie. Linia skojarzenia reprezentuje klasę, która jest typem właściwości lub polem innej klasy w projekcie. Linii skojarzeń zwykle używa się do ilustrowania najważniejszych relacji między klasami w projekcie.
@@ -46,7 +46,7 @@ Linie skojarzenia w Konstruktorze klasy pokazują relacje klas na diagramie. Lin
 
 - Na powierzchni diagramu kliknij etykietę linii skojarzenia i ją wyedytuj.
 
-  \- lub-
+  \- oraz
 
 1. Kliknij kształt, który zawiera właściwość, która jest wyświetlana jako skojarzenie.
 
@@ -57,4 +57,4 @@ Linie skojarzenia w Konstruktorze klasy pokazują relacje klas na diagramie. Lin
      Nazwa zostanie zaktualizowana w oknie **Szczegóły klasy** , w wierszu skojarzenia, w okno właściwości i w kodzie.
 
 ## <a name="see-also"></a>Zobacz też
- [Instrukcje: Zmiana między notacją składowych i notacją skojarzeń (Projektant klas)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
+ [Porady: zmiana pomiędzy notacją członka i skojarzeniem notacji (Projektant klas)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 49cecff999e0155209ba58c20c0d623b15d63698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667827"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Kontrolowanie widoczności ikony lub elementu Decorator
@@ -62,13 +62,13 @@ ms.locfileid: "72667827"
 
 1. Dodaj właściwość domeny obliczeniowej do klasy domeny. W oknie **Właściwości** ustaw następujące wartości:
 
-     **Jest przeglądalna =** `False` **— spowoduje to ukrycie właściwości użytkownika**
+     **Jest przeglądalna =** `False` **— spowoduje to ukrycie właściwości użytkownika**    
 
-     **Rodzaj =** `Calculated` **— oznacza to, że będzie można dostarczyć kod, który oblicza jego wartość**
+     **Rodzaj =** `Calculated` **-oznacza to, że będzie można dostarczyć kod, który oblicza jego wartość**    
 
      **Nazwa** na przykład **DecoratorControl**
 
-     **Wpisz**  =  `Boolean`
+     **Wprowadź** = `Boolean`
 
      Aby uzyskać więcej informacji, zobacz [właściwości magazynu obliczeniowego i niestandardowego](../modeling/calculated-and-custom-storage-properties.md).
 
@@ -80,7 +80,7 @@ ms.locfileid: "72667827"
 
     3. W **Właściwości filtru**zaznacz właściwość **DecoratorControl**.
 
-    4. W obszarze **wpisy widoczności**wprowadź `True`.
+    4. W obszarze **wpisy widoczności**wprowadź `True` .
 
 3. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań.
 

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 258fc138f032d34e57df69386b6849fc3a0650a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547592"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definiowanie ograniczeń walidacji dla modeli UML
@@ -89,7 +89,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 2. Chyba że rozwiązanie zawiera już jeden, Utwórz projekt VSIX:
 
-    1. W **Eksplorator rozwiązań**, w menu skrótów rozwiązania, wybierz **Dodaj**, **Nowy projekt**.
+    1. W **Eksplorator rozwiązań**, w menu skrótów rozwiązania, wybierz  **Dodaj**, **Nowy projekt**.
 
     2. W obszarze **zainstalowane szablony**rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **rozszerzalność**. W środkowej kolumnie kliknij pozycję **Projekt VSIX**.
 
@@ -178,7 +178,7 @@ using Microsoft.VisualStudio.Uml.Classes;
     }
     ```
 
-## <a name="executing-a-validation-constraint"></a><a name="Executing"></a>Wykonywanie ograniczenia walidacji
+## <a name="executing-a-validation-constraint"></a><a name="Executing"></a> Wykonywanie ograniczenia walidacji
  W celach testowych wykonaj metody walidacji w trybie debugowania.
 
 #### <a name="to-test-the-validation-constraint"></a>Aby przetestować ograniczenie walidacji
@@ -215,11 +215,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - Poprawne `Export` i `ValidationMethod` atrybuty są dołączone do metod walidacji.
 
-    - `ValidationCategories.Menu`jest uwzględniony w argumencie `ValidationMethod` atrybutu i składa się z innych wartości przy użyciu operatora logicznego OR (&#124;).
+    - `ValidationCategories.Menu` jest uwzględniony w argumencie `ValidationMethod` atrybutu i składa się z innych wartości przy użyciu operatora logicznego OR (&#124;).
 
     - Parametry wszystkich `Import` `Export` atrybutów i są prawidłowe.
 
-## <a name="evaluating-the-constraint"></a><a name="Implementing"></a>Ocenianie ograniczenia
+## <a name="evaluating-the-constraint"></a><a name="Implementing"></a> Ocenianie ograniczenia
  Metoda walidacji powinna określać, czy ograniczenie walidacji, które ma zostać zastosowane, ma wartość PRAWDA lub FAŁSZ. W przypadku wartości true nie należy nic robić. W przypadku wartości false powinien zgłosić błąd przy użyciu metod dostarczonych przez `ValidationContext` parametr.
 
 > [!NOTE]
@@ -259,7 +259,7 @@ public void ValidateSomething
 |Podpis|Opis|
 |-|-|
 |`[Export(typeof(System.Action <ValidationContext, object>))]`|Definiuje metodę jako ograniczenie walidacji przy użyciu Managed Extensibility Framework (MEF).|
-|`[ValidationMethod (ValidationCategories.Menu)]`|Określa, kiedy zostanie wykonana Walidacja. Użyj opcji bitowe lub (&#124;), jeśli chcesz połączyć więcej niż jedną opcję.<br /><br /> `Menu`= wywoływane przez menu walidacji.<br /><br /> `Save`= wywoływana przy zapisywaniu modelu.<br /><br /> `Open`= Wywołano podczas otwierania modelu. `Load`= wywoływana przy zapisywaniu modelu, ale w przypadku naruszenia ostrzega użytkownika, że może nie być możliwe ponowne otwarcie modelu. Wywoływana również podczas ładowania, zanim model zostanie przeanalizowany.|
+|`[ValidationMethod (ValidationCategories.Menu)]`|Określa, kiedy zostanie wykonana Walidacja. Użyj opcji bitowe lub (&#124;), jeśli chcesz połączyć więcej niż jedną opcję.<br /><br /> `Menu` = wywoływane przez menu walidacji.<br /><br /> `Save` = wywoływana przy zapisywaniu modelu.<br /><br /> `Open` = Wywołano podczas otwierania modelu. `Load` = wywoływana przy zapisywaniu modelu, ale w przypadku naruszenia ostrzega użytkownika, że może nie być możliwe ponowne otwarcie modelu. Wywoływana również podczas ładowania, zanim model zostanie przeanalizowany.|
 |`public void ValidateSomething`<br /><br /> `(ValidationContext context,`<br /><br /> `IElement element)`|Zastąp drugi parametr `IElement` typem elementu, do którego ma zostać zastosowane ograniczenie. Metoda ograniczenia zostanie wywołana dla wszystkich elementów w określonym typie.<br /><br /> Nazwa metody jest nieważna.|
 
  Można zdefiniować dowolną liczbę metod walidacji, z różnymi typami w drugim parametrze. Po wywołaniu walidacji każda metoda sprawdzania poprawności zostanie wywołana dla każdego elementu modelu, który jest zgodny z typem parametru.
@@ -269,11 +269,11 @@ public void ValidateSomething
 
  `context.LogError("error string", errorCode, elementsWithError);`
 
-- `"error string"`pojawia się w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Lista błędów
+- `"error string"` pojawia się w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Lista błędów
 
-- `errorCode`jest ciągiem, który powinien być unikatowym identyfikatorem błędu
+- `errorCode` jest ciągiem, który powinien być unikatowym identyfikatorem błędu
 
-- `elementsWithError`identyfikuje elementy w modelu. Gdy użytkownik kliknie dwukrotnie raport o błędach, zostanie wybrany kształt reprezentujący ten element.
+- `elementsWithError` identyfikuje elementy w modelu. Gdy użytkownik kliknie dwukrotnie raport o błędach, zostanie wybrany kształt reprezentujący ten element.
 
   `LogError(),``LogWarning()`i `LogMessage()` umieszczaj komunikaty w różnych sekcjach listy błędów.
 
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);
 ```
 
-### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a>Koordynowanie wielu walidacji
+### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a> Koordynowanie wielu walidacji
  Po wywołaniu walidacji, na przykład przez użytkownika z menu diagramu, każda metoda sprawdzania poprawności jest stosowana do każdego elementu modelu. Oznacza to, że w pojedynczym wywołaniu struktury walidacji ta sama metoda może być stosowana wiele razy do różnych elementów.
 
  Jest to problem dotyczący walidacji, które zajmują się relacjami między elementami. Można na przykład napisać walidację, która zaczyna się od, powiedzmy, przypadek użycia i przechodzą relacje **include** , aby sprawdzić, czy nie ma żadnych pętli. Ale jeśli metoda jest stosowana do każdego przypadku użycia w modelu, który ma wiele linków **dołączania** , prawdopodobnie wielokrotnie przetwarza te same obszary modelu.
@@ -363,7 +363,7 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|Pobierz wartość.|
 |`Context.GetValue<T>()`|Pobierz wartość określonego typu.|
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Instalowanie i odinstalowywanie rozszerzenia
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Instalowanie i odinstalowywanie rozszerzenia
  Rozszerzenie można zainstalować [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] zarówno na swoim komputerze, jak i na innych komputerach.
 
 #### <a name="to-install-an-extension"></a>Aby zainstalować rozszerzenie
@@ -396,7 +396,7 @@ context.LogError(... , usecase);
 
    *% LocalAppData%* **\Microsoft\VisualStudio \\ [wersja] \Extensions**
 
-## <a name="example"></a><a name="Example"></a>Przyklad
+## <a name="example"></a><a name="Example"></a> Przyklad
  Ten przykład odnajduje pętle w relacji zależności między elementami.
 
  Zostanie zweryfikowane zarówno przy zapisie, jak i w menu walidacji.

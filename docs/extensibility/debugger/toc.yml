@@ -148,7 +148,7 @@
       items:
         - name: Zadania debugowania
           href: debugging-tasks.md
-        - name: Problemy dotyczące zabezpieczeń
+        - name: Problemy z zabezpieczeniami
           href: security-issues.md
         - name: Uruchamianie programu
           items:

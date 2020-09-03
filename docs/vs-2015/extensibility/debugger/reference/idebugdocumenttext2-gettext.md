@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentText2:: gettext | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 066c2c025fe7b1c83fb30cb3a0e1a7b61d8c2c41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200181"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
@@ -46,22 +46,22 @@ int GetText( 
   
 #### <a name="parameters"></a>Parametry  
  `pos`  
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) strukturę, która wskazuje lokalizację tekst, który ma zostać pobrane.  
+ podczas Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , która wskazuje lokalizację tekstu do pobrania.  
   
  `cMaxChars`  
- [in] Maksymalna liczba znaków z tekstu, które mają zostać pobrane.  
+ podczas Maksymalna liczba znaków w tekście do pobrania.  
   
  `pText`  
- [out w] Wskaźnik do buforu, który ma zostać wypełniona odpowiedni tekst. Ten bufor musi mieć możliwość zawierać co najmniej `cMaxChars` liczby znaków dwubajtowych.  
+ [in. out] Wskaźnik do buforu, który ma zostać wypełniony z żądanym tekstem. Ten bufor musi zawierać co najmniej `cMaxChars` liczbę znaków dwubajtowych.  
   
  `pcNumChars`  
- [out] Zwraca liczbę znaków, które faktycznie pobrane.  
+ określoną Zwraca liczbę znaków rzeczywiście pobranych.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Ten przykład pokazuje, jak można wywołać tej metody za pomocą języka C#.  
+ Ten przykład pokazuje, jak ta metoda może być wywoływana z języka C#.  
   
 ```csharp  
 using System.Runtime.Interop.Services;  

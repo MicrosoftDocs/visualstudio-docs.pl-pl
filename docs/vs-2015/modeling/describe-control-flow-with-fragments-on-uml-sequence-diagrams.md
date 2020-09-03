@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40f48891107c2eb3250b6b050e00c3650812d386
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669813"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Opisywanie przepływu sterowania przy użyciu fragmentów w diagramach sekwencji UML
@@ -102,19 +102,19 @@ W diagramie sekwencji UML *połączone fragmenty* pozwalają pokazać pętle, ga
     > [!NOTE]
     > Różne rodzaje połączonego fragmentu mają różne właściwości.
 
-## <a name="KindsOfFragment"></a>Rodzaje połączonego fragmentu
+## <a name="kinds-of-combined-fragment"></a><a name="KindsOfFragment"></a> Rodzaje połączonego fragmentu
 
 ### <a name="fragments-describing-control-flow"></a>Fragmenty opisujące przepływ sterowania
  Prosty diagram sekwencji pokazuje tylko jedną typową sekwencję. Możesz użyć następujących typów połączonych fragmentów, aby opisać różnice, które mogą wystąpić w różnych przypadkach.
 
 |Typ fragmentu|Opis|
 |-------------------|-----------------|
-|**Uszlachetniania**|Opcjonalny. Obejmuje sekwencję, która może być lub może nie wystąpić. W strażniku można określić warunek, pod którym występuje.|
+|**Opt**|Opcjonalny. Obejmuje sekwencję, która może być lub może nie wystąpić. W strażniku można określić warunek, pod którym występuje.|
 |**+**|Zawiera listę fragmentów zawierających Alternatywne sekwencje komunikatów. Tylko jedna sekwencja występuje w dowolnym momencie.<br /><br /> W każdym fragmencie można umieścić funkcję Guard, aby wskazać, w jaki sposób można jej uruchomić. Funkcja **else** wskazuje fragment, który powinien zostać uruchomiony, jeśli żadna inna ochrona nie ma wartości true. Jeśli wszystkie zabezpieczenia mają wartość false i nie ma żadnych **innych**, nie są wykonywane żadne fragmenty.|
 |**For**|Fragment powtarza liczbę razy. W obszarze Ochrona można wskazać warunek, pod którym powinien on być powtarzany.<br /><br /> Połączone fragmenty pętli mają właściwości **min** i **Max**, które wskazują minimalną i maksymalną liczbę przypadków, w których fragment może być powtórzony. Wartość domyślna nie jest ograniczeniem.|
 |**Przerwij**|W przypadku wykonania tego fragmentu pozostała część sekwencji zostanie porzucona. Możesz użyć funkcji Guard, aby wskazać stan, w którym nastąpi przerwanie.|
 |**Cena**|Równoległ. Zdarzenia w fragmentach mogą być przeplatane.|
-|**Najistotniejsz**|Używany w fragmencie par lub SEQ. Wskazuje, że komunikaty w tym fragmencie nie mogą być przeplotem z innymi komunikatami.|
+|**Krytyczne**|Używany w fragmencie par lub SEQ. Wskazuje, że komunikaty w tym fragmencie nie mogą być przeplotem z innymi komunikatami.|
 |**Sekwencja**|Istnieją co najmniej dwa fragmenty operandu. Komunikaty dotyczące tej samej linii życia muszą wystąpić w kolejności fragmentów. W przypadku, gdy nie obejmują tych samych linii życia, komunikaty z różnych fragmentów mogą być przeplatane równolegle.|
 |**Surowszych**|Istnieją co najmniej dwa fragmenty operandu. Fragmenty muszą wystąpić w określonej kolejności.|
 

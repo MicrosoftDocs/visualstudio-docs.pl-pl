@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 115c0e733716994ba463eada938f8ff908612d0f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547761"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Metody z atrybutem APTCA powinny wywoływać tylko metody z atrybutem APTCA
@@ -40,9 +40,9 @@ ms.locfileid: "85547761"
 
  Gdy atrybut APTCA jest obecny w w pełni zaufanym zestawie, a zestaw wykonuje kod w innym zestawie, który nie zezwala częściowo zaufanym obiektom wywołującym, możliwe jest wykorzystanie zabezpieczeń. Jeśli dwie metody `M1` i `M2` spełniają poniższe warunki, złośliwe obiekty wywołujące mogą użyć metody, `M1` Aby pominąć niejawne, pełne żądanie linku, które chroni `M2` :
 
-- `M1`to metoda publiczna zadeklarowana w w pełni zaufanym zestawie, który ma atrybut APTCA.
+- `M1` to metoda publiczna zadeklarowana w w pełni zaufanym zestawie, który ma atrybut APTCA.
 
-- `M1`wywołuje metodę `M2` spoza `M1` zestawu.
+- `M1` wywołuje metodę `M2` spoza `M1` zestawu.
 
 - `M2`zestaw nie ma atrybutu APTCA i dlatego nie powinien być wykonywany przez lub w imieniu wywołujących częściowo zaufanych.
 

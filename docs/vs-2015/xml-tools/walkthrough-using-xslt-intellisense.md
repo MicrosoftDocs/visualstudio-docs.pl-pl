@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1b65f2279270be0d5baef16d6d06e35a7fb0b854
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669543"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Przewodnik: używanie funkcji XSLT IntelliSense
@@ -47,22 +47,22 @@ W tym instruktażu pokazano, jak używać funkcji IntelliSense XSLT do autouzupe
     </xsl:stylesheet>
     ```
 
-2. Wstaw kursor po `<xsl:template name="msg23" match="msg23">` i naciśnij klawisz ENTER. Następnie zacznij pisać następujący `xsl:call-template` element:
+2. Wstaw kursor po `<xsl:template name="msg23" match="msg23">` naciśnięciu klawisza ENTER. Następnie zacznij wpisywać następujący `xsl:call-template` element:
 
     ```
     <xsl:call-template name="localized-message">
     </xsl:call-template>
     ```
 
-     Lista nazw szablonów pojawia się w atrybucie `name=""` elementu `xsl:call-template` podczas wpisywania.
+     Lista nazw szablonów pojawia się w `name=""` atrybucie `xsl:call-template` elementu podczas pisania.
 
-3. Wstaw kursor po `<xsl:call-template name="localized-message">` i naciśnij klawisz ENTER. Następnie zacznij pisać następujący `xsl:with-param` element:
+3. Wstaw kursor po `<xsl:call-template name="localized-message">` naciśnięciu klawisza ENTER. Następnie zacznij wpisywać następujący `xsl:with-param` element:
 
     ```
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
     ```
 
-     Lista nazw parametrów pojawia się w atrybucie `name=""` elementu `xsl:with-param`.
+     Lista nazw parametrów pojawia się w `name=""` atrybucie `xsl:with-param` elementu.
 
 ### <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>Aby użyć funkcji IntelliSense w atrybucie Mode elementu xsl: Apply-templates
 
@@ -113,13 +113,13 @@ W tym instruktażu pokazano, jak używać funkcji IntelliSense XSLT do autouzupe
     </xsl:stylesheet>
     ```
 
-2. Wstaw kursor po `<xsl:apply-templates select="phone" />` i naciśnij klawisz ENTER. Następnie zacznij pisać następujący `xsl: apply-templates` element:
+2. Wstaw kursor po `<xsl:apply-templates select="phone" />` naciśnięciu klawisza ENTER. Następnie zacznij wpisywać następujący `xsl: apply-templates` element:
 
     ```
     <xsl:apply-templates select="phone"  mode="accountNumber">
     ```
 
-     Lista trybów szablonów pojawia się w atrybucie `mode=""` elementu `xsl:apply-templates`.
+     Lista trybów szablonów pojawia się w `mode=""` atrybucie `xsl:apply-templates` elementu.
 
 ### <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>Aby użyć funkcji IntelliSense we właściwościach stylesheet-prefix i prefix elementu xsl: Namespace-alias
 
@@ -154,13 +154,13 @@ W tym instruktażu pokazano, jak używać funkcji IntelliSense XSLT do autouzupe
     </xsl:stylesheet>
     ```
 
-2. Wstaw kursor po `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` i naciśnij klawisz ENTER. Następnie zacznij pisać następujący `xsl:namespace-alias` element:
+2. Wstaw kursor po `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` naciśnięciu klawisza ENTER. Następnie zacznij wpisywać następujący `xsl:namespace-alias` element:
 
     ```
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>
     ```
 
-     Zauważ, jak lista prefiksów pojawiła się w `stylesheet-prefix` i `result-prefix` atrybutów elementu `xsl:namespace-alias`.
+     Zwróć uwagę na to, jak lista prefiksów występuje `stylesheet-prefix` w `result-prefix` atrybuty i `xsl:namespace-alias` elementu.
 
 ## <a name="see-also"></a>Zobacz też
- [Funkcje IntelliSense w edytorze XML](../xml-tools/xml-editor-intellisense-features.md)
+ [Funkcje IntelliSense edytora XML](../xml-tools/xml-editor-intellisense-features.md)

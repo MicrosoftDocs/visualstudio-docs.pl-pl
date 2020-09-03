@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 657bb91295134352fb00649ad06f59e34593c578
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669901"
 ---
 # <a name="define-packages-and-namespaces"></a>Definiowanie pakietów i przestrzeni nazw
@@ -47,18 +47,18 @@ W programie Visual Studio *pakiet* jest kontenerem dla definicji elementów UML,
 
  [Właściwości pakietów](#Properties)
 
-## <a name="Namespaces"></a>Przestrzeni
+## <a name="namespaces"></a><a name="Namespaces"></a> Przestrzeni
  Pakiety są przydatne do rozdzielania pracy z różnymi obszarami. Każdy pakiet definiuje przestrzeń nazw, aby nazwy zdefiniowane w różnych pakietach nie powodowały konfliktów ze sobą.
 
- Właściwość kwalifikowana nazwa każdego elementu jest kwalifikowana nazwa pakietu, do którego należy, a następnie jego własna nazwa. Na przykład jeśli pakiet jest nazywany `MyPackage`, Klasa w pakiecie będzie miała kwalifikowaną nazwę, taką jak `MyPackage::MyClass`. Ponieważ każdy element jest zawarty w modelu, każda kwalifikowana nazwa zaczyna się od nazwy modelu.
+ Właściwość kwalifikowana nazwa każdego elementu jest kwalifikowana nazwa pakietu, do którego należy, a następnie jego własna nazwa. Na przykład jeśli pakiet jest wywoływany `MyPackage` , Klasa w pakiecie będzie miała kwalifikowaną nazwę, taką jak `MyPackage::MyClass` . Ponieważ każdy element jest zawarty w modelu, każda kwalifikowana nazwa zaczyna się od nazwy modelu.
 
  Model definiuje również przestrzeń nazw, dzięki czemu kwalifikowana nazwa każdego elementu w modelu zaczyna się od nazwy modelu.
 
- Inne elementy modelu również definiują przestrzenie nazw. Na przykład operacja należy do przestrzeni nazw zdefiniowanej przez jej klasę nadrzędną, tak aby jej kwalifikowana nazwa była taka sama jak `MyModel ::MyPackage ::MyClass ::MyOperation`. W ten sam sposób akcja należy do przestrzeni nazw zdefiniowanej przez działanie nadrzędne.
+ Inne elementy modelu również definiują przestrzenie nazw. Na przykład operacja należy do przestrzeni nazw zdefiniowanej przez jej klasę nadrzędną, tak aby jej kwalifikowana nazwa była taka sama `MyModel ::MyPackage ::MyClass ::MyOperation` . W ten sam sposób akcja należy do przestrzeni nazw zdefiniowanej przez działanie nadrzędne.
 
  Pakiety są kontenerami. Jeśli przeniesiesz lub usuniesz pakiet, klasy, pakiety i inne zawarte w nim elementy są również przenoszone lub usuwane. Ta sama wartość dotyczy innych elementów, które definiują przestrzenie nazw.
 
-## <a name="Packages"></a>Tworzenie i wyświetlanie pakietów
+## <a name="creating-and-viewing-packages"></a><a name="Packages"></a> Tworzenie i wyświetlanie pakietów
  Pakiet można utworzyć na diagramie klas UML lub w Eksploratorze modelu UML.
 
 #### <a name="to-create-a-package-in-a-uml-class-diagram"></a>Aby utworzyć pakiet na diagramie klas UML
@@ -97,7 +97,7 @@ W programie Visual Studio *pakiet* jest kontenerem dla definicji elementów UML,
     > [!NOTE]
     > Spowoduje to utworzenie widoku pakietu na tym diagramie. Nie zawsze będzie pokazywać wszystkich elementów, które zawiera pakiet. Aby upewnić się, że zobaczysz całą zawartość pakietu, Wyświetl ją w Eksploratorze modelu UML.
 
-## <a name="Elements"></a>Tworzenie elementów modelu wewnątrz pakietów
+## <a name="creating-model-elements-inside-packages"></a><a name="Elements"></a> Tworzenie elementów modelu wewnątrz pakietów
  Istnieją cztery sposoby umieszczania elementów modelu w pakiecie:
 
 - Dodaj nowy element do pakietu w Eksploratorze modelu UML.
@@ -155,7 +155,7 @@ W programie Visual Studio *pakiet* jest kontenerem dla definicji elementów UML,
 
     - W **Eksploratorze modelu UML**każdy element pojawi się w obszarze pakietu.
 
-## <a name="Moving"></a>Przeniesienie elementów do i z pakietów
+## <a name="moving-elements-into-and-out-of-packages"></a><a name="Moving"></a> Przeniesienie elementów do i z pakietów
  Można przenieść jeden lub więcej elementów z lub z pakietu.
 
  Po przeniesieniu pakietu wszystkie elementy wewnątrz niego są przenoszone razem z nim.
@@ -166,7 +166,7 @@ W programie Visual Studio *pakiet* jest kontenerem dla definicji elementów UML,
 
      Kwalifikowana nazwa elementu zmieni się w taki sposób, aby pokazywał nowy pakiet lub model będącego właścicielem.
 
-     \- lub-
+     \- oraz
 
 - W diagramie klas przeciągnij element do kształtu pakietu.
 
@@ -175,7 +175,7 @@ W programie Visual Studio *pakiet* jest kontenerem dla definicji elementów UML,
     > [!NOTE]
     > Jeśli przeciągniesz element z pakietu do pustej części diagramu, jego pakiet będący właścicielem nie zmieni się. Dzięki temu można utworzyć diagram pokazujący elementy z kilku pakietów bez konieczności pokazywania samych pakietów.
 
-## <a name="Pasting"></a>Wklejanie elementów do pakietu
+## <a name="pasting-elements-into-a-package"></a><a name="Pasting"></a> Wklejanie elementów do pakietu
  Element można wkleić do pakietu. W przypadku wklejenia grupy powiązanych elementów do pakietu zostaną również wklejone relacje między nimi.
 
 #### <a name="to-paste-elements-into-a-package-on-a-uml-class-diagram"></a>Aby wkleić elementy do pakietu na diagramie klas UML
@@ -187,31 +187,31 @@ W programie Visual Studio *pakiet* jest kontenerem dla definicji elementów UML,
     > [!NOTE]
     > Pakiet może znajdować się na innym diagramie.
 
-## <a name="Import"></a>Importuj relacje między pakietami
+## <a name="import-relationships-between-packages"></a><a name="Import"></a> Importuj relacje między pakietami
  Można zdefiniować relację importu między pakietami za pomocą narzędzia do **importowania** .
 
  Import oznacza, że elementy zdefiniowane w zaimportowanym pakiecie, które są elementami na końcu strzałki relacji, są efektywnie definiowane również w pakiecie importowania. Wszystkie elementy, których widoczność jest zdefiniowana jako **pakiet** , będą widoczne także w pakiecie importowania.
 
  Unikaj tworzenia pętli w relacjach importu.
 
-## <a name="References"></a>Odwołania z jednej przestrzeni nazw do innej
+## <a name="references-from-one-namespace-to-another"></a><a name="References"></a> Odwołania z jednej przestrzeni nazw do innej
  Jeśli chcesz odwołać się do elementu jednego pakietu z innego, musisz użyć kwalifikowanej nazwy elementu.
 
- Załóżmy na przykład, że pakiet `SalesCommon` definiuje `CustomerAddress` typu. W innym `RestaurantSales` pakietu, chcesz zdefiniować `MealOrder` typu, który ma atrybut typu adres klienta. Dostępne są dwie opcje:
+ Załóżmy na przykład, że pakiet `SalesCommon` definiuje typ `CustomerAddress` . W innym pakiecie `RestaurantSales` , należy zdefiniować typ `MealOrder` , który ma atrybut typu adres klienta. Dostępne są dwie opcje:
 
-- Określ typ atrybutu przy użyciu w pełni kwalifikowanej nazwy `SalesCommon::CustomerAddress`. Należy to zrobić tylko wtedy, gdy `CustomerAddress` ma właściwość **widoczność** ustawioną na **publiczną**.
+- Określ typ atrybutu przy użyciu w pełni kwalifikowanej nazwy `SalesCommon::CustomerAddress` . Należy to zrobić tylko wtedy, gdy `CustomerAddress` ma właściwość **widoczność** ustawioną na **publiczną**.
 
-- Utwórz relację importu z pakietu `RestaurantSales` do pakietu `SalesCommon`. Następnie można użyć `CustomerAddress` bez użycia nazwy kwalifikowanej.
+- Utwórz relację importu z `RestaurantSales` pakietu do `SalesCommon` pakietu. Następnie można użyć `CustomerAddress` bez użycia nazwy kwalifikowanej.
 
-## <a name="Properties"></a>Właściwości pakietów
+## <a name="properties-of-packages"></a><a name="Properties"></a> Właściwości pakietów
  Każdy pakiet ma następujące właściwości. Aby wyświetlić właściwości, kliknij prawym przyciskiem myszy pakiet, na diagramie lub w Eksploratorze modelu UML, a następnie kliknij polecenie **Właściwości**.
 
 |Właściwość|Wartość domyślna|Opis|
 |--------------|-------------------|-----------------|
 |**Nazwa**|(Nowa nazwa)|Nazwa pakietu. Można go zmienić na diagramie lub w okno Właściwości.|
 |**Kwalifikowana nazwa**|*Container* :: *Package — nazwa pakietu*|Pełna nazwa, poprzedzona nazwą pakietu lub modelu, który zawiera ten pakiet. Aby uzyskać więcej informacji, zobacz [przestrzenie nazw](#Namespaces).|
-|**Profil**|ciągiem|Lista profilów połączonych z tym pakietem. Te profile zapewniają stereotypy, które można zastosować do elementów wewnątrz pakietu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie modelu za pomocą profilów i stereotypów](../modeling/customize-your-model-with-profiles-and-stereotypes.md).|
-|**Propagowan**|**Public**|Widoczność pakietu poza jego pakietem nadrzędnym.|
+|**Profile**|ciągiem|Lista profilów połączonych z tym pakietem. Te profile zapewniają stereotypy, które można zastosować do elementów wewnątrz pakietu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie modelu za pomocą profilów i stereotypów](../modeling/customize-your-model-with-profiles-and-stereotypes.md).|
+|**Widoczność**|**Publiczne**|Widoczność pakietu poza jego pakietem nadrzędnym.|
 |**Elementy robocze**|ciągiem|Lista połączonych elementów roboczych. Aby uzyskać więcej informacji, zobacz [łączenie elementów modelu i elementów roboczych](../modeling/link-model-elements-and-work-items.md).|
 |**Lokalizacja definicji**|(nazwa)|Nazwa pliku, w którym są przechowywane szczegóły pakietu. Pliki znajdują się w folderze projektu **ModelDefinition** . Te informacje mogą być przydatne do celów kontroli źródła.|
 |**Opis**|ciągiem|Opis pakietu.|

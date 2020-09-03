@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 380aaa5bed1e30c549334bc004ea38e3f0bdb762
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669934"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definiowanie procedury obsługi łącza elementu roboczego
@@ -36,7 +36,7 @@ Można utworzyć rozszerzenie integracji programu Visual Studio, które reaguje,
 
     1. W menu **plik** wybierz polecenie **Nowy**, **projekt**.
 
-    2. W obszarze **zainstalowane szablony**rozwiń **pozycję C# Wizualizacja** lub **Visual Basic**, a następnie w środkowej kolumnie kliknij pozycję **Biblioteka klas**.
+    2. W obszarze **zainstalowane szablony**rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie w środkowej kolumnie kliknij pozycję **Biblioteka klas**.
 
     3. Ustaw **rozwiązanie** , aby wskazać, czy chcesz utworzyć nowe rozwiązanie, czy dodać składnik do rozwiązania VSIX, które zostało już otwarte.
 
@@ -46,7 +46,7 @@ Można utworzyć rozszerzenie integracji programu Visual Studio, które reaguje,
 
     1. W **Eksplorator rozwiązań**, w menu skrótów rozwiązania, wybierz **Dodaj**, **Nowy projekt**.
 
-    2. W obszarze **zainstalowane szablony**rozwiń **pozycję C# Wizualizacja** lub **Visual Basic**, a następnie wybierz pozycję **rozszerzalność**. W środkowej kolumnie Wybierz pozycję **Projekt VSIX**.
+    2. W obszarze **zainstalowane szablony**rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **rozszerzalność**. W środkowej kolumnie Wybierz pozycję **Projekt VSIX**.
 
 3. Ustaw projekt VSIX jako projekt startowy rozwiązania.
 
@@ -60,17 +60,17 @@ Można utworzyć rozszerzenie integracji programu Visual Studio, które reaguje,
 
     3. Na karcie **zasoby** wybierz pozycję **Nowy**, a następnie w oknie dialogowym Ustaw wartość:
 
-         **Typ**  = **składnik MEF**
+         **Typ**  =  **Składnik MEF**
 
-         **Źródło**  = **projektu w bieżącym rozwiązaniu**
+         **Źródło**  =  **Projekt w bieżącym rozwiązaniu**
 
-         **Projekt**  = *projektu biblioteki klas*
+         **Projekt**  =  *Projekt biblioteki klas*
 
 ## <a name="defining-the-work-item-link-handler"></a>Definiowanie procedury obsługi łącza elementu pracy
  Wykonaj wszystkie poniższe zadania w projekcie biblioteki klas.
 
 ### <a name="project-references"></a>Informacje o projekcie
- Dodaj następujące zestawy [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] do odwołań do projektu:
+ Dodaj następujące [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] zestawy do odwołań projektu:
 
  `Microsoft.TeamFoundation.WorkItemTracking.Client.dll`
 
@@ -82,16 +82,16 @@ Można utworzyć rozszerzenie integracji programu Visual Studio, które reaguje,
 
  `System.ComponentModel.Composition`
 
- `System.Drawing` — używany przez przykładowy kod
+ `System.Drawing` -używane przez przykładowy kod
 
- Jeśli nie możesz znaleźć jednego z tych odwołań na karcie **.NET** okna dialogowego **Dodaj odwołanie** , Użyj karty Przeglądaj, aby go znaleźć w folderze \Program Files\Microsoft Visual Studio [wersja] \Common7\IDE\PrivateAssemblies \\.
+ Jeśli nie możesz znaleźć jednego z tych odwołań na karcie **.NET** okna dialogowego **Dodaj odwołanie** , Użyj karty Przeglądaj, aby go znaleźć w folderze \Program Files\Microsoft Visual Studio [Version] \Common7\IDE\PrivateAssemblies \\ .
 
 ### <a name="import-the-work-item-namespace"></a>Importowanie przestrzeni nazw elementów roboczych
- W **odniesieniu**do projektu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Dodaj odwołania do następujących zestawów:
+ W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **odniesieniu**do projektu Dodaj odwołania do następujących zestawów:
 
-- Microsoft. TeamFoundation. WorkItemTracking. Client. dll
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 
-- Microsoft. VisualStudio. TeamFoundation. WorkItemTracking. dll
+- Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.dll
 
   W kodzie programu Zaimportuj następujące przestrzenie nazw:
 
@@ -158,11 +158,11 @@ namespace WorkItems
 
 1. Naciśnij klawisz **F5**lub w menu **Debuguj** wybierz polecenie **Rozpocznij debugowanie**.
 
-     Zostanie uruchomione doświadczalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+     Doświadczalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uruchomienia.
 
-     **Rozwiązywanie problemów**: jeśli nowy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie zostanie uruchomiony, upewnij się, że projekt VSIX jest ustawiony jako projekt startowy rozwiązania.
+     **Rozwiązywanie problemów**: Jeśli nowe nie zostanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uruchomione, upewnij się, że projekt VSIX jest ustawiony jako projekt startowy rozwiązania.
 
-2. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] eksperymentalnym Otwórz lub Utwórz projekt modelowania, a następnie otwórz lub Utwórz diagram modelowania.
+2. W eksperymentalnym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , Otwórz lub Utwórz projekt modelowania, a następnie otwórz lub Utwórz diagram modelowania.
 
 3. Utwórz element modelu, taki jak Klasa UML, i ustaw jego nazwę.
 
@@ -174,19 +174,19 @@ namespace WorkItems
 
          Zostanie otwarty nowy formularz elementu pracy.
 
-5. Sprawdź, czy tytuł elementu pracy jest taki sam jak element modelu, jeśli użyto przykładowego kodu w poprzedniej sekcji. Pokazuje to, `OnWorkItemCreated()` pracował.
+5. Sprawdź, czy tytuł elementu pracy jest taki sam jak element modelu, jeśli użyto przykładowego kodu w poprzedniej sekcji. Ta ilustracja `OnWorkItemCreated()` zadziałała.
 
 6. Wypełnij formularz, Zapisz i Zamknij element roboczy.
 
-7. Sprawdź, czy element roboczy ma teraz kolor czerwony. Ilustruje to `OnWorkItemLinked()` w przykładowym kodzie.
+7. Sprawdź, czy element roboczy ma teraz kolor czerwony. Pokazano to `OnWorkItemLinked()` w przykładowym kodzie.
 
      **Rozwiązywanie problemów**: Jeśli nie uruchomiono metod obsługi, sprawdź, czy:
 
     - Projekt biblioteki klas jest wymieniony jako składnik MEF na liście **zawartości** w pliku **source. Extensions. manifest** w projekcie VSIX.
 
-    - Prawidłowy atrybut `Export` jest dołączony do klasy obsługi, a Klasa implementuje `ILinkedWorkItemExtension`.
+    - Poprawna wartość `Export` atrybutu jest dołączona do klasy obsługi i implementuje klasy `ILinkedWorkItemExtension` .
 
-    - Parametry wszystkich atrybutów `Import` i `Export` są prawidłowe.
+    - Parametry wszystkich `Import` i `Export` atrybuty są prawidłowe.
 
 ## <a name="about-the-work-item-handler-code"></a>Informacje o kodzie procedury obsługi elementu pracy
 
@@ -221,7 +221,7 @@ public void OnWorkItemLinked
 ```
 
 > [!NOTE]
-> Aby ten przykład działał, należy dodać odwołanie do projektu do `System.Drawing.dll` i zaimportować `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation` przestrzeni nazw. Jednak te dodatki nie są wymagane dla innych implementacji `OnWorkItemLinked`.
+> Aby ten przykład działał, należy dodać odwołanie do projektu do `System.Drawing.dll` i zaimportować przestrzeń nazw `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation` . Jednak te dodatki nie są wymagane dla innych implementacji programu `OnWorkItemLinked` .
 
 ### <a name="listening-for-link-removal"></a>Nasłuchiwanie usunięcia linku
  `OnWorkItemRemoved` jest wywoływana raz tuż przed każdym usuniętym łączem elementu pracy. W przypadku usunięcia elementu modelu wszystkie jego linki zostaną usunięte.
@@ -237,9 +237,9 @@ public void OnWorkItemRemoved
 
  Aby użyć poniższego przykładu, należy dodać te zestawy .NET do odwołań projektu:
 
-- Microsoft. TeamFoundation. Client. dll
+- Microsoft.TeamFoundation.Client.dll
 
-- Microsoft. TeamFoundation. WorkItemTracking. Client. dll
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 
 ```
 
@@ -273,7 +273,7 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 
 ```
 
- Format `linkString` to:
+ Format `linkString` jest:
 
  `string.Format(@"%{0}\{1}#{1}${2}", tfServer, projectCollection, RepositoryGuid, workItem.Id);`
 
@@ -283,7 +283,7 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 
    `http://tfServer:8080/tfs/projectCollection`
 
-   Wielkość liter jest ważna w `projectCollection`.
+   Wielkość liter jest ważna w temacie `projectCollection` .
 
 - `RepositoryGuid` można uzyskać z połączenia TFS:
 
@@ -295,7 +295,7 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 
   Aby uzyskać więcej informacji na temat odwołań, zobacz [dołączanie ciągów odwołania do elementów modelu UML](../modeling/attach-reference-strings-to-uml-model-elements.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Microsoft. TeamFoundation. WorkItemTracking. Client. WorkItemStore](/previous-versions/visualstudio/visual-studio-2013/bb179850(v=vs.120))
 - [Łączenie elementów modeli i elementów roboczych](../modeling/link-model-elements-and-work-items.md)

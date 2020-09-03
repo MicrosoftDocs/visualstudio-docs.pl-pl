@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 14c8b88d295d1a11fd68841c45233ac7edc04c22
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669673"
 ---
 # <a name="export-diagrams-as-images"></a>Eksportowanie diagramów jako obrazów
@@ -45,7 +45,7 @@ W programie Visual Studio można zapisywać diagramy modelowania w formatach tyl
 
 2. Na liście **Nazwa** wybierz pozycję **składnik zapisywania dokumentów XPS firmy Microsoft**, a następnie kliknij przycisk **OK**.
 
-3. W oknie dialogowym **Zapisywanie pliku jako** Zapisz plik jako plik **dokumentu XPS (\*. XPS)** .
+3. W oknie dialogowym **Zapisywanie pliku jako** Zapisz plik jako plik **dokumentu XPS ( \* XPS)** .
 
 ## <a name="net-framework-security"></a>Zabezpieczenia.NET Framework
 

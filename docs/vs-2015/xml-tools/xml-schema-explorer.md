@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5e9f61c56dd7ff2a9c6c19afc20ed279a7fdf855
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669373"
 ---
 # <a name="xml-schema-explorer"></a>Eksplorator schematu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Eksplorator schematu XML jest zintegrowany z Microsoft Visual Studio i edytorem XML umożliwiającym współdziałanie z schematami języka definicji schematu XML (XSD). Po otwarciu pliku schematu XML węzeł **zestawu schematów** pojawia się w EKSPLORATORZE schematu XML. Wszystkie dołączone, zaimportowane lub ponownie zdefiniowane schematy dla pliku docelowego, a także wszystkie pliki, do których odwołuje się instrukcja `include` lub `import`, również są wyświetlane w Eksploratorze schematu XML.
+Eksplorator schematu XML jest zintegrowany z Microsoft Visual Studio i edytorem XML umożliwiającym współdziałanie z schematami języka definicji schematu XML (XSD). Po otwarciu pliku schematu XML węzeł **zestawu schematów** pojawia się w EKSPLORATORZE schematu XML. Wszystkie dołączone, zaimportowane lub ponownie zdefiniowane schematy dla pliku docelowego, a także wszystkie pliki, do których odwołuje się `include` `import` instrukcja lub, również są wyświetlane w EKSPLORATORZE schematu XML.
 
  Eksplorator schematu XML umożliwia wykonywanie następujących czynności:
 
@@ -56,7 +56,7 @@ Eksplorator schematu XML jest zintegrowany z Microsoft Visual Studio i edytorem 
 
 - Trzeci poziom zawiera pliki.
 
-- Czwarty poziom zawiera węzły globalne. Może to obejmować elementy, grupy, typy złożone, typy proste, atrybuty, grupy atrybutów i instrukcje `include`, `import` i `redefine`.
+- Czwarty poziom zawiera węzły globalne. Może to obejmować elementy, grupy, typy złożone, typy proste, atrybuty, grupy atrybutów i `include` `import` `redefine` instrukcje.
 
   Oto przykład struktury drzewa:
 
@@ -69,7 +69,7 @@ Eksplorator schematu XML jest zintegrowany z Microsoft Visual Studio i edytorem 
 
 - Aktywowanie węzła otwiera plik, w którym jest zdefiniowany ten węzeł (Jeśli plik nie jest jeszcze otwarty) i wybiera węzeł w pliku.
 
-- Aktywowanie węzła pliku otwiera wybrany plik (jeśli nie jest jeszcze otwarty) i podświetla węzeł `<schema>`.
+- Aktywowanie węzła pliku otwiera wybrany plik (jeśli nie jest jeszcze otwarty) i podświetla `<schema>` węzeł.
 
 - Aktywowanie węzła SchemaSet lub obszaru nazw nie robi nic.
 

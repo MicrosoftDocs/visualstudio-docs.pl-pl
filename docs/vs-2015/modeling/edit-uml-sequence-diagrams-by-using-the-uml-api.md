@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cbc7a6ce7edede6759c0562df1e524d932f62b91
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669713"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Edytowanie diagramów sekwencji UML przy użyciu interfejsu API UML
@@ -30,7 +30,7 @@ Interakcja to sekwencja komunikatów między zestawem linii życia. Interakcja j
 ## <a name="basic-code"></a>Kod podstawowy
 
 ### <a name="namespace-imports"></a>Importy przestrzeni nazw
- Należy uwzględnić następujące instrukcje `using`:
+ Należy uwzględnić następujące `using` instrukcje:
 
 ```
 using Microsoft.VisualStudio.Uml.Classes;
@@ -72,12 +72,12 @@ public class MySequenceDiagramCommand : ICommandExtension
 ```
 
 ### <a name="generated-and-uml-sequence-diagrams"></a>Generowane diagramy sekwencji UML
- Istnieją dwa rodzaje diagramów sekwencji: te, które są tworzone ręcznie w projekcie modelowania UML, oraz te, które zostały wygenerowane na podstawie kodu programu. Użyj właściwości `UmlMode`, aby odnaleźć diagram sekwencji.
+ Istnieją dwa rodzaje diagramów sekwencji: te, które są tworzone ręcznie w projekcie modelowania UML, oraz te, które zostały wygenerowane na podstawie kodu programu. Użyj `UmlMode` właściwości, aby odnaleźć diagram sekwencji.
 
 > [!NOTE]
 > Ta właściwość zwraca wartość false tylko dla diagramów sekwencji generowanych na podstawie kodu przy użyciu Visual Studio 2013 i wcześniejszych. Obejmuje to diagramy sekwencji wygenerowane przez kod z 2013 i wcześniejszych. Ta wersja programu Visual Studio nie obsługuje generowania nowych diagramów sekwencji.
 
- Na przykład jeśli chcesz wykonać polecenie menu, które jest widoczne tylko w diagramach sekwencji UML, wówczas metoda `QueryStatus()` może zawierać następującą instrukcję:
+ Na przykład jeśli chcesz wykonać polecenie menu, które jest widoczne tylko w diagramach sekwencji UML, `QueryStatus()` Metoda może zawierać następującą instrukcję:
 
 ```
 command.Enabled = command.Visible =
@@ -118,13 +118,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>Aktualizowanie interakcji i jej układu
  Podczas aktualizowania interakcji należy zawsze zakończyć operację przez aktualizację układu przy użyciu jednej z następujących metod:
 
-- `ISequenceDiagram.UpdateShapePositions()` dostosowuje położenia kształtów, które zostały ostatnio wstawione lub przeniesione, oraz ich sąsiednich kształtów.
+- `ISequenceDiagram.UpdateShapePositions()` dostosowuje położenie kształtów, które zostały ostatnio wstawione lub przeniesione, oraz ich sąsiednich kształtów.
 
-- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` odświeża cały diagram. Można użyć parametru, aby określić zmiany położenia linii życia, wiadomości lub obu tych elementów.
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` Odświeża cały diagram. Można użyć parametru, aby określić zmiany położenia linii życia, wiadomości lub obu tych elementów.
 
   Jest to szczególnie ważne podczas wstawiania nowych elementów lub przenoszenia istniejących elementów. Nie będą znajdować się w poprawnych położeniach na diagramie, dopóki nie zostanie wykonana jedna z tych operacji. Wystarczy tylko wywołać jedną z tych operacji na końcu serii zmian.
 
-  Aby uniknąć bemusing przez użytkownika, który wykonuje cofnięcie po poleceniu, użyj `ILinkedUndoTransaction`, aby zawrzeć zmiany i końcowe `Layout()` lub `UpdateShapePositions()` operacje. Na przykład:
+  Aby uniknąć bemusing przez użytkownika, który wykonuje cofnięcie po poleceniu, użyj polecenia, `ILinkedUndoTransaction` aby zawrzeć zmiany i ostateczne `Layout()` lub `UpdateShapePositions()` operacje. Na przykład:
 
 ```
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))
@@ -135,7 +135,7 @@ using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("
 }
 ```
 
- Aby użyć `ILinkedUndoTransaction`, należy wprowadzić tę deklarację w klasie:
+ Aby użyć `ILinkedUndoTransaction` , należy wprowadzić tę deklarację w swojej klasie:
 
 ```
 [Import] ILinkedUndoContext LinkedUndoContext { get; set; }
@@ -163,7 +163,7 @@ foreach (IConnectableElement part in
 }
 ```
 
- Alternatywnie, jeśli interakcja zawiera dowolny zestaw obiektów, można utworzyć właściwość lub inne `IConnectableElement` w samej interakcji:
+ Alternatywnie, jeśli interakcja zawiera dowolny zestaw obiektów, można utworzyć właściwość lub inną `IConnectableElement` interakcję:
 
 ```
 ILifeline lifeline = interaction.CreateLifeline();
@@ -242,11 +242,11 @@ cf.CreateInteractionOperand(cf.Operands.Last(), true);
 ```
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
- Jeśli zmiany nie zostaną wykonane przy użyciu operacji `UpdateShapePositions()` lub `Layout()`, kształty będą wyświetlane w niepoprawnych położeniach.
+ Kształty będą wyświetlane w niepoprawnych położeniach, jeśli zmiany nie zostaną zakończone `UpdateShapePositions()` `Layout()` operacją lub.
 
- Większość innych problemów jest spowodowanych przez niewyrównane punkty wstawiania, dzięki czemu nowe komunikaty lub fragmenty będą musiały przekroczyć inne elementy. Objawy mogą polegać na tym, że zmiany nie są wykonywane lub wyjątek jest zgłaszany. Wyjątek może nie być zgłaszany do momentu wykonania operacji `UpdateShapePositions()` lub `Layout()`.
+ Większość innych problemów jest spowodowanych przez niewyrównane punkty wstawiania, dzięki czemu nowe komunikaty lub fragmenty będą musiały przekroczyć inne elementy. Objawy mogą polegać na tym, że zmiany nie są wykonywane lub wyjątek jest zgłaszany. Wyjątek może nie być zgłaszany do momentu `UpdateShapePositions()` `Layout()` wykonania operacji lub.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Microsoft. VisualStudio. UML. Interactions](/previous-versions/dd493373(v=vs.140))
 - [Rozszerzanie modeli i diagramów UML](../modeling/extend-uml-models-and-diagrams.md)

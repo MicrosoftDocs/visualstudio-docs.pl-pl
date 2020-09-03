@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 487105350fe5c62a9451bccc5713c6506c76bf1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669699"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Osadzanie diagramu w formularzu systemu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diagram DSL można osadzić w kontrolce systemu Windows, która jest wyświetlana w oknie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+Diagram DSL można osadzić w kontrolce systemu Windows, która jest wyświetlana w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oknie.
 
 ## <a name="embedding-a-diagram"></a>Osadzanie diagramu
 
@@ -75,7 +75,7 @@ Diagram DSL można osadzić w kontrolce systemu Windows, która jest wyświetlan
 
 #### <a name="updating-the-form-using-store-events"></a>Aktualizowanie formularza przy użyciu zdarzeń ze sklepu
 
-1. W projektancie formularzy Dodaj **pole listy** o nazwie `listBox1`. Spowoduje to wyświetlenie listy elementów w modelu. Będzie on przechowywany w synchronism z modelem przy użyciu *zdarzeń ze sklepu*. Aby uzyskać więcej informacji, zobacz [programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. W projektancie formularzy Dodaj **ListBox** o nazwie `listBox1` . Spowoduje to wyświetlenie listy elementów w modelu. Będzie on przechowywany w synchronism z modelem przy użyciu *zdarzeń ze sklepu*. Aby uzyskać więcej informacji, zobacz [programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 2. W pliku kodu niestandardowego Zastąp dalsze metody do klasy DocView:
 
@@ -149,7 +149,7 @@ Diagram DSL można osadzić w kontrolce systemu Windows, która jest wyświetlan
 
     ```
 
-4. Aby przetestować DSL, naciśnij klawisz F5 i w eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otwórz przykładowy plik modelu.
+4. Aby przetestować DSL, naciśnij klawisz F5 i w eksperymentalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otwórz przykładowy plik modelu.
 
      Zwróć uwagę, że pole listy zawiera listę elementów w modelu i że jest poprawna po dodaniu lub usunięciu, a następnie Cofnij i wykonaj ponownie.
 

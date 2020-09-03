@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::ReadAt | Dokumenty firmy Microsoft
+title: 'IDebugMemoryBytes2:: ReadAt | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f909ac3d2e2993879e4c24140abbf23c2ee8d545
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727536"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
-Odczytuje sekwencję bajtów, zaczynając od danej lokalizacji.
+Odczytuje sekwencję bajtów, rozpoczynając od danej lokalizacji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -50,31 +50,31 @@ int ReadAt(
 
 ## <a name="parameters"></a>Parametry
 `pStartContext`\
-[w] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt, który określa, gdzie rozpocząć odczyt bajtów.
+podczas Obiekt [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) , który określa miejsce rozpoczęcia odczytywania bajtów.
 
 `dwCount`\
-[w] Liczba bajtów do odczytania. Określa również długość tablicy. `rgbMemory`
+podczas Liczba bajtów do odczytania. Określa także długość `rgbMemory` tablicy.
 
 `rgbMemory`\
-[w, na zewnątrz] Tablica wypełniona bajtami faktycznie odczytywany.
+[in. out] Tablica wprowadzona w bajtach rzeczywiście odczytanych.
 
 `pdwRead`\
-[na zewnątrz] Zwraca liczbę ciągłych bajtów faktycznie odczytanych.
+określoną Zwraca liczbę bajtów, które faktycznie są odczytywane.
 
 `pdwUnreadable`\
-[w, na zewnątrz] Zwraca liczbę nieczytelnych bajtów. Może być wartością null, jeśli klient nie jest zainteresowany liczbą nieczytelnych bajtów.
+[in. out] Zwraca liczbę bajtów, które nie są odczytywane. Może być wartością null, jeśli klient jest nieoprocentowany w liczbie bajtów, które nie są odczytywane.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli wymagane jest 100 bajtów, a pierwsze 50 jest czytelne, następne 20 jest nieczytelne, a pozostałe 30 jest czytelne, ta metoda zwraca:
+ Jeśli żądanie 100 bajtów i pierwsze 50 są możliwe do odczytu, następne 20 nie są czytelne, a pozostałe 30 są odczytywane, Metoda ta zwraca:
 
- *`pdwRead`= 50
+ *`pdwRead` = 50
 
- *`pdwUnreadable`= 20
+ *`pdwUnreadable` = 20
 
- W takim przypadku, ponieważ `*pdwRead + *pdwUnreadable < dwCount`obiekt wywołujący musi wykonać dodatkowe wywołanie, aby odczytać pozostałe 30 bajtów oryginalnego 100 żądane i [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt przekazany w parametrze `pStartContext` musi być zaawansowany przez 70.
+ W takim przypadku `*pdwRead + *pdwUnreadable < dwCount` obiekt wywołujący musi wykonać dodatkowe wywołanie w celu odczytania pozostałych 30 bajtów oryginalnego 100, a obiekt [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) , który przeszedł w `pStartContext` parametrze, musi być zaawansowany przez 70.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

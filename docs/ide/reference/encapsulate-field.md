@@ -1,5 +1,5 @@
 ---
-title: Refaktoryzuje pole do właściwości
+title: Refaktoryzacja pola do właściwości
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -13,33 +13,33 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: db0bd17cd0bead3807f857b2198b8d4ea4c72ffb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569715"
 ---
-# <a name="encapsulate-a-field-refactoring"></a>Hermetyzowanie refaktoryzacji pól
+# <a name="encapsulate-a-field-refactoring"></a>Hermetyzacja refaktoryzacji pola
 
-Ten refaktoryzator ma zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
 - Visual Basic
 
-**Co:** Umożliwia przekształcenie pola w właściwość i zaktualizowanie wszystkich użycia tego pola w celu użycia nowo utworzonej właściwości.
+**Co:** Umożliwia włączenie pola do właściwości i zaktualizowanie wszystkich użycia tego pola w celu użycia nowo utworzonej właściwości.
 
 **Kiedy:** Chcesz przenieść pole do właściwości i zaktualizować wszystkie odwołania do tego pola.
 
-**Dlaczego?** Chcesz dać innym klasom dostęp do pola, ale nie chcesz, aby te klasy miały bezpośredni dostęp.  Zawijając pole we właściwości, można napisać kod, aby sprawdzić wartość przypisaną, na przykład.
+**Dlaczego:** Chcesz nadać innym klasom dostęp do pola, ale nie chcesz, aby te klasy miały bezpośredni dostęp.  Zawijając pole we właściwości, można napisać kod, aby zweryfikować przypisaną wartość, na przykład.
 
 ## <a name="how-to"></a>Porady
 
-1. Wyróżnij lub umieść kursor tekstowy w nazwie pola, aby hermetyzować:
+1. Podświetl lub umieść kursor tekstu w nazwie pola do hermetyzacji:
 
    - C#:
 
-       ![Wyróżniony kod - C #](media/encapsulate-highlight-cs.png)
+       ![Wyróżniony kod — C #](media/encapsulate-highlight-cs.png)
 
    - Visual Basic:
 
@@ -48,29 +48,29 @@ Ten refaktoryzator ma zastosowanie do:
 2. Następnie wykonaj jedną z następujących czynności:
 
    - **Klawiatura**
-      - Naciśnij **klawisze Ctrl+R**, a następnie **klawisze Ctrl+E**.  (Pamiętaj, że skrót klawiaturowy może się różnić w zależności od wybranego profilu).
-      - Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzację** i wybrać pozycję **pola Hermetyzuj** z okna podglądu.
+      - Naciśnij klawisze **Ctrl + R**, a następnie **Ctrl + E**.  (Pamiętaj, że skrót klawiaturowy może się różnić w zależności od wybranego profilu).
+      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i refaktoryzacje** i wybrać opcję **Hermetyzuj wpis pola** w menu podręcznym okna podglądu.
    - **Mysz**
-      - Wybierz **pozycję Edytuj > refaktoryzację > zhermetyzowania pola**.
-      - Kliknij prawym przyciskiem myszy kod, wybierz menu **Szybkie akcje i Refaktoryzowania** i wybierz pozycję **pola Hermetyzuj** z okna podglądu.
+      - Wybierz pozycję **edytuj > refaktoryzację > pole hermetyzowane**.
+      - Kliknij prawym przyciskiem myszy kod, zaznacz menu **szybkie akcje i refaktoryzacje** i wybierz opcję **Hermetyzuj wpis pola** w menu podręcznym okna podglądu.
 
-   Wybór | Opis
+   Zaznaczenie | Opis
    --------- | -----------
-   **Hermetyzowanie pola (i używanie właściwości)** | Hermetyzuje pole właściwością i aktualizuje wszystkie użycia pola, aby użyć wygenerowanej właściwości
-   **Hermetyzowanie pola (ale nadal używaj pola)** | Hermetyzuje pole właściwością, ale pozostawia wszystkie zastosowania pola nietknięte
+   **Hermetyzowanie pola (i używanie właściwości)** | Hermetyzuje pole z właściwością i aktualizuje wszystkie użycia pola, aby użyć wygenerowanej właściwości
+   **Hermetyzuj pole (ale nadal używaj pola)** | Hermetyzuje pole z właściwością, ale pozostawia wszystkie niezmienione użycie pola
 
-   Właściwość jest tworzona, a odwołania do tego pola są aktualizowane, jeśli jest zaznaczona.
+   Ta właściwość jest tworzona i odwołania do pola są aktualizowane, jeśli są zaznaczone.
 
    > [!TIP]
-   > Użyj łącza **Zmiany podglądu** w oknie podręcznym, [aby zobaczyć, jaki będzie wynik](../../ide/preview-changes.md) przed zatwierdzeniem go.
+   > Użyj linku **Podgląd zmian** w oknie podręcznym, [Aby zobaczyć, co wynik będzie](../../ide/preview-changes.md) przed zatwierdzeniem.
 
    - C#:
 
-      ![Encapsulate Wynik właściwości - C #](media/encapsulate-result-cs.png)
+      ![Hermetyzowanie wyniku właściwości-C #](media/encapsulate-result-cs.png)
 
    - Visual Basic:
 
-      ![Hermetyzowanie wyniku właściwości — Visual Basic](media/encapsulate-result-vb.png)
+      ![Hermetyzuj wynik właściwości — Visual Basic](media/encapsulate-result-vb.png)
 
 ## <a name="see-also"></a>Zobacz też
 

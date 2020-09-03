@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccCheckout | Dokumentacja firmy Microsoft
+title: Funkcja SccCheckout | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f23290ebfadd1b6e3d34f808d5ea0ccccbb3c319
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200155"
 ---
 # <a name="scccheckout-function"></a>SccCheckout, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Biorąc pod uwagę listę w pełni kwalifikowanej nazwy, ta funkcja wyewidencjonowuje je na dysku lokalnym. Komentarza ma zastosowanie do wszystkich plików, które są wyewidencjonowane. Argument komentarz może być `null` ciągu.  
+Mając listę w pełni kwalifikowanych nazw plików, funkcja ta sprawdza je na dysku lokalnym. Komentarz dotyczy wszystkich plików, które są wyewidencjonowane. Argument komentarza może być `null` ciągiem.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,39 +40,39 @@ SCCRTN SccCheckout (
   
 #### <a name="parameters"></a>Parametry  
  pvContext  
- [in] Struktura kontekście wtyczki kontroli źródła.  
+ podczas Struktura kontekstu wtyczki kontroli źródła.  
   
- hWnd  
- [in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.  
+ Właściwość  
+ podczas Uchwyt okna środowiska IDE, który może być używany przez wtyczkę kontroli źródła jako element nadrzędny dla dowolnych okien dialogowych, które zapewnia.  
   
- Niepowodzeń  
- [in] Liczba plików wybranych do wyewidencjonowania.  
+ nFiles  
+ podczas Liczba plików wybranych do wyewidencjonowania.  
   
  lpFileNames  
- [in] Tablica nazw w pełni kwalifikowaną ścieżką lokalną plików do wyewidencjonowania.  
+ podczas Tablica w pełni kwalifikowanych nazw ścieżek lokalnych dla plików do wyewidencjonowania.  
   
  lpComment  
- [in] Komentarz, które mają być stosowane do każdego z wybranych plików, które są wyewidencjonowane.  
+ podczas Komentarz, który ma zostać zastosowany do każdego z wybranych plików do wyewidencjonowania.  
   
  fOptions  
- [in] Polecenie flagi (zobacz [flagi bitowe używane przez określone polecenia](../extensibility/bitflags-used-by-specific-commands.md)).  
+ podczas Flagi poleceń (zobacz [Bitflags używane przez określone polecenia](../extensibility/bitflags-used-by-specific-commands.md)).  
   
  pvOptions  
- [in] Opcje plug-określonych kontroli źródła.  
+ podczas Opcje dotyczące wtyczki kontroli źródła.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|SCC_OK|Wyewidencjonowanie zostało pomyślnie zakończone.|  
-|SCC_E_FILENOTCONTROLLED|Wybrany plik nie jest pod kontrolą kodu źródłowego.|  
-|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby. Ponowienie próby jest zalecane.|  
+|SCC_OK|Wyewidencjonowanie zakończyło się pomyślnie.|  
+|SCC_E_FILENOTCONTROLLED|Wybrany plik nie znajduje się pod kontrolą kodu źródłowego.|  
+|SCC_E_ACCESSFAILURE|Wystąpił problem z uzyskaniem dostępu do systemu kontroli źródła prawdopodobnie z powodu problemów z siecią lub rywalizacją. Zalecana jest ponowna próba.|  
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|  
-|SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony błąd. Plik nie został wyewidencjonowany.|  
-|SCC_E_ALREADYCHECKEDOUT|Użytkownik ma już ten plik wyewidencjonowany.|  
-|SCC_E_FILEISLOCKED|Plik jest zablokowany zabronienia tworzenie nowych wersji.|  
-|SCC_E_FILEOUTEXCLUSIVE|Inny użytkownik ma wykonać wyewidencjonowania na wyłączność tego pliku.|  
+|SCC_E_NONSPECIFICERROR|Nieokreślony błąd. Plik nie został wyewidencjonowany.|  
+|SCC_E_ALREADYCHECKEDOUT|Użytkownik ma już wyewidencjonowany plik.|  
+|SCC_E_FILEISLOCKED|Plik jest zablokowany, zabraniając tworzenia nowych wersji.|  
+|SCC_E_FILEOUTEXCLUSIVE|Inny użytkownik wykonał wyewidencjonowanie na wyłączność tego pliku.|  
 |SCC_I_OPERATIONCANCELED|Operacja została anulowana przed ukończeniem.|  
   
 ## <a name="see-also"></a>Zobacz też  

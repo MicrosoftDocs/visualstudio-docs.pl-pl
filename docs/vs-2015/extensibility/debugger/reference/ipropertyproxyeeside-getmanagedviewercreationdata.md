@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData | Dokumentacja firmy Microsoft
+title: 'IPropertyProxyEESide:: GetManagedViewerCreationData | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b5161894875ac683e5a6e49ae623bd6025531006
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199532"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera informacje o viewer dla tego typu właściwości, aby utworzyć wystąpienia tego podglądu.  
+Pobiera informacje o przeglądarce dla tego typu właściwości, aby utworzyć wystąpienie tej przeglądarki.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -50,28 +50,28 @@ int GetManagedViewerCreationData(
   
 #### <a name="parameters"></a>Parametry  
  `assemName`  
- [out] Zwraca nazwę zestawu, zawierający ten obiekt.  
+ określoną Zwraca nazwę zestawu, który znajduje się w tym obiekcie.  
   
  `assemBytes`  
- [out] Zwraca [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) obiekt zawierający ten obiekt (jest to wartość null Jeśli bajty nie są dostępne), w bajtach zestawu.  
+ określoną Zwraca obiekt [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) zawierający bajty zestawu tego obiektu (jest to wartość null, jeśli nie są dostępne żadne bajty).  
   
  `assemPdb`  
- [out] Zwraca `IEEDataStorage` obiekt, który zawiera symbol przechowywania informacji dla tego obiektu (jest to wartość null, jeśli nie symboli sklep jest dostępny).  
+ określoną Zwraca `IEEDataStorage` obiekt zawierający informacje o magazynie symboli dla tego obiektu (jest to wartość null, jeśli nie jest dostępny żaden magazyn symboli).  
   
  `className`  
- [out] Zwraca nazwę klasy zawierające ten obiekt.  
+ określoną Zwraca nazwę klasy zawierającej ten obiekt.  
   
  `alr`  
- [out] Zwraca wartość z zakresu od [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) Wyliczenie wskazujące lokalizacji zestawu.  
+ określoną Zwraca wartość z wyliczenia [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) wskazującego lokalizację zestawu.  
   
  `replacementOk`  
- [out] Zwraca wartość różną od zera (`TRUE`) Jeśli wartość tego obiektu może zostać zmieniona; wartość zero (`FALSE`) Jeśli obiekt jest tylko do odczytu.  
+ określoną Zwraca różną od zera ( `TRUE` ), jeśli wartość tego obiektu może być zmieniona; zero ( `FALSE` ), jeśli obiekt jest tylko do odczytu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest używana przez wizualizatorów typu tworzenia wystąpienia zarządzanego podglądu.  
+ Ta metoda jest używana przez Wizualizatory typów w celu utworzenia wystąpienia zarządzanej przeglądarki.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

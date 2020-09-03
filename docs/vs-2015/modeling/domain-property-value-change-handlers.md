@@ -12,21 +12,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 69ebcc264eb3caa68fa0dfd2998613a7c9037b2e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669773"
 ---
 # <a name="domain-property-value-change-handlers"></a>Obsługa zmian wartości właściwości domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] języku specyficznym dla domeny, gdy wartość właściwości domeny ulegnie zmianie, metody `OnValueChanging()` i `OnValueChanged()` są wywoływane w programie obsługi właściwości domeny. Aby odpowiedzieć na zmianę, można zastąpić te metody.
+W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] języku specyficznym dla domeny, gdy wartość właściwości domeny ulega zmianie, `OnValueChanging()` `OnValueChanged()` metody i są wywoływane w programie obsługi właściwości domeny. Aby odpowiedzieć na zmianę, można zastąpić te metody.
 
 ## <a name="overriding-the-property-handler-methods"></a>Zastępowanie metod obsługi właściwości
  Każda właściwość domeny języka właściwego dla domeny jest obsługiwana przez klasę, która jest zagnieżdżona wewnątrz klasy domeny nadrzędnej. Jego nazwa jest zgodna z formatem *PropertyName*PropertyHandler. Tę klasę programu obsługi właściwości można sprawdzić w pliku **Dsl\Generated Code\DomainClasses.cs**. W klasie, `OnValueChanging()` jest wywoływana bezpośrednio przed zmianą wartości i `OnValueChanged()` jest wywoływana natychmiast po zmianie wartości.
 
- Załóżmy na przykład, że istnieje Klasa domeny o nazwie `Comment`, która ma właściwość domeny typu String o nazwie `Text` i Właściwość Integer o nazwie `TextLengthCount`. Aby spowodować, że `TextLengthCount` zawsze zawierać długość ciągu `Text`, można napisać następujący kod w osobnym pliku w projekcie DSL:
+ Załóżmy na przykład, że masz klasę domeny o nazwie `Comment` , która ma właściwość domeny typu String o nazwie `Text` i Właściwość Integer o nazwie `TextLengthCount` . Aby `TextLengthCount` zawsze zawierać długość `Text` ciągu, można napisać następujący kod w osobnym pliku w projekcie DSL:
 
 ```
 // Domain Class "Comment":
@@ -61,9 +61,9 @@ public partial class Comment
 
 - Właściwości obliczeniowe i niestandardowe domeny magazynu nie mają metod OnValueChanged i OnValueChanging.
 
-- Nie można użyć obsługi zmiany w celu zmodyfikowania nowej wartości. Jeśli chcesz to zrobić, na przykład w celu ograniczenia wartości do określonego zakresu, zdefiniuj `ChangeRule`.
+- Nie można użyć obsługi zmiany w celu zmodyfikowania nowej wartości. Jeśli chcesz to zrobić, na przykład w celu ograniczenia wartości do określonego zakresu, zdefiniuj `ChangeRule` .
 
-- Nie można dodać obsługi zmiany do właściwości, która reprezentuje rolę relacji. Zamiast tego należy zdefiniować `AddRule` i `DeleteRule` w klasie Relationship. Te reguły są wyzwalane po utworzeniu lub zmianie linków. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
+- Nie można dodać obsługi zmiany do właściwości, która reprezentuje rolę relacji. Zamiast tego należy zdefiniować `AddRule` i `DeleteRule` dla klasy Relationship. Te reguły są wyzwalane po utworzeniu lub zmianie linków. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="changes-in-and-out-of-the-store"></a>Zmiany w sklepie i poza nim
  Metody obsługi właściwości są wywoływane wewnątrz transakcji, która zainicjowała zmianę. W związku z tym można wprowadzić więcej zmian w sklepie bez otwierania nowej transakcji. Zmiany mogą spowodować dodatkowe wywołania procedury obsługi.
@@ -99,7 +99,7 @@ if (newValue > 10)
 
  Zamiast tego można rozważyć zdefiniowanie właściwości pochodnej jako właściwości obliczeniowej. W takim przypadku właściwość nie ma własnego magazynu i definiuje funkcję, która jest szacowana, gdy jej wartość jest wymagana. Aby uzyskać więcej informacji, zobacz [właściwości magazynu obliczeniowego i niestandardowego](../modeling/calculated-and-custom-storage-properties.md).
 
- Zamiast poprzedniego przykładu, można ustawić pole **rodzaj** `TextLengthCount`, które ma zostać **obliczone** w definicji DSL. Należy podać własną metodę **Get** dla tej właściwości domeny. Metoda **Get** zwróci bieżącą długość ciągu `Text`.
+ Zamiast poprzedniego przykładu, można ustawić pole **rodzaju** , które `TextLengthCount` ma zostać **obliczone** w definicji DSL. Należy podać własną metodę **Get** dla tej właściwości domeny. Metoda **Get** zwróci bieżącą długość `Text` ciągu.
 
  Jednak potencjalną wadą obliczonych właściwości jest to, że wyrażenie jest oceniane za każdym razem, gdy wartość jest używana, co może stanowić problem z wydajnością. Ponadto nie ma żadnych OnValueChanging () i OnValueChanged () na właściwości obliczeniowej.
 
@@ -145,7 +145,7 @@ public partial class MyDomainModel
 ## <a name="example"></a>Przykład
 
 ### <a name="description"></a>Opis
- Poniższy przykład zastępuje procedurę obsługi właściwości domeny i powiadamia użytkownika, gdy właściwość klasy `ExampleElement` domeny uległa zmianie.
+ Poniższy przykład zastępuje procedurę obsługi właściwości domeny i powiadamia użytkownika o `ExampleElement` zmianie właściwości klasy domeny.
 
 ### <a name="code"></a>Kod
 

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 59cc8536707744543490bc3e91b85545e4cd4007
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668849"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Porady: Zarządzanie zawijaniem wierszy w Edytorze
@@ -34,7 +34,7 @@ Możesz ustawić i wyczyścić opcję **zawijania wyrazów** . Gdy ta opcja jest
 
 #### <a name="to-set-word-wrap-preferences"></a>Aby ustawić preferencje zawijania wierszy
 
-1. W menu **Narzędzia** wybierz pozycję **Opcje**.
+1. W menu **Tools** (Narzędzia) wybierz pozycję **Options** (Opcje).
 
 2. W folderze **Edytor tekstu** wybierz opcje **Ogólne** w podfolderze **wszystkie języki** , aby ustawić tę opcję globalnie.
 

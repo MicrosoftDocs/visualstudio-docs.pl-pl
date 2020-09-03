@@ -20,7 +20,7 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Narzędzia platformy Entity Framework
       href: entity-data-model-tools-in-visual-studio.md
-    - name: DataSets
+    - name: Zestawy danych
       items:
         - name: Narzędzia do obsługi zestawów danych
           href: dataset-tools-in-visual-studio.md
@@ -164,7 +164,7 @@
               href: display-related-data-in-wpf-applications.md
             - name: Powiązywanie kontrolek z obrazami z bazy danych
               href: bind-controls-to-pictures-from-a-database.md
-        - name: Kontrolki Windows Forms
+        - name: formanty Formularzy systemu Windows
           items:
             - name: Powiązywanie kontrolek Windows Forms z danymi
               href: bind-windows-forms-controls-to-data-in-visual-studio.md
@@ -211,7 +211,7 @@
       href: upgrade-dot-mdf-files.md
     - name: Rozwiązywanie problemów z błędami dostępu do danych
       href: additional-resources-for-troubleshooting-data-access-errors.md
-- name: Tematy pomocy
+- name: Dokumentacja
   items:
     - name: Object Relational Designer (Linq to SQL)
       items:

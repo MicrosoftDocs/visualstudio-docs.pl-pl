@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b46a353606fc90aa89abf68d1e901675b4880b4c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85768921"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Instrukcje: eksportowanie tekstury zawierającej mipmapy
@@ -39,6 +39,6 @@ Mipmapping zapewnia Automatyczny poziom szczegółowości ekranu dla powierzchni
 
 3. Skonfiguruj potok zawartości obrazu w celu wygenerowania mipmapy. Na **Configuration Properties**  >  stronie Ogólne**potoku zawartości obrazu**właściwości konfiguracji  >  **General** ustaw właściwość **Generuj MIPS** na **wartość tak (/generatemips)**.
 
-4. Wybierz przycisk **OK**.
+4. Wybierz pozycję **OK**.
 
 Podczas kompilowania projektu potok zawartości obrazów konwertuje obraz źródłowy z formatu roboczego do formatu wyjściowego, który określiłeś, włącznie z poziomami MIP. Wynik jest kopiowany do katalogu wyjściowego projektu.

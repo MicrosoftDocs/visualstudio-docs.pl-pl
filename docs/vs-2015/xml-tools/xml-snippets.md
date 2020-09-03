@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bc8946d62f47291a6e0e3f26032589bfdf0de16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669362"
 ---
 # <a name="xml-snippets"></a>Fragmenty kodu XML
@@ -22,7 +22,7 @@ ms.locfileid: "72669362"
 Edytor XML oferuje funkcję, nazywaną *fragmentami kodu XML*, która umożliwia szybsze tworzenie plików XML. Można ponownie użyć fragmentów kodu XML, wstawiając je do plików. Możesz również generować dane XML na podstawie schematu definicji schematu XML (XSD).
 
 ## <a name="reusable-xml-snippets"></a>Fragmenty kodu XML wielokrotnego użytku
- Edytor XML zawiera wiele fragmentów kodu, które obejmują niektóre typowe zadania. Dzięki temu można łatwiej tworzyć pliki XML. Na przykład jeśli tworzysz schemat XML przy użyciu fragmentów "element sekwencji typu złożonego" i "element typu prostego", wstawi następujący tekst XML do pliku. Następnie należy zmienić wartość `name` tak, aby odpowiadała Twoim potrzebom.
+ Edytor XML zawiera wiele fragmentów kodu, które obejmują niektóre typowe zadania. Dzięki temu można łatwiej tworzyć pliki XML. Na przykład jeśli tworzysz schemat XML przy użyciu fragmentów "element sekwencji typu złożonego" i "element typu prostego", wstawi następujący tekst XML do pliku. Następnie należy zmienić `name` wartość tak, aby odpowiadała Twoim potrzebom.
 
 ```
 <xs:element name="name">
@@ -48,7 +48,7 @@ Edytor XML oferuje funkcję, nazywaną *fragmentami kodu XML*, która umożliwia
  Aby uzyskać więcej informacji, zobacz [jak: generować fragment kodu XML ze schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).
 
 ## <a name="create-new-xml-snippets"></a>Utwórz nowe fragmenty kodu XML
- Oprócz fragmentów kodu, które są domyślnie dołączone do [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio, można również tworzyć własne fragmenty kodu XML i korzystać z nich.
+ Oprócz fragmentów kodu, które są domyślnie dołączone do [!INCLUDE[msCoName](../includes/msconame-md.md)] programu Visual Studio, można również tworzyć własne fragmenty kodu XML i korzystać z nich.
 
  Aby uzyskać więcej informacji, zobacz [How to: Create XML defragments](../xml-tools/how-to-create-xml-snippets.md).
 

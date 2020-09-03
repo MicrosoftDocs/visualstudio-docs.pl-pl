@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3eebefeab6b78955b03d4546a60dd811f5e9ae4e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547657"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Obsługiwane wersje programu Visual Studio dla zestawu Visualization &amp; Modeling SDK
@@ -32,7 +32,7 @@ Poniżej przedstawiono listę wersji programu Visual Studio, które są obsługi
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
 |Visual Studio Wizualizacja i Modeling SDK|[Pobieranie zestawu SDK modelowania](https://www.microsoft.com/download/details.aspx?id=48148)|
 ## <a name="deployment-editions"></a>Wersje wdrożenia
- [!INCLUDE[dsl](../includes/dsl-md.md)]Program obsługuje następujące konfiguracje wdrażania utworzonych języków specyficznych dla domeny:
+ [!INCLUDE[dsl](../includes/dsl-md.md)] Program obsługuje następujące konfiguracje wdrażania utworzonych języków specyficznych dla domeny:
 
 - Visual Studio Enterprise
 

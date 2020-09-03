@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: baf0e9d9d0f4bb45ef965f64c256bd9360af112b
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85768601"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Klasy i typy refaktoryzacji w Projektant klas
@@ -86,6 +86,6 @@ Za pomocą **Projektant klas**, można przenieść składową typu z jednego typ
 
      Właściwość jest usuwana z typu źródłowego i pojawia się w typie docelowym.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Projektowanie klas i typów](designing-and-viewing-classes-and-types.md)

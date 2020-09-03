@@ -1,5 +1,5 @@
 ---
-title: Zadanie CallTarget | Dokumenty firmy Microsoft
+title: CallTarget — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,40 +17,40 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 26d29c236b89172ab6dc456be97016b98f2cae19
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094560"
 ---
 # <a name="calltarget-task"></a>CallTarget — zadanie
 
-Wywołuje określone obiekty docelowe w pliku projektu.
+Wywołuje określone elementy docelowe w pliku projektu.
 
 ## <a name="task-parameters"></a>Parametry zadania
 
- W poniższej tabeli `CallTarget` opisano parametry zadania.
+ W poniższej tabeli opisano parametry `CallTarget` zadania.
 
 | Parametr | Opis |
 |---------------------------| - |
-| `RunEachTargetSeparately` | Opcjonalny `Boolean` parametr wejściowy.<br /><br /> Jeśli `true`aparat MSBuild jest wywoływany raz na obiekt docelowy. Jeśli `false`aparat MSBuild jest wywoływana raz do tworzenia wszystkich obiektów docelowych. Wartością domyślną jest `false`. |
-| `TargetOutputs` | Opcjonalny parametr wyjściowy. <xref:Microsoft.Build.Framework.ITaskItem> `[]`<br /><br /> Zawiera dane wyjściowe wszystkich obiektów docelowych zbudowanych. |
-| `Targets` | Parametr `String[]` opcjonalny.<br /><br /> Określa obiekt docelowy lub cele do zbudowania. |
-| `UseResultsCache` | Parametr `Boolean` opcjonalny.<br /><br /> Jeśli `true`wynik buforowany jest zwracany, jeśli jest obecny.<br /><br /> **Uwaga** Po uruchomieniu zadania MSBuild jego dane wyjściowe są buforowane w zakresie (ProjectFileName, GlobalProperties)[TargetNames] jako lista elementów kompilacji. |
+| `RunEachTargetSeparately` | Opcjonalny `Boolean` parametr wejściowy.<br /><br /> Jeśli `true` aparat MSBuild jest wywoływany raz na miejsce docelowe. Jeśli `false` aparat MSBuild jest wywoływany raz, aby skompilować wszystkie obiekty docelowe. Wartość domyślna to `false`. |
+| `TargetOutputs` | Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera dane wyjściowe wszystkich skompilowanych elementów docelowych. |
+| `Targets` | Opcjonalny `String[]` parametr.<br /><br /> Określa obiekt docelowy lub docelowy do skompilowania. |
+| `UseResultsCache` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` jest, zostanie zwrócony wynik z pamięci podręcznej, jeśli jest obecny.<br /><br /> **Uwaga** Po uruchomieniu zadania programu MSBuild jego dane wyjściowe są buforowane w zakresie (ProjectFileName, GlobalProperties) [TargetNames] jako listę elementów kompilacji. |
 
 ## <a name="remarks"></a>Uwagi
 
- Jeśli cel określony `Targets` w `RunEachTargetSeparately` `true`nie powiedzie się i jest , zadanie kontynuuje tworzenie pozostałych obiektów docelowych.
+ Jeśli obiekt docelowy określony w polu `Targets` Niepowodzenie i `RunEachTargetSeparately` jest `true` , zadanie kontynuuje Kompilowanie pozostałych elementów docelowych.
 
- Jeśli chcesz zbudować domyślne obiekty docelowe, użyj [zadania MSBuild](../msbuild/msbuild-task.md) i ustaw `Projects` parametr równy . `$(MSBuildProjectFile)`
+ Jeśli chcesz skompilować domyślne elementy docelowe, użyj [zadania MSBuild](../msbuild/msbuild-task.md) i ustaw `Projects` parametr równy `$(MSBuildProjectFile)` .
 
-Podczas `CallTarget`korzystania z , MSBuild ocenia o nazwie docelowej w nowym zakresie, w przeciwieństwie do tego samego zakresu jest wywoływana z. Oznacza to, że wszelkie zmiany elementu i właściwości w o nazwie docelowej nie są widoczne dla obiektu docelowego wywołującego.  Aby przekazać informacje do obiektu `TargetOutputs` docelowego wywołującego, należy użyć parametru wyjściowego.
+W przypadku korzystania z programu `CallTarget` MSBuild ocenia wywołane miejsce docelowe w nowym zakresie, w przeciwieństwie do tego samego zakresu, z którego jest wywoływana. Oznacza to, że wszelkie zmiany elementów i właściwości w wywołanym miejscu docelowym nie są widoczne dla elementu docelowego wywołania.  Aby przekazać informacje do obiektu docelowego wywołującego, użyj `TargetOutputs` parametru Output.
 
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 
- Poniższy przykład `TargetA` wywołuje `CallOtherTargets`od wewnątrz .
+ Poniższy przykład wywołuje `TargetA` z wewnątrz `CallOtherTargets` .
 
 ```xml
 <Project DefaultTargets="CallOtherTargets"
@@ -69,5 +69,5 @@ Podczas `CallTarget`korzystania z , MSBuild ocenia o nazwie docelowej w nowym za
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
-- [Cele](../msbuild/msbuild-targets.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)
+- [Targets (Obiekty docelowe)](../msbuild/msbuild-targets.md)

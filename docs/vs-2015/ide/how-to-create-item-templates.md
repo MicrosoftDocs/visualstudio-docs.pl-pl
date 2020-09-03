@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9edc79002a4a2d7c2fe135d7eb4669f5f010599
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668077"
 ---
 # <a name="how-to-create-item-templates"></a>Porady: tworzenie szablonów elementu
@@ -26,7 +26,7 @@ ms.locfileid: "72668077"
 
 Kroki opisane w [pierwszej procedurze](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) w tym temacie pokazują, jak utworzyć szablon elementu przy użyciu kreatora **eksportu szablonów** . Jeśli szablon będzie zawierać wiele plików, zobacz [jak: Tworzenie szablonów elementów wieloplikowych](../ide/how-to-create-multi-file-item-templates.md).
 
- Kreator wykonuje wiele zadań, aby utworzyć podstawowy szablon, ale w wielu przypadkach trzeba ręcznie zmodyfikować plik vstemplate po wyeksportowaniu szablonu. Na przykład jeśli chcesz, aby element pojawił się w oknie dialogowym **Dodaj nowy element** dla projektu aplikacji [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], musisz wykonać kilka dodatkowych kroków. [Druga procedura](#to-enable-the-item-template-to-be-used-in-a-store-project) w tym temacie pomaga zrealizować to zadanie.
+ Kreator wykonuje wiele zadań, aby utworzyć podstawowy szablon, ale w wielu przypadkach trzeba ręcznie zmodyfikować plik vstemplate po wyeksportowaniu szablonu. Na przykład jeśli chcesz, aby element pojawił się w oknie dialogowym **Dodaj nowy element** dla [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projektu aplikacji, musisz wykonać kilka dodatkowych kroków. [Druga procedura](#to-enable-the-item-template-to-be-used-in-a-store-project) w tym temacie pomaga zrealizować to zadanie.
 
  W niektórych przypadkach może być konieczne lub konieczne ręczne utworzenie szablonu elementu od podstaw. [Trzecia procedura](#to-enable-templates-for-specific-project-sub-types) pokazuje, jak to zrobić.
 
@@ -34,7 +34,7 @@ Kroki opisane w [pierwszej procedurze](#to-add-a-custom-project-item-template-to
 
 ### <a name="to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box"></a>Aby dodać niestandardowy szablon elementu projektu do okna dialogowego Dodaj nowy element
 
-1. Utwórz lub Otwórz projekt w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+1. Utwórz lub Otwórz projekt w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 2. Dodaj element do projektu i zmodyfikuj go, jeśli chcesz.
 
@@ -50,24 +50,24 @@ Kroki opisane w [pierwszej procedurze](#to-add-a-custom-project-item-template-to
 
 8. Wpisz nazwę pliku ikony, obraz podglądu, nazwę szablonu i opis szablonu, a następnie kliknij przycisk **Zakończ**.
 
-     Pliki szablonu są dodawane do pliku zip i kopiowane z dowolnego katalogu określonego w oknie dialogowym. Domyślna lokalizacja to **.. \Users \\ < username \> \Documents\Visual Studio \<Version > \Moje wyeksportowany szablon \\** folderze.
+     Pliki szablonu są dodawane do pliku zip i kopiowane z dowolnego katalogu określonego w oknie dialogowym. Domyślna lokalizacja to **.. \Users \\<username \> \Documents\Visual Studio \<Version> \Moje wyeksportowany szablon \\ ** folder.
 
     > [!WARNING]
-    > W starszych wersjach programu Visual Studio domyślna lokalizacja to **.. \Users \\ < username \> \Documents\Visual Studio \<Version > \Templates\ItemTemplates**.
+    > W starszych wersjach programu Visual Studio domyślna lokalizacja to **.. \Users \\<username \> \Documents\Visual Studio \<Version> \Templates\ItemTemplates**.
 
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>Aby włączyć szablon elementu, który ma być używany w projekcie magazynu
 
 1. Wykonaj kroki opisane w powyższej procedurze, aby wyeksportować szablon elementu.
 
-2. Wyodrębnij plik. vstemplate z pliku zip, który został skopiowany do.. \Users \\*username*\Documents\Visual Studio *Version*\templates\itemtemplates\folder. (lub **Moje wyeksportowane szablony**).
+2. Wyodrębnij plik. vstemplate z pliku zip, który został skopiowany do.. Folder \Users \\ *username*\Documents\Visual Studio w *wersji*\Templates\itemtemplates\folder. (lub **Moje wyeksportowane szablony**).
 
 3. Otwórz plik. vstemplate w programie Visual Studio.
 
-4. W przypadku projektu magazynu C# Windows 8.1 w pliku. vstemplate Dodaj następujący kod XML w tagu otwierającym i zamykającym `<TemplateData>`: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.
+4. W przypadku projektu w języku C# Windows 8.1 Store w pliku. vstemplate Dodaj następujący kod XML w tagu otwierającym i zamykającym `<TemplateData>` : `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` .
 
-    Projekt C++ magazynu Windows 8.1 używa wartości `WinRT-Native-6.3`. W przypadku systemu Windows 10 i innych typów projektów zobacz [TemplateGroupID element (szablony Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).
+    Projekt programu C++ Windows 8.1 Store używa wartości `WinRT-Native-6.3` . W przypadku systemu Windows 10 i innych typów projektów zobacz [TemplateGroupID element (szablony Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).
 
-    Poniższy przykład pokazuje całą zawartość pliku. vstemplate po wierszu `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` w formacie XML. Ten przykład jest specyficzny C# dla projektów. Możesz zmodyfikować > \<ProjectType i \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> elementów, aby określić inny język i typy projektów.
+    Poniższy przykład pokazuje całą zawartość pliku. vstemplate po wierszu XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` został do niego dodany. Ten przykład dotyczy projektów w języku C#. Można zmodyfikować \<ProjectType> elementy i, \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> Aby określić inne typy języka i projektu.
 
    ```xml
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
@@ -92,11 +92,11 @@ Kroki opisane w [pierwszej procedurze](#to-add-a-custom-project-item-template-to
 
 5. W programie Visual Studio Zapisz plik. vstemplate i zamknij go.
 
-6. Skopiuj i wklej plik. vstemplate z powrotem do pliku zip znajdującego się w.. \Users \\*username*\Documents\Visual Studio *Version*\templates\itemtemplates\folder. folder.
+6. Skopiuj i wklej plik. vstemplate z powrotem do pliku zip znajdującego się w.. Folder \Users \\ *username*\Documents\Visual Studio w *wersji*\templates\itemtemplates\folder..
 
     Jeśli pojawi się okno dialogowe **Kopiuj plik** , wybierz opcję **Kopiuj i Zamień** .
 
-   Teraz można dodać element oparty na tym szablonie do projektu [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] przy użyciu okna dialogowego **Dodaj nowy element** .
+   Teraz można dodać element oparty na tym szablonie do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projektu za pomocą okna dialogowego **Dodaj nowy element** .
 
    Aby uzyskać więcej informacji na temat nazw parametrów, zobacz [Parametry szablonu](../ide/template-parameters.md).
 
@@ -114,9 +114,9 @@ Kroki opisane w [pierwszej procedurze](#to-add-a-custom-project-item-template-to
 
    2. Office
 
-   3. Baza danych
+   3. baza danych
 
-   4. sieć Web
+   4. Sieć Web
 
       Na przykład: `<ProjectSubType>Database</ProjectSubType>`.
 
@@ -155,7 +155,7 @@ Kroki opisane w [pierwszej procedurze](#to-add-a-custom-project-item-template-to
 
 7. W Eksploratorze Windows wybierz pliki, które chcesz dołączyć do szablonu, kliknij prawym przyciskiem myszy zaznaczenie, kliknij polecenie Wyślij do, a następnie kliknij folder skompresowany (zip). Wybrane pliki są kompresowane do pliku zip.
 
-8. Skopiuj plik zip i wklej go w lokalizacji szablonu elementu użytkownika. W programie Visual Studio 2015 katalog domyślny to.. \Users \\ < username \> \Documents\Visual Studio 2015 \ Templates\ItemTemplates \\. Aby uzyskać więcej informacji, zobacz How to: Lokalizowanie i organizowanie szablonów projektów i elementów.
+8. Skopiuj plik zip i wklej go w lokalizacji szablonu elementu użytkownika. W programie Visual Studio 2015 katalog domyślny to.. \Users \\<username \> \Documents\Visual Studio 2015 \ Templates\ItemTemplates \\ . Aby uzyskać więcej informacji, zobacz How to: Lokalizowanie i organizowanie szablonów projektów i elementów.
 
 ## <a name="see-also"></a>Zobacz też
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md) [— instrukcje: Tworzenie szablonów elementów wieloplikowych](../ide/how-to-create-multi-file-item-templates.md) [Dokumentacja schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

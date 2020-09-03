@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 88dc33f4dcc8edf0b7793a726a0b626360b9edb1
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85768665"
 ---
 # <a name="the-visual-studio-image-library"></a>Biblioteka obrazów programu Visual Studio
@@ -31,7 +31,7 @@ Biblioteka obrazów programu Visual Studio zawiera obrazy aplikacji, które są 
 
 Biblioteka obrazów jest podzielona na pięć kategorii: wspólne elementy, akcje, adnotacje, ikony i obiekty. Pliki Readme są zawarte w formacie PDF dla wspólnych elementów i typów ikon. Zawierają one informacje dotyczące sposobu korzystania z tych obrazów odpowiednio w aplikacjach.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instalowanie programu Visual Studio](../install/install-visual-studio.md)
 - [Obrazy, mapy bitowe i pliki.](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)

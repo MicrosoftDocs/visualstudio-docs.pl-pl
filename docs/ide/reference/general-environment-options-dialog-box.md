@@ -21,80 +21,80 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569442"
 ---
-# <a name="options-dialog-box-environment--general"></a>Okno dialogowe \> Opcje: Środowisko ogólne
+# <a name="options-dialog-box-environment--general"></a>Opcje — okno dialogowe: \> Ogólne środowisko
 
-Ta strona służy do zmiany motywów kolorów, ustawień paska stanu i skojarzeń rozszerzeń plików, między innymi dla zintegrowanego środowiska programistycznego (IDE). Dostęp do okna dialogowego **Opcje** można uzyskać, otwierając menu **Narzędzia,** wybierając **polecenie Opcje,** otwierając folder **Środowisko,** a następnie wybierając stronę **Ogólne.** Jeśli ta strona nie jest wyświetlana na liście, zaznacz pole wyboru **Pokaż wszystkie ustawienia** w oknie dialogowym **Opcje.**
+Ta strona służy do zmiany motywów kolorów, ustawień paska stanu i skojarzeń rozszerzeń plików między innymi opcjami dla zintegrowanego środowiska programistycznego (IDE). Dostęp do okna dialogowego **Opcje** można uzyskać, otwierając menu **Narzędzia** , wybierając **Opcje**, otwierając folder **środowiska** , a następnie wybierając stronę **Ogólne** . Jeśli ta strona nie jest wyświetlana na liście, zaznacz pole wyboru **Pokaż wszystkie ustawienia** w oknie dialogowym **Opcje** .
 
-## <a name="visual-experience"></a>Wrażenia wizualne
+## <a name="visual-experience"></a>Środowisko wizualne
 
 **Motyw kolorystyczny**
 
-Wybierz motyw kolorów **Niebieski,** **Jasny,** **Ciemny**lub **Niebieski (Dodatkowy kontrast)** dla IDE.
+Wybierz motyw koloru **niebieski**, **jasny**, **ciemny**lub **niebieski (dodatkowy kontrast)** dla środowiska IDE.
 
-Dodatkowe wstępnie zdefiniowane motywy można zainstalować i utworzyć motywy niestandardowe, pobierając i instalując **Edytor motywów kolorowych programu Visual Studio** z portalu Visual Studio [Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia w polu listy Motyw kolorów pojawią się dodatkowe motywy **kolorystykowe.**
+Możesz zainstalować dodatkowe wstępnie zdefiniowane motywy i utworzyć niestandardowe motywy, pobierając i instalując **Edytor motywów kolorów programu Visual Studio** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia w polu listy **motywu kolorów** zostaną wyświetlone dodatkowe motywy koloru.
 
-**Stosowanie stylów litery na pasku menu**
+**Zastosuj styl wielkości liter dla tytułu do paska menu**
 
-Menu domyślnie używają stylów litery tytułu. Wyczyść tę opcję, aby użyć wszystkich stylów wielkich liter.
+Menu domyślnie używają stylu wielkości liter. Usuń zaznaczenie tej opcji, aby zamiast tego użyć wszystkich wielkich stylów.
 
 ::: moniker range=">=vs-2019"
 
-**Optymalizacja renderowania dla ekranów o różnej gęstości pikseli (wymaga ponownego uruchomienia)**
+**Optymalizacja renderowania dla ekranów o różnych gęstościach pikseli (wymaga ponownego uruchomienia)**
 
-Ta opcja włącza lub wyłącza świadomość punktów na cal (DPI) (DPI) (lub *PMA).* Gdy pma jest włączona, interfejs użytkownika programu Visual Studio jest wyraźny w dowolnym współczynniku skali wyświetlania monitora i konfiguracji DPI, w tym na wielu monitorach. Aby włączyć pma, potrzebujesz systemu Windows 10 April 2018 Update lub nowszej i .NET Framework 4.8 lub nowszego. (Ta opcja jest wyszarzona, jeśli te dwa wymagania wstępne nie są spełnione).
+Ta opcja włącza lub wyłącza funkcję rozpoznawania punktów na cal (DPI) (lub *PMA*). Gdy PMA jest włączona, interfejs użytkownika programu Visual Studio jest bardziej wyrazisty w dowolnym monitorze monitora wyświetlania ekranu i konfiguracji DPI, w tym na wielu monitorach. Aby włączyć PMA, wymagana jest aktualizacja systemu Windows 10 z kwietnia 2018 lub nowsza i .NET Framework 4,8 lub nowsza. (Ta opcja jest wyświetlana w kolorze szarym, jeśli te dwa wymagania wstępne nie są spełnione).
 
 > [!TIP]
-> - Windows 10 ma ustawienie, które mówi **Niech system Windows spróbuje naprawić aplikacje, aby nie były rozmyte**. Włączenie tego **ustawienia** systemu Windows ma nieznaczny wpływ, jeśli zaznaczono opcję **Optymalizuj renderowanie dla ekranów z różnymi gęstościami pikseli.**
-> - System Windows 10 zawiera również **narzędzie do rozwiązywania problemów ze zgodnością programów**. Nie zaleca się próby naprawienia wyglądu programu Visual Studio przy użyciu tego narzędzia do rozwiązywania problemów.
+> - System Windows 10 ma ustawienie informujące o tym, że **system Windows próbuje naprawić aplikacje, tak aby nie były zamazane**. **Włączenie tego ustawienia systemu** Windows ma niewielki efekt, jeśli jest zaznaczone pole wyboru **Optymalizuj Render dla ekranów z inną gęstością pikseli** .
+> - System Windows 10 zawiera również **Narzędzie do rozwiązywania problemów ze zgodnością programu**. Nie zalecamy próby naprawienia wyglądu programu Visual Studio za pomocą tego narzędzia do rozwiązywania problemów.
 
 ::: moniker-end
 
-**Automatyczne dostosowywanie środowiska wizualnego w oparciu o wydajność klienta**
+**Automatycznie Dostosuj środowisko wizualne na podstawie wydajności klienta**
 
-Określa, czy program Visual Studio automatycznie ustawia dopasowanie do środowiska wizualnego, czy też korekta jest jawnie ustawiona. To dostosowanie może zmienić wyświetlanie kolorów z gradientów na płaskie kolory lub może ograniczyć użycie animacji w menu lub oknach podręcznych.
+Określa, czy program Visual Studio ustawia automatyczne dopasowanie do wizualizacji, czy też ustawia się w sposób jawny. Ta korekta może zmienić sposób wyświetlania kolorów z gradientów na płaskie kolory lub ograniczyć użycie animacji w menu lub oknach podręcznych.
 
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Windows 10 ma ustawienie, które mówi **Niech system Windows spróbuje naprawić aplikacje, aby nie były rozmyte**. Włączenie tego **ustawienia** jest zalecane, jeśli program Visual Studio jest rozmyty na monitorze. Należy rozważyć uaktualnienie do [programu Visual Studio 2019](https://visualstudio.microsoft.com/downloads), który znacznie poprawił przejrzystość wyświetlania, ponieważ jest to aplikacja obsługujących na monitor.
+> System Windows 10 ma ustawienie informujące o tym, że **system Windows próbuje naprawić aplikacje, tak aby nie były zamazane**. Włączenie **tego ustawienia jest** zalecane, jeśli program Visual Studio wydaje się zamazany na monitorze. Rozważ uaktualnienie do [programu Visual Studio 2019](https://visualstudio.microsoft.com/downloads), która znacznie poprawiła czytelność ekranu, ponieważ jest to liczba punktów monitora na aplikację obsługującą cal.
 
 ::: moniker-end
 
-**Włącz bogate środowisko klienta**
+**Włącz rozbudowane środowisko klienta**
 
-Umożliwia pełne środowisko wizualne programu Visual Studio, w tym gradienty i animacje. Wyczyść tę opcję podczas korzystania z połączeń pulpitu zdalnego lub starszych kart graficznych, ponieważ te funkcje mogą mieć niską wydajność w tych przypadkach. Ta opcja jest dostępna tylko wtedy, gdy **wyczyszczenie opcji Automatycznie dostosuj środowisko wizualne na podstawie** opcji klienta.
+Umożliwia pełne środowisko wizualne programu Visual Studio, w tym gradienty i animacje. Wyczyść tę opcję w przypadku używania połączeń Pulpit zdalny lub starszych kart graficznych, ponieważ te funkcje mogą mieć w takich przypadkach niską wydajność. Ta opcja jest dostępna tylko w przypadku usunięcia zaznaczenia opcji **automatycznie Dostosuj środowisko wizualne na podstawie klienta** .
 
-**Użyj sprzętowej akceleracji grafiki, jeśli jest dostępna**
+**Użyj sprzętowego przyspieszania grafiki, jeśli jest dostępne**
 
-Używa sprzętowej akceleracji grafiki, jeśli jest ona dostępna, a nie przyspieszenia oprogramowania.
+Używa sprzętowego przyspieszania grafiki, jeśli jest dostępne, a nie przyspieszenia oprogramowania.
 
 ## <a name="other"></a>Inne
 
-**Elementy do wyświetlenia w menu Okno**
+**Elementy do wyświetlenia w menu okna**
 
-Dostosowuje liczbę okien wyświetlanych na liście systemu Windows w menu **Okno.** Wprowadź liczbę z 1 do 24. Wartość domyślna to 10.
+Dostosowuje liczbę okien, które są wyświetlane na liście systemu Windows w menu **okno** . Wprowadź liczbę z zakresu od 1 do 24. Wartość domyślna to 10.
 
-**Elementy wyświetlane na ostatnio używanych listach**
+**Elementy wyświetlane na listach ostatnio używanych**
 
-Dostosowuje liczbę ostatnio używanych projektów i plików wyświetlanych w menu **Plik.** Wprowadź liczbę z 1 do 24. Wartość domyślna to 10. Jest to łatwy sposób na pobranie ostatnio używanych projektów i plików.
+Dostosowuje liczbę ostatnio używanych projektów i plików, które są wyświetlane w menu **plik** . Wprowadź liczbę z zakresu od 1 do 24. Wartość domyślna to 10. Jest to prosty sposób na pobranie niedawno używanych projektów i plików.
 
 **Pokaż pasek stanu**
 
-Wyświetla pasek stanu. Pasek stanu znajduje się w dolnej części okna IDE i wyświetla informacje o postępie trwających operacji.
+Wyświetla pasek stanu. Pasek stanu znajduje się u dołu okna IDE i wyświetla informacje o postępie trwających operacji.
 
-**Przycisk Zamknij wpływa tylko na aktywne okno narzędzia**
+**Przycisk zamykania ma wpływ tylko na aktywne okno narzędzi**
 
-Określa, że po kliknięciu przycisku **Zamknij** zamknięte jest tylko okno narzędzia, które ma fokus, a nie wszystkie okna narzędzia w zestawie zadokowanym. Ta opcja jest wybrana domyślnie.
+Określa, że po kliknięciu przycisku **Zamknij** tylko okno narzędzia z fokusem jest zamknięte, a nie wszystkie okna narzędzi w zestawie zadokowanym. Ta opcja jest wybrana domyślnie.
 
-**Przycisk Automatyczne ukrywanie wpływa tylko na aktywne okno narzędzia**
+**Przycisk Autoukrywanie ma wpływ tylko na aktywne okno narzędzi**
 
-Określa, że po kliknięciu przycisku **Automatyczne ukrywanie** tylko okno narzędzia, które ma fokus, jest automatycznie ukryte, a nie wszystkie okna narzędzia w zadokowanym zestawie. Domyślnie ta opcja nie jest zaznaczona.
+Określa, że po kliknięciu przycisku **Autoukrywanie** tylko okno narzędzia z fokusem jest ukryte automatycznie i nie wszystkie okna narzędzi w zestawie zadokowanym. Domyślnie ta opcja nie jest zaznaczona.
 
 ## <a name="see-also"></a>Zobacz też
 

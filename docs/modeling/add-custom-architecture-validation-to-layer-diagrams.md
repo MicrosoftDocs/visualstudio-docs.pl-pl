@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 98482eed6c1ed5a8ac2e3bbb7b5ada6af9517c1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546928"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Dodawanie niestandardowej walidacji architektury do diagramów zależności
@@ -107,7 +107,7 @@ Jeśli chcesz utworzyć jeden VSIX, który zawiera moduły walidacji warstwy, po
 
 6. Wróć do projektu walidacji warstwy i Dodaj następujące odwołania do projektu:
 
-    |**Tematy pomocy**|**Co można zrobić**|
+    |**Odwołanie**|**Co można zrobić**|
     |-|-|
     |Microsoft.VisualStudio.GraphModel.dll|Odczytywanie wykresu architektury|
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|Odczytaj kod DOM skojarzony z warstwami|
@@ -125,7 +125,7 @@ Jeśli chcesz utworzyć jeden VSIX, który zawiera moduły walidacji warstwy, po
 
 9. Aby zainstalować VSIX w głównym wystąpieniu programu Visual Studio lub na innym komputerze, Znajdź plik **. vsix** w katalogu **bin** projektu VSIX. Skopiuj go do komputera, na którym chcesz zainstalować VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze Windows.
 
-## <a name="programming-validation"></a><a name="programming"></a>Sprawdzanie poprawności programowania
+## <a name="programming-validation"></a><a name="programming"></a> Sprawdzanie poprawności programowania
 
 Aby zdefiniować rozszerzenie sprawdzania poprawności warstwy, należy zdefiniować klasę o następujących cechach:
 
@@ -194,7 +194,7 @@ Każdy węzeł i każde łącze ma jedną lub więcej kategorii, które określa
 
 Linki z warstw do elementów w kodzie mają kategorię "reprezentowane".
 
-## <a name="debugging-validation"></a><a name="debugging"></a>Sprawdzanie poprawności debugowania
+## <a name="debugging-validation"></a><a name="debugging"></a> Sprawdzanie poprawności debugowania
 
 Aby debugować rozszerzenie warstwy sprawdzania poprawności, naciśnij klawisze CTRL + F5. Zostanie otwarte doświadczalne wystąpienie programu Visual Studio. W tym wystąpieniu Otwórz lub Utwórz model warstwy. Ten model musi być skojarzony z kodem i musi mieć co najmniej jedną zależność.
 
@@ -226,7 +226,7 @@ Zawsze uruchamiaj eksperymentalne wystąpienie przez naciśnięcie klawiszy CTRL
 
 Aby zainstalować rozszerzenie sprawdzania poprawności na komputerze, na którym jest zainstalowana odpowiednia wersja programu Visual Studio, Otwórz plik VSIX na komputerze docelowym.
 
-## <a name="example-code"></a><a name="example"></a>Przykładowy kod
+## <a name="example-code"></a><a name="example"></a> Przykładowy kod
 
 ```csharp
 using System;
