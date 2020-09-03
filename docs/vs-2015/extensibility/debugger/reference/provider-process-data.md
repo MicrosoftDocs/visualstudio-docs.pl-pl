@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_PROCESS_DATA | Dokumentacja firmy Microsoft
+title: PROVIDER_PROCESS_DATA | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 89192d814ccee3dd2a134807d8ce01880689d951
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204936"
 ---
-# <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
+# <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta struktura zawiera informacje dotyczące procesów uruchomionych na maszynie.  
+Ta struktura zawiera informacje dotyczące procesów uruchomionych na komputerze.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,26 +44,26 @@ public struct PROVIDER_PROCESS_DATA {
   
 ## <a name="members"></a>Elementy członkowskie  
  Pola  
- Kombinacja flag z [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) wyliczenie, wskazujące, które pola są wypełniane.  
+ Kombinacja flag z wyliczenia [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) , wskazującą, które pola są wypełnione.  
   
  ProgramNodes  
- A [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) strukturę, która zawiera tablicę węzły programu.  
+ Struktura [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) , która zawiera tablicę węzłów programu.  
   
  fIsDebuggerPresent  
- Wartość różną od zera (`TRUE`) Jeśli [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debuger działa zero (`FALSE`) Jeśli nie jest.  
+ Niezerowe ( `TRUE` ) Jeśli [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debuger jest uruchomiony, zero ( `FALSE` ), jeśli nie jest.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest przekazywany do [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) metody, gdzie jest wypełnione.  
+ Ta struktura jest przenoszona do metody [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) , gdzie jest wypełniona.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)   
  [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)   
  [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

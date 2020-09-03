@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 04691d2344b232906676180122ad67fff5405891
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539363"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Poprawnie zaimplementuj interfejs IDisposable
@@ -33,7 +33,7 @@ ms.locfileid: "85539363"
 |Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- `IDisposable`nie został poprawnie zaimplementowany. Niektóre przyczyny tego problemu są wymienione tutaj:
+ `IDisposable` nie został poprawnie zaimplementowany. Niektóre przyczyny tego problemu są wymienione tutaj:
 
 - Interfejs IDisposable jest zaimplementowany w klasie.
 

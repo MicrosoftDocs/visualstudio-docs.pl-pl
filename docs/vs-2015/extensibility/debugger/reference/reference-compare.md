@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_COMPARE | Dokumentacja firmy Microsoft
+title: REFERENCE_COMPARE | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d617d428c9551bc821e1c72fa517497769e6f047
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204920"
 ---
-# <a name="referencecompare"></a>REFERENCE_COMPARE
+# <a name="reference_compare"></a>REFERENCE_COMPARE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa typ porównanie dla odwołań.  
+Określa typ porównania dla odwołań.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,21 +48,21 @@ public enum enum_REFERENCE_COMPARE { 
  Określa porównanie równości.  
   
  REF_COMPARE_LESS_THAN  
- Określa mniej-niż porównania.  
+ Określa mniej niż porównanie.  
   
  REF_COMPARE_GREATER_THAN  
- Określa większą-niż porównania.  
+ Określa większe niż porównanie.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazywany jako argument do [porównania](../../../extensibility/debugger/reference/idebugreference2-compare.md) metody.  
+ Przeszedł jako argument do metody [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)
+ [Porównaj](../../../extensibility/debugger/reference/idebugreference2-compare.md)

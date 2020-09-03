@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetStringFromValue | Dokumentacja firmy Microsoft
+title: 'IDebugEnumField:: GetStringFromValue | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ecdd60c363e30afbe4c61e8e18660a17a06a5ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188997"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta metoda uzyskuje nazwę danego jej wartość stałej wyliczenia.  
+Ta metoda uzyskuje nazwę stałej wyliczenia z uwzględnieniem jej wartości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,16 +42,16 @@ int GetStringFromValue(
   
 #### <a name="parameters"></a>Parametry  
  `value`  
- [in] Wartość, dla którego należy pobrać nazwę wyliczenia stałej.  
+ podczas Wartość, dla której ma zostać pobrana nazwa stałej wyliczenia.  
   
  `pbstrValue`  
- [out] Zwraca nazwę stała wyliczenia.  
+ określoną Zwraca nazwę stałej wyliczenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` Jeśli wartość nie ma skojarzonego nazwy lub zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` wartość, jeśli nie ma skojarzonej nazwy lub zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli istnieje więcej niż jedną nazwę skojarzonej z taką samą wartość, zostanie zwrócony imię zdefiniowane w wyliczeniu.  
+ Jeśli istnieje więcej niż jedna nazwa skojarzona z tą samą wartością, zostanie zwrócona Pierwsza nazwa zdefiniowana w wyliczeniu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

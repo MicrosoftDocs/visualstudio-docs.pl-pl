@@ -1,5 +1,5 @@
 ---
-title: Opcje, Edytor tekstu, C/C++, Widok
+title: Opcje, Edytor tekstu, C/C++, widok
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -12,49 +12,49 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77278692"
 ---
-# <a name="options-text-editor-cc-view"></a>Opcje, Edytor tekstu, C/C++, Widok
+# <a name="options-text-editor-cc-view"></a>Opcje, Edytor tekstu, C/C++, widok
 
-Użyj tych stron właściwości, aby zmienić domyślne zachowanie edytora kodu podczas programowania w języku C lub C++.
+Użyj tych stron właściwości, aby zmienić domyślne zachowanie edytora kodu podczas programowania w C lub C++.
 
-Aby uzyskać dostęp do tej strony właściwości, wybierz pozycję**Opcje** **narzędzi** > i rozwiń pozycję **Edytor tekstu**, następnie **C/C++,** a następnie wybierz polecenie **Wyświetl**.
+Aby uzyskać dostęp do tej strony właściwości **Tools**, wybierz  >  **Opcje** narzędzia i rozwiń **Edytor tekstu**, a następnie **C/C++**, a następnie wybierz pozycję **Widok**.
 
-## <a name="code-squiggles"></a>Squiggles kodu
+## <a name="code-squiggles"></a>Zawijanie kodu
 
-Można włączyć lub wyłączyć następujące ustawienia, aby zarządzać sposobem, w jaki edytor tekstu obsługuje squiggles kodu dla C i C++:
+Można włączać lub wyłączać następujące ustawienia, aby zarządzać sposobem, w jaki Edytor tekstu obsługuje zygzaki kodu dla języków C i C++:
 
-- **Makra w pominiętych regionach przeglądania** — określa sposób wyróżniania makr, które znajdują się wewnątrz pominiętych regionów przez przeglądającą bazę danych, takich jak makra, których definicje zawierają nawiasy klamrowe.
+- **Makra w pominiętych regionach przeglądania** — definiuje sposób wyróżniania makr, które znajdują się w pominiętych regionach przez bazę danych przeglądania, takie jak makra, których definicje zawierają nawiasy klamrowe.
 
-- **Makra convertible na constexpr** — definiuje sposób wyróżniania definicji `constexpr` makr, które można przekonwertować na definicje.
+- **Makra konwertowane na wyrażenie constexpr** — definiuje sposób wyróżniania definicji makr, które mogą być konwertowane na `constexpr` definicje.
 
 ## <a name="inactive-code"></a>Kod nieaktywny
 
-- **Pokaż nieaktywne bloki** — bloki nieaktywne preprocesora są inaczej barwione.
+- **Pokaż nieaktywne bloki** — nieaktywne bloki preprocesora są kolorowane w inny sposób.
 
-- **Wyłącz nieaktywne krycie kodu** — jednolity kolor zamiast krycia jest używany dla nieaktywnych bloków kodu.
+- Wyłącz nieprzezroczystość **nieaktywnego kodu** — pełny kolor, a nie krycie, jest używany dla nieaktywnych bloków kodu.
 
-- **Nieaktywny procent krycia kodu** — procent krycia dla nieaktywnych bloków kodu.
+- **Procent nieprzezroczystości nieaktywnego kodu** — procent krycia dla nieaktywnych bloków kodu.
 
 ## <a name="miscellaneous"></a>Różne
 
-- **Wyliczaj zadania komentarzy** — skanuj pliki open source w poszukiwaniu tokenów VS i zgłoś je w oknie Lista zadań.
+- **Wyliczanie zadań komentarzy** — Skanuj pliki Open Source dla programu vs i zgłoś je w oknie Lista zadań.
 
-- **Wyróżnij pasujące tokeny** — wyróżnij nawiasy klamrowe lub składnię, która pasuje do miejsca, w którym znajduje się kursor.
+- **Wyróżnij pasujące tokeny** — Wyróżnij otaczające nawiasy lub składnię pasujące do miejsca, w którym znajduje się kursor.
 
 ## <a name="outlining"></a>Tworzenie konspektu
 
-- **Włącz tworzenie pospektów** — wprowadź tryb tworzenia po otwarciu pliku.
+- **Włącz tworzenie konspektu — umożliwia** wprowadzanie trybu konspektu podczas otwierania pliku.
 
-- **Konspekt Regiony Pragmy** — automatycznie konspekt `#pragma` bloków regionów.
+- **Zakreśl regiony dyrektywy pragma** — automatycznie konspekty `#pragma` bloków regionów.
 
-- **Bloki instrukcji konspektu** — automatycznie konspekt bloków instrukcji.
+- **Konspekt bloków instrukcji** — automatyczne konspekty bloków instrukcji.
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Ustawianie opcji Edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refaktoryzowanie w języku C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)
+- [Refaktoryzacja w języku C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 402e62602d99492730d3094965e76964cd5f8218
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673093"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Dodawanie kontrolek niestandardowych do okna źródeł danych
@@ -40,7 +40,7 @@ Podczas przeciągania elementu z okna **źródła danych** do powierzchni projek
 > [!NOTE]
 > Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, w menu **Narzędzia** wybierz pozycję **Importuj i Eksportuj ustawienia**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
-## <a name="customizinglist"></a>Dostosowywanie listy formantów możliwych do powiązania dla typu danych
+## <a name="customize-the-list-of-bindable-controls-for-a-data-type"></a><a name="customizinglist"></a> Dostosowywanie listy formantów możliwych do powiązania dla typu danych
  Aby dodać lub usunąć kontrolki z listy dostępnych kontrolek dla elementów w oknie **źródła danych** , które mają określony typ danych, wykonaj następujące czynności.
 
 #### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Aby wybrać kontrolki, które mają być wyświetlane dla typu danych
@@ -57,11 +57,11 @@ Podczas przeciągania elementu z okna **źródła danych** do powierzchni projek
 
 4. W oknie dialogowym Wybierz typ danych z listy rozwijanej **Typ danych** .
 
-    - Aby dostosować listę formantów dla tabeli lub obiektu, wybierz pozycję **[Lista]** .
+    - Aby dostosować listę formantów dla tabeli lub obiektu, wybierz pozycję **[Lista]**.
 
     - Aby dostosować listę kontrolek dla kolumny tabeli lub właściwości obiektu, wybierz typ danych kolumny lub właściwości w źródłowym magazynie danych.
 
-    - Aby dostosować listę kontrolek do wyświetlania obiektów danych, które mają kształty zdefiniowane przez użytkownika, wybierz pozycję **[inne]** . Na przykład wybierz pozycję **[inne]** , jeśli aplikacja ma kontrolkę niestandardową, która wyświetla dane z więcej niż jednej właściwości określonego obiektu.
+    - Aby dostosować listę kontrolek do wyświetlania obiektów danych, które mają kształty zdefiniowane przez użytkownika, wybierz pozycję **[inne]**. Na przykład wybierz pozycję **[inne]** , jeśli aplikacja ma kontrolkę niestandardową, która wyświetla dane z więcej niż jednej właściwości określonego obiektu.
 
 5. W polu **skojarzone kontrolki** zaznacz każdy formant, który ma być dostępny dla wybranego typu danych, lub usuń zaznaczenie wszystkich kontrolek, które chcesz usunąć z listy.
 
@@ -74,7 +74,7 @@ Podczas przeciągania elementu z okna **źródła danych** do powierzchni projek
 
      Kontrolki wybrane w polu **skojarzone kontrolki** są teraz wyświetlane w menu rozwijanym elementu.
 
-## <a name="addingcontrols"></a>Addcontrols do listy skojarzonych formantów dla typu danych
+## <a name="addcontrols-to-the-list-of-associated-controls-for-a-data-type"></a><a name="addingcontrols"></a> Addcontrols do listy skojarzonych formantów dla typu danych
  Jeśli chcesz skojarzyć formant z typem danych, ale formant nie pojawia się w **skojarzonym polu formantów** , musisz dodać formant do listy. Formant musi znajdować się w bieżącym rozwiązaniu lub w przywoływanym zestawie. Musi również być dostępna w **przyborniku**i mieć atrybut, który określa zachowanie powiązania danych formantu.
 
 #### <a name="to-add-controls-to-the-list-of-associated-controls"></a>Aby dodać kontrolki do listy skojarzonych kontrolek
@@ -85,11 +85,11 @@ Podczas przeciągania elementu z okna **źródła danych** do powierzchni projek
 
     |Atrybut|Opis|
     |---------------|-----------------|
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Zaimplementuj ten atrybut w prostych kontrolkach, które wyświetlają pojedyncze kolumny (lub właściwości) danych, takie jak <xref:System.Windows.Forms.TextBox>.|
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Zaimplementuj ten atrybut w kontrolkach, które wyświetlają listy (lub tabele) danych, takie jak <xref:System.Windows.Forms.DataGridView>.|
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Zaimplementuj ten atrybut na kontrolkach, które wyświetlają listy (lub tabele) danych, ale muszą również przedstawić pojedynczą kolumnę lub właściwość, taką jak <xref:System.Windows.Forms.ComboBox>.|
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Zaimplementuj ten atrybut w prostych kontrolkach, które wyświetlają pojedynczą kolumnę (lub właściwość) danych, taką jak <xref:System.Windows.Forms.TextBox> .|
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Zaimplementuj ten atrybut w kontrolkach, które wyświetlają listy (lub tabele) danych, takie jak <xref:System.Windows.Forms.DataGridView> .|
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Zaimplementuj ten atrybut w kontrolkach, które wyświetlają listy (lub tabele) danych, ale muszą również przedstawić pojedynczą kolumnę lub właściwość, taką jak <xref:System.Windows.Forms.ComboBox> .|
 
-2. Aby uzyskać Windows Forms, w oknie dialogowym **Opcje** Otwórz stronę **Dostosowywanie interfejsu użytkownika danych** . Lub w przypadku platformy WPF Otwórz okno dialogowe **Dostosowywanie powiązania kontrolki** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie listy formantów możliwych do powiązania dla typu danych](#customizinglist).
+2. Aby uzyskać Windows Forms, w oknie dialogowym      **Opcje** Otwórz stronę **Dostosowywanie interfejsu użytkownika danych** . Lub w przypadku platformy WPF Otwórz okno dialogowe **Dostosowywanie powiązania kontrolki** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie listy formantów możliwych do powiązania dla typu danych](#customizinglist).
 
 3. W polu **skojarzone formanty** , formant, który właśnie został dodany do **przybornika** , powinien teraz zostać wyświetlony.
 

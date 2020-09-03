@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8745acd9af9009a7206eada7ffb64f95759e8399
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286196"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Rozpoczynanie tworzenia rozszerzeń Visual Studio
@@ -63,7 +63,7 @@ W tej sprawie znaleźliśmy, że funkcje, które większość osób chce zwięks
 
 - [Visual Studio Shell (izolowany)](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a>Jakie szablony projektów są udostępniane przez VSSDK?
+## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a> Jakie szablony projektów są udostępniane przez VSSDK?
  Dwa główne typy rozszerzeń to rozszerzenia pakietów VSPackage i MEF. Ogólnie rzecz biorąc, rozszerzenia pakietu VSPackage są używane dla rozszerzeń, które używają lub rozszerzają polecenia, okna narzędzi i projekty. Rozszerzenia MEF służą do rozszerzania lub dostosowywania edytora programu Visual Studio.
 
  W przypadku rozszerzeń Visual C# i Visual Basic, VSSDK zawiera pusty szablon projektu VSIX, którego można użyć razem z szablonami nowych elementów, które tworzą polecenia menu, okna narzędzi i rozszerzenia edytora. Tego szablonu można również użyć do spakowania szablonów projektu, fragmentów kodu i innych artefaktów do dystrybucji dla innych użytkowników.

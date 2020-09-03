@@ -30,10 +30,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d70016229ad9599c7ededbefaf08744f2bb6f351
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548086"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Zależności mapy w ramach rozwiązań
@@ -51,7 +51,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
 - [Zrozumienie złożonego kodu za pomocą map kodu](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
 
-## <a name="get-started-with-code-maps"></a><a name="GetStarted"></a>Wprowadzenie do map kodu
+## <a name="get-started-with-code-maps"></a><a name="GetStarted"></a> Wprowadzenie do map kodu
  **Aby korzystać z map kodu, musisz wykonać**następujące:
 
 - Visual Studio Enterprise: Tworzenie map kodu za pomocą edytora kodu, Eksplorator rozwiązań, Widok klasy lub Przeglądarka obiektów.
@@ -91,7 +91,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
 4. Zapoznaj się z [określonymi zależnościami](#SeeSpecificSource) , aby zrozumieć, jak można użyć map kodu do wyświetlania określonych zależności w ramach rozwiązania.
 
-### <a name="to-add-a-new-empty-code-map-to-your-solution"></a><a name="CreateEmptyMap"></a>Aby dodać nową pustą mapę kodu do rozwiązania
+### <a name="to-add-a-new-empty-code-map-to-your-solution"></a><a name="CreateEmptyMap"></a> Aby dodać nową pustą mapę kodu do rozwiązania
 
 1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązania najwyższego poziomu. Wybierz pozycję **Dodaj** , a następnie wybierz pozycję **nowy element**.
 
@@ -105,7 +105,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
 1. Otwórz menu **Architektura** i wybierz pozycję **Nowa mapa kodu**.
 
-     \-oraz
+     \- oraz
 
 2. Otwórz menu **plik** i wybierz polecenie **Nowy** , a następnie wybierz **plik**.
 
@@ -115,9 +115,9 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
      Masz teraz pustą mapę, która nie jest wyświetlana w folderach rozwiązania.
 
-## <a name="see-overall-dependencies"></a><a name="SeeOverviewSource"></a>Zobacz Ogólne zależności
+## <a name="see-overall-dependencies"></a><a name="SeeOverviewSource"></a> Zobacz Ogólne zależności
 
-### <a name="see-dependencies-across-your-solution"></a><a name="OverviewSource"></a>Zobacz zależności w rozwiązaniu
+### <a name="see-dependencies-across-your-solution"></a><a name="OverviewSource"></a> Zobacz zależności w rozwiązaniu
 
 1. W menu **Architektura** wybierz polecenie **Generuj mapę kodu dla rozwiązania**.
 
@@ -189,7 +189,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
 - Znajdź potencjalne problemy w kodzie, [uruchamiając Analizator](../modeling/find-potential-problems-using-code-map-analyzers.md).
 
-### <a name="see-dependencies-across-assemblies-or-binaries"></a><a name="OverviewCompiled"></a>Zobacz zależności w zestawach lub plikach binarnych
+### <a name="see-dependencies-across-assemblies-or-binaries"></a><a name="OverviewCompiled"></a> Zobacz zależności w zestawach lub plikach binarnych
 
 1. [Utwórz pustą mapę kodu](#GetStarted)lub Otwórz istniejącą mapę kodu (plik. dgml).
 
@@ -198,7 +198,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 > [!NOTE]
 > Możesz przeciągać zestawy lub pliki binarne z Eksploratora Windows lub Eksploratora plików tylko wtedy, gdy używasz go i programu Visual Studio na tym samym poziomie uprawnień użytkownika Access Control (UAC). Na przykład jeśli kontrola konta użytkownika jest włączona i używasz programu Visual Studio jako administrator, Eksplorator Windows lub Eksplorator plików zablokuje operację przeciągania. Aby obejść ten sposób, upewnij się, że oba działają z tym samym poziomem uprawnień, lub wyłącz funkcję Kontrola konta użytkownika.
 
-## <a name="see-specific-dependencies"></a><a name="SeeSpecificSource"></a>Zobacz określone zależności
+## <a name="see-specific-dependencies"></a><a name="SeeSpecificSource"></a> Zobacz określone zależności
  Załóżmy na przykład, że masz przegląd kodu do wykonania w niektórych plikach z oczekującymi zmianami. Aby wyświetlić zależności w tych zmianach, można utworzyć mapę kodu z tych plików.
 
  ![Pokaż określone zależności na mapie kodu](../modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")
@@ -232,7 +232,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
      Aby wyświetlić elementy członkowskie, które znajdują się w kodzie, ale nie są wyświetlane na mapie, kliknij ikonę ponownie **Pobierz elementy podrzędne** ikona ponownie ![Pobierz elementy podrzędne](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") w lewym górnym rogu grupy.
 
-6. Aby wyświetlić więcej elementów związanych z tymi elementami na mapie, wybierz jeden z nich i wybierz **Pokaż powiązane** z paskiem narzędzi Mapa kodu, a następnie wybierz typ powiązanych elementów do dodania do mapy. Alternatywnie wybierz co najmniej jeden element, otwórz menu skrótów, a następnie wybierz polecenie **Pokaż...** opcja dla typu elementów pokrewnych, które mają zostać dodane do mapy. Przykład:
+6. Aby wyświetlić więcej elementów związanych z tymi elementami na mapie, wybierz jeden z nich i wybierz **Pokaż powiązane** z paskiem narzędzi Mapa kodu, a następnie wybierz typ powiązanych elementów do dodania do mapy. Alternatywnie wybierz co najmniej jeden element, otwórz menu skrótów, a następnie wybierz polecenie **Pokaż...** opcja dla typu elementów pokrewnych, które mają zostać dodane do mapy. Na przykład:
 
      Dla **zestawu**wybierz:
 
@@ -283,7 +283,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
      ![Używanie okienka filtru do uproszczenia wyświetlania](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")
 
-## <a name="see-dependencies-between-c-and-c-source-files-and-header-files"></a><a name="SeeSourceHeader"></a>Zobacz zależności między plikami źródłowymi C i C++ a plikami nagłówkowymi
+## <a name="see-dependencies-between-c-and-c-source-files-and-header-files"></a><a name="SeeSourceHeader"></a> Zobacz zależności między plikami źródłowymi C i C++ a plikami nagłówkowymi
  Jeśli chcesz utworzyć dokładniejsze mapy dla projektów języka C++, ustaw dla tych projektów opcję **/fr**(przeglądanie informacji kompilatora). Zobacz [/fr,/fr (Create. Plik SBR)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). W przeciwnym razie pojawi się komunikat i monit o ustawienie tej opcji. Jeśli wybierzesz **OK**, spowoduje to ustawienie opcji tylko dla bieżącej mapy. Możesz wybrać opcję ukrycia komunikatu dla wszystkich późniejszych map. Jeśli ten komunikat zostanie ukryty, można go ponownie wyświetlić. Ustaw następujący klucz rejestru `0` lub Usuń klucz:
 
  **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**
@@ -298,7 +298,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
      ![Wykres zależności poziomu pierwszego&#45;dla pliku h](../modeling/media/dependencygraph-native-firstlevel.png "DependencyGraph_Native_FirstLevel")
 
-### <a name="troubleshoot-maps-for-c-and-c-code"></a><a name="Troubleshooting"></a>Rozwiązywanie problemów z mapami dla kodu C i C++
+### <a name="troubleshoot-maps-for-c-and-c-code"></a><a name="Troubleshooting"></a> Rozwiązywanie problemów z mapami dla kodu C i C++
  Te elementy nie są obsługiwane dla kodu C i C++:
 
 - Typy podstawowe nie są wyświetlane na mapach, które zawierają hierarchię nadrzędną.
@@ -310,7 +310,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 |**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|
 |---------------|------------------------|--------------------|
 |Nie można wygenerować mapy kodu.|Żadne projekty w rozwiązaniu nie zostały pomyślnie skompilowane.|Napraw błędy kompilacji, które wystąpiły, a następnie ponownie Wygeneruj mapę.|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]przestaje odpowiadać podczas próby wygenerowania mapy kodu z menu **architektury** .|Plik bazy danych programu (.pdb) może być uszkodzony.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Kompiluj rozwiązanie ponownie, a następnie spróbuj jeszcze raz.|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przestaje odpowiadać podczas próby wygenerowania mapy kodu z menu **architektury** .|Plik bazy danych programu (.pdb) może być uszkodzony.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Kompiluj rozwiązanie ponownie, a następnie spróbuj jeszcze raz.|
 |Niektóre ustawienia dla bazy danych przeglądania IntelliSense są wyłączone.|Niektóre ustawienia IntelliSense można wyłączyć w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oknie dialogowym **Opcje** .|Włącz te ustawienia.<br /><br /> Zobacz [Opcje, Edytor tekstu, C/C++, zaawansowane](../ide/reference/options-text-editor-c-cpp-advanced.md).|
 |Komunikat **nieznane metody** pojawi się w węźle metody.<br /><br /> Ten problem występuje, ponieważ nie można rozpoznać nazwy metody.|Plik binarny może nie mieć podstawowej tabeli relokacji.|Włącz opcję **/FIXED: No** w konsolidatorze.<br /><br /> Zobacz [/FIXED (stały adres podstawowy)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|
 ||Plik bazy danych programu (.pdb) może nie być skompilowany.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Włącz opcję **/Debug** w konsolidatorze.<br /><br /> Zobacz [/debug (generowanie informacji o debugowaniu)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|
@@ -318,7 +318,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 ||Informacje o debugowaniu pochodzą z pliku .pdb.|Jeśli w konsolidatorze użyto opcji **/PDBSTRIPPED** , Dołącz do niej kompletny plik. pdb.<br /><br /> Zobacz [/PDBSTRIPPED (symbole prywatne)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|
 ||Obiekt wywołujący nie jest funkcją i jest albo osadzony w pliku binarnym, albo stanowi wskaźnik w sekcji danych.|Gdy obiekt wywołujący jest thunk, spróbuj użyć, `_declspec(dllimport)` Aby uniknąć thunk.<br /><br /> Zobacz:<br /><br /> -   [Ogólne zasady i ograniczenia](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importowanie wywołań funkcji przy użyciu __declspec (dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
 
-## <a name="make-code-maps-render-more-quickly"></a><a name="RenderMoreQuickly"></a>Szybsze renderowanie map kodu
+## <a name="make-code-maps-render-more-quickly"></a><a name="RenderMoreQuickly"></a> Szybsze renderowanie map kodu
  Po wygenerowaniu mapy po raz pierwszy, program Visual Studio indeksuje wszystkie zależności, które znajdzie. Ten proces może zająć trochę czasu, szczególnie w przypadku dużych rozwiązań, ale poprawi wydajność później. Jeśli kod ulegnie zmianie, program Visual Studio ponownie indeksuje tylko zaktualizowany kod. Aby zminimalizować czas potrzebny na zakończenie renderowania mapy, należy wziąć pod uwagę następujące kwestie:
 
 - [Mapuj tylko zależności, które Cię interesują.](#SeeSpecificSource)
@@ -339,7 +339,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
   Zakończona mapa będzie wyświetlać zależności tylko dla kodu skompilowanego pomyślnie. Jeśli wystąpią błędy kompilacji dla niektórych składników, te błędy są wyświetlane na mapie. Upewnij się, że składnik rzeczywiście kompiluje i ma zależności od tego przed podjęciem decyzji o architekturze na podstawie mapy.
 
-## <a name="share-code-maps"></a><a name="SavingExporting"></a>Udostępnianie map kodu
+## <a name="share-code-maps"></a><a name="SavingExporting"></a> Udostępnianie map kodu
 
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Udostępnianie mapy innym użytkownikom programu Visual Studio
  Użyj menu **plik** , aby zapisać mapę.

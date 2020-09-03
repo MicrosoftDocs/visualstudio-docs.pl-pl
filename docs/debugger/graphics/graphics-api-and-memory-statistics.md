@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa808e76e6655c5d57108c923b19794d0398b80c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735574"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>Interfejs API grafiki i statystyka pamięci
@@ -36,11 +36,11 @@ To narzędzie wyświetli ilość pamięci przydzielanej przez sterownik grafiki 
 
 ![Statystyka pamięci](media/gfx_diag_memory_statistics.png)
 
-W kolumnie **alokacja procesora GPU** wyświetlana jest ilość pamięci używanej w zdarzeniu wyświetlanym w kolumnie **zdarzenie** .  Możesz również wybrać ikonę czujki ![ikonę czujki](media/gfx_watch.png), aby wyświetlić [historię zasobów](graphics-event-list.md#resource-history) dla wybranego zdarzenia.
+W kolumnie **alokacja procesora GPU** wyświetlana jest ilość pamięci używanej w zdarzeniu wyświetlanym w kolumnie **zdarzenie** .  Możesz również wybrać ikonę Obserwuj ikonę ![ czujki, ](media/gfx_watch.png) Aby wyświetlić [historię zasobów](graphics-event-list.md#resource-history) dla wybranego zdarzenia.
 
 Podobnie jak w przypadku narzędzia Statystyka interfejsu API można kliknąć prawym przyciskiem myszy w oknie, aby skopiować wszystkie dane jako woluminy CSV, które można wkleić do programu Excel w celu przeprowadzenia dalszej analizy.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Diagnostyka grafiki (debugowanie grafiki DirectX)](visual-studio-graphics-diagnostics.md)
 - [Historia zasobów](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

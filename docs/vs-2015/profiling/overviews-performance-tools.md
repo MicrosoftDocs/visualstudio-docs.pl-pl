@@ -1,5 +1,5 @@
 ---
-title: Omówienia (Narzędzia graficzne wydajności) | Dokumentacja firmy Microsoft
+title: Omówienia (narzędzia do oceny wydajności) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,44 +10,44 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6429f9d9a94d74be48bd1a6305f1bb109a173b5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189348"
 ---
-# <a name="overviews-performance-tools"></a>Omówienia (Narzędzia graficzne wydajności)
+# <a name="overviews-performance-tools"></a>Omówienia (narzędzia do oceny wydajności)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ta sekcja zawiera ogólne oraz omówienie terminologii dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools używane do mierzenia charakterystyki wydajności aplikacji w fazie projektowania.  
+Ta sekcja zawiera informacje o pojęciach i terminologii dotyczące [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] narzędzia profilowania, których można użyć do mierzenia charakterystyki wydajności aplikacji w ramach projektowania.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Sesja wydajności — omówienie](../profiling/performance-session-overview.md)  
- Poznaj podstawy profilowanie wydajności przy użyciu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools.  
+ [Przegląd sesji wydajności](../profiling/performance-session-overview.md)  
+ Zapoznaj się z informacjami na temat profilowania wydajności przy użyciu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] narzędzia profilowania.  
   
  [Właściwości sesji wydajności](../profiling/performance-session-properties.md)  
- Opisuje właściwości, które mogą być używane do konfigurowania sesji wydajności.  
+ Opisuje właściwości, których można użyć w celu skonfigurowania sesji wydajności.  
   
- [Zapoznanie z wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)  
- Dowiedz się, wartości danych, które są zgłaszane, gdy używasz metoda profilowania próbkowanie.  
+ [Omówienie wartości danych próbkowania](../profiling/understanding-sampling-data-values.md)  
+ Poznaj wartości danych, które są raportowane podczas korzystania z metody profilowania próbkowania.  
   
- [Zapoznanie z wartościami danych instrumentacji](../profiling/understanding-instrumentation-data-values.md)  
- Dowiedz się, wartości danych, które są zgłaszane, gdy używana jest metoda profilowania instrumentacji.  
+ [Informacje o danych Instrumentacji](../profiling/understanding-instrumentation-data-values.md)  
+ Poznaj wartości danych, które są raportowane w przypadku korzystania z metody profilowania Instrumentacji.  
   
- [Zapoznanie z alokacją pamięci i wartościami danych o okresie istnienia obiektu](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
- Dowiedz się, wartości danych, które są zgłaszane, gdy używasz — metoda profilowania pamięci platformy .NET.  
+ [Informacje o alokacji pamięci i wartościach danych okresu istnienia obiektu](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
+ Poznaj wartości danych raportowane w przypadku używania metody profilowania pamięci platformy .NET.  
   
- [Zapoznanie z wartościami danych rywalizacji o zasoby](../profiling/understanding-resource-contention-data-values.md)  
- Dowiedz się, wartości danych, które są zgłaszane, gdy używasz metody profilowania współbieżności.  
+ [Informacje o wartościach danych rywalizacji o zasoby](../profiling/understanding-resource-contention-data-values.md)  
+ Poznaj wartości danych, które są raportowane podczas korzystania z metody profilowania współbieżności.  
   
  [Okno Eksploratora wydajności](../profiling/performance-explorer-window.md)  
- W tym artykule opisano okno, które jest używane do konfigurowania i uruchamiania sesji wydajności.  
+ Opisuje okno, które służy do konfigurowania i uruchamiania sesji wydajności.  
   
- [Liczniki procesora CPU i systemu Windows](../profiling/cpu-and-windows-counters.md)  
- Więcej informacji na temat liczników wydajności procesora CPU i Windows, zapewniające dodatkowych danych o wydajności sesji wydajności.  
+ [Liczniki procesora i systemu Windows](../profiling/cpu-and-windows-counters.md)  
+ Dowiedz się więcej o licznikach wydajności procesora i systemu Windows, które mogą zapewnić dodatkowe dane dotyczące wydajności w sesji wydajności.  
   
- [Profilowanie i bezpieczeństwo systemu Windows Vista](../profiling/profiling-and-windows-vista-security.md)  
- Dowiedz się, problemów i czynności, które są wymagane, aby zebrać dane próbkowania i profilowanie między sesjami aplikacji na [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)].  
+ [Profilowanie i zabezpieczenia systemu Windows Vista](../profiling/profiling-and-windows-vista-security.md)  
+ Informacje o problemach i krokach, które są wymagane do zbierania danych próbkowania i profilowania aplikacji między sesjami w systemie [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)] .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wprowadzenie](../profiling/getting-started-with-performance-tools.md)   

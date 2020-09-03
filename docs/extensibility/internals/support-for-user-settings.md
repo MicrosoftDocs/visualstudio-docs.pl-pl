@@ -1,5 +1,5 @@
 ---
-title: Obsługa ustawień użytkownika | Dokumenty firmy Microsoft
+title: Obsługa ustawień użytkownika | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,47 +13,47 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 02bb2450196de76917e9cffc2f5f5acc6c8ee7b7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704788"
 ---
 # <a name="support-for-user-settings"></a>Pomoc techniczna dotycząca ustawień użytkownika
-VsPackage może zdefiniować jedną lub więcej kategorii ustawień, które są grupami zmiennych stanu, które utrzymują się, gdy użytkownik wybierze polecenie **Import/Eksportuj ustawienia** w menu **Narzędzia.** Aby włączyć tę trwałość, należy użyć ustawień [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]interfejsów API w pliku .
+Pakietu VSPackage może definiować jedną lub więcej kategorii ustawień, które są grupami zmiennych stanu, które są zachowywane, gdy użytkownik wybierze polecenie **Importuj/Eksportuj ustawienia** w menu **Narzędzia** . Aby włączyć tę trwałość, Użyj ustawień API w [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
 
- Wpis rejestru, który jest określany jako punkt ustawień niestandardowych i identyfikator GUID definiuje kategorię ustawień VSPackage. VsPackage może obsługiwać wiele kategorii ustawień, z których każda jest zdefiniowana przez punkt ustawień niestandardowych.
+ Wpis rejestru, który jest określany jako punkt ustawień niestandardowych, a identyfikator GUID definiuje kategorię ustawień pakietu VSPackage. Pakietu VSPackage może obsługiwać wiele kategorii ustawień, z których każda została zdefiniowana przez punkt ustawień niestandardowych.
 
-- Implementacje ustawień, które są oparte na <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> zestawach interop (przy użyciu interfejsu) należy utworzyć Punkt ustawień niestandardowych przez edycję rejestru lub przy użyciu skryptu rejestratora (plik rgs). Aby uzyskać więcej informacji, zobacz [Tworzenie skryptów rejestratora](/cpp/atl/creating-registrar-scripts).
+- Implementacje ustawień, które są oparte na zestawach międzyoperacyjnych (przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interfejsu), powinny utworzyć punkt ustawień niestandardowych przez edycję rejestru lub użycie skryptu rejestratora (plik. RGS). Aby uzyskać więcej informacji, zobacz [Tworzenie skryptów rejestratora](/cpp/atl/creating-registrar-scripts).
 
-- Kod, który używa struktury pakietu zarządzanego (MPF) należy <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> utworzyć punkty ustawień niestandardowych, dołączając do VSPackage dla każdego punktu ustawień niestandardowych.
+- Kod, który używa struktury zarządzanego pakietu (MPF), powinien utworzyć punkty ustawień niestandardowych przez dołączenie <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> do pakietu VSPackage dla każdego punktu ustawień niestandardowych.
 
-     Jeśli pojedynczy VSPackage obsługuje kilka punktów ustawień niestandardowych, każdy punkt ustawień niestandardowych jest implementowany <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> przez oddzielną klasę, a każdy jest zarejestrowany przez unikatowe wystąpienie klasy. W związku z tym ustawienia implementujące klasę może obsługiwać więcej niż jedną kategorię ustawień.
+     Jeśli pojedynczy pakietu VSPackage obsługuje kilka punktów ustawień niestandardowych, każdy punkt ustawień niestandardowych jest implementowany przez oddzielną klasę, a każdy z nich jest rejestrowany przez unikatowe wystąpienie <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> klasy. W związku z tym ustawienia implementujące klasy mogą obsługiwać więcej niż jedną kategorię ustawień.
 
 ## <a name="custom-settings-point-registry-entry-details"></a>Szczegóły wpisu rejestru punktu ustawień niestandardowych
- Niestandardowe punkty ustawień są tworzone we wpisie rejestru w następującej lokalizacji:\\HKLM\Software\Microsoft\VisualStudio `<CSPName>` *\<Version>* \UserSettings\\`<CSPName>`, gdzie jest nazwa punktu ustawień [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]niestandardowych obsługują vspackage i * \<>wersji* jest wersją , na przykład 8.0.
+ Punkty ustawień niestandardowych są tworzone we wpisie rejestru w następującej lokalizacji: HKLM\Software\Microsoft\VisualStudio \\ *\<Version>* \UserSettings \\ `<CSPName>` , gdzie `<CSPName>` to nazwa punktu ustawień niestandardowych, który obsługuje pakietu VSPackage i *\<Version>* jest wersją programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , na przykład 8,0.
 
 > [!NOTE]
-> Ścieżka główna HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* może zostać zastąpiona alternatywnym katalogiem głównym [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] po zainicjowaniu zintegrowanego środowiska programistycznego (IDE). Aby uzyskać więcej informacji, zobacz [Przełączniki wiersza polecenia](../../extensibility/command-line-switches-visual-studio-sdk.md).
+> Ścieżka katalogu głównego HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* może być zastąpiona alternatywnym elementem głównym, gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest inicjowane zintegrowane środowisko programistyczne (IDE). Aby uzyskać więcej informacji, zobacz [przełączniki wiersza polecenia](../../extensibility/command-line-switches-visual-studio-sdk.md).
 
- Struktura wpisu rejestru jest zilustrowana poniżej:
+ Poniżej przedstawiono strukturę wpisu rejestru:
 
- HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\
+ HKLM\Software\Microsoft\VisualStudio \\ *\<Version>* \UserSettings\
 
- `<CSPName`>= s '#12345'
+ `<CSPName`>= s "#12345"
 
- Pakiet = '{XXXXXX XXXX XXXX XXXX XXXXXXXXXXX}'
+ Package = "{XXXXXX XXXX XXXX XXXXXXXXX}"
 
- Kategoria = '{YYYYYYY YYYYY YYYYY YYYYY YYYYYYYYYYY}'
+ Kategoria = "{YYYYYY rrrr rrrr rrrr YYYYYYYYY}"
 
- Pakiet zasobów = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'
+ ResourcePackage = "{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}"
 
- AlternateParent = Nazwa kategorii
+ AlternateParent = CategoryName
 
 | Nazwa | Typ | Dane | Opis |
 |-----------------|--------| - | - |
-| (Domyślnie) | REG_SZ | Nazwa punktu ustawień niestandardowych | Nazwa klucza, `<CSPName`>, jest nieprzydzieloną nazwą punktu ustawień niestandardowych.<br /><br /> W przypadku implementacji opartych na mpf nazwa klucza `categoryName` `objectName` jest uzyskiwana przez połączenie argumentów i argumentów <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> konstruktora w `categoryName_objectName`.<br /><br /> Klucz może być pusty lub może zawierać identyfikator odniesienia do zlokalizowanego ciągu w satelicie DLL. Ta wartość jest `objectNameResourceID` uzyskiwana z argumentu do konstruktora. <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> |
-| Pakiet | REG_SZ | Identyfikator GUID | Identyfikator GUID programu VSPackage, który implementuje punkt ustawień niestandardowych.<br /><br /> Implementacje oparte na <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> MPF przy użyciu klasy, należy użyć argumentu `objectType` <xref:System.Type> konstruktora zawierającego VSPackage i odbicia, aby uzyskać tę wartość. |
-| Kategoria | REG_SZ | Identyfikator GUID | Identyfikator GUID identyfikujący kategorię ustawień.<br /><br /> Dla implementacji opartych na zestawach międzyoperacyjnych ta wartość może być [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dowolnie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> wybrany <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> identyfikator GUID, który IDE przechodzi do i metody. Wszystkie implementacje tych dwóch metod należy zweryfikować ich argumenty GUID.<br /><br /> Dla implementacji opartych na MPF ten <xref:System.Type> identyfikator GUID jest [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uzyskiwany przez klasę implementującą mechanizm ustawień. |
-| Pakiet zasobów | REG_SZ | Identyfikator GUID | Element opcjonalny.<br /><br /> Ścieżka do biblioteki DLL satelity zawierającej zlokalizowane ciągi, jeśli implementująca usługa VSPackage ich nie dostarcza.<br /><br /> MPF używa odbicia w celu uzyskania odpowiedniego zasobu VSPackage, więc <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> klasa nie ustawia tego argumentu. |
-| Zastępca rodzica | REG_SZ | Nazwa folderu na stronie Opcje narzędzi zawierającej ten punkt ustawień niestandardowych. | Element opcjonalny.<br /><br /> Tę wartość należy ustawić tylko wtedy, gdy implementacja ustawień obsługuje [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] strony **Opcje narzędzi,** które używają mechanizmu trwałości w zamiast mechanizmu w modelu automatyzacji, aby zapisać stan.<br /><br /> W takich przypadkach wartość w AlternateParent `topic` klucz jest `topic.sub-topic` sekcja ciągu używane do identyfikowania **poszczególnych ToolsOptions** strony. Na przykład dla **toolsoptions** strony `"TextEditor.Basic"` wartość AlternateParent `"TextEditor"`będzie .<br /><br /> Gdy <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> generuje punkt ustawień niestandardowych, jest taka sama jak nazwa kategorii. |
+| (Domyślnie) | REG_SZ | Nazwa punktu ustawień niestandardowych | Nazwa klucza, `<CSPName`>, to nielokalna nazwa punktu ustawień niestandardowych.<br /><br /> W przypadku implementacji opartych na MPF nazwa klucza jest uzyskiwana przez połączenie `categoryName` argumentów i `objectName` <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> konstruktora do `categoryName_objectName` .<br /><br /> Klucz może być pusty lub może zawierać identyfikator odwołania do zlokalizowanego ciągu w satelickiej bibliotece DLL. Ta wartość jest uzyskiwana z `objectNameResourceID` argumentu do <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> konstruktora. |
+| Pakiet | REG_SZ | GUID | Identyfikator GUID pakietu VSPackage, który implementuje punkt ustawień niestandardowych.<br /><br /> Implementacje oparte na MPF za pomocą <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> klasy, należy użyć `objectType` argumentu konstruktora zawierającego pakietu VSPackage <xref:System.Type> i odbicie w celu uzyskania tej wartości. |
+| Kategoria | REG_SZ | GUID | Identyfikator GUID identyfikujący kategorię ustawień.<br /><br /> W przypadku implementacji opartych na zestawach międzyoperacyjnych ta wartość może być wybranym przez siebie identyfikatorem GUID, który [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE przechodzi do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> metody i. Wszystkie implementacje tych dwóch metod powinny weryfikować ich argumenty GUID.<br /><br /> W przypadku implementacji opartych na MPF ten identyfikator GUID jest uzyskiwany przez <xref:System.Type> klasę implementującą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mechanizm ustawień. |
+| ResourcePackage | REG_SZ | GUID | Opcjonalny.<br /><br /> Ścieżka do satelickiej biblioteki DLL zawierającej zlokalizowane ciągi, jeśli implementacja pakietu VSPackage nie dostarcza tych plików.<br /><br /> MPF używa odbicia w celu uzyskania poprawnego pakietu VSPackage zasobu, więc <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Klasa nie ustawia tego argumentu. |
+| AlternateParent | REG_SZ | Nazwa folderu na stronie Opcje narzędzi zawierające ten punkt ustawień niestandardowych. | Opcjonalny.<br /><br /> Należy ustawić tę wartość tylko wtedy, gdy implementacja ustawień obsługuje strony **opcji narzędzi** , które używają mechanizmu trwałości [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] zamiast mechanizmu w modelu automatyzacji do zapisywania stanu.<br /><br /> W takich przypadkach wartość w kluczu AlternateParent jest `topic` sekcją `topic.sub-topic` ciągu służącą do identyfikowania określonej strony **ToolsOptions** . Na przykład dla strony **ToolsOptions** `"TextEditor.Basic"` wartość AlternateParent byłaby równa `"TextEditor"` .<br /><br /> Podczas <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> generowania punktu ustawień niestandardowych jest taka sama jak nazwa kategorii. |

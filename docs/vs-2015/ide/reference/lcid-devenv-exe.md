@@ -1,5 +1,5 @@
 ---
-title: -LCID (devenv. exe) | Microsoft Docs
+title: -LCID (devenv.exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: badb88abdf4b3ffd6140cb587b2b0add20630925
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672700"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -36,25 +36,25 @@ devenv {/LCID|/l} LocaleID
 ```
 
 ## <a name="arguments"></a>Argumenty
- Wymagane `LocaleID`. Identyfikator LCID (identyfikatora ustawień regionalnych) określonego języka.
+ `LocaleID` Wymagane. Identyfikator LCID (identyfikatora ustawień regionalnych) określonego języka.
 
 ## <a name="remarks"></a>Uwagi
  Ładuje IDE i ustawia domyślny język naturalny dla środowiska. Ta zmiana jest utrwalana między sesjami i widoczna w okienku **Ustawienia międzynarodowe** opcji **środowisko** w oknie dialogowym **Opcje** w IDE.
 
  Jeśli określony język nie jest dostępny w systemie użytkownika, przełącznik/LCID jest ignorowany.
 
- W poniższej tabeli przedstawiono identyfikatory LCID języków obsługiwanych przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
+ W poniższej tabeli przedstawiono identyfikatory LCID języków obsługiwanych przez program [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .
 
-|Język|ISTNIEJĄCYCH|
+|Język|Identyfikator LCID|
 |--------------|----------|
-|Chiński uproszczony|2052|
+|Chiński (uproszczony)|2052|
 |Chiński (tradycyjny)|1028|
-|angielski|1033|
-|francuski|1036|
-|niemiecki|1031|
+|Angielski|1045|
+|Francuski|1036|
+|Niemiecki|1031|
 |Włoski|1040|
 |japoński|1041|
-|koreański|1042|
+|Koreański|1042|
 |Hiszpański|3082|
 
 ## <a name="example"></a>Przykład

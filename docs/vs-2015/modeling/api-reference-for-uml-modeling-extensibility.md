@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e48bf723b8b1cb77cc1f7f4de9cfb562caccde84
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672806"
 ---
 # <a name="api-reference-for-uml-modeling-extensibility"></a>Wykaz interfejsów API dla rozszerzalności modelowania UML
@@ -29,8 +29,8 @@ Można napisać kod programu, aby odczytywać i modyfikować modele tworzone w p
 
 |Zestaw|Co można zrobić|
 |--------------|--------------------------------|
-|Microsoft. VisualStudio. UML. Interfaces. dll|— Odczytywanie i zmiana elementów modelu, takich jak IUseCase, IAssociation i tak dalej.<br />-Nawigowanie między elementami.<br /><br /> Przestrzenie nazw i typy odpowiadają tym, które są zdefiniowane w specyfikacji UML.|
-|Microsoft. VisualStudio. ArchitectureTools. rozszerzalność. dll|-Utwórz nowe wystąpienia elementów modelu<br />— Dostęp i modyfikowanie kształtów i diagramów.|
+|Microsoft.VisualStudio.Uml.Interfaces.dll|— Odczytywanie i zmiana elementów modelu, takich jak IUseCase, IAssociation i tak dalej.<br />-Nawigowanie między elementami.<br /><br /> Przestrzenie nazw i typy odpowiadają tym, które są zdefiniowane w specyfikacji UML.|
+|Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll|-Utwórz nowe wystąpienia elementów modelu<br />— Dostęp i modyfikowanie kształtów i diagramów.|
 
 ## <a name="see-also"></a>Zobacz też
  [Rozszerzona dokumentacja modelu UML i diagramy](../modeling/extend-uml-models-and-diagrams.md) [interfejsów API dla zestawu SDK modelowania dla programu Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

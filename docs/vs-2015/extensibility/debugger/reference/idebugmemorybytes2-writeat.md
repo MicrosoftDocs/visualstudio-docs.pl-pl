@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::WriteAt | Dokumentacja firmy Microsoft
+title: 'IDebugMemoryBytes2:: WriteAt | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2479ac3948f81769ba2e73c746fd1811652aa239
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180569"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Zapisuje określoną liczbę bajtów pamięci, zaczynając od określonego adresu.  
+Zapisuje określoną liczbę bajtów pamięci, rozpoczynając od podanego adresu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -45,19 +45,19 @@ int WriteAt(
   
 #### <a name="parameters"></a>Parametry  
  `pStartContext`  
- [in] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt, który określa, gdzie rozpoczyna zapis bajtów.  
+ podczas Obiekt [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) , który określa, gdzie zaczynać pisać bajty.  
   
  `dwCount`  
- [in] Liczba bajtów do zapisania.  
+ podczas Liczba bajtów do zapisania.  
   
  `rgbMemory`  
- [in] Bajty do zapisania. Ta tablica zakłada, że co najmniej `dwCount` bajtów.  
+ podczas Bajty do zapisania. Przyjęto, że ta tablica ma rozmiar co najmniej `dwCount` bajtów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` Jeśli nie wszystkie wartości bajtowe mogłyby być zapisywane lub zwraca kod błędu (zwykle `E_FAIL`).  
+ Jeśli to się powiedzie, zwraca `S_OK` ; w przeciwnym razie zwraca wartość, `S_FALSE` Jeśli nie wszystkie bajty mogą być zapisywane lub zwracają kod błędu (zazwyczaj `E_FAIL` ).  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli adres początkowy nie jest w obrębie okna pamięci, reprezentowane przez ten [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) obiektu występuje nie zapisywania i kod błędu `E_FAIL` zwróceniem — nawet wtedy, gdy kwota do zapisania nakłada się do obszaru pamięci.  
+ Jeśli adres początkowy nie należy do okna pamięci reprezentowanego przez ten obiekt [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) , nie nastąpi zapis i zwrócony kod błędu `E_FAIL` — nawet wtedy, gdy wielkość zapisu nakłada się na przestrzeń pamięci.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)   

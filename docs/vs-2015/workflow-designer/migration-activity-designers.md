@@ -10,19 +10,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bb2cf8e85dadb6ad9391da8227508b770c39bbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672646"
 ---
 # <a name="migration-activity-designers"></a>Projektanci działań Migration
-Projektanci działań migracji są używani do wywoływania działań przepływu pracy 3.0/3.5 z przepływu pracy docelowego dla [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Tematy zawarte w tej sekcji zawierają wskazówki dotyczące korzystania z projektantów działań [!INCLUDE[wfd2](../includes/wfd2-md.md)].
+Projektanci działań migracji są używani do wywoływania działań przepływu pracy 3.0/3.5 z przepływu pracy docelowego dla [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] . Tematy zawarte w tej sekcji zawierają wskazówki dotyczące korzystania z [!INCLUDE[wfd2](../includes/wfd2-md.md)] projektantów działań.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Międzyoperacyjność](../workflow-designer/interop-activity-designer.md) Służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.Interop>.
+ [Międzyoperacyjność](../workflow-designer/interop-activity-designer.md) Służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Interop> działania.
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
 
 ## <a name="related-sections"></a>Sekcje pokrewne
  W przypadku innych typów projektantów działań zapoznaj się z następującymi tematami.

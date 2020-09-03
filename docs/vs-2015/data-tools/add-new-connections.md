@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 44146613fb43b6fc4269741ba09b94629f888d5f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673073"
 ---
 # <a name="add-new-connections"></a>Dodawanie nowych połączeń
@@ -23,7 +23,7 @@ Możesz przetestować połączenie z bazą danych lub usługą oraz zbadać zawa
 
  Eksplorator serwera instalowany domyślnie w programie Visual Studio. Może służyć do testowania połączeń i wyświetlania SQL Server baz danych, innych baz danych, na których zainstalowano dostawcę ADO.NET oraz niektórych usług platformy Azure. Pokazuje również obiekty niskiego poziomu, takie jak liczniki wydajności systemu, dzienniki zdarzeń i kolejki komunikatów. Jeśli źródło danych nie ma dostawcy ADO.NET, nie będzie ono wyświetlane w tym miejscu, ale nadal będzie można z niego korzystać z programu Visual Studio, łącząc program programowo.
 
- W programie Cloud Explorer ręcznie zainstaluj to okno jako rozszerzenie programu Visual Studio, wybierając kolejno pozycje **narzędzia**  > **rozszerzenia i aktualizacje**  > **online**  > **Visual Studio Gallery**. Oferuje wyspecjalizowaną funkcję eksplorowania i nawiązywania połączeń z usługami platformy Azure.
+ W programie Cloud Explorer ręcznie zainstaluj to okno jako rozszerzenie programu Visual Studio, wybierając pozycję **Narzędzia**  >  **rozszerzenia i aktualizacje**  >  **online**  >  **Galeria Visual Studio**. Oferuje wyspecjalizowaną funkcję eksplorowania i nawiązywania połączeń z usługami platformy Azure.
 
  Eksplorator obiektów SQL Server zainstalowana z narzędziami danych SQL Server i widoczna w menu **Widok** . Jeśli nie widzisz go tam, przejdź do **apletu programy i funkcje** w panelu sterowania, Znajdź program Visual Studio, a następnie wybierz pozycję **Zmień** , aby ponownie uruchomić Instalatora po zaznaczeniu pola wyboru dla SQL Server narzędzi danych. Użyj **Eksplorator obiektów SQL Server** , aby wyświetlać bazy danych SQL (jeśli mają dostawcę ADO.NET), tworzyć nowe bazy danych, modyfikować schematy, tworzyć procedury składowane, pobierać parametry połączenia, wyświetlać dane i nie tylko. Bazy danych SQL, w których nie zainstalowano żadnego dostawcy ADO.NET, nie będą wyświetlane w tym miejscu, ale nadal można z nich łączyć się programowo.
 

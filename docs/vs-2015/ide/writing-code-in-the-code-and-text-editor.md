@@ -61,10 +61,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aa647d8a8d52588481d18347cb3400141978bd20
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548034"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Pisanie kodu w edytorze kodu i tekstu
@@ -82,7 +82,7 @@ Edytor programu Visual Studio udostępnia wiele funkcji, które ułatwiają pisa
 
 ## <a name="editor-features"></a>Funkcje edytora
 
-|Cecha|Opis|
+|Cechy|Opis|
 |-|-|
 |Kolorowanie składni|Niektóre elementy składni plików Code i Markup są różne w różny sposób, aby je odróżnić. Na przykład słowa kluczowe (na przykład `using` w języku C# i `Imports` w Visual Basic) są jednym kolorem, ale typy (takie jak `Console` i `Uri` ) są kolejnymi kolorami. Inne elementy składni są również kolorowe, takie jak literały ciągów i komentarze. C++ używa koloru do rozróżniania typów, wyliczeń i makr, między innymi tokenami.<br /><br /> Możesz zobaczyć domyślny kolor dla każdego typu i zmienić kolor dla każdego określonego elementu składni w oknie [dialogowym czcionki i kolory, środowisko, opcje](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), które można otworzyć z menu **Narzędzia** .|
 |Znaczniki błędów i ostrzeżeń|Podczas dodawania kodu i kompilowania rozwiązania, mogą pojawić się (a) różne kolorowe faliste podkreślenia (znane jako zygzaki) lub (b) żarówki pojawiające się w kodzie. W kolorze czerwonym są błędy składniowe, niebieskie oznacza błędy kompilatora, czerwone uwagi, a purpurowe oznaczają inne typy błędów. [Żarówki](../ide/perform-quick-actions-with-light-bulbs.md) sugerują poprawki dotyczące problemów i ułatwiają stosowanie poprawki.<br /><br /> W oknie dialogowym **Narzędzia/Opcje/środowisko/czcionki i kolory** można zobaczyć domyślny kolor poszczególnych błędów i ostrzeżeń. Poszukaj **błędu składniowy**, **błędu kompilatora**, **ostrzeżenia**i **innego błędu**.|
@@ -98,7 +98,7 @@ Edytor programu Visual Studio udostępnia wiele funkcji, które ułatwiają pisa
 ## <a name="advanced-editing-features"></a>Zaawansowane funkcje edycji
  Kilka zaawansowanych funkcji można znaleźć w podmenu **Edytuj/zaawansowane** . Nie wszystkie te funkcje są dostępne dla wszystkich typów plików kodu.
 
-|Cecha|Opis|
+|Cechy|Opis|
 |-|-|
 |Formatuj dokument|Ustawia właściwe wcięcia linii kodu i przenosi nawiasy klamrowe w celu oddzielenia wierszy w dokumencie.|
 |Formatowanie zaznaczenia|Ustawia właściwe wcięcia linii kodu i przenosi nawiasy klamrowe w celu oddzielenia wierszy w zaznaczeniu.|
@@ -128,7 +128,7 @@ Edytor programu Visual Studio udostępnia wiele funkcji, które ułatwiają pisa
 
 |Polecenie|Opis|
 |-|-|
-|Przejdź do\<line number>|(**Edytuj/przejdź do** lub CTRL + G): przenosi do określonego numeru wiersza w aktywnym dokumencie.|
+|Przejdź do \<line number>|(**Edytuj/przejdź do** lub CTRL + G): przenosi do określonego numeru wiersza w aktywnym dokumencie.|
 |Przejdź do|(**Edytuj/Nawiguj do** lub CTRL +,): znajduje symbol lub plik w aktywnym rozwiązaniu. Ułatwia wybór dobrego zestawu pasujących wyników zapytania. Słowa kluczowe, które są zawarte w symbolu, można wyszukiwać przy użyciu znaków notacji CamelCase i podkreślenia, aby podzielić symbol na słowa kluczowe.|
 |Znajdź wszystkie odwołania|(menu kontekstowe): znajduje wszystkie odwołania do wybranego elementu w rozwiązaniu.|
 |Przejdź do definicji|(menu kontekstowe lub F12): znajduje definicję wybranego elementu.|
@@ -206,7 +206,7 @@ Ta funkcja jest szczególnie przydatna, jeśli kod ma długie nazwy.
 
 - [Porady dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md)
 
-- [Korzystanie z IntelliSense](../ide/using-intellisense.md)
+- [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)
 
 - [Dopasowywanie edytora](../ide/customizing-the-editor.md)
 

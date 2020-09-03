@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d9bdfdb23d199c50b8d7ec6520964043dee8aa6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735520"
 ---
 # <a name="graphics-log-document"></a>Dokument dziennika grafiki
@@ -40,7 +40,7 @@ Dokument dziennika grafiki to rekord zdarzeń graficznych, które wystąpiły, g
 - W górnej części dokumentu dziennika grafiki wybierz piksel, który ma się pojawić w docelowym wyjściu renderowania. Gdy piksel jest zaznaczony, można użyć okna **Historia pikseli grafiki** , aby wyświetlić szczegółowe informacje na temat wybranego piksela. Aby uzyskać więcej informacji, zobacz [Historia pikseli](graphics-pixel-history.md).
 
 ## <a name="playback-machine"></a>Maszyna odtwarzania
- Również w prawym górnym rogu **listy ramek** znajduje się **maszyna odtwarzania**. Maszyna odtwarzania jest maszyną lub urządzeniem służącym do odtwarzania zdarzeń graficznych z pliku dziennika grafiki podczas późniejszej sesji diagnostyki grafiki. Przy użyciu innego urządzenia zamiast komputera deweloperskiego, aby odtwarzać przechwycone zdarzenia, można dokładniej odtworzyć środowisko wykonywania, w którym występuje problem — na przykład można użyć komputera z innym sprzętem lub sterownikiem graficznym. niż te używane przez maszynę deweloperskią lub inne rodzaje urządzeń, takie jak tablet z systemem Windows RT lub Windows Phone.
+ Również w prawym górnym rogu **listy ramek** znajduje się **maszyna odtwarzania**. Maszyna odtwarzania jest maszyną lub urządzeniem służącym do odtwarzania zdarzeń graficznych z pliku dziennika grafiki podczas późniejszej sesji diagnostyki grafiki. Przy użyciu innego urządzenia zamiast komputera deweloperskiego, aby odtwarzać przechwycone zdarzenia, można dokładniej odtworzyć środowisko wykonywania, w którym występuje problem — na przykład można użyć komputera z innym sprzętem lub sterownikiem graficznym niż te, które są używane przez maszynę deweloperskią, lub innych rodzajów urządzeń, takich jak tablet z systemem Windows RT lub Windows Phone.
 
  Aby uzyskać informacje na temat sposobu określania komputera odtwarzającego, zobacz [How to: Change a Diagnostyka grafiki playback Machine](how-to-change-the-graphics-diagnostics-playback-machine.md).
 
@@ -65,7 +65,7 @@ Dokument dziennika grafiki to rekord zdarzeń graficznych, które wystąpiły, g
 |--------------|-----------------|
 |**Opis**|Ciąg opisu karty graficznej.|
 |**Wyświetl pamięć**|Ilość pamięci zainstalowanej na karcie graficznej.|
-|**Nazwa sterownika**|Nazwa sterownika karty graficznej.|
+|**Nazwisko kierowcy**|Nazwa sterownika karty graficznej.|
 |**Wersja sterownika**|Wersja sterownika karty graficznej.|
 |**Nazwa**|Nazwa karty graficznej.|
 
@@ -81,10 +81,10 @@ Dokument dziennika grafiki to rekord zdarzeń graficznych, które wystąpiły, g
 
 |Właściwość|Opis|
 |--------------|-----------------|
-|**Rozmiar**|Ilość pamięci zainstalowanej na komputerze.|
+|**Pamięć**|Ilość pamięci zainstalowanej na komputerze.|
 |**Architektura systemu operacyjnego**|Docelowa architektura procesora systemu operacyjnego.|
-|**Wersja systemu operacyjnego**|Wersja systemu operacyjnego.|
-|**Extreme**|Procesor, który jest zainstalowany na komputerze.|
+|**Wersja systemu operacyjnego**|wersja systemu operacyjnego.|
+|**Procesor**|Procesor, który jest zainstalowany na komputerze.|
 |**Architektura aplikacji docelowej**|Docelowa architektura procesora dla aplikacji. Może się to różnić od **architektury systemu operacyjnego**.|
 
  **Aplikacja docelowa** Wyświetla informacje o aplikacji, która jest podmiotem sesji przechwytywania.
@@ -100,10 +100,10 @@ Dokument dziennika grafiki to rekord zdarzeń graficznych, które wystąpiły, g
 
 | Właściwość | Opis |
 |------------------------| - |
-| **Utworzone przez** | Nazwa aplikacji, która utworzyła dokument dziennika grafiki. Na przykład jeśli sesja przechwytywania została zainicjowana z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (przechwytywanie ręczne), wartość tej właściwości jest [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
+| **Utworzone przez** | Nazwa aplikacji, która utworzyła dokument dziennika grafiki. Na przykład jeśli sesja przechwytywania została zainicjowana z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (przechwytywanie ręczne), wartość tej właściwości to [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . |
 | **Godzina rozpoczęcia sesji** | Data i godzina rozpoczęcia sesji przechwytywania. |
-| **Zmienia** | Rozmiar dokumentu dziennika grafiki. |
+| **Rozmiar** | Rozmiar dokumentu dziennika grafiki. |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przewodnik: brak obiektów spowodowany cieniowaniem wierzchołków](walkthrough-missing-objects-due-to-vertex-shading.md)
 - [Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem](walkthrough-debugging-rendering-errors-due-to-shading.md)

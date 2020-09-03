@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87bce70f83be2af80f93cf9888432257f6139732
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285152"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Widok klasy i Przeglądarka obiektów, ikony
@@ -33,14 +33,14 @@ ms.locfileid: "85285152"
 |![Ikona klasy](../ide/media/vxclass_icon.gif)|Klasa|![Symbol operatora](../ide/media/vxoperator_icon.gif)|Operator|
 |![Symbol interfejsu typu lizak](../ide/media/vxinterface_icon.gif)|Interfejs|![Symbol właściwości](../ide/media/vxproperty_icon.gif)|Właściwość|
 |![Symbol struktury](../ide/media/vxstruct_icon.gif)|Struktura|![Ikona pola](../ide/media/vxfield_icon.gif)|Pole lub zmienna|
-|![Symbol Union](../ide/media/vxunion_icon.gif)|Unia|![Symbol zdarzenia](../ide/media/vxevent_icon.gif)|Zdarzenie|
-|![Symbol wyliczenia](../ide/media/vxenum_icon.gif)|Wyliczenie|![Ikona stałej](../ide/media/vxconstant_icon.gif)|Stały|
+|![Symbol Union](../ide/media/vxunion_icon.gif)|Unia|![Symbol zdarzenia](../ide/media/vxevent_icon.gif)|Wydarzenie|
+|![Symbol wyliczenia](../ide/media/vxenum_icon.gif)|Wyliczenie|![Ikona stałej](../ide/media/vxconstant_icon.gif)|Stała|
 |![Symbol definicji typu](../ide/media/vxtypedef_icon.gif)|Własne|![Symbol wyliczenia elementu](../ide/media/vxenumitem_icon.gif)|Element Enum|
 |![Symbol modułu programu Visual Studio](../ide/media/vxmodule_icon.gif)|Moduł|![Symbol elementu mapy](../ide/media/vxmapitem_icon.gif)|Element mapy|
 |![Symbol metody rozszerzenia](../ide/media/extensionmethod.gif)|Metoda rozszerzenia|![Symbol deklaracji](../ide/media/vxmethod_icon.gif)|Deklaracja zewnętrzna|
 |![Symbol delegata](../ide/media/vxdelegate_icon.gif)|Delegat|![Ikona błędu dla Widok klasy i Przeglądarka obiektów](../ide/media/erroricon.gif)|Błąd|
 |![Symbol wyjątku](../ide/media/vxexception_icon.gif)|Wyjątek|![Symbol szablonu](../ide/media/vxtemplate_icon.gif)|Szablon|
-|![Symbol mapy](../ide/media/vxmap_icon.gif)|Mapa|![Błąd znaku wykrzyknika](../ide/media/vxerror_icon.gif)|Nieznane|
+|![Symbol mapy](../ide/media/vxmap_icon.gif)|Mapa|![Błąd znaku wykrzyknika](../ide/media/vxerror_icon.gif)|Nieznany|
 |![Symbol przesyłania dalej typu](../ide/media/ob_type_forward.gif)|Przekazywanie typu|||
 
 > [!TIP]

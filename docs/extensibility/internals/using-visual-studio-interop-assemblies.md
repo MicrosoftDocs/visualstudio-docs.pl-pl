@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z zestawów interop programu Visual Studio | Dokumenty firmy Microsoft
+title: Używanie zestawów międzyoperacyjnych programu Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,52 +13,52 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5926b2cce217565c889c7ef2eeef877691101ed6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704131"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Korzystanie z zestawów międzyoperacyjnych programu Visual Studio
-Zestawy międzyoperacyjne programu Visual Studio umożliwiają zarządzanym aplikacjom dostęp do interfejsów COM, które zapewniają rozszerzalność programu Visual Studio. Istnieją pewne różnice między prostymi interfejsami COM a ich wersjami międzyoperacyjnymi. Na przykład HRESULTs są zazwyczaj reprezentowane jako wartości int i muszą być obsługiwane w taki sam sposób jak wyjątki i parametry (zwłaszcza out parametry) są traktowane inaczej.
+Zestawy międzyoperacyjne programu Visual Studio umożliwiają zarządzanym aplikacjom dostęp do interfejsów COM, które udostępniają rozszerzalność programu Visual Studio. Istnieją pewne różnice między prostymi interfejsami COM i ich wersjami międzyoperacyjnymi. Na przykład HRESULTs są zwykle reprezentowane jako wartości int i muszą być obsługiwane w taki sam sposób jak wyjątki, a parametry (zwłaszcza parametry out) są traktowane inaczej.
 
-## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Obsługa HRESULTs zwrócona do kodu zarządzanego z COM
- Po wywołaniu interfejsu COM z kodu zarządzanego, sprawdź wartość HRESULT i zgłosić wyjątek, jeśli jest to wymagane. Klasa <xref:Microsoft.VisualStudio.ErrorHandler> zawiera <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> metodę, która zgłasza wyjątek COM, w zależności od wartości HRESULT przekazany do niego.
+## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Obsługa HRESULT zwróconych do kodu zarządzanego z modelu COM
+ Gdy wywoływany jest interfejs COM z kodu zarządzanego, należy przeanalizować wartość HRESULT i zgłosić wyjątek, jeśli jest to wymagane. <xref:Microsoft.VisualStudio.ErrorHandler>Klasa zawiera <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> metodę, która ZGŁASZA wyjątek com, w zależności od wartości przenoszonego do niego wyniku.
 
- Domyślnie <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> zgłasza wyjątek, gdy jest przekazywany HRESULT, który ma wartość mniejszą niż zero. W przypadkach, gdy takie HRESULTs są dopuszczalne wartości i nie należy zgłaszać <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> wyjątku, wartości dodatkowych HRESULTS powinny być przekazywane do po wartości są testowane. Jeśli HRESULT testowane pasuje do wszystkich hresult <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>wartości jawnie przekazywane do , nie wyjątek.
+ Domyślnie <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> zgłasza wyjątek, gdy jest przenoszona wynik HRESULT o wartości mniejszej od zera. W przypadkach, gdy takie HRESULT są akceptowalnymi wartościami i żaden wyjątek nie powinien być zgłaszany, wartości dodatkowych HRESULT powinny być przesyłane do <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> po przetestowaniu wartości. Jeśli wartość HRESULT jest testowana dopasowuje wszystkie wartości HRESULT jawnie przekazaną do <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> , żaden wyjątek nie jest zgłaszany.
 
 > [!NOTE]
-> Klasa <xref:Microsoft.VisualStudio.VSConstants> zawiera stałe dla wspólnych HRESULTS, <xref:Microsoft.VisualStudio.VSConstants.S_OK> <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przykład i , i <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> HRESULTS, na przykład i <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants>zawiera również <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> i metody, które odpowiadają pomyślnie i failed makr w COM.
+> <xref:Microsoft.VisualStudio.VSConstants>Klasa zawiera stałe dla wspólnych wartości HRESULT, na przykład i <xref:Microsoft.VisualStudio.VSConstants.S_OK> <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> , i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] HRESULT, na przykład <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> i <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT> . <xref:Microsoft.VisualStudio.VSConstants> udostępnia również <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> metody i <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> , które odpowiadają MAKROm zakończonym powodzeniem i niepowodzeniem w modelu com.
 
- Rozważmy na przykład następujące wywołanie <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> funkcji, w którym jest dopuszczalna wartość zwracana, ale wszelkie inne HRESULT mniej niż zero reprezentuje błąd.
+ Rozważmy na przykład następujące wywołanie funkcji, w którym <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> jest akceptowalną wartością zwracaną, ale wszystkie inne HRESULT, które są mniejsze od zera, reprezentują błąd.
 
  [!code-vb[VSSDKHRESULTInformation#1](../../extensibility/internals/codesnippet/VisualBasic/using-visual-studio-interop-assemblies_1.vb)]
  [!code-csharp[VSSDKHRESULTInformation#1](../../extensibility/internals/codesnippet/CSharp/using-visual-studio-interop-assemblies_1.cs)]
 
- Jeśli istnieje więcej niż jedna dopuszczalna wartość zwracana, dodatkowe wartości HRESULT można <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>po prostu dołączyć do listy w wywołaniu .
+ Jeśli istnieje więcej niż jedna akceptowalna wartość zwracana, dodatkowe wartości HRESULT mogą wystarczy dołączyć do listy w wywołaniu <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> .
 
  [!code-vb[VSSDKHRESULTInformation#2](../../extensibility/internals/codesnippet/VisualBasic/using-visual-studio-interop-assemblies_2.vb)]
  [!code-csharp[VSSDKHRESULTInformation#2](../../extensibility/internals/codesnippet/CSharp/using-visual-studio-interop-assemblies_2.cs)]
 
-## <a name="returning-hresults-to-com-from-managed-code"></a>Powrót HRESULTS do com z kodu zarządzanego
- Jeśli nie wystąpi wyjątek, kod zarządzany zwraca <xref:Microsoft.VisualStudio.VSConstants.S_OK> funkcję COM, która go wywoływała. Współdziałacze COM obsługuje typowe wyjątki, które są silnie wpisane w kodzie zarządzanym. Na przykład metoda, która `null` odbiera niedopuszczalne <xref:System.ArgumentNullException>argumentrzuca .
+## <a name="returning-hresults-to-com-from-managed-code"></a>Zwracanie wartości HRESULT do modelu COM z kodu zarządzanego
+ Jeśli żaden wyjątek nie wystąpi, kod zarządzany zwraca <xref:Microsoft.VisualStudio.VSConstants.S_OK> do funkcji com, która go wywołała. Międzyoperacyjność modelu COM obsługuje typowe wyjątki, które są jednoznacznie wpisane w kodzie zarządzanym. Na przykład metoda, która odbiera nieakceptowalny `null` argument zgłasza <xref:System.ArgumentNullException> .
 
- Jeśli nie masz pewności, który wyjątek zgłosić, ale wiesz, HRESULT chcesz <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> powrócić do com, można użyć metody, aby zgłosić odpowiedni wyjątek. Działa to nawet z niestandardowym błędem, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>na przykład. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>próby mapowania hresult przeszedł do niego do silnie wpisanego wyjątku. Jeśli nie, zgłasza ogólny wyjątek COM zamiast tego. Ostatecznym wynikiem jest to, że HRESULT przekazać <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> z kodu zarządzanego jest zwracany do funkcji COM, który go wywoływał.
-
-> [!NOTE]
-> Wyjątki zagrażają wydajności i mają na celu wskazanie nieprawidłowych warunków programu. Warunki, które występują często powinny być obsługiwane w linii, zamiast wyjątku zgłoszonych.
-
-## <a name="iunknown-parameters-passed-as-type-void"></a>Nieznane parametry przekazywane jako typ void**
- Poszukaj parametrów [out], `void **` które są zdefiniowane jako `[``iid_is``]` typ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] w interfejsie COM, ale które są zdefiniowane jako w prototypie metody montażu międzyoperacyjnego.
-
- Czasami interfejs COM generuje `IUnknown` obiekt, a interfejs COM przekazuje `void **`go jako typ . Te interfejsy są szczególnie ważne, ponieważ jeśli zmienna jest zdefiniowana `IUnknown` jako [out] w `AddRef` IDL, a następnie obiekt jest zliczany przez odwołanie z metodą. Przeciek pamięci występuje, jeśli obiekt nie jest obsługiwany poprawnie.
+ Jeśli nie masz pewności, który wyjątek zgłosić, ale znasz wartość HRESULT, która ma zostać zwrócona do modelu COM, możesz użyć <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> metody, aby zgłosić odpowiedni wyjątek. Działa to nawet z niestandardowym błędem, na przykład <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> . <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> próbuje zmapować przekazaną do niego wynik HRESULT na wyjątek silnie określony. Jeśli nie jest to możliwe, zgłasza zamiast niego ogólny wyjątek modelu COM. Ostatecznym wynikiem jest zwrócenie wartości HRESULT <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> z kodu zarządzanego do funkcji com, która wywołała ją.
 
 > [!NOTE]
-> Obiekt `IUnknown` utworzony przez interfejs COM i zwrócony w [out] zmiennej powoduje przeciek pamięci, jeśli nie jest jawnie zwolniony.
+> Wyjątki naruszają wydajność i mają na celu wskazywanie nietypowych warunków programu. Warunki, które często występują, powinny być obsługiwane wewnętrznie, zamiast zgłoszonego wyjątku.
 
- Metody zarządzane, które obsługują <xref:System.IntPtr> takie obiekty `IUnknown` powinny być traktowane <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> jako wskaźnik do obiektu i wywołać metodę, aby uzyskać obiekt. Wywołujący należy następnie rzutować wartość zwracaną do dowolnego typu jest odpowiedni. Gdy obiekt nie jest już <xref:System.Runtime.InteropServices.Marshal.Release%2A> potrzebny, wywołanie go zwolnić.
+## <a name="iunknown-parameters-passed-as-type-void"></a>Parametry IUnknown przesłane jako void * *
+ Poszukaj parametrów [out], które są zdefiniowane jako typ `void **` w interfejsie com, ale które są zdefiniowane jako `[``iid_is``]` w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototypie metody zestawu międzyoperacyjnego.
 
- Poniżej przedstawiono przykład <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A> wywołania `IUnknown` metody i poprawnego obchodzenia się z obiektem:
+ Czasami interfejs COM generuje `IUnknown` obiekt, a interfejs com przekazuje go jako typ `void **` . Te interfejsy są szczególnie ważne, ponieważ jeśli zmienna jest zdefiniowana jako [out] w IDL, to `IUnknown` obiekt jest liczony jako odwołanie za pomocą `AddRef` metody. Przeciek pamięci występuje, jeśli obiekt nie został poprawnie obsłużony.
+
+> [!NOTE]
+> `IUnknown`Obiekt utworzony przez interfejs com i zwrócony w zmiennej [out] powoduje przeciek pamięci, jeśli nie został jawnie wydaną.
+
+ Zarządzane metody obsługujące takie obiekty powinny traktować <xref:System.IntPtr> jako wskaźnik do `IUnknown` obiektu i wywoływać <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> metodę w celu uzyskania obiektu. Obiekt wywołujący powinien następnie rzutować wartość zwracaną na dowolny typ jest odpowiedni. Gdy obiekt nie jest już wymagany, wywołaj <xref:System.Runtime.InteropServices.Marshal.Release%2A> go.
+
+ Poniżej znajduje się przykład wywołania <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A> metody i `IUnknown` prawidłowego obsługi obiektu:
 
 ```
 MyClass myclass;
@@ -85,7 +85,7 @@ else
 ```
 
 > [!NOTE]
-> Następujące metody są znane `IUnknown` przekazać wskaźniki <xref:System.IntPtr>obiektu jako typ . Obsłużyć je zgodnie z opisem w tej sekcji.
+> Następujące metody są znane, aby przekazywać `IUnknown` wskaźniki obiektów jako typ <xref:System.IntPtr> . Obsłuż je zgodnie z opisem w tej sekcji.
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
 
@@ -100,35 +100,35 @@ else
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>
 
 ## <a name="optional-out-parameters"></a>Opcjonalne parametry [out]
- Poszukaj parametrów, które są zdefiniowane jako typ danych [out] (`int`, `object`i tak dalej) w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsie COM, ale które są zdefiniowane jako tablice tego samego typu danych w prototypie metody montażu międzyoperacyjnego.
+ Poszukaj parametrów, które są zdefiniowane jako typ danych [out] ( `int` , `object` , i tak dalej) w interfejsie com, ale które są zdefiniowane jako tablice tego samego typu danych w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototypie metody zestawu międzyoperacyjnego.
 
- Niektóre interfejsy COM, <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>takie jak parametry [out] jako opcjonalne. Jeśli obiekt nie jest wymagany, te interfejsy COM zwracają `null` wskaźnik jako wartość tego parametru zamiast tworzenia [out] obiektu. Jest to celowe. W przypadku tych `null` interfejsów wskaźniki są zakładane jako część poprawne zachowanie VSPackage i nie zwracany jest żaden błąd.
+ Niektóre interfejsy COM, takie jak <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A> , traktują parametry [out] jako opcjonalne. Jeśli obiekt nie jest wymagany, te interfejsy COM zwracają `null` wskaźnik jako wartość tego parametru, zamiast tworzyć obiekt [out]. Jest to celowe. W przypadku tych interfejsów, `null` przyjmuje się, że wskaźniki są częścią prawidłowego zachowania pakietu VSPackage i żaden błąd nie jest zwracany.
 
- Ponieważ clr nie zezwala na wartość [out] `null`parametr być, część zaprojektowane zachowanie tych interfejsów nie jest bezpośrednio dostępna w kodzie zarządzanym. Metody [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zestawu międzyoperacyjnego dla interfejsów, których dotyczy problem, obejść ten problem, definiując odpowiednie parametry jako tablice, ponieważ CLR umożliwia przekazywanie `null` tablic.
+ Ponieważ środowisko CLR nie zezwala na użycie wartości parametru [out] `null` , część zaprojektowanego zachowania tych interfejsów nie jest bezpośrednio dostępna w kodzie zarządzanym. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Metody zestawu międzyoperacyjności dotyczące interfejsów, których dotyczy problem, obejść problem przez zdefiniowanie odpowiednich parametrów jako tablic, ponieważ środowisko CLR umożliwia przekazywanie `null` tablic.
 
- Zarządzane implementacje tych metod `null` należy umieścić tablicy do parametru, gdy nie ma nic do zwrotu. W przeciwnym razie należy utworzyć tablicę jednoelementową właściwego typu i umieścić wartość zwracaną w tablicy.
+ Zarządzane implementacje tych metod powinny umieścić `null` tablicę w parametrze, gdy nie ma niczego do zwrócenia. W przeciwnym razie Utwórz tablicę z jednym elementem o poprawnym typie i umieść wartość zwracaną w tablicy.
 
- Metody zarządzane, które odbierają informacje z interfejsów z opcjonalnymi parametrami [out] odbierają parametr jako tablicę. Wystarczy sprawdzić wartość pierwszego elementu tablicy. Jeśli tak `null`nie jest, potraktuj pierwszy element tak, jakby był oryginalnym parametrem.
+ Metody zarządzane, które odbierają informacje z interfejsów z opcjonalnymi parametrami [out], otrzymują parametr jako tablicę. Po prostu Przeanalizuj wartość pierwszego elementu tablicy. Jeśli tak nie jest `null` , Traktuj pierwszy element tak, jakby był pierwotnym parametrem.
 
 ## <a name="passing-constants-in-pointer-parameters"></a>Przekazywanie stałych w parametrach wskaźnika
- Poszukaj parametrów, które są zdefiniowane jako [w] wskaźniki <xref:System.IntPtr> w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsie COM, ale które są zdefiniowane jako typ w prototypie metody montażu międzyoperacyjnego.
+ Poszukaj parametrów, które są zdefiniowane jako wskaźniki [in] w interfejsie COM, ale które są zdefiniowane jako <xref:System.IntPtr> Typ w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototypie metody zestawu międzyoperacyjnego.
 
- Podobny problem występuje, gdy interfejs COM przekazuje specjalną wartość, taką jak 0, -1 lub -2, zamiast wskaźnika obiektu. W [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]przeciwieństwie do programu CLR nie zezwala na rzutowanie stałych jako obiektów. Zamiast tego [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zestaw interop definiuje parametr <xref:System.IntPtr> jako typ.
+ Podobny problem występuje, gdy interfejs COM przekazuje specjalną wartość, taką jak 0,-1 lub-2, zamiast wskaźnika obiektu. W przeciwieństwie do [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] , środowisko CLR nie zezwala na rzutowanie stałych jako obiektów. Zamiast tego [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zestaw międzyoperacyjny definiuje parametr jako <xref:System.IntPtr> Typ.
 
- Zarządzane implementacje tych metod należy skorzystać <xref:System.IntPtr> z faktu, `void *` że klasa <xref:System.IntPtr> ma zarówno `int` i konstruktorów do utworzenia z obiektu lub stałej całkowitej, w stosownych przypadkach.
+ Zarządzane implementacje tych metod powinny korzystać z faktu, że <xref:System.IntPtr> Klasa ma zarówno `int` konstruktora, `void *` jak i konstruktorów <xref:System.IntPtr> , aby utworzyć obiekt na podstawie albo do stałej, jak i w razie potrzeby.
 
- Metody zarządzane, <xref:System.IntPtr> które odbierają <xref:System.IntPtr> parametry tego typu, należy użyć operatorów konwersji typu do obsługi wyników. Najpierw przekonwertuj <xref:System.IntPtr> na `int` i przetestuj go względem odpowiednich stałych liczby całkowitej. Jeśli żadne wartości nie są zgodne, przekonwertuj je na obiekt wymaganego typu i kontynuuj.
+ Metody zarządzane, które odbierają <xref:System.IntPtr> Parametry tego typu, powinny używać <xref:System.IntPtr> operatorów konwersji typów do obsługi wyników. Najpierw przekonwertuj wartość <xref:System.IntPtr> na `int` i przetestuj ją względem odpowiednich stałych całkowitych. Jeśli wartości nie są zgodne, przekonwertuj je na obiekt typu wymaganego i Kontynuuj.
 
- Przykłady tego, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>i .
+ Aby zapoznać się z przykładami, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A> .
 
-## <a name="ole-return-values-passed-as-out-parameters"></a>Wartości zwrotu OLE przekazywane jako parametry [out]
- Poszukaj metod, które mają wartość zwracaną `retval` `int` w interfejsie COM, ale które [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mają wartość zwracaną i dodatkowy parametr tablicy [out] w prototypie metody zestawu międzyoperacyjnego. Należy wyjaśnić, że te metody wymagają [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] specjalnej obsługi, ponieważ prototypy metody montażu międzyoperacyjnego mają jeden parametr więcej niż metody interfejsu COM.
+## <a name="ole-return-values-passed-as-out-parameters"></a>Wartości zwracane przez OLE zostały przesłane jako parametry [out]
+ Wyszukaj metody, które mają `retval` wartość zwracaną w interfejsie com, ale które mają `int` wartość zwracaną i dodatkowy parametr tablicy [out] w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototypie metody zestawu międzyoperacyjnego. Powinno być jasne, że te metody wymagają specjalnej obsługi, ponieważ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototypy metod zestawu międzyoperacyjnego mają jeden parametr niż metody interfejsu com.
 
- Wiele interfejsów COM, które zajmują się działaniem OLE, wysyła `retval` informacje o stanie OLE z powrotem do programu wywołującego przechowywanego w wartości zwracanej interfejsu. Zamiast używać wartości zwracanej, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] odpowiednie metody zestawu międzyoperacyjnego wysyłają informacje z powrotem do programu wywołującego przechowywanego w parametrze tablicy [out].
+ Wiele interfejsów COM, które zajmują się działaniem OLE, wysyła informacje o stanie OLE z powrotem do wywołującego programu przechowywanego w `retval` wartości zwracanej przez interfejs. Zamiast korzystać z wartości zwracanej, odpowiednie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] metody zestawu międzyoperacyjnego wysyłają informacje z powrotem do wywołującego programu przechowywanego w parametrze tablicy [out].
 
- Zarządzane implementacje tych metod należy utworzyć tablicę jednoelementową tego samego typu co parametr [out] i umieścić go w parametrze. Wartość elementu tablicy powinna być taka sama `retval`jak odpowiedni COM .
+ Zarządzane implementacje tych metod powinny tworzyć jednoelementową tablicę tego samego typu co parametr [out] i umieścić ją w parametrze. Wartość elementu Array powinna być taka sama jak w przypadku odpowiedniego modelu COM `retval` .
 
- Metody zarządzane, które wywołują interfejsy tego typu należy wyciągnąć pierwszy element z [out] tablicy. Ten element może być traktowany `retval` tak, jakby był to zwracany z odpowiedniego interfejsu COM.
+ Metody zarządzane, które wywołują interfejsy tego typu, powinny pobierać pierwszy element z tablicy [out]. Ten element może być traktowany tak, jakby był `retval` wartością zwracaną z odpowiedniego interfejsu com.
 
 ## <a name="see-also"></a>Zobacz też
 - [Współdziałanie z kodem niezarządzanym](/dotnet/framework/interop/index)

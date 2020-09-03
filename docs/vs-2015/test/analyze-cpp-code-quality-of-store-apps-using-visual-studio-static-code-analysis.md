@@ -1,5 +1,5 @@
 ---
-title: C++statyczne aplikacje ze sklepu analizy kodu
+title: Aplikacje ze sklepu ze statycznymi analizami kodu C++
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -12,13 +12,13 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c20fe8bccdf48cf307dda72a085b3c2a72f1d0cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672710"
 ---
-# <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizowanie C++ jakości kodu aplikacji ze sklepu przy użyciu statycznej analizy kodu programu Visual Studio
+# <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizowanie jakości kodu C++ aplikacji ze sklepu przy użyciu statycznej analizy kodu programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dotyczy systemów Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
@@ -28,7 +28,7 @@ Dotyczy systemów Windows i Windows Phone] (.. /Image/windows_and_phone_content.
 > [!NOTE]
 > W Visual Studio Ultimate, Visual Studio Premium i Visual Studio Professional można użyć pełnej funkcjonalności narzędzi do analizy kodu. Zobacz [Analizowanie jakości aplikacji za pomocą narzędzi do analizy kodu](https://msdn.microsoft.com/library/dd264897.aspx) w bibliotece MSDN.
 
-## <a name="BKMK_Run"></a>Uruchamianie analizy kodu
+## <a name="running-code-analysis"></a><a name="BKMK_Run"></a> Uruchamianie analizy kodu
  Aby uruchomić analizę kodu w rozwiązaniu programu Visual Studio:
 
 - W menu **kompilacja** wybierz polecenie **Uruchom analizę kodu w rozwiązaniu**.
@@ -37,13 +37,13 @@ Dotyczy systemów Windows i Windows Phone] (.. /Image/windows_and_phone_content.
 
 1. Wybierz nazwę projektu w Eksplorator rozwiązań a następnie wybierz **Właściwości**.
 
-2. Na stronie właściwości projektu wybierz pozycję **Analiza kodu** , a następnie wybierz pozycję **Włącz analizę kodu w przypadkuC++ kompilacji C/on**.
+2. Na stronie właściwości projektu wybierz pozycję **Analiza kodu** , a następnie wybierz pozycję **Włącz analizę kodu C/C++ podczas kompilacji**.
 
    Rozwiązanie jest kompilowane i zostanie uruchomiona Analiza kodu. Wyniki pojawiają się w oknie Analiza kodu.
 
    ![Okno analizy kodu](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-## <a name="BKMK_Analyze"></a>Analizowanie i rozwiązywanie ostrzeżeń dotyczących analizy kodu
+## <a name="analyzing-and-resolving-code-analysis-warnings"></a><a name="BKMK_Analyze"></a> Analizowanie i rozwiązywanie ostrzeżeń dotyczących analizy kodu
  Aby przeanalizować określone ostrzeżenie, wybierz tytuł ostrzeżenia w oknie Analiza kodu. Ostrzeżenie zostanie rozwinięte, aby wyświetlić szczegółowe informacje o problemie. Gdy jest to możliwe, analizy kodu wyświetlają numer wiersza i logikę analizy, które doprowadziły do ostrzeżenia.
 
  ![Ostrzeżenie o rozszerzonej analizie kodu](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
@@ -57,7 +57,7 @@ Dotyczy systemów Windows i Windows Phone] (.. /Image/windows_and_phone_content.
 > [!TIP]
 > Możesz ponownie uruchomić analizę kodu z okna Analiza kodu. Wybierz przycisk **Analizuj** , a następnie wybierz zakres analizy. Możesz ponownie uruchomić analizę całego rozwiązania lub w wybranym projekcie.
 
-## <a name="BKMK_Suppress"></a>Pomijanie ostrzeżeń analizy kodu
+## <a name="suppressing-code-analysis-warnings"></a><a name="BKMK_Suppress"></a> Pomijanie ostrzeżeń analizy kodu
  Istnieją przypadki, w których można zrezygnować z naprawienia ostrzeżenia analizy kodu. Użytkownik może zdecydować, że rozwiązanie tego problemu wymaga zbyt dużo ponownego kodowania w odniesieniu do prawdopodobieństwa, że problem będzie występował w jakiejkolwiek rzeczywistej implementacji kodu. Można też zastanowić się, że analiza, która jest używana w ostrzeżeniu, jest nieodpowiedni dla danego kontekstu. Możesz pominąć poszczególne ostrzeżenia, aby nie były wyświetlane w oknie Analiza kodu.
 
  Aby pominąć ostrzeżenie:
@@ -68,15 +68,15 @@ Dotyczy systemów Windows i Windows Phone] (.. /Image/windows_and_phone_content.
 
 3. Wybierz, aby **pominąć komunikat** , a następnie wybierz pozycję **w polu Źródło**.
 
-   Pomijanie komunikatu powoduje wstawienie `#pragma(warning:`*WarningId* `)`, które pomija Ostrzeżenie dla wiersza kodu.
+   Pominięcie komunikatu powoduje wstawienie `#pragma(warning:` *WarningId* `)` , który pomija Ostrzeżenie dla wiersza kodu.
 
-## <a name="BKMK_Search"></a>Wyszukiwanie i filtrowanie wyników analizy kodu
+## <a name="searching-and-filtering-code-analysis-results"></a><a name="BKMK_Search"></a> Wyszukiwanie i filtrowanie wyników analizy kodu
  Można wyszukiwać długie listy komunikatów ostrzegawczych i filtrować ostrzeżenia w rozwiązaniach w ramach projektu.
 
  ![Wyszukiwanie i filtrowanie okna Analiza kodu](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-## <a name="Warnings"></a>C++ ostrzeżenia analizy kodu
- Analiza kodu wywołuje następujące ostrzeżenia dla C++ kodu:
+## <a name="c-code-analysis-warnings"></a><a name="Warnings"></a> Ostrzeżenia analizy kodu w języku C++
+ Analiza kodu wywołuje następujące ostrzeżenia dla kodu C++:
 
 |                                      Reguła                                      |                                                  Opis                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -147,13 +147,13 @@ Dotyczy systemów Windows i Windows Phone] (.. /Image/windows_and_phone_content.
 |                      [C28182](../code-quality/c28182.md)                       |         Wyłuskanie wskaźnika o wartości NULL. Wskaźnik zawiera taką samą wartość NULL jak inny wskaźnik.          |
 |                      [C28202](../code-quality/c28202.md)                       |                                    Niedozwolone odwołanie do niestatycznej składowej                                     |
 |                      [C28203](../code-quality/c28203.md)                       |                                     Niejednoznaczne odwołanie do składowej klasy.                                      |
-|                      [C28205](../code-quality/c28205.md)                       |                           \_Success \_ lub \_On_failure \_ używane w niedozwolonym kontekście                            |
+|                      [C28205](../code-quality/c28205.md)                       |                           \_Powodzenie \_ lub \_ On_failure \_ używane w niedozwolonym kontekście                            |
 |                      [C28206](../code-quality/c28206.md)                       |                                   Lewy argument operacji wskazuje na strukturę, użyj "->"                                   |
 |                      [C28207](../code-quality/c28207.md)                       |                                       Lewy argument operacji jest strukturą, użyj "."                                       |
 |                      [C28210](../code-quality/c28210.md)                       |                 Adnotacje dla kontekstu __on_failure nie mogą być w jawnym kontekście wstępnym                  |
 |                      [C28211](../code-quality/c28211.md)                       |                                 Oczekiwano nazwy kontekstu statycznego dla SAL_context                                  |
 |                      [C28212](../code-quality/c28212.md)                       |                                  Oczekiwano wyrażenia wskaźnika dla adnotacji                                   |
-|                      [C28213](../code-quality/c28213.md)                       | Adnotacja \_ \_Use_decl_annotations musi być używana do odwoływania się, bez modyfikacji, wcześniejszej deklaracji. |
+|                      [C28213](../code-quality/c28213.md)                       | \_ \_ Adnotacja Use_decl_annotations musi być używana do odwoływania się, bez modyfikacji, wcześniejszej deklaracji. |
 |                      [C28214](../code-quality/c28214.md)                       |                                   Nazwy parametrów atrybutu muszą być P1... P9                                   |
 |                      [C28215](../code-quality/c28215.md)                       |                    Nie można zastosować typefix do parametru, który ma już typefix                    |
 |                      [C28216](../code-quality/c28216.md)                       |        Adnotacja Checkreturn dotyczy ma zastosowanie tylko do warunki końcowe dla określonego parametru funkcji.         |
@@ -162,7 +162,7 @@ Dotyczy systemów Windows i Windows Phone] (.. /Image/windows_and_phone_content.
 |                      [C28219](../code-quality/c28219.md)                       |                 Oczekiwano składowej wyliczenia dla adnotacji, parametr w adnotacji                 |
 |                      [C28220](../code-quality/c28220.md)                       |                  Oczekiwano wyrażenia liczby całkowitej dla adnotacji, parametr w adnotacji                   |
 |                      [C28221](../code-quality/c28221.md)                       |                        Oczekiwano wyrażenia ciągu dla parametru w adnotacji                         |
-|                      [C28222](../code-quality/c28222.md)                       |                               __yes, \__no lub \__maybe oczekiwane dla adnotacji                               |
+|                      [C28222](../code-quality/c28222.md)                       |                               \_oczekiwano __yes, _NO lub \_ _maybe dla adnotacji                               |
 |                      [C28223](../code-quality/c28223.md)                       |                       Nie znaleziono oczekiwanego tokenu/identyfikatora dla adnotacji, parametr                        |
 |                      [C28224](../code-quality/c28224.md)                       |                                        Adnotacja wymaga parametrów                                         |
 |                      [C28225](../code-quality/c28225.md)                       |                     Nie znaleziono poprawnej liczby wymaganych parametrów w adnotacji                      |
@@ -189,28 +189,28 @@ Dotyczy systemów Windows i Windows Phone] (.. /Image/windows_and_phone_content.
 |                      [C28251](../code-quality/c28251.md)                       |                       Niespójna adnotacja dla funkcji: to wystąpienie zawiera błąd.                       |
 |                      [C28252](../code-quality/c28252.md)                       |           Niespójna adnotacja dla funkcji: parametr ma inne adnotacje w tym wystąpieniu.           |
 |                      [C28253](../code-quality/c28253.md)                       |           Niespójna adnotacja dla funkcji: parametr ma inne adnotacje w tym wystąpieniu.           |
-|                      [C28254](../code-quality/c28254.md)                       |                               dynamic_cast < > () nie jest obsługiwane w adnotacjach                                |
+|                      [C28254](../code-quality/c28254.md)                       |                               dynamic_cast<> () nie jest obsługiwane w adnotacjach                                |
 |                      [C28262](../code-quality/c28262.md)                       |                    Znaleziono błąd składniowy w adnotacji w funkcji dla adnotacji                     |
 |                      [C28263](../code-quality/c28263.md)                       |                 Znaleziono błąd składni w adnotacji warunkowej dla wewnętrznej adnotacji                 |
 |                      [C28267](../code-quality/c28267.md)                       |                    W adnotacji znaleziono błąd składni w funkcji.                    |
 |                      [C28272](../code-quality/c28272.md)                       |      Adnotacja dla funkcji, parametr podczas badania, jest niespójna z deklaracją funkcji      |
 |                      [C28273](../code-quality/c28273.md)                       |                    W przypadku funkcji wskazówki są niespójne z deklaracją funkcji                     |
-|                      [C28275](../code-quality/c28275.md)                       |                                   Parametr do \_Macro_value \_ ma wartość null                                    |
+|                      [C28275](../code-quality/c28275.md)                       |                                   Parametr do \_ Macro_value \_ ma wartość null                                    |
 |                      [C28279](../code-quality/c28279.md)                       |                           Dla symbolu znaleziono "BEGIN" bez odpowiadającego mu "End"                            |
 |                      [C28280](../code-quality/c28280.md)                       |                           Dla symbolu znaleziono element "End" bez odpowiadającego mu elementu "BEGIN                           |
 |                      [C28282](../code-quality/c28282.md)                       |                                    Ciągi formatu muszą znajdować się w warunkach wstępnych                                    |
 |                      [C28285](../code-quality/c28285.md)                       |                                    Dla funkcji, błąd składni w parametrze                                    |
 |                      [C28286](../code-quality/c28286.md)                       |                                    Dla funkcji, błąd składniowy blisko końca                                    |
-|                      [C28287](../code-quality/c28287.md)                       |                Dla funkcji, błąd składniowy w \_At \_ () () adnotacji (Nierozpoznana Nazwa parametru)                |
-|                      [C28288](../code-quality/c28288.md)                       |                  Dla funkcji, błąd składni w adnotacji \_At \_ () (Nieprawidłowa nazwa parametru)                   |
+|                      [C28287](../code-quality/c28287.md)                       |                Dla funkcji, błąd składni w \_ elemencie \_ adnotacji at () (Nierozpoznana Nazwa parametru)                |
+|                      [C28288](../code-quality/c28288.md)                       |                  Dla funkcji, błąd składni w \_ elemencie \_ Annotation () (Nieprawidłowa nazwa parametru)                   |
 |                      [C28289](../code-quality/c28289.md)                       |                Dla funkcji: ReadableTo lub WritableTo nie ma specyfikacji limitu jako parametru                |
 |                      [C28290](../code-quality/c28290.md)                       |           Adnotacja dla funkcji zawiera więcej elementów zewnętrznych niż rzeczywista liczba parametrów            |
 |                      [C28291](../code-quality/c28291.md)                       |                        wpis o wartości null/notnull na poziomie DEREF 0 jest bezużyteczne dla funkcji.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            Operandy wyrażenia niezgodnych typów dla operatora                             |
 |                      [C28301](../code-quality/c28301.md)                       |                               Brak adnotacji dla pierwszej deklaracji funkcji.                               |
-|                      [C28302](../code-quality/c28302.md)                       |                             Znaleziono dodatkowy operator \_ \_Deref w adnotacji.                              |
-|                      [C28303](../code-quality/c28303.md)                       |                           W adnotacji znaleziono niejednoznaczny operator \_Deref \_.                            |
-|                      [C28304](../code-quality/c28304.md)                       |                     Znaleziono niewłaściwie umieszczony operator \_ \_Notref, który został zastosowany do tokenu.                      |
+|                      [C28302](../code-quality/c28302.md)                       |                             Znaleziono dodatkowy \_ \_ operator DEREF w adnotacji.                              |
+|                      [C28303](../code-quality/c28303.md)                       |                           \_Znaleziono niejednoznaczny \_ operator DEREF w adnotacji.                            |
+|                      [C28304](../code-quality/c28304.md)                       |                     Znaleziono niepoprawnie umieszczony \_ operator Notref \_ został zastosowany do tokenu.                      |
 |                      [C28305](../code-quality/c28305.md)                       |                                Wykryto błąd podczas analizowania tokenu.                                 |
 |                      [C28350](../code-quality/c28350.md)                       |                  Adnotacja zawiera opis sytuacji, która nie jest stosowana warunkowo.                   |
 |                      [C28351](../code-quality/c28351.md)                       |         Adnotacja opisuje, gdzie w warunku nie można używać wartości dynamicznej (zmiennej).          |

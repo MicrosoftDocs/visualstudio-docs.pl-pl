@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 31e2086126e9a17554c80b53858205e83fd504fd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673035"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Wiązanie kontrolek z danymi w programie Visual Studio
@@ -41,9 +41,9 @@ Możesz wyświetlić dane dla użytkowników aplikacji przez powiązanie danych 
 |Zestaw danych|Tak|Tak|Nie|
 |Entity Data Model|Tak<sup>1</sup>|Tak|Tak|
 |Klasy LINQ to SQL|Nr<sup>2</sup>|Nr<sup>2</sup>|Nr<sup>2</sup>|
-|Usługi (w tym [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], usługi WCF i usługi sieci Web)|Tak|Tak|Tak|
+|Usługi ( [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] w tym usługi WCF i usługi sieci Web)|Tak|Tak|Tak|
 |Obiekt|Tak|Tak|Tak|
-|Program SharePoint|Tak|Tak|Tak|
+|SharePoint|Tak|Tak|Tak|
 
  1. Wygeneruj model przy użyciu kreatora **Entity Data Model** , a następnie przeciągnij te obiekty do projektanta.
 
@@ -52,7 +52,7 @@ Możesz wyświetlić dane dla użytkowników aplikacji przez powiązanie danych 
 ## <a name="data-sources-window"></a>Data Sources — Okno
  Źródła danych są dostępne dla projektu jako elementy w oknie **źródła danych** . To okno jest widoczne lub dostępne z menu **Widok** , gdy powierzchnia projektu formularza jest aktywnym oknem w projekcie. Możesz przeciągnąć elementy z tego okna, aby utworzyć formanty, które są powiązane z danymi źródłowymi, a także skonfigurować źródła danych, klikając je prawym przyciskiem myszy.
 
- ![Okno źródeł danych](../data-tools/media/raddata-data-sources-window.png "okno źródeł danych raddata")
+ ![Data Sources — Okno](../data-tools/media/raddata-data-sources-window.png "okno źródeł danych raddata")
 
  Dla każdego typu danych, który pojawia się w oknie **źródła danych** , zostanie utworzona kontrolka domyślna po przeciągnięciu elementu do projektanta. Przed przeciągnięciem elementu z okna **źródła danych** można zmienić formant, który zostanie utworzony. Aby uzyskać więcej informacji, zobacz [Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródła danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
@@ -61,7 +61,7 @@ Możesz wyświetlić dane dla użytkowników aplikacji przez powiązanie danych 
 
 |Zadanie|Więcej informacji|
 |----------|----------------------|
-|Otwórz okno **źródła danych** .|Otwórz powierzchnię projektu w edytorze i wybierz pozycję **wyświetl**  > **źródła danych**.|
+|Otwórz okno **źródła danych** .|Otwórz powierzchnię projektu w edytorze i wybierz pozycję **Wyświetl**  >  **źródła danych**.|
 |Dodaj źródło danych do projektu.|[Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md)|
 |Ustaw formant, który jest tworzony podczas przeciągania elementu z okna **źródła danych** do projektanta.|[Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |Zmodyfikuj listę kontrolek, które są skojarzone z elementami w oknie **źródła danych** .|[Dodawanie kontrolek niestandardowych do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md)|

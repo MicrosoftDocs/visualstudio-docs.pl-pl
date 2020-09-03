@@ -1,5 +1,5 @@
 ---
-title: 'Obszar testowy 3: Wyewidencjonowanie i cofanie wyewidencjonowania | Dokumentacja firmy Microsoft'
+title: 'Obszar testowy 3: wyewidencjonowywanie — cofanie wyewidencjonowania | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,126 +14,126 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ab4389c936b71ba8ccbb21b22d0a5e533282026d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156000"
 ---
-# <a name="test-area-3-check-outundo-checkout"></a>Obszar testowy 3: Zapoznaj się z / Cofnij wyewidencjonowanie
+# <a name="test-area-3-check-outundo-checkout"></a>Obszar testowy 3: wyewidencjonowywanie/cofanie wyewidencjonowania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ten obszar testowy wtyczki kontroli źródła obejmuje edycji oraz przywracanie elementów z magazynu wersji za pomocą **Wyewidencjonuj** i **Cofnij wyewidencjonowanie** poleceń.  
+Ten obszar testowy wtyczki kontroli źródła obejmuje edytowanie i wycofywanie elementów z magazynu wersji za pomocą poleceń **wyewidencjonowywania** i **cofania wyewidencjonowania** .  
   
- **Zapoznaj się z**: Wyewidencjonowano element w magazynie wersji jako znaki modyfikuje kopii lokalnej do odczytu/zapisu.  
+ **Wyewidencjonowywanie**: oznacza element w sklepie wersji jako wyewidencjonowany, modyfikuje kopię lokalną na odczyt/zapis.  
   
- **Cofnij wyewidencjonowanie**: Zaewidencjonowano element w magazynie wersji jako znaki przywraca kopii lokalnej do stanu przed wyewidencjonowanie (w zależności od opcji).  
+ **Cofnij wyewidencjonowanie**: oznacza element w sklepie wersji jako zaewidencjonowany, przywraca lokalne kopiowanie do stanu przed wyewidencjonowaniem (w zależności od opcji).  
   
-## <a name="command-menu-access"></a>Dostęp do Menu polecenia  
- Następujące [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ścieżki menu środowiska zintegrowanego rozwoju są używane w przypadkach testowych.  
+## <a name="command-menu-access"></a>Dostęp do menu poleceń  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]W przypadku przypadków testowych używane są następujące ścieżki menu zintegrowanego środowiska deweloperskiego.  
   
 ##### <a name="check-out"></a>Wymelduj się:  
   
-- **Plik**, **kontroli źródła**, **zapoznaj się z**.  
+- **Plik**, **Kontrola źródła**, **wyewidencjonowywanie**.  
   
-- **Plik**, **zapoznaj się z**.  
+- **Plik**, **Wyewidencjonuj**.  
   
-- Menu skrótów **zapoznaj się z**.  
+- Menu skrótów, **Wyewidencjonuj**.  
   
-- Cofnij wyewidencjonowanie: **Plik**, **kontroli źródła**, **Cofnij wyewidencjonowanie**.  
+- Cofnij wyewidencjonowanie: **plik**, **Kontrola źródła**, **Cofnij wyewidencjonowanie**.  
   
-## <a name="common-expected-behavior"></a>Typowe oczekiwane zachowanie.  
+## <a name="common-expected-behavior"></a>Typowe oczekiwane zachowanie  
   
-- Po operacji wyewidencjonowania plików docelowych i/lub foldery są oznaczone jako wyewidencjonowane z magazynu wersji.  
+- Po zakończeniu operacji wyewidencjonowywania pliki i/lub foldery docelowe są oznaczane jako wyewidencjonowane w sklepie z wersjami.  
   
-- Magazyn wersji atrybuty wyewidencjonowanie do odpowiednich użytkowników.  
+- Magazyn wersji ma atrybuty wyewidencjonowania dla poprawnego użytkownika.  
   
-- Data i Godzina wyewidencjonowania są prawidłowe (ustawienia dla każdego użytkownika).  
+- Godzina i Data wyewidencjonowania są poprawne (zgodnie z ustawieniami użytkownika).  
   
 ## <a name="test-cases"></a>Przypadki testowe  
- Poniżej przedstawiono określonych przypadków testowych dla obszaru testu wyewidencjonowania/cofnięcie wyewidencjonowania.  
+ Poniżej wymieniono określone przypadki testowe dla obszaru testowego wyewidencjonowywania/cofania wyewidencjonowania.  
   
-### <a name="case-3a-check-out"></a>Wielkości liter 3a: Wyewidencjonuj  
- Ta sekcja koncentruje się na operację polecenia wyewidencjonowywania.  
+### <a name="case-3a-check-out"></a>Przypadek 3A: wyewidencjonowywanie  
+ Ta sekcja koncentruje się na operacji wyewidencjonowania polecenia.  
   
-|Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
+|Akcja|Kroki testu|Oczekiwane wyniki do zweryfikowania|  
 |------------|----------------|--------------------------------|  
-|Zapoznaj się z wyłącznych (COE) projekt klienta|1.  Utwórz projekt klienta.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Zapoznaj się z całego projektu wyłącznie (**pliku**, **Wyewidencjonuj**).|Występuje, sprawdź.|  
-|Zapoznaj się wyłącznie (COE) w systemie plików lub lokalny projekt sieci Web usług IIS|1.  Ustaw połączenie z serwerem sieci Web do udziału w plików **narzędzia**, **opcje**, **projektów**, **ustawień sieci Web**.<br />2.  Utwórz projekt sieci Web.<br />3.  Dodaj rozwiązanie do kontroli źródła.<br />4.  Zapoznaj się z całego projektu wyłącznie (**pliku**, **kontroli źródła**, **Wyewidencjonuj**).|Występuje, sprawdź.|  
-|Zapoznaj się z elementów rozwiązania w rozwiązaniu (nowe metody obsługi innych plików)|1.  Utwórz puste rozwiązanie.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Zapoznaj się z rozwiązania.<br />4.  Dodaj kilka elementów rozwiązania.<br />5.  Zaewidencjonuj nowo dodanych elementów.<br />6.  Zaznaczanie wielu elementów rozwiązania.<br />7.  Zapoznaj się z wybranych elementów (Menu skrótów **Wyewidencjonuj**).|Wybrane pliki są wyewidencjonowane.|  
-|Zapoznaj się wersja lokalna (jeśli jest to wtyczka testowanej obsługuje tę funkcję)|1.  Użytkownik 1: Utwórz projekt klienta.<br />2.  Użytkownik 1: Dodaj rozwiązanie do kontroli źródła.<br />3.  Użytkownik 2: Otwórz rozwiązanie z kontroli źródła do innej lokalizacji.<br />4.  Użytkownik 2: Zapoznaj się z plikiem.<br />5.  Użytkownik 2: Zmodyfikuj plik.<br />6.  Użytkownik 2: Sprawdź w pliku.<br />7.  Użytkownik 1: Zapoznaj się z lokalną wersją pliku (Sprawdź **Sprawdź lokalnej wersji** zaawansowanych opcji **Wyewidencjonuj** okno dialogowe).|Wersja lokalna pliku został wyewidencjonowany.<br /><br /> Modyfikacje przez użytkownika 2 nie są stosowane do użytkownika 1 pliku.|  
+|Wyewidencjonowywanie wyłącznego (COE) projektu klienta|1. Utwórz projekt klienta.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Sprawdź cały projekt (**plik**, **Wyewidencjonuj**).|Wyewidencjonowanie.|  
+|Wyewidencjonowywanie wyłącznego (COE) systemu plików lub lokalnego projektu sieci Web usług IIS|1. Skonfiguruj połączenie serwera sieci Web z udziałem plików w **Narzędzia**, **Opcje**, **projekty**, **Ustawienia sieci Web**.<br />2. Utwórz projekt sieci Web.<br />3. Dodaj rozwiązanie do kontroli źródła.<br />4. Sprawdź cały projekt wyłącznie (**plik**, **Kontrola źródła**, **wyewidencjonowywanie**).|Wyewidencjonowanie.|  
+|Sprawdź elementy rozwiązania w rozwiązaniu (Nowa metoda obsługi innych plików)|1. Utwórz puste rozwiązanie.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Sprawdź rozwiązanie.<br />4. Dodaj kilka elementów rozwiązania.<br />5. Zaewidencjonuj wszystkie nowo dodane elementy.<br />6. Wybierz wiele elementów rozwiązania.<br />7. Sprawdź wybrane elementy (menu skrótów, **Wyewidencjonuj**).|Wybrane pliki są wyewidencjonowane.|  
+|Wyewidencjonuj lokalną wersję (jeśli wtyczka w teście obsługuje tę funkcję)|1. Użytkownik 1: Tworzenie projektu klienta.<br />2. Użytkownik 1: Dodaj rozwiązanie do kontroli źródła.<br />3. Użytkownik 2: Otwórz rozwiązanie z kontroli źródła w innej lokalizacji.<br />4. Użytkownik 2: Wyewidencjonuj plik.<br />5. Użytkownik 2: Modyfikuj plik.<br />6. Użytkownik 2: Zaewidencjonuj plik.<br />7. Użytkownik 1: wyewidencjonowywanie lokalnej wersji pliku (zaznacz opcję Wyewidencjonuj **lokalną wersję** zaawansowaną w oknie dialogowym **wyewidencjonowywanie** ).|Lokalna wersja pliku została wyewidencjonowana.<br /><br /> Modyfikacje wprowadzone przez użytkownika 2 nie są stosowane do pliku User 1.|  
   
-### <a name="case-3b-disconnected-check-out"></a>Wielkość 3b: Wyewidencjonowanie bez połączenia  
- Działający w trybie odłączenia pozwala użytkownikom pewien stopień Lepsza obsługa kontroli źródła ciągłego, gdy nie jest dołączony bezpośrednio do magazynu wersji. Odbywa się lokalnie, buforując wszystkie istotne informacje dotyczące zobowiązaniom rozwiązanie i projekty.  
+### <a name="case-3b-disconnected-check-out"></a>Przypadek 3B: odłączono wyewidencjonowanie  
+ Działanie w trybie rozłączonym umożliwia użytkownikom pewien poziom wsparcia kontroli źródła, gdy nie jest on dołączony bezpośrednio do sklepu z wersjami. Jest to realizowane przez lokalne buforowanie wszystkich istotnych informacji o zarejestrowanym rozwiązaniu i projektach.  
   
- Wyewidencjonowanie na wyłączność operacji tylko może wystąpić, gdy połączone z magazynu kontroli źródła. Udostępnione wyboru czynności mogą występować w dowolnym momencie, czy połączone lub odłączona. W związku z tym kiedy odłączony od magazynu wersji, tylko **zapoznaj się z udostępnionych** (COS) polecenie jest włączone. Gdy odłączony, **Cofnij wyewidencjonowanie** jest wyłączony, ponieważ nie można pobrać starą wersję zastąpienie zmian wprowadzonych przez użytkownika.  
+ Operacje wyewidencjonowania wyłącznego mogą wystąpić tylko podczas połączenia z magazynem kontroli źródła. Udostępnione operacje wyewidencjonowania mogą wystąpić w dowolnym momencie, niezależnie od tego, czy jest połączony czy odłączony. W związku z tym po rozłączeniu z magazynem wersji jest włączone tylko polecenie **wyewidencjonowanie udostępnione** (cos). Po rozłączeniu polecenie **Cofnij wyewidencjonowanie** jest wyłączone, ponieważ nie można pobrać starej wersji, aby zastąpić zmiany wprowadzone przez użytkownika.  
   
- Po użytkownik połączy się ponownie do wersji przechowywania stanów wyewidencjonowania wszystkich zobowiązaniom rozwiązania i projekty są synchronizowane. Wykonuje niezbędne aktualizacje do magazynu wyewidencjonowania, wykonanych przez użytkownika. Gdy synchronizacja się nie stało, użytkownik będzie mógł kontynuować pracę w zwykły (Połączono).  
+ Gdy użytkownik ponownie nawiązuje połączenie z magazynem wersji, synchronizowane są Stany wyewidencjonowania wszystkich zarejestrowanych rozwiązań i projektów. W ten sposób są wymagane aktualizacje magazynu dla wyewidencjonowania wykonywanego przez użytkownika. Po zakończeniu synchronizacji użytkownik może kontynuować pracę jako normalną (połączona).  
   
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie  
   
-- Nie można użyć **Sprawdź się wyłącznie** polecenia bez połączenia z magazynu wersji.  
+- Nie można użyć polecenia **wyewidencjonowywania wyłącznie** w trakcie rozłączenia z magazynem wersji.  
   
-- Nie można użyć **Cofnij wyewidencjonowanie** polecenia bez połączenia z magazynu wersji.  
+- Nie można użyć polecenia **Cofnij wyewidencjonowania** w trakcie rozłączenia z magazynem wersji.  
   
-- **Udostępnione Wyewidencjonuj** polecenie działa.  
+- **Udostępnione polecenie wyewidencjonowania** działa.  
   
-|Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
+|Akcja|Kroki testu|Oczekiwane wyniki do zweryfikowania|  
 |------------|----------------|--------------------------------|  
-|Przy braku połączenia, zapoznaj się z plikiem, a następnie podłącz do synchronizacji|1.  Odłącz projekt pod kontrolą źródła, za pomocą okna dialogowego Zmiana kontroli źródła (**pliku**, **kontroli źródła**, **zmiany źródła Contro**l).<br />2.  Wyewidencjonuj plik.<br />3.  Kliknij polecenie Wyewidencjonuj (odłączony), w oknie dialogowym ostrzeżenia.<br />4.  Edytuj plik.<br />5.  Połącz, za pomocą okna dialogowego Zmiana kontroli źródła.<br />6.  Pobierz najnowszą wersję edytowanego pliku.|Typowe oczekiwane zachowanie.|  
+|Po rozłączeniu Wyewidencjonuj plik, a następnie połącz się z synchronizacją|1. Odłącz kontrolowany projekt przy użyciu okna dialogowego Zmień kontrolę źródła (**plik**, **Kontrola źródła**, **Zmień źródło contro**l).<br />2. Sprawdź plik.<br />3. kliknij pozycję Wyewidencjonuj (Rozłączono) w oknie dialogowym ostrzeżenia.<br />4. Edytuj plik.<br />5. Połącz się przy użyciu okna dialogowego Zmień kontrolę źródła.<br />6. Pobierz najnowszą wersję edytowanego pliku.|Typowe oczekiwane zachowanie|  
   
-### <a name="case-3c-query-editquery-save-qeqs"></a>Przypadek 3c: Edytuj zapytanie/zapytanie Zapisz (QEQS)  
- Edycje, zmiany są śledzone elementy pod kontrolą źródła i zapisuje, pomagając użytkownikom łatwo zarządzać ich pliki. Podczas edycji elementu kontrolowanego, który jest "zaewidencjonowane" QEQS przechwytuje próba edycji i pytaniem, czy chce wyewidencjonować plik, aby go edytować. W zależności od **narzędzia**, **opcje** ustawienia, użytkownik jest zmuszony do sprawdzenia wyjściowy plik, aby móc edytować lub mogły być Edytuj kopię w pamięci i sprawdzić później. Jeśli użytkownik **narzędzia**, **opcje** ustawienie nie jest ustawiona, aby wyświetlić Sprawdź okno dialogowe i po prostu zaznacz go, a następnie jako użytkownik dokona jego edycji, plik automatycznie sprawdza dostępność, jeśli to możliwe.  
+### <a name="case-3c-query-editquery-save-qeqs"></a>Przypadek 3C: modyfikowanie zapytania/zapisywanie zapytania (QEQS)  
+ Elementy pod kontrolą źródła są śledzone pod kątem zmian, zmian i zapisywanych danych, aby ułatwić użytkownikom zarządzanie swoimi plikami. Gdy kontrolowany element, który jest "zaewidencjonowany" jest edytowany, QEQS przechwytuje próbną edycję i pyta użytkownika, czy chce wyewidencjonować plik, aby go edytować. W zależności od **narzędzi**, ustawień **opcji** , użytkownik jest zmuszony do wyewidencjonowania pliku, aby można było go edytować lub może edytować kopię w pamięci i wypróbować go później. Jeśli **Narzędzia**użytkownika, ustawienie **opcji** nie jest ustawione na wyświetlanie okna dialogowego Wyewidencjonowywanie i po prostu Wyewidencjonuj, a następnie użytkownik dokona edycji, plik zostanie automatycznie wyewidencjonowany, jeśli jest to możliwe.  
   
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie  
   
-- Po operacji wyewidencjonowania plików docelowych i/lub foldery są oznaczone jako wyewidencjonowane z magazynu wersji.  
+- Po zakończeniu operacji wyewidencjonowywania pliki i/lub foldery docelowe są oznaczane jako wyewidencjonowane w sklepie z wersjami.  
   
-- Magazyn wersji atrybuty wyewidencjonowanie do odpowiednich użytkowników.  
+- Magazyn wersji ma atrybuty wyewidencjonowania dla poprawnego użytkownika.  
   
-- Data i godzina wyewidencjonowanie są prawidłowe (ustawienia dla każdego użytkownika).  
+- Godzina i Data wyewidencjonowania są poprawne (zgodnie z ustawieniami użytkownika).  
   
-- Lokalna kopia pliku lub folderu docelowego jest zapisywalna.  
+- Lokalna kopia docelowego pliku lub folderu jest zapisywalna.  
   
-|Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
+|Akcja|Kroki testu|Oczekiwane wyniki do zweryfikowania|  
 |------------|----------------|--------------------------------|  
-|Edytuj plik tekstowy, który jest zaewidencjonowany|1.  Utwórz nowy projekt zawierający plik tekstowy.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Ustaw **narzędzia**, **opcje**, **kontroli źródła**, **Zezwalaj na wyświetlanie plików można edytować, gdy tylko do odczytu na dysku** do niezaznaczone.<br />4.  Ustaw **narzędzia**, **opcje**, **kontroli źródła**, **wybór opcji Monituj o wyewidencjonowanie** w **po zaznaczeniu tej opcji pliki są edytowane** pola kombi.<br />5.  Ustaw **narzędzia**, **opcje**, **kontroli źródła**, **wybór opcji Monituj o wyewidencjonowanie** w **po zaznaczeniu tej opcji pliki są zapisywane** pola kombi.<br />6.  Otwórz plik tekstowy w edytorze, spróbuj wpisać nowy tekst w pliku. Jeśli ta czynność zakończy się powodzeniem, przejdź do następnego kroku.<br />7.  Kliknij przycisk **anulować** w **Wyewidencjonuj do edycji** okno dialogowe. Jeśli ta czynność zakończy się powodzeniem, przejdź do następnego kroku.<br />8.  Ustaw **narzędzia**, **opcje**, **kontroli źródła**, **Zezwalaj na wyświetlanie plików można edytować, gdy tylko do odczytu na dysku** do zaznaczenia.<br />9. Otwórz plik projektu w edytorze, spróbuj wpisać nowy tekst w pliku. Jeśli ta czynność zakończy się powodzeniem, przejdź do następnego kroku.<br />10. Kliknij przycisk **Edytuj** w **Wyewidencjonuj do edycji** okno dialogowe. Jeśli ta czynność zakończy się powodzeniem, przejdź do następnego kroku.<br />11. Edytuj plik tekstowy i podjąć próbę zapisania go.|`Result of step 6:`<br /><br /> Zapoznaj się z dla pojawi się okno dialogowe edycji.<br /><br /> `Result of step 7:`<br /><br /> Plik pozostaje niezmieniony.<br /><br /> `Result of step 9:`<br /><br /> Zapoznaj się z dla pojawi się okno dialogowe edycji.<br /><br /> `Result of step 10:`<br /><br /> Możesz edytować plik projektu w pamięci.<br /><br /> `Result of step 11:`<br /><br /> Zapisz, zapoznaj się na zapisywanie okno dialogowe pojawia się na.|  
-|Edytuj plik rozwiązania, który jest zaewidencjonowany|Powtórz kroki opisane w poprzednim testu, ale zamiast modyfikowania pliku tekstowego, zmodyfikuj rozwiązania, zmieniając właściwości rozwiązania.|Takie same jak poprzedni test|  
-|Edytuj plik projektu, który jest zaewidencjonowany|Powtórz kroki opisane w poprzednim testu, ale zamiast modyfikowania pliku tekstowego, zmodyfikuj projektu, zmieniając właściwości projektu.|Tak samo jak poprzedni test.|  
+|Edytuj plik tekstowy, który jest zaewidencjonowany|1. Utwórz nowy projekt zawierający plik tekstowy.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Ustaw **Narzędzia**, **Opcje**, **Kontrola źródła**, **Zezwól na edycję plików, gdy tylko do odczytu na dysku mają być** niezaznaczone.<br />4. Ustaw **Narzędzia**, **Opcje**, **Kontrola źródła**i **Monituj o** wyewidencjonowanie w polu kombi, **gdy zaewidencjonowano pliki są edytowane** .<br />5. Ustaw **Narzędzia**, **Opcje**, **Kontrola źródła**i **Monituj o** wyewidencjonowanie w polu kombi **gdy zaznaczone pliki są zapisywane** .<br />6. Otwórz plik tekstowy w edytorze, a następnie spróbuj wpisać nowy tekst do pliku. Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />7. kliknij przycisk **Anuluj** w oknie dialogowym **wyewidencjonowywanie dla edycji** . Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />8. Ustaw **Narzędzia**, **Opcje**, **Kontrola źródła**, **Zezwól na edycję plików, gdy tylko do odczytu na dysku zostaną** zaznaczone.<br />9. Otwórz plik projektu w edytorze, a następnie spróbuj wpisać nowy tekst w pliku. Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />10. kliknij przycisk **Edytuj** w oknie dialogowym **wyewidencjonowywanie dla edycji** . Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />11. Edytuj plik tekstowy i spróbuj go zapisać.|`Result of step 6:`<br /><br /> Zostanie wyświetlone okno dialogowe Wyewidencjonuj do edycji.<br /><br /> `Result of step 7:`<br /><br /> Plik jest niezmieniony.<br /><br /> `Result of step 9:`<br /><br /> Zostanie wyświetlone okno dialogowe Wyewidencjonuj do edycji.<br /><br /> `Result of step 10:`<br /><br /> Plik projektu można edytować w pamięci.<br /><br /> `Result of step 11:`<br /><br /> Przy zapisywaniu zostanie wyświetlone okno dialogowe wyewidencjonowywanie przy zapisywaniu.|  
+|Edytuj plik rozwiązania, który jest zaewidencjonowany|Powtórz kroki zgodnie z opisem w poprzednim teście, ale zamiast modyfikować plik tekstowy, zmodyfikuj rozwiązanie, zmieniając właściwości rozwiązania.|Taki sam jak poprzedni test|  
+|Edytuj plik projektu, który jest zaewidencjonowany|Powtórz kroki zgodnie z opisem w poprzednim teście, ale zamiast modyfikować plik tekstowy, zmodyfikuj projekt, zmieniając właściwości projektu.|Taki sam jak poprzedni test.|  
   
-### <a name="case-3d-silent-check-out"></a>Zamierzone, Zapisz 3d: Dyskretnej wyewidencjonowanie  
- Ten test obejmuje podobszar scenariuszy gdzie **Wyewidencjonuj** okno dialogowe jest niewidoczny dla użytkownika **narzędzia**, **opcje**, **ustawienia kontroli źródła** .  
+### <a name="case-3d-silent-check-out"></a>Przypadek 3W: ciche wyewidencjonowywanie  
+ Ten obszar podrzędny obejmuje sprawdzenie scenariuszy, w których okno dialogowe **wyewidencjonowywania** nie pojawia się na poszczególnych użytkownikach **,** **opcjach**, **ustawieniach kontroli źródła**.  
   
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie  
   
-- Po operacji wyewidencjonowania plików docelowych i/lub foldery są oznaczone jako wyewidencjonowane z magazynu wersji.  
+- Po zakończeniu operacji wyewidencjonowywania pliki i/lub foldery docelowe są oznaczane jako wyewidencjonowane w sklepie z wersjami.  
   
-- Magazyn wersji atrybuty wyewidencjonowanie do odpowiednich użytkowników.  
+- Magazyn wersji ma atrybuty wyewidencjonowania dla poprawnego użytkownika.  
   
-- Data i godzina wyewidencjonowanie jest poprawny (ustawienia dla każdego użytkownika).  
+- Godzina i Data wyewidencjonowania są poprawne (zgodnie z ustawieniami użytkownika).  
   
-- Lokalna kopia pliku lub folderu docelowego jest zapisywalna.  
+- Lokalna kopia docelowego pliku lub folderu jest zapisywalna.  
   
-|Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
+|Akcja|Kroki testu|Oczekiwane wyniki do zweryfikowania|  
 |------------|----------------|--------------------------------|  
-|Dyskretnej wyewidencjonowania pliku|1.  Ustaw **narzędzia**, **opcje**, **kontroli źródła** do **wyewidencjonowanie plików automatycznie po edycji**.<br />2.  Utwórz nowy projekt z plikiem.<br />3.  Dodaj rozwiązanie do kontroli źródła.<br />4.  Zapoznaj się z pliku.|Plik jest wyewidencjonowany trybie dyskretnym (nie interfejsu użytkownika).|  
-|Dyskretnej wyewidencjonowania projektu|1.  Ustaw **narzędzia**, **opcje**, **kontroli źródła** do **wyewidencjonowanie plików automatycznie po edycji**.<br />2.  Utwórz nowy projekt.<br />3.  Dodaj rozwiązanie do kontroli źródła.<br />4.  Zapoznaj się z projektu.|Plik jest wyewidencjonowany trybie dyskretnym (nie interfejsu użytkownika).|  
+|Wyewidencjonowywanie dyskretne pliku|1. Ustaw **Narzędzia**, **Opcje**, **Kontrola źródła** w celu **automatycznego wyewidencjonowania plików podczas edycji**.<br />2. Utwórz nowy projekt z plikiem.<br />3. Dodaj rozwiązanie do kontroli źródła.<br />4. Wyewidencjonuj plik.|Plik został wyewidencjonowany w trybie dyskretnym (brak interfejsu użytkownika).|  
+|Wyewidencjonowywanie dyskretne dla projektu|1. Ustaw **Narzędzia**, **Opcje**, **Kontrola źródła** w celu **automatycznego wyewidencjonowania plików podczas edycji**.<br />2. Utwórz nowy projekt.<br />3. Dodaj rozwiązanie do kontroli źródła.<br />4. Sprawdź projekt.|Plik został wyewidencjonowany w trybie dyskretnym (brak interfejsu użytkownika).|  
   
-### <a name="case-3e-undo-check-out"></a>Wielkość 3e: Cofnij wyewidencjonowanie  
- **Cofnij wyewidencjonowanie** służy do anulowania plik wyewidencjonowany stanu i unikaj ewidencjonowania zmiany wprowadzone w pliku.  
+### <a name="case-3e-undo-check-out"></a>Przypadek 3e: Cofnij wyewidencjonowanie  
+ **Cofnięcie** wyewidencjonowania służy do anulowania stanu wyewidencjonowania pliku i unikania zaewidencjonowania zmian wprowadzonych w pliku.  
   
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie  
   
-- Wartość domyślna jest podstawą użytkownika **zapoznaj się z lokalną wersją** ustawienie. Jeśli użytkownik wybierze zapoznaj się z lokalną wersją, wartość domyślna dla cofnięcie wyewidencjonowania jest zawsze wracają do wersji wyewidencjonowany.  
+- Wartość domyślna jest określana na podstawie ustawienia **wersja lokalna wyewidencjonowania** użytkownika. Jeśli użytkownik wybrał opcję wyewidencjonowania lokalnej wersji, wartość domyślna dla opcji Cofnij wyewidencjonowanie ma zawsze na celu przywrócenie wersji wyewidencjonowanej.  
   
-- Po zaakceptowaniu cofania, ikony w **Eksploratora rozwiązań** są aktualizowane, dla których to dotyczy plików, a element zostanie usunięty z **oczekujące elementy do zaewidencjonowania** okna.  
+- Po zaakceptowaniu operacji cofania ikony w **Eksplorator rozwiązań** są aktualizowane dla plików, których dotyczy, a element zostanie usunięty z okna **Oczekujące zaewidencjonowania** .  
   
-|Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
+|Akcja|Kroki testu|Oczekiwane wyniki do zweryfikowania|  
 |------------|----------------|--------------------------------|  
-|Cofnij wyewidencjonowanie pojedynczy plik, który został wyewidencjonowany w trybie wyłączności|1.  Utwórz projekt klienta.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Zapoznaj się z plikiem wyłącznie.<br />4.  Zmodyfikuj plik.<br />5.  Cofnij wyewidencjonowanie (**pliku**, **kontroli źródła**, **Cofnij wyewidencjonowanie**).|Typowe oczekiwane zachowanie.|  
-|Cofnij wyewidencjonowanie pojedynczy plik, który został wyewidencjonowany udostępnione|1.  Utwórz projekt klienta.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Zapoznaj się z plikiem udostępnione.<br />4.  Zmodyfikuj plik.<br />5.  Cofnij wyewidencjonowanie (**pliku**, **kontroli źródła**, **Cofnij wyewidencjonowanie**).|Typowe oczekiwane zachowanie.|  
-|Cofnij wyewidencjonowanie projektu po dodaniu plików do projektu|1.  Utwórz nowy projekt i dodaj go do kontroli źródła.<br />2.  Zapoznaj się z projektu.<br />3.  Dodaj plik do projektu.<br />4.  Cofnij wyewidencjonowanie projektu.|Dodany plik zostanie usunięty z projektu w Eksploratorze rozwiązań.<br /><br /> Projekt został już wyewidencjonowany.|  
-|Cofnij wyewidencjonowanie projektu po usunięciu pliki z projektu|1.  Utwórz nowy projekt i dodaj go do kontroli źródła.<br />2.  Zapoznaj się z projektu.<br />3.  Usuń plik z projektu.<br />4.  Cofnij wyewidencjonowanie projektu.|Usunięto plik pojawia się w projekcie w Eksploratorze rozwiązań.<br /><br /> Projekt został już wyewidencjonowany.|  
+|Cofnij wyewidencjonowanie pojedynczego pliku, który jest wyewidencjonowany na wyłączność|1. Utwórz projekt klienta.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Wyewidencjonuj plik w trybie wyłączności.<br />4. Zmodyfikuj plik.<br />5. Cofnij wyewidencjonowanie (**plik**, **Kontrola źródła**, **Cofnij wyewidencjonowanie**).|Typowe oczekiwane zachowanie.|  
+|Cofnij wyewidencjonowanie pojedynczego pliku, który został wyewidencjonowany jako udostępniony|1. Utwórz projekt klienta.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Zapoznaj się z udostępnionym plikiem.<br />4. Zmodyfikuj plik.<br />5. Cofnij wyewidencjonowanie (**plik**, **Kontrola źródła**, **Cofnij wyewidencjonowanie**).|Typowe oczekiwane zachowanie.|  
+|Cofnij wyewidencjonowanie projektu po dodaniu plików do projektu|1. Utwórz nowy projekt i dodaj go do kontroli źródła.<br />2. Sprawdź projekt.<br />3. Dodaj plik do projektu.<br />4. Cofnij wyewidencjonowanie projektu.|Dodany plik zostanie usunięty z projektu w Eksplorator rozwiązań.<br /><br /> Projekt nie jest już wyewidencjonowany.|  
+|Cofnij wyewidencjonowanie projektu po usunięciu plików z projektu|1. Utwórz nowy projekt i dodaj go do kontroli źródła.<br />2. Sprawdź projekt.<br />3. Usuń plik z projektu.<br />4. Cofnij wyewidencjonowanie projektu.|Usunięty plik jest wyświetlany w obszarze projektu w Eksplorator rozwiązań.<br /><br /> Projekt nie jest już wyewidencjonowany.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2fe1ae2870e2e48d092f303f3e7458e7498c0ba5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548164"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Instrukcje: tworzenie raportu śledzenia wywołań narzędzi profilowania

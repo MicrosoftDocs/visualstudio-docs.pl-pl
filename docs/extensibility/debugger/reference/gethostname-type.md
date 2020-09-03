@@ -1,5 +1,5 @@
 ---
-title: GETHOSTNAME_TYPE | Dokumenty firmy Microsoft
+title: GETHOSTNAME_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5a7da1486f0edf52f3f0d96db699f60f24e36827
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736772"
 ---
 # <a name="gethostname_type"></a>GETHOSTNAME_TYPE
@@ -50,12 +50,12 @@ Określa przyjazną nazwę hosta.
 Określa nazwę pliku hosta.
 
 ## <a name="remarks"></a>Uwagi
-Te wartości są przekazywane jako argument do [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) metody, aby pobrać nazwę hosta w różnych formatach.
+Te wartości są przesyłane jako argument do metody [gethostname](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) w celu pobrania nazwy hosta w różnych formatach.
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: Obsługa paska nawigacyjnego w starszej usłudze językowej | Dokumenty firmy Microsoft
+title: Obsługa paska nawigacyjnego w starszej wersji usługi językowej | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,22 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f86dabb0594b1e33c45808efb387fcbe313e3de3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704863"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Obsługa paska nawigacyjnego w starszej wersji usługi językowej
-Pasek nawigacyjny w górnej części widoku edytora wyświetla typy i elementy członkowskie w pliku. Typy są wyświetlane w lewym rozwijaniu, a elementy członkowskie są wyświetlane w prawym rozwijaniu. Gdy użytkownik wybierze typ, cieszka jest umieszczana w pierwszym wierszu typu. Gdy użytkownik wybierze element członkowski, opieki jest umieszczana w definicji elementu członkowskiego. Rozwijane pola są aktualizowane w celu odzwierciedlenia bieżącej lokalizacji cieszy.
+Pasek nawigacyjny w górnej części widoku edytora wyświetla typy i elementy członkowskie w pliku. Typy są wyświetlane na liście rozwijanej po lewej stronie, a elementy członkowskie są wyświetlane na liście rozwijanej po prawej stronie. Gdy użytkownik wybierze typ, karetka zostanie umieszczona w pierwszym wierszu typu. Gdy użytkownik wybierze element członkowski, karetka zostanie umieszczona na definicji elementu członkowskiego. Pola rozwijane są aktualizowane w celu odzwierciedlenia bieżącej lokalizacji karetki.
 
 ## <a name="displaying-and-updating-the-navigation-bar"></a>Wyświetlanie i aktualizowanie paska nawigacyjnego
- Aby obsługiwać pasek nawigacyjny, należy wyprowadzić <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> klasę z <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> klasy i zaimplementować metodę. Gdy usługa języka otrzymuje okno kodu, <xref:Microsoft.VisualStudio.Package.LanguageService> klasa podstawowa <xref:Microsoft.VisualStudio.Package.CodeWindowManager>wystąpienia , <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> który zawiera obiekt reprezentujący okno kodu. Obiekt <xref:Microsoft.VisualStudio.Package.CodeWindowManager> otrzymuje nowy <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> obiekt. Metoda <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> pobiera <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> obiekt. Jeśli zwrócisz wystąpienie <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> klasy, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> wywoła <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodę wypełniania wewnętrznych list i <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> przekazuje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obiekt do menedżera listy rozwijanej. Menedżer rozwijany pasek z kolei wywołuje <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.SetDropdownBar%2A> metodę <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> na obiekcie, aby ustanowić <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar> obiekt, który posiada dwa paski rozwijane.
+ Aby obsłużyć pasek nawigacyjny, należy utworzyć klasę klasy z <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> klasy i zaimplementować <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodę. Gdy usługa językowa otrzymuje okno kodu, <xref:Microsoft.VisualStudio.Package.LanguageService> Klasa bazowa tworzy wystąpienie elementu <xref:Microsoft.VisualStudio.Package.CodeWindowManager> , który zawiera <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> obiekt reprezentujący okno kodu. <xref:Microsoft.VisualStudio.Package.CodeWindowManager>Obiekt uzyskuje nowy <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> obiekt. <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A>Metoda pobiera <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> obiekt. Jeśli zwracasz wystąpienie <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> klasy, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> wywołuje <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodę w celu wypełnienia list wewnętrznych i przekazuje <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> obiekt do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera pasków listy rozwijanej. Menedżer paska listy rozwijanej, z kolei wywołuje <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.SetDropdownBar%2A> metodę w <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> obiekcie, aby określić <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar> obiekt, który zawiera dwa paski rozwijane.
 
- Gdy przesunie <xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A> się cieszka, metoda wywołuje <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> metodę. Metoda <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> podstawowa <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> wywołuje metodę <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> w klasie, aby zaktualizować stan paska nawigacyjnego. Zestaw <xref:Microsoft.VisualStudio.Package.DropDownMember> obiektów należy przekazać do tej metody. Każdy obiekt reprezentuje wpis z listy rozwijanej.
+ Gdy karetka przesuwa się, <xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A> Metoda wywołuje <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> metodę. Metoda bazowa <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> wywołuje <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodę w <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> klasie w celu zaktualizowania stanu paska nawigacyjnego. Przekazanie zestawu <xref:Microsoft.VisualStudio.Package.DropDownMember> obiektów do tej metody. Każdy obiekt reprezentuje wpis na liście rozwijanej.
 
 ## <a name="the-contents-of-the-navigation-bar"></a>Zawartość paska nawigacyjnego
- Pasek nawigacyjny zwykle zawiera listę typów i listę członków. Lista typów zawiera wszystkie typy dostępne w bieżącym pliku źródłowym. Nazwy typów zawierają pełne informacje o obszarze nazw. Poniżej przedstawiono przykład kodu C# z dwoma typami:
+ Pasek nawigacyjny zawiera zwykle listę typów i listę elementów członkowskich. Lista typów zawiera wszystkie typy dostępne w bieżącym pliku źródłowym. Nazwy typów obejmują pełne informacje o przestrzeni nazw. Poniżej przedstawiono przykładowy kod w języku C# z dwoma typami:
 
 ```csharp
 namespace TestLanguagePackage
@@ -44,48 +44,48 @@ namespace TestLanguagePackage
 }
 ```
 
- Zostanie wyświetlona `TestLanguagePackage.TestLanguageService` lista `TestLanguagePackage.TestLanguageService.Tokens`typów i .
+ Zostanie wyświetlona lista typów `TestLanguagePackage.TestLanguageService` i `TestLanguagePackage.TestLanguageService.Tokens` .
 
- Na liście członków są wyświetlane dostępne elementy członkowskie typu wybranego na liście typów. Korzystając z powyższego `TestLanguagePackage.TestLanguageService` przykładu kodu, jeśli jest to typ, `tokens` który `serviceName`jest zaznaczony, lista członków będzie zawierać członków prywatnych i . Struktura `Token` wewnętrzna nie jest wyświetlana.
+ Lista członków wyświetla dostępne elementy członkowskie typu, który został wybrany z listy typy. Korzystając z powyższego przykładu kodu, jeśli `TestLanguagePackage.TestLanguageService` jest wybrany typ, Lista członków będzie zawierać prywatne elementy członkowskie `tokens` i `serviceName` . Struktura wewnętrzna `Token` nie jest wyświetlana.
 
- Można zaimplementować listę członków, aby nazwa elementu członkowskiego pogrubiona, gdy daszka jest umieszczona wewnątrz niego. Elementy członkowskie mogą być również wyświetlane w wyszarzonych tekstach, co oznacza, że nie znajdują się w zakresie, w którym znajduje się obecnie cieszka.
+ Można zaimplementować listę elementów członkowskich, aby nazwa elementu członkowskiego była pogrubiona, gdy znak daszka jest umieszczony wewnątrz. Elementy członkowskie mogą być również wyświetlane w kolorze szarym, co oznacza, że nie znajdują się w zakresie, w którym karetka jest obecnie ustawiona.
 
 ## <a name="enabling-support-for-the-navigation-bar"></a>Włączanie obsługi paska nawigacyjnego
- Aby włączyć obsługę paska nawigacyjnego, <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> należy ustawić `true` `ShowDropdownBarOption` parametr atrybutu na . Ten parametr <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A> ustawia właściwość. Aby obsługiwać pasek nawigacyjny, <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> należy zaimplementować obiekt w metodzie <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> w <xref:Microsoft.VisualStudio.Package.LanguageService> klasie.
+ Aby włączyć obsługę paska nawigacyjnego, należy ustawić `ShowDropdownBarOption` parametr <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atrybutu na `true` . Ten parametr ustawia <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A> Właściwość. Aby obsługiwać pasek nawigacyjny, należy zaimplementować <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> obiekt w <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> metodzie <xref:Microsoft.VisualStudio.Package.LanguageService> klasy.
 
- W implementacji <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> metody, jeśli <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A> właściwość `true`jest ustawiona <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> na , można zwrócić obiekt. Jeśli obiekt nie zostanie zwracany, pasek nawigacyjny nie zostanie wyświetlony.
+ W implementacji <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> metody, jeśli <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A> Właściwość jest ustawiona na `true` , można zwrócić <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> obiekt. Jeśli obiekt nie zostanie zwrócony, pasek nawigacyjny nie zostanie wyświetlony.
 
- Opcja wyświetlania paska nawigacyjnego może być ustawiona przez użytkownika, dzięki czemu można zresetować ten formant, gdy widok edytora jest otwarty. Użytkownik musi zamknąć i ponownie otworzyć okno edytora przed zmianą.
+ Opcja wyświetlania paska nawigacyjnego może zostać ustawiona przez użytkownika, więc można ją zresetować, gdy widok edytora jest otwarty. Użytkownik musi zamknąć i ponownie otworzyć okno edytora przed wprowadzeniem zmiany.
 
-## <a name="implementing-support-for-the-navigation-bar"></a>Wdrażanie obsługi paska nawigacyjnego
- Metoda <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> przyjmuje dwie listy (po jednej dla każdej listy rozwijanej) i dwie wartości reprezentujące bieżący wybór na każdej liście. Listy i wartości wyboru mogą być aktualizowane, w którym to przypadku <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metoda musi powrócić, `true` aby wskazać, że listy uległy zmianie.
+## <a name="implementing-support-for-the-navigation-bar"></a>Implementowanie obsługi paska nawigacyjnego
+ <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>Metoda przyjmuje dwie listy (po jednej dla każdej listy rozwijanej) i dwie wartości reprezentujące bieżące zaznaczenie na każdej z nich. Listy i wartości wyboru można aktualizować, w tym przypadku <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Metoda musi powrócić, `true` Aby wskazać, że listy uległy zmianie.
 
- W miarę zmiany zaznaczenia w rozwijanych typach lista członków musi zostać zaktualizowana w celu odzwierciedlenia nowego typu. To, co jest pokazane na liście członków, może być następujące:
+ Po zmianie zaznaczenia na liście rozwijanej typy należy zaktualizować listę elementów członkowskich, aby odzwierciedlała nowy typ. Elementy wyświetlane na liście składowe mogą być następujące:
 
-- Lista elementów członkowskich dla bieżącego typu.
+- Lista elementów członkowskich bieżącego typu.
 
-- Wszystkie elementy członkowskie dostępne w pliku źródłowym, ale wszystkie elementy członkowskie nie w bieżącym typie wyświetlane w wyszarzonych tekstach. Użytkownik nadal może wybrać wyszarzone elementy członkowskie, dzięki czemu mogą być używane do szybkiej nawigacji, ale kolor wskazuje, że nie są one częścią aktualnie wybranego typu.
+- Wszystkie elementy członkowskie dostępne w pliku źródłowym, ale ze wszystkimi elementami członkowskimi, których nie ma w bieżącym typie wyświetlanych w tekście szarym. Użytkownik może nadal wybierać wyszarzone elementy członkowskie, aby można było ich użyć do szybkiej nawigacji, ale kolor wskazuje, że nie są one częścią aktualnie wybranego typu.
 
-  Implementacja <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metody zazwyczaj wykonuje następujące kroki:
+  Implementacja <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metody zwykle wykonuje następujące czynności:
 
 1. Pobierz listę bieżących deklaracji dla pliku źródłowego.
 
-     Istnieje wiele sposobów wypełniania list. Jednym z podejść jest utworzenie metody <xref:Microsoft.VisualStudio.Package.LanguageService> niestandardowej w <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> wersji klasy, która wywołuje metodę z powodu analizy niestandardowej, która zwraca listę wszystkich deklaracji. Innym podejściem może <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> być wywołanie <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metody bezpośrednio z metody z powodu analizy niestandardowej. Trzecie podejście może być do pamięci <xref:Microsoft.VisualStudio.Package.AuthoringScope> podręcznej deklaracji w klasie zwrócone <xref:Microsoft.VisualStudio.Package.LanguageService> przez ostatnią pełną operację <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> analizy w klasie i pobrać, że z metody.
+     Istnieją różne sposoby wypełniania list. Jednym z metod jest utworzenie niestandardowej metody w swojej wersji <xref:Microsoft.VisualStudio.Package.LanguageService> klasy, która wywołuje <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodę z niestandardowym przyczyną analizy, która zwraca listę wszystkich deklaracji. Innym rozwiązaniem może być wywołanie <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody bezpośrednio z <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metody z niestandardowym przyczyną analizy. Trzecie podejście może być w pamięci podręcznej deklaracji w <xref:Microsoft.VisualStudio.Package.AuthoringScope> klasie zwracanej przez ostatnią pełną operację analizy w <xref:Microsoft.VisualStudio.Package.LanguageService> klasie i pobrać ją z <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metody.
 
 2. Wypełnij lub zaktualizuj listę typów.
 
-     Zawartość listy typów może zostać zaktualizowana po zmianie źródła lub w przypadku zmiany stylu tekstu typów na podstawie bieżącej pozycji daszka. Należy zauważyć, że ta <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> pozycja jest przekazywana do metody.
+     Zawartość listy typów może zostać zaktualizowana, gdy źródło uległo zmianie lub jeśli wybrano zmianę stylu tekstu typów na podstawie bieżącego położenia karetki. Należy zauważyć, że ta pozycja jest przenoszona do <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metody.
 
-3. Określ typ do wyboru na liście typów na podstawie bieżącego stanowiska cieszy.
+3. Określ typ, który ma zostać wybrany na liście typów na podstawie bieżącego położenia karetki.
 
-     Można przeszukiwać deklaracje, które zostały uzyskane w kroku 1, aby znaleźć typ, który otacza bieżącą pozycję daterii, a następnie przeszukać listę typów dla tego typu, aby określić jego indeks na liście typów.
+     Można wyszukać deklaracje, które zostały uzyskane w kroku 1, aby znaleźć typ, który zawiera bieżącą pozycję karetki, a następnie przeszukać listę typów dla tego typu, aby określić swój indeks na liście typów.
 
 4. Wypełnij lub zaktualizuj listę elementów członkowskich na podstawie wybranego typu.
 
-     Lista członków odzwierciedla to, co jest obecnie wyświetlane w liście rozwijanej **Członkowie.** Zawartość listy członków może wymagać aktualizacji, jeśli źródło uległo zmianie lub jeśli wyświetlane są tylko elementy członkowskie wybranego typu i wybrany typ uległ zmianie. Jeśli wybierzesz wyświetlanie wszystkich elementów członkowskich w pliku źródłowym, styl tekstu każdego członka na liście musi zostać zaktualizowany, jeśli aktualnie wybrany typ uległ zmianie.
+     Lista członków odzwierciedla elementy, które są aktualnie wyświetlane na liście rozwijanej **Członkowie** . Zawartość listy członków może wymagać aktualizacji, jeśli źródło zostało zmienione lub jeśli są wyświetlane tylko elementy członkowskie wybranego typu, a wybrany typ został zmieniony. Jeśli wybierzesz opcję wyświetlania wszystkich elementów członkowskich w pliku źródłowym, należy zaktualizować style tekstu każdego elementu członkowskiego na liście, jeśli aktualnie wybrany typ został zmieniony.
 
-5. Określ członka, który ma być wybierany na liście członków na podstawie bieżącego stanowiska cieszy.
+5. Określ element członkowski do wyboru na liście członków na podstawie bieżącego położenia karetki.
 
-     Przeszukaj deklaracje, które zostały uzyskane w kroku 1 dla elementu członkowskiego, który zawiera bieżącą pozycję opiekuna, a następnie przeszukaj listę członków dla tego członka, aby określić jego indeks na liście elementów członkowskich.
+     Przeszukaj deklaracje, które zostały uzyskane w kroku 1 dla elementu członkowskiego, który zawiera bieżącą pozycję karetki, a następnie przeszukaj listę elementów członkowskich dla tego elementu członkowskiego, aby określić jego indeks na liście elementów członkowskich.
 
-6. Wróć, `true` jeśli wprowadzono jakiekolwiek zmiany na listach lub w których zostały wprowadzone zaznaczenia na dowolnej liście.
+6. Zwróć, `true` Jeśli wprowadzono jakiekolwiek zmiany na listach lub wybrane z nich.
