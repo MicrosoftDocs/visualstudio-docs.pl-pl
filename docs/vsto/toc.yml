@@ -152,11 +152,11 @@
                       href: combining-vba-and-document-level-customizations.md
                     - name: Udostępnianie kodu z VBA w projektach Visual Basic
                       href: how-to-expose-code-to-vba-in-a-visual-basic-project.md
-                    - name: 'Udostępnianie kodu z VBA w projektach Visual C#'
+                    - name: Udostępnianie kodu z VBA w projektach Visual C#
                       href: how-to-expose-code-to-vba-in-a-visual-csharp-project.md
-                    - name: 'Przewodnik: Wywoływanie kodu z kodu VBA w projekcie Visual Basic'
+                    - name: 'Wskazówki: wywoływanie kodu z VBA w projektach Visual Basic'
                       href: walkthrough-calling-code-from-vba-in-a-visual-basic-project.md
-                    - name: 'Przewodnik: Wywoływanie kodu z kodu VBA w projekcie Visual C#'
+                    - name: 'Wskazówki: wywoływanie kodu z VBA w projektach Visual C#'
                       href: walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md
                 - name: Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument
                   items:
@@ -186,17 +186,17 @@
                           href: limitations-of-windows-forms-controls-on-office-documents.md
                         - name: Dodawanie kontrolek Windows Forms do dokumentów pakietu Office
                           href: how-to-add-windows-forms-controls-to-office-documents.md
-                        - name: 'Przewodnik: Zmiana formatowania dokumentu za pomocą kontrolek CheckBox'
+                        - name: 'Wskazówki: zmiana formatowania dokumentu za pomocą formantów CheckBox'
                           href: walkthrough-changing-document-formatting-using-checkbox-controls.md
-                        - name: 'Przewodnik: Zmiana formatowania arkusza za pomocą kontrolek CheckBox'
+                        - name: 'Wskazówki: zmiana formatowania arkusza za pomocą formantów CheckBox'
                           href: walkthrough-changing-worksheet-formatting-using-checkbox-controls.md
-                        - name: 'Przewodnik: Wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku'
+                        - name: 'Wskazówka: wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku'
                           href: walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md
-                        - name: 'Przewodnik: Wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku'
+                        - name: 'Wskazówki: wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku'
                           href: walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md
-                        - name: 'Przewodnik: Aktualizacja wykresu w dokumencie za pomocą przycisków radiowych'
+                        - name: 'Wskazówki: aktualizacja wykresu w dokumencie za pomocą przycisków radiowych'
                           href: walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md
-                        - name: 'Przewodnik: Aktualizacja wykresu w arkuszu za pomocą przycisków radiowych'
+                        - name: 'Wskazówki: aktualizacja wykresu w arkuszu za pomocą przycisków radiowych'
                           href: walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md
                         - name: Zmiana rozmiaru kontrolek w komórkach arkusza
                           href: how-to-resize-controls-within-worksheet-cells.md
@@ -216,11 +216,11 @@
                       href: how-to-get-started-customizing-the-ribbon.md
                     - name: Projektant wstążki
                       href: ribbon-designer.md
-                    - name: 'Przewodnik: Tworzenie karty niestandardowej za pomocą Projektanta wstążki'
+                    - name: 'Wskazówki: tworzenie kart niestandardowych za pomocą Projektanta wstążki'
                       href: walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md
                     - name: Model obiektu Wstążka ― Omówienie
                       href: ribbon-object-model-overview.md
-                    - name: 'Przewodnik: Aktualizowanie kontrolek na wstążce w czasie wykonywania'
+                    - name: 'Wskazówki: aktualizowanie formantów na wstążce w czasie wykonywania'
                       href: walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md
                     - name: Dostosowywanie Wstążki do programu Outlook
                       href: customizing-a-ribbon-for-outlook.md
@@ -240,7 +240,7 @@
                       href: how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md
                     - name: XML — Wstążka
                       href: ribbon-xml.md
-                    - name: 'Przewodnik: Tworzenie karty niestandardowej za pomocą kodu XML wstążki'
+                    - name: 'Wskazówki: tworzenie kart niestandardowych za pomocą XML wstążki'
                       href: walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md
                 - name: Okienko akcji ― Omówienie
                   items:
@@ -250,11 +250,11 @@
                       href: how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md
                     - name: Zarządzanie układem kontrolek w okienkach akcji
                       href: how-to-manage-control-layout-on-actions-panes.md
-                    - name: 'Przewodnik: Wiązanie danych z kontrolkami w okienku akcji programu Word'
+                    - name: 'Wskazówki: powiązywanie danych z kontrolkami w okienku akcji programu Word'
                       href: walkthrough-binding-data-to-controls-on-a-word-actions-pane.md
-                    - name: 'Przewodnik: Wiązanie danych z kontrolkami w okienku akcji programu Excel'
+                    - name: 'Wskazówki: wiązanie danych do kontrolek okienku akcji programu Excel'
                       href: walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md
-                    - name: 'Przewodnik: Wstawianie tekstu do dokumentu z okienka akcji'
+                    - name: 'Wskazówki: wstawianie tekstu do dokumentu z okienka akcji'
                       href: walkthrough-inserting-text-into-a-document-from-an-actions-pane.md
                 - name: Niestandardowe okienka zadań
                   items:
@@ -262,11 +262,11 @@
                       href: custom-task-panes.md
                     - name: Dodawanie niestandardowego okienka zadań do aplikacji
                       href: how-to-add-a-custom-task-pane-to-an-application.md
-                    - name: 'Przewodnik: Automatyzacja aplikacji z niestandardowego okienka zadań'
+                    - name: 'Wskazówki: automatyzacja aplikacji z niestandardowego okienka zadań'
                       href: walkthrough-automating-an-application-from-a-custom-task-pane.md
-                    - name: 'Przewodnik: Synchronizacja niestandardowego okienka zadań za pomocą przycisku wstążki'
+                    - name: 'Wskazówka: synchronizacja niestandardowego okienka zadań z przyciskiem wstążki'
                       href: walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md
-                    - name: 'Przewodnik: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook'
+                    - name: 'Wskazówki: wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook'
                       href: walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md
                 - name: Korzystanie z formantów WPF w rozwiązaniach pakietu Office
                   href: using-wpf-controls-in-office-solutions.md
@@ -276,7 +276,7 @@
                   href: how-to-show-add-in-user-interface-errors.md
                 - name: Dodawanie poleceń do menu skrótów
                   href: how-to-add-commands-to-shortcut-menus.md
-                - name: 'Przewodnik: Zbieranie danych, korzystając z formularza Windows Forms'
+                - name: 'Wskazówki: zbieranie danych korzystając z formularzy systemu Windows'
                   href: walkthrough-collecting-data-using-a-windows-form.md
             - name: Dane w rozwiązaniach pakietu Office
               items:
@@ -292,7 +292,7 @@
                       href: how-to-populate-documents-with-data-from-a-database.md
                     - name: Zapełnianie dokumentów danymi z usług
                       href: how-to-populate-documents-with-data-from-services.md
-                    - name: 'Przewodnik: Wiązanie z danymi z usługi w projekcie dodatku narzędzi VSTO'
+                    - name: 'Przewodnik: Powiązanie z danymi z usług w projektach dodatku narzędzi VSTO'
                       href: walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md
                     - name: Zapełnianie dokumentów danymi z obiektów
                       href: how-to-populate-documents-with-data-from-objects.md
@@ -300,13 +300,13 @@
                       href: how-to-scroll-through-database-records-in-a-worksheet.md
                     - name: Aktualizowanie źródła danych danymi z kontrolki hosta
                       href: how-to-update-a-data-source-with-data-from-a-host-control.md
-                    - name: 'Przewodnik: Proste powiązanie danych w projekcie na poziomie dokumentu'
+                    - name: 'Wskazówki: proste powiązanie danych w projektach na poziomie dokumentów'
                       href: walkthrough-simple-data-binding-in-a-document-level-project.md
-                    - name: 'Przewodnik: Złożone powiązanie danych w projekcie na poziomie dokumentu'
+                    - name: 'Wskazówki: złożone powiązanie danych w projektach na poziomie dokumentów'
                       href: walkthrough-complex-data-binding-in-a-document-level-project.md
-                    - name: 'Przewodnik: Proste powiązanie danych w projekcie dodatku narzędzi VSTO'
+                    - name: 'Przewodnik: Proste powiązanie danych w projektach dodatku narzędzi VSTO'
                       href: walkthrough-simple-data-binding-in-vsto-add-in-project.md
-                    - name: 'Przewodnik: Złożone powiązanie danych w projekcie dodatku narzędzi VSTO'
+                    - name: 'Przewodnik: Złożone powiązanie danych w projektach dodatku VSTO'
                       href: walkthrough-complex-data-binding-in-vsto-add-in-project.md
                 - name: Niestandardowe części XML ― Omówienie
                   items:
@@ -330,17 +330,17 @@
                           href: how-to-programmatically-cache-a-data-source-in-an-office-document.md
                         - name: Dane z pamięci podręcznej w dokumentach zabezpieczonych hasłem
                           href: how-to-cache-data-in-a-password-protected-document.md
-                        - name: 'Przewodnik: Tworzenie relacji wzorzec/szczegół z użyciem zestawu informacji buforowanych'
+                        - name: 'Przewodnik: Tworzenie relacji wzorzec/szczegół z użyciem zestawu danych z pamięci podręcznej'
                           href: walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md
                     - name: Uzyskiwanie dostępu do danych w dokumentach na serwerze
                       items:
                         - name: Uzyskiwanie dostępu do danych w dokumentach na serwerze
                           href: accessing-data-in-documents-on-the-server.md
-                        - name: 'Przewodnik: Wstawianie danych do skoroszytu na serwerze'
+                        - name: 'Wskazówki: wstawianie danych do skoroszytu na serwerze'
                           href: walkthrough-inserting-data-into-a-workbook-on-a-server.md
-                        - name: 'Przewodnik: Pobieranie informacji buforowanych ze skoroszytu na serwerze'
+                        - name: 'Wskazówki: pobieranie danych z pamięci podręcznej ze skoroszytu na serwerze'
                           href: walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md
-                        - name: 'Przewodnik: Zmiana informacji buforowanych w skoroszycie na serwerze'
+                        - name: 'Wskazówki: zmiana danych z pamięci podręcznej ze skoroszytu na serwerze'
                           href: walkthrough-changing-cached-data-in-a-workbook-on-a-server.md
                 - name: Schematy XML i dane dostosowywane na poziomie dokumentu
                   items:
@@ -494,7 +494,7 @@
                   href: how-to-map-listobject-columns-to-data.md
                 - name: Wypełnianie kontrolek ListObject danymi
                   href: how-to-fill-listobject-controls-with-data.md
-                - name: 'Przewodnik: Programowanie w odniesieniu do zdarzeń kontrolki NamedRange'
+                - name: 'Wskazówki: programowanie w odniesieniu do zdarzeń formantu NamedRange'
                   href: walkthrough-programming-against-events-of-a-namedrange-control.md
             - name: Opis współtworzenia i dodatków
               href: understanding-coauthoring-and-addins.md
@@ -502,11 +502,11 @@
               href: globalization-and-localization-of-excel-solutions.md
             - name: Korzystanie z formantów formularzy Windows w arkuszach Excel
               href: using-windows-forms-controls-on-excel-worksheets.md
-            - name: 'Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel'
+            - name: 'Wskazówki: tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel'
               href: walkthrough-creating-your-first-document-level-customization-for-excel.md
             - name: 'Przewodnik: Tworzenie pierwszego dodatku VSTO dla programu Excel'
               href: walkthrough-creating-your-first-vsto-add-in-for-excel.md
-            - name: 'Przewodnik: Dodawanie kontrolek do arkusza w czasie wykonywania w projekcie dodatku narzędzi VSTO'
+            - name: 'Przewodnik: dodawanie kontrolek do arkusza w czasie wykonywania w projekcie dodatku narzędzi VSTO'
               href: walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md
         - name: InfoPath — Rozwiązania
           href: infopath-solutions.md
@@ -586,9 +586,9 @@
                   href: how-to-add-a-form-region-to-an-outlook-add-in-project.md
                 - name: Kojarzenie regionu formularza z klasą wiadomości programu Outlook
                   href: associating-a-form-region-with-an-outlook-message-class.md
-                - name: 'Przewodnik: Projektowanie regionu formularza programu Outlook'
+                - name: 'Wskazówki: projektowanie regionów formularzy programu Outlook'
                   href: walkthrough-designing-an-outlook-form-region.md
-                - name: 'Przewodnik: Importowanie regionu formularza zaprojektowanego w programie Outlook'
+                - name: 'Wskazówki: importowanie regionów formularzy zaprojektowanych w programie Outlook'
                   href: walkthrough-importing-a-form-region-that-is-designed-in-outlook.md
                 - name: Uzyskiwanie dostępu do regionów formularzy w czasie wykonywania
                   href: accessing-a-form-region-at-run-time.md
@@ -596,13 +596,13 @@
                   href: how-to-prevent-outlook-from-displaying-a-form-region.md
                 - name: Niestandardowe akcje w regionach formularzy programu Outlook
                   href: custom-actions-in-outlook-form-regions.md
-            - name: 'Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Outlook'
+            - name: 'Przewodnik: tworzenie pierwszego dodatku narzędzi VSTO dla programu Outlook'
               href: walkthrough-creating-your-first-vsto-add-in-for-outlook.md
         - name: PowerPoint — Rozwiązania
           items:
             - name: PowerPoint — Rozwiązania
               href: powerpoint-solutions.md
-            - name: 'Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu PowerPoint'
+            - name: 'Przewodnik: tworzenie pierwszego dodatku narzędzi VSTO dla programu PowerPoint'
               href: walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md
         - name: Rozwiązania projektu
           items:
@@ -750,17 +750,17 @@
                   href: how-to-protect-parts-of-documents-by-using-content-controls.md
                 - name: Zmiana rozmiaru kontrolek zakładki
                   href: how-to-resize-bookmark-controls.md
-                - name: 'Przewodnik: Tworzenie szablonu za pomocą kontrolek zawartości'
+                - name: 'Wskazówki: tworzenie szablonu za pomocą formantów zawartości'
                   href: walkthrough-creating-a-template-by-using-content-controls.md
-                - name: 'Przewodnik: Wiązanie kontrolek zawartości z niestandardowymi częściami XML'
+                - name: 'Wskazówki: wiązanie formantów zawartości do niestandardowych części XML'
                   href: walkthrough-binding-content-controls-to-custom-xml-parts.md
-                - name: 'Przewodnik: Tworzenie menu skrótów dla zakładek'
+                - name: 'Wskazówki: tworzenie menu skrótów dla zakładek'
                   href: walkthrough-creating-shortcut-menus-for-bookmarks.md
-            - name: 'Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word'
+            - name: 'Wskazówki: tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word'
               href: walkthrough-creating-your-first-document-level-customization-for-word.md
-            - name: 'Przewodnik: Tworzenie pierwszego dodatku VSTO dla programu Word'
+            - name: 'Przewodnik: tworzenie pierwszego dodatku narzędzi VSTO dla programu Word'
               href: walkthrough-creating-your-first-vsto-add-in-for-word.md
-            - name: 'Przewodnik: Dodawanie kontrolek do dokumentu w czasie wykonywania w dodatku narzędzi VSTO'
+            - name: 'Przewodnik: Dodawanie kontrolek do dokumentów w czasie wykonywania w dodatku narzędzi VSTO'
               href: walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md
         - name: Kompilowanie rozwiązań pakietu Office
           href: building-office-solutions.md

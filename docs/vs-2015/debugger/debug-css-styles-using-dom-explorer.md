@@ -21,16 +21,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 676a4ef2570873998f3ebc890e06d6d5ccae4cf2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852424"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Debugowanie stylów CSS przy użyciu eksploratora modelu DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Dotyczy systemów Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Gdy debugujesz aplikacje ze sklepu Windows, Windows Phone aplikacje ze sklepu i aplikacje utworzone przy użyciu Visual Studio Tools dla Apache Cordova, można wyświetlać i zmieniać reguły CSS dla wybranych elementów DOM i ich elementów podrzędnych.  
   
@@ -38,9 +38,9 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
  Karty **Style**, **obliczone**i **zmiany** zapewniają różne widoki informacji o stylu.  
   
-- Karta **Style** służy do wyświetlania reguł uporządkowanych według nazwy selektora CSS, takiej jak `html, body`. Za pomocą tej karty można także włączać i wyłączać określone style, ręcznie edytować wartości oraz zobaczyć wyniki wprowadzenia tych zmian.  
+- Karta **Style** służy do wyświetlania reguł uporządkowanych według nazwy selektora CSS, takich jak `html, body` . Za pomocą tej karty można także włączać i wyłączać określone style, ręcznie edytować wartości oraz zobaczyć wyniki wprowadzenia tych zmian.  
   
-- Użyj karty **obliczanej** , aby wyświetlić obliczone wartości stylu. Na przykład ustawienie rozmiaru równego 1em spowoduje, że wartość obliczona przez program Internet Explorer będzie wynosić 16px. Style na tej karcie są zorganizowane według nazwy stylu, takiej jak `height`. Za pomocą tej karty można także włączać i wyłączać określone style, ręcznie edytować wartości oraz zobaczyć wyniki wprowadzenia tych zmian.  
+- Użyj karty **obliczanej** , aby wyświetlić obliczone wartości stylu. Na przykład ustawienie rozmiaru równego 1em spowoduje, że wartość obliczona przez program Internet Explorer będzie wynosić 16px. Style na tej karcie są zorganizowane według nazwy stylu, takiej jak `height` . Za pomocą tej karty można także włączać i wyłączać określone style, ręcznie edytować wartości oraz zobaczyć wyniki wprowadzenia tych zmian.  
   
     > [!NOTE]
     > W Visual Studio 2013 Update 2 informacje podane na karcie **śledzenie** zostały scalone z kartą **obliczaną** , a karta **śledzenie** została usunięta.  
@@ -48,17 +48,17 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 - Skorzystaj z karty **zmiany** (tylko aplikacje do sklepu Windows i Windows Phone sklepu), aby identyfikować i śledzić style CSS, które zostały zmienione podczas sesji debugowania.  
   
 > [!TIP]
-> Zmiany wprowadzane do stylów w **stylach** i kartach **obliczanych** nie są trwałe. Zostaną one utracone po zakończeniu debugowania. Aby zmienić kod źródłowy i załadować ponownie strony bez zatrzymywania i ponownego uruchamiania debugera, Odśwież aplikację przy użyciu przycisku ![przycisku Odśwież aplikację systemu Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Odśwież aplikację systemu**Windows) na pasku narzędzi **debugowania** (tylko aplikacje Sklepu Windows i Windows Phone sklepu). Aby uzyskać więcej informacji, zobacz [odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+> Zmiany wprowadzane do stylów w **stylach** i kartach **obliczanych** nie są trwałe. Zostaną one utracone po zakończeniu debugowania. Aby zmienić kod źródłowy i załadować ponownie strony bez zatrzymywania i ponownego uruchamiania debugera, Odśwież aplikację przy użyciu przycisku  ![przycisku Odśwież aplikację systemu Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Odśwież aplikację systemu**Windows) na pasku narzędzi **debugowania** (tylko aplikacje Sklepu Windows i Windows Phone sklepu). Aby uzyskać więcej informacji, zobacz [odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
 ## <a name="example-of-fixing-a-css-rule"></a>Przykład poprawiania reguły CSS  
- W tym przykładzie pokazano, jak sprawdzić reguły CSS i zdebugować problem ze stylem. Na potrzeby tego przykładu Załóżmy, że chcesz zmienić kolor czcionki używanej do wyświetlania tytułów grup w szablonie [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Split App.  
+ W tym przykładzie pokazano, jak sprawdzić reguły CSS i zdebugować problem ze stylem. Na potrzeby tego przykładu Załóżmy, że chcesz zmienić kolor czcionki używanej do wyświetlania tytułów grup w [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] szablonie rozdzielonej aplikacji.  
   
 > [!NOTE]
 > W tym przykładzie przedstawiono aplikację ze sklepu Windows, ale wszystkie DOM Explorer funkcje są również stosowane do aplikacji Windows Phone Store i, z wyjątkiem karty zmiany, aplikacja utworzona przy użyciu Visual Studio Tools dla Apache Cordova.  
   
 #### <a name="to-view-and-change-css-rules"></a>Aby wyświetlić i zmienić reguły CSS  
   
-1. W programie Visual Studio Utwórz aplikację [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] przy użyciu języków JavaScript i HTML w szablonie projektu rozdzielonej aplikacji.  
+1. W programie Visual Studio Utwórz [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikację przy użyciu języka JavaScript i HTML w szablonie projektu rozdzielonej aplikacji.  
   
 2. W **Eksplorator rozwiązań**Otwórz element Items. css. (Element items.css znajduje się w folderze stron).  
   
@@ -87,7 +87,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     }  
     ```  
   
-     Spowoduje to dodanie stylu określającego kolor #ff6a00 (pomarańczowy) dla każdego elementu na liście. Selektor CSS, `.itemspage .itemslist .item`, wskazuje zestaw nazw klas dla elementów DIV w Items. html, które są wyświetlane jako elementy zagnieżdżone w dynamicznym modelu DOM. Element `item` DIV określa elementy listy.  
+     Spowoduje to dodanie stylu określającego kolor #ff6a00 (pomarańczowy) dla każdego elementu na liście. Selektor CSS, `.itemspage .itemslist .item` ,, wskazuje zestaw nazw klas dla elementów div w items.html, które są wyświetlane jako elementy zagnieżdżone w modelu Dom na żywo. `item`Element DIV określa elementy listy.  
   
 4. Z listy rozwijanej na pasku narzędzi **debugowania** wybierz pozycję **symulator** (wartość domyślna to**komputer lokalny** ).  
   
@@ -118,29 +118,29 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     <h4 class="item-title">Group Title: 1</h4>  
     ```  
   
-     Po zaznaczeniu elementu H4 w Eksploratorze DOM na jego kartach są widoczne reguły skojarzone z elementem H4. Karta **obliczona** jest pokazana tutaj z otwartą właściwością `color`:  
+     Po zaznaczeniu elementu H4 w Eksploratorze DOM na jego kartach są widoczne reguły skojarzone z elementem H4. Karta **obliczona** jest pokazana tutaj z `color` otwartą właściwością:  
   
      ![Karta style śledzenia w DOM Explorer](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
   
-     Ten widok zawiera przydatne informacje o regułach, które są skojarzone ze stylem `color`, na przykład następujące:  
+     Ten widok zawiera przydatne informacje o regułach, które są skojarzone z `color` stylem, na przykład następujące:  
   
-    - Selektor CSS, który został zmodyfikowany w elemencie Items. CSS, `.itemspage .itemslist .item`, nie jest używany w obliczeniu stylu końcowego (pojawia się w tekście przekreślonym). Niektóre inne wystąpienia stylu `color` również nie są używane.  
+    - Selektor CSS, który został zmodyfikowany w pliku Items. CSS, `.itemspage .itemslist .item` nie jest używany w obliczeniu stylu końcowego (pojawia się w tekście przekreślonym). Niektóre inne wystąpienia `color` stylu również nie są używane.  
   
         > [!TIP]
         > Pełne nazwy selektorów o dłuższych nazwach są wyświetlane w etykietkach narzędzia.  
   
-    - Końcowa obliczona wartość CSS, `rgba(255, 255, 255, 0.87)`, jest ustawiana w odniesieniu do następującego selektora CSS: `.itemspage .itemslist .item .item-overlay .item-title`, która jest również zdefiniowana w Items. css.  
+    - Końcowa obliczona wartość CSS, `rgba(255, 255, 255, 0.87)` jest ustawiana w odniesieniu do następującego selektora CSS: `.itemspage .itemslist .item .item-overlay .item-title` , który jest również zdefiniowany w Items. css.  
   
         > [!TIP]
         > Teraz, gdy wiemy, gdzie jest ustawiony kolor, wiemy także, gdzie możemy go zmienić. Zmiany można też testować w Eksploratorze DOM bez odświeżania aplikacji, tak jak pokazano w kolejnych krokach.  
   
-9. Wyczyść pole wyboru pierwszego wystąpienia stylu `color`, który jest przeznaczony dla selektora `.itemspage .itemslist .item .item-overlay .item-title`. Teraz w symulatorze zobaczysz, że kolor tytułów elementów zmieni się na pomarańczowy, zgodnie z oczekiwaniami, a selektor modyfikowany w CSS `.itemspage .itemslist .item`, nie jest już przesłonięty (oznacza to, że nie ma już zastosowanego tekstu przekreślenia). Oto karta **obliczana** po usunięciu zaznaczenia pola wyboru.  
+9. Wyczyść pole wyboru pierwszego wystąpienia `color` stylu, który jest przeznaczony dla `.itemspage .itemslist .item .item-overlay .item-title` selektora. Teraz w symulatorze zobaczysz, że kolor tytułów elementów zmieni się na pomarańczowy, zgodnie z oczekiwaniami, i selektor, który został zmodyfikowany w CSS, `.itemspage .itemslist .item` nie jest już przesłonięty (oznacza to, że nie ma już zastosowanego tekstu przekreślenia). Oto karta **obliczana** po usunięciu zaznaczenia pola wyboru.  
   
      ![Karta obliczana po aktualizacji stylu CSS](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
   
 10. Wybierz kartę **zmiany** .  
   
-     Karta **zmiany** umożliwia identyfikowanie i śledzenie zmian stylów wprowadzonych podczas sesji debugowania. Na poniższej ilustracji przedstawiono selektor `.itemspage .itemslist .item .item-overlay .item-title` na karcie **zmiany** , który został teraz zastąpiony.  
+     Karta **zmiany** umożliwia identyfikowanie i śledzenie zmian stylów wprowadzonych podczas sesji debugowania. Na poniższej ilustracji przedstawiono `.itemspage .itemslist .item .item-overlay .item-title` Selektor na karcie **zmiany** , który jest teraz zastępowany.  
   
      ![Karta zmiany w DOM Explorer](../debugger/media/js-css-styles-changes.png "JS_CSS_Styles_Changes")  
   
@@ -148,16 +148,16 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
 12. Wybierz kartę **Style** .  
   
-13. Otwórz selektor stylów `.itemspage .itemslist .item .item-overlay .item-title`.  
+13. Otwórz `.itemspage .itemslist .item .item-overlay .item-title` Selektor stylów.  
   
-14. Wybierz pierwsze wystąpienie stylu `color`, a następnie kliknij dwukrotnie wartość właściwości `rgb(255, 255, 255, 0.87)`.  
+14. Wybierz pierwsze wystąpienie `color` stylu, a następnie kliknij dwukrotnie wartość właściwości `rgb(255, 255, 255, 0.87)` .  
   
-15. Użyj klawiatury, aby zmodyfikować tę wartość. Zmień go na `rgb(255, 255, 0, 0.87)`, a następnie naciśnij klawisz ENTER. Kolory wszystkich tytułów elementów zostały zmienione w symulatorze na żółty.  
+15. Użyj klawiatury, aby zmodyfikować tę wartość. Zmień go na `rgb(255, 255, 0, 0.87)` , a następnie naciśnij klawisz ENTER. Kolory wszystkich tytułów elementów zostały zmienione w symulatorze na żółty.  
   
-16. Aby wprowadzić zmiany w źródłowym pliku CSS, kliknij link **Items. css** na karcie **Style** . Spowoduje to otwarcie pliku Items. CSS, gdzie można zmienić wartość stylu `color` w kodzie aplikacji. Aby odświeżyć aplikację bez zatrzymywania i ponownego uruchamiania debugera, kliknij przycisk ![Odśwież aplikację systemu Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Odśwież aplikację systemu Windows**) na pasku narzędzi **debugowanie** .  
+16. Aby wprowadzić zmiany w źródłowym pliku CSS, kliknij link **Items. css** na karcie **Style** . Spowoduje to otwarcie pliku Items. CSS, gdzie można zmienić wartość `color` stylu w kodzie aplikacji. Aby odświeżyć aplikację bez zatrzymywania i ponownego uruchamiania debugera, kliknij przycisk  ![Odśwież aplikację systemu Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Odśwież aplikację systemu Windows**) na pasku narzędzi **debugowanie** .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Debugowanie układu przy użyciu DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)   
- [Wyświetl odbiorniki zdarzeń DOM](../debugger/view-dom-event-listeners.md)   
+ [Wyświetl detektory zdarzeń DOM](../debugger/view-dom-event-listeners.md)   
  [Pomoc techniczna i ułatwienia dostępu](https://msdn.microsoft.com/library/tzbxw1af(VS.110).aspx)

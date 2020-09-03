@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d9ec76446aff930475ea5e3ca0133e11b3798b0c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672300"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using"></a>Obiekty dodawane do projektanta używają innego połączenia danych niż aktualnie używane przez projektanta
@@ -21,16 +21,16 @@ ms.locfileid: "72672300"
 
 Obiekty dodawane do projektanta używają innego połączenia danych niż aktualnie używane przez projektanta. Czy chcesz zastąpić połączenie używane przez projektanta?
 
- Po dodaniu elementów do [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) wszystkie elementy używają jednego połączenia danych udostępnionych. (Powierzchnia projektowa reprezentuje <xref:System.Data.Linq.DataContext>, która używa jednego połączenia dla wszystkich obiektów na powierzchni). Po dodaniu obiektu do projektanta, który używa połączenia danych, które różni się od aktualnie używanego połączenia danych przez projektanta, ten komunikat zostanie wyświetlony. Aby rozwiązać ten problem, można wybrać, aby zachować istniejące połączenie. W przypadku wybrania tego wyboru wybrany obiekt nie zostanie dodany. Alternatywnie możesz dodać obiekt i zresetować <xref:System.Data.Linq.DataContext> połączenie z nowym połączeniem.
+ Po dodaniu elementów do [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ( [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ), wszystkie elementy korzystają z jednego udostępnionego połączenia danych. (Powierzchni projektowej reprezentuje <xref:System.Data.Linq.DataContext> , która używa jednego połączenia dla wszystkich obiektów na powierzchni). Po dodaniu obiektu do projektanta, który używa połączenia danych, które różni się od aktualnie używanego połączenia danych przez projektanta, ten komunikat zostanie wyświetlony. Aby rozwiązać ten problem, można wybrać, aby zachować istniejące połączenie. W przypadku wybrania tego wyboru wybrany obiekt nie zostanie dodany. Alternatywnie możesz dodać obiekt i zresetować <xref:System.Data.Linq.DataContext> połączenie z nowym połączeniem.
 
 > [!NOTE]
-> Jeśli klikniesz przycisk **tak**, wszystkie klasy jednostek w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] są mapowane na nowe połączenie.
+> Jeśli klikniesz przycisk **tak**, wszystkie klasy jednostek w programie [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] są mapowane na nowe połączenie.
 
 ### <a name="to-replace-the-existing-connection-with-the-connection-used-by-the-selected-object"></a>Aby zamienić istniejące połączenie z połączeniem używanym przez wybrany obiekt
 
-- Kliknij przycisk **Tak**.
+- Kliknij przycisk **Yes** (Tak).
 
-     Wybrany obiekt jest dodawany do [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], a element DataContext. Connection jest ustawiany na nowe połączenie.
+     Wybrany obiekt jest dodawany do [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] , a element DataContext. Connection jest ustawiany na nowe połączenie.
 
 ### <a name="to-continue-to-use-the-existing-connection-and-cancel-adding-the-selected-object"></a>Aby nadal korzystać z istniejącego połączenia i anulować Dodawanie wybranego obiektu
 

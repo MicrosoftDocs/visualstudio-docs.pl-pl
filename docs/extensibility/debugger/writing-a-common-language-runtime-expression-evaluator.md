@@ -1,5 +1,5 @@
 ---
-title: Pisanie ewaluatora wyrażenia środowiska uruchomieniowego języka wspólnego | Dokumenty firmy Microsoft
+title: Pisanie ewaluatora wyrażeń środowiska uruchomieniowego języka wspólnego | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,36 +13,36 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4e46eaef395a7c66792662b3c5d4b9fbad419dfb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712324"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Pisanie ewaluatora wyrażeń środowiska uruchomieniowego języka wspólnego
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [oceniający wyrażenia CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład oceniającego zarządzane wyrażenia](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniania wyrażeń jest przestarzały. Aby uzyskać informacje na temat implementowania oceniania wyrażeń CLR, zobacz testerzy [wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzana próbnik wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Oceniający wyrażenie (EE) jest częścią aparatu debugowania (DE), który obsługuje składni i semantyki języka programowania, który wyprodukował kod jest debugowany. Wyrażenia muszą być oceniane w kontekście języka programowania. Na przykład w niektórych językach wyrażenie "A+B" oznacza "sumę A i B". W innych językach to samo wyrażenie może oznaczać "A lub B". W związku z tym oddzielny EE musi być napisany dla każdego języka programowania, który generuje kod obiektu do debugowania w visual studio IDE.
+ Ewaluatora wyrażeń (EE) jest częścią aparatu debugowania (DE), która obsługuje składnię i semantykę języka programowania, który wygenerował kod debugowany. Wyrażenia muszą być oceniane w kontekście języka programowania. Na przykład w niektórych językach wyrażenie "A + B" oznacza "sumę a i B". W innych językach to samo wyrażenie może oznaczać "A lub B". W tym celu należy napisać osobne wersje EE dla każdego języka programowania, który generuje kod obiektu do debugowania w środowisku IDE programu Visual Studio.
 
- Niektóre aspekty pakietu debugowania programu Visual Studio należy interpretować kod w kontekście języka programowania. Na przykład gdy wykonanie zatrzymuje się w punkcie przerwania, wszystkie wyrażenia, które użytkownik wpisał w oknie **czujki,** muszą być oceniane i wyświetlane. Użytkownik może zmienić wartość zmiennej lokalnej, wpisując wyrażenie w oknie **czujki** lub w oknie **Bezpośrednim.**
+ Niektóre aspekty pakietu debugowania programu Visual Studio muszą interpretować kod w kontekście języka programowania. Na przykład po zatrzymaniu wykonywania w punkcie przerwania, wszystkie wyrażenia, które użytkownik wpisze do okna **czujki** , muszą być oceniane i wyświetlane. Użytkownik może zmienić wartość zmiennej lokalnej, wpisując wyrażenie w oknie **czujki** lub w oknie **bezpośrednim** .
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Wspólne środowisko wykonawcze języka i ocena wyrażeń](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md) W tym artykule wyjaśniono, że podczas integrowania zastrzeżonego języka programowania z ide programu Visual Studio, pisanie EE zdolne do oceny wyrażeń w kontekście języka zastrzeżonego umożliwia kompilowanie do języka pośredniego firmy Microsoft (MSIL) bez pisania aparatu debugowania.
+ [Środowisko uruchomieniowe języka wspólnego i Ocena wyrażeń](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md) Wyjaśniono, że podczas integrowania własnościowego języka programowania z programem Visual Studio IDE, pisanie EE może oceniać wyrażenia w kontekście języka własnościowego, dzięki czemu można kompilować do języka pośredniego firmy Microsoft (MSIL) bez konieczności pisania aparatu debugowania.
 
- [Architektura ewaluatora wyrażeń](../../extensibility/debugger/expression-evaluator-architecture.md) W tym artykule omówiono sposób implementacji interfejsów EE wymagane i wywołać wspólnego dostawcy symbolu środowiska wykonawczego języka (SP) i interfejsów spinacza.
+ [Architektura ewaluatora wyrażeń](../../extensibility/debugger/expression-evaluator-architecture.md) W tym artykule omówiono sposób implementacji wymaganych interfejsów EE i wywoływania dostawcy symboli środowiska uruchomieniowego języka wspólnego (SP) i interfejsów spinacza.
 
- [Rejestrowanie oceniającego wyrażenia](../../extensibility/debugger/registering-an-expression-evaluator.md) Zauważa, że EE musi zarejestrować się jako fabryka klas zarówno w środowisku uruchomieniowym języka wspólnego i środowiska wykonawczego programu Visual Studio.
+ [Rejestrowanie ewaluatora wyrażeń](../../extensibility/debugger/registering-an-expression-evaluator.md) Uwagi, że EE muszą zarejestrować się jako fabrykę klasy zarówno w środowisku uruchomieniowym języka wspólnego, jak i w środowiskach środowiska uruchomieniowego programu Visual Studio.
 
- [Implementowanie oceniającego wyrażenie](../../extensibility/debugger/implementing-an-expression-evaluator.md) Opisuje, jak proces oceny wyrażenia obejmuje aparat debugowania (DE), dostawca symbolu (SP), obiekt spinacza i oceniający wyrażenie (EE).
+ [Implementowanie ewaluatora wyrażeń](../../extensibility/debugger/implementing-an-expression-evaluator.md) Opisuje, jak proces oceny wyrażenia obejmuje aparat debugowania (DE), dostawcę symboli (SP), obiekt spinacza oraz ewaluatora wyrażeń (EE).
 
- [Pokaż lokalnych](../../extensibility/debugger/displaying-locals.md) Opisuje, jak po wstrzymaniu wykonywania pakiet debugowania wywołuje DE, aby uzyskać listę zmiennych lokalnych i argumentów.
+ [Wyświetl elementy lokalne](../../extensibility/debugger/displaying-locals.md) Opisuje, jak w przypadku wstrzymania wykonywania pakiet debugowania wywołuje polecenie Cofnij, aby uzyskać listę zmiennych lokalnych i argumentów.
 
- [Ocena wyrażenia okna zegarka](../../extensibility/debugger/evaluating-a-watch-window-expression.md) Dokumenty, jak pakiet debugowania programu Visual Studio wywołuje DE, aby określić bieżącą wartość każdego wyrażenia na liście obserwowanych.
+ [Oceń wyrażenie okna czujki](../../extensibility/debugger/evaluating-a-watch-window-expression.md) Dokumenty, w jaki sposób pakiet debugowania programu Visual Studio wywołuje metodę DE, aby określić bieżącą wartość każdego wyrażenia na liście obserwowanych elementów.
 
- [Zmienianie wartości lokalnego](../../extensibility/debugger/changing-the-value-of-a-local.md) Wyjaśnia, że w zmianie wartości lokalnego, każdy wiersz local okna ma skojarzony obiekt, który zawiera nazwę, typ i bieżącą wartość lokalnego.
+ [Zmień wartość lokalnego](../../extensibility/debugger/changing-the-value-of-a-local.md) Wyjaśniono, że w przypadku zmiany wartości lokalnej każdy wiersz okna zmiennych lokalnych ma skojarzony obiekt, który zawiera nazwę, typ i bieżącą wartość lokalnego.
 
- [Implementowanie wizualizatorów typów i niestandardowych przejańsków](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md) Wyjaśniono, który interfejs musi zostać zaimplementowany za pomocą którego składnika do obsługi wizualizatorów typów i niestandardowych widzów.
+ [Implementowanie wizualizatorów typów i podglądów niestandardowych](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md) Wyjaśnia, który interfejs musi być zaimplementowany przez składnik do obsługi wizualizatorów typów i niestandardowych osób przeglądających.
 
 ## <a name="see-also"></a>Zobacz też
  [Rozszerzalność debugera programu Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

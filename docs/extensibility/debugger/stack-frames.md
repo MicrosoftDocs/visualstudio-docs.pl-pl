@@ -1,5 +1,5 @@
 ---
-title: Ramki stosu | Dokumenty firmy Microsoft
+title: Ramki stosu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,25 +13,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1ea79ad199e20afeb5d2bf1ca6a3cf881c6d51c3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712840"
 ---
 # <a name="stack-frames"></a>Ramki stosu
-W architekturze debugera *ramka stosu:*
+W architekturze debugera, *Ramka stosu*:
 
-- Jest abstrakcja stosu, który zapewnia kontekst wykonywania wątku. Wątek zawsze wykonuje w ramach funkcji. Ramka stosu zawiera zmienne lokalne funkcji i argumenty do niej. W celu debugowania za pomocą programu Visual Studio, język lub środowisko debugowane musi obsługiwać ramki stosu.
+- Jest abstrakcją stosu, który zapewnia kontekst wykonywania wątku. Wątek jest zawsze wykonywany w ramach funkcji. Ramka stosu przechowuje zmienne lokalne funkcji i argumenty. Aby debugować za pomocą programu Visual Studio, debugowany język lub środowisko musi obsługiwać ramki stosu.
 
-- Można zarówno zidentyfikować i opisać siebie i może zwrócić skojarzony wątek. Ramka stosu można również zwrócić kontekst kodu, który reprezentuje bieżący wskaźnik instrukcji i skojarzone konteksty oceny dokumentacji i wyrażenia.
+- Może zarówno identyfikować, jak i opisywanie, a także zwracać skojarzony wątek. Ramka stosu może również zwracać kontekst kodu, który reprezentuje bieżący wskaźnik instrukcji i powiązane z nim dokumenty i kontekst oceny wyrażenia.
 
-- Ma właściwości, które opisują nazwę, typ i wartość zmiennych lokalnych i argumentów i które pojawiają się w różnych oknach debugowania IDE.
+- Ma właściwości opisujące nazwę, typ i wartość zmiennych lokalnych i argumentów, które są wyświetlane w różnych oknach debugowania IDE.
 
-- Jest reprezentowany przez interfejs [IDebugStackFrame2,](../../extensibility/debugger/reference/idebugstackframe2.md) zazwyczaj tworzony przez aparat debugowania (DE) lub maszyny wirtualnej w wyniku wykonywania wątku.
+- Jest reprezentowany przez interfejs [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) , zwykle tworzony przez aparat debugowania (de) lub maszynę wirtualną w ramach wykonywania wątku.
 
 ## <a name="see-also"></a>Zobacz też
 - [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md)
-- [Pojęcia debugera](../../extensibility/debugger/debugger-concepts.md)
+- [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)
 - [Aparat debugowania](../../extensibility/debugger/debug-engine.md)
 - [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)

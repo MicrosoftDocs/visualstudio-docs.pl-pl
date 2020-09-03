@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 05a7f9930dc1619d6f35a6024bd0f754f7caeeb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72643503"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Krok 1. Utworzenie projektu i dodawanie tabeli do formularza
@@ -25,7 +25,7 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
 
 1. Na pasku menu wybierz **plik**, **Nowy**, **projekt**.
 
-2. Jeśli nie używasz programu Visual Studio Express, musisz najpierw wybrać język programowania. Z listy **zainstalowane szablony** wybierz pozycję **Visual C#**  lub **Visual Basic**.
+2. Jeśli nie używasz programu Visual Studio Express, musisz najpierw wybrać język programowania. Z listy **zainstalowane szablony** wybierz pozycję **Visual C#** lub **Visual Basic**.
 
 3. Na liście szablonów projektu wybierz pozycję **Windows Forms aplikacja**, nazwij projekt **MatchingGame**, a następnie wybierz przycisk **OK** .
 
@@ -37,7 +37,7 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
 
 5. Wyświetl Przybornik, wybierając kartę **Przybornik** po lewej stronie IDE.
 
-6. Przeciągnij formant `TableLayoutPanel` z kategorii **kontenery** w przyborniku, a następnie ustaw dla niego następujące właściwości.
+6. Przeciągnij `TableLayoutPanel` formant z kategorii **kontenery** w przyborniku, a następnie ustaw dla niego następujące właściwości.
 
    1. Ustaw właściwość **BackColor** na **CornflowerBlue**. Aby to zrobić, Otwórz okno dialogowe **BackColor** , wybierając strzałkę listy rozwijanej obok właściwości **BackColor** w oknie **Właściwości** .  Następnie wybierz kartę **Sieć Web** w oknie dialogowym **BackColor** , aby wyświetlić listę dostępnych nazw kolorów.
 
@@ -58,7 +58,7 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
 
 7. Należy się upewnić, że TableLayoutPanel jest zaznaczony w edytorze formularza. Aby to sprawdzić, należy zobaczyć **tableLayoutPanel1** w górnej części okna **Właściwości** . Jeśli nie jest zaznaczone, wybierz TableLayoutPanel w formularzu lub wybierz go w kontrolce menu rozwijanego u góry okna **Właściwości** .
 
-    Gdy TableLayoutPanel jest zaznaczone, Otwórz przybornik i Dodaj kontrolkę **etykieta** (znajdującą się w kategorii **Formanty standardowe** ) do lewej górnej komórki TableLayoutPanel. Kontrolka `Label` powinna być teraz zaznaczona w IDE. Ustaw dla niego następujące właściwości.
+    Gdy TableLayoutPanel jest zaznaczone, Otwórz przybornik i Dodaj kontrolkę **etykieta** (znajdującą się w kategorii **Formanty standardowe** ) do lewej górnej komórki TableLayoutPanel. `Label`Kontrolka powinna być teraz zaznaczona w IDE. Ustaw dla niego następujące właściwości.
 
    1. Upewnij się, że właściwość " **BackColor** " etykiety jest ustawiona na **CornflowerBlue**.
 

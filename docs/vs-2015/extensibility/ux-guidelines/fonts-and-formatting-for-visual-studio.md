@@ -9,16 +9,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3e88f314ccdf2b91215fdfe579741591c7eb724d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544212"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Czcionki i formatowanie dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a>Czcionka środowiska
+## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> Czcionka środowiska
  Wszystkie czcionki w programie Visual Studio muszą być widoczne dla użytkownika w celu dostosowania. Jest to wykonywane głównie za pomocą strony **czcionki i kolory** w oknie dialogowym **Narzędzia > opcje** . Trzy główne kategorie ustawień czcionki są następujące:
 
 - **Czcionka środowiska** — Podstawowa czcionka IDE (zintegrowane środowisko programistyczne), używana dla wszystkich elementów interfejsu, w tym okien dialogowych, menu, okien narzędzi i okien dokumentów. Domyślnie czcionka środowiska jest powiązana z czcionką systemową, która jest wyświetlana jako 9 pt Segoe UI w bieżących wersjach systemu Windows. Używanie jednej czcionki dla wszystkich elementów interfejsu pomaga zapewnić spójny wygląd czcionki w całym środowisku IDE.
@@ -34,7 +34,7 @@ ms.locfileid: "85544212"
 
 1. W przypadku tekstu kodu w edytorze Zmień rozmiar z ustawieniem czcionka tekstu kodu i Odpowiedz na poziom powiększenia tekstu edytora.
 
-2. Wszystkie inne elementy interfejsu powinny być powiązane z ustawieniem czcionki środowiska i odpowiadać na wszystkie globalne zmiany w środowisku. Obejmuje to (ale nie ograniczone do):
+2. Wszystkie inne elementy interfejsu powinny być powiązane z ustawieniem czcionki środowiska i odpowiadać na wszystkie globalne zmiany w środowisku. Obejmuje to (ale nie tylko):
 
     - Tekst w menu kontekstowym
 
@@ -90,7 +90,7 @@ window.ShowModal()
 
 ```
 
-### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a>Formatowanie (skalowanie/pogrubienie) odwołania
+### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a> Formatowanie (skalowanie/pogrubienie) odwołania
  Niektóre okna dialogowe wymagają pogrubienia tekstu lub rozmiaru innego niż czcionka środowiska. Wcześniej czcionki o rozmiarze większym od czcionki środowiska były kodowane jako "czcionki środowiskowe + 2" lub podobne. Użycie dostarczonych fragmentów kodu będzie obsługiwać monitory o wysokiej rozdzielczości i upewnij się, że wyświetlany tekst jest zawsze wyświetlany w prawidłowym rozmiarze i wadze (na przykład Light lub Semilight).
 
 > **Uwaga: przed zastosowaniem formatowania upewnij się, że są spełnione wskazówki znajdujące się w [stylu tekstu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
@@ -323,7 +323,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  Aby zresetować czcionkę, kliknij przycisk "Użyj ustawień domyślnych" w obszarze **narzędzia > opcje > środowisku > czcionki i kolory**.
 
-## <a name="text-style"></a><a name="BKMK_TextStyle"></a>Styl tekstu
+## <a name="text-style"></a><a name="BKMK_TextStyle"></a> Styl tekstu
  Styl tekstu odnosi się do rozmiaru czcionki, wagi i wielkości liter. Aby uzyskać wskazówki dotyczące implementacji, zobacz [Font Environment](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
 ### <a name="text-casing"></a>Wielkość liter tekstu

@@ -1,5 +1,5 @@
 ---
-title: Zabezpieczenia dostępu do kodu dla aplikacji ClickOnce | Dokumenty firmy Microsoft
+title: Zabezpieczenia dostępu kodu dla aplikacji ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,77 +24,77 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9fd2d9b6792cae002967c9000474a825bd3a0651
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81649278"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Zabezpieczenia dostępu kodu dla aplikacji ClickOnce
-ClickOnce aplikacje są oparte na .NET Framework i podlegają ograniczeniom zabezpieczeń dostępu do kodu. Z tego powodu ważne jest, aby zrozumieć implikacje zabezpieczeń dostępu do kodu i napisać aplikacje ClickOnce odpowiednio.
+Aplikacje ClickOnce są oparte na .NET Framework i podlegają ograniczeniom zabezpieczeń dostępu kodu. Z tego powodu ważne jest, aby zrozumieć skutki zabezpieczenia dostępu kodu i odpowiednio napisać aplikacje ClickOnce.
 
- Zabezpieczenia dostępu do kodu to mechanizm w programie .NET Framework, który pomaga ograniczyć dostęp, który kod ma do chronionych zasobów i operacji. Należy skonfigurować uprawnienia zabezpieczeń dostępu do kodu dla aplikacji ClickOnce, aby używać strefy odpowiedniej dla lokalizacji instalatora aplikacji. W większości przypadków można wybrać strefę **Internet** dla ograniczonego zestawu uprawnień lub strefę **Lokalny intranet** dla większego zestawu uprawnień.
+ Zabezpieczenia dostępu kodu to mechanizm w .NET Framework, który pomaga ograniczyć dostęp tego kodu do chronionych zasobów i operacji. Należy skonfigurować uprawnienia zabezpieczeń dostępu kodu dla aplikacji ClickOnce, aby używały strefy odpowiedniej dla lokalizacji Instalatora aplikacji. W większości przypadków można wybrać strefę **internetową** dla ograniczonego zestawu uprawnień lub strefy **Lokalny intranet** , aby uzyskać większy zestaw uprawnień.
 
-## <a name="default-clickonce-code-access-security"></a>Domyślne zabezpieczenia dostępu do kodu ClickOnce
- Domyślnie aplikacja ClickOnce otrzymuje uprawnienia pełnego zaufania, gdy jest zainstalowana lub uruchamiana na komputerze klienckim.
+## <a name="default-clickonce-code-access-security"></a>Domyślne zabezpieczenia dostępu kodu ClickOnce
+ Domyślnie aplikacja ClickOnce otrzymuje uprawnienia pełnego zaufania, gdy jest zainstalowany lub uruchamiany na komputerze klienckim.
 
-- Aplikacja, która ma uprawnienia Pełnego zaufania ma nieograniczony dostęp do zasobów, takich jak system plików i rejestr. Potencjalnie umożliwia to wykorzystanie aplikacji (i systemu użytkownika końcowego) przez złośliwy kod.
+- Aplikacja, która ma uprawnienia pełnego zaufania, ma nieograniczony dostęp do zasobów, takich jak system plików i rejestr. Dzięki temu aplikacja (i system użytkownika końcowego) mogą być wykorzystywane przez złośliwy kod.
 
-- Gdy aplikacja wymaga uprawnień pełnego zaufania, użytkownik końcowy może zostać poproszony o przyznanie uprawnień do aplikacji. Oznacza to, że aplikacja nie naprawdę zapewniają clickonce doświadczenie, a monit może potencjalnie być mylące dla mniej doświadczonych użytkowników.
+- Gdy aplikacja wymaga pełnych uprawnień zaufania, użytkownik końcowy może zostać poproszony o przyznanie uprawnień aplikacji. Oznacza to, że aplikacja nie zapewnia środowiska ClickOnce, a monit może być mylący dla mniej doświadczonych użytkowników.
 
   > [!NOTE]
-  > Podczas instalowania aplikacji z nośników wymiennych, takich jak dysk CD-ROM, użytkownik nie jest monitowany. Ponadto administrator sieci może skonfigurować zasady sieciowe, aby użytkownicy nie byli monitowani podczas instalowania aplikacji z zaufanego źródła. Aby uzyskać więcej informacji, zobacz [Omówienie wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md).
+  > W przypadku instalowania aplikacji z nośników wymiennych, takich jak dysk CD-ROM, użytkownik nie jest monitowany. Ponadto administrator sieci może skonfigurować zasady sieciowe, aby użytkownicy nie monitowani o zainstalowanie aplikacji z zaufanego źródła. Aby uzyskać więcej informacji, zobacz [Omówienie wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md).
 
-  Aby ograniczyć uprawnienia dla clickonce aplikacji, można zmodyfikować uprawnienia zabezpieczeń dostępu do kodu dla aplikacji, aby zażądać strefy, która najlepiej pasuje do uprawnień, które wymaga aplikacji. W większości przypadków można wybrać strefę, z której jest wdrażana aplikacja. Na przykład jeśli aplikacja jest aplikacją przedsiębiorstwa, można użyć lokalnej strefy **intranetu.** Jeśli aplikacja jest aplikacją internetową, można użyć strefy **Internet.**
+  Aby ograniczyć uprawnienia aplikacji ClickOnce, można zmodyfikować uprawnienia zabezpieczeń dostępu kodu dla aplikacji w celu zażądania strefy, która najlepiej pasuje do uprawnień wymaganych przez aplikację. W większości przypadków można wybrać strefę, z której aplikacja jest wdrażana. Na przykład jeśli aplikacja jest aplikacją dla przedsiębiorstw, możesz użyć strefy **Lokalny intranet** . Jeśli aplikacja jest aplikacją internetową, możesz użyć strefy **Internet** .
 
 ## <a name="configure-security-permissions"></a>Konfigurowanie uprawnień zabezpieczeń
- Zawsze należy skonfigurować aplikację ClickOnce, aby zażądać odpowiedniej strefy, aby ograniczyć uprawnienia zabezpieczeń dostępu do kodu. Uprawnienia zabezpieczeń można skonfigurować na stronie **Zabezpieczenia** **projektanta projektu**.
+ Należy zawsze skonfigurować aplikację ClickOnce, aby zażądać odpowiedniej strefy w celu ograniczenia uprawnień dostępu kodu. Uprawnienia zabezpieczeń można skonfigurować na stronie **zabezpieczenia** **projektanta projektu**.
 
- Strona **Zabezpieczenia** w **projektancie projektu** zawiera pole wyboru Włącz **kliknięciezadanie zabezpieczeń.** Gdy to pole wyboru jest zaznaczone, żądania uprawnień zabezpieczeń są dodawane do manifestu wdrażania dla aplikacji. W czasie instalacji użytkownik zostanie poproszony o przyznanie uprawnień, jeśli żądane uprawnienia przekraczają domyślne uprawnienia do strefy, z której jest wdrażana aplikacja. Aby uzyskać więcej informacji, zobacz [Jak: Włączanie ustawień zabezpieczeń ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md).
+ Strona **zabezpieczenia** w **projektancie projektu** zawiera pole wyboru **Włącz ustawienia zabezpieczeń ClickOnce** . Gdy to pole wyboru jest zaznaczone, żądania uprawnień zabezpieczeń są dodawane do manifestu wdrożenia dla aplikacji. Podczas instalacji użytkownik zostanie poproszony o przyznanie uprawnień, jeśli żądane uprawnienia przekraczają domyślne uprawnienia dla strefy, z której aplikacja jest wdrażana. Aby uzyskać więcej informacji, zobacz [How to: Enable ClickOnce Security Settings](../deployment/how-to-enable-clickonce-security-settings.md).
 
- Aplikacje wdrożone z różnych lokalizacji są przyznawane różne poziomy uprawnień bez monitowania. Na przykład gdy aplikacja jest wdrażana z Internetu, otrzymuje bardzo restrykcyjny zestaw uprawnień. Po zainstalowaniu z lokalnego intranetu otrzymuje więcej uprawnień, a po zainstalowaniu z dysku CD-ROM otrzymuje uprawnienia pełnego zaufania.
+ Aplikacje wdrożone z różnych lokalizacji uzyskują różne poziomy uprawnień bez monitowania. Na przykład, gdy aplikacja jest wdrażana z Internetu, otrzymuje wysoce restrykcyjny zestaw uprawnień. Po zainstalowaniu z lokalnego intranetu otrzymuje więcej uprawnień i po zainstalowaniu z dysku CD-ROM otrzymuje uprawnienia pełnego zaufania.
 
- Jako punkt wyjścia do konfigurowania uprawnień można wybrać strefę zabezpieczeń z listy **Strefa** na stronie **Zabezpieczenia.** Jeśli aplikacja zostanie potencjalnie wdrożona z więcej niż jednej strefy, wybierz strefę z najmniejszymi uprawnieniami. Aby uzyskać więcej informacji, zobacz [Jak: Ustawianie strefy zabezpieczeń dla aplikacji ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).
+ Jako punkt początkowy konfigurowania uprawnień możesz wybrać strefę zabezpieczeń z listy **stref** na stronie **zabezpieczenia** . Jeśli aplikacja będzie potencjalnie wdrażana z więcej niż jednej strefy, wybierz strefę z najniższymi uprawnieniami. Aby uzyskać więcej informacji, zobacz [jak to zrobić: Ustawianie strefy zabezpieczeń dla aplikacji ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).
 
- Właściwości, które można ustawić różnią się w zależności od zestawu uprawnień; nie wszystkie zestawy uprawnień mają konfigurowalne właściwości. Aby uzyskać więcej informacji na temat pełnej listy <xref:System.Security.Permissions>uprawnień, o które może zażądać aplikacja, zobacz . Aby uzyskać więcej informacji na temat ustawiania uprawnień do strefy niestandardowej, zobacz [Jak: Ustawianie niestandardowych uprawnień dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).
+ Właściwości, które można ustawić, różnią się w zależności od zestawu uprawnień; nie wszystkie zestawy uprawnień mają konfigurowalne właściwości. Aby uzyskać więcej informacji na temat pełnej listy uprawnień, których aplikacja może żądać, zobacz <xref:System.Security.Permissions> . Aby uzyskać więcej informacji dotyczących sposobu ustawiania uprawnień dla strefy niestandardowej, zobacz [How to: Set Custom Permissions for a ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).
 
 ## <a name="debug-an-application-that-has-restricted-permissions"></a>Debugowanie aplikacji z ograniczonymi uprawnieniami
- Jako deweloper najprawdopodobniej uruchamiasz komputer deweloperski z uprawnieniami Pełnego zaufania. W związku z tym nie są widoczne te same wyjątki zabezpieczeń podczas debugowania aplikacji, które użytkownicy mogą zobaczyć po uruchomieniu go z ograniczonymi uprawnieniami.
+ Jako deweloper, najprawdopodobniej uruchamiasz komputer deweloperski z pełnymi uprawnieniami zaufania. W związku z tym te same wyjątki zabezpieczeń nie są wyświetlane podczas debugowania aplikacji, które użytkownicy mogą zobaczyć po ich uruchomieniu z ograniczonymi uprawnieniami.
 
- Aby wychwytywać te wyjątki, należy debugować aplikację z tymi samymi uprawnieniami co użytkownik końcowy. Debugowanie z ograniczonymi uprawnieniami można włączyć na stronie **Zabezpieczenia** **projektanta projektu**.
+ Aby przechwytywać te wyjątki, należy debugować aplikację z takimi samymi uprawnieniami jak użytkownik końcowy. Debugowanie z ograniczonymi uprawnieniami można włączyć na stronie **zabezpieczenia** **projektanta projektu**.
 
- Podczas debugowania aplikacji z ograniczonymi uprawnieniami wyjątki będą zgłaszane dla wszelkich żądań zabezpieczeń kodu, które nie zostały włączone na stronie **Zabezpieczenia.** Pojawi się pomocnik wyjątku, podając sugestie dotyczące modyfikowania kodu, aby zapobiec wyjątek.
+ Podczas debugowania aplikacji z ograniczonymi uprawnieniami wyjątki zostaną zgłoszone w przypadku wszelkich wymagań dotyczących zabezpieczeń kodu, które nie zostały włączone na stronie **zabezpieczenia** . Zostanie wyświetlona pomocnik wyjątku z sugestiami dotyczącymi sposobu modyfikacji kodu w celu zapobieżenia wyjątku.
 
- Ponadto podczas pisania kodu funkcja IntelliSense w Edytorze kodu wyłączy wszystkie elementy członkowskie, które nie są uwzględnione w skonfigurowanych uprawnieniach zabezpieczeń.
+ Ponadto podczas pisania kodu funkcja IntelliSense w edytorze kodu wyłącza wszystkie elementy członkowskie, które nie są uwzględnione w skonfigurowanych uprawnieniach zabezpieczeń.
 
- Aby uzyskać więcej informacji, zobacz [Jak: Debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](securing-clickonce-applications.md).
+ Aby uzyskać więcej informacji, zobacz [How to: Debug The ClickOnce Application z ograniczonymi uprawnieniami](securing-clickonce-applications.md).
 
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Uprawnienia zabezpieczeń dla aplikacji hostowanych w przeglądarce
  Program Visual Studio udostępnia następujące typy projektów dla aplikacji Windows Presentation Foundation (WPF):
 
-- Aplikacja WPF dla systemu Windows
+- Aplikacja WPF systemu Windows
 
 - Aplikacja przeglądarki sieci Web WPF
 
 - Biblioteka kontrolek niestandardowych WPF
 
-- Biblioteka usług WPF
+- Biblioteka usługi WPF
 
-  Z tych typów projektu tylko aplikacje przeglądarki sieci Web WPF są hostowane w przeglądarce sieci Web i dlatego wymagają specjalnych ustawień wdrażania i zabezpieczeń. Domyślne ustawienia zabezpieczeń dla tych aplikacji są następujące:
+  W przypadku tych typów projektu tylko aplikacje przeglądarki sieci Web WPF są hostowane w przeglądarce internetowej i dlatego wymagają specjalnego wdrożenia i ustawień zabezpieczeń. Domyślne ustawienia zabezpieczeń dla tych aplikacji są następujące:
 
 - **Włącz ustawienia zabezpieczeń ClickOnce**
 
-- **Jest to aplikacja częściowego zaufania**
+- **To jest częściowo zaufana aplikacja**
 
-- **Strefa internetowa** (z domyślnym ustawieniem uprawnień dla wybranych aplikacji przeglądarki sieci Web WPF)
+- **Strefa internetowa** (z domyślnym zestawem uprawnień dla wybranych aplikacji przeglądarki sieci Web WPF)
 
-  W oknie dialogowym **Zaawansowane ustawienia zabezpieczeń** pole wyboru **Debugowanie tej aplikacji z wybranym zestawem uprawnień** jest zaznaczone i wyłączone. Jest tak, ponieważ debugowania w strefie nie można wyłączyć dla aplikacji hostowanych przez przeglądarkę.
+  W oknie dialogowym **Zaawansowane ustawienia zabezpieczeń** pole wyboru **Debuguj tę aplikację z wybranym zestawem uprawnień** jest zaznaczone i wyłączone. Dzieje się tak dlatego, że debugowanie w strefie nie może być wyłączone dla aplikacji hostowanych w przeglądarce.
 
 ## <a name="see-also"></a>Zobacz też
 - [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)
-- [Jak: Włącz ustawienia zabezpieczeń ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
-- [Jak: Ustawianie strefy zabezpieczeń dla aplikacji ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [Jak: Ustawianie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [Jak: Debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](securing-clickonce-applications.md)
+- [Instrukcje: Włączanie ustawień zabezpieczeń technologii ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
+- [Instrukcje: Ustawianie strefy zabezpieczeń dla aplikacji ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [Instrukcje: Ustawianie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Instrukcje: debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](securing-clickonce-applications.md)
 - [Omówienie wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md)
 - [Strona zabezpieczeń, Projektant projektu](../ide/reference/security-page-project-designer.md)

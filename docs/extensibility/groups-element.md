@@ -1,5 +1,5 @@
 ---
-title: Element grupy | Dokumenty firmy Microsoft
+title: Grupy — element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a6383c3c7a28f9aa7778fddcbfe36b237d21323f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711173"
 ---
-# <a name="groups-element"></a>Element Grupy
-Zawiera wpisy definiujące grupy poleceń programu VSPackage.
+# <a name="groups-element"></a>Groups, element
+Zawiera wpisy, które definiują grupy poleceń elementu pakietu VSPackage.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,20 +37,20 @@ Zawiera wpisy definiujące grupy poleceń programu VSPackage.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Warunek|Element opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
 |[Element grupy](../extensibility/group-element.md)|Reprezentuje pojedynczą grupę poleceń.|
-|[Element Grupy](../extensibility/groups-element.md)|Zawiera wpisy definiujące grupy poleceń programu VSPackage.|
+|[Groups, element](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy poleceń elementu pakietu VSPackage.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element Polecenia](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi VSPackage.|
+|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage.|
 
 ## <a name="example"></a>Przykład
 
@@ -63,5 +63,5 @@ Zawiera wpisy definiujące grupy poleceń programu VSPackage.
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Jak vspackages dodać elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,5 +1,5 @@
 ---
-title: Dodatkowe wytyczne dotyczące kontroli źródeł dla projektów i redaktorów | Dokumenty firmy Microsoft
+title: Dodatkowe wskazówki dotyczące kontroli źródła dla projektów i edytorów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,27 +11,27 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 181f6c10ff7ce95cd3a37151f117353d1bb47d41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710109"
 ---
-# <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Dodatkowe wytyczne dotyczące kontroli źródeł dla projektów i edytorów
-Istnieje wiele wytycznych, które projekty i edytory powinny stosować się do w celu obsługi kontroli źródła.
+# <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Dodatkowe wskazówki dotyczące kontroli źródła dla projektów i edytorów
+Istnieje kilka wytycznych, które są zgodne z projektami i edytorami w celu zapewnienia obsługi kontroli źródła.
 
 ## <a name="guidelines"></a>Wytyczne
- Projekt lub edytor należy również wykonać następujące czynności w celu obsługi kontroli źródła:
+ Aby umożliwić obsługę kontroli źródła, projekt lub Edytor powinien również wykonać następujące czynności:
 
 |Obszar|Projekt|Edytor|Szczegóły|
 |----------|-------------|------------|-------------|
-|Prywatne kopie plików|X||Środowisko obsługuje prywatne kopie plików. Oznacza to, że każda osoba zarejestrowana w projekcie ma własną kopię prywatną plików w tym projekcie.|
-|Trwałość ANSI/Unicode|X|X|Jeśli piszesz kod trwałości, utrwalić pliki w formularzu ANSI, ponieważ większość programów kontroli źródła nie obsługuje obecnie Unicode.|
-|Wyliczaj pliki|X||Projekt musi zawierać określoną listę wszystkich plików w nim i musi być w <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> stanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> wyliczyć listę plików przy użyciu lub (VSH_PROPID_First_Child/Next_Sibling). Projekt należy również uwidaczniać nazwy elementów za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetMkDocument%2A> jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A> implementacji i wyszukiwania nazw pomocy technicznej (w tym plików specjalnych) za pośrednictwem jego implementacji.|
-|Format tekstu|X|X|Jeśli to możliwe, pliki powinny być w formacie tekstowym do obsługi scalania różnych wersji. Pliki, które nie są w formacie tekstowym, nie mogą być później scalane z innymi wersjami pliku. Preferowanym formatem tekstu jest XML.|
-|Oparte na referencjach|X||Projekty oparte na odniesieniach są łatwo obsługiwane w kontroli źródła. Jednak projekty oparte na katalogu są również obsługiwane przez kontrolę źródła, o ile projekt może utworzyć listę swoich plików na żądanie, niezależnie od tego, czy te pliki istnieją na dysku. Podczas otwierania projektu z kontroli źródła, plik projektu jest przenoszony najpierw przed dowolnym z jego plików.|
-|Utrwalanie obiektów i właściwości w przewidywalnej kolejności|X|X|Utrwalić pliki w przewidywalnej kolejności, takich jak kolejność alfabetyczna, aby ułatwić scalanie.|
-|Załaduj ponownie|X|X|Gdy plik zmieni się na dysku, edytor musi mieć możliwość ponownego załadowania go. Gdy uczestniczysz w kontroli źródła, środowisko będzie ponownie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> załadowywania danych dla Ciebie, wywołując implementacji. Najtrudniejszy przypadek przeładowania jest, gdy wyewidencjonowanie występuje, gdy zostały<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> wywołane IVsQueryEditQuerySave:: i przetwarzania informacji. Jednak kod ponownego ładowania musi być w stanie uruchomić w tej sytuacji.<br /><br /> Środowisko automatycznie ponownie ładuje pliki projektu. Jednak projekt musi <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> zostać zaimplementowany, jeśli ma zagnieżdżone hierarchie w celu obsługi ponownego ładowania zagnieżdżonych plików projektu.|
+|Prywatne kopie plików|X||Środowisko obsługuje prywatne kopie plików. Oznacza to, że każda osoba zarejestrowana w projekcie ma swoją prywatną kopię plików w tym projekcie.|
+|Trwałość ANSI/Unicode|X|X|Jeśli zapiszesz kod trwałości, Utrwalaj pliki w postaci ANSI, ponieważ większość programów kontroli źródła nie obsługuje obecnie standardu Unicode.|
+|Wyliczanie plików|X||Projekt musi zawierać określoną listę wszystkich plików w nim i musi być w stanie wyliczyć listę plików przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (VSH_PROPID_First_Child/Next_Sibling). Projekt powinien również ujawniać nazwy elementów za pomocą jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetMkDocument%2A> implementacji i obsługiwać wyszukiwanie nazw (w tym pliki specjalne) przez jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A> implementację.|
+|Format tekstu|X|X|Jeśli to możliwe, pliki powinny być w formacie tekstowym, aby obsługiwać scalanie różnych wersji. Pliki, które nie są w formacie tekstowym, nie mogą być scalane z innymi wersjami plików później. Preferowanym formatem tekstu jest XML.|
+|Oparta na odwołaniach|X||Projekty oparte na odwołaniach są łatwo obsługiwane w kontroli źródła. Jednak projekty oparte na katalogach są również obsługiwane przez kontrolę źródła, tak długo, jak projekt może generować listę swoich plików na żądanie, niezależnie od tego, czy te pliki istnieją na dysku. Podczas otwierania projektu z kontroli źródła plik projektu jest najpierw umieszczany przed dowolnym z jego plików.|
+|Utrwalanie obiektów i właściwości w kolejności przewidywalnej|X|X|Utrwalaj pliki w przewidywalnej kolejności, takiej jak kolejność alfabetyczna, aby ułatwić scalanie.|
+|Załaduj ponownie|X|X|Gdy plik jest zmieniany na dysku, Edytor musi mieć możliwość jego ponownego załadowania. Gdy użytkownik uczestniczy w kontroli źródła, środowisko będzie ponownie ładować dane przez wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementacji. Najbardziej trudnym przypadkiem ponownego załadowania jest to, że wyewidencjonowanie odbywa się po wywołaniu IVsQueryEditQuerySave:: <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> i przetwarza informacje. Jednak kod ponownego załadowania musi być w stanie działać w tej sytuacji.<br /><br /> Środowisko automatycznie ponownie ładuje pliki projektu. Jednak projekt musi implementować, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> Jeśli ma zagnieżdżone hierarchie w celu obsługi ponownego ładowania zagnieżdżonych plików projektu.|
 
 ## <a name="see-also"></a>Zobacz też
-- [Kontrola źródła pomocy technicznej](../../extensibility/internals/supporting-source-control.md)
+- [Obsługa kontroli źródła](../../extensibility/internals/supporting-source-control.md)

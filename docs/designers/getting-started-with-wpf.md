@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 350b43741ec7e5646eefce225ecd157b6781ada1
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328438"
 ---
 # <a name="get-started-with-wpf"></a>Rozpoczynanie pracy z aparatem WPF
@@ -23,9 +23,9 @@ Ta sekcja zawiera tematy, które wprowadzają i ułatwiają rozpoczęcie pracy z
 
 ## <a name="where-should-i-start"></a>Gdzie należy zacząć?
 
-|Podmiot|Artykuły|
+|Temat|Artykuły|
 |-|-|
-|Chcę przeskoczyć do prawej strony...|[Przewodnik: moja pierwsza aplikacja klasyczna WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
+|Chcę przeskoczyć do prawej strony...|[Przewodnik: Moja pierwsza aplikacja klasyczna WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |Chcę porównać narzędzia do projektowania XAML...|[Projektuj kod XAML w programie Visual Studio i Blend for Visual Studio](../xaml-tools/designing-xaml-in-visual-studio.md)|
 |Jesteś nowym w programie .NET?|[.NET — przewodnik](/dotnet/standard/)<br /><br />[Podstawy aplikacji](/dotnet/standard/application-essentials)<br /><br />[Wprowadzenie do języka Visual C #](../ide/quickstart-csharp-console.md)|
 |Więcej informacji na temat platformy WPF...|[Omówienie podsystemu WPF](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[Przegląd XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[Formanty](/dotnet/framework/wpf/controls/)<br /><br />[Omówienie powiązań danych](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[Powiązanie danych WPF za pomocą LINQ to XML](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|

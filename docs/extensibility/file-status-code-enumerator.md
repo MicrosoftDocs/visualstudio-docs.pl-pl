@@ -1,5 +1,5 @@
 ---
-title: Wyliczacz kodu stanu pliku | Dokumenty firmy Microsoft
+title: Moduł wyliczający kod stanu pliku | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 184c8686ea184aea2cbd0a64873718cbe72f7615
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711450"
 ---
-# <a name="file-status-code-enumerator"></a>Wyliczacz kodu stanu pliku
-Wyliczacz `SccStatus` zawiera nazwane wartości stałe, które określają stan pliku w systemie kontroli źródła. To wyliczenie jest używane przez [SccQueryInfo](../extensibility/sccqueryinfo-function.md) i funkcji wywołania zwrotnego `POPLISTFUNC` (zobacz [POPLISTFUNC](../extensibility/poplistfunc.md) szczegóły).
+# <a name="file-status-code-enumerator"></a>Moduł wyliczający kod stanu pliku
+`SccStatus`Moduł wyliczający zawiera nazwane wartości stałe, które określają stan pliku w systemie kontroli źródła. To wyliczenie jest używane przez [SccQueryInfo](../extensibility/sccqueryinfo-function.md) i `POPLISTFUNC` funkcję wywołania zwrotnego (zobacz [POPLISTFUNC](../extensibility/poplistfunc.md) , aby uzyskać szczegółowe informacje).
 
 ## <a name="syntax"></a>Składnia
 
@@ -49,37 +49,37 @@ enum SccStatus {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
- nie można było uzyskać statusu SCC_STATUS_INVALID; nie polegaj na nim.
+ Nie można uzyskać stanu SCC_STATUS_INVALID; nie należy polegać na nim.
 
- SCC_STATUS_NOTCONTROLLED Plik nie jest pod kontrolą źródła.
+ Plik SCC_STATUS_NOTCONTROLLED nie znajduje się pod kontrolą źródła.
 
- SCC_STATUS_CONTROLLED Plik jest pod kontrolą źródła.
+ Plik SCC_STATUS_CONTROLLED jest pod kontrolą źródła.
 
- SCC_STATUS_CHECKEDOUT Wyewidencjonowany przez bieżącego użytkownika na dysku lokalnym.
+ SCC_STATUS_CHECKEDOUT wyewidencjonowany przez bieżącego użytkownika na dysku lokalnym.
 
- SCC_STATUS_OUTOTHER Plik jest wyewidencjonowany przez innego użytkownika.
+ Plik SCC_STATUS_OUTOTHER został wyewidencjonowany przez innego użytkownika.
 
- SCC_STATUS_OUTEXCLUSIVE Plik jest wyłącznie wyewidencjonowany.
+ Plik SCC_STATUS_OUTEXCLUSIVE jest wyewidencjonowany na wyłączność.
 
- SCC_STATUS_OUTMULTIPLE plik jest wyewidencjonowany przez więcej niż jednego użytkownika.
+ Plik SCC_STATUS_OUTMULTIPLE został wyewidencjonowany przez więcej niż jednego użytkownika.
 
- SCC_STATUS_OUTOFDATE Plik nie jest najnowszy.
+ SCC_STATUS_OUTOFDATE plik nie jest najnowszy.
 
- SCC_STATUS_DELETED Plik został usunięty z projektu.
+ Plik SCC_STATUS_DELETED został usunięty z projektu.
 
- SCC_STATUS_LOCKED plik jest zablokowany; nie więcej wersji dozwolone.
+ Plik SCC_STATUS_LOCKED jest zablokowany; nie ma więcej wersji.
 
- SCC_STATUS_MERGED Plik został scalony, ale nie został jeszcze naprawiony/zweryfikowany.
+ Plik SCC_STATUS_MERGED został scalony, ale nie został jeszcze ustalony/zweryfikowany.
 
- SCC_STATUS_SHARED Plik jest współużytkowana między projektami.
+ Plik SCC_STATUS_SHARED jest współużytkowany między projektami.
 
- SCC_STATUS_PINNED Plik jest współużytkowana w wersji jawnej.
+ Plik SCC_STATUS_PINNED jest udostępniany w wersji jawnej.
 
- SCC_STATUS_MODIFIED Plik został zmodyfikowany/uszkodzony/naruszony.
+ Plik SCC_STATUS_MODIFIED został zmodyfikowany/złamany/naruszony.
 
- SCC_STATUS_OUTBYUSER Plik jest wyewidencjonowany przez bieżącego użytkownika.
+ Plik SCC_STATUS_OUTBYUSER został wyewidencjonowany przez bieżącego użytkownika.
 
- SCC_STATUS_NOMERGE plik nigdy nie może być scalany z i nie muszą być zapisywane przed GET.
+ Plik SCC_STATUS_NOMERGE nigdy nie może zostać scalony z i nie musi być zapisany przed GET.
 
  SCC_STATUS_RESERVED_1 zarezerwowane do użytku wewnętrznego.
 

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 051a041c245fae55e3d4759130c145c662734aa8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544277"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: Żądania LinkDemand dla typu wymagają żądań dziedziczenia

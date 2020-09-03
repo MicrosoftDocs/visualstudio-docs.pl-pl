@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 06295c1b158fe25b481b2aa036f8448895c546f5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544706"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Intensywne stronicowanie aktywnej pamięci na dysk
@@ -26,7 +26,7 @@ ms.locfileid: "85544706"
 |-|-|
 |Identyfikator reguły|DA0017|
 |Kategoria|Pamięć i stronicowanie|
-|Metoda profilowania|Wszystkie|
+|Metoda profilowania|Wszystko|
 |Komunikat|Występuje wysoki wskaźnik stronicowania aktywnej pamięci na dysk. Aplikacja może być powiązana z pamięcią.|
 |Typ reguły|Informacje|
 

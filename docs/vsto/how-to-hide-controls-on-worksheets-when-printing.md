@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 336723f60a2cd90dc63db24e981dd06e0388cb9c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544810"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Instrukcje: ukrywanie kontrolek w arkuszach podczas drukowania
@@ -41,7 +41,7 @@ ms.locfileid: "85544810"
 
 3. W oknie **Właściwości** Ustaw <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> Właściwość na **false**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
 - [Kontrolki Windows Forms w dokumentach pakietu Office — omówienie](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Instrukcje: Dodawanie formantów Windows Forms do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

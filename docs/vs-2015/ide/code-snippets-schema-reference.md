@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 67bc1a18b4e4cbfdf69fe917c0d0fdff09832983
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545031"
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kodu — Odwołanie do schematu
@@ -41,7 +41,7 @@ Fragmenty kodu IntelliSense to wstępnie utworzone fragmenty kodu, które są go
 |[Element Function](../ide/code-snippets-schema-reference.md#function)|[Element obiektu](../ide/code-snippets-schema-reference.md#object)|[Element adresu URL](../ide/code-snippets-schema-reference.md#url)|
 |[Element nagłówka](../ide/code-snippets-schema-reference.md#header)|[Reference — element](../ide/code-snippets-schema-reference.md#reference)||
 
-## <a name="assembly-element"></a><a name="assembly"></a>Element Assembly
+## <a name="assembly-element"></a><a name="assembly"></a> Element Assembly
  Określa nazwę zestawu, do którego się odwołuje fragment kodu.
 
 > [!NOTE]
@@ -61,7 +61,7 @@ Fragmenty kodu IntelliSense to wstępnie utworzone fragmenty kodu, które są go
 
  Wartość tekstowa jest wymagana. Tekst określa zestaw, do którego odwołuje się fragment kodu.
 
-## <a name="author-element"></a><a name="author"></a>Author — element
+## <a name="author-element"></a><a name="author"></a> Author — element
  Określa nazwę autora fragmentu kodu. **Menedżer fragmentów kodu** wyświetla nazwę przechowywaną w `Author` elemencie fragmentu kodu.
 
 ```xml
@@ -77,10 +77,10 @@ Fragmenty kodu IntelliSense to wstępnie utworzone fragmenty kodu, które są go
 
  Wartość tekstowa jest wymagana. Tekst określa autora fragmentu kodu.
 
-## <a name="code-element"></a><a name="code"></a>Element kodu
+## <a name="code-element"></a><a name="code"></a> Element kodu
  Stanowi kontener dla krótkich bloków kodu.
 
- Dwa zastrzeżone słowa są dostępne do użycia w tekście `Code` elementu: `$end$` i `$selected$` . `$end$`oznacza lokalizację, w której ma zostać umieszczony kursor po wstawieniu fragmentu kodu. `$selected$`reprezentuje tekst zaznaczony w dokumencie, który ma zostać wstawiony do fragmentu, gdy jest wywoływany. Na przykład, w którym znajduje się fragment kodu zawierający:
+ Dwa zastrzeżone słowa są dostępne do użycia w tekście `Code` elementu: `$end$` i `$selected$` . `$end$` oznacza lokalizację, w której ma zostać umieszczony kursor po wstawieniu fragmentu kodu. `$selected$` reprezentuje tekst zaznaczony w dokumencie, który ma zostać wstawiony do fragmentu, gdy jest wywoływany. Na przykład, w którym znajduje się fragment kodu zawierający:
 
 ```xml
 $selected$ is a great color.
@@ -146,7 +146,7 @@ is a great color. I love Blue.
 
  Wartość tekstowa jest wymagana. Tekst określa kod, łącznie z literałami i obiektami, którego można używać podczas wstawiania tego fragmentu do projektu.
 
-## <a name="codesnippet-element"></a><a name="codesnippet"></a>CodeSnippet, element
+## <a name="codesnippet-element"></a><a name="codesnippet"></a> CodeSnippet, element
  Umożliwia określenie nagłówka oraz wielu fragmentów kodu IntelliSense, które można wstawiać do plików kodu programu Visual Studio.
 
 ```xml
@@ -170,7 +170,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[CodeSnippets, element](../ide/code-snippets-schema-reference.md#codesnippets)|Element główny schematu XML fragmentu kodu.|
 
-## <a name="codesnippets-element"></a><a name="codesnippets"></a>CodeSnippets, element
+## <a name="codesnippets-element"></a><a name="codesnippets"></a> CodeSnippets, element
  Grupuje elementy [elementu CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet). `CodeSnippets`Element jest elementem głównym schematu XML fragmentu kodu.
 
 ```xml
@@ -184,7 +184,7 @@ is a great color. I love Blue.
 |-------------------|-----------------|
 |[CodeSnippet, element](../ide/code-snippets-schema-reference.md#codesnippet)|Element opcjonalny. Element nadrzędny dla wszystkich danych fragmentu kodu. Element może mieć zero lub więcej `CodeSnippet` elementów `CodeSnippets` .|
 
-## <a name="declarations-element"></a><a name="declarations"></a>Element deklaracji
+## <a name="declarations-element"></a><a name="declarations"></a> Element deklaracji
  Określa literały i obiekty tworzące sekcje fragmentu kodu, które można edytować.
 
 ```xml
@@ -204,7 +204,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Element fragmentu kodu](../ide/code-snippets-schema-reference.md#snippet)|Zawiera odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.|
 
-## <a name="default-element"></a><a name="default"></a>Element domyślny
+## <a name="default-element"></a><a name="default"></a> Element domyślny
  Określa domyślną wartość literału lub obiektu fragmentu kodu IntelliSense.
 
 ```xml
@@ -221,7 +221,7 @@ is a great color. I love Blue.
 
  Wartość tekstowa jest wymagana. Ten tekst określa domyślną wartość literału lub obiektu wypełniającego pola fragment kodu, który można edytować.
 
-## <a name="description-element"></a><a name="description"></a>Description — element
+## <a name="description-element"></a><a name="description"></a> Description — element
  Określa opisowe informacje o zawartości fragmentu kodu IntelliSense.
 
 ```xml
@@ -236,7 +236,7 @@ is a great color. I love Blue.
 
  Wartość tekstowa jest wymagana. Ten tekst opisuje fragment kodu.
 
-## <a name="function-element"></a><a name="function"></a>Element Function
+## <a name="function-element"></a><a name="function"></a> Element Function
  Określa funkcję do wykonania, gdy w programie Visual Studio na literale lub obiekcie zostanie ustawiony fokus.
 
 > [!NOTE]
@@ -255,7 +255,7 @@ is a great color. I love Blue.
 
  Wartość tekstowa jest wymagana. Ten tekst określa funkcję do wykonania, gdy w programie Visual Studio na literale lub polu obiektu zostanie ustawiony fokus.
 
-## <a name="header-element"></a><a name="header"></a>Element nagłówka
+## <a name="header-element"></a><a name="header"></a> Element nagłówka
  Zawiera ogólne informacje o fragmencie kodu IntelliSense.
 
 ```xml
@@ -285,7 +285,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[CodeSnippet, element](../ide/code-snippets-schema-reference.md#codesnippet)|Element nadrzędny dla wszystkich danych fragmentu kodu.|
 
-## <a name="helpurl-element"></a><a name="helpurl"></a>HelpUrl, element
+## <a name="helpurl-element"></a><a name="helpurl"></a> HelpUrl, element
  Określa adres URL strony zawierającej poszerzone informacje o fragmencie kodu.
 
 > [!NOTE]
@@ -304,7 +304,7 @@ is a great color. I love Blue.
 
  Wartość tekstowa jest opcjonalna. Ten tekst określa adres URL strony, na której można znaleźć więcej informacji o fragmencie kodu.
 
-## <a name="id-element"></a><a name="id"></a>ID — element
+## <a name="id-element"></a><a name="id"></a> ID — element
  Określa unikatowy identyfikator `Literal` `Object` elementu lub. Żadne dwa literały lub obiekty w tym samym fragmencie kodu nie mogą mieć tej samej wartości tekstowej w swoich `ID` elementach. Literały i obiekty nie mogą zawierać `ID` elementu z wartością końcową. Wartość `$end$` jest zarezerwowana i jest używana do oznaczania lokalizacji kursora po wstawieniu fragmentu kodu.
 
 ```xml
@@ -321,7 +321,7 @@ is a great color. I love Blue.
 
  Wartość tekstowa jest wymagana. Ten tekst określa unikatowy identyfikator obiektu lub literału.
 
-## <a name="import-element"></a><a name="import"></a>Importuj element
+## <a name="import-element"></a><a name="import"></a> Importuj element
  Określa zaimportowaną przestrzeń nazw używaną przez fragment kodu IntelliSense.
 
 > [!NOTE]
@@ -342,7 +342,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Imports — element](../ide/code-snippets-schema-reference.md#imports)|Element grupujący dla elementów **importu** .|
 
-## <a name="imports-element"></a><a name="imports"></a>Imports — element
+## <a name="imports-element"></a><a name="imports"></a> Imports — element
  Grupuje poszczególne `Import` elementy.
 
 > [!NOTE]
@@ -362,7 +362,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Element fragmentu kodu](../ide/code-snippets-schema-reference.md#snippet)|Zawiera odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.|
 
-## <a name="keyword-element"></a><a name="keyword"></a>Element słowo kluczowe
+## <a name="keyword-element"></a><a name="keyword"></a> Element słowo kluczowe
  Określa niestandardowe słowo kluczowe fragmentu kodu. Słowa kluczowe fragmentu kodu są wykorzystywane przez program Visual Studio. Stanowią standardowy mechanizm, przy użyciu którego dostawcy treści internetowych mogą dodawać słowa kluczowe na potrzeby wyszukiwania lub kategoryzacji.
 
 ```xml
@@ -377,7 +377,7 @@ is a great color. I love Blue.
 
  Wartość tekstowa jest wymagana. Słowo kluczowe fragmentu kodu.
 
-## <a name="keywords-element"></a><a name="keywords"></a>Keywords — element
+## <a name="keywords-element"></a><a name="keywords"></a> Keywords — element
  Grupuje poszczególne `Keyword` elementy. Słowa kluczowe fragmentu kodu są wykorzystywane przez program Visual Studio. Stanowią standardowy mechanizm, przy użyciu którego dostawcy treści internetowych mogą dodawać słowa kluczowe na potrzeby wyszukiwania lub kategoryzacji.
 
 ```xml
@@ -395,10 +395,10 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Element nagłówka](../ide/code-snippets-schema-reference.md#header)|Zawiera ogólne informacje o fragmencie kodu.|
 
-## <a name="literal-element"></a><a name="literal"></a>Literal — element
+## <a name="literal-element"></a><a name="literal"></a> Literal — element
  Definiuje literały fragmentu kodu, które można edytować. `Literal`Element jest używany do identyfikowania zastąpienia dla fragmentu kodu, który jest całkowicie zawarty w fragmencie, ale prawdopodobnie zostanie dostosowany po wstawieniu go do kodu. Jako literały należy na przykład deklarować ciągi literałowe, wartości liczbowe i nazwy niektórych zmiennych.
 
- Literały i obiekty nie mogą zawierać elementu **ID** z wartością wybraną lub końcową. Wartość `$selected$` reprezentuje tekst zaznaczony w dokumencie, który ma zostać wstawiony do fragmentu kodu, gdy jest wywoływany. `$end$`oznacza lokalizację, w której ma zostać umieszczony kursor po wstawieniu fragmentu kodu.
+ Literały i obiekty nie mogą zawierać elementu **ID** z wartością wybraną lub końcową. Wartość `$selected$` reprezentuje tekst zaznaczony w dokumencie, który ma zostać wstawiony do fragmentu kodu, gdy jest wywoływany. `$end$` oznacza lokalizację, w której ma zostać umieszczony kursor po wstawieniu fragmentu kodu.
 
 ```xml
 <Literal Editable="true/false">
@@ -424,7 +424,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Element deklaracji](../ide/code-snippets-schema-reference.md#declarations)|Zawiera literały i obiekty fragmentu kodu, które można edytować.|
 
-## <a name="namespace-element"></a><a name="namespace"></a>Element Namespace
+## <a name="namespace-element"></a><a name="namespace"></a> Element Namespace
  Określa przestrzeń nazw, którą należy zaimportować, aby fragment kodu został skompilowany i działał. Przestrzeń nazw określona w `Namespace` elemencie jest automatycznie dodawana do `Imports` instrukcji na początku kodu, jeśli jeszcze nie istnieje.
 
 > [!NOTE]
@@ -442,7 +442,7 @@ is a great color. I love Blue.
 
  Wartość tekstowa jest wymagana. Ten tekst określa obszar nazw, wstawki zakłada jest importowany.
 
-## <a name="object-element"></a><a name="object"></a>Element obiektu
+## <a name="object-element"></a><a name="object"></a> Element obiektu
  Definiuje obiekty fragmentu kodu, które można edytować. `Object`Element jest używany do identyfikowania elementu, który jest wymagany przez fragment kodu, ale prawdopodobnie zostanie zdefiniowany poza fragmentem. Na przykład formanty interfejsu Windows Forms, formanty środowiska ASP.NET, wystąpienia obiektów i wystąpienia typów powinny być deklarowane jako obiekty. Deklaracje obiektów wymagają określenia typu, który jest wykonywany przy użyciu `Type` elementu.
 
 ```xml
@@ -471,7 +471,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Element deklaracji](../ide/code-snippets-schema-reference.md#declarations)|Zawiera literały i obiekty fragmentu kodu, które można edytować.|
 
-## <a name="reference-element"></a><a name="reference"></a>Reference — element
+## <a name="reference-element"></a><a name="reference"></a> Reference — element
  Określa informacje o odwołaniach do zestawów wymaganych przez fragment kodu.
 
 > [!NOTE]
@@ -493,7 +493,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[References — element](../ide/code-snippets-schema-reference.md#references)|Element grupujący dla `Reference` elementów.|
 
-## <a name="references-element"></a><a name="references"></a>References — element
+## <a name="references-element"></a><a name="references"></a> References — element
  Grupuje poszczególne `Reference` elementy.
 
 > [!NOTE]
@@ -513,7 +513,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Element fragmentu kodu](../ide/code-snippets-schema-reference.md#snippet)|Zawiera odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.|
 
-## <a name="shortcut-element"></a><a name="shortcut"></a>Element skrótu
+## <a name="shortcut-element"></a><a name="shortcut"></a> Element skrótu
  Określa tekst skrótu służący do wstawiania fragmentu kodu. Wartość tekstowa `Shortcut` elementu może zawierać tylko znaki alfanumeryczne, łączniki (-) i znaki podkreślenia (_).
 
 > [!CAUTION]
@@ -531,7 +531,7 @@ is a great color. I love Blue.
 
  Wartość tekstowa jest opcjonalna. Ten tekst jest używany jako skrót do wstawiania fragmentu kodu.
 
-## <a name="snippet-element"></a><a name="snippet"></a>Element fragmentu kodu
+## <a name="snippet-element"></a><a name="snippet"></a> Element fragmentu kodu
  Określa odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.
 
 ```xml
@@ -555,7 +555,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[CodeSnippet, element](../ide/code-snippets-schema-reference.md#codesnippet)|Umożliwia określenie nagłówka oraz wielu fragmentów kodu IntelliSense, które można wstawiać do plików kodu programu Visual Studio.|
 
-## <a name="snippettype-element"></a><a name="snippettype"></a>Fragment kodu elementu
+## <a name="snippettype-element"></a><a name="snippettype"></a> Fragment kodu elementu
  Określa, w jaki sposób program Visual Studio wstawia fragment kodu.
 
 ```xml
@@ -574,9 +574,9 @@ is a great color. I love Blue.
 
 - `Expansion`: umożliwia wstawianie fragmentu kodu do kursora.
 
-- `Refactoring`: określa, że fragment kodu jest używany podczas refaktoryzacji Visual C#. `Refactoring`nie można używać w niestandardowych fragmentach kodu.
+- `Refactoring`: określa, że fragment kodu jest używany podczas refaktoryzacji Visual C#. `Refactoring` nie można używać w niestandardowych fragmentach kodu.
 
-## <a name="snippettypes-element"></a><a name="snippettypes"></a>SnippetTypes, element
+## <a name="snippettypes-element"></a><a name="snippettypes"></a> SnippetTypes, element
  Grupuje poszczególne `SnippetType` elementy. Jeśli `SnippetTypes` element nie jest obecny, fragment kodu można wstawić w dowolnym miejscu w kodzie.
 
 ```xml
@@ -594,7 +594,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Element nagłówka](../ide/code-snippets-schema-reference.md#header)|Określa ogólne informacje o fragmencie kodu.|
 
-## <a name="title-element"></a><a name="title"></a>Title — element
+## <a name="title-element"></a><a name="title"></a> Title — element
  Określa tytuł fragmentu kodu. Tytuł przechowywany w `Title` elemencie fragmentu kodu pojawia się w **selektorze fragmentów kodu** i w opisie fragmentu kodu w **Menedżerze fragmentów kodu**.
 
 ```xml
@@ -609,7 +609,7 @@ is a great color. I love Blue.
 
  Wartość tekstowa jest wymagana. Tekst określa tytuł fragmentu kodu.
 
-## <a name="tooltip-element"></a><a name="tooltip"></a>Element ToolTip
+## <a name="tooltip-element"></a><a name="tooltip"></a> Element ToolTip
  Opisuje oczekiwaną wartość i użycie literału lub obiektu we fragmencie kodu. Informacje te będą wyświetlane w programie Visual Studio w etykietce narzędzia po wstawieniu fragmentu kodu do projektu. Tekst etykietki narzędzia jest wyświetlany, gdy wskaźnik myszy znajdzie się nad literałem lub obiektem.
 
 ```xml
@@ -625,7 +625,7 @@ is a great color. I love Blue.
 
  Wartość tekstowa jest wymagana. Ten tekst określa opis etykietki narzędzia, który zostanie skojarzony z obiektem lub literałem we fragmencie kodu.
 
-## <a name="type-element"></a><a name="type"></a>Element Type
+## <a name="type-element"></a><a name="type"></a> Element Type
  Określa typ obiektu. `Object`Element jest używany do identyfikowania elementu, który jest wymagany przez fragment kodu, ale prawdopodobnie zostanie zdefiniowany poza fragmentem. Na przykład formanty interfejsu Windows Forms, formanty środowiska ASP.NET, wystąpienia obiektów i wystąpienia typów powinny być deklarowane jako obiekty. Deklaracje obiektów wymagają określenia typu, który jest wykonywany przy użyciu `Type` elementu.
 
 ```xml
@@ -640,7 +640,7 @@ is a great color. I love Blue.
 
  Wartość tekstowa jest wymagana. Ten tekst określa typ obiektu.
 
-## <a name="url-element"></a><a name="url"></a>Element adresu URL
+## <a name="url-element"></a><a name="url"></a> Element adresu URL
  Określa adres URL strony z dodatkowymi informacjami o zestawie, do którego prowadzi odwołanie.
 
 > [!NOTE]

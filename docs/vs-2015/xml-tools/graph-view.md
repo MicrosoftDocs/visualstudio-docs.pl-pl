@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba58777700ba34de3dc3b7a842f26462daf08c89
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656359"
 ---
 # <a name="graph-view"></a>Widok wykresu
@@ -121,7 +121,7 @@ Widok wykresu zawiera graficzną reprezentację globalnych węzłów schematu i 
 
 - Usuwanie jednego lub wielu węzłów.
 
-## <a name="zoom"></a>Powiększenie
+## <a name="zoom"></a>Zoom
  Powiększenie jest dostępne w prawym dolnym rogu widoku wykresu.
 
  Powiększenie można kontrolować w następujący sposób:

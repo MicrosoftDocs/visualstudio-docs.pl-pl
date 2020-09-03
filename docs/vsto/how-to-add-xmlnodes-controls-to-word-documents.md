@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 95fc165c1a3123d68529f6ccaea99fea963c2a67
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543497"
 ---
 # <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Instrukcje: Dodawanie kontrolek XMLNodes do dokumentów programu Word
@@ -67,7 +67,7 @@ ms.locfileid: "85543497"
 
      <xref:Microsoft.Office.Tools.Word.XMLNodes>Kontrolka jest tworzona i dodawana do projektu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Formant XMLNodes](../vsto/xmlnodes-control.md)
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: Pole TASK_STATE_WAITING_ON_CHILDREN | Dokumenty firmy Microsoft
+title: TASK_STATE_WAITING_ON_CHILDREN pole | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 27b9963db54d939b3d509da451478c20dbe0e7d0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712581"
 ---
 # <a name="task_state_waiting_on_children-field"></a>Pole TASK_STATE_WAITING_ON_CHILDREN
-Zadanie zostało zakończone wykonywanie jego delegata i niejawnie czeka na dołączone zadania podrzędne do wykonania.
+Zadanie zakończyło wykonywanie delegata i nieoczekiwanie oczekuje na ukończenie dołączonych zadań podrzędnych.
 
- **Obszar nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Montaż:** mscorlib (w *mscorlib.dll*)
+ **Zestaw:** mscorlib (w *mscorlib.dll*)
 
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następująca składnia znajduje się we wspólnym języku pośrednim (CIL).
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,7 +33,7 @@ Zadanie zostało zakończone wykonywanie jego delegata i niejawnie czeka na doł
 ```
 
 ## <a name="remarks"></a>Uwagi
- Jeśli pole [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) zawiera tę wartość, <xref:System.Threading.Tasks.Task.Status%2A> właściwość zwraca . <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>
+ Jeśli pole [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) zawiera tę wartość, <xref:System.Threading.Tasks.Task.Status%2A> Właściwość zwraca <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
 ## <a name="see-also"></a>Zobacz też
-- [Klasa zadań](../../extensibility/debugger/task-class-internal-members.md)
+- [Klasa zadania](../../extensibility/debugger/task-class-internal-members.md)

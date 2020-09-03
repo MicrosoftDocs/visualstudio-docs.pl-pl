@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef79d1be0b88ecdafa8691189bbc95291a6417ed
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544992"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definiowanie i instalowanie rozszerzenia modelowania
@@ -109,7 +109,7 @@ W programie Visual Studio można definiować rozszerzenia do diagramów modelowa
 
 3. Jeśli używasz narzędzia **Uruchom bez debugowania** , ale chcesz użyć debugera, Wróć do głównego wystąpienia programu Visual Studio. W menu **debugowanie** kliknij **Dołącz do procesu**. W oknie dialogowym Wybierz eksperymentalne wystąpienie programu Visual Studio, które ma nazwę programu **devenv**.
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Instalowanie i odinstalowywanie rozszerzenia
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Instalowanie i odinstalowywanie rozszerzenia
  Wykonaj następujące kroki, aby uruchomić rozszerzenie w głównym wystąpieniu programu Visual Studio na własnym komputerze lub na innych komputerach.
 
 1. Na komputerze Znajdź plik **. vsix** , który został skompilowany przez projekt rozszerzenia.

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419214"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Samouczek: tworzenie prostej aplikacji z Visual Basic
@@ -190,7 +190,7 @@ Ostatnim elementem interfejsu użytkownika, który dodasz, jest kontrolka [przyc
 
 2. W widoku XAML Zmień wartość **zawartości** kontrolki Button z `Content="Button"` na `Content="Display"` , a następnie Zapisz zmiany.
 
-     Znacznik powinien wyglądać podobnie do poniższego przykładu:`<Button Content="Display" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="215,204,0,0"/>`
+     Znacznik powinien wyglądać podobnie do poniższego przykładu:   `<Button Content="Display" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="215,204,0,0"/>`
 
      Okno powinno wyglądać podobnie, jak na poniższej ilustracji.
 
@@ -263,9 +263,9 @@ Ponownie uruchom debuger (naciśnij klawisz **F5**). Powinny pojawić się okno 
 
 Możesz przetestować kod podczas debugowania przez dodanie niektórych punktów przerwania. Możesz dodać punkty przerwania, wybierając pozycję **Debuguj**  >  **punkt przerwania**, klikając na lewym marginesie edytora obok wiersza kodu, w którym ma nastąpić przerwanie lub naciskając klawisz **F9**.
 
-#### <a name="add-breakpoints"></a>Dodaj punkty przerwania
+#### <a name="add-breakpoints"></a>Dodawanie punktów przerwania
 
-1. Otwórz *Greetings. XAML. vb*i wybierz następujący wiersz:`MessageBox.Show("Hello.")`
+1. Otwórz *Greetings. XAML. vb*i wybierz następujący wiersz: `MessageBox.Show("Hello.")`
 
 2. Dodaj punkt przerwania, naciskając klawisz **F9** lub z menu, wybierając **Debuguj**, a następnie **Przełącz punkt przerwania**.
 

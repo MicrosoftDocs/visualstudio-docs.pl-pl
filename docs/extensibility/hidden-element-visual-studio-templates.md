@@ -1,5 +1,5 @@
 ---
-title: Ukryty element (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: Hidden — element (szablony Visual Studio) | Microsoft Docs
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711108"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Ukryty element (szablony programu Visual Studio)
+# <a name="hidden-element-visual-studio-templates"></a>Hidden — element (szablony Visual Studio)
 
-Określa, czy szablon jest wyświetlany w oknach dialogowych nowy projekt, czy w oknie dialogowym **Dodawanie nowego elementu.**
+Określa, czy szablon jest wyświetlany w oknach dialogowych nowy projekt lub **Dodaj nowy element** .
 
 ```xml
 <VSTemplate>
@@ -53,19 +53,19 @@ Brak.
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
 
 Wartość tekstowa jest wymagana.
 
-Tekst musi być `true` albo `false`, wskazując, czy szablon pojawi się w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element.**
+Tekst musi być albo `true` lub `false` , wskazujący, czy szablon pojawi się w oknach dialogowych **Nowy projekt** , czy **Dodaj nowy element** .
 
 ## <a name="remarks"></a>Uwagi
 
-`Hidden`jest elementem opcjonalnym.
+`Hidden` jest elementem opcjonalnym.
 
-Jeśli określono, nie inne `TemplateData` elementy podrzędne elementu są wymagane.
+Jeśli ta wartość jest określona, nie są wymagane żadne inne elementy podrzędne `TemplateData` elementu.
 
 ## <a name="example"></a>Przykład
 
@@ -98,5 +98,5 @@ Poniższy przykład ilustruje metadane dla szablonu języka C#.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Odwołanie do schematu szablonu](../extensibility/visual-studio-template-schema-reference.md)
+- [Dokumentacja schematu szablonu](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: Element grupy | Dokumenty firmy Microsoft
+title: Element grupy | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 26479257511d74f122dd4064330f5b6a1e8dadd3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711234"
 ---
 # <a name="group-element"></a>Element grupy
-Definiuje grupę poleceń VSPackage.
+Definiuje grupę poleceń pakietu VSPackage.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,23 +36,23 @@ Definiuje grupę poleceń VSPackage.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Identyfikator GUID|Wymagany. Identyfikator GUID identyfikatora polecenia GUID/ID.|
-|id|Wymagany. Identyfikator polecenia GUID/ID.|
-|priority|Element opcjonalny. Wartość liczbowa określająca priorytet.|
-|Warunek|Element opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Wymagany. Identyfikator GUID identyfikatora polecenia GUID/ID.|
+|identyfikator|Wymagany. Identyfikator identyfikatora polecenia GUID/ID.|
+|priority|Opcjonalny. Wartość liczbowa, która określa priorytet.|
+|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|Nadrzędny|Element opcjonalny. Element nadrzędny przycisku.|
+|Nadrzędny|Opcjonalny. Element nadrzędny przycisku.|
 |Adnotacja|Opcjonalny komentarz.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element Grupy](../extensibility/groups-element.md)|Zawiera wpisy definiujące grupy poleceń programu VSPackage.|
+|[Groups, element](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy poleceń elementu pakietu VSPackage.|
 
 ## <a name="example"></a>Przykład
 
@@ -63,4 +63,4 @@ Definiuje grupę poleceń VSPackage.
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Pliki tabeli poleceń programu Visual Studio (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

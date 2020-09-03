@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f02c7ec0e453f0758ba2ab13145fcdff11b442a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173606"
 ---
 # <a name="author-vsct-files"></a>Author. vsct — pliki
@@ -229,11 +229,11 @@ W tym dokumencie przedstawiono sposób tworzenia pliku *. vsct* w celu dodania e
 
    Niektóre typy menu i przycisków zawierają wyspecjalizowane zachowania. Na poniższej liście opisano niektóre wyspecjalizowane typy menu i przycisków. W przypadku innych typów zobacz `types` opisy atrybutów w [menu](../../extensibility/menu-element.md), [przycisk](../../extensibility/button-element.md)i elementy [kombi](../../extensibility/combo-element.md) .
 
-   - Pole kombi: pole kombi jest listą rozwijaną, która może być używana na pasku narzędzi. Aby dodać pola kombi do interfejsu użytkownika, Utwórz element [kombi](../../extensibility/combos-element.md) w `Commands` elemencie. Następnie Dodaj do `Combos` elementu element `Combo` dla każdego pola kombi do dodania. `Combo`elementy mają te same atrybuty i elementy podrzędne jako `Button` elementy, a `DefaultWidth` także `idCommandList` atrybuty i. `DefaultWidth`Atrybut ustawia szerokość w pikselach, a `idCommandList` ATRYBUT wskazuje identyfikator polecenia, który jest używany do wypełniania pola kombi.
+   - Pole kombi: pole kombi jest listą rozwijaną, która może być używana na pasku narzędzi. Aby dodać pola kombi do interfejsu użytkownika, Utwórz element [kombi](../../extensibility/combos-element.md) w `Commands` elemencie. Następnie Dodaj do `Combos` elementu element `Combo` dla każdego pola kombi do dodania. `Combo` elementy mają te same atrybuty i elementy podrzędne jako `Button` elementy, a `DefaultWidth` także `idCommandList` atrybuty i. `DefaultWidth`Atrybut ustawia szerokość w pikselach, a `idCommandList` ATRYBUT wskazuje identyfikator polecenia, który jest używany do wypełniania pola kombi.
 
    - Kontroler menu: kontroler menu jest przyciskiem, który ma strzałkę obok niej. Kliknięcie strzałki spowoduje otwarcie listy. Aby dodać kontroler menu do interfejsu użytkownika, Utwórz `Menu` element i ustaw jego `type` atrybut na lub, w zależności od żądanego `MenuController` `MenuControllerLatched` zachowania. Aby wypełnić kontroler menu, ustaw go jako element nadrzędny `Group` elementu. Kontroler menu będzie wyświetlał wszystkie elementy podrzędne tej grupy na liście rozwijanej.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Poszerzanie menu i poleceń](../../extensibility/extending-menus-and-commands.md)
 - [Pliki tabeli poleceń programu Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Dokumentacja schematu XML VSCT](../../extensibility/vsct-xml-schema-reference.md)

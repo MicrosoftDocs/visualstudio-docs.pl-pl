@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bf0301f9b97bf6a7ca76f72f832c635a0dbb128
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656379"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Instrukcje: Dodawanie węzłów do obszaru roboczego z widoku startowego
@@ -33,4 +33,4 @@ W tym temacie opisano sposób dodawania węzłów globalnych do [obszaru robocze
 
 3. Kliknij link **Dodaj** z prawej strony nagłówka **Globally Complex Types** .
 
-     @No__t_0 i `PurchaseOrderType` węzły typu złożonego pojawią się na powierzchni projektowej widoku wykresu.
+     `USAddress` `PurchaseOrderType` Na powierzchni projektowej widoku wykresu zostaną wyświetlone węzły i typy złożone.

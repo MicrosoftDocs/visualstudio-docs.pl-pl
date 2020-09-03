@@ -12,9 +12,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c96546f85b21ee0ca8a559059a16158b743cb915
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016103"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 2
@@ -65,7 +66,7 @@ ms.locfileid: "86016103"
 
 5. Wybierz szablon projektu **Biblioteka formantów użytkownika WPF** , nazwij projekt **ItemTemplateWizard**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **ItemTemplateWizard** do rozwiązania.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **ItemTemplateWizard** do rozwiązania.
 
 6. Usuń element UserControl1 z projektu.
 
@@ -300,7 +301,7 @@ ms.locfileid: "86016103"
 
 12. W polu **tytuł** wprowadź **Centrum deweloperów programu SharePoint**.
 
-13. W polu **Opis** wprowadź polecenie **otwiera witrynę sieci Web Centrum deweloperów programu SharePoint**.
+13. W polu  **Opis** wprowadź polecenie **otwiera witrynę sieci Web Centrum deweloperów programu SharePoint**.
 
 14. W polu **adres URL** wprowadź **https://docs.microsoft.com/sharepoint/dev/** , a następnie wybierz przycisk **Zakończ** .
 
@@ -340,7 +341,7 @@ ms.locfileid: "86016103"
 
 4. Zamknij oba wystąpienia programu Visual Studio (wystąpienie eksperymentalne i wystąpienie programu Visual Studio, w którym jest otwarte rozwiązanie CustomActionProjectItem).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Tworzenie szablonów elementów i szablonów projektu dla elementów projektu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

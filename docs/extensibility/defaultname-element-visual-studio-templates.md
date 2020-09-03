@@ -1,5 +1,5 @@
 ---
-title: Element DefaultName (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: DefaultName, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 92bd29824cf1d3b91a7bdaa7220479c583ad0f23
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712303"
 ---
-# <a name="defaultname-element-visual-studio-templates"></a>Element DefaultName (szablony programu Visual Studio)
-Określa nazwę, którą system projektu visual studio wygeneruje dla projektu lub elementu podczas jego tworzenia.
+# <a name="defaultname-element-visual-studio-templates"></a>DefaultName, element (szablony Visual Studio)
+Określa nazwę, która zostanie wygenerowana przez system projektu programu Visual Studio dla projektu lub elementu podczas jego tworzenia.
 
- \<> \<templatedata> \<DefaultName>
+ \<VSTemplate> \<TemplateData>
+ \<DefaultName>
 
 ## <a name="syntax"></a>Składnia
 
@@ -46,24 +47,24 @@ Określa nazwę, którą system projektu visual studio wygeneruje dla projektu l
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Ten tekst określa domyślną nazwę projektu lub elementu.
+ Ten tekst Określa domyślną nazwę projektu lub elementu.
 
 ## <a name="remarks"></a>Uwagi
- `DefaultName`jest elementem opcjonalnym.
+ `DefaultName` jest elementem opcjonalnym.
 
- W przypadku projektów ten element określa nazwę katalogu, który przechowuje projekt na dysku. W przypadku elementów określa nazwę pliku źródłowego.
+ W przypadku projektów ten element określa nazwę katalogu, w którym jest przechowywany projekt na dysku. Dla elementów określa nazwę pliku źródłowego.
 
- Podczas tworzenia projektu lub elementu można zmodyfikować nazwę domyślną za pomocą opcji **Nazwa,** która jest dostępna w oknie dialogowym **Nowy projekt** lub Oknie Dialogowym Dodawanie **nowego elementu.**
+ Podczas tworzenia projektu lub elementu można zmodyfikować nazwę domyślną przy użyciu opcji **Nazwa** , która jest dostępna w oknie dialogowym **Nowy projekt** lub okno dialogowe **Dodaj nowy element** .
 
- Jeśli system projektu nie ma generować domyślnej nazwy projektu lub elementu, należy ustawić element `False` [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) na .
+ Jeśli nie chcesz, aby system projektu generował nazwę domyślną dla projektu lub elementu, a następnie ustaw element [ProvideDefaultName —](../extensibility/providedefaultname-element-visual-studio-templates.md) na `False` .
 
 ## <a name="example"></a>Przykład
- Poniższy przykład ilustruje metadane dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu elementu standardowego dla klasy.
+ Poniższy przykład ilustruje metadane dla szablonu elementu standardowego dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] klasy.
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"

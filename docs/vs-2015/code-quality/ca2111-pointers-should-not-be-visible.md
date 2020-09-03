@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 7429251a66ce2fe22a825a153cb90248faabb9fd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544368"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: Wskaźniki nie powinny być widoczne
@@ -36,7 +36,7 @@ ms.locfileid: "85544368"
  Publiczne lub chronione <xref:System.IntPtr?displayProperty=fullName> lub <xref:System.UIntPtr?displayProperty=fullName> pole nie jest tylko do odczytu.
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.IntPtr>i <xref:System.UIntPtr> są typami wskaźników, które są używane w celu uzyskania dostępu do pamięci niezarządzanej. Jeśli wskaźnik nie jest prywatny, wewnętrzny lub tylko do odczytu, złośliwy kod może zmienić wartość wskaźnika, potencjalnie zezwalając na dostęp do dowolnego miejsca w pamięci lub powodując awarie aplikacji lub systemu.
+ <xref:System.IntPtr> i <xref:System.UIntPtr> są typami wskaźników, które są używane w celu uzyskania dostępu do pamięci niezarządzanej. Jeśli wskaźnik nie jest prywatny, wewnętrzny lub tylko do odczytu, złośliwy kod może zmienić wartość wskaźnika, potencjalnie zezwalając na dostęp do dowolnego miejsca w pamięci lub powodując awarie aplikacji lub systemu.
 
  Jeśli zamierzasz zabezpieczyć dostęp do typu, który zawiera pole wskaźnika, zobacz [CA2112: zabezpieczone typy nie powinny ujawniać pól](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 

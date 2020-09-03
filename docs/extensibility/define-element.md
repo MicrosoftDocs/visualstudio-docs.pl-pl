@@ -1,5 +1,5 @@
 ---
-title: Zdefiniuj element | Dokumenty firmy Microsoft
+title: Zdefiniuj element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fc09de1d822f41b25397c7a56c7cce4449a9e551
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712272"
 ---
 # <a name="define-element"></a>Zdefiniuj element
-Definiuje nazwę symbolu i parę wartości. Ten symbol można ocenić za pomocą atrybutów warunkowych. Aby uzyskać więcej informacji, zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md). Zobacz też [symbole elementu](../extensibility/symbols-element.md).
+Definiuje nazwę symbolu i parę wartości. Ten symbol może być oceniany przez atrybuty warunkowe. Aby uzyskać więcej informacji, zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md). Zobacz również [element Symbols](../extensibility/symbols-element.md).
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,9 +34,9 @@ Definiuje nazwę symbolu i parę wartości. Ten symbol można ocenić za pomocą
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|name|Wymagany. Nazwa symbolu:<br /><br /> name="Tryb"|
-|value|Wymagany. Wartość symbolu:<br /><br /> wartość="Standard"|
-|Warunek|Element opcjonalny. Aby uzyskać więcej informacji, zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|name|Wymagany. Nazwa symbolu:<br /><br /> Nazwa = "tryb"|
+|value|Wymagany. Wartość symbolu:<br /><br /> wartość = "Standardowa"|
+|Warunek|Opcjonalny. Aby uzyskać więcej informacji, zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
@@ -45,7 +45,7 @@ Definiuje nazwę symbolu i parę wartości. Ten symbol można ocenić za pomocą
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element CommandTable](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia, które VSPackage zapewnia zintegrowanemu środowisku programistycznemu (IDE). Na przykład elementy menu, menu, paski narzędzi i pola kombi.|
+|[Element polecenia](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia, które pakietu VSPackage zapewnia zintegrowane środowisko programistyczne (IDE). Na przykład elementy menu, menu, paski narzędzi i pola kombi.|
 
 ## <a name="example"></a>Przykład
 
@@ -55,4 +55,4 @@ Definiuje nazwę symbolu i parę wartości. Ten symbol można ocenić za pomocą
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Pliki tabeli poleceń programu Visual Studio (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

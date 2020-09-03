@@ -1,5 +1,5 @@
 ---
-title: Zadanie GetReferenceAssemblyPaths | Dokumenty firmy Microsoft
+title: GetReferenceAssemblyPaths — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,34 +14,34 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d2ca532e37fa2f70800416539a7de2ff5e9978e2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633983"
 ---
-# <a name="getreferenceassemblypaths-task"></a>Zadanie GetReferenceAssemblyPaths
+# <a name="getreferenceassemblypaths-task"></a>GetReferenceAssemblyPaths, zadanie
 
-Zwraca ścieżki zestawu odwołań różnych struktur.
+Zwraca ścieżki zestawów referencyjnych różnych struktur.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli `GetReferenceAssemblyPaths` opisano parametry zadania.
+ W poniższej tabeli opisano parametry `GetReferenceAssemblyPaths` zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`ReferenceAssemblyPaths`|Opcjonalny parametr wyjściowy. `String[]`<br /><br /> Zwraca ścieżkę na `TargetFrameworkMoniker` podstawie parametru. Jeśli `TargetFrameworkMoniker` jest null lub puste, `String.Empty`ta ścieżka będzie .|
-|`FullFrameworkReferenceAssemblyPaths`|Opcjonalny parametr wyjściowy. `String[]`<br /><br /> Zwraca ścieżkę na `TargetFrameworkMoniker` podstawie parametru, bez uwzględnienia części profilu monikera. Jeśli `TargetFrameworkMoniker` jest null lub puste, `String.Empty`ta ścieżka będzie .|
-|`TargetFrameworkMoniker`|Parametr `String` opcjonalny.<br /><br /> Określa moniker struktury docelowej, który jest skojarzony ze ścieżkami zestawu odwołań.|
-|`RootPath`|Parametr `String` opcjonalny.<br /><br /> Określa ścieżkę główną używaną do generowania ścieżki zestawu odniesienia.|
-|`BypassFrameworkInstallChecks`|Parametr <xref:System.Boolean> opcjonalny.<br /><br /> Jeśli `true`, pomija podstawowe `GetReferenceAssemblyPaths` kontrole, które wykonuje domyślnie, aby upewnić się, że niektóre struktury środowiska wykonawczego są zainstalowane, w zależności od struktury docelowej.|
-|`TargetFrameworkMonikerDisplayName`|Opcjonalny parametr wyjściowy. `String`<br /><br /> Określa nazwę wyświetlaną monikera struktury docelowej.|
+|`ReferenceAssemblyPaths`|Opcjonalny `String[]` parametr wyjściowy.<br /><br /> Zwraca ścieżkę opartą na `TargetFrameworkMoniker` parametrze. Jeśli wartość `TargetFrameworkMoniker` jest równa null lub pusta, ta ścieżka będzie `String.Empty` .|
+|`FullFrameworkReferenceAssemblyPaths`|Opcjonalny `String[]` parametr wyjściowy.<br /><br /> Zwraca ścieżkę na podstawie `TargetFrameworkMoniker` parametru, bez uwzględnienia części profilu monikera. Jeśli wartość `TargetFrameworkMoniker` jest równa null lub pusta, ta ścieżka będzie `String.Empty` .|
+|`TargetFrameworkMoniker`|Opcjonalny `String` parametr.<br /><br /> Określa moniker platformy docelowej, który jest skojarzony ze ścieżkami zestawu odwołania.|
+|`RootPath`|Opcjonalny `String` parametr.<br /><br /> Określa ścieżkę katalogu głównego, która ma zostać użyta do wygenerowania ścieżki zestawu odwołania.|
+|`BypassFrameworkInstallChecks`|Opcjonalny <xref:System.Boolean> parametr.<br /><br /> Jeśli `true` program ignoruje podstawowe testy, które `GetReferenceAssemblyPaths` są domyślnie wykonywane w celu upewnienia się, że niektóre platformy środowiska uruchomieniowego są zainstalowane, w zależności od platformy docelowej.|
+|`TargetFrameworkMonikerDisplayName`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Określa nazwę wyświetlaną moniker struktury docelowej.|
 
 ## <a name="remarks"></a>Uwagi
 
- Oprócz parametrów, które są wymienione w tabeli, to <xref:Microsoft.Build.Tasks.TaskExtension> zadanie dziedziczy parametry z <xref:Microsoft.Build.Utilities.Task> klasy, która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Zadania](../msbuild/msbuild-tasks.md)
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

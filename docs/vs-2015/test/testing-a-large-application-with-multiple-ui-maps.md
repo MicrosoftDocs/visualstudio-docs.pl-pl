@@ -12,10 +12,10 @@ caps.latest.revision: 24
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2f6936811ea753d66d212facdda627930fb1ab10
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672128"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testowanie dużej aplikacji przy użyciu wielu map UI
@@ -23,11 +23,11 @@ ms.locfileid: "72672128"
 
 W tym temacie omówiono sposób korzystania z kodowanych testów interfejsu użytkownika podczas testowania dużej aplikacji przy użyciu wielu map interfejsu użytkownika.
 
- **Requirements**
+ **Wymagania**
 
 - Visual Studio Enterprise
 
-  Podczas tworzenia nowego kodowanego testu interfejsu użytkownika, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Framework do testowania generuje kod dla testu domyślnie w klasie [UIMap](/previous-versions/dd580454(v=vs.140)) . Aby uzyskać więcej informacji na temat rejestrowania kodowanych testów interfejsu użytkownika, zobacz [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) i [anatomię KODOWANEGO testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md).
+  Podczas tworzenia nowego kodowanego testu interfejsu użytkownika, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Struktura testowa generuje kod dla testu domyślnie w klasie [UIMap](/previous-versions/dd580454(v=vs.140)) . Aby uzyskać więcej informacji na temat rejestrowania kodowanych testów interfejsu użytkownika, zobacz [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) i [anatomię KODOWANEGO testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md).
 
   Wygenerowany kod dla mapowania interfejsu użytkownika zawiera klasę dla każdego obiektu, z którym test współdziała z. Dla każdej wygenerowanej metody Klasa pomocnika dla parametrów metody jest generowana w odniesieniu do tej metody. W przypadku dużej liczby obiektów, stron i formularzy i kontrolek w aplikacji Mapa interfejsu użytkownika może być bardzo duża. Ponadto, jeśli kilka osób pracuje nad testami, aplikacja zostanie nieporęczny za pomocą pojedynczego dużego pliku mapy interfejsu użytkownika.
 
@@ -50,24 +50,24 @@ W tym temacie omówiono sposób korzystania z kodowanych testów interfejsu uży
 
 #### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Aby dodać mapę interfejsu użytkownika do projektu kodowanego testu interfejsu użytkownika
 
-1. W **Eksplorator rozwiązań**, aby utworzyć folder w projekcie kodowanego testu interfejsu użytkownika do przechowywania wszystkich map interfejsu użytkownika, kliknij prawym przyciskiem myszy plik projektu kodowanego testu interfejsu użytkownika, wskaż polecenie **Dodaj** , a następnie wybierz pozycję **Nowy folder**. Można na przykład nazwać ją `UIMaps`.
+1. W **Eksplorator rozwiązań**, aby utworzyć folder w projekcie kodowanego testu interfejsu użytkownika do przechowywania wszystkich map interfejsu użytkownika, kliknij prawym przyciskiem myszy plik projektu kodowanego testu interfejsu użytkownika, wskaż polecenie **Dodaj** , a następnie wybierz pozycję **Nowy folder**. Można na przykład nazwać ją `UIMaps` .
 
     Nowy folder zostanie wyświetlony w ramach projektu kodowanego testu interfejsu użytkownika.
 
-2. Kliknij prawym przyciskiem myszy folder `UIMaps`, wskaż polecenie **Dodaj**, a następnie wybierz polecenie **nowy element**.
+2. Kliknij prawym przyciskiem myszy `UIMaps` folder, wskaż polecenie **Dodaj**, a następnie wybierz **nowy element**.
 
-    Zostanie wyświetlone okno dialogowe **Dodaj nowy element** .
+    Zostanie wyświetlone okno dialogowe **Dodaj nowy element**.
 
    > [!NOTE]
    > Aby dodać nową mapę kodowanego testu interfejsu użytkownika, musisz być w projekcie kodowanego testu interfejsu użytkownika.
 
 3. Wybierz z listy pozycję **Mapa kodowanego testu interfejsu użytkownika** .
 
-    W polu **Nazwa** wprowadź nazwę nowej mapy interfejsu użytkownika. Użyj nazwy składnika lub strony, która będzie reprezentować mapa, na przykład `HomePageMap`.
+    W polu **Nazwa** wprowadź nazwę nowej mapy interfejsu użytkownika. Użyj nazwy składnika lub strony, która będzie reprezentować mapa, na przykład `HomePageMap` .
 
 4. Wybierz pozycję **Dodaj**.
 
-    Okno [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] minimalizuje i zostanie wyświetlone okno dialogowe **Konstruktor kodowanego testu interfejsu użytkownika** .
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Zostanie zminimalizowane okno dialogowe **Konstruktor kodowanego testu interfejsu użytkownika** .
 
 5. Zarejestruj akcje dla pierwszej metody i wybierz polecenie **Generuj kod**.
 
@@ -77,7 +77,7 @@ W tym temacie omówiono sposób korzystania z kodowanych testów interfejsu uży
 
    W wielu przypadkach okno najwyższego poziomu aplikacji pozostaje stałe dla wszystkich kreatorów, formularzy i stron. Chociaż każda Mapa interfejsu użytkownika ma klasę dla okna najwyższego poziomu, wszystkie mapy są prawdopodobnie odwołujące się do tego samego okna najwyższego poziomu, w którym są uruchamiane wszystkie składniki aplikacji. Kodowane testy interfejsu użytkownika przeszukają kontrolki hierarchicznie od góry w dół, rozpoczynając od okna najwyższego poziomu, więc w przypadku złożonej aplikacji okno najwyższego poziomu może być zduplikowane w każdej mapie interfejsu użytkownika. Jeśli okno rzeczywiste najwyższego poziomu jest zduplikowane, wielokrotne modyfikacje zostaną wprowadzone w przypadku zmiany tego okna. Może to spowodować problemy z wydajnością podczas przełączania map interfejsu użytkownika.
 
-   Aby zminimalizować ten efekt, można użyć metody `CopyFrom()`, aby upewnić się, że nowe okno najwyższego poziomu w tej mapie interfejsu użytkownika jest takie samo jak główne okno najwyższego poziomu.
+   Aby zminimalizować ten efekt, można użyć metody, `CopyFrom()` Aby upewnić się, że nowe okno najwyższego poziomu w tej mapie interfejsu użytkownika jest takie samo, jak główne okno najwyższego poziomu.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład jest częścią klasy narzędzi, która zapewnia dostęp do każdego składnika i ich formantów podrzędnych, które są reprezentowane przez klasy generowane w różnych mapach interfejsu użytkownika.
@@ -138,7 +138,7 @@ namespace ContosoProject
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>

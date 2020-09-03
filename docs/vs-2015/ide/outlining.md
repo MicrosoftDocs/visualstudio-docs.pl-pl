@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 907d075f597799edd582c9f2bae693eac92c0b2c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544966"
 ---
 # <a name="outlining"></a>Tworzenie konspektu
@@ -49,6 +49,6 @@ Można ukryć jakiś kod z widoku, zwijając region kodu, tak aby pojawił się 
 |Przestań ukrywać bieżące|(CTRL + M, CTRL + U) — usuwa informacje z tworzenia konspektu dla aktualnie wybranego regionu zdefiniowanego przez użytkownika. Niedostępne w Visual Basic.|
 |Zwiń do definicji|(CTRL + M, CTRL + O) — zwija elementy członkowskie wszystkich typów.|
 |Zwiń blok:\<logical boundary>|(Visual C++) Zwija region w funkcji zawierającej punkt wstawiania. Na przykład, jeśli punkt wstawiania leży wewnątrz pętli, pętla jest ukryta.|
-|Zwiń wszystko w:\<logical structures>|(Visual C++) Zwija wszystkie struktury wewnątrz funkcji.|
+|Zwiń wszystko w: \<logical structures>|(Visual C++) Zwija wszystkie struktury wewnątrz funkcji.|
 
  Możesz również użyć zestawu Visual Studio SDK, aby zdefiniować regiony tekstu, które mają zostać rozwinięte lub zwinięte. Zobacz [Przewodnik: Tworzenie konspektu](../extensibility/walkthrough-outlining.md).

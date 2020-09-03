@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532499"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Porady: modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
@@ -55,7 +55,7 @@ Utwórz nowy plik zawierający częściową deklarację klasy zestawu poleceń.
 
 2. W **DslPackage**Utwórz folder o nazwie **kod niestandardowy**. W tym folderze Utwórz nowy plik klasy o nazwie `CommandSet.cs` .
 
-3. W nowym pliku Napisz deklarację częściową, która ma taką samą przestrzeń nazw i nazwę jak wygenerowana Klasa częściowa. Przykład:
+3. W nowym pliku Napisz deklarację częściową, która ma taką samą przestrzeń nazw i nazwę jak wygenerowana Klasa częściowa. Na przykład:
 
     ```csharp
     using System;
@@ -131,19 +131,19 @@ Następujące fragmenty są często przydatne w następujących metodach:
 
 - `this.CurrentSelection`. Kształt kliknięty prawym przyciskiem myszy jest zawsze uwzględniony na liście kształtów i łączników. Jeśli użytkownik kliknie pustą część diagramu, diagram jest jedyną składową listy.
 
-- `this.IsDiagramSelected()` - `true`Jeśli użytkownik kliknął pustą część diagramu.
+- `this.IsDiagramSelected()` - `true` Jeśli użytkownik kliknął pustą część diagramu.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`-Użytkownik nie wybrał wielu kształtów
+- `this.IsSingleSelection()` -Użytkownik nie wybrał wielu kształtów
 
-- `this.SingleSelection`-kształt lub diagram, który kliknął użytkownik prawym przyciskiem myszy.
+- `this.SingleSelection` -kształt lub diagram, który kliknął użytkownik prawym przyciskiem myszy.
 
-- `shape.ModelElement as MyLanguageElement`— element modelu reprezentowany przez kształt.
+- `shape.ModelElement as MyLanguageElement` — element modelu reprezentowany przez kształt.
 
 Aby uzyskać więcej informacji na temat nawigowania z elementu do elementu i sposobu tworzenia obiektów i linków, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)

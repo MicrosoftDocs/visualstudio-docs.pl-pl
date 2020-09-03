@@ -1,5 +1,5 @@
 ---
-title: Klasa zadania — członkowie wewnętrzni | Dokumenty firmy Microsoft
+title: Task — Klasa — składowe wewnętrzne | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dcf278c0248b344cea4be7cf161ecc91581f5f2e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712732"
 ---
-# <a name="task-class---internal-members"></a>Klasa zadań — elementy wewnętrzne
-W tym artykule opisano <xref:System.Threading.Tasks.Task?displayProperty=fullName> wewnętrznych członków klasy, które pomagają zaimplementować debugera niestandardowego. Aby uzyskać ogólne informacje na <xref:System.Threading.Tasks.Task> temat tej klasy, zobacz artykuł referencyjny.
+# <a name="task-class---internal-members"></a>Task — Klasa — składowe wewnętrzne
+W tym artykule opisano wewnętrzne elementy członkowskie <xref:System.Threading.Tasks.Task?displayProperty=fullName> klasy, które ułatwiają zaimplementowanie niestandardowego debugera. Aby uzyskać ogólne informacje o tej klasie, zobacz <xref:System.Threading.Tasks.Task> artykuł referencyjny.
 
- **Obszar nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Montaż:** mscorlib (w *mscorlib.dll*)
+ **Zestaw:** mscorlib (w *mscorlib.dll*)
 
- Ponieważ nie można uzyskać dostępu do tych wewnętrznych elementów członkowskich z programu .NET Framework, następująca składnia znajduje się we wspólnym języku pośrednim (CIL).
+ Ponieważ nie można uzyskać dostępu do tych wewnętrznych elementów członkowskich z .NET Framework, następująca składnia jest udostępniana w typowym języku pośrednim (CIL).
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,27 +45,27 @@ W tym artykule opisano <xref:System.Threading.Tasks.Task?displayProperty=fullNam
 |Nazwa|Opis|
 |----------|-----------------|
 |[Metoda SetNotificationForWaitCompletion](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|Ustawia lub czyści bit stanu TASK_STATE_WAIT_COMPLETION_NOTIFICATION.|
-|[Metoda NotifyDebuggerOfWaitCompletion](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|Metoda zastępcza używana jako miejsce docelowe punktu przerwania przez debuger.|
+|[Metoda NotifyDebuggerOfWaitCompletion](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|Metoda zastępcza używana jako docelowy punkt przerwania przez debuger.|
 
 ### <a name="fields"></a>Pola
 
 |Nazwa|Opis|
 |----------|-----------------|
-|[m_action](../../extensibility/debugger/m-action-field.md)|Pełnomocnik, który reprezentuje kod do <xref:System.Threading.Tasks.Task> wykonania w obiekcie.|
+|[m_action](../../extensibility/debugger/m-action-field.md)|Delegat reprezentujący kod do wykonania w <xref:System.Threading.Tasks.Task> obiekcie.|
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Przechowuje dodatkowe właściwości <xref:System.Threading.Tasks.Task> obiektu.|
-|[m_parent](../../extensibility/debugger/m-parent-field.md)|Pole zapasowe <xref:System.Threading.Tasks.Task?displayProperty=fullName> właściwości nadrzędnej.|
-|[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|Przechowuje informacje o bieżącym <xref:System.Threading.Tasks.Task> stanie obiektu.|
-|[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|Obiekt, który reprezentuje dane, które będą używane przez akcję.|
-|[m_taskId](../../extensibility/debugger/m-taskid-field.md)|Pole podkładu <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> dla właściwości.|
+|[m_parent](../../extensibility/debugger/m-parent-field.md)|Pole zapasowe dla <xref:System.Threading.Tasks.Task?displayProperty=fullName> Właściwości nadrzędnej.|
+|[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|Przechowuje informacje o bieżącym stanie <xref:System.Threading.Tasks.Task> obiektu.|
+|[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|Obiekt reprezentujący dane, które będą używane przez akcję.|
+|[m_taskId](../../extensibility/debugger/m-taskid-field.md)|Pole zapasowe <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> właściwości.|
 |[s_taskIdCounter](../../extensibility/debugger/s-taskidcounter-field.md)|Następny dostępny identyfikator <xref:System.Threading.Tasks.Task> obiektu.|
-|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|Wskazuje, że zadanie zostało anulowane przed osiągnięciem stanu uruchomionego lub że zadanie potwierdziło jego anulowanie i zostało ukończone bez wyjątku.|
+|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|Wskazuje, że zadanie zostało anulowane przed osiągnięciem stanu uruchomienia lub że zadanie potwierdziło jego anulowanie i ukończone bez wyjątku.|
 |[TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)|Wskazuje, że zadanie jest uruchomione.|
-|[TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)|Wskazuje, że zadanie zostało ukończone z powodu nieobsługiwał wyjątek.|
-|[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|Wskazuje, że zadanie zostało pomyślnie wykonane.|
-|[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|Wskazuje, że zadanie zakończone wykonywanie jego delegata i niejawnie czeka na dołączone zadania podrzędne, aby zakończyć.|
+|[TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)|Wskazuje, że zadanie zostało ukończone z powodu nieobsługiwanego wyjątku.|
+|[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|Wskazuje, że zadanie zostało ukończone pomyślnie.|
+|[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|Wskazuje, że zadanie zakończyło wykonywanie delegata i nieoczekiwanie oczekuje na zakończenie dołączonych zadań podrzędnych.|
 
 ## <a name="remarks"></a>Uwagi
- Następujące metody wewnętrzne są przydatne dla aparatu debugera, ponieważ oznaczają one wejście do <xref:System.Threading.Tasks.Task> wykonania kodu:
+ Następujące metody wewnętrzne są przydatne dla aparatu debugera, ponieważ oznaczają wejście do <xref:System.Threading.Tasks.Task> wykonania kodu:
 
 - `Execute`
 
@@ -81,4 +81,4 @@ W tym artykule opisano <xref:System.Threading.Tasks.Task?displayProperty=fullNam
 
 ## <a name="see-also"></a>Zobacz też
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
-- [Wewnętrzne rozszerzenia równoległego dla programu .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Wewnętrzne rozszerzenia równoległe dla .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

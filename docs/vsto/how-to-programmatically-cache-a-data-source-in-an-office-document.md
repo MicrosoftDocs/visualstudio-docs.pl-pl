@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8ec3a38d109de561e3cba77951764dd8dd9479df
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544771"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Instrukcje: programowane buforowanie źródła danych w dokumencie pakietu Office
@@ -54,7 +54,7 @@ ms.locfileid: "85544771"
     > [!NOTE]
     > Nie wywołuj `StopCaching` z programu obsługi zdarzeń dla `Shutdown` zdarzenia dokumentu lub arkusza. Przez czas, gdy `Shutdown` zdarzenie jest zgłaszane, zbyt późno na modyfikację pamięci podręcznej danych. Aby uzyskać więcej informacji o `Shutdown` zdarzeniu, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dane pamięci podręcznej](../vsto/caching-data.md)
 - [Instrukcje: dane z pamięci podręcznej do użycia w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)

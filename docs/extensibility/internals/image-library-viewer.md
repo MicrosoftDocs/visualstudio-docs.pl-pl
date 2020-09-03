@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d9714879f93af052e244134ce225b07317455921
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536347"
 ---
 # <a name="image-library-viewer"></a>Przeglądarka biblioteki obrazów
@@ -95,7 +95,7 @@ Narzędzie przeglądarka obrazów programu Visual Studio może ładować i przes
 |System|Folder Windows\System32|
 |WinDir|Wartość zmiennej środowiskowej% WinDir%|
 
- **Image (Obraz)**
+ **Obraz**
 
  \<Image>Element definiuje obraz, do którego może odwoływać się moniker. Identyfikatory GUID i ID razem tworzą moniker obrazu. Moniker obrazu musi być unikatowy w całej bibliotece obrazów. Jeśli więcej niż jeden obraz ma daną moniker, pierwszy napotkany podczas kompilowania biblioteki jest zachowywany.
 
@@ -131,7 +131,7 @@ Narzędzie przeglądarka obrazów programu Visual Studio może ładować i przes
 
  \<Source>Element może mieć dokładnie jeden z następujących opcjonalnych podelementów:
 
-|**Postaci**|**Atrybuty (wszystkie wymagane)**|**Definicja**|
+|**Element**|**Atrybuty (wszystkie wymagane)**|**Definicja**|
 |-|-|-|
 |\<Size>|Wartość|Źródło będzie używane dla obrazów o danym rozmiarze (w jednostkach urządzeń). Obraz będzie kwadratowy.|
 |\<SizeRange>|MinSize, brak|Źródło będzie używane dla obrazów z MinSize do rozmiaru całkowitego (w jednostkach urządzeń) włącznie. Obraz będzie kwadratowy.|

@@ -9,16 +9,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb2f209e212406fd9809ecb4bd30bce30d95a2bf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544797"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrazy i ikony dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Używanie obrazów w programie Visual Studio
+## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Używanie obrazów w programie Visual Studio
  Przed utworzeniem kompozycji należy rozważyć użycie 1000 obrazów w [bibliotece obrazów programu Visual Studio](https://www.microsoft.com/download/details.aspx?id=35825).
 
 ### <a name="types-of-images"></a>Typy obrazów
@@ -35,7 +35,7 @@ ms.locfileid: "85544797"
 
 - **Mało.** Służy do wskazywania, czy operacja jest dozwolona przy użyciu myszy, gdzie obiekt może być porzucony i tak dalej.
 
-## <a name="icon-design"></a><a name="BKMK_IconDesign"></a>Projektowanie ikon
+## <a name="icon-design"></a><a name="BKMK_IconDesign"></a> Projektowanie ikon
 
 ### <a name="overview"></a>Omówienie
  Program Visual Studio używa ikon nowoczesnego stylu, które mają czyste elementy geometryczne i 50/50 bilanse pozytywne/negatywne (jasne/ciemne) i wykorzystują bezpośrednie, zrozumiałe metafory. Kluczowe ikony wskazujące na przejrzystość, uproszczenie i kontekst.
@@ -269,7 +269,7 @@ ms.locfileid: "85544797"
 
  Aby uzyskać więcej informacji na temat używania koloru w ikonach programu Visual Studio, zobacz [using Color in images](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).
 
-## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a>Korzystanie z koloru w obrazach
+## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a> Korzystanie z koloru w obrazach
 
 ### <a name="overview"></a>Omówienie
  Ikony w programie Visual Studio to przede wszystkim monochromatyczny. Kolor jest zarezerwowany do przekazywania określonych informacji i nigdy nie do dekoracji. Kolor jest używany:
@@ -282,7 +282,7 @@ ms.locfileid: "85544797"
 
 - Aby rozróżnić elementy w funkcji IntelliSense
 
-### <a name="accessibility"></a>Dostępność
+### <a name="accessibility"></a>Ułatwienia dostępu
  Wskazówki dotyczące zgodności programu Visual Studio wymagają, aby wszystkie ikony zaznaczone w produkcie przeszły wymagania dotyczące ułatwień dostępu dla kolorów i kontrastu. Kolory z palety języka wizualnego zostały przetestowane i spełniają te wymagania.
 
 #### <a name="color-inversion-for-dark-themes"></a>Kolorowa wersja dla ciemnych motywów
@@ -422,7 +422,7 @@ ms.locfileid: "85544797"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  Ogólnie rzecz biorąc, Visual Studio Online obejmuje funkcje hostowane w przeglądarce. Kolor jest różny w różnych środowiskach, ale styl pozostaje taki sam.
 
-|Grupa|Użycie|Nazwa|Wartość (wszystkie motywy)|Spowoduje|
+|Group (Grupa)|Użycie|Nazwa|Wartość (wszystkie motywy)|Spowoduje|
 |-----------|-----------|----------|--------------------------|------------|
 |TFS|Tło|TFSO BG|656565/101, 101, 101|![Próbnik 656565](../../extensibility/ux-guidelines/media/0405-656565.png "0405_656565")|
 |TFS|Kontur|TFSO|FFFFFF/255, 255, 255|![FFFFFF próbki](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
@@ -431,11 +431,11 @@ ms.locfileid: "85544797"
 |F12|Tło|Biały|FFFFFF/255, 255, 255|![FFFFFF próbki](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
 |F12|Normalne|Grey_Primary F12|555555/85, 85, 85|![Próbnik 555555](../../extensibility/ux-guidelines/media/0405-555555.png "0405_555555")|
 |F12|Aktywowane|Blue_Hover F12|2279BF/34 121 191|![2279BF próbki](../../extensibility/ux-guidelines/media/0405-2279bf.png "0405_2279BF")|
-|F12|Disabled (Wyłączony)|LtGrey_Disabled F12|ABABAC/171 171 172|![ABABAC próbki](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
+|F12|Disabled|LtGrey_Disabled F12|ABABAC/171 171 172|![ABABAC próbki](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
 |F12|Tło aktywowania|Aktywuj wskaźnik BG|D9EBF7/217 235 247|![D9EBF7 próbki](../../extensibility/ux-guidelines/media/0405-d9ebf7.png "0405_D9EBF7")|
 |F12|Tło naciśnięte|Wciśnięcie BG|B2D7F0/178 215 240|![B2D7F0 próbki](../../extensibility/ux-guidelines/media/0405-b2d7f0.png "0405_B2D7F0")|
 |F12|Kontur|A POZA|F6F6F6/246 246 246|![F6F6F6 próbki](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")|
-|F12|Informacje|Informacje|00BCF2/0188 242|![00BCF2 próbki](../../extensibility/ux-guidelines/media/0405-00bcf2.png "0405_00BCF2")|
+|F12|Informacyjny|Informacyjny|00BCF2/0188 242|![00BCF2 próbki](../../extensibility/ux-guidelines/media/0405-00bcf2.png "0405_00BCF2")|
 |F12|Ostrzeżenie|Ostrzeżenie|F28300/242131, 0|![F28300 próbki](../../extensibility/ux-guidelines/media/0405-f28300.png "0405_F28300")|
 |F12|Błąd/negatywny|Error_Negative|E81123/232, 17, 35|![E81123 próbki](../../extensibility/ux-guidelines/media/0405-e81123.png "0405_E81123")|
 |F12|Rozpocznij/dodatnie|Start_Positive|009E49/0158, 73|![009E49 próbki](../../extensibility/ux-guidelines/media/0405-009e49.png "0405_009E49")|
