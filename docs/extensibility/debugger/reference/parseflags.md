@@ -1,5 +1,5 @@
 ---
-title: PARSEFLAGS | Dokumenty firmy Microsoft
+title: PARSEFLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0cc70fdd9fe1279e4d419a422b970eb3d3b07c65
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714116"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
-Określa sposób analizować wyrażenie.
+Określa sposób analizowania wyrażenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -49,22 +49,22 @@ public enum enum_PARSEFLAGS { 
  Wskazuje, że wyrażenie nie jest instrukcją.
 
  `PARSE_FUNCTION_AS_ADDRESS`\
- Wskazuje, że wyrażenie ma być analizowane (a później oceniane) jako adres.
+ Wskazuje, że wyrażenie ma być analizowane (i później oceniane) jako adres.
 
  `PARSE_DESIGN_TIME_EXPR_EVAL`\
- Wskazuje, że wyrażenie jest analizowane w czasie projektowania (czyli gdy projektant jest otwarty).
+ Wskazuje, że wyrażenie jest analizowane w czasie projektowania (to oznacza, gdy Projektant jest otwarty).
 
 ## <a name="remarks"></a>Uwagi
- Przekazywane jako parametr do [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) i [Analizowania](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) metody.
+ Przekazanie jako parametr do metody [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) i [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) .
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)
-- [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
+- [Analizuj](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)

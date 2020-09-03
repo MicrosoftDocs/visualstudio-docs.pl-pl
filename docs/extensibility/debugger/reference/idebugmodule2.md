@@ -1,5 +1,5 @@
 ---
-title: IDebugModule2 | Dokumenty firmy Microsoft
+title: IDebugModule2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dbbea1b52133de41dd26f437aeba31a0eff5a50a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726904"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
-Ten interfejs reprezentuje moduł — czyli jednostkę wykonywalną programu — taką jak biblioteka DLL.
+Ten interfejs reprezentuje moduł — czyli jednostkę wykonywalną programu, na przykład bibliotekę DLL.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,30 +29,30 @@ IDebugModule2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Aparat debugowania (DE) implementuje ten interfejs do reprezentowania modułu i zapewnienia dostępu do informacji o tym module.
+ Aparat debugowania (DE) implementuje ten interfejs do reprezentowania modułu i zapewnienia dostępu do informacji na temat tego modułu.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Wywołanie [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md) zwraca ten interfejs. DE wysyła interfejs [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md) do menedżera debugowania sesji (SDM) przy użyciu [event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) metody.
+ Wywołanie metody [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md) zwraca ten interfejs. Anuluj wysyła Interfejs [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md) do Menedżera debugowania sesji (SDM) przy użyciu metody [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) .
 
- Ten interfejs można również zwrócić w strukturze [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) (która jest zwracana przez wywołanie [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)).
+ Ten interfejs może być również zwracany w strukturze [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) (który jest zwracany przez wywołanie [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)).
 
-- [Next](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) zwraca również ten interfejs ([EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) zwraca interfejs [IEnumDebugModules2).](../../../extensibility/debugger/reference/ienumdebugmodules2.md)
+- [Next](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) zwraca również ten interfejs ([EnumModules —](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) zwraca interfejs [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) ).
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- W poniższej tabeli `IDebugModule2`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ W poniższej tabeli przedstawiono metody `IDebugModule2` .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|Pobiera [MODULE_INFO,](../../../extensibility/debugger/reference/module-info.md) który opisuje ten moduł.|
-|[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|Przestarzałe. NIE UŻYWAĆ. Ponownie ładuje symbole dla tego modułu.|
+|[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|Pobiera [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) , który opisuje ten moduł.|
+|[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|Zbędn. NIE NALEŻY UŻYWAĆ. Ponownie ładuje symbole dla tego modułu.|
 
 ## <a name="remarks"></a>Uwagi
- Informacje o module mogą być wyświetlane w oknie **Moduły** IDE.
+ Informacje o module można wyświetlić w oknie **moduły** środowiska IDE.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

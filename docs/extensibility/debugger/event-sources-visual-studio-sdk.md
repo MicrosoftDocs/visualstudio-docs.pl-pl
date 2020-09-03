@@ -1,5 +1,5 @@
 ---
-title: Źródła zdarzeń (visual studio SDK) | Dokumenty firmy Microsoft
+title: Źródła zdarzeń (Visual Studio SDK) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738771"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>Źródła zdarzeń (visual studio SDK)
-Istnieją dwa źródła zdarzeń: aparat debugowania (DE) i Menedżer debugowania sesji (SDM). Zdarzenia wysyłane z DE mają aparat nie null, podczas gdy zdarzenia wysyłane z SDM mają aparat NULL.
+# <a name="event-sources-visual-studio-sdk"></a>Źródła zdarzeń (Visual Studio SDK)
+Istnieją dwa źródła zdarzeń: aparat debugowania (DE) i Menedżer debugowania sesji (SDM). Zdarzenia wysyłane z niepustego aparatu, podczas gdy zdarzenia wysyłane z modelu SDM mają aparat o wartości NULL.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak wysłać **IDebugProgramCreateEvent2** z DE do SDM.
+Poniższy przykład pokazuje, jak wysłać **IDebugProgramCreateEvent2** od a do modelu SDM.
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();

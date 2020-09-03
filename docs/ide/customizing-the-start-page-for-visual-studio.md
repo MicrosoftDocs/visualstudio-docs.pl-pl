@@ -1,5 +1,5 @@
 ---
-title: Zmienianie środowiska uruchamiania
+title: Zmień środowisko uruchamiania
 ms.date: 02/01/2017
 ms.topic: conceptual
 f1_keywords:
@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567219"
 ---
 # <a name="customize-startup"></a>Dostosowywanie uruchamiania
 
-Środowisko uruchamiania programu Visual Studio można dostosować na kilka różnych sposobów, takich jak otwieranie najnowszego rozwiązania lub po prostu puste środowisko programistyczne.
+Środowisko uruchamiania programu Visual Studio można dostosować na kilka różnych sposobów, np. otwierając najnowsze rozwiązanie lub tylko puste środowisko programistyczne.
 
 ::: moniker range="vs-2017"
 
@@ -32,19 +32,19 @@ Można także pokazać niestandardową stronę początkową, czyli stronę XAML 
 
 ## <a name="to-change-the-startup-item"></a>Aby zmienić element startowy
 
-1. Na pasku menu wybierz pozycję**Opcje** **narzędzi** > .
+1. Na pasku menu wybierz **Narzędzia**  >  **Opcje**.
 
-2. Rozwiń **węzeł Środowisko**, a następnie wybierz pozycję **Startup**.
+2. Rozwiń węzeł **środowisko**, a następnie wybierz polecenie **Uruchamianie**.
 
 ::: moniker range="vs-2017"
 
-3. Na liście **Przy starcie** wybierz element, który ma być wyświetlany po uruchomieniu programu Visual Studio.
+3. Z listy podczas **uruchamiania** wybierz element, który ma być wyświetlany po uruchomieniu programu Visual Studio.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Na **liście Przy starcie otwórz** wybierz, co ma się zdarzyć po uruchomieniu programu Visual Studio. Można wybrać **okno Start** (które pozwala otworzyć nowy lub istniejący projekt), **Najnowsze rozwiązanie**lub **Puste środowisko**.
+3. Na **stronie podczas uruchamiania Otwórz** listę, wybierz, co ma się zdarzyć po uruchomieniu programu Visual Studio. Możesz wybrać z **okna startowego** (który umożliwia otwarcie nowego lub istniejącego projektu), najnowsze **rozwiązanie**lub **puste środowisko**.
 
 ::: moniker-end
 
@@ -52,20 +52,20 @@ Można także pokazać niestandardową stronę początkową, czyli stronę XAML 
 
 ## <a name="to-show-a-custom-start-page"></a>Aby wyświetlić niestandardową stronę początkową
 
-Można [utworzyć własną stronę początkową niestandardowe](../extensibility/creating-a-custom-start-page.md) przy użyciu visual studio SDK lub użyć jednego, który ktoś już utworzył. Na przykład niestandardowe strony startowe można znaleźć w portalu [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=Start%20Pages&sortBy=Downloads).
+Możesz [utworzyć własną niestandardową stronę początkową](../extensibility/creating-a-custom-start-page.md) przy użyciu zestawu Visual Studio SDK lub użyć, która została już utworzona przez kogoś innego. Na przykład możesz znaleźć niestandardowe strony początkowe na [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=Start%20Pages&sortBy=Downloads).
 
-Aby zainstalować niestandardową stronę startową, otwórz plik *vsix* lub skopiuj i wklej pliki stron początkowych do folderu *%USERPROFILE%\Documents\Visual Studio 2017\StartPages* na komputerze.
+Aby zainstalować niestandardową stronę początkową, Otwórz plik *. vsix* lub skopiuj i Wklej pliki strony początkowej do folderu *%USERPROFILE%\Documents\Visual Studio 2017 \ restartpages* na komputerze.
 
-### <a name="to-select-which-custom-start-page-to-display"></a>Aby wybrać niestandardową stronę startową do wyświetlenia
+### <a name="to-select-which-custom-start-page-to-display"></a>Aby wybrać niestandardową stronę początkową do wyświetlenia
 
-1. Na pasku menu wybierz pozycję **Opcje** **narzędzi** > .
+1. Na pasku menu wybierz **Narzędzia** > **Opcje**.
 
-1. Rozwiń **węzeł Środowisko**, a następnie wybierz pozycję **Startup**.
+1. Rozwiń węzeł **środowisko**, a następnie wybierz polecenie **Uruchamianie**.
 
-1. Na liście **Dostosowywanie strony początkowej** wybierz odpowiednią stronę.
+1. Na liście **Dostosuj stronę początkową** wybierz żądaną stronę.
 
 > [!TIP]
-> Jeśli błąd na niestandardowej stronie startowej powoduje awarię programu Visual Studio, można otworzyć program Visual Studio w trybie awaryjnym, a następnie ustawić go tak, aby używał domyślnej strony początkowej. Zobacz [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
+> Jeśli błąd na niestandardowej stronie początkowej powoduje awarię programu Visual Studio, można otworzyć program Visual Studio w trybie awaryjnym, a następnie ustawić go tak, aby korzystał z domyślnej strony początkowej. Zobacz [/safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -1,5 +1,5 @@
 ---
-title: PDB_TYPE | Dokumenty firmy Microsoft
+title: PDB_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1f736d7d9b190fc46945e2f4f7c309b88c3e851f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714102"
 ---
 # <a name="pdb_type"></a>PDB_TYPE
 
-Ta struktura określa informacje o typie pola pobranym z symbolu PDB.
+Ta struktura określa informacje o typie pola pobieranym z symbolu PDB.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,23 +47,23 @@ public struct PDB_TYPE {
 ## <a name="members"></a>Elementy członkowskie
 
 `ulAppDomainID`\
-Identyfikator aplikacji, z której pochodzi symbol. Służy do jednoznacznej identyfikacji wystąpienia aplikacji.
+Identyfikator aplikacji, z której pochodzi symbol. Służy do jednoznacznego identyfikowania wystąpienia aplikacji.
 
 `guidModule`\
 Identyfikator GUID modułu zawierającego to pole.
 
 `symid`\
-Identyfikator symbolu odpowiadający temu polu.
+Identyfikator symbolu, który odnosi się do tego pola.
 
 ## <a name="remarks"></a>Uwagi
 
-Ta struktura pojawia się jako część unii w [strukturze TYPE_INFO,](../../../extensibility/debugger/reference/type-info.md) gdy `dwKind` pole `TYPE_INFO` struktury jest ustawiona na `TYPE_KIND_PDB` (wartość z [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) wyliczenia).
+Ta struktura jest wyświetlana jako część Unii w strukturze [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) , gdy `dwKind` pole `TYPE_INFO` struktury jest ustawione na `TYPE_KIND_PDB` (wartość z wyliczenia [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) ).
 
 ## <a name="requirements"></a>Wymagania
 
-Nagłówek: sh.h
+Nagłówek: sh. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

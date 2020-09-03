@@ -78,7 +78,7 @@
               href: how-to-manually-create-performance-sessions.md
             - name: Identyfikowanie problemów z wydajnością
               href: walkthrough-identifying-performance-problems.md
-            - name: PeopleTrax — Przykład
+            - name: PeopleTrax — przykład
               href: peopletrax-sample-profiling-tools.md
         - name: Konfigurowanie sesji wydajności
           items:
@@ -176,61 +176,61 @@
                       items:
                         - name: .NET Zasady wydajności użycia frameworku
                           href: dotnet-framework-usage-performance-rules.md
-                        - name: 'DA0001: Używaj StringBuilder do łączenia'
+                        - name: 'DA0001: Użyj klasy StringBuilder do konkatenacji'
                           href: da0001-use-stringbuilder-for-concatenations.md
-                        - name: 'DA0005: Częste kolekcje GC2'
+                        - name: 'DA0005: Częste odzyskiwanie pamięci GC2'
                           href: da0005-frequent-gc2-collections.md
-                        - name: 'DA0006: Przesłoń metodę equals typami wartości'
+                        - name: 'DA0006: Przesłoń metodę Equals() dla typów wartości'
                           href: da0006-override-equals-parens-for-value-types.md
-                        - name: 'DA0007: Unikaj używania wyjątków do przepływu sterowania'
+                        - name: 'DA0007: Unikaj używania wyjątków w przepływie sterowania'
                           href: da0007-avoid-using-exceptions-for-control-flow.md
-                        - name: 'DA0010: Expensive GetHashCode'
+                        - name: 'DA0010: Kosztowna funkcja GetHashCode'
                           href: da0010-expensive-gethashcode.md
-                        - name: 'DA0011: Expensive CompareTo'
+                        - name: 'DA0011: Kosztowna funkcja CompareTo'
                           href: da0011-expensive-compareto.md
                         - name: 'DA0012: Znaczne odbicie'
                           href: da0012-significant-amount-of-reflection.md
-                        - name: 'DA0013: Znaczące wykorzystanie String.Split lub String.Substring'
+                        - name: 'DA0013: Znaczące wykorzystanie funkcji String.Split i String.Substring'
                           href: da0013-high-usage-of-string-split-or-string-substring.md
-                        - name: 'DA0018: aplikacja 32-bitowa działająca w limitach pamięci zarządzanych przez proces'
+                        - name: 'DA0018: Działająca aplikacja 32-bitowa zbliżyła się do limitu pamięci zarządzanej dla procesu'
                           href: da0018-32-bit-application-running-at-process-managed-memory-limits.md
-                        - name: 'DA0021: Wysoki stopień odzyskiwania pamięci Gen 1'
+                        - name: 'DA0021: Duża częstotliwość odzyskiwania pamięci 1. generacji'
                           href: da0021-high-rate-of-gen-1-garbage-collections.md
-                        - name: 'DA0022: Wysoki stopień wyrzucania elementów bezużytecznych Gen 2'
+                        - name: 'DA0022: Duża częstotliwość odzyskiwania pamięci 2. generacji'
                           href: da0022-high-rate-of-gen-2-garbage-collections.md
-                        - name: 'DA0023: Wysokie wykorzystanie czasu GC CPU'
+                        - name: 'DA0023: Duże zużycie czasu procesora przez odzyskiwanie pamięci'
                           href: da0023-high-gc-cpu-time.md
-                        - name: 'DA0024: Nadmierne wykorzystanie czasu GC CPU'
+                        - name: 'DA0024: Nadmierne zużycie czasu procesora przez odzyskiwanie pamięci'
                           href: da0024-excessive-gc-cpu-time.md
-                        - name: 'DA0038: Wysoka liczba rywalizacji blokad'
+                        - name: 'DA0038: Wysoki współczynnik rywalizacji o blokadę'
                           href: da0038-high-rate-of-lock-contentions.md
-                        - name: 'DA0039: Bardzo wysoka liczba rywalizacji blokad'
+                        - name: 'DA0039: Bardzo wysoki współczynnik rywalizacji o blokadę'
                           href: da0039-very-high-rate-of-lock-contentions.md
                     - name: Reguły wydajności pamięci i stronicowania
                       items:
                         - name: Reguły wydajności pamięci i stronicowania
                           href: memory-and-paging-performance-rules.md
-                        - name: 'DA0014: Wyjątkowo wysoki stopień stronicowania aktywnej pamięci na dysku'
+                        - name: 'DA0014: Skrajnie intensywne stronicowanie aktywnej pamięci na dysk'
                           href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
-                        - name: 'DA0017: Wysoki stopień stronicowania aktywnej pamięci na dysku'
+                        - name: 'DA0017: Intensywne stronicowanie aktywnej pamięci na dysk'
                           href: da0017-high-rates-of-paging-active-memory-to-disk.md
                     - name: Reguły korzystania z narzędzi profilowania
                       items:
                         - name: Reguły korzystania z narzędzi profilowania
                           href: profiling-tools-usage-rules.md
-                        - name: 'DA0002: brakuje VSPerfCorProf.dll'
+                        - name: 'DA0002: Brak biblioteki VSPerfCorProf.dll'
                           href: da0002-vsperfcorprof-dll-is-missing.md
                         - name: 'DA0003: Wiele przykładów jądra'
                           href: da0003-many-kernel-samples.md
-                        - name: 'DA0004: Znaczące wykorzystanie czasu procesora'
+                        - name: 'DA0004: Znaczące użycie procesora'
                           href: da0004-high-processor-usage.md
-                        - name: 'DA0008: Kilka zebranych przykładów'
+                        - name: 'DA0008: Zebrano kilka próbek'
                           href: da0008-few-samples-collected.md
-                        - name: 'DA0026: Nadmierne przetwarzanie czasu procesora CPU w trybie jądra'
+                        - name: 'DA0026: Nadmierne zużycie czasu procesora w trybie jądra'
                           href: da0026-excessive-kernel-cpu-time-processing.md
-                        - name: 'DA0029: Nieobsługiwana wersja CLR'
+                        - name: 'DA0029: Nieobsługiwana wersja środowiska CLR'
                           href: da0029-unsupported-clr-version.md
-                        - name: 'DA0030: Gromadzenie pomiarów interakcji warstwowej dla projektów bazy danych'
+                        - name: 'DA0030: Zbierz miary interakcji warstw dla projektów bazy danych'
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
                     - name: Reguły wydajności monitorowania zasobu
                       items:
@@ -238,15 +238,15 @@
                           href: resource-monitoring-performance-rules.md
                         - name: 'DA0501: Średnie wykorzystanie CPU przez proces poddawany profilowaniu.'
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0502: Maksymalne wykorzystanie CPU przez proces poddawany profilowaniu'
+                        - name: 'DA0502: Maksymalne użycie procesora przez profilowany proces'
                           href: da0502-maximum-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0503: Średni rozmiar zestawu roboczego w bajtach dla procesu poddawanego profilowaniu'
+                        - name: 'DA0503: Średni zestaw roboczy w bajtach dla profilowanego procesu'
                           href: da0503-average-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: 'DA0504: Maksymalny rozmiar zestawu roboczego w bajtach dla procesu poddawanego profilowaniu'
+                        - name: 'DA0504: Maksymalny zestaw roboczy w bajtach dla profilowanego procesu'
                           href: da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: 'DA0505: Średnie bajty prywatne przydzielone dla procesu poddawanego profilowaniu'
+                        - name: 'DA0505: Średnia liczba bajtów prywatnych przydzielonych dla profilowanego procesu'
                           href: da0505-average-private-bytes-allocated-for-the-process-being-profiled.md
-                        - name: 'DA0506: Maksymalne bajty prywatne przydzielone dla procesu poddawanego profilowaniu'
+                        - name: 'DA0506: Maksymalna liczba bajtów prywatnych przydzielonych dla profilowanego procesu'
                           href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
             - name: Widoki raportu wydajności
               items:
@@ -322,25 +322,25 @@
                       href: dotnet-memory-allocations-view.md
                     - name: Widok okresu istnienia obiektu
                       href: object-lifetime-view.md
-                    - name: Widok drzewa wywołań - Próbkowanie
+                    - name: Widok drzewa wywołań — próbkowanie
                       href: call-tree-view-dotnet-memory-sampling-data.md
-                    - name: Widok modułów - Próbkowanie
+                    - name: Widok modułów — próbkowanie
                       href: modules-view-dotnet-memory-sampling-data.md
-                    - name: Widok wywołujący/wywoływany - Próbkowanie
+                    - name: Widok wywołujący/wywoływany — próbkowanie
                       href: caller-callee-view-dotnet-memory-sampling-data.md
-                    - name: Widok funkcji - Próbkowanie
+                    - name: Widok funkcji — próbkowanie
                       href: functions-view-dotnet-memory-sampling-data.md
-                    - name: Widok linii - Próbkowanie
+                    - name: Widok wierszy — próbkowanie
                       href: lines-view-dotnet-memory-sampling-data.md
-                    - name: Widok wskaźników instrukcji (IP) - Próbkowanie
+                    - name: Widok wskaźników instrukcji (IP) — próbkowanie
                       href: instruction-pointers-ips-view-dotnet-memory-sampling-data.md
-                    - name: Widok drzewa wywołań - Instrumentacja
+                    - name: Widok drzewa wywołań — instrumentacja
                       href: call-tree-view-dotnet-memory-instrumentation-data.md
-                    - name: Widok modułów - Instrumentacja
+                    - name: Widok modułów — instrumentacja
                       href: modules-view-dotnet-memory-instrumentation-data.md
-                    - name: Widok wywołujący/wywoływany - Instrumentacja
+                    - name: Widok wywołujący/wywoływany — instrumentacja
                       href: caller-callee-view-net-memory-instrumentation-data.md
-                    - name: Widok funkcji - Instrumentacja
+                    - name: Widok funkcji — instrumentacja
                       href: functions-view-dotnet-memory-instrumentation-data.md
                 - name: Widok danych kontencji zasobów
                   items:
@@ -356,11 +356,11 @@
                       href: caller-callee-view-contention-data.md
                     - name: Widok funkcji
                       href: functions-view-contention-data.md
-                    - name: Widok szczegółów zasobów
+                    - name: Widok szczegółów zasobu
                       href: resource-details-view-contention-data.md
                     - name: Widok szczegółów wątku
                       href: thread-details-view-contention-data.md
-                    - name: Widok kontencji zasobów
+                    - name: Widok rywalizacji o zasoby
                       href: resource-contentions-view-contention-data.md
                     - name: Widok procesu
                       href: process-view-contention-data.md
@@ -416,9 +416,9 @@
               items:
                 - name: Profilowanie aplikacji autonomicznych
                   href: command-line-profiling-of-stand-alone-applications.md
-                - name: Zbieranie statystyk aplikacji za pomocą metody pobierania próbek
+                - name: Zbieranie statystyk aplikacji przez próbkowanie
                   items:
-                    - name: Zbieranie statystyk aplikacji za pomocą metody pobierania próbek
+                    - name: Zbieranie statystyk aplikacji przez próbkowanie
                       href: collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line.md
                     - name: Uruchamianie aplikacji autonomicznej i zbieranie statystyk aplikacji
                       href: how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md
@@ -446,9 +446,9 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md
                     - name: Dołączanie profilera do natywnej aplikacji i zbieranie danych współbieżności
                       href: how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md
-                - name: Zbieranie danych pamięci .NET Framework
+                - name: Zbieranie danych pamięci programu .NET Framework
                   items:
-                    - name: Zbieranie danych pamięci .NET Framework
+                    - name: Zbieranie danych pamięci programu .NET Framework
                       href: collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md
                     - name: Uruchamianie aplikacji .NET Framework z profilerem do zbierania danych pamięci
                       href: how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md
@@ -466,9 +466,9 @@
                   href: command-line-profiling-of-aspnet-web-applications.md
                 - name: Szybkie profilowanie witryny sieci Web za pomocą VSPerfASPNETCmd
                   href: rapid-web-site-profiling-with-vsperfaspnetcmd.md
-                - name: Zbieranie statystyk aplikacji za pomocą metody pobierania próbek
+                - name: Zbieranie statystyk aplikacji przez próbkowanie
                   items:
-                    - name: Zbieranie statystyk aplikacji za pomocą metody pobierania próbek
+                    - name: Zbieranie statystyk aplikacji przez próbkowanie
                       href: collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md
                     - name: Dołączanie profilera do aplikacji internetowej ASP.NET w celu zbierania statystyk aplikacji
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md
@@ -502,9 +502,9 @@
               items:
                 - name: Usługi profilowania
                   href: command-line-profiling-of-services.md
-                - name: Zbieranie statystyk aplikacji za pomocą metody pobierania próbek
+                - name: Zbieranie statystyk aplikacji przez próbkowanie
                   items:
-                    - name: Zbieranie statystyk aplikacji za pomocą metody pobierania próbek
+                    - name: Zbieranie statystyk aplikacji przez próbkowanie
                       href: collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md
                     - name: Dołączanie profilera do usługi .NET w celu zbierania statystyk aplikacji
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md
@@ -526,9 +526,9 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md
                     - name: Dołączanie profilera do usługi natywnej w celu zbierania danych współbieżności
                       href: how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md
-                - name: Zbieranie danych pamięci .NET
+                - name: Zbieranie danych pamięci platformy .NET
                   items:
-                    - name: Zbieranie danych pamięci .NET
+                    - name: Zbieranie danych pamięci platformy .NET
                       href: collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md
                     - name: Dołączanie profilera do usługi .NET w celu zbierania danych pamięci
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md
@@ -724,9 +724,9 @@
               href: memory-management-time.md
             - name: Obecne są liczne kategorie
               href: multiple-categories-are-present.md
-            - name: Nie ma do pokazania żadnej aktywności dysku
+            - name: Brak aktywności dysku do pokazania
               href: no-disk-activity-to-show-threads-view.md
-            - name: Nie ma do pokazania żadnej aktywności wątku
+            - name: Brak aktywności wątku do pokazania
               href: no-thread-activity-to-show-threads-view.md
             - name: Procent redukcji szumu
               href: noise-reduction-percentage.md
@@ -852,5 +852,5 @@
                   href: cvwritemessage-function.md
         - name: Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd)
           href: concurrency-visualizer-command-line-utility-cvcollectioncmd.md
-    - name: Analiza zużycia energii
+    - name: Analizowanie zużycia energii
       href: analyze-energy-use-in-store-apps.md

@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Odejmij | Dokumenty firmy Microsoft
+title: 'IDebugMemoryContext2:: Odejmij | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c858beb8c3f9f587633dbae8b3b1fe73fd789663
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727436"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
-Odejmuje określoną wartość od bieżącego kontekstu i zwraca nowy kontekst.
+Odejmuje określoną wartość z bieżącego kontekstu i zwraca nowy kontekst.
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,18 +44,18 @@ int Subtract(
 
 ## <a name="parameters"></a>Parametry
 `dwCount`\
-[w] Liczba bajtów pamięci do dekrementacji.
+podczas Liczba bajtów pamięci do zmniejszenia.
 
 `ppMemCxt`\
-[na zewnątrz] Zwraca nowy obiekt [IDebugMemoryContext2.](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
+określoną Zwraca nowy obiekt [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Kontekst pamięci jest adresem, więc odejmowanie wartości od adresu tworzy nowy adres, który wymaga nowego interfejsu kontekstu.
+ Kontekst pamięci to adres, więc odjęcie wartości od adresu powoduje utworzenie nowego adresu, który wymaga nowego interfejsu kontekstu.
 
- Ta metoda musi zawsze generować nowy kontekst, nawet jeśli wynikowy adres znajduje się poza przestrzenią pamięci skojarzoną z tym kontekstem. Jedynym wyjątkiem jest, jeśli nie pamięci można przydzielić `ppMemCxt` dla nowego kontekstu lub jeśli jest null wartość (co jest błędem).
+ Ta metoda musi zawsze generować nowy kontekst, nawet jeśli otrzymany adres znajduje się poza przestrzenią pamięci skojarzoną z tym kontekstem. Jedynym wyjątkiem jest to, że nie można przydzielić pamięci dla nowego kontekstu lub jeśli `ppMemCxt` jest wartością null (która jest błędem).
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

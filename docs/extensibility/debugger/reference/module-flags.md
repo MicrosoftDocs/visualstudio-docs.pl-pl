@@ -1,5 +1,5 @@
 ---
-title: MODULE_FLAGS | Dokumenty firmy Microsoft
+title: MODULE_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 78c7f24d64ffca667706c3b2fcebeffad16a9d85
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714257"
 ---
 # <a name="module_flags"></a>MODULE_FLAGS
-Służy do opisywania modułu.
+Używane do opisywania modułu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -52,32 +52,32 @@ public enum enum_MODULE_FLAGS { 
 
 ## <a name="fields"></a>Pola
  `MODULE_FLAG_NONE`\
- Określa brak modułu.
+ Określa Brak modułu.
 
  `MODULE_FLAG_SYSTEM`\
  Określa moduł systemowy.
 
  `MODULE_FLAG_SYMBOLS`\
- Określa moduł symbolu.
+ Określa moduł symboli.
 
  `MODULE_FLAG_64BIT`\
  Określa moduł 64-bitowy.
 
  `MODULE_FLAG_OPTIMIZED`\
- Określa, że moduł został zoptymalizowany. Ten stan jest odzwierciedlony w oknie **Moduły.**
+ Określa, że moduł został zoptymalizowany. Ten stan jest widoczny w oknie **moduły** .
 
  `MODULE_FLAG_UNOPTIMIZED`\
- Określa, że moduł nie został zoptymalizowany. Ten stan jest odzwierciedlony w oknie **Moduły.** Jest to stan domyślny.
+ Określa, że moduł nie został zoptymalizowany. Ten stan jest widoczny w oknie **moduły** . Jest to stan domyślny.
 
 ## <a name="remarks"></a>Uwagi
- Używany dla `m_dwModuleFlags` członka struktury [MODULE_INFO.](../../../extensibility/debugger/reference/module-info.md)
+ Używane dla `m_dwModuleFlags` elementu członkowskiego struktury [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) .
 
- Flagi te mogą być łączone z bitowym `OR`.
+ Flagi te mogą być połączone z bitową `OR` .
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

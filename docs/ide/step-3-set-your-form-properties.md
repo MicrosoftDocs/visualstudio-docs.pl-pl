@@ -1,5 +1,5 @@
 ---
-title: 'Krok 3: Ustawianie właściwości formularza'
+title: Krok 3. Ustawianie właściwości formularza
 ms.date: 08/30/2019
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 ms.topic: tutorial
@@ -11,72 +11,72 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 82dbef4baee72be8ff96f83e436b2587e9a020ea
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579853"
 ---
-# <a name="step-3-set-your-form-properties"></a>Krok 3: Ustawianie właściwości formularza
+# <a name="step-3-set-your-form-properties"></a>Krok 3. Ustawianie właściwości formularza
 
-Następnie użyj okna **Właściwości,** aby zmienić wygląd formularza.
+Następnie użyj okna **Właściwości** , aby zmienić wygląd formularza.
 
 ## <a name="how-to-set-your-form-properties"></a>Jak ustawić właściwości formularza
 
-1. Upewnij się, że korzystasz z **programu Windows Forms Designer**. W zintegrowanym środowisku programistycznym programu Visual Studio (IDE) wybierz kartę **Form1.cs [Projekt]** (lub kartę **Form1.vb [Projekt]** w języku Visual Basic).
+1. Upewnij się, że szukasz **Projektant formularzy systemu Windows**. W zintegrowanym środowisku programistycznym (IDE) programu Visual Studio wybierz kartę **Form1.cs [Design]** (lub kartę **Form1. vb [Design]** w Visual Basic).
 
-1. Wybierz dowolne miejsce w formularzu **Form1,** aby go zaznaczyć. Spójrz na **właściwości** okna, które powinny być teraz wyświetlane właściwości formularza. Formularze mają różne właściwości. Można na przykład ustawić kolor pierwszego planu i tła, tekst tytułu wyświetlany u góry formularza, rozmiar formularza i inne właściwości.
-
-   > [!NOTE]
-   > Jeśli okno **Właściwości** nie jest wyświetlane, zatrzymaj aplikację, wybierając kwadratowy przycisk **Zatrzymaj debugowanie** na pasku narzędzi lub po prostu zamknij okno. Jeśli aplikacja została zatrzymana i nadal nie widzisz okna **Właściwości,** na pasku menu wybierz polecenie **Wyświetl** > **okno Właściwości**.
-
-1. Po wybraniu formularza znajdź **właściwość Tekst** w oknie **Właściwości.** W zależności od sposobu sortowania listy może być konieczne przewinięcie w dół. Wybierz **pozycję Tekst**, wpisz Podgląd **obrazów**, a następnie wybierz pozycję **Enter**.  Formularz powinien mieć teraz **podgląd** obrazu tekstu na pasku tytułu, a okno **Właściwości** powinno wyglądać podobnie do poniższego zrzutu ekranu.
-
-    ![Okno Właściwości](../ide/media/express_edittextproperty.png)<br>
-   ***Properties*** *Okno* Właściwości
+1. Wybierz dowolne miejsce wewnątrz formularza **Form1** , aby go zaznaczyć. Sprawdź okno **Właściwości** , które teraz powinno być wyświetlane właściwości formularza. Formularze mają różne właściwości. Na przykład można ustawić kolor pierwszego planu i tła, tekst tytułu, który pojawia się w górnej części formularza, rozmiar formularza i inne właściwości.
 
    > [!NOTE]
-   > Właściwości można zamówić w widoku **kategoryzowanym** lub **alfabetycznym.** Można przełączać się między tymi dwoma **widokami** za pomocą przycisków w oknie Właściwości. W tym samouczku łatwiej jest znaleźć właściwości w widoku **alfabetycznym.**
+   > Jeśli okno **Właściwości** nie zostanie wyświetlone, Zatrzymaj aplikację, wybierając przycisk **przerywaj debugowania** na pasku narzędzi lub po prostu Zamknij okno. Jeśli aplikacja jest zatrzymana i nadal nie widzisz okna **Właściwości** , na pasku menu wybierz polecenie **Wyświetl**  >  **okno właściwości**.
 
-1. Wróć do **programu Windows Forms Designer**. Wybierz prawy dolny rączka przeciągania formularza, który jest małym białym kwadratem w prawym dolnym połówek formularza i jest wyświetlany w następujący sposób.
+1. Po wybraniu formularza Znajdź właściwość **tekst** w oknie **Właściwości** . W zależności od tego, jak lista jest sortowana, może być konieczne przewinięcie w dół. Wybierz **tekst**, wpisz **Podgląd obrazów**, a następnie wybierz **klawisz ENTER**.  Formularz powinien teraz mieć **obraz** tekstu na pasku tytułu, a okno **Właściwości** powinno wyglądać podobnie do poniższego zrzutu ekranu.
+
+    ![Okno właściwości](../ide/media/express_edittextproperty.png)<br>
+   ***Properties*** *Okno* właściwości
+
+   > [!NOTE]
+   > Właściwości mogą być uporządkowane według **kategorii** lub widoku **alfabetycznego** . Można przełączać się między tymi dwoma widokami za pomocą przycisków w oknie **Właściwości** . W tym samouczku łatwiej jest znaleźć właściwości w widoku **alfabetycznym** .
+
+1. Wróć do **Projektant formularzy systemu Windows**. Wybierz prawy dolny uchwyt przeciągania, czyli mały biały kwadrat w prawym dolnym rogu formularza i pojawia się w następujący sposób.
 
     ![Przeciągnij uchwyt](../ide/media/express_bottomrt_drag.png)<br>
    *Przeciągnij uchwyt*
 
-    Przeciągnij uchwyt, aby zmienić rozmiar formularza, aby formularz był szerszy i nieco wyższy.
+    Przeciągnij uchwyt, aby zmienić rozmiar formularza, tak aby forma była szersza i nieco większa.
 
-1. Spójrz na **właściwości** okna i zauważyć, że **Size** właściwość została zmieniona. Właściwość **Rozmiar** zmienia się przy każdej zmianie rozmiaru formularza. Spróbuj przeciągnąć uchwyt formularza, aby zmienić jego rozmiar do rozmiaru formularza około **550, 350** (nie trzeba dokładnie), co powinno działać dobrze dla tego projektu. Alternatywnie można wprowadzić wartości bezpośrednio we właściwości **Size,** a następnie wybrać klawisz **Enter.**
+1. Sprawdź okno **Właściwości** i Zauważ, że właściwość **size** została zmieniona. Właściwość **size** zmienia się za każdym razem, gdy zmieniany jest rozmiar formularza. Spróbuj przeciągnąć uchwyt formularza, aby zmienić jego rozmiar na rozmiar formularza około **550, 350** (nie musi być dokładne), który powinien być dobrze przydatny dla tego projektu. Alternatywnie można wprowadzić wartości bezpośrednio we właściwości **size** , a następnie wybrać klawisz **Enter** .
 
-1. Ponownie uruchom aplikację. Pamiętaj, że możesz użyć dowolnej z następujących metod, aby uruchomić aplikację.
+1. Uruchom aplikację ponownie. Pamiętaj, że możesz użyć dowolnej z poniższych metod, aby uruchomić aplikację.
 
-   - Wybierz klawisz **F5.**
+   - Wybierz klawisz **F5** .
 
-   - Na pasku menu wybierz polecenie **Debugowanie** > **start debugowania**.
+   - Na pasku menu wybierz **Debuguj**  >  **Rozpocznij debugowanie**.
 
-   - Na pasku narzędzi wybierz przycisk **Rozpocznij debugowanie,** który jest wyświetlany w następujący sposób.
+   - Na pasku narzędzi wybierz przycisk **Rozpocznij debugowanie** , który pojawia się w następujący sposób.
 
-      ![Przycisk Uruchamianie paska narzędzi Debugowania](../ide/media/express_icondebug.png)<br>
-     ***Przycisk Uruchamianie paska narzędzi Debugowania*** *toolbar button*
+      ![Przycisk paska narzędzi Rozpocznij debugowanie](../ide/media/express_icondebug.png)<br>
+     *Przycisk paska narzędzi* ***Rozpocznij debugowanie***
 
-     Podobnie jak wcześniej, IDE tworzy i uruchamia aplikację i pojawi się okno.
+     Tak jak wcześniej, środowisko IDE kompiluje i uruchamia aplikację, a zostanie wyświetlone okno.
 
-1. Przed przejściem do następnego kroku zatrzymaj aplikację, ponieważ ide nie pozwala na zmianę aplikacji, gdy jest uruchomiona. Pamiętaj, że możesz użyć dowolnej z następujących metod, aby zatrzymać aplikację.
+1. Przed przejściem do następnego kroku Zatrzymaj aplikację, ponieważ środowisko IDE nie pozwoli na zmianę aplikacji podczas jej działania. Pamiętaj, że możesz użyć dowolnej z poniższych metod, aby zatrzymać aplikację.
 
-   - Na pasku narzędzi wybierz przycisk **Zatrzymaj debugowanie.**
+   - Na pasku narzędzi wybierz przycisk **Zatrzymaj debugowanie** .
 
-   - Na pasku menu wybierz pozycję **Debugowanie** > **zatrzymaj debugowanie**.
+   - Na pasku menu wybierz **Debuguj**  >  **Zatrzymaj debugowanie**.
 
-   - Użyj klawiatury i naciśnij klawisz **Shift**+**F5**.
+   - Użyj klawiatury i naciśnij klawisz **SHIFT** + **F5**.
 
-   - Wybierz przycisk **X** w górnym rogu okna **Podgląd obrazu.**
+   - Wybierz przycisk **X** w górnym rogu okna **przeglądarki obrazów** .
 
 ## <a name="next-steps"></a>Następne kroki
 
-* Aby przejść do następnego kroku samouczka, zobacz **[Krok 4: Rozmieść formularz za pomocą kontrolki TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)**.
+* Aby przejść do następnego kroku samouczka, zobacz **[krok 4. układ formularza przy użyciu formantu TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)**.
 
-* Aby powrócić do poprzedniego kroku samouczka, zobacz [Krok 2: Uruchamianie aplikacji przeglądarki obrazów](../ide/step-2-run-your-program.md).
+* Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 2. Uruchamianie aplikacji Przeglądarka obrazów](../ide/step-2-run-your-program.md).
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Samouczek 2: Tworzenie quizu matematycznego z czasem](tutorial-2-create-a-timed-math-quiz.md)
-* [samouczek 3: Tworzenie pasującej gry](tutorial-3-create-a-matching-game.md)
+* [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](tutorial-2-create-a-timed-math-quiz.md)
+* [Samouczek 3: Tworzenie gry w dopasowywanie](tutorial-3-create-a-matching-game.md)

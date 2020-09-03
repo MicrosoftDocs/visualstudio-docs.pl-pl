@@ -14,10 +14,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bb2b874f7bbe94e383e9e7fba755dcc373a93150
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477047"
 ---
 # <a name="commandtable-element"></a>CommandTable, element
@@ -48,8 +48,8 @@ Polecenie jest głównym elementem pliku. vsct. Jest to plik, który definiuje r
   
 | Atrybut |                                                                                                                   Opis                                                                                                                   |
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   xmlns   |                                   Wymagany. Przestrzenie nazw XML:<br /><br /> `xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"`<br /><br /> `xmlns:xs="<http://www.w3.org/2001/XMLSchema>"`                                   |
-| language  | Opcjonalny. Atrybut Language może służyć do określania domyślnego języka wszystkich \<ciągów > elementów w tabeli poleceń.  Jeśli język nie zostanie określony, będzie używany język bieżącego procesu:<br /><br /> Language = "pl-US" |
+|   'xmlns   |                                   Wymagany. Przestrzenie nazw XML:<br /><br /> `xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"`<br /><br /> `xmlns:xs="<http://www.w3.org/2001/XMLSchema>"`                                   |
+| language  | Opcjonalny. Atrybut Language może służyć do określania języka domyślnego wszystkich \<Strings> elementów w tabeli poleceń.  Jeśli język nie zostanie określony, będzie używany język bieżącego procesu:<br /><br /> Language = "pl-US" |
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
@@ -69,7 +69,7 @@ Polecenie jest głównym elementem pliku. vsct. Jest to plik, który definiuje r
   
 |Element|Opis|  
 |-------------|-----------------|  
-|None||  
+|Brak||  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

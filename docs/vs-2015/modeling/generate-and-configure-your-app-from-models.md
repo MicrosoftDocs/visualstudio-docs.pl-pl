@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ea9e28c55b608235d49096e4ef99cd30081eda0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666177"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generowanie i konfigurowanie aplikacji na podstawie modeli
@@ -24,7 +24,7 @@ Można generować lub konfigurować części aplikacji z modelu. Model może by�
  Model reprezentuje wymagania bezpośrednio od kodu. Dzięki wykorzystaniu zachowania aplikacji bezpośrednio z modelu, można reagować na zmienione wymagania znacznie szybciej i niezawodnie niż przez aktualizację kodu. Chociaż wymaga się, aby skonfigurować wyprowadzanie, ta inwestycja jest zwracana, jeśli oczekujesz zmian w wymaganiach lub jeśli planujesz kilka wariantów produktu.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generowanie kodu aplikacji z modelu
- Najprostszym sposobem generowania kodu jest użycie szablonów tekstowych. Można wygenerować kod w tym samym rozwiązaniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], w którym zachowujesz model. Aby uzyskać więcej informacji, zobacz:
+ Najprostszym sposobem generowania kodu jest użycie szablonów tekstowych. Można wygenerować kod w tym samym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązaniu, w którym jest zachowywany model. Aby uzyskać więcej informacji, zobacz:
 
 - [Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
@@ -45,7 +45,7 @@ Można generować lub konfigurować części aplikacji z modelu. Model może by�
 
 - [Odczytywanie modelu UML w kodzie programu](../modeling/read-a-uml-model-in-program-code.md)
 
-- [Instrukcje: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Porady: otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
   Ta metoda może być również stosowana przyrostowo, ale na początku występuje więcej pracy. Należy napisać kod, który będzie odczytywać model, i skonfigurować platformę, która umożliwia dostęp do elementów zmiennych. Tworzenie części zmiennych ogólnych jest droższe niż generowanie kodu.
 

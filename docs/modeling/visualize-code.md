@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9886ea905a4997d5735e4dd2cabbfc4798a5c4c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535879"
 ---
 # <a name="visualize-code"></a>Tworzenie wizualizacji kodu
 
-Narzędzia do wizualizacji i modelowania w programie Visual Studio ułatwiają zapoznanie się z istniejącym kodem i opisywanie aplikacji. Dzięki temu można wizualnie dowiedzieć się, jak zmiany mogą wpływać na kod i pomóc w ocenie pracy i zagrożeń wynikających z tych zmian. Przykład:
+Narzędzia do wizualizacji i modelowania w programie Visual Studio ułatwiają zapoznanie się z istniejącym kodem i opisywanie aplikacji. Dzięki temu można wizualnie dowiedzieć się, jak zmiany mogą wpływać na kod i pomóc w ocenie pracy i zagrożeń wynikających z tych zmian. Na przykład:
 
 - Aby zrozumieć relacje w kodzie, zamapuj je wizualnie.
 
@@ -40,7 +40,7 @@ Aby sprawdzić, które wersje programu Visual Studio obsługują każdą funkcj�
 |**Opis struktur klas:**<br /><br /> Wizualizuj strukturę klas w projekcie, tworząc diagramy klas z kodu.|[Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)|
 |**Opisz projekt systemu wysokiego poziomu i sprawdź poprawność kodu dla tego projektu:**<br /><br /> Opisz projekt systemu wysokiego poziomu i jego zamierzone zależności, tworząc diagramy zależności. Sprawdź poprawność kodu względem tego projektu, aby upewnić się, że zależności w kodzie pozostają spójne z projektem.|- [Tworzenie diagramów zależności na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />- [Sprawdzanie poprawności kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
 - [Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)

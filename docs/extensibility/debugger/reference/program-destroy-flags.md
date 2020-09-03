@@ -1,5 +1,5 @@
 ---
-title: PROGRAM_DESTROY_FLAGS | Dokumenty firmy Microsoft
+title: PROGRAM_DESTROY_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c2ddb00e2cf70055c34335d8f2123004eb031a05
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713845"
 ---
 # <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
-Wylicza prawidłowe wartości programu zniszczyć flagi.
+Wylicza prawidłowe wartości flag niszczenia programu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,15 +42,15 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
 
 ## <a name="fields"></a>Pola
  `PROGRAM_DESTROY_CONTINUE_DEBUGGING`\
- Zniszcz program, ale nadal debugować.
+ Zniszcz program, ale Kontynuuj debugowanie.
 
 ## <a name="remarks"></a>Uwagi
- Wyliczenie jest zwracany przez [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) metody.
+ Wyliczenie jest zwracane przez metodę [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) .
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: Msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

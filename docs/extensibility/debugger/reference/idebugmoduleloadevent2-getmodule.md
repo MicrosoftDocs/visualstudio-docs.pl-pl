@@ -1,5 +1,5 @@
 ---
-title: IDebugModuleLoadEvent2::GetModule | Dokumenty firmy Microsoft
+title: 'IDebugModuleLoadEvent2:: GetModule | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b90547709e5524ce005b0598b0b8d482cfecf173
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726727"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
@@ -45,16 +45,16 @@ int GetModule( 
 
 ## <a name="parameters"></a>Parametry
 `pModule`\
-[na zewnątrz] Zwraca obiekt [IDebugModule2,](../../../extensibility/debugger/reference/idebugmodule2.md) który reprezentuje moduł, który jest ładowanie lub zwalnianie.
+określoną Zwraca obiekt [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) , który reprezentuje moduł, który jest ładowany lub zwalnia.
 
 `pbstrDebugMessage`\
-[w, na zewnątrz] Zwraca opcjonalny komunikat opisujący to zdarzenie. Jeśli ten parametr jest wartością null, nie jest wymagany żaden komunikat.
+[in. out] Zwraca opcjonalny komunikat opisujący to zdarzenie. Jeśli ten parametr jest wartością null, nie jest wymagany żaden komunikat.
 
 `pbLoad`\
-[w, na zewnątrz] Nonzero`TRUE`( ) jeśli moduł jest`FALSE`załadunku i zero ( ) jeśli moduł jest rozładunku. Jeśli ten parametr jest wartością null, nie jest wymagany stan.
+[in. out] Różna od zera ( `TRUE` ), jeśli moduł jest ładowany i zero ( `FALSE` ), jeśli moduł zostanie wyładowany. Jeśli ten parametr ma wartość null, nie jest wymagany żaden stan.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)

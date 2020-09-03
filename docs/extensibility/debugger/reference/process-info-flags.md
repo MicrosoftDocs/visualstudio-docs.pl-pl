@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FLAGS | Dokumenty firmy Microsoft
+title: PROCESS_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 36c4cbbe17a109eacd69b76500e8c10d21d2d554
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713962"
 ---
 # <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
@@ -52,25 +52,25 @@ enum enum_PROCESS_INFO_FLAGS { 
 Wskazuje, że proces jest procesem systemowym.
 
 `PIFLAG_DEBUGGER_ATTACHED`\
-Wskazuje, że proces jest debugowany przez debugera. Może to [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] być debuger lub może to być inny debuger, na przykład WinDbg.
+Wskazuje, że proces jest debugowany przez debuger. Może być [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugerem lub może być innym debugerem, na przykład WinDbg.
 
 `PIFLAG_PROCESS_STOPPED`\
-Wskazuje, że proces został zatrzymany. Prawidłowy `PIFLAG_DEBUGGER_ATTACHED` tylko wtedy, gdy jest również określony. Dostępne w programie Visual Studio 2005 i nowszych.
+Wskazuje, że proces jest zatrzymany. Prawidłowy tylko wtedy, gdy `PIFLAG_DEBUGGER_ATTACHED` jest również określony. Dostępne w programie Visual Studio 2005 i nowszych.
 
 `PIFLAG_PROCESS_RUNNING`\
-Wskazuje, że proces jest uruchomiony. Prawidłowy `PIFLAG_DEBUGGER_ATTACHED` tylko wtedy, gdy jest również określony. Dostępne w programie Visual Studio 2005 i nowszych.
+Wskazuje, że proces jest uruchomiony. Prawidłowy tylko wtedy, gdy `PIFLAG_DEBUGGER_ATTACHED` jest również określony. Dostępne w programie Visual Studio 2005 i nowszych.
 
 ## <a name="remarks"></a>Uwagi
 
-Używany dla `Flags` członka struktury [PROCESS_INFO.](../../../extensibility/debugger/reference/process-info.md)
+Używane dla `Flags` elementu członkowskiego struktury [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) .
 
-Flagi te mogą być łączone z bitowym `OR`.
+Flagi te mogą być połączone z bitową `OR` .
 
 ## <a name="requirements"></a>Wymagania
 
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

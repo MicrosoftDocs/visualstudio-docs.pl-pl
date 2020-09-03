@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22a6c9cb035637347ffd501b5cf3b1038cd09369
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535944"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Użycie programu Visual Studio ModelBus w szablonie tekstu
@@ -257,7 +257,7 @@ Masz teraz dostęp do języka DSL, który można uzyskać za pomocą szablonów 
 
 1. Utwórz nowy DSL przy użyciu szablonu rozwiązania minimalnego języka. Nazwij język MBConsumer i ustaw rozszerzenie nazwy pliku na ". Wykorzystaj".
 
-2. W projekcie DSL Dodaj odwołanie do zestawu MBProvider DSL. Kliknij prawym przyciskiem myszy `MBConsumer\Dsl\References` , a następnie kliknij pozycję **Dodaj odwołanie**. Na karcie **Przeglądaj** Znajdź pozycję`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
+2. W projekcie DSL Dodaj odwołanie do zestawu MBProvider DSL. Kliknij prawym przyciskiem myszy  `MBConsumer\Dsl\References` , a następnie kliknij pozycję **Dodaj odwołanie**. Na karcie **Przeglądaj** Znajdź pozycję `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
 
     Dzięki temu można utworzyć kod, który używa innego DSL. Jeśli chcesz utworzyć odwołania do kilku językami DSL, Dodaj je również.
 

@@ -12,9 +12,9 @@
       items:
         - name: Wprowadzenie do programowania w programie Visual Studio
           href: get-started-developing-with-visual-studio.md
-        - name: 'Wprowadzenie do korzystania z Visual C# i Visual Basic'
+        - name: Wprowadzenie do korzystania z Visual C# i Visual Basic
           items:
-            - name: 'Wprowadzenie do korzystania z Visual C# i Visual Basic'
+            - name: Wprowadzenie do korzystania z Visual C# i Visual Basic
               href: getting-started-with-visual-csharp-and-visual-basic.md
             - name: Tworzenie prostej aplikacji
               href: walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
@@ -174,7 +174,7 @@
           items:
             - name: Znajdowanie i zastępowanie tekstu
               href: finding-and-replacing-text.md
-            - name: Używanie wyrażeń regularnych w programie Visual Studio
+            - name: Używanie wyrażeń regularnych w Visual Studio
               href: using-regular-expressions-in-visual-studio.md
             - name: Find/Command — Pole
               href: find-command-box.md
@@ -212,7 +212,7 @@
                   href: visual-basic-specific-intellisense.md
                 - name: Filtrowane listy uzupełniania w Visual Basic
                   href: filtered-completion-lists-in-visual-basic.md
-            - name: 'Visual C# IntelliSense'
+            - name: Visual C# IntelliSense
               href: visual-csharp-intellisense.md
             - name: Wsparcie programowania poprzedzonego testami przy użyciu funkcji generowania na podstawie sposobu użycia
               href: walkthrough-test-first-support-with-the-generate-from-usage-feature.md
@@ -280,13 +280,13 @@
               href: walkthrough-creating-a-code-snippet.md
             - name: Dystrybuowanie wstawek kodu
               href: how-to-distribute-code-snippets.md
-            - name: 'Wstawki kodu Visual C#'
+            - name: Wstawki kodu Visual C#
               href: visual-csharp-code-snippets.md
             - name: Wstawki kodu Visual C++
               href: visual-cpp-code-snippets.md
             - name: Funkcje wstawek kodu
               href: code-snippet-functions.md
-            - name: 'Przywracanie wstawek do refaktoryzacji kodu C#'
+            - name: Przywracanie wstawek do refaktoryzacji kodu C#
               href: how-to-restore-csharp-refactoring-snippets.md
             - name: Użycie wstawek kodu polecenia Otocz przez
               href: how-to-use-surround-with-code-snippets.md
@@ -384,35 +384,35 @@
           href: setting-bookmarks-in-code.md
         - name: Korzystanie z listy zadań
           href: using-the-task-list.md
-        - name: Znajdowanie zmian w kodzie i innych elementów historii kodu
+        - name: Znajdowanie zmian w kodzie i innych elementów historii
           items:
-            - name: Znajdowanie zmian w kodzie i innych elementów historii kodu
+            - name: Znajdowanie zmian w kodzie i innych elementów historii
               href: find-code-changes-and-other-history-with-codelens.md
             - name: Polecenie CodeIndex
               href: codeindex-command.md
-        - name: 'Używanie środowiska programistycznego Visual Studio dla języka C#'
+        - name: Używanie środowiska programistycznego Visual Studio dla języka C#
           items:
-            - name: 'Używanie środowiska programistycznego Visual Studio dla języka C#'
+            - name: Używanie środowiska programistycznego Visual Studio dla języka C#
               href: ../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md
-            - name: 'Dodawanie pliku konfiguracji aplikacji do projektu C#'
+            - name: Dodawanie pliku konfiguracji aplikacji do projektu C#
               href: ../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md
             - name: Metadane jako źródło
               href: ../csharp-ide/metadata-as-source.md
-            - name: 'Refaktoryzacja (C#)'
+            - name: Refaktoryzacja (C#)
               items:
-                - name: 'Refaktoryzacja (C#)'
+                - name: Refaktoryzacja (C#)
                   href: ../csharp-ide/refactoring-csharp.md
-                - name: 'Refaktoryzacja wyodrębniania metody (C#)'
+                - name: Refaktoryzacja wyodrębniania metody (C#)
                   href: ../csharp-ide/extract-method-refactoring-csharp.md
-                - name: 'Refaktoryzacja zmiany nazwy (C#)'
+                - name: Refaktoryzacja zmiany nazwy (C#)
                   href: ../csharp-ide/rename-refactoring-csharp.md
-                - name: 'Refaktoryzacja hermetyzowania pola (C#)'
+                - name: Refaktoryzacja hermetyzowania pola (C#)
                   href: ../csharp-ide/encapsulate-field-refactoring-csharp.md
-                - name: 'Refaktoryzacja wyodrębniania interfejsu (C#)'
+                - name: Refaktoryzacja wyodrębniania interfejsu (C#)
                   href: ../csharp-ide/extract-interface-refactoring-csharp.md
-                - name: 'Refaktoryzacja usuwania parametrów (C#)'
+                - name: Refaktoryzacja usuwania parametrów (C#)
                   href: ../csharp-ide/remove-parameters-refactoring-csharp.md
-                - name: 'Refaktoryzacja zmiany kolejności parametrów (C#)'
+                - name: Refaktoryzacja zmiany kolejności parametrów (C#)
                   href: ../csharp-ide/reorder-parameters-refactoring-csharp.md
     - name: Debugowanie w Visual Studio
       href: ../debugger/debugging-in-visual-studio.md
@@ -470,7 +470,7 @@
               href: how-to-configure-projects-to-target-multiple-platforms.md
         - name: Określanie zdarzeń kompilacji (Visual Basic)
           href: how-to-specify-build-events-visual-basic.md
-        - name: 'Określanie zdarzeń kompilacji (C#)'
+        - name: Określanie zdarzeń kompilacji (C#)
           href: how-to-specify-build-events-csharp.md
         - name: 'Konfigurowanie ostrzeżeń w Visual Basic:'
           href: configuring-warnings-in-visual-basic.md
@@ -510,7 +510,7 @@
           href: how-to-customize-menus-and-toolbars-in-visual-studio.md
         - name: Dostosowywanie układów okien
           href: customizing-window-layouts-in-visual-studio.md
-        - name: Dostosowanie strony początkowej
+        - name: Dostosowywanie strony początkowej
           href: customizing-the-start-page-for-visual-studio.md
         - name: Zarządzanie narzędziami zewnętrznymi
           href: managing-external-tools.md
@@ -524,7 +524,7 @@
           href: securing-applications.md
         - name: Obsługiwanie zabezpieczeń
           href: maintaining-security.md
-        - name: Uprawnienia użytkownika
+        - name: Uprawnienia użytkowników
           href: user-permissions-and-visual-studio.md
         - name: Bibliografia dotyczące zabezpieczeń
           href: security-bibliography.md
@@ -616,7 +616,7 @@
               href: how-to-save-and-open-files-with-encoding.md
     - name: Dodawanie obsługi innych języków do edytora programu Visual Studio
       href: adding-visual-studio-editor-support-for-other-languages.md
-    - name: Tematy pomocy
+    - name: Dokumentacja
       items:
         - name: Ogólne elementy interfejsu użytkownika (Visual Studio)
           items:
@@ -754,7 +754,7 @@
                   items:
                     - name: 'Strona kompilacji, Projektant projektu (C#)'
                       href: reference/build-page-project-designer-csharp.md
-                    - name: 'Zaawansowane ustawienia kompilacji (C#) — Okno dialogowe'
+                    - name: Zaawansowane ustawienia kompilacji (C#) — Okno dialogowe
                       href: reference/advanced-build-settings-dialog-box-csharp.md
                 - name: 'Analiza kodu, Projektant projektu'
                   href: reference/code-analysis-project-designer.md
@@ -956,7 +956,7 @@
           href: reference/visual-studio-for-applications-reference.md
         - name: MSBuild
           href: ../msbuild/msbuild.md
-        - name: Zasoby dla rozwiązywania problemów z błędami środowiska IDE
+        - name: Zasoby do rozwiązywania problemów z błędami środowiska IDE
           href: reference/resources-for-troubleshooting-integrated-development-environment-errors.md
         - name: Ułatwienia dostępu dla osób niepełnosprawnych
           items:

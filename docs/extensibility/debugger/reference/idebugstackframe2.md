@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2 | Dokumenty firmy Microsoft
+title: IDebugStackFrame2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 37acb9f2984c36130de494108ef4b76a59cc74e7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719510"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
-Ten interfejs reprezentuje ramki pojedynczego stosu w stosie wywołań w określonym wątku.
+Ten interfejs reprezentuje pojedynczą ramkę stosu w stosie wywołań w określonym wątku.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,13 +29,13 @@ IDebugStackFrame2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Aparat debugowania (DE) implementuje ten interfejs do reprezentowania ramki stosu.
+ Aparat debugowania (DE) implementuje ten interfejs, aby reprezentować ramkę stosu.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Wywołanie [EnumFrameInfo,](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) aby pobrać interfejs [IEnumDebugFrameInfo2.](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) Wywołanie [dalej,](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) aby pobrać strukturę `IDebugStackFrame2` [FRAMEINFO,](../../../extensibility/debugger/reference/frameinfo.md) która zawiera interfejs.
+ Wywołaj [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) , aby pobrać Interfejs [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) . Połącz się [dalej](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) , aby pobrać strukturę [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) , która zawiera `IDebugStackFrame2` interfejs.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- W poniższej tabeli `IDebugStackFrame2`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ W poniższej tabeli przedstawiono metody `IDebugStackFrame2` .
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -43,20 +43,20 @@ IDebugStackFrame2 : IUnknown
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Pobiera kontekst dokumentu dla tej ramki stosu.|
 |[GetName](../../../extensibility/debugger/reference/idebugstackframe2-getname.md)|Pobiera nazwę ramki stosu.|
 |[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)|Pobiera opis ramki stosu.|
-|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|Pobiera zależną od komputera reprezentację zakresu adresów fizycznych skojarzonych z ramką stosu.|
-|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|Pobiera kontekst oceny do wykonywania oceny wyrażenia w bieżącym kontekście ramki stosu i wątku.|
+|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|Pobiera reprezentację zakresu adresów fizycznych skojarzonych z ramką stosu w zależności od maszyny.|
+|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|Pobiera kontekst oceny służący do obliczania wyrażenia w bieżącym kontekście ramki stosu i wątku.|
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|Pobiera język skojarzony z ramką stosu.|
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|Pobiera opis właściwości skojarzonych z ramką stosu.|
-|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Tworzy wyliczacz właściwości ramki stosu.|
-|[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|Pobiera wątku skojarzone z ramki stosu.|
+|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Tworzy moduł wyliczający dla właściwości ramki stosu.|
+|[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|Pobiera wątek skojarzony z ramką stosu.|
 
 ## <a name="remarks"></a>Uwagi
- Ten interfejs jest uzyskiwany tylko wtedy, gdy program debugowany został zatrzymany w punkcie przerwania (spowodowane przez punkt przerwania zestawu użytkownika lub wyjątek). Z tego interfejsu można uzyskać kontekst wyrażenia do oceny wyrażeń, można zwrócić listę rejestrów lub można uzyskać i zbadać stos wywołań.
+ Ten interfejs jest uzyskiwany tylko wtedy, gdy debugowany program został zatrzymany w punkcie przerwania (spowodowanym przez punkt przerwania lub wyjątek). Z tego interfejsu można uzyskać kontekst wyrażenia do obliczania wyrażeń, listę rejestrów może zostać zwrócona lub można uzyskać i zbadać stos wywołań.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

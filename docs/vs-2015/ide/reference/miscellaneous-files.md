@@ -22,16 +22,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8dc11714fc8b2d5a345d94ddfe4c5de2c2cd7fe5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666852"
 ---
 # <a name="miscellaneous-files"></a>Folder różnych plików
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Może być konieczne użycie edytorów [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] do pracy niezależnie od plików z projektu lub rozwiązania. Gdy masz otwarte rozwiązanie, możesz otwierać i modyfikować pliki bez dodawania ich do rozwiązania lub do projektu. Pliki, z którymi chcesz współpracować niezależnie od kontenerów, są nazywane różnymi plikami. Różne pliki są zewnętrzne dla rozwiązań i projektów, nie są uwzględniane w kompilacjach i nie mogą być dołączone do rozwiązania pod kontrolą źródła.
+Możesz chcieć użyć [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] edytorów do pracy niezależnie od plików z projektu lub rozwiązania. Gdy masz otwarte rozwiązanie, możesz otwierać i modyfikować pliki bez dodawania ich do rozwiązania lub do projektu. Pliki, z którymi chcesz współpracować niezależnie od kontenerów, są nazywane różnymi plikami. Różne pliki są zewnętrzne dla rozwiązań i projektów, nie są uwzględniane w kompilacjach i nie mogą być dołączone do rozwiązania pod kontrolą źródła.
 
  Otwieranie plików niezależnie od kontenera jest przydatne z różnych powodów. Może istnieć plik, który ma być wyświetlany podczas opracowywania rozwiązań opartych na projekcie, ale nie jest integralną częścią opracowywania rozwiązania. Typowe przykłady obejmują uwagi dotyczące programowania lub instrukcje, schemat bazy danych i klipy kodu. Ponadto możesz chcieć utworzyć plik autonomiczny.
 

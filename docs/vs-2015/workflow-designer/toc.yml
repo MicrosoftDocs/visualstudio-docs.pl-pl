@@ -50,9 +50,9 @@
               href: dowhile-activity-designer.md
             - name: ForEach\<T>
               href: foreach-t-activity-designer.md
-            - name: IF
+            - name: Jeśli użytkownik
               href: if-activity-designer.md
-            - name: Parallel
+            - name: Równoległy
               href: parallel-activity-designer.md
             - name: ParallelForEach\<T>
               href: parallelforeach-t-activity-designer.md
@@ -62,7 +62,7 @@
               href: pickbranch-activity-designer.md
             - name: Sequence
               href: sequence-activity-designer.md
-            - name: Switch\<T>
+            - name: Przełącznik\<T>
               href: switch-t-activity-designer.md
             - name: While
               href: while-activity-designer.md
@@ -96,11 +96,11 @@
               href: correlationscope-activity-designer.md
             - name: InitializeCorrelation
               href: initializecorrelation-activity-designer.md
-            - name: Receive
+            - name: Odbieranie
               href: receive-activity-designer.md
             - name: ReceiveAndSendReply
               href: receiveandsendreply-template-designer.md
-            - name: Send
+            - name: Wysyłanie
               href: send-activity-designer.md
             - name: SendAndReceiveReply
               href: sendandreceivereply-template-designer.md
@@ -118,9 +118,9 @@
           items:
             - name: Typy pierwotne
               href: primitives-activity-designers.md
-            - name: Assign
+            - name: Przypisz
               href: assign-activity-designer.md
-            - name: Delay
+            - name: Opóźnienie
               href: delay-activity-designer.md
             - name: InvokeDelegate
               href: invokedelegate.md

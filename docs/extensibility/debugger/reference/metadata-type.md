@@ -1,5 +1,5 @@
 ---
-title: METADATA_TYPE | Dokumenty firmy Microsoft
+title: METADATA_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: afe5ea128775c7be0e48035ab4c7e7d370c9d233
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714279"
 ---
 # <a name="metadata_type"></a>METADATA_TYPE
-Ta struktura określa informacje o typie pola pobranym z metadanych.
+Ta struktura określa informacje o typie pola pobieranym z metadanych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,7 +45,7 @@ public struct METADATA_TYPE {
 
 ## <a name="parameters"></a>Parametry
  `ulAppDomainID`\
- Identyfikator aplikacji, z której pochodzi symbol. Służy do jednoznacznej identyfikacji wystąpienia aplikacji.
+ Identyfikator aplikacji, z której pochodzi symbol. Służy do jednoznacznego identyfikowania wystąpienia aplikacji.
 
  `guidModule`\
  Identyfikator GUID modułu zawierającego to pole.
@@ -53,17 +53,17 @@ public struct METADATA_TYPE {
  `tokClass`\
  Identyfikator tokenu metadanych tego typu.
 
- [C++] `_mdToken` jest `typedef` dla 32-bitowego `int`.
+ [C++] `_mdToken` jest `typedef` dla 32-bitowej `int` .
 
 ## <a name="remarks"></a>Uwagi
- Ta struktura pojawia się jako część unii w [strukturze TYPE_INFO,](../../../extensibility/debugger/reference/type-info.md) gdy `dwKind` pole `TYPE_INFO` struktury jest ustawiona na `TYPE_KIND_METADATA` (wartość z [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) wyliczenia).
+ Ta struktura jest wyświetlana jako część Unii w strukturze [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) , gdy `dwKind` pole `TYPE_INFO` struktury jest ustawione na `TYPE_KIND_METADATA` (wartość z wyliczenia [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) ).
 
- Wartość `tokClass` jest token metadanych, który jednoznacznie identyfikuje typ. Aby uzyskać szczegółowe informacje na temat interpretowania górnych bitów `CorTokenType` identyfikatora tokenu metadanych, zobacz wyliczenie w pliku corhdr.h w pliku .NET Framework SDK.
+ `tokClass`Wartość jest tokenem metadanych, który jednoznacznie identyfikuje typ. Aby uzyskać szczegółowe informacje na temat interpretowania górnych bitów identyfikatora tokenu metadanych, zapoznaj się z `CorTokenType` wyliczeniem w pliku corhdr. h w zestawie SDK .NET Framework.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: sh.h
+ Nagłówek: sh. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

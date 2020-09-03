@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE | Dokumenty firmy Microsoft
+title: OBJECT_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714130"
 ---
 # <a name="object_type"></a>OBJECT_TYPE
-Określa typ obiektu od oceniającego wyrażenie.
+Określa typ obiektu z ewaluatora wyrażeń.
 
 ## <a name="syntax"></a>Składnia
 
@@ -70,40 +70,40 @@ public enum enum_OBJECT_TYPE { 
 
 ## <a name="fields"></a>Pola
  `OBJECT_TYPE_BOOLEAN`\
- Wskazuje, że obiekt jest wartościowym.
+ Wskazuje, że obiekt jest wartością logiczną.
 
  `OBJECT_TYPE_CHAR`\
  Wskazuje, że obiekt jest znakiem.
 
  `OBJECT_TYPE_I1`\
- Wskazuje, że obiekt jest jedną ą ćdemotwą podpisaną całkowitej.
+ Wskazuje, że obiekt jest liczbą całkowitą ze znakiem jednobajtowym.
 
  `OBJECT_TYPE_U1`\
- Wskazuje, że obiekt jest jedno bajtową niepodpisaną całkowitej liczby.
+ Wskazuje, że obiekt jest liczbą całkowitą bez znaku.
 
  `OBJECT_TYPE_I2`\
- Wskazuje, że obiekt jest dwu bajtową podpisaną kreśliącą.
+ Wskazuje, że obiekt jest liczbą całkowitą ze znakiem dwubajtowym.
 
  `OBJECT_TYPE_U2`\
- Wskazuje, że obiekt jest dwu bajtową niepodpisaną całkowitej liczby.
+ Wskazuje, że obiekt jest dwubajtową liczbą całkowitą bez znaku.
 
  `OBJECT_TYPE_I4`\
- Wskazuje, że obiekt jest 4-bajtową podpisaną kreślić.
+ Wskazuje, że obiekt jest liczbą całkowitą ze znakiem czterech bajtów.
 
  `OBJECT_TYPE_U4`\
- Wskazuje, że obiekt jest cztero bajtową niepodpisaną całkowitej liczby.
+ Wskazuje, że obiekt jest liczbą całkowitą bez znaku z czterema bajtami.
 
  `OBJECT_TYPE_I8`\
- Wskazuje, że obiekt jest 8-bajtową podpisaną kreśliń integer.
+ Wskazuje, że obiekt jest 8-bajtową liczbą całkowitą ze znakiem.
 
  `OBJECT_TYPE_U8`\
- Wskazuje, że obiekt jest 8-bajtową niepodpisaną całkowitej liczby.
+ Wskazuje, że obiekt jest 8-bajtową liczbą całkowitą bez znaku.
 
  `OBJECT_TYPE_R4`\
- Wskazuje, że obiekt jest cztero bajtową liczbą zmiennoprzecinkową.
+ Wskazuje, że obiekt jest liczbą zmiennoprzecinkową z czterema bajtami.
 
  `OBJECT_TYPE_R8`\
- Wskazuje, że obiekt jest ośmioma-bajtową liczbą zmiennoprzecinkową.
+ Wskazuje, że obiekt jest liczbą zmiennoprzecinkową o ośmiu bajtach.
 
  `OBJECT_TYPE_OBJECT`\
  Wskazuje, że obiekt jest obiektem.
@@ -115,12 +115,12 @@ public enum enum_OBJECT_TYPE { 
  Wskazuje, że obiekt jest klasą.
 
 ## <a name="remarks"></a>Uwagi
- Przekazany jako argument do [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) i [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) metody.
+ Przeszedł jako argument do metod [Isprymitywobject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) i [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) .
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: ee.h
+ Nagłówek: EE. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

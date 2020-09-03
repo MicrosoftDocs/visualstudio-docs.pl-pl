@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8589be1bd1c1e9ad86a412d4f8bd2630c93a42ac
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535996"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
@@ -54,7 +54,7 @@ Szablon tekstowy zawiera kombinację tekstu, który ma zostać wygenerowany, i k
 
     Jeśli szablon został dodany do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu, atrybut Language będzie " `VB` ".
 
-4. Dodaj tekst na końcu pliku. Przykład:
+4. Dodaj tekst na końcu pliku. Na przykład:
 
    ```
    Hello, world!
@@ -123,7 +123,7 @@ Szablony tekstowe umożliwiają użycie kodu programu w celu zróżnicowania zaw
 
 Aby debugować szablon tekstowy:
 
-- Wstaw `debug="true"` do `template` dyrektywy. Przykład:
+- Wstaw `debug="true"` do `template` dyrektywy. Na przykład:
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -134,7 +134,7 @@ Aby debugować szablon tekstowy:
    Szablon jest uruchamiany i zatrzyma się w punktach przerwania. Można przeanalizować zmienne i krokowo przez kod w zwykły sposób.
 
 > [!TIP]
-> `debug="true"`sprawia, że wygenerowany kod mapuje się dokładniej do szablonu tekstu, wstawiając więcej dyrektyw numerowania wierszy do wygenerowanego kodu. Jeśli go opuścisz, punkty przerwania mogą przestać działać w nieprawidłowym stanie.
+> `debug="true"` sprawia, że wygenerowany kod mapuje się dokładniej do szablonu tekstu, wstawiając więcej dyrektyw numerowania wierszy do wygenerowanego kodu. Jeśli go opuścisz, punkty przerwania mogą przestać działać w nieprawidłowym stanie.
 >
 > Ale można pozostawić klauzulę w dyrektywie Template, nawet jeśli nie jest debugowana. Powoduje to, że jest to bardzo mały spadek wydajności.
 
@@ -272,7 +272,7 @@ Typ `this.Host` (w języku VB `Me.Host` ) to `Microsoft.VisualStudio.TextTemplat
 
 ### <a name="getting-data-from-visual-studio"></a>Pobieranie danych z programu Visual Studio
 
-Aby skorzystać z usług oferowanych w programie Visual Studio, ustaw `hostSpecific` atrybut i Załaduj `EnvDTE` zestaw. Importuj `Microsoft.VisualStudio.TextTemplating` , który zawiera `GetCOMService()` metodę rozszerzenia.  Następnie można użyć IServiceProvider. GetCOMService (), aby uzyskać dostęp do DTE i innych usług. Przykład:
+Aby skorzystać z usług oferowanych w programie Visual Studio, ustaw `hostSpecific` atrybut i Załaduj `EnvDTE` zestaw. Importuj `Microsoft.VisualStudio.TextTemplating` , który zawiera `GetCOMService()` metodę rozszerzenia.  Następnie można użyć IServiceProvider. GetCOMService (), aby uzyskać dostęp do DTE i innych usług. Na przykład:
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -290,7 +290,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > Szablon tekstowy jest uruchamiany w jego własnej domenie aplikacji, a usługi są dostępne przez kierowanie. W takim przypadku GetCOMService () jest bardziej niezawodny niż GetService ().
 
-## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>Automatyczne generowanie kodu
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a> Automatyczne generowanie kodu
 
 Zazwyczaj kilka plików w rozwiązaniu programu Visual Studio jest generowanych z jednym modelem wejściowym. Każdy plik jest generowany na podstawie własnego szablonu, ale wszystkie szablony odwołują się do tego samego modelu.
 
@@ -336,7 +336,7 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>Konwertowanie istniejącego pliku na szablon
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a> Konwertowanie istniejącego pliku na szablon
 
 Przydatną funkcją szablonów jest to, że wyglądają bardzo podobnie do generowanych przez nich plików wraz z niektórym wstawionym kodem programu. Sugeruje to przydatną metodę tworzenia szablonu. Najpierw utwórz zwykły plik jako prototyp, taki jak [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plik, a następnie stopniowo wprowadzaj kod generacji, który zmienia ten plik.
 
@@ -388,6 +388,6 @@ Zapoznaj się z instrukcjami dotyczącymi [pisania szablonów tekstowych T4](../
 |Przekształć dane w postaci języka specyficznego dla domeny.|[Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Napisz procesory dyrektywy, aby przekształcić własne źródła danych.|[Dopasowanie transformacji tekstu T4](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zalecenia dotyczące pisania szablonów tekstowych T4](../modeling/guidelines-for-writing-t4-text-templates.md)

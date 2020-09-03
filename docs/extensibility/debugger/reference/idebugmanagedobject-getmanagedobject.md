@@ -1,5 +1,5 @@
 ---
-title: IDebugManagedObject::GetManagedObject | Dokumenty firmy Microsoft
+title: 'IDebugManagedObject:: getmanagedobject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b7080760b174c51d62c44cd2757944948e0104ca
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727734"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
@@ -41,13 +41,13 @@ int GetManagedObject(
 
 ## <a name="parameters"></a>Parametry
 `ppManagedObject`\
-[na zewnątrz] Zwraca interfejs, który reprezentuje obiekt zarządzany.
+określoną Zwraca interfejs, który reprezentuje obiekt zarządzany.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Interfejs zwracany z tej metody można zbadać dla dowolnego interfejsu zaimplementowanego przez klasę zarządzaną, dzięki czemu jego metody mają być wywoływane.
+ Interfejs zwracany przez tę metodę może być badany dla dowolnego interfejsu zaimplementowanego przez klasę zarządzaną, umożliwiając wywoływanie jego metod.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

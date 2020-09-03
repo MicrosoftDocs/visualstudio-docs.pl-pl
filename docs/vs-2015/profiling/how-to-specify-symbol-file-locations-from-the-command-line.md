@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 01fbb6cfd1717562af79c067ede0cad9753ad5dd
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77557893"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Porady: określanie lokalizacji plików symboli z wiersza polecenia
@@ -38,7 +38,7 @@ Aby wyświetlić informacje o symbolach, takie jak nazwy funkcji i numery wiersz
   Można również użyć obu tych metod.  
   
 > [!NOTE]
-> Jeśli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jest zainstalowana na komputerze lokalnym, lokalizacja dla plików symboli systemu Windows prawdopodobnie została już określona. Aby uzyskać więcej informacji, zobacz [How to: Reference informacje o symbolach systemu Windows](../profiling/how-to-reference-windows-symbol-information.md). Nadal musisz skonfigurować VSPerfReport, aby używać lokalizacji i serwera zgodnie z opisem w dalszej części tego tematu.  
+> Jeśli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] program jest zainstalowany na komputerze lokalnym, prawdopodobnie określono już lokalizację plików symboli systemu Windows. Aby uzyskać więcej informacji, zobacz [How to: Reference informacje o symbolach systemu Windows](../profiling/how-to-reference-windows-symbol-information.md). Nadal musisz skonfigurować VSPerfReport, aby używać lokalizacji i serwera zgodnie z opisem w dalszej części tego tematu.  
   
 ## <a name="specifying-windows-symbol-files"></a>Określanie plików symboli systemu Windows  
   

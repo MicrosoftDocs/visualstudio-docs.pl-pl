@@ -1,5 +1,5 @@
 ---
-title: Opcje, Edytor tekstu, XML, Formatowanie
+title: Opcje, Edytor tekstu, XML, formatowanie
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -9,28 +9,28 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568142"
 ---
-# <a name="options-text-editor-xml-formatting"></a>Opcje, Edytor tekstu, XML, Formatowanie
+# <a name="options-text-editor-xml-formatting"></a>Opcje, Edytor tekstu, XML, formatowanie
 
-Strona Opcje **formatowania** służy do określania sposobu formatowania elementów i atrybutów w dokumentach XML. Aby uzyskać dostęp do opcji formatowania XML, wybierz pozycję**Opcje** >  **narzędzi** > **Edytor** > tekstu**XML**, a następnie wybierz pozycję **Formatowanie**.
+Na stronie opcje **formatowania** można określić sposób formatowania elementów i atrybutów w dokumentach XML. Aby uzyskać dostęp do opcji formatowania XML, wybierz opcje **Narzędzia**  >  **Options**  >  **Edytor tekstu**  >  **XML**, a następnie wybierz **Formatowanie**.
 
 ## <a name="attributes"></a>Atrybuty
 
-**Zachowywanie ręcznego formatowania atrybutów**
+**Zachowaj ręczne formatowanie atrybutów**
 
 Nie należy formatować atrybutów. Jest to ustawienie domyślne.
 
 > [!NOTE]
-> Jeśli atrybuty znajdują się w wielu wierszach, edytor wcięcie każdego wiersza atrybutów, aby dopasować wcięcie elementu nadrzędnego.
+> Jeśli atrybuty są w wielu wierszach, Edytor Wetnij każdy wiersz atrybutów, aby dopasować wcięcia elementu nadrzędnego.
 
-**Wyrównywanie atrybutów w osobnym wierszu**
+**Wyrównaj atrybuty każdy w osobnym wierszu**
 
-Wyrównaj drugi i kolejnych atrybutów w pionie, aby dopasować wcięcie pierwszego atrybutu. Następujący tekst XML jest przykładem sposobu wyrównania atrybutów:
+Wyrównaj drugą i kolejne atrybuty w pionie, aby dopasować wcięcie pierwszego atrybutu. Następujący tekst XML jest przykładem sposobu wyrównania atrybutów:
 
 ```xml
 <item id = "123-A"
@@ -39,23 +39,23 @@ Wyrównaj drugi i kolejnych atrybutów w pionie, aby dopasować wcięcie pierwsz
 </item>
 ```
 
-## <a name="auto-reformat"></a>Automatyczne formaterat
+## <a name="auto-reformat"></a>Autoformatowanie
 
-**Podczas wklejania ze schowka**
+**Przy wklejaniu ze schowka**
 
-Sformatuj tekst XML wklejony ze schowka.
+Umożliwia sformatowanie tekstu XML wklejonego ze schowka.
 
 **Po zakończeniu tagu końcowego**
 
-Sformatować element po zakończeniu tagu końcowego.
+Ponownie sformatuj element po zakończeniu znacznika końcowego.
 
 ## <a name="mixed-content"></a>Zawartość mieszana
 
-**Domyślnie formatuj zawartość mieszaną.**
+**Domyślnie sformatuj zawartość mieszaną.**
 
-Spróbuj sformatować zawartość mieszaną, z `xml:space="preserve"` wyjątkiem sytuacji, gdy zawartość zostanie znaleziona w zakresie. Jest to ustawienie domyślne.
+Spróbuj ponownie sformatować zawartość mieszaną, z wyjątkiem sytuacji, w której zawartość znajduje się w `xml:space="preserve"` zakresie. Jest to ustawienie domyślne.
 
-Jeśli element zawiera kombinację tekstu i znaczników, zawartość jest uważana za zawartość mieszaną. Poniżej znajduje się przykład elementu o mieszanej zawartości.
+Jeśli element zawiera mieszankę tekstu i znaczników, zawartość jest traktowana jako zawartość mieszana. Poniżej znajduje się przykład elementu z zawartością mieszaną.
 
 ```xml
 <dir>c:\data\AlphaProject\

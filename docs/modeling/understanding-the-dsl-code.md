@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565945"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
@@ -39,7 +39,7 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
  Zalecamy sprawdzenie wygenerowanego kodu, aby pomóc w zrozumieniu DSL. Aby wyświetlić wygenerowane pliki, rozwiń pliki *. tt w Eksplorator rozwiązań.
 
- Pliki \*. tt zawierają bardzo mały wygenerowany kod. Zamiast tego wykorzystują dyrektywy `<#include>` do dołączania udostępnionych plików szablonów. Udostępnione pliki można znaleźć w **folderze \Program Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**
+ \*Pliki. tt zawierają bardzo mały wygenerowany kod. Zamiast tego wykorzystują `<#include>` dyrektywy do dołączania udostępnionych plików szablonów. Udostępnione pliki można znaleźć w **folderze \Program Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**
 
  Dodając własny kod programu do rozwiązania DSL, Dodaj go do oddzielnego pliku poza wygenerowanym folderem kodu. Może być konieczne utworzenie niestandardowego folderu **kodu** . (Po dodaniu nowego pliku kodu do folderu niestandardowego Pamiętaj o skorygowaniu przestrzeni nazw w początkowym szkieletzie kodu).
 
@@ -58,9 +58,9 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 ## <a name="generated-files-in-dsl"></a>Wygenerowane pliki w DSL
  Następujące wygenerowane pliki pojawiają się w projekcie **DSL** .
 
- *YourDsl* `Schema.xsd`
+ *YourDsl*`Schema.xsd`
 
- Schemat dla plików, które zawierają wystąpienia elementu DSL. Ten plik jest kopiowany do katalogu kompilacji (**bin**). Podczas instalowania programu DSL można skopiować ten plik do **folderu \Program Files\Microsoft Visual Studio 11.0 \ Xml\Schemas** , aby umożliwić zweryfikowanie plików modelu. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](msi-and-vsix-deployment-of-a-dsl.md).
+ Schemat dla plików, które zawierają wystąpienia elementu DSL. Ten plik jest kopiowany do katalogu kompilacji (**bin**). Podczas instalowania programu DSL można skopiować ten plik do **folderu \Program Files\Microsoft Visual Studio 11.0 \ Xml\Schemas** , aby umożliwić zweryfikowanie plików modelu. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
 
  W przypadku dostosowania serializacji przez ustawienie opcji w Eksploratorze DSL schemat zostanie odpowiednio zmieniony. Jednak jeśli piszesz własny kod serializacji, ten plik może już nie reprezentować rzeczywistego schematu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie serializacji File Storage i XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
@@ -70,7 +70,7 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
  (W przykładowym rozwiązaniu składnika jeden z konstruktorów połączeń nosi nazwę elemencie ConnectionBuilder, jest to współdziałanie, ponieważ relacja domeny nosi nazwę połączenie).
 
- Relacja jest tworzona w metodzie`Builder.Connect()` *relacji* . Wersja domyślna sprawdza, czy źródłowe i docelowe elementy modelu są akceptowalne, a następnie tworzy wystąpienie relacji. Na przykład:
+ Relacja jest tworzona w *Relationship* `Builder.Connect()` metodzie Relationship. Wersja domyślna sprawdza, czy źródłowe i docelowe elementy modelu są akceptowalne, a następnie tworzy wystąpienie relacji. Na przykład:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -88,47 +88,47 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
  Aby kolor i inne funkcje stylu były zmienne w czasie wykonywania, kliknij prawym przyciskiem myszy klasę na diagramie definicji DSL i wskaż polecenie **Dodaj uwidocznione**.
 
- Aby utworzyć dodatkowe funkcje stylu w czasie wykonywania, zobacz na przykład <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> i <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>.
+ Aby utworzyć dodatkowe funkcje stylu w czasie wykonywania, zobacz na przykład <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> i <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement> .
 
  `Diagram.cs`
 
- Zawiera klasę, która definiuje diagram. Pochodzi ona od <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>.
+ Zawiera klasę, która definiuje diagram. Pochodzi ona od <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> .
 
  Aby kolor i inne funkcje stylu były zmienne w czasie wykonywania, kliknij prawym przyciskiem myszy klasę na diagramie definicji DSL i wskaż polecenie **Dodaj uwidocznione**.
 
- Ponadto ten plik zawiera regułę `FixupDiagram`, która reaguje, gdy nowy element zostanie dodany do modelu. Reguła dodaje nowy kształt i łączy kształt z elementem modelu.
+ Ponadto ten plik zawiera `FixupDiagram` regułę, która reaguje, gdy nowy element zostanie dodany do modelu. Reguła dodaje nowy kształt i łączy kształt z elementem modelu.
 
  `DirectiveProcessor.cs`
 
- Ten procesor dyrektywy ułatwia użytkownikom pisanie szablonów tekstowych, które odczytują wystąpienie DSL. Procesor dyrektywy ładuje zestawy (dll) dla DSL i efektywnie wstawia `using` instrukcji dla przestrzeni nazw. Pozwala to kodowi w szablonach tekstowych używać klas i relacji zdefiniowanych w DSL.
+ Ten procesor dyrektywy ułatwia użytkownikom pisanie szablonów tekstowych, które odczytują wystąpienie DSL. Procesor dyrektywy ładuje zestawy (dll) dla DSL i efektywnie wstawia `using` instrukcje dla przestrzeni nazw. Pozwala to kodowi w szablonach tekstowych używać klas i relacji zdefiniowanych w DSL.
 
  Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md) i [Tworzenie niestandardowych procesorów dyrektywy T4](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
  `DomainClasses.cs`
 
- Implementacje klas domen zdefiniowanych przez użytkownika, w tym klasy abstrakcyjne i klasy głównej modelu. Są one uzyskiwane z <xref:Microsoft.VisualStudio.Modeling.ModelElement>.
+ Implementacje klas domen zdefiniowanych przez użytkownika, w tym klasy abstrakcyjne i klasy głównej modelu. Są one wyprowadzane z <xref:Microsoft.VisualStudio.Modeling.ModelElement> .
 
  Każda klasa domeny zawiera:
 
 - Definicja właściwości i zagnieżdżona Klasa obsługi dla każdej właściwości domeny. Można przesłonić OnValueChanging () i OnValueChanged (). Aby uzyskać więcej informacji, zobacz [Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md).
 
-   W przykładzie DSL Klasa `Comment` zawiera `Text` właściwości i klasę procedury obsługi `TextPropertyHandler`.
+   W przykładzie DSL `Comment` Klasa zawiera właściwość `Text` i klasę programu obsługi `TextPropertyHandler` .
 
 - Właściwości metody dostępu dla relacji, w których uczestniczy Ta klasa domeny. (Nie istnieje Klasa zagnieżdżona dla właściwości roli.)
 
-   W przykładzie DSL Klasa `Comment` ma metody dostępu, które uzyskują dostęp do modelu nadrzędnego za pomocą `ComponentModelHasComments`relacji osadzania.
+   W przykładzie DSL `Comment` Klasa ma metody dostępu, które uzyskują dostęp do modelu nadrzędnego przy użyciu relacji osadzania `ComponentModelHasComments` .
 
 - Konstruktor. Jeśli chcesz przesłonić te ustawienia, zestaw **ma konstruktora niestandardowego** dla klasy domeny.
 
 - Metody obsługi prototypu grupy elementów (EGP). Są one niezbędne, jeśli użytkownik może *scalić* (dodać) inny element w wystąpieniach tej klasy. Zazwyczaj użytkownik robi to poprzez przeciąganie z narzędzia elementu lub innego kształtu lub przez wklejenie.
 
-   W przykładzie DSL port wejściowy lub port wyjściowy można scalić ze składnikiem. Ponadto składniki i Komentarze można scalać z modelem. Microsoft®
+   W przykładzie DSL port wejściowy lub port wyjściowy można scalić ze składnikiem. Ponadto składniki i Komentarze można scalać z modelem. Program
 
    Metody obsługi EGP w klasie składnika umożliwiają składnikowi akceptowanie portów, ale nie komentarzy. Procedura obsługi EGP w klasie modelu głównego akceptuje Komentarze i składniki, ale nie porty.
 
   `DomainModel.cs`
 
-  Klasa, która reprezentuje model domeny. Pochodzi ona od <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
+  Klasa, która reprezentuje model domeny. Pochodzi ona od <xref:Microsoft.VisualStudio.Modeling.DomainModel> .
 
 > [!NOTE]
 > Ta wartość nie jest taka sama jak Klasa główna modelu.
@@ -139,11 +139,11 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
  Zawiera ona ciągi takie jak opisy klas domen i właściwości, nazwy właściwości, etykiety przybornika, standardowe komunikaty o błędach i inne ciągi, które mogą być wyświetlane użytkownikowi. Zawiera również ikony narzędzi i obrazy dla kształtów obrazów.
 
- Ten plik jest powiązany z skompilowanym zestawem i zawiera wartości domyślne tych zasobów. Możesz lokalizować DSL, tworząc zestaw satelicki zawierający zlokalizowaną wersję zasobów. Ta wersja zostanie użyta, gdy program DSL zostanie zainstalowany w kulturze zgodnej z zlokalizowanymi zasobami. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](msi-and-vsix-deployment-of-a-dsl.md).
+ Ten plik jest powiązany z skompilowanym zestawem i zawiera wartości domyślne tych zasobów. Możesz lokalizować DSL, tworząc zestaw satelicki zawierający zlokalizowaną wersję zasobów. Ta wersja zostanie użyta, gdy program DSL zostanie zainstalowany w kulturze zgodnej z zlokalizowanymi zasobami. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
 
  `DomainRelationships.cs`
 
- Każdy link między dwoma elementami w modelu jest reprezentowany przez wystąpienie klasy relacji domeny. Wszystkie klasy relacji pochodzą od <xref:Microsoft.VisualStudio.Modeling.ElementLink>, które z kolei są wyprowadzane z <xref:Microsoft.VisualStudio.Modeling.ModelElement>. Ponieważ jest to ModelElement, wystąpienie relacji może mieć właściwości i może być źródłem lub celem relacji.
+ Każdy link między dwoma elementami w modelu jest reprezentowany przez wystąpienie klasy relacji domeny. Wszystkie klasy relacji pochodzą od <xref:Microsoft.VisualStudio.Modeling.ElementLink> , które z kolei są wyprowadzane z <xref:Microsoft.VisualStudio.Modeling.ModelElement> . Ponieważ jest to ModelElement, wystąpienie relacji może mieć właściwości i może być źródłem lub celem relacji.
 
  `HelpKeywordHelper.cs`
 
@@ -173,7 +173,7 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
   `Shapes.cs`
 
-  Klasa dla każdej klasy kształtu w definicji DSL. Kształty są wyprowadzane z <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>. Aby uzyskać więcej informacji, zobacz [Dostosowywanie serializacji File Storage i XML](../modeling/customizing-file-storage-and-xml-serialization.md).
+  Klasa dla każdej klasy kształtu w definicji DSL. Kształty są wyprowadzane z <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> . Aby uzyskać więcej informacji, zobacz [Dostosowywanie serializacji File Storage i XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
   Aby zastąpić wygenerowane metody własnymi metodami w klasie częściowej, zestaw **generuje podwójne pochodne** dla łącznika w definicji DSL. Aby zastąpić Konstruktor własnym kodem, ustaw atrybut **ma konstruktora niestandardowego**.
 
@@ -185,7 +185,7 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
   Konfiguruje Przybornik, instalując prototypy grupy elementów w narzędziach elementów. Kopie tych prototypów są scalane z elementami docelowymi, gdy użytkownik uruchamia narzędzie.
 
-  `CreateElementPrototype()` można przesłonić w celu zdefiniowania elementu przybornika, który tworzy grupę wielu obiektów. Można na przykład zdefiniować element reprezentujący obiekty, które mają podskładniki. Po zmianie kodu Zresetuj eksperymentalne wystąpienie programu Visual Studio, aby wyczyścić pamięć podręczną przybornika.
+  Można przesłonić, `CreateElementPrototype()` Aby zdefiniować element przybornika, który tworzy grupę kilku obiektów. Można na przykład zdefiniować element reprezentujący obiekty, które mają podskładniki. Po zmianie kodu Zresetuj eksperymentalne wystąpienie programu Visual Studio, aby wyczyścić pamięć podręczną przybornika.
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>Wygenerowane pliki w projekcie DslPackage
  DslPackage Couples model DSL do powłoki programu Visual Studio, zarządzania oknem, przybornikiem i poleceniami menu. Większość klas jest podwójnym pochodnym, dzięki czemu można przesłonić dowolną metodę.
@@ -196,13 +196,13 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
  `Constants.cs`
 
- GUIDs.
+ Identyfikatory GUID.
 
  `DocData.cs`
 
  *YourDsl* `DocData` zarządza ładowaniem i zapisywaniem modelu do pliku, a następnie tworzy wystąpienie magazynu.
 
- Jeśli na przykład chcesz zapisać DSL w bazie danych zamiast pliku, możesz przesłonić metody `Load` i `Save`.
+ Jeśli na przykład chcesz zapisać DSL w bazie danych zamiast pliku, możesz przesłonić `Load` `Save` metody i.
 
  `DocView.cs`
 
@@ -278,7 +278,7 @@ namespace Company.EmbedInForm
 
  `EditorFactory.cs`
 
- Tworzy wystąpienia `DocData` i `DocView`. Jest to standardowy interfejs używany przez program Visual Studio do otwierania edytora, gdy zostanie uruchomiony pakiet DSL. Jest on przywoływany w atrybucie `ProvideEditorFactory` w Package.cs
+ Tworzy wystąpienia `DocData` i `DocView` . Jest to standardowy interfejs używany przez program Visual Studio do otwierania edytora, gdy zostanie uruchomiony pakiet DSL. Odwołuje się do niego w `ProvideEditorFactory` atrybucie w Package.cs
 
  `GeneratedVSCT.vsct`
 
@@ -288,7 +288,7 @@ namespace Company.EmbedInForm
 
  Definiuje Eksploratora modeli dla DSL. Jest to widok drzewa modelu, który użytkownik widzi obok diagramu.
 
- Na przykład można przesłonić `InsertTreeView()`, aby zmienić kolejność, w jakiej elementy pojawiają się w Eksploratorze modelu.
+ Na przykład można przesłonić `InsertTreeView()` zmianę kolejności, w której elementy pojawiają się w Eksploratorze modelu.
 
  Jeśli chcesz, aby zaznaczenie w Eksploratorze modelu było zsynchronizowane z wybranym diagramem, możesz użyć następującego kodu:
 
@@ -337,14 +337,14 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  `Source.extension.vsixmanifest`
 
- Aby dostosować ten plik, edytuj plik `.tt`.
+ Aby dostosować ten plik, Edytuj `.tt` plik.
 
 > [!WARNING]
-> Jeśli edytujesz plik TT w celu uwzględnienia zasobów, takich jak ikony lub obrazy, upewnij się, że zasób jest uwzględniony w kompilacji VSIX. W Eksplorator rozwiązań wybierz plik i upewnij się, że właściwość **include in VSIX** jest `True`.
+> Jeśli edytujesz plik TT w celu uwzględnienia zasobów, takich jak ikony lub obrazy, upewnij się, że zasób jest uwzględniony w kompilacji VSIX. W Eksplorator rozwiązań wybierz plik i upewnij się, że właściwość **include in VSIX** ma wartość `True` .
 
- Ten plik kontroluje sposób pakowania DSL do rozszerzenia integracji z programem Visual Studio (VSIX). Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](msi-and-vsix-deployment-of-a-dsl.md).
+ Ten plik kontroluje sposób pakowania DSL do rozszerzenia integracji z programem Visual Studio (VSIX). Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
 - [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md)

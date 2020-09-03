@@ -1,5 +1,5 @@
 ---
-title: VerifyFileHash Zadanie | Dokumenty firmy Microsoft
+title: VerifyFileHash — zadanie | Microsoft Docs
 ms.date: 01/28/2019
 ms.topic: reference
 dev_langs:
@@ -16,32 +16,32 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579525"
 ---
-# <a name="verifyfilehash-task"></a>VerifyFileHash zadanie
+# <a name="verifyfilehash-task"></a>VerifyFileHash, zadanie
 
-Sprawdza, czy plik pasuje do oczekiwanego skrótu pliku. Jeśli skrót nie jest zgodny, zadanie kończy się niepowodzeniem.
+Sprawdza, czy plik jest zgodny z oczekiwanym skrótem pliku. Jeśli skrót nie jest zgodny, zadanie zakończy się niepowodzeniem.
 
-To zadanie zostało dodane w wersji 15.8, ale wymaga [obejścia](https://github.com/Microsoft/msbuild/pull/3999#issuecomment-458193272) problemu w wersjach MSBuild poniżej 16.0.
+To zadanie zostało dodane w 15,8, ale wymaga [obejścia](https://github.com/Microsoft/msbuild/pull/3999#issuecomment-458193272) do użycia z wersjami MSBuild poniżej 16,0.
 
 ## <a name="task-parameters"></a>Parametry zadania
 
- W poniższej tabeli `VerifyFileHash` opisano parametry zadania.
+ W poniższej tabeli opisano parametry `VerifyFileHash` zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`File`|Wymagany parametr interfejsu `String`.<br /><br />Plik, który ma być haszem i zweryfikowany.|
+|`File`|Wymagany parametr interfejsu `String`.<br /><br />Plik do wyznaczania wartości skrótu i weryfikacji.|
 |`Hash`|Wymagany parametr interfejsu `String`.<br /><br />Oczekiwany skrót pliku.|
-|`Algorithm`|Parametr `String` opcjonalny.<br /><br />Algorytm. Dozwolone wartości: `SHA256` `SHA384`, `SHA512`, . Domyślnie `SHA256`= .|
-|`HashEncoding`|Parametr `String` opcjonalny.<br /><br />Kodowanie do użycia dla wygenerowanych skrótów. Wartość domyślna to `hex`. Dozwolone wartości `hex`= `base64`, .|
+|`Algorithm`|Opcjonalny `String` parametr.<br /><br />Algorytm. Dozwolone wartości: `SHA256` , `SHA384` , `SHA512` . Wartość domyślna = `SHA256` .|
+|`HashEncoding`|Opcjonalny `String` parametr.<br /><br />Kodowanie, które ma być używane dla wygenerowanych skrótów. Wartość domyślna to `hex` . Dozwolone wartości = `hex` , `base64` .|
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie `VerifyFileHash` użyto zadania do zweryfikowania własnej sumy kontrolnej.
+Poniższy przykład używa zadania, `VerifyFileHash` Aby sprawdzić własną sumę kontrolną.
 
 ```xml
 <Project>
@@ -61,7 +61,7 @@ W poniższym przykładzie `VerifyFileHash` użyto zadania do zweryfikowania wła
 </Project>
 ```
 
-Na MSBuild 16.5 i nowsze, jeśli nie chcesz kompilacji zakończyć się niepowodzeniem, gdy skrót nie jest zgodny, na przykład jeśli używasz porównania mieszania jako warunek przepływu sterowania, można obniżyć ostrzeżenie do komunikatu przy użyciu następującego kodu:
+Jeśli nie chcesz, aby kompilacja była zakończona niepowodzeniem w programie MSBuild 16,5 i nowszych, na przykład jeśli używasz porównania skrótu jako warunku przepływu sterowania, możesz obniżyć ostrzeżenie do komunikatu przy użyciu następującego kodu:
 
 ```xml
   <PropertyGroup>
@@ -88,4 +88,4 @@ Na MSBuild 16.5 i nowsze, jeśli nie chcesz kompilacji zakończyć się niepowod
 ## <a name="see-also"></a>Zobacz też
 
 - [Zadania](../msbuild/msbuild-tasks.md)
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

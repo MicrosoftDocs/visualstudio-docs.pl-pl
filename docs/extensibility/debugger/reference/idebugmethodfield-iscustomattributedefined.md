@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::IsCustomAttributeDefiniowany | Dokumenty firmy Microsoft
+title: 'IDebugMethodField:: IsCustomAttributeDefined | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d60e7a451a18ff8efbf47a008831109cd7f747c9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727119"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
-Określa, czy zdefiniowano określony atrybut niestandardowy.
+Określa, czy określony atrybut niestandardowy został zdefiniowany.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,7 +41,7 @@ int IsCustomAttributeDefined(
 
 ## <a name="parameters"></a>Parametry
 `pszCustomAttributeName`\
-[w] Ciąg zawierający nazwę atrybutu niestandardowego do znalezienia.
+podczas Ciąg zawierający nazwę atrybutu niestandardowego do znalezienia.
 
 ## <a name="return-value"></a>Wartość zwracana
  Zwraca S_OK, jeśli atrybut niestandardowy jest zdefiniowany w tej metodzie, w przeciwnym razie zwraca S_FALSE.

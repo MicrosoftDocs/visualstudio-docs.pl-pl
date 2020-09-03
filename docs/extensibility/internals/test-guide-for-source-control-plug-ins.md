@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 321d61175068f135aae87bff73f13ac800f4793c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905156"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Przewodnik testowania wtyczek kontroli kodu źródłowego
@@ -75,7 +75,7 @@ Ta sekcja zawiera wskazówki dotyczące testowania wtyczki kontroli źródła za
 
   - Przypadek 3e: Cofnij wyewidencjonowanie
 
-- [Obszar testowy 4: zaewidencjonowanie](../../extensibility/internals/test-area-4-check-in.md)
+- [Obszar testowy 4: ewidencjonowanie](../../extensibility/internals/test-area-4-check-in.md)
 
   - Przypadek 4a: zmodyfikowane elementy
 
@@ -83,7 +83,7 @@ Ta sekcja zawiera wskazówki dotyczące testowania wtyczki kontroli źródła za
 
   - Przypadek 4C: Dodawanie projektów
 
-- [Obszar testowy 5: zmienianie kontroli kodu źródłowego](../../extensibility/internals/test-area-5-change-source-control.md)
+- [Obszar testowy 5: zmiana kontroli kodu źródłowego](../../extensibility/internals/test-area-5-change-source-control.md)
 
   - Przypadek 5a: powiązanie
 
@@ -91,9 +91,9 @@ Ta sekcja zawiera wskazówki dotyczące testowania wtyczki kontroli źródła za
 
   - Przypadek 5c: rebind
 
-- [Obszar testowy 6: usuwanie](../../extensibility/internals/test-area-6-delete.md)
+- [Obszar testowy 6: Usuwanie](../../extensibility/internals/test-area-6-delete.md)
 
-- [Obszar testowy 7: udostępnianie](../../extensibility/internals/test-area-7-share.md)
+- [Obszar testowy 7: Udostępnij](../../extensibility/internals/test-area-7-share.md)
 
 - [Obszar testowy 8: przełączanie wtyczki](../../extensibility/internals/test-area-8-plug-in-switching.md)
 

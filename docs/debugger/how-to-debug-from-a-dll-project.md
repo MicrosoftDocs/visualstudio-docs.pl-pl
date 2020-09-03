@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 081e897b0ff76dd97d2c174bf8c6fbfa2334f8ff
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350124"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Instrukcje: debugowanie z projektu DLL w programie Visual Studio (C#, C++, Visual Basic, F #)
@@ -49,7 +49,7 @@ Natywne i zarządzane projekty DLL mają różne ustawienia, aby określić apli
 
 1. Dodaj wszelkie niezbędne argumenty programu do pola **argumenty polecenia** .
 
-1. Wybierz przycisk **OK**.
+1. Wybierz pozycję **OK**.
 
 ## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>Określanie aplikacji wywołującej w zarządzanym projekcie DLL
 

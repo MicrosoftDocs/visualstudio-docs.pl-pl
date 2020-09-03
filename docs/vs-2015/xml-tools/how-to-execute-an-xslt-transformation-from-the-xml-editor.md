@@ -10,20 +10,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b305d88779603b374e5f95842d7a5271a657268
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666536"
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Instrukcje: wykonywanie transformacji XSLT z edytora XML
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Instrukcje: Wykonywanie transformacji XSLT w edytorze XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Edytor XML umożliwia kojarzenie arkusza stylów XSLT z dokumentem XML, wykonywanie transformacji i wyświetlanie danych wyjściowych. Wynikowe wyniki transformacji XSLT są wyświetlane w nowym oknie dokumentu.
 
  Właściwość **Output** określa nazwę pliku dla danych wyjściowych. Jeśli właściwość **Output** jest pusta, nazwa pliku jest generowana w katalogu tymczasowym. Rozszerzenie pliku jest oparte na `xsl:output` elemencie w arkuszu stylów i może być. XML,. txt lub. htm.
 
- Jeśli właściwość **Output** określa nazwę pliku z rozszerzeniem. htm lub. html, dane wyjściowe XSLT są wyświetlane przy użyciu [!INCLUDE[msCoName](../includes/msconame-md.md)] Internet Explorer. Wszystkie inne rozszerzenia plików są otwierane przy użyciu domyślnego edytora wybranego przez [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio. Na przykład, jeśli rozszerzenie pliku to. XML, program Visual Studio używa edytora XML.
+ Jeśli właściwość **Output** określa nazwę pliku z rozszerzeniem. htm lub. html, dane wyjściowe XSLT są wyświetlane w programie [!INCLUDE[msCoName](../includes/msconame-md.md)] Internet Explorer. Wszystkie inne rozszerzenia plików są otwierane przy użyciu domyślnego edytora wybranego przez [!INCLUDE[msCoName](../includes/msconame-md.md)] program Visual Studio. Na przykład, jeśli rozszerzenie pliku to. XML, program Visual Studio używa edytora XML.
 
 ### <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>Aby wykonać transformację XSLT z dokumentu XML
 
@@ -31,9 +31,9 @@ Edytor XML umożliwia kojarzenie arkusza stylów XSLT z dokumentem XML, wykonywa
 
 2. Skojarz arkusz stylów XSLT z dokumentem XML.
 
-    - Dodaj instrukcję przetwarzania `xml-stylesheet` do dokumentu XML. Na przykład Dodaj następujący wiersz `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` do prologu dokumentu.
+    - Dodaj `xml-stylesheet` instrukcję przetwarzania do dokumentu XML. Na przykład Dodaj następujący wiersz `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` do prologu dokumentu.
 
-         —lub—
+         -lub-
 
     - Dodaj arkusz stylów XSLT przy użyciu okna **Właściwości** . W **oknie właściwości**dokumentu kliknij przycisk **Przeglądaj** dla pola **arkusz stylów** , wybierz arkusz stylów XSLT, a następnie kliknij przycisk **Otwórz**.
 

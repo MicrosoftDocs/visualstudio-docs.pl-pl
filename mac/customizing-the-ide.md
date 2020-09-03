@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: 98adf6aa252f4151af8a5504efd3856aef0afc8d
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801779"
 ---
 # <a name="customizing-the-ide"></a>Dostosowywanie środowiska IDE
@@ -25,7 +25,7 @@ Możesz przełączyć motywy w Visual Studio dla komputerów Mac, przechodząc d
 
 ![Ciemny wybór motywu](media/customizing-the-ide-image7b.png)
 
-## <a name="localization"></a>Localization
+## <a name="localization"></a>Lokalizacja
 
 Visual Studio dla komputerów Mac jest lokalizowana w następujących 14 językach, dzięki czemu można uzyskać dostęp do większej liczby deweloperów:
 
