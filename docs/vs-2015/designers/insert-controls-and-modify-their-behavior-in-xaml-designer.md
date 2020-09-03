@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 02d51c5799391863262d285e1cda209a3b7938d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300856"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Wstawianie kontrolek i modyfikowanie ich zachowania w programie Projektant XAML
@@ -27,14 +27,14 @@ Kontrolki umożliwiają użytkownikom współpracują z aplikacją. Można ich u
 
 - [Tworzenie elementów sterujących](#Modify)
 
-## <a name="Insert"></a>Dodawanie kontrolek do obszaru kompozycji
+## <a name="add-controls-to-the-artboard"></a><a name="Insert"></a> Dodawanie kontrolek do obszaru kompozycji
  Możesz przeciągnąć kontrolki z panelu **składniki** do **obszaru kompozycji**, a następnie zmodyfikować je w oknie **Właściwości** .
 
- ![FlipView &#45; zasobów &#45; Blend](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")
+ ![Blend &#45; zasoby &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")
 
  Te wideo pokazują, jak używać niektórych bardziej typowych kontrolek.
 
-|Formant|Obejrzyj krótkie wideo|
+|Kontrola|Obejrzyj krótkie wideo|
 |-------------|-------------------------|
 |`Menu` ![](../designers/media/015a263c-0b2b-4253-ac57-b86fcb8c9591.png "015a263c-0b2b-4253-ac57-b86fcb8c9591")|![Konfigurowanie zainstalowanych funkcji](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Dodawanie kontrolek](https://www.youtube.com/watch?v=ra4AHfgD4Ys&list=PLBDF977B2F1DAB358&index=45)|
 |`Button` ![](../designers/media/05df1779-a68f-436b-b834-a91b7995a3ec.png "05df1779-a68f-436b-b834-a91b7995a3ec")|![Konfigurowanie zainstalowanych funkcji](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [projektowanie przycisku](http://www.popscreen.com/v/6A4gb/Microsoft-Expression-Blend-Designing-a-Button)|
@@ -53,7 +53,7 @@ Kontrolki umożliwiają użytkownikom współpracują z aplikacją. Można ich u
 
  Aby utworzyć kontrolkę, wybierz obiekt. Następnie w menu **Narzędzia** kliknij pozycję **uczyń kontrolę**.
 
-## <a name="Modify"></a>Tworzenie elementów sterujących
+## <a name="make-controls-do-things"></a><a name="Modify"></a> Tworzenie elementów sterujących
  Kontrolki mogą wykonywać akcje, gdy użytkownicy współpracują z nimi. Na przykład mogą rozpocząć animację, zaktualizować źródło danych lub odtworzyć wideo.
 
  Użyj *wyzwalaczy*, *zachowań*i *zdarzeń* , aby wykonywać formanty.

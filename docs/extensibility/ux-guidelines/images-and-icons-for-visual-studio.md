@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: edbf1542277189f37565e7ff415a52025094e595
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906113"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrazy i ikony dla programu Visual Studio
-## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Używanie obrazów w programie Visual Studio
+## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Używanie obrazów w programie Visual Studio
  Przed utworzeniem kompozycji należy rozważyć użycie 1000 obrazów w [bibliotece obrazów programu Visual Studio](https://www.microsoft.com/download/details.aspx?id=35825).
 
 ### <a name="types-of-images"></a>Typy obrazów
@@ -34,7 +34,7 @@ ms.locfileid: "85906113"
 
 - **Mało.** Służy do wskazywania, czy operacja jest dozwolona przy użyciu myszy, gdzie obiekt może być porzucony i tak dalej.
 
-## <a name="icon-design"></a><a name="BKMK_IconDesign"></a>Projektowanie ikon
+## <a name="icon-design"></a><a name="BKMK_IconDesign"></a> Projektowanie ikon
 
 ### <a name="overview"></a>Omówienie
  Program Visual Studio używa ikon nowoczesnego stylu, które mają czyste elementy geometryczne i 50/50 bilanse pozytywne/negatywne (jasne/ciemne) i wykorzystują bezpośrednie, zrozumiałe metafory. Kluczowe ikony wskazujące na przejrzystość, uproszczenie i kontekst.
@@ -234,7 +234,7 @@ ms.locfileid: "85906113"
 
  Aby uzyskać więcej informacji na temat używania koloru w ikonach programu Visual Studio, zobacz [using Color in images](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).
 
-## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a>Korzystanie z koloru w obrazach
+## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a> Korzystanie z koloru w obrazach
 
 ### <a name="overview"></a>Omówienie
  Ikony w programie Visual Studio to przede wszystkim monochromatyczny. Kolor jest zarezerwowany do przekazywania określonych informacji i nigdy nie do dekoracji. Kolor jest używany:

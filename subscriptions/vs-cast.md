@@ -8,10 +8,10 @@ ms.date: 03/02/2020
 ms.topic: how-to
 description: Poznaj korzyści wynikające z wyróżniania RZUTowania dostępne w wybranych subskrypcjach programu Visual Studio
 ms.openlocfilehash: 565dd9326447757cd2af23e83dfcf7f2d4553054
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906061"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Korzyść wyróżniania RZUTowania w subskrypcjach programu Visual Studio
@@ -81,10 +81,10 @@ Po zatwierdzeniu żądania otrzymasz drugą wiadomość e-mail z potwierdzeniem 
 | Visual Studio Enterprise z usługą GitHub Enterprise  | Licencja | Ocenianie 5 aplikacji przez trzy miesiące|  Nie.  Dostępne tylko dla nowych subskrybentów          |
 | Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Ocenianie 1 aplikacji przez trzy miesiące                                                             |  Nie.  Dostępne tylko dla nowych subskrybentów                  |
 | Visual Studio Professional z usługą GitHub Enterprise | Licencja                                       | Ocenianie 1 aplikacji przez trzy miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów                  |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                             |  Nie dotyczy           |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Nie dotyczy          |
-| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Nie dotyczy |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                             |  Brak           |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Brak          |
+| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Brak |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), ekwiwalentu, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Microsoft Partner Network (MPN), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark, Wyobraź sobie*
 

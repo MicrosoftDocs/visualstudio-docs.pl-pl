@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetValue | Dokumentacja firmy Microsoft
+title: 'IDebugObject:: SetValue | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7d898852c6bcca42cb0df1e7fab1597df74427a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203259"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ustawia wartość obiektu z kolejnych serię bajtów.  
+Ustawia wartość obiektu z kolejnej serii bajtów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,16 +42,16 @@ int SetValue(
   
 #### <a name="parameters"></a>Parametry  
  `pValue`  
- [in] Tablica bajtów reprezentujący nową wartość.  
+ podczas Tablica bajtów reprezentująca nową wartość.  
   
  `nSize`  
- [in] Rozmiar wartość w bajtach.  
+ podczas Rozmiar wartości w bajtach.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wartości w tablicy są kopiowane do tego [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiektu, zastępując dowolnym istniejącą wartość. Rozmiar nową wartość może być większy lub mniejszy niż istniejąca wartość. To `IDebugObject` nie może być odwołaniem o wartości null.  
+ Wartości w tablicy są kopiowane do tego obiektu [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , zastępując wszystkie istniejące wartości. Rozmiar nowej wartości może być większy lub mniejszy niż istniejąca wartość. `IDebugObject`Nie może to być odwołanie o wartości null.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   

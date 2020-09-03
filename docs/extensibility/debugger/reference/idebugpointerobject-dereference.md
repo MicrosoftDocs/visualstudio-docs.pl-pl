@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::Dereference | Dokumenty firmy Microsoft
+title: IDebugPointerObject::D ereference | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fe87d5db40ce663d84c9561e89a84e6fcb1684ed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725567"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
-Pobiera obiekt wskazał.
+Pobiera obiekt wskazywany przez.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,16 +43,16 @@ int Dereference(
 
 ## <a name="parameters"></a>Parametry
 `dwIndex`\
-[w] Proste przesunięcie bajtu od początku obiektu wskazywu.
+podczas Proste przesunięcie bajtów od początku obiektu wskazywanego przez.
 
 `ppObject`\
-[na zewnątrz] Zwraca obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący obiekt wskazywalny, plus przesunięcie, jeśli istnieje.
+określoną Zwraca obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący obiekt wskazywany, a także przesunięcie, jeśli istnieje.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu. Zwraca E_FAIL, jeśli ten obiekt nie wskazuje na inny obiekt.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu. Zwraca E_FAIL, jeśli ten obiekt nie wskazuje innego obiektu.
 
 ## <a name="remarks"></a>Uwagi
- Obiekt wskazany może być typem pierwotnym lub bardziej złożonym, takim jak klasa lub struktura.
+ Obiekt wskazywany może być typem pierwotnym lub bardziej złożonym, takim jak Klasa lub struktura.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

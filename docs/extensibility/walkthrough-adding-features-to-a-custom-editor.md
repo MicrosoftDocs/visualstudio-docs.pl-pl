@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d7605307d24aa320d2f892dc332f9ff78e14114e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905951"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Przewodnik: Dodawanie funkcji do edytora niestandardowego
@@ -142,7 +142,7 @@ Po utworzeniu edytora niestandardowego można dodać do niego więcej funkcji.
 
 - Aby zapobiec zapisywaniu poleceń menu w interfejsie użytkownika, należy użyć istniejących poleceń w IDE przed wyjęciem nowych poleceń. Polecenia udostępnione są zdefiniowane w *SharedCmdDef. vsct* i *ShellCmdDef. vsct*. Te pliki są instalowane domyślnie w podkatalogu VisualStudioIntegration\Common\Inc [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalacji.
 
-- `ISelectionContainer`może wyrazić wybór pojedynczy i wielokrotny. Każdy zaznaczony obiekt jest zaimplementowany jako `IDispatch` obiekt.
+- `ISelectionContainer` może wyrazić wybór pojedynczy i wielokrotny. Każdy zaznaczony obiekt jest zaimplementowany jako `IDispatch` obiekt.
 
 - IDE implementuje `IOleUndoManager` jako usługę dostępną z <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> lub jako obiekt, w którym można utworzyć wystąpienie <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> . Edytor implementuje `IOleUndoUnit` interfejs dla każdej `Undo` akcji.
 

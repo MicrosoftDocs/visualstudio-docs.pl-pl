@@ -1,7 +1,7 @@
 ---
 title: Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi
 titleSuffix: ''
-description: Dowiedz się więcej o narzędziach, których można używać do wykrywania instalacji programu Visual Studio i zarządzania nimi na komputerach klienckich.
+description: Informacje o narzędziach, których można użyć do wykrywania instalacji programu Visual Studio i zarządzania nimi na komputerach klienckich.
 ms.date: 08/14/2017
 ms.custom: seodec18
 ms.topic: conceptual
@@ -17,29 +17,29 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d6e46c95584cb3732d6339a02f6098976f2bab85
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115035"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi
 
-Istnieje kilka narzędzi, których można użyć do wykrywania instalacji programu Visual Studio na komputerach klienckich i do zarządzania instalacjami.
+Istnieje kilka narzędzi, których można użyć do wykrywania instalacji programu Visual Studio na komputerach klienckich i zarządzania nimi.
 
 ## <a name="detecting-existing-visual-studio-instances"></a>Wykrywanie istniejących wystąpień programu Visual Studio
 
-Udostępniliśmy kilka narzędzi, które pomogą Ci wykrywać i zarządzać zainstalowanymi wystąpieniami programu Visual Studio na komputerach klienckich:
+Wprowadziliśmy kilka dostępnych narzędzi, które pomogą wykryć zainstalowane wystąpienia programu Visual Studio i zarządzać nimi na komputerach klienckich:
 
-* [vswhere](https://github.com/microsoft/vswhere): plik wykonywalny wbudowany w programie Visual Studio lub dostępny dla oddzielnej dystrybucji, która pomaga znaleźć lokalizację wszystkich wystąpień programu Visual Studio na określonym komputerze.
-* [VSSetup.PowerShell:](https://github.com/microsoft/vssetup.powershell)Skrypty programu PowerShell, które używają interfejsu API konfiguracji instalacji do identyfikowania zainstalowanych wystąpień programu Visual Studio.
-* [Przykłady konfiguracji vs: przykłady](https://github.com/microsoft/vs-setup-samples)języka C# i C++, które pokazują, jak używać interfejsu API konfiguracji instalatora do wykonywania zapytań o istniejącą instalację.
+* [vswhere](https://github.com/microsoft/vswhere): plik wykonywalny wbudowany w program Visual Studio lub dostępny w oddzielnym dystrybucji, który ułatwia znalezienie lokalizacji wszystkich wystąpień programu Visual Studio na konkretnym komputerze.
+* [VSSetup. PowerShell](https://github.com/microsoft/vssetup.powershell): skrypty programu PowerShell, które używają interfejsu API konfiguracji Instalatora do identyfikowania zainstalowanych wystąpień programu Visual Studio.
+* [Vs-Setup-Samples](https://github.com/microsoft/vs-setup-samples): przykłady języków C# i C++, które pokazują, jak używać interfejsu API konfiguracji Instalatora do wysyłania zapytań do istniejącej instalacji.
 
-Ponadto interfejs [API konfiguracji instalacji](<xref:Microsoft.VisualStudio.Setup.Configuration>) udostępnia interfejsy dla deweloperów, którzy chcą tworzyć własne narzędzia do przesłuchiwania wystąpień programu Visual Studio.
+Ponadto [interfejs API konfiguracji instalacji](<xref:Microsoft.VisualStudio.Setup.Configuration>) udostępnia interfejsy dla deweloperów, którzy chcą tworzyć własne narzędzia do Interrogating wystąpień programu Visual Studio.
 
-## <a name="using-vswhereexe"></a>Korzystanie z pliku vswhere.exe
+## <a name="using-vswhereexe"></a>Używanie vswhere.exe
 
-`vswhere.exe`jest automatycznie uwzględniany w programie Visual Studio (począwszy od programu Visual Studio 2017 w wersji 15.2 i nowszych wersjach) lub można go pobrać ze [strony wersji vswhere](https://github.com/Microsoft/vswhere/releases). Służy `vswhere -?` do uzyskania informacji pomocy na temat narzędzia. Na przykład to polecenie pokazuje wszystkie wersje programu Visual Studio, w tym wcześniejsze wersje produktu i prereleases i wyprowadza wyniki w formacie JSON:
+`vswhere.exe` jest automatycznie dołączany do programu Visual Studio (począwszy od programu Visual Studio 2017 w wersji 15,2 lub nowszej) lub można go pobrać ze [strony wersji vswhere](https://github.com/Microsoft/vswhere/releases). Użyj, `vswhere -?` Aby uzyskać informacje pomocy dotyczące narzędzia. Na przykład to polecenie wyświetla wszystkie wersje programu Visual Studio, w tym wcześniejsze wersje produktu i wersji wstępnej, i wyświetla wyniki w formacie JSON:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
@@ -48,38 +48,38 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Aby uzyskać więcej informacji na temat instalacji programu Visual Studio 2017, zobacz [Archiwa instalacji programu Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
+> Aby uzyskać więcej informacji na temat instalacji programu Visual Studio 2017, zobacz [archiwa Instalatora programu Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
 
 ::: moniker-end
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>Edytowanie rejestru dla wystąpienia programu Visual Studio
 
-W programie Visual Studio ustawienia rejestru są przechowywane w lokalizacji prywatnej, która umożliwia wiele wystąpień obok siebie tej samej wersji programu Visual Studio na tym samym komputerze.
+W programie Visual Studio ustawienia rejestru są przechowywane w lokalizacji prywatnej, co umożliwia używanie wielu wystąpień równoległych tej samej wersji programu Visual Studio na tym samym komputerze.
 
-Ponieważ te wpisy nie są przechowywane w rejestrze globalnym, istnieją specjalne instrukcje dotyczące wprowadzania zmian w ustawieniach rejestru za pomocą Edytora rejestru:
+Ponieważ te wpisy nie są przechowywane w rejestrze globalnym, istnieją specjalne instrukcje dotyczące używania Edytora rejestru do wprowadzania zmian w ustawieniach rejestru:
 
 1. Jeśli masz otwarte wystąpienie programu Visual Studio, zamknij je.
 
-1. Start `regedit.exe`.
+1. Rozpocznij `regedit.exe` .
 
 1. Wybierz `HKEY_LOCAL_MACHINE` węzeł.
 
-1. Z menu głównego Regedit wybierz **pozycję File** > **Load Hive...** a następnie wybierz prywatny plik rejestru, który jest przechowywany w folderze **AppData\Local.** Przykład:
+1. Z menu głównego programu regedit wybierz pozycję **plik**  >  **Załaduj gałąź...** , a następnie wybierz plik rejestru prywatnego, który jest przechowywany w folderze **AppData\Local** . Na przykład:
 
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
 
    > [!NOTE]
-   > `<config>`odpowiada wystąpieniu programu Visual Studio, które chcesz przeglądać.
+   > `<config>` odpowiada wystąpieniu programu Visual Studio, które chcesz przeglądać.
 
-Zostanie wyświetlony monit o podanie nazwy gałęzi, która staje się nazwą izolowanego ula. Po zrobienie tego, powinieneś być w stanie przeglądać rejestr w obszarze izolowanej gałęzi, który został utworzony.
+Zostanie wyświetlony monit o podanie nazwy Hive, która jest nazwą oddzielonej gałęzi. Po wykonaniu tej czynności powinno być możliwe przeglądanie rejestru w ramach utworzonej gałęzi izolowanej.
 
 > [!IMPORTANT]
-> Przed ponownym uruchomieniem programu Visual Studio należy zwolnić utworzony izolowany gałąź. Aby to zrobić, wybierz opcję**Rozładuj** **plik** > hive z menu głównego Regedit. (Jeśli tego nie zrobisz, plik pozostanie zablokowany i program Visual Studio nie będzie mógł się uruchomić).
+> Przed ponownym uruchomieniem programu Visual Studio należy zwolnić utworzoną gałąź izolowaną. W tym celu wybierz pozycję **plik**  >  **Zwolnij gałąź** z głównego menu programu regedit. (Jeśli tego nie zrobisz, plik pozostaje zablokowany i nie będzie można uruchomić programu Visual Studio).
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Przewodnik dla administratorów programu Visual Studio](visual-studio-administrator-guide.md)
+* [Przewodnik po administratorach programu Visual Studio](visual-studio-administrator-guide.md)

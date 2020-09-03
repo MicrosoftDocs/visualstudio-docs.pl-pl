@@ -1,5 +1,5 @@
 ---
-title: Wizarddata — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: WizardData, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,10 +14,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d7cd59266a69140ba2ea5a7fd1d1b0b0c72f14c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201927"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData — Element (szablony Visual Studio)
@@ -26,7 +26,7 @@ ms.locfileid: "68201927"
 Określa niestandardowy kod XML  
   
  \<VSTemplate>  
- \<WizardData >  
+ \<WizardData>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -50,20 +50,20 @@ Określa niestandardowy kod XML
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Zawiera wszystkie metadane dla szablonu projektu, szablon elementu lub starter kit.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Zawiera wszystkie metadane szablonu projektu, szablonu elementu lub zestawu startowego.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest opcjonalna.  
   
- Ten tekst Określa niestandardowy plik XML do przekazania do rozszerzenia niestandardowego kreatora, określone w [wizardextension —](../extensibility/wizardextension-element-visual-studio-templates.md) elementu.  
+ Ten tekst określa niestandardowy kod XML do przekazania do rozszerzenia kreatora niestandardowego określonego w elemencie [WizardExtension —](../extensibility/wizardextension-element-visual-studio-templates.md) .  
   
 ## <a name="remarks"></a>Uwagi  
- Wszelkie XML można określić w tym elemencie. Plik XML zostaną przekazane jako parametr do rozszerzenia niestandardowego kreatora, umożliwiając rozszerzenie Aby użyć zawartość tego elementu. Nie jest sprawdzana na tych danych.  
+ Dowolny kod XML można określić w tym elemencie. KOD XML zostanie przesłany jako parametr do rozszerzenia kreatora niestandardowego, co pozwala rozszerzeniu używać zawartości tego elementu. Nie wykonano walidacji danych.  
   
- Zawartość `WizardData` elementu są przekazywane bez zmian, jako parametru w słowniku ciąg parametrów w `IWizard.RunStarted` metody. Ten parametr nosi $WizardData$.  
+ Zawartość `WizardData` elementu jest przenoszona, bez zmian, jako parametr wewnątrz słownika ciągów parametrów w `IWizard.RunStarted` metodzie. Parametr ma nazwę $WizardData $.  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie pokazano metadanych szablon standardowy projekt [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplikacji Windows.  
+ Poniższy przykład ilustruje metadane standardowego szablonu projektu dla [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplikacji systemu Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -97,7 +97,7 @@ Określa niestandardowy kod XML
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Wizardextension — Element (szablony Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)   
- [Instrukcje: korzystanie z kreatorów z szablonami projektów](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [WizardExtension —, element (szablony Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)   
+ [Porady: korzystanie z kreatora z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8892f46585179ae5857d48deffd982e1cfc0dee
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115389"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Skróty klawiaturowe w Projektancie przepływu pracy
@@ -29,21 +29,21 @@ W programie Visual Studio globalne skróty i skróty debugowania stosują się d
 
 Poniższa tabela podsumowuje domyślne skróty klawiaturowe przypisane do poleceń Projektant przepływu pracy.
 
-|Skrót|Cel|
+|Skrót|Przeznaczenie|
 |-|-------------|
-|CTRL+E, A|Pokazuje lub ukrywa projektanta argumentów.|
-|CTRL+E, C|Zwija wybrane działanie.|
-|CTRL+E, E|Rozwija wybrane działanie na miejscu.|
-|CTRL+E, F|Łączy wybrane działania w schemacie blokowym.|
-|CTRL+E, I|Pokazuje lub ukrywa projektanta importów.|
-|CTRL+E, M|Przesuwa fokus klawiatury do następnego elementu w kolejności tabulacji.|
-|CTRL+E, N|Tworzy nową zmienną w zakresie wybranego działania (lub najbliższą).|
-|CTRL+E, O|Pokazuje lub ukrywa mapę przeglądu.|
-|CTRL+E, P|Powoduje przejście do elementu nadrzędnego wybranego działania. Powoduje to przejście do jednego poziomu w nawigacji nawigacyjnej i zmianę działania głównego na powierzchni projektanta.|
-|CTRL+E, S|Dodaje element z fokusem klawiatury do bieżącego zaznaczenia.|
-|CTRL+E, V|Pokazuje lub ukrywa projektanta zmiennych.|
-|CTRL+E, X|Rozwija wszystkie działania w przepływie pracy.|
-|CTRL+ALT+F6|Przenosi fokus klawiatury z bieżącego obszaru interfejsu użytkownika do następnego obszaru w sekwencji. Kolejność jest następująca:<br /><br /> 1. pasek nawigacyjny.<br />2. powierzchnia projektanta<br />3. argumenty/zmienne/Importy projektant w przypadku otwarcia<br />4. Shell|
+|CTRL + E, A|Pokazuje lub ukrywa projektanta argumentów.|
+|CTRL + E, C|Zwija wybrane działanie.|
+|CTRL + E, E|Rozwija wybrane działanie na miejscu.|
+|CTRL + E, F|Łączy wybrane działania w schemacie blokowym.|
+|CTRL + E, I|Pokazuje lub ukrywa projektanta importów.|
+|CTRL + E, M|Przesuwa fokus klawiatury do następnego elementu w kolejności tabulacji.|
+|CTRL + E, N|Tworzy nową zmienną w zakresie wybranego działania (lub najbliższą).|
+|CTRL + E, O|Pokazuje lub ukrywa mapę przeglądu.|
+|CTRL + E, P|Powoduje przejście do elementu nadrzędnego wybranego działania. Powoduje to przejście do jednego poziomu w nawigacji nawigacyjnej i zmianę działania głównego na powierzchni projektanta.|
+|CTRL + E, S|Dodaje element z fokusem klawiatury do bieżącego zaznaczenia.|
+|CTRL + E, V|Pokazuje lub ukrywa projektanta zmiennych.|
+|CTRL + E, X|Rozwija wszystkie działania w przepływie pracy.|
+|CTRL + ALT + F6|Przenosi fokus klawiatury z bieżącego obszaru interfejsu użytkownika do następnego obszaru w sekwencji. Kolejność jest następująca:<br /><br /> 1. pasek nawigacyjny.<br />2. powierzchnia projektanta<br />3. argumenty/zmienne/Importy projektant w przypadku otwarcia<br />4. Shell|
 
 ### <a name="flowchart"></a>Schemat blokowy
 
@@ -80,10 +80,10 @@ Domyślnie domyślne skróty klawiaturowe do edycji tekstu Visual Basic są stos
 - Ponowne mapowanie skrótów klawiaturowych dla następujących poleceń nie ma żadnego wpływu. Możesz użyć domyślnych skrótów klawiaturowych, aby uzyskać dostęp do tych poleceń podczas edytowania wyrażenia.
 
   - Wytnij
-  - Kopiowanie
+  - Kopiuj
   - Wklej
   - Zaznacz wszystko
   - Cofnij
-  - Wykonaj ponownie
+  - Ponów
 
 - Aby ponownie zamapować skróty klawiaturowe poleceń edycji wyrażeń wewnątrz Projektant przepływu pracy w programie Visual Studio, Edytuj skróty w zakresie Projektant przepływu pracy. Zmiany wprowadzone w zakresie edytora tekstu nie są automatycznie stosowane do Projektant przepływu pracy. Jeśli chcesz ponownie mapować skróty w obu miejscach, musisz zastosować zmiany dwukrotnie (raz dla każdego zakresu).

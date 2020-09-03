@@ -68,9 +68,9 @@ sections:
             href: vs-azure-tools-connected-services-storage.md
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/ActiveDirectory.svg'
-            text: Azure Active Directory
+            text: Usługa Azure Active Directory
             href: /azure/active-directory/develop/vs-active-directory-add-connected-service
-  - title: Usługi w chmurze platformy Azure
+  - title: usług Azure Cloud Services
     items:
       - type: paragraph
         text: Usługi w chmurze platformy Azure to technologia ogólnego przeznaczenia służąca do tworzenia ogólnych usług platformy Azure z dostępem do magazynu platformy Azure i innych zasobów platformy Azure.
@@ -136,13 +136,13 @@ sections:
             href: 'https://docs.microsoft.com/azure/azure-resource-manager/vs-azure-tools-resource-groups-deployment-projects-create-deploy'
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/Azure-Data-Lake-Analytics-COLOR.svg'
-            text: Usługa Data Lake Analytics
+            text: Data Lake Analytics
             href: 'https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started'
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/StreamAnalytics.svg'
-            text: Usługa Stream Analytics
+            text: Stream Analytics
             href: 'https://docs.microsoft.com/azure/stream-analytics/stream-analytics-quick-create-vs'
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/Fabric.svg'
-            text: Usługa Service Fabric
+            text: Service Fabric
             href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-get-started'

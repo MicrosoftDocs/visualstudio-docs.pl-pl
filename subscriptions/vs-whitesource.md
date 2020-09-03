@@ -8,10 +8,10 @@ ms.date: 04/20/2020
 ms.topic: how-to
 description: Dowiedz się, jak aktywować subskrypcję usługi WhiteSource w ramach subskrypcji programu Visual Studio.
 ms.openlocfilehash: 3bdd71615d0dff19cd1d05dfca91041ae531a6f1
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906017"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource w subskrypcjach programu Visual Studio
@@ -28,7 +28,7 @@ Znajdź i napraw luki w zabezpieczeniach typu "open source" i Generuj kompleksow
 
 3. Otrzymasz powiadomienie z informacją o kodzie aktywacji.  **Skopiuj kod do schowka**, a następnie kliknij przycisk **Aktywuj**.
    > [!div class="mx-imgBorder"]
-   > ![Kod korzyści WhiteSource](_img/vs-whitesource/vs-whitesource-code.png)
+   > ![Kod korzyści WhiteSource ](_img/vs-whitesource/vs-whitesource-code.png)
 
 4. Na stronie **Aktywuj Twoje konto** kliknij link **instalacji** w kroku 1.
 5. Kliknij przycisk **Pobierz bezpłatnie** w Visual Studio Marketplace.
@@ -57,7 +57,7 @@ Znajdź i napraw luki w zabezpieczeniach typu "open source" i Generuj kompleksow
 > Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) przeglądania różnych opcji zakupu programu Visual Studio.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
-- Potrzebujesz pomocy z WhiteSourceem?  Czat z przedstawicielem WhiteSourcehttps://www.whitesourcesoftware.com/vse_whitesource_bolt/
+- Potrzebujesz pomocy z WhiteSourceem?  Czat z przedstawicielem WhiteSource https://www.whitesourcesoftware.com/vse_whitesource_bolt/
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 

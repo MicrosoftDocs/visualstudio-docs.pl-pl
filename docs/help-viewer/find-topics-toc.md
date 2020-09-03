@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9bd332b5767dbfffcfbaa44637e0cc92051f7b1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284935"
 ---
 # Instrukcje: Znajdowanie tematów w spisie treści
@@ -31,7 +31,7 @@ Na karcie **zawartość** można znaleźć informacje za pomocą spisu treści (
 
 ## Filtrowanie spisu treści
 
-Możesz filtrować Spis treści, aby zawęzić zakres tematów, które pojawiają się na karcie **zawartość** . tytuły pojawiają się na liście tylko wtedy, gdy zawierają główny termin określony przez użytkownika. Na przykład, jeśli określisz "Rozwiązywanie problemów" jako filtr, pojawią się tylko tytuły zawierające "Rozwiązywanie problemów" lub "Rozwiązywanie problemów". Węzły, których tytuły nie zawierają terminu, są zwijane do jednego węzła z wielokropkiem (**...**).
+Można filtrować Spis treści, aby zawęzić zakres tematów, które pojawiają się na karcie **zawartość** . Tytuły pojawiają się na liście tylko wtedy, gdy zawierają korzeń określonego terminu. Na przykład, jeśli określisz "Rozwiązywanie problemów" jako filtr, pojawią się tylko tytuły zawierające "Rozwiązywanie problemów" lub "Rozwiązywanie problemów". Węzły, których tytuły nie zawierają terminu, są zwijane do jednego węzła z wielokropkiem (**...**).
 
 1. Wybierz kartę **zawartość** .
 

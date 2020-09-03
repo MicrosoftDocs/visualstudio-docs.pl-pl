@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Attach | Dokumentacja firmy Microsoft
+title: 'IDebugProcessEx2:: Attach | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1a62f21a6606466d5a5976a031b3c4cb6452206f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202804"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta metoda informuje proces, że sesji jest teraz debugowanie procesu.  
+Ta metoda informuje proces, że sesja jest teraz debugowana w procesie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,13 +40,13 @@ int Attach(
   
 #### <a name="parameters"></a>Parametry  
  `pSession`  
- [in] Wartość, która jednoznacznie identyfikuje sesji dołączenie do tego procesu.  
+ podczas Wartość, która jednoznacznie identyfikuje sesję dołączenia do tego procesu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazanego interfejsu `pSession` jest traktowane tylko jako plik cookie, a wartość, która jednoznacznie identyfikuje Menedżer debugowania sesji, dołączenie do tego procesu; Brak metody w interfejsie podane są funkcjonalne.  
+ Przekazany Interfejs `pSession` ma być traktowany tylko jako plik cookie, wartość, która jednoznacznie identyfikuje Menedżera debugowania sesji dołączenia do tego procesu; żadna z metod w interfejsie nie jest funkcjonalna.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

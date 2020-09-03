@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Serwer sieci Web został zablokowany i blokuje czasownik DEBUG | Dokumentacja firmy Microsoft'
+title: 'Błąd: serwer sieci Web został zablokowany i blokuje czasownik debugowania | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,39 +19,39 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b85efc44b39485476154d0f41f3261b2aeb1ea7c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203209"
 ---
-# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Błąd: Serwer internetowy został zablokowany i blokuje czasownik DEBUG
+# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Błąd: serwer sieci Web został zablokowany i blokuje zlecenie DEBUG
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Przechodzenie do aplikacji sieci Web lub usługi sieci Web XML nie powiodło się, ponieważ uruchomiono narzędzia blokady usług IIS i URLScan został zainstalowany i aktywowany. Ten warunek blokuje usług IIS z otrzymywania czasownik DEBUG.  
+Przechodzenie do aplikacji sieci Web lub usługi sieci Web XML nie powiodło się, ponieważ uruchomiono narzędzie blokowania usług IIS, a program URLScan został zainstalowany i aktywowany. Ten warunek blokuje otrzymywanie zlecenia DEBUG przez usługi IIS.  
   
- URLScan to narzędzie zabezpieczeń, który działa w połączeniu z narzędzia blokady usług IIS, aby zapewnić możliwość Wyłącz niepotrzebne funkcje i ograniczenia typu żądania HTTP, które serwer przetworzy Administratorzy witryn sieci Web usług IIS. Blokując określone żądania HTTP, narzędzia zabezpieczeń dotyczące narzędzia URLScan zapobiega potencjalnie szkodliwych żądań z uzyskiwaniem dostępu do serwera i uszkodzenia.  
+ URLScan to narzędzie zabezpieczeń, które działa w połączeniu z narzędziem blokowania usług IIS, dzięki czemu administratorzy witryny sieci Web usług IIS mogą wyłączyć niepotrzebne funkcje i ograniczyć typ żądań HTTP, które serwer będzie przetwarzać. Blokując określone żądania HTTP, narzędzie Security URLScan uniemożliwia potencjalnie szkodliwe żądania docierające do serwera i powodując uszkodzenie.  
   
- Jeśli aplikacja jest uruchomiona w usługach IIS 6.0 w systemie Windows Server 2003, nie muszą działać narzędzia blokady usług IIS, ponieważ usług IIS 6.0 zapewnia taką samą funkcjonalność.  
+ Jeśli aplikacja jest uruchomiona w usługach IIS 6,0 w systemie Windows Server 2003, nie trzeba uruchamiać narzędzia blokowania usług IIS, ponieważ usługi IIS 6,0 oferują te same funkcje.  
   
-### <a name="to-enable-debugging-on-a-web-server-with-urlscan-installed"></a>Aby włączyć debugowanie na serwerze sieci Web za pomocą narzędzia URLScan zainstalowany  
+### <a name="to-enable-debugging-on-a-web-server-with-urlscan-installed"></a>Aby włączyć debugowanie na serwerze sieci Web z zainstalowanym programem URLScan  
   
-1. Zlokalizuj plik Urlscan.ini. Zwykle znajduje się on w katalogu, który wygląda następująco:  
+1. Znajdź plik Urlscan.ini. Zwykle znajduje się w katalogu, który wygląda następująco:  
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2. Tworzenie kopii pliku i nadaj mu nazwę **Urlscan.old**.  
+2. Utwórz kopię pliku i nadaj jej nazwę **URLScan. old**.  
   
-3. Otwórz oryginalną kopię pliku Urlscan.ini za pomocą Notatnika lub ulubionego edytora tekstu.  
+3. Otwórz oryginalną kopię pliku Urlscan.ini przy użyciu Notatnika lub wybranego edytora tekstu.  
   
-4. W Urlscan.ini Zlokalizuj sekcję [AllowVerbs]. Dodaj debugowania do sekcji [AllowVerbs]. Jeśli widzisz; debugowanie w sekcji [AllowVerbs], Usuń średnik do usuń znaczniki komentarza zlecenie.  
+4. W Urlscan.ini zlokalizuj sekcję [AllowVerbs]. Dodaj debugowanie do sekcji [AllowVerbs]. Jeśli widzisz;D EBUG w sekcji [AllowVerbs], usuń średnik, aby usunąć komentarz do zlecenia.  
   
-5. Zlokalizuj sekcję [DenyVerbs]. Jeśli debugowania pojawia się w sekcji [DenyVerbs], należy go usunąć.  
+5. Znajdź sekcję [DenyVerbs]. Jeśli debugowanie pojawi się w sekcji [DenyVerbs], usuń je.  
   
 6. Zapisz plik.  
   
-7. Uruchom ponownie serwer lub ponownego uruchomienia usług IIS.  
+7. Uruchom ponownie serwer lub Uruchom ponownie usługi IIS.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [Debugowanie aplikacji sieci Web: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Błąd: Serwer internetowy nie mógł znaleźć żądanego zasobu](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

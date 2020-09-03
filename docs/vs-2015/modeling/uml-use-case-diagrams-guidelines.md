@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7c9ccd5285f9a2744704c0ee13094a1dac31c53b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74302838"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramy przypadków użycia UML: Zalecenia
@@ -59,7 +59,7 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
    Diagram przypadków użycia może wskazywać, które przypadki użycia są obsługiwane przez system lub jego podsystemy.
 
-## <a name="BasicSteps"></a>Podstawowe kroki rysowania diagramów przypadków użycia
+## <a name="basic-steps-for-drawing-use-case-diagrams"></a><a name="BasicSteps"></a> Podstawowe kroki rysowania diagramów przypadków użycia
 
 > [!NOTE]
 > Szczegółowe instrukcje tworzenia dowolnego diagramu modelowania są opisane w sekcji [Edycja modeli UML i diagramów](../modeling/edit-uml-models-and-diagrams.md).
@@ -110,7 +110,7 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
 7. Rysowanie oddzielnych diagramów, aby skoncentrować się na różnych podsystemach lub różnych grupach powiązanych przypadków użycia. Wszystkie diagramy w jednym projekcie modelowania są widokami tego samego modelu.
 
-## <a name="Actors"></a>Rysowanie aktorów i przypadków użycia
+## <a name="drawing-actors-and-use-cases"></a><a name="Actors"></a> Rysowanie aktorów i przypadków użycia
  Głównym celem diagramu przypadków użycia jest pokazanie osób, które współpracują z systemem, oraz głównych celów, z którymi się uzyskują.
 
 - Twórz **aktory** reprezentujące klasy osób, organizacji, innych systemów, oprogramowania lub urządzeń, które współpracują z systemem lub podsystemem.
@@ -170,11 +170,11 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
  ![Przypadek użycia pokazujący wiele do wielu liczebności](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")
 
-- Aby określić, że kilka aktorów tej samej klasy może brać udział w pojedynczym wystąpieniu przypadku użycia, ustaw liczebność na końcu aktora skojarzenia na **1..\*** .
+- Aby określić, że kilka aktorów tej samej klasy może brać udział w pojedynczym wystąpieniu przypadku użycia, ustaw liczebność na końcu aktora skojarzenia na **1.. \* **.
 
    Na ilustracji co najmniej jedno Restauracje może wziąć udział w realizacji tej samej kolejności posiłków.
 
-- Aby pokazać, że każdy aktor może uczestniczyć w tym samym czasie w kilku wystąpieniach przypadku użycia, ustaw liczebność na końcu przypadku użycia skojarzenia do **\*** .
+- Aby pokazać, że każdy aktor może uczestniczyć w tym samym czasie w kilku wystąpieniach przypadku użycia, ustaw liczebność na końcu przypadku użycia skojarzenia z **\*** .
 
    Na ilustracji każda restauracji może obsłużyć więcej niż jedno zamówienie jednocześnie.
 
@@ -190,11 +190,11 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
    - **1** w celu oznaczania, że dokładnie jedno wystąpienie tej roli uczestniczy w każdym łączu.
 
-   - **1..\*** , aby mieć możliwość, że co najmniej jedno wystąpienie tej roli uczestniczy w każdym łączu.
+   - **1.. \* ** w celu wypróbowania, że co najmniej jedno wystąpienie tej roli uczestniczy w każdym łączu.
 
    - **0.. 1** , aby podać, że uczestnictwo jest opcjonalne.
 
-   - **\*** , aby wyrównać, że zero lub więcej wystąpień tej roli uczestniczy w łączu.
+   - **\*** w celu wyzerowania lub większej liczby wystąpień tej roli w łączu.
 
 > [!NOTE]
 > Wiele zespołów nie umieszcza informacji o liczebności na diagramach przypadków użycia, pozostawiając liczebność przy wartości domyślnej 1. Zamiast tego dostarczają informacje w oddzielnych opisach przypadków użycia. W takim przypadku wszystkie liczebność na diagramach przypadków użycia zostaną ukryte.
@@ -217,7 +217,7 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
     > [!NOTE]
     > Jeśli umieścisz na nowym diagramie aktora i przypadku użycia, które są już skojarzone, skojarzenie między nimi zostanie automatycznie wyświetlone na nowym diagramie.
 
-## <a name="Details"></a>Szczegółowe opisywanie przypadków użycia
+## <a name="describing-use-cases-in-detail"></a><a name="Details"></a> Szczegółowe opisywanie przypadków użycia
  Przypadek użycia reprezentuje:
 
 - Cel aktora w korzystaniu z systemu, taki jak **zakup posiłku**; lub
@@ -270,7 +270,7 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
 #### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Aby połączyć się z dokumentem udostępnionym, elementem programu OneNote lub stroną sieci Web
 
-1. Uzyskaj adres URL elementu udostępnionego. Może to być na przykład ścieżką pliku sieciowego rozpoczynającą się "\\\\" lub stronę sieci Web lub adres URL programu SharePoint, zaczynając od "http://" lub link do sekcji programu OneNote, strony lub akapitu rozpoczynającego się "OneNote:".
+1. Uzyskaj adres URL elementu udostępnionego. Może to być na przykład ścieżka pliku sieciowego rozpoczynająca się " \\ \\ " lub strona sieci Web lub adres URL programu SharePoint zaczynający się od "http://" albo link do sekcji lub strony programu OneNote, zaczynając od "OneNote:".
 
 2. W przyborniku kliknij pozycję **artefakt** , a następnie kliknij pozycję na diagramie przypadku użycia.
 
@@ -280,9 +280,9 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 > Możesz kliknąć dwukrotnie artefakt, aby otworzyć diagram lub dokument, do którego się łączą.
 
 ### <a name="linking-use-cases-to-work-items"></a>Łączenie przypadków użycia z elementami roboczymi
- Jeśli projekt używa [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] i masz [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], można połączyć każdy przypadek użycia z elementem roboczym w [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Aby dowiedzieć się, jak utworzyć te linki, zobacz [łączenie elementów modelu i elementów roboczych](../modeling/link-model-elements-and-work-items.md).
+ Jeśli Twój projekt jest używany [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] i masz [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] , możesz połączyć każdy przypadek użycia z elementem roboczym w [!INCLUDE[esprfound](../includes/esprfound-md.md)] . Aby dowiedzieć się, jak utworzyć te linki, zobacz [łączenie elementów modelu i elementów roboczych](../modeling/link-model-elements-and-work-items.md).
 
- Dzięki temu można:
+ Umożliwia to:
 
 - Opisz przypadek użycia w połączonym elemencie roboczym. W szczególności, jeśli projekt używa formalnego szablonu procesu programu Visual Studio, można połączyć się z elementem roboczym przypadku użycia. Ten typ elementu pracy zawiera pola opisujące cele i scenariusze przypadku użycia.
 
@@ -290,7 +290,7 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
 - Połącz zadania z przypadkiem użycia, aby śledzić postęp prac programistycznych.
 
-## <a name="Structuring"></a>Tworzenie struktury przypadków użycia
+## <a name="structuring-use-cases"></a><a name="Structuring"></a> Tworzenie struktury przypadków użycia
  Należy spróbować opisać zachowanie systemu, korzystając z zaledwie kilku najważniejszych przypadków użycia. Każdy duże przypadki użycia definiuje główny cel, który osiąga aktor, taki jak kupowanie produktu lub, od punktu widzenia dostawcy, dostarczając produkty do sprzedaży.
 
  Po wybraniu tych celów możesz przejść do bardziej szczegółowych informacji na temat sposobu osiągnięcia poszczególnych celów i różnic w podstawowych celach.
@@ -305,7 +305,7 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
 - [Oddzielenie przypadków wariantów z rozszerzeniem](#Extend)
 
-### <a name="Include"></a>Wyświetlanie szczegółów dotyczących przypadku użycia z dołączeniem
+### <a name="showing-the-details-of-a-use-case-with-include"></a><a name="Include"></a> Wyświetlanie szczegółów dotyczących przypadku użycia z dołączeniem
  Użyj relacji **include** , aby pokazać, że jeden przypadek użycia opisuje niektóre szczegóły innego. Na ilustracji **Porządkuj mączkę** obejmują **płatność**, **Wybierz menu**, a **następnie wybierz element menu**. Każdy z dołączanych, bardziej szczegółowych przypadków użycia jest krokiem, który aktor lub aktory mogą wykonać w celu osiągnięcia ogólnego celu, w tym przypadku użycia. Strzałka powinna wskazywać na bardziej szczegółowy, uwzględniony przypadek użycia.
 
 > [!CAUTION]
@@ -323,7 +323,7 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
 - Unikaj powtarzających się scenariuszy udostępnionych w różnych przypadkach użycia.
 
-#### <a name="Steps"></a>Definiowanie kolejności szczegółowych czynności
+#### <a name="defining-the-order-of-the-detailed-steps"></a><a name="Steps"></a> Definiowanie kolejności szczegółowych czynności
  Diagram przypadków użycia nie zawiera żadnych informacji o kolejności, w której należy wykonać bardziej szczegółowe czynności, ani o tym, czy każdy z nich jest zawsze potrzebny.
 
  Aby kolejność kroków została wyczyszczona, można użyć **artefaktu** do dołączenia oddzielnego dokumentu do dołączania do niego przypadku użycia. W poniższym przykładzie diagram aktywności dołączony do zamówienia w przypadku użycia posiłku. Alternatywnie można użyć dokumentu tekstowego z listą kroków lub sekwencji zrzutów ekranu. Aby uzyskać więcej informacji, zobacz [szczegółowo opis przypadków użycia](#Details).
@@ -338,7 +338,7 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
   ![Kroki przypadków użycia pokazane w połączonym diagramie aktywności](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")
 
-### <a name="Inheritance"></a>Cele udostępniania z generalizacją
+### <a name="sharing-goals-with-generalization"></a><a name="Inheritance"></a> Cele udostępniania z generalizacją
  Użyj relacji generalizacji, aby pokazać, że *wyspecjalizowany* przypadek użycia jest szczególnym sposobem osiągnięcia celów wyrażonych przez inny *ogólny* przypadek użycia. Otwarta strzałka powinna wskazywać na bardziej ogólne przypadki użycia.
 
  ![Przypadki użycia pokazujące relację generalizacji](../modeling/media/uml-ucguidegeneral.png "UML_UCGuideGeneral")
@@ -368,7 +368,7 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
 4. Aktory, które są współużytkowane przez wyspecjalizowane przypadki użycia, można przenieść do ogólnego przypadku użycia.
 
-### <a name="Extend"></a>Oddzielanie przypadków wariantów z rozszerzeniem
+### <a name="separating-variant-cases-with-extend"></a><a name="Extend"></a> Oddzielanie przypadków wariantów z rozszerzeniem
  Użyj linku rozszerzonego, aby pokazać, że jeden przypadek użycia może dodawać funkcjonalność do innego przypadku użycia w pewnych okolicznościach. Strzałka powinna wskazywać na głównym, rozszerzonym przypadku użycia.
 
  ![Jeden przypadek użycia rozszerzający inny](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")
@@ -407,7 +407,7 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
 - To rozszerzenie będzie dostępne tylko w określonych wersjach systemu. Każdą wersję można wyświetlić jako oddzielny podsystem na diagramie przypadków użycia.
 
-## <a name="Subsystems"></a>Używanie granic podsystemu
+## <a name="using-subsystem-boundaries"></a><a name="Subsystems"></a> Używanie granic podsystemu
  Użyj granicy podsystemu, aby zobaczyć, jakie przypadki użycia znajdują się w zakresie Twojego systemu.
 
 #### <a name="to-draw-a-subsystem-boundary"></a>Aby narysować granicę podsystemu
@@ -420,7 +420,7 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
 3. Przeciągnij istniejące przypadki użycia do podsystemu lub z niego, aby dostosować jego zawartość.
 
-   \- lub-
+   \- oraz
 
    Aby utworzyć nowy przypadek użycia bezpośrednio w podsystemie, kliknij pozycję **przypadek użycia** w przyborniku, a następnie kliknij wewnątrz podsystemu.
 

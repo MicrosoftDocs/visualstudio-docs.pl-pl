@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsNullReference | Dokumenty firmy Microsoft
+title: 'IDebugObject:: IsNullReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e4b6e5f2d28d27deb5e4e1ff8278a071ff9110fd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726517"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
-Sprawdza, czy ten obiekt jest odwołaniem null.
+Sprawdza, czy ten obiekt jest odwołaniem o wartości null.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,13 +41,13 @@ int IsNullReference(
 
 ## <a name="parameters"></a>Parametry
 `pfIsNull`\
-[na zewnątrz] Zwraca wartość niezerową (`TRUE`), jeśli ten obiekt jest odwołaniem zerowym; w przeciwnym razie`FALSE`zwraca zero ( ).
+określoną Zwraca wartość różną od zera ( `TRUE` ), jeśli ten obiekt jest odwołaniem null; w przeciwnym razie zwraca wartość zero ( `FALSE` ).
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Odwołanie zerowe oznacza pusty obiekt lub obiekt, do którego nie został przypisany.
+ Odwołanie o wartości null oznacza pusty obiekt lub obiekt, który nie został przypisany do.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

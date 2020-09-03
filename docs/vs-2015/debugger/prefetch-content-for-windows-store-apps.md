@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ac6479b4dbb0815374174140deb0d660636ac9e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300523"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>Zawartość pobrana z wyprzedzeniem dla aplikacji Sklepu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content")  
+Dotyczy tylko systemu Windows] (.. /Image/windows_only_content.png "windows_only_content")  
   
  Aby zwiększyć wydajność aplikacji ze sklepu Windows, możesz zażądać systemu Windows do wstępnego załadowania niektórych zawartości sieci Web, takich jak strony sieci Web lub obrazy,[do pamięci](https://msdn.microsoft.com/library/aa383630.aspx)podręcznej [WinInet w](https://msdn.microsoft.com/0a06f2af-957a-4dff-a8cc-187370181b5c)aplikacji. Ta funkcja jest nazywana funkcją pobierania z wyprzedzeniem. Jest to szczególnie przydatne w przypadku zawartości, która jest używana podczas uruchamiania, ale można również korzystać z innej często używanej zawartości. Metody klasy [Windows. Networking. BackgroundTransfer. ContentPrefetcher](https://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx) umożliwiają określanie identyfikatorów URI zawartości, która ma zostać wstępnie Załaduj.  
   

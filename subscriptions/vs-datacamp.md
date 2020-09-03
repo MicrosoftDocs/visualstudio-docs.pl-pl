@@ -8,10 +8,10 @@ ms.date: 04/17/2020
 ms.topic: how-to
 description: Dowiedz się więcej o subskrypcji szkoleniowej usługi datacamp dołączonej do wybranych subskrypcji programu Visual Studio.
 ms.openlocfilehash: 49370b4b3425effc4b8eeef704684420edfd3d41
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904517"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyść szkoleniowa datacamp w subskrypcjach programu Visual Studio
@@ -65,8 +65,8 @@ Możesz zatrzymać w dowolnym momencie i wznowić szkolenia w następnej sesji. 
 | Visual Studio Professional z usługą GitHub Enterprise| Licencja | 3 miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | 3 miesiące                                             |  Nie.  Dostępne tylko dla nowych subskrybentów           |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | 3 miesiące                                              |  Nie.  Dostępne tylko dla nowych subskrybentów           |
-| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Nie dotyczy |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
+| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Brak |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), ekwiwalentu, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Microsoft Partner Network (MPN), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark, Wyobraź sobie*
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Seek | Dokumentacja firmy Microsoft
+title: 'IDebugDisassemblyStream2:: Seek | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d774cc0bf6bca1278423249960bbc5233aa6ad37
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203012"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Przesuwa wskaźnik odczytu strumienia dezasemblacji daną liczbę instrukcji względem określonej pozycji.  
+Przenosi wskaźnik odczytu w strumieniu demontażu przez daną liczbę instrukcji względem określonego położenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,22 +46,22 @@ int Seek( 
   
 #### <a name="parameters"></a>Parametry  
  `dwSeekStart`  
- [in] Wartość z zakresu od [SEEK_START](../../../extensibility/debugger/reference/seek-start.md) wyliczenie, który określa względne położenie, aby rozpocząć wyszukiwanie.  
+ podczas Wartość z wyliczenia [SEEK_START](../../../extensibility/debugger/reference/seek-start.md) , która określa położenie względne, aby rozpocząć proces wyszukiwania.  
   
  `pCodeContext`  
- [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt reprezentujący kontekst kodu, który operacji wyszukiwania będzie względne. Ten parametr jest używany tylko wtedy, gdy `dwSeekStart`  =  `SEEK_START_CODECONTEXT`; w przeciwnym razie ten parametr jest ignorowany i może być wartością null.  
+ podczas Obiekt [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) reprezentujący kontekst kodu, do którego odnosi się operacja wyszukiwania. Ten parametr jest używany tylko wtedy `dwSeekStart`  =  `SEEK_START_CODECONTEXT` , gdy; w przeciwnym razie ten parametr jest ignorowany i może być wartością null.  
   
  `uCodeLocationId`  
- [in] Identyfikator lokalizacji kodu operacji wyszukiwania będzie względne. Ten parametr jest używany, jeśli `dwSeekStart`  =  `SEEK_START_CODELOCID`; w przeciwnym razie ten parametr jest ignorowany i może być równa 0. Zobacz sekcję Spostrzeżenia, aby [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) metoda opis identyfikator lokalizacji kodu.  
+ podczas Identyfikator lokalizacji kodu, względem której odnosi się operacja wyszukiwania. Ten parametr jest używany `dwSeekStart`  =  `SEEK_START_CODELOCID` , jeśli; w przeciwnym razie ten parametr jest ignorowany i może być ustawiony na 0. Zapoznaj się z sekcją spostrzeżenia metody [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) , aby uzyskać opis identyfikatora lokalizacji kodu.  
   
  `iInstructions`  
- [in] Liczbę instrukcji, aby przenieść względem pozycji określonej w `dwSeekStart`. Ta wartość może być ujemna na przesunąć się do tyłu.  
+ podczas Liczba instrukcji do przeniesienia względem położenia określonego w `dwSeekStart` . Ta wartość może być ujemna, aby przenieść do tyłu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli pozycji wyszukiwania do punktu poza listy dostępnych instrukcji. W przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca `S_FALSE` czy pozycja wyszukiwania była w punkcie poza listą dostępnych instrukcji. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli do pozycji przed początkiem listy wyszukiwania, pierwsza instrukcja na liście jest równa pozycji odczytu. Jeśli Zobacz do pozycji od końca listy, pozycję odczytu ustawiono do ostatniej instrukcji na liście.  
+ Jeśli wyszukiwanie dotyczyło pozycji przed początkiem listy, pozycja odczytu jest ustawiana na pierwszą instrukcję na liście. Jeśli punkt widzenia był w pozycji po końcu listy, pozycja odczytu jest ustawiana na ostatnią instrukcję na liście.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   

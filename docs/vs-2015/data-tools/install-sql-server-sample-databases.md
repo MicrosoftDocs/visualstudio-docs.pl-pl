@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3915351bff74f35ceb5fc462cb29dfd2f322fb6a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299629"
 ---
 # <a name="install-sql-server-sample-databases"></a>Instalowanie przykładowych baz danych programu SQL Server
@@ -27,7 +27,7 @@ Przykładowe bazy danych są przydatne do eksperymentowania z kwerendami SQL i L
 
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Aby przywrócić bazę danych z pliku. bak w programie Visual Studio
 
-1. W przypadku tworzenia kopii zapasowej bazy danych Microsoft SQL Server wynik jest plikiem. bak. Aby plik. bak można było użyć ponownie jako plik bazy danych, należy go *przywrócić*. W menu głównym wybierz pozycję **wyświetl** > **Eksplorator obiektów SQL Server**. Jeśli go nie widzisz, może być konieczne jego zainstalowanie. Przejdź do **Panelu sterowania** , > **programy i funkcje**, Znajdź Microsoft Visual Studio 2015, a następnie kliknij przycisk **Zmień** . Gdy lista zainstalowanych składników zostanie wyświetlona w oknie instalatora, zaznacz pole wyboru **Eksplorator obiektów SQL Server** a następnie kontynuuj instalację.
+1. W przypadku tworzenia kopii zapasowej bazy danych Microsoft SQL Server wynik jest plikiem. bak. Aby plik. bak można było użyć ponownie jako plik bazy danych, należy go *przywrócić*. W menu głównym wybierz pozycję **Wyświetl**  >  **Eksplorator obiektów SQL Server**. Jeśli go nie widzisz, może być konieczne jego zainstalowanie. Przejdź do pozycji **Panel sterowania**  >  **programy i funkcje**, Znajdź Microsoft Visual Studio 2015, a następnie kliknij przycisk **Zmień** . Gdy lista zainstalowanych składników zostanie wyświetlona w oknie instalatora, zaznacz pole wyboru **Eksplorator obiektów SQL Server** a następnie kontynuuj instalację.
 
 2. W Eksplorator obiektów SQL Server kliknij prawym przyciskiem myszy dowolny aparat SQL Server Database (na przykład LocalDB), a następnie wybierz pozycję**nowe zapytanie**.
 

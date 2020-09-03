@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb3f26f59d7cbc994da1d2537e0ab352ce12205e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905203"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementowanie kolorowania składni
-Gdy usługa językowa zapewnia kolorowanie składni, Analizator konwertuje wiersz tekstu na tablicę elementów z możliwością przykolorowania i zwraca typy tokenów odpowiadające tym elementom, które można przykolorować. Analizator powinien zwrócić typy tokenów, które należą do listy elementów z możliwością koloru. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]wyświetla każdy element, który można kolorować w oknie kodu zgodnie z atrybutami przypisanymi przez obiekt Koloruj do odpowiedniego typu tokenu.
+Gdy usługa językowa zapewnia kolorowanie składni, Analizator konwertuje wiersz tekstu na tablicę elementów z możliwością przykolorowania i zwraca typy tokenów odpowiadające tym elementom, które można przykolorować. Analizator powinien zwrócić typy tokenów, które należą do listy elementów z możliwością koloru. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wyświetla każdy element, który można kolorować w oknie kodu zgodnie z atrybutami przypisanymi przez obiekt Koloruj do odpowiedniego typu tokenu.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]nie określa interfejsu analizatora i implementacja analizatora jest całkowicie do Ciebie. Jednak domyślna implementacja analizatora jest dostępna w projekcie pakietu języka programu Visual Studio. Dla kodu zarządzanego, Struktura pakietu zarządzanego (MPF) zapewnia pełną obsługę kolorowania tekstu.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nie określa interfejsu analizatora i implementacja analizatora jest całkowicie do Ciebie. Jednak domyślna implementacja analizatora jest dostępna w projekcie pakietu języka programu Visual Studio. Dla kodu zarządzanego, Struktura pakietu zarządzanego (MPF) zapewnia pełną obsługę kolorowania tekstu.
 
  Starsze usługi językowe są implementowane w ramach pakietu VSPackage, ale nowszym sposobem implementacji funkcji usługi językowej jest korzystanie z rozszerzeń MEF. Aby dowiedzieć się więcej o nowym sposobie implementacji kolorowania składni, zobacz [Przewodnik: podświetlanie tekstu](../../extensibility/walkthrough-highlighting-text.md).
 

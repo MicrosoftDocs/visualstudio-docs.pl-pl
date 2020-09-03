@@ -1,5 +1,5 @@
 ---
-title: Profilowanie w klastrach HPC (High Performance Computing) | Dokumenty firmy Microsoft
+title: Profilowanie na klastrach HPC (przetwarzanie o wysokiej wydajności) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,15 +21,15 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772123"
 ---
-# <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profil w klastrach HPC (high performance computing)
+# <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profilowanie na klastrach HPC (przetwarzanie o wysokiej wydajności)
 
-Można profilować w węzłach obliczeniowych klastrów HPC systemu Microsoft Windows przy użyciu metody próbkowania narzędzi profilowania programu Visual Studio. Aby uzyskać więcej informacji na temat HPC, zobacz [HpC systemu Windows](https://azure.microsoft.com/solutions/big-compute/) w witrynie firmy Microsoft w sieci Web.
+Można profilować węzły obliczeniowe klastrów HPC systemu Microsoft Windows przy użyciu metody próbkowania narzędzia profilowania programu Visual Studio. Aby uzyskać więcej informacji na temat HPC, zobacz [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) w witrynie sieci Web firmy Microsoft.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -37,115 +37,115 @@ Aby profilować w węźle obliczeniowym HPC, należy wykonać następujące czyn
 
 - Zainstaluj pakiet Microsoft HPC Pack 2008 na tym samym komputerze co program Visual Studio. Komputer nie musi być częścią klastra HPC. Pakiet HPC Pack można zainstalować w [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=4812).
 
-- Zainstaluj program .NET Framework 4 i autonomiczną wersję narzędzi profilowania w węźle obliczeniowym HPC. Instalowanie programów dla programu .NET Framework i autonomicznego profilera są dostępne na nośniku instalacyjnym programu Visual Studio. **Uwaga** Należy ponownie uruchomić obliczenia po zainstalowaniu programu .NET Framework i przed zainstalowaniem narzędzi profilowania.
+- Zainstaluj .NET Framework 4 i autonomiczną wersję narzędzia profilowania w węźle obliczeniowym HPC. Zainstaluj programy dla .NET Framework i autonomicznego profilera są dostępne na nośniku instalacyjnym programu Visual Studio. **Uwaga** Należy ponownie uruchomić obliczenia po zainstalowaniu .NET Framework i przed zainstalowaniem narzędzia profilowania.
 
-  Aby zainstalować program .NET Framework 4 i autonomiczne narzędzia profilowania w aktywnym węźle obliczeniowym HPC i włączyć profilowanie na komputerze klastra, wykonaj następujące kroki:
+  Aby zainstalować .NET Framework 4 i autonomiczną narzędzia profilowania w aktywnym węźle obliczeniowym HPC i włączyć profilowanie na maszynie klastra, wykonaj następujące kroki:
 
-1. Otwórz okno wiersza polecenia zainstalowanego z pakietem HPC.
+1. Otwórz okno wiersza polecenia, które jest instalowane z pakietem HPC Pack.
 
-2. W osobnych wierszach polecenia wpisz następujące polecenia:
+2. Wpisz następujące polecenia w oddzielnych wierszach polecenia:
 
-    1. `clusrun /all /scheduler:`*%HeadNode% %FxPath%*`/q /norestart`
+    1. `clusrun /all /scheduler:`*% Węzła głównego%% FxPath%*`/q /norestart`
 
-    2. `clusrun /all /scheduler:`*%HeadNode%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
+    2. `clusrun /all /scheduler:`*% Węzła głównego%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
 
-    3. `clusrun /all /scheduler:`*%HeadNode% %ProfilerPath%*`/q /norestart`
+    3. `clusrun /all /scheduler:`*% Węzła głównego%% ProfilerPath%*`/q /norestart`
 
 | | |
 |------------------| - |
-| *%HeadNode%* | Nazwa węzła głównego klastra. |
-| *%FxPath%* | Ścieżka do instalatora .NET Framework 4. Na nośniku instalacyjnym programu Visual Studio ścieżka to: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
-| *%ProfilerPath%* | Ścieżka do autonomicznej wersji instalatora narzędzi profilowania. Na nośniku instalacyjnym programu Visual Studio ścieżka to: Standalone Profiler\x64\vs_profiler.exe |
+| *Węzła głównego* | Nazwa węzła głównego klastra. |
+| *%FxPath%* | Ścieżka do Instalatora .NET Framework 4. Na nośniku instalacyjnym programu Visual Studio ścieżka jest: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%ProfilerPath%* | Ścieżka do autonomicznej wersji Instalatora narzędzia profilowania. Na nośniku instalacyjnym programu Visual Studio ścieżka jest: autonomiczna Profiler\x64\vs_profiler.exe |
 
-## <a name="profile-on-an-hpc-compute-node"></a>Profil w węźle obliczeniowym HPC
+## <a name="profile-on-an-hpc-compute-node"></a>Profilowanie w węźle obliczeniowym HPC
 
-Sesję profilowania można skonfigurować za pomocą Kreatora wydajności HPC w celu określenia klastra HPC i informacji o obiektach docelowych. Na stronach właściwości sesji wydajności można ustawić dodatkowe opcje. Narzędzia profilowania automatycznie wdrażają niezbędne pliki binarne docelowych i uruchamiają profiler i aplikację HPC.
+Aby określić klaster HPC i informacje docelowe, należy skonfigurować sesję profilowania przy użyciu Kreatora wydajności HPC. Dodatkowe opcje można ustawić na stronie właściwości sesji wydajności. Narzędzia profilowania automatycznie wdrażać niezbędne docelowe pliki binarne i uruchamiać Profiler i aplikację HPC.
 
-1. W menu **Analiza** kliknij polecenie **Uruchom Kreatora wydajności HPC**. Jeśli polecenie nie jest dostępne, upewnij się, że masz wymagania wstępne wymienione powyżej.
+1. W menu **Analizuj** kliknij polecenie **Uruchom Kreatora wydajności HPC**. Jeśli polecenie jest niedostępne, upewnij się, że masz wymienione powyżej wymagania wstępne.
 
-2. Kliknij **przycisk Dalej** na pierwszej stronie kreatora.
+2. Kliknij przycisk **dalej** na pierwszej stronie kreatora.
 
 3. Na drugiej stronie kreatora wybierz aplikację, którą chcesz profilować.
 
-   - Aby profilować projekt, który [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]jest aktualnie otwarty, wybierz opcję **Jeden lub więcej dostępnych projektów,** a następnie wybierz nazwę projektu z listy.
+   - Aby profilować projekt, który jest aktualnie otwarty w programie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] , wybierz opcję **co najmniej jeden dostępny projekt** , a następnie wybierz nazwę projektu z listy.
 
-   - Aby profilować plik binarny, który nie znajduje się w otwartym projekcie, wybierz **opcję Plik wykonywalny (. exe).**
+   - Aby profilować plik binarny, który nie znajduje się w otwartym projekcie, wybierz **plik wykonywalny (. Plik EXE)** .
 
-4. Kliknij przycisk **alej**.
+4. Kliknij przycisk **Dalej**.
 
 5. Na trzeciej stronie kreatora:
 
-    - Jeśli profilujesz plik wykonywalny, który nie znajduje się w otwartym projekcie, określ ścieżkę do pliku binarnego w **co to jest pełna ścieżka do pliku wykonywalnego**.
+    - Jeśli tworzysz plik wykonywalny, który nie znajduje się w otwartym projekcie, określ ścieżkę do pliku binarnego, w którym **jest pełna ścieżka do pliku wykonywalnego**.
 
-    - W przypadku profilowania pliku wykonywalnego, który nie znajduje się w otwartym projekcie, można określić wszystkie argumenty wiersza polecenia, które mają być przerzucene do procesu w **argumentach wiersza polecenia**.
+    - Jeśli tworzysz plik wykonywalny, który nie znajduje się w otwartym projekcie, możesz określić argumenty wiersza polecenia do przekazania do procesu w **argumentach wiersza polecenia**.
 
-    - W **katalogu pracy zdalnej**określ ścieżkę do folderu, który jest używany przez wystąpienia procesu w poszczególnych węzłach obliczeniowych.
+    - W obszarze **zdalny katalog roboczy**określ ścieżkę do folderu, który jest używany przez wystąpienia procesów w poszczególnych węzłach obliczeniowych.
 
-    - W **lokalizacji wdrożenia**określ ścieżkę do katalogu używanego przez serwer HPC do przygotowania obrazów do wdrożenia.
+    - W obszarze **Lokalizacja wdrożenia**określ ścieżkę do katalogu, którego serwer HPC używa do przygotowywania obrazów do wdrożenia.
 
-6. Kliknij przycisk **alej**.
+6. Kliknij przycisk **Dalej**.
 
 7. Na czwartej stronie kreatora:
 
-    - Na liście **Węzeł główny** kliknij komputer, który działa jako węzeł główny HPC w przebiegu profilowania. Węzeł główny może być "localhost", który umożliwia profilowanie na komputerze lokalnym bez konieczności posiadania klastra.
+    - Na liście **węzeł główny** kliknij komputer, który działa jako węzeł główny HPC w przebiegu profilowania. Węzłem głównym może być "localhost", który umożliwia profilowanie na komputerze lokalnym bez potrzeby klastra.
 
-    - Na liście **Liczba procesów** kliknij liczbę wystąpień aplikacji do uruchomienia.
+    - Na liście **liczba procesów** kliknij liczbę wystąpień aplikacji do uruchomienia.
 
-    - Na liście **Opcji profilowania** wybierz cel profilowania.
+    - Z listy **Opcje profilowania** wybierz element docelowy profilowania.
 
-         Aby profilować określony proces w klastrze, wybierz opcję **Profil na poziomie,** a następnie wybierz rangę procesu z listy rozwijanej.
+         Aby profilować określony proces w klastrze, wybierz pozycję **profil w opcji ranga** , a następnie wybierz rangę procesu z listy rozwijanej.
 
-         Aby profilować proces lub procesy uruchamiane w określonym węźle w klastrze HPC, wybierz opcję **Profil w węźle,** a następnie wybierz węzeł z listy rozwijanej.
+         Aby profilować proces lub procesy uruchamiane w określonym węźle w klastrze HPC, zaznacz opcję **profil w węźle** , a następnie wybierz węzeł z listy rozwijanej.
 
-8. Kliknij przycisk **alej**.
+8. Kliknij przycisk **Dalej**.
 
-9. Na piątej stronie kreatora można natychmiast uruchomić profiler i proces profilowania lub rozpocząć profilowanie później przy użyciu Eksploratora wydajności.
+9. Na piątej stronie kreatora można natychmiast uruchomić Profiler i proces profilowania lub uruchomić profilowanie później przy użyciu Eksplorator wydajności.
 
-    - Wybierz **pozycję Uruchom profilowanie po zakończeniu pracy kreatora,** aby natychmiast rozpocząć profilowanie, lub wyczyść to pole wyboru, aby rozpocząć profilowanie ręcznie.
+    - Wybierz pozycję **Uruchom profilowanie po zakończeniu pracy Kreatora** , aby natychmiast rozpocząć profilowanie, lub usuń zaznaczenie tego pola wyboru, aby uruchomić profilowanie ręcznie.
 
 10. Kliknij przycisk **Zakończ**.
 
 ## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Ustawianie właściwości profilowania HPC przy użyciu stron właściwości sesji wydajności
 
-Właściwości sesji wydajności ustawione w Kreatorze profilowania HPC można zmienić na stronie Właściwości uruchamiania HPC na stronie właściwości sesji wydajności. Możesz ustawić dodatkowe opcje na stronie HPC Advanced Properties.
+Można zmienić właściwości sesji wydajności ustawione w Kreatorze profilowania HPC na stronie właściwości uruchamiania HPC na stronie właściwości sesji wydajności. Dodatkowe opcje można ustawić na stronie właściwości zaawansowane HPC.
 
 ### <a name="to-open-the-performance-session-property-pages"></a>Aby otworzyć strony właściwości sesji wydajności
 
-1. W razie potrzeby otwórz plik sesji wydajności (psess) w Eksploratorze wydajności. W menu **Plik** kliknij polecenie **Otwórz** i znajdź plik.
+1. W razie potrzeby Otwórz plik sesji wydajności (. psess) w Eksplorator wydajności. W menu **plik** kliknij polecenie **Otwórz** i Znajdź plik.
 
-2. W Eksploratorze wydajności kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij polecenie **Właściwości**.
+2. W Eksplorator wydajności kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij polecenie **Właściwości**.
 
-3. W oknie dialogowym Strony właściwości użyj jednej z następujących metod:
+3. W oknie dialogowym strony właściwości Użyj jednej z następujących metod:
 
-    - Kliknij **pozycję Ogólne,** a następnie wybierz pozycję **Zbieraj w klastrze HPC,** aby włączyć profilowanie HPC lub wyczyścić pole wyboru, aby wyłączyć profilowanie HPC.
+    - Kliknij pozycję **Ogólne** , a następnie wybierz pozycję **Zbieraj w klastrze HPC** , aby włączyć profilowanie HPC, lub usuń zaznaczenie tego pola wyboru, aby wyłączyć profilowanie HPC.
 
-    - Kliknij **przycisk Właściwości uruchamiania HPC,** aby zmienić właściwości uruchamiane przez aplikację HPC.
+    - Kliknij pozycję **Właściwości uruchomienia HPC** , aby zmienić właściwości, które uruchamiają aplikację HPC.
 
-    - Kliknij **przycisk HpC Advanced Properties,** aby ustawić dodatkowe opcje
+    - Kliknij pozycję **Właściwości zaawansowane HPC** , aby ustawić dodatkowe opcje
 
-### <a name="hpc-launch-properties"></a>Właściwości startowe HPC
+### <a name="hpc-launch-properties"></a>Właściwości uruchamiania HPC
 
 |Właściwość|Opis|
 |--------------|-----------------|
 |**Węzeł główny**|Określa komputer, który działa jako węzeł główny HPC w przebiegu profilowania.|
-|**Liczba procesów**|Określa liczbę wystąpień aplikacji do uruchomienia w profilowanych aplikacji.|
-|**Profil na randze**|Aby profilować określony proces w klastrze, wybierz opcję **Profil na poziomie,** a następnie wybierz rangę procesu z listy rozwijanej.|
-|**Profil w węźle**|Aby profilować proces lub procesy uruchamiane w określonym węźle w klastrze HPC, wybierz opcję **Profil w węźle,** a następnie wybierz węzeł z listy rozwijanej.|
-|**Katalog pracy zdalnej**|Określa ścieżkę do folderu używanego przez wystąpienia procesów w poszczególnych węzłach obliczeniowych.|
-|**Lokalizacja wdrożenia**|Określa ścieżkę do katalogu używanego przez serwer HPC do przygotowania obrazów do wdrożenia.|
+|**Liczba procesów**|Określa liczbę wystąpień aplikacji do uruchomienia w profilowanej aplikacji.|
+|**Profil na rangi**|Aby profilować określony proces w klastrze, wybierz pozycję **profil w opcji ranga** , a następnie wybierz rangę procesu z listy rozwijanej.|
+|**Profil w węźle**|Aby profilować proces lub procesy uruchamiane w określonym węźle w klastrze HPC, zaznacz opcję **profil w węźle** , a następnie wybierz węzeł z listy rozwijanej.|
+|**Zdalny katalog roboczy**|Określa ścieżkę do folderu, który jest używany przez wystąpienia procesów w poszczególnych węzłach obliczeniowych.|
+|**Lokalizacja wdrożenia**|Określa ścieżkę do katalogu, którego serwer HPC używa do przygotowywania obrazów do wdrożenia.|
 
 ### <a name="advanced-properties"></a>Właściwości zaawansowane
 
 | Właściwość | Opis |
 |---------------------------------------| - |
 | **Nazwa projektu** | Nazwa bieżącego [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] projektu lub rozwiązania. |
-| **Czyszczenie po zatrzymaniu profilera** | Gdy true, usuwa pliki binarne, które zostały wdrożone do katalogu wykonywania. Pliki i katalogi utworzone przez program użytkownika nie są usuwane w tym kroku. Jeśli katalog wykonywania i katalog wdrażania zostały utworzone przez IDE, IDE próbuje je usunąć, ale nie robi tego, jeśli mają pliki nie wdrożone przez IDE. |
-| **Dodatkowe pliki do wdrożenia** | Określa listę oddzielonych średnikami dodatkowych plików do wdrożenia w węźle obliczeniowym. Możesz kliknąć przycisk wielokropka (**...**), aby wybrać wiele plików za pomocą okna dialogowego. |
-| **Mpiexec, polecenie** | Określa aplikację, która uruchamia aplikację MPI. Wartością domyślną jest **mpiexec.exe** |
-| **Argumenty Mpiexec** | Określa argumenty, które mają być przesuwające do polecenia mpiexec.exe. |
-| **Żądane węzły w klastrze** | Określa liczbę węzłów w klastrze, na których ma być uruchamiana aplikacja. |
-| **Wdrażanie plików CRT** | Gdy true, wdraża czas wykonywania języka C/C++ w klastrze. |
-| **Skrypt wstępny** | Określa ścieżkę i nazwę pliku skryptu do uruchomienia na lokalnym komputerze deweloperskim przed rozpoczęciem sesji profilowania. |
-| **Argumenty skryptu przed profilem** | Określa argumenty, które mają być przesuwają do skryptu pre-profile. |
-| **Skrypt postprofilowy** | Określa ścieżkę i nazwę pliku skryptu uruchamianego na lokalnym komputerze deweloperskim po zakończeniu sesji profilowania. |
-| **Argumenty skryptu postprofilowego** | Określa argumenty, które mają być przesuwają do skryptu postprofilowego. |
+| **Wyczyść po zatrzymaniu profilera** | W przypadku wartości true program usuwa pliki binarne, które zostały wdrożone w katalogu wykonywania. Pliki i katalogi utworzone przez program użytkownika nie są usuwane w tym kroku. Jeśli katalog wykonywania i katalog wdrożenia zostały utworzone przez IDE, środowisko IDE próbuje je usunąć, ale nie tak, jeśli mają pliki, które nie są wdrażane przez IDE. |
+| **Dodatkowe pliki do wdrożenia** | Określa rozdzielaną średnikami listę dodatkowych plików do wdrożenia w węźle obliczeniowym. Możesz kliknąć przycisk wielokropka (**...**), aby wybrać wiele plików przy użyciu okna dialogowego. |
+| **Mpiexec — polecenie** | Określa aplikację, która uruchamia aplikację MPI. Wartość domyślna to **mpiexec.exe** |
+| **Argumenty mpiexec** | Określa argumenty, które zostaną przekazane do polecenia mpiexec.exe. |
+| **Żądane węzły w klastrze** | Określa liczbę węzłów w klastrze, na którym ma zostać uruchomiona aplikacja. |
+| **Wdróż pliki CRT** | W przypadku wartości true program wdraża w klastrze czas wykonywania C/C++. |
+| **Skrypt przed profilem** | Określa ścieżkę i nazwę pliku skryptu do uruchomienia na lokalnym komputerze deweloperskim przed rozpoczęciem sesji profilowania. |
+| **Argumenty skryptu przed profilem** | Określa argumenty, które mają zostać przekazane do skryptu przed profilem. |
+| **Skrypt po profilu** | Określa ścieżkę i nazwę pliku skryptu do uruchomienia na lokalnym komputerze deweloperskim po zakończeniu sesji profilowania. |
+| **Argumenty skryptu po profilu** | Określa argumenty, które mają zostać przekazane do skryptu po profilu. |
