@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53a40c4dc615b5e1b6a3caef3a99be5ab0b56327
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350111"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Instrukcje: debugowanie w trybie mieszanym (C#, C++, Visual Basic)
@@ -47,7 +47,7 @@ Jeśli nie masz dostępu do projektu aplikacji wywołującej, możesz debugować
 
 1. Ustaw **Typ debugera** na **mieszany** lub **Auto**Auto.
 
-1. Wybierz przycisk **OK**.
+1. Wybierz pozycję **OK**.
 
    ![Włącz debugowanie w trybie mieszanym](../debugger/media/dbg-mixed-mode-from-native.png "Włącz debugowanie w trybie mieszanym")
 

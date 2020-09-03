@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa27489844bc59bc0d4da32440cc1caa74ecbea6
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770011"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Instrukcje: wyświetlanie istniejących typów w Projektant klas
@@ -61,7 +61,7 @@ Przy pierwszym wyświetleniu typu na diagramie, jego kształt pojawia się domy�
 
 W **Eksplorator rozwiązań** lub **Widok klasy**, kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Widok**, a następnie wybierz polecenie **Wyświetl Diagram klas**. Tworzony jest automatycznie wypełniony Diagram klas.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: wyświetlanie dziedziczenia między typami](how-to-view-inheritance-between-types.md)
 - [Instrukcje: Dostosowywanie diagramów klas](how-to-customize-class-diagrams.md)

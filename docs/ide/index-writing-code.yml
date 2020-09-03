@@ -3,7 +3,7 @@ title: Organizowanie i edytowanie kodu w programie Visual Studio
 summary: Dowiedz się więcej o pracy z projektami kodu, przy użyciu funkcji edytora kodu i zachowaniu spójnego stylu kodu.
 metadata:
   title: Funkcje edytora kodu
-  description: Dowiedz się więcej o funkcjach edycji kodu w programie Visual Studio.
+  description: Dowiedz się więcej o funkcjach edytowania kodu w programie Visual Studio.
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
@@ -11,10 +11,10 @@ metadata:
   ms.author: jillfra
   ms.date: 10/15/2019
   ms.openlocfilehash: 797df026fb9873c5f50e39fe281e0c9a11688b8f
-  ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/18/2020
+  ms.lasthandoff: 09/02/2020
   ms.locfileid: "74316444"
 landingContent:
 - title: Otwieranie lub tworzenie projektu
@@ -29,19 +29,19 @@ landingContent:
     links:
     - text: Korzystanie z programu Visual Studio bez projektów i rozwiązań
       url: develop-code-in-visual-studio-without-projects-or-solutions.md
-- title: Korzystanie z funkcji edycji
+- title: Korzystanie z funkcji edytowania
   linkLists:
   - linkListType: overview
     links:
     - text: Korzystanie z edytora kodu
       url: writing-code-in-the-code-and-text-editor.md
-    - text: Nawigowanie po kodzie
+    - text: Nawiguj po kodzie
       url: navigating-code.md
     - text: Generowanie i naprawianie kodu
       url: code-generation-in-visual-studio.md
-    - text: Korzystanie z programu IntelliSense do uzupełniania kodu
+    - text: Korzystanie z funkcji IntelliSense do uzupełniania kodu
       url: using-intellisense.md
-    - text: Zarządzanie preferencjami stylu kodu
+    - text: Zarządzaj preferencjami stylu kodu
       url: code-styles-and-code-cleanup.md
     - text: Analiza kodu
       url: ../code-quality/roslyn-analyzers-overview.md
@@ -53,11 +53,11 @@ landingContent:
     links:
     - text: Wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio
       url: tutorial-csharp-aspnet-core.md
-    - text: Tworzenie aplikacji konsoli języka C++ w programie Visual Studio
+    - text: Tworzenie aplikacji konsolowej w języku C++ w programie Visual Studio
       url: /cpp/get-started/tutorial-console-cpp
     - text: Wprowadzenie do języka Python w programie Visual Studio
       url: quickstart-python.md
-    - text: Tworzenie aplikacji konsoli za pomocą języka Visual Basic
+    - text: Tworzenie aplikacji konsolowej przy użyciu Visual Basic
       url: quickstart-visual-basic-console.md
-    - text: Tworzenie aplikacji sieci Web z node.js
+    - text: Tworzenie aplikacji sieci Web za pomocą Node.js
       url: quickstart-nodejs.md

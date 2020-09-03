@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b6481a56b4cbc254baaee3ae087201df69c371b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534215"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definiowanie polecenia menu w diagramie modelowania
@@ -65,7 +65,7 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
 2. Dodaj następujące odwołania do projektu.
 
-   |                                                                                                    Odwołanie                                                                                                    |                                                                                                  Co można zrobić                                                                                                  |
+   |                                                                                                    Dokumentacja                                                                                                    |                                                                                                  Co można zrobić                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System. ComponentModel. kompozycji                                                                                        |                                         Zdefiniuj składniki za pomocą [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
    |                                                                                      Microsoft. VisualStudio. UML. Interfaces                                                                                      |                                                                                        Odczytywanie i zmiana właściwości elementów modelu.                                                                                         |
@@ -166,13 +166,13 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
          **Projekt**  =  *Projekt biblioteki klas*
 
-## <a name="implementing-the-menu-command"></a><a name="Implementing"></a>Implementowanie polecenia menu
+## <a name="implementing-the-menu-command"></a><a name="Implementing"></a> Implementowanie polecenia menu
  Klasa poleceń menu implementuje wymagane metody dla <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> .
 
 |Podpis|Opis|
 |-|-|
 |`string Text { get; }`|Zwraca etykietę elementu menu.|
-|`void QueryStatus(IMenuCommand command);`|Wywoływana, gdy użytkownik kliknie prawym przyciskiem myszy na diagramie.<br /><br /> Ta metoda nie powinna zmieniać modelu.<br /><br /> Użyj, `DiagramContext.CurrentDiagram.SelectedShapes` Aby określić, czy polecenie ma być wyświetlane i włączone.<br /><br /> Zbiór<br /><br /> -   `command.Visible`na `true` Jeśli polecenie musi pojawić się w menu, gdy użytkownik kliknie prawym przyciskiem myszy na diagramie<br />-   `command.Enabled`na `true` Jeśli użytkownik może kliknąć polecenie w menu<br />-   `command.Text`Aby ustawić etykietę menu dynamicznie|
+|`void QueryStatus(IMenuCommand command);`|Wywoływana, gdy użytkownik kliknie prawym przyciskiem myszy na diagramie.<br /><br /> Ta metoda nie powinna zmieniać modelu.<br /><br /> Użyj, `DiagramContext.CurrentDiagram.SelectedShapes` Aby określić, czy polecenie ma być wyświetlane i włączone.<br /><br /> Zbiór<br /><br /> -   `command.Visible` na `true` Jeśli polecenie musi pojawić się w menu, gdy użytkownik kliknie prawym przyciskiem myszy na diagramie<br />-   `command.Enabled` na `true` Jeśli użytkownik może kliknąć polecenie w menu<br />-   `command.Text` Aby ustawić etykietę menu dynamicznie|
 |`void Execute (IMenuCommand command);`|Wywoływana, gdy użytkownik kliknie element menu, jeśli jest widoczny i włączony.|
 
 ### <a name="accessing-the-model-in-code"></a>Uzyskiwanie dostępu do modelu w kodzie
@@ -209,7 +209,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
  Należy jednak pamiętać, że Magazyn modeli nie jest bezpieczny dla wątków. Należy zawsze używać wątku interfejsu użytkownika, aby wprowadzać aktualizacje, a jeśli jest to możliwe, Zapobiegaj dokonywaniu edycji przez użytkownika, gdy operacja w tle jest w toku. Aby zapoznać się z przykładem, zobacz [aktualizowanie modelu UML z wątku w tle](../modeling/update-a-uml-model-from-a-background-thread.md).
 
-## <a name="executing-the-menu-command"></a><a name="Executing"></a>Wykonywanie polecenia menu
+## <a name="executing-the-menu-command"></a><a name="Executing"></a> Wykonywanie polecenia menu
  W celach testowych wykonaj polecenie w trybie debugowania.
 
 #### <a name="to-test-the-menu-command"></a>Aby przetestować polecenie menu
@@ -240,7 +240,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - Typ diagramu modelu, którego używasz (Klasa UML, sekwencja i tak dalej) jest wymieniony jako jeden z atrybutów klas poleceń menu `[ClassDesignerExtension]` `[SequenceDesignerExtension]` i tak dalej.
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Instalowanie i odinstalowywanie rozszerzenia
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Instalowanie i odinstalowywanie rozszerzenia
  Rozszerzenie można zainstalować [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] zarówno na swoim komputerze, jak i na innych komputerach.
 
 #### <a name="to-install-an-extension"></a>Aby zainstalować rozszerzenie
@@ -273,7 +273,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [wersja] \Extensions**
 
-## <a name="example"></a><a name="MenuExample"></a>Przyklad
+## <a name="example"></a><a name="MenuExample"></a> Przyklad
  Poniższy przykład pokazuje kod polecenia menu, które spowoduje wymianę nazw dwóch elementów na diagramie klas. Ten kod musi być skompilowany w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projekcie rozszerzenia i zainstalowany zgodnie z opisem w poprzednich sekcjach.
 
 ```

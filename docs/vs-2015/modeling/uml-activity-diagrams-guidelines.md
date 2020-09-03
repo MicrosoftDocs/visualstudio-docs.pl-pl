@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 692859008891439e4af3d751306bfd3ee6d351e8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74298987"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramy aktywności UML: Zalecenia
@@ -43,7 +43,7 @@ W programie Visual Studio możesz narysować diagram aktywności, aby opisać pr
 
   Informacje referencyjne dotyczące elementów na diagramach aktywności można znaleźć w temacie [diagramy aktywności UML: odwołanie](../modeling/uml-activity-diagrams-reference.md).
 
-## <a name="Relationships"></a>Relacje z innymi diagramami
+## <a name="relationship-to-other-diagrams"></a><a name="Relationships"></a> Relacje z innymi diagramami
  W przypadku rysowania diagramu aktywności do opisywania procesu biznesowego lub sposobu, w jaki użytkownicy korzystają z systemu, możesz narysować diagram przypadków użycia, aby pokazać inny widok tych samych informacji. Na diagramie przypadku użycia są rysowane akcje jako przypadki użycia. Nadaj przypadki użycia takie same nazwy jak odpowiadające im akcje. Zalety widoku przypadku użycia są następujące:
 
 - Pokaż na jednym diagramie, jak większe działania/przypadki użycia składają się z mniejszych, przy użyciu relacji include.
@@ -56,7 +56,7 @@ W programie Visual Studio możesz narysować diagram aktywności, aby opisać pr
 
   W diagramie aktywności można wyświetlić przepływ danych przesyłanych między akcjami. Zapoznaj się z sekcją [opisującą przepływ danych](#DataFlows). Jednak diagram aktywności nie opisuje struktury danych. W tym celu można narysować Diagram klas UML. Aby uzyskać informacje, zobacz [diagramy klas UML: wytyczne](../modeling/uml-class-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a>Podstawowe kroki rysowania diagramów aktywności
+## <a name="basic-steps-for-drawing-activity-diagrams"></a><a name="BasicSteps"></a> Podstawowe kroki rysowania diagramów aktywności
  Szczegółowe instrukcje tworzenia dowolnego diagramu modelowania są opisane w sekcji [Edycja modeli UML i diagramów](../modeling/edit-uml-models-and-diagrams.md).
 
 #### <a name="to-draw-an-activity-diagram"></a>Aby narysować diagram aktywności
@@ -93,14 +93,14 @@ W programie Visual Studio możesz narysować diagram aktywności, aby opisać pr
 
 - W **Eksploratorze modelu UML**przeciągnij działanie do pakietu.
 
-     \- lub-
+     \- oraz
 
 - W **Eksploratorze modelu UML**, kliknij prawym przyciskiem myszy działanie, a następnie kliknij przycisk **Wytnij**. Następnie kliknij prawym przyciskiem myszy pakiet, a następnie kliknij przycisk **Wklej**.
 
     > [!NOTE]
     > Działanie będzie widoczne w Eksploratorze modelu UML tylko po dodaniu pierwszego elementu do diagramu.
 
-## <a name="SimpleControlFlow"></a>Opisywanie przepływu sterowania
+## <a name="describing-control-flow"></a><a name="SimpleControlFlow"></a> Opisywanie przepływu sterowania
  Na diagramie aktywności opisano proces biznesowy lub algorytm oprogramowania w ramach szeregu akcji. Strzałki łączników pokazują, jak kontrolka jest przenoszona sekwencyjnie z jednej akcji do następnej. Zwykle akcja może zostać uruchomiona dopiero po zakończeniu poprzedniej akcji.
 
  Na poniższej ilustracji przedstawiono przykład sposobu wyświetlania sekwencji akcji zawierających akcje, łączniki, gałęzie i pętle. Każdy element jest wyjaśniony bardziej szczegółowo w poniższych sekcjach.
@@ -174,7 +174,7 @@ W programie Visual Studio możesz narysować diagram aktywności, aby opisać pr
 
   Proste kształty nie są częścią modelu UML i nie są wyświetlane w Eksploratorze modelu UML.
 
-## <a name="DataFlows"></a>Opisywanie przepływu danych
+## <a name="describing-data-flow"></a><a name="DataFlows"></a> Opisywanie przepływu danych
  Można opisać dane przekazywane i wychodzące z działania na jeden z dwóch sposobów:
 
 - Użyj **węzła obiektu**. Jest to najprostsza metoda opisywania informacji przepływających między działaniami. Węzeł obiektu jest podobny do zmiennej w programie. Reprezentuje element, który przechowuje co najmniej jedną wartość, która przechodzi z jednej akcji do innej.
@@ -236,7 +236,7 @@ W programie Visual Studio możesz narysować diagram aktywności, aby opisać pr
 
  Alternatywnie można określić, że przepływ obiektów obejmuje transformację, która konwertuje dane między typem wyjściowego numeru PIN a typem wejściowego numeru PIN. Najbardziej typowa transformacja tego rodzaju jedynie wyodrębnia odpowiednią część z większego typu. Przykład na rysunku oznacza istnienie transformacji, która wyodrębnia adres wysyłkowy z szczegółów zamówienia.
 
-## <a name="Details"></a>Definiowanie akcji bardziej szczegółowo
+## <a name="defining-an-action-in-more-detail"></a><a name="Details"></a> Definiowanie akcji bardziej szczegółowo
  Oprócz używania nazwy akcji, aby wyczyścić wynik, który powinien być zwykle osiągnięty, poniżej przedstawiono kilka sposobów dodawania szczegółów do akcji:
 
 - Napisz bardziej szczegółowy opis we właściwości **Body** . Można na przykład napisać fragment kodu programu lub pseudo kod lub pełen opis uzyskanych wyników.
@@ -245,7 +245,7 @@ W programie Visual Studio możesz narysować diagram aktywności, aby opisać pr
 
 - Ustaw właściwości **lokalnych warunki końcowe** i **lokalnych warunków** wstępnych akcji, aby opisać jej wynik bardziej szczegółowy. Aby uzyskać więcej informacji, zobacz [Definiowanie warunki końcowe i warunków wstępnych](#Postcondition).
 
-### <a name="Subactivities"></a>Opisywanie działań podrzędnych z akcjami zachowania wywołania
+### <a name="describing-sub-activities-with-call-behavior-actions"></a><a name="Subactivities"></a> Opisywanie działań podrzędnych z akcjami zachowania wywołania
  Można opisać szczegółowe zachowanie akcji przy użyciu oddzielnego diagramu aktywności. Zachowanie wywoływane to diagram aktywności, który jest reprezentowany na głównym diagramie aktywności przez akcję zachowania wywołania. Za pomocą akcji zachowanie wywołania można także opisać zachowanie, które jest współużytkowane przez różne działania, aby nie trzeba było wielokrotnie rysować działania podrzędne.
 
  Na poniższej ilustracji wykres 1 pokazuje działanie, które ma akcję zachowanie wywołania i diagram 2 przedstawia Diagram działania podrzędnego, który pokazuje wywoływane zachowanie.
@@ -285,7 +285,7 @@ W programie Visual Studio możesz narysować diagram aktywności, aby opisać pr
 
   ![Pinezki na mapie zachowań wywołań do parametrów działania](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")
 
-### <a name="Postcondition"></a>Definiowanie warunki końcowe i warunków wstępnych
+### <a name="defining-postconditions-and-preconditions"></a><a name="Postcondition"></a> Definiowanie warunki końcowe i warunków wstępnych
  Aby określić szczegółowo wynik akcji, można użyć **lokalnych właściwości warunki końcowe** i **lokalnych warunków** wstępnych. Te właściwości opisują efekt działania bez opisu sposobu osiągnięcia efektu.
 
  Aby ustawić te właściwości, kliknij prawym przyciskiem myszy akcję, a następnie kliknij pozycję **Właściwości**. Wpisz wartości we właściwościach w okno Właściwości.
@@ -319,7 +319,7 @@ W programie Visual Studio możesz narysować diagram aktywności, aby opisać pr
 
   - Jeśli ustawisz opcję **synchroniczne** na false, wskazujesz, że przepływ może przejść do następnej akcji przed ukończeniem wywołanej operacji. Nie należy definiować pinów wyjściowych ani wychodzących przepływów danych z akcji.
 
-## <a name="Concurrent"></a>Współbieżne przepływy
+## <a name="concurrent-flows"></a><a name="Concurrent"></a> Współbieżne przepływy
  Za pomocą **węzła rozwidlenia** i **węzła Join** można opisać dwa lub więcej wątków działań, które mogą być wykonywane w tym samym czasie.
 
  ![Węzły rozwidlenia i sprzęgania pokazują współbieżne przepływy](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")
@@ -398,7 +398,7 @@ W programie Visual Studio możesz narysować diagram aktywności, aby opisać pr
 
 - Dołącz komentarz do wejściowego lub wyjściowego numeru PIN.
 
-  - Aby odróżnić ten opis od komentarza ogólnego, można rozpocząć dodawanie komentarza\<**transformacji**> > lub **<\<<** >.
+  - Aby odróżnić ten opis od ogólnego komentarza, możesz rozpocząć dodawanie komentarza \<**transformation**>> <lub <\<**selection**>>.
 
 - Określ szczegóły transformacji lub wyboru w oddzielnym diagramie aktywności.
 
@@ -408,7 +408,7 @@ W programie Visual Studio możesz narysować diagram aktywności, aby opisać pr
 
 1. Utwórz nowy Diagram działania, w którym ma zostać opisany przepływ transformacji lub wyboru.
 
-   - W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, wskaż polecenie **Dodaj**, kliknij pozycję **nowy element**, a następnie kliknij pozycję **Diagram aktywności**. Nadaj diagramowi odpowiednią nazwę dla przepływu transformacji lub zaznaczenia. Kliknij przycisk **Dodaj**.
+   - W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, wskaż polecenie **Dodaj**, kliknij pozycję **nowy element**, a następnie kliknij pozycję **Diagram aktywności**. Nadaj diagramowi odpowiednią nazwę dla przepływu transformacji lub zaznaczenia. Kliknij pozycję **Dodaj**.
 
 2. Na nowym diagramie:
 

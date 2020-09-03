@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetCondition | Dokumenty firmy Microsoft
+title: 'IDebugPendingBreakpoint2:: setcondition | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4683d944f2489b8b21ff545c86e3d867283d644a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725724"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
@@ -42,13 +42,13 @@ int SetCondition( 
 
 ## <a name="parameters"></a>Parametry
 `bpCondition`\
-[w] Struktura [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) określająca warunek do skonfigurowania.
+podczas Struktura [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) , która określa warunek do ustawienia.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Każdy warunek, który był wcześniej skojarzony z oczekującym punktem przerwania zostanie utracony. Wszystkie punkty przerwania powiązane z tego oczekującego punktu przerwania `bpCondition` są wywoływane, aby ustawić ich warunek na wartość określoną w parametrze.
+ Wszystkie warunki, które wcześniej były skojarzone z oczekującym punktem przerwania, zostaną utracone. Wszystkie punkty przerwania powiązane z tym oczekującym punktem przerwania są wywoływane, aby ustawić ich warunek na wartość określoną w `bpCondition` parametrze.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

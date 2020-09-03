@@ -32,16 +32,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 930cec012bfda49c61116ada2ba6df10c3a48f51
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850999"
 ---
 # <a name="link-task"></a>Połącz — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidatora łączy pliki i biblioteki obiektów Common Object Format (COFF), aby utworzyć plik wykonywalny (exe) lub bibliotekę dołączaną dynamicznie (DLL). Aby uzyskać więcej informacji, zobacz [Opcje konsolidatora](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
+Zawija Visual C++ narzędzia konsolidatora link.exe. Narzędzie konsolidatora łączy pliki i biblioteki obiektów Common Object Format (COFF), aby utworzyć plik wykonywalny (exe) lub bibliotekę dołączaną dynamicznie (DLL). Aby uzyskać więcej informacji, zobacz [Opcje konsolidatora](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
 ## <a name="parameters"></a>Parametry  
  W poniższej tabeli opisano parametry zadania **linku** . Większość parametrów zadań i kilku zestawów parametrów odpowiada opcji wiersza polecenia.  
@@ -66,7 +66,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **String []** .  
   
-   Określa atrybuty, które zostaną umieszczone w sekcji `dependency` pliku manifestu.  
+   Określa atrybuty, które zostaną umieszczone w `dependency` sekcji pliku manifestu.  
   
    Aby uzyskać więcej informacji, zobacz [/MANIFESTDEPENDENCY (Określ zależności manifestu)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Zobacz również sekcję "pliki konfiguracji wydawcy" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
@@ -74,7 +74,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **ciągu** .  
   
-   Lista opcji konsolidatora określona w wierszu polecenia. Na przykład **"** _/option1/option2 Option #_ ". Użyj tego parametru, aby określić Opcje konsolidatora, które nie są reprezentowane przez żaden inny parametr zadania **linku** .  
+   Lista opcji konsolidatora określona w wierszu polecenia. Na przykład **"**_/option1/option2 Option #_". Użyj tego parametru, aby określić Opcje konsolidatora, które nie są reprezentowane przez żaden inny parametr zadania **linku** .  
   
    Aby uzyskać więcej informacji, zobacz [Opcje konsolidatora](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
@@ -90,7 +90,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, powoduje, że system operacyjny przeszukiwanie i ładowanie manifestu. Jeśli `false`, wskazuje, że biblioteki DLL są ładowane tak, jakby nie było manifestu.  
+   Jeśli `true` , powoduje, że system operacyjny przeszukiwanie i ładowanie manifestu. Jeśli `false` , wskazuje, że biblioteki DLL są ładowane tak, jakby nie było manifestu.  
   
    Aby uzyskać więcej informacji, zobacz [/ALLOWISOLATION (odnośnik manifestu)](https://msdn.microsoft.com/library/6d41851e-b3c1-4bdf-beaa-031773089d6f).  
   
@@ -98,7 +98,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, emituje atrybut **DebuggableAttribute** wraz ze śledzeniem informacji debugowania i wyłącza optymalizacje JIT. Jeśli `false`, emituje atrybut **DebuggableAttribute** , ale wyłącza śledzenie informacji debugowania i włącza optymalizacje JIT.  
+   Jeśli `true` , emituje atrybut **DebuggableAttribute** wraz ze śledzeniem informacji debugowania i wyłącza optymalizacje JIT. Jeśli `false` , emituje atrybut **DebuggableAttribute** , ale wyłącza śledzenie informacji debugowania i włącza optymalizacje JIT.  
   
    Aby uzyskać więcej informacji, zobacz [/ASSEMBLYDEBUG (Add DebuggableAttribute)](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982).  
   
@@ -120,7 +120,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **ciągu** .  
   
-   Ustawia adres podstawowy dla kompilowanego programu lub biblioteki DLL. Określ `{address[,size] | @filename,key}`.  
+   Ustawia adres podstawowy dla kompilowanego programu lub biblioteki DLL. Podaj wartość `{address[,size] | @filename,key}`.  
   
    Aby uzyskać więcej informacji, zobacz [/Base (adres podstawowy)](https://msdn.microsoft.com/library/00b9f6fe-0bd2-4772-a69c-7365eb199069).  
   
@@ -140,13 +140,13 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.  
   
-  - **Domyślne** -  *\<brak >*  
+  - **Wartooć** - *\<none>*  
   
-  - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**  
+  - **ForceIJWImage**  -  **/CLRIMAGETYPE: IJW**  
   
-  - **ForcePureILImage** -  **/CLRIMAGETYPE: czysty**  
+  - **ForcePureILImage**  -  **/CLRIMAGETYPE: czysty**  
   
-  - **ForceSafeILImage** -  **/CLRIMAGETYPE:SAFE**  
+  - **ForceSafeILImage**  -  **/CLRIMAGETYPE: bezpieczne**  
   
     Aby uzyskać więcej informacji, zobacz [/CLRIMAGETYPE (Określ typ obrazu CLR)](https://msdn.microsoft.com/library/04c60ee6-9dd7-4391-bc03-6926ad0fa116).  
   
@@ -158,11 +158,11 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.  
   
-  - **Włączone** -  **/CLRSupportLastError**  
+  - **Włączone**  -  **/CLRSupportLastError**  
   
-  - **Wyłączone** -  **/CLRSupportLastError: nie**  
+  - **Wyłączony**  -  **/CLRSupportLastError: nie**  
   
-  - **SystemDlls** -  **/CLRSupportLastError:SYSTEMDLL**  
+  - **SystemDlls**  -  **/CLRSupportLastError: SYSTEMDLL**  
   
     Aby uzyskać więcej informacji, zobacz [/CLRSUPPORTLASTERROR (Zachowaj kod ostatniego błędu dla wywołań PInvoke)](https://msdn.microsoft.com/library/b7057990-4154-4b1d-9fc9-6236f7be7575).  
   
@@ -174,11 +174,11 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.  
   
-  - **DefaultThreadingAttribute** -  **/CLRTHREADATTRIBUTE: brak**  
+  - **DefaultThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: brak**  
   
-  - **MTAThreadingAttribute** -  **/CLRTHREADATTRIBUTE: MTA**  
+  - **MTAThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: MTA**  
   
-  - **STAThreadingAttribute** -  **/CLRTHREADATTRIBUTE: sta**  
+  - **STAThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: sta**  
   
     Aby uzyskać więcej informacji, zobacz [/CLRTHREADATTRIBUTE (ustaw atrybut wątku CLR)](https://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8).  
   
@@ -198,13 +198,13 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, która odnosi się do opcji konsolidatora.  
   
-  - **Enabled** -  **/FUNCTIONPADMIN**  
+  - **Włączone**  -  **/Functionpadmin**  
   
-  - **X86Image** -  **/FUNCTIONPADMIN:5**  
+  - **X86Image**  -  **/Functionpadmin: 5**  
   
-  - **X64Image** -  **/FUNCTIONPADMIN:6**  
+  - **X64Image**  -  **/Functionpadmin: 6**  
   
-  - **ItaniumImage** -  **/functionpadmin: 16**  
+  - **ItaniumImage**  -  **/Functionpadmin: 16**  
   
     Aby uzyskać więcej informacji, zobacz [/functionpadmin (Create możliwy do poprawiania Image)](https://msdn.microsoft.com/library/25b02c13-1add-4fbd-add9-fcb30eb2cae7).  
   
@@ -212,7 +212,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, wskazuje, że plik wykonywalny został przetestowany pod kątem zgodności z funkcją zapobiegania wykonywaniu danych systemu Windows.  
+   Jeśli `true` , wskazuje, że plik wykonywalny został przetestowany pod kątem zgodności z funkcją zapobiegania wykonywaniu danych systemu Windows.  
   
    Aby uzyskać więcej informacji, zobacz [/NXCOMPAT (zgodny z zapobieganiem wykonywaniu danych)](https://msdn.microsoft.com/library/5858e7ff-24d3-4ac3-9046-af2c9e220d9b).  
   
@@ -228,7 +228,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, częściowo podpisuje zestaw. Domyślna wartość to `false`.  
+   Jeśli `true` , częściowo podpisuje zestaw. Domyślna wartość to `false`.  
   
    Aby uzyskać więcej informacji, zobacz [/delaysign (częściowo podpisz zestaw)](https://msdn.microsoft.com/library/15244d30-3ecb-492f-a408-ffe81f38de20).  
   
@@ -240,13 +240,13 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.  
   
-  - **NotSet** -  *\<none>*  
+  - **NotSet** - *\<none>*  
   
-  - **Driver** -  **/Driver**  
+  - **Sterownik**  -  **/Driver** /+  
   
-  - **UpOnly** -  **/DRIVER:UPONLY**  
+  - **Tylko**  -  z **: tylko** do  
   
-  - **WDM** -  **/DRIVER:WDM**  
+  - **WDM**  -  /+ **: WDM**  
   
     Aby uzyskać więcej informacji, zobacz [Sterownik systemu Windows NT — sterowniki trybu jądra](https://msdn.microsoft.com/library/aeee8e28-5d97-40f5-ba16-9f370fe8a1b8).  
   
@@ -262,7 +262,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, włącza identyczne składanie COMDAT.  
+   Jeśli `true` , włącza identyczne składanie COMDAT.  
   
    Aby uzyskać więcej informacji, zobacz `ICF[= iterations]` argument [/opt (optymalizacje)](https://msdn.microsoft.com/library/8f229863-5f53-48a8-9478-243a647093ac).  
   
@@ -270,7 +270,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, określa, że informacje kontroli konta użytkownika (UAC) są osadzone w manifeście programu.  
+   Jeśli `true` , określa, że informacje kontroli konta użytkownika (UAC) są osadzone w manifeście programu.  
   
    Aby uzyskać więcej informacji, zobacz [/MANIFESTUAC (osadzanie informacji UAC w manifeście)](https://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
   
@@ -286,7 +286,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   W przypadku `true`tworzy program lub plik DLL, który można załadować tylko przy użyciu preferowanego adresu podstawowego.  
+   W przypadku `true` tworzenia programu lub biblioteki DLL, która może być ładowana tylko w preferowanym adresie podstawowym.  
   
    Aby uzyskać więcej informacji, zobacz [/FIXED (stały adres podstawowy)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).  
   
@@ -298,11 +298,11 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Włączono** -  **/Force**  
+  - **Włączone**  -  **/Force**  
   
-  - **MultiplyDefinedSymbolOnly** -  **/Force: wiele**  
+  - **MultiplyDefinedSymbolOnly**  -  **/Force: wiele**  
   
-  - **UndefinedSymbolOnly** -  **/Force: nierozwiązane**  
+  - **UndefinedSymbolOnly**  -  **/Force: NIErozpoznany**  
   
     Aby uzyskać więcej informacji, zobacz [/Force (Wymuś dane wyjściowe pliku)](https://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da).  
   
@@ -326,7 +326,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, program tworzy informacje debugowania dla pliku exe lub DLL.  
+   Jeśli `true` , program tworzy informacje debugowania dla pliku exe lub dll.  
   
    Aby uzyskać więcej informacji, zobacz [/debug (generowanie informacji o debugowaniu)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).  
   
@@ -334,7 +334,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, program tworzy plik manifestu obok siebie.  
+   Jeśli `true` , tworzy plik manifestu Side-by-side.  
   
    Aby uzyskać więcej informacji, zobacz [/manifest (Create Side-by-Side manifest zestawu)](https://msdn.microsoft.com/library/98c52e1e-712c-4f49-b149-4d0a3501b600).  
   
@@ -342,9 +342,9 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, program tworzy *plik mapy*. Rozszerzenie nazwy pliku mapy to. map.  
+   Jeśli `true` , tworzy *plik mapy*. Rozszerzenie nazwy pliku mapy to. map.  
   
-   Aby uzyskać więcej informacji, zobacz [/map (Generuj plik mapy)](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63).  
+   Aby uzyskać więcej informacji, zobacz [/map (Generate Mapfile)](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63).  
   
 - **HeapCommitSize**  
   
@@ -352,7 +352,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określa ilość pamięci fizycznej na stercie do przydzielenia w danym momencie.  
   
-   Aby uzyskać więcej informacji, zobacz argument `commit` w [/Heap (Ustawianie rozmiaru sterty)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). Zobacz również parametr **HeapReserveSize** .  
+   Aby uzyskać więcej informacji, zobacz `commit` argument w [/Heap (Ustawianie rozmiaru sterty)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). Zobacz również parametr **HeapReserveSize** .  
   
 - **HeapReserveSize**  
   
@@ -360,13 +360,13 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określa całkowitą alokację sterty w pamięci wirtualnej.  
   
-   Aby uzyskać więcej informacji, zobacz argument `reserve` w [/Heap (Ustawianie rozmiaru sterty)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). Zobacz również parametr **HeapCommitSize** w tej tabeli.  
+   Aby uzyskać więcej informacji, zobacz `reserve` argument w [/Heap (Ustawianie rozmiaru sterty)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). Zobacz również parametr **HeapCommitSize** w tej tabeli.  
   
 - **IgnoreAllDefaultLibraries**  
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, nakazuje konsolidatorowi usunięcie co najmniej jednej biblioteki domyślnej z listy bibliotek, które przeszukuje, gdy rozwiązuje odwołania zewnętrzne.  
+   Jeśli `true` , instruuje konsolidator, aby usunął co najmniej jedną domyślną bibliotekę z listy bibliotek przeszukiwanych podczas rozpoznawania odwołań zewnętrznych.  
   
    Aby uzyskać więcej informacji, zobacz [/NODEFAULTLIB (Ignoruj biblioteki)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
   
@@ -374,7 +374,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, określa, że żadne atrybuty IDL w kodzie źródłowym nie powinny być przetwarzane do pliku. idl.  
+   Jeśli `true` , określa, że żadne atrybuty IDL w kodzie źródłowym nie powinny być przetwarzane do pliku. idl.  
   
    Aby uzyskać więcej informacji, zobacz [/IGNOREIDL (nie Przetwarzaj atrybutów w MIDL)](https://msdn.microsoft.com/library/29514098-6a1c-4317-af2f-1dc268972780).  
   
@@ -382,7 +382,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, określa, że biblioteka importowana, generowana przez tę konfigurację, nie powinna być importowana do projektów zależnych.  
+   Jeśli `true` , określa, że biblioteka importowana, generowana przez tę konfigurację, nie powinna być importowana do projektów zależnych.  
   
    Ten parametr nie odpowiada opcji konsolidatora.  
   
@@ -398,7 +398,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, konsolidator tworzy obraz tylko wtedy, gdy może również generować tabelę obsługi wyjątków bezpiecznego obrazu.  
+   Jeśli `true` , konsolidator tworzy obraz tylko wtedy, gdy może również generować tabelę obsługi wyjątków bezpiecznego obrazu.  
   
    Aby uzyskać więcej informacji, zobacz [/SAFESEH (obraz ma bezpieczne procedury obsługi wyjątków)](https://msdn.microsoft.com/library/7722ff99-b833-4c65-a855-aaca902ffcb7).  
   
@@ -428,7 +428,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, aplikacja może obsłużyć adresy większe niż 2 gigabajty.  
+   Jeśli `true` aplikacja może obsłużyć adresy większe niż 2 gigabajty.  
   
    Aby uzyskać więcej informacji, zobacz [/LARGEADDRESSAWARE (obsługa dużych adresów)](https://msdn.microsoft.com/library/a29756c8-e893-47a9-9750-1f0d25359385).  
   
@@ -436,7 +436,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, program kompiluje bibliotekę DLL jako główny plik wyjściowy.  
+   Jeśli `true` , kompiluje bibliotekę DLL jako główny plik wyjściowy.  
   
    Aby uzyskać więcej informacji, zobacz [/dll (Kompilowanie biblioteki dll)](https://msdn.microsoft.com/library/c7685aec-31d0-490f-9503-fb5171a23609).  
   
@@ -448,13 +448,13 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **NoErrorReport** -  **/errorReport: brak**  
+  - **NoErrorReport**  -  **/errorReport: brak**  
   
-  - **Monituj bezzwłocznie** -  **/errorReport: Prompt**  
+  - **Monituj bezzwłocznie**  -  **/errorReport: Monituj**  
   
-  - **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**  
+  - **QueueForNextLogin**  -  **/errorReport: Queue**  
   
-  - **SendErrorReport** -  **/errorReport: Send**  
+  - **SendErrorReport**  -  **/errorReport: Wyślij**  
   
     Aby uzyskać więcej informacji, zobacz [/errorreport (zgłaszaj wewnętrzne błędy konsolidatora)](https://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28).  
   
@@ -462,7 +462,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, włącza łączenie przyrostowe.  
+   Jeśli `true` , włącza łączenie przyrostowe.  
   
    Aby uzyskać więcej informacji, zobacz [/Incremental (łączenie przyrostowe)](https://msdn.microsoft.com/library/135656ff-94fa-4ad4-a613-22e1a2a5d16b).  
   
@@ -470,7 +470,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, określa, że dane wyjściowe biblioteki z zależności projektu są automatycznie dołączane.  
+   Jeśli `true` , określa, że dane wyjściowe biblioteki z zależności projektu są automatycznie dołączane.  
   
    Ten parametr nie odpowiada opcji konsolidatora.  
   
@@ -478,9 +478,9 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, określa, że konsolidator ma wyświetlać wskaźnik postępu, który pokazuje, jaki procent łącza zostało zakończone.  
+   Jeśli `true` , określa, że konsolidator ma wyświetlać wskaźnik postępu, który pokazuje, jaki procent łącza zostało zakończone.  
   
-   Aby uzyskać więcej informacji, zobacz argument `STATUS` [/LTCG (generowanie kodu w czasie konsolidacji)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
+   Aby uzyskać więcej informacji, zobacz `STATUS` argument [/LTCG (generowanie kodu w czasie konsolidacji)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
   
 - **LinkTimeCodeGeneration**  
   
@@ -490,17 +490,17 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Domyślne** -  *\<brak >*  
+  - **Wartooć** - *\<none>*  
   
-  - **UseLinkTimeCodeGeneration** -  **/LTCG**  
+  - **UseLinkTimeCodeGeneration**  -  **/LTCG**  
   
-  - **PGInstrument** -  **/LTCG:PGInstrument**  
+  - **PGInstrument**  -  **/LTCG: PGInstrument**  
   
-  - **PGOptimization** -  **/LTCG: PGOptimize**  
+  - **PGOptimization**  -  **/LTCG: PGOptimize**  
   
   - **PGUpdate**  
   
-     \- **/LTCG: PGUpdate**  
+     \-**/LTCG: PGUpdate**  
   
     Aby uzyskać więcej informacji, zobacz [/LTCG (generowanie kodu w czasie konsolidacji)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
   
@@ -516,9 +516,9 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, nakazuje konsolidatorowi uwzględnienie wyeksportowanych funkcji w pliku mapy.  
+   Jeśli `true` , nakazuje konsolidatorowi dołączenie eksportowanych funkcji w pliku mapy.  
   
-   Aby uzyskać więcej informacji, zobacz argument `EXPORTS` [/MapInfo (Dołącz informacje w mapfile)](https://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b).  
+   Aby uzyskać więcej informacji, zobacz `EXPORTS` argument [/MapInfo (Dołącz informacje w mapfile)](https://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b).  
   
 - **MapFileName**  
   
@@ -538,7 +538,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **ciągu** .  
   
-   Łączy sekcje w obrazie. Określ `from-section=to-section`.  
+   Łączy sekcje w obrazie. Podaj wartość `from-section=to-section`.  
   
    Aby uzyskać więcej informacji, zobacz [/merge (łączenie sekcji)](https://msdn.microsoft.com/library/10fb20c2-0b3f-4c8d-98a8-f69aedf03d52).  
   
@@ -572,11 +572,11 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Aby uzyskać więcej informacji, zobacz [/stub (nazwa pliku szczątkowego systemu MS-DOS)](https://msdn.microsoft.com/library/65221ffe-4f9a-4a14-ac69-3cfb79b40b5f).  
   
-- **NoEntryPoint**  
+- **Noentrypoint**  
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, określa plik DLL z tylko zasobami.  
+   Jeśli `true` , określa plik DLL z tylko zasobami.  
   
    Aby uzyskać więcej informacji, zobacz [/NOENTRY (brak punktu wejścia)](https://msdn.microsoft.com/library/0214dd41-35ad-43ab-b892-e636e038621a).  
   
@@ -590,11 +590,11 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, eliminuje funkcje i/lub dane, które nigdy nie są przywoływane.  
+   Jeśli `true` , eliminuje funkcje i/lub dane, które nigdy nie są przywoływane.  
   
-   Aby uzyskać więcej informacji, zobacz argument `REF` w [/opt (optymalizacje)](https://msdn.microsoft.com/library/8f229863-5f53-48a8-9478-243a647093ac).  
+   Aby uzyskać więcej informacji, zobacz `REF` argument w [/opt (optymalizacje)](https://msdn.microsoft.com/library/8f229863-5f53-48a8-9478-243a647093ac).  
   
-- **OutputFile**  
+- **Plik_wyjściowy**  
   
    Opcjonalny parametr **ciągu** .  
   
@@ -606,11 +606,11 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true` i rejestrowanie danych wyjściowych jest włączone, wymusza, aby zapisy rejestru **HKEY_CLASSES_ROOT** przekierowywać do **HKEY_CURRENT_USER**.  
+   Jeśli `true` Funkcja Rejestruj dane wyjściowe jest włączona, wymusza przekierowanie zapisów rejestru do **HKEY_CLASSES_ROOT** do **HKEY_CURRENT_USER**.  
   
 - **PreprocessOutput**  
   
-   Opcjonalny parametr `ITaskItem[]`.  
+   Opcjonalny `ITaskItem[]` parametr.  
   
    Definiuje tablicę elementów wyjściowych preprocesora, które mogą być używane i emitowane przez zadania.  
   
@@ -618,7 +618,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, wskazuje, że program bind. exe nie powinien być powiązany z połączonym obrazem.  
+   Jeśli `true` , Bind.exe wskazuje, że nie należy powiązać połączonego obrazu.  
   
    Aby uzyskać więcej informacji, zobacz [/ALLOWBIND (Zapobiegaj powiązaniu biblioteki dll)](https://msdn.microsoft.com/library/30e37e24-12e4-407e-988a-39d357403598).  
   
@@ -626,7 +626,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, tworzy plik wyjściowy, który może być używany z profilerem **narzędzi do oceny wydajności** .  
+   Jeśli `true` , generuje plik wyjściowy, który może być używany z profilerem **narzędzi wydajności** .  
   
    Aby uzyskać więcej informacji, zobacz [/Profile (Profiler narzędzi do oceny wydajności)](https://msdn.microsoft.com/library/e676baa1-5063-47a3-a357-ba0d1f0d1699).  
   
@@ -650,7 +650,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, program generuje obraz wykonywalny, który może być losowo zmieniany w czasie ładowania przy użyciu funkcji *losowego układu przestrzeni adresowej* (ASLR) systemu Windows.  
+   W przypadku `true` wygenerowania obrazu wykonywalnego, który może być losowo zmieniany w czasie ładowania przy użyciu funkcji *losowego układu przestrzeni adresowej* (ASLR) systemu Windows.  
   
    Aby uzyskać więcej informacji, zobacz [/DYNAMICBASE (Użyj losowości układu przestrzeni adresowej)](https://msdn.microsoft.com/library/6c0ced8e-fe9c-4b63-b956-eb8a55fbceb2).  
   
@@ -658,7 +658,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, rejestruje podstawowe dane wyjściowe tej kompilacji.  
+   Jeśli `true` rejestruje podstawowe dane wyjściowe tej kompilacji.  
   
 - **Wyrównanie sekcji**  
   
@@ -668,11 +668,11 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Aby uzyskać więcej informacji, zobacz [/align (wyrównanie sekcji)](https://msdn.microsoft.com/library/f2f8ac24-e90e-4bea-8205-f2960a3b1740).  
   
-- **SetChecksum**  
+- **SetCheckSum —**  
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, ustawia sumę kontrolną w nagłówku pliku. exe.  
+   Jeśli `true` , ustawia sumę kontrolną w nagłówku pliku. exe.  
   
    Aby uzyskać więcej informacji, zobacz [/Release (Ustaw sumę kontrolną)](https://msdn.microsoft.com/library/93bcadf4-29ac-4824-914b-6997e3751d22).  
   
@@ -684,25 +684,25 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **NotSet** -  *\<none>*  
+  - **NotSet** - *\<none>*  
   
-  - **LinkVerbose** -  **/VERBOSE**  
+  - **LinkVerbose**  -  **/Verbose**  
   
-  - **LinkVerboseLib** -  **/VERBOSE:Lib**  
+  - **LinkVerboseLib**  -  **/Verbose: lib**  
   
-  - **LinkVerboseICF** -  **/VERBOSE:ICF**  
+  - **LinkVerboseICF**  -  **/verbose: ICF**  
   
-  - **LinkVerboseREF** -  **/VERBOSE:REF**  
+  - **LinkVerboseREF**  -  **/verbose: ref**  
   
-  - **LinkVerboseSAFESEH** -  **/VERBOSE:SAFESEH**  
+  - **LinkVerboseSAFESEH**  -  **/verbose: SAFESEH**  
   
-  - **LinkVerboseCLR** -  **/VERBOSE:CLR**  
+  - **LinkVerboseCLR**  -  **/verbose: środowisko CLR**  
   
     Aby uzyskać więcej informacji, zobacz [/verbose (drukowanie komunikatów o postępie)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab).  
   
-- **Źródeł**  
+- **Źródła**  
   
-   Wymagany `ITaskItem[]` parametr.  
+   Wymagany parametr interfejsu `ITaskItem[]`.  
   
    Definiuje tablicę elementów plików źródłowych MSBuild, które mogą być używane i emitowane przez zadania.  
   
@@ -720,7 +720,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określa ilość pamięci fizycznej w każdej alokacji po przydzieleniu dodatkowej pamięci.  
   
-   Aby uzyskać więcej informacji, zobacz argument `commit` [/Stack (alokacje stosu)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
+   Aby uzyskać więcej informacji, zobacz `commit` argument [/Stack (alokacje stosu)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
   
 - **StackReserveSize**  
   
@@ -728,7 +728,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określa całkowity rozmiar alokacji stosu w pamięci wirtualnej.  
   
-   Aby uzyskać więcej informacji, zobacz argument `reserve` [/Stack (alokacje stosu)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
+   Aby uzyskać więcej informacji, zobacz `reserve` argument [/Stack (alokacje stosu)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
   
 - **StripPrivateSymbols**  
   
@@ -738,7 +738,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Aby uzyskać więcej informacji, zobacz [/PDBSTRIPPED (symbole prywatne)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).  
   
-- **SubSystem**  
+- **Wykonawc**  
   
    Opcjonalny parametr **ciągu** .  
   
@@ -746,25 +746,25 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **NotSet** -  *\<none>*  
+  - **NotSet** - *\<none>*  
   
-  - **Konsola** -  **/SUBSYSTEM: Konsola**  
+  - **Konsola**  -  programu **/SUBSYSTEM: Konsola**  
   
-  - **Windows** -  **/SUBSYSTEM:WINDOWS**  
+  - **System Windows**  -  **/SUBSYSTEM: Windows**  
   
-  - **Native** -  **/SUBSYSTEM:NATIVE**  
+  - Kod **natywny**  -  **/SUBSYSTEM: natywny**  
   
-  - **Aplikacja EFI** -  **/SUBSYSTEM: EFI_APPLICATION**  
+  - **Aplikacja EFI**  -  **/SUBSYSTEM: EFI_APPLICATION**  
   
-  - **Sterownik usługi rozruchu EFI** -  **/SUBSYSTEM: EFI_BOOT_SERVICE_DRIVER**  
+  - Sterownik usługi rozruchu **EFI**  -  **/SUBSYSTEM: EFI_BOOT_SERVICE_DRIVER**  
   
-  - **Interfejs EFI ROM** -  **/SUBSYSTEM: EFI_ROM**  
+  - PAMIĘĆ podsystemowa **EFI**  -  **/SUBSYSTEM: EFI_ROM**  
   
-  - **EFI Runtime** -  **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+  - **Środowisko uruchomieniowe EFI**  -  **/SUBSYSTEM: EFI_RUNTIME_DRIVER**  
   
-  - **WindowsCE** -  **/SUBSYSTEM:WINDOWSCE**  
+  - **WindowsCE**  -  **/SUBSYSTEM: WindowsCE**  
   
-  - **POSIX** -  **/SUBSYSTEM:POSIX**  
+  - **POSIX**  -  **/SUBSYSTEM: POSIX**  
   
     Aby uzyskać więcej informacji, zobacz [/subsystem (Określanie podsystemu)](https://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b).  
   
@@ -772,23 +772,23 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, nakazuje konsolidatorowi nieuwzględnienie tabeli adresów importu (IAT) w końcowym obrazie.  
+   Jeśli `true` , nakazuje konsolidatorowi nieuwzględnienie tabeli adresów importu (IAT) w końcowym obrazie.  
   
-   Aby uzyskać więcej informacji, zobacz argument `NOBIND` [/Delay (ustawienia opóźnienia importowania ładowania)](https://msdn.microsoft.com/library/9334b332-cc58-4dae-b10f-a4c75972d50c).  
+   Aby uzyskać więcej informacji, zobacz `NOBIND` argument [/Delay (ustawienia opóźnienia importowania ładowania)](https://msdn.microsoft.com/library/9334b332-cc58-4dae-b10f-a4c75972d50c).  
   
 - **SupportUnloadOfDelayLoadedDLL**  
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, nakazuje funkcji pomocnika ładowania opóźnień, aby obsługiwała jawne wyładowywanie biblioteki DLL.  
+   Jeśli `true` , mówi funkcji pomocnika ładowania opóźnień, aby obsługiwała jawne wyładowywanie biblioteki DLL.  
   
-   Aby uzyskać więcej informacji, zobacz argument `UNLOAD` [/Delay (ustawienia opóźnienia importowania ładowania)](https://msdn.microsoft.com/library/9334b332-cc58-4dae-b10f-a4c75972d50c).  
+   Aby uzyskać więcej informacji, zobacz `UNLOAD` argument [/Delay (ustawienia opóźnienia importowania ładowania)](https://msdn.microsoft.com/library/9334b332-cc58-4dae-b10f-a4c75972d50c).  
   
 - **SuppressStartupBanner**  
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, program zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji, gdy zadanie zostanie uruchomione.  
+   Jeśli `true` , program zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji, gdy zadanie zostanie uruchomione.  
   
    Aby uzyskać więcej informacji, zobacz [/nologo (Pomijanie transparentu startowego) (Konsolidator)](https://msdn.microsoft.com/library/3b20dddd-eca6-4545-a331-9f70bf720197).  
   
@@ -796,17 +796,17 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   W przypadku `true`program instruuje system operacyjny, aby najpierw skopiował dane wyjściowe konsolidatora do pliku wymiany, a następnie uruchomił obraz stamtąd.  
+   Jeśli `true` program Nakazuje systemowi operacyjnemu pierwsze skopiowanie danych wyjściowych konsolidatora do pliku wymiany, a następnie uruchomienie obrazu z tego miejsca.  
   
-   Aby uzyskać więcej informacji, zobacz argument `CD` [/SWAPRUN (ładowanie danych wyjściowych konsolidatora do pliku wymiany)](https://msdn.microsoft.com/library/4a1e7f46-4399-4161-8dfc-d6a71beaf683). Zobacz również parametr **SwapRunFromNET** .  
+   Aby uzyskać więcej informacji, zobacz `CD` argument [/SWAPRUN (ładowanie danych wyjściowych konsolidatora do pliku wymiany)](https://msdn.microsoft.com/library/4a1e7f46-4399-4161-8dfc-d6a71beaf683). Zobacz również parametr **SwapRunFromNET** .  
   
 - **SwapRunFromNET**  
   
    Opcjonalny parametr **logiczny** .  
   
-   W przypadku `true`program instruuje system operacyjny, aby najpierw skopiował dane wyjściowe konsolidatora do pliku wymiany, a następnie uruchomił obraz stamtąd.  
+   Jeśli `true` program Nakazuje systemowi operacyjnemu pierwsze skopiowanie danych wyjściowych konsolidatora do pliku wymiany, a następnie uruchomienie obrazu z tego miejsca.  
   
-   Aby uzyskać więcej informacji, zobacz argument `NET` [/SWAPRUN (ładowanie danych wyjściowych konsolidatora do pliku wymiany)](https://msdn.microsoft.com/library/4a1e7f46-4399-4161-8dfc-d6a71beaf683). Zobacz również parametr **SwapRunFromCD** w tej tabeli.  
+   Aby uzyskać więcej informacji, zobacz `NET` argument [/SWAPRUN (ładowanie danych wyjściowych konsolidatora do pliku wymiany)](https://msdn.microsoft.com/library/4a1e7f46-4399-4161-8dfc-d6a71beaf683). Zobacz również parametr **SwapRunFromCD** w tej tabeli.  
   
 - **TargetMachine**  
   
@@ -816,29 +816,29 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **NotSet** -  *\<none>*  
+  - **NotSet** - *\<none>*  
   
-  - **MachineARM** -  **/Machine: ARM**  
+  - **MachineARM**  -  **/Machine: ARM**  
   
-  - **MachineEBC** -  **/MACHINE:EBC**  
+  - **MachineEBC**  -  **/Machine: EBC**  
   
-  - **MachineIA64** -  **/MACHINE:IA64**  
+  - **MachineIA64**  -  **/Machine: IA64**  
   
-  - **MachineMIPS** -  **/MACHINE:MIPS**  
+  - **MachineMIPS**  -  **/Machine: MIPS**  
   
-  - **MachineMIPS16** -  **/MACHINE:MIPS16**  
+  - **MachineMIPS16**  -  **/Machine: MIPS16**  
   
-  - **MachineMIPSFPU** -  **/MACHINE:MIPSFPU**  
+  - **MachineMIPSFPU**  -  **/Machine: MIPSFPU**  
   
-  - **MachineMIPSFPU16** -  **/MACHINE:MIPSFPU16**  
+  - **MachineMIPSFPU16**  -  **/Machine: MIPSFPU16**  
   
-  - **MachineSH4** -  **/MACHINE:SH4**  
+  - **MachineSH4**  -  **/Machine: sh4**  
   
-  - **MachineTHUMB** -  **/Machine: kciuk**  
+  - **MachineTHUMB**  -  **/Machine: kciuk**  
   
-  - **MachineX64** -  **/MACHINE:X64**  
+  - **MachineX64**  -  **/Machine: x64**  
   
-  - **MachineX86** -  **/MACHINE:X86**  
+  - **MachineX86**  -  **/Machine: x86**  
   
     Aby uzyskać więcej informacji, zobacz [/Machine (Określ platformę docelową)](https://msdn.microsoft.com/library/8d41bf4b-7e53-4ab9-9085-d852b08d31c2).  
   
@@ -846,7 +846,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, ustawia flagę w polu IMAGE_OPTIONAL_HEADER DllCharacteristics w opcjonalnym nagłówku obrazu programu. Po ustawieniu tej flagi serwer terminali nie wprowadza pewnych zmian do aplikacji.  
+   Jeśli `true` , ustawia flagę w polu IMAGE_OPTIONAL_HEADER DllCharacteristics w opcjonalnym nagłówku obrazu programu. Po ustawieniu tej flagi serwer terminali nie wprowadza pewnych zmian do aplikacji.  
   
    Aby uzyskać więcej informacji, zobacz [/TSAWARE (Tworzenie aplikacji z obsługą serwera terminali)](https://msdn.microsoft.com/library/fe1c1846-de5b-4839-b562-93fbfe36cd29).  
   
@@ -860,7 +860,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, powoduje, że plik wyjściowy nie zostanie wygenerowany, jeśli konsolidator generuje ostrzeżenie.  
+   Jeśli `true` , powoduje, że plik wyjściowy nie zostanie wygenerowany, jeśli konsolidator generuje ostrzeżenie.  
   
    Aby uzyskać więcej informacji, zobacz [/WX (Traktuj ostrzeżenia konsolidatora jako błędy)](https://msdn.microsoft.com/library/e4ba97c7-93f7-43ae-a4bb-d866790926c9).  
   
@@ -868,7 +868,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, program tworzy obraz dla bieżącego pliku wyjściowego bez zestawu .NET Framework.  
+   Jeśli `true` , tworzy obraz dla bieżącego pliku wyjściowego bez zestawu .NET Framework.  
   
    Aby uzyskać więcej informacji, zobacz [/NOASSEMBLY (Create a module MSIL)](https://msdn.microsoft.com/library/3cea4e70-f451-4395-a626-1930b1b127fe).  
   
@@ -896,33 +896,33 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **AsInvoker** - `level='asInvoker'`  
+  - **Jako źródło** - `level='asInvoker'`  
   
-  - **HighestAvailable** - `level='highestAvailable'`  
+  - **Najwyższe dostępne** - `level='highestAvailable'`  
   
-  - **RequireAdministrator** - `level='requireAdministrator'`  
+  - **Wymaga administratora** - `level='requireAdministrator'`  
   
-    Aby uzyskać więcej informacji, zobacz argument `level` [/MANIFESTUAC (osadza informacje funkcji kontroli konta użytkownika w manifeście)](https://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
+    Aby uzyskać więcej informacji, zobacz `level` argument [/MANIFESTUAC (osadza informacje UAC w manifeście)](https://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
   
 - **UACUIAccess**  
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, aplikacja pomija poziomy ochrony interfejsu użytkownika i dyski wejściowe w oknach wyższych uprawnień na pulpicie; w przeciwnym razie `false`.  
+   Jeśli `true` aplikacja pomija poziomy ochrony interfejsu użytkownika i dyski dane wejściowe w oknach wyższych uprawnień na pulpicie; w przeciwnym razie `false` .  
   
-   Aby uzyskać więcej informacji, zobacz argument `uiAccess` [/MANIFESTUAC (osadza informacje funkcji kontroli konta użytkownika w manifeście)](https://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
+   Aby uzyskać więcej informacji, zobacz `uiAccess` argument [/MANIFESTUAC (osadza informacje UAC w manifeście)](https://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
   
 - **UseLibraryDependencyInputs**  
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, dane wejściowe narzędzia bibliotekarza są używane zamiast pliku biblioteki, gdy dane wyjściowe biblioteki są połączone w programie.  
+   W przypadku, gdy elementy `true` danych wyjściowych biblioteki są połączone w programie, zamiast pliku biblioteki są używane dane wejściowe narzędzia bibliotekarza.  
   
 - **Wersja**  
   
    Opcjonalny parametr **ciągu** .  
   
-   Umieść numer wersji w nagłówku pliku. exe lub. dll. Określ wartość "`major[.minor]`". Argumenty `major` i `minor` są liczbami dziesiętnymi od 0 do 65535.  
+   Umieść numer wersji w nagłówku pliku. exe lub. dll. Określ wartość " `major[.minor]` ". `major`Argumenty i `minor` są liczbami dziesiętnymi od 0 do 65535.  
   
    Aby uzyskać więcej informacji, zobacz [/Version (informacje o wersji)](https://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223).  
   

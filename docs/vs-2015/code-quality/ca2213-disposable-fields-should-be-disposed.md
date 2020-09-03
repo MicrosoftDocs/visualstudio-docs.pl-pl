@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 887600bad0c3d05ff78050aa4449cf49dc882027
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534579"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Pola możliwe do likwidacji należy likwidować
@@ -50,7 +50,7 @@ ms.locfileid: "85534579"
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern/cs/FxCop.Usage.IDisposablePattern.cs#1)]
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono typ `TypeB` , który narusza tę regułę przez zadeklarowanie pola `aFieldOfADisposableType` ( `F` w poprzedniej dyskusji) jako typ jednorazowy ( `TypeA` ) i nie wywoływanie <xref:System.IDisposable.Dispose%2A> dla tego pola. `TypeB`odpowiada `T` w poprzedniej dyskusji.
+ W poniższym przykładzie przedstawiono typ `TypeB` , który narusza tę regułę przez zadeklarowanie pola `aFieldOfADisposableType` ( `F` w poprzedniej dyskusji) jako typ jednorazowy ( `TypeA` ) i nie wywoływanie <xref:System.IDisposable.Dispose%2A> dla tego pola. `TypeB` odpowiada `T` w poprzedniej dyskusji.
 
  [!code-csharp[FxCop.Usage.IDisposableFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableFields/cs/FxCop.Usage.IDisposableFields.cs#1)]
 

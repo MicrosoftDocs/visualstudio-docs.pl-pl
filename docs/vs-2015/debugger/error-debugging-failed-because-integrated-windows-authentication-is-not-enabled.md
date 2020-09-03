@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 89afba591899b626863b0157f6d9d955d46e46cf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851919"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Błąd: debugowanie nie powiodło się ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone
@@ -77,7 +77,7 @@ Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który za�
   
          Zostanie wyświetlone okno dialogowe Access Control użytkownika i zostanie wyświetlony komunikat z prośbą o zgodę na kontynuowanie.  
   
-    3. Kliknij przycisk **Kontynuuj**.  
+    3. Kliknij pozycję **Kontynuuj**.  
   
          Zostanie wyświetlone okno dialogowe funkcje systemu Windows.  
   
@@ -101,7 +101,7 @@ Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który za�
   
 4. Kliknij pozycję **Widok klasyczny**, a następnie kliknij dwukrotnie ikonę **Narzędzia administracyjne**.  
   
-5. W kolumnie **Nazwa** kliknij dwukrotnie pozycję **Menedżer Internet Information Services (IIS)** .  
+5. W kolumnie **Nazwa** kliknij dwukrotnie pozycję **Menedżer Internet Information Services (IIS)**.  
   
 6. W kolumnie **połączenia** rozwiń węzeł serwera.  
   
@@ -119,5 +119,5 @@ Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który za�
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji sieci Web: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
-   [uwierzytelniania Microsoft Digest](https://msdn2.microsoft.com/library/Aa378744.aspx)  
+ [Uwierzytelnianie Microsoft Digest](https://msdn2.microsoft.com/library/Aa378744.aspx)   
  [Uruchamianie aplikacji sieci Web w systemie Windows Vista przy użyciu usług IIS 7,0 i programu Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::GetBytes | Dokumenty firmy Microsoft
+title: 'IDebugPointerObject:: GetBytes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 17bc39f65d7c4c42b4f958b559df7c5b7d3bbdf7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725516"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
-Pobiera wartość wskazywał jako serię kolejnych bajtów.
+Pobiera wartość wskazywaną przez serię kolejnych bajtów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,19 +47,19 @@ int GetBytes(
 
 ## <a name="parameters"></a>Parametry
 `dwStart`\
-[w] Przesunięcie w bajtach od początku obiektu wskazywowane.
+podczas Przesunięcie w bajtach od początku obiektu wskazywanego przez.
 
 `dwCount`\
-[w] Liczba bajtów do pobrania.
+podczas Liczba bajtów do pobrania.
 
 `pBytes`\
-[w, na zewnątrz] Tablica, która jest wypełniona wartością jako seria kolejnych bajtów, zaczynając od danego odsunięcia od obiektu wskazywała.
+[in. out] Tablica, która jest wypełniana wartością jako seria kolejnych bajtów, rozpoczynając od danego przesunięcia od obiektu wskazywanego przez.
 
 `pdwBytes`\
-[na zewnątrz] Zwraca liczbę bajtów faktycznie pobranych.
+określoną Zwraca liczbę bajtów pobieranych w rzeczywistości.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
  Ta metoda jest używana, jeśli wskaźnik reprezentowany przez ten [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) wskazuje na typ pierwotny lub prostą tablicę typów pierwotnych (czyli tablicę, która może być reprezentowana przez prostą sekwencję bajtów).

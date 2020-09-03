@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769581"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder — element (szablony projektów Visual Studio)
@@ -50,7 +50,7 @@ Określa folder, który zostanie dodany do projektu.
 
 |Element|Opis|
 |-------------|-----------------|
-|`Folder`|Określa folder, który ma zostać dodany do projektu. `Folder`elementy mogą zawierać `Folder` elementy podrzędne.|
+|`Folder`|Określa folder, który ma zostać dodany do projektu. `Folder` elementy mogą zawierać `Folder` elementy podrzędne.|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Określa plik, który ma zostać dodany do projektu.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
@@ -60,11 +60,11 @@ Określa folder, który zostanie dodany do projektu.
 |[Project](../extensibility/project-element-visual-studio-templates.md)|Opcjonalny element podrzędny elementu [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|
 
 ## <a name="remarks"></a>Uwagi
- `Folder`jest opcjonalnym elementem podrzędnym `Project` .
+ `Folder` jest opcjonalnym elementem podrzędnym `Project` .
 
  Można użyć dowolnej z poniższych metod, aby zorganizować elementy projektu w foldery w szablonie:
 
-- Uwzględnij foldery w pliku template *. zip* i Dodaj je do projektu w pliku *. vstemplate* , określając ścieżkę do pliku w `ProjectItem` elementach, bez `Folder` elementów. Jest to zalecana metoda. Przykład:
+- Uwzględnij foldery w pliku template *. zip* i Dodaj je do projektu w pliku *. vstemplate* , określając ścieżkę do pliku w `ProjectItem` elementach, bez `Folder` elementów. Jest to zalecana metoda. Na przykład:
 
      `...`
 
@@ -74,7 +74,7 @@ Określa folder, który zostanie dodany do projektu.
 
      `...`
 
-- Uwzględnij foldery w pliku template *. zip* i Dodaj je do projektu w pliku *vstemplate* z `Folder` elementami. Przykład:
+- Uwzględnij foldery w pliku template *. zip* i Dodaj je do projektu w pliku *vstemplate* z `Folder` elementami. Na przykład:
 
      `...`
 
@@ -88,7 +88,7 @@ Określa folder, który zostanie dodany do projektu.
 
      `...`
 
-- Nie dołączaj folderów do pliku template *. zip* , ale Dodaj foldery przy użyciu `TargetFileName` atrybutu `ProjectItem` elementu. Przykład:
+- Nie dołączaj folderów do pliku template *. zip* , ale Dodaj foldery przy użyciu `TargetFileName` atrybutu `ProjectItem` elementu. Na przykład:
 
      `...`
 
@@ -127,7 +127,7 @@ Określa folder, który zostanie dodany do projektu.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [ProjectItem, element (szablony elementów Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

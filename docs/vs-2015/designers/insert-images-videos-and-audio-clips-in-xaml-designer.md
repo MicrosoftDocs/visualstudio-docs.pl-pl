@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2f18e8ccf51a5fc6a5d196fa05224dec55a3fd00
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300835"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>Wstawianie obrazów, klipów wideo i klipów audio w projektancie XAML
