@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2dc43e92b92b6f963900057a76dfe88e38a3638f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545226"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Przeciążenia operatorów mają nazwane elementy alternatywne
@@ -44,11 +44,11 @@ ms.locfileid: "85545226"
 |---------|------------------|-----------|--------------------|
 |+ (binarny)|+|+ (binarny)|Dodaj|
 |+=|+=|+=|Dodaj|
-|&|oraz|&|BitwiseAnd|
+|&|And|&|BitwiseAnd|
 |&=|I =|&=|BitwiseAnd|
 |&#124;|Lub|&#124;|Bitowy|
 |&#124;=|Lub =|&#124;=|Bitowy|
-|--|Nie dotyczy|--|Dekrementacji|
+|--|Brak|--|Dekrementacji|
 |/|/|/|Dzielenie|
 |/=|/=|/=|Dzielenie|
 |==|=|==|Równa się|
@@ -56,27 +56,27 @@ ms.locfileid: "85545226"
 |^=|XOR =|^=|Xor|
 |>|>|>|Porównaj|
 |>=|>=|>=|Porównaj|
-|++|Nie dotyczy|++|Przyrost|
+|++|Brak|++|Przyrost|
 |<>|!=|Równa się|
 |<<|<<|<<|LeftShift|
 |<<=|<<=|<<=|LeftShift|
 |<|<|<|Porównaj|
 |<=|<=|\<=|Porównaj|
-|&&|Nie dotyczy|&&|LogicalAnd|
-|&#124;&#124;|Nie dotyczy|&#124;&#124;|Logiczny|
-|!|Nie dotyczy|!|LogicalNot|
+|&&|Brak|&&|LogicalAnd|
+|&#124;&#124;|Brak|&#124;&#124;|Logiczny|
+|!|Brak|!|LogicalNot|
 |%|Mod|%|Mod lub reszta|
-|%=|Nie dotyczy|%=|Mod|
+|%=|Brak|%=|Mod|
 |* (binarny)|*|*|Mnożenie|
-|*=|Nie dotyczy|*=|Mnożenie|
+|*=|Brak|*=|Mnożenie|
 |~|Not|~|OnesComplement|
 |>>|>>|>>|RightShift|
-=|Nie dotyczy|>>=|RightShift|
+=|Brak|>>=|RightShift|
 |-(binarny)|-(binarny)|-(binarny)|Odejmowanie|
-|-=|Nie dotyczy|-=|Odejmowanie|
-|true|IsTrue|Nie dotyczy|IsTrue (Właściwość)|
-|-(jednoargumentowe)|Nie dotyczy|-|Negate|
-|+ (jednoargumentowy)|Nie dotyczy|+|Znak plus|
+|-=|Brak|-=|Odejmowanie|
+|true|IsTrue|Brak|IsTrue (Właściwość)|
+|-(jednoargumentowe)|Brak|-|Negate|
+|+ (jednoargumentowy)|Brak|+|Znak plus|
 |fałsz|IsFalse|Fałsz|IsTrue (Właściwość)|
 
  Nie można obciążyć elementu = = w wybranym języku.
