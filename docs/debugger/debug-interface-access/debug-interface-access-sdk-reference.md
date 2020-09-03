@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7fb49ee4ccd49d848b4d770459352c685469fb7b
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468701"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Odwołanie do zestawu SDK dostępu do interfejsu debugowania
@@ -41,7 +41,7 @@ Opisuje szereg ciągów i ich etykiety, które mogą być używane z interfejsam
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
-[Symbole i znaczniki symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+[Symbole i tagi symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
 
 Opisuje, jakie symbole są i jak są identyfikowane przez typ.
 

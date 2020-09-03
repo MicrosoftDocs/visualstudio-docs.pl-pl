@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: da0ced56e8bf7e61e7fa5251e834a762d4c66650
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468694"
 ---
 # <a name="debug-interface-access-sdk"></a>Zestaw SDK dostępu do interfejsu debugowania
@@ -35,11 +35,11 @@ Zawiera przegląd funkcji DIA SDK i określa, gdzie jest zainstalowana DIA SDK, 
 
 Zawiera instrukcje dotyczące korzystania z interfejsu API DIA w celu wykonywania zapytań dotyczących pliku. pdb.
 
-[Symbole i znaczniki symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+[Symbole i tagi symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
 
 Omawia, w jaki sposób symbole i Tagi symboli są używane w interfejsie API DIA.
 
-[Tematy pomocy](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+[Odwołanie](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
 
 Zawiera interfejsy, metody, wyliczenia i struktury interfejsu API DIA.
 

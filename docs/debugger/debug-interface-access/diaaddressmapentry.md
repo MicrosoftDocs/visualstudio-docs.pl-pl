@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8cae8159c893229f02e9598e932d7bc19efc2f4a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468680"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
@@ -32,9 +32,9 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>Elementy
-`rva`Względny adres wirtualny (RVA) w obrazie A.
+`rva` Względny adres wirtualny (RVA) w obrazie A.
 
-`rvaTo`Względny adres wirtualny `rva` jest mapowany na obraz B.
+`rvaTo` Względny adres wirtualny `rva` jest mapowany na obraz B.
 
 ## <a name="remarks"></a>Uwagi
 Mapa adresów zapewnia tłumaczenie z jednego układu obrazu (A) na inny (B). Tablica `DiaAddressMapEntry` struktur posortowana według `rva` definicji mapowania adresów.
