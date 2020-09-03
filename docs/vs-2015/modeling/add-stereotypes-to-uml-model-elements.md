@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 67d489b1446e7205d72b53e160a8c7ca87f216d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74292333"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Dodawanie stereotypów do elementów modelu UML
@@ -63,15 +63,15 @@ Można dodać stereotyp do elementu modelu UML, aby dodawać do niego adnotacje 
 
     - Na diagramie klasy UML kliknij narzędzie dla elementu, a następnie kliknij wewnątrz pakietu na diagramie.
 
-         \- lub-
+         \- oraz
 
     - W Eksploratorze modelu UML, kliknij prawym przyciskiem myszy pakiet, wskaż polecenie **Dodaj**, a następnie kliknij typ elementu.
 
-         \- lub-
+         \- oraz
 
     - W Eksploratorze modelu UML przeciągnij istniejący element do pakietu.
 
-         \- lub-
+         \- oraz
 
     - Połącz diagram z pakietem, a następnie utwórz elementy na diagramie.
 

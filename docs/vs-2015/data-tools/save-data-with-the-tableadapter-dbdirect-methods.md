@@ -20,16 +20,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce987f5ef90448c41da45a39c62710b968e11199
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655418"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ten Instruktaż zawiera szczegółowe instrukcje dotyczące uruchamiania instrukcji SQL bezpośrednio w bazie danych przy użyciu metod DBDirect klasy TableAdapter. Metody DBDirect TableAdapter zapewniają poziom kontroli nad aktualizacjami bazy danych. Można ich używać do uruchamiania określonych instrukcji SQL i procedur składowanych przez wywołanie poszczególnych `Insert`, `Update` i `Delete` metod, w zależności od potrzeb aplikacji (w przeciwieństwie do przeciążonej metody `Update`, która wykonuje aktualizację, Wstaw i Usuń instrukcje wszystkie w jednym wywołaniu).
+Ten Instruktaż zawiera szczegółowe instrukcje dotyczące uruchamiania instrukcji SQL bezpośrednio w bazie danych przy użyciu metod DBDirect klasy TableAdapter. Metody DBDirect TableAdapter zapewniają poziom kontroli nad aktualizacjami bazy danych. Można ich używać do uruchamiania określonych instrukcji SQL i procedur składowanych przez wywoływanie pojedynczych `Insert` `Update` metod, i, w `Delete` zależności od potrzeb aplikacji (w przeciwieństwie do przeciążonej `Update` metody, która wykonuje instrukcje Update, INSERT i DELETE w jednym wywołaniu).
 
  W tym instruktażu dowiesz się, jak:
 
@@ -62,7 +62,7 @@ Ten Instruktaż zawiera szczegółowe instrukcje dotyczące uruchamiania instruk
      Projekt **TableAdapterDbDirectMethodsWalkthrough** został utworzony i dodany do **Eksplorator rozwiązań**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Tworzenie źródła danych na podstawie bazy danych
- Ten krok powoduje użycie **Kreatora konfiguracji źródła danych** w celu utworzenia źródła danych na podstawie tabeli `Region` w przykładowej bazie danych Northwind. Aby utworzyć połączenie, musisz mieć dostęp do przykładowej bazy danych Northwind.
+ Ten krok powoduje użycie **Kreatora konfiguracji źródła danych** w celu utworzenia źródła danych na podstawie `Region` tabeli w przykładowej bazie danych Northwind. Aby utworzyć połączenie, musisz mieć dostęp do przykładowej bazy danych Northwind.
 
 #### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych
 
@@ -76,7 +76,7 @@ Ten Instruktaż zawiera szczegółowe instrukcje dotyczące uruchamiania instruk
 
     - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
 
-         —lub—
+         -lub-
 
     - Wybierz pozycję **nowe połączenie** , aby uruchomić okno dialogowe **Dodawanie/modyfikowanie połączenia** .
 
@@ -86,9 +86,9 @@ Ten Instruktaż zawiera szczegółowe instrukcje dotyczące uruchamiania instruk
 
 7. Na ekranie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** .
 
-8. Wybierz tabelę `Region` a następnie wybierz pozycję **Zakończ**.
+8. Wybierz `Region` tabelę, a następnie wybierz pozycję **Zakończ**.
 
-     **NorthwindDataSet** jest dodawany do projektu, a tabela `Region` zostanie wyświetlona w oknie **źródła danych** .
+     **NorthwindDataSet** jest dodawany do projektu, a `Region` tabela pojawia się w oknie **źródła danych** .
 
 ## <a name="addcontrols-to-the-form-to-display-the-data"></a>Addcontrols do formularza w celu wyświetlenia danych
  Utwórz formanty powiązane z danymi, przeciągając elementy z okna **źródła danych** na formularz.
@@ -97,7 +97,7 @@ Ten Instruktaż zawiera szczegółowe instrukcje dotyczące uruchamiania instruk
 
 - Przeciągnij węzeł **regionu** głównego z okna **źródła danych** na formularz.
 
-     Kontrolka <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach pojawiają się w formularzu. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), RegionTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+     <xref:System.Windows.Forms.DataGridView>Kontrolka i pasek narzędzi ( <xref:System.Windows.Forms.BindingNavigator> ) na potrzeby nawigowania po rekordach pojawiają się w formularzu. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), RegionTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
 
 #### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Aby dodać przyciski, które będą wywoływały poszczególne metody TableAdapter DBDirect
 
@@ -107,15 +107,15 @@ Ten Instruktaż zawiera szczegółowe instrukcje dotyczące uruchamiania instruk
 
     |Nazwa|Tekst|
     |----------|----------|
-    |`InsertButton`|**Wstawienia**|
-    |`UpdateButton`|**Aktualizacja**|
-    |`DeleteButton`|**Delete**|
+    |`InsertButton`|**Insert**|
+    |`UpdateButton`|**Aktualizowanie**|
+    |`DeleteButton`|**Usuń**|
 
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Aby dodać kod umożliwiający wstawianie nowych rekordów do bazy danych
 
 1. Wybierz pozycję **InsertButton** , aby utworzyć procedurę obsługi zdarzeń dla zdarzenia kliknięcia i otworzyć formularz w edytorze kodu.
 
-2. Zastąp procedurę obsługi zdarzeń `InsertButton_Click` następującym kodem:
+2. Zastąp `InsertButton_Click` procedurę obsługi zdarzeń następującym kodem:
 
      [!code-csharp[VbRaddataSaving#1](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form1.cs#1)]
      [!code-vb[VbRaddataSaving#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form1.vb#1)]
@@ -124,7 +124,7 @@ Ten Instruktaż zawiera szczegółowe instrukcje dotyczące uruchamiania instruk
 
 1. Kliknij dwukrotnie **UpdateButton** , aby utworzyć procedurę obsługi zdarzeń dla zdarzenia kliknięcia i otworzyć formularz w edytorze kodu.
 
-2. Zastąp procedurę obsługi zdarzeń `UpdateButton_Click` następującym kodem:
+2. Zastąp `UpdateButton_Click` procedurę obsługi zdarzeń następującym kodem:
 
      [!code-csharp[VbRaddataSaving#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form1.cs#2)]
      [!code-vb[VbRaddataSaving#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form1.vb#2)]
@@ -133,12 +133,12 @@ Ten Instruktaż zawiera szczegółowe instrukcje dotyczące uruchamiania instruk
 
 1. Wybierz pozycję **DeleteButton** , aby utworzyć procedurę obsługi zdarzeń dla zdarzenia kliknięcia i otworzyć formularz w edytorze kodu.
 
-2. Zastąp procedurę obsługi zdarzeń `DeleteButton_Click` następującym kodem:
+2. Zastąp `DeleteButton_Click` procedurę obsługi zdarzeń następującym kodem:
 
      [!code-csharp[VbRaddataSaving#3](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form1.cs#3)]
      [!code-vb[VbRaddataSaving#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form1.vb#3)]
 
-## <a name="run-the-application"></a>Uruchom aplikację
+## <a name="run-the-application"></a>Uruchamianie aplikacji
 
 #### <a name="to-run-the-application"></a>Aby uruchomić aplikację
 

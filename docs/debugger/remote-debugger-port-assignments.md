@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d99a1aff2c241e81e8914a247d2f6d8981ee273
-ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74239458"
 ---
 # <a name="remote-debugger-port-assignments"></a>Przypisania portów debugera zdalnego
@@ -42,9 +42,9 @@ Innymi słowy, liczba portów przypisanych do zdalnego debugera jest zwiększana
 
  W oknie Debuger zdalny kliknij pozycję **narzędzia > opcje**i ustaw numer portu TCP/IP.
 
- W wierszu polecenia Uruchom zdalny debuger z przełącznikiem **/port** : **msvsmon/port \<numer portu >** .
+ W wierszu polecenia Uruchom zdalny debuger za pomocą opcji **/port** Switch: **msvsmon/port \<port number> **.
 
- Wszystkie przełączniki wiersza polecenia debugera zdalnego można znaleźć w pomocy zdalnego debugowania (naciśnij klawisz **F1** lub kliknij przycisk **Pomoc > Użycie** w oknie Debuger zdalny).
+ Wszystkie przełączniki wiersza polecenia debugera zdalnego można znaleźć w pomocy zdalnego debugowania (naciśnij klawisz **F1** lub kliknij przycisk **Pomoc > użycie** w oknie Debuger zdalny).
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>Port zdalnego debugera w 64-bitowych systemach operacyjnych
 ::: moniker range=">=vs-2019"
@@ -54,22 +54,22 @@ Innymi słowy, liczba portów przypisanych do zdalnego debugera jest zwiększana
  Po uruchomieniu 64-bitowej wersji zdalnego debugera program domyślnie używa portu głównego (4022).  Jeśli debugujesz proces 32-bitowy, wersja 64-bitowa debugera zdalnego uruchamia 32-bitową wersję debugera zdalnego na porcie 4023 (numer portu głównego zwiększany o 1). Jeśli zostanie uruchomiony zdalny debuger 32-bitowy, używa 4022 i 4023 nie jest używany.
 :::moniker-end
 
- Ten port można skonfigurować przy użyciu wiersza polecenia: **msvsmon/wow64port \<numer portu >** .
+ Ten port można skonfigurować przy użyciu wiersza polecenia: **msvsmon/wow64port \<port number> **.
 
 ## <a name="the-discovery-port"></a>Port odnajdowania
  UDP 3702 służy do znajdowania uruchomionych wystąpień zdalnego debugera w sieci (na przykład okno dialogowe **Znajdowanie** w oknie dialogowym **Dołącz do procesu** ). Jest on używany tylko do odnajdywania maszyny z debugerem zdalnym, więc jest to opcjonalne, jeśli istnieje inny sposób znajomości nazwy komputera lub adresu IP komputera docelowego. Jest to standardowy port do odnajdowania, więc nie można skonfigurować numeru portu.
 
- Jeśli nie chcesz włączać odnajdowania, możesz uruchomić msvsmon z wiersza polecenia z wyłączonym odnajdywaniem: **msvsmon/nodiscovery**.
+ Jeśli nie chcesz włączać odnajdowania, możesz uruchomić msvsmon z wiersza polecenia z wyłączonym odnajdywaniem:  **msvsmon/nodiscovery**.
 
 ## <a name="remote-debugger-ports-on-azure"></a>Porty zdalnego debugera na platformie Azure
  Zdalny debuger na platformie Azure używa następujących portów. Porty w usłudze w chmurze są mapowane na porty na poszczególnych maszynach wirtualnych. Wszystkie porty są TCP.
 
 |Połączenie|Port w usłudze w chmurze|Port na maszynie wirtualnej|
 |-|-|-|
-|Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector|30400|30398|
-|Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|
-|Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarderx86|31401|31399|
-|Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|
+|Microsoft. WindowsAzure. plugins. RemoteDebugger. Connector|30400|30398|
+|Microsoft. WindowsAzure. plugins. RemoteDebugger. Forwarder|31400|31398|
+|Microsoft. WindowsAzure. plugins. RemoteDebugger. Forwarderx86|31401|31399|
+|Microsoft. WindowsAzure. plugins. RemoteDebugger. FileUpload|32400|32398|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

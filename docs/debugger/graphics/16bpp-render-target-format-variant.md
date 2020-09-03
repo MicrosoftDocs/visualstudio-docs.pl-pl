@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a63261a4ef8a6304bec8c2bdde1d9ec9113405e
-ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74188590"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>Wariant formatu docelowego renderowania BPP
@@ -36,8 +36,8 @@ Inne strategie zmniejszania przepustowości pamięci obejmują:
 
 Jak zwykle należy wziąć pod uwagę jakość obrazu, która jest dostarczana z dowolnymi z tych optymalizacji.
 
-Aplikacje, które są częścią łańcucha wymiany mają format buforu zapasowego (DXGI_FORMAT_B5G6R5_UNORM), który nie obsługuje 16 BPP. Te łańcuchy wymiany są tworzone przy użyciu `D3D11CreateDeviceAndSwapChain` lub `IDXGIFactory::CreateSwapChain`. Aby obejść to ograniczenie, wykonaj następujące czynności:
-1. Utwórz obiekt docelowy renderowania w formacie B5G6R5_UNORM za pomocą funkcji `CreateTexture2D` i Renderuj do tego obiektu docelowego.
+Aplikacje, które są częścią łańcucha wymiany mają format buforu zapasowego (DXGI_FORMAT_B5G6R5_UNORM), który nie obsługuje 16 BPP. Te łańcuchy wymiany są tworzone przy użyciu `D3D11CreateDeviceAndSwapChain` lub `IDXGIFactory::CreateSwapChain` . Aby obejść to ograniczenie, wykonaj następujące czynności:
+1. Utwórz obiekt docelowy renderowania w formacie B5G6R5_UNORM za pomocą `CreateTexture2D` i Renderuj do tego obiektu docelowego.
 2. Skopiuj obiekt docelowy renderowania do buforu wielowymiarowego łańcucha wymiany, rysując pełny ekran cztery z obiektem docelowym renderowania jako teksturą źródłową.
 3. Wywołanie obecne w łańcuchu wymiany.
 
@@ -46,7 +46,7 @@ Aplikacje, które są częścią łańcucha wymiany mają format buforu zapasowe
    Architektury procesora GPU korzystające ze stosujących się technik renderowania mogą uzyskać znaczący wpływ na wydajność przy użyciu 16 BPP formatu bufora klatek. To ulepszenie wynika z faktu, że większa część buforu ramki może pasować do lokalnej pamięci podręcznej buforu ramki każdego kafelka. Wbudowane architektury renderowania są czasami dostępne w procesorach GPU na urządzeniach przenośnych i komputerach typu Tablet. rzadko są one wyświetlane poza tym Niszem.
 
 ## <a name="remarks"></a>Uwagi
- Format elementu docelowego renderowania jest resetowany do DXGI_FORMAT_B5G6R5_UNORM na każdym wywołaniu `ID3D11Device::CreateTexture2D`, który tworzy obiekt docelowy renderowania. W odróżnieniu od tego, jaki format jest zastępowany, gdy obiekt D3D11_TEXTURE2D_DESC przeszedł w pDesc, opisuje element docelowy renderowania; Czyli:
+ Format elementu docelowego renderowania jest resetowany do DXGI_FORMAT_B5G6R5_UNORM przy każdym wywołaniu do `ID3D11Device::CreateTexture2D` , który tworzy obiekt docelowy renderowania. W odróżnieniu od tego, jaki format jest zastępowany, gdy obiekt D3D11_TEXTURE2D_DESC przeszedł w pDesc, opisuje element docelowy renderowania; Czyli:
 
 - Element członkowski BindFlags ma ustawioną flagę D3D11_BIND_REDNER_TARGET.
 
@@ -58,7 +58,7 @@ Aplikacje, które są częścią łańcucha wymiany mają format buforu zapasowe
  Ponieważ format B5G6R5 nie zawiera kanału alfa, zawartość alfa nie jest zachowywana przez ten wariant. Jeśli renderowanie aplikacji wymaga kanału alfa w obiekcie docelowym renderowania, nie można po prostu przełączyć się do formatu B5G6R5.
 
 ## <a name="example"></a>Przykład
- Wariant **formatu docelowego renderowania 16 BPP** można odtworzyć dla elementów docelowych renderowania utworzonych przy użyciu `CreateTexture2D` przy użyciu kodu w następujący sposób:
+ Wariant **formatu docelowego renderowania 16 BPP** można odtworzyć dla elementów docelowych renderowania utworzonych za pomocą przy użyciu `CreateTexture2D` kodu w następujący sposób:
 
 ```cpp
 D3D11_TEXTURE2D_DESC target_description;

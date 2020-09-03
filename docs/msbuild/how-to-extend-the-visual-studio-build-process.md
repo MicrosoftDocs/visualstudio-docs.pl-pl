@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac3bebc0a64f814e71e7b5ab30282a70fd7eb85e
-ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88041041"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Instrukcje: zwiększanie procesu kompilacji programu Visual Studio
@@ -61,7 +61,7 @@ W poniższej tabeli przedstawiono wszystkie elementy docelowe, które można bez
 |Nazwa elementu docelowego|Opis|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Zadania, które są wstawiane w jednym z tych obiektów docelowych, są wykonywane przed lub po kompilacji podstawowej. Większość dostosowań odbywa się w jednym z tych dwóch celów.|
-|`BeforeBuild`, `AfterBuild`|Zadania, które są wstawiane w jednym z tych elementów docelowych, zostaną uruchomione przed lub po wszystkich innych w kompilacji. **Uwaga:**  `BeforeBuild`Elementy i `AfterBuild` są już zdefiniowane w komentarzach na końcu większości plików projektu, co pozwala łatwo dodawać zdarzenia przed i po kompilacji do pliku projektu.|
+|`BeforeBuild`, `AfterBuild`|Zadania, które są wstawiane w jednym z tych elementów docelowych, zostaną uruchomione przed lub po wszystkich innych w kompilacji. **Uwaga:**  `BeforeBuild` Elementy i `AfterBuild` są już zdefiniowane w komentarzach na końcu większości plików projektu, co pozwala łatwo dodawać zdarzenia przed i po kompilacji do pliku projektu.|
 |`BeforeRebuild`, `AfterRebuild`|Zadania, które są wstawiane w jednym z tych celów, są uruchamiane przed wywołaniem podstawowej funkcji odbudowywania lub po niej. Kolejność wykonywania obiektów docelowych w elemencie *Microsoft. Common. targets* to: `BeforeRebuild` , `Clean` , `Build` , i `AfterRebuild` .|
 |`BeforeClean`, `AfterClean`|Zadania, które są wstawiane w jednym z tych celów, są uruchamiane przed wywołaniem lub po wywołaniu podstawowych funkcji czystych.|
 |`BeforePublish`, `AfterPublish`|Zadania, które są wstawiane w jednym z tych celów, są uruchamiane przed wywołaniem podstawowej funkcji publikowania lub po niej.|
@@ -222,7 +222,7 @@ W tym przykładzie jest to projekt w stylu zestawu SDK. Jak wspomniano w uwagi n
 
 Kolejność elementów jest ważna. `BuildDependsOn`Elementy i `CleanDependsOn` muszą występować po zaimportowaniu standardowego pliku obiektów docelowych zestawu SDK.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [integracja z programem Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)

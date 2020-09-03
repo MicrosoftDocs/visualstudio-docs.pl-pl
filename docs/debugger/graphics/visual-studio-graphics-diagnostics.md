@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e69d88bb5764836d82232cec26606009eaf694d7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73187735"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostyka grafiki w programie Visual Studio
 Visual Studio*Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następnie analizowania problemów z renderowaniem i wydajnością w aplikacjach Direct3D. Diagnostyka grafiki można używać w aplikacjach, które są uruchamiane lokalnie na komputerze z systemem Windows, w emulatorze urządzenia z systemem Windows lub na komputerze zdalnym lub urządzeniu.
 
- Przepływ pracy Diagnostyka grafiki rozpoczyna się od przechwytywania rekordu, w jaki sposób aplikacja korzysta z Direct3D — na żywo, tak jak jest uruchomiona, tak aby jej zachowanie można było przeanalizować natychmiast, udostępnić lub zapisać w przyszłości. Sesje przechwytywania można inicjować i kontrolować ręcznie z poziomu programu Visual Studio lub za pomocą narzędzia do przechwytywania wiersza polecenia **DXCap. exe**. Sesje przechwytywania można także inicjować i kontrolować programowo przy użyciu interfejsów API przechwytywania Diagnostyka grafiki.
+ Przepływ pracy Diagnostyka grafiki rozpoczyna się od przechwytywania rekordu, w jaki sposób aplikacja korzysta z Direct3D — na żywo, tak jak jest uruchomiona, tak aby jej zachowanie można było przeanalizować natychmiast, udostępnić lub zapisać w przyszłości. Sesje przechwytywania można inicjować i kontrolować ręcznie z poziomu programu Visual Studio lub za pomocą narzędzia do przechwytywania wiersza polecenia **dxcap.exe**. Sesje przechwytywania można także inicjować i kontrolować programowo przy użyciu interfejsów API przechwytywania Diagnostyka grafiki.
 
  Po zarejestrowaniu sesji przechwytywania jej zawartość może zostać odtworzona przez *Analizator grafiki* programu Visual Studio w dowolnym momencie, a następnie ponownie utworzona przechwycone ramki przy użyciu dokładnie tych samych zasobów i poleceń renderowania używanych przez aplikację. Następnie przy użyciu narzędzi dostępnych w oknie Analizator grafiki można analizować wszystkie przechwycone ramki. Te narzędzia mogą służyć do badania dowolnego wywołania interfejsu API Direct3D, zasobu, obiektu stanu potoku, etapu potoku, a nawet pełnej historii dowolnego piksela w przechwyconej ramce. Korzystając z tych narzędzi w ramach uzgodnienia, problem z renderowaniem można zbadać intuicyjnie, rozpoczynając od sposobu jego wyświetlania w przechwyconej ramce i przechodzenia do jego głównej przyczyny w kodzie źródłowym aplikacji, cieniach lub zasobach graficznych.
 
@@ -52,7 +52,7 @@ Visual Studio*Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następn
 
  [Stos wywołań zdarzeń](graphics-event-call-stack.md) **Stos wywołań zdarzeń grafiki** służy do badania stosu wywołań aktualnie wybranego zdarzenia, dzięki czemu można przejść do kodu aplikacji, który jest powiązany z problemem renderowania.
 
- [Historia pikseli](graphics-pixel-history.md) Za pomocą okna **Historia pikseli grafiki** , aby przeanalizować sposób, w jaki ma wpływ na bieżące wybrane piksele zdarzeń, które na to wpłynęło, można zidentyfikować zdarzenie lub kombinację zdarzeń, które powodują pewne rodzaje problemów z renderowaniem. Historia pikseli jest szczególnie przydatna, gdy obiekt jest renderowany nieprawidłowo, ponieważ dane wyjściowe programu do cieniowania pikseli są nieprawidłowe lub zostały nieprawidłowo połączone z buforem ramek albo gdy obiekt nie jest nawet wyświetlany, ponieważ jego piksele zostały odrzucone. przed osiągnięciem buforu ramek.
+ [Historia pikseli](graphics-pixel-history.md) Za pomocą okna **Historia pikseli grafiki** , aby przeanalizować sposób, w jaki ma wpływ na bieżące wybrane piksele zdarzeń, które na to wpłynęło, można zidentyfikować zdarzenie lub kombinację zdarzeń, które powodują pewne rodzaje problemów z renderowaniem. Historia pikseli jest szczególnie przydatna, gdy obiekt jest renderowany nieprawidłowo, ponieważ dane wyjściowe programu do cieniowania pikseli są nieprawidłowe lub nieprawidłowo połączone z buforem ramek albo gdy obiekt nie jest nawet wyświetlany, ponieważ jego piksele zostały odrzucone przed osiągnięciem buforu ramek.
 
  [Tabela obiektów](graphics-object-table.md) Za pomocą **tabeli obiektów graficznych** można przeanalizować właściwości i zawartość określonych obiektów i zasobów Direct3D, które obowiązują dla aktualnie wybranego zdarzenia. Tabela obiektów może pomóc określić kontekst urządzenia graficznego, który jest aktywny podczas zdarzenia, i sprawdzić zawartość zasobów graficznych, takich jak stałe bufory, bufory wierzchołków i tekstury.
 
@@ -66,5 +66,5 @@ Visual Studio*Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następn
 
 | Tytuł | Opis |
 | - | - |
-| [Przewodnik po funkcjach debugera](../debugger-feature-tour.md) | Wprowadza funkcje debugowania w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
+| [Przewodnik po funkcjach debugera](../debugger-feature-tour.md) | Wprowadza funkcje debugowania w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . |
 | [Grafika i gry DirectX](/windows/win32/directx) | Zawiera artykuły, które omawiają technologie grafiki DirectX. |

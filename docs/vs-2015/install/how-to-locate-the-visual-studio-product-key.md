@@ -13,16 +13,16 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 11e739fc1b0516c2b6e34421ecee7a329830de14
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73983799"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>Porady: lokalizacja klucza produktu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz chcieć znaleźć klucz produktu dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podczas pracy z obsługą klienta, uaktualniania z wersji próbnej lub aktualizacji własnych rekordów.
+Możesz chcieć znaleźć klucz produktu dla programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podczas pracy z obsługą klienta, uaktualniania z wersji próbnej lub aktualizacji własnych rekordów.
 
 ### <a name="to-find-the-product-key-for-visual-studio"></a>Aby znaleźć klucz produktu dla programu Visual Studio
 

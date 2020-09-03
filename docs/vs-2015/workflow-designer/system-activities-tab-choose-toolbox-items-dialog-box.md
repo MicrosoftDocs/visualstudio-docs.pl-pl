@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 95b2aa636b63523e06e3c931381e4506a0a03bac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655167"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities, karta, Wybieranie elementów przybornika, okno dialogowe
-Na tej karcie okna dialogowego **Wybieranie elementów przybornika** zostanie wyświetlona lista działań [!INCLUDE[wf](../includes/wf-md.md)], szablonów i elementów, które są dostępne dla użytkownika. Aby wyświetlić tę listę, wybierz opcję **Wybierz elementy przybornika** z menu **Narzędzia** lub klikając prawym przyciskiem myszy **Przybornik** i wybierając **pozycję Wybierz elementy** , aby wyświetlić okno dialogowe **Wybierz elementy przybornika** , a następnie wybrać jego  **Karta System. Activities** . poza ramką lista zawiera działania przepływów pracy z zestawów System. Activities, system. ServiceModel. Activities i system. Activities. Core. Presentation. Jednak są domyślnie zaznaczone tylko działania dostarczone przez system oraz działania dodane za pomocą innych zestawów wyświetlanych w **przyborniku** . Ostatnio dodane działania są automatycznie sprawdzane i pojawiają się w **przyborniku** po kliknięciu przycisku **OK** w oknie dialogowym. Te elementy są również wyświetlane w **przyborniku** pod nową kategorią, która odnosi się do przestrzeni nazw, w której znajduje się działanie/element/szablon.
+Na tej karcie okna dialogowego **Wybieranie elementów przybornika** zostanie wyświetlona lista [!INCLUDE[wf](../includes/wf-md.md)] działań, szablonów i elementów dostępnych dla użytkownika. Aby wyświetlić tę listę, zaznacz opcję **Wybierz elementy przybornika** z menu **Narzędzia** lub klikając prawym przyciskiem myszy **Przybornik** i wybierając **pozycję Wybierz elementy** , aby wyświetlić okno dialogowe **Wybierz elementy przybornika** , a następnie wybrać jego kartę **System. działania** . Z pola Lista zawiera działania przepływów pracy z zestawów System. Activities, system. ServiceModel. Activities i system. Activities. Core. Presentation. Jednak są domyślnie zaznaczone tylko działania dostarczone przez system oraz działania dodane za pomocą innych zestawów wyświetlanych w **przyborniku** . Ostatnio dodane działania są automatycznie sprawdzane i pojawiają się w **przyborniku** po kliknięciu przycisku **OK** w oknie dialogowym. Te elementy są również wyświetlane w **przyborniku** pod nową kategorią, która odnosi się do przestrzeni nazw, w której znajduje się działanie/element/szablon.
 
 > [!WARNING]
 > Jeśli spróbujesz dodać zestaw, który nie zawiera żadnych działań przepływu pracy, zostanie wyświetlone okno dialogowe błędu z wyjaśnieniem, że zestaw nie zawiera żadnych działań.
@@ -29,7 +29,7 @@ Na tej karcie okna dialogowego **Wybieranie elementów przybornika** zostanie wy
 
  Filtrowanie odbywa się na każdej karcie. Oznacza to, że nie jest możliwe dodawanie działań przepływu pracy za pomocą karty **składnik platformy .NET** . Muszą one być dodawane za pomocą samej karty **System. Activities** .
 
- Możesz usunąć zaznaczenie wszystkich elementów, które nie mają być wyświetlane w **przyborniku** z tej karty okna dialogowego, lub alternatywnie, możesz użyć opcji menu **Usuń** kontekst w **przyborniku** , a cofnięcie odwołania do zestawu nie powoduje usunięcia elementu z  **Przybornik**.
+ Możesz usunąć zaznaczenie wszystkich elementów, które nie mają być wyświetlane w **przyborniku** z tej karty okna dialogowego, lub alternatywnie, możesz użyć opcji menu **Usuń** kontekst w **przyborniku** , a cofnięcie odwołania do zestawu nie powoduje usunięcia elementu z **przybornika**.
 
  Tworzenie wystąpienia działania przez przeciąganie i upuszczanie go w projektancie dodaje zestaw, który zawiera element do listy przywoływanych zestawów. Ponadto, jeśli działanie odwołuje się do zestawu C, nie dodaje C do listy zestawów, do których się odwołuje. Zestaw C musi znajdować się w pamięci podręcznej GAC lub w tym samym katalogu, w którym działa B. W przypadku autonomicznego zestaw musi znajdować się w pamięci podręcznej lub w ścieżkach sondy programu VS. Tylko wtedy można przeciągnąć i upuścić działanie na powierzchni projektanta przepływu pracy.
 

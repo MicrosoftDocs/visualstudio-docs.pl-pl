@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1a7727f93e3f4fe279bb9cc009e61a3fdd70a15
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73714451"
 ---
 # <a name="debugging-web-applications"></a>Debugowanie aplikacji internetowych
@@ -26,7 +26,7 @@ Ten artykuł zawiera linki ułatwiające debugowanie różnych typów aplikacji 
 
 - Debugowanie aplikacji ASP.NET
 
-  Aby uzyskać instrukcje wymagane do włączenia debugowania aplikacji [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], zobacz [debugowanie aplikacji ASP.NET](how-to-enable-debugging-for-aspnet-applications.md).
+  Aby zapoznać się z czynnościami, które są wymagane do włączenia debugowania [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji, zobacz [debugowanie aplikacji ASP.NET](how-to-enable-debugging-for-aspnet-applications.md).
 
 - Debugowanie skryptu po stronie klienta w ASP.NET
 
@@ -44,8 +44,8 @@ Ten artykuł zawiera linki ułatwiające debugowanie różnych typów aplikacji 
 
   Aplikacje sieci Web obsługujące technologię AJAX wykorzystują duże wykorzystanie kodu skryptu i stanowią specjalne wyzwania dotyczące debugowania. Aby uzyskać informacje na temat technik debugowania AJAX, zobacz [debugowanie i śledzenie aplikacji Ajax — Omówienie](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
-- [Debugowanie w programie Visual Studio](../debugger/index.yml)
+- [Debugowanie w Visual Studio](../debugger/index.yml)

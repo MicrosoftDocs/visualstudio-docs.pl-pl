@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 80a7de83f118b38d9a3c71f1c7e7febf48e0f5bc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520513"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Błąd: Usługa zdalnego debugera Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem
@@ -33,9 +33,9 @@ Ten błąd oznacza, że usługa zdalny debuger programu Visual Studio jest uruch
 |Scenariusz|Konto LocalSystem|Konto domeny|Konta lokalne, które mają taką samą nazwę użytkownika i hasło na obu komputerach|  
 |-|-|-|-|-|  
 |Oba komputery w tej samej domenie|Tak|Tak|Tak|  
-|Oba komputery w domenach z zaufaniem dwukierunkowym|Nie|Nie|Yes|  
-|Jeden lub oba komputery w grupie roboczej|Nie|Nie|Yes|  
-|Komputery w różnych domenach|Nie|Nie|Yes|  
+|Oba komputery w domenach z zaufaniem dwukierunkowym|Nie|Nie|Tak|  
+|Jeden lub oba komputery w grupie roboczej|Nie|Nie|Tak|  
+|Komputery w różnych domenach|Nie|Nie|Tak|  
   
  Ponadto:  
   

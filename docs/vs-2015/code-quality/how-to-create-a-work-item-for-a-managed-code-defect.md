@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8a3e9277ca29a20d817b04bf06cde120c0f073d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655134"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Porady: tworzenie elementu roboczego dla defektu kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Za pomocą funkcji śledzenia elementów roboczych można rejestrować elementy robocze z poziomu [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Aby użyć tej funkcji, projekt musi być częścią projektu zespołowego w [!INCLUDE[esprfound](../includes/esprfound-md.md)].
+Za pomocą funkcji śledzenia elementów roboczych można rejestrować elementy robocze z poziomu programu [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] . Aby użyć tej funkcji, projekt musi być częścią projektu zespołowego w [!INCLUDE[esprfound](../includes/esprfound-md.md)] .
 
 ### <a name="to-create-a-work-item-for-managed-code-defect"></a>Aby utworzyć element roboczy dla defektu kodu zarządzanego
 

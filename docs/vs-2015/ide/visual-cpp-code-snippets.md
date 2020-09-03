@@ -1,5 +1,5 @@
 ---
-title: Fragmenty C++ kodu wizualizacji | Microsoft Docs
+title: Visual C++ fragmenty kodu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,21 +10,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 213f4299ac71c08118563a008abe065f2c02423e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655390"
 ---
 # <a name="visual-c-code-snippets"></a>Wstawki kodu Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio można użyć fragmentów kodu, aby dodać powszechnie używany kod do plików C++ kodu. Ogólnie rzecz biorąc, można użyć fragmentów kodu w taki sam sposób jak w C#, ale zestaw domyślnych fragmentów kodu jest inny.
+W programie Visual Studio można użyć fragmentów kodu, aby dodać powszechnie używany kod do plików kodu C++. Ogólnie rzecz biorąc, można użyć fragmentów kodu w taki sam sposób jak w języku C#, ale zestaw domyślnych fragmentów kodu jest inny.
 
  Można dodać fragment kodu w określonej lokalizacji w kodzie (wstawianie) lub otoczyć fragmentem wybranego kodu kodem.
 
 ## <a name="inserting-a-code-snippet"></a>Wstawianie fragmentu kodu
- Aby wstawić fragment kodu, Otwórz plik C++ kodu (. cpp lub. h), kliknij w dowolnym miejscu w pliku i wykonaj jedną z następujących czynności:
+ Aby wstawić fragment kodu, Otwórz plik kodu C++ (. cpp lub. h), kliknij w dowolnym miejscu w pliku i wykonaj jedną z następujących czynności:
 
 - Kliknij prawym przyciskiem myszy, aby uzyskać menu kontekstowe, a następnie wybierz **Wstaw fragment kodu**
 
@@ -51,7 +51,7 @@ W programie Visual Studio można użyć fragmentów kodu, aby dodać powszechnie
 
 3. Użyj klawiszy skrótu: **Ctrl + K + S**
 
-   Wybierz **#if**. Powinieneś wyglądać następująco:
+   Wybierz **#if**. Powinny zostać wyświetlone informacje podobne do następujących:
 
 ```cpp
 #if 0
@@ -61,8 +61,8 @@ W programie Visual Studio można użyć fragmentów kodu, aby dodać powszechnie
 
  Następnie można zastąpić 0 prawidłowym warunkiem.
 
-## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>Gdzie mogę znaleźć kompletną listę fragmentów C++ kodu?
- Pełną C++ listę fragmentów kodu można znaleźć, przechodząc do **Menedżera fragmentów kodu** (w menu **Narzędzia** ) i ustawiając **Język** na **C++wizualizację**. W oknie poniżej rozwiń pozycję **Wizualizacja C++** . Nazwy wszystkich fragmentów C++ kodu powinny być widoczne w kolejności alfabetycznej.
+## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>Gdzie mogę znaleźć kompletną listę fragmentów kodu języka C++?
+ Pełną listę fragmentów kodu języka C++ można znaleźć, przechodząc do **Menedżera fragmentów kodu** (w menu **Narzędzia** ) i ustawiając **Język** na **Visual C++**. W oknie poniżej rozwiń węzeł **Visual C++**. Nazwy wszystkich fragmentów kodu języka C++ powinny być widoczne w kolejności alfabetycznej.
 
  Nazwy większości fragmentów kodu są oczywiste, ale niektóre nazwy mogą być mylące.
 
@@ -111,7 +111,7 @@ private:
 ## <a name="for-vs-foreach-vs-forr-vs-rfor"></a>Dla programu vs. foreach a dla vs rfor
  Istnieją cztery różne fragmenty kodu, które udostępniają różne rodzaje pętli for.
 
- Fragment kodu zawiera pętlę **`for`, w** której warunek jest oparty na długości (w `size_t`) obiektu:
+ Fragment **kodu** zawiera `for` pętlę, w której warunek jest oparty na długości (w `size_t` ) obiektu:
 
 ```cpp
 for (size_t i = 0; i < length; i++)
@@ -120,7 +120,7 @@ for (size_t i = 0; i < length; i++)
 }
 ```
 
- Fragment kodu **foreach** zawiera pętlę `for each`, która iteruje elementy członkowskie kolekcji:
+ Fragment kodu **foreach** zawiera `for each` pętlę, która iteruje elementy członkowskie kolekcji:
 
 ```cpp
 for each (object var in collection_to_loop)
@@ -129,7 +129,7 @@ for each (object var in collection_to_loop)
 }
 ```
 
- Fragment kodu **dla** zawiera pętlę odwrotną `for`, w której warunek jest oparty na długości (w liczbie całkowitej) obiektu:
+ Fragment kodu **dla** zawiera pętlę odwrotną, `for` w której warunek jest oparty na długości (w liczbie całkowitej) obiektu:
 
 ```cpp
 for (int i = length - 1; i >= 0; i--)
