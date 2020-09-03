@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 24e9d76e959c0c05abe3ac48f5c4d43afecec47a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532733"
 ---
 # <a name="function-details-view"></a>Widok szczegółów funkcji
@@ -87,14 +87,14 @@ W oknie **Widok szczegółów funkcji** są wyświetlane następujące informacj
 ### <a name="sampling"></a>Próbkowanie  
  W poniższej tabeli objaśniono wartości z listy metryk wydajności dla danych profilowania zbieranych przy użyciu metody próbkowania.  
   
-|Metric|Opis|
+|Metryka|Opis|
 |-|-|  
 |**Próbki włączne (zebrane próbki)**|— Dla funkcji wywołującej liczba próbek zebranych, gdy wybrana funkcja została wywołana przez tę funkcję wywołującą.<br />-Dla treści funkcji, liczba próbek zebranych, gdy wybrana funkcja wykonywała własny kod.<br />-Dla wywoływanej funkcji, liczba próbek zebranych podczas wykonywania wywołanej funkcji z powodu wywołania z wybranej funkcji.|  
   
 ### <a name="instrumentation"></a>Oprzyrządowanie  
  W poniższej tabeli objaśniono wartości z listy metryk wydajności dla danych profilowania zebranych za pomocą metody instrumentacji.  
   
-|Metric|Opis|  
+|Metryka|Opis|  
 |-|-|  
 |**Czas włączny, który upłynął (czas, który upłynął)**|Czas, który upłynął, obejmuje czas spędzony w wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia.<br /><br /> — Dla **funkcji wywołującej**, ilość czasu, który zajęło wykonywanie wystąpień wybranej funkcji, które zostały wywołane przez funkcję. Zostanie uwzględniony czas spędzony na funkcjach wywoływanych przez wybraną funkcję.<br />— Dla **treści funkcji**— łączną ilość czasu spędzonego na wykonywaniu kodu wybranej funkcji. Czas spędzony na wywołanych funkcjach nie jest uwzględniony.<br />-Dla wywoływanej funkcji, ilość czasu poświęcanego na wykonywanie wystąpień funkcji, które zostały wywołane przez wybraną funkcję. Łącznie obejmuje czas spędzony w funkcjach wywołanych przez funkcję. Zostanie uwzględniony czas spędzony na funkcjach wywoływanych przez wybraną funkcję.|  
 |**Czas włączny aplikacji (czas aplikacji)**|Czas aplikacji nie obejmuje czasu spędzonego w wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia.<br /><br /> — Dla **funkcji wywołującej**, ilość czasu aplikacji, która zajęła wykonywanie wystąpień wybranej funkcji, które zostały wywołane przez funkcję. Zostanie uwzględniony czas spędzony na funkcjach wywoływanych przez wybraną funkcję.<br />-Dla **treści funkcji**, łączną ilość czasu aplikacji poświęcanego na wykonanie kodu wybranej funkcji. Czas spędzony na wywołanych funkcjach nie jest uwzględniony.<br />-Dla wywoływanej funkcji, czas aplikacji poświęcany na wykonywanie wystąpień funkcji, które zostały wywołane przez wybraną funkcję. Łącznie obejmuje czas spędzony w funkcjach wywołanych przez funkcję.|  
@@ -102,7 +102,7 @@ W oknie **Widok szczegółów funkcji** są wyświetlane następujące informacj
 ### <a name="net-memory"></a>Pamięć platformy .NET  
  W poniższej tabeli objaśniono wartości z listy metryk wydajności dla danych profilowania zbieranych przy użyciu metody profilowania pamięci platformy .NET.  
   
-|Metric|Opis|  
+|Metryka|Opis|  
 |-|-|  
 |**Przydziały włączne (przydziały)**|— Dla **funkcji wywołującej**liczba obiektów przydzielonej przez wystąpienia wybranej funkcji, która została wywołana przez funkcję. Liczba zawiera obiekty, które zostały przydzielone przez funkcje wywoływane przez wybraną funkcję.<br />— Dla **treści funkcji**, liczby obiektów, które zostały przydzielone przez wybraną funkcję, gdy wykonywał własny kod. Obiekty przydzielone w funkcjach wywoływanych przez wybraną funkcję nie są uwzględniane.<br />-Dla wywoływanej funkcji, liczba obiektów przydzielono przez wystąpienia funkcji, które zostały wywołane przez wybraną funkcję. Liczba zawiera obiekty, które zostały przydzielone przez funkcje wywoływane przez funkcję.|  
 |**Bajty włącznie (w bajtach)**|— Dla **funkcji wywołującej**liczba bajtów, które zostały przydzielone przez wystąpienia wybranej funkcji, wywołane przez funkcję. Liczba zawiera bajty, które zostały przydzielone przez funkcje wywoływane przez wybraną funkcję.<br />— Dla **treści funkcji**— całkowita liczba bajtów, które zostały przydzielone przez wybraną funkcję podczas wykonywania własnego kodu. Bajty przydzielone w funkcjach wywoływanych przez wybraną funkcję nie są uwzględniane.<br />-Dla wywoływanej funkcji, liczba bajtów, które zostały przydzielone przez wystąpienia funkcji, które zostały wywołane przez wybraną funkcję. Liczba zawiera bajty, które zostały przydzielone przez funkcje wywoływane przez funkcję.|  
@@ -110,7 +110,7 @@ W oknie **Widok szczegółów funkcji** są wyświetlane następujące informacj
 ### <a name="concurrency"></a>Współbieżność  
  W poniższej tabeli objaśniono wartości z listy metryk wydajności dla danych profilowania zbieranych przy użyciu metody współbieżności.  
   
-|Metric|Opis|  
+|Metryka|Opis|  
 |-|-|  
 |**Rywalizacje włączne (rywalizacje)**|-Dla **funkcji wywołującej**liczba zdarzeń rywalizacji o zasoby, które wystąpiły w wystąpieniach wybranej funkcji wywołanej przez funkcję. Liczba zawiera zdarzenia rywalizacji w funkcjach wywoływanych przez wybraną funkcję.<br />— Dla **treści funkcji**— całkowita liczba zdarzeń rywalizacji, które wystąpiły podczas wykonywania przez funkcję własnego kodu. Rywalizacje występujące w funkcjach, które zostały wywołane przez wybraną funkcję, nie są uwzględniane.<br />-Dla wywoływanej funkcji, liczba zdarzeń rywalizacji, które wystąpiły w wystąpieniach funkcji, które zostały wywołane przez wybraną funkcję. Liczba zawiera zdarzenia rywalizacji, które wystąpiły w funkcjach wywołanych przez funkcję.|  
 |**Włączny czas blokowania (czas blokowania)**|— Dla funkcji wywołującej czas spędzony w zdarzeniach rywalizacji o zasoby dla wystąpień wybranej funkcji, która została wywołana. Czas obejmuje czas blokowania w funkcjach, które zostały wywołane przez wybraną funkcję.<br />-Dla **treści funkcji**, łączny czas spędzony w zdarzeniach rywalizacji, które wystąpiły podczas wykonywania własnego kodu przez funkcję. Rywalizacje występujące w funkcjach wywoływanych przez wybraną funkcję nie są uwzględniane.<br />-Dla wywoływanej funkcji, czas spędzony w zdarzeniach rywalizacji o zasoby dla wystąpień funkcji, która została wywołana przez wybraną funkcję. Czas obejmuje czas blokowania, który wystąpił w funkcjach wywołanych przez funkcję.|

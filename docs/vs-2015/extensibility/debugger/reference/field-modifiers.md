@@ -1,5 +1,5 @@
 ---
-title: FIELD_MODIFIERS | Dokumentacja firmy Microsoft
+title: FIELD_MODIFIERS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,13 +13,13 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd25a3cb5b2d074e989b47f33513e05538868759
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203047"
 ---
-# <a name="fieldmodifiers"></a>FIELD_MODIFIERS
+# <a name="field_modifiers"></a>FIELD_MODIFIERS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Określa Modyfikatory dla typu pola.  
@@ -105,19 +105,19 @@ public enum enum_FIELD_MODIFIERS {
   
 ## <a name="members"></a>Elementy członkowskie  
  FIELD_MOD_ACCESS_TYPE  
- Wskazuje, że pole nie jest dostępny.  
+ Wskazuje, że nie można uzyskać dostępu do pola.  
   
  FIELD_MOD_ACCESS_PUBLIC  
  Wskazuje, że pole ma dostęp publiczny.  
   
  FIELD_MOD_ACCESS_PROTECTED  
- Wskazuje, czy pole zabezpieczył dostępu.  
+ Wskazuje, że pole ma chroniony dostęp.  
   
  FIELD_MOD_ACCESS_PRIVATE  
- Wskazuje, czy pole ma dostęp do prywatnych.  
+ Wskazuje, że pole ma dostęp prywatny.  
   
  FIELD_MOD_NOMODIFIERS  
- Wskazuje, że pole ma brak modyfikatorów.  
+ Wskazuje, że pole nie ma modyfikatorów.  
   
  FIELD_MOD_STATIC  
  Wskazuje, że pole jest statyczne.  
@@ -126,71 +126,71 @@ public enum enum_FIELD_MODIFIERS {
  Wskazuje, że pole jest stałą.  
   
  FIELD_MOD_TRANSIENT  
- Wskazuje, że pole jest przejściowy.  
+ Wskazuje, że pole jest przejściowe.  
   
  FIELD_MOD_VOLATILE  
- Wskazuje, że pole jest nietrwały.  
+ Wskazuje, że pole jest nietrwałe.  
   
  FIELD_MOD_ABSTRACT  
- Wskazuje, że pole jest abstrakcyjna.  
+ Wskazuje, że pole jest abstrakcyjne.  
   
  FIELD_MOD_NATIVE  
- Wskazuje, że pole jest native.  
+ Wskazuje, że pole jest natywne.  
   
  FIELD_MOD_SYNCHRONIZED  
- Wskazuje, że pole jest zsynchronizowany.  
+ Wskazuje, że pole jest zsynchronizowane.  
   
  FIELD_MOD_VIRTUAL  
- Wskazuje, że pole jest wirtualny.  
+ Wskazuje, że pole jest wirtualne.  
   
  FIELD_MOD_INTERFACE  
- Wskazuje, że pole jest interfejs.  
+ Wskazuje, że pole jest interfejsem.  
   
  FIELD_MOD_FINAL  
- Wskazuje, że pole jest ostateczna.  
+ Wskazuje, że pole jest końcowe.  
   
  FIELD_MOD_SENTINEL  
- Wskazuje, że pole jest wskaźnikowych.  
+ Wskazuje, że pole jest wskaźnikiem.  
   
  FIELD_MOD_INNERCLASS  
- Wskazuje, że pole jest klasy wewnętrznej.  
+ Wskazuje, że pole jest klasą wewnętrzną.  
   
  FIELD_TYPE_OPTIONAL  
  Wskazuje, że pole jest opcjonalne.  
   
  FIELD_MOD_BYREF  
- Wskazuje, że pole jest argument odwołania. Jest to szczególnie argumenty metody.  
+ Wskazuje, że pole jest argumentem odwołania. Jest to przeznaczone dla argumentów metody.  
   
  FIELD_MOD_HIDDEN  
- Wskazuje, czy pole musi być ukryty lub znajdujące się w innym kontekście; na przykład [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] statyczne zmienne lokalne.  
+ Wskazuje, że pole musi być ukryte lub zaprezentowane w innym kontekście; na przykład [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] statyczne zmienne lokalne.  
   
  FIELD_MOD_MARSHALASOBJECT  
- Wskazuje, że pole reprezentuje obiekt z `IUnknown` interfejsu.  
+ Wskazuje, że pole reprezentuje obiekt z `IUnknown` interfejsem.  
   
  FIELD_MOD_SPECIAL_NAME  
- Wskazuje, że pole ma specjalną nazwę, na przykład `.ctor` dla konstruktora ([!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] tylko).  
+ Wskazuje, że pole ma specjalną nazwę, na przykład `.ctor` dla konstruktora ( [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] tylko).  
   
  FIELD_MOD_HIDEBYSIG  
- Wskazuje, że pole ma `Overloads` zastosowano — słowo kluczowe ([!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] tylko).  
+ Wskazuje, że do pola jest `Overloads` stosowane słowo kluczowe ( [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] tylko).  
   
  FIELD_MOD_WRITEONLY  
- Wskazuje, że pole jest tylko do zapisu. Ta wartość nie jest objęta `FIELD_MOD_ALL`, ponieważ tylko używać tych pól tylko do zapisu jest funkcja oceny. Użytkownik musi jawnie poprosić o `FIELD_MOD_WRITEONLY` pola.  
+ Wskazuje, że pole jest tylko do zapisu. Ta wartość nie jest uwzględniona w `FIELD_MOD_ALL` , ponieważ jedynym zastosowaniem pól tylko do zapisu jest obliczanie funkcji. Użytkownik musi jawnie zażądać `FIELD_MOD_WRITEONLY` pól.  
   
  FIELD_MOD_ACCESS_MASK  
- Określa maskę, aby uzyskać dostęp do pola.  
+ Wskazuje maskę dostępu do pola.  
   
  FIELD_MOD_MASK  
- Określa maskę modyfikatorów pól.  
+ Wskazuje maskę dla modyfikatorów pól.  
   
 ## <a name="remarks"></a>Uwagi  
- Używany do `dwModifiers` członkiem [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struktury.  
+ Używane dla `dwModifiers` elementu członkowskiego struktury [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) .  
   
- Te wartości również są przekazywane do [enumfields —](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) metody, aby filtrować pod kątem konkretnych pól.  
+ Te wartości są również przesyłane do metody [EnumFields —](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) w celu filtrowania określonych pól.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: sh.h  
+ Nagłówek: sh. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

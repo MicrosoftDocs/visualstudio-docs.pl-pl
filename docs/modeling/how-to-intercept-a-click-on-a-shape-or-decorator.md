@@ -10,17 +10,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 58d447526d83fec406b6fc20a08edcec37de89ae
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532525"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Porady: przechwytywanie kliknięć w kształcie lub elemencie Decorator
 Poniższe procedury demonstrują sposób przechwycenia kliknięcia kształtu lub ikony dekoratora. Możesz przechwycić kliknięcia, podwójne kliknięcia, przeciąganie i inne gesty, a następnie odpowiedzieć na element.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>Aby przechwycić kliknięcia na kształtach
- W projekcie DSL, w pliku kodu, który jest oddzielony od wygenerowanych plików kodu, napisz częściową definicję klasy dla klasy Shape. Przesłonięcie `OnDoubleClick()` lub jedną z innych metod, które mają nazwę zaczynającą się od `On...` . Przykład:
+ W projekcie DSL, w pliku kodu, który jest oddzielony od wygenerowanych plików kodu, napisz częściową definicję klasy dla klasy Shape. Przesłonięcie `OnDoubleClick()` lub jedną z innych metod, które mają nazwę zaczynającą się od `On...` . Na przykład:
 
 ```csharp
 public partial class MyShape // change
@@ -393,7 +393,7 @@ namespace Company.CompartmentDrag
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Odpowiadanie na zmiany i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md)
 - [Właściwości elementów Decorator](../modeling/properties-of-decorators.md)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586123"
 ---
 # <a name="troubleshoot-service-references"></a>Rozwiązywanie problemów z odwołaniami usługi
@@ -29,13 +29,13 @@ W tym temacie wymieniono typowe problemy, które mogą wystąpić podczas pracy 
 
 ## <a name="error-returning-data-from-a-service"></a>Błąd podczas zwracania danych z usługi
 
-Po powrocie `DataSet` lub `DataTable` z usługi może zostać wyświetlony wyjątek "maksymalny przydział rozmiaru dla komunikatów przychodzących został przekroczony". Domyślnie właściwość `MaxReceivedMessageSize` niektórych powiązań jest ustawiona na stosunkowo niewielką wartość, aby ograniczyć narażenie na ataki typu "odmowa usługi". Można zwiększyć tę wartość, aby zapobiec wyjątku. Aby uzyskać więcej informacji, zobacz temat <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
+W przypadku powrotu `DataSet` lub `DataTable` z usługi może zostać wyświetlony wyjątek "maksymalny przydział rozmiaru dla komunikatów przychodzących został przekroczony". Domyślnie `MaxReceivedMessageSize` Właściwość niektórych powiązań jest ustawiona na stosunkowo niewielką wartość, aby ograniczyć narażenie na ataki typu "odmowa usługi". Można zwiększyć tę wartość, aby zapobiec wyjątku. Aby uzyskać więcej informacji, zobacz <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
 
 Aby naprawić ten błąd:
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie plik *App. config* , aby go otworzyć.
+1. W **Eksplorator rozwiązań**kliknij dwukrotnie plik *app.config* , aby go otworzyć.
 
-2. Znajdź Właściwość `MaxReceivedMessageSize` i zmień ją na większą.
+2. Znajdź `MaxReceivedMessageSize` Właściwość i zmień ją na większą.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>Nie można znaleźć usługi w rozwiązaniu
 
@@ -56,13 +56,13 @@ Aby naprawić ten błąd:
 2. Na karcie **Opcje uruchamiania** wyczyść pole wyboru **uwierzytelnianie NTLM** .
 
     > [!NOTE]
-    > Uwierzytelnianie NTLM należy wyłączyć tylko dla witryn sieci Web, które zawierają wyłącznie usługi WCF. Zabezpieczenia usług WCF są zarządzane za pomocą konfiguracji w pliku *Web. config* . To sprawia, że uwierzytelnianie NTLM jest zbędne.
+    > Uwierzytelnianie NTLM należy wyłączyć tylko dla witryn sieci Web, które zawierają wyłącznie usługi WCF. Zabezpieczenia usług WCF są zarządzane za pomocą konfiguracji w pliku *web.config* . To sprawia, że uwierzytelnianie NTLM jest zbędne.
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Ustawienie poziomu dostępu dla wygenerowanych klas nie ma żadnego wpływu
 
-Ustawienie opcji **poziom dostępu dla wygenerowanych klas** w oknie dialogowym **Konfigurowanie odwołań** do usług **może** być niezawsze wykonywane. Mimo że opcja pojawia się w oknie dialogowym, powstałe klasy pomocy technicznej są generowane z poziomem dostępu `Public`.
+Ustawienie opcji **poziom dostępu dla wygenerowanych klas** w oknie dialogowym **Konfigurowanie odwołań** do usług **może** być **Friend** niezawsze wykonywane. Mimo że opcja wydaje się być ustawiona w oknie dialogowym, powstałe klasy pomocy technicznej są generowane z poziomu dostępu `Public` .
 
-Jest to znane ograniczenie niektórych typów, takie jak te serializowane przy użyciu <xref:System.Xml.Serialization.XmlSerializer>.
+Jest to znane ograniczenie niektórych typów, takie jak te serializowane przy użyciu <xref:System.Xml.Serialization.XmlSerializer> .
 
 ## <a name="error-debugging-service-code"></a>Błąd podczas debugowania kodu usługi
 
@@ -74,7 +74,7 @@ Jeśli projekt usługi zostanie usunięty z rozwiązania, ta jawna zależność 
 
 Aby naprawić ten błąd, należy ręcznie skompilować ponownie projekt usługi:
 
-1. Na **narzędzia** menu, kliknij przycisk **opcje**.
+1. W menu **Tools** (Narzędzia) kliknij pozycję **Options** (Opcje).
 
 2. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, a następnie wybierz pozycję **Ogólne**.
 
@@ -82,7 +82,7 @@ Aby naprawić ten błąd, należy ręcznie skompilować ponownie projekt usługi
 
 4. Załaduj projekt usługi WCF.
 
-5. W oknie dialogowym **Configuration Manager** Ustaw **aktywną konfigurację rozwiązania** na **debugowanie**. Aby uzyskać więcej informacji, zobacz [porady: tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md).
+5. W oknie dialogowym **Configuration Manager** Ustaw **aktywną konfigurację rozwiązania** na **debugowanie**. Aby uzyskać więcej informacji, zobacz [How to: Create and Edit Configurations](../ide/how-to-create-and-edit-configurations.md).
 
 6. W **Eksplorator rozwiązań**wybierz projekt usługi WCF.
 
@@ -90,7 +90,7 @@ Aby naprawić ten błąd, należy ręcznie skompilować ponownie projekt usługi
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>Usługi danych programu WCF nie są wyświetlane w przeglądarce
 
-Gdy próbuje wyświetlić reprezentację XML danych w [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], program Internet Explorer może interpretować dane jako źródło danych RSS. Upewnij się, że opcja wyświetlania kanałów informacyjnych RSS jest wyłączona.
+Gdy próbuje wyświetlić reprezentację XML danych w programie [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] , program Internet Explorer może interpretować dane jako źródło danych RSS. Upewnij się, że opcja wyświetlania kanałów informacyjnych RSS jest wyłączona.
 
 Aby naprawić ten błąd, wyłącz kanały informacyjne RSS:
 
@@ -102,6 +102,6 @@ Aby naprawić ten błąd, wyłącz kanały informacyjne RSS:
 
 4. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Opcje internetowe** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

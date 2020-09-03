@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointErrorEvent2::GetErrorBreakpoint | Dokumenty firmy Microsoft
+title: 'IDebugBreakpointErrorEvent2:: GetErrorBreakpoint | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fe22f18d4574ffde48cea975bff8d8f5801ca465
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735071"
 ---
 # <a name="idebugbreakpointerrorevent2geterrorbreakpoint"></a>IDebugBreakpointErrorEvent2::GetErrorBreakpoint
-Pobiera [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) obiektu, który opisuje powód, dla którego punkt przerwania nie został powiązany.
+Pobiera obiekt [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) , który opisuje powód, dla którego punkt przerwania nie został powiązany.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,16 +41,16 @@ int GetErrorBreakpoint( 
 
 ## <a name="parameters"></a>Parametry
 `ppErrorBP`\
-[na zewnątrz] Zwraca obiekt [IDebugErrorBreakpoint2,](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) który opisuje ostrzeżenie lub błąd.
+określoną Zwraca obiekt [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) , który opisuje ostrzeżenie lub błąd.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Po `IDebugErrorBreakpoint2` uzyskaniu interfejsu wywołaj [Metodę GetBreakpointResolution,](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) aby uzyskać obiekt [IDebugErrorBreakpointResolution2.](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) Następnie [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) metoda może służyć do określenia nieprawidłowej lokalizacji, nieprawidłowe wyrażenie lub powody, dla których oczekujące punktu przerwania nie został powiązany, takich jak kod nie załadowany jeszcze i tak dalej.
+Po `IDebugErrorBreakpoint2` uzyskaniu interfejsu Wywołaj metodę [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) , aby uzyskać obiekt [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) . Następnie Metoda [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) może służyć do określenia nieprawidłowej lokalizacji, nieprawidłowego wyrażenia lub powodów, dla których oczekujący punkt przerwania nie został powiązany, taki jak kod, który nie został jeszcze załadowany itd.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CBreakpointSetDebugEventBase,** który udostępnia interfejs [IDebugBreakpointErrorEvent2.](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CBreakpointSetDebugEventBase** , który uwidacznia Interfejs [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) .
 
 ```cpp
 STDMETHODIMP CBreakpointErrorDebugEventBase::GetErrorBreakpoint(

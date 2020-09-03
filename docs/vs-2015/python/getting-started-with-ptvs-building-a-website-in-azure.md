@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 288fb24c9c1c4ddee1cb59a968e717531e274af1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300585"
 ---
 # <a name="getting-started-with-ptvs-building-a-website-in-azure"></a>Pierwsze kroki z narzędziami PTVS: tworzenie witryny sieci Web na platformie Azure
@@ -34,5 +34,5 @@ Możesz szybko rozpocząć tworzenie witryny sieci Web w języku Python na platf
  Możesz obejrzeć te instrukcje w bardzo krótkim [filmie wideo](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)w serwisie YouTube.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dokumentacja typu Wiki](https://github.com/Microsoft/PTVS/wiki/Web-Project)   
+ [Dokumentacja typu wiki](https://github.com/Microsoft/PTVS/wiki/Web-Project)   
  [PTVS Wprowadzenie i głębokie wideo szczegółowe](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

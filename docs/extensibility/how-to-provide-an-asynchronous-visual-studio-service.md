@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ad178bf93e49c3d695c1ebd0a5d4f6b151175953
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905741"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Instrukcje: dostarczanie asynchronicznej usługi programu Visual Studio
@@ -130,7 +130,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     }
 
     ```
-    Aby ta usługa była widoczna poza tym pakietem, ustaw wartość flagi Podwyższ na *true* jako ostatni parametr:`this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
+    Aby ta usługa była widoczna poza tym pakietem, ustaw wartość flagi Podwyższ na *true* jako ostatni parametr:  `this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
 
 2. Dodaj odwołanie do *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll*.
 
@@ -173,7 +173,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 1. Dodaj polecenie menu do projektu. (W **Eksplorator rozwiązań**wybierz węzeł projektu, kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Dodaj**  >  **Nowy element**  >  **Rozszerzalność**  >  **Polecenie niestandardowe**). Nazwij plik poleceń *TestAsyncCommand.cs*.
 
-2. Szablon polecenia niestandardowego ponownie dodaje `Initialize()` metodę do pliku *TestAsyncPackage.cs* , aby można było zainicjować polecenie. W `Initialize()` metodzie Skopiuj wiersz, który inicjuje polecenie. Powinny wyglądać następująco:
+2. Szablon polecenia niestandardowego ponownie dodaje `Initialize()` metodę do pliku *TestAsyncPackage.cs* , aby można było zainicjować polecenie. W `Initialize()` metodzie Skopiuj wiersz, który inicjuje polecenie. Powinien on wyglądać następująco:
 
     ```csharp
     TestAsyncCommand.Initialize(this);

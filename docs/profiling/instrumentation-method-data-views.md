@@ -1,5 +1,5 @@
 ---
-title: Widoki danych metody instrumentacji | Dokumenty firmy Microsoft
+title: Widoki danych metody instrumentacji | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,29 +13,29 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74774166"
 ---
 # <a name="instrumentation-method-data-views"></a>Widoki danych metody instrumentacji
-Ta sekcja zawiera informacje referencyjne dla widoków i raportów plików danych profilera, które zostały wygenerowane przy użyciu metody instrumentacji.
+Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody instrumentacji.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Widok podsumowania](../profiling/summary-view-instrumentation-data.md)
 
- Wyświetla listę funkcji, które zużywały najwięcej czasu i funkcji, które wykonały najbardziej indywidualną pracę.
+ Wyświetla listę funkcji, które były zużywane z największą ilością czasu i funkcji, które były najbardziej indywidualnej pracy.
 
 - [Widok drzewa wywołań](../profiling/call-tree-view-instrumentation-data.md)
 
- Wyświetla ścieżki wykonywania funkcji w drzewie hierarchicznym.
+ Wyświetla ścieżki wykonywania funkcji w hierarchicznym drzewie.
 
 - [Widok modułów](../profiling/modules-view-instrumentation-data.md)
 
  Organizuje dane profilowania według modułu i wyświetla listę danych profilowania dla funkcji w module.
 
-- [Widok rozmówcy/wywoływania — dane instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)
+- [Widok wywołujący/wywoływany-Dane instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)
 
  Wyświetla dane profilowania dla funkcji nadrzędnych i podrzędnych wybranej funkcji.
 
@@ -46,24 +46,24 @@ Ta sekcja zawiera informacje referencyjne dla widoków i raportów plików danyc
 ## <a name="reference"></a>Dokumentacja
 - [Widok szczegółów funkcji](../profiling/function-details-view.md)
 
- Wyświetla graficzny wykres relacji między wybraną funkcją a funkcjami, które były wywoływane i wywoływane przez wybraną funkcję.
+ Przedstawia graficzny wykres relacji między wybraną funkcją a funkcjami, które zostały wywołane i zostały wywołane przez wybraną funkcję.
 
 - [Widok procesu](../profiling/process-view.md)
 
- Wyświetla listę czasu rozpoczęcia, zakończenia i okresu istnienia procesu dla wszystkich procesów, które są profilowane.
+ Wyświetla listę początkowych, końcowych i okresów istnienia procesu dla wszystkich procesów przetwarzanych przez program raportowanie błędów.
 
-## <a name="related-sections"></a>Powiązane sekcje
-- [Widoki danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)
+## <a name="related-sections"></a>Sekcje pokrewne
+- [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)
 
- Informacje referencyjne dla widoków i raportów plików danych profilera, które zostały wygenerowane przy użyciu metody próbkowania.
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane przy użyciu metody próbkowania.
 
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)
 
- Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zawierają dane pamięci .NET.
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zawierają dane pamięci platformy .NET.
 
 - [Widoki danych rywalizacji o zasoby](../profiling/resource-contention-data-views.md)
 
- Informacje referencyjne dla widoków i raportów plików danych profilera, które zostały wygenerowane przy użyciu metody rywalizacji wątków.
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody rywalizacji o wątki.
 
 ## <a name="see-also"></a>Zobacz też
 - [Zapoznanie z wartościami danych instrumentacji](../profiling/understanding-instrumentation-data-values.md)

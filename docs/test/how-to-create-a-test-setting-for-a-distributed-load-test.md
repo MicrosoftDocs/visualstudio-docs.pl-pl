@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 625f4720e94f6ec0b3b9751c28ad18e0a9f38bbd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288012"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Instrukcje: Tworzenie pliku ustawień testu dla testu obciążenia rozłożonego
@@ -124,7 +124,7 @@ Wykonaj następujące kroki, aby utworzyć i usunąć ustawienia testu w rozwią
     |**Emulacja sieci:** Możesz określić, że chcesz umieścić sztuczne obciążenie sieciowe w teście przy użyciu ustawienia testu. Emulacja sieci wpływa na komunikację z maszyną i z niej przez emulowanie określonej szybkości połączenia sieciowego, takiej jak połączenie telefoniczne. **Uwaga:**  Emulacji sieci nie można użyć do zwiększenia szybkości połączenia sieciowego.|Karta emulacji sieci jest ignorowana przez testy obciążenia. Zamiast tego testy obciążenia używają ustawień, które są określone w mieszaninie sieci w scenariuszu testu obciążenia.<br /><br /> Aby uzyskać więcej informacji, zobacz [Określanie typów sieci wirtualnych](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
     |**Informacje o systemie:** Ustawienie testu można skonfigurować w taki sposób, aby obejmowało informacje o systemie maszyn, na których uruchomiono diagnostykę informacji o systemie i moduł zbierający dane. Informacje o systemie są określone w wynikach testu przy użyciu ustawienia testu.|![Ikona informacji](../test/media/vc364f4.gif)<br /><br /> Można zbierać informacje o systemie zarówno z agentów obciążenia, jak i z testowanego systemu.|Do zebrania tych informacji nie jest wymagana żadna konfiguracja.|
     |**Wpływ na test:** Można zbierać informacje o tym, które metody kodu aplikacji były używane po uruchomieniu przypadku testowego. Ta wartość może być używana razem ze zmianami w kodzie aplikacji, które są tworzone przez deweloperów, aby określić, które testy miały wpływ na te zmiany.|Dane o wpływie na testy nie są zbierane z testami obciążenia.||
-    |**Rejestrator wideo:** Możesz utworzyć nagranie wideo swojej sesji pulpitu podczas uruchamiania testu automatycznego. Może to być przydatne do wyświetlania akcji użytkownika dla kodowanego testu interfejsu użytkownika. Film wideo może pomóc innym członkom zespołu izolować problemy z aplikacjami, które są trudne do odtworzenia. **Uwaga:**  Gdy testy są uruchamiane zdalnie, rejestrator wideo nie będzie działać, chyba że agent zostanie uruchomiony w trybie przetwarzania interaktywnego.|![Ważne ](../test/media/vc364f3.gif) **Ostrzeżenie ikony:** nie zaleca się używania karty rejestratora wideo do testów obciążenia.|[Instrukcje: uwzględnianie nagrań ekranu i głosu podczas testów przy użyciu ustawień testu](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
+    |**Rejestrator wideo:** Możesz utworzyć nagranie wideo swojej sesji pulpitu podczas uruchamiania testu automatycznego. Może to być przydatne do wyświetlania akcji użytkownika dla kodowanego testu interfejsu użytkownika. Film wideo może pomóc innym członkom zespołu izolować problemy z aplikacjami, które są trudne do odtworzenia. **Uwaga:**  Gdy testy są uruchamiane zdalnie, rejestrator wideo nie będzie działać, chyba że agent zostanie uruchomiony w trybie przetwarzania interaktywnego.|![Ważne ](../test/media/vc364f3.gif) **Ostrzeżenie ikony:**  nie zaleca się używania karty rejestratora wideo do testów obciążenia.|[Instrukcje: uwzględnianie nagrań ekranu i głosu podczas testów przy użyciu ustawień testu](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
 
 19. Wybierz pozycję **wdrożenie**.
 

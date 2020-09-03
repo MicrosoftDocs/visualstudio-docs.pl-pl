@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1cc9c5bab7601a62bacfbbb155227bd5b632f93a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287808"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Instrukcje: Tworzenie niestandardowych wykresów w wynikach testu obciążenia
@@ -28,7 +28,7 @@ Poniższą procedurę można wykonać w czasie, gdy test obciążenia jest uruch
 
 1. Na pasku narzędzi **testu obciążenia** wybierz pozycję **Dodaj nowy Graf**.
 
-     \-oraz
+     \- oraz
 
      W **analizatorze testu obciążenia**kliknij prawym przyciskiem myszy w panelu **liczniki** lub w grafie, a następnie wybierz polecenie **Dodaj wykres**.
 

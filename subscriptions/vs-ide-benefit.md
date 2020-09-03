@@ -8,10 +8,10 @@ ms.date: 04/17/2020
 ms.topic: how-to
 description: Dowiedz się, jak pobrać i zainstalować środowisko IDE programu Visual Studio zawarte w subskrypcji programu Visual Studio.
 ms.openlocfilehash: b5c47c6b484d5b74f31ab8569f3895ae9ce0f984
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904433"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Korzyść dla programu Visual Studio 2019
@@ -67,7 +67,7 @@ Aby pobrać środowisko IDE:
 | Visual Studio Professional (standardowa, miesięczna chmura) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Dostępne                                                            |  Tak          |
 | Visual Studio Professional z usługą GitHub Enterprise | Licencja   | Dostępne              |  Tak          |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Dostępne                                             |  Tak         |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Nie dotyczy          |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Brak          |
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), program Visual Studio Industry partner (VSIP), Microsoft Partner Network (MPN), równoważnik, MCT Software & Services Developer, BizSpark, Wyobraź sobie, najbardziej cenny specjalista (MVP), dyrektor regionalny (RD).  Wyklucza: MCT oprogramowania & Services.*
 
@@ -78,7 +78,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Potrzebujesz pomocy dotyczącej środowiska IDE programu Visual Studio, zapoznaj się z następującymi zasobami:
-  - Pomoc techniczna:[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - Pomoc techniczna: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [Dokumentacja](/visualstudio/)
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 

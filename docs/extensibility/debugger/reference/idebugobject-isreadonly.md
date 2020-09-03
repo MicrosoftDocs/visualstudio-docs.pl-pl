@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsReadOnly | Dokumenty firmy Microsoft
+title: 'IDebugObject:: IsReadOnly | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 19546550f916e9d42adf634b0d85958ce9697d28
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726412"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
@@ -41,13 +41,13 @@ int IsReadOnly(
 
 ## <a name="parameters"></a>Parametry
 `pfIsReadOnly`\
-[na zewnątrz] Zwraca wartość niezerową (`TRUE`), jeśli ten obiekt jest tylko do odczytu; w przeciwnym razie`FALSE`zwraca zero ( ).
+określoną Zwraca wartość różną od zera ( `TRUE` ), jeśli ten obiekt jest tylko do odczytu; w przeciwnym razie zwraca zero ( `FALSE` ).
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Obiekt tylko do odczytu nie może mieć jego wartość zmieniona po jego utworzeniu.
+ Po utworzeniu obiektu tylko do odczytu nie można zmienić jego wartości.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04c0fdaab87c88028b8c14ca59e93fa93e74be74
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817440"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Instrukcje: Używanie edytora wyrażeń
@@ -53,6 +53,6 @@ Wyrażenia są wartościami literałów lub Visual Basic kodzie związanym z arg
 
      Alternatywny sposób wprowadzania lub edytowania wyrażenia polega na kliknięciu wielokropka obok nazwy właściwości w siatce właściwości. Wybranie wielokropka powoduje otwarcie **edytora wyrażeń** jako okna dialogowego.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:System.Activities.Presentation.View.ExpressionTextBox>

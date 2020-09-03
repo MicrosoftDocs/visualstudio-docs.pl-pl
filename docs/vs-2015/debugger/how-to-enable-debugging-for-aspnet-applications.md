@@ -19,16 +19,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5726e964a0db2fae1b902f54a14e206dbc03a148
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477008"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Porady: włączanie debugowania dla aplikacji ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby włączyć debugowanie, należy włączyć ją zarówno na stronie **właściwości projektu** , jak i w pliku Web. config aplikacji.  
+Aby włączyć debugowanie, należy włączyć ją zarówno na stronie **właściwości projektu** , jak i w pliku web.config aplikacji.  
   
 > [!NOTE]  
 > Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](/previous-versions/zbhkx167(v=vs.140)).  
@@ -41,20 +41,20 @@ Aby włączyć debugowanie, należy włączyć ją zarówno na stronie **właśc
   
 3. W obszarze **debugery**zaznacz pole wyboru **ASP.NET** .  
   
-### <a name="to-enable-debugging-in-the-webconfig-file"></a>Aby włączyć debugowanie w pliku Web. config  
+### <a name="to-enable-debugging-in-the-webconfig-file"></a>Aby włączyć debugowanie w pliku web.config  
   
-1. Otwórz plik Web. config przy użyciu dowolnego standardowego edytora tekstu lub parsera XML.  
+1. Otwórz plik web.config przy użyciu dowolnego standardowego edytora tekstu lub parsera XML.  
   
     > [!NOTE]  
-    > Nie można uzyskać dostępu do pliku zdalnie przy użyciu przeglądarki sieci Web. Ze względów bezpieczeństwa [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] konfiguruje usługi Microsoft IIS w celu uniemożliwienia bezpośredniego dostępu przeglądarki do plików Web. config. Jeśli spróbujesz uzyskać dostęp do pliku konfiguracji przy użyciu przeglądarki, zostanie wyświetlony błąd dostępu HTTP 403 (dostęp zabroniony).  
+    > Nie można uzyskać dostępu do pliku zdalnie przy użyciu przeglądarki sieci Web. Ze względów bezpieczeństwa program [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] konfiguruje usługi Microsoft IIS, aby zapobiec bezpośredniemu dostępowi do Web.config plików przez przeglądarkę. Jeśli spróbujesz uzyskać dostęp do pliku konfiguracji przy użyciu przeglądarki, zostanie wyświetlony błąd dostępu HTTP 403 (dostęp zabroniony).  
   
-2. Plik Web. config jest plikiem XML i dlatego zawiera zagnieżdżone sekcje oznaczone przez Tagi. Znajdź element `configuration/system.web/compilation`. Jeśli element kompilacja nie istnieje, utwórz go.  
+2. Web.config jest plikiem XML i dlatego zawiera zagnieżdżone sekcje oznaczone przez Tagi. Znajdź `configuration/system.web/compilation` element. Jeśli element kompilacja nie istnieje, utwórz go.  
   
-3. Jeśli element `compilation` nie zawiera atrybutu `debug`, Dodaj atrybut do elementu.  
+3. Jeśli `compilation` element nie zawiera `debug` atrybutu, Dodaj atrybut do elementu.  
   
-4. Upewnij się, że wartość atrybutu `debug` jest ustawiona na `true`.  
+4. Upewnij się, że `debug` wartość atrybutu jest ustawiona na `true` .  
   
-Plik Web. config powinien wyglądać podobnie do poniższego przykładu. Należy pamiętać, że między elementami konfiguracji i system. Web mogą znajdować się sekcje  
+Plik web.config powinien wyglądać podobnie do poniższego przykładu. Należy pamiętać, że między elementami konfiguracji i system. Web mogą znajdować się sekcje  
   
 - sekcje elementów między elementami konfiguracji i system. Web  
   
@@ -78,14 +78,14 @@ Plik Web. config powinien wyglądać podobnie do poniższego przykładu. Należy
 </configuration>  
 ```  
   
-## <a name="robust-programming"></a>Skuteczne programowanie  
-[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] automatycznie wykrywa wszelkie zmiany w plikach Web. config i stosuje nowe ustawienia konfiguracji. Aby zmiany zaczęły obowiązywać, nie trzeba ponownie uruchamiać komputera ani ponownie uruchamiać serwera IIS.  
+## <a name="robust-programming"></a>Niezawodne programowanie  
+[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Program automatycznie wykrywa wszelkie zmiany w plikach Web.config i stosuje nowe ustawienia konfiguracji. Aby zmiany zaczęły obowiązywać, nie trzeba ponownie uruchamiać komputera ani ponownie uruchamiać serwera IIS.  
   
-Witryna sieci Web może zawierać wiele katalogów wirtualnych i podkatalogów, a w każdym z nich mogą istnieć pliki Web. config. aplikacje [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] dziedziczą ustawienia z plików Web. config na wyższych poziomach w ścieżce URL. Hierarchiczne pliki konfiguracji umożliwiają zmianę ustawień dla kilku aplikacji [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] w tym samym czasie, na przykład dla wszystkich aplikacji znajdujących się poniżej w hierarchii. Jeśli jednak `debug` jest ustawiona w pliku niższym w hierarchii, zostanie zastąpiona wyższą wartością.  
+Witryna sieci Web może zawierać wiele katalogów wirtualnych i podkatalogów, a pliki Web.config mogą znajdować się w każdym z nich. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacje dziedziczą ustawienia z plików Web.config na wyższych poziomach w ścieżce URL. Hierarchiczne pliki konfiguracji umożliwiają zmianę ustawień dla kilku [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji w tym samym czasie, na przykład dla wszystkich aplikacji znajdujących się poniżej w hierarchii. Jednak jeśli `debug` jest ustawiona w pliku znajdującym się niżej w hierarchii, zostanie przesłonięta wyższa wartość.  
   
-Na przykład można określić `debug="true"` w `www.microsoft.com/aaa/Web.config`, a wszystkie aplikacje w folderze AAA lub w dowolnym podfolderze AAA będą dziedziczyć to ustawienie. Jeśli więc aplikacja [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] jest w `www.microsoft.com/aaa/bbb`, dziedziczy to ustawienie, tak jak wszystkie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacje w `www.microsoft.com/aaa/ccc`, `www.microsoft.com/aaa/ddd`i tak dalej. Jedynym wyjątkiem jest to, że jedna z tych aplikacji zastępuje ustawienie za pomocą własnego pliku Web. config.  
+Na przykład można określić `debug="true"` w `www.microsoft.com/aaa/Web.config` , a dowolna aplikacja w folderze AAA lub w dowolnym podfolderze AAA będzie dziedziczyć to ustawienie. W związku z [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] tym, jeśli aplikacja jest w systemie `www.microsoft.com/aaa/bbb` , dziedziczy to ustawienie, tak jak wszystkie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacje w `www.microsoft.com/aaa/ccc` , `www.microsoft.com/aaa/ddd` i tak dalej. Jedynym wyjątkiem jest to, że jedna z tych aplikacji zastępuje ustawienie za pomocą własnego pliku Web.config niższej.  
   
-Włączenie trybu debugowania znacznie będzie miało wpływ na wydajność aplikacji [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Należy pamiętać, aby wyłączyć tryb debugowania przed wdrożeniem aplikacji wydania lub przeprowadzeniem pomiarów wydajności.  
+Włączenie trybu debugowania znacznie będzie miało wpływ na wydajność [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji. Należy pamiętać, aby wyłączyć tryb debugowania przed wdrożeniem aplikacji wydania lub przeprowadzeniem pomiarów wydajności.  
   
 ## <a name="see-also"></a>Zobacz też  
 [Debugowanie aplikacji ASP.NET i AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)  

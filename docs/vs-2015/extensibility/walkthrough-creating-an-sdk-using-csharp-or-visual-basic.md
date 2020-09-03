@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Tworzenie zestawu SDK przy C# użyciu lub Visual Basic | Microsoft Docs'
+title: 'Przewodnik: Tworzenie zestawu SDK przy użyciu języka C# lub Visual Basic | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -9,16 +9,16 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a604e3500c0ea438c987c4cf07ded98a5e03dd61
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77558209"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Przewodnik: tworzenie zestawu SDK przy użyciu języka C# lub Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym instruktażu dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matematycznej za pomocą C# wizualizacji, a następnie spakować zestaw SDK jako rozszerzenie programu Visual Studio (VSIX). Należy wykonać następujące procedury:  
+W tym instruktażu dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matematycznej za pomocą języka Visual C#, a następnie spakować zestaw SDK jako rozszerzenie programu Visual Studio (VSIX). Należy wykonać następujące procedury:  
   
 - [Aby utworzyć składnik środowisko wykonawcze systemu Windows SimpleMath](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
   
@@ -27,13 +27,13 @@ W tym instruktażu dowiesz się, jak utworzyć prosty zestaw SDK biblioteki mate
 - [Aby utworzyć przykładową aplikację, która używa biblioteki klas](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+ Aby wykonać czynności opisane w tym przewodniku, należy zainstalować Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-## <a name="createClassLibrary"></a>Aby utworzyć składnik środowisko wykonawcze systemu Windows SimpleMath  
+## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a> Aby utworzyć składnik środowisko wykonawcze systemu Windows SimpleMath  
   
 1. Na pasku menu wybierz **plik**, **Nowy**, **Nowy projekt**.  
   
-2. Na liście szablonów rozwiń węzeł  **C# Visual** lub **Visual Basic**, wybierz węzeł **Sklep Windows** , a następnie wybierz szablon **składnika Środowisko wykonawcze systemu Windows** .  
+2. Na liście szablonów rozwiń pozycję **Visual C#** lub **Visual Basic**, wybierz węzeł **Sklep Windows** , a następnie wybierz szablon **składnika Środowisko wykonawcze systemu Windows** .  
   
 3. W polu **Nazwa** Określ **SimpleMath**, a następnie wybierz przycisk **OK** .  
   
@@ -53,15 +53,15 @@ W tym instruktażu dowiesz się, jak utworzyć prosty zestaw SDK biblioteki mate
 8. W kolumnie **Konfiguracja** Sprawdź, czy wiersz **SimpleMath** jest ustawiony na wartość **Zwolnij**, a następnie wybierz przycisk **Zamknij** , aby zaakceptować zmianę.  
   
     > [!IMPORTANT]
-    > Zestaw SDK dla składnika SimpleMath zawiera tylko jedną konfigurację. Ta konfiguracja musi być kompilacją wydania lub aplikacje korzystające ze składnika nie przekazują certyfikacji dla[!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].  
+    > Zestaw SDK dla składnika SimpleMath zawiera tylko jedną konfigurację. Ta konfiguracja musi być kompilacją wydania lub aplikacje korzystające ze składnika nie przekazują certyfikacji dla [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)] .  
   
 9. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła projektu **SimpleMath** , a następnie wybierz polecenie **Kompiluj**.  
   
-## <a name="createVSIX"></a>Aby utworzyć projekt rozszerzenia SimpleMathVSIX  
+## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a> Aby utworzyć projekt rozszerzenia SimpleMathVSIX  
   
 1. W menu skrótów węzła **"SimpleMath" rozwiązania** wybierz pozycję **Dodaj**, **Nowy projekt**.  
   
-2. Na liście szablonów rozwiń pozycję  **C# Wizualizacja** lub **Visual Basic**, wybierz węzeł **rozszerzalności** , a następnie wybierz szablon **projektu VSIX** .  
+2. Na liście szablonów rozwiń pozycję **Visual C#** lub **Visual Basic**, wybierz węzeł **rozszerzalności** , a następnie wybierz szablon **projektu VSIX** .  
   
 3. W polu **Nazwa** Określ **SimpleMathVSIX**, a następnie wybierz przycisk **OK** .  
   
@@ -79,9 +79,9 @@ W tym instruktażu dowiesz się, jak utworzyć prosty zestaw SDK biblioteki mate
   
 9. Na liście **elementów wspólnych**rozwiń pozycję **dane**, a następnie wybierz pozycję **plik XML**.  
   
-10. W polu **Nazwa** Określ `SDKManifest.xml`, a następnie wybierz przycisk **Dodaj** .  
+10. W polu **Nazwa** Określ `SDKManifest.xml` , a następnie wybierz przycisk **Dodaj** .  
   
-11. W **Eksplorator rozwiązań**Otwórz menu skrótów dla `SDKManifest.xml`, wybierz **Właściwości**, a następnie zmień wartość właściwości **include in VSIX** na **true**.  
+11. W **Eksplorator rozwiązań**Otwórz menu skrótów dla `SDKManifest.xml` , wybierz **Właściwości**, a następnie zmień wartość właściwości **Dołącz w VSIX** na **true**.  
   
 12. Zastąp zawartość pliku następującym kodem XML:  
   
@@ -90,13 +90,13 @@ W tym instruktażu dowiesz się, jak utworzyć prosty zestaw SDK biblioteki mate
   
 13. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **SimpleMathVSIX** , wybierz **Dodaj**, a następnie wybierz **Nowy folder**.  
   
-14. Zmień nazwę folderu na `references`.  
+14. Zmień nazwę folderu na `references` .  
   
 15. Otwórz menu skrótów dla folderu **References** , wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy folder**.  
   
-16. Zmień nazwę podfolderu na `commonconfiguration`, utwórz podfolder w nim i nazwij podfolder `neutral`.  
+16. Zmień nazwę podfolderu na `commonconfiguration` , utwórz podfolder w nim i nazwij podfolder `neutral` .  
   
-17. Powtórz poprzednie cztery kroki, tym razem zmieniając nazwę pierwszego folderu na `redist`.  
+17. Powtórz poprzednie cztery kroki, tym razem zmieniając nazwę pierwszego folderu na `redist` .  
   
      Projekt zawiera teraz następującą strukturę folderów:  
   
@@ -131,11 +131,11 @@ W tym instruktażu dowiesz się, jak utworzyć prosty zestaw SDK biblioteki mate
   
 30. Wybierz przycisk **Zainstaluj** , poczekaj na zakończenie instalacji, a następnie ponownie uruchom program Visual Studio.  
   
-## <a name="createSample"></a>Aby utworzyć przykładową aplikację, która używa biblioteki klas  
+## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a> Aby utworzyć przykładową aplikację, która używa biblioteki klas  
   
 1. Na pasku menu wybierz **plik**, **Nowy**, **Nowy projekt**.  
   
-2. Na liście szablonów rozwiń węzeł **Visual C#**  lub **Visual Basic**, a następnie wybierz węzeł **Sklep Windows** .  
+2. Na liście szablonów rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz węzeł **Sklep Windows** .  
   
 3. Wybierz szablon **pustej aplikacji** , nazwij projekt **ArithmeticUI**, a następnie wybierz przycisk **OK** .  
   
@@ -145,7 +145,7 @@ W tym instruktażu dowiesz się, jak utworzyć prosty zestaw SDK biblioteki mate
   
 6. W okienku szczegółów wybierz **proste rozszerzenie Math SDK** .  
   
-    Pojawią się dodatkowe informacje o zestawie SDK. Możesz wybrać link **więcej informacji** , aby otworzyć https://docs.microsoft.com, jak określono w pliku SDKManifest. XML wcześniej w tym instruktażu.  
+    Pojawią się dodatkowe informacje o zestawie SDK. Możesz wybrać link **więcej informacji** do otwarcia https://docs.microsoft.com , jak określono w pliku SDKManifest.xml wcześniej w tym instruktażu.  
   
 7. W oknie dialogowym **Menedżer odwołań** zaznacz pole wyboru **prosty zestaw SDK** , a następnie wybierz przycisk **OK** .  
   
@@ -167,13 +167,13 @@ W tym instruktażu dowiesz się, jak utworzyć prosty zestaw SDK biblioteki mate
   
 12. Wybierz klawisz F5, aby uruchomić aplikację.  
   
-13. W aplikacji wprowadź dwie liczby, wybierz operację, a następnie wybierz przycisk **=** .  
+13. W aplikacji wprowadź dwie liczby, wybierz operację, a następnie wybierz **=** przycisk.  
   
      Zostanie wyświetlony prawidłowy wynik.  
   
     Pomyślnie utworzono i zastosowano zestaw SDK rozszerzenia.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Tworzenie zestawu SDK przy C++ użyciu](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Przewodnik: Tworzenie zestawu SDK przy użyciu  JavaScript](walkthrough-creating-an-sdk-using-javascript.md)  
+ [Przewodnik: Tworzenie zestawu SDK przy użyciu języka C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [Przewodnik: Tworzenie zestawu SDK przy użyciu języka JavaScript](walkthrough-creating-an-sdk-using-javascript.md)   
  [Tworzenie zestawu SDK](../extensibility/creating-a-software-development-kit.md)

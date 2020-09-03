@@ -1,5 +1,5 @@
 ---
-title: Umieść Element | Dokumentacja firmy Microsoft
+title: Include — element | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1bdc56c9d0b488bdbe24a8534ab516cc0fc831df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203934"
 ---
 # <a name="include-element"></a>Include, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Include element Określa plik, który może znajdować się w podanym ścieżkę załączania dla wstawiania do bieżącego pliku.  Wszystkie symbole i typy zdefiniowane staną się częścią wynik.  
+Element include określa plik, który może znajdować się w podanej ścieżce include do wstawienia do bieżącego pliku.  Wszystkie zdefiniowane symbole i typy staną się częścią skompilowanego wyniku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,7 +38,7 @@ Include element Określa plik, który może znajdować się w podanym ścieżkę
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|{1&gt;href&lt;1}|Wymagana. Ścieżka do pliku nagłówka:<br /><br /> href="stdidcmd.h"|  
+|Tag|Wymagany. Ścieżka do pliku nagłówkowego:<br /><br /> href = "Stdidcmd. h"|  
 |Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
@@ -51,7 +51,7 @@ Include element Określa plik, który może znajdować się w podanym ścieżkę
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują poleceń — czyli elementy menu, menu, paski narzędzi i pola kombi — zapewniającej pakietu VSPackage IDE.|  
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia — czyli elementy menu, menu, paski narzędzi i pola kombi, które pakietu VSPackage zapewnia IDE.|  
   
 ## <a name="example"></a>Przykład  
   

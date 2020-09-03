@@ -1,7 +1,7 @@
 ---
-title: Identyfikatory obciążenia i identyfikatory składników programu Visual Studio Test Agent 2017
+title: Obciążenie i identyfikatory składników programu Visual Studio Test Agent 2017
 titleSuffix: ''
-description: Zdalne uruchamianie automatycznych testów i ładowanie testów za pomocą obciążenia i identyfikatorów składników programu Visual Studio
+description: Używanie obciążeń i identyfikatorów składników programu Visual Studio do zdalnego uruchamiania testów i testów obciążeniowych
 keywords: ''
 author: ornellaalt
 ms.author: ornella
@@ -11,28 +11,28 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: e3dda1867ee4f54588456c668639e51652d7f8e1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76159657"
 ---
 ## <a name="test-agent"></a>Test Agent
 
-**Identyfikator:** Microsoft.VisualStudio.Workload.TestAgent
+**Identyfikator:** Microsoft. VisualStudio. obciążeni. agenta testowego
 
-**Opis:** Obsługuje zdalne uruchamianie automatycznych testów i testów obciążenia
+**Opis:** Obsługuje zdalne uruchamianie testów automatycznych i testów obciążenia
 
-### <a name="components-included-by-this-workload"></a>Składniki objęte tym obciążeniem
+### <a name="components-included-by-this-workload"></a>Składniki zawarte w tym obciążeniu
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Podstawowe funkcje agenta testowego | 15.0.27019.1 | Wymagany
+Microsoft. VisualStudio. Component. TestTools. agenta testowego | Podstawowe funkcje agenta testowego | 15.0.27019.1 | Wymagane
 
-## <a name="unaffiliated-components"></a>Składniki niepowiązane
+## <a name="unaffiliated-components"></a>Niestowarzyszone składniki
 
-Są to składniki, które nie są dołączone do żadnego obciążenia, ale mogą być wybrane jako pojedynczy składnik.
+Są to składniki, które nie są uwzględnione w obciążeniu, ale mogą być wybierane jako poszczególne składniki.
 
 Identyfikator składnika | Nazwa | Wersja
 --- | --- | ---
-Nie dotyczy | Nie dotyczy | Nie dotyczy
+nie dotyczy | nie dotyczy | nie dotyczy

@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532707"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Metody mapowania dla stosu wywołań podczas debugowania w programie Visual Studio.
@@ -41,7 +41,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
  ![Debugowanie za pomocą stosów wywołań na mapach kodu](../debugger/media/debuggermap_overview.png)
 
- Będą potrzebne:
+ Potrzebne będą następujące elementy:
 
  ::: moniker range="vs-2017"
 
@@ -75,9 +75,9 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
   Aby uzyskać szczegółowe informacje o poleceniach i akcjach, których można używać podczas pracy z mapami kodu, zobacz [przeglądanie i zmiana rozmieszczenia map kodu](../modeling/browse-and-rearrange-code-maps.md).
 
-## <a name="map-the-call-stack"></a><a name="MapStack"></a>Mapowanie stosu wywołań
+## <a name="map-the-call-stack"></a><a name="MapStack"></a> Mapowanie stosu wywołań
 
-1. Rozpocznij debugowanie. (Klawiatura: **F5**)
+1. Uruchom debugowanie. (Klawiatura: **F5**)
 
 2. Gdy aplikacja przejdzie w tryb przerwania lub przejdziesz do funkcji, wybierz pozycję **Mapa kodu**. (Klawiatura: **Ctrl**  +  **SHIFT**  +  **`** )
 
@@ -89,19 +89,19 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
      Mapa zostanie automatycznie zaktualizowana podczas kontynuowania debugowania. Zobacz [Aktualizowanie mapy za pomocą następnego stosu wywołań](#UpdateMap).
 
-## <a name="make-notes-about-the-code"></a><a name="MakeNotes"></a>Utwórz notatki dotyczące kodu
+## <a name="make-notes-about-the-code"></a><a name="MakeNotes"></a> Utwórz notatki dotyczące kodu
 
  Dodaj komentarze, aby śledzić, co się dzieje w kodzie. Aby dodać nowy wiersz w komentarzu, naciśnij klawisze **Shift + Return**.
 
  ![Dodaj komentarz do stosu wywołań na mapie kodu](../debugger/media/debuggermap_addcomment.png)
 
-## <a name="update-the-map-with-the-next-call-stack"></a><a name="UpdateMap"></a>Aktualizowanie mapy za pomocą następnego stosu wywołań
+## <a name="update-the-map-with-the-next-call-stack"></a><a name="UpdateMap"></a> Aktualizowanie mapy za pomocą następnego stosu wywołań
 
  Uruchom aplikację do następnego punktu przerwania lub wejścia do funkcji. Mapa dodaje nowy stos wywołań.
 
  ![Aktualizowanie mapy kodu przy użyciu następnego stosu wywołań](../debugger/media/debuggermap_addclearcallstack.png)
 
-## <a name="add-related-code-to-the-map"></a><a name="AddRelatedCode"></a>Dodaj kod pokrewny do mapy
+## <a name="add-related-code-to-the-map"></a><a name="AddRelatedCode"></a> Dodaj kod pokrewny do mapy
 
  Teraz masz mapę — co dalej? Jeśli pracujesz w języku C# lub Visual Basic, Dodaj elementy, takie jak pola, właściwości i inne metody, aby śledzić, co się dzieje w kodzie.
 
@@ -126,7 +126,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
  ![Metody używające pola na mapie kodu stosu wywołań](../debugger/media/debuggermap_foundallreferences.png)
 
-## <a name="find-bugs-using-the-map"></a><a name="FindBugs"></a>Znajdowanie usterek przy użyciu mapy
+## <a name="find-bugs-using-the-map"></a><a name="FindBugs"></a> Znajdowanie usterek przy użyciu mapy
 
  Wizualizacja kodu pomoże w szybszym znalezieniu błędów. Załóżmy na przykład, że badasz usterkę w programie do rysowania. Po narysowaniu linii, w przypadku próby cofnięcia nic się nie dzieje, aż do rysowania kolejnej linii.
 
@@ -140,7 +140,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
  ![Dodaj nowe wywołanie metody do stosu wywołań na mapie kodu](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
-## <a name="q--a"></a><a name="QA"></a>P & A
+## <a name="q--a"></a><a name="QA"></a> P & A
 
 - **Nie wszystkie wywołania są wyświetlane na mapie. Zalet?**
 
@@ -200,7 +200,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
 - [Znajdowanie usterek przy użyciu mapy](#FindBugs)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
 - [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)

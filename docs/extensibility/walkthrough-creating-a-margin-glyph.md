@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b94ab61f56d74537758c189adc9c104516f67f92
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905055"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Przewodnik: Tworzenie symbolu marginesu
@@ -53,7 +53,7 @@ Możesz dostosować wygląd marginesów edytora przy użyciu rozszerzeń edytora
      [!code-csharp[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_3.cs)]
      [!code-vb[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_3.vb)]
 
-5. Implementowanie `GenerateGlyph` przez zdefiniowanie elementu interfejsu użytkownika (UI) glifów. `TodoTag`został zdefiniowany w dalszej części tego przewodnika.
+5. Implementowanie `GenerateGlyph` przez zdefiniowanie elementu interfejsu użytkownika (UI) glifów. `TodoTag` został zdefiniowany w dalszej części tego przewodnika.
 
      [!code-csharp[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_4.cs)]
      [!code-vb[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_4.vb)]

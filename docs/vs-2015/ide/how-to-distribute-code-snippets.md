@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e1a692ee29ea9d43e1a0a4fbed5c52934d69256d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476987"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Porady: rozprowadzanie wstawek kodu
@@ -28,7 +28,7 @@ Po prostu możesz nadać swoim znajomym fragmenty kodu i zainstalować je na swo
 ## <a name="setting-up-the-extension"></a>Konfigurowanie rozszerzenia
  W ramach tej procedury będziemy używać tego samego fragmentu kodu Hello world utworzonego w [przewodniku: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md). Dostarczymy tekst fragmentu, więc nie trzeba go wycofać i utworzyć.
 
-1. Utwórz nowy projekt VSIX o nazwie **TestSnippet**. (**Plik/nowy/projekt/Wizualizacja C# (lub Visual Basic/rozszerzalność**)
+1. Utwórz nowy projekt VSIX o nazwie **TestSnippet**. (**Plik/nowy/projekt/Visual C# (lub Visual Basic/rozszerzalność**)
 
 2. W projekcie **TestSnippet** Dodaj nowy plik XML i Wywołaj go **VBCodeSnippet. fragment kodu**. Zastąp zawartość następującym:
 
@@ -90,7 +90,7 @@ Po prostu możesz nadać swoim znajomym fragmenty kodu i zainstalować je na swo
 
 1. Teraz można upewnić się, że fragment kodu działa w eksperymentalnym wystąpieniu programu Visual Studio. Eksperymentalne wystąpienie to druga kopia programu Visual Studio, która jest oddzielona od użytego do pisania kodu. Umożliwia pracę nad rozszerzeniem bez wpływu na środowisko deweloperskie.
 
-2. Skompiluj projekt, a następnie rozpocząć debugowanie. Powinno zostać wyświetlone drugie wystąpienie programu Visual Studio.
+2. Skompiluj projekt i Rozpocznij debugowanie. Powinno zostać wyświetlone drugie wystąpienie programu Visual Studio.
 
 3. W eksperymentalnym wystąpieniu przejdź do pozycji **Tools/Code wstaweks Manager** i ustaw **Język** na **Basic**. Powinien być widoczny HelloWorldVB jako jeden z folderów i można rozwinąć folder, aby wyświetlić fragment kodu HelloWorldVB.
 

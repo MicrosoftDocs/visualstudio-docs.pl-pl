@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8bdaea1267d0bf69078aec5739291e72db8dfda
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532614"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Porady: migracja języka specyficznego dla domeny do nowej wersji
@@ -21,7 +21,7 @@ Można migrować projekty, które definiują i używają języka specyficznego d
 
  Narzędzie migracji należy uruchomić jawnie: nie jest uruchamiane automatycznie podczas otwierania rozwiązania w programie Visual Studio. Informacje na temat narzędzia i szczegółowe wskazówki można znaleźć w tej ścieżce:
 
- **% Files%\Microsoft programu Visual Studio SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe2010**
+ **% Files%\Microsoft programu Visual Studio SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe2010 **
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>Przed przeprowadzeniem migracji projektów DSL
  Narzędzie migracji modyfikuje pliki projektu programu Visual Studio (**. csproj**) i pliki rozwiązań (**. sln**).
@@ -84,6 +84,6 @@ Można migrować projekty, które definiują i używają języka specyficznego d
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Powiązane wpisy w blogu](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 771a6ccf4749a3464204d3da75f4d403d1ab2dd5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532720"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapowanie zależności za pomocą map kodu
@@ -185,7 +185,7 @@ Załóżmy, że masz przegląd kodu do wykonania w niektórych plikach z oczekuj
 
    Aby wyświetlić elementy członkowskie, które znajdują się w kodzie, ale nie są wyświetlane na mapie, kliknij ikonę ponownie **Pobierz elementy podrzędne** ikona ponownie ![ Pobierz elementy podrzędne ](../modeling/media/dependencygraph_deletednodesicon.png) w lewym górnym rogu grupy.
 
-6. Aby wyświetlić więcej elementów związanych z tymi elementami na mapie, wybierz jeden z nich i wybierz **Pokaż powiązane** z paskiem narzędzi Mapa kodu, a następnie wybierz typ powiązanych elementów do dodania do mapy. Alternatywnie wybierz co najmniej jeden element, otwórz menu skrótów, a następnie wybierz opcję **Pokaż** dla typu elementów pokrewnych, które mają zostać dodane do mapy. Przykład:
+6. Aby wyświetlić więcej elementów związanych z tymi elementami na mapie, wybierz jeden z nich i wybierz **Pokaż powiązane** z paskiem narzędzi Mapa kodu, a następnie wybierz typ powiązanych elementów do dodania do mapy. Alternatywnie wybierz co najmniej jeden element, otwórz menu skrótów, a następnie wybierz opcję **Pokaż** dla typu elementów pokrewnych, które mają zostać dodane do mapy. Na przykład:
 
     Dla **zestawu**wybierz:
 
