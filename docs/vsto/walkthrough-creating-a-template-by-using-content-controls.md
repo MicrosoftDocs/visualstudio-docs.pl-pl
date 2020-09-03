@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ffb7d7f9ad5453d38709802bf5e004c07bb09622
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255591"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Przewodnik: Tworzenie szablonu za pomocą kontrolek zawartości
@@ -56,9 +56,9 @@ ms.locfileid: "71255591"
 
 ### <a name="to-create-a-new-word-template-project"></a>Aby utworzyć nowy projekt szablonu programu Word
 
-1. Utwórz projekt szablonu programu Word o nazwie **MyBuildingBlockTemplate**. W kreatorze Utwórz nowy dokument w rozwiązaniu. Aby uzyskać więcej informacji, zobacz [jak: Utwórz projekty pakietu Office w programie](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+1. Utwórz projekt szablonu programu Word o nazwie **MyBuildingBlockTemplate**. W kreatorze Utwórz nowy dokument w rozwiązaniu. Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]otwiera nowy szablon programu Word w Projektancie i dodaje projekt **MyBuildingBlockTemplate** do **Eksplorator rozwiązań**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] otwiera nowy szablon programu Word w Projektancie i dodaje projekt **MyBuildingBlockTemplate** do **Eksplorator rozwiązań**.
 
 ## <a name="create-the-employee-table"></a>Tworzenie tabeli Employee
  Utwórz tabelę zawierającą cztery różne typy kontrolek zawartości, w których użytkownik może wprowadzać informacje o pracowniku.
@@ -76,20 +76,20 @@ ms.locfileid: "71255591"
    |**Nazwa pracownika**|
    |**Data zatrudnienia**|
    |**Tytuł**|
-   |**Obrazk**|
+   |**Obraz**|
 
 4. Kliknij pierwszą komórkę w drugiej kolumnie (obok pozycji **Nazwa pracownika**).
 
 5. Na wstążce kliknij kartę **deweloper** .
 
    > [!NOTE]
-   > Jeśli karta **deweloper** nie jest widoczna, należy ją najpierw pokazać. Aby uzyskać więcej informacji, zobacz [jak: Pokaż kartę Deweloper na Wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+   > Jeśli karta **deweloper** nie jest widoczna, należy ją najpierw pokazać. Aby uzyskać więcej informacji, zobacz [jak: wyświetlić kartę Deweloper na Wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-6. W grupie **Controls (kontrolki** ) kliknij przycisk **tekst** ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") , <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> aby dodać do pierwszej komórki.
+6. W grupie **formanty** kliknij przycisk **tekst** ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") , aby dodać <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> do pierwszej komórki.
 
 7. Kliknij drugą komórkę w drugiej kolumnie (obok pozycji **Data zatrudnienia**).
 
-8. W grupie **formanty** kliknij przycisk **Selektor daty** ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") , aby dodać <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> do drugiej komórki.
+8. W grupie **formanty** kliknij przycisk **selektora dat** ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") , aby dodać <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> do drugiej komórki.
 
 9. Kliknij trzecią komórkę w drugiej kolumnie (obok pozycji **tytuł**).
 
@@ -122,7 +122,7 @@ ms.locfileid: "71255591"
 
 6. Na wstążce kliknij kartę **deweloper** .
 
-7. W grupie **Controls (kontrolki** ) kliknij przycisk **tekst** ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") , <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> aby dodać do pierwszej komórki.
+7. W grupie **formanty** kliknij przycisk **tekst** ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") , aby dodać <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> do pierwszej komórki.
 
 8. Kliknij drugą komórkę drugiej kolumny (obok **klasyfikacji satysfakcji**).
 
@@ -130,10 +130,10 @@ ms.locfileid: "71255591"
 
 10. Kliknij w ostatniej komórce drugiej kolumny (obok pozycji **Komentarze**).
 
-11. W grupie **Controls (formanty** ) kliknij przycisk **tekstu sformatowanego** ![RichTextContentControl](../vsto/media/richtextcontrol.gif "RichTextContentControl") , <xref:Microsoft.Office.Tools.Word.RichTextContentControl> aby dodać do ostatniej komórki.
+11. W grupie **formanty** kliknij przycisk **tekstu sformatowanego** ![RichTextContentControl](../vsto/media/richtextcontrol.gif "RichTextContentControl") , aby dodać <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do ostatniej komórki.
 
 ## <a name="populate-the-combo-box-and-drop-down-list-programmatically"></a>Programowo Wypełnij pole kombi i listę rozwijaną
- Kontrolki zawartości można inicjować w czasie projektowania przy użyciu okna **Właściwości** w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Można je również inicjować w czasie wykonywania, co umożliwia dynamiczne ustawianie ich początkowych Stanów. W tym instruktażu należy użyć kodu do wypełnienia wpisów w <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> i <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> w czasie wykonywania, aby można było zobaczyć, jak działają te obiekty.
+ Kontrolki zawartości można inicjować w czasie projektowania przy użyciu okna **Właściwości** w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Można je również inicjować w czasie wykonywania, co umożliwia dynamiczne ustawianie ich początkowych Stanów. W tym instruktażu należy użyć kodu do wypełnienia wpisów w <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> i <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> w czasie wykonywania, aby można było zobaczyć, jak działają te obiekty.
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>Aby programowo zmodyfikować interfejs użytkownika formantów zawartości
 
@@ -150,7 +150,7 @@ ms.locfileid: "71255591"
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]
 
 ## <a name="prevent-users-from-editing-the-employee-table"></a>Uniemożliwiaj użytkownikom edytowanie tabeli pracowników
- <xref:Microsoft.Office.Tools.Word.GroupContentControl> Użyj obiektu, który został wcześniej zadeklarowany do ochrony tabeli pracowników. Po włączeniu ochrony tabeli użytkownicy mogą nadal edytować kontrolki zawartości w tabeli. Nie mogą jednak edytować tekstu w pierwszej kolumnie ani modyfikować tabeli w inny sposób, na przykład dodając lub usuwając wiersze i kolumny. Aby uzyskać więcej informacji o używaniu programu <xref:Microsoft.Office.Tools.Word.GroupContentControl> do ochrony części dokumentu, zobacz [kontrolki zawartości](../vsto/content-controls.md).
+ Użyj <xref:Microsoft.Office.Tools.Word.GroupContentControl> obiektu, który został wcześniej zadeklarowany do ochrony tabeli pracowników. Po włączeniu ochrony tabeli użytkownicy mogą nadal edytować kontrolki zawartości w tabeli. Nie mogą jednak edytować tekstu w pierwszej kolumnie ani modyfikować tabeli w inny sposób, na przykład dodając lub usuwając wiersze i kolumny. Aby uzyskać więcej informacji o używaniu programu <xref:Microsoft.Office.Tools.Word.GroupContentControl> do ochrony części dokumentu, zobacz [kontrolki zawartości](../vsto/content-controls.md).
 
 ### <a name="to-prevent-users-from-editing-the-employee-table"></a>Aby uniemożliwić użytkownikom edytowanie tabeli pracowników
 
@@ -164,7 +164,7 @@ ms.locfileid: "71255591"
 
 ### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>Aby dodać tabele do bloków konstrukcyjnych w szablonie
 
-1. Dodaj następujący kod do `ThisDocument_Startup` metody `ThisDocument` klasy po kodzie dodanym w poprzednim kroku. Ten kod dodaje nowe bloki konstrukcyjne zawierające tabele do kolekcji Microsoft. Office. Interop. Word. BuildingBlockEntries, która zawiera wszystkie bloki konstrukcyjne wielokrotnego użytku w szablonie. Nowe bloki konstrukcyjne są zdefiniowane w nowej kategorii o nazwie **Pracownik i informacje o kliencie** i są przypisane do typu `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`bloku konstrukcyjnego.
+1. Dodaj następujący kod do `ThisDocument_Startup` metody `ThisDocument` klasy po kodzie dodanym w poprzednim kroku. Ten kod dodaje nowe bloki konstrukcyjne zawierające tabele do kolekcji Microsoft. Office. Interop. Word. BuildingBlockEntries, która zawiera wszystkie bloki konstrukcyjne wielokrotnego użytku w szablonie. Nowe bloki konstrukcyjne są zdefiniowane w nowej kategorii o nazwie **Pracownik i informacje o kliencie** i są przypisane do typu bloku konstrukcyjnego `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1` .
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]
@@ -179,7 +179,7 @@ ms.locfileid: "71255591"
 
 ### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>Aby utworzyć kontrolkę zawartości, która wyświetla bloki konstrukcyjne
 
-1. Dodaj następujący kod do `ThisDocument_Startup` metody `ThisDocument` klasy po kodzie dodanym w poprzednim kroku. Ten kod inicjuje <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> obiekt, który został zadeklarowany wcześniej. Wyświetla wszystkie bloki konstrukcyjne, które są zdefiniowane w kategorii **Pracownik i informacje o kliencie** , które mają typ `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`bloku konstrukcyjnego. <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>
+1. Dodaj następujący kod do `ThisDocument_Startup` metody `ThisDocument` klasy po kodzie dodanym w poprzednim kroku. Ten kod inicjuje <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> obiekt, który został zadeklarowany wcześniej. <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>Wyświetla wszystkie bloki konstrukcyjne, które są zdefiniowane w kategorii **Pracownik i informacje o kliencie** , które mają typ bloku konstrukcyjnego `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1` .
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]
@@ -197,17 +197,17 @@ ms.locfileid: "71255591"
 
 4. Kliknij komórkę po prawej stronie **nazwy pracownika** i wpisz nazwę.
 
-     Sprawdź, czy do tej komórki można dodać tylko tekst. <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> Umożliwia użytkownikom dodawanie tylko tekstu, a nie innych typów zawartości, takich jak grafika lub tabela.
+     Sprawdź, czy do tej komórki można dodać tylko tekst. <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>Umożliwia użytkownikom dodawanie tylko tekstu, a nie innych typów zawartości, takich jak grafika lub tabela.
 
 5. Kliknij komórkę z prawej strony komórki **Data zatrudnienia** i wybierz datę w selektorze daty.
 
 6. Kliknij w komórce po prawej stronie **tytułu** , a następnie wybierz jeden z tytułów zadań w polu kombi.
 
-     Opcjonalnie wpisz nazwę stanowiska, którego nie ma na liście. Jest to możliwe, <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> ponieważ umożliwia użytkownikom wybieranie z listy wpisów lub wpisywanie własnych wpisów.
+     Opcjonalnie wpisz nazwę stanowiska, którego nie ma na liście. Jest to możliwe, ponieważ <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> umożliwia użytkownikom wybieranie z listy wpisów lub wpisywanie własnych wpisów.
 
 7. Kliknij ikonę w komórce po prawej stronie komórki **obraz** i przejdź do obrazu, aby go wyświetlić.
 
-8. Spróbuj dodać wiersze lub kolumny do tabeli, a następnie spróbuj usunąć wiersze i kolumny z tabeli. Sprawdź, czy nie można zmodyfikować tabeli. <xref:Microsoft.Office.Tools.Word.GroupContentControl> Uniemożliwia wprowadzanie jakichkolwiek modyfikacji.
+8. Spróbuj dodać wiersze lub kolumny do tabeli, a następnie spróbuj usunąć wiersze i kolumny z tabeli. Sprawdź, czy nie można zmodyfikować tabeli. <xref:Microsoft.Office.Tools.Word.GroupContentControl>Uniemożliwia wprowadzanie jakichkolwiek modyfikacji.
 
 ### <a name="to-test-the-customer-feedback-table"></a>Aby przetestować tabelę opinii klientów
 
@@ -219,26 +219,26 @@ ms.locfileid: "71255591"
 
 4. Kliknij w komórce po prawej stronie komórki **oceny zadowolenia** i wybierz jedną z dostępnych opcji.
 
-     Sprawdź, czy nie możesz wpisać własnego wpisu. <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> Umożliwia użytkownikom tylko wybieranie z listy wpisów.
+     Sprawdź, czy nie możesz wpisać własnego wpisu. <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>Umożliwia użytkownikom tylko wybieranie z listy wpisów.
 
 5. Kliknij w komórce po prawej stronie komórki **Komentarze** i wpisz niektóre komentarze.
 
-     Opcjonalnie możesz dodać zawartość inną niż tekst, na przykład kompozycję lub osadzoną tabelę. Jest to możliwe, <xref:Microsoft.Office.Tools.Word.RichTextContentControl> ponieważ umożliwia użytkownikom dodawanie zawartości innej niż tekst.
+     Opcjonalnie możesz dodać zawartość inną niż tekst, na przykład kompozycję lub osadzoną tabelę. Jest to możliwe, ponieważ <xref:Microsoft.Office.Tools.Word.RichTextContentControl> umożliwia użytkownikom dodawanie zawartości innej niż tekst.
 
-6. Sprawdź, czy można dodać wiersze lub kolumny do tabeli, a także usunąć wiersze i kolumny z tabeli. Jest to możliwe, ponieważ tabela nie jest chroniona przez umieszczenie jej w <xref:Microsoft.Office.Tools.Word.GroupContentControl>.
+6. Sprawdź, czy można dodać wiersze lub kolumny do tabeli, a także usunąć wiersze i kolumny z tabeli. Jest to możliwe, ponieważ tabela nie jest chroniona przez umieszczenie jej w <xref:Microsoft.Office.Tools.Word.GroupContentControl> .
 
 7. Zamknij szablon.
 
 ## <a name="next-steps"></a>Następne kroki
  Więcej informacji na temat korzystania z formantów zawartości można znaleźć w tym temacie:
 
-- Powiąż formanty zawartości z fragmentami kodu XML, które są również nazwami niestandardowych części XML, które są osadzone w dokumencie. Aby uzyskać więcej informacji, [zobacz Przewodnik: Powiąż formanty zawartości z niestandardowymi częściami](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)XML.
+- Powiąż formanty zawartości z fragmentami kodu XML, które są również nazwami niestandardowych części XML, które są osadzone w dokumencie. Aby uzyskać więcej informacji, zobacz [Przewodnik: powiązywanie kontrolek zawartości z niestandardowymi częściami XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
 - [Kontrolki zawartości](../vsto/content-controls.md)
 - [Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)
-- [Instrukcje: Ochrona części dokumentów za pomocą kontrolek zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
+- [Instrukcje: ochrona części dokumentów za pomocą kontrolek zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
 - [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)

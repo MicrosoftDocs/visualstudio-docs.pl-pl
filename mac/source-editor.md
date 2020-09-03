@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: c4a22ec0765c39a8bec83f9e2acff7b22b706890
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173099"
 ---
 # <a name="source-editor"></a>Edytor źródła
@@ -78,7 +78,7 @@ Kolor wyróżnienia jest również przydatny do oznaczania, że element jest prz
 
 ![przykład pokazujący kolor wyróżnienia](media/source-editor-image7.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Funkcje edytora kodu (Visual Studio w systemie Windows)](/visualstudio/ide/writing-code-in-the-code-and-text-editor)
 - [Tworzenie konspektu (Visual Studio w systemie Windows)](/visualstudio/ide/outlining)

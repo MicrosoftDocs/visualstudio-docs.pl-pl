@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::SetObjectForVisualizer | Dokumenty firmy Microsoft
+title: 'IEEVisualizerDataProvider:: SetObjectForVisualizer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ab63f1e74e0cd3ac64a4d7e7687a9136075b41a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718076"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
@@ -45,19 +45,19 @@ int SetObjectForVisualizer(
 
 ## <a name="parameters"></a>Parametry
 `pNewObject`\
-[w] Obiekt do skonfigurowania.
+podczas Obiekt, który ma zostać ustawiony.
 
 `error`\
-[na zewnątrz] Jeśli wystąpił błąd podczas ustawiania obiektu, ten ciąg zawiera komunikat o błędzie.
+określoną Jeśli wystąpił błąd podczas ustawiania obiektu, ten ciąg zawiera komunikat o błędzie.
 
 `pException`\
-[na zewnątrz] Jeśli wystąpił błąd, ten obiekt przechowuje informacje o wyjątku.
+określoną Jeśli wystąpił błąd, ten obiekt zawiera informacje o wyjątku.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- To do realizatora, aby określić, jak informacje o błędzie jest zwracany. Jednak jest możliwe, że niektóre obiekty wywołujące może tylko sprawdzić, czy obiekt wyjątku został zwrócony wiedzieć, że wystąpił błąd, więc ta metoda powinna zawsze zwracać obiekt wyjątku, jeśli wystąpił błąd. Ciąg błędu powinny być również dostarczane w przypadku, gdy wywołujący chce go użyć.
+ Aby określić, jak są zwracane informacje o błędzie, należy do realizatorów. Jednak istnieje możliwość, że niektóre obiekty wywołujące mogą jedynie zobaczyć, czy obiekt wyjątku został zwrócony, aby wiedzieć, że wystąpił błąd, dlatego ta metoda powinna zawsze zwracać obiekt wyjątku, jeśli wystąpił błąd. Ciąg błędu należy również podać w przypadku, gdy obiekt wywołujący chce, aby go użyć.
 
 ## <a name="see-also"></a>Zobacz też
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

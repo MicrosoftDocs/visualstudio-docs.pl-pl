@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1beeef572282a642e4a989086ac0fd228409fec
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586267"
 ---
 # <a name="validate-your-system-during-development"></a>Weryfikacja systemu w czasie opracowywania
@@ -30,7 +30,7 @@ Program Visual Studio może pomóc zapewnić zgodność oprogramowania z wymagan
 
 |**Zadania**|**Skojarzone tematy**|
 |---------------|---------------------------|
-|**Upewnij się, że model jest spójny:**<br /><br /> W zależności od sposobu, w jaki projekt używa i interpretuje modele, może być przydatne, aby nie zezwalać na niektóre kombinacje elementów. Można na przykład ograniczyć klasy UML, aby zawsze miały [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]one zgodne nazwy. Można definiować ograniczenia takie jak te w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzeniach.|-   [Weryfikowanie modelu UML](../modeling/validate-your-uml-model.md)<br />-   [Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md)|
+|**Upewnij się, że model jest spójny:**<br /><br /> W zależności od sposobu, w jaki projekt używa i interpretuje modele, może być przydatne, aby nie zezwalać na niektóre kombinacje elementów. Można na przykład ograniczyć klasy UML, aby zawsze miały one [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] zgodne nazwy. Można definiować ograniczenia takie jak te w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzeniach.|-   [Weryfikowanie modelu UML](../modeling/validate-your-uml-model.md)<br />-   [Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md)|
 |Upewnij **się, że oprogramowanie spełnia wymagania użytkowników**:<br /><br /> Aby ułatwić organizowanie testów systemu i jego składników, można użyć wymagań i modeli architektonicznych. Dzięki temu można sprawdzić wymagania, które są ważne dla użytkowników i innych uczestników projektu, oraz ułatwić szybkie aktualizowanie testów w przypadku zmiany wymagań.|-   [Opracowywanie testów z modelu](../modeling/develop-tests-from-a-model.md)|
 |**Upewnij się, że oprogramowanie pozostaje spójne z zamierzonym projektem systemu:**<br /><br /> Diagramy warstw opisują zamierzone zależności między składnikami aplikacji. Podczas opracowywania można sprawdzić, czy rzeczywiste zależności w kodzie są zgodne z zamierzonym projektem.|-   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Sprawdzanie poprawności kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|
 

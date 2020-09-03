@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerSługa | Dokumenty firmy Microsoft
+title: IEEVisualizerService | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 40d21dcc9b1da0e1e2250adcfad59b3ef46a2113
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717942"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład ewaluatora zarządzanych wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniania wyrażeń jest przestarzały. Aby uzyskać informacje na temat implementowania oceniania wyrażeń CLR, zobacz [oszacowania wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykłady ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Ten interfejs implementuje kluczowe metody, które dostarczają funkcje do interfejsów [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) i [IPropertyProxyEESide.](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
+ Ten interfejs implementuje podstawowe metody, które dostarczają funkcje do interfejsów [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) i [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) .
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,31 +32,31 @@ IEEVisualizerService : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Visual Studio implementuje ten interfejs, aby umożliwić oceniający wyrażenie (EE) do obsługi wizualizatorów typów.
+ Program Visual Studio implementuje ten interfejs, aby umożliwić ewaluatora wyrażeń (EE) obsługę wizualizatorów typów.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- EE wywołuje [CreateVisualizerService,](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md) aby uzyskać ten interfejs jako część jego obsługi wizualizatorów typu.
+ EE dzwoni do [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md) w celu uzyskania tego interfejsu jako części obsługi wizualizatorów typów.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|Pobiera liczbę niestandardowych widzów, o których ta usługa wie.|
-|[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)|Pobiera listę niestandardowych widzów.|
+|[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|Pobiera liczbę niestandardowych podglądów, o których wie ta usługa.|
+|[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)|Pobiera listę niestandardowych osób przeglądających.|
 |[GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)|Zwraca obiekt proxy dla właściwości.|
 |[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|Pobiera liczbę ciągów wartości do wyświetlenia dla określonej właściwości lub pola.|
 
 ## <a name="remarks"></a>Uwagi
- IDE używa interfejsu [IDebugProperty3,](../../../extensibility/debugger/reference/idebugproperty3.md) aby ustalić, czy istnieją jakieś niestandardowe przeglądarki lub wizualizatory typu dla właściwości. Tworząc usługę wizualizatora (z [CreateVisualizerService),](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)EE może `IDebugProperty3` dostarczyć funkcje do i [IPropertyProxyEEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) (który obsługuje wyświetlanie i zmienianie wartości właściwości) interfejsów, a tym samym obsługi wizualizatorów typu.
+ IDE używa interfejsu [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) , aby ustalić, czy istnieją jakieś niestandardowe przeglądarki lub Wizualizatory typu dla właściwości. Tworząc usługę wizualizatora (z [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)), EE mogą oferować funkcje `IDebugProperty3` i [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) (obsługujące wyświetlanie i zmienianie interfejsów wartości właściwości), a tym samym obsługę wizualizatorów typów.
 
- Jeśli EE ma niestandardowe przeglądarki, które samodzielnie implementuje, EE może dołączyć `CLSID`s tych niestandardowych widzów na końcu listy zwróconej przez [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md). Dzięki temu EE do obsługi zarówno wizualizatorów typu i własnych niestandardowych widzów. Upewnij się tylko, że [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) odzwierciedla dodanie dowolnych niestandardowych widzów.
+ Jeśli EE zawiera niestandardowe przeglądające, które same implementują, EE mogą dołączać `CLSID` te niestandardowe osoby do końca listy zwróconej przez [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md). Dzięki temu do obsługi programów do wizualizacji typów i własnych, niestandardowych osób przeglądających. Upewnij się, że [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) odzwierciedla dodanie jakichkolwiek niestandardowych osób przeglądających.
 
- Zobacz [Wizualizator typów i Przeglądarka niestandardowa, aby](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) zapoznać się z omówieniam różnicy między wizualizatorami a przeglądarkami.
+ Zobacz [wizualizator typów i Podgląd niestandardowy](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) w celu omówienia różnic między wizualizatorami i osobami przeglądających.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: ee.h
+ Nagłówek: EE. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

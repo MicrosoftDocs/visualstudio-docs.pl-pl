@@ -1,5 +1,5 @@
 ---
-title: Udostępnianie zdarzeń w programie Visual Studio SDK | Dokumentacja firmy Microsoft
+title: Uwidacznianie zdarzeń w zestawie Visual Studio SDK | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,71 +12,71 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7056497c505bbb355287416e468e411b4e5a2a62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196682"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Udostępnianie zdarzeń w zestawie Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Umożliwia źródeł zdarzeń za pomocą automatyzacji. Zaleca się, że źródła zdarzeń dla projektów i elementów projektu.  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] umożliwia źródło zdarzeń przy użyciu automatyzacji. Zalecamy źródło zdarzeń dla projektów i elementów projektu.  
   
- Zderzenia są pobierane przez klientów automatyzacji z <xref:EnvDTE.DTEClass.Events%2A> obiektu lub <xref:EnvDTE.DTEClass.GetObject%2A> ("EventObjectName"). Wywołania środowiska `IDispatch::Invoke` przy użyciu `DISPATCH_METHOD` lub `DISPATCH_PROPERTYGET` flagi, aby zwrócić zdarzenie.  
+ Zdarzenia są pobierane przez użytkowników usługi Automation z <xref:EnvDTE.DTEClass.Events%2A> obiektu lub <xref:EnvDTE.DTEClass.GetObject%2A> ("EventObjectName"). Środowisko wywołuje przy `IDispatch::Invoke` użyciu `DISPATCH_METHOD` `DISPATCH_PROPERTYGET` flag lub w celu zwrócenia zdarzenia.  
   
- Następujący proces wyjaśnia, jak są zwracane zdarzeń specyficznych dla pakietu VSPackage.  
+ Poniższy proces wyjaśnia, jak są zwracane zdarzenia specyficzne dla pakietu VSPackage.  
   
-1. Uruchamia środowisko.  
+1. Środowisko zostanie uruchomione.  
   
-2. Odczytuje z rejestru wszystkie nazwy wartości w ramach usługi Automation, AutomationEvents i AutomationProperties klucze wszystkich pakietów VSPackage, a te nazwy są przechowywane w tabeli.  
+2. Odczytuje z rejestru wszystkie nazwy wartości w kluczach Automatyzacja, AutomationEvents i AutomationProperties wszystkich pakietów VSPackage i przechowuje te nazwy w tabeli.  
   
-3. Wywołuje konsumenta automatyzacji, w tym przykładzie `DTE.Events.AutomationProjectsEvents` lub `DTE.Events.AutomationProjectItemsEvents`.  
+3. Wywołania konsumenta usługi Automation, w tym przykładzie `DTE.Events.AutomationProjectsEvents` lub `DTE.Events.AutomationProjectItemsEvents` .  
   
-4. Środowisko znajduje parametr ciągu w tabeli i ładuje odpowiedniego pakietu VSPackage.  
+4. Środowisko znajduje parametr ciągu w tabeli i ładuje odpowiednie pakietu VSPackage.  
   
-5. Wywołania środowiska <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metody przy użyciu nazwy przekazywane w wywołaniu; w tym przykładzie AutomationProjectsEvents lub AutomationProjectItemsEvents.  
+5. Środowisko wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metodę przy użyciu nazwy przekazaną w wywołaniu; w tym przykładzie AutomationProjectsEvents lub AutomationProjectItemsEvents.  
   
-6. Pakietu VSPackage tworzy obiekt główny, który zawiera metody, takie jak `get_AutomationProjectsEvents` i `get_AutomationProjectItemEvents` , a następnie zwraca wskaźnik interfejsu IDispatch do obiektu.  
+6. Pakietu VSPackage tworzy obiekt główny, który ma metody, takie jak `get_AutomationProjectsEvents` i `get_AutomationProjectItemEvents` , a następnie zwraca wskaźnik IDispatch do obiektu.  
   
-7. Środowisko wywołuje odpowiednią metodę na podstawie nazwy przekazane do wywołania usługi automation.  
+7. Środowisko wywołuje odpowiednią metodę na podstawie nazwy przekazaną do wywołania automatyzacji.  
   
-8. `get_` Metoda tworzy inny obiekt zdarzeń w oparciu o IDispatch, który implementuje interfejsy `IConnectionPointContainer` interfejsu i `IConnectionPoint` interfejs i zwraca IDispatchpointer do obiektu.  
+8. `get_`Metoda tworzy inny obiekt zdarzenia na podstawie IDispatch, który implementuje `IConnectionPointContainer` interfejs i `IConnectionPoint` interfejs i zwraca IDispatchpointer do obiektu.  
   
-   Aby udostępnić zdarzenia przy użyciu usługi automation, musi odpowiadać na <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> i obserwowanie ciągów, które można dodać do rejestru. W przykładowym projekcie podstawowe ciągi są "BscProjectsEvents" i "BscProjectItemsEvents".  
+   Aby uwidocznić zdarzenie przy użyciu automatyzacji, musisz odpowiedzieć na <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> i obejrzeć ciągi dodawane do rejestru. W podstawowym przykładzie projektu ciągi to "BscProjectsEvents" i "BscProjectItemsEvents".  
   
-## <a name="registry-entries-from-the-basic-project-sample"></a>Wpisy rejestru z przykładowym projekcie podstawowe  
- W tej sekcji pokazano, gdzie należy dodać wartości zdarzeń automatyzacji do rejestru.  
+## <a name="registry-entries-from-the-basic-project-sample"></a>Wpisy rejestru z przykładu podstawowego projektu  
+ W tej sekcji przedstawiono, gdzie dodać wartości zdarzeń automatyzacji do rejestru.  
   
- [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\< PkgGUID\>\AutomationEvents]  
+ [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\8.0\Packages \\<PkgGUID \> \AutomationEvents]  
   
- "AutomationProjectEvents"="zwraca obiekt AutomationProjectEvents"  
+ "AutomationProjectEvents" = "zwraca obiekt AutomationProjectEvents"  
   
- "AutomationProjectItemEvents"="zwraca obiekt AutomationProjectItemsEvents"  
+ "AutomationProjectItemEvents" = "zwraca obiekt AutomationProjectItemsEvents"  
   
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
-|Domyślne (@)|REG_SZ|Nieużywane|Nieużywane. Dokumentacja, można użyć pola danych.|  
-|AutomationProjectsEvents|REG_SZ|Nazwa obiektu zdarzenia.|Dotyczy tylko nazwę klucza. Dokumentacja, można użyć pola danych.<br /><br /> W tym przykładzie pochodzi z przykładowym projekcie podstawowe.|  
-|AutomationProjectItemEvents|REG_SZ|Nazwa obiektu zdarzenia|Dotyczy tylko nazwę klucza. Dokumentacja, można użyć pola danych.<br /><br /> W tym przykładzie pochodzi z przykładowym projekcie podstawowe.|  
+|Wartość domyślna (@)|REG_SZ|Nieużywane|Nieużywany. W celu uzyskania dokumentacji można użyć pola dane.|  
+|AutomationProjectsEvents|REG_SZ|Nazwa obiektu zdarzenia.|Istotna jest tylko nazwa klucza. W celu uzyskania dokumentacji można użyć pola dane.<br /><br /> Ten przykład pochodzi z podstawowego przykładu projektu.|  
+|AutomationProjectItemEvents|REG_SZ|Nazwa obiektu zdarzenia|Istotna jest tylko nazwa klucza. W celu uzyskania dokumentacji można użyć pola dane.<br /><br /> Ten przykład pochodzi z podstawowego przykładu projektu.|  
   
- Gdy dowolne obiekty zdarzeń są wymagane przez konsumenta automatyzacji, należy utworzyć główny obiekt, który posiada metody do dowolnego zdarzenia, który obsługuje Twoja pakietu VSPackage. Środowisko wywołuje odpowiednią `get_` metody dla tego obiektu. Na przykład jeśli `DTE.Events.AutomationProjectsEvents` jest wywoływana, `get_AutomationProjectsEvents` wywołania metody dla obiektu głównego.  
+ Gdy klient usługi Automation żąda dowolnego obiektu zdarzenia, Utwórz obiekt główny, który ma metody dla każdego zdarzenia obsługiwanego przez pakietu VSPackage. Środowisko wywołuje odpowiednią `get_` metodę dla tego obiektu. Na przykład, jeśli `DTE.Events.AutomationProjectsEvents` jest wywoływana, `get_AutomationProjectsEvents` Metoda na obiekcie głównym jest wywoływana.  
   
  ![Zdarzenia projektu programu Visual Studio](../../extensibility/internals/media/projectevents.gif "ProjectEvents")  
 Model automatyzacji dla zdarzeń  
   
- Klasa `CProjectEventsContainer` reprezentuje obiekt źródłowy dla BscProjectsEvents, podczas gdy `CProjectItemsEventsContainer` reprezentuje obiekt źródłowy dla BscProjectItemsEvents.  
+ Klasa `CProjectEventsContainer` reprezentuje obiekt źródłowy dla elementu BscProjectsEvents, podczas gdy `CProjectItemsEventsContainer` reprezentuje obiekt źródłowy dla BscProjectItemsEvents.  
   
- W większości przypadków musi zwracać nowy obiekt dla każdego żądania zdarzenia, ponieważ większość obiektów zdarzeń obiektu filtra. Gdy środowisko zdarzenia sprawdza ten filtr, aby sprawdzić, czy program obsługi zdarzeń jest wywoływana.  
+ W większości przypadków należy zwrócić nowy obiekt dla każdego żądania zdarzenia, ponieważ większość obiektów zdarzeń pobiera obiekt Filter. Gdy uruchamiasz zdarzenie, zaznacz ten filtr, aby sprawdzić, czy program obsługi zdarzeń jest wywoływany.  
   
- AutomationEvents.h i AutomationEvents.cpp zawierać deklaracje i implementacje klas w poniższej tabeli.  
+ AutomationEvents. h i AutomationEvents. cpp zawierają deklaracje i implementacje klas w poniższej tabeli.  
   
-|Class|Opis|  
+|Klasa|Opis|  
 |-----------|-----------------|  
-|`CAutomationEvents`|Implementuje obiekt główny zdarzenia pobierane `DTE.Events` obiektu.|  
-|`CProjectsEventsContainer` i `CProjectItemsEventsContainer`|Implementowanie obiektów źródła zdarzeń, które są aktywowane pokrewnych zdarzeń.|  
+|`CAutomationEvents`|Implementuje obiekt główny zdarzenia pobrany z `DTE.Events` obiektu.|  
+|`CProjectsEventsContainer` i `CProjectItemsEventsContainer`|Implementowanie obiektów źródłowych zdarzeń, które wyzwalają odpowiednie zdarzenia.|  
   
- W poniższym przykładzie kodu pokazano, jak odpowiedzieć na żądanie dotyczące obiektu zdarzenia.  
+ Poniższy przykład kodu pokazuje, jak odpowiedzieć na żądanie dla obiektu zdarzenia.  
   
 ```cpp#  
 STDMETHODIMP CVsPackage::GetAutomationObject(  
@@ -107,9 +107,9 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 }  
 ```  
   
- W powyższym kodzie `g_wszAutomationProjects` jest nazwą kolekcji projektów ("FigProjects"), `g_wszAutomationProjectsEvents` ("FigProjectsEvents") i `g_wszAutomationProjectItemsEvents` ("FigProjectItemEvents") są nazwami zdarzeń związanych z projektem i elementy projektu, zdarzenia, które pochodzą z usługi Implementacja pakietu VSPackage.  
+ W powyższym kodzie, `g_wszAutomationProjects` jest nazwą kolekcji projektu ("FigProjects"), `g_wszAutomationProjectsEvents` ("FigProjectsEvents") i `g_wszAutomationProjectItemsEvents` ("FigProjectItemEvents") są nazwami zdarzeń projektu i zdarzeń elementów projektu, które są źródłem z implementacji pakietu VSPackage.  
   
- Obiekty zdarzeń są pobierane z tej samej lokalizacji centralnej `DTE.Events` obiektu. Dzięki temu wszystkie obiekty zdarzeń są grupowane, aby użytkownik końcowy nie ma do przeglądania modelu całego obiektu, aby znaleźć konkretne wydarzenie. Umożliwia to również podać konkretne obiekty pakietu VSPackage, zamiast konieczności wykonania kodu dla zdarzeń dotyczących całego systemu. Jednak dla użytkownika końcowego, który należy znaleźć zdarzenie dla Twojego `ProjectItem` interfejsu nie jest od razu jasne, z której ten obiekt jest pobierany.  
+ Obiekty zdarzeń są pobierane z tej samej centralnej lokalizacji, `DTE.Events` obiektu. Dzięki temu wszystkie obiekty zdarzeń są pogrupowane w taki sposób, aby użytkownicy końcowi nie musieli przeglądać całego modelu obiektów w celu znalezienia konkretnego zdarzenia. Umożliwia to również dostarczenie określonych obiektów pakietu VSPackage, zamiast konieczności implementowania własnego kodu dla zdarzeń na poziomie systemu. Jednak dla użytkownika końcowego, który musi znaleźć zdarzenie dla `ProjectItem` interfejsu, nie jest natychmiast czyszczony od miejsca, w którym jest pobierany obiekt zdarzenia.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>   

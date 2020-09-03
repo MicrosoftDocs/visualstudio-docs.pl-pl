@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3b7a62ee2b55bf2b56ae1d8e28fc1910ed444c29
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904927"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Przewodnik: Dostosowywanie widoku tekstu
@@ -54,9 +54,9 @@ Widok tekstu można dostosować, modyfikując dowolne z następujących właści
 
 3. Zadeklaruj klasę o nazwie `TestViewCreationListener` , która dziedziczy z <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> . Wyeksportuj tę klasę o następujących atrybutach:
 
-   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>, aby określić typ zawartości, do której ma zastosowanie ten odbiornik.
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> , aby określić typ zawartości, do której ma zastosowanie ten odbiornik.
 
-   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>Aby określić rolę tego odbiornika.
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> Aby określić rolę tego odbiornika.
 
      [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
      [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]
@@ -85,7 +85,7 @@ Widok tekstu można dostosować, modyfikując dowolne z następujących właści
 
     - Margines wskaźnika (po lewej stronie widoku tekstu) powinien być jasnozielony.
 
-3. Wybierz wpisanego tekstu. Kolor zaznaczonego tekstu powinien być jasny różowy.
+3. Zaznacz wpisany tekst. Kolor zaznaczonego tekstu powinien być jasny różowy.
 
 4. Gdy tekst jest zaznaczony, kliknij gdziekolwiek poza oknem tekstu. Kolor zaznaczonego tekstu powinien być ciemny różowy.
 

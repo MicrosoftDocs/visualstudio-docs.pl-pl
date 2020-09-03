@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5707ef277892c37cab16f78ac11113194a95e190
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663504"
 ---
 # <a name="signing-page-project-designer"></a>Strona podpisywania, Projektant projektu
@@ -55,18 +55,18 @@ Na stronie **podpisywanie** **projektanta projektu** można podpisać aplikacje 
 
  Przycisk **Utwórz certyfikat testowy** umożliwia utworzenie certyfikatu do testowania. Certyfikat testowy jest używany do podpisywania aplikacji ClickOnce i manifestów wdrożenia.
 
- Kliknięcie przycisku **Utwórz certyfikat testowy** otwiera okno dialogowe **Tworzenie certyfikatu testowego** , w którym można wpisać hasło dla pliku klucza o silnej nazwie dla certyfikatu testowego. Plik ma nazwę *ProjectName*_TemporaryKey. pfx. Jeśli klikniesz przycisk **OK** bez wpisywania hasła, plik PFX nie jest szyfrowany hasłem.
+ Kliknięcie przycisku **Utwórz certyfikat testowy** otwiera okno dialogowe **Tworzenie certyfikatu testowego** , w którym można wpisać hasło dla pliku klucza o silnej nazwie dla certyfikatu testowego. Plik ma nazwę *projectname*_TemporaryKey. pfx. Jeśli klikniesz przycisk **OK** bez wpisywania hasła, plik PFX nie jest szyfrowany hasłem.
 
  Pole **adresu URL serwera znacznika czasowego** określa adres serwera, na którym sygnatura czasowa jest sygnaturą. Po podaniu certyfikatu ta lokacja zewnętrzna weryfikuje czas, w którym aplikacja została podpisana.
 
 ## <a name="assembly-signing"></a>Podpisywanie zestawów
  Pole wyboru **podpisz zestaw** zaznacz to pole wyboru, aby podpisać zestaw i utworzyć silnie nazwany plik klucza. Aby uzyskać więcej informacji na temat podpisywania zestawu przy użyciu **projektanta projektu**, zobacz [How to: Sign a Assembly (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).
 
- Ta opcja używa narzędzia Al. exe dostarczonego przez [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] do podpisania zestawu. Aby uzyskać więcej informacji na temat Al. exe, zobacz [How to: Sign a Assembly with silnej nazwy](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).
+ Ta opcja używa narzędzia Al.exe dostarczonego przez program [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] w celu podpisania zestawu. Aby uzyskać więcej informacji na temat Al.exe, zobacz [How to: Sign a Assembly with silnej nazwy](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).
 
- **Wybierz listę plików klucza o silnej nazwie** umożliwia określenie nowego lub istniejącego silnego pliku klucza, który jest używany do podpisywania zestawu. Wybierz **\<Browse... >** wybrać istniejący plik klucza.
+ **Wybierz listę plików klucza o silnej nazwie** umożliwia określenie nowego lub istniejącego silnego pliku klucza, który jest używany do podpisywania zestawu. Wybierz **\<Browse...>** , aby wybrać istniejący plik klucza.
 
- Wybierz **\<New... >** utworzyć nowy plik klucza, za pomocą którego ma zostać podpisywany zestaw. Zostanie wyświetlone okno dialogowe **Tworzenie klucza silnej nazwy** , za pomocą którego można określić nazwę pliku klucza i chronić plik klucza hasłem. Hasło musi mieć długość co najmniej 6 znaków. Jeśli określisz hasło, zostanie utworzony plik wymiany informacji osobistych (pfx). Jeśli nie określisz hasła, zostanie utworzony plik o silnej nazwie (. snk).
+ Wybierz, **\<New...>** Aby utworzyć nowy plik klucza, za pomocą którego chcesz podpisać zestaw. Zostanie wyświetlone okno dialogowe **Tworzenie klucza silnej nazwy** , za pomocą którego można określić nazwę pliku klucza i chronić plik klucza hasłem. Hasło musi mieć długość co najmniej 6 znaków. Jeśli określisz hasło, zostanie utworzony plik wymiany informacji osobistych (pfx). Jeśli nie określisz hasła, zostanie utworzony plik o silnej nazwie (. snk).
 
  Przycisk **Zmień hasło** umożliwia zmianę hasła do pliku klucza wymiany informacji osobistych (pfx), który jest używany do podpisywania zestawu.
 
@@ -74,10 +74,10 @@ Na stronie **podpisywanie** **projektanta projektu** można podpisać aplikacje 
 
  Pole wyboru **Opóźnij tylko znakowanie** zaznacz to pole wyboru, aby włączyć podpisywanie opóźnienia.
 
- Należy zauważyć, że podpisany z opóźnieniem projekt nie zostanie uruchomiony i nie będzie można go debugować. Można jednak użyć programu [SN. exe (Narzędzie silnej nazwy)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) z opcją `-Vr`, aby pominąć weryfikację podczas opracowywania.
+ Należy zauważyć, że podpisany z opóźnieniem projekt nie zostanie uruchomiony i nie będzie można go debugować. Można jednak użyć [Sn.exe (narzędzia silnej nazwy)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) z `-Vr` opcją pominięcia weryfikacji podczas opracowywania.
 
 > [!NOTE]
 > Po podpisaniu zestawu użytkownik może nie mieć zawsze dostępu do klucza prywatnego. Na przykład organizacja może mieć silnie chronioną parę kluczy, dla których deweloperzy nie mają dostępu codziennie. Klucz publiczny może być dostępny, ale dostęp do klucza prywatnego jest ograniczony do kilku osób. W takim przypadku można użyć *opóźnionego* lub *częściowego podpisywania* , aby podać klucz publiczny, odwołując dodanie klucza prywatnego do momentu, gdy zestaw nie zostanie przekazany.
 
 ## <a name="see-also"></a>Zobacz też
- [Właściwości projektu odwołują](../../ide/reference/project-properties-reference.md) się do [zarządzania zestawem i manifestu podpisywania](../../ide/managing-assembly-and-manifest-signing.md) [silnej nazwy dla aplikacji zarządzanych](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5) , jak: podpisywanie [aplikacji i manifestów wdrożenia](../../ide/how-to-sign-application-and-deployment-manifests.md) [instrukcje: podpisywanie zestawu (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564) [Instrukcje: podpisywanie zestawu o](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) silnej nazwie [zestawy o silnych](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b) nazwach
+ [Właściwości projektu odwołują](../../ide/reference/project-properties-reference.md) się do [zarządzania zestawem i manifestu podpisywania](../../ide/managing-assembly-and-manifest-signing.md) [silnej nazwy dla aplikacji zarządzanych](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5) , jak: podpisywanie [aplikacji i manifestów wdrożenia](../../ide/how-to-sign-application-and-deployment-manifests.md) [instrukcje: podpisywanie zestawu (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564) [instrukcje: podpisywanie zestawu o silnej](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [nazwie zestawy](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b) o silnych nazwach

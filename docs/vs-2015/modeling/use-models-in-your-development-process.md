@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4db3506ca21289c8ffda8582337cd8027a261438
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586362"
 ---
 # <a name="use-models-in-your-development-process"></a>Używanie modeli w procesie tworzenia aplikacji
@@ -48,7 +48,7 @@ W programie Visual Studio można użyć modelu, aby pomóc zrozumieć i zmienić
  W obu przypadkach tworzenie modelu prawie zawsze skutkuje znaczącą redukcją niespójności i niejasności. Różne osoby zainteresowane często mają różne zrozumienia świata firmy, w których działa system, a różni deweloperzy często mają różne zrozumienie sposobu działania systemu. Korzystanie z modelu jako fokus dyskusji zwykle ujawnia te różnice. Aby uzyskać więcej informacji na temat sposobu ograniczania niespójności przy użyciu modelu, zobacz [wymagania dotyczące modelu użytkownika](../modeling/model-user-requirements.md).
 
 ### <a name="use-models-with-other-artifacts"></a>Używanie modeli z innymi artefaktami
- Model nie należy do specyfikacji wymagań lub architektury. Jest to narzędzie, które umożliwia bardziej przejrzyste prezentowanie niektórych aspektów tych elementów, ale nie wszystkie pojęcia wymagane podczas projektowania oprogramowania. W związku z tym modele powinny być używane razem z innymi środkami komunikacji, takimi jak strony lub akapity programu OneNote, Microsoft Office [!INCLUDE[esprfound](../includes/esprfound-md.md)]dokumenty, elementy robocze w programie, lub notatki programu Sticky Notes na ścianie pokojowej. Oprócz ostatniego elementu wszystkie te typy obiektów mogą być połączone z elementami części modelu.
+ Model nie należy do specyfikacji wymagań lub architektury. Jest to narzędzie, które umożliwia bardziej przejrzyste prezentowanie niektórych aspektów tych elementów, ale nie wszystkie pojęcia wymagane podczas projektowania oprogramowania. W związku z tym modele powinny być używane razem z innymi środkami komunikacji, takimi jak strony lub akapity programu OneNote, Microsoft Office dokumenty, elementy robocze w programie [!INCLUDE[esprfound](../includes/esprfound-md.md)] , lub notatki programu Sticky Notes na ścianie pokojowej. Oprócz ostatniego elementu wszystkie te typy obiektów mogą być połączone z elementami części modelu.
 
  Inne aspekty specyfikacji, które są zwykle używane razem z modelami, to m.in.: W zależności od skali i stylu projektu można użyć kilku z tych aspektów lub nie używać żadnego z nich w ogóle:
 
@@ -86,7 +86,7 @@ W programie Visual Studio można użyć modelu, aby pomóc zrozumieć i zmienić
 
 - Przed końcem każdej iteracji należy posiadać warsztat dotyczący wymagań, aby szczegółowo definiować wymagania lub historie użytkownika, które zostaną opracowane w następnej iteracji. Zapraszaj użytkowników i uczestników współpracy, którzy mogą decydować o priorytetach, a także deweloperów i testerów systemu. Zezwalaj na trzy godziny, aby zdefiniować wymagania dla iteracji 2-tygodniowej.
 
-- Celem warsztatu jest to, że wszyscy zgadzają się na to, co zostanie osiągnięte przez zakończenie następnej iteracji. Używaj modeli jako jednego z narzędzi, które ułatwią wyjaśnienie wymagań. Dane wyjściowe warsztatu to zaległość iteracji: to jest lista zadań deweloperskich w programie [!INCLUDE[esprfound](../includes/esprfound-md.md)] i zestawów testów w programie. [!INCLUDE[TCMext](../includes/tcmext-md.md)]
+- Celem warsztatu jest to, że wszyscy zgadzają się na to, co zostanie osiągnięte przez zakończenie następnej iteracji. Używaj modeli jako jednego z narzędzi, które ułatwią wyjaśnienie wymagań. Dane wyjściowe warsztatu to zaległość iteracji: to jest lista zadań deweloperskich w programie [!INCLUDE[esprfound](../includes/esprfound-md.md)] i zestawów testów w programie [!INCLUDE[TCMext](../includes/tcmext-md.md)] .
 
 - W warsztatach dotyczących wymagań należy omówić projekt tylko w miarę potrzeb, aby określić oszacowania dla zadań deweloperskich. W przeciwnym razie należy zachować dyskusję z zachowaniem systemu, które użytkownicy mogą bezpośrednio korzystać z programu. Zachowaj model wymagań niezależnie od modelu architektury.
 

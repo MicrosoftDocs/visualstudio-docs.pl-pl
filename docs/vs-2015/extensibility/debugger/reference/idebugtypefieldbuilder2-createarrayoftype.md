@@ -1,5 +1,5 @@
 ---
-title: IDebugTypeFieldBuilder2::CreateArrayOfType | Dokumentacja firmy Microsoft
+title: 'IDebugTypeFieldBuilder2:: CreateArrayOfType | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b02b7c6ef29e1b6c00b5d5a0b7fbfa93c03f132b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152889"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
@@ -43,16 +43,16 @@ int CreateArrayOfType (
   
 #### <a name="parameters"></a>Parametry  
  `pTypeField`  
- [in] Typ elementów, które będą przechowywane w tablicy.  
+ podczas Typ elementów, które będą przechowywane w tablicy.  
   
  `rank`  
- [in] Liczba elementów w tablicy.  
+ podczas Liczba elementów w tablicy.  
   
  `pArrayOfTypeField`  
- [out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekty reprezentujące nowej tablicy.  
+ określoną Zwraca obiekty [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) reprezentujące nową tablicę.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)

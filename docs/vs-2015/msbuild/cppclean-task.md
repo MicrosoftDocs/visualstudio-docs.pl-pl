@@ -1,5 +1,5 @@
 ---
-title: Cppclean — zadanie | Dokumentacja firmy Microsoft
+title: CPPClean — — zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -21,27 +21,27 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bddba1170cf675b5bde7ab8deed8cce1e7eb57dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196573"
 ---
 # <a name="cppclean-task"></a>CPPClean — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Usuwa pliki tymczasowe, utworzone przez program MSBuild podczas kompilowania projektu Visual C++. Proces usuwania plików kompilacji jest znany jako *czyszczenia*.  
+Usuwa pliki tymczasowe, które program MSBuild tworzy po skompilowaniu projektu Visual C++. Proces usuwania plików kompilacji jest znany jako *czyszczenie*.  
 
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry **cppclean —** zadania.  
+ W poniższej tabeli opisano parametry zadania **CPPClean —** .  
 
 |            Parametr            |                                                                                                Opis                                                                                                 |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|        **DeletedFiles**         |                               Opcjonalnie `ITaskItem[]` parametr wyjściowy.<br /><br /> Określa tablicę elementów MSBuild dane wyjściowe pliku, które może być używany i wyemitowane przez zadania.                                |
-|          **DoDelete**           |                                                            Opcjonalnie **logiczna** parametru.<br /><br /> Jeśli `true`czyszczenie tymczasowej pliki kompilacji.                                                             |
-| **FilePatternsToDeleteOnClean** |                                            Wymagane `String` parametru.<br /><br /> Określa rozdzielaną średnikami listę rozszerzeń plików, aby wyczyścić.                                             |
-|   **FilesExcludedFromClean**    |                                                    Opcjonalnie `String` parametru.<br /><br /> Określa rozdzielaną średnikami listę plików nie można wyczyścić.                                                    |
-|       **FoldersToClean**        | Wymagane `String` parametru.<br /><br /> Określa rozdzielaną średnikami listę katalogów do czyszczenia. Można określić pełną lub względną ścieżkę i ścieżki mogą zawierać symbol wieloznaczny ( **\\** \*). |
+|        **DeletedFiles**         |                               Opcjonalny `ITaskItem[]` parametr wyjściowy.<br /><br /> Definiuje tablicę elementów plików wyjściowych programu MSBuild, które mogą być używane i emitowane przez zadania.                                |
+|          **DoDelete**           |                                                            Opcjonalny parametr **logiczny** .<br /><br /> `true`Wyczyść pliki tymczasowej kompilacji.                                                             |
+| **FilePatternsToDeleteOnClean** |                                            Wymagany parametr interfejsu `String`.<br /><br /> Określa rozdzielaną średnikami listę rozszerzeń plików, które mają zostać oczyszczone.                                             |
+|   **FilesExcludedFromClean**    |                                                    Opcjonalny `String` parametr.<br /><br /> Określa rozdzielaną średnikami listę plików, które nie są czyste.                                                    |
+|       **FoldersToClean**        | Wymagany parametr interfejsu `String`.<br /><br /> Określa rozdzielaną średnikami listę katalogów do oczyszczenia. Można określić pełną lub względną ścieżkę, a ścieżka może zawierać symbol wieloznaczny ( **\\** \* ). |
 
 ## <a name="remarks"></a>Uwagi  
 

@@ -10,21 +10,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4e2c8f455818f2e034cf91f989f8277cc69f7838
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663314"
 ---
 # <a name="runtime-activity-designers"></a>Projektanci działań Runtime
-Projektanci działań środowiska uruchomieniowego są używane do utrwalania i kończenia działań przepływu pracy. Tematy zawarte w tej sekcji zawierają wskazówki dotyczące korzystania z projektantów działań [!INCLUDE[wfd2](../includes/wfd2-md.md)].
+Projektanci działań środowiska uruchomieniowego są używane do utrwalania i kończenia działań przepływu pracy. Tematy zawarte w tej sekcji zawierają wskazówki dotyczące korzystania z [!INCLUDE[wfd2](../includes/wfd2-md.md)] projektantów działań.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Utrwalanie](../workflow-designer/persist-activity-designer.md) Służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.Persist>.
+ [Utrwalanie](../workflow-designer/persist-activity-designer.md) Służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Persist> działania.
 
- [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md) Służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.TerminateWorkflow>.
+ [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md) Służy do tworzenia i konfigurowania <xref:System.Activities.Statements.TerminateWorkflow> działania.
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
 
 ## <a name="related-sections"></a>Sekcje pokrewne
  [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetStatementRange | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentContext2:: GetStatementRange | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 68411ac4ded03c83ad0ad1e414107e6591f4e975
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145059"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera zakres instrukcji pliku kontekstu dokumentu.  
+Pobiera zakres instrukcji pliku dla kontekstu dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,21 +42,21 @@ int GetStatementRange( 
   
 #### <a name="parameters"></a>Parametry  
  `pBegPosition`  
- [out w] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) strukturę, która jest wypełniane pozycja początkowa. Ustaw ten argument ma wartość null, jeśli te informacje nie są potrzebne.  
+ [in. out] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , która jest wypełniana początkową pozycją. Jeśli te informacje nie są konieczne, należy ustawić wartość null dla tego argumentu.  
   
  `pEndPosition`  
- [out w] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) strukturę, która jest wypełniane pozycji końcowej. Ustaw ten argument ma wartość null, jeśli te informacje nie są potrzebne.  
+ [in. out] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , która jest wypełniana pozycją końcową. Jeśli te informacje nie są konieczne, należy ustawić wartość null dla tego argumentu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Zakres instrukcji jest zakres wierszy, które przyczyniły się kod, do którego odwołuje się ten kontekst dokumentu.  
+ Zakres instrukcji jest zakresem wierszy, które tworzą kod, do którego odwołuje się ten kontekst dokumentu.  
   
- Aby uzyskać zakres kodu źródłowego (w tym komentarzy) w kontekście tego dokumentu, należy wywołać [getsourcerange —](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) metody.  
+ Aby uzyskać zakres kodu źródłowego (łącznie z komentarzami) w tym kontekście dokumentu, wywołaj metodę [GetSourceRange —](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) .  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CDebugContext` obiekt ujawniający [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfejsu. W tym przykładzie kopiuje pozycji końcowej tylko wtedy, gdy pozycja początku nie znajduje się wartość null.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CDebugContext` obiektu, który uwidacznia Interfejs [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) . Ten przykład wypełnia pozycję końcową tylko wtedy, gdy pozycja początkowa nie jest wartością null.  
   
 ```cpp#  
 HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,  
@@ -89,5 +89,5 @@ HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
- [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)   
+ [GetSourceRange —](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

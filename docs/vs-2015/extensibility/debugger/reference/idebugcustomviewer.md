@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomViewer | Dokumentacja firmy Microsoft
+title: IDebugCustomViewer | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f94fe0301777a615fa6dc567311c493ff55a90a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196299"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ten interfejs umożliwia ewaluatora wyrażeń (EE), aby wyświetlić wartości właściwości w dowolnych format jest konieczne.  
+Ten interfejs umożliwia ewaluatora wyrażeń (EE) wyświetlanie wartości właściwości w dowolnym formacie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,36 +31,36 @@ IDebugCustomViewer : IUknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- EE implementuje ten interfejs, aby wyświetlić wartości właściwości w niestandardowym formacie.  
+ W programie EE jest implementowany ten interfejs umożliwiający wyświetlenie wartości właściwości w formacie niestandardowym.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wywołania modelu COM `CoCreateInstance` funkcja tworzy wystąpienie tego interfejsu. `CLSID` Przekazany do `CoCreateInstance` są uzyskiwane z rejestru. Wywołanie [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) uzyskuje lokalizacji w rejestrze. Aby uzyskać szczegółowe informacje, jak również w przykładzie, zobacz uwagi.  
+ Wywołanie `CoCreateInstance` funkcji com tworzy wystąpienie tego interfejsu. `CLSID`Przesłany do `CoCreateInstance` jest uzyskiwany z rejestru. Wywołanie [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) umożliwia uzyskanie lokalizacji w rejestrze. Zobacz uwagi, aby uzyskać szczegółowe informacje, a także przykład.  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
  Ten interfejs implementuje następującą metodę:  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Nie, niezależnie od rodzaju jest niezbędne do wyświetlania danej wartości.|  
+|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Jest to konieczne, aby wyświetlić daną wartość.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ten interfejs jest używany, gdy wartość właściwości nie można wyświetlić w normalny sposób — na przykład z tabeli danych lub inny typ właściwość typu złożonego. Przeglądarka niestandardowa, reprezentowane przez `IDebugCustomViewer` interfejsu, różni się od typu wizualizatora, czyli programu zewnętrznego do wyświetlania danych określonego typu, niezależnie od tego, EE. EE implementuje podglądu niestandardowego, które są specyficzne dla tego EE. Użytkownik wybierze typ wizualizatora do użycia, Wizualizator typów i Przeglądarka niestandardowa. Zobacz [Visualizing i wyświetlanie danych](../../../extensibility/debugger/visualizing-and-viewing-data.md) Aby uzyskać szczegółowe informacje na temat tego procesu.  
+ Ten interfejs jest używany, gdy wartość właściwości nie może być wyświetlana w zwykły sposób — na przykład z tabelą danych lub innym typem złożonej właściwości. Niestandardowa przeglądarka, reprezentowana przez `IDebugCustomViewer` interfejs, różni się od wizualizatora typu, który jest zewnętrznym programem do wyświetlania danych określonego typu niezależnie od EE. Na stronie EE jest implementowana przeglądarka niestandardowa, która jest specyficzna dla tej EE. Użytkownik wybiera typ wizualizatora, który ma być używany, może być wizualizatorem typu lub podglądem niestandardowym. Zobacz [wizualizowanie i wyświetlanie danych,](../../../extensibility/debugger/visualizing-and-viewing-data.md) Aby uzyskać szczegółowe informacje na temat tego procesu.  
   
- Przeglądarka niestandardowa jest zarejestrowany w taki sam sposób jak EE i dlatego wymagają języka identyfikator GUID i identyfikator GUID dostawcy. Dokładne metryki (lub nazwę wpisu rejestru) znanego tylko EE. Ta metryka jest zwracany w [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) struktury, która z kolei jest zwracany przez wywołanie [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md). Jest wartością przechowywaną w metryce `CLSID` przekazana do modelu COM `CoCreateInstance` funkcji (Zobacz przykład).  
+ Przeglądarka niestandardowa jest zarejestrowana w taki sam sposób jak w przypadku wersji EE, dlatego wymaga identyfikatora GUID języka i identyfikatora GUID dostawcy. Dokładna Metryka (lub nazwa wpisu rejestru) jest znana tylko dla EE. Ta Metryka jest zwracana w strukturze [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) , która z kolei jest zwracana przez wywołanie [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md). Wartość przechowywana w metryce jest `CLSID` przenoszona do `CoCreateInstance` funkcji com (Zobacz przykład).  
   
- [Pomocnicy zestawu SDK do debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) funkcji `SetEEMetric`, może służyć do rejestrowania podglądu niestandardowego. W sekcji "Ewaluatory wyrażeń" rejestru `Debugging SDK Helpers` dla określonego rejestru kluczy, które wymaga podglądu niestandardowego. Należy pamiętać, że przeglądarka niestandardowa wymaga tylko jedną metrykę, (który jest definiowany przez implementujący EE) ewaluatora wyrażeń wymaga kilku predefiniowane metryki.  
+ [Pomocników zestawu SDK dla funkcji debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) , `SetEEMetric` mogą służyć do rejestrowania niestandardowych podglądów. Zapoznaj się z sekcją rejestru "oceny wyrażeń" `Debugging SDK Helpers` w temacie dotyczącym określonych kluczy rejestru wymaganych przez przeglądarkę niestandardową. Należy zauważyć, że Podgląd niestandardowy wymaga tylko jednej metryki (zdefiniowanej przez realizatora EE), podczas gdy ewaluatora wyrażeń wymaga kilku wstępnie zdefiniowanych metryk.  
   
- Normalnie, Przeglądarka niestandardowa udostępnia widok tylko do odczytu danych, ponieważ [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfejs dostarczony do [się pozycje DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) nie ma żadnych metod w przypadku zmiany wartości właściwości z wyjątkiem jako ciąg. Aby można było obsługiwać, zmieniając dowolne bloki danych, EE implementuje niestandardowy interfejs na ten sam obiekt, który implementuje `IDebugProperty3` interfejsu. Ten niestandardowy interfejs będzie dostarczać metody stosowane do zmiany dowolnego bloku danych.  
+ Zwykle przeglądarka niestandardowa udostępnia widok danych tylko do odczytu, ponieważ interfejs [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) dostarczany do [DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) nie ma metod zmieniania wartości właściwości z wyjątkiem ciągu. Aby można było obsłużyć zmianę dowolnych bloków danych, program EE implementuje interfejs niestandardowy na tym samym obiekcie, który implementuje `IDebugProperty3` interfejs. W tym interfejsie niestandardowym można następnie udostępnić metody umożliwiające zmianę dowolnego bloku danych.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie pokazano, jak można pobrać pierwszy Przeglądarka niestandardowa z właściwością, jeśli ta właściwość ma wszelkich przeglądarek niestandardowych.  
+ Ten przykład pokazuje, jak pobrać pierwszą niestandardową przeglądarkę z właściwości, jeśli ta właściwość ma jakiekolwiek niestandardowe osoby przeglądające.  
   
 ```cpp#  
 IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)  
@@ -109,5 +109,5 @@ IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
- [Pomocnicy zestawu SDK do debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
+ [Pomocnicy zestawu SDK na potrzeby debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

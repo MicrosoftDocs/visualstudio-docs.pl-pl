@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c6895abd85a4394e4ddcaebcd6f09bc0a39936cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663028"
 ---
 # <a name="visual-basic-specific-intellisense"></a>IntelliSense specyficzne dla Visual Basic
@@ -32,18 +32,18 @@ Edytor kodu źródłowego Visual Basic oferuje następujące funkcje IntelliSens
 
 - Uzupełnianie dla różnych słów kluczowych
 
-   Na przykład jeśli wpiszesz `goto` i spacja, funkcja IntelliSense wyświetli listę zdefiniowanych etykiet w menu rozwijanym. Inne obsługiwane słowa kluczowe obejmują `Exit`, `Implements`, `Option` i `Declare`.
+   Na przykład po wpisaniu `goto` i spacji funkcja IntelliSense wyświetli listę zdefiniowanych etykiet w menu rozwijanym. Inne obsługiwane słowa kluczowe obejmują `Exit` , `Implements` , `Option` , i `Declare` .
 
-- Kończenie `Enum` i `Boolean`
+- Ukończenie `Enum` i `Boolean`
 
-   Gdy instrukcja odwołuje się do elementu członkowskiego wyliczenia, funkcja IntelliSense wyświetli listę elementów członkowskich `Enum`. Gdy instrukcja będzie odnosić się do `Boolean`, IntelliSense wyświetli menu rozwijane true-false.
+   Gdy instrukcja odwołuje się do elementu członkowskiego wyliczenia, funkcja IntelliSense wyświetli listę elementów członkowskich `Enum` . Gdy instrukcja odwołuje się do programu `Boolean` , funkcja IntelliSense wyświetli menu rozwijane true-false.
 
   Zakończenie można wyłączyć domyślnie, usuwając zaznaczenie pozycji **autolista członków** z **ogólnej** strony właściwości w folderze **Visual Basic** .
 
   Można ręcznie wywołać uzupełnianie, wywołując członków listy, kompletny wyraz lub ALT + Strzałka w prawo. Aby uzyskać więcej informacji, zobacz [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md).
 
 ## <a name="intellisense-in-zone"></a>Technologia IntelliSense w strefie
- Funkcja IntelliSense w strefie wspiera Visual Basic deweloperów, którzy muszą wdrażać aplikacje za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i są ograniczone do ustawień częściowej relacji zaufania. Ta funkcja:
+ Funkcja IntelliSense w strefie pomaga Visual Basic deweloperom, którzy muszą wdrażać aplikacje w systemie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i są ograniczone do ustawień częściowej relacji zaufania. Ta funkcja:
 
 - Umożliwia wybranie uprawnień, z którymi będzie uruchamiana aplikacja.
 

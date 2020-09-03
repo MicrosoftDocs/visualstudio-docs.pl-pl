@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject2::Evaluate | Dokumentacja firmy Microsoft
+title: 'IDebugFunctionObject2:: oszacowanie | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c25e62dbfc0778fb1bf07c9108c9111f3520d87f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180969"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Wywołuje funkcję i zwraca wartość wynikowa jako obiekt.  
+Wywołuje funkcję i zwraca wynikową wartość jako obiekt.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,22 +46,22 @@ int Evaluate (
   
 #### <a name="parameters"></a>Parametry  
  `ppParams`  
- [in] Tablica [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiektów, które reprezentuje parametrów wejściowych. Każdy z tych parametrów, który został utworzony przy użyciu jednej z metod tworzenia w tym interfejsie.  
+ podczas Tablica obiektów [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , która reprezentuje parametry wejściowe. Każdy z tych parametrów został utworzony przy użyciu jednej z metod tworzenia w tym interfejsie.  
   
  `dwParams`  
- [in] Liczba parametrów w `ppParams` tablicy.  
+ podczas Liczba parametrów w `ppParams` tablicy.  
   
  `dwEvalFlags`  
- [in] Kombinacja flag z [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) wyliczenie określające sposób oceny ma zostać wykonane.  
+ podczas Kombinacja flag z wyliczenia [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) , która określa, w jaki sposób ma być przeprowadzana Ocena.  
   
  `dwTimeout`  
- [in] Określa maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj **NIESKOŃCZONEJ** czekanie w nieskończoność.  
+ podczas Określa maksymalny czas oczekiwania (w milisekundach) przed powrotem z tej metody. Używaj **nieskończoności** , aby czekać w nieskończoność.  
   
  `ppResult`  
- [out] Zwraca **IDebugObject** reprezentujący wartość funkcji jako obiekt.  
+ określoną Zwraca element **IDebugObject** , który reprezentuje wartość funkcji jako obiekt.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

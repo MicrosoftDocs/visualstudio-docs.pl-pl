@@ -10,10 +10,10 @@ manager: jillfra
 author: ghogen
 ms.author: ghogen
 ms.openlocfilehash: 5b6c07d5987c52d818a35babd16681652ddf5830
-ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87913263"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Jak działa proces lokalny z usługą Kubernetes
@@ -67,7 +67,7 @@ Po włączeniu pracy w trybie izolacji proces lokalny z programem Kubernetes wyk
 
 * Sprawdza, czy klaster Kubernetes nie ma włączonej Azure Dev Spaces.
 * Replikuje wybraną usługę w klastrze w tej samej przestrzeni nazw i dodaje etykietę *Routing.VisualStudio.IO/Route-from=service_name* i *Routing.VisualStudio.IO/Route-on-header=Kubernetes-Route-as: GENERATED_NAME* adnotację.
-* Konfiguruje i uruchamia Menedżera routingu w tej samej przestrzeni nazw klastra Kubernetes. Menedżer routingu używa selektora etykiet do wyszukiwania etykiet *Routing.VisualStudio.IO/Route-from=service_name* i *Routing.VisualStudio.IO/Route-on-header=Kubernetes-Route-as: GENERATED_NAME* adnotacji podczas konfigurowania routingu w przestrzeni nazw.
+* Konfiguruje i uruchamia Menedżera routingu w tej samej przestrzeni nazw klastra Kubernetes. Menedżer routingu używa selektora etykiet do wyszukiwania etykiet *Routing.VisualStudio.IO/Route-from=service_name* i  *Routing.VisualStudio.IO/Route-on-header=Kubernetes-Route-as: GENERATED_NAME* adnotacji podczas konfigurowania routingu w przestrzeni nazw.
 
 Jeśli proces lokalny z Kubernetes wykryje, że Azure Dev Spaces jest włączona w klastrze Kubernetes, zostanie wyświetlony monit o wyłączenie Azure Dev Spaces przed użyciem procesu lokalnego z Kubernetes.
 

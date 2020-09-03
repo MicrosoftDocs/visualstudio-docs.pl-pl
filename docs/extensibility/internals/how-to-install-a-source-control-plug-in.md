@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f88e4781115fa7a5fac54826304ab32472eeefb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905358"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Instrukcje: Instalowanie wtyczki kontroli źródła
@@ -28,7 +28,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
 3. Zarejestruj bibliotekę DLL, wprowadzając odpowiednie wpisy rejestru.
 
 ## <a name="integration-with-visual-studio"></a>Integracja z programem Visual Studio
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]obsługuje wtyczki kontroli źródła, które są zgodne z interfejsem API kontroli źródła.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje wtyczki kontroli źródła, które są zgodne z interfejsem API kontroli źródła.
 
 ### <a name="register-the-source-control-plug-in"></a>Rejestrowanie wtyczki kontroli źródła
  Zanim uruchomione zintegrowane środowisko programistyczne (IDE) może wywołać system kontroli źródła, należy najpierw znaleźć bibliotekę DLL wtyczki kontroli źródła, która eksportuje interfejs API.
@@ -79,7 +79,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
 
     Nazwa tego wpisu to nazwa dostawcy (taka sama jak wartość określona dla wpisu SCCServerName), a wartość to, po ponownym uruchomieniu, podklucz utworzony w kroku 1. Wzorzec jest **HKEY_LOCAL_MACHINE \software\sourcecodecontrolprovider\installedsccproviders \\<\> Nazwa wyświetlana**  =  *oprogramowania \\<nazwa firmy \> \\<nazwa \> produktu*.
 
-    Przykład:
+    Na przykład:
 
    |Wpis rejestru przykładowego|Wartość przykładowa|
    |---------------------------|------------------|

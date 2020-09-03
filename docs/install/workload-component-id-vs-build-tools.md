@@ -17,10 +17,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
 ms.openlocfilehash: c0e0f14dc980cf2097531587bf715164b31edfc3
-ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87805851"
 ---
 # <a name="visual-studio-build-tools-component-directory"></a>Visual Studio Build Tools katalog składników
@@ -49,7 +49,7 @@ Aby zainstalować te składniki przy użyciu Instalatora ręcznego, Pobierz i ur
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)

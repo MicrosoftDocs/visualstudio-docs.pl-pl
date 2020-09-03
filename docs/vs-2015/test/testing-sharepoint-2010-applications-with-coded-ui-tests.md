@@ -9,10 +9,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0ec4c0a9594202b6755500d683c426238264aec3
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586981"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika
@@ -53,16 +53,16 @@ Dołączenie kodowanych testów interfejsu użytkownika w aplikacji SharePoint u
 > [!WARNING]
 > Wprowadzenie tekstu w dowolnej komórce programu Excel, po którym następuje akcja klawisza Strzałka, nie rejestruje się poprawnie. Użyj myszy, aby zaznaczyć komórki.
 
- Jeśli rejestrujesz akcje w pustej komórce, musisz zmodyfikować kod przez dwukrotne kliknięcie komórki, a następnie wykonanie operacji ustawiania tekstu. Jest to potrzebne, ponieważ kliknięcie komórki, a po niej akcja klawiatury aktywuje `textarea` w komórce. Po prostu nagranie `setvalue` w pustej komórce szuka, `editbox` która nie jest dostępna do momentu kliknięcia komórki. Przykład:
+ Jeśli rejestrujesz akcje w pustej komórce, musisz zmodyfikować kod przez dwukrotne kliknięcie komórki, a następnie wykonanie operacji ustawiania tekstu. Jest to potrzebne, ponieważ kliknięcie komórki, a po niej akcja klawiatury aktywuje `textarea` w komórce. Po prostu nagranie `setvalue` w pustej komórce szuka, `editbox` która nie jest dostępna do momentu kliknięcia komórki. Na przykład:
 
 ```csharp
 Mouse.DoubliClick(uiItemCell,new Point(31,14));
 uiGridKeyboardInputEdit.Text=value;
 ```
 
- Jeśli rejestrujesz akcje w niepustej komórce, nagranie pobiera nieco bardziej skomplikowane, ponieważ po dodaniu tekstu do komórki Nowa \<kontrolka DIV> zostanie dodana jako element podrzędny komórki. Nowa \<kontrolka DIV> zawiera tekst, który właśnie został wprowadzony. Rejestrator musi rejestrować akcje na nowej \<kontrolce> DIV; jednak nie jest to możliwe, ponieważ \<Nowa kontrolka DIV> nie istnieje, dopóki nie zostanie wprowadzony test. Aby obsłużyć ten problem, należy ręcznie wprowadzić następujące zmiany w kodzie.
+ Jeśli rejestrujesz akcje w niepustej komórce, nagranie pobiera nieco bardziej skomplikowane, ponieważ chwilę dodasz tekst do komórki, nowy \<div> formant zostanie dodany jako element podrzędny komórki. Nowa \<div> kontrolka zawiera wpisany tekst. Rejestrator musi rejestrować akcje w nowej \<div> kontrolce, ale nie może, ponieważ nowy \<div> formant nie istnieje, dopóki nie zostanie wprowadzony test. Aby obsłużyć ten problem, należy ręcznie wprowadzić następujące zmiany w kodzie.
 
-1. Przejdź do inicjowania komórki i `RowIndex` `ColumnIndex` właściwości:
+1. Przejdź do inicjowania komórki i `RowIndex` `ColumnIndex` Właściwości:
 
     ```csharp
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. RowIndex] = "3";
@@ -85,13 +85,13 @@ uiGridKeyboardInputEdit.Text=value;
 
     ```
 
-3. Dodaj kod dla akcji dwukrotnego kliknięcia przycisku myszy `HtmlDiv`:
+3. Dodaj kod dla akcji dwukrotnego kliknięcia przycisku myszy `HtmlDiv` :
 
     ```csharp
     Mouse.DoubleClick(uIItemPane, new Point(31, 14)); )
     ```
 
-4. Dodaj kod, aby ustawić tekst `TextArea`:
+4. Dodaj kod, aby ustawić tekst `TextArea` :
 
     ```csharp
     uIGridKeyboardInputEdit.Text = value; }
@@ -108,7 +108,7 @@ uiGridKeyboardInputEdit.Text=value;
 
 3. Zainstaluj [programu Fiddler](http://www.fiddler2.com/fiddler2/). Jest to po prostu narzędzie, które przechwytuje i rejestruje ruch HTTP.
 
-4. Pobierz [projekt fiddlerXap](https://40jajy3iyl373v772m19fybm-wpengine.netdna-ssl.com/wp-content/uploads/sites/6/2019/02/FiddlerXapProxy.zip). Rozpakuj go, skompiluj i uruchom skrypt "CopySLHelper. bat", aby zainstalować pomocniczą bibliotekę DLL, która jest wymagana do testowania części sieci Web programu Silverlight w przypadku korzystania z narzędzia programu Fiddler.
+4. Pobierz [projekt fiddlerXap](https://40jajy3iyl373v772m19fybm-wpengine.netdna-ssl.com/wp-content/uploads/sites/6/2019/02/FiddlerXapProxy.zip). Rozpakuj go, skompiluj i uruchom skrypt "CopySLHelper.bat", aby zainstalować pomocniczą bibliotekę DLL, która jest wymagana do testowania części sieci Web programu Silverlight w przypadku korzystania z narzędzia programu Fiddler.
 
    Po skonfigurowaniu maszyny w celu rozpoczęcia testowania aplikacji SharePoint 2010 przy użyciu części sieci Web Silverlight wykonaj następujące kroki:
 
@@ -122,7 +122,7 @@ uiGridKeyboardInputEdit.Text=value;
 
 4. Rozpocznij Rejestrator i Generuj kod, taki jak dla regularnego testowania aplikacji sieci Web.
 
-5. Należy upewnić się, że wygenerowany kod odwołuje się do pliku Microsoft. VisualStudio. TestTools. UITest. Extension. Silverlight. dll.
+5. Należy upewnić się, że wygenerowany kod odwołuje się do Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll.
 
      Aby uzyskać więcej informacji, zobacz [testowanie interfejsu użytkownika SharePoint 2010 przy użyciu programu Visual Studio 2012](https://devblogs.microsoft.com/devops/ui-testing-sharepoint-2010-with-visual-studio-2012/)
 

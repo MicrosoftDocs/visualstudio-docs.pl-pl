@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c379054506672f36368b6da99c40a0a75a25e0ac
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543926"
 ---
 # <a name="intellitrace"></a>IntelliTrace
@@ -53,7 +53,7 @@ Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliT
 |**Zbieraj dane IntelliTrace z wdrożonych aplikacji**|-   [Korzystanie z autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Rozpocznij debugowanie z pliku dziennika IntelliTrace (plik iTrace).**|-   [Korzystanie z zapisanych danych IntelliTrace](../debugger/using-saved-intellitrace-data.md)|  
   
-## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a>Jakie aplikacje można debugować za pomocą IntelliTrace?  
+## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a> Jakie aplikacje można debugować za pomocą IntelliTrace?  
   
 |Poziom pomocy technicznej|Typy aplikacji|  
 |-|-|  
@@ -64,7 +64,7 @@ Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliT
 > [!NOTE]
 > Jeśli chcesz debugować proces, który jest już uruchomiony, nie możesz użyć IntelliTrace. IntelliTrace należy uruchomić, gdy proces jest uruchamiany.  
   
-## <a name="why-debug-with-intellitrace"></a><a name="IntelliTraceVSTraditional"></a>Dlaczego debugować za pomocą IntelliTrace?  
+## <a name="why-debug-with-intellitrace"></a><a name="IntelliTraceVSTraditional"></a> Dlaczego debugować za pomocą IntelliTrace?  
  Tradycyjne lub na *żywo* debugowanie pokazuje tylko bieżący stan aplikacji z ograniczoną ilością danych na temat przeszłych zdarzeń. Musisz wywnioskować te zdarzenia na podstawie bieżącego stanu aplikacji lub trzeba ponownie utworzyć te zdarzenia przez ponowne uruchomienie aplikacji.  
   
  IntelliTrace rozszerza standardowe debugowanie poprzez zapisywanie określonych zdarzeń i danych w konkretnym czasie. Dzięki temu można zobaczyć, co się stało w aplikacji bez konieczności jej ponownego uruchamiania, zwłaszcza w przypadku wcześniejszego przekroczenia błędu. Funkcja IntelliTrace jest domyślnie włączana podczas standardowego debugowania i zbiera dane automatycznie i w sposób niewidoczny. W ten sposób można łatwo przełączać się między standardowym debugowaniem i debugowaniem IntelliTrace, aby wyświetlić zapisane informacje. Zobacz [IntelliTrace funkcje](../debugger/intellitrace-features.md) i [jakie dane są zbierane przez IntelliTrace?](#WhatData)  
@@ -101,7 +101,7 @@ Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliT
   
    Jest to przydatne, gdy chcesz zdiagnozować problemy z aplikacjami w trakcie wdrażania. Zobacz [Używanie autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
-## <a name="what-data-does-intellitrace-collect"></a><a name="WhatData"></a>Jakie dane są zbierane przez IntelliTrace?  
+## <a name="what-data-does-intellitrace-collect"></a><a name="WhatData"></a> Jakie dane są zbierane przez IntelliTrace?  
  **Zbieranie informacji o zdarzeniach**  
   
  Domyślnie IntelliTrace rejestruje tylko zdarzenia IntelliTrace: zdarzenia debugera, wyjątki, zdarzenia .NET Framework i inne zdarzenia systemowe, które mogą pomóc w debugowaniu. Możesz wybrać typy zdarzeń IntelliTrace, które mają być zbierane, z wyjątkiem zdarzeń debugera i wyjątków, które są zawsze zbierane. Zobacz [Konfigurowanie IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
@@ -128,7 +128,7 @@ Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliT
   
 - **Zdarzenia .NET Framework**  
   
-   IntelliTrace domyślnie zapisuje najbardziej typowe zdarzenia .NET Framework. Przykład:  
+   IntelliTrace domyślnie zapisuje najbardziej typowe zdarzenia .NET Framework. Na przykład:  
   
   - W przypadku zdarzenia dostępu do plików IntelliTrace zbiera nazwę pliku.  
   
@@ -146,7 +146,7 @@ Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliT
   
   - [Korzystanie z zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
   
-  - [Przewodnik: Debugowanie aplikacji SharePoint przy użyciu narzędzia IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [Przewodnik: debugowanie aplikacji SharePoint przy użyciu narzędzia IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **Zbieranie informacji o wywołaniu funkcji**  
   
@@ -169,7 +169,7 @@ Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliT
   
  Aby kontrolować, ile informacji na temat wywołania gromadzi IntelliTrace, określ tylko te moduły, która Cię interesują. Może to pomóc w ulepszaniu wydajności aplikacji podczas zbierania. Zobacz [Konfigurowanie IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
-## <a name="will-intellitrace-slow-down-my-application"></a><a name="AffectPerformance"></a>IntelliTrace spowalnia moją aplikację?  
+## <a name="will-intellitrace-slow-down-my-application"></a><a name="AffectPerformance"></a> IntelliTrace spowalnia moją aplikację?  
  IntelliTrace domyślnie zbiera dane tylko dla wybranych zdarzeń IntelliTrace. Może to być niespowolnienie aplikacji, w zależności od struktury i organizacji kodu. Na przykład jeśli IntelliTrace często zapisuje zdarzenie, może to spowolnić aplikację. Może być również konieczne rozważenie refaktoryzacji aplikacji.  
   
  Zbieranie informacji o wywołaniu może znacząco spowolnić aplikację. Może to również zwiększyć rozmiar wszystkich plików dziennika IntelliTrace (iTrace) zapisywanych na dysku. Aby zminimalizować te skutki, zbieraj informacji o wywołaniach tylko interesujących Cię modułów.  Aby zmienić maksymalny rozmiar plików. iTrace, przejdź do pozycji **Narzędzia**, **Opcje**, **IntelliTrace**, **Zaawansowane**. Zobacz [Konfigurowanie IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  

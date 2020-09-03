@@ -1,5 +1,5 @@
 ---
-title: IEnumCodePaths2::GetCount | Dokumenty firmy Microsoft
+title: 'IEnumCodePaths2:: GetCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ab16a27257229bf97145403b99af9e478eae65db
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717836"
 ---
 # <a name="ienumcodepaths2getcount"></a>IEnumCodePaths2::GetCount
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>Parametry
 `pcelt`\
-[na zewnątrz] Zwraca liczbę elementów w wyliczeniu.
+określoną Zwraca liczbę elementów w wyliczeniu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda nie jest częścią niestandardowego interfejsu wyliczenia COM, `Skip`który `Reset` określa, że należy zaimplementować tylko `Next` `Clone`, , i metody.
+ Ta metoda nie jest częścią niestandardowego interfejsu wyliczenia modelu COM, który określa, że należy `Next` `Clone` zaimplementować tylko metody,, `Skip` i `Reset` .
 
 ## <a name="see-also"></a>Zobacz też
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

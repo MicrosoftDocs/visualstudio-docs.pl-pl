@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20daae821191bd5cf8bdb4dbe0f56935f1a85c17
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468652"
 ---
 # <a name="exe"></a>Exe
@@ -31,9 +31,9 @@ Exe jest jedynym symbolem bez użycia leksykalnego lub klasy nadrzędnej, poniew
 |Właściwość|Typ danych|Opis|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_age](../../debugger/debug-interface-access/idiasymbol-get-age.md)|`DWORD`|Wiek tego pliku wykonywalnego.|
-|[IDiaSymbol::get_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|`GUID`|`GUID`tego pliku wykonywalnego.|
-|[IDiaSymbol::get_isCTypes](../../debugger/debug-interface-access/idiasymbol-get-isctypes.md)|`BOOL`|`TRUE`Jeśli plik symboli skojarzony z tym plikiem wykonywalnym zawiera typy języka C (tylko w DIA SDK v 8.0 lub nowszym).|
-|[IDiaSymbol::get_isStripped](../../debugger/debug-interface-access/idiasymbol-get-isstripped.md)|`BOOL`|`TRUE`Jeśli symbole prywatne zostały usunięte z pliku symboli skojarzonego z tym plikiem wykonywalnym (tylko w DIA SDK v 8.0 lub nowszym).|
+|[IDiaSymbol::get_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|`GUID`|`GUID` tego pliku wykonywalnego.|
+|[IDiaSymbol::get_isCTypes](../../debugger/debug-interface-access/idiasymbol-get-isctypes.md)|`BOOL`|`TRUE` Jeśli plik symboli skojarzony z tym plikiem wykonywalnym zawiera typy języka C (tylko w DIA SDK v 8.0 lub nowszym).|
+|[IDiaSymbol::get_isStripped](../../debugger/debug-interface-access/idiasymbol-get-isstripped.md)|`BOOL`|`TRUE` Jeśli symbole prywatne zostały usunięte z pliku symboli skojarzonego z tym plikiem wykonywalnym (tylko w DIA SDK v 8.0 lub nowszym).|
 |[IDiaSymbol::get_machineType](../../debugger/debug-interface-access/idiasymbol-get-machinetype.md)|`DWORD`|Wartość wskazująca docelowy procesor (jedną z [CV_CPU_TYPE_e wartości wyliczenia](../../debugger/debug-interface-access/cv-cpu-type-e.md) ).|
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nazwa pliku. exe.|
 |[IDiaSymbol::get_signature](../../debugger/debug-interface-access/idiasymbol-get-signature.md)|`DWORD`|Podpis pliku wykonywalnego.|

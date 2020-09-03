@@ -19,19 +19,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 14e365d6bbe99634135bfad133d840b98e22e3b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663040"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Praca z diagramem definicji DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diagram definicji [!INCLUDE[dsl](../includes/dsl-md.md)] jest ważnym narzędziem do definiowania języka specyficznego dla domeny. Można dodawać elementy do modelu domeny i definiować relacje na diagramie. można także zmodyfikować układ diagramu, aby zwiększyć jego czytelność.
+Diagram [!INCLUDE[dsl](../includes/dsl-md.md)] definicji jest ważnym narzędziem do definiowania języka specyficznego dla domeny. Można dodawać elementy do modelu domeny i definiować relacje na diagramie. można także zmodyfikować układ diagramu, aby zwiększyć jego czytelność.
 
 ## <a name="the-layout-of-the-diagram"></a>Układ diagramu
- Diagram definicji [!INCLUDE[dsl](../includes/dsl-md.md)] ma dwie partycje, partycje **klas i relacji** oraz partycję **elementów diagramu** . Partycje **klasy i relacje** wyświetlają klasy domen, relacje domen i dziedziczenie. Partycja **elementów diagramu** zawiera klasy kształtu, klasy łączników, klasy toru i wygenerowany diagram projektanta.
+ [!INCLUDE[dsl](../includes/dsl-md.md)]Diagram definicji ma dwie partycje, partycje **klas i relacji** oraz partycję **elementów diagramu** . Partycje **klasy i relacje** wyświetlają klasy domen, relacje domen i dziedziczenie. Partycja **elementów diagramu** zawiera klasy kształtu, klasy łączników, klasy toru i wygenerowany diagram projektanta.
 
  Klasy domeny mogą znajdować się w wielu lokalizacjach w partycjach **klas i relacji** . Definicja klasy domeny wyświetla drzewo dziedziczenia, jeśli jest klasą bazową dla innych klas domeny i drzewo relacji, jeśli jest to źródło relacji osadzania lub odwołań. Symbole zastępcze klas domen są wyświetlane jako elementy docelowe relacji osadzania lub odwołań. Domyślnie elementy zastępcze są wyświetlane z zwiniętym przedziałem **właściwości domeny** . Nie pokazuje dziedziczenia ani relacji osadzania ani odwołań.
 
