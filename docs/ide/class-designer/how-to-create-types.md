@@ -18,17 +18,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 98e489a37e5d75cbc17d17c32a1fa3b53f9993f8
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770219"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Instrukcje: Tworzenie typów za pomocą Projektant klas
 
 Aby zaprojektować nowe typy dla projektów C# i Visual Basic, utwórz je na diagramie klas. Aby wyświetlić istniejące typy, zobacz [How to: View Existing Types](how-to-view-existing-types.md).
 
-## <a name="create-a-new-type"></a><a name="CreateType"></a>Utwórz nowy typ
+## <a name="create-a-new-type"></a><a name="CreateType"></a> Utwórz nowy typ
 
 1. W **przyborniku**w obszarze **Projektant klas**przeciągnij jeden z nich na Diagram klas:
 
@@ -66,7 +66,7 @@ Aby zaprojektować nowe typy dla projektów C# i Visual Basic, utwórz je na dia
 
      Zobacz [Tworzenie elementów członkowskich](creating-and-configuring-type-members.md#create-members).
 
-## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a>Zastosuj atrybut niestandardowy do typu
+## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a> Zastosuj atrybut niestandardowy do typu
 
 1. Kliknij typ kształtu na diagramie klasy.
 
@@ -76,7 +76,7 @@ Aby zaprojektować nowe typy dla projektów C# i Visual Basic, utwórz je na dia
 
    Atrybuty niestandardowe są stosowane do typu.
 
-## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>Zastosuj atrybut niestandardowy do elementu członkowskiego typu
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a> Zastosuj atrybut niestandardowy do elementu członkowskiego typu
 
 1. Kliknij nazwę składowej w jej kształcie typu na diagramie klasy lub kliknij jej wiersz w oknie Szczegóły klasy.
 
@@ -86,7 +86,7 @@ Aby zaprojektować nowe typy dla projektów C# i Visual Basic, utwórz je na dia
 
    Atrybuty niestandardowe są stosowane do typu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Tworzenie dziedziczenia między typami](how-to-create-inheritance-between-types.md)
 - [Instrukcje: tworzenie skojarzeń między typami](how-to-create-associations-between-types.md)

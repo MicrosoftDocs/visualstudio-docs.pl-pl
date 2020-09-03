@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2cedc9f45d2e21684496bd882de4aa74b3bf8b3d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851081"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Rozwiązywanie problemów z Podglądem Pomocy
@@ -42,10 +42,10 @@ W tym temacie omówiono problemy, które mogą wystąpić w programie Podgląd p
 
 5. Wybierz usługę roli wyszukiwania systemu Windows.
 
-## <a name="additional-resources"></a>Dodatkowe materiały
+## <a name="additional-resources"></a>Dodatkowe zasoby
  Aby uzyskać więcej informacji i przekazać opinię na temat pomocy, możesz skorzystać z następujących zasobów:
 
-- Aby przekazać opinię, zobacz [Microsoft Connect](https://connect.microsoft.com/) w witrynie internetowej firmy Microsoft lub Wyślij wiadomość e-mail do [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
+- Aby przekazać opinię, zobacz [Microsoft Connect](https://connect.microsoft.com/) w witrynie internetowej firmy Microsoft lub Wyślij wiadomość e-mail na adres [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com) .
 
 - Aby uzyskać więcej informacji, zapoznaj się z [dokumentacją dla deweloperów i forum systemu pomocy](https://social.msdn.microsoft.com/Forums/en-US/devdocs/threads) oraz blog [pomocy Guy](https://blogs.msdn.com/b/thehelpguy/) .
 

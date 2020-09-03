@@ -1,5 +1,5 @@
 ---
-title: IDebugPortRequest2 | Dokumenty firmy Microsoft
+title: IDebugPortRequest2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 163718fda344ba5f3f44ef630b4eba3e5613dc61
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724784"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
-Ten interfejs opisuje port. Ten opis służy do dodawania portu do dostawcy portu.
+Ten interfejs opisuje port. Ten opis służy do dodawania portu do dostawcy portów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,25 +29,25 @@ IDebugPortRequest2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Visual Studio zazwyczaj implementuje ten interfejs w procesie uzyskiwania portu debugowania od dostawcy portu.
+ Program Visual Studio zwykle implementuje ten interfejs w procesie uzyskiwania portu debugowania od dostawcy portów.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Ten interfejs jest przekazywany do [AddPort,](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) aby utworzyć port debugowania. Wywołanie [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) zwraca ten interfejs, reprezentujący żądanie używane do utworzenia portu w pierwszej kolejności.
+ Ten interfejs jest przesyłany do [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) w celu utworzenia portu debugowania. Wywołanie [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) zwraca ten interfejs reprezentujący żądanie użyte do utworzenia portu w pierwszym miejscu.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- W poniższej tabeli `IDebugPortRequest2`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ W poniższej tabeli przedstawiono metody `IDebugPortRequest2` .
 
 |Metoda|Opis|
 |------------|-----------------|
 |[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Pobiera nazwę portu do utworzenia.|
 
 ## <a name="remarks"></a>Uwagi
- Aparat debugowania zazwyczaj nie wchodzi w interakcję z dostawcą portu i nie będzie miał zastosowania dla tego interfejsu.
+ Aparat debugowania zwykle nie współdziała z dostawcą portu i nie będzie miał zastosowania do tego interfejsu.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

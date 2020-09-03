@@ -26,16 +26,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b462d5d0c449b8e47c936242908e5bbe6e433429
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74298312"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Debugowanie aplikacji w trybie mieszanym
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aplikacją trybu mieszanego jest każda aplikacja, która łączy w sobie kod natywny (C++) z kodem zarządzanym (takim jak Visual Basic, Visual C# lub C++ działający w środowisku uruchomieniowym języka wspólnego). Debugowanie aplikacji w trybie mieszanym jest w dużym stopniu przezroczyste w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]; nie jest ona zbyt inna niż debugowanie aplikacji jednowęzłowej. Istnieje jednak kilka specjalnych okoliczności.  
+Aplikacją trybu mieszanego jest każda aplikacja, która łączy w sobie kod natywny (C++) z kodem zarządzanym (takim jak Visual Basic, Visual C# lub C++ działający w środowisku uruchomieniowym języka wspólnego). Debugowanie aplikacji w trybie mieszanym jest w dużym stopniu przezroczyste [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . nie jest zbyt inne niż debugowanie aplikacji jednowęzłowej. Istnieje jednak kilka specjalnych okoliczności.  
   
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>Włącz edycję i kontynuację w języku C++ w debugowaniu trybu mieszanego  
   
@@ -58,4 +58,4 @@ Aplikacją trybu mieszanego jest każda aplikacja, która łączy w sobie kod na
    Ponieważ stosy wywołania natywnego i zarządzanego się różnią, debuger nie zawsze może dostarczyć pełny stos wywołań dla kodu mieszanego. Gdy kod natywny wywołuje kod zarządzany, można zauważyć pewne rozbieżności. Aby uzyskać więcej informacji, zobacz [mieszany kod i brakujące informacje w oknie stosu wywołań](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
+ [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)

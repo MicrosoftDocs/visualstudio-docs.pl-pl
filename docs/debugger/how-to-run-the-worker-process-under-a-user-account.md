@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac5bee0ffa05aa275782c57fc9b7b1c369bf65d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349409"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Porady: uruchamianie procesu roboczego z konta użytkownika
@@ -82,7 +82,7 @@ Aby skonfigurować komputer w taki sposób, aby można było uruchomić [!INCLUD
 
 11. W oknie dialogowym **wpis uprawnienia dla plików tymczasowych ASP.NET** nadaj użytkownikowi **pełną kontrolę**, a następnie kliknij przycisk **OK** , aby zamknąć **wpis dla tymczasowych plików ASP.NET** okno dialogowe.
 
-12. Zostanie wyświetlone okno dialogowe **zabezpieczenia** z pytaniem, czy naprawdę chcesz zmienić uprawnienia do folderu systemowego. Kliknij przycisk **tak**.
+12. Zostanie wyświetlone okno dialogowe **zabezpieczenia** z pytaniem, czy naprawdę chcesz zmienić uprawnienia do folderu systemowego. Kliknij przycisk **Yes** (Tak).
 
 13. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **właściwości plików tymczasowych ASP.NET** .
 

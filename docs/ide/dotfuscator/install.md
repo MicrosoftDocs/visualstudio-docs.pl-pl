@@ -23,10 +23,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: befa47e5718d3d2f5d492c49e173b22fc63310e0
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769672"
 ---
 # <a name="install-dotfuscator-community"></a>Instalowanie programu Dotfuscator Community
@@ -103,7 +103,7 @@ Następnie można zainstalować społeczność Dotfuscator jako pojedynczy skła
 
 Po zakończeniu instalacji możesz zacząć korzystać z społeczności Dotfuscator. Aby uzyskać szczegółowe informacje, zobacz [stronę wprowadzenia w pełnym podręczniku użytkownika programu Dotfuscator Community][get-started].
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Ten temat znajduje się w pełnym podręczniku użytkownika Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/)
 

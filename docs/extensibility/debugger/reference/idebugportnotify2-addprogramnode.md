@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::AddProgramNode | Dokumenty firmy Microsoft
+title: 'IDebugPortNotify2:: AddProgramNode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9090c39d85519435d17c940ad21fd55d26904765
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724989"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
-Rejestruje program, który może być debugowany za pomocą portu, na który jest uruchomiony.
+Rejestruje program, który może być debugowany przy użyciu portu, na którym jest uruchomiony.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,13 +41,13 @@ int AddProgramNode( 
 
 ## <a name="parameters"></a>Parametry
 `pProgramNode`\
-[w] [Obiekt IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) reprezentujący program, który ma zostać zarejestrowany.
+podczas Obiekt [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , który reprezentuje program do zarejestrowania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Węzeł programu można wyrejestrować z portu, wywołując [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) metody.
+ Węzeł programu można wyrejestrować z portu przez wywołanie metody [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)

@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 52c55b2cfdf000d91a83071b53e8e9450187b720
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852021"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Tworzenie projektów i diagramów modelowania UML
@@ -42,7 +42,7 @@ Modele UML pomagają zrozumieć, omówić i projektować systemy oprogramowania.
 > [!NOTE]
 > Istnieje inny rodzaj diagramu — Diagram klas .NET, który służy do wizualizacji kodu programu. Aby uzyskać więcej informacji, zobacz [projektowanie i wyświetlanie klas i typów](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
-## <a name="CreatingModelingDiagrams"></a>Tworzenie diagramu w projekcie modelowania
+## <a name="create-a-diagram-in-a-modeling-project"></a><a name="CreatingModelingDiagrams"></a> Tworzenie diagramu w projekcie modelowania
  Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>Aby utworzyć diagram i dodać go do projektu
@@ -59,7 +59,7 @@ Modele UML pomagają zrozumieć, omówić i projektować systemy oprogramowania.
 
    - Wybierz projekt modelowania, który już istnieje w rozwiązaniu, a następnie kliknij przycisk **OK**.
 
-     \- lub —
+     \- oraz
 
    1. Wybierz pozycję **Utwórz nowy projekt modelowania**, a następnie kliknij przycisk **OK**.
 
@@ -80,7 +80,7 @@ Modele UML pomagają zrozumieć, omówić i projektować systemy oprogramowania.
 
 2. W menu **projekt** kliknij polecenie **Dodaj nowy element**.
 
-3. W oknie dialogowym **Dodaj nowy element —** *\<nazwa projektu >* w obszarze **Szablony**kliknij typ diagramu modelowania, na przykład **diagram składników UML**.
+3. W oknie dialogowym **Dodaj nowy element —** w *\<project name>* obszarze **Szablony**kliknij typ diagramu modelowania, na przykład **diagram składników UML**.
 
 4. Wpisz nazwę diagramu, a następnie kliknij przycisk **Dodaj**.
 
@@ -101,7 +101,7 @@ Modele UML pomagają zrozumieć, omówić i projektować systemy oprogramowania.
 
 5. W polu **rozwiązanie** wybierz pozycję **Dodaj do rozwiązania** , aby dodać nowy projekt do już otwartego rozwiązania. lub **Utwórz nowe rozwiązanie** , aby zamknąć otwarte rozwiązanie i dodać projekt do nowego rozwiązania.
 
-## <a name="RemovingModelingDiagrams"></a>Usuwanie diagramów modelowania z projektu
+## <a name="removing-modeling-diagrams-from-a-project"></a><a name="RemovingModelingDiagrams"></a> Usuwanie diagramów modelowania z projektu
  Można trwale usunąć diagram lub można tymczasowo wykluczyć diagram z projektu, a następnie go przywrócić.
 
 #### <a name="to-permanently-delete-a-diagram-from-a-project"></a>Aby trwale usunąć diagram z projektu
@@ -111,7 +111,7 @@ Modele UML pomagają zrozumieć, omówić i projektować systemy oprogramowania.
      Diagram zostanie usunięty z projektu i systemu plików. Elementy wyświetlane na diagramie nie są usuwane z **Eksploratora modelu UML**.
 
     > [!NOTE]
-    > Każdy diagram ma dwa pliki — jeden oddziału. Na przykład jeśli istnieje diagram składników o nazwie `CD1`, należy usunąć plik o nazwie `CD1.componentdiagram`. Jego plik pomocniczy o nazwie `CD1.componentdiagram.layout` zostanie automatycznie usunięty.
+    > Każdy diagram ma dwa pliki — jeden oddziału. Na przykład jeśli masz diagram składników o nazwie `CD1` , należy usunąć plik o nazwie `CD1.componentdiagram` . Jego plik pomocniczy o nazwie `CD1.componentdiagram.layout` zostanie usunięty automatycznie.
 
 #### <a name="to-temporarily-exclude-a-diagram-from-a-project"></a>Aby tymczasowo wykluczyć diagram z projektu
 
@@ -136,21 +136,21 @@ Modele UML pomagają zrozumieć, omówić i projektować systemy oprogramowania.
      Diagram modelowania zostanie otwarty i pojawi się w projekcie modelowania.
 
     > [!NOTE]
-    > Każdy diagram ma parę plików w systemie plików. Nie wybieraj pliku z rozszerzeniem `.layout`. Ponadto program Visual Studio nie obsługuje dodawania istniejących diagramów UML do wielu projektów modelowania. Każdy plik diagramu musi być otwarty w projekcie modelowania, w którym został utworzony. Dzieje się tak, ponieważ diagram UML przedstawia widok modelu, który jest własnością projektu modelowania.
+    > Każdy diagram ma parę plików w systemie plików. Nie wybieraj pliku, który ma rozszerzenie `.layout` . Ponadto program Visual Studio nie obsługuje dodawania istniejących diagramów UML do wielu projektów modelowania. Każdy plik diagramu musi być otwarty w projekcie modelowania, w którym został utworzony. Dzieje się tak, ponieważ diagram UML przedstawia widok modelu, który jest własnością projektu modelowania.
 
-## <a name="NonModelDiagrams"></a>Diagramy, które nie wymagają projektów modelowania
+## <a name="diagrams-that-do-not-require-modeling-projects"></a><a name="NonModelDiagrams"></a> Diagramy, które nie wymagają projektów modelowania
  Następujące rodzaje diagramów nie są częścią projektu modelowania:
 
 - Diagramy klas, które są tworzone jako widoki kodu źródłowego. Nie są one powiązane z diagramami klas UML. Aby uzyskać więcej informacji, zobacz [projektowanie i wyświetlanie klas i typów](../ide/designing-and-viewing-classes-and-types.md).
 
-- Mapy kodu. Zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).
+- Mapy kodu. Zobacz [zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).
 
 - Diagramy, które nie są diagramami UML ani diagramami warstw, takich jak języki specyficzne dla domeny.
 
-## <a name="TroubleshootingModelingProjects"></a>Rozwiązywanie problemów z projektami i diagramami modelowania
+## <a name="troubleshooting-modeling-projects-and-diagrams"></a><a name="TroubleshootingModelingProjects"></a> Rozwiązywanie problemów z projektami i diagramami modelowania
  W poniższej tabeli opisano problemy, które mogą wystąpić w przypadku modelowania projektów lub diagramów oraz sposoby ich rozwiązywania:
 
-|**Problem**|**Dodatek**|**Rozdzielczość**|
+|**Problem**|**Przyczyny**|**Rozdzielczość**|
 |---------------|----------------|--------------------|
 |Projekt modelowania nie może zostać otwarty ani załadowany do rozwiązania.<br /><br /> Zostanie wyświetlony następujący komunikat:<br /><br /> "Co najmniej jeden projekt w rozwiązaniu nie został poprawnie załadowany. Aby uzyskać szczegółowe informacje, zobacz Okno Dane wyjściowe ".<br /><br /> W oknie dane wyjściowe zostanie wyświetlony następujący komunikat:<br /><br /> "*ModelingProjectFilenameAndPath*. modelproj: błąd: nierozpoznany format identyfikatora GUID".|Projekt modelowania zawiera odwołania do projektów, które mają taką samą nazwę i znajdują się w tym samym rozwiązaniu.<br /><br /> Na przykład warstwa jest połączona z projektami o tej samej nazwie i znajdują się w tym samym rozwiązaniu.|Za pomocą edytora tekstów Otwórz plik projektu modelowania, Usuń odwołania, a następnie spróbuj ponownie otworzyć projekt modelowania.<br /><br /> Aby uniknąć tego problemu, nie należy dodawać odwołań do projektów, które mają taką samą nazwę. Upewnij się, że projekty mają unikatowe nazwy.|
 |Brak elementów w diagramach, które są dodawane, kopiowane lub przeciągnięte do innych projektów modelowania lub do innych lokalizacji w rozwiązaniu.<br /><br /> — lub —<br /><br /> Podczas próby otwarcia diagramu wyświetlane są następujące komunikaty:<br /><br /> -Brak niektórych kształtów lub łączników na diagramie, ponieważ ich definicje nie istnieją w tym projekcie. Definicje zostały usunięte z modelu, podczas gdy diagram został zamknięty lub diagram został skopiowany do innego projektu, który nie zawiera tych definicji. "<br /><br /> — lub —<br /><br /> -"Ten dokument jest otwarty przez inny projekt".|Plik diagramu został dodany, przeciągnięty lub skopiowany z projektu modelowania do innego projektu modelowania lub do innej lokalizacji w rozwiązaniu.|Aby skopiować plik diagramu, Utwórz nowy diagram, a następnie skopiuj elementy z diagramu źródłowego do nowego diagramu.|

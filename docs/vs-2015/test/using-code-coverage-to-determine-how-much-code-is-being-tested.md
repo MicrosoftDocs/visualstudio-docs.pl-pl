@@ -11,10 +11,10 @@ caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 737311167fc1f444d5c0f8a5d2c27e2fe321da75
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851238"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
@@ -28,7 +28,7 @@ Aby określić, jaka część kodu projektu jest faktycznie testowana przez zako
 
  ![Wyniki pokrycia kodu z kolorami](../test/media/codecoverage1.png "CodeCoverage1")
 
- **Requirements**
+ **Wymagania**
 
 - Visual Studio Enterprise
 
@@ -94,7 +94,7 @@ Aby określić, jaka część kodu projektu jest faktycznie testowana przez zako
 - W przypadku scalania wyników z testów programu ASP.NET wyniki dla oddzielnych testów są wyświetlane, ale nie są połączone. Dotyczy to tylko samych artefaktów ASP.NET: wyniki dla innych zestawów zostaną połączone.
 
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>Wykluczanie elementów z wyników pokrycia kodu
- Można chcieć wykluczyć określone elementy w kodzie z oceny pokrycia, jeśli np. kod jest generowany na podstawie szablonu tekstu. Dodaj `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` atrybutu do dowolnego z następujących elementów kodu: Klasa, struktura, metoda, właściwość, Metoda ustawiająca lub metoda pobierająca, zdarzenie. Należy zauważyć, że wykluczenie klasy nie wyklucza jej klas pochodnych.
+ Można chcieć wykluczyć określone elementy w kodzie z oceny pokrycia, jeśli np. kod jest generowany na podstawie szablonu tekstu. Dodaj atrybut `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` do dowolnego z następujących elementów kodu: Klasa, struktura, metoda, właściwość, Metoda ustawiająca lub metoda pobierająca, zdarzenie. Należy zauważyć, że wykluczenie klasy nie wyklucza jej klas pochodnych.
 
  Na przykład:
 
@@ -221,13 +221,13 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
  Użyj następujących makr:
 
- `ExcludeFromCodeCoverage(` *wykluczenianame* `, L"` *funkcjaname* `");`
+ `ExcludeFromCodeCoverage(`*Wykluczname* `, L"` *Funkcjaname*`");`
 
- `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
+ `ExcludeSourceFromCodeCoverage(`*Wykluczname* `, L"` *Sourcefilepath*`");`
 
 - *Wykluczname* jest dowolną unikatową nazwą.
 
-- *FunctionName* jest w pełni kwalifikowaną nazwą funkcji. Może ona zawierać symbole wieloznaczne. Na przykład, aby wykluczyć wszystkie funkcje klasy, `MyNamespace::MyClass::*` zapisu
+- *FunctionName* jest w pełni kwalifikowaną nazwą funkcji. Może ona zawierać symbole wieloznaczne. Na przykład, aby wykluczyć wszystkie funkcje klasy, należy napisać `MyNamespace::MyClass::*`
 
 - *Sourcefilepath* to lokalna lub UNC Ścieżka do pliku. cpp. Może ona zawierać symbole wieloznaczne. Poniższy przykład wyklucza wszystkie pliki w określonym katalogu: `\\MyComputer\Source\UnitTests\*.cpp`
 
@@ -237,10 +237,10 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 - Można umieścić wyłączenia w pliku kodu testu jednostkowego lub w pliku kodu aplikacji.
 
-- Wykluczenia muszą być kompilowane jako kod niezarządzany (natywny) przez ustawienie opcji kompilatora lub przy użyciu `#pragma managed(off)`.
+- Wykluczenia muszą być kompilowane jako kod niezarządzany (natywny) przez ustawienie opcji kompilatora lub przy użyciu polecenia `#pragma managed(off)` .
 
 > [!NOTE]
-> Aby wykluczyć funkcje w C++kodzie/CLI, zastosuj atrybut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` do funkcji. To jest tak samo jak w języku C#.
+> Aby wykluczyć funkcje w kodzie C++/CLI, zastosuj atrybut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` do funkcji. To jest tak samo jak w języku C#.
 
 ### <a name="including-or-excluding-additional-elements"></a>Włączanie lub wyłączanie dodatkowych elementów
  Analizy pokrycia kodu są wykonywane tylko na zestawach, które są ładowane i dla których plik .pdb jest dostępny w tym samym katalogu co plik .exe lub .dll. Dlatego w pewnych okolicznościach można rozszerzyć zbiór zestawów, włączony przez uzyskanie kopii odpowiednich plików .pdb.
@@ -256,7 +256,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
     Jeśli masz więcej niż jedną definicję źródła testów, powtórz ten krok dla każdej z nich.
 
-   - <em>Ale nie istnieje pole o nazwie **typu pliku parametrów uruchomieniowych</em>* . *
+   - <em>Ale nie istnieje pole o nazwie **typu pliku parametrów uruchomieniowych</em>*. *
 
       W obszarze **testy automatyczne**wybierz pozycję **zestaw testowy** i wybierz przycisk wielokropka **[...]** na końcu wiersza. W oknie dialogowym **Dodawanie/edytowanie przebiegu testu** w obszarze moduł uruchamiający **testy**wybierz pozycję **Visual Studio Test Runner**.
 
@@ -265,7 +265,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
    Po uruchomieniu kompilacji wyniki pokrycia kodu są dołączane do przebiegu testowego i pojawiają się w podsumowaniu kompilacji.
 
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Analizowanie pokrycia kodu w wierszu polecenia
- Aby uruchomić testy z wiersza polecenia, należy użyć narzędzia vstest.console.exe. Pokrycie kodu jest opcją tego narzędzia. Aby uzyskać więcej informacji, zobacz [Opcje wiersza polecenia VSTest. Console. exe](https://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).
+ Aby uruchomić testy z wiersza polecenia, należy użyć narzędzia vstest.console.exe. Pokrycie kodu jest opcją tego narzędzia. Aby uzyskać więcej informacji, zobacz [VSTest.Console.exe opcje wiersza polecenia](https://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).
 
 1. Uruchom wiersz polecenia programisty dla programu Visual Studio:
 
@@ -276,7 +276,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
- Jeśli nie widzisz wyników pokrycia kodu, zobacz temat [Rozwiązywanie problemów z kodem](../test/troubleshooting-code-coverage.md).
+ Jeśli nie widzisz wyników pokrycia kodu, zobacz temat  [Rozwiązywanie problemów z kodem](../test/troubleshooting-code-coverage.md).
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 

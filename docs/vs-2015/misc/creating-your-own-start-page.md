@@ -12,10 +12,10 @@ ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
 ms.openlocfilehash: fba7f1e0801b6f977d47b13af025538f5d2fe031
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850982"
 ---
 # <a name="creating-your-own-start-page"></a>Tworzenie własnej strony początkowej
@@ -56,7 +56,7 @@ Możesz utworzyć niestandardową stronę początkową przy użyciu szablonu pro
   
 2. Otwórz StartPage. XAML.  
   
-3. Usuń całą zawartość strony, pozostawiając tylko zewnętrzne elementy XML i zawierający siatkę <xref:System.Windows.Controls.Grid>, aby plik. XAML wyglądał podobnie do poniższego przykładu.  
+3. Usuń całą zawartość strony, pozostawiając tylko zewnętrzne elementy XML i element siatki zawierającej <xref:System.Windows.Controls.Grid> , tak aby plik. XAML wyglądał podobnie jak w poniższym przykładzie.  
   
    ```xaml
       <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -100,5 +100,5 @@ Możesz utworzyć niestandardową stronę początkową przy użyciu szablonu pro
    Możesz udostępnić niestandardową stronę początkową, przekazując plik. vsix z katalogu bin\Debug do witryny sieci Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub do innej witryny sieci Web lub udziału intranetowego. Aby uzyskać więcej informacji, zobacz [wdrażanie niestandardowych stron początkowych](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dostosowywanie  strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md)  
+ [Dostosowywanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Przewodnik: dodawanie niestandardowych elementów XAML do strony początkowej](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

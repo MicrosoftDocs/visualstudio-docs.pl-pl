@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3f982372f0189871c4f3d294c07a9e3cfc44391
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656617"
 ---
-# <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Instrukcje: dodawanie działań do przybornika (starsza wersja)
-Podczas kompilowania rozwiązania przepływu pracy przy użyciu starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)], która jest przeznaczona dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], działania niestandardowe można dodać do projektu przepływu pracy, a ich Projektanci są umieszczane w **przyborniku** w celu ułatwienia dostępu. Możesz również dodać działania bezpośrednio do **przybornika** z biblioteki dołączanej dynamicznie (dll).
+# <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Instrukcje: Dodawanie działań do przybornika (starsza wersja)
+Podczas kompilowania rozwiązania przepływu pracy ze starszą wersją, [!INCLUDE[wfd1](../includes/wfd1-md.md)] która jest przeznaczona dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] , działania niestandardowe można dodać do projektu przepływu pracy i ich projektanci umieszczali w **przyborniku** w celu ułatwienia dostępu. Możesz również dodać działania bezpośrednio do **przybornika** z biblioteki dołączanej dynamicznie (dll).
 
 ### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>Aby dodać działanie do przybornika z biblioteki DLL
 

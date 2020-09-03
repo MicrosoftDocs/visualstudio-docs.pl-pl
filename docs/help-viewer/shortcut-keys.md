@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f7c49eadcfa0b73997f9902bdde0b8a9c98065e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533735"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Klawisze skrótów w podglądzie pomocy
@@ -67,14 +67,14 @@ Możesz nawigować w **Podgląd pomocy firmy Microsoft** przy użyciu klawiszy s
 |Indeks|**Tabulator**|Przenieś fokus od wpisu słowa kluczowego na listę słów kluczowych.|
 |Indeks|**Ctrl** + **K**|Przełączenie między pokazywaniem wpisów zawierających określone słowo kluczowe i wpisy, które zaczynają się od określonego słowa kluczowego.|
 |Ulubione|**Ctrl** + **SHIFT** + **Del**|Wyczyść historię przeglądania.|
-|Ulubione|**Del**|Usuń określony element.|
+|Ulubione|**Usunięcie**|Usuń określony element.|
 |Ulubione|**Ctrl** + **N**|Utwórz folder w obszarze **Ulubione**.|
 |Ulubione|**F2**|Zmień nazwę określonego elementu ulubionego lub folderu.|
 |& wyszukiwania zawartości & indeksu|**Ctrl** + **D**|Dodaj określony temat do karty **Ulubione** .|
 |Zawartość & indeks & wyszukiwanie & ulubionych|**Ctrl** + **P**|Drukowanie określonego tematu.|
 |Zawartość & indeks & wyszukiwanie & ulubionych|**Ctrl** + **F2**|Wyświetl podgląd wydruku określonego tematu.|
 |Zawartość & indeks & wyszukiwanie & ulubionych|**Ctrl** + **Kliknij pozycję**|Otwórz temat na nowej karcie.|
-|Wyszukaj|**Esc**|Wyczyść pole tekstowe wyszukiwania.|
+|Wyszukiwanie|**Esc**|Wyczyść pole tekstowe wyszukiwania.|
 |Opcje aplikacji Viewer|**Alt** + **T**|Zmień fokus na listę **rozmiar tekstu** .|
 |Opcje aplikacji Viewer|**Alt** + **S**|Zmień fokus na listę **wyników wyszukiwania maksymalnego** .|
 |Opcje aplikacji Viewer|**Alt** + **H**|Zmień fokus na listę **zapisanych wpisów historii** .|

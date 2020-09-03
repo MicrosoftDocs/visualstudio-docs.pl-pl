@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e5333f6133dd3fd56077c14d6e56cd6fdada4404
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656422"
 ---
 # <a name="how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution"></a>Porady: określanie zestawów reguł zarządzanego kodu dla wielu projektów w rozwiązaniu
@@ -28,7 +28,7 @@ Domyślnie wszystkie zarządzane projekty rozwiązania są przypisane do *zestaw
 
 ### <a name="to-specify-a-rule-set-for-multiple-projects-in-a-managed-code--solution"></a>Aby określić zestaw reguł dla wielu projektów w rozwiązaniu kodu zarządzanego
 
-1. W [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] lub [!INCLUDE[vsPro](../includes/vspro-md.md)] otworzyć rozwiązanie.
+1. W programie [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] . [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]lub [!INCLUDE[vsPro](../includes/vspro-md.md)] Otwórz rozwiązanie.
 
 2. W menu **Analizuj** kliknij polecenie **Konfiguruj analizę kodu dla rozwiązania**.
 

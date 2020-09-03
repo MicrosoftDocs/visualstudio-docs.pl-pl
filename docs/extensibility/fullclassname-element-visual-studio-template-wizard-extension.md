@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ed9ceb57f49d8c08b75aa140e45a0f4268f4336c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769600"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName — element (rozszerzenie Kreatora szablonów programu Visual Studio)
@@ -53,7 +53,7 @@ W pełni kwalifikowana nazwa klasy, która implementuje `IWizard` interfejs.
  Ten tekst Określa klasę, która implementuje `IWizard` interfejs. Określona klasa musi istnieć w zestawie określonym przez element [Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) .
 
 ## <a name="remarks"></a>Uwagi
- `FullClassName`jest wymaganym elementem podrzędnym `WizardExtension` .
+ `FullClassName` jest wymaganym elementem podrzędnym `WizardExtension` .
 
 ## <a name="example"></a>Przykład
  Poniższy przykład ilustruje metadane standardowego szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji systemu Windows.
@@ -86,7 +86,7 @@ W pełni kwalifikowana nazwa klasy, która implementuje `IWizard` interfejs.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Instrukcje: korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)

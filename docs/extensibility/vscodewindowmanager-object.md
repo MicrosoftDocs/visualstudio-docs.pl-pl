@@ -1,5 +1,5 @@
 ---
-title: Obiekt vscodewindowmanager | Dokumenty firmy Microsoft
+title: Obiekt VSCodeWindowManager | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,18 +14,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 17bc9462af55ec9621654bd39cd65a2091f3f73f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740418"
 ---
-# <a name="vscodewindowmanager-object"></a>Obiekt vscodewindowmanager
+# <a name="vscodewindowmanager-object"></a>Obiekt VSCodeWindowManager
 
-Usługa języka implementuje menedżera okien kodu i jest odpowiedzialny za zarządzanie ozdoby (na przykład na pasku rozwijanym). Aby uzyskać więcej informacji, zobacz [Dostosowywanie kodu systemu Windows przy użyciu starszego interfejsu API](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
+Usługa językowa implementuje Menedżera okien kodu i jest odpowiedzialna za zarządzanie zakończeniami (na przykład pasek listy rozwijanej). Aby uzyskać więcej informacji, zobacz [Dostosowywanie kodu w systemie Windows przy użyciu starszego interfejsu API](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
 
 W poniższej tabeli przedstawiono interfejsy w `VSCodeWindowManager` obiekcie.
 
-|Interface|Opis|
+|Interfejs|Opis|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Umożliwia dodawania lub usuwania ozdób (takich jak paski rozwijane) do okna kodu.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Zezwala na dodawanie, a także do usuwania z okna kodu lub usuwanie z niego.|

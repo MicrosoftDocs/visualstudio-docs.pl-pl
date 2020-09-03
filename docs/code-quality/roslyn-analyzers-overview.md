@@ -13,53 +13,53 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 78a47cb2a5aefd7d20e0b8087f5f3ad735716175
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79431283"
 ---
-# <a name="overview-of-source-code-analyzers"></a>Omówienie analizatorów kodu źródłowego
+# <a name="overview-of-source-code-analyzers"></a>Przegląd analizatorów kodu źródłowego
 
-Analizatory kodu platformy kompilatora platformy .NET ("Roslyn") sprawdzają kod języka C# lub Visual Basic pod kątem stylu, jakości i łatwości konserwacji, projektowania i innych problemów.
+.NET Compiler Platform ("Roslyn") analizatory kodu sprawdzają kod C# lub Visual Basic w celu uzyskania stylu, jakości i utrzymania, projektowania i innych problemów.
 
-- Niektóre analizatory są wbudowane w programie Visual Studio. Identyfikator diagnostyczny lub kod dla tych analizatorów jest w formacie IDExxxx, na przykład IDE0067. Większość z tych wbudowanych analizatorów sprawdza [styl kodu](../ide/code-styles-and-code-cleanup.md)i można skonfigurować preferencje na stronie [opcji edytora tekstu](../ide/code-styles-and-code-cleanup.md) lub w pliku [EditorConfig](../ide/editorconfig-code-style-settings-reference.md). Kilka wbudowanych analizatorów spojrzeć na jakość kodu.
+- Niektóre analizatory są wbudowane w program Visual Studio. Identyfikator diagnostyki lub kod dla tych analizatorów ma format IDExxxx, na przykład IDE0067. Większość z tych wbudowanych analizatorów sprawdza [styl kodu](../ide/code-styles-and-code-cleanup.md)i można skonfigurować preferencje na [stronie Opcje edytora tekstu](../ide/code-styles-and-code-cleanup.md) lub w [pliku EditorConfig](../ide/editorconfig-code-style-settings-reference.md). Kilku wbudowanych analizatorów Przyjrzyj się jakości kodu.
 
-- Można zainstalować dodatkowe analizatory jako pakiet NuGet lub rozszerzenie programu Visual Studio. Przykład:
+- Możesz zainstalować dodatkowe analizatory jako pakiet NuGet lub rozszerzenie programu Visual Studio. Na przykład:
 
   - [Analizatory FxCop](../code-quality/install-fxcop-analyzers.md), zalecane przez firmę Microsoft analizatory jakości kodu
-  - Analizatory innych firm, takie jak [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [Analizatory XUnit](https://www.nuget.org/packages/xunit.analyzers/)i [Analizator sonaru](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
+  - [Analizatory](https://www.nuget.org/packages/SonarAnalyzer.CSharp/) stron trzecich, takie jak [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [przeanaliz XUnit](https://www.nuget.org/packages/xunit.analyzers/)i Sonar
 
-Jeśli naruszenia reguły zostaną znalezione przez analizatora, są one zgłaszane w edytorze kodu (jako *falista* pod kodem naruszającym) i w oknie lista błędów.
+Jeśli wykryto naruszenia reguł przez analizator, są one raportowane w edytorze kodu (jako *zygzak w kodzie* błędu) i w oknie Lista błędów.
 
-Wiele reguł analizatora lub *diagnostyki*, mają jeden lub więcej *skojarzonych poprawek kodu,* które można zastosować, aby rozwiązać problem. Diagnostyka analizatora, które są wbudowane w programie Visual Studio każdy ma skojarzoną poprawkę kodu. Poprawki kodu są wyświetlane w menu ikony żarówki wraz z innymi typami [szybkich akcji](../ide/quick-actions.md). Aby uzyskać informacje na temat tych poprawek kodu, zobacz [Wspólne szybkie akcje](../ide/common-quick-actions.md).
+Wiele reguł analizatorów lub *diagnostyki*ma jedną lub więcej skojarzonych *poprawek kodu* , które można zastosować, aby rozwiązać problem. Diagnostyka analizatora wbudowana w program Visual Studio ma skojarzoną poprawkę kodu. Poprawki kodu są wyświetlane w menu ikony żarówki wraz z innymi typami [szybkich akcji](../ide/quick-actions.md). Aby uzyskać informacje na temat tych poprawek kodu, zobacz [Common Quick Actions](../ide/common-quick-actions.md).
 
-![Naruszenie zasad analizy i poprawka kodu szybkiej akcji](../code-quality/media/built-in-analyzer-code-fix.png)
+![Naruszenie analizatora i szybka czynność usuwania kodu](../code-quality/media/built-in-analyzer-code-fix.png)
 
-## <a name="source-code-analysis-versus-legacy-analysis"></a>Analiza kodu źródłowego a starsza analiza
+## <a name="source-code-analysis-versus-legacy-analysis"></a>Analiza kodu źródłowego w porównaniu do starszej analizy
 
-Analiza źródła przez analizatory Roslyn zastępuje [starszą analizę](../code-quality/code-analysis-for-managed-code-overview.md) kodu zarządzanego. Wiele starszych reguł analizy zostały już przepisane jako analizatory kodu Roslyn. W przypadku nowszych szablonów projektów, takich jak projekty .NET Core i .NET Standard, starsza analiza nie jest nawet dostępna.
+Analiza źródła przez analizatory Roslyn zastępuje [starszą analizę](../code-quality/code-analysis-for-managed-code-overview.md) dla kodu zarządzanego. Wiele starszych reguł analizy zostało już zapisaną jako analizatory kodu Roslyn. W przypadku nowszych szablonów projektów, takich jak .NET Core i projekty .NET Standard, Starsza analiza nie jest jeszcze dostępna.
 
-Podobnie jak naruszenia starszych reguł analizy, naruszenia analizy kodu źródłowego są wyświetlane w oknie lista błędów w programie Visual Studio. Ponadto naruszenia analizy kodu źródłowego są również wyświetlane w edytorze kodu jako *squiggles* pod kodem naruszającym. Kolor faliwy zależy od [ustawienia ważności reguły.](../code-quality/use-roslyn-analyzers.md#rule-severity) Na poniższej ilustracji przedstawiono trzy naruszenia&mdash;jednego czerwonego, jednego zielonego i jednego szarego:
+Podobnie jak w przypadku starszych naruszeń reguł analizy, naruszenia analizy kodu źródłowego są wyświetlane w oknie Lista błędów w programie Visual Studio. Ponadto naruszenia analizy kodu *źródłowego są również* wyświetlane w edytorze kodu jako zygzaky w kodzie błędu. Kolor zygzaka zależy od [Ustawienia ważności](../code-quality/use-roslyn-analyzers.md#rule-severity) reguły. Na poniższej ilustracji przedstawiono trzy naruszenia &mdash; jednej czerwieni, jedną zieloną i jedną szarą:
 
-![Squiggles w edytorze kodu w programie Visual Studio](media/diagnostics-severity-colors.png)
+![Zygzaky w edytorze kodu w programie Visual Studio](media/diagnostics-severity-colors.png)
 
-Analizatory kodu sprawdzić kod w czasie kompilacji, takich jak starsza analiza, jeśli jest włączona, ale również żyć podczas pisania. Można skonfigurować zakres analizy kodu na żywo do wykonania tylko dla bieżącego dokumentu, wszystkie otwarte dokumenty lub całe rozwiązanie. Zobacz [Jak: Konfigurowanie zakresu analizy kodu na żywo](./configure-live-code-analysis-scope-managed-code.md).
+Analizatory kodu sprawdzają kod w czasie kompilacji, na przykład w starszej analizie, jeśli jest włączona, ale również na żywo podczas pisania. Można skonfigurować zakres analizy kodu na żywo do wykonania tylko dla bieżącego dokumentu, wszystkie otwarte dokumenty lub całe rozwiązanie. Zobacz [jak to zrobić: Konfigurowanie zakresu analizy kodu na żywo](./configure-live-code-analysis-scope-managed-code.md).
 
 > [!TIP]
-> Błędy w czasie kompilacji i ostrzeżenia z analizatorów kodu są wyświetlane tylko wtedy, gdy analizatory są zainstalowane jako pakiet NuGet. Wbudowane analizatory (na przykład IDE0067 i IDE0068) nigdy nie są uruchamiane podczas kompilacji.
+> Błędy i ostrzeżenia czasu kompilacji są wyświetlane tylko wtedy, gdy analizatory są zainstalowani jako pakiet NuGet. Wbudowane analizatory (na przykład IDE0067 i IDE0068) nigdy nie są uruchamiane podczas kompilacji.
 
-Analizatory kodu Roslyn nie tylko zgłaszają te same typy problemów, które wykonuje starsza analiza, ale ułatwiają naprawienie jednego lub wszystkich wystąpień naruszenia w pliku lub projekcie. Te akcje są nazywane *poprawkami kodu*. Poprawki kodu są specyficzne dla IDE; w programie Visual Studio są one implementowane jako [szybkie akcje.](../ide/quick-actions.md) Nie wszystkie diagnostyki analizatora mają skojarzoną poprawkę kodu.
+Tylko analizatory kodu Roslyn raportują te same typy problemów, które są używane w starszej analizie, ale ułatwiają rozwiązanie jednego lub wszystkich wystąpień naruszenia w pliku lub projekcie. Te akcje są nazywane *poprawkami kodu*. Poprawki kodu są specyficzne dla środowiska IDE; w programie Visual Studio są one implementowane jako [szybkie akcje](../ide/quick-actions.md). Nie cała Diagnostyka analizatora ma skojarzoną poprawkę kodu.
 
 > [!NOTE]
-> Przed wydaniem programu Visual Studio 2019 16.5 opcja menu **Analizowanie** > **analizy kodu** wykonywania starszej analizy. Uruchamianie programu Visual Studio 2019 16.5, uruchom **analizę kodu** menu opcja wykonuje analizatory oparte na Roslyn dla wybranego projektu lub rozwiązania.
+> Przed wydaniem programu Visual Studio 2019 16,5, **Analizuj**  >  opcję menu**Uruchom analizę kodu** wykonuje starszą analizę. Uruchamianie programu Visual Studio 2019 16,5, opcja **uruchamiania analizy kodu** wykonuje analizatory oparte na Roslyn dla wybranego projektu lub rozwiązania.
 
-Aby odróżnić naruszenia z analizatorów kodu i starszej analizy na liście błędów, spójrz na **narzędzie** kolumny. Jeśli wartość narzędzia pasuje do jednego z zestawów analizatora w **Eksploratorze rozwiązań**, na przykład **Microsoft.CodeQuality.Analyzers**, naruszenie pochodzi z analizatora kodu. W przeciwnym razie naruszenie pochodzi z analizy starszej wersji.
+Aby rozróżnić naruszenia od analizatorów kodu i starszej analizy w Lista błędów, należy zapoznać się z kolumną **Narzędzia** . Jeśli wartość narzędzia pasuje do jednego z zestawów analizatorów w **Eksplorator rozwiązań**, na przykład **Microsoft. CodeQuality. analizatory**, naruszenie pochodzi z analizatora kodu. W przeciwnym razie naruszenie pochodzi ze starszej wersji analizy.
 
-![Kolumna Narzędzia na liście błędów](media/code-analysis-tool-in-error-list.png)
+![Kolumna narzędzia w Lista błędów](media/code-analysis-tool-in-error-list.png)
 
 > [!TIP]
-> **Właściwość RunCodeAnalysis** MSBuild w pliku projektu ma zastosowanie tylko do starszej analizy. Jeśli zainstalujesz analizatory, ustaw **RunCodeAnalysis** **false** w pliku projektu, aby zapobiec starszej analizy z systemem po kompilacji.
+> Właściwość **RunCodeAnalysis** MSBuild w pliku projektu ma zastosowanie tylko do starszej analizy. Jeśli instalujesz analizatory, ustaw **RunCodeAnalysis** na **false** w pliku projektu, aby zapobiec uruchamianiu starszej analizy po kompilacji.
 >
 > ```xml
 > <RunCodeAnalysis>false</RunCodeAnalysis>
@@ -67,23 +67,23 @@ Aby odróżnić naruszenia z analizatorów kodu i starszej analizy na liście b�
 
 ## <a name="nuget-package-versus-vsix-extension"></a>Pakiet NuGet a rozszerzenie VSIX
 
-Analizatory kodu Roslyn można zainstalować na projekt za pośrednictwem pakietu NuGet. Niektóre są również dostępne jako rozszerzenie programu Visual Studio, w którym to przypadku mają zastosowanie do dowolnego rozwiązania, które można otworzyć w programie Visual Studio. Istnieją pewne kluczowe różnice w zachowaniu między tymi dwiema metodami [instalowania analizatorów.](../code-quality/install-roslyn-analyzers.md)
+Analizatory kodu Roslyn można instalować dla poszczególnych projektów za pośrednictwem pakietu NuGet. Niektóre z nich są również dostępne jako rozszerzenie programu Visual Studio, w takim przypadku mają zastosowanie do dowolnego rozwiązania, które jest otwierane w programie Visual Studio. Istnieją pewne kluczowe różnice między tymi dwiema metodami [instalacji analizatorów](../code-quality/install-roslyn-analyzers.md).
 
 ### <a name="scope"></a>Zakres
 
-Jeśli zainstalujesz analizatory jako rozszerzenie programu Visual Studio, mają one zastosowanie na poziomie rozwiązania i do wszystkich wystąpień programu Visual Studio. Jeśli zainstalujesz analizatory jako pakiet NuGet, który jest preferowaną metodą, mają one zastosowanie tylko do projektu, w którym zainstalowano pakiet NuGet. W środowiskach zespołowych analizatory zainstalowane jako pakiety NuGet są w zakresie dla *wszystkich deweloperów,* którzy pracują nad tym projektem.
+Jeśli instalujesz analizatory jako rozszerzenie programu Visual Studio, są one stosowane na poziomie rozwiązania i we wszystkich wystąpieniach programu Visual Studio. Jeśli instalujesz analizatory jako pakiet NuGet, który jest preferowaną metodą, są one stosowane tylko do projektu, w którym zainstalowano pakiet NuGet. W środowiskach zespołu analizatory zainstalowane jako pakiety NuGet są w zakresie dla *wszystkich deweloperów* , którzy pracują nad tym projektem.
 
 ### <a name="build-errors"></a>Błędy kompilacji
 
-Aby reguły były wymuszane w czasie kompilacji, w tym za pośrednictwem wiersza polecenia lub jako część kompilacji ciągłej integracji (CI), należy zainstalować analizatory jako pakiet NuGet. Ostrzeżenia i błędy analizatora nie są wyświetlane w raporcie kompilacji, jeśli zainstalujesz analizatory jako rozszerzenie.
+Aby reguły były wymuszane w czasie kompilacji, w tym za pomocą wiersza polecenia lub w ramach kompilacji ciągłej integracji (CI), należy zainstalować analizatory jako pakiet NuGet. Ostrzeżenia i błędy analizatora nie są wyświetlane w raporcie kompilacji, jeśli analizatory są instalowane jako rozszerzenie.
 
-Na poniższej ilustracji przedstawiono dane wyjściowe kompilacji wiersza polecenia z tworzenia projektu, który zawiera naruszenie reguły analizatora:
+Na poniższej ilustracji przedstawiono dane wyjściowe kompilacji wiersza polecenia z kompilowania projektu, który zawiera naruszenie reguły analizatora:
 
-![Wyjście MSBuild z naruszeniem reguły](media/command-line-build-analyzers.png)
+![Dane wyjściowe MSBuild z naruszeniem reguły](media/command-line-build-analyzers.png)
 
 ### <a name="rule-severity"></a>Ważność reguły
 
-Nie można skonfigurować ważności reguł z analizatorów, które zostały zainstalowane jako rozszerzenie programu Visual Studio. Aby skonfigurować [ważność reguły,](../code-quality/use-roslyn-analyzers.md#rule-severity)należy zainstalować analizatory jako pakiet NuGet.
+Nie można skonfigurować ważności reguł z analizatorów, które zostały zainstalowane jako rozszerzenie programu Visual Studio. Aby skonfigurować [ważność reguły](../code-quality/use-roslyn-analyzers.md#rule-severity), zainstaluj analizatory jako pakiet NuGet.
 
 ## <a name="next-steps"></a>Następne kroki
 
@@ -91,7 +91,7 @@ Nie można skonfigurować ważności reguł z analizatorów, które zostały zai
 > [Instalowanie analizatorów kodu w programie Visual Studio](../code-quality/install-roslyn-analyzers.md)
 
 > [!div class="nextstepaction"]
-> [Używanie analizatorów kodu w programie Visual Studio](../code-quality/use-roslyn-analyzers.md)
+> [Korzystanie z analizatorów kodu w programie Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
 ## <a name="see-also"></a>Zobacz też
 

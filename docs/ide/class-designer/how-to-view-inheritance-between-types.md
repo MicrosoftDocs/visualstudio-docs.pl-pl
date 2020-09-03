@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d5c35279421ad17e62afe707d62dbc879d03b384
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769910"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Instrukcje: wyświetlanie dziedziczenia między typami w Projektant klas
@@ -45,7 +45,7 @@ Możesz również kliknąć prawym przyciskiem myszy typ, którego typ podstawow
 
 Możesz również kliknąć prawym przyciskiem myszy typ, dla którego chcesz zobaczyć typy pochodne, a następnie wybrać **Pokaż klasy pochodne** lub **Pokaż interfejsy pochodne**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: tworzenie skojarzeń między typami](how-to-create-associations-between-types.md)
 - [Wyświetlanie typów i relacji](designing-and-viewing-classes-and-types.md)

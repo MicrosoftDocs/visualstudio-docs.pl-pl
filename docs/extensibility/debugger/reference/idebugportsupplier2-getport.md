@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::GetPort | Dokumenty firmy Microsoft
+title: 'IDebugPortSupplier2:: GetPort | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: be3f53c12b5562377cd79267d6e216a1435859a5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724653"
 ---
 # <a name="idebugportsupplier2getport"></a>IDebugPortSupplier2::GetPort
-Pobiera port od dostawcy portu.
+Pobiera port z dostawcy portów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,13 +43,13 @@ int GetPort( 
 
 ## <a name="parameters"></a>Parametry
 `guidPort`\
-[w] Globalnie unikatowy identyfikator (GUID) portu.
+podczas Unikatowy identyfikator globalny (GUID) portu.
 
 `ppPort`\
-[na zewnątrz] Zwraca obiekt [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) reprezentujący port.
+określoną Zwraca obiekt [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) , który reprezentuje port.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Zwraca, `E_PORTSUPPLIER_NO_PORT` jeśli nie istnieje port z danym identyfikatorem.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwraca wartość, `E_PORTSUPPLIER_NO_PORT` Jeśli żaden port nie istnieje z danym identyfikatorem.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

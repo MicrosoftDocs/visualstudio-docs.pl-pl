@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8042b228a481dc3d720d8b422963db41abbddcd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533838"
 ---
 # <a name="vsperf"></a>VSPerf
@@ -27,7 +27,7 @@ Użyj narzędzia wiersza polecenia **VsPerf** , aby:
   
    Aby uzyskać więcej informacji na temat opcji profilowania, zobacz [Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a>W tym temacie  
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> W tym temacie  
  W tym temacie opisano opcje, których można użyć z `vsperf.exe` narzędziem wiersza polecenia. Temat zawiera następujące sekcje:  
   
  [Tylko aplikacje ze sklepu Windows](#BKMK_windows_store_apps_only)  
@@ -36,7 +36,7 @@ Użyj narzędzia wiersza polecenia **VsPerf** , aby:
   
  [Wszystkie aplikacje](#BKMK_All_applications)  
   
-## <a name="windows-store-apps-only"></a><a name="BKMK_windows_store_apps_only"></a>Tylko aplikacje ze sklepu Windows  
+## <a name="windows-store-apps-only"></a><a name="BKMK_windows_store_apps_only"></a> Tylko aplikacje ze sklepu Windows  
  Te opcje mają zastosowanie tylko do aplikacji ze sklepu Windows.  
   
 |Opcja|Opis|  
@@ -47,7 +47,7 @@ Użyj narzędzia wiersza polecenia **VsPerf** , aby:
 |**/noclr**|Opcjonalny. Nie Zbieraj danych CLR.<br /><br /> Używaj tylko z/Package lub/Attach.<br /><br /> Optymalizacja nie zostanie rozpoznana przez żadne zarządzane symbole.|  
 |**/listapps**|Wyświetl listę zainstalowanych nazw aplikacji i PackageFullNames.|  
   
-## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a><a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a>Aplikacje klasyczne systemu Windows 8 i aplikacje systemu Windows Server 2012  
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a><a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Aplikacje klasyczne systemu Windows 8 i aplikacje systemu Windows Server 2012  
  Te opcje nie działają w aplikacjach ze sklepu Windows.  
   
 |Opcja|Opis|  
@@ -56,7 +56,7 @@ Użyj narzędzia wiersza polecenia **VsPerf** , aby:
 |**/args: {ExecutableArguments}**|Określa argumenty wiersza polecenia do przekazania elementu docelowego **przełącznik/Launch** .|  
 |**/Console**|Uruchamia element docelowy **przełącznik/Launch** w nowym oknie poleceń.|  
   
-## <a name="all-applications"></a><a name="BKMK_All_applications"></a>Wszystkie aplikacje  
+## <a name="all-applications"></a><a name="BKMK_All_applications"></a> Wszystkie aplikacje  
  Ta opcja ma zastosowanie do dowolnej aplikacji systemu Windows 8 lub Windows Server 2012.  
   
 |Opcja|Opis|  

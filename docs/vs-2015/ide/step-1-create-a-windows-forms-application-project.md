@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cdba2105c6b8af42d51669e0d1fc8ce49085d513
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851611"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1. Utworzenie projektu aplikacji Windows Forms
@@ -21,15 +21,15 @@ ms.locfileid: "75851611"
 
 Podczas tworzenia przeglądarki obrazów pierwszym krokiem jest utworzenie projektu aplikacji Windows Forms.
 
- ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# wideo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+ ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) lub [Samouczek 1: Tworzenie przeglądarki obrazów w języku C# — wideo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ### <a name="to-create-a-windows-forms-application-project"></a>Aby utworzyć projekt aplikacji Windows Forms
 
-1. Na pasku menu wybierz **pliku**, **New**, **projektu**. Okno dialogowe powinno wyglądać następująco.
+1. Na pasku menu wybierz **plik**, **Nowy**, **projekt**. Okno dialogowe powinno wyglądać następująco.
 
      ![Okno dialogowe Nowy projekt](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts") Nowy projekt — okno dialogowe
 
-2. Wybierz **wizualizację C#**  lub **Visual Basic** na liście **zainstalowane szablony** .
+2. Wybierz pozycję **Visual C#** lub **Visual Basic** na liście **zainstalowane szablony** .
 
 3. Na liście szablony wybierz ikonę **Windows Forms aplikacji** . Nazwij nowy formularz **PictureViewer**, a następnie wybierz przycisk **OK** .
 
@@ -50,12 +50,12 @@ Podczas tworzenia przeglądarki obrazów pierwszym krokiem jest utworzenie proje
 
     - **Okno główne** W tym oknie można wykonywać większość prac, takich jak praca z formularzami i edytowanie kodu. Na ilustracji okno zawiera formularz w edytorze formularzy. W górnej części okna zostanie wyświetlona karta **Strona początkowa** i karta **Form1.cs [Design]** . (W Visual Basic Nazwa karty zostanie zakończona z. vb zamiast. cs).
 
-    - **Okno Eksplorator rozwiązań** W tym oknie można wyświetlać wszystkie elementy w rozwiązaniu i przechodzić do nich. W przypadku wybrania pliku zawartość okna **Właściwości** zostanie zmieniona. Jeśli otworzysz plik kodu (który zostaje zakończony w. cs w wizualizacji C# i. vb w Visual Basic), zostanie wyświetlony plik kodu lub Projektant pliku kodu. Projektant jest powierzchnią wizualną, na której można dodawać kontrolki, takie jak przyciski i listy. W przypadku formularzy programu Visual Studio Projektant jest nazywany Projektant formularzy systemu Windows.
+    - **Okno Eksplorator rozwiązań** W tym oknie można wyświetlać wszystkie elementy w rozwiązaniu i przechodzić do nich. W przypadku wybrania pliku zawartość okna **Właściwości** zostanie zmieniona. Jeśli otworzysz plik kodu (który zostanie zakończony w. cs w języku Visual C# i. vb w Visual Basic), zostanie wyświetlony plik kodu lub Projektant pliku kodu. Projektant jest powierzchnią wizualną, na której można dodawać kontrolki, takie jak przyciski i listy. W przypadku formularzy programu Visual Studio Projektant jest nazywany Projektant formularzy systemu Windows.
 
     - **Okno właściwości** W tym oknie można zmienić właściwości elementów wybranych w innych oknach. Na przykład po wybraniu formularza Form1 można zmienić jego tytuł przez ustawienie właściwości **Text** i zmienić kolor tła, ustawiając właściwość **BackColor** .
 
     > [!NOTE]
-    > W górnym wierszu **Eksplorator rozwiązań** przedstawiono **rozwiązanie "PictureViewer" (1 projekt)** , co oznacza, że program Visual Studio utworzył rozwiązanie. Rozwiązanie może zawierać więcej niż jeden projekt, ale teraz będzie można korzystać z rozwiązań, które zawierają tylko jeden projekt.
+    > W górnym wierszu **Eksplorator rozwiązań** przedstawiono **rozwiązanie "PictureViewer" (1 projekt)**, co oznacza, że program Visual Studio utworzył rozwiązanie. Rozwiązanie może zawierać więcej niż jeden projekt, ale teraz będzie można korzystać z rozwiązań, które zawierają tylko jeden projekt.
 
 6. Na pasku menu wybierz **plik**, **Zapisz wszystko**.
 

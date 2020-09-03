@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fb07e9bc6c308e27e3ad054c5aeb0b12c092054
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534007"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
@@ -38,7 +38,7 @@ Program Visual Studio oferuje teraz możliwość wyboru narzędzi do oceny wydaj
   
      Kompilacje debugowania nie mają pewnych optymalizacji udostępnianych przez kompilacje wydań, na przykład wywołania funkcji defragmentowania i stałe, oczyszczanie nieużywanych ścieżek kodu i przechowywanie zmiennych w sposób, który nie może być używany przez debuger. Debuger zmienia czasy wydajności, ponieważ wykonuje pewne operacje, które są niezbędne do debugowania (na przykład przechwytując zdarzenia wyjątku i ładowania modułu). Dlatego numery wydajności w narzędziach zintegrowanych z debugerem są dokładne tylko w ciągu dziesiątek milisekund. Numery wydajności dla konfiguracji wydań z narzędziami niebędącymi debugerem są znacznie dokładniejsze.  
   
-## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a>Zbieraj dane profilowania podczas debugowania  
+## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Zbieraj dane profilowania podczas debugowania  
  Poniższa sekcja dotyczy debugowania lokalnie. Informacje na temat debugowania na urządzeniu lub w odniesieniu do zdalnego debugowania można znaleźć w kolejnych sekcjach.  
   
 1. Otwórz projekt, który chcesz debugować, a następnie kliknij pozycję **Debuguj/Rozpocznij debugowanie** (lub **Rozpocznij** na pasku narzędzi lub **F5**).  
@@ -99,7 +99,7 @@ Program Visual Studio oferuje teraz możliwość wyboru narzędzi do oceny wydaj
 ## <a name="the-profiling-report"></a>Raport profilowania  
  ![Raport dotyczący narzędzi diagnostycznych](../profiling/media/diag-report.png "DIAG_Report")  
   
-|Image (Obraz)|Opis|  
+|Obraz|Opis|  
 |-|-|  
 |![Krok 1](../profiling/media/procguid-1.png "ProcGuid_1")|Na osi czasu są widoczne długość sesji profilowania, zdarzenia aktywacji cyklu życia aplikacji i znaczniki użytkownika.|  
 |![Krok 2](../profiling/media/procguid-2.png "ProcGuid_2")|Raport można ograniczyć do części osi czasu, przeciągając niebieskie paski w celu wybrania regionu na osi czasu.|  

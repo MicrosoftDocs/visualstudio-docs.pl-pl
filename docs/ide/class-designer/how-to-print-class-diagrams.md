@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2fb7b22c523216a41cddfc5c6cf8e87a915a9e38
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770079"
 ---
 # <a name="how-to-print-class-diagrams"></a>Instrukcje: Drukowanie diagramów klas
@@ -30,7 +30,7 @@ Diagram klas można wydrukować przy użyciu funkcji drukowania programu Visual 
 
 Cały Diagram klas zostanie wydrukowany. Aby drukować o odpowiednim rozmiarze, może być konieczne dostosowanie ustawień w oknie dialogowym **Ustawienia strony** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: kopiowanie elementów diagramu klas do dokumentu Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
 - [Instrukcje: eksportowanie diagramów klas jako obrazów](how-to-export-class-diagrams-as-images.md)

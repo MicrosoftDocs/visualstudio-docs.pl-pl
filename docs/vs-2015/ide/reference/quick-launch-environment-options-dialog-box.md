@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: abd8f8e9ee35c234a79af74199b11d5491e6fbee
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851632"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Szybkie uruchamianie, środowisko, opcje — okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Funkcja **szybkiego uruchamiania** umożliwia szybkie wyszukiwanie i wykonywanie akcji dla zasobów IDE, takich jak opcje, szablony i menu. Nie można użyć **szybkiego uruchamiania** do wyszukiwania kodu i symboli. Pole wyszukiwania **szybkiego uruchamiania** znajduje się w prawym górnym rogu paska menu i jest dostępne po wybraniu klawiszy CTRL + Q. Wystarczy wprowadzić ciąg wyszukiwania w polu. Do wyszukiwania ciągów zawierających @, użyj ”@@”.
+Funkcja **szybkiego uruchamiania** umożliwia szybkie wyszukiwanie i wykonywanie akcji dla zasobów IDE, takich jak opcje, szablony i menu. Nie można użyć **szybkiego uruchamiania** do wyszukiwania kodu i symboli. Pole wyszukiwania **szybkiego uruchamiania** znajduje się w prawym górnym rogu paska menu i jest dostępne po wybraniu klawiszy CTRL + Q. Wystarczy wprowadzić ciąg wyszukiwania w polu. Aby wyszukać ciągi zawierające ciąg @, użyj znaku "@ @".
 
  **Szybkie uruchamianie** jest domyślnie włączone podczas instalowania programu Visual Studio. Na pasku menu można pokazać lub ukryć pasek **Szybkie uruchamianie** , wybierając pozycję **Narzędzia**, **Opcje**. Rozwiń węzeł **środowiska** , a następnie wybierz polecenie **Szybkie uruchamianie**. Zaznacz lub wyczyść pole wyboru **Włącz szybkie uruchamianie** . Możesz również włączyć lub wyłączyć kategorie wyszukiwania na tej stronie.
 
@@ -36,10 +36,10 @@ Funkcja **szybkiego uruchamiania** umożliwia szybkie wyszukiwanie i wykonywanie
 
 |Kategoria|Skrót|Opis skrótu|
 |--------------|--------------|--------------------------|
-|Ostatnio używane|@mru<br /><br /> Na przykład:`@mru font`|Wyświetla maksymalnie pięć elementów, które były **ostatnio używane**.|
-|Menu|@menu<br /><br /> Na przykład:`@menu font`|Ogranicza wyszukiwanie do elementów menu.|
-|Opcje|@opt<br /><br /> Na przykład:`@opt font`|Ogranicza wyszukiwanie do ustawień w oknie dialogowym **Opcje** .|
-|Dokumenty|@doc<br /><br /> Na przykład:`@doc font`|Ogranicza wyszukiwanie do nazw plików i ścieżek otwartych dokumentów dla kryteriów wyszukiwania, ale nie przeszukuje tekstu wewnątrz samych plików.|
+|Ostatnio używane|@mru<br /><br /> Na przykład `@mru font`|Wyświetla maksymalnie pięć elementów, które były **ostatnio używane**.|
+|Menu|@menu<br /><br /> Na przykład `@menu font`|Ogranicza wyszukiwanie do elementów menu.|
+|Opcje|@opt<br /><br /> Na przykład `@opt font`|Ogranicza wyszukiwanie do ustawień w oknie dialogowym **Opcje** .|
+|Dokumenty|@doc<br /><br /> Na przykład `@doc font`|Ogranicza wyszukiwanie do nazw plików i ścieżek otwartych dokumentów dla kryteriów wyszukiwania, ale nie przeszukuje tekstu wewnątrz samych plików.|
 
 > [!NOTE]
 > Można zmienić klawisze skrótów na stronie **Ogólne**, **Klawiatura** w oknie dialogowym **Opcje** .

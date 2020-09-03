@@ -7,17 +7,17 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 040a168f45afff9111426aac57cafc32a05c1b12
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79437480"
 ---
-Tabele na tej stronie listy identyfikatorów, których można użyć do zainstalowania programu Visual Studio z wiersza polecenia lub które można określić jako zależność w manifeście VSIX. Dodamy dodatkowe składniki po wydaniu aktualizacji do programu Visual Studio.
+Tabele na tej stronie wyświetlają identyfikatory, których można użyć do zainstalowania programu Visual Studio z wiersza polecenia lub można określić jako zależność w manifeście VSIX. Po udostępnieniu aktualizacji programu Visual Studio dodamy dodatkowe składniki.
 
-Zwróć również uwagę na następujące informacje na temat strony:
+Należy również zwrócić uwagę na następujące kwestie dotyczące strony:
 
-* Każde obciążenie ma własną sekcję, a następnie identyfikator obciążenia i tabelę składników, które są dostępne dla obciążenia.
-* Domyślnie **wymagane** składniki zostaną zainstalowane podczas instalowania obciążenia.
-* W tym przypadku można również zainstalować składniki **Zalecane** i **Opcjonalne.**
-* Dodaliśmy również sekcję zawierającą listę dodatkowych składników, które nie są powiązane z żadnym obciążeniem.
+* Każde obciążenie ma własną sekcję, a następnie identyfikator obciążenia oraz tabelę składników, które są dostępne dla obciążenia.
+* Domyślnie **wymagane** składniki zostaną zainstalowane po zainstalowaniu obciążenia.
+* Jeśli wybierzesz opcję, możesz również zainstalować **zalecane** i **opcjonalne** składniki.
+* Dodaliśmy również sekcję, która zawiera dodatkowe składniki, które nie są powiązane z żadnym obciążeniem.

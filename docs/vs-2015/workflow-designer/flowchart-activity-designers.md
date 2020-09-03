@@ -10,21 +10,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dc13bb3c27507070d829ce9a9600de983e273f43
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656682"
 ---
 # <a name="flowchart-activity-designers"></a>Projektanci działań Flowchart
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] obejmuje wiele działań dostarczonych przez system, których można używać podczas konstruowania przepływów pracy. Ta sekcja zawiera działania dostarczone przez system służące do zarządzania schematami blokowymi w ramach przepływu pracy. W poniższych tematach opisano te działania i przedstawiono wskazówki dotyczące ich używania.
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] zawiera szereg działań dostarczonych przez system, których można użyć podczas konstruowania przepływów pracy. Ta sekcja zawiera działania dostarczone przez system służące do zarządzania schematami blokowymi w ramach przepływu pracy. W poniższych tematach opisano te działania i przedstawiono wskazówki dotyczące ich używania.
 
 ## <a name="in-this-section"></a>W tej sekcji
  [Schemat blokowy](../workflow-designer/flowchart-activity-designer.md) **służący do tworzenia przepływów pracy definiujących i zarządzających złożonymi kontrolkami przepływów.**  [FlowDecision](../workflow-designer/flowdecision-activity-designer.md) Zapewnia gałąź dla przepływu sterowania w jednej z dwóch alternatyw, w zależności od tego, czy określony warunek jest spełniony.
 
- [FlowSwitch \<T >](../workflow-designer/flowswitch-t-activity-designer.md) Zapewnia rozgałęzienie dla przepływu sterowania na podstawie kryterium dopasowywania, gdy wymagane są więcej niż dwa gałęzie alternatywne.
+ [FlowSwitch \<T> ](../workflow-designer/flowswitch-t-activity-designer.md) Zapewnia rozgałęzienie dla przepływu sterowania na podstawie kryterium dopasowywania, gdy wymagane są więcej niż dwa gałęzie alternatywne.
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
  <xref:System.Activities.Activity>
 
  <xref:System.Activities.Statements.Flowchart>

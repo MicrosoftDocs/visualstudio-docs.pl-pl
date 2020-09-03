@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ce6281a87900247cc54422a5175714d5f05b8e07
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349149"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Porady: ustawianie nazw wątków w kodzie natywnym
@@ -32,7 +32,7 @@ Istnieją dwa sposoby ustawiania nazwy wątku. Pierwszy jest za pośrednictwem f
 
 Należy zauważyć, że _oba_ podejścia mogą być używane razem, w razie potrzeby, ponieważ mechanizmy, za pomocą których działają, są niezależne od siebie.
 
-### <a name="set-a-thread-name-by-using-setthreaddescription"></a>Ustaw nazwę wątku za pomocą`SetThreadDescription`
+### <a name="set-a-thread-name-by-using-setthreaddescription"></a>Ustaw nazwę wątku za pomocą `SetThreadDescription`
 
 Korzyści:
 * Nazwy wątków są widoczne podczas debugowania w programie Visual Studio, niezależnie od tego, czy debuger został dołączony do procesu w momencie wywołania SetThreadDescription.

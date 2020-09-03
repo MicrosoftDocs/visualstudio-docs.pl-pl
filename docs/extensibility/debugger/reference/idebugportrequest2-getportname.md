@@ -1,5 +1,5 @@
 ---
-title: IDebugPortRequest2::GetPortName | Dokumenty firmy Microsoft
+title: 'IDebugPortRequest2:: GetPortName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 67121e98f2d506aa16c2b4dc3fff2ad5128fb93b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724813"
 ---
 # <a name="idebugportrequest2getportname"></a>IDebugPortRequest2::GetPortName
@@ -41,13 +41,13 @@ int GetPortName( 
 
 ## <a name="parameters"></a>Parametry
 `pbstrPortName`\
-[na zewnątrz] Zwraca nazwę portu.
+określoną Zwraca nazwę portu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Interfejs [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) jest zwykle przekazywany z pakietu debugowania (klienta) do dostawcy portu (serwera) w celu uzyskania połączenia z portem. Zarówno pakiet debugowania, jak i dostawca portu są świadomi możliwych wyborów dla portu. Jeśli prosty ciąg można opisać port, a następnie metoda ma wystarczającą `IDebugPortRequest2::GetPortName` ilość informacji, aby nawiązać połączenie. W przeciwnym razie klient może dostarczyć dodatkowe interfejsy, które `IDebugPortRequest2::QueryInterface`mogą uzyskać serwer za pomocą programu .
+ Interfejs [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) jest zwykle przesyłany z pakietu debugowania (klient) do dostawcy portu (serwera) w celu uzyskania połączenia z portem. Zarówno pakiet debugowania, jak i dostawca portów są świadomi możliwych wyborów dla portu. Jeśli prosty ciąg może opisywać port, `IDebugPortRequest2::GetPortName` Metoda zawiera wystarczające informacje, aby nawiązać połączenie. W przeciwnym razie dodatkowe interfejsy mogą być dostarczone przez klienta, który może zostać uzyskany przez serwer przy użyciu programu `IDebugPortRequest2::QueryInterface` .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)

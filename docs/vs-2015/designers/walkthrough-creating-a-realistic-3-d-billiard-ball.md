@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bf039695f342d58cd70a9859d73932e3a0100e01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664103"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Wskazówki: tworzenie realistycznej kuli bilardowej w 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym instruktażu pokazano, jak utworzyć realistyczną kulkę bilardowej trójwymiarowie przy użyciu projektanta programu do cieniowania i edytora obrazów w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Trójwymiarowy wygląd kulki bilardowej jest osiągany przez połączenie kilku technik cieniowania z odpowiednimi zasobami tekstury.
+W tym instruktażu pokazano, jak utworzyć realistyczną kulkę bilardowej 3-D przy użyciu projektanta programu do cieniowania i edytora obrazów w temacie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Trójwymiarowy wygląd kulki bilardowej jest osiągany przez połączenie kilku technik cieniowania z odpowiednimi zasobami tekstury.
 
  W tym dokumencie przedstawiono następujące działania:
 
@@ -36,9 +36,9 @@ W tym instruktażu pokazano, jak utworzyć realistyczną kulkę bilardowej trój
 
 - Narzędzie do składania tekstur do mapy modułu, na przykład narzędzie DirectX Texture, które jest zawarte w zestawie SDK DirectX 2010 dla czerwca.
 
-- Znajomość edytora obrazów w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+- Znajomość edytora obrazów w systemie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-- Znajomość projektanta programu do cieniowania w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+- Znajomość projektanta programu do cieniowania w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 ## <a name="creating-the-basic-appearance-with-shape-and-texture"></a>Tworzenie podstawowego wyglądu przy użyciu kształtu i tekstury
  W grafikach komputerowych najbardziej podstawowe elementy wyglądu są kształtem i kolorem. W symulacji komputera często należy używać modelu 3-D do reprezentowania kształtu rzeczywistego obiektu. Szczegóły koloru są następnie stosowane do powierzchni modelu przy użyciu mapy tekstury.
@@ -51,7 +51,7 @@ W tym instruktażu pokazano, jak utworzyć realistyczną kulkę bilardowej trój
 
 - Na pasku narzędzi projektanta cieniowania wybierz pozycję **Podgląd z sferą.**
 
-  W następnym kroku utworzysz program do cieniowania, który stosuje teksturę do modelu, ale najpierw musisz utworzyć teksturę, której można użyć. W tym instruktażu przedstawiono sposób tworzenia tekstury przy użyciu edytora obrazów, który jest częścią [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ale można użyć dowolnego edytora obrazów, który umożliwia zapisanie tekstury w odpowiednim formacie.
+  W następnym kroku utworzysz program do cieniowania, który stosuje teksturę do modelu, ale najpierw musisz utworzyć teksturę, której można użyć. W tym instruktażu przedstawiono sposób tworzenia tekstury przy użyciu edytora obrazów, który jest częścią programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ale można użyć dowolnego edytora obrazów, który umożliwia zapisanie tekstury w odpowiednim formacie.
 
   Upewnij się, że wyświetlane jest okno **Właściwości** i **Przybornik** .
 
@@ -117,7 +117,7 @@ W tym instruktażu pokazano, jak utworzyć realistyczną kulkę bilardowej trój
 ## <a name="enhancing-the-basic-appearance-with-specular-highlights"></a>Rozszerzanie podstawowego wyglądu z odblaskówymi wyróżnieniami
  Model oświetlenia Lamberta zapewnia sensie kształtu i wymiaru, który był nieobecny w cieniowaniu wyłącznie tekstury. Jednak kula bilardowej nadal ma nieco bardziej matowy wygląd.
 
- Rzeczywista piłka bilardowej zazwyczaj ma błyszczące zakończenie, które odzwierciedla część jasnego światła. Niektóre z tych widocznych sygnalizatorów są wyróżnione odblasków, które symulują odbicie właściwości powierzchni. W zależności od właściwości zakończenia światła mogą być lokalizowane lub szerokie, intensywnie lub subtelne. Te odbicia odblasków są modelowane przy użyciu relacji między źródłem światła, orientacją powierzchni i położeniem kamery — to znaczy, że wyróżnienie jest najbardziej intensywne, gdy orientacja powierzchni odzwierciedla źródło światła bezpośrednio do aparat fotograficzny i jest mniej intensywny, gdy odbicie jest mniej bezpośrednie.
+ Rzeczywista piłka bilardowej zazwyczaj ma błyszczące zakończenie, które odzwierciedla część jasnego światła. Niektóre z tych widocznych sygnalizatorów są wyróżnione odblasków, które symulują odbicie właściwości powierzchni. W zależności od właściwości zakończenia światła mogą być lokalizowane lub szerokie, intensywnie lub subtelne. Te odbicia odblasków są modelowane przy użyciu relacji między źródłem światła, orientacją powierzchni i położeniem kamery — to znaczy, że wyróżnienie jest najbardziej intensywne, gdy orientacja powierzchni odzwierciedla źródło światła bezpośrednio do aparatu, i jest mniej intensywna, gdy odbicie jest mniej bezpośrednie.
 
  Model oświetlenia podstawowego Phong jest oparty na modelu oświetlenia Lamberta, aby obejmował odblaskówe, zgodnie z opisem w poprzednim akapicie. Model oświetlenia podstawowego Phong można dodać do programu do cieniowania, aby dać kulkę bilardowej, która daje w wyniku bardziej interesujący wygląd.
 
@@ -138,7 +138,7 @@ W tym instruktażu pokazano, jak utworzyć realistyczną kulkę bilardowej trój
 ## <a name="creating-a-sense-of-space-by-reflecting-the-environment"></a>Tworzenie sensu przestrzeni przez odzwierciedlenie środowiska
  Po zastosowaniu wyróżnionych odblasków, kulka bilardowej wygląda dość przekonujący. Uzyskano odpowiedni kształt, odpowiednie zadanie malowania i zakończenie. Istnieje jednak jeszcze jedna technika, która sprawia, że kulka bilardowej będzie wyglądała podobnie jak część środowiska.
 
- Jeśli dokładnie sprawdzisz rzeczywistą kulkę z bilardowej, zobaczysz, że jej błyszcząca powierzchnia nie wykazuje odblaskówych świateł, ale również pokazuje obraz wokół niego. Można symulować to odbicie przy użyciu obrazu środowiska jako tekstury i połączyć go z teksturą modelu, aby określić końcowy kolor każdego piksela. W zależności od rodzaju dokończenia możesz łączyć więcej lub mniej tekstury odbicia razem z resztą cieniowania. Na przykład, cieniowanie, które symuluje wysoce odbijającą powierzchnię, taką jak dublowanie, może używać tylko tekstury odbicia, ale cieniowanie, które symuluje bardziej subtelne odbicie, takie jak element znaleziony w piłke bilardowej, może łączyć tylko małą część odbicia wartość tekstury wraz z resztą obliczeń cieniowania.
+ Jeśli dokładnie sprawdzisz rzeczywistą kulkę z bilardowej, zobaczysz, że jej błyszcząca powierzchnia nie wykazuje odblaskówych świateł, ale również pokazuje obraz wokół niego. Można symulować to odbicie przy użyciu obrazu środowiska jako tekstury i połączyć go z teksturą modelu, aby określić końcowy kolor każdego piksela. W zależności od rodzaju dokończenia możesz łączyć więcej lub mniej tekstury odbicia razem z resztą cieniowania. Na przykład, cieniowanie, które symuluje wysoce odbijającą powierzchnię, taką jak dublowanie, może używać tylko tekstury odbicia, ale cieniowanie, które symuluje bardziej subtelne odbicie, takie jak element znaleziony w piłke bilardowej, może łączyć tylko małą część wartości tekstury odbicia wraz z resztą obliczeń cieniowania.
 
  Oczywiście nie można po prostu zastosować odbitego obrazu do modelu w taki sam sposób, w jaki stosowana jest mapa Tekstury modelu. Jeśli zachodzi taka potrzeba, odbicie świata będzie przenoszone z piłką bilardowej, tak jakby odbicie zostało przyklejony do niego. Ponieważ odbicie może pochodzić z dowolnego kierunku, potrzebny jest sposób zapewnienia wartości mapy odbicia dla dowolnego kąta i sposób zachowania mapy odbicia na całym świecie. Aby spełnić te wymagania, można użyć specjalnego rodzaju mapy tekstury — nazywanej *mapą modułu*, która oferuje sześć tekstur zorganizowanych w celu utworzenia boków modułu. Z wnętrza tego modułu można wskazać w dowolnym kierunku, aby znaleźć wartość tekstury. Jeśli tekstury na każdej stronie modułu zawierają obrazy środowiska, można symulować dowolne odbicie przez próbkowanie właściwej lokalizacji na powierzchni modułu. Utrzymując moduł wyrównany do świata, uzyskasz dokładne odbicie środowiska. Aby określić, gdzie należy próbkować moduł, wystarczy obliczyć odbicie wektora aparatu poza powierzchnię obiektu, a następnie użyć go jako współrzędnych trójwymiarowych. Korzystanie z map modułów w ten sposób jest typową techniką nazywaną *mapowaniem środowiska*.
 
@@ -215,4 +215,4 @@ W tym instruktażu pokazano, jak utworzyć realistyczną kulkę bilardowej trój
    W tym końcowym obrazie Zwróć uwagę na to, jak dodane efekty łączą się w celu utworzenia bardzo przekonującej kulki bilardowej. Kształt, tekstura i oświetlenie tworzą podstawowy wygląd obiektu 3-D, a odblaskówe i odbicie sprawiają, że kulka bilardowej bardziej interesująca i wygląda jak część środowiska.
 
 ## <a name="see-also"></a>Zobacz też
- [Instrukcje: eksportowanie programu do cieniowania](../designers/how-to-export-a-shader.md) [: Stosowanie cieniowania do modelu cieniowania modeli trójwymiarowych](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [Designer](../designers/shader-designer.md) [](../designers/image-editor.md) [](../designers/shader-designer-nodes.md)
+ [Instrukcje: eksportowanie programu do cieniowania](../designers/how-to-export-a-shader.md) [: Stosowanie cieniowania do modelu cieniowania modeli trójwymiarowych](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [Designer](../designers/shader-designer.md) [Image Editor](../designers/image-editor.md) [Shader Designer Nodes](../designers/shader-designer-nodes.md)

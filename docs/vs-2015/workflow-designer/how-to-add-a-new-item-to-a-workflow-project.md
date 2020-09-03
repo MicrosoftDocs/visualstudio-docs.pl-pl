@@ -10,27 +10,27 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 004f079576b792fb76d596ee8ebac3f6f96f316e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656633"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Instrukcje: Dodawanie nowego elementu do projektu przepływu pracy
-Po utworzeniu projektu przepływu pracy można dodać do projektu działania przepływu pracy, projektanci i inne znane elementy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+Po utworzeniu projektu przepływu pracy można dodać do projektu działania przepływu pracy, projektanci i inne znane [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] elementy.
 
- W poniższej tabeli wymieniono elementy [!INCLUDE[wf](../includes/wf-md.md)], które można dodać do projektu przepływu pracy.
+ W poniższej tabeli wymieniono [!INCLUDE[wf](../includes/wf-md.md)] elementy, które można dodać do projektu przepływu pracy.
 
 |Nazwa|Opis|
 |----------|-----------------|
-|Działanie|Działanie składające się z innych działań. Wybranie tego elementu powoduje dodanie tego samego pliku XAML do projektu, jak uzyskano podczas wybierania szablonu **biblioteki działań** dla nowego projektu. [!INCLUDE[crabout](../includes/crabout-md.md)] tej procedury, zobacz [How to: Create a Activity Library](../workflow-designer/how-to-create-an-activity-library.md).|
-|Projektant działań|Projektant umożliwiający dostosowanie środowiska czasu projektowania działania. Wybranie tego elementu powoduje dodanie do projektu tych samych plików jak w przypadku wybrania szablonu **biblioteki projektanta działań** dla nowego projektu. [!INCLUDE[crabout](../includes/crabout-md.md)] tej procedury, zobacz [How to: Create a Projektant działań Library](../workflow-designer/how-to-create-an-activity-designer-library.md).|
-|Działanie kodu|Działanie z logiką wykonywania zapisaną w kodzie. Plik kodu źródłowego z przesłonięciem metody <xref:System.Activities.CodeActivity.Execute%2A> jest już wygenerowany dla Ciebie.|
-|Usługa przepływu pracy WCF|Usługa [!INCLUDE[indigo2](../includes/indigo2-md.md)] utworzona przy użyciu działań przepływu pracy. Wybranie tego elementu powoduje dodanie do projektu tych samych plików, co podczas wybierania szablonu **aplikacji usługi przepływu pracy WCF** dla nowego projektu. [!INCLUDE[crabout](../includes/crabout-md.md)] tej procedury, zobacz [jak: Tworzenie aplikacji usługi przepływu pracy WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md).|
+|Działanie|Działanie składające się z innych działań. Wybranie tego elementu powoduje dodanie tego samego pliku XAML do projektu, jak uzyskano podczas wybierania szablonu **biblioteki działań** dla nowego projektu. [!INCLUDE[crabout](../includes/crabout-md.md)] w tej procedurze zapoznaj [się z tematem How to: Create a Activity Library](../workflow-designer/how-to-create-an-activity-library.md).|
+|Projektant działań|Projektant umożliwiający dostosowanie środowiska czasu projektowania działania. Wybranie tego elementu powoduje dodanie do projektu tych samych plików jak w przypadku wybrania szablonu **biblioteki projektanta działań** dla nowego projektu. [!INCLUDE[crabout](../includes/crabout-md.md)] w tej procedurze zapoznaj [się z tematem How to: Create a Projektant działań Library](../workflow-designer/how-to-create-an-activity-designer-library.md).|
+|Działanie kodu|Działanie z logiką wykonywania zapisaną w kodzie. Plik kodu źródłowego z przesłonięciem <xref:System.Activities.CodeActivity.Execute%2A> metody jest już wygenerowany dla Ciebie.|
+|Usługa przepływu pracy WCF|[!INCLUDE[indigo2](../includes/indigo2-md.md)]Usługa skompilowana przy użyciu działań przepływu pracy. Wybranie tego elementu powoduje dodanie do projektu tych samych plików, co podczas wybierania szablonu **aplikacji usługi przepływu pracy WCF** dla nowego projektu. [!INCLUDE[crabout](../includes/crabout-md.md)] w tej procedurze zapoznaj [się z tematem jak: Tworzenie aplikacji usługi przepływu pracy WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md).|
 
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>Aby dodać nowy element do projektu przepływu pracy
 
-1. W menu **projekt** kliknij polecenie **Dodaj nowy element.** ...
+1. W menu **projekt** kliknij polecenie **Dodaj nowy element.**...
 
      Zostanie otwarte okno dialogowe **Dodaj nowy element** .
 
