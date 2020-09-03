@@ -8,10 +8,10 @@ ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
 ms.openlocfilehash: 33d00d853c7496e23cb5cd97a0b9abbe05e3accc
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950582"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Nawiązywanie połączenia z Kontrola wersji serwera Team Foundation
@@ -58,7 +58,7 @@ Najprostszym rozwiązaniem jest **Korzystanie**z programu oprogramowania homebre
 
 1. Uruchom aplikację terminala macOS.
 1. Zainstaluj program oprogramowania Homebrew przy użyciu terminalu i instrukcje na [stronie głównej oprogramowania Homebrew](https://brew.sh/).
-1. Po zainstalowaniu oprogramowania Homebrew Uruchom następujące polecenie z terminalu:`brew install tee-clc`
+1. Po zainstalowaniu oprogramowania Homebrew Uruchom następujące polecenie z terminalu: `brew install tee-clc`
 
 Aby **ręcznie skonfigurować tee-CLC**:
 
@@ -125,7 +125,7 @@ Postępuj zgodnie z monitami, aby zainstalować rozszerzenie. Po zainstalowaniu 
 
 ### <a name="updating-the-extension"></a>Aktualizowanie rozszerzenia
 
-Aktualizacje rozszerzenia TFVC są wykonywane okresowo. Aby uzyskać dostęp do aktualizacji, wybierz pozycję **rozszerzenia programu Visual Studio >...** z menu, a następnie wybierz kartę **aktualizacje** . Wybierz rozszerzenie na liście i naciśnij przycisk **Aktualizuj** :
+Aktualizacje rozszerzenia TFVC są wykonywane okresowo. Aby uzyskać dostęp do aktualizacji, wybierz **> rozszerzenia programu Visual Studio...** z menu, a następnie wybierz kartę **aktualizacje** . Wybierz rozszerzenie na liście i naciśnij przycisk **Aktualizuj** :
 
 Naciśnij przycisk **Instaluj** w następnym oknie dialogowym, aby odinstalować stary pakiet i zainstalować nowy.
 
@@ -238,7 +238,7 @@ Po skonfigurowaniu obszaru roboczego można go zmienić lub usunąć, klikając 
 Do uwierzytelniania za pomocą serwera można użyć następujących opcji:
 
 - Oauth
-- Podstawowy
+- Podstawowe
 - NTLM
 
 Aby korzystać z uwierzytelniania podstawowego, należy włączyć **alternatywne poświadczenia uwierzytelniania** w Azure DevOps Services, wykonując poniższe kroki:
@@ -273,6 +273,6 @@ Podczas próby [utworzenia nowego obszaru roboczego](#creating-a-new-workspace)n
 - Nazwa musi być krótsza niż 64 znaków.
 - Ścieżka lokalna nie może być używana przez żadne inne obszary robocze.
 
-### <a name="see-also"></a>Zobacz także
+### <a name="see-also"></a>Zobacz też
 
 - [Opracowywanie i udostępnianie kodu w programie TFVC przy użyciu programu Visual Studio (w systemie Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

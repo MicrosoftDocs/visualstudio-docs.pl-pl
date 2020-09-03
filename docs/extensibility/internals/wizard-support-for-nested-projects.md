@@ -1,5 +1,5 @@
 ---
-title: Obsługa kreatora dla projektów zagnieżdżonych | Dokumenty firmy Microsoft
+title: Obsługa kreatora dla zagnieżdżonych projektów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,20 +13,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f7f37700d908167ebef8c071021558822bdce173
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703194"
 ---
 # <a name="wizard-support-for-nested-projects"></a>Obsługa kreatora dla zagnieżdżonych projektów
-IDE uruchamia dwa kreatory, które projekt nadrzędny dla projektów zagnieżdżonych można zaimplementować: Kreator **nowego projektu** i Kreator **dodaj element.**
+Środowisko IDE uruchamia dwa kreatory, które mogą implementować projekt nadrzędny dla zagnieżdżonych projektów: kreatora **nowego projektu** i kreatora **dodawania elementu** .
 
- Jeśli użytkownik uruchamia **Kreatora nowego projektu,** wybierając pozycję **Dodaj projekt** i klikając **polecenie Nowy projekt** w menu Plik lub wybierając polecenie **Dodaj** i kliknij prawym przyciskiem myszy **nowy projekt** w Eksploratorze rozwiązań, IDE uruchamia polecenie **AddProject,** a implementacja polecenia **AddProject** projektu przez projekt nadrzędny zwraca plik projektu szablonu lub plik kreatora (.vsz), który ma zestaw parametrów kontekstowych.
+ Jeśli użytkownik uruchamia kreatora **nowego projektu** , wybierając pozycję **Dodaj projekt** i klikając pozycję **Nowy projekt** w menu plik lub wybierając pozycję **Dodaj** i klikając prawym przyciskiem myszy **Nowy projekt** w Eksplorator rozwiązań, IDE uruchamia polecenie **addproject** , a implementacja projektu nadrzędnego polecenia **addproject** zwraca plik projektu szablonu lub plik kreatora (. vsz), który zawiera zestaw parametrów kontekstu.
 
- Podobnie implementacja kreatorów **AddItem** projektu nadrzędnego zwraca plik .vsz, który ma inny zestaw parametrów kontekstu.
+ Analogicznie, implementacja projektu nadrzędnego dla kreatorów **AddItem** zwraca plik. vsz, który ma inny zestaw parametrów kontekstu.
 
- Aby uzyskać więcej informacji o kreatorach, zobacz [Kreator (. Vsz) Plik](../../extensibility/internals/wizard-dot-vsz-file.md), [Parametry kontekstowe](../../extensibility/internals/context-parameters.md) i [rejestrowanie szablonów projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md).
+ Aby uzyskać więcej informacji na temat kreatorów, zobacz [Kreator (. Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md), [Parametry kontekstu](../../extensibility/internals/context-parameters.md) i [Rejestrowanie szablonów projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>

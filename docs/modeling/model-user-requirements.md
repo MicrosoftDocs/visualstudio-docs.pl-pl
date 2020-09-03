@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590244"
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
@@ -44,7 +44,7 @@ Model wymagań zapewnia największą korzyść, jeśli jest używany do koncentr
 > [!NOTE]
 > W tych tematach "system" oznacza system lub aplikację, którą tworzysz. Może to być duża kolekcja wielu składników oprogramowania i sprzętu. lub pojedynczej aplikacji; lub składnika oprogramowania w większym systemie. W każdym przypadku model wymagań opisuje zachowanie widoczne spoza systemu, niezależnie od tego, czy za pośrednictwem interfejsu użytkownika, czy interfejsu API.
 
-## <a name="common-tasks"></a>Wspólne zadania
+## <a name="common-tasks"></a>Typowe zadania
 
 Można utworzyć kilka różnych widoków wymagań użytkowników.  Każdy widok zawiera informacje określonego typu.  Podczas tworzenia tych widoków najlepiej jest przebiegać często od jednego do drugiego. Możesz rozpocząć od dowolnego widoku.
 
@@ -56,7 +56,7 @@ Można utworzyć kilka różnych widoków wymagań użytkowników.  Każdy widok
 
 Należy zauważyć, że większość typów diagramów może być używana do innych celów. Aby zapoznać się z omówieniem typów diagramów, zobacz [Tworzenie modeli dla aplikacji](../modeling/create-models-for-your-app.md).
 
-## <a name="BusinessRules"></a>Wyświetlanie reguł firmy
+## <a name="showing-business-rules"></a><a name="BusinessRules"></a> Wyświetlanie reguł firmy
 
 Reguła biznesowa jest wymagana, która nie jest skojarzona z konkretnym przypadkiem użycia i powinna być zastosowana w całym systemie.
 
@@ -76,9 +76,9 @@ Dodatkowe informacje znajdują się w następujących tematach:
 |-|-|
 |Jak opracowywać kod zgodny z regułami biznesowymi|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="QoSRequirements"></a>Opisywanie wymagań Quality of Service
+## <a name="describing-quality-of-service-requirements"></a><a name="QoSRequirements"></a> Opisywanie wymagań Quality of Service
 
-Istnieje kilka kategorii wymagań dotyczących jakości usług. Są to następujące nazwy:
+Istnieje kilka kategorii wymagań dotyczących jakości usług. Należą do nich następujące elementy:
 
 - Wydajność
 
@@ -96,7 +96,7 @@ Jeśli restauracji usunie element menu, gdy klient porządkuje posiłk, każdy e
 
 Zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md) , aby dowiedzieć się, jak opracować kod, który jest zgodny z wymaganiami dotyczącymi jakości usług.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)
 - [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)

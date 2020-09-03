@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551506"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Informacje ogólne (Programowanie Office w Visual Studio)
@@ -39,16 +39,16 @@ ms.locfileid: "69551506"
 
  Opisuje, w jaki sposób manifesty wdrożenia są używane w rozwiązaniach pakietu Office.
 
-- [Dokumentacja &#40;interfejsu użytkownika Programowanie Office w Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
+- [Dokumentacja interfejsu użytkownika &#40;Office Development w programie Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
 
  Wyświetla listę tematów, które wyjaśniają opcje, które są wyświetlane w różnych oknach dialogowych, Windows i innych interfejsach użytkownika.
 
-- [Komunikaty &#40;o błędach — Programowanie Office w Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
+- [Komunikaty o błędach &#40;Office Development w programie Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
 
  Wyświetla listę tematów, które wyjaśniają komunikaty o błędach dla projektów pakietu Office.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
-- [Wprowadzenie &#40;do programowania pakietu Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
  Zawiera łącza do informacji na temat instalacji, szablonów projektów, podstawowych zestawów międzyoperacyjnych pakietu Office i nowości w programowaniu pakietu Office.
 

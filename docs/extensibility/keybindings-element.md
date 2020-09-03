@@ -1,5 +1,5 @@
 ---
-title: Element wiązania klawiszy | Dokumenty firmy Microsoft
+title: Element powiązania klawiszy | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: df1720286007d8f6acf073c21f5b2dcc8486782c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703128"
 ---
-# <a name="keybindings-element"></a>Element KeyBindings
-Element KeyBindings grupuje elementy wiązania kluczy i inne grupy keybindings.
+# <a name="keybindings-element"></a>Element powiązań klawiszy
+Element powiązania klawiszy Grupuje elementy powiązanie klawiszy i inne grupowania powiązań klawiszy.
 
 ## <a name="syntax"></a>Składnia
 
@@ -39,20 +39,20 @@ Element KeyBindings grupuje elementy wiązania kluczy i inne grupy keybindings.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Warunek|Element opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element wiązania klawiszy](../extensibility/keybinding-element.md)|Określa skróty klawiaturowe dla poleceń.|
-|[Keybindings](../extensibility/keybindings-element.md)|Grupy KeyBinding elementów i innych grup keybindings.|
+|[Powiązanie klawiszy, element](../extensibility/keybinding-element.md)|Określa skróty klawiaturowe dla poleceń.|
+|[Powiązania klawiszy](../extensibility/keybindings-element.md)|Grupuje elementy powiązanie klawiszy i inne grupowania powiązań klawiszy.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element CommandTable](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia.|
+|[Element polecenia](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia.|
 
 ## <a name="example"></a>Przykład
 
@@ -66,5 +66,5 @@ Element KeyBindings grupuje elementy wiązania kluczy i inne grupy keybindings.
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Element wiązania klawiszy](../extensibility/keybinding-element.md)
-- [Pliki tabeli poleceń programu Visual Studio (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Powiązanie klawiszy, element](../extensibility/keybinding-element.md)
+- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

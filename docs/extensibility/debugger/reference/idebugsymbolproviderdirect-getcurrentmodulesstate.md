@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesState | Dokumenty firmy Microsoft
+title: 'IDebugSymbolProviderDirect:: GetCurrentModulesState | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c9e7cf711b5cf6823059945f85b9c3db30701ccf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719083"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
-Pobiera informacje o grupie symboli, której członkiem jest dostawca symboli.
+Pobiera informacje o grupie symboli, do której należy dostawca symboli.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,16 +42,16 @@ int GetCurrentModulesState(
 
 ## <a name="parameters"></a>Parametry
 `pState`\
-[na zewnątrz] Stan grupy dostawców symboli.
+określoną Stan grupy dostawcy symboli.
 
 `count`\
-[na zewnątrz] Liczba modułów w grupie.
+określoną Liczba modułów w grupie.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Stan jest zmieniany za każdym razem, gdy moduł jest dodawany do grupy symboli lub z niej usuwany. W związku z tym ta metoda może służyć do wykrywania, jeśli grupa symboli została zmodyfikowana.
+ Stan jest zmieniany za każdym razem, gdy moduł jest dodawany do grupy symboli lub z niej usunięty. W związku z tym ta metoda może służyć do wykrywania, czy grupa symboli została zmodyfikowana.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

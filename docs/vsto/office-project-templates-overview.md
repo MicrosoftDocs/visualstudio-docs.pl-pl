@@ -31,29 +31,29 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d83b04795386cfec80a8a309a9a84da04f6df105
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68926599"
 ---
 # <a name="office-project-templates-overview"></a>Szablony projektów pakietu Office — omówienie
   Narzędzia deweloperskie Microsoft Office w programie Visual Studio zawierają szablony projektów służące do tworzenia następujących typów rozwiązań pakietu Office:
 
-- [Dostosowania na poziomie dokumentu](#DocLevel)
+- [Dostosowania na poziomie dokumentów](#DocLevel)
 
 - [Dodatki narzędzi VSTO](#AppLevel)
 
-  Aby uzyskać szczegółowe informacje na temat tych typów rozwiązań dla pakietu Office, zobacz temat [programowanie &#40;rozwiązań&#41;pakietu Office — Omówienie programu VSTO](../vsto/office-solutions-development-overview-vsto.md).
+  Aby zapoznać się ze szczegółowym porównaniem tych typów rozwiązań pakietu Office, zobacz temat [programowanie rozwiązań pakietu Office — omówienie &#40;narzędzi VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
-  Szablony projektów pakietu Office są dostępne w oknie dialogowym **Nowy projekt** , w obszarze węzła **Office** w węzłach  **C# Wizualizacja** i **Visual Basic** . Każdy szablon generuje projekt o konfiguracji odpowiedniej dla aplikacji docelowej, razem z odwołaniami do zestawów i ustawieniami debugowania.
+  Szablony projektów pakietu Office są dostępne w oknie dialogowym **Nowy projekt** , w obszarze węzła **Office** w węzłach języka **Visual C#** i **Visual Basic** . Każdy szablon generuje projekt o konfiguracji odpowiedniej dla aplikacji docelowej, razem z odwołaniami do zestawów i ustawieniami debugowania.
 
   Każdy projekt zawiera pliki i kod źródłowy niezbędne do rozpoczęcia tworzenia określonego typu rozwiązania. Kod generowany dla każdego projektu obejmuje programy obsługi zdarzeń uruchamiania i zamykania. Do programów obsługi można dodać kod, który będzie inicjował rozwiązanie podczas jego ładowania, a czyścił je podczas usuwania z pamięci. Aby uzyskać więcej informacji, zobacz [projekty pakietu Office w środowisku programu Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md) i [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
 > [!NOTE]
 > Narzędzia programistyczne pakietu Office są dołączane do niektórych wydań programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-## <a name="DocLevel"></a>Dostosowania na poziomie dokumentu
+## <a name="document-level-customizations"></a><a name="DocLevel"></a> Dostosowania na poziomie dokumentu
  Węzeł **Office** w oknie dialogowym **Nowy projekt** zawiera następujące szablony projektów umożliwiające rozpoczęcie tworzenia dostosowań na poziomie dokumentu dla programów Word i Excel:
 
 - **Dokument narzędzia VSTO dla programów Word 2013 i 2016**
@@ -66,7 +66,7 @@ ms.locfileid: "68926599"
 
 - **Dokument narzędzia VSTO programu Word 2010**
 
-- **Word 2010 VSTO Template**
+- **Szablon narzędzi VSTO programu Word 2010**
 
 - **Skoroszyt narzędzi VSTO dla programu Excel 2010**
 
@@ -77,7 +77,7 @@ ms.locfileid: "68926599"
   Szablony projektów programów Word i Excel zachowują się identycznie jak szablony projektów dokumentów programu Word i skoroszytów programów Excel. Jednak szablony projektów programów Word i Excel bardzo ułatwiają użytkownikom tworzenie nowych spersonalizowanych lokalnych kopii dokumentów lub skoroszytów w rozwiązaniu. Funkcje w rozwiązaniu są dostępne z nowego dokumentu, który użytkownik utworzył na podstawie szablonu.
 
 > [!NOTE]
-> Szablony programu Word, które odwołują się do rozszerzeń kodu zarządzanego, nie mogą być używane jako globalne dodatki narzędzi VSTO. Wywołanie zestawu nie następuje, jeśli szablon jest ładowany z katalogu Startup programu Word. Aby uzyskać więcej informacji, zobacz [ograniczenia szablonów globalnych i dodatków programu Excel (pliki. xla)](#Limitations).
+> Szablony programu Word, które odwołują się do rozszerzeń kodu zarządzanego, nie mogą być używane jako globalne dodatki narzędzi VSTO. Zestaw nie jest wywoływany, jeśli szablon jest ładowany z katalogu uruchamiania programu Word. Aby uzyskać więcej informacji, zobacz [ograniczenia szablonów globalnych i dodatków programu Excel (pliki. xla)](#Limitations).
 
  Informacje na temat rozpoczynania pracy z tego typu projektami znajdują się w następujących tematach:
 
@@ -87,16 +87,16 @@ ms.locfileid: "68926599"
 
 - [Rozwiązania programu Excel](../vsto/excel-solutions.md)
 
-- [Przewodnik: Utwórz swoje pierwsze dostosowanie na poziomie dokumentu dla programu Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+- [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 
 - [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
 
-## <a name="AppLevel"></a>Dodatki narzędzi VSTO
+## <a name="vsto-add-ins"></a><a name="AppLevel"></a> Dodatki narzędzi VSTO
  Węzeł **Office/SharePoint** w oknie dialogowym **Nowy projekt** zawiera następujące szablony projektów umożliwiające rozpoczęcie tworzenia dodatków narzędzi VSTO.
 
 - **Dodatek narzędzi VSTO dla programów Excel 2013 i 2016**
 
-- **InfoPath 2013 VSTO Add-in**
+- **Dodatek narzędzi VSTO dla programu InfoPath 2013**
 
 - **Dodatek VSTO dla programów Outlook 2013 i 2016**
 
@@ -110,7 +110,7 @@ ms.locfileid: "68926599"
 
 - **Dodatek programu Excel 2010**
 
-- **InfoPath 2010 Add-in**
+- **Dodatek programu InfoPath 2010**
 
 - **Dodatek programu Outlook 2010**
 
@@ -157,19 +157,19 @@ ms.locfileid: "68926599"
 |Użytkownicy mogą otwierać i modyfikować dokument, chyba że ma on ustawiony atrybut tylko do odczytu. Wszelkie zapisane zmiany są przechowywane w oryginale.|Użytkownicy mogą otworzyć szablon, aby utworzyć kopię lokalną jako nowy dokument. Nie mogą oni modyfikować oryginału, chyba że otrzymają specjalne uprawnienia.|
 |Po otwarciu dokument zgłasza <xref:Microsoft.Office.Tools.Word.Document.Open> zdarzenie.|Po otwarciu szablon zgłasza <xref:Microsoft.Office.Tools.Word.Document.New> zdarzenie.|
 
-## <a name="Limitations"></a>Ograniczenia szablonów globalnych i dodatków programu Excel (pliki. xla)
+## <a name="limitations-of-global-templates-and-excel-add-ins-xla-files"></a><a name="Limitations"></a> Ograniczenia szablonów globalnych i dodatków programu Excel (pliki. xla)
  Dokumenty, skoroszyty i szablony mogą nie funkcjonować poprawnie jako szablony globalne lub dodatki narzędzi VSTO programu Excel (pliki. xla).
 
 ## <a name="word-templates"></a>Szablony programu Word
  Jeśli szablon programu Microsoft Office Word zawiera rozszerzenia kodu zarządzanego, a szablon jest dołączony jako szablon globalny lub ładowany z katalogu Startup programu Word, nie dochodzi do wywołania zestawu projektu. Ponadto dokument nie rozpoznaje formatu szablonu będącego częścią rozwiązania utworzonego dla pakietu Office.
 
 ## <a name="excel-add-ins-xla-files"></a>Dodatki programu Excel (pliki. xla)
- Brak projektu pakietu Office do tworzenia dodatku narzędzi VSTO programu Excel (plik *. xla* ). Istnieje możliwość zapisania skoroszytu jako pliku .xla, jednak operacja ta nie jest obsługiwana i jej nie zalecamy. Jeśli zapiszesz skoroszyt zawierający rozszerzenia kodu zarządzanego jako **Microsoft Office plik dodatku programu Excel (\*. xla)** , możesz go wybrać w oknie dialogowym **dodatków** , aby zastosować go do innego skoroszytu. W niektórych przypadkach kod zostanie uruchomiony w skoroszycie docelowym po zastosowaniu dodatku VSTO, ale takie użycie rozwiązania pakietu Office nie jest obsługiwane.
+ Brak projektu pakietu Office do tworzenia dodatku narzędzi VSTO programu Excel (plik *. xla* ). Istnieje możliwość zapisania skoroszytu jako pliku .xla, jednak operacja ta nie jest obsługiwana i jej nie zalecamy. Jeśli zapiszesz skoroszyt zawierający rozszerzenia kodu zarządzanego jako **Microsoft Office plik dodatku programu Excel ( \* . xla)** , możesz go wybrać w oknie dialogowym **dodatków** , aby zastosować go do innego skoroszytu. W niektórych przypadkach kod zostanie uruchomiony w skoroszycie docelowym po zastosowaniu dodatku VSTO, ale takie użycie rozwiązania pakietu Office nie jest obsługiwane.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)
 - [Opracowywanie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)
-- [Instrukcje: Tworzenie projektów pakietu Office w programie Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
 - [Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
 - [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

@@ -5,13 +5,13 @@ ms.topic: include
 author: eross-msft
 ms.author: lizross
 ms.openlocfilehash: a54f66e1ad84e8498b13ce2316158705bfb1b4c5
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68286199"
 ---
 > [!NOTE]
-> Ten artykuł zawiera kroki dotyczące usuwania danych osobowych z urządzenia lub usługi i może służyć do obsługi zobowiązań wynikających z RODO. Jeśli szukasz ogólnych informacji o RODO, zobacz sekcję RODO portalu [zaufania usług](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+> W tym artykule przedstawiono procedurę usuwania danych osobowych z urządzenia lub usługi, które mogą być używane do obsługi obowiązków w ramach Rodo. Jeśli szukasz ogólnych informacji o Rodo, zobacz sekcję Rodo w [portalu zaufania usługi](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
-[//]: # (22.05.2018: Mimo że ten plik może zostać oddzielony, nie usuwaj go.)
+[//]: # (5/22/2018: Pomimo tego, że ten plik może zostać oddzielony, nie należy go usuwać.)

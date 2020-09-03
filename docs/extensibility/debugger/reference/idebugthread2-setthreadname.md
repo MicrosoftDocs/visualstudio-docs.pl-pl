@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::SetThreadName | Dokumenty firmy Microsoft
+title: 'IDebugThread2:: SetThreadName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b3d39c99049c4c4583fbda466712c5b216137316
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718665"
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
@@ -41,13 +41,13 @@ int SetThreadName ( 
 
 ## <a name="parameters"></a>Parametry
 `pszName`\
-[w] Nazwa wątku.
+podczas Nazwa wątku.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Aby uzyskać nazwę wątku, wywołaj [GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md) metody.
+ Aby uzyskać nazwę wątku, wywołaj metodę [GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md) .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

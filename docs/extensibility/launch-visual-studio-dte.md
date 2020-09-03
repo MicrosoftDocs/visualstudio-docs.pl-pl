@@ -9,31 +9,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3217835571ac659ac2cef2b46cb45a1c02ba2584
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703044"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Uruchamianie programu Visual Studio przy użyciu DTE
 
-Począwszy od programu Visual Studio 2017, mechanizm uruchamiania programu Visual Studio przy użyciu DTE różni się od uruchamiania poprzednich wersji programu Visual Studio. Ta zmiana jest konieczna, ponieważ visual studio 2017 i nowsze obsługuje instalacje side-by-side głównych wersji (na przykład można mieć podgląd i wersję zainstalowaną obok siebie).
+Począwszy od programu Visual Studio 2017, mechanizm uruchamiania programu Visual Studio przy użyciu DTE jest inny do uruchamiania poprzednich wersji programu Visual Studio. Ta zmiana jest konieczna, ponieważ program Visual Studio 2017 lub nowszy obsługuje bezpośrednie instalacje głównych wersji (na przykład możesz mieć zainstalowaną wersję zapoznawczą i wydanie).
 
-W dalszej części tego artykułu przedstawiono kod, którego można użyć do uruchomienia programu Visual Studio 2019 przy użyciu DTE.
+W pozostałej części tego artykułu przedstawiono kod, którego można użyć do uruchomienia programu Visual Studio 2019 przy użyciu DTE.
 
 ## <a name="set-up-the-project"></a>Konfigurowanie projektu
 
-Aby wyświetlić kod uruchamiania w akcji, utwórz projekt, wykonując następujące kroki.
+Aby wyświetlić kod uruchamiania w akcji, Utwórz projekt, wykonując następujące kroki.
 
-1. Utwórz nowy projekt **aplikacji konsoli** dla programu .NET Framework.
+1. Utwórz nowy projekt **aplikacji konsoli** dla .NET Framework.
 
-2. Zainstaluj pakiet [Microsoft.VisualStudio.Setup.Configuration.Interop](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet i dodaj odwołanie do zestawu.
+2. Zainstaluj [Microsoft.VisualStudio.Setup.Configwersja. Pakiet NuGet międzyoperacyjności](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) i Dodaj odwołanie do zestawu.
 
 3. Dodaj odwołanie do EnvDTE.
 
-4. Wklej [przykładowy kod,](#example-code) który następuje w pliku *Program.cs.*
+4. Wklej [przykładowy kod](#example-code) , który następuje po pliku *program.cs* .
 
-5. Naciśnij **klawisz F5,** aby uruchomić program. Powinien zostać wyświetlony Visual Studio 2019 otwarty przed zamknięciem programu.
+5. Naciśnij klawisz **F5** , aby uruchomić program. Przed zakończeniem działania programu powinien zostać otwarty program Visual Studio 2019.
 
 ## <a name="example-code"></a>Przykładowy kod
 
@@ -188,4 +188,4 @@ namespace ConsoleLauncherApp
 ## <a name="see-also"></a>Zobacz też
 
 - [Znajdowanie programu Visual Studio](locating-visual-studio.md)
-- [Instruktaż: uzyskiwanie dostępu do obiektu DTE z rozszerzenia edytora](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)
+- [Przewodnik: uzyskiwanie dostępu do obiektu DTE z rozszerzenia edytora](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

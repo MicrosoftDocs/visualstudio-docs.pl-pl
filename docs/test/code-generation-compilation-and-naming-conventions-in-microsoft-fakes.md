@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft Fakes: Generowanie kodu & kompilacji; konwencje nazewnictwa'
+title: 'Sztuczne firmy Microsoft: generowanie kodu kompilacji & Konwencje nazewnictwa'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -8,15 +8,15 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589334"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Konwencje dotyczące generowania, kompilowania i nazywania w Microsoft Fakes
 
-W tym artykule omówiono opcje i problemy w generowania i kompilacji kodu podróbki i opisano konwencje nazewnictwa dla fałszywych typów generowanych typów, członków i parametrów.
+W tym artykule omówiono opcje i problemy związane z generowaniem kodu i kompilacjami oraz opisano konwencje nazewnictwa dla typów wygenerowanych, elementów członkowskich i parametrów.
 
 **Wymagania**
 
@@ -26,13 +26,13 @@ W tym artykule omówiono opcje i problemy w generowania i kompilacji kodu podró
 > [!NOTE]
 > Projekty .NET Standard nie są obsługiwane.
 
-## <a name="code-generation-and-compilation"></a>Generowanie i kompilacja kodu
+## <a name="code-generation-and-compilation"></a>Generowanie i kompilowanie kodu
 
-### <a name="configure-code-generation-of-stubs"></a>Konfigurowanie generowania wycinków
+### <a name="configure-code-generation-of-stubs"></a>Konfigurowanie generowania kodu dla wycinków
 
-Generowanie typów skrótowych jest skonfigurowane w pliku XML z rozszerzeniem pliku *.fakes.* Struktura Podróbki integruje się w procesie kompilacji za pośrednictwem niestandardowych zadań MSBuild i wykrywa te pliki w czasie kompilacji. Generator kodu Fakes kompiluje typy skrótowe do zestawu i dodaje odwołanie do projektu.
+Generowanie typów zastępczych jest konfigurowane w pliku XML, który ma rozszerzenie pliku *.* Struktura sztuczna integruje się w procesie kompilacji za pomocą niestandardowych zadań programu MSBuild i wykrywa te pliki w czasie kompilacji. Generator kodu sztucznego kompiluje typy zastępcze do zestawu i dodaje odwołanie do projektu.
 
-Poniższy przykład ilustruje typy skrótowe zdefiniowane w *pliku FileSystem.dll:*
+Poniższy przykład ilustruje typy zastępcze zdefiniowane w *FileSystem.dll*:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -42,9 +42,9 @@ Poniższy przykład ilustruje typy skrótowe zdefiniowane w *pliku FileSystem.dl
 
 ### <a name="type-filtering"></a>Filtrowanie typów
 
-Filtry można ustawić w pliku *.fakes,* aby ograniczyć typy, które powinny być wycinkowe. Można dodać nieograniczoną liczbę Clear, Add, Remove elementów w obszarze StubGeneration element do tworzenia listy wybranych typów.
+Filtry można ustawić w pliku *.* sztuczne, aby ograniczyć typy, które powinny być użyto metod zastępczych. Można dodać niepowiązaną liczbę elementów Clear, Add, Remove w elemencie StubGeneration, aby skompilować listę wybranych typów.
 
-Na przykład następujący plik *.fakes* generuje wycinki dla typów w obszarze System i System.IO przestrzenie nazw, ale wyklucza dowolny typ zawierający "Dojście" w systemie:
+Na przykład, poniższe *.* elementy sztuczne generują wycinki dla typów w przestrzeni nazw system i system.IO, ale nie zawierają żadnego typu zawierającego "dojście" w systemie:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -60,31 +60,31 @@ Na przykład następujący plik *.fakes* generuje wycinki dla typów w obszarze 
 </Fakes>
 ```
 
-Ciągi filtru używają prostej gramatyki, aby zdefiniować sposób dopasowywania:
+Ciągi filtru używają prostej gramatyki do definiowania sposobu, w jaki należy wykonać dopasowanie:
 
-- Filtry są domyślnie niewrażliwe na wielkości liter; filtry wykonać dopasowanie podciąg:
+- Domyślnie w filtrach jest rozróżniana wielkość liter. Filtry wykonują Dopasowywanie podciągów:
 
-     `el`pasuje do "hello"
+     `el` pasuje do "Hello"
 
-- Dodanie `!` na końcu filtru sprawia, że jest to dokładne dopasowanie z uwzględnieniem wielkości liter:
+- Dodanie `!` do końca filtru sprawia, że jest to precyzyjne dopasowanie uwzględniające wielkość liter:
 
-     `el!`nie pasuje do "hello"
+     `el!` nie pasuje do "Hello"
 
-     `hello!`pasuje do "hello"
+     `hello!` pasuje do "Hello"
 
-- Dodanie `*` na końcu filtru sprawia, że pasuje do prefiksu ciągu:
+- Dodanie `*` do końca filtru sprawia, że pasuje do prefiksu ciągu:
 
-     `el*`nie pasuje do "hello"
+     `el*` nie pasuje do "Hello"
 
-     `he*`pasuje do "hello"
+     `he*` pasuje do "Hello"
 
-- Wiele filtrów na liście oddzielonych średnikami jest łączonych jako rozłączenie:
+- Wiele filtrów na liście rozdzielanej średnikami jest połączone jako rozłączenie:
 
-     `el;wo`pasuje do "hello" i "world"
+     `el;wo` Dopasowuje "Hello" i "World"
 
-### <a name="stub-concrete-classes-and-virtual-methods"></a>Klasy betonu skrótowego i metody wirtualne
+### <a name="stub-concrete-classes-and-virtual-methods"></a>Klasy konkretnych klas zastępczych i metody wirtualne
 
-Domyślnie typy skrótowe są generowane dla wszystkich klas nieuszczelnionych. Istnieje możliwość ograniczenia typów skrótowych do klas abstrakcyjnych za pośrednictwem pliku konfiguracyjnego *.fakes:*
+Domyślnie typy zastępcze są generowane dla wszystkich niezapieczętowanych klas. Istnieje możliwość ograniczenia typów zastępczych do klas abstrakcyjnych za pomocą pliku *konfiguracji elementów* sztucznych:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -102,7 +102,7 @@ Domyślnie typy skrótowe są generowane dla wszystkich klas nieuszczelnionych. 
 
 ### <a name="internal-types"></a>Typy wewnętrzne
 
-Generator kodu Podróbki generuje typy podkładki i typy skrótowe dla typów, które są widoczne dla wygenerowanego zestawu Podróbki. Aby wewnętrzne typy shimmed zestawu widoczne podróbki i <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> zestawu testowego, dodać atrybuty do shimmed kod zestawu, który daje wgląd do wygenerowanego zestawu Fakes i zestawu testowego. Oto przykład:
+Generator kodu sztucznego generuje typy podkładek i typy zastępcze dla typów, które są widoczne dla wygenerowanego zestawu elementów sztucznych. Aby zapewnić, że typy wewnętrzne zestawu zastąpionym podkładką były widoczne dla elementów sztucznych i zestawu testowego, Dodaj  <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atrybuty do kodu zestawu zastąpionym podkładką, który zapewnia widoczność wygenerowanego zestawu elementów sztucznych i zestawu testowego. Oto przykład:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -110,13 +110,13 @@ Generator kodu Podróbki generuje typy podkładki i typy skrótowe dla typów, k
 [assembly: InternalsVisibleTo("FileSystem.Tests")]
 ```
 
-**Typy wewnętrzne w zestawach o silnie nazwanych nazwach**
+**Typy wewnętrzne w zestawach silnie nazwanych**
 
-Jeśli zestaw shimmed jest silnie nazwany i chcesz uzyskać dostęp do wewnętrznych typów zestawu:
+Jeśli zestaw zastąpionym podkładką ma silną nazwę i chcesz uzyskać dostęp do wewnętrznych typów zestawu:
 
-- Zarówno zestaw testowy, jak i zestaw Podróbki muszą być silnie nazwane.
+- Zestaw testowy i zestaw elementów sztucznych muszą mieć silną nazwę.
 
-- Dodaj klucze publiczne testu i podróbki zestawu do **InternalsVisibleToAttribute** atrybutów w shimmed zestawów. Oto jak atrybuty przykład w shimmed kod zestawu będzie wyglądać, gdy shimmed zestaw jest silnie nazwany:
+- Dodaj klucze publiczne testu i elementów sztucznych do atrybutów **InternalsVisibleToAttribute** w zestawach zastąpionym podkładką. Poniżej przedstawiono sposób, w jaki przykładowe atrybuty kodu zestawu zastąpionym podkładką będą wyglądały, gdy zestaw zastąpionym podkładką ma silną nazwę:
 
     ```csharp
     // FileSystem\AssemblyInfo.cs
@@ -126,15 +126,15 @@ Jeśli zestaw shimmed jest silnie nazwany i chcesz uzyskać dostęp do wewnętrz
         PublicKey=<Test_assembly_public_key>)]
     ```
 
-Jeśli shimmed zestaw jest silnie nazwany, Fakes framework automatycznie silnie podpisuje wygenerowane Fakes zestawu. Musisz mocno podpisać zestaw testowy. Zobacz [Zestawy o silnych nazwach](/dotnet/framework/app-domains/strong-named-assemblies).
+Jeśli zestaw zastąpionym podkładką ma silną nazwę, struktura sztuczna automatycznie silnie naśladuje wygenerowanego zestawu elementów sztucznych. Musisz mieć silny podpis zestawu testowego. Zobacz [zestawy o silnych nazwach](/dotnet/framework/app-domains/strong-named-assemblies).
 
-Fakes framework używa tego samego klucza do podpisania wszystkich wygenerowanych zestawów, dzięki czemu można użyć tego fragmentu jako punktu wyjścia, aby dodać **InternalsVisibleTo** atrybut dla zestawu podróbek do kodu zestawu shimmed.
+Struktura elementów sztucznych używa tego samego klucza do podpisywania wszystkich wygenerowanych zestawów, dlatego można użyć tego fragmentu jako punktu wyjścia do dodania atrybutu **InternalsVisibleTo** dla zestawu elementów sztucznych do kodu zestawu zastąpionym podkładką.
 
 ```csharp
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-Można określić inny klucz publiczny dla zestawu Podróbki, taki jak klucz utworzony dla zestawu shimmed, określając pełną ścieżkę do pliku *.snk,* który zawiera klucz alternatywny jako wartość `KeyFile` atrybutu `Fakes` \\ `Compilation` w elemencie pliku *.fakes.* Przykład:
+Możesz określić inny klucz publiczny dla zestawu sztucznego, taki jak klucz utworzony dla zestawu zastąpionym podkładką, określając pełną ścieżkę do pliku *. snk* , który zawiera klucz alternatywny jako `KeyFile` wartość atrybutu w `Fakes` \\ `Compilation` elemencie pliku *.* repliks. Na przykład:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -143,7 +143,7 @@ Można określić inny klucz publiczny dla zestawu Podróbki, taki jak klucz utw
 </Fakes>
 ```
 
-Następnie należy użyć klucza publicznego alternatywnego pliku *.snk* jako drugiego parametru internalvisibleto atrybut dla fakes zestawu w shimmed kod zestawu:
+Następnie należy użyć klucza publicznego alternatywnego pliku *SNK* jako drugiego parametru atrybutu InternalVisibleTo dla zestawu elementów sztucznych w kodzie zestawu zastąpionym podkładką:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -153,37 +153,37 @@ Następnie należy użyć klucza publicznego alternatywnego pliku *.snk* jako dr
     PublicKey=<Test_assembly_public_key>)]
 ```
 
-W powyższym przykładzie `Alternate_public_key` wartości `Test_assembly_public_key` i mogą być takie same.
+W powyższym przykładzie wartości `Alternate_public_key` i `Test_assembly_public_key` mogą być takie same.
 
-### <a name="optimize-build-times"></a>Optymalizacja czasów kompilacji
+### <a name="optimize-build-times"></a>Optymalizuj czasy kompilacji
 
-Kompilacja fałszywych zestawów może znacznie zwiększyć czas kompilacji. Można zminimalizować czas kompilacji, generując fakes zestawy dla .NET zestawy systemowe i zestawy innych firm w oddzielnym scentralizowanym projekcie. Ponieważ takie zestawy rzadko zmieniają się na komputerze, można ponownie użyć wygenerowanych fałszywych zestawów w innych projektach.
+Kompilacja elementów sztucznych może znacząco zwiększyć czas kompilacji. Możesz zminimalizować czas kompilacji, generując zestawy sztuczne dla zestawów systemu .NET i zestawów innych firm w oddzielnym, scentralizowanym projekcie. Ponieważ takie zestawy rzadko zmieniają się na komputerze, można ponownie użyć wygenerowanych zestawów elementów sztucznych w innych projektach.
 
-Z projektów testów jednostkowych dodaj odwołanie do skompilowanych zestawów Fakes, które są umieszczane w obszarze FakesAssemblies w folderze projektu.
+Z projektów testów jednostkowych Dodaj odwołanie do skompilowanych zestawów elementów sztucznych, które są umieszczane w obszarze FakesAssemblies w folderze projektu.
 
-1. Utwórz nową bibliotekę klas z wersją środowiska uruchomieniowego platformy .NET dopasowaną do projektów testowych. Nazwijmy to Fakes.Prebuild. Usuń *plik class1.cs* z projektu, nie jest potrzebny.
+1. Utwórz nową bibliotekę klas z wersją środowiska uruchomieniowego .NET zgodną z projektami testowymi. Wywołajmy go jako fałszywe. prekompilowanie. Usuń plik *Class1.cs* z projektu, niezbędny.
 
-2. Dodaj odwołanie do wszystkich zestawów systemowych i innych firm, do których potrzebujesz podróbek.
+2. Dodaj odwołanie do wszystkich zestawów system i innych firm, dla których potrzebujesz fałszywych informacji.
 
-3. Dodaj plik *.fakes* dla każdego z zestawów i kompilacji.
+3. Dodaj plik *. sfałszowany* dla każdego zestawu i kompilacji.
 
 4. Z projektu testowego
 
-    - Upewnij się, że masz odwołanie do biblioteki DLL środowiska wykonawczego Fakes:
+    - Upewnij się, że masz odwołanie do biblioteki DLL środowiska uruchomieniowego elementów sztucznych:
 
-         *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
+         *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    - Dla każdego zestawu, dla którego utworzono podróbki, dodaj odwołanie do odpowiedniego pliku DLL w folderze *Fakes.Prebuild\FakesAssemblies* projektu.
+    - Dla każdego zestawu, który utworzył elementy sztuczne dla, Dodaj odwołanie do odpowiedniego pliku DLL w folderze *Prebuild\FakesAssemblies.*
 
-### <a name="avoid-assembly-name-clashing"></a>Unikaj kolizji nazw zestawu
+### <a name="avoid-assembly-name-clashing"></a>Unikaj kolizji nazw zestawów
 
-W środowisku kompilacji zespołu wszystkie dane wyjściowe kompilacji są scalane w jeden katalog. Jeśli wiele projektów używać podróbki, może się zdarzyć, że podróbki zestawów z różnych wersji zastąpić siebie. Na przykład TestProject1 podróbki *mscorlib.dll* z .NET Framework 2.0 i TestProject2 podróbki *mscorlib.dll* dla .NET Framework 4 będzie zarówno wydajność *mscorlib. Fakes.dll* Podróbki montaż.
+W środowisku kompilacji zespołu wszystkie dane wyjściowe kompilacji są scalane w pojedynczy katalog. Jeśli wiele projektów korzysta z elementów sztucznych, może się zdarzyć, że elementy sztuczne z różnych wersji zastępują siebie nawzajem. Na przykład, TestProject1 sztuczne *mscorlib.dll* od .NET Framework 2,0 i TestProject2 sztuczne *mscorlib.dll* dla .NET Framework 4 byłyby *mscorlib.Fakes.dll* do nich wynikiem.
 
-Aby uniknąć tego problemu, Podróbki należy automatycznie utworzyć wersję kwalifikowanych fakes nazwy zestawów dla odwołań innych niż projekt podczas dodawania *plików .fakes.* Nazwa zestawu Fakes z kwalifikem wersji osadza numer wersji podczas tworzenia nazwy zestawu Podróbki:
+Aby uniknąć tego problemu, elementy sztuczne powinny automatycznie tworzyć kwalifikowane nazwy elementów sztucznych w wersji dla odwołań nienależących do *projektu podczas dodawania plików* sztucznych. Nazwa zestawu elementów sztucznych z kwalifikowaną wersją osadza numer wersji podczas tworzenia nazwy zestawu elementów sztucznych:
 
-Biorąc pod uwagę zespół MyAssembly i wersja 1.2.3.4, nazwa zestawu Podróbki jest MyAssembly.1.2.3.4.Fakes.
+W przypadku zestawu asemblera i wersji 1.2.3.4, nazwa zestawu elementów sztucznych to asembler. 1.2.3.4. sztuczne.
 
-Tę wersję można zmienić lub usunąć, edytując atrybut Version elementu Assembly w *pliku .fakes:*
+Możesz zmienić lub usunąć tę wersję, edytując atrybut Version elementu Assembly w *.* sztuczne:
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -193,87 +193,87 @@ attribute of the Assembly element in the .fakes:
 </Fakes>
 ```
 
-## <a name="fakes-naming-conventions"></a>Podróbki konwencji nazewnictwa
+## <a name="fakes-naming-conventions"></a>Konwencje nazewnictwa elementów sztucznych
 
-### <a name="shim-type-and-stub-type-naming-conventions"></a>Konwencje nazewnictwa typu podkładki i typu skrótowego
+### <a name="shim-type-and-stub-type-naming-conventions"></a>Konwencje nazewnictwa typów i typów podkładki
 
 **Przestrzenie nazw**
 
-- . Sufiks podróbek jest dodawany do obszaru nazw.
+- . Sufiks elementów sztucznych jest dodawany do przestrzeni nazw.
 
-   Na przykład `System.Fakes` obszar nazw zawiera typy podkładek systemowych obszaru nazw.
+   Na przykład `System.Fakes` przestrzeń nazw zawiera typy w przestrzeni nazw System.
 
-- Global.Fakes zawiera typ podkładki pustej przestrzeni nazw.
+- Global. sztuczne zawiera typ podkładki pustej przestrzeni nazw.
 
   **Nazwy typów**
 
-- Prefiks podkładki jest dodawany do nazwy typu, aby utworzyć nazwę typu podkładki.
+- Prefiks podkładki jest dodawany do nazwy typu, aby zbudować nazwę typu podkładki.
 
-   Na przykład ShimExample jest typem podkładki typu Przykład.
+   Na przykład ShimExample jest typem podkładek typu przykład.
 
-- Prefiks skrótowy jest dodawany do nazwy typu, aby utworzyć nazwę typu skrótowego.
+- Prefiks zastępczy jest dodawany do nazwy typu, aby zbudować nazwę typu szczątkowego.
 
-   Na przykład StubIExample jest typem skrótu typu IExample.
+   Na przykład StubIExample jest typem zastępczym typu IExample.
 
-  **Typ argumenty i struktury typów zagnieżdżonych**
+  **Argumenty typu i struktury typów zagnieżdżonych**
 
-- Argumenty typu ogólnego są kopiowane.
+- Argumenty typu ogólnego zostały skopiowane.
 
-- Struktura typu zagnieżdżonego jest kopiowana dla typów podkładek.
+- Struktura typu zagnieżdżonego jest kopiowana dla typów podkładki.
 
-### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a>Shim delegować właściwości lub skrótowe pole delegata konwencji
+### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a>Właściwość delegata podkładki lub konwencje nazewnictwa pól delegata
 
-**Podstawowe reguły** nazewnictwa pól, zaczynając od pustej nazwy:
+**Podstawowe reguły** nazewnictwa pól, rozpoczynając od pustej nazwy:
 
 - Nazwa metody jest dołączana.
 
 - Jeśli nazwa metody jest jawną implementacją interfejsu, kropki są usuwane.
 
-- Jeśli metoda jest `Of`ogólna, *n* jest dołączany, gdzie *n* jest liczbą argumentów metody rodzajowej.
+- Jeśli metoda jest generyczna, `Of` dołączany jest *n* , gdzie *n* jest liczbą argumentów metody ogólnej.
 
-  **Specjalne nazwy metod,** takie jak metody ustawiania właściwości lub ustawianie, są traktowane w sposób opisany w poniższej tabeli:
+  **Specjalne nazwy metod** , takie jak metody pobierającej właściwości lub Setters, są traktowane jak opisano w poniższej tabeli:
 
-|Jeśli metoda jest...|Przykład|Nazwa metody dołączona|
+|Jeśli metoda to...|Przykład|Dołączona nazwa metody|
 |-|-|-|
 |**Konstruktor**|`.ctor`|`Constructor`|
-|**Konstruktor** statyczny|`.cctor`|`StaticConstructor`|
-|**Akcesor** o nazwie metody składający się z dwóch części oddzielonych "_" (takich jak metody wyzysku właściwości)|*kind_name* (wspólny przypadek, ale nie egzekwowane przez ECMA)|*NameKind*, gdzie obie części zostały skapitalizowane i zamienione|
-||Getter nieruchomości`Prop`|`PropGet`|
-||Ustawiacz właściwości`Prop`|`PropSet`|
-||Dodatek zdarzeń|`Add`|
-||Usuwania zdarzeń|`Remove`|
+|Statyczny **Konstruktor**|`.cctor`|`StaticConstructor`|
+|Metoda **dostępu** o nazwie metody składająca się z dwóch części oddzielonych znakami "_" (takich jak metody pobierające właściwości)|*kind_name* (przypadek typowy, ale nie wymuszony przez ECMA)|*NameKind*, gdzie obie części są pisane wielkimi literami i wymieniane|
+||Metoda pobierająca właściwości `Prop`|`PropGet`|
+||Metoda ustawiająca właściwości `Prop`|`PropSet`|
+||Rozszerzanie zdarzeń|`Add`|
+||Usuwanie zdarzenia|`Remove`|
 |**Operator** składający się z dwóch części|`op_name`|`NameOp`|
-|Na przykład: + operator|`op_Add`|`AddOp`|
-|W przypadku **operatora konwersji**dołączany jest typ zwracany.|`T op_Implicit`|`ImplicitOpT`|
+|Przykład: + — operator|`op_Add`|`AddOp`|
+|Dla **operatora konwersji**dołączany jest typ zwracany.|`T op_Implicit`|`ImplicitOpT`|
 
 > [!NOTE]
-> - **Getters i ustawiacze indeksatorów** są traktowane podobnie do właściwości. Domyślną nazwą indeksatora `Item`jest .
+> - **Metody pobierające i metody ustawiające indeksatory** są traktowane podobnie do właściwości. Domyślną nazwą indeksatora jest `Item` .
 > - Nazwy **typów parametrów** są przekształcane i łączone.
-> - **Typ zwracany** jest ignorowany, chyba że istnieje niejednoznaczność przeciążenia. Jeśli istnieje amiguity przeciążenia, typ zwracany jest dołączany na końcu nazwy.
+> - **Zwracany typ** jest ignorowany, chyba że istnieje niejednoznaczność przeciążenia. Jeśli istnieje amiguity przeciążenia, zwracany typ jest dołączany na końcu nazwy.
 
 ### <a name="parameter-type-naming-conventions"></a>Konwencje nazewnictwa typów parametrów
 
-|Podane|Dołączony ciąg jest...|
+|Umieszczone|Dołączony ciąg to...|
 |-|-|
-|**Typ**`T`|T<br /><br /> Obszar nazw, zagnieżdżona struktura i ogólne tiki są usuwane.|
+|**Typ**`T`|T<br /><br /> Przestrzeń nazw, struktura zagnieżdżona i ogólna Tiki są porzucane.|
 |**Parametr out**`out T`|`TOut`|
 |**Parametr ref**`ref T`|`TRef`|
 |**Typ tablicy**`T[]`|`TArray`|
-|**Wielowymiarowy** typ tablicy`T[ , , ]`|`T3`|
+|Typ **tablicy wielowymiarowej**`T[ , , ]`|`T3`|
 |Typ **wskaźnika**`T*`|`TPtr`|
 |**Typ ogólny**`T<R1, ...>`|`TOfR1`|
-|**Ogólny argument** `!i` typu typu`C<TType>`|`Ti`|
-|**Argument metody** `!!i` ogólnej metody`M<MMethod>`|`Mi`|
-|**Typ zagnieżdżony**`N.T`|`N`jest dołączany, a następnie`T`|
+|**Argument typu ogólnego** `!i` typu`C<TType>`|`Ti`|
+|**Argument metody ogólnej** `!!i` metody`M<MMethod>`|`Mi`|
+|**Typ zagnieżdżony**`N.T`|`N` jest dołączany, a następnie `T`|
 
 ### <a name="recursive-rules"></a>Reguły cykliczne
 
-Następujące reguły są stosowane rekursywnie:
+Następujące reguły są stosowane cyklicznie:
 
-- Ponieważ Podróbki używa C# do generowania fakes zestawów, każdy znak, któryprodukuje nieprawidłowy token C# jest zmieniony do "_" (podkreślenia).
+- Ponieważ elementy sztuczne używają języka C# do generowania zestawów elementów sztucznych, każdy znak, który będzie generował nieprawidłowy token C#, jest wyprowadzany do "_" (podkreślenie).
 
-- Jeśli wynikowa nazwa jest zderzająca się z dowolnym elementem członkowskim typu deklarującego, schemat numeracji jest używany przez dołączenie licznika dwucyfrowego, począwszy od 01.
+- Jeśli wynikiem występuje konflikt nazw z dowolnym elementem członkowskim typu deklarującego, schemat numeracji jest używany przez dołączenie dwucyfrowego licznika, rozpoczynając od 01.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Izolowanie kodu w teście z Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
+- [Izolowanie testowanego kodu za pomocą elementów sztucznych firmy Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)

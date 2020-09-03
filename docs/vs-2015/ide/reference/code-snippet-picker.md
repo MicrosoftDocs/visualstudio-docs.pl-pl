@@ -16,28 +16,28 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2918826d6923efa3db42f4f572c416b9668513a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660891"
 ---
 # <a name="code-snippet-picker"></a>Selektor wstawek kodu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-@No__t_0 Edytor kodu udostępnia **Selektor fragmentów kodu** , który umożliwia wstawianie gotowych bloków kodu do aktywnego dokumentu przy użyciu kilku kliknięć myszą.
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]Edytor kodu udostępnia **Selektor fragmentów kodu** , który umożliwia wstawianie gotowych bloków kodu do aktywnego dokumentu przy użyciu kilku kliknięć myszą.
 
  Procedura wyświetlania **selektora fragmentów kodu** zależy od używanego języka.
 
-- [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] — kliknij prawym przyciskiem myszy odpowiednią lokalizację w edytorze kodu, aby wyświetlić menu skrótów, a następnie wybierz **Wstaw fragment kodu**.
+- [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] -Kliknij prawym przyciskiem myszy odpowiednią lokalizację w edytorze kodu, aby wyświetlić menu skrótów, a następnie wybierz **Wstaw fragment kodu**.
 
-- [!INCLUDE[csprcs](../../includes/csprcs-md.md)] — kliknij prawym przyciskiem myszy odpowiednią lokalizację w edytorze kodu, aby wyświetlić menu skrótów, a następnie kliknij **Wstaw fragment kodu** lub **Otocz za pomocą**.
+- [!INCLUDE[csprcs](../../includes/csprcs-md.md)] -Kliknij prawym przyciskiem myszy odpowiednią lokalizację w edytorze kodu, aby wyświetlić menu skrótów, a następnie kliknij **Wstaw fragment kodu** lub **Otocz za pomocą**.
 
-- [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] — **Selektor fragmentów kodu** nie jest dostępny.
+- [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] - **Selektor fragmentów kodu** nie jest dostępny.
 
-- Wizualizacja F# — **Selektor fragmentów kodu** nie jest dostępny.
+- Visual F# — **Selektor fragmentów kodu** nie jest dostępny.
 
-- [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] — kliknij prawym przyciskiem myszy odpowiednią lokalizację w edytorze kodu, aby wyświetlić menu skrótów, a następnie kliknij **Wstaw fragment kodu** lub **Otocz za pomocą**.
+- [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] --Kliknij prawym przyciskiem myszy odpowiednią lokalizację w edytorze kodu, aby wyświetlić menu skrótów, a następnie kliknij **Wstaw fragment kodu** lub **Otocz za pomocą**.
 
 - XML — kliknij prawym przyciskiem myszy odpowiednią lokalizację w edytorze kodu, aby wyświetlić menu skrótów, a następnie kliknij **Wstaw fragment kodu** lub **Otocz za pomocą**.
 

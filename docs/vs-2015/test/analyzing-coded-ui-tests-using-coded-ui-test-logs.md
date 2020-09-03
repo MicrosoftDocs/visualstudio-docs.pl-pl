@@ -9,10 +9,10 @@ caps.latest.revision: 15
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d3ebb18aaff78d9782b6210e25bcd697d21c8570
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660766"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analiza dzienników zakodowanych testów interfejsu użytkownika
@@ -20,41 +20,41 @@ ms.locfileid: "72660766"
 
 Dzienniki kodowanych testów interfejsu użytkownika filtru i rejestrowania ważnych informacji o kodowanych przebiegach testów interfejsu użytkownika.
 
- **Requirements**
+ **Wymagania**
 
 - Visual Studio Enterprise
 
 ## <a name="why-should-i-do-this"></a>Dlaczego warto to zrobić?
  Dzienniki są prezentowane w formacie umożliwiającym szybkie Debugowanie problemów.
 
-## <a name="how-do-i-do-this"></a>Jak mogę to zrobić?
+## <a name="how-do-i-do-this"></a>Co mam zrobić?
 
 ### <a name="step-1-enable-logging"></a>Krok 1. Włączanie rejestrowania
  W zależności od scenariusza należy użyć jednej z następujących metod, aby włączyć dziennik.
 
-- Docelowa .NET Framework w wersji 4 bez pliku App. config obecnego w projekcie testowym
+- Element docelowy .NET Framework w wersji 4 bez pliku App.config obecnego w projekcie testowym
 
-  - Otwórz plik **QTAgent32_40. exe. config** .
+  - Otwórz plik **QTAgent32_40.exe.config** .
 
-    Domyślnie ten plik znajduje się w **\<drvie >: \Program Files (x86) \Microsoft Visual Studio 12 \ Common7\IDE**.
-
-    Zmodyfikuj wartość EqtTraceLevel na żądany poziom dziennika.
-
-    Zapisz plik.
-
-- Docelowa .NET Framework wersja 4,5 bez pliku App. config obecnego w projekcie testowym
-
-  - Otwórz plik **QTAgent32. exe. config** .
-
-    Domyślnie ten plik znajduje się w **\<drvie >: \Program Files (x86) \Microsoft Visual Studio 12 \ Common7\IDE**.
+    Domyślnie ten plik znajduje się w ** \<drvie> folderze: \Program Files (x86) \Microsoft Visual Studio 12 \ Common7\IDE**.
 
     Zmodyfikuj wartość EqtTraceLevel na żądany poziom dziennika.
 
     Zapisz plik.
 
-- Plik App. config znajduje się w projekcie testowym
+- Docelowa .NET Framework wersja 4,5 bez pliku App.config znajdującego się w projekcie testowym
 
-  - Otwórz plik App. config w projekcie.
+  - Otwórz plik **QTAgent32.exe.config** .
+
+    Domyślnie ten plik znajduje się w ** \<drvie> folderze: \Program Files (x86) \Microsoft Visual Studio 12 \ Common7\IDE**.
+
+    Zmodyfikuj wartość EqtTraceLevel na żądany poziom dziennika.
+
+    Zapisz plik.
+
+- Plik App.config obecny w projekcie testowym
+
+  - Otwórz plik App.config w projekcie.
 
     Dodaj następujący kod w węźle Konfiguracja:
 
@@ -65,7 +65,7 @@ Dzienniki kodowanych testów interfejsu użytkownika filtru i rejestrowania waż
   - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState. AllActionSnapshot;
 
 ### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2. Uruchamianie kodowanego testu interfejsu użytkownika i Wyświetlanie dziennika
- Po uruchomieniu kodowanego testu interfejsu użytkownika z modyfikacjami w pliku **QTAgent32. exe. config** na miejscu zostanie wyświetlony link danych wyjściowych w wynikach programu Test Explorer. Pliki dzienników są tworzone nie tylko wtedy, gdy test zakończy się niepowodzeniem, ale również dla testów zakończonych powodzeniem, gdy poziom śledzenia jest ustawiony na wartość "verbose".
+ Po uruchomieniu kodowanego testu interfejsu użytkownika z modyfikacjami pliku **QTAgent32.exe.config** w miejscu w wynikach programu Test Explorer zostanie wyświetlony link danych wyjściowych. Pliki dzienników są tworzone nie tylko wtedy, gdy test zakończy się niepowodzeniem, ale również dla testów zakończonych powodzeniem, gdy poziom śledzenia jest ustawiony na wartość "verbose".
 
 1. Z menu **test** wybierz pozycję **Windows** , a następnie wybierz pozycję **Eksplorator testów**.
 
@@ -86,13 +86,13 @@ Dzienniki kodowanych testów interfejsu użytkownika filtru i rejestrowania waż
 
      ![Wyniki i linki wyjściowe z kodowanego testu interfejsu użytkownika](../test/media/cuit-htmlactionlog2.png "CUIT_HTMLActionLog2")
 
-5. Wybierz łącze UITestActionLog. html.
+5. Wybierz łącze UITestActionLog.html.
 
      Dziennik jest wyświetlany w przeglądarce internetowej.
 
      ![Plik dziennika kodowanego testu interfejsu użytkownika](../test/media/cuit-htmlactionlog3.png "CUIT_HTMLActionLog3")
 
-## <a name="q--a"></a>p & A
+## <a name="q--a"></a>Pytania i odpowiedzi
 
 ### <a name="q-what-happened-to-the-enablehtmllogger-key"></a>P: co się stało z kluczem EnableHtmlLogger?
  W poprzednich wersjach programu Visual Studio istnieją dwa dodatkowe ustawienia konfiguracji umożliwiające włączenie rejestratora HTML w kodowanym teście interfejsu użytkownika:

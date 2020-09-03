@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 36ebd4a2cd130d63b030e80696dbdde7ff179706
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531524"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
@@ -73,8 +73,8 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 |Element|Wartość|  
 |-|-|  
 |**Nagłówki**|Uwzględnij VSPerf. h|  
-|**Biblioteka**|Użyj VSPerf. lib|  
-|**Unicode**|Zaimplementowane jako CommentMarkAtProfileW (Unicode) i CommentMarkAtProfileA (ANSI).|  
+|**Biblioteki**|Użyj VSPerf. lib|  
+|**Kod Unicode**|Zaimplementowane jako CommentMarkAtProfileW (Unicode) i CommentMarkAtProfileA (ANSI).|  
   
 ## <a name="example"></a>Przykład  
  Poniższy kod ilustruje użycie wywołania funkcji ogólnej CommentMarkAtProfile. W przykładzie założono użycie makr ciągu Win32 i ustawień kompilatora dla ANSI, aby określić, czy kod wywołuje funkcję z obsługą ANSI.  

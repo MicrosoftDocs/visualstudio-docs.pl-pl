@@ -1,5 +1,5 @@
 ---
-title: Element PromptForSaveOnCreation (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: PromptForSaveOnCreation —, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,15 +15,15 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 2e6bbd62120da59da1fb26e671c1aa02f33949f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701776"
 ---
-# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Element PromptForSaveOnCreation (szablony programu Visual Studio)
+# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation —, element (szablony Visual Studio)
 
-Określa, czy użytkownik jest monitowany o lokalizację zapisywania projektu za pośrednictwem okna dialogowego **Nowy projekt** podczas tworzenia projektu. Jeśli ten element `true`jest ustawiony na , a następnie użytkownik jest monitowany o zapisz lokalizację. Jeśli `false`, to nie są monitowane (oznacza to, że tworzony jest projekt tymczasowy).
+Określa, czy użytkownik jest monitowany o lokalizację zapisywania projektu za pośrednictwem okna dialogowego **Nowy projekt** podczas tworzenia projektu. Jeśli ten element jest ustawiony na `true` , użytkownik jest monitowany o lokalizację zapisywania. Jeśli `false` , wówczas nie zostanie wyświetlony monit (oznacza to, że projekt tymczasowy jest tworzony).
 
 ```xml
 \<VSTemplate>
@@ -50,20 +50,20 @@ Określa, czy użytkownik jest monitowany o lokalizację zapisywania projektu za
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst musi być `true` albo `false` `true` albo , wskazując, że użytkownik zostanie poproszony o lokalizację zapisu podczas tworzenia nowego projektu.
+ Tekst musi być albo `true` `false` , `true` co oznacza, że użytkownik będzie monitowany o lokalizację zapisu podczas tworzenia nowego projektu.
 
 ## <a name="remarks"></a>Uwagi
- `PromptForSaveOnCreation`jest elementem opcjonalnym. Wartością domyślną jest `false`.
+ `PromptForSaveOnCreation` jest elementem opcjonalnym. Wartość domyślna to `false`.
 
  Projekty tymczasowe to projekty, które można tworzyć i modyfikować bez zapisywania zawartości tego projektu na dysku.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład ustawia `PromptForSaveOnCreation` wartość `false`równą , która określa, aby umożliwić projekt, który ma być tworzony jako projekt tymczasowy.
+ W poniższym przykładzie ustawiono wartość `PromptForSaveOnCreation` równą `false` , która określa, że projekt ma być tworzony jako projekt tymczasowy.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

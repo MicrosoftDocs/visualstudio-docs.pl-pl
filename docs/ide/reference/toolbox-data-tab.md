@@ -13,29 +13,29 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e79b80890925bdf4d6d191db759516b5545fc403
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590257"
 ---
-# <a name="toolbox-data-tab"></a>Przybornik, karta Dane
+# <a name="toolbox-data-tab"></a>Przybornik, karta dane
 
-Wyświetla obiekty danych, które można dodać do formularzy i składników. Karta **Dane** **przybornika** pojawia się podczas tworzenia projektu, który ma skojarzonego projektanta. **Przybornik** jest domyślnie wyświetlany w zintegrowanym środowisku programistycznym Visual Studio; jeśli chcesz wyświetlić **przybornik**, wybierz **przybornik** z menu **Widok.**
+Wyświetla obiekty danych, które można dodać do formularzy i składników. Karta **dane** w **przyborniku** pojawia się podczas tworzenia projektu ze skojarzonym projektantem. **Przybornik** jest domyślnie wyświetlany w zintegrowanym środowisku programistycznym programu Visual Studio. Jeśli musisz wyświetlić **Przybornik**, wybierz pozycję **Przybornik** z menu **Widok** .
 
 > [!TIP]
-> Uruchomienie Kreatora konfiguracji źródła danych automatycznie tworzy i konfiguruje większość elementów danych. Aby uzyskać więcej informacji, zobacz [Dodawanie nowych źródeł danych](../../data-tools/add-new-data-sources.md).
+> Uruchomienie Kreatora konfiguracji źródła danych powoduje automatyczne utworzenie i skonfigurowanie większości elementów danych. Aby uzyskać więcej informacji, zobacz [Dodawanie nowych źródeł danych](../../data-tools/add-new-data-sources.md).
 
 ## <a name="ui-element-list"></a>Lista elementów interfejsu użytkownika
 
-Aby przejść bezpośrednio do strony odwołania .NET dla składnika, naciśnij **klawisz F1** na elemencie w **przyborniku** lub na elemencie komponentu w zasobniku projektanta.
+Aby przejść bezpośrednio do strony odniesienia platformy .NET dla składnika, naciśnij klawisz **F1** dla elementu w **przyborniku** lub elementu składnika w zasobniku projektanta.
 
 |Nazwa|Opis|
 |----------|-----------------|
-|<xref:System.Data.DataSet>|Dodaje wystąpienie wpisanego lub nietypowanego zestawu danych do formularza lub składnika. Przeciągnięcie tego obiektu na projektanta powoduje wyświetlenie okna dialogowego umożliwiającego wybranie istniejącej klasy typizowanego zestawu danych lub określenie, że chcesz utworzyć nowy, pusty, nietypowany zestaw danych. **Uwaga:**  Nie używasz <xref:System.Data.DataSet> obiektu w **przyborniku** do tworzenia nowego schematu i klasy wpisanego zestawu danych. Aby uzyskać więcej informacji, zobacz [Tworzenie i konfigurowanie zestawów danych](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
+|<xref:System.Data.DataSet>|Dodaje do formularza lub składnika wystąpienie zestawu danych typu lub z nieokreślonym typem. Po przeciągnięciu tego obiektu do projektanta wyświetla okno dialogowe, które umożliwia wybranie istniejącej klasy zestawu danych lub określenie, czy chcesz utworzyć nowy, pusty, nieokreślony zestaw danych. **Uwaga:**  Nie używasz <xref:System.Data.DataSet> obiektu w **przyborniku** , aby utworzyć nowy typ schematu i klasę zestawu danych. Aby uzyskać więcej informacji, zobacz [Tworzenie i konfigurowanie zestawów danych](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
 |<xref:System.Windows.Forms.DataGridView>|Zapewnia zaawansowany i elastyczny sposób wyświetlania danych w formacie tabelarycznym.|
-|<xref:System.Windows.Forms.BindingSource>|Upraszcza proces wiązywania formantów z źródłem danych.|
-|<xref:System.Windows.Forms.BindingNavigator>|Reprezentuje interfejs użytkownika nawigacji i manipulacji (UI) dla formantów w formularzu, które są powiązane z danymi.|
+|<xref:System.Windows.Forms.BindingSource>|Upraszcza proces kontroli powiązań z bazowym źródłem danych.|
+|<xref:System.Windows.Forms.BindingNavigator>|Reprezentuje interfejs użytkownika nawigacji i manipulowania dla kontrolek w formularzu, które są powiązane z danymi.|
 
 ## <a name="see-also"></a>Zobacz też
 

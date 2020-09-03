@@ -1,5 +1,5 @@
 ---
-title: Co nowego w kontroli źródła w programie Visual Studio 2015 SDK | Dokumenty firmy Microsoft
+title: Co nowego w kontroli źródła w zestawie SDK programu Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,37 +13,37 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f90ae3e1d327b10e99713ad28aa2d5a06c0be34b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703408"
 ---
-# <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>Co nowego w formancie źródła dla sdk programu Visual Studio 2015
+# <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>Co nowego w kontroli źródła dla zestawu SDK programu Visual Studio 2015
 
-W [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]programie można zapewnić głęboko zintegrowane rozwiązanie kontroli źródła, implementując formant źródła VSPackage. W tej sekcji opisano funkcje kontroli źródła VSPackages i zawiera omówienie kroków implementacji.
+W programie [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] można zapewnić głębokie zintegrowane rozwiązanie kontroli źródła, implementując pakietu VSPackage kontroli źródła. W tej sekcji opisano funkcje kontroli źródła pakietów VSPackage i przedstawiono przegląd kroków implementacji.
 
-## <a name="the-source-control-vspackage"></a>Formant źródła VSPackage
+## <a name="the-source-control-vspackage"></a>Pakietu VSPackage kontroli źródła
 
-Visual Studio obsługuje dwa typy rozwiązań kontroli źródła. We wszystkich wersjach programu Visual Studio nadal można zintegrować wtyczkę opartą na interfejsie API opartą na usłudze Source Control Plug-in. Można również utworzyć VSPackage for source control, który [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] zapewnia głęboką integrację, ścieżkę odpowiednią dla rozwiązań kontroli źródła, które wymagają wysokiego poziomu wyrafinowania i autonomii.
+Program Visual Studio obsługuje dwa typy rozwiązań kontroli źródła. We wszystkich wersjach programu Visual Studio można nadal zintegrować wtyczkę typu plug-in z interfejsem API kontroli źródła. Można również utworzyć pakietu VSPackage dla kontroli źródła, która zapewnia głębokiej integracji, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ścieżkę odpowiednią do rozwiązań kontroli źródła, które wymagają wysokiego poziomu złożoności i autonomii.
 
-A VSPackage można dodać prawie każdy rodzaj funkcji do programu Visual Studio. Formant źródła VSPackage zapewnia pełną funkcję kontroli źródła dla programu Visual Studio, od interfejsu użytkownika przedstawionego użytkownikowi do komunikacji zaplecza z systemem kontroli źródła.
+Pakietu VSPackage może dodawać niemal dowolny rodzaj funkcjonalności do programu Visual Studio. Pakietu VSPackage kontroli źródła udostępnia kompletną funkcję kontroli źródła dla programu Visual Studio, z interfejsu użytkownika prezentowanego użytkownikowi na potrzeby komunikacji wewnętrznej z systemem kontroli źródła.
 
-Implementowanie kontroli źródła VSPackage wymaga strategii "wszystko albo nic". Twórca formantu źródła VSPackage musi zainwestować znaczną ilość wysiłku w implementację wielu interfejsów kontroli źródła i nowych elementów interfejsu użytkownika (okna dialogowe, menu i paski narzędzi) w celu uwzględnienia całej funkcji kontroli źródła, a także interfejsów wymaganych od dowolnego pakietu do pomyślnej integracji z programem Visual Studio.
+Implementacja kontroli źródła pakietu VSPackage wymaga strategii "all or Nothing". Twórca kontroli źródła pakietu VSPackage musi zainwestować znaczną ilość wysiłku w celu zaimplementowania wielu interfejsów kontroli źródła i nowych elementów interfejsu użytkownika (okien dialogowych, menu i pasków narzędzi), aby pokryć wszystkie funkcje kontroli źródła, a także interfejsy wymagane do pomyślnego zintegrowania dowolnego pakietu z programem Visual Studio.
 
-Poniższe kroki zawierają ogólny przegląd tego, co jest potrzebne do zaimplementowania pakietu kontroli źródła. Aby uzyskać szczegółowe informacje, zobacz [Tworzenie formantu źródła VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md).
+Poniższe kroki zawierają ogólny przegląd informacji potrzebnych do zaimplementowania pakietu kontroli źródła. Aby uzyskać szczegółowe informacje, zobacz [Tworzenie pakietu VSPackage kontroli źródła](../../extensibility/internals/creating-a-source-control-vspackage.md).
 
-1. Utwórz vspackage, który oferuje prywatną usługę kontroli źródła.
+1. Utwórz element pakietu VSPackage, który proffers usługę kontroli źródła prywatnego.
 
-2. Zaimplementuj interfejsy w usługach związanych z kontrolą źródła, <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> które <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> są oferowane przez program Visual Studio (na przykład interfejs i interfejs).
+2. Zaimplementuj interfejsy w usługach związanych z kontrolą źródła, które są proffered przez program Visual Studio (na przykład <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> interfejs i).
 
-3. Zarejestruj formant źródła VSPackage.
+3. Zarejestruj pakietu VSPackage kontroli źródła.
 
 4. Zaimplementuj cały interfejs użytkownika kontroli źródła, w tym elementy menu, okna dialogowe, paski narzędzi i menu kontekstowe.
 
-5. Wszystkie zdarzenia związane z kontrolą źródła są przekazywane do vsackage kontroli źródła, gdy jest aktywny i muszą być obsługiwane przez VSPackage.
+5. Wszystkie zdarzenia związane z kontrolą źródła są przesyłane do VSackage kontroli źródła, gdy jest aktywny i muszą być obsługiwane przez pakietu VSPackage.
 
-6. Formantu źródła VSPackage musi nasłuchiwać <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> zdarzeń, takich jak te implementujące interfejs, a także <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> śledzenia dokumentu projektu (TPD) zdarzenia (zaimplementowane przez interfejs) i podjąć niezbędne działania.
+6. Pakietu VSPackage kontroli źródła musi nasłuchiwać zdarzeń, takich jak te implementujące <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> interfejs, a także śledzić zdarzenia dokumentu projektu (TPD) (zgodnie z implementacją <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> interfejsu) i podejmować odpowiednie działania.
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -18,84 +18,84 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68926195"
 ---
 # <a name="property-pages-javascript"></a>Strony właściwości, JavaScript
 
-**Strony właściwości** zapewniają dostęp do ustawień projektu. Za pomocą stron wyświetlanych na **stronach właściwości** można zmieniać właściwości projektu.
+**Strony właściwości** zapewniają dostęp do ustawień projektu. Możesz użyć stron, które są wyświetlane na **stronach właściwości** , aby zmienić właściwości projektu.
 
-Aby uzyskać dostęp do właściwości projektu, wybierz węzeł projektu w **Eksploratorze rozwiązań**. W menu **Projekt** kliknij polecenie **Właściwości**.
+Aby uzyskać dostęp do właściwości projektu, wybierz węzeł projektu w **Eksplorator rozwiązań**. W menu **projekt** kliknij polecenie **Właściwości**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
-Na **stronach właściwości**pojawią się następujące strony i opcje .
+Na **stronach właściwości**są wyświetlane następujące strony i opcje.
 
-## <a name="configuration-and-platform-page"></a>Konfiguracja i strona platformy
+## <a name="configuration-and-platform-page"></a>Strona konfiguracja i platforma
 
 Użyj następujących opcji, aby wybrać konfigurację i platformę do wyświetlenia lub zmodyfikowania.
 
  **Konfiguracja**
 
-Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia to **Debug** (domyślnie), **Zwolnij,** **Wszystkie konfiguracje**lub konfiguracja zdefiniowana przez użytkownika. Aby uzyskać więcej informacji, zobacz [Jak: Ustawianie konfiguracji debugowania i zwalniania w programie Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia to **debugowanie** (domyślne), **wydanie**, **wszystkie konfiguracje**lub Konfiguracja zdefiniowana przez użytkownika. Aby uzyskać więcej informacji, zobacz [How to: Set Debug and Release Configurations in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
  **Platforma**
 
-Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienia to Dowolny procesor [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] **(domyślny** dla aplikacji), **x64**, **ARM,** **x86**lub platforma zdefiniowana przez użytkownika. Aby uzyskać więcej informacji, zobacz [Jak: Ustawianie konfiguracji debugowania i zwalniania w programie Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienia to **każdy procesor CPU** (domyślny dla [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikacji), **x64**, **ARM**, **x86**lub platformy zdefiniowanej przez użytkownika. Aby uzyskać więcej informacji, zobacz [How to: Set Debug and Release Configurations in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="general-page"></a>Strona ogólna
 
-Aby ustawić ogólne właściwości projektu, należy użyć następujących opcji.
+Użyj następujących opcji, aby ustawić ogólne właściwości projektu.
 
 > [!NOTE]
-> Niektóre opcje są dostępne tylko w aplikacjach platformy uniwersalnej systemu Windows.
+> Niektóre opcje są dostępne tylko w aplikacjach platformy UWP.
 
  **Ścieżka wyjściowa**
 
-Określa lokalizację plików wyjściowych dla konfiguracji projektu. Ścieżka jest względna; jeśli wprowadzisz ścieżkę bezwzględną, ścieżka bezwzględna zostanie zapisana w projekcie. Domyślną ścieżką jest bin\Debug.
+Określa lokalizację plików wyjściowych dla konfiguracji projektu. Ścieżka jest względna; Jeśli wprowadzisz ścieżkę bezwzględną, ścieżka bezwzględna zostanie zapisana w projekcie. Ścieżka domyślna to bin\Debug.
 
-W przypadku korzystania z uproszczonych konfiguracji kompilacji system projektu określa, czy utworzyć wersję debugowania lub wersji. Po kliknięciu **debugowania** > **start debugowania** (lub naciśnij **klawisz F5),** kompilacja jest umieszczana w lokalizacji debugowania, niezależnie od ścieżki **wyjściowej,** którą określisz. Jednak polecenie **Build Solution** w menu **Kompilacja** umieszcza go w określonej lokalizacji. Aby włączyć zaawansowane konfiguracje kompilacji, na pasku menu wybierz pozycję**Opcje** **narzędzi** > . W oknie dialogowym **Opcje** rozwiń pozycję **Projekty i rozwiązania**, wybierz pozycję **Ogólne**, a następnie wyczyść pole wyboru Pokaż **zaawansowane konfiguracje kompilacji.** Zapewnia to ręczną kontrolę nad wszystkimi wartościami konfiguracji i czy jest zbudowana wersja debugowania lub wersji.
+W przypadku korzystania z uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. Po kliknięciu przycisku **Debuguj**  >  **Rozpocznij debugowanie** (lub naciśnij klawisz **F5**) kompilacja jest umieszczana w lokalizacji debugowania niezależnie od określonej **ścieżki wyjściowej** . Jednak polecenie **Kompiluj rozwiązanie** w menu **kompilacja** umieszcza je w określonej lokalizacji. Aby włączyć zaawansowane konfiguracje kompilacji, na pasku menu wybierz **Narzędzia**  >  **Opcje**. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, wybierz pozycję **Ogólne**, a następnie wyczyść pole wyboru **Pokaż zaawansowane konfiguracje kompilacji** . Zapewnia to ręczną kontrolę nad wszystkimi wartościami konfiguracji oraz o tym, czy została skompilowana wersja Debug lub Release.
 
  **Język domyślny**
 
-Określa domyślny język projektu. Opcja języka wybrana w **panelu Zegar, Język i Region** w Panelu sterowania określa preferowany język użytkownika. Określając domyślny język dla projektu, upewnij się, że określone domyślne zasoby języka są używane, jeśli preferowany język użytkownika nie jest zgodny z zasobami językowymi podanymi w aplikacji.
+Określa język domyślny dla projektu. Opcja język wybrana w polu **zegar, język i region** w panelu sterowania Określa preferowany język użytkownika. Określając język domyślny dla projektu, należy upewnić się, że określone domyślne zasoby językowe są używane, jeśli preferowany język użytkownika nie jest zgodny z zasobami języka udostępnianymi w aplikacji.
 
 ## <a name="debug-page"></a>Strona debugowania
 
-Użyj następujących opcji, aby ustawić właściwości debugowania zachowanie w projekcie.
+Aby ustawić właściwości zachowania debugowania w projekcie, należy użyć następujących opcji.
 
 > [!NOTE]
-> Niektóre opcje są dostępne tylko w aplikacjach platformy uniwersalnej systemu Windows.
+> Niektóre opcje są dostępne tylko w aplikacjach platformy UWP.
 
  **Debuger do uruchomienia**
 
-Określa domyślny host debugera.
+Określa domyślnego hosta dla debugera.
 
-- Wybierz **opcję Komputer lokalny,** aby uruchomić aplikację na komputerze-hoście programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Uruchamianie aplikacji na komputerze lokalnym](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
+- Wybierz pozycję **komputer lokalny** , aby uruchomić aplikację na komputerze hosta programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Uruchamianie aplikacji na komputerze lokalnym](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
-- Wybierz **opcję Symulator,** aby uruchomić aplikację w symulatorze. Aby uzyskać więcej informacji, zobacz [Uruchamianie aplikacji w symulatorze](../../debugger/run-windows-store-apps-in-the-simulator.md).
+- Wybierz **symulator** , aby uruchomić aplikację w symulatorze. Aby uzyskać więcej informacji, zobacz [Uruchamianie aplikacji w symulatorze](../../debugger/run-windows-store-apps-in-the-simulator.md).
 
-- Wybierz **opcję Komputer zdalny,** aby uruchomić aplikację na komputerze zdalnym. Aby uzyskać więcej informacji na temat zdalnego debugowania, zobacz [Uruchamianie aplikacji na komputerze zdalnym](../../debugger/run-windows-store-apps-on-a-remote-machine.md).
+- Wybierz pozycję **maszyna zdalna** , aby uruchomić aplikację na komputerze zdalnym. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [Uruchamianie aplikacji na komputerze zdalnym](../../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
 **Uruchom aplikację**
 
-Określa, czy aplikacja ma być uruchamiana po naciśnięciu **klawisza F5,** czy kliknięciu przycisku **Debugowanie** > **rozpocznij debugowania**. Wybierz **opcję Tak,** aby uruchomić aplikację; w przeciwnym razie wybierz **opcję Nie**. Jeśli wybierzesz **nie**, nadal można debugować aplikację, jeśli używasz innej metody, aby ją uruchomić.
+Określa, czy aplikacja ma zostać uruchomiona po naciśnięciu klawisza **F5** lub kliknięcia przycisku **Debuguj**  >  **Rozpocznij debugowanie**. Wybierz pozycję **tak** , aby uruchomić aplikację. w przeciwnym razie wybierz pozycję **nie**. Jeśli wybierzesz opcję **nie**, nadal możesz debugować aplikację, jeśli używasz innej metody do jej uruchamiania.
 
 **Typ debugera**
 
-Określa typy kodu do debugowania. Wybierz **opcję Tylko skrypt,** aby debugować kod JavaScript. Wybierz **opcję Zarządzana tylko** do debugowania kodu zarządzanego przez środowisko uruchomieniowe języka wspólnego. Wybierz **opcję Tylko natywne,** aby debugować kod C++. Wybierz **opcję Natywny ze skryptem,** aby debugować c++ i javascript. Wybierz **opcję Mieszane (zarządzane i natywne),** aby debugować kod zarządzany i c++.
+Określa typy kodu do debugowania. Wybierz opcję **tylko skrypt** , aby debugować kod JavaScript. Wybierz pozycję **zarządzane tylko** , aby debugować kod, który jest zarządzany przez środowisko uruchomieniowe języka wspólnego. Wybierz **tylko natywny** , aby debugować kod w języku C++. Wybierz opcję **natywny ze skryptem** , aby debugować C++ i JavaScript. Wybierz opcję **mieszany (zarządzany i natywny)** , aby debugować zarówno kod zarządzany, jak i C++.
 
 **Zezwalaj na sprzężenie zwrotne sieci lokalnej**
 
-Określa, czy dostęp do adresu sprzężenia zwrotnego ip jest dozwolony do testowania aplikacji. Wybierz **opcję Tak,** aby zezwolić na użycie adresu sprzężenia zwrotnego, jeśli aplikacja kliencka znajduje się na tym samym komputerze, na którym jest uruchomiona aplikacja serwera; w przeciwnym razie wybierz **opcję Nie**. Ta właściwość jest dostępna tylko wtedy, gdy **debuger do uruchomienia** właściwość jest **ustawiona**na Remote Machine .
+Określa, czy dostęp do adresu IP sprzężenia zwrotnego jest dozwolony dla testowania aplikacji. Wybierz opcję **tak** , aby zezwolić na użycie adresu sprzężenia zwrotnego, jeśli aplikacja kliencka znajduje się na tym samym komputerze, na którym działa aplikacja serwera. w przeciwnym razie wybierz pozycję **nie**. Ta właściwość jest dostępna tylko wtedy, gdy właściwość **debuger do uruchomienia** jest ustawiona na **komputer zdalny**.
 
 **Nazwa maszyny**
 
-Określa nazwę komputera zdalnego do obsługi debugera. Ta właściwość jest dostępna tylko wtedy, **gdy debuger do uruchomienia** jest ustawiony na Komputer **zdalny**.
+Określa nazwę komputera zdalnego do hostowania debugera. Ta właściwość jest dostępna tylko wtedy **, gdy debuger do uruchomienia** ma ustawioną **maszynę zdalną**.
 
 **Wymagaj uwierzytelniania**
 
-Określa, czy komputer zdalny wymaga uwierzytelniania. Ta właściwość jest dostępna tylko wtedy, **gdy debuger do uruchomienia** jest ustawiony na Komputer **zdalny**.
+Określa, czy komputer zdalny wymaga uwierzytelniania. Ta właściwość jest dostępna tylko wtedy **, gdy debuger do uruchomienia** ma ustawioną **maszynę zdalną**.

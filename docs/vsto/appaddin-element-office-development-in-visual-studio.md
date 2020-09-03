@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1bf9ea990d12bd24adee3f6a24a39fa43c74fb71
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531641"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin — &gt; element (Programowanie Office w Visual Studio)
@@ -53,7 +53,7 @@ ms.locfileid: "85531641"
  Opcjonalny. Element **FriendlyName** jest wyjaśniony w [&#60;FriendlyName&#62; elementu &#40;programowanie Office w&#41;programu Visual Studio ](../vsto/friendlyname-element-office-development-in-visual-studio.md).
 
 ### <a name="description"></a>description
- Opcjonalny. Element **Description** został wyjaśniony w [opisie&#60;&#62; elementu &#40;programowanie Office w&#41;Visual Studio ](../vsto/description-element-office-development-in-visual-studio.md).
+ Opcjonalny. Element **Description** został wyjaśniony w [ opisie&#60;&#62; elementu &#40;programowanie Office w&#41;Visual Studio ](../vsto/description-element-office-development-in-visual-studio.md).
 
 ### <a name="formregions"></a>formRegions
  Wymagane tylko w przypadku dodatków VSTO programu Outlook, które obejmują regiony formularzy. Element **FormRegions** jest wyjaśniony w [&#60;formRegions&#62; elementu &#40;programowanie Office w&#41;Visual Studio ](../vsto/formregions-element-office-development-in-visual-studio.md).
@@ -88,7 +88,7 @@ ms.locfileid: "85531641"
 </vstov4:appAddIn>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)

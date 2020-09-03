@@ -1,5 +1,5 @@
 ---
-title: Pole m_children | Dokumentacja firmy Microsoft
+title: m_children pole | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 749b7a8da2cbdf8377e7f2e1fcb39787e2f42303
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149061"
 ---
-# <a name="mchildren-field"></a>m_children, pole
+# <a name="m_children-field"></a>m_children, pole
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Lista zadań podrzędnych, które zostały zarejestrowane przy użyciu tego zadania.  
+Lista zadań podrzędnych, które są zarejestrowane w tym zadaniu.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Zestaw:** mscorlib (w mscorlib.dll)  
   
- Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,9 +35,9 @@ Lista zadań podrzędnych, które zostały zarejestrowane przy użyciu tego zada
 ```  
   
 ## <a name="remarks"></a>Uwagi  
- Po uruchomieniu zadania tylko wątku, który wykonuje zadania powinien uzyskać dostęp do tej tablicy.  
+ Gdy zadanie jest uruchomione, tylko wątek, który wykonuje zadanie, powinien uzyskać dostęp do tej tablicy.  
   
- Jeśli zadanie zostało ukończone, inne wątki można uzyskać dostęp do tego pola tak długo, jak nie nic dodawać do niego ani nie usuwaj niczego, co z nich.  
+ Jeśli zadanie zostanie ukończone, inne wątki mogą uzyskać dostęp do tego pola, o ile nie dodają do niego niczego lub nie usuwają niczego z nich.  
   
 ## <a name="see-also"></a>Zobacz też  
  [ContingentProperties, klasa](../../extensibility/debugger/contingentproperties-class-internal-members.md)

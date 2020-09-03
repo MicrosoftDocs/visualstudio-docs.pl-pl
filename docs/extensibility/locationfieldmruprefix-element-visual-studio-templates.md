@@ -1,5 +1,5 @@
 ---
-title: Element LocationFieldMRUPrefix (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: Locationfieldmruprefix —, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,14 +15,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ce86eecbab8c31f16ece4628eff28dc40416a0a9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702822"
 ---
-# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Element LocationFieldMRUPrefix (szablony programu Visual Studio)
-Określa ostatnio używane ścieżki (MRU) w oknie dialogowym **Nowy projekt** i Dodawanie **nowego elementu.**
+# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Locationfieldmruprefix —, element (szablony Visual Studio)
+Określa ostatnio używane ścieżki (MRU) w oknie dialogowym **Nowy projekt** i **Dodaj nowy element** .
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,10 +43,10 @@ Określa ostatnio używane ścieżki (MRU) w oknie dialogowym **Nowy projekt** i
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="remarks"></a>Uwagi
- Ten element powinien być używany tylko [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)]dla szablonów produkowanych za pośrednictwem pliku .
+ Tego elementu należy używać tylko w przypadku szablonów tworzonych przez [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)] .
 
 ## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

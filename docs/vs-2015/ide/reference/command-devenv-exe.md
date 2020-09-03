@@ -1,5 +1,5 @@
 ---
-title: -Command (devenv. exe) | Microsoft Docs
+title: -Polecenie (devenv.exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9083d14c82eb2d283431e28d03bbbf96c14258cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660853"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
@@ -31,10 +31,10 @@ devenv /command CommandName
 ```
 
 ## <a name="arguments"></a>Argumenty
- Wymagane `CommandName`. Pełna nazwa polecenia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] lub jego alias ujęty w znaki podwójnego cudzysłowu. Aby uzyskać więcej informacji na temat składni poleceń i aliasów, zobacz [Visual Studio Commands](../../ide/reference/visual-studio-commands.md).
+ `CommandName` Wymagane. Pełna nazwa [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] polecenia lub jego alias ujęty w znaki podwójnego cudzysłowu. Aby uzyskać więcej informacji na temat składni poleceń i aliasów, zobacz [Visual Studio Commands](../../ide/reference/visual-studio-commands.md).
 
 ## <a name="remarks"></a>Uwagi
- Po zakończeniu uruchamiania środowisko IDE wykonuje nazwane polecenie. W przypadku korzystania z tego przełącznika IDE nie wyświetla strony początkowej [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] podczas uruchamiania.
+ Po zakończeniu uruchamiania środowisko IDE wykonuje nazwane polecenie. W przypadku użycia tego przełącznika IDE nie wyświetla [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] strony początkowej przy uruchamianiu.
 
  Jeśli dodatek uwidacznia polecenie, można użyć tego przełącznika, aby uruchomić dodatek z wiersza polecenia. Aby uzyskać więcej informacji, zobacz [jak: kontrolowanie dodatków za pomocą Menedżera dodatków](https://msdn.microsoft.com/library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).
 

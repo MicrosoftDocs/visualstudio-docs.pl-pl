@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: db830e04388b7465c941e2fdf069b49f98951a1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660824"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Strona kompilowania, Projektant projektu (Visual Basic)
@@ -48,7 +48,7 @@ Użyj strony **kompilacja** projektanta projektu, aby określić instrukcje komp
 ## <a name="compiler-configuration-options"></a>Opcje konfiguracji kompilatora
  Poniższe ustawienia umożliwiają ustawienie opcji konfiguracji kompilatora.
 
- **Ścieżka wyjściowa kompilacji** Określa lokalizację plików wyjściowych dla konfiguracji projektu. W tym polu wpisz ścieżkę do danych wyjściowych kompilacji lub kliknij przycisk **Przeglądaj** , aby wybrać ścieżkę. Należy zauważyć, że ścieżka jest względna; Jeśli wprowadzisz ścieżkę bezwzględną, zostanie ona zapisana jako względna. Ścieżka domyślna to bin\Debug\ lub bin\Release \\. Aby uzyskać więcej informacji, zobacz [debugowanie i wydanie konfiguracji projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
+ **Ścieżka wyjściowa kompilacji** Określa lokalizację plików wyjściowych dla konfiguracji projektu. W tym polu wpisz ścieżkę do danych wyjściowych kompilacji lub kliknij przycisk **Przeglądaj** , aby wybrać ścieżkę. Należy zauważyć, że ścieżka jest względna; Jeśli wprowadzisz ścieżkę bezwzględną, zostanie ona zapisana jako względna. Ścieżka domyślna to bin\Debug\ lub bin\Release \\ . Aby uzyskać więcej informacji, zobacz [debugowanie i wydanie konfiguracji projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
  W przypadku uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. Polecenie **Build** z menu **Debuguj** (F5) umieści kompilację w lokalizacji debugowania niezależnie od określonej **ścieżki wyjściowej** . Jednak polecenie **Build** z menu **kompilacja** umieszcza je w określonej lokalizacji. Aby uzyskać więcej informacji, zobacz [debugowanie i wydanie konfiguracji projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
@@ -56,11 +56,11 @@ Użyj strony **kompilacja** projektanta projektu, aby określić instrukcje komp
 
  To ustawienie odpowiada opcji kompilatora [/optionexplicit —](https://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7) .
 
- Jeśli plik kodu źródłowego zawiera [instrukcję Option Explicit](https://msdn.microsoft.com/library/e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc), wartość `On` lub `Off` w instrukcji przesłania ustawienie **opcji jawnej** na **stronie kompilowania**.
+ Jeśli plik kodu źródłowego zawiera [instrukcję Option Explicit](https://msdn.microsoft.com/library/e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc), `On` `Off` wartość lub w instrukcji przesłania ustawienie **opcji jawnej** na **stronie kompilowania**.
 
  Podczas tworzenia nowego projektu **opcja ustawienie jawne** na **stronie kompilowania** jest ustawiana na wartość ustawienie **opcji jawne** w oknie dialogowym **Opcje** . Aby wyświetlić lub zmienić ustawienia w tym oknie dialogowym, w menu **Narzędzia** kliknij polecenie **Opcje**. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, a następnie kliknij pozycję **Ustawienia domyślne w języku VB**. Początkowe domyślne ustawienie **opcji Explicit** w **ustawieniach domyślnych języka vb** jest **włączone**.
 
- Ustawienie **opcji Explicit** dla `Off` nie jest dobrym rozwiązaniem. W co najmniej jednej lokalizacji można wypróbować nazwę zmiennej, co spowodowałoby nieoczekiwane wyniki, gdy program zostanie uruchomiony.
+ Ustawienie **opcji Explicit** `Off` to generalnie nie jest dobrym rozwiązaniem. W co najmniej jednej lokalizacji można wypróbować nazwę zmiennej, co spowodowałoby nieoczekiwane wyniki, gdy program zostanie uruchomiony.
 
  **Option Strict** Określa, czy należy wymusić semantykę typu Strict. Gdy **opcja Strict** jest **włączona**, następujące warunki powodują błąd w czasie kompilacji:
 
@@ -68,21 +68,21 @@ Użyj strony **kompilacja** projektanta projektu, aby określić instrukcje komp
 
 - Późne wiązanie
 
-- Niejawne wpisanie powoduje, że typ `Object`
+- Niejawne wpisanie, które powoduje wystąpienie `Object` typu
 
   Niejawne Zawężanie błędów konwersji występuje, gdy istnieje niejawna konwersja typu danych, która jest konwersją zawęża. Aby uzyskać więcej informacji, zobacz [Option Strict Statement](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [niejawne i jawne konwersje](https://msdn.microsoft.com/library/77de1659-af8a-492c-967e-e7ef60ccce66)oraz [rozszerzanie i zwężanie konwersji](https://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd).
 
-  Obiekt jest późnie powiązany, gdy jest przypisany do właściwości lub metody zmiennej, która jest zadeklarowana jako typu `Object`. Aby uzyskać więcej informacji, zobacz [Option stricted](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5) i [wczesne i późne wiązanie](https://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724).
+  Obiekt jest późnie powiązany, gdy jest przypisany do właściwości lub metody zmiennej, która jest zadeklarowana jako typu `Object` . Aby uzyskać więcej informacji, zobacz [Option stricted](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5) i [wczesne i późne wiązanie](https://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724).
 
-  Niejawne błędy typu obiektu występują, gdy nie można wywnioskować odpowiedniego typu dla zadeklarowanej zmiennej, więc typ `Object` jest wywnioskowany. Dzieje się tak głównie w przypadku używania instrukcji `Dim` do deklarowania zmiennej bez użycia klauzuli `As`, a `Option Infer` jest wyłączona. Aby uzyskać więcej informacji, zobacz temat [Option Strict Statement](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [Option Wniosking](https://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652)i [Specyfikacja języka Visual Basic](https://msdn.microsoft.com/library/42c30017-19d0-442e-87a2-850b66ddc3df).
+  Niejawne błędy typu obiektu występują, gdy odpowiedni typ nie może zostać wywnioskowany dla zadeklarowanej zmiennej, więc typ `Object` jest wywnioskowany. Dzieje się tak głównie w przypadku używania `Dim` instrukcji w celu deklarowania zmiennej bez użycia `As` klauzuli i `Option Infer` jest wyłączona. Aby uzyskać więcej informacji, zobacz temat [Option Strict Statement](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [Option Wniosking](https://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652)i [Specyfikacja języka Visual Basic](https://msdn.microsoft.com/library/42c30017-19d0-442e-87a2-850b66ddc3df).
 
   Ustawienie **opcji Strict** odpowiada opcji kompilatora [/optionstrict —](https://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da) .
 
-  Jeśli plik kodu źródłowego zawiera [instrukcję Option Strict](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), wartość `On` lub `Off` w instrukcji przesłania ustawienie **Option Strict** na **stronie kompilowania**.
+  Jeśli plik kodu źródłowego zawiera [instrukcję Option Strict](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), `On` `Off` wartość lub w instrukcji zastępuje ustawienie **Option Strict** na **stronie kompilowania**.
 
   Podczas tworzenia projektu ustawienie **opcji Strict** na **stronie kompilowania** jest ustawione na wartość ustawienia **Strict** w oknie dialogowym **Opcje** . Aby wyświetlić lub zmienić ustawienia w tym oknie dialogowym, w menu **Narzędzia** kliknij polecenie **Opcje**. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, a następnie kliknij pozycję **Ustawienia domyślne w języku VB**. Początkowe domyślne ustawienie **opcji Strict** w **ustawieniach domyślnych w języku VB** jest **wyłączone**.
 
-  **Opcja rygorystycznych ostrzeżeń indywidualnych.** Sekcja **konfiguracje ostrzeżeń** na **stronie kompilacja** zawiera ustawienia, które odpowiadają trzem warunkom, które powodują błąd w czasie kompilacji, gdy `Option Strict` jest włączona. Poniżej przedstawiono następujące ustawienia:
+  **Opcja rygorystycznych ostrzeżeń indywidualnych.** Sekcja **konfiguracje ostrzeżeń** **strony kompilowania** zawiera ustawienia, które odpowiadają trzem warunkom, które powodują wystąpienie błędu kompilacji, gdy `Option Strict` jest włączony. Poniżej przedstawiono następujące ustawienia:
 
 - **Niejawna konwersja**
 
@@ -92,13 +92,13 @@ Użyj strony **kompilacja** projektanta projektu, aby określić instrukcje komp
 
   Jeśli ustawisz **opcję Strict** to **on**, wszystkie trzy z tych ustawień konfiguracyjnych ostrzeżeń mają ustawioną wartość **błąd**. Ustawienie **opcji Strict** to **off**powoduje, że wszystkie trzy ustawienia mają wartość **none**.
 
-  Można indywidualnie zmienić każde ustawienie konfiguracji ostrzegawczej na **none**, **Warning**lub **Error**. Jeśli wszystkie trzy ustawienia konfiguracji ostrzegawczej są ustawione na **błąd**, `On` pojawia się w polu `Option strict`. Jeśli wszystkie trzy wartości są ustawione na **Brak**, w tym polu pojawia się `Off`. Dla każdej innej kombinacji tych ustawień pojawia się **(niestandardowe)** .
+  Można indywidualnie zmienić każde ustawienie konfiguracji ostrzegawczej na **none**, **Warning**lub **Error**. Jeśli wszystkie trzy ustawienia konfiguracji ostrzeżeń mają ustawioną wartość **błąd**, `On` pojawi się w `Option strict` polu. Jeśli wszystkie trzy z nich są ustawione na **Brak**, `Off` pojawia się w tym polu. Dla każdej innej kombinacji tych ustawień pojawia się **(niestandardowe)** .
 
   **Opcja Porównaj** Określa typ porównywania ciągów, który ma być używany. Wybierz pozycję **Binary** , aby wystawić kompilatorowi użycie binarnego porównania ciągów z uwzględnieniem wielkości liter. Zaznacz **tekst** , aby użyć specyficznych dla ustawień regionalnych porównania ciągów tekstowych.
 
   To ustawienie odpowiada opcji kompilatora [/optioncompare —](https://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) .
 
-  Jeśli plik kodu źródłowego zawiera [instrukcję Option Compare](https://msdn.microsoft.com/library/54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e), wartość `Binary` lub `Text` w instrukcji przesłania **opcję porównania** ustawienia na **stronie kompilowania**.
+  Jeśli plik kodu źródłowego zawiera [instrukcję Option Compare](https://msdn.microsoft.com/library/54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e), `Binary` `Text` wartość lub w instrukcji przesłania ustawienie **opcji Porównaj** na **stronie kompilowania**.
 
   Podczas tworzenia projektu **opcja Porównaj** ustawienia na **stronie kompilowania** jest ustawiona na wartość **opcji Porównaj** ustawienia w oknie dialogowym **Opcje** . Aby wyświetlić lub zmienić ustawienia w tym oknie dialogowym, w menu **Narzędzia** kliknij polecenie **Opcje**. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, a następnie kliknij pozycję **Ustawienia domyślne w języku VB**. Początkowe domyślne ustawienie **opcji Compare** w **języku VB domyślnie** jest **binarne**.
 
@@ -106,7 +106,7 @@ Użyj strony **kompilacja** projektanta projektu, aby określić instrukcje komp
 
   To ustawienie odpowiada opcji kompilatora [/optioninfer —](https://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed) .
 
-  Jeśli plik kodu źródłowego zawiera [instrukcję Option wnioskowania](https://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652), wartość `On` lub `Off` w instrukcji przesłania ustawienie **opcji wnioskowania** na **stronie kompilowania**.
+  Jeśli plik kodu źródłowego zawiera [instrukcję opcji wnioskowania](https://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652), `On` `Off` wartość lub w instrukcji przesłania ustawienie **opcji wnioskowania** na **stronie kompilowania**.
 
   Podczas tworzenia projektu, **opcja wnioskowanie** dla ustawienia na **stronie kompilowania** jest ustawiona na wartość ustawienia wywnioskowania **opcji** w oknie dialogowym **Opcje** . Aby wyświetlić lub zmienić ustawienia w tym oknie dialogowym, w menu **Narzędzia** kliknij polecenie **Opcje**. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, a następnie kliknij pozycję **Ustawienia domyślne w języku VB**. Początkowe domyślne ustawienie **wnioskowania opcji** w **ustawieniach domyślnych w języku VB** jest **włączone**.
 

@@ -1,5 +1,5 @@
 ---
-title: Element MaxFrameworkVersion (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: MaxFrameworkVersion, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,20 +13,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9c3acf9c40499417fe180ce470224824cc89a113
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702619"
 ---
-# <a name="maxframeworkversion-element-visual-studio-templates"></a>Element MaxFrameworkVersion (szablony programu Visual Studio)
+# <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion, element (szablony Visual Studio)
 
-Określa maksymalną wersję programu .NET Framework, która jest wymagana przez szablon. Określa najwyższą wartość dostępną w **docelowej wersji frameworka** rozwijanego okna dialogowego **Nowy projekt.** Aby użytkownicy mogli wybrać wersję framework, należy również określić [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) jako minimalną wersję programu .NET Framework dla szablonu.
+Określa maksymalną wersję .NET Framework wymaganą przez szablon. Określa największą wartość dostępną na liście rozwijanej **wersji platformy docelowej** okna dialogowego **Nowy projekt** . Aby użytkownicy mogli wybrać wersję platformy, należy również określić [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) jako minimalną wersję .NET Framework szablonu.
 
 > [!IMPORTANT]
-> Począwszy od programu Visual Studio 2017 w wersji 15.6, **docelowa wersja frameworka rozwijana** nie jest już filtrem dla wyświetlanych szablonów w sekcji **Szablony** okna dialogowego **Nowy projekt.** Zamiast tego funkcja **rozwijana wersji platformy docelowej** działa jako selektor struktury dla wybranego szablonu.
+> Począwszy od programu Visual Studio 2017 w wersji 15,6, lista rozwijana **wersji platformy docelowej** nie jest już filtrem dla wyświetlanych szablonów w sekcji **Szablony** okna dialogowego **Nowy projekt** . Zamiast tego lista rozwijana **wersji platformy docelowej** działa jako selektor struktury dla wybranego szablonu.
 
- \<>> \<TemplateData \<> MaxFrameworkVersion
+ \<VSTemplate> \<TemplateData>
+ \<MaxFrameworkVersion>
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,20 +48,20 @@ Określa maksymalną wersję programu .NET Framework, która jest wymagana przez
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób jego wyświetlania w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób jego wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst musi być najwyższy numer wersji programu .NET Framework, który jest dozwolony przez szablon.
+ Tekst musi być najwyższym numerem wersji .NET Framework, który jest dozwolony przez szablon.
 
 ## <a name="remarks"></a>Uwagi
 
-`MaxFrameworkVersion`jest elementem opcjonalnym. Element `MaxFrameworkVersion` należy pominąć, chyba że jest to wymagane, tak aby nie przypadkowo ograniczyć obsługiwany zakres wersji programu .NET Framework dla szablonu. Należy również pominąć, jeśli .NET Framework nie ma zastosowania do szablonu.
+`MaxFrameworkVersion` jest elementem opcjonalnym. `MaxFrameworkVersion`Element powinien być pominięty, chyba że jest wymagany, dlatego nie można przypadkowo ograniczyć obsługiwanego zakresu .NET Framework wersji szablonu. Należy również pominąć, jeśli .NET Framework nie ma zastosowania do szablonu.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład ilustruje metadane szablonu klasy standardowej. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]
+Poniższy przykład ilustruje metadane dla standardowego [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu klasy.
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -80,7 +81,7 @@ Poniższy przykład ilustruje metadane szablonu klasy standardowej. [!INCLUDE[cs
 </VSTemplate>
 ```
 
-W tym przykładzie maksymalna wersja programu .NET Framework, która jest `MaxFrameworkVersion`wymagana przez szablon, reprezentowana przez , jest 4.7.1. Projekt utworzony za pomocą tego szablonu może dotyczyć wersji programu .NET Framework do wersji 4.7.1.
+W tym przykładzie Maksymalna wersja .NET Framework, która jest wymagana przez szablon, reprezentowana przez `MaxFrameworkVersion` , to 4.7.1. Projekt utworzony za pomocą tego szablonu może wskazywać .NET Framework wersje do 4.7.1.
 
 ## <a name="see-also"></a>Zobacz też
 

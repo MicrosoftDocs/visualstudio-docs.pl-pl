@@ -12,195 +12,195 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 85ce7b0f270f0da8728b17610a683dcc17d06189
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589932"
 ---
 # <a name="shader-designer"></a>Shader Designer
 
-W tym dokumencie opisano sposób pracy z **projektantem programu** Visual Studio Shader Designer w celu tworzenia, modyfikowania i eksportowania niestandardowych efektów wizualnych, które są znane jako *moduły cieniowania.*
+W tym dokumencie opisano sposób pracy z **projektantem cieniowania** programu Visual Studio w celu tworzenia, modyfikowania i eksportowania niestandardowych efektów wizualnych, które są znane jako programy do *cieniowania*.
 
-Projektanta **modułów cieniowania** można używać do tworzenia niestandardowych efektów wizualnych dla gry lub aplikacji, nawet jeśli nie znasz programowania języka cieniowania wysokiego poziomu (HLSL). Aby utworzyć moduł cieniujący w **projektancie modułu cieniującego,** należy go ułożyć jako wykres. Oznacza to, że można dodać do *węzłów* powierzchni projektowej, które reprezentują dane i operacje, a następnie nawiązać połączenia między nimi, aby zdefiniować sposób przetwarzania danych przez operacje. W każdym węźle operacji podgląd efektu do tego momentu jest dostarczany, dzięki czemu można wizualizować jego wynik. Dane przepływa przez węzły w kierunku węzła końcowego, który reprezentuje dane wyjściowe modułu cieniującego.
+Za pomocą **projektanta cieniowania** można tworzyć niestandardowe efekty wizualne dla swojej gry lub aplikacji, nawet jeśli nie znasz programowania w języku HLSL (High-Level Shader Language). Aby utworzyć program do cieniowania w **projektancie cieniowania**, można go określić jako Graf. Oznacza to, że należy dodać do *węzłów* powierzchni projektowej, które reprezentują dane i operacje, a następnie nawiązać połączenia między nimi w celu zdefiniowania sposobu przetwarzania danych przez operacje. W każdym węźle operacji jest dostępny podgląd efektu do tego punktu, aby można było wizualizować jego wyniki. Dane są przepływane przez węzły do końcowego węzła, który reprezentuje dane wyjściowe cieniowania.
 
 ## <a name="supported-formats"></a>Obsługiwane formaty
 
-**Projektant modułu cieniującego** obsługuje następujące formaty modułu cieniującego:
+Projektant programu do **cieniowania** obsługuje następujące formaty programu do cieniowania:
 
-|Nazwa formatu|Rozszerzenie pliku|Obsługiwane operacje (wyświetlanie, edytowanie, eksportowanie)|
+|Nazwa formatu|Rozszerzenie pliku|Obsługiwane operacje (wyświetlanie, edytowanie i eksportowanie)|
 |-----------------| - | - |
-|Skierowany język modułu cieniującego wykresu|*.dgsl*|Widok, edycja|
-|Moduł cieniujący HLSL (kod źródłowy)|*.hlsl*|Eksportowanie|
-|Moduł cieniujący HLSL (kod bajtowy)|*.cso*|Eksportowanie|
-|Nagłówek C++ (tablica kodów bajtowych HLSL)|*.h*|Eksportowanie|
+|Język ukierunkowanego modułu cieniującego wykresów|*. dgsl*|Wyświetl, edytuj|
+|Program do cieniowania HLSL (kod źródłowy)|*. HLSL*|Eksportowanie|
+|Program do cieniowania HLSL (kod bajtowy)|*. CSO*|Eksportowanie|
+|Nagłówek C++ (tablica kodu bajtowego HLSL)|*. h*|Eksportowanie|
 
-## <a name="get-started"></a>Wprowadzenie
+## <a name="get-started"></a>Rozpoczęcie pracy
 
-W tej sekcji opisano sposób dodawania modułu cieniującego DGSL do projektu programu Visual Studio C++ i zawiera podstawowe informacje ułatwiające rozpoczęcie pracy.
+W tej sekcji opisano sposób dodawania modułu cieniującego DGSL do projektu Visual Studio C++ i przedstawiono podstawowe informacje ułatwiające rozpoczęcie pracy.
 
 > [!NOTE]
-> Automatyczna integracja kompilacji elementów graficznych, takich jak wykresy modułu cieniującego (pliki dgsl) jest obsługiwana tylko dla projektów języka C++.
+> Automatyczna integracja kompilacji elementów graficznych, takich jak grafy programu do cieniowania (pliki. dgsl), jest obsługiwana tylko dla projektów języka C++.
 
-### <a name="to-add-a-dgsl-shader-to-your-project"></a>Aby dodać moduł cieniujący DGSL do projektu
+### <a name="to-add-a-dgsl-shader-to-your-project"></a>Aby dodać cieniowanie DGSL do projektu
 
-1. Upewnij się, że masz zainstalowany wymagany składnik programu Visual Studio, który jest potrzebny do pracy z grafiką. Składnik nosi nazwę **Edytory obrazów i modeli 3D**.
+1. Upewnij się, że masz zainstalowany wymagany składnik programu Visual Studio, który jest potrzebny do pracy z grafiką. Składnik jest nazywany **edytorami obrazów i modeli 3W**.
 
-   Aby go zainstalować, otwórz Instalatora programu Visual Studio, wybierając **pozycję Narzędzia** > **Pobierz narzędzia i funkcje** z paska menu, a następnie wybierz kartę **Poszczególne składniki.** Wybierz składnik **Edytory obrazów i modeli 3D** w kategorii **Gry i grafika,** a następnie wybierz pozycję **Modyfikuj**.
+   Aby go zainstalować, Otwórz Instalator programu Visual Studio, wybierając pozycję **Narzędzia**  >  **Pobierz narzędzia i funkcje** z paska menu, a następnie wybierz kartę **poszczególne składniki** . Wybierz składnik **obrazy i edytory modelu 3W** w kategorii **gry i grafika** , a następnie wybierz polecenie **Modyfikuj**.
 
-   ![Komponent edytorów obrazów i modeli 3D](media/image-3d-model-editors-component.png)
+   ![Składnik edytorów obrazów i modeli 3W](media/image-3d-model-editors-component.png)
 
-2. W **Eksploratorze rozwiązań**otwórz menu skrótów dla projektu C++, do którego chcesz dodać moduł cieniujący, a następnie wybierz pozycję **Dodaj** > **nowy element**.
+2. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu języka C++, do którego chcesz dodać program do cieniowania, a następnie wybierz polecenie **Dodaj**  >  **nowy element**.
 
-3. W oknie dialogowym **Dodawanie nowego elementu** w obszarze **Zainstalowane**wybierz pozycję **Grafika**, a następnie wybierz pozycję **Visual Shader Graph (.dgsl)**.
+3. W oknie dialogowym **Dodaj nowy element** w obszarze **zainstalowane**wybierz pozycję **grafika**, a następnie wybierz pozycję **Wykres cieniowania wizualizacji (. dgsl)**.
 
    > [!NOTE]
-   > Jeśli nie widzisz kategorii **Grafika** w oknie dialogowym **Dodawanie nowego elementu** i masz zainstalowany składnik **Edytory obrazów i modeli 3D,** elementy graficzne nie są obsługiwane dla typu projektu.
+   > Jeśli kategoria **grafika** nie jest widoczna w oknie dialogowym **Dodaj nowy element** i masz zainstalowany składnik **edytory obrazów i modeli 3W** , elementy graficzne nie są obsługiwane dla typu projektu.
 
-4. Określ **nazwę** pliku modułu cieniującego i **lokalizację, w** której ma zostać utworzony.
+4. Określ **nazwę** pliku programu do cieniowania i **lokalizację** , w której ma zostać utworzona.
 
 5. Wybierz przycisk **Dodaj**.
 
-### <a name="the-default-shader"></a>Domyślny moduł cieniujący
+### <a name="the-default-shader"></a>Domyślne cieniowanie
 
-Za każdym razem, gdy tworzysz moduł cieniujący DGSL, rozpoczyna się on jako minimalny moduł cieniujący, który ma tylko węzeł **Kolor punktu** połączony z **węzłem Kolor końcowy.** Chociaż ten moduł cieniujący jest kompletny i funkcjonalny, nie robi wiele. W związku z tym pierwszym krokiem w tworzeniu działającego modułu cieniującego jest często usunięcie **węzła Kolor punktu** lub odłączenie go od **węzła Kolor końcowy,** aby zrobić miejsce dla innych węzłów.
+Za każdym razem, gdy tworzysz cieniowanie DGSL, rozpoczyna się to minimalny program do cieniowania, który ma tylko węzeł **koloru punktu** , który jest połączony z **końcowym** węzłem koloru. Mimo że ten program do cieniowania jest kompletny i funkcjonalny, nie wykonuje tego więcej. W związku z tym pierwszy krok tworzenia działającego programu do cieniowania często polega na usunięciu węzła **koloru punktu** lub rozłączeniu go od **końcowego węzła koloru** , aby zwolnić miejsce na inne węzły.
 
-## <a name="work-with-the-shader-designer"></a>Praca z projektantem modułu cieniującego
+## <a name="work-with-the-shader-designer"></a>Współpraca z projektantem programu do cieniowania
 
-W poniższych sekcjach opisano sposób używania Projektanta modułów cieniucych do pracy z niestandardowymi modułami cieniu.
+W poniższych sekcjach opisano, jak używać projektanta cieniowania do pracy z niestandardowymi narzędziami do cieniowania.
 
-### <a name="shader-designer-toolbars"></a>Paski narzędzi Projektanta modułów cieniucych
+### <a name="shader-designer-toolbars"></a>Paski narzędzi projektanta cieniowania
 
-Paski narzędzi Projektanta modułów cieniucych zawierają polecenia ułatwiające pracę z wykresami modułów cieniowania DGSL.
+Paski narzędzi projektanta cieniowania zawierają polecenia, które ułatwiają korzystanie z grafów cieniowania DGSL.
 
-Polecenia wpływające na stan projektanta modułu cieniującego znajdują się na pasku narzędzi **Tryb projektanta modułu cieniującego** w głównym oknie programu Visual Studio. Narzędzia i polecenia projektowania znajdują się na pasku narzędzi **Projektanta modułów cieniujących** na powierzchni projektowej projektanta modułu cieniującego.
+Polecenia, które mają wpływ na stan projektanta cieniowania, znajdują się na pasku narzędzi **tryb projektanta cieniowania** w głównym oknie programu Visual Studio. Narzędzia i polecenia projektowania znajdują się na pasku narzędzi **projektanta cieniowania** na powierzchni projektowej projektanta programu do cieniowania.
 
-Oto pasek narzędzi **Trybu projektanta modułu cieniującego:**
+Oto pasek narzędzi **tryb projektanta cieniowania** :
 
-![Pasek narzędzi modacyjny projektanta modułu cieniującego.](../designers/media/digit-dsd-modal-toolbar.png)
+![Modalny pasek narzędzi projektanta programu do cieniowania.](../designers/media/digit-dsd-modal-toolbar.png)
 
-W tej tabeli opisano elementy na pasku narzędzi **Tryb projektanta modułu cieniującego,** które są wyświetlane w kolejności, w jakiej są wyświetlane od lewej do prawej:
+W tej tabeli opisano elementy na pasku narzędzi **tryb projektanta cieniowania** , które są wymienione w kolejności, w jakiej są wyświetlane od lewej do prawej:
 
 |Element paska narzędzi|Opis|
 |------------------|-----------------|
-|**Wybierz**|Umożliwia interakcję z węzłami i krawędziami na wykresie. W tym trybie można wybrać węzły i przenieść je lub usunąć, a także ustanowić krawędzie lub je podzielić.|
-|**Przesuwanie**|Umożliwia ruch wykresu modułu cieniującego względem ramki okna. Aby przesuwać, wybierz punkt na powierzchni projektowej i przesuń go.<br /><br /> W trybie **wyboru** można nacisnąć i przytrzymać **klawisz Ctrl,** aby tymczasowo włączyć tryb **przesuwania.**|
-|**Zoom**|Umożliwia wyświetlanie mniej lub bardziej cieniowania wykresu szczegółów względem ramki okna. W trybie **powiększenia** wybierz punkt na powierzchni projektowej, a następnie przesuń go w prawo lub w dół, aby powiększyć, lub w lewo lub w górę, aby pomniejszyć widok.<br /><br /> W trybie **wyboru** można nacisnąć i przytrzymać **klawisz Ctrl,** aby powiększyć lub pomniejszyć widok za pomocą kółka myszy.|
-|**Powiększenie, aby dopasować**|Wyświetla pełny wykres modułu cieniującego w ramce okna.|
-|**Tryb renderowania w czasie rzeczywistym**|Gdy renderowanie w czasie rzeczywistym jest włączone, Visual Studio ponownie rysuje powierzchni projektowej, nawet wtedy, gdy nie jest wykonywana żadna akcja użytkownika. Ten tryb jest przydatny podczas pracy z cieniowaniami zmieniającymi się w czasie.|
-|**Podgląd z kulą**|Gdy ta opcja jest włączona, model kuli jest używany do podglądu modułu cieniującego. Można włączyć tylko jeden kształt podglądu naraz.|
-|**Podgląd z modułem**|Po włączeniu model modułu jest używany do podglądu modułu cieniującego. Można włączyć tylko jeden kształt podglądu naraz.|
-|**Podgląd z cylindrem**|Po włączeniu model walca jest używany do podglądu modułu cieniującego. Można włączyć tylko jeden kształt podglądu naraz.|
-|**Podgląd ze stożkiem**|Gdy ta opcja jest włączona, model stożka jest używany do podglądu modułu cieniującego. Można włączyć tylko jeden kształt podglądu naraz.|
-|**Podgląd z czajniczek**|Po włączeniu model czajnika służy do podglądu modułu cieniującego. Można włączyć tylko jeden kształt podglądu naraz.|
-|**Podgląd z płaszczyzną**|Gdy ta opcja jest włączona, model płaszczyzny jest używany do podglądu modułu cieniującego. Można włączyć tylko jeden kształt podglądu naraz.|
-|**Przybornik**|Alternatywnie pokazuje lub ukrywa **przybornik**.|
-|**Właściwości**|Alternatywnie pokazuje lub ukrywa **właściwości** okna.|
-|**Zaawansowane**|Zawiera zaawansowane polecenia i opcje.<br /><br /> **Eksport:** Umożliwia eksport modułu cieniującego w kilku formatach.<br /><br /> **Eksportuj jako:** Eksportuje moduł cieniujący jako kod źródłowy HLSL lub jako skompilowany kod bajtowy modułu cieniującego. Aby uzyskać więcej informacji na temat eksportowania modułów cieniowania, zobacz [Jak: Eksportowanie modułu cieniującego](../designers/how-to-export-a-shader.md).<br /><br /> **Aparaty graficzne:** Umożliwia wybór modułu renderowania używanego do wyświetlania powierzchni projektowej.<br /><br /> **Renderowanie za pomocą D3D11:** Używa direct3D 11 do renderowania powierzchni projektowej projektanta modułu cieniującego.<br /><br /> **Render z D3D11WARP**: Używa Direct3D 11 Windows Advanced Rasterization Platform (WARP) do renderowania powierzchni projektowej projektanta modułu cieniującego.<br /><br /> **Widok**: Umożliwia wybór dodatkowych informacji o Projektancie modułu cieniującego.<br /><br /> **Liczba klatek na sekundę:** Po włączeniu wyświetlana jest bieżąca liczba klatek na sekundę w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę. Ta opcja jest przydatna po włączeniu opcji Tryb renderowania w **czasie rzeczywistym.**|
+|**Wybierz**|Umożliwia interakcję z węzłami i krawędziami na wykresie. W tym trybie można wybrać węzły i przenieść je lub usunąć. można również ustalić krawędzie lub je podzielić.|
+|**Panoramowanie**|Włącza przenoszenie grafu cieniowania względem ramki okna. Aby przesunąć, wybierz punkt na powierzchni projektowej i przenieś go wokół siebie.<br /><br /> W trybie **Wybierz** możesz nacisnąć i przytrzymać klawisz **Ctrl** , aby tymczasowo aktywować tryb **przesuwania** .|
+|**Powiększenie**|Umożliwia wyświetlanie większej lub mniejszej liczby szczegółów grafu cieniowania względem ramki okna. W trybie **powiększenia** wybierz punkt na powierzchni projektowej, a następnie przenieś go w prawo lub w dół, aby powiększyć, lub w lewo lub w górę, aby pomniejszyć.<br /><br /> W trybie **Wybierz** możesz nacisnąć i przytrzymać klawisz **Ctrl** , aby powiększyć lub pomniejszyć, używając kółka myszy.|
+|**Dopasuj do rozmiaru**|Wyświetla wykres pełnego modułu cieniującego w ramce okna.|
+|**Tryb renderowania w czasie rzeczywistym**|Po włączeniu renderowania w czasie rzeczywistym program Visual Studio ponownie rysuje powierzchnię projektu, nawet jeśli nie jest wykonywana żadna akcja użytkownika. Ten tryb jest przydatny podczas pracy z cieniowaniami zmieniającymi się w czasie.|
+|**Podgląd przy użyciu sfery**|Po włączeniu Model sfery jest używany do podglądu cieniowania. Można włączyć tylko jeden kształt podglądu w danym momencie.|
+|**Podgląd przy użyciu modułu**|Po włączeniu Model modułu jest używany do podglądu cieniowania. Można włączyć tylko jeden kształt podglądu w danym momencie.|
+|**Podgląd przy użyciu walca**|Po włączeniu Model walcowy służy do wyświetlania podglądu cieniowania. Można włączyć tylko jeden kształt podglądu w danym momencie.|
+|**Podgląd z stożek**|Po włączeniu Model stożkowy jest używany do podglądu cieniowania. Można włączyć tylko jeden kształt podglądu w danym momencie.|
+|**Podgląd przy użyciu czajniczek**|Po włączeniu Model elementu czajniczek jest używany do podglądu cieniowania. Można włączyć tylko jeden kształt podglądu w danym momencie.|
+|**Podgląd przy użyciu płaszczyzny**|Po włączeniu Model płaszczyzny jest używany do podglądu cieniowania. Można włączyć tylko jeden kształt podglądu w danym momencie.|
+|**Przybornik**|Alternatywnie pokazuje lub ukrywa **Przybornik**.|
+|**Właściwości**|Alternatywnie pokazuje lub ukrywa okno **Właściwości** .|
+|**Zaawansowany**|Zawiera zaawansowane polecenia i opcje.<br /><br /> **Eksport**: umożliwia eksportowanie cieniowania w kilku formatach.<br /><br /> **Eksportuj jako**: Eksportuje program do cieniowania jako kod źródłowy HLSL lub jako skompilowany plik kodu programu do cieniowania. Aby uzyskać więcej informacji o sposobach eksportowania programów do cieniowania, zobacz [How to: Export a Shader](../designers/how-to-export-a-shader.md).<br /><br /> **Aparaty grafiki**: włącza wybór modułu renderowania, który jest używany do wyświetlania powierzchni projektowej.<br /><br /> **Renderowanie przy użyciu d3d11**: używa programu Direct3D 11 do renderowania powierzchni projektowej projektanta cieniowania.<br /><br /> **Renderowanie przy użyciu D3D11WARP**: używa platformy Direct3D 11 Windows Advanced rasteryzacji (Wypaczenie), aby renderować powierzchnię projektowania projektanta programu do cieniowania.<br /><br /> **Widok**: umożliwia wybranie dodatkowych informacji na temat projektanta programu do cieniowania.<br /><br /> **Szybkość klatek**: po włączeniu wyświetla bieżącą stawkę klatki w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę. Ta opcja jest przydatna po włączeniu opcji **tryb renderowania w czasie rzeczywistym** .|
 
 > [!TIP]
-> Możesz wybrać przycisk **Zaawansowane,** aby ponownie uruchomić ostatnie polecenie.
+> Możesz wybrać przycisk **Zaawansowane** , aby ponownie uruchomić ostatnie polecenie.
 
-### <a name="work-with-nodes-and-connections"></a>Praca z węzłami i połączeniami
+### <a name="work-with-nodes-and-connections"></a>Pracuj z węzłami i połączeniami
 
-Użyj trybu **wyboru,** aby dodać, usunąć, zmienić położenie, połączyć i skonfigurować węzły. Oto jak wykonać te podstawowe operacje:
+Użyj trybu **SELECT** , aby dodawać, usuwać, zmieniać położenie, łączyć i konfigurować węzły. Poniżej przedstawiono sposób wykonywania tych podstawowych operacji:
 
-#### <a name="to-perform-basic-operations-in-select-mode"></a>Aby wykonać podstawowe operacje w trybie wyboru
+#### <a name="to-perform-basic-operations-in-select-mode"></a>Aby wykonać operacje podstawowe w trybie wyboru
 
 - Oto kroki tej procedury:
 
-  - Aby dodać węzeł do wykresu, zaznacz go w **przyborniku,** a następnie przenieś go na powierzchnię projektową.
+  - Aby dodać węzeł do wykresu, wybierz go w **przyborniku** , a następnie przenieś do powierzchni projektowej.
 
-  - Aby usunąć węzeł z wykresu, zaznacz go, a następnie naciśnij klawisz **Delete**.
+  - Aby usunąć węzeł z grafu, zaznacz go, a następnie naciśnij klawisz **delete**.
 
-  - Aby zmienić położenie węzła, zaznacz go, a następnie przenieś go w nową lokalizację.
+  - Aby zmienić położenie węzła, zaznacz go, a następnie przenieś do nowej lokalizacji.
 
-  - Aby połączyć dwa węzły, przenieś terminal wyjściowy jednego węzła do terminalu wejściowego drugiego węzła. Można podłączyć tylko zaciski, które mają zgodne typy. Linia między zaciskami pokazuje połączenie.
+  - Aby połączyć dwa węzły, Przenieś Terminal wyjściowy jednego węzła do terminalu wejściowego drugiego węzła. Możliwe jest połączenie tylko terminali, które mają zgodne typy. Linia między terminalami pokazuje połączenie.
 
-  - Aby usunąć połączenie, w menu skrótów dla jednego z podłączonych terminali wybierz polecenie **Przerwij łącza**.
+  - Aby usunąć połączenie, w menu skrótów dla jednego z podłączonych terminali wybierz opcję **Przerwij linki**.
 
-  - Aby skonfigurować właściwości węzła, wybierz węzeł, a następnie w oknie **Właściwości** określ nowe wartości właściwości.
+  - Aby skonfigurować właściwości węzła, wybierz węzeł, a następnie w oknie **Właściwości** Określ nowe wartości właściwości.
 
-### <a name="preview-shaders"></a>Podgląd modułów cieniowania
+### <a name="preview-shaders"></a>Podgląd programów do cieniowania
 
-Aby ułatwić zrozumienie, jak będzie wyświetlany moduł cieniujący w aplikacji, możesz skonfigurować sposób wyświetlania podglądu efektu. Aby przybliżyć aplikację, można wybrać jeden z kilku kształtów do renderowania, konfigurowania tekstur i innych parametrów materiałowych, włączania animacji efektów opartych na czasie i sprawdzania podglądu pod różnymi kątami.
+Aby ułatwić zrozumienie, w jaki sposób program do cieniowania będzie widoczny w aplikacji, możesz skonfigurować sposób wyświetlania podglądu. Aby przybliżyć aplikację, możesz wybrać jeden z kilku kształtów do renderowania, skonfigurować tekstury i inne parametry materiałowe, włączyć animację efektów opartych na czasie i sprawdzić podgląd z różnych kątów.
 
 #### <a name="shapes"></a>Kształty
 
-Projektant modułu cieniującego zawiera sześć kształtów — kulę, kostkę, cylinder, stożek, czajnik i płaszczyznę — za pomocą którego można wyświetlić podgląd modułu cieniującego. W zależności od modułu cieniującego niektóre kształty mogą zapewniać lepszy podgląd.
+Projektant programu do cieniowania zawiera sześć kształtów — sfera, moduł, cylinder, stożek, czajniczek i płaszczyznę, których można użyć do podglądu cieniowania. W zależności od modułu cieniującego Niektóre kształty mogą dać lepszy Podgląd.
 
-Aby wybrać kształt podglądu, na pasku narzędzi **Tryby projektanta modułu cieniującego** wybierz odpowiedni kształt.
+Aby wybrać kształt podglądu, na pasku narzędzi **tryby projektanta cieniowania** wybierz odpowiedni kształt.
 
 #### <a name="textures-and-material-parameters"></a>Tekstury i parametry materiału
 
-Wiele modułów cieniowania polega na teksturach i właściwościach materiału, aby uzyskać unikatowy wygląd dla każdego rodzaju obiektu w aplikacji. Aby zobaczyć, jak będzie wyglądał moduł cieniujący w aplikacji, można ustawić tekstury i właściwości materiału, które są używane do renderowania podglądu, aby dopasować tekstury i parametry, które mogą być używane w aplikacji.
+Wiele programów do cieniowania polega na teksturach i właściwościach materiału w celu utworzenia unikatowego wyglądu każdego rodzaju obiektu w aplikacji. Aby zobaczyć, jak będzie wyglądać program do cieniowania w aplikacji, możesz ustawić tekstury i właściwości materiałowe, które są używane do renderowania podglądu, tak aby pasowały do tekstur i parametrów, które mogą być używane w aplikacji.
 
-Aby powiązać inną teksturę z rejestrem tekstur lub zmodyfikować inne parametry materiału:
+Aby powiązać inną teksturę z rejestrem tekstury lub zmodyfikować inne parametry materiałowe:
 
-1. W trybie **wyboru** wybierz pusty obszar powierzchni projektowej. Powoduje to, że okno **Właściwości** do wyświetlania właściwości globalnego modułu cieniującego.
+1. W obszarze tryb **wyboru** zaznacz pusty obszar na powierzchni projektowej. Powoduje to wyświetlenie właściwości globalnego cieniowania w oknie **Właściwości** .
 
-2. W oknie **Właściwości** określ nowe wartości właściwości tekstury i parametrów, które chcesz zmienić.
+2. W oknie **Właściwości** Określ nowe wartości właściwości tekstury i parametrów, które chcesz zmienić.
 
-W poniższej tabeli przedstawiono parametry modułu cieniującego, które można modyfikować:
+W poniższej tabeli przedstawiono parametry programu do cieniowania, które można modyfikować:
 
 |Parametr|Właściwości|
 |---------------|----------------|
-|**Tekstura 1** - **Tekstura 8**|**Access:** **Public,** aby umożliwić ustawienie właściwości z Edytora modeli; w przeciwnym **razie, Prywatne**.<br /><br /> **Nazwa pliku**: Pełna ścieżka pliku tekstury skojarzonego z tym rejestrem tekstur.|
-|**Otoczenie materiału**|**Access:** **Public,** aby umożliwić ustawienie właściwości z Edytora modeli; w przeciwnym **razie, Prywatne**.<br /><br /> **Wartość**: Rozproszony kolor bieżącego piksela z powodu oświetlenia pośredniego lub otoczenia.|
-|**Materiał rozproszony**|**Access:** **Public,** aby umożliwić ustawienie właściwości z Edytora modeli; w przeciwnym **razie, Prywatne**.<br /><br /> **Wartość:** Kolor opisujący sposób rozpraszania bieżącego piksela przez bezpośrednie oświetlenie.|
-|**Materiał Emissive**|**Access:** **Public,** aby umożliwić ustawienie właściwości z Edytora modeli; w przeciwnym **razie, Prywatne**.<br /><br /> **Wartość**: Wkład koloru bieżącego piksela z powodu oświetlenia dostarczonego przez siebie.|
-|**Materiał Specular**|**Access:** **Public,** aby umożliwić ustawienie właściwości z Edytora modeli; w przeciwnym **razie, Prywatne**.<br /><br /> **Wartość:** Kolor opisujący sposób, w jaki bieżący piksel odzwierciedla bezpośrednie oświetlenie.|
-|**Moc lustrzana materiału**|**Access:** **Public,** aby umożliwić ustawienie właściwości z Edytora modeli; w przeciwnym **razie, Prywatne**.<br /><br /> **Wartość**: Wykładnik definiujący intensywność świateł lustrzanych w bieżącym pikselu.|
+|**Tekstura 1**  -  **Tekstura 8**|**Dostęp**:                             **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Nazwa pliku**: pełna ścieżka pliku tekstury skojarzonego z tym rejestrem tekstury.|
+|**Otoczenie materiału**|**Dostęp**:                             **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Wartość**: kolor rozpraszania bieżącego piksela ze względu na pośrednie lub oświetlenie otoczenia.|
+|**Rozpraszanie materiału**|**Dostęp**: **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Wartość**: kolor opisujący sposób rozpraszania przez bieżący piksel oświetlenia bezpośredniego.|
+|**Emisyjny materiału**|**Dostęp**:                              **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Wartość**: udział koloru bieżącego piksela ze względu na własne oświetlenie.|
+|**Odblasków materiału**|**Dostęp**:                              **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Wartość**: kolor opisujący sposób, w jaki bieżący piksel odzwierciedla bezpośrednie oświetlenie.|
+|**Odblasków materiału**|**Dostęp**:                             **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Wartość**: wykładnik, który definiuje intensywność odblasków świateł na bieżącym pikselu.|
 
-#### <a name="time-based-effects"></a>Efekty oparte na czasie
+#### <a name="time-based-effects"></a>Efekty zależne od czasu
 
-Niektóre moduły cieniowania mają składnik oparty na czasie, który animuje efekt. Aby pokazać, jak wygląda efekt w działaniu, podgląd musi być aktualizowany kilka razy na sekundę. Domyślnie podgląd jest aktualizowany tylko po zmianie modułu cieniującego; aby zmienić to zachowanie, aby można było wyświetlać efekty oparte na czasie, należy włączyć renderowanie w czasie rzeczywistym.
+Niektóre programy do cieniowania mają składnik oparty na czasie, który Animuj efekt. Aby pokazać, jak działa efekt, wersja zapoznawcza musi być aktualizowana kilka razy na sekundę. Domyślnie wersja zapoznawcza jest aktualizowana tylko wtedy, gdy cieniowanie zostanie zmienione; Aby zmienić to zachowanie, tak aby można było wyświetlić efekty zależne od czasu, należy włączyć renderowanie w czasie rzeczywistym.
 
-Aby włączyć renderowanie w czasie rzeczywistym, na pasku narzędzi Projektanta modułu cieniującego wybierz pozycję **Renderowanie w czasie rzeczywistym**.
+Aby włączyć renderowanie w czasie rzeczywistym, na pasku narzędzi projektanta cieniowania wybierz opcję **renderowanie**w czasie rzeczywistym.
 
-#### <a name="examine-the-effect"></a>Zbadaj efekt
+#### <a name="examine-the-effect"></a>Badanie efektu
 
-Na wiele modułów cieniowania mają wpływ zmienne, takie jak kąt widzenia lub oświetlenie kierunkowe. Aby sprawdzić, jak efekt reaguje w miarę zmiany tych zmiennych, można swobodnie obracać kształt podglądu i obserwować zachowanie modułu cieniującego.
+Na wiele programów do cieniowania wpływają zmienne, takie jak kąt wyświetlania lub oświetlenie kierunkowe. Aby sprawdzić, jak efekt reaguje na zmiany zmiennych, można swobodnie obrócić kształt w wersji zapoznawczej i obserwować zachowanie programu do cieniowania.
 
-Aby obrócić kształt, naciśnij i przytrzymaj **klawisz Alt**, a następnie zaznacz dowolny punkt na powierzchni projektowej i przesuń go.
+Aby obrócić kształt, naciśnij i przytrzymaj klawisz **Alt**, a następnie wybierz dowolny punkt na powierzchni projektowej i przenieś go.
 
-### <a name="export-shaders"></a>Eksportowanie modułów cieniujących
+### <a name="export-shaders"></a>Eksportowanie programów do cieniowania
 
-Aby można było użyć modułu cieniującego w aplikacji, należy go wyeksportować w formacie zrozumiałym dla programu DirectX.
+Zanim będzie można użyć programu do cieniowania w aplikacji, musisz go wyeksportować w formacie rozpoznawanym przez technologię DirectX.
 
-Programy cieniowania można eksportować jako kod źródłowy HLSL lub jako skompilowany kod bajtowy modułu cieniującego. Kod źródłowy HLSL jest eksportowany do pliku tekstowego z rozszerzeniem nazwy pliku *.hlsl.* Kod bajtowy modułu cieniującego można wyeksportować albo do surowego pliku binarnego z rozszerzeniem nazwy pliku *cso,* albo do pliku nagłówka C++ (*.h),* który koduje bajtowy moduł cieniujący do tablicy.
+Program do cieniowania można eksportować jako kod źródłowy HLSL lub w postaci kodu bajtowego skompilowanego programu do cieniowania. Kod źródłowy HLSL jest eksportowany do pliku tekstowego, który ma rozszerzenie nazwy pliku *. HLSL* . Kod bajtowy programu do cieniowania można wyeksportować do pliku binarnego RAW, który ma rozszerzenie nazwy pliku *. CSO* lub do pliku nagłówkowego C++ (*. h*), który koduje kod bajtowy modułu cieniującego do tablicy.
 
-Aby uzyskać więcej informacji na temat eksportowania modułów cieniowania, zobacz [Jak: Eksportowanie modułu cieniującego](../designers/how-to-export-a-shader.md).
+Aby uzyskać więcej informacji o sposobach eksportowania programów do cieniowania, zobacz [How to: Export a Shader](../designers/how-to-export-a-shader.md).
 
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
 |Polecenie|Skróty klawiaturowe|
 |-------------| - |
-|Przełączanie do trybu **wyboru**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
-|Przełączanie do trybu **powiększenia**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
-|Przełączanie do trybu **przesuwania**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
-|Zaznacz wszystkie|**Ctrl**+**A**|
-|Usuń bieżące zaznaczenie|**Usuwanie**|
-|Anuluj bieżące zaznaczenie|**Ucieczka** (**Esc**)|
-|Powiększanie|**Ctrl**+**Kółko myszy do przodu**<br /><br /> Znak Plus**+**( )|
-|Pomniejszanie|**Ctrl**+**Kółko myszy do tyłu**<br /><br /> Znak minus**-**( )|
-|Przesuwanie powierzchni projektowej w górę|**Obrót kółkiem myszy do tyłu**<br /><br /> **PageDown**|
-|Przesuwanie powierzchni projektowej w dół|**Obrót kółkiem myszy do przodu**<br /><br /> **PageUp**|
-|Przesuwanie powierzchni projektowej w lewo|**Shift**+**Kółko myszy do tyłu**<br /><br /> **Ruch kółkiem myszy w lewo**<br /><br /> **Przesuń**+**pagedown**|
-|Przesuwanie powierzchni projektowej w prawo|**Przesunięcie**+**kółka myszy do przodu**<br /><br /> **Ruch kółkiem myszy w prawo**<br /><br /> **Przesunięcie**+**strony**|
-|Przenoszenie fokusu klawiatury do innego węzła|Klawisze **strzałek**|
-|Wybierz węzeł, który ma fokus klawiatury (dodaje węzeł do grupy wyboru)|**Spacja shift**+**Spacebar**|
-|Przełączanie zaznaczenia węzła z fokusem klawiatury|**Spacja Ctrl**+**Spacebar**|
-|Przełączanie bieżącego zaznaczenia (jeśli nie wybrano żadnych węzłów, wybierz węzeł z fokusem klawiatury)|**Spacja**|
-|Przenoszenie bieżącego zaznaczenia w górę|**Strzałka shift**+**w górę**|
-|Przenoszenie bieżącego zaznaczenia w dół|**Strzałka shift**+**w dół**|
-|Przenoszenie bieżącego zaznaczenia w lewo|**Przesunięcie**+**strzałki w lewo**|
-|Przenoszenie bieżącego zaznaczenia w prawo|**Shift**+**Strzałka w prawo**.|
+|Przełącz do trybu **wyboru**|**Ctrl** + **G**, **Ctrl** + **Q**<br /><br /> **S**|
+|Przełącz do trybu **powiększenia**|**Ctrl** + **G**, **Ctrl** + **Z**<br /><br /> **Z**|
+|Przełącz do trybu **kadrowania**|**Ctrl** + **G**, **Ctrl** + **P**<br /><br /> **K**|
+|Zaznacz wszystko|**Ctrl** + **A**|
+|Usuń bieżące zaznaczenie|**Usuń**|
+|Anuluj bieżące zaznaczenie|**Escape** (**ESC**)|
+|Powiększanie|**Ctrl** + **Kółko myszy do przodu**<br /><br /> Znak plus ( **+** )|
+|Pomniejszanie|**Ctrl** + **Kółko myszy do tyłu**<br /><br /> Znak minus ( **-** )|
+|Przesuń powierzchnię projektu w górę|**Obrót kółkiem myszy do tyłu**<br /><br /> **PageDown**|
+|Przesuń powierzchnię projektu w dół|**Obrót kółkiem myszy do przodu**<br /><br /> **PageUp**|
+|Przesuń powierzchnię projektu w lewo|**SHIFT** + **Kółko myszy do tyłu**<br /><br /> **Ruch kółkiem myszy w lewo**<br /><br /> **SHIFT** + **PageDown**|
+|Przesuń powierzchnię projektu w prawo|**SHIFT** + **Kółko myszy do przodu**<br /><br /> **Ruch kółkiem myszy w prawo**<br /><br /> **SHIFT** + **PageUp**|
+|Przesuwanie fokusu klawiatury do innego węzła|Klawisze **strzałek**|
+|Wybierz węzeł, który ma fokus klawiatury (dodaje węzeł do grupy wyboru)|**SHIFT** + **Spacja**|
+|Przełącz zaznaczenie węzła, który ma fokus klawiatury|**Ctrl** + **Spacja**|
+|Przełącz bieżące zaznaczenie (jeśli nie wybrano żadnych węzłów, zaznacz węzeł z fokusem klawiatury)|**Spacja**|
+|Przenieś bieżące zaznaczenie w górę|**SHIFT** + **Strzałka w górę**|
+|Przenieś bieżące zaznaczenie w dół|**SHIFT** + **Strzałka w dół**|
+|Przenieś bieżące zaznaczenie w lewo|**SHIFT** + **Strzałka w lewo**|
+|Przenieś bieżące zaznaczenie w prawo|**SHIFT** + **Strzałka w prawo**.|
 
 ## <a name="related-topics"></a>Powiązane tematy
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Praca z zasobami 3D w grach i aplikacjach](../designers/working-with-3-d-assets-for-games-and-apps.md)|Zawiera omówienie narzędzi programu Visual Studio, których można używać do pracy z teksturami i obrazami, modelami 3D i efektami modułu cieniującego.|
-|[Edytor obrazów](../designers/image-editor.md)|W tym artykule opisano, jak używać Edytora obrazów programu Visual Studio do pracy z teksturami i obrazami.|
-|[Edytor modeli](../designers/model-editor.md)|W tym artykule opisano sposób korzystania z Edytora modeli programu Visual Studio do pracy z modelami 3D.|
+|[Praca z zasobami 3W dla gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Zawiera przegląd narzędzi programu Visual Studio, których można użyć do pracy z teksturami i obrazami, modelami 3W i efektami cieniowania.|
+|[Edytor obrazów](../designers/image-editor.md)|Opisuje, jak używać edytora obrazów programu Visual Studio do pracy z teksturami i obrazami.|
+|[Edytor modelu](../designers/model-editor.md)|Opisuje sposób używania Edytora modelu programu Visual Studio do pracy z modelami 3W.|

@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetAddressesFromContext | Dokumenty firmy Microsoft
+title: 'IDebugSymbolProvider:: GetAddressesFromContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7cf7599cf0fc37c16467c29c2b432f1f58b172fe
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719433"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
@@ -47,24 +47,24 @@ int GetAddressesFromContext(
 
 ## <a name="parameters"></a>Parametry
 `pDocContext`\
-[w] Kontekst dokumentu.
+podczas Kontekst dokumentu.
 
 `fStatmentOnly`\
-[w] Jeśli true, ogranicza adresy debugowania do pojedynczej instrukcji.
+podczas W przypadku wartości TRUE program ogranicza adresy debugowania do pojedynczej instrukcji.
 
 `ppEnumBegAddresses`\
-[na zewnątrz] Zwraca wyliczenia dla początkowych adresów debugowania skojarzonych z tą instrukcją lub wierszem.
+określoną Zwraca moduł wyliczający dla początkowych adresów debugowania skojarzonych z tą instrukcją lub wierszem.
 
 `ppEnumEndAddresses`\
-[na zewnątrz] Zwraca [wyliczenia IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) dla końcowego adresów debugowania skojarzonych z tą instrukcją lub wierszem.
+określoną Zwraca moduł wyliczający [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) dla końcowych adresów debugowania skojarzonych z tą instrukcją lub wierszem.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Kontekst dokumentu zazwyczaj wskazuje zakres wierszy źródłowych. Ta metoda zawiera początkowe i końcowe adresy debugowania skojarzone z tymi wierszami. Niektóre języki zezwalają na instrukcje, które obejmują wiele wierszy lub wierszy, które zawierają więcej niż jedną instrukcję. Ta metoda zapewnia flagę, aby ograniczyć adresy debugowania do pojedynczej instrukcji.
+ Kontekst dokumentu zwykle wskazuje zakres wierszy źródłowych. Ta metoda zapewnia początkową i końcową adresy debugowania skojarzone z tymi wierszami. Niektóre języki umożliwiają stosowanie instrukcji obejmujących wiele wierszy lub wierszy zawierających więcej niż jedną instrukcję. Ta metoda zapewnia flagę, aby ograniczyć adresy debugowania do pojedynczej instrukcji.
 
- Jest możliwe dla pojedynczej instrukcji mieć wiele adresów debugowania, jak w przypadku szablonów.
+ Istnieje możliwość, że pojedyncza instrukcja ma wiele adresów debugowania, tak jak w przypadku szablonów.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

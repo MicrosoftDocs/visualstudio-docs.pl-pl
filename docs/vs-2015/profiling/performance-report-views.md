@@ -1,5 +1,5 @@
 ---
-title: Widoki raportu wydajności | Dokumentacja firmy Microsoft
+title: Widoki raportów wydajności | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,38 +14,38 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3390a2b38e82fc89a73a5ced82ef96d7c638a95a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161989"
 ---
 # <a name="performance-report-views"></a>Widoki raportu wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ta sekcja zawiera informacje dotyczące raportów i widoków [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools. Widoki pliku danych profilowania są wyświetlane w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] zintegrowane environmentIDE rozwoju. Raporty są generowane przez [VSPerfReport](../profiling/vsperfreport.md) narzędzie wiersza polecenia.  
+Ta sekcja zawiera informacje dotyczące raportów i widoków [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] narzędzia profilowania. Widoki plików danych profilowania są wyświetlane w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] zintegrowanych environmentIDE programistycznych. Raporty są generowane za pomocą narzędzia wiersza polecenia [VSPerfReport](../profiling/vsperfreport.md) .  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Wspólne widoki danych](../profiling/common-data-views.md)  
- Informacje o odwołaniach dotyczące widoków i raportów plików danych, które są wspólne dla wszystkich metod profilowania do profilowania.  
+ [Widok typowych danych](../profiling/common-data-views.md)  
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilowania wspólnych dla wszystkich metod profilowania.  
   
  [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)  
- Informacje o odwołaniach dotyczące widoków i raportów plików danych, które są generowane przy użyciu metody pobierania próbek profilowania.  
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilowania, które są generowane przy użyciu metody próbkowania.  
   
- [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)  
- Informacje o odwołaniach dotyczące widoków i raportów plików danych, które są generowane przy użyciu metody Instrumentacji profilowania.  
+ [Widok danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)  
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilowania, które są generowane przy użyciu metody instrumentacji.  
   
- [Widoki danych pamięci platformy .NET](../profiling/dotnet-memory-data-views.md)  
- Informacje o odwołaniach dotyczące widoków i raportów plików danych, które zawierają dane pamięci platformy .NET do profilowania.  
+ [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)  
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilowania, które zawierają dane pamięci platformy .NET.  
   
- [Widoki danych rywalizacji o zasoby](../profiling/resource-contention-data-views.md)  
- Informacje o odwołaniach dotyczące widoków i raportów plików danych, które są generowane przy użyciu metody współbieżności profilowania.  
+ [Widok danych kontencji zasobów](../profiling/resource-contention-data-views.md)  
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilowania, które są generowane przy użyciu metody współbieżności.  
   
  [Concurrency Visualizer](../profiling/concurrency-visualizer.md)  
- Informacje referencyjne dotyczące widoków i raportów plików danych, które są generowane przy użyciu metody współbieżności i że profilowania obejmują danych wykonanie wątku.  
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilowania, które są generowane przy użyciu metody współbieżności, które obejmują dane wykonania wątku.  
   
- [Widok interakcji między warstwami](../profiling/tier-interactions-view.md)  
- Informacje referencyjne dotyczące widok interakcji i raportów plików danych, które zawierają dane interakcji między warstwami profilowania.  
+ [Widok interakcji warstwowych](../profiling/tier-interactions-view.md)  
+ Informacje referencyjne dotyczące widoku interakcji i raportu o plikach danych profilowania, które obejmują dane interakcji między warstwami.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)

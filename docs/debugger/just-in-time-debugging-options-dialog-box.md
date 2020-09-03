@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c27ec66c8165995c6877b9a9e65802813140c7f2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731609"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Just-in-time, debugowanie, opcje ― Okno dialogowe
@@ -32,29 +32,29 @@ Aby uzyskać dostęp do strony **just-in-Time** , przejdź do menu **Narzędzia*
 
  Debugowanie just in Time dla tych typów programów można włączyć:
 
-- zarządzanych
+- Zarządzany
 
-- Natywne
+- Natywna
 
-- napisy
+- Skrypt
 
-  Debugowanie just in Time to technika debugowania programu, który jest uruchamiany poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Można uruchomić program utworzony w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poza środowiskiem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Jeśli włączono debugowanie just-in-Time, w przypadku awarii zostanie wyświetlone okno dialogowe z pytaniem, czy chcesz debugować.
+  Debugowanie just in Time to technika debugowania programu, który jest uruchamiany poza programem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Można uruchomić program utworzony [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] środowiskiem. Jeśli włączono debugowanie just-in-Time, w przypadku awarii zostanie wyświetlone okno dialogowe z pytaniem, czy chcesz debugować.
 
 ## <a name="associated-warnings"></a>Skojarzone ostrzeżenia
  Po odwiedzeniu tej strony okna dialogowego **Opcje** może zostać wyświetlony komunikat ostrzegawczy podobny do tego:
 
  **Inny debuger zarejestrował się jako debuger just in Time. Aby naprawić, Włącz debugowanie just in Time lub Uruchom naprawę programu Visual Studio.**
 
- Ten komunikat występuje, jeśli masz inny debuger, prawdopodobnie starszą wersję debugera [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ustawioną jako debuger just in Time.
+ Ten komunikat występuje, jeśli masz inny debuger, prawdopodobnie starszą wersję [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugera, ustawioną jako debuger just in Time.
 
  Może się pojawić kolejny komunikat:
 
  **Wykryto błędy rejestracji debugowania just in Time. Aby naprawić, Włącz debugowanie just in Time lub Uruchom naprawę programu Visual Studio.**
 
- Jeśli zobaczysz jedno z tych ostrzeżeń, debugowanie just in Time z [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] wymaga uprawnień administratora, dopóki problem nie zostanie rozwiązany. Jeśli spróbujesz włączyć opcję "tylko jako administrator" w tych warunkach, zobaczysz następujący komunikat o błędzie:
+ Jeśli zobaczysz jedno z tych ostrzeżeń, debugowanie just in Time w programie [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] wymaga uprawnień administratora, dopóki problem nie zostanie rozwiązany. Jeśli spróbujesz włączyć opcję "tylko jako administrator" w tych warunkach, zobaczysz następujący komunikat o błędzie:
 
  **Odmowa dostępu. Mieć uprawnienia administratora Włącz debugowanie just in Time lub Napraw instalację programu Visual Studio.**
 
-## <a name="see-also"></a>Zobacz także
-- [Debugowanie, Opcje, okno dialogowe](../debugger/debugging-options-dialog-box.md)
+## <a name="see-also"></a>Zobacz też
+- [Debugowanie, opcje ― Okno dialogowe](../debugger/debugging-options-dialog-box.md)
 - [Instrukcje: określanie ustawień debugera](../debugger/how-to-specify-debugger-settings.md)
