@@ -1,5 +1,5 @@
 ---
-title: Zadanie wyrejestrowania | Dokumenty firmy Microsoft
+title: UnregisterAssembly — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,35 +19,35 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f8cddcf9bf0632914d1a6de1cc904dbf0f173e6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631500"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly — zadanie
 
-Wyrejestrowanie określonych zestawów do celów współdziałanych COM. Wykonuje odwrotną stronę [zadania RegisterAssembly](../msbuild/registerassembly-task.md).
+Wyrejestrowuje określone zestawy na potrzeby współdziałania z modelem COM. Wykonuje odwrotność [zadania RegisterAssembly —](../msbuild/registerassembly-task.md).
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli `UnregisterAssembly` opisano parametry zadania.
+ W poniższej tabeli opisano parametry `UnregisterAssembly` zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`Assemblies`|Parametr <xref:Microsoft.Build.Framework.ITaskItem> `[]` opcjonalny.<br /><br /> Określa zestawy, które mają być wyrejestrowane.|
-|`AssemblyListFile`|Parametr <xref:Microsoft.Build.Framework.ITaskItem> opcjonalny.<br /><br /> Zawiera informacje o stanie `RegisterAssembly` między `UnregisterAssembly` zadaniem a zadaniem. Zapobiega to próbie wyrejestrowania zestawu, którego rejestracja `RegisterAssembly` w zadaniu nie powiodła się.<br /><br /> Jeśli ten parametr jest `Assemblies` `TypeLibFiles` określony, parametry i są ignorowane.|
-|`TypeLibFiles`|Opcjonalny parametr wyjściowy. <xref:Microsoft.Build.Framework.ITaskItem> `[]`<br /><br /> Wyrejestrowaje określoną bibliotekę typów z określonego zestawu. **Uwaga:**  Ten parametr jest niezbędny tylko wtedy, gdy nazwa pliku biblioteki typów jest inna niż nazwa zestawu.|
+|`Assemblies`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Określa zestawy do wyrejestrowania.|
+|`AssemblyListFile`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Zawiera informacje o stanie między `RegisterAssembly` zadaniem a `UnregisterAssembly` zadaniem. Zapobiega to próbie wyrejestrowania zestawu, którego nie udało się zarejestrować w `RegisterAssembly` zadaniu.<br /><br /> Jeśli ten parametr jest określony, `Assemblies` Parametry i `TypeLibFiles` są ignorowane.|
+|`TypeLibFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Wyrejestrowuje określoną bibliotekę typów z określonego zestawu. **Uwaga:**  Ten parametr jest wymagany tylko wtedy, gdy nazwa pliku biblioteki typów jest inna niż nazwa zestawu.|
 
 ## <a name="remarks"></a>Uwagi
 
- Nie jest wymagane, że zestaw istnieje dla tego zadania, aby zakończyć się pomyślnie. Jeśli spróbujesz wyrejestrować zestaw, który nie istnieje, zadanie zakończy się pomyślnie z ostrzeżeniem. Dzieje się tak, ponieważ jest zadaniem tego zadania, aby usunąć rejestrację zestawu z rejestru. Jeśli zestaw nie istnieje, nie jest w rejestrze, a zatem zadanie powiodło się.
+ Nie jest wymagane, aby zestaw istniał dla tego zadania. Jeśli spróbujesz wyrejestrować zestaw, który nie istnieje, zadanie zakończy się powodzeniem z ostrzeżeniem. Dzieje się tak, ponieważ jest to zadanie, aby usunąć rejestrację zestawu z rejestru. Jeśli zestaw nie istnieje, nie znajduje się w rejestrze, a tym samym zadanie zakończyło się pomyślnie.
 
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension> klasy, <xref:System.MarshalByRefObject> która sama dziedziczy z klasy. Klasa `MarshalByRefObject` zapewnia taką samą <xref:Microsoft.Build.Utilities.Task> funkcjonalność jak klasa, ale można utworzyć wystąpienia w własnej domenie aplikacji.
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension> klasy, która sama dziedziczy z <xref:System.MarshalByRefObject> klasy. `MarshalByRefObject`Klasa zapewnia taką samą funkcjonalność jak <xref:Microsoft.Build.Utilities.Task> Klasa, ale można ją utworzyć w swojej własnej domenie aplikacji.
 
 ## <a name="example"></a>Przykład
 
- W poniższym przykładzie `UnregisterAssembly` użyto zadania do wyrejestrowania zestawu na ścieżce określonej przez `OutputPath` i `FileName` właściwości, jeśli istnieje.
+ Poniższy przykład używa `UnregisterAssembly` zadania, aby wyrejestrować zestaw w ścieżce określonej przez `OutputPath` `FileName` właściwości i, jeśli istnieje.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -66,6 +66,6 @@ Wyrejestrowanie określonych zestawów do celów współdziałanych COM. Wykonuj
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Zarejestruj zadanie rejestrujasnajednak](../msbuild/registerassembly-task.md)
+- [RegisterAssembly — zadanie](../msbuild/registerassembly-task.md)
 - [Zadania](../msbuild/msbuild-tasks.md)
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

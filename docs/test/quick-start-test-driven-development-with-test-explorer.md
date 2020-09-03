@@ -1,5 +1,5 @@
 ---
-title: Przewodnik po rozwoju oparty na testach
+title: Wskazówki dotyczące programowania opartego na testach
 ms.date: 07/24/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -8,27 +8,27 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: a264975014fea88126bbca0589fe037e629dae10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75566283"
 ---
-# <a name="walkthrough-test-driven-development-using-test-explorer"></a>Instruktaż: Program rozwoju opartego na testach przy użyciu Eksploratora testów
+# <a name="walkthrough-test-driven-development-using-test-explorer"></a>Przewodnik: Programowanie sterowane testami za pomocą Eksploratora testów
 
-Tworzenie testów jednostkowych, aby pomóc zachować kod działa poprawnie poprzez zmiany kodu przyrostowego. Istnieje kilka struktur, których można używać do pisania testów jednostkowych, w tym niektóre opracowane przez strony trzecie. Niektóre struktury testów są wyspecjalizowane do testowania w różnych językach lub platformach. Eksplorator testów udostępnia jeden interfejs dla testów jednostkowych w dowolnej z tych struktur. Aby uzyskać więcej informacji na temat **Eksploratora testów,** zobacz [Uruchamianie testów jednostkowych z często zadawanymi pytaniami Eksploratora testów](run-unit-tests-with-test-explorer.md) i [Eksploratora testów](test-explorer-faq.md).
+Utwórz testy jednostkowe, aby zapewnić prawidłowe działanie kodu przez przyrostowe zmiany kodu. Istnieje kilka struktur, za pomocą których można pisać testy jednostkowe, w tym niektóre opracowane przez strony trzecie. Niektóre środowiska testowe są wyspecjalizowane do testowania w różnych językach lub platformach. Eksplorator testów udostępnia jeden interfejs dla testów jednostkowych w dowolnej z tych platform. Aby uzyskać więcej informacji na temat programu **Test Explorer**, zobacz [Uruchamianie testów jednostkowych za pomocą Eksploratora testów](run-unit-tests-with-test-explorer.md) i [Eksploratora testów — często zadawane pytania](test-explorer-faq.md).
 
-W tym przewodniku pokazano, jak opracować przetestowaną metodę w języku C# przy użyciu programu Microsoft Test Framework (MSTest). Można łatwo dostosować go do innych języków lub innych struktur testowych, takich jak NUnit. Aby uzyskać więcej informacji, zobacz [Instalowanie struktur testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
+W tym instruktażu przedstawiono sposób tworzenia przetestowanej metody w języku C# przy użyciu platformy Microsoft Test Framework (MSTest). Można łatwo dostosować ją do innych języków lub innych platform testowych, takich jak NUnit. Aby uzyskać więcej informacji, zobacz [Instalowanie platform testów jednostkowych](install-third-party-unit-test-frameworks.md)innych firm.
 
 ## <a name="create-a-test-and-generate-code"></a>Tworzenie testu i generowanie kodu
 
-1. Utwórz projekt biblioteki klas języka C# **(.NET Standard).** Ten projekt będzie zawierać kod, który chcemy przetestować. Nazwij projekt **MyMath**.
+1. Utwórz projekt **biblioteki klas C# (.NET standard)** . Ten projekt będzie zawierać kod, który chcemy przetestować. Nazwij projekt **Math**.
 
-2. W tym samym rozwiązaniu dodaj nowy projekt **testu MSTest (.NET Core).** Nazwij projekt testowy **MathTests**.
+2. W tym samym rozwiązaniu Dodaj nowy projekt **projektu testowego MSTest (.NET Core)** . Nazwij projekt testowy **MathTests**.
 
    ![Nowy kod i projekty testowe](../test/media/test-driven-development-ide.png)
 
-3. Napisz prostą metodę testową, która weryfikuje wynik uzyskany dla określonego wejścia. Dodaj następujący kod `UnitTest1` do klasy:
+3. Napisz prostą metodę testową, która weryfikuje wynik uzyskany dla konkretnego danych wejściowych. Dodaj następujący kod do `UnitTest1` klasy:
 
    ```csharp
    [TestMethod]
@@ -46,39 +46,39 @@ W tym przewodniku pokazano, jak opracować przetestowaną metodę w języku C# p
    }
    ```
 
-4. Generowanie typu z kodu testu.
+4. Generuj typ na podstawie kodu testu.
 
-   1. Umieść kursor na `Rooter`, a następnie z menu żarówki wybierz polecenie **Generuj typ "Rooter"** > **Generuj nowy typ**.
+   1. Umieść kursor na stronie `Rooter` , a następnie w menu żarówki wybierz polecenie **Generuj typ "Rooter"**  >  **Generuj nowy typ**.
 
-      ![Generowanie szybkiego działania nowego typu](media/test-driven-development-generate-new-type.png)
+      ![Generuj nowy typ szybka akcja](media/test-driven-development-generate-new-type.png)
 
-   2. W oknie dialogowym **Generowanie typu** ustaw pozycję **Project** na **MyMath**, projekt biblioteki klas, a następnie wybierz przycisk **OK**.
+   2. W oknie dialogowym **generowanie typu** ustaw wartość **Project** na **wyrażenie Math**, projekt biblioteki klas, a następnie wybierz **przycisk OK**.
 
-      ![Okno dialogowe Generowanie typu w programie Visual Studio 2019](media/test-driven-development-generate-type-dialog.png)
+      ![Okno dialogowe generowanie typu w programie Visual Studio 2019](media/test-driven-development-generate-type-dialog.png)
 
-5. Wygeneruj metodę z kodu testowego. Umieść kursor na `SquareRoot`, a następnie z menu żarówki wybierz opcję **Generuj metodę 'Rooter.SquareRoot'**.
+5. Generuj metodę z kodu testu. Umieść kursor na `SquareRoot` , a następnie w menu żarówki wybierz polecenie **Generuj metodę "Rooter. SquareRoot"**.
 
 6. Uruchom test jednostkowy.
 
-   1. Aby otworzyć **Eksploratora testów**w menu **Test,** wybierz polecenie**Eksplorator testów** **systemu Windows** > .
+   1. Aby otworzyć **Eksploratora testów**, w menu **test** wybierz polecenie **Windows**  >  **Eksplorator testów**systemu Windows.
 
-   2. W **Eksploratorze testów**wybierz przycisk **Uruchom wszystko,** aby uruchomić test.
+   2. W **Eksploratorze testów**wybierz przycisk **Uruchom wszystko** , aby uruchomić test.
 
-   Rozwiązanie tworzy, a test jest uruchamiany i kończy się niepowodzeniem.
+   Rozwiązanie zostanie skompilowane, a testy zakończą się niepowodzeniem.
 
 7. Wybierz nazwę testu.
 
-   Szczegóły testu są wyświetlane w okienku **Podsumowanie szczegółów testu.**
+   Szczegóły testu są wyświetlane w okienku **podsumowania szczegółów testu** .
 
    ![Podsumowanie szczegółów testu w Eksploratorze testów](media/test-driven-development-test-detail-summary.png)
 
-8. Wybierz górne łącze w obszarze **Śledzenie stosu,** aby przejść do lokalizacji, w której test nie powiódł się.
+8. Wybierz górny link w obszarze **ślad stosu** , aby przejść do lokalizacji, w której test zakończył się niepowodzeniem.
 
-W tym momencie utworzono test i skrótowy, który można zmodyfikować, tak aby test przebiegł pomyślnie.
+W tym momencie utworzono test i element zastępczy, który można zmodyfikować tak, aby test zakończył się powodzeniem.
 
 ## <a name="verify-a-code-change"></a>Weryfikowanie zmiany kodu
 
-1. W pliku *Class1.cs* poprawić `SquareRoot`kod:
+1. W pliku *Class1.cs* Popraw kod `SquareRoot` :
 
     ```csharp
     public double SquareRoot(double input)
@@ -87,20 +87,20 @@ W tym momencie utworzono test i skrótowy, który można zmodyfikować, tak aby 
     }
     ```
 
-2. W **Eksploratorze testów**wybierz pozycję **Uruchom wszystko**.
+2. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
 
-   Rozwiązanie tworzy, a test jest uruchamiany i przekazy.
+   Rozwiązanie zostanie skompilowane, a testy są wykonywane i przekazywane.
 
-   ![Eksplorator testów przedstawiający test zdawacyjny](../test/media/test-driven-development-passed-test.png)
+   ![Eksplorator testów z przekazaniem testu](../test/media/test-driven-development-passed-test.png)
 
-## <a name="extend-the-range-of-inputs"></a>Rozszerzenie zakresu wejść
+## <a name="extend-the-range-of-inputs"></a>Zwiększ zakres danych wejściowych
 
-Aby zwiększyć naszą pewność, że kod działa we wszystkich przypadkach, dodaj testy, które próbują szerszy zakres wartości wejściowych.
+Aby poprawić wiarygodność kodu we wszystkich przypadkach, należy dodać testy, które próbują uzyskać szerszy zakres wartości wejściowych.
 
 > [!TIP]
-> Należy unikać zmiany istniejących testów, które przechodzą. Zamiast tego dodaj nowe testy. Zmień istniejące testy tylko wtedy, gdy zmieniają się wymagania użytkownika. Ta zasada pomaga upewnić się, że nie utracisz istniejących funkcji podczas pracy nad rozszerzeniem kodu.
+> Należy unikać zmiany istniejących testów, które przechodzą pomyślnie. Zamiast tego Dodaj nowe testy. Zmień istniejące testy tylko wtedy, gdy wymagania dotyczące użytkownika zostały zmienione. Te zasady pomagają upewnić się, że nie utracisz istniejących funkcji podczas pracy w celu poszerzenia kodu.
 
-1. W klasie testowej dodaj następujący test, który próbuje zakresu wartości wejściowych:
+1. W klasie testowej Dodaj następujący test, który próbuje wykonać zakres wartości wejściowych:
 
     ```csharp
     [TestMethod]
@@ -124,11 +124,11 @@ Aby zwiększyć naszą pewność, że kod działa we wszystkich przypadkach, dod
     }
     ```
 
-2. W **Eksploratorze testów**wybierz pozycję **Uruchom wszystko**.
+2. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
 
-   Nowy test kończy się niepowodzeniem (chociaż pierwszy test nadal kończy się pomyślnie). Aby znaleźć punkt błędu, wybierz test nieudolny, a następnie spójrz na szczegóły w okienku **Podsumowanie szczegółów testu.**
+   Nowy test zakończy się niepowodzeniem (mimo że pierwszy test nadal przebiega). Aby znaleźć punkt awarii, wybierz test zakończony niepowodzeniem, a następnie sprawdź szczegóły w okienku **podsumowania szczegółów testu** .
 
-3. Sprawdź metodę w ramach testu, aby zobaczyć, co może być nie tak. Zmień `SquareRoot` kod w następujący sposób:
+3. Zbadaj badaną metodę, aby zobaczyć, co może być błędne. Zmień `SquareRoot` kod w następujący sposób:
 
     ```csharp
     public double SquareRoot(double input)
@@ -144,13 +144,13 @@ Aby zwiększyć naszą pewność, że kod działa we wszystkich przypadkach, dod
     }
     ```
 
-4. W **Eksploratorze testów**wybierz pozycję **Uruchom wszystko**.
+4. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
 
-   Oba testy teraz przechodzą.
+   Oba testy są teraz przekazywane.
 
-## <a name="add-tests-for-exceptional-cases"></a>Dodaj testy w wyjątkowych przypadkach
+## <a name="add-tests-for-exceptional-cases"></a>Dodawanie testów do wyjątkowych przypadków
 
-1. Dodaj nowy test dla danych wejściowych ujemnych:
+1. Dodaj nowy test dla negatywnych danych wejściowych:
 
     ```csharp
     [TestMethod]
@@ -169,15 +169,15 @@ Aby zwiększyć naszą pewność, że kod działa we wszystkich przypadkach, dod
     }
     ```
 
-2. W **Eksploratorze testów**wybierz pozycję **Uruchom wszystko**.
+2. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
 
-   Metoda w pętli testowej i musi być anulowana ręcznie.
+   Metoda testowa pętle i musi być anulowana ręcznie.
 
-3. Wybierz **pozycję Anuluj** na pasku narzędzi **Eksploratora testów**.
+3. Wybierz pozycję **Anuluj** na pasku narzędzi **Eksploratora testów**.
 
-   Test przestaje być wykonywany.
+   Test przerywa wykonywanie.
 
-4. Napraw `SquareRoot` kod, dodając `if` następującą instrukcję na początku metody:
+4. Popraw `SquareRoot` kod przez dodanie następującej `if` instrukcji na początku metody:
 
     ```csharp
     public double SquareRoot(double input)
@@ -189,20 +189,20 @@ Aby zwiększyć naszą pewność, że kod działa we wszystkich przypadkach, dod
         ...
     ```
 
-5. W **Eksploratorze testów**wybierz pozycję **Uruchom wszystko**.
+5. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
 
-   Wszystkie testy przechodzą.
+   Wszystkie testy zostały zakończone pomyślnie.
 
-## <a name="refactor-the-code-under-test"></a>Refaktoryzuje testowany kod
+## <a name="refactor-the-code-under-test"></a>Refaktoryzacja testowanego kodu
 
-Refaktoryzować kod, ale nie należy zmieniać testów.
+Refaktoryzacja kodu, ale nie zmieniaj testów.
 
 > [!TIP]
-> *Refaktoryzacji* jest zmiana, która ma na celu kod wykonać lepiej lub łatwiejsze do zrozumienia. Nie jest przeznaczony do zmiany zachowania kodu i dlatego testy nie są zmieniane.
+> *Refaktoryzacja* to zmiana, która jest przeznaczona do lepszego lub łatwiejszego zrozumienia kodu. Nie jest przeznaczone do zmiany zachowania kodu, dlatego testy nie są zmieniane.
 >
-> Zaleca się wykonywanie kroków refaktoryzacji oddzielnie od kroków rozszerzających funkcjonalność. Utrzymanie testów bez zmian daje pewność, że nie przypadkowo wprowadzono błędy podczas refaktoryzacji.
+> Zalecamy wykonanie czynności refaktoryzacji niezależnie od kroków rozszerzających funkcjonalność. Pozostawienie niezmienionych testów daje pewność, że podczas refaktoryzacji nie wprowadzono przypadkowo błędów.
 
-1. Zmień wiersz, który `result` oblicza w metodzie w `SquareRoot` następujący sposób:
+1. Zmień wiersz obliczany `result` w `SquareRoot` metodzie w następujący sposób:
 
     ```csharp
     public double SquareRoot(double input)
@@ -224,6 +224,6 @@ Refaktoryzować kod, ale nie należy zmieniać testów.
     }
     ```
 
-2. Wybierz **pozycję Uruchom wszystko**i sprawdź, czy wszystkie testy nadal przechodzą.
+2. Wybierz pozycję **Uruchom wszystkie**i sprawdź, czy wszystkie testy są nadal zakończone pomyślnie.
 
-   ![Eksplorator testów pokazujący 3 zdań testów](../test/media/test-driven-development-three-passed-tests.png)
+   ![Eksplorator testów przedstawiający 3 testy zakończone](../test/media/test-driven-development-three-passed-tests.png)

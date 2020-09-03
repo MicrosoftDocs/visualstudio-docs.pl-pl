@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: efabc8cd185daed4f018e3e4209e391b5bc39f44
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350449"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Sprawdzanie aplikacji za pomocą debugowania historycznego IntelliTrace w programie Visual Studio (C#, Visual Basic, C++)
@@ -57,7 +57,7 @@ Przyjęto założenie, że oczekiwana wartość `resultInt` po wywołaniu `AddAl
 
 2. Ustaw punkt przerwania w `Console.WriteLine(resultInt);` wierszu.
 
-3. Rozpocznij debugowanie. Kod jest wykonywany w punkcie przerwania. W oknie zmienne **lokalne** można zobaczyć, że wartość `resultInt` to 44.
+3. Uruchom debugowanie. Kod jest wykonywany w punkcie przerwania. W oknie zmienne **lokalne** można zobaczyć, że wartość `resultInt` to 44.
 
 4. Otwórz okno **Narzędzia diagnostyczne** (**debuguj > Pokaż narzędzia diagnostyczne**). Okno kod powinno wyglądać następująco:
 

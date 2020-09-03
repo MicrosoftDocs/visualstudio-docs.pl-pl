@@ -8,10 +8,10 @@ ms.date: 07/19/2019
 ms.topic: overview
 description: Poznaj pełen zakres korzyści dostępnych dla Ciebie w portalu subskrypcji programu Visual Studio
 ms.openlocfilehash: b2ace2416950336e7c4a872e378684d8160e2897
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85902884"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Korzystanie z portalu subskrybenta — my.visualstudio.com
@@ -25,7 +25,7 @@ Portal jest zorganizowany na sześć stron.  Każda Strona zapewnia dostęp do r
 ## <a name="benefits"></a>[Korzyści](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 Narzędzia i usługi dołączone do subskrypcji są wyświetlane jako "kafelki" na stronie korzyści.  Wszystkie korzyści nie są dostępne we wszystkich subskrypcjach. Kafelki są pogrupowane w trzy kategorie: narzędzia, programowanie profesjonalne i pomoc techniczna.  
 
-### <a name="tools"></a>Narzędzia
+### <a name="tools"></a>narzędzia
 Kategoria Tools to miejsce, w którym znajdziesz podstawowe narzędzia programistyczne, takie jak środowisko IDE programu Visual Studio, usługa Azure DevOps, a także narzędzia udostępniane przez naszych partnerów.  Zobaczysz również usługi, takie jak Azure i Visual Studio App Center.
 
 ### <a name="professional-development"></a>Profesjonalne programowanie

@@ -22,7 +22,7 @@
               href: lexical-hierarchy-of-symbol-types.md
             - name: Adnotacja
               href: annotation.md
-            - name: Blok
+            - name: Zablokowanie
               href: block.md
             - name: Jednostka kompilacji
               href: compiland.md

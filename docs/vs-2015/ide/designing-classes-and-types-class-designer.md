@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 03fae58a902da5bc9432c9ed2ed587dd7ddb4f5a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665769"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>Projektowanie klas i typów (Projektant klas)
@@ -28,7 +28,7 @@ Za pomocą **Projektant klas**, nie można wizualizować klas i typów, ale rów
 > Podczas pracy z Projektant klas należy sprawdzić kod, który emituje przed wykonaniem, aby upewnić się, że kod jest odpowiedni dla kontekstu zabezpieczeń.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Instrukcje: Tworzenie typów za pomocą Projektanta klas](../ide/how-to-create-types-by-using-class-designer.md)
+ [Porady: tworzenie typów za pomocą Projektanta klas](../ide/how-to-create-types-by-using-class-designer.md)
 
  Opisuje sposób użycia diagramu klas do utworzenia typu.
 
@@ -44,7 +44,7 @@ Za pomocą **Projektant klas**, nie można wizualizować klas i typów, ale rów
 
  Wyjaśnia, jak zdefiniować skojarzenie kolekcji w Projektant klas.
 
- [Tworzenie i konfigurowanie składowych typu (Projektant klas)](../ide/creating-and-configuring-type-members-class-designer.md)
+ [Tworzenie i konfigurowanie typów członków (Projektant klas)](../ide/creating-and-configuring-type-members-class-designer.md)
 
  Zawiera informacje i linki do tematów dotyczących tworzenia i konfigurowania elementów członkowskich typu przy użyciu Projektant klas.
 

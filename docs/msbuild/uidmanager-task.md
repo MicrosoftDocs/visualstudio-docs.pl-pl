@@ -1,5 +1,5 @@
 ---
-title: Zadanie UidManager | Dokumenty firmy Microsoft
+title: UidManager — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -20,27 +20,27 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 37692c541fb2a6e9b2ccf61083dd383e56a79766
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631526"
 ---
-# <a name="uidmanager-task"></a>Zadanie UidManager
+# <a name="uidmanager-task"></a>UidManager, zadanie
 
-Zadanie <xref:Microsoft.Build.Tasks.Windows.UidManager> sprawdza, aktualizuje lub usuwa unikatowe identyfikatory (UID), aby zlokalizować wszystkie elementy XAML, które są zawarte w źródłowych plikach XAML.
+<xref:Microsoft.Build.Tasks.Windows.UidManager>Zadanie sprawdza, aktualizuje lub usuwa unikatowe identyfikatory (UID) w celu zlokalizowania wszystkich elementów XAML, które są zawarte w źródłowym pliku XAML.
 
 ## <a name="task-parameters"></a>Parametry zadania
 
 | Parametr | Opis |
 |-------------------------| - |
-| `IntermediateDirectory` | Opcjonalny parametr **String.**<br /><br /> Określa katalog używany do utworzenia kopii zapasowej źródłowych plików XAML określonych przez parametr **MarkupFiles.** |
-| `MarkupFiles` | Wymagany parametr **ITaskItem[].**<br /><br /> Określa źródłowe pliki XAML, które mają być dołączane do sprawdzania, aktualizowania lub usuwania UID. |
-| `Task` | Wymagany parametr **String.**<br /><br /> Określa zadanie zarządzania identyfikatorem UID, które chcesz wykonać. Prawidłowe opcje **to Sprawdź,** **Aktualizuj**lub **Usuń**. |
+| `IntermediateDirectory` | Opcjonalny parametr **ciągu** .<br /><br /> Określa katalog, który jest używany do tworzenia kopii zapasowej źródłowych plików XAML, które są określone przez parametr **MarkupFiles** . |
+| `MarkupFiles` | Wymagany parametr **ITaskItem []** .<br /><br /> Określa pliki źródłowe XAML, które mają być używane do sprawdzania UID, aktualizowania lub usuwania. |
+| `Task` | Wymagany parametr **ciągu** .<br /><br /> Określa zadanie zarządzania UID, które ma zostać wykonane. Prawidłowe opcje to **check**, **Update**lub **Remove**. |
 
 ## <a name="example"></a>Przykład
 
- W poniższym przykładzie <xref:Microsoft.Build.Tasks.Windows.UidManager> użyto zadania, aby sprawdzić, czy określone źródłowe pliki XAML zawierają elementy XAML, które mają odpowiednie identyfikatory UID.
+ Poniższy przykład używa zadania, <xref:Microsoft.Build.Tasks.Windows.UidManager> Aby sprawdzić, czy określone źródłowe pliki XAML zawierają elementy XAML, które mają odpowiednie identyfikatory UID.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -59,8 +59,8 @@ Zadanie <xref:Microsoft.Build.Tasks.Windows.UidManager> sprawdza, aktualizuje lu
 ## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
-- [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)
-- [Odwołanie do budynku MSBuild](../msbuild/msbuild-reference.md)
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/wpf-msbuild-task-reference.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)
 - [Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
-- [Jak: Lokalizuj aplikację](/dotnet/framework/wpf/advanced/how-to-localize-an-application)
+- [Instrukcje: lokalizowanie aplikacji](/dotnet/framework/wpf/advanced/how-to-localize-an-application)

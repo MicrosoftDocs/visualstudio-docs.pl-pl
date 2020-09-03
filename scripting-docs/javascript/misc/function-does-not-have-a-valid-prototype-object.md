@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ca6f13620bb486cf1663bd5bef9a9a93b2c8a480
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817362"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>Funkcja nie zawiera prawidłowego prototypu obiektu
@@ -28,6 +28,6 @@ Podjęto próbę użycia **InstanceOf** , aby określić, czy obiekt pochodzi z 
   
 - Upewnij się, że `prototype` Właściwość funkcji odwołuje się do prawidłowego [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] obiektu.  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Obiekt Function](../../javascript/reference/function-object-javascript.md)   
  [prototype, właściwość (Object)](../../javascript/reference/prototype-property-object-javascript.md)

@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7533c205b95b016c43bd2eef614b4c2825596e74
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85835657"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Wskazówki: programowe przechwytywanie informacji graficznych
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Przewodnik: programowe przechwytywanie informacji graficznych
 Diagnostyka grafiki umożliwia programowe [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Przechwytywanie informacji graficznych z aplikacji Direct3D.
 
 Przechwytywanie programistyczne jest przydatne w scenariuszach takich jak:
@@ -25,7 +25,7 @@ Przechwytywanie programistyczne jest przydatne w scenariuszach takich jak:
 
 - Wywoływanie `CaptureCurrentFrame` , gdy problem z renderowaniem jest trudny do przewidzenia i przechwycenia w testowaniu ręcznym, ale można go przewidzieć programowo przy użyciu informacji o stanie aplikacji w czasie wykonywania.
 
-## <a name="programmatic-capture-in-windows-10"></a><a name="CaptureDX11_2"></a>Przechwycenie programowe w systemie Windows 10
+## <a name="programmatic-capture-in-windows-10"></a><a name="CaptureDX11_2"></a> Przechwycenie programowe w systemie Windows 10
 Ta część przewodnika przedstawia programowe przechwytywanie w aplikacjach korzystających z interfejsu API DirectX 11,2 w systemie Windows 10, który używa niezawodnej metody przechwytywania.
 
 W tej sekcji przedstawiono sposób wykonywania następujących zadań:
@@ -115,6 +115,6 @@ W tym instruktażu przedstawiono sposób programistycznego przechwytywania infor
 - Dowiedz się, jak analizować przechwycone informacje graficzne przy użyciu narzędzi Diagnostyka grafiki. Zobacz [Omówienie](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Zobacz też
-- [Przewodnik: przechwytywanie informacji graficznych](walkthrough-capturing-graphics-information.md)
+- [Przewodnik: Przechwytywanie informacji graficznych](walkthrough-capturing-graphics-information.md)
 - [Przechwytywanie informacji graficznych](capturing-graphics-information.md)
 - [Narzędzie wiersza polecenia do przechwytywania](command-line-capture-tool.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Wirtualizuj | Dokumenty firmy Microsoft
+title: 'IDebugPendingBreakpoint2:: Wirtualizacja | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7ad5aac997cf694a7cf8fa887ae63fbef54ca07f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725658"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
-Przełącza stan zwirtualizowany tego oczekującego punktu przerwania. Gdy oczekujący punkt przerwania jest zwirtualizowana, aparat debugowania spróbuje powiązać go za każdym razem, gdy nowy kod ładuje się do programu.
+Przełącza zwirtualizowany stan tego oczekującego punktu przerwania. Gdy jest zwirtualizowany oczekujący punkt przerwania, aparat debugowania podejmie próbę powiązania z nim za każdym razem, gdy nowy kod ładuje się do programu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,16 +42,16 @@ int Virtualize(
 
 ## <a name="parameters"></a>Parametry
 `fVirtualize`\
-[w] Ustaw na nonzero (`TRUE`), aby zwirtualizować`FALSE`oczekujący punkt przerwania lub zero ( ), aby wyłączyć wirtualizację.
+podczas Ustaw na wartość różną od zera ( `TRUE` ), aby przeprowadzić wirtualizację oczekującego punktu przerwania, lub zero ( `FALSE` ), aby wyłączyć wirtualizację.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` wartość, jeśli punkt przerwania został usunięty.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` czy punkt przerwania został usunięty.
 
 ## <a name="remarks"></a>Uwagi
-Zwirtualizowany punkt przerwania jest powiązany za każdym razem, gdy kod jest ładowany.
+Zwirtualizowany punkt przerwania jest powiązany za każdym razem, gdy ładowany jest kod.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak `CPendingBreakpoint` zaimplementować tę metodę dla prostego obiektu, który udostępnia interfejs [IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CPendingBreakpoint` obiektu, który uwidacznia Interfejs [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .
 
 ```cpp
 HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)

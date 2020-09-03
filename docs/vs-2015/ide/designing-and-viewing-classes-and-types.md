@@ -18,16 +18,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6cfedaa51ef62b5a9519a7aef23b942d6c1e5f6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665781"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Projektowanie i tworzenie klas i typów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zaprojektowanie, wizualizowanie i Refaktoryzacja klas oraz innych typów w kodzie przy użyciu Projektant klas w programie Visual Studio. Za pomocą diagramów klas można tworzyć i edytować klasy w C# programie Visual .net, Visual Basic .NET C++ lub w projekcie, lepiej zrozumieć strukturę projektu lub zreorganizować kod.
+Zaprojektowanie, wizualizowanie i Refaktoryzacja klas oraz innych typów w kodzie przy użyciu Projektant klas w programie Visual Studio. Za pomocą diagramów klas można tworzyć i edytować klasy w projekcie Visual C# .NET, Visual Basic .NET lub C++, lepiej zrozumieć strukturę projektu lub zreorganizować kod.
 
  Poniżej przedstawiono więcej informacji o tym, co można zrobić za pomocą diagramów klas:
 

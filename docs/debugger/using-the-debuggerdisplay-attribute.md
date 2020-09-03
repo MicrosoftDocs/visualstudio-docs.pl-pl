@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418785"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Poinformuj debugera, co ma być wyświetlane przy użyciu atrybutu DebuggerDisplay (C#, Visual Basic, F #, C++/CLI)
@@ -42,7 +42,7 @@ W poniższej tabeli przedstawiono niektóre możliwe zastosowania `DebuggerDispl
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Używane dla typu z polami `x` i `y` .|`x = 5 y = 18`|
 |`[DebuggerDisplay("String value is {getString()}")]`Składnia parametru może się różnić w różnych językach. Z tego względu należy z nich korzystać.|`String value is [5, 6, 6]`|
 
-`DebuggerDisplay`może również akceptować nazwane parametry.
+`DebuggerDisplay` może również akceptować nazwane parametry.
 
 |Parametry|Przeznaczenie|
 |----------------|-------------|

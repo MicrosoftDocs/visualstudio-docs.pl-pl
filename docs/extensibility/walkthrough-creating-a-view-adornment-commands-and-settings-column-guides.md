@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905042"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Przewodnik: Tworzenie zakończenia, poleceń i ustawień widoku (prowadnice kolumn)
@@ -1201,7 +1201,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-`GetCurrentEditorColumn`musi Dig trochę, aby uzyskać <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> wgląd w kod.  W przypadku śledzenia przez `GetActiveTextView` , `GetActiveView` , i `GetTextViewFromVsTextView` , można zobaczyć, jak to zrobić. Poniższy kod jest podzielnym kodem, rozpoczynając od bieżącego zaznaczenia, a następnie pobierając ramkę zaznaczenia, a następnie pobierając DocView ramki jako <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> , a następnie pobierając <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> z IVsTextView, a następnie pobierając hosta widoku i na końcu element iwpftextview:
+`GetCurrentEditorColumn` musi Dig trochę, aby uzyskać <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> wgląd w kod.  W przypadku śledzenia przez `GetActiveTextView` , `GetActiveView` , i `GetTextViewFromVsTextView` , można zobaczyć, jak to zrobić. Poniższy kod jest podzielnym kodem, rozpoczynając od bieżącego zaznaczenia, a następnie pobierając ramkę zaznaczenia, a następnie pobierając DocView ramki jako <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> , a następnie pobierając <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> z IVsTextView, a następnie pobierając hosta widoku i na końcu element iwpftextview:
 
 ```csharp
    IVsMonitorSelection selection =

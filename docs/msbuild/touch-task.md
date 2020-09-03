@@ -1,5 +1,5 @@
 ---
-title: Zadanie dotykowe | Dokumenty firmy Microsoft
+title: Dotknięcie zadania | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 873783196a3eebdaca9cc4278b091e084c1488b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631656"
 ---
 # <a name="touch-task"></a>Touch — Zadanie
@@ -31,23 +31,23 @@ Ustawia czasy dostępu i modyfikacji plików.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli `Touch` opisano parametry zadania.
+ W poniższej tabeli opisano parametry `Touch` zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`AlwaysCreate`|Parametr `Boolean` opcjonalny.<br /><br /> Jeśli `true`, tworzy wszystkie pliki, które jeszcze nie istnieją.|
+|`AlwaysCreate`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` program utworzy wszystkie pliki, które jeszcze nie istnieją.|
 |`Files`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa kolekcję plików do dotknięcia.|
-|`ForceTouch`|Parametr `Boolean` opcjonalny.<br /><br /> Jeśli `true`program wymusza dotknięcie pliku, nawet jeśli pliki są tylko do odczytu.|
-|`Time`|Parametr `String` opcjonalny.<br /><br /> Określa czas inny niż bieżący czas. Format musi być formatem, który <xref:System.DateTime.Parse%2A> jest dopuszczalny dla metody.|
-|`TouchedFiles`|Opcjonalny parametr wyjściowy. <xref:Microsoft.Build.Framework.ITaskItem> `[]`<br /><br /> Zawiera kolekcję elementów, które zostały pomyślnie dotknął.|
+|`ForceTouch`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , wymusza działanie pliku, nawet jeśli pliki są tylko do odczytu.|
+|`Time`|Opcjonalny `String` parametr.<br /><br /> Określa godzinę inną niż bieżąca godzina. Format musi być formatem, który jest akceptowalny dla <xref:System.DateTime.Parse%2A> metody.|
+|`TouchedFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera kolekcję elementów, które zostały pomyślnie naruszone.|
 
 ## <a name="remarks"></a>Uwagi
 
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 
- W poniższym `Touch` przykładzie użyto zadania, aby zmienić czasy dostępu i modyfikacji plików określonych w kolekcji `Files` elementów i umieszcza listę pomyślnie dotknął plików w kolekcji `FilesTouched` elementów.
+ Poniższy przykład używa zadania, `Touch` Aby zmienić czasy dostępu i modyfikacji plików określonych w `Files` kolekcji elementów i umieszcza listę pomyślnie naruszonych plików w `FilesTouched` kolekcji elementów.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -70,4 +70,4 @@ Ustawia czasy dostępu i modyfikacji plików.
 ## <a name="see-also"></a>Zobacz też
 
 - [Zadania](../msbuild/msbuild-tasks.md)
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

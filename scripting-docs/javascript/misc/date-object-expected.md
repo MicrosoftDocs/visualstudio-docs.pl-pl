@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 969f2bcb578d74ac02a7bdaa6984de5948e49e27
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817609"
 ---
 # <a name="date-object-expected"></a>Oczekiwany obiekt Date
-Podjęto próbę wywołania metody **Date. prototype. ToString** lub **Date. prototype. valueOf** na obiekcie typu innego niż `Date` . Obiekt tego typu wywołania musi być typu `Date` . Przykład:  
+Podjęto próbę wywołania metody **Date. prototype. ToString** lub **Date. prototype. valueOf** na obiekcie typu innego niż `Date` . Obiekt tego typu wywołania musi być typu `Date` . Na przykład:  
   
 ```JavaScript  
 var o = new Object;  
@@ -34,7 +34,7 @@ o.f();
   
 - W obiektach typu należy wywoływać metody **Date. prototype. ToString** lub **Date. prototype. valueOf** `Date` .  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Date — obiekt](../../javascript/reference/date-object-javascript.md)   
  [getDate, Metoda (Date)](../../javascript/reference/getdate-method-date-javascript.md)   
  [Obiekty wewnętrzne](../../javascript/intrinsic-objects-javascript.md)

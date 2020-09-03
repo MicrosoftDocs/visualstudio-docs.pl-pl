@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField | Dokumenty firmy Microsoft
+title: IDebugPointerField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a69797cc513b96c364f0357f22788fc9bcd65657
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725593"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
@@ -29,25 +29,25 @@ IDebugPointerField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Dostawca symbolu implementuje ten interfejs do reprezentowania wskaźnika.
+ Dostawca symboli implementuje ten interfejs, aby reprezentować wskaźnik.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Użyj [QueryInterface,](/cpp/atl/queryinterface) aby uzyskać ten interfejs z interfejsu [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) jeśli [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) zwraca `FIELD_TYPE_POINTER`.
+ Użyj [polecenia QueryInterface](/cpp/atl/queryinterface) , aby uzyskać ten interfejs z interfejsu [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , jeśli zwraca wartość [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) `FIELD_TYPE_POINTER` .
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- Oprócz metod na `IDebugField` i `IDebugContainerField` interfejsy, ten interfejs implementuje następującą metodę:
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ Oprócz metod `IDebugField` `IDebugContainerField` interfejsów i, ten interfejs implementuje następujące metody:
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Zwraca [pole IDebugField](../../../extensibility/debugger/reference/idebugfield.md) opisujące obiekt docelowy wskaźnika.|
+|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) opisujący element docelowy wskaźnika.|
 
 ## <a name="remarks"></a>Uwagi
- W języku C/C++ wskaźnik może być kontenerem, jeśli jest używany z notacją tablicy. Na przykład, `char *pString` `pString` biorąc pod uwagę `char`, ma typ wskaźnika do . `pString[3]`ma typ kontenera, który jest `char` wskaźnikiem do który odwołuje się do czwartego elementu tego kontenera.
+ W C/C++, wskaźnik może być kontenerem, jeśli jest używany z notacją tablicową. Na przykład, `char *pString` `pString` ma typ wskaźnika do `char` . `pString[3]` ma typ kontenera, który jest wskaźnikiem `char` , który odwołuje się do czwartego elementu tego kontenera.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: sh.h
+ Nagłówek: sh. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

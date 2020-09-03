@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsEqual | Dokumenty firmy Microsoft
+title: 'IDebugObject:: IsEqual | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 13018e31fb5f8bed89a0a290d687360a605a855d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726506"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
@@ -43,16 +43,16 @@ int IsEqual(
 
 ## <a name="parameters"></a>Parametry
 `pObject`\
-[w] [Obiekt IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący obiekt do porównania.
+podczas Obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący obiekt, do którego ma zostać wykonane porównanie.
 
 `pfIsEqual`\
-[na zewnątrz] Zwraca wartość niezerową (`TRUE`), jeśli wartości obiektów są równe; w przeciwnym razie`FALSE`zwraca zero ( ).
+określoną Zwraca wartość różną od zera ( `TRUE` ), jeśli wartości obiektów są równe; w przeciwnym razie zwraca zero ( `FALSE` ).
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Zazwyczaj ta metoda można porównać adresy wartości `pObject` reprezentowanych przez parametr i ten obiekt [IDebugObject;](../../../extensibility/debugger/reference/idebugobject.md) jeśli adresy są równe, obiekty można uznać za równe.
+ Zazwyczaj ta metoda umożliwia porównanie adresów wartości reprezentowanych przez `pObject` parametr i ten obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) ; Jeśli adresy są równe, obiekty można traktować jako równe.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

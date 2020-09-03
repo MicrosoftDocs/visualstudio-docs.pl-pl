@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9530e7ec018a89c3648f61660a5651eddaace805
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817492"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Instrukcje: ustawianie punktów przerwania w przepływach pracy
@@ -38,7 +38,7 @@ Punkt przerwania ma trzy stany: *oczekujący*, *powiązany*i *błąd*. Gdy ustaw
 
    Alternatywnie można nacisnąć klawisz **F9** po zaznaczeniu działania lub można kliknąć prawym przyciskiem myszy działanie i wybrać **punkt przerwania**  >  **Wstaw punkt przerwania** w menu po kliknięciu prawym przyciskiem myszy.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie przepływów pracy za pomocą Projektanta przepływu pracy](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
 - [Instrukcje: Debugowanie kodu XAML za pomocą Projektanta przepływu pracy](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

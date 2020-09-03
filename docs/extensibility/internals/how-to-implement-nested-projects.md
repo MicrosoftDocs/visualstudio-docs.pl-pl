@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3b1ac3c147962b943499172435c3f601115d36a9
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905350"
 ---
 # <a name="how-to-implement-nested-projects"></a>Instrukcje: implementowanie projektów zagnieżdżonych
@@ -37,7 +37,7 @@ Gdy tworzysz zagnieżdżony typ projektu, istnieje kilka dodatkowych kroków, kt
 
 4. Projekt nadrzędny wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> metodę lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> metodę dla każdego z jego projektów podrzędnych.
 
-     Przekazujesz <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> do `AddVirtualProject` metody, aby wskazać, że wirtualny (zagnieżdżony) projekt powinien zostać dodany do okna projektu, wyłączony z kompilacji, dodany do kontroli kodu źródłowego i tak dalej. `VSADDVPFLAGS`pozwala kontrolować widoczność zagnieżdżonego projektu i wskazywać, jakie funkcje są z nią skojarzone.
+     Przekazujesz <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> do `AddVirtualProject` metody, aby wskazać, że wirtualny (zagnieżdżony) projekt powinien zostać dodany do okna projektu, wyłączony z kompilacji, dodany do kontroli kodu źródłowego i tak dalej. `VSADDVPFLAGS` pozwala kontrolować widoczność zagnieżdżonego projektu i wskazywać, jakie funkcje są z nią skojarzone.
 
      Jeśli załadujesz poprzednio istniejący projekt podrzędny, który ma identyfikator GUID projektu przechowywany w pliku projektu projektu nadrzędnego, nastąpiło wywołanie projektu nadrzędnego `AddVirtualProjectEx` . Jedyną różnicą między `AddVirtualProject` i `AddVirtualProjectEX` jest, która `AddVirtualProjectEX` ma parametr umożliwiający projektowi nadrzędnemu Określanie wystąpienia `guidProjectID` dla projektu podrzędnego w celu włączenia <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> prawidłowego działania.
 
@@ -45,7 +45,7 @@ Gdy tworzysz zagnieżdżony typ projektu, istnieje kilka dodatkowych kroków, kt
 
 5. IDE wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> metodę dla każdego projektu podrzędnego projektu nadrzędnego.
 
-     Projekt nadrzędny musi być zaimplementowany, `IVsParentProject` Jeśli chcesz zagnieżdżać projekty. Ale projekt nadrzędny nigdy nie wywołuje się, `QueryInterface` `IVsParentProject` nawet jeśli zawiera projekty nadrzędne poniżej. Rozwiązanie obsługuje wywołanie do `IVsParentProject` i, jeśli jest zaimplementowane, wywołuje `OpenChildren` Tworzenie zagnieżdżonych projektów. `AddVirtualProjectEX`jest zawsze wywoływana z `OpenChildren` . Nie powinien być nigdy wywoływany przez projekt nadrzędny, aby zachować zdarzenia tworzenia hierarchii w kolejności.
+     Projekt nadrzędny musi być zaimplementowany, `IVsParentProject` Jeśli chcesz zagnieżdżać projekty. Ale projekt nadrzędny nigdy nie wywołuje się, `QueryInterface` `IVsParentProject` nawet jeśli zawiera projekty nadrzędne poniżej. Rozwiązanie obsługuje wywołanie do `IVsParentProject` i, jeśli jest zaimplementowane, wywołuje `OpenChildren` Tworzenie zagnieżdżonych projektów. `AddVirtualProjectEX` jest zawsze wywoływana z `OpenChildren` . Nie powinien być nigdy wywoływany przez projekt nadrzędny, aby zachować zdarzenia tworzenia hierarchii w kolejności.
 
 6. IDE wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> metodę w projekcie podrzędnym.
 
@@ -56,7 +56,7 @@ Gdy tworzysz zagnieżdżony typ projektu, istnieje kilka dodatkowych kroków, kt
      Jeśli jeszcze nie istnieje, projekt nadrzędny tworzy identyfikator GUID dla każdego zagnieżdżonego projektu przez wywołanie `CoCreateGuid` .
 
     > [!NOTE]
-    > `CoCreateGuid`jest interfejsem API modelu COM wywoływanym, gdy zostanie utworzony identyfikator GUID. Aby uzyskać więcej informacji, zobacz `CoCreateGuid` i identyfikatory GUID w bibliotece MSDN.
+    > `CoCreateGuid` jest interfejsem API modelu COM wywoływanym, gdy zostanie utworzony identyfikator GUID. Aby uzyskać więcej informacji, zobacz `CoCreateGuid` i identyfikatory GUID w bibliotece MSDN.
 
      Projekt nadrzędny przechowuje ten identyfikator GUID w pliku projektu do pobrania przy następnym otwarciu w środowisku IDE. Zobacz Krok 4, aby uzyskać więcej informacji dotyczących wywoływania programu w `AddVirtualProjectEX` celu pobrania `guidProjectID` dla projektu podrzędnego.
 

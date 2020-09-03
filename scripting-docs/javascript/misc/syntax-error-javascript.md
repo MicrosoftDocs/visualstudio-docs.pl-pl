@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5026e2a09d673ab18102db1079ca4ddf8c0da268
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817531"
 ---
 # <a name="syntax-error-javascript"></a>Błąd składniowy (JavaScript)
@@ -30,5 +30,5 @@ Utworzono instrukcję, która narusza co najmniej jedną regułę gramatyczną [
   
 - Poszukaj zniekształconych nawiasów lub nawiasów klamrowych.  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Error, obiekt](../../javascript/reference/error-object-javascript.md)

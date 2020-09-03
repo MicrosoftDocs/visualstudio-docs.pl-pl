@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 832dc3f7fea959ff4d2834aba921cd16f1117b5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666149"
 ---
 # <a name="generate-files-from-a-uml-model"></a>Generowanie plików na podstawie modelu UML
@@ -29,11 +29,11 @@ Z modelu UML można generować kod programu, schematy, dokumenty, zasoby i inne 
 
 - [Generowanie plików z aplikacji](#Application). Napiszesz aplikację, która odczytuje modele UML i generuje pliki.
 
-- [Generowanie w czasie projektowania](#Design). Model służy do definiowania niektórych funkcji aplikacji oraz generowania kodu, zasobów i tak dalej w ramach rozwiązania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]owego.
+- [Generowanie w czasie projektowania](#Design). Model umożliwia definiowanie niektórych funkcji aplikacji oraz generowanie kodu, zasobów i tak dalej w ramach [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania.
 
   Ten temat zostaje zakończony z omówieniem [sposobu korzystania z generowania tekstu](#What). Aby uzyskać więcej informacji, zobacz sekcję [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="Command"></a>Generowanie plików za pomocą polecenia menu
+## <a name="generating-files-from-a-menu-command"></a><a name="Command"></a> Generowanie plików za pomocą polecenia menu
  Możesz użyć wstępnie przetworzonych szablonów tekstowych w menu UML polecenia. W kodzie szablonu tekstu lub w oddzielnej klasie częściowej można odczytać model, który jest wyświetlany na diagramie.
 
  Aby uzyskać więcej informacji o tych funkcjach, przeczytaj następujące tematy:
@@ -47,9 +47,9 @@ Z modelu UML można generować kod programu, schematy, dokumenty, zasoby i inne 
   Podejście przedstawione w poniższym przykładzie jest odpowiednie do generowania tekstu z jednego modelu, po zainicjowaniu operacji z jednego z diagramów modelu. Aby przetworzyć model w osobnym kontekście, należy rozważyć użycie [programu Visual Studio ModelBus](../modeling/integrate-uml-models-with-other-models-and-tools.md) , aby uzyskać dostęp do modelu i jego elementów.
 
 ### <a name="example"></a>Przykład
- Aby uruchomić ten przykład, należy utworzyć projekt rozszerzenia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). Nazwa projektu użyta w tym przykładzie jest `VdmGenerator`. W pliku **source. Extension. vsixmanifest** kliknij pozycję **Dodaj zawartość** i Ustaw pole Typ na **MEF składnik** i ścieżkę źródłową odwołującą się do bieżącego projektu. Aby uzyskać więcej informacji na temat sposobu konfigurowania tego typu projektu, zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+ Aby uruchomić ten przykład, należy utworzyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projekt rozszerzenia (VSIX). Nazwa projektu, który jest używany w tym przykładzie, to `VdmGenerator` . W pliku **source. Extension. vsixmanifest** kliknij pozycję **Dodaj zawartość** i Ustaw pole Typ na **MEF składnik** i ścieżkę źródłową odwołującą się do bieżącego projektu. Aby uzyskać więcej informacji na temat sposobu konfigurowania tego typu projektu, zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
- Dodaj do projektu C# plik zawierający poniższy kod. Ta klasa definiuje polecenie menu, które będzie wyświetlane na diagramie klas UML.
+ Dodaj do projektu plik języka C#, który zawiera poniższy kod. Ta klasa definiuje polecenie menu, które będzie wyświetlane na diagramie klas UML.
 
 ```
 using System;
@@ -88,7 +88,7 @@ namespace VdmGenerator
 }
 ```
 
- Następujący plik jest szablonem tekstowym. Generuje wiersz tekstu dla każdej klasy UML w modelu i wiersz dla każdego atrybutu w każdej klasie. Kod służący do odczytywania modelu jest osadzony w tekście rozdzielonym przez `<# ... #>`.
+ Następujący plik jest szablonem tekstowym. Generuje wiersz tekstu dla każdej klasy UML w modelu i wiersz dla każdego atrybutu w każdej klasie. Kod służący do odczytywania modelu jest osadzony w tekście, rozdzielony przez `<# ... #>` .
 
  Aby utworzyć ten plik, kliknij prawym przyciskiem myszy projekt w Eksplorator rozwiązań, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **nowy element**. Wybierz **Szablon wstępnie przetworzonych tekstu**. Nazwa pliku dla tego przykładu powinna być **VdmGen.tt**. Właściwość **niestandardowego narzędzia** pliku powinna być **TextTemplatingFilePreprocessor**. Aby uzyskać więcej informacji na temat wstępnie przetworzonych szablonów tekstowych, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
@@ -109,7 +109,7 @@ Type <#= classElement.Name #> ::
 #>
 ```
 
- Szablon tekstu generuje klasę C# częściową, która wchodzi w skład projektu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. W osobnym pliku Dodaj kolejną deklarację częściową tej samej klasy. Ten kod zawiera szablon z dostępem do magazynu modeli UML:
+ Szablon tekstu generuje klasę częściową języka C#, która wchodzi w skład Twojego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. W osobnym pliku Dodaj kolejną deklarację częściową tej samej klasy. Ten kod zawiera szablon z dostępem do magazynu modeli UML:
 
 ```
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;
@@ -124,7 +124,7 @@ namespace VdmGenerator
 }
 ```
 
- Aby przetestować projekt, naciśnij klawisz **F5**. Zostanie uruchomione nowe wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. W tym przypadku Otwórz lub Utwórz model UML, który zawiera Diagram klas. Dodaj kilka klas do diagramu i Dodaj atrybuty do każdej klasy. Kliknij prawym przyciskiem myszy na diagramie, a następnie kliknij przykładowe polecenie `Generate VDM`. Polecenie tworzy plik `C:\Generated.txt`. Sprawdź ten plik. Jego zawartość powinna wyglądać podobnie do poniższego tekstu, ale zostanie wystawiona lista własnych klas i atrybutów:
+ Aby przetestować projekt, naciśnij klawisz **F5**. Zostanie uruchomione nowe wystąpienie programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . W tym przypadku Otwórz lub Utwórz model UML, który zawiera Diagram klas. Dodaj kilka klas do diagramu i Dodaj atrybuty do każdej klasy. Kliknij prawym przyciskiem myszy na diagramie, a następnie kliknij przykładowe polecenie `Generate VDM` . Polecenie tworzy plik `C:\Generated.txt` . Sprawdź ten plik. Jego zawartość powinna wyglądać podobnie do poniższego tekstu, ale zostanie wystawiona lista własnych klas i atrybutów:
 
 ```
 Type Class1 ::
@@ -134,15 +134,15 @@ Type Class2 ::
           Attribute3 : string
 ```
 
-## <a name="Application"></a>Generowanie plików z aplikacji
+## <a name="generating-files-from-an-application"></a><a name="Application"></a> Generowanie plików z aplikacji
  Można generować pliki z aplikacji, która odczytuje model UML. W tym celu najbardziej elastyczną i niezawodną metodą uzyskiwania dostępu do modelu i jego elementów jest [Visual Studio ModelBus](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
  Możesz również użyć podstawowego interfejsu API do załadowania modelu i przekazać model do szablonów tekstowych przy użyciu tych samych technik jak w poprzedniej sekcji. Aby uzyskać więcej informacji na temat ładowania modelu, zobacz [Odczytywanie modelu UML w kodzie programu](../modeling/read-a-uml-model-in-program-code.md).
 
-## <a name="Design"></a>Generowanie plików w czasie projektowania
+## <a name="generating-files-at-design-time"></a><a name="Design"></a> Generowanie plików w czasie projektowania
  Jeśli projekt ma standardową metodę interpretacji UML jako kod, można utworzyć szablony tekstowe, które umożliwiają generowanie kodu w projekcie z modelu UML. Zwykle istnieje rozwiązanie, które zawiera projekt modelu UML, oraz jeden lub więcej projektów dla kodu aplikacji. Każdy projekt kodu może zawierać kilka szablonów, które generują kod programu, zasoby i pliki konfiguracji na podstawie zawartości modelu. Deweloper może uruchomić wszystkie szablony, klikając przycisk **Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań. Kod programu jest zazwyczaj generowany w formie klas częściowych, aby ułatwić integrację części pisanych ręcznie.
 
- Projekt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tego rodzaju może być dystrybuowany w formie szablonu, dzięki czemu każdy członek zespołu może tworzyć projekty, które generują kod na podstawie modelu w ten sam sposób. Zazwyczaj szablon jest częścią pakietu rozszerzenia, który obejmuje ograniczenia walidacji w modelu, aby upewnić się, że spełniono warunki wstępne kodu generacji.
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Projekt tego rodzaju może być dystrybuowany w postaci szablonu, aby każdy członek zespołu mógł tworzyć projekty, które generują kod na podstawie modelu w ten sam sposób. Zazwyczaj szablon jest częścią pakietu rozszerzenia, który obejmuje ograniczenia walidacji w modelu, aby upewnić się, że spełniono warunki wstępne kodu generacji.
 
 ### <a name="outline-procedure-for-generating-files"></a>Procedura tworzenia konspektu dla generowania plików
 
@@ -156,18 +156,18 @@ Type Class2 ::
 
      Ustaw pole rozszerzenia zgodnie z językiem projektu.
 
-- Aby zezwolić na generowanie kodu w szablonie w celu uzyskania dostępu do modelu, należy napisać `<#@ assembly #>` dyrektywy dla zestawów wymaganych do odczytania modelu UML. Użyj `ModelingProject.LoadReadOnly()`, aby otworzyć model. Aby uzyskać więcej informacji, zobacz [Odczytywanie modelu UML w kodzie programu](../modeling/read-a-uml-model-in-program-code.md).
+- Aby zezwolić na generowanie kodu w szablonie w celu uzyskania dostępu do modelu, należy napisać `<#@ assembly #>` dyrektywy dla zestawów wymaganych do odczytania modelu UML. Użyj, `ModelingProject.LoadReadOnly()` Aby otworzyć model. Aby uzyskać więcej informacji, zobacz [Odczytywanie modelu UML w kodzie programu](../modeling/read-a-uml-model-in-program-code.md).
 
 - Szablon jest wykonywany po jego zapisaniu i kliknięciu przycisku **Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań.
 
 - Aby uzyskać więcej informacji na temat tego typu szablonu, zobacz [generowanie kodu w czasie projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
-- W typowym projekcie będziesz mieć kilka szablonów, które generują różne pliki z tego samego modelu. Pierwsza część każdego szablonu będzie taka sama. Aby zmniejszyć to duplikowanie, Przenieś typowe części do oddzielnego pliku tekstowego, a następnie Wywołaj je za pomocą dyrektywy `<#@include file="common.txt"#>` we wszystkich szablonach.
+- W typowym projekcie będziesz mieć kilka szablonów, które generują różne pliki z tego samego modelu. Pierwsza część każdego szablonu będzie taka sama. Aby zmniejszyć to duplikowanie, Przenieś typowe części do oddzielnego pliku tekstowego, a następnie Wywołaj je za pomocą dyrektywy `<#@include file="common.txt"#>` w każdym szablonie.
 
 - Można również zdefiniować wyspecjalizowany procesor dyrektywy, który umożliwia podanie parametrów dla procesu generowania tekstu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie transformacji tekstu T4](../modeling/customizing-t4-text-transformation.md).
 
 ### <a name="example"></a>Przykład
- Ten przykład generuje C# klasę dla każdej klasy UML w modelu źródłowym.
+ Ten przykład generuje klasę języka C# dla każdej klasy UML w modelu źródłowym.
 
 ##### <a name="to-set-up-a-visual-studio-solution-for-this-example"></a>Aby skonfigurować rozwiązanie Visual Studio na potrzeby tego przykładu
 
@@ -185,7 +185,7 @@ Type Class2 ::
 
 2. Utwórz projekt C# lub Visual Basic w tym samym rozwiązaniu.
 
-   - W Eksplorator rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy projekt**. W obszarze **zainstalowane szablony**kliknij pozycję **Visual Basic** lub  **C#Wizualizacja,** a następnie wybierz typ projektu, na przykład **Aplikacja konsolowa**.
+   - W Eksplorator rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy projekt**. W obszarze **zainstalowane szablony**kliknij pozycję **Visual Basic** lub **Visual C#,** a następnie wybierz typ projektu, na przykład **Aplikacja konsolowa**.
 
 3. Dodaj zwykły plik tekstowy do projektu C# lub Visual Basic. Ten plik będzie zawierać kod, który jest współużytkowany, jeśli chcesz napisać kilka szablonów tekstowych.
 
@@ -208,7 +208,7 @@ Type Class2 ::
    2. Rozwiń węzeł plik szablonu w Eksplorator rozwiązań.
 
 #### <a name="content-of-the-shared-text-file"></a>Zawartość udostępnionego pliku tekstowego
- W tym przykładzie plik ma nazwę SharedTemplateCode. txt i znajduje się w tym samym folderze co szablony tekstowe.
+ W tym przykładzie plik jest nazywany SharedTemplateCode.txt i znajduje się w tym samym folderze co szablony tekstowe.
 
 ```
 <# /* Common material for inclusion in my model templates */ #>
@@ -278,7 +278,7 @@ private IModelStore ModelStore
 ```
 
 #### <a name="content-of-the-text-template-file"></a>Zawartość pliku szablonu tekstu
- Następujący tekst jest umieszczany w pliku **TT** . Ten przykład generuje klasy w C# pliku z klas UML w modelu. Można jednak generować pliki dowolnego typu. Język wygenerowanego pliku nie jest powiązany z językiem, w którym napisano kod szablonu tekstu.
+ Następujący tekst jest umieszczany w pliku **TT** . Ten przykład generuje klasy w pliku C# z klas UML w modelu. Można jednak generować pliki dowolnego typu. Język wygenerowanego pliku nie jest powiązany z językiem, w którym napisano kod szablonu tekstu.
 
 ```
 <#@include file="SharedTemplateCode.txt"#>
@@ -296,7 +296,7 @@ namespace Test{
 }
 ```
 
-## <a name="What"></a>Jak używać generowania tekstu
+## <a name="how-to-use-text-generation"></a><a name="What"></a> Jak używać generowania tekstu
  Rzeczywista moc modelowania jest uzyskiwana w przypadku używania modeli do projektowania na poziomie wymagań lub architektury. Za pomocą szablonów tekstowych można wykonać kilka zadań związanych z konwertowaniem pomysłów wysokiego poziomu na kod. W wielu przypadkach nie prowadzi to do relacji jeden-do-jednego między elementami w modelach i klasach UML lub innymi częściami kodu programu.
 
  Ponadto transformacja zależy od domeny problemu. nie istnieje uniwersalne mapowanie między modelami i kodem.

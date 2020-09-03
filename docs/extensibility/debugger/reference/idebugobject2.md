@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2 | Dokumenty firmy Microsoft
+title: IDebugObject2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e468b5a282ffb5466d57a3c9b1a37aa3ae8643ed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726078"
 ---
 # <a name="idebugobject2"></a>IDebugObject2
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład ewaluatora zarządzanych wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniania wyrażeń jest przestarzały. Aby uzyskać informacje na temat implementowania oceniania wyrażeń CLR, zobacz [oszacowania wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykłady ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Ten interfejs zawiera dodatkowe informacje o obiekcie.
+ Ten interfejs zapewnia dodatkowe informacje na temat obiektu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,31 +32,31 @@ IDebugObject2 : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Oceniający wyrażenie implementuje ten interfejs, aby oferować obsługę aliasów i dostęp do informacji o obiekcie.
+ Ewaluatora wyrażeń implementuje ten interfejs, aby zaoferować obsługę aliasów i dostęp do informacji na temat obiektu.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Interfejs [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) można uzyskać ten interfejs za pomocą [QueryInterface](/cpp/atl/queryinterface). Ponadto [GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md) zwraca ten interfejs.
+ Interfejs [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) może uzyskać ten interfejs przy użyciu [polecenia QueryInterface](/cpp/atl/queryinterface). Ponadto [GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md) zwraca ten interfejs.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- Oprócz metod na interfejsie [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) `IDebugObject2` interfejs implementuje następujące czynności:
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ Oprócz metod interfejsu [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , `IDebugObject2` interfejs implementuje następujące elementy:
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetBackingFieldForProperty](../../../extensibility/debugger/reference/idebugobject2-getbackingfieldforproperty.md)|Pobiera pole lub zmienną (jeśli istnieje), które mogą być kopii zapasowej właściwości reprezentowane przez ten obiekt.|
+|[GetBackingFieldForProperty](../../../extensibility/debugger/reference/idebugobject2-getbackingfieldforproperty.md)|Pobiera pole lub zmienną (jeśli istnieje), która może tworzyć kopię zapasową Właściwości reprezentowanej przez ten obiekt.|
 |[GetICorDebugValue](../../../extensibility/debugger/reference/idebugobject2-geticordebugvalue.md)|Pobiera obiekt kodu zarządzanego reprezentujący wartość tego obiektu.|
 |[CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)|Tworzy unikatowy identyfikator dla tego obiektu lub zwraca istniejący alias.|
 |[GetAlias](../../../extensibility/debugger/reference/idebugobject2-getalias.md)|Pobiera alias skojarzony z tym obiektem, jeśli istnieje.|
 |[GetField](../../../extensibility/debugger/reference/idebugobject2-getfield.md)|Pobiera typ tego obiektu.|
 |[IsUserData](../../../extensibility/debugger/reference/idebugobject2-isuserdata.md)|Określa, czy ten obiekt reprezentuje dane użytkownika.|
-|[IsEncOutdated](../../../extensibility/debugger/reference/idebugobject2-isencoutdated.md)|Określa, czy stan Edytuj i Kontynuuj nie jest już prawidłowy.<br /><br /> Oceniający wyrażenie niestandardowe nie implementuje tej `E_NOTIMPL`metody (zawsze powinna zwracać).|
+|[IsEncOutdated](../../../extensibility/debugger/reference/idebugobject2-isencoutdated.md)|Określa, czy stan Edytuj i Kontynuuj nie jest już prawidłowy.<br /><br /> Niestandardowa ewaluatora wyrażeń nie implementuje tej metody (zawsze powinna zostać zwrócona `E_NOTIMPL` ).|
 
 ## <a name="remarks"></a>Uwagi
- Zobacz [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) do dyskusji na temat aliasów.
+ Zobacz [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) , aby poznać dyskusję na temat aliasów.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: ee.h
+ Nagłówek: EE. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

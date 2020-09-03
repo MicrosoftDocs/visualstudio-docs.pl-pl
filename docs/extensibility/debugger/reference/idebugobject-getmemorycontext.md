@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetMemoryContext | Dokumenty firmy Microsoft
+title: 'IDebugObject:: GetMemoryContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 16427685765c1471fba3993743efc204cb99c367
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726656"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
@@ -41,13 +41,13 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>Parametry
 `pContext`\
-[na zewnątrz] Zwraca obiekt [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) reprezentujący adres wartości obiektu.
+określoną Zwraca obiekt [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) reprezentujący adres wartości obiektu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Zwrócony kontekst pamięci określa adres wartości reprezentowanej przez ten obiekt [IDebugObject.](../../../extensibility/debugger/reference/idebugobject.md)
+ Zwrócony kontekst pamięci określa adres wartości reprezentowanej przez ten obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

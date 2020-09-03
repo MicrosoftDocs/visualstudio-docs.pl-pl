@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1752efb5be1828f62703e1fe1a1130b37ff80503
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534930"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Typy z automatycznym układem nie powinny być widoczne dla modelu COM
@@ -36,7 +36,7 @@ ms.locfileid: "85534930"
  Typ wartości widocznej dla Component Object Model (COM) jest oznaczony <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> atrybutem ustawionym na <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.Runtime.InteropServices.LayoutKind>typy układów są zarządzane przez środowisko uruchomieniowe języka wspólnego. Układ tych typów może się zmieniać między wersjami .NET Framework, co spowoduje przerwanie klientów COM, którzy oczekują określonego układu. Należy pamiętać, że jeśli <xref:System.Runtime.InteropServices.StructLayoutAttribute> atrybut nie jest określony, kompilatory języka C# i [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] języka C++ określają <xref:System.Runtime.InteropServices.LayoutKind> układ dla typów wartości.
+ <xref:System.Runtime.InteropServices.LayoutKind> typy układów są zarządzane przez środowisko uruchomieniowe języka wspólnego. Układ tych typów może się zmieniać między wersjami .NET Framework, co spowoduje przerwanie klientów COM, którzy oczekują określonego układu. Należy pamiętać, że jeśli <xref:System.Runtime.InteropServices.StructLayoutAttribute> atrybut nie jest określony, kompilatory języka C# i [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] języka C++ określają <xref:System.Runtime.InteropServices.LayoutKind> układ dla typów wartości.
 
  O ile nie zostanie oznaczona inaczej, wszystkie publiczne typy nieogólne są widoczne dla modelu COM. wszystkie typy niepubliczne i ogólne są niewidoczne dla modelu COM. Jednak aby zmniejszyć liczbę fałszywych wartości dodatnich, ta reguła wymaga jawnego określenia widoczności COM typu; zestaw zawierający musi być oznaczony <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> zestawem do `false` , a typ musi być oznaczony z <xref:System.Runtime.InteropServices.ComVisibleAttribute> ustawioną na `true` .
 

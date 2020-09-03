@@ -4,7 +4,7 @@
       href: index.md
     - name: Obciążenie dla aplikacji analizy i przetwarzania danych
       href: ../python/data-science-and-analytical-applications-workload.md
-- name: Przewodniki Szybki Start
+- name: Przewodniki Szybki start
   items:
     - name: Instalacja
       href: installing-r-tools-for-visual-studio.md
@@ -14,7 +14,7 @@
   items:
     - name: Wprowadzenie do języka R
       href: getting-started-with-r.md
-- name: Przykłady
+- name: Samples
   href: getting-started-samples.md
 - name: Przewodniki z instrukcjami
   items:
@@ -56,7 +56,7 @@
       href: variable-explorer.md
     - name: Debugowanie
       href: debugging-r-in-visual-studio.md
-- name: Tematy pomocy
+- name: Dokumentacja
   items:
     - name: Opcje
       href: options-for-r-tools-in-visual-studio.md
