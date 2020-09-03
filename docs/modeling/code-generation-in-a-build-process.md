@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 1fd7538782bff80ee12ac0aa0e66c0daa4da2d5c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546721"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Wywołaj transformację tekstu w procesie kompilacji
@@ -26,7 +26,7 @@ ms.locfileid: "85546721"
 
 Istnieją pewne różnice w czynnościach, które mogą wykonać zadania kompilacji, wszystko zależy od użytego aparatu kompilacji. Podczas kompilowania rozwiązania w programie Visual Studio szablon tekstowy może uzyskać dostęp do interfejsu API programu Visual Studio (EnvDTE), jeśli ustawiono atrybut [hostspecific = "true"](../modeling/t4-template-directive.md) . Ale to nie jest prawdziwe w przypadku kompilowania rozwiązania z wiersza polecenia lub po zainicjowaniu kompilacji serwera za pomocą programu Visual Studio. W tych przypadkach kompilację wykonuje MSBuild i użyty zostaje inny host T4. Oznacza to, że nie można uzyskać dostępu do elementów, takich jak nazwy plików projektu w taki sam sposób, jak w przypadku kompilowania szablonu tekstowego przy użyciu programu MSBuild. Można jednak [przekazać informacje o środowisku do szablonów tekstowych i procesorów dyrektywy przy użyciu parametrów kompilacji](#parameters).
 
-## <a name="configure-your-machines"></a><a name="buildserver"></a>Konfigurowanie maszyn
+## <a name="configure-your-machines"></a><a name="buildserver"></a> Konfigurowanie maszyn
 
 Aby włączyć zadania kompilacji na komputerze deweloperskim, Zainstaluj zestaw SDK modelowania dla programu Visual Studio.
 
@@ -65,7 +65,7 @@ W pliku .vbproj lub .csproj znajdź taki wiersz:
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`
 
-\-oraz
+\- oraz
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`
 
@@ -220,7 +220,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a>Przekaż dane kontekstu kompilacji do szablonów
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> Przekaż dane kontekstu kompilacji do szablonów
 
 Można ustawić wartości parametrów w pliku projektu. Na przykład można przekazać właściwości [kompilacji](../msbuild/msbuild-properties.md) i [zmienne środowiskowe](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -252,9 +252,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```
 
 > [!NOTE]
-> `ResolveParameterValue`Pobiera dane z `T4ParameterValues` tylko wtedy, gdy używasz programu MSBuild. Gdy przekształcasz szablon przy użyciu programu Visual Studio, parametry mają wartości domyślne.
+> `ResolveParameterValue` Pobiera dane z `T4ParameterValues` tylko wtedy, gdy używasz programu MSBuild. Gdy przekształcasz szablon przy użyciu programu Visual Studio, parametry mają wartości domyślne.
 
-## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a>Korzystanie z właściwości projektu w dyrektywach Assembly i include
+## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> Korzystanie z właściwości projektu w dyrektywach Assembly i include
 
 Makra programu Visual Studio, takie jak **$ (SolutionDir)** , nie działają w programie MSBuild. Zamiast tego można użyć właściwości projektu.
 
@@ -303,13 +303,13 @@ W przypadku zaktualizowania dołączonego pliku lub innego pliku odczytanego prz
 
 ::: moniker range="vs-2017"
 
-- Dobrym wskazówkami w szablonie programu MSbuild T4 w`%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Dobrym wskazówkami w szablonie programu MSbuild T4 w `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Dobrym wskazówkami w szablonie programu MSbuild T4 w`%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Dobrym wskazówkami w szablonie programu MSbuild T4 w `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 

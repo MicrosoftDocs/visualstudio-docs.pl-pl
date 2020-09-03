@@ -1,5 +1,5 @@
 ---
-title: Rozwiązywanie problemów i znane problemy (Visual Studio Tools for Unity) | Dokumentacja firmy Microsoft
+title: Rozwiązywanie problemów i znane problemy (Visual Studio Tools for Unity) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-unity-tools
@@ -10,16 +10,16 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: ad085cc6c41714a551fbb344274e6d0f164ab67e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297654"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Rozwiązywanie problemów i znane problemy (Visual Studio Tools dla Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tej sekcji możesz znaleźć rozwiązania typowych problemów z narzędziami Visual Studio Tools for Unity, opisy znanych problemów i Dowiedz się, jak możesz pomóc ulepszyć program Visual Studio Tools for Unity raportowanie błędów.  
+W tej sekcji znajdziesz rozwiązania typowych problemów dotyczących Visual Studio Tools for Unity, opisy znanych problemów i informacje ułatwiające ulepszanie Visual Studio Tools for Unity przez raportowanie błędów.  
   
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów  
  Aby rozwiązać typowe problemy z Visual Studio Tools for Unity, zobacz następujące sekcje.  
@@ -42,31 +42,31 @@ W tej sekcji możesz znaleźć rozwiązania typowych problemów z narzędziami V
  UnityVS wymaga programu .NET Framework 3,5, który nie jest instalowany domyślnie w systemie Windows 8. Aby rozwiązać ten problem, postępuj zgodnie z instrukcjami w celu pobrania i zainstalowania programu .NET Framework 3,5.  
   
 ## <a name="known-issues"></a>Znane problemy  
- Są to znane problemy w Visual Studio Tools for Unity, wynikiem sposobu interakcji debuger aparatu Unity w starszej wersji kompilatora języka C#. Pracujemy nad tym, aby pomóc w rozwiązaniu tych problemów, ale w międzyczasie mogą wystąpić następujące problemy.  
+ Istnieją znane problemy w Visual Studio Tools for Unity, które wynikają z tego, jak debuger współdziała z starszą wersją kompilatora języka C#. Pracujemy nad tym, aby pomóc w rozwiązaniu tych problemów, ale w międzyczasie mogą wystąpić następujące problemy.  
   
-- Podczas debugowania, ulega awarii czasem platformy Unity.  
+- Podczas debugowania aparat Unity czasami ulega awarii.  
   
-- Podczas debugowania, czasami zawiesza się Unity.  
+- Podczas debugowania aparat Unity czasami zawiesza się.  
   
-- Przechodzenie krok po kroku do i z metody czasami zachowuje się nieprawidłowo, szczególnie w Iteratory lub wewnątrz instrukcji switch.  
+- Przechodzenie do i z metod czasami zachowuje się nieprawidłowo, szczególnie w iteratorach lub wewnątrz instrukcji switch.  
   
 ## <a name="reporting-errors"></a>Raportowanie błędów  
- Pomóż nam ulepszyć jakość programu Visual Studio Tools for Unity przez wysyłanie raportów o błędach, gdy wystąpią uległa awarii, zawiesza się lub inne błędy. Ułatwia to nam Badaj i rozwiązuj problemy w programie Visual Studio Tools for Unity. Dziękuję!  
+ Pomóż nam ulepszyć jakość Visual Studio Tools for Unity przez wysyłanie raportów o błędach w przypadku wystąpienia awarii, zawieszania lub innych błędów. Pomaga nam zbadać i rozwiązać problemy w Visual Studio Tools for Unity. Dziękujemy!  
   
 ### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Jak zgłosić błąd, gdy program Visual Studio zawiesza się  
- Brak raportów, które program Visual Studio z czasami zawiesza się podczas debugowania za pomocą programu Visual Studio Tools for Unity, ale musimy większej ilości danych, aby zrozumieć ten problem. Możesz pomóc nam przeanalizować problem przez następujące kroki.  
+ Istnieją raporty, które program Visual Studio czasami zawiesza podczas debugowania przy użyciu Visual Studio Tools for Unity, ale potrzebujemy więcej danych, aby zrozumieć ten problem. Możesz pomóc nam zbadać, wykonując poniższe kroki.  
   
-##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Aby zgłosić, że program Visual Studio zawiesza się podczas debugowania przy użyciu programu Visual Studio Tools for Unity  
+##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Aby zgłosić, że program Visual Studio zawiesza się podczas debugowania za pomocą Visual Studio Tools for Unity  
   
 1. Otwórz nowe wystąpienie programu Visual Studio.  
   
-2. Otwórz dialogowym Dołącz do procesu. W nowym wystąpieniu programu Visual Studio, w menu głównym, wybierz **Debuguj**, **Dołącz do procesu**.  
+2. Otwórz okno dialogowe Dołączanie do procesu. W nowym wystąpieniu programu Visual Studio, w menu głównym, wybierz **Debuguj**, **Dołącz do procesu**.  
   
-3. Dołącz debuger do zamrożone wystąpieniu programu Visual Studio. W oknie dialogowym **Dołącz do procesu** wybierz zamrożone wystąpienie programu Visual Studio z tabeli **dostępne procesy** , a następnie wybierz przycisk **Dołącz** .  
+3. Dołącz debuger do zamrożonego wystąpienia programu Visual Studio. W oknie dialogowym **Dołącz do procesu** wybierz zamrożone wystąpienie programu Visual Studio z tabeli **dostępne procesy** , a następnie wybierz przycisk **Dołącz** .  
   
-4. Zatrzymaj debuger. W nowym wystąpieniu programu Visual Studio, w menu głównym, wybierz **Debuguj**, **Przerwij wszystko** lub po prostu naciśnij **kombinację klawiszy CTRL + ALT + BREAK**.  
+4. Wstrzymaj debuger. W nowym wystąpieniu programu Visual Studio, w menu głównym, wybierz **Debuguj**, **Przerwij wszystko** lub po prostu naciśnij **kombinację klawiszy CTRL + ALT + BREAK**.  
   
-5. Utwórz zrzutu wątku. W okno Polecenie wprowadź następujące polecenie i naciśnij klawisz **Enter**.  
+5. Utwórz zrzut wątku. W okno Polecenie wprowadź następujące polecenie i naciśnij klawisz **Enter**.  
   
    ```powershell  
    Debug.ListCallStack /AllThreads /ShowExternalCode  
@@ -74,4 +74,4 @@ W tej sekcji możesz znaleźć rozwiązania typowych problemów z narzędziami V
   
     Może być konieczne, aby okno **polecenia** było widoczne jako pierwsze. W programie Visual Studio, w menu głównym, wybierz **Widok**, **inne**okna, **okno poleceń**.  
   
-6. Na koniec Wyślij zrzut wątku do [vstusp@microsoft.com](mailto:vstusp@microsoft.com)wraz z opisem tego, co zostało wykonywane, gdy program Visual Studio został zablokowany.
+6. Na koniec Wyślij zrzut wątku do programu [vstusp@microsoft.com](mailto:vstusp@microsoft.com) wraz z opisem tego, co zostało wykonywane, gdy program Visual Studio został zablokowany.

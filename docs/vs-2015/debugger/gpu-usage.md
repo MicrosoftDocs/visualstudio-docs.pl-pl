@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b2e827b180ae218f3dd42b124500e01260e72d82
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297394"
 ---
 # <a name="gpu-usage"></a>Użycie procesora GPU
@@ -67,11 +67,11 @@ Użyj narzędzia użycie procesora GPU w centrum wydajności i diagnostyki progr
   
 2. W górnej części raportu wybierz sekcję z jednego z grafów, który pokazuje problem, który chcesz zbadać. Wybór może być dłuższy niż 3 sekundy; dłuższe sekcje są obcinane do początku.  
   
-    ![Opublikuj&#45;kolekcję, wybierz zakres, aby wyświetlić szczegóły](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![Opublikuj&#45;kolekcji, wybierz zakres, aby wyświetlić szczegóły](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
 3. W dolnej części raportu wybierz link **Wyświetl szczegóły** w **... Kliknij tutaj, aby wyświetlić szczegóły użycia procesora GPU dla tego komunikatu zakresu,** aby wyświetlić szczegółową oś czasu zaznaczenia.  
   
-    ![Opublikuj&#45;kolekcję z wybranym zakresem](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![Opublikuj&#45;kolekcji z wybranym zakresem](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
    Spowoduje to otwarcie nowego dokumentu z kartami zawierającym raport. Raport użycia procesora GPU pozwala zobaczyć, kiedy zdarzenie grafiki jest uruchamiane na procesorze CPU, gdy osiągnie procesor GPU i ile czasu procesor GPU ma go wykonać. Te informacje mogą pomóc identyfikować wąskie gardła i możliwości w celu zwiększenia równoległości kodu.  
   
@@ -84,23 +84,23 @@ Użyj narzędzia użycie procesora GPU w centrum wydajności i diagnostyki progr
   
  ![Raport użycia procesora GPU z osią czasu procesora i procesora GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
- Wybranie jednego ze zdarzeń w dolnej części raportu powoduje umieszczenie znacznika w odpowiednich zdarzeniach na odpowiednich osiach czasu, zazwyczaj jedno zdarzenie w wątku procesora, które reprezentuje wywołanie interfejsu API i inne zdarzenie na jednym z osi czasu procesora GPU, które reprezentuje czas procesora GPU ukończono zadanie. Analogicznie, wybranie jednego ze zdarzeń na osi czasu powoduje wyróżnienie odpowiedniego zdarzenia w dolnej części raportu. W przypadku powiększania z osi czasu w górnej części raportu są widoczne tylko najbardziej czasochłonne zdarzenia. Aby wyświetlić zdarzenia, które mają krótszy czas trwania, Powiększ do osi czasu za pomocą klawiszy CTRL + kółka na urządzeniu wskazującym lub kontrolki skalowania w lewym dolnym rogu górnego panelu. Możesz również przeciągnąć zawartość panelu Oś czasu, aby przejść przez zarejestrowane zdarzenia.  
+ Wybranie jednego ze zdarzeń w dolnej części raportu powoduje umieszczenie znacznika w odpowiednich zdarzeniach na odpowiednich osiach czasu, zazwyczaj jedno zdarzenie w wątku procesora, które reprezentuje wywołanie interfejsu API i inne zdarzenie na jednym z osi czasu procesora GPU, które reprezentuje czas wykonania zadania przez procesor GPU. Analogicznie, wybranie jednego ze zdarzeń na osi czasu powoduje wyróżnienie odpowiedniego zdarzenia w dolnej części raportu. W przypadku powiększania z osi czasu w górnej części raportu są widoczne tylko najbardziej czasochłonne zdarzenia. Aby wyświetlić zdarzenia, które mają krótszy czas trwania, Powiększ do osi czasu za pomocą klawiszy CTRL + kółka na urządzeniu wskazującym lub kontrolki skalowania w lewym dolnym rogu górnego panelu. Możesz również przeciągnąć zawartość panelu Oś czasu, aby przejść przez zarejestrowane zdarzenia.  
   
  Aby pomóc w znalezieniu tego, czego szukasz, możesz filtrować raport użycia procesora GPU na podstawie nazw procesów, identyfikatorów wątków i nazwy zdarzenia. Ponadto możesz wybrać, która częstotliwość odświeżania ekranu określa vysnc linie i można sortować zdarzenia hierarchicznie, jeśli aplikacja używa interfejsu ID3DUserDefinedAnnotation do grupowania poleceń renderowania.  
   
- Więcej szczegółów:  
+ Poniżej przedstawiono więcej informacji:  
   
-|Kontrolka filtru|Opis|  
+|Formant filtru|Opis|  
 |--------------------|-----------------|  
-|**Podstawowych**|Nazwa żądanego procesu. Wszystkie procesy, które używały procesora GPU podczas sesji diagnostycznej, znajdują się na liście rozwijanej. Kolor skojarzony z procesem w tym menu rozwijanym jest kolorem działania wątku na osiach czasu poniżej.|  
+|**Proces**|Nazwa żądanego procesu. Wszystkie procesy, które używały procesora GPU podczas sesji diagnostycznej, znajdują się na liście rozwijanej. Kolor skojarzony z procesem w tym menu rozwijanym jest kolorem działania wątku na osiach czasu poniżej.|  
 |**Nici**|Identyfikator wątku, który Cię interesuje. W aplikacji wielowątkowej może to pomóc w wyodrębnieniu określonych wątków należących do procesu, który Cię interesuje. Zdarzenia skojarzone z wybranym wątkiem są wyróżnione na każdej osi czasu.|  
-|**Wyświetlany**|Liczba wyświetleń, których częstotliwość odświeżania jest wyświetlana **Uwaga:** niektóre sterowniki można skonfigurować w taki sposób, aby przedstawić wiele fizycznych wyświetlaczy jako pojedynczy, duży ekran wirtualny. Może pojawić się tylko jeden ekran na liście, nawet jeśli na komputerze jest dołączonych wiele ekranów.|  
-|**Filtru**|Słowa kluczowe, które Cię interesują. Zdarzenia w dolnej części raportu będą zawierać tylko te, które pasują do słowa kluczowego w całości lub w części. Można określić wiele słów kluczowych, rozdzielając je średnikami (;).|  
+|**Wyświetlanie**|Liczba wyświetleń, których częstotliwość odświeżania jest wyświetlana **Uwaga:**  niektóre sterowniki można skonfigurować w taki sposób, aby przedstawić wiele fizycznych wyświetlaczy jako pojedynczy, duży ekran wirtualny. Może pojawić się tylko jeden ekran na liście, nawet jeśli na komputerze jest dołączonych wiele ekranów.|  
+|**Filtr**|Słowa kluczowe, które Cię interesują. Zdarzenia w dolnej części raportu będą zawierać tylko te, które pasują do słowa kluczowego w całości lub w części. Można określić wiele słów kluczowych, rozdzielając je średnikami (;).|  
 |**Sortowanie hierarchii**|Pole wyboru wskazujące, czy hierarchie zdarzeń — zdefiniowane za pomocą znaczników użytkownika — są zachowywane lub ignorowane.|  
   
  Lista zdarzeń w dolnej części raportu użycia procesora GPU zawiera szczegóły każdego zdarzenia.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa zdarzenia**|Nazwa zdarzenia graficznego. Zdarzenie zazwyczaj odpowiada jednemu zdarzeniu w osi czasu wątku procesora i jednym zdarzeniu na osi czasu procesora GPU.<br /><br /> Nazwy zdarzeń mogą mieć wartość "unattributed", jeśli użycie procesora GPU nie było w stanie określić nazwy zdarzenia. Aby uzyskać więcej informacji, zobacz uwagi pod tą tabelą.|  
 |**Uruchomienie procesora CPU (NS)**|Czas inicjalizacji zdarzenia w PROCESORze, wywołując interfejs API Direct3D. Czas jest mierzony w nanosekundach względem momentu uruchomienia aplikacji.|  
@@ -130,18 +130,18 @@ Użyj narzędzia użycie procesora GPU w centrum wydajności i diagnostyki progr
   
  Po odłożeniu kolekcji informacji profilowania przy użyciu tego ustawienia dodatkowe łącze jest dostępne w dolnej części okna narzędzia użycie procesora GPU po uruchomieniu aplikacji w narzędziu Użycie procesora GPU. Aby rozpocząć zbieranie informacji o profilowania, wybierz link **Rozpocznij** w polu **Rozpocznij zbieranie dodatkowych szczegółowych danych o użyciu procesora GPU** .  
   
-## <a name="hwsupport"></a>Obsługa sprzętu i sterowników  
+## <a name="hardware-and-driver-support"></a><a name="hwsupport"></a> Obsługa sprzętu i sterowników  
  Obsługiwane są następujące sprzętowe i sterowniki procesora GPU:  
   
-|Dostawcy|Opis procesora GPU|Wymagana wersja sterownika|  
+|Dostawca|Opis procesora GPU|Wymagana wersja sterownika|  
 |------------|---------------------|-----------------------------|  
-|Intel®|4\. generacja procesorów Intel® Core ("Haswell")<br /><br /> — Grafika firmy Intel® HD (GT1)<br />-Intel® HD Graphics 4200 (GT2)<br />-Intel® HD Graphics 4400 (GT2)<br />-Intel® HD Graphics 4600 (GT2)<br />— Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-Intel® Iris™ Pro Graphics 5200 (GT3e)|--(Użyj najnowszych sterowników)|  
-|AMD®|Większość niż AMD Radeon™ HD 7000 — seria (wyklucza procesor AMD Radeon™ HD 7350-7670)<br /><br /> Procesor AMD Radeon™ GPU, procesory GPU AMD FirePro™ i akceleratory procesora GPU AMD FirePro z architekturą Next Core Graphics (GCN).<br /><br /> Procesory AMD® E-Series i AMD A serii A (APUs) wyposażone w architekturę GCN (Graphics Core) ("Kaveri", "Kabini", "Temash", "Beema", "Mullins")|14,7 RC3 lub nowszy|  
+|Intel®|4. generacja procesorów Intel® Core ("Haswell")<br /><br /> — Grafika firmy Intel® HD (GT1)<br />-Intel® HD Graphics 4200 (GT2)<br />-Intel® HD Graphics 4400 (GT2)<br />-Intel® HD Graphics 4600 (GT2)<br />— Intel® HD Graphics P4600 (GT2)<br />— Intel® HD Graphics P4700 (GT2)<br />-Intel® HD Graphics 5000 (GT3)<br />-® Iris firmy Intel™ Graphics 5100 (GT3)<br />-Intel® Iris™ Pro Graphics 5200 (GT3e)|--(Użyj najnowszych sterowników)|  
+|® AMD|Większość niż AMD Radeon™ HD 7000 — seria (wyklucza procesor AMD Radeon™ HD 7350-7670)<br /><br /> Procesor AMD Radeon™ GPU, procesory GPU AMD FirePro™ i akceleratory procesora GPU AMD FirePro z architekturą Next Core Graphics (GCN).<br /><br /> Procesory AMD® E-Series i AMD A serii A (APUs) wyposażone w architekturę GCN (Graphics Core) ("Kaveri", "Kabini", "Temash", "Beema", "Mullins")|14,7 RC3 lub nowszy|  
 |NVIDIA®|Najczęściej jest to NVIDIA® GeForce® 400.<br /><br /> NVIDIA® GeForce® procesorów GPU, NVIDIA Quadro® GPU i NVIDIA® Tesla™ akceleratory procesora GPU z Fermi™, Kepler™ lub Maxwell™ architekturą.|343,37 lub więcej|  
   
  W tej chwili nie są obsługiwane konfiguracje wieloprocesorowe, takie jak NVIDIA® SLI™ i AMD CrossFire™. Obsługiwane są ustawienia hybrydowej grafiki, takie jak NVIDIA® Optimus™ i AMD Enduro™.  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
   
 - [Rozwiązywanie trudnych problemów graficznych z grą przy użyciu narzędzi DirectX (wideo)](https://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   

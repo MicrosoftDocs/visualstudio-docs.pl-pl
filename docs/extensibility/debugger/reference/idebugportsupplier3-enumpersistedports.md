@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::EnumPersistedPorts | Dokumenty firmy Microsoft
+title: 'IDebugPortSupplier3:: EnumPersistedPorts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 92b31a6b6898b0031e4a01d5a6433d0ce77e64f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724451"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
-Ta metoda pobiera obiekt, który umożliwia wyliczenie listy utrwalonych portów.
+Ta metoda pobiera obiekt, który umożliwia Wyliczenie listy utrwalonych portów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,16 +43,16 @@ int EnumPersistedPorts(
 
 ## <a name="parameters"></a>Parametry
 `PortNames`\
-[w] Struktura [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) zawierająca listę nazw portów do znalezienia i zwrócenia między utrwalonych portów. Tylko te utrwalone porty o tych nazwach zostaną zwrócone.
+podczas Struktura [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) , która zawiera listę nazw portów do znalezienia i zwrócenia wśród utrwalonych portów. Zostaną zwrócone tylko te utrwalone porty z tymi nazwami.
 
 `ppEnum`\
-[na zewnątrz] Obiekt, który implementuje interfejs [IEnumDebugPorts2.](../../../extensibility/debugger/reference/ienumdebugports2.md)
+określoną Obiekt, który implementuje interfejs [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Utrwalone porty są ładowane, gdy dostawca portu jest tworzone i zapisywane, gdy dostawca portu jest niszczony.
+ Utrwalone porty są ładowane podczas tworzenia wystąpienia dostawcy portów i zapisywane, gdy dostawca portu jest niszczony.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

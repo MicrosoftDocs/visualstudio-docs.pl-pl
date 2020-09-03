@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99f2b67d264edcaab5272d0224d4450ee2e8a6f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297158"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagramy składników UML: Zalecenia
@@ -41,7 +41,7 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
 
   Można użyć diagramu składników do reprezentowania projektu niezależnie od tego, jaki język lub platforma projektowania są lub będą używane.
 
-## <a name="OtherDiagrams"></a>Relacje z innymi diagramami
+## <a name="relationship-to-other-diagrams"></a><a name="OtherDiagrams"></a> Relacje z innymi diagramami
  Diagramów składników możesz używać w połączeniu z innymi diagramami.
 
 |Inny diagram|Pomaga w omawianiu i komunikowaniu tych aspektów projektu|
@@ -51,7 +51,7 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
 |Diagramy aktywności|— Przetwarzanie wewnętrzne wykonywane przez składnik w odpowiedzi na komunikaty przychodzące.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy aktywności UML: wytyczne](../modeling/uml-activity-diagrams-guidelines.md).|
 |Diagramy warstw|— Logiczne warstwy architektury dla składników.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy warstwowe: odwołanie](../modeling/layer-diagrams-reference.md).|
 
-## <a name="Basics"></a>Podstawowe kroki do rysowania diagramów składników
+## <a name="basic-steps-for-drawing-component-diagrams"></a><a name="Basics"></a> Podstawowe kroki do rysowania diagramów składników
  Informacje referencyjne dotyczące elementów na diagramach składników można znaleźć w temacie [diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md).
 
  Aby uzyskać więcej informacji o sposobach używania diagramów składników w procesie projektowania, zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).
@@ -82,7 +82,7 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
 
 1. Kliknij pozycję **składnik** w przyborniku, a następnie kliknij pustą część diagramu.
 
-     \- lub-
+     \- oraz
 
      Skopiuj i wklej istniejący składnik.
 
@@ -146,7 +146,7 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
 
 - Znajdź interfejs w **Eksploratorze modelu UML** , a następnie przeciągnij go z tego miejsca na składnik.
 
-     lub
+     -lub-
 
 - Skopiuj i wklej odwołanie do interfejsu z diagramu.
 
@@ -161,7 +161,7 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
 
     3. Jeśli chcesz utworzyć wymagany interfejs, kliknij tag akcji, a następnie kliknij przycisk **Konwertuj na wymagany interfejs**.
 
-## <a name="Parts"></a>Wyświetlanie wewnętrznych części składnika
+## <a name="showing-the-internal-parts-of-a-component"></a><a name="Parts"></a> Wyświetlanie wewnętrznych części składnika
  ![Diagram składników przedstawiający części wewnętrzne](../modeling/media/uml-compshowing.png "UML_CompShowing")
 
  Części (3) możesz umieścić w składniku (1), aby pokazać, jak jest zbudowany z mniejszych składników współdziałających ze sobą.
@@ -188,13 +188,13 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
 
          Nowy składnik jest tworzony w **Eksploratorze modelu UML**. Jest to typ nowej części.
 
-         \- lub-
+         \- oraz
 
          Przeciągnij istniejący składnik z Eksploratora modelu UML na składnik nadrzędny.
 
          Nowa część (3) pojawia się wewnątrz składnika nadrzędnego. Jego typem jest składnik przeciągnięty z Eksploratora modelu UML.
 
-         \- lub-
+         \- oraz
 
          Kliknij prawym przyciskiem myszy składnik, w diagramie lub w Eksploratorze modelu UML, a następnie kliknij polecenie **Kopiuj**.
 
@@ -206,7 +206,7 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
 
     3. Do nowej części możesz dodać interfejsy dostarczany i wymagany (4, 5). Kliknij wybrany **interfejs** lub narzędzie **interfejsu wymagane** , a następnie kliknij w części.
 
-         \- lub-
+         \- oraz
 
          Przeciągnij istniejący interfejs z **Eksploratora modelu UML** na część.
 
@@ -225,7 +225,7 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
 ### <a name="showing-the-parts-of-a-part"></a>Wyświetlanie części części
  Po rozłożeniu składnika na części, możesz rozłożyć części każdego typu na wewnętrzne części.
 
- Najłatwiej przeprowadzić dekompozycji poszczególnych warstw na oddzielnych diagramach składników. Najpierw musisz zlokalizować typ części. Na przykład, na ilustracji, jedna z części ma nazwę `DNCustomerServer`, a jej typem jest składnik o nazwie `CustomerServer`. Można znaleźć ten typ w Eksploratorze modelu UML i umieścić go na innym diagramie. Następnie możesz utworzyć jej własne części wewnętrzne.
+ Najłatwiej przeprowadzić dekompozycji poszczególnych warstw na oddzielnych diagramach składników. Najpierw musisz zlokalizować typ części. Na przykład, na ilustracji, jedna z części ma nazwę `DNCustomerServer` , a jej typem jest składnik o nazwie `CustomerServer` . Można znaleźć ten typ w Eksploratorze modelu UML i umieścić go na innym diagramie. Następnie możesz utworzyć jej własne części wewnętrzne.
 
 ##### <a name="to-place-a-parts-type-on-a-diagram"></a>Aby umieścić typ części na diagramie
 
@@ -255,7 +255,7 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
 
      Możesz teraz dodać części wewnątrz niego.
 
-## <a name="Designing"></a>Projektowanie składnika
+## <a name="designing-the-component"></a><a name="Designing"></a> Projektowanie składnika
 
 ### <a name="describing-how-the-parts-collaborate"></a>Opisywanie, jak współpracują części
  Możesz narysować diagram sekwencji, aby pokazać, jak części współpracują ze sobą w odpowiedzi na komunikat docierający do składnika nadrzędnego.
