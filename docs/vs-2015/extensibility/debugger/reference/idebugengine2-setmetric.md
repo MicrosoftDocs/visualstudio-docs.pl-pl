@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetMetric | Dokumentacja firmy Microsoft
+title: 'IDebugEngine2:: SetMetric | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3371925894a32bfe954979d1554d96d3d5bbb140
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182240"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta metoda umożliwia ustawienie wartości rejestru znane jako metrykę.  
+Ta metoda ustawia wartość rejestru znaną jako Metryka.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,16 +42,16 @@ int SetMetric(
   
 #### <a name="parameters"></a>Parametry  
  `pszMetric`  
- [in] Nazwa metryki.  
+ podczas Nazwa metryki.  
   
  `varValue`  
- [in] Określa wartość metryki.  
+ podczas Określa wartość metryki.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Metryka to wartość rejestru używane do zmiany zachowania aparatu debugowania lub anonsowanie obsługiwanych funkcji. Ta metoda może przekazywać wywołanie odpowiednią formą [pomocnicy zestawu SDK do debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) funkcji `SetMetric`.  
+ Metryka to wartość rejestru służąca do zmiany zachowania aparatu debugowania lub anonsowania obsługiwanych funkcji. Ta metoda umożliwia przekazanie wywołania do odpowiedniej formy [pomocników zestawu SDK na potrzeby funkcji debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` .  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f1a7030b6c351407814314ccd41e0e2ed6a880e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593112"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Karta System. Activities, okno dialogowe Wybieranie elementów przybornika
 
-Na tej karcie okna dialogowego **Wybieranie elementów przybornika** zostanie wyświetlona lista działań, szablonów i elementów Windows Workflow Foundation (WF), które są dostępne dla użytkownika. Aby wyświetlić tę listę, zaznacz opcję **Wybierz elementy przybornika** z menu **Narzędzia** lub klikając prawym przyciskiem myszy **Przybornik** i wybierając **pozycję Wybierz elementy** , aby wyświetlić okno dialogowe **Wybieranie elementów przybornika** , a następnie wybierz jego kartę **System. działania** . poza tym lista zawiera działania przepływu pracy z zestawów System. Activities, system. ServiceModel. Activities i system. Activities. Core. Presentation. Jednak są domyślnie zaznaczone tylko działania dostarczone przez system oraz działania dodane za pomocą innych zestawów wyświetlanych w **przyborniku** . Ostatnio dodane działania są automatycznie sprawdzane i pojawiają się w **przyborniku** po kliknięciu przycisku **OK** w oknie dialogowym. Te elementy są również wyświetlane w **przyborniku** pod nową kategorią, która odnosi się do przestrzeni nazw, w której znajduje się działanie/element/szablon.
+Na tej karcie okna dialogowego **Wybieranie elementów przybornika** zostanie wyświetlona lista działań, szablonów i elementów Windows Workflow Foundation (WF), które są dostępne dla użytkownika. Aby wyświetlić tę listę, zaznacz opcję **Wybierz elementy przybornika** z menu **Narzędzia** lub klikając prawym przyciskiem myszy **Przybornik** i wybierając **pozycję Wybierz elementy** , aby wyświetlić okno dialogowe **Wybierz elementy przybornika** , a następnie wybrać jego kartę **System. działania** . Z pola Lista zawiera działania przepływów pracy z zestawów System. Activities, system. ServiceModel. Activities i system. Activities. Core. Presentation. Jednak są domyślnie zaznaczone tylko działania dostarczone przez system oraz działania dodane za pomocą innych zestawów wyświetlanych w **przyborniku** . Ostatnio dodane działania są automatycznie sprawdzane i pojawiają się w **przyborniku** po kliknięciu przycisku **OK** w oknie dialogowym. Te elementy są również wyświetlane w **przyborniku** pod nową kategorią, która odnosi się do przestrzeni nazw, w której znajduje się działanie/element/szablon.
 
 > [!WARNING]
 > Jeśli spróbujesz dodać zestaw, który nie zawiera żadnych działań przepływu pracy, zostanie wyświetlone okno dialogowe błędu z wyjaśnieniem, że zestaw nie zawiera żadnych działań.
@@ -43,7 +43,7 @@ Wyświetla listę nazw działań przepływu pracy aktualnie zarejestrowanych na 
 Obszaru
 Wyświetla hierarchię przestrzeni nazw .NET, która definiuje strukturę działania.
 
-Name zestawu\
+Nazwa zestawu \
 Wyświetla nazwę i wersję zestawu .NET zawierającego działanie.
 
 Katalogi

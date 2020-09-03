@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Rozszerzanie procesu kompilacji | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: zwiększanie procesu kompilacji | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -15,29 +15,29 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156613"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>Instrukcje: Rozszerzanie procesu kompilacji programu Visual Studio
+# <a name="how-to-extend-the-visual-studio-build-process"></a>Porady: rozszerzanie procesu kompilacji programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Procesu kompilacji jest definiowany przez szereg [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] plików .targets, które są importowane do pliku projektu. Jeden z tych plików zaimportowanych Microsoft.Common.targets, można rozszerzyć do umożliwiają uruchamianie niestandardowych zadań w kilku miejscach w procesie kompilacji. W tym temacie opisano dwie metody, można użyć, aby rozszerzyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] procesu kompilacji:
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Proces kompilacji jest definiowany przez serię [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] plików. targets, które są importowane do pliku projektu. Jeden z tych zaimportowanych plików, Microsoft. Common. targets, można rozszerzyć, aby umożliwić uruchamianie niestandardowych zadań w kilku punktach procesu kompilacji. W tym temacie objaśniono dwie metody, których można użyć do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozbudowy procesu kompilacji:
 
-- Zastępowanie określonych wstępnie zdefiniowanych obiektów docelowych określonych w Microsoft.Common.targets.
+- Zastępowanie określonych wstępnie zdefiniowanych elementów docelowych zdefiniowanych w Microsoft. Common. targets.
 
-- Zastępowanie właściwości "DependsOn" określonych w Microsoft.Common.targets.
+- Zastępowanie właściwości "DependsOn" zdefiniowanych w Microsoft. Common. targets.
 
-## <a name="overriding-predefined-targets"></a>Zastępowanie wstępnie zdefiniowanych obiektów docelowych
- Plik Microsoft.Common.targets zawiera zestaw wstępnie zdefiniowanych pusty obiektów docelowych, które są wywoływane przed i po nim niektóre z najważniejszych elementów docelowych w procesie kompilacji. Na przykład [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] wywołania `BeforeBuild` docelowej przed funkcją main `CoreBuild` docelowego i `AfterBuild` docelowe po `CoreBuild` docelowej. Domyślnie puste elementy docelowe w Microsoft.Common.targets nic nie rób, ale ich zachowanie domyślne można przesłonić, definiując elementy docelowe, które mają w pliku projektu, który importuje Microsoft.Common.targets. Dzięki temu można użyć [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zadań daje większą kontrolę nad procesem kompilacji.
+## <a name="overriding-predefined-targets"></a>Zastępowanie wstępnie zdefiniowanych elementów docelowych
+ Plik Microsoft. Common. targets zawiera zestaw wstępnie zdefiniowanych pustych obiektów docelowych, które są wywoływane przed i po niektórych głównych elementach docelowych w procesie kompilacji. Na przykład [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] wywołuje `BeforeBuild` obiekt docelowy przed głównym `CoreBuild` elementem docelowym i `AfterBuild` elementem docelowym po `CoreBuild` elemencie docelowym. Domyślnie puste elementy docelowe w programie Microsoft. Common. targets nie wykonują żadnych operacji, ale można przesłonić swoje domyślne zachowanie, definiując żądane obiekty docelowe w pliku projektu, który importuje element Microsoft. Common. targets. Dzięki temu można użyć [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zadań, aby zapewnić większą kontrolę nad procesem kompilacji.
 
-#### <a name="to-override-a-predefined-target"></a>Aby wstępnie zdefiniowany obiekt docelowy zastąpienia
+#### <a name="to-override-a-predefined-target"></a>Aby zastąpić wstępnie zdefiniowany element docelowy
 
-1. Określ cel wstępnie zdefiniowanych w Microsoft.Common.targets, który chcesz zastąpić. Znajdują się w tabeli poniżej, aby uzyskać pełną listę obiektów docelowych, które można bezpiecznie zastąpić.
+1. Zidentyfikuj wstępnie zdefiniowany element docelowy w programie Microsoft. Common. targets, który chcesz przesłonić. Zapoznaj się z poniższą tabelą, aby uzyskać pełną listę obiektów docelowych, które można bezpiecznie przesłonić.
 
-2. Definiowanie docelowego lub miejsc docelowych, na końcu pliku projektu bezpośrednio przed `</Project>` tagu. Na przykład:
+2. Zdefiniuj element docelowy lub docelowy na końcu pliku projektu bezpośrednio przed `</Project>` tagiem. Na przykład:
 
    ```
    <Project>
@@ -51,30 +51,30 @@ ms.locfileid: "68156613"
    </Project>
    ```
 
-3. Tworzenie pliku projektu.
+3. Kompiluj plik projektu.
 
-   W poniższej tabeli przedstawiono wszystkie obiekty docelowe w Microsoft.Common.targets, który można bezpiecznie zastąpić.
+   W poniższej tabeli przedstawiono wszystkie elementy docelowe w Microsoft. Common. targets, które można bezpiecznie przesłonić.
 
 |Nazwa obiektu docelowego|Opis|
 |-----------------|-----------------|
-|`BeforeCompile`, `AfterCompile`|Wstawione w jednym z następujących elementów docelowych uruchomienia przed lub po zakończeniu kompilacji podstawowe zadania. Większość dostosowań są wykonywane tylko w jednym z następujących dwóch elementów docelowych.|
-|`BeforeBuild`, `AfterBuild`|Zadania wstawione w jednym z następujących elementów docelowych uruchomi się przed lub po wszystko inne w kompilacji. **Uwaga:**  `BeforeBuild` i `AfterBuild` elementy docelowe zostały już zdefiniowane w komentarzach na końcu większości plików projektów. Dzięki temu można w prosty sposób dodać zdarzenia przed i po kompilacji do pliku projektu.|
-|`BeforeRebuild`, `AfterRebuild`|Zadania wstawione w jednym z następujących elementów docelowych uruchomienia przed lub po podstawowe odbudować funkcji jest wywoływana. Kolejność wykonanie docelowego w Microsoft.Common.targets ma: `BeforeRebuild`, `Clean`, `Build`, a następnie `AfterRebuild`.|
-|`BeforeClean`, `AfterClean`|Zadania wstawione w jednym z następujących elementów docelowych uruchomienia przed lub po podstawowe czysta funkcja jest wywoływana.|
-|`BeforePublish`, `AfterPublish`|Zadania wstawione w jednym z następujących elementów docelowych uruchomienia przed lub po podstawowe publikowanie funkcji jest wywoływana.|
-|`BeforeResolveReference`, `AfterResolveReferences`|Zadania wstawione w jednym z następujących elementów docelowych są uruchamiane przed lub po odwołania do zestawów są rozwiązane.|
-|`BeforeResGen`, `AfterResGen`|Zadania wstawione w jednym z następujących elementów docelowych są uruchamiane przed lub po wygenerowaniu zasobów.|
+|`BeforeCompile`, `AfterCompile`|Zadania wstawione w jednym z tych celów są uruchamiane przed kompilacją podstawową lub po niej. Większość dostosowań odbywa się w jednym z tych dwóch celów.|
+|`BeforeBuild`, `AfterBuild`|Zadania wstawione w jednym z tych elementów docelowych zostaną uruchomione przed wszystkimi innymi w kompilacji. **Uwaga:**  `BeforeBuild` Elementy i `AfterBuild` są już zdefiniowane w komentarzach na końcu większości plików projektu. Dzięki temu można łatwo dodawać zdarzenia przed i po kompilacji do pliku projektu.|
+|`BeforeRebuild`, `AfterRebuild`|Zadania wstawione w jednym z tych celów są uruchamiane przed wywołaniem podstawowej funkcji odbudowywania lub po niej. Kolejność wykonywania obiektów docelowych w elemencie Microsoft. Common. targets to: `BeforeRebuild` , `Clean` , `Build` , i `AfterRebuild` .|
+|`BeforeClean`, `AfterClean`|Zadania wstawione w jednym z tych obiektów docelowych są uruchamiane przed wywołaniem lub po wywołaniu podstawowych funkcji czystych.|
+|`BeforePublish`, `AfterPublish`|Zadania wstawione w jednym z tych obiektów docelowych są uruchamiane przed wywołaniem podstawowej funkcji publikowania lub po niej.|
+|`BeforeResolveReference`, `AfterResolveReferences`|Zadania wstawione w jednym z tych obiektów docelowych są uruchamiane przed rozwiązanymi odwołaniami do zestawów lub po nich.|
+|`BeforeResGen`, `AfterResGen`|Zadania wstawione w jednym z tych celów są uruchamiane przed wygenerowaniem zasobów lub po nich.|
 
 ## <a name="overriding-dependson-properties"></a>Zastępowanie właściwości "DependsOn"
- Zastępowanie wstępnie zdefiniowanych obiektów docelowych to prosty sposób rozszerzyć proces kompilacji, ale, ponieważ [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] sekwencyjnie, ocenia definicji elementów docelowych nie istnieje sposób, aby zapobiec innego projektu, który importuje projektu z zastępowanie cele już zostały zastąpione. Tak, na przykład ostatniego `AfterBuild` docelowej zdefiniowane w pliku projektu po inne projekty zostały zaimportowane, będzie używany podczas kompilacji.
+ Zastępowanie wstępnie zdefiniowanych elementów docelowych jest łatwym sposobem na rozszerzenie procesu kompilacji, ale, ponieważ program [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] oblicza definicję elementów docelowych sekwencyjnie, nie ma żadnego sposobu, aby uniemożliwić inny projekt, który importuje projekt z zastępowania obiektów docelowych, które zostały już zastąpione. Na przykład ostatni `AfterBuild` element docelowy zdefiniowany w pliku projektu, po zaimportowaniu wszystkich innych projektów, będzie używany podczas kompilacji.
 
- Można zabezpieczyć się przed niezamierzonym przesłonięcia elementów docelowych przez zastąpienie właściwości "DependsOn", które są używane w `DependsOnTargets` atrybutów w całym pliku Microsoft.Common.targets. Na przykład `Build` docelowy zawiera `DependsOnTargets` wartość atrybutu `"$(BuildDependsOn)"`. Należy wziąć pod uwagę:
+ Można chronić przed niezamierzonymi zastąpieniami docelowymi, zastępując właściwości "DependsOn", które są używane w `DependsOnTargets` atrybutach w pliku Microsoft. Common. targets. Na przykład `Build` element docelowy zawiera `DependsOnTargets` wartość atrybutu `"$(BuildDependsOn)"` . Rozważ następujące kwestie:
 
 ```
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
 ```
 
- Ten fragment kodu XML wskazuje, że przed `Build` docelowych można uruchomić, wszystkie elementy docelowe, określone w `BuildDependsOn` najpierw należy uruchomić właściwości. `BuildDependsOn` Właściwość jest zdefiniowana jako:
+ Ten fragment XML wskazuje, że przed `Build` uruchomieniem elementu docelowego wszystkie elementy docelowe określone we `BuildDependsOn` właściwości muszą zostać uruchomione jako pierwsze. `BuildDependsOn`Właściwość jest definiowana jako:
 
 ```
 <PropertyGroup>
@@ -86,7 +86,7 @@ ms.locfileid: "68156613"
 </PropertyGroup>
 ```
 
- Wartość tej właściwości można zastąpić przez zadeklarowanie innej właściwości o nazwie `BuildDependsOn` na końcu pliku projektu. Umieszczając poprzedniego `BuildDependsOn` właściwość w nową właściwość, można dodać nowe elementy docelowe, na początku i końca listy docelowej. Na przykład:
+ Można zastąpić tę wartość właściwości, deklarując inną właściwość o nazwie `BuildDependsOn` na końcu pliku projektu. Dołączając poprzednią `BuildDependsOn` Właściwość w nowej właściwości, można dodać nowe cele na początku i na końcu listy docelowej. Na przykład:
 
 ```
 <PropertyGroup>
@@ -105,25 +105,25 @@ ms.locfileid: "68156613"
 </Target>
 ```
 
- Projekty, które importują plików projektu można zastąpić te właściwości, bez zastępowania dostosowania, które zostały wprowadzone.
+ Projekty, które importują pliki projektu, mogą przesłaniać te właściwości bez zastępowania wprowadzonych dostosowań.
 
-#### <a name="to-override-a-dependson-property"></a>Aby zastąpić właściwość "DependsOn"
+#### <a name="to-override-a-dependson-property"></a>Aby przesłonić Właściwość "DependsOn"
 
-1. Określ wstępnie zdefiniowaną właściwość "DependsOn" w Microsoft.Common.targets, który chcesz zastąpić. Znajdują się w tabeli poniżej, aby uzyskać listę właściwości często zastąpione "DependsOn".
+1. Zidentyfikuj wstępnie zdefiniowaną Właściwość "DependsOn" w elemencie Microsoft. Common. targets, która ma zostać przesłonięta. W poniższej tabeli znajduje się lista typowych właściwości "DependsOn".
 
-2. Zdefiniuj inne wystąpienie, właściwość lub właściwości na końcu pliku projektu. Zawiera właściwości oryginalnej, na przykład `$(BuildDependsOn)`, w nowej właściwości.
+2. Zdefiniuj inne wystąpienie właściwości lub właściwości na końcu pliku projektu. Dołącz oryginalną właściwość, na przykład `$(BuildDependsOn)` w nowej właściwości.
 
-3. Zdefiniuj niestandardowe elementy docelowe, przed lub po definicji właściwości.
+3. Zdefiniuj niestandardowe elementy docelowe przed definicją właściwości lub po niej.
 
-4. Tworzenie pliku projektu.
+4. Kompiluj plik projektu.
 
-### <a name="commonly-overridden-dependson-properties"></a>Powszechnie zastępowane właściwości "DependsOn"
+### <a name="commonly-overridden-dependson-properties"></a>Często zastępowane właściwości "DependsOn"
 
 |Nazwa właściwości|Opis|
 |-------------------|-----------------|
-|`BuildDependsOn`|Właściwość, aby zastąpić, jeśli chcesz wstawić niestandardowe obiekty docelowe, przed lub po zakończeniu procesu całej kompilacji.|
-|`CleanDependsOn`|Właściwość, aby zastąpić, jeśli chcesz wyczyścić dane wyjściowe z niestandardowego procesu kompilacji.|
-|`CompileDependsOn`|Właściwość, aby zastąpić, jeśli chcesz wstawić niestandardowych procesów przed lub po wykonaniu kroku kompilacji.|
+|`BuildDependsOn`|Właściwość, która ma zostać zastąpiona, jeśli chcesz wstawić niestandardowe elementy docelowe przed lub po całym procesie kompilacji.|
+|`CleanDependsOn`|Właściwość do zastąpienia, jeśli chcesz wyczyścić dane wyjściowe z niestandardowego procesu kompilacji.|
+|`CompileDependsOn`|Właściwość do zastąpienia, jeśli chcesz wstawić niestandardowe procesy przed lub po kroku kompilacji.|
 
 ## <a name="see-also"></a>Zobacz też
- [Integracja z programem Visual Studio](../msbuild/visual-studio-integration-msbuild.md) [pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md) [. Pliki elementów docelowych](../msbuild/msbuild-dot-targets-files.md)
+ Pojęcia dotyczące [programu Visual Studio Integration](../msbuild/visual-studio-integration-msbuild.md) [MSBuild](../msbuild/msbuild-concepts.md) [. Pliki docelowe](../msbuild/msbuild-dot-targets-files.md)

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 5e8016032a0ea8d1b8c62b2dfc2bbdf72251590c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661776"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Porady: tworzenie lub aktualizowanie standardowych zasad ewidencjonowania analizy kodu
@@ -28,11 +28,11 @@ Można wymagać, aby analiza kodu była uruchamiana we wszystkich projektach kod
 > [!NOTE]
 > Ta funkcja jest dostępna tylko wtedy, gdy używasz Team Foundation Server.
 
- Zasady ewidencjonowania analizy kodu są ustawiane w ustawieniach projektu zespołowego i stosowane do każdego projektu kodu w projekcie zespołowym. Przebiegi analizy kodu są skonfigurowane dla projektów kodu w pliku projektu (. xxproj) dla projektu kodu. Uruchomienia analizy kodu są wykonywane na komputerze lokalnym. Po włączeniu zasad zaewidencjonowania analizy kodu, pliki w projekcie kodu, które mają być zaewidencjonowane, muszą być kompilowane po ostatniej edycji i przebiegu analizy kodu, który zawiera, co najmniej reguły w ustawieniach projektu zespołowego muszą być wykonywane na komputerze, na którym c zawieszeń.
+ Zasady ewidencjonowania analizy kodu są ustawiane w ustawieniach projektu zespołowego i stosowane do każdego projektu kodu w projekcie zespołowym. Przebiegi analizy kodu są skonfigurowane dla projektów kodu w pliku projektu (. xxproj) dla projektu kodu. Uruchomienia analizy kodu są wykonywane na komputerze lokalnym. Po włączeniu zasad zaewidencjonowania analizy kodu pliki w projekcie kodu, które mają być zaewidencjonowane, muszą być kompilowane po ostatniej edycji i przebiegu analizy kodu, który zawiera, co najmniej reguły w ustawieniach projektu zespołowego muszą być wykonywane na komputerze, na którym zostały wprowadzone zmiany.
 
 - Dla kodu zarządzanego ustawia się zasady ewidencjonowania, określając *zestaw reguł* , który zawiera podzbiór reguł analizy kodu.
 
-- W przypadku językaC++ C/Code zasady ewidencjonowania wymagają uruchomienia wszystkich reguł analizy kodu. Można dodać dyrektywy poprzedzające procesor, aby wyłączyć określone reguły dla poszczególnych projektów kodu w projekcie zespołowym.
+- W przypadku kodu C/C++ zasady ewidencjonowania wymagają uruchomienia wszystkich reguł analizy kodu. Można dodać dyrektywy poprzedzające procesor, aby wyłączyć określone reguły dla poszczególnych projektów kodu w projekcie zespołowym.
 
   Po określeniu zasad ewidencjonowania dla kodu zarządzanego członkowie zespołu mogą synchronizować swoje ustawienia analizy kodu dla projektów kodu z ustawieniami zasad projektu zespołowego.
 
@@ -55,7 +55,7 @@ Można wymagać, aby analiza kodu była uruchamiana we wszystkich projektach kod
     |Opcja|Opis|
     |------------|-----------------|
     |**Wymuś zaewidencjonowanie tylko do plików, które są częścią bieżącego rozwiązania.**|Analiza kodu może być uruchamiana tylko na plikach określonych w plikach konfiguracji rozwiązania i projektu. Ta zasada gwarantuje, że jest analizowany cały kod, który jest częścią rozwiązania.|
-    |**Wymuś analizę koduC++ C/Code (/analyze)**|Wymaga, aby wszystkie C C++ lub projekty zostały skompilowane przy użyciu opcji kompilatora/Analyze, aby uruchomić analizę kodu, zanim będzie można je zaewidencjonować.|
+    |**Wymuś analizę kodu C/C++ (/analyze)**|Wymaga, aby wszystkie projekty C lub C++ były kompilowane przy użyciu opcji kompilatora/Analyze, aby uruchomić analizę kodu, zanim będzie można je zaewidencjonować.|
     |**Wymuszaj analizę kodu dla kodu zarządzanego**|Wymaga, aby wszystkie zarządzane projekty wykonywały analizę kodu i kompilację, zanim będzie można je zaewidencjonować.|
 
 -
@@ -66,7 +66,7 @@ Można wymagać, aby analiza kodu była uruchamiana we wszystkich projektach kod
 
   - Wybierz standardowy zestaw reguł firmy Microsoft.
 
-  - Aby wybrać niestandardowy zestaw reguł, kliknij pozycję **\<Select zestaw reguł z kontroli źródła... >** , a następnie wpisz ścieżkę kontroli wersji zestawu reguł w przeglądarce kontroli źródła. Składnia ścieżki kontroli wersji jest następująca:
+  - Aby wybrać niestandardowy zestaw reguł, kliknij **\<Select Rule Set from Source Control...>** , a następnie wpisz ścieżkę kontroli wersji zestawu reguł w przeglądarce kontroli źródła. Składnia ścieżki kontroli wersji jest następująca:
 
   - **$/** `TeamProjectName` **/** `VersionControlPath`
 

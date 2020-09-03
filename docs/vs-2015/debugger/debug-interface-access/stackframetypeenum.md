@@ -1,5 +1,5 @@
 ---
-title: Stackframetypeenum — | Dokumentacja firmy Microsoft
+title: Stackframetypeenum — | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 655911bac1efbafe1838e24e2056282f9036479b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179191"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
@@ -40,7 +40,7 @@ enum StackFrameTypeEnum {
   
 ## <a name="elements"></a>Elementy  
  `FrameTypeFPO`  
- Wskaźnik ramki pominięta; FPO informacji.  
+ Pominięto wskaźnik ramki; Dostępne są informacje FPO.  
   
  `FrameTypeTrap`  
  Ramka pułapki jądra.  
@@ -49,19 +49,19 @@ enum StackFrameTypeEnum {
  Ramka pułapki jądra.  
   
  `FrameTypeStandard`  
- Standardowa EBP ramki stosu.  
+ Standardowa Ramka stosu EBP.  
   
  `FrameTypeFrameData`  
- Wskaźnik ramki pominięta; Ramka danych informacji.  
+ Pominięto wskaźnik ramki; Dostępne są informacje o danych ramek.  
   
  `FrameTypeUnknown`  
- Ramki, który nie ma żadnych informacji o debugowaniu.  
+ Ramka, która nie zawiera żadnych informacji debugowania.  
   
 ## <a name="remarks"></a>Uwagi  
- Wartości w tym wyliczeniu są zwracane przez wywołanie [idiastackframe::get_type —](../../debugger/debug-interface-access/idiastackframe-get-type.md) metody.  
+ Wartości w tym wyliczeniu są zwracane przez wywołanie metody [IDiaStackFrame:: get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: cvconst.h  
+ Nagłówek: cvconst. h  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)   

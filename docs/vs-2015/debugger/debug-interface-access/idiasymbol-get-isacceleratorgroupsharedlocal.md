@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isAcceleratorGroupSharedLocal | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_isAcceleratorGroupSharedLocal | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c2e975f75d25e64925c2566c1c311d942e9c3766
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180989"
 ---
-# <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
+# <a name="idiasymbolget_isacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera flagę wskazującą, czy symbol odnosi się do grupy udostępnionej zmiennej lokalnej w kodzie skompilowanym dla akcelerator AMP C++.  
+Pobiera flagę wskazującą, czy symbol odnosi się do udostępnionej zmiennej lokalnej grupy w kodzie skompilowanym dla akceleratora C++ AMP.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -32,12 +32,12 @@ HRESULT get_isAcceleratorGroupSharedLocal(
   
 #### <a name="parameters"></a>Parametry  
  `pFlag`  
- [out] Wskaźnik do `BOOL` oznacza to, czy symbol odnosi się do grupy udostępnionej zmiennej lokalnej w kodzie skompilowanym dla C++ akcelerator AMP. Jeśli `TRUE`, `get_baseDataSlot` i `get_baseDataOffset` metod można uzyskać informacji o lokalizacji przechowywania dla zmiennej.  
+ określoną Wskaźnik do elementu `BOOL` wskazuje, czy symbol odnosi się do udostępnionej zmiennej lokalnej grupy w kodzie skompilowanym dla akceleratora C++ amp. Jeśli `TRUE` `get_baseDataSlot` `get_baseDataOffset` metody i mogą być używane do uzyskiwania informacji o lokalizacji magazynu dla zmiennej.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_baseDataSlot](../../debugger/debug-interface-access/idiasymbol-get-basedataslot.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol:: get_baseDataSlot](../../debugger/debug-interface-access/idiasymbol-get-basedataslot.md)   
  [IDiaSymbol::get_baseDataOffset](../../debugger/debug-interface-access/idiasymbol-get-basedataoffset.md)

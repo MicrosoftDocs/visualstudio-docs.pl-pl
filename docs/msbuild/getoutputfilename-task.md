@@ -1,5 +1,5 @@
 ---
-title: GetOutputFileName Zadanie | Dokumenty firmy Microsoft
+title: GetOutputFileName — zadanie | Microsoft Docs
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -18,27 +18,27 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d66a7be3751e74ff75787ef194f90da1dcd1d3ce
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593294"
 ---
-# <a name="getoutputfilename-task"></a>GetOutputFileName zadanie
+# <a name="getoutputfilename-task"></a>GetOutputFileName, zadanie
 
-Zadanie pomocnika, aby uzyskać nazwę pliku wyjściowego dla cl i innych narzędzi, które pozwalają na określenie tylko katalogu wyjściowego lub pełnej nazwy pliku lub nic.
+Zadanie pomocnika, aby uzyskać nazwę pliku wyjściowego dla CL i innych narzędzi, które umożliwiają określenie tylko katalogu wyjściowego lub pełną nazwę pliku lub Nothing.
 
 ## <a name="parameters"></a>Parametry
 
-W poniższej tabeli opisano parametry zadania **GetOutputFileName.**
+W poniższej tabeli opisano parametry zadania **GetOutputFileName** .
 
 |Parametr|Opis|
 |---------------|-----------------|
-|**WyjścieWydajenie**|Wymagany parametr **ciągu.**|
-|**Outputfile**|Opcjonalny parametr wyjścia **ciągu.**|
-|**Outputpath**|Opcjonalny parametr **ciągu.**|
-|**Plik źródłowy**|Wymagany parametr **ciągu.**|
+|**OutputExtension**|Wymagany parametr **ciągu** .|
+|**Plik_wyjściowy**|Opcjonalny parametr wyjściowy **ciągu** .|
+|**OutputPath**|Opcjonalny parametr **ciągu** .|
+|**SourceFile**|Wymagany parametr **ciągu** .|
 
 ## <a name="see-also"></a>Zobacz też
 
-[Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+[Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

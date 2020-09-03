@@ -1,5 +1,5 @@
 ---
-title: MSBuild — najlepsze praktyki | Dokumentacja firmy Microsoft
+title: Najlepsze rozwiązania dla programu MSBuild | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,18 +13,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e597b10913ad495193545ab304b3b324d8f66b41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181118"
 ---
 # <a name="msbuild-best-practices"></a>Najlepsze praktyki w programie MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zalecamy następujące najlepsze rozwiązania dotyczące pisania skryptów programu MSBuild:  
+Zalecamy stosowanie następujących najlepszych rozwiązań dotyczących pisania skryptów programu MSBuild:  
   
-- Domyślne wartości właściwości najlepiej są obsługiwane przy użyciu `Condition` atrybutu, a nie przez zadeklarowanie właściwość, której domyślna wartość może zostać przesłonięta w wierszu polecenia. Na przykład użyć  
+- Domyślne wartości właściwości są najlepiej obsługiwane przy użyciu `Condition` atrybutu, a nie poprzez deklarowanie właściwości, której wartość domyślna może zostać przesłonięta w wierszu polecenia. Na przykład użyj  
   
      `<MyProperty Condition="$(MyProperty)" == ''>`  
   
@@ -32,7 +32,7 @@ Zalecamy następujące najlepsze rozwiązania dotyczące pisania skryptów progr
   
      `</MyProperty>`  
   
-- Po zaznaczeniu elementów, należy unikać symboli wieloznacznych. Zamiast tego należy jawnie określić pliki. Ta funkcja ułatwia śledzenie błędów, które mogą wystąpić podczas dodawania i usuwania plików.  
+- Unikaj symboli wieloznacznych podczas zaznaczania elementów. Zamiast tego należy jawnie określić pliki. Ułatwia to śledzenie błędów, które mogą wystąpić podczas dodawania lub usuwania plików.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)

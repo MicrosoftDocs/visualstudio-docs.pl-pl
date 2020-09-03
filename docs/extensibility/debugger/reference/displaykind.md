@@ -1,5 +1,5 @@
 ---
-title: DisplayKind | Dokumenty firmy Microsoft
+title: DisplayKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7634ae3ee03b7e577f0621ffc263e4d45bfe194
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737253"
 ---
 # <a name="displaykind"></a>DisplayKind
-Wylicza prawidłowe wartości, które reprezentują rodzaje informacji do podjęcia z [obiektu IDebugField](../../../extensibility/debugger/reference/idebugfield.md) i wyświetlić dla użytkownika.
+Wylicza prawidłowe wartości reprezentujące rodzaje informacji, które mają być wykonywane z obiektu [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) i wyświetlane użytkownikowi.
 
 ## <a name="syntax"></a>Składnia
 
@@ -55,9 +55,9 @@ Nazwa pola.
 Typ pola.
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: Ee.h
+Nagłówek: EE. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

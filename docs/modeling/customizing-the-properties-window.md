@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548281"
 ---
 # <a name="customize-the-properties-window"></a>Dostosowywanie okno Właściwości
@@ -188,7 +188,7 @@ Możesz również dostarczyć graficzną reprezentację wartości właściwości
 > [!NOTE]
 > Dodaj kod w osobnym pliku kodu w projekcie **DSL** .
 
-Przykład:
+Na przykład:
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -226,7 +226,7 @@ Aby zdefiniować listę wartości standardowych, należy dodać do właściwośc
 (typeof(MyTypeConverter))]
 ```
 
-Zdefiniuj klasę, która dziedziczy z <xref:System.ComponentModel.TypeConverter> . Dodaj kod w osobnym pliku w projekcie **DSL** . Przykład:
+Zdefiniuj klasę, która dziedziczy z <xref:System.ComponentModel.TypeConverter> . Dodaj kod w osobnym pliku w projekcie **DSL** . Na przykład:
 
 ```csharp
 /// <summary>

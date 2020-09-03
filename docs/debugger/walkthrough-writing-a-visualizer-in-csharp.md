@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b3b8a67d1b01d7f3a3ada7b391423676b9294e8d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286325"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Przewodnik: pisanie wizualizatora w języku C\#
@@ -56,7 +56,7 @@ Postępuj zgodnie z poniższymi zadaniami, aby utworzyć wizualizator.
 2. Zmień nazwę z Class1.cs na coś znaczącego, na przykład DebuggerSide.cs.
 
    > [!NOTE]
-   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]automatycznie zmienia deklarację klasy w DebuggerSide.cs, aby odpowiadała nowej nazwie pliku.
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie zmienia deklarację klasy w DebuggerSide.cs, aby odpowiadała nowej nazwie pliku.
 
 3. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **odwołania** i wybierz polecenie **Dodaj odwołanie** w menu skrótów.
 
@@ -88,7 +88,7 @@ Postępuj zgodnie z poniższymi zadaniami, aby utworzyć wizualizator.
    public class DebuggerSide : DialogDebuggerVisualizer
    ```
 
-   `DialogDebuggerVisualizer`ma jedną metodę abstrakcyjną ( `Show` ), która musi zostać przesłonięta.
+   `DialogDebuggerVisualizer` ma jedną metodę abstrakcyjną ( `Show` ), która musi zostać przesłonięta.
 
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Aby zastąpić metodę DialogDebuggerVisualizer. show
 
@@ -206,7 +206,7 @@ W kodzie po stronie debugera należy określić typ do wizualizacji (źródło o
 2. Zmień nazwę z Program.cs na bardziej zrozumiałą, taką jak TestConsole.cs.
 
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]automatycznie zmienia deklarację klasy w TestConsole.cs, aby odpowiadała nowej nazwie pliku.
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie zmienia deklarację klasy w TestConsole.cs, aby odpowiadała nowej nazwie pliku.
 
 3. W TestConsole.cs Dodaj następujący kod do `using` dyrektyw:
 

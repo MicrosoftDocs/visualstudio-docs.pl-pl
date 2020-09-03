@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 3c756f3d9a89294ecce054650037be3f7b26c291
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540936"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Konfigurowanie aplikacji sieci Web w języku Python dla usług IIS
@@ -25,7 +25,7 @@ W przypadku korzystania z Internet Information Services (IIS) jako serwera sieci
 > [!Note]
 > Ten artykuł zawiera wcześniej wskazówki dotyczące konfigurowania języka Python na Azure App Service w systemie Windows. Rozszerzenia Python i hosty systemu Windows używane w tym scenariuszu zostały zaniechane na rzecz Azure App Service w systemie Linux. Aby uzyskać więcej informacji, zobacz [publikowanie aplikacji w języku Python do Azure App Service (Linux)](publishing-python-web-applications-to-azure-from-visual-studio.md). Poprzedni artykuł jest jednak nadal dostępny na [zarządzaniu App Service w systemie Windows przy użyciu rozszerzeń języka Python](managing-python-on-azure-app-service.md).
 
-## <a name="install-python-on-windows"></a>Instalowanie języka Python w systemie Windows
+## <a name="install-python-on-windows"></a>Instalowanie środowiska języka Python w systemie Windows
 
 Aby uruchomić aplikację sieci Web, najpierw zainstaluj wymaganą wersję środowiska Python bezpośrednio na komputerze hosta z systemem Windows, zgodnie z opisem w artykule [Instalowanie interpreterów języka Python](installing-python-interpreters.md).
 
@@ -100,8 +100,8 @@ Następnie zmodyfikuj plik *web.config* aplikacji, aby uwzględnić pełne ście
     Te `<appSettings>` wartości są dostępne dla aplikacji jako zmienne środowiskowe:
 
     - Wartość dla `PYTHONPATH` może być swobodnie rozszerzona, ale musi zawierać katalog główny aplikacji.
-    - `WSGI_HANDLER`musi wskazywać aplikację WSGI, która nie jest przenośna z poziomu aplikacji.
-    - `WSGI_LOG`jest opcjonalne, ale zalecane do debugowania aplikacji.
+    - `WSGI_HANDLER` musi wskazywać aplikację WSGI, która nie jest przenośna z poziomu aplikacji.
+    - `WSGI_LOG` jest opcjonalne, ale zalecane do debugowania aplikacji.
 
 1. Ustaw `WSGI_HANDLER` wpis w *web.config* stosownie do używanej platformy:
 

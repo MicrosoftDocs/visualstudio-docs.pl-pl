@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 25b144409ae58f006602706a5b5cb498c0535ea2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540169"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Wiązanie kontrolek WPF z danymi w programie Visual Studio
@@ -56,10 +56,10 @@ Możesz wyświetlić dane dla użytkowników aplikacji przez powiązanie danych 
 
 |Źródło danych|Generowanie pliku XAML, która wiąże formant ze źródłem danych|Generowanie kodu, który wypełnia źródło danych danymi|
 |-----------------|-----------------------------------------------------------|--------------------------------------------------------|
-|Dataset|Tak|Tak|
+|Zestaw danych|Tak|Tak|
 |[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]|Tak|Tak|
-|Usługa|Yes|Nie|
-|Obiekt|Yes|Nie|
+|Usługa|Tak|Nie|
+|Obiekt|Tak|Nie|
 
 ### <a name="datasets"></a>Zestawy danych
  Gdy przeciągniesz tabelę lub kolumnę z okna **źródła danych** do projektanta, generowane są [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] następujące elementy:
@@ -68,7 +68,7 @@ Możesz wyświetlić dane dla użytkowników aplikacji przez powiązanie danych 
 
 - Tworzy wiązania danych dla formantu. Jeśli przeciągniesz element do istniejącego formantu w projektancie, XAML powiąże formant z elementem. Jeśli przeciągniesz element do kontenera, kod XAML utworzy formant, który został wybrany dla przeciąganego elementu i powiąże formant z elementem. Formant jest tworzony wewnątrz nowego <xref:System.Windows.Controls.Grid> .
 
-  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]wprowadza również następujące zmiany w pliku związanym z kodem:
+  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wprowadza również następujące zmiany w pliku związanym z kodem:
 
 - Tworzy <xref:System.Windows.FrameworkElement.Loaded> program obsługi zdarzeń dla [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] elementu, który zawiera kontrolkę. Program obsługi zdarzeń wypełnia tabelę danymi, pobiera <xref:System.Windows.Data.CollectionViewSource> z zasobów kontenera, a następnie tworzy pierwszy element danych jako bieżący element. Jeśli <xref:System.Windows.FrameworkElement.Loaded> procedura obsługi zdarzeń już istnieje, program [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dodaje ten kod do istniejącej procedury obsługi zdarzeń.
 
@@ -100,7 +100,7 @@ Możesz wyświetlić dane dla użytkowników aplikacji przez powiązanie danych 
 > [!NOTE]
 > Klasy niestandardowe muszą być publiczne i domyślnie mają konstruktora bez parametrów. Nie mogą być klasami zagnieżdżonymi mającymi "kropkę" w ich składni. Aby uzyskać więcej informacji, zobacz [XAML i klasy niestandardowe dla WPF](https://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
 
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] , że program wykonuje następujące czynności:
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] , że program wykonuje następujące czynności:
 
 - Dodaje nowe <xref:System.Windows.Data.CollectionViewSource> do zasobów kontenera, do którego został przeciągnięty element. <xref:System.Windows.Data.CollectionViewSource>Jest obiektem, który może służyć do nawigowania i wyświetlania danych w obiekcie.
 

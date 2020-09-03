@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 06428a633aec41489a8a77655d6ea9442ffffaa0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540091"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Wiązanie kontrolek WPF z danymi w programie Visual Studio
@@ -34,7 +34,7 @@ ms.locfileid: "85540091"
 
 Formanty powiązane z danymi można tworzyć przy [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] użyciu okna **źródła danych** . Najpierw Dodaj źródło danych do okna **źródła danych** . Następnie przeciągnij elementy z okna **źródła danych** do**projektanta WPF**.
 
-## <a name="add-a-data-source-to-the-data-sources-window"></a><a name="adding"></a>Dodawanie źródła danych do okna źródła danych
+## <a name="add-a-data-source-to-the-data-sources-window"></a><a name="adding"></a> Dodawanie źródła danych do okna źródła danych
  Aby można było tworzyć kontrolki powiązane z danymi, należy najpierw dodać źródło danych do okna **źródła danych** .
 
 #### <a name="to-add-a-data-source-to-the-data-sources-window"></a>Aby dodać źródło danych do okna źródła danych
@@ -53,7 +53,7 @@ Formanty powiązane z danymi można tworzyć przy [!INCLUDE[TLA#tla_titlewinclie
 
     - [Powiązanie danych z istniejącymi kontrolkami w projektancie](#existing).
 
-## <a name="create-a-control-that-is-bound-to-a-single-field-of-data"></a><a name="simple"></a>Utwórz formant, który jest powiązany z pojedynczym polem danych
+## <a name="create-a-control-that-is-bound-to-a-single-field-of-data"></a><a name="simple"></a> Utwórz formant, który jest powiązany z pojedynczym polem danych
  Po dodaniu źródła danych do okna **źródła danych** można utworzyć nową kontrolkę powiązaną z danymi, która wyświetla pojedyncze pole danych, takie jak <xref:System.Windows.Controls.ComboBox> lub <xref:System.Windows.Controls.TextBox> .
 
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>Aby utworzyć formant, który jest powiązany z pojedynczym polem danych
@@ -66,9 +66,9 @@ Formanty powiązane z danymi można tworzyć przy [!INCLUDE[TLA#tla_titlewinclie
 
 3. Przeciągnij element do prawidłowego kontenera w projektancie. Aby uzyskać więcej informacji na temat prawidłowych kontenerów, zobacz [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]tworzy nową kontrolkę powiązaną z danymi i odpowiednio zatytułowaną <xref:System.Windows.Controls.Label> w kontenerze. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]generuje również [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] kod, aby powiązać formant z danymi. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tworzy nową kontrolkę powiązaną z danymi i odpowiednio zatytułowaną <xref:System.Windows.Controls.Label> w kontenerze. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje również [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] kod, aby powiązać formant z danymi. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-## <a name="create-a-control-that-is-bound-to-multiple-fields-of-data"></a><a name="complex"></a>Tworzenie kontrolki, która jest powiązana z wieloma polami danych
+## <a name="create-a-control-that-is-bound-to-multiple-fields-of-data"></a><a name="complex"></a> Tworzenie kontrolki, która jest powiązana z wieloma polami danych
  Po dodaniu źródła danych do okna **źródła danych** można utworzyć nową kontrolkę powiązaną z danymi, która wyświetla wiele pól danych, takich jak <xref:System.Windows.Controls.DataGrid> lub <xref:System.Windows.Controls.ListView> .
 
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>Aby utworzyć formant, który jest powiązany z wieloma polami danych
@@ -84,9 +84,9 @@ Formanty powiązane z danymi można tworzyć przy [!INCLUDE[TLA#tla_titlewinclie
 
 3. Przeciągnij element do prawidłowego kontenera w projektancie, na przykład <xref:System.Windows.Controls.Grid> . Aby uzyskać więcej informacji na temat prawidłowych kontenerów, zobacz [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]tworzy nową kontrolkę powiązaną z danymi w kontenerze. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]generuje również [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] kod, aby powiązać formant z danymi. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tworzy nową kontrolkę powiązaną z danymi w kontenerze. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje również [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] kod, aby powiązać formant z danymi. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-## <a name="create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a><a name="details"></a>Tworzenie zestawu formantów, które są powiązane z wieloma polami danych
+## <a name="create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a><a name="details"></a> Tworzenie zestawu formantów, które są powiązane z wieloma polami danych
  Po dodaniu źródła danych do okna **źródła danych** można powiązać tabelę danych lub obiekt z zestawem kontrolek. Dla każdej kolumny lub właściwości w tabeli lub obiekcie tworzony jest inny formant.
 
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>Aby utworzyć zestaw formantów, które są powiązane z wieloma polami danych
@@ -100,9 +100,9 @@ Formanty powiązane z danymi można tworzyć przy [!INCLUDE[TLA#tla_titlewinclie
 
 3. Przeciągnij element do prawidłowego kontenera w projektancie, na przykład <xref:System.Windows.Controls.Grid> . Aby uzyskać więcej informacji na temat prawidłowych kontenerów, zobacz [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Tworzy nowe kontrolki powiązane z danymi w kontenerze. Każda kontrolka jest powiązana z inną kolumną lub właściwością, a każda z nich towarzyszy odpowiednio zatytułowanej <xref:System.Windows.Controls.Label> kontrolki. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]generuje również [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] kod, aby powiązać kontrolki z danymi. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Tworzy nowe kontrolki powiązane z danymi w kontenerze. Każda kontrolka jest powiązana z inną kolumną lub właściwością, a każda z nich towarzyszy odpowiednio zatytułowanej <xref:System.Windows.Controls.Label> kontrolki. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje również [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] kod, aby powiązać kontrolki z danymi. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-## <a name="binddata-to-existing-controls-in-the-designer"></a><a name="existing"></a>Binddata do istniejących kontrolek w projektancie
+## <a name="binddata-to-existing-controls-in-the-designer"></a><a name="existing"></a> Binddata do istniejących kontrolek w projektancie
  Po dodaniu źródła danych do okna **źródła danych** można dodać powiązanie danych do istniejącej kontrolki w projektancie.
 
 #### <a name="to-bind-data-to-an-existing-control-in-the-designer"></a>Aby powiązać dane z istniejącą kontrolką w projektancie
@@ -115,7 +115,7 @@ Formanty powiązane z danymi można tworzyć przy [!INCLUDE[TLA#tla_titlewinclie
 
 2. Przeciągnij wybrany element z okna **źródła danych** na istniejący formant w projektancie. Formant musi być prawidłowym miejscem docelowym upuszczania. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] i kodu, aby powiązać formant z danymi. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] i kodu, aby powiązać formant z danymi. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
     > [!NOTE]
     > Jeśli kontrolka jest już powiązana z danymi, powiązanie danych dla kontrolki jest resetowane do elementu, który został przeciągnięty do formantu ostatnio.

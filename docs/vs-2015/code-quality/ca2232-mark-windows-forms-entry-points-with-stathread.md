@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 42bb554f8e57c036d41a89fdc2657a25ecc74e20
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540286"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: Oznacz punkty wejścia modelu Windows Forms atrybutem STAThread
@@ -36,10 +36,10 @@ ms.locfileid: "85540286"
  Zestaw odwołuje się do <xref:System.Windows.Forms> przestrzeni nazw, a jego punkt wejścia nie jest oznaczony <xref:System.STAThreadAttribute?displayProperty=fullName> atrybutem.
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.STAThreadAttribute>wskazuje, że model wątkowości COM dla aplikacji jest apartamentem jednowątkowym. Atrybut ten musi być obecny w punkcie wejścia każdej aplikacji korzystającej z Windows Forms; jeśli zostanie pominięty, składniki systemu Windows mogą nie działać poprawnie. Jeśli atrybut nie jest obecny, aplikacja używa wielowątkowego modelu apartamentu, który nie jest obsługiwany przez Windows Forms.
+ <xref:System.STAThreadAttribute> wskazuje, że model wątkowości COM dla aplikacji jest apartamentem jednowątkowym. Atrybut ten musi być obecny w punkcie wejścia każdej aplikacji korzystającej z Windows Forms; jeśli zostanie pominięty, składniki systemu Windows mogą nie działać poprawnie. Jeśli atrybut nie jest obecny, aplikacja używa wielowątkowego modelu apartamentu, który nie jest obsługiwany przez Windows Forms.
 
 > [!NOTE]
-> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]projekty korzystające ze struktury aplikacji nie muszą oznaczać metody **Main** z STAThread. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]Kompilator robi automatycznie.
+> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projekty korzystające ze struktury aplikacji nie muszą oznaczać metody **Main** z STAThread. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]Kompilator robi automatycznie.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, Dodaj <xref:System.STAThreadAttribute> atrybut do punktu wejścia. Jeśli <xref:System.MTAThreadAttribute?displayProperty=fullName> atrybut jest obecny, usuń go.

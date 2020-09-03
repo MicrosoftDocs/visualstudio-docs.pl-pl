@@ -11,32 +11,32 @@ ms.workload:
 - multiple
 author: TerryGLee
 ms.openlocfilehash: f1a95808ec19edba01b266ccd280603bcc4321dc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593151"
 ---
 # <a name="state-activity-designer"></a>State, projektant działań
 
-<xref:System.Activities.Statements.State> reprezentuje stan, w którym może znajdować się komputer stanu.
+<xref:System.Activities.Statements.State>Reprezentuje stan, w którym może znajdować się komputer stanu.
 
 ## <a name="using-the-state-activity-designer"></a>Korzystanie z programu Projektant działań stanu
 
-Aby dodać <xref:System.Activities.Statements.State> do przepływu pracy, przeciągnij projektanta działań **stanu** z sekcji **stan komputera** **przybornika** i upuść go na działanie <xref:System.Activities.Statements.StateMachine> na Projektant przepływu pracy powierzchni. Działanie <xref:System.Activities.Statements.State> można porzucić do <xref:System.Activities.Statements.StateMachine> i przejść dodanych później; lub można utworzyć przejście, gdy działanie <xref:System.Activities.Statements.State> zostanie porzucone. Aby dodać działanie <xref:System.Activities.Statements.State> i utworzyć przejście w jednym kroku, przeciągnij działanie **stanu** z sekcji **stan automatu** **przybornika** i umieść je w innym stanie w Projektancie przepływu pracy. Gdy przeciągany <xref:System.Activities.Statements.State> jest nad innym <xref:System.Activities.Statements.State>, cztery Trójkąty będą widoczne wokół innych <xref:System.Activities.Statements.State>. Jeśli <xref:System.Activities.Statements.State> zostanie porzucone do jednego z czterech trójkątów, zostanie dodany do komputera stanu i zostanie utworzone przejście z <xref:System.Activities.Statements.State> źródłowej do usuniętej <xref:System.Activities.Statements.State>docelowej. Aby uzyskać więcej informacji, zobacz [Przechodzenie](../workflow-designer/transition-activity-designer.md).
+Aby dodać <xref:System.Activities.Statements.State> do przepływu pracy, przeciągnij projektanta działań **stanu** z sekcji **stan automatu** w **przyborniku** i upuść go na <xref:System.Activities.Statements.StateMachine> działanie na Projektant przepływu pracy powierzchni. <xref:System.Activities.Statements.State>Działanie może zostać porzucone do <xref:System.Activities.Statements.StateMachine> i przejść dodane później; lub można utworzyć przejście, gdy <xref:System.Activities.Statements.State> działanie zostanie odrzucone. Aby dodać <xref:System.Activities.Statements.State> działanie i utworzyć przejście w jednym kroku, przeciągnij działanie **stanu** z sekcji **stan automatu** **przybornika** i umieść je w innym stanie w Projektancie przepływu pracy. Gdy przeciągany <xref:System.Activities.Statements.State> jest nad innym <xref:System.Activities.Statements.State> , cztery Trójkąty będą widoczne wokół siebie <xref:System.Activities.Statements.State> . Jeśli <xref:System.Activities.Statements.State> zostanie porzucone na jeden z czterech trójkątów, zostanie dodany do komputera stanu i zostanie utworzone przejście z lokalizacji źródłowej <xref:System.Activities.Statements.State> do porzuconego miejsca docelowego <xref:System.Activities.Statements.State> . Aby uzyskać więcej informacji, zobacz [Przechodzenie](../workflow-designer/transition-activity-designer.md).
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Właściwości działania stanu w Projektant przepływu pracy
 
-W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.State>, które można ustawić za pomocą projektanta przepływów pracy, i opisano sposób ich użycia w projektancie. Niektóre z tych właściwości można edytować w siatce właściwości, a niektóre z nich można edytować na powierzchni projektanta.
+W poniższej tabeli przedstawiono <xref:System.Activities.Statements.State> właściwości, które można ustawić za pomocą projektanta przepływów pracy, i opisano sposób ich użycia w projektancie. Niektóre z tych właściwości można edytować w siatce właściwości, a niektóre z nich można edytować na powierzchni projektanta.
 
-|Nazwa właściwości|Wymagane|Pomiar|
+|Nazwa właściwości|Wymagany|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Statements.State.DisplayName%2A>|Fałsz|Określa przyjazną nazwę <xref:System.Activities.Statements.State> projektanta działań w nagłówku. Wartość domyślna to **State**. Wartość można edytować w siatce właściwości lub bezpośrednio w nagłówku projektanta działań. <xref:System.Activities.Statements.State.DisplayName%2A> jest używana w nawigacyjnym nawigacji, który jest wyświetlany w górnej części projektanta przepływu pracy.<br /><br /> Mimo że <xref:System.Activities.Statements.State.DisplayName%2A> nie jest ściśle wymagane, najlepszym rozwiązaniem jest użycie jednego z nich.|
-|<xref:System.Activities.Statements.State.Entry%2A>|Fałsz|Określa akcję, która występuje, gdy ten stan jest przenoszony do. Po rozwinięciu działania <xref:System.Activities.Statements.State> tę wartość można ustawić, przeciągając działanie z **przybornika** i upuszczając je w sekcji **wpis** stanu.|
-|<xref:System.Activities.Statements.State.Exit%2A>|Fałsz|Określa akcję, która występuje, gdy ten stan zostanie przeniesiony z. Po rozwinięciu działania <xref:System.Activities.Statements.State> tę wartość można ustawić, przeciągając działanie z **przybornika** i upuszczając je w sekcji **wyjście** stanu.|
-|<xref:System.Activities.Statements.State.Transitions%2A>|Fałsz|Wyświetla listę możliwych przejść, które pochodzą z <xref:System.Activities.Statements.State>. Każdy element na liście ma link do skojarzonego <xref:System.Activities.Statements.Transition> i <xref:System.Activities.Statements.State>docelowej. Kliknięcie linku spowoduje przełączenie projektanta do rozwiniętego widoku <xref:System.Activities.Statements.Transition> lub <xref:System.Activities.Statements.State>.|
+|<xref:System.Activities.Statements.State.DisplayName%2A>|Fałsz|Określa przyjazną nazwę <xref:System.Activities.Statements.State> projektanta działań w nagłówku. Wartość domyślna to **State**. Wartość można edytować w siatce właściwości lub bezpośrednio w nagłówku projektanta działań. Ta wartość <xref:System.Activities.Statements.State.DisplayName%2A> jest używana w nawigacyjnym nawigacji, który jest wyświetlany w górnej części projektanta przepływu pracy.<br /><br /> Chociaż <xref:System.Activities.Statements.State.DisplayName%2A> nie jest to ściśle wymagane, najlepszym rozwiązaniem jest użycie jednego z nich.|
+|<xref:System.Activities.Statements.State.Entry%2A>|Fałsz|Określa akcję, która występuje, gdy ten stan jest przenoszony do. Gdy <xref:System.Activities.Statements.State> działanie jest rozwinięte, tę wartość można ustawić przez przeciągnięcie działania z **przybornika** i usunięcie go do sekcji **wpis** stanu.|
+|<xref:System.Activities.Statements.State.Exit%2A>|Fałsz|Określa akcję, która występuje, gdy ten stan zostanie przeniesiony z. Gdy <xref:System.Activities.Statements.State> działanie jest rozwinięte, tę wartość można ustawić przez przeciągnięcie działania z **przybornika** i usunięcie go do sekcji **wyjście** stanu.|
+|<xref:System.Activities.Statements.State.Transitions%2A>|Fałsz|Wyświetla listę możliwych przejść, które pochodzą z programu <xref:System.Activities.Statements.State> . Każdy element na liście ma link do skojarzonego <xref:System.Activities.Statements.Transition> i docelowego obiektu <xref:System.Activities.Statements.State> . Kliknięcie linku spowoduje przełączenie projektanta do rozwiniętego widoku <xref:System.Activities.Statements.Transition> lub <xref:System.Activities.Statements.State> .|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [StateMachine](../workflow-designer/statemachine-activity-designer.md)
 - [FinalState](../workflow-designer/finalstate-activity-designer.md)

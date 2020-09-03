@@ -1,5 +1,5 @@
 ---
-title: IDiaSourceFile::get_uniqueId | Microsoft Docs
+title: 'IDiaSourceFile:: get_uniqueId | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e5237d8a524bd77f67c86a650bb4c8f075e407fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190628"
 ---
-# <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
+# <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera wartość klucza proste liczba całkowita, która jest unikatowa dla tego obrazu.  
+Pobiera prostą wartość klucza liczb całkowitych, która jest unikatowa dla tego obrazu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,13 +35,13 @@ HRESULT get_uniqueId ( 
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca wartość klucza proste liczba całkowita, która jest unikatowa dla tego obrazu.  
+ określoną Zwraca prostą wartość klucza liczb całkowitych, która jest unikatowa dla tego obrazu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Porównywanie kluczy zamiast ciągów może przyspieszyć przetwarzanie numeru wiersza.  
+ Porównanie kluczy zamiast ciągów może przyspieszyć przetwarzanie numerów wierszy.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

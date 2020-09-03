@@ -10,10 +10,10 @@ ms.date: 03/18/2017
 ms.author: mikejo
 ms.technology: vs-ide-debug
 ms.openlocfilehash: 94e7d48c767ef9705c20b049b57f459290679217
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911846"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Informacje dotyczące różnych sposobów debugowania usługi w chmurze platformy Azure
@@ -26,7 +26,7 @@ Możesz zaoszczędzić czas i pieniądze, korzystając z emulatora obliczeń pla
 Jeśli używasz Visual Studio Enterprise do zapisywania ról przeznaczonych dla .NET Framework 4,5, możesz włączyć IntelliTrace w czasie wdrażania usługi w chmurze platformy Azure z poziomu programu Visual Studio. IntelliTrace zawiera dziennik, którego można użyć w programie Visual Studio do debugowania aplikacji tak, jakby była uruchomiona na platformie Azure. Aby uzyskać więcej informacji, zobacz [debugowanie opublikowanej usługi w chmurze za pomocą IntelliTrace i programu Visual Studio](vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
 ## <a name="remote-debugging"></a>Debugowanie zdalne
-Podczas wdrażania usługi w chmurze z poziomu programu Visual Studio można włączyć debugowanie zdalne w usługach w chmurze. W przypadku wybrania opcji włączenia debugowania zdalnego dla wdrożenia usługi zdalnego debugowania są instalowane na maszynach wirtualnych, na których działa każde wystąpienie roli. Te usługi, takie jak `msvsmon.exe` — nie wpływają na wydajność ani nie powodują dodatkowych kosztów. Aby uzyskać więcej informacji, zobacz [debugowanie usługi w chmurze na platformie Azure](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-a-cloud-service-in-azure).
+Podczas wdrażania usługi w chmurze z poziomu programu Visual Studio można włączyć debugowanie zdalne w usługach w chmurze. W przypadku wybrania opcji włączenia debugowania zdalnego dla wdrożenia usługi zdalnego debugowania są instalowane na maszynach wirtualnych, na których działa każde wystąpienie roli. Te usługi — takie jak `msvsmon.exe` -nie wpływają na wydajność ani nie powodują dodatkowych kosztów. Aby uzyskać więcej informacji, zobacz [debugowanie usługi w chmurze na platformie Azure](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-a-cloud-service-in-azure).
 
 ## <a name="next-steps"></a>Następne kroki
 - [Debugowanie usługi w chmurze lub maszyny wirtualnej platformy Azure w programie Visual Studio](./vs-azure-tools-debug-cloud-services-virtual-machines.md) — Poznaj szczegóły dotyczące debugowania usług Azure Cloud Services.

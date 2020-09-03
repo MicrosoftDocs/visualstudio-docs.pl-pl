@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
 ms.openlocfilehash: 43bd06fba795c09bfa341ce7b61a3ced0fe15214
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86454166"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Wdrażanie kontenera ASP.NET Core do Azure App Service przy użyciu programu Visual Studio
@@ -133,7 +133,7 @@ Ustawienia dla wdrożonego App Service można wyświetlić, otwierając menu **U
 
 W tym miejscu można wyświetlić informacje o kontenerze, wyświetlić lub pobrać dzienniki albo skonfigurować ciągłe wdrażanie. Zobacz [Azure App Service ciągłej integracji/ciągłego wdrażania](/azure/app-service/containers/app-service-linux-ci-cd).
 
-## <a name="clean-up-resources"></a>Oczyszczanie zasobów
+## <a name="clean-up-resources"></a>Czyszczenie zasobów
 
 Aby usunąć wszystkie zasoby platformy Azure skojarzone z tym samouczkiem, Usuń grupę zasobów przy użyciu [Azure Portal](https://portal.azure.com). Aby znaleźć grupę zasobów skojarzoną z opublikowaną aplikacją sieci Web, wybierz opcję **Wyświetl**  >  **inne**  >  **działanie publikowania w sieci Web**systemu Windows, a następnie wybierz ikonę koła zębatego. Zostanie otwarta karta **Publikowanie** , która zawiera grupę zasobów.
 
@@ -143,6 +143,6 @@ W Azure Portal wybierz pozycję **grupy zasobów**, a następnie wybierz grupę 
 
 Dowiedz się więcej o [Azure App Service](/azure/app-service/overview).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Wdrażanie w rejestrze kontenerów platformy Azure](hosting-web-apps-in-docker.md)

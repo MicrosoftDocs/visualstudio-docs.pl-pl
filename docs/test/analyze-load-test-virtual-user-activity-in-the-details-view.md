@@ -12,42 +12,42 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0289ff0d4a20eacc4f6801d9300d39df594bc79e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591238"
 ---
-# <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analizowanie aktywności użytkownika wirtualnego testu obciążenia w widoku Szczegóły analizatora testów obciążenia
+# <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analizowanie aktywności wirtualnego użytkownika testu obciążenia w widoku szczegółów analizatora testu obciążenia
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-**Wykres aktywności użytkownika wirtualnego**
+**Wykres aktywności wirtualnego użytkownika**
 
-![Wykres aktywności użytkownika wirtualnego](../test/media/virtual_actchart.png)
+![Wykres aktywności wirtualnego użytkownika](../test/media/virtual_actchart.png)
 
-Widok **Szczegóły** wyświetla **wykres aktywności użytkownika wirtualnego,** który służy do wizualnej analizy tego, co poszczególne użytkownicy wirtualni zrobili podczas testu obciążenia. **Wykres aktywności użytkownika wirtualnego** umożliwia wyświetlanie wzorców aktywności użytkownika, wzorców obciążenia, skorelowania nieudanych lub powolnych testów oraz wyświetlanie żądań z inną aktywnością użytkownika wirtualnego. **Wykres aktywności użytkownika wirtualnego** może również pomóc w określeniu skoków użycia procesora CPU, spadków żądań na sekundę oraz testów lub stron uruchomionych podczas skoków i upadków.
+W widoku **szczegółów** zostanie wyświetlony **Wykres aktywności wirtualnego użytkownika**, który służy do wizualnego analizowania poszczególnych użytkowników wirtualnych podczas testu obciążenia. **Wykres aktywności wirtualnego użytkownika** umożliwia wyświetlenie wzorców aktywności użytkownika, wzorców obciążenia, skorelowanie nieudanych lub powolnych testów oraz wyświetlanie żądań z innymi wirtualnymi działaniami użytkowników. **Wykres aktywności wirtualnego użytkownika** może również pomóc w ustaleniu szczytów użycia procesora, spadku żądań na sekundę oraz testów lub stron, które zostały uruchomione podczas skoków i porzucania.
 
 > [!NOTE]
-> Przed uruchomieniem testu obciążenia, dla którego chcesz użyć **wykresu szczegółów aktywności użytkownika wirtualnego,** należy sprawdzić, czy właściwość **Magazyn szczegółów chronometrażu** jest ustawiona na opcję **AllIndividualDetails** przy użyciu Edytora testu wydajności ładowania.
+> Przed uruchomieniem testu obciążenia, dla którego chcesz użyć **wykresu szczegółów aktywności wirtualnego użytkownika**, należy sprawdzić, czy właściwość **przechowywanie szczegółów czasu** jest ustawiona na opcję **AllIndividualDetails** za pomocą edytora testu wydajności obciążenia.
 
-**Panel Legenda szczegółów**
+**Panel legendy szczegółów**
 
-![Panel Legenda szczegółów](../test/media/ltest_detailslegend.png)
+![Panel legendy szczegółów](../test/media/ltest_detailslegend.png)
 
-Panel legendy szczegółów jest widoczny na **wykresie aktywności użytkownika wirtualnego**. Okienko legendy szczegółów umożliwia odfiltrowanie testów, stron i transakcji na podstawie kilku różnych kryteriów. Na przykład można usunąć niektóre testy z widoku lub usunąć wszystkie pomyślne testy lub usunąć testy, które nie powiodły się z niektórych błędów. Można również usunąć wszystkie testy, które nie mają dzienników.
+Panel legenda szczegółów jest widoczny na **wykresie aktywności wirtualnego użytkownika**. Okienko legenda szczegółów umożliwia filtrowanie testów, stron i transakcji na podstawie różnych kryteriów. Na przykład można usunąć niektóre testy z widoku lub usunąć wszystkie testy zakończone powodzeniem lub usunąć testy, które zakończyły się niepowodzeniem z pewnymi błędami. Można również usunąć wszystkie testy, które nie mają dzienników.
 
-Można wyróżnić testy, które nie powiodły się, który wyświetla wszystkie testy nie powiodło się w kolorze czerwonym. Można również wyróżnić testy, które mają dzienniki testów. Testy z dziennikami będą kolorowe na zielono.
+Można wyróżnić testy, które nie powiodły się, co spowoduje wyświetlenie wszystkich testów zakończonych niepowodzeniem w kolorze czerwonym. Możesz również wyróżnić testy, które mają dzienniki testowe. Testy z dziennikami będą kolorowe w kolorze zielonym.
 
-**Panel wyników filtru**
+**Panel wyników filtrowania**
 
 ![Panel wyników filtrowania](../test/media/ltest_filterresults.png)
 
-Panel Wyniki filtru jest widoczny na **wykresie aktywności użytkownika wirtualnego**. Panel Wyniki filtru można filtrować w następujący sposób:
+Panel wyniki filtrowania jest widoczny na **wykresie aktywności wirtualnego użytkownika**. Panel wyniki filtrowania może odfiltrować następujące elementy:
 
-- **Pokaż tylko wyniki z dziennikami** Wyświetla tylko wyniki testów, które mają dzienniki testów skojarzone z nimi.
+- **Pokaż tylko wyniki z dziennikami** Wyświetla tylko wyniki testów, które mają skojarzone dzienniki testowe.
 
-- **Pokaż pomyślne wyniki** Wyświetla pomyślne wyniki.
+- **Pokaż pomyślne wyniki** Wyświetla wyniki zakończone powodzeniem.
 
 - **Pokaż wyniki z błędami** Wyświetla wyniki z błędami, które mogą pomóc w debugowaniu.
 
@@ -55,11 +55,11 @@ Panel Wyniki filtru jest widoczny na **wykresie aktywności użytkownika wirtual
 
 |Zadania|Skojarzone tematy|
 |-|-|
-|**Uruchom test obciążenia:** Po utworzeniu testu obciążenia i skonfigurowaniu go w taki sposób, aby umożliwić zbieranie danych o aktywności użytkownika wirtualnego, należy go uruchomić do czasu jego zakończenia, aby wyświetlić **wykres aktywności użytkownika wirtualnego**.||
-|**Wyświetlanie wyników testu obciążenia, które zawierają dane aktywności użytkownika wirtualnego:** Po utworzeniu, skonfigurowaniu i uruchomieniu testu obciążenia można wyświetlić dane aktywności użytkownika wirtualnego za pomocą **wykresu aktywności użytkownika wirtualnego**.|-   [Analizowanie wyników testu obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Jak: Analizowanie, co użytkownicy wirtualni robią podczas testu obciążenia](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**Izoluj problemy z wydajnością w testach obciążenia:** Wykres aktywności **użytkownika wirtualnego** służy do wyizolowania problemów z wydajnością w teście obciążenia.|-   [Instruktaż: Używanie wykresu aktywności użytkownika wirtualnego do izolowania problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**Uruchom test obciążenia:** Po utworzeniu testu obciążenia i skonfigurowaniu go w celu umożliwienia zbierania danych aktywności wirtualnego użytkownika należy uruchomić test do momentu jego zakończenia, aby wyświetlić **Wykres aktywności wirtualnego użytkownika**.||
+|**Wyświetl wyniki testu obciążenia zawierające dane dotyczące wirtualnego działania użytkownika:** Po utworzeniu, skonfigurowaniu i zakończeniu testu obciążenia można wyświetlić dane dotyczące aktywności wirtualnego użytkownika za pomocą **wykresu aktywności wirtualnego użytkownika**.|-   [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Instrukcje: analizowanie, co robią Użytkownicy wirtualną podczas testu obciążenia](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**Izolowanie problemów z wydajnością w testach obciążenia:** Za pomocą **wykresu aktywności wirtualnego użytkownika** można wyizolować problemy z wydajnością w teście obciążenia.|-   [Przewodnik: używanie wykresu aktywności wirtualnego użytkownika w celu wyizolowania problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Analizowanie wyników testu obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Analizowanie wyników testów obciążenia i błędów w widoku Tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+- [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizowanie wyników testów obciążenia i błędów w widoku tabel](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

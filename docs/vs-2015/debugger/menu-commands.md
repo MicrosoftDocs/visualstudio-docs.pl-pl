@@ -1,5 +1,5 @@
 ---
-title: Polecenia menu | Dokumentacja firmy Microsoft
+title: Polecenia menu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,45 +13,45 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 640d4586d851be6f4335ed346e0e155acb4ae902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181204"
 ---
 # <a name="menu-commands"></a>Polecenia menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Tematy pomocy w tej sekcji wymieniono poleceń dostępnych w menu Spy ++.  
+Tematy pomocy w tej sekcji zawierają listę poleceń dostępnych w menu Spy + +.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Polecenia menu w programie Spy](../debugger/spy-menu-commands.md)  
- Zawiera opis każdego polecenia, które są dostępne z **Spy** menu.  
+ [Polecenia w menu Spy](../debugger/spy-menu-commands.md)  
+ Opisuje każde polecenie dostępne w menu **Spy** .  
   
- [Polecenia drzewa menu](../debugger/tree-menu-commands.md)  
- Zawiera opis każdego polecenia, które są dostępne z **drzewa** menu.  
+ [Polecenia menu Drzewo](../debugger/tree-menu-commands.md)  
+ Opisuje każde polecenie dostępne w menu **drzewa** .  
   
- [Polecenia menu wyszukiwania](../debugger/search-menu-commands.md)  
- Zawiera opis każdego polecenia, które są dostępne z **wyszukiwania** menu.  
+ [Polecenia menu Wyszukaj](../debugger/search-menu-commands.md)  
+ Opisuje każde polecenie dostępne w menu **wyszukiwania** .  
   
- [Polecenia menu widoku](../debugger/view-menu-commands.md)  
- Zawiera opis każdego polecenia, które są dostępne z **widoku** menu.  
+ [Polecenia menu Widok](../debugger/view-menu-commands.md)  
+ Opisuje każde polecenie dostępne w menu **Widok** .  
   
- [Polecenia menu komunikatów](../debugger/messages-menu-commands.md)  
- Zawiera opis każdego polecenia, które są dostępne z **wiadomości** menu.  
+ [Polecenia menu Komunikaty](../debugger/messages-menu-commands.md)  
+ Opisuje każde polecenie dostępne w menu **komunikaty** .  
   
- [Polecenia menu okna](../debugger/window-menu-commands.md)  
- Zawiera opis każdego polecenia, które są dostępne z **okna** menu.  
+ [Polecenia menu Okna](../debugger/window-menu-commands.md)  
+ Opisuje każde polecenie dostępne w menu **okno** .  
   
- [Polecenia menu pomocy](../debugger/help-menu-commands.md)  
- Zawiera opis każdego polecenia, które są dostępne z **pomocy** menu.  
+ [Polecenia menu Pomoc](../debugger/help-menu-commands.md)  
+ Opisuje każde polecenie dostępne w menu **Pomoc** .  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
- Wprowadza narzędzie Spy ++ i wyjaśnia, jak mogą być używane.  
+ Wprowadzenie do narzędzia Spy + + i wyjaśnienie, jak można go użyć.  
   
- [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
- W tym artykule wyjaśniono widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
+ [Spy++ — Widoki](../debugger/spy-increment-views.md)  
+ Wyjaśnia widoki drzewa Spy + + systemu Windows, komunikatów, procesów i wątków.  
   
- [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
- Ta sekcja zawiera i sekcje opisujące każdy okno dialogowe programu Spy ++.
+ [Spy++ — Odwołanie](../debugger/spy-increment-reference.md)  
+ Zawiera tę sekcję oraz sekcje opisujące poszczególne okna dialogowe Spy + +.

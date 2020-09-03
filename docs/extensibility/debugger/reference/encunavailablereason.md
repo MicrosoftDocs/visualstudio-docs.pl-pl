@@ -1,5 +1,5 @@
 ---
-title: EncNiedostępneReason | Dokumenty firmy Microsoft
+title: EncUnavailableReason | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 28863549ab3eac96322530bc85c52697f20448c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737167"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
-`This is for internal use only!`Reprezentuje przyczyny, dla których **edycja i kontynuowanie** są niedostępne.
+`This is for internal use only!` Przedstawia powody, które **Edytuj i Kontynuuj** są niedostępne.
 
 ## <a name="syntax"></a>Składnia
 
@@ -54,33 +54,33 @@ public enum EncUnavailableReason {
 
 ## <a name="fields"></a>Pola
 `ENCUN_NONE`\
-Nie ma konkretnego powodu, dla którego edycja i kontynuowanie nie są dostępne.
+Brak określonych powodów, dla których Edycja i kontynuacja nie są dostępne.
 
 `ENCUN_INTEROP`\
-Funkcja Edycja i Kontynuuj nie jest dostępna podczas połączenia InterOp.
+W trakcie wywołania międzyoperacyjnego nie jest dostępne edytowanie i kontynuowanie.
 
 `ENCUN_SQLCLR`\
-Edycja i kontynuuj nie jest dostępna podczas wywołania procedury SQL, która używa środowiska wykonawczego języka wspólnego (CLR).
+Funkcja Edytuj i Kontynuuj nie jest dostępna podczas wywołania procedury SQL, które używa środowiska uruchomieniowego języka wspólnego (CLR).
 
 `ENCUN_MINIDUMP`\
-Funkcja Edycja i Kontynuuj nie jest dostępna podczas przetwarzania mini-zrzutu.
+Edytuj i Kontynuuj nie jest dostępny podczas przetwarzania mini-dump.
 
 `ENCUN_EMBEDDED`\
-Edycja i kontynuuj nie jest dostępna podczas przetwarzania kodu osadzonego.
+Edytuj i Kontynuuj nie jest dostępny podczas przetwarzania kodu osadzonego.
 
 `ENCUN_ATTACH`\
-Funkcja Edycja i Kontynuuj nie jest dostępna, ponieważ sesja została dołączona do debugera, nie została uruchomiona przez debuger.
+Polecenie Edytuj i Kontynuuj nie jest dostępne, ponieważ sesja została dołączona do programu, debuger.
 
 `ENCUN_WIN64`\
-Program Edit and Continue nie jest dostępny podczas przetwarzania 64-bitowego kodu systemu Windows.
+Edytuj i Kontynuuj nie jest dostępny podczas przetwarzania 64-bitowego kodu systemu Windows.
 
 ## <a name="remarks"></a>Uwagi
-To wyliczenie jest przeznaczone [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]do użytku wewnętrznego tylko przez . [Metody GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) i [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) zaimplementowane przez `E_NOTIMPL`niestandardowego dostawcę portu powinny zawsze zwracać .
+To wyliczenie jest przeznaczone do użytku wewnętrznego tylko przez program [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] . Metody [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) i [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) , zgodnie z implementacją przez niestandardowego dostawcę portu, powinny zawsze być zwracane `E_NOTIMPL` .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.idl
+Nagłówek: Msdbg. idl
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
