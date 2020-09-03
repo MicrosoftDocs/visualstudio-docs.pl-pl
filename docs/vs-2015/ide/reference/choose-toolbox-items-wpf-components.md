@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5c7967635d8e5d64907587fcd1a9b4d84a31d569
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660916"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Wybierz elementy paska narzędzi, składniki WPF
@@ -56,17 +56,17 @@ Na tej karcie okna dialogowego **Wybieranie elementów przybornika** zostanie wy
  **Język** Pokazuje zlokalizowany język zestawu, który zawiera wybraną kontrolkę WPF.
 
 ## <a name="limitations"></a>Ograniczenia
- Dodawanie kontrolki niestandardowej lub <xref:System.Windows.Controls.UserControl> do przybornika ma następujące ograniczenia.
+ Dodawanie kontrolki niestandardowej lub <xref:System.Windows.Controls.UserControl> przybornika ma następujące ograniczenia.
 
 - Działa tylko w przypadku kontrolek niestandardowych zdefiniowanych poza bieżącym projektem.
 
 - Usługa nie jest aktualizowana prawidłowo w przypadku zmiany konfiguracji rozwiązania z debugowania na wydanie lub z wersji do debugowania. Wynika to z faktu, że odwołanie nie jest odwołaniem do projektu, ale jest przeznaczone dla zestawu na dysku. Jeśli formant jest częścią bieżącego rozwiązania, w przypadku zmiany z debugowania na wydanie, projekt nadal odwołuje się do wersji debugowania formantu.
 
-  Ponadto, jeśli metadane czasu projektowania są stosowane do kontrolki niestandardowej, a metadane określają, że [ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) jest ustawiony na `false`, formant nie jest wyświetlany w przyborniku.
+  Ponadto, jeśli metadane czasu projektowania są stosowane do kontrolki niestandardowej, a metadane określają, że [ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) jest ustawiona na `false` , formant nie jest wyświetlany w przyborniku.
 
   Możesz odwoływać się do kontrolek bezpośrednio w widoku XAML, mapując przestrzeń nazw i zestaw dla kontrolki. Aby uzyskać więcej informacji, zobacz [jak: importowanie przestrzeni nazw do XAML](https://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Okno dialogowe Wybieranie elementów przybornika (Visual Studio)](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)
 - [Przybornik](../../ide/reference/toolbox.md)

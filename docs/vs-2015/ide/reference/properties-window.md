@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 959bd36995ca4086bf64020816b00aee6f777fbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662074"
 ---
 # <a name="properties-window"></a>Okno Właściwości
@@ -51,17 +51,17 @@ To okno służy do wyświetlania i zmieniania właściwości czasu projektowania
  Zdarzenia wyświetla zdarzenia dla obiektu.
 
 > [!NOTE]
-> Ten formant paska narzędzi okna **Właściwości** jest dostępny tylko wtedy, gdy formularz lub Projektant formantów jest aktywny w kontekście projektu [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Podczas edytowania plików XAML zdarzenia są wyświetlane na osobnej karcie okna właściwości.
+> Ten formant paska narzędzi okna **Właściwości** jest dostępny tylko wtedy, gdy formularz lub Projektant formantów jest aktywny w kontekście [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projektu. Podczas edytowania plików XAML zdarzenia są wyświetlane na osobnej karcie okna właściwości.
 
  Komunikaty wyświetla wszystkie komunikaty systemu Windows. Umożliwia dodawanie lub usuwanie określonych funkcji programu obsługi dla komunikatów dostarczonych dla wybranej klasy.
 
 > [!NOTE]
-> Ten formant paska narzędzi okna **Właściwości** jest dostępny tylko wtedy, gdy **Widok klasy** jest aktywnym oknem w kontekście projektu [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].
+> Ten formant paska narzędzi okna **Właściwości** jest dostępny tylko wtedy, gdy **Widok klasy** jest aktywnym oknem w kontekście [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektu.
 
  Zastąpień wyświetla wszystkie funkcje wirtualne dla wybranej klasy i umożliwia dodawanie lub usuwanie zastąpień funkcji.
 
 > [!NOTE]
-> Ten formant paska narzędzi okna **Właściwości** jest dostępny tylko wtedy, gdy **Widok klasy** jest aktywnym oknem w kontekście projektu [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].
+> Ten formant paska narzędzi okna **Właściwości** jest dostępny tylko wtedy, gdy **Widok klasy** jest aktywnym oknem w kontekście [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektu.
 
  W okienku opis jest wyświetlany typ właściwości i Krótki opis właściwości. Można wyłączyć opis właściwości i przy użyciu polecenia Description w menu skrótów.
 

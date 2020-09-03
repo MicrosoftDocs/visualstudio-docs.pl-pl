@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2::EnumPossibleEngines | Dokumenty firmy Microsoft
+title: 'IDebugProgramEngines2:: EnumPossibleEngines | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 45916edbef4368c58f83426d6c73f3c692236cb9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722431"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
@@ -45,19 +45,19 @@ int EnumPossibleEngines( 
 
 ## <a name="parameters"></a>Parametry
 `celtBuffer`\
-[w] Liczba identyfikatorów GUID DE do zwrócenia. Określa również maksymalny rozmiar `rgguidEngines` tablicy.
+podczas Liczba wszystkich identyfikatorów GUID do zwrócenia. Określa również maksymalny rozmiar `rgguidEngines` tablicy.
 
 `rgguidEngines`\
-[w, na zewnątrz] Tablica identyfikatorów GUID DE do wypełnienia.
+[in. out] Tablica wszystkich identyfikatorów GUID do wypełnienia.
 
 `pceltEngines`\
-[na zewnątrz] Zwraca rzeczywistą liczbę identyfikatorów GUID DE, które są zwracane.
+określoną Zwraca rzeczywistą liczbę zwracanych identyfikatorów GUID.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Zwraca [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` lub [C#] 0x8007007A, jeśli bufor nie jest wystarczająco duży.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwraca [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` lub [C#] 0x8007007A, jeśli bufor nie jest wystarczająco duży.
 
 ## <a name="remarks"></a>Uwagi
- Aby określić, ile istnieje aparatów, wywołaj `celtBuffer` tę metodę raz `rgguidEngines` z parametrem ustawionym na 0 i parametrem ustawionym na wartość null. `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` Zwraca (0x8007007A dla języka C#), a `pceltEngines` parametr zwraca wymagany rozmiar buforu.
+ Aby określić liczbę aparatów, należy wywołać tę metodę raz z `celtBuffer` parametrem ustawionym na 0, a `rgguidEngines` parametr ustawiony na wartość null. To zwraca `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A for C#), a `pceltEngines` parametr zwraca wymagany rozmiar buforu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

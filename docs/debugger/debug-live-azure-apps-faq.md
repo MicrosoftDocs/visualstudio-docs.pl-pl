@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911404"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Często zadawane pytania dotyczące debugowania migawek w programie Visual Studio
@@ -50,7 +50,7 @@ Tak, debugowanie migawek może współpracować z serwerami w ramach obciążeni
 Na App Service można odinstalować rozszerzenie witryny Snapshot Debugger, wykonując następujące czynności:
 
 1. Wyłącz App Service za pomocą programu Cloud Explorer w programie Visual Studio lub Azure Portal.
-1. Przejdź do witryny kudu App Service (czyli yourappservice. **SCM**. azurewebsites.NET) i przejdź do **rozszerzeń witryny**.
+1. Przejdź do witryny kudu App Service (czyli yourappservice.** SCM**. azurewebsites.NET) i przejdź do **rozszerzeń witryny**.
 1. Kliknij przycisk X na rozszerzeniu witryny Snapshot Debugger, aby go usunąć.
 
 #### <a name="why-are-ports-opened-during-a-snapshot-debugger-session"></a>Dlaczego porty są otwierane podczas sesji Snapshot Debugger?
@@ -125,7 +125,7 @@ W przypadku maszyn wirtualnych i zestawów skalowania maszyn wirtualnych Usuń r
 
    - Certyfikat serwera
       - Odpowiedni odcisk palca certyfikatu serwera jest wdrażany jako klucz tajny magazynu kluczy platformy Azure. Program VS podejmie próbę znalezienia lub utworzenia magazynu kluczy z prefiksem MSVSAZ * w regionie odpowiadającym zasobie maszyny wirtualnej lub zestawu skalowania maszyn wirtualnych. Wszystkie zasoby maszyn wirtualnych i zestawów skalowania maszyn wirtualnych wdrożone w tym regionie będą współużytkować ten sam magazyn kluczy.
-      - Aby usunąć wpis tajny odcisku palca certyfikatu serwera, przejdź do Azure Portal i Znajdź Magazyn kluczy MSVSAZ * w tym samym regionie, w którym znajduje się zasób. Usuń klucz tajny, który powinien mieć etykietę `remotedebugcert<<ResourceName>>`
+      - Aby usunąć wpis tajny odcisku palca certyfikatu serwera, przejdź do Azure Portal i Znajdź Magazyn kluczy MSVSAZ * w tym samym regionie, w którym znajduje się zasób. Usuń klucz tajny, który powinien być oznaczony etykietą `remotedebugcert<<ResourceName>>`
       - Należy również usunąć klucz tajny serwera z zasobu za pośrednictwem programu PowerShell.
 
       Dla maszyn wirtualnych:
@@ -196,9 +196,9 @@ Istnieje kilka sposobów wyłączenia Snapshot Debugger:
       Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
    ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Debugowanie w programie Visual Studio](../debugger/index.yml)
+- [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Debuguj aplikacje Live ASP.NET przy użyciu Snapshot Debugger](../debugger/debug-live-azure-applications.md)
 - [Debuguj zestawy skalowania maszyn wirtualnych ASP.NET platformy Azure na żywo przy użyciu Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
 - [Debuguj Live ASP.NET Azure Kubernetes przy użyciu Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)

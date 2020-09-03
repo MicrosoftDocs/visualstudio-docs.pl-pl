@@ -12,22 +12,22 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f7bc701c4a7009d402c778356a290ce4e129bb3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658974"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Skróty klawiaturowe w Projektancie przepływu pracy
-Wszystkie podstawowe funkcje [!INCLUDE[wfd1](../includes/wfd1-md.md)] są dostępne na klawiaturze.
+Wszystkie podstawowe funkcje programu są dostępne na [!INCLUDE[wfd1](../includes/wfd1-md.md)] klawiaturze.
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Nawigowanie Projektant przepływu pracy przy użyciu klawiatury
- Wewnątrz [!INCLUDE[vs2010](../includes/vs2010-md.md)], Skróty globalne i skróty debugowania mają zastosowanie do [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Ponadto zostały utworzone różne [!INCLUDE[wfd2](../includes/wfd2-md.md)] skróty klawiaturowe. W [!INCLUDE[vs2010](../includes/vs2010-md.md)] wszystkie skróty klawiaturowe mogą być ponownie mapowane. Jednak w aplikacji przehostowanej te skróty klawiaturowe są stałe.
+ Wewnątrz [!INCLUDE[vs2010](../includes/vs2010-md.md)] , Skróty globalne i skróty debugowania mają zastosowanie do [!INCLUDE[wfd2](../includes/wfd2-md.md)] . Ponadto [!INCLUDE[wfd2](../includes/wfd2-md.md)] zostały utworzone pewne skróty klawiaturowe. W programie [!INCLUDE[vs2010](../includes/vs2010-md.md)] wszystkie skróty klawiaturowe mogą być ponownie mapowane. Jednak w aplikacji przehostowanej te skróty klawiaturowe są stałe.
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Skróty klawiaturowe Projektant przepływu pracy
- Poniższa tabela podsumowuje domyślne skróty klawiaturowe przypisane do poleceń [!INCLUDE[wfd2](../includes/wfd2-md.md)].
+ Poniższa tabela podsumowuje domyślne skróty klawiaturowe przypisane do [!INCLUDE[wfd2](../includes/wfd2-md.md)] poleceń.
 
-|Skrót|Cel|
+|Skrót|Przeznaczenie|
 |--------------|-------------|
 |CTRL + E, A|Pokazuje lub ukrywa projektanta argumentów.|
 |CTRL + E, C|Zwija wybrane działanie.|
@@ -44,7 +44,7 @@ Wszystkie podstawowe funkcje [!INCLUDE[wfd1](../includes/wfd1-md.md)] są dostę
 |CTRL + ALT + F6|Przenosi fokus klawiatury z bieżącego obszaru interfejsu użytkownika do następnego obszaru w sekwencji. Kolejność jest następująca:<br /><br /> 1. pasek nawigacyjny.<br />2. powierzchnia projektanta<br />3. argumenty/zmienne/Importy projektant w przypadku otwarcia<br />4. Shell|
 
 ### <a name="flowchart"></a>Schemat blokowy
- Na poniższej liście przedstawiono gesty używane do konstruowania schematu blokowego za pomocą klawiatury. Tak jak w pozostałej części [!INCLUDE[wfd2](../includes/wfd2-md.md)] działania są dodawane do powierzchni projektanta przy użyciu globalnych skrótów przybornika dostępnych w [!INCLUDE[vs2010](../includes/vs2010-md.md)].
+ Na poniższej liście przedstawiono gesty używane do konstruowania schematu blokowego za pomocą klawiatury. Podobnie jak w pozostałej części [!INCLUDE[wfd2](../includes/wfd2-md.md)] , działania są dodawane do powierzchni projektanta przy użyciu globalnych skrótów przybornika dostępnych w [!INCLUDE[vs2010](../includes/vs2010-md.md)] .
 
 - Aby przenieść działanie, wybierz działanie i użyj klawiszy strzałek, aby zmienić ich położenie.
 
@@ -71,7 +71,7 @@ Wszystkie podstawowe funkcje [!INCLUDE[wfd1](../includes/wfd1-md.md)] są dostę
 - Gdy **FlowDecision** jest dołączany do zaznaczenia, a **FlowDecision** nie ma łączników wychodzących, łącznik jest umieszczany w gałęzi **prawdy** .
 
 ### <a name="expression-editing"></a>Edytowanie wyrażeń
- Domyślnie domyślne skróty klawiaturowe do edycji tekstu [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] są stosowane w edytorze wyrażeń w programie [!INCLUDE[wfd2](../includes/wfd2-md.md)] z następującymi ograniczeniami:
+ Domyślnie domyślne skróty klawiaturowe do [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] edycji tekstu mają zastosowanie w edytorze wyrażeń w [!INCLUDE[wfd2](../includes/wfd2-md.md)] , z następującymi ograniczeniami:
 
 - Ponowne mapowanie skrótów klawiaturowych dla następujących poleceń nie ma żadnego wpływu. Możesz użyć domyślnych skrótów klawiaturowych, aby uzyskać dostęp do tych poleceń podczas edytowania wyrażenia.
 
@@ -83,8 +83,8 @@ Wszystkie podstawowe funkcje [!INCLUDE[wfd1](../includes/wfd1-md.md)] są dostę
 
     4. Zaznacz wszystko
 
-    5. Anulowanie
+    5. Cofnij
 
-    6. Ponawia
+    6. Ponów
 
-- Aby ponownie zamapować skróty klawiaturowe poleceń edycji wyrażeń wewnątrz [!INCLUDE[wfd2](../includes/wfd2-md.md)] w [!INCLUDE[vs2010](../includes/vs2010-md.md)], należy edytować skróty w zakresie [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Zmiany wprowadzone w zakresie edytora tekstu nie są automatycznie stosowane do [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Jeśli chcesz ponownie mapować skróty w obu miejscach, musisz zastosować zmiany dwukrotnie (raz dla każdego zakresu).
+- Aby ponownie zamapować skróty klawiaturowe poleceń edycji wyrażeń wewnątrz [!INCLUDE[wfd2](../includes/wfd2-md.md)] w programie [!INCLUDE[vs2010](../includes/vs2010-md.md)] , należy edytować skróty w [!INCLUDE[wfd2](../includes/wfd2-md.md)] zakresie. Zmiany wprowadzone w zakresie edytora tekstu nie są automatycznie stosowane do programu [!INCLUDE[wfd2](../includes/wfd2-md.md)] . Jeśli chcesz ponownie mapować skróty w obu miejscach, musisz zastosować zmiany dwukrotnie (raz dla każdego zakresu).

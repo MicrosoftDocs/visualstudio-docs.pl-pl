@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c4a931ca05f8b12175deded8b316d0177d8f8c74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661817"
 ---
 # <a name="t4-import-directive"></a>Dyrektywa T4 dotycząca importowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W blokach kodu szablonu tekstu T4 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dyrektywa `import` umożliwia odwoływanie się do elementów w innej przestrzeni nazw bez podawania w pełni kwalifikowanej nazwy. Jest to odpowiednik `using` w C# lub `imports` w [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)].
+W blokach kodu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablonu tekstu T4 `import` dyrektywa pozwala odwoływać się do elementów w innej przestrzeni nazw bez podawania w pełni kwalifikowanej nazwy. Jest odpowiednikiem `using` w języku C# lub `imports` w [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)] .
 
  Aby uzyskać ogólne omówienie pisania szablonów tekstowych T4, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).
 

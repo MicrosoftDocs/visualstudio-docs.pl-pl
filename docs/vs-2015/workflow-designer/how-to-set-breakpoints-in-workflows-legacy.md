@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 182f28a2b21ae3129ce0d34fae97280ba0a07218
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603593"
 ---
-# <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Instrukcje: ustawianie punktów przerwania w przepływach pracy (starsza wersja)
-W tym temacie opisano sposób ustawiania punktów przerwania w programie [!INCLUDE[wf](../includes/wf-md.md)] Applications Build przy użyciu starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)], gdy aplikacja [!INCLUDE[wf2](../includes/wf2-md.md)] musi kierować [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+# <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Instrukcje: Ustawianie punktów przerwania w przepływach pracy (starsza wersja)
+W tym temacie opisano sposób ustawiania punktów przerwania w [!INCLUDE[wf](../includes/wf-md.md)] aplikacjach kompilowanych przy użyciu starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Użyj starszej wersji, [!INCLUDE[wfd2](../includes/wfd2-md.md)] gdy [!INCLUDE[wf2](../includes/wf2-md.md)] aplikacja musi mieć obiekt docelowy [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
- W przypadku używania starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)] w programie [!INCLUDE[vs2010](../includes/vs2010-md.md)] do kompilowania aplikacji [!INCLUDE[wf2](../includes/wf2-md.md)], można ustawić punkty przerwania C# w i Visual Basic kod, jak w programie Visual Studio. Zgodnie z oczekiwaniami wykonywanie przepływu pracy zostaje zatrzymane w każdym ustawionym punkcie przerwania.
+ W przypadku użycia starszej wersji programu [!INCLUDE[wfd2](../includes/wfd2-md.md)] w [!INCLUDE[vs2010](../includes/vs2010-md.md)] celu skompilowania [!INCLUDE[wf2](../includes/wf2-md.md)] aplikacji można ustawić punkty przerwania w języku C# i Visual Basic kodzie, jak w programie Visual Studio. Zgodnie z oczekiwaniami wykonywanie przepływu pracy zostaje zatrzymane w każdym ustawionym punkcie przerwania.
 
  Punkt przerwania ma trzy stany: *oczekujący*, *powiązany*i *błąd*. Gdy ustawisz punkt przerwania, jest on w stanie oczekiwania i jest reprezentowany przez nieprawidłową czerwoną ikonę. Po załadowaniu typu przepływu pracy środowisko uruchomieniowe zostanie powiązane i jest reprezentowane przez pełną czerwoną ikonę. Jeśli określisz niepoprawny format dla punktu przerwania, jak z nieprawidłową nazwą działania, pojawi się okno błędu. Punkt przerwania jest nadal dodawany do okna punktu przerwania, ale jest oznaczony małą "x".
 
@@ -49,10 +49,10 @@ W tym temacie opisano sposób ustawiania punktów przerwania w programie [!INCLU
 
      Zostanie otwarte okno dialogowe **nowy punkt przerwania** .
 
-3. Określ nazwę działania w polu tekstowym **funkcji** , używając następującej składni: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.
+3. Określ nazwę działania w polu tekstowym **funkcji** , używając następującej składni: `QualifiedActivityId[:[FullClassName][:InstanceId]]` .
 
     > [!NOTE]
-    > Opcjonalnie zamiast używać nazwy działania w polu tekstowym **Funkcja** , można ustawić punkt przerwania, określając ścieżkę bezwzględną działania przepływu pracy. Załóżmy na przykład, że masz rozwiązanie przepływu pracy o nazwie **WorkflowConsoleApplication1** i przepływ pracy w rozwiązaniu o nazwie **Workflow1** , który używa działania o nazwie **Delay1**. Możesz użyć nazwy działania **Delay1** lub określić ścieżkę jako **Delay1: WorkflowConsoleApplication1. Workflow1** lub **Delay1: WorkflowConsoleApplication1. Workflow1: {6614886A-608E-412B-BF98-99FF1559DDDF}** .
+    > Opcjonalnie zamiast używać nazwy działania w polu tekstowym **Funkcja** , można ustawić punkt przerwania, określając ścieżkę bezwzględną działania przepływu pracy. Załóżmy na przykład, że masz rozwiązanie przepływu pracy o nazwie **WorkflowConsoleApplication1** i przepływ pracy w rozwiązaniu o nazwie **Workflow1** , który używa działania o nazwie **Delay1**. Możesz użyć nazwy działania **Delay1** lub określić ścieżkę jako **Delay1: WorkflowConsoleApplication1. Workflow1** lub **Delay1: WorkflowConsoleApplication1. Workflow1: {6614886A-608E-412B-BF98-99FF1559DDDF}**.
 
 4. Zaznacz pole wyboru **Użyj IntelliSense** , aby sprawdzić nazwę funkcji.
 

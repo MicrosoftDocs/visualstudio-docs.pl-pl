@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5065ecb1dc0905d1aa593ee4aa62dddd2f62c3a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609623"
 ---
-# <a name="context-menus-xml-schema-explorer"></a>Menu kontekstowe (Eksplorator schematu XML)
+# <a name="context-menus-xml-schema-explorer"></a>Menu kontekstowe (eksplorator schematu XML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Poniższe elementy menu kontekstowego są używane do wykonywania wyszukiwania specyficznego dla schematu i innych operacji.
@@ -37,7 +37,7 @@ Poniższe elementy menu kontekstowego są używane do wykonywania wyszukiwania s
 |Opcja|Opis|
 |------------|-----------------|
 |**Pokaż wszystkie odwołania przychodzące**|Znajduje i podświetla pliki, które zaimportują wybraną przestrzeń nazw.|
-|**Pokaż wszystkie odwołania wychodzące**|Dla każdego pliku w wybranej przestrzeni nazw znajduje i wyróżnia następujące elementy:<br /><br /> — Wszystkie przestrzenie nazw, do których odwołują się instrukcje importu bez atrybutu `schemaLocation`.<br />— Wszystkie pliki w przestrzeniach nazw innych niż wybrane w atrybucie `schemaLocation` w instrukcjach import i include.|
+|**Pokaż wszystkie odwołania wychodzące**|Dla każdego pliku w wybranej przestrzeni nazw znajduje i wyróżnia następujące elementy:<br /><br /> — Wszystkie przestrzenie nazw, do których odwołują się instrukcje importu bez `schemaLocation` atrybutu.<br />— Wszystkie pliki w przestrzeniach nazw innych niż wybrane w `schemaLocation` atrybucie w instrukcjach import i include.|
 |**Pokaż typy globalne**|Znajduje i wyróżnia wszystkie typy globalne w wybranej przestrzeni nazw.|
 |**Pokaż elementy globalne**|Znajduje i wyróżnia wszystkie elementy globalne w wybranej przestrzeni nazw.|
 |**Okno właściwości**|Otwiera okno **Właściwości** (jeśli nie jest jeszcze otwarte). To okno wyświetla informacje o węźle.|
@@ -47,8 +47,8 @@ Poniższe elementy menu kontekstowego są używane do wykonywania wyszukiwania s
 
 |Opcja|Opis|
 |------------|-----------------|
-|**Pokaż wszystkie odwołania przychodzące**|Znajduje i podświetla wszystkie pliki, które określają wybrany plik w `schemaLocation` atrybuty instrukcji INCLUDE i import.|
-|**Pokaż wszystkie odwołania wychodzące**|Znajduje i wyróżnia następujące elementy:<br /><br /> — Wszystkie przestrzenie nazw określone w atrybutach przestrzeni nazw wszystkich instrukcji importu, które nie mają atrybutu `schemaLocation`.<br />-Wszystkie pliki określone w `schemaLocation` atrybuty wszystkich instrukcji import i include.|
+|**Pokaż wszystkie odwołania przychodzące**|Znajduje i podświetla wszystkie pliki, które określają wybrany plik w `schemaLocation` atrybutach instrukcji INCLUDE i import.|
+|**Pokaż wszystkie odwołania wychodzące**|Znajduje i wyróżnia następujące elementy:<br /><br /> — Wszystkie przestrzenie nazw określone w atrybutach przestrzeni nazw wszystkich instrukcji importu, które nie mają `schemaLocation` atrybutu.<br />— Wszystkie pliki określone w `schemaLocation` atrybutach wszystkich instrukcji import i include.|
 |**Pokaż typy globalne**|Znajduje i wyróżnia wszystkie typy globalne w tym pliku.|
 |**Pokaż elementy globalne**|Znajduje i wyróżnia wszystkie elementy globalne w tym pliku.|
 |**Wyświetl kod**|Otwiera plik, który zawiera wybrany węzeł w edytorze XML. Element wybrany w Eksploratorze schematu XML również zostanie wybrany w edytorze XML.|
@@ -71,7 +71,7 @@ Poniższe elementy menu kontekstowego są używane do wykonywania wyszukiwania s
 |------------|-----------------|
 |**Przejdź do definicji typu**|Przechodzi do definicji typu wybranego elementu. Ma to zastosowanie, gdy typ, który jest używany dla elementu jest typem globalnym.|
 |**Przejdź do oryginalnego elementu**|W przypadku odwołań do elementów przejdź do rzeczywistej definicji elementu.|
-|**Pokaż wszystkie odwołania**|Dla elementów globalnych Znajdź i podświetla wszystkie odwołania (elementy, które mają `ref="selectedElement"`) do wybranego elementu.|
+|**Pokaż wszystkie odwołania**|Dla elementów globalnych Znajdź i podświetla wszystkie odwołania (elementy, które mają `ref="selectedElement"` ) do wybranego elementu.|
 |**Pokaż elementy członkowskie grupy podstawienia**|W przypadku głowic grupy podstawienia Znajdź i podświetla Wszystkie elementy, które są członkami grupy podstawienia, której wybrany element jest członkiem. Spowoduje to wyświetlenie bezpośrednich i pośrednich uczestników.|
 |**Pokaż nagłówki podstawiania**|Dla elementów globalnych, które są elementami członkowskimi grupy podstawienia, znajduje i wyróżnia wszystkie głowice bezpośrednie i pośrednie dla wybranego elementu, takie jak:<br /><br /> -Nagłówek grupy podstawienia określony w wybranym elemencie.<br />-Nagłówek grupy podstawienia określony w jego elemencie nagłówkowym.|
 |**Generuj przykładowy kod XML**|Dostępne tylko dla elementów globalnych. Generuje przykładowy plik XML dla elementu globalnego.|
@@ -93,7 +93,7 @@ Poniższe elementy menu kontekstowego są używane do wykonywania wyszukiwania s
 |------------|-----------------|
 |**Przejdź do definicji typu**|Gdy typ, który jest używany dla atrybutu jest typem globalnym, nawiguje do definicji typu wybranego atrybutu.|
 |**Przejdź do oryginalnego atrybutu**|W przypadku odwołań do atrybutów, przejdź do rzeczywistej definicji atrybutu.|
-|**Pokaż wszystkie odwołania**|W przypadku atrybutów globalnych Znajdź i podświetla wszystkie odwołania (inne atrybuty, które mają `ref="selectedAttribute"`) do wybranego atrybutu.|
+|**Pokaż wszystkie odwołania**|W przypadku atrybutów globalnych Znajdź i podświetla wszystkie odwołania (inne atrybuty, które mają `ref="selectedAttribute"` ) do wybranego atrybutu.|
 
 ## <a name="node-type-attribute-group"></a>Typ węzła: Grupa atrybutów
  Oprócz opcji węzła globalnego opisanych powyżej, menu kontekstowe dla węzłów grupy atrybutów ma następujące opcje:
@@ -102,7 +102,7 @@ Poniższe elementy menu kontekstowego są używane do wykonywania wyszukiwania s
 |------------|-----------------|
 |**Przejdź do definicji**|W przypadku odwołań przejdź do rzeczywistej definicji atrybutu.|
 |**Pokaż wszystkie elementy członkowskie**|Znajduje i wyróżnia wszystkie elementy członkowskie grupy atrybutów.|
-|**Pokaż wszystkie odwołania**|Znajduje i wyróżnia wszystkie odwołania (grupy atrybutów, które mają `ref="selectedAttributeGroup"`) do wybranej grupy atrybutów.|
+|**Pokaż wszystkie odwołania**|Znajduje i wyróżnia wszystkie odwołania (grupy atrybutów, które mają `ref="selectedAttributeGroup"` ) do wybranej grupy atrybutów.|
 
 ## <a name="node-type-named-group"></a>Typ węzła: nazwana grupa
  Oprócz opcji węzła globalnego opisanych powyżej, menu kontekstowe dla nazwanych węzłów grupy ma następujące opcje:
@@ -111,7 +111,7 @@ Poniższe elementy menu kontekstowego są używane do wykonywania wyszukiwania s
 |------------|-----------------|
 |**Przejdź do definicji**|W przypadku odwołań przejdź do rzeczywistej definicji atrybutu.|
 |**Pokaż wszystkie elementy członkowskie**|Znajduje i wyróżnia wszystkie elementy członkowskie nazwanej grupy.|
-|**Pokaż wszystkie odwołania**|Znajduje i wyróżnia wszystkie odwołania (grupy, które mają `ref="selectedGroup"`) do wybranej grupy.|
+|**Pokaż wszystkie odwołania**|Znajduje i wyróżnia wszystkie odwołania (grupy, które mają `ref="selectedGroup"` ) do wybranej grupy.|
 
 ## <a name="see-also"></a>Zobacz też
  [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md) [przeszukiwanie zestawu schematów](../xml-tools/searching-the-schema-set.md)

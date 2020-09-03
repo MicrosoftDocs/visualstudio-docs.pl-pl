@@ -10,24 +10,24 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9bf941babd943c6856809a13de847b62745b2056
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72605010"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Instrukcje: Tworzenie aplikacji usługi przepływu pracy WCF
-aplikacje usługi przepływu pracy [!INCLUDE[indigo1](../includes/indigo1-md.md)] są rozproszonymi usługami komunikacyjnymi, które przesyłają komunikaty między klientami i w granicach procesów. Implementacja kontraktu usługi po stronie usługi jest przeprowadzana w sposób deklaratywny przez działania przepływu pracy w [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] w sposób analogiczny do starszych usług przepływu pracy w programie .NET Framework 3,5.
+[!INCLUDE[indigo1](../includes/indigo1-md.md)] aplikacje usługi przepływu pracy są rozproszonymi usługami komunikacyjnymi, które przechodzą komunikaty między klientami i w różnych granicach procesu. Wdrożenie kontraktu usługi po stronie usługi jest wykonywane w sposób deklaratywny przez działania przepływu pracy w systemie [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] w sposób analogiczny do starszych usług przepływu pracy w .NET Framework 3,5.
 
 ### <a name="to-create-a-wcf-workflow-service-application"></a>Aby utworzyć aplikację usługi przepływu pracy WCF
 
-1. Rozpocznij [!INCLUDE[vs2010](../includes/vs2010-md.md)].
+1. Rozpocznij [!INCLUDE[vs2010](../includes/vs2010-md.md)] .
 
-2. W menu **plik** wskaż polecenie **Nowy**, a następnie wybierz pozycję **projekt...** .
+2. W menu **plik** wskaż polecenie **Nowy**, a następnie wybierz pozycję **projekt...**.
 
      Zostanie otwarte okno dialogowe **Nowy projekt** .
 
-3. W okienku **zainstalowane szablony** wybierz opcję **WCF** lub **przepływ pracy** z grup **wizualizacji C#**  lub **Visual Basic** w zależności od wybranego języka.
+3. W okienku **zainstalowane szablony** wybierz opcję **WCF** lub **przepływ pracy** z grup **Visual C#** lub **Visual Basic** w zależności od wybranego języka.
 
 4. W środkowym okienku wybierz pozycję **aplikacja usługi przepływu pracy WCF**.
 
@@ -38,9 +38,9 @@ aplikacje usługi przepływu pracy [!INCLUDE[indigo1](../includes/indigo1-md.md)
 7. W polu **rozwiązanie** wybierz opcję utworzenia nowego rozwiązania, a następnie kliknij przycisk **OK**.
 
     > [!NOTE]
-    > Jeśli chcesz dodać aplikację konsoli przepływu pracy do istniejącego rozwiązania, Otwórz to rozwiązanie w [!INCLUDE[vs2010](../includes/vs2010-md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań**, a następnie wybierz polecenie **Dodaj**, a następnie **Nowy projekt...** Aby otworzyć okno dialogowe **Nowy projekt** . Postępuj zgodnie z powyższym opisem w tej procedurze.
+    > Jeśli chcesz dodać aplikację konsoli przepływu pracy do istniejącego rozwiązania, Otwórz to rozwiązanie w programie, kliknij [!INCLUDE[vs2010](../includes/vs2010-md.md)] prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań**i wybierz polecenie **Dodaj**, a następnie **Nowy projekt...** Aby otworzyć okno dialogowe **Nowy projekt** . Postępuj zgodnie z powyższym opisem w tej procedurze.
 
-8. Szablon projektu tworzy definicję usługi jako XAML. @No__t_0 otwiera widok projektu z działaniem <xref:System.Activities.Statements.Sequence>, które zawiera zestaw działań <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply>.
+8. Szablon projektu tworzy definicję usługi jako XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)]Zostanie otwarty widok Projekt z <xref:System.Activities.Statements.Sequence> działaniem zawierającym zestaw <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply> działania.
 
 ## <a name="see-also"></a>Zobacz też
  [Instrukcje: tworzenie działania](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436) [tworzenia projektu przepływu pracy](../workflow-designer/creating-a-workflow-project.md)

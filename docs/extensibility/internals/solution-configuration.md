@@ -31,7 +31,7 @@ Konfiguracje rozwiązań przechowują właściwości na poziomie rozwiązania. K
 
    Wyświetla nazwy projektów znalezionych w bieżącym rozwiązaniu.
 
-- Konfigurowanie
+- Konfiguracja
 
    Aby zapewnić listę konfiguracji obsługiwanych przez typ projektu i wyświetlane na stronach właściwości, zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> .
 

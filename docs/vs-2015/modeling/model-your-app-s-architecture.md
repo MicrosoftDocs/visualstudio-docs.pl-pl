@@ -1,5 +1,5 @@
 ---
-title: Modelowanie architektury&#39;aplikacji | Microsoft Docs
+title: Modelowanie aplikacji&#39;s architektura | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41dbb7b996c32af10010694935cbd3660b462f73
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609637"
 ---
-# <a name="model-your-app39s-architecture"></a>Modelowanie architektury&#39;aplikacji
+# <a name="model-your-app39s-architecture"></a>Modelowanie aplikacji&#39;s architektura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby zapewnić, że system oprogramowania lub aplikacja spełnia potrzeby użytkowników, możesz tworzyć modele w programie Visual Studio jako część opisu ogólnej struktury i zachowania systemu oprogramowania lub aplikacji. Korzystając z modeli, można również opisać wzorce, które są używane w całym projekcie. Te modele pomagają zrozumieć istniejącą architekturę, omawiać zmiany i informować o zamiarach jasno.
@@ -36,7 +36,7 @@ Aby zapewnić, że system oprogramowania lub aplikacja spełnia potrzeby użytko
 
 - [Wzorce projektowe](#Patterns) i konwencje używane w całym projekcie składników programu. Wzorzec opisuje konkretne podejście do osiągnięcia celów programistycznych. Korzystając z tych samych wzorców w całym projekcie, zespół może zmniejszyć koszty dokonywania zmian i tworzenia nowego oprogramowania.
 
-## <a name="Structure"></a>Projektowanie wysokiego poziomu
+## <a name="high-level-design"></a><a name="Structure"></a> Projektowanie wysokiego poziomu
  Projekt wysokiego poziomu opisuje główne składniki systemu i sposób współdziałania ze sobą, aby osiągnąć cele projektu. Działania na poniższej liście są związane z tworzeniem projektu wysokiego poziomu, chociaż niekoniecznie w określonej kolejności.
 
  Jeśli aktualizujesz istniejący kod, możesz zacząć od opisywania głównych składników. Upewnij się, że rozumiesz wszelkie zmiany wymagań użytkownika, a następnie Dodaj lub zmodyfikuj interakcje między składnikami. Jeśli tworzysz nowy system, Zacznij od poznania głównych funkcji potrzeb użytkowników. Następnie można zbadać sekwencje interakcji dla głównych przypadków użycia, a następnie skonsolidować sekwencje w projekcie składnika.
@@ -53,7 +53,7 @@ Aby zapewnić, że system oprogramowania lub aplikacja spełnia potrzeby użytko
 
 - [Model danych składników i interfejsów](#Data). Można rysować diagramy klas, aby opisać informacje przesyłane między składnikami i przechowywane w składnikach.
 
-## <a name="Requirements"></a>Informacje o wymaganiach
+## <a name="understanding-the-requirements"></a><a name="Requirements"></a> Informacje o wymaganiach
  Ogólny projekt kompletnej aplikacji jest najwydajniejszie opracowany z modelem wymagań lub innym opisem potrzeb użytkowników. Aby uzyskać więcej informacji na temat modeli wymagań, zobacz [wymagania dotyczące modelu użytkownika](../modeling/model-user-requirements.md).
 
  Jeśli opracowywany system jest składnikiem większego systemu, część lub wszystkie wymagania mogą być zawarte w interfejsach programistycznych.
@@ -78,7 +78,7 @@ Aby zapewnić, że system oprogramowania lub aplikacja spełnia potrzeby użytko
 
   Ilość szczegółów, które należy umieścić w wymaganiach lub modelu architektury, zależy od skali projektu oraz wielkości i dystrybucji zespołu. Niewielki zespół w krótkim projekcie może nie przekroczyć szkicu diagramu klas koncepcji firmy i niektórych wzorców projektowych; duży projekt dystrybuowany przez więcej niż jeden region będzie wymagał znacznie większej szczegółowości.
 
-## <a name="BigDecisions"></a>Wzorce architektury
+## <a name="architectural-patterns"></a><a name="BigDecisions"></a> Wzorce architektury
  Na wczesnym etapie opracowywania należy wybrać główne technologie i elementy, od których zależy projekt. Obszary, w których należy dokonać wyboru, obejmują następujące elementy:
 
 - Podstawowe opcje technologii, takie jak wybór między bazą danych i systemem plików oraz wybór między aplikacją sieciową a klientem internetowym itd.
@@ -91,7 +91,7 @@ Aby zapewnić, że system oprogramowania lub aplikacja spełnia potrzeby użytko
 
   Wybrane opcje mają wpływ na sposób użycia i interpretacji modelu architektury. Na przykład w systemie, który korzysta z bazy danych, skojarzenia w diagramie klas mogą reprezentować relacje lub klucze obce w bazie danych, natomiast w systemie, który jest oparty na plikach XML, skojarzenia mogą wskazywać odwołania krzyżowe, które używają XPath. W systemie rozproszonym komunikaty w diagramie sekwencji mogą reprezentować komunikaty w sieci przewodowej. w aplikacji samodzielnej mogą one reprezentować wywołania funkcji.
 
-## <a name="Components"></a>Składniki i ich interfejsy
+## <a name="components-and-their-interfaces"></a><a name="Components"></a> Składniki i ich interfejsy
  Główne zalecenia dotyczące tej sekcji są następujące:
 
 - Utwórz diagramy składników, aby pokazać główne części systemu.
@@ -178,7 +178,7 @@ Aby zapewnić, że system oprogramowania lub aplikacja spełnia potrzeby użytko
 
   Użycie wymaganych interfejsów jest zwykle preferowane w przypadku korzystania z części. Mimo że projekt może trwać dłużej, system, który jest bardziej elastyczny. Łatwiej jest również testować składniki osobno. Pozwala to na mniejsze sprzęganie w swoich planach programistycznych.
 
-## <a name="Interactions"></a>Interakcje między składnikami
+## <a name="interactions-between-components"></a><a name="Interactions"></a> Interakcje między składnikami
  Główne zalecenia dotyczące tej sekcji są następujące:
 
 - Zidentyfikuj przypadki użycia systemu.
@@ -218,14 +218,14 @@ Aby zapewnić, że system oprogramowania lub aplikacja spełnia potrzeby użytko
 
  Warto dodać komentarze do diagramów działań lub sekwencji, aby zauważyć, co zostało osiągnięte po każdej operacji. Możesz również napisać efekt każdej operacji we właściwości **lokalnej błąd warunku końcowego** .
 
-### <a name="Data"></a>Model danych składników i interfejsów
+### <a name="data-model-of-the-components-and-interfaces"></a><a name="Data"></a> Model danych składników i interfejsów
  Zdefiniuj parametry i wartości zwracane dla każdej operacji w interfejsie składnika. Gdzie operacje reprezentują wywołania, takie jak żądania usługi sieci Web, parametry są te informacje, które są wysyłane w ramach żądania. Gdy kilka wartości jest zwracanych z operacji, można użyć parametrów z właściwością **Direction** ustawioną na wartość **out**.
 
  Każdy parametr i zwracana wartość ma typ. Te typy można definiować za pomocą diagramów klas UML. Nie ma potrzeby przedstawiania szczegółów implementacji w tych diagramach. Na przykład w przypadku opisywania danych, które są przesyłane jako XML, można użyć skojarzenia do reprezentowania dowolnego rodzaju odwołania między węzłami XML i używać klas do reprezentowania węzłów.
 
  Użyj komentarzy, aby opisać ograniczenia biznesowe dotyczące skojarzeń i atrybutów. Na przykład, jeśli wszystkie elementy w zamówieniu klienta muszą pochodzić od tego samego dostawcy, można je opisać przez odwołanie do skojarzeń między elementami zamówienia i elementami w katalogu produktów oraz między elementem katalogu i jego dostawcą.
 
-## <a name="Patterns"></a>Wzorce projektowe
+## <a name="design-patterns"></a><a name="Patterns"></a> Wzorce projektowe
  Wzorzec projektowy to zarys sposobu projektowania określonego aspektu oprogramowania, szczególnie te, które odnoszą się do różnych części systemu. Przyjmując jednolite podejście w całym projekcie, można zmniejszyć koszt projektu, zapewnić spójność w interfejsie użytkownika, a także zmniejszyć koszt interpretacji i zmiany kodu.
 
  Niektóre ogólne wzorce projektowe, takie jak obserwator, są dobrze znane i szeroko stosowane. Ponadto istnieją wzorce, które mają zastosowanie tylko do projektu. Na przykład w systemie sprzedaży sieci Web będzie kilka operacji w kodzie, w którym zmiany są wprowadzane do zamówienia klienta. Aby upewnić się, że stan zamówienia jest dokładnie wyświetlany na każdym etapie, wszystkie te operacje muszą być zgodne z określonym protokołem w celu zaktualizowania bazy danych.
@@ -236,7 +236,7 @@ Aby zapewnić, że system oprogramowania lub aplikacja spełnia potrzeby użytko
 
  Wzorzec projektowy został opisany w dokumencie i zwykle zawiera te części:
 
-- Nazwij.
+- Nazwa.
 
 - Opis kontekstu, w którym ma zastosowanie. Jakie kryteria należy wziąć pod uwagę w przypadku zastosowania tego wzorca przez dewelopera?
 

@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO | Dokumenty firmy Microsoft
+title: FIELD_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6e2089746adecc583d04176afca18ad19826ea53
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736893"
 ---
 # <a name="field_info"></a>FIELD_INFO
@@ -49,7 +49,7 @@ public struct FIELD_INFO {
 
 ## <a name="members"></a>Elementy członkowskie
 `dwFields`\
-Kombinacja flag z wyliczenia [FIELD_INFO_FIELDS,](../../../extensibility/debugger/reference/field-info-fields.md) która określa, które elementy członkowskie są wypełniane.
+Kombinacja flag z wyliczenia [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) , która określa, które elementy członkowskie są wypełnione.
 
 `bstrFullName`\
 Pełna nazwa pola.
@@ -61,15 +61,15 @@ Krótka nazwa pola.
 Typ pola.
 
 `dwModifiers`\
-Kombinacja flag z wyliczenia [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) opisujące pole.
+Kombinacja flag z wyliczenia [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) , który opisuje pole.
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest przekazywana do [Metody GetInfo,](../../../extensibility/debugger/reference/idebugfield-getinfo.md) gdzie jest wypełniona.
+Ta struktura jest przenoszona do metody [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) , w której jest wypełniana.
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: sh.h
+Nagłówek: sh. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

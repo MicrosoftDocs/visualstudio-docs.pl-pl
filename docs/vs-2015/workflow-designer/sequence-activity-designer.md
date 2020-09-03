@@ -12,26 +12,26 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3acf02ab478eee244557e04f19f78ba2d5f0b950
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663258"
 ---
 # <a name="sequence-activity-designer"></a>Sequence, projektant działań
-Działanie <xref:System.Activities.Statements.Sequence> zawiera uporządkowaną kolekcję działań podrzędnych wykonywanych w określonej kolejności.
+<xref:System.Activities.Statements.Sequence>Działanie zawiera uporządkowaną kolekcję działań podrzędnych wykonywanych w określonej kolejności.
 
- Innym sposobem wykonania zestawu działań jest użycie działania <xref:System.Activities.Statements.Flowchart>. Należy rozważyć użycie [schematu blokowego](../workflow-designer/flowchart-activity-designer.md) , gdy istnieje prosty przepływ programu rozgałęziania lub zapętlenia, który ma być modelem diagrammatically.
+ Innym sposobem wykonania zestawu działań jest użycie <xref:System.Activities.Statements.Flowchart> działania. Należy rozważyć użycie [schematu blokowego](../workflow-designer/flowchart-activity-designer.md) , gdy istnieje prosty przepływ programu rozgałęziania lub zapętlenia, który ma być modelem diagrammatically.
 
 ## <a name="using-the-sequence-activity-designer"></a>Korzystanie z projektanta działania sekwencji
- Aby dodać działanie <xref:System.Activities.Statements.Sequence>, przeciągnij projektanta działania **sekwencji** z **przybornika** i upuść go na powierzchni [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Aby dodać działanie podrzędne do tego działania <xref:System.Activities.Statements.Sequence>, przeciągnij inne działanie z **przybornika** i upuść je na Trójkącie w polu zawierającym tekst wskazówki "upuść działanie tutaj".
+ Aby dodać <xref:System.Activities.Statements.Sequence> działanie, przeciągnij projektanta działania **sekwencji** z **przybornika** i upuść go na [!INCLUDE[wfd1](../includes/wfd1-md.md)] powierzchnię. Aby dodać działanie podrzędne do tego <xref:System.Activities.Statements.Sequence> działania, przeciągnij inne działanie z **przybornika** i upuść je na Trójkącie w polu zawierającym tekst wskazówki "upuść działanie tutaj".
 
 ### <a name="sequence-activity-properties-in-the-workflow-designer"></a>Właściwości działania sekwencji w Projektant przepływu pracy
- W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.Sequence> i opisano sposób ich używania w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektanta.
+ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Sequence> właściwości i opisano sposób ich użycia w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektanta.
 
-|Nazwa właściwości|Wymagane|Użycie|
+|Nazwa właściwości|Wymagany|Użycie|
 |-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa przyjazną nazwę <xref:System.Activities.Statements.Sequence> projektanta działań w nagłówku. Wartość domyślna to Sequence. Wartość można edytować w siatce właściwości lub bezpośrednio w nagłówku projektanta działań.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagane, najlepszym rozwiązaniem jest użycie jednego z nich.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Fałsz|Określa przyjazną nazwę <xref:System.Activities.Statements.Sequence> projektanta działań w nagłówku. Wartość domyślna to Sequence. Wartość można edytować w siatce właściwości lub bezpośrednio w nagłówku projektanta działań.<br /><br /> Chociaż <xref:System.Activities.Activity.DisplayName%2A> nie jest to ściśle wymagane, najlepszym rozwiązaniem jest użycie jednego z nich.|
 
 ## <a name="see-also"></a>Zobacz też
- [](../workflow-designer/flowchart-activity-designer.md) [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md) Flowchart
+ [Flowchart](../workflow-designer/flowchart-activity-designer.md) [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md) Flowchart

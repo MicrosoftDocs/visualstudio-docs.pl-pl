@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6c53af4a8e0f42708ab94d7206a9c0cc54819798
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72573550"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Ogólne, debugowanie, okno dialogowe Opcje
@@ -43,13 +43,13 @@ Na stronie**Narzędzia/Opcje/debugowanie/ogólne** można ustawić następujące
  **Przerwij, gdy wyjątki przekraczają granice domeny lub zarządzane/natywne**  
  W przypadku debugowania w trybie zarządzanym lub mieszanym środowisko uruchomieniowe języka wspólnego może przechwytywać wyjątki, które przekraczają granice domeny aplikacji lub granice zarządzane/natywne w przypadku spełnienia następujących warunków:  
   
- 1 \), gdy kod natywny wywołuje kod zarządzany za pomocą międzyoperacyjności modelu COM, a kod zarządzany zgłasza wyjątek. Zobacz [wprowadzenie do międzyoperacyjności modelu COM](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
+ 1 \) gdy kod natywny wywołuje kod zarządzany za pomocą międzyoperacyjności modelu COM, a kod zarządzany zgłasza wyjątek. Zobacz [wprowadzenie do międzyoperacyjności modelu COM](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
- 2 \), gdy kod zarządzany uruchomiony w domenie aplikacji 1 wywołuje kod zarządzany w domenie aplikacji 2, a kod w aplikacji domena 2 zgłasza wyjątek. Zobacz [programowanie z domenami aplikacji](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
+ 2 \) gdy kod zarządzany uruchomiony w domenie aplikacji 1 wywołuje kod zarządzany w domenie aplikacji 2, a kod w aplikacji domena 2 zgłasza wyjątek. Zobacz [programowanie z domenami aplikacji](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
- 3 \), gdy kod wywołuje funkcję przy użyciu odbicia, a funkcja zgłasza wyjątek. Zobacz [odbicie](https://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
+ 3 \) , gdy kod wywołuje funkcję przy użyciu odbicia, a funkcja zgłasza wyjątek. Zobacz [odbicie](https://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
   
- W 2) i 3) wyjątek jest czasami przechwytywany przez kod zarządzany w `mscorlib` zamiast środowiska uruchomieniowego języka wspólnego. Ta opcja nie ma wpływu na przerwanie w przypadku wyjątków przechwytywanych przez `mscorlib`.  
+ W 2) i 3) wyjątek jest czasami przechwytywany przez kod zarządzany w programie `mscorlib` zamiast środowiska uruchomieniowego języka wspólnego. Ta opcja nie wpływa na przerwanie w przypadku wyjątków przechwytywanych przez program `mscorlib` .  
   
  **Włącz debugowanie na poziomie adresu**  
  Włącza zaawansowane funkcje debugowania na poziomie adresu (okno **demontażu** , okno **rejestrów** i punkty przerwania adresów).  
@@ -84,11 +84,11 @@ Na stronie**Narzędzia/Opcje/debugowanie/ogólne** można ustawić następujące
  **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji**  
  Włącza automatyczną ocenę właściwości i niejawne wywołania funkcji w oknach zmiennych i oknie dialogowym **QuickWatch** .  
   
- **Wywołaj funkcję konwersji ciągów na obiektach w oknachC# zmiennych (tylko kod JavaScript)**  
- Wykonuje niejawne wywołanie konwersji ciągu podczas oceniania obiektów w oknach zmiennych. W związku z tym, ten wynik jest wyświetlany jako ciąg zamiast nazwy typu. Stosuje się tylko podczas debugowania C# w kodzie. To ustawienie może być zastąpione przez atrybut DebuggerDisplay (zobacz [using a DebuggerDisplay Attribute](../debugger/using-the-debuggerdisplay-attribute.md)).  
+ **Wywołaj funkcję konwersji ciągów na obiektach w oknach zmiennych (tylko w języku C# i JavaScript)**  
+ Wykonuje niejawne wywołanie konwersji ciągu podczas oceniania obiektów w oknach zmiennych. W związku z tym, ten wynik jest wyświetlany jako ciąg zamiast nazwy typu. Stosuje się tylko podczas debugowania w kodzie C#. To ustawienie może być zastąpione przez atrybut DebuggerDisplay (zobacz [using a DebuggerDisplay Attribute](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
  **Włącz obsługę serwera źródłowego**  
- Poleca debugerowi programu Visual Studio pobieranie plików źródłowych z serwerów źródłowych, które implementują protokół SrcSrv (`srcsrv.dll`). Team Foundation Server i narzędzia debugowania dla systemu Windows to dwa serwery źródłowe implementujące protokół. Więcej informacji o instalatorze SrcSrv można znaleźć w dokumentacji narzędzi debugowania dla systemu Windows. Ponadto zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+ Poleca debugerowi programu Visual Studio pobieranie plików źródłowych z serwerów źródłowych, które implementują protokół SrcSrv ( `srcsrv.dll` ). Team Foundation Server i narzędzia debugowania dla systemu Windows to dwa serwery źródłowe implementujące protokół. Więcej informacji o instalatorze SrcSrv można znaleźć w dokumentacji narzędzi debugowania dla systemu Windows. Ponadto zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
 > Ponieważ odczytywanie plików. pdb może wykonać dowolny kod w plikach, należy się upewnić, że ufasz serwerowi.  
@@ -123,7 +123,7 @@ Na stronie**Narzędzia/Opcje/debugowanie/ogólne** można ustawić następujące
  **Załaduj eksporty biblioteki DLL**  
  Ładuje tabele eksportu biblioteki DLL. Informacje o symbolach z tabel eksportu bibliotek DLL mogą być przydatne, jeśli pracujesz z komunikatami systemu Windows, procedurami systemu Windows (WindowProcs), obiektami COM lub kierowaniem lub dowolną biblioteką DLL, dla której nie masz symboli. Odczytywanie informacji o eksporcie z biblioteki DLL obejmuje pewne obciążenie. Dlatego ta funkcja jest domyślnie wyłączona.  
   
- Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki DLL, użyj `dumpbin /exports`. Symbole są dostępne dla dowolnej 32-bitowej systemowej biblioteki DLL. Odczytując dane wyjściowe `dumpbin /exports`, można zobaczyć dokładną nazwę funkcji, w tym znaki inne niż alfanumeryczne. Jest to przydatne przy ustawianiu punktu przerwania w funkcji. Nazwy funkcji z tabel eksportu bibliotek DLL mogą pojawić się w innym miejscu debugera. Wywołania są wymienione w kolejności wywołań, z bieżącą funkcją (najgłębiej zagnieżdżoną) na początku. Aby uzyskać więcej informacji, zobacz [Zrzuć bin/exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
+ Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki DLL, użyj `dumpbin /exports` . Symbole są dostępne dla dowolnej 32-bitowej systemowej biblioteki DLL. Odczytując `dumpbin /exports` dane wyjściowe, można zobaczyć dokładną nazwę funkcji, w tym znaki inne niż alfanumeryczne. Jest to przydatne przy ustawianiu punktu przerwania w funkcji. Nazwy funkcji z tabel eksportu bibliotek DLL mogą pojawić się w innym miejscu debugera. Wywołania są wymienione w kolejności wywołań, z bieżącą funkcją (najgłębiej zagnieżdżoną) na początku. Aby uzyskać więcej informacji, zobacz [Zrzuć bin/exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
   
  **Pokaż diagram stosów równoległych od dołu do góry**  
  Kontroluje kierunek wyświetlania stosów w oknie **stosów równoległych** .  
@@ -134,19 +134,19 @@ Na stronie**Narzędzia/Opcje/debugowanie/ogólne** można ustawić następujące
  **Użyj zarządzanego trybu zgodności**  
  Zastępuje domyślny aparat debugowania ze starszą wersją, aby umożliwić te scenariusze:  
   
-- Używasz języka .NET Framework innego niż C#, VB lub F# , który oferuje własną ewaluatora wyrażeń (obejmuje C++to/CLI).  
+- Używasz języka .NET Framework innego niż C#, VB lub F #, który oferuje własną ewaluatora wyrażeń (obejmuje to C++/CLI).  
   
-- Chcesz włączyć funkcję Edytuj i Kontynuuj dla C++ projektów podczas debugowania w trybie mieszanym.  
+- Chcesz włączyć funkcję Edytuj i Kontynuuj dla projektów C++ podczas debugowania w trybie mieszanym.  
   
   Należy pamiętać, że wybranie trybu zgodności zarządzanej powoduje wyłączenie niektórych funkcji, które są implementowane tylko w domyślnym aparacie debugowania.  
   
   **Użyj natywnego trybu zgodności**  
   Po wybraniu tej opcji debuger używa programu Visual Studio 2010 Native Debugger zamiast nowego debugera natywnego.  
   
-  Tej opcji należy użyć w przypadku debugowania kodu .NET C++ , ponieważ nowy aparat debugowania nie obsługuje oceniania wyrażeń platformy .NET. C++ Jednak włączenie macierzystego trybu zgodności wyłącza wiele funkcji, które są zależne od bieżącej implementacji debugera do działania. Na przykład starszy aparat nie ma wielu wizualizatorów dla wbudowanych typów, takich jak `std::string` w projektach programu Visual Studio 2015.  W takich przypadkach należy używać projektów Visual Studio 2013.  
+  Tej opcji należy użyć podczas debugowania kodu .NET C++, ponieważ nowy aparat debugowania nie obsługuje oceniania wyrażeń programu .NET C++. Jednak włączenie macierzystego trybu zgodności wyłącza wiele funkcji, które są zależne od bieżącej implementacji debugera do działania. Na przykład starszy aparat nie ma wielu wizualizatorów dla wbudowanych typów, takich jak `std::string` w projektach programu Visual Studio 2015.  W takich przypadkach należy używać projektów Visual Studio 2013.  
   
-  **Używanie starszych C# i oceniających wyrażenia w języku VB**  
-  Debuger będzie używać Visual Studio 2013 C#ocen wyrażeń/VB zamiast ocen wyrażeń opartych na programie Visual Studio 2015 Roslyn.  
+  **Używanie starszych ocen w językach C# i VB**  
+  Debuger Visual Studio 2013 użyje ocen wyrażeń/VB języka C# zamiast ocen wyrażeń opartych na programie Visual Studio 2015 Roslyn.  
   
   **Ostrzegaj w przypadku używania wizualizacji debugera niestandardowego z potencjalnie niebezpiecznymi procesami (tylko zarządzany)**  
   Program Visual Studio wyświetli ostrzeżenie, gdy korzystasz z niestandardowego wizualizatora debugera, który uruchamia kod w procesie debugowanego obiektu, ponieważ może to spowodować uruchomienie niebezpiecznego kodu.  
@@ -173,7 +173,7 @@ Na stronie**Narzędzia/Opcje/debugowanie/ogólne** można ustawić następujące
   Podczas debugowania można użyć funkcji Edytuj i Kontynuuj.  
   
   **Włącz natywną edycję i Kontynuuj**  
-  Podczas debugowania kodu natywnego C++ można użyć funkcji Edytuj i Kontynuuj. Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj ( C++wizualizacja)](../debugger/edit-and-continue-visual-cpp.md).  
+  Podczas debugowania natywnego kodu C++ można użyć funkcji Edytuj i Kontynuuj. Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
   **Zastosuj zmiany przy kontynuowaniu (tylko kod natywny)**  
   Program Visual Studio automatycznie kompiluje i stosuje wszelkie zaległe zmiany kodu, które zostały wykonane podczas kontynuowania procesu ze stanu przerwania. Jeśli nie jest zaznaczone, możesz zastosować zmiany przy użyciu elementu "Zastosuj zmiany kodu" w menu Debuguj.  
@@ -185,4 +185,4 @@ Na stronie**Narzędzia/Opcje/debugowanie/ogólne** można ustawić następujące
   Prekompilowanie jest dozwolone.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)
+ [Debugowanie w Visual Studio](../debugger/debugging-in-visual-studio.md)

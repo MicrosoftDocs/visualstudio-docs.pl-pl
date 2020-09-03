@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb5b56404c7ddc99b7999b47cf3c2a899f915efd
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72578056"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>Tworzenie niestandardowych widoków obiektów zarządzanych
@@ -37,15 +37,15 @@ ms.locfileid: "72578056"
 Możesz dostosować sposób, w jaki program Visual Studio Wyświetla typy danych w zmiennych debugera systemu Windows.  
   
 ## <a name="attributes"></a>Atrybuty  
- W C# i Visual Basic można dodawać rozszerzenia dla danych niestandardowych przy użyciu <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>i <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
+ W językach C# i Visual Basic można dodawać rozszerzenia dla danych niestandardowych przy użyciu <xref:System.Diagnostics.DebuggerTypeProxyAttribute> , <xref:System.Diagnostics.DebuggerDisplayAttribute> , i <xref:System.Diagnostics.DebuggerBrowsableAttribute> .  
   
- W [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] kodzie Visual Basic nie obsługuje atrybutu DebuggerBrowsable. To ograniczenie jest usuwane w nowszych wersjach .NET Framework.  
+ W [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] kodzie, Visual Basic nie obsługuje atrybutu DebuggerBrowsable. To ograniczenie jest usuwane w nowszych wersjach .NET Framework.  
   
 ## <a name="visualizers"></a>Wizualizatory  
  Można napisać wizualizator do wyświetlania dowolnego zarządzanego typu danych. Aby uzyskać więcej informacji, zobacz [jak: napisać wizualizator](../debugger/how-to-write-a-visualizer.md).  
   
 ## <a name="native-code"></a>Kod natywny  
- W przypadku kodu natywnego można dodać niestandardowe rozszerzenia typu danych do pliku autoexp. dat, który znajduje się w programie Files\Microsoft Visual Studio 11.0 \ Common7\Packages\Debugger Directory. Instrukcje dotyczące sposobu pisania reguł `autoexp` znajdują się w samym pliku.  
+ W przypadku kodu natywnego można dodać niestandardowe rozszerzenia typu danych do pliku autoexp. dat, który znajduje się w programie Files\Microsoft Visual Studio 11.0 \ Common7\Packages\Debugger Directory. Instrukcje dotyczące sposobu pisania `autoexp` reguł znajdują się w samym pliku.  
   
 > [!CAUTION]
 > Struktura tego pliku i składnia reguł autoexp mogą ulec zmianie z jednej wersji programu Visual Studio na następną.  
@@ -53,7 +53,7 @@ Możesz dostosować sposób, w jaki program Visual Studio Wyświetla typy danych
  Widoki typu natywnego można także dostosować, pisząc dodatek Expression ewaluatora. Aby uzyskać więcej informacji, zobacz [EEAddIn Sample: Debug Expression ewaluatora Add-in](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Używanie  atrybutu DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)  
- [Używanie atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
- [Wyrażenie kontrolne i QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
+ [Używanie atrybutu DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
+ [Korzystanie z atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
+ [Oglądaj i QuickWatch okna](../debugger/watch-and-quickwatch-windows.md)   
  [Udoskonalanie debugowania za pomocą atrybutów wyświetlania debugera](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

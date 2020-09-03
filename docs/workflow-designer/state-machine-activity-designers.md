@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f2c83b1b8e85c7d1db016dfa568f71fda7fd8c17
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876063"
 ---
 # <a name="state-machine-activity-designers"></a>Projektanci działań automatu stanów
 
 Projektant przepływu pracy obejmuje wiele projektantów działań, których można użyć podczas konstruowania przepływów pracy. Ta sekcja zawiera projektanta działań dostarczone przez system służące do tworzenia przepływów pracy automatu stanów i zarządzania nimi. W poniższych tematach opisano tych projektantów i przedstawiono wskazówki dotyczące ich używania.
 
-## <a name="reference"></a>Odwołanie
+## <a name="reference"></a>Tematy pomocy
  <xref:System.Activities.Statements.StateMachine>
 
  <xref:System.Activities.Statements.State>

@@ -10,14 +10,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1c01e48e6aa34513e57b373150c605cb0a7f5b18
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659153"
 ---
-# <a name="how-to-use-breadcrumb-navigation"></a>Instrukcje: korzystanie z nawigacji ze stron nadrzędnych
-Istnieją trzy podstawowe sposoby zmiany zestawu działań, które są wyświetlane w [!INCLUDE[wfd1](../includes/wfd1-md.md)]:
+# <a name="how-to-use-breadcrumb-navigation"></a>Instrukcje: Używanie nawigacji za pomocą linków do stron nadrzędnych
+Istnieją trzy podstawowe sposoby zmiany zestawu działań, które są wyświetlane w programie [!INCLUDE[wfd1](../includes/wfd1-md.md)] :
 
 1. Kliknij dwukrotnie, aby przejść do działania podrzędnego.
 
@@ -27,7 +27,7 @@ Istnieją trzy podstawowe sposoby zmiany zestawu działań, które są wyświetl
 
 ### <a name="using-breadcrumb-navigation"></a>Używanie nawigacji ze stron nadrzędnych
 
-1. Kliknij dwukrotnie działanie [!INCLUDE[wfd2](../includes/wfd2-md.md)], aby zmienić działanie główne na kliknięte działanie. Kliknięte działanie jest następnie w pełni rozwinięte w katalogu głównym, a jego elementy nadrzędne są wyświetlane na pasku nawigacyjnym. Jest to czasami nazywane drążeniem do lub z działania.
+1. Kliknij dwukrotnie działanie, [!INCLUDE[wfd2](../includes/wfd2-md.md)] Aby zmienić działanie elementu głównego na kliknięte działanie. Kliknięte działanie jest następnie w pełni rozwinięte w katalogu głównym, a jego elementy nadrzędne są wyświetlane na pasku nawigacyjnym. Jest to czasami nazywane drążeniem do lub z działania.
 
 2. Aby przejść do elementu nadrzędnego bieżącego działania głównego, kliknij działanie na pasku nawigacyjnym.
 
@@ -38,7 +38,7 @@ Istnieją trzy podstawowe sposoby zmiany zestawu działań, które są wyświetl
 2. Gdy stan rozwinięcia zostanie zmieniony przez kliknięcie przycisku, nowy stan rozwinięcia zostanie zapisany w języku XAML.
 
     > [!WARNING]
-    > Nie wszystkie działania mogą być rozwinięte. Istnieją dwa przypadki, w których działanie nie może być rozwinięte: element nadrzędny działania nie zezwala na rozszerzanie jego elementów podrzędnych, (na przykład działania w schemacie blokowym nie mogą być rozwinięte) lub Projektant działań nie zezwala na korzystanie z niego być rozwinięte. Chociaż żaden z projektantów działań uwzględnionych w [!INCLUDE[wfd2](../includes/wfd2-md.md)] nie ma tego samego zachowania, niektóre działania niestandardowe mogą spowodować takie zachowanie.
+    > Nie wszystkie działania mogą być rozwinięte. Istnieją dwa przypadki, w których działanie nie może być rozwinięte: element nadrzędny działania nie zezwala na rozszerzanie jego elementów podrzędnych, (na przykład działania w schemacie blokowym nie mogą być rozwinięte) lub Projektant działań nie zezwala na rozszerzanie się w miejscu. Chociaż żaden z projektantów działań nie uwzględnionych w programie [!INCLUDE[wfd2](../includes/wfd2-md.md)] ma takie samo zachowanie, niektóre działania niestandardowe mogą spowodować takie zachowanie.
 
 ### <a name="expanding-all-or-collapsing-all-activities"></a>Rozwijanie wszystkich lub zwijanie wszystkich działań
 
@@ -47,7 +47,7 @@ Istnieją trzy podstawowe sposoby zmiany zestawu działań, które są wyświetl
 2. Po zastosowaniu stanu rozwiń wszystko lub Zwiń wszystko można kliknąć przycisk **Przywróć** , który pojawia się z powrotem do przeglądania stanu poprzednio zastosowanego do poszczególnych działań.
 
     > [!WARNING]
-    > Jeśli działanie, takie jak <xref:System.Activities.Statements.Flowchart>, wybrało rozwinięte miejsce, funkcjonalność skojarzona z przyciskami **Rozwiń wszystko** i **Zwiń wszystko** jest wyłączona w projektancie **schematów blokowych** . [!INCLUDE[crabout](../includes/crabout-md.md)] projektanta **schematów blokowych** , zobacz temat [schemat blokowy](../workflow-designer/flowchart-activity-designer.md) .
+    > Jeśli działanie, takie jak <xref:System.Activities.Statements.Flowchart> , wybrało rozwinięte miejsce, funkcjonalność skojarzona z przyciskami **Rozwiń wszystko** i **Zwiń wszystko** jest wyłączona w projektancie **schematów blokowych** . [!INCLUDE[crabout](../includes/crabout-md.md)] Projektant **schematów blokowych** , zobacz temat [schemat blokowy](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
     > Rozszerzenie ALL ma również szczególny efekt w projektantach działań **Switch** i **TryCatch** . Po kliknięciu przycisku **Rozwiń wszystko**wszystkie przypadki przełączania i wszystkie bloki try/catch/finally są wyświetlane. Kliknięcie przycisku **Przywróć** lub **Zwiń wszystko** zwraca tych projektantów do ich domyślnego stanu, z którego można kliknąć pojedynczy przypadek/blok, aby wyświetlić jego zawartość.

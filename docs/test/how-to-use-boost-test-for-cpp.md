@@ -9,10 +9,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 34c593469a586d1314c7ee52f3aeb3ab6faf334c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287275"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak używać usprawnienia. test dla języka C++ w programie Visual Studio
@@ -111,7 +111,7 @@ W wielu przypadkach łatwiej jest użyć oddzielnego projektu dla testów. Nie t
 
    f. Rozwiń węzeł System **konsolidatora**  >  **System**. Sprawdź, czy **podsystem** jest ustawiony na **konsolę**.
 
-   g. Wybierz **przycisk OK** , aby zamknąć strony właściwości.
+   przykład Wybierz **przycisk OK** , aby zamknąć strony właściwości.
 
 ## <a name="add-include-directives"></a>Dodaj dyrektywy include
 

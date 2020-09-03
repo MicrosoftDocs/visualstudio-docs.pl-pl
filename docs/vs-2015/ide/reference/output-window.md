@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f17b91cc462b6f628100ffbf370fcdec2eb9888d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662194"
 ---
 # <a name="output-window"></a>Okno wyniku
@@ -53,9 +53,9 @@ Okno **dane wyjściowe** może wyświetlać komunikaty o stanie dla różnych fu
 
  Niektóre funkcje i polecenia środowiska IDE wywoływane w [oknie poleceń](../../ide/reference/command-window.md) dostarczają ich dane wyjściowe do okna **danych wyjściowych** . Dane wyjściowe z zewnętrznych narzędzi, takich jak pliki bat i. com, które są zwykle wyświetlane w oknie wiersza polecenia, są kierowane do okienka **danych wyjściowych** po wybraniu opcji **Użyj okno dane wyjściowe** w obszarze [Zarządzanie narzędziami zewnętrznymi](../../ide/managing-external-tools.md). Wiele innych rodzajów komunikatów można również wyświetlać w okienkach **danych wyjściowych** . Na przykład, gdy składnia Transact-SQL w procedurze składowanej jest sprawdzana względem docelowej bazy danych, wyniki są wyświetlane w oknie **dane wyjściowe** .
 
- Możesz również zaprogramować własne aplikacje w celu zapisywania komunikatów diagnostycznych w czasie wykonywania w okienku **danych wyjściowych** . W tym celu należy użyć elementów członkowskich klasy <xref:System.Diagnostics.Debug> lub klasy <xref:System.Diagnostics.Trace> w przestrzeni nazw <xref:System.Diagnostics> biblioteki klas .NET Framework. Elementy członkowskie klasy <xref:System.Diagnostics.Debug> wyświetlają dane wyjściowe podczas tworzenia konfiguracji debugowania rozwiązania lub projektu; elementy członkowskie klasy <xref:System.Diagnostics.Trace> wyświetlają dane wyjściowe podczas kompilowania konfiguracji debugowania lub wersji. Aby uzyskać więcej informacji, zobacz [komunikaty diagnostyczne w okno dane wyjściowe](../../debugger/diagnostic-messages-in-the-output-window.md).
+ Możesz również zaprogramować własne aplikacje w celu zapisywania komunikatów diagnostycznych w czasie wykonywania w okienku **danych wyjściowych** . W tym celu należy użyć elementów członkowskich <xref:System.Diagnostics.Debug> klasy lub <xref:System.Diagnostics.Trace> klasy w <xref:System.Diagnostics> przestrzeni nazw biblioteki klas .NET Framework. Elementy członkowskie <xref:System.Diagnostics.Debug> klasy wyświetlają dane wyjściowe podczas tworzenia konfiguracji debugowania rozwiązania lub projektu; elementy członkowskie <xref:System.Diagnostics.Trace> klasy wyświetlają dane wyjściowe podczas kompilowania konfiguracji debugowania lub wersji. Aby uzyskać więcej informacji, zobacz [komunikaty diagnostyczne w okno dane wyjściowe](../../debugger/diagnostic-messages-in-the-output-window.md).
 
- W [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] można utworzyć niestandardowe kroki kompilacji i zdarzenia kompilacji, których ostrzeżenia i błędy są wyświetlane i zliczane w okienku **danych wyjściowych** . Naciskając klawisz F1 w wierszu danych wyjściowych, można wyświetlić odpowiedni temat pomocy. Aby uzyskać więcej informacji, zobacz [Formatowanie danych wyjściowych niestandardowego kroku kompilacji lub zdarzenia kompilacji](https://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).
+ W programie [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] można tworzyć niestandardowe kroki kompilacji i zdarzenia kompilacji, których ostrzeżenia i błędy są wyświetlane i zliczane w okienku **danych wyjściowych** . Naciskając klawisz F1 w wierszu danych wyjściowych, można wyświetlić odpowiedni temat pomocy. Aby uzyskać więcej informacji, zobacz [Formatowanie danych wyjściowych niestandardowego kroku kompilacji lub zdarzenia kompilacji](https://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).
 
 ## <a name="scrolling-behavior"></a>Zachowanie przewijania
  Jeśli używasz autoprzewijania w oknie danych wyjściowych, a następnie nawiguj za pomocą klawiszy myszy lub strzałek, Autoprzewijanie zostanie zatrzymane. Aby wznowić Autoprzewijanie, naciśnij klawisze CTRL + END.

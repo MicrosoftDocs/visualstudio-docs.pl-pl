@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 668e95c340348eeb1fa509622aa44d99b65b6efc
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72431806"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debugowanie aplikacji wielowątkowych w programie Visual Studio
@@ -42,7 +42,7 @@ Program Visual Studio oferuje różne narzędzia do użycia w debugowaniu aplika
 
 - W przypadku wątków podstawowe narzędzia do debugowania wątków to okno **wątki** , znaczniki wątków w oknach źródłowych, okno **stosów równoległych** , okno **równoległego czujki** i pasek narzędzi **Lokalizacja debugowania** . Aby dowiedzieć się więcej na temat okna **wątki** i paska narzędzi **lokalizacji debugowania** , zobacz [Przewodnik: debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md). Aby dowiedzieć się, jak używać **stosów równoległych** i **równoległych okien czujek** , zobacz Wprowadzenie [do debugowania aplikacji wielowątkowej](../debugger/get-started-debugging-multithreaded-apps.md). W obu tematach pokazano, jak używać znaczników wątków.
 
-- W przypadku kodu, który korzysta z [biblioteki zadań równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) lub [środowisko uruchomieniowe współbieżności](/cpp/parallel/concrt/concurrency-runtime/), podstawowe narzędzia do debugowania to okno **stosów** równoległych, **równoległe okno czujki** i okno **zadań** , które również obsługuje JavaScript. Aby rozpocząć, zobacz [Przewodnik: debugowanie aplikacji równoległej](../debugger/walkthrough-debugging-a-parallel-application.md) i [Przewodnik: debugowanie aplikacji C++ amp](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application).
+- W przypadku kodu, który korzysta z [biblioteki zadań równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) lub [środowisko uruchomieniowe współbieżności](/cpp/parallel/concrt/concurrency-runtime/), podstawowe narzędzia do debugowania to okno **stosów** równoległych, okno **czujki równoległej** i okno **zadania** , które również obsługuje język JavaScript. Aby rozpocząć, zobacz [Przewodnik: debugowanie aplikacji równoległej](../debugger/walkthrough-debugging-a-parallel-application.md) i [Przewodnik: debugowanie aplikacji C++ amp](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application).
 
 - W przypadku debugowania wątków w procesorze GPU narzędzie podstawowe jest oknem **wątków GPU** . Zobacz [jak: korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md).
 
@@ -90,15 +90,15 @@ Techniki debugowania aplikacji działającej w klastrze o wysokiej wydajności.
 
 Proste techniki, które mogą być przydatne do debugowania natywnych wątków.
 
- [Instrukcje: ustawianie nazw wątków w kodzie natywnym](../debugger/how-to-set-a-thread-name-in-native-code.md)
+ [Instrukcje: Ustawianie nazwy wątku w kodzie natywnym](../debugger/how-to-set-a-thread-name-in-native-code.md)
 
 Nadaj wątkowi nazwę, która jest wyświetlana w oknie **wątki** .
 
- [Instrukcje: ustawianie nazw wątków w kodzie zarządzanym](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+ [Instrukcje: Ustawianie nazwy wątku w kodzie zarządzanym](../debugger/how-to-set-a-thread-name-in-managed-code.md)
 
 Nadaj wątkowi nazwę, która jest wyświetlana w oknie **wątki** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Używanie punktów przerwania](../debugger/using-breakpoints.md)
 - [Wątkowość](/dotnet/standard/threading/index)

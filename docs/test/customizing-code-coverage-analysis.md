@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 9171afdc6fe5ca65a8ba2bcae81fe255981cdae6
-ms.sourcegitcommit: 8217b2ff48028f43c05c5590a293d358897c8651
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86475994"
 ---
 # <a name="customize-code-coverage-analysis"></a>Dostosowywanie analizy pokrycia kodu
@@ -112,7 +112,7 @@ W poniższej tabeli przedstawiono różne sposoby dopasowywania zestawów i czł
 | PublicKeyToken | Dopasowuje podpisane zestawy przez token klucza publicznego. |
 | Element źródłowy | Dopasowuje elementy według nazwy ścieżki pliku źródłowego, w którym są zdefiniowane. |
 | Atrybut | Dopasowuje elementy, które mają określony atrybut. Określ pełną nazwę atrybutu, na przykład `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>` .<br/><br/>Jeśli wykluczasz <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> atrybut, kod, który używa funkcji języka, takich jak `async` ,, `await` `yield return` , i zaimplementowane właściwości, jest wykluczony z analizy pokrycia kodu. Aby wykluczyć faktycznie wygenerowany kod, należy wykluczyć tylko <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> atrybut. |
-| Funkcja | Dopasowuje procedury, funkcje lub metody przez w pełni kwalifikowaną nazwę, łącznie z listą parametrów. Możesz również dopasować część nazwy przy użyciu [wyrażenia regularnego](#regular-expressions).<br/><br/>Przykłady:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);`Znajd<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`Języków |
+| Funkcja | Dopasowuje procedury, funkcje lub metody przez w pełni kwalifikowaną nazwę, łącznie z listą parametrów. Możesz również dopasować część nazwy przy użyciu [wyrażenia regularnego](#regular-expressions).<br/><br/>Przykłady:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` Znajd<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` Języków |
 
 ### <a name="regular-expressions"></a>Wyrażenia regularne
 
@@ -124,7 +124,7 @@ Węzły include i Exclude używają wyrażeń regularnych, które nie są takie 
 
 - ** \\ ( \\ )** dopasowuje nawiasy "()"
 
-- **\\\\**dopasowuje ogranicznik ścieżki pliku " \\ "
+- **\\\\** dopasowuje ogranicznik ścieżki pliku " \\ "
 
 - **^** dopasowuje początek ciągu
 
@@ -288,7 +288,7 @@ Included items must then not match any entries in the exclude list to remain inc
 </RunSettings>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Konfigurowanie testów jednostkowych przy użyciu pliku parametrów uruchomieniowych](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
 - [Użyj pokrycia kodu, aby określić, ile kodu jest testowany](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

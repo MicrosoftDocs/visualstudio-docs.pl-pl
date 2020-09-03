@@ -10,19 +10,19 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 84f74b4718a7f976b386197a79692256ab49caa4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659119"
 ---
-# <a name="how-to-use-search-in-the-workflow-designer"></a>Instrukcje: korzystanie z wyszukiwania w Projektant przepływu pracy
+# <a name="how-to-use-search-in-the-workflow-designer"></a>Instrukcje: Używanie funkcji wyszukiwania w Projektancie przepływu pracy
 Aby ułatwić tworzenie większych, bardziej złożonych przepływów pracy, wyszukiwanie może być używane w Projektant przepływu pracy do znajdowania elementów według słowa kluczowego. Należy pamiętać, że projektant nie obsługuje zastępowania. W projektancie znajdą się następujące elementy:
 
 ## <a name="quick-find"></a>Szybkie wyszukiwanie
  W projektancie znajdą się następujące elementy:
 
-- Właściwości obiektów <xref:System.Activities.Activity>, obiektów <xref:System.Activities.Statements.FlowNode>, obiektów <xref:System.Activities.Statements.State>, przejść i innych niestandardowych elementów sterowania przepływem.
+- Właściwości <xref:System.Activities.Activity> obiektów, <xref:System.Activities.Statements.FlowNode> obiektów, <xref:System.Activities.Statements.State> obiektów, przejść i innych niestandardowych elementów sterowania przepływem.
 
 - Zmienne
 
@@ -49,4 +49,4 @@ Aby ułatwić tworzenie większych, bardziej złożonych przepływów pracy, wys
 
 2. Wprowadź element wyszukiwania do pola tekstowego **Znajdź co** i kliknij przycisk **Znajdź wszystko**
 
-3. Wynik Znajdź zostanie wyświetlony w widoku**wyniki wyszukiwania** [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Dwukrotne kliknięcie elementu wynikowego spowoduje przejście do działania, które zawiera dopasowanie w Projektancie przepływu pracy.
+3. Wynik Znajdź zostanie wyświetlony w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] widoku **wyszukiwania wyników** . Dwukrotne kliknięcie elementu wynikowego spowoduje przejście do działania, które zawiera dopasowanie w Projektancie przepływu pracy.

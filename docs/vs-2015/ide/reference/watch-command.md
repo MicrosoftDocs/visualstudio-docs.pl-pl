@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 18e585064bb50db7a0497c6b96e428a662e953ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72604834"
 ---
 # <a name="watch-command"></a>Czujka — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Tworzy i otwiera określone wystąpienie **Obejrzyj** okna. Można użyć okna **czujki** do obliczenia wartości zmiennych, wyrażeń i rejestrów, aby edytować te wartości i zapisać wyniki.
+Tworzy i otwiera określone wystąpienie okna **czujka** . Można użyć okna **czujki** do obliczenia wartości zmiennych, wyrażeń i rejestrów, aby edytować te wartości i zapisać wyniki.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ Debug.Watch[index]
 ```
 
 ## <a name="arguments"></a>Argumenty
- Wymagane `index`. Numer wystąpienia okna Czujka.
+ `index` Wymagane. Numer wystąpienia okna Czujka.
 
 ## <a name="remarks"></a>Uwagi
- `index` musi być liczbą całkowitą. Prawidłowe wartości to 1, 2, 3 lub 4.
+ Wartość `index` musi być liczbą całkowitą. Prawidłowe wartości to 1, 2, 3 lub 4.
 
 ## <a name="example"></a>Przykład
 

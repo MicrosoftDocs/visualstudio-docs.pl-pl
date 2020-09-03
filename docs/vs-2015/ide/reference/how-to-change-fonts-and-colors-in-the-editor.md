@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4eca05b76a55fb45539da7bb15479495b8a3449f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661228"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Porady: zmiana czcionek i kolorów w Edytorze
@@ -27,7 +27,7 @@ ms.locfileid: "72661228"
 
 Można zmienić domyślną krój czcionki, dostosować rozmiar czcionki i zmienić kolor pierwszego planu i tła dla różnych **elementów wyświetlania** tekstu w edytorze kodu. Podczas zmieniania ustawień czcionki należy wziąć pod uwagę następujące informacje:
 
-- Ustawienia dla **czcionki** i **rozmiaru** są globalne dla wszystkich elementów tekstu we wszystkich edytorach [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
+- Ustawienia dla **czcionki** i **rozmiaru** są globalne dla wszystkich elementów tekstu we wszystkich [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] edytorach.
 
 - Nazwy czcionek o stałej szerokości są wyświetlane pogrubioną czcionką.
 

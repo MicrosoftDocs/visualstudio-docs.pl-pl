@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dcc993ab7c127b16fda206047a1a985d1e003123
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663178"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Wyświetlanie typów i relacji (Projektant klas)
@@ -37,11 +37,11 @@ Projektant klas używa diagramów klas, aby wyświetlić szczegóły typów, na 
 
  Opisuje, w jaki sposób Projektant klas może służyć do wizualizacji istniejącego kodu.
 
- [Instrukcje: Wyświetlanie dziedziczenia między typami (Projektant klas)](../ide/how-to-view-inheritance-between-types-class-designer.md)
+ [Porady: wyświetlanie dziedziczenia pomiędzy typami (Projektant klas)](../ide/how-to-view-inheritance-between-types-class-designer.md)
 
  Opisuje sposób wyświetlania relacji dziedziczenia między typami.
 
- [Instrukcje: Zmiana między notacją składowych i notacją skojarzeń (Projektant klas)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
+ [Porady: zmiana pomiędzy notacją członka i skojarzeniem notacji (Projektant klas)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
 
  Opisuje sposób przełączania między notacją składowej i notacją skojarzenia.
 
@@ -50,6 +50,6 @@ Projektant klas używa diagramów klas, aby wyświetlić szczegóły typów, na 
 
  [Refaktoryzacja klas i typów (Projektant klas)](../ide/refactoring-classes-and-types-class-designer.md)
 
- [Instrukcje: Dostosowywanie diagramów klas (Projektant klas)](../ide/how-to-customize-class-diagrams-class-designer.md)
+ [Porady: dostosowywanie diagramów klasy (Projektant klas)](../ide/how-to-customize-class-diagrams-class-designer.md)
 
  [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md)

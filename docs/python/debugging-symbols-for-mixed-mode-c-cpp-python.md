@@ -10,10 +10,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 4a735c374216b1810b3abd99ffab89000cec8b8f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540923"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalowanie symboli debugowania dla interpreterów języka Python
@@ -61,7 +61,7 @@ Jeśli pobrano symbole oddzielnie, wykonaj poniższe kroki, aby poznać ich info
 
 ## <a name="official-distributions"></a>Oficjalne dystrybucje
 
-| Wersja języka Python | Pliki do pobrania |
+| Wersja języka Python | Pobieranie |
 | --- | --- |
 | 3,5 i nowsze | Instalowanie symboli za pomocą Instalatora języka Python. |
 | 3.4.4 | [32 — bit](https://www.python.org/ftp/python/3.4.4/python-3.4.4-pdb.zip)  -  [64 — bit](https://www.python.org/ftp/python/3.4.4/python-3.4.4.amd64-pdb.zip) |

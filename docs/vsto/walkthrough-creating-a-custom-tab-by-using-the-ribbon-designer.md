@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5a32cfc84aa9bc93761dc8b57c13651eb04031a2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255522"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Przewodnik: Tworzenie niestandardowej karty przy użyciu projektanta wstążki
@@ -45,18 +45,18 @@ ms.locfileid: "71255522"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- Program Microsoft Excel
+- Microsoft Excel
 
 ## <a name="create-an-excel-workbook-project"></a>Utwórz projekt skoroszytu programu Excel
- Kroki związane z korzystaniem z projektanta wstążki są prawie identyczne we wszystkich aplikacjach pakietu Office. Ten przykład używa skoroszytu programu Excel.
+ Kroki związane z korzystaniem z projektanta wstążki są prawie identyczne we wszystkich aplikacjach pakietu Office. W tym przykładzie użyto skoroszytu programu Excel.
 
 ### <a name="to-create-an-excel-workbook-project"></a>Aby utworzyć projekt skoroszytu programu Excel
 
-- Utwórz projekt skoroszytu programu Excel o nazwie **MyExcelRibbon**. Aby uzyskać więcej informacji, zobacz [jak: Utwórz projekty pakietu Office w programie](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+- Utwórz projekt skoroszytu programu Excel o nazwie **MyExcelRibbon**. Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Program Visual Studio otwiera nowy skoroszyt w Projektancie i dodaje projekt **MyExcelRibbon** do **Eksplorator rozwiązań**.
 
-## <a name="BKMK_CreateActionsPanes"></a>Tworzenie okienek akcji
+## <a name="create-actions-panes"></a><a name="BKMK_CreateActionsPanes"></a> Tworzenie okienek akcji
  Dodaj dwa okienka akcji niestandardowych do projektu. Później dodasz przyciski pokazujące i ukrywając te okienka akcji na karcie niestandardowe.
 
 ### <a name="to-create-actions-panes"></a>Aby utworzyć okienka akcji
@@ -73,14 +73,14 @@ ms.locfileid: "71255522"
 
 5. Powtórz kroki od 1 do 5 w celu utworzenia drugiego okienka akcji i etykiety. Ustaw właściwość **Text** drugiej etykiety w **okienku Akcje 2**.
 
-## <a name="BKMK_CreateCustomTab"></a>Tworzenie niestandardowej karty
+## <a name="create-a-custom-tab"></a><a name="BKMK_CreateCustomTab"></a> Tworzenie niestandardowej karty
  Jedną z wytycznych dotyczących projektowania aplikacji pakietu Office jest to, że użytkownicy powinni zawsze mieć kontrolę nad interfejsem użytkownika aplikacji pakietu Office. Aby dodać tę możliwość dla okienek akcji, możesz dodać przyciski pokazujące i ukrywające poszczególne akcje na karcie niestandardowej na Wstążce. Aby utworzyć niestandardową kartę, Dodaj do projektu element **wstążki (Projektant wizualizacji)** . Projektant ułatwia dodawanie i określanie położenia kontrolek, Ustawianie właściwości kontrolki i obsługę zdarzeń kontroli.
 
 ### <a name="to-create-a-custom-tab"></a>Aby utworzyć kartę niestandardową
 
 1. W menu **projekt** wybierz polecenie **Dodaj nowy element**.
 
-2. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **wstążka (projektant wizualny)** .
+2. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **wstążka (projektant wizualny)**.
 
 3. Zmień nazwę nowej wstążki **na Wstążkę, a**następnie wybierz pozycję **Dodaj**.
 
@@ -108,8 +108,8 @@ ms.locfileid: "71255522"
 
 14. Ustaw właściwość **etykieta** na **Ukryj okienko akcje**.
 
-## <a name="BKMK_HideShowActionsPane"></a>Ukrywanie i wyświetlanie okienek akcji przy użyciu przycisków na karcie niestandardowe
- Ostatnim krokiem jest dodanie kodu, który odpowiada użytkownikowi. Dodaj programy obsługi zdarzeń dla <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> zdarzeń dwóch przycisków <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> i zdarzenia przycisku przełącznika. Dodaj kod do tych programów obsługi zdarzeń, aby włączyć ukrywanie i wyświetlanie okienek akcji.
+## <a name="hide-and-show-actions-panes-by-using-buttons-on-the-custom-tab"></a><a name="BKMK_HideShowActionsPane"></a> Ukrywanie i wyświetlanie okienek akcji przy użyciu przycisków na karcie niestandardowe
+ Ostatnim krokiem jest dodanie kodu, który odpowiada użytkownikowi. Dodaj programy obsługi zdarzeń dla <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> zdarzeń dwóch przycisków i <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> zdarzenia przycisku przełącznika. Dodaj kod do tych programów obsługi zdarzeń, aby włączyć ukrywanie i wyświetlanie okienek akcji.
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Aby ukryć i wyświetlić okienka akcji przy użyciu przycisków na karcie niestandardowe
 
@@ -120,12 +120,12 @@ ms.locfileid: "71255522"
      [!code-csharp[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#1)]
 
-3. Zastąp `MyRibbon_Load` metodę poniższym kodem. Ten kod umożliwia dodanie obiektów okienka Akcje do <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> kolekcji i ukrycie obiektów z widoku. Kod wizualizacji C# dołącza także delegatów do kilku zdarzeń kontrolki wstążki.
+3. Zastąp metodę `MyRibbon_Load` następującym kodem. Ten kod umożliwia dodanie obiektów okienka Akcje do <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> kolekcji i ukrycie obiektów z widoku. Kod Visual C# dołącza także delegatów do kilku zdarzeń kontrolki wstążki.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#2)]
      [!code-vb[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#2)]
 
-4. Dodaj następujące trzy metody obsługi zdarzeń do `MyRibbon` klasy. Te metody obsługują <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> zdarzenia dwóch przycisków <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> i zdarzenia przycisku przełącznika. Procedury obsługi zdarzeń dla Button1 i Button2 pokażą okienka alternatywne akcje. Procedura obsługi zdarzeń dla toggleButton1 pokazuje i ukrywa aktywne akcje okienka.
+4. Dodaj następujące trzy metody obsługi zdarzeń do `MyRibbon` klasy. Te metody obsługują <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> zdarzenia dwóch przycisków i <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> zdarzenia przycisku przełącznika. Procedury obsługi zdarzeń dla Button1 i Button2 pokażą okienka alternatywne akcje. Procedura obsługi zdarzeń dla toggleButton1 pokazuje i ukrywa aktywne akcje okienka.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#3)]
      [!code-vb[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#3)]
@@ -156,15 +156,15 @@ ms.locfileid: "71255522"
 
 - Dodaj interfejs użytkownika oparty na kontekście do dowolnych dostosowań na poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [Omówienie okienka Akcje](../vsto/actions-pane-overview.md).
 
-- Rozbudowa standardowego lub niestandardowego formularza programu Outlook Microsoft Office. Aby uzyskać więcej informacji, [zobacz Przewodnik: Projektuj region](../vsto/walkthrough-designing-an-outlook-form-region.md)formularza programu Outlook.
+- Rozbudowa standardowego lub niestandardowego formularza programu Outlook Microsoft Office. Aby uzyskać więcej informacji, zobacz [Przewodnik: Projektowanie regionu formularza programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
-- [Wstążka — omówienie](../vsto/ribbon-overview.md)
+- [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
 - [Dostosowywanie wstążki dla programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Instrukcje: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Instrukcje: Zmiana pozycji karty na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Instrukcje: Dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)
-- [Instrukcje: Dodawanie formantów do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Instrukcje: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Instrukcje: zmiana położenia karty na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Instrukcje: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)
+- [Instrukcje: Dodawanie kontrolek do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
 - [Omówienie modelu obiektów wstążki](../vsto/ribbon-object-model-overview.md)

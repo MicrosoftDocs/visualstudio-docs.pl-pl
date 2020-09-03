@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72381320"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Przewodnik: powiązanie z danymi z usługi w projekcie dodatku narzędzi VSTO
@@ -28,11 +28,11 @@ ms.locfileid: "72381320"
 
  W instruktażu przedstawiono następujące zagadnienia:
 
-- Dodawanie kontrolki <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu w czasie wykonywania.
+- Dodawanie <xref:Microsoft.Office.Tools.Word.RichTextContentControl> kontrolki do dokumentu w czasie wykonywania.
 
-- Powiązywanie kontroli <xref:Microsoft.Office.Tools.Word.RichTextContentControl> z danymi z usługi sieci Web.
+- Powiązywanie <xref:Microsoft.Office.Tools.Word.RichTextContentControl> formantu z danymi z usługi sieci Web.
 
-- Reagowanie na zdarzenie <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> kontrolki <xref:Microsoft.Office.Tools.Word.RichTextContentControl>.
+- Reagowanie na <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> zdarzenie <xref:Microsoft.Office.Tools.Word.RichTextContentControl> formantu.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -48,11 +48,11 @@ ms.locfileid: "72381320"
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-1. Utwórz projekt dodatku VSTO programu Word o nazwie **MTPS Content Service**, używając albo Visual Basic lub C#.
+1. Utwórz projekt dodatku VSTO programu Word o nazwie **MTPS Content Service**przy użyciu albo Visual Basic lub C#.
 
      Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Program Visual Studio otwiera plik `ThisAddIn.vb` lub `ThisAddIn.cs` i dodaje projekt do **Eksplorator rozwiązań**.
+     Program Visual Studio otwiera `ThisAddIn.vb` `ThisAddIn.cs` plik lub i dodaje projekt do **Eksplorator rozwiązań**.
 
 ## <a name="add-a-web-service"></a>Dodaj usługę sieci Web
  W tym instruktażu należy użyć usługi sieci Web o nazwie MTPS Content Service. Ta usługa sieci Web zwraca informacje z określonego artykułu MSDN w postaci ciągu XML lub zwykłego tekstu. W późniejszym kroku pokazano, jak wyświetlić zwrócone informacje w kontrolce zawartości.
@@ -78,17 +78,17 @@ ms.locfileid: "72381320"
 
 ### <a name="to-add-a-content-control-and-bind-to-data"></a>Aby dodać kontrolkę zawartości i powiązać ją z danymi
 
-1. W klasie `ThisAddIn` deklaruj zmienne dla usługi zawartości MTPS, kontrolki zawartości i powiązania danych.
+1. W `ThisAddIn` klasie Zadeklaruj zmienne dla usługi zawartości MTPS, kontrolki zawartości i powiązania danych.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#2)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#2)]
 
-2. Dodaj następującą metodę do klasy `ThisAddIn`. Ta metoda tworzy kontrolkę zawartości na początku aktywnego dokumentu.
+2. Dodaj następującą metodę do `ThisAddIn` klasy. Ta metoda tworzy kontrolkę zawartości na początku aktywnego dokumentu.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#4)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#4)]
 
-3. Dodaj następującą metodę do klasy `ThisAddIn`. Ta metoda inicjuje obiekty, które są konieczne do utworzenia i wysłania żądania do usługi sieci Web.
+3. Dodaj następującą metodę do `ThisAddIn` klasy. Ta metoda inicjuje obiekty, które są konieczne do utworzenia i wysłania żądania do usługi sieci Web.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#6)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#6)]
@@ -98,13 +98,13 @@ ms.locfileid: "72381320"
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#5](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#5)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#5](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#5)]
 
-5. Wywołaj metody `AddRichTextControlAtRange` i `InitializeServiceObjects` z metody `ThisAddIn_Startup`. Dla C# programistów Dodaj program obsługi zdarzeń.
+5. Wywoływanie `AddRichTextControlAtRange` `InitializeServiceObjects` metod i przy użyciu `ThisAddIn_Startup` metody. Dla programistów C# Dodaj program obsługi zdarzeń.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#3)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#3)]
 
 ## <a name="test-the-add-in"></a>Testowanie dodatku
- Po otwarciu programu Word zostanie wyświetlona kontrolka <xref:Microsoft.Office.Tools.Word.RichTextContentControl>. Tekst w kontrolce zostanie zmieniony po kliknięciu jej wewnątrz.
+ Po otwarciu programu Word <xref:Microsoft.Office.Tools.Word.RichTextContentControl> zostanie wyświetlony formant. Tekst w kontrolce zostanie zmieniony po kliknięciu jej wewnątrz.
 
 ### <a name="to-test-the-vsto-add-in"></a>Aby przetestować dodatek narzędzi VSTO
 
@@ -114,5 +114,5 @@ ms.locfileid: "72381320"
 
      Informacje są pobierane z usługi zawartości MTPS i wyświetlane wewnątrz kontrolki zawartości.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)

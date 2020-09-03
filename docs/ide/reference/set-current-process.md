@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a3440c66d79fef3eac3744681870c9ce1ed0e97b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593554"
 ---
 # <a name="set-current-process"></a>Ustaw bieżący proces
@@ -33,7 +33,7 @@ Debug.SetCurrentProcess index
 Wymagany. Indeks procesu.
 
 ## <a name="remarks"></a>Uwagi
-Można dołączyć do wielu procesów podczas debugowania, ale tylko jeden proces jest aktywny w dubberze w danym momencie. Za pomocą `SetCurrentProcess` polecenia można ustawić aktywny proces.
+Podczas debugowania można dołączyć do wielu procesów, ale tylko jeden proces jest aktywny w programie w danym momencie. Możesz użyć polecenia, `SetCurrentProcess` Aby ustawić aktywny proces.
 
 ## <a name="example"></a>Przykład
 
@@ -43,6 +43,6 @@ Można dołączyć do wielu procesów podczas debugowania, ale tylko jeden proce
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)
 - [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

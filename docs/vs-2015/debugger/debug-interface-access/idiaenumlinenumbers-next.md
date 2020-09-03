@@ -1,5 +1,5 @@
 ---
-title: Idiaenumlinenumbers::Next — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumLineNumbers:: Next | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ebf4016b3bff52a74607fe01918655c0587f51d9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190104"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera określoną liczbę numery wierszy w kolejności wyliczenia.  
+Pobiera określoną liczbę numerów wierszy w sekwencji wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,18 +37,18 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>Parametry  
  celt  
- [in] Liczba numerów wierszy w modułu wyliczającego do pobrania.  
+ podczas Liczba numerów wierszy w module wyliczającym do pobrania.  
   
  rgelt  
- [out] Zwraca tablicę [idialinenumber —](../../debugger/debug-interface-access/idialinenumber.md) obiekty reprezentujące numery wierszy żądaną.  
+ określoną Zwraca tablicę obiektów [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) reprezentujących żądane numery wierszy.  
   
  pceltFetched  
- [out] Zwraca liczbę numery wierszy w pobrano modułu wyliczającego.  
+ określoną Zwraca liczbę wierszy w ramach pobranego modułu wyliczającego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` przypadku bez więcej numerów wierszy. W przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca `S_FALSE` czy nie ma więcej numerów wierszy. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [Idialinenumber —](../../debugger/debug-interface-access/idialinenumber.md)   
+ [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
+ [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

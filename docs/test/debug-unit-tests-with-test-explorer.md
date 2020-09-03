@@ -1,5 +1,5 @@
 ---
-title: Debuguj testy jednostkowe za pomocą Eksploratora testów
+title: Debugowanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 description: Dowiedz się, jak debugować testy jednostkowe za pomocą Eksploratora testów w programie Visual Studio.
 ms.date: 07/14/2020
 ms.topic: how-to
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2def56c6a3860ce0476f448f87bdde25c7970807
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86393529"
 ---
 # <a name="debug-and-analyze-unit-tests-with-test-explorer"></a>Debugowanie i analizowanie testów jednostkowych za pomocą Eksploratora testów

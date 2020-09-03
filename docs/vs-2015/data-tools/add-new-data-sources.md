@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85c07ad7995bc614df4b988bb17fa8977452b5d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673064"
 ---
 # <a name="add-new-data-sources"></a>Dodawanie nowych źródeł danych
@@ -44,21 +44,21 @@ W kontekście narzędzi .NET Data Tools w programie Visual Studio termin *Źród
 > [!NOTE]
 > Jeśli nie korzystasz z funkcji, zestawów danych, Entity Framework, LINQ to SQL, WCF ani programu SharePoint, pojęcie "Źródło danych" nie ma zastosowania. Po prostu Połącz się bezpośrednio z bazą danych przy użyciu obiektów SqlCommand i Komunikuj się bezpośrednio z bazą danych.
 
- Źródła danych można tworzyć i edytować za pomocą **Kreatora konfiguracji źródła danych** w aplikacji Windows Forms lub Windows Presentation Foundation. Aby uzyskać Entity Framework, najpierw utwórz klasy jednostek, a następnie uruchom kreatora, wybierając pozycję **Project**  > **Dodaj nowe źródło danych** (opisane w dalszej części tego artykułu).
+ Źródła danych można tworzyć i edytować za pomocą **Kreatora konfiguracji źródła danych** w aplikacji Windows Forms lub Windows Presentation Foundation. Aby uzyskać Entity Framework, najpierw utwórz klasy jednostek, a następnie uruchom kreatora, wybierając pozycję **projekt**  >  **Dodaj nowe źródło danych** (bardziej szczegółowo opisane w dalszej części tego artykułu).
 
  ![Kreator konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png "Kreator konfiguracji źródła danych")
 
- Po utworzeniu źródła danych pojawia się ono w oknie narzędzia **źródła danych** (Shift + Alt + D lub **Widok**  >  inne**Źródło danych** > **systemu Windows** ). Możesz przeciągnąć źródło danych z okna **źródła danych** na powierzchnię lub kontrolkę projektu formularza. Powoduje to wygenerowanie kodu standardowego — kod, który wyświetla dane, które pochodzą z magazynu danych do użytkownika. Na poniższej ilustracji przedstawiono zestaw danych, który został porzucony w formularzu systemu Windows. W przypadku wybrania opcji F5 w aplikacji dane z podstawowej bazy danych pojawią się w kontrolkach formularza.
+ Po utworzeniu źródła danych pojawia się ono w oknie narzędzia **źródła danych** (Shift + Alt + D lub **Wyświetl**  >  **inne**  >  **Źródło danych**systemu Windows). Możesz przeciągnąć źródło danych z okna **źródła danych** na powierzchnię lub kontrolkę projektu formularza. Powoduje to wygenerowanie kodu standardowego — kod, który wyświetla dane, które pochodzą z magazynu danych do użytkownika. Na poniższej ilustracji przedstawiono zestaw danych, który został porzucony w formularzu systemu Windows. W przypadku wybrania opcji F5 w aplikacji dane z podstawowej bazy danych pojawią się w kontrolkach formularza.
 
  ![Operacja przeciągania źródła danych](../data-tools/media/raddata-data-source-drag-operation.png "raddata operacji przeciągania źródła danych")
 
 ## <a name="data-source-for-a-database-or-a-database-file"></a>Źródło danych dla bazy danych lub pliku bazy danych
 
 ### <a name="dataset"></a>Zestaw danych
- Aby utworzyć zestaw danych jako źródło danych, uruchom **Kreatora konfiguracji źródła danych** (**projekt**  > **Dodaj nowe źródło danych** ) i wybierz typ źródła dane **bazy** danych. Postępuj zgodnie z monitami, aby określić nowe lub istniejące połączenie z bazą danych albo plik bazy danych.
+ Aby utworzyć zestaw danych jako źródło danych, uruchom **Kreatora konfiguracji źródła danych** (**Project**  >  **Dodaj nowe źródło danych** projektu) i wybierz typ źródła danych **Database** . Postępuj zgodnie z monitami, aby określić nowe lub istniejące połączenie z bazą danych albo plik bazy danych.
 
 ### <a name="entity-classes"></a>Klasy jednostek
- Aby utworzyć model Entity Framework jako źródło danych, najpierw uruchom **kreatora Entity Data Model** , aby utworzyć klasy jednostek (**projekt**  > **dodaj nowy element**  > **ADO.NET Entity Data Model**).
+ Aby utworzyć model Entity Framework jako źródło danych, najpierw uruchom **Kreatora Entity Data Model** , aby utworzyć klasy jednostek (**projekt**  >  **Dodaj nowy element**  >  **ADO.NET Entity Data Model**).
 
  ![Nowy element projektu Entity Framework modelu](../data-tools/media/raddata-new-entity-framework-model-project-item.png "raddata nowy element projektu modelu Entity Framework")
 
@@ -97,10 +97,10 @@ W kontekście narzędzi .NET Data Tools w programie Visual Studio termin *Źród
 > Może być konieczne skompilowanie projektu zawierającego obiekty przed wyświetleniem ich w widoku drzewa.
 
 > [!NOTE]
-> Aby można było obsługiwać powiązanie danych przeciągnij i upuść, obiekty implementujące interfejs <xref:System.ComponentModel.ITypedList> lub <xref:System.ComponentModel.IListSource> muszą mieć konstruktora domyślnego. W przeciwnym razie program Visual Studio nie może utworzyć wystąpienia obiektu źródła danych, a po przeciągnięciu elementu na powierzchnię projektu zostanie wyświetlony komunikat o błędzie.
+> Aby można było obsłużyć powiązanie danych przeciągnij i upuść, obiekty implementujące <xref:System.ComponentModel.ITypedList> <xref:System.ComponentModel.IListSource> interfejs lub muszą mieć konstruktora domyślnego. W przeciwnym razie program Visual Studio nie może utworzyć wystąpienia obiektu źródła danych, a po przeciągnięciu elementu na powierzchnię projektu zostanie wyświetlony komunikat o błędzie.
 
 ## <a name="data-source-for-a-sharepoint-list"></a>Źródło danych dla listy programu SharePoint
- Można utworzyć źródło danych z listy programu SharePoint, uruchamiając **Kreatora konfiguracji źródła danych** i wybierając typ źródła danych **programu SharePoint** . Program SharePoint udostępnia dane za pośrednictwem [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], więc tworzenie źródła danych programu SharePoint jest takie samo jak w przypadku tworzenia źródła danych z usługi. Wybranie elementu **programu SharePoint** w **Kreatorze konfiguracji źródła danych** powoduje otwarcie okna dialogowego **Dodaj odwołanie do usługi** , w którym można nawiązać połączenie z usługą danych programu SharePoint, wskazując serwerowi programu SharePoint.  Wymaga to zestawu SDK programu SharePoint.
+ Można utworzyć źródło danych z listy programu SharePoint, uruchamiając **Kreatora konfiguracji źródła danych** i wybierając typ źródła danych **programu SharePoint** . Program SharePoint udostępnia dane za pośrednictwem programu [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] , dlatego utworzenie źródła danych programu SharePoint jest takie samo jak w przypadku tworzenia źródła danych z usługi. Wybranie elementu **programu SharePoint** w **Kreatorze konfiguracji źródła danych** powoduje otwarcie okna dialogowego **Dodaj odwołanie do usługi** , w którym można nawiązać połączenie z usługą danych programu SharePoint, wskazując serwerowi programu SharePoint.  Wymaga to zestawu SDK programu SharePoint.
 
 ## <a name="see-also"></a>Zobacz też
  [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

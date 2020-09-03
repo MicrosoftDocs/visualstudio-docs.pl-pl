@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3cf93d96594b65b06670567e8c23cd83ccb7f1ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672976"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Powiązywanie kontrolek Windows Forms z danymi
@@ -36,7 +36,7 @@ ms.locfileid: "72672976"
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
 ## <a name="bind-to--data-in-a-datagridview-control"></a>Powiąż z danymi w formancie DataGridView
- Dla formantu DataGridView cała tabela jest powiązana z tym pojedynczym formantem. Po przeciągnięciu formantu DataGridView do formularza pojawia się również pasek narzędzi dla nawigowania po rekordach (<xref:System.Windows.Forms.BindingNavigator>). [Zestaw danych](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika. Na poniższej ilustracji jest również dodawana TableAdapterManager, ponieważ tabela Customers zawiera relację z tabelą Orders. Te zmienne są zadeklarowane w automatycznie generowanym kodzie jako prywatne elementy członkowskie w klasie Form. Wygenerowany automatycznie kod służący do wypełniania formantu DataGridView znajduje się w obsłudze zdarzeń Form_Load. Kod służący do zapisywania danych w celu zaktualizowania bazy danych znajduje się w procedurze obsługi zdarzeń zapisywania dla elementu BindingNavigator. Ten kod można przenieść lub zmodyfikować zgodnie z wymaganiami.
+ Dla formantu DataGridView cała tabela jest powiązana z tym pojedynczym formantem. Po przeciągnięciu formantu DataGridView do formularza pojawia się również pasek narzędzi dla nawigowania po rekordach ( <xref:System.Windows.Forms.BindingNavigator> ). [Zestaw danych](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawia się na pasku składnika. Na poniższej ilustracji jest również dodawana TableAdapterManager, ponieważ tabela Customers zawiera relację z tabelą Orders. Te zmienne są zadeklarowane w automatycznie generowanym kodzie jako prywatne elementy członkowskie w klasie Form. Wygenerowany automatycznie kod służący do wypełniania formantu DataGridView znajduje się w obsłudze zdarzeń form_load. Kod służący do zapisywania danych w celu zaktualizowania bazy danych znajduje się w procedurze obsługi zdarzeń zapisywania dla elementu BindingNavigator. Ten kod można przenieść lub zmodyfikować zgodnie z wymaganiami.
 
  ![GridView z parametrem BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView z parametrem BindingNavigator")
 
@@ -46,7 +46,7 @@ ms.locfileid: "72672976"
 
  Jeśli kontrolki wymagane przez aplikację nie są dostępne w oknie **źródła danych** , można dodać kontrolki. Aby uzyskać więcej informacji, zobacz [Dodawanie niestandardowych kontrolek do okna źródła danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
- Możesz również przeciągać elementy z okna **źródła danych** do kontrolek znajdujących się już w formularzu, aby powiązać formant z danymi. Kontrolka, która jest już powiązana z danymi, ma swoje powiązania danych resetowane do elementu, który ostatnio przeciągnięty do niego. Aby elementy docelowe upuszczania były prawidłowe, formanty muszą mieć możliwość wyświetlania bazowego typu danych elementu, który został przeciągnięty do niego z okna **źródła danych** . Na przykład nie można przeciągnąć elementu, który ma typ danych <xref:System.DateTime> na <xref:System.Windows.Forms.CheckBox>, ponieważ <xref:System.Windows.Forms.CheckBox> nie może wyświetlać daty.
+ Możesz również przeciągać elementy z okna **źródła danych** do kontrolek znajdujących się już w formularzu, aby powiązać formant z danymi. Kontrolka, która jest już powiązana z danymi, ma swoje powiązania danych resetowane do elementu, który ostatnio przeciągnięty do niego. Aby elementy docelowe upuszczania były prawidłowe, formanty muszą mieć możliwość wyświetlania bazowego typu danych elementu, który został przeciągnięty do niego z okna **źródła danych** . Na przykład nie można przeciągnąć elementu, który ma typ danych <xref:System.DateTime> na <xref:System.Windows.Forms.CheckBox> , ponieważ <xref:System.Windows.Forms.CheckBox> nie może on wyświetlać daty.
 
 ## <a name="bind-to--data-in-individual-controls"></a>Powiąż z danymi w poszczególnych kontrolkach
  Po powiązaniu źródła danych z "szczegółami" Każda kolumna w zestawie danych jest powiązana z oddzielnym formantem.

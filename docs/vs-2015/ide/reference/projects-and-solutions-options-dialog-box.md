@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 245b453a3020e79b924cb8058ff392bd59673402
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662132"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Opcje projektów i rozwiązań — okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ustawia domyślną ścieżkę [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] folderów projektu i określa zachowanie domyślne okna **danych wyjściowych** , **Lista zadań**i **Eksplorator rozwiązań** w miarę tworzenia i kompilowania projektów. Aby uzyskać dostęp do tego okna dialogowego, kliknij przycisk **Narzędzia/Opcje** rozwiń węzeł **projekty i rozwiązania**, a następnie kliknij pozycję **Ogólne**.
+Ustawia domyślną ścieżkę [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] folderów projektu i określa domyślne zachowanie okna **danych wyjściowych** , **Lista zadań**i **Eksplorator rozwiązań** jako projekty są tworzone i kompilowane. Aby uzyskać dostęp do tego okna dialogowego, kliknij przycisk **Narzędzia/Opcje** rozwiń węzeł **projekty i rozwiązania**, a następnie kliknij pozycję **Ogólne**.
 
 > [!NOTE]
 > Opcje dostępne w oknach dialogowych oraz nazwy i lokalizacje poleceń menu, które są widoczne, mogą się różnić od tego, co opisano w pomocy, w zależności od ustawień aktywnych lub wydania. Ta strona pomocy została zaprojektowana z uwzględnieniem **ogólnych ustawień deweloperskich** . Aby wyświetlić lub zmienić ustawienia, wybierz pozycję **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -38,9 +38,9 @@ Ustawia domyślną ścieżkę [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fo
 
  **Śledź aktywny element w Eksplorator rozwiązań** Po wybraniu **Eksplorator rozwiązań** automatycznie otwierane, a aktywny element jest zaznaczony. Wybrany element zmienia się podczas pracy z różnymi plikami w projekcie lub rozwiązaniu lub różnymi składnikami projektanta. Gdy ta opcja jest wyczyszczona, wybór w **Eksplorator rozwiązań** nie zmienia się automatycznie. Ta opcja jest domyślnie włączona.
 
- **Pokaż zaawansowane konfiguracje kompilacji** Po wybraniu opcji konfiguracji kompilacji są wyświetlane w oknie dialogowym **strony właściwości projektu** i w oknie dialogowym **strony właściwości rozwiązania** . Po wyczyszczeniu opcje konfiguracji kompilacji nie są wyświetlane w oknie dialogowym **strony właściwości projektu** i w oknie dialogowym **strony właściwości rozwiązania** dla [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] i [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projektów, które zawierają jedną konfigurację lub dwie konfiguracje debugowania i wersja. Jeśli projekt zawiera konfigurację zdefiniowaną przez użytkownika, są wyświetlane opcje konfiguracji kompilacji.
+ **Pokaż zaawansowane konfiguracje kompilacji** Po wybraniu opcji konfiguracji kompilacji są wyświetlane w oknie dialogowym **strony właściwości projektu** i w oknie dialogowym **strony właściwości rozwiązania** . Po wyczyszczeniu opcji konfiguracji kompilacji nie są wyświetlane w oknie dialogowym **strony właściwości projektu** i w oknie dialogowym **strony właściwości rozwiązania** dla [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projektów, które zawierają jedną konfigurację lub dwie konfiguracje debugowanie i wydanie. Jeśli projekt zawiera konfigurację zdefiniowaną przez użytkownika, są wyświetlane opcje konfiguracji kompilacji.
 
- Po zaznaczeniu tej opcji polecenia w menu **kompilacja** , takie jak **Kompilowanie rozwiązania**, ponowne **Kompilowanie rozwiązania**i **czyste rozwiązanie**, są wykonywane w konfiguracji wydania i polecenia w menu **Debuguj** , takie jak **Start Debugowanie** i **Uruchamianie bez debugowania**jest wykonywane w konfiguracji debugowania.
+ W przypadku usunięcia zaznaczenia polecenia w menu **kompilacja** , takie jak **rozwiązanie do kompilowania**, ponowne **Kompilowanie rozwiązania**i **czyste rozwiązanie**, są wykonywane w konfiguracji wydania i polecenia w menu **Debuguj** , takie jak **Rozpocznij debugowanie** i **Uruchom bez debugowania**, są wykonywane w konfiguracji debugowania.
 
  **Zawsze pokazuj rozwiązanie** Po wybraniu rozwiązanie i wszystkie polecenia działające na rozwiązaniach są zawsze wyświetlane w środowisku IDE. Po wyczyszczeniu wszystkie projekty są tworzone jako projekty autonomiczne, a rozwiązanie nie jest widoczne w Eksplorator rozwiązań lub polecenia, które działają na rozwiązaniach w IDE, jeśli rozwiązanie zawiera tylko jeden projekt.
 
@@ -50,7 +50,7 @@ Ustawia domyślną ścieżkę [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fo
 
  **Pokaż okno danych wyjściowych po rozpoczęciu kompilacji** Automatycznie wyświetla Okno Dane wyjściowe w środowisku IDE na początku kompilacji rozwiązania. Aby uzyskać więcej informacji, zobacz [How to: Control the okno dane wyjściowe](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Ta opcja jest domyślnie włączona.
 
- **Monituj o zmianę nazwy symbolicznej podczas zmiany nazwy plików** Po wybraniu Wyświetla okno komunikatu z pytaniem, czy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] powinna również zmieniać nazwy wszystkich odwołań w projekcie do elementu kodu.
+ **Monituj o zmianę nazwy symbolicznej podczas zmiany nazwy plików** Po wybraniu Wyświetla okno komunikatu z pytaniem, czy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] należy również zmienić nazwy wszystkich odwołań w projekcie na element kodu.
 
 ## <a name="see-also"></a>Zobacz też
  [Okno dialogowe Opcje, Projekty i rozwiązania, Kompilowanie i uruchamianie](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
