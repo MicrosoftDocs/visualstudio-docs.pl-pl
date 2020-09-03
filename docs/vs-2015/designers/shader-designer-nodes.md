@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b7526da10262003c9d086fdf1d74d065aac2d406
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664130"
 ---
 # <a name="shader-designer-nodes"></a>Węzły Shader Designer
@@ -28,13 +28,13 @@ Artykuły w tej sekcji dokumentacji zawierają informacje o różnych węzłach 
  Wszystkie węzły składają się z kombinacji wspólnych elementów. Każdy węzeł ma co najmniej jeden terminal wyjściowy po prawej stronie (z wyjątkiem końcowego węzła koloru, który reprezentuje dane wyjściowe programu do cieniowania). Węzły reprezentujące obliczenia lub próbniki tekstury mają terminale wejściowe po lewej stronie, ale węzły reprezentujące informacje nie mają terminali wejściowych. Terminale wyjściowe są połączone z terminalami wejściowymi, aby przenieść informacje z jednego węzła do drugiego.
 
 ### <a name="promotion-of-inputs"></a>Promocja wejść
- Ponieważ projektant programu do cieniowania musi ostatecznie wygenerować kod źródłowy HLSL, dzięki czemu efekt może być używany w grze lub aplikacji, węzły projektanta cieniowania podlegają regułom podwyższania poziomu, które są używane przez HLSL. Ze względu na to, że sprzęt graficzny działa głównie na wartościach zmiennoprzecinkowych, należy awansować między różnymi typami — na przykład od `int` do `float` lub z `float` do `double` — jest to nietypowe. Zamiast tego, ponieważ sprzęt graficzny używa tej samej operacji na wielu informacjach jednocześnie, może wystąpić różne rodzaje podwyższania poziomu, w których krótsza liczba danych wejściowych jest wydłuża w celu dopasowania do rozmiaru najdłuższych danych wejściowych. Sposób jego wydłużenia zależy od typu danych wejściowych, a także od samej operacji:
+ Ponieważ projektant programu do cieniowania musi ostatecznie wygenerować kod źródłowy HLSL, dzięki czemu efekt może być używany w grze lub aplikacji, węzły projektanta cieniowania podlegają regułom podwyższania poziomu, które są używane przez HLSL. Ponieważ sprzęt graficzny działa głównie na wartościach zmiennoprzecinkowych, należy wpisać promocję między różnymi typami — na przykład od `int` do `float` , lub z `float` do `double` — jest to nietypowe. Zamiast tego, ponieważ sprzęt graficzny używa tej samej operacji na wielu informacjach jednocześnie, może wystąpić różne rodzaje podwyższania poziomu, w których krótsza liczba danych wejściowych jest wydłuża w celu dopasowania do rozmiaru najdłuższych danych wejściowych. Sposób jego wydłużenia zależy od typu danych wejściowych, a także od samej operacji:
 
 - **Jeśli mniejszy typ jest wartością skalarną, wówczas:**
 
      Wartość skalarna jest replikowana do wektora, który jest równy rozmiarowi większej ilości danych wejściowych. Na przykład dane wejściowe skalarne 5,0 są wektorem (5,0, 5,0, 5,0), gdy największe wejście operacji jest wektorem trzech elementów, niezależnie od tego, co to jest operacja.
 
-- **Jeśli mniejszym typem jest wektor, a operacja jest mnożenia (\*,/,% itd.), wówczas:**
+- **Jeśli mniejszym typem jest wektor, a operacja jest mnożenia ( \* ,/,% i tak dalej), a następnie:**
 
      Wartość wektora jest kopiowana do wiodących elementów wektora, który jest równy rozmiarowi większych danych wejściowych, a końcowe elementy są ustawione na 1,0. Na przykład dane wejściowe wektora (5,0, 5,0) staną się wektorami (5,0, 5,0, 1,0, 1,0), gdy jest mnożona przez wektor czterech elementów. Pozwala to zachować trzeci i czwarty element danych wyjściowych przy użyciu tożsamości mnożenia, 1,0.
 
@@ -42,7 +42,7 @@ Artykuły w tej sekcji dokumentacji zawierają informacje o różnych węzłach 
 
      Wartość wektora jest kopiowana do wiodących elementów wektora, który jest równy rozmiarowi większych danych wejściowych, a końcowe elementy są ustawione na 0,0. Na przykład dane wejściowe wektora (5,0, 5,0) staną się wektorami (5,0, 5,0, 0,0, 0,0), gdy zostanie dodana do wektora czterech elementów. Pozwala to zachować trzeci i czwarty element danych wyjściowych przy użyciu tożsamości dodatku 0,0.
 
-## <a name="related-topics"></a>Tematy pokrewne
+## <a name="related-topics"></a>Powiązane tematy
 
 |Tytuł|Opis|
 |-----------|-----------------|
@@ -51,4 +51,4 @@ Artykuły w tej sekcji dokumentacji zawierają informacje o różnych węzłach 
 |[Węzły tekstury](../designers/texture-nodes.md)|Opisuje węzły, których można użyć do próbkowania różnych typów tekstury i geometrie, oraz do tworzenia lub przekształcania współrzędnych tekstury w typowy sposób.|
 |[Węzły matematyczne](../designers/math-nodes.md)|Opisuje węzły, których można użyć do wykonywania algebraicznych, logiki, trygonometrycznych i innych operacji matematycznych, które są mapowane bezpośrednio do instrukcji HLSL.|
 |[Węzły narzędzi](../designers/utility-nodes.md)|Opisuje węzły, których można użyć do wykonywania typowych obliczeń oświetlenia i innych typowych operacji, które nie są mapowane bezpośrednio na instrukcje HLSL.|
-|[Węzły filtrów](../designers/filter-nodes.md)|Opisuje węzły, których można użyć do wykonywania filtrowania tekstury i filtrowania kolorów.|
+|[Filtruj węzły](../designers/filter-nodes.md)|Opisuje węzły, których można użyć do wykonywania filtrowania tekstury i filtrowania kolorów.|

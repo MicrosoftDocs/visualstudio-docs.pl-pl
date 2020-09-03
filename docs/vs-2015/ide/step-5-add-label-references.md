@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 51512c80c96ef82835ce38c36e3643261ba84231
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671739"
 ---
 # <a name="step-5-add-label-references"></a>Krok 5. Dodawanie odwołań do etykiet
@@ -28,18 +28,18 @@ Program musi śledzić, które formanty etykiet wybiera gracz. W tej chwili prog
      [!code-csharp[VbExpressTutorial4Step5#5](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step5/cs/form1.cs#5)]
      [!code-vb[VbExpressTutorial4Step5#5](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step5/vb/form1.vb#5)]
 
-     Te zmienne odwołania wyglądają podobnie do instrukcji użytych wcześniej do dodawania obiektów (takich jak `Timer` obiektów, obiektów `List` i obiektów `Random`) do formularza. Jednak te instrukcje nie powodują, że dwie kontrolki dodatkowej etykiety są wyświetlane w formularzu, ponieważ nie ma słowa kluczowego `new` użytego w żadnej z dwóch instrukcji. Bez słowa kluczowego `new`, żaden obiekt nie jest tworzony. Dlatego `firstClicked` i `secondClicked` są nazywane zmiennymi odwołania: tylko śledzą (lub odwołują się do) obiekty `Label`.
+     Te zmienne odwołania wyglądają podobnie do instrukcji użytych wcześniej do dodawania obiektów (takich jak `Timer` obiekty, `List` obiekty i `Random` obiekty) do formularza. Jednak te instrukcje nie powodują, że dwie kontrolki dodatkowej etykiety są wyświetlane w formularzu, ponieważ nie ma `new` słowa kluczowego użytego w żadnej z dwóch instrukcji. Bez `new` słowa kluczowego, żaden obiekt nie jest tworzony. Dlatego `firstClicked` i `secondClicked` są nazywane zmiennymi odwołania: tylko te obiekty są śledzone (lub odwołują się do nich) `Label` .
 
-     Gdy zmienna nie śledzi obiektu, jest ustawiona na specjalną wartość zarezerwowaną: `null` w wizualizacjach C# i `Nothing` w Visual Basic. Tak więc, gdy program zostanie uruchomiony, zarówno `firstClicked`, jak i `secondClicked` są ustawione na `null` lub `Nothing`, co oznacza, że zmienne nie śledzą żadnych elementów.
+     Gdy zmienna nie śledzi obiektu, jest ustawiona na specjalną wartość zarezerwowaną: `null` w języku Visual C# i `Nothing` w Visual Basic. Tak więc, gdy program zostanie uruchomiony, obie `firstClicked` i `secondClicked` są ustawione na `null` lub `Nothing` , co oznacza, że zmienne nie śledzą niczego.
 
-2. Zmodyfikuj procedurę obsługi zdarzeń kliknięcia, aby użyć nowej zmiennej odwołania `firstClicked`. Usuń ostatnią instrukcję z metody obsługi zdarzeń `label_Click()` (`clickedLabel.ForeColor = Color.Black;`) i Zastąp ją następującą instrukcją `if`. (Pamiętaj, aby dołączyć komentarz i całą instrukcję `if`).
+2. Zmodyfikuj procedurę obsługi zdarzeń kliknięcia, aby użyć nowej `firstClicked` zmiennej Reference. Usuń ostatnią instrukcję z `label_Click()` metody obsługi zdarzeń ( `clickedLabel.ForeColor = Color.Black;` ) i Zastąp ją następującą `if` instrukcją. (Pamiętaj, aby dołączyć komentarz i całą `if` instrukcję).
 
      [!code-csharp[VbExpressTutorial4Step5#6](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step5/cs/form1.cs#6)]
      [!code-vb[VbExpressTutorial4Step5#6](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step5/vb/form1.vb#6)]
 
 3. Zapisz i uruchom program. Wybierz jeden z formantów etykiet, pojawi się jego ikona.
 
-4. Wybierz następny formant etykiety i zauważ, że nic się nie dzieje. Program śledzi już pierwszą etykietę, którą wybrał gracz, więc `firstClicked` nie równa się `null` w wizualizacji C# lub `Nothing` w Visual Basic. Gdy instrukcja `if` sprawdza `firstClicked`, aby określić, czy jest równa `null` lub `Nothing`, stwierdza, że nie, i nie wykonuje instrukcji w instrukcji `if`. Tak więc, tylko pierwsza wybrana ikona zmienia kolor na czarny, a inne ikony są niewidoczne, jak pokazano na poniższej ilustracji.
+4. Wybierz następny formant etykiety i zauważ, że nic się nie dzieje. Program śledzi już pierwszą etykietę, którą wybrał gracz, więc `firstClicked` nie jest równa się `null` w Visual C# lub `Nothing` w Visual Basic. Gdy `if` instrukcja sprawdzi, `firstClicked` czy jest równa `null` lub `Nothing` , stwierdza, że nie, i nie wykonuje instrukcji w `if` instrukcji. Tak więc, tylko pierwsza wybrana ikona zmienia kolor na czarny, a inne ikony są niewidoczne, jak pokazano na poniższej ilustracji.
 
      ![Gra w dopasowywanie pokazująca jedną ikonę](../ide/media/express-tut4step5.png "Express_Tut4Step5") Gra w dopasowywanie pokazująca jedną ikonę
 

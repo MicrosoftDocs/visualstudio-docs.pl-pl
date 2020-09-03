@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c75d3cae07101363f6c986a1defb375f602f466
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815126"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Przewodnik: debugowanie arkusza stylów XSLT
@@ -70,7 +70,7 @@ Dodamy dwie zmienne do okna **czujki 1** , aby można było przeanalizować wart
 
 3. W następnym wierszu wpisz `self::node()` w polu **Nazwa** , a następnie naciśnij klawisz **Enter**.
 
-   `self::node()`jest wyrażeniem XPath, które jest obliczane do bieżącego węzła kontekstu. Wartość `self::node()` wyrażenia XPath jest pierwszym węzłem książki. Zmiany są wprowadzane w trakcie transformacji.
+   `self::node()` jest wyrażeniem XPath, które jest obliczane do bieżącego węzła kontekstu. Wartość `self::node()` wyrażenia XPath jest pierwszym węzłem książki. Zmiany są wprowadzane w trakcie transformacji.
 
 4. Rozwiń `self::node()` węzeł, a następnie rozwiń węzeł, który ma wartość `price` .
 
@@ -155,6 +155,6 @@ Przewodnik korzysta z poniższych dwóch plików.
 </bookstore>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie kodu XSLT](../xml-tools/debugging-xslt.md)

@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTIES | Dokumenty firmy Microsoft
+title: THREADPROPERTIES | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bd0ed4e33b1f8e0e905f3c88493c9f513c177fbc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713422"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
@@ -53,33 +53,33 @@ public struct THREADPROPERTIES { 
 
 ## <a name="members"></a>Elementy członkowskie
  `dwFields`\
- Kombinacja flag z wyliczenia [THREADPROPERTY_FIELDS,](../../../extensibility/debugger/reference/threadproperty-fields.md) opisująca pola w tej strukturze są prawidłowe.
+ Kombinacja flag z wyliczenia [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) , opisująca, które pola w tej strukturze są prawidłowe.
 
  `dwThreadId`\
  Identyfikator wątku.
 
  `dwSuspendCount`\
- Liczba wstrzymania wątku.
+ Liczba wstrzymań wątku.
 
  `dwThreadState`\
- Wartość z [wyliczenia THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) wskazująca stan wątku roboczego.
+ Wartość z wyliczenia [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) wskazująca stan wątku operacyjnego.
 
  `bstrPriority`\
- Ciąg określający priorytet wątku; na przykład "Powyżej normy", "Normalny" lub "Czas krytyczny".
+ Ciąg określający priorytet wątku; na przykład "powyżej normalnego", "normalny" lub "czas krytyczne".
 
  `bstName`\
  Nazwa wątku.
 
  `bstrLocation`\
- Lokalizacja wątku (zwykle najwyższej ramki stosu), zazwyczaj wyrażona jako nazwa metody, w której wykonanie jest obecnie zatrzymane.
+ Lokalizacja wątku (zazwyczaj ramka najwyższego stosu), zwykle wyrażona jako nazwa metody, w której wykonywanie jest aktualnie zatrzymane.
 
 ## <a name="remarks"></a>Uwagi
- Ta struktura jest wypełniona przez wywołanie [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) metody. Informacje tak zwrócone jest zwykle używane w wypełnianiu **wątków** okna.
+ Ta struktura jest wypełniana przez wywołanie metody [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) . Te informacje są zwykle używane do wypełniania okna **wątki** .
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b7c3c2b6b81f8f7793bda35c6b220e43caee9b5f
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770445"
 ---
 # <a name="framework-targeting-overview"></a>Omówienie określania celu platformy
@@ -102,9 +102,9 @@ W istniejącym projekcie Visual Basic, C# lub F # można zmienić docelową wers
 > [!TIP]
 > W zależności od platformy docelowej można przedstawić następujące metody w pliku projektu:
 >
-> - W przypadku aplikacji .NET Core:`<TargetFramework>netcoreapp2.1</TargetFramework>`
-> - Dla aplikacji .NET Standard:`<TargetFramework>netstandard2.0</TargetFramework>`
-> - Dla aplikacji .NET Framework:`<TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>`
+> - W przypadku aplikacji .NET Core: `<TargetFramework>netcoreapp2.1</TargetFramework>`
+> - Dla aplikacji .NET Standard: `<TargetFramework>netstandard2.0</TargetFramework>`
+> - Dla aplikacji .NET Framework: `<TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>`
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Rozpoznaj odwołania do zestawów systemu i użytkownika
 
@@ -118,7 +118,7 @@ Aby uzyskać więcej informacji na temat odwołań do zestawów, zobacz temat [R
 
 Jeśli obiektem docelowym jest .NET Framework 3,5 lub nowszy, odwołanie do **System. Core** i import na poziomie projektu dla <xref:System.Linq> (tylko w Visual Basic) są dodawane automatycznie. Jeśli chcesz używać funkcji LINQ, należy również włączyć opcję `Option Infer` (tylko w Visual Basic). Odwołanie i import są usuwane automatycznie w przypadku zmiany celu na wcześniejszą wersję .NET Framework. Aby uzyskać więcej informacji, zobacz [Work with LINQ](/dotnet/csharp/tutorials/working-with-linq).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Platformy docelowe](/dotnet/standard/frameworks)
 - [Wieloelementowe (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)

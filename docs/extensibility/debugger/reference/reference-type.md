@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_TYPE | Dokumenty firmy Microsoft
+title: REFERENCE_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 29ce6ad17aa32b98fd28914c422a49bd8bcc14b5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713658"
 ---
 # <a name="reference_type"></a>REFERENCE_TYPE
@@ -44,20 +44,20 @@ public enum enum_REFERENCE_TYPE { 
 
 ## <a name="fields"></a>Pola
  `REF_TYPE_WEAK`\
- Określa słabe odniesienie. Nie można `REF_TYPE_STRONG`łączyć z plikem .
+ Określa słabe odwołanie. Nie można łączyć z `REF_TYPE_STRONG` .
 
  `REF_TYPE_STRONG`\
- Określa silne odniesienie. Nie można `REF_TYPE_WEAK`łączyć z plikem .
+ Określa silne odwołanie. Nie można łączyć z `REF_TYPE_WEAK` .
 
 ## <a name="remarks"></a>Uwagi
- Używany jako `dwRefType` element [członkowski](../../../extensibility/debugger/reference/debug-reference-info.md) DEBUG_REFERENCE_INFO struktury.
+ Używane jako `dwRefType` element członkowski struktury [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) .
 
- Przekazany jako parametr do [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) metody.
+ Przeszedł jako parametr do metody [Setreferencetype](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) .
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

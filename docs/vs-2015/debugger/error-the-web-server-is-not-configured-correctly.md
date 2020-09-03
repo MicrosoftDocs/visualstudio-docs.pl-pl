@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3cfbcf127b9951ddfce1d3db8fe1177087b0350a
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918501"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Błąd: Serwer sieci Web nie jest prawidłowo skonfigurowany
@@ -37,4 +37,4 @@ Możliwe przyczyny tego błędu to:
 - Jeśli próbujesz debugować aplikację ASP.NET, zobacz [Publikowanie w usługach IIS](https://docs.asp.net/en/latest/publishing/iis.html) , aby uzyskać instrukcje dotyczące wdrażania na komputerze zdalnym z programem IIS 8 lub nowszym albo [zdalne debugowanie ASP.NET na zdalnym komputerze z usługami IIS 7,5](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) , aby uzyskać instrukcje dotyczące wdrażania na komputerze zdalnym, na którym działa program IIS 7,5.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie aplikacji internetowych: błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

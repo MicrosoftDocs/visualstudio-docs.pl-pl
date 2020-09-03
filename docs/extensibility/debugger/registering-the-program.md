@@ -1,5 +1,5 @@
 ---
-title: Rejestracja programu | Dokumenty firmy Microsoft
+title: Rejestrowanie programu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,33 +12,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713169"
 ---
-# <a name="register-the-program"></a>Zarejestruj program
-Po aparat debugowania uzyskał port, reprezentowany przez interfejs [IDebugPort2,](../../extensibility/debugger/reference/idebugport2.md) następnym krokiem w umożliwieniu programu do debugowania jest zarejestrować go w porcie. Po zarejestrowaniu program jest dostępny do debugowania za pomocą jednego z następujących środków:
+# <a name="register-the-program"></a>Rejestrowanie programu
+Po uzyskaniu przez aparat debugowania portu reprezentowanego przez interfejs [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , następnym krokiem w celu debugowania programu jest zarejestrowanie go z portem. Po zarejestrowaniu program jest dostępny do debugowania przy użyciu jednej z następujących metod:
 
-- Proces dołączania, który umożliwia debugerowi uzyskanie pełnej kontroli debugowania uruchomionej aplikacji.
+- Proces dołączania, który umożliwia debugerowi uzyskanie pełnej kontroli debugowania działającej aplikacji.
 
-- Debugowanie just-in-time (JIT), co pozwala na debugowanie po fakcie programu, który działa niezależnie od debugera. Gdy architektura w czasie wykonywania wyłapuje błąd, debuger jest powiadamiany, zanim system operacyjny lub środowisko wykonawcze zwolni pamięć i zasoby uszkodzonego programu.
+- Debugowanie just-in-Time (JIT), które umożliwia debugowanie po wystąpieniu programu uruchamianego niezależnie od debugera. Gdy architektura środowiska uruchomieniowego przechwytuje błąd, debuger zostanie powiadomiony, zanim system operacyjny lub środowisko uruchomieniowe zwolni pamięć i zasoby programu powodującego błąd.
 
-## <a name="registering-procedure"></a>Procedura rejestracji
+## <a name="registering-procedure"></a>Procedura rejestrowania
 
 ### <a name="to-register-your-program"></a>Aby zarejestrować program
 
-1. Wywołanie [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) metoda zaimplementowana przez port.
+1. Wywołaj metodę [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) zaimplementowaną przez port.
 
-     `IDebugPortNotify2::AddProgramNode`wymaga wskaźnika do interfejsu [IDebugProgramNode2.](../../extensibility/debugger/reference/idebugprogramnode2.md)
+     `IDebugPortNotify2::AddProgramNode` wymaga wskaźnika do interfejsu [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) .
 
-     Zazwyczaj, gdy system operacyjny lub środowisko pracy ładuje program, tworzy węzeł programu. Jeśli aparat debugowania (DE) jest proszony o załadowanie programu, DE tworzy i rejestruje węzeł programu.
+     Zwykle, gdy system operacyjny lub środowisko uruchomieniowe ładuje program, tworzy węzeł Program. Jeśli aparat debugowania (DE) zostanie poproszony o załadowanie programu, program utworzy i zarejestruje węzeł programu.
 
-     W poniższym przykładzie pokazano aparat debugowania uruchomienie programu i rejestrowanie go z portem.
+     Poniższy przykład pokazuje aparat debugowania uruchamiający program i rejestrując go z portem.
 
     > [!NOTE]
-    > Ten przykładowy kod nie jest jedynym sposobem, aby uruchomić i wznowić proces; ten kod jest głównie przykładem rejestracji programu z portem.
+    > Ten przykładowy kod nie jest jedynym sposobem uruchomienia i wznowienia procesu; Ten kod jest głównie przykładem rejestracji programu z portem.
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.
@@ -105,5 +105,5 @@ Po aparat debugowania uzyskał port, reprezentowany przez interfejs [IDebugPort2
     ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Uzyskiwanie portu](../../extensibility/debugger/getting-a-port.md)
+- [Pobieranie portu](../../extensibility/debugger/getting-a-port.md)
 - [Włączanie debugowania programu](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

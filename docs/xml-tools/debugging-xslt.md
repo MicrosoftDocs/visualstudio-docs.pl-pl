@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: d8e3885aa895cec5ed080b7a8b4d22522d2e9edf
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815620"
 ---
 # <a name="debugging-xslt"></a>Debugowanie kodu XSLT
@@ -90,7 +90,7 @@ namespace ConsoleApplication
 
 [Profiler XSLT](../xml-tools/xslt-profiler.md) to narzędzie, które umożliwia deweloperom mierzenie, ocenę i ukierunkowanie problemów związanych z wydajnością w kodzie XSLT przez tworzenie szczegółowych raportów o wydajności XSLT. Aby uzyskać więcej informacji, zobacz [XSLT Profiler](../xml-tools/xslt-profiler.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przewodnik: debugowanie arkusza stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
 - [Najpierw Spójrz na debuger programu Visual Studio](../debugger/debugger-feature-tour.md)

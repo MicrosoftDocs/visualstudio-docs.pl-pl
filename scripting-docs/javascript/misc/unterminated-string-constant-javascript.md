@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f59fd95b77ec6a3cd2486ff954002daeb0364321
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815321"
 ---
 # <a name="unterminated-string-constant-javascript"></a>Niezakończona stała typu string (JavaScript)
@@ -31,6 +31,6 @@ Nie końcowa stała ciągu z zamykającym znakiem cudzysłowu. Stałe ciągów m
   
 - Dodaj cudzysłów zamykający do końca ciągu.  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Obiekt String](../../javascript/reference/string-object-javascript.md)   
  [toString, metoda (Object)](../../javascript/reference/tostring-method-object-javascript.md)

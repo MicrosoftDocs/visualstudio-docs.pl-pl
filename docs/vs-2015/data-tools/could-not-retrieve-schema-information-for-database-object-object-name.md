@@ -1,5 +1,5 @@
 ---
-title: Nie można pobrać informacji o schemacie dla obiektu bazy danych &lt;object nazwa &gt; | Microsoft Docs
+title: Nie można pobrać informacji o schemacie dla &lt; nazwy obiektu obiektu bazy danych &gt; | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: caa8b10bf1644084ab5551d99afe0745feac6280
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651098"
 ---
-# <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>Nie można pobrać informacji o schemacie dla nazwy &lt;object obiektu bazy danych &gt;
+# <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>Nie można pobrać informacji o schemacie dla &lt; nazwy obiektu obiektu bazy danych&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ten komunikat zazwyczaj pojawia się, gdy obiekt w **Eksplorator serwera/Eksplorator bazy danych** zostanie skopiowany do schowka, usunięty z bazy danych, a następnie wklejony do projektanta. Ponieważ obiekt bazy danych już nie istnieje, ten komunikat zostanie wyświetlony.

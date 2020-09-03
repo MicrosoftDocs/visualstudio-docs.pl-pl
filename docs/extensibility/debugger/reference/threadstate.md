@@ -1,5 +1,5 @@
 ---
-title: THREADSTATE | Dokumenty firmy Microsoft
+title: THREADSTATE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1b291cc1668b2b867729da11d4c561f74567f257
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713337"
 ---
 # <a name="threadstate"></a>THREADSTATE
@@ -53,7 +53,7 @@ public enum enum_THREADSTATE { 
  Wskazuje, że wątek jest uruchomiony.
 
  `THREADSTATE_STOPPED`\
- Wskazuje, że wątek jest zatrzymany z powodu punktu przerwania.
+ Wskazuje, że wątek został zatrzymany ze względu na punkt przerwania.
 
  `THREADSTATE_FRESH`\
  Wskazuje, że wątek został utworzony, ale nie jest jeszcze uruchomiony kod.
@@ -65,12 +65,12 @@ public enum enum_THREADSTATE { 
  Wskazuje, że wątek jest zablokowany (nie można wykonać wykonywania).
 
 ## <a name="remarks"></a>Uwagi
- Używany dla `dwThreadState` pola [threadproperties](../../../extensibility/debugger/reference/threadproperties.md) struktury.
+ Używane dla `dwThreadState` pola struktury [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) .
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

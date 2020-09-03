@@ -12,32 +12,32 @@ ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: 571f7bf825583b3094e07ea4404437f2fb2d62de
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917603"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Konstruowanie ciągów filtrów dla projektanta tabel
 ## <a name="overview"></a>Omówienie
 Aby filtrować dane w tabeli platformy Azure, która jest wyświetlana w **Projektancie tabel**programu Visual Studio, należy utworzyć ciąg filtru i wprowadzić go w polu filtru. Składnia ciągu filtru jest definiowana przez Usługi danych programu WCF i jest podobna do klauzuli SQL WHERE, ale jest wysyłana do Table service za pośrednictwem żądania HTTP. **Projektant tabel** obsługuje odpowiednie kodowanie, dlatego w celu filtrowania według żądanej wartości właściwości należy wprowadzić tylko nazwę właściwości, operator porównania, wartość kryteriów i opcjonalnie operator logiczny w polu filtru. Nie trzeba dołączać opcji zapytania $filter tak samo, jak w przypadku konstruowania adresu URL w celu zbadania tabeli za pośrednictwem [dokumentacji interfejsu API REST usług Storage](/rest/api/storageservices).
 
-Usługi danych programu WCF opierają się na [protokole Open Data Protocol](https://www.odata.org/) (OData). Aby uzyskać szczegółowe informacje na temat opcji filtrowania systemu kwerend ( **$Filter**), zobacz [specyfikację identyfikatorów URI usługi OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
+Usługi danych programu WCF opierają się na [protokole Open Data Protocol](https://www.odata.org/) (OData). Aby uzyskać szczegółowe informacje na temat opcji filtrowania systemu kwerend (**$Filter**), zobacz [specyfikację identyfikatorów URI usługi OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## <a name="comparison-operators"></a>Operatory porównania
 Następujące operatory logiczne są obsługiwane dla wszystkich typów właściwości:
 
 | Operator logiczny | Opis | Przykładowy ciąg filtru |
 | --- | --- | --- |
-| eq |Równa się |Miasto EQ "Redmond" |
+| eq |Równe |Miasto EQ "Redmond" |
 | gt |Większe niż |Cena gt 20 |
-| stron |Większe niż lub równe |Cena GE 10 |
+| ge |Większe niż lub równe |Cena GE 10 |
 | lt |Mniejsze niż |Cena lt 20 |
-| urządzeń |Mniejsze niż lub równe |Cena Le 100 |
+| le |Mniejsze niż lub równe |Cena Le 100 |
 | ne |Nie równa się |Miasto (Londyn) |
-| and |Oraz |Cena Le 200 i cena gt 3,5 |
+| oraz |And |Cena Le 200 i cena gt 3,5 |
 | lub |Lub |Cena Le 3,5 lub cena gt 200 |
-| not |nie |nie IsAvailable |
+| not |Not |nie IsAvailable |
 
 Podczas konstruowania ciągu filtru ważne są następujące reguły:
 

@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: cc3a18fe1ce76b6214766ba45fc5441e80c56cef
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918486"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Wyłączenia dotyczące zasad korzystania z oprogramowania Visual Studio
@@ -26,15 +26,15 @@ Program Visual Studio obejmuje zestaw kompilatorów, języków i środowisk, w t
   
 |RODZINA PRODUKTÓW|NAZWA ZEWNĘTRZNA|  
 |--------------------|-------------------|  
-|[.NET 3.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|Zestaw SDK dla platformy .NET 3.5<br /><br /> Środowisko Windows Identity Foundation|  
+|[.NET 3,5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|Zestaw SDK dla platformy .NET 3.5<br /><br /> Windows Identity Foundation|  
 |[.NET 4.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%204.5&Filter=FilterNO)|Zestaw SDK dla platformy .NET 4.5|  
 |[.NET 4.5.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=.NET%20Framework%204.5.1&Filter=FilterNO)|.NET 4.5.1 MT Pack (Classic)<br /><br /> .NET 4.5.1 Multi-targeting Pack (Store)<br /><br /> .NET 4.5.1 OOB MSU<br /><br /> .NET 4.5.1 Redist<br /><br /> .NET 4.5.1 Redist Language Packs<br /><br /> Zestaw SDK dla platformy .NET 4.5.1|  
-|[ASP.NET Web Stack](https://support.microsoft.com/kb/2902020)|ASP.NET MVC w wersji 4<br /><br /> ASP.NET MVC 5<br /><br /> Składnik Web API platformy ASP.NET<br /><br /> ASP.NET Web API 2<br /><br /> Strony sieci Web programu ASP.NET 2<br /><br /> ASP.NET Web Pages 3|  
+|[ASP.NET Web Stack](https://support.microsoft.com/kb/2902020)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> ASP.NET Web API<br /><br /> ASP.NET Web API 2<br /><br /> ASP.NET Web Pages 2<br /><br /> ASP.NET Web Pages 3|  
 |[Entity Framework 6](https://support.microsoft.com/kb/2902020)|Entity Framework 6|  
-|[Program Exchange 2013](https://support.microsoft.com/kb/2902020)|Exchange Web Services|  
-|[OWIN firmy Microsoft](https://support.microsoft.com/kb/2902020)|Microsoft OWIN|  
+|[Exchange 2013](https://support.microsoft.com/kb/2902020)|Exchange Web Services|  
+|[Microsoft OWIN](https://support.microsoft.com/kb/2902020)|Microsoft OWIN|  
 |[Microsoft Web Developer Tools 2013](https://support.microsoft.com/kb/2902020)|Microsoft Web Developer Tools 2013|  
-|Aktualizacje tych składników są rozpowszechniane za pośrednictwem pakietu NuGet i nie podlegają standardowym zasadom cyklu życia produktów firmy Microsoft.  Aby uzyskać więcej informacji, zobacz [http://docs.nuget.org/](/nuget/).|Procedura obsługi tokenów sieci Web JSON dla Microsoft .NET Framework 4,5<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Struktura optymalizacji sieci Web<br /><br /> WebGrease|  
+|Aktualizacje tych składników są rozpowszechniane za pośrednictwem pakietu NuGet i nie podlegają standardowym zasadom cyklu życia produktów firmy Microsoft.  [http://docs.nuget.org/](/nuget/)Aby uzyskać więcej informacji, zobacz.|Procedura obsługi tokenów sieci Web JSON dla Microsoft .NET Framework 4,5<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Struktura optymalizacji sieci Web<br /><br /> WebGrease|  
 |[ODataLib](https://support.microsoft.com/kb/2902020)|ODataLib|  
 |[Office 2013](https://support.microsoft.com/lifecycle/search/?p1=16674)|Zestaw SDK Open XML|  
 |[Zasady usług online](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Zestaw SDK usługi Microsoft Ads|  
@@ -43,8 +43,8 @@ Program Visual Studio obejmuje zestaw kompilatorów, języków i środowisk, w t
 |[SQL Server 2008 R2](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202008%20R2&Filter=FilterNO)|Typy SQL System CLR (SQL Server 2008 R2)|  
 |[SQL Server 2012](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202012&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> Narzędzia wiersza polecenia SQL<br /><br /> Usługa języka SQL — technologia IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2012 SP1<br /><br /> Typy SQL System CLR (SQL Server 2012)<br /><br /> SQLDOM|  
 |[SQL Server 2014](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202014&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> Narzędzia wiersza polecenia SQL<br /><br /> Usługa języka SQL — technologia IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2014<br /><br /> Typy SQL System CLR (SQL Server 2014)<br /><br /> SQLDOM|  
-|[SQL Server Compact Edition 4,0](https://support.microsoft.com/lifecycle/search/?p1=16106)|SQL Server Compact Edition 4.0|  
-|[Usługi WCF RIA w wersji 1.0 z dodatkiem SP2](https://support.microsoft.com/kb/2902020)|Usługi WCF RIA 1.0 z dodatkiem SP2|  
+|[SQL Server Compact Edition 4.0](https://support.microsoft.com/lifecycle/search/?p1=16106)|SQL Server Compact Edition 4.0|  
+|[Usługi WCF RIA 1.0 z dodatkiem SP2](https://support.microsoft.com/kb/2902020)|Usługi WCF RIA 1.0 z dodatkiem SP2|  
 |[Windows Server 2008](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=Windows%20Server%202008&Filter=FilterNO)|Windows Web Services (WWS) dla Windows Server 2008|  
 |[Windows 7](https://support.microsoft.com/lifecycle/search/?c2=14019)|Zestaw SDK systemu Windows 7|  
 |[Windows 8](https://support.microsoft.com/lifecycle/search/?c2=16796)|Zestaw SDK systemu Windows 8|  

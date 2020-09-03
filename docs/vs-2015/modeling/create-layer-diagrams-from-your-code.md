@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: eea557035ef4e5f1ffa2585e620a331fb6b5cce2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852079"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Tworzenie diagramów warstw z kodu
@@ -30,7 +30,7 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 
  Diagram warstwowy umożliwia organizowanie elementów rozwiązania programu Visual Studio w logiczne, abstrakcyjne grupy o nazwie *warstwy*. Można użyć warstw do opisania głównych zadań wykonywanych przez te artefakty lub główne składniki systemu. Każda warstwa może zawierać innych warstwy opisujące bardziej szczegółowe zadania. Można również określić zamierzone lub istniejące *zależności* między warstwami. Te zależności, które są reprezentowane jako strzałki, wskazują, które warstwy mogą używać lub obecnie używają funkcje reprezentowane przez inne warstwy. Aby utrzymać kontrolę architektury kodu, wyświetl zamierzone zależności na diagramie i przeprowadź walidację kodu na podstawie diagramu.
 
-## <a name="CreateDiagram"></a>Tworzenie diagramu warstwowego
+## <a name="create-a-layer-diagram"></a><a name="CreateDiagram"></a> Tworzenie diagramu warstwowego
  Przed utworzeniem diagramu warstwowego upewnij się, że rozwiązanie ma projektu modelowania. Zobacz [Tworzenie projektów i diagramów modelowania UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
 > [!IMPORTANT]
@@ -48,7 +48,7 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 
 4. W obszarze **Dodaj do projektu modelowania**przejdź do i wybierz istniejący projekt modelowania w rozwiązaniu.
 
-     lub
+     -lub-
 
      Wybierz pozycję **Utwórz nowy projekt modelowania** , aby dodać nowy projekt modelowania do rozwiązania.
 
@@ -57,14 +57,14 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 
 5. Pamiętaj, aby zapisać zarówno projekt modelowania, jak i diagram warstwowy.
 
-## <a name="CreateLayers"></a>Tworzenie warstw na podstawie artefaktów
+## <a name="create-layers-from-artifacts"></a><a name="CreateLayers"></a> Tworzenie warstw na podstawie artefaktów
  Warstwy możesz tworzyć z elementów rozwiązania Visual Studio, takich jak projekty, pliki kodu, przestrzenie nazw, klasy i metody. Powoduje to automatyczne tworzenie łączy między warstwami i elementami, uwzględniając je w procesie walidacji warstwy.
 
  Możesz również połączyć warstwy z elementami, które nie obsługują walidacji, takimi jak dokumenty programu Word lub prezentacji programu PowerPoint, tak aby można było skojarzyć warstwy ze specyfikacjami lub planami. Możesz również połączyć warstwy z plikami projektów współużytkowanymi przez wiele aplikacji, ale proces walidacji nie uwzględni warstw wyświetlanych z nazwami rodzajowymi, takimi jak „Warstwa 1” i „Warstwa 2”.
 
  Aby sprawdzić, czy połączony element obsługuje walidację, Otwórz **Eksploratora warstw** i sprawdź Właściwość **obsługuje walidację** elementu. Zobacz [Zarządzanie łączami do artefaktów](#Managing).
 
-|**To**|**Wykonaj następujące kroki**|
+|**Działanie**|**Wykonaj następujące kroki**|
 |------------|----------------------------|
 |Utworzyć warstwę dla pojedynczego artefakt|<ol><li>Przeciągnij element na diagram warstwy z następujących źródeł:<br /><br /> <ul><li>**Eksplorator rozwiązań**<br /><br />         Możesz na przykład przeciągać pliki lub projekty.</li><li>Mapy kodu<br /><br />         Zapoznaj się z [zależnościami mapy w swoich rozwiązaniach](../modeling/map-dependencies-across-your-solutions.md) i [korzystaj z map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Widok klasy** lub **Przeglądarka obiektów**</li></ul><br />     Warstwy jest wyświetlana na diagramie i jest połączona z artefaktem.</li><li>Zmień nazwę warstwy, aby odzwierciedlała obowiązki skojarzonego kodu lub artefaktów.</li></ol> **Ważne:**  Przeciąganie plików binarnych do diagramu warstwowego nie powoduje automatycznego dodania odwołań do projektu modelowania. Musisz ręcznie dodać do projektu modelowania pliki binarne, które chcesz walidować. **Aby dodać pliki binarne do projektu modelowania** <ol><li>W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu modelowania, a następnie wybierz **Dodaj istniejący element**.</li><li>W oknie dialogowym **Dodaj istniejący element** przejdź do plików binarnych, zaznacz je, a następnie wybierz **przycisk OK**.     Pliki binarne pojawią się w projekcie modelowania.</li><li>W **Eksplorator rozwiązań**wybierz plik binarny, który został dodany, a następnie naciśnij klawisz **F4** , aby otworzyć okno **Właściwości** .</li><li>Dla każdego pliku binarnego ustaw właściwość **Akcja kompilacji** na **Sprawdź poprawność**.</li></ol>|
 |Utwórz jedną warstwę dla wszystkich zaznaczonych artefaktów|Przeciągnij wszystkie artefakty do diagramu warstwowego w tym samym czasie.<br /><br /> Warstw pojawi się na diagramie i będzie połączona z artefaktami.|
@@ -74,9 +74,9 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 |Tworzenie zagnieżdżonych warstw|Przeciągnij istniejącą warstwę na inną warstwę.<br /><br /> — lub —<br /><br /> Otwórz menu skrótów dla warstwy, wybierz polecenie **Dodaj**, a następnie wybierz **warstwa**.|
 |Tworzenie nowej warstwy zawierającej dwie lub więcej istniejących warstw|Zaznacz warstwy, otwórz menu skrótów dla zaznaczenia, a następnie wybierz **grupę**.|
 |Zmienianie koloru warstwy|Ustaw jej właściwość **Color** na odpowiedni kolor.|
-|Określanie, że artefakty skojarzone z warstwą nie mogą należeć do określonych przestrzeni nazw|Wpisz przestrzenie nazw w właściwości **zabronione przestrzenie nazw** warstwy. Użyj średnika ( **;** ), aby oddzielić przestrzenie nazw.|
-|Określanie, że artefakty skojarzone z warstwą nie mogą zależeć od określonych przestrzeni nazw|Wpisz przestrzenie nazw w właściwości **niedozwolone zależności przestrzeni nazw** . Użyj średnika ( **;** ), aby oddzielić przestrzenie nazw.|
-|Określanie, że artefakty skojarzone z warstwą muszą należeć do jednej z określonych przestrzeni nazw|Wpisz przestrzeń nazw we właściwości **wymagane przestrzenie nazw** warstwy. Użyj średnika ( **;** ), aby oddzielić przestrzenie nazw.|
+|Określanie, że artefakty skojarzone z warstwą nie mogą należeć do określonych przestrzeni nazw|Wpisz przestrzenie nazw w właściwości **zabronione przestrzenie nazw** warstwy. Użyj średnika (**;**), aby oddzielić przestrzenie nazw.|
+|Określanie, że artefakty skojarzone z warstwą nie mogą zależeć od określonych przestrzeni nazw|Wpisz przestrzenie nazw w właściwości **niedozwolone zależności przestrzeni nazw** . Użyj średnika (**;**), aby oddzielić przestrzenie nazw.|
+|Określanie, że artefakty skojarzone z warstwą muszą należeć do jednej z określonych przestrzeni nazw|Wpisz przestrzeń nazw we właściwości **wymagane przestrzenie nazw** warstwy. Użyj średnika (**;**), aby oddzielić przestrzenie nazw.|
 
  Liczba na warstwie oznacza liczbę artefaktów, które są połączone z warstwą. Jednak odczytując tę liczbę, należy pamiętać, że:
 
@@ -86,7 +86,7 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 
 - Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.
 
-## <a name="Managing"></a>Zarządzanie łączami między warstwami i artefaktami
+## <a name="manage-links-between-layers-and-artifacts"></a><a name="Managing"></a> Zarządzanie łączami między warstwami i artefaktami
 
 1. Na diagramie warstwowym Otwórz menu skrótów dla warstwy, a następnie wybierz polecenie **Wyświetl linki**.
 
@@ -94,7 +94,7 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 
 2. Wykonaj następujące zadania, aby zarządzać tymi łączami:
 
-|**To**|**W Eksploratorze warstwy**|
+|**Działanie**|**W Eksploratorze warstwy**|
 |------------|---------------------------|
 |Usuwanie łącza między warstwą i artefaktem|Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz polecenie **Usuń**.|
 |Przenoszenie łącza z jednej warstwy na drugą|Przeciągnij łącze artefaktu do istniejącej warstwy na diagramie.<br /><br /> — lub —<br /><br /> 1. Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz polecenie **Wytnij**.<br />2. na diagramie warstwowym Otwórz menu skrótów dla warstwy, a następnie wybierz **Wklej**.|
@@ -102,7 +102,7 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 |Tworzenie nowej warstwy z istniejącego łącza artefaktu|Przeciągnij łącze artefaktu do pustego obszaru na diagramie.|
 |Sprawdź, czy połączony artefakt obsługuje walidację na podstawie diagramu warstwowego.|Przyjrzyj się kolumnie **obsługuje walidację** dla linku artefaktu.|
 
-## <a name="Discovering"></a>Odtwarzanie istniejących zależności
+## <a name="reverse-engineer-existing-dependencies"></a><a name="Discovering"></a> Odtwarzanie istniejących zależności
  Zależność istnieje wszędzie tam, gdzie artefakt, który jest skojarzony z jedną warstwą zawiera odwołanie do artefaktu skojarzonego z inną warstwą. Na przykład klasa w jednej warstwie deklaruje zmienną, która zawiera klasę w innej warstwie. Możesz odtwarzać istniejące zależności dla artefaktów, które są połączone z warstwami na diagramie.
 
 > [!NOTE]
@@ -112,21 +112,21 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 
   Zazwyczaj zobaczysz niektóre zależności, które nie powinny istnieć. Możesz edytować te zależności, aby dopasować je do zamierzonego projektu.
 
-## <a name="EditDependencies"></a>Edycja warstw i zależności w celu pokazania zamierzonego projektu
+## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a> Edycja warstw i zależności w celu pokazania zamierzonego projektu
  Do opisania zmian, które planujesz wprowadzić do systemu lub zamierzonej architektury, przeprowadź edycję diagramu warstwowego:
 
-|**To**|**Wykonaj następujące kroki**|
+|**Działanie**|**Wykonaj następujące kroki**|
 |------------|-----------------------------|
 |Zmień lub ogranicz kierunek zależności|Ustaw jej właściwość **Direction** .|
 |Tworzenie nowych zależności|Użyj **zależności** i **dwukierunkowych narzędzi zależności** .<br /><br /> Aby narysować wiele zależności, kliknij dwukrotnie narzędzie. Gdy skończysz, wybierz narzędzie **wskaźnik** lub naciśnij klawisz **ESC** .|
-|Określanie, że artefakty skojarzone z warstwą nie mogą zależeć od określonych przestrzeni nazw|Wpisz przestrzenie nazw w właściwości **niedozwolone zależności przestrzeni nazw** . Użyj średnika ( **;** ), aby oddzielić przestrzenie nazw.|
-|Określanie, że artefakty skojarzone z warstwą nie mogą należeć do określonych przestrzeni nazw|Wpisz przestrzenie nazw w właściwości **zabronione przestrzenie nazw** warstwy. Użyj średnika ( **;** ), aby oddzielić przestrzenie nazw.|
-|Określanie, że artefakty skojarzone z warstwą muszą należeć do jednej z określonych przestrzeni nazw|Wpisz przestrzeń nazw we właściwości **wymagane przestrzenie nazw** warstwy. Użyj średnika ( **;** ), aby oddzielić przestrzenie nazw.|
+|Określanie, że artefakty skojarzone z warstwą nie mogą zależeć od określonych przestrzeni nazw|Wpisz przestrzenie nazw w właściwości **niedozwolone zależności przestrzeni nazw** . Użyj średnika (**;**), aby oddzielić przestrzenie nazw.|
+|Określanie, że artefakty skojarzone z warstwą nie mogą należeć do określonych przestrzeni nazw|Wpisz przestrzenie nazw w właściwości **zabronione przestrzenie nazw** warstwy. Użyj średnika (**;**), aby oddzielić przestrzenie nazw.|
+|Określanie, że artefakty skojarzone z warstwą muszą należeć do jednej z określonych przestrzeni nazw|Wpisz przestrzeń nazw we właściwości **wymagane przestrzenie nazw** warstwy. Użyj średnika (**;**), aby oddzielić przestrzenie nazw.|
 
-## <a name="EditLayout"></a>Zmień sposób wyświetlania elementów na diagramie
+## <a name="change-how-elements-appear-on-the-diagram"></a><a name="EditLayout"></a> Zmień sposób wyświetlania elementów na diagramie
  Możesz zmieniać rozmiar, kształt, kolor i położenie warstw lub kolor zależności, edytując ich właściwości.
 
-## <a name="Codemaps"></a>Odnajdywanie wzorców i zależności na mapie kodu
+## <a name="discover-patterns-and-dependencies-on-a-code-map"></a><a name="Codemaps"></a> Odnajdywanie wzorców i zależności na mapie kodu
  Podczas tworzenia diagramów warstw można także tworzyć **mapy kodu**. Te diagramy mogą pomóc w znalezieniu wzorców i zależności podczas eksplorowania kodu. Użyj Eksplorator rozwiązań, Widok klasy lub Przeglądarka obiektów do eksplorowania zestawów, przestrzeni nazw i klas, które często są dobrze zgodne z istniejącymi warstwami. Aby uzyskać więcej informacji na temat map kodu, zobacz:
 
 - [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)

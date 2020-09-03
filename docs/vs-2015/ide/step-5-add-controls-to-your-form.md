@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a6e66c8192b1fa409482bd33287cec04f74c1304
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851530"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Krok 5. Dodawanie formantów do formularza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym kroku dodasz kontrolki, takie jak kontrolka `PictureBox` i kontrolka `CheckBox` do formularza. Następnie Dodaj do formularza przyciski.
+W tym kroku dodasz kontrolki, takie jak `PictureBox` kontrolka i `CheckBox` kontrolka, do formularza. Następnie Dodaj do formularza przyciski.
 
- ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# pliku wideo 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+ ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) lub [Samouczek 1: Tworzenie przeglądarki obrazów w języku C# — wideo 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ### <a name="to-add-controls-to-your-form"></a>Aby dodać kontrolki do formularza
 

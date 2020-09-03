@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c5088fc04f4440260bdb9d3f040d99061c05d243
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620334"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>Operatory wyszukiwania zaawansowanego w wyrażeniach wyszukiwania
@@ -34,7 +34,7 @@ Korzystając z zaawansowanych operatorów wyszukiwania, można uściślić Wyszu
 |Aby wyszukać|Zastosowanie|Przykład|Wynik|
 |-------------------|---------|-------------|------------|
 |Termin w tytule tematu|title:|Tytuł: BinaryReader|Tematy zawierające "BinaryReader" w ich tytułach.|
-|Termin w przykładowym kodzie|kodu|kod: readDouble|Tematy zawierające "readDouble" w przykładowym kodzie.|
+|Termin w przykładowym kodzie|— kod:|kod: readDouble|Tematy zawierające "readDouble" w przykładowym kodzie.|
 |Termin z przykładu określonego języka programowania|kod: VB:|kod: VB: ciąg|Tematy zawierające ciąg "String" w Visual Basic przykładzie.|
 |Temat, który jest skojarzony z określonym indeksem słowa kluczowego|kodu|słowo kluczowe: ReadByte|Tematy, które są skojarzone ze słowem kluczowym "ReadByte".|
 

@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTY_FIELDS | Dokumenty firmy Microsoft
+title: THREADPROPERTY_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b31c43187d1136f7a194c42749c430de6cd064a0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713398"
 ---
 # <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
@@ -54,37 +54,37 @@ public enum enum_THREADPROPERTY_FIELDS { 
 
 ## <a name="fields"></a>Pola
  `TPF_ID`\
- Zainicjować/użyć `dwThreadId` pola [threadproperties](../../../extensibility/debugger/reference/threadproperties.md) struktury.
+ Zainicjuj/Użyj `dwThreadId` pola struktury [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) .
 
  `TPF_SUSPENDCOUNT`\
- Inicjowanie/używanie `dwSuspendCount` pola `THREADPROPERTIE`struktury S.
+ Zainicjuj/Użyj `dwSuspendCount` pola `THREADPROPERTIE` struktury S.
 
  `TPF_STATE`\
- Inicjowanie/używanie `dwThreadState` pola `THREADPROPERTIE`struktury S.
+ Zainicjuj/Użyj `dwThreadState` pola `THREADPROPERTIE` struktury S.
 
  `TPF_PRIORITY`\
- Inicjowanie/używanie `bstrPriority` pola `THREADPROPERTIE`struktury S.
+ Zainicjuj/Użyj `bstrPriority` pola `THREADPROPERTIE` struktury S.
 
  `TPF_NAME`\
- Inicjowanie/używanie `bstrName` pola `THREADPROPERTIE`struktury S.
+ Zainicjuj/Użyj `bstrName` pola `THREADPROPERTIE` struktury S.
 
  `TPF_LOCATION`\
- Inicjowanie/używanie `bstrLocation` pola `THREADPROPERTIE`struktury S.
+ Zainicjuj/Użyj `bstrLocation` pola `THREADPROPERTIE` struktury S.
 
  `TPF_ALLFIELDS`\
  Określa wszystkie pola.
 
 ## <a name="remarks"></a>Uwagi
- Wartości te są przekazywane jako argument do [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) metody, aby wskazać, które pola [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury mają być zainicjowane.
+ Te wartości są przesyłane jako argument do metody [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) , aby wskazać, które pola struktury [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) mają być inicjowane.
 
- Wartości te są `dwFields` również używane `THREADPROPERTIES` w elementów członkowskich struktury, aby wskazać, które pola są używane i prawidłowe.
+ Te wartości są również używane w `dwFields` składowej `THREADPROPERTIES` struktury, aby wskazać, które pola są używane i są prawidłowe.
 
- Flagi te mogą być łączone z bitowym `OR`.
+ Flagi te mogą być połączone z bitową `OR` .
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

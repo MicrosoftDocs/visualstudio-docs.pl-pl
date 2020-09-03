@@ -1,5 +1,5 @@
 ---
-title: Plan rozszerzenia debugera | Dokumenty firmy Microsoft
+title: Plan rozszerzający debuger | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,40 +12,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e809eeb6a1a5d2c24368932713d69c7199b5af38
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713145"
 ---
-# <a name="roadmap-for-extending-the-debugger"></a>Plan rozszerzenia debugera
-Ta dokumentacja zawiera przewodnik i [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] informacje referencyjne [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]dotyczące rozszerzania debugera za pomocą pliku .
+# <a name="roadmap-for-extending-the-debugger"></a>Plan rozszerzający debuger
+Ta dokumentacja zawiera przewodnik i informacje referencyjne dotyczące rozszerzania [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] debugera za pomocą narzędzia [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]debugowanie dokumentacji zawiera przykłady, wyczerpujące odwołanie i kilka reprezentatywnych scenariuszy, które pokazują typowe sposoby dostosowania debugera.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Dokumentacja dotycząca debugowania obejmuje przykłady, kompleksowe odwołanie i kilka reprezentatywnych scenariuszy, które przedstawiają typowe sposoby dostosowywania debugera.
 
  Kompilator i jego dane wyjściowe określają, co jest wymagane do skonfigurowania debugowania w produkcie. Jeśli kompilator:
 
-- Jest przeznaczony dla natywnego systemu operacyjnego Windows i zapisuje *plik . PDB,* można debugować programy za pomocą natywnego aparatu debugowania kodu (DE), który jest zintegrowany z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Nie trzeba implementować DE lub oceniający wyrażenie. Oceniający wyrażenie jest zapisywany dla składni języka programowania C++.
+- Jest przeznaczony dla systemu operacyjnego Windows Native i zapisuje *. Plik PDB* , można debugować programy z aparatem debugowania kodu natywnego (de), który jest zintegrowany z programem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Nie trzeba implementować Ewaluatora wyrażenia a ani. Ewaluatora wyrażeń jest zapisywana dla składni języka programowania C++.
 
-- Produkuje dane wyjściowe języka pośredniego firmy Microsoft (MSIL), można debugować programy za [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]pomocą zarządzanego aparatu debugowania kodu DE, który jest również zintegrowany z programem . W związku z tym wystarczy tylko zaimplementować oceniającego wyrażenie. Przykładowy ewaluator wyrażenia jest dla Ciebie. Aby uzyskać więcej informacji, zobacz następujące tematy:
+- Tworzy dane wyjściowe języka pośredniego firmy Microsoft (MSIL), można debugować programy z aparatem debugowania kodu zarządzanego DE, który również jest zintegrowany z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . W tym celu należy zaimplementować tylko ewaluatora wyrażeń. Zostanie udostępniona Przykładowa ewaluatora wyrażeń. Aby uzyskać więcej informacji, zobacz następujące tematy:
 
-   [Ocena wyrażenia](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
+   [Obliczanie wyrażeń](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
 
-   [Ocena wyrażeń](../../extensibility/debugger/evaluating-expressions.md)
+   [Ocenianie wyrażeń](../../extensibility/debugger/evaluating-expressions.md)
 
    [Kontekst oceny wyrażenia](../../extensibility/debugger/expression-evaluation-context.md)
 
-   [Ocena wyrażenia w trybie przerwania](../../extensibility/debugger/expression-evaluation-in-break-mode.md)
+   [Obliczanie wyrażeń w trybie przerwania](../../extensibility/debugger/expression-evaluation-in-break-mode.md)
 
-   [Pisanie ewaluatora wyrażeń środowiska uruchomieniowego języka wspólnego](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+   [Napisz ewaluatora wyrażeń środowiska uruchomieniowego języka wspólnego](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 
-- Jest przeznaczony dla zastrzeżonego systemu operacyjnego lub innego środowiska w czasie wykonywania, musisz napisać własne DE. Dostępny jest samouczek, który tworzy prosty DE przy użyciu ATL COM. Aby uzyskać więcej informacji, zobacz następujące tematy:
+- Dotyczy zastrzeżonego systemu operacyjnego lub innego środowiska wykonawczego, należy napisać własne. Podano samouczek, który tworzy prostą i nieużywaną ATL COM. Aby uzyskać więcej informacji, zobacz następujące tematy:
 
    [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 
-   [Samouczek: Tworzenie aparatu debugowania przy użyciu ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+   [Samouczek: Tworzenie aparatu debugowania przy użyciu biblioteki ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
 
-   [Wdrażanie dostawcy portu](../../extensibility/debugger/implementing-a-port-supplier.md)
+   [Implementowanie dostawcy portu](../../extensibility/debugger/implementing-a-port-supplier.md)
 
    [Samples](../../extensibility/debugger/visual-studio-debugging-samples.md)
 

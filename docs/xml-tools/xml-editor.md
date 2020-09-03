@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64f36255a03939c649a91b4a91d15958475be3b5
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815022"
 ---
 # <a name="xml-editor"></a>Edytor XML
@@ -54,7 +54,7 @@ Funkcja [IntelliSense XSLT](../xml-tools/xml-editor-intellisense-features.md) um
 
 [Narzędzie hierarchia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md) pozwala dodawać punkty przerwania w dołączonych arkuszach stylów i/lub wbudowanych regułach szablonów.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Opcje edytora XML — formatowanie](../ide/reference/options-text-editor-xml-formatting.md)
 - [Opcje edytora XML — różne](../ide/reference/options-text-editor-xml-miscellaneous.md)

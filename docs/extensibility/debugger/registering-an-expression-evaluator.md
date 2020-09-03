@@ -1,5 +1,5 @@
 ---
-title: Rejestrowanie oceniającego wyrażenia | Dokumenty firmy Microsoft
+title: Rejestrowanie ewaluatora wyrażeń | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,26 +12,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 600f7c8a2e2957cddf23ccc82b0872617e491940
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713196"
 ---
-# <a name="register-an-expression-evaluator"></a>Rejestrowanie oceniającego wyrażenia
+# <a name="register-an-expression-evaluator"></a>Rejestrowanie ewaluatora wyrażeń
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [oceniający wyrażenia CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład oceniającego zarządzane wyrażenia](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniania wyrażeń jest przestarzały. Aby uzyskać informacje na temat implementowania oceniania wyrażeń CLR, zobacz testerzy [wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzana próbnik wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Oceniający wyrażenie (EE) musi zarejestrować się jako fabryka klas zarówno w środowisku Windows COM, jak i w programie Visual Studio. EE jest skonfigurowany jako biblioteka DLL, tak aby jest wstrzykiwany do przestrzeni adresowej aparatu debugowania (DE) lub przestrzeni adresowej programu Visual Studio, w zależności od tego, która jednostka wystąpienia EE.
+ Ewaluatora wyrażeń (EE) musi być zarejestrowana jako fabryka klas zarówno w środowisku Windows COM, jak i w programie Visual Studio. Konfiguracja EE jest ustawiana jako biblioteka DLL, aby została wprowadzona do przestrzeni adresowej aparatu debugowania (DE) lub przestrzeni adresowej programu Visual Studio, w zależności od tego, który obiekt tworzy wystąpienie programu EE.
 
-## <a name="managed-code-expression-evaluator"></a>Oceniający wyrażenie kodu zarządzanego
- Kod zarządzany EE jest implementowany jako biblioteka klas, która jest biblioteką DLL, która rejestruje się w środowisku COM, zwykle uruchamiana przez wywołanie programu VSIP, *regpkg.exe*. Rzeczywisty proces zapisywania kluczy rejestru dla środowiska COM jest obsługiwany automatycznie.
+## <a name="managed-code-expression-evaluator"></a>Ewaluatora wyrażeń kodu zarządzanego
+ Zarządzany kod EE jest implementowany jako Biblioteka klas, która jest biblioteką DLL, która zarejestruje się ze środowiskiem COM, zazwyczaj uruchamiana przez wywołanie *regpkg.exe*programu VSIP. Rzeczywisty proces zapisywania kluczy rejestru dla środowiska COM jest obsługiwany automatycznie.
 
- Metoda klasy głównej jest oznaczona <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, wskazując, że metoda ma być wywoływana, gdy biblioteka DLL jest zarejestrowana w COM. Ta metoda rejestracji, `RegisterClass`często wywoływana, wykonuje zadanie rejestrowania biblioteki DLL w programie Visual Studio. Odpowiedni `UnregisterClass` (oznaczony <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>symbolem ), cofa skutki `RegisterClass` odinstalowania biblioteki DLL.
-Te same wpisy rejestru są dokonywane jak w przypadku EE napisanego w kodzie niezarządzanym; jedyną różnicą jest to, że `SetEEMetric` nie ma funkcji pomocnika, takich jak do pracy dla Ciebie. Poniżej znajduje się przykład procesu rejestracji i wyrejestrowania.
+ Metoda klasy głównej jest oznaczona przy użyciu <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> , wskazując, że metoda ma być wywoływana, gdy biblioteka DLL jest zarejestrowana w modelu com. Ta metoda rejestracji, często wywoływana `RegisterClass` , wykonuje zadanie rejestrowania biblioteki DLL w programie Visual Studio. Odpowiadająca `UnregisterClass` (oznaczona znakiem <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> ), powoduje, że nie ma wpływu `RegisterClass` na to, kiedy Biblioteka DLL zostanie odinstalowana.
+Te same wpisy rejestru są wykonywane jak w przypadku EE pisanych w kodzie niezarządzanym. Jedyną różnicą jest to, że nie ma żadnych funkcji pomocnika, takich jak `SetEEMetric` wykonywanie pracy. Poniżej znajduje się przykład procesu rejestracji i wyrejestrowywania.
 
 ### <a name="example"></a>Przykład
- Poniższa funkcja pokazuje, jak kod zarządzany EE rejestruje i wyrejestruje się za pomocą programu Visual Studio.
+ Poniższa funkcja pokazuje, jak zarządzany kod EE rejestruje i wyrejestrowuje się z programu Visual Studio.
 
 ```csharp
 namespace EEMC
@@ -97,33 +97,33 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code-expression-evaluator"></a>Ewaluator wyrażenia kodu niezarządzanego
- Biblioteka DLL EE `DllRegisterServer` implementuje funkcję, aby zarejestrować się w środowisku COM, a także visual studio.
+## <a name="unmanaged-code-expression-evaluator"></a>Ewaluatora wyrażeń kodu niezarządzanego
+ Biblioteka DLL EE implementuje `DllRegisterServer` funkcję w celu zarejestrowania się w środowisku com, a także w programie Visual Studio.
 
 > [!NOTE]
-> Przykładowy kod mycee można znaleźć w pliku *dllentry.cpp*, który znajduje się w instalacji VSIP w obszarze EnVSDK\MyCPkgs\MyCEE.
+> Kod rejestru przykładowego kodu MyCEE można znaleźć w pliku *dllentry. cpp*, który znajduje się w instalacji VSIP w obszarze EnVSDK\MyCPkgs\MyCEE.
 
 ### <a name="dll-server-process"></a>Proces serwera DLL
- Podczas rejestrowania EE serwer DLL:
+ Podczas rejestrowania programu EE serwer DLL:
 
-1. Rejestruje swoją fabrykę `CLSID` klas zgodnie z normalnymi konwencjami COM.
+1. Rejestruje fabrykę klas `CLSID` zgodnie z normalnymi konwencjami com.
 
-2. Wywołuje funkcję `SetEEMetric` pomocnika, aby zarejestrować się w programie Visual Studio metryki EE pokazane w poniższej tabeli. Funkcja `SetEEMetric` i metryki określone w następujący sposób są częścią biblioteki *dbgmetric.lib.* Zobacz [pomocników SDK do debugowania, aby](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) uzyskać szczegółowe informacje.
+2. Wywołuje funkcję pomocnika, `SetEEMetric` Aby zarejestrować się w programie Visual Studio metryki EE pokazane w poniższej tabeli. Funkcja `SetEEMetric` i określone metryki są częścią biblioteki *dbgmetric. lib* . Aby uzyskać szczegółowe informacje, zobacz [pomocników zestawu SDK](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) .
 
     |Metryka|Opis|
     |------------|-----------------|
-    |`metricCLSID`|`CLSID`fabryki klasy EE|
-    |`metricName`|Nazwa EE jako ciąg wyświetlania|
-    |`metricLanguage`|Nazwa języka, który EE jest przeznaczony do oceny|
-    |`metricEngine`|`GUID`silników debugowania (DE), które współpracują z tym EE|
+    |`metricCLSID`|`CLSID` fabryki klas EE|
+    |`metricName`|Nazwa EE jako ciąg, który ma być odtwarzany|
+    |`metricLanguage`|Nazwa języka, który ma być przeznaczony do oszacowania|
+    |`metricEngine`|`GUID`s aparatów debugowania (DE), które działają w tym EE|
 
     > [!NOTE]
-    > Identyfikuje `metricLanguage``GUID` język według nazwy, ale jest `guidLang` to `SetEEMetric` argument, który wybiera język. Gdy kompilator generuje plik informacji debugowania, `guidLang` należy napisać odpowiednie, tak aby DE wie, które EE do użycia. DE zazwyczaj prosi dostawcę symbolu `GUID`dla tego języka, który jest przechowywany w pliku informacji debugowania.
+    > `metricLanguage``GUID`Identyfikuje język według nazwy, ale jest `guidLang` argumentem `SetEEMetric` , który wybiera język. Po wygenerowaniu przez kompilator pliku informacji o debugowaniu należy napisać odpowiednie polecenie, aby uzyskać informacje o tym, które `guidLang` EE mają być używane. Zwykle prosi dostawcę symboli dla tego języka `GUID` , który jest przechowywany w pliku informacji o debugowaniu.
 
-3. Rejestruje się w programie Visual Studio, tworząc klucze w obszarze\\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio*X.Y*, gdzie *X.Y* jest wersją programu Visual Studio do zarejestrowania.
+3. Rejestruje w programie Visual Studio, tworząc klucze w obszarze HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *x. y*, gdzie *x. y* jest wersją programu Visual Studio do zarejestrowania.
 
 ### <a name="example"></a>Przykład
- Poniższa funkcja pokazuje, jak kod niezarządzany (C++) EE rejestruje i wyrejestruje się za pomocą programu Visual Studio.
+ Poniższa funkcja pokazuje, jak kod niezarządzany (C++) EE rejestruje się i wyrejestrowuje z programu Visual Studio.
 
 ```cpp
 /*---------------------------------------------------------
@@ -211,4 +211,4 @@ static HRESULT RegisterMetric( bool registerIt )
 
 ## <a name="see-also"></a>Zobacz też
 - [Pisanie ewaluatora wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-- [Pomocnicy SDK do debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+- [Pomocnicy zestawu SDK na potrzeby debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5f69969ac60e7476e2d9430266acca41c0745f3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664180"
 ---
-# <a name="pen-tool-modifier-keys-in-blend"></a>Klawisze modyfikujące narzędzie pióra w programie Blend
+# <a name="pen-tool-modifier-keys-in-blend"></a>Klawisze modyfikujące Pióro w programie Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W poniższej tabeli przedstawiono skróty, których można użyć do modyfikacji ścieżki podczas tworzenia jej przy użyciu narzędzia ![ ](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a") **pióro** . Możesz również użyć narzędzia **pióro** , aby dodać lub usunąć punkty w istniejącej ścieżce lub połączyć dwie istniejące ścieżki.
+W poniższej tabeli przedstawiono skróty, których można użyć do modyfikacji ścieżki podczas tworzenia jej przy użyciu narzędzia **pióro** ![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a") . Możesz również użyć narzędzia **pióro** , aby dodać lub usunąć punkty w istniejącej ścieżce lub połączyć dwie istniejące ścieżki.
 
-|Aby wykonać tę akcję|Zrób to|Przytrzymaj|
+|Akcja do wykonania|Zrób to|Wskaźnik|
 |-----------------------|-------------|-------------|
 |Tworzenie punktu do uruchamiania segmentu linii prostej|Kliknij, aby utworzyć nowy punkt|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Wskaźnik pióra|
 |Tworzenie punktu do uruchamiania segmentu linii zakrzywionych|Kliknij, aby utworzyć nowy punkt, a następnie przeciągnij, aby dostosować uchwyty styczne przed zwolnieniem przycisku myszy|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Wskaźnik pióra|

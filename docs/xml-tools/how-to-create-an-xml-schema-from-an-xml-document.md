@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 10ce1c6dc5bd24b391a8cde184a32684270662ef
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815451"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Instrukcje: Tworzenie schematu XML na podstawie dokumentu XML
@@ -37,6 +37,6 @@ Aby uzyskać więcej informacji o aparacie wnioskowania schematu, zobacz artyku�
 
    Dokument schematu XML zostanie utworzony i otwarty dla każdej przestrzeni nazw znalezionej w pliku XML. Każdy schemat jest otwierany jako plik tymczasowy. Schematy mogą być zapisywane na dysku, dodawane do projektu lub odrzucane.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Edytor XML](../xml-tools/xml-editor.md)

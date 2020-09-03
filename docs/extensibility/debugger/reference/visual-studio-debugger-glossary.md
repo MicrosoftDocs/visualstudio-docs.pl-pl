@@ -1,5 +1,5 @@
 ---
-title: Słowniczek debugera programu Visual Studio | Dokumenty firmy Microsoft
+title: Słownik debugera programu Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,59 +12,59 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 954532311fe6b63fc288877a6d41722e6ea47581
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713344"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Słownik debugera programu Visual Studio
-Poniżej przedstawiono terminy używane w [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugowania SDK.
+W zestawie SDK debugowania są stosowane poniższe warunki [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="terms"></a>Warunki
- związany punkt przerwania Abstrakcja dla punktu przerwania ustawionego w kodzie. Istnieje relacja jeden do jednego między powiązanym punktem przerwania a instrukcją punktu przerwania w strumieniu kodu. Gdy kod zwalnia, powiązane punkty przerwania mogą odwiązać.
+## <a name="terms"></a>Terminologia
+ powiązany punkt przerwania — abstrakcję dla zestawu punktów przerwania w kodzie. Istnieje relacja jeden do jednego między punktem przerwania powiązanego a instrukcją punktu przerwania w strumieniu kodu. Gdy kody są zwalniane, powiązane punkty przerwania mogą usunąć powiązania.
 
- przyczynowość Zapewnia możliwość śledzenia wątku logicznego wykonywania w wielu wątków fizycznych, procesów i maszyn i zrekonstruować stos wywołań tego wątku logicznego w dowolnym momencie w okresie istnienia tego wątku.
+ przyczynę stanowi możliwość śledzenia logicznego wątku wykonywania w wielu wątkach fizycznych, procesach i maszynach oraz w celu odtworzenia stosu wywołań tego wątku logicznego w dowolnym punkcie okresu istnienia wątku.
 
- kontekst kodu Zapewnia abstrakcję pozycji w kodzie znanym aparatowi debugowania. W przypadku większości architektur w czasie wykonywania kontekst kodu jest adresem w strumieniu instrukcji programu. W przypadku języków nietradycyjnych, w których kod nie może być reprezentowany przez instrukcje, kontekst kodu może być reprezentowany w inny sposób.
+ kontekst kodu zawiera streszczenie położenia w kodzie znanym aparatowi debugowania. W przypadku większości architektur czasu wykonywania, kontekst kodu jest adresem w strumieniu instrukcji programu. W przypadku języków nietradycyjnych, w których kod nie może być reprezentowany przez instrukcje, kontekst kodu może być reprezentowany w inny sposób.
 
- ścieżka kodu reprezentuje punkt wykonania w kodzie, w którym oddział jest podejmowana lub wywoływane jest wywołanie funkcji. Śledzenie stosu jest zasadniczo lista ścieżek kodu wywołania funkcji.
+ ścieżka kodu reprezentuje punkt wykonania w kodzie, w którym jest wykonywana gałąź lub wywołanie funkcji. Ślad stosu jest zasadniczo listą ścieżek kodu wywołania funkcji.
 
- aparat debugowania (DE) Składnik, który umożliwia debugowanie architektury wykonywalnej. Aparat debugowania działa w połączeniu z interpreterem lub systemem operacyjnym i zapewnia usługi debugowania, takie jak kontrola wykonania, punkty przerwania i ocena wyrażeń.
+ aparat debugowania (DE) składnika, który umożliwia debugowanie architektury czasu wykonywania. Silnik debugowania działa w połączeniu z interpreterem lub systemem operacyjnym oraz zapewnia usługi debugowania, takie jak kontrola wykonywania, punkty przerwania i Obliczanie wyrażenia.
 
- kontekst dokumentu Zapewnia abstrakcję pozycji w dokumencie pliku źródłowego znanego aparatowi debugowania. W przypadku większości języków kontekst dokumentu jest pozycją w pliku źródłowym. W przypadku języków nietradycyjnych, dla których plik źródłowy może nie być tekstem, kontekst dokumentu może być reprezentowany za pomocą innych środków. Zobacz też *położenie dokumentu*.
+ kontekst dokumentu zawiera streszczenie pozycji w dokumencie pliku źródłowego znanym aparatowi debugowania. W przypadku większości języków kontekst dokumentu jest pozycją w pliku źródłowym. W przypadku nietradycyjnych języków, dla których plik źródłowy może nie być tekstem, kontekst dokumentu może być reprezentowany przez inny sposób. Zobacz również *pozycja dokumentu*.
 
- pozycja dokumentu Zapewnia abstrakcję pozycji w pliku źródłowym znanym IDE. W przypadku większości języków pozycja dokumentu jest pozycją w pliku źródłowym. W przypadku języków nietradycyjnych pozycja dokumentu może być reprezentowana w inny sposób. Zobacz też *kontekst dokumentu*.
+ Pozycja dokumentu zawiera streszczenie pozycji w pliku źródłowym znanym IDE. W przypadku większości języków pozycja dokumentu jest pozycją w pliku źródłowym. W przypadku nietradycyjnych języków pozycja dokumentu może być reprezentowana w inny sposób. Zobacz również *kontekst dokumentu*.
 
- punkt przerwania błędu Abstrakcja opisująca błąd w oczekującym punkcie przerwania. Punkt przerwania błędu może opisywać błąd w lokalizacji oczekującego punktu przerwania, wyrażenie skojarzone z oczekującym punktem przerwania lub inne informacje, które uniemożliwiają powiązanie oczekującego punktu przerwania z lokalizacją kodu.
+ błąd punktu przerwania w przypadku opisywania błędu w oczekującym punkcie przerwania. Punkt przerwania błędu może opisać błąd w lokalizacji oczekującego punktu przerwania, wyrażenie skojarzone z oczekującym punktem przerwania lub inne informacje, które uniemożliwiają oczekujący punkt przerwania z wiązania do lokalizacji kodu.
 
- kontekst ewaluacji Zapewnia abstrakcję kontekstu programowania dla oceny wyrażenia. Zazwyczaj kontekst oceny jest zakresem. Podczas wykonywania oceny wyrażenia w kontekście wyrażenia kontekst wyrażenia zawiera reguły zakresu, które pasują do jego punktu tworzenia. Na przykład kontekst wyrażenia utworzony w ramce stosu zapewni kontekst do oceny zmiennych lokalnych, parametrów metody, elementów członkowskich klasy (jeśli dotyczy) i zmiennych globalnych.
+ kontekst oceny zapewnia abstrakcję kontekstu programowania na potrzeby oceny wyrażenia. Zazwyczaj kontekst oceny jest zakresem. Podczas obliczania wyrażenia w kontekście wyrażenia, kontekst wyrażenia zawiera reguły zakresu, które pasują do punktu tworzenia. Na przykład kontekst wyrażenia utworzony w ramce stosu zapewni kontekst do oceny zmiennych lokalnych, parametrów metody, elementów członkowskich klasy (jeśli dotyczy) i zmiennych globalnych.
 
- przechwycony wyjątek Wyjątek przechwycony przez aparat debugowania, nawet jeśli mechanizm obsługi wyjątków nie jest w miejscu w bieżącej ramce stosu.
+ przechwycony wyjątek wyjątek, który jest przechwytywany przez aparat debugowania, nawet jeśli żaden mechanizm obsługi wyjątków nie znajduje się w bieżącej klatce stosu.
 
- JustMyCode Pojęcie debugowania tylko kodu, który należy do użytkownika i ignorując cały kod pośredni, takich jak kod systemowy— nawet jeśli kod źródłowy jest dostępny dla tego kodu systemu.
+ JustMyCode koncepcję debugowania tylko kodu, który należy do użytkownika i ignoruje cały kod pośredni, taki jak kod systemowy — nawet jeśli kod źródłowy jest dostępny dla tego kodu systemowego.
 
- oczekujący punkt przerwania Zapewnia abstrakcję dla punktów przerwania przed, w trakcie i po załadowaniu kodu i sposobem wirtualizacji punktów przerwania. Oczekujący punkt przerwania:
+ oczekujący punkt przerwania udostępnia streszczenie dla punktów przerwania przed, podczas i po załadowaniu kodu oraz sposób wirtualizacji punktów przerwania. Oczekujący punkt przerwania:
 
-- Zawiera wszystkie informacje potrzebne do powiązania punktu przerwania z kodem w jednym lub kilku programach.
+- Zawiera wszystkie informacje, które są konieczne do powiązania punktu przerwania z kodem w jednym lub większej liczbie programów.
 
-- Może powiązać z wieloma lokalizacjami kodu w jednym lub kilku programach.
+- Może wiązać się z wieloma lokalizacjami w jednym lub kilku programach.
 
 - Nigdy nie wiąże się z kodem.
 
-  Za każdym razem, gdy kod się ładuje, wszystkie oczekujące punkty przerwania w programie są sprawdzane, aby sprawdzić, czy mogą one powiązać. Oczekujące punktu przerwania mówi się, że zawiera wszystkie powiązane punkty przerwania, które wiąże.
+  Za każdym razem, gdy jest ładowany kod, wszystkie oczekujące punkty przerwania w programie są sprawdzane w celu sprawdzenia, czy można utworzyć powiązanie. Oczekujący punkt przerwania jest określany jako zawierający wszystkie powiązane punkty przerwania, które tworzy.
 
-  proces Fizyczny proces Win32. Proces może zawierać wiele programów. Zobacz też *program*.
+  Przetwórz fizyczny proces Win32. Proces może zawierać wiele programów. Zobacz też *program*.
 
-  program Pojedynczy obszar nazw działający wewnątrz określonej architektury czasu wykonywania. Zobacz też *proces*.
+  programuje pojedynczą przestrzeń nazw działającą w ramach określonej architektury czasu wykonywania. Zobacz również *proces*.
 
-  menedżer debugowania sesji (SDM) Zarządza dowolną liczbą aparatów debugowania debugowania dowolną liczbę programów w wielu procesach na dowolnej liczbie komputerów. Na poziomie podstawowym SDM jest multiplekserem aparatów debugowania. Ponadto SDM zapewnia ujednolicony widok sesji debugowania do IDE.
+  Menedżer debugowania sesji (SDM) zarządza dowolną liczbą aparatów debugowania, które debugują dowolną liczbę programów w wielu procesach na dowolnej liczbie komputerów. Na poziomie podstawowym model SDM jest multiplekserem aparatów debugowania. Ponadto model SDM zapewnia ujednolicony widok sesji debugowania do IDE.
 
-  ramka stosu Reprezentuje stan obliczeń w określonej ramce i określony poziom wywołań funkcji zagnieżdżonych.
+  Ramka stosu reprezentuje stan obliczeń dla określonej ramki i szczególny poziom zagnieżdżonych wywołań funkcji.
 
-  wątek Uogólnione pojęcie wykonywania instrukcji opartych na stosie działa w co najmniej jednym programie.
+  wątkowo uogólnione koncepcje wykonywania instrukcji opartych na stosie działające w co najmniej jednym programie.
 
-  ostrzeżenie breakpoint Abstrakcja do opisywania ostrzeżenia w oczekującym punkcie przerwania. Punkt przerwania ostrzeżenia opisuje przyczynę, dla którego oczekujący punkt przerwania nie został jeszcze powiązany z lokalizacją kodu. Może to być, że kod nie został załadowany jeszcze dla lokalizacji opisanej przez oczekujących punktu przerwania lub z innego powodu.
+  ostrzegawczy punkt przerwania dla opisywania ostrzeżenia w oczekującym punkcie przerwania. Punkt przerwania ostrzegawczy opisuje powód, dla którego oczekujący punkt przerwania nie został jeszcze powiązany z lokalizacją w kodzie. Może to być spowodowane tym, że kod nie został jeszcze załadowany do lokalizacji opisanej przez oczekujący punkt przerwania lub z innego powodu.
 
 ## <a name="see-also"></a>Zobacz też
 - [Rozszerzalność debugera programu Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

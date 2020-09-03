@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fc11479901785b19235e0962d3ae90e552e5b33b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671140"
 ---
 # <a name="list-threads-command"></a>Lista wątków — Polecenie
@@ -34,10 +34,10 @@ Debug.ListThreads [index]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `index` opcjonalny. Wybiera wątek według indeksu, który będzie bieżącym wątkiem.
+ `index` Obowiązkowe. Wybiera wątek według indeksu, który będzie bieżącym wątkiem.
 
 ## <a name="remarks"></a>Uwagi
- Gdy jest określony, argument `index` oznacza wskazany wątek jako bieżący wątek. Gwiazdka (*) jest wyświetlana na liście obok bieżącego wątku.
+ Gdy jest określony, `index` argument oznacza wskazany wątek jako bieżący wątek. Gwiazdka (*) jest wyświetlana na liście obok bieżącego wątku.
 
 ## <a name="example"></a>Przykład
 

@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3979d08757445e9df5fc159fe7642b04bf74b995
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72630933"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach Windows Forms
@@ -31,7 +31,7 @@ W *tabeli wyszukiwania* terminów opisano formanty, które są powiązane z dwie
 
  Tabelę odnośników można utworzyć, przeciągając główny węzeł tabeli nadrzędnej (z [okna źródła danych](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) na kontrolkę w formularzu, która jest już powiązana z kolumną w powiązanej tabeli podrzędnej.
 
- Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord w tabeli `Orders` zawiera `CustomerID`, wskazujący, który klient złożył zamówienie. `CustomerID` to klucz obcy wskazujący rekord klienta w tabeli `Customers`. W tym scenariuszu należy rozwinąć tabelę `Orders` w oknie **źródła danych** i ustawić węzeł główny na **szczegóły**. Następnie ustaw kolumnę `CustomerID` tak, aby korzystała z <xref:System.Windows.Forms.ComboBox> (lub innej kontrolki obsługującej powiązanie wyszukiwania), a następnie przeciągnij węzeł `Orders` do formularza. Na koniec przeciągnij węzeł `Customers` do formantu, który jest powiązany z kolumną powiązaną — w tym przypadku <xref:System.Windows.Forms.ComboBox> powiązany z kolumną `CustomerID`.
+ Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord w `Orders` tabeli zawiera element `CustomerID` , wskazujący, który klient złożył zamówienie. `CustomerID` to klucz obcy wskazujący rekord klienta w tabeli `Customers`. W tym scenariuszu można rozwinąć `Orders` tabelę w oknie **źródła danych** i ustawić węzeł główny na **szczegóły**. Następnie ustaw `CustomerID` kolumnę tak, aby używała <xref:System.Windows.Forms.ComboBox> (lub innej kontrolki obsługującej powiązanie wyszukiwania), i przeciągnij `Orders` węzeł na formularz. Na koniec przeciągnij `Customers` węzeł do kontrolki, która jest powiązana z kolumną powiązaną — w tym przypadku, <xref:System.Windows.Forms.ComboBox> powiązana z `CustomerID` kolumną.
 
 ## <a name="to-databind-a-lookup-control"></a>Aby powiązać z danymi kontrolkę wyszukiwania odnośników
 
@@ -47,13 +47,13 @@ W *tabeli wyszukiwania* terminów opisano formanty, które są powiązane z dwie
 
 3. Zmień typ upuszczania tabeli podrzędnej na **szczegóły** , wybierając pozycję **szczegóły** z listy kontrolek w węźle tabeli podrzędnej. Aby uzyskać więcej informacji, zobacz [Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródła danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-4. Zlokalizuj węzeł, który wiąże dwie tabele (`CustomerID` węzła w poprzednim przykładzie). Zmień typ upuszczania na <xref:System.Windows.Forms.ComboBox>, wybierając **pole kombi** z listy kontrolek.
+4. Zlokalizuj węzeł, który wiąże dwie tabele ( `CustomerID` węzeł w poprzednim przykładzie). Zmień typ upuszczenia na, <xref:System.Windows.Forms.ComboBox> wybierając **pole kombi** z listy kontrolek.
 
 5. Przeciągnij węzeł głównej tabeli podrzędnej z okna **źródła danych** na formularz.
 
-     W formularzu pojawią się kontrolki powiązane z danymi (z etykietami opisowymi) oraz pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>). [Zestaw danych](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+     W formularzu pojawią się kontrolki powiązane z danymi (z etykietami opisowymi) oraz pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>). [Zestaw danych](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawia się na pasku składnika.
 
-6. Teraz przeciągnij główny węzeł tabeli nadrzędnej z okna **źródła danych** bezpośrednio do formantu wyszukiwania (<xref:System.Windows.Forms.ComboBox>).
+6. Teraz przeciągnij główny węzeł tabeli nadrzędnej z okna **źródła danych** bezpośrednio do formantu wyszukiwania ( <xref:System.Windows.Forms.ComboBox> ).
 
      Powiązania wyszukiwania odnośników są teraz ustanowione. W poniższej tabeli opisano konkretne właściwości skonfigurowane w kontrolce.
 

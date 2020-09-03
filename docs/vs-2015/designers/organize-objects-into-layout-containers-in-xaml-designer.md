@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 90c30f27ada6673608a1c5cf9500207f9aeb2d72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664199"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizowanie obiektów w kontenery układów w projektancie XAML
@@ -47,14 +47,14 @@ Wyobraź sobie, gdzie chcesz, aby obiekty były wyświetlane na stronie; obiekty
 
 - [DockPanel](#Dock)
 
-### <a name="Grid"></a>Siatki
+### <a name="grid"></a><a name="Grid"></a> Siatki
  Uporządkuj obiekty w wiersze i kolumny.
 
  ![](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441f-9136-98375fee87b7")
 
  **Obejrzyj krótkie wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [przy użyciu siatek](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)
 
-### <a name="Uniform"></a>UniformGrid
+### <a name="uniformgrid"></a><a name="Uniform"></a> UniformGrid
  Rozmieść obiekty w równych lub jednorodnych regionach siatki. Ten panel doskonale nadaje się do porządkowania list obrazów.
 
  ![](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png "928b9284-a7e8-4678-875a-656b80b78076")
@@ -63,21 +63,21 @@ Wyobraź sobie, gdzie chcesz, aby obiekty były wyświetlane na stronie; obiekty
 
  **Obejrzyj krótkie wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pracujące z UniformGrid](http://www.popscreen.com/v/6A4iq/Microsoft-Expression-Blend-Working-with-a-UniformGrid)
 
-### <a name="Canvas"></a>Przestrzeń
+### <a name="canvas"></a><a name="Canvas"></a> Przestrzeń
  Rozmieść obiekty w dowolny sposób. Gdy użytkownicy uruchamiają aplikację, te elementy będą miały stałe pozycje na ekranie.
 
  ![](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png "e1ae27f0-3a57-454e-b580-877dcea8836d")
 
  **Obejrzyj krótkie wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pracujące z kanwą](http://www.popscreen.com/v/6A4hT/Microsoft-Expression-Blend-Working-with-the-Canvas)
 
-### <a name="Stack"></a>StackPanel
+### <a name="stackpanel"></a><a name="Stack"></a> StackPanel
  Rozmieść obiekty w jednym wierszu w poziomie lub w pionie.
 
  ![](../designers/media/a85a7b57-b0a8-495e-b985-f0291e41d093.png "a85a7b57-b0a8-495e-b985-f0291e41d093")
 
  **Obejrzyj krótkie wideo:** ![Konfigurowanie zainstalowanych funkcji](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pracujących z StackPanel i kontrolce WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)
 
-### <a name="Wrap"></a>Kontrolce WrapPanel
+### <a name="wrappanel"></a><a name="Wrap"></a> Kontrolce WrapPanel
  Rozmieść obiekty sekwencyjnie od lewej do prawej. Gdy panel nie jest widoczny w skrajnie prawej krawędzi, *zawija* zawartość do następnego wiersza i tak dalej, od lewej do prawej, od góry do dołu. Możesz również zmienić orientację panelu zawijania w pionie, aby obiekty były przesyłane z góry do dołu, od lewej do prawej.
 
  (Dostępne tylko dla projektów WPF)
@@ -86,7 +86,7 @@ Wyobraź sobie, gdzie chcesz, aby obiekty były wyświetlane na stronie; obiekty
 
  **Obejrzyj krótkie wideo:** ![Konfigurowanie zainstalowanych funkcji](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pracujących z StackPanel i kontrolce WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)
 
-### <a name="Dock"></a>DockPanel
+### <a name="dockpanel"></a><a name="Dock"></a> DockPanel
  Rozmieść obiekty w taki sposób, aby stały się one lub *zadokowane*, do jednej krawędzi panelu.
 
  (Dostępne tylko dla projektów WPF)
@@ -110,22 +110,22 @@ Wyobraź sobie, gdzie chcesz, aby obiekty były wyświetlane na stronie; obiekty
 
 - [Okno widoku](#View)
 
-### <a name="Border"></a>Granicznym
+### <a name="border"></a><a name="Border"></a> Granicznym
  Utwórz obramowanie, tło lub oba elementy wokół obiektu. Do **obramowania**można dodać tylko jeden obiekt. Jeśli chcesz zastosować obramowanie lub tło dla więcej niż jednego obiektu, Dodaj panel układu do **obramowania**. Następnie Dodaj obiekty do tego panelu lub kontrolki.
 
  ![](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png "e761238b-99fd-43c5-bbc4-57538b8289ff")
 
  **Obejrzyj krótkie wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pracujące z obramowaniami](http://www.popscreen.com/v/6A4hB/Microsoft-Expression-Blend-Working-with-Borders)
 
-### <a name="Popup"></a>Elementy
+### <a name="popup"></a><a name="Popup"></a> Elementy
  Pokaż informacje lub opcje dla użytkowników w oknie. Do **okna podręcznego**można dodać tylko jeden obiekt. Domyślnie **okno podręczne** zawiera **siatkę** , ale można to zmienić.
 
-### <a name="Scroll"></a>ScrollViewer
+### <a name="scrollviewer"></a><a name="Scroll"></a> ScrollViewer
  Włącz użycie, aby przewinąć w dół stronę lub obszar strony. Można dodać tylko jeden obiekt do **ScrollViewer** , tak aby miał wiele sens, aby dodać Panel układu, taki jak **Siatka** lub **StackPanel**.
 
  ![](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png "06b326d4-f23d-41a6-b26b-e1aff37572a7")
 
-### <a name="View"></a>Viewbox
+### <a name="viewbox"></a><a name="View"></a> Viewbox
  Skaluj obiekty w taki sam sposób, jak w przypadku kontrolki powiększenia. Do **Viewbox**można dodać tylko jeden obiekt. Jeśli chcesz zastosować ten efekt do więcej niż jednego obiektu, Dodaj panel układu do **Viewbox**, a następnie Dodaj kontrolki do tego panelu układu.
 
  (Dostępne tylko dla projektów WPF)

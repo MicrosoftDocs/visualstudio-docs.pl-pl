@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c17b25d8a837f751b8bd8ec108c0b821d58c6df0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657699"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Znajdź i zamień, Środowisko, Opcje — Okno dialogowe
@@ -40,7 +40,7 @@ Ta strona okna dialogowego **Opcje** służy do kontrolowania pól komunikatów 
 > [!NOTE]
 > Ta opcja nie ma wpływu na żadne komunikaty informacyjne **znajdowania i zastępowania** , które nie wyświetlają opcji **Zawsze pokazuj ten komunikat** .
 
- **Wyświetlanie komunikatów ostrzegawczych** Wybierz tę opcję, aby wyświetlić wszystkie ostrzeżenia dotyczące znajdowania i zamieniania, które mają opcję **Zawsze pokazuj tę wiadomość** . Jeśli na przykład nie zostanie wyświetlony komunikat **Zamień wszystkie** ostrzeżenia, który pojawia się podczas próby przeprowadzenia zamian w plikach, które nie są aktualnie otwarte do edycji, wybranie tej opcji spowoduje, że ten komunikat ostrzegawczy zostanie wyświetlony ponownie podczas próby Zamień wszystko.
+ **Wyświetlanie komunikatów ostrzegawczych** Wybierz tę opcję, aby wyświetlić wszystkie ostrzeżenia dotyczące znajdowania i zamieniania, które mają opcję **Zawsze pokazuj tę wiadomość** . Jeśli na przykład nie zostanie wyświetlony komunikat **Zamień wszystkie** ostrzeżenia, który pojawia się podczas próby przeprowadzenia zamian w plikach, które nie są aktualnie otwarte do edycji, wybranie tej opcji spowoduje, że ten komunikat ostrzegawczy zostanie wyświetlony ponownie podczas próby zamiany wszystkich.
 
  Jeśli nie chcesz wyświetlać żadnych komunikatów ostrzegawczych dotyczących znajdowania i zastępowania, usuń zaznaczenie tej opcji.
 

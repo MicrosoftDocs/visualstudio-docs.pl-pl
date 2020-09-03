@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 719a956558141684c7d755aafb6929f4368482f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657720"
 ---
 # <a name="file-properties-javascript"></a>Właściwości pliku, JavaScript
@@ -66,9 +66,9 @@ Właściwości pliku można użyć, aby wskazać, jakie akcje powinien wykonać 
  Wyświetla pełną ścieżkę do pliku jako wartość tylko do odczytu. Aby zmienić ścieżkę pliku, można przeciągnąć i upuścić plik w Eksplorator rozwiązań.
 
 ## <a name="reference-file-properties"></a>Właściwości pliku referencyjnego
- W tej sekcji opisano właściwości typowe dla plików, do których odwołuje się [!INCLUDE[win8_app_js](../../includes/win8-app-js-md.md)]. Po wybraniu odwołania, takiego jak plik winmd, odwołanie do zestawu SDK, odwołanie projekt-do-projektu lub odwołanie do zestawu w Eksplorator rozwiązań, inne właściwości mogą być wyświetlane w okno Właściwości, zgodnie z typem pliku.
+ W tej sekcji opisano właściwości typowe dla plików, do których odwołuje się [!INCLUDE[win8_app_js](../../includes/win8-app-js-md.md)] . Po wybraniu odwołania, takiego jak plik winmd, odwołanie do zestawu SDK, odwołanie projekt-do-projektu lub odwołanie do zestawu w Eksplorator rozwiązań, inne właściwości mogą być wyświetlane w okno Właściwości, zgodnie z typem pliku.
 
-### <a name="culture"></a>dziedzinie
+### <a name="culture"></a>Kultura
  Wyświetla język skojarzony z odwołaniem.
 
 ### <a name="file-type"></a>Typ pliku
@@ -80,7 +80,7 @@ Właściwości pliku można użyć, aby wskazać, jakie akcje powinien wykonać 
 ### <a name="identity"></a>Tożsamość
  Wyświetla tożsamość odwołania, która jest używana w projekcie, który jest przechowywany w pliku projektu.
 
-### <a name="package"></a>Package
+### <a name="package"></a>Pakiet
  Wyświetla nazwę manifestu pakietu skojarzonego z odwołaniem.
 
 ### <a name="resolved-path"></a>Rozwiązany ścieżka
@@ -89,7 +89,7 @@ Właściwości pliku można użyć, aby wskazać, jakie akcje powinien wykonać 
 ### <a name="sdk-path"></a>Ścieżka zestawu SDK
  Wyświetla ścieżkę do pliku zestawu SDK, do którego istnieje odwołanie.
 
-### <a name="uri"></a>adresu
+### <a name="uri"></a>Adresu
  Wyświetla identyfikator URI, który musi być uwzględniony w plikach HTML lub JavaScript projektu, aby dołączyć plik jako plik źródłowy.
 
 ### <a name="version"></a>Wersja

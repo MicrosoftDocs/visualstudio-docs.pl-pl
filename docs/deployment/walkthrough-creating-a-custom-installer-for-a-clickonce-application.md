@@ -19,14 +19,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b648134b7ad27a8f622ce270dc0f05e0a7e6516c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72637422"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Przewodnik: Tworzenie niestandardowego Instalatora dla aplikacji ClickOnce
-Wszystkie aplikacje ClickOnce oparte na pliku *. exe* mogą być instalowane w trybie dyskretnym i aktualizowane przez instalatora niestandardowego. Instalator niestandardowy może zaimplementować niestandardowe środowisko użytkownika podczas instalacji, w tym niestandardowe okna dialogowe dla operacji związanych z zabezpieczeniami i konserwacją. W celu wykonania operacji instalacji Instalator niestandardowy używa klasy <xref:System.Deployment.Application.InPlaceHostingManager>. W tym instruktażu przedstawiono sposób tworzenia niestandardowego Instalatora, który dyskretnie instaluje aplikację ClickOnce.
+Wszystkie aplikacje ClickOnce oparte na pliku *. exe* mogą być instalowane w trybie dyskretnym i aktualizowane przez instalatora niestandardowego. Instalator niestandardowy może zaimplementować niestandardowe środowisko użytkownika podczas instalacji, w tym niestandardowe okna dialogowe dla operacji związanych z zabezpieczeniami i konserwacją. W celu wykonania operacji instalacji Instalator niestandardowy używa <xref:System.Deployment.Application.InPlaceHostingManager> klasy. W tym instruktażu przedstawiono sposób tworzenia niestandardowego Instalatora, który dyskretnie instaluje aplikację ClickOnce.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -34,9 +34,9 @@ Wszystkie aplikacje ClickOnce oparte na pliku *. exe* mogą być instalowane w t
 
 1. W aplikacji ClickOnce Dodaj odwołania do System. Deployment i system. Windows. Forms.
 
-2. Dodaj nową klasę do aplikacji i określ dowolną nazwę. W tym instruktażu zostanie użyta nazwa `MyInstaller`.
+2. Dodaj nową klasę do aplikacji i określ dowolną nazwę. W tym instruktażu zostanie użyta nazwa `MyInstaller` .
 
-3. Dodaj następujące dyrektywy `Imports` lub `using` na początku nowej klasy.
+3. Dodaj poniższe `Imports` lub `using` dyrektywy na początku nowej klasy.
 
     ```vb
     Imports System.Deployment.Application
@@ -50,7 +50,7 @@ Wszystkie aplikacje ClickOnce oparte na pliku *. exe* mogą być instalowane w t
 
 4. Dodaj następujące metody do klasy.
 
-     Te metody wywołują <xref:System.Deployment.Application.InPlaceHostingManager> metod pobrania manifestu wdrożenia, potwierdzenia odpowiednich uprawnień, poproszenia użytkownika o zgodę na instalację, a następnie pobranie i zainstalowanie aplikacji w pamięci podręcznej ClickOnce. Instalator niestandardowy może określić, że aplikacja ClickOnce jest wstępnie zaufana, lub może odroczyć decyzję zaufania do wywołania metody <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A>. Ten kod wstępnie ufa aplikacji.
+     Metody te wywołują <xref:System.Deployment.Application.InPlaceHostingManager> metody pobierania manifestu wdrożenia, potwierdzenia odpowiednich uprawnień, poproszenia użytkownika o zgodę na instalację, a następnie pobranie i zainstalowanie aplikacji w pamięci podręcznej ClickOnce. Instalator niestandardowy może określić, że aplikacja ClickOnce jest wstępnie zaufana, lub może odroczyć decyzję zaufania do <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> wywołania metody. Ten kod wstępnie ufa aplikacji.
 
     > [!NOTE]
     > Uprawnienia przypisane przez przed zaufaniem nie mogą przekroczyć uprawnień do niestandardowego kodu Instalatora.
@@ -58,7 +58,7 @@ Wszystkie aplikacje ClickOnce oparte na pliku *. exe* mogą być instalowane w t
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]
 
-5. Aby podjąć próbę instalacji z kodu, wywołaj metodę `InstallApplication`. Na przykład, jeśli nazwa klasy `MyInstaller`, możesz wywołać `InstallApplication` w następujący sposób.
+5. Aby podjąć próbę instalacji z kodu, wywołaj `InstallApplication` metodę. Na przykład, jeśli nazwa klasy istnieje `MyInstaller` , można wywołać `InstallApplication` w następujący sposób.
 
     ```vb
     Dim installer As New MyInstaller()
@@ -73,8 +73,8 @@ Wszystkie aplikacje ClickOnce oparte na pliku *. exe* mogą być instalowane w t
     ```
 
 ## <a name="next-steps"></a>Następne kroki
- Aplikacja ClickOnce może również dodać niestandardową logikę aktualizacji, w tym niestandardowy interfejs użytkownika do wyświetlania w trakcie procesu aktualizacji. Aby uzyskać więcej informacji, zobacz <xref:System.Deployment.Application.UpdateCheckInfo>. Aplikacja ClickOnce może również pominąć standardowe pozycje menu Start, skrót i Dodaj lub usuń programy za pomocą elementu `<customUX>`. Aby uzyskać więcej informacji, zobacz [\<entryPoint > elementu](../deployment/entrypoint-element-clickonce-application.md) i <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>.
+ Aplikacja ClickOnce może również dodać niestandardową logikę aktualizacji, w tym niestandardowy interfejs użytkownika do wyświetlania w trakcie procesu aktualizacji. Aby uzyskać więcej informacji, zobacz <xref:System.Deployment.Application.UpdateCheckInfo>. Aplikacja ClickOnce może również pominąć standardowy wpis menu Start, skrót i Dodaj lub usuń programy za pomocą `<customUX>` elementu. Aby uzyskać więcej informacji, zobacz [ \<entryPoint> element](../deployment/entrypoint-element-clickonce-application.md) i <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A> .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)
-- [Element > \<entryPoint](../deployment/entrypoint-element-clickonce-application.md)
+- [\<entryPoint> postaci](../deployment/entrypoint-element-clickonce-application.md)

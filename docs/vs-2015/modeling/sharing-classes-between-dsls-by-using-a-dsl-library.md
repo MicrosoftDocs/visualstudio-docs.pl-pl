@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 093cc277fa1cbe1915099fd9663fc1ccb797ca3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671182"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Udostępnianie klas między językami DSL za pomocą biblioteki DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Wizualizacja i Modeling SDK można utworzyć niekompletną definicję DSL, którą można zaimportować do innego modemu DSL. Pozwala to na wspólne części podobnych modeli.
+W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zestawie SDK wizualizacji i modelowania można utworzyć niekompletną definicję DSL, którą można zaimportować do innego modemu DSL. Pozwala to na wspólne części podobnych modeli.
 
 ## <a name="creating-and-using-dsl-libraries"></a>Tworzenie i używanie bibliotek DSL
 
@@ -35,7 +35,7 @@ W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Wizualizacja i Modeling SDK możn
 
      Aby zdefiniować relację, która może być używana przez importerów, należy utworzyć dwie klasy domeny i utworzyć relację między nimi.
 
-     Rozważ ustawienie **modyfikatora dziedziczenia** klas domeny na `Abstract`.
+     Rozważ ustawienie **modyfikatora dziedziczenia** klas domeny na `Abstract` .
 
 3. Można dodawać elementy zdefiniowane w Eksploratorze DSL, takie jak konstruktory połączeń.
 
@@ -45,7 +45,7 @@ W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Wizualizacja i Modeling SDK możn
 
 6. Skompiluj projekt.
 
-7. W przypadku dystrybucji DSL do użytku przez inne osoby należy zapewnić zarówno skompilowany zestaw (DLL), jak i plik `DslDefinition.dsl`. Skompilowany zestaw można znaleźć w folderze `Dsl\bin\*`
+7. W przypadku dystrybucji DSL do użytku przez inne osoby należy zapewnić zarówno skompilowany zestaw (DLL), jak i plik `DslDefinition.dsl` . Skompilowany zestaw można znaleźć w folderze `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Aby zaimportować bibliotekę DSL
 

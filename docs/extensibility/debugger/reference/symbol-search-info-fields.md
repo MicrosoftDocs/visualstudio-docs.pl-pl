@@ -1,5 +1,5 @@
 ---
-title: SYMBOL_SEARCH_INFO_FIELDS | Dokumenty firmy Microsoft
+title: SYMBOL_SEARCH_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bf8a1ad8a5dabc663ef29f5f2c36fdf0fbd8b786
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713480"
 ---
 # <a name="symbol_search_info_fields"></a>SYMBOL_SEARCH_INFO_FIELDS
-Określa rodzaj informacji o symbolu do pobrania.
+Określa rodzaj informacji o symbolach do pobrania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,21 +47,21 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ## <a name="fields"></a>Pola
  `SSIF_NONE`\
- Wskazuje brak flag
+ Nie wskazuje żadnych flag
 
  `SSIF_VERBOSE_SEARCH_INFO`\
  Zwraca wszystkie ścieżki wyszukiwania używane do znajdowania symboli
 
 ## <a name="remarks"></a>Uwagi
- Flagi te są przekazywane jako parametr do [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) metody, aby określić ilość zwracanych informacji.
+ Te flagi są przesyłane jako parametr do metody [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) w celu określenia ilości zwracanych informacji.
 
 > [!NOTE]
-> Obecnie obsługiwane `SSIF_VERBOSE_SEARCH_INFO` jest tylko i musi być określony `dwFlags` jako `IDebugModule3::GetSymbolInfo`parametr do . Wszystkie inne wartości zwracają błąd.
+> Obecnie `SSIF_VERBOSE_SEARCH_INFO` obsługiwane są tylko te i należy je określić jako `dwFlags` parametr `IDebugModule3::GetSymbolInfo` . Wszystkie inne wartości zwracają błąd.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

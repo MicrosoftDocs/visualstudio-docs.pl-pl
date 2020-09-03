@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e04827dd8d8d393af8bc3448df75a7503c8eec3
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769785"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Instrukcje: podpisywanie aplikacji i manifestów wdrożenia
@@ -111,7 +111,7 @@ Domyślnie ClickOnce automatycznie generuje podpisane manifesty, chyba że co na
 
 3. Opublikuj aplikację.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zestawy o silnych nazwach](/dotnet/framework/app-domains/strong-named-assemblies)
 - [Instrukcje: Tworzenie pary kluczy publiczny-prywatny](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)

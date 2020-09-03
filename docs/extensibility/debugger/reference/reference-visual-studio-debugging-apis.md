@@ -1,5 +1,5 @@
 ---
-title: Odwołanie (interfejsy API debugowania programu Visual Studio) | Dokumenty firmy Microsoft
+title: Reference (interfejsy API debugowania Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8a85979c53d61d4b8d5a4f4b26d3ed3a1e19e952
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713637"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Dokumentacja (Interfejsy API debugowania programu Visual Studio)
 
-Odwołania do sdk debugowania programu Visual Studio przedstawiają podstawowy model architektury w czasie wykonywania i funkcje debugera i jego składników. Dokumentacja sprawia, że jak najmniej założeń, jak to możliwe o składniki i interfejsy, które opisuje, oprócz zachowania definiuje za pośrednictwem interfejsów.
+Zestaw SDK debugowania programu Visual Studio odwołuje się do podstawowego modelu dla architektury czasu wykonywania i funkcjonalności debugera oraz jego składników. Dokumentacja zawiera jak najmniejszej liczby założeń dotyczących składników i interfejsów, które opisuje, poza zachowaniem, które definiuje za pośrednictwem interfejsów.
 
-Celem sekcji referencyjnej jest zapewnienie obsługi tak zróżnicowanego zestawu języków, czasów wykonywania i systemów operacyjnych, jak to możliwe.
+Celem sekcji referencyjnej jest zapewnienie pomocy technicznej dla różnych zestawów języków, czasów wykonywania i systemów operacyjnych, jak to możliwe.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
@@ -33,7 +33,7 @@ Zawiera dokumentację interfejsów, modułów wyliczających i struktur interfej
 
 [Słownik](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)
 
-Zawiera listę terminów związanych z debugowaniem i ich definicje.
+Zawiera listę warunków związanych z debugowaniem oraz ich definicje.
 
 ## <a name="see-also"></a>Zobacz też
 

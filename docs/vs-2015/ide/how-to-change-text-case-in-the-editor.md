@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1ae92d5eea521a3f609024c3333d0567b7e52c54
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645461"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Porady: zmiana wielkości liter w Edytorze
@@ -35,11 +35,11 @@ Możesz użyć poleceń menu lub skrótów klawiaturowych do przekonwertowania w
 
 2. W menu **Edycja** wybierz pozycję **Zaawansowane**.
 
-3. Aby przekonwertować tekst na wielkie litery, wybierz pozycję **Zmień na wielkie litery**lub naciśnij klawisz **CTRL** +**SHIFT** +**U**.
+3. Aby przekonwertować tekst na wielkie litery, wybierz pozycję **Zmień na wielkie litery**lub naciśnij **klawisze CTRL** + **SHIFT** + **U**.
 
      oraz
 
-     Aby przekonwertować tekst na małe litery, wybierz opcję **Zmień na małe litery**lub naciśnij klawisz **Ctrl** +**U**.
+     Aby przekonwertować tekst na małe litery, wybierz opcję **Zmień na małe litery**lub naciśnij klawisz **Ctrl** + **U**.
 
     > [!TIP]
     > Aby przywrócić poprzedni format wielkości liter przed tą zmianą, wybierz polecenie **Cofnij** z menu **Edycja** .

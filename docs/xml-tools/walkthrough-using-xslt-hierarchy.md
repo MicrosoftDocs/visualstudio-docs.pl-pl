@@ -6,10 +6,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 940185687544b22325d3f75751eb92e950deb685
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815035"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Przewodnik: używanie hierarchii XSLT
@@ -105,10 +105,10 @@ W przykładzie w tym temacie pokazano debugowanie w arkuszu stylów, do którego
 
 4. Dodaj punkt przerwania w instrukcji `<xsl:include href="xslincludefile.xsl" />` .
 
-5. Rozpocznij debugowanie.
+5. Uruchom debugowanie.
 
 6. Gdy debuger zatrzyma się na instrukcji `<xsl:include href="xslincludefile.xsl" />` , naciśnij przycisk **Przejdź do** . Debugowanie może być kontynuowane w przywoływanym arkuszu stylów. Hierarchia jest widoczna, a Projektant wyświetla właściwą ścieżkę.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Profiler XSLT](../xml-tools/xslt-profiler.md)

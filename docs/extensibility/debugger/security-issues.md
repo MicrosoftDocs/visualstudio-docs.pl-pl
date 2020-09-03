@@ -1,5 +1,5 @@
 ---
-title: Kwestie bezpieczeństwa | Dokumenty firmy Microsoft
+title: Problemy z zabezpieczeniami | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 40898f5633eac374206ed40bfcac96d9c1c5b753
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713052"
 ---
 # <a name="security-issues"></a>Problemy z zabezpieczeniami
-Aby debugować program przy użyciu programu Visual Studio, tylko uprawnienia potrzebne są te same te same, które deweloper wymaga do uruchomienia programu. Obejmuje to zdalne debugowanie w większości sytuacji. Niektóre sytuacje związane z innymi usługami, takimi jak internetowa usługa informacyjna, mogą wymagać wyższego poziomu uprawnień.
+Aby debugować program przy użyciu programu Visual Studio, wymagane są te same uprawnienia, które są wymagane przez dewelopera do uruchamiania programu. Obejmuje to zdalne debugowanie w większości sytuacji. Niektóre sytuacje, w tym inne usługi, takie jak Internet Information Service, mogą wymagać wyższego poziomu uprawnień.
 
- Gdy program Visual Studio jest uruchomiony, menedżer debugowania procesów (PDM) śledzi procesy debugowania na komputerze lokalnym. Zdalnie program o nazwie *msvsmon.exe* jest uruchamiany przez dewelopera do obsługi zdalnego debugowania i udostępniania pdm. *(msvsmon.exe* nie jest usługą i należy uruchomić ręcznie, aby włączyć zdalne debugowanie na tym komputerze.) Gdy program Visual Studio (lub *msvsmon.exe)* nie jest uruchomiony, żadne procesy nie są śledzone do debugowania.
+ Gdy program Visual Studio jest uruchomiony, Menedżer debugowania procesów (PDM) śledzi procesy debugowania na komputerze lokalnym. Zdalnie, program o nazwie *msvsmon.exe* jest uruchamiany przez dewelopera w celu obsługi zdalnego debugowania i udostępnienia PDM. (*msvsmon.exe* nie jest usługą i należy ją uruchomić ręcznie, aby włączyć debugowanie zdalne na tym komputerze). Gdy program Visual Studio (lub *msvsmon.exe*) nie jest uruchomiony, żadne procesy nie są śledzone na potrzeby debugowania.
 
- Deweloper może debugować programy, które rozpoczęły bez specjalnych uprawnień. Deweloper może nawet debugować procesy uruchamiane przez inną osobę, jeśli ta inna osoba jest członkiem tej samej grupy zabezpieczeń. Aby włączyć zdalne debugowanie, konieczne jest tylko skopiowanie wymaganych plików na komputer zdalny i uruchomienie *pliku msvsmon.exe.* Aby uzyskać więcej informacji, zobacz [Zdalne debugowanie](../../debugger/remote-debugging.md).
+ Deweloper może debugować programy uruchamiane bez specjalnych uprawnień. Deweloper może nawet debugować procesy uruchomione przez kogoś innego, jeśli inna osoba jest członkiem tej samej grupy zabezpieczeń. Aby włączyć debugowanie zdalne, konieczne jest tylko skopiowanie wymaganych plików na maszynę zdalną i uruchomienie *msvsmon.exe*. Aby uzyskać więcej informacji, zobacz [debugowanie zdalne](../../debugger/remote-debugging.md).
 
 ## <a name="see-also"></a>Zobacz też
 - [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)

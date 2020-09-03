@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7924201f4cf58e1066434707a8453b0fe1913bc6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670720"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Porady: podpisywanie aplikacji i manifestów wdrożenia
@@ -41,7 +41,7 @@ Jeśli chcesz opublikować aplikację przy użyciu wdrożenia ClickOnce, manifes
 
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Aby podpisać aplikacje i manifesty wdrożenia za pomocą certyfikatu
 
-1. Przejdź do okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz **Właściwości**lub wpisz **właściwości projektu** w oknie **Szybkie uruchamianie** lub naciśnij klawisze ALT + ENTER wewnątrz **Eksplorator rozwiązań** okno). Na karcie **podpisywanie** wybierz pole wyboru **Podpisz manifesty ClickOnce** .
+1. Przejdź do okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz **Właściwości**lub wpisz **właściwości projektu** w oknie **Szybkie uruchamianie** lub naciśnij klawisze ALT + ENTER wewnątrz okna **Eksplorator rozwiązań** ). Na karcie **podpisywanie** wybierz pole wyboru **Podpisz manifesty ClickOnce** .
 
 2. Kliknij przycisk **Wybierz ze sklepu** .
 

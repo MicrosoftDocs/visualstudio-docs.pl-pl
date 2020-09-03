@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: adfd23cfcee69ef3242545f6d0680d7316be8156
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917689"
 ---
 # <a name="talk-to-us"></a>Porozmawiaj z nami
@@ -26,10 +26,10 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [rozmowy z 
 Jesteśmy zainteresowani pomysłami dotyczącymi ulepszania naszej dokumentacji. Nie możemy odpowiedzieć osobiście, ale będziemy mieć pewność, że Twoja opinia zostanie poprawna.
 
 ## <a name="i-likedislike-something-in-the-visual-studio-documentation"></a>Chcę/nie lubię coś w dokumentacji programu Visual Studio
- Skorzystaj z naszego przycisku opinii (**czy ta strona była pomocna?** ) w dolnej części strony. Ten przycisk można znaleźć na wszystkich stronach MSDN. Jeśli szukasz odpowiedzi i nie możesz jej znaleźć, poinformuj nas o tym, jakie informacje są szukane.
+ Skorzystaj z naszego przycisku opinii (**czy ta strona była pomocna?**) w dolnej części strony. Ten przycisk można znaleźć na wszystkich stronach MSDN. Jeśli szukasz odpowiedzi i nie możesz jej znaleźć, poinformuj nas o tym, jakie informacje są szukane.
 
 ## <a name="i-would-like-to-report-a-problem-with-visual-studio"></a>Chcę zgłosić problem z programem Visual Studio
- W przypadku problemów z używaniem programu Visual Studio, takich jak awarie, powolna wydajność, nieoczekiwane zachowanie i tak dalej, zgłoś problem do nas, klikając prawym przyciskiem myszy ikonę opinii obok pozycji **Szybkie uruchamianie**lub wybierając pozycję  **&#124; pomoc &#124; Wyślij opinię Zgłoś problem** z menu głównego. Aby uzyskać więcej informacji, zobacz [Jak zgłosić problem w programie Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).
+ W przypadku problemów z programem Visual Studio, takich jak awarie, powolna wydajność, nieoczekiwane zachowanie i tak dalej, zgłoś problem do nas, klikając prawym przyciskiem myszy ikonę opinii obok pozycji **Szybkie uruchamianie**lub wybierając pozycję **Pomoc &#124; Wyślij opinię &#124; zgłosić problem** z menu głównego. Aby uzyskać więcej informacji, zobacz [Jak zgłosić problem w programie Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Chcę uzyskać sugestię dotyczącą funkcji programu Visual Studio
  Jeśli istnieje coś, co możemy zrobić lepiej, daj nam znać! Wybierz pozycję **Podaj sugestię** , aby zasugerować funkcję lub zmienić zespół programu Visual Studio.

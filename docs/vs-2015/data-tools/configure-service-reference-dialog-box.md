@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac8f4cf619bbdd007bb7aa570f549ae3c0b50e86
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651115"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Konfigurowanie odwołania do usługi — Okno dialogowe
@@ -44,7 +44,7 @@ Okno dialogowe **Konfigurowanie odwołania do usługi** umożliwia skonfigurowan
 
 - Aby określić typy kolekcji list lub słowników dla klienta WCF, wybierz typy z listy **Typ kolekcji** i **Typ kolekcji słownika** .
 
-- Aby wyłączyć udostępnianie typów, wyczyść pole wyboru **Użyj ponownie typów w przywoływanych zestawach** . Aby włączyć udostępnianie typu dla podzbioru zestawów, do których się odwołuje, zaznacz pole wyboru **Użyj ponownie typów w przywoływanych zestawach** , wybierz pozycję **Użyj ponownie typów w określonych przywoływanych zestawach**i wybierz odpowiednie odwołania w **odwołaniach Lista zestawów**.
+- Aby wyłączyć udostępnianie typów, wyczyść pole wyboru **Użyj ponownie typów w przywoływanych zestawach** . Aby włączyć udostępnianie typu dla podzbioru przywoływanych zestawów, zaznacz pole wyboru **Użyj ponownie typów w przywoływanych zestawach** , wybierz pozycję **Użyj ponownie typów w określonych przywoływanych zestawach**i wybierz odpowiednie odwołania na **liście przywoływanych zestawów**.
 
 ## <a name="uielement-list"></a>Lista elementów UI
  **Adres** Służy do aktualizowania adresu sieci Web, w którym odwołanie do usługi poszukuje usługi. Na przykład podczas programowania usługa może być hostowana na serwerze deweloperskim później przeniesiona na serwer produkcyjny, co wymaga zmiany adresu.
@@ -63,13 +63,13 @@ Okno dialogowe **Konfigurowanie odwołania do usługi** umożliwia skonfigurowan
 
  **Zawsze Generuj kontrakty komunikatów** Określa, czy typy kontraktów komunikatów będą generowane dla klienta WCF. Aby uzyskać więcej informacji na temat umów dotyczących komunikatów, zobacz [Używanie kontraktów komunikatów](https://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249).
 
- **Typ kolekcji** Określa typ kolekcji listy dla klienta WCF. Domyślny typ to <xref:System.Array>.
+ **Typ kolekcji** Określa typ kolekcji listy dla klienta WCF. Domyślnym typem jest <xref:System.Array> .
 
- **Typ kolekcji słownika** Określa typ kolekcji słownika dla klienta WCF. Domyślny typ to <xref:System.Collections.Generic.Dictionary%602>.
+ **Typ kolekcji słownika** Określa typ kolekcji słownika dla klienta WCF. Domyślnym typem jest <xref:System.Collections.Generic.Dictionary%602> .
 
  **Ponowne używanie typów w przywoływanych zestawach** Określa, czy klient programu WCF podejmie próbę ponownego użycia, który już istnieje w przywoływanych zestawach zamiast generować nowe typy w przypadku dodania lub zaktualizowania usługi. Domyślnie ta opcja jest zaznaczona.
 
- **Użyj ponownie typów we wszystkich przywoływanych zestawach** Po wybraniu wszystkie typy na **liście przywoływanych zestawów** będą ponownie używane, jeśli jest to możliwe. Domyślnie ta opcja jest zaznaczona.
+ **Użyj ponownie typów we wszystkich przywoływanych zestawach** Po wybraniu wszystkie typy na **liście przywoływanych zestawów** będą ponownie używane, jeśli jest to możliwe. Ta opcja jest wybrana domyślnie.
 
  **Użyj ponownie typów w określonych przywoływanych zestawach** Po wybraniu zostaną ponownie użyte tylko wybrane typy z **listy przywoływanych zestawów** .
 
@@ -78,7 +78,7 @@ Okno dialogowe **Konfigurowanie odwołania do usługi** umożliwia skonfigurowan
  **Dodaj odwołanie sieci Web** Wyświetla okno [dialogowe NIB: Dodaj odwołanie sieci Web](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).
 
 > [!NOTE]
-> Tej opcji należy używać tylko w przypadku projektów przeznaczonych dla [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] w wersji 2,0.
+> Ta opcja powinna być używana tylko w przypadku projektów przeznaczonych dla programu w wersji 2,0 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .
 
 > [!NOTE]
 > Przycisk **Dodaj odwołanie sieci Web** jest dostępny tylko wtedy, gdy w oknie **dialogowym Dodaj odwołanie do usługi**zostanie wyświetlone okno dialogowe **Konfigurowanie odwołania do usługi** .

@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ca69e9d3a20bff5d5f22548448d404a7d042f449
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815373"
 ---
 # <a name="expected-"></a>Oczekiwano znaku „{"
@@ -28,5 +28,5 @@ Nie dołączymy lewego nawiasu klamrowego, który oznacza początek treści funk
   
 - Dodaj lewy nawias klamrowy, który oznacza początek treści funkcji.  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Obiekt Function](../../javascript/reference/function-object-javascript.md)

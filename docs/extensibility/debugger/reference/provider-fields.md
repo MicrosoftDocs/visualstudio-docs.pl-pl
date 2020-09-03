@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FIELDS | Dokumenty firmy Microsoft
+title: PROVIDER_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 37f64b455ab0331f9b8f08da1f29a3e2c1b82fdf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713787"
 ---
 # <a name="provider_fields"></a>PROVIDER_FIELDS
@@ -44,20 +44,20 @@ public enum enum_PROVIDER_FIELDS {
 
 ## <a name="fields"></a>Pola
  `PFIELD_PROGRAM_NODES`\
- To `ProgramNodes` pole jest prawidłowe.
+ `ProgramNodes`Pole jest prawidłowe.
 
  `PFIELD_IS_DEBUGGER_PRESENT`\
- To `fIsDebuggerPresent` pole jest prawidłowe.
+ `fIsDebuggerPresent`Pole jest prawidłowe.
 
 ## <a name="remarks"></a>Uwagi
- Wartości te są `Fields` zwracane w człońnym [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) strukturze, aby wskazać, które pola struktury zostały jawnie wypełnione.
+ Te wartości są zwracane w `Fields` składowej struktury [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) , aby wskazać, które pola struktury zostały jawnie wypełnione.
 
- Wartości te można łączyć `OR`z bitowym .
+ Te wartości mogą być połączone z bitową `OR` .
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

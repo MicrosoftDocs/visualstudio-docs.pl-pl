@@ -23,10 +23,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 5b26b8cd9d955309e3be0e17e975bfdeb242e475
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621406"
 ---
 # <a name="upgrade-mdf-files"></a>Uaktualnianie plików mdf
@@ -74,21 +74,21 @@ W tym temacie opisano opcje uaktualniania pliku bazy danych (. mdf) po zainstalo
 
    - **Nazwa serwera**:
 
-       - Aby użyć domyślnej wersji: `(localdb)\MSSQLLocalDB`.  Spowoduje to określenie opcji ProjectV12 lub ProjectV13, w zależności od zainstalowanej wersji programu Visual Studio i utworzenia pierwszego wystąpienia LocalDB. Węzeł **MSSQLLocalDB** w **Eksplorator obiektów SQL Server** wskazuje, która wersja wskazuje.
+       - Aby użyć domyślnej wersji: `(localdb)\MSSQLLocalDB` .  Spowoduje to określenie opcji ProjectV12 lub ProjectV13, w zależności od zainstalowanej wersji programu Visual Studio i utworzenia pierwszego wystąpienia LocalDB. Węzeł **MSSQLLocalDB** w **Eksplorator obiektów SQL Server** wskazuje, która wersja wskazuje.
 
-       - Aby użyć określonej wersji: `(localdb)\ProjectsV12` lub `(localdb)\ProjectsV13`, gdzie V12 jest LocalDB 2014, a V13 to LocalDB 2016.
+       - Aby użyć określonej wersji: `(localdb)\ProjectsV12` lub `(localdb)\ProjectsV13` , gdzie V12 jest LocalDB 2014, a V13 to LocalDB 2016.
 
    - **Dołączanie pliku bazy danych**: Ścieżka fizyczna podstawowego pliku. mdf.
 
    - **Nazwa logiczna**: nazwa, która ma być używana z plikiem.
 
-3. Wybierz przycisk **OK** .
+3. Wybierz przycisk **OK**.
 
 4. Po wyświetleniu monitu wybierz przycisk **tak** , aby uaktualnić plik.
 
    Baza danych zostanie uaktualniona, jest dołączona do aparatu bazy danych LocalDB i nie jest już zgodna ze starszą wersją programu LocalDB.
 
-   Możesz również zmodyfikować połączenie SQL Server Express, aby użyć LocalDB, otwierając menu skrótów dla połączenia, a następnie wybierając pozycję **Modyfikuj połączenie**. W oknie dialogowym **modyfikowanie połączenia** Zmień wartość w polu Nazwa serwera na `(LocalDB)\MSSQLLocalDB`. W oknie dialogowym **Właściwości zaawansowane** upewnij się, że **wystąpienie użytkownika** ma wartość **Fałsz**.
+   Możesz również zmodyfikować połączenie SQL Server Express, aby użyć LocalDB, otwierając menu skrótów dla połączenia, a następnie wybierając pozycję **Modyfikuj połączenie**. W oknie dialogowym **modyfikowanie połączenia** Zmień wartość w polu Nazwa serwera na `(LocalDB)\MSSQLLocalDB` . W oknie dialogowym **Właściwości zaawansowane** upewnij się, że **wystąpienie użytkownika** ma wartość **Fałsz**.
 
 ### <a name="to-upgrade-to-a-newer-version-of-sql-server-express"></a>Aby uaktualnić do nowszej wersji SQL Server Express
 
@@ -110,12 +110,12 @@ W tym temacie opisano opcje uaktualniania pliku bazy danych (. mdf) po zainstalo
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Aby SQL Server Express domyślnego aparatu bazy danych
 
-1. Na pasku menu wybierz pozycję **narzędzia**  > **Opcje**.
+1. Na pasku menu wybierz pozycję **Narzędzia**  >  **Opcje**.
 
 2. W oknie dialogowym **Opcje** Rozwiń opcje **Narzędzia danych** , a następnie wybierz węzeł **połączenia danych** .
 
-3. W polu tekstowym **Nazwa wystąpienia SQL Server** Określ nazwę wystąpienia SQL Server Express lub LocalDB, którego chcesz użyć. Jeśli wystąpienie nie ma nazwy, określ `.\SQLEXPRESS or (localdb)\MSSQLLocalDB`.
+3. W polu tekstowym **Nazwa wystąpienia SQL Server** Określ nazwę wystąpienia SQL Server Express lub LocalDB, którego chcesz użyć. Jeśli wystąpienie nie ma nazwy, określ `.\SQLEXPRESS or (localdb)\MSSQLLocalDB` .
 
-4. Wybierz przycisk **OK** .
+4. Wybierz przycisk **OK**.
 
    SQL Server Express będzie domyślnym aparatem bazy danych aplikacji.

@@ -1,5 +1,5 @@
 ---
-title: Rejestrowanie niestandardowego aparatu debugowania | Dokumenty firmy Microsoft
+title: Rejestrowanie niestandardowego aparatu debugowania | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,28 +11,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fe6fb916810bc8a7e960a4723a6a7c7a6f0c1410
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713221"
 ---
 # <a name="register-a-custom-debug-engine"></a>Rejestrowanie niestandardowego aparatu debugowania
-Aparat debugowania musi zarejestrować się jako fabryka klas, zgodnie z konwencjami COM, a także zarejestrować się w programie Visual Studio za pośrednictwem podklucza rejestru programu Visual Studio.
+Aparat debugowania musi się zarejestrować jako fabryka klas, w ramach Konwencji COM, a także zarejestrować się w programie Visual Studio za pomocą podklucza rejestru programu Visual Studio.
 
 > [!NOTE]
-> Przykład sposobu rejestrowania aparatu debugowania można znaleźć w przykładzie TextInterpreter, który jest zbudowany w ramach [samouczka: Tworzenie aparatu debugowania przy użyciu ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).
+> Przykład sposobu rejestracji aparatu debugowania można znaleźć w przykładzie textinterpretera, który jest zbudowany jako część [samouczka: kompilowanie aparatu debugowania przy użyciu biblioteki ATL com](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).
 
 ## <a name="dll-server-process"></a>Proces serwera DLL
- Aparat debugowania jest zazwyczaj łączona we własnej biblioteki DLL jako serwer COM. W związku z tym aparat debugowania musi zarejestrować CLSID swojej fabryki klasy z COM przed Visual Studio może uzyskać do niego dostęp. Następnie aparat debugowania musi zarejestrować się w programie Visual Studio, aby ustanowić wszelkie właściwości (inaczej znane jako metryki) obsługuje aparat debugowania. Wybór metryk zapisanych w podkluczu rejestru programu Visual Studio zależy od funkcji, które obsługuje aparat debugowania.
+ Aparat debugowania jest zazwyczaj ustawiany we własnej bibliotece DLL jako serwer COM. W związku z tym aparat debugowania musi zarejestrować identyfikator CLSID fabryki klas z modelem COM, aby program Visual Studio mógł uzyskać do niego dostęp. Następnie aparat debugowania musi zarejestrować się przy użyciu programu Visual Studio, aby ustalić wszystkie właściwości (nazywane również metrykami) obsługiwane przez aparat debugowania. Wybór metryk Zapisano do podklucza rejestru programu Visual Studio zależy od funkcji obsługiwanych przez aparat debugowania.
 
- [Pomocników SDK do debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) opisuje nie tylko lokalizacje rejestru niezbędne do zarejestrowania aparatu debugowania; Opisano również *dbgmetric.lib* biblioteki, która zawiera szereg przydatnych funkcji i deklaracji dla deweloperów języka C++, które ułatwiają manipulowanie rejestru.
+ [Narzędzia zestawu SDK do debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) opisują nie tylko lokalizacje rejestru niezbędne do zarejestrowania aparatu debugowania. opisano w nim również bibliotekę *dbgmetric. lib* , która zawiera wiele przydatnych funkcji i deklaracji dla deweloperów języka C++, które ułatwiają manipulowanie rejestrem.
 
 ### <a name="example"></a>Przykład
- Poniższy przykład (z textinterpreter przykład) pokazuje, jak używać `SetMetric` funkcji (z *dbgmetric.lib*), aby zarejestrować aparat debugowania w programie Visual Studio. Przekazywane metryki są również definiowane w *pliku dbgmetric.lib*.
+ Poniższy przykład (z przykładu TextInterpreter) pokazuje, jak używać `SetMetric` funkcji (z *dbgmetric. lib*), aby zarejestrować aparat debugowania w programie Visual Studio. Przesyłane metryki są również zdefiniowane w *dbgmetric. lib*.
 
 > [!NOTE]
-> TextInterpreter jest podstawowym aparatem debugowania; nie jest skonfigurowany i dlatego nie rejestruje żadnych innych funkcji. Bardziej kompletny aparat debugowania będzie `SetMetric` miał całą listę wywołań lub ich odpowiednik, po jednym dla każdej funkcji obsługują aparat debugowania.
+> TextInterpreter to podstawowy aparat debugowania; nie jest on skonfigurowany i w związku z tym nie jest rejestrowany — wszystkie inne funkcje. Bardziej kompletny aparat debugowania będzie miał pełną listę `SetMetric` wywołań lub ich odpowiedniki, po jednym dla każdej funkcji obsługiwanej przez aparat debugowania.
 
 ```
 // Define base registry subkey to Visual Studio.
@@ -50,5 +50,5 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 
 ## <a name="see-also"></a>Zobacz też
 - [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)
-- [Pomocnicy SDK do debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
-- [Samouczek: Tworzenie aparatu debugowania przy użyciu ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+- [Pomocnicy zestawu SDK na potrzeby debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+- [Samouczek: kompilowanie aparatu debugowania przy użyciu biblioteki ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)

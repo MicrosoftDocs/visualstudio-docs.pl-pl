@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fa6d97b5087659b9fc8120d9480a241517ca8ec
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770991"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Instrukcje: kopiowanie elementów diagramu klas do dokumentu Microsoft Office
@@ -40,7 +40,7 @@ Kliknij prawym przyciskiem myszy kształt i wybierz polecenie **Kopiuj obraz**.
 
 Możesz również wybrać opcję **Kopiuj** zamiast **obrazu Kopiuj**. **Kopiuj** kopiuje obraz jako zwykłą mapę bitową. **Kopiuj obraz** kopiuje obraz jako obraz oparty na wektorach, co jest lepszym rozwiązaniem w przypadku większości aplikacji pakietu Office.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Drukowanie diagramów klas](how-to-print-class-diagrams.md)
 - [Instrukcje: eksportowanie diagramów klas jako obrazów](how-to-export-class-diagrams-as-images.md)

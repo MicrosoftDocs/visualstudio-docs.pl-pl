@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 26beadbe6963a685f10aef1db7bd8779434927d2
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419279"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Samouczek: tworzenie prostej aplikacji za pomocą języka C\#
@@ -138,7 +138,7 @@ Dodamy do tej aplikacji trzy typy kontrolek: <xref:System.Windows.Controls.TextB
 
 ### <a name="customize-the-text-in-the-text-block"></a>Dostosowywanie tekstu w bloku tekstu
 
-1. W widoku XAML Znajdź znaczniki **TextBlock** i Zmień atrybut **tekstu** z `TextBox` na`Select a message option and then choose the Display button.`
+1. W widoku XAML Znajdź znaczniki **TextBlock** i Zmień atrybut **tekstu** z `TextBox` na `Select a message option and then choose the Display button.`
 
    Znacznik XAML powinien wyglądać podobnie do następującego przykładu:
 
@@ -296,9 +296,9 @@ Teraz Zamknij okno aplikacji, aby zatrzymać debugowanie.
 
 Możesz przetestować kod podczas debugowania przez dodanie niektórych punktów przerwania. Możesz dodać punkty przerwania, wybierając pozycję **Debuguj**  >  **punkt przerwania**, klikając na lewym marginesie edytora obok wiersza kodu, w którym ma nastąpić przerwanie lub naciskając klawisz **F9**.
 
-#### <a name="add-breakpoints"></a>Dodaj punkty przerwania
+#### <a name="add-breakpoints"></a>Dodawanie punktów przerwania
 
-1. Otwórz *Greetings.XAML.cs*i wybierz następujący wiersz:`MessageBox.Show("Hello.")`
+1. Otwórz *Greetings.XAML.cs*i wybierz następujący wiersz: `MessageBox.Show("Hello.")`
 
 1. Dodaj punkt przerwania z menu, wybierając **Debuguj**, a następnie **Przełącz punkt przerwania**.
 

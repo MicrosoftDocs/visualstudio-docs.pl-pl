@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 author: TerryGLee
 ms.openlocfilehash: 77fb43671a45d5d53d2fe23fa3e4e7a9a98c4373
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815503"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Instrukcje: Dodawanie komentarzy do przepływu pracy w Projektancie przepływu pracy
@@ -28,7 +28,7 @@ Aby ułatwić tworzenie większych, bardziej skomplikowanych przepływów pracy,
 
 - <xref:System.Activities.Statements.Transition>
 
-- Klasy pochodne<xref:System.Activities.Statements.FlowNode>
+- Klasy pochodne <xref:System.Activities.Statements.FlowNode>
 
 - <xref:System.Activities.Variable>
 

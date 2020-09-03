@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 209a8793c0940511b7ecb2abb32f537a614ebf8b
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814827"
 ---
 # <a name="expected-"></a>Oczekiwano znaku " \@ "
@@ -26,13 +26,13 @@ Podjęto próbę utworzenia zmiennej, która będzie używana z instrukcją komp
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Dodaj znak " **@** " bezpośrednio przed nazwą zmiennej. Przykład:  
+- Dodaj znak " **@** " bezpośrednio przed nazwą zmiennej. Na przykład:  
   
     ```JavaScript  
     @set @myvar = 1  
     ```  
   
-## <a name="see-also"></a>Zobacz także  
- [@setMerge](../../javascript/reference/at-set-statement-javascript.md)   
+## <a name="see-also"></a>Zobacz też  
+ [@set Merge](../../javascript/reference/at-set-statement-javascript.md)   
  [Kompilacja warunkowa](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Zmienne kompilacji warunkowej](../../javascript/advanced/conditional-compilation-variables-javascript.md)

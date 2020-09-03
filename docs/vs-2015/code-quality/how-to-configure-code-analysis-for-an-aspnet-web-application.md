@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 423264362118343d573b417cd055d2d722df995e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657461"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Porady: konfigurowanie analizy kodu dla aplikacji internetowej ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] i [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] możesz wybrać z listy *zestawów reguł* analizy kodu, które mają być stosowane do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web. Domyślnym zestawem reguł są reguły zalecane przez firmę Microsoft Mininimum. Możesz wybrać inny zestaw reguł, który ma zostać zastosowany do witryny sieci Web.
+W programie [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] i można [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] wybrać opcję z listy *zestawów reguł* analizy kodu, które mają być stosowane do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web. Domyślnym zestawem reguł są reguły zalecane przez firmę Microsoft Mininimum. Możesz wybrać inny zestaw reguł, który ma zostać zastosowany do witryny sieci Web.
 
 ### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>Aby skonfigurować zestaw reguł dla projektu struktury strony ASP.NET
 
@@ -43,6 +43,6 @@ W [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] i [!INCLUDE[vsUltShort](.
 
     - Wybierz zestaw reguł, którego chcesz użyć.
 
-    - Wybierz pozycję **\<Browse >** , aby określić istniejący niestandardowy zestaw reguł, którego nie ma na liście.
+    - Wybierz **\<Browse>** , aby określić istniejący niestandardowy zestaw reguł, którego nie ma na liście.
 
     - Zdefiniuj niestandardowy zestaw reguł. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych zestawów reguł](../code-quality/creating-custom-code-analysis-rule-sets.md).

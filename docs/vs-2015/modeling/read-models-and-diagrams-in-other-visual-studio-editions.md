@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a6a7c944eb3d5378ad0fc1542b90ad182f7eb976
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671278"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio
@@ -38,7 +38,7 @@ Po otwarciu modelu w wersji programu Visual Studio, która nie obsługuje tworze
 - Dwa pliki diagramu dla diagramu, który ma zostać odczytany, na przykład, **Webdiagrams. classdiagram i webdiagram. classdiagram. layout**.
 
     > [!NOTE]
-    > W przypadku diagramów warstwowych powinien istnieć również plik o nazwie Moje _Diagram_ **. layerdiagram. pominięcia**.
+    > W przypadku diagramów warstwowych powinien istnieć również plik o nazwie Moje _Diagram_**. layerdiagram. pominięcia**.
 
 - Plik projektu modelowania (**WebMode. modelproj**)
 
@@ -55,16 +55,16 @@ Po otwarciu modelu w wersji programu Visual Studio, która nie obsługuje tworze
 
   Można zapisać te zmiany. Jeśli chcesz, aby zmiany były widoczne dla innych użytkowników, musisz mieć co najmniej wysłanie zaktualizowanych plików **układu** .
 
-## <a name="RelatedTopics"></a>Tematy pokrewne
+## <a name="related-topics"></a><a name="RelatedTopics"></a> Tematy pokrewne
 
 |Tytuł|Opis|
 |-----------|-----------------|
 |[Diagramy warstw: informacje](../modeling/layer-diagrams-reference.md)|Diagram warstwowy pokazuje strukturę istniejącej lub proponowanej architektury. Po zapisaniu kodu można automatycznie sprawdzić jego poprawność na diagramie warstwowym.|
 |[Diagramy aktywności UML: informacje](../modeling/uml-activity-diagrams-reference.md)|Diagram aktywności pokazuje przepływ pracy w procesie biznesowym lub w oprogramowaniu.|
-|[Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)|Diagram klas zawiera typy i relacje używane w wielu kontekstach, takich jak kod, schematy bazy danych, Protokoły komunikacyjne lub słownik terminów używanych do opisywania domeny biznesowej.|
+|[Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)|Diagram klas zawiera typy i relacje używane w wielu kontekstach, takich jak kod, schematy bazy danych, Protokoły komunikacyjne lub słownik terminów używanych do opisywania domeny biznesowej.|
 |[Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)|Diagram składnika pokazuje wyodrębnione części w projekcie oprogramowania i ich interfejsy.|
 |[Diagramy sekwencji UML: informacje](../modeling/uml-sequence-diagrams-reference.md)|Diagram sekwencji pokazuje interakcje między elementami w projekcie oprogramowania.|
-|[Diagramy przypadków użycia UML: informacje](../modeling/uml-use-case-diagrams-reference.md)|Diagram przypadków użycia pokazuje użytkowników systemu i działań, które mogą wykonać w celu osiągnięcia określonych celów.|
+|[Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)|Diagram przypadków użycia pokazuje użytkowników systemu i działań, które mogą wykonać w celu osiągnięcia określonych celów.|
 
 ## <a name="see-also"></a>Zobacz też
  [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)
