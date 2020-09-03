@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565815"
 ---
-# <a name="open-project-command"></a>Otwórz projekt, polecenie
+# <a name="open-project-command"></a>Otwórz projekt — polecenie
 
 Otwiera istniejący projekt lub rozwiązanie.
 
@@ -39,17 +39,17 @@ File.OpenProject filename
 Wymagany. Pełna ścieżka i nazwa pliku projektu lub rozwiązania do otwarcia.
 
 > [!NOTE]
-> Składnia argumentu `filename` wymaga, aby ścieżki zawierające spacje używały cudzysłowów.
+> Składnia `filename` argumentu wymaga, aby ścieżki zawierające spacje używały znaków cudzysłowu.
 
 ## <a name="remarks"></a>Uwagi
 
-Automatyczne uzupełnianie próbuje zlokalizować prawidłową ścieżkę i nazwę pliku podczas pisania.
+Funkcja automatycznego uzupełniania próbuje zlokalizować poprawną ścieżkę i nazwę pliku podczas wpisywania.
 
-To polecenie nie jest dostępne podczas debugowania.
+To polecenie jest niedostępne podczas debugowania.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład otwiera test projektu języka Visual **Basic1:**
+W poniższym przykładzie zostanie otwarty Visual Basic projektu **Test1**:
 
 ```cmd
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"
@@ -57,7 +57,7 @@ Poniższy przykład otwiera test projektu języka Visual **Basic1:**
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Polecenia programu Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)
-- [Pole Znajdź/Polecenie](../../ide/find-command-box.md)
+- [Znajdź/pole polecenia](../../ide/find-command-box.md)
 - [Aliasy poleceń programu Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

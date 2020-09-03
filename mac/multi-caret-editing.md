@@ -1,46 +1,46 @@
 ---
 title: Edycja przy użyciu wielokaretki
-description: Wstaw tekst w wielu lokalizacjach podczas edytowania kodu w programie Visual Studio dla komputerów Mac.
+description: Wstaw tekst w wielu lokalizacjach podczas edytowania kodu w Visual Studio dla komputerów Mac.
 author: cobey
 ms.author: cobey
 ms.date: 08/19/2019
 ms.openlocfilehash: a21bebda057a772017fa1481e18f9801d1fbcbdf
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75451448"
 ---
 # <a name="multi-caret-editing"></a>Edycja przy użyciu wielokaretki
 
-Edycja wielodyszowa umożliwia dodawanie _n_ liczby punktów wstawiania w jednym czasie. W trybie wielodyszowym można dodać dodatkowe daszki do dokumentu za pomocą kliknięć myszą lub za pomocą poleceń klawiaturowych. Główną opiekę nadają czerwony kursor, podczas gdy pomocnicze opiekunki są obecne w kolorze jasnoniebieskim. Tryb edycji wielu dań można `ESC` wyłączyć za pomocą klawisza.
+Edycja z obsługą wielu karetki pozwala na jednorazowe dodanie _n_ numerów punktów wstawiania. W trybie wielodostępnym można dodawać kolejne karetke do dokumentu za pośrednictwem kliknięć myszą lub za pomocą poleceń klawiatury. Pierwszy karetka jest wskazywany przez czerwony kursor, podczas gdy pomocnicze karetke obecne w kolorze jasnoniebieskim. Tryb edycji z obsługą wiele karetki można wyłączyć za pomocą `ESC` klucza.
 
-## <a name="enabling-multi-caret-editing"></a>Włączanie edycji wielodyskowej
+## <a name="enabling-multi-caret-editing"></a>Włączanie edycji z zastosowaniem wielokaretki
 
 ### <a name="keyboard"></a>Klawiatura
 
-Możesz włączyć tryb wielodyszowy za pomocą klawiatury na kilka sposobów. Poniższa tabela zawiera skróty klawiaturowe dostępne do wprowadzania określonych trybów edycji wielodyscypowy:
+Możesz włączyć tryb wielu karetki za pośrednictwem klawiatury na kilka sposobów. Poniższa tabela zawiera skróty klawiaturowe dostępne do wprowadzania określonych trybów edycji wielokaretki:
 
-| Hotkey  | Akcja                        | 
+| Sekwencj  | Akcja                        | 
 |---------| ------------------------------|
-|  ⌥⇧.   | Wstawianie następnej pasującej cieczy    | 
-|  ⌥⇧;   | Wstaw cieszczki w każdym pasującym | 
-|  ⌥⇧,   | Usuń ostatnią ciecz             | 
-|  ⌥⇧/   | Przenieś ostatnią szedę w dół          | 
+|  ⌥⇧.   | Wstaw następny pasujący karetkę    | 
+|  ⌥⇧;   | Wstaw karetkę we wszystkich dopasowaniach | 
+|  ⌥⇧,   | Usuń ostatni karetkę             | 
+|  ⌥⇧/   | Przesuń ostatni karetkę w dół          | 
 
-Każde z tych zachowań są zakotwiczone w bieżącej pozycji daszka podczas wywoływania polecenia. Na przykład, jeśli daszek znajduje się na początku słowa "name" i wywołasz "Wstaw cieptki przy wszystkich pasujących" (;) każde wystąpienie słowa "nazwa" w bieżącym dokumencie będzie miało cieszkę wstawioną na początku wyrazu. Podobnie, jeśli wywołasz polecenie "Wstaw następny pasująca dacie" (♡♡) wówczas w następnym wystąpieniu wyrazu "name". To polecenie można wywołać wiele razy.
+Każdy z tych zachowań jest zakotwiczony do bieżącej pozycji karetki, gdy wywołasz polecenie. Na przykład, jeśli karetka znajduje się na początku słowa "name" i wywołujesz polecenie "Wstaw karetke we wszystkich dopasowaniach" (⌥ ⇧;) Każde wystąpienie słowa "name" w bieżącym dokumencie będzie miało karetkę wstawioną na początku wyrazu. Podobnie, jeśli wywołasz polecenie "Wstaw następny pasujący karetkę" (⌥ ⇧), karetka zostanie umieszczona w następnym wystąpieniu słowa "name" (nazwa). To polecenie można wywołać wiele razy.
 
-![klawiatura wielodrogowa](media/multi-caret-keyboard.gif)
+![Klawiatura z wielokaretką](media/multi-caret-keyboard.gif)
 
 ## <a name="mousetouchpad"></a>Mysz/płytka dotykowa
 
-Za pomocą kursora możesz uwolnić wybrane określone punkty wstawiania dla wielu pielęjców. Gdy skróty klawiaturowe są powiązane z pasującymi ciągami, można ręcznie wstawić daszkownika w dowolnym miejscu dokumentu za pomocą kursora. Po ustawieniu daszków każdy będzie powtarzał wpisy klawiszy wpisy na klawiaturze.
+Za pomocą kursora można bezpłatnie wybierać punkty wstawiania dla wielu karetki. Chociaż skróty klawiaturowe są powiązane z pasującymi ciągami, można ręcznie wstawić karetkę w dowolnym miejscu w dokumencie za pomocą kursora. Po ustawieniu karetki, każda z nich będzie echo wpisów kluczy wpisywanych na klawiaturze.
 
-Aby użyć myszy do wstawienia wielu daszków, należy nacisnąć i przytrzymać i kliknąć miejsce, w którym chcesz wprowadzić daszki. Będziesz w trybie wstawiania tak długo, jak długo przechowywane są klawisze. Jeśli wstawisz karetkę w niewłaściwym miejscu, możesz usunąć karetkę, kontynuując przytrzymanie i ponowne kliknięcie w tym samym obszarze. Po tym, jak wszystkie daszki znajdują się tam, gdzie chcesz, przestań naciskać klawisze i zacznij pisać. Poniższy GIF pokazuje zarówno wybór zestawu punktów wstawiania, jak i usunięcie błędnie nastaw.
+Aby użyć myszy do wstawienia wielu karetki, musisz nacisnąć i trzymać ⌘ ⌥ i kliknąć miejsce, w którym chcesz wprowadzić karetkę. Będziesz w trybie wstawiania, dopóki klucze ⌥ ⌘ są przechowywane. Jeśli wstawisz karetkę do nieprawidłowej lokalizacji, możesz usunąć karetkę, kontynuując ⌘ ⌥ i klikając w tym samym obszarze ponownie. Gdy wszystkie karetke znajdują się w tym miejscu, Zatrzymaj naciskanie klawiszy ⌘ ⌥ i zacznij pisać. Poniższy GIF ilustruje zarówno wybranie zestawu punktów wstawiania, jak i usunięcie błędnie ustawionych punktów.
 
-![mysz wielodyszowa](media/multi-caret-mouse.gif)
+![mysz wielokaretka](media/multi-caret-mouse.gif)
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Szybkie akcje (Visual Studio w systemie Windows)](/visualstudio/ide/quick-actions)
-- [Kod refaktoryzatora (Visual Studio w systemie Windows)](/visualstudio/ide/refactoring-in-visual-studio)
+- [Kod refaktoryzacji (Visual Studio w systemie Windows)](/visualstudio/ide/refactoring-in-visual-studio)

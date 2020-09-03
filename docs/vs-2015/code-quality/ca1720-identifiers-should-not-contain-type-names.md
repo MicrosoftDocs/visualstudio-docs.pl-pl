@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f6d228b0fbf5507ba135f9ddc35d6d8b161f0011
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534852"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Identyfikatory nie powinny zawierać nazw typów
@@ -60,7 +60,7 @@ ms.locfileid: "85534852"
 
 - UInt
 
-- Integer
+- Liczba całkowita
 
 - UInteger —
 
@@ -84,7 +84,7 @@ ms.locfileid: "85534852"
 
 - Obiektów
 
-- Boolean
+- Wartość logiczna
 
 - Char
 
@@ -120,11 +120,11 @@ ms.locfileid: "85534852"
 
 - UPointer
 
-- Pojedyncze
+- Pojedynczy
 
 - Double
 
-- Wartość dziesiętna
+- Liczba dziesiętna
 
 - Guid (identyfikator GUID)
 

@@ -1,5 +1,5 @@
 ---
-title: SetThreadCount | Dokumenty firmy Microsoft
+title: SetThreadCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 apiname:
@@ -16,15 +16,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 102f46ec639719bb2bec70a38c6c7177c63793c1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632332"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 
-Ustawia globalną liczbę wątków i przypisuje tę liczbę do bieżącego wątku.
+Ustawia liczbę wątków globalnych i przypisuje liczbę do bieżącego wątku.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,14 +34,14 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 
 #### <a name="parameters"></a>Parametry
 
-[w]`threadCount`
+podczas `threadCount`
 
- Liczba wątków do użycia.
+ Liczba wątków, które mają być używane.
 
 ## <a name="return-value"></a>Wartość zwracana
 
- **HRESULT** z **bitem SUCCEEDED** ustawiony, jeśli liczba wątków została zaktualizowana.
+ **Wynik HRESULT** z ustawionym **bitem** bitu, jeśli licznik wątków został zaktualizowany.
 
 ## <a name="requirements"></a>Wymagania
 
- **Nagłówek:** *FileTracker.h*
+ **Nagłówek:** *FileTracker. h*

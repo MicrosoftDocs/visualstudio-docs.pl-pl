@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 995a286140464e58635bc485478bb570871f5e09
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816790"
 ---
 # <a name="operator-summary-javascript"></a>Podsumowanie dla operatorów (JavaScript)
@@ -26,12 +26,12 @@ W poniższych tabelach przedstawiono [!INCLUDE[javascript](../../javascript/incl
   
 |Operator|Symbol|  
 |--------------|------------|  
-|[Znak dodawania](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
+|[Dodawanie](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Dekrementacji](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[Dział](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
 |[Przyrost](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
 |[Reszta](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
-|[Znak mnożenia](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
+|[Mnożenie](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[Odejmowanie](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[negacja jednoargumentowa](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
   

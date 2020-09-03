@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetRank | Dokumentacja firmy Microsoft
+title: 'IDebugArrayField:: getranga | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5d0396718482c9ce90527155a3612160612f66d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198730"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera ranga lub liczba wymiarów tablicy.  
+Pobiera rangę lub liczbę wymiarów tablicy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,13 +40,13 @@ int GetRank(
   
 #### <a name="parameters"></a>Parametry  
  `pdwRank`  
- [out] Zwraca rangę.  
+ określoną Zwraca rangę.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ranga tablicy odpowiada liczbę wymiarów. W języku C++ i C# są naprawdę tablice tablic wielowymiarowych tablic, a w związku z tym można uznać za Jednowymiarowa tablica (i `GetRank` metoda zawsze zwraca 1). W [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)], z drugiej strony, wielowymiarowe tablice są obsługiwane inaczej i rangę tablicy takich odzwierciedla liczbę wymiarów (i `GetRank` metoda zawsze zwraca liczbę wymiarów).  
+ Ranga tablicy odpowiada liczbie wymiarów. W językach C++ i C# tablice wielowymiarowe są naprawdę tablicami tablic i dlatego można je traktować tylko jako tablicę jednowymiarową (a `GetRank` Metoda zawsze zwraca 1). Z [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] drugiej strony, wielowymiarowe tablice są obsługiwane inaczej, a ranga tablicy odzwierciedla liczbę wymiarów (a `GetRank` Metoda zawsze zwraca liczbę wymiarów).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

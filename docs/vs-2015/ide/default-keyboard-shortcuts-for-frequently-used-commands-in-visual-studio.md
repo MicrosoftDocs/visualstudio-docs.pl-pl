@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 87b240dea73cc447f21422d9c165dad67f136075
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534241"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Domyślne skróty klawiaturowe dla często używanych poleceń w programie Visual Studio
@@ -44,7 +44,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 
 - [Widokiem](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-## <a name="build"></a><a name="bkmk_build"></a>Utworzenia
+## <a name="build"></a><a name="bkmk_build"></a> Utworzenia
 
 |Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------|-------------------------------------|
@@ -53,7 +53,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 |Build.Compile|Ctrl+F7 [Globalny]|
 |Build.RunCodeAnalysisonSolution|Alt+F11 [Globalny]|
 
-## <a name="debug"></a><a name="bkmk_debug"></a>Rozpocząć
+## <a name="debug"></a><a name="bkmk_debug"></a> Rozpocząć
 
 |Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------|-------------------------------------|
@@ -73,7 +73,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 |Debug.StopDebugging|Shift+F5 [Globalny]|
 |Debug.ToggleBreakpoint|F9 [globalny]|
 
-## <a name="edit"></a><a name="bkmk_edit"></a>Edytowania
+## <a name="edit"></a><a name="bkmk_edit"></a> Edytowania
 
 |Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------|-------------------------------------|
@@ -124,7 +124,7 @@ Dres. SurroundWith|Ctrl+K, Ctrl+S [Globalny]|
 |Edit.WordDeleteToEnd|Ctrl+Delete [Edytor tekstu]|
 |Edit.WordDeleteToStart|Ctrl+Backspace [Edytor tekstu]|
 
-## <a name="file"></a><a name="bkmk_file"></a>Rozszerzeniem
+## <a name="file"></a><a name="bkmk_file"></a> Rozszerzeniem
 
 |Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------|-------------------------------------|
@@ -147,19 +147,19 @@ Dres. SurroundWith|Ctrl+K, Ctrl+S [Globalny]|
 |Project.AddExistingItem|Shift+Alt+A [Globalny]|
 |Project.AddNewItem|Ctrl+Shift+A [Globalny]|
 
-## <a name="refactor"></a><a name="bkmk_refactor"></a>Refaktoryzuj
+## <a name="refactor"></a><a name="bkmk_refactor"></a> Refaktoryzuj
 
 |Polecenie|Skrót klawiaturowy [Kontekst]|
 |-------------|-----------------------------------|
 |Refactor.ExtractMethod|Ctrl+R, Ctrl+M [Globalny]|
 
-## <a name="tools"></a><a name="bkmk_tools"></a>Narzędzi
+## <a name="tools"></a><a name="bkmk_tools"></a> Narzędzi
 
 |Polecenie|Skrót klawiaturowy [Kontekst]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|Ctrl+Alt+P [Globalny]|
 
-## <a name="view"></a><a name="bkmk_view"></a>Widokiem
+## <a name="view"></a><a name="bkmk_view"></a> Widokiem
 
 |Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------|-------------------------------------|
@@ -180,7 +180,7 @@ każ. TfsTeamExplorer|Ctrl + \\ , Ctrl + M [globalny]|
 |View.ViewCode|Enter [Diagram klas]<br /><br /> lub F7 [Projektant ustawień]|
 |View.ViewDesigner|Shift+F7 [HTML Editor Source View]|
 
-## <a name="window"></a><a name="bkmk_window"></a>Dział
+## <a name="window"></a><a name="bkmk_window"></a> Dział
 
 |Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------|-------------------------------------|

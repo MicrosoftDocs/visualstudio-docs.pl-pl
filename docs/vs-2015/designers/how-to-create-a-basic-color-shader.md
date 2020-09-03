@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 90f27e2359954e56a5b3d86bfc31883d4f29c44d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664584"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Porady: tworzenie cieniowania koloru podstawowego
@@ -46,16 +46,16 @@ W tym dokumencie przedstawiono sposób korzystania z projektanta programu do cie
 
 4. Określ wartość koloru dla węzła **stałego koloru** . Użyj narzędzia **Wybierz** , aby wybrać węzeł **stałej koloru** , a następnie w oknie **Właściwości** , we właściwości **Output** , określić wartość koloru. Dla elementu pomarańczowego Określ wartość (1,0, 0,5, 0,2, 1,0).
 
-5. Połącz stałą koloru z końcowym kolorem. Aby utworzyć połączenia, należy przenieść Terminal **RGB** węzła **stała koloru** do terminalu **RGB** **końcowego węzła koloru** , a następnie przenieść Terminal **alfa** węzła **stałego koloru** do **alfa** Terminal końcowego węzła **koloru** . Te połączenia ustawiają końcowy kolor na stałą koloru zdefiniowaną w poprzednim kroku.
+5. Połącz stałą koloru z końcowym kolorem. Aby utworzyć połączenia, należy przenieść Terminal **RGB** węzła **stała koloru** do terminalu **RGB** **końcowego węzła koloru** , a następnie przenieść Terminal **alfa** węzła **stała kolor** do terminalu **alfa** **końcowego węzła koloru** . Te połączenia ustawiają końcowy kolor na stałą koloru zdefiniowaną w poprzednim kroku.
 
    Na poniższej ilustracji przedstawiono ukończony wykres modułu cieniującego i Podgląd cieniowania zastosowany do modułu.
 
 > [!NOTE]
 > Na ilustracji określono pomarańczowy kolor, aby lepiej zademonstrować efekt cieniowania.
 
- ![Wykres cieniowania i jego wynik na modelu&#45;3 D](../designers/media/digit-flat-color-effect.png "Cyfra — efekt prostego koloru")
+ ![Cieniowanie grafu i jego wynik na modelu 3&#45;D](../designers/media/digit-flat-color-effect.png "Cyfra — efekt prostego koloru")
 
  Niektóre kształty mogą zapewniać lepszy Podgląd niektórych programów do cieniowania. Aby uzyskać więcej informacji na temat podglądu programów do cieniowania w projektancie cieniowania, zobacz [Projektant cieniowania](../designers/shader-designer.md).
 
 ## <a name="see-also"></a>Zobacz też
- [Instrukcje: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [instrukcje: eksportowanie](../designers/how-to-export-a-shader.md) [](../designers/shader-designer.md) [węzłów projektanta](../designers/shader-designer-nodes.md) cieniowania programu do cieniowania
+ [Instrukcje: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [instrukcje: eksportowanie](../designers/how-to-export-a-shader.md) [Shader Designer](../designers/shader-designer.md) [węzłów projektanta](../designers/shader-designer-nodes.md) cieniowania programu do cieniowania

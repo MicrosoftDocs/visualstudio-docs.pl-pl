@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 038b3e7db7f1e3b79ee3e41b6e256216a39b91bd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664556"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Porady: tworzenie podstawowego modułu cieniującego Lamberta
@@ -62,4 +62,4 @@ W tym dokumencie przedstawiono sposób użycia projektanta programu do cieniowan
  Aby uzyskać więcej informacji na temat sposobu stosowania cieniowania do modelu 3-D, zobacz [How to: Apply a Shader to a 3-d model](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Zobacz też
- [Instrukcje: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [instrukcje: eksportowanie programu do cieniowania](../designers/how-to-export-a-shader.md) [instrukcje: Tworzenie podstawowego](../designers/how-to-create-a-basic-phong-shader.md) [](../designers/shader-designer.md) [węzła projektanta](../designers/shader-designer-nodes.md) cieniowania podstawowego phongego programu do cieniowania
+ [Instrukcje: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [instrukcje: eksportowanie programu do cieniowania](../designers/how-to-export-a-shader.md) [instrukcje: Tworzenie podstawowego](../designers/how-to-create-a-basic-phong-shader.md) [Shader Designer](../designers/shader-designer.md) [węzła projektanta](../designers/shader-designer-nodes.md) cieniowania podstawowego phongego programu do cieniowania

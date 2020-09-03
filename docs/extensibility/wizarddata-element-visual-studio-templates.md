@@ -1,5 +1,5 @@
 ---
-title: Element WizardData (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: WizardData, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aa3f9d2e971d944b964f4b194d1324ff960fbd24
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740395"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData — Element (szablony Visual Studio)
@@ -61,17 +61,17 @@ Brak.
 
 Wartość tekstowa jest opcjonalna.
 
-Ten tekst określa niestandardowy kod XML, który ma być przekazytywnie do niestandardowego rozszerzenia kreatora określonego w [elemencie WizardExtension.](../extensibility/wizardextension-element-visual-studio-templates.md)
+Ten tekst określa niestandardowy kod XML do przekazania do rozszerzenia kreatora niestandardowego określonego w elemencie [WizardExtension —](../extensibility/wizardextension-element-visual-studio-templates.md) .
 
 ## <a name="remarks"></a>Uwagi
 
-W tym elemencie można określić dowolny kod XML. Kod XML zostanie przekazany jako parametr do niestandardowego rozszerzenia kreatora, umożliwiając rozszerzenie do korzystania z zawartości tego elementu. Nie jest wykonywana weryfikacja tych danych.
+Dowolny kod XML można określić w tym elemencie. KOD XML zostanie przesłany jako parametr do rozszerzenia kreatora niestandardowego, co pozwala rozszerzeniu używać zawartości tego elementu. Nie wykonano walidacji danych.
 
-Zawartość **WizardData** element jest przekazywana, bez zmian, jako parametr wewnątrz `IWizard.RunStarted` słownika ciąg parametrów w metodzie. Klucz słownika nosi `$wizarddata$`nazwę .
+Zawartość elementu **WizardData** jest przenoszona, bez zmian, jako parametr wewnątrz słownika ciągów parametrów w `IWizard.RunStarted` metodzie. Klucz słownika ma nazwę `$wizarddata$` .
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład ilustruje metadane dla standardowego szablonu projektu dla aplikacji systemu Windows w języku C#.
+Poniższy przykład ilustruje metadane standardowego szablonu projektu dla aplikacji systemu Windows w języku C#.
 
 ```xml
 <VSTemplate Version="3.0.0" Type="Item"

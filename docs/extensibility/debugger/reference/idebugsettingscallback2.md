@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2 | Dokumenty firmy Microsoft
+title: IDebugSettingsCallback2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2c85b54f92970dca5d712b827019300f850b03cc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719938"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
@@ -27,32 +27,32 @@ IDebugSettingsCallback2D : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
-Ten interfejs jest implementowany przez wywołanie zwrotne zdarzeń menedżera debugowania sesji i używane przez aparaty debugowania. Może być również używany lokalnie zamiast Dbgmetric[d]lib.
+Ten interfejs jest implementowany przez wywołanie zwrotne zdarzenia Menedżera debugowania sesji i używane przez aparaty debugowania. Można go również użyć lokalnie zamiast dbgmetric [d]. lib.
 
 ## <a name="methods"></a>Metody
-W poniższej tabeli `IDebugSettingsCallback2`przedstawiono metody .
+W poniższej tabeli przedstawiono metody `IDebugSettingsCallback2` .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[EnumEEs](../../../extensibility/debugger/reference/idebugsettingscallback2-enumees.md)|Wylicza dostępnych oceniających wyrażenie, biorąc pod uwagę identyfikatory języka i dostawcy.|
-|[GetEELocalObject](../../../extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject.md)|Pobiera obiekt lokalny oceniający wyrażenie, biorąc pod uwagę metrykę.|
-|[GetEEMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricdword.md)|Pobiera wartość, która odpowiada określonej metryki oceniającego wyrażenie.|
-|[GetEEMetricFile](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricfile.md)|Pobiera plik metryki oceniającego wyrażenie, podana nazwa lub metryka.|
-|[GetEEMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricguid.md)|Pobiera unikatowy identyfikator dla metryki oceniającego wyrażenie, biorąc pod uwagę jego nazwę.|
-|[GetEEMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricstring.md)|Pobiera ciąg wartości metryki oceniającego wyrażenie, biorąc pod uwagę jego nazwę.|
-|[GetMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricdword.md)|Pobiera wartość metryki, biorąc pod uwagę jego nazwę.|
-|[GetMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricguid.md)|Pobiera unikatowy identyfikator metryki, biorąc pod uwagę jego nazwę.|
-|[GetMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricstring.md)|Pobiera ciąg wartości metryki, biorąc pod uwagę jego nazwę.|
+|[EnumEEs](../../../extensibility/debugger/reference/idebugsettingscallback2-enumees.md)|Wylicza dostępne oceny wyrażeń z uwzględnieniem identyfikatorów języka i dostawcy.|
+|[GetEELocalObject](../../../extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject.md)|Pobiera obiekt lokalny ewaluatora wyrażeń, który ma daną metrykę.|
+|[GetEEMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricdword.md)|Pobiera wartość odpowiadającą określonej metryce ewaluatora wyrażeń.|
+|[GetEEMetricFile](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricfile.md)|Pobiera plik metryki ewaluatora wyrażeń, używając nazwy lub metryki.|
+|[GetEEMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricguid.md)|Pobiera unikatowy identyfikator metryki Ewaluatora wyrażenia z nazwą.|
+|[GetEEMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricstring.md)|Pobiera ciąg wartości metryki Ewaluatora wyrażenia z daną nazwą.|
+|[GetMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricdword.md)|Pobiera wartość metryki pod nazwą.|
+|[GetMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricguid.md)|Pobiera unikatowy identyfikator metryki o nazwie.|
+|[GetMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricstring.md)|Pobiera ciąg wartości metryki o nazwie.|
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: Msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje funkcję, która przyjmuje **IDebugSettingsCallback2** obiektu jako parametr.
+W poniższym przykładzie pokazano funkcję, która przyjmuje obiekt **IDebugSettingsCallback2** jako parametr.
 
 ```cpp
 HRESULT GetDebugSettingsCallback (IDebugSettingsCallback2 **ppCallback)

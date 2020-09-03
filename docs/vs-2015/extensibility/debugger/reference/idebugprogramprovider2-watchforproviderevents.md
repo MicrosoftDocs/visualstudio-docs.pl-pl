@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::WatchForProviderEvents | Dokumentacja firmy Microsoft
+title: 'IDebugProgramProvider2:: WatchForProviderEvents | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 64ee4b40aefc848d89068076fb3176ae6b625e9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198707"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Umożliwia procesu otrzymywać powiadomienia o zdarzeniach portu.  
+Umożliwia procesowi powiadamianie o zdarzeniach portów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -50,38 +50,38 @@ int WatchForProviderEvents(
   
 #### <a name="parameters"></a>Parametry  
  `Flags`  
- [in] Kombinacja flag z [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) wyliczenia. Następujące flagi są typowe dla tego wywołania:  
+ podczas Kombinacja flag z wyliczenia [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) . Następujące flagi są typowe dla tego wywołania:  
   
 |Flaga|Opis|  
 |----------|-----------------|  
-|`PFLAG_REMOTE_PORT`|Obiekt wywołujący jest uruchomiona na komputerze zdalnym.|  
-|`PFLAG_DEBUGGEE`|Obiekt wywołujący jest teraz debugowana (dodatkowe informacje na temat kierowania jest zwracana dla każdego węzła).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Dołączony do obiektu wywołującego, ale nie jest uruchomiona przez debuger.|  
-|`PFLAG_REASON_WATCH`|Obiekt wywołujący chce obejrzeć dla zdarzeń. Jeśli ta flaga nie jest ustawiona. następnie zdarzeń wywołania zwrotnego jest usuwany, a obiekt wywołujący nie będzie już otrzymywać powiadomień.|  
+|`PFLAG_REMOTE_PORT`|Obiekt wywołujący jest uruchomiony na komputerze zdalnym.|  
+|`PFLAG_DEBUGGEE`|Obiekt wywołujący jest obecnie debugowany (dodatkowe informacje o kierowaniu są zwracane dla każdego węzła).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Obiekt wywołujący został dołączony do, ale nie został uruchomiony przez debuger.|  
+|`PFLAG_REASON_WATCH`|Obiekt wywołujący chce obserwować zdarzenia. Jeśli ta flaga nie jest ustawiona. następnie zdarzenie wywołania zwrotnego zostanie usunięte, a obiekt wywołujący już nie otrzymuje powiadomień.|  
   
  `pPort`  
- [in] Port procesu wywołującego jest uruchomiona na.  
+ podczas Port, na którym jest uruchomiony proces wywołujący.  
   
  `processId`  
- [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury zawierający identyfikator procesu, który zawiera program zagrożona.  
+ podczas Struktura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) przechowująca identyfikator procesu zawierającego dany program.  
   
  `EngineFilter`  
- [in] Tablica identyfikatorów GUID aparaty debugowania skojarzonego z procesem.  
+ podczas Tablica identyfikatorów GUID aparatów debugowania skojarzonych z procesem.  
   
  `guidLaunchingEngine`  
- [in] Identyfikator GUID aparatu debugowania, który uruchomił ten proces (jeśli istnieje).  
+ podczas Identyfikator GUID aparatu debugowania, który uruchomił ten proces (jeśli istnieje).  
   
  `pEventCallback`  
- [in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) obiekt, który otrzymuje powiadomienia o zdarzeniach.  
+ podczas Obiekt [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) , który odbiera powiadomienia o zdarzeniach.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Gdy obiekt wywołujący chce, aby usunąć program obsługi zdarzeń, który został ustanowiony z poprzedniego wywołania tej metody, obiekt wywołujący przekazuje te same parametry, tak jak podczas pierwszego, ale pozostawia poza `PFLAG_REASON_WATCH` flagi.  
+ Gdy obiekt wywołujący chce usunąć program obsługi zdarzeń, który został ustanowiony przez poprzednie wywołanie tej metody, obiekt wywołujący przekazuje te same parametry, co po raz pierwszy, ale opuszcza `PFLAG_REASON_WATCH` flagę.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugEngine** obiekt ujawniający [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CDebugEngine** , który uwidacznia Interfejs [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) .  
   
 ```cpp#  
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(  

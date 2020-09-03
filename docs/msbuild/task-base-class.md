@@ -1,5 +1,5 @@
 ---
-title: Klasa podstawowa zadania | Dokumenty firmy Microsoft
+title: Klasa bazowa zadania | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,29 +14,29 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d7d6e0870f809a30bc3feb7ecb7a7302b7729124
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631955"
 ---
-# <a name="task-base-class"></a>Klasa podstawowa zadania
+# <a name="task-base-class"></a>Task, klasa podstawowa
 
-Wiele zadań ostatecznie <xref:Microsoft.Build.Utilities.Task> dziedziczyć z klasy. Ta klasa dodaje kilka parametrów do zadań, które pochodzą z nich. Te parametry są wymienione w tym dokumencie.
+Wiele zadań ostatecznie dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Ta klasa dodaje kilka parametrów do zadań, które pochodzą z nich. Te parametry są wymienione w tym dokumencie.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli opisano parametry tej klasy podstawowej.
+ W poniższej tabeli opisano parametry tej klasy bazowej.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|<xref:Microsoft.Build.Utilities.Task.BuildEngine%2A>|Parametr <xref:Microsoft.Build.Framework.IBuildEngine> opcjonalny.<br /><br /> Określa interfejs aparatu kompilacji dostępny dla zadań. Aparat kompilacji automatycznie ustawia ten parametr, aby umożliwić zadania do wywołania z powrotem do niego.|
-|<xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A>|Parametr <xref:Microsoft.Build.Framework.IBuildEngine2> opcjonalny.<br /><br /> Określa interfejs aparatu kompilacji dostępny dla zadań. Aparat kompilacji automatycznie ustawia ten parametr, aby umożliwić zadania do wywołania z powrotem do niego.<br /><br /> Jest to właściwość wygody, dzięki czemu autorzy zadań dziedziczący z tej klasy nie muszą przerzucać wartości z `IBuildEngine` do `IBuildEngine2`.|
-|<xref:Microsoft.Build.Utilities.Task.BuildEngine3%2A>|Parametr <xref:Microsoft.Build.Framework.IBuildEngine3> opcjonalny.<br /><br /> Określa interfejs aparatu kompilacji dostarczony przez hosta.|
-|<xref:Microsoft.Build.Utilities.Task.HostObject%2A>|Parametr <xref:Microsoft.Build.Framework.ITaskHost> opcjonalny.<br /><br /> Określa wystąpienie obiektu hosta (może mieć wartość null). Aparat kompilacji ustawia tę właściwość, jeśli ide hosta skojarzył obiekt hosta z tym konkretnym zadaniem.|
-|<xref:Microsoft.Build.Utilities.Task.Log%2A>|Opcjonalny <xref:Microsoft.Build.Utilities.TaskLoggingHelper> parametr tylko do odczytu.<br /><br /> Obiekt pomocnika rejestrowania..|
+|<xref:Microsoft.Build.Utilities.Task.BuildEngine%2A>|Opcjonalny <xref:Microsoft.Build.Framework.IBuildEngine> parametr.<br /><br /> Określa interfejs aparatu kompilacji dostępny dla zadań. Aparat kompilacji automatycznie ustawia ten parametr, aby zezwolić na wywoływanie zadań z powrotem.|
+|<xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A>|Opcjonalny <xref:Microsoft.Build.Framework.IBuildEngine2> parametr.<br /><br /> Określa interfejs aparatu kompilacji dostępny dla zadań. Aparat kompilacji automatycznie ustawia ten parametr, aby zezwolić na wywoływanie zadań z powrotem.<br /><br /> Jest to wygodna właściwość, dzięki czemu autorzy zadań dziedziczą z tej klasy nie muszą rzutować wartości z `IBuildEngine` na `IBuildEngine2` .|
+|<xref:Microsoft.Build.Utilities.Task.BuildEngine3%2A>|Opcjonalny <xref:Microsoft.Build.Framework.IBuildEngine3> parametr.<br /><br /> Określa interfejs aparatu kompilacji dostarczony przez hosta.|
+|<xref:Microsoft.Build.Utilities.Task.HostObject%2A>|Opcjonalny <xref:Microsoft.Build.Framework.ITaskHost> parametr.<br /><br /> Określa wystąpienie obiektu hosta (może mieć wartość null). Aparat kompilacji ustawia tę właściwość, jeśli IDE hosta skojarzył obiekt hosta z tym konkretnym zadaniem.|
+|<xref:Microsoft.Build.Utilities.Task.Log%2A>|Opcjonalny <xref:Microsoft.Build.Utilities.TaskLoggingHelper> parametr tylko do odczytu.<br /><br /> Obiekt pomocnika rejestrowania...|
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)
 - [Zadania](../msbuild/msbuild-tasks.md)

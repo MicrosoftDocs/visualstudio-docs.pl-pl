@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bbeeb3d65e50e4cd3e33d4cab63dc619a1ad7a8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534319"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
@@ -94,7 +94,7 @@ Jeśli chcesz dowiedzieć się więcej o nowych funkcjach w programie Visual Stu
 
  ![Robocze](../ide/media/b5-artboard.png "b5_artboard")
 
-|Image (Obraz)|Opis|
+|Obraz|Opis|
 |-|-|
 |![](../designers/media/b1-1.png "B1_1")|**Widok Projekt** Wyświetla projekt wizualizacji dokumentu. W tym widoku można rysować lub modyfikować obiekty na powierzchni projektowej.|
 |![](../designers/media/b1-2.png "B1_2")|Pasek **nawigacyjny** Szybko Przechodź między trybem edycji szablonu, trybem edycji stylu i zakresem edycji obiektów dla zaznaczonego obiektu.|

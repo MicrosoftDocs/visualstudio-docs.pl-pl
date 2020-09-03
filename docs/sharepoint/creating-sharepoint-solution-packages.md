@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b250be3b61cdfc524f049f952f0cf7e65f1c295a
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74876067"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Tworzenie pakietów rozwiązania SharePoint
@@ -26,7 +26,7 @@ ms.locfileid: "74876067"
 ## <a name="packaging-tools"></a>Narzędzia pakietu
  Możesz użyć **projektanta pakietów** , aby dostosować pakiet i wygenerować manifest. Możesz dołączyć elementy projektu programu SharePoint, określić, czy serwer sieci Web ma być resetowany, i ustawić typ serwera wdrażania. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).
 
- Alternatywnie możesz użyć **Eksploratora pakietów** do zmodyfikowania funkcji i elementów w pliku pakietu ( *. wsp*). Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu Eksploratora pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).
+ Alternatywnie możesz użyć **Eksploratora pakietów** do zmodyfikowania funkcji i elementów w pliku pakietu (*. wsp*). Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu Eksploratora pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).
 
  Możesz użyć programu Visual Studio i MSBuild do tworzenia plików pakietu (*wsp*), aby wdrożyć rozwiązanie SharePoint. Ten proces generuje pliki manifestu, które są zbędne do wdrożenia programu SharePoint. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).
 
@@ -46,7 +46,7 @@ ms.locfileid: "74876067"
 
  W poniższej tabeli przedstawiono dwa elementy docelowe programu MSBuild, których można użyć do dostosowania sposobu tworzenia pliku *. wsp* .
 
-|Docelowy|Opis|
+|Cel|Opis|
 |------------|-----------------|
 |BeforeLayout|Obiekt docelowy, który wykonuje zadania bezpośrednio przed plikami, jest kopiowany do katalogu pośredniego. Pliki można modyfikować przed utworzeniem pliku pakietu (*wsp*).|
 |AfterLayout|Obiekt docelowy, który wykonuje zadania bezpośrednio po plikach, jest kopiowany do katalogu pośredniego.|
@@ -54,7 +54,7 @@ ms.locfileid: "74876067"
  Aby uzyskać więcej informacji, [jak: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu elementów docelowych programu MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md).
 
 ## <a name="packaging-architecture"></a>Architektura pakietów
- Poniższe kroki są wykonywane podczas tworzenia pakietu programu SharePoint ( *. wsp*) w programie Visual Studio.
+ Poniższe kroki są wykonywane podczas tworzenia pakietu programu SharePoint (*. wsp*) w programie Visual Studio.
 
 1. Funkcje i pakiety są sprawdzane w celu upewnienia się, że struktura fizyczna i semantyczna pakietu jest poprawna.
 
@@ -69,9 +69,9 @@ ms.locfileid: "74876067"
 6. Pliki w katalogu pośrednim są dodawane do pliku *wsp* .
 
 ## <a name="package-folder-structure"></a>Struktura folderu pakietu
- Podczas pakowania projektu programu SharePoint plik *. wsp* jest tworzony w folderze *SolutionFolder\bin\\\<BuildConfiguration >* . Na przykład jeśli Twoje rozwiązanie jest w *C:\Visual Studio 2013 \ Projects\ListDefinition1* i konfiguracja kompilacji jest ustawiona na wartość Release, plik *. wsp* znajduje się w *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*.
+ Podczas pakowania projektu programu SharePoint plik *. wsp* jest tworzony w folderze *SolutionFolder\bin \\ \<BuildConfiguration> * . Na przykład jeśli Twoje rozwiązanie jest w *C:\Visual Studio 2013 \ Projects\ListDefinition1* i konfiguracja kompilacji jest ustawiona na wartość Release, plik *. wsp* znajduje się w *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
 - [Instrukcje: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
 - [Instrukcje: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)

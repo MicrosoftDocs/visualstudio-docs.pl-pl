@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f177bf81a43c45dcff4cef3040c64425ed544057
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816972"
 ---
 # <a name="function-expected"></a>Oczekiwana funkcja
@@ -35,6 +35,6 @@ var x = example();           // Try and call example as if it were a function.
   
 - Upewnij się, że używasz operatora wywołania funkcji `()` tylko do wywoływania funkcji.  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Obiekt Function](../../javascript/reference/function-object-javascript.md)   
  [prototype, właściwość (Object)](../../javascript/reference/prototype-property-object-javascript.md)

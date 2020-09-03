@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a19cd0b68927effc32b0480fdeb7286be8ad8dd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664573"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Porady: tworzenie tekstury podstawowej
@@ -46,11 +46,11 @@ W tym dokumencie przedstawiono sposób tworzenia tekstury podstawowej przy użyc
 
 1. Utwórz teksturę, z którą chcesz współpracować. Aby uzyskać informacje na temat sposobu dodawania tekstury do projektu, zobacz sekcję Wprowadzenie w [Edytorze obrazu](../designers/image-editor.md).
 
-2. Ustaw rozmiar obrazu na 512 x 512 pikseli. W oknie **Właściwości** Ustaw wartości właściwości **Width** i **Height** na `512`.
+2. Ustaw rozmiar obrazu na 512 x 512 pikseli. W oknie **Właściwości** Ustaw wartości właściwości **Width** i **Height** na `512` .
 
 3. Na pasku narzędzi edytora obrazu wybierz narzędzie **wypełnienie** . W oknie **Właściwości** są teraz wyświetlane właściwości narzędzia **wypełnienie** wraz z właściwościami obrazu.
 
-4. Ustaw kolor pierwszego planu na całkowicie przezroczysty czarny. W oknie **Właściwości** w grupie właściwości **kolory** wybierz pozycję **pierwszy plan**. Ustaw wartości **R**, **G**, **B**i właściwości obok selektora **kolorów, aby** `0`.
+4. Ustaw kolor pierwszego planu na całkowicie przezroczysty czarny. W oknie **Właściwości** w grupie właściwości **kolory** wybierz pozycję **pierwszy plan**. Ustaw wartości **R**, **G**, **B** **i właściwości obok** selektora kolorów na `0` .
 
 5. Na pasku narzędzi edytora obrazu wybierz narzędzie **wypełnienie** , a następnie naciśnij i przytrzymaj klawisz Shift i wybierz dowolny punkt na obrazie. Użycie klawisza Shift powoduje, że wartość alfa koloru wypełnienia zastąpi kolor obrazu. w przeciwnym razie wartość alfa służy do mieszania koloru wypełnienia ze kolorem obrazu.
 
@@ -59,30 +59,30 @@ W tym dokumencie przedstawiono sposób tworzenia tekstury podstawowej przy użyc
 
 6. Na pasku narzędzi edytora obrazu wybierz narzędzie **wielokropek** .
 
-7. Ustaw kolor pierwszego planu na całkowicie nieprzezroczysty czarny. Ustaw wartości właściwości **R**, **G**i **B** na `0` i **wartość właściwości `255`** .
+7. Ustaw kolor pierwszego planu na całkowicie nieprzezroczysty czarny. Ustaw wartości właściwości **R**, **G**i **B** na `0` i wartość właściwości **na** `255` .
 
-8. Ustaw kolor tła na całkowicie nieprzezroczysty biały. W oknie **Właściwości** w grupie właściwości **kolory** wybierz pozycję **tło**. Ustaw wartości właściwości **R**, **G**, **B**i na `255`.
+8. Ustaw kolor tła na całkowicie nieprzezroczysty biały. W oknie **Właściwości** w grupie właściwości **kolory** wybierz pozycję **tło**. Ustaw **wartości właściwości** **R**, **G**, **B**i `255` .
 
-9. Ustaw szerokość konturu elipsy. W oknie **Właściwości** , w grupie właściwości **wygląd** , ustaw wartość właściwości **Width** na `8`.
+9. Ustaw szerokość konturu elipsy. W oknie **Właściwości** , w grupie właściwości **wygląd** , ustaw wartość właściwości **Width** na `8` .
 
 10. Upewnij się, że wygładzanie jest włączone. Upewnij się, że właściwość **Anti-alias** jest ustawiona w oknie **Właściwości** w grupie właściwości **wygląd** .
 
-11. Używając narzędzia **Elipsa** , narysuj okrąg od współrzędnych pikseli `(3, 3)` do `(508, 508)` współrzędnej piksela. Aby łatwiej rysować okrąg, możesz nacisnąć i przytrzymać klawisz Shift podczas rysowania.
+11. Używając narzędzia **Elipsa** , narysuj okrąg od współrzędnych pikseli `(3, 3)` do współrzędnych pikseli `(508, 508)` . Aby łatwiej rysować okrąg, możesz nacisnąć i przytrzymać klawisz Shift podczas rysowania.
 
     > [!NOTE]
-    > Współrzędne pikseli bieżącej lokalizacji wskaźnika są wyświetlane na pasku stanu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+    > Współrzędne pikseli bieżącej lokalizacji wskaźnika są wyświetlane na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pasku stanu.
 
-12. Zmień kolor tła. Ustaw wartość **R** na `44`, **G** do `165`, **B** `211` i **a** do `255`.
+12. Zmień kolor tła. Ustaw wartość **R** na `44` , **G** na, `165` **B** na `211` , **A** a na `255` .
 
-13. Narysuj inny okrąg od współrzędnych pikseli `(64, 64)` do `(448, 448)` współrzędnych pikseli.
+13. Rysuj inny okrąg od współrzędnych pikseli `(64, 64)` do współrzędnych pikseli `(448, 448)` .
 
-14. Zmień kolor tła z powrotem na całkowicie nieprzezroczysty biały. Ustaw wartości **R**, **G**, **B**i **a na `255`** .
+14. Zmień kolor tła z powrotem na całkowicie nieprzezroczysty biały. Ustaw wartość **R**, **G**, **B**i **na** `255` .
 
-15. Narysuj inny okrąg od współrzędnych pikseli `(128, 128)` do `(384, 384)` współrzędnych pikseli.
+15. Rysuj inny okrąg od współrzędnych pikseli `(128, 128)` do współrzędnych pikseli `(384, 384)` .
 
-16. Zmień kolor tła. Ustaw wartość **R** na `255`, **G** i **B** na **`64` i `255`** .
+16. Zmień kolor tła. Ustaw wartość **R** na `255` , **G** i **B** na `64` , **A** a na `255` .
 
-17. Narysuj inny okrąg od współrzędnych pikseli `(192, 192)` do `(320, 320)` współrzędnych pikseli.
+17. Rysuj inny okrąg od współrzędnych pikseli `(192, 192)` do współrzędnych pikseli `(320, 320)` .
 
     Tekstura docelowa "Bullseye" została zakończona. Poniżej znajduje się obraz przedstawiający przezroczystość.
 

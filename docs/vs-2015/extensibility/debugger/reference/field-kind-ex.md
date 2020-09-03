@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND_EX | Dokumentacja firmy Microsoft
+title: FIELD_KIND_EX | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e6384ea963fe1da145cacc0be46b5989f7bc610
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198754"
 ---
-# <a name="fieldkindex"></a>FIELD_KIND_EX
+# <a name="field_kind_ex"></a>FIELD_KIND_EX
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Wylicza dodatkowe rodzajów pól, które [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekt może zawierać. To wyliczenie rozszerza [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) wyliczenia.  
+Wylicza dodatkowe rodzaje pól, które może zawierać obiekt [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) . To Wyliczenie rozszerza [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Wyliczenie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -45,7 +45,7 @@ public enum enum_FIELD_KIND_EX
   
 ## <a name="members"></a>Elementy członkowskie  
  FIELD_KIND_EX_NONE  
- Pole nie zawiera typie rozszerzonym.  
+ Pole nie zawiera typu rozszerzonego.  
   
  FIELD_TYPE_EX_METHODVAR  
  Pole zawiera zmienną metody.  
@@ -54,9 +54,9 @@ public enum enum_FIELD_KIND_EX
  Pole zawiera zmienną klasy.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: SH.h  
+ Nagłówek: sh. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

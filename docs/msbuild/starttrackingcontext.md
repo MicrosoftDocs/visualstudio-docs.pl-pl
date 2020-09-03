@@ -1,5 +1,5 @@
 ---
-title: Kontekst StartTrackinga | Dokumenty firmy Microsoft
+title: StartTrackingContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50f62704897d68b0e323b948b8f4ed7e96a10c9a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632111"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
@@ -34,18 +34,18 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
 
 #### <a name="parameters"></a>Parametry
 
-[w]`intermediateDirectory`
+podczas `intermediateDirectory`
 
- Katalog, w którym ma być przechowywane dziennik śledzenia.
+ Katalog, w którym ma być przechowywany dziennik śledzenia.
 
-[w]`taskName`
+podczas `taskName`
 
  Identyfikuje kontekst śledzenia. Ta nazwa jest używana do tworzenia nazwy pliku dziennika.
 
 ## <a name="return-value"></a>Wartość zwracana
 
- **HRESULT** z **bitem SUCCEEDED** ustawiony, jeśli kontekst śledzenia został utworzony.
+ **Wynik HRESULT** z **pomyślnym** bitem ustawionym w przypadku utworzenia kontekstu śledzenia.
 
 ## <a name="requirements"></a>Wymagania
 
- **Nagłówek:** *FileTracker.h*
+ **Nagłówek:** *FileTracker. h*

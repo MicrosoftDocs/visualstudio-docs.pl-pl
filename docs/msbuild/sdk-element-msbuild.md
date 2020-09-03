@@ -1,5 +1,5 @@
 ---
-title: Element Sdk (MSBuild) | Dokumenty firmy Microsoft
+title: Element zestawu SDK (MSBuild) | Microsoft Docs
 ms.date: 01/25/2018
 ms.topic: reference
 f1_keywords:
@@ -18,17 +18,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632475"
 ---
-# <a name="sdk-element-msbuild"></a>Element Sdk (MSBuild)
+# <a name="sdk-element-msbuild"></a>Element zestawu SDK (MSBuild)
 
-Odwołuje się do sdk projektu MSBuild.
+Odwołuje się do zestawu SDK projektu programu MSBuild.
 
- \<projekt> \<> Sdk
+ \<Project> \<Sdk>
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,8 +45,8 @@ Odwołuje się do sdk projektu MSBuild.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Name`|Atrybut wymagany.<br /><br /> Nazwa sdk projektu.|
-|`Version`|Atrybut opcjonalny.<br /><br /> Wersja sdk projektu|
+|`Name`|Atrybut wymagany.<br /><br /> Nazwa zestawu SDK projektu.|
+|`Version`|Atrybut opcjonalny.<br /><br /> Wersja zestawu SDK projektu|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
@@ -60,6 +60,6 @@ Odwołuje się do sdk projektu MSBuild.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Jak: Odwoływanie się do sdk projektu MSBuild](../msbuild/how-to-use-project-sdk.md)
+- [Instrukcje: odwoływanie się do zestawu SDK projektu programu MSBuild](../msbuild/how-to-use-project-sdk.md)
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
-- [Msbuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)

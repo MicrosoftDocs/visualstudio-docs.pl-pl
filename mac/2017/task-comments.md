@@ -1,33 +1,33 @@
 ---
 title: Komentarze do zadań
-description: Dodawanie komentarzy zadań do kodu
+description: Dodawanie komentarzy do zadań do kodu
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
 ms.openlocfilehash: 4f7f3d1567972c3841af6deb37677a7e01cdb825
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74985176"
 ---
 # <a name="task-comments"></a>Komentarze do zadań
 
-Podczas pisania kodu jest standardową praktyką jawnie komentować niedokończony lub wątpliwy kod lub szybkie obejścia z ostrzeżeniami. Domyślne tokeny sygnału dostarczone przez program Visual Studio dla komputerów Mac to TODO, HACK, FIXME i UNDONE. Spersonalizowane tokeny można zdefiniować w obszarze **Preferencje > programu Visual Studio > środowiska > zadania**, jak pokazano na poniższej ilustracji:
+Podczas pisania kodu, jest to standardowe rozwiązanie, aby jawnie komentować nieukończony lub wątpliwy kod lub szybkie obejścia z ostrzeżeniami. Domyślne tokeny sygnałów zapewniane przez Visual Studio dla komputerów Mac są zadaniami, HAKERami, FIXME i COFNIĘTe. Spersonalizowane tokeny można definiować w obszarze **preferencje > programu Visual Studio > zadania > środowiska**, jak pokazano na poniższej ilustracji:
 
 ![Preferencje listy zadań](media/source-editor-image10.png)
 
-Aby dodać nowy komentarz do zadania, dodaj komentarz zawierający słowo kluczowe zadania. Przykład:
+Aby dodać nowy komentarz do zadania, Dodaj komentarz zawierający słowo kluczowe Task. Na przykład:
 
 ```csharp
 //TODO: Finish this for all properties.
 ```
 
-Program Visual Studio dla komputerów Mac zwraca uwagę na te znaczniki, podświetlając je w konsoli **Lista zadań,** która może być wyświetlana, przechodząc do **view > Pads > Task:**
+Visual Studio dla komputerów Mac rysuje uwagę na te znaczniki poprzez wyróżnianie ich w konsoli **Lista zadań** , które mogą być wyświetlane, przechodząc do **widoku > konsole > zadanie**:
 
-![Klawiatura listy zadań](media/source-editor-image11.png)
+![Konsola listy zadań](media/source-editor-image11.png)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Korzystanie z listy zadań (visual studio w systemie Windows)](/visualstudio/ide/using-the-task-list)
+- [Korzystanie z Lista zadań (Visual Studio w systemie Windows)](/visualstudio/ide/using-the-task-list)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 17ba5d143a5f4534b09b2aaff718af7ce99f2773
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664550"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Porady: tworzenie podstawowego modułu cieniowanie Phong
@@ -30,7 +30,7 @@ W tym dokumencie przedstawiono sposób użycia projektanta programu do cieniowan
 - Łączenie węzłów
 
 ## <a name="the-phong-lighting-model"></a>Model oświetlenia podstawowego Phong
- Model oświetlenia podstawowego Phong rozszerza model oświetlenia Lamberta w taki sposób, aby obejmował wyróżnianie odblasków, które symuluje właściwości odbicia powierzchni. Składnik odblasków zapewnia dodatkowe oświetlenie z tych samych kierunkowych źródeł światła, które są używane w modelu oświetlenia Lamberta, ale jego udział w kolorze końcowym jest przetwarzany inaczej. Wyróżnianie odblasków ma wpływ na każdą powierzchnię w scenie, na podstawie relacji między kierunkiem widoku, kierunku źródeł światła i orientacji powierzchni. Jest to iloczyn koloru odblasków, mocy odblasków i orientacji powierzchni oraz kolor, intensywność i kierunek źródeł światła. Powierzchnie odzwierciedlające Źródło światła bezpośrednio w przeglądarce otrzymują maksymalny udział odblasków i powierzchnie, które odzwierciedlają Źródło światła od przeglądarki, nie otrzymują żadnego wkładu. W modelu oświetlenia podstawowego Phong, co najmniej jeden składnik odblasków jest połączony, aby określić kolor i intensywność wyróżniania odblasków dla każdego punktu w obiekcie, a następnie są dodawane do wyniku modelu oświetlenia Lamberta w celu uzyskania końcowego koloru piksela. .
+ Model oświetlenia podstawowego Phong rozszerza model oświetlenia Lamberta w taki sposób, aby obejmował wyróżnianie odblasków, które symuluje właściwości odbicia powierzchni. Składnik odblasków zapewnia dodatkowe oświetlenie z tych samych kierunkowych źródeł światła, które są używane w modelu oświetlenia Lamberta, ale jego udział w kolorze końcowym jest przetwarzany inaczej. Wyróżnianie odblasków ma wpływ na każdą powierzchnię w scenie, na podstawie relacji między kierunkiem widoku, kierunku źródeł światła i orientacji powierzchni. Jest to iloczyn koloru odblasków, mocy odblasków i orientacji powierzchni oraz kolor, intensywność i kierunek źródeł światła. Powierzchnie odzwierciedlające Źródło światła bezpośrednio w przeglądarce otrzymują maksymalny udział odblasków i powierzchnie, które odzwierciedlają Źródło światła od przeglądarki, nie otrzymują żadnego wkładu. W modelu oświetlenia podstawowego Phong, co najmniej jeden składnik odblasków jest połączony, aby określić kolor i intensywność wyróżniania odblasków dla każdego punktu w obiekcie, a następnie są dodawane do wyniku modelu oświetlenia Lamberta w celu uzyskania końcowego koloru piksela.
 
  Aby uzyskać więcej informacji na temat modelu oświetlenia Lamberta, zobacz [How to: Create a Basic Lamberta Shader](../designers/how-to-create-a-basic-lambert-shader.md).
 
@@ -53,7 +53,7 @@ W tym dokumencie przedstawiono sposób użycia projektanta programu do cieniowan
    Na poniższej ilustracji przedstawiono ukończony wykres modułu cieniującego i Podgląd cieniowania zastosowany do modelu czajniczek.
 
 > [!NOTE]
-> Aby lepiej zademonstrować efekt cieniowania na tej ilustracji, kolor pomarańczowy został określony przy użyciu parametru **MaterialDiffuse** cieniowania, a zakończenie w postaci metalicznej zostało określone za pomocą **MaterialSpecular** i Parametry **MaterialSpecularPower** . Aby uzyskać informacje o parametrach materiału, zobacz sekcję podglądy programów do cieniowania w [projektancie cieniowania](../designers/shader-designer.md).
+> Aby lepiej zademonstrować efekt cieniowania na tej ilustracji, kolor pomarańczowy został określony przy użyciu parametru **MaterialDiffuse** modułu cieniującego, a zakończenie w postaci metalicznej jest określone za pomocą parametrów **MaterialSpecular** i **MaterialSpecularPower** . Aby uzyskać informacje o parametrach materiału, zobacz sekcję podglądy programów do cieniowania w [projektancie cieniowania](../designers/shader-designer.md).
 
  ![Graf cieniowania i podgląd jego efektu](../designers/media/digit-lighting-graph.png "Oświetlenie cyfrowe — Graf")
 
@@ -71,4 +71,4 @@ W tym dokumencie przedstawiono sposób użycia projektanta programu do cieniowan
  Aby uzyskać więcej informacji na temat sposobu stosowania cieniowania do modelu 3-D, zobacz [How to: Apply a Shader to a 3-d model](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Zobacz też
- [Instrukcje: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [instrukcje: eksportowanie programu do cieniowania](../designers/how-to-export-a-shader.md) [instrukcje: Tworzenie podstawowego](../designers/how-to-create-a-basic-lambert-shader.md) [](../designers/shader-designer.md) [węzła projektanta](../designers/shader-designer-nodes.md) cieniowania lambertaego programu do cieniowania
+ [Instrukcje: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [instrukcje: eksportowanie programu do cieniowania](../designers/how-to-export-a-shader.md) [instrukcje: Tworzenie podstawowego](../designers/how-to-create-a-basic-lambert-shader.md) [Shader Designer](../designers/shader-designer.md) [węzła projektanta](../designers/shader-designer-nodes.md) cieniowania lambertaego programu do cieniowania

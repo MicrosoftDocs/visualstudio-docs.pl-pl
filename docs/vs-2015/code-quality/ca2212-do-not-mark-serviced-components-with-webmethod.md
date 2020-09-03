@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: a3c707fef5562b932b6232300131f6e6e6efef6a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534566"
 ---
 # <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: Nie oznaczaj składników usługi atrybutem WebMethod
@@ -36,7 +36,7 @@ ms.locfileid: "85534566"
  Metoda w typie, który dziedziczy z, <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> jest oznaczona za pomocą <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.Web.Services.WebMethodAttribute>dotyczy metod w usłudze sieci Web XML, które zostały utworzone przy użyciu ASP.NET; sprawia, że metoda jest wywoływana z zdalnych klientów sieci Web. Metoda i Klasa muszą być publiczne i wykonywane w aplikacji sieci Web ASP.NET. <xref:System.EnterpriseServices.ServicedComponent>typy są obsługiwane przez aplikacje COM+ i mogą korzystać z usług COM+. <xref:System.Web.Services.WebMethodAttribute>nie ma zastosowania do <xref:System.EnterpriseServices.ServicedComponent> typów, ponieważ nie są one przeznaczone do tych samych scenariuszy. W celu dodania atrybutu do metody nie można <xref:System.EnterpriseServices.ServicedComponent> wywołać metody z zdalnych klientów sieci Web. Ponieważ <xref:System.Web.Services.WebMethodAttribute> <xref:System.EnterpriseServices.ServicedComponent> Metoda ma sprzeczne zachowania i wymagania dotyczące przepływu kontekstu i transakcji, zachowanie metody będzie nieprawidłowe w niektórych scenariuszach.
+ <xref:System.Web.Services.WebMethodAttribute> dotyczy metod w usłudze sieci Web XML, które zostały utworzone przy użyciu ASP.NET; sprawia, że metoda jest wywoływana z zdalnych klientów sieci Web. Metoda i Klasa muszą być publiczne i wykonywane w aplikacji sieci Web ASP.NET. <xref:System.EnterpriseServices.ServicedComponent> typy są obsługiwane przez aplikacje COM+ i mogą korzystać z usług COM+. <xref:System.Web.Services.WebMethodAttribute> nie ma zastosowania do <xref:System.EnterpriseServices.ServicedComponent> typów, ponieważ nie są one przeznaczone do tych samych scenariuszy. W celu dodania atrybutu do metody nie można <xref:System.EnterpriseServices.ServicedComponent> wywołać metody z zdalnych klientów sieci Web. Ponieważ <xref:System.Web.Services.WebMethodAttribute> <xref:System.EnterpriseServices.ServicedComponent> Metoda ma sprzeczne zachowania i wymagania dotyczące przepływu kontekstu i transakcji, zachowanie metody będzie nieprawidłowe w niektórych scenariuszach.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, Usuń atrybut z <xref:System.EnterpriseServices.ServicedComponent> metody.

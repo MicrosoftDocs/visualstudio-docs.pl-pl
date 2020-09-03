@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b070eb361bcc3fbe4f72adfff10b5e7d19649087
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349565"
 ---
 # <a name="how-to-install-a-visualizer"></a>Porady: instalacja programu Visualizer
@@ -50,9 +50,9 @@ Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostęp
     - `My Documents\`*VisualStudioVersion* `\Visualizers\` *Struktura*
 
     gdzie *Framework* jest:
-    - `net2.0`debuggees `.NET Framework` środowiska uruchomieniowego.
-    - `netstandard2.0`dla debuggees przy użyciu środowiska uruchomieniowego, które obsługuje program `netstandard 2.0` ( `.NET Framework v4.6.1+` lub `.NET Core 2.0+` ).
-    - `netcoreapp`debuggees `.NET Core` środowiska uruchomieniowego. (obsługuje `.NET Core 2.0+` )
+    - `net2.0` debuggees `.NET Framework` środowiska uruchomieniowego.
+    - `netstandard2.0` dla debuggees przy użyciu środowiska uruchomieniowego, które obsługuje program `netstandard 2.0` ( `.NET Framework v4.6.1+` lub `.NET Core 2.0+` ).
+    - `netcoreapp` debuggees `.NET Core` środowiska uruchomieniowego. (obsługuje `.NET Core 2.0+` )
 
    Biblioteka DLL debugowanego obiektu jest niezbędna, jeśli chcesz utworzyć autonomiczny wizualizator. Ta biblioteka DLL zawiera kod dla obiektu danych, który może implementować metody <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
 

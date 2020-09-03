@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 15d88f52b3af3a3e4502c618280107a882761259
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664612"
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Porady: stosowanie cieniowania do modelu 3-D
@@ -38,9 +38,9 @@ W tym dokumencie pokazano, jak za pomocą edytora modelu zastosować moduł cien
 
    Oto model, do którego zastosowano podstawowy efekt koloru:
 
-   ![Scena 3&#45;D, która pokazuje podstawowy efekt koloru](../designers/media/digit-3d-model-effect.png "Cyfra-3W — model — efekt")
+   ![3&#45;D scena pokazująca podstawowy efekt koloru](../designers/media/digit-3d-model-effect.png "Cyfra-3W — model — efekt")
 
-   Po zastosowaniu cieniowania do modelu można otworzyć go w projektancie programu do cieniowania, wybierając model, a następnie w oknie **Właściwości** , we właściwości **(Zaawansowane)** grupy właściwości **efekt** , wybierając przycisk wielokropka ( **...** ).
+   Po zastosowaniu cieniowania do modelu można otworzyć go w projektancie programu do cieniowania, wybierając model, a następnie w oknie **Właściwości** , we właściwości **(Zaawansowane)** grupy właściwości **efekt** , wybierając przycisk wielokropka (**...**).
 
 ## <a name="see-also"></a>Zobacz też
- [Instrukcje: Tworzenie podstawowego modelu 3-D](../designers/how-to-create-a-basic-3-d-model.md) [: Tworzenie podstawowego edytora kolorów programu do cieniowania —](../designers/how-to-create-a-basic-color-shader.md) [](../designers/model-editor.md) [Projektant cieniowania](../designers/shader-designer.md)
+ [Instrukcje: Tworzenie podstawowego modelu 3-D](../designers/how-to-create-a-basic-3-d-model.md) [: Tworzenie podstawowego edytora kolorów programu do cieniowania —](../designers/how-to-create-a-basic-color-shader.md) [Model Editor](../designers/model-editor.md) [Projektant cieniowania](../designers/shader-designer.md)

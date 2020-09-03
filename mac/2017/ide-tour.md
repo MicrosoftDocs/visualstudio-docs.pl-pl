@@ -1,127 +1,127 @@
 ---
-title: Przewodnik po programie Visual Studio dla komputerów Mac
-description: Program Visual Studio dla komputerów Mac zapewnia zintegrowane środowisko programistyczne do tworzenia aplikacji platformy .NET w systemie macOS, w tym ASP.NET witrynach sieci Web core i projektów platformy Xamarin dla systemów iOS, Android, Mac i Xamarin.Forms.
+title: Przewodnik Visual Studio dla komputerów Mac
+description: Visual Studio dla komputerów Mac zapewnia zintegrowane środowisko programistyczne do kompilowania aplikacji .NET w systemie macOS, w tym ASP.NET Core witryn sieci Web i projektów platformy Xamarin dla systemów iOS, Android, Mac i Xamarin. Forms.
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
 ms.openlocfilehash: 3d25fced1e9c9dd6431f4056b5b561f476eecb28
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984985"
 ---
-# <a name="visual-studio-2017-for-mac-tour"></a>Przewodnik po programie Visual Studio 2017 dla komputerów Mac
+# <a name="visual-studio-2017-for-mac-tour"></a>Przewodnik po programie Visual Studio 2017 for Mac
 
 > [!NOTE]
-> Visual Studio 2019 dla [komputerów](installation.md)Mac jest już dostępny .
+> Program Visual Studio 2019 for Mac jest [teraz dostępny](installation.md).
 
-Visual Studio dla komputerów Mac to _zintegrowane środowisko programistyczne_ platformy .NET na komputerze Mac, które może służyć do edytowania, debugowania i tworzenia kodu, a następnie publikowania aplikacji. Oprócz oczekiwanych funkcji, takich jak standardowy edytor i debuger, visual studio dla komputerów Mac zawiera kompilatory, narzędzia do uzupełniania kodu, projektantów graficznych i kontrolę źródła, aby opracować proces tworzenia oprogramowania.
+Visual Studio dla komputerów Mac to _zintegrowane środowisko deweloperskie_ platformy .NET na komputerze Mac, które może służyć do edytowania, debugowania i kompilowania kodu, a następnie publikowania aplikacji. Oprócz oczekiwanych funkcji, takich jak standardowy Edytor i debuger, Visual Studio dla komputerów Mac obejmuje kompilatory, narzędzia do uzupełniania kodu, graficzne projektantów i kontrolę źródła w celu przetworzenia oprogramowania ESE.
 
-Visual Studio dla komputerów Mac obsługuje wiele z tych `.csproj` `.fsproj`samych `.sln` typów plików, jak jego odpowiednik systemu Windows, takich jak , lub plików i obsługuje funkcje, takie jak EditorConfig, co oznacza, że można użyć IDE, który działa najlepiej dla Ciebie.
-Tworzenie, otwieranie i tworzenie aplikacji będzie znanym doświadczeniem dla każdego, kto wcześniej korzystał z programu Visual Studio w systemie Windows. Ponadto program Visual Studio dla komputerów Mac wykorzystuje wiele zaawansowanych narzędzi, które sprawiają, że jego odpowiednik systemu Windows jest tak zaawansowanym IDE. Platforma kompilatora Roslyn służy do refaktoryzacji i IntelliSense. Jego system projektu i aparat kompilacji używać MSBuild, a jego edytor źródłowy obsługuje pakiety TextMate. Używa tych samych aparatów debugera dla aplikacji Platformy Xamarin i .NET Core i tych samych projektantów dla xamarin.iOS i Xamarin.Android.
+Visual Studio dla komputerów Mac obsługuje wiele takich samych typów plików jak odpowiedniki systemu Windows, takie jak `.csproj` , `.fsproj` lub `.sln` pliki, i obsługuje funkcje takie jak EditorConfig, co oznacza, że można użyć środowiska IDE, które najlepiej działa.
+Tworzenie, otwieranie i opracowywanie aplikacji jest znanym doświadczeniem dla każdej osoby, która wcześniej korzystała z programu Visual Studio w systemie Windows. Ponadto Visual Studio dla komputerów Mac korzysta z wielu zaawansowanych narzędzi, które sprawiają, że system Windows ma odpowiedni, wydajny IDE. Platforma kompilatora Roslyn jest używana do refaktoryzacji i IntelliSense. Jego system projektu i aparat kompilacji używają programu MSBuild, a jego Edytor źródła obsługuje zbiory deautomatyzuje. Używa tych samych aparatów debugera dla aplikacji Xamarin i .NET Core oraz tych samych projektantów dla Xamarin. iOS i Xamarin. Android.
 
-## <a name="what-can-i-do-in-visual-studio-for-mac"></a>Co można zrobić w programie Visual Studio dla komputerów Mac
+## <a name="what-can-i-do-in-visual-studio-for-mac"></a>Co mogę zrobić w Visual Studio dla komputerów Mac
 
-Visual Studio dla komputerów Mac obsługuje następujące typy programów:
+Visual Studio dla komputerów Mac obsługuje następujące typy rozwoju:
 
-- ASP.NET podstawowych aplikacji sieci Web z c#, F#i obsługą stron Razor, JavaScript i TypeScript
-- Aplikacje konsoli .NET Core z językami C# lub F #
-- Wieloplatformowe gry i aplikacje Unity z C #
-- Aplikacje dla systemów Android, iOS, tvOS i watchOS w języku Xamarin z językami C# lub F# i XAML
-- Aplikacje klasyczne Kakao w języku C# lub F #
+- ASP.NET Core aplikacji sieci Web przy użyciu języków C#, F # i obsługi stron Razor, JavaScript i TypeScript
+- Aplikacje konsolowe platformy .NET Core w języku C# lub F #
+- Wieloplatformowe gry Unity i aplikacje w języku C #
+- Aplikacje dla systemów Android, iOS, systemu tvOS i systemu watchOS w oprogramowaniu Xamarin z C# lub F # i XAML
+- Aplikacje klasyczne dla kakao w języku C# lub F #
 
-W tym artykule przedstawiono różne sekcje programu Visual Studio dla komputerów Mac, zapewniając spojrzenie na niektóre funkcje, które sprawiają, że jest to zaawansowane narzędzie do tworzenia tych aplikacji.
+Ten artykuł zawiera informacje o różnych sekcjach Visual Studio dla komputerów Mac, co zapewnia pewne funkcje, które sprawiają, że jest to zaawansowane narzędzie do tworzenia tych aplikacji.
 
 ## <a name="ide-tour"></a>Przewodnik po środowisku IDE
 
-Visual Studio dla komputerów Mac jest podzielony na kilka sekcji do zarządzania plikami aplikacji i ustawieniami, tworzenia kodu aplikacji i debugowania.
+Visual Studio dla komputerów Mac jest zorganizowany w kilka sekcji do zarządzania plikami i ustawieniami aplikacji, tworzenia kodu aplikacji i debugowania.
 
 ## <a name="welcome-screen"></a>Ekran powitalny
 
-Po uruchomieniu program Visual Studio dla komputerów Mac wyświetla *ekran powitalny:*
+Po uruchomieniu Visual Studio dla komputerów Mac wyświetla *ekran powitalny*:
 
 ![Ekran powitalny](media/ide-tour-image1.png)
 
 Ekran powitalny zawiera następujące sekcje:
 
 - **Pasek narzędzi** — zapewnia szybki dostęp do paska wyszukiwania. Po załadowaniu rozwiązania pasek narzędzi służy do ustawiania konfiguracji aplikacji, debugowania i wyświetlania błędów.
-- **Wprowadzenie** — zapewnia szybki dostęp do przydatnych tematów dla deweloperów wprowadzenie do programu Visual Studio dla komputerów Mac.
-- **Najnowsze rozwiązania** — zapewnia szybki dostęp do ostatnio otwieranych rozwiązań, a także wygodne przyciski do otwierania lub tworzenia projektów.
-- **Wiadomości dla deweloperów** — kanał informacyjny, który zapewnia aktualną informacje o najnowszych informacjach o programie Microsoft Developer.
+- **Wprowadzenie** — zapewnia szybki dostęp do przydatnych tematów dla deweloperów rozpoczynających pracę z programem Visual Studio dla komputerów Mac.
+- **Najnowsze rozwiązania** — zapewnia szybki dostęp do ostatnio otwieranych rozwiązań, a także wygodne przyciski umożliwiające otwieranie i tworzenie projektów.
+- **Wiadomości dla deweloperów** — kanał informacyjny z informacjami na temat najnowszych informacji dla deweloperów firmy Microsoft.
 
 ## <a name="solutions-and-projects"></a>Rozwiązania i projekty
 
-Na poniższej ilustracji przedstawiono program Visual Studio dla komputerów Mac z załadowaną aplikacją:
+Na poniższej ilustracji przedstawiono Visual Studio dla komputerów Mac z załadowana aplikacją:
 
-![Visual Studio dla komputerów Mac z załadowaną aplikacją](media/ide-tour-image17.png)
+![Visual Studio dla komputerów Mac z załadowana aplikacją](media/ide-tour-image17.png)
 
-Poniższe sekcje zawierają omówienie głównych obszarów w programie Visual Studio dla komputerów Mac.
+Poniższe sekcje zawierają omówienie głównych obszarów w Visual Studio dla komputerów Mac.
 
-## <a name="solution-pad"></a>Podkładka rozrachowa
+## <a name="solution-pad"></a>okienko rozwiązania
 
-Solution Pad organizuje projekt(y) w rozwiązaniu:
+Okienko rozwiązania organizuje projekty w rozwiązaniu:
 
-![Projekty organizowane w Solution Pad](media/ide-tour-image18.png)
+![Projekty zorganizowane w okienko rozwiązania](media/ide-tour-image18.png)
 
-Jest to, gdzie pliki dla kodu źródłowego, zasoby, interfejs użytkownika i zależności są zorganizowane w projekty specyficzne dla platformy.
+Jest to miejsce, w którym pliki kodu źródłowego, zasobów, interfejsu użytkownika i zależności są zorganizowane w projekty specyficzne dla platformy.
 
-Aby uzyskać więcej informacji na temat korzystania z projektów i rozwiązań w programie Visual Studio dla [komputerów](/visualstudio/mac/projects-and-solutions) Mac, zobacz projekty i rozwiązania artykułu.
+Aby uzyskać więcej informacji na temat korzystania z projektów i rozwiązań w Visual Studio dla komputerów Mac, zobacz artykuł [projekty i rozwiązania](/visualstudio/mac/projects-and-solutions) .
 
-## <a name="assembly-references"></a>Odwołania do złożenia
+## <a name="assembly-references"></a>Odwołania do zestawów
 
-Odwołania do zestawu dla każdego projektu są dostępne w folderze Odwołania:
+Odwołania do zestawów dla każdego projektu są dostępne w folderze References:
 
-![Folder Odwołania w konsoli rozwiązania](media/ide-tour-image19.png)
+![Odwołuje się do folderu w konsoli rozwiązania](media/ide-tour-image19.png)
 
-Dodatkowe odwołania są dodawane za pomocą okna dialogowego **Edytuj odwołania,** które jest wyświetlane przez dwukrotne kliknięcie folderu Odwołania lub wybranie opcji Edytuj odwołania w jego **akcjach** menu kontekstowego:
+Dodatkowe odwołania są dodawane za pomocą okna dialogowego **Edytowanie odwołań** , który jest wyświetlany przez dwukrotne kliknięcie folderu References lub wybranie polecenia **Edytuj odwołania** w jego akcjach menu kontekstowego:
 
-![Okno dialogowe Edytowanie odwołań](media/ide-tour-image20.png)
+![Edytowanie odwołań — okno dialogowe](media/ide-tour-image20.png)
 
-Aby uzyskać więcej informacji na temat korzystania z odwołań w programie Visual Studio dla komputerów Mac, zobacz [zarządzanie odwołaniami w](/visualstudio/mac/managing-references-in-a-project) artykule Project.
+Aby uzyskać więcej informacji na temat używania odwołań w Visual Studio dla komputerów Mac, zobacz [Zarządzanie odwołaniami w](/visualstudio/mac/managing-references-in-a-project) artykule dotyczącym projektu.
 
-## <a name="dependencies--packages"></a>Zależności / Pakiety
+## <a name="dependencies--packages"></a>Zależności/pakiety
 
-Wszystkie zależności zewnętrzne używane w aplikacji są przechowywane w folderze Zależności lub Pakiety, w zależności od tego, czy jesteś w projekcie .Net Core lub Xamarin.iOS/Xamarin.Android. Są one zwykle dostarczane w formie NuGet.
+Wszystkie zależności zewnętrzne używane w aplikacji są przechowywane w folderze zależności lub pakiety, w zależności od tego, czy jesteś w projekcie .Net Core czy Xamarin. iOS/Xamarin. Android. Są one zazwyczaj udostępniane w postaci NuGet.
 
-NuGet jest najpopularniejszym menedżerem pakietów dla rozwoju platformy .NET. Za pomocą pomocy technicznej NuGet programu Visual Studio można łatwo wyszukiwać i dodawać pakiety do projektu do aplikacji.
+Pakiet NuGet jest najpopularniejszym menedżerem pakietów na potrzeby programowania na platformie .NET. Dzięki obsłudze NuGet programu Visual Studio można łatwo wyszukiwać i dodawać pakiety do projektu do aplikacji.
 
-Aby dodać zależność do aplikacji, kliknij prawym przyciskiem myszy folder Zależności / Pakiety, a następnie wybierz pozycję **Dodaj pakiety:**
+Aby dodać zależność do aplikacji, kliknij prawym przyciskiem myszy folder zależności/pakiety, a następnie wybierz polecenie **Dodaj pakiety**:
 
 ![Dodawanie pakietu NuGet](media/ide-tour-image21.png)
 
-Informacje na temat korzystania z pakietu NuGet w aplikacji można znaleźć w [Including projektu NuGet w](/visualstudio/mac/nuget-walkthrough) artykule projektu.
+Informacje na temat korzystania z pakietu NuGet w aplikacji można znaleźć w temacie [zawierającym projekt NuGet w artykule dotyczącym projektu](/visualstudio/mac/nuget-walkthrough) .
 
 ## <a name="refactoring"></a>Refaktoryzacja
 
-Visual Studio dla komputerów Mac udostępnia dwa przydatne sposoby refaktoryzacji kodu: Akcje kontekstu i analiza źródła. Możesz przeczytać więcej o nich w [refaktoryzacji](/visualstudio/mac/refactoring) artykułu.
+Visual Studio dla komputerów Mac zapewnia dwa przydatne metody refaktoryzacji kodu: akcje kontekstu i analiza źródła. Więcej informacji na ten temat można znaleźć w artykule [refaktoryzacji](/visualstudio/mac/refactoring) .
 
-## <a name="debugging"></a>Debugging
+## <a name="debugging"></a>Debugowanie
 
-Visual Studio dla komputerów Mac ma natywnego debugera umożliwiającego obsługę debugowania dla aplikacji Xamarin.iOS, Xamarin.Mac i Xamarin.Android. Visual Studio dla komputerów Mac używa debugera mono soft, który jest zaimplementowany w czasie wykonywania Mono, umożliwiając IDE do debugowania kodu zarządzanego na wszystkich platformach. Aby uzyskać dodatkowe informacje na temat debugowania, odwiedź artykuł [debugowania.](/visualstudio/mac/debugging)
+Visual Studio dla komputerów Mac ma natywny debuger umożliwiający obsługę debugowania dla aplikacji Xamarin. iOS, Xamarin. Mac i Xamarin. Android. Visual Studio dla komputerów Mac używa debugera miękkiego mono, który jest implementowany w środowisku uruchomieniowym mono, umożliwiając IDE Debugowanie kodu zarządzanego na wszystkich platformach. Aby uzyskać dodatkowe informacje na temat debugowania, zapoznaj się z artykułem dotyczącym [debugowania](/visualstudio/mac/debugging) .
 
-Debuger zawiera zaawansowane wizualizatory dla typów specjalnych, takich jak ciągi, kolory, adresy URL, a także rozmiary, współrzędne i krzywe béziera.
+Debuger zawiera rozbudowane Wizualizatory dla typów specjalnych, takich jak ciągi, kolory, adresy URL, jak również rozmiary, współrzędne i krzywe Beziera.
 
-Aby uzyskać więcej informacji na temat wizualizacji danych debugera, odwiedź artykuł [Wizualizacje danych.](/visualstudio/mac/data-visualizations)
+Aby uzyskać więcej informacji na temat wizualizacji danych debugera, zapoznaj się z artykułem [wizualizacje danych](/visualstudio/mac/data-visualizations) .
 
 ## <a name="version-control"></a>Kontrola wersji
 
-Visual Studio dla komputerów Mac integruje się z systemami kontroli źródła Git i Subversion. Projekty pod kontrolą źródła są oznaczane z gałęzi wymienionych obok nazwy rozwiązania:
+Visual Studio dla komputerów Mac integruje się z systemami kontroli źródła git i Subversion. Projekty w obszarze kontroli źródła są oznaczane rozgałęzieniem wymienionym obok nazwy rozwiązania:
 
-![Nazwa oddziału wskazująca projekt pod kontrolą źródła](media/ide-tour-image22.png)
+![Nazwa rozgałęzienia wskazująca projekt pod kontrolą źródła](media/ide-tour-image22.png)
 
-Pliki z niezatwierdzonych zmianami mają adnotację na swoich ikonach w okienku rozwiązania, jak pokazano na poniższej ilustracji:
+Pliki z niezatwierdzonymi zmianami mają adnotację w ikonach w okienku rozwiązanie, jak pokazano na poniższej ilustracji:
 
-![Niezatwierdzone pliki w konsoli rozwiązania](media/ide-tour-image23.png)
+![Pliki niezatwierdzone w konsoli rozwiązania](media/ide-tour-image23.png)
 
-Aby uzyskać więcej informacji na temat korzystania z kontroli wersji w programie Visual Studio, zobacz [w artykule Kontrola wersji.](/visualstudio/mac/version-control)
+Aby uzyskać więcej informacji na temat korzystania z kontroli wersji w programie Visual Studio, zobacz artykuł dotyczący [kontroli wersji](/visualstudio/mac/version-control) .
 
-## <a name="related-video"></a>Podobne wideo
+## <a name="related-video"></a>Pokrewne wideo
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Środowiska IDE programu Visual Studio (w systemie Windows)](/visualstudio/ide/visual-studio-ide)
+- [Środowisko IDE programu Visual Studio (w systemie Windows)](/visualstudio/ide/visual-studio-ide)
