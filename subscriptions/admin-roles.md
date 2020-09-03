@@ -1,18 +1,18 @@
 ---
 title: Role administratorów i administratorów w portalu administracyjnym
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 04/07/2020
+ms.date: 09/03/2020
 ms.topic: conceptual
 description: Dowiedz się więcej o rolach administratora i administratora oraz o sposobach przypisywania administratorów.
-ms.openlocfilehash: bf10b95d44a960fea50bff6b2fba7b9a8dc98a26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f70545de45e0de284788ff3552667e9fa9bfb73f
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248442"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426762"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Administratorzy i Administratorzy dla umów dotyczących subskrypcji programu Visual Studio
 
@@ -22,23 +22,24 @@ W nowym portalu administratora subskrypcji programu Visual Studio dla klientów 
 
 **Administratorzy:** Administrator może być przypisany tylko przez administratora. Administrator może zarządzać tylko subskrybentami w umowach, do których przypisuje administrator.
 
+Obejrzyj pokaz dotyczący zarządzania administratorami. 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6L]
 
 ## <a name="assigning-administrators"></a>Przypisywanie administratorów
 Aby przypisać nowych administratorów (administratorów):
 1. Zaloguj się, aby https://manage.visualstudio.com korzystać z adresu e-mail, który został przypisany jako administrator z umową, w której zostały zakupione subskrypcje.
-2. Wybierz kartę z etykietą **Zarządzaj administratorami**.
-3. Wybierz pozycję **Dodaj**.
+2. Kliknij kartę z etykietą **Zarządzaj administratorami**.
+3. Kliknij pozycję **Dodaj**.
    > [!div class="mx-imgBorder"]
-   > ![Dodaj administratorów](_img/admin-roles/add-admins.png "Wybierz blok zarządzanie administratorami, a następnie wybierz pozycję Dodaj, aby przypisać nowych administratorów.")
+   > ![Dodaj administratorów](_img/admin-roles/add-admins.png "Kliknij blok zarządzanie administratorami, a następnie kliknij przycisk Dodaj, aby przypisać nowych administratorów.")
 4. Wypełnij formularz nowymi informacjami administratora.  
    > [!div class="mx-imgBorder"]
-   > ![Dodaj formularz administratora](_img/admin-roles/add-form.png "Wprowadź informacje dotyczące logowania dla nowego administratora i zdecyduj, czy chcesz je utworzyć administratora.  Następnie wybierz pozycję Dodaj.")
+   > ![Dodaj formularz administratora](_img/admin-roles/add-form.png "Wprowadź informacje dotyczące logowania dla nowego administratora i zdecyduj, czy chcesz je utworzyć administratora.  Następnie kliknij przycisk Dodaj.")
 
    > [!NOTE]
    > Jeśli chcesz, aby ten administrator mógł przypisać dodatkowych administratorów, **Pamiętaj o zaznaczeniu pola administratora** .
 
-5. Po wybraniu opcji **Dodaj** , aby przypisać nowego administratora, otrzymają wiadomość e-mail z zaproszeniem do logowania się do portalu.  
+5. Po kliknięciu przycisku **Dodaj** , aby przypisać nowego administratora, otrzymają wiadomość e-mail z zaproszeniem do logowania się do portalu.  
 
 ## <a name="resources"></a>Zasoby
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)

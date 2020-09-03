@@ -2,21 +2,23 @@
 title: Rozpoczynanie pracy z portalem administracyjnym subskrypcji | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
-ms.date: 03/03/2020
+ms.date: 09/03/2020
 ms.topic: overview
 description: Dowiedz się, jak zacząć zarządzać subskrypcjami programu Visual Studio w organizacji za pomocą portalu administratora subskrypcji.
-ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d857d4a1c9bb5568a6e4330851e0cc8a21988146
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249860"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426879"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Omówienie portalu administratora subskrypcji programu Visual Studio
 
 Portal administrowania subskrypcjami programu Visual Studio udostępnia narzędzia do zarządzania subskrypcjami w jednym miejscu w organizacji. 
+
+Zapoznaj się z portalem.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
@@ -34,15 +36,15 @@ Po przypisaniu subskrypcji Karta Zarządzanie subskrybentami zawiera szczegóło
 - Przypisany do nich poziom subskrypcji.
 - Data, do której przypisano swoją subskrypcję.
 - Data wygaśnięcia subskrypcji.
-- Opcjonalny opis tekstu.
-- Wskazanie, czy pobieranie subskrybentów zostało włączone czy wyłączone.
+- Pole odwołania dla dodatkowych notatek.
+- Wskazanie, czy pobieranie subskrybentów jest włączone czy wyłączone.
 - Kraj, w którym się znajdują.
 - Preferencja języka dla wiadomości e-mail z powiadomieniem o przypisaniu z portalu administracyjnego.
 - Opcjonalne pole dla innego adresu e-mail używanego do komunikacji niż logowanie.
 
 W lewym górnym rogu strony istnieje kilka ikon, które można wybrać, aby wyświetlić przegląd przypisania subskrypcji, szczegóły umowy i raport dotyczący maksymalnego użycia.
 
-Aby wyświetlić dodatkowe informacje o liczbie licencji subskrypcji zakupionych, przypisanych i nadal dostępnych w organizacji dla każdej umowy, wybierz górną ikonę, aby włączyć panel slajdu.
+Aby wyświetlić dodatkowe informacje o liczbie licencji subskrypcji zakupionych, przypisanych i nadal dostępnych w organizacji dla każdej umowy, kliknij górną ikonę, aby włączyć panel slajdu.
 > [!div class="mx-imgBorder"]
 > ![Strona subskrybentów portalu administracyjnego subskrypcji programu Visual Studio](_img/using-admin-portal/subscribers-page.png)
 

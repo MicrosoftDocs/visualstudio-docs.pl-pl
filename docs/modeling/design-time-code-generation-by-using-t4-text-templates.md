@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8589be1bd1c1e9ad86a412d4f8bd2630c93a42ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c392862f884fd8082b30cbb673aab116756fdfe
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535996"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426775"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 
@@ -54,7 +54,7 @@ Szablon tekstowy zawiera kombinację tekstu, który ma zostać wygenerowany, i k
 
     Jeśli szablon został dodany do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu, atrybut Language będzie " `VB` ".
 
-4. Dodaj tekst na końcu pliku. Na przykład:
+4. Dodaj tekst na końcu pliku. Przykład:
 
    ```
    Hello, world!
@@ -123,7 +123,7 @@ Szablony tekstowe umożliwiają użycie kodu programu w celu zróżnicowania zaw
 
 Aby debugować szablon tekstowy:
 
-- Wstaw `debug="true"` do `template` dyrektywy. Na przykład:
+- Wstaw `debug="true"` do `template` dyrektywy. Przykład:
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -248,7 +248,7 @@ Aby załadować plik z lokalizacji względem szablonu tekstu, można użyć `thi
 Następnie można napisać:
 
 ```csharp
-<# string fileName = this.Host.ResolvePath("filename.txt");
+<# string filename = this.Host.ResolvePath("filename.txt");
   string [] properties = File.ReadLines(filename);
 #>
 ...
@@ -257,7 +257,7 @@ Następnie można napisać:
 ```
 
 ```vb
-<# Dim fileName = Me.Host.ResolvePath("propertyList.txt")
+<# Dim filename = Me.Host.ResolvePath("propertyList.txt")
    Dim properties = File.ReadLines(filename)
 #>
 ...
@@ -272,7 +272,7 @@ Typ `this.Host` (w języku VB `Me.Host` ) to `Microsoft.VisualStudio.TextTemplat
 
 ### <a name="getting-data-from-visual-studio"></a>Pobieranie danych z programu Visual Studio
 
-Aby skorzystać z usług oferowanych w programie Visual Studio, ustaw `hostSpecific` atrybut i Załaduj `EnvDTE` zestaw. Importuj `Microsoft.VisualStudio.TextTemplating` , który zawiera `GetCOMService()` metodę rozszerzenia.  Następnie można użyć IServiceProvider. GetCOMService (), aby uzyskać dostęp do DTE i innych usług. Na przykład:
+Aby skorzystać z usług oferowanych w programie Visual Studio, ustaw `hostSpecific` atrybut i Załaduj `EnvDTE` zestaw. Importuj `Microsoft.VisualStudio.TextTemplating` , który zawiera `GetCOMService()` metodę rozszerzenia.  Następnie można użyć IServiceProvider. GetCOMService (), aby uzyskać dostęp do DTE i innych usług. Przykład:
 
 ```src
 <#@ template hostspecific="true" language="C#" #>

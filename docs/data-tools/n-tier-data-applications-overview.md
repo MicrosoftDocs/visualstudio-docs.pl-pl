@@ -1,5 +1,5 @@
 ---
-title: Aplikacje warstwowe — Przegląd
+title: N-warstwowe aplikacje dotyczące danych — omówienie
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14527e84d5bbd2d06b2d091ba7a9d4daa9763462
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 445826a2ada7b22201b7dd82948bc8bd5dd3d296
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281958"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426866"
 ---
 # <a name="n-tier-data-applications-overview"></a>N-warstwowe aplikacje dotyczące danych — omówienie
-*N-warstwowe* aplikacje danych to aplikacje danych, które są rozdzielone na wiele *warstw*. Ich inne nazwy to „aplikacje rozproszone” i „aplikacje wielowarstwowe”. Aplikacje n-warstwowe dzielą przetwarzanie na dyskretne warstwy, które są rozkładane między klienta i serwer. Podczas tworzenia aplikacji uzyskujących dostęp do danych należy jednoznacznie odseparować różne warstwy tworzące aplikację.
+*N-warstwowe* aplikacje danych to aplikacje danych, które są rozdzielone na wiele *warstw*. Nazywana również "aplikacjami rozproszonymi" i "aplikacjami wielowarstwowymi", aplikacje n-warstwowe dzielą przetwarzanie na dyskretne warstwy dystrybuowane między klientem a serwerem. Podczas tworzenia aplikacji uzyskujących dostęp do danych należy jednoznacznie odseparować różne warstwy tworzące aplikację.
 
 Typowa aplikacja n-warstwowa zawiera warstwę prezentacji, warstwę środkową i warstwę danych. Najłatwiejszym sposobem rozdzielenia różnych warstw w n-warstwowej aplikacji jest utworzenie dyskretnych projektów dla każdej warstwy, która ma się znaleźć w aplikacji. Na przykład warstwą prezentacji może być aplikacja środowiska Windows Forms, podczas gdy logiką dostępu do danych może być biblioteka klas umieszczona w warstwie środkowej. Ponadto warstwa prezentacji może komunikować się z logiką dostępu do danych w warstwie środkowej za pomocą usługi, takiej jak usługa sieci Web. Rozdzielanie składników aplikacji w oddzielne warstwy ułatwia konserwację i zwiększa skalowalność aplikacji. Wynika to z możliwości łatwiejszego wprowadzania nowych technologii do poszczególnych warstw, bez konieczności zmiany projektu całego rozwiązania. Dodatkowo zazwyczaj n-warstwowe aplikacje przechowują wrażliwe informacje w środkowej warstwie, która utrzymuje izolację od warstwy prezentacji.
 

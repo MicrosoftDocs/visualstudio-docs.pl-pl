@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: d8da94fc7b4735198eafa33edfe72cba0eb1ea59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2312c636f465bd39cdcbc4ca0ab63c107151c5be
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911853"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426736"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Konfigurowanie diagnostyki dla usług w chmurze i maszyn wirtualnych platformy Azure
 W przypadku konieczności rozwiązywania problemów z usługą w chmurze lub maszyną wirtualną platformy Azure można użyć programu Visual Studio, aby łatwiej skonfigurować Diagnostyka Azure. Diagnostyka przechwytuje dane systemowe i rejestruje dane na maszynach wirtualnych i wystąpieniach maszyn wirtualnych, na których działa usługa w chmurze. Dane diagnostyczne są przesyłane do wybranego konta magazynu. Aby uzyskać więcej informacji na temat rejestrowania diagnostycznego na platformie Azure, zobacz [Włączanie rejestrowania diagnostyki dla Web Apps w Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -77,7 +77,7 @@ W programie Visual Studio można zbierać dane diagnostyczne dla ról działają
 
     ![Konto magazynu — okno dialogowe](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796662.png)
 
-   * W przypadku wybrania **Microsoft Azure emulatora magazynu**parametry połączenia są ustawiane na `UseDevelopmentStorage=true` .
+   * W przypadku wybrania **emulator magazynu Microsoft Azure**parametry połączenia są ustawiane na `UseDevelopmentStorage=true` .
    * Jeśli wybierzesz **subskrypcję**, możesz wybrać subskrypcję platformy Azure, której chcesz użyć, a następnie wprowadzić nazwę konta. Aby zarządzać subskrypcjami platformy Azure, wybierz pozycję **Zarządzaj kontami**.
    * W przypadku wybrania **ręcznie wprowadzonych poświadczeń**wprowadź nazwę i klucz konta platformy Azure, którego chcesz użyć.
 5. Aby wyświetlić okno dialogowe **Konfiguracja diagnostyki** , wybierz pozycję **Konfiguruj**. Każda karta reprezentuje źródło danych diagnostycznych, które można zbierać, z wyjątkiem katalogów **ogólnych** i **dzienników**. Domyślna karta **Ogólne** oferuje następujące opcje zbierania danych diagnostycznych: **tylko błędy**, **wszystkie informacje**i **plany niestandardowe**. Opcja **tylko błędy** domyślne używa najmniejszej ilości miejsca w magazynie, ponieważ nie przesyła ostrzeżeń ani śledzenia komunikatów. Opcja **wszystkie informacje** transferuje najwięcej informacji, korzysta z większości magazynu i dlatego jest najbardziej kosztowną opcją.
