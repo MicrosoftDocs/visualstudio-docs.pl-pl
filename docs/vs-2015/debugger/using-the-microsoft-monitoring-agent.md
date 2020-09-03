@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f3f70d3799bfae96b15c13a42c3c11246d1e89ba
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520578"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Korzystanie z programu Microsoft Monitoring Agent
@@ -36,10 +36,10 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
 3. [Krok 3. zapisywanie zarejestrowanych zdarzeń](#SaveEvents)  
   
-## <a name="step-1-set-up-microsoft-monitoring-agent"></a><a name="SetUpMonitoring"></a>Krok 1. Konfigurowanie Microsoft Monitoring Agent  
+## <a name="step-1-set-up-microsoft-monitoring-agent"></a><a name="SetUpMonitoring"></a> Krok 1. Konfigurowanie Microsoft Monitoring Agent  
  Skonfiguruj autonomiczny Agent na serwerze sieci Web, aby przeprowadzić monitorowanie lokalne bez zmiany aplikacji. Jeśli używasz programu System Center 2012, zobacz [instalowanie Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465156.aspx).  
   
-### <a name="set-up-the-standalone-agent"></a><a name="SetUpStandaloneMMA"></a>Konfigurowanie agenta autonomicznego  
+### <a name="set-up-the-standalone-agent"></a><a name="SetUpStandaloneMMA"></a> Konfigurowanie agenta autonomicznego  
   
 1. Upewnij się, że:  
   
@@ -68,7 +68,7 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
 ### <a name="q--a"></a>Pytania i odpowiedzi  
   
-#### <a name="q-what-if-i-have-windows-powershell-20"></a><a name="PowerShell2"></a>P: co w przypadku, gdy mam program Windows PowerShell 2,0?  
+#### <a name="q-what-if-i-have-windows-powershell-20"></a><a name="PowerShell2"></a> P: co w przypadku, gdy mam program Windows PowerShell 2,0?  
  Odp **.:** Zdecydowanie zalecamy użycie programu PowerShell 3,0. W przeciwnym razie konieczne będzie zaimportowanie Microsoft Monitoring Agent poleceń cmdlet programu PowerShell przy każdym uruchomieniu programu PowerShell. Nie będzie też można uzyskać dostępu do zawartości pomocy do pobrania.  
   
 1. Otwórz program **Windows PowerShell** lub **Windows PowerShell ISE** okno wiersza polecenia jako administrator.  
@@ -79,8 +79,8 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
 3. [Odwiedź witrynę TechNet](https://technet.microsoft.com/systemcenter/default) , aby uzyskać najnowszą zawartość pomocy.  
   
-#### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a>P: Jak mogę skonfigurować uprawnienia dla puli aplikacji?  
- Odp **.:** Użyj polecenia **icacls** systemu Windows lub Eksploratora Windows (lub Eksploratora plików). Przykład:  
+#### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a> P: Jak mogę skonfigurować uprawnienia dla puli aplikacji?  
+ Odp **.:** Użyj polecenia **icacls** systemu Windows lub Eksploratora Windows (lub Eksploratora plików). Na przykład:  
   
 - Aby skonfigurować uprawnienia za pomocą polecenia **icacls** systemu Windows:  
   
@@ -110,7 +110,7 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
   7. Upewnij się, że Pula aplikacji ma uprawnienia do **wykonywania &** .  
   
-## <a name="step-2-start-monitoring-your-app"></a><a name="MonitorEvents"></a>Krok 2. rozpoczęcie monitorowania aplikacji  
+## <a name="step-2-start-monitoring-your-app"></a><a name="MonitorEvents"></a> Krok 2. rozpoczęcie monitorowania aplikacji  
  Aby rozpocząć monitorowanie aplikacji, użyj polecenia [Start-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472749(v=sc.20).aspx) środowiska Windows PowerShell. W przypadku korzystania z programu System Center 2012 zobacz [monitorowanie aplikacji sieci Web za pomocą Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).  
   
 1. Na serwerze sieci Web otwórz okno **programu Windows PowerShell** lub **Windows PowerShell ISE** oknie wiersza polecenia jako administrator.  
@@ -137,7 +137,7 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
     |Element|Opis|  
     |-|-|  
-    |*"\<appName>"*|Określ ścieżkę do witryny sieci Web i nazwy aplikacji sieci Web w usługach IIS. Jeśli wolisz, możesz również uwzględnić ścieżkę IIS.<br /><br /> *" \<IISWebsiteName> \\<IISWebAppName \> "*<br /><br /> -lub-<br /><br /> **"IIS: \ sites** * \\<IISWebsiteName \> \\<IISWebAppName \> "*<br /><br /> Tę ścieżkę można znaleźć w Menedżerze usług IIS. Przykład:<br /><br /> ![Ścieżka do witryny sieci Web i aplikacji sieci Web usług IIS](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> Możesz również użyć poleceń [Get-Web](https://technet.microsoft.com/library/ee807832.aspx) i [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|  
+    |*"\<appName>"*|Określ ścieżkę do witryny sieci Web i nazwy aplikacji sieci Web w usługach IIS. Jeśli wolisz, możesz również uwzględnić ścieżkę IIS.<br /><br /> *" \<IISWebsiteName> \\<IISWebAppName \> "*<br /><br /> -lub-<br /><br /> **"IIS: \ sites** * \\<IISWebsiteName \> \\<IISWebAppName \> "*<br /><br /> Tę ścieżkę można znaleźć w Menedżerze usług IIS. Na przykład:<br /><br /> ![Ścieżka do witryny sieci Web i aplikacji sieci Web usług IIS](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> Możesz również użyć poleceń [Get-Web](https://technet.microsoft.com/library/ee807832.aspx) i [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|  
     |*\<monitoringMode>*|Określ tryb monitorowania:<br /><br /> <ul><li>**Monitoruj**: rejestruje minimalne szczegóły dotyczące zdarzeń wyjątków i zdarzeń wydajności. Ten tryb używa domyślnego planu kolekcji.</li><li>**Śledzenie**: rejestrowanie szczegółów poziomu funkcji lub monitorowanie aplikacji SharePoint 2010 i SharePoint 2013 przy użyciu określonego planu kolekcji. Ten tryb może sprawiać, że aplikacja będzie działać wolniej.<br /><br /> <ul><li>[P: Jak mogę skonfigurować uprawnienia dla puli aplikacji?](#FullPermissionsITLog)</li><li>[P: Jak mogę uzyskać najwięcej danych bez spowalniania mojej aplikacji?](#Minimizing)</li></ul><br />     Ten przykład rejestruje zdarzenia dla aplikacji programu SharePoint hostowanej w witrynie programu SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp", śledzenie "C:\Program Files\Microsoft monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Niestandardowe**: rejestruje szczegóły niestandardowe przy użyciu określonego niestandardowego planu kolekcji. Należy ponownie uruchomić monitorowanie, jeśli po zakończeniu monitorowania już zostanie przeprowadzone Edytowanie planu zbierania danych.</li></ul>|  
     |*"\<outputPath>"*|Określ pełną ścieżkę katalogu do przechowywania dzienników IntelliTrace. Przed rozpoczęciem monitorowania upewnij się, że ten katalog został utworzony.|  
     |*\<UInt32>*|Określ maksymalny rozmiar dziennika IntelliTrace. Domyślny maksymalny rozmiar dziennika IntelliTrace to 250 MB.<br /><br /> Gdy dziennik osiągnie ten limit, Agent zastępuje najwcześniejsze wpisy, aby miejsce na więcej wpisów. Aby zmienić ten limit, użyj opcji **-wartość właściwości maximumfilesizeinmegabytes** lub Edytuj `MaximumLogFileSize` atrybut w planie kolekcji.|  
@@ -149,7 +149,7 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
 ### <a name="q--a"></a>Pytania i odpowiedzi  
   
-#### <a name="q-how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a>P: Jak mogę uzyskać najwięcej danych bez spowalniania mojej aplikacji?  
+#### <a name="q-how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a> P: Jak mogę uzyskać najwięcej danych bez spowalniania mojej aplikacji?  
  Odp **.:** Microsoft Monitoring Agent może zbierać wiele danych i wpływać na wydajność aplikacji w zależności od wybranych danych do zebrania i sposobu ich zbierania. Oto kilka sposobów na uzyskanie większości danych bez spowalniania aplikacji:  
   
 - W przypadku aplikacji sieci Web i aplikacji programu SharePoint Agent rejestruje dane dla każdej aplikacji, która współużytkuje określoną pulę aplikacji. Może to spowolnić każdą aplikację, która współużytkuje tę samą pulę aplikacji, nawet jeśli można ograniczyć kolekcję do modułów dla jednej aplikacji. Aby uniknąć spowolnienia innych aplikacji, należy hostować każdą aplikację we własnej puli aplikacji.  
@@ -162,7 +162,7 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
    Jeśli `enabled` atrybut nie istnieje, zdarzenie jest włączone.  
   
-   Przykład:  
+   Na przykład:  
   
   - Wyłącz zdarzenia Windows Workflow dla aplikacji, które nie używają przepływu pracy systemu Windows.  
   
@@ -230,7 +230,7 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
   Agent rejestruje wartości dla `id` , `Employee.Id` `Employee.Name` i `Employee` obiekt zwrócony z `AlterEmployee` metody. Jednak Agent nie rejestruje informacji o `Address` obiekcie innym niż to, czy ma on wartość null, czy nie. Agent nie rejestruje również danych o zmiennych lokalnych w `AlterEmployee` metodzie, chyba że inne metody używają tych zmiennych lokalnych jako parametrów, w których są one rejestrowane jako parametry metody.  
   
-## <a name="step-3-save-recorded-events"></a><a name="SaveEvents"></a>Krok 3. zapisywanie zarejestrowanych zdarzeń  
+## <a name="step-3-save-recorded-events"></a><a name="SaveEvents"></a> Krok 3. zapisywanie zarejestrowanych zdarzeń  
  Po znalezieniu błędu lub problemu z wydajnością Zapisz zarejestrowane zdarzenia w dzienniku IntelliTrace. Agent tworzy dziennik tylko wtedy, gdy zarejestrował zdarzenia. W przypadku korzystania z programu System Center 2012 zobacz [monitorowanie aplikacji sieci Web za pomocą Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).  
   
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Zapisuj zarejestrowane zdarzenia, ale Kontynuuj monitorowanie  
@@ -242,11 +242,11 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
     **Checkpoint-WebApplicationMonitoring** *" \<IISWebsiteName> \\<IISWebAppName \> "*  
   
-    \-oraz  
+    \- oraz  
   
     **Checkpoint-WebApplicationMonitoring "IIS: \ sites** * \\<IISWebsiteName \> \\<IISWebAppName \> "*  
   
-    Przykład:  
+    Na przykład:  
   
     **PS C: \\>Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
@@ -272,7 +272,7 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
     **Stop-WebApplicationMonitoring** *" \<IISWebsiteName> \\<IISWebAppName \> "*  
   
-    \-oraz  
+    \- oraz  
   
     **Stop-WebApplicationMonitoring "IIS: \ sites** * \\<IISWebsiteName \> \\<IISWebAppName \> "*  
   
@@ -280,11 +280,11 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
     **Stop-WebApplicationMonitoring — wszystko**  
   
-    Przykład:  
+    Na przykład:  
   
     **PS C: \\>Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
-    \-oraz  
+    \- oraz  
   
     **PS C: \\>Stop WebApplicationMonitoring "IIS: \ sites\Fabrikam\FabrikamFiber.Web"**  
   

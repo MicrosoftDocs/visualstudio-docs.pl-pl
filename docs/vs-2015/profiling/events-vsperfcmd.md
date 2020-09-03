@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d24fc7a01a8eebe356f37704c1a821332f5dca1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850764"
 ---
 # <a name="events-vsperfcmd"></a>Zdarzenia (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Opcja **zdarzenia** VSPerfCmd. exe steruje rejestrowaniem śledzenia zdarzeń systemu Windows (ETW). Dane ETW są zapisywane w pliku ETL, który jest oddzielony od pliku danych profilera. Dane można wyświetlić w raporcie za pomocą polecenia [VSPerfReport](../profiling/vsperfreport.md) /Summary: ETW.  
+Opcja **zdarzenia** VSPerfCmd.exe steruje rejestrowaniem śledzenia zdarzeń systemu Windows (ETW). Dane ETW są zapisywane w pliku ETL, który jest oddzielony od pliku danych profilera. Dane można wyświetlić w raporcie za pomocą polecenia [VSPerfReport](../profiling/vsperfreport.md) /Summary: ETW.  
   
  Opcję **zdarzenia** można wywołać w dowolnym momencie przed wywołaniem polecenia VSPerfCmd **Shutdown** w celu zatrzymania profilowania.  
   
@@ -30,7 +30,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 ```  
   
 #### <a name="parameters"></a>Parametry  
- **On**&#124;**Off**  
+ **Na**&#124;**wyłączone**  
  Uruchamia lub kończy zbieranie danych zdarzeń.  
   
  `Guid`  
@@ -47,10 +47,10 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
   
  Opcja **Events** umożliwia zrozumienie następujących słów kluczowych jądra jako nazw dostawców:  
   
- **Podstawowych**  
+ **Proces**  
  Przetwarzanie zdarzeń  
   
- **Wątek**  
+ **Nici**  
  Zdarzenia wątku  
   
  **Obraz**  
@@ -68,10 +68,10 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  **Pagefault**  
  Słabe błędy stron  
   
- **Sieci**  
+ **Sieć**  
  Zdarzenia sieciowe  
   
- **Registry**  
+ **Rejestr**  
  Zdarzenia dostępu do rejestru  
   
  Należy pamiętać, że dostawca jądra może być tylko włączony. Nie można go wyłączyć ani zmienić jego flag, dopóki monitor nie zostanie zamknięty.  
@@ -90,6 +90,6 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
   
 ## <a name="see-also"></a>Zobacz też  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Profilowania aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

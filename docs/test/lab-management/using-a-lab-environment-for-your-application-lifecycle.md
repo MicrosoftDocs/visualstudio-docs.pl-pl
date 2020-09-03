@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
-ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88144691"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Używanie środowiska laboratoryjnego do DevOps
@@ -120,7 +120,7 @@ Aby uzyskać informacje o programie SCVMM, zobacz [Virtual Machine Manager](/azu
 
 Poniżej przedstawiono kilka dodatkowych koncepcji, z którymi należy się zapoznać przed kontynuowaniem:
 
-|Termin|Opis|
+|Okres|Opis|
 |-|-----------------|
 |Centrum laboratoryjne|Obszar Microsoft Test Manager, w którym tworzysz środowiska laboratoryjne i zarządzaj nimi.|
 |Laboratorium projektowe platformy Azure DevOps|Kolekcja środowisk laboratoryjnych, które zostały skonfigurowane, aby można było połączyć się z nimi i uruchamiać maszyny wirtualne.|
@@ -144,7 +144,7 @@ Aby uzyskać informacje o konfigurowaniu środowisk, zobacz:
 * [Tworzenie środowiska izolowanego od sieci i korzystanie z niego](https://msdn.microsoft.com/library/ee518924.aspx)
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Instalowanie i konfigurowanie agentów testowych](../../test/lab-management/install-configure-test-agents.md)
 * [Przewodnik Visual Studio Lab Management](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)

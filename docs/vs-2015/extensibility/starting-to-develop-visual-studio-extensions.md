@@ -1,5 +1,5 @@
 ---
-title: Rozpoczynanie tworzenia rozszerzeń | Dokumentacja firmy Microsoft
+title: Rozpoczęcie opracowywania rozszerzeń | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,41 +12,41 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d62a4c6cc45681fe6a66ae57df2e1da1d1cc12e0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850598"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Rozpoczynanie tworzenia rozszerzeń Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Jeśli nigdy nie zostały zapisane rozszerzenia programu Visual Studio przed, prawdopodobnie masz kilka pytań. Wymieniono niektóre najbardziej typowe w tym miejscu. Jeśli nie widzisz informacji szukasz, użyj przycisków opinii (**ta strona była pomocna?** u dołu ekranu) aby poprosić o co chcesz.
+Jeśli wcześniej nie zapisano rozszerzenia programu Visual Studio, prawdopodobnie masz pewne pytania. Poniżej wymieniono niektóre z najpopularniejszych. Jeśli nie widzisz szukanych informacji, użyj przycisków opinii (**czy ta strona była pomocna?** w dolnej części ekranu), aby dowiedzieć się, co chcesz zrobić.
 
-## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Jakie oprogramowanie należy do tworzenia rozszerzenia programu Visual Studio?
- Musisz zainstalować Visual Studio 2015 SDK oprócz programu Visual Studio 2015, aby tworzyć rozszerzenia programu Visual Studio.   Visual Studio 2015 SDK można zainstalować jako część regularnych instalacji, lub można zainstalować ją później. Aby uzyskać więcej informacji na temat instalowania programu Visual Studio SDK, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Jakie oprogramowanie jest potrzebne do opracowania rozszerzeń programu Visual Studio?
+ Aby tworzyć rozszerzenia programu Visual Studio, należy zainstalować zestaw SDK programu Visual Studio 2015 oprócz programu Visual Studio 2015.   Zestaw SDK programu Visual Studio 2015 można zainstalować w ramach zwykłej konfiguracji. można też zainstalować go później. Aby uzyskać więcej informacji na temat instalowania zestawu Visual Studio SDK, zobacz [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Jakiego rodzaju rzeczy można zrobić za pomocą rozszerzeń programu Visual Studio?
- Nie ma użytkownika limit, jeśli chodzi o opracowująca w wyobraźni inne rozszerzenia programu Visual Studio. Oczywiście większość rozszerzenia mają coś zrobić w pisaniu kodu, ale które nie mają w przypadku. Poniżej przedstawiono kilka przykładów rodzajów rozszerzeń, które można tworzyć:
+ Limit czasu dla przestrzeni powietrznej, który jest dostępny do urojonia różnych rozszerzeń programu Visual Studio. Oczywiście większość rozszerzeń ma coś do wykonania w przypadku pisania kodu, ale nie musi to mieć znaczenia. Poniżej przedstawiono kilka przykładów typów rozszerzeń, które można skompilować:
 
-- Obsługa języków, które nie są uwzględnione w programie Visual Studio, z obsługą kompilatora i debugowania, IntelliSense i kolorowanie składni
+- Obsługa języków, które nie znajdują się w programie Visual Studio, z kolorami składni, technologią IntelliSense i obsługą kompilatora i debugowania
 
-- Narzędzia umożliwiające zwiększenie wydajności, które rozszerzają podstawowe środowiska IDE w usłudze dodatkowe szablony, okna dialogowe refaktoryzacji, nowy kod lub okna narzędzi
+- Narzędzia do zwiększania produktywności, które zwiększają podstawowe środowisko IDE dzięki dodatkowym szablonom, refaktoryzacji kodu, nowym dialogom lub oknach narzędzi
 
-- Projektant specyficznego dla domeny dla scenariuszy, takich jak obsługa danych projektu lub w chmurze
+- Projektantów specyficznych dla domeny na potrzeby scenariuszy, takich jak projektowanie danych lub obsługa chmury
 
-  Przykłady rozszerzeń można znaleźć w [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Możesz również skorzystać z przyjrzeć się [Otwórz źródło rozszerzenia programu Visual Studio](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).
+  Przykłady rozszerzeń można znaleźć w [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Możesz również zapoznać się z [rozszerzeniami Open Source programu Visual Studio](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).
 
-## <a name="which-visual-studio-features-can-i-extend"></a>Funkcje programu Visual Studio, które można rozszerzyć?
- Teoretycznie można rozszerzyć o niemal dowolnym część programu Visual Studio: menu, paski narzędzi, polecenia, systemu windows, rozwiązania, projekty, edytory i tak dalej.
+## <a name="which-visual-studio-features-can-i-extend"></a>Które funkcje programu Visual Studio można rozciągnąć?
+ Teoretycznie można przystąpić tylko do dowolnej części programu Visual Studio: menu, paski narzędzi, polecenia, okna, rozwiązania, projekty, Edytory i tak dalej.
 
- W praktyce znaleźliśmy, czy funkcje, których większość osób chce rozszerzyć polecenia, menu i paski narzędzi, windows, funkcji IntelliSense i projektów. Poniżej podano linki do odpowiednich sekcji:
+ W tej sprawie znaleźliśmy, że funkcje, które większość osób chce zwiększyć, to polecenia, menu i paski narzędzi, Windows, IntelliSense i projekty. Poniżej znajdują się linki do odpowiednich sekcji:
 
-- [Rozszerzenie menu i poleceń](../extensibility/extending-menus-and-commands.md): Dodawanie własnych elementów do programu Visual Studio, menu i paski narzędzi. Można je uruchomić nowe funkcje programu Visual Studio lub własnych aplikacji zewnętrznych pomocnika. Można również dołączyć skrótów niestandardowych elementów menu.
+- [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md): Dodaj własne elementy do menu i pasków narzędzi programu Visual Studio. Można ich używać do uruchamiania nowych funkcji programu Visual Studio lub własnych zewnętrznych aplikacji pomocniczych. Możesz również udostępnić niestandardowe skróty dla elementów menu.
 
-- [Rozszerzanie i dostosowywanie narzędzi Windows](../extensibility/extending-and-customizing-tool-windows.md): rozszerzanie istniejących narzędzi systemu windows lub tworzenie własnych narzędzi okien. Na przykład można dodać nowe właściwości do **właściwości**, lub można utworzyć nowego okna narzędzi, aby dodać dodatkowe funkcje.
+- [Rozszerzanie i dostosowywanie okien narzędzi](../extensibility/extending-and-customizing-tool-windows.md): rozszerzanie istniejących okien narzędzi lub tworzenie własnych okien narzędzi. Na przykład można dodać nowe właściwości do **Właściwości**lub utworzyć nowe okno narzędzi, aby dodać dodatkowe funkcje.
 
-- [Edytora i rozszerzenia usługi w języka](../extensibility/editor-and-language-service-extensions.md): dodać własne dostosowania funkcja IntelliSense obsługująca dla języków Visual Studio lub Utwórz obsługę nowych języków programowania. Można utworzyć nowego uzupełniania instrukcji, sugestie i etykietek narzędzi Szybkieinfo nowe. Dzięki żarówkom możesz dodać refaktoryzacji sugestie i poprawek kodu do obsługi nowych języków programowania.
+- [Rozszerzenia edytora i usługi językowej](../extensibility/editor-and-language-service-extensions.md): dodawanie własnych dostosowań IntelliSense dostarczonych dla języków Visual Studio lub tworzenie obsługi nowych języków programowania. Można tworzyć nowe uzupełniania instrukcji, sugestie i nowe etykietki narzędzi sekcji szybkich informacji. Żarówki umożliwiają dodawanie sugestii refaktoryzacji i poprawek kodu do obsługi nowych języków programowania.
 
 - [Rozszerzanie projektów](../extensibility/extending-projects.md)
 
@@ -56,36 +56,36 @@ Jeśli nigdy nie zostały zapisane rozszerzenia programu Visual Studio przed, pr
 
 - [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 
-- [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)
+- [Visual Studio Shell (izolowany)](../extensibility/visual-studio-isolated-shell.md)
 
-## <a name="BKMK_ProjectTemplate"></a> Szablony projektów, które są dostarczane przez VSSDK?
- Dwa główne typy rozszerzeń to rozszerzenia pakietów VSPackage i MEF. Ogólnie rzecz biorąc rozszerzenia pakietu VSPackage są używane dla rozszerzeń korzystających z lub rozszerzenia poleceń, okien narzędzi i projektów. Rozszerzenia MEF są używane do rozszerzenie lub dostosowanie edytora programu Visual Studio.
+## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a> Jakie szablony projektów są udostępniane przez VSSDK?
+ Dwa główne typy rozszerzeń to rozszerzenia pakietów VSPackage i MEF. Ogólnie rzecz biorąc, rozszerzenia pakietu VSPackage są używane dla rozszerzeń, które używają lub rozszerzają polecenia, okna narzędzi i projekty. Rozszerzenia MEF służą do rozszerzania lub dostosowywania edytora programu Visual Studio.
 
- Rozszerzenia programu Visual C# i Visual Basic VSSDK udostępnia pusty szablon projektu VSIX, używanego razem z nowych szablonów elementów, które tworzyć polecenia menu, okien narzędzi i rozszerzenia edytora. Aby uzyskać więcej informacji, zobacz [What's New in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md). Można też użyć tego szablonu, szablony projektów pakietu, fragmenty kodu i innych artefaktów, w celu dystrybucji do innych użytkowników.
+ W przypadku rozszerzeń Visual C# i Visual Basic, VSSDK zawiera pusty szablon projektu VSIX, którego można użyć razem z szablonami nowych elementów, które tworzą polecenia menu, okna narzędzi i rozszerzenia edytora. Aby uzyskać więcej informacji, zobacz [co nowego w zestawie SDK programu Visual Studio 2015](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md). Tego szablonu można również użyć do spakowania szablonów projektu, fragmentów kodu i innych artefaktów do dystrybucji dla innych użytkowników.
 
- Dla języka C++ Kreator pakietu VSPackage zawiera kod, aby dodać polecenia menu, okien narzędzi i edytorach niestandardowych.
+ W przypadku języka C++ Kreator pakietu VSPackage udostępnia kod umożliwiający Dodawanie poleceń menu, okien narzędzi i edytorów niestandardowych.
 
- Szablon Isolated Shell jest używany do pakietu rozszerzenia w wersji powłoki programu Visual Studio, którą można oznaczyć i rozpowszechniać jako własny. Poniższe tematy przedstawiają, jak rozpocząć pracę z każdym rodzajem rozszerzenia:
+ Szablon powłoki izolowanej służy do pakowania rozszerzenia w wersji powłoki programu Visual Studio, którą można oznakować i rozpowszechniać jako własne. W poniższych tematach pokazano, jak rozpocząć pracę z każdym rodzajem rozszerzenia:
 
-- Polecenia menu: [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+- Polecenia menu: [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-- Narzędzia systemu windows: [Tworzenie rozszerzenia za pomocą okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md)
+- Okna narzędzi: [Tworzenie rozszerzenia przy użyciu okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md)
 
-- Rozszerzenia edytora: [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- Rozszerzenia edytora: [Tworzenie rozszerzenia z szablonem elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
-- Podstawowe pakietów VSPackage: [Tworzenie rozszerzenia za pomocą pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+- Podstawowa pakietów VSPackage: [Tworzenie rozszerzenia za pomocą pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-- Szablon projektu VSIX: [rozpoczęcie korzystania z szablonu projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
+- Szablon projektu VSIX: [wprowadzenie z szablonem projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
-- Program Visual Studio isolated shell: [wskazówki: Tworzenie podstawowej aplikacji izolowanej powłoki](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+- Izolowana powłoka programu Visual Studio: [Przewodnik: Tworzenie podstawowej aplikacji powłoki izolowanej](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
 
-## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Jak uzyskać Moje rozszerzenia, aby wyglądał jak Visual Studio?
- Doskonałe porady dotyczące projektowania interfejsu użytkownika dla rozszerzenia w [dotyczące środowiska użytkownika w usłudze Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
+## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Jak mogę Uzyskaj moje rozszerzenie, aby wyglądało jak Visual Studio?
+ Uzyskaj doskonałe wskazówki dotyczące projektowania interfejsu użytkownika dla rozszerzenia w [wytycznych dotyczących środowiska użytkownika programu Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
 
-## <a name="where-can-i-find-examples-of-vssdk-code"></a>Gdzie mogę znaleźć przykłady kodu VSSDK
- Mają łącza wymienione w poprzedniej sekcji instruktaży krok po kroku, które pokazują, jak implementować określone funkcje. Możesz również znaleźć "open source" VSSDK przykłady w witrynie GitHub pod [Visual Studio Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
+## <a name="where-can-i-find-examples-of-vssdk-code"></a>Gdzie mogę znaleźć przykłady kodu VSSDK?
+ Wszystkie linki wymienione w poprzedniej sekcji zawierają przewodnik krok po kroku pokazujący sposób implementacji określonych funkcji. Przykłady VSSDK Open Source można znaleźć w witrynie GitHub w [przykładach programu Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
-## <a name="how-can-i-distribute-my-extension"></a>Jak można rozpowszechniać Moje rozszerzenie?
- Można zainstalować rozszerzenia na innym komputerze lub wysyłania dla Twoich znajomych, jako plik .vsix, instalowania, klikając go dwukrotnie. Możesz dowiedzieć się więcej na temat pakietów VSIX w [wysyłania rozszerzenia programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
+## <a name="how-can-i-distribute-my-extension"></a>Jak mogę rozpowszechnić rozszerzenie?
+ Możesz zainstalować rozszerzenie na innym komputerze lub wysłać je do znajomych jako plik. vsix, który instalujesz, klikając go dwukrotnie. Więcej informacji o pakietach VSIX można znaleźć podczas [wysyłania rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- Można również publikować swoje rozszerzenie w galerii Visual Studio, dzięki czemu widoczne dla dużej liczby klientów w programie Visual Studio. Na przykład pakowania rozszerzenie w galerii, zobacz [przewodnik: publikowanie rozszerzenia programu Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Aby uzyskać więcej informacji na temat co należy zrobić, aby opublikować w galerii, zobacz [produkty i rozszerzenia programu Visual Studio](https://visualstudiogallery.msdn.microsoft.com/).
+ Możesz również opublikować swoje rozszerzenie w galerii programu Visual Studio, co sprawia, że jest widoczne dla dużej liczby klientów programu Visual Studio. Przykład tworzenia pakietów dla galerii można znaleźć w [przewodniku: Publikowanie rozszerzenia programu Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Aby uzyskać więcej informacji o tym, co należy zrobić w celu opublikowania w galerii, zobacz [produkty i rozszerzenia dla programu Visual Studio](https://visualstudiogallery.msdn.microsoft.com/).

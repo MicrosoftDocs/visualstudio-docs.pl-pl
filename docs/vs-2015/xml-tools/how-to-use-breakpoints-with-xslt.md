@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0519c3ab19e7d36aa26ea2f462c8a4571b9f8b32
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656304"
 ---
-# <a name="how-to-use-breakpoints-with-xslt"></a>Instrukcje: używanie punktów przerwania w kodzie XSLT
+# <a name="how-to-use-breakpoints-with-xslt"></a>Instrukcje: Używanie punktów przerwania w języku XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Punkty przerwania można ustawić w arkuszu stylów XSLT lub w dokumencie źródłowym XML. Jeśli ustawisz punkt przerwania na znaczniku, po rozpoczęciu wykonywania punkt przerwania przejdzie do następnej instrukcji, która zawiera informacje o wierszu źródła.
@@ -32,7 +32,7 @@ Punkty przerwania można ustawić w arkuszu stylów XSLT lub w dokumencie źród
 
 2. Umieść kursor w lokalizacji punktu przerwania, kliknij prawym przyciskiem myszy, wskaż punkt **przerwania**, a następnie kliknij polecenie **Wstaw punkt przerwania**.
 
-3. Kliknij przycisk Przeglądaj ( **..** .) w polu **wejściowym** okna właściwości dokumentu.
+3. Kliknij przycisk Przeglądaj (**..**.) w polu **wejściowym** okna właściwości dokumentu.
 
 4. Znajdź dokument źródłowy XML i kliknij przycisk **Otwórz**.
 
@@ -49,7 +49,7 @@ Punkty przerwania można ustawić w arkuszu stylów XSLT lub w dokumencie źród
 
 2. Umieść kursor w lokalizacji punktu przerwania, kliknij prawym przyciskiem myszy, wskaż punkt **przerwania**, a następnie kliknij polecenie **Wstaw punkt przerwania**.
 
-3. Kliknij przycisk przeglądania Przeglądaj ( **...** ) w polu **arkusz stylów** okna właściwości dokumentu.
+3. Kliknij przycisk przeglądania Przeglądaj (**...**) w polu **arkusz stylów** okna właściwości dokumentu.
 
 4. Znajdź dokument źródłowy XML i kliknij przycisk **Otwórz**.
 

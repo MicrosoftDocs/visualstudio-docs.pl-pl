@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f2d9b958dacfb35877abc9ad1e83a349e43a7af0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74296869"
 ---
 # <a name="walkthrough-building-an-application"></a>Wskazówki: kompilowanie aplikacji
@@ -46,7 +46,7 @@ Ten temat zawiera następujące sekcje:
 
     ![Okno dialogowe rozszerzenia i aktualizacje](../ide/media/buildwalk-extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")
 
-4. Na liście wyników wybierz opcję **wprowadzenie do kompilowania aplikacji WPF (wizualizacji C#)** lub **wprowadzenie do kompilowania aplikacji WPF (Visual Basic)** .
+4. Na liście wyników wybierz opcję **wprowadzenie do kompilowania aplikacji WPF (Visual C#)** lub **wprowadzenie do kompilowania aplikacji WPF (Visual Basic)**.
 
 5. Wybierz przycisk **Pobierz** , a następnie wybierz przycisk **Zamknij** .
 
@@ -60,19 +60,19 @@ Ten temat zawiera następujące sekcje:
 
 2. W **zainstalowanej** kategorii wybierz kategorię **przykłady** , aby wyświetlić wprowadzenie do kompilowania przykładowych aplikacji WPF.
 
-3. Nazwij rozwiązanie `IntroWPFcsharp` dla wizualizacji C#.
+3. Nazwij rozwiązanie `IntroWPFcsharp` dla języka Visual C#.
 
      ![Nowy projekt, okno dialogowe, zainstalowane przykłady](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
 
      LUB
 
-     Nadaj nazwę `IntroWPFvb` rozwiązanie Visual Basic.
+     Nazwij rozwiązanie `IntroWPFvb` dla Visual Basic.
 
      ![Okno dialogowe Nowy projekt, Visual Basic przykład](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
 
 4. Wybierz przycisk **OK** .
 
-## <a name="BKMK_CreateBuildConfig"></a>Utwórz niestandardową konfigurację kompilacji
+## <a name="create-a-custom-build-configuration"></a><a name="BKMK_CreateBuildConfig"></a> Utwórz niestandardową konfigurację kompilacji
 
 Podczas tworzenia rozwiązania, debugowanie i wydanie konfiguracji kompilacji oraz ich domyślne obiekty docelowe platformy są definiowane automatycznie dla rozwiązania. Następnie można dostosować te konfiguracje lub utworzyć własne. Konfiguracje kompilacji określają typ kompilacji. Platformy kompilacji określają system operacyjny, dla którego aplikacja jest przeznaczona dla danej konfiguracji. Aby uzyskać więcej informacji, zobacz [Omówienie konfiguracji kompilacji](../ide/understanding-build-configurations.md), [zrozumienie platform kompilacji](../ide/understanding-build-platforms.md)oraz [konfiguracje debugowania i wydania projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
@@ -86,7 +86,7 @@ Ustawienia konfiguracji i platformy można zmienić lub utworzyć przy użyciu o
 
 2. Na liście **Konfiguracja rozwiązania aktywnego** wybierz pozycję **Nowy**.
 
-3. W oknie dialogowym **Nowa konfiguracja rozwiązania** Nazwij nową konfigurację `Test`, skopiuj ustawienia z istniejącej konfiguracji debugowania, a następnie wybierz przycisk **OK** .
+3. W oknie dialogowym **Nowa konfiguracja rozwiązania** Nazwij nową konfigurację `Test` , skopiuj ustawienia z istniejącej konfiguracji debugowania, a następnie wybierz przycisk **OK** .
 
     ![Okno dialogowe Nowa konfiguracja rozwiązania](../ide/media/buildwalk-newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
 
@@ -106,7 +106,7 @@ Ustawienia konfiguracji i platformy można zmienić lub utworzyć przy użyciu o
 
    ![Opcja konfiguracji rozwiązania standardowy pasek narzędzi](../ide/media/buildwalk-standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
 
-## <a name="BKMK_building"></a>Kompilowanie aplikacji
+## <a name="build-the-application"></a><a name="BKMK_building"></a> Kompilowanie aplikacji
 
 Następnie można skompilować rozwiązanie przy użyciu konfiguracji kompilacji niestandardowej.
 
@@ -120,15 +120,15 @@ Następnie można skompilować rozwiązanie przy użyciu konfiguracji kompilacji
 
   ![Okno Dane wyjściowe Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
 
-  Rysunek 2. ostrzeżenia C# wizualne
+  Rysunek 2. ostrzeżenia dotyczące języka Visual C#
 
-  ![Okno Dane wyjściowe Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+  ![&#35;Okno Dane wyjściowe Visual C ](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
 
-## <a name="BKMK_hidewarning"></a>Ukryj ostrzeżenia kompilatora
+## <a name="hide-compiler-warnings"></a><a name="BKMK_hidewarning"></a> Ukryj ostrzeżenia kompilatora
 
 Można tymczasowo ukryć niektóre komunikaty ostrzegawcze podczas kompilacji, a nie mają one zapełniać danych wyjściowych kompilacji.
 
-#### <a name="to-hide-a-specific-visual-c-warning"></a>Aby ukryć określone ostrzeżenie wizualizacji C#
+#### <a name="to-hide-a-specific-visual-c-warning"></a>Aby ukryć konkretne ostrzeżenie Visual C#
 
 1. W **Eksplorator rozwiązań**wybierz węzeł najwyższego poziomu projektu.
 
@@ -136,17 +136,17 @@ Można tymczasowo ukryć niektóre komunikaty ostrzegawcze podczas kompilacji, a
 
      Zostanie otwarty **Projektant projektu** .
 
-3. Wybierz stronę **kompilacja** , a następnie w polu **Pomiń ostrzeżenia** określ numer ostrzegawczy `1762`.
+3. Wybierz stronę **kompilacja** , a następnie w polu **Pomiń ostrzeżenia** Określ numer ostrzegawczy `1762` .
 
      ![Strona kompilacja, Projektant projektu](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")
 
-     Aby uzyskać więcej informacji, zobacz [stronę Kompilacja, Projektant projektuC#()](../ide/reference/build-page-project-designer-csharp.md).
+     Aby uzyskać więcej informacji, zobacz [stronę Kompilacja, Projektant projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
 4. Skompiluj rozwiązanie.
 
      W oknie **dane wyjściowe** są wyświetlane tylko podsumowania kompilacji.
 
-     ![Okno Dane wyjściowe, ostrzeżenia kompilacji&#35; Visual C](../ide/media/buildwalk-visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
+     ![Okno Dane wyjściowe, Visual C&#35; ostrzeżenia kompilacji](../ide/media/buildwalk-visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
 
 #### <a name="to-suppress-all-visual-basic-build-warnings"></a>Aby pominąć wszystkie ostrzeżenia kompilacji Visual Basic
 
@@ -170,7 +170,7 @@ Można tymczasowo ukryć niektóre komunikaty ostrzegawcze podczas kompilacji, a
 
    Aby uzyskać więcej informacji, zobacz [How to: pomijanie ostrzeżeń kompilatora](../ide/how-to-suppress-compiler-warnings.md).
 
-## <a name="BKMK_outputdetails"></a>Wyświetl dodatkowe szczegóły kompilacji w Okno Dane wyjściowe
+## <a name="display-additional-build-details-in-the-output-window"></a><a name="BKMK_outputdetails"></a> Wyświetl dodatkowe szczegóły kompilacji w Okno Dane wyjściowe
 
 W oknie **dane wyjściowe** można zmienić ilość informacji o procesie kompilacji. Poziom szczegółowości kompilacji jest zwykle ustawiony na wartość minimalną, co oznacza, że okno **danych wyjściowych** wyświetla tylko podsumowanie procesu kompilacji wraz z ostrzeżeniami lub błędami o wysokim priorytecie. Więcej informacji na temat kompilacji można wyświetlić za pomocą [okna dialogowego Opcje, projektów i rozwiązań, kompilowania i uruchamiania](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md).
 
@@ -193,7 +193,7 @@ W oknie **dane wyjściowe** można zmienić ilość informacji o procesie kompil
 
     Informacje o kompilacji obejmują czas rozpoczęcia kompilacji (znajdujący się na początku), kolejność, w której pliki zostały przetworzone, oraz czas trwania procesu (znajdującego się na końcu). Te informacje obejmują również rzeczywistą składnię kompilatora, którą program Visual Studio uruchamia podczas kompilacji.
 
-    Na przykład w kompilacji wizualnej C# opcja [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) wyświetla kod ostrzegawczy 1762, określony wcześniej w tym temacie, wraz z trzema innymi ostrzeżeniami.
+    Na przykład w kompilacji Visual C# opcja [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) wyświetla kod ostrzegawczy 1762, określony wcześniej w tym temacie, wraz z trzema innymi ostrzeżeniami.
 
     W kompilacji Visual Basic [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) nie zawiera określonych ostrzeżeń do wykluczenia, więc nie są wyświetlane żadne ostrzeżenia.
 
@@ -202,7 +202,7 @@ W oknie **dane wyjściowe** można zmienić ilość informacji o procesie kompil
 
    Aby uzyskać więcej informacji, zobacz [jak: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="create-a-release-build"></a>Utwórz kompilację wydania
+## <a name="create-a-release-build"></a>Tworzenie kompilacji wydania
 
 Możesz utworzyć wersję przykładowej aplikacji, która została zoptymalizowana pod kątem wysyłania. W przypadku kompilacji wydania należy określić, że plik wykonywalny jest kopiowany do udziału sieciowego przed rozpoczęciem kompilacji.
 
@@ -222,7 +222,7 @@ Aby uzyskać więcej informacji, zobacz [How to: zmiana katalogu wyjściowego ko
 
 5. W polu **Ścieżka wyjściowa kompilacji** określ ścieżkę sieciową.
 
-     Na przykład można określić \\\myserver\builds.
+     Na przykład można określić \\ \myserver\builds.
 
     > [!IMPORTANT]
     > Może pojawić się okno komunikatu z ostrzeżeniem, że określony udział sieciowy może nie być zaufaną lokalizacją. Jeśli ufasz określonej lokalizacji, wybierz przycisk **OK** w oknie komunikatu.
@@ -231,7 +231,7 @@ Aby uzyskać więcej informacji, zobacz [How to: zmiana katalogu wyjściowego ko
 
      ![Kompiluj polecenie rozwiązania w menu Kompilacja](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-#### <a name="to-specify-a-release-build-for-visual-c"></a>Aby określić kompilację wydania dla Visual C\#
+#### <a name="to-specify-a-release-build-for-visual-c"></a>Aby określić kompilację wydania dla języka Visual C\#
 
 1. Otwórz **projektanta projektu**.
 
@@ -245,7 +245,7 @@ Aby uzyskać więcej informacji, zobacz [How to: zmiana katalogu wyjściowego ko
 
 5. W polu **Ścieżka wyjściowa** określ ścieżkę sieciową.
 
-    Na przykład można określić \\\myserver\builds.
+    Na przykład można określić \\ \myserver\builds.
 
    > [!IMPORTANT]
    > Może pojawić się okno komunikatu z ostrzeżeniem, że określony udział sieciowy może nie być zaufaną lokalizacją. Jeśli ufasz określonej lokalizacji, wybierz przycisk **OK** w oknie komunikatu.
@@ -254,7 +254,7 @@ Aby uzyskać więcej informacji, zobacz [How to: zmiana katalogu wyjściowego ko
 
     ![Kompiluj polecenie rozwiązania w menu Kompilacja](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-   Plik wykonywalny jest kopiowany do określonej ścieżki sieciowej. Jego ścieżką będzie \\\myserver\builds\\*filename*. exe.
+   Plik wykonywalny jest kopiowany do określonej ścieżki sieciowej. Jego ścieżką byłaby \\ \Myserver\builds \\ *NazwaPliku*. exe.
 
    Gratulacje: Przewodnik został pomyślnie ukończony.
 
@@ -262,4 +262,4 @@ Aby uzyskać więcej informacji, zobacz [How to: zmiana katalogu wyjściowego ko
 
 - [Przewodnik: tworzenie projektu (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
 - [Przegląd prekompilowania projektu aplikacji sieci Web ASP.NET](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
-- [Przewodnik: Używanie programu MSBuild](../msbuild/walkthrough-using-msbuild.md)
+- [Przewodnik: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md)

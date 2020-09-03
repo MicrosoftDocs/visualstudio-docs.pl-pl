@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 24aac8ade6bdc01958cf2c206d48bd18b751d898
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850833"
 ---
 # <a name="convert-dialog-box"></a>Konwertowanie — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Okno dialogowe **Konwertuj** umożliwia wybranie narzędzia konwersji w celu utworzenia nowego projektu na podstawie starego, takiego jak tworzenie projektu [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] na podstawie projektu Visual Basic 6. Możesz również użyć [konwertera projektów programu Visual Studio](https://vsprojectconverter.codeplex.com/)dostępnego w witrynie sieci Web CodePlex, aby uaktualnić projekty utworzone w poprzednich wersjach programu Visual Studio.
+Okno dialogowe **Konwertuj** umożliwia wybranie narzędzia konwersji w celu utworzenia nowego projektu na podstawie starego, takiego jak tworzenie [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] projektu na podstawie projektu Visual Basic 6. Możesz również użyć [konwertera projektów programu Visual Studio](https://vsprojectconverter.codeplex.com/)dostępnego w witrynie sieci Web CodePlex, aby uaktualnić projekty utworzone w poprzednich wersjach programu Visual Studio.
 
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
 

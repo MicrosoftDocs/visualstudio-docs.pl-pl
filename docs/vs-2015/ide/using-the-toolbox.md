@@ -28,20 +28,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba8a37ac9e049455ffe19314dee0e228c3c14c97
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295608"
 ---
 # <a name="using-the-toolbox"></a>Korzystanie z Przybornika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Za pomocą przybornika można dodawać kontrolki i inne elementy do projektu. Możesz przeciągać i upuszczać inne kontrolki na powierzchnię projektanta jest używany i zmień rozmiar i położenie kontrolki.
+Za pomocą przybornika można dodawać kontrolki i inne elementy do projektu. Możesz przeciągać i upuszczać różne kontrolki na powierzchnię projektanta, którego używasz, i zmieniać rozmiar i położenie formantów.
 
  Przybornik pojawia się w połączeniu z widokami projektanta, takimi jak widok projektanta pliku XAML. W przyborniku są wyświetlane tylko te kontrolki, które mogą być używane w bieżącym projektancie.
 
- Wersja .NET Framework, do której odwołuje się projekt, wpływa również na zestaw kontrolek widocznych w przyborniku. Domyślnie projekty [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] są przeznaczone dla .NET Framework 4.5.1. Można ustawić dla projektu inną wersję .NET Framework, wybierając węzeł projektu w **Eksplorator rozwiązań**, a następnie przechodząc do pozycji **Właściwości/aplikacja/platforma docelowa**.
+ Wersja .NET Framework, do której odwołuje się projekt, wpływa również na zestaw kontrolek widocznych w przyborniku. Domyślnie [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] projekty są przeznaczone dla .NET Framework 4.5.1. Można ustawić dla projektu inną wersję .NET Framework, wybierając węzeł projektu w **Eksplorator rozwiązań**, a następnie przechodząc do pozycji **Właściwości/aplikacja/platforma docelowa**.
 
 ## <a name="managing-the-toolbox-and-its-controls"></a>Zarządzanie przybornikiem i jego kontrolkami
  Domyślnie Przybornik jest zwinięty wzdłuż lewej krawędzi środowiska IDE programu Visual Studio i pojawia się po przesunięciu kursora nad nim. Możesz przypiąć Przybornik (klikając ikonę **pinezki** na pasku narzędzi przybornika), tak aby pozostała otwarta po przesunięciu kursora. Możesz również oddokować okno przybornika i przeciągnąć je w dowolne miejsce na ekranie. Przybornik można zadokować, oddokować i ukryć, klikając prawym przyciskiem myszy pasek narzędzi przybornika i wybierając jedną z opcji.
@@ -52,7 +52,7 @@ Za pomocą przybornika można dodawać kontrolki i inne elementy do projektu. Mo
 
 - **Pokaż wszystko** — pokazuje wszystkie możliwe kontrolki (nie tylko te, które mają zastosowanie do bieżącego projektanta).
 
-- **Widok listy** — pokazuje kontrolki na liście pionowej. Jeśli nie jest zaznaczone, formanty są wyświetlane w poziomie.
+- **Widok listy** — pokazuje kontrolki na liście pionowej. W przypadku usunięcia zaznaczenia kontrolki są wyświetlane w poziomie.
 
 - **Wybierz elementy** — otwiera okno dialogowe **Wybierz elementy przybornika** , aby można było określić elementy, które są wyświetlane w **przyborniku**. Możesz pokazać lub ukryć element, zaznaczając lub usuwając zaznaczenie pola wyboru.
 
@@ -67,4 +67,4 @@ Za pomocą przybornika można dodawać kontrolki i inne elementy do projektu. Mo
 - **Przenieś w dół** — przenosi zaznaczony element w dół.
 
 ## <a name="creating-and-distributing-custom-toolbox-controls"></a>Tworzenie i dystrybuowanie niestandardowych formantów przybornika
- Możesz utworzyć niestandardową kontrolkę przybornika w Visual Basic lub C#wizualizacji, a następnie można rozpocząć od szablonu projektu opartego na [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) lub [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Następnie można rozesłać swój formant do członków zespołu lub opublikować go w sieci Web za pomocą [Instalatora formantów przybornika](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).
+ Możesz utworzyć niestandardową kontrolkę przybornika w Visual Basic lub Visual C#, a następnie można rozpocząć od szablonu projektu opartego na [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) lub [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Następnie można rozesłać swój formant do członków zespołu lub opublikować go w sieci Web za pomocą [Instalatora formantów przybornika](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).

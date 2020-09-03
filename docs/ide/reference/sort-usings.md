@@ -1,6 +1,6 @@
 ---
 title: Sortowanie deklaracji using
-description: Jak sortować `using` dyrektywy w górnej części pliku, tak aby były w kolejności alfabetycznej.
+description: Jak sortować `using` dyrektywy w górnej części pliku, aby były one w kolejności alfabetycznej.
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -12,30 +12,30 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: d502abe583c09d6c117ed1083e87cded823bc386
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79093790"
 ---
 # <a name="sort-usings"></a>Sortowanie deklaracji using
 
-Ten refaktoryzator ma zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
 - Visual Basic
 
-**Co:** Sortuj usings.
+**Co:** Sortuj użycia.
 
-**Kiedy:** Chcesz posortować `using` dyrektywy w górnej części pliku, tak aby były w kolejności alfabetycznej. 
+**Kiedy:** Chcesz sortować `using` dyrektywy w górnej części pliku, aby były one w kolejności alfabetycznej. 
 
-**Dlaczego?** Ułatwia znalezienie using dyrektywy.
+**Dlaczego:** Ułatwia to znalezienie dyrektywy using.
 
 ## <a name="how-to"></a>Porady
 
-1. Z paska menu wybierz **polecenie Edytuj.**
-2. Wybierz **pozycję Intellisense** > **Sort Usings**.
+1. Na pasku menu wybierz pozycję **Edytuj** .
+2. Wybierz **Intellisense**opcję  >  **Sortuj z użyciem funkcji**IntelliSense.
 
    ![Sortowanie deklaracji using](media/sort-usings.png)
 

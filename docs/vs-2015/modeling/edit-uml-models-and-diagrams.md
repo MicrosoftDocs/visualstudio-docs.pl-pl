@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 00ac30cc7e9ee3aff0dd64f015a4b4954972c09a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295525"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Edytowanie modeli i diagramów UML
@@ -61,7 +61,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
 - [Rozszerzanie projektantów UML](#extensions)
 
-## <a name="Views"></a>Diagramy UML są widokami modelu UML
+## <a name="uml-diagrams-are-views-of-a-uml-model"></a><a name="Views"></a> Diagramy UML są widokami modelu UML
  Diagramy UML można tworzyć i używać tylko w projektach modelowania. Aby uzyskać więcej informacji na temat tworzenia diagramów i projektów, zobacz [Tworzenie projektów i diagramów modelowania UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
 - Projekt modelowania zawiera jeden model UML. Każdy diagram UML w projekcie jest widokiem modelu UML.
@@ -72,7 +72,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
 - Podczas zapisywania dowolnego diagramu program Visual Studio zapisuje cały model, wszystkie jego diagramy i plik projektu modelowania.
 
-## <a name="Creating"></a>Tworzenie diagramów modelowania UML
+## <a name="creating-uml-modeling-diagrams"></a><a name="Creating"></a> Tworzenie diagramów modelowania UML
 
 1. W menu **Architektura** w programie Visual Studio kliknij pozycję **Nowy UML lub diagram warstwowy**.
 
@@ -91,7 +91,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
   Aby uzyskać więcej informacji o sposobach zarządzania projektami modelowania, zobacz [Tworzenie projektów i diagramów modelowania UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
-## <a name="Drawing"></a>Rysowanie diagramów modelowania UML
+## <a name="drawing-uml-modeling-diagrams"></a><a name="Drawing"></a> Rysowanie diagramów modelowania UML
  Na diagramie modelowania jest wyświetlana Kolekcja elementów modelu połączonych przez relacje. Każdy element jest wyświetlany jako kształt, a każda relacja jest wyświetlana jako łącznik między dwoma kształtami.
 
  Istnieją dwa rodzaje narzędzi — jeden dla elementów i jeden dla relacji. Na przykład, w przyborniku Diagram klas UML, **Klasa** jest narzędziem elementu, a **skojarzenie** jest narzędziem relacji.
@@ -117,7 +117,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
    W przypadku niektórych rodzajów diagramów można również rysować proste kształty. Te kształty nie są częścią modelu, ale można ich używać do rysowania uwagi do części diagramu lub do dzielenia go na różne obszary.
 
-## <a name="Editing"></a>Edytowanie kształtów i łączników
+## <a name="editing-shapes-and-connectors"></a><a name="Editing"></a> Edytowanie kształtów i łączników
  W przypadku zmiany rozmiaru lub koloru kształtu lub przekierowania łącznika nie ma wpływu na Model źródłowy. Jednak po zmianie nazwy kształtu na diagramie lub w Eksploratorze modelu UML odpowiedni element zostanie zmieniony w Eksploratorze modelu UML i we wszystkich innych diagramach, które przedstawiają ten element.
 
 > [!NOTE]
@@ -140,7 +140,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
    - Naciśnij klawisz **Ctrl** i Przenieś koniec.
 
-     \- lub-
+     \- oraz
 
    - Kliknij prawym przyciskiem myszy łącznik, a następnie kliknij polecenie **Połącz ponownie**.
 
@@ -158,22 +158,22 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
 - Naciśnij i przytrzymaj klawisz **Ctrl** podczas obracania kółka myszy.
 
-     \- lub-
+     \- oraz
 
 - Naciśnij i przytrzymaj **klawisze Ctrl + Shift**, a następnie kliknij lewy lub prawy przycisk myszy.
 
-     \- lub-
+     \- oraz
 
-- Na pasku narzędzi **projektanci architektury** kliknij znak plusa ( **+** ) lub znak minus ( **-** ) lub wybierz poziom powiększenia.
+- Na pasku narzędzi **projektanci architektury** kliknij znak plus ( **+** ) lub znak minus ( **-** ) lub wybierz poziom powiększenia.
 
-## <a name="Searching"></a>Wyszukiwanie w diagramie
+## <a name="searching-in-a-diagram"></a><a name="Searching"></a> Wyszukiwanie w diagramie
  Funkcja szybkiego wyszukiwania znajdzie elementy na diagramie. Należy ustawić wartość **Szukaj w:** do **bieżącego dokumentu**.
 
 #### <a name="to-search-for-text-in-a-modeling-diagram"></a>Aby wyszukać tekst w diagramie modelowania
 
 1. Naciśnij **klawisze CTRL + F**.
 
-     \- lub-
+     \- oraz
 
      W menu **Edycja** wskaż polecenie **Znajdź i Zamień**, a następnie kliknij polecenie **szybkie znajdowanie**.
 
@@ -185,7 +185,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
     > [!NOTE]
     > Jeśli tekst, który ma zostać znaleziony, znajduje się wewnątrz zwiniętego kształtu, kształt zostanie wyróżniony. Rozwiń kształt, a następnie kliknij ponownie przycisk **Znajdź dalej** .
 
-## <a name="Undo"></a>Cofanie zmian w modelu
+## <a name="undoing-changes-to-the-model"></a><a name="Undo"></a> Cofanie zmian w modelu
  Można cofnąć i ponownie wykonać zmiany wprowadzone w modelu i diagramach za pomocą poleceń **Cofnij** i **Wykonaj ponownie** w menu **Edycja** .
 
  **Każdy projekt modelowania ma jeden stos zmian.** Wszystkie zmiany wprowadzone w modelu i diagramy są przechowywane na tym stosie. Stos obejmuje również zmiany ostrości z jednego diagramu na drugi. Polecenie Cofnij Cofa zmiany w tym stosie.
@@ -198,7 +198,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
  **Zamknięcie diagramu bez zapisywania może nie mieć oczekiwanego wpływu.** Jeśli wprowadzisz pewne zmiany, a następnie zamkniesz diagram bez zapisywania, zmiany zostaną zachowane w modelu. Zalecane jest, aby zamknąć cały model, jeśli chcesz to zrobić bez zapisywania.
 
-## <a name="Sharing"></a>Udostępnianie elementów między diagramami
+## <a name="sharing-elements-between-diagrams"></a><a name="Sharing"></a> Udostępnianie elementów między diagramami
  Określone wystąpienie elementu modelu może pojawić się więcej niż jeden raz w diagramach. Dotyczy to klas, interfejsów, składników, przypadków użycia i aktorów.
 
  Jest to przydatne, jeśli chcesz wyświetlić różne grupy relacji w różnych diagramach. Na przykład na jednym diagramie można pokazać skojarzenia między klasami klientów i adresów. Na innym diagramie można ponownie pokazać klasę adresów wraz z jej skojarzeniem z obszarem pocztowym.
@@ -234,7 +234,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 > [!NOTE]
 > W przypadku dodania do widoków diagramu dwóch elementów modelu, które są już połączone przez relację, widok relacji również będzie widoczny na diagramie. Ten widok można usunąć tylko przez usunięcie jednego z elementów z diagramu lub usunięcie relacji z modelu.
 
-## <a name="Copying"></a>Kopiowanie elementów i grup elementów pokrewnych
+## <a name="copying-elements-and-groups-of-related-elements"></a><a name="Copying"></a> Kopiowanie elementów i grup elementów pokrewnych
  Można kopiować i wklejać elementy modelu oraz kopiować i wklejać grupy elementów wraz z relacjami między nimi.
 
 > [!NOTE]
@@ -270,7 +270,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
    Nie można replikować diagramu przez kopiowanie i wklejanie w Eksplorator rozwiązań.
 
-## <a name="Deleting"></a>Usuwanie elementu modelu lub jego widoków
+## <a name="deleting-a-model-element-or-its-views"></a><a name="Deleting"></a> Usuwanie elementu modelu lub jego widoków
  Niektóre rodzaje elementów, w tym klasyfikatora, można usunąć z diagramu bez usuwania ich z modelu. Klasyfikatory to główne elementy, które są wyświetlane na diagramach klas, diagramach składników i diagramach przypadków użycia. Mogą być wyświetlane na więcej niż jednym diagramie. W przypadku tych typów elementów istnieją dwa oddzielne polecenia: **Usuń z diagramu** i **Usuń z modelu**.
 
  Z drugiej strony, po usunięciu relacji z diagramu, zawsze jest usuwana z modelu.
@@ -282,7 +282,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
 - Kliknij prawym przyciskiem myszy element na diagramie, a następnie kliknij polecenie **Usuń z diagramu**.
 
-  \- lub-
+  \- oraz
 
 - Kliknij element na diagramie, a następnie naciśnij klawisz **delete** .
 
@@ -307,7 +307,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
      Relacja jest usuwana z modelu i jest usuwana z każdego diagramu, na którym się znajduje.
 
-## <a name="presentation"></a>Przygotowywanie diagramu do prezentacji
+## <a name="preparing-a-diagram-for-presentation"></a><a name="presentation"></a> Przygotowywanie diagramu do prezentacji
  Poniższe funkcje ułatwiają narysowanie uwagi do określonych części diagramu, Dodawanie wyjaśnień lub dzielenie diagramu na różne obszary zainteresowania.
 
 - Możesz skopiować dowolną część diagramu do programu Word, PowerPoint lub innego dokumentu. Wybierz odpowiednie kształty i łączniki, kliknij prawym przyciskiem myszy, a następnie kliknij polecenie **Kopiuj**.
@@ -323,7 +323,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 ### <a name="to-export-a-diagram-as-an-image"></a>Aby wyeksportować diagram jako obraz
  Aby uzyskać więcej informacji, zobacz [Eksportowanie diagramów jako obrazów](../modeling/export-diagrams-as-images.md).
 
-## <a name="extensions"></a>Rozszerzanie projektantów UML
+## <a name="extending-the-uml-designers"></a><a name="extensions"></a> Rozszerzanie projektantów UML
  Możesz dodać nowe funkcje do narzędzi UML i dostosować do własnych potrzeb notację diagramu. Aby uzyskać więcej informacji, zobacz [rozszerzając modele UML i diagramy](../modeling/extend-uml-models-and-diagrams.md).
 
 ## <a name="see-also"></a>Zobacz też

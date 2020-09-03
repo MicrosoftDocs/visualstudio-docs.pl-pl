@@ -11,15 +11,15 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2379ce588eeb4773e562f630ade37e28d7f17315
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094288"
 ---
 # <a name="convert-anonymous-type-to-class"></a>Konwertowanie typu anonimowego na klasę
 
-Ten refaktoryzator ma zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
@@ -27,20 +27,20 @@ Ten refaktoryzator ma zastosowanie do:
 
 **Co:** Konwertuj typ anonimowy na klasę.
 
-**Kiedy:** Masz typ anonimowy, który chcesz nadal kontynuować w klasie.
+**Kiedy:** Masz typ anonimowy, który chcesz kontynuować Kompilowanie w klasie.
 
-**Dlaczego?** Typy anonimowe są przydatne, jeśli używasz ich tylko lokalnie. W miarę rozwoju kodu miło jest mieć łatwy sposób promowania ich do klasy.
+**Dlaczego:** Typy anonimowe są przydatne, jeśli są używane lokalnie. Wraz ze wzrostem ilości kodu można łatwo wspierać je do klasy.
 
 ## <a name="how-to"></a>Porady
 
 1. Umieść kursor w typie anonimowym.
-2. Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
+2. Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
 
    ![Konwertuj typ anonimowy na klasę](media/convert-anon-to-class.png)
 
-2. Naciśnij **klawisz Enter,** aby zaakceptować refaktoryzowanie.
+2. Naciśnij klawisz **Enter** , aby zaakceptować refaktoryzację.
 
-   ![Konwertuj typ anonimowy na klasę zaakceptowany](media/convert-anon-to-class-complete.png)
+   ![Konwertuj typ anonimowy na zaakceptowaną klasę](media/convert-anon-to-class-complete.png)
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -1,5 +1,5 @@
 ---
-title: Dodawanie kontrolera Menu do paska narzędzi | Dokumentacja firmy Microsoft
+title: Dodawanie kontrolera menu do paska narzędzi | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,37 +13,37 @@ caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184910"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Dodawanie kontrolera menu do paska narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md) instruktażu przedstawiono sposób dodawania kontrolera menu do paska narzędzi okna narzędzia. Kroki opisane w tym miejscu można zastosować także do narzędzi, który jest tworzony w [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md) wskazówki.  
+Ten przewodnik jest oparty na [dodawaniu paska narzędzi do](../extensibility/adding-a-toolbar-to-a-tool-window.md) przewodnika po oknach narzędzi i pokazuje, jak dodać kontroler menu do paska narzędzi okna narzędzi. Kroki przedstawione w tym miejscu można również zastosować do paska narzędzi, który został utworzony w przewodniku [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md) .  
   
- Kontroler menu jest formantem podziału. Kontroler menu po lewej stronie pokazuje ostatnio używane polecenia, a następnie uruchomić, klikając go. Prawa strona kontroler menu jest strzałka, po kliknięciu otwiera listę dodatkowych poleceń. Kiedy kliknąć polecenie na liście, a polecenie działa, i zastępuje polecenia po lewej stronie kontroler menu. W ten sposób kontroler menu działa jak przycisk polecenia, które zawsze wyświetli ostatnio używane polecenia, z listy.  
+ Kontroler menu jest formantem podzielonym. Lewa strona kontrolera menu pokazuje ostatnio używane polecenie i można ją uruchomić, klikając ją. Prawa strona kontrolera menu jest strzałką, która po kliknięciu otwiera listę dodatkowych poleceń. Po kliknięciu polecenia na liście zostanie uruchomione polecenie, które zastępuje polecenie po lewej stronie kontrolera menu. W ten sposób kontroler menu działa jak przycisk polecenia, który zawsze pokazuje ostatnio używane polecenie z listy.  
   
- Kontrolery menu mogą być wyświetlane w menu, ale są najczęściej używane na paskach narzędzi.  
+ Kontrolery menu mogą znajdować się w menu, ale najczęściej są używane na paskach narzędzi.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dostępna jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-menu-controller"></a>Tworzenie kontrolera Menu  
+## <a name="creating-a-menu-controller"></a>Tworzenie kontrolera menu  
   
 #### <a name="to-create-a-menu-controller"></a>Aby utworzyć kontroler menu  
   
-1. Wykonaj procedury opisane w temacie [Dodawanie paska narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md) się utworzenie okna narzędzia, które ma pasek narzędzi.  
+1. Postępuj zgodnie z procedurami opisanymi w temacie [Dodawanie paska narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md) , aby utworzyć okno narzędzia z paskiem narzędzi.  
   
-2. W TWTestCommandPackage.vsct przejdź do sekcji symboli. W GuidSymbol, element o nazwie **guidTWTestCommandPackageCmdSet**, Zadeklaruj kontroler menu, grupy kontrolera menu i trzech elementów menu.  
+2. W TWTestCommandPackage. vsct przejdź do sekcji symbole. W elemencie GuidSymbol o nazwie **guidTWTestCommandPackageCmdSet**Zadeklaruj kontroler menu, grupę kontrolerów menu i trzy elementy menu.  
   
    ```xml  
    <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
    ```  
   
-3. W sekcji menu po ostatni wpis menu zdefiniować kontroler menu jako menu.  
+3. W sekcji menu, po ostatnim wpisie menu, zdefiniuj kontroler menu jako menu.  
   
    ```xml  
    <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
@@ -58,9 +58,9 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
    </Menu>  
    ```  
   
-    `TextChanges` i `TextIsAnchorCommand` flagi należy dołączyć umożliwiające kontroler menu odzwierciedlić ostatnie wybranego polecenia.  
+    `TextChanges`Flagi i `TextIsAnchorCommand` muszą być dołączone, aby umożliwić kontrolerowi menu odzwierciedlenie ostatniego wybranego polecenia.  
   
-4. W grupach sekcji po ostatni wpis grupy dodać grupę kontroler menu.  
+4. W sekcji grupy po ostatnim wpisie grupy Dodaj grupę kontrolera menu.  
   
    ```xml  
    <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
@@ -68,9 +68,9 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
    </Group>  
    ```  
   
-    Ustawiając kontroler menu jako element nadrzędny, wszelkie polecenia umieszczone w tej grupie zostaną wyświetlone w kontroler menu. `priority` Atrybut zostanie pominięty, która ustawia wartości domyślnej 0, ponieważ będzie on tylko grupy na kontrolerze menu.  
+    Ustawienie kontrolera menu jako elementu nadrzędnego spowoduje wyświetlenie wszystkich poleceń umieszczonych w tej grupie w kontrolerze menu. `priority`Atrybut zostanie pominięty, co powoduje ustawienie wartości domyślnej 0, ponieważ będzie jedyną grupą w kontrolerze menu.  
   
-5. W sekcji przyciski po ostatni wpis przycisku Dodaj element przycisku dla każdego z elementów menu.  
+5. W sekcji przyciski po ostatnim wpisie przycisku Dodaj element Button dla każdego z elementów menu.  
   
    ```xml  
    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
@@ -102,19 +102,19 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
    </Button>  
    ```  
   
-6. W tym momencie możesz obejrzeć kontroler menu. Skompiluj projekt, a następnie rozpocząć debugowanie. Powinien zostać wyświetlony wystąpienie eksperymentalne.  
+6. W tym momencie można przyjrzeć się kontrolerowi menu. Skompiluj projekt i Rozpocznij debugowanie. Powinno być widoczne wystąpienie eksperymentalne.  
   
-   1. Na **widok / inne Windows** menu Otwórz **ToolWindow testu**.  
+   1. W menu **Widok/inne okna** Otwórz pozycję **test ToolWindow**.  
   
-   2. Kontroler menu pojawia się na pasku narzędzi w oknie narzędzia.  
+   2. Kontroler menu pojawia się na pasku narzędzi w oknie narzędzi.  
   
-   3. Kliknij strzałkę po prawej stronie kontroler menu, aby wyświetlić trzy możliwe polecenia.  
+   3. Kliknij strzałkę po prawej stronie kontrolera menu, aby zobaczyć trzy możliwe polecenia.  
   
-      Zwróć uwagę, że po kliknięciu polecenia, tytuł kontroler menu zmienia się do wyświetlania tego polecenia. W następnej sekcji dodamy kod, aby aktywować te polecenia.  
+      Zauważ, że po kliknięciu polecenia, tytuł kontrolera menu zmieni się, aby wyświetlić to polecenie. W następnej sekcji dodamy kod umożliwiający aktywowanie tych poleceń.  
   
-## <a name="implementing-the-menu-controller-commands"></a>Implementowanie polecenia Menu kontrolera  
+## <a name="implementing-the-menu-controller-commands"></a>Implementowanie poleceń kontrolera menu  
   
-1. W TWTestCommandPackageGuids.cs Dodaj identyfikatory poleceń menu trzech elementów po poleceniu istniejących identyfikatorów.  
+1. W TWTestCommandPackageGuids.cs, Dodaj identyfikatory poleceń dla trzech elementów menu po istniejących identyfikatorach poleceń.  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -128,7 +128,7 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3. W Konstruktorze TWTestCommand po ostatnim wywołaniu `AddCommand` metody, Dodaj kod, aby kierować zdarzenia dla każdego polecenia za pomocą tej samej procedury obsługi.  
+3. W konstruktorze TWTestCommand po ostatnim wywołaniu `AddCommand` metody Dodaj kod, aby skierować zdarzenia dla każdego polecenia za pomocą tych samych programów obsługi.  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -149,7 +149,7 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
     }  
     ```  
   
-4. Dodaj program obsługi zdarzeń do klasy TWTestCommand, aby oznaczyć wybrane polecenie jako zaznaczone.  
+4. Dodaj procedurę obsługi zdarzeń do klasy TWTestCommand, aby oznaczyć wybrane polecenie jako zaznaczone.  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -162,7 +162,7 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
     }  
     ```  
   
-5. Dodaj program obsługi zdarzeń, która wyświetla komunikat MessageBox, gdy użytkownik wybierze polecenie na kontroler menu:  
+5. Dodaj program obsługi zdarzeń, który wyświetla element MessageBox, gdy użytkownik wybierze polecenie w kontrolerze menu:  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -212,19 +212,19 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
     }  
     ```  
   
-## <a name="testing-the-menu-controller"></a>Testowanie kontroler Menu  
+## <a name="testing-the-menu-controller"></a>Testowanie kontrolera menu  
   
-1. Skompiluj projekt, a następnie rozpocząć debugowanie. Powinien zostać wyświetlony wystąpienie eksperymentalne.  
+1. Skompiluj projekt i Rozpocznij debugowanie. Powinno być widoczne wystąpienie eksperymentalne.  
   
-2. Otwórz **ToolWindow testu** na **widok / inne Windows** menu.  
+2. Otwórz **test ToolWindow** w **widoku/innym menu systemu Windows** .  
   
-     Kontroler menu pojawia się na pasku narzędzi w oknie narzędzia i wyświetla **MC element 1**.  
+     Kontroler menu pojawia się na pasku narzędzi w oknie narzędzia i wyświetla **element MC o 1**.  
   
-3. Przycisk menu kontrolera strzałkę po lewej stronie.  
+3. Kliknij przycisk kontroler menu z lewej strony strzałki.  
   
-     Powinien zostać wyświetlony trzy elementy: pierwsze z nich jest zaznaczony i ma pole podświetlenie wokół odpowiednią ikonę. Kliknij przycisk **elementu MC 3**.  
+     Powinny pojawić się trzy elementy, pierwszy z nich jest zaznaczony i ma pole wyróżnione wokół jego ikony. Kliknij pozycję **MC element 3**.  
   
-     Pojawia się okno dialogowe z komunikatem **wybrane kontroler Menu 3 elementu**. Należy zauważyć, że komunikat odpowiada tekstem na przycisku kontrolera menu. Przycisk menu kontrolera są obecnie wyświetlane **3 elementu MC**.  
+     Zostanie wyświetlone okno dialogowe z wybranym komunikatem **menu element kontroler 3**. Zauważ, że komunikat odpowiada tekstowi na przycisku kontrolera menu. Przycisk kontroler menu wyświetla teraz **pozycję MC element 3**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dodawanie paska narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md)   

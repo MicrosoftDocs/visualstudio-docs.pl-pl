@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2c205ff68ebc51d0b0f5b32038763c1741855d7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656107"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Przewodnik: debugowanie arkusza stylów XSLT
@@ -37,19 +37,19 @@ W krokach w tym instruktażu pokazano, jak używać debugera XSLT. Kroki obejmuj
 
     Arkusz stylów zostanie otwarty w edytorze XML.
 
-3. Kliknij przycisk Przeglądaj ( **...** ) w polu **wejściowym** okna właściwości dokumentu.
+3. Kliknij przycisk Przeglądaj (**...**) w polu **wejściowym** okna właściwości dokumentu.
 
-4. Znajdź plik Books. XML i kliknij przycisk **Otwórz**.
+4. Znajdź plik books.xml i kliknij przycisk **Otwórz**.
 
     Ustawia plik dokumentu źródłowego używany do przekształcania XSLT.
 
-5. Kliknij prawym przyciskiem myszy `xsl:if` znacznik początkowy, wskaż **punkt przerwania**, a następnie kliknij polecenie **Wstaw punkt przerwania**.
+5. Kliknij prawym przyciskiem myszy `xsl:if` tag początkowy, wskaż polecenie **punkt przerwania**, a następnie kliknij polecenie **Wstaw punkt przerwania**.
 
 6. Kliknij przycisk **DEBUGUJ XSL** na pasku narzędzi edytora XML.
 
    Spowoduje to uruchomienie procesu debugowania i otwarcie kilku nowych okien, które są używane przez debuger.
 
-   Istnieją dwa okna, które wyświetlają dokument wejściowy i arkusz stylów. Debuger używa tych okien do wyświetlania bieżącego stanu wykonania. Debuger jest umieszczony na `xsl:if` elemencie arkusza stylów i w pierwszym węźle książki w pliku Books. XML.
+   Istnieją dwa okna, które wyświetlają dokument wejściowy i arkusz stylów. Debuger używa tych okien do wyświetlania bieżącego stanu wykonania. Debuger jest umieszczony na `xsl:if` elemencie arkusza stylów i w pierwszym węźle książki w pliku books.xml.
 
    W oknie Ustawienia lokalne są wyświetlane wszystkie zmienne lokalne i ich bieżące wartości. Obejmuje to zmienne zdefiniowane w arkuszu stylów i zmienne, które są używane przez debuger do śledzenia węzłów, które znajdują się obecnie w kontekście.
 
@@ -65,36 +65,36 @@ W krokach w tym instruktażu pokazano, jak używać debugera XSLT. Kroki obejmuj
 
 2. Wpisz `$bookAverage` w polu **Nazwa** , a następnie naciśnij klawisz ENTER.
 
-     W oknie zostanie wyświetlona wartość zmiennej `$bookAverage`.
+     `$bookAverage`W oknie zostanie wyświetlona wartość zmiennej.
 
 3. Wpisz `self::node()` w polu **Nazwa** , a następnie naciśnij klawisz ENTER.
 
-     `self::node()` jest wyrażeniem XPath, które jest obliczane do bieżącego węzła kontekstu. Wartość wyrażenia `self::node()` XPath jest pierwszym węzłem książki. Zmiany są wprowadzane w trakcie transformacji.
+     `self::node()` jest wyrażeniem XPath, które jest obliczane do bieżącego węzła kontekstu. Wartość `self::node()` wyrażenia XPath jest pierwszym węzłem książki. Zmiany są wprowadzane w trakcie transformacji.
 
-4. Rozwiń węzeł `self::node()`, a następnie rozwiń węzeł `price`.
+4. Rozwiń `self::node()` węzeł, a następnie rozwiń `price` węzeł.
 
-     Pozwala to zobaczyć wartość ceny książki i można ją łatwo porównać do wartości `$bookAverage`. Ze względu na to, że cena książki jest niższa od średniej, warunek `xsl:if` powinien się powieść.
+     Pozwala to zobaczyć wartość ceny książki i można ją łatwo porównać do `$bookAverage` wartości. Ze względu na to, że cena książki jest niższa od średniej, `xsl:if` warunek powinien się powieść.
 
 ## <a name="step-through-the-code"></a>Przechodzenie przez kod
  Debuger umożliwia wykonywanie kodu jeden wiersz jednocześnie.
 
 #### <a name="to-step-through-the-code"></a>Aby przejść przez kod
 
-1. Naciśnij klawisz **F5** , aby kontynuować.
+1. Naciśnij klawisz **F5**, aby kontynuować.
 
-     Ponieważ pierwszy węzeł książki spełnił warunek `xsl:if`, węzeł książki jest dodawany do okna dane wyjściowe XSL. Debuger kontynuuje działanie, dopóki nie zostanie ponownie umieszczony na `xsl:if` elemencie w arkuszu stylów. Debuger jest teraz umieszczony w drugim węźle książki w pliku Books. XML.
+     Ponieważ pierwszy węzeł książki spełnił `xsl:if` warunek, węzeł książki jest dodawany do okna dane wyjściowe XSL. Debuger będzie nadal wykonywany do momentu ponownego pozycjonowania `xsl:if` elementu w arkuszu stylów. Debuger jest teraz umieszczony w drugim węźle książki w pliku books.xml.
 
-     W oknie Watch1 wartość `self::node()` zmieni się na drugi węzeł książki. Sprawdzając wartość elementu Price, możesz określić, że cena jest wyższa niż średnia, dlatego warunek `xsl:if` nie powinien kończyć się niepowodzeniem.
+     W oknie Watch1 `self::node()` wartość zmienia się na drugi węzeł książki. Sprawdzając wartość elementu Price, można określić, że cena jest wyższa niż średnia, w rezultacie `xsl:if` warunek powinien zakończyć się niepowodzeniem.
 
-2. Naciśnij klawisz **F5** , aby kontynuować.
+2. Naciśnij klawisz **F5**, aby kontynuować.
 
-     Ponieważ drugi węzeł książki nie spełnia warunku `xsl:if`, węzeł książki nie zostanie dodany do okna dane wyjściowe XSL. Debuger kontynuuje działanie, dopóki nie zostanie ponownie umieszczony na `xsl:if` elemencie w arkuszu stylów. Debuger jest teraz umieszczony w trzecim węźle `book` w pliku Books. XML.
+     Ponieważ drugi węzeł książki nie spełnia `xsl:if` warunku, węzeł książki nie zostanie dodany do okna dane wyjściowe XSL. Debuger będzie nadal wykonywany do momentu ponownego pozycjonowania `xsl:if` elementu w arkuszu stylów. Debuger jest teraz umieszczony w trzecim `book` węźle w pliku books.xml.
 
-     W oknie Watch1 wartość `self::node()` zmieni się na trzeci węzeł książki. Sprawdzając wartość `price` elementu, można określić, że cena jest niższa od średniej, w rezultacie warunek `xsl:if` powinien się powieść.
+     W oknie Watch1 `self::node()` wartość zmienia się na trzeci węzeł książki. Sprawdzając wartość `price` elementu, można określić, że cena jest niższa od średniej, w rezultacie `xsl:if` warunek powinien zakończyć się pomyślnie.
 
-3. Naciśnij klawisz **F5** , aby kontynuować.
+3. Naciśnij klawisz **F5**, aby kontynuować.
 
-     Ponieważ warunek `xsl:if` był spełniony, trzecia książka jest dodawana do okna dane wyjściowe XSL. Wszystkie książki w dokumencie XML zostały przetworzone i debuger zatrzyma działanie.
+     Ponieważ `xsl:if` warunek został spełniony, trzecia książka jest dodawana do okna dane wyjściowe XSL. Wszystkie książki w dokumencie XML zostały przetworzone i debuger zatrzyma działanie.
 
 ## <a name="sample-files"></a>Pliki przykładowe
  Przewodnik korzysta z poniższych dwóch plików.
@@ -122,7 +122,7 @@ W krokach w tym instruktażu pokazano, jak używać debugera XSLT. Kroki obejmuj
 </xsl:stylesheet>
 ```
 
-### <a name="booksxml"></a>Books. XML
+### <a name="booksxml"></a>books.xml
 
 ```
 <?xml version='1.0'?>

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringCharLength | Dokumenty firmy Microsoft
+title: 'IDebugProperty3:: GetStringCharLength | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c1a2eb62ab748562acd8f0a894a3675f79981ccc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721125"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
@@ -43,16 +43,16 @@ int GetStringCharLength(
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`pLen`|[na zewnątrz] Zwraca liczbę znaków w ciągu właściwości.|
+|`pLen`|określoną Zwraca liczbę znaków w ciągu właściwości.|
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli to się powiedzie, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Zazwyczaj ta metoda jest używana jako preludium do przydzielania buforu dla wywołania [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) metody.
+Zazwyczaj ta metoda jest używana jako preludium do alokowania buforu dla wywołania metody [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) .
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **CProperty** obiektu, który udostępnia [interfejs IDebugProperty3.](../../../extensibility/debugger/reference/idebugproperty3.md)
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CProperty** , który uwidacznia Interfejs [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) .
 
 ```cpp
 STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)

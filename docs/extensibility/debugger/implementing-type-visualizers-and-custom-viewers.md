@@ -1,5 +1,5 @@
 ---
-title: Implementowanie wizualizatorów typów i niestandardowych przejasków | Dokumenty firmy Microsoft
+title: Implementowanie wizualizatorów typów i podglądów niestandardowych | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,28 +12,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c2ebbb5c8e27df4ae4baf2d9a9f1c3314188e2b3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738504"
 ---
-# <a name="implement-type-visualizers-and-custom-viewers"></a>Implementowanie wizualizatorów typów i niestandardowych przejańsków
+# <a name="implement-type-visualizers-and-custom-viewers"></a>Implementowanie wizualizatorów typów i podglądów niestandardowych
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [oceniający wyrażenia CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład oceniającego zarządzane wyrażenia](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniania wyrażeń jest przestarzały. Aby uzyskać informacje na temat implementowania oceniania wyrażeń CLR, zobacz testerzy [wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzana próbnik wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Wizualizatory typu i przeglądarki niestandardowe umożliwiają użytkownikowi wyświetlanie danych określonego typu w sposób, który jest bardziej znaczący niż prosty szesnastkowy zrzut liczb. Oceniający wyrażenie (EE) może skojarzyć przeglądarki niestandardowe z określonymi typami danych lub zmiennych. Te niestandardowe przeglądarki są implementowane przez EE. EE może również obsługiwać wizualizatory typów zewnętrznych, które mogą pochodzić od innego dostawcy zewnętrznego lub nawet użytkownika końcowego.
+ Wizualizatory typów i podglądy niestandardowe pozwalają użytkownikom na wyświetlanie danych określonego typu w sposób bardziej zrozumiały od prostego zrzutu szesnastkowego liczb. Ewaluatora wyrażeń (EE) może kojarzyć niestandardowe podglądy z określonymi typami danych lub zmiennych. Te niestandardowe podglądy są implementowane przez program EE. Na stronie EE można także obsługiwać wizualizacje typu zewnętrznego, które mogą pochodzić od innego dostawcy innych firm, a nawet od użytkownika końcowego.
 
-## <a name="discussion"></a>Dyskusji
+## <a name="discussion"></a>Dyskusja
 
 ### <a name="type-visualizers"></a>Wizualizatory typów
- Visual Studio prosi o listę wizualizatorów typu i niestandardowych widzów dla każdego obiektu, które mają być wyświetlane w oknie czujki. Oceniający wyrażenie (EE) dostarcza taką listę dla każdego typu, dla którego chce obsługiwać wizualizatory typów i przeglądarki niestandardowe. Wywołania [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) i [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) rozpocząć cały proces uzyskiwania dostępu do wizualizatorów typu i niestandardowych przeglądarek (zobacz [Wizualizacja i wyświetlanie danych, aby](../../extensibility/debugger/visualizing-and-viewing-data.md) uzyskać szczegółowe informacje na temat sekwencji wywołującej).
+ Program Visual Studio pyta o listę wizualizatorów typu i niestandardowe podglądy dla każdego obiektu, który ma być wyświetlany w oknie czujki. Program Expression ewaluatora (EE) dostarcza takie listy dla każdego typu, dla którego chce obsługiwać Wizualizatory typów i niestandardowe osoby przeglądające. Wywołania funkcji [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) i [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) umożliwiają cały proces uzyskiwania dostępu do wizualizatorów typu i niestandardowym użytkownikom (zobacz [wizualizowanie i wyświetlanie danych](../../extensibility/debugger/visualizing-and-viewing-data.md) w celu uzyskania szczegółowych informacji o sekwencji wywoływania).
 
-### <a name="custom-viewers"></a>Przeglądarki niestandardowe
- Przeglądarki niestandardowe są implementowane w EE dla określonego typu danych i są reprezentowane przez interfejs [IDebugCustomViewer.](../../extensibility/debugger/reference/idebugcustomviewer.md) Przeglądarka niestandardowa nie jest tak elastyczna jak wizualizator typu, ponieważ jest dostępna tylko wtedy, gdy ee, który implementuje tej konkretnej przeglądarki niestandardowej jest wykonywany. Implementowanie przeglądarki niestandardowej jest prostsze niż implementowanie obsługi wizualizatorów typów. Jednak obsługa wizualizatorów typów zapewnia użytkownikom końcowym maksymalną elastyczność w zakresie wizualizacji ich danych. Pozostała część tej dyskusji dotyczy tylko wizualizatorów typu.
+### <a name="custom-viewers"></a>Niestandardowe osoby przeglądające
+ Niestandardowe przeglądarki są implementowane w EE dla określonego typu danych i są reprezentowane przez interfejs [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) . Niestandardowa przeglądarka nie jest tak elastyczna jak wizualizator typu, ponieważ jest ona dostępna tylko wtedy, gdy jest wykonywane polecenie EE, które implementuje konkretną niestandardową przeglądarkę. Implementacja niestandardowej przeglądarki jest prostsza niż implementacja obsługi wizualizatorów typów. Jednak Wizualizatory typu wspomagającego zapewniają największą elastyczność użytkownikowi końcowemu do wizualizacji danych. Pozostała część tej dyskusji dotyczy tylko wizualizatorów typu.
 
 ## <a name="interfaces"></a>Interfejsy
- EE implementuje następujące interfejsy do obsługi wizualizatorów typu, które mają być używane przez program Visual Studio:
+ Na stronie EE zaimplementowane są następujące interfejsy do obsługi wizualizatorów typów, które mają być używane przez program Visual Studio:
 
 - [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 
@@ -47,7 +47,7 @@ ms.locfileid: "80738504"
 
 - [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)
 
-  EE zużywa następujące interfejsy do obsługi wizualizatorów typów:
+  Na stronie EE są używane następujące interfejsy do obsługi wizualizatorów typów:
 
 - [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)
 

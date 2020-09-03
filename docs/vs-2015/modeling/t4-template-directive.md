@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 02ab48e2fcd014508277a9bc361cde65d62ef38c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850792"
 ---
 # <a name="t4-template-directive"></a>Dyrektywa T4 dotycząca szablonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Szablon tekstu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4 zazwyczaj rozpoczyna się od dyrektywy `template`, która określa, jak szablon powinien być przetwarzany. Powinna istnieć nie więcej niż jedna dyrektywa szablonu w szablonie tekstowym i wszystkich plikach, które on uwzględnia.
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Szablon tekstu T4 zwykle zaczyna się od `template` dyrektywy, która określa, jak szablon powinien być przetwarzany. Powinna istnieć nie więcej niż jedna dyrektywa szablonu w szablonie tekstowym i wszystkich plikach, które on uwzględnia.
 
  Ogólne omówienie pisania szablonów tekstowych można znaleźć w artykule [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).
 
@@ -29,23 +29,23 @@ Szablon tekstu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4 zazwyczaj rozpocz
 <#@ template [language="VB"] [compilerOptions="options"] [culture="code"] [debug="true"] [hostspecific="true"] [inherits="templateBaseClass"] [visibility="internal"] [linePragmas="false"] #>
 ```
 
- Dyrektywa `template` ma kilka atrybutów, które umożliwiają określenie różnych aspektów transformacji. Wszystkie atrybuty są opcjonalne.
+ `template`Dyrektywa zawiera kilka atrybutów, które umożliwiają określenie różnych aspektów transformacji. Wszystkie atrybuty są opcjonalne.
 
 ## <a name="compileroptions-attribute"></a>Atrybut compilerOptions
  Przykład: `compilerOptions="optimize+"`
 
- Prawidłowe wartości: wszystkie prawidłowe opcje kompilatora. Aby uzyskać więcej informacji, zobacz [ C# opcje kompilatora na liście według kategorii](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) i [Visual Basic opcje kompilatora na liście według kategorii](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
+ Prawidłowe wartości: wszystkie prawidłowe opcje kompilatora. Aby uzyskać więcej informacji, zobacz [Opcje kompilatora C# na liście według kategorii](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) i [Visual Basic opcje kompilatora na liście według kategorii](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
 
  Ignorowane dla szablonów w czasie wykonywania (wstępnie przetworzonych).
 
- Te opcje są stosowane, gdy szablon został przekonwertowany na [!INCLUDE[csprcs](../includes/csprcs-md.md)] lub [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)], a wynikiem jest kompilowanie kodu.
+ Te opcje są stosowane, gdy szablon został przekonwertowany na [!INCLUDE[csprcs](../includes/csprcs-md.md)] lub [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)] , a kod wyniku jest kompilowany.
 
 ## <a name="culture-attribute"></a>Atrybut culture
  Przykład: `culture="de-CH"`
 
  Prawidłowe wartości: "", niezmienna kultura, która jest wartością domyślną.
 
- Kultura jest wyrażona jako ciąg w postaci xx-XX. Na przykład en-US, ja-JP, de-CH, de-DE. Aby uzyskać więcej informacji, zobacz temat <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
+ Kultura jest wyrażona jako ciąg w postaci xx-XX. Na przykład en-US, ja-JP, de-CH, de-DE. Aby uzyskać więcej informacji, zobacz <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
  Atrybut culture określa kulturę, jaka ma zostać użyta w przypadku konwersji bloku wyrażenia na tekst.
 
@@ -56,9 +56,9 @@ Szablon tekstu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4 zazwyczaj rozpocz
 debug="true"
 ```
 
- Prawidłowe wartości: `true, false`. Wartość domyślna to false.
+ Prawidłowe wartości: `true, false` . Wartość domyślna to false.
 
- Jeśli atrybut `debug` jest `true`, plik kodu pośredniego będzie zawierać informacje, które umożliwiają debugerowi dokładniejsze określenie pozycji w szablonie, w której wystąpił przerwanie lub wyjątek.
+ Jeśli `debug` atrybut ma wartość `true` , plik kodu pośredniego będzie zawierać informacje, które umożliwiają debugerowi dokładniejsze określenie pozycji w szablonie, w której wystąpił przerwanie lub wyjątek.
 
  W przypadku szablonów czasu projektowania plik kodu pośredniego zostanie zapisany w katalogu **% temp%** .
 
@@ -71,13 +71,13 @@ debug="true"
 hostspecific="true"
 ```
 
- Prawidłowe wartości: `true, false, trueFromBase`. Wartość domyślna to false.
+ Prawidłowe wartości: `true, false, trueFromBase` . Wartość domyślna to false.
 
- Jeśli ustawisz wartość tego atrybutu na `true`, właściwość o nazwie `Host` zostanie dodana do klasy wygenerowanej przez szablon tekstu. Właściwość jest odwołaniem do hosta aparatu transformacji i jest zadeklarowana jako [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Jeśli został zdefiniowany niestandardowy host, można go rzutować na niestandardowy typ hosta.
+ Jeśli ustawisz wartość tego atrybutu na `true` , właściwość o nazwie `Host` jest dodawana do klasy wygenerowanej przez szablon tekstu. Właściwość jest odwołaniem do hosta aparatu transformacji i jest zadeklarowana jako [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Jeśli został zdefiniowany niestandardowy host, można go rzutować na niestandardowy typ hosta.
 
  Ponieważ typ tej właściwości zależy od typu hosta, jest to przydatne wyłącznie podczas pisania szablonu tekstu, który działa tylko z określonym hostem. Ma zastosowanie do [szablonów czasu projektowania](../modeling/design-time-code-generation-by-using-t4-text-templates.md), ale nie do [szablonów czasu wykonywania](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Gdy `hostspecific` jest `true` i używasz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można rzutować `this.Host` na IServiceProvider w celu uzyskania dostępu do funkcji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Możesz również użyć `Host.ResolvePath(filename)`, aby uzyskać ścieżkę bezwzględną pliku w projekcie. Na przykład:
+ Gdy `hostspecific` jest `true` i używasz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , można rzutować `this.Host` na IServiceProvider w celu uzyskania dostępu do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] funkcji. Można również użyć, `Host.ResolvePath(filename)` Aby uzyskać ścieżkę bezwzględną pliku w projekcie. Na przykład:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -99,7 +99,7 @@ Content of myFile is:
 
 ```
 
- Jeśli używasz atrybutów `inherits` i `hostspecific` razem, określ wartość host = "trueFromBase" w klasie pochodnej i host = "true" w klasie bazowej. Pozwala to uniknąć podwójnej definicji właściwości `Host` w wygenerowanym kodzie.
+ Jeśli używasz `inherits` `hostspecific` atrybutów i razem, określ host = "trueFromBase" w klasie pochodnej i host = "true" w klasie bazowej. Pozwala to uniknąć podwójnej definicji `Host` właściwości w wygenerowanym kodzie.
 
 ## <a name="language-attribute"></a>Atrybut language
  Przykład: `language="VB"`
@@ -108,7 +108,7 @@ Content of myFile is:
 
  `VB`
 
- Atrybut Language określa język ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] lub [!INCLUDE[csprcs](../includes/csprcs-md.md)]), który ma być używany dla kodu źródłowego w blokach instrukcji i wyrażeń. Pliku kodu pośredniego, z którego jest generowane wyjście, użyje tego języka. Język ten nie jest powiązany z językiem generowanym przez szablon, który może być dowolnym rodzajem tekstu.
+ Atrybut Language określa język ( [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] lub), [!INCLUDE[csprcs](../includes/csprcs-md.md)] który ma być używany dla kodu źródłowego w blokach instrukcji i wyrażeń. Pliku kodu pośredniego, z którego jest generowane wyjście, użyje tego języka. Język ten nie jest powiązany z językiem generowanym przez szablon, który może być dowolnym rodzajem tekstu.
 
  Na przykład:
 
@@ -133,9 +133,9 @@ Squares of numbers:
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Dziedziczenie w szablonie tekstowym czasu wykonywania (wstępnie przetworzonym)
  Można użyć dziedziczenia między szablonami tekstowymi czasu wykonywania, aby utworzyć podstawowy szablon, który ma kilka wariantów pochodnych. Szablony czasu wykonywania to te, które mają właściwość **niestandardowego narzędzia** ustawioną na **TextTemplatingFilePreprocessor**. Szablon czasu wykonywania generuje kod, który można wywoływać w aplikacji, aby tworzyć tekst zdefiniowany w szablonie. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Jeśli nie określisz atrybutu `inherits`, Klasa bazowa i Klasa pochodna są generowane na podstawie szablonu tekstu. Po określeniu atrybutu `inherits` jest generowana tylko Klasa pochodna. Klasa bazowa może być napisana odręcznie, ale musi mieć metody, które są używane w klasie pochodnej.
+ Jeśli nie określisz `inherits` atrybutu, Klasa bazowa i Klasa pochodna są generowane na podstawie szablonu tekstu. Po określeniu `inherits` atrybutu jest generowana tylko Klasa pochodna. Klasa bazowa może być napisana odręcznie, ale musi mieć metody, które są używane w klasie pochodnej.
 
- Zazwyczaj można określić inny wstępnie przetworzony szablon jako klasę bazową. Szablon podstawowy dostarcza wspólne bloki tekstu, które mogą się przeplatać z tekstem z szablonów pochodnych. Można użyć bloków funkcji klasy `<#+ ... #>`, aby zdefiniować metody, które zawierają fragmenty tekstu. Na przykład można umieścić strukturę tekstu wyjściowego w szablonie podstawowym, zapewniającym wirtualne metody, które mogą zostać zastąpione w szablonach pochodnych:
+ Zazwyczaj można określić inny wstępnie przetworzony szablon jako klasę bazową. Szablon podstawowy dostarcza wspólne bloki tekstu, które mogą się przeplatać z tekstem z szablonów pochodnych. Można użyć bloków funkcji klasy `<#+ ... #>` do definiowania metod, które zawierają fragmenty tekstu. Na przykład można umieścić strukturę tekstu wyjściowego w szablonie podstawowym, zapewniającym wirtualne metody, które mogą zostać zastąpione w szablonach pochodnych:
 
  Szablon tekstowy (wstępnie przetworzony) czasu wykonywania BaseTemplate.tt:
 
@@ -204,12 +204,12 @@ This is the common footer.
  Można również użyć zwykłej klasy odręcznej jako klasy bazowej. Klasa bazowa musi dostarczać metody stosowane w klasie pochodnej.
 
 > [!WARNING]
-> Jeśli używasz atrybutów `inherits` i `hostspecific` razem, Określ hostspecific = "trueFromBase" w klasie pochodnej i host = "true" w klasie bazowej. Pozwala to uniknąć podwójnej definicji właściwości `Host` w wygenerowanym kodzie.
+> Jeśli używasz `inherits` `hostspecific` atrybutów i razem, Określ hostspecific = "trueFromBase" w klasie pochodnej i host = "true" w klasie bazowej. Pozwala to uniknąć podwójnej definicji `Host` właściwości w wygenerowanym kodzie.
 
 ### <a name="inheritance-in-a-design-time-text-template"></a>Dziedziczenie w szablonie tekstowym czasu projektowania
- Szablon tekstu czasu projektowania to plik, dla którego **Narzędzie niestandardowe** jest ustawione na **TextTemplatingFileGenerator**. Szablon generuje plik wyjściowy kodu lub tekstu, który stanowi część projektu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aby wygenerować plik wyjściowy, szablon najpierw jest tłumaczony na plik kodu programu pośredniego, którego zwykle nie widać. Atrybut `inherits` określa klasę bazową dla tego kodu pośredniego.
+ Szablon tekstu czasu projektowania to plik, dla którego **Narzędzie niestandardowe** jest ustawione na **TextTemplatingFileGenerator**. Szablon generuje plik wyjściowy kodu lub tekstu, który stanowi część [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. Aby wygenerować plik wyjściowy, szablon najpierw jest tłumaczony na plik kodu programu pośredniego, którego zwykle nie widać. Ten `inherits` atrybut określa klasę bazową dla tego kodu pośredniego.
 
- Dla szablonu tekstu czasu projektowania można określić dowolną klasę bazową, która jest pochodną <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Użyj dyrektywy `<#@assembly#>` do załadowania zestawu lub projektu, który zawiera klasę bazową.
+ Dla szablonu tekstu czasu projektowania można określić dowolną klasę bazową, która jest pochodną <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> . Użyj `<#@assembly#>` dyrektywy do załadowania zestawu lub projektu, który zawiera klasę bazową.
 
  Aby uzyskać więcej informacji, zobacz ["dziedziczenie w szablonach tekstowych" w blogu Gareth Nowak](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/).
 
@@ -231,4 +231,4 @@ This is the common footer.
 
  `internal`
 
- W szablonie tekstowym czasu wykonywania, ustawia atrybut widoczności wygenerowanej klasy. Domyślnie Klasa jest częścią publicznego interfejsu API kodu, ale przez ustawienie `visibility="internal"` można upewnić się, że tylko kod może używać klasy generującej tekst.
+ W szablonie tekstowym czasu wykonywania, ustawia atrybut widoczności wygenerowanej klasy. Domyślnie Klasa jest częścią publicznego interfejsu API kodu, ale przez ustawienie można `visibility="internal"` upewnić się, że tylko kod może używać klasy generującej tekst.

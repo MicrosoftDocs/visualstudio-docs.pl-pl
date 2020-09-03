@@ -15,10 +15,10 @@ caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 27dce16d9fe02063eae935af96c26184285e583d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850379"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
@@ -43,20 +43,20 @@ Zestaw Visual Studio SDK ułatwia poszerzanie funkcji programu Visual Studio lub
   Jeśli jeszcze nie zapisano rozszerzenia programu Visual Studio, należy znaleźć więcej informacji na temat tych funkcji i w momencie [rozpoczęcia tworzenia rozszerzeń programu Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
 ## <a name="installing-the-visual-studio-sdk"></a>Instalowanie zestawu Visual Studio SDK  
- Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dostępna jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="whats-new-in-the-visual-studio-2015-sdk"></a>Co nowego w zestawie SDK programu Visual Studio 2015  
- Zestaw Visual Studio SDK zawiera nowe funkcje, w tym żarówki i nowe elementy projektu, które umożliwiają tworzenie poleceń menu, okien narzędzi i rozszerzeń edytora przy użyciu pakietu VSIX. Aby uzyskać więcej informacji, zobacz [What's New in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
+ Zestaw Visual Studio SDK zawiera nowe funkcje, w tym żarówki i nowe elementy projektu, które umożliwiają tworzenie poleceń menu, okien narzędzi i rozszerzeń edytora przy użyciu pakietu VSIX. Aby uzyskać więcej informacji, zobacz [co nowego w zestawie SDK programu Visual Studio 2015](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
   
 ## <a name="visual-studio-user-experience-guidelines"></a>Wskazówki dotyczące interfejsu użytkownika w programie Visual Studio  
- Doskonałe porady dotyczące projektowania interfejsu użytkownika dla rozszerzenia w [dotyczące środowiska użytkownika w usłudze Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
+ Uzyskaj doskonałe wskazówki dotyczące projektowania interfejsu użytkownika dla rozszerzenia w [wytycznych dotyczących środowiska użytkownika programu Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
   
  Możesz również dowiedzieć się, jak zwiększyć atrakcyjność rozszerzenia na urządzeniach o wysokiej rozdzielczości DPI z tematem [Rozwiązywanie problemów dotyczących rozdzielczości DPI](../extensibility/addressing-dpi-issues2.md) .  
   
  Skorzystaj z [usługi Image Service i katalogu](../extensibility/image-service-and-catalog.md) , aby uzyskać doskonałe zarządzanie obrazami i obsługę wysokiej rozdzielczości DPI i ich obsługi.  
   
 ## <a name="finding-and-installing-existing-visual-studio-extensions"></a>Znajdowanie i Instalowanie istniejących rozszerzeń programu Visual Studio  
- Rozszerzenia programu Visual Studio można znaleźć w oknie dialogowym **rozszerzenia i aktualizacje** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Znajdowanie i przy użyciu rozszerzenia programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Możesz również znaleźć rozszerzenia w [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
+ Rozszerzenia programu Visual Studio można znaleźć w oknie dialogowym **rozszerzenia i aktualizacje** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Znajdowanie i używanie rozszerzeń programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Możesz również znaleźć rozszerzenia w [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
   
 ## <a name="visual-studio-sdk-reference"></a>Dokumentacja zestawu Visual Studio SDK  
  Informacje o interfejsie API zestawu SDK programu Visual Studio można znaleźć w [dokumentacji programu Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).  
@@ -76,25 +76,25 @@ Zestaw Visual Studio SDK ułatwia poszerzanie funkcji programu Visual Studio lub
 - [Rozszerzanie programu Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md)   
+ [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)   
  [Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
- [Często zadawane pytania: konwertowanie dodatków na rozszerzenia pakietu vspackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [Często zadawane pytania: konwertowanie dodatków na rozszerzenia pakietu VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Zarządzanie wieloma wątkami w kodzie zarządzanym](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)   
  [Dodawanie poleceń do pasków narzędzi](../extensibility/adding-commands-to-toolbars.md)   
- [Rozszerzanie i dostosowywanie narzędzi  systemu Windows](../extensibility/extending-and-customizing-tool-windows.md)  
+ [Rozszerzanie i dostosowywanie okien narzędzi](../extensibility/extending-and-customizing-tool-windows.md)   
  [Rozszerzenia edytora i usługi językowej](../extensibility/editor-and-language-service-extensions.md)   
  [Rozszerzanie projektów](../extensibility/extending-projects.md)   
- [Rozszerzanie ustawień użytkownika i opcji](../extensibility/extending-user-settings-and-options.md)   
+ [Rozszerzanie ustawień i opcji użytkownika](../extensibility/extending-user-settings-and-options.md)   
  [Tworzenie niestandardowych szablonów projektów i elementów](../extensibility/creating-custom-project-and-item-templates.md)   
  [Rozszerzanie właściwości i okna właściwości](../extensibility/extending-properties-and-the-property-window.md)   
  [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Używanie i świadczenie usług](../extensibility/using-and-providing-services.md)   
  [Rozszerzanie połączonych usług](../extensibility/extending-connected-services.md)   
- [Zarządzanie  pakietów VSPackage](../extensibility/managing-vspackages.md)  
-   [powłoka izolowana programu Visual Studio](../extensibility/visual-studio-isolated-shell.md)  
- [Wysyłka rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
- [W  Visual Studio SDK](../extensibility/internals/inside-the-visual-studio-sdk.md)  
+ [Zarządzanie pakietów VSPackage](../extensibility/managing-vspackages.md)   
+ [Powłoka izolowana programu Visual Studio](../extensibility/visual-studio-isolated-shell.md)   
+ [Wysyłanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
+ [Wewnątrz zestawu Visual Studio SDK](../extensibility/internals/inside-the-visual-studio-sdk.md)   
  [Obsługa zestawu SDK programu Visual Studio](../extensibility/support-for-the-visual-studio-sdk.md)   
-   [archiwalny](../extensibility/archive.md)  
+ [Folderu](../extensibility/archive.md)   
  [Dokumentacja zestawu Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)

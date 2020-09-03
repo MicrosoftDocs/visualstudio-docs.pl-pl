@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/11/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88114217"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Zaproponuj funkcję programu Visual Studio
@@ -108,7 +108,7 @@ Znaleziono szukane informacje? Jeśli masz dodatkowe informacje, możesz poprosi
 
 - - -
 
-## <a name="faq"></a>Często zadawane pytania
+## <a name="faq"></a>Najczęściej zadawane pytania
 
 ### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Dlaczego nie mogę zobaczyć pomysłu dotyczącego głosu użytkownika w społeczności deweloperów?
 
@@ -134,6 +134,6 @@ W pełni zobowiązujemy się do nasłuchiwania sugestii dotyczących funkcji i p
 
 Czas odpowiedzi zależy od stanu opinii użytkownika. Przejrzyj wyjaśnienie stanu w tym dokumencie, aby zrozumieć czas odpowiedzi.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wprowadzenie do "sugerowania funkcji" w społeczności deweloperów (blog programu Visual Studio)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

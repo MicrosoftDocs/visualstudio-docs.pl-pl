@@ -1,5 +1,5 @@
 ---
-title: Ewaluator wyrażeń | Dokumenty firmy Microsoft
+title: Ewaluatora wyrażeń | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,32 +13,32 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a477aaceb57e6ccd2eb5125fcf9d8af9be59472b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738690"
 ---
-# <a name="expression-evaluator"></a>Wyrażenie
-Oceniający wyrażenia (EE) zbadać składni języka do analizy i oceny zmiennych i wyrażeń w czasie wykonywania, dzięki czemu mają być wyświetlane przez użytkownika, gdy IDE jest w trybie przerwania.
+# <a name="expression-evaluator"></a>Ewaluatora wyrażeń
+Oceny wyrażeń (EE) sprawdzają składnię języka, aby analizować i oceniać zmienne i wyrażenia w czasie wykonywania, umożliwiając ich wyświetlanie przez użytkownika, gdy IDE jest w trybie przerwania.
 
-## <a name="use-expression-evaluators"></a>Używanie ewaluatorów wyrażeń
- Wyrażenia są tworzone przy użyciu [metody ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) w następujący sposób:
+## <a name="use-expression-evaluators"></a>Używanie ocen wyrażeń
+ Wyrażenia są tworzone przy użyciu metody [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) w następujący sposób:
 
-1. Aparat debugowania (DE) implementuje interfejs [IDebugExpressionContext2.](../../extensibility/debugger/reference/idebugexpressioncontext2.md)
+1. Aparat debugowania (DE) implementuje interfejs [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) .
 
-2. Pakiet debugowania `IDebugExpressionContext2` pobiera obiekt z interfejsu [IDebugStackFrame2,](../../extensibility/debugger/reference/idebugstackframe2.md) a następnie wywołuje `IDebugStackFrame2::ParseText` metodę na nim, aby uzyskać [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) obiektu.
+2. Pakiet debugowania pobiera `IDebugExpressionContext2` obiekt z interfejsu [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) , a następnie wywołuje `IDebugStackFrame2::ParseText` metodę na nim, aby uzyskać obiekt [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) .
 
-3. Pakiet debugowania wywołuje [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) metody lub [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) metody, aby uzyskać wartość wyrażenia. `IDebugExpression2::EvaluateAsync`jest wywoływana z okna Command/Immediate. Wszystkie inne składniki `IDebugExpression2::EvaluateSync`interfejsu użytkownika wywołać .
+3. Pakiet debugowania wywołuje metodę [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) lub metodę [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) w celu pobrania wartości wyrażenia. `IDebugExpression2::EvaluateAsync` jest wywoływany z okna polecenie/Immediate. Wszystkie inne składniki interfejsu użytkownika są wywoływane `IDebugExpression2::EvaluateSync` .
 
-4. Wynikiem oceny wyrażenia jest [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiektu, który zawiera nazwę, typ i wartość wyniku oceny wyrażenia.
+4. Wynik obliczania wyrażenia jest obiektem [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , który zawiera nazwę, typ i wartość wyniku oceny wyrażenia.
 
-   Podczas oceny wyrażenia EE wymaga informacji ze składnika dostawcy symbolu. Dostawca symbolu dostarcza symboliczne informacje używane do identyfikowania i rozumienia analizowanego wyrażenia.
+   Podczas obliczania wyrażenia EE wymaga informacji od składnika dostawcy symboli. Dostawca symboli dostarcza informacje symboliczne służące do identyfikowania i analizowania wyanalizowanego wyrażenia.
 
-   Po zakończeniu oceny wyrażenia asynchronicznego zdarzenie asynchroniczne jest wysyłane przez DE za pośrednictwem menedżera debugowania sesji (SDM), aby powiadomić IDE, że ocena wyrażenia została zakończona. I wynik oceny jest następnie zwracany z `IDebugExpression2::EvaluateSync` wywołania do metody.
+   Po zakończeniu obliczania wyrażeń asynchronicznych przez cały czas przez Menedżera debugowania sesji (SDM) zostanie wysłane zdarzenie asynchroniczne, aby powiadomić IDE o ukończeniu oceny wyrażenia. Wynik obliczania jest następnie zwracany z wywołania `IDebugExpression2::EvaluateSync` metody.
 
 ## <a name="implementation-notes"></a>Uwagi o implementacji
- Aparaty [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania oczekują, aby porozmawiać z oceniającego wyrażenie przy użyciu interfejsów wspólnego środowiska wykonawczego języka (CLR). W rezultacie oceniający wyrażenie, który [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] współpracuje z aparatami debugowania, musi obsługiwać program CLR (pełną listę wszystkich interfejsów debugowania CLR można znaleźć w pliku debugref.doc, który jest częścią [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]).
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Aparaty debugowania oczekują na rozmowę z ewaluatora wyrażeń przy użyciu interfejsów aparatu plików wykonywalnych języka wspólnego (CLR). W związku z tym, ewaluatora wyrażeń, która współpracuje z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aparatami debugowania, musi obsługiwać środowisko CLR (kompletna lista wszystkich interfejsów debugowania CLR znajduje się w debugref.doc, który jest częścią [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] ).
 
 ## <a name="see-also"></a>Zobacz też
 - [Składniki debugera](../../extensibility/debugger/debugger-components.md)

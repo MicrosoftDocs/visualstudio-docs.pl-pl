@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 448a74b739bbb339d5f3b3e56c0ba59072994109
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850619"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramy warstw: Odwołanie
@@ -55,15 +55,15 @@ W programie Visual Studio można użyć *diagramu warstwowego* w celu wizualizow
 
  W poniższej tabeli opisano elementy, których można użyć na diagramie warstwowym.
 
-|**Przekształca**|**Element**|**Opis**|
+|**Kształt**|**Element**|**Opis**|
 |---------------|-----------------|---------------------|
-|1|**Warstwy**|Logiczna Grupa artefaktów fizycznych w systemie. Te artefakty mogą być przestrzeniami nazw, projektami, klasami, metodami i tak dalej.<br /><br /> Aby wyświetlić artefakty, które są połączone z warstwą, otwórz menu skrótów dla warstwy, a następnie wybierz polecenie **Wyświetl linki** , aby otworzyć **Eksploratora warstw**.<br /><br /> Aby uzyskać więcej informacji, zobacz [Eksplorator warstw](#Explorer).<br /><br /> -   **zabronionych zależności przestrzeni nazw** — określa, że artefakty skojarzone z tą warstwą nie mogą zależeć od określonych przestrzeni nazw.<br />-   **zabronionych przestrzenie nazw** — określa, że artefakty skojarzone z tą warstwą nie mogą należeć do określonych przestrzeni nazw.<br />-   **wymagane przestrzenie nazw** — określa, że artefakty skojarzone z tą warstwą muszą należeć do jednej z określonych przestrzeni nazw.|
-|2|**Zależności**|Wskazuje, że jedna warstwa może korzystać z funkcjonalności w innej warstwie, ale nie odwrotnie.<br /><br /> **kierunek** -   — określa kierunek zależności.|
-|3|**Zależność dwukierunkowa**|Wskazuje, że jedna warstwa może korzystać z funkcjonalności w innej warstwie i na odwrót.<br /><br /> **kierunek** -   — określa kierunek zależności.|
+|1|**Warstwa**|Logiczna Grupa artefaktów fizycznych w systemie. Te artefakty mogą być przestrzeniami nazw, projektami, klasami, metodami i tak dalej.<br /><br /> Aby wyświetlić artefakty, które są połączone z warstwą, otwórz menu skrótów dla warstwy, a następnie wybierz polecenie **Wyświetl linki** , aby otworzyć **Eksploratora warstw**.<br /><br /> Aby uzyskać więcej informacji, zobacz [Eksplorator warstw](#Explorer).<br /><br /> -   **Zależności przestrzeni nazw zabronione** — określa, że artefakty skojarzone z tą warstwą nie mogą zależeć od określonych przestrzeni nazw.<br />-   **Niedozwolone przestrzenie nazw** — określa, że artefakty skojarzone z tą warstwą nie mogą należeć do określonych przestrzeni nazw.<br />-   **Wymagane przestrzenie nazw** — określa, że artefakty skojarzone z tą warstwą muszą należeć do jednej z określonych przestrzeni nazw.|
+|2|**Zależność**|Wskazuje, że jedna warstwa może korzystać z funkcjonalności w innej warstwie, ale nie odwrotnie.<br /><br /> -   **Direction** — określa kierunek zależności.|
+|3|**Zależność dwukierunkowa**|Wskazuje, że jedna warstwa może korzystać z funkcjonalności w innej warstwie i na odwrót.<br /><br /> -   **Direction** — określa kierunek zależności.|
 |4|**Komentarz**|Służy do dodawania ogólnych notatek do diagramu lub elementów na diagramie.|
 |5|**Link komentarza**|Służy do łączenia komentarzy do elementów na diagramie.|
 
-## <a name="Explorer"></a>Eksplorator warstw
+## <a name="layer-explorer"></a><a name="Explorer"></a> Eksplorator warstw
  Możesz połączyć każdą warstwę z artefaktami w rozwiązaniu, takich jak projekty, klasy, przestrzenie nazw, pliki projektu i inne części oprogramowania. Liczba na warstwie pokazuje liczbę artefaktów, które są połączone z warstwą. Jednak podczas odczytywania liczby artefaktów na warstwie należy pamiętać o następujących kwestiach:
 
 - Jeśli warstwa jest połączona z artefaktem zawierającym inne artefakty, ale warstwy nie łączy się bezpośrednio z innymi artefaktami, wówczas liczba uwzględnia tylko połączony artefakt. Jednak inne artefakty są uwzględniane w analizie podczas walidacji warstwy.
@@ -89,10 +89,10 @@ W programie Visual Studio można użyć *diagramu warstwowego* w celu wizualizow
 
     |**Kolumna w Eksploratorze warstwy**|**Opis**|
     |----------------------------------|---------------------|
-    |**Rodzaj**|Rodzaj artefaktu, taki jak Klasa, przestrzeń nazw, plik źródłowy itd.|
-    |**Warstwy**|Warstwa, która łączy się z artefaktem|
+    |**Kategorie**|Rodzaj artefaktu, taki jak Klasa, przestrzeń nazw, plik źródłowy itd.|
+    |**Warstwa**|Warstwa, która łączy się z artefaktem|
     |**Obsługuje walidację**|W przypadku **wartości true**proces walidacji warstwy może sprawdzić, czy projekt jest zgodny z zależnościami lub z tego elementu.<br /><br /> W przypadku **wartości false**link nie uczestniczy w procesie walidacji warstwy.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy warstwowe: wytyczne](../modeling/layer-diagrams-guidelines.md).|
-    |**Identyfikatora**|Odwołanie do połączonego artefaktu|
+    |**Identyfikator**|Odwołanie do połączonego artefaktu|
 
 ## <a name="see-also"></a>Zobacz też
  [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)

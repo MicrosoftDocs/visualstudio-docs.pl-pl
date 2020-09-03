@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8876a0a3c2b978443ee4bc74097dbc9fdd410b8b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655999"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
@@ -30,24 +30,24 @@ Zadbaj o pracę, gdy dowiesz się, co się stało z kodem — bez opuszczania ed
 
  Skontaktuj się z zespołem, aby dowiedzieć się o zmianach w kodzie bez opuszczania edytora:
 
- ![CodeLens &#45; skontaktuj się z zespołem](../ide/media/codelensovervew2.png "CodeLensOvervew2")
+ ![CodeLens &#45; skontaktować się z zespołem](../ide/media/codelensovervew2.png "CodeLensOvervew2")
 
  Aby wybrać wskaźniki, które mają być wyświetlane, lub aby wyłączyć funkcję CodeLens, przejdź do pozycji **Narzędzia**, **Opcje**, **Edytor tekstu**, **wszystkie języki**, **CodeLens**.
 
-## <a name="FindReferences"></a>Znajdowanie odwołań do kodu
- Będziesz potrzebować:
+## <a name="find-references-to-your-code"></a><a name="FindReferences"></a> Znajdowanie odwołań do kodu
+ Potrzebne będą następujące elementy:
 
 - Visual Studio Enterprise lub Visual Studio Professional
 
-- Visual C# .net lub Visual Basic kod .NET
+- Visual C# .NET lub Visual Basic kod .NET
 
-  Wybierz wskaźnik **odwołań** (**ALT + 2**). Jeśli widzisz **0 odwołań**, nie masz żadnych odwołań z kodu C# Visual lub Visual Basic. Nie obejmuje to odwołań z innych elementów, takich jak pliki XAML i ASPX.
+  Wybierz wskaźnik **odwołań** (**ALT + 2**). Jeśli widzisz **0 odwołań**, nie masz żadnych odwołań z kodu Visual C# lub Visual Basic Code. Nie obejmuje to odwołań z innych elementów, takich jak pliki XAML i ASPX.
 
   ![CodeLens &#45; wybierz wskaźnik odwołań](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")
 
   Aby wyświetlić kod odwołujący się, przesuń wskaźnik myszy na górę odwołania.
 
-  ![Dokumentacja &#45; wglądu w CodeLens](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")
+  ![&#45; CodeLens wgląd w informacje](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")
 
   Aby otworzyć plik zawierający odwołanie, kliknij dwukrotnie odwołanie.
 
@@ -55,10 +55,10 @@ Zadbaj o pracę, gdy dowiesz się, co się stało z kodem — bez opuszczania ed
 
   ![CodeLens &#45; odwołania na mapie kodu](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")
 
-## <a name="FindCodeHistory"></a>Znajdź historię kodu i połączone elementy
+## <a name="find-your-codes-history-and-linked-items"></a><a name="FindCodeHistory"></a> Znajdź historię kodu i połączone elementy
  Przejrzyj historię kodu, aby dowiedzieć się, co się stało z kodem. Możesz też przejrzeć zmiany przed ich scaleniem z kodem, aby lepiej zrozumieć, jak zmiany w innych gałęziach mogą wpłynąć na kod.
 
- Będziesz potrzebować:
+ Potrzebne będą następujące elementy:
 
 - Visual Studio Enterprise lub Visual Studio Professional
 
@@ -66,20 +66,20 @@ Zadbaj o pracę, gdy dowiesz się, co się stało z kodem — bez opuszczania ed
 
 - [Lync 2010 lub nowszy albo Skype dla firm](https://technet.microsoft.com/lync), aby skontaktować się z zespołem w edytorze kodu
 
-  W przypadku C# Visual .net lub Visual Basic kodu platformy .NET, który jest przechowywany w programie Team Foundation Version Control (TFVC) lub git, można uzyskać szczegóły CodeLens na poziomach klas i metod (wskaźniki*poziomu elementów kodu* ). Jeśli repozytorium git jest hostowane w usłudze TfGit, uzyskasz także linki do elementów roboczych TFS.
+  W przypadku języka Visual C# .NET lub Visual Basic kodu .NET, który jest przechowywany w programie Team Foundation Version Control (TFVC) lub git, można uzyskać szczegóły CodeLens na poziomach klas i metod (wskaźniki*poziomu elementów kodu* ). Jeśli repozytorium git jest hostowane w usłudze TfGit, uzyskasz także linki do elementów roboczych TFS.
 
-  ![Wskaźniki poziomu&#45;elementów kodu](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")
+  ![Wskaźniki poziomu&#45;elementu kodu](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")
 
   Dla wszystkich innych typów plików, które można otworzyć w edytorze programu Visual Studio, uzyskasz CodeLens szczegóły dotyczące całego pliku w jednym miejscu w dolnej części okna (wskaźniki*poziomu plików* ).
 
-  ![Wskaźniki&#45;CodeLens na poziomie pliku](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")
+  ![Wskaźniki CodeLens na poziomie pliku&#45;](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")
 
   Aby wybrać wskaźniki przy użyciu klawiatury, naciśnij i przytrzymaj klawisz **Alt** , aby wyświetlić powiązane klucze liczbowe.
 
   ![Naciśnij klawisz ALT, aby wyświetlić numery dostępu klawiaturowego](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")
 
 ### <a name="find-changes-in-your-code"></a>Znajdowanie zmian w kodzie
- Znajdź, kto zmienił C# swój kod lub Visual Basic, oraz wprowadzone zmiany, w wskaźnikach poziomu elementów kodu. Jest to widoczne w przypadku korzystania z programu Team Foundation Version Control (TFVC) w Team Foundation Server lub Visual Studio Team Services.
+ Znajdź, kto zmienił kod C# lub Visual Basic, oraz wprowadzone zmiany, w wskaźnikach poziomu elementów kodu. Jest to widoczne w przypadku korzystania z programu Team Foundation Version Control (TFVC) w Team Foundation Server lub Visual Studio Team Services.
 
  ![CodeLens: Pobierz historię zmian dla kodu w TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")
 
@@ -97,7 +97,7 @@ Zadbaj o pracę, gdy dowiesz się, co się stało z kodem — bez opuszczania ed
 
  ![CodeLens: Pobierz historię zmian dla kodu w usłudze git](../ide/media/codelenscodechangesgit.png "CodeLensCodeChangesGit")
 
- Znajdź zmiany w całym pliku (z wyjątkiem plików C# i Visual Basic) w wskaźnikach na poziomie plików w dolnej części okna.
+ Znajdź zmiany dla całego pliku (z wyjątkiem plików C# i Visual Basic) w wskaźnikach poziomu plików w dolnej części okna.
 
  ![CodeLens: Pobierz szczegóły pliku kodu](../ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
@@ -139,7 +139,7 @@ Zadbaj o pracę, gdy dowiesz się, co się stało z kodem — bez opuszczania ed
 
  Na przykład kod w gałęzi głównej zawiera teraz poprawkę błędu z gałęzi dev:
 
- ![CodeLens &#45; scalone chagnes między gałęziami](../ide/media/codelensbranchmergedscreenshot.png "CodeLensBranchMergedScreenshot")
+ ![CodeLens &#45; scalonych chagnes między gałęziami](../ide/media/codelensbranchmergedscreenshot.png "CodeLensBranchMergedScreenshot")
 
 #### <a name="compare-an-incoming-change-with-your-local-version-shift--f10"></a>Porównaj zmiany przychodzące z wersją lokalną (Shift + F10)
  ![CodeLens: Porównaj przychodzące zmiany z lokalną](../ide/media/codelensbranchincomingchangemenu.png "CodeLensBranchIncomingChangeMenu")
@@ -151,10 +151,10 @@ Zadbaj o pracę, gdy dowiesz się, co się stało z kodem — bez opuszczania ed
 |**Ikona**|**Skąd pochodzi zmiana?**|
 |--------------|-----------------------------------------|
 |![CodeLens: Zmień ikonę z bieżącej gałęzi](../ide/media/codelensbranchcurrenticon.png "CodeLensBranchCurrentIcon")|Bieżąca gałąź|
-|![CodeLens &#45; Zmień z ikony gałęzi nadrzędnej](../ide/media/codelensbranchparenticon.png "CodeLensBranchParentIcon")|Gałąź nadrzędna|
+|![CodeLens &#45; zmienić z ikony gałęzi nadrzędnej](../ide/media/codelensbranchparenticon.png "CodeLensBranchParentIcon")|Gałąź nadrzędna|
 |![CodeLens: Zmień z ikony gałęzi podrzędnej](../ide/media/codelensbranchchildicon.png "CodeLensBranchChildIcon")|Gałąź podrzędna|
-|![CodeLens &#45; zmiana ikony gałęzi równorzędnej](../ide/media/codelensbranchpeericon.png "CodeLensBranchPeerIcon")|Gałąź równorzędna|
-|![CodeLens &#45; zmiany z gałęzi do dalszej ikony](../ide/media/codelensbranchfurtherawayicon.png "CodeLensBranchFurtherAwayIcon")|Gałąź poza elementem nadrzędnym, podrzędnym lub równorzędnym|
+|![CodeLens &#45; zmienić ikony gałęzi równorzędnej](../ide/media/codelensbranchpeericon.png "CodeLensBranchPeerIcon")|Gałąź równorzędna|
+|![CodeLens &#45; zmienić z gałęzi do dalszych ikon](../ide/media/codelensbranchfurtherawayicon.png "CodeLensBranchFurtherAwayIcon")|Gałąź poza elementem nadrzędnym, podrzędnym lub równorzędnym|
 |![CodeLens: Scal z ikony nadrzędnej](../ide/media/codelensbranchmergefromparenticon.png "CodeLensBranchMergeFromParentIcon")|Scalanie z gałęzi nadrzędnej z gałęzią podrzędną|
 |![CodeLens: Scal z ikony gałęzi podrzędnej](../ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|Scalanie z gałęzi podrzędnej do gałęzi nadrzędnej|
 |![CodeLens: scalanie z ikony niepowiązanej gałęzi](../ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|Scalanie z niepowiązanej gałęzi (bez podstawy merge)|
@@ -166,7 +166,7 @@ Zadbaj o pracę, gdy dowiesz się, co się stało z kodem — bez opuszczania ed
  ![CodeLens &#45; Wyświetl żądania przeglądu kodu](../ide/media/codelenscodereviews.png "CodeLensCodeReviews")
 
 ### <a name="find-linked-bugs"></a>Znajdź połączone usterki
- ![CodeLens &#45; Znajdź błędy połączone z zestawami zmian](../ide/media/codelensbugschangesets.png "CodeLensBugsChangesets")
+ ![CodeLens &#45; znajdować błędy połączone z zestawami zmian](../ide/media/codelensbugschangesets.png "CodeLensBugsChangesets")
 
 ### <a name="contact-the-owner-of-an-item"></a>Skontaktuj się z właścicielem elementu
  ![Skontaktuj się z właścicielem elementu](../ide/media/codelenscontactitemowner.png "CodeLensContactItemOwner")
@@ -175,12 +175,12 @@ Zadbaj o pracę, gdy dowiesz się, co się stało z kodem — bez opuszczania ed
 
  ![Opcje kontaktu dla elementu](../ide/media/codelensitemcontactmenu.png "CodeLensItemContactMenu")
 
-## <a name="FindRunUnitTests"></a>Znajdowanie testów jednostkowych dla kodu
- Dowiedz się więcej o testach jednostkowych istniejących dla kodu bez otwierania Eksploratora testów. Będziesz potrzebować:
+## <a name="find-unit-tests-for-your-code"></a><a name="FindRunUnitTests"></a> Znajdowanie testów jednostkowych dla kodu
+ Dowiedz się więcej o testach jednostkowych istniejących dla kodu bez otwierania Eksploratora testów. Potrzebne będą następujące elementy:
 
 - Visual Studio Enterprise lub Visual Studio Professional
 
-- Visual C# .net lub Visual Basic kod .NET
+- Visual C# .NET lub Visual Basic kod .NET
 
 - [Projekt testu jednostkowego](../test/unit-test-your-code.md) , który zawiera testy jednostkowe dla kodu aplikacji
 
@@ -190,35 +190,35 @@ Zadbaj o pracę, gdy dowiesz się, co się stało z kodem — bez opuszczania ed
 
      ![CodeLens &#45; wybierz stan testu w edytorze kodu](../ide/media/codelenschoosetestindicator.png "CodeLensChooseTestIndicator")
 
-3. Jeśli zostanie wyświetlona ikona ![ostrzeżenia &#45; CodeLens testy jednostkowe nie zostały jeszcze wykonane](../ide/media/codelenstestwarningicon.png "CodeLensTestWarningIcon"), Uruchom testy.
+3. Jeśli zostanie wyświetlona ikona ostrzeżenia ![CodeLens &#45; testy jednostkowe nie zostały jeszcze wykonane](../ide/media/codelenstestwarningicon.png "CodeLensTestWarningIcon"), Uruchom testy.
 
-     ![Testy &#45; jednostkowe widoku CodeLens nie zostały jeszcze uruchomione](../ide/media/codelenstestsnotyetrun.png "CodeLensTestsNotYetRun")
+     ![Testy jednostkowe CodeLensego widoku &#45; nie zostały jeszcze uruchomione](../ide/media/codelenstestsnotyetrun.png "CodeLensTestsNotYetRun")
 
 4. Aby przejrzeć definicję testu, kliknij dwukrotnie element testu w oknie wskaźnika CodeLens, aby otworzyć plik kodu w edytorze.
 
      ![CodeLens &#45; przejdź do definicji testu jednostkowego](../ide/media/codelensunittestdefinition.png "CodeLensUnitTestDefinition")
 
-5. Przejrzyj wyniki testu. Wybierz wskaźnik stanu testu (![ikona testu &#45; jednostkowego CodeLens](../ide/media/codelenstestfailedicon.png "CodeLensTestFailedIcon") lub ![ikona zakończonego testem jednostkowym CodeLens &#45; ](../ide/media/codelenstestpassedicon.png "CodeLensTestPassedIcon")) lub naciśnij klawisze **Alt + 1**.
+5. Przejrzyj wyniki testu. Wybierz pozycję wskaźnik stanu testu (![CodeLens &#45; test jednostki zakończone niepowodzeniem](../ide/media/codelenstestfailedicon.png "CodeLensTestFailedIcon") lub ![ikonę CodeLens testu jednostkowego &#45;](../ide/media/codelenstestpassedicon.png "CodeLensTestPassedIcon")) lub naciśnij klawisze **Alt + 1**.
 
      ![CodeLens &#45; Zobacz wyniki testu jednostkowego](../ide/media/codelensunittestresult.png "CodeLensUnitTestResult")
 
 6. Aby zobaczyć, ile osób zmieniło ten test, kto zmienił ten test lub ile zmian zostało wprowadzonych w tym teście, [Znajdź historię kodu i połączone elementy](#FindCodeHistory).
 
-## <a name="QA"></a>p & A
+## <a name="q--a"></a><a name="QA"></a> P & A
 
-### <a name="ChangeOrTurnOff"></a>P: Jak mogę wyłączyć lub włączyć CodeLens? Lub wybrać wskaźniki, które mają być wyświetlane?
+### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a><a name="ChangeOrTurnOff"></a> P: Jak mogę wyłączyć lub włączyć CodeLens? Lub wybrać wskaźniki, które mają być wyświetlane?
  Odp **.:**  Można wyłączyć lub włączyć wskaźniki, z wyjątkiem wskaźnika odwołań. Przejdź do **Narzędzia**, **Opcje**, **Edytor tekstu**, **wszystkie języki**, **CodeLens**.
 
  Po włączeniu wskaźników można także otworzyć Opcje CodeLens z wskaźników.
 
- ![CodeLens &#45; Włącz lub Włącz wskaźniki](../ide/media/codelensturnoffonindicatorsfromcode.png "CodeLensTurnOffOnIndicatorsFromCode")
+ ![CodeLens &#45; włączać lub włączać wskaźniki](../ide/media/codelensturnoffonindicatorsfromcode.png "CodeLensTurnOffOnIndicatorsFromCode")
 
  Włącz i Wyłącz wskaźniki na poziomie plików CodeLens przy użyciu ikon Pagon u dołu okna edytora.
 
- ![Włącz i&#45;Wyłącz wskaźniki poziomu plików](../ide/media/codelensfilelevelonandoff.png "CodeLensFileLevelOnAndOff")
+ ![Włącz i Wyłącz wskaźniki poziomu&#45;plików](../ide/media/codelensfilelevelonandoff.png "CodeLensFileLevelOnAndOff")
 
-### <a name="NoIndicators"></a>P: gdzie jest CodeLens?
- Odp **.:** CodeLens pojawia się w C# programie Visual .net i Visual Basic kodzie .NET na poziomie metody, klasy, indeksatora i właściwości. CodeLens pojawia się na poziomie pliku dla wszystkich innych typów plików.
+### <a name="q-where-is-codelens"></a><a name="NoIndicators"></a> P: gdzie jest CodeLens?
+ Odp **.:** CodeLens pojawia się w języku Visual C# .NET i Visual Basic kodzie .NET na poziomie metody, klasy, indeksatora i właściwości. CodeLens pojawia się na poziomie pliku dla wszystkich innych typów plików.
 
 - Upewnij się, że CodeLens jest włączona. Przejdź do **Narzędzia**, **Opcje**, **Edytor tekstu**, **wszystkie języki**, **CodeLens**.
 
@@ -231,10 +231,10 @@ Zadbaj o pracę, gdy dowiesz się, co się stało z kodem — bez opuszczania ed
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>P: Dlaczego nie widzę szczegółów elementu pracy dla zatwierdzenia?
  Odp **.:** Może się tak zdarzyć, ponieważ CodeLens nie może znaleźć elementów roboczych w programie TFS. Sprawdź, czy masz połączenie z projektem zespołowym, który ma te elementy robocze i czy masz uprawnienia do wyświetlania tych elementów roboczych. Taka sytuacja może wystąpić również, jeśli opis zatwierdzenia zawiera nieprawidłowe informacje o identyfikatorach elementów roboczych w programie TFS.
 
-### <a name="NoLync"></a>P: Dlaczego nie widzę wskaźników Lync lub Skype?
+### <a name="q-why-dont-i-see-the-lync-or-skype-indicators"></a><a name="NoLync"></a> P: Dlaczego nie widzę wskaźników Lync lub Skype?
  Odp **.:** Nie są wyświetlane, jeśli nie zarejestrowano Cię w usłudze Lync lub Skype dla firm, nie zainstalowano jednego z nich lub nie masz obsługiwanej konfiguracji. Jednak nadal możesz wysyłać wiadomości e-mail:
 
- ![CodeLens &#45; skontaktuj się z właścicielem grupy zmian przez pocztę](../ide/media/codelenscodesendmailchangesetnolync1.png "CodeLensCodeSendMailChangesetNoLync1")
+ ![CodeLens &#45; skontaktować się z właścicielem grupy zmian przez pocztę](../ide/media/codelenscodesendmailchangesetnolync1.png "CodeLensCodeSendMailChangesetNoLync1")
 
  **Które konfiguracje Lync i Skype są obsługiwane?**
 
@@ -247,7 +247,7 @@ Zadbaj o pracę, gdy dowiesz się, co się stało z kodem — bez opuszczania ed
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>P: Jak mogę zmienić czcionkę i kolor dla CodeLens?
  Odp **.:** Przejdź do **Narzędzia**, **Opcje**, **środowisko**, **czcionki i kolory**.
 
- ![CodeLens &#45; zmiana ustawień czcionki i koloru](../ide/media/codelensoptionsfontscolorssettings.png "CodeLensOptionsFontsColorsSettings")
+ ![CodeLens &#45; zmienić ustawień czcionki i koloru](../ide/media/codelensoptionsfontscolorssettings.png "CodeLensOptionsFontsColorsSettings")
 
  Aby użyć klawiatury:
 
@@ -275,11 +275,11 @@ Zadbaj o pracę, gdy dowiesz się, co się stało z kodem — bez opuszczania ed
 
 - **Zespół**: Odśwież te wskaźniki ręcznie w tym miejscu:
 
-     ![CodeLens &#45; wskaźniki odświeżania](../ide/media/codelensrefreshindicatorsfromcode.png "CodeLensRefreshIndicatorsFromCode")
+     ![CodeLens wskaźniki odświeżania &#45;](../ide/media/codelensrefreshindicatorsfromcode.png "CodeLensRefreshIndicatorsFromCode")
 
 - **Test**: [Znajdź testy jednostkowe dla kodu](#FindRunUnitTests) , aby odświeżyć ten wskaźnik.
 
-### <a name="LocalVersion"></a>P: co to jest "lokalna wersja"?
+### <a name="q-whats-local-version"></a><a name="LocalVersion"></a> P: co to jest "lokalna wersja"?
  Odp **.:** Strzałka **wersja lokalna** wskazuje najnowszą grupę zmian w lokalnej wersji tego pliku. Gdy serwer ma nowsze zestawy zmian, są one wyświetlane powyżej lub poniżej strzałki **wersji lokalnej** , w zależności od kolejności użytej do sortowania zestawów zmian.
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>P: Czy mogę zarządzać sposobem, w jaki CodeLens przetwarza kod, aby pokazać historię i połączone elementy?

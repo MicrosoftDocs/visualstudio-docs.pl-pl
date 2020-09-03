@@ -12,14 +12,14 @@ ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: 1f3b0c173d5d1f4b3642bf61d2cca9fb6fd231e6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850322"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Instrukcje: Tworzenie kontrolki przybornika korzystającej z Windows Forms
-Szablon kontrolki przybornika Windows Forms, który jest zawarty w [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] umożliwia tworzenie formantów Windows Forms, które są automatycznie dodawane do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak za pomocą szablonu utworzyć formant **przybornika** , który można dystrybuować do innych użytkowników.  
+Szablon kontrolki przybornika Windows Forms, który jest zawarty w programie [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] umożliwia tworzenie Windows Forms formantów, które są automatycznie dodawane do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak za pomocą szablonu utworzyć formant **przybornika** , który można dystrybuować do innych użytkowników.  
   
 > [!NOTE]
 > Aby dowiedzieć się, jak pobrać zestaw Visual Studio SDK, zobacz [Centrum deweloperów rozszerzeń programu Visual Studio](https://msdn.microsoft.com/vsx/default.aspx) w witrynie MSDN w sieci Web.  
@@ -54,9 +54,9 @@ Szablon kontrolki przybornika Windows Forms, który jest zawarty w [!INCLUDE[vss
   
 2. W definicji klasy częściowej, która implementuje formant, kliknij prawym przyciskiem myszy nazwę klasy, kliknij pozycję **Refaktoryzacja**, a następnie kliknij polecenie **Zmień nazwę**. Zmień nazwę klasy na nazwę, która ma być wyświetlana w **przyborniku** , gdy kontrolka jest zainstalowana.  
   
-3. Bezpośrednio powyżej definicji klasy, w deklaracji atrybutu `ProvideToolboxControl`, Zmień wartość pierwszego parametru na nazwę grupy elementów, która będzie hostować formant w **przyborniku**.  
+3. Bezpośrednio powyżej definicji klasy, w `ProvideToolboxControl` deklaracji atrybutu, Zmień wartość pierwszego parametru na nazwę grupy elementów, która będzie hostować formant w **przyborniku**.  
   
-     Poniższy przykład pokazuje atrybut `ProvideToolboxControl` i dostosowaną definicję klasy dla kontrolki o nazwie `Counter` w grupie `General` elementów.  
+     Poniższy przykład pokazuje `ProvideToolboxControl` atrybut i dostosowaną definicję klasy dla kontrolki o nazwie `Counter` w `General` grupie elementów.  
   
      [!code-csharp[ToolboxControlWinForms#07](../snippets/csharp/VS_Snippets_VSSDK/toolboxcontrolwinforms/cs/toolboxcontrol.cs#07)]  
   

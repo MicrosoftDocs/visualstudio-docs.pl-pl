@@ -13,26 +13,26 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a23a8d28f336728789fe9cbbe38f965cc56763d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295509"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Programy obsługi zdarzeń propagujące zmiany poza modelem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Wizualizacja i modelowanie SDK można zdefiniować programy obsługi zdarzeń magazynu do propagowania zmian zasobów poza magazynem, takich jak zmienne spoza magazynu, pliki, modele w innych magazynach lub inne rozszerzenia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Procedury obsługi zdarzeń magazynu są wykonywane po zakończeniu transakcji, w której wystąpiło zdarzenie wyzwalające. Są one również wykonywane w operacji cofania lub ponawiania. W związku z tym, w przeciwieństwie do reguł magazynu, zdarzenia ze sklepu są najbardziej przydatne do aktualizowania wartości, które znajdują się poza magazynem. W przeciwieństwie do zdarzeń platformy .NET, programy obsługi zdarzeń magazynu są zarejestrowane w celu nasłuchiwania na klasie: nie ma potrzeby rejestrowania oddzielnej procedury obsługi dla każdego wystąpienia. Aby uzyskać więcej informacji na temat sposobu wybierania różnych sposobów obsługi zmian, zobacz [reagowanie na zmiany i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).
+W programie Wizualizacja i modelowanie SDK można zdefiniować programy obsługi zdarzeń magazynu do propagowania zmian zasobów poza magazynem, takich jak zmienne spoza magazynu, pliki, modele w innych magazynach lub inne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia. Procedury obsługi zdarzeń magazynu są wykonywane po zakończeniu transakcji, w której wystąpiło zdarzenie wyzwalające. Są one również wykonywane w operacji cofania lub ponawiania. W związku z tym, w przeciwieństwie do reguł magazynu, zdarzenia ze sklepu są najbardziej przydatne do aktualizowania wartości, które znajdują się poza magazynem. W przeciwieństwie do zdarzeń platformy .NET, programy obsługi zdarzeń magazynu są zarejestrowane w celu nasłuchiwania na klasie: nie ma potrzeby rejestrowania oddzielnej procedury obsługi dla każdego wystąpienia. Aby uzyskać więcej informacji na temat sposobu wybierania różnych sposobów obsługi zmian, zobacz [reagowanie na zmiany i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).
 
  Graficzna powierzchnia i inne kontrolki interfejsu użytkownika to przykłady zasobów zewnętrznych, które mogą być obsługiwane przez zdarzenia ze sklepu.
 
 ### <a name="to-define-a-store-event"></a>Aby zdefiniować zdarzenie magazynu
 
-1. Wybierz typ zdarzenia, które chcesz monitorować. Aby zapoznać się z pełną listą, zapoznaj się z właściwościami <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Każda właściwość odpowiada typowi zdarzenia. Najczęściej używane typy zdarzeń to:
+1. Wybierz typ zdarzenia, które chcesz monitorować. Aby zapoznać się z pełną listą, zapoznaj się z właściwościami <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory> . Każda właściwość odpowiada typowi zdarzenia. Najczęściej używane typy zdarzeń to:
 
-   - `ElementAdded` — wyzwolone po utworzeniu elementu modelu, linku relacji, kształtu lub łącznika.
+   - `ElementAdded` — wyzwalane po utworzeniu elementu modelu, linku relacji, kształtu lub łącznika.
 
-   - ElementPropertyChanged — wyzwalane, gdy zostanie zmieniona wartość właściwości domeny `Normal`. Zdarzenie jest wyzwalane tylko wtedy, gdy nowe i stare wartości nie są równe. Nie można zastosować zdarzenia do właściwości magazynu obliczeniowego i niestandardowego.
+   - ElementPropertyChanged — wyzwalane, gdy `Normal` zostanie zmieniona wartość właściwości domeny. Zdarzenie jest wyzwalane tylko wtedy, gdy nowe i stare wartości nie są równe. Nie można zastosować zdarzenia do właściwości magazynu obliczeniowego i niestandardowego.
 
         Nie można jej zastosować do właściwości roli, które odpowiadają linkom relacji. Zamiast tego należy użyć `ElementAdded` do monitorowania relacji domeny.
 
@@ -40,9 +40,9 @@ W programie Wizualizacja i modelowanie SDK można zdefiniować programy obsługi
 
 2. Dodaj definicję klasy częściowej dla _YourDsl_**DocData** w osobnym pliku kodu w projekcie **DslPackage** .
 
-3. Napisz kod zdarzenia jako metodę, jak w poniższym przykładzie. Może być `static`, chyba że chcesz uzyskać dostęp do `DocData`.
+3. Napisz kod zdarzenia jako metodę, jak w poniższym przykładzie. Może tak być `static` , chyba że chcesz uzyskać dostęp do programu `DocData` .
 
-4. Zastąp `OnDocumentLoaded()`, aby zarejestrować procedurę obsługi. Jeśli masz więcej niż jedną procedurę obsługi, możesz zarejestrować je wszystkie w tym samym miejscu.
+4. Przesłoń `OnDocumentLoaded()` , aby zarejestrować procedurę obsługi. Jeśli masz więcej niż jedną procedurę obsługi, możesz zarejestrować je wszystkie w tym samym miejscu.
 
    Lokalizacja kodu rejestracji nie jest krytyczna. `DocView.LoadView()` jest lokalizacją alternatywną.
 
@@ -166,16 +166,16 @@ private static void AlbumTitleAdjuster(object sender,
 
  Jeśli piszesz zdarzenie, które aktualizuje Sklep:
 
-- Użyj `store.InUndoRedoOrRollback`, aby uniknąć wprowadzania zmian do elementów modelu w Cofnij. Menedżer transakcji ustawi wszystkie elementy w sklepie z powrotem do stanu pierwotnego.
+- Użyj `store.InUndoRedoOrRollback` , aby uniknąć wprowadzania zmian do elementów modelu w Cofnij. Menedżer transakcji ustawi wszystkie elementy w sklepie z powrotem do stanu pierwotnego.
 
-- Użyj `store.InSerializationTransaction`, aby uniknąć wprowadzania zmian podczas ładowania modelu z pliku.
+- Użyj `store.InSerializationTransaction` , aby uniknąć wprowadzania zmian podczas ładowania modelu z pliku.
 
 - Zmiany spowodują wyzwolenie dalszych zdarzeń. Upewnij się, że unikasz pętli nieskończonej.
 
 ## <a name="store-event-types"></a>Przechowywanie typów zdarzeń
  Każdy typ zdarzenia odpowiada kolekcji w sklepie. EventManagerDirectory. Obsługę zdarzeń można dodać lub usunąć w dowolnym momencie, ale zazwyczaj należy dodać je po załadowaniu dokumentu.
 
-|Nazwa właściwości `EventManagerDirectory`|Wykonywane, gdy|
+|`EventManagerDirectory` Nazwa właściwości|Wykonywane, gdy|
 |-------------------------------------------|-------------------|
 |ElementAdded|Tworzone jest wystąpienie klasy domeny, relacji domeny, kształtu, łącznika lub diagramu.|
 |ElementDeleted|Element modelu został usunięty z katalogu elementów magazynu i nie jest już źródłem ani celem żadnej relacji. Element nie został faktycznie usunięty z pamięci, ale jest zachowywany w przypadku późniejszego cofnięcia.|

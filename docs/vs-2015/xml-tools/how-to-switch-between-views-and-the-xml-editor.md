@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 28267f705dd9a747d0e3f3ac5dc2869ab7de8f6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656316"
 ---
-# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Instrukcje: przełączanie się między widokami a edytorem XML
+# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Instrukcje: Przełączanie się między widokami i edytorem XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym temacie pokazano, jak przełączać się między widokami projektanta schematu XML (XSD Designer) a edytorem XML. W tym przykładzie zastosowano [schemat zamówienia zakupu](../xml-tools/sample-xsd-file-simple-schema.md).
@@ -29,9 +29,9 @@ W tym temacie pokazano, jak przełączać się między widokami projektanta sche
 
 3. Aby przełączyć się do widoku wykresu przy użyciu znaku wodnego, kliknij przycisk **Użyj widoku wykresu, aby zobaczyć relację między węzłem węzły** w widoku Start.
 
-4. Przeciągnij węzeł `USAddress` z Eksploratora schematu XML na widok wykresu. Kliknij prawym przyciskiem myszy węzeł `USAddress` w widoku wykresu i wybierz polecenie **Pokaż w widoku modelu zawartości** w menu kontekstowym.
+4. Przeciągnij `USAddress` węzeł z Eksploratora schematu XML na widok wykresu. Kliknij prawym przyciskiem myszy `USAddress` węzeł w widoku wykresu i wybierz polecenie **Pokaż w widoku modelu zawartości** w menu kontekstowym.
 
-     Zostanie wyświetlony widok model zawartości z szczegółowymi węzłami `USAddress`.
+     Zostanie wyświetlony widok model zawartości z szczegółowymi informacjami o `USAddress` węźle.
 
 5. Aby przełączyć się do widoku Start z widoku modelu zawartości przy użyciu paska narzędzi, kliknij przycisk Wyświetl widok na pasku narzędzi XSD.
 

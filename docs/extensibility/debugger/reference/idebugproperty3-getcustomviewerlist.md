@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetCustomViewerList | Dokumenty firmy Microsoft
+title: 'IDebugProperty3:: GetCustomViewerList | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 212f8d251232d35ee7d9cc46074a21239eea29f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721160"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
-Pobiera listę niestandardowych widzów skojarzonych z tą właściwością.
+Pobiera listę niestandardowych podglądów skojarzonych z tą właściwością.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,27 +47,27 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>Parametry
 `celtSkip`\
-[w] Liczba widzów do przeskoku.
+podczas Liczba podglądów do pominięcia.
 
 `celtRequested`\
-[w] Liczba przejmów do pobrania (określa również `rgViewers` rozmiar tablicy).
+podczas Liczba osób przeglądających do pobrania (określa również rozmiar `rgViewers` tablicy).
 
 `rgViewers`\
-[w, na zewnątrz] Tablica [struktur DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) do wypełnienia.
+[in. out] Tablica struktur [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) , które mają zostać wypełnione.
 
 `pceltFetched`\
-[na zewnątrz] Rzeczywista liczba widzów zwrócona.
+określoną Rzeczywista liczba zwróconych osób przeglądających.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Aby obsługiwać wizualizatory typów, ta metoda przekazuje wywołanie do [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) metody. Jeśli oceniający wyrażenie obsługuje również niestandardowe przeglądarki dla tego typu właściwości, ta metoda może dołączyć odpowiednie przeglądarki niestandardowe do listy.
+Aby obsługiwać Wizualizatory typów, ta metoda przekazuje wywołanie do metody [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) . Jeśli ewaluatora wyrażeń obsługuje również niestandardowe podglądy dla tego typu właściwości, ta metoda może dołączyć do listy odpowiednie niestandardowe podglądy.
 
-Zobacz [Wizualizator typów i Podgląd niestandardowy, aby](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) uzyskać szczegółowe informacje na temat różnic między wizualizatorami typów a przeglądarkami niestandardowymi.
+Zobacz [wizualizator typów i niestandardowa przeglądarka,](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Aby uzyskać szczegółowe informacje o różnicach między wizualizatorami typów a niestandardowymi przeglądarkami.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **CProperty** obiektu, który udostępnia [interfejs IDebugProperty3.](../../../extensibility/debugger/reference/idebugproperty3.md)
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CProperty** , który uwidacznia Interfejs [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) .
 
 ```cpp
 STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested, DEBUG_CUSTOM_VIEWER* prgViewers, ULONG* pceltFetched)

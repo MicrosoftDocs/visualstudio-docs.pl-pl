@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: nie można &#39;skopiować&#39; pliku zależności &#39;w&#39; projekcie projektu do katalogu uruchomieniowego, ponieważ spowodowałoby to konflikt z plikiem &#39;&#39; zależności | Microsoft Docs'
+title: 'Błąd: nie można skopiować zależności &#39;pliku&#39; w projekcie &#39;Project&#39; do katalogu uruchomieniowego, ponieważ spowodowałoby to konflikt z plikiem zależności &#39;&#39; | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5d4fd45741585aaf82c82257999b40d6257e82d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656048"
 ---
-# <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Błąd: nie można &#39;skopiować&#39; pliku zależności &#39;w&#39; projekcie projektu do katalogu uruchomieniowego, ponieważ spowodowałoby to konflikt z plikiem &#39;zależności&#39;
+# <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Błąd: nie można skopiować zależności &#39;pliku&#39; w projekcie &#39;Project&#39; do katalogu uruchomieniowego, ponieważ spowodowałoby to konflikt z plikiem zależności &#39;
 Występuje konflikt między odwołaniami; więcej niż jedna odrębna zależność o tej samej nazwie pliku jest kopiowana do katalogu bin w celu uruchomienia aplikacji. Katalog uruchamiania nie może rozwiązać konfliktu, ponieważ żadne z tych zależności nie są odwołaniami podstawowymi.
 
  Ten błąd spowoduje niepowodzenie kompilacji.
@@ -29,7 +29,7 @@ Występuje konflikt między odwołaniami; więcej niż jedna odrębna zależnoś
 
 - Utwórz jeden z zestawów bezpośrednio odwołanie do projektu. Możliwym minusem tego podejścia jest to, że wybór zestawu nie jest gwarantowany do pracy z zestawami wymagającymi innej wersji przywoływanego zestawu.
 
-     \- lub-
+     \- oraz
 
 - Upewnij się, że obie kopie zestawu są silne i znajdują się w globalnej pamięci podręcznej zestawów. Eliminuje to konieczność kopiowania zestawów do katalogu bin.
 

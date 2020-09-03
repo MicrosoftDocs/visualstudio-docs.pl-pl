@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3 | Dokumenty firmy Microsoft
+title: IDebugProperty3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,22 +13,22 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d2819724c204631112fd1a3e827126c4bc176972
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721043"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
-Ten interfejs zapewnia obsługę:
+Ten interfejs zapewnia wsparcie dla:
 
-- Pobieranie dowolnie długi ciąg skojarzony z właściwością.
+- Pobieranie arbitralnie długiego ciągu skojarzonego z właściwością.
 
 - Kojarzenie unikatowego identyfikatora z właściwością.
 
-- Pobieranie listy niestandardowych widzów dla usługi.
+- Pobieranie listy niestandardowych podglądów dla właściwości.
 
-- Ustawianie wartości właściwości z możliwością zgłaszania wszelkich wynikających z nich błędów
+- Ustawianie wartości właściwości z możliwością raportowania wszelkich błędów powstających
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,13 +37,13 @@ IDebugProperty3 : IDebugProperty2
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Aparat debugowania (DE) implementuje ten interfejs na tym samym obiekcie, który implementuje [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) w celu zapewnienia obsługi długich ciągów, identyfikatorów właściwości i niestandardowych widzów.
+ Aparat debugowania (DE) implementuje ten interfejs w tym samym obiekcie, który implementuje [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , aby zapewnić obsługę długich ciągów, identyfikatorów właściwości i podglądów niestandardowych.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Wywołanie [QueryInterface](/cpp/atl/queryinterface) na interfejsie, `IDebugProperty2` aby uzyskać ten interfejs.
+ Wywołaj metodę [QueryInterface](/cpp/atl/queryinterface) na `IDebugProperty2` interfejsie, aby uzyskać ten interfejs.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- Oprócz metod dziedziczonych `IDebugProperty2`z `IDebugProperty3` , interfejs udostępnia następujące metody.
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ Oprócz metod dziedziczonych z `IDebugProperty2` , `IDebugProperty3` Interfejs udostępnia następujące metody.
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -51,17 +51,17 @@ IDebugProperty3 : IDebugProperty2
 |[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)|Zwraca ciąg w buforze dostarczonym przez użytkownika.|
 |[CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)|Tworzy unikatowy identyfikator dla tej właściwości.|
 |[DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)|Niszczy unikatowy identyfikator dla tej właściwości.|
-|[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)|Zwraca liczbę niestandardowych widzów, z którymi można wyświetlać tę właściwość.|
-|[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Zwraca listę niestandardowych widzów, z którymi można wyświetlać tę właściwość.|
-|[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Ustawia wartość tej właściwości, zwracając komunikat o błędzie, jeśli coś poszło nie tak.|
+|[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)|Zwraca liczbę niestandardowych podglądów, z którymi ta właściwość może być wyświetlana.|
+|[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Zwraca listę niestandardowych podglądów, z którymi ta właściwość może być wyświetlana.|
+|[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Ustawia wartość tej właściwości, zwracając komunikat o błędzie, jeśli wystąpił problem.|
 
 ## <a name="remarks"></a>Uwagi
-- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) jest preferowanym sposobem dla menedżera debugowania sesji (SDM), aby ustawić wartość właściwości.
+- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) jest preferowanym sposobem ustawienia wartości właściwości przez Menedżera debugowania sesji (SDM).
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

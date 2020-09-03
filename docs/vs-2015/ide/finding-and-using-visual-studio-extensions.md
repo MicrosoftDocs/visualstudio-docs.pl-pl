@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: df6219a66b0f6c85e197b209741706abc7ce3d06
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655879"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Znajdowanie rozszerzeń programu Visual Studio i korzystanie z nich
@@ -43,7 +43,7 @@ Rozszerzenia programu Visual Studio to pakiety kodu, które działają w program
  Jeśli nie chcesz już dłużej używać rozszerzenia, możesz je wyłączyć lub odinstalować. Wyłączone rozszerzenie jest wciąż zainstalowane, ale nie jest załadowane. Można wyłączyć tylko rozszerzenia VSIX; rozszerzenia, które zostały zainstalowane przy użyciu pliku MSI, można odinstalować tylko. Znajdź rozszerzenie, a następnie kliknij przycisk **Odinstaluj** lub **Wyłącz**. Musisz ponownie uruchomić program Visual Studio, aby zwolnić wyłączone rozszerzenie.
 
 ## <a name="per-user-and-administrative-extensions"></a>Rozszerzenia administracyjne i dla poszczególnych użytkowników
- Większość rozszerzeń jest rozszerzeniami poszczególnych użytkowników i są instalowane w **%LocalAppData%\Microsoft\VisualStudio \\ < programu Visual Studio w wersji \> \extensions \\** folder. Niektóre rozszerzenia są rozszerzeniami administracyjnymi i są instalowane w **folderze instalacyjnym programu \<Visual Studio > \Common7\IDE\Extensions \\** folder.
+ Większość rozszerzeń jest rozszerzeniami poszczególnych użytkowników i są instalowane w folderze **%LocalAppData%\Microsoft\VisualStudio \\<programu Visual Studio w wersji \> \Extensions \\ ** . Niektóre rozszerzenia są rozszerzeniami administracyjnymi i są zainstalowane w folderze ** \<Visual Studio installation folder> \Common7\IDE\Extensions \\ ** .
 
  Aby chronić system przed rozszerzeniami, które mogą zawierać błędy lub złośliwy kod, można ograniczyć rozszerzenia dla poszczególnych użytkowników tylko wtedy, gdy program Visual Studio jest uruchamiany z normalnymi uprawnieniami użytkownika. Oznacza to, że rozszerzenia dla poszczególnych użytkowników są wyłączone, gdy program Visual Studio jest uruchamiany z uprawnieniami użytkownika administracyjnego. W tym celu przejdź do strony opcje **rozszerzeń i aktualizacji** (**Narzędzia/Opcje**, **środowisko**, **rozszerzenia i aktualizacje**lub po prostu wpisz **rozszerzenie** w oknie **Szybkie uruchamianie** ). Wyczyść pole wyboru **Załaduj rozszerzenia na użytkownika podczas uruchamiania jako administrator** , a następnie uruchom ponownie program Visual Studio.
 

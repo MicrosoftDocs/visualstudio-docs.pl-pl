@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88168752"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Aktualizowanie programu Visual Studio przy użyciu minimalnego układu offline
@@ -49,7 +49,7 @@ To narzędzie tworzy układy aktualizacji dla programu Visual Studio 2017 (15,9)
 
 ### <a name="how-to-use-the-minimal-layout-tool"></a>Jak używać narzędzia do układu minimalnej
 
-`MinimalLayout.exe`program używa następujących poleceń i opcji do wygenerowania układu. Do uruchomienia narzędzia wymagane jest co najmniej jedno polecenie. Poniżej przedstawiono sposób uruchamiania narzędzia:
+`MinimalLayout.exe` program używa następujących poleceń i opcji do wygenerowania układu. Do uruchomienia narzędzia wymagane jest co najmniej jedno polecenie. Poniżej przedstawiono sposób uruchamiania narzędzia:
 
 ```MinimalLayout.exe [command] <options>...```
 
@@ -160,7 +160,7 @@ Aktualizacja jest stosowana do wystąpienia programu Visual Studio w dwóch krok
 
 1. **Aktualizowanie Instalator programu Visual Studio** 
 
-    Uruchom następujące polecenie, zastępując w `vs_enterprise.exe` razie potrzeby poprawną nazwę aplikacji inicjującej. 
+    Uruchom następujące polecenie, zastępując w `vs_enterprise.exe`  razie potrzeby poprawną nazwę aplikacji inicjującej. 
 
     ```cmd
     vs_enterprise.exe --quiet --update --offline C:\VSLayout\vs_installer.opc
@@ -178,7 +178,7 @@ Aktualizacja jest stosowana do wystąpienia programu Visual Studio w dwóch krok
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Instalowanie programu Visual Studio](install-visual-studio.md)
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)

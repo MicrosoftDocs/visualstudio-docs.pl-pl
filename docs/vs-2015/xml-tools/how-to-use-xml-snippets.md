@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4998fbc530cf4350f4a64b0fd527e0764eafce27
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656262"
 ---
-# <a name="how-to-use-xml-snippets"></a>Instrukcje: używanie fragmentów kodu XML
+# <a name="how-to-use-xml-snippets"></a>Instrukcje: Używanie fragmentów kodu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można wywołać fragmenty kodu XML przy użyciu dwóch poniższych poleceń w menu skrótów edytora XML. Polecenie **Wstaw fragment** kodu wstawia fragment kodu XML w pozycji kursora. Element **przestrzenny z** poleceniem otacza fragment kodu XML wokół zaznaczonego tekstu. Każdy fragment kodu XML wyznaczył typy fragmentów kodu. Typy fragmentów określają, czy fragment kodu jest dostępny za pomocą polecenia **Wstaw fragment kodu** , polecenia **przestrzenny** lub obu.
@@ -60,7 +60,7 @@ Można wywołać fragmenty kodu XML przy użyciu dwóch poniższych poleceń w m
 4. Naciśnij klawisz TAB, aby wywołać fragment kodu XML.
 
 > [!NOTE]
-> W przypadku braku wywołania fragmentu kodu XML mogą wystąpić przypadki. Na przykład w przypadku próby wstawienia elementu `xs:complexType` w węźle `xs:element`, Edytor nie generuje fragmentu kodu XML. Gdy element `xs:complexType` jest używany wewnątrz węzła `xs:element`, nie ma wymaganych atrybutów ani podelementów, dlatego edytor nie ma żadnych danych do wstawienia.
+> W przypadku braku wywołania fragmentu kodu XML mogą wystąpić przypadki. Na przykład, jeśli spróbujesz wstawić `xs:complexType` element wewnątrz `xs:element` węzła, Edytor nie generuje FRAGMENTU kodu XML. Gdy `xs:complexType` element jest używany wewnątrz `xs:element` węzła, nie ma wymaganych atrybutów ani podelementów, więc Edytor nie ma żadnych danych do wstawienia.
 
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>Aby wstawić fragmenty kodu przy użyciu nazwy skrótu
 

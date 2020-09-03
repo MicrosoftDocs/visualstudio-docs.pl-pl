@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bffaf0bcff0c0fc93201badeb01b95928edc2979
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850712"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generowanie kodu w procesie kompilacji
@@ -27,31 +27,31 @@ Istnieją pewne różnice w czynnościach, które mogą wykonać zadania kompila
 
 Oznacza to, że nie można uzyskać dostępu do takich elementów, jak nazwy plików projektu, w taki sam sposób podczas kompilacji szablonu tekstu w MSBuild. Można jednak [przekazać informacje o środowisku do szablonów tekstowych i procesorów dyrektywy przy użyciu parametrów kompilacji](#parameters).
 
-## <a name="buildserver"></a>Konfigurowanie maszyn
+## <a name="configure-your-machines"></a><a name="buildserver"></a> Konfigurowanie maszyn
 
 Aby włączyć zadania kompilacji na komputerze deweloperskim, zainstaluj [zestaw SDK modelowania dla programu Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Jeśli [serwer kompilacji](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) działa na komputerze, na którym nie zainstalowano programu Visual Studio, Skopiuj następujące pliki do komputera kompilacji z komputera deweloperskiego. Zastąp najnowsze numery wersji dla "*".
 
-- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- $ (ProgramFiles) \MSBuild\Microsoft\VisualStudio\v *. 0 \ TextTemplating
 
-  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+  - Microsoft. VisualStudio. TextTemplating. Sdk. host. * .0.dll
 
   - Microsoft.TextTemplating.Build.Tasks.dll
 
   - Microsoft.TextTemplating.targets
 
-- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $ (ProgramFiles) \Microsoft Visual Studio *. 0 \ VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-  - Microsoft.VisualStudio.TextTemplating.*.0.dll
+  - Microsoft. VisualStudio. TextTemplating. * .0.dll
 
-  - Microsoft. VisualStudio. TextTemplating. Interfaces. *. 0. dll (kilka plików)
+  - Microsoft. VisualStudio. TextTemplating. Interfaces. * .0.dll (kilka plików)
 
-  - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+  - Microsoft. VisualStudio. TextTemplating. VSHost. * .0.dll
 
 - $ (ProgramFiles) \Microsoft Visual Studio *. 0 \ Common7\IDE\PublicAssemblies\
 
-  - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+  - Microsoft. VisualStudio. TextTemplating. Modeling. * .0.dll
 
 ## <a name="to-edit-the-project-file"></a>Aby edytować plik projektu
 
@@ -67,7 +67,7 @@ W pliku .vbproj lub .csproj znajdź taki wiersz:
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`
 
-\- lub —
+\- oraz
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`
 
@@ -140,7 +140,7 @@ O ile nie dostosujesz kroku przetwarzania końcowego, zastąpienie pliku spowodu
 
 ## <a name="customizing-the-build-process"></a>Dostosowywanie procesu kompilacji
 
-Transformacja tekstu ma miejsce przed innymi zadaniami w procesie kompilacji. Można zdefiniować zadania, które są wywoływane przed przekształceniem i po nim, ustawiając właściwości `$(BeforeTransform)` i `$(AfterTransform)`:
+Transformacja tekstu ma miejsce przed innymi zadaniami w procesie kompilacji. Można zdefiniować zadania, które są wywoływane przed przekształceniem i po nim, ustawiając właściwości `$(BeforeTransform)` i `$(AfterTransform)` :
 
 ```xml
 <PropertyGroup>
@@ -155,7 +155,7 @@ Transformacja tekstu ma miejsce przed innymi zadaniami w procesie kompilacji. Mo
   </Target>
 ```
 
-W `AfterTransform`można odwoływać się do list plików:
+W programie `AfterTransform` można odwoływać się do list plików:
 
 - GeneratedFiles — lista plików zapisanych przez proces. Dla tych plików, które zastąpią istniejące pliki tylko do odczytu, %(GeneratedFiles.ReadOnlyFileOverwritten) będzie prawdziwe. Pliki te można wyewidencjonować z kontroli źródła.
 
@@ -177,7 +177,7 @@ Właściwości te są stosowane tylko przez program MSBuild. Nie wpływają one 
 </ItemGroup>
 ```
 
-Przydatny folder do przekierowania jest `$(IntermediateOutputPath).`
+Przydatny folder do przekierowania to `$(IntermediateOutputPath).`
 
 Jeśli zostanie określona nazwa pliku wyjściowego, będzie ona miała wyższy priorytet nad rozszerzeniem określonym w dyrektywie wyjścia w szablonach.
 
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>Przekaż dane kontekstu kompilacji do szablonów
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> Przekaż dane kontekstu kompilacji do szablonów
 
 Można ustawić wartości parametrów w pliku projektu. Na przykład można przekazać właściwości kompilacji i [zmienne środowiskowe](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -234,11 +234,11 @@ W szablonie tekstowym Ustaw `hostspecific` w dyrektywie Template. Aby uzyskać w
 The project folder is: <#= ProjectFolder #>
 ```
 
-## <a name="msbuild"></a>Korzystanie z właściwości projektu w dyrektywach Assembly i include
+## <a name="using-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> Korzystanie z właściwości projektu w dyrektywach Assembly i include
 
 Makra Visual Studio, takie jak $(SolutionDir), nie działają w MSBuild. Zamiast tego można użyć właściwości projektu.
 
-Wyedytuj plik .csproj lub .vbproj, aby zdefiniować właściwość projektu. Ten przykład definiuje właściwość o nazwie `myLibFolder`:
+Wyedytuj plik .csproj lub .vbproj, aby zdefiniować właściwość projektu. Ten przykład definiuje właściwość o nazwie `myLibFolder` :
 
 ```xml
 <!-- Define a project property, myLibFolder: -->

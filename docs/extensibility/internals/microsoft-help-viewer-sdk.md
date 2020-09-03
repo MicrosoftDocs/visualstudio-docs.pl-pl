@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88168739"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Zestaw SDK Podglądu Pomocy firmy Microsoft
@@ -131,17 +131,17 @@ Przykładowa sekcja metadanych:
 
 Treść (bez nagłówka i stopki) tematu będzie zawierać linki do stron, sekcję notatki, obszar zwijany, fragment kodu i sekcję tekstu charakterystycznego dla języka.  Zapoznaj się z sekcją znakowanie, aby uzyskać informacje o tych obszarach prezentowanego tematu.
 
-1. Dodaj tag tytułu tematu:`<div class="title">Contoso Topic 4</div>`
+1. Dodaj tag tytułu tematu:  `<div class="title">Contoso Topic 4</div>`
 
-2. Dodaj sekcję Uwagi:`<div class="alert"> add your table tag and text </div>`
+2. Dodaj sekcję Uwagi: `<div class="alert"> add your table tag and text </div>`
 
-3. Dodaj obszar zwijany:`<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Dodaj obszar zwijany:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4. Dodawanie fragmentu kodu:`<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Dodawanie fragmentu kodu:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5. Dodaj tekst specyficzny dla języka kodu: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Uwaga, która `devLangnu=` umożliwia wprowadzanie innych języków. Na przykład `devLangnu="Fortran"` wyświetla Pascal, gdy fragment kodu DisplayLanguage = Pascal
+5. Dodaj tekst specyficzny dla języka kodu:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Uwaga, która `devLangnu=` umożliwia wprowadzanie innych języków. Na przykład `devLangnu="Fortran"` wyświetla Pascal, gdy fragment kodu DisplayLanguage = Pascal
 
-6. Dodaj linki do stron:`<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
+6. Dodaj linki do stron: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 > Uwaga: w przypadku nieobsługiwanego nowego koloru "język wyświetlania" (przykład: F #, COBOL, Pascal) kolorowanie kodu w fragmencie kodu będzie monochromatyczne.
@@ -566,22 +566,22 @@ Pakiet znakowania zawiera zestaw plików HTM, które obsługują scenariusze prz
 |**Plik**|**Używanych**|**Wyświetlone źródło zawartości**|
 |-|-|-|
 |homepage.htm|Jest to strona wyświetlająca aktualnie zainstalowaną zawartość oraz wszelkie inne komunikaty, które są odpowiednie dla użytkownika dotyczące ich zawartości.  Ten plik ma dodatkowy atrybut metadanych "Microsoft.Help.Id" Content = "-1", który umieszcza tę zawartość w górnej części lokalnego SPISu treści zawartości.||
-||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, tag\<HomePageTitle>|
-||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, tag\<HomePageIntroduction>|
-||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, tag\<HomePageContentInstallText>|
-||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|Sekcja nagłówka Branding.xml znacznik \<HomePageInstalledBooks> , dane wygenerowane z aplikacji, \<HomePageNoBooksInstalled> gdy nie są zainstalowane żadne książki.|
+||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, tag \<HomePageTitle>|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, tag \<HomePageIntroduction>|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, tag \<HomePageContentInstallText>|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|Sekcja nagłówka Branding.xml znacznik \<HomePageInstalledBooks> , dane wygenerowane z aplikacji,  \<HomePageNoBooksInstalled> gdy nie są zainstalowane żadne książki.|
 ||<HOME_PAGE_SETTINGS_SECTION_ADD/>|Sekcja nagłówka Branding.xml znacznik \<HomePageHelpSettings> , tekst sekcji \<HomePageHelpSettingsText> .|
 |topiccorrupted.htm|Gdy w zestawie lokalnym istnieje temat, ale z jakiegoś powodu nie można wyświetlić (uszkodzona zawartość).||
-||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, tag\<TopicCorruptedTitle>|
-||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, tag\<TopicCorruptedViewOnlineText>|
+||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, tag \<TopicCorruptedTitle>|
+||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, tag \<TopicCorruptedViewOnlineText>|
 |topicnotfound.htm|Jeśli temat nie zostanie znaleziony w lokalnym zestawie zawartości lub jest dostępny w trybie online||
-||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, tag\<TopicNotFoundTitle>|
-||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, tag\<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
-||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, tag\<TopicNotFoundText>|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, tag \<TopicNotFoundTitle>|
+||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, tag \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, tag \<TopicNotFoundText>|
 |contentnotinstalled.htm|W przypadku braku zainstalowanej zawartości lokalnej dla produktu.||
-||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, tag\<ContentNotInstalledTitle>|
-||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, tag\<ContentNotInstalledDownloadContentText>|
-||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, tag\<ContentNotInstalledText>|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, tag \<ContentNotInstalledTitle>|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, tag \<ContentNotInstalledDownloadContentText>|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, tag \<ContentNotInstalledText>|
 
 **Pliki CSS**
 
@@ -741,9 +741,9 @@ Zdefiniuj magazyn zawartości w rejestrze. Dla zintegrowanej powłoki Zmień Vis
 
 Aby utworzyć rozszerzenie powłoki izolowanej:
 
-1. W programie Visual Studio w **obszarze plik**wybierz pozycję **Nowy projekt**, w obszarze **Inne typy projektów** wybierz pozycję **rozszerzalność**, a następnie wybierz pozycję **izolowany powłoka programu Visual Studio**. Nazwij projekt `ContosoHelpShell` ), aby utworzyć projekt rozszerzalności oparty na szablonie powłoki izolowanej programu Visual Studio.
+1. W programie Visual Studio w **obszarze plik**wybierz pozycję **Nowy projekt**, w obszarze **Inne typy projektów** wybierz pozycję **rozszerzalność**, a następnie wybierz pozycję  **izolowany powłoka programu Visual Studio**. Nazwij projekt `ContosoHelpShell` ), aby utworzyć projekt rozszerzalności oparty na szablonie powłoki izolowanej programu Visual Studio.
 
-2. W Eksplorator rozwiązań w projekcie ContosoHelpShellUI w folderze pliki zasobów Otwórz ApplicationCommands. vsct. Upewnij się, że ten wiersz jest oznaczony jako komentarz (Wyszukaj ciąg "No_Help"):`<!-- <define name="No_HelpMenuCommands"/> -->`
+2. W Eksplorator rozwiązań w projekcie ContosoHelpShellUI w folderze pliki zasobów Otwórz ApplicationCommands. vsct. Upewnij się, że ten wiersz jest oznaczony jako komentarz (Wyszukaj ciąg "No_Help"): `<!-- <define name="No_HelpMenuCommands"/> -->`
 
 3. Wybierz klawisz F5, aby skompilować i uruchomić **debugowanie**. W eksperymentalnym wystąpieniu środowiska IDE izolowanej powłoki wybierz menu **Pomoc** . Upewnij się, że są wyświetlane polecenia **Wyświetl pomoc**, **Dodaj i Usuń zawartość pomocy**oraz **Ustaw polecenie preferencji pomocy** .
 
@@ -785,7 +785,7 @@ Aby przetestować ten sposób jako jeśli został wdrożony:
 
 3. Skopiuj zawartość z folderu ContosoHelpShell Release do \\ folderu \Program Files (x86) \Contoso\.
 
-4. Uruchom Edytor rejestru, wybierając pozycję **Uruchom** w menu **Start** i wprowadzając polecenie `Regedit` . W Edytorze rejestru wybierz **plik**, a następnie **Importuj**. Przejdź do folderu projektu ContosoHelpShell. W podfolderze ContosoHelpShell wybierz ContosoHelpShell. reg.
+4. Uruchom Edytor rejestru, wybierając pozycję  **Uruchom** w menu **Start** i wprowadzając polecenie `Regedit` . W Edytorze rejestru wybierz **plik**, a następnie **Importuj**. Przejdź do folderu projektu ContosoHelpShell. W podfolderze ContosoHelpShell wybierz ContosoHelpShell. reg.
 
 5. Utwórz magazyn zawartości:
 
@@ -808,7 +808,7 @@ Aby przetestować ten sposób jako jeśli został wdrożony:
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15
 
-    [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]Zintegrowana powłoka:
+    [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Zintegrowana powłoka:
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-US
 

@@ -11,31 +11,31 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: a8b0fd53164cb98921b111d49fa04a76c9d0d8a8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094308"
 ---
-# <a name="simplify-string-interpolation-refactoring"></a>Uproszczenie refaktoryzacji interpolacji ciągów
+# <a name="simplify-string-interpolation-refactoring"></a>Upraszcza refaktoryzację interpolacji ciągów
 
-Ten refaktoryzator ma zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
 - Visual Basic
 
-**Co:** Pozwala uprościć [interpolację ciągu](https://docs.microsoft.com/dotnet/csharp/tutorials/string-interpolation).
+**Co:** Umożliwia uproszczenie [interpolacji ciągów](https://docs.microsoft.com/dotnet/csharp/tutorials/string-interpolation).
 
-**Kiedy:** Masz interpolację ciągów, która może być uproszczona.
+**Kiedy:** Istnieje Interpolacja ciągów, która może być uproszczona.
 
-**Dlaczego?** Uproszczenie interpolacji ciągu może zapewnić większą przejrzystość i zwięzłą składnię. To narzędzie refaktoryzacji wykona zadanie automatycznie, zamiast wykonywać je ręcznie.
+**Dlaczego:** Uproszczenie interpolacji ciągów może zapewnić większą przejrzystość i zwięzłą składnię. To narzędzie refaktoryzacji wykona zadanie automatycznie, zamiast wykonywać je ręcznie.
 
 ## <a name="how-to"></a>Porady
 
-1. Umieść swoją cieszę na interpolacji ciągu:
+1. Umieść karetkę do interpolacji ciągów:
 
-2. Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
+2. Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
 
 3. Wybierz **uproszczenie interpolacji**
 

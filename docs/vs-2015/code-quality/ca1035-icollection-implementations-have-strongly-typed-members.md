@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2e679fb3cc62ba80cfb7b56dfd7fa6590375565e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546617"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: Implementacje interfejsu ICollection mają silnie typizowane składowe
@@ -38,7 +38,7 @@ ms.locfileid: "85546617"
 ## <a name="rule-description"></a>Opis reguły
  Ta reguła wymaga <xref:System.Collections.ICollection> implementacji, aby zapewnić składowe silnie wpisane, tak aby użytkownicy nie musieli rzutować argumentów na <xref:System.Object> Typ, gdy korzystają z funkcji dostarczonych przez interfejs. Ta reguła zakłada, że typ, który implementuje, służy <xref:System.Collections.ICollection> do zarządzania kolekcją wystąpień typu, który jest silniejszy niż <xref:System.Object> .
 
- <xref:System.Collections.ICollection>implementuje <xref:System.Collections.IEnumerable?displayProperty=fullName> interfejs. Jeśli obiekty w kolekcji są rozbudowane <xref:System.ValueType?displayProperty=fullName> , musisz dostarczyć element członkowski o jednoznacznie określonym typie, <xref:System.Collections.IEnumerable.GetEnumerator%2A> Aby uniknąć spadku wydajności powodowanego przez opakowanie. Nie jest to wymagane, gdy obiekty kolekcji są typu referencyjnego.
+ <xref:System.Collections.ICollection> implementuje <xref:System.Collections.IEnumerable?displayProperty=fullName> interfejs. Jeśli obiekty w kolekcji są rozbudowane <xref:System.ValueType?displayProperty=fullName> , musisz dostarczyć element członkowski o jednoznacznie określonym typie, <xref:System.Collections.IEnumerable.GetEnumerator%2A> Aby uniknąć spadku wydajności powodowanego przez opakowanie. Nie jest to wymagane, gdy obiekty kolekcji są typu referencyjnego.
 
  Aby zaimplementować silnie wpisaną wersję elementu członkowskiego interfejsu, należy zaimplementować elementy członkowskie interfejsu jawnie za pomocą nazw w formularzu `InterfaceName.InterfaceMemberName` , takich jak <xref:System.Collections.ICollection.CopyTo%2A> . Jawne elementy członkowskie interfejsu używają typów danych zadeklarowanych przez interfejs. Zaimplementuj silnie wpisane elementy członkowskie przy użyciu nazwy składowej interfejsu, takiej jak <xref:System.Collections.ICollection.CopyTo%2A> . Zadeklaruj elementy członkowskie z jednoznacznie określonymi typami jako publiczne i zadeklaruj parametry i zwróć wartości jako typ silny, który jest zarządzany przez kolekcję. Silne typy zastępują słabsze typy, takie jak <xref:System.Object> i <xref:System.Array> , które są zadeklarowane przez interfejs.
 

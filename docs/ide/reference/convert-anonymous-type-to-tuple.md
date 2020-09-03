@@ -1,5 +1,5 @@
 ---
-title: Konwertuj typ anonimowy na krotki
+title: Konwertuj typ anonimowy na krotkę
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -11,36 +11,36 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: f7e89c5b5a05900fe42af62ef87f70292e94e662
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094277"
 ---
 # <a name="convert-anonymous-type-to-tuple"></a>Konwertowanie typu anonimowego na krotkę
 
-Ten refaktoryzator ma zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
 - Visual Basic
 
-**Co:** Konwertuj typ anonimowy na krotki.
+**Co:** Konwertuj typ anonimowy na krotkę.
 
-**Kiedy:** Masz typ anonimowy, który kwalifikuje się jako krotka.
+**Kiedy:** Masz typ anonimowy, który jest uznawany za spójny.
 
-**Dlaczego:** [Krotek](/dotnet/csharp/tuples) są pomocne w utrzymaniu składni lekki. Ta szybka akcja ułatwia korzystanie z tej funkcji języka C#.
+**Dlaczego** [krotki](/dotnet/csharp/tuples) są przydatne do przechowywania składni. Ta szybka akcja ułatwia korzystanie z tej funkcji języka C#.
 
 ## <a name="how-to"></a>Porady
 
 1. Umieść kursor w typie anonimowym.
-2. Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
+2. Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
 
-   ![Konwertuj typ anonimowy na krotki](media/convert-anon-to-tuple.png)
+   ![Konwertuj typ anonimowy na krotkę](media/convert-anon-to-tuple.png)
 
-2. Naciśnij **klawisz Enter,** aby zaakceptować refaktoryzowanie.
+2. Naciśnij klawisz **Enter** , aby zaakceptować refaktoryzację.
 
-   ![Konwertuj typ anonimowy na krotki](media/convert-anon-to-tuple-complete.png)
+   ![Konwertuj typ anonimowy na krotkę](media/convert-anon-to-tuple-complete.png)
 
 ## <a name="see-also"></a>Zobacz też
 

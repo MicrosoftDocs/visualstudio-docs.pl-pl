@@ -7,10 +7,10 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea5695c41b19cbd77c56a63f22b52fca5ee6f1eb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295431"
 ---
 # <a name="vsix-color-editor"></a>Edytor kolorów VSIX
@@ -36,7 +36,7 @@ Narzędzie edytora kolorów rozszerzenia programu Visual Studio umożliwia tworz
   
 - **Nazwa koloru systemu:** Do użycia w przypadku ekranów o wysokim kontraście.  
   
-## <a name="how-to-use-the-tool"></a>Jak używać narzędzia  
+## <a name="how-to-use-the-tool"></a>Jak korzystać z narzędzia  
  Tak dużo jak to możliwe, a tam, gdzie to konieczne, istniejące kolory programu Visual Studio powinny być ponownie używane zamiast tworzenia nowych. Jednak w przypadku, gdy nie są zdefiniowane żadne odpowiednie kolory, należy utworzyć kolory niestandardowe, aby zachować zgodność z rozszerzeniem.  
   
  **Tworzenie nowych tokenów kolorów**  
@@ -55,7 +55,7 @@ Narzędzie edytora kolorów rozszerzenia programu Visual Studio umożliwia tworz
   
    **Krok 1. określenie kategorii i nazw tokenów dla nowych tokenów kolorów.**  
   
-   Preferowanym schematem nazewnictwa dla VSColor jest **[Kategoria] [typ interfejsu użytkownika] [stan]** . Nie używaj słowa "Color" w nazwach VSColor, ponieważ są one nadmiarowe.  
+   Preferowanym schematem nazewnictwa dla VSColor jest **[Kategoria] [typ interfejsu użytkownika] [stan]**. Nie używaj słowa "Color" w nazwach VSColor, ponieważ są one nadmiarowe.  
   
    Nazwy kategorii zapewniają logiczne grupowania i powinny być zdefiniowane w możliwie najwęższy sposób. Na przykład nazwa pojedynczego okna narzędzi może być nazwą kategorii, ale nie jest to nazwa całej jednostki biznesowej lub zespołu projektu. Grupowanie wpisów w kategorie pozwala uniknąć pomyłek między kolorami o tej samej nazwie.  
   
@@ -65,7 +65,7 @@ Narzędzie edytora kolorów rozszerzenia programu Visual Studio umożliwia tworz
   
    Poniżej wymieniono niektóre typowe nazwy stanów:  
   
-- Aktywne  
+- Aktywny  
   
 - Nieaktywne  
   
@@ -75,11 +75,11 @@ Narzędzie edytora kolorów rozszerzenia programu Visual Studio umożliwia tworz
   
 - Wybrane  
   
-- Fokus  
+- Ustawiono fokus  
   
   Przykłady kilku nazw tokenów dla części kontrolki elementu listy:  
   
-- ListItem  
+- Metodę  
   
 - ListItemBorder  
   
@@ -135,11 +135,11 @@ Narzędzie edytora kolorów rozszerzenia programu Visual Studio umożliwia tworz
   
   ![Pkgdef edytora kolorów VSIX](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "Pkgdef edytora kolorów VSIX")  
   
-  W edytorze kolorów rozszerzenia programu Visual Studio wybierz kolejno pozycje Plik > Wyświetl kod zasobu, aby wyświetlić kod, który jest używany do uzyskiwania dostępu do niestandardowych kolorów w interfejsie użytkownika opartym na technologii WPF.  
+  W edytorze kolorów rozszerzenia programu Visual Studio wybierz kolejno pozycje plik > Wyświetl kod zasobu, aby wyświetlić kod, który jest używany do uzyskiwania dostępu do niestandardowych kolorów w interfejsie użytkownika opartym na technologii WPF.  
   
   ![Podgląd kodu zasobów edytora kolorów VSIX](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "Podgląd kodu zasobów edytora kolorów VSIX")  
   
-  Uwzględnij ten kod w klasie statycznej w projekcie. Odwołanie do **Microsoft. VisualStudio. Shell.\<VSVersion > 0. dll** należy dodać do projektu, aby użyć typu **elementu themeresourcekey** .  
+  Uwzględnij ten kod w klasie statycznej w projekcie. Odwołanie do **Microsoft. VisualStudio. Shell. \<VSVersion>.0.dll** należy dodać do projektu, aby użyć typu **elementu themeresourcekey** .  
   
 ```csharp  
 namespace MyCustomColors  
@@ -238,7 +238,7 @@ namespace MyCustomColors
   
 ```  
   
- **C#otoka kluczy zasobów**  
+ **Otoka kluczy zasobów języka C#**  
   
  Klucze zasobów koloru wygenerowane przez narzędzie będą podobne do tego:  
   

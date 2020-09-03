@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 89531fe0f2e912a6aabd962ab56ca7a24a7f3e20
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850663"
 ---
 # <a name="install-a-uml-profile"></a>Instalowanie profilu UML
@@ -29,11 +29,11 @@ Program Visual Studio można rozszerzyć przy użyciu profilu UML. Profil umożl
 
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>Aby zainstalować profil UML na komputerze
 
-1. Profil powinien zostać udzielony w postaci pliku rozszerzenia programu Visual Studio (`.vsix`). Mogą istnieć inne funkcje w tym samym pliku.
+1. Profil powinien zostać udzielony w postaci pliku rozszerzenia programu Visual Studio ( `.vsix` ). Mogą istnieć inne funkcje w tym samym pliku.
 
-     Przenieś plik `.vsix` do wygodnej lokalizacji na komputerze.
+     Przenieś `.vsix` plik do wygodnej lokalizacji na komputerze.
 
-2. Kliknij dwukrotnie plik `.vsix` w Eksploratorze Windows (lub Eksploratorze plików) lub Otwórz go w programie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
+2. Kliknij dwukrotnie `.vsix` plik w Eksploratorze Windows (lub Eksploratorze plików) lub Otwórz go w programie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] .
 
 3. Kliknij przycisk **Instaluj** w wyświetlonym oknie dialogowym.
 

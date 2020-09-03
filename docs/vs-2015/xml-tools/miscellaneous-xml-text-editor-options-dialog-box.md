@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d30564c11951d6ffec420c6a2ea95c41695de3dd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656234"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Inne, XML, Edytor tekstu, Opcje, okno dialogowe
@@ -29,30 +29,30 @@ To okno dialogowe umożliwia zmianę ustawień autouzupełniania i schematu dla 
 
  Zakończenie pustego elementu nie zależy od ustawienia autouzupełniania. Można zawsze Autouzupełnianie pustego elementu przez wpisanie ukośnika odwrotnego (/).
 
- **Cudzysłowy atrybutów** Podczas tworzenia atrybutów XML edytor wstawia `=" "` znaki i umieszcza karetkę (^) wewnątrz podwójnych cudzysłowów.
+ **Cudzysłowy atrybutów** Podczas tworzenia atrybutów XML, Edytor wstawia `=" "` znaki i położenia karetki (^) wewnątrz podwójnych cudzysłowów.
 
- Wybrane domyślnie.
+ Domyślnie zaznaczony.
 
  **Deklaracje przestrzeni nazw** Edytor automatycznie wstawia deklaracje przestrzeni nazw wszędzie tam, gdzie są one zbędne.
 
- Wybrane domyślnie.
+ Domyślnie zaznaczony.
 
  **Inne znaczniki (komentarze, CDATA)** Komentarze, CDATA, DOCTYPE, instrukcje przetwarzania i inne znaczniki są wypełniane pomyślnie.
 
- Wybrane domyślnie.
+ Domyślnie zaznaczony.
 
 ## <a name="network"></a>Sieć
  **Automatycznie pobieraj definicje DTD i schematy** Schematy i definicje typu dokumentu (DTD) są automatycznie pobierane z lokalizacji HTTP. Ta funkcja korzysta z System.Net z włączoną funkcją automatycznego wykrywania serwera proxy.
 
- Wybrane domyślnie.
+ Domyślnie zaznaczony.
 
 ## <a name="outlining"></a>Tworzenie konspektu
  **Wejdź do trybu konspektu przy otwieraniu plików** Włącza funkcję tworzenia konspektu, gdy plik zostanie otwarty.
 
- Wybrane domyślnie.
+ Domyślnie zaznaczony.
 
 ## <a name="caching"></a>Buforowanie
- **Schematy** Określa lokalizację pamięci podręcznej schematu. Przycisk przeglądania ( **...** ) otwiera okno dialogowe **Przeglądanie katalogów** w bieżącej lokalizacji pamięci podręcznej schematu. Możesz wybrać inny katalog lub wybrać folder w oknie dialogowym, kliknij prawym przyciskiem myszy i wybierz polecenie **Otwórz** , aby zobaczyć, co znajduje się w katalogu.
+ **Schematy** Określa lokalizację pamięci podręcznej schematu. Przycisk przeglądania (**...**) otwiera okno dialogowe **Przeglądanie katalogów** w bieżącej lokalizacji pamięci podręcznej schematu. Możesz wybrać inny katalog lub wybrać folder w oknie dialogowym, kliknij prawym przyciskiem myszy i wybierz polecenie **Otwórz** , aby zobaczyć, co znajduje się w katalogu.
 
 ## <a name="see-also"></a>Zobacz też
  [Właściwości dokumentu XML,](../xml-tools/xml-document-properties-properties-window.md) [Składniki edytora XML](../xml-tools/xml-editor-components.md) okna właściwości

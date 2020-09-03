@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5e21d0880813452e37c9e20afdc98321e4b2e3a6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655900"
 ---
 # <a name="find-in-files"></a>Znajdź w plikach
@@ -44,7 +44,7 @@ Znajdź w plikach * * umożliwia wyszukiwanie określonego zestawu plików. Znal
    Aby anulować operację wyszukiwania, naciśnij klawisze CTRL + BREAK.
 
 > [!NOTE]
-> Narzędzie Znajdź i Zamień nie przeszukuje katalogów z ustawionym atrybutem `Hidden` lub `System`.
+> Narzędzie Znajdź i Zamień nie przeszukuje katalogów z `Hidden` `System` ustawionym atrybutem lub.
 
 ## <a name="find-what"></a>Znajdź
  Aby wyszukać nowy ciąg tekstowy lub wyrażenie, określ je w polu. Aby wyszukać dowolny z 20 ostatnio wyszukiwanych ciągów, Otwórz listę i wybierz ciąg, dla którego chcesz wyszukać. Wybierz przycisk sąsiadujący **Konstruktor wyrażeń** , jeśli chcesz użyć co najmniej jednego wyrażenia regularnego w ciągu wyszukiwania. Aby uzyskać więcej informacji, zobacz [Używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).

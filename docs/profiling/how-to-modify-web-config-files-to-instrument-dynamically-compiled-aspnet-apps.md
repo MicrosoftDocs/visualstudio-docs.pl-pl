@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 8ed2d8e8cc62d26f9d63a8a675301c78fc35c51a
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331511"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Instrukcje: Modyfikowanie plików web.config w celu instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci Web ASP.NET
@@ -62,7 +62,7 @@ Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody inst
    |--------------------| - |
    | **Nazwij** | **Microsoft. VisualStudio. Enterprise. ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
-   | **dziedzinie** | **Neutral** |
+   | **dziedzinie** | **Zerowy** |
 
 7. Dodaj element z bazą **kodu** jako element podrzędny elementu **dependentAssembly** .
 
@@ -73,7 +73,7 @@ Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody inst
    |**Wersja**|**10.0.0.0**|
    |**Tag**|`PathToASPNetHelperDll`|
 
-    `PathToASPNetHelperDll`to adres URL pliku Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll. Jeśli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] program jest zainstalowany w domyślnej lokalizacji, wartość **href** powinna być`C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL`
+    `PathToASPNetHelperDll` to adres URL pliku Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll. Jeśli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] program jest zainstalowany w domyślnej lokalizacji, wartość **href** powinna być `C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL`
 
 ```xml
     <configuration>
@@ -151,7 +151,7 @@ Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody inst
    |**głównych**|**Microsoft. VisualStudio. Enterprise. AspNetHelper. VsInstrTools**|
    |**wartościami**|`PerformanceToolsFolder`|
 
-    `PerformanceToolsFolder`jest ścieżką do plików wykonywalnych profilera. Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+    `PerformanceToolsFolder` jest ścieżką do plików wykonywalnych profilera. Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ```xml
     <configuration>

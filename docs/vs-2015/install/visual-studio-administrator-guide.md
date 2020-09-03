@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a59f9f2cb2548d6d40670832e66d4df5c83680df
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295924"
 ---
 # <a name="visual-studio-administrator-guide"></a>Podręcznik administratora programu Visual Studio
@@ -27,7 +27,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [Podręczni
 
 Program Visual Studio 2015 można wdrożyć w sieci, o ile każdy komputer docelowy spełnia [minimalne wymagania dotyczące instalacji](https://visualstudio.microsoft.com/vs/older-downloads/). Udział sieciowy można utworzyć, uruchamiając plik instalacyjny z przełącznikiem/Layout (zgodnie z opisem na stronie [Tworzenie instalacji w trybie offline programu Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) ), a następnie kopiując go z komputera lokalnego do udziału sieciowego. W przypadku korzystania z obrazu ISO można zainstalować ISO i udostępnić go lub skopiować plik ISO do udziału sieciowego.  
   
- Należy pamiętać, że instalacje z udziału sieciowego "Pamiętaj" lokalizację źródłową, z której pochodzą. Oznacza to, naprawy maszyny klienta może być konieczne powrócić do udziału sieciowego, który pierwotnie zainstalowany klient z. Należy uważnie wybrać swoją lokalizację sieciową, aby wyrównać okres istnienia, w którym ma być uruchomiony klient programu Visual Studio 2015 w organizacji.  
+ Należy pamiętać, że instalacje z udziału sieciowego "Pamiętaj" lokalizację źródłową, z której pochodzą. Oznacza to, że naprawa komputera klienckiego może wymagać powrotu do udziału sieciowego, z którego pierwotnie został zainstalowany klient programu. Należy uważnie wybrać swoją lokalizację sieciową, aby wyrównać okres istnienia, w którym ma być uruchomiony klient programu Visual Studio 2015 w organizacji.  
   
 ## <a name="detection-and-servicing-keys"></a>Klucze wykrywania i obsługi  
  Aby określić, czy produkt Visual Studio jest już zainstalowany na komputerze, można użyć w rejestrze podkluczy wykrywania. Te klucze wykrywania można użyć w zautomatyzowanym wdrożeniu, aby określić, czy było wymagane przeprowadzenie instalacji.  Zobacz [wykrywanie wymagań systemowych](../extensibility/internals/detecting-system-requirements.md)[wykrywanie wymagań systemowych].  
@@ -43,9 +43,9 @@ Program Visual Studio 2015 można wdrożyć w sieci, o ile każdy komputer docel
 |Stan instalacji|Ponowne uruchomienie nie jest wymagane|Wymagane ponowne uruchomienie|Opis|  
 |------------------|--------------------------|----------------------|-----------------|  
 |Powodzenie|0x00000000 [0]|0x00000bc2 [3010]|Instalacja powiodła się.|  
-|Blokuj|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Jeśli jedyny blok do zgłoszenia to "Oczekiwanie na ponowne uruchomienie," zwrócona wartość to wymagana wartość nieukończonego ponownego rozruchu (0x80048bc7).|  
-|Cancel|0x00000642 [1602]|0x80048642 [-2147187134]|Gdy zostanie zwrócona wartość ponownego uruchomienia, kod powrotny to 1602.|  
-|Niekompletne — wymagane ponowne uruchomienie komputera|N/D|0x80048bc7 [-2147185721]|Przed kontynuowaniem instalacji wymagane jest ponowne uruchomienie.|  
+|Zablokowanie|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Jeśli jedyny blok do zgłoszenia to "Oczekiwanie na ponowne uruchomienie," zwrócona wartość to wymagana wartość nieukończonego ponownego rozruchu (0x80048bc7).|  
+|Anuluj|0x00000642 [1602]|0x80048642 [-2147187134]|Gdy zostanie zwrócona wartość ponownego uruchomienia, kod powrotny to 1602.|  
+|Niekompletne — wymagane ponowne uruchomienie komputera|Brak|0x80048bc7 [-2147185721]|Przed kontynuowaniem instalacji wymagane jest ponowne uruchomienie.|  
 |Niepowodzenie|0x00000643 [1603]|0x80048643 [-2147187133]|Gdy zostanie zwrócona wartość ponownego uruchomienia, kod powrotny to 1603.|  
   
 ## <a name="interactive-administrator-installer"></a>Instalator administratora interakcyjnego  
@@ -58,7 +58,7 @@ Program Visual Studio 2015 można wdrożyć w sieci, o ile każdy komputer docel
   
 ## <a name="specifying-customer-feedback-settings"></a>Określanie ustawień opinii klientów  
 
-Domyślnie instalacja programu Visual Studio umożliwia opinii klientów. Można skonfigurować program Visual Studio, aby wyłączyć Opinie klientów na poszczególnych komputerach, zmieniając wartość następującego klucza rejestru na ciąg "0":  
+Domyślnie instalacja programu Visual Studio umożliwia przesyłanie opinii klientów. Można skonfigurować program Visual Studio, aby wyłączyć Opinie klientów na poszczególnych komputerach, zmieniając wartość następującego klucza rejestru na ciąg "0":  
   
 **HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
 **OptIn powoduje**  
@@ -69,8 +69,8 @@ Domyślnie instalacja programu Visual Studio umożliwia opinii klientów. Można
   
 |Temat|Opis|  
 |-----------|-----------------|  
-|[Instrukcje: instalowanie określonej wersji programu Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Opisuje sposób instalowania określonych konfiguracji bieżącej wersji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Instrukcje: tworzenie i uruchamianie nienadzorowanej instalacji programu Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Opisuje sposób instalowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie nienadzorowanym.|  
-|[Instrukcje: automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Opisuje sposób stosowania kluczy produktów podczas wdrażania na wielu maszynach.|  
+|[Instrukcje: instalowanie określonej wersji programu Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Opisuje sposób instalowania określonych konfiguracji bieżącej wersji programu  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
+|[Porady: tworzenie i uruchamianie nienadzorowanej instalacji programu Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Opisuje sposób instalowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] programu w trybie nienadzorowanym.|  
+|[Porady: automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Opisuje sposób stosowania kluczy produktów podczas wdrażania na wielu maszynach.|  
 |[Podręcznik administratora programu Podgląd Pomocy](../ide/help-viewer-administrator-guide.md)|Zawiera informacje o sposobach zarządzania lokalnymi instalacjami pomocy dla środowisk sieciowych, które mają lub nie mają dostępu do Internetu.|  
-|[Instalowanie programu Visual Studio](../install/install-visual-studio-2015.md)|Zawiera instrukcje i linki do tematów opisujących sposób instalowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Instalowanie programu Visual Studio](../install/install-visual-studio-2015.md)|Zawiera instrukcje i linki do tematów opisujących sposób instalowania programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|

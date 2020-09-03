@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars | Dokumenty firmy Microsoft
+title: 'IDebugProperty3:: GetStringChars | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 693a29bc30ef206428713ace36275389de1b7f0a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721082"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-Pobiera ciąg skojarzony z tą właściwością i przechowuje go w buforze dostarczonym przez użytkownika.
+Pobiera ciąg skojarzony z tą właściwością i zapisuje go w buforze dostarczonym przez użytkownika.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,24 +45,24 @@ int GetStringChars(
 
 ## <a name="parameters"></a>Parametry
 `buflen`\
-[w] Maksymalna liczba znaków, które może pomieścić bufor dostarczony przez użytkownika.
+podczas Maksymalna liczba znaków, jaką może zawierać bufor dostarczony przez użytkownika.
 
 `rgString`\
-[na zewnątrz] Zwraca ciąg.
+określoną Zwraca ciąg.
 
- [C++ tylko], `rgString` jest wskaźnikiem do buforu, który odbiera znaki Unicode ciągu. Ten bufor musi `buflen` mieć rozmiar co najmniej znaków (nie bajtów).
+ [Tylko C++], `rgString` jest wskaźnikiem do buforu, który odbiera znaki Unicode ciągu. Rozmiar buforu musi wynosić co najmniej `buflen` znaków (nie bajtów).
 
 `pceltFetched`\
-[na zewnątrz] Gdzie zwracana jest liczba znaków faktycznie przechowywanych w buforze. (Może `NULL` być w języku C++.)
+określoną Miejsce, w którym zwracana jest liczba znaków faktycznie przechowywanych w buforze. (Może być `NULL` w języku C++).
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli to się powiedzie, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-W języku C++, należy zwrócić uwagę, aby zapewnić, że bufor jest co `buflen` najmniej znaków Unicode długo. Należy zauważyć, że znak Unicode ma 2 bajty długości.
+W języku C++ należy zwrócić uwagę, aby upewnić się, że bufor ma co najmniej `buflen` znaki Unicode. Należy zauważyć, że znak Unicode ma długość 2 bajtów.
 
 > [!NOTE]
-> W języku C++ zwrócony ciąg nie zawiera kończącego się znaku null. Jeśli podano, `pceltFetched` określi liczbę znaków w ciągu.
+> W języku C++ zwrócony ciąg nie zawiera kończącego znaku null. Jeśli jest podany, `pceltFetched` określi liczbę znaków w ciągu.
 
 ## <a name="example"></a>Przykład
 

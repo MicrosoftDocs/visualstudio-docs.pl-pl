@@ -20,18 +20,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c5c4d5fc73660c97bcb69957a93d2ff08f64e31c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655464"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Zapisywanie danych w bazie danych (wiele tabel)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Jednym z najczęstszych scenariuszy tworzenia aplikacji jest wyświetlanie danych w formularzu w aplikacji systemu Windows, edytowanie danych i wysyłanie zaktualizowanych danych z powrotem do bazy danych. Ten Instruktaż tworzy formularz, który wyświetla dane z dwóch powiązanych tabel i pokazuje, jak edytować rekordy i zapisywać zmiany z powrotem w bazie danych. Ten przykład używa tabel `Customers` i `Orders` z przykładowej bazy danych Northwind.
+Jednym z najczęstszych scenariuszy tworzenia aplikacji jest wyświetlanie danych w formularzu w aplikacji systemu Windows, edytowanie danych i wysyłanie zaktualizowanych danych z powrotem do bazy danych. Ten Instruktaż tworzy formularz, który wyświetla dane z dwóch powiązanych tabel i pokazuje, jak edytować rekordy i zapisywać zmiany z powrotem w bazie danych. Ten przykład używa `Customers` tabel i `Orders` z przykładowej bazy danych Northwind.
 
- Możesz zapisać dane w aplikacji z powrotem w bazie danych, wywołując metodę `Update` TableAdapter. Gdy przeciągniesz tabele z okna **źródła danych** na formularz, zostanie automatycznie dodany kod wymagany do zapisania danych. Wszelkie dodatkowe tabele dodawane do formularza wymagają ręcznego dodania tego kodu. W tym instruktażu pokazano, jak dodać kod, aby zapisać aktualizacje z więcej niż jednej tabeli.
+ Dane w aplikacji można zapisywać z powrotem do bazy danych przez wywołanie `Update` metody TableAdapter. Gdy przeciągniesz tabele z okna **źródła danych** na formularz, zostanie automatycznie dodany kod wymagany do zapisania danych. Wszelkie dodatkowe tabele dodawane do formularza wymagają ręcznego dodania tego kodu. W tym instruktażu pokazano, jak dodać kod, aby zapisać aktualizacje z więcej niż jednej tabeli.
 
 > [!NOTE]
 > Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w pomocy, w zależności od ustawień aktywnych lub używanej wersji. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -62,7 +62,7 @@ Jednym z najczęstszych scenariuszy tworzenia aplikacji jest wyświetlanie danyc
 
 1. W menu **plik** Utwórz nowy projekt.
 
-2. Nadaj nazwę projektowi `UpdateMultipleTablesWalkthrough`.
+2. Nadaj nazwę projektowi `UpdateMultipleTablesWalkthrough` .
 
 3. Wybierz pozycję **aplikacja systemu Windows**, a następnie wybierz przycisk **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).
 
@@ -83,7 +83,7 @@ Jednym z najczęstszych scenariuszy tworzenia aplikacji jest wyświetlanie danyc
 
     - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
 
-         —lub—
+         -lub-
 
     - Wybierz pozycję **nowe połączenie** , aby otworzyć okno dialogowe **Dodawanie/modyfikowanie połączenia** .
 
@@ -98,7 +98,7 @@ Jednym z najczęstszych scenariuszy tworzenia aplikacji jest wyświetlanie danyc
      **NorthwindDataSet** jest dodawany do projektu, a tabele są wyświetlane w oknie **źródła danych** .
 
 ## <a name="set-the-controls-to-be-created"></a>Ustaw kontrolki do utworzenia
- W tym instruktażu dane w tabeli `Customers` znajdują się w układzie **szczegółów** , w którym dane są wyświetlane w poszczególnych kontrolkach. Dane z tabeli `Orders` są w układzie **siatki** , który jest wyświetlany w kontrolce <xref:System.Windows.Forms.DataGridView>.
+ W tym instruktażu dane w `Customers` tabeli znajdują się w układzie **szczegółów** , w którym dane są wyświetlane w poszczególnych kontrolkach. Dane z `Orders` tabeli są w układzie **siatki** , który jest wyświetlany w <xref:System.Windows.Forms.DataGridView> kontrolce.
 
 #### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Aby ustawić typ upuszczenia dla elementów w oknie źródła danych
 
@@ -113,26 +113,26 @@ Jednym z najczęstszych scenariuszy tworzenia aplikacji jest wyświetlanie danyc
 
 1. Przeciągnij główny węzeł **Customers** z okna **źródła danych** na **formularz Form1**.
 
-     Formanty powiązane z danymi z opisowymi etykietami są wyświetlane w formularzu wraz z paskiem narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+     Formanty powiązane z danymi, które mają opisowe etykiety, są wyświetlane w formularzu wraz z paskiem narzędzi ( <xref:System.Windows.Forms.BindingNavigator> ) na potrzeby nawigowania po rekordach. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
 
 2. Przeciągnij węzeł powiązane **zamówienia** z okna **źródła danych** na **formularz Form1**.
 
     > [!NOTE]
     > Węzeł powiązane **zamówienia** znajduje się poniżej kolumny **faks** i jest węzłem podrzędnym węzła **Customers** .
 
-     Kontrolka <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach pojawiają się w formularzu. OrdersTableAdapter i <xref:System.Windows.Forms.BindingSource> pojawiają się na pasku składnika.
+     <xref:System.Windows.Forms.DataGridView>Kontrolka i pasek narzędzi ( <xref:System.Windows.Forms.BindingNavigator> ) na potrzeby nawigowania po rekordach pojawiają się w formularzu. OrdersTableAdapter i <xref:System.Windows.Forms.BindingSource> pojawia się na pasku składnika.
 
 ## <a name="addcode-to-update-the-database"></a>AddCode w celu zaktualizowania bazy danych
- Bazę danych można zaktualizować, wywołując metody `Update` **klientów** i **zamówień** TableAdapters. Domyślnie program obsługi zdarzeń dla przycisku **zapisz** <xref:System.Windows.Forms.BindingNavigator> jest dodawany do kodu formularza w celu wysłania aktualizacji do bazy danych programu. Ta procedura modyfikuje kod w celu wysłania aktualizacji w odpowiedniej kolejności. Eliminuje to możliwość podnoszenia błędów integralności referencyjnej. Kod implementuje również obsługę błędów przez zawijanie wywołania aktualizacji w bloku try-catch. Możesz zmodyfikować kod, aby spełniał wymagania aplikacji.
+ Bazę danych można zaktualizować, wywołując `Update` metody TableAdapters **klientów** i **zamówień** . Domyślnie program obsługi zdarzeń dla przycisku **Zapisz** <xref:System.Windows.Forms.BindingNavigator> jest dodawany do kodu formularza w celu wysyłania aktualizacji do bazy danych programu. Ta procedura modyfikuje kod w celu wysłania aktualizacji w odpowiedniej kolejności. Eliminuje to możliwość podnoszenia błędów integralności referencyjnej. Kod implementuje również obsługę błędów przez zawijanie wywołania aktualizacji w bloku try-catch. Możesz zmodyfikować kod, aby spełniał wymagania aplikacji.
 
 > [!NOTE]
 > Dla jasności ten przewodnik nie korzysta z transakcji. Jeśli jednak aktualizujesz dwie lub więcej powiązanych tabel, Uwzględnij całą logikę aktualizacji w ramach transakcji. Transakcja to proces, który gwarantuje, że wszystkie powiązane zmiany w bazie danych zakończą się pomyślnie przed zatwierdzeniem jakichkolwiek zmian. Aby uzyskać więcej informacji, zobacz [transakcje i współbieżność](https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).
 
 #### <a name="to-add-update-logic-to-the-application"></a>Aby dodać logikę aktualizacji do aplikacji
 
-1. Wybierz przycisk **Zapisz** na <xref:System.Windows.Forms.BindingNavigator>. spowoduje to otwarcie edytora kodu do programu obsługi zdarzeń `bindingNavigatorSaveItem_Click`.
+1. Wybierz przycisk **Zapisz** na stronie <xref:System.Windows.Forms.BindingNavigator> . Spowoduje to otwarcie edytora kodu w programie `bindingNavigatorSaveItem_Click` obsługi zdarzeń.
 
-2. Zastąp kod w obsłudze zdarzeń, aby wywołać metody `Update` powiązanej TableAdapters. Poniższy kod najpierw tworzy trzy tymczasowe tabele danych do przechowywania zaktualizowanych informacji dla poszczególnych <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState>, <xref:System.Data.DataRowState> i <xref:System.Data.DataRowState>). Następnie aktualizacje są uruchamiane w odpowiedniej kolejności. Kod powinien wyglądać następująco:
+2. Zastąp kod w programie obsługi zdarzeń, aby wywołać `Update` metody powiązanej TableAdapters. Poniższy kod najpierw tworzy trzy tymczasowe tabele danych do przechowywania zaktualizowanych informacji dla każdego <xref:System.Data.DataRowState> ( <xref:System.Data.DataRowState> , <xref:System.Data.DataRowState> i <xref:System.Data.DataRowState> ). Następnie aktualizacje są uruchamiane w odpowiedniej kolejności. Kod powinien wyglądać następująco:
 
      [!code-csharp[VbRaddataSaving#10](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form4.cs#10)]
      [!code-vb[VbRaddataSaving#10](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form4.vb#10)]
@@ -145,7 +145,7 @@ Jednym z najczęstszych scenariuszy tworzenia aplikacji jest wyświetlanie danyc
 
 2. Wprowadź pewne zmiany w danych co najmniej jednego rekordu w każdej tabeli.
 
-3. Wybierz przycisk **Zapisz** .
+3. Wybierz ikonę **Zapisz**.
 
 4. Sprawdź wartości w bazie danych, aby sprawdzić, czy zmiany zostały zapisane.
 

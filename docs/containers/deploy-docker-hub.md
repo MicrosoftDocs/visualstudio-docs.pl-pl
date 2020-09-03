@@ -10,10 +10,10 @@ ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
 ms.openlocfilehash: cd17726d5ba09dcb901fd529e6bdfd97dee52f31
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88168658"
 ---
 # <a name="deploy-to-docker-hub"></a>Wdrażanie w usłudze Docker Hub
@@ -54,7 +54,7 @@ Opublikuj w [Azure Container Registry](/azure/container-registry/) , wykonując 
 
 Skonfiguruj ciągłą integrację i dostarczanie (CI/CD) za pomocą [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Wdróż do Azure App Service](deploy-app-service.md) 
  [Narzędzia kontenerów programu Visual Studio](/visualstudio/containers/).
