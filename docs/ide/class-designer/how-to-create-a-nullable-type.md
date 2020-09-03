@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: ad371f987ab7ff0e50dc7d2fe4effeba5205e74e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770984"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Instrukcje: Tworzenie typu dopuszczającego wartość null w Projektant klas
@@ -29,9 +29,9 @@ Niektóre typy wartości nie zawsze mają określoną wartość (lub potrzebują
 
 Typy dopuszczające wartości null są wystąpieniami <xref:System.Nullable%601> struktury. Każde wystąpienie typu dopuszczającego wartość null ma dwie publiczne właściwości tylko do odczytu `HasValue` i `Value` :
 
-- `HasValue`jest typu `bool` i wskazuje, czy zmienna zawiera zdefiniowaną wartość. `True`oznacza, że zmienna zawiera wartość różną od null. Można testować pod kątem zdefiniowanej wartości przy użyciu instrukcji, takiej jak `if (x.HasValue)` lub `if (y != null)` .
+- `HasValue` jest typu `bool` i wskazuje, czy zmienna zawiera zdefiniowaną wartość. `True` oznacza, że zmienna zawiera wartość różną od null. Można testować pod kątem zdefiniowanej wartości przy użyciu instrukcji, takiej jak `if (x.HasValue)` lub `if (y != null)` .
 
-- `Value`jest tego samego typu co typ podstawowy. Jeśli `HasValue` jest `True` , `Value` zawiera zrozumiałą wartość. Jeśli `HasValue` jest `False` , uzyskanie dostępu `Value` spowoduje zgłoszenie nieprawidłowego wyjątku operacji.
+- `Value` jest tego samego typu co typ podstawowy. Jeśli `HasValue` jest `True` , `Value` zawiera zrozumiałą wartość. Jeśli `HasValue` jest `False` , uzyskanie dostępu `Value` spowoduje zgłoszenie nieprawidłowego wyjątku operacji.
 
 Domyślnie podczas deklarowania zmiennej jako typu dopuszczającego wartość null nie ma zdefiniowanej wartości ( `HasValue` is `False` ), innej niż domyślna wartość jego bazowego typu wartości.
 
@@ -55,7 +55,7 @@ Aby uzyskać więcej informacji na temat typów dopuszczających wartości null 
 
 6. W kolumnie **Typ** okna **Szczegóły klasy** Zadeklaruj typ jako typ dopuszczający wartość null, określając następujące elementy:
 
-    - `int?`(Visual C#)
+    - `int?` (Visual C#)
     - `Nullable(Of Integer)` (Visual Basic)
 
 ## <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Aby dodać typ dopuszczający wartość null przy użyciu edytora kodu
@@ -85,7 +85,7 @@ Aby uzyskać więcej informacji na temat typów dopuszczających wartości null 
 
 5. Kliknij prawym przyciskiem myszy kształt klasy, a następnie kliknij pozycję **Szczegóły klasy**. Właściwości nowego typu można wyświetlić lub zmodyfikować w oknie **Szczegóły klasy** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:System.Nullable%601>
 - [Typy dopuszczające wartości null](/dotnet/csharp/programming-guide/nullable-types/index)

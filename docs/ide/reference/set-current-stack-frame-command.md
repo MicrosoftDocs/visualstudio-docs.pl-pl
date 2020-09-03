@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f70f5ebfc80933f38f1543d5eb42f01fb470298f
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769729"
 ---
 # <a name="set-current-stack-frame-command"></a>Ustaw bieżącą ramkę stosu — Polecenie
@@ -40,7 +40,7 @@ Wymagany. Wybiera ramkę stosu według jej indeksu.
 >Debug.SetCurrentStackFrame 1
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)

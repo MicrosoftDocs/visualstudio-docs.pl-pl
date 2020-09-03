@@ -1,5 +1,5 @@
 ---
-title: Niestandardowy interfejs użytkownika (kontrola źródła VSPackage) | Dokumenty firmy Microsoft
+title: Niestandardowy interfejs użytkownika (pakietu VSPackage kontroli źródła) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,48 +12,48 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a6ef807cef17a6ca3cddfee05ba57ace27e34a9e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708928"
 ---
-# <a name="custom-user-interface-source-control-vspackage"></a>Niestandardowy interfejs użytkownika (formant źródła VSPackage)
-VsPackage deklaruje swoje elementy menu i ich stany domyślne za pośrednictwem pliku polecenia programu Visual Studio (*.vsct).* Zintegrowane [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowisko programistyczne (IDE) wyświetla elementy menu w ich stanach domyślnych, dopóki nie zostanie załadowany vspackage. Następnie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metoda jest wywoływana, aby włączyć lub wyłączyć elementy menu.
+# <a name="custom-user-interface-source-control-vspackage"></a>Niestandardowy interfejs użytkownika (pakietu VSPackage kontroli źródła)
+Pakietu VSPackage deklaruje elementy menu i ich domyślne Stany za pomocą pliku programu Visual Studio Command Table (*. vsct*). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Zintegrowane środowisko programistyczne (IDE) wyświetla elementy menu w ich domyślnych Stanach do momentu załadowania pakietu VSPackage. Następnie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Metoda jest wywoływana, aby włączyć lub wyłączyć elementy menu.
 
- VSPackage można ustawić klucz rejestru, dzięki czemu VSPackage mogą być automatycznie ładowane w zależności od kontekstu interfejsu użytkownika polecenia (UI), chociaż zazwyczaj formantu źródła VSPackage należy załadować na żądanie, a nie tylko przełączanie do określonego kontekstu interfejsu użytkownika. Aby uzyskać więcej informacji na temat klucza rejestru **AutoLoadPackages,** zobacz [Zarządzanie pakietami VSPackages](../../extensibility/managing-vspackages.md).
+ Pakietu VSPackage może ustawić klucz rejestru, aby można było automatycznie załadować pakietu VSPackage w zależności od kontekstu interfejsu użytkownika (UI) polecenia, mimo że zwykle pakietu VSPackage kontroli źródła powinno ładować na żądanie, a nie tylko przełączać się do konkretnego kontekstu interfejsu użytkownika. Więcej informacji o kluczu rejestru **AutoLoadPackages** można znaleźć w temacie [Manage pakietów VSPackage](../../extensibility/managing-vspackages.md).
 
 ## <a name="vspackage-ui"></a>Interfejs użytkownika pakietu VSPackage
- Pakiet kontroli źródła jest implementowany jako VSPackage i nie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]używa żadnego interfejsu użytkownika z . Każdy formant źródła VSPackage musi określić własne elementy interfejsu użytkownika, takie jak elementy menu, grupy menu, okna narzędzi, paski narzędzi i wszelkie wymagane interfejsu użytkownika do ustawiania opcji specyficznych dla formantu źródła VSPackage. Te elementy interfejsu użytkownika można włączyć statycznie lub dynamicznie. Statyczne elementy interfejsu użytkownika są zdefiniowane w pliku *vsct* i są wyświetlane, czy VSPackage jest załadowany, czy nie. Elementy interfejsu użytkownika dynamicznego mogą być widoczne w zależności <xref:EnvDTE.Constants.vsContextNoSolution>od kontekstu interfejsu użytkownika określonego <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> polecenia, takiego jak , lub w wyniku wywołania metody. Widoczność dynamicznych elementów interfejsu użytkownika jest zgodna ze strategią opóźnionego ładowania pakietów VSPackages.
+ Pakiet kontroli źródła jest implementowany jako pakietu VSPackage i nie korzysta z interfejsu użytkownika z programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Każdy pakietu VSPackage kontroli źródła musi określać własne elementy interfejsu użytkownika, takie jak elementy menu, grupy menu, okna narzędzi, paski narzędzi i każdy wymagany interfejs użytkownika do ustawiania opcji specyficznych dla pakietu VSPackage kontroli źródła. Te elementy interfejsu użytkownika można włączyć statycznie lub dynamicznie. Statyczne elementy interfejsu użytkownika są zdefiniowane w pliku *. vsct* i są wyświetlane niezależnie od tego, czy pakietu VSPackage jest załadowana, czy nie. Dynamiczne elementy interfejsu użytkownika mogą być widoczne w zależności od kontekstu interfejsu użytkownika polecenia, takiego jak <xref:EnvDTE.Constants.vsContextNoSolution> lub w wyniku wywołania <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody. Widoczność dynamicznych elementów interfejsu użytkownika jest zgodna z strategią opóźnionego ładowania pakietów VSPackage.
 
-## <a name="ui-constraints-on-source-control-vspackages"></a>Ograniczenia interfejsu użytkownika w formancie źródła VSPackages
- Ponieważ formantu źródła VSPackage nie można usunąć z IDE po załadowaniu, VSPackage musi być w stanie wprowadzić stan nieaktywny. Gdy VSPackage odbiera powiadomienie, że nie jest już aktywny, VSPackage wyłącza jego interfejsu użytkownika i ignoruje wszelkie zewnętrzne interakcji IDE. VsPackage implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody należy ukryć polecenia, gdy VSPackage nie jest aktywny.
+## <a name="ui-constraints-on-source-control-vspackages"></a>Ograniczenia interfejsu użytkownika dotyczące pakietów VSPackage kontroli źródła
+ Ponieważ pakietu VSPackage kontroli źródła nie można usunąć z IDE po załadowaniu, pakietu VSPackage musi mieć możliwość wprowadzenia nieaktywnego stanu. Gdy pakietu VSPackage odbiera powiadomienie, że nie jest już aktywne, pakietu VSPackage wyłącza jego interfejs użytkownika i ignoruje wszelkie zewnętrzne interakcje IDE. Implementacja <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody pakietu VSPackage powinna ukrywać polecenia, gdy pakietu VSPackage nie jest aktywny.
 
- Każdy formant źródła VSPackage musi implementować `IVsSccProvider` interfejs. Dwie metody w <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> interfejsie i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>, muszą być zaimplementowane przez VSPackage.
+ Każdy pakietu VSPackage kontroli źródła musi implementować `IVsSccProvider` interfejs. Dwie metody w interfejsie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A> , muszą być implementowane przez pakietu VSPackage.
 
- Formant źródła VSPackage może subskrybować różne zdarzenia IDE, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>które są implementowane przez , i tak dalej. Ponadto VSPackage może zaimplementować interfejsy wywołania zwrotnego <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>z włączoną funkcją rejestru, takie jak . Wszystkie te interfejsy muszą być ignorowane, gdy są nieaktywne.
+ Pakietu VSPackage kontroli źródła może mieć subskrypcję różnych zdarzeń IDE, które są implementowane przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> , <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> i tak dalej. Ponadto pakietu VSPackage mogą mieć zaimplementowane interfejsy wywołania zwrotnego z włączonym rejestrem, takie jak <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> . Wszystkie te interfejsy muszą być ignorowane, gdy są nieaktywne.
 
- Na poniższej liście przedstawiono interfejsy, których dotyczy aktywny stan formantu źródła VSPackage:
+ Na poniższej liście przedstawiono interfejsy, których dotyczy stan aktywny pakietu VSPackage kontroli źródła:
 
-- Śledzenie zdarzeń dokumentów projektu.
+- Śledź zdarzenia dokumentów projektu.
 
 - Zdarzenia rozwiązania.
 
-- Interfejsy trwałości rozwiązania. Gdy pakiety są nieaktywne, nie powinny być zapisywane w plikach *.sln* i *.suo.*
+- Interfejsy trwałości rozwiązania. Gdy jest nieaktywny, pakiety nie powinny zapisywać w plikach *sln* i *. suo* .
 
-- Przedłużacze właściwości.
+- Rozszerzalność właściwości.
 
-  Wymagane <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, a także wszystkie opcjonalne interfejsy skojarzone z kontrolą źródła, nie są wywoływane, gdy formant źródła VSPackage jest nieaktywny.
+  Wymagane <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> , a także wszelkie opcjonalne interfejsy skojarzone z kontrolą źródła nie są wywoływane, gdy pakietu VSPackage kontroli źródła jest nieaktywny.
 
-  Po [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uruchomieniu IDE [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ustawia kontekst interfejsu użytkownika polecenia na identyfikator bieżącego domyślnego formantu źródła VSPackage ID. Powoduje to, że statyczny interfejs użytkownika kontrolki aktywnego źródła VSPackage pojawiają się w IDE bez faktycznie ładowania VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]pauzuje dla VSPackage zarejestrować [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> się za pośrednictwem przed sprawia, że wszelkie wywołania VSPackage.
+  Po [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uruchomieniu IDE [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Ustawia kontekst interfejsu użytkownika polecenia na identyfikator bieżącego domyślnego identyfikatora pakietu VSPackage kontroli źródła. Powoduje to, że statyczny interfejs użytkownika aktywnej kontroli źródła pakietu VSPackage pojawia się w IDE bez faktycznego ładowania pakietu VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wstrzymuje działanie pakietu VSPackage, aby zarejestrować się w usłudze [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] za pomocą programu <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> przed wykonaniem jakichkolwiek wywołań do pakietu VSPackage.
 
-  W poniższej tabeli opisano [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] szczegółowe informacje o tym, jak IDE ukrywa różne elementy interfejsu użytkownika.
+  W poniższej tabeli opisano szczegółowe informacje o tym, jak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowisko IDE ukrywa różne elementy interfejsu użytkownika.
 
 | Element interfejsu użytkownika | Opis |
 | - | - |
-| Menu i paski narzędzi | Pakiet kontroli źródła musi ustawić początkowe menu i stany widoczności paska narzędzi na identyfikator pakietu kontroli źródła w sekcji [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) pliku *.vsct.* Dzięki temu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, aby ustawić stan elementów menu odpowiednio bez ładowania VSPackage i wywołanie implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody. |
-| Okna narzędzi | Formant źródła VSPackage ukrywa wszystkie okna narzędzia, które posiada, gdy jest nieaktywny. |
-| Strony opcji specyficzne dla formantu źródła VSPackage | Klucz rejestru **HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts** umożliwia programowi VSPackage ustawienie kontekstów, w których wymaga wyświetlania stron opcji. Wpis rejestru pod tym kluczem musiałby zostać utworzony przy użyciu identyfikatora usługi (SID) usługi kontroli źródła i przydzieleniu jej wartości DWORD 1. Za każdym razem, gdy zdarzenie interfejsu użytkownika występuje w kontekście kontroli źródła VSPackage jest zarejestrowany, VSPackage zostanie wywołana, jeśli jest aktywny. |
+| Menu i paski narzędzi | Pakiet kontroli źródła musi ustawić początkowe menu i Stany widoczności paska narzędzi na identyfikator pakietu kontroli źródła w sekcji [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) pliku *. vsct* . Dzięki temu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE może odpowiednio ustawić stan elementów menu bez ładowania pakietu VSPackage i wywoływania implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody. |
+| Okna narzędzi | Pakietu VSPackage kontroli źródła ukrywa wszystkie okna narzędzi, które są własnością, gdy jest nieaktywny. |
+| Strony opcji pakietu VSPackage kontroli źródła | Klucz rejestru **HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts** umożliwia pakietu VSPackage Ustawianie kontekstów, w których będą wyświetlane strony opcji. Wpis rejestru w tym kluczu należy utworzyć przy użyciu identyfikatora usługi (SID) usługi kontroli źródła i przypisywania go do wartości DWORD 1. Za każdym razem, gdy w kontekście wystąpi zdarzenie pakietu VSPackage kontroli źródła, pakietu VSPackage zostanie wywołana, jeśli jest aktywny. |
 
 ## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>

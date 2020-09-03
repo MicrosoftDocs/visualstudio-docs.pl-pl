@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bef7c4be2f38d0f50b2a13c7745cb212204769b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670091"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Tworzenie bazy danych SQL za pomocą skryptu
@@ -37,11 +37,11 @@ W tym instruktażu program Visual Studio służy do tworzenia małych baz danych
 ## <a name="prerequisites"></a>Wymagania wstępne
  Aby ukończyć ten przewodnik, musisz mieć zainstalowaną SQL Server Express LocalDB lub inną bazę danych SQL.
 
-## <a name="CreateScript"></a>Utwórz skrypt, który zawiera schemat bazy danych
+## <a name="create-a-script-that-contains-a-database-schema"></a><a name="CreateScript"></a> Utwórz skrypt, który zawiera schemat bazy danych
 
 #### <a name="to-create-a-script-from-which-you-can-import-a-schema"></a>Aby utworzyć skrypt, za pomocą którego można zaimportować schemat
 
-1. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na pasku menu wybierz pozycję **plik**  > **Nowy** **plik** > .
+1. W programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **plik**.
 
      Pojawi się okno dialogowe **nowy plik** .
 
@@ -213,30 +213,30 @@ W tym instruktażu program Visual Studio służy do tworzenia małych baz danych
     GO
     ```
 
-5. Na pasku menu wybierz pozycję **plik**  > **Zapisz SqlQuery_1. SQL jako**.
+5. Na pasku menu wybierz pozycję **plik**  >  **Zapisz SqlQuery_1. SQL jako**.
 
      Zostanie wyświetlone okno dialogowe **Zapisywanie pliku jako** .
 
-6. W polu **Nazwa pliku** wprowadź `SampleImportScript.sql`, zanotuj lokalizację, w której chcesz zapisać plik, a następnie wybierz przycisk **Zapisz** .
+6. W polu **Nazwa pliku** wprowadź `SampleImportScript.sql` , zanotuj lokalizację, w której chcesz zapisać plik, a następnie wybierz przycisk **Zapisz** .
 
-7. Na pasku menu wybierz pozycję **plik**  > **Zamknij rozwiązanie**.
+7. Na pasku menu wybierz pozycję **plik**  >  **Zamknij rozwiązanie**.
 
      Następnie utwórz projekt bazy danych, a następnie zaimportuj schemat ze skryptu, który został utworzony.
 
-## <a name="CreateProject"></a>Tworzenie projektu bazy danych i importowanie schematu
+## <a name="create-a-database-project-and-import-a-schema"></a><a name="CreateProject"></a> Tworzenie projektu bazy danych i importowanie schematu
 
 #### <a name="to-create-a-database-project"></a>Aby utworzyć projekt bazy danych
 
-1. Na pasku menu wybierz pozycję **plik**  > **Nowy**  > **projekt**.
+1. Na pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**.
 
-     Pojawi się okno dialogowe **Nowy projekt** .
+     Zostanie wyświetlone okno dialogowe **Nowy projekt**.
 
 2. W obszarze **zainstalowane**rozwiń węzeł **Szablony** , rozwiń węzeł **inne języki** , wybierz kategorię **SQL Server** , a następnie wybierz szablon **projektu SQL Server Database** .
 
     > [!NOTE]
     > Węzeł **inne języki** nie pojawia się we wszystkich instalacjach programu Visual Studio.
 
-3. W polu **Nazwa** wprowadź `Small Database`.
+3. W polu **Nazwa** wprowadź wartość `Small Database` .
 
 4. Zaznacz pole wyboru **Utwórz katalog dla rozwiązania** , jeśli nie zostało jeszcze wybrane.
 
@@ -248,7 +248,7 @@ W tym instruktażu program Visual Studio służy do tworzenia małych baz danych
 
 #### <a name="to-import-a-database-schema-from-a-script"></a>Aby zaimportować schemat bazy danych ze skryptu
 
-1. Na pasku menu wybierz kolejno pozycje **projekt**  > **Importuj**  > **skrypt**.
+1. Na pasku menu wybierz opcję **Project**  >  **Import**  >  **skrypt**importowania projektu.
 
 2. Na stronie **powitalnej** Przejrzyj tekst, a następnie wybierz przycisk **dalej** .
 
@@ -270,5 +270,5 @@ W tym instruktażu program Visual Studio służy do tworzenia małych baz danych
 
      W tym momencie baza danych zawiera tylko obiekty systemowe, takie jak tabele i procedury składowane. Po wdrożeniu bazy danych będzie ona zawierać tabele użytkowników i procedury przechowywane zdefiniowane przez skrypty.
 
-## <a name="DeployDatabase"></a>Wdrażanie bazy danych
+## <a name="deploy-the-database"></a><a name="DeployDatabase"></a> Wdrażanie bazy danych
  Po naciśnięciu klawisza **F5** należy wdrożyć (lub opublikować) bazę danych domyślnie w bazie danych LocalDB. Bazę danych można wdrożyć w innej lokalizacji, otwierając stronę właściwości projektu, wybierając kartę **debugowanie** , a następnie zmieniając parametry połączenia.

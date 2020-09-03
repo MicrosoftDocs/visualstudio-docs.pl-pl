@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bae5b4a81864cc591491c21218a5d8253dfc61bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671846"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Krok 3. Dodawanie czasomierza odliczania
@@ -33,7 +33,7 @@ W trzeciej części tego samouczka dodasz czasomierz odliczania, aby śledzić l
 
      Teraz potrzebna jest metoda, która faktycznie zlicza sekundy, takie jak czasomierz, który wywołuje zdarzenie po upływie określonego czasu.
 
-2. W oknie projektowania Przenieś formant `Timer` z kategorii **składniki** przybornika do formularza.
+2. W oknie projektowania Przenieś `Timer` kontrolkę z kategorii **składniki** przybornika do formularza.
 
      Kontrolka pojawia się w szarym obszarze u dołu okna projektowania.
 
@@ -50,11 +50,11 @@ W trzeciej części tego samouczka dodasz czasomierz odliczania, aby śledzić l
      [!code-csharp[VbExpressTutorial3Step3#6](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs#6)]
      [!code-vb[VbExpressTutorial3Step3#6](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb#6)]
 
-     Na podstawie dodanych przez Ciebie operacji czasomierz sprawdza każdą sekundę, czy czas został uruchomiony przez określenie, czy zmienna **timeleft** Integer jest większa od 0. Jeśli tak jest, czas nadal pozostaje. Czasomierz najpierw odejmuje 1 od timeLeft, a następnie aktualizuje właściwość **Text** kontrolki `timeLabel`, aby pokazać pozostałą liczbę sekund.
+     Na podstawie dodanych przez Ciebie operacji czasomierz sprawdza każdą sekundę, czy czas został uruchomiony przez określenie, czy zmienna **timeleft** Integer jest większa od 0. Jeśli tak jest, czas nadal pozostaje. Czasomierz najpierw odejmuje 1 od timeLeft, a następnie aktualizuje właściwość **Text** `timeLabel` kontrolki, aby pokazać pozostałą liczbę sekund.
 
-     Jeśli czas nie zostanie przekroczony, czasomierz zatrzyma się i zmieni tekst kontrolki `timeLabel` tak, aby pokazywał **czas** pracy. W oknie komunikatu ogłoszono quiz, a odpowiedź jest ujawniana — w tym przypadku przez dodanie addend1 i addend2. Właściwość **Enabled** kontrolki `startButton` jest ustawiona na wartość `true`, dzięki czemu można zacząć korzystać z innego quizu.
+     Jeśli czas nie zostanie przekroczony, czasomierz zatrzyma się i zmieni tekst `timeLabel` kontrolki tak, aby był wyświetlany **czas** . W oknie komunikatu ogłoszono quiz, a odpowiedź jest ujawniana — w tym przypadku przez dodanie addend1 i addend2. Właściwość **Enabled** `startButton` kontrolki jest ustawiona na `true` tak, aby mogła zacząć korzystać z innego quizu.
 
-     Właśnie dodano instrukcję `if else`, która informuje, jak programy mogą podejmować decyzje. Instrukcja `if else` wygląda następująco.
+     Właśnie dodano `if else` instrukcję, która jest poinformowania programów, aby podejmować decyzje. `if else`Instrukcja wygląda następująco.
 
     > [!NOTE]
     > Poniższy przykład dotyczy tylko ilustracji — nie należy dodawać go do projektu.
@@ -82,21 +82,21 @@ W trzeciej części tego samouczka dodasz czasomierz odliczania, aby śledzić l
     }
     ```
 
-     Dokładnie zapoznaj się z instrukcją dodaną w bloku `else`, aby wyświetlić odpowiedź na problem dodawania.
+     Dokładnie zapoznaj się z instrukcją dodaną w `else` bloku, aby wyświetlić odpowiedź na problem dodawania.
 
      [!code-csharp[VbExpressTutorial3Step3#24](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs#24)]
      [!code-vb[VbExpressTutorial3Step3#24](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb#24)]
 
-     Instrukcja `addend1 + addend2` dodaje wartości w obu zmiennych jednocześnie. Pierwsza część (`sum.Value`) używa właściwości **Value** kontrolki sum `NumericUpDown` do wyświetlania prawidłowej odpowiedzi. Użyj tej samej właściwości później, aby sprawdzić odpowiedzi dla quizu.
+     Instrukcja `addend1 + addend2` dodaje wartości w obu zmiennych jednocześnie. Pierwsza część ( `sum.Value` ) używa właściwości **wartość** `NumericUpDown` kontrolki sum do wyświetlania prawidłowej odpowiedzi. Użyj tej samej właściwości później, aby sprawdzić odpowiedzi dla quizu.
 
-     Program Quiz uczestnikom umożliwia łatwiejsze wprowadzanie liczb przy użyciu kontrolki `NumericUpDown`, co oznacza, że jest ona używana do odpowiedzi na problemy matematyczne. Wszystkie potencjalne odpowiedzi są liczbami całkowitymi od 0 do 100. Pozostawiając wartości domyślne właściwości **minimum**, **maksimum**i **DecimalPlaces** , upewnij się, że w uczestnikom quizu nie można wprowadzać cyfr dziesiętnych, liczb ujemnych ani liczb, które są zbyt duże. (Jeśli chcesz zezwolić uczestnikomowi quizu na wprowadzenie 3,141, ale nie 3,1415, możesz ustawić właściwość **DecimalPlaces** na 3).
+     Program Quiz uczestnikom może łatwiej wprowadzać liczby przy użyciu `NumericUpDown` kontrolki, co oznacza, że można ją użyć do odpowiedzi na problemy matematyczne. Wszystkie potencjalne odpowiedzi są liczbami całkowitymi od 0 do 100. Pozostawiając wartości domyślne właściwości **minimum**, **maksimum**i **DecimalPlaces** , upewnij się, że w uczestnikom quizu nie można wprowadzać cyfr dziesiętnych, liczb ujemnych ani liczb, które są zbyt duże. (Jeśli chcesz zezwolić uczestnikomowi quizu na wprowadzenie 3,141, ale nie 3,1415, możesz ustawić właściwość **DecimalPlaces** na 3).
 
-6. Dodaj trzy wiersze na końcu metody `StartTheQuiz()`, aby kod wyglądał następująco.
+6. Dodaj trzy wiersze na końcu `StartTheQuiz()` metody, tak aby kod wyglądał następująco.
 
      [!code-csharp[VbExpressTutorial3Step3#7](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs#7)]
      [!code-vb[VbExpressTutorial3Step3#7](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb#7)]
 
-     Teraz po rozpoczęciu quizu zmienna **timeleft** jest ustawiona na wartość 30, a właściwość **Text** kontrolki `timeLabel` jest ustawiona na 30 sekund. Następnie Metoda `Start()` kontrolki `Timer` uruchamia odliczanie. (Quiz nie sprawdza jeszcze odpowiedzi — jest to kolejne.)
+     Teraz po rozpoczęciu quizu zmienna **timeleft** jest ustawiona na wartość 30, a właściwość **Text** `timeLabel` kontrolki jest ustawiona na 30 sekund. Następnie `Start()` Metoda `Timer` kontrolki zaczyna odliczanie. (Quiz nie sprawdza jeszcze odpowiedzi — jest to kolejne.)
 
 7. Zapisz swój program, uruchom go, a następnie wybierz przycisk **Start** w formularzu.
 

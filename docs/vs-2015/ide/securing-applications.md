@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c590c88894c930f04caf0f7e8afd4eee298f077a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669950"
 ---
 # <a name="securing-applications"></a>Zabezpieczanie aplikacji
@@ -27,9 +27,9 @@ Chociaż większość aplikacji ma typowe wyzwania związane z bezpieczeństwem,
 ## <a name="general-security-considerations"></a>Ogólne zagadnienia dotyczące zabezpieczeń
  Każdy język ma własne zagadnienia dotyczące zabezpieczeń i wyzwania.
 
- [Najlepsze rozwiązania](https://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42) w zakresie zabezpieczeń Zawiera informacje o funkcjach zabezpieczeń i rozwiązaniach dostępnych podczas pracy C++w programie Visual.
+ [Najlepsze rozwiązania](https://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42) w zakresie zabezpieczeń Zawiera informacje o funkcjach zabezpieczeń i rozwiązaniach dostępnych podczas pracy w Visual C++.
 
- [NIE w kompilacji: zabezpieczenia i programowanie (C# i Visual Basic)](https://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994) zawierają informacje dotyczące najważniejszych trzech problemów z zabezpieczeniami dla Visual Basic i C# deweloperów: uprawnienia, aplikacje sieci Web i Instalator programu Visual Studio.
+ [Nie w kompilacji: zabezpieczenia i programowanie (C# i Visual Basic)](https://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994) Zawiera informacje o trzech najważniejszych problemach z zabezpieczeniami dla deweloperów Visual Basic i C#: uprawnienia, aplikacje sieci Web i Instalator programu Visual Studio.
 
 ## <a name="securing-mobile-applications"></a>Zabezpieczanie aplikacji mobilnych
  W miarę wzrostu popularności urządzeń przenośnych zabezpieczenia informacji i danych na tych urządzeniach staną się ważniejsze.
@@ -57,4 +57,4 @@ Chociaż większość aplikacji ma typowe wyzwania związane z bezpieczeństwem,
  [Zabezpieczenia Windows Forms](https://msdn.microsoft.com/library/932d438a-5285-46d8-a958-8c93d0ad6cae) Zawiera omówienie implementacji zabezpieczeń Windows Forms.
 
 ## <a name="see-also"></a>Zobacz też
- [Security](../ide/security-in-visual-studio.md)
+ [Bezpieczeństwo](../ide/security-in-visual-studio.md)

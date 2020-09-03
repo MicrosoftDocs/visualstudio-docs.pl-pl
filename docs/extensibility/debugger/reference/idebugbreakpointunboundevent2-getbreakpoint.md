@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointUnboundEvent2::GetBreakpoint | Dokumenty firmy Microsoft
+title: 'IDebugBreakpointUnboundEvent2:: getpunkt przerwania | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6db69becfb16ebabbab782485e170bc761fd4577
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734733"
 ---
 # <a name="idebugbreakpointunboundevent2getbreakpoint"></a>IDebugBreakpointUnboundEvent2::GetBreakpoint
-Pobiera punkt przerwania, który stał się niezwiązany.
+Pobiera punkt przerwania, który stał się niepowiązany.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,13 +41,13 @@ int GetBreakpoint(
 
 ## <a name="parameters"></a>Parametry
 `ppBP`\
-[na zewnątrz] Zwraca obiekt [IDebugBoundBreakpoint2,](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) który reprezentuje punkt przerwania, który stał się niezwiązany.
+określoną Zwraca obiekt [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) , który reprezentuje punkt przerwania, który stał się niepowiązany.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CBreakpointUnboundDebugEventBase,** który udostępnia interfejs [IDebugBreakpointUnboundEvent2.](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CBreakpointUnboundDebugEventBase** , który uwidacznia Interfejs [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) .
 
 ```cpp
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetBreakpoint(

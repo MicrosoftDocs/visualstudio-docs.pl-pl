@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::GetDocumentContext | Dokumenty firmy Microsoft
+title: 'IDebugCanStopEvent2:: GetDocumentContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e3dc5e4bd7144db7fa94425371488bfd8c0e57ed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734557"
 ---
 # <a name="idebugcanstopevent2getdocumentcontext"></a>IDebugCanStopEvent2::GetDocumentContext
-Pobiera kontekst dokumentu, który opisuje lokalizację tego zdarzenia.
+Pobiera kontekst dokumentu opisujący lokalizację tego zdarzenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,15 +41,15 @@ int GetDocumentContext ( 
 
 ## <a name="parameters"></a>Parametry
 `ppDocCxt`\
-[na zewnątrz] Zwraca interfejs [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) reprezentujący pozycję w dokumencie pliku źródłowego odpowiadającą bieżącej lokalizacji kodu.
+określoną Zwraca interfejs [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) , który reprezentuje pozycję w dokumencie pliku źródłowego odpowiadającą bieżącej lokalizacji kodu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ogólnie rzecz biorąc kontekst dokumentu można traktować jako pozycję w pliku źródłowym.
+ Ogólnie rzecz biorąc, kontekst dokumentu może być uważany za pozycję w pliku źródłowym.
 
- Aby uzyskać kontekst kodu, który jest zorientowany na instrukcje kodu, wywołać [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md) metody.
+ Aby uzyskać kontekst kodu, który jest ukierunkowany na instrukcje kodu, wywołaj metodę [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md) .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)

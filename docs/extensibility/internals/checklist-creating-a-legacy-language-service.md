@@ -1,5 +1,5 @@
 ---
-title: 'Lista kontrolna: Tworzenie usługi języka starszego | Dokumenty firmy Microsoft'
+title: 'Lista kontrolna: Tworzenie starszej wersji usługi językowej | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,117 +12,117 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 11785dab63cbb6a95ab2d34c5edbfb4525ebf34c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709786"
 ---
-# <a name="checklist-create-a-legacy-language-service"></a>Lista kontrolna: tworzenie starszej usługi językowej
-Na poniższej liście kontrolnej podsumowano podstawowe kroki, które należy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wykonać, aby utworzyć usługę językową dla edytora podstawowego. Aby zintegrować usługę [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]języka z programem , należy utworzyć oceniającego wyrażenie debugowania. Aby uzyskać więcej informacji, zobacz [Pisanie ewaluatora wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) w [rozciągliwości debugera programu Visual Studio.](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+# <a name="checklist-create-a-legacy-language-service"></a>Lista kontrolna: Tworzenie starszej wersji usługi językowej
+Poniższa lista kontrolna zawiera podsumowanie podstawowych kroków, które należy wykonać w celu utworzenia usługi językowej dla [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] edytora podstawowego. Aby zintegrować usługę języka z usługą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , musisz utworzyć ewaluatora wyrażeń debugowania. Aby uzyskać więcej informacji, zobacz [pisanie ewaluatora wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) w [rozszerzalności debugera Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
 
-## <a name="steps-to-create-a-language-service"></a>Kroki tworzenia usługi językowej
+## <a name="steps-to-create-a-language-service"></a>Procedura tworzenia usługi języka
 
 1. Zaimplementuj interfejs <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>.
 
-    - W vspackage zaimplementuj <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfejs, aby zapewnić usługę języka.
+    - W pakietu VSPackage Zaimplementuj interfejs w <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> celu zapewnienia usługi językowej.
 
-    - Udostępnij usługę języka zintegrowanemu środowisku programistycznemu (IDE) w implementacji. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
+    - Udostępnienie usługi językowej dla zintegrowanego środowiska programistycznego (IDE) w <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementacji.
 
-2. Zaimplementuj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfejs w klasie usługi języka głównego.
+2. Zaimplementuj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfejs w klasie głównej usługi językowej.
 
-     Interfejs <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> jest punktem wyjścia interakcji między edytorem podstawowym a usługą językową.
+     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>Interfejs jest punktem początkowym interakcji między edytorem podstawowym a usługą języka.
 
 ### <a name="optional-features"></a>Funkcje opcjonalne
  Następujące funkcje są opcjonalne i mogą być implementowane w dowolnej kolejności. Te funkcje zwiększają funkcjonalność usługi językowej.
 
 - Kolorowanie składni
 
-  Zaimplementuj interfejs <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>. Implementacja tego interfejsu powinna informacje analizatora, aby zwrócić odpowiednie informacje o kolorze.
+  Zaimplementuj interfejs <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>. Twoja implementacja tego interfejsu powinna mieć informacje o analizatorze, aby zwracały odpowiednie informacje o kolorach.
 
-  Metoda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> zwraca <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interfejs. Oddzielne wystąpienie colorizer jest tworzony dla każdego buforu tekstu, więc należy zaimplementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interfejs oddzielnie. Aby uzyskać więcej informacji, zobacz [Kolorowanie składni w starszej usłudze językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).
+  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>Metoda zwraca <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interfejs. Dla każdego buforu tekstu tworzone jest oddzielne wystąpienie kolorowania, dlatego należy zaimplementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interfejs osobno. Aby uzyskać więcej informacji, zobacz [kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).
 
-- Okno Kod
+- Okno kodu
 
-  Zaimplementuj interfejs, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> aby umożliwić usługi języka, aby otrzymywać powiadomienia o utworzeniu nowego okna kodu.
+  Zaimplementuj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interfejs, aby umożliwić usłudze języka otrzymywanie powiadomień o utworzeniu nowego okna kodu.
 
-  Metoda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> zwraca <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interfejs. Usługa języka może następnie dodać specjalny interfejs <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A>użytkownika do okna kodu w pliku . Usługa językowa może również wykonywać wszelkie specjalne przetwarzanie, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.OnNewView%2A>takie jak dodawanie filtru widoku tekstu w pliku .
+  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A>Metoda zwraca <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interfejs. Usługa języka może następnie dodać specjalny interfejs użytkownika do okna kod w <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> . Usługa języka może również wykonywać wszelkie specjalne przetwarzanie, takie jak Dodawanie filtru widoku tekstu w <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.OnNewView%2A> .
 
 - Filtr widoku tekstu
 
-  Aby zapewnić zakończenie instrukcji IntelliSense w usłudze języka, należy przechwycić niektóre polecenia, które w przeciwnym razie obsłużyłby widok tekstu. Aby przechwycić te polecenia, wykonaj następujące czynności:
+  Aby zapewnić uzupełnianie instrukcji IntelliSense w usłudze językowej, należy przechwycić niektóre polecenia, które w przeciwnym razie mógłby obsłużyć widok tekstu. Aby przechwycić te polecenia, wykonaj następujące czynności:
 
-  - Zaimplementuj <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> do udziału w łańcuchu poleceń i obsługi poleceń edytora.
+  - Zaimplementuj <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> , aby wziąć udział w łańcuchu poleceń i obsłużyć polecenia edytora.
 
-  - Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> metodę i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> przekaż w implementacji.
+  - Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> metodę i przekaż swoją <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> implementację.
 
-  - Wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.RemoveCommandFilter%2A> metody po odłączeniu od widoku, tak aby te polecenia nie są już przekazywane do Ciebie.
+  - Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.RemoveCommandFilter%2A> metodę po odłączeniu się do widoku, aby te polecenia nie były już przesyłane do Ciebie.
 
-  Polecenia, które muszą być obsługiwane, zależą od świadczonych usług. Aby uzyskać więcej informacji, zobacz [Ważne polecenia dotyczące filtrów usług językowych](../../extensibility/internals/important-commands-for-language-service-filters.md).
+  Polecenia, które muszą być obsługiwane, zależą od usług, które są dostarczane. Aby uzyskać więcej informacji, zobacz [Ważne polecenia dla filtrów usługi językowej](../../extensibility/internals/important-commands-for-language-service-filters.md).
 
   > [!NOTE]
-  > Interfejs <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> musi być zaimplementowany <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> na tym samym obiekcie co interfejs.
+  > <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>Interfejs musi być zaimplementowany w tym samym obiekcie co <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs.
 
-- Uzupełnianie oświadczenia
+- Uzupełnianie instrukcji
 
   Zaimplementuj interfejs <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>.
 
-  Obsługa polecenia uzupełniania instrukcji <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>(czyli ) <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> wywołaj metodę <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> w interfejsie, przekazując interfejs. Aby uzyskać więcej informacji, zobacz [Uzupełnianie instrukcji w starszej usłudze języka](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).
+  Obsługuj polecenie uzupełniania instrukcji (czyli <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> ) i Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metodę w <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfejsie, przekazując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> interfejs. Aby uzyskać więcej informacji, zobacz [uzupełnianie instrukcji w starszej wersji usługi językowej](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).
 
 - Porady dotyczące metod
 
-  Zaimplementuj interfejs, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> aby zapewnić dane dla okna końcówki metody.
+  Zaimplementuj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> interfejs, aby zapewnić dane dla okna etykietki metody.
 
-  Zainstaluj filtr widoku tekstu, aby odpowiednio obsługiwać polecenia, aby wiedzieć, kiedy wyświetlić okno poradki o danych metody. Aby uzyskać więcej informacji, zobacz [Informacje o parametrach w starszej usłudze języka](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).
+  Zainstaluj filtr widoku tekstu, aby odpowiednio obsługiwać polecenia, więc wiesz, kiedy pokazać okno etykietki danych metody. Aby uzyskać więcej informacji, zobacz [Informacje o parametrach w starszej wersji usługi językowej](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).
 
 - Znaczniki błędów
 
   Zaimplementuj interfejs <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>.
 
-  Utwórz obiekty znacznika <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> błędu, które <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> implementują <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejs i wywołają metodę, przekazując interfejs obiektu znacznika błędu.
+  Utwórz obiekty znacznika błędu implementujące <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejs i Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metodę, przekazując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejs obiektu znacznika błędu.
 
-  Zazwyczaj każdy znacznik błędu zarządza elementem w oknie listy zadań.
+  Zwykle każdy znacznik błędu zarządza elementem w oknie Lista zadań.
 
 - Elementy listy zadań
 
-  Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem> klasę elementu zadania zapewniającą interfejs.
+  Zaimplementuj klasę elementu zadania dostarczającą <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem> interfejs.
 
-  Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider> klasę dostawcy <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2> zadań zapewniającą interfejs i interfejs.
+  Zaimplementuj klasę dostawcy zadań dostarczającą <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider> interfejs i <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2> interfejs.
 
-  Zaimplementuj klasę modułu wyliczania zadań zapewniającą <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumTaskItems> interfejs.
+  Zaimplementuj klasę modułu wyliczającego zadania dostarczającą <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumTaskItems> interfejs.
 
-  Zarejestruj dostawcę zadań przy za <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RegisterTaskProvider%2A> pomocą metody listy zadań.
+  Zarejestruj dostawcę zadań przy użyciu metody listy zadań <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RegisterTaskProvider%2A> .
 
-  Uzyskaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> interfejs, dzwoniąc do dostawcy usług językowych z <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList>identyfikatorem GUID usługi .
+  Uzyskaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> interfejs, wywołując dostawcę usług w usłudze języka z identyfikatorem GUID usługi <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> .
 
-  Utwórz obiekty elementu <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RefreshTasks%2A> zadania i <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> wywołaj metodę w interfejsie, gdy istnieją nowe lub zaktualizowane zadania.
+  Utwórz obiekty elementów zadania i Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RefreshTasks%2A> metodę w <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> interfejsie, jeśli są nowe lub zaktualizowane zadania.
 
-- Elementów zadania komentarz
+- Komentarze elementów zadania
 
-  Użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo> interfejsu i <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> interfejsu, aby uzyskać tokeny zadania komentarza.
+  Użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo> interfejsu i interfejsu, <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> Aby uzyskać tokeny zadania komentarza.
 
   Uzyskaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo> interfejs z <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> usługi.
 
-  Uzyskaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> interfejs z <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo.EnumTokens%2A> metody.
+  Uzyskaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> interfejs przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo.EnumTokens%2A> metody.
 
-  Zaimplementuj interfejs, <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskListEvents> aby nasłuchiwać zmian na liście tokenów.
+  Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskListEvents> interfejs, aby nasłuchiwać zmian na liście tokenów.
 
 - Tworzenie konspektu
 
-  Istnieje kilka opcji obsługi nakreślenia. Na przykład można obsługiwać **zwijanie do definicji** polecenia, zapewnić regiony konspektu kontrolowane przez edytora lub obsługiwać regiony kontrolowane przez klienta. Aby uzyskać więcej informacji, zobacz [Jak: Zapewnienie rozszerzonej obsługi nakreślania w starszej usłudze językowej](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).
+  Istnieje kilka opcji obsługi konspektu. Można na przykład obsłużyć polecenie **Zwiń do definicji** , udostępnić regiony konspektu z kontrolą edytora lub obsługiwać regiony kontrolowane przez klienta. Aby uzyskać więcej informacji, zobacz [How to: zapewnianie rozszerzonej obsługi konspektu w starszej wersji usługi językowej](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).
 
 - Rejestracja usługi językowej
 
-  Aby uzyskać więcej informacji na temat rejestrowania usługi językowej, zobacz [Rejestrowanie starszej usługi językowej](../../extensibility/internals/registering-a-legacy-language-service2.md) i [Zarządzanie pakietami VSPackages](../../extensibility/managing-vspackages.md).
+  Aby uzyskać więcej informacji na temat rejestrowania usługi językowej, zobacz [Rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service2.md) i [Zarządzanie pakietów VSPackage](../../extensibility/managing-vspackages.md).
 
 - Pomoc kontekstowa
 
-  Podaj kontekst edytorowi w jeden z następujących sposobów:
+  Udostępnij kontekst dla edytora w jeden z następujących sposobów:
 
-  - Podaj kontekst znaczników tekstu, implementując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interfejs.
+  - Podaj kontekst dla znaczników tekstowych przez implementację <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interfejsu.
 
-  - Podaj cały kontekst <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> użytkownika, implementując interfejs.
+  - Podaj wszystkie konteksty użytkownika przez implementację <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> interfejsu.
 
 ## <a name="see-also"></a>Zobacz też
-- [Tworzenie starszej usługi językowej](../../extensibility/internals/developing-a-legacy-language-service.md)
-- [Napisz ewaluatora wyrażenia CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+- [Opracowywanie starszej wersji usługi językowej](../../extensibility/internals/developing-a-legacy-language-service.md)
+- [Napisz ewaluatora wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2bb65cc70bfec5e8eafc4a823d24f609166d4327
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85771052"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Utwórz i skonfiguruj elementy członkowskie typu w Projektant klas
@@ -317,7 +317,7 @@ Nie można edytować metod częściowych przy użyciu Projektant klas lub okna *
 
 Nie można edytować natywnego kodu C++ przy użyciu Projektant klas lub okna **Szczegóły klasy** ; Aby edytować natywny kod C++, należy użyć edytora kodu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wyświetlanie typów i relacji](designing-and-viewing-classes-and-types.md)
 - [Refaktoryzacja klas i typów](refactoring-classes-and-types.md)

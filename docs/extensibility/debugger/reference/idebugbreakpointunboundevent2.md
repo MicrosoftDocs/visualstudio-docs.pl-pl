@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointUnboundEvent2 | Dokumenty firmy Microsoft
+title: IDebugBreakpointUnboundEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1e1d15936316d08a712e3d6f3fdc7a3a73be613d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734625"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
-Ten interfejs informuje menedżera debugowania sesji (SDM), że powiązany punkt przerwania został niezwiązany z załadowanym programem.
+Ten interfejs informuje Menedżera debugowania sesji (SDM) o anulowaniu powiązania przerwania z załadowanego programu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,26 +29,26 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Aparat debugowania (DE) implementuje ten interfejs jako część jego obsługi punktów przerwania. Interfejs [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musi być zaimplementowany na tym samym obiekcie co ten `IDebugEvent2` interfejs (SDM używa [QueryInterface,](/cpp/atl/queryinterface) aby uzyskać dostęp do interfejsu).
+ Aparat debugowania (DE) implementuje ten interfejs w ramach obsługi punktów przerwania. Interfejs [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musi być zaimplementowany w tym samym obiekcie co ten interfejs (model SDM używa [metody QueryInterface](/cpp/atl/queryinterface) do uzyskiwania dostępu do `IDebugEvent2` interfejsu).
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- DE tworzy i wysyła ten obiekt zdarzenia, gdy powiązany punkt przerwania został niezwiązany. Zdarzenie jest wysyłane przy użyciu funkcji wywołania zwrotnego [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) dostarczonej przez SDM po podłączeniu do programu, który jest debugowany.
+ Element DE tworzy i wysyła ten obiekt Event, gdy powiązany punkt przerwania został anulowany. Zdarzenie jest wysyłane przy użyciu funkcji wywołania zwrotnego [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) dostarczonej przez model SDM, gdy jest on dołączony do debugowanego programu.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- W poniższej tabeli `IDebugBreakpointUnboundEvent2`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ W poniższej tabeli przedstawiono metody `IDebugBreakpointUnboundEvent2` .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Pobiera punkt przerwania, który stał się niezwiązany.|
-|[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Pobiera powód punkt przerwania był niezwiązany.|
+|[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Pobiera punkt przerwania, który stał się niepowiązany.|
+|[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Pobiera przyczynę powiązania punktu przerwania.|
 
 ## <a name="remarks"></a>Uwagi
- Gdy biblioteka DLL aparatu debugowania lub klasy zwalnia, wszystkie punkty przerwania, które były powiązane z kodem w tym module musi być niezwiązany z programem debugowane. Jest `IDebugBreakpointUnboundEvent2` wysyłany dla każdego niezwiązanego punktu przerwania.
+ Podczas zwalniania biblioteki DLL lub klasy aparatu debugowania wszystkie punkty przerwania, które zostały powiązane z kodem w tym module, muszą być anulowane względem debugowanego programu. `IDebugBreakpointUnboundEvent2`Jest wysyłany dla każdego niepowiązanego punktu przerwania.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

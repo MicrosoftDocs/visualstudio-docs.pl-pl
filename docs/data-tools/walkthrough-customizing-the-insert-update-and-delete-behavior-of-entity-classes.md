@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 105519153e92e3944971f60ae2ff6151fa6a3fdf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585954"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Przewodnik: Dostosowywanie zachowania INSERT, Update i DELETE klas jednostek
 
 [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) oferują wizualną powierzchnię projektową do tworzenia i edytowania klas LINQ to SQL (klasy jednostek), które są oparte na obiektach w bazie danych. Korzystając z [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), można używać technologii LINQ do uzyskiwania dostępu do baz danych SQL. Aby uzyskać więcej informacji, zobacz [LINQ (zapytanie zintegrowane z językiem)](/dotnet/csharp/linq/).
 
-Domyślnie logika do wykonywania aktualizacji jest zapewniana przez środowisko uruchomieniowe LINQ to SQL. Środowisko uruchomieniowe tworzy domyślne instrukcje `Insert`, `Update`i `Delete` w oparciu o schemat tabeli (definicje kolumn i informacje o kluczu podstawowym). Jeśli nie chcesz używać zachowania domyślnego, możesz skonfigurować zachowanie aktualizacji i wyznaczyć określone procedury składowane do wykonywania niezbędnych operacji wstawiania, aktualizacji i usuwania wymaganych do pracy z danymi w bazie danych. Można to również zrobić, gdy domyślne zachowanie nie jest generowane, na przykład gdy klasy jednostek mapują się na widoki. Ponadto można zastąpić domyślne zachowanie aktualizacji, gdy baza danych wymaga dostępu do tabeli za pomocą procedur składowanych. Aby uzyskać więcej informacji, zobacz [Dostosowywanie operacji za pomocą procedur składowanych](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
+Domyślnie logika do wykonywania aktualizacji jest zapewniana przez środowisko uruchomieniowe LINQ to SQL. Środowisko uruchomieniowe tworzy domyślne `Insert` , `Update` i `Delete` instrukcje na podstawie schematu tabeli (definicje kolumn i informacje o kluczu podstawowym). Jeśli nie chcesz używać zachowania domyślnego, możesz skonfigurować zachowanie aktualizacji i wyznaczyć określone procedury składowane do wykonywania niezbędnych operacji wstawiania, aktualizacji i usuwania wymaganych do pracy z danymi w bazie danych. Można to również zrobić, gdy domyślne zachowanie nie jest generowane, na przykład gdy klasy jednostek mapują się na widoki. Ponadto można zastąpić domyślne zachowanie aktualizacji, gdy baza danych wymaga dostępu do tabeli za pomocą procedur składowanych. Aby uzyskać więcej informacji, zobacz [Dostosowywanie operacji za pomocą procedur składowanych](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
 
 > [!NOTE]
 > Ten Instruktaż wymaga dostępności procedur składowanych **InsertCustomer**, **UpdateCustomer**i **DeleteCustomer** dla bazy danych Northwind.
@@ -33,17 +33,17 @@ W tym instruktażu dowiesz się, jak wykonywać następujące zadania:
 
 - Utwórz nową aplikację Windows Forms i Dodaj do niej plik LINQ to SQL.
 
-- Utwórz klasę jednostki, która jest mapowana na tabelę `Customers` Northwind.
+- Utwórz klasę jednostki, która jest mapowana na tabelę Northwind `Customers` .
 
-- Utwórz źródło danych obiektu, które odwołuje się do klasy `Customer` LINQ to SQL.
+- Utwórz źródło danych obiektu, które odwołuje się do `Customer` klasy LINQ to SQL.
 
-- Utwórz formularz systemu Windows, który zawiera <xref:System.Windows.Forms.DataGridView>, który jest powiązany z klasą `Customer`.
+- Utwórz formularz systemu Windows, który zawiera element <xref:System.Windows.Forms.DataGridView> , który jest powiązany z `Customer` klasą.
 
 - Implementowanie funkcji Save dla formularza.
 
-- Utwórz metody <xref:System.Data.Linq.DataContext>, dodając procedury składowane do **projektanta O/R**.
+- Utwórz <xref:System.Data.Linq.DataContext> metody, dodając procedury składowane do **projektanta O/R**.
 
-- Skonfiguruj klasę `Customer`, aby używać procedur składowanych do wykonywania operacji wstawiania, aktualizacji i usuwania.
+- Skonfiguruj `Customer` klasę, aby używać procedur składowanych do wykonywania operacji wstawiania, aktualizacji i usuwania.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -59,7 +59,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
     2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
+    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
 
        Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
@@ -71,9 +71,9 @@ Ponieważ pracujesz z klasami LINQ to SQL i wyświetlasz dane w formularzu syste
 
 ### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>Aby utworzyć nowy projekt aplikacji Windows Forms zawierający klasy LINQ to SQL
 
-1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy** **projekt** > .
+1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy**  >  **projekt**.
 
-2. Rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **pulpit systemu Windows**.
+2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **Windows Desktop**.
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
@@ -85,7 +85,7 @@ Ponieważ pracujesz z klasami LINQ to SQL i wyświetlasz dane w formularzu syste
 
 5. Kliknij szablon **LINQ to SQL klas** i wpisz **Northwind. dbml** w polu **Nazwa** .
 
-6. Kliknij przycisk **Dodaj**.
+6. Kliknij pozycję **Dodaj**.
 
      Do projektu zostanie dodany pusty plik klas LINQ to SQL (**Northwind. dbml**) i zostanie otwarty **Projektant o/R** .
 
@@ -133,7 +133,7 @@ Utwórz formanty, które są powiązane z klasami jednostek, przeciągając elem
 
 3. Otwórz **formularz Form1** w edytorze kodu.
 
-4. Dodaj następujący kod do formularza, który jest globalny do formularza, poza dowolną określoną metodą, ale wewnątrz klasy `Form1`:
+4. Dodaj następujący kod do formularza, który jest globalny do formularza, poza dowolną określoną metodą, ale wewnątrz `Form1` klasy:
 
     ```vb
     Private NorthwindDataContext1 As New NorthwindDataContext
@@ -144,7 +144,7 @@ Utwórz formanty, które są powiązane z klasami jednostek, przeciągając elem
         = new NorthwindDataContext();
     ```
 
-5. Utwórz procedurę obsługi zdarzeń dla zdarzenia `Form_Load` i Dodaj następujący kod do programu obsługi:
+5. Utwórz procedurę obsługi zdarzeń dla `Form_Load` zdarzenia i Dodaj następujący kod do programu obsługi:
 
     ```vb
     CustomerBindingSource.DataSource = NorthwindDataContext1.Customers
@@ -189,15 +189,15 @@ Domyślnie przycisk Zapisz nie jest włączony i funkcja zapisywania nie jest za
 
 3. Przeciągnij wszystkie trzy procedury składowane na **projektanta o/R**.
 
-     Procedury składowane są dodawane do okienka metody jako metody <xref:System.Data.Linq.DataContext>. Aby uzyskać więcej informacji, zobacz [metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
+     Procedury składowane są dodawane do okienka metody jako <xref:System.Data.Linq.DataContext> metody. Aby uzyskać więcej informacji, zobacz [metody DataContext (Projektant O/R)](../data-tools/datacontext-methods-o-r-designer.md).
 
 4. Wybierz klasę jednostki **klienta** w **projektancie o/R**.
 
 5. W oknie **Właściwości** wybierz właściwość **Wstaw** .
 
-6. Kliknij przycisk wielokropka ( **...** ) obok pozycji **Użyj środowiska uruchomieniowego** , aby otworzyć okno dialogowe **Konfigurowanie zachowania** .
+6. Kliknij przycisk wielokropka (**...**) obok pozycji **Użyj środowiska uruchomieniowego** , aby otworzyć okno dialogowe **Konfigurowanie zachowania** .
 
-7. Wybierz **dostosować**.
+7. Wybierz pozycję **Dostosuj**.
 
 8. Wybierz metodę **InsertCustomers** na liście **Dostosuj** .
 
@@ -208,7 +208,7 @@ Domyślnie przycisk Zapisz nie jest włączony i funkcja zapisywania nie jest za
 
 10. Na liście **zachowanie** wybierz pozycję **Aktualizuj** .
 
-11. Wybierz **dostosować**.
+11. Wybierz pozycję **Dostosuj**.
 
 12. Wybierz metodę **UpdateCustomers** na liście **Dostosuj** .
 
@@ -217,13 +217,13 @@ Domyślnie przycisk Zapisz nie jest włączony i funkcja zapisywania nie jest za
 13. Mapuj argument **Original_CustomerID** metody na właściwość klasy **CustomerID (oryginalna)** .
 
     > [!NOTE]
-    > Domyślnie argumenty metody są mapowane na właściwości klasy, gdy nazwy są zgodne. Jeśli nazwy właściwości są zmieniane i nie są już zgodne między tabelą a klasą jednostki, może być konieczne wybranie równoważnej właściwości klasy do zamapowania, jeśli **Projektant o/R** nie może określić poprawnego mapowania. Ponadto jeśli argumenty metody nie mają prawidłowych właściwości klasy do zamapowania, można ustawić wartość **właściwości klasy** na **(brak)** .
+    > Domyślnie argumenty metody są mapowane na właściwości klasy, gdy nazwy są zgodne. Jeśli nazwy właściwości są zmieniane i nie są już zgodne między tabelą a klasą jednostki, może być konieczne wybranie równoważnej właściwości klasy do zamapowania, jeśli **Projektant o/R** nie może określić poprawnego mapowania. Ponadto jeśli argumenty metody nie mają prawidłowych właściwości klasy do zamapowania, można ustawić wartość **właściwości klasy** na **(brak)**.
 
 14. Kliknij przycisk **Zastosuj** , aby zapisać konfigurację wybranej klasy i zachowania.
 
 15. Na liście **zachowanie** wybierz pozycję **Usuń** .
 
-16. Wybierz **dostosować**.
+16. Wybierz pozycję **Dostosuj**.
 
 17. Wybierz metodę **DeleteCustomers** na liście **Dostosuj** .
 
@@ -232,7 +232,7 @@ Domyślnie przycisk Zapisz nie jest włączony i funkcja zapisywania nie jest za
 19. Kliknij przycisk **OK**.
 
 > [!NOTE]
-> Chociaż nie jest to problem z tym konkretnym instruktażem, warto zauważyć, że LINQ to SQL automatycznie obsługuje wartości generowane przez bazę danych dla tożsamości (Automatyczne zwiększenie), ROWGUIDCOL (GUID wygenerowanej przez bazę danych) i kolumn sygnatur czasowych podczas wstawiania i dostępności. Wartości wygenerowane przez bazę danych w innych typach kolumn nieoczekiwanie spowodują wartość null. Aby zwrócić wartości generowane przez bazę danych, należy ręcznie ustawić <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> na `true` i <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> jedną z następujących opcji: [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)lub [AutoSync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
+> Chociaż nie jest to problem związany z tym konkretnym instruktażem, warto zauważyć, że LINQ to SQL automatycznie obsługuje wartości generowane przez bazę danych dla tożsamości (Automatyczne zwiększenie), ROWGUIDCOL (GUID wygenerowanej przez bazę danych) i kolumn sygnatur czasowych podczas operacji INSERT i Update. Wartości wygenerowane przez bazę danych w innych typach kolumn nieoczekiwanie spowodują wartość null. Aby zwrócić wartości generowane przez bazę danych, należy ręcznie ustawić wartość <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> `true` i <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> na jedną z następujących opcji: [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)lub [AutoSync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
 ## <a name="test-the-application"></a>Testowanie aplikacji
 
@@ -267,9 +267,9 @@ W zależności od wymagań aplikacji istnieje kilka kroków, które można wykon
 
 - Zaimplementuj sprawdzanie współbieżności podczas aktualizacji. Aby uzyskać więcej informacji, zobacz [optymistyczne współbieżność: Omówienie](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).
 
-- Dodaj zapytania LINQ do filtrowania danych. Aby uzyskać więcej informacji, zobacz [wprowadzenie do zapytańC#LINQ ()](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
+- Dodaj zapytania LINQ do filtrowania danych. Aby uzyskać więcej informacji, zobacz [wprowadzenie do zapytań LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Metody DataContext](../data-tools/datacontext-methods-o-r-designer.md)

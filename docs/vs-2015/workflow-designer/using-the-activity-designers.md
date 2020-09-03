@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1595be559f28868d0d749f6b163a63d98a9a6e45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670140"
 ---
 # <a name="using-the-activity-designers"></a>Używanie projektantów działań
-@No__t_0 obejmuje wiele działań dostarczonych przez system, których można używać podczas konstruowania działań i przepływów pracy. Ta sekcja zawiera opis kategorii działań dostarczonych przez system i dostępnych dla nich projektantów. Tematy dotyczące poszczególnych działań i ich odpowiednich projektantów w ramach każdej z tych kategorii opisują działania tych działań i zapewniają wskazówki dotyczące sposobu ich używania.
+[!INCLUDE[wfd1](../includes/wfd1-md.md)]Zawiera kilka działań dostarczonych przez system, których można użyć podczas konstruowania działań i przepływów pracy. Ta sekcja zawiera opis kategorii działań dostarczonych przez system i dostępnych dla nich projektantów. Tematy dotyczące poszczególnych działań i ich odpowiednich projektantów w ramach każdej z tych kategorii opisują działania tych działań i zapewniają wskazówki dotyczące sposobu ich używania.
 
 ## <a name="in-this-section"></a>W tej sekcji
  [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md) Projektanci działań używający do sterowania przepływem w przepływie pracy
@@ -41,9 +41,9 @@ ms.locfileid: "72670140"
 
  [Obsługa błędów](../workflow-designer/error-handling-activity-designers.md) Projektanci działań używający do zarządzania działaniami obsługi błędów.
 
- [Migracja](../workflow-designer/migration-activity-designers.md) Projektanci działań używający do współpracy między [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] / [!INCLUDE[netfx35_short](../includes/netfx35-short-md.md)] i przepływami pracy [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)].
+ [Migracja](../workflow-designer/migration-activity-designers.md) Projektanci działań używający do współpracy między [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] / [!INCLUDE[netfx35_short](../includes/netfx35-short-md.md)] i [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] przepływami pracy.
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
  <xref:System.Activities.Presentation.Toolbox.ToolboxCategory>
 
 ## <a name="related-sections"></a>Sekcje pokrewne

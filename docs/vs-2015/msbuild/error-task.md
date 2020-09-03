@@ -1,5 +1,5 @@
 ---
-title: Error — zadanie | Dokumentacja firmy Microsoft
+title: Błąd — zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,36 +20,36 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b220d12b872a81cba5f46bd14fdebafaa58cf4a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201812"
 ---
 # <a name="error-task"></a>Error — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zatrzymuje kompilację i rejestruje błąd oparte na ocenianą instrukcji warunkowej.  
+Kończy kompilację i rejestruje błąd na podstawie ocenianej instrukcji warunkowej.  
   
 ## <a name="parameters"></a>Parametry  
- W następujących tabeli przedstawiono parametry `Error` zadania.  
+ W tabeli następujące kwestie opisano parametry `Error` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`Code`|Opcjonalnie `String` parametru.<br /><br /> Kod błędu do skojarzenia z powodu błędu.|  
-|`File`|Opcjonalnie `String` parametru.<br /><br /> Nazwa pliku który zawiera błąd. Jeśli nazwa pliku nie zostanie podany, plik zawierający błąd zadania będą używane.|  
-|`HelpKeyword`|Opcjonalnie `String` parametru.<br /><br /> Słowo kluczowe pomocy do skojarzenia z powodu błędu.|  
-|`Text`|Opcjonalnie `String` parametru.<br /><br /> Tekst błędu, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] rejestruje Jeśli `Condition` daje w wyniku parametru `true`.|  
+|`Code`|Opcjonalny `String` parametr.<br /><br /> Kod błędu, który ma zostać skojarzony z błędem.|  
+|`File`|Opcjonalny `String` parametr.<br /><br /> Nazwa pliku, który zawiera błąd. Jeśli nie podano nazwy pliku, zostanie użyty plik zawierający zadanie błędu.|  
+|`HelpKeyword`|Opcjonalny `String` parametr.<br /><br /> Słowo kluczowe pomocy do skojarzenia z błędem.|  
+|`Text`|Opcjonalny `String` parametr.<br /><br /> Tekst błędu, który jest [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zarejestrowana, jeśli `Condition` parametr ma wartość `true` .|  
   
 ## <a name="remarks"></a>Uwagi  
- `Error` Zadanie pozwala [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] projektów wystawiać rejestratorów tekst błędu i zatrzymać wykonywanie kompilacji.  
+ `Error`Zadanie umożliwia [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] projektom wystawianie tekstu błędów w celu rejestrowania i zatrzymania wykonywania kompilacji.  
   
- Jeśli `Condition` daje w wyniku parametru `true`, kompilacja zostanie zatrzymana i zostanie zarejestrowany błąd. Jeśli `Condition` parametr nie istnieje, błąd jest rejestrowane i zatrzymuje wykonywanie kompilacji. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Jeśli `Condition` parametr ma wartość `true` , kompilacja zostaje zatrzymana i zostanie zarejestrowany błąd. Jeśli `Condition` parametr nie istnieje, ten błąd jest rejestrowany i wykonywanie kompilacji zostanie zatrzymane. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu sprawdza, czy wszystkie wymagane właściwości są ustawione. Jeśli nie są ustawione, projekt zgłasza zdarzenie błędu i rejestruje wartość `Text` parametru `Error` zadania.  
+ Poniższy przykład kodu sprawdza, czy są ustawione wszystkie wymagane właściwości. Jeśli nie są ustawione, projekt zgłasza zdarzenie błędu i rejestruje wartość `Text` parametru `Error` zadania.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

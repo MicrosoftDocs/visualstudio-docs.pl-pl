@@ -17,16 +17,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35c258a018bec8bd38f8b43690c18b37ee9d6c39
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851933"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>Błąd: upewnij się, że DNS jest prawidłowo skonfigurowany na komputerze docelowym
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas próby przeprowadzać debugowanie zdalne, może pojawić się następujący komunikat o błędzie:  
+Podczas próby debugowania zdalnego może zostać wyświetlony następujący komunikat o błędzie:  
   
 ```  
 Error: The Visual Studio Remote Debugger on the target computer cannot connect back to this computer. Ensure that DNS is correctly configured on the target computer.  

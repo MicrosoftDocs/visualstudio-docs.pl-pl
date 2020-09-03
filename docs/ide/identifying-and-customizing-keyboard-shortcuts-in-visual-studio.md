@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b551e3f980e962733d2797924331e4cd6dbefa5
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770852"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identyfikowanie i Dostosowywanie skrótów klawiaturowych w programie Visual Studio
@@ -147,6 +147,6 @@ Domyślnie skróty są zapisywane w pliku w folderze *%USERPROFILE%\Documents\Vi
 
    ![Importuj tylko dostosowane skróty klawiaturowe](../ide/media/importshortcuts.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Funkcje ułatwień dostępu programu Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

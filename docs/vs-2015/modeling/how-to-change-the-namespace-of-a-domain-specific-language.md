@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8b61b248876f701e9d5286063f28b4f71d73e18b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671720"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Porady: zmienianie przestrzeni nazw języka specyficznego dla domeny
@@ -49,7 +49,7 @@ Można zmienić przestrzeń nazw języka specyficznego dla domeny. Należy wprow
 
 10. Zresetuj wystąpienie eksperymentalne programu Visual Studio.
 
-    1. Usuń **\users \\** _{name}_ **\AppData\Local\Microsoft\VisualStudio \\ \*Exp**
+    1. Usuń **\Users \\ **_{Twoja nazwa}_**\AppData\Local\Microsoft\VisualStudio \\ \* **
 
     2. W menu **Start** systemu Windows wybierz kolejno pozycje **wszystkie programy**, **Microsoft Visual Studio zestaw SDK 2010**, **Narzędzia**i **Zresetuj wystąpienie eksperymentalne**.
 

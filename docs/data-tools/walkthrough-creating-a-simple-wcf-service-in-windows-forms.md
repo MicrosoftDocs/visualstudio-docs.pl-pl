@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: tworzenie prostej usługi WCF w Windows Forms'
+title: 'Przewodnik: tworzenie prostej usługi WCF w aplikacji Windows Forms'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3d3f2e80ff3e2b94c46d1e2658c40bccf2e6c365
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586019"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Przewodnik: tworzenie prostej usługi WCF w Windows Forms
@@ -35,9 +35,9 @@ W tym instruktażu pokazano, jak utworzyć prostą usługę Windows Communicatio
 
 ::: moniker range="vs-2017"
 
-2. W menu **plik** wybierz **Nowy** **projekt**>.
+2. W menu **plik** wybierz pozycję **Nowy** > **projekt**.
 
-3. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual Basic** lub **element wizualny C#**  , a następnie wybierz opcję **WCF**, a następnie pozycję **Biblioteka usług WCF**.
+3. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual Basic** lub **Visual C#** , a następnie wybierz opcję **WCF**, a następnie pozycję **Biblioteka usług WCF**.
 
 4. Kliknij przycisk **OK**, aby utworzyć projekt.
 
@@ -72,12 +72,12 @@ W tym instruktażu pokazano, jak utworzyć prostą usługę Windows Communicatio
    [!code-csharp[WCFWalkthrough#4](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.cs)]
    [!code-vb[WCFWalkthrough#4](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.vb)]
 
-   Zmień typ parametru `value` na ciąg:
+   Zmień typ `value` parametru na ciąg:
 
    [!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.cs)]
    [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.vb)]
 
-   W powyższym kodzie Zwróć uwagę na atrybuty `<OperationContract()>` lub `[OperationContract]`. Te atrybuty są wymagane dla każdej metody uwidocznionej przez usługę.
+   W powyższym kodzie Zwróć uwagę `<OperationContract()>` na `[OperationContract]` atrybuty lub. Te atrybuty są wymagane dla każdej metody uwidocznionej przez usługę.
 
 6. W **Eksplorator rozwiązań**kliknij dwukrotnie pozycję **Service1. vb** lub **Service1.cs**.
 
@@ -88,7 +88,7 @@ W tym instruktażu pokazano, jak utworzyć prostą usługę Windows Communicatio
    [!code-vb[WCFWalkthrough#5](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.vb)]
    [!code-csharp[WCFWalkthrough#5](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.cs)]
 
-   Zmień typ parametru `value` na ciąg:
+   Zmień typ `value` parametru na ciąg:
 
    [!code-csharp[WCFWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.cs)]
    [!code-vb[WCFWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.vb)]
@@ -99,9 +99,9 @@ W tym instruktażu pokazano, jak utworzyć prostą usługę Windows Communicatio
 
 2. W formularzu **klienta testowego WCF** kliknij dwukrotnie metodę **GetData ()** w obszarze **IService1**. Zostanie wyświetlona karta **GetData** .
 
-     ![Metoda GetData&#40; &#41;](../data-tools/media/wcf4.png)
+     ![Metoda GetData&#40;&#41; ](../data-tools/media/wcf4.png)
 
-3. W polu **żądanie** wybierz pole **wartość** i wpisz `Hello`.
+3. W polu **żądanie** wybierz pole **wartość** i wpisz `Hello` .
 
      ![Pole wartości](../data-tools/media/wcf5.png)
 
@@ -117,7 +117,7 @@ W tym instruktażu pokazano, jak utworzyć prostą usługę Windows Communicatio
 
 1. W menu **plik** wskaż polecenie **Dodaj** , a następnie kliknij pozycję **Nowy projekt**.
 
-2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual Basic** lub **wizualizacji C#**  , wybierz pozycję **Windows**, a następnie wybierz pozycję **aplikacja Windows Forms**. Kliknij przycisk **OK** , aby otworzyć projekt.
+2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual Basic** lub **Visual C#** , wybierz pozycję **Windows**, a następnie wybierz pozycję **aplikacja Windows Forms**. Kliknij przycisk **OK** , aby otworzyć projekt.
 
      ![Projekt Windows Forms aplikacji](../data-tools/media/wcf7.png)
 
@@ -135,11 +135,11 @@ W tym instruktażu pokazano, jak utworzyć prostą usługę Windows Communicatio
 
 1. W **Eksplorator rozwiązań**kliknij dwukrotnie przycisk **Form1. vb** lub **Form1.cs** , aby otworzyć Projektant formularzy systemu Windows, jeśli nie jest jeszcze otwarty.
 
-2. Z **przybornika**przeciągnij kontrolkę `TextBox`, kontrolkę `Label` i kontrolkę `Button` na formularz.
+2. Z **przybornika**przeciągnij `TextBox` kontrolkę, `Label` kontrolkę i `Button` kontrolkę na formularz.
 
      ![Dodawanie kontrolek do formularza](../data-tools/media/wcf9.png)
 
-3. Kliknij dwukrotnie `Button`i Dodaj następujący kod do programu obsługi zdarzeń `Click`:
+3. Kliknij dwukrotnie `Button` , a następnie Dodaj następujący kod do `Click` programu obsługi zdarzeń:
 
      [!code-csharp[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_5.cs)]
      [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_5.vb)]
@@ -150,6 +150,6 @@ W tym instruktażu pokazano, jak utworzyć prostą usługę Windows Communicatio
 
      ![Formularz pokazujący wynik](../data-tools/media/wcf10.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
