@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Debugowanie serwerów COM | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: debugowanie serwerów COM | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,29 +24,29 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3552ff1ffb5d6b3e3789aebd3a8903bf82a66b16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205415"
 ---
-# <a name="how-to-debug-com-servers"></a>Instrukcje: Debugowanie serwerów COM
+# <a name="how-to-debug-com-servers"></a>Porady: debugowanie serwerów COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Debugowanie aplikacji serwera COM stanowi unikatowy zestaw problemów, które nie zawsze są łatwo rozwiązać.  
+Debugowanie aplikacji serwera COM stanowi unikatowy zestaw problemów, które nie są zawsze łatwe do rozwiązania.  
   
- Jeśli nie masz, lub nie chcesz użyć informacji debugowania dla aplikacji kontenera, uruchamianie na potrzeby debugowania aplikacji serwera jest procesem trzech krokach.  
+ Jeśli nie masz lub nie chcesz używać informacji debugowania dla aplikacji kontenera, rozpoczęcie debugowania aplikacji serwera jest procesem dwuetapowym.  
   
-### <a name="to-debug-a-server-application-without-container-information"></a>Aby debugować aplikację serwera bez informacji o kontenerze  
+### <a name="to-debug-a-server-application-without-container-information"></a>Aby debugować aplikację serwera bez informacji o kontenerach  
   
-1. Rozpocznij debugowanie serwera jako normalna aplikacja.  
+1. Rozpocznij debugowanie serwera jako zwykłej aplikacji.  
   
-2. Ustaw punkty przerwania, zgodnie z potrzebami.  
+2. Ustaw punkty przerwania zgodnie z potrzebami.  
   
 3. Uruchom aplikację kontenera.  
   
 ## <a name="see-also"></a>Zobacz też  
- [COM i debugowanie ActiveX](../debugger/com-and-activex-debugging.md)   
- [Instrukcje: Debugowanie klientów i serwerów za pomocą debugowania RPC COM](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
+ [Debugowanie modelu COM i ActiveX](../debugger/com-and-activex-debugging.md)   
+ [Instrukcje: debugowanie klientów i serwerów COM za pomocą debugowania RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [Debugowanie kontenera i serwera COM](../debugger/com-server-and-container-debugging.md)   
- [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)
+ [Debugowanie w Visual Studio](../debugger/debugging-in-visual-studio.md)

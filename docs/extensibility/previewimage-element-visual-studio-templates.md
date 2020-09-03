@@ -1,5 +1,5 @@
 ---
-title: Element PreviewImage (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: PreviewImage, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,16 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f20cfe5f3ef35b23a52972ef1e3b7d9d4adc5a39
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702016"
 ---
-# <a name="previewimage-element-visual-studio-templates"></a>Element PreviewImage (szablony programu Visual Studio)
-Określa obraz podglądu obrazu podglądu, który pojawi się w oknie dialogowym **Nowy projekt** lub Dodaj **nowy element.**
+# <a name="previewimage-element-visual-studio-templates"></a>PreviewImage, element (szablony Visual Studio)
+Określa obraz podglądu jako nazwę pliku dla obrazu podglądu, który będzie wyświetlany w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .
 
- \<> \<> \<>>>
+ \<VSTemplate> \<TemplateData>
+ \<PreviewImage>
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,15 +44,15 @@ Określa obraz podglądu obrazu podglądu, który pojawi się w oknie dialogowym
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób jego wyświetlania w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób jego wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst musi być ciągiem reprezentującym nazwę pliku.
+ Tekst musi być ciągiem, który reprezentuje nazwę pliku.
 
 ## <a name="remarks"></a>Uwagi
- `PreviewImage`jest elementem opcjonalnym.
+ `PreviewImage` jest elementem opcjonalnym.
 
 ## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.topic: overview
 ms.openlocfilehash: 50aa6077bafb2d4791555d449f06f6c81595a2f5
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950565"
 ---
 # <a name="managing-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
@@ -21,7 +21,7 @@ Visual Studio dla komputerów Mac zapewnia dwa sposoby dodawania dodatkowych odw
 
 Są to:
 
-* Odwołania
+* Dokumentacja
 * Pakiety NuGet (dodane za pośrednictwem folderu Packages)
 
 Ponadto odwołania sieci Web i natywne odwołania można także dodać do każdego projektu.
@@ -44,7 +44,7 @@ W tym celu kliknij prawym przyciskiem myszy folder **Package** w okienko rozwią
 
 Więcej informacji na temat korzystania z pakietu NuGet znajduje się w temacie [zawierającym pakiet NuGet w](nuget-walkthrough.md) przewodniku po projekcie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zarządzanie odwołaniami (Visual Studio w systemie Windows)](/visualstudio/ide/managing-references-in-a-project)
 - [Dodawanie odwołań przy użyciu narzędzia NuGet w porównaniu z zestawem SDK (Visual Studio w systemie Windows)](/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)

@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerServiceProvider | Dokumenty firmy Microsoft
+title: IEEVisualizerServiceProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 44d8a73589a4248736ac6c4d73814166056a1f90
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717887"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład ewaluatora zarządzanych wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniania wyrażeń jest przestarzały. Aby uzyskać informacje na temat implementowania oceniania wyrażeń CLR, zobacz [oszacowania wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykłady ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Ten interfejs daje dostęp do metody, która może utworzyć usługę wizualizatora, który jest używany do obsługi zadań wizualizatora typu dla IDE.
+ Ten interfejs zapewnia dostęp do metody, która może utworzyć usługę wizualizatora, która jest używana do obsługi zadań wizualizatora typu dla środowiska IDE.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,26 +32,26 @@ IEEVisualizerServiceProvider : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Visual Studio implementuje ten interfejs, aby utworzyć obiekt usługi wizualizatora,`CLSID`który z kolei jest używany do dostarczania identyfikatorów klas (identyfikatorów) wizualizatorów typu do środowiska IDE programu Visual Studio.
+ Program Visual Studio implementuje ten interfejs, aby utworzyć obiekt usługi wizualizatora, który z kolei służy do dostarczania identyfikatorów klasy `CLSID` wizualizatorów do środowiska IDE programu Visual Studio.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Oceniający wyrażenie (EE) wywołuje [GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md) w celu uzyskania tego interfejsu.
+ W celu uzyskania tego interfejsu [GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md) ewaluatora wyrażeń (EE).
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
 
 |Metoda|Opis|
 |------------|-----------------|
 |[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|Tworzy usługę wizualizatora|
 
 ## <a name="remarks"></a>Uwagi
- Interfejs `IEEVisualizerServiceProvider` uzyskuje się podczas implementacji [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Usługa wizualizatora, który tworzy ten interfejs jest używany do dostarczania funkcji do interfejsu [IDebugProperty3,](../../../extensibility/debugger/reference/idebugproperty3.md) który EE jest odpowiedzialny za implementowanie. EE jest również odpowiedzialny za implementowanie interfejsu [IEEVisualizerDataProvider,](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) który umożliwia wizualizatorów typu do wyświetlania i modyfikowania wartości właściwości.
+ `IEEVisualizerServiceProvider`Interfejs jest uzyskiwany podczas implementacji [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Usługa wizualizatora, którą tworzy ten interfejs, służy do dostarczania funkcji do interfejsu [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) , który jest odpowiedzialny za wdrożenie. EE jest również odpowiedzialny za implementację interfejsu [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) , który umożliwia wizualizatorom typów wyświetlanie i modyfikowanie wartości właściwości.
 
- Zobacz [Wizualizacja i wyświetlanie danych, aby](../../../extensibility/debugger/visualizing-and-viewing-data.md) uzyskać szczegółowe informacje na temat interakcji tych interfejsów.
+ Zobacz [wizualizowanie i wyświetlanie danych,](../../../extensibility/debugger/visualizing-and-viewing-data.md) Aby uzyskać szczegółowe informacje na temat sposobu działania tych interfejsów.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: ee.h
+ Nagłówek: EE. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

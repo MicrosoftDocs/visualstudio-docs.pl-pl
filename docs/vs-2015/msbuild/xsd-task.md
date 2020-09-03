@@ -1,5 +1,5 @@
 ---
-title: XSD — zadanie | Dokumentacja firmy Microsoft
+title: Zadanie XSD | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -22,67 +22,67 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826242"
 ---
 # <a name="xsd-task"></a>XSD — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Opakowuje narzędzie definicji schematu XML (xsd.exe), które generuje pliki schematu lub klasy z lokalizacji źródłowej.  
+Zawija narzędzie definicji schematu XML (xsd.exe), które generuje pliki schematu lub klasy ze źródła.  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry **XSD** zadania.  
+ W poniższej tabeli opisano parametry zadania **XSD** .  
   
 - **AdditionalOptions**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
-     Lista opcji określonych w wierszu polecenia. Na przykład " */option1 /option2 /option#* ". Użyj tego parametru, aby określić opcje, które nie są reprezentowane przez inne **XSD** parametru zadania.  
+     Lista opcji określona w wierszu polecenia. Na przykład "*/option1/option2 Option #*". Użyj tego parametru, aby określić opcje, które nie są reprezentowane przez żaden inny parametr zadania **XSD** .  
   
 - **GenerateFromSchema**  
   
-  Opcjonalnie **ciąg** parametru.  
+  Opcjonalny parametr **ciągu** .  
 
   Określa typy, które są generowane na podstawie określonego schematu.  
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji XSD.  
 
-  - **classes** -  **/classes**  
+  - **klasy**  -  **/Classes**  
 
-  - **dataset** -  **/dataset**  
+  - **zestaw danych**  -  **/DataSet**  
   
 - **Język**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
-     Określa język programowania dla wygenerowanego kodu.  
+     Określa język programowania, który ma być używany dla wygenerowanego kodu.  
   
-     Wybierz z **CS** (C#, co jest ustawieniem domyślnym), **VB** (Visual Basic) lub **JS** (JScript). Można również określić w pełni kwalifikowaną nazwę klasy, która implementuje `System.CodeDom.Compiler.CodeDomProvider Class`.  
+     Wybierz pozycję z **CS** (C#, która jest domyślna), **VB** (Visual Basic) lub **js** (JScript). Można również określić w pełni kwalifikowaną nazwę dla klasy implementującej `System.CodeDom.Compiler.CodeDomProvider Class` .  
   
-- **Namespace**  
+- **Przestrzeń nazw**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
      Określa przestrzeń nazw czasu wykonywania wygenerowany typów.  
   
 - **Źródła**  
   
-     Wymagane `ITaskItem[]` parametru.  
+     Wymagany parametr interfejsu `ITaskItem[]`.  
   
-     Określa tablicę elementów pliku źródłowego programu MSBuild, które mogą być używane i wyemitowane przez zadania.  
+     Definiuje tablicę elementów plików źródłowych MSBuild, które mogą być używane i emitowane przez zadania.  
   
 - **SuppressStartupBanner**  
   
-     Opcjonalnie **logiczna** parametru.  
+     Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, uniemożliwia wyświetlanie wiadomości praw autorskich i wersji, podczas uruchamiania zadania.  
+     Jeśli `true` , program zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji, gdy zadanie zostanie uruchomione.  
   
-- **TrackerLogDirectory**  
+- **Katalog trackerlogdirectory**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
      Określa katalog dziennika śledzenia.  
   

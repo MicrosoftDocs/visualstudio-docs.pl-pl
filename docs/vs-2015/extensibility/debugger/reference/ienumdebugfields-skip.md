@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::Skip | Dokumentacja firmy Microsoft
+title: 'IEnumDebugFields:: Skip | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0d6fcce58611c6ec45d2f7b0a4ece725a134e3d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161109"
 ---
 # <a name="ienumdebugfieldsskip"></a>IEnumDebugFields::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta metoda nakłada się na określoną liczbę elementów.  
+Ta metoda pomija określoną liczbę elementów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,13 +40,13 @@ int Skip(
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- [in] Liczba elementów do pominięcia.  
+ podczas Liczba elementów do pominięcia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli `celt` jest większa niż liczba pozostałych elementów; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca `S_FALSE` wartość `celt` , jeśli jest większa niż liczba pozostałych elementów; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli `celt` określa wartość większa niż liczba pozostałych elementów wyliczenia jest ustawiona na końcu i `S_FALSE` jest zwracana.  
+ Jeśli `celt` wartość jest większa niż liczba pozostałych elementów, Wyliczenie zostanie ustawione na koniec i `S_FALSE` zostanie zwrócone.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

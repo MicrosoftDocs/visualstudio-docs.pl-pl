@@ -1,5 +1,5 @@
 ---
-title: SortOrder — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: SortOrder — Element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,20 +14,20 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 825ec785a83cae0aaa8a31ae1375e956228b634e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205515"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Określa wartość, która jest służy do rozmieszczania szablonu, wśród innych szablonów w ramach tej samej kategorii, wyświetlaną w albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.  
+Określa wartość, która jest używana do rozmieszczenia szablonu, między innymi szablonami w tej samej kategorii, jak pojawia się w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<SortOrder >  
+ \<SortOrder>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,22 +48,22 @@ Określa wartość, która jest służy do rozmieszczania szablonu, wśród inny
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- `integer` Reprezentujący wartość kolejności sortowania.  
+ `integer`Reprezentuje wartość kolejności sortowania.  
   
 ## <a name="remarks"></a>Uwagi  
- `SortOrder` element jest opcjonalny. Wartość domyślna to 100, a wszystkie wartości musi być wielokrotnością liczby 10.  
+ `SortOrder` jest elementem opcjonalnym. Wartość domyślna to 100, a wszystkie wartości muszą być wielokrotnościami 10.  
   
- `SortOrder` Element jest ignorowany dla szablonów utworzonych przez użytkownika. Wszystkie szablony utworzone przez użytkownika są sortowane alfabetycznie.  
+ `SortOrder`Element jest ignorowany dla szablonów utworzonych przez użytkownika. Wszystkie szablony utworzone przez użytkownika są sortowane alfabetycznie.  
   
- Szablony, które mają wartości kolejności sortowania niski pojawiają się w jednym **nowy projekt** lub **nowego elementu Dodawanie** okno dialogowe przed szablonów, które mają wartości kolejności sortowania wysoka.  
+ Szablony, które mają niskie wartości kolejności sortowania, są wyświetlane w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** przed szablonami, które mają wysokie wartości kolejności sortowania.  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie pokazano metadanych dla standardowego [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablonu klasy.  
+ Poniższy przykład ilustruje metadane dla standardowego [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablonu klasy.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -82,8 +82,8 @@ Określa wartość, która jest służy do rozmieszczania szablonu, wśród inny
 </VSTemplate>  
 ```  
   
- W tym przykładzie `SortOrder` element jest stosunkowo wysoka. Istnieje prawdopodobieństwo, że inne [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablonów elementów będzie miał `SortOrder` wartości mniejszej niż `290` i pojawi się przed tego szablonu w **nowy element** okno dialogowe.  
+ W tym przykładzie `SortOrder` element jest stosunkowo wysoki. Prawdopodobnie inne [!INCLUDE[csprcs](../includes/csprcs-md.md)] Szablony elementów będą mieć `SortOrder` wartość niższą niż `290` i pojawią się przed tym szablonem w oknie dialogowym **nowy element** .  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

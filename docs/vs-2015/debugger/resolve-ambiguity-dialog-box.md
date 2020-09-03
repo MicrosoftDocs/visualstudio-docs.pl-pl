@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe rozstrzyganie niejednoznaczności | Dokumentacja firmy Microsoft
+title: Okno dialogowe Rozwiązywanie niejednoznaczności | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,28 +21,28 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b35d305bbd011adc02692cd7c9c687ac0bfc7d45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148787"
 ---
 # <a name="resolve-ambiguity-dialog-box"></a>Rozwiązywania niejednoznaczności — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Resolve Ambiguity` Pojawi się okno dialogowe, gdy debuger nie można wybrać lokalizację, aby wyświetlić. Na przykład jeśli używasz szablonów języka C++, można utworzyć wiele funkcji z pojedynczego szablonu funkcji. Jeśli debuger zatrzymuje się w lokalizacji źródłowej, w szablonie, a Ty podejmiesz `Go To Disassembly`, debuger ma wiele opcji. Każda funkcja tworzone na podstawie szablonu ma swój własny kod dezasemblacji i debuger nie wie, kod, który chcesz wyświetlić. `Resolve Ambiguity` Okno dialogowe pozwala wybrać lokalizację z listy wszystkich odpowiedniej lokalizacji.  
+Okno `Resolve Ambiguity` dialogowe pojawia się, gdy debuger nie może wybrać lokalizacji do wyświetlenia. Na przykład jeśli używasz szablonów języka C++, możesz utworzyć wiele funkcji z jednego szablonu funkcji. Jeśli debuger zostanie zatrzymany w lokalizacji źródłowej w szablonie, a Ty wybierzesz `Go To Disassembly` , debuger będzie miał wiele opcji. Każda funkcja utworzona na podstawie szablonu ma swój własny kod demontażu, a debuger nie wie, który kod chcesz wyświetlić. Okno `Resolve Ambiguity` dialogowe umożliwia wybranie wybranej lokalizacji z listy wszystkich odpowiednich lokalizacji.  
   
  `Choose the specific location`  
- Wyświetla listę wszystkich lokalizacji odpowiadającego do swojej dyspozycji.  
+ Wyświetla wszystkie lokalizacje odpowiadające podanemu poleceniu.  
   
  `Address`  
- Pokazuje adresów pamięci dla każdej funkcji.  
+ Pokazuje adresy pamięci dla każdej funkcji.  
   
  `Function`  
- Zawiera nazwę każdej funkcji.  
+ Pokazuje nazwę każdej funkcji.  
   
  `Module`  
- Zawiera moduł (plik EXE lub DLL) zawierająca kod obiektowy dla tej funkcji.  
+ Pokazuje moduł (EXE lub DLL) zawierający kod obiektu dla funkcji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyrażenia w debugerze](../debugger/expressions-in-the-debugger.md)

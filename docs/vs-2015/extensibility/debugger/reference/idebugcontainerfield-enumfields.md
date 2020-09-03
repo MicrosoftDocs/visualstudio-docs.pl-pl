@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField::EnumFields | Dokumentacja firmy Microsoft
+title: 'IDebugContainerField:: EnumFields — | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 485de4bdc9ff5b17c056c0db4e2930f5c6986fe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205302"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
@@ -48,25 +48,25 @@ int EnumFields(
   
 #### <a name="parameters"></a>Parametry  
  `dwKindFilter`  
- [in] Kombinacji [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) stałych, które wybierz pola, które mają zostać wyliczone. Typy pól można opisać typów magazynu, takich jak klasy lub pierwotnych lub określonych informacji, takich jak lokalne, parametr lub wskaźnika "this".  
+ podczas Kombinacja [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) stałych, które wybierają pola do wyliczenia. Rodzaje pól mogą opisywać typy magazynów, takie jak Klasa lub pierwotne, lub określone informacje, takie jak lokalny, parametr lub wskaźnik "This".  
   
  `dwModifiersFilter`  
- [in] Kombinacji [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) stałych, które wybierz pola, które mają zostać wyliczone. Modyfikatory pola może być uprawnienia dostępu, takie jak publiczny lub prywatny lub informacje dotyczące magazynu, takie jak wirtualne, statyczne lub końcowe.  
+ podczas Kombinacja [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) stałych, które wybierają pola do wyliczenia. Modyfikatory pola mogą być uprawnieniami dostępu, takimi jak publiczne lub prywatne, lub informacjami o magazynie, takimi jak wirtualne, statyczne lub końcowe.  
   
  `pszNameFilter`  
- [in] Nazwa pola do wyliczenia. Może to być wartość null, jeśli wszystkie pola, które mają zostać zwrócone.  
+ podczas Nazwa pola do wyliczenia. Może to być wartość null, jeśli wszystkie pola mają być zwracane.  
   
  `nameMatch`  
- [in] Wartość z zakresu od [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) wyliczenie, które określa, czy wyszukiwanie jest uwzględniana wielkość liter, czy nie.  
+ podczas Wartość z wyliczenia [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) , która kontroluje, czy w wyszukiwaniu jest rozróżniana wielkość liter.  
   
  `ppEnum`  
- [out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) obiekt reprezentujący listę pól. Zwraca wartość null, jeśli nie ma żadnych pól.  
+ określoną Zwraca obiekt [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) reprezentujący listę pól. Zwraca wartość null, jeśli nie ma żadnych pól.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Jeśli to się powiedzie, zwraca S_OK lub S_FALSE, jeśli nie ma żadnych pól. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- `dwKindFilter`, `dwModifiersFilter`, I `pszNameFilter` parametrów można łączyć, na przykład, aby wybrać wszystkie publiczne metody wirtualnej o nazwie "MyMethod".  
+ `dwKindFilter`Parametry, `dwModifiersFilter` i `pszNameFilter` można łączyć, na przykład, aby wybrać wszystkie publiczne metody wirtualne o nazwie "nomethod".  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)   

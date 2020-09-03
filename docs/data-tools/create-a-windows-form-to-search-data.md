@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: df6f2245f06a594e35febe07d5aab2d7e83c48fd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586812"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych
@@ -57,13 +57,13 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
     2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
+    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
 
        Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
 ## <a name="create-the-windows-forms-application"></a>Tworzenie aplikacji Windows Forms
 
-Utwórz nowy projekt **aplikacji Windows Forms** dla obu C# lub Visual Basic. Nazwij projekt **WindowsSearchForm**.
+Utwórz nowy projekt **aplikacji Windows Forms** dla języka C# lub Visual Basic. Nazwij projekt **WindowsSearchForm**.
 
 ## <a name="create-the-data-source"></a>Tworzenie źródła danych
 
@@ -99,13 +99,13 @@ Można utworzyć formanty powiązane z danymi, przeciągając elementy z okna **
 
 2. Przeciągnij węzeł **Customers** z okna **źródła danych** do formularza.
 
-     W formularzu pojawiają się <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) służący do nawigowania po rekordach. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+     <xref:System.Windows.Forms.DataGridView>A i pasek narzędzi ( <xref:System.Windows.Forms.BindingNavigator> ) na potrzeby nawigowania po rekordach pojawia się w formularzu. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
 
 ## <a name="add-parameterization-search-functionality-to-the-query"></a>Dodawanie parametryzacja (funkcji wyszukiwania) do zapytania
 
 Można dodać klauzulę WHERE do oryginalnego zapytania przy użyciu okna dialogowego **Konstruktor kryteriów wyszukiwania** :
 
-1. Wybierz kontrolkę <xref:System.Windows.Forms.DataGridView>, a następnie wybierz polecenie **Dodaj zapytanie** w menu **dane** .
+1. Zaznacz <xref:System.Windows.Forms.DataGridView> kontrolkę, a następnie wybierz polecenie **Dodaj zapytanie** w menu **dane** .
 
 2. Wpisz **FillByCity** w polu **Nowa nazwa zapytania** obszar w oknie dialogowym **Konstruktor kryteriów wyszukiwania** .
 
@@ -121,7 +121,7 @@ Można dodać klauzulę WHERE do oryginalnego zapytania przy użyciu okna dialog
      ```
 
     > [!NOTE]
-    > Dostęp i OLE DB źródła danych używają znaku zapytania ("?") do oznaczania parametrów, więc klauzula WHERE będzie wyglądać następująco: `WHERE City = ?`.
+    > Dostęp do źródeł danych i ich OLE DB Użyj znaku zapytania ("?") w celu określenia parametrów, więc klauzula WHERE będzie wyglądać następująco: `WHERE City = ?` .
 
 4. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Konstruktor kryteriów wyszukiwania** .
 
@@ -131,7 +131,7 @@ Można dodać klauzulę WHERE do oryginalnego zapytania przy użyciu okna dialog
 
 Uruchomienie aplikacji otwiera formularz i przygotowuje go do przejęcia parametru jako dane wejściowe:
 
-1. Naciśnij klawisz **F5**, aby uruchomić aplikację.
+1. Naciśnij klawisz **F5** , aby uruchomić aplikację.
 
 2. Wpisz **Londyn** w polu tekstowym **miasto** , a następnie kliknij pozycję **FillByCity**.
 
@@ -143,8 +143,8 @@ W zależności od wymagań aplikacji istnieje kilka kroków, które można wykon
 
 - Dodawanie kontrolek, które wyświetlają powiązane dane. Aby uzyskać więcej informacji, zobacz [relacje w zestawach danych](relationships-in-datasets.md).
 
-- Edytowanie zestawu danych w celu dodania lub usunięcia obiektów bazy danych. Aby uzyskać więcej informacji, zobacz [tworzenie i konfigurowanie zestawów danych](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Edytowanie zestawu danych w celu dodania lub usunięcia obiektów bazy danych. Aby uzyskać więcej informacji, zobacz [Tworzenie i konfigurowanie zestawów danych](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

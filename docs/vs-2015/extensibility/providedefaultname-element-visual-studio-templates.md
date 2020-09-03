@@ -1,5 +1,5 @@
 ---
-title: Providedefaultname — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: ProvideDefaultName —, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bd18dd979436b02cc12a4dab5439bdb5f371e2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193890"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Określa, czy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] system projektu spowoduje wygenerowanie domyślna nazwa szablonu w **Dodaj nowy element** lub **nowy projekt** okno dialogowe.  
+Określa, czy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] system projektu będzie generował nazwę domyślną dla szablonu w oknie dialogowym **Dodaj nowy element** lub **Nowy projekt** .  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -47,22 +47,22 @@ Określa, czy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] system projektu spowo
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- Tekst musi być albo `true` lub `false`, wskazującą, czy mają być Generowanie domyślna nazwa szablonu w **Dodaj nowy element** lub **nowy projekt** okno dialogowe.  
+ Tekst musi mieć wartość `true` lub `false` , wskazujący, czy generować nazwę domyślną szablonu w oknie dialogowym **Dodaj nowy element** lub **Nowy projekt** .  
   
 ## <a name="remarks"></a>Uwagi  
- `ProvideDefaultName` element jest opcjonalny. Wartość domyślna to `true`.  
+ `ProvideDefaultName` jest elementem opcjonalnym. Wartość domyślna to `true`.  
   
- Jeśli `ProvideDefaultName` element jest `false`, **nazwa** pola **Dodaj nowy element** i **nowy projekt** okna dialogowe zawierają wartość `<Enter_name>`.  
+ Jeśli `ProvideDefaultName` element to `false` , pola **nazwy** okna dialogowego **Dodaj nowy element** i **Nowy projekt** zawierają wartość `<Enter_name>` .  
   
- Użyj [defaultname —](../extensibility/defaultname-element-visual-studio-templates.md) element, aby określić domyślną nazwę projektu lub elementu w **Dodaj nowy element** i **nowy projekt** okien dialogowych.  
+ Użyj elementu [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) , aby określić nazwę domyślną projektu lub elementu w oknach dialogowych **Dodaj nowy element** i **Nowy projekt** .  
   
 ## <a name="example"></a>Przykład  
- Poniższy kod ustawia przykład `ProvideDefaultName` elementu `false`.  
+ Poniższy przykład kodu ustawia `ProvideDefaultName` element na `false` .  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -81,5 +81,5 @@ Określa, czy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] system projektu spowo
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

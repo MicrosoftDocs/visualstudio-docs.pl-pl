@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetStatementRange | Dokumenty firmy Microsoft
+title: 'IDebugDocumentContext2:: GetStatementRange | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 50e521d98f10477d56dfece30e20fd000b87b632
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731770"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
-Pobiera zakres instrukcji pliku kontekstu dokumentu.
+Pobiera zakres instrukcji pliku dla kontekstu dokumentu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,21 +43,21 @@ int GetStatementRange(
 
 ## <a name="parameters"></a>Parametry
 `pBegPosition`\
-[w, na zewnątrz] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) wypełniona pozycją początkową. Ustaw ten argument na wartość null, jeśli te informacje nie są potrzebne.
+[in. out] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , która jest wypełniana początkową pozycją. Jeśli te informacje nie są konieczne, należy ustawić wartość null dla tego argumentu.
 
 `pEndPosition`\
-[w, na zewnątrz] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) wypełniona pozycją końcową. Ustaw ten argument na wartość null, jeśli te informacje nie są potrzebne.
+[in. out] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , która jest wypełniana pozycją końcową. Jeśli te informacje nie są konieczne, należy ustawić wartość null dla tego argumentu.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Zakres instrukcji to zakres wierszy, które przyczyniły się do kodu, do którego odnosi się ten kontekst dokumentu.
+Zakres instrukcji jest zakresem wierszy, które tworzą kod, do którego odwołuje się ten kontekst dokumentu.
 
-Aby uzyskać zakres kodu źródłowego (w tym komentarze) w tym kontekście dokumentu, należy wywołać [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) metody.
+Aby uzyskać zakres kodu źródłowego (łącznie z komentarzami) w tym kontekście dokumentu, wywołaj metodę [GetSourceRange —](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) .
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak `CDebugContext` zaimplementować tę metodę dla prostego obiektu, który udostępnia interfejs [IDebugDocumentContext2.](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) W tym przykładzie wypełnia się pozycję końcową tylko wtedy, gdy pozycja początkowa nie jest wartością null.
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CDebugContext` obiektu, który uwidacznia Interfejs [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) . Ten przykład wypełnia pozycję końcową tylko wtedy, gdy pozycja początkowa nie jest wartością null.
 
 ```cpp
 HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,

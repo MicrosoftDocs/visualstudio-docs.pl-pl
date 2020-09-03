@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e31ec2be9ccce0b07b04746d2ed51ab3909cdd2c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183681"
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kodu — informacje o schemacie
@@ -64,7 +64,7 @@ Stanowi kontener dla krótkich bloków kodu.
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-Dwa zastrzeżone słowa są dostępne do użycia w tekście `Code` elementu: `$end$` i `$selected$` . `$end$`oznacza lokalizację, w której ma zostać umieszczony kursor po wstawieniu fragmentu kodu. `$selected$`reprezentuje tekst zaznaczony w dokumencie, który ma zostać wstawiony do fragmentu, gdy jest wywoływany. Na przykład, w którym znajduje się fragment kodu zawierający:
+Dwa zastrzeżone słowa są dostępne do użycia w tekście `Code` elementu: `$end$` i `$selected$` . `$end$` oznacza lokalizację, w której ma zostać umieszczony kursor po wstawieniu fragmentu kodu. `$selected$` reprezentuje tekst zaznaczony w dokumencie, który ma zostać wstawiony do fragmentu, gdy jest wywoływany. Na przykład, w którym znajduje się fragment kodu zawierający:
 
 ```
 $selected$ is a great color.
@@ -317,7 +317,7 @@ Określa unikatowy identyfikator `Literal` `Object` elementu lub. Żadne dwa lit
 
 Wartość tekstowa jest wymagana. Ten tekst określa unikatowy identyfikator obiektu lub literału.
 
-## <a name="import-element"></a>Importuj element
+## <a name="import-element"></a>Import, element
 
 Określa zaimportowane przestrzenie nazw używane przez fragment kodu IntelliSense.
 
@@ -347,7 +347,7 @@ Grupuje poszczególne `Import` elementy.
 
 |Element podrzędny|Opis|
 |-------------------|-----------------|
-|[Importuj element](../ide/code-snippets-schema-reference.md#import-element)|Element opcjonalny. Zawiera zaimportowane przestrzenie nazw fragmentu kodu. Element nie może zawierać żadnych elementów **importu** `Imports` .|
+|[Import, element](../ide/code-snippets-schema-reference.md#import-element)|Element opcjonalny. Zawiera zaimportowane przestrzenie nazw fragmentu kodu. Element nie może zawierać żadnych elementów **importu** `Imports` .|
 
 |Element nadrzędny|Opis|
 | - |-----------------|
@@ -392,7 +392,7 @@ Grupuje poszczególne `Keyword` elementy. Słowa kluczowe fragmentu kodu są wyk
 
 Definiuje literały fragmentu kodu, które można edytować. `Literal`Element jest używany do identyfikowania zastąpienia dla fragmentu kodu, który jest całkowicie zawarty w fragmencie, ale prawdopodobnie zostanie dostosowany po wstawieniu go do kodu. Jako literały należy na przykład deklarować ciągi literałowe, wartości liczbowe i nazwy niektórych zmiennych.
 
-Literały i obiekty nie mogą zawierać elementu **ID** z wartością wybraną lub końcową. Wartość `$selected$` reprezentuje tekst zaznaczony w dokumencie, który ma zostać wstawiony do fragmentu kodu, gdy jest wywoływany. `$end$`oznacza lokalizację, w której ma zostać umieszczony kursor po wstawieniu fragmentu kodu.
+Literały i obiekty nie mogą zawierać elementu **ID** z wartością wybraną lub końcową. Wartość `$selected$` reprezentuje tekst zaznaczony w dokumencie, który ma zostać wstawiony do fragmentu kodu, gdy jest wywoływany. `$end$` oznacza lokalizację, w której ma zostać umieszczony kursor po wstawieniu fragmentu kodu.
 
 ```xml
 <Literal Editable="true/false">
@@ -430,7 +430,7 @@ Określa przestrzeń nazw, którą należy zaimportować, aby fragment kodu zost
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[Importuj element](../ide/code-snippets-schema-reference.md#import-element)|Importowanie określonej przestrzeni nazw.|
+|[Import, element](../ide/code-snippets-schema-reference.md#import-element)|Importowanie określonej przestrzeni nazw.|
 
 Wartość tekstowa jest wymagana. Ten tekst określa obszar nazw, wstawki zakłada jest importowany.
 
@@ -565,7 +565,7 @@ Wartość tekstowa musi być jedną z następujących:
 
 - `Expansion`: umożliwia wstawianie fragmentu kodu do kursora.
 
-- `Refactoring`: określa, że fragment kodu jest używany podczas refaktoryzacji języka C#. `Refactoring`nie można używać w niestandardowych fragmentach kodu.
+- `Refactoring`: określa, że fragment kodu jest używany podczas refaktoryzacji języka C#. `Refactoring` nie można używać w niestandardowych fragmentach kodu.
 
 ## <a name="snippettypes-element"></a>SnippetTypes, element
 
@@ -633,7 +633,7 @@ Określa typ obiektu. `Object`Element jest używany do identyfikowania elementu,
 | - |-----------------|
 |[Element obiektu](../ide/code-snippets-schema-reference.md#object-element)|Definiuje pola obiektów fragmentu kodu, które można edytować.|
 
-Wartość tekstowa jest wymagana. Ten tekst określa typ obiektu. Przykład:
+Wartość tekstowa jest wymagana. Ten tekst określa typ obiektu. Na przykład:
 
 ```xml
 <Type>System.Data.SqlClient.SqlConnection</Type>
@@ -658,7 +658,7 @@ Określa adres URL strony z dodatkowymi informacjami o zestawie, do którego pro
 
 Wartość tekstowa jest wymagana. Ten tekst określa adres URL strony z dodatkowymi informacjami o zestawie, do którego prowadzi odwołanie. Ten adres URL jest wyświetlany, gdy do projektu nie można dodać odwołania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Fragmenty kodu](../ide/code-snippets.md)
 - [Przewodnik: tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md)

@@ -1,5 +1,5 @@
 ---
-title: Pole m_stateObject | Dokumentacja firmy Microsoft
+title: m_stateObject pole | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8e9cfc6f689504bef2a8366f90282641d1e9e105
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149053"
 ---
-# <a name="mstateobject-field"></a>m_stateObject, pole
+# <a name="m_stateobject-field"></a>m_stateObject, pole
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Obiekt, który reprezentuje dane, które będzie używane przez akcję.  
+Obiekt reprezentujący dane, które będą używane przez tę akcję.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Zestaw:** mscorlib (w mscorlib.dll)  
   
- Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,7 +35,7 @@ Obiekt, który reprezentuje dane, które będzie używane przez akcję.
 ```  
   
 ## <a name="remarks"></a>Uwagi  
- Jest to `state` parametru w <xref:System.Threading.Tasks.Task.%23ctor%2A> konstruktora. Warto również pole zapasowe dla <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> właściwości.  
+ Jest to `state` parametr w <xref:System.Threading.Tasks.Task.%23ctor%2A> konstruktorze. Jest to również pole zapasowe dla <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> właściwości.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Task, klasa](../../extensibility/debugger/task-class-internal-members.md)

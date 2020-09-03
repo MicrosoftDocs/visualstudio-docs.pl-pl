@@ -10,14 +10,14 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9ccb870f3b65d54da7d8aebd161a8be8a0f9baf5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660123"
 ---
 # <a name="state-machine-activity-designers"></a>Projektanci działań automatu stanów
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] obejmuje wiele projektantów działań, których można użyć podczas konstruowania przepływów pracy. Ta sekcja zawiera projektanta działań dostarczone przez system służące do tworzenia przepływów pracy automatu stanów i zarządzania nimi. W poniższych tematach opisano tych projektantów i przedstawiono wskazówki dotyczące ich używania.
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] zawiera szereg projektantów działań, których można użyć podczas konstruowania przepływów pracy. Ta sekcja zawiera projektanta działań dostarczone przez system służące do tworzenia przepływów pracy automatu stanów i zarządzania nimi. W poniższych tematach opisano tych projektantów i przedstawiono wskazówki dotyczące ich używania.
 
 ## <a name="in-this-section"></a>W tej sekcji
  Obiekt [StateMachine](../workflow-designer/statemachine-activity-designer.md) Zawiera kolekcję przepływów pracy stanów i modeli przy użyciu modelu znanego komputera o stanie.
@@ -28,7 +28,7 @@ ms.locfileid: "72660123"
 
  [Przejście](../workflow-designer/transition-activity-designer.md) Reprezentuje przejście między dwoma stanami.
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
  <xref:System.Activities.Statements.StateMachine>
 
  <xref:System.Activities.Statements.State>

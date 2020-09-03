@@ -1,5 +1,5 @@
 ---
-title: Widoki jedną i wieloma kartami | Dokumentacja firmy Microsoft
+title: Pojedyncze i wielotabulacjowe widoki | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,53 +11,53 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 804a37a43ffe25335dc522542f5035b0882e63ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205563"
 ---
 # <a name="single-and-multi-tab-views"></a>Widoki z jedną i wieloma kartami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Edytor można tworzyć różne typy widoków. Przykładem jest oknem edytora kodu, jest inny Projektant formularzy.  
+Edytor może tworzyć różne typy widoków. Przykładem jest okno edytora kodu, inne jest projektantem formularzy.  
   
- Widok z wieloma kartami jest widok, który ma wiele kart. Na przykład edytora HTML zawiera dwie karty u dołu: **Projekt** i **źródła**, każdy widok logiczny. Widok projektu wyświetla renderowanej strony sieci web, podczas gdy druga Wyświetla zawartość HTML, która obejmuje strony sieci web.  
+ Widok z wieloma kartami to widok, który ma wiele kart. Na przykład edytor HTML ma dwie karty w dolnej części: **projekt** i **Źródło**, każdy widok logiczny. Widok projektu wyświetla wyrenderowaną stronę sieci Web, podczas gdy druga wyświetla HTML, który składa się ze strony sieci Web.  
   
-## <a name="accessing-physical-views"></a>Uzyskiwanie dostępu do widoków fizycznych  
- Widoki fizyczne dokumentu widoku obiekty hostów, każdy reprezentuje widok danych w buforze, takie jak kod lub formularz. W związku z tym każdy obiekt widoku dokumentu ma widoku fizycznego (identyfikowanych na podstawie czegoś znanego jako ciąg widoku fizycznego), a pojedynczy widok logiczny.  
+## <a name="accessing-physical-views"></a>Dostęp do widoków fizycznych  
+ Widoki fizyczne obiekty widoku dokumentu, z których każdy reprezentuje widok danych w buforze, taki jak kod lub formularz. W związku z tym każdy obiekt widoku dokumentu ma widok fizyczny (identyfikowany przez coś znanego jako ciąg widoku fizycznego) i ogólnie pojedynczy widok logiczny.  
   
- Jednak w niektórych przypadkach fizyczny widok może mieć co najmniej dwóch widoków logiczne. Przykłady to edytor który ma podzielonym oknie z widokami side-by-side i Projektant formularzy, widok graficzny interfejs użytkownika/projektu i widok związanego z — — w postaci kodu.  
+ W niektórych przypadkach widok fizyczny może mieć co najmniej dwa widoki logiczne. Niektóre przykłady to edytor, który ma okno podziału z widokami Side-by-Side lub projektantem formularzy, który ma graficzny interfejs użytkownika/projekt i widok związany z kodem.  
   
- Aby włączyć tego edytora, aby uzyskać dostęp do wszystkich dostępnych widoków fizycznego, należy utworzyć ciąg widoku fizycznego unikatowy dla każdego typu obiektu widoku dokumentu, który można utworzyć usługi fabryka edytora. Na przykład [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] fabryka edytora dokument można utworzyć widoku obiektów okna kodu i okno projektanta formularzy.  
+ Aby umożliwić edytorowi dostęp do wszystkich dostępnych widoków fizycznych, należy utworzyć unikatowy ciąg widoku fizycznego dla każdego typu obiektu widoku dokumentu, który może zostać utworzony przez fabrykę edytora. Na przykład [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] fabryka edytora może tworzyć obiekty widoku dokumentu dla okna kodu i okna Projektanta formularzy.  
   
-## <a name="creating-multi-tabbed-views"></a>Tworzenie widoków z wieloma kartami  
- Chociaż obiekt widoku dokumentu musi być skojarzony z fizyczny widok przy użyciu ciągu unikatowy widoku fizycznego, można umieścić w wielu kartach w widoku fizycznych, aby umożliwić wyświetlanie danych na różne sposoby. W tej konfiguracji z wieloma kartami wszystkie karty są skojarzone z tego samego ciągu fizyczny widok, ale każda karta jest podany inny widok logiczny identyfikator GUID.  
+## <a name="creating-multi-tabbed-views"></a>Tworzenie widoków z obsługą wiele kart  
+ Chociaż obiekt widoku dokumentu musi być skojarzony z widokiem fizycznym za pomocą unikatowego ciągu widoku fizycznego, można umieścić wiele kart w widoku fizycznym, aby umożliwić wyświetlanie danych na różne sposoby. W tej konfiguracji z wielodostępnymi kartami wszystkie karty są skojarzone z tym samym ciągiem widoku fizycznego, ale każda karta ma inny identyfikator GUID widoku logicznego.  
   
- Aby utworzyć widok z wieloma kartami dla edytora, należy zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiViewDocumentView> interfejsu, a następnie powiązanie inny widok logiczny identyfikator GUID (<xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID>) w każdej karcie można utworzyć.  
+ Aby utworzyć widok z wielodostępnym edytorem, zaimplementuj interfejs, <xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiViewDocumentView> a następnie skojarz inny identyfikator GUID widoku logicznego ( <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID> ) z każdą utworzoną kartą.  
   
- Edytor programu Visual Studio HTML jest przykładem edytor z wieloma kartami widoku. Ma ona **projektowania** i **źródła** karty. Aby je włączyć, inny widok logiczny jest skojarzony z każdą kartę `LOGICALVIEWID_TextView` dla **projektowania** kartę i `LOGICALVIEWID_Code` dla **źródła** kartę.  
+ Edytor HTML programu Visual Studio jest przykładem edytora z wielodostępnym widokiem. Zawiera karty **projektowe** i **źródłowe** . Aby włączyć tę opcję, inny widok logiczny jest skojarzony z każdą kartą, `LOGICALVIEWID_TextView` na karcie **projekt** i `LOGICALVIEWID_Code` na karcie **Źródło** .  
   
- Określając odpowiedni widok logiczny, pakietu VSPackage mają dostęp do widoku, który odnosi się do określonego celu, na przykład projektowania formularza edycji kodu i debugowania kodu. Jednak okien musi posiadać pusty ciąg, a to musi odpowiadać głównej widok logiczny (`LOGVIEWID_Primary`).  
+ Określając odpowiedni widok logiczny, pakietu VSPackage może uzyskać dostęp do widoku, który odnosi się do określonego celu, na przykład projektowania formularza, edytowania kodu lub debugowania kodu. Jednak jedno z okien musi być identyfikowane przez ciąg o wartości NULL i musi odpowiadać podstawowemu widokowi logicznemu ( `LOGVIEWID_Primary` ).  
   
- W poniższej tabeli wymieniono wartości dostępne widok logiczny i ich użycia.  
+ W poniższej tabeli wymieniono dostępne wartości widoku logicznego i ich użycie.  
   
 |IDENTYFIKATOR GUID LOGVIEWID|Zalecane użycie|  
 |--------------------|---------------------|  
-|`LOGVIEWID_Primary`|Widok domyślny/podstawowej fabryki edytora.<br /><br /> Wszystkie fabryki edytora musi obsługiwać tę wartość. Ten widok, musisz użyć pusty ciąg jako jego parametry fizyczny widok. Ta wartość musi być równa co najmniej jeden widok logiczny.|  
-|`LOGVIEWID_Debugging`|Debugowanie widoku. Zazwyczaj `LOGVIEWID_Debugging` mapuje do tego samego widoku jako `LOGVIEWID_Code`.|  
-|`LOGVIEWID_Code`|Wyświetl uruchomione przez **Wyświetl kod** polecenia.|  
-|`LOGVIEWID_Designer`|Wyświetl uruchomione przez **Wyświetl formularz** polecenia.|  
-|`LOGVIEWID_TextView`|Widoku edytora tekstu. Jest to widok, który zwraca <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>, z którego dostęp można uzyskać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
-|`LOGVIEWID_UserChooseView`|Monituje użytkownika o wybranie, które widok do używania.|  
-|`LOGVIEWID_ProjectSpecificEditor`|Przekazywany przez **Otwórz za pomocą** okno dialogowe<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> Kiedy użytkownik naciśnie pozycję "(domyślny edytor projektu)".|  
+|`LOGVIEWID_Primary`|Domyślny/podstawowy widok fabryki edytora.<br /><br /> Wszystkie fabryki edytora muszą obsługiwać tę wartość. Ten widok musi używać PUSTEgo ciągu jako jego fizycznego ciągu widoku. Co najmniej jeden widok logiczny musi być ustawiony na tę wartość.|  
+|`LOGVIEWID_Debugging`|Widok debugowania. Zazwyczaj program `LOGVIEWID_Debugging` mapuje do tego samego widoku co `LOGVIEWID_Code` .|  
+|`LOGVIEWID_Code`|Widok uruchamiany przez polecenie **Wyświetl kod** .|  
+|`LOGVIEWID_Designer`|Widok uruchamiany przez polecenie **Widok formularza** .|  
+|`LOGVIEWID_TextView`|Widok edytora tekstu. Jest to widok, który zwraca <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> , z którego można uzyskać dostęp <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> .|  
+|`LOGVIEWID_UserChooseView`|Poprosi użytkownika o wybranie widoku, który ma być używany.|  
+|`LOGVIEWID_ProjectSpecificEditor`|Zakończone przez okno dialogowe **Otwórz za pomocą** , aby<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> gdy użytkownik wybierze wpis "(edytor domyślny projektu)".|  
   
- Mimo że widok logiczny identyfikatorów GUID to rozszerzalny, można użyć tylko widok logiczny identyfikatory GUID są zdefiniowane w Twojej pakietu VSPackage.  
+ Mimo że identyfikatory GUID widoku logicznego są rozszerzalne, można używać tylko identyfikatorów GUID widoku logicznego zdefiniowanych w pakietu VSPackage.  
   
- Podczas zamykania Visual Studio zachowuje identyfikator GUID fabryki edytora i ciągi fizyczny widok skojarzony z oknem dokumentu, dzięki czemu można ponownie otworzyć dokument w systemie windows, po ponownym otwarciu rozwiązania. Tylko systemu windows, które są otwarte, po zamknięciu rozwiązania są utrwalane w pliku rozwiązania (.suo). Te wartości odpowiadają `VSFPROPID_guidEditorType` i `VSFPROPID_pszPhysicalView` wartości przekazane w `propid` parametr <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> metody.  
+ Po zamknięciu program Visual Studio zachowuje identyfikator GUID fabryki edytora oraz ciągi widoku fizycznego skojarzone z oknem dokumentu, aby można było go użyć do ponownego otwarcia okna dokumentu po ponownym otwarciu rozwiązania. W pliku rozwiązania (. suo) są utrwalane tylko okna otwarte, gdy rozwiązanie zostało zamknięte. Te wartości odpowiadają `VSFPROPID_guidEditorType` i `VSFPROPID_pszPhysicalView` wartościom przesłanym w `propid` parametrze w <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> metodzie.  
   
 ## <a name="example"></a>Przykład  
- Ten fragment kodu ilustruje sposób, w jaki <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView> umożliwia dostęp do widoku, który implementuje obiekt `IVsCodeWindow`. W tym przypadku <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> usługi służy do wywoływania <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> i żądania `LOGVIEWID_TextView`, która uzyskuje wskaźnik do ramki okna. Wskaźnik do dokumentu obiekt widoku można uzyskać przez wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> i określając wartość `VSFPROPID_DocView`. Z obiektu widoku dokumentu `QueryInterface` jest wywoływana dla `IVsCodeWindow`. Oczekuje się w tym przypadku, Edytor tekstu jest zwracana, a więc zwracany obiekt widoku dokumentu w <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> metodą jest okna kodu.  
+ W tym fragmencie kodu pokazano, jak <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView> obiekt jest używany w celu uzyskania dostępu do widoku, który implementuje `IVsCodeWindow` . W takim przypadku <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> Usługa jest używana do wywołania <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> i żądania `LOGVIEWID_TextView` , które uzyskuje wskaźnik do ramki okna. Wskaźnik do obiektu widoku dokumentu jest uzyskiwany przez wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> i określenie wartości `VSFPROPID_DocView` . Z obiektu widoku dokumentu `QueryInterface` jest wywoływana dla `IVsCodeWindow` . Oczekuje się, że w tym przypadku jest zwracany Edytor tekstu, a więc obiekt widoku dokumentu zwrócony w <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> metodzie jest oknem kodu.  
   
 ```cpp#  
 HRESULT CFindTool::GotoFileLocation(const WCHAR * szFile, long iLine, long iStart, long iLen)  
@@ -115,6 +115,6 @@ Error:
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Obsługa wielu widoków dokumentu](../extensibility/supporting-multiple-document-views.md)   
- [Instrukcje: Dołączanie widoków do danych dokumentów](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Obsługa widoków wielu dokumentów](../extensibility/supporting-multiple-document-views.md)   
+ [Instrukcje: dołączanie widoków do danych dokumentu](../extensibility/how-to-attach-views-to-document-data.md)   
  [Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md)

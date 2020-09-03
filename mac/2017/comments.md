@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
 ms.topic: how-to
 ms.openlocfilehash: 44eee75b4803b4317bb7d3cd02cb19b55f41a067
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85949994"
 ---
 # <a name="comments"></a>Komentarze
@@ -49,6 +49,6 @@ Komentarze są również przydatne do dokumentowania kodu dla przyszłych dewelo
 *)
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dodawanie komentarza do kodu (Visual Studio w systemie Windows)](/visualstudio/ide/quickstart-editor#comment-out-code)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses::Clone | Dokumentacja firmy Microsoft
+title: 'IEnumDebugAddresses:: Clone | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 732b01b813a9d09861d87a75a3078407bb75bcab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191973"
 ---
 # <a name="ienumdebugaddressesclone"></a>IEnumDebugAddresses::Clone
@@ -40,13 +40,13 @@ int Clone(
   
 #### <a name="parameters"></a>Parametry  
  `ppEnum`  
- [out] Zwraca kopię tego wyliczenia jako oddzielny obiekt.  
+ określoną Zwraca kopię tego wyliczenia jako oddzielny obiekt.  
   
 ## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Kopię wyliczenia ma ten sam stan, co oryginalny w czasie, którego ta metoda jest wywoływana. Jednak stany kopiowania i oryginalne są niezależne i można zmieniać indywidualnie.  
+ Kopia wyliczenia ma taki sam stan jak oryginał w momencie wywołania tej metody. Jednak kopia i stan pierwotny są oddzielone i mogą być zmieniane indywidualnie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

@@ -1,5 +1,5 @@
 ---
-title: Wymagane interfejsy dostawcy portów | Dokumentacja firmy Microsoft
+title: Wymagane interfejsy dostawcy portów | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,45 +12,45 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a065389a6b9b67b8bce82394569ce65afb0f8d55
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821432"
 ---
 # <a name="required-port-supplier-interfaces"></a>Wymagane interfejsy dostawcy portów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Dostawcy portu musi implementować [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interfejsu.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
+Dostawca portu musi implementować interfejs [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) . [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
   
- Ponieważ dostawcy portu dostarcza, portów, musi on również implementować ich. W związku z tym musi on implementować następujących interfejsów:  
+ Ponieważ dostawca portu dostarcza porty, musi również wdrożyć je. W związku z tym musi zaimplementować następujące interfejsy:  
   
 - [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)  
   
-     W tym artykule opisano port i można wyliczyć wszystkie procesy uruchomione na tym porcie.  
+     Opisuje port i może wyliczyć wszystkie procesy działające na porcie.  
   
 - [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)  
   
-     Umożliwia uruchomienie i zakończenie procesów na porcie.  
+     Zapewnia uruchamianie i kończenie procesów na porcie.  
   
 - [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)  
   
-     Udostępnia mechanizm dla programów uruchomionych w kontekście tego portu do powiadamiania o program węzła tworzenia i niszczenia. Aby uzyskać więcej informacji, zobacz [węzły programu](../../extensibility/debugger/program-nodes.md).  
+     Zapewnia mechanizm dla programów uruchomionych w kontekście tego portu w celu powiadomienia go o tworzeniu i zniszczeniu węzła programu. Aby uzyskać więcej informacji, zobacz [węzły programów](../../extensibility/debugger/program-nodes.md).  
   
 - `IConnectionPointContainer`  
   
-     Zapewnia punkt połączenia dla [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md).  
+     Udostępnia punkt połączenia dla [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md).  
   
-## <a name="port-supplier-operation"></a>Obsługa dostawcy portu  
- [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md) ujścia odbiera powiadomienia, gdy proces i programy są tworzone i niszczone na porcie. Port jest wymagany do wysłania [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) po utworzeniu procesu i [IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) kiedy niszczony jest procesem na porcie. Port jest również wymagany do wysłania [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) po utworzeniu programu i [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) gdy program zostanie zniszczony w proces uruchomiony na porcie.  
+## <a name="port-supplier-operation"></a>Operacja dostawcy portu  
+ Ujścia [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md) odbiera powiadomienia, gdy proces i programy są tworzone i niszczone na porcie. Port jest wymagany do wysyłania [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) podczas tworzenia procesu i [IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) , gdy proces zostanie zniszczony na porcie. Port jest również wymagany do wysyłania [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) podczas tworzenia programu i [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) , gdy program zostanie zniszczony w procesie uruchomionym na porcie.  
   
- Port zwykle wysyła program tworzą i niszczą zdarzenia w odpowiedzi na [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) i [RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) metod, odpowiednio.  
+ Port zazwyczaj wysyła i niszczy zdarzenia w odpowiedzi odpowiednio do metod [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) i [RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) .  
   
- Port można uruchomić, a następnie zakończyć procesy fizyczne i logiczne programów, dlatego te interfejsy musi też być implementowany przez aparat debugowania:  
+ Ponieważ port może uruchamiać i kończyć zarówno procesy fizyczne, jak i programy logiczne, te interfejsy muszą być również zaimplementowane przez aparat debugowania:  
   
 - [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)  
   
-  W tym artykule opisano proces fizycznego. Co najmniej należy zaimplementować następujące metody:  
+  Opisuje proces fizyczny. Należy zaimplementować co najmniej następujące metody:  
 
   - [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)  
 
@@ -66,21 +66,21 @@ Dostawcy portu musi implementować [IDebugPortSupplier2](../../extensibility/deb
 
 - [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)  
   
-    Zapewnia sposób SDM dołączyć i odłączyć się od procesu.  
+    Zapewnia sposób dołączania i odłączania modelu SDM do procesu.  
   
 - [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)  
   
-  W tym artykule opisano logicznych program. Co najmniej należy zaimplementować następujące metody:  
+  Zawiera opis programu logicznego. Należy zaimplementować co najmniej następujące metody:  
 
   - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
 
-  - [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)  
+  - [GetProcess —](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)  
 
   - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)  
   
 - [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)  
   
-     Zapewnia sposób SDM dołączyć do tego programu.  
+     Umożliwia dołączenie modelu SDM do tego programu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Implementowanie dostawcy portu](../../extensibility/debugger/implementing-a-port-supplier.md)

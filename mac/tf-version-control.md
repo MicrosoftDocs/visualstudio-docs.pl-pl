@@ -8,10 +8,10 @@ ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
 ms.openlocfilehash: c51f3cd50598cd0c33b019c09f95554cc5f9058b
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950491"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Czy program Visual Studio dla komputerów Mac obsługuje kontrolę wersji programu Team Foundation?
@@ -30,14 +30,14 @@ Narzędzie git jest obsługiwane w Visual Studio dla komputerów Mac i jest opcj
 
 Mimo że Visual Studio dla komputerów Mac nie obsługiwał oficjalnie TFVC, pozostała część tego przewodnika zawiera pewne obejścia do pracy z TFVC na macOS. Jeśli obecnie używasz usługi TFVC na potrzeby kontroli wersji, Oto kilka rozwiązań, których można użyć w celu uzyskania dostępu do kodu źródłowego hostowanego w TFVC:
 
-* Sposób 1. [Użyj Visual Studio Code i rozszerzenia Azure Repos, dla graficznego interfejsu użytkownika](#use-visual-studio-code-and-the-azure-repos-extension)
+* Sposób 1. [ Użyj Visual Studio Code i rozszerzenia Azure Repos, dla graficznego interfejsu użytkownika](#use-visual-studio-code-and-the-azure-repos-extension)
 * Sposób 2. [Nawiązywanie połączenia z repozytorium przy użyciu Team Explorer Everywhere wiersza polecenia klienta (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
 
-### <a name="option-1--use-visual-studio-code-and-the-azure-repos-extension"></a>Sposób 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a>Użyj Visual Studio Code i rozszerzenia Azure Repos
+### <a name="option-1--use-visual-studio-code-and-the-azure-repos-extension"></a>Sposób 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a> Użyj Visual Studio Code i rozszerzenia Azure Repos
 
 Jeśli chcesz współpracować z interfejsem graficznym w celu zarządzania plikami w kontroli wersji, rozszerzenie Azure Repos dla Visual Studio Code udostępnia rozwiązanie obsługiwane przez firmę Microsoft. Aby rozpocząć, Pobierz [Visual Studio Code](https://code.visualstudio.com) a następnie Dowiedz się, jak [skonfigurować rozszerzenie Azure Repos](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team).
 
-### <a name="option-2--connecting-using-the-team-explorer-everywhere-command-line-client"></a>Sposób 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a>Nawiązywanie połączenia przy użyciu Team Explorer Everywhere klienta wiersza polecenia
+### <a name="option-2--connecting-using-the-team-explorer-everywhere-command-line-client"></a>Sposób 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a> Nawiązywanie połączenia przy użyciu Team Explorer Everywhere klienta wiersza polecenia
 
 > [!IMPORTANT]
 > Zgodnie z Team Explorer Everywherem Readme ten projekt [nie jest już obsługiwany](https://github.com/microsoft/team-explorer-everywhere).
@@ -57,7 +57,7 @@ Najprostszym rozwiązaniem jest **Korzystanie**z programu oprogramowania homebre
 
 1. Uruchom aplikację terminala macOS.
 1. Zainstaluj program oprogramowania Homebrew przy użyciu terminalu i instrukcje na [stronie głównej oprogramowania Homebrew](https://brew.sh/).
-1. Po zainstalowaniu oprogramowania Homebrew Uruchom następujące polecenie z terminalu:`brew install tee-clc`
+1. Po zainstalowaniu oprogramowania Homebrew Uruchom następujące polecenie z terminalu: `brew install tee-clc`
 
 Aby **ręcznie skonfigurować tee-CLC**:
 
@@ -107,6 +107,6 @@ Aby dowiedzieć się więcej na temat poleceń wymienionych tutaj lub innych, mo
 
 `tf help`
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Opracowywanie i udostępnianie kodu w programie TFVC przy użyciu programu Visual Studio (w systemie Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

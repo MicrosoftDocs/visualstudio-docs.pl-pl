@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5426c6f8e9c4a932430a0c3bd3df6d98400c3562
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659560"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Opis modeli, klas i relacji
@@ -26,7 +26,7 @@ Język specyficzny dla domeny (DSL) jest zdefiniowany przez plik definicji DSL, 
  W tym temacie objaśniono centralne funkcje definicji DSL.
 
 ## <a name="the-dsl-definition"></a>Definicja DSL
- Po otwarciu `Dsl\DslDefinition.dsl` okno [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] będzie wyglądać podobnie do poniższej ilustracji.
+ Po otwarciu `Dsl\DslDefinition.dsl` [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okno zostanie podobne do poniższej ilustracji.
 
  ![Projektant DSL](../modeling/media/dsl-designer.png "dsl_designer")
 
@@ -120,7 +120,7 @@ Język specyficzny dla domeny (DSL) jest zdefiniowany przez plik definicji DSL, 
 
  W reprezentacji XML modelu łącze odwołania między dwoma elementami jest reprezentowane przy użyciu *monikerów.* Oznacza to, że monikery są nazwami, które jednoznacznie identyfikują każdy element w modelu. Węzeł XML dla każdego elementu modelu zawiera węzeł, który określa nazwę relacji i moniker drugiego elementu.
 
-## <a name="roles"></a>Pełnione
+## <a name="roles"></a>Role
  Każda relacja domeny ma dwie role, rolę źródłową i rolę docelową.
 
  Na poniższej ilustracji wiersz między klasą domeny **wydawcy** a relacją domeny **PublisherCatalog** jest rolą źródłową. Wiersz między relacją domeny a klasą domeny **albumu** jest rolą docelową.
@@ -132,9 +132,9 @@ Język specyficzny dla domeny (DSL) jest zdefiniowany przez plik definicji DSL, 
  Podczas tworzenia relacji w definicji DSL, nazwy właściwości i relacji są określone wartościami domyślnymi. Można jednak je zmienić.
 
 ## <a name="multiplicities"></a>Liczebnościami
- Liczebność określają, ile elementów może mieć tę samą rolę w relacji domeny. W tym przykładzie ustawienie liczebności zero-do-wielu (0.. \*) w roli **katalogu** określa, że każde wystąpienie klasy domeny **wydawcy** może mieć dowolną liczbę linków relacji **PublisherCatalog** , które chcesz nadać.
+ Liczebność określają, ile elementów może mieć tę samą rolę w relacji domeny. W tym przykładzie ustawienie liczebności zero-do-wielu (0.. \* ) w roli **wykazu** określa, że każde wystąpienie klasy domeny **wydawcy** może mieć dowolną liczbę linków relacji **PublisherCatalog** , które chcesz nadać.
 
- Skonfiguruj liczebność roli, wpisując ją na diagramie lub modyfikując właściwość `Multiplicity` w oknie **Właściwości** . W poniższej tabeli opisano ustawienia dla tej właściwości.
+ Skonfiguruj liczebność roli, wpisując ją na diagramie lub modyfikując `Multiplicity` Właściwość w oknie **Właściwości** . W poniższej tabeli opisano ustawienia dla tej właściwości.
 
 |Typ mnożenia|Opis|
 |-----------------------|-----------------|

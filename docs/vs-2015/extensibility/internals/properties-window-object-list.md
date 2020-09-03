@@ -1,5 +1,5 @@
 ---
-title: Lista obiektów okna właściwości | Dokumentacja firmy Microsoft
+title: Lista obiektów okna właściwości | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,25 +11,25 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 95ef509491e05daf575e211ae479c815994eb3d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148331"
 ---
 # <a name="properties-window-object-list"></a>Lista obiektów okna właściwości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Lista obiektów w **właściwości** okno jest listy umożliwia zmianę zaznaczenia do innych obiektów, które są dostępne w ramach jednego lub kilku wybranych okien. Wybierając inny obiekt na tej liście wyzwala wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> poinformować środowiska wybrano nowego obiektu. Informacje wyświetlane w **właściwości** okna jest następnie zmieniane, aby wyświetlić właściwości skojarzone z nowo wybrany obiekt.  
+Lista obiektów w oknie **Właściwości** jest listą rozwijaną, która umożliwia zmianę zaznaczenia na inne obiekty dostępne w jednym lub kilku wybranych oknach. Wybranie innego obiektu z tej listy wyzwala wywołanie do <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> powiadomienia o środowisku, w którym został wybrany nowy obiekt. Informacje wyświetlane w oknie **Właściwości** są następnie zmieniane, aby pokazać właściwości skojarzone z nowo wybranym obiektem.  
   
 ## <a name="the-object-list"></a>Lista obiektów  
- Lista obiektów składa się z dwóch pól: Nazwa obiektu (wyświetlone czcionką pogrubioną) i typ obiektu.  
+ Lista obiektów składa się z dwóch pól: nazwę obiektu (wyświetlaną pogrubioną czcionką) i typ obiektu.  
   
- Nazwa obiektu wyświetlany po lewej stronie, typu obiektu wytłuszczonym drukiem jest pobierana z samego obiektu przy użyciu `Name` podana przez właściwość <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> interfejsu. <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo.GetClassInfo%2A>, jedyną metodą na <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, zwraca <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo> dla klasy coclass tego interfejsu. **Właściwości** okno używa <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> można pobrać nazwy klasy coclass, który jest wyświetlany jako nazwa obiektu na liście rozwijanej.  
+ Nazwa obiektu wyświetlana po lewej stronie typu obiektu w pogrubieniu jest pobierana z samego obiektu przy użyciu `Name` Właściwości dostarczonej przez <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> interfejs. <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo.GetClassInfo%2A>, jedyną metodą dla <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> , zwraca wartość <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo> dla klasy coclass tego interfejsu. Okno **Właściwości** używa <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> do uzyskania nazwy klasy coclass, która jest wyświetlana jako nazwa obiektu na liście rozwijanej.  
   
- Jeśli obiekt nie ma `Name` właściwości, nazwa nie jest wyświetlana w obszarze nazwy listy obiektów. Jeśli chcesz, aby nazwa wyświetlana na liście obiektów, można dodać do obiektu Właściwość Name.  
+ Jeśli obiekt nie ma `Name` właściwości, nazwa nie jest wyświetlana w obszarze Nazwa listy obiektów. Możesz dodać właściwość Name do obiektu, jeśli chcesz, aby nazwa była wyświetlana na liście obiektów.  
   
- Jeśli obiekt COM nie implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, **właściwości** okna wyświetla nazwę interfejsu zamiast nazwy obiektu po lewej stronie listy.  
+ Jeśli obiekt COM nie jest zaimplementowany <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> , w oknie **Właściwości** zostanie wyświetlona nazwa interfejsu zamiast nazwy obiektu po lewej stronie listy.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie właściwości](../../extensibility/internals/extending-properties.md)

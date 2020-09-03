@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFrameInfo2 | Dokumentacja firmy Microsoft
+title: IEnumDebugFrameInfo2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6cc6a0ff332fd6feac72ce4abf38b5319e63c913
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161011"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ten interfejs wylicza [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury.  
+Ten interfejs wylicza struktury [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) .  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,29 +31,29 @@ IEnumDebugFrameInfo2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Aparat debugowania (DE) implementuje ten interfejs, aby udostępnić listę struktur, który opisuje bieżący stos wywołań.  
+ Aparat debugowania (DE) implementuje ten interfejs, aby udostępnić listę struktur, które opisują bieżący stos wywołań.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Visual Studio wywołania [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) uzyskać ten interfejs, w każdym przypadku, gdy punkt przerwania, wyjątek lub zatrzymania występuje debugowanego programu.  
+ Program Visual Studio wywołuje [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) , aby uzyskać ten interfejs za każdym razem, gdy punkt przerwania, wyjątek lub zatrzymanie występuje w debugowanym programie.  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IEnumDebugFrameInfo2`.  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ W poniższej tabeli przedstawiono metody `IEnumDebugFrameInfo2` .  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[Next](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|Pobiera określoną liczbę [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktur w kolejności wyliczenia.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Pomija określoną liczbę [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktur w kolejności wyliczenia.|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|Resetuje sekwencji wyliczenia na początku.|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|Pobiera liczbę [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury w moduł wyliczający.|  
+|[Dalej](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|Pobiera określoną liczbę struktur [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) w sekwencji wyliczenia.|  
+|[Pomiń](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Pomija określoną liczbę struktur [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) w sekwencji wyliczenia.|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|Resetuje sekwencję wyliczenia na początek.|  
+|[Klonowanie](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|Pobiera liczbę struktur [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) w module wyliczającym.|  
   
 ## <a name="remarks"></a>Uwagi  
- Program Visual Studio pobiera ten interfejs jako pierwszy krok do obsługi punktu przerwania, wyjątek lub wstrzymania wygenerowaną przez użytkowników na debugowanego programu. Lista [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury reprezentuje bieżący stos wywołań, przy użyciu bieżącego wywołania funkcji na początku listy i funkcja najstarsze wywołania na końcu listy. Każdy `FRAMEINFO` reprezentuje ramkę stosu, kontekst, w którym mogą być obliczane wyrażenia, oraz znasz zmiennych lokalnych.  
+ Program Visual Studio uzyskuje ten interfejs jako pierwszy krok do obsługi punktu przerwania, wyjątku lub wstrzymania wygenerowanego przez użytkownika w debugowanym programie. Lista struktur [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) reprezentuje bieżący stos wywołań i bieżące wywołanie funkcji na początku listy i najstarsze wywołanie funkcji na końcu listy. Każda `FRAMEINFO` reprezentuje ramkę stosu, kontekst, w którym można ocenić wyrażenia, a zmienne lokalne są oglądane.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

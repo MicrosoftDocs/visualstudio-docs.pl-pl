@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Debugowanie wyjątków ASP.NET | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: debugowanie wyjątków ASP.NET | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,33 +19,33 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ccd8c399bd92bd98307d44aff913c30390033c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205426"
 ---
-# <a name="how-to-debug-aspnet-exceptions"></a>Instrukcje: Debugowanie wyjątków ASP.NET
+# <a name="how-to-debug-aspnet-exceptions"></a>Porady: debugowanie wyjątków ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Debugowanie wyjątków jest ważną częścią opracowywania niezawodnej [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji. Ogólne informacje o tym, jak można debugować wyjątki wynosi [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md).  
+Debugowanie wyjątków jest ważną częścią opracowywania niezawodnej [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji. Ogólne informacje o sposobie debugowania wyjątków polegają na [zarządzaniu wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md).  
   
- Aby debugować nieobsłużone [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] wyjątki, musisz upewnić się, że debuger zatrzymuje działanie dla nich. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Środowisko uruchomieniowe ma program obsługi wyjątków najwyższego poziomu. W związku z tym debuger nigdy nie przerywa wykonywania kodu na nieobsłużonych wyjątków domyślnie. Aby przerwać w debugerze, gdy wyjątek jest zgłaszany, należy wybrać **Przerwij, gdy wyjątek jest: Zgłoszono** ustawienie dla określonego wyjątku w **wyjątki** okno dialogowe.  
+ Aby debugować nieobsłużone [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] wyjątki, należy się upewnić, że debuger go zatrzyma. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Środowisko uruchomieniowe ma program obsługi wyjątków najwyższego poziomu. W związku z tym debuger nigdy nie jest podzielony na Nieobsłużone wyjątki domyślnie. Aby przerwać debuger w przypadku zgłoszenia wyjątku, należy wybrać opcję **Przerwij, gdy wyjątek to: zgłoszone** ustawienie dla tego konkretnego wyjątku w oknie dialogowym **wyjątki** .  
   
- Jeśli włączono opcję tylko mój kod **Przerwij, gdy wyjątek jest: Zgłoszono** nie powoduje, że debuger natychmiast przerywa, jeśli wyjątek jest zgłaszany w metodzie środowiska .NET Framework lub innym kodzie systemowym. Zamiast tego kontynuuje wykonywanie dopóki debuger uderza w kodu-system, a następnie przerywa. W rezultacie, nie masz przechodzić przez kodu systemu po wystąpieniu wyjątku.  
+ Jeśli włączono Tylko mój kod, Przerwij, **gdy wyjątek to: zgłoszone** nie powoduje natychmiastowego przerwania debugera, jeśli wyjątek jest zgłaszany w metodzie .NET Framework lub w innym kodzie systemowym. Zamiast tego wykonywanie jest kontynuowane do momentu, aż debuger trafi w kodzie niesystemowym, spowoduje przerwanie działania. W związku z tym nie trzeba wykonywać kroków kodu systemowego, gdy wystąpi wyjątek.  
   
- Tylko mój kod daje inne rozwiązanie, które mogą być bardziej przydatne: **Przerwij, gdy wyjątek jest: User-unhandled**. Jeśli wybierzesz to ustawienie, dla wyjątku, debuger spowoduje przerwanie wykonywania w kodzie użytkownika, ale tylko wtedy, gdy wyjątek nie jest wychwycony i obsłużony przez kod użytkownika. To ustawienie neguje efekt najwyższego poziomu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aparatu obsługi wyjątków, ponieważ ten program obsługi jest kod niezwiązany z użytkownikiem.  
+ Tylko mój kod daje kolejną opcję, która może być jeszcze bardziej przydatna: **Przerwij, gdy wyjątek jest: nieobsługiwany przez użytkownika**. W przypadku wybrania tego ustawienia dla wyjątku debuger przerwie wykonywanie w kodzie użytkownika, ale tylko wtedy, gdy wyjątek nie zostanie przechwycony i obsłużony przez kod użytkownika. To ustawienie powoduje negację efektu programu obsługi wyjątków najwyższego poziomu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , ponieważ program obsługi znajduje się w kodzie niebędącym użytkownikiem.  
   
-### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>Aby włączyć debugowanie wyjątków ASP.NET za pomocą tylko mój kod  
+### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>Aby włączyć debugowanie wyjątków ASP.NET z Tylko mój kod  
   
-1. Na **debugowania** menu, kliknij przycisk **wyjątki**.  
+1. W menu **debugowanie** kliknij pozycję **wyjątki**.  
   
-     **Wyjątki** pojawi się okno dialogowe.  
+     Zostanie wyświetlone okno dialogowe **wyjątki** .  
   
-2. Na **wyjątki środowiska uruchomieniowego języka wspólnego** wiersz, wybierz opcję **zgłoszenia** lub **User-unhandled**.  
+2. W wierszu **wyjątki środowiska uruchomieniowego języka wspólnego** wybierz opcję **zgłoszone** lub **nieobsługiwane przez użytkownika**.  
   
-     Aby użyć **User-unhandled** ustawienie **tylko mój kod** musi być włączona...  
+     Aby można było użyć ustawienia **nieobsługiwanego przez użytkownika** , należy włączyć **tylko mój kod** ..  
   
-### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>Aby stosować najlepsze rozwiązania dla obsługi wyjątków programu ASP.NET  
+### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>Aby użyć najlepszych rozwiązań dla obsługi wyjątków ASP.NET  
   
-- Miejsce `try … catch` bloki wokół kodu, który może generować wyjątki, które można przewidzieć i wiedzieć jak je obsługiwać. Na przykład, jeśli aplikacja wykonuje wywołania do usługi sieci Web XML lub bezpośrednio do programu SQL Server, ten kod powinien być w **try... catch** blokuje, ponieważ istnieją liczne wyjątki, które mogą wystąpić.
+- Umieść `try … catch` bloki wokół kodu, który może generować wyjątki, które można przewidywanie i wiedzieć, jak obsłużyć. Na przykład jeśli aplikacja przeprowadza wywołania do usługi sieci Web XML lub bezpośrednio do SQL Server, ten kod powinien znajdować się w **try... bloki catch** , ponieważ mogą wystąpić liczne wyjątki.

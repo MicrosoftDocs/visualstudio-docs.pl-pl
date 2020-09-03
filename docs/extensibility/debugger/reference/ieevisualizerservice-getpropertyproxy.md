@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetPropertyProxy | Dokumenty firmy Microsoft
+title: 'IEEVisualizerService:: GetPropertyProxy | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4f499b816b012c3b3a71e3e8ecafaa2c0f34586d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718002"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
@@ -43,16 +43,16 @@ int GetPropertyProxy(
 
 ## <a name="parameters"></a>Parametry
 `dwID`\
-[w] Identyfikator serwera proxy właściwości do pobrania.
+podczas Identyfikator serwera proxy właściwości do pobrania.
 
 `proxy`\
-[na zewnątrz] Żądany serwer proxy zaimplementowany w interfejsie [IPropertyProxyEESide.](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
+określoną Żądany serwer proxy zaimplementowany w interfejsie [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-- [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) przekazuje żądanie do tej metody w ramach obsługi wizualizatorów typu.
+- [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) przekazuje żądanie do tej metody w ramach obsługi wizualizatorów typów.
 
 ## <a name="see-also"></a>Zobacz też
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

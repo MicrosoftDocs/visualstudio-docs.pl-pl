@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
 ms.topic: overview
 ms.openlocfilehash: 532a245b8e217ea278bf5a3424a194ce87ae43f4
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950048"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Kompilowanie i kompilowanie w Visual Studio dla komputerów Mac
@@ -50,6 +50,6 @@ Aby uzyskać więcej informacji na temat korzystania z programu MSBuild, zobacz 
 * [Kompilowanie aplikacji platformy Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
 * [Ciągła integracja z platformą Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kompiluj i Kompiluj (Visual Studio w systemie Windows)](/visualstudio/ide/compiling-and-building-in-visual-studio)

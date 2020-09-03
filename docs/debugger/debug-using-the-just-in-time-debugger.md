@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350579"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debugowanie przy użyciu debugera just-in-Time w programie Visual Studio
@@ -26,7 +26,7 @@ Debugowanie just in Time działa w przypadku aplikacji klasycznych systemu Windo
 > [!TIP]
 > Jeśli chcesz zatrzymać wyświetlanie okna dialogowego debugera just in Time, ale nie masz zainstalowanego programu Visual Studio, zobacz temat [Wyłączanie debugera just in Time](../debugger/just-in-time-debugging-in-visual-studio.md). Jeśli masz zainstalowany program Visual Studio, może być konieczne [wyłączenie debugowania just in Time z rejestru systemu Windows](#disable-just-in-time-debugging-from-the-windows-registry).
 
-## <a name="enable-or-disable-just-in-time-debugging-in-visual-studio"></a><a name="BKMK_Enabling"></a>Włączanie lub wyłączanie debugowania just-in-Time w programie Visual Studio
+## <a name="enable-or-disable-just-in-time-debugging-in-visual-studio"></a><a name="BKMK_Enabling"></a> Włączanie lub wyłączanie debugowania just-in-Time w programie Visual Studio
 
 >[!NOTE]
 >Aby włączyć lub wyłączyć debugowanie just-in-Time, musisz mieć uruchomiony program Visual Studio jako administrator. Włączenie lub wyłączenie debugowania just in Time ustawia klucz rejestru, a uprawnienia administratora mogą być wymagane do zmiany tego klucza. Aby otworzyć program Visual Studio jako administrator, kliknij prawym przyciskiem myszy aplikację Visual Studio i wybierz polecenie **Uruchom jako administrator**.
@@ -147,7 +147,7 @@ Debugowanie można rozpocząć od tego momentu. W przypadku debugowania rzeczywi
 > [!CAUTION]
 > Jeśli aplikacja zawiera niezaufany kod, pojawi się okno dialogowe Ostrzeżenie o zabezpieczeniach, które pozwala zdecydować, czy kontynuować debugowanie. Przed kontynuowaniem debugowania Zdecyduj, czy ufasz kodowi. Czy udało Ci się napisać kod samodzielnie? Jeśli aplikacja jest uruchomiona na komputerze zdalnym, czy nazwa procesu jest rozpoznawana? Jeśli aplikacja działa lokalnie, weź pod uwagę możliwość złośliwego kodu uruchomionego na komputerze. Jeśli zdecydujesz, że kod jest godny zaufania, wybierz **przycisk OK**. W przeciwnym razie wybierz pozycję **Anuluj**.
 
-## <a name="troubleshoot-just-in-time-debugging"></a><a name="jit_errors"></a>Rozwiązywanie problemów z debugowaniem just in Time
+## <a name="troubleshoot-just-in-time-debugging"></a><a name="jit_errors"></a> Rozwiązywanie problemów z debugowaniem just in Time
 
 Jeśli debugowanie just in Time nie rozpocznie się, gdy aplikacja ulega awarii, mimo że jest włączona w programie Visual Studio:
 

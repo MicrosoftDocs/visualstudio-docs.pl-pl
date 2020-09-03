@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Zawiesić | Dokumenty firmy Microsoft
+title: 'IDebugThread2:: Suspend | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 74a7dd5dc69effbd46986eff963de3e740d9aa8e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718638"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
-Zawiesza wątek.
+Wstrzymuje wątek.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,16 +41,16 @@ HRESULT Suspend ( 
 
 ## <a name="parameters"></a>Parametry
 `pdwSuspendCount`\
-[na zewnątrz] Zwraca liczbę wstrzymań po operacji wstrzymania.
+określoną Zwraca liczbę wstrzymań po operacji wstrzymywania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Każde wywołanie tej metody zwiększa liczbę wstrzymania powyżej 0. Ta liczba wstrzymania jest wyświetlana w oknie debugowania **wątków.**
+ Każde wywołanie tej metody zwiększa liczbę wstrzymań powyżej 0. Ta liczba wstrzymań zostanie wyświetlona w oknie Debugowanie **wątków** .
 
- Dla każdego wywołania tej metody musi być późniejsze wywołanie [metody Resume.](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+ Dla każdego wywołania tej metody musi istnieć późniejsze wywołanie metody [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [Wznawianie](../../../extensibility/debugger/reference/idebugthread2-resume.md)

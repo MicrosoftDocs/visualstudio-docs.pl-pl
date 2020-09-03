@@ -1,5 +1,5 @@
 ---
-title: 'DA0502: Maksymalne użycie Procesora przez profilowany proces | Dokumentacja firmy Microsoft'
+title: 'DA0502: maksymalne użycie procesora przez profilowany proces | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a47a9c5964ccf15d2c609233eb600f39bc3ad2d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205936"
 ---
 # <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502: Maksymalne użycie procesora przez profilowany proces
@@ -26,13 +26,13 @@ ms.locfileid: "68205936"
 Identyfikator reguły | DA0502 |  
 | Kategoria | Monitorowanie zasobów |  
 | Metoda profilowania | Wszystkie |  
-| Komunikat | Ta reguła jest wyłącznie w celach informacyjnych. Funkcja Process() licznik\\% czasu procesora mierzy użycie Procesora przez profilowany proces. Zgłaszana wartość to maksimum zaobserwowane we wszystkich interwałach pomiarowych. |  
-| Typ reguły | Informacyjny |  
+| Komunikat | Ta reguła służy tylko do celów informacyjnych. \\Licznik czas procesora (%) mierzy użycie procesora przez proces profilowania. Raportowana wartość jest maksimum zaobserwowane we wszystkich interwałach pomiarowych. |  
+| Typ reguły | Informacje |  
   
- Podczas profilowania za pomocą próbkowania pamięci platformy .NET i metod rywalizacji zasobów musi zebrać co najmniej 10 próbek do wyzwolenia tej reguły.  
+ Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.  
   
 ## <a name="rule-description"></a>Opis reguły  
- Ten komunikat zgłasza maksymalny procent czasu procesor był zajęty, wykonując instrukcje z aplikacji. Wystąpienia wartości zgłoszonej jest maksymalną wartość zgłaszaną wśród wszystkich interwałów pomiarowych, w których był aktywny proces poddawany profilowaniu. Wartość procentowa może być większa niż 100% na maszynie z więcej niż jednego procesora.  
+ Ten komunikat zgłasza maksymalny procent czasu, przez który procesor był zajęty wykonywaniem instrukcji z aplikacji. Raportowana wartość jest wartością maksymalną raportowaną we wszystkich interwałach pomiarowych, w których proces profilowany był aktywny. Wartość procentowa może być większa niż 100% na komputerze z więcej niż jednym procesorem.  
   
-## <a name="how-to-use-the-rule-data"></a>Sposób użycia danych reguły  
- Użyj wartości reguły, aby porównać wydajność różnych wersji lub kompilacjach programu lub aby zrozumieć wydajność aplikacji w różnych scenariuszach profilowania.
+## <a name="how-to-use-the-rule-data"></a>Jak korzystać z danych reguły  
+ Wartość reguły służy do porównywania wydajności różnych wersji lub kompilacji programu lub do zrozumienia wydajności aplikacji w różnych scenariuszach profilowania.

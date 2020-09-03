@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Wznów | Dokumenty firmy Microsoft
+title: 'IDebugThread2:: Resume | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3899dea7c33946588de4308f42b948ede703361a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718673"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
@@ -41,15 +41,15 @@ int Resume ( 
 
 ## <a name="parameters"></a>Parametry
 `pdwSuspendCount`\
-[na zewnątrz] Zwraca liczbę wstrzymań po operacji wznowienia.
+określoną Zwraca liczbę wstrzymań po operacji wznawiania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Każde wywołanie tej metody zmniejsza liczbę wstrzymania, dopóki nie osiągnie 0, w którym czasie wykonanie jest faktycznie wznowione. Ta liczba wstrzymania jest wyświetlana w oknie debugowania **wątków.**
+ Każde wywołanie tej metody zmniejsza liczbę wstrzymania do momentu, aż osiągnie wartość 0, a wykonanie jest ostatecznie wznawiane. Ta liczba wstrzymań zostanie wyświetlona w oknie Debugowanie **wątków** .
 
- Dla każdego wywołania tej metody musi być poprzednie [wywołanie Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md) metody. Liczba wstrzymania określa, ile `IDebugThread2::Suspend` razy metoda została wywołana do tej pory.
+ Dla każdego wywołania tej metody musi istnieć poprzednie wywołanie metody [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md) . Liczba wstrzymań określa, ile razy Metoda została wywołana do tej `IDebugThread2::Suspend` pory.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

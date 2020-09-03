@@ -9,10 +9,10 @@ ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
 ms.openlocfilehash: decbdc244a7947b715b8ba5b27bda5aaf50d2266
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950614"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Zainstaluj program Visual Studio 2017 dla komputerów Mac
@@ -126,6 +126,6 @@ W przypadku innych obciążeń zapoznaj się ze stroną [obciążenia](/visualst
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zainstaluj program Visual Studio 2017 (w systemie Windows)](/visualstudio/install/install-visual-studio)

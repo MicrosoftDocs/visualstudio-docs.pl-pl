@@ -1,5 +1,5 @@
 ---
-title: POPDIRLISTFUNC | Dokumenty firmy Microsoft
+title: POPDIRLISTFUNC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,18 +13,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 52a0c16af0e142bda8527c5244a22e0830ced9e0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702077"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
-Jest to funkcja wywołania zwrotnego nadana funkcji [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) w celu zaktualizowania kolekcji katalogów i (opcjonalnie) nazw plików, aby dowiedzieć się, które są pod kontrolą źródła.
+Jest to funkcja wywołania zwrotnego nadana funkcji [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) w celu zaktualizowania kolekcji katalogów i (opcjonalnie) nazw plików, aby dowiedzieć się, które znajdują się pod kontrolą źródła.
 
- Wywołanie zwrotne `POPDIRLISTFUNC` powinno być wywoływane tylko dla tych katalogów `SccPopulateDirList` i nazw plików (na liście podanej funkcji), które są faktycznie pod kontrolą źródła.
+ `POPDIRLISTFUNC`Wywołanie zwrotne powinno być wywoływane tylko dla tych katalogów i nazw plików (znajdujących się na liście `SccPopulateDirList` funkcji), które faktycznie podlegają kontroli źródła.
 
-## <a name="signature"></a>Sygnatura
+## <a name="signature"></a>Podpis
 
 ```cpp
 typedef BOOL (*POPDIRLISTFUNC)(
@@ -37,15 +37,15 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="parameters"></a>Parametry
  pvCallerData
 
-[w] Wartość użytkownika podana [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).
+podczas Wartość użytkownika nadana [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).
 
  bFolder
 
-[w] `TRUE` jeśli nazwa `lpDirectoryOrFileName` w katalogu jest katalogiem; w przeciwnym razie nazwa jest nazwą pliku.
+[w] `TRUE` Jeśli nazwa w `lpDirectoryOrFileName` jest katalogiem; w przeciwnym razie nazwa jest nazwą pliku.
 
  lpDirectoryOrFileName
 
-[w] Pełna ścieżka lokalna do katalogu lub nazwy pliku, która znajduje się pod kontrolą kodu źródłowego.
+podczas Pełna ścieżka lokalna do katalogu lub nazwy pliku, który znajduje się pod kontrolą kodu źródłowego.
 
 ## <a name="return-value"></a>Wartość zwracana
  IDE zwraca odpowiedni kod błędu:
@@ -57,7 +57,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 |SCC_E_xxx|Każdy odpowiedni błąd kontroli źródła powinien zatrzymać przetwarzanie.|
 
 ## <a name="remarks"></a>Uwagi
- Jeśli `fOptions` parametr `SccPopulateDirList` funkcji zawiera `SCC_PDL_INCLUDEFILES` flagę, lista prawdopodobnie będzie zawierać nazwy plików, a także nazwy katalogów.
+ Jeśli `fOptions` parametr `SccPopulateDirList` funkcji zawiera `SCC_PDL_INCLUDEFILES` flagę, lista będzie prawdopodobnie zawierać nazwy plików, a także nazwy katalogów.
 
 ## <a name="see-also"></a>Zobacz też
 - [Funkcje wywołania zwrotnego zaimplementowane przez IDE](../extensibility/callback-functions-implemented-by-the-ide.md)

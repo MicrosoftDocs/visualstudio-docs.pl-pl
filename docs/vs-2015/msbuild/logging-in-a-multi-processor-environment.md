@@ -1,5 +1,5 @@
 ---
-title: Logowanie w środowisku wielu procesorów | Dokumentacja firmy Microsoft
+title: Rejestrowanie w środowisku wieloprocesorowym | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,28 +13,28 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35184f6ef724a9f0e803a10c9bda2c6981313ed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205972"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Logowanie w środowisku wielu procesorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możliwość używania wielu procesorów MSBuild może znacznie skrócić czas tworzenia projektu, ale również dodaje złożoności do rejestrowania. W środowisku jednoprocesorowym rejestratora może obsługiwać przychodzących zdarzenia, wiadomości, ostrzeżenia i błędy w sposób przewidywalny i sekwencyjne. Jednak w środowisku wielu procesorów zdarzenia z kilku źródeł mogą pojawić się równocześnie lub poza sekwencją. MSBuild zapewnia nowy Rejestrator procesorów uwzględniających oraz umożliwia tworzenie niestandardowych "przekazywania rejestratorów."  
+Możliwość użycia wielu procesorów przez program MSBuild może znacznie skrócić czas budowania projektu, ale również zwiększa złożoność rejestrowania. W środowisku jednoprocesorowym Rejestrator może obsługiwać przychodzące zdarzenia, komunikaty, ostrzeżenia i błędy w przewidywalny, sekwencyjny sposób. Jednak w środowisku z wieloma procesorami zdarzenia z kilku źródeł mogą dotrzeć jednocześnie lub poza sekwencją. Program MSBuild udostępnia nowy Rejestrator obsługujący wiele procesorów i umożliwia tworzenie niestandardowych "rejestratorów przekazywania".  
   
-## <a name="logging-multiple-processor-builds"></a>Rejestrowanie wielu procesorów kompilacji  
- Gdy tworzysz jeden lub więcej projektów w systemie wieloprocesorowym lub wielordzeniowych MSBuild kompilacji zdarzenia dla wszystkich projektów są generowane, jednocześnie. U rejestratora lawiny dane zdarzeń może pojawić się w tym samym czasie lub poza sekwencją. To może przeciąży rejestratora i czasy kompilacji zwiększona, rejestratora nieprawidłowe dane wyjściowe lub uszkodzone kompilacji. Aby rozwiązać te problemy, rejestratora MSBuild przetwarzanie zdarzenia typu "out sekwencji" i skorelować zdarzenia i ich źródła.  
+## <a name="logging-multiple-processor-builds"></a>Rejestrowanie kompilacji z wieloma procesorami  
+ Po utworzeniu co najmniej jednego projektu w systemie wieloprocesorowym lub wielordzeniowym zdarzenia kompilacji MSBuild dla wszystkich projektów są generowane jednocześnie. Nieuporządkowane danych zdarzenia może dotrzeć do rejestratora w tym samym czasie lub poza sekwencją. Może to spowodować Przeciążenie rejestratora oraz wydłużenie czasów kompilowania, niepoprawnych danych wyjściowych rejestratora, a nawet przerwaną kompilację. Aby rozwiązać te problemy, rejestrator programu MSBuild może przetwarzać zdarzenia poza sekwencją i skorelować zdarzenia i ich źródła.  
   
- Może poprawić wydajność rejestrowania jeszcze więcej, tworząc rejestratora przekazywanie niestandardowych. Rejestrator niestandardowych przekazywania działa jako filtr, umożliwiając wybierz przed kompilacją, zdarzenia, które chcesz monitorować. Korzystając z Rejestratora przekazywanie niestandardowych zdarzeń niepożądanych nie przeciąży rejestratora, zbliżyć do siebie te dzienniki lub wolno budowania razy.  
+ Aby zwiększyć efektywność rejestrowania jeszcze bardziej, można utworzyć niestandardowy Rejestrator przesyłania dalej. Rejestrator niestandardowego przesyłania dalej działa jako filtr, umożliwiając wybór, przed kompilacją, zdarzenia, które mają być monitorowane. W przypadku korzystania z niestandardowego rejestratora przesyłania dalej niepożądane zdarzenia nie zapychają rejestratora, nie zasłaniają dzienników ani wolno wydłużać czas kompilacji.  
   
-### <a name="central-logging-model"></a>Model centralnego rejestrowania  
- Dla kompilację na wielu procesorach program MSBuild używa "model centralnego rejestrowania". W modelu centralnego rejestrowania wystąpienie MSBuild.exe działa jako proces kompilacji głównej lub "węźle centralnym." Dodatkowych wystąpień MSBuild.exe lub "węzłów pomocniczych" są dołączone do węźle centralnym. Rejestratory na podstawie ILogger dołączony do węzła centralnej są określane jako "centralnej rejestratorów" i rejestratorów dołączony do węzłów pomocniczych są określane jako "dodatkowej rejestratorów."  
+### <a name="central-logging-model"></a>Centralny model rejestrowania  
+ W przypadku kompilacji z obsługą kilku procesorów MSBuild korzysta z "centralnego modelu rejestrowania". W centralnym modelu rejestrowania wystąpienie MSBuild.exe działa jako główny proces kompilacji lub "węzeł centralny". Dodatkowe wystąpienia MSBuild.exe lub "węzły pomocnicze" są dołączone do węzła centralnego. Wszystkie rejestratory oparte na ILogger dołączone do węzła centralnego są znane jako "rejestratory centralne" i rejestratory dołączone do węzłów pomocniczych są znane jako "rejestratory pomocnicze".  
   
- W przypadku kompilacji dodatkowej rejestratorów kierować ruch zdarzeń do centralnej rejestratorów. Ponieważ generowane przez kilka węzłów pomocniczych te zdarzenia, dane dociera węźle centralnym jednocześnie, ale z przeplotem. Aby rozwiązać odwołania do zdarzeń do projektu i cel zdarzenia, argumenty zdarzenia obejmują informacje o kontekście zdarzenia kompilacji dodatkowe.  
+ Gdy wystąpi kompilacja, rejestratory pomocnicze kierują ruch zdarzenia do centralnych rejestratorów. Ponieważ zdarzenia pochodzą z kilku węzłów pomocniczych, dane docierają do centralnych węzłów jednocześnie, ale z przeplotem. Aby rozwiązać odwołania zdarzenia do projektu i zdarzenia do obiektu docelowego, argumenty zdarzeń zawierają dodatkowe informacje kontekstu zdarzenia kompilacji.  
   
- Mimo że jest to jedyna <xref:Microsoft.Build.Framework.ILogger> jest wymagane do zaimplementowania przez rejestrator centralnej, firma Microsoft zaleca również Implementowanie <xref:Microsoft.Build.Framework.INodeLogger> chcącym rejestratora centralnego można zainicjować z liczbą węzłów, które uczestniczą w kompilacji. Następujące przeciążenia <xref:Microsoft.Build.Framework.ILogger.Initialize%2A> metoda jest wywoływana, gdy aparat rejestratora:  
+ Mimo że <xref:Microsoft.Build.Framework.ILogger> jest to wymagane tylko do wdrożenia przez rejestrator centralny, zalecamy także zaimplementowanie, <xref:Microsoft.Build.Framework.INodeLogger> Jeśli chcesz, aby Rejestrator centralny został zainicjowany z liczbą węzłów uczestniczących w kompilacji. Następujące Przeciążenie <xref:Microsoft.Build.Framework.ILogger.Initialize%2A> metody jest wywoływane, gdy silnik inicjuje Rejestrator:  
   
 ```  
 public interface INodeLogger: ILogger  
@@ -44,11 +44,11 @@ public interface INodeLogger: ILogger
 ```  
   
 ### <a name="distributed-logging-model"></a>Model rejestrowania rozproszonego  
- W modelu centralnego rejestrowania zbyt dużej ilości przychodzącego ruchu wiadomości, na przykład podczas kompilacji w przypadku wielu projektów naraz, może spowodować przeciążenie węźle centralnym, co podkreśla systemu i obniża wydajność kompilacji.  
+ W centralnym modelu rejestrowania zbyt dużo przychodzącego ruchu komunikatów, na przykład w przypadku jednoczesnego kompilowania wielu projektów, może przeciążyć centralny węzeł, co kładzie nacisk na system i obniża wydajność kompilacji.  
   
- Aby ograniczyć ten problem, MSBuild umożliwia również "model rejestrowania rozproszonego", który rozszerzają model centralnego rejestrowania, umożliwiając tworzenie przekazywania rejestratorów. Rejestrator przekazywania jest dołączony do węzła pomocniczego i odbiera zdarzenia przychodzące kompilacji z tego węzła. Rejestrator przekazywania działa tak jak regularne rejestratora, z tą różnicą, że można filtrować zdarzenia i następnie prześlij je dalej tylko żądane tweety na węźle centralnym. Zmniejsza ruch komunikatów w węźle centralnym i dlatego zapewnia lepszą wydajność.  
+ Aby zmniejszyć ten problem, program MSBuild umożliwia także "model rejestrowania rozproszonego", który rozszerza centralny model rejestrowania przez umożliwienie tworzenia rejestratorów przekazywania. Rejestrator przekazywania jest dołączany do węzła pomocniczego i odbiera przychodzące zdarzenia kompilacji z tego węzła. Rejestrator przekazywania jest podobny do zwykłego rejestratora, z tą różnicą, że może odfiltrować zdarzenia, a następnie przekazać tylko odpowiednie do węzła centralnego. Zmniejsza to ruch komunikatów w węźle centralnym i w związku z tym zapewnia lepszą wydajność.  
   
- Możesz utworzyć rejestratora przekazywania przez zaimplementowanie <xref:Microsoft.Build.Framework.IForwardingLogger> interfejs, który pochodzi od klasy <xref:Microsoft.Build.Framework.ILogger>. Interfejs jest określony jako:  
+ Można utworzyć rejestratora przekazywania przez implementację <xref:Microsoft.Build.Framework.IForwardingLogger> interfejsu, który pochodzi od <xref:Microsoft.Build.Framework.ILogger> . Interfejs jest zdefiniowany jako:  
   
 ```  
 public interface IForwardingLogger: INodeLogger  
@@ -58,12 +58,12 @@ public interface IForwardingLogger: INodeLogger
 }  
 ```  
   
- Do przesyłania dalej zdarzeń w rejestratora przekazywania, należy wywołać <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> metody <xref:Microsoft.Build.Framework.IEventRedirector> interfejsu. Przekaż odpowiednią <xref:Microsoft.Build.Framework.BuildEventArgs>, lub Utworów zależnych, jako parametr.  
+ Aby przesłać dalej zdarzenia w rejestratorze przekazywania, wywołaj <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> metodę <xref:Microsoft.Build.Framework.IEventRedirector> interfejsu. Przekaż odpowiednie <xref:Microsoft.Build.Framework.BuildEventArgs> lub pochodne jako parametr.  
   
- Aby uzyskać więcej informacji, zobacz [tworzenie przekazywania rejestratorów](../msbuild/creating-forwarding-loggers.md).  
+ Aby uzyskać więcej informacji, zobacz [Tworzenie rejestratorów przekazywania](../msbuild/creating-forwarding-loggers.md).  
   
-### <a name="attaching-a-distributed-logger"></a>Dołączanie rozproszonych rejestratora  
- Aby dołączanie rozproszonych rejestratora dla kompilacji wiersza polecenia, należy użyć `/distributedlogger` (lub `/dl` w skrócie) przełącznika. Format określająca nazwy klasy i typy rejestratora są takie same jak w przypadku `/logger` przełączyć, chyba że rozproszonych rejestratora składa się z dwóch klas rejestrowania: Rejestrator przekazywania i rejestratora centralnego. Poniżej znajduje się przykład dołączenia rejestratora rozproszonych:  
+### <a name="attaching-a-distributed-logger"></a>Dołączanie rejestratora rozproszonego  
+ Aby dołączyć Rejestrator rozproszony do kompilacji wiersza polecenia, należy użyć `/distributedlogger` przełącznika (lub, `/dl` na krótko). Format służący do określania nazw typów i klas rejestratora jest taki sam jak dla `/logger` przełącznika, z tą różnicą, że rozproszony Rejestrator składa się z dwóch klas rejestrowania: rejestratora przekazywania i centralnego rejestratora. Poniżej przedstawiono przykład dołączania rejestratora rozproszonego:  
   
 ```  
 msbuild.exe *.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
@@ -71,8 +71,8 @@ Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,
 Culture=neutral  
 ```  
   
- Znak gwiazdki (*) oddziela nazwy dwóch rejestratora w `/dl` przełącznika.  
+ Gwiazdka (*) oddziela dwie nazwy rejestratora w `/dl` przełączniku.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rejestratory kompilacji](../msbuild/build-loggers.md)   
- [Tworzenie przekazywania rejestratorów](../msbuild/creating-forwarding-loggers.md)
+ [Tworzenie rejestratorów przekazywania](../msbuild/creating-forwarding-loggers.md)

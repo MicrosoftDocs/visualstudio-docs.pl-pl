@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveDynamicType | Dokumentacja firmy Microsoft
+title: 'IDebugBinder:: ResolveDynamicType | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3be2234121fe76702dbfa5784bf20c1558cadce3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205821"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta metoda zwraca dokładnego typu zmiennej.  
+Ta metoda zwraca dokładny typ zmiennej.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,13 +42,13 @@ int ResolveDynamicType(
   
 #### <a name="parameters"></a>Parametry  
  `pDynamic`  
- [in] [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) reprezentujący typ zmiennej.  
+ podczas [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) reprezentujący typ zmiennej.  
   
  `ppResolved`  
- [out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) zapewniając szczegółowe informacje dotyczące typu.  
+ określoną Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , podając określone informacje o typie zmiennej.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   

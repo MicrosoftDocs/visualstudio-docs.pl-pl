@@ -8,10 +8,10 @@ ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
 ms.topic: how-to
 ms.openlocfilehash: 5fafb47be3c3a5b99a2ae7d07277d0977db93fa0
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950075"
 ---
 # <a name="creating-and-editing-build-configurations"></a>Tworzenie i edytowanie konfiguracji kompilacji
@@ -66,6 +66,6 @@ Wybierz przycisk **Zmień nazwę** .
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Launch-Multiple-Projects/player]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie i edytowanie konfiguracji kompilacji (Visual Studio w systemie Windows)](/visualstudio/ide/how-to-create-and-edit-configurations)

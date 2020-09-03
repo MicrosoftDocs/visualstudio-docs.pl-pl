@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e6626faa09f1e38506c2d205d13caa9a3707fc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659463"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Aktualizowanie modelu UML z wątku w tle
@@ -23,7 +23,7 @@ Czasami może być przydatne wprowadzanie zmian do modelu w wątku w tle. Na prz
 
  Należy jednak pamiętać, że sklep UML nie jest bezpieczny wątkowo. Ważne są następujące środki ostrożności:
 
-- Każda Aktualizacja modelu lub diagramu musi zostać wykonana w wątku interfejsu użytkownika. Wątek w tle musi używać <xref:System.Windows.Forms.Control.Invoke%2A> lub `Dispatcher.` <xref:System.Windows.Threading.Dispatcher.Invoke%2A>, aby wątek interfejsu użytkownika wykonywał rzeczywiste aktualizacje.
+- Każda Aktualizacja modelu lub diagramu musi zostać wykonana w wątku interfejsu użytkownika. Wątek w tle musi używać <xref:System.Windows.Forms.Control.Invoke%2A> lub, `Dispatcher.` <xref:System.Windows.Threading.Dispatcher.Invoke%2A> Aby wątek interfejsu użytkownika wykonywał rzeczywiste aktualizacje.
 
 - Jeśli grupujesz serię zmian w pojedynczą transakcję, zalecamy uniemożliwienie użytkownikowi edytowania modelu, gdy transakcja jest w toku. W przeciwnym razie wszelkie zmiany wprowadzone przez użytkownika staną się częścią tej samej transakcji. Można uniemożliwić użytkownikowi wprowadzanie zmian, wyświetlając modalne okno dialogowe. Jeśli chcesz, możesz podać przycisk Anuluj w oknie dialogowym. Użytkownik może zobaczyć zmiany w miarę ich występowania.
 
@@ -32,7 +32,7 @@ Czasami może być przydatne wprowadzanie zmian do modelu w wątku w tle. Na prz
 
 #### <a name="to-run-the-example"></a>Aby uruchomić przykład
 
-1. Utwórz procedurę obsługi poleceń w C# projekcie, zgodnie z opisem w temacie [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+1. Utwórz procedurę obsługi poleceń w projekcie w języku C#, zgodnie z opisem w artykule [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 2. Upewnij się, że projekt zawiera odwołania do tych zestawów:
 
@@ -50,13 +50,13 @@ Czasami może być przydatne wprowadzanie zmian do modelu w wątku w tle. Na prz
 
 3. Dodaj do projektu formularz systemu Windows o nazwie **ProgressForm**. Powinien zostać wyświetlony komunikat informujący o tym, że aktualizacje są w toku. Nie musi mieć żadnych innych kontrolek.
 
-4. Dodaj C# plik zawierający kod, który jest wyświetlany po kroku 7.
+4. Dodaj plik C# zawierający kod, który jest wyświetlany po kroku 7.
 
 5. Skompiluj i Uruchom projekt.
 
-    Nowe wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozpocznie się w trybie eksperymentalnym.
+    Nowe wystąpienie programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozpocznie się w trybie eksperymentalnym.
 
-6. Utwórz lub Otwórz diagram klas UML w eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+6. Utwórz lub Otwórz diagram klas UML w eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 7. Kliknij prawym przyciskiem myszy w dowolnym miejscu diagramu klas UML, a następnie kliknij polecenie **Dodaj kilka klas UML**.
 
@@ -185,7 +185,7 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
 
  `DiagramView uiThreadHolder = context.CurrentDiagram.GetObject<Diagram>().ActiveDiagramView;`
 
- Za pomocą `uiThreadHolder.Invoke()` do wykonywania operacji w wątku interfejsu użytkownika.
+ Za pomocą `uiThreadHolder.Invoke()` programu można wykonywać operacje w wątku interfejsu użytkownika.
 
 ## <a name="see-also"></a>Zobacz też
  [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Definiowanie obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)

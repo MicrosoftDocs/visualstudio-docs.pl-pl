@@ -1,5 +1,5 @@
 ---
-title: Przewodnik wtyczek kontroli kodu źródłowego testowania | Dokumentacja firmy Microsoft
+title: Przewodnik testowy dla wtyczek kontroli źródła | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,97 +15,97 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6790e61eddc81045bb168028ee7aeef7a0492e3c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825747"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Przewodnik testowania wtyczek kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ta sekcja zawiera wskazówki dotyczące testowania Twojego wtyczka do kontroli źródła przy użyciu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Rozbudowane przegląd typowych obszarów, testowania, a także niektórych bardziej skomplikowanych obszarów, które może być problematyczne, jest dostępna. W tym omówieniu nie stanowi wyczerpującej listy przypadków testowych.  
+Ta sekcja zawiera wskazówki dotyczące testowania wtyczki kontroli źródła za pomocą programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Jest to obszerne omówienie najpopularniejszych obszarów testowania, a także niektóre bardziej Intricate obszary, które mogą być problematyczne. Tego omówienia nie jest to pełna lista przypadków testowych.  
   
 > [!NOTE]
-> Kilka poprawek usterek i usprawnień do najnowszej wersji [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE może wykryć problemy z istniejącego źródła wtyczek kontroli napotkanych wcześniej nie podczas korzystania z poprzednich wersji [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Zdecydowanie zaleca się, testowanie istniejących wtyczka do kontroli źródła dla obszarów, wymienione w tej sekcji, nawet jeśli żadne zmiany nie zostały wprowadzone do wtyczki od poprzedniej wersji programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+> Niektóre poprawki błędów i ulepszenia najnowszego [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] środowiska IDE mogą odkrywać problemy z istniejącymi wtyczkami kontroli źródła, które wcześniej nie były używane podczas korzystania z poprzednich wersji programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Zdecydowanie zaleca się przetestowanie istniejącej wtyczki kontroli źródła dla obszarów wyliczanych w tej sekcji, nawet jeśli nie wprowadzono żadnych zmian do wtyczki od czasu poprzedniej wersji programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
-## <a name="common-preparation"></a>Typowe przygotowania  
- Maszyna z [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] i wtyczki kontroli źródła docelowej zainstalowany, jest wymagany. Druga maszyna podobnie skonfigurowane może służyć do niektórych otwierania z kontroli źródła testów.  
+## <a name="common-preparation"></a>Wspólne przygotowanie  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]Wymagana jest maszyna z i docelowa wtyczka do kontroli źródła. Druga skonfigurowana konfiguracja może być używana w przypadku niektórych otwartych z testów kontroli źródła.  
   
-## <a name="definition-of-terms"></a>Definicje terminów  
- Na potrzeby tego przewodnika testów należy użyć następujące definicje terminów:  
+## <a name="definition-of-terms"></a>Definicja warunków  
+ Na potrzeby tego przewodnika testowego należy użyć następujących definicji warunku:  
   
  Projekt klienta  
- Każdy projekt typu dostępne w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , która obsługuje integrację kontroli źródła (na przykład [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], lub [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]).  
+ Dowolny typ projektu dostępny w programie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obsługujący integrację kontroli źródła (na przykład,, [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] [!INCLUDE[csprcs](../../includes/csprcs-md.md)] lub [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] ).  
   
  Projekt sieci Web  
- Istnieją cztery rodzaje projektów sieci Web: System plików, lokalnych usług IIS, lokacjami zdalnymi i FTP.  
+ Istnieją cztery typy projektów sieci Web: system plików, lokalne usługi IIS, zdalne Lokacje i FTP.  
   
-- Projekty systemu plików są tworzone na ścieżkę lokalną, ale nie wymagają Internet Information Services (IIS) do zainstalowania, ponieważ są używane wewnętrznie za pośrednictwem ścieżki UNC i można umieścić pod kontrolą źródła z wewnątrz IDE, podobnie jak projektów klienckich.  
+- Projekty systemu plików są tworzone w ścieżce lokalnej, ale nie wymagają instalacji Internet Information Services (IIS), ponieważ są one dostępne wewnętrznie za pośrednictwem ścieżki UNC i mogą być umieszczone pod kontrolą źródła z wnętrza IDE, podobnie jak w przypadku projektów klientów.  
   
-- Lokalnych projektów usług IIS działają z usługami IIS zainstalowane na tym samym komputerze, które są dostępne przy użyciu adresu URL, wskazując na komputerze lokalnym.  
+- Lokalne projekty usług IIS współpracują z usługami IIS, które są zainstalowane na tym samym komputerze i są dostępne z adresem URL wskazującym na maszynę lokalną.  
   
-- Zdalne projektów witryny są również tworzone w ramach usług IIS, ale są one umieszczone pod kontrolą źródła, na komputerze serwera usług IIS, a nie z wewnątrz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
+- Projekty witryn zdalnych są również tworzone w ramach usług IIS, ale znajdują się pod kontrolą źródła na komputerze serwera usług IIS, a nie w środowisku [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
   
-- Projekty FTP są dostępne za pośrednictwem zdalnego serwera FTP, ale nie mogą być umieszczone pod kontrolą źródła.  
+- Dostęp do projektów FTP odbywa się za pomocą zdalnego serwera FTP, ale nie można ich umieścić pod kontrolą źródła.  
   
-  Funkcja rejestracji  
-  Inna nazwa rozwiązania lub projektu objętego kontrolą źródła.  
+  Działanie  
+  Inny termin dla rozwiązania lub projektu pod kontrolą źródła.  
   
-  Wersja Store  
-  Bazy danych kontroli źródła, jest uzyskiwany za pośrednictwem interfejsu API wtyczki kontroli źródła.  
+  Magazyn wersji  
+  Baza danych kontroli źródła, do której uzyskuje się dostęp za pomocą interfejsu API dodatku plug-in kontroli źródła.  
   
-## <a name="test-areas-covered-in-this-section"></a>Obszary testów, opisanych w tej sekcji  
+## <a name="test-areas-covered-in-this-section"></a>Obszary testowe omówione w tej sekcji  
   
-- [Obszar testowy 1: dodawanie do kontroli kodu źródłowego i otwieranie z poziomu kontroli kodu źródłowego](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+- [Obszar testowy 1: Dodaj do lub Otwórz z kontroli źródła](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-  - Wielkość 1a: Dodaj rozwiązanie do kontroli źródła  
+  - Przypadek 1a: Dodawanie rozwiązania do kontroli źródła  
 
-  - Wielkość 1b: Otwórz rozwiązanie z kontroli źródła  
+  - Przypadek 1b: Otwórz rozwiązanie z kontroli źródła  
 
-  - Przypadek 1c: Dodaj rozwiązanie z kontroli źródła  
+  - Przypadek 1c: Dodawanie rozwiązania z kontroli źródła  
 
 - [Obszar testowy 2: pobieranie z kontroli kodu źródłowego](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
-- [Obszar testowy 3: wyewidencjonowywanie i cofanie wyewidencjonowania](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+- [Obszar testowy 3: wyewidencjonowywanie/cofanie wyewidencjonowania](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-  - Przypadek 3: Zapoznaj się z / Cofnij wyewidencjonowanie  
+  - Przypadek 3: wyewidencjonowywanie/cofanie wyewidencjonowania  
 
-  - Wielkości liter 3a: Wyewidencjonuj  
+  - Przypadek 3A: wyewidencjonowywanie  
 
-  - Wielkość 3b: Wyewidencjonowanie bez połączenia  
+  - Przypadek 3B: odłączono wyewidencjonowanie  
 
-  - Przypadek 3c: Edytuj zapytanie/zapytanie Zapisz (QEQS)  
+  - Przypadek 3C: modyfikowanie zapytania/zapisywanie zapytania (QEQS)  
 
-  - Zamierzone, Zapisz 3d: Dyskretnej wyewidencjonowania  
+  - Przypadek 3W: wyewidencjonowywanie dyskretne  
 
-  - Wielkość 3e: Cofnij wyewidencjonowanie  
+  - Przypadek 3e: Cofnij wyewidencjonowanie  
   
 - [Obszar testowy 4: ewidencjonowanie](../../extensibility/internals/test-area-4-check-in.md)  
   
-  - Wielkość 4a: Zmodyfikowane elementy  
+  - Przypadek 4a: zmodyfikowane elementy  
 
-  - Wielkość 4b: Trwa dodawanie plików  
+  - Przypadek 4B: Dodawanie plików  
 
-  - W przypadku 4c: Dodawanie projektów  
+  - Przypadek 4C: Dodawanie projektów  
   
 - [Obszar testowy 5: zmiana kontroli kodu źródłowego](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-  - Wielkość 5a: powiązania  
+  - Przypadek 5a: powiązanie  
 
-  - Wielkość 5b: Usuń powiązanie  
+  - Przypadek 5B: Usuwanie powiązania  
 
-  - W przypadku 5c: ponowne wiązanie  
+  - Przypadek 5c: rebind  
 
-- [Obszar testowy 6: usuwanie](../../extensibility/internals/test-area-6-delete.md)  
+- [Obszar testowy 6: Usuwanie](../../extensibility/internals/test-area-6-delete.md)  
 
-- [Obszar testowy 7: udostępnianie](../../extensibility/internals/test-area-7-share.md)  
+- [Obszar testowy 7: Udostępnij](../../extensibility/internals/test-area-7-share.md)  
 
 - [Obszar testowy 8: przełączanie wtyczki](../../extensibility/internals/test-area-8-plug-in-switching.md)  
 
-  - 8a przypadków: Automatyczna zmiana  
+  - Przypadek 8a: Automatyczna zmiana  
 
-  - 8b przypadków: Oparte na rozwiązaniach zmiany  
+  - Przypadek 8b: zmiana oparta na rozwiązaniu  
 
 ## <a name="see-also"></a>Zobacz też  
  [Wtyczki kontroli źródła](../../extensibility/source-control-plug-ins.md)

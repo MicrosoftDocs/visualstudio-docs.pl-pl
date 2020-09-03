@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94a61e0083b17fa095b419a2066a4f8b9c39dfb7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350605"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a>Debugowanie wielu procesów (C#, Visual Basic, C++)
@@ -52,7 +52,7 @@ Aby rozpocząć debugowanie projektu z **Eksplorator rozwiązań** bez tworzenia
 
 1. Wybierz pozycję **Zastosuj**, lub **przycisk OK** , aby zastosować i zamknąć okno dialogowe.
 
-### <a name="attach-to-a-process"></a><a name="BKMK_Attach_to_a_process"></a>Dołącz do procesu
+### <a name="attach-to-a-process"></a><a name="BKMK_Attach_to_a_process"></a> Dołącz do procesu
 
 Debuger może również *dołączać* do aplikacji działających w procesach poza programem Visual Studio, w tym na urządzeniach zdalnych. Po dołączeniu do aplikacji możesz użyć debugera programu Visual Studio. Funkcje debugowania mogą być ograniczone. Jest to zależne od tego, czy aplikacja została skompilowana przy użyciu informacji debugowania, czy masz dostęp do kodu źródłowego aplikacji oraz czy kompilator JIT śledzi informacje debugowania.
 
@@ -69,7 +69,7 @@ Aby uzyskać więcej informacji, zobacz [dołączanie do uruchomionych procesów
 >[!NOTE]
 >Debuger nie dołącza automatycznie do procesu podrzędnego, który jest uruchamiany przez debugowany proces, nawet jeśli projekt podrzędny znajduje się w tym samym rozwiązaniu. Aby debugować proces podrzędny, należy dołączyć do procesu podrzędnego po jego rozpoczęciu lub skonfigurować Edytor rejestru systemu Windows, aby uruchamiał proces podrzędny w nowym wystąpieniu debugera.
 
-### <a name="use-the-registry-editor-to-automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Automatically_start_an_process_in_the_debugger"></a>Użyj edytora rejestru, aby automatycznie uruchomić proces w debugerze
+### <a name="use-the-registry-editor-to-automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Użyj edytora rejestru, aby automatycznie uruchomić proces w debugerze
 
 Czasami może być konieczne Debugowanie kodu startowego dla aplikacji, która jest uruchamiana przez inny proces. Przykłady obejmują usługi i akcje instalacji niestandardowej. Debuger może być uruchamiany i automatycznie dołączany do aplikacji.
 
@@ -93,7 +93,7 @@ Czasami może być konieczne Debugowanie kodu startowego dla aplikacji, która j
 
    ![Wpis początkowy debugera automatycznego w regedit.exe](../debugger/media/dbg_execution_automaticstart_result.png "Wpis początkowy debugera automatycznego w regedit.exe")
 
-## <a name="debug-with-multiple-processes"></a><a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a>Debugowanie z wieloma procesami
+## <a name="debug-with-multiple-processes"></a><a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Debugowanie z wieloma procesami
 <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a>
 
 Podczas debugowania aplikacji z kilkoma procesami polecenia debugera przerywania, krokowe i kontynuowania mają domyślnie wpływ na wszystkie procesy. Na przykład gdy proces jest zawieszony w punkcie przerwania, wykonywanie wszystkich innych procesów również zostaje zawieszone. To zachowanie domyślne można zmienić, aby uzyskać większą kontrolę nad obiektami docelowymi poleceń wykonywania.
@@ -102,27 +102,27 @@ Podczas debugowania aplikacji z kilkoma procesami polecenia debugera przerywania
 
 - W obszarze **Narzędzia** (lub **Debuguj**) > **Opcje**  >  **debugowania**  >  **Ogólne**zaznacz lub usuń zaznaczenie pola wyboru **Przerwij wszystkie procesy w przypadku, gdy jest to jedno przerwanie procesu** .
 
-### <a name="break-step-and-continue-commands"></a><a name="BKMK_Break__step__and_continue_commands"></a>Polecenia Break, Step i Continue
+### <a name="break-step-and-continue-commands"></a><a name="BKMK_Break__step__and_continue_commands"></a> Polecenia Break, Step i Continue
 
 W poniższej tabeli opisano zachowania poleceń debugowania po zaznaczeniu pola wyboru **Przerwij wszystkie procesy, gdy** jest zaznaczone lub jest ono odtworzone:
 
-|**Polecenie**|Wybrano|Niezaznaczone|
+|**Polecenie**|Wybrane|Niezaznaczone|
 |-|-|-|
 |**Debuguj**   >  **Przerwij wszystko**|Wszystkie procesy są przerywane.|Wszystkie procesy są przerywane.|
 |**Debuguj**  >  **Kontynuuj**|Wszystkie procesy są wznawiane.|Wszystkie zawieszone procesy są wznawiane.|
 |**Debuguj**  >  **Wkrocz do**, **Przekrocz lub** **Wyjdź**|Wszystkie procesy są uruchamiane podczas wykonywania bieżących kroków procesu. <br />Następnie wszystkie procesy są przerywane.|Bieżące etapy procesu. <br />Zawieszone procesy są wznawiane. <br />Uruchomione procesy są kontynuowane.|
-|**Debuguj**  >  **Wkrocz do bieżącego procesu**, **Przekrocz bieżący**proces lub **Wyjdź z bieżącego procesu**|Nie dotyczy|Bieżące etapy procesu.<br />Inne procesy utrzymują swój istniejący stan (zawieszone lub działające).|
+|**Debuguj**  >  **Wkrocz do bieżącego procesu**, **Przekrocz bieżący**proces lub **Wyjdź z bieżącego procesu**|Brak|Bieżące etapy procesu.<br />Inne procesy utrzymują swój istniejący stan (zawieszone lub działające).|
 |**Punkt przerwania** okna źródłowego|Wszystkie procesy są przerywane.|Tylko przerwy w procesie okna źródłowego.|
 |Okno źródłowe **uruchamia do kursora**<br />Okno źródłowe musi znajdować się w bieżącym procesie.|Wszystkie procesy są uruchamiane, gdy proces okna źródłowego jest uruchamiany do kursora, a następnie do końca.<br />Następnie wszystkie inne procesy są przerywane.|Proces okna źródłowego jest uruchamiany do kursora.<br />Inne procesy utrzymują swój istniejący stan (zawieszone lub działające).|
-|**Proces przerwania** > okna **procesów**|Nie dotyczy|Wybrane podziały procesu.<br />Inne procesy utrzymują swój istniejący stan (zawieszone lub działające).|
-|Okno **procesów** > **kontynuować procesu**|Nie dotyczy|Wybrany proces zostanie wznowiony.<br />Inne procesy utrzymują swój istniejący stan (zawieszone lub działające).|
+|**Proces przerwania** > okna **procesów**|Brak|Wybrane podziały procesu.<br />Inne procesy utrzymują swój istniejący stan (zawieszone lub działające).|
+|Okno **procesów** > **kontynuować procesu**|Brak|Wybrany proces zostanie wznowiony.<br />Inne procesy utrzymują swój istniejący stan (zawieszone lub działające).|
 
-### <a name="find-the-source-and-symbol-pdb-files"></a><a name="BKMK_Find_the_source_and_symbol___pdb__files"></a>Znajdowanie plików źródłowych i symboli (. pdb)
+### <a name="find-the-source-and-symbol-pdb-files"></a><a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Znajdowanie plików źródłowych i symboli (. pdb)
 Aby nawigować po kodzie źródłowym procesu, debuger musi mieć dostęp do plików źródłowych i plików symboli. Aby uzyskać więcej informacji, zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 Jeśli nie możesz uzyskać dostępu do plików dla procesu, możesz nawigować przy użyciu okna **demontażu** . Aby uzyskać więcej informacji, zobacz [How to: Use the deassembly Window](../debugger/how-to-use-the-disassembly-window.md).
 
-### <a name="switch-between-processes"></a><a name="BKMK_Switch_between_processes"></a>Przełączanie między procesami
+### <a name="switch-between-processes"></a><a name="BKMK_Switch_between_processes"></a> Przełączanie między procesami
 
 Podczas debugowania można dołączyć do wielu procesów, ale tylko jeden proces jest aktywny w debugerze w danym momencie. Można ustawić aktywny lub *bieżący* proces na pasku narzędzi **lokalizacji debugowania** lub w oknie **procesy** . Aby przełączać się między procesami, oba procesy muszą być w trybie przerwania.
 

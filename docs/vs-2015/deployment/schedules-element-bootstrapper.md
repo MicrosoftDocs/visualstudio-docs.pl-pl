@@ -1,5 +1,5 @@
 ---
-title: '&lt;Harmonogramy&gt; — Element (program inicjujący) | Dokumentacja firmy Microsoft'
+title: '&lt;Schedules — &gt; element (program inicjujący) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,16 +17,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 85ffab2272a55bfe77c5f2a73c6e25967a203c85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68206096"
 ---
-# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Harmonogramy&gt; — Element (program inicjujący)
+# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Schedules — &gt; element (program inicjujący)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Schedules` Element zawiera `Schedule` elementów, które definiują określonych godzinach, w której polecenia zdefiniowane przez `Command` element powinien być uruchamiany.  
+`Schedules`Element zawiera `Schedule` elementy, które definiują określone czasy, w których polecenia zdefiniowane przez `Command` element powinny być uruchamiane.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,29 +42,29 @@ ms.locfileid: "68206096"
 </Schedules>  
 ```  
   
-## <a name="elements-and-attributes"></a>Atrybuty i elementy  
- `Schedules` Element jest elementem podrzędnym `Product` elementu. Każdy `Product` element może mieć co najwyżej jeden `Schedules` elementu. `Schedules` Element nie ma żadnych atrybutów.  
+## <a name="elements-and-attributes"></a>Elementy i atrybuty  
+ `Schedules`Element jest elementem podrzędnym `Product` elementu. Każdy `Product` element może mieć co najwyżej jeden `Schedules` element. `Schedules`Element nie ma żadnych atrybutów.  
   
-## <a name="schedule"></a>Harmonogram  
- `Schedule` Element jest elementem podrzędnym `Schedules` elementu. A `Schedules` element musi mieć co najmniej jeden `Schedule` elementu.  
+## <a name="schedule"></a>Zaplanuj  
+ `Schedule`Element jest elementem podrzędnym `Schedules` elementu. `Schedules`Element musi zawierać co najmniej jeden `Schedule` element.  
   
  `Schedule` ma następujący atrybut.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagana. Nazwa elementu harmonogramu. Odpowiada to `ScheduleName` właściwość `Command` elementu. Gdy `Command` odwołuje się do harmonogramu o nazwie zostanie wykonana tylko o godzinie określonej przez to `Schedule` elementu. Harmonogramy, również mogą być skojarzone z `FailIf` i `BypassIf` elementów, które ograniczają tych testów warunkowych do wykonywania zgodnie z określonym harmonogramem. Aby uzyskać więcej informacji, zobacz [ \<polecenia > Element](../deployment/commands-element-bootstrapper.md).|  
+|`Name`|Wymagany. Nazwa elementu harmonogramu. Odpowiada `ScheduleName` właściwości `Command` elementu. Gdy `Command` odwołuje się do określonego harmonogramu, zostanie on wykonany tylko w czasie wskazywanym przez ten `Schedule` element. Harmonogramy mogą również być skojarzone z `FailIf` `BypassIf` elementami i, które ograniczają te testy warunkowe do wykonania zgodnie z określonym harmonogramem. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md).|  
   
- Biorąc pod uwagę `Schedule` element może mieć dokładnie jeden z następujących elementów podrzędnych.  
+ Dany `Schedule` element może mieć dokładnie jeden z następujących elementów podrzędnych.  
   
 ## <a name="buildlist"></a>BuildList  
- `BuildList` Element Instruuje Instalatora Aby wykonać polecenie natychmiast, po uruchomieniu bootstrapping aplikacji.  
+ `BuildList`Element instruuje Instalatora, aby wykonał polecenie natychmiast po uruchomieniu aplikacji inicjującej.  
   
 ## <a name="beforepackage"></a>BeforePackage  
- `BeforePackage` Element Instruuje Instalatora Aby wykonać polecenie przed zainstalowaniem określonego pakietu.  
+ `BeforePackage`Element instruuje Instalatora, aby wykonał polecenie przed zainstalowaniem określonego pakietu.  
   
 ## <a name="afterpackage"></a>AfterPackage  
- `AfterPackage` Element Instruuje Instalatora aby wykonywanie polecenia po zainstalowaniu określonego pakietu.  
+ `AfterPackage`Element instruuje Instalatora, aby wykonał polecenie po zainstalowaniu określonego pakietu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [\<Product> Element](../deployment/product-element-bootstrapper.md)   
- [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)
+ [\<Product> Postaci](../deployment/product-element-bootstrapper.md)   
+ [Produkt i pakiet — odwołanie do schematu](../deployment/product-and-package-schema-reference.md)
