@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83a01c96b64dcd55adfd775efc266063efbab27d
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875946"
 ---
 # <a name="assign-activity-designer"></a>Assign, projektant działań
@@ -41,7 +41,7 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Assign> wł
 |<xref:System.Activities.Statements.Assign.To%2A>|Prawda|Zmienna lub argument, do którego <xref:System.Activities.Statements.Assign.Value%2A> jest przypisany. Wartość musi być prawidłowym identyfikatorem Visual Basic. Aby ustawić właściwość, wpisz wyrażenie Visual Basic w polu **do** w **projektancie działania lub** w siatce właściwości.|
 |<xref:System.Activities.Statements.Assign.Value%2A>|Prawda|Wartość, która jest przypisana do zmiennej. Aby ustawić <xref:System.Activities.Statements.Assign.Value%2A> , wpisz wyrażenie Visual Basic w polu **wartość** w projektancie działania lub w **Assign** siatce właściwości.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Typy pierwotne](../workflow-designer/primitives-activity-designers.md)
 - [Opóźnienie](../workflow-designer/delay-activity-designer.md)

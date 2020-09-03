@@ -1,5 +1,5 @@
 ---
-title: Komunikat zadania | Dokumentacja firmy Microsoft
+title: Zadanie komunikatu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,36 +20,36 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 48e867cd0993106247f7105c1102f4e1407a4fed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190895"
 ---
 # <a name="message-task"></a>Komunikat — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rejestruje komunikat podczas kompilacji.  
+Rejestruje komunikat w trakcie kompilacji.  
   
 ## <a name="parameters"></a>Parametry  
- W następujących tabeli przedstawiono parametry `Message` zadania.  
+ W tabeli następujące kwestie opisano parametry `Message` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`Importance`|Opcjonalnie `String` parametru.<br /><br /> Określa ważność wiadomości. Ten parametr może mieć wartość `high`, `normal` lub `low`. Wartość domyślna to `normal`.|  
-|`Text`|Opcjonalnie `String` parametru.<br /><br /> Tekst błędu logowania.|  
+|`Importance`|Opcjonalny `String` parametr.<br /><br /> Określa ważność komunikatu. Ten parametr może mieć wartość `high` `normal` lub `low` . Wartość domyślna to `normal`.|  
+|`Text`|Opcjonalny `String` parametr.<br /><br /> Tekst błędu do zarejestrowania.|  
   
 ## <a name="remarks"></a>Uwagi  
- `Message` Zadanie pozwala [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] projekty do problemu komunikatów rejestratorów w innych czynności w procesie kompilacji.  
+ `Message`Zadanie pozwala na [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] wydawanie komunikatów przez projekty w różnych krokach procesu kompilacji.  
   
- Jeśli `Condition` daje w wyniku parametr `true`, wartość `Text` parametru będą rejestrowane i kompilacja będą w dalszym ciągu wykonują. Jeśli `Condition` parametr nie istnieje, tekst komunikatu jest rejestrowane. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Jeśli `Condition` parametr daje w to `true` , wartość `Text` parametru zostanie zarejestrowana, a kompilacja będzie kontynuowana. Jeśli `Condition` parametr nie istnieje, tekst komunikatu jest rejestrowany. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
- Domyślnie komunikat jest wysyłany do rejestratora konsoli do programu MSBuild. Można to zmienić, ustawiając <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> parametru. Rejestrator interpretuje `Importance` parametru.  
+ Domyślnie komunikat jest wysyłany do rejestratora konsoli programu MSBuild. Można to zmienić, ustawiając <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> parametr. Rejestrator interpretuje `Importance` parametr.  
   
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu rejestruje komunikaty wszystkich rejestratorów zarejestrowanych.  
+ Poniższy przykład kodu rejestruje komunikaty do wszystkich zarejestrowanych rejestratorów.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

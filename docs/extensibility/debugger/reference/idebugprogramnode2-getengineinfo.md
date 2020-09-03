@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetEngineInfo | Dokumenty firmy Microsoft
+title: 'IDebugProgramNode2:: GetEngineInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c2e74ba3c0f826314818bc883778a6364ff3fb6e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722104"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
-Pobiera nazwę i identyfikator aparatu debugowania (DE) z uruchomionym programem.
+Pobiera nazwę i identyfikator aparatu debugowania (DE), w którym działa program.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,13 +43,13 @@ int GetEngineInfo(
 
 ## <a name="parameters"></a>Parametry
 `pbstrEngine`\
-[na zewnątrz] Zwraca nazwę DE uruchomionego programu (C++-specific: może to być wskaźnik null wskazujący, że wywołujący nie jest zainteresowany nazwą aparatu).
+określoną Zwraca nazwę nieuruchomionego programu (specyficznego dla języka C++: może to być wskaźnik o wartości null wskazujący, że obiekt wywołujący nie interesuje nazwy aparatu).
 
 `pguidEngine`\
-[na zewnątrz] Zwraca globalnie unikatowy identyfikator de uruchomiony program (C++-specific: może to być wskaźnik null wskazujący, że wywołujący nie jest zainteresowany identyfikatorem GUID aparatu).
+określoną Zwraca globalnie unikatowy identyfikator nieuruchomionego programu (specyficznego dla języka C++: może to być wskaźnik o wartości null wskazujący, że obiekt wywołujący nie interesuje identyfikatora GUID aparatu).
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

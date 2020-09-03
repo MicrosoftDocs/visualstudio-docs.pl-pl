@@ -1,5 +1,5 @@
 ---
-title: Właściwości Pola okienne i interfejsy | Dokumenty firmy Microsoft
+title: Pola i interfejsy okna właściwości | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,85 +11,85 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9529708c781e7fdb04c3b4c5ee143b7605857e84
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706165"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Pola i interfejsy okna właściwości
-Model do wyboru, aby określić, jakie informacje są wyświetlane w oknie Właściwości jest oparty na oknie, które ma **fokus** w IDE. Każde okno i obiekt w wybranym oknie mogą mieć jego obiekt kontekstu zaznaczenia wypchnięty do kontekstu zaznaczenia globalnego. Środowisko aktualizuje kontekst zaznaczenia globalnego z wartościami z ramki okna, gdy to okno ma fokus. Gdy fokus się zmieni, podobnie jak kontekst zaznaczenia.
+Model wyboru służący do określania, jakie informacje są wyświetlane w oknie **Właściwości** , zależy od okna, które ma fokus w środowisku IDE. Każde okno i obiekt w wybranym oknie może mieć obiekt kontekstu zaznaczenia wypychany do globalnego kontekstu wyboru. Środowisko aktualizuje globalny kontekst wyboru przy użyciu wartości z ramki okna, gdy to okno ma fokus. Gdy fokus zmieni się, oznacza to, że kontekst zaznaczenia.
 
-## <a name="tracking-selection-in-the-ide"></a>Śledzenie wyboru w IDE
- Ramka okna lub lokacja, należąca do <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>IDE, ma usługę o nazwie . Poniższe kroki pokazują, jak zmiana zaznaczenia, spowodowana przez użytkownika, zmieniając fokus na inne otwarte okno lub wybierając inny element projektu w **Eksploratorze rozwiązań,** jest zaimplementowana w celu zmiany zawartości wyświetlanej w oknie **Właściwości.**
+## <a name="tracking-selection-in-the-ide"></a>Śledzenie wyboru w środowisku IDE
+ W przypadku ramki okna lub lokacji należącej do IDE jest wywoływana usługa <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> . Poniższe kroki pokazują, jak zmiana w wyborze, spowodowana przez użytkownika zmiana fokusu na inne otwarte okno lub wybranie innego elementu projektu w **Eksplorator rozwiązań**, jest zaimplementowana w celu zmiany zawartości wyświetlanej w oknie **Właściwości** .
 
-1. Obiekt utworzony przez vsPackage, który znajduje się <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> w <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> wybranym <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>oknie wywołuje wywołać .
+1. Obiekt utworzony przez pakietu VSPackage, który jest zlokalizowany w wybranym oknie wywołuje <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> do wywołania metody <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> Invoke <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .
 
-2. Kontener wyboru, dostarczony przez wybrane okno, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> tworzy własny obiekt. Po zmianie zaznaczenia VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> wywołuje powiadamianie wszystkich odbiorników w środowisku, w tym **właściwości** okna, o zmianie. Zapewnia również dostęp do hierarchii i informacji o elemencie związanych z nowym wyborem.
+2. Kontener wyboru udostępniony przez wybrane okno tworzy własny <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> obiekt. Po zmianie zaznaczenia pakietu VSPackage wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> powiadomienia o wszelkich detektorach w środowisku, w tym okna **Właściwości** zmiany. Zapewnia również dostęp do informacji o hierarchii i elementu związanych z nowym wyborem.
 
-3. Wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> i przekazanie go wybrane `VSHPROPID_BrowseObject` elementy hierarchii <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> w parametrze wypełnia obiekt.
+3. Wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> i przekazanie do niego wybranych elementów hierarchii w `VSHPROPID_BrowseObject` parametrze wypełnia <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> obiekt.
 
-4. Obiekt pochodzący z [interfejsu IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) jest zwracany dla [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) żądanego elementu, a środowisko zawija go <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> do (zobacz następujący krok). Jeśli wywołanie nie powiedzie się, `IVsHierarchy::GetProperty`środowisko wykonuje drugie wywołanie , przekazując go kontenera wyboru [__VSHPROPID. VSHPROPID_SelContainer,](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) które dostarczają towary lub towary hierarchii.
+4. Obiekt pochodny [interfejsu IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) jest zwracany dla [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) dla żądanego elementu, a środowisko zawija je do <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (zobacz poniższy krok). Jeśli wywołanie zakończy się niepowodzeniem, środowisko wykonuje drugie wywołanie `IVsHierarchy::GetProperty` , przekazując do niego kontener wyboru [__VSHPROPID. VSHPROPID_SelContainer](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) , że dostarcza element lub elementy hierarchii.
 
-    Projekt VSPackage nie <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> tworzy, ponieważ środowisko dostarczone okno VSPackage, który implementuje go <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (na przykład **Eksplorator rozwiązań)** tworzy w jego imieniu.
+    Projekt pakietu VSPackage nie jest tworzony <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> , ponieważ okno dostarczone przez środowisko pakietu VSPackage, które implementuje go (na przykład **Eksplorator rozwiązań**) konstrukcje <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> w jego imieniu.
 
-5. Środowisko wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> metody, aby uzyskać obiekty na `IDispatch` podstawie interfejsu, aby wypełnić **właściwości** okna.
+5. Środowisko wywołuje metody <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> w celu uzyskania obiektów opartych na `IDispatch` interfejsie do wypełnienia w oknie **Właściwości** .
 
-   Po zmianie wartości w oknie **Właściwości,** VSPackages implementują `IVsTrackSelectionEx::OnElementValueChangeEx` i `IVsTrackSelectionEx::OnSelectionChangeEx` zgłaszają zmianę wartości elementu. Środowisko następnie wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> lub zachować informacje wyświetlane w oknie Właściwości zsynchronizowane z **wartościami** właściwości. Aby uzyskać więcej informacji, zobacz [Aktualizowanie wartości właściwości w oknie Właściwości](#updating-property-values-in-the-properties-window).
+   Gdy wartość w oknie **Właściwości** zostanie zmieniona, pakietów VSPackage zaimplementować `IVsTrackSelectionEx::OnElementValueChangeEx` i `IVsTrackSelectionEx::OnSelectionChangeEx` Aby zgłosić zmianę wartości elementu. Środowisko następnie wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> lub, <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> Aby zachować informacje wyświetlane w oknie **Właściwości** zsynchronizowane z wartościami właściwości. Aby uzyskać więcej informacji, zobacz [aktualizowanie wartości właściwości w oknie właściwości](#updating-property-values-in-the-properties-window).
 
-   Oprócz wybrania innego elementu projektu w **Eksploratorze rozwiązań,** aby wyświetlić właściwości związane z tym elementem, można również wybrać inny obiekt z okna formularza lub dokumentu przy użyciu listy rozwijanej dostępnej w oknie **Właściwości.** Aby uzyskać więcej informacji, zobacz [Właściwości listy obiektów okna](../../extensibility/internals/properties-window-object-list.md).
+   Oprócz wyboru innego elementu projektu w **Eksplorator rozwiązań** , aby wyświetlić właściwości powiązane z tym elementem, można również wybrać inny obiekt z poziomu formularza lub dokumentu przy użyciu listy rozwijanej dostępnej w oknie **Właściwości** . Aby uzyskać więcej informacji, zobacz [Lista obiektów okna właściwości](../../extensibility/internals/properties-window-object-list.md).
 
-   Można zmienić sposób wyświetlania informacji w siatce okna **Właściwości** z alfabetycznych na kategoryczne, a jeśli jest dostępna, można również otworzyć stronę właściwości dla zaznaczonego obiektu, klikając odpowiednie przyciski w oknie **Właściwości.** Aby uzyskać więcej informacji, zobacz [Właściwości przyciski okien](../../extensibility/internals/properties-window-buttons.md) i [strony właściwości](../../extensibility/internals/property-pages.md).
+   Można zmienić sposób wyświetlania informacji w siatce okna **Właściwości** z alfabetyczne do kategorii i, jeśli jest dostępny, można także otworzyć stronę właściwości dla wybranego obiektu, klikając odpowiednie przyciski w oknie **Właściwości** . Aby uzyskać więcej informacji, zobacz [przyciski okna właściwości](../../extensibility/internals/properties-window-buttons.md) i [strony właściwości](../../extensibility/internals/property-pages.md).
 
-   Na koniec w dolnej części okna **Właściwości** zawiera również opis pola wybranego w **siatce** okna Właściwości. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie opisów pól z okna Właściwości](#getting-field-descriptions-from-the-properties-window).
+   Wreszcie Dolna część okna **Właściwości** zawiera również opis pola zaznaczonego w siatce okna **Właściwości** . Aby uzyskać więcej informacji, zobacz [pobieranie opisów pól z okna właściwości](#getting-field-descriptions-from-the-properties-window).
 
-## <a name="updating-property-values-in-the-properties-window"></a><a name="updating-property-values-in-the-properties-window"></a>Aktualizowanie wartości właściwości w oknie Właściwości
-Istnieją dwa sposoby, aby zachować właściwości okna w synchronizacji ze **zmianami** wartości właściwości. Pierwszym z nich <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> jest wywołanie interfejsu, który zapewnia dostęp do podstawowych funkcji okienowania, w tym dostępu do i tworzenia okien narzędzi i dokumentów dostarczonych przez środowisko. W poniższych krokach opisano ten proces synchronizacji.
+## <a name="updating-property-values-in-the-properties-window"></a><a name="updating-property-values-in-the-properties-window"></a> Aktualizowanie wartości właściwości w oknie właściwości
+Istnieją dwa sposoby, aby zachować synchronizację okna **Właściwości** ze zmianami wartości właściwości. Pierwszym jest wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfejsu, który zapewnia dostęp do podstawowych funkcji okna, w tym dostęp do i tworzenie narzędzi i dokumentów systemu Windows udostępnianych w środowisku. Poniższe kroki opisują ten proces synchronizacji.
 
-### <a name="updating-property-values-using-ivsuishell"></a>Aktualizowanie wartości właściwości przy użyciu funkcji IVsUiShell
+### <a name="updating-property-values-using-ivsuishell"></a>Aktualizowanie wartości właściwości przy użyciu IVsUIShell
 
 #### <a name="to-update-property-values-using-the-ivsuishell-interface"></a>Aby zaktualizować wartości właściwości przy użyciu interfejsu IVsUIShell
 
-1. Wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> (za pośrednictwem usługi) w dowolnym momencie, że VSPackages, projekty lub edytory trzeba utworzyć lub wyliczyć narzędzia lub okna dokumentu.
+1. Wywoływanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (za poorednictwem <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> usługi) w dowolnym momencie, gdy pakietów VSPackage, projekty lub edytory muszą tworzyć lub wyliczać okna narzędzi lub dokumentów.
 
-2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> Implementacja, aby zachować właściwości okna w synchronizacji ze **zmianami** właściwości dla projektu (lub innego <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> wybranego <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> obiektu przeglądane przez **właściwości** okna) bez implementowania i wypalania zdarzeń.
+2. Zaimplementuj, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> Aby zachować synchronizację okna **Właściwości** ze zmianami właściwości dla projektu (lub dowolnym innym wybranym obiektem przeglądanym przez okno **Właściwości** ) bez implementowania <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> i uruchamiania <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> zdarzeń.
 
-3. Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> ustanowić i wyłączyć, odpowiednio, powiadomienie klienta <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>o zdarzeniach hierarchii bez konieczności implementacji hierarchii .
+3. Wdrażaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> ustanawiaj i wyłączaj odpowiednio powiadomienia klienta dotyczące zdarzeń hierarchii bez konieczności implementowania hierarchii <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> .
 
-### <a name="updating-property-values-using-iconnection"></a>Aktualizowanie wartości właściwości przy użyciu funkcji IConnection
- Drugim sposobem, aby zachować właściwości okna w synchronizacji `IConnection` ze **zmianami** wartości właściwości jest zaimplementowanie na connectable obiektu, aby wskazać istnienie interfejsów wychodzących. Jeśli chcesz zlokalizować nazwę właściwości, należy wyprowadzić obiekt z pliku <xref:System.ComponentModel.ICustomTypeDescriptor>. Implementacja <xref:System.ComponentModel.ICustomTypeDescriptor> może modyfikować deskryptory właściwości, które zwraca i zmienić nazwę właściwości. Aby zlokalizować opis, należy utworzyć atrybut, <xref:System.ComponentModel.DescriptionAttribute> który pochodzi z i zastąpić Description właściwości.
+### <a name="updating-property-values-using-iconnection"></a>Aktualizowanie wartości właściwości przy użyciu IConnection
+ Drugi sposób utrzymywania okna **Właściwości** w synchronizacji ze zmianami wartości właściwości ma na celu zaimplementowanie `IConnection` w obiekcie połączonym, aby wskazać istnienie interfejsów wychodzących. Jeśli chcesz zlokalizować nazwę właściwości, Utwórz obiekt z <xref:System.ComponentModel.ICustomTypeDescriptor> . <xref:System.ComponentModel.ICustomTypeDescriptor>Implementacja może zmodyfikować deskryptory właściwości, które zwraca i zmienić nazwę właściwości. Aby zlokalizować opis, Utwórz atrybut pochodzący z <xref:System.ComponentModel.DescriptionAttribute> i Zastąp Właściwość Description.
 
-#### <a name="considerations-in-implementing-the-iconnection-interface"></a>Uwagi dotyczące wdrażania interfejsu IConnection
+#### <a name="considerations-in-implementing-the-iconnection-interface"></a>Zagadnienia dotyczące implementacji interfejsu IConnection
 
-1. `IConnection`zapewnia dostęp do podobioracie modułu <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> wyliczanego z interfejsem. Zapewnia również dostęp do wszystkich pod obiektów punktu połączenia, <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> z których każdy implementuje interfejs.
+1. `IConnection` zapewnia dostęp do podrzędnego obiektu modułu wyliczającego za pomocą <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interfejsu. Zapewnia również dostęp do wszystkich podobiektów punktu połączenia, z których każdy implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfejs.
 
-2. Każdy obiekt przeglądania jest odpowiedzialny <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> za implementowanie zdarzenia. Okno **Właściwości** doradzi zdarzenie ustawione `IConnection`za pośrednictwem .
+2. Każdy obiekt przeglądania jest odpowiedzialny za implementację <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> zdarzenia. Okno **Właściwości** zostanie powiadomione o zdarzeniu ustawionym przez `IConnection` .
 
-3. Punkt połączenia kontroluje liczbę połączeń (jeden lub więcej) umożliwia <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>w jego realizacji . Punkt połączenia, który pozwala tylko <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> jeden <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections%2A> interfejs może powrócić z metody.
+3. Punkt połączenia kontroluje liczbę połączeń (co najmniej jeden), które umożliwia w jego implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A> . Punkt połączenia, który dopuszcza tylko jeden interfejs, może zwracać <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> z <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections%2A> metody.
 
-4. Klient może wywołać interfejs, `IConnection` aby uzyskać dostęp do obiektu <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> podrzędnego modułu wyliczacza z interfejsem. Interfejs <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> można następnie wywołać, aby wyliczyć punkty połączenia dla każdego identyfikatora interfejsu wychodzącego (IID).
+4. Klient może wywołać interfejs, `IConnection` Aby uzyskać dostęp do podrzędnego obiektu modułu wyliczającego z <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interfejsem. <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints>Interfejs można następnie wywołać, aby wyliczyć punkty połączenia dla każdego identyfikatora interfejsu wychodzącego (IID).
 
-5. `IConnection`można również wywołać w celu uzyskania dostępu <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> do pod obiektów punktu połączenia z interfejsem dla każdego wychodzącego identyfikatora. Za <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> pośrednictwem interfejsu klient uruchamia lub kończy pętlę doradczą z obiektem do podłączenia i własną synchronizacją klienta. Klient może również <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> wywołać interfejs, aby uzyskać obiekt <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> modułu wyliczacza z interfejsem, aby wyliczyć połączenia, o których wie.
+5. `IConnection` może być również wywoływana w celu uzyskania dostępu do podobiektów punktu połączenia z <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfejsem dla każdego wychodzącego identyfikatora IID. Za pomocą <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfejsu klient uruchamia lub kończy pętlę doradczą z obiektem połączonym i synchronizacją klienta. Klient może również wywołać interfejs, <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> Aby uzyskać obiekt modułu wyliczającego z <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> interfejsem, aby wyliczyć połączenia, o których wie.
 
-## <a name="getting-field-descriptions-from-the-properties-window"></a><a name="getting-field-descriptions-from-the-properties-window"></a>Uzyskiwanie opisów pól z okna Właściwości
-W dolnej części okna **Właściwości** w obszarze opisu są wyświetlane informacje związane z wybranym polem właściwości. Ta funkcja jest domyślnie włączona. Jeśli chcesz ukryć pole opisu, kliknij prawym przyciskiem myszy okno **Właściwości** i kliknij polecenie **Opis**. Spowoduje to również usunięcie znacznika wyboru obok tytułu **opisu** w oknie menu. Pole można wyświetlić ponownie, wykonując te same kroki, aby ponownie włączyć **opis.**
+## <a name="getting-field-descriptions-from-the-properties-window"></a><a name="getting-field-descriptions-from-the-properties-window"></a> Pobieranie opisów pól z okna właściwości
+W dolnej części okna **Właściwości** obszar opisu zawiera informacje związane z wybranym polem właściwości. Ta funkcja jest domyślnie włączona. Jeśli chcesz ukryć pole Opis, kliknij prawym przyciskiem myszy okno **Właściwości** , a następnie kliknij pozycję **Opis**. Spowoduje to również usunięcie znacznika wyboru obok tytułu **opisu** w oknie menu. Możesz ponownie wyświetlić pole, wykonując te same kroki, aby ponownie włączyć **Opis** .
 
- Informacje w polu opisu <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>pochodzą z pliku . Każda metoda, interfejs, coclass i tak dalej może `helpstring` mieć nieprzydzielony atrybut w bibliotece typów. Okno **Właściwości** pobiera ciąg z <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A>pliku .
+ Informacje w polu Opis pochodzą z <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo> . Każda metoda, interfejs, Klasa coclass i tak dalej może mieć atrybut nielokalny `helpstring` w bibliotece typów. Okno **Właściwości** Pobiera ciąg z <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A> .
 
 ### <a name="to-specify-localized-help-strings"></a>Aby określić zlokalizowane ciągi pomocy
 
-1. Dodaj `helpstringdll` atrybut do instrukcji biblioteki w`typelib`bibliotece typów ( ).
+1. Dodaj `helpstringdll` atrybut do instrukcji Library w bibliotece typów ( `typelib` ).
 
    > [!NOTE]
-   > Ten krok jest opcjonalny, jeśli biblioteka typów znajduje się w pliku biblioteki obiektów (olb).
+   > Ten krok jest opcjonalny, jeśli biblioteka typów znajduje się w pliku biblioteki obiektów (. olb).
 
-2. Określ `helpstringcontext` atrybuty ciągów. Można również `helpstring` określić atrybuty.
+2. Określ `helpstringcontext` atrybuty dla ciągów. Można również określić `helpstring` atrybuty.
 
-    Atrybuty te różnią `helpfile` `helpcontext` się od atrybutów i, które są zawarte w rzeczywistych tematach Pomocy pliku .chm.
+    Te atrybuty są różne od `helpfile` atrybutów i `helpcontext` , które są zawarte w pliku. chm.
 
-   Aby pobrać informacje o opisie, które mają być **Properties** wyświetlane dla <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> wyróżnionej nazwy właściwości, okno Właściwości `lcid` wywołuje właściwość, która jest zaznaczona, określając żądany atrybut dla ciągu wyjściowego. Wewnętrznie <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> znajduje plik dll określony w `helpstringdll` atrybucie i wywołuje `DLLGetDocumentation` ten plik dll z określonym kontekstem i `lcid` atrybutem.
+   Aby pobrać informacje o opisach, które mają być wyświetlane dla wyróżnionej nazwy właściwości, okno **Właściwości** wywołuje <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> dla wybranej właściwości, określając żądany `lcid` atrybut ciągu danych wyjściowych. Wewnętrznie program <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> znajduje plik. dll określony w `helpstringdll` atrybucie i wywołuje plik DLL `DLLGetDocumentation` z określonym kontekstem i `lcid` atrybutem.
 
-   Podpisanie i realizacja `DLLGetDocumentation` to:
+   Sygnatura i implementacja programu `DLLGetDocumentation` są:
 
 ```cpp
 STDAPI DLLGetDocumentation
@@ -102,17 +102,17 @@ STDAPI DLLGetDocumentation
 );
 ```
 
- Funkcja `DLLGetDocumentation` musi być eksport zdefiniowany w pliku def dla biblioteki DLL.
+ `DLLGetDocumentation`Funkcja musi być eksportem zdefiniowanym w pliku. def dla biblioteki DLL.
 
- Wewnętrznie tworzony jest plik olb, który w rzeczywistości jest biblioteką DLL. Ta biblioteka DLL zawiera jeden zasób, plik biblioteki typów `DLLGetDocumentation`(tlb) i jedną wyeksportowane funkcje.
+ Wewnętrznie tworzony jest plik. olb, który jest w rzeczywistości biblioteką DLL. Ta biblioteka DLL zawiera jeden zasób, plik biblioteki typów (. tlb) i jedną funkcję, która została wyeksportowana `DLLGetDocumentation` .
 
- W przypadku plików olb `helpstringdll` atrybut jest opcjonalny, ponieważ jest to ten sam plik, który zawiera sam plik tlb.
+ W przypadku plików. olb `helpstringdll` atrybut jest opcjonalny, ponieważ jest to ten sam plik, który zawiera sam plik. tlb.
 
- Aby uzyskać ciągi, aby pokazać się w **opisy** okienka, w związku `helpstring` z tym minimum, co musisz zrobić, to określić atrybut w bibliotece typów. Jeśli chcesz, aby te ciągi były zlokalizowane, musisz określić `helpstringdll` `helpstringcontext` (opcjonalny) atrybut i `DLLGetDocumentation`(wymagany) atrybut i zaimplementować .
+ Aby ciągi były wyświetlane w okienku **opisy** , w związku z tym minimalnym wymaganiem jest określenie `helpstring` atrybutu w bibliotece typów. Jeśli chcesz, aby te ciągi były zlokalizowane, musisz określić `helpstringdll` atrybut (opcjonalnie) i `helpstringcontext` atrybut (required) i zaimplementować `DLLGetDocumentation` .
 
- Nie ma żadnych dodatkowych interfejsów, które muszą być zaimplementowane podczas uzyskiwania zlokalizowanych informacji za pośrednictwem atrybutu `helpstringcontext` idl i `DLLGetDocumentation`.
+ Nie ma dodatkowych interfejsów, które należy zaimplementować podczas uzyskiwania zlokalizowanych informacji przy użyciu atrybutu IDL `helpstringcontext` i `DLLGetDocumentation` .
 
- Innym sposobem uzyskania zlokalizowanej nazwy i opisu właściwości <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A>jest wdrożenie . Aby uzyskać więcej informacji dotyczących implementacji tej metody, zobacz [Właściwości pola okien i interfejsy](../../extensibility/internals/properties-window-fields-and-interfaces.md).
+ Innym sposobem uzyskania zlokalizowanej nazwy i opisu właściwości jest implementacja <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A> . Aby uzyskać więcej informacji dotyczących implementacji tej metody, zobacz [okno właściwości pola i interfejsy](../../extensibility/internals/properties-window-fields-and-interfaces.md).
 
 ## <a name="see-also"></a>Zobacz też
 

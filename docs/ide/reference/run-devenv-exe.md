@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7468fbd6422248f2f15bf74e70cdf9c5bee849c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593632"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
@@ -38,25 +38,25 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 
   Pełna ścieżka i nazwa pliku rozwiązania.
 
-- *Nazwaprojektu*
+- *ProjectName*
 
   Pełna ścieżka i nazwa pliku projektu.
 
-- `/Out`*Plik wyjściowy*
+- `/Out`*OutputFilename*
 
-  Element opcjonalny. Nazwa pliku, do którego chcesz wysłać dane wyjściowe narzędzia. Jeśli plik już istnieje, narzędzie dołącza dane wyjściowe na końcu pliku.
+  Opcjonalny. Nazwa pliku, do którego chcesz wysłać dane wyjściowe narzędzia. Jeśli plik już istnieje, narzędzie dołącza dane wyjściowe do końca pliku.
 
 ## <a name="remarks"></a>Uwagi
 
-Kompiluje i uruchamia określony projekt lub rozwiązanie zgodnie z ustawieniami określonymi dla konfiguracji aktywnego rozwiązania. Ten przełącznik uruchamia IDE i pozostawia go aktywny po zakończeniu uruchamiania projektu lub rozwiązania.
+Kompiluje i uruchamia określony projekt lub rozwiązanie zgodnie z ustawieniami określonymi dla aktywnej konfiguracji rozwiązania. Ten przełącznik uruchamia środowisko IDE i pozostawia go jako aktywny po zakończeniu działania projektu lub rozwiązania.
 
-- Łącz ciągi, które zawierają spacje w cudzysłowie podwójnym.
+- Ujmij ciągi, które zawierają spacje w podwójnym cudzysłowie.
 
-- Informacje podsumowujące, w tym błędy, **Command** mogą być wyświetlane w oknie polecenia `/Out` lub w dowolnym pliku dziennika określonym za pomocą przełącznika.
+- Informacje podsumowujące, w tym błędy, mogą być wyświetlane w oknie **wiersza polecenia** lub w dowolnym pliku dziennika określonym za pomocą `/Out` przełącznika.
 
 ## <a name="example"></a>Przykład
 
-W tym przykładzie uruchamia rozwiązanie `MySolution` przy użyciu aktywnej konfiguracji wdrażania.
+W tym przykładzie uruchomiono rozwiązanie `MySolution` przy użyciu aktywnej konfiguracji wdrożenia.
 
 ```shell
 devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
@@ -67,5 +67,5 @@ devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 - [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
-- [/Odbuduj (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

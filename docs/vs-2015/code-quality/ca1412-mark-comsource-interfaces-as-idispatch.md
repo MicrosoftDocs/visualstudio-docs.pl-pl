@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 5685ad7a760e00392b5f9684cdf399ee320d4a0c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540260"
 ---
 # <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412: Oznacz interfejsy ComSource atrybutem IDispatch
@@ -36,7 +36,7 @@ ms.locfileid: "85540260"
  Typ jest oznaczony <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atrybutem, a co najmniej jeden określony interfejs nie jest oznaczony <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atrybutem ustawionym na `InterfaceIsDispatch` wartość.
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>służy do identyfikowania interfejsów zdarzeń, które Klasa uwidacznia dla klientów Component Object Model (COM). Te interfejsy muszą być uwidocznione jako, `InterfaceIsIDispatch` Aby umożliwić klientom Visual Basic 6 com otrzymywanie powiadomień o zdarzeniach. Domyślnie, jeśli interfejs nie jest oznaczony <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atrybutem, zostanie uwidoczniony jako podwójny interfejs.
+ <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> służy do identyfikowania interfejsów zdarzeń, które Klasa uwidacznia dla klientów Component Object Model (COM). Te interfejsy muszą być uwidocznione jako, `InterfaceIsIDispatch` Aby umożliwić klientom Visual Basic 6 com otrzymywanie powiadomień o zdarzeniach. Domyślnie, jeśli interfejs nie jest oznaczony <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atrybutem, zostanie uwidoczniony jako podwójny interfejs.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, należy dodać lub zmodyfikować atrybut, <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> tak aby jego wartość była równa InterfaceIsIDispatch dla wszystkich interfejsów, które są określone przy użyciu <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atrybutu.

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7430dec75e898a6695b146ce50076b8f57ed9d3e
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711615"
 ---
 # <a name="switcht-activity-designer"></a>Switch\<T>, projektant działań
@@ -55,6 +55,6 @@ Istnieją dwa sposoby usunięcia przypadku:
 
 Pamiętaj, że musisz wybrać sam przypadek, aby go usunąć. Zaznaczenie i usunięcie działania w ramach przypadku powoduje usunięcie tylko tego działania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)

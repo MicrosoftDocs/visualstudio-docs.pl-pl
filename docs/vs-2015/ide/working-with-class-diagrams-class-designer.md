@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ff02c3aeab131c0b9a2423c2cb2376d9f0ee618
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602402"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Praca z diagramami klas (Projektant klas)
@@ -42,7 +42,7 @@ Diagramy klas pomagają zrozumieć strukturę klas utworzonych przez inne projek
 
  Opisuje sposób dodawania diagramów klas do projektów.
 
- [Instrukcje: Dostosowywanie diagramów klas (Projektant klas)](../ide/how-to-customize-class-diagrams-class-designer.md)
+ [Porady: dostosowywanie diagramów klasy (Projektant klas)](../ide/how-to-customize-class-diagrams-class-designer.md)
 
  Zawiera informacje o sposobach dostosowywania diagramów klas.
 
@@ -50,11 +50,11 @@ Diagramy klas pomagają zrozumieć strukturę klas utworzonych przez inne projek
 
  Wyjaśnia sposób kopiowania z diagramu klas do dokumentu pakietu Office.
 
- [Instrukcje: Eksportowanie diagramów klas jako obrazów (Projektant klas)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
+ [Porady: eksportowanie diagramów klasy jako obrazów (Projektant klas)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
 
  Opisuje sposób eksportowania diagramów klas jako obrazów.
 
- [Instrukcje: Drukowanie diagramów klas (Projektant klas)](../ide/how-to-print-class-diagrams-class-designer.md)
+ [Porady: drukowanie diagramów klasy (Projektant klas)](../ide/how-to-print-class-diagrams-class-designer.md)
 
  Wyjaśnia, jak drukować diagramy klas.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetLanguageInfo | Dokumentacja firmy Microsoft
+title: 'IDebugCodeContext2:: GetLanguageInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0df2a08dd7906b9c4c0935d90150037a3bc0275a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190932"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
@@ -42,13 +42,13 @@ int GetLanguageInfo( 
   
 #### <a name="parameters"></a>Parametry  
  `pbstrLanguage`  
- [out w] Zwraca ciąg, który zawiera nazwę języka, takie jak "C++."  
+ [in. out] Zwraca ciąg, który zawiera nazwę języka, np. "C++".  
   
  `pguidLanguage`  
- [out w] Zwraca identyfikator GUID dla języka kontekst kodu, na przykład `guidCPPLang`.  
+ [in. out] Zwraca identyfikator GUID języka kontekstu kodu, na przykład `guidCPPLang` .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
  Co najmniej jeden z parametrów musi zwracać wartość inną niż null.  

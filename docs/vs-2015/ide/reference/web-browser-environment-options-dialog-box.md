@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a58fc57ca840f064e7d32b830133f0d909af7585
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72604764"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Przeglądarka sieci Web, środowisko, opcje — Okno dialogowe
@@ -52,7 +52,7 @@ Ustawia opcje dla wewnętrznej przeglądarki sieci Web i programu Internet Explo
 
 - **Edytor HTML** Wybierz, aby wyświetlić źródło w [projektancie HTML](https://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Zaznacz to pole wyboru, aby edytować stronę sieci Web w jednym z dwóch widoków: widok Projekt lub standardowego widoku źródła na podstawie tekstu.
 
-- **Edytor zewnętrzny** Wybierz, aby wyświetlić źródło w innym edytorze. Określ ścieżkę wybranego edytora, na przykład Notepad. exe.
+- **Edytor zewnętrzny** Wybierz, aby wyświetlić źródło w innym edytorze. Określ ścieżkę dowolnie wybranego edytora, na przykład Notepad.exe.
 
   Opcje programu Internet Explorer kliknij, aby zmienić opcje w programie Internet Explorer w oknie dialogowym **Właściwości internetowe** . Zmiany wprowadzone w tym oknie dialogowym mają wpływ na wewnętrzną przeglądarkę sieci Web i wystąpienia programu Internet Explorer zainicjowane poza środowiskiem IDE programu Visual Studio (na przykład z menu Start).
 

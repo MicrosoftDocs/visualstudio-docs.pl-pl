@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2 | Dokumentacja firmy Microsoft
+title: IDebugMemoryBytes2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e23588e8da41b981f372210def65fa34a7e55bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180547"
 ---
 # <a name="idebugmemorybytes2"></a>IDebugMemoryBytes2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ten interfejs reprezentuje bajtów pamięci.  
+Ten interfejs reprezentuje bajty pamięci.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,29 +31,29 @@ IDebugMemoryBytes2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Aparat debugowania (DE) implementuje ten interfejs do reprezentowania bajtów w pamięci.  
+ Aparat debugowania (DE) implementuje ten interfejs, aby reprezentować bajty w pamięci.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) zwraca ten interfejs, w celu zapewnienia dostępu do pamięci systemowej. [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) i [GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md) zwraca ten interfejs, aby zapewnić dostęp do obiektu w bajtach.  
+ [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) zwraca ten interfejs, aby zapewnić dostęp do pamięci systemowej. [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) i [GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md) zwracają ten interfejs, aby zapewnić dostęp do bajtów obiektu.  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IDebugMemoryBytes2`.  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ W poniższej tabeli przedstawiono metody `IDebugMemoryBytes2` .  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)|Odczytuje sekwencji bajtów, zaczynając od danej lokalizacji.|  
-|[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)|Zapisuje `dwCount` bajty począwszy `pStartContext`.|  
-|[GetSize](../../../extensibility/debugger/reference/idebugmemorybytes2-getsize.md)|Pobiera rozmiar w bajtach, pamięci, reprezentowane przez ten interfejs.|  
+|[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)|Odczytuje sekwencję bajtów, rozpoczynając od danej lokalizacji.|  
+|[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)|Zapisuje `dwCount` bajty, rozpoczynając od `pStartContext` .|  
+|[GetSize](../../../extensibility/debugger/reference/idebugmemorybytes2-getsize.md)|Pobiera rozmiar (w bajtach) pamięci reprezentowanej przez ten interfejs.|  
   
 ## <a name="remarks"></a>Uwagi  
- W przypadku właściwości [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) udostępnia interfejs reprezentujący tablicę `IDebugMemoryBytes2` interfejsu, aby uzyskać dostęp do wartości w tablicy.  
+ W przypadku właściwości Interfejs [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) reprezentujący tablicę zapewnia `IDebugMemoryBytes2` interfejs do uzyskiwania dostępu do wartości w tej tablicy.  
   
- Visual Studio **widok pamięci** wywołania [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) można pobrać `IDebugMemoryBytes2` interfejs do uzyskiwania dostępu do pamięci systemowej. Adres, który ma być uzyskiwany dostęp jest uzyskiwany analizowania wyrażenia jako adres zawierana widok pamięci, a następnie dokonanie oceny oprogramowania przy użyciu wyrażenia przeanalizowany [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) można pobrać `IDebugProperty2` interfejsu. Wywołanie [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) zwraca [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) adres pamięci, który opisuje. Ten kontekst pamięci jest następnie przekazywany do [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) i [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md).  
+ Wywołania **widoku pamięci** programu Visual Studio [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) do pobrania `IDebugMemoryBytes2` interfejsu w celu uzyskania dostępu do pamięci systemowej. Adres, do którego uzyskuje się dostęp, jest uzyskiwany przez analizę wyrażenia wprowadzonego jako adres w widoku pamięci, a następnie obliczenie wyrażenia przeanalizowanego za pomocą [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) , aby uzyskać `IDebugProperty2` interfejs. Wywołanie [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) zwraca [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) , który opisuje adres pamięci. Ten kontekst pamięci jest następnie przekazanie do [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) i [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md).  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

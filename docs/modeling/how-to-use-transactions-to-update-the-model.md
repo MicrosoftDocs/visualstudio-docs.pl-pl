@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33d6c249845c72e25b7201bed5e640ff523c5d81
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594607"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Porady: użycie transakcji do aktualizacji modelu
@@ -22,7 +22,7 @@ W przypadku transakcji upewnij się, że zmiany wprowadzone w sklepie są trakto
  Mechanizm transakcji pomaga uniknąć niespójnych Stanów. Jeśli wystąpi błąd w trakcie transakcji, wszystkie zmiany zostaną wycofane. Jeśli użytkownik wykonuje polecenie Cofnij, każda Ostatnia transakcja jest traktowana jako pojedynczy krok. Użytkownik nie może cofnąć części ostatniej zmiany, chyba że jawnie umieści je w osobnych transakcjach.
 
 ## <a name="opening-a-transaction"></a>Otwieranie transakcji
- Najbardziej wygodną metodą zarządzania transakcjami jest wyrażenie `using` ujęte w instrukcji `try...catch`:
+ Najbardziej wygodną metodą zarządzania transakcję jest `using` instrukcja ujęta w `try...catch` instrukcji:
 
 ```csharp
 Store store; ...
@@ -48,11 +48,11 @@ catch (Exception ex)
 }
 ```
 
- Jeśli wyjątek, który uniemożliwia końcową `Commit()` występuje podczas wprowadzania zmian, magazyn zostanie zresetowany do poprzedniego stanu. Dzięki temu można upewnić się, że błędy nie opuszczają modelu w stanie niespójnym.
+ Jeśli wyjątek, który uniemożliwia końcową `Commit()` zmianę, zostanie przywrócony do poprzedniego stanu. Dzięki temu można upewnić się, że błędy nie opuszczają modelu w stanie niespójnym.
 
- Można wprowadzić dowolną liczbę zmian w jednej transakcji. Możesz otworzyć nowe transakcje wewnątrz aktywnej transakcji. Transakcje zagnieżdżone muszą zostać zatwierdzone lub wycofane przed zakończeniem transakcji zawierającej. Aby uzyskać więcej informacji, zobacz przykład właściwości <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A>.
+ Można wprowadzić dowolną liczbę zmian w jednej transakcji. Możesz otworzyć nowe transakcje wewnątrz aktywnej transakcji. Transakcje zagnieżdżone muszą zostać zatwierdzone lub wycofane przed zakończeniem transakcji zawierającej. Aby uzyskać więcej informacji, zobacz przykład dla <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A> właściwości.
 
- Aby zmiany były trwałe, należy `Commit` transakcji przed jej usunięciem. Jeśli wystąpi wyjątek, który nie jest przechwytywany w ramach transakcji, magazyn zostanie zresetowany do stanu sprzed zmian.
+ Aby zmiany były trwałe, należy wykonać `Commit` transakcję przed jej usunięciem. Jeśli wystąpi wyjątek, który nie jest przechwytywany w ramach transakcji, magazyn zostanie zresetowany do stanu sprzed zmian.
 
 ## <a name="rolling-back-a-transaction"></a>Wycofywanie transakcji
  Aby upewnić się, że magazyn pozostanie w lub powróci do stanu sprzed transakcji, możesz użyć jednego z następujących taktykę:

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ab846d1d7121d0c36c4187d937330d2ade52eb1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594594"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Wywoływanie transformacji tekstu w rozszerzeniu programu Visual Studio
@@ -36,11 +36,11 @@ string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath
 
 ## <a name="pass-parameters-to-the-template"></a>Przekazywanie parametrów do szablonu
 
- Parametry można przekazać do szablonu. Wewnątrz szablonu można uzyskać wartości parametrów za pomocą dyrektywy `<#@parameter#>`.
+ Parametry można przekazać do szablonu. Wewnątrz szablonu można uzyskać wartości parametrów za pomocą `<#@parameter#>` dyrektywy.
 
- Jeśli chodzi o typ parametru należy użyć typu, który jest możliwy do serializacji lub który może być organizowany. Oznacza to, że typ musi być zadeklarowany za pomocą <xref:System.SerializableAttribute>lub musi pochodzić od <xref:System.MarshalByRefObject>. To ograniczenie jest konieczne, ponieważ szablon tekstowy jest wykonywany w oddzielnym elemencie AppDomain. Wszystkie typy wbudowane, takie jak **System. String** i **System. Int32** , można serializować.
+ Jeśli chodzi o typ parametru należy użyć typu, który jest możliwy do serializacji lub który może być organizowany. Oznacza to, że typ musi być zadeklarowany z <xref:System.SerializableAttribute> lub musi pochodzić od <xref:System.MarshalByRefObject> . To ograniczenie jest konieczne, ponieważ szablon tekstowy jest wykonywany w oddzielnym elemencie AppDomain. Wszystkie typy wbudowane, takie jak **System. String** i **System. Int32** , można serializować.
 
- Aby przekazać wartości parametrów, kod wywołujący może umieścić wartości w słowniku `Session` lub <xref:System.Runtime.Remoting.Messaging.CallContext>.
+ Aby przekazać wartości parametrów, kod wywołujący może umieścić wartości w `Session` słowniku lub w <xref:System.Runtime.Remoting.Messaging.CallContext> .
 
  W poniższym przykładzie użyto obu tych metod, aby przekształcić krótki szablon tekstowy:
 
@@ -79,7 +79,7 @@ string result = t4.ProcessTemplate("",
 
 Wszystkie błędy powstające podczas przetwarzania będą wyświetlane w oknie błędu programu Visual Studio. Ponadto można otrzymywać powiadomienia o błędach przez określenie wywołania zwrotnego implementującego [ITextTemplatingCallback](/previous-versions/visualstudio/visual-studio-2012/bb932397(v=vs.110)).
 
-Jeśli chcesz zapisać ciąg wyniku do pliku, warto wiedzieć, jakie rozszerzenie pliku i kodowanie zostały określone w dyrektywie `<#@output#>` w szablonie. Te informacje również zostaną przekazane do wywołania zwrotnego. Aby uzyskać więcej informacji, zobacz [dyrektywa Output T4](../modeling/t4-output-directive.md).
+Jeśli chcesz zapisać ciąg wyniku do pliku, warto wiedzieć, jakie rozszerzenie pliku i kodowanie zostały określone w `<#@output#>` dyrektywie w szablonie. Te informacje również zostaną przekazane do wywołania zwrotnego. Aby uzyskać więcej informacji, zobacz [dyrektywa Output T4](../modeling/t4-output-directive.md).
 
 ```csharp
 void ProcessMyTemplate(string MyTemplateFile)
@@ -130,16 +130,16 @@ Kod może być testowany z plikiem szablonu, podobnym do następującego:
 Sample text.
 ```
 
-Ostrzeżenie kompilatora pojawi się w oknie błędów programu Visual Studio i spowoduje również wygenerowanie wywołania `ErrorCallback`.
+Ostrzeżenie kompilatora pojawi się w oknie błędów programu Visual Studio i wygeneruje również wywołanie `ErrorCallback` .
 
 ## <a name="reference-parameters"></a>Parametry odwołania
 
-Można przekazać wartości z szablonu tekstu przy użyciu klasy parametrów, która jest pochodną <xref:System.MarshalByRefObject>.
+Można przekazać wartości z szablonu tekstu przy użyciu klasy parametrów pochodnej od <xref:System.MarshalByRefObject> .
 
 ## <a name="related-articles"></a>Pokrewne artykuły:
 
-Aby wygenerować tekst na podstawie wstępnie przetworzonego szablonu tekstu: Wywołaj metodę `TransformText()` wygenerowanej klasy. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Aby wygenerować tekst na podstawie wstępnie przetworzonego szablonu tekstu: Wywołaj `TransformText()` metodę wygenerowanej klasy. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Aby wygenerować tekst poza rozszerzeniem programu Visual Studio: Zdefiniuj hosta niestandardowego. Aby uzyskać więcej informacji, zobacz [przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego](../modeling/processing-text-templates-by-using-a-custom-host.md).
+Aby wygenerować tekst poza rozszerzeniem programu Visual Studio: Zdefiniuj hosta niestandardowego. Aby uzyskać więcej informacji, zobacz [Przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
 Aby wygenerować kod źródłowy, który można później skompilować i wykonać: Wywołaj metodę [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) z [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).

@@ -1,7 +1,7 @@
 ---
-title: Dowiedz się samouczek Django w programie Visual Studio krok 6, Szablon projektu Ankiety
+title: Poznaj samouczek Django w programie Visual Studio krok 6, szablon projektu sondowań
 titleSuffix: ''
-description: Przewodnik po podstawach Django w kontekście projektów programu Visual Studio, w szczególności funkcje szablonu projektu sieci Web Usługi Polls Django, takie jak dostosowanie administracyjne.
+description: Przewodnik po Django podstawy w kontekście projektów programu Visual Studio, w tym w pełni funkcje szablonu projektu sieci Web Django, takiego jak dostosowanie administracyjne.
 ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
@@ -12,72 +12,72 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c1fe3db702508267e96dc79f2f789a17a7edf98b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75755575"
 ---
-# <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6: Użyj szablonu projektu internetowego Ankiety Django
+# <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6. użycie szablonu projektu sieci Web Django sondy
 
-**Poprzedni krok: [Uwierzytelnianie użytkowników w Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
+**Poprzedni krok: [uwierzytelnianie użytkowników w Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
 
-Po zrozumieniu szablonu "Django Web Project" programu Visual Studio, możesz teraz przyjrzeć się trzeciemu szablonowi Django, "Polls Django Web Project", który opiera się na tej samej podstawie kodu i demonstruje pracę z bazą danych.
+Po zrozumieniu szablonu "Django Web Project" programu Visual Studio można teraz przeglądać trzeci szablon Django, "Sondowas Django Web Project", który jest oparty na tej samej bazie kodu i demonstruje pracę z bazą danych.
 
 W tym kroku dowiesz się, jak:
 
 > [!div class="checklist"]
-> - Tworzenie projektu na podstawie szablonu i inicjowanie bazy danych (krok 6-1)
-> - Opis modeli danych (krok 6-2)
-> - Stosowanie migracji (krok 6-3)
-> - Opis widoków i szablonów stron utworzonych przez szablon projektu (krok 6-4)
+> - Utwórz projekt na podstawie szablonu i zainicjuj bazę danych (krok 6-1)
+> - Zrozumienie modeli danych (krok 6-2)
+> - Zastosuj migracje (krok 6-3)
+> - Informacje o widokach i szablonach stron utworzonych przez szablon projektu (krok 6-4)
 > - Tworzenie niestandardowego interfejsu administracyjnego (krok 6-5)
 
-Projekt stworzony przy użyciu tego szablonu jest podobny do tego, co otrzymujesz, wykonując samouczek [Pisanie pierwszej aplikacji Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) w dokumentach Django. Aplikacja internetowa składa się z witryny publicznej, która umożliwia użytkownikom wyświetlanie ankiet i głosowanie w nich, wraz z niestandardowym interfejsem administracyjnym, za pomocą którego można zarządzać ankietami. Używa tego samego systemu uwierzytelniania co szablon "Django Web Project" i w większym zakresie wykorzystuje bazę danych, implementując modele Django, jak zostały zbadane w poniższych sekcjach.
+Projekt utworzony przy użyciu tego szablonu jest podobny do tego, co uzyskasz, postępując zgodnie z samouczkiem [pisanie pierwszej aplikacji Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) w dokumentacji Django. Aplikacja internetowa składa się z publicznej witryny, która umożliwia osobom przeglądanie i głosowanie w nich, a także niestandardowy interfejs administracyjny, za pomocą którego można zarządzać sondowaniem. Używa tego samego systemu uwierzytelniania co szablon "Django Web Project" i zwiększa użycie bazy danych przez implementację modeli Django, jak przedstawiono w poniższych sekcjach.
 
-## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>Krok 6-1: Tworzenie projektu i inicjowanie bazy danych
+## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>Krok 6-1: Tworzenie projektu i Inicjowanie bazy danych
 
-1. W programie Visual Studio przejdź do **programu Solution Explorer**, kliknij prawym przyciskiem myszy rozwiązanie **LearningDjango** utworzone wcześniej w tym samouczku i wybierz pozycję **Dodaj** > **nowy projekt**. (Alternatywnie, jeśli chcesz użyć nowego rozwiązania, wybierz **pozycję Plik** > **nowego** > **projektu).**
+1. W programie Visual Studio przejdź do **Eksplorator rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie **LearningDjango** utworzone wcześniej w tym samouczku, a następnie wybierz pozycję **Dodaj**  >  **Nowy projekt**. (Alternatywnie, jeśli chcesz użyć nowego rozwiązania, wybierz pozycję **plik**  >  **Nowe**  >  W zamian **projekt** ).
 
-1. W nowym oknie dialogowym projektu wyszukaj i wybierz szablon **Ankiety Django Web Project,** zadzwoń do projektu "DjangoPolls" i wybierz **PRZYCISK OK**.
+1. W oknie dialogowym Nowy projekt Wyszukaj i wybierz szablon **projektu sieci Web sondowania Django** , wywołaj projekt "DjangoPolls", a następnie wybierz **przycisk OK**.
 
-1. Podobnie jak inne szablony projektów w programie Visual Studio, szablon "Sonduje django Web Project" zawiera plik *requirements.txt,* program Visual Studio monituje o zainstalowanie tych zależności. Wybierz opcję **Zainstaluj w środowisku wirtualnym,** a następnie w oknie dialogowym **Dodaj środowisko wirtualne** wybierz pozycję **Utwórz,** aby zaakceptować wartości domyślne.
+1. Podobnie jak w przypadku innych szablonów projektu w programie Visual Studio, szablon "Django" projektu sieci Web "sondy" zawiera plik *requirements.txt* , program Visual Studio monituje o lokalizację instalacji tych zależności. Wybierz opcję, **Zainstaluj w środowisku wirtualnym**, a następnie w oknie dialogowym **Dodawanie środowiska wirtualnego** wybierz pozycję **Utwórz** , aby zaakceptować ustawienia domyślne.
 
-1. Po zakończeniu konfigurowania środowiska wirtualnego w Pythonie postępuj zgodnie z instrukcjami wyświetlanymi w *wyświetlonym readme.html,* aby zainicjować bazę danych i utworzyć superużytkownika Django (czyli administratora). Kroki te mają polegać na pierwszym kliknięciu prawym przyciskiem myszy projektu **DjangoPolls** w **Eksploratorze rozwiązań**, wybraniu polecenia **Python** > **Django Migrate,** a następnie ponownego kliknięcia projektu prawym przyciskiem myszy, wybrania polecenia **Python** > **Django Create Superuser** i postępuj zgodnie z instrukcjami. (Jeśli spróbujesz najpierw utworzyć superużytnika, zostanie wyświetlony błąd, ponieważ baza danych nie została zainicjowana).
+1. Gdy środowisko Python zakończy Konfigurowanie środowiska wirtualnego, postępuj zgodnie z instrukcjami wyświetlanymi w *readme.html* , aby zainicjować bazę danych i utworzyć Django administratora (czyli administratora). Kroki należy najpierw kliknąć prawym przyciskiem myszy projekt **DjangoPolls** w **Eksplorator rozwiązań**, wybrać polecenie **Python**  >  **Django zmigrować** , a następnie ponownie kliknąć prawym przyciskiem myszy projekt, wybrać polecenie **Python**  >  **Django Create administratora** i postępować zgodnie z instrukcjami. (Jeśli spróbujesz najpierw utworzyć administratora, zobaczysz błąd, ponieważ baza danych nie została zainicjowana.)
 
-1. Ustaw projekt **DjangoPolls** jako domyślny dla rozwiązania programu Visual Studio, klikając prawym przyciskiem myszy ten projekt w **Eksploratorze rozwiązań** i wybierając **pozycję Ustaw jako projekt startowy.** Projekt uruchamiania, który jest wyświetlany pogrubioną czcionką, jest tym, co jest uruchamiane po uruchomieniu debugera.
+1. Ustaw projekt **DjangoPolls** jako domyślny dla rozwiązania Visual Studio, klikając prawym przyciskiem myszy ten projekt w **Eksplorator rozwiązań** i wybierając pozycję **Ustaw jako projekt startowy**. Projekt startowy, który jest wyświetlany pogrubiony, jest uruchamiany po uruchomieniu debugera.
 
-1. Wybierz **debugowanie** > **rozpocznij debugowanie** **(F5)** lub użyj przycisku Serwera sieci **Web** na pasku narzędzi, aby uruchomić serwer:
+1. Wybierz pozycję **Debuguj**  >  **Rozpocznij debugowanie** (**F5**) lub użyj przycisku **serwer sieci Web** na pasku narzędzi, aby uruchomić serwer:
 
-    ![Uruchamianie przycisku paska narzędzi serwera sieci Web w programie Visual Studio](media/django/run-web-server-toolbar-button.png)
+    ![Przycisk paska narzędzi uruchamiania serwera sieci Web w programie Visual Studio](media/django/run-web-server-toolbar-button.png)
 
-1. Aplikacja utworzona przez szablon ma trzy strony: Strona główna, Informacje i Kontakt, które można nawigować między za pomocą górnego paska nawigacji. Poświęć minutę lub dwie, aby zbadać różne części aplikacji (strony Informacje i Kontakty są bardzo podobne do "Django Web Project" i nie są dalej omawiane).
+1. Aplikacja utworzona przez szablon ma trzy strony, Strona główna, informacje i kontakt, które są przechodzenie między górnym paskiem nawigacyjnym. Poświęć minutę lub dwie, aby przeanalizować różne części aplikacji (strony informacje i kontakty są bardzo podobne do "projektu sieci Web Django" i nie są jeszcze omówione w dalszej części).
 
-    ![Pełny widok przeglądarki aplikacji Polls Django Web Project](media/django/step06-full-app-view.png)
+    ![Pełny widok przeglądarki aplikacji sieci Web Django](media/django/step06-full-app-view.png)
 
-1. Wybierz również **łącze Administracja** na pasku nawigacyjnym, na którym jest wyświetlany ekran logowania, aby wykazać, że interfejs administracyjny jest autoryzowany tylko dla uwierzytelnionych administratorów. Użyj poświadczeń superużytów i zostaniesz przekierowany do strony "/admin", która jest domyślnie włączona podczas korzystania z tego szablonu projektu.
+1. Na pasku nawigacyjnym wybierz również link **Administracja** , który wyświetla ekran logowania, aby zademonstrować, że interfejs administracyjny jest autoryzowany tylko dla uwierzytelnionych administratorów. Użyj poświadczeń administratora i nastąpi kierowanie do strony "/admin", która jest domyślnie włączona podczas korzystania z tego szablonu projektu.
 
-    ![Widok administracyjny aplikacji Polls Django Web Project](media/django/step06-polls-administrative-interface.png)
+    ![Widok administracyjny aplikacji Project Web Django dla ankiet](media/django/step06-polls-administrative-interface.png)
 
-1. Możesz pozostawić aplikację z uruchomiona dla sekcji, które należy wykonać.
+1. Możesz pozostawić aplikację działającą dla następujących sekcji.
 
-    Jeśli chcesz zatrzymać aplikację i [zatwierdzić zmiany w formancie źródłowym,](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)najpierw otwórz stronę **Zmiany** w **Eksploratorze zespołu,** kliknij prawym przyciskiem myszy folder środowiska wirtualnego (prawdopodobnie **env)** i wybierz pozycję **Ignoruj te elementy lokalne**.
+    Jeśli chcesz zatrzymać aplikację i [zatwierdzić zmiany w kontroli źródła](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), najpierw Otwórz stronę **zmiany** w **Team Explorer**, kliknij prawym przyciskiem myszy folder dla środowiska wirtualnego (prawdopodobnie **ENV**), a następnie wybierz polecenie **Ignoruj te elementy lokalne**.
 
 ### <a name="examine-the-project-contents"></a>Sprawdzanie zawartości projektu
 
-Jak wspomniano wcześniej. wiele z tego, co znajduje się w projekcie utworzonym na podstawie szablonu "Ankiety Django Web Project" powinno być znane, jeśli eksplorujesz inne szablony projektów w programie Visual Studio. Dodatkowe kroki w tym artykule podsumować bardziej znaczące zmiany i uzupełnienia, a mianowicie modeli danych i dodatkowych widoków.
+Jak wspomniano wcześniej. Większość elementów projektu utworzonych na podstawie szablonu "ankiety Django Web Project" powinien być znany, jeśli eksplorujesz inne szablony projektu w programie Visual Studio. Dodatkowe kroki opisane w tym artykule podsumowują bardziej znaczące zmiany i dodatki, czyli modele danych i dodatkowe widoki.
 
-### <a name="question-what-does-the-django-migrate-command-do"></a>Pytanie: Do czego działa polecenie Django Migrate?
+### <a name="question-what-does-the-django-migrate-command-do"></a>Pytanie: co to jest polecenie Django Migrowanie?
 
-Odpowiedź: polecenie **Django Migrate** uruchamia `manage.py migrate` specjalnie polecenie, które uruchamia wszystkie skrypty w folderze *app/migrations,* które nie zostały wcześniej uruchomione. W takim przypadku polecenie uruchamia skrypt *0001_initial.py* w tym folderze, aby skonfigurować niezbędny schemat w bazie danych.
+Odpowiedź: polecenie **Django** Migration w specjalny sposób uruchamia `manage.py migrate` polecenie, które uruchamia wszelkie skrypty w folderze *aplikacji/migracji* , który nie został wcześniej uruchomiony. W takim przypadku polecenie uruchamia skrypt *0001_initial. PR* w tym folderze, aby skonfigurować wymagany schemat w bazie danych.
 
-Sam skrypt migracji jest `manage.py makemigrations` tworzony przez polecenie, które skanuje plik *models.py* aplikacji, porównuje go z bieżącym stanem bazy danych, a następnie generuje skrypty niezbędne do migracji schematu bazy danych w celu dopasowania do bieżących modeli. Ta funkcja Django jest bardzo potężna, gdy aktualizujesz i modyfikujesz swoje modele w czasie. Generując i uruchamiając migracje, modele i baza danych są zsynchronizowane z niewielkimi trudnościami.
+Sam skrypt migracji jest tworzony przez `manage.py makemigrations` polecenie, które skanuje plik *models.py* aplikacji, porównuje go z bieżącym stanem bazy danych, a następnie generuje niezbędne skrypty do migracji schematu bazy danych w celu dopasowania do bieżących modeli. Ta funkcja programu Django jest bardzo wydajna, gdy aktualizujesz i modyfikujesz modele w miarę upływu czasu. Dzięki generowaniu i uruchamianiu migracji modele i bazy danych są synchronizowane z niewielkim trudnością.
 
-Z migracją pracujesz w kroku 6-3 w dalszej części tego artykułu.
+Pracujesz z migracją w kroku 6-3 w dalszej części tego artykułu.
 
-## <a name="step-6-2-understand-data-models"></a>Krok 6-2: Zrozumienie modeli danych
+## <a name="step-6-2-understand-data-models"></a>Krok 6-2: zrozumienie modeli danych
 
-Modele aplikacji o nazwie Sonda i Wybór są zdefiniowane w *aplikacji/models.py*. Każda z nich jest klasą Języka Python, która wywodzi się z `django.db.models.Model` i używa metod `models` klasy, takich jak `CharField` i `IntegerField` do definiowania pól w modelu, które mapują do kolumn bazy danych.
+Modele aplikacji o nazwie sondowanie i wybór są zdefiniowane w *App/models. PR*. Każda z nich jest klasą języka Python, która pochodzi z `django.db.models.Model` i używa metod `models` klasy, takich jak `CharField` i `IntegerField` do definiowania pól w modelu, które mapują do kolumn bazy danych.
 
 ```python
 from django.db import models
@@ -112,23 +112,23 @@ class Choice(models.Model):
         return self.text
 ```
 
-Jak widać, ankieta zachowuje opis w `text` swoim polu i `pub_date`datę publikacji w . Te pola są jedynymi, które istnieją dla ankiety w bazie danych; `total_votes` pole jest obliczane w czasie wykonywania.
+Jak widać, sonda zachowuje opis w jego `text` polu i datę publikacji w `pub_date` . Te pola są jedynymi tymi, które istnieją dla sondowania w bazie danych programu; `total_votes` pole jest obliczane w czasie wykonywania.
 
-Wybór jest powiązany z `poll` ankietą za pośrednictwem `text`pola, zawiera opis w `votes`polu i zachowuje liczbę dla tego wyboru w . Pole `votes_percentage` jest obliczane w czasie wykonywania i nie znajduje się w bazie danych.
+Wybór jest powiązany z sondowaniem za pomocą `poll` pola, zawiera opis w `text` i utrzymuje liczbę dla tego wyboru w `votes` . `votes_percentage`Pole jest obliczane w czasie wykonywania i nie można go znaleźć w bazie danych.
 
-Pełna lista typów pól `CharField` to `TextField` (tekst ograniczony) `EmailField` `URLField`(tekst nieograniczony), , , `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey`, i `ManyToMany`. Każde pole ma pewne `max_length`atrybuty, takie jak . Atrybut `blank=True` oznacza, że pole jest opcjonalne; `null=true` oznacza, że wartość jest opcjonalna. Istnieje również `choices` atrybut, który ogranicza wartości do wartości w tablicy krotek wartości danych/wartości wyświetlania. (Zobacz [odwołanie do pola Model](https://docs.djangoproject.com/en/2.0/ref/models/fields/) w dokumentacji Django).
+Pełną listę typów pól jest `CharField` (ograniczony tekst) `TextField` (nieograniczony tekst),,,,,,, `EmailField` `URLField` `DateTimeField` `IntegerField` `DecimalField` `BooleanField` `ForeignKey` , i `ManyToMany` . Każde pole przyjmuje pewne atrybuty, takie jak `max_length` . Ten `blank=True` atrybut oznacza, że pole jest opcjonalne; `null=true` oznacza, że wartość jest opcjonalna. Występuje również `choices` atrybut, który ogranicza wartości do wartości w tablicy wartości danych/Wyświetl krotek wartości. (Zobacz [odwołanie do pola modelu](https://docs.djangoproject.com/en/2.0/ref/models/fields/) w dokumentacji Django).
 
-Możesz potwierdzić dokładnie to, co jest przechowywane w bazie danych, badając plik *db.sqlite3* w projekcie za pomocą narzędzia takiego jak [przeglądarka SQLite](https://sqlitebrowser.org/). W bazie danych widać, że pole `poll` klucza obcego, `poll_id`takie jak w modelu Wyboru, jest przechowywane jako ; Django automatycznie obsługuje mapowanie.
+Można potwierdzić, co jest przechowywane w bazie danych, badając plik *DB. sqlite3* w projekcie przy użyciu narzędzia, takiego jak [przeglądarka SQLite](https://sqlitebrowser.org/). W bazie danych zobaczysz, że pole klucza obcego takie jak `poll` w modelu wyboru jest przechowywane jako `poll_id` ; Django obsługuje mapowanie automatycznie.
 
-Ogólnie rzecz biorąc, praca z bazą danych w Django oznacza pracę wyłącznie za pośrednictwem modeli, dzięki czemu Django może zarządzać podstawową bazą danych w Twoim imieniu.
+Ogólnie rzecz biorąc, praca z bazą danych w programie Django oznacza, że działa wyłącznie za pośrednictwem modeli, dzięki czemu Django może zarządzać podstawową bazą danych w Twoim imieniu.
 
-### <a name="seed-the-database-from-samplesjson"></a>Materiał siewny bazy danych z pliku samples.json
+### <a name="seed-the-database-from-samplesjson"></a>Wypełnianie bazy danych z samples.jsna
 
-Początkowo baza danych nie zawiera żadnych ankiet. Za pomocą interfejsu administracyjnego w adresie URL "/admin" można ręcznie dodawać ankiety, a także odwiedzić stronę "/seed" w uruchomionej witrynie, aby dodać bazę danych źródłową z ankietami zdefiniowanymi w pliku *samples.json* aplikacji.
+Początkowo baza danych nie zawiera żadnych sondowań. Możesz użyć interfejsu administracyjnego w adresie URL "/admin", aby dodać sondy ręcznie i można także odwiedzić stronę "/Seed" w uruchomionej witrynie, aby dodać inicjator bazy danych z sondowami zdefiniowanymi w *samples.jsaplikacji w* pliku.
 
-*urls.py* projektu Django ma dodatkowy wzorzec `url(r'^seed$', app.views.seed, name='seed'),`adresu URL, . Widok `seed` w *aplikacji/views.py* ładuje plik *samples.json* i tworzy niezbędne obiekty modelu. Django następnie automatycznie tworzy pasujące rekordy w podstawowej bazie danych.
+*URLs.py* projektu Django ma dodany wzorzec adresu URL `url(r'^seed$', app.views.seed, name='seed'),` . `seed`Widok w *aplikacji/widokach. pr* ładuje *samples.jsw* pliku i tworzy niezbędne obiekty modelu. Django następnie automatycznie tworzy pasujące rekordy w źródłowej bazie danych.
 
-Należy zwrócić uwagę `@login_required` na użycie dekoratora, aby wskazać poziom autoryzacji dla widoku.
+Zwróć uwagę na użycie `@login_required` dekoratora, aby wskazać poziom autoryzacji dla widoku.
 
 ```python
 @login_required
@@ -154,63 +154,63 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-Aby zobaczyć efekt, uruchom aplikację najpierw, aby zobaczyć, że nie ma jeszcze żadnych ankiet. Następnie odwiedź adres URL "/seed", a gdy aplikacja powróci do strony głównej, zobaczysz, że ankiety stały się dostępne. Ponownie, zapraszam do zbadania surowego pliku *db.sqlite3* za pomocą narzędzia, takiego jak [przeglądarka SQLite](https://sqlitebrowser.org/).
+Aby zobaczyć efekt, najpierw uruchom aplikację, aby zobaczyć, że żadne sondy jeszcze nie istnieją. Następnie przejdź do adresu URL "/Seed" i po powrocie aplikacji do strony głównej powinieneś zobaczyć, że sondy staną się dostępne. Ponownie możesz przeanalizować plik RAW *DB. sqlite3* za pomocą narzędzia, takiego jak [przeglądarka SQLite](https://sqlitebrowser.org/).
 
-![Sonduje aplikację Django Web Project z rozstawioną bazą danych](media/django/step06-app-with-seeded-database.png)
+![Sondowanie aplikacji sieci Web Django za pomocą inicjatora bazy danych](media/django/step06-app-with-seeded-database.png)
 
-### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Pytanie: Czy możliwe jest zainicjowanie bazy danych za pomocą narzędzia administracyjnego Django?
+### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Pytanie: czy jest możliwe zainicjowanie bazy danych za pomocą narzędzia administracyjnego Django?
 
-Odpowiedź: Tak, możesz użyć [polecenia django-admin loaddata,](https://docs.djangoproject.com/en/2.0/ref/django-admin/#loaddata) aby wykonać to samo zadanie, co strona wysiewu w aplikacji. Podczas pracy z pełną aplikacją sieci web można użyć kombinacji dwóch metod: zainicjować bazę danych z wiersza polecenia, a następnie przekonwertować stronę źródłową tutaj do interfejsu API, do którego można wysłać inne dowolnego dowolnego dowolnego JSON zamiast polegać na pliku zakodowane.
+Odpowiedź: tak, możesz użyć [polecenia Django-admin loaddata](https://docs.djangoproject.com/en/2.0/ref/django-admin/#loaddata) , aby wykonać to samo zadanie co strona inicjatora w aplikacji. Podczas pracy nad pełną aplikacją internetową możesz użyć kombinacji dwóch metod: zainicjuj bazę danych z wiersza polecenia, a następnie przekonwertuj stronę inicjatora tutaj na interfejs API, do którego można wysłać dowolne inne dane JSON, zamiast polegać na zakodowanym pliku.
 
 ## <a name="step-6-3-use-migrations"></a>Krok 6-3: Użyj migracji
 
-Po uruchomieniu `manage.py makemigrations` polecenia (przy użyciu menu kontekstowego w programie Visual Studio) po utworzeniu projektu, Django utworzył *plik aplikacji/migracji/0001_initial.py.* Ten plik zawiera skrypt, który tworzy początkowe tabele bazy danych.
+Po uruchomieniu `manage.py makemigrations` polecenia (za pomocą menu kontekstowego w programie Visual Studio) po utworzeniu projektu Django utworzył plik *App/migrations/0001_initial. PR* . Ten plik zawiera skrypt służący do tworzenia początkowych tabel bazy danych.
 
-Ponieważ nieuchronnie będziesz wprowadzać zmiany w modelach w czasie, Django ułatwia śledzenie schematu podstawowej bazy danych z tymi modelami. Ogólny przepływ pracy jest następujący:
+Ze względu na to, że w miarę upływu czasu zmienisz zmiany w modelach, Django ułatwiają aktualny schemat bazy danych z tymi modelami. Ogólny przepływ pracy jest następujący:
 
-1. Wprowadzanie zmian w modelach w pliku *models.py.*
-1. W programie Visual Studio kliknij prawym przyciskiem myszy projekt w **Eksploratorze rozwiązań** i wybierz polecenie **Sterowanie** > migracjami języka Python**Django.** Jak opisano wcześniej, to polecenie generuje skrypty w *aplikacji/migracji* do migracji bazy danych z bieżącego stanu do nowego stanu.
-1. Aby zastosować skrypty do rzeczywistej bazy danych, kliknij prawym przyciskiem myszy projekt ponownie i wybierz **python** > **Django Migrate**.
+1. Wprowadź zmiany w modelach w pliku *models.py* .
+1. W programie Visual Studio kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Python**  >  **Django Utwórz migracje** . Jak opisano wcześniej, to polecenie generuje skrypty w *aplikacji/migracji* w celu migrowania bazy danych z jej bieżącego stanu do nowego stanu.
+1. Aby zastosować skrypty do rzeczywistej bazy danych, ponownie kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Python**  >  **Django Migruj**.
 
-Django śledzi, które migracje zostały zastosowane do dowolnej bazy danych, tak że po uruchomieniu polecenia migracji, Django stosuje niezależnie od migracji są potrzebne. Jeśli na przykład utworzysz nową, pustą bazę danych, polecenie migracji spowoduje jej uaktualnienie w bieżących modelach, stosując każdy skrypt migracji. Podobnie, jeśli dokonasz wielu zmian modelu i wygenerujesz migracje na komputerze deweloperskim, możesz zastosować skumulowane migracje do produkcyjnej bazy danych, uruchamiając polecenie migracji na serwerze produkcyjnym. Django ponownie stosuje tylko te skrypty migracji, które zostały wygenerowane od ostatniej migracji produkcyjnej bazy danych.
+Django śledzi, które migracje zostały zastosowane do każdej bazy danych, na przykład po uruchomieniu polecenia migracji, Django stosuje się niezależnie od tego, czy są potrzebne. Jeśli utworzysz nową, pustą bazę danych, na przykład uruchomienie polecenia migracji spowoduje jego aktualność przy użyciu bieżących modeli, stosując każdy skrypt migracji. Podobnie w przypadku zmiany wielu modeli i wygenerowania migracji na komputerze deweloperskim można zastosować migracje zbiorcze do produkcyjnej bazy danych, uruchamiając polecenie migracji na serwerze produkcyjnym. Django ponownie stosuje tylko te skrypty migracji, które zostały wygenerowane od czasu ostatniej migracji produkcyjnej bazy danych.
 
 Aby zobaczyć efekt zmiany modelu, spróbuj wykonać następujące czynności:
 
-1. Dodaj opcjonalne pole autora do modelu Sondowanie w *aplikacji/models.py,* dodając następujący wiersz po polu, `pub_date` aby dodać pole opcjonalne: `author`
+1. Dodaj opcjonalne pole Author do modelu sondowania w *App/models. PR* , dodając następujący wiersz po `pub_date` polu, aby dodać pole opcjonalne `author` :
 
     ```python
     author = models.CharField(max_length=100, blank=True)
     ```
 
-1. Zapisz plik, a następnie kliknij prawym przyciskiem myszy projekt **DjangoPolls** w **Eksploratorze rozwiązań** i wybierz polecenie **Python** > **Django Make Migrations.**
-1. Wybierz polecenie **Project** > **Show All Files,** aby wyświetlić nowo wygenerowany skrypt w folderze **migracji,** którego nazwa zaczyna się od **002_auto_**. Kliknij prawym przyciskiem myszy ten plik i wybierz pozycję **Uwzględnij w programie Project**. Następnie można ponownie wybrać opcję**Pokaż wszystkie pliki** w programie **Project,** > aby przywrócić oryginalny widok. (Szczegółowe informacje na temat tego kroku można znaleźć w drugim pytaniu poniżej).
-1. W razie potrzeby otwórz ten plik, aby sprawdzić, jak Django skrypty zmiany z poprzedniego stanu modelu do nowego stanu.
-1. Kliknij prawym przyciskiem myszy projekt programu Visual Studio ponownie i **wybierz** > python**Django Migrate,** aby zastosować zmiany do bazy danych.
-1. W razie potrzeby otwórz bazę danych w odpowiedniej przeglądarce, aby potwierdzić zmianę.
+1. Zapisz plik, a następnie kliknij prawym przyciskiem myszy projekt **DjangoPolls** w **Eksplorator rozwiązań** i wybierz polecenie **Python**  >  **Django wykonaj migracje** .
+1. Wybierz polecenie **projekt**  >  **Pokaż wszystkie pliki** , aby wyświetlić nowo wygenerowany skrypt w folderze **migracji** , którego nazwa rozpoczyna się od **002_auto_**. Kliknij prawym przyciskiem myszy ten plik i wybierz pozycję **Dołącz do projektu**. Następnie można wybrać pozycję **projekt**  >  ponownie**Pokaż wszystkie pliki** , aby przywrócić oryginalny widok. (Zobacz drugie pytanie poniżej, aby uzyskać szczegółowe informacje na temat tego kroku).
+1. W razie potrzeby Otwórz ten plik, aby poznać, w jaki sposób program Django skryptuje zmianę stanu poprzedniego modelu z nowym stanem.
+1. Kliknij prawym przyciskiem myszy projekt programu Visual Studio, a następnie wybierz pozycję **Python**  >  **Django Migruj** , aby zastosować zmiany do bazy danych.
+1. W razie potrzeby Otwórz bazę danych w odpowiedniej przeglądarce, aby potwierdzić zmianę.
 
-Ogólnie rzecz biorąc, funkcja migracji Django oznacza, że nigdy nie musisz ręcznie zarządzać schematem bazy danych. Wystarczy wprowadzić zmiany w modelach, wygenerować skrypty migracji i zastosować je za pomocą polecenia migracji.
+Ogólna funkcja migracji Django oznacza, że nie jest konieczne ręczne Zarządzanie schematem bazy danych. Po prostu wprowadź zmiany w modelach, wygeneruj skrypty migracji i zastosuj je za pomocą polecenia migracji.
 
-### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Pytanie: Co się stanie, jeśli zapomnę uruchomić polecenie migracji po wszedniu zmian w modelach?
+### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Pytanie: co się stanie, jeśli zapomnię uruchomić polecenie migracji po wprowadzeniu zmian w modelach?
 
-Odpowiedź: Jeśli modele nie pasują do tego, co jest w bazie danych, Django kończy się niepowodzeniem w czasie wykonywania z odpowiednimi wyjątkami. Na przykład, jeśli zapomnisz przeprowadzić migrację zmiany modelu pokazanej w poprzedniej sekcji, zostanie wyświetlony błąd **bez takiej kolumny: app_poll.author**:
+Odpowiedź: Jeśli modele nie są zgodne z informacjami znajdującymi się w bazie danych, Django nie powiedzie się w czasie wykonywania z odpowiednimi wyjątkami. Na przykład jeśli zapomnisz zmigrować zmiany modelu pokazanej w poprzedniej sekcji, zobaczysz błąd **nie w takiej kolumnie: app_poll. Author**:
 
 ![Błąd wyświetlany, gdy zmiana modelu nie została zmigrowana](media/django/step06-exception-when-forgetting-to-migrate.png).
 
-### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Pytanie: Dlaczego Eksplorator rozwiązań nie pokazuje nowo wygenerowanych skryptów po uruchomieniu Django Make Migrations?
+### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Pytanie: Dlaczego nie Eksplorator rozwiązań pokazać nowo generowanych skryptów po uruchomieniu Django dokonać migracji?
 
-Odpowiedź: Chociaż nowo wygenerowane skrypty istnieją w folderze *aplikacji/migracji* i są stosowane podczas uruchamiania polecenia **Django Migrate,** nie pojawiają się one automatycznie w **Eksploratorze rozwiązań,** ponieważ nie zostały dodane do projektu programu Visual Studio. Aby były widoczne, należy najpierw zaznaczyć polecenie menu **Project** > **Show All Files** lub przycisk paska narzędzi opisany na poniższej ilustracji. To polecenie powoduje, że **Eksplorator rozwiązań** wyświetla wszystkie pliki w folderze projektu, używając kropkowanej ikony konspektu dla elementów, które nie zostały dodane do samego projektu. Kliknij prawym przyciskiem myszy pliki, które chcesz dodać, i wybierz pozycję **Uwzględnij w programie Project,** która również uwzględnia je w formancie źródłowym z następnym zatwierdzeniem.
+Odpowiedź: Mimo że nowo wygenerowane skrypty istnieją w folderze *aplikacji/migracji* i są stosowane podczas uruchamiania polecenia **migracji Django** , nie pojawiają się automatycznie w **Eksplorator rozwiązań** ponieważ nie zostały dodane do projektu programu Visual Studio. Aby je wyświetlić, najpierw wybierz polecenie **projekt**  >  **Pokaż wszystkie pliki** lub przycisk paska narzędzi przedstawiony na poniższej ilustracji. To polecenie powoduje, że **Eksplorator rozwiązań** pokazać wszystkie pliki w folderze projektu przy użyciu ikony konturu kropkowanego dla elementów, które nie zostały dodane do samego projektu. Kliknij prawym przyciskiem myszy pliki, które chcesz dodać, a następnie wybierz opcję **Dołącz do projektu**, która również obejmuje je w kontroli źródła przy następnym zatwierdzeniu.
 
-![Polecenie Dołącz do projektu w Eksploratorze rozwiązań](media/django/step06-include-migrations-script-in-project.png)
+![Polecenie include w projekcie w Eksplorator rozwiązań](media/django/step06-include-migrations-script-in-project.png)
 
-### <a name="question-can-i-see-what-migrations-would-be-applied-before-running-the-migrate-command"></a>Pytanie: Czy mogę zobaczyć, jakie migracje zostaną zastosowane przed uruchomieniem polecenia migracji?
+### <a name="question-can-i-see-what-migrations-would-be-applied-before-running-the-migrate-command"></a>Pytanie: Czy można zobaczyć, jakie migracje zostaną zastosowane przed uruchomieniem polecenia migracji?
 
-Odpowiedź: Tak, użyj [polecenia django-admin showmigrations](https://docs.djangoproject.com/en/2.0/ref/django-admin/#showmigrations).
+Odpowiedź: tak, użyj [polecenia Django-admin showmigrations](https://docs.djangoproject.com/en/2.0/ref/django-admin/#showmigrations).
 
-## <a name="step-6-4-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 6-4: Zrozumienie widoków i szablonów stron utworzonych przez szablon projektu
+## <a name="step-6-4-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 6-4: informacje o widokach i szablonach stron utworzonych przez szablon projektu
 
-Większość widoków generowanych przez szablon "Polls Django Web Project", takich jak widoki na stronach Informacje i Kontakt, są bardzo podobne do widoków utworzonych przez szablon "Django Web Project", z którymi pracowałeś wcześniej w tym samouczku. Co innego w aplikacji Ankiety jest to, że jego strona główna korzysta z modeli, podobnie jak kilka dodanych stron do głosowania i wyświetlania wyników ankiety.
+Większość widoków wygenerowanych przez szablon "sondy Django Web projektu", takich jak widoki stron informacje i kontakty, jest bardzo podobna do widoków utworzonych przez szablon "Django projekt sieci Web", który pracował wcześniej w tym samouczku. Podobnie jak w przypadku aplikacji sondy jest to, że Strona główna korzysta z modeli, tak jak kilka dodanych stron do głosowania i wyświetlania wyników sondowania.
 
-Na początek pierwszy wiersz w `urlpatterns` tablicy projektu Django w *urls.py* pliku jest czymś więcej niż tylko prostym routingiem do widoku aplikacji. Zamiast tego pobiera w aplikacji własny plik *urls.py:*
+Aby rozpocząć od, pierwszy wiersz tablicy projektu Django `urlpatterns` w pliku *URLs.py* jest więcej niż tylko prosty Routing do widoku aplikacji. W zamian pobierany jest plik *URLs.py* aplikacji:
 
 ```python
 from django.conf.urls import url, include
@@ -222,7 +222,7 @@ urlpatterns = [
 ]
 ```
 
-Plik *app/urls.py* zawiera kilka bardziej interesujących kodów routingu (dodano komentarze wyjaśniające):
+Plik *App/URL. PR* zawiera bardziej interesujący kod routingu (dodane komentarze objaśniające):
 
 ```python
 urlpatterns = [
@@ -254,13 +254,13 @@ urlpatterns = [
 ]
 ```
 
-Jeśli nie znasz bardziej złożonych wyrażeń regularnych używanych w tym miejscu, możesz wkleić wyrażenie do [regex101.com,](https://regex101.com/) aby uzyskać wyjaśnienie w prostym języku. (Musisz uciec do przodu `/` ukośniki, dodając `\` ukośnik wstecz, przed nimi; ucieczka nie jest konieczne w Pythonie ze względu na `r` prefiks na ciąg, co oznacza "raw").
+Jeśli nie znasz bardziej złożonych wyrażeń regularnych, można wkleić wyrażenie do [regex101.com](https://regex101.com/) w celu wyjaśnienia w zwykłym języku. (Aby przejść do następnego ukośnika `/` , należy dodać ukośnik odwrotny, `\` przed nimi; Ucieczka nie jest konieczna w języku Python ze względu `r` na prefiks ciągu, co oznacza "RAW").
 
-W Django składnia `?P<name>pattern` tworzy grupę `name`o nazwie , która jest przekazywana jako argumenty do widoków w kolejności, w jakiej się pojawiają. W `PollsDetailView` kodzie pokazanym `PollsResultsView` wcześniej i `pk` `app.views.vote` otrzymać argument `poll_id`o nazwie i odbiera argument o nazwie .
+W Django, składnia `?P<name>pattern` tworzy grupę o nazwie `name` , która jest przenoszona jako argumenty do widoków w kolejności, w jakiej się znajdują. W pokazanym wcześniej kodzie `PollsDetailView` i `PollsResultsView` odebranie argumentu o nazwie `pk` i `app.views.vote` odebranie argumentu o nazwie `poll_id` .
 
-Widać również, że większość widoków to nie tylko bezpośrednie odwołania do funkcji widoku w *aplikacji/views.py*. Zamiast tego większość z nich odnosi się do `django.views.generic.ListView` klasy `django.views.generic.DetailView`w tym samym pliku, która pochodzi od lub . Klasy podstawowe zapewniają `as_view` metody, które `template_name` przyjmują argument do identyfikowania szablonu. Klasa `ListView` podstawowa, używana dla strony głównej, `queryset` oczekuje również właściwości zawierającej dane i właściwości o nazwie zmiennej, `context_object_name` za pomocą której `latest_poll_list`chcesz odwołać się do danych w szablonie, w tym przypadku .
+Możesz również zobaczyć, że większość widoków nie tylko kieruje odwołania do funkcji widoku w *aplikacji/widokach. PR*. Zamiast tego, najlepiej odwoływać się do klasy w tym samym pliku, który pochodzi z `django.views.generic.ListView` lub `django.views.generic.DetailView` . Klasy bazowe zapewniają `as_view` metody, które przyjmują `template_name` argument do identyfikowania szablonu. `ListView`Klasa bazowa, jak używana dla strony głównej, oczekuje również `queryset` Właściwości zawierającej dane i `context_object_name` Właściwość o nazwie zmiennej, która ma być odwołująca się do danych w szablonie, w tym przypadku `latest_poll_list` .
 
-Teraz możesz sprawdzić `PollListView` stronę główną, która jest zdefiniowana w *aplikacji / views.py:*
+Teraz można przeanalizować `PollListView` stronę główną, która jest zdefiniowana w następujący sposób w temacie *App/views. PR*:
 
 ```python
 class PollListView(ListView):
@@ -274,9 +274,9 @@ class PollListView(ListView):
         return context
 ```
 
-Wszystko, co jest zrobione w tym miejscu jest zidentyfikowanie modelu, `get_context_data` który działa `title` `year` z widoku (Ankieta) i zastępuje metodę dodawania i wartości do kontekstu.
+Wszystko gotowe do zidentyfikowania modelu, z którym działa widok (sondowanie), i przesłania `get_context_data` metodę w celu dodania `title` i `year` wartości do kontekstu.
 
-Rdzeń szablonu (*templates/app/index.html*) jest następujący:
+Rdzeń szablonu (*templates/App/index.html*) jest następujący:
 
 ```html
 {% if latest_poll_list %}
@@ -296,9 +296,9 @@ Rdzeń szablonu (*templates/app/index.html*) jest następujący:
 {% endif %}
 ```
 
-Mówiąc prościej, szablon odbiera listę `latest_poll_list`Poll obiektów w , a następnie iteruje za pośrednictwem tej listy, `text` aby utworzyć wiersz tabeli, który zawiera łącze do każdej ankiety przy użyciu wartości ankiety. W `{% url %}` tagu "app:detail" odnosi się do wzorca adresu URL w *aplikacji/urls.py* o nazwie "detail", używając `poll.id` jako argumentu. Efektem tego jest to, że Django tworzy adres URL przy użyciu odpowiedniego wzorca i używa go do linku. Ten bit przyszłości korekty oznacza, że można zmienić ten wzorzec adresu URL w dowolnym momencie i wygenerowane linki automatycznie zaktualizować do dopasowania.
+Po prostu, szablon odbiera listę obiektów sondowania w `latest_poll_list` , a następnie wykonuje iterację na tej liście, aby utworzyć wiersz tabeli zawierający link do każdej sondy przy użyciu wartości sondy `text` . W `{% url %}` tagu "App: Detail" odnosi się do wzorca adresu URL w polu *App/URL. PR* o nazwie "Detail", używając `poll.id` jako argumentu. Ten efekt polega na tym, że Django tworzy adres URL przy użyciu odpowiedniego wzorca i używa go dla linku. Ten bit w przyszłości oznacza, że w dowolnym momencie można zmienić ten wzorzec adresu URL, a wygenerowane linki są automatycznie aktualizowane.
 
-I `PollDetailView` `PollResultsView` klasy w *app/views.py* (nie pokazano tutaj) wyglądają prawie `PollListView` `DetailView` identycznie, z wyjątkiem tego, że pochodzą one od zamiast. Ich odpowiednie szablony, *app/templates/details.html* i *app/templates/results.html* następnie umieszczają odpowiednie pola z modeli w różnych formantach HTML. Jednym z unikalnych elementów w *details.html* jest to, że wybory dla ankiety są zawarte w formularzu HTML, który po przesłaniu ma POST do /vote URL. Jak widać wcześniej, ten wzorzec adresu URL jest kierowany `app.views.vote` `poll_id` do , który jest implementowany w następujący sposób (zwróć uwagę na argument, który jest ponownie nazwaną grupą w wyrażeniu regularnym używanym w routingu dla tego widoku):
+`PollDetailView`Klasy i `PollResultsView` w *aplikacji/widoków. PR* (nie pokazano tutaj) wyglądają niemal identycznie z `PollListView` wyjątkiem tego, że pochodzą od `DetailView` zamiast tego. Ich odpowiednie szablony, *aplikacje/szablony/details.html* i *App/templates/results.html* następnie umieszczają odpowiednie pola z modeli wewnątrz różnych kontrolek HTML. Jednym unikatowym elementem w *details.html* jest to, że opcje sondy są zawarte w formularzu HTML, który po przesłaniu wysyła wpis do adresu URL/vote. Jak widać wcześniej, ten wzorzec adresu URL jest kierowany do `app.views.vote` , który jest implementowany w następujący sposób (należy zwrócić uwagę na `poll_id` argument, który jest ponownie nazwaną grupą w wyrażeniu regularnym używanym w routingu dla tego widoku):
 
 ```python
 def vote(request, poll_id):
@@ -319,15 +319,15 @@ def vote(request, poll_id):
         return HttpResponseRedirect(reverse('app:results', args=(poll.id,)))
 ```
 
-W tym miejscu widok nie ma własnego odpowiedniego szablonu, podobnie jak inne strony. Zamiast tego sprawdza poprawność wybranej ankiety, pokazując 404, jeśli ankieta nie istnieje (tylko w przypadku, gdy ktoś wpisze adres URL, taki jak "głosuj/1a2b3c"). Następnie upewnia się, że wybrany wybór jest ważny dla ankiety. Jeśli nie, `except` blok po prostu renderuje stronę szczegółów ponownie z komunikatem o błędzie. Jeśli wybór jest prawidłowy, widok zlicza głos i przekierowuje do strony wyników.
+W tym miejscu widok nie ma odpowiadającego mu szablonu, takiego jak inne strony. Zamiast tego sprawdza poprawność wybranej sondy, pokazując 404, jeśli Sonda nie istnieje (tylko w przypadku, gdy ktoś wprowadzi adres URL, na przykład "głosowania/1a2b3c"). Następnie sprawdza, czy wybrany głos jest prawidłowy dla sondy. W przeciwnym razie `except` blok po prostu renderuje ponownie stronę szczegółów z komunikatem o błędzie. Jeśli wybór jest prawidłowy, wyświetli się powiększanie głosu i przekierowania na stronie wyników.
 
 ## <a name="step-6-5-create-a-custom-administration-interface"></a>Krok 6-5: Tworzenie niestandardowego interfejsu administracyjnego
 
-Ostatnie fragmenty szablonu "Polls Django Web Project" to niestandardowe rozszerzenia domyślnego interfejsu administracyjnego Django, jak pokazano wcześniej w tym artykule w kroku 6-1. Domyślny interfejs zapewnia zarządzanie użytkownikami i grupami, ale nic więcej. Szablon projektu Ankiety dodaje funkcje, które umożliwiają również zarządzanie ankietami.
+Ostatnie fragmenty szablonu "Django" projektu sieci Web "sonds" są rozszerzeniami niestandardowymi domyślnego interfejsu administracyjnego Django, jak pokazano wcześniej w tym artykule w kroku 6-1. Domyślny interfejs zapewnia zarządzanie użytkownikami i grupami, ale nic więcej. Szablon projektu sondowania dodaje funkcje, które umożliwiają również zarządzanie sondowaniem.
 
-Po pierwsze, wzorce adresów URL w *urls.py* `url(r'^admin/', include(admin.site.urls)),` projektu Django zostały uwzględnione domyślnie; "admin / doc" wzór jest również wliczone, ale skomentował.
+Po pierwsze, wzorce URL w *URLs.py* projektu Django są `url(r'^admin/', include(admin.site.urls)),` domyślnie włączone. wzór "admin/doc" jest również dołączony do komentarza.
 
-Aplikacja następnie zawiera *plik admin.py*, który Django automatycznie działa podczas odwiedzania interfejsu `django.contrib.admin` administracyjnego dzięki włączeniu do `INSTALLED_APPS` tablicy *settings.py*. Kod w tym pliku, zgodnie z szablonem projektu, jest następujący:
+Następnie aplikacja zawiera plik *admin.py*, który Django automatycznie uruchamiany podczas odwiedzania interfejsu administracyjnego, dzięki czemu można dołączać do `django.contrib.admin` `INSTALLED_APPS` tablicy *Settings.py*. Kod w tym pliku, zgodnie z szablonem projektu, jest następujący:
 
 ```python
 from django.contrib import admin
@@ -353,27 +353,27 @@ class PollAdmin(admin.ModelAdmin):
 admin.site.register(Poll, PollAdmin)
 ```
 
-Jak widać, `PollAdmin` klasa pochodzi z `django.contrib.admin.ModelAdmin` i dostosowuje liczbę swoich pól przy `Poll` użyciu nazw z modelu, który zarządza. Pola te są opisane w [opcjach ModelAdmin](https://docs.djangoproject.com/en/2.0/ref/contrib/admin/#modeladmin-options) w dokumentacji Django.
+Jak widać, `PollAdmin` Klasa dziedziczy z `django.contrib.admin.ModelAdmin` i dostosowuje liczbę pól przy użyciu nazw z `Poll` modelu, którymi zarządza. Te pola są opisane na stronie [Opcje ModelAdmin](https://docs.djangoproject.com/en/2.0/ref/contrib/admin/#modeladmin-options) w dokumentacji Django.
 
-Wywołanie `admin.site.register` następnie łączy tę klasę z`Poll`modelem ( ) i zawiera ją w interfejsie administratora. Ogólny wynik jest pokazany poniżej:
+Wywołanie w celu `admin.site.register` połączenia tej klasy z modelem ( `Poll` ) i zawiera je w interfejsie administratora. Ogólny wynik jest przedstawiony poniżej:
 
-![Widok administracyjny aplikacji Polls Django Web Project](media/django/step06-polls-administrative-interface.png)
+![Widok administracyjny aplikacji Project Web Django dla ankiet](media/django/step06-polls-administrative-interface.png)
 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!Note]
-> Jeśli zostały popełnienia rozwiązania programu Visual Studio do kontroli źródła w trakcie tego samouczka, teraz jest dobry czas, aby wykonać inne zatwierdzenie. Twoje rozwiązanie powinno być zgodne z kodem źródłowym samouczka na GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
+> Jeśli Twoje rozwiązanie programu Visual Studio zostało zatwierdzone do kontroli źródła w trakcie tego samouczka, teraz jest dobrym terminem do wykonania kolejnego zatwierdzenia. Twoje rozwiązanie powinno być zgodne z kodem źródłowym samouczka w witrynie GitHub: [Microsoft/Python-Sample-vs-Learning-Django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
-Teraz zbadałeś całość szablonów "Blank Django Web Project", "Django Web Project" i "Polls Django Web Project" w programie Visual Studio. Nauczyłeś się wszystkich podstaw Django, takich jak korzystanie z widoków i szablonów, i zbadałeś routing, uwierzytelnianie i używanie modeli baz danych. Teraz powinieneś mieć możliwość tworzenia własnej aplikacji sieci web z dowolnymi widokami i modelami, których potrzebujesz.
+Teraz udało Ci się przeanalizować w całości szablon "pusty projekt sieci Web Django", "projekt sieci Web" Django "i" sondy projektu sieci Web Django "w programie Visual Studio. Znasz już wszystkie podstawowe informacje o Django, takie jak Używanie widoków i szablonów oraz Eksplorowanie routingu, uwierzytelniania i korzystania z modeli baz danych. Teraz powinno być możliwe tworzenie aplikacji sieci Web z własnymi widokami i modelami, które są potrzebne.
 
-Uruchamianie aplikacji sieci web na komputerze deweloperskim to tylko jeden krok w udostępnianiu aplikacji klientom. Następne kroki mogą obejmować następujące zadania:
+Uruchamianie aplikacji sieci Web na komputerze deweloperskim to tylko jeden krok w udostępnieniu aplikacji klientom. Następne kroki mogą obejmować następujące zadania:
 
-- Wdrażanie aplikacji sieci web na serwerze produkcyjnym, takim jak usługa Azure App Service. Zobacz [Publikowanie w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
+- Wdróż aplikację sieci Web na serwerze produkcyjnym, takim jak Azure App Service. Zobacz [Publikowanie w Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-- Dostosuj stronę 404, tworząc szablon o nazwie *templates/404.html*. Gdy jest obecny, Django używa tego szablonu zamiast domyślnego. Aby uzyskać więcej informacji, zobacz [Widoki błędów](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) w dokumentacji Django.
+- Dostosuj stronę 404, tworząc szablon o nazwie *templates/404.html*. Gdy jest obecny, Django używa tego szablonu zamiast domyślnego. Aby uzyskać więcej informacji, zobacz [widoki błędów](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) w dokumentacji Django.
 
-- Napisz testy jednostkowe w *tests.py*; Szablony projektów programu Visual Studio zapewniają punkty wyjścia dla tych, a więcej informacji można znaleźć na [Pisanie pierwszej aplikacji Django, część 5 - testowanie](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) i [testowanie w Django](https://docs.djangoproject.com/en/2.0/topics/testing/) w dokumentacji Django.
+- Zapisz testy jednostkowe w *tests.py*; Szablony projektów programu Visual Studio zawierają punkty początkowe, a więcej informacji można znaleźć na stronie [Tworzenie pierwszej aplikacji Django, część 5 — testowanie](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) i [testowanie w Django](https://docs.djangoproject.com/en/2.0/topics/testing/) w dokumentacji Django.
 
-- Zmień aplikację z SQLite do magazynu danych na poziomie produkcji, takich jak PostgreSQL, MySQL i SQL Server (z których wszystkie mogą być hostowane na platformie Azure). Zgodnie z [opisem kiedy używać SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), SQLite działa dobrze w przypadku miejsc o niskim i średnim natężeniu ruchu z mniej niż 100K odsłon / dzień, ale nie jest zalecane dla większych woluminów. Jest również ograniczona do jednego komputera, więc nie może być używany w żadnym scenariuszu wieloserwerowym, takim jak równoważenie obciążenia i replikacja geograficzna. Aby uzyskać informacje na temat obsługi innych baz danych przez Django, zobacz [Konfiguracja bazy danych](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Można również użyć [narzędzia Azure SDK dla języka Python](/azure/python/) do pracy z usługami magazynu platformy Azure, takich jak tabele i obiekty blob.
+- Zmień aplikację z oprogramowania SQLite na magazyn danych na poziomie produkcyjnym, taki jak PostgreSQL, MySQL i SQL Server (wszystkie mogą być hostowane na platformie Azure). Zgodnie z opisem w [przypadku korzystania z oprogramowania SQLite](https://www.sqlite.org/whentouse.html) (SQLite.org), program SQLite działa prawidłowo w przypadku witryn o niskiej i średnim ruchu z mniej niż 100 000 trafień/dzień, ale nie jest to zalecane w przypadku wyższych woluminów. Jest on również ograniczony do jednego komputera, dlatego nie można go używać w żadnym scenariuszu obejmującym wiele serwerów, takim jak równoważenie obciążenia i replikacja geograficzna. Aby uzyskać informacje na temat pomocy technicznej Django dla innych baz danych, zobacz [Konfiguracja bazy danych](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Możesz również użyć [zestawu Azure SDK dla języka Python](/azure/python/) do pracy z usługami Azure Storage, takimi jak tabele i obiekty blob.
 
-- Konfigurowanie potoku ciągłej integracji/ciągłego wdrażania w usłudze takiej jak Azure DevOps. Oprócz pracy z kontrolą źródła (za pośrednictwem usługi Azure Repos lub GitHub lub w innym miejscu), można skonfigurować projekt DevOps platformy Azure tak, aby automatycznie uruchamiał testy jednostkowe jako warunek wstępny wydania, a także skonfigurował potok do wdrożenia na serwerze przejściowym dodatkowe testy przed wdrożeniem w produkcji. Ponadto usługa Azure DevOps integruje się z rozwiązaniami do monitorowania, takimi jak usługa App Insights, i zamyka cały cykl za pomocą narzędzi do elastycznego planowania. Aby uzyskać więcej informacji, zobacz [Tworzenie potoku ciągłej integracji/ciągłego wdrażania dla języka Python za pomocą projektu Azure DevOps,](/azure/devops-project/azure-devops-project-python?view=vsts) a także ogólnej [dokumentacji programu Azure DevOps.](/azure/devops/?view=vsts)
+- Skonfiguruj potok ciągłej integracji/ciągłego wdrażania w usłudze, takiej jak Azure DevOps. Oprócz pracy z kontrolą źródła (za pośrednictwem Azure Repos lub GitHub lub w innym miejscu) można skonfigurować projekt platformy Azure DevOps, aby automatycznie uruchamiał testy jednostkowe jako wstępnie wymagane dla wydania, a także skonfigurować potok do wdrożenia na serwerze przejściowym w celu przeprowadzenia dodatkowych testów przed wdrożeniem w środowisku produkcyjnym. Ponadto platforma Azure DevOps integruje się z rozwiązaniami do monitorowania, takimi jak App Insights i zamyka cały cykl dzięki narzędziom do planowania Agile. Aby uzyskać więcej informacji, zobacz Tworzenie potoku ciągłej integracji/ciągłego wdrażania [dla języka Python za pomocą projektu DevOps platformy Azure](/azure/devops-project/azure-devops-project-python?view=vsts) , a także ogólnej [dokumentacji usługi Azure DevOps](/azure/devops/?view=vsts).
