@@ -1,5 +1,5 @@
 ---
-title: CPPClean Zadanie | Dokumenty firmy Microsoft
+title: CPPClean — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,28 +20,28 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 331a96c7cd67b933e521e3fe5f2d7a909ffa5d03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634347"
 ---
 # <a name="cppclean-task"></a>CPPClean — Zadanie
 
-Usuwa pliki tymczasowe, które MSBuild tworzy podczas tworzenia projektu C++. Proces usuwania plików kompilacji jest znany jako *czyszczenie*.
+Usuwa pliki tymczasowe, które program MSBuild tworzy po skompilowaniu projektu języka C++. Proces usuwania plików kompilacji jest znany jako *czyszczenie*.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli opisano parametry zadania **CPPClean.**
+ W poniższej tabeli opisano parametry zadania **CPPClean —** .
 
 |Parametr|Opis|
 |---------------|-----------------|
-|**Pliki usunięte**|Opcjonalny parametr wyjściowy. `ITaskItem[]`<br /><br /> Definiuje tablicę elementów pliku wyjściowego MSBuild, które mogą być używane i emitowane przez zadania.|
-|**DoDelete (DoDelete)**|Opcjonalny parametr **logiczny.**<br /><br /> Jeśli `true`, czyść pliki kompilacji tymczasowej.|
-|**FilePatternsToDeleteOnClean**|Wymagany parametr interfejsu `String`.<br /><br /> Określa listę rozdzielanych średnikami rozszerzeń plików do czyszczenia.|
-|**PlikiExcludedFromClean**|Parametr `String` opcjonalny.<br /><br /> Określa listę plików rozdzielanych średnikami, które mają nie być czyszczone.|
-|**FoldersToClean**|Wymagany parametr interfejsu `String`.<br /><br /> Określa listę katalogów rozdzielanych średnikami do czyszczenia. Można określić pełną lub względną ścieżkę, a ścieżka może zawierać symbol symbolu wieloznacznego (*).|
+|**DeletedFiles**|Opcjonalny `ITaskItem[]` parametr wyjściowy.<br /><br /> Definiuje tablicę elementów plików wyjściowych programu MSBuild, które mogą być używane i emitowane przez zadania.|
+|**DoDelete**|Opcjonalny parametr **logiczny** .<br /><br /> `true`Wyczyść pliki tymczasowej kompilacji.|
+|**FilePatternsToDeleteOnClean**|Wymagany parametr interfejsu `String`.<br /><br /> Określa rozdzielaną średnikami listę rozszerzeń plików, które mają zostać oczyszczone.|
+|**FilesExcludedFromClean**|Opcjonalny `String` parametr.<br /><br /> Określa rozdzielaną średnikami listę plików, które nie są czyste.|
+|**FoldersToClean**|Wymagany parametr interfejsu `String`.<br /><br /> Określa rozdzielaną średnikami listę katalogów do oczyszczenia. Można określić pełną lub względną ścieżkę, a ścieżka może zawierać symbol wieloznaczny (*).|
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

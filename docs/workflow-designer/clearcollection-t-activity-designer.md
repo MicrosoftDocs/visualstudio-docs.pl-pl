@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 710e221441736ecb2415aec32c7f0bfb9a2d99ac
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711628"
 ---
 # <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T>, projektant działań
@@ -41,7 +41,7 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.ClearCollec
 |<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|Prawda|Określa kolekcję, która ma zostać wyczyszczona elementów. Ta kolekcja jest typu **ICollection \<TypeArgument> .** Aby określić kolekcję, wpisz wyrażenie Visual Basic w siatce właściwości.|
 |*Elementu TypeArgument*|Prawda|Określa typ T elementów zawartych w <xref:System.Collections.Generic.ICollection%601> . Domyślnie ten typ *elementu TypeArgument* jest ustawiony na **Int32**. Aby zmienić typ, Zmień wartość *elementu TypeArgument* w polu kombi w siatce właściwości.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kolekcja](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)

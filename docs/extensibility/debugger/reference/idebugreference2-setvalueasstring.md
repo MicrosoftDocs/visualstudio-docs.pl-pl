@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsString | Dokumenty firmy Microsoft
+title: 'IDebugReference2:: SetValueAsString | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c8414ce5f53acec2a30ff681ff0bab8ddc919310
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720295"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
@@ -45,13 +45,13 @@ int SetValueAsString ( 
 
 ## <a name="parameters"></a>Parametry
 `pszValue`\
-[w] Wartość jako ciąg.
+podczas Wartość jako ciąg.
 
 `dwRadix`\
-[w] Radix do wykorzystania w formatowaniu wszelkich informacji liczbowych.
+podczas Podstawy do użycia podczas formatowania wszelkich informacji numerycznych.
 
 `dwTimeout`\
-[w] Maksymalny czas ( w milisekundach) oczekiwania przed zwróceniem tej metody. Służy `INFINITE` do oczekiwania przez czas nieokreślony.
+podczas Maksymalny czas oczekiwania (w milisekundach) przed powrotem z tej metody. Użyj `INFINITE` , aby czekać w nieskończoność.
 
 ## <a name="return-value"></a>Wartość zwracana
  Zawsze zwraca wartość `E_NOTIMPL`.

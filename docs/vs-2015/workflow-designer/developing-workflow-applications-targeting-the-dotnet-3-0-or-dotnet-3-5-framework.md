@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fcace8b2ed9576ff5c3c4f4a0c526a70b2d4228a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843874"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Opracowywanie aplikacji przepływu pracy przeznaczonych dla platformy .NET 3.0 lub .NET 3.5
-[!INCLUDE[vs2010](../includes/vs2010-md.md)] zapewnia [!INCLUDE[wfd1](../includes/wfd1-md.md)] do tworzenia aplikacji [!INCLUDE[wf](../includes/wf-md.md)] przeznaczonych dla [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Projektant używa znanego interfejsu użytkownika [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do tworzenia graficznego i debugowania aplikacji przepływu pracy.
+[!INCLUDE[vs2010](../includes/vs2010-md.md)] umożliwia [!INCLUDE[wfd1](../includes/wfd1-md.md)] Tworzenie aplikacji przeznaczonych dla [!INCLUDE[wf](../includes/wf-md.md)] [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] . Projektant używa znanego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu użytkownika do tworzenia graficznego i debugowania aplikacji przepływu pracy.
 
- [!INCLUDE[vs2010](../includes/vs2010-md.md)] zapewnia również dostęp do starszego projektanta przepływów pracy, który może być używany do [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Ta sekcja zawiera wskazówki dotyczące korzystania z tego starszego projektanta.
+ [!INCLUDE[vs2010](../includes/vs2010-md.md)] zapewnia również dostęp do starszego projektanta przepływów pracy, który może służyć jako obiekt docelowy [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] . Ta sekcja zawiera wskazówki dotyczące korzystania z tego starszego projektanta.
 
 ## <a name="in-this-section"></a>W tej sekcji
  [Używanie starszej wersji Projektanta przepływu pracy](../workflow-designer/using-the-legacy-workflow-designer.md)

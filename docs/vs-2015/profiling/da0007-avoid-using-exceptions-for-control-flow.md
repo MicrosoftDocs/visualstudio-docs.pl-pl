@@ -15,17 +15,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8bae47d5fd759de66777c4e1472603d3bf4a193d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843935"
 ---
-# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Unikaj używania wyjątków do przepływu sterowania
+# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Unikaj używania wyjątków w przepływie sterowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Identyfikator reguły | DA0007 |  
-|Category|.NET Framework Usage|  
+| Kategoria |. Użycie platformy NET Framework |  
 | Metody profilowania | Wszystkie |  
 | Komunikat | Często są zgłaszane duże liczby wyjątków. Rozważ zmniejszenie użycia wyjątków w logice programu. |  
 | Typ komunikatu | Ostrzeżenie |  
@@ -41,6 +41,6 @@ Identyfikator reguły | DA0007 |
  Aby uzyskać więcej informacji, zobacz sekcję [Zarządzanie wyjątkami](https://msdn.microsoft.com/library/ms998547.aspx#scalenetchapt05_topic24) w **rozdziale 5 — Poprawianie wydajności kodu zarządzanego** w celu **zwiększenia wydajności aplikacji .NET i skalowalności** biblioteki **wzorców i praktyk firmy Microsoft** w witrynie MSDN.  
   
 ## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie  
- Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do widoku znaczniki. Znajdź kolumnę zawierającą wyjątki środowiska **.NET CLR (@ProcessInstance)\\liczbę pomiarów wyjątków/s** . Ustal, czy istnieją określone fazy wykonywania programu, w których obsługa wyjątków jest częściej niż inne. Przy użyciu profilu próbkowania spróbuj identyfikować instrukcje throw i bloki try/catch generujące częste wyjątki. W razie potrzeby Dodaj logikę do bloków catch, aby ułatwić zrozumienie, które wyjątki są najczęściej obsługiwane. Jeśli to możliwe, Zastąp często wykonywane instrukcje throw lub bloki catch z prostą logiką sterowania przepływem lub kodem walidacji.  
+ Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do widoku znaczniki. Znajdź kolumnę zawierającą wyjątki środowiska **.NET CLR ( @ProcessInstance ) \\ liczba zgłoszonych wyjątków/s** . Ustal, czy istnieją określone fazy wykonywania programu, w których obsługa wyjątków jest częściej niż inne. Przy użyciu profilu próbkowania spróbuj identyfikować instrukcje throw i bloki try/catch generujące częste wyjątki. W razie potrzeby Dodaj logikę do bloków catch, aby ułatwić zrozumienie, które wyjątki są najczęściej obsługiwane. Jeśli to możliwe, Zastąp często wykonywane instrukcje throw lub bloki catch z prostą logiką sterowania przepływem lub kodem walidacji.  
   
  Na przykład jeśli okaże się, że aplikacja obsłuży częste wyjątki DivideByZeroException, dodanie logiki do programu w celu sprawdzenia, czy nie ma żadnych wartości, spowoduje zwiększenie wydajności aplikacji.

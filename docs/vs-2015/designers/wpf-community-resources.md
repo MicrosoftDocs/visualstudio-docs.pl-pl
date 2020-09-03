@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 167fc2f80a8eaeddb121d208f714fe134c63a198
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843891"
 ---
 # <a name="wpf-community-resources"></a>Zasoby społeczności WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Firma Microsoft uwidacznia różne zasoby społeczności, aby poznać, omówić i przekazać opinie dotyczące Windows Presentation Foundation (WPF), w tym blogów tworzonych przez członków zespołu WPF i liderów społeczności, forów i opinii Microsoft Connect Gniazdo.
+Firma Microsoft uwidacznia różne zasoby społeczności, aby poznać, omówić i przekazać opinie dotyczące Windows Presentation Foundation (WPF), w tym blogów tworzonych przez członków zespołu WPF i liderów społeczności, forów oraz centrum opinii programu Microsoft Connect.
 
 ## <a name="community"></a>Społeczność
  [Forum WPF](https://social.msdn.microsoft.com/forums/en-US/wpf/threads/)

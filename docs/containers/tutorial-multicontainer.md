@@ -7,10 +7,10 @@ ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
 ms.openlocfilehash: f20c3580d3082c69bbadb3b866d08e2c260a6827
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711667"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Samouczek: Tworzenie aplikacji z obsługą kontenera przy użyciu Docker Compose
@@ -192,7 +192,7 @@ Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozy
 
 Zapoznaj się z opcjami wdrażania [kontenerów na platformie Azure](/azure/containers).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
   
 [Docker Compose](https://docs.docker.com/compose/)  
 [Narzędzia kontenera](/visualstudio/containers/)

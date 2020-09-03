@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f80f0898167de133d78d27d26f97d0ab8ced0b31
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843952"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>Równoległe tworzenie wielu projektów za pomocą narzędzia MSBuild
@@ -30,7 +30,7 @@ Można użyć programu MSBuild do kompilacji wielu projektów przez uruchomienie
 - Parametr zadania <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> w zadaniu programu MSBuild.  
   
 > [!NOTE]
-> Przełącznik **/verbosity.** ( **/v**) w wierszu polecenia może również mieć wpływ na wydajność kompilacji. Wydajność kompilacji może spaść jeśli szczegółowość informacji dziennika kompilacji jest ustawiona na szczegóły lub diagnostyka, które są używane w celu rozwiązania problemów. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md) i [Dokumentacja wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
+> Przełącznik **/verbosity.** (**/v**) w wierszu polecenia może również mieć wpływ na wydajność kompilacji. Wydajność kompilacji może spaść jeśli szczegółowość informacji dziennika kompilacji jest ustawiona na szczegóły lub diagnostyka, które są używane w celu rozwiązania problemów. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md) i [Dokumentacja wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
   
 ## <a name="maxcpucount-switch"></a>Przełącznik /maxcpucount  
  Podczas używania przełącznika `/maxcpucount`, lub `/m` w skrócie, program MSBuild może utworzyć określoną liczbę procesów MSBuild.exe, które mogą być wykonywane równolegle. Procesy te są nazywane także „procesami roboczymi”. Każdy proces roboczy używa oddzielnego rdzenia procesora, jeśli jakieś są dostępne, do kompilacji projektu a w tym samym czasie inne dostępne procesory mogą kompilować inne projekty. Na przykład ustawienie tego parametru na wartość „4” spowoduje, że program MSBuild utworzy cztery procesy robocze w celu skompilowania projektu.  
@@ -46,7 +46,7 @@ msbuild.exe myproj.proj /maxcpucount:3
 ```  
   
 ## <a name="buildinparallel-task-parameter"></a>Parametr zadania BuildInParallel  
- `BuildInParallel` jest opcjonalnym parametrem logicznym dla zadania [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Gdy `BuildInParallel` jest ustawiona na `true` (wartość domyślna), generowane są wiele procesów roboczych, aby kompilować tyle projektów jednocześnie, jak to możliwe. Do poprawnego działania przełącznik `/maxcpucount` musi być ustawiony na wartość większą niż 1, a system musi posiadać co najmniej dwa procesory lub procesor dwurdzeniowy.  
+ `BuildInParallel` jest opcjonalnym parametrem logicznym [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zadania. Gdy `BuildInParallel` jest ustawiona na `true` (wartość domyślna), generowane są wiele procesów roboczych, aby kompilować tyle projektów jednocześnie, ile to możliwe. Do poprawnego działania przełącznik `/maxcpucount` musi być ustawiony na wartość większą niż 1, a system musi posiadać co najmniej dwa procesory lub procesor dwurdzeniowy.  
   
  Oto przykład, pobrany z microsoft.common.targets ilustrujący, jak ustawić parametr `BuildInParallel`.  
   
@@ -75,4 +75,4 @@ msbuild.exe myproj.proj /maxcpucount:3
 ## <a name="see-also"></a>Zobacz też  
  [Używanie wielu procesorów do kompilowania projektów](../msbuild/using-multiple-processors-to-build-projects.md)   
  [Pisanie rejestratorów obsługujących wiele procesorów](../msbuild/writing-multi-processor-aware-loggers.md)   
- [Blog C++ strojenia równoległości kompilacji](https://blogs.msdn.com/b/visualstudio/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)
+ [Dostrajanie blogu kompilacji w języku C++](https://blogs.msdn.com/b/visualstudio/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)
