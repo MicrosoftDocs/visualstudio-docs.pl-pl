@@ -1,5 +1,5 @@
 ---
-title: Generowanie zastępowania metody
+title: Generuj przesłonięcie metody
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -8,53 +8,53 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3c3a8f4eaf863fd8174ff70339fffc80141fc38d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569247"
 ---
-# <a name="generate-an-override-in-visual-studio"></a>Generowanie zastąpienia w programie Visual Studio
+# <a name="generate-an-override-in-visual-studio"></a>Generowanie przesłonięcia w programie Visual Studio
 
-To generowanie kodu dotyczy:
+Ta generacja kodu ma zastosowanie do:
 
 - C#
 
 - Visual Basic
 
-**Co:** Umożliwia natychmiastowe wygenerowanie kodu dla dowolnej metody, która może zostać zastąpiona z klasy podstawowej.
+**Co:** Umożliwia natychmiastowe wygenerowanie kodu dla dowolnej metody, która może zostać przesłonięta z klasy bazowej.
 
-**Kiedy:** Chcesz zastąpić metodę klasy podstawowej i automatycznie wygenerować podpis.
+**Kiedy:** Chcesz przesłonić metodę klasy bazowej i wygenerować podpis automatycznie.
 
-**Dlaczego?** Podpis metody można napisać samodzielnie, jednak ta funkcja wygeneruje podpis automatycznie.
+**Dlaczego:** Podpis metody można napisać samodzielnie, jednak ta funkcja będzie generować sygnaturę automatycznie.
 
 ## <a name="how-to"></a>Porady
 
-1. Wpisz `override` w języku `Overrides` C# lub visual basic, a następnie spacja, gdzie chcesz wstawić metodę zastępowania.
+1. Wpisz `override` w języku C# lub `Overrides` w Visual Basic, a po nim spację, gdzie chcesz wstawić metodę przesłaniania.
 
    - C#:
 
-      ![Zastępowanie intellisense C #](media/override-intellisense-cs.png)
+      ![Zastąp IntelliSense C #](media/override-intellisense-cs.png)
 
    - Visual Basic:
 
-      ![Zastępowanie intellisense VB](media/override-intellisense-vb.png)
+      ![Zastępowanie IntelliSense VB](media/override-intellisense-vb.png)
 
-2. Wybierz metodę, którą chcesz zastąpić z klasy podstawowej.
+2. Wybierz metodę, która ma zostać przesłonięta z klasy bazowej.
 
    > [!TIP]
-   > - Użyj ikony właściwości ![Ikona właściwości](media/override-property-cs.png) , aby wyświetlić lub ukryć właściwości na liście.
-   > - Użyj ikony metody ![Ikona Metody](media/override-method-cs.png) , aby wyświetlić lub ukryć metody na liście.
+   > - Użyj ikony właściwości ![Ikona właściwości](media/override-property-cs.png) do wyświetlania lub ukrywania właściwości na liście.
+   > - Użyj ikony metody ![Ikona metody](media/override-method-cs.png) , aby pokazać lub ukryć metody na liście.
 
-   Wybrana metoda lub właściwość jest dodawany do klasy jako zastąpienie, gotowe do zaimplementowania.
+   Wybrana metoda lub właściwość jest dodawana do klasy jako przesłonięcie, gotowy do zaimplementowania.
 
    - C#:
 
-       ![Zastądnie wyniku C #](media/override-result-cs.png)
+       ![Przesłoń wynik C #](media/override-result-cs.png)
 
    - Visual Basic:
 
-       ![Zastępowanie wyniku VB](media/override-result-vb.png)
+       ![Przesłoń wynik VB](media/override-result-vb.png)
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -1,6 +1,6 @@
 ---
-title: Wyodrębnianie metody
-description: Przeksztą fragment kodu do własnej metody, wybierając kod i wpisując Ctrl+R, Ctrl+M.
+title: Wyodrębnij metodę
+description: Zmień fragment kodu na własny metodę, wybierając kod i wpisując CTRL + R, Ctrl + M.
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -14,33 +14,33 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569702"
 ---
-# <a name="extract-a-method-refactoring"></a>Wyodrębnianie refaktoryzacji metody
+# <a name="extract-a-method-refactoring"></a>Wyodrębnianie metody refaktoryzacji
 
-Ten refaktoryzator ma zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
 - Visual Basic
 
-**Co:** Umożliwia przekształcenie fragmentu kodu w własną metodę.
+**Co:** Umożliwia włączenie fragmentu kodu w osobnym metodzie.
 
-**Kiedy:** Masz fragment istniejącego kodu w jakiejś metodzie, która musi być wywoływana z innej metody.
+**Kiedy:** Istnieje fragment istniejącego kodu w pewnej metodzie, który musi zostać wywołany z innej metody.
 
-**Dlaczego?** Można skopiować/wkleić ten kod, ale to prowadzi do powielania. Lepszym rozwiązaniem jest refaktoryzator tego fragmentu do własnej metody, która może być wywoływana swobodnie za pomocą innej metody.
+**Dlaczego:** Można skopiować/wkleić ten kod, ale może to prowadzić do duplikacji. Lepszym rozwiązaniem jest Refaktoryzacja tego fragmentu do własnej metody, która może być wywoływana swobodnie przez jakąkolwiek inną metodę.
 
 ## <a name="how-to"></a>Porady
 
-1. Wyróżnij kod, który ma zostać wyodrębniony:
+1. Zaznacz kod, który ma zostać wyodrębniony:
 
    - C#:
 
-       ![Wyróżniony kod- C #](media/extractmethod-highlight-cs.png)
+       ![Wyróżniony kod — C #](media/extractmethod-highlight-cs.png)
 
    - Visual Basic:
 
@@ -49,27 +49,27 @@ Ten refaktoryzator ma zastosowanie do:
 2. Następnie wykonaj jedną z następujących czynności:
 
    - **Klawiatura**
-      - Naciśnij **klawisze Ctrl+R**, a następnie **klawisze Ctrl+M**. (Pamiętaj, że skrót klawiaturowy może się różnić w zależności od wybranego profilu).
-      - Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania,** a następnie wybrać **opcję Wyodrębnij metodę** z okna podglądu.
+      - Naciśnij klawisze **Ctrl + R**, a następnie **Ctrl + M**. (Pamiętaj, że skrót klawiaturowy może się różnić w zależności od wybranego profilu).
+      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i refaktoryzacje** , a następnie wybierz polecenie **Wyodrębnij metodę** z menu podręcznego okna podglądu.
    - **Mysz**
-      - Wybierz **opcję Edytuj > refaktoryzowania > metody wyodrębniania**.
-      - Kliknij prawym przyciskiem myszy kod i wybierz polecenie **Refaktoryzator > Wyodrębnij > metody wyodrębniania**.
-      - Kliknij prawym przyciskiem myszy kod, wybierz menu **Szybkie akcje i Refaktoryzowania** i wybierz polecenie **Wyodrębnij metodę** z okna podglądu.
+      - Wybierz pozycję **edytuj > refaktoryzacja > Metoda wyodrębnienia**.
+      - Kliknij prawym przyciskiem myszy kod i wybierz pozycję **refaktoryzacja > wyodrębnij > metodę wyodrębnienia**.
+      - Kliknij prawym przyciskiem myszy kod, zaznacz menu **szybkie akcje i refaktoryzacje** i wybierz polecenie **Wyodrębnij metodę** w menu podręcznym okna podglądu.
 
-   Metoda zostanie natychmiast utworzona. W tym miejscu można teraz zmienić nazwę metody po prostu wpisując nową nazwę.
+   Metoda zostanie natychmiast utworzona. W tym miejscu możesz teraz zmienić nazwę metody po prostu, wpisując nową nazwę.
 
    > [!TIP]
-   > Można również zaktualizować komentarze i inne ciągi, aby użyć tej nowej nazwy, a także [zmiany podglądu](../../ide/preview-changes.md) przed zapisaniem, używając pól wyboru w polu **Zmień nazwę,** które pojawia się w prawym górnym rogu ide.
+   > Możesz również zaktualizować Komentarze i inne ciągi, aby użyć tej nowej nazwy, a także [wyświetlić podgląd zmian](../../ide/preview-changes.md) przed zapisaniem, używając pól wyboru w polu **Zmień nazwę** wyświetlaną w prawym górnym rogu środowiska IDE.
 
    - C#:
 
-      ![Zmień nazwę metody - C #](media/extractmethod-rename-cs.png)
+      ![Zmień nazwę metody-C #](media/extractmethod-rename-cs.png)
 
    - Visual Basic:
 
-      ![Zmień nazwę metody — Visual Basic](media/extractmethod-rename-vb.png)
+      ![Zmień nazwę metody-Visual Basic](media/extractmethod-rename-vb.png)
 
-3. Gdy ze zmiany będziesz zadowolony, wybierz przycisk **Zastosuj** lub naciśnij klawisz **Enter,** a zmiany zostaną zatwierdzone.
+3. Po zakończeniu wprowadzania zmian wybierz przycisk **Zastosuj** lub naciśnij klawisz **Enter** , a zmiany zostaną zatwierdzone.
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 434b2ad0f2a6ca4d84c6d82bf9a1a85876a4d975
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570404"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
@@ -31,29 +31,29 @@ devenv /Command CommandName
 
 ## <a name="arguments"></a>Argumenty
 
-*Commandname*
+*CommandName*
 
-Wymagany. Pełna nazwa polecenia programu Visual Studio lub jego aliasu, ujęta w cudzysłów podwójnych. Aby uzyskać więcej informacji na temat składni poleceń i aliasów, zobacz [Polecenia programu Visual Studio](../../ide/reference/visual-studio-commands.md).
+Wymagany. Pełna nazwa polecenia programu Visual Studio lub jego alias ujęty w znaki podwójnego cudzysłowu. Aby uzyskać więcej informacji na temat składni poleceń i aliasów, zobacz [Visual Studio Commands](../../ide/reference/visual-studio-commands.md).
 
 ## <a name="remarks"></a>Uwagi
 
-Po zakończeniu uruchamiania IDE wykonuje nazwane polecenie.
+Po zakończeniu uruchamiania środowisko IDE wykonuje nazwane polecenie.
 
 ::: moniker range="vs-2017"
 
-Jeśli używasz tego przełącznika, IDE nie wyświetla strony początkowej podczas uruchamiania.
+Jeśli używasz tego przełącznika, IDE nie wyświetla strony początkowej przy uruchamianiu.
 
 ::: moniker-end
 
-Jeśli dodatek udostępnia polecenie, można użyć tego przełącznika, aby uruchomić dodatek z wiersza polecenia. Aby uzyskać więcej informacji, zobacz [Jak: Sterowanie dodatkami za pomocą menedżera dodatków](/previous-versions/xwdatdwh(v=vs.140)).
+Jeśli dodatek uwidacznia polecenie, można użyć tego przełącznika, aby uruchomić dodatek z wiersza polecenia. Aby uzyskać więcej informacji, zobacz [jak: kontrolowanie dodatków za pomocą Menedżera dodatków](/previous-versions/xwdatdwh(v=vs.140)).
 
 ## <a name="example"></a>Przykład
 
-W pierwszym przykładzie uruchamia program Visual Studio i automatycznie uruchamia makro Otwórz ulubione pliki.
+Pierwszy przykład uruchamia program Visual Studio i automatycznie uruchamia makro Otwórz Ulubione pliki.
 
-Drugi przykład otwiera kartę przeglądania sieci Web w środowisku IDE i przechodzi do witryny Microsoft Docs.
+Drugi przykład otwiera kartę przeglądanie sieci Web w środowisku IDE i przechodzi do witryny Microsoft Docs.
 
-Trzeci przykład tworzy nowy `some_file.cs` plik o nazwie i otwiera go w edytorze kodu.
+Trzeci przykład tworzy nowy plik o nazwie `some_file.cs` i otwiera go w edytorze kodu.
 
 ```shell
 devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"

@@ -18,16 +18,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bf30a38384863c9ba5a8af35af3326a51058d831
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668768"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującej proste powiązanie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można wybrać istniejące kontrolki z **przybornika**lub można utworzyć niestandardowe kontrolki, jeśli aplikacja wymaga funkcjonalności, która nie jest dostępna w kontrolkach standardowych. W tym instruktażu pokazano, jak utworzyć kontrolkę implementującą <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Kontrolki implementujące <xref:System.ComponentModel.DefaultBindingPropertyAttribute> mogą zawierać jedną właściwość, która może być powiązana z danymi. Takie kontrolki są podobne do <xref:System.Windows.Forms.TextBox> lub <xref:System.Windows.Forms.CheckBox>.
+Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można wybrać istniejące kontrolki z **przybornika**lub można utworzyć niestandardowe kontrolki, jeśli aplikacja wymaga funkcjonalności, która nie jest dostępna w kontrolkach standardowych. W tym instruktażu pokazano, jak utworzyć kontrolkę implementującą <xref:System.ComponentModel.DefaultBindingPropertyAttribute> . Kontrolki implementujące <xref:System.ComponentModel.DefaultBindingPropertyAttribute> może zawierać jedną właściwość, która może być powiązana z danymi. Takie kontrolki są podobne do <xref:System.Windows.Forms.TextBox> lub <xref:System.Windows.Forms.CheckBox> .
 
  Aby uzyskać więcej informacji na temat tworzenia kontroli, zobacz [Opracowywanie formantów Windows Forms w czasie projektowania](https://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).
 
@@ -35,11 +35,11 @@ Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można
 
 |Użycie atrybutu powiązania danych|
 |-----------------------------------|
-|Zaimplementuj <xref:System.ComponentModel.DefaultBindingPropertyAttribute> na prostych kontrolkach, takich jak <xref:System.Windows.Forms.TextBox>, które wyświetlają pojedynczą kolumnę (lub właściwość) danych. (Ten proces został opisany na stronie przewodnika).|
-|Zaimplementuj <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> na kontrolkach, takich jak <xref:System.Windows.Forms.DataGridView>, które wyświetlają listy (lub tabele) danych. Aby uzyskać więcej informacji, zobacz [Tworzenie kontrolki użytkownika Windows Forms, która obsługuje złożone powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
-|Zaimplementuj <xref:System.ComponentModel.LookupBindingPropertiesAttribute> na kontrolkach, takich jak <xref:System.Windows.Forms.ComboBox>, które wyświetlają listy (lub tabele) danych, ale również muszą przedstawić pojedynczą kolumnę lub właściwość. Aby uzyskać więcej informacji, zobacz [Tworzenie kontrolki użytkownika Windows Forms, która obsługuje powiązanie danych wyszukiwania](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
+|Zaimplementuj <xref:System.ComponentModel.DefaultBindingPropertyAttribute> proste kontrolki, takie jak <xref:System.Windows.Forms.TextBox> , które wyświetlają pojedynczą kolumnę (lub właściwość) danych. (Ten proces został opisany na stronie przewodnika).|
+|Zaimplementuj <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> kontrolki on, na przykład <xref:System.Windows.Forms.DataGridView> , które wyświetlają listy (lub tabele) danych. Aby uzyskać więcej informacji, zobacz [Tworzenie kontrolki użytkownika Windows Forms, która obsługuje złożone powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
+|Zaimplementuj <xref:System.ComponentModel.LookupBindingPropertiesAttribute> kontrolki on, na przykład <xref:System.Windows.Forms.ComboBox> , które wyświetla listę (lub tabele) danych, ale również muszą przedstawić pojedynczą kolumnę lub właściwość. Aby uzyskać więcej informacji, zobacz [Tworzenie kontrolki użytkownika Windows Forms, która obsługuje powiązanie danych wyszukiwania](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
 
- Ten Instruktaż tworzy prostą kontrolkę, która wyświetla dane z pojedynczej kolumny w tabeli. W tym przykładzie użyta zostanie kolumna `Phone` tabeli `Customers` z przykładowej bazy danych Northwind. Prosta kontrolka użytkownika będzie wyświetlać numery telefonów klientów w standardowym formacie numeru telefonu przy użyciu <xref:System.Windows.Forms.MaskedTextBox> i ustawiając maskę na numer telefonu.
+ Ten Instruktaż tworzy prostą kontrolkę, która wyświetla dane z pojedynczej kolumny w tabeli. Ten przykład używa `Phone` kolumny `Customers` tabeli z przykładowej bazy danych Northwind. Prosta kontrolka użytkownika będzie wyświetlać numery telefonów klientów w standardowym formacie numeru telefonu przy użyciu <xref:System.Windows.Forms.MaskedTextBox> i ustawiając maskę na numer telefonu.
 
  W tym instruktażu dowiesz się, jak:
 
@@ -49,7 +49,7 @@ Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można
 
 - Wizualne projektowanie kontrolki użytkownika.
 
-- Zaimplementuj atrybut `DefaultBindingProperty`.
+- Zaimplementuj `DefaultBindingProperty` atrybut.
 
 - Utwórz zestaw danych za pomocą kreatora **konfiguracji źródła danych** .
 
@@ -87,24 +87,24 @@ Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można
      Formant **PhoneNumberBox** zostanie dodany do **Eksplorator rozwiązań**i otwarty w projektancie.
 
 ## <a name="design-the-phonenumberbox-control"></a>Zaprojektuj formant PhoneNumberBox
- Ten przewodnik rozszerza istniejący <xref:System.Windows.Forms.MaskedTextBox>, aby utworzyć kontrolkę `PhoneNumberBox`.
+ Ten Instruktaż rozwija się na istniejącym, <xref:System.Windows.Forms.MaskedTextBox> Aby utworzyć `PhoneNumberBox` formant.
 
 #### <a name="to-design-the-phonenumberbox-control"></a>Aby zaprojektować formant PhoneNumberBox
 
 1. Przeciągnij <xref:System.Windows.Forms.MaskedTextBox> z **przybornika** na powierzchnię projektu kontrolki użytkownika.
 
-2. Wybierz tag inteligentny na <xref:System.Windows.Forms.MaskedTextBox> przeciągniętej, a następnie wybierz pozycję **Ustaw maskę**.
+2. Wybierz tag inteligentny po <xref:System.Windows.Forms.MaskedTextBox> przeciągnięciu, a następnie wybierz pozycję **Ustaw maskę**.
 
 3. W oknie dialogowym **maska wejścia** wybierz pozycję **numer telefonu** , a następnie kliknij przycisk **OK** , aby ustawić maskę.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Dodawanie wymaganego atrybutu powiązania danych
- W przypadku prostych formantów, które obsługują wiązania z danymi, zaimplementuj <xref:System.ComponentModel.DefaultBindingPropertyAttribute>.
+ W przypadku prostych formantów, które obsługują DataBinding, Implementuj <xref:System.ComponentModel.DefaultBindingPropertyAttribute> .
 
 #### <a name="to-implement-the-defaultbindingproperty-attribute"></a>Aby zaimplementować atrybut DefaultBindingProperty
 
-1. Przełącz formant `PhoneNumberBox` do widoku kodu. (W menu **Widok** wybierz polecenie **kod**).
+1. Przełącz `PhoneNumberBox` formant do widoku kodu. (W menu **Widok** wybierz polecenie **kod**).
 
-2. Zastąp kod w `PhoneNumberBox` następującym:
+2. Zastąp kod w `PhoneNumberBox` następującej postaci:
 
      [!code-csharp[VbRaddataDisplaying#3](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/PhoneNumberBox.cs#3)]
      [!code-vb[VbRaddataDisplaying#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/PhoneNumberBox.vb#3)]
@@ -112,7 +112,7 @@ Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można
 3. Z menu **kompilacja** wybierz polecenie **Kompiluj rozwiązanie**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Tworzenie źródła danych na podstawie bazy danych
- Ten krok powoduje użycie kreatora **konfiguracji źródła danych** w celu utworzenia źródła danych na podstawie tabeli `Customers` w przykładowej bazie danych Northwind. Aby utworzyć połączenie, musisz mieć dostęp do przykładowej bazy danych Northwind.
+ Ten krok powoduje użycie kreatora **konfiguracji źródła danych** w celu utworzenia źródła danych na podstawie `Customers` tabeli w przykładowej bazie danych Northwind. Aby utworzyć połączenie, musisz mieć dostęp do przykładowej bazy danych Northwind.
 
 #### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych
 
@@ -134,9 +134,9 @@ Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można
 
 7. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** .
 
-8. Wybierz tabelę `Customers` a następnie kliknij przycisk **Zakończ**.
+8. Wybierz `Customers` tabelę, a następnie kliknij przycisk **Zakończ**.
 
-     **NorthwindDataSet** jest dodawany do projektu, a tabela `Customers` zostanie wyświetlona w oknie **źródła danych** .
+     **NorthwindDataSet** jest dodawany do projektu, a `Customers` tabela pojawia się w oknie **źródła danych** .
 
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Ustaw kolumnę telefon, aby użyć kontrolki PhoneNumberBox
  W oknie **źródła danych** można ustawić kontrolkę, która ma zostać utworzona przed przeciągnięciem elementów na formularz.
@@ -160,11 +160,11 @@ Podczas wyświetlania danych w formularzach w aplikacjach systemu Windows można
 
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Aby utworzyć kontrolki powiązane z danymi w formularzu
 
-- Przeciągnij węzeł główni **klienci** z okna **źródła danych** na formularz i sprawdź, czy formant `PhoneNumberBox` jest używany do wyświetlania danych w kolumnie `Phone`.
+- Przeciągnij główny węzeł **klienci** z okna **źródła danych** na formularz i sprawdź, czy `PhoneNumberBox` kontrolka służy do wyświetlania danych w `Phone` kolumnie.
 
-     Formanty powiązane z danymi z opisowymi etykietami są wyświetlane w formularzu wraz z paskiem narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+     Formanty powiązane z danymi, które mają opisowe etykiety, są wyświetlane w formularzu wraz z paskiem narzędzi ( <xref:System.Windows.Forms.BindingNavigator> ) na potrzeby nawigowania po rekordach. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
 
-## <a name="run-the-application"></a>Uruchom aplikację
+## <a name="run-the-application"></a>Uruchamianie aplikacji
 
 #### <a name="to-run-the-application"></a>Aby uruchomić aplikację
 

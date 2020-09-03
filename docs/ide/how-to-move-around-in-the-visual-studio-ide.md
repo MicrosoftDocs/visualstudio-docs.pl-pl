@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1052deb04a93d11349ef9beb2ff667893095902f
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769845"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Instrukcje: poruszanie się w środowisku IDE programu Visual Studio
@@ -56,7 +56,7 @@ Możesz również przełączyć się do określonego pliku otwartego w edytorze,
 
 ![Nawigator środowiska IDE programu Visual Studio](../ide/media/vs2015_ide_navigator.png)
 
-`Window.PreviousDocumentWindowNav`umożliwia przejście do ostatnio używanego pliku i `Window.NextDocumentWindowNav` umożliwia przejście w odwrotnej kolejności. **Ogólne ustawienia programowania** przypisuje **SHIFT** + **Alt** + **F7** do `Window.PreviousDocumentWindowNav` i **Alt** + **F7** do `Window.NextDocumentWindowNav` .
+`Window.PreviousDocumentWindowNav` umożliwia przejście do ostatnio używanego pliku i `Window.NextDocumentWindowNav` umożliwia przejście w odwrotnej kolejności. **Ogólne ustawienia programowania** przypisuje **SHIFT** + **Alt** + **F7** do `Window.PreviousDocumentWindowNav` i **Alt** + **F7** do `Window.NextDocumentWindowNav` .
 
 > [!NOTE]
 > Jeśli używana kombinacja ustawień nie ma już kombinacji klawiszy skrótu przypisanych do tego polecenia, możesz przypisać własne polecenie niestandardowe przy użyciu strony **Klawiatura** okna dialogowego **Opcje** . Aby uzyskać więcej informacji, zobacz [Identyfikowanie i Dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
@@ -68,11 +68,11 @@ Możesz również przełączyć się do określonego pliku otwartego w edytorze,
     > [!TIP]
     > Aby odwrócić kolejność, w której można przejść przez listę **aktywnych plików** , przytrzymaj wciśnięty klawisz **Ctrl** + **SHIFT** klawisze i naciśnij klawisz **Tab**.
 
-    \-oraz
+    \- oraz
 
 - W prawym górnym rogu edytora wybierz przycisk **aktywne pliki** , a następnie wybierz plik z listy, aby przełączyć się na.
 
-    \-oraz
+    \- oraz
 
 - Na pasku menu wybierz **okna**  >  **systemu Windows**.
 
@@ -80,7 +80,7 @@ Możesz również przełączyć się do określonego pliku otwartego w edytorze,
 
 ## <a name="navigate-among-tool-windows-in-the-ide"></a>Nawigowanie między oknami narzędzi w środowisku IDE
 
-**Nawigator IDE** umożliwia również przechodzenie przez okna narzędzi, które zostały otwarte w środowisku IDE. Możesz użyć jednego z dwóch poleceń, aby uzyskać dostęp do **Nawigatora IDE** w celu przechodzenia przez okna narzędzi, w zależności od kolejności, w której chcesz przeprowadzić cykl. `Window.PreviousToolWindowNav`umożliwia przejście do ostatnio używanego pliku i `Window.NextToolWindowNav` umożliwia przejście w odwrotnej kolejności. **Ogólne ustawienia programowania** przypisuje **SHIFT** + **Alt** + **F7** do `Window.PreviousDocumentWindowNav` i **Alt** + **F7** do `Window.NextDocumentWindowNav` .
+**Nawigator IDE** umożliwia również przechodzenie przez okna narzędzi, które zostały otwarte w środowisku IDE. Możesz użyć jednego z dwóch poleceń, aby uzyskać dostęp do **Nawigatora IDE** w celu przechodzenia przez okna narzędzi, w zależności od kolejności, w której chcesz przeprowadzić cykl. `Window.PreviousToolWindowNav` umożliwia przejście do ostatnio używanego pliku i `Window.NextToolWindowNav` umożliwia przejście w odwrotnej kolejności. **Ogólne ustawienia programowania** przypisuje **SHIFT** + **Alt** + **F7** do `Window.PreviousDocumentWindowNav` i **Alt** + **F7** do `Window.NextDocumentWindowNav` .
 
 > [!NOTE]
 > Jeśli używana kombinacja ustawień nie ma już kombinacji klawiszy skrótu przypisanych do tego polecenia, możesz przypisać własne polecenie niestandardowe przy użyciu strony **Klawiatura** okna dialogowego **Opcje** . Aby uzyskać więcej informacji, zobacz [Identyfikowanie i Dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
@@ -92,7 +92,7 @@ Możesz również przełączyć się do określonego pliku otwartego w edytorze,
     > [!TIP]
     > Aby odwrócić kolejność, w której można przejść przez **aktywną listę okien narzędzi** , przytrzymaj wciśnięty klawisz **SHIFT** + **Alt** i naciśnij klawisz **F7**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dostosowywanie układów okien](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md)

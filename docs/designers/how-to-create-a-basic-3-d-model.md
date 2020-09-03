@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbd0b2a092e47eab053d4150fd2139fb0dbdf6ea
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769268"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Instrukcje: tworzenie podstawowego modelu 3D
@@ -72,7 +72,7 @@ Przed rozpoczęciem upewnij się, że okno **Właściwości** i **Przybornik** s
 
    W następnym kroku można zastosować cieniowanie do tego modelu 3W. Aby uzyskać więcej informacji, zobacz [How to: Apply a Shader to the 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Jak modelować tereny 3W](../designers/how-to-model-3-d-terrain.md)
 - [Edytor modelu](../designers/model-editor.md)

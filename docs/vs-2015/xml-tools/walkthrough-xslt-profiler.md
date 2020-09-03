@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7ee6665aea98edf7cb701f5fdfe07d293887bac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669524"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Przewodnik: profiler XSLT
@@ -64,7 +64,7 @@ Profiler XSLT tworzy szczegółowe raporty wydajności XSLT, które pomagają mi
 
     - **Czas wyłączny aplikacji**
 
-    - **Liczba wywołań**
+    - **Liczba połączeń**
 
 5. Wszystkie kolumny czasu są wyświetlane zarówno jako wartości bezwzględne, jak i procentowe. **Termin ten** odnosi się do łącznego czasu, przez który funkcja wykorzystała z innych funkcji wywoływanych podczas wykonywania tej funkcji.
 
@@ -82,7 +82,7 @@ Profiler XSLT tworzy szczegółowe raporty wydajności XSLT, które pomagają mi
 
     - **Funkcje, które zostały wywołane przez** : wszystkie funkcje, które zostały wywołane przez określoną funkcję, są wyświetlane w dolnej części widoku.
 
-3. Jeśli funkcja o nazwie `SyncToNavigator` pojawia się w środkowej części widoku, wszystkie funkcje, które wywołały funkcję `SyncToNavigator`, pojawiają się w górnej części widoku, a wszystkie funkcje, które zostały wywołane przez `SyncToNavigator` pojawiają się w dolnej części widoku.
+3. Jeśli funkcja o nazwie `SyncToNavigator` pojawia się w środkowej części widoku, wszystkie funkcje, które wywołały `SyncToNavigator` funkcję, pojawiają się w górnej części widoku, a wszystkie funkcje, które zostały wywołane przez `SyncToNavigator` pojawiają się w dolnej części widoku.
 
 4. Funkcję można zmienić w środkowej części widoku przez dwukrotne kliknięcie dowolnej z funkcji wymienionych w pozostałych dwóch częściach widoku. Widok zostanie następnie zaktualizowany, aby odzwierciedlić zmiany automatycznie.
 

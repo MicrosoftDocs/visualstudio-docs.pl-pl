@@ -1,5 +1,5 @@
 ---
-title: Zadanie FindUnderPath | Dokumenty firmy Microsoft
+title: FindUnderPath — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,35 +19,35 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d97b727dcba8cd16fe97ee33764947797c36db7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634139"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath — zadanie
 
-Określa, które elementy w kolekcji określonego elementu mają ścieżki, które znajdują się w lub poniżej określonego folderu.
+Określa, które elementy w określonej kolekcji elementów mają ścieżki, które znajdują się w lub poniżej określonego folderu.
 
 ## <a name="parameters"></a>Parametry
 
-W poniższej tabeli `FindUnderPath` opisano parametry zadania.
+W poniższej tabeli opisano parametry `FindUnderPath` zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`Files`|Parametr <xref:Microsoft.Build.Framework.ITaskItem> `[]` opcjonalny.<br /><br /> Określa pliki, których ścieżki powinny być porównywane `Path` ze ścieżką określoną przez parametr.|
-|`InPath`|Opcjonalny parametr wyjściowy. <xref:Microsoft.Build.Framework.ITaskItem> `[]`<br /><br /> Zawiera elementy, które zostały znalezione w ramach określonej ścieżki.|
-|`OutOfPath`|Opcjonalny parametr wyjściowy. <xref:Microsoft.Build.Framework.ITaskItem> `[]`<br /><br /> Zawiera elementy, które nie zostały znalezione w ramach określonej ścieżki.|
+|`Files`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Określa pliki, których ścieżki należy porównać ze ścieżką określoną przez `Path` parametr.|
+|`InPath`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera elementy, które zostały znalezione pod określoną ścieżką.|
+|`OutOfPath`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera elementy, które nie zostały odnalezione w określonej ścieżce.|
 |`Path`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa ścieżkę folderu, która ma być używana jako odwołanie.|
-|`UpdateToAbsolutePaths`|Parametr `Boolean` opcjonalny.<br /><br /> Jeśli true, ścieżki elementów wyjściowych są aktualizowane jako ścieżki bezwzględne.|
+|`UpdateToAbsolutePaths`|Opcjonalny `Boolean` parametr.<br /><br /> W przypadku wartości true ścieżki elementów wyjściowych są aktualizowane jako ścieżki bezwzględne.|
 
 ## <a name="remarks"></a>Uwagi
 
-Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
+Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład używa `FindUnderPath` zadania, aby ustalić, czy `MyFiles` pliki zawarte w elemencie `SearchPath` mają ścieżki, które istnieją w ścieżce określonej przez właściwość. `FilesNotFoundInPath` Po zakończeniu zadania element zawiera plik *File1.txt,* `FilesFoundInPath` a element zawiera plik *File2.txt.*
+Poniższy przykład używa zadania, `FindUnderPath` Aby określić, czy pliki zawarte w `MyFiles` elemencie mają ścieżki istniejące w ścieżce określonej przez `SearchPath` Właściwość. Po zakończeniu zadania `FilesNotFoundInPath` element zawiera plik *File1.txt* , a `FilesFoundInPath` element zawiera plik *File2.txt* .
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -78,6 +78,6 @@ Poniższy przykład używa `FindUnderPath` zadania, aby ustalić, czy `MyFiles` 
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)
 - [Zadania](../msbuild/msbuild-tasks.md)
-- [Koncepcje MSBuild](../msbuild/msbuild-concepts.md)
+- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)

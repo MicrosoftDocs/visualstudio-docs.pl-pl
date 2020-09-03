@@ -29,10 +29,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 500debe6faa62079c6a93185bac409e7a3bf2813
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668003"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Porady: Dostosowywanie menu i pasków zadań w Visual Studio
@@ -53,7 +53,7 @@ Można dostosować Visual Studio nie tylko przez dodawanie i usuwanie pasków na
 
 - [Resetowanie menu lub paska narzędzi](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_reset)
 
-## <a name="bkmk_addmenu"></a>Dodawanie, usuwanie lub przenoszenie menu na pasku menu
+## <a name="adding-removing-or-moving-a-menu-on-the-menu-bar"></a><a name="bkmk_addmenu"></a> Dodawanie, usuwanie lub przenoszenie menu na pasku menu
 
 1. Na pasku menu wybierz **Narzędzia**, **Dostosuj**.
 
@@ -69,7 +69,7 @@ Można dostosować Visual Studio nie tylko przez dodawanie i usuwanie pasków na
 
     - Aby przenieść menu na pasku menu, wybierz menu na liście **kontrolki** , a następnie wybierz przycisk **Przenieś w górę** lub **Przenieś w dół** .
 
-## <a name="bkmk_addtoolbar"></a>Dodawanie, usuwanie lub przenoszenie paska narzędzi
+## <a name="adding-removing-or-moving-a-toolbar"></a><a name="bkmk_addtoolbar"></a> Dodawanie, usuwanie lub przenoszenie paska narzędzi
 
 1. Na pasku menu wybierz **Narzędzia**, **Dostosuj**.
 
@@ -93,7 +93,7 @@ Można dostosować Visual Studio nie tylko przez dodawanie i usuwanie pasków na
         > [!NOTE]
         > Aby uzyskać więcej informacji na temat zwiększania użyteczności i dostępności pasków narzędzi, zobacz [How to: Set opcje ułatwienia dostępu IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
-## <a name="bkmk_customize"></a>Dostosowywanie menu lub paska narzędzi
+## <a name="customizing-a-menu-or-a-toolbar"></a><a name="bkmk_customize"></a> Dostosowywanie menu lub paska narzędzi
 
 1. Na pasku menu wybierz **Narzędzia**, **Dostosuj**.
 
@@ -115,7 +115,7 @@ Można dostosować Visual Studio nie tylko przez dodawanie i usuwanie pasków na
 
     - Aby oddzielić polecenia do grup, wybierz polecenie na liście **formanty** , wybierz przycisk **Modyfikuj wybór** , a następnie w wyświetlonym menu wybierz polecenie **Rozpocznij grupę** .
 
-## <a name="bkmk_reset"></a>Resetowanie menu lub paska narzędzi
+## <a name="resetting-a-menu-or-a-toolbar"></a><a name="bkmk_reset"></a> Resetowanie menu lub paska narzędzi
 
 1. Na pasku menu wybierz **Narzędzia**, **Dostosuj**.
 

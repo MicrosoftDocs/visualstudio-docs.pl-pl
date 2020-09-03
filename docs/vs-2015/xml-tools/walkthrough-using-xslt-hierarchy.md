@@ -10,24 +10,24 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 46e6acc8f65a9c9589348508f57cc75b04c61ccc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669553"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Przewodnik: używanie hierarchii XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Narzędzie hierarchii XSLT upraszcza wiele zadań związanych z programowaniem XML. Arkusz stylów XSLT często używa instrukcji `includes` i `imports`. Kompilacja zaczyna się od głównego arkusza stylów, ale gdy zobaczysz błąd w wyniku kompilowania arkusza stylów XSLT, błąd może pochodzić z innego źródła niż główny arkusz stylów. Usunięcie błędu lub edytowanie arkusza stylów może wymagać dostępu do arkuszy stylów dołączonych lub zaimportowanych. Przechodzenie przez arkusz stylów w debugerze może otwierać dołączone i zaimportowane arkusze stylów. w pewnym momencie można dodać punkt przerwania w jednym lub kilku dołączonych arkuszach stylów.
+Narzędzie hierarchii XSLT upraszcza wiele zadań związanych z programowaniem XML. Arkusz stylów XSLT często używa `includes` instrukcji i `imports` . Kompilacja zaczyna się od głównego arkusza stylów, ale gdy zobaczysz błąd w wyniku kompilowania arkusza stylów XSLT, błąd może pochodzić z innego źródła niż główny arkusz stylów. Usunięcie błędu lub edytowanie arkusza stylów może wymagać dostępu do arkuszy stylów dołączonych lub zaimportowanych. Przechodzenie przez arkusz stylów w debugerze może otwierać dołączone i zaimportowane arkusze stylów. w pewnym momencie można dodać punkt przerwania w jednym lub kilku dołączonych arkuszach stylów.
 
- Innym scenariuszem, który może być przydatne narzędzie hierarchii XSLT, jest umieszczenie punktów przerwania w regułach wbudowanych szablonów. Reguły szablonów to specjalne szablony wygenerowane dla każdego trybu arkusza stylów i wywoływane przez `xsl:apply-templates`, gdy żaden inny szablon nie jest zgodny z węzłem. Aby zaimplementować debugowanie w regułach wbudowanych szablonów, debuger XSLT generuje plik z regułami w folderze tymczasowym i kompiluje je razem z głównym arkuszem stylów. Bez przechodzenia do kodu z niektórych `xsl:apply-template` może być trudno znaleźć arkusze stylów, które zostały uwzględnione w głównym arkuszu stylów lub znaleźć i otworzyć arkusz stylów z wbudowanymi regułami szablonu.
+ Innym scenariuszem, który może być przydatne narzędzie hierarchii XSLT, jest umieszczenie punktów przerwania w regułach wbudowanych szablonów. Reguły szablonów to specjalne szablony wygenerowane dla każdego trybu arkusza stylów i wywoływane przez, `xsl:apply-templates` gdy żaden inny szablon nie jest zgodny z węzłem. Aby zaimplementować debugowanie w regułach wbudowanych szablonów, debuger XSLT generuje plik z regułami w folderze tymczasowym i kompiluje je razem z głównym arkuszem stylów. Bez przechodzenia do kodu z niektórych `xsl:apply-template` , trudno jest znaleźć arkusze stylów, które zostały uwzględnione w głównym arkuszu stylów lub znaleźć i otworzyć arkusz stylów z wbudowanymi regułami szablonu.
 
  W przykładzie w tym temacie pokazano debugowanie w arkuszu stylów, do którego się odwołuje.
 
 ### <a name="procedure-title"></a>Tytuł procedury
 
-1. Otwórz dokument XML w programie Visual Studio. W tym przykładzie zastosowano następujący dokument `collection.xml`.
+1. Otwórz dokument XML w programie Visual Studio. Ten przykład używa następującego `collection.xml` dokumentu.
 
     ```
     <?xml version="1.0" encoding="utf-8"?>
@@ -51,7 +51,7 @@ Narzędzie hierarchii XSLT upraszcza wiele zadań związanych z programowaniem X
     </COLLECTION>
     ```
 
-2. Dodaj następujące `xslincludefile.xsl`:
+2. Dodaj następujące elementy `xslincludefile.xsl` :
 
     ```
     <?xml version='1.0'?>
@@ -74,7 +74,7 @@ Narzędzie hierarchii XSLT upraszcza wiele zadań związanych z programowaniem X
     </xsl:stylesheet>
     ```
 
-3. Dodaj następujący plik `xslinclude.xsl`:
+3. Dodaj następujący `xslinclude.xsl` plik:
 
     ```
     <?xml version='1.0'?>
@@ -110,9 +110,9 @@ Narzędzie hierarchii XSLT upraszcza wiele zadań związanych z programowaniem X
 
 4. Dodaj punkt przerwania w instrukcji: `<xsl:include href="xslincludefile.xsl" />`
 
-5. Rozpocznij debugowanie.
+5. Uruchom debugowanie.
 
-6. Gdy debuger zatrzyma się na instrukcji `<xsl:include href="xslincludefile.xsl" />`, naciśnij przycisk Przejdź do przycisku. Należy zauważyć, że debugowanie może być kontynuowane w przywoływanym arkuszu stylów. Hierarchia jest widoczna, a Projektant wyświetla właściwą ścieżkę.
+6. Gdy debuger zatrzyma się na instrukcji `<xsl:include href="xslincludefile.xsl" />` , naciśnij przycisk Przejdź do. Należy zauważyć, że debugowanie może być kontynuowane w przywoływanym arkuszu stylów. Hierarchia jest widoczna, a Projektant wyświetla właściwą ścieżkę.
 
 ## <a name="see-also"></a>Zobacz też
  [Przewodnik: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)

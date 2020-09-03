@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2 | Dokumenty firmy Microsoft
+title: IDebugMemoryContext2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7d20a1180e1162e7de3aee1c5d69facf8c193910
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727429"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
-Ten interfejs reprezentuje pozycję w przestrzeni adresowej komputera z systemem debugowania programu.
+Ten interfejs reprezentuje pozycję w przestrzeni adresowej maszyny, na której jest wykonywany debugowany program.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,29 +29,29 @@ IDebugMemoryContext2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Aparat debugowania (DE) implementuje ten interfejs do reprezentowania adresu w pamięci.
+ Aparat debugowania (DE) implementuje ten interfejs, aby reprezentować adres w pamięci.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Wywołanie [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) lub [GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md) zwraca ten interfejs. Ponadto wywołania [Dodaj](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md) i [Odejmij](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md) zwracają nowe kopie tego interfejsu po zastosowaniu odpowiedniej operacji arytmetycznej.
+ Wywołanie [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) lub [GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md) zwraca ten interfejs. Ponadto wywołania [dodawania](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md) i [odejmowania](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md) zwracają nowe kopie tego interfejsu po zastosowaniu odpowiedniej operacji arytmetycznej.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- W poniższej tabeli `IDebugMemoryContext2`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ W poniższej tabeli przedstawiono metody `IDebugMemoryContext2` .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetName](../../../extensibility/debugger/reference/idebugmemorycontext2-getname.md)|Pobiera nazwę wyświetlania użytkownika dla tego kontekstu.|
-|[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)|Pobiera informacje, które opisuje ten kontekst.|
-|[Dodaj](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md)|Dodaje określoną wartość do adresu bieżącego kontekstu, aby utworzyć nowy kontekst.|
-|[Odejmij](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md)|Odejmuje określoną wartość od adresu bieżącego kontekstu, aby utworzyć nowy kontekst.|
-|[Porównanie](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)|Porównuje dwa konteksty w sposób wskazany przez porównać flagi.|
+|[GetName](../../../extensibility/debugger/reference/idebugmemorycontext2-getname.md)|Pobiera nazwę użytkownika, który jest odtwarzany dla tego kontekstu.|
+|[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)|Pobiera informacje opisujące ten kontekst.|
+|[Dodaj](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md)|Dodaje określoną wartość do adresu bieżącego kontekstu w celu utworzenia nowego kontekstu.|
+|[Odejmowanie](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md)|Odejmuje określoną wartość z adresu bieżącego kontekstu, aby utworzyć nowy kontekst.|
+|[Porównaj](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)|Porównuje dwa konteksty w sposób wskazany przez porównanie flag.|
 
 ## <a name="remarks"></a>Uwagi
- Okno **pamięci** programu Visual Studio wywołuje [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) w celu uzyskania `IDebugMemoryContext2` interfejsu, który zawiera obliczone wyrażenie używane dla adresu pamięci. Ten kontekst jest następnie przekazywane do [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) i [WriteAt,](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) aby określić adres do odczytu lub zapisu.
+ Okno **pamięci** programu Visual Studio wywołuje [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) , aby uzyskać `IDebugMemoryContext2` interfejs, który zawiera oceniane wyrażenie używane dla adresu pamięci. Ten kontekst jest następnie przesyłany do [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) i [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) w celu określenia adresu do odczytu lub zapisu.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

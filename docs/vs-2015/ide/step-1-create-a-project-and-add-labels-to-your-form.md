@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2a13d96d8932a3a9e4628f2d0e67a28869252c95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667364"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Utworzenie projektu i dodawanie etykiet do formularza
@@ -28,7 +28,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 
 1. Na pasku menu wybierz **plik**, **Nowy**, **projekt**.
 
-2. Na liście **zainstalowane szablony** wybierz pozycję **C#** lub **Visual Basic**.
+2. Na liście **zainstalowane szablony** wybierz opcję **C#** lub **Visual Basic**.
 
 3. Na liście szablonów wybierz szablon **aplikacji Windows Forms** , nadaj mu nazwę **Quiz matematyczny**, a następnie wybierz przycisk **OK** .
 
@@ -48,7 +48,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 
 ### <a name="to-create-the-time-remaining-box"></a>Aby utworzyć pole pozostało czasu
 
-1. Dodaj kontrolkę **etykieta** z przybornika, a następnie ustaw wartość właściwości **(Name)** na `timeLabel`.
+1. Dodaj kontrolkę **etykieta** z przybornika, a następnie ustaw jej właściwość **(Name)** na wartość `timeLabel` .
 
      Ta etykieta zostanie umieszczony w prawym górnym rogu, która pokazuje liczbę sekund, które pozostaną w quizie.
 

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1692403d61c99febd30fe3829e5fadd7dd1c51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669501"
 ---
 # <a name="working-with-xml-data"></a>Praca z danymi XML
@@ -60,4 +60,4 @@ Język XML i powiązane z nim technologie odgrywają dużą rolę w sposobie obs
  [Usługi sieci Web XML w kodzie zarządzanym](https://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) W tym artykule omówiono sposób tworzenia i wdrażania usług sieci Web XML oraz uzyskiwania dostępu do usług sieci Web XML.
 
 ## <a name="see-also"></a>Zobacz też
- [Narzędzia XML w Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
+ [Narzędzia XML w programie Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

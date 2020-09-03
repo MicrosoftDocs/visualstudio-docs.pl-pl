@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 10537fb64e6ae0ebbe185024b76442704437e273
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668838"
 ---
 # <a name="options-page-debugging-node-properties"></a>Strona opcji, debugowanie — Właściwości węzła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-W poniższych tabelach opisano strony (lub kolekcje właściwości), które są skojarzone z kategorią **debugowania** , `DTE.Properties("Debugging", <Property Page>)` okna dialogowego **Opcje** .
+W poniższych tabelach opisano strony (lub kolekcje właściwości), które są skojarzone z kategorią **debugowania** okna `DTE.Properties("Debugging", <Property Page>)` dialogowego **Opcje** .
 
 ## <a name="general"></a>Ogólne
  `DTE.Properties("Debugging", "General")`
@@ -34,11 +34,11 @@ W poniższych tabelach opisano strony (lub kolekcje właściwości), które są 
 |EnableBreakpointFilters|Get/Set (wartość logiczna)|Określa, czy jest włączone filtrowanie punktów przerwania.|
 |EnableExceptionAssistant|Get/Set (wartość logiczna)|Określa, czy Asystent wyjątków jest używany w przypadku wyjątków zarządzanych.|
 |UnwindCallstack|Get/Set (wartość logiczna)|Określa, czy debuger rozwinięcia stosu wywołań dla nieobsługiwanego wyjątku.|
-|EnableJustMyCode|Get/Set (wartość logiczna)|Określa, czy Tylko mój kod jest włączona C# dla i dla Visual Basic kodu.|
+|EnableJustMyCode|Get/Set (wartość logiczna)|Określa, czy Tylko mój kod jest włączona dla języka C# i kodu Visual Basic.|
 |ShowAllMembers|Get/Set (wartość logiczna)|W przypadku obiektów niebędących użytkownikami program określa, czy debuger ma wyświetlać wszystkie elementy członkowskie obiektów w oknach zmiennych. Ta opcja nie działa, chyba że Tylko mój kod jest włączona.|
 |WarnIfNoUserCode|Get/Set (wartość logiczna)|Określa, czy debuger emituje ostrzeżenie, gdy użytkownik próbuje dołączyć do procesu, który nie ma kodu użytkownika. Ta opcja nie działa, chyba że Tylko mój kod jest włączona.|
 |EnablePropertyEvaluation|Get/Set (wartość logiczna)|Określa, czy debuger automatycznie oblicza właściwości i niejawne wywołania funkcji w kodzie zarządzanym.|
-|CallStringConversion|Get/Set (wartość logiczna)|Określa, czy debuger niejawnie wywołuje funkcję konwersji ciągów na obiektach w oknach zmiennych. Ta opcja dotyczy C# tylko kodu JScript.|
+|CallStringConversion|Get/Set (wartość logiczna)|Określa, czy debuger niejawnie wywołuje funkcję konwersji ciągów na obiektach w oknach zmiennych. Ta opcja dotyczy tylko kodu w języku C# i JScript.|
 |EnableSourceServer|Get/Set (wartość logiczna)|Określa, czy debuger może uzyskać dostęp do kodu z serwera źródłowego.|
 |PrintSourceServerDiagnostics|Get/Set (wartość logiczna)|Określa, czy w oknie danych wyjściowych są wyświetlane komunikaty diagnostyczne powiązane z serwerem źródłowym. Ta opcja nie działa, jeśli nie jest włączony dostęp do serwera źródłowego.|
 |HighlightEntireLine|Get/Set (wartość logiczna)|Określa, czy debuger podświetla cały wiersz dla punktów przerwania i bieżącej instrukcji.|
@@ -72,7 +72,7 @@ W poniższych tabelach opisano strony (lub kolekcje właściwości), które są 
 |JitNative|Get/Set (wartość logiczna)|Określa, czy debugowanie just in time jest włączone dla kodu natywnego.|
 |JitScript|Get/Set (wartość logiczna)|Określa, czy debugowanie just in time jest włączone dla kodu skryptu.|
 
-## <a name="native"></a>Natywne
+## <a name="native"></a>Natywna
  `DTE.Properties("Debugging", "Native")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
@@ -81,4 +81,4 @@ W poniższych tabelach opisano strony (lub kolekcje właściwości), które są 
 |EnableRPC|Get/Set (wartość logiczna)|Określa, czy debuger może przechodzić do zdalnych wywołań procedur COM.|
 
 ## <a name="see-also"></a>Zobacz też
- [Kontrolowanie ustawień opcji](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [określających nazwy elementów właściwości na](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) stronie Opcje strony opcje [, czcionki i kolory](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [Strona Opcje właściwości węzła, Edytor tekstu](../../ide/reference/options-page-text-editor-node-properties.md) — [Ogólne, debugowanie, Opcje — okno dialogowe ](../../debugger/general-debugging-options-dialog-box.md) [Edytuj i Kontynuuj, debugowanie, Opcje okno dialogowe](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103) ( [just-in-Time), debugowanie, Opcje — okno dialogowe](../../debugger/just-in-time-debugging-options-dialog-box.md)
+ [Kontrolowanie ustawień opcji](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [określających nazwy elementów właściwości na](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) stronie Opcje strony opcji [, czcionki i kolory](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [Strona Opcje właściwości węzła, Edytor tekstu właściwości węzła](../../ide/reference/options-page-text-editor-node-properties.md) [Ogólne, debugowanie, Opcje okno dialogowe](../../debugger/general-debugging-options-dialog-box.md) [Edycja i kontynuowanie, debugowanie, Opcje okno dialogowe](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103) ( [just-in-Time), debugowanie, Opcje — okno dialogowe](../../debugger/just-in-time-debugging-options-dialog-box.md)

@@ -168,41 +168,41 @@
               items:
                 - name: Manifest aplikacji ClickOnce
                   href: clickonce-application-manifest.md
-                - name: '\<assembly>, element'
+                - name: \<assembly> Element
                   href: assembly-element-clickonce-application.md
-                - name: '\<assemblyIdentity>, element'
+                - name: \<assemblyIdentity> Element
                   href: assemblyidentity-element-clickonce-application.md
-                - name: '\<trustInfo>, element'
+                - name: \<trustInfo> Element
                   href: trustinfo-element-clickonce-application.md
-                - name: '\<entryPoint>, element'
+                - name: \<entryPoint> Element
                   href: entrypoint-element-clickonce-application.md
-                - name: '\<dependency>, element'
+                - name: \<dependency> Element
                   href: dependency-element-clickonce-application.md
-                - name: '\<file>, element'
+                - name: \<file> Element
                   href: file-element-clickonce-application.md
-                - name: '\<fileAssociation>, element'
+                - name: \<fileAssociation> Element
                   href: fileassociation-element-clickonce-application.md
             - name: Manifest wdrożenia ClickOnce
               items:
                 - name: Manifest wdrożenia ClickOnce
                   href: clickonce-deployment-manifest.md
-                - name: '\<assembly>, element'
+                - name: \<assembly> Element
                   href: assembly-element-clickonce-deployment.md
-                - name: '\<assemblyIdentity>, element'
+                - name: \<assemblyIdentity> Element
                   href: assemblyidentity-element-clickonce-deployment.md
-                - name: '\<description>, element'
+                - name: \<description> Element
                   href: description-element-clickonce-deployment.md
-                - name: '\<deployment>, element'
+                - name: \<deployment> Element
                   href: deployment-element-clickonce-deployment.md
-                - name: '\<compatibleFrameworks>, element'
+                - name: \<compatibleFrameworks> Element
                   href: compatibleframeworks-element-clickonce-deployment.md
-                - name: '\<dependency>, element'
+                - name: \<dependency> Element
                   href: dependency-element-clickonce-deployment.md
-                - name: '\<publisherIdentity>, element'
+                - name: \<publisherIdentity> Element
                   href: publisheridentity-element-clickonce-deployment.md
-                - name: '\<Signature>, element'
+                - name: \<Signature> Element
                   href: signature-element-clickonce-deployment.md
-                - name: '\<customErrorReporting>, element'
+                - name: \<customErrorReporting> Element
                   href: customerrorreporting-element-clickonce-deployment.md
             - name: Niezarządzany wykaz interfejsów API ClickOnce
               href: clickonce-unmanaged-api-reference.md
@@ -228,21 +228,21 @@
           items:
             - name: Produkt i pakiet — odwołanie do schematu
               href: product-and-package-schema-reference.md
-            - name: '\<Product>, element'
+            - name: \<Product> Element
               href: product-element-bootstrapper.md
-            - name: '\<Package>, element'
+            - name: \<Package> Element
               href: package-element-bootstrapper.md
-            - name: '\<RelatedProducts>, element'
+            - name: \<RelatedProducts> Element
               href: relatedproducts-element-bootstrapper.md
-            - name: '\<InstallChecks>, element'
+            - name: \<InstallChecks> Element
               href: installchecks-element-bootstrapper.md
-            - name: '\<Commands>, element'
+            - name: \<Commands> Element
               href: commands-element-bootstrapper.md
-            - name: '\<PackageFiles>, element'
+            - name: \<PackageFiles> Element
               href: packagefiles-element-bootstrapper.md
-            - name: '\<Strings>, element'
+            - name: \<Strings> Element
               href: strings-element-bootstrapper.md
-            - name: '\<Schedules>, element'
+            - name: \<Schedules> Element
               href: schedules-element-bootstrapper.md
     - name: InstallShield Limited Edition
       href: installshield-limited-edition.md

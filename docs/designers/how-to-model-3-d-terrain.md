@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 12f19363d9024f8e7e2deb69a8038b8854eb50e4
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85768963"
 ---
 # <a name="how-to-model-3d-terrain"></a>Jak modelować tereny 3W
@@ -55,6 +55,6 @@ Model terenu został ukończony. Oto ponownie ostateczny model z zastosowanym ci
 
 Możesz użyć tego modelu terenu, aby zademonstrować efekt cieniowania gradientu, który jest opisany w [instrukcje: Tworzenie cieniowania gradientowego opartego na geometrii](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Edytor modelu](../designers/model-editor.md)

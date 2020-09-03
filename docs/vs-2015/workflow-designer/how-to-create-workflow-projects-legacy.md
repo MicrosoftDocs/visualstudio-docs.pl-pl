@@ -13,18 +13,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3cf68c1a28f662bfa4e271d3c402ef1c8946b6f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668681"
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Instrukcje: Tworzenie projektów przepływu pracy (starsza wersja)
-Wykonaj następujące kroki, aby utworzyć projekt [!INCLUDE[wf](../includes/wf-md.md)], który jest przeznaczony dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Ta procedura korzysta ze starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczonej przez [!INCLUDE[vs2010](../includes/vs2010-md.md)].
+Wykonaj następujące kroki, aby utworzyć [!INCLUDE[wf](../includes/wf-md.md)] projekt, który jest przeznaczony dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] . Ta procedura korzysta ze starszej wersji programu [!INCLUDE[wfd1](../includes/wfd1-md.md)] [!INCLUDE[vs2010](../includes/vs2010-md.md)] .
 
 ### <a name="to-create-a-workflow-project"></a>Aby utworzyć projekt przepływu pracy
 
-1. Rozpocznij [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)].
+1. Rozpocznij [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] .
 
 2. W menu **plik** wskaż polecenie **Nowy**, a następnie wybierz pozycję **projekt**.
 
@@ -33,9 +33,9 @@ Wykonaj następujące kroki, aby utworzyć projekt [!INCLUDE[wf](../includes/wf-
 3. Wybierz opcję **.NET Framework 3,0** lub opcję **.NET Framework 3,5** na liście rozwijanej w górnej części okna **Nowy projekt** , aby uzyskać dostęp do starszego projektanta.
 
     > [!NOTE]
-    > Opcja domyślna w [!INCLUDE[vs2010](../includes/vs2010-md.md)] jest **.NET Framework 4**. Ta opcja służy do tworzenia aplikacji [!INCLUDE[wf](../includes/wf-md.md)] przeznaczonych dla [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] i nie korzysta z starszego projektanta.
+    > Opcja domyślna w programie [!INCLUDE[vs2010](../includes/vs2010-md.md)] jest **.NET Framework 4**. Ta opcja służy do tworzenia [!INCLUDE[wf](../includes/wf-md.md)] aplikacji przeznaczonych dla programu [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] i nie korzysta z starszego projektanta.
 
-4. W okienku **typy projektów** wybierz pozycję projekty wizualne C# lub Visual Basic projekty, a następnie wybierz pozycję **przepływ pracy**.
+4. W okienku **typy projektów** wybierz pozycję projekty Visual C# lub Visual Basic projekty, a następnie wybierz pozycję **przepływ pracy**.
 
 5. W okienku **Szablony** wybierz jeden z zainstalowanych szablonów projektu:
 

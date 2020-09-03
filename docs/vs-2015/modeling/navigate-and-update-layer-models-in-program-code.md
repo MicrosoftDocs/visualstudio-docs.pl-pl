@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 88ab52f1b06e6a2da94d17225bdb26ecec358a6c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668574"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Nawigowanie i aktualizowanie modeli warstw w kodzie programu
@@ -24,10 +24,10 @@ ms.locfileid: "72668574"
 
 W tym temacie opisano elementy i relacje w modelach warstw, które można nawigować i aktualizować przy użyciu kodu programu. Aby uzyskać więcej informacji na temat diagramów warstwy z punktu widzenia użytkownika, zobacz [diagramy warstwowe: odwołania](../modeling/layer-diagrams-reference.md) i [diagramy warstwowe: wytyczne](../modeling/layer-diagrams-guidelines.md).
 
- Model `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` opisany w tym temacie jest elewacją dla bardziej ogólnego <xref:Microsoft.VisualStudio.GraphModel> modelu. Jeśli piszesz [polecenie menu lub rozszerzenie gestu](../modeling/add-commands-and-gestures-to-layer-diagrams.md), użyj modelu `Layer`. Jeśli piszesz [rozszerzenie warstwy sprawdzania poprawności](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), łatwiej jest używać `GraphModel`.
+ `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer`Model opisany w tym temacie jest elewacją dla bardziej ogólnego <xref:Microsoft.VisualStudio.GraphModel> modelu. Jeśli piszesz [polecenie menu lub rozszerzenie gestu](../modeling/add-commands-and-gestures-to-layer-diagrams.md), użyj `Layer` modelu. Jeśli piszesz [rozszerzenie warstwy sprawdzania poprawności](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), łatwiej jest użyć `GraphModel` .
 
 ## <a name="transactions"></a>Transakcje
- Podczas aktualizowania modelu należy rozważyć zawrzeć zmiany w `ILinkedUndoTransaction`. Spowoduje to zagrupowanie zmian w jednej transakcji. W przypadku niepowodzenia zmiany cała transakcja zostanie wycofana. Jeśli użytkownik wycofa zmianę, wszystkie zmiany zostaną cofnięte.
+ Podczas aktualizowania modelu należy rozważyć zawrzeć zmiany w `ILinkedUndoTransaction` . Spowoduje to zagrupowanie zmian w jednej transakcji. W przypadku niepowodzenia zmiany cała transakcja zostanie wycofana. Jeśli użytkownik wycofa zmianę, wszystkie zmiany zostaną cofnięte.
 
  Aby uzyskać więcej informacji, zobacz [łączenie aktualizacji modelu UML przy użyciu transakcji](../modeling/link-uml-model-updates-by-using-transactions.md).
 
@@ -40,12 +40,12 @@ using (ILinkedUndoTransaction t =
 }
 ```
 
-## <a name="containment"></a>Zawierania
+## <a name="containment"></a>Zawieranie
  ![ILayer i ILayerModel mogą zawierać ILayers.](../modeling/media/layerapi-containment.png "LayerApi_Containment")
 
  Warstwy ([ILayer](/previous-versions/ff644251(v=vs.140))) i model warstwy ([ILayerModel](/previous-versions/ff643069(v=vs.140))) mogą zawierać komentarze i warstwy.
 
- Warstwa (`ILayer`) może być zawarta w modelu warstwy (`ILayerModel`) lub może być zagnieżdżona w innym `ILayer`.
+ Warstwa ( `ILayer` ) może być zawarta w modelu warstwy ( `ILayerModel` ) lub może być zagnieżdżona w innym `ILayer` .
 
  Aby utworzyć komentarz lub warstwę, użyj metod tworzenia w odpowiednim kontenerze.
 
@@ -54,7 +54,7 @@ using (ILinkedUndoTransaction t =
 
  ![ILayerDependencyLink łączy dwa ILayers.](../modeling/media/layerapi-dependency.png "LayerApi_Dependency")
 
- Aby utworzyć łącze zależności, wywołaj `source.CreateDependencyLink(target)`.
+ Aby utworzyć łącze zależności, wywołaj polecenie `source.CreateDependencyLink(target)` .
 
 ## <a name="comments"></a>Komentarze
  Komentarze mogą być zawarte w warstwach lub modelu warstwy i mogą być również połączone z dowolnym elementem warstwy:
@@ -74,11 +74,11 @@ IEnumerable<ILayerComment> comments =
 ```
 
 > [!CAUTION]
-> Właściwość `Comments` `ILayer` pobiera komentarze zawarte w `ILayer`. Nie otrzymuje komentarzy, które są z nim połączone.
+> `Comments`Właściwość `ILayer` Pobiera komentarze, które są zawarte w `ILayer` . Nie otrzymuje komentarzy, które są z nim połączone.
 
- Utwórz komentarz, wywołując `CreateComment()` w odpowiednim kontenerze.
+ Utwórz komentarz wywołujący `CreateComment()` dla odpowiedniego kontenera.
 
- Utwórz łącze przy użyciu `CreateLink()` na komentarzu.
+ Utwórz link, używając `CreateLink()` na komentarzu.
 
 ## <a name="layer-elements"></a>Elementy warstwy
  Wszystkie typy elementów, które mogą być zawarte w modelu, są elementami warstwy:
@@ -86,7 +86,7 @@ IEnumerable<ILayerComment> comments =
  ![Zawartość diagramu warstwowego to ILayerElements.](../modeling/media/layerapi-layerelements.png "LayerApi_LayerElements")
 
 ## <a name="properties"></a>Właściwości
- Każdy `ILayerElement` ma słownik ciągów o nazwie `Properties`. Tego słownika można użyć do dołączenia dowolnych informacji do dowolnego elementu warstwy.
+ Każdy `ILayerElement` z nich ma słownik ciągów o nazwie `Properties` . Tego słownika można użyć do dołączenia dowolnych informacji do dowolnego elementu warstwy.
 
 ## <a name="artifact-references"></a>Odwołania artefaktów
  Odwołanie artefaktu ([ILayerArtifactReference](/previous-versions/ff644536(v=vs.140))) reprezentuje łącze między warstwą a elementem projektu, takim jak plik, Klasa lub folder. Użytkownik tworzy artefakty podczas tworzenia warstwy lub dodawania do niej, przeciągając elementy z Eksplorator rozwiązań, Widok klasy lub Przeglądarka obiektów do diagramu warstwowego. Dowolna liczba odwołań artefaktów może być połączona z warstwą.
@@ -97,14 +97,14 @@ IEnumerable<ILayerComment> comments =
 
  [ILayerArtifactReference](/previous-versions/ff644536(v=vs.140)). Właściwość Categories wskazuje, jaki rodzaj artefaktu jest przywoływany, taki jak Klasa, plik wykonywalny lub zestaw. Kategorie określają, jak identyfikator identyfikuje artefakt docelowy.
 
- [ArtifactReferenceExtensions. CreateArtifactReferenceAsync](/previous-versions/ff695840(v=vs.140)) tworzy odwołanie artefaktu z <xref:EnvDTE.Project> lub <xref:EnvDTE.ProjectItem>. To jest operacja asynchroniczna. W związku z tym, zazwyczaj podajesz wywołanie zwrotne, które jest wywoływane po zakończeniu tworzenia.
+ [ArtifactReferenceExtensions. CreateArtifactReferenceAsync](/previous-versions/ff695840(v=vs.140)) tworzy odwołanie artefaktu z <xref:EnvDTE.Project> lub <xref:EnvDTE.ProjectItem> . To jest operacja asynchroniczna. W związku z tym, zazwyczaj podajesz wywołanie zwrotne, które jest wywoływane po zakończeniu tworzenia.
 
  Odwołań artefaktów warstwy nie należy mylić z artefaktami w diagramach przypadków użycia.
 
 ## <a name="shapes-and-diagrams"></a>Kształty i diagramy
- Dwa obiekty są używane do reprezentowania każdego elementu w modelu warstwy: `ILayerElement` i [IShape](/previous-versions/ee806673(v=vs.140)). @No__t_0 reprezentuje położenie i rozmiar kształtu na diagramie. W modelach warstw każdy `ILayerElement` ma jeden `IShape`, a każda `IShape` na diagramie warstwy ma jeden `ILayerElement`. `IShape` jest również używany dla modeli UML. W związku z tym, nie każda `IShape` ma element warstwy.
+ Dwa obiekty są używane do reprezentowania każdego elementu w modelu warstwy: `ILayerElement` a i [IShape](/previous-versions/ee806673(v=vs.140)). `IShape`Reprezentuje położenie i rozmiar kształtu na diagramie. W modelach warstw każdy `ILayerElement` ma jeden `IShape` , a każdy `IShape` na diagramie warstwy ma jeden `ILayerElement` . `IShape` jest również używany dla modeli UML. W związku z tym, nie każdy `IShape` ma elementu warstwy.
 
- W ten sam sposób `ILayerModel` jest wyświetlana na jednym [IDiagram](/previous-versions/ee789658(v=vs.140)).
+ W ten sam sposób `ILayerModel` jest wyświetlany w jednym [IDiagram](/previous-versions/ee789658(v=vs.140)).
 
  W kodzie niestandardowego polecenia lub uchwytu gestu można pobrać bieżący diagram i bieżące zaznaczenie kształtów z `DiagramContext` importowania:
 
@@ -127,7 +127,7 @@ public void ... (...)
 
  [IShape](/previous-versions/ee806673(v=vs.140)) i [IDiagram](/previous-versions/ee789658(v=vs.140)) są również używane do wyświetlania modeli UML. Aby uzyskać więcej informacji, zobacz [Wyświetlanie modelu UML na diagramach](../modeling/display-a-uml-model-on-diagrams.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dodawanie poleceń i gestów do diagramów warstw](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
 - [Dodawanie niestandardowej walidacji architektury do diagramów warstw](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

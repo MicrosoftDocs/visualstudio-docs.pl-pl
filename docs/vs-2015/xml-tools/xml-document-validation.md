@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ee5d3cff260346a5bcc1806b09b955642c608f14
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669490"
 ---
 # <a name="xml-document-validation"></a>Walidacja dokumentów XML
@@ -27,7 +27,7 @@ Edytor XML sprawdza składnię XML 1,0 i sprawdza sprawdzanie poprawności danyc
 
 - Osadzony schemat lub DTD.
 
-- Zewnętrzna definicja DTD lub `xsd:schemaLocation` i atrybut `xsd:noNamespaceSchemaLocation`
+- Zewnętrzna definicja DTD lub `xsd:schemaLocation` atrybut i `xsd:noNamespaceSchemaLocation`
 
 - Identyfikator URI przestrzeni nazw schematu XDR "x-Schema".
 

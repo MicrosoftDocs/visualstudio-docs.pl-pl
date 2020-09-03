@@ -76,7 +76,7 @@
               href: analyzing-code-coverage-in-build-verification-tests.md
             - name: Pokrycie kodu — wyszukiwanie błędów
               href: troubleshooting-code-coverage.md
-        - name: Izolowanie testów jednostkowych SharePoint 2010 przy użyciu emulatorów
+        - name: Izolowanie testów jednostkowych programu SharePoint 2010 przy użyciu emulatorów
           href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
     - name: Używanie automatyzacji interfejsu użytkownika do testowania kodu
       items:
@@ -126,15 +126,15 @@
               items:
                 - name: Przykładowe rozszerzenie kodowanych testów UI dla programu Excel
                   href: sample-coded-ui-test-extension-for-excel.md
-                - name: ExtensionPackage — Klasa
+                - name: 'ExtensionPackage, klasa'
                   href: sample-excel-extension-extensionpackage-class.md
-                - name: TechnologyManager — Klasa
+                - name: 'TechnologyManager, klasa'
                   href: sample-excel-extension-technologymanager-class.md
-                - name: PropertyProvider — Klasa
+                - name: 'PropertyProvider, klasa'
                   href: sample-excel-extension-propertyprovider-class.md
                 - name: Klasy elementów
                   href: sample-excel-extension-element-classes.md
-                - name: ActionFilter — Klasa
+                - name: 'ActionFilter, klasa'
                   href: sample-excel-extension-actionfilter-class.md
         - name: Aktualizowanie kodowanych testów interfejsu użytkownika z Visual Studio 2010
           href: upgrading-coded-ui-tests-from-visual-studio-2010.md
@@ -158,7 +158,7 @@
               href: create-and-run-unit-tests-for-a-store-app-in-visual-studio.md
             - name: Testowanie jednostek biblioteki DLL w języku C++
               href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-            - name: 'Test jednostkowy kodu w języku C#'
+            - name: Test jednostkowy kodu w języku C#
               href: unit-testing-visual-csharp-code-in-a-store-app.md
             - name: Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
               href: run-unit-tests-for-store-apps-in-visual-studio.md
@@ -166,7 +166,7 @@
           items:
             - name: Analizowanie jakości kodu przy użyciu statycznej analizy kodu
               href: analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md
-            - name: 'Analizowanie jakości kodu w językach Visual Basic i C#'
+            - name: Analizowanie jakości kodu w językach Visual Basic i C#
               href: analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md
             - name: Analizowanie jakości kodu w języku C++
               href: analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md
