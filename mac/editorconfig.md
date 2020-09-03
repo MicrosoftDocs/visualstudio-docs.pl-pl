@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.topic: how-to
 ms.openlocfilehash: adeab06341c0691bdb902a3bb8a813ac38d786f6
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938524"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Tworzenie i edytowanie niestandardowego pliku EditorConfig
@@ -53,7 +53,7 @@ EditorConfig obsługuje również [konwencje kodowania](/visualstudio/ide/editor
 
     ![Element rozwiązania wyświetlany w konsoli rozwiązania](media/editorconfig-image1a.png)
 
-4. Edytuj plik. Przykład:
+4. Edytuj plik. Na przykład:
 
     ```EditorConfig
     # This file is the top-most EditorConfig file

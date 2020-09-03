@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 732bd9fe3d34a768e0c6f71315f212c49bdf02af
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016386"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Przewodnik: Tworzenie składnika Web Part dla programu SharePoint przy użyciu narzędzia Projektant
@@ -184,7 +185,7 @@ W składniku Web Part Określ kalendarze, które mają zostać uwzględnione w w
 
 Zdarzenia ze wszystkich określonych kalendarzy są wyświetlane w widoku kalendarza miesięcznego.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Tworzenie składników Web Part dla programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
  [Instrukcje: Tworzenie składnika Web Part](../sharepoint/how-to-create-a-sharepoint-web-part.md) 

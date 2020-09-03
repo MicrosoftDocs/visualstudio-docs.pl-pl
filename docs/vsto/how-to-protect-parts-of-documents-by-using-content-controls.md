@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541352"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Instrukcje: ochrona części dokumentów za pomocą kontrolek zawartości
@@ -34,7 +34,7 @@ ms.locfileid: "85541352"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a>Ochrona kontrolki zawartości
+## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a> Ochrona kontrolki zawartości
  Można uniemożliwić użytkownikom edytowanie lub usuwanie kontrolki zawartości przez ustawienie właściwości kontrolki w projekcie na poziomie dokumentu w czasie projektowania lub w czasie wykonywania.
 
  Możesz również chronić kontrolki zawartości dodawane do dokumentu w czasie wykonywania przy użyciu projektu dodatku VSTO. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md).

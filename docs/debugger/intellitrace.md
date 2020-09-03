@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4cbe14e1bf8c3a5e010e3c9e887a208b7e045b4c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536516"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace for Visual Studio Enterprise (C#, Visual Basic, C++)
@@ -45,7 +45,7 @@ Możesz użyć IntelliTrace w wersji Visual Studio Enterprise (ale nie wersji Pr
 |**Zbieraj dane IntelliTrace z wdrożonych aplikacji**|- [Korzystanie z autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Rozpocznij debugowanie z pliku dziennika IntelliTrace (plik iTrace).**|- [Korzystanie z zapisanych danych IntelliTrace](../debugger/using-saved-intellitrace-data.md)|
 
-## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a>Jakie aplikacje można debugować za pomocą IntelliTrace?
+## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a> Jakie aplikacje można debugować za pomocą IntelliTrace?
 
 | Poziom pomocy technicznej| Typy aplikacji |
 |---------------------| - |
@@ -56,7 +56,7 @@ Możesz użyć IntelliTrace w wersji Visual Studio Enterprise (ale nie wersji Pr
 > [!NOTE]
 > Jeśli chcesz debugować proces, który jest już uruchomiony, można zbierać tylko zdarzenia IntelliTrace (bez informacji o wywołaniu). Możesz dołączyć do procesu 32-bitowego lub 64-bitowego tylko na komputerze lokalnym. Zdarzenia, które wystąpiły przed dołączeniem do procesu, nie są zbierane.
 
-## <a name="why-debug-with-intellitrace"></a><a name="IntelliTraceVSTraditional"></a>Dlaczego debugować za pomocą IntelliTrace?
+## <a name="why-debug-with-intellitrace"></a><a name="IntelliTraceVSTraditional"></a> Dlaczego debugować za pomocą IntelliTrace?
 
 Tradycyjne lub na *żywo* debugowanie pokazuje tylko bieżący stan aplikacji z ograniczoną ilością danych na temat przeszłych zdarzeń. Musisz wywnioskować te zdarzenia na podstawie bieżącego stanu aplikacji lub trzeba ponownie utworzyć te zdarzenia przez ponowne uruchomienie aplikacji.
 
@@ -88,7 +88,7 @@ Oto kilka przykładów, jak IntelliTrace może pomóc w debugowaniu:
 
   Jest to przydatne, gdy chcesz zdiagnozować problemy z aplikacjami w trakcie wdrażania. Zobacz [Korzystanie z autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-## <a name="what-data-does-intellitrace-collect"></a><a name="WhatData"></a>Jakie dane są zbierane przez IntelliTrace?
+## <a name="what-data-does-intellitrace-collect"></a><a name="WhatData"></a> Jakie dane są zbierane przez IntelliTrace?
 
 **Zbierz informacje o zdarzeniach**
 
@@ -132,7 +132,7 @@ Domyślnie IntelliTrace rejestruje tylko zdarzenia IntelliTrace: zdarzenia debug
 
   - [Korzystanie z zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)
 
-  - [Przewodnik: Debugowanie aplikacji SharePoint przy użyciu narzędzia IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
+  - [Przewodnik: debugowanie aplikacji SharePoint przy użyciu narzędzia IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
 
 **Przechwytywanie migawek**
 
@@ -161,7 +161,7 @@ Zobacz [Sprawdzanie aplikacji za pomocą debugowania historycznego](../debugger/
 
 Aby kontrolować, ile informacji na temat wywołania gromadzi IntelliTrace, określ tylko te moduły, która Cię interesują. Może to pomóc w ulepszaniu wydajności aplikacji podczas zbierania. Zapoznaj się z sekcją Sterowanie tym, [ile IntelliTrace informacji zbiera](../debugger/intellitrace-features.md#ControlCallData) w funkcjach IntelliTrace.
 
-## <a name="will-intellitrace-slow-down-my-application"></a><a name="AffectPerformance"></a>IntelliTrace spowalnia moją aplikację?
+## <a name="will-intellitrace-slow-down-my-application"></a><a name="AffectPerformance"></a> IntelliTrace spowalnia moją aplikację?
 
 IntelliTrace domyślnie zbiera dane tylko dla wybranych zdarzeń IntelliTrace. Może to być niespowolnienie aplikacji, w zależności od struktury i organizacji kodu. Na przykład jeśli IntelliTrace często zapisuje zdarzenie, może to spowolnić aplikację. Może być również konieczne rozważenie refaktoryzacji aplikacji.
 

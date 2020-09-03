@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 210606af0f200d49b639d323456f85e0a7becd06
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543679"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Wyświetlanie struktury kodu przy użyciu różnych okien narzędzi
@@ -121,7 +121,7 @@ Menu skrótów w oknie **Hierarchia wywołań** zawiera następujące polecenia:
 |**Kopiuj**|Kopiuje wybrany węzeł (ale nie jego węzły podrzędne).|
 |**Odświeżanie**|Odświeża informacje.|
 
-## <a name="object-browser"></a><a name="BKMK_ObjectBrowser"></a>Przeglądarka obiektów
+## <a name="object-browser"></a><a name="BKMK_ObjectBrowser"></a> Przeglądarka obiektów
 
 W oknie **Przeglądarka obiektów** są wyświetlane opisy kodu w projektach.
 

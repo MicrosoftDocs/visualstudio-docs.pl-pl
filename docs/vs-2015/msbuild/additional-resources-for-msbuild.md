@@ -17,16 +17,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3557e830ba90b1e9f32b01c344867c5370e7425c
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586197"
 ---
 # <a name="additional-resources-for-msbuild"></a>Dodatkowe zasoby narzędzia MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Poniższe witryny sieci Web i fora mogą pomóc w znalezieniu odpowiedzi na często zadawane pytania podczas [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]pracy z programem.  
+Poniższe witryny sieci Web i fora mogą pomóc w znalezieniu odpowiedzi na często zadawane pytania podczas pracy z programem [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .  
   
 ## <a name="microsoft-resources"></a>Zasoby firmy Microsoft  
   
@@ -35,12 +35,12 @@ Poniższe witryny sieci Web i fora mogą pomóc w znalezieniu odpowiedzi na czę
  Zawiera informacje [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] i linki do innych [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] witryn w sieci Web.  
   
  [Blog zespołu programu MSBuild](https://blogs.msdn.com/b/msbuild/)  
- Zawiera informacje, linki i aktualizacje zapisywane przez zespół [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] produktu.  
+ Zawiera informacje, linki i aktualizacje zapisywane przez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zespół produktu.  
   
  [Forum programu Visual Studio MSBuild](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/)  
- Forum społecznościowe przeznaczone dla [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
+ Forum społecznościowe przeznaczone dla [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .  
   
 ## <a name="see-also"></a>Zobacz też  
  [MSBuild](msbuild.md)   
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+ [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

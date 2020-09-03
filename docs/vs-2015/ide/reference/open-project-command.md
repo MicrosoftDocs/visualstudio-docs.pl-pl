@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99596442f3aef9e4cb2d890438d29b96cdf4f083
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671919"
 ---
 # <a name="open-project-command"></a>Otwórz projekt — Polecenie
@@ -34,9 +34,9 @@ File.OpenProject filename
 ```
 
 ## <a name="arguments"></a>Argumenty
- Wymagane `filename`. Pełna ścieżka i nazwa pliku projektu do otwarcia.
+ `filename` Wymagane. Pełna ścieżka i nazwa pliku projektu do otwarcia.
 
- Składnia argumentu `filename` wymaga, aby ścieżki zawierające spacje używały znaków cudzysłowu.
+ Składnia `filename` argumentu wymaga, aby ścieżki zawierające spacje używały znaków cudzysłowu.
 
 ## <a name="remarks"></a>Uwagi
  Funkcja automatycznego uzupełniania próbuje zlokalizować poprawną ścieżkę i nazwę pliku podczas wpisywania.
@@ -44,7 +44,7 @@ File.OpenProject filename
  To polecenie jest niedostępne podczas debugowania.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie zostanie otwarty projekt [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] test1.
+ W tym przykładzie zostanie otwarty [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] projekt, test1.
 
 ```
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"

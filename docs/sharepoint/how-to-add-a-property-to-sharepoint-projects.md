@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eb72b0546b504e2df1a7e93ea9d4def350143d1d
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015921"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Instrukcje: Dodawanie właściwości do projektów programu SharePoint
@@ -44,9 +45,9 @@ ms.locfileid: "86015921"
 
  Aby zachować zmiany wartości właściwości, metody dostępu **Set** dla właściwości używają następujących interfejsów API:
 
-- `CustomUserFileProperty`używa <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> właściwości, aby zapisać jej wartość w pliku opcji użytkownika projektu.
+- `CustomUserFileProperty` używa <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> właściwości, aby zapisać jej wartość w pliku opcji użytkownika projektu.
 
-- `CustomProjectFileProperty`używa <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> metody, aby zapisać jej wartość w pliku projektu.
+- `CustomProjectFileProperty` używa <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> metody, aby zapisać jej wartość w pliku projektu.
 
   Aby uzyskać więcej informacji na temat utrwalania danych w tych plikach, zobacz [Zapisywanie danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
@@ -79,7 +80,7 @@ ms.locfileid: "86015921"
 ## <a name="deploy-the-extension"></a>Wdróż rozszerzenie
  Aby wdrożyć rozszerzenie, Utwórz [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiet rozszerzenia (VSIX) dla zestawu i wszystkie inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zwiększ projekty programu SharePoint](../sharepoint/extending-sharepoint-projects.md)
 - [Instrukcje: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [Instrukcje: Dodawanie elementu menu skrótów do projektów programu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)

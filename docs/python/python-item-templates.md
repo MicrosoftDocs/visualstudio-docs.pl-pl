@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 528606356c2d976de71ab2c0317a1a0236d2e63f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533396"
 ---
 # <a name="python-item-templates"></a>Szablony elementów języka Python
@@ -34,7 +34,7 @@ W poniższej tabeli opisano efekt każdego szablonu elementu w ramach projektu j
 | **Pakiet języka Python** | Folder zawierający plik * \_ \_ init \_ \_ . PR* . |
 | **Test jednostkowy języka Python** | Plik *. PR* z pojedynczym testem jednostkowym opartym na `unittest` strukturze, wraz z wywołaniem do `unittest.main()` uruchomienia testów w pliku. |
 | **Strona HTML** | Plik *. html* z prostą strukturą strony składającą się `<head>` z `<body>` elementów i. |
-| **JavaScript** | Pusty plik *. js* . |
+| **JavaScript** | Pusty plik  *. js* . |
 | **Arkusz stylów** | Plik *. css* zawierający pusty styl dla `body` . |
 | **Plik tekstowy** | Pusty plik *txt* . |
 | **Aplikacja Django 1,9**<br/>**Aplikacja Django 1,4** | Folder o nazwie aplikacji, który zawiera podstawowe pliki dla aplikacji Django, zgodnie z opisem w temacie [Django in Visual Studio, krok 2-2](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) dla Django 1,9. W przypadku Django 1,4 nie są uwzględniane foldery *migracji* , plik *admin.py* i plik *Apps.py* . |
@@ -43,10 +43,10 @@ W poniższej tabeli opisano efekt każdego szablonu elementu w ramach projektu j
 | **Pliki obsługi roli proces roboczy** | Folder *bin* w katalogu głównym projektu (niezależnie od wybranego folderu w projekcie). Folder zawiera domyślne wdrożenie i skrypt uruchamiania wraz z plikiem *web.config* dla ról procesów roboczych usługi w chmurze platformy Azure. Szablon zawiera również plik *readme.html* , który objaśnia szczegóły. |
 | **web.config platformy Azure (FastCGI)** | Plik *web.config* zawierający wpisy dla aplikacji korzystających z obiektu [WSGI](https://wsgi.readthedocs.io/en/latest/) do obsługi połączeń przychodzących. Ten plik jest zwykle wdrażany w katalogu głównym serwera sieci Web z uruchomionymi usługami IIS. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla usług IIS](configure-web-apps-for-iis-windows.md). |
 | **web.config platformy Azure (HttpPlatformHandler)** | Plik *web.config* zawierający wpisy dla aplikacji, które nasłuchują w gnieździe dla połączeń przychodzących. Ten plik jest zwykle wdrażany w katalogu głównym serwera sieci Web z uruchomionymi usługami IIS, takimi jak Azure App Service. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla usług IIS](configure-web-apps-for-iis-windows.md). |
-| **web.configplików statycznych platformy Azure** | Plik *web.config* zwykle dodawany do folderu *statycznego* (lub innego folderu zawierającego elementy statyczne), aby wyłączyć obsługę języka Python dla tego folderu. Ten plik konfiguracji działa w połączeniu z jednym z plików konfiguracji FastCGI lub HttpPlatformHandler powyżej. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla usług IIS](configure-web-apps-for-iis-windows.md). |
-| **web.configzdalnego debugowania platformy Azure** | Przestarzałe (użyto do zdalnego debugowania w Azure App Service dla systemu Windows, które nie jest już obsługiwane). |
+| **web.configplików statycznych platformy Azure ** | Plik *web.config* zwykle dodawany do folderu *statycznego* (lub innego folderu zawierającego elementy statyczne), aby wyłączyć obsługę języka Python dla tego folderu. Ten plik konfiguracji działa w połączeniu z jednym z plików konfiguracji FastCGI lub HttpPlatformHandler powyżej. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla usług IIS](configure-web-apps-for-iis-windows.md). |
+| **web.configzdalnego debugowania platformy Azure ** | Przestarzałe (użyto do zdalnego debugowania w Azure App Service dla systemu Windows, które nie jest już obsługiwane). |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zarządzanie projektami języka Python — szablony projektów](managing-python-projects-in-visual-studio.md#project-templates)
 - [Szablony projektu sieci Web w języku Python](python-web-application-project-templates.md)

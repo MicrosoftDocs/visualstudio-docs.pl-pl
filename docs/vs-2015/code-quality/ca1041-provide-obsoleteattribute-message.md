@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d738cf15ebe734cb74e553f38f6eb26af17e8cfd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542314"
 ---
 # <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041: Udostępnij komunikat ObsoleteAttribute
@@ -36,7 +36,7 @@ ms.locfileid: "85542314"
  Typ lub element członkowski jest oznaczony przy użyciu <xref:System.ObsoleteAttribute?displayProperty=fullName> atrybutu, który nie ma <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> określonej właściwości.
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.ObsoleteAttribute>służy do oznaczania przestarzałych typów bibliotek i elementów członkowskich. Odbiorcy biblioteki powinni unikać używania dowolnego typu lub elementu członkowskiego, który jest oznaczony jako przestarzały. Wynika to z faktu, że może to nie być obsługiwane i ostatecznie zostanie usunięte z nowszych wersji biblioteki. Po skompilowaniu typu lub elementu członkowskiego oznaczonego za pomocą <xref:System.ObsoleteAttribute> jest <xref:System.ObsoleteAttribute.Message%2A> wyświetlana właściwość atrybutu. Dostarcza to informacje użytkownika o przestarzałym typie lub elemencie członkowskim. Te informacje zazwyczaj obejmują czas, przez jaki przestarzały typ lub składowa będą obsługiwane przez projektantów biblioteki i preferowane zastąpienie do użycia.
+ <xref:System.ObsoleteAttribute> służy do oznaczania przestarzałych typów bibliotek i elementów członkowskich. Odbiorcy biblioteki powinni unikać używania dowolnego typu lub elementu członkowskiego, który jest oznaczony jako przestarzały. Wynika to z faktu, że może to nie być obsługiwane i ostatecznie zostanie usunięte z nowszych wersji biblioteki. Po skompilowaniu typu lub elementu członkowskiego oznaczonego za pomocą <xref:System.ObsoleteAttribute> jest <xref:System.ObsoleteAttribute.Message%2A> wyświetlana właściwość atrybutu. Dostarcza to informacje użytkownika o przestarzałym typie lub elemencie członkowskim. Te informacje zazwyczaj obejmują czas, przez jaki przestarzały typ lub składowa będą obsługiwane przez projektantów biblioteki i preferowane zastąpienie do użycia.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, należy dodać `message` parametr do <xref:System.ObsoleteAttribute> konstruktora.

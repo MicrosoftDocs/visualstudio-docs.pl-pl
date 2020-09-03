@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9cf95bd2095d9713d498ddccf68fd1e81e1b1e64
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535710"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Przewodnik: tworzenie klas LINQ do SQL za pomocą dziedziczenia pojedynczej tabeli (O/R Designer)
@@ -53,8 +53,8 @@ ms.locfileid: "85535710"
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
     |**Typ**|**int**|**True**|
-    |**Imię**|**nvarchar (200)**|**False**|
-    |**Nazwisko**|**nvarchar (200)**|**False**|
+    |**FirstName (Imię)**|**nvarchar (200)**|**False**|
+    |**LastName (Nazwisko)**|**nvarchar (200)**|**False**|
     |**Manager**|**int**|**True**|
 
 3. Ustaw wartość kolumny ID jako klucz podstawowy.
@@ -70,7 +70,7 @@ ms.locfileid: "85535710"
 
 2. Skopiuj następujące dane do tabeli. (Można go skopiować, a następnie wkleić do tabeli, zaznaczając cały wiersz w okienku wyników).
 
-    |**ID**|**Typ**|**Imię**|**Nazwisko**|**Manager**|
+    |**ID**|**Typ**|**FirstName (Imię)**|**LastName (Nazwisko)**|**Manager**|
     |-|-|-|-|-|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|

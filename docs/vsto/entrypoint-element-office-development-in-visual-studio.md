@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 17f57b90b7c6aa4c254b2b55ee838a3086193ef7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543601"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;entryPoint — &gt; element (Programowanie Office w Visual Studio)
@@ -45,7 +45,7 @@ ms.locfileid: "85543601"
 |---------------|-----------------|
 |`class`|Wymagany. Identyfikuje zestaw dostosowywania do wykonania. Składnia tego atrybutu jest *NamespaceName. ClassName*.|
 
- `entryPoint`ma następujący element.
+ `entryPoint` ma następujący element.
 
 ### <a name="assemblyidentity"></a>assemblyIdentity
  Wymagany. `assemblyIdentity`Element w `vstav3` przestrzeni nazw odwołuje się do istniejącego `assemblyIdentity` elementu w [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifeście aplikacji.

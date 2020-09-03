@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6fe720b380133d15f9bc60485896d4b7acbf2c4b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543198"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
@@ -94,7 +94,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
 - **Projekt DslPackage** Ten projekt zawiera kod umożliwiający otwieranie i edytowanie wystąpień DSL [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-## <a name="running-the-dsl"></a><a name="Debugging"></a>Uruchamianie modemu DSL
+## <a name="running-the-dsl"></a><a name="Debugging"></a> Uruchamianie modemu DSL
  Rozwiązanie DSL można uruchomić zaraz po jego utworzeniu. Później można zmienić definicję DSL, uruchamiając rozwiązanie ponownie po każdej zmianie.
 
 #### <a name="to-experiment-with-the-dsl"></a>Aby eksperymentować z DSL
@@ -112,7 +112,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
 3. W eksperymentalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otwórz plik modelu o nazwie **Test** z **Eksplorator rozwiązań**.
 
-    \-oraz
+    \- oraz
 
     Kliknij prawym przyciskiem myszy projekt debugowanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **element**. W oknie dialogowym **Dodaj element** wybierz typ pliku DSL.
 
@@ -162,7 +162,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
 3. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi **Eksplorator rozwiązań**.
 
-    \-oraz
+    \- oraz
 
     Kliknij prawym przyciskiem myszy szablony, które chcesz wygenerować ponownie, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
 
@@ -383,7 +383,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
  Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](../modeling/deploying-domain-specific-language-solutions.md).
 
-## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a>Usuwanie starej eksperymentalnej językami DSL
+## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a> Usuwanie starej eksperymentalnej językami DSL
  Jeśli utworzono eksperymentalne językami DSL, które nie są już potrzebne, możesz je usunąć z komputera, resetować [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wystąpienie eksperymentalne.
 
  Spowoduje to usunięcie z komputera wszystkich eksperymentalnych językami DSL i innych eksperymentalnych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzeń. Są to rozszerzenia, które zostały wykonane w trybie debugowania.

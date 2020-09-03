@@ -1,5 +1,5 @@
 ---
-title: Kontrola wykonania i ocena państwa | Dokumenty firmy Microsoft
+title: Kontrola wykonywania i Ocena stanu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,22 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc76ae97e8baa6ce78dd4d565109d6a19e2051e2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738753"
 ---
-# <a name="execution-control-and-state-evaluation"></a>Kontrola wykonania i ocena stanu
-Debugowanie aplikacji wymaga zaimplementowania takich funkcji kontroli wykonywania, jak przechodzenie do funkcji, zatrzymywanie w punktach przerwania i ciągłe wykonywanie. Debugowanie programu Visual Studio opiera swoją kontrolę nad wykonywaniem zdarzeń wysyłanych między składnikami debugera.
+# <a name="execution-control-and-state-evaluation"></a>Kontrola wykonywania i Ocena stanu
+Debugowanie aplikacji wymaga implementacji takich funkcji kontroli wykonywania jak Krokowe wykonywanie funkcji, zatrzymywanie w punktach przerwania i kontynuowanie wykonywania. Debugowanie programu Visual Studio opiera się na kontroli nad zdarzeniami przesyłanymi między składnikami debugera.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Sterowanie programem](../../extensibility/debugger/program-control.md) Wyświetla listę następujących procedur, które występują na poziomie programu: ustawianie następnej instrukcji, wykonywanie, przechodzenie krok po kroku, kontynuowanie, zawieszanie i wznawianie.
+ [Kontrola programu](../../extensibility/debugger/program-control.md) Wyświetla listę następujących procedur, które pojawiają się na poziomie programu: ustawienie następnej instrukcji, wykonywanie, krokowe, kontynuowanie, wstrzymywanie i wznawianie.
 
- [Metody związane z punktem przerwania](../../extensibility/debugger/breakpoint-related-methods.md) Definiuje powiązane i oczekujące typy punktów przerwania, które obsługuje program Visual Studio.
+ [Metody związane z punktem przerwania](../../extensibility/debugger/breakpoint-related-methods.md) Definiuje powiązane i oczekujące typy punktów przerwania obsługiwanych przez program Visual Studio.
 
- [Ocena stosu wywołań](../../extensibility/debugger/call-stack-evaluation.md) W tym artykule omówiono implementacji metod, które umożliwiają wyświetlanie ramki stosu stosu wywołań w trybie przerwania.
+ [Obliczanie stosu wywołań](../../extensibility/debugger/call-stack-evaluation.md) Omawia implementację metod, które umożliwiają wyświetlanie ramek stosu wywołań stosu w trybie przerwania.
 
- [Ocena wyrażenia](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md) W tym artykule wyjaśniono, jak aparat debugowania (DE), ocena wyrażeń (EE) i menedżer debugowania sesji są zaangażowane w analizowanie i ocenę wyrażenia wprowadzone do jednego z okien IDE.
+ [Obliczanie wyrażeń](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md) Wyjaśnia, w jaki sposób aparat debugowania (DE), obliczanie wyrażeń (EE) i Menedżer debugowania sesji są uwzględniane podczas analizy i oceny wyrażenia wprowadzonego w jednym z okien IDE.
 
- [Sterowanie zdarzeniami](../../extensibility/debugger/control-events.md) W tym artykule omówiono interfejs używany do wysyłania zdarzeń podczas kontrolowanego wykonywania programu.
+ [Zdarzenia kontroli](../../extensibility/debugger/control-events.md) Omawia interfejs używany do wysyłania zdarzeń podczas kontrolowanego wykonywania programu.

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b1fe36a4ee74ca1b41c1db1d79a6e4683c1f2b1f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542431"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Użyj IPython w oknie interaktywnym
@@ -80,7 +80,7 @@ W tym instruktażu należy zainstalować środowisko [Anaconda](https://www.cont
 
 IPython ma wiele innych użytecznych funkcji, takich jak ucieczki do powłoki systemowej, podstawienia zmiennych, przechwytywania danych wyjściowych itp. Więcej informacji można znaleźć w [dokumentacji IPython](https://ipython.org/documentation.html) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - Aby korzystać z Jupyter z łatwością i bez instalacji, wypróbuj bezpłatną [Azure Notebooks hostowaną usługę](https://notebooks.azure.com/) , która umożliwia utrzymywanie i udostępnianie notesów innym osobom.
 

@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015601"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Pakowanie i wdrażanie rozwiązań SharePoint
@@ -100,6 +101,6 @@ ms.locfileid: "86015601"
 
   Jeśli dodany plik nie dotyczy żadnego konkretnego projektu w rozwiązaniu, można dodać do rozwiązania pusty projekt programu SharePoint, a następnie dodać do niego dodatkowe pliki. Inną alternatywą dla wdrażania plików w programie SharePoint, szczególnie w odniesieniu do bazy danych zawartości, jest dodanie modułu do projektu, a następnie dodanie plików do modułu. Aby uzyskać więcej informacji, zobacz [używanie modułów do dołączania plików w rozwiązaniu](../sharepoint/using-modules-to-include-files-in-the-solution.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
