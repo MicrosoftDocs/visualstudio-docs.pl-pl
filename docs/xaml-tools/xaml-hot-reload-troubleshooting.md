@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 447725fd27ab81b85890d37a8f0df8a35ad5fbee
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328476"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Rozwiązywanie problemów z ponownym ładowaniem przy aktywnym kodzie XAML
@@ -51,7 +51,7 @@ Funkcja ładowania gorącego XAML wymaga, aby zmienna środowiskowa `ENABLE_XAML
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>Sprawdź, czy właściwości programu MSBuild są poprawne
 
-Domyślnie informacje źródłowe są zawarte w konfiguracji debugowania. Jest on kontrolowany przez właściwości programu MSBuild w plikach projektu (na przykład *. csproj). Dla WPF właściwość ma `XamlDebuggingInformation` wartość, która musi być ustawiona na `True` . Dla platformy UWP właściwość jest `DisableXbfLineInfo` , która musi być ustawiona na `False` . Przykład:
+Domyślnie informacje źródłowe są zawarte w konfiguracji debugowania. Jest on kontrolowany przez właściwości programu MSBuild w plikach projektu (na przykład *. csproj). Dla WPF właściwość ma `XamlDebuggingInformation` wartość, która musi być ustawiona na `True` . Dla platformy UWP właściwość jest `DisableXbfLineInfo` , która musi być ustawiona na `False` . Na przykład:
 
 KODOW
 

@@ -15,10 +15,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4efaaa78ce593d8b97d1df454a9c30c2e62d9f8
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918736"
 ---
 # <a name="signing-vsix-packages"></a>Podpisywanie pakietów VSIX
@@ -38,15 +38,15 @@ Zestawy rozszerzeń nie muszą być podpisane, zanim będą mogły działać w p
   
 1. Dodaj swój VSIX do projektu.  
   
-2. Kliknij prawym przyciskiem myszy węzeł projektu w Eksplorator rozwiązań, wybierając pozycję **Dodaj &#124; Zarządzaj pakietami NuGet**.  Aby uzyskać więcej informacji o pakiecie NuGet i dodawaniu pakietów NuGet, zobacz [Omówienie narzędzia NuGet](/nuget/) i [Zarządzanie pakietami NuGet przy użyciu okna dialogowego](/nuget/consume-packages/install-use-packages-visual-studio).  
+2. Kliknij prawym przyciskiem myszy węzeł projektu w Eksplorator rozwiązań, a następnie wybierz pozycję **dodaj &#124; Zarządzaj pakietami NuGet**.  Aby uzyskać więcej informacji o pakiecie NuGet i dodawaniu pakietów NuGet, zobacz [Omówienie narzędzia NuGet](/nuget/) i [Zarządzanie pakietami NuGet przy użyciu okna dialogowego](/nuget/consume-packages/install-use-packages-visual-studio).  
   
 3. Wyszukaj VSIXSignTool z VisualStudioExtensibility i zainstaluj pakiet NuGet.  
   
-4. Teraz można uruchomić VSIXSignTool z lokalizacji lokalnych pakietów projektu. Zapoznaj się z pomocą narzędzia wiersza polecenia dla scenariusza podpisywania (VSIXSignTool. exe/?).  
+4. Teraz można uruchomić VSIXSignTool z lokalizacji lokalnych pakietów projektu. Zapoznaj się z pomocą narzędzia wiersza polecenia dla scenariusza podpisywania (VSIXSignTool.exe/?).  
   
    Na przykład, aby podpisać przy użyciu pliku certyfikatu chronionego hasłem:  
   
-   VSIXSignTool. exe Podpisz/f \<CERTFILE >/p \<hasło > \<VSIXfile >  
+   VSIXSignTool.exe podpisywanie/f \<certfile> /p \<password>\<VSIXfile>  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostarczanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

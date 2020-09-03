@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fea425da8a6e49643997151c6273fbbffc7033db
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016509"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Przewodnik: Tworzenie elementu projektu kolumny witryny z szablonem projektu, część 1
@@ -80,7 +81,7 @@ ms.locfileid: "86016509"
 
 6. W polu **Nazwa** wprowadź **SiteColumnProjectItem**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **SiteColumnProjectItem** do **Eksplorator rozwiązań**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **SiteColumnProjectItem** do **Eksplorator rozwiązań**.
 
 #### <a name="to-create-the-project-template-project"></a>Aby utworzyć projekt szablonu projektu
 
@@ -94,7 +95,7 @@ ms.locfileid: "86016509"
 
 5. W polu **Nazwa** wprowadź **SiteColumnProjectTemplate**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **SiteColumnProjectTemplate** do rozwiązania.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **SiteColumnProjectTemplate** do rozwiązania.
 
 6. Usuń plik kodu Class1 z projektu.
 
@@ -122,7 +123,7 @@ ms.locfileid: "86016509"
 
 4. W polu **Nazwa** wprowadź **ProjectItemTypeDefinition** , a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **ProjectItemTypeDefinition** do rozwiązania i otwiera domyślny plik kodu Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **ProjectItemTypeDefinition** do rozwiązania i otwiera domyślny plik kodu Class1.
 
 5. Usuń plik kodu Class1 z projektu.
 
@@ -751,7 +752,7 @@ ms.locfileid: "86016509"
 ## <a name="next-steps"></a>Następne kroki
  Po zakończeniu tego instruktażu można dodać kreatora do szablonu projektu. Gdy użytkownik tworzy projekt kolumny witryny, w kreatorze zostanie wyświetlony monit o podanie adresu URL witryny na potrzeby debugowania oraz tego, czy nowe rozwiązanie jest w trybie piaskownicy, a Kreator konfiguruje nowy projekt przy użyciu tych informacji. Kreator zbiera również informacje o kolumnie (takie jak typ podstawowy i Grupa, w której ma zostać wystawiona kolumna w galerii kolumn witryny) i dodaje te informacje do pliku *Elements.xml* w nowym projekcie. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie elementu projektu kolumny witryny z szablonem projektu, część 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przewodnik: Tworzenie elementu projektu kolumny witryny z szablonem projektu, część 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)
 - [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)

@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a495a566f78ceb2b89f8e2070837f038da352a4d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918881"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definiowanie profilu w celu rozszerzenia kodu UML
@@ -41,25 +41,25 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
 > [!NOTE]
 > Jeśli zastosujesz Stereotypy profilu w edytowanym modelu, a następnie udostępnisz go innym osobom, należy zainstalować ten sam profil na swoich komputerach. W przeciwnym razie nie będzie można zobaczyć stereotypów, które zostały użyte.
 
- Profil jest często częścią większego [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozszerzenia. Można na przykład zdefiniować polecenie, które tłumaczy niektóre części modelu na kod. Można zdefiniować profil, który użytkownicy muszą stosować do pakietów, które chcą przetłumaczyć. Nowe polecenie można dystrybuować wraz z profilem w jednym [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozszerzeniu.
+ Profil jest często częścią większego [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozszerzenia. Można na przykład zdefiniować polecenie, które tłumaczy niektóre części modelu na kod. Można zdefiniować profil, który użytkownicy muszą stosować do pakietów, które chcą przetłumaczyć. Nowe polecenie jest dystrybuowane wraz z profilem w jednym [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozszerzeniu.
 
  Można również zdefiniować zlokalizowane warianty profilu. Użytkownicy ładujący Twoje rozszerzenie widzą wariant, który jest odpowiedni dla własnej kultury.
 
-## <a name="DefineProfile"></a>Jak zdefiniować profil
+## <a name="how-to-define-a-profile"></a><a name="DefineProfile"></a> Jak zdefiniować profil
 
 #### <a name="to-define-a-uml-profile"></a>Aby zdefiniować profil UML
 
-1. Utwórz nowy plik XML z rozszerzeniem nazwy pliku `.profile`.
+1. Utwórz nowy plik XML z rozszerzeniem nazwy pliku `.profile` .
 
 2. Dodaj definicje stereotypu zgodnie z wytycznymi opisanymi w [strukturze profilu](#Schema).
 
-3. Dodaj profil do rozszerzenia programu Visual Studio (plik`.vsix`). Można utworzyć nowe rozszerzenie dla profilu lub dodać profil do istniejącego rozszerzenia.
+3. Dodaj profil do rozszerzenia programu Visual Studio ( `.vsix` pliku). Można utworzyć nowe rozszerzenie dla profilu lub dodać profil do istniejącego rozszerzenia.
 
      Zobacz następną sekcję, [jak dodać profil do rozszerzenia programu Visual Studio](#AddProfile).
 
 4. Zainstaluj rozszerzenie na komputerze.
 
-    1. Kliknij dwukrotnie plik rozszerzenia, który ma rozszerzenie nazwy pliku `.vsix`.
+    1. Kliknij dwukrotnie plik rozszerzenia, który ma rozszerzenie nazwy pliku `.vsix` .
 
     2. Uruchom ponownie program Visual Studio.
 
@@ -73,9 +73,9 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
 
     4. Jeśli Twój profil definiuje dodatkowe właściwości dla tego stereotypu, rozwiń Właściwość Stereotype, aby je zobaczyć.
 
-6. Wyślij plik rozszerzenia do innych użytkowników programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], aby zainstalować je na swoich komputerach.
+6. Wyślij plik rozszerzenia do innych użytkowników programu, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Aby zainstalować program na swoich komputerach.
 
-## <a name="AddProfile"></a>Jak dodać profil do rozszerzenia programu Visual Studio
+## <a name="how-to-add-a-profile-to-a-visual-studio-extension"></a><a name="AddProfile"></a> Jak dodać profil do rozszerzenia programu Visual Studio
  Aby zainstalować profil i umożliwić wysyłanie go do innych użytkowników, należy dodać profil do rozszerzenia programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń programu Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>Aby zdefiniować profil w nowym rozszerzeniu programu Visual Studio
@@ -83,11 +83,11 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
 1. Utwórz projekt rozszerzenia programu Visual Studio.
 
    > [!NOTE]
-   > Aby można było użyć tej procedury, należy zainstalować [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].
+   > Musisz mieć zainstalowany program [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] , aby użyć tej procedury.
 
    1. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
 
-   2. W oknie dialogowym **Nowy projekt** w obszarze **zainstalowane szablony**rozwiń węzeł **Wizualizacja C#** , kliknij pozycję **rozszerzalność**, a następnie kliknij pozycję **Projekt VSIX**. Ustaw nazwę projektu i kliknij przycisk **OK**.
+   2. W oknie dialogowym **Nowy projekt** w obszarze **zainstalowane szablony**rozwiń węzeł **Visual C#**, kliknij pozycję **rozszerzalność**, a następnie kliknij pozycję **Projekt VSIX**. Ustaw nazwę projektu i kliknij przycisk **OK**.
 
 2. Dodaj swój profil do projektu.
 
@@ -99,13 +99,13 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
 
    2. W okno Właściwości ustaw wartość właściwości **Kopiuj do katalogu wyjściowego** na **zawsze Kopiuj**.
 
-4. W Eksplorator rozwiązań otwórz `source.extension.vsixmanifest`.
+4. W Eksplorator rozwiązań otwórz program `source.extension.vsixmanifest` .
 
     Plik zostanie otwarty w edytorze manifestu rozszerzenia.
 
 5. Na stronie **zasoby** Dodaj wiersz opisujący profil:
 
-   - Kliknij przycisk **Nowy**. Ustaw pola w oknie dialogowym **Dodaj nowe zasoby** w następujący sposób.
+   - Kliknij pozycję **Nowy**. Ustaw pola w oknie dialogowym **Dodaj nowe zasoby** w następujący sposób.
 
    - Ustaw **Typ** na `Microsoft.VisualStudio.UmlProfile`
 
@@ -121,27 +121,27 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
 
 8. **Aby wyodrębnić VSIX dla wdrożenia**
 
-   1. W Eksploratorze Windows otwórz folder **.\bin\debug** lub **.\bin\Release** , aby znaleźć plik **. vsix** . To jest plik rozszerzenia [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Można go zainstalować na komputerze i wysłać do innych użytkowników programu Visual Studio.
+   1. W Eksploratorze Windows otwórz folder **.\bin\debug** lub **.\bin\Release** , aby znaleźć plik **. vsix** . Jest to [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] plik rozszerzenia. Można go zainstalować na komputerze i wysłać do innych użytkowników programu Visual Studio.
 
    2. Aby zainstalować rozszerzenie:
 
-       1. Kliknij dwukrotnie plik `.vsix`. Zostanie uruchomiony Instalator rozszerzenia programu Visual Studio.
+       1. Kliknij dwukrotnie `.vsix` plik. Zostanie uruchomiony Instalator rozszerzenia programu Visual Studio.
 
        2. Uruchom ponownie wszystkie wystąpienia programu Visual Studio, które są uruchomione.
 
-   Poniższej alternatywnej procedury można użyć w przypadku małych rozszerzeń, jeśli nie zainstalowano [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].
+   Poniższa procedura alternatywna może być używana w przypadku małych rozszerzeń, jeśli nie została zainstalowana [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] .
 
 #### <a name="to-define-a-profile-extension-without-using-visual-studio-sdk"></a>Aby zdefiniować rozszerzenie profilu bez użycia zestawu Visual Studio SDK
 
 1. Utwórz katalog systemu Windows, który zawiera następujące trzy pliki:
 
-    - *YourProfile* `.profile`
+    - *YourProfile*`.profile`
 
     - `extension.vsixmanifest`
 
-    - `[Content_Types].xml` — wpisz tę nazwę, jak pokazano tutaj, z nawiasami kwadratowymi
+    - `[Content_Types].xml` -wpisz tę nazwę, jak pokazano tutaj, z nawiasami kwadratowymi
 
-2. Edytuj `[Content_Types].xml`, aby zawierać poniższy tekst. Należy zauważyć, że zawiera wpis dla każdego rozszerzenia nazwy pliku.
+2. Edytuj, `[Content_Types].xml` aby zawierać następujący tekst. Należy zauważyć, że zawiera wpis dla każdego rozszerzenia nazwy pliku.
 
     ```
     <?xml version="1.0" encoding="utf-8"?>
@@ -153,7 +153,7 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
 
 3. Skopiuj istniejący `extension.vsixmanifest` i edytuj go za pomocą edytora XML. Zmień identyfikator, nazwę i węzły zawartości.
 
-    - Przykład `extension.vsixmanifest` można znaleźć w tym katalogu:
+    - Przykład można znaleźć `extension.vsixmanifest` w tym katalogu:
 
          *dysk* **: \Program Files\Microsoft Visual Studio [wersja] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles**
 
@@ -168,21 +168,21 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
 
 4. Kompresuj trzy pliki do pliku spakowanego.
 
-     W Eksploratorze Windows zaznacz trzy pliki, kliknij prawym przyciskiem myszy, wskaż polecenie **Wyślij do**, a następnie kliknij **folder skompresowany (zip)** .
+     W Eksploratorze Windows zaznacz trzy pliki, kliknij prawym przyciskiem myszy, wskaż polecenie **Wyślij do**, a następnie kliknij **folder skompresowany (zip)**.
 
-5. Zmień nazwę pliku spakowanego i zmień jego rozszerzenie nazwy pliku z `.zip` na `.vsix`.
+5. Zmień nazwę pliku spakowanego i Zmień rozszerzenie nazwy pliku z `.zip` na `.vsix` .
 
-6. Aby zainstalować profil na dowolnym komputerze z odpowiednimi wersjami programu Visual Studio, kliknij dwukrotnie plik `.vsix`.
+6. Aby zainstalować profil na dowolnym komputerze z odpowiednimi wersjami programu Visual Studio, kliknij dwukrotnie `.vsix` plik.
 
 #### <a name="to-install-a-uml-profile-from-a-visual-studio-extension"></a>Aby zainstalować profil UML z rozszerzenia programu Visual Studio
 
-1. Kliknij dwukrotnie plik `.vsix` w Eksploratorze Windows lub Otwórz go w programie Visual Studio.
+1. Kliknij dwukrotnie `.vsix` plik w Eksploratorze Windows lub Otwórz go w programie Visual Studio.
 
 2. Kliknij przycisk **Instaluj** w wyświetlonym oknie dialogowym.
 
 3. Aby odinstalować lub tymczasowo wyłączyć rozszerzenie, Otwórz **rozszerzenia i aktualizacje** z menu **Narzędzia** .
 
-## <a name="Localized"></a>Jak zdefiniować zlokalizowane profile
+## <a name="how-to-define-localized-profiles"></a><a name="Localized"></a> Jak zdefiniować zlokalizowane profile
  Można zdefiniować różne profile dla różnych kultur lub języków i umieścić je wszystkie w tym samym rozszerzeniu. Gdy użytkownik ładuje Twoje rozszerzenie, zobaczy profil zdefiniowany dla swojej kultury.
 
  Zawsze musisz podać profil domyślny. Jeśli nie zdefiniowano profilu dla kultury użytkownika, zobaczysz domyślny profil.
@@ -196,11 +196,11 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
     > [!NOTE]
     > Jeśli tworzysz rozszerzenie przy użyciu projektu rozszerzenia programu Visual Studio, użyj Eksplorator rozwiązań, aby dodać nowy folder do projektu.
 
-3. Zmień nazwę nowego katalogu na krótki kod ISO dla zlokalizowanej kultury, np. `bg` dla Bułgarii lub `fr` dla języka francuskiego. Należy używać neutralnego kodu kulturowego, zwykle dwóch liter, a nie określonej kultury, takiej jak `fr-CA`. Aby uzyskać więcej informacji na temat kodów kultur, zobacz [Metoda CultureInfo. GetCultures](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx), która zawiera kompletną listę kodów kultur.
+3. Zmień nazwę nowego katalogu na krótki kod ISO dla zlokalizowanej kultury, na przykład `bg` dla bułgarskiego, lub `fr` dla języka francuskiego. Należy używać neutralnego kodu kulturowego, zwykle dwóch liter, a nie określonej kultury, takiej jak `fr-CA` . Aby uzyskać więcej informacji na temat kodów kultur, zobacz [Metoda CultureInfo. GetCultures](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx), która zawiera kompletną listę kodów kultur.
 
 4. Dodaj kopię domyślnego profilu do nowego katalogu. Nie zmieniaj nazwy pliku.
 
-     Przykładowy folder rozszerzenia [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], zanim zostanie skompilowany lub skompresowany do pliku `.vsix`, będzie zawierać następujące foldery i pliki:
+     Przykładowy [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] folder rozszerzenia, zanim zostanie skompilowany lub skompresowany do `.vsix` pliku, będzie zawierać następujące foldery i pliki:
 
      `extension.vsixmanifest`
 
@@ -213,19 +213,19 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
     > [!NOTE]
     > Nie należy wstawiać do `extension.vsixmanifest` odwołań do zlokalizowanych wersji profilów. Skopiowane pliki profilów muszą mieć taką samą nazwę jak profil w folderze nadrzędnym.
 
-5. Edytuj nową kopię profilu, dokonując translacji do języka docelowego, wszystkie części, które będą widoczne dla użytkownika, takie jak atrybuty `displayName`.
+5. Edytuj nową kopię profilu, dokonując translacji do języka docelowego, wszystkie części, które będą widoczne dla użytkownika, takie jak `displayName` atrybuty.
 
 6. Można utworzyć dodatkowe foldery kultury i zlokalizowane profile dla dowolnej liczby kultur.
 
 7. Kompiluj rozszerzenie programu Visual Studio, tworząc projekt rozszerzenia lub kompresując wszystkie pliki, zgodnie z opisem w poprzednich sekcjach.
 
-## <a name="Schema"></a>Struktura profilu
+## <a name="the-structure-of-a-profile"></a><a name="Schema"></a> Struktura profilu
 
- Aby ułatwić edytowanie plików profilów, Zainstaluj plik `.xsd` w programie:
+ Aby ułatwić edytowanie plików profilów, zainstaluj `.xsd` plik w:
 
  **%ProgramFiles%\Microsoft Visual Studio [wersja] \Xml\Schemas**
 
- Ta sekcja używa C# profilu jako przykładu. Pełną definicję profilu można zobaczyć w:
+ Ta sekcja używa profilu języka C# jako przykładu. Pełną definicję profilu można zobaczyć w:
 
  *dysk* **: \Program Files\Microsoft Visual Studio [wersja] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\CSharp.profile**
 
@@ -248,18 +248,18 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
 ```
 
 > [!NOTE]
-> Atrybut o nazwie `name` nie może zawierać spacji ani znaków interpunkcyjnych. Atrybut `displayName`, który pojawia się w interfejsie użytkownika, powinien być prawidłowym ciągiem XML.
+> Atrybut o nazwie `name` nie może zawierać spacji ani znaków interpunkcyjnych. Atrybut `displayName` , który pojawia się w interfejsie użytkownika, powinien być prawidłowym CIĄGIEM XML.
 
  Każdy profil zawiera trzy główne sekcje. W odwrotnej kolejności są one następujące:
 
-- `<propertyTypes>` — lista typów, które są używane dla właściwości zdefiniowanych w sekcji stereotypów.
+- `<propertyTypes>` -Lista typów, które są używane dla właściwości zdefiniowanych w sekcji stereotypów.
 
-- `<metaclasses>` — lista typów elementów modelu, do których stosuje się stereotypy w tym profilu, takich jak IClass, IInterface, IOperation, IDependency.
+- `<metaclasses>` -Lista typów elementów modelu, do których stosuje się stereotypy w tym profilu, takie jak IClass, IInterface, IOperation, IDependency.
 
-- `<stereotypes>` — definicje stereotypu. Każda definicja zawiera nazwy i typy właściwości, które są dodawane do docelowego elementu modelu.
+- `<stereotypes>` -definicje stereotypu. Każda definicja zawiera nazwy i typy właściwości, które są dodawane do docelowego elementu modelu.
 
 #### <a name="property-types"></a>Typy właściwości
- Sekcja `<propertyTypes>` deklaruje listę typów, które są używane dla właściwości w sekcji `<stereotypes>`. Istnieją dwa rodzaje typów właściwości: zewnętrzne i Wyliczenie.
+ `<propertyTypes>`Sekcja deklaruje listę typów, które są używane dla właściwości w `<stereotypes>` sekcji. Istnieją dwa rodzaje typów właściwości: zewnętrzne i Wyliczenie.
 
  Typ zewnętrzny deklaruje w pełni kwalifikowaną nazwę standardowego typu .NET:
 
@@ -279,7 +279,7 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
 ```
 
 #### <a name="metaclasses"></a>Metaklasy
- Sekcja `<metaclasses>` jest listą typów elementów modelu, do których można zdefiniować stereotypy w tym profilu:
+ `<metaclasses>`Sekcja jest listą typów elementów modelu, do których można zdefiniować stereotypy w tym profilu:
 
 ```
 <metaclass
@@ -293,13 +293,13 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
  Aby zapoznać się z pełną listą elementów modelu i typów relacji, których można użyć jako klas podklas, zobacz [typy elementów modelu](#Elements).
 
 #### <a name="stereotype-definition"></a>Definicja stereotypu
- Sekcja `<stereotypes>` zawiera jedną lub więcej definicji stereotypu:
+ `<stereotypes>`Sekcja zawiera jedną lub więcej definicji stereotypu:
 
 ```
 <stereotype name="CSharpClass" displayName="C# Class"> ...
 ```
 
- Każdy stereotyp zawiera jeden lub więcej elementów modelu lub typów relacji, do których można zastosować. Możesz podać nazwę typu podstawowego, aby uwzględnić wszystkie jego typy pochodne. Na przykład, jeśli określisz `Microsoft.VisualStudio.Uml.Classes.IType`, stereotyp można zastosować do `IClass`, `IInterface`, `IEnumeration`i kilku innych typów elementów.
+ Każdy stereotyp zawiera jeden lub więcej elementów modelu lub typów relacji, do których można zastosować. Możesz podać nazwę typu podstawowego, aby uwzględnić wszystkie jego typy pochodne. Na przykład, jeśli określisz `Microsoft.VisualStudio.Uml.Classes.IType` , stereotyp można zastosować do `IClass` ,, `IInterface` `IEnumeration` i kilku innych typów elementów.
 
 ```
 <metaclasses>
@@ -308,12 +308,12 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
 </metaclasses>
 ```
 
- `name` atrybut `metaclassMoniker` jest link do elementu w sekcji `<metaClasses>`.
+ `name`Atrybut `metaclassMoniker` jest link do elementu w `<metaClasses>` sekcji.
 
 > [!NOTE]
-> Nazwa monikera musi rozpoczynać się od `/yourProfileName/`, gdzie `yourProfileName` jest zdefiniowana w atrybucie `name` profilu ("CSharpProfile" w tym przykładzie). Moniker zostaje zakończony nazwą jednego z wpisów w sekcji podklas.
+> Nazwa monikera musi zaczynać się od `/yourProfileName/` , gdzie `yourProfileName` jest zdefiniowany w `name` atrybucie profilu ("CSharpProfile" w tym przykładzie). Moniker zostaje zakończony nazwą jednego z wpisów w sekcji podklas.
 
- Każdy stereotyp może wyświetlić zero lub więcej właściwości, które dodaje do dowolnego elementu modelu, do którego jest stosowana. `<propertyType>` zawiera link do jednego z typów, które są zdefiniowane w sekcji `<propertyTypes>`. Link musi być `<externalTypeMoniker>`, aby odwołać się do `<externalType>,` lub `<enumerationTypeMoniker>`, aby odwołać się do `<enumerationType>`. Ponownie łącze zaczyna się od nazwy profilu.
+ Każdy stereotyp może wyświetlić zero lub więcej właściwości, które dodaje do dowolnego elementu modelu, do którego jest stosowana. `<propertyType>`Zawiera link do jednego z typów, które są zdefiniowane w `<propertyTypes>` sekcji. Aby można było odwołać się do obiektu, musi to być element `<externalTypeMoniker>` `<externalType>,` lub `<enumerationTypeMoniker>` `<enumerationType>` . Ponownie łącze zaczyna się od nazwy profilu.
 
 ```
   <properties>
@@ -336,7 +336,7 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
 </stereotype>
 ```
 
-## <a name="Elements"></a>Typy elementów modelu
+## <a name="model-element-types"></a><a name="Elements"></a> Typy elementów modelu
  Zestaw typów, dla których można zdefiniować stereotypy, znajduje się na liście [typów elementów modelu UML](../modeling/uml-model-element-types.md).
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
@@ -348,22 +348,22 @@ Musisz wybrać swój profil w pakiecie lub modelu. Stereotypy będą wyświetlan
 
 2. Upewnij się, że każda nazwa Moniker ma postać/profileName/nodeName. ProfileName jest wartością atrybutu nazwy w węźle profil główny. Nodename jest wartością atrybutu Name klasy meta, ExternalType lub EnumerationType.
 
-3. Upewnij się, że składnia jest opisana tutaj, i jak pokazano na _dysku_ **: \Program Files\Microsoft Visual Studio [wersja] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .
+3. Upewnij się, że składnia jest opisana tutaj, i jak pokazano na _dysku_**: \Program Files\Microsoft Visual Studio [wersja] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles \\ **.
 
-4. Odinstaluj błędne rozszerzenie. Na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
+4. Odinstaluj błędne rozszerzenie. W menu **Narzędzia** kliknij pozycję **Rozszerzenia i aktualizacje**.
 
    - Jeśli rozszerzenie nie pojawia się, zobacz następny element.
 
-5. Ponownie skompiluj plik VSIX i otwórz go w Eksploratorze Windows, aby go zainstalować ponownie. Uruchom ponownie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+5. Ponownie skompiluj plik VSIX i otwórz go w Eksploratorze Windows, aby go zainstalować ponownie. Uruchom ponownie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
    Rozszerzenie nie pojawia się w Menedżerze rozszerzeń, ale podczas próby ponownego zainstalowania zostanie wyświetlony następujący komunikat: **rozszerzenie jest już zainstalowane dla wszystkich odpowiednich produktów.**
-   1. Usuń plik rozszerzenia z podfolderu *LocalAppData*\Microsoft\VisualStudio\\[wersja] \Extensions\
+   1. Usuń plik rozszerzenia z podfolderu *LocalAppData*\Microsoft\VisualStudio \\ [wersja] \Extensions\
 
    - Aby wyświetlić *LocalAppData*, należy ustawić opcję Pokaż ukryte pliki i foldery na karcie Widok opcji folderów Eksploratora Windows.
 
-   - *LocalAppData* jest zazwyczaj w C:\Users\\*Nazwa użytkownika*\AppData\Local\
+   - *LocalAppData* zazwyczaj znajduje się na \\ *nazwie użytkownika*C:\Users \AppData\Local\
 
-6. Uruchom ponownie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+6. Uruchom ponownie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 ## <a name="see-also"></a>Zobacz też
  [Dodaj stereotypy do elementów modelu UML](../modeling/add-stereotypes-to-uml-model-elements.md) [Dostosowywanie modelu za pomocą profilów i stereotypów](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [standardowych stereotypów dla modeli UML](../modeling/standard-stereotypes-for-uml-models.md)

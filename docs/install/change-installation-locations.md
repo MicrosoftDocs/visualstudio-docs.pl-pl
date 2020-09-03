@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 5751ddeca2ba690ec29ff905ec7e8330a7199eab
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419123"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Wybierz lokalizacje instalacji w programie Visual Studio
@@ -40,7 +40,7 @@ Możesz zmniejszyć zasięg instalacji programu Visual Studio na dysku systemowy
    > [!NOTE]
    > Istnieją pewne narzędzia i zestawy SDK, które mają różne reguły, w których można je zainstalować. Takie narzędzia i zestawy SDK są instalowane na dysku systemowym nawet w przypadku wybrania innej lokalizacji.
 
-Chcesz zacząć? Oto jak to zrobić.
+Możemy zaczynać? Oto jak to zrobić.
 
 ::: moniker range="vs-2017"
 

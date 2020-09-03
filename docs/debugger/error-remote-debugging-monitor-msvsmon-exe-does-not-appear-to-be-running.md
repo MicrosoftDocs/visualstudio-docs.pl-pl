@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ba7fb30bcb5ac04a823b4ba654382ac23a966fe
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460614"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Błąd: Monitor debugera zdalnego Microsoft Visual (MSVSMON.EXE) zdaje się nie być uruchomiony na komputerze zdalnym.
@@ -55,7 +55,7 @@ Ten komunikat o błędzie oznacza, że program Visual Studio nie może znaleźć
 
 - Możesz dodać użytkownika do uprawnień zdalnego debugera (w oknie zdalny debuger, **narzędzia > uprawnienia**).
 
-- Jeśli nie można użyć metod w powyższych krokach, można zezwolić każdemu użytkownikowi na zdalne debugowanie. W oknie Debuger zdalny przejdź do okna dialogowego **narzędzia > opcje** . W przypadku wybrania opcji **Brak uwierzytelniania**można zaznaczyć pole wyboru **Zezwalaj każdemu użytkownikowi na Debugowanie**. Należy jednak użyć tej opcji tylko wtedy, gdy nie masz wyboru lub jeśli jesteś w sieci prywatnej.
+- Jeśli nie można użyć metod w powyższych krokach, można zezwolić każdemu użytkownikowi na zdalne debugowanie. W oknie Debuger zdalny przejdź do okna dialogowego **narzędzia > opcje** . W przypadku wybrania opcji   **Brak uwierzytelniania**można zaznaczyć pole wyboru **Zezwalaj każdemu użytkownikowi na Debugowanie**. Należy jednak użyć tej opcji tylko wtedy, gdy nie masz wyboru lub jeśli jesteś w sieci prywatnej.
 
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>Zapora na maszynie zdalnej nie zezwala na połączenia przychodzące ze zdalnym debugerem
  Zapora na komputerze z programem Visual Studio i Zapora na maszynie zdalnej musi być skonfigurowana w taki sposób, aby zezwalała na komunikację między programem Visual Studio i zdalnym debugerem. Informacje o portach, które są używane przez zdalny debuger, można znaleźć w temacie [przypisania portów zdalnego debugera](../debugger/remote-debugger-port-assignments.md). Aby uzyskać informacje o konfigurowaniu zapory systemu Windows, zobacz [Konfigurowanie zapory systemu Windows pod kątem zdalnego debugowania](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
@@ -70,7 +70,7 @@ Ten komunikat o błędzie oznacza, że program Visual Studio nie może znaleźć
  Może być konieczne przeprowadzenie debugowania zdalnego w innym czasie lub ponowne zaplanowanie pracy w sieci przez inny czas.
 
 ## <a name="more-help"></a>Więcej pomocy
- Aby uzyskać więcej pomocy dotyczącej zdalnego debugera, w tym przełączników wiersza polecenia, kliknij przycisk **pomoc > użycie** w oknie Debuger zdalny. Jeśli go nie masz, możesz zobaczyć stronę sieci Web, kopiując Poniższy wiersz do okna **Eksploratora plików** . (Należy zamienić na \<Visual Studio installation directory> lokalizację instalacji programu Visual Studio).
+ Aby uzyskać więcej pomocy dotyczącej zdalnego debugera, w tym przełączników wiersza polecenia, kliknij przycisk **pomoc > użycie** w oknie Debuger zdalny. Jeśli go nie masz, możesz zobaczyć stronę sieci Web, kopiując Poniższy wiersz do okna  **Eksploratora plików** . (Należy zamienić na \<Visual Studio installation directory> lokalizację instalacji programu Visual Studio).
 
  res:// *\<Visual Studio installation directory>* \Common7\IDE\Remote% 20Debugger\x64\msvsmon.exe/help.htm
 

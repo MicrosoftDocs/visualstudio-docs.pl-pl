@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 14a4cb4a604907908b8f2b35ea0baa583ab1ca57
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328309"
 ---
 # <a name="marker_serieswrite_message-method"></a>marker_series:: write_message, Metoda
@@ -48,11 +48,11 @@ void write_message(
 ```
 
 #### <a name="parameters"></a>Parametry
- `_Format`Ciąg formatu złożonego, który zawiera tekst, który jest przemieszany z zerem lub więcej elementów formatu, który odpowiada obiektom na liście argumentów.
+ `_Format` Ciąg formatu złożonego, który zawiera tekst, który jest przemieszany z zerem lub więcej elementów formatu, który odpowiada obiektom na liście argumentów.
 
- `_Importance`Poziom ważności.
+ `_Importance` Poziom ważności.
 
- `_Category`Poziom ważności kategorii.
+ `_Category` Poziom ważności kategorii.
 
 ## <a name="requirements"></a>Wymagania
  **Nagłówek:** *cvmarkersobj. h*

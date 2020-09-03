@@ -14,13 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 63bd8ee614a78752069002820689a2cc6c0be783
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016290"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Instrukcje: Lokalizowanie znacznika ASPX
-  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]strony (. aspx) zazwyczaj używają zakodowanych wartości ciągu. Aby zlokalizować te ciągi, zastąp je wyrażeniami odwołującymi się do zlokalizowanych zasobów.
+  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] strony (. aspx) zazwyczaj używają zakodowanych wartości ciągu. Aby zlokalizować te ciągi, zastąp je wyrażeniami odwołującymi się do zlokalizowanych zasobów.
 
 ## <a name="localize-aspx-markup"></a>Lokalizowanie znacznika ASPX
 
@@ -59,7 +60,7 @@ ms.locfileid: "86016290"
     </asp:Content>
     ```
 
-     na
+     na wartość
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -73,7 +74,7 @@ ms.locfileid: "86016290"
 
      Zlokalizowane ciągi pojawiają się w aplikacji. Aby wyświetlić zlokalizowane zasoby, na serwerze programu SharePoint musi być zainstalowany pakiet językowy zgodny z kulturą pliku zasobów.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Lokalizowanie rozwiązań SharePoint](../sharepoint/localizing-sharepoint-solutions.md)
 - [Instrukcje: Lokalizowanie funkcji](../sharepoint/how-to-localize-a-feature.md)
 - [Instrukcje: Dodawanie pliku zasobów](../sharepoint/how-to-add-a-resource-file.md)

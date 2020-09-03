@@ -1,5 +1,5 @@
 ---
-title: Wyliczenia języka C++ w projektancie klas
+title: Wyliczenia C++ w Projektant klas
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ee56850c05e4b06ea4325ec238e56e99b38978d0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114195"
 ---
-# <a name="c-enumerations-in-class-designer"></a>Wyliczenia języka C++ w projektancie klas
+# <a name="c-enumerations-in-class-designer"></a>Wyliczenia C++ w Projektant klas
 
-**Projektant klas** obsługuje `enum` typy `enum class` języka C++ i o określonym zakresie. Oto przykład:
+**Projektant klas** obsługuje C++ `enum` i typy z zakresem `enum class` . Oto przykład:
 
 ```cpp
 enum CardSuit {
@@ -38,9 +38,9 @@ enum class CardSuit {
 };
 ```
 
-Kształt wyliczenia języka C++ na diagramie klasy wygląda i działa jak kształt struktury, z tą różnicą, że etykieta odczytuje klasę **Wyliczenia** lub **Wyliczenia**, jest różowa zamiast niebieska i ma kolorowe obramowanie po lewej i górnych marginesach. Zarówno kształty wyliczenia, jak i kształty konstrukcji mają kwadratowe narożniki.
+Kształt wyliczenia języka C++ na diagramie klas wygląda i działa jak kształt struktury, z tą różnicą, że etykieta odczytuje klasę **enum** lub **enum**, jest kolorem różowym zamiast niebieskim i ma kolorowe obramowanie na lewym i górnym marginesie. Zarówno kształty wyliczenia, jak i kształty struktury mają narożniki kwadratowe.
 
-Aby uzyskać więcej `enum` informacji na temat używania tego typu, zobacz [Wyliczenia](/cpp/cpp/enumerations-cpp).
+Aby uzyskać więcej informacji na temat korzystania z `enum` typu, zobacz [wyliczenia](/cpp/cpp/enumerations-cpp).
 
 ## <a name="see-also"></a>Zobacz też
 

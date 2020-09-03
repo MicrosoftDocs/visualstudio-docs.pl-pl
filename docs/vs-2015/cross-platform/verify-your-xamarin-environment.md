@@ -7,10 +7,10 @@ caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 98925402b91bea62e10b47312e7834ed92a1a178
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918753"
 ---
 # <a name="verify-your-xamarin-environment"></a>Sprawdzanie środowiska Xamarin
@@ -27,9 +27,9 @@ Po zakończeniu instalacji (zobacz [Instalacja i instalacja](../cross-platform/s
 ## <a name="all-platforms"></a>Wszystkie platformy  
  Najpierw wybierz pozycję **narzędzia > opcje**, rozwiń węzeł **Xamarin > inne**, a następnie kliknij link **Sprawdź teraz, czy** są dostępne aktualizacje. Musisz używać platformy Xamarin 4.0.3.214 lub nowszej, aby uniknąć wcześniejszych problemów z licencjonowaniem.  
   
- Następnie utwórz nowe rozwiązanie Xamarin w programie Visual Studio przy użyciu **pliku > nowy projekt**, a następnie w oknie dialogowym rozwiń **szablon > inne języki C# > Visual > na wielu platformach**, wybierz pozycję **pusta aplikacja (natywna przenośna)** , a następnie kliknij przycisk OK. Dzięki temu można utworzyć rozwiązanie ze współdzielonym projektem biblioteki klas przenośnych i indywidualnymi projektami dla systemów Android, iOS i Windows:  
+ Następnie utwórz nowe rozwiązanie Xamarin w programie Visual Studio przy użyciu **pliku > nowy projekt**, a następnie w oknie dialogowym rozwiń **szablon > inne języki > Visual C# > Międzyplatformowy**, wybierz pozycję **pusta aplikacja (natywna przenośna)**, a następnie kliknij przycisk OK. Dzięki temu można utworzyć rozwiązanie ze współdzielonym projektem biblioteki klas przenośnych i indywidualnymi projektami dla systemów Android, iOS i Windows:  
   
- ![Wyniki tworzenia nowego projektu na podstawie pustego szablonu przenośnego &#40;&#41; natywnej aplikacji](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin — Weryfikuj 1")  
+ ![Wyniki tworzenia nowego projektu na podstawie pustej aplikacji &#40;natywnego szablonu&#41; przenośnego](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin — Weryfikuj 1")  
   
 > [!NOTE]
 > Jeśli nie ma tam szablonów, zobacz [czy brakuje szablonów projektu Xamarin? Wypróbuj tę](#missing) stronę w dolnej części tej strony.  
@@ -50,7 +50,7 @@ Po zakończeniu instalacji (zobacz [Instalacja i instalacja](../cross-platform/s
   
     - Wybierz odpowiedni emulator w oparciu o docelową wersję systemu Android. Jeśli masz dołączone do komputera urządzenie deweloperskie z systemem Android, zobaczysz je również w tym miejscu obok emulatorów:  
   
-        - Windows 8 +: Wybierz element docelowy **emulatora vs** na liście rozwijanej Debuguj programu Visual Studio, jak pokazano poniżej, i uruchom debuger, naciskając klawisz **F5**. Aby uzyskać więcej informacji, zobacz [wprowadzenie do emulatora programu Visual Studio dla systemu Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (blog programu Visual Studio ALM). Jeśli wystąpią problemy z rozpoczęciem działania emulatora, zobacz [Rozwiązywanie problemów z programem Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Możesz również utworzyć nowe profile urządzeń dla emulatora, wybierając pozycję **narzędzia > Emulator programu Visual Studio dla systemu Android...** .  
+        - Windows 8 +: Wybierz element docelowy **emulatora vs** na liście rozwijanej Debuguj programu Visual Studio, jak pokazano poniżej, i uruchom debuger, naciskając klawisz **F5**. Aby uzyskać więcej informacji, zobacz [wprowadzenie do emulatora programu Visual Studio dla systemu Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (blog programu Visual Studio ALM). Jeśli wystąpią problemy z rozpoczęciem działania emulatora, zobacz [Rozwiązywanie problemów z programem Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Możesz również utworzyć nowe profile urządzeń dla emulatora, wybierając pozycję **narzędzia > Emulator programu Visual Studio dla systemu Android...**.  
   
              ![Wybieranie emulatora programu Visual Studio dla systemu Android jako elementu docelowego debugowania](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin — Sprawdź 3")  
   
@@ -90,7 +90,7 @@ Po zakończeniu instalacji (zobacz [Instalacja i instalacja](../cross-platform/s
   
          ![Wybieranie elementu docelowego kompilacji iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin — Weryfikowanie 5")  
   
-    3. Wybierz element docelowy telefonu iPhone z listy rozwijanej Debuguj programu Visual Studio, jak pokazano poniżej, i uruchom debuger, naciskając klawisz F5. Spowoduje to uruchomienie symulatora na komputerze Mac, na którym będziesz korzystać z aplikacji, podczas gdy debugowanie odbywa się w programie Visual Studio. Jeśli masz fizyczny iPhone lub tablet iPad podłączony do komputera Mac, pojawi się on tutaj i możesz go wybrać zamiast tego. Jeśli nie widzisz żadnych urządzeń lub symulatorów, sprawdź połączenie z komputerem Mac, przeglądając temat połączony w kroku 1 powyżej lub przechodząc do **narzędzi** >**iOS** >**Xamarin Mac Agent**  
+    3. Wybierz element docelowy telefonu iPhone z listy rozwijanej Debuguj programu Visual Studio, jak pokazano poniżej, i uruchom debuger, naciskając klawisz F5. Spowoduje to uruchomienie symulatora na komputerze Mac, na którym będziesz korzystać z aplikacji, podczas gdy debugowanie odbywa się w programie Visual Studio. Jeśli masz fizyczny iPhone lub tablet iPad podłączony do komputera Mac, pojawi się on tutaj i możesz go wybrać zamiast tego. Jeśli nie widzisz żadnych urządzeń lub symulatorów, sprawdź połączenie z komputerem Mac, przeglądając temat połączony w kroku 1 powyżej lub przechodząc do **Narzędzia Tools**  > **iOS**  > **Xamarin Mac Agent**  
   
          ![Wybieranie elementu docelowego debugowania telefonu iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin — Weryfikuj 6")  
   
@@ -104,7 +104,7 @@ Po zakończeniu instalacji (zobacz [Instalacja i instalacja](../cross-platform/s
   
         - Sprawdź, czy we właściwościach projektu systemu iOS na karcie podpisywanie pakietu systemu iOS pole niestandardowe uprawnienie jest puste dla aktywnej konfiguracji debugowania.  Uwaga: należy wypróbować tylko usunięcie tego ustawienia, Jeśli napotkasz powyższy komunikat o błędzie.  
   
-## <a name="missing"></a>Czy brakuje szablonów projektu Xamarin? Wypróbuj ten  
+## <a name="are-the-xamarin-project-templates-missing-try-this"></a><a name="missing"></a> Czy brakuje szablonów projektu Xamarin? Wypróbuj ten  
  Szablony mogą być niedostępne, Jeśli instalujesz program Xamarin bezpośrednio z witryny Xamarin w sieci Web i masz zainstalowane Visual Studio 2013 i Visual Studio 2015 obok siebie. Można to łatwo naprawić, chociaż: wystarczy włączyć funkcję **Xamarin for Visual Studio 2015** w programie instalacyjnym Xamarin.  
   
 1. W panelu sterowania otwórz aplet **programy i funkcje**, wybierz element **Xamarin** , a następnie kliknij przycisk **Zmień**.  

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5865059e60907397ae7d69b230676ac63a5c3386
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543120"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Skróty przy użyciu klawiatury i myszy w oknie Diagram klas i Szczegóły klasy (Projektant klas)
@@ -36,7 +36,7 @@ Możesz użyć klawiatury oprócz myszy do wykonywania akcji nawigacyjnych w Pro
 
 - [Używanie klawiatury w Okno szczegółów klasy](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)
 
-## <a name="using-the-mouse-in-class-designer"></a><a name="MouseClassDesigner"></a>Używanie myszy w Projektant klas
+## <a name="using-the-mouse-in-class-designer"></a><a name="MouseClassDesigner"></a> Używanie myszy w Projektant klas
  Następujące akcje myszy są obsługiwane na diagramach klas:
 
 |Kombinacja myszy|Kontekst|Opis|
@@ -49,7 +49,7 @@ Możesz użyć klawiatury oprócz myszy do wykonywania akcji nawigacyjnych w Pro
 |CTRL + kółko myszy|Diagram klas|Zmieniać.|
 |CTRL + SHIFT + kliknięcie|Diagram klas|Zmieniać.|
 
-## <a name="using-the-mouse-in-the-class-details-window"></a><a name="MouseClassDetails"></a>Używanie myszy w Okno szczegółów klasy
+## <a name="using-the-mouse-in-the-class-details-window"></a><a name="MouseClassDetails"></a> Używanie myszy w Okno szczegółów klasy
  Za pomocą myszy można zmienić wygląd okna Szczegóły klasy i wyświetlane dane w następujący sposób:
 
 - Kliknięcie dowolnej edytowalnej komórki umożliwia edytowanie zawartości tej komórki. Zmiany są odzwierciedlone we wszystkich miejscach, w których dane są przechowywane lub wyświetlane, w tym w okno Właściwości i w kodzie źródłowym.
@@ -62,7 +62,7 @@ Możesz użyć klawiatury oprócz myszy do wykonywania akcji nawigacyjnych w Pro
 
 - Okno szczegółów klasy oferuje kilka przycisków do tworzenia nowych elementów członkowskich w bieżącej klasie i nawigowania między przedziałami elementów członkowskich w siatce Okno szczegółów klasy. Aby uzyskać więcej informacji, zobacz przyciski Okno szczegółów klasy.
 
-## <a name="using-the-keyboard-in-class-designer"></a><a name="KeyboardClassDesigner"></a>Używanie klawiatury w Projektant klas
+## <a name="using-the-keyboard-in-class-designer"></a><a name="KeyboardClassDesigner"></a> Używanie klawiatury w Projektant klas
  Następujące akcje klawiatury są obsługiwane na diagramach klas:
 
 |Klucz|Kontekst|Opis|
@@ -89,7 +89,7 @@ Możesz użyć klawiatury oprócz myszy do wykonywania akcji nawigacyjnych w Pro
 |SHIFT+TAB|Wszystkie konteksty|Przechodzi do poprzedniego elementu podrzędnego w obrębie tego samego elementu nadrzędnego (obsługuje Zawijanie).|
 |ODSTĘP|Wszystkie konteksty|Przełącza zaznaczenie bieżącego elementu.|
 
-## <a name="using-the-keyboard-in-the-class-details-window"></a><a name="KeyboardClassDetails"></a>Używanie klawiatury w Okno szczegółów klasy
+## <a name="using-the-keyboard-in-the-class-details-window"></a><a name="KeyboardClassDetails"></a> Używanie klawiatury w Okno szczegółów klasy
 
 > [!NOTE]
 > Następujące kluczowe powiązania zostały wybrane do naśladowania środowiska wpisywania kodu.

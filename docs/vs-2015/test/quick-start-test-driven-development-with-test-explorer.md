@@ -9,10 +9,10 @@ caps.latest.revision: 17
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: eae08427e9ec61c34a98f3581355909317b69559
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672260"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Szybki start: programowanie sterowane testami za pomocą narzędzia Eksplorator testów
@@ -39,13 +39,13 @@ Zalecamy utworzenie testów jednostkowych w celu zapewnienia poprawnego działan
 
    1. Utwórz projekt testowy.
 
-        W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual Basic**, **Wizualizacja C#** lub **Wizualizacja C++** , a następnie wybierz pozycję **Testuj**.
+        W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual Basic**, **Visual C#** lub **Visual C++**, a następnie wybierz pozycję **Testuj**.
 
         Wybierz **projekt testu jednostkowego**.
 
    2. Napisz każdy test jednostkowy jako metodę. Opatrz każdą metodę testową prefiksem `[TestMethod]` atrybutu.
 
-2. Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą przycisku przełączania ![&#95;wykonaj parallelicon&#45;mały](../test/media/ute-parallelicon-small.png "UTE_parallelicon — mały") przełącznik na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
+2. Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, Włącz równoległe wykonywanie testów przy użyciu przycisku ![wykonaj&#95;parallelicon&#45;mały](../test/media/ute-parallelicon-small.png "UTE_parallelicon — mały") przełącznik na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
 
 3. Na pasku menu wybierz **test**, **Uruchom testy jednostkowe**, **wszystkie testy**.
 
@@ -67,16 +67,16 @@ Zalecamy utworzenie testów jednostkowych w celu zapewnienia poprawnego działan
 > [!NOTE]
 > Jeśli żaden test nie zostanie wyświetlony, upewnij się, że zainstalowano adapter do łączenia Eksploratora testów z używanym środowiskiem testowym. Aby uzyskać więcej informacji, zobacz [Korzystanie z innego środowiska testowego](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).
 
-## <a name="walkthrough"></a>Przewodnik: korzystanie z testów jednostkowych do opracowania metody
- W tym instruktażu przedstawiono sposób tworzenia przetestowanej C# metody w programie przy użyciu struktury testów jednostkowych firmy Microsoft. Można łatwo dostosować ją do innych języków i korzystać z innych platform testowych, takich jak NUnit. Aby uzyskać więcej informacji, zobacz [Korzystanie z innego środowiska testowego](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a><a name="walkthrough"></a> Przewodnik: korzystanie z testów jednostkowych do opracowania metody
+ W tym instruktażu przedstawiono sposób tworzenia przetestowanej metody w języku C# przy użyciu struktury testów jednostkowych firmy Microsoft. Można łatwo dostosować ją do innych języków i korzystać z innych platform testowych, takich jak NUnit. Aby uzyskać więcej informacji, zobacz [Korzystanie z innego środowiska testowego](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).
 
 #### <a name="creating-the-test-and-method"></a>Tworzenie testu i metody
 
-1. Utwórz projekt biblioteki C# klas wizualnych. Ten projekt będzie zawierać kod, który chcemy dostarczyć. W tym przykładzie nazywa się `MyMath`.
+1. Utwórz projekt biblioteki klas języka Visual C#. Ten projekt będzie zawierać kod, który chcemy dostarczyć. W tym przykładzie ma nazwę `MyMath` .
 
 2. Utwórz projekt testowy.
 
-   - W oknie dialogowym **Nowy projekt** wybierz pozycję **C#Wizualizacja**, **test** , a następnie wybierz pozycję **projekt testu jednostkowego**.
+   - W oknie dialogowym **Nowy projekt** wybierz pozycję **Visual C#**, **test** , a następnie wybierz pozycję **projekt testu jednostkowego**.
 
         ![Nowy kod i projekty testowe](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
 
@@ -102,11 +102,11 @@ Zalecamy utworzenie testów jednostkowych w celu zapewnienia poprawnego działan
 
 4. Generuj metodę z testu.
 
-   1. Umieść kursor na `Rooter`, a następnie w menu skrótów wybierz polecenie **Generuj**, **nowy typ**.
+   1. Umieść kursor na `Rooter` , a następnie w menu skrótów wybierz polecenie **Generuj**, **nowy typ**.
 
-   2. W oknie dialogowym **generowanie nowego typu** Ustaw **projekt** na projekt biblioteki klas. W tym przykładzie jest `MyMath`.
+   2. W oknie dialogowym **generowanie nowego typu** Ustaw **projekt** na projekt biblioteki klas. W tym przykładzie jest to `MyMath`.
 
-   3. Umieść kursor na `SquareRoot`, a następnie w menu skrótów wybierz polecenie **Generuj**, **Metoda zastępcza**.
+   3. Umieść kursor na `SquareRoot` , a następnie w menu skrótów wybierz polecenie **Generuj**, **Metoda zastępcza**.
 
 5. Uruchom test jednostkowy.
 
@@ -130,7 +130,7 @@ Zalecamy utworzenie testów jednostkowych w celu zapewnienia poprawnego działan
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Po każdej zmianie wykonaj wszystkie testy zakończone powodzeniem
 
-1. W `MyMath\Rooter.cs` Popraw kod `SquareRoot`:
+1. W programie `MyMath\Rooter.cs` Popraw kod `SquareRoot` :
 
     ```csharp
     public double SquareRoot(double input)
@@ -186,7 +186,7 @@ Zalecamy utworzenie testów jednostkowych w celu zapewnienia poprawnego działan
 
      Aby znaleźć punkt awarii, wybierz test zakończony niepowodzeniem, a następnie w dolnej części Eksploratora testów wybierz górny element **śladu stosu**.
 
-3. Zbadaj badaną metodę, aby zobaczyć, co może być błędne. W klasie `MyMath.Rooter` ponownie Napisz kod:
+3. Zbadaj badaną metodę, aby zobaczyć, co może być błędne. W `MyMath.Rooter` klasie ponownie Napisz kod:
 
     ```
     public double SquareRoot(double input)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 12f399b7a09c18c77482475575ca387a11955762
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542392"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile — element
@@ -53,7 +53,7 @@ ms.locfileid: "85542392"
 
 |Element|Opis|
 |-------------|-----------------|
-|[Files](../sharepoint/files-element.md)|Określa pliki do dołączenia do elementu projektu programu SharePoint po wdrożeniu w programie SharePoint.|
+|[Pliki](../sharepoint/files-element.md)|Określa pliki do dołączenia do elementu projektu programu SharePoint po wdrożeniu w programie SharePoint.|
 
 ## <a name="remarks"></a>Uwagi
  Użyj elementu **ProjectOutputFile —** , aby uwzględnić dane wyjściowe projektu we wdrożeniu elementu projektu programu SharePoint. Możesz określić inny projekt lub ten sam projekt, który zawiera element projektu. Aby uzyskać więcej informacji, zobacz [zapewnianie informacji o pakowaniu i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
