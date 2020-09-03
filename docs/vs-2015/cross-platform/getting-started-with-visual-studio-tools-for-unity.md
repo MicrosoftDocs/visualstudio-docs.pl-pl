@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: f110b8d6f7ab05d5a1b6942cd9ec599a8d8619b7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299824"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Wprowadzenie do narzędzi Visual Studio Tools for Unity
@@ -38,11 +38,11 @@ W tej sekcji dowiesz się, jak zainstalować Visual Studio Tools for Unity i sko
 ## <a name="install-visual-studio-tools-for-unity"></a>Zainstaluj Visual Studio Tools for Unity  
  Pobierz i zainstaluj Visual Studio Tools for Unity z galerii programu Visual Studio. Musisz zainstalować odpowiedni pakiet dla używanej wersji programu Visual Studio. Upewnij się, że instalujesz program Visual Studio Tools for Unity w wersji 2,1 lub nowszej, aby skorzystać z wbudowanej obsługi rozszerzenia VSTU w środowisku Unity 5,2 lub nowszym.  
   
-- For Visual Studio 2015 Community, Visual Studio 2015 Professional, or Visual Studio 2015 Enterprise:  
+- W przypadku programu Visual Studio 2015 Community, Visual Studio 2015 Professional lub Visual Studio 2015 Enterprise:  
   
      [Pobierz narzędzia programu Visual Studio 2015 dla aparatu Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)  
   
-- For Visual Studio 2013 Community, Visual Studio 2013 Professional, or Visual Studio 2013 Premium:  
+- W przypadku Visual Studio 2013 Community, Visual Studio 2013 Professional lub Visual Studio 2013 Premium:  
   
      [Pobierz Visual Studio 2013 narzędzia dla aparatu Unity](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)  
   
@@ -50,7 +50,7 @@ W tej sekcji dowiesz się, jak zainstalować Visual Studio Tools for Unity i sko
   
      [Pobierz narzędzia programu Visual Studio 2012 dla aparatu Unity](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)  
   
-- For Visual Studio 2010 Professional or Visual Studio 2010 Premium:  
+- Dla programu Visual Studio 2010 Professional lub Visual Studio 2010 Premium:  
   
      [Pobierz narzędzia programu Visual Studio 2010 dla aparatu Unity](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   
@@ -108,7 +108,7 @@ W tej sekcji dowiesz się, jak zainstalować Visual Studio Tools for Unity i sko
   
  ![Otwórz projekt środowiska Unity w programie Visual Studio.](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
   
-## <a name="next-steps"></a>Kolejne kroki  
+## <a name="next-steps"></a>Następne kroki  
  Aby dowiedzieć się, jak korzystać z i debugować projekt Unity w programie Visual Studio, zobacz [Using Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).  
   
 ## <a name="see-also"></a>Zobacz też  

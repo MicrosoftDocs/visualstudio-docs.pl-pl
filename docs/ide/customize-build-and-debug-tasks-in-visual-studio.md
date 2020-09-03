@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffd0f7378893b52e93480272c73acc2aa413320d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533722"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Dostosowywanie zadań kompilacji i debugowania dla opracowywania aplikacji "Otwieranie folderu"
@@ -147,8 +147,8 @@ Poniższy przykład pokazuje *tasks.vs.jsw* pliku, który definiuje pojedyncze z
 }
 ```
 
-- `taskName`Określa nazwę, która pojawia się w menu rozwijanym prawym przyciskiem myszy.
-- `appliesTo`Określa pliki, na których można wykonać polecenie.
+- `taskName` Określa nazwę, która pojawia się w menu rozwijanym prawym przyciskiem myszy.
+- `appliesTo` Określa pliki, na których można wykonać polecenie.
 - `command`Właściwość określa polecenie do wywołania. W tym przykładzie `COMSPEC` zmienna środowiskowa służy do identyfikowania interpretera wiersza polecenia, zazwyczaj *cmd.exe*.
 - `args`Właściwość określa argumenty, które mają zostać przekazane do wywoływanego polecenia.
 - `${file}`Makro pobiera wybrany plik w **Eksplorator rozwiązań**.
@@ -176,7 +176,7 @@ W następnym przykładzie zdefiniowano zadanie, które wyświetla listę plików
 }
 ```
 
-- `${outDir}`jest makrem niestandardowym, które jest najpierw zdefiniowane przed `tasks` blokiem. Jest on następnie wywoływany we `args` właściwości.
+- `${outDir}` jest makrem niestandardowym, które jest najpierw zdefiniowane przed `tasks` blokiem. Jest on następnie wywoływany we `args` właściwości.
 
 To zadanie dotyczy wszystkich plików. Po otwarciu menu kontekstowego dla każdego pliku w **Eksplorator rozwiązań**, dane **wyjściowe listy** nazwa zadania są wyświetlane u dołu menu. Po wybraniu opcji dane **wyjściowe listy**zawartość katalogu *bin* zostanie wyświetlona w oknie **danych wyjściowych** w programie Visual Studio.
 
@@ -221,7 +221,7 @@ Można utworzyć zadania dla dowolnego pliku lub folderu, określając jego nazw
 |`${relativeFile}`| Ścieżka względna do pliku lub folderu (na przykład *src\hello.js*)|
 |`${fileBasename}`| Nazwa pliku bez ścieżki lub rozszerzenia (na przykład *Witaj*)|
 |`${fileDirname}`| Pełna ścieżka do pliku, z wyłączeniem nazwy pliku (na przykład *C:\sources\hello\src*)|
-|`${fileExtname}`| Rozszerzenie wybranego pliku (na przykład *. js*)|
+|`${fileExtname}`| Rozszerzenie wybranego pliku (na przykład  *. js*)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Konfigurowanie debugowania z launch.vs.jsna
 
@@ -309,7 +309,7 @@ pliki *. gitignore* są używane do poinformowania narzędzia Git o ignorowaniu 
 
 Ustawienia odczytane z pliku *. gitignore* są stosowane do jego katalogu nadrzędnego i wszystkich podkatalogów.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie kodu bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Projekty z obsługa funkcji Otwórz folder dla języka C++](/cpp/build/open-folder-projects-cpp)

@@ -35,10 +35,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 57b2ea6a0c69387043057bc07957a757ed351f99
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769407"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Używanie punktów przerwania w debugerze programu Visual Studio
@@ -48,7 +48,7 @@ Punkty przerwania są jedną z najważniejszych technik debugowania w przybornik
 > [!NOTE]
 > Jeśli znasz zadanie lub problem, który próbujesz rozwiązać, ale musisz wiedzieć, jakiego rodzaju punkt przerwania ma być używany, zobacz [Znajdowanie zadania debugowania](../debugger/find-your-debugging-task.md#pause-running-code).
 
-## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a>Ustaw punkty przerwania w kodzie źródłowym
+## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a> Ustaw punkty przerwania w kodzie źródłowym
 
 Punkt przerwania można ustawić na dowolnym wierszu kodu wykonywalnego. Na przykład w poniższym kodzie C# można ustawić punkt przerwania w wierszu kodu z przypisaniem zmiennej ( `int testInt = 1` ), `for` pętlą lub dowolnym kodem wewnątrz `for` pętli. Nie można ustawić punktu przerwania w sygnaturach metod, deklaracjach dla przestrzeni nazw lub klasy lub deklaracji zmiennych, jeśli nie ma przypisania ani metody pobierającej/ustawiającej.
 
@@ -74,7 +74,7 @@ Poniżej przedstawiono kilka ogólnych instrukcji dotyczących pracy z punktami 
 
 - Ustaw warunki i akcje, Dodaj i edytuj etykiety lub wyeksportuj punkt przerwania, klikając go prawym przyciskiem myszy i wybierając odpowiednie polecenie lub umieszczając je na nim, a następnie wybierając ikonę **Ustawienia** .
 
-## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a>Akcje punktu przerwania i punkty śledzenia
+## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Akcje punktu przerwania i punkty śledzenia
 
 *Punkt śledzenia* jest punktem przerwania, który drukuje komunikat do okna **danych wyjściowych** . Punkt śledzenia może działać jak tymczasowa instrukcja śledzenia w języku programowania i nie wstrzymuje wykonywania kodu. Tworzysz punkt śledzenia przez ustawienie specjalnej akcji w oknie **Ustawienia punktu przerwania** . Aby uzyskać szczegółowe instrukcje, zobacz [Korzystanie z punkty śledzenia w debugerze programu Visual Studio](../debugger/using-tracepoints.md).
 
@@ -164,7 +164,7 @@ W obszarze **warunki** w oknie **Ustawienia punktu przerwania** wybierz opcję *
 
 Ujmij wartości ciągu w podwójne cudzysłowy. Można łączyć klauzule przy użyciu `&` (i), `||` (lub), `!` (nie) i nawiasów.
 
-## <a name="set-function-breakpoints"></a><a name="BKMK_Set_a_breakpoint_in_a_source_file"></a>Ustaw punkty przerwania funkcji
+## <a name="set-function-breakpoints"></a><a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Ustaw punkty przerwania funkcji
 
 Możesz przerwać wykonywanie, gdy wywoływana jest funkcja. Jest to przydatne, na przykład w przypadku znajomości nazwy funkcji, ale nie jej lokalizacji. Jest ona również przydatna, jeśli masz funkcje o tej samej nazwie i chcesz przerwać ich wszystkie (na przykład przeciążone funkcje lub funkcje w różnych projektach).
 
@@ -180,11 +180,11 @@ Możesz przerwać wykonywanie, gdy wywoływana jest funkcja. Jest to przydatne, 
 
    - Użyj w pełni kwalifikowanej nazwy funkcji.
 
-     Przyklad`Namespace1.ClassX.MethodA()`
+     Przyklad  `Namespace1.ClassX.MethodA()`
 
    - Dodaj typy parametrów przeciążonej funkcji.
 
-     Przyklad`MethodA(int, string)`
+     Przyklad  `MethodA(int, string)`
 
    - Użyj symbolu "!", aby określić moduł.
 
@@ -198,7 +198,7 @@ Możesz przerwać wykonywanie, gdy wywoływana jest funkcja. Jest to przydatne, 
 
 1. Z listy rozwijanej **Język** wybierz język funkcji.
 
-1. Wybierz przycisk **OK**.
+1. Wybierz pozycję **OK**.
 
 ### <a name="set-a-function-breakpoint-using-a-memory-address-native-c-only"></a>Ustawianie punktu przerwania funkcji przy użyciu adresu pamięci (tylko natywne C++)
  Możesz użyć adresu obiektu, aby ustawić punkt przerwania funkcji dla metody wywoływanej przez określone wystąpienie klasy.  Na przykład, przy użyciu obiektu możliwego do adresowania typu `my_class` , można ustawić punkt przerwania funkcji dla `my_method` metody wywołującej.
@@ -263,7 +263,7 @@ Punkty przerwania danych nie działają w następujących warunkach:
 >
 > - Jeśli ustawisz punkt przerwania danych na zmiennej lokalnej, punkt przerwania zostanie włączony, gdy funkcja zostanie zakończona, ale adres pamięci nie będzie już stosowany, więc zachowanie punktu przerwania jest nieprzewidywalne. Jeśli ustawisz punkt przerwania danych na zmiennej lokalnej, należy usunąć lub wyłączyć punkt przerwania przed zakończeniem działania funkcji.
 
-## <a name="manage-breakpoints-in-the-breakpoints-window"></a><a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a>Zarządzanie punktami przerwania w oknie punkty przerwania
+## <a name="manage-breakpoints-in-the-breakpoints-window"></a><a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Zarządzanie punktami przerwania w oknie punkty przerwania
 
  Możesz użyć okna **punkty przerwania** , aby zobaczyć wszystkie punkty przerwania w rozwiązaniu i zarządzać nimi. Ta scentralizowana lokalizacja jest szczególnie przydatna w dużych rozwiązaniach lub złożonych scenariuszach debugowania, w których punkty przerwania są krytyczne.
 
@@ -275,7 +275,7 @@ Aby otworzyć okno **punkty przerwania** , wybierz pozycję **Debuguj**  >  **Wi
 
 Aby wybrać kolumny, które mają być wyświetlane w oknie **punkty przerwania** , wybierz pozycję **Pokaż kolumny**. Wybierz nagłówek kolumny, aby posortować listę punktów przerwania według tej kolumny.
 
-### <a name="breakpoint-labels"></a><a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a>Etykiety punktów przerwania
+### <a name="breakpoint-labels"></a><a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Etykiety punktów przerwania
 Za pomocą etykiet można sortować i filtrować listę punktów przerwania w oknie **punkty przerwania** .
 
 1. Aby dodać etykietę do punktu przerwania, kliknij prawym przyciskiem myszy punkt przerwania w kodzie źródłowym lub w oknie **punkty przerwania** , a następnie wybierz polecenie **Edytuj etykiety**. Dodaj nową etykietę lub wybierz istniejącą, a następnie wybierz przycisk **OK**.
@@ -289,7 +289,7 @@ Za pomocą etykiet można sortować i filtrować listę punktów przerwania w ok
 - Aby wyeksportować wszystkie punkty przerwania, usuń zaznaczenie wszystkich pól i pozostaw puste pole **wyszukiwania** . Zaznacz ikonę **Eksportuj wszystkie punkty przerwania zgodne z bieżącymi kryteriami wyszukiwania** i Zapisz plik.
 - Aby zaimportować punkty przerwania, w oknie **punkty przerwania** wybierz pozycję **Importuj punkty przerwania z ikony pliku** , przejdź do lokalizacji pliku XML, a następnie wybierz pozycję **Otwórz**.
 
-## <a name="set-breakpoints-from-debugger-windows"></a><a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a>Ustawianie punktów przerwania z okien debugera
+## <a name="set-breakpoints-from-debugger-windows"></a><a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a> Ustawianie punktów przerwania z okien debugera
 
 Możesz również ustawić punkty przerwania w oknach **stosu wywołań** i **demontażu** .
 
@@ -319,7 +319,7 @@ Aby wizualnie śledzić punkty przerwania podczas wykonywania kodu, zobacz [meto
 
 2. W oknie **demontażu** kliknij na lewym marginesie instrukcji, która ma zostać przerwana. Można go również zaznaczyć i nacisnąć klawisz **F9**lub kliknąć prawym przyciskiem myszy i wybrać **punkt przerwania**  >  **Wstaw punkt przerwania**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Co to jest debugowanie?](../debugger/what-is-debugging.md)
 - [Pisanie lepszego kodu w języku C# za pomocą programu Visual Studio](../debugger/write-better-code-with-visual-studio.md)

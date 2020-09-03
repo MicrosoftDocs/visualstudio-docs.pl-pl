@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 943f50823892e3cd942709bdcd4556b65c006b58
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770304"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem, element (szablony projektów Visual Studio)
@@ -74,7 +74,7 @@ Określa plik, który jest dołączony do szablonu projektu.
  `string`Reprezentuje nazwę lub ścieżkę do pliku w pliku template *. zip* .
 
 ## <a name="remarks"></a>Uwagi
- `ProjectItem`jest opcjonalnym elementem podrzędnym `Project` .
+ `ProjectItem` jest opcjonalnym elementem podrzędnym `Project` .
 
  Ten `TargetFileName` atrybut może służyć do tworzenia struktury katalogów innej niż struktura katalogów w pliku template *. zip* . Na przykład jeśli plik *. vb* istnieje w katalogu głównym pliku template *. zip* , ale plik ma być umieszczony w katalogu o nazwie *CustomFiles* we wszystkich projektach utworzonych na podstawie szablonu, użyj następującego kodu XML:
 
@@ -137,7 +137,7 @@ Określa plik, który jest dołączony do szablonu projektu.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Parametry szablonu](../ide/template-parameters.md)

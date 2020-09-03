@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8930bba76830a6116c3182f3fb2936cd4f1a3e47
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657605"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Łączenie aktualizacji modelu UML za pomocą transakcji
@@ -34,7 +34,7 @@ Podczas definiowania rozszerzenia dla projektantów UML w programie Visual Studi
 
  **Microsoft. VisualStudio. Modeling. Sdk. [wersja]. dll**
 
- Wewnątrz klasy Zadeklaruj zaimportowaną właściwość, która ma typ <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoContext>:
+ Wewnątrz klasy Zadeklaruj zaimportowaną właściwość, która ma typ <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoContext> :
 
  `using Microsoft.VisualStudio.Modeling.ExtensionEnablement;`
 
@@ -60,15 +60,15 @@ Podczas definiowania rozszerzenia dla projektantów UML w programie Visual Studi
 
  `}`
 
- Zwróć uwagę na następujące kwestie:
+ Zapamiętaj poniższe:
 
 - Zawsze należy uwzględnić `Commit()` na końcu transakcji. Jeśli transakcja zostanie usunięta bez zatwierdzenia, transakcja zostanie wycofana. Oznacza to, że model zostanie przywrócony do stanu na początku transakcji.
 
-- Jeśli wystąpi wyjątek, który nie jest przechwytywany wewnątrz transakcji, transakcja zostanie wycofana. Jest to częsty wzorzec otaczający blok `using` transakcji wewnątrz bloku `try…catch`.
+- Jeśli wystąpi wyjątek, który nie jest przechwytywany wewnątrz transakcji, transakcja zostanie wycofana. Jest to częsty wzorzec otaczający `using` blok transakcji wewnątrz `try…catch` bloku.
 
 - Można zagnieżdżać transakcje.
 
-- Do `BeginTransaction()` można podać dowolną nazwę, która nie jest pusta.
+- Możesz podać dowolną nazwę, która nie jest pusta `BeginTransaction()` .
 
 - Te transakcje mają wpływ tylko na magazyn modelu UML. Transakcje modelowania nie wpływają na: zmienne, sklepy zewnętrzne, takie jak pliki i bazy danych, diagramy warstwowe i modele kodu.
 

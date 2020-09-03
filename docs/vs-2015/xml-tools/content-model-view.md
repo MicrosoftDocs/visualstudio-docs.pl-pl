@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 47f4703b90446dc615df350ee0641678996196c7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657541"
 ---
 # <a name="content-model-view"></a>Widok modelu zawartości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Widok model zawartości zawiera graficzną reprezentację lokalnych i globalnych węzłów schematu oraz ich składników, w tym prostych i złożonych typów, elementów, grup modeli, atrybutów i grup atrybutów. Nie można wyświetlić komentarzy i instrukcji przetwarzania XML w widoku modelu zawartości. Widok modelu zawartości zawiera dwa panele: Panel **obszaru roboczego** zawierający listę węzłów w [obszarze roboczym Projektant schematu XML](../xml-tools/xml-schema-designer-workspace.md)oraz powierzchnię projektu, w której można zobaczyć model zawartości węzłów schematu, które są wybrane w **obszarze roboczym** panel. Widok modelu zawartości obejmuje również pasek narzędzi projektanta schematu XML i pasek nawigacyjny.
+Widok model zawartości zawiera graficzną reprezentację lokalnych i globalnych węzłów schematu oraz ich składników, w tym prostych i złożonych typów, elementów, grup modeli, atrybutów i grup atrybutów. Nie można wyświetlić komentarzy i instrukcji przetwarzania XML w widoku modelu zawartości. Widok modelu zawartości zawiera dwa panele: Panel **obszaru roboczego** zawierający listę węzłów w [obszarze roboczym Projektant schematu XML](../xml-tools/xml-schema-designer-workspace.md)oraz powierzchnię projektu, w której można zobaczyć model zawartości węzłów schematu, które są wybrane w panelu **obszaru roboczego** . Widok modelu zawartości obejmuje również pasek narzędzi projektanta schematu XML i pasek nawigacyjny.
 
- Na poniższej ilustracji panel obszary robocze zawiera sześć węzłów schematu. Węzeł `purchaseOrder` jest wybierany w panelu czynności i wyświetlany na powierzchni projektowej.
+ Na poniższej ilustracji panel obszary robocze zawiera sześć węzłów schematu. `purchaseOrder`Węzeł jest wybierany w panelu czynności i wyświetlany na powierzchni projektowej.
 
  ![Widok modelu zawartości projektanta schematu XML](../xml-tools/media/xsddesigner-contentmodelview.gif "XSDDesigner_ContentModelView")
 
@@ -99,7 +99,7 @@ Widok model zawartości zawiera graficzną reprezentację lokalnych i globalnych
 
 - Usuwanie jednego lub wielu węzłów.
 
-## <a name="zoom"></a>Powiększenie
+## <a name="zoom"></a>Zoom
  Powiększenie jest dostępne w prawym dolnym rogu widoku modelu zawartości.
 
  Powiększenie można kontrolować w następujący sposób:

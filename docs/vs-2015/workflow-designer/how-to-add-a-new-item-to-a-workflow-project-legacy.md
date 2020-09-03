@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 46f6e9daafc2688b9bea75cba9eddd8c8a53c9bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656670"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Instrukcje: Dodawanie nowego elementu do projektu przepływu pracy (starsza wersja)
-Po utworzeniu projektu przepływu pracy przy użyciu starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczonej przez [!INCLUDE[vs2010](../includes/vs2010-md.md)], która jest przeznaczona dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], można dodać elementy [!INCLUDE[wf](../includes/wf-md.md)] i inne znane elementy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do projektu.
+Po utworzeniu projektu przepływu pracy przy użyciu starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczonej przez [!INCLUDE[vs2010](../includes/vs2010-md.md)] program [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] , można dodać [!INCLUDE[wf](../includes/wf-md.md)] elementy i inne znane [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] elementy do projektu.
 
- W poniższej tabeli wymieniono elementy [!INCLUDE[wf2](../includes/wf2-md.md)], które można dodać do projektu przepływu pracy.
+ W poniższej tabeli wymieniono [!INCLUDE[wf2](../includes/wf2-md.md)] elementy, które można dodać do projektu przepływu pracy.
 
 |Element|Opis|
 |----------|-----------------|

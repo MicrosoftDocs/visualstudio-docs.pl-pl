@@ -1,6 +1,6 @@
 ---
 title: Publikowanie aplikacji Node.js w usłudze App Service w systemie Linux
-description: Aplikacje Node.js utworzone w programie Visual Studio w usłudze Linux App Service można publikować na platformie Azure
+description: Możesz publikować Node.js aplikacje utworzone w programie Visual Studio w systemie Linux App Service na platformie Azure
 ms.date: 11/22/2019
 ms.topic: tutorial
 ms.devlang: javascript
@@ -12,149 +12,149 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: d75bb4f5274201b7cf745ff8c7c6f27b869855c3
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81445015"
 ---
-# <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publikowanie aplikacji Node.js na platformie Azure (linux App Service)
+# <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publikowanie aplikacji Node.js na platformie Azure (App Service z systemem Linux)
 
-W tym samouczku można utworzyć prostą aplikację Node.js i opublikować ją na platformie Azure.
+Ten samouczek przeprowadzi Cię przez zadanie tworzenia prostej aplikacji Node.js i publikowania jej na platformie Azure.
 
-Podczas publikowania aplikacji Node.js na platformie Azure, istnieje kilka opcji. Należą do nich usługa Azure App Service, maszyna wirtualna z wybranym systemem operacyjnym, usługa Azure Container Service (AKS) do zarządzania za pomocą usługi Kubernetes, wystąpienie kontenera przy użyciu platformy Docker i inne. Aby uzyskać więcej informacji na temat każdej z tych opcji, zobacz [Oblicz .](https://azure.microsoft.com/product-categories/compute/)
+W przypadku publikowania aplikacji Node.js na platformie Azure istnieje kilka opcji. Obejmują one Azure App Service, maszynę wirtualną, na której działa system operacyjny, Azure Container Service (AKS) do zarządzania za pomocą Kubernetes, wystąpienia kontenera przy użyciu platformy Docker i innych. Aby uzyskać więcej informacji na temat każdej z tych opcji, zobacz [COMPUTE](https://azure.microsoft.com/product-categories/compute/).
 
-W tym samouczku można wdrożyć aplikację do [usługi Linux App Service](/azure/app-service/containers/app-service-linux-intro).
-Usługa aplikacji Linux App Service wdraża kontener platformy Docker systemu Linux w celu uruchomienia aplikacji Node.js (w przeciwieństwie do usługi Windows App Service, która uruchamia aplikacje Node.js za usługami IIS w systemie Windows).
+W tym samouczku aplikacja zostanie wdrożona w [App Service systemu Linux](/azure/app-service/containers/app-service-linux-intro).
+System Linux App Service wdraża kontener platformy Docker systemu Linux w celu uruchomienia aplikacji Node.js (w przeciwieństwie do App Service Windows, w którym są uruchamiane Node.js aplikacje za pomocą usług IIS w systemie Windows).
 
-W tym samouczku pokazano, jak utworzyć aplikację Node.js, zaczynając od szablonu zainstalowanego za pomocą narzędzia Node.js Tools for Visual Studio, wypchnąć kod do repozytorium w usłudze GitHub, a następnie aprowizować usługę Azure App Service za pośrednictwem portalu sieci Web platformy Azure, dzięki czemu można wdrożyć z repozytorium Usługi GitHub. Aby użyć wiersza polecenia do aprowizowania usługi Azure App Service i wypchnięcia kodu z lokalnego repozytorium Git, zobacz [Tworzenie aplikacji Node.js](/azure/app-service/containers/quickstart-nodejs).
+W tym samouczku pokazano, jak utworzyć aplikację Node.js, rozpoczynając od szablonu zainstalowanego za pomocą narzędzi Node.js Tools for Visual Studio, wypchnięcia kodu do repozytorium w usłudze GitHub, a następnie udostępnienia Azure App Service za pośrednictwem portalu sieci Web systemu Azure, dzięki czemu można wdrożyć z repozytorium GitHub. Aby użyć wiersza polecenia do aprowizacji Azure App Service i wypchnięcia kodu z lokalnego repozytorium git, zobacz [Tworzenie aplikacji Node.js](/azure/app-service/containers/quickstart-nodejs).
 
 Ten samouczek zawiera informacje na temat wykonywania następujących czynności:
 > [!div class="checklist"]
-> * Tworzenie projektu z użyciem narzędzia Node.js
-> * Tworzenie repozytorium GitHub dla kodu
-> * Tworzenie usługi aplikacji systemu Linux na platformie Azure
+> * Tworzenie projektu platformy Node.js
+> * Utwórz repozytorium GitHub dla kodu
+> * Tworzenie App Service z systemem Linux na platformie Azure
 > * Wdrażanie w systemie Linux
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Musi być zainstalowany program Visual Studio i obciążenie deweloperskie node.js.
+* Musisz mieć zainstalowany program Visual Studio i Node.js obciążenie programowaniem.
 
     ::: moniker range=">=vs-2019"
-    Jeśli program Visual Studio 2019 nie został jeszcze zainstalowany, przejdź do strony pobierania programu Visual [Studio,](https://visualstudio.microsoft.com/downloads/)aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio 2019 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/),   Aby zainstalować ją bezpłatnie.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony pobierania programu Visual [Studio,](https://visualstudio.microsoft.com/downloads/)aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/),   Aby zainstalować ją bezpłatnie.
     ::: moniker-end
 
-    Jeśli chcesz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do **narzędzia** > **Pobierz narzędzia i funkcje...**, który otwiera Instalator programu Visual Studio. Wybierz obciążenie **deweloperne node.js,** a następnie wybierz pozycję **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje..**., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz **Node.js obciążenie programowaniem** , a następnie wybierz **Modyfikuj**.
 
-    ![Obciążenie node.js w instalatorze usługi VS](../ide/media/quickstart-nodejs-workload.png)
+    ![Node.js obciążenie w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
 
-* Musi być zainstalowany środowisko uruchomieniowe Node.js.
+* Musisz mieć zainstalowane środowisko uruchomieniowe Node.js.
 
-    Jeśli nie masz go zainstalowanego, zainstaluj wersję LTS z [witryny node.js.](https://nodejs.org/en/download/) Ogólnie rzecz biorąc program Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt tak, aby odwoływał się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Właściwości**).
+    Jeśli go nie zainstalowano, Zainstaluj wersję LTS z witryny sieci Web [Node.js](https://nodejs.org/en/download/) . Ogólnie rzecz biorąc, program Visual Studio automatycznie wykrywa zainstalowane Node.js środowiska uruchomieniowego. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt do odwoływania się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Właściwości**).
 
-## <a name="create-a-nodejs-project-to-run-in-azure"></a>Tworzenie projektu node.js do uruchomienia na platformie Azure
+## <a name="create-a-nodejs-project-to-run-in-azure"></a>Tworzenie projektu Node.js do uruchamiania na platformie Azure
 
 1. Otwórz program Visual Studio.
 
 1. Utwórz nową aplikację TypeScript Express.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij **klawisz Esc,** aby zamknąć okno początkowe. Wpisz **Ctrl + Q,** aby otworzyć pole wyszukiwania, wpisz **Node.js**, a następnie wybierz pozycję **Utwórz nową podstawową aplikację Azure Node.js Express 4** (TypeScript). W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
+    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, wpisz **Node.js**, a następnie wybierz pozycję **utwórz nową podstawową aplikację Azure Node.js Express 4** (TypeScript). W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na górnym pasku menu wybierz pozycję **Plik** > **nowego** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **TypeScript**, a następnie wybierz polecenie **Node.js**. W środkowym okienku wybierz pozycję **Basic Azure Node.js Express 4 application**, a następnie wybierz przycisk **OK**.
+    Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **TypeScript**, a następnie wybierz **Node.js**. W środkowym okienku wybierz pozycję **podstawowa aplikacja Azure Node.js Express 4**, a następnie wybierz przycisk **OK**.
 
-    ![Tworzenie nowej aplikacji TypeScript Express](../javascript/media/azure-ts-express-app.png)
+    ![Tworzenie nowej aplikacji języka TypeScript Express](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end
-    Jeśli nie widzisz szablonu projektu **aplikacji Basic Azure Node.js Express 4,** musisz dodać obciążenie **deweloperne node.js.** Aby uzyskać szczegółowe instrukcje, zobacz [Wymagania wstępne](#prerequisites).
+    Jeśli nie widzisz szablonu projektu **podstawowe aplikacje platformy Azure Node.js Express 4** , musisz dodaćNode.js obciążenie ** programowaniem** . Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
 
-    Program Visual Studio tworzy projekt i otwiera go w Eksploratorze rozwiązań (prawe okienko).
+    Program Visual Studio utworzy projekt i otworzy go w Eksplorator rozwiązań (prawego okienka).
 
-1. Naciśnij **klawisz F5,** aby utworzyć i uruchomić aplikację i upewnij się, że wszystko działa zgodnie z oczekiwaniami.
+1. Naciśnij klawisz **F5** , aby skompilować i uruchomić aplikację, i upewnij się, że wszystko działa zgodnie z oczekiwaniami.
 
-1. Wybierz **pozycję Dodaj plik** > **do formantu źródłowego,** aby utworzyć lokalne repozytorium Git dla projektu.
+1. Wybierz pozycję **plik**  >  **Dodaj do kontroli źródła** , aby utworzyć lokalne repozytorium git dla projektu.
 
-    W tym momencie aplikacja Node.js przy użyciu platformy Express i napisane w języku TypeScript działa i zaewidencjonowany do kontroli źródła lokalnego.
+    W tym momencie aplikacja Node.js przy użyciu języka Express i zapisywana w języku TypeScript działa i zaewidencjonowano w lokalnej kontroli źródła.
 
-1. Edytuj projekt zgodnie z potrzebami przed przejściem do następnych kroków.
+1. Przed przejściem do następnego kroku Edytuj projekt zgodnie z potrzebami.
 
 ## <a name="push-code-from-visual-studio-to-github"></a>Wypychanie kodu z programu Visual Studio do usługi GitHub
 
-Aby skonfigurować github dla programu Visual Studio:
+Aby skonfigurować witrynę GitHub dla programu Visual Studio:
 
-1. Upewnij się, że [rozszerzenie GitHub dla programu Visual Studio](https://visualstudio.github.com/) jest zainstalowane i włączone przy użyciu elementu menu Rozszerzenia i**aktualizacje** **narzędzi** > .
+1. Upewnij się, że [rozszerzenie GitHub dla programu Visual Studio](https://visualstudio.github.com/) jest zainstalowane i włączone przy użyciu **narzędzi**elementów menu  >  **rozszerzenia i aktualizacje**.
 
-2. Z menu wybierz **Pozycję Wyświetl** > **inne usługi Windows** > **GitHub**.
+2. Z menu wybierz pozycję **Wyświetl**  >  **inne usługi Windows**  >  **GitHub**.
 
-    Zostanie otwarte okno GitHub.
+    Zostanie otwarte okno usługi GitHub.
 
-3. Jeśli nie widzisz przycisku **Wprowadzenie** w oknie GitHub, kliknij pozycję Dodaj **plik** > **do kontroli źródła** i poczekaj na aktualizację interfejsu użytkownika.
+3. Jeśli nie widzisz przycisku **wprowadzenie** w oknie GitHub, kliknij pozycję **plik**  >  **Dodaj do kontroli źródła** i poczekaj na zaktualizowanie interfejsu użytkownika.
 
-    ![Otwieranie okna Usługi GitHub](../javascript/media/azure-github-get-started.png)
+    ![Otwieranie okna GitHub](../javascript/media/azure-github-get-started.png)
 
-4. Kliknij **pozycję Wprowadzenie**.
+4. Kliknij pozycję **Rozpocznij**.
 
-    Jeśli masz już połączenie z usługą GitHub, zestaw narzędzi jest podobny do poniższej ilustracji.
+    Jeśli masz już połączenie z usługą GitHub, Przybornik wygląda podobnie do poniższej ilustracji.
 
     ![Ustawienia repozytorium GitHub](../javascript/media/azure-github-publish.png)
 
-5. Wypełnij pola dla nowego repozytorium do opublikowania, a następnie kliknij przycisk **Publikuj**.
+5. Wypełnij pola nowego repozytorium do opublikowania, a następnie kliknij przycisk **Publikuj**.
 
-    Po kilku chwilach pojawia się baner z napisem "Repozytorium utworzone pomyślnie".
+    Po kilku chwilach zostanie wyświetlony transparent informujący o pomyślnym utworzeniu repozytorium.
 
-    W następnej sekcji dowiesz się, jak opublikować z tego repozytorium do usługi Azure App Service w systemie Linux.
+    W następnej sekcji dowiesz się, jak publikować z tego repozytorium do Azure App Service w systemie Linux.
 
-## <a name="create-a-linux-app-service-in-azure"></a>Tworzenie usługi aplikacji systemu Linux na platformie Azure
+## <a name="create-a-linux-app-service-in-azure"></a>Tworzenie App Service z systemem Linux na platformie Azure
 
 1. Zaloguj się w witrynie [Azure Portal](https://portal.azure.com).
 
-2. Wybierz **pozycję Usługi aplikacji** z listy usług po lewej stronie, a następnie kliknij przycisk **Dodaj**.
+2. Wybierz **App Services** z listy usług po lewej stronie, a następnie kliknij przycisk **Dodaj**.
 
-3. W razie potrzeby utwórz nową grupę zasobów i plan usługi App Service do obsługi nowej aplikacji.
+3. W razie potrzeby utwórz nową grupę zasobów i App Service plan, aby hostować nową aplikację.
 
-4. Upewnij się, aby ustawić **system operacyjny** na **Linux**i ustawić **Runtime Stack** do wymaganej wersji Node.js, jak pokazano na ilustracji.
+4. Upewnij się, że **system operacyjny** jest ustawiony na **Linux**, i ustaw dla **stosu środowiska uruchomieniowego** wymaganą wersję Node.js, jak pokazano na ilustracji.
 
-    ![Tworzenie usługi aplikacji dla systemu Linux](../javascript/media/azure-create-appservice-annotated.png)
+    ![Tworzenie App Service systemu Linux](../javascript/media/azure-create-appservice-annotated.png)
 
-5. Kliknij **przycisk Utwórz,** aby utworzyć usługę app service.
+5. Kliknij przycisk **Utwórz** , aby utworzyć App Service.
 
     Wdrożenie może potrwać kilka minut.
 
-6. Po wdrożeniu przejdź do sekcji **Ustawienia aplikacji** i dodaj `SCM_SCRIPT_GENERATOR_ARGS` ustawienie z `--node`nazwą i wartością .
+6. Po jego wdrożeniu przejdź do sekcji **Ustawienia aplikacji** i Dodaj ustawienie o nazwie `SCM_SCRIPT_GENERATOR_ARGS` i wartości `--node` .
 
     ![Ustawienia aplikacji](../javascript/media/azure-script-generator-args.png)
 
     > [!WARNING]
-    > Proces wdrażania usługi App Service używa zestawu heurystyki, aby określić, jaki typ aplikacji należy wypróbować i uruchomić. Jeśli . *Sln* plik jest wykrywany w wdrożonej zawartości, zakłada, że projekt oparty na MSBuild jest wdrażany. Powyższe ustawienie zastępuje tę logikę i wyraźnie określa, że jest to aplikacja Node.js. Bez tego ustawienia aplikacja Node.js nie zostanie wdrożona, jeśli plik . *sln* plik jest częścią repozytorium wdrażane w usłudze App Service.
+    > Proces wdrażania App Service używa zestawu algorytmów heurystycznych w celu określenia typu aplikacji do wypróbowania i uruchomienia. Jeśli. plik *sln* został wykryty w wdrożonej zawartości, zakłada się, że projekt oparty na programie MSBuild jest wdrażany. Ustawienie dodane powyżej zastępuje tę logikę i jawnie określa, że jest to aplikacja Node.js. Bez tego ustawienia aplikacja Node.js nie zostanie wdrożona, jeśli. plik *sln* jest częścią repozytorium, które jest wdrażane do App Service.
 
-7. W obszarze **Ustawienia aplikacji**dodaj kolejne `WEBSITE_NODE_DEFAULT_VERSION` ustawienie z `8.9.0`nazwą i wartością .
+7. W obszarze **Ustawienia aplikacji**Dodaj inne ustawienie o nazwie `WEBSITE_NODE_DEFAULT_VERSION` i wartości `8.9.0` .
 
-8. Po wdrożeniu otwórz usługę App Service i wybierz pozycję **Opcje wdrażania**.
+8. Po wdrożeniu programu Otwórz App Service a następnie wybierz **Opcje wdrażania**.
 
     ![Opcje wdrożenia](../javascript/media/azure-deployment-options.png)
 
-9. Kliknij **pozycję Wybierz źródło**, a następnie wybierz pozycję **GitHub**, a następnie skonfiguruj wymagane uprawnienia.
+9. Kliknij pozycję **Wybierz źródło**, a następnie wybierz pozycję **GitHub**, a następnie skonfiguruj wymagane uprawnienia.
 
-    ![Uprawnienia gitHub](../javascript/media/azure-choose-source.png)
+    ![Uprawnienia usługi GitHub](../javascript/media/azure-choose-source.png)
 
-10. Wybierz repozytorium i gałąź do opublikowania, a następnie wybierz **przycisk OK**.
+10. Wybierz repozytorium i gałąź do opublikowania, a następnie wybierz przycisk **OK**.
 
     ![Publikowanie w usłudze App Service w systemie Linux](../javascript/media/azure-repo-and-branch.png)
 
-    Strona **opcji wdrażania** jest wyświetlana podczas synchronizacji.
+    Podczas synchronizacji zostanie wyświetlona strona **Opcje wdrażania** .
 
-    ![Wdrażanie i synchronizowanie z usługą GitHub](../javascript/media/azure-deployment-options-sync.png)
+    ![Wdrażanie i synchronizowanie za pomocą usługi GitHub](../javascript/media/azure-deployment-options-sync.png)
 
-    Po zakończeniu synchronizacji pojawi się znacznik wyboru.
+    Po zakończeniu synchronizacji zostanie wyświetlony znacznik wyboru.
 
-    Witryna jest teraz uruchomiona aplikacja Node.js z repozytorium GitHub i jest dostępna pod adresem URL utworzonym dla usługi Azure App Service (domyślnie nazwa nadana usłudze Azure App Service, po której następuje ".azurewebsites.net").
+    Lokacja jest teraz uruchomiona Node.js aplikacji z repozytorium GitHub i jest dostępna przy użyciu adresu URL utworzonego dla Azure App Service (Domyślnie nazwa nadana Azure App Service, a następnie ". azurewebsites.net").
 
 ## <a name="modify-your-app-and-push-changes"></a>Modyfikowanie aplikacji i wypychanie zmian
 
-1. Dodaj kod pokazany tutaj w *app.ts* po wierszu `app.use('/users', users);`. Spowoduje to dodanie interfejsu API REST pod adresem URL */api*.
+1. Dodaj kod przedstawiony tutaj w *aplikacji App. TS* po wierszu `app.use('/users', users);` . Spowoduje to dodanie interfejsu API REST pod adresem URL */API*.
 
     ```typescript
     app.use('/api', (req, res, next) => {
@@ -162,27 +162,27 @@ Aby skonfigurować github dla programu Visual Studio:
     });
     ```
 
-2. Skompiluj kod i przetestuj go lokalnie, a następnie zaewidencjonuj go i wypchnij do gitHub.
+2. Skompiluj kod i przetestuj go lokalnie, a następnie Zaewidencjonuj go i wypchnij do serwisu GitHub.
 
-    W witrynie Azure portal trwa kilka chwil, aby wykryć zmiany w repozytorium GitHub, a następnie rozpoczyna się nowa synchronizacja wdrożenia. Wygląda to podobnie do poniższej ilustracji.
+    W Azure Portal potrwa kilka chwil, aby wykryć zmiany w repozytorium GitHub, a następnie rozpocząć nową synchronizację wdrożenia. Wygląda to podobnie do poniższej ilustracji.
 
     ![Modyfikowanie i synchronizowanie](../javascript/media/azure-changes-detected.png)
 
-3. Po zakończeniu wdrażania przejdź do witryny publicznej i dołącz */api* do adresu URL. Odpowiedź JSON zostanie zwrócona.
+3. Po zakończeniu wdrażania przejdź do witryny publicznej i Dołącz */API* do adresu URL. Odpowiedź JSON zostanie zwrócona.
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
-* Jeśli proces node.exe umiera (oznacza to, że występuje nieobsługiowany wyjątek), kontener zostanie ponownie uruchomiony.
-* Po uruchomieniu kontenera, działa przez różne heurystyki, aby dowiedzieć się, jak rozpocząć proces Node.js. Szczegóły implementacji można zobaczyć na [generateStartupCommand.js](https://github.com/Azure/app-service-builtin-images/blob/master/node/8.9.4/startup/generateStartupCommand.js).
-* Można połączyć się z uruchomionym kontenerem za pośrednictwem protokołu SSH w celu przeprowadzenia badań. Można to łatwo zrobić za pomocą witryny Azure portal. Wybierz usługę app service i przewiń listę narzędzi w dół, aż do osiągnięcia **SSH** w sekcji **Narzędzia programistyczne.**
-* Aby ułatwić rozwiązywanie problemów, przejdź do ustawień **dzienników diagnostyki** usługi App Service i zmień ustawienie **rejestrowania kontenera platformy Docker** z **Wyłączone** na **System plików**. Dzienniki są tworzone w kontenerze pod */home/LogFiles/*_docker.log*i są dostępne w polu za pomocą protokołu SSH lub FTP(S).
-* Do witryny można przypisać niestandardową nazwę domeny, a nie domyślnie przypisany adres URL *.azurewebsites.net. Aby uzyskać więcej informacji, zobacz temat [Mapuj domenę niestandardową](/azure/app-service/app-service-web-tutorial-custom-domain).
-* Wdrożenie w lokacji tymczasowej do dalszych testów przed przejściem do środowiska produkcyjnego jest najlepszym rozwiązaniem. Aby uzyskać szczegółowe informacje na temat konfigurowania tego, zobacz temat [Tworzenie środowisk przejściowych](/azure/app-service/web-sites-staged-publishing).
-* Więcej często zadawanych pytań można [znaleźć w usłudze aplikacji w systemie Linux.](/azure/app-service/containers/app-service-linux-faq)
+* Jeśli proces node.exe wystąpił (czyli Wystąpił nieobsługiwany wyjątek), kontener zostanie ponownie uruchomiony.
+* Po uruchomieniu kontenera jest on uruchamiany przez różne algorytmy heurystyczne, aby ustalić, jak uruchomić proces Node.js. Szczegóły implementacji mogą być widoczne w [generateStartupCommand.js](https://github.com/Azure/app-service-builtin-images/blob/master/node/8.9.4/startup/generateStartupCommand.js).
+* Można nawiązać połączenie z działającym kontenerem za pośrednictwem protokołu SSH w celu dochodzeń. Jest to łatwo wykonywane przy użyciu Azure Portal. Wybierz App Service i przewiń w dół listę narzędzi do momentu osiągnięcia protokołu **SSH** w sekcji **Narzędzia programistyczne** .
+* Aby pomóc w rozwiązywaniu problemów, przejdź do ustawień **dzienników diagnostyki** dla App Service i zmień ustawienie **rejestrowania kontenera Docker** z **wyłączone** na **system plików**. Dzienniki są tworzone w kontenerze w obszarze */home/LogFiles/*_docker. log * i można uzyskać do niego dostęp przy użyciu protokołu SSH lub FTP (S).
+* Do witryny można przypisać niestandardową nazwę domeny, a nie adres URL *. azurewebsites.net przypisany domyślnie. Aby uzyskać więcej informacji, zobacz temat [Mapowanie domeny niestandardowej](/azure/app-service/app-service-web-tutorial-custom-domain)w temacie.
+* Najlepszym rozwiązaniem jest wdrożenie w lokacji tymczasowej w celu przeprowadzenia dalszych testów przed przejściem do środowiska produkcyjnego. Aby uzyskać szczegółowe informacje na temat sposobu konfigurowania tego elementu, zobacz temat [Tworzenie środowisk przejściowych](/azure/app-service/web-sites-staged-publishing)w temacie.
+* Zapoznaj się z tematem [App Service w systemie Linux — często](/azure/app-service/containers/app-service-linux-faq) zadawane pytania.
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym samouczku dowiesz się, jak utworzyć usługę aplikacji systemu Linux i wdrożyć aplikację Node.js w usłudze. Możesz dowiedzieć się więcej o Linux App Service.
+W ramach tego samouczka nauczysz się, jak utworzyć App Service systemu Linux i wdrożyć aplikację Node.js w usłudze. Warto dowiedzieć się więcej o App Service systemu Linux.
 
 > [!div class="nextstepaction"]
-> [Usługa aplikacji dla systemu Linux](/azure/app-service/containers/app-service-linux-intro)
+> [App Service systemu Linux](/azure/app-service/containers/app-service-linux-intro)

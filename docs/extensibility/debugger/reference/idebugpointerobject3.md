@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject3 | Dokumenty firmy Microsoft
+title: IDebugPointerObject3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8605f1cdd50b6e98d6e30a7b550cce1d22543ff9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725466"
 ---
 # <a name="idebugpointerobject3"></a>IDebugPointerObject3
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład ewaluatora zarządzanych wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniania wyrażeń jest przestarzały. Aby uzyskać informacje na temat implementowania oceniania wyrażeń CLR, zobacz [oszacowania wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykłady ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Reprezentuje wskaźnik w drzewie analizy i rozszerza interfejs **IDebugPointerObject.**
+ Reprezentuje wskaźnik w drzewie analizy i rozszerza interfejs **IDebugPointerObject** .
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,18 +30,18 @@ IDebugPointerObject3 : IDebugPointerObject
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Oceniający wyrażenie (EE) implementuje ten interfejs.
+ Ewaluatora wyrażeń (EE) implementuje ten interfejs.
 
 ## <a name="methods"></a>Metody
- Oprócz metod na interfejsie [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) ten interfejs implementuje następujące metody:
+ Oprócz metod interfejsu [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) , ten interfejs implementuje następujące metody:
 
 |Metoda|Opis|
 |------------|-----------------|
 |[GetPointerAddress](../../../extensibility/debugger/reference/idebugpointerobject3-getpointeraddress.md)|Pobiera adres wskaźnika.|
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: Ee.h
+ Nagłówek: EE. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll

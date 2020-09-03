@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88214666"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opcje, edytor tekstu, C#, zaawansowane
@@ -129,7 +129,7 @@ Zaznacz te pola wyboru, aby wyświetlić kropkowane linie pionowe między nawias
 
 ## <a name="editor-help"></a>Pomoc edytora
 ::: moniker range=">=vs-2019"
-- Wskazówki dotyczące nazwy parametru wbudowanego 
+- Wskazówki dotyczące nazw parametrów wbudowanych 
     
     Po wybraniu wstawia wskazówki dotyczące nazw parametrów dla literałów, literałów rzutowania i wystąpień obiektów przed każdym argumentem w wywołaniach funkcji.  
     

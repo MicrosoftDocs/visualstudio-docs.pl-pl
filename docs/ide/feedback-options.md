@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.openlocfilehash: a9c71837b83aa31b56ba1bd8ccb3384e4552d1be
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769993"
 ---
 # <a name="visual-studio-feedback-options"></a>Opcje opinii programu Visual Studio
@@ -96,7 +96,7 @@ Jeśli chcesz udostępniać pytania i odpowiedzi innym deweloperom, Rozważ poł
 
 Możesz również wyświetlić kod od innych deweloperów i udostępnić własne przykłady na stronie [przeglądania przykładów kodu](/samples/browse/) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Rozwiązywanie problemów z instalacją i uaktualnieniem](../install/troubleshooting-installation-issues.md)
 * [Prywatność danych w społeczności deweloperów](developer-community-privacy.md)

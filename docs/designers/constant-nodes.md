@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6868a5dc7cbace1d061c43cd507d32c271436a26
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769303"
 ---
 # <a name="constant-nodes"></a>Stałe węzły
@@ -31,7 +31,7 @@ Chociaż każde wystąpienie programu do cieniowania pikseli otrzymuje tylko jed
 |----------|-------------|----------------|
 |**Wektor kamery**|Wektor, który rozciąga się od bieżącego piksela do kamery w przestrzeni świata.<br /><br /> Można go użyć do obliczenia odbić w przestrzeni świata.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float3`<br /> Wektor od bieżącego piksela do aparatu.|Brak|
 |**Stała koloru**|Stała wartość koloru.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Dane wyjściowe**<br /> Wartość koloru.|
-|**Stały**|Stała wartość skalarna.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float`<br /> Wartość skalarna.|**Dane wyjściowe**<br /> Wartość skalarna.|
+|**Stała**|Stała wartość skalarna.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float`<br /> Wartość skalarna.|**Dane wyjściowe**<br /> Wartość skalarna.|
 |**Stała 2D**|Stała wektora dwuskładnikowego.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float2`<br /> Wartość wektora.|**Dane wyjściowe**<br /> Wartość wektora.|
 |**Stała 3D**|Stała wektora z trzema składnikami.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float3`<br /> Wartość wektora.|**Dane wyjściowe**<br /> Wartość wektora.|
 |**Stała 4D**|Stała wektorowa z czterema składnikami.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Dane wyjściowe**<br /> Wartość wektora.|

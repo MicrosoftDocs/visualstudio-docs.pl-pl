@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Identyfikowanie symboli w bibliotece | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Identyfikowanie symboli w bibliotece | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,18 +12,18 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f154c63940189f1a6035246fb7f72ec27be677f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191869"
 ---
-# <a name="how-to-identify-symbols-in-a-library"></a>Instrukcje: Identyfikowanie symboli w bibliotece
+# <a name="how-to-identify-symbols-in-a-library"></a>Instrukcje: identyfikowanie symboli w bibliotece
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Narzędzia do przeglądania symboli wyświetlić widokach hierarchicznych symboli. Symbole reprezentują przestrzenie nazw, obiektów, klas, składowych klasy i inne elementy języka.  
+Narzędzia do przeglądania symboli wyświetlają hierarchiczne widoki symboli. Symbole reprezentują przestrzenie nazw, obiekty, klasy, składowe klas i inne elementy języka.  
   
- Każdy symbol w hierarchii można zidentyfikować przez nawigacji informacje przekazywane przez bibliotekę symboli do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Menedżera obiektów przy użyciu następujących interfejsów:  
+ Każdy symbol w hierarchii może być identyfikowany przez informacje nawigacji przesłane przez bibliotekę symboli do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Menedżera obiektów przez następujące interfejsy:  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo>  
   
@@ -31,11 +31,11 @@ Narzędzia do przeglądania symboli wyświetlić widokach hierarchicznych symbol
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.  
   
- Lokalizacja symbolu w hierarchii różnic między usługą symbol. Umożliwia ona narzędzi do przeglądania symboli można przejść do określonego symbolu. Unikatowa, w pełni kwalifikowaną ścieżkę do symbolu Określa lokalizację. Każdy element w ścieżce jest węzłem. Ścieżka zaczyna się od węzła najwyższego poziomu i kończy się wraz z określonego symbolu. Na przykład jeśli metoda M1 jest składową klasy C1 C1 znajduje się w przestrzeni nazw N1, pełną ścieżkę metoda M1 jest N1. C1. M1. Ta ścieżka zawiera trzy węzły: N1, C1 i M1.  
+ Położenie symbolu w hierarchii odróżnia symbol. Umożliwia ona przechodzenie przez narzędzia do przeglądania symboli do określonego symbolu. Unikatowa, w pełni kwalifikowana ścieżka do symbolu określa lokalizację. Każdy element w ścieżce jest węzłem. Ścieżka rozpoczyna się od węzła najwyższego poziomu i zostaje zakończona określonym symbolem. Na przykład jeśli metoda M1 jest składową klasy C1, a C1 znajduje się w N1 przestrzeni nazw, pełna ścieżka metody M1 to N1. C1. M1. Ta ścieżka zawiera trzy węzły: N1, C1 i M1.  
   
- Informacje o nawigacji umożliwia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Menedżera obiektów, aby zlokalizować, zaznacz i zachować wybrane symbole w hierarchii. Umożliwia przechodzenie między jedno narzędzie do przeglądania do innego. Podczas korzystania z **przeglądarki obiektów** do przeglądania symboli w [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektu, kliknij prawym przyciskiem myszy metodę i rozpoczęcia mogą **przeglądarce wywołań** narzędzia, aby wyświetlić wykresu wywołań metody.  
+ Informacje o nawigacji umożliwiają [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] menedżerowi obiektów lokalizowanie, wybieranie i utrzymywanie wybranych symboli w hierarchii. Umożliwia nawigowanie po jednym narzędziu do przeglądania. Podczas używania **Przeglądarka obiektów** do przeglądania symboli w [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projekcie, można kliknąć prawym przyciskiem myszy metodę i uruchomić narzędzie **przeglądarka wywołań** , aby wyświetlić metodę w grafie wywołań.  
   
- Dwie formy opisują lokalizację symbolu. Forma kanoniczna opiera się na w pełni kwalifikowaną ścieżkę symbolu. Reprezentuje unikatową pozycję symbolu w hierarchii. Jest ono niezależne od narzędzia do przeglądania symboli. Aby uzyskać informacje forma kanoniczna [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obiekt Menedżera wywołań <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> metody. Prezentacja formularz opisuje Lokalizacja symbolu w określonym narzędziu przeglądania symboli. Pozycja znaku jest określana względem pozycji innych symboli w hierarchicy. Podanego symbolu może mieć wiele ścieżek prezentacji, ale tylko jedna ścieżka canonical. Na przykład, jeśli klasa C1 jest dziedziczona z klasy C2 i obie klasy w przestrzeni nazw N1 **przeglądarki obiektów** wyświetla następujące drzewa hierarchicznego:  
+ Dwa formularze opisują lokalizację symboli. Formularz kanoniczny jest oparty na w pełni kwalifikowanej ścieżce symbolu. Reprezentuje unikatową pozycję symbolu w hierarchii. Jest on niezależny od narzędzia do przeglądania symboli. Aby uzyskać informacje o formularzu kanonicznym, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Menedżer obiektów wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> metodę. Formularz prezentacji opisuje lokalizację symbolu w określonym narzędziu do przeglądania symboli. Pozycja symbolu jest względem pozycji innych symboli w hierarchicy. Dany symbol może mieć kilka ścieżek prezentacji, ale tylko jedną ścieżkę kanoniczną. Na przykład jeśli Klasa C1 jest dziedziczona z klasy C2 i obie klasy znajdują się w N1 przestrzeni nazw, **Przeglądarka obiektów** wyświetla następujące drzewo hierarchiczne:  
   
 ```  
 N1  
@@ -48,17 +48,17 @@ N1
   
 ```  
   
- Canonical ścieżka klasy C2, w tym przykładzie jest N1 + C2. Ścieżka prezentacji C2 zawiera węzły "Podstaw i interfejsy" i C1: N1 + C1 + "baz i interfejsy" + C2.  
+ Ścieżka kanoniczna klasy C2, w tym przykładzie, to N1 + C2. Ścieżka prezentacji C2 zawiera węzły C1 i "podstawowe i interfejsy": N1 + C1 + "bazy i interfejsy" + C2.  
   
- Uzyskiwania informacji formularza prezentacji, wywołań Menedżera obiektów <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> metody.  
+ Aby uzyskać informacje o formularzu prezentacji, Menedżer obiektów wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> metodę.  
   
-## <a name="identifying-a-symbol-in-the-hierarchy"></a>Identyfikowanie symboli w hierarchii  
+## <a name="identifying-a-symbol-in-the-hierarchy"></a>Identyfikowanie symbolu w hierarchii  
   
-#### <a name="to-obtain-canonical-and-presentation-forms-information"></a>Aby uzyskać canonical i prezentacji formularzy informacji  
+#### <a name="to-obtain-canonical-and-presentation-forms-information"></a>Aby uzyskać informacje o formularzach kanonicznych i prezentacji  
   
-1. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> metody.  
+1. Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> metodę.  
   
-     Menedżer obiektów wywołuje tę metodę, aby uzyskać listę węzłów znajdujących się w ścieżce canonical symbolu.  
+     Menedżer obiektów wywołuje tę metodę, aby uzyskać listę węzłów znajdujących się w ścieżce kanonicznej symbolu.  
   
     ```vb  
     Public Function EnumCanonicalNodes(ByRef ppEnum As Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes) As Integer  
@@ -79,11 +79,11 @@ N1
   
     ```  
   
-2. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> metody.  
+2. Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> metodę.  
   
      Menedżer obiektów wywołuje tę metodę, aby uzyskać listę węzłów znajdujących się w ścieżce prezentacji symbolu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Obsługa narzędzi do przeglądania symboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Instrukcje: Rejestrowanie biblioteki przy użyciu Menedżera obiektów](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Instrukcje: rejestrowanie biblioteki przy użyciu Menedżera obiektów](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
  [Instrukcje: uwidacznianie listy symboli udostępnianych przez bibliotekę dla menedżera obiektów](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

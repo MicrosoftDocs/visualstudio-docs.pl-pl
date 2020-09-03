@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fdecb8834f296d24cbd53d6725b800612f9bcf57
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770147"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>Instrukcje: eksportowanie diagramów klas jako obrazów
@@ -37,7 +37,7 @@ Aby wyeksportować Diagram klas, który został utworzony na podstawie kodu w pr
 
 Aby automatycznie aktualizować eksportowane obrazy połączone z innych dokumentów, należy ponownie wyeksportować diagram w programie Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Drukowanie diagramów klas](how-to-print-class-diagrams.md)
 - [Praca z diagramami klas](designing-and-viewing-classes-and-types.md)

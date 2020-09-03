@@ -54,10 +54,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23e4deba53288383a569f6da6e14d27f723825ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657381"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Narzędzia zestawów danych w programie Visual Studio
@@ -79,7 +79,7 @@ KORYGUJĄC
 
 - Określ relacje między tabelami, aby klucze obce były prawidłowo obsługiwane. Aby uzyskać więcej informacji, zobacz [Wypełnij zestawy danych za pomocą TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 
-- Użyj **Kreatora konfiguracji TableAdapter** , aby określić zapytanie lub procedurę przechowywaną, która będzie wypełniać zestaw danych, oraz operacje bazy danych (Aktualizuj, Usuń itd.) do wdrożenia. Aby uzyskać więcej informacji, zobacz następujące tematy:
+- Użyj **Kreatora konfiguracji TableAdapter** , aby określić zapytanie lub procedurę przechowywaną, która będzie wypełniać zestaw danych, oraz operacje bazy danych (Aktualizuj, Usuń itd.) do wdrożenia. Więcej informacji można znaleźć w następujących tematach:
 
   - [Wypełnianie zestawów danych za pomocą adapterów TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
 
@@ -89,7 +89,7 @@ KORYGUJĄC
 
   - [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
 
-- Wykonywanie zapytań i wyszukiwanie danych w zestawie danych. Aby uzyskać więcej informacji, zobacz [zestawy danych zapytań](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] umożliwia [LINQ (oparte na języku Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) za pośrednictwem danych w obiekcie <xref:System.Data.DataSet>. Aby uzyskać więcej informacji, zobacz [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
+- Wykonywanie zapytań i wyszukiwanie danych w zestawie danych. Aby uzyskać więcej informacji, zobacz [zestawy danych zapytań](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] włącza obsługę [LINQ (opartego na języku Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) za pośrednictwem danych w <xref:System.Data.DataSet> obiekcie. Aby uzyskać więcej informacji, zobacz [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
 
 - Użyj okna **źródła danych** , aby powiązać kontrolki interfejsu użytkownika z zestawem danych lub jego indywidualnymi kolumnami, a także określić, które kolumny mają być edytowane przez użytkownika. Aby uzyskać więcej informacji, zobacz [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 

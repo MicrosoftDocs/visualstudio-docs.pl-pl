@@ -1,5 +1,5 @@
 ---
-title: Element WizardExtension (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: WizardExtension —, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fd81b32861114d654aa794b992826589406b1df9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740373"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension — Element (szablony Visual Studio)
-Zawiera elementy rejestracji do dostosowywania kreatora szablonów.
+Zawiera elementy rejestracji do dostosowywania Kreatora szablonów.
 
- \<VSTemplate> ... \<> WizardExtension
+ \<VSTemplate> ... \<WizardExtension>
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,8 +45,8 @@ Zawiera elementy rejestracji do dostosowywania kreatora szablonów.
 
 |Element|Opis|
 |-------------|-----------------|
-|[Zestaw](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Element wymagany.<br /><br /> Określa nazwę lub silną nazwę zestawu, który pojawia się w globalnej pamięci podręcznej zestawów. Musi istnieć co `Assembly` najmniej `WizardExtension` jeden element w elemencie.|
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Element wymagany.<br /><br /> W pełni kwalifikowana nazwa klasy, `IWizard` która implementuje interfejs. Musi istnieć co `FullClassName` najmniej `WizardExtension` jeden element w elemencie.|
+|[Zestaw](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Element wymagany.<br /><br /> Określa nazwę lub silną nazwę zestawu, który pojawia się w globalnej pamięci podręcznej zestawów. Element musi zawierać co najmniej jeden `Assembly` element `WizardExtension` .|
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Element wymagany.<br /><br /> W pełni kwalifikowana nazwa klasy, która implementuje `IWizard` interfejs. Element musi zawierać co najmniej jeden `FullClassName` element `WizardExtension` .|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
@@ -55,10 +55,10 @@ Zawiera elementy rejestracji do dostosowywania kreatora szablonów.
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Zawiera wszystkie metadane szablonu projektu, szablonu elementu lub zestawu startowego.|
 
 ## <a name="remarks"></a>Uwagi
- `WizardExtension`jest opcjonalnym elementem podrzędnym . `VSTemplate`
+ `WizardExtension` jest opcjonalnym elementem podrzędnym `VSTemplate` .
 
 ## <a name="example"></a>Przykład
- Poniższy przykład ilustruje metadane dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] standardowego szablonu projektu dla aplikacji systemu Windows.
+ Poniższy przykład ilustruje metadane standardowego szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji systemu Windows.
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"

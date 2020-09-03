@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::AddPort | Dokumenty firmy Microsoft
+title: 'IDebugPortSupplier2:: AddPort | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 00954ceaa0ddd750a3d08e372d1edaa1905f01c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724736"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
@@ -43,16 +43,16 @@ int AddPort( 
 
 ## <a name="parameters"></a>Parametry
 `pRequest`\
-[w] [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) obiekt, który opisuje port, który ma zostać dodany.
+podczas Obiekt [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) , który opisuje port, który ma zostać dodany.
 
 `ppPort`\
-[na zewnątrz] Zwraca obiekt [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) reprezentujący port.
+określoną Zwraca obiekt [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) , który reprezentuje port.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda faktycznie tworzy żądany port, a także dodaje go do wewnętrznej listy aktywnych portów dostawcy portu. [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) Metoda może być wywołana najpierw, aby uniknąć możliwych czasochłonnych opóźnień.
+ Ta metoda w rzeczywistości tworzy żądany port, a także dodaje go do wewnętrznej listy aktywnych portów dostawcy portów. Metodę [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) można wywołać w pierwszej kolejności, aby uniknąć potencjalnych czasochłonnych opóźnień.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

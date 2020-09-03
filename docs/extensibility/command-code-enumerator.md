@@ -1,5 +1,5 @@
 ---
-title: Wyliczacz kodu polecenia | Dokumenty firmy Microsoft
+title: Moduł wyliczający kod polecenia | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 15916d26ac0120417205af0bb9117a45ec0397c6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739789"
 ---
-# <a name="command-code-enumerator"></a>Wyliczacz kodu polecenia
-Ten wyliczyć jest używany w opcjach [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) i [SccPopulateList,](../extensibility/sccpopulatelist-function.md)aby wskazać polecenie, dla którego opcje są określone.
+# <a name="command-code-enumerator"></a>Moduł wyliczający kod polecenia
+Ten moduł wyliczający jest używany w opcjach dla [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) i [SccPopulateList](../extensibility/sccpopulatelist-function.md), aby wskazać polecenie, dla którego są określone opcje.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,27 +40,27 @@ enum SCCCOMMAND {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-SCC_COMMAND_GET odpowiada [SccGet](../extensibility/sccget-function.md).
+SCC_COMMAND_GET odnosi się do [SccGet](../extensibility/sccget-function.md).
 
-SCC_COMMAND_CHECKOUT odpowiada [SccCheckout](../extensibility/scccheckout-function.md).
+SCC_COMMAND_CHECKOUT odnosi się do [SccCheckout](../extensibility/scccheckout-function.md).
 
-SCC_COMMAND_CHECKIN odpowiada [SccCheckin](../extensibility/scccheckin-function.md).
+SCC_COMMAND_CHECKIN odnosi się do [SccCheckin](../extensibility/scccheckin-function.md).
 
-SCC_COMMAND_UNCHECKOUT odpowiada [SccUncheckout](../extensibility/sccuncheckout-function.md).
+SCC_COMMAND_UNCHECKOUT odnosi się do [SccUncheckout](../extensibility/sccuncheckout-function.md).
 
-SCC_COMMAND_ADD odpowiada [SccAdd](../extensibility/sccadd-function.md).
+SCC_COMMAND_ADD odnosi się do [SccAdd](../extensibility/sccadd-function.md).
 
-SCC_COMMAND_REMOVE odpowiada [SccRemove](../extensibility/sccremove-function.md).
+SCC_COMMAND_REMOVE odnosi się do [SccRemove](../extensibility/sccremove-function.md).
 
-SCC_COMMAND_DIFF odpowiada [SccDiff](../extensibility/sccdiff-function.md).
+SCC_COMMAND_DIFF odnosi się do [SccDiff](../extensibility/sccdiff-function.md).
 
-SCC_COMMAND_HISTORY odpowiada [SccHistory](../extensibility/scchistory-function.md).
+SCC_COMMAND_HISTORY odnosi się do [SccHistory](../extensibility/scchistory-function.md).
 
-SCC_COMMAND_RENAME odpowiada [SccRename](../extensibility/sccrename-function.md).
+SCC_COMMAND_RENAME odnosi się do [SccRename](../extensibility/sccrename-function.md).
 
-SCC_COMMAND_PROPERTIES odpowiada [właściwościom SccProperties](../extensibility/sccproperties-function.md).
+SCC_COMMAND_PROPERTIES odnosi się do [SccProperties](../extensibility/sccproperties-function.md).
 
-SCC_COMMAND_OPTIONS odpowiada [SccSetOption](../extensibility/sccsetoption-function.md).
+SCC_COMMAND_OPTIONS odnosi się do [SccSetOption](../extensibility/sccsetoption-function.md).
 
 ## <a name="see-also"></a>Zobacz też
 - [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)

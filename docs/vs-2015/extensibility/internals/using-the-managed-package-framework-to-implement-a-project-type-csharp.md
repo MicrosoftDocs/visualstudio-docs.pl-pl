@@ -1,5 +1,5 @@
 ---
-title: Implementowanie typu projektu przy użyciu struktury pakietu zarządzanego (C#) | Microsoft Docs
+title: Implementowanie typu projektu przy użyciu struktury pakietów zarządzanych (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 066695c6d94603d0a0474243ed05dece4cc0bd1f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300363"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Implementowanie typu projektu przy użyciu środowiska pakietu zarządzanego (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Struktura pakietu zarządzanego (MPF) zawiera C# klasy, których można użyć lub dziedziczenie w celu zaimplementowania własnych typów projektów. MPF implementuje wiele interfejsów program Visual Studio oczekuje typu projektu, który należy podać, dzięki czemu możesz skoncentrować się na implementowaniu szczegółowych informacji o typie projektu.  
+Struktura pakietu zarządzanego (MPF) zawiera klasy języka C#, których można użyć lub dziedziczyły z, aby zaimplementować własne typy projektów. MPF implementuje wiele interfejsów program Visual Studio oczekuje typu projektu, który należy podać, dzięki czemu możesz skoncentrować się na implementowaniu szczegółowych informacji o typie projektu.  
   
 ## <a name="using-the-mpf-project-source-code"></a>Korzystanie z kodu źródłowego projektu MPF  
  Struktura pakietów zarządzanych dla projektów (MPFProj) zapewnia klasy pomocników do tworzenia nowego systemu projektu i zarządzania nim. W przeciwieństwie do innych klas w MPF, klasy projektu nie są uwzględnione w zestawach dostarczanych z programem Visual Studio. Zamiast tego klasy projektu są dostarczane jako kod źródłowy w [MPF for projects 2013](https://archive.codeplex.com/?p=mpfproj12).  
@@ -44,7 +44,7 @@ Struktura pakietu zarządzanego (MPF) zawiera C# klasy, których można użyć l
   
 2. Zwolnij projekt pakietu VSPackage.  
   
-3. Edytuj plik pakietu VSPackage. csproj, dodając następujący blok przed innymi blokami `<Import>`:  
+3. Edytuj plik pakietu VSPackage. csproj, dodając następujący blok przed innymi `<Import>` blokami:  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -64,7 +64,7 @@ Struktura pakietu zarządzanego (MPF) zawiera C# klasy, których można użyć l
   
 4. Dodaj następujące odwołanie do projektu pakietu VSPackage:  
   
-     Microsoft.Build.Tasks.4.0  
+     Microsoft. Build. Tasks. 4.0  
   
 5. Skompiluj projekt.  
   

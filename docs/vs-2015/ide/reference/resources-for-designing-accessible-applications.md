@@ -15,22 +15,22 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af300bca2b1e679eae58a92962067fcd50fea78f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297795"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Zasoby do projektowania dostępnych aplikacji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Skorzystaj z poniższych linków, aby uzyskać informacje o technologiach, które obsługują dostępny projekt, a także porady i przykłady dotyczące tworzenia dostępnych aplikacji i witryn sieci Web systemu Windows. Ogólne informacje dotyczące ułatwień dostępu można znaleźć w witrynie online w [http://www.microsoft.com/enable/](https://www.microsoft.com/accessibility/).
+Skorzystaj z poniższych linków, aby uzyskać informacje o technologiach, które obsługują dostępny projekt, a także porady i przykłady dotyczące tworzenia dostępnych aplikacji i witryn sieci Web systemu Windows. Ogólne informacje o ułatwieniach dostępu można znaleźć w witrynie online [http://www.microsoft.com/enable/](https://www.microsoft.com/accessibility/) .
 
-## <a name="technologies"></a>Technologies
+## <a name="technologies"></a>Technologie
 
 - **Microsoft Active Accessibility** Technologia oparta na modelu COM, która ulepsza sposób, w jaki ułatwienia dostępu ułatwiają współpracę z aplikacjami uruchomionymi w systemie Microsoft Windows. Zawiera biblioteki dołączane dynamicznie, które są włączone do systemu operacyjnego, a także interfejsy COM i aplikacje programowania aplikacji, które zapewniają niezawodne metody ujawniania informacji o elementach interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [https://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx).
 
-- **Microsoft .NET technologiami mowy** Zestaw SDK mowy Microsoft .NET to zbiór kontrolek [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] firmy Microsoft, dodatek Microsoft Internet Explorer Speech, przykładowe aplikacje i dokumentacja, które umożliwiają deweloperom sieci Web Tworzenie, debugowanie i wdrażanie aplikacji [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] z obsługą mowy. Narzędzia są bezproblemowo zintegrowane z Microsoft Visual Studio, dzięki czemu deweloperzy mogą korzystać z znanego środowiska deweloperskiego. Aby uzyskać więcej informacji, zobacz [https://msdn.microsoft.com/library/ms950383.aspx](https://msdn.microsoft.com/library/ms950383.aspx).
+- **Microsoft .NET technologiami mowy** Zestaw SDK mowy Microsoft .NET to zbiór formantów firmy Microsoft [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] , dodatek Microsoft Internet Explorer Speech, przykładowe aplikacje i dokumentacja, które umożliwiają deweloperom sieci Web Tworzenie, debugowanie i wdrażanie aplikacji obsługujących mowę [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] . Narzędzia są bezproblemowo zintegrowane z Microsoft Visual Studio, dzięki czemu deweloperzy mogą korzystać z znanego środowiska deweloperskiego. Aby uzyskać więcej informacji, zobacz [https://msdn.microsoft.com/library/ms950383.aspx](https://msdn.microsoft.com/library/ms950383.aspx).
 
 - **Zrozumienie lapoński 1,0** Technologia Microsoft Synchronized Accessible Media Interchange (SAMI) oferuje deweloperom możliwość podpisania zawartości audio dla multimediów na komputerze. Aby uzyskać więcej informacji, zobacz [https://msdn.microsoft.com/library/ms971327.aspx](https://msdn.microsoft.com/library/ms971327.aspx).
 

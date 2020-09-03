@@ -10,10 +10,10 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 7583848c4bbe38f9094c60998e16ca3e95cf399f
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88643534"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>Dodawanie pamięci podręcznej platformy Azure dla Redis przy użyciu usług połączonych programu Visual Studio
@@ -51,7 +51,7 @@ Funkcja połączonej usługi dodaje wszystkie konieczne odwołania i kod połąc
 
 1. Na stronie **Dodawanie zależności** wybierz pozycję **pamięć podręczna platformy Azure dla Redis**.
 
-    ![Dodawanie pamięci podręcznej platformy Azure dla usługi Redis](./media/azure-redis-cache-add-connected-service/azure-redis-cache.png)
+    ![Dodawanie usługi Azure Cache for Redis](./media/azure-redis-cache-add-connected-service/azure-redis-cache.png)
 
     Zaloguj się do konta platformy Azure, jeśli jeszcze nie zalogowano się. Jeśli nie masz konta platformy Azure, możesz zarejestrować się, aby skorzystać z [bezpłatnej wersji próbnej](https://azure.microsoft.com/account/free).
 

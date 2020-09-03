@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: f23f5bb2588c179f47593b1ecbcf5d6cd7fa9f0d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349760"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Debugowanie aplikacji platformy ASP.NET lub ASP.NET Core w programie Visual Studio
@@ -138,9 +138,9 @@ Projekty ASP.NET mają domyślnie pliki *web.config* , które zawierają zarówn
    </configuration>
    ```
 
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]Program automatycznie wykrywa wszelkie zmiany w plikach *web.config* i stosuje nowe ustawienia konfiguracji. Aby zmiany zaczęły obowiązywać, nie trzeba ponownie uruchamiać komputera ani serwera usług IIS.
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Program automatycznie wykrywa wszelkie zmiany w plikach *web.config* i stosuje nowe ustawienia konfiguracji. Aby zmiany zaczęły obowiązywać, nie trzeba ponownie uruchamiać komputera ani serwera usług IIS.
 
-Witryna sieci Web może zawierać kilka katalogów wirtualnych i podkatalogów, w których *web.config* pliki w każdym z nich. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]aplikacje dziedziczą ustawienia konfiguracji z plików *web.config* na wyższych poziomach w ścieżce URL. Ustawienia hierarchicznych plików *web.config* są stosowane do wszystkich [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji znajdujących się poniżej w hierarchii. Ustawienie innej konfiguracji w pliku *web.config* dolnym w hierarchii przesłania ustawienia w wyższym pliku.
+Witryna sieci Web może zawierać kilka katalogów wirtualnych i podkatalogów, w których *web.config* pliki w każdym z nich. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacje dziedziczą ustawienia konfiguracji z plików *web.config* na wyższych poziomach w ścieżce URL. Ustawienia hierarchicznych plików *web.config* są stosowane do wszystkich [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji znajdujących się poniżej w hierarchii. Ustawienie innej konfiguracji w pliku *web.config* dolnym w hierarchii przesłania ustawienia w wyższym pliku.
 
 Na przykład w przypadku określenia `debug="true"` w <em>www.Microsoft.com/AAA/web.config</em>każda aplikacja w folderze *AAA* lub w dowolnym podfolderze *AAA* dziedziczy to ustawienie, z wyjątkiem tego, że jedna z tych aplikacji zastępuje ustawienie własnym *web.config* plikiem.
 
@@ -175,7 +175,7 @@ Istnieją różne sposoby publikowania aplikacji w usługach IIS. W tych krokach
 
 1. W oknie dialogowym **Publikowanie** upewnij się, że jest wyświetlana **CustomProfile** (lub nazwa utworzonego właśnie profilu), a **LastUsedBuildConfiguration** jest ustawiona na **Debuguj**.
 
-1. Wybierz polecenie **Publikuj**.
+1. Wybierz pozycję **Opublikuj**.
 
     ![Publikowanie w usługach IIS](media/dbg-aspnet-local-iis-select-site.png "Publikowanie w usługach IIS")
 

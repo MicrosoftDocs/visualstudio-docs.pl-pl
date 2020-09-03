@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses::GetCount | Dokumentacja firmy Microsoft
+title: 'IEnumDebugAddresses:: GetCount | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f90d1a24a084d054e612e3257b9009d4615deb06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191963"
 ---
 # <a name="ienumdebugaddressesgetcount"></a>IEnumDebugAddresses::GetCount
@@ -40,13 +40,13 @@ int GetCount(
   
 #### <a name="parameters"></a>Parametry  
  `pcelt`  
- [out] Zwraca liczbę elementów w wyliczeniu.  
+ określoną Zwraca liczbę elementów w wyliczeniu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda nie jest częścią zwyczajowego interfejsu wyliczenie COM, który określa, że tylko dalej, klonowania, Pomiń i resetowania muszą zostać zaimplementowane.  
+ Ta metoda nie jest częścią niestandardowego interfejsu wyliczania modelu COM, który określa, że należy zaimplementować tylko następne, klonowanie, pomijanie i resetowanie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)
