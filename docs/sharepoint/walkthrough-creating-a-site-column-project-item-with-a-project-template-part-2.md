@@ -12,9 +12,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c3b84d901a1fd94d72ff14ec5c481e04676c5cbc
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016403"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Przewodnik: Tworzenie elementu projektu kolumny witryny z szablonem projektu, część 2
@@ -86,7 +87,7 @@ ms.locfileid: "86016403"
 
 5. Na liście szablonów projektu wybierz pozycję **Biblioteka formantów użytkownika WPF**, nazwij projekt **ProjectTemplateWizard**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **ProjectTemplateWizard** do rozwiązania i otwiera domyślny plik UserControl1. XAML.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **ProjectTemplateWizard** do rozwiązania i otwiera domyślny plik UserControl1. XAML.
 
 6. Usuń plik UserControl1. XAML z projektu.
 
@@ -96,11 +97,11 @@ ms.locfileid: "86016403"
 
 2. W górnej części okna dialogowego **Dodaj nowy projekt** wybierz pozycję **.NET Framework 3,5** na liście wersji .NET Framework.
 
-3. Rozwiń węzeł **Visual C#** lub węzeł **Visual Basic** , a następnie wybierz węzeł **systemu Windows** .
+3. Rozwiń węzeł **Visual C#** lub węzeł  **Visual Basic** , a następnie wybierz węzeł **systemu Windows** .
 
 4. Wybierz szablon projektu **Biblioteka klas** , nazwij projekt **SharePointCommands**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **SharePointCommands** do rozwiązania i otwiera domyślny plik kodu Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **SharePointCommands** do rozwiązania i otwiera domyślny plik kodu Class1.
 
 5. Usuń plik kodu Class1 z projektu.
 
@@ -165,13 +166,13 @@ ms.locfileid: "86016403"
 
 1. W **Eksplorator rozwiązań**wybierz węzeł projektu **SharePointCommands** .
 
-2. Na pasku menu wybierz **projekt**, **Dodaj istniejący element**.
+2. Na pasku menu wybierz **projekt**,  **Dodaj istniejący element**.
 
 3. W oknie dialogowym **Dodaj istniejący element** przejdź do folderu, który zawiera pliki kodu dla projektu ProjectTemplateWizard, a następnie wybierz plik kodu **CommandIds** .
 
 4. Wybierz strzałkę obok przycisku **Dodaj** , a następnie wybierz opcję **Dodaj jako łącze** w wyświetlonym menu.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje plik kodu do projektu **SharePointCommands** jako link. Plik kodu znajduje się w projekcie **ProjectTemplateWizard** , ale kod w pliku jest również kompilowany w projekcie **SharePointCommands** .
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje plik kodu do projektu **SharePointCommands** jako link. Plik kodu znajduje się w projekcie **ProjectTemplateWizard** , ale kod w pliku jest również kompilowany w projekcie **SharePointCommands** .
 
 5. W projekcie **SharePointCommands** Dodaj inny plik kodu o nazwie Commands.
 
@@ -537,7 +538,7 @@ ms.locfileid: "86016403"
 
      Aby uzyskać informacje o sposobach wdrażania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzeń, zobacz [wysyłanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przewodnik: Tworzenie elementu projektu kolumny witryny z szablonem projektu, część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
 - [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Tworzenie szablonów elementów i szablonów projektu dla elementów projektu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

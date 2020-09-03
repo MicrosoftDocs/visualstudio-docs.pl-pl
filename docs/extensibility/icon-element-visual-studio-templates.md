@@ -1,5 +1,5 @@
 ---
-title: Element ikony (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: Icon — element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff725e2db0d74e571b8c41d8a8aa80228938fbff
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710532"
 ---
-# <a name="icon-element-visual-studio-templates"></a>Element ikony (szablony programu Visual Studio)
-Określa ścieżkę i nazwę pliku obrazu, który służy jako ikona, która pojawia się w oknie dialogowym **Nowy projekt** lub Dodaj **nowy element** dla szablonu.
+# <a name="icon-element-visual-studio-templates"></a>Icon — element (szablony Visual Studio)
+Określa ścieżkę i nazwę pliku obrazu, który służy jako ikona, która pojawia się w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** , dla szablonu.
 
- \<ikona> \<templatedata>> \<
+ \<VSTemplate> \<TemplateData>
+ \<Icon>
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,8 +45,8 @@ Określa ścieżkę i nazwę pliku obrazu, który służy jako ikona, która poj
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Package`|Opcjonalny atrybut dla zaawansowanych scenariuszy użytkownika.<br /><br /> Identyfikator GUID określający identyfikator pakietu programu Visual Studio.|
-|`ID`|Opcjonalny atrybut dla zaawansowanych scenariuszy użytkownika.<br /><br /> Określa identyfikator zasobu programu Visual Studio.|
+|`Package`|Opcjonalny atrybut, dla zaawansowanych scenariuszy użytkownika.<br /><br /> Identyfikator GUID, który określa identyfikatora pakietu programu Visual Studio.|
+|`ID`|Opcjonalny atrybut, dla zaawansowanych scenariuszy użytkownika.<br /><br /> Określa identyfikator zasobu programu Visual Studio.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
@@ -54,15 +55,15 @@ Określa ścieżkę i nazwę pliku obrazu, który służy jako ikona, która poj
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
- Wartość tekstowa jest `Package` wymagana, `ID` chyba że używane są atrybuty i.
+ Wartość tekstowa jest wymagana, jeśli `Package` nie `ID` są używane atrybuty i.
 
- Tekst zawiera ścieżkę i nazwę pliku ikony szablonu, która pojawi się w oknie dialogowym **Nowy projekt.**
+ Tekst zawiera ścieżkę i nazwę pliku ikony szablonu, która zostanie wyświetlona w oknie dialogowym **Nowy projekt** .
 
 ## <a name="remarks"></a>Uwagi
- `Icon`jest wymaganym elementem `TemplateData`podrzędnym .
+ `Icon` jest wymaganym elementem podrzędnym `TemplateData` .
 
 ## <a name="example"></a>Przykład
  W poniższym przykładzie przedstawiono metadane dla szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.

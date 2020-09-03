@@ -11,10 +11,10 @@ caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e89b3f04a3e0e1dcd0cc29e57e09b1c71fbc2279
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545551"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analiza problemów pamięci .NET Framework
@@ -28,7 +28,7 @@ Znajdowanie przecieków pamięci i niewydajne użycie pamięci w .NET Framework 
   
   Przewodnik dotyczący analizatora pamięci zarządzanej znajduje się w temacie [używanie Visual Studio 2013 do diagnozowania problemów z pamięcią .NET w środowisku produkcyjnym](https://devblogs.microsoft.com/devops/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production/) na blogu programu Visual Studio ALM + Team Foundation Server.  
   
-## <a name="contents"></a><a name="BKMK_Contents"></a>Contents  
+## <a name="contents"></a><a name="BKMK_Contents"></a> Contents  
  [Użycie pamięci w aplikacjach .NET Framework](#BKMK_Memory_use_in__NET_Framework_apps)  
   
  [Identyfikowanie problemu z pamięcią w aplikacji](#BKMK_Identify_a_memory_issue_in_an_app)  
@@ -37,7 +37,7 @@ Znajdowanie przecieków pamięci i niewydajne użycie pamięci w .NET Framework 
   
  [Analizowanie użycia pamięci](#BKMK_Analyze_memory_use)  
   
-## <a name="memory-use-in-net-framework-apps"></a><a name="BKMK_Memory_use_in__NET_Framework_apps"></a>Użycie pamięci w aplikacjach .NET Framework  
+## <a name="memory-use-in-net-framework-apps"></a><a name="BKMK_Memory_use_in__NET_Framework_apps"></a> Użycie pamięci w aplikacjach .NET Framework  
  .NET Framework to środowisko uruchomieniowe środowiska wykonawczego, więc w większości aplikacji użycie pamięci nie jest problemem. Jednak w długotrwałych aplikacjach, takich jak usługi sieci Web i aplikacje, a w przypadku urządzeń z ograniczoną ilością pamięci, nagromadzenie obiektów w pamięci może mieć wpływ na wydajność aplikacji i urządzenie, na którym działa. Nadmierne wykorzystanie pamięci może zablokować dostęp aplikację i maszynę zasobów, jeśli moduł wyrzucania elementów bezużytecznych jest uruchomiony zbyt często lub jeśli system operacyjny jest zmuszony do przenoszenia pamięci między pamięcią RAM a dyskiem. W najgorszym przypadku aplikacja może ulec awarii z wyjątkiem wyjątku "Brak pamięci".  
   
  *Sterta zarządzana* przez platformę .NET to region pamięci wirtualnej, w którym są przechowywane obiekty referencyjne utworzone przez aplikację. Okres istnienia obiektów jest zarządzany przez moduł wyrzucania elementów bezużytecznych (GC). Moduł zbierający elementy bezużyteczne używa odwołań do śledzenia obiektów, które zajmują bloki pamięci. Odwołanie jest tworzone podczas tworzenia obiektu i przypisywania go do zmiennej. Pojedynczy obiekt może mieć wiele odwołań. Na przykład dodatkowe odwołania do obiektu można utworzyć przez dodanie obiektu do klasy, kolekcji lub innej struktury danych lub przez przypisanie obiektu do drugiej zmiennej. Mniej oczywisty sposób tworzenia odwołania polega na tym, że jeden obiekt dodaje procedurę obsługi do zdarzenia innego obiektu. W takim przypadku drugi obiekt przechowuje odwołanie do pierwszego obiektu do momentu usunięcia jawnie procedury obsługi lub zerwania drugiego obiektu.  
@@ -46,7 +46,7 @@ Znajdowanie przecieków pamięci i niewydajne użycie pamięci w .NET Framework 
   
  ![Z powrotem do najwyższej](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
-## <a name="identify-a-memory-issue-in-an-app"></a><a name="BKMK_Identify_a_memory_issue_in_an_app"></a>Identyfikowanie problemu z pamięcią w aplikacji  
+## <a name="identify-a-memory-issue-in-an-app"></a><a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Identyfikowanie problemu z pamięcią w aplikacji  
  Najbardziej widocznym objawem problemów z pamięcią jest wydajność aplikacji, szczególnie w przypadku obniżenia wydajności w czasie. Spadek wydajności innych aplikacji, gdy aplikacja jest uruchomiona, może również oznaczać problem z pamięcią. Jeśli podejrzewasz problem z pamięcią, użyj narzędzia, takiego jak Menedżer zadań lub [Monitor wydajności systemu Windows](https://technet.microsoft.com/library/cc749249.aspx) , aby dokładniej zbadać. Na przykład poszukaj wzrostu w łącznym rozmiarze pamięci, której nie można wyjaśnić jako możliwego źródła przecieków pamięci:  
   
  ![Spójny wzrost ilości pamięci w Monitor zasobów](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
@@ -55,7 +55,7 @@ Znajdowanie przecieków pamięci i niewydajne użycie pamięci w .NET Framework 
   
  ![Maksymalne ilości pamięci w Menedżer zasobów](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
-## <a name="collect-memory-snapshots"></a><a name="BKMK_Collect_memory_snapshots"></a>Zbieranie migawek pamięci  
+## <a name="collect-memory-snapshots"></a><a name="BKMK_Collect_memory_snapshots"></a> Zbieranie migawek pamięci  
  Narzędzie do analizy pamięci analizuje informacje w *plikach zrzutu* , które zawierają informacje o stercie. Pliki zrzutu można tworzyć w programie Visual Studio lub za pomocą narzędzia, takiego jak [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) z [Windows Sysinternals](https://technet.microsoft.com/sysinternals). Zobacz artykuł [co to jest zrzut i jak go utworzyć?](https://blogs.msdn.microsoft.com/debugger/2009/12/30/what-is-a-dump-and-how-do-i-create-one/) na blogu zespołu debugera programu Visual Studio.  
   
 > [!NOTE]
@@ -75,7 +75,7 @@ Znajdowanie przecieków pamięci i niewydajne użycie pamięci w .NET Framework 
   
    ![Z powrotem do najwyższej](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
-## <a name="analyze-memory-use"></a><a name="BKMK_Analyze_memory_use"></a>Analizowanie użycia pamięci  
+## <a name="analyze-memory-use"></a><a name="BKMK_Analyze_memory_use"></a> Analizowanie użycia pamięci  
  [Przefiltruj listę obiektów,](#BKMK_Filter_the_list_of_objects) **&#124;** [analizować dane pamięci w ramach jednej migawki](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [porównać dwie migawki pamięci](#BKMK_Compare_two_memory_snapshots)  
   
  Aby przeanalizować plik zrzutu pod kątem problemów z użyciem pamięci:  
@@ -90,7 +90,7 @@ Znajdowanie przecieków pamięci i niewydajne użycie pamięci w .NET Framework 
   
    ![Z powrotem do najwyższej](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
-### <a name="filter-the-list-of-objects"></a><a name="BKMK_Filter_the_list_of_objects"></a>Filtrowanie listy obiektów  
+### <a name="filter-the-list-of-objects"></a><a name="BKMK_Filter_the_list_of_objects"></a> Filtrowanie listy obiektów  
  Domyślnie Analizator pamięci filtruje listę obiektów w migawce pamięci, aby wyświetlić tylko typy i wystąpienia, które są kodem użytkownika, i wyświetlić tylko te typy, których łączny rozmiar włącznie przekracza próg procentowy całkowitego rozmiaru sterty. Te opcje można zmienić na liście **Wyświetl ustawienia** :  
   
 |Nazwa|Opis|  
@@ -102,7 +102,7 @@ Znajdowanie przecieków pamięci i niewydajne użycie pamięci w .NET Framework 
   
  ![Z powrotem do najwyższej](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
-### <a name="analyze-memory-data-in-from-a-single-snapshot"></a><a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a>Analizowanie danych pamięci z pojedynczej migawki  
+### <a name="analyze-memory-data-in-from-a-single-snapshot"></a><a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Analizowanie danych pamięci z pojedynczej migawki  
  Program Visual Studio uruchamia nową sesję debugowania, aby przeanalizować plik i wyświetlał dane pamięci w oknie widoku sterty.  
   
  ![Lista typów obiektów](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
@@ -157,7 +157,7 @@ Znajdowanie przecieków pamięci i niewydajne użycie pamięci w .NET Framework 
   
 |Adnotacja|Opis|  
 |----------------|-----------------|  
-|**Zmienna statyczna**`VariableName`|Zmienna statyczna. `VariableName`to nazwa zmiennej.|  
+|**Zmienna statyczna**`VariableName`|Zmienna statyczna. `VariableName` to nazwa zmiennej.|  
 |**Uchwyt finalizacji**|Odwołanie z kolejki finalizatora|  
 |**Zmienna lokalna**|Zmienna lokalna.|  
 |**Silne dojście**|Dojście do silnego odwołania z tabeli uchwytów obiektów.|  
@@ -168,7 +168,7 @@ Znajdowanie przecieków pamięci i niewydajne użycie pamięci w .NET Framework 
 |**Dojście dojście SizedRef**|Silne dojście, które utrzymuje przybliżony rozmiar całego rozłącznego zamykania wszystkich obiektów i katalogów głównych obiektów w czasie odzyskiwania pamięci.|  
 |**Przypięta zmienna lokalna**|Przypięta zmienna lokalna.|  
   
-### <a name="compare-two-memory-snapshots"></a><a name="BKMK_Compare_two_memory_snapshots"></a>Porównanie dwóch migawek pamięci  
+### <a name="compare-two-memory-snapshots"></a><a name="BKMK_Compare_two_memory_snapshots"></a> Porównanie dwóch migawek pamięci  
  Można porównać dwa pliki zrzutu procesu, aby znaleźć obiekty, które mogą być przyczyną przecieków pamięci. Interwał między kolekcją pierwszego (wcześniejszego) i drugiego (nowszego) pliku powinien być wystarczająco duży, aby wzrost liczby przecieków obiektów był łatwo widoczny. Aby porównać te dwa pliki:  
   
 1. Otwórz drugi plik zrzutu, a następnie wybierz polecenie **Debuguj pamięć zarządzaną** na stronie **podsumowania pliku minizrzutu** .  

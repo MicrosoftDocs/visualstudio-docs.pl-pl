@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ce295e299e4accb2d79655675f6264a1497b8d69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546188"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Instrukcje: dane z pamięci podręcznej do użycia w trybie offline lub na serwerze
@@ -59,7 +59,7 @@ ms.locfileid: "85546188"
 
 4. W oknie **Właściwości** ustaw właściwość **Modyfikatory** na **Public** (domyślnie jest to wartość **wewnętrzna**).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dane pamięci podręcznej](../vsto/caching-data.md)
 - [Instrukcje: programowane buforowanie źródła danych w dokumencie pakietu Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [Instrukcje: buforowanie danych w dokumencie chronionym hasłem](../vsto/how-to-cache-data-in-a-password-protected-document.md)

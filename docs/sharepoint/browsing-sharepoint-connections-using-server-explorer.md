@@ -17,9 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: baf580ace98ab14032de1e9a3edf18af2b2cfee8
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016352"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Przeglądanie połączeń programu SharePoint przy użyciu Eksplorator serwera
@@ -48,5 +49,5 @@ ms.locfileid: "86016352"
 |-----------|-----------------|
 |[Instrukcje: Dodawanie lub usuwanie połączeń programu SharePoint](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Zawiera opis czynności, które są wymagane do dodania nowej witryny programu SharePoint do węzła **połączenia programu SharePoint** w **Eksplorator serwera**.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

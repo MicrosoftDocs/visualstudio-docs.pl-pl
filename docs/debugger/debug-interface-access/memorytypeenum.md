@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2cd255ab59c9d46676ba46baddd9cee7e3ef4cc2
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461183"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
@@ -34,13 +34,13 @@ enum MemoryTypeEnum {
 ```
 
 #### <a name="parameters"></a>Parametry
-`MemTypeCode`Uzyskuje dostęp tylko do pamięci kodowej.
+`MemTypeCode` Uzyskuje dostęp tylko do pamięci kodowej.
 
-`MemTypeData`Uzyskuje dostęp do danych lub pamięci stosu.
+`MemTypeData` Uzyskuje dostęp do danych lub pamięci stosu.
 
-`MemTypeStack`Uzyskuje dostęp tylko do pamięci stosu.
+`MemTypeStack` Uzyskuje dostęp tylko do pamięci stosu.
 
-`MemTypeAny`Uzyskuje dostęp do dowolnego rodzaju pamięci.
+`MemTypeAny` Uzyskuje dostęp do dowolnego rodzaju pamięci.
 
 ## <a name="remarks"></a>Uwagi
 Wartości w tym wyliczeniu są przesyłane do metody [IDiaStackWalkHelper:: ReadMemory —](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) w celu ograniczenia dostępu do różnych typów pamięci.

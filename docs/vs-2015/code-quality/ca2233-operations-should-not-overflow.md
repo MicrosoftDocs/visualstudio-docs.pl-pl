@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: eff09fb8f4423560c4681c94507d909f5864c69e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545239"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Operacje nie powinny powodować przepełnienia
@@ -47,7 +47,7 @@ ms.locfileid: "85545239"
 ## <a name="example-of-a-violation"></a>Przykład naruszenia
 
 ### <a name="description"></a>Opis
- Metoda w poniższym przykładzie operuje liczbą całkowitą, która narusza tę regułę. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]wymaga wyłączenia opcji przepełnienia **liczby całkowitej** , aby można było ją uruchomić.
+ Metoda w poniższym przykładzie operuje liczbą całkowitą, która narusza tę regułę. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] wymaga wyłączenia opcji przepełnienia **liczby całkowitej** , aby można było ją uruchomić.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Usage.OperationOverflow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/cs/FxCop.Usage.OperationOverflow.cs#1)]

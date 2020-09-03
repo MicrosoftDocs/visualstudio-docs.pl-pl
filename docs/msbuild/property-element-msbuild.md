@@ -1,5 +1,5 @@
 ---
-title: Element właściwości (MSBuild) | Dokumenty firmy Microsoft
+title: Property — element (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e50a6dd66c2dca7fa4159c578ccd334ed1d26cae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632956"
 ---
-# <a name="property-element-msbuild"></a>Element właściwości (MSBuild)
+# <a name="property-element-msbuild"></a>Property — element (MSBuild)
 
-Zawiera nazwę i wartość właściwości zdefiniowanej przez użytkownika. Każda właściwość używana w projekcie MSBuild musi `PropertyGroup` być określona jako element podrzędny elementu.
+Zawiera nazwę i wartość właściwości zdefiniowane przez użytkownika. Każda właściwość użyta w projekcie programu MSBuild musi być określona jako element podrzędny `PropertyGroup` elementu.
 
- \<> \<> PropertyGroup projektu
+ \<Project> \<PropertyGroup>
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,7 +45,7 @@ Zawiera nazwę i wartość właściwości zdefiniowanej przez użytkownika. Każ
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do oceny. Aby uzyskać więcej informacji, zobacz [Warunki](../msbuild/msbuild-conditions.md).|
+|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
@@ -55,21 +55,21 @@ Zawiera nazwę i wartość właściwości zdefiniowanej przez użytkownika. Każ
 
 |Element|Opis|
 |-------------|-----------------|
-|[Propertygroup](../msbuild/propertygroup-element-msbuild.md)|Element grupowania właściwości.|
+|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Element grupujący dla właściwości.|
 
 ## <a name="text-value"></a>Wartość tekstowa
 
  Wartość tekstowa jest opcjonalna.
 
- Ten tekst określa wartość właściwości i może zawierać kod XML.
+ Ten tekst Określa wartość właściwości i może zawierać kod XML.
 
 ## <a name="remarks"></a>Uwagi
 
- Nazwy właściwości są ograniczone tylko do znaków ASCII. Wartości właściwości są odwoływane w projekcie, umieszczając`$(`nazwę`)`właściwości między " " i " ".Property values are referenceed in the project by placing the property name between " " and " ". Na przykład `$(builddir)\classes` można rozwiązać *build\classes* `builddir` , jeśli `build`właściwość miała wartość . Aby uzyskać więcej informacji na temat właściwości, zobacz [MSBuild właściwości](../msbuild/msbuild-properties.md).
+ Nazwy właściwości są ograniczone tylko do znaków ASCII. Wartości właściwości są przywoływane w projekcie przez umieszczenie nazwy właściwości między " `$(` " i " `)` ". Na przykład `$(builddir)\classes` rozwiązanie to *build\classes*, jeśli `builddir` Właściwość miała wartość `build` . Aby uzyskać więcej informacji na temat właściwości, zobacz [Właściwości programu MSBuild](../msbuild/msbuild-properties.md).
 
 ## <a name="example"></a>Przykład
 
- Poniższy kod `Optimization` ustawia `false` właściwość `DefaultVersion` i `1.0` właściwość, jeśli właściwość jest pusta. `Version`
+ Poniższy kod ustawia `Optimization` Właściwość na `false` i `DefaultVersion` Właściwość na, `1.0` Jeśli `Version` Właściwość jest pusta.
 
 ```xml
 <PropertyGroup>
@@ -80,5 +80,5 @@ Zawiera nazwę i wartość właściwości zdefiniowanej przez użytkownika. Każ
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Właściwości MSBuild](../msbuild/msbuild-properties.md)
+- [właściwości programu MSBuild](../msbuild/msbuild-properties.md)
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)

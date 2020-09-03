@@ -1,5 +1,5 @@
 ---
-title: Dodawanie katalogów do okna dialogowego Dodawanie nowego elementu | Dokumenty firmy Microsoft
+title: Dodawanie katalogów do okna dialogowego Dodaj nowy element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d4af79f95c87271e9a10eece6c728daa9a81305
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710252"
 ---
-# <a name="add-directories-to-the-add-new-item-dialog-box"></a>Dodawanie katalogów do okna dialogowego Dodawanie nowego elementu
-Poniższy przykład kodu pokazuje, jak zarejestrować nowy zestaw katalogów dla okna dialogowego **Dodawanie nowego elementu.** Katalogi okna dialogowego **Dodawanie nowego elementu** są różne dla każdego projektu. W związku z tym katalogi są rejestrowane w podkluczu **Projekty,** znalezionym w **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects**.
+# <a name="add-directories-to-the-add-new-item-dialog-box"></a>Dodawanie katalogów do okna dialogowego Dodaj nowy element
+Poniższy przykład kodu demonstruje sposób rejestrowania nowego zestawu katalogów dla okna dialogowego **Dodaj nowy element** . Katalogi dla okna dialogowego **Dodawanie nowego elementu** są różne dla każdego projektu. W związku z tym katalogi są rejestrowane w podkluczu **projekty** , które znajdują się w **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0Exp\Projects**.
 
 ## <a name="registry-script"></a>Skrypt rejestru
 
@@ -45,16 +45,16 @@ NoRemove Projects
 }
 ```
 
- Wartość `%Template_Path%` określa pełną ścieżkę katalogu zawierającego szablony projektu. Szablony te mogą być plikami *.vsz* lub prototypowymi plikami szablonów do sklonowania.
+ `%Template_Path%`Wartość określa pełną ścieżkę katalogu, który zawiera szablony projektu. Te szablony mogą być plikami *vsz* lub plikami szablonów prototypowe do sklonowania.
 
- Wartość `SortPriority` określa priorytet sortowania.
+ `SortPriority`Wartość określa priorytet sortowania.
 
-## <a name="add-items-to-an-existing-project"></a>Dodawanie elementów do istniejącego projektu
- Można również dodać elementy do istniejącego projektu. Na przykład w [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] przypadku projektu można dodać elementy do folderu * \<główny>\Program Files\Microsoft Visual Studio\VC#\CSharpProjectItems\LocalProjectItems* folder. W takim `%GUID_Project%` przypadku jest identyfikator GUID dla projektu C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).
+## <a name="add-items-to-an-existing-project"></a>Dodaj elementy do istniejącego projektu
+ Możesz również dodać elementy do istniejącego projektu. Na przykład dla [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projektu można dodać elementy do folderu * \<root> \Program Files\Microsoft Visual Studio\VC # \CSharpProjectItems\LocalProjectItems* . W tym przypadku `%GUID_Project%` jest identyfikatorem GUID dla projektu C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).
 
- Istniejący projekt można również rozszerzyć, programowanie podtypu projektu. Za pomocą podtypu projektu można rozszerzyć projekt bez pisania nowego typu projektu. Aby uzyskać więcej informacji na temat podtypów projektu, zobacz [Podtypy projektu](../../extensibility/internals/project-subtypes.md).
+ Można także rozciągnąć istniejący projekt przez programowanie podtypu projektu. W przypadku podtypu projektu można zwiększyć projekt bez tworzenia nowego typu projektu. Aby uzyskać więcej informacji na temat podtypów projektów, zobacz [podtypy projektów](../../extensibility/internals/project-subtypes.md).
 
 ## <a name="see-also"></a>Zobacz też
-- [Rejestrowanie szablonów projektów i towarów](../../extensibility/internals/registering-project-and-item-templates.md)
-- [Dodawanie elementów do okna dialogowego Dodawanie nowego elementu](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [Rejestruj szablony projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Dodaj elementy do okna dialogowego Dodaj nowy element](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Dodawanie katalogów do okna dialogowego Nowy projekt](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)

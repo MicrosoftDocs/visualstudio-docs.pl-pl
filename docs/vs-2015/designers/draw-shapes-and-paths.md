@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9eba4e5bfef052f7a82c3148f5628eff9413180
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542210"
 ---
 # <a name="draw-shapes-and-paths"></a>Rysowanie kształtów i ścieżek
@@ -37,7 +37,7 @@ W projektant XAML *kształt* jest dokładnie to, czego oczekujesz. Na przykład:
 
 - [Utwórz ścieżkę przycinającą](#Clipping)
 
-## <a name="draw-a-shape"></a><a name="Shape"></a>Rysowanie kształtu
+## <a name="draw-a-shape"></a><a name="Shape"></a> Rysowanie kształtu
  Kształty można znaleźć w panelu **składniki** .
 
  ![Kategoria kształtów w panelu Składniki](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")
@@ -46,7 +46,7 @@ W projektant XAML *kształt* jest dokładnie to, czego oczekujesz. Na przykład:
 
  ![](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png "84261e83-3091-4490-ab58-4218b188439e")
 
-## <a name="draw-a-path"></a><a name="Path"></a>Rysowanie ścieżki
+## <a name="draw-a-path"></a><a name="Path"></a> Rysowanie ścieżki
  Ścieżka to Seria połączonych linii i krzywych. Użyj ścieżki, aby utworzyć interesujące kształty, które nie są dostępne w panelu **składniki** .
 
  Ścieżkę można narysować przy użyciu linii, pióra lub ołówka. Te narzędzia można znaleźć w panelu **Narzędzia** .
@@ -87,26 +87,26 @@ W projektant XAML *kształt* jest dokładnie to, czego oczekujesz. Na przykład:
  Wybierz ścieżkę zawierającą segment, który chcesz usunąć, a następnie kliknij przycisk **Usuń** .
 
 ### <a name="remove-a-point-in-a-path"></a>Usuwanie punktu w ścieżce
- Użyj narzędzia **Zaznaczanie** ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") i narzędzia **pióro** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") .
+ Użyj narzędzia **Zaznaczanie**  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") i narzędzia **pióro** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") .
 
- Użyj narzędzia **Zaznaczanie** , ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") Aby wybrać ścieżkę. Następnie za pomocą narzędzia **pióro** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") kliknij punkt, który chcesz usunąć.
+ Użyj narzędzia **Zaznaczanie** ,  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") Aby wybrać ścieżkę. Następnie za pomocą narzędzia **pióro** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") kliknij punkt, który chcesz usunąć.
 
 ### <a name="add-a-point-to-a-path"></a>Dodawanie punktu do ścieżki
- Użyj narzędzia **Zaznaczanie** ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") i narzędzia **pióro** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") .
+ Użyj narzędzia **Zaznaczanie**  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") i narzędzia **pióro** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") .
 
- Użyj narzędzia **Zaznaczanie** , ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") Aby wybrać ścieżkę. Za pomocą narzędzia **pióro** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") kliknij w dowolnym miejscu ścieżki, w której chcesz dodać punkt.
+ Użyj narzędzia **Zaznaczanie** ,  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") Aby wybrać ścieżkę. Za pomocą narzędzia **pióro** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") kliknij w dowolnym miejscu ścieżki, w której chcesz dodać punkt.
 
-## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a>Konwertowanie kształtu na ścieżkę
+## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a> Konwertowanie kształtu na ścieżkę
  Aby zmodyfikować kształt w taki sam sposób, jak w przypadku modyfikacji ścieżki, Przekształć kształt na ścieżkę.
 
  **Obejrzyj krótkie wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pracujące z ścieżkami: Przekształć kształt na ścieżkę](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
-## <a name="combine-paths"></a><a name="Combine"></a>Połącz ścieżki
+## <a name="combine-paths"></a><a name="Combine"></a> Połącz ścieżki
  Ścieżki i kształty można łączyć w jedną ścieżkę.
 
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")
 
-|Image (Obraz)|Opis|Image (Obraz)|Opis|
+|Obraz|Opis|Obraz|Opis|
 |-|-|-|-|
 |![](../designers/media/b1-1.png "B1_1")|Dwa kształty przed połączeniem|![](../designers/media/b1-4.png "B1_4")|Wspólnej|
 |![](../designers/media/b1-2.png "B1_2")|Jednostka|![](../designers/media/b1-5.png "B1_5")|Wyklucz nakładanie|
@@ -114,7 +114,7 @@ W projektant XAML *kształt* jest dokładnie to, czego oczekujesz. Na przykład:
 
  **Obejrzyj krótkie wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pracujące z ścieżkami: Połącz ścieżki](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
-## <a name="create-a-compound-path"></a><a name="Compound"></a>Utwórz ścieżkę złożoną
+## <a name="create-a-compound-path"></a><a name="Compound"></a> Utwórz ścieżkę złożoną
  Po utworzeniu ścieżki złożonej wszystkie przecinające się części ścieżek są odejmowane od wyniku, a wynikowa ścieżka przyjmuje właściwości wizualizacji z najniższej ścieżki.
 
  Ścieżkę złożoną można rozdzielić w dowolnym momencie po jej utworzeniu.
@@ -123,7 +123,7 @@ W projektant XAML *kształt* jest dokładnie to, czego oczekujesz. Na przykład:
 
  **Obejrzyj krótkie wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pracujące z ścieżkami: Utwórz ścieżkę złożoną](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
-## <a name="create-a-clipping-path"></a><a name="Clipping"></a>Utwórz ścieżkę przycinającą
+## <a name="create-a-clipping-path"></a><a name="Clipping"></a> Utwórz ścieżkę przycinającą
  Ścieżka przycinająca jest ścieżką lub kształtem, który jest stosowany do innego obiektu, ukrywając części maskowanego obiektu, który znajduje się poza ścieżką przycinającą.
 
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")

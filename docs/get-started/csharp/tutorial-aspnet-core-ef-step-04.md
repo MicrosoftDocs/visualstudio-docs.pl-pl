@@ -1,6 +1,6 @@
 ---
-title: 'Krok 4: Udostępnianie internetowego interfejsu API z aplikacji ASP.NET Core'
-description: Dodaj internetowy interfejs API do aplikacji ASP.NET Core Web App za pomocą tego samouczka wideo i instrukcji krok po kroku.
+title: Krok 4. Udostępnianie internetowego interfejsu API z poziomu aplikacji ASP.NET Core
+description: Dodaj internetowy interfejs API do aplikacji internetowej ASP.NET Core, korzystając z tego samouczka wideo, i instrukcje krok po kroku.
 ms.custom: get-started
 ms.date: 02/13/2020
 ms.technology: vs-ide-general
@@ -17,29 +17,29 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 5ea9468bdf86986ab542fb1cabc873c9aeb75fd6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77580037"
 ---
-# <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Krok 4: Uwidacznianie internetowego interfejsu API z aplikacji ASP.NET Core
+# <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Krok 4. Uwidacznianie internetowego interfejsu API w aplikacji ASP.NET Core
 
 Wykonaj następujące kroki, aby dodać internetowy interfejs API do istniejącej aplikacji ASP.NET Core.
 
-_Obejrzyj ten klip wideo i obserwuj, aby dodać obsługę interfejsu API w sieci Web do pierwszej aplikacji ASP.NET Core._
+_Obejrzyj ten film wideo i postępuj zgodnie z instrukcjami, aby dodać obsługę internetowego interfejsu API do swojej pierwszej aplikacji ASP.NET Core._
 
 > [!VIDEO https://www.youtube.com/embed/o_fYPOsAXts]
 
-## <a name="open-your-project"></a>Otwórz swój projekt
+## <a name="open-your-project"></a>Otwórz projekt
 
-Otwórz aplikację ASP.NET Core w programie Visual Studio 2019. Aplikacja powinna już używać EF Core do zarządzania typami modeli, zgodnie z konfiguracją w [kroku 3 tej serii samouczków](tutorial-aspnet-core-ef-step-03.md).
+Otwórz aplikację ASP.NET Core w programie Visual Studio 2019. Aplikacja powinna już używać EF Core do zarządzania typami modeli zgodnie z konfiguracją w [kroku 3 tej serii samouczków](tutorial-aspnet-core-ef-step-03.md).
 
 ## <a name="add-an-api-controller"></a>Dodawanie kontrolera interfejsu API
 
-Kliknij prawym przyciskiem myszy projekt i dodaj nowy folder o nazwie *Api*. Następnie kliknij prawym przyciskiem myszy ten folder i wybierz pozycję **Dodaj** > **nowy element rusztowania**. Wybierz **kontroler interfejsu API z akcjami przy użyciu entity framework.** Teraz wybierz istniejącą klasę modelu i kliknij przycisk **Dodaj**.
+Kliknij prawym przyciskiem myszy projekt i Dodaj nowy folder o nazwie *API*. Następnie kliknij prawym przyciskiem myszy ten folder i wybierz polecenie **Dodaj**  >  **nowy element szkieletowy**. Wybierz pozycję **kontroler interfejsu API z akcjami przy użyciu Entity Framework.** Teraz wybierz istniejącą klasę modelu i kliknij przycisk **Dodaj**.
 
-![Kontroler interfejsu API ASP.NET rdzenia szkieletowego programu Visual Studio 2019](media/vs-2019/vs2019-add-scaffold-api.png)
+![Kontroler interfejsu API programu Visual Studio 2019 ASP.NET Core](media/vs-2019/vs2019-add-scaffold-api.png)
 
 ## <a name="reviewing-the-generated-controller"></a>Przeglądanie wygenerowanego kontrolera
 
@@ -51,9 +51,9 @@ Wygenerowany kod zawiera nową klasę kontrolera. W górnej części definicji k
 public class GamesController : ControllerBase
 ```
 
-Pierwszy z nich określa trasę dla akcji `api/[controller]` w tym kontrolerze `GamesController` jako będącą, co oznacza, że jeśli kontroler zostanie nazwany, trasa będzie `api/Games`.
+Pierwszy z nich określa trasę dla akcji w tym kontrolerze, co oznacza, że `api/[controller]` kontroler ma nazwę `GamesController` trasy `api/Games` .
 
-Drugi atrybut, `[ApiController]`, dodaje kilka przydatnych sprawdzania poprawności do klasy, takich `[Route]` jak zapewnienie, że każda metoda akcji zawiera własny atrybut.
+Drugi atrybut, `[ApiController]` ,,,, dodaje przydatne walidacje do klasy, na przykład upewniając się, że każda metoda akcji zawiera własny `[Route]` atrybut.
 
 ```csharp
 public class GamesController : ControllerBase
@@ -66,7 +66,7 @@ public class GamesController : ControllerBase
     }
 ```
 
-Kontroler używa istniejącego `AppDbContext`, przeszedł do jego konstruktora. Każda akcja użyje tego pola do pracy z danymi aplikacji.
+Kontroler używa istniejącego `AppDbContext` , przekazaną do jego konstruktora. Każda akcja będzie używać tego pola do pracy z danymi aplikacji.
 
 ```csharp
 // GET: api/Games
@@ -77,7 +77,7 @@ public IEnumerable<Game> GetGame()
 }
 ```
 
-Pierwsza metoda jest proste żądanie GET, `[HttpGet]` jak określono przy użyciu atrybutu. Nie wymaga żadnych parametrów i zwraca listę wszystkich gier w bazie danych.
+Pierwsza metoda to proste żądanie GET określone przy użyciu `[HttpGet]` atrybutu. Nie przyjmuje parametrów i zwraca listę wszystkich gier w bazie danych.
 
 ```csharp
 // GET: api/Games/5
@@ -100,7 +100,7 @@ public async Task<IActionResult> GetGame([FromRoute] int id)
 }
 ```
 
-Następna metoda `{id}` określa w trasie, która zostanie dodana `/` do trasy po tak `api/Games/5` pełna trasa będzie coś takiego jak pokazano w komentarzu u góry. Dane `id` wejściowe są `id` mapowane na parametr w metodzie. Wewnątrz metody, jeśli model jest `BadRequest` nieprawidłowy, zwracany jest wynik. W przeciwnym razie EF spróbuje znaleźć `id`rekord pasujący do podanego . Jeśli nie można `NotFound` zwracać wyniku, w `Game` przeciwnym razie zwracany jest odpowiedni rekord.
+Następna Metoda określa `{id}` w trasie, która zostanie dodana do trasy następującej po, `/` tak aby cała trasa była taka, `api/Games/5` jak pokazano w komentarzu w górnej części ekranu. `id`Dane wejściowe są mapowane na `id` parametr metody. Wewnątrz metody, jeśli model jest nieprawidłowy, `BadRequest` zwracany jest wynik. W przeciwnym razie Dr podejmie próbę znalezienia rekordu pasującego do podanego `id` . Jeśli nie można `NotFound` zwrócić wyniku, w przeciwnym razie `Game` zwracany jest odpowiedni rekord.
 
 ```csharp
 // PUT: api/Games/5
@@ -139,7 +139,7 @@ public async Task<IActionResult> PutGame([FromRoute] int id, [FromBody] Game gam
 }
 ```
 
-Następnie żądanie `[HttpPut]` wykonane do interfejsu API jest używany do wykonywania aktualizacji. Nowy `Game` rekord znajduje się w treści żądania. Niektóre sprawdzanie poprawności i sprawdzanie błędów jest wykonywane, a jeśli wszystko zakończy się pomyślnie rekord w bazie danych jest aktualizowany o wartości podane w treści żądania. W przeciwnym razie zwracana jest odpowiednia odpowiedź na błąd.
+Następnie `[HttpPut]` do przeprowadzenia aktualizacji jest używane żądanie wysłane do interfejsu API. Nowy `Game` rekord jest podany w treści żądania. Wykonywane jest pewne sprawdzanie poprawności i sprawdzanie błędów. Jeśli wszystko się powiedzie, rekord w bazie danych zostanie zaktualizowany wartościami podanymi w treści żądania. W przeciwnym razie zwracana jest odpowiednia odpowiedź na błąd.
 
 ```csharp
 // POST: api/Games
@@ -158,7 +158,7 @@ public async Task<IActionResult> PostGame([FromBody] Game game)
 }
 ```
 
-Żądanie `[HttpPost]` służy do dodawania nowych rekordów do systemu. Podobnie jak `[HttpPut]`w tym , rekord jest dodawany w treści żądania. Jeśli jest prawidłowy, EF Core dodaje rekord do bazy danych, a akcja zwraca zaktualizowany rekord (z jego identyfikatorem wygenerowanym bazy danych) i łącze do rekordu w interfejsie API.
+`[HttpPost]`Żądanie służy do dodawania nowych rekordów do systemu. Podobnie jak w przypadku `[HttpPut]` , rekord zostanie dodany w treści żądania. Jeśli jest on prawidłowy, EF Core dodaje rekord do bazy danych, a akcja zwróci zaktualizowany rekord (z wygenerowanym IDENTYFIKATORem bazy danych) i link do rekordu w interfejsie API.
 
 ```csharp
 // DELETE: api/Games/5
@@ -183,15 +183,15 @@ public async Task<IActionResult> DeleteGame([FromRoute] int id)
 }
 ```
 
-Na koniec `[HttpDelete]` trasa jest używana z identyfikatorem, aby usunąć rekord. Jeśli żądanie jest prawidłowe i istnieje rekord o podanym identyfikatorze, EF Core usuń go z bazy danych.
+`[HttpDelete]`Na koniec trasa jest używana z identyfikatorem do usunięcia rekordu. Jeśli żądanie jest prawidłowe i istnieje rekord o podanym IDENTYFIKATORze, EF Core usunąć go z bazy danych.
 
-## <a name="adding-swagger"></a>Dodawanie Swagger
+## <a name="adding-swagger"></a>Dodawanie struktury Swagger
 
-Swagger to narzędzie do dokumentacji i testowania interfejsu API, które można dodać jako zestaw usług i oprogramowania pośredniczącego do aplikacji ASP.NET Core. Aby to zrobić, kliknij prawym przyciskiem myszy projekt i wybierz pozycję **Zarządzaj pakietami NuGet**. Następnie kliknij przycisk **Przeglądaj**, wyszukaj `Swashbuckle.AspNetCore`i zainstaluj wersję 4.0.1.
+Swagger to dokumentacja interfejsu API i narzędzie do testowania, które można dodać jako zestaw usług i oprogramowania pośredniczącego do aplikacji ASP.NET Core. Aby to zrobić, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Zarządzaj pakietami NuGet**. Następnie kliknij przycisk **Przeglądaj**, Wyszukaj `Swashbuckle.AspNetCore` i Zainstaluj wersję 4.0.1.
 
-![Visual Studio 2019 Dodaj swashbuckle z Nuget](media/vs-2019/vs2019-nuget-swashbuckle.png)
+![Program Visual Studio 2019 Add Swashbuckle z narzędzia NuGet](media/vs-2019/vs2019-nuget-swashbuckle.png)
 
-Po zainstalowaniu `Startup.cs` otwórz i dodaj następujące `ConfigureServices` elementy na końcu metody:
+Po zainstalowaniu programu Otwórz `Startup.cs` i Dodaj następujący na końcu `ConfigureServices` metody:
 
 ```csharp
 services.AddSwaggerGen(c =>
@@ -200,9 +200,9 @@ services.AddSwaggerGen(c =>
 });
 ```
 
-Musisz również dodać `using Swashbuckle.AspNetCore.Swagger;` w górnej części pliku.
+Należy również dodać `using Swashbuckle.AspNetCore.Swagger;` w górnej części pliku.
 
-Następnie dodaj następujące elementy `Configure` do metody, tuż przed: `UseMvc`
+Następnie Dodaj następujące elementy do `Configure` metody, tuż przed `UseMvc` :
 
 ```csharp
 // Enable middleware to serve generated Swagger as a JSON endpoint.
@@ -216,19 +216,19 @@ app.UseSwaggerUI(c =>
 });
 ```
 
-Teraz powinieneś być w stanie skompilować i uruchomić aplikację. W przeglądarce przejdź `/swagger` do paska adresu. Powinna zostać wyświetlona lista punktów końcowych i modeli interfejsu API aplikacji. 
+Teraz powinno być możliwe skompilowanie i uruchomienie aplikacji. W przeglądarce przejdź do na `/swagger` pasku adresu. Powinna zostać wyświetlona lista punktów końcowych i modeli interfejsu API aplikacji. 
 
-![Strona Swagger programu Visual Studio 2019 w przeglądarce](media/vs-2019/vs2019-swagger-browser.png)
+![Strona struktury Swagger programu Visual Studio 2019 w przeglądarce](media/vs-2019/vs2019-swagger-browser.png)
 
-Kliknij punkt końcowy w `Try it out` obszarze `Execute` Gry, a następnie, aby zobaczyć, jak zachowują się różne punkty końcowe.
+Kliknij punkt końcowy w obszarze gry, `Try it out` a następnie, `Execute` Aby zobaczyć, jak działają różne punkty końcowe.
 
 ## <a name="next-steps"></a>Następne kroki
 
-W następnym klipie wideo dowiesz się, jak wdrożyć aplikację na platformie Azure.
+W następnym filmie wideo dowiesz się, jak wdrożyć aplikację na platformie Azure.
 
-[Krok 5: Wdrażanie aplikacji ASP.NET Core na platformie Azure](tutorial-aspnet-core-ef-step-05.md)
+[Krok 5. wdrażanie aplikacji ASP.NET Core na platformie Azure](tutorial-aspnet-core-ef-step-05.md)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Pierwsze kroki z Swashbuckle i ASP.NET Core](/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio)
-- [ASP.NET Core web API strony pomocy z Swagger / OpenAPI](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2)
+- [Wprowadzenie z Swashbuckle i ASP.NET Core](/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio)
+- [ASP.NET Core stronach pomocy interfejsu API sieci Web w programie Swagger/OpenAPI](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2)

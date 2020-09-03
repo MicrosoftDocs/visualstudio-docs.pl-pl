@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 53caca1d98b4074867757ae01d8cc9efa9692952
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542990"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio — Porady i wskazówki
@@ -38,7 +38,7 @@ ms.locfileid: "85542990"
 
 - [Zarządzanie cyklem życia aplikacji](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-## <a name="window-management"></a><a name="BKMK_WindowMgmt"></a>Zarządzanie oknem
+## <a name="window-management"></a><a name="BKMK_WindowMgmt"></a> Zarządzanie oknem
 
 |Polecenie|Skrót|
 |-|-|
@@ -49,7 +49,7 @@ ms.locfileid: "85542990"
 |Pokaż listę otwartych plików|Ctrl + Alt + Strzałka w dół|
 |Pokaż wszystkie okna przestawne|Ctrl+Shift+M|
 
-## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a>Skróty okna
+## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a> Skróty okna
 
 |Polecenie|Skrót|
 |-|-|
@@ -59,17 +59,17 @@ ms.locfileid: "85542990"
 |Uruchom nowe wystąpienie|Win + Shift + n|
 |Przełączanie między oknami|Win + n|
 
-## <a name="visual-studio-search"></a><a name="BKMK_Search"></a>Wyszukiwanie w programie Visual Studio
+## <a name="visual-studio-search"></a><a name="BKMK_Search"></a> Wyszukiwanie w programie Visual Studio
 
 |Polecenie|Skrót|
 |-|-|
 |Eksplorator rozwiązań wyszukiwanie|Ctrl+;|
 |Umieść fokus w polu wyszukiwania w dowolnym oknie narzędzi|Alt + ', gdy okno narzędzi ma fokus|
 |Szybkie uruchamianie|Ctrl+Q|
-|Wyniki zakresu szybkiego uruchamiania|- @opt Opcje<br />- @cmd Polecenia<br />-Ostatnio @mru używane<br />- @doc Otwarte dokumenty|
+|Wyniki zakresu szybkiego uruchamiania|-   @opt Opcje<br />-   @cmd Polecenia<br />-Ostatnio   @mru używane<br />-   @doc Otwarte dokumenty|
 |Wyszukaj w opcjach narzędzi|Ctrl + E|
 
-## <a name="editor-find"></a><a name="BKMK_EditorFind"></a>Znajdź Edytor
+## <a name="editor-find"></a><a name="BKMK_EditorFind"></a> Znajdź Edytor
 
 |Polecenie|Skrót|
 |-|-|
@@ -84,7 +84,7 @@ ms.locfileid: "85542990"
 |Znajdź w plikach|Ctrl+Shift+F|
 |Zastąp w plikach|Ctrl+Shift+H|
 
-## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a>Edytor kodu
+## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a> Edytor kodu
 
 |Polecenie|Skrót|
 |-|-|
@@ -109,7 +109,7 @@ ms.locfileid: "85542990"
 |Przechodzenie między wieloma wynikami wglądu|F8 i Shift + F8|
 |Przełącz między oknem edytora kodu i oknem definicji wglądu|Shift + Esc|
 
-## <a name="toolbars"></a><a name="BKMK_Toolbars"></a>Paski narzędzi
+## <a name="toolbars"></a><a name="BKMK_Toolbars"></a> Paski narzędzi
 
 |Polecenie|Skrót|
 |-|-|
@@ -137,7 +137,7 @@ ms.locfileid: "85542990"
 |Wyczyść bufor okna bezpośredniego|>CLS|
 |Wartość wydruku okna bezpośredniego|? nazwa_zmiennej|
 
-## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a>Zarządzanie cyklem życia aplikacji
+## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a> Zarządzanie cyklem życia aplikacji
 
 Zobacz [skróty klawiaturowe: Visual Studio Online, portal sieci Web TFS i Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 

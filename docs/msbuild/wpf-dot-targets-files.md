@@ -1,5 +1,5 @@
 ---
-title: Wpf. Pliki docelowe | Dokumenty firmy Microsoft
+title: Kodow. Pliki docelowe | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,18 +18,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3225777c020272a24ac124bf6d039c2154e2ff3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630954"
 ---
-# <a name="wpf-targets-files"></a>Pliki WPF .targets
+# <a name="wpf-targets-files"></a>WPF — pliki targets
 
-Windows Presentation Foundation (WPF) rozszerza MSBuild, dodając zestaw zadań specyficznych dla WPF, które są łączone w specjalny plik *.targets,* *Microsoft.WinFX.targets*. Ten plik łączy zestaw zadań MSBuild, które są wymagane do utworzenia projektu MSBuild w WPF.
+Windows Presentation Foundation (WPF) rozszerza MSBuild przez dodanie zestawu zadań specyficznych dla platformy WPF, które są połączone w specjalny plik *. targets* , *Microsoft. WinFX. targets*. Ten plik łączy zestaw zadań programu MSBuild, które są wymagane do skompilowania projektu MSBuild w WPF.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Pliki MSBuild .targets](../msbuild/msbuild-dot-targets-files.md)
-- [Odwołanie do budynku MSBuild](../msbuild/msbuild-reference.md)
-- [Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [MSBuild — pliki targets](../msbuild/msbuild-dot-targets-files.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
+- [Kompilowanie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

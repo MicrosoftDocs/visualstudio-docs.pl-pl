@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 07ad01726b57073cad3a5a2876a4b22667d3770a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545447"
 ---
 # <a name="outlining"></a>Tworzenie konspektu
@@ -49,7 +49,7 @@ Poniższe polecenia można znaleźć w podmenu **Edytuj**  >  **Konspekt** .
 |Przestań ukrywać bieżące|(**Ctrl** + **M**, **Ctrl** + **U**) — usuwa informacje z konspektu dla aktualnie wybranego regionu zdefiniowanego przez użytkownika. Niedostępne w Visual Basic.|
 |Zwiń do definicji|(**Ctrl** + **M**, **Ctrl** + **O**) — zwija elementy członkowskie wszystkich typów.|
 |Zwiń blok:\<logical boundary>|Języków Zwija region w funkcji zawierającej punkt wstawiania. Na przykład, jeśli punkt wstawiania leży wewnątrz pętli, pętla jest ukryta.|
-|Zwiń wszystko w:\<logical structures>|Języków Zwija wszystkie struktury wewnątrz funkcji.|
+|Zwiń wszystko w: \<logical structures>|Języków Zwija wszystkie struktury wewnątrz funkcji.|
 
 Możesz również użyć zestawu Visual Studio SDK, aby zdefiniować regiony tekstu, które mają zostać rozwinięte lub zwinięte. Zobacz [Przewodnik: Tworzenie konspektu](../extensibility/walkthrough-outlining.md).
 

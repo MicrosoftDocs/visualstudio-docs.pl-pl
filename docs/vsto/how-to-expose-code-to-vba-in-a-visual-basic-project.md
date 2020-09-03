@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8aa29fca9905c9f1ed056949eec64ad967323462
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544849"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Instrukcje: Uwidacznianie kodu w języku VBA w projekcie Visual Basic
@@ -36,7 +36,7 @@ ms.locfileid: "85544849"
 
 - [Uwidacznianie kodu, który nie znajduje się w klasie elementów hosta](#NonHostItem)
 
-## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a>Uwidacznianie kodu w klasie elementów hosta
+## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a> Uwidacznianie kodu w klasie elementów hosta
  Aby włączyć kod języka VBA do wywoływania Visual Basic kodu w klasie elementu hosta, ustaw właściwość **EnableVbaCallers** elementu hosta na **wartość true**.
 
  Aby zapoznać się z przewodnikiem, który ilustruje sposób uwidocznienia metody klasy elementu hosta, a następnie Wywołaj ją z poziomu języka VBA, zobacz [Przewodnik: wywoływanie kodu z VBA w projekcie Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Aby uzyskać więcej informacji na temat elementów hosta, zobacz [Omówienie elementów hosta i formantów hosta](../vsto/host-items-and-host-controls-overview.md).
@@ -71,7 +71,7 @@ ms.locfileid: "85544849"
 
 6. Skompiluj projekt.
 
-## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a>Uwidacznianie kodu, który nie znajduje się w klasie elementów hosta
+## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a> Uwidacznianie kodu, który nie znajduje się w klasie elementów hosta
  Aby włączyć kod języka VBA do wywoływania Visual Basic kodu, który nie znajduje się w klasie elementów hosta, zmodyfikuj kod, tak aby był widoczny dla języka VBA.
 
 ### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>Aby uwidocznić kod, który nie znajduje się w klasie elementu hosta do języka VBA
@@ -115,7 +115,7 @@ ms.locfileid: "85544849"
 
 9. Skompiluj projekt.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)
 - [Łączenie języka VBA i dostosowań na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 90c1f66f36fc689ee077ec66f154487d65ee13a1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543614"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Typy z atrybutem APTCA powinny rozszerzać tylko typy podstawowe z atrybutem APTCA
@@ -40,9 +40,9 @@ ms.locfileid: "85543614"
 
  Gdy atrybut APTCA jest obecny w w pełni zaufanym zestawie, a typ w zestawie dziedziczy z typu, który nie zezwala częściowo zaufanym obiektom wywołującym, możliwe jest wykorzystanie zabezpieczeń. Jeśli dwa typy `T1` i `T2` spełnią poniższe warunki, złośliwe obiekty wywołujące mogą użyć typu, `T1` Aby pominąć niejawne, pełne zaufanie żądania dziedziczenia, które chroni `T2` :
 
-- `T1`jest typem publicznym zadeklarowanym w w pełni zaufanym zestawie, który ma atrybut APTCA.
+- `T1` jest typem publicznym zadeklarowanym w w pełni zaufanym zestawie, który ma atrybut APTCA.
 
-- `T1`dziedziczy po typie `T2` poza jego zestawem.
+- `T1` dziedziczy po typie `T2` poza jego zestawem.
 
 - `T2`zestaw nie ma atrybutu APTCA i dlatego nie powinien dziedziczyć typów w częściowo zaufanych zestawach.
 

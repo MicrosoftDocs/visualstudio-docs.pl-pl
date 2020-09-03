@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 256fc281b27c483f1dda0317f7d2695fa36c47f8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535060"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Oznacz atrybuty atrybutem AttributeUsage
@@ -47,7 +47,7 @@ ms.locfileid: "85535060"
  Przed wykluczeniem komunikatu należy usunąć naruszenie tej reguły. Nawet jeśli atrybut dziedziczy <xref:System.AttributeUsageAttribute> , atrybut powinien być obecny, aby uprościć konserwację kodu.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie zdefiniowano dwa atrybuty. `BadCodeMaintainerAttribute`niepoprawnie pomija <xref:System.AttributeUsageAttribute> instrukcję i `GoodCodeMaintainerAttribute` poprawnie implementuje atrybut opisany wcześniej w tej sekcji. Należy zauważyć, że właściwość `DeveloperName` jest wymagana przez regułę projektowania [CA1019: Zdefiniuj metody dostępu dla argumentów atrybutów](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) i jest dołączany do kompletności.
+ W poniższym przykładzie zdefiniowano dwa atrybuty. `BadCodeMaintainerAttribute` niepoprawnie pomija <xref:System.AttributeUsageAttribute> instrukcję i `GoodCodeMaintainerAttribute` poprawnie implementuje atrybut opisany wcześniej w tej sekcji. Należy zauważyć, że właściwość `DeveloperName` jest wymagana przez regułę projektowania [CA1019: Zdefiniuj metody dostępu dla argumentów atrybutów](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) i jest dołączany do kompletności.
 
  [!code-csharp[FxCop.Design.AttributeUsage#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/cs/FxCop.Design.AttributeUsage.cs#1)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/vb/FxCop.Design.AttributeUsage.vb#1)]

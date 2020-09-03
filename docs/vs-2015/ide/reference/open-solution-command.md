@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9c9ab66d2885137e9c470f577996ab861b554d5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671908"
 ---
 # <a name="open-solution-command"></a>Otwórz rozwiązanie — Polecenie
@@ -33,9 +33,9 @@ File.OpenSolution filename
 ```
 
 ## <a name="arguments"></a>Argumenty
- Wymagane `Filename`. Pełna ścieżka i nazwa pliku rozwiązania do otwarcia.
+ `Filename` Wymagane. Pełna ścieżka i nazwa pliku rozwiązania do otwarcia.
 
- Składnia argumentu `filename` wymaga, aby ścieżki zawierające spacje używały znaków cudzysłowu.
+ Składnia `filename` argumentu wymaga, aby ścieżki zawierające spacje używały znaków cudzysłowu.
 
 ## <a name="remarks"></a>Uwagi
  Funkcja automatycznego uzupełniania próbuje zlokalizować poprawną ścieżkę i nazwę pliku podczas wpisywania.

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c9a36da3feecfe1af664e35fa50d616d2a94fb0a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461512"
 ---
 # <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
@@ -33,7 +33,7 @@ HRESULT get_value (
 #### <a name="parameters"></a>Parametry
 `pRetVal`
 
-[in. out] `VARIANT`Obiekt, który jest wypełniony wartością stałej.
+[in. out] `VARIANT` Obiekt, który jest wypełniony wartością stałej.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.

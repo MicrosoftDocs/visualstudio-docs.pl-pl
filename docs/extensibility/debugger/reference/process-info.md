@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO | Dokumenty firmy Microsoft
+title: PROCESS_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ef73145fb0a2598dc5e4ee98e8652314e0bc1c89
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713883"
 ---
 # <a name="process_info"></a>PROCESS_INFO
@@ -57,39 +57,39 @@ public struct PROCESS_INFO { 
 
 ## <a name="members"></a>Elementy członkowskie
  `Fields`\
- Kombinacja flag z wyliczenia [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) określająca, które pola są wypełniane.
+ Kombinacja flag z wyliczenia [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) , która określa, które pola są wypełniane.
 
  `bstrFileName`\
- Pełna nazwa ścieżki procesu. Odpowiednik wywoływania [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) metody `GN_FILENAME`z parametrem .
+ Pełna nazwa ścieżki procesu. Równoważne wywołanie metody [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) z parametrem `GN_FILENAME` .
 
  `bstrBaseName`\
- Nazwa pliku i rozszerzenie procesu. Odpowiednik wywoływania `IDebugProcess2::Getname` metody z `GN_BASENAME`parametrem .
+ Nazwa pliku i rozszerzenie procesu. Równoważne wywołanie `IDebugProcess2::Getname` metody z parametrem `GN_BASENAME` .
 
  `bstrTitle`\
- Tytuł procesu, jeśli istnieje. Odpowiednik wywoływania `IDebugProcess2::Getname` metody z `GN_TITLE`parametrem .
+ Tytuł procesu, jeśli taki istnieje. Równoważne wywołanie `IDebugProcess2::Getname` metody z parametrem `GN_TITLE` .
 
  `ProcessId`\
- Struktura [AD_PROCESS_ID,](../../../extensibility/debugger/reference/ad-process-id.md) która identyfikuje proces. Odpowiednik wywoływania [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) metody.
+ Struktura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) , która identyfikuje proces. Równoważne z wywołaniem metody [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) .
 
  `dwSessionId`\
- Identyfikator sesji debugowania, w których jest uruchomiony ten proces.
+ Identyfikator sesji debugowania, w której działa ten proces.
 
  `bstrAttachedSessionName`\
- Załączona nazwa sesji. Odpowiednik wywoływania [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) metody.
+ Nazwa dołączonej sesji. Równoważne z wywołaniem metody [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) .
 
  `CreationTime`\
- Czas utworzenia procesu.
+ Godzina utworzenia procesu.
 
  `Flags`\
- Kombinacja flag z wyliczenia [PROCESS_INFO_FLAGS,](../../../extensibility/debugger/reference/process-info-flags.md) które określają właściwości procesu.
+ Kombinacja flag z wyliczenia [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) , która określa właściwości procesu.
 
 ## <a name="remarks"></a>Uwagi
- Ta struktura jest przekazywana do [Metody GetInfo,](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) gdzie jest wypełniona.
+ Ta struktura jest przenoszona do metody [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) , w której jest wypełniana.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

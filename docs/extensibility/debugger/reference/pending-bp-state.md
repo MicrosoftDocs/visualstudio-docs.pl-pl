@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE | Dokumenty firmy Microsoft
+title: PENDING_BP_STATE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 69c8dbe1022ee0b1b2ff034d2b83b947c8fb3df6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713994"
 ---
 # <a name="pending_bp_state"></a>PENDING_BP_STATE
-Określa stan oczekującego punktu przerwania (punktu przerwania, który nie został jeszcze powiązany).
+Określa stan oczekującego punktu przerwania (punkt przerwania, który nie został jeszcze powiązany).
 
 ## <a name="syntax"></a>Składnia
 
@@ -60,12 +60,12 @@ public enum enum_PENDING_BP_STATE { 
  Wskazuje, że oczekujący punkt przerwania jest włączony.
 
 ## <a name="remarks"></a>Uwagi
- Użyj jako `state` element członkowski [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struktury.
+ Użyj jako `state` elementu członkowskiego struktury [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

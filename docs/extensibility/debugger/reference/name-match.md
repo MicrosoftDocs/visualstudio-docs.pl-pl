@@ -1,5 +1,5 @@
 ---
-title: NAME_MATCH | Dokumenty firmy Microsoft
+title: NAME_MATCH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 66a0e725f6362034e2d1a9b1df49d2a83d154ce7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714291"
 ---
 # <a name="name_match"></a>NAME_MATCH
-Wybiera opcję przypadku pasującego nazw.
+Wybiera opcję przypadku pasujących nazw.
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,13 +48,13 @@ public enum NameMatchOptions { 
  Nie określono żadnych opcji.
 
  `nmCaseSensitive`\
- Wskazuje, że nazwy, które mają być dopasowane są rozróżniane.
+ Wskazuje, że nazwy, które mają być dopasowane, są rozróżniane wielkości liter.
 
  `nmCaseInsensitive`\
- Wskazuje, że nazwy, które mają być dopasowane nie są rozróżniane wielkość liter.
+ Wskazuje, że nazwy, które mają być dopasowane, nie uwzględnia wielkości liter.
 
 ## <a name="remarks"></a>Uwagi
- Przekazany jako argument do następujących metod:
+ Przeszedł jako argument do następujących metod:
 
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
 
@@ -65,9 +65,9 @@ public enum NameMatchOptions { 
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: sh.h
+ Nagłówek: sh. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

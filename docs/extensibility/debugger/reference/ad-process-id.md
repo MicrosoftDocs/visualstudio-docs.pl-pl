@@ -1,5 +1,5 @@
 ---
-title: AD_PROCESS_ID | Dokumenty firmy Microsoft
+title: AD_PROCESS_ID | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 96a834725f1cf5b14f12a4c1554e67477768ef23
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738166"
 ---
 # <a name="ad_process_id"></a>AD_PROCESS_ID
-Określa identyfikator procesu, który może być identyfikatorem systemu lub identyfikatorem GUID.
+Określa identyfikator procesu, który może być IDENTYFIKATORem systemowym lub GUID.
 
 ## <a name="syntax"></a>Składnia
 
@@ -49,7 +49,7 @@ public struct AD_PROCESS_ID {
 
 ## <a name="members"></a>Elementy członkowskie
 `ProcessIdType`\
-Wartość z [wyliczenia AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) określająca sposób interpretowania `ProcessId` unii (lub, dla kodu zarządzanego, którego członka struktury, do którego mają być dostępne).
+Wartość z wyliczenia [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) określająca sposób interpretacji `ProcessId` Unii (lub dla kodu zarządzanego, który jest członkiem struktury do uzyskania dostępu).
 
 `dwProcessId`\
 Identyfikator procesu jako wartość z systemu.
@@ -57,10 +57,10 @@ Identyfikator procesu jako wartość z systemu.
 `guidProcessId`\
 Identyfikator procesu jako identyfikator GUID.
 
-dwUnused Padding.
+dopełnienie dwUnused.
 
 ## <a name="remarks"></a>Uwagi
-Struktura ta jest przekazywana do następujących metod:
+Ta struktura jest przenoszona do następujących metod:
 
 - [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)
 
@@ -68,7 +68,7 @@ Struktura ta jest przekazywana do następujących metod:
 
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 
-- [GetProcess ( GetProcess )](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
+- [GetProcess —](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 
 I jest zwracany z następujących metod:
 
@@ -77,15 +77,15 @@ I jest zwracany z następujących metod:
 - [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
-- [GetProcess ( GetProcess )](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
+- [GetProcess —](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)
 - [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)
 - [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
