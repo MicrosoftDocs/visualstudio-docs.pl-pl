@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800947"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Programowanie dla pakietu Office i programu SharePoint w programie Visual Studio
@@ -82,7 +82,7 @@ ms.locfileid: "88800947"
 |Zdecyduj, czy chcesz skompilować dodatek programu SharePoint, czy rozwiązanie programu SharePoint.|[Podejmowanie decyzji między dodatkami programu SharePoint i rozwiązaniami programu SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 
 ## <a name="create-a-vsto-add-in"></a><a name="Add-ins"></a> Tworzenie dodatku narzędzi VSTO
- Utwórz dodatek narzędzi VSTO dla pakietu Office 2007 lub pakietu Office 2010 lub rozszerzenia pakietu Office 2013 i pakietu Office 2016 poza możliwościami dotyczącymi dodatków pakietu Office. Dodatki narzędzi VSTO są uruchamiane tylko na pulpicie. Użytkownicy muszą instalować dodatki narzędzi VSTO, aby były zazwyczaj trudniejsze do wdrożenia i obsługi.  Jednak dodatek VSTO może być ściśle zintegrowany z pakietem Office. Na przykład może dodawać karty i kontrolki do wstążki pakietu Office oraz wykonywać zaawansowane zadania automatyzacji, takie jak scalanie dokumentów lub modyfikowanie wykresów. Możesz użyć .NET Framework i Visual Basic do współdziałania z obiektami pakietu Office.
+ Utwórz dodatek narzędzi VSTO dla pakietu Office 2007 lub Office 2010 lub rozszerzenia pakietu Office 2013 i pakietu Office 2016 poza możliwościami dodatków pakietu Office. Dodatki narzędzi VSTO są uruchamiane tylko na pulpicie. Użytkownicy muszą instalować dodatki narzędzi VSTO, aby były zazwyczaj trudniejsze do wdrożenia i obsługi.  Jednak dodatek VSTO może być ściśle zintegrowany z pakietem Office. Na przykład może dodawać karty i kontrolki do wstążki pakietu Office oraz wykonywać zaawansowane zadania automatyzacji, takie jak scalanie dokumentów lub modyfikowanie wykresów. Możesz użyć .NET Framework i Visual Basic do współdziałania z obiektami pakietu Office.
 
  Oto przykład możliwości dodatku VSTO. Ten dodatek narzędzi VSTO dodaje kontrolki wstążki, niestandardowe okienko zadań i okno dialogowe do programu PowerPoint.
 

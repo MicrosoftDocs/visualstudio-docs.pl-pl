@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 09471b9e62b758e4e02e054494ed108532bbd301
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656332"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Instrukcje: Rozpoczynanie debugowania XSLT
+# <a name="how-to-start-debugging-xslt"></a>Instrukcje: Rozpoczynanie debugowania kodu XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Debuger XSLT może służyć do debugowania arkusza stylów XSLT lub aplikacji XSLT. Podczas debugowania można wykonać kod jeden wiersz jednocześnie, przechodząc do kroku, przechodząc nad lub przechodzenie do kodu. Polecenia do korzystania z funkcji wykonywania kodu są takie same dla debugera XSLT, jak w przypadku innych debugerów programu Visual Studio. Po rozpoczęciu debugowania debuger XSLT otwiera system Windows, aby wyświetlić dokument wejściowy i dane wyjściowe XSLT.
@@ -37,14 +37,14 @@ Debuger XSLT może służyć do debugowania arkusza stylów XSLT lub aplikacji X
 2. Wybierz pozycję **DEBUGUJ XSL** z menu **XML** .
 
 ## <a name="xslt-from-other-languages"></a>XSLT z innych języków
- Możesz również przejść do języka XSLT podczas debugowania aplikacji. Po naciśnięciu klawisza F11 w wywołaniu <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> debuger może przejść do kodu XSLT.
+ Możesz również przejść do języka XSLT podczas debugowania aplikacji. Po naciśnięciu klawisza F11 w <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> wywołaniu debuger może przejść do kodu XSLT.
 
 > [!NOTE]
-> Przechodzenie do XSLT z klasy <xref:System.Xml.Xsl.XslTransform> nie jest obsługiwane. Klasa <xref:System.Xml.Xsl.XslCompiledTransform> jest jedynym procesorem XSLT, który obsługuje krokowe przechodzenie do XSLT podczas debugowania.
+> Przechodzenie do języka XSLT z <xref:System.Xml.Xsl.XslTransform> klasy nie jest obsługiwane. <xref:System.Xml.Xsl.XslCompiledTransform>Klasa jest jedynym procesorem XSLT, który obsługuje krokowe przechodzenie do XSLT podczas debugowania.
 
 #### <a name="to-start-debugging-an-xslt-application"></a>Aby rozpocząć debugowanie aplikacji XSLT
 
-1. Podczas tworzenia wystąpienia obiektu <xref:System.Xml.Xsl.XslCompiledTransform> należy ustawić parametr `enableDebug`, aby `true` w kodzie.
+1. Podczas tworzenia wystąpienia <xref:System.Xml.Xsl.XslCompiledTransform> obiektu Ustaw `enableDebug` parametr na wartość `true` w kodzie.
 
      Powoduje to nakazuje procesorowi XSLT tworzenie informacji debugowania podczas kompilowania kodu.
 
@@ -55,7 +55,7 @@ Debuger XSLT może służyć do debugowania arkusza stylów XSLT lub aplikacji X
      Alternatywnie możesz dodać punkt przerwania do arkusza stylów i uruchomić aplikację.
 
 ### <a name="example"></a>Przykład
- Poniżej znajduje się przykład programu C# XSLT. Pokazuje, jak włączyć debugowanie XSLT.
+ Poniżej znajduje się przykład programu XSLT języka C#. Pokazuje, jak włączyć debugowanie XSLT.
 
 ```
 using System;

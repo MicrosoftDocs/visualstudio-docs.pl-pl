@@ -1,5 +1,5 @@
 ---
-title: Rejestrowanie szablonów projektów i elementów | Dokumentacja firmy Microsoft
+title: Rejestrowanie szablonów projektów i elementów | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,21 +15,21 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185834"
 ---
 # <a name="registering-project-and-item-templates"></a>Rejestrowanie szablonów projektów i elementów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Typy projektów, należy zarejestrować katalogi, w którym znajdują się swoje szablony projektów i elementów projektu. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] informacje rejestracji skojarzony z typów projektu są używane do określenia, jakie do wyświetlenia w **Dodaj nowy projekt** i **Dodaj nowy element** okien dialogowych.  
+Typy projektów muszą rejestrować katalogi, w których znajdują się szablony projektów i elementów projektu. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] używa informacji o rejestracji skojarzonych z typami projektów, aby określić, co ma być wyświetlane w oknach dialogowych **Dodaj nowy projekt** i **Dodaj nowy element** .  
   
- Aby uzyskać więcej informacji na temat szablonów, zobacz [Dodawanie projektu i szablonów elementów projektów](../../extensibility/internals/adding-project-and-project-item-templates.md).  
+ Aby uzyskać więcej informacji na temat szablonów, zobacz [Dodawanie projektów i szablonów elementów projektów](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
 ## <a name="registry-entries-for-projects"></a>Wpisy rejestru dla projektów  
- Poniższe przykłady przedstawiają wpisy rejestru w HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*wersji*>. Towarzyszących tabelach opisano elementy używane w przykładach.  
+ W poniższych przykładach przedstawiono wpisy rejestru w obszarze HKEY_LOCAL_MACHINE \\ < *wersja* \software\microsoft\visualstudio>. Towarzyszące tabele objaśniają elementy używane w przykładach.  
   
 ```  
 [Projects\{ProjectGUID}]  
@@ -42,12 +42,12 @@ Typy projektów, należy zarejestrować katalogi, w którym znajdują się swoje
 |Nazwa|Typ|Opis|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Domyślna nazwa projektów tego rodzaju.|  
-|DisplayName|REG_SZ|Identyfikator zasobu o nazwie mają zostać pobrane satelitarną bibliotekę DLL jest zarejestrowany w ramach pakietów.|  
-|Package|REG_SZ|Identyfikator klasy pakiet, który został zarejestrowany w ramach pakietów.|  
-|ProjectTemplatesDir|REG_SZ|Domyślna ścieżka pliku szablonu projektu. Pliki szablonu projektu są wyświetlane przez **nowy projekt** szablonu.|  
+|Nazwa wyświetlana|REG_SZ|Identyfikator zasobu, który ma zostać pobrany z satelickiej biblioteki DLL zarejestrowanej w pakietach.|  
+|Pakiet|REG_SZ|Identyfikator klasy pakietu zarejestrowanego w pakietach.|  
+|ProjectTemplatesDir|REG_SZ|Domyślna ścieżka do plików szablonów projektu. Pliki szablonu projektu są wyświetlane przez nowy szablon **projektu** .|  
   
 ### <a name="registering-item-templates"></a>Rejestrowanie szablonów elementów  
- Należy zarejestrować katalogu, w którym są przechowywane szablony elementów.  
+ Należy zarejestrować katalog, w którym są przechowywane szablony elementów.  
   
 ```  
 [Projects\{ProjectGUID}\AddItemTemplates\TemplateDirs\{VSPackageGUID}\1]  
@@ -59,19 +59,19 @@ Typy projektów, należy zarejestrować katalogi, w którym znajdują się swoje
   
 |Nazwa|Typ|Opis|  
 |----------|----------|-----------------|  
-|@|REG_SZ|Identyfikator zasobu dla szablonów Dodaj element.|  
-|TemplatesDir|REG_SZ|Ścieżka wyświetlanych w oknie dialogowym dla elementów projektu **Dodaj nowy element** kreatora.|  
-|TemplatesLocalizedSubDir|REG_SZ|Identyfikator zasobu ciągu, który nazwy podkatalogu TemplatesDir, który zawiera zlokalizowane szablony. Ponieważ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ładowania zasobu ciągu z biblioteki DLL satellite jeśli one istnieją, każdy satelitarną bibliotekę DLL mogą zawierać nazwę podkatalogu zlokalizowane w różnych.|  
-|SortPriority|REG_DWORD|Ustaw SortPriority, które pozwalają zarządzać sposobem kolejność, w którym szablony są wyświetlane w **Dodaj nowy element** okno dialogowe. Większe wartości SortPriority się pojawić wcześniej na liście szablonów.|  
+|@|REG_SZ|Identyfikator zasobu dla szablonów dodawania elementów.|  
+|TemplatesDir|REG_SZ|Ścieżka elementów projektu wyświetlanych w oknie dialogowym kreatora **dodawania nowego elementu** .|  
+|TemplatesLocalizedSubDir|REG_SZ|Identyfikator zasobu ciągu, który zawiera nazwę podkatalogu TemplatesDir zawierającego zlokalizowane szablony. Ponieważ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ładuje zasób ciągu z satelitarnych bibliotek DLL, jeśli są one, każda satelitarna Biblioteka DLL może zawierać inną zlokalizowaną nazwę podkatalogu.|  
+|SortPriority|REG_DWORD|Ustaw SortPriority, aby zarządzać kolejnością, w której szablony są wyświetlane w oknie dialogowym **Dodaj nowy element** . Większe wartości SortPriority są wyświetlane wcześniej na liście szablonów.|  
   
-### <a name="registering-file-filters"></a>Rejestrowanie filtry plików  
- Opcjonalnie można zarejestrować filtry, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] używa po wyświetleniu monitu dla nazw plików. Na przykład [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrować **Otwórz plik** jest okno dialogowe:  
+### <a name="registering-file-filters"></a>Rejestrowanie filtrów plików  
+ Opcjonalnie można zarejestrować filtry, które są używane podczas wyświetlania z wierszami [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dla nazw plików. Na przykład filtr okna [!INCLUDE[csprcs](../../includes/csprcs-md.md)] dialogowego **Otwórz plik** to:  
   
- **Pliki Visual C# (\*.CS,\*resx,\*.settings,\*XSD,\*.wsdl);\*. CS,\*resx,\*.settings,\*XSD,\*.wsdl)**  
+ **Pliki Visual C# ( \* . cs, \* . resx, \* . Settings, \* . xsd, \* . WSDL); \* . CS, \* . resx, \* . Settings, \* . xsd, \* . WSDL)**  
   
- Do obsługi rejestracji wielu filtrów, każdy filtr jest zarejestrowany w jego własnej podklucza w HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*wersji*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*podklucz*>. Dowolne; jest nazwą podklucza [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ignoruje nazwa podklucza który i używa tylko jego wartości.  
+ W celu obsługi rejestracji wielu filtrów każdy filtr jest rejestrowany w jego własnym podkluczu, w obszarze HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ < *wersja*> \Projects \\ { \<*ProjectGUID*> } \Filters \\ < *Subkey*>. Nazwa podklucza jest dowolnie. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ignoruje nazwę podklucza i używa tylko jego wartości.  
   
- Można kontrolować kontekstów, w których filtr jest używany przez ustawienie flagi, co pokazano w poniższej tabeli. Jeśli filtr nie ma żadnych flag ustawionych, będzie ono wyświetlane po wspólne filtry w **Dodaj istniejący element** okno dialogowe i **Otwórz plik** okno dialogowe, ale nie będą używane w **Znajdź w plikach**  okno dialogowe.  
+ Można kontrolować konteksty, w których filtr jest używany, ustawiając flagi, pokazane w poniższej tabeli. Jeśli filtr nie ma ustawionych flag, będzie wyświetlany po wspólnych filtrach w oknie dialogowym **Dodaj istniejący element** i oknie dialogowym **Otwórz plik** , ale nie będzie używany w oknie dialogowym **Znajdź w plikach** .  
   
 ```  
 [Projects\{ProjectGUID}\Filters\MyLanguageFilter]  
@@ -86,15 +86,15 @@ Typy projektów, należy zarejestrować katalogi, w którym znajdują się swoje
   
 |Nazwa|Typ|Opis|  
 |----------|----------|-----------------|  
-|CommonFindFilesFilter|REG_DWORD|Sprawia, że filtr jednego z typowych filtrów w **Znajdź w plikach** okno dialogowe. Wspólne filtry są wymienione na liście filtrów przed filtrami niezaznaczonych jako wspólne.|  
-|CommonOpenFilesFilter|REG_DWORD|Sprawia, że filtr jednego z typowych filtrów w **Otwórz plik** okno dialogowe. Wspólne filtry są wymienione na liście filtrów przed filtrami niezaznaczonych jako wspólne.|  
-|FindInFilesFilter|REG_DWORD|Wyświetla listę filtru po wspólne filtry w **Znajdź w plikach** okno dialogowe.|  
-|NotOpenFileFilter|REG_DWORD|Wskazuje, że filtr nie jest używany w **Otwórz plik** okno dialogowe.|  
-|NotAddExistingItemFilter|REG_DWORD|Wskazuje, że filtr nie jest używany w **Dodaj istniejący element** okno dialogowe.|  
-|SortPriority|REG_DWORD|Ustaw SortPriority do określają kolejność, w którym są wyświetlane filtrów. Większe wartości SortPriority się pojawić wcześniej na liście filtrów.|  
+|CommonFindFilesFilter|REG_DWORD|Filtruje jeden ze wspólnych filtrów w oknie dialogowym **Znajdź w plikach** . Filtry wspólne są wymienione na liście filtrów przed filtrami, które nie są oznaczone jako wspólne.|  
+|CommonOpenFilesFilter|REG_DWORD|Powoduje, że filtr jest jednym ze wspólnych filtrów w oknie dialogowym **Otwórz plik** . Filtry wspólne są wymienione na liście filtrów przed filtrami, które nie są oznaczone jako wspólne.|  
+|FindInFilesFilter|REG_DWORD|Wyświetla filtr po wspólnych filtrach w oknie dialogowym **Znajdź w plikach** .|  
+|NotOpenFileFilter|REG_DWORD|Wskazuje, że filtr nie jest używany w oknie dialogowym **Otwórz plik** .|  
+|NotAddExistingItemFilter|REG_DWORD|Wskazuje, że filtr nie jest używany w oknie dialogowym **Dodaj istniejący element** .|  
+|SortPriority|REG_DWORD|Ustaw SortPriority, aby zarządzać kolejnością wyświetlania filtrów. Większe wartości SortPriority są wyświetlane wcześniej na liście filtrów.|  
   
 ## <a name="directory-structure"></a>Struktura katalogów  
- Pakietów VSPackage można umieścić szablonu pliki i foldery dowolne miejsce na dysku lokalnym lub zdalnym, tak długo, jak lokalizacja jest rejestrowane za pomocą zintegrowanego środowiska programistycznego (IDE). Jednak w celu ułatwienia organizacji, firma Microsoft zaleca następującą strukturę katalogów w ścieżce instalacji produktu.  
+ Pakietów VSPackage może umieścić pliki szablonów i foldery w dowolnym miejscu na dysku lokalnym lub zdalnym, o ile lokalizacja jest zarejestrowana za pomocą zintegrowanego środowiska programistycznego (IDE). Jednak w celu ułatwienia organizacji zalecamy zastosowanie następującej struktury katalogów w ścieżce instalacji produktu.  
   
  \Templates  
   
@@ -112,14 +112,14 @@ Typy projektów, należy zarejestrować katalogi, w którym znajdują się swoje
   
  \Form  
   
- \Web strony  
+ Strona \Serwer sieci  
   
- \HelperFiles (zawiera pliki używane w elementach projektu wielu plików)  
+ \HelperFiles (zawiera pliki używane w elementach projektu wieloplikowego)  
   
  \WizardFiles  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dodawanie projektu i szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)   
- [Kreatorzy](../../extensibility/internals/wizards.md)   
+ [Dodawanie projektów i szablonów elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)   
+ [Kreatorów](../../extensibility/internals/wizards.md)   
  [Lokalizowanie aplikacji](../../ide/localizing-applications.md)   
  [Identyfikatory CATID obiektów, które są zwykle używane do rozszerzania projektów](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

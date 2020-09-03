@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsReference | Dokumenty firmy Microsoft
+title: 'IDebugProperty2:: SetValueAsReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 73d00ccedc6985061448170735e9ebcaac42f530
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721253"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
@@ -47,23 +47,23 @@ int SetValueAsReference(
 
 ## <a name="parameters"></a>Parametry
 `rgpArgs`\
-[w] Tablica argumentów do przekazania do ustawiacza właściwości kodu zarządzanego. Jeśli setter właściwości nie przyjmuje argumentów lub jeśli ten obiekt [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) `rgpArgs` nie odwołuje się do takiego settera właściwości, powinna być wartością null. Ten parametr jest zazwyczaj wartością null.
+podczas Tablica argumentów do przekazania do metody ustawiającej właściwości kodu zarządzanego. Jeśli Metoda ustawiająca właściwość nie przyjmuje argumentów lub jeśli ten obiekt [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) nie odwołuje się do takiej metody ustawiającej, `rgpArgs` powinna być wartością null. Ten parametr jest zwykle wartością null.
 
 `dwArgCount`\
-[w] Liczba argumentów w `rgpArgs` tablicy.
+podczas Liczba argumentów w `rgpArgs` tablicy.
 
 `pValue`\
-[w] Odwołanie, w postaci obiektu [IDebugReference2,](../../../extensibility/debugger/reference/idebugreference2.md) do wartości używanej do ustawiania tej właściwości.
+podczas Odwołanie w formie obiektu [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) do wartości, która ma zostać użyta do ustawienia tej właściwości.
 
 `dwTimeout`\
-[w] Jak długo trzeba czekać, aby ustawić wartość w milisekundach. Typową wartością jest `INFINITE`. Wpływa to na czas, jaki może potrwać każda możliwa ocena.
+podczas Jak długo należy wykonać, aby ustawić wartość w milisekundach. Typowa wartość to `INFINITE` . Ma to wpływ na długość czasu, jaki może być możliwy do dokonania oceny.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu, zazwyczaj jeden z następujących:
+ Jeśli to się powiedzie, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu, zazwyczaj jedną z następujących czynności:
 
 |Błąd|Opis|
 |-----------|-----------------|
-|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Ustawienie wartości z odwołania nie jest obsługiwane.|
+|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Ustawianie wartości z odwołania nie jest obsługiwane.|
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|Nie można ustawić wartości, ponieważ ta właściwość odwołuje się do metody.|
 |`E_SETVALUE_VALUE_IS_READONLY`|Wartość jest tylko do odczytu i nie można jej ustawić.|
 |`E_NOTIMPL`|Metoda nie jest zaimplementowana.|
