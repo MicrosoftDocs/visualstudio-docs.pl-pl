@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
 ms.openlocfilehash: c95c96815872c259cab761d8b4af36141f866dbd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280560"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Instrukcje: Migrowanie i publikowanie aplikacji sieci Web w usłudze w chmurze platformy Azure z poziomu programu Visual Studio
@@ -79,8 +79,8 @@ Poniższa tabela zawiera szczegółowe informacje na temat uruchamiania aplikacj
 | Typ aplikacji sieci Web | Uruchamianie na platformie Azure |
 | --- | --- |
 | Aplikacja sieci Web ASP.NET<br/>(w tym MVC 2, MVC 3, MVC 4) | Wybierz adres URL na karcie **wdrożenie** dla **dziennika aktywności platformy Azure**. |
-| ASP.NET pustą aplikację sieci Web | Jeśli w aplikacji znajduje się `.aspx` strona domyślna, wybierz adres URL na karcie **wdrożenie** dla **dziennika aktywności platformy Azure**. Aby przejść do innej strony, wprowadź w przeglądarce adres URL następującej postaci:`<deployment_url>/<page_name>.aspx` |
-| Aplikacja usługi WCF<br/>Aplikacja usługi przepływu pracy WCF | Ustaw `.svc` plik jako stronę początkową dla projektu usługi WCF. Następnie przejdź do`<deployment_url>/<service_file>.svc` |
+| ASP.NET pustą aplikację sieci Web | Jeśli w aplikacji znajduje się `.aspx` strona domyślna, wybierz adres URL na karcie **wdrożenie** dla **dziennika aktywności platformy Azure**. Aby przejść do innej strony, wprowadź w przeglądarce adres URL następującej postaci: `<deployment_url>/<page_name>.aspx` |
+| Aplikacja usługi WCF<br/>Aplikacja usługi przepływu pracy WCF | Ustaw `.svc` plik jako stronę początkową dla projektu usługi WCF. Następnie przejdź do `<deployment_url>/<service_file>.svc` |
 | Jednostki dynamiczne ASP.NET<br/>ASP.NET dynamiczne dane LINQ do SQL | Zaktualizuj parametry połączenia zgodnie z opisem w następnej sekcji. Następnie przejdź do `<deployment_url>/<page_name>.aspx` . W przypadku składnika LINQ to SQL należy użyć bazy danych SQL Azure. |
 
 ## <a name="update-a-connection-string-for-aspnet-dynamic-entities"></a>Aktualizowanie parametrów połączenia dla obiektów dynamicznych ASP.NET

@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: baedd24b7eba14b3f2fa6496a7a681773b81cb9b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69547978"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Outlook
-  W tym instruktażu pokazano, jak utworzyć dodatek narzędzi VSTO dla programu Microsoft Office Outlook. Funkcje, które tworzysz w tym rodzaju rozwiązanie, są dostępne dla samej aplikacji, niezależnie od tego, który element programu Outlook jest otwarty. Aby uzyskać więcej informacji, zobacz temat [Tworzenie rozwiązań &#40;pakietu&#41;Office — Omówienie programu VSTO](../vsto/office-solutions-development-overview-vsto.md).
+  W tym instruktażu pokazano, jak utworzyć dodatek narzędzi VSTO dla programu Microsoft Office Outlook. Funkcje, które tworzysz w tym rodzaju rozwiązanie, są dostępne dla samej aplikacji, niezależnie od tego, który element programu Outlook jest otwarty. Aby uzyskać więcej informacji, zobacz [Omówienie tworzenia rozwiązań pakietu Office &#40;narzędzi VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -48,15 +48,15 @@ ms.locfileid: "69547978"
 
 - Program Microsoft Outlook
 
-## <a name="create-the-project"></a>Utwórz projekt
+## <a name="create-the-project"></a>Tworzenie projektu
 
 ### <a name="to-create-a-new-outlook-project-in-visual-studio"></a>Aby utworzyć nowy projekt programu Outlook w programie Visual Studio
 
-1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 2. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
 
-3. W okienku szablony rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic**, a następnie rozwiń węzeł **Office/SharePoint**.
+3. W okienku szablony rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie rozwiń węzeł **Office/SharePoint**.
 
 4. W rozwiniętym węźle **Office/SharePoint** wybierz węzeł **Dodatki pakietu Office** .
 
@@ -66,23 +66,23 @@ ms.locfileid: "69547978"
 
 7. Kliknij przycisk **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]tworzy projekt **FirstOutlookAddIn** i otwiera plik kodu **ThisAddIn** w edytorze.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tworzy projekt **FirstOutlookAddIn** i otwiera plik kodu **ThisAddIn** w edytorze.
 
 ## <a name="write-code-that-adds-text-to-each-new-mail-message"></a>Napisz kod, który dodaje tekst do każdej nowej wiadomości e-mail
  Następnie Dodaj kod do pliku kodu ThisAddIn. Nowy kod używa modelu obiektów programu Outlook do dodawania tekstu do każdej nowej wiadomości e-mail. Domyślnie plik kodu ThisAddIn zawiera następujący wygenerowany kod:
 
 - Częściowa definicja `ThisAddIn` klasy. Ta klasa udostępnia punkt wejścia dla kodu i zapewnia dostęp do modelu obiektów programu Outlook. Aby uzyskać więcej informacji, zobacz [dodatki narzędzi VSTO dla programu](../vsto/programming-vsto-add-ins.md). Pozostała część `ThisAddIn` klasy jest zdefiniowana w ukrytym pliku kodu, który nie powinien być modyfikowany.
 
-- Programy obsługi `ThisAddIn_Shutdown` zdarzeń i.`ThisAddIn_Startup` Te programy obsługi zdarzeń są wywoływane, gdy program Outlook ładuje i zwalnia dodatek narzędzi VSTO. Te programy obsługi zdarzeń umożliwiają zainicjowanie dodatku VSTO podczas ładowania i oczyszczenie zasobów używanych przez dodatek VSTO po jego wyładowaniu. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
+- `ThisAddIn_Startup` `ThisAddIn_Shutdown` Programy obsługi zdarzeń i. Te programy obsługi zdarzeń są wywoływane, gdy program Outlook ładuje i zwalnia dodatek narzędzi VSTO. Te programy obsługi zdarzeń umożliwiają zainicjowanie dodatku VSTO podczas ładowania i oczyszczenie zasobów używanych przez dodatek VSTO po jego wyładowaniu. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
 ### <a name="to-add-text-to-the-subject-and-body-of-each-new-mail-message"></a>Aby dodać tekst do tematu i treści każdej nowej wiadomości e-mail
 
-1. W pliku kodu ThisAddIn Zadeklaruj pole o nazwie `inspectors` `ThisAddIn` w klasie. `inspectors` Pole utrzymuje odwołanie do kolekcji okien inspektorów w bieżącym wystąpieniu programu Outlook. To odwołanie zapobiega zwalnianiu pamięci przez moduł wyrzucania elementów bezużytecznych, która zawiera <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> program obsługi zdarzeń dla zdarzenia.
+1. W pliku kodu ThisAddIn Zadeklaruj pole o nazwie `inspectors` w `ThisAddIn` klasie. `inspectors`Pole utrzymuje odwołanie do kolekcji okien inspektorów w bieżącym wystąpieniu programu Outlook. To odwołanie zapobiega zwalnianiu pamięci przez moduł wyrzucania elementów bezużytecznych, która zawiera program obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzenia.
 
     [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]
 
-2. Zastąp `ThisAddIn_Startup` metodę poniższym kodem. Ten kod dołącza procedurę obsługi zdarzeń do <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzenia.
+2. Zastąp metodę `ThisAddIn_Startup` następującym kodem. Ten kod dołącza procedurę obsługi zdarzeń do <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzenia.
 
     [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
     [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]
@@ -96,9 +96,9 @@ ms.locfileid: "69547978"
 
    Aby zmodyfikować każdą nową wiadomość e-mail, poprzednie przykłady kodu używają następujących obiektów:
 
-- `Application` Pole`ThisAddIn` klasy. `Application` Pole<xref:Microsoft.Office.Interop.Outlook.Application> zwraca obiekt, który reprezentuje bieżące wystąpienie programu Outlook.
+- `Application`Pole `ThisAddIn` klasy. `Application`Pole zwraca <xref:Microsoft.Office.Interop.Outlook.Application> obiekt, który reprezentuje bieżące wystąpienie programu Outlook.
 
-- Parametr programu obsługi zdarzeń <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> dla zdarzenia. `Inspector` `Inspector` Parametr<xref:Microsoft.Office.Interop.Outlook.Inspector> jest obiektem, który reprezentuje okno Inspektora nowej wiadomości e-mail. Aby uzyskać więcej informacji, zobacz [rozwiązania programu Outlook](../vsto/outlook-solutions.md).
+- `Inspector`Parametr programu obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzenia. `Inspector`Parametr jest <xref:Microsoft.Office.Interop.Outlook.Inspector> obiektem, który reprezentuje okno Inspektora nowej wiadomości e-mail. Aby uzyskać więcej informacji, zobacz [rozwiązania programu Outlook](../vsto/outlook-solutions.md).
 
 ## <a name="test-the-project"></a>Testowanie projektu
  Podczas kompilowania i uruchamiania projektu Sprawdź, czy tekst jest wyświetlany w wierszu tematu i treści nowej wiadomości e-mail.
@@ -137,7 +137,7 @@ ms.locfileid: "69547978"
 
 - Wdrażanie dodatków VSTO dla programu Outlook. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązania biurowego](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
 - [Rozwiązania programu Outlook](../vsto/outlook-solutions.md)
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)

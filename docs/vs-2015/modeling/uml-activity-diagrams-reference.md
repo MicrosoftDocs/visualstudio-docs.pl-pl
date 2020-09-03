@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 960e9469290bca42abd252d497c2ce72e62e41a4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531537"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagramy aktywności UML: Odnośnik
@@ -56,7 +56,7 @@ ms.locfileid: "85531537"
 
  ![Prosty przepływ sterowania](../modeling/media/uml-actovsimple.png "UML_ActOvSimple")
 
-|**Przekształca**|**Postaci**|**Opis i główne właściwości**|
+|**Kształt**|**Element**|**Opis i główne właściwości**|
 |-|-|-|
 |1|**Akcja**|Krok działania, w którym użytkownicy lub oprogramowanie wykonują pewne zadania.<br /><br /> Akcja może rozpocząć się, gdy token dotarł do wszystkich przepływów przychodzących. Po jego zakończeniu tokeny są wysyłane na wszystkie przepływy wychodzące.<br /><br /> -   **Treść** — określa akcję szczegółowo.<br />-   **Język** — język wyrażenia w treści.<br />-   **Lokalne warunki końcowe** — ograniczenia, które muszą być spełnione po zakończeniu wykonywania. Cel osiągnięty przez akcję.<br />-   **Lokalne warunki** wstępne — ograniczenia, które muszą zostać spełnione przed rozpoczęciem wykonywania.|
 |2|**Przepływ sterowania**|Łącznik, który pokazuje przepływ sterowania między akcjami. Aby interpretować diagram, Załóżmy, że token przepływa z jednej akcji do następnego.<br /><br /> Aby utworzyć przepływ sterowania, użyj narzędzia **Łącznik** .|
@@ -76,21 +76,21 @@ ms.locfileid: "85531537"
 
  ![Diagram aktywności pokazujący współbieżny przepływ](../modeling/media/uml-actovconcurrent.png "UML_ActovConcurrent")
 
-|**Przekształca**|**Postaci**|**Opis**|
+|**Kształt**|**Element**|**Opis**|
 |-|-|-|
 |11|**Węzeł rozwidlenia**|Dzieli pojedynczy przepływ na współbieżne przepływy. Każdy przychodzący token tworzy token dla każdego łącznika wychodzącego.|
 |12|**Węzeł sprzężenia**|Łączy współbieżne przepływy w jeden przepływ. Gdy każdy przepływ przychodzący ma token oczekujący, token jest generowany w danych wyjściowych.|
 |13|**Akcja wysyłania sygnału**|Akcja, która wysyła komunikat lub sygnał do innego działania lub do współbieżnego wątku w tym samym działaniu. Typ i zawartość komunikatu są implikowane przez tytuł akcji lub określone w dodatkowych komentarzach.<br /><br /> Akcja może wysyłać dane w sygnale, które mogą być przekazane do akcji w przepływie obiektów lub wejściowym numerze PIN (16).|
 |14|**Akcja akceptowania zdarzenia**|Akcja, która czeka na komunikat lub sygnał przed kontynuowaniem akcji. Typ komunikatu, które może otrzymywać akcja, jest implikowany przez tytuł lub określony w dodatkowych komentarzach.<br /><br /> Jeśli akcja nie ma przepływu sterowania przychodzącego, generuje token za każdym razem, gdy odbierze komunikat.<br /><br /> Akcja może odbierać dane w sygnale, które mogą być przekazywane do przepływu obiektów lub numeru PIN wyjściowego (17).<br /><br /> -   **IsUnmarshall** — Jeśli prawda, może istnieć kilka wpisanych kodów wyjściowych, a dane nie są przekazywane do nich. W przypadku wartości false wszystkie dane są wyświetlane na jednym numerze PIN.|
 
-### <a name="data-flows"></a><a name="DataFlow"></a>Przepływy danych
+### <a name="data-flows"></a><a name="DataFlow"></a> Przepływy danych
  Można opisać przepływ danych z jednej akcji do innej. Aby uzyskać więcej informacji na temat elementów użytych w tej sekcji, zobacz sekcję rysowanie przepływów danych tematu wskazówki dotyczące rysowania diagramu aktywności.
 
  ![Diagram aktywności przedstawiający przepływ danych](../modeling/media/uml-actovdata.png "UML_ActOvData")
 
-|**Przekształca**|**Postaci**|**Opis**|
+|**Kształt**|**Element**|**Opis**|
 |-|-|-|
-|15|**Węzeł obiektu**|Reprezentuje dane, które są przekazywane wraz z przepływem.<br /><br /> -   **Porządkowanie** — jak są przechowywane wiele tokenów.<br />-   **Wybór** — wywołuje proces, który można zdefiniować w innym diagramie, który filtruje dane.<br />-   **Górna granica** -0 wskazuje, że dane muszą być przekazywane bezpośrednio wzdłuż przepływu; \*wskazuje, że dane mogą być przechowywane w przepływie.<br />-   **Typ** — typ obiektów, które są przechowywane i przesyłane.|
+|15|**Węzeł obiektu**|Reprezentuje dane, które są przekazywane wraz z przepływem.<br /><br /> -   **Porządkowanie** — jak są przechowywane wiele tokenów.<br />-   **Wybór** — wywołuje proces, który można zdefiniować w innym diagramie, który filtruje dane.<br />-   **Górna granica** -0 wskazuje, że dane muszą być przekazywane bezpośrednio wzdłuż przepływu; \* wskazuje, że dane mogą być przechowywane w przepływie.<br />-   **Typ** — typ obiektów, które są przechowywane i przesyłane.|
 |16|**Wejściowy numer PIN**|Reprezentuje dane, które akcja może otrzymać po jej wykonaniu.<br /><br /> -   **Typ** — typ przesyłanych obiektów.|
 |17|**Wyjściowy numer PIN**|Reprezentuje dane, które tworzy akcja, gdy zostanie ona wykonana.<br /><br /> -   **Typ** — typ przesyłanych obiektów.|
 |18|**Węzeł parametru działania**|Węzeł obiektu, za pomocą którego dane mogą być odbierane lub generowane przez działanie.<br /><br /> Używany, gdy działanie reprezentowane przez diagram jest wywoływane z innego działania lub gdy diagram opisuje operację lub funkcję.<br /><br /> -   **Typ** — typ przesyłanych obiektów.|

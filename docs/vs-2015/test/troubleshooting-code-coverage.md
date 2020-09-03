@@ -9,10 +9,10 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2bf21286143b2b9543c834f00ed31ddaa4cef63
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660377"
 ---
 # <a name="troubleshooting-code-coverage"></a>Pokrycie kodu — wyszukiwanie błędów
@@ -58,7 +58,7 @@ Narzędzie analizy pokrycia kodu w programie Visual Studio zbiera dane dotycząc
  Jeśli pliki .pdb i .dll lub .exe znajdują się w różnych miejscach, należy skopiować plik .pdb do tego samego katalogu. Można również skonfigurować silnik pokrycia kodu, aby wyszukiwał pliki .pdb w innej lokalizacji. Aby uzyskać więcej informacji, zobacz [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md).
 
 ### <a name="using-an-instrumented-or-optimized-binary"></a>Korzystanie ze zinstrumentowanego lub zoptymalizowanego pliku binarnego
- Analiza określa, czy plik binarny został poddany jakiejkolwiek formie zaawansowanej optymalizacji, takiej jak optymalizacja z przewodnikiem profilowego, lub jest Instrumentacją narzędzia profilowania, takiego jak VSInstr. exe lub vsperfmon. exe.
+ Analiza określa, czy plik binarny został poddany jakiejkolwiek formie zaawansowanej optymalizacji, takiej jak optymalizacja z przewodnikiem profilowego, lub jest Instrumentacją narzędzia profilowania, takiego jak vsinstr.exe lub vsperfmon.exe.
 
  Wyjaśnienie, jeśli zestaw został już Instrumentacją lub zoptymalizowany przez inne narzędzie profilowania, zestaw jest pomijany z analizy pokrycia kodu.
 
@@ -67,16 +67,16 @@ Narzędzie analizy pokrycia kodu w programie Visual Studio zbiera dane dotycząc
  Wyłączono optymalizację i wykorzystano nową kompilację.
 
 ### <a name="code-is-not-managed-net-or-native-c-code"></a>Kod nie jest zarządzany (.NET) lub nie jest kodem natywnym (C++)
- Sprawdź, czy uruchamiasz niektóre testy na serwerze zarządzanym C++ lub kodzie.
+ Analiza sprawdza, czy uruchamiasz niektóre testy na kodzie zarządzanym lub C++.
 
- Wyjaśnienie analizy pokrycia kodu w programie Visual Studio są dostępne tylko w kodzie zarządzanymC++i natywnym (). Jeżeli pracujesz na narzędziach innych firm, część kodu lub cały kod może być wykonywany na innej platformie.
+ Wyjaśnienie analizy pokrycia kodu w programie Visual Studio są dostępne tylko w kodzie zarządzanym i natywnym (C++). Jeżeli pracujesz na narzędziach innych firm, część kodu lub cały kod może być wykonywany na innej platformie.
 
  Rozwiązanie nie jest dostępne.
 
 ### <a name="assembly-has-been-installed-by-ngen"></a>Zestaw został zainstalowany przez NGen
  Sprawdź, czy zestaw nie został załadowany z pamięci podręcznej obrazów natywnych.
 
- Wyjaśnienie ze względu na wydajność, zestawy obrazów natywnych nie są analizowane. Aby uzyskać więcej informacji, zobacz [Ngen. exe (Generator obrazu natywnego)](https://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).
+ Wyjaśnienie ze względu na wydajność, zestawy obrazów natywnych nie są analizowane. Aby uzyskać więcej informacji, zobacz [Ngen.exe (Generator obrazu natywnego)](https://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).
 
  Rozwiązanie Użyj wersji MSIL zestawu. Nie przetwarzaj go z NGen.
 
@@ -97,7 +97,7 @@ Narzędzie analizy pokrycia kodu w programie Visual Studio zbiera dane dotycząc
 
   Każdy ciąg znaków w pliku jest wyrażeniem regularnym. Przejrzyj każdy z nich w poszukiwaniu błędów, a w szczególności zwróć uwagę na:
 
-  - Niezgodne nawiasy (...) lub nawiasy klamrowe \\ (... \\). Jeśli chcesz dopasować nawiasy w ciągu wyszukiwania, musisz dodać przed nimi znak ucieczki. Na przykład aby dopasować użycie funkcji: `.*MyFunction\(double\)`
+  - Niezgodne nawiasy (...) lub nawiasy klamrowe \\ (... \\ ). Jeśli chcesz dopasować nawiasy w ciągu wyszukiwania, musisz dodać przed nimi znak ucieczki. Na przykład aby dopasować do użycia funkcji: `.*MyFunction\(double\)`
 
   - Gwiazdka lub plus na początku wyrażenia. Aby dopasować dowolny ciąg znaków, użyj kropki, a po niej gwiazdki: `.*`
 
@@ -106,7 +106,7 @@ Narzędzie analizy pokrycia kodu w programie Visual Studio zbiera dane dotycząc
 
  Wyjaśnienie można uruchomić testy jednostkowe z niestandardowym plikiem. runsettings, aby skonfigurować opcje pokrycia kodu. Opcje te umożliwiają uwzględnianie lub wykluczanie plików. Aby uzyskać więcej informacji, zobacz [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md).
 
- Rozwiązanie Usuń wszystkie węzły `Include` z pliku. runsettings, a następnie usuń wszystkie węzły `Exclude`. Jeśli to rozwiąże problem, umieść je z powrotem w etapach.
+ Rozwiązanie Usuń wszystkie `Include` węzły z pliku. runsettings, a następnie usuń wszystkie `Exclude` węzły. Jeśli to rozwiąże problem, umieść je z powrotem w etapach.
 
  Upewnij się, że węzeł DataCollectors określa pokrycie kodu. Porównaj ją z przykładem w temacie [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md).
 

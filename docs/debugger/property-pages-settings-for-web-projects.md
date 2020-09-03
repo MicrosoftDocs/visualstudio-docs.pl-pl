@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7daa58004b118d46a8248428e9a9d242dfccef8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72730594"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Ustawienia stron właściwości dla projektów sieci Web
@@ -33,24 +33,24 @@ Ustawienia właściwości dla konfiguracji debugowania witryny sieci Web można 
 
 ### <a name="start-options-category"></a>Kategoria opcji uruchamiania
 
-| **Konfigurowania** | **Opis** |
+| **Ustawienie** | **Opis** |
 | - | - |
 | **Uruchom akcję** | Nagłówek, który grupuje opcje związane z uruchamianiem aplikacji. |
 | **Użyj bieżącej strony** | Określa bieżącą stronę jako punkt początkowy dla debugowania. |
 | **Określona Strona:** | Określa stronę sieci Web, w której chcesz rozpocząć debugowanie. |
 | **Uruchom program zewnętrzny:** | Określa polecenie do uruchamiania programu, który chcesz debugować. |
 | **Argumenty wiersza polecenia:** | Określa argumenty polecenia określonego powyżej. |
-| **Katalog roboczy:** | Określa katalog roboczy debugowanego programu. W [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] katalog roboczy jest katalogiem, z którego aplikacja jest uruchamiana, domyślnie \bin\debug. |
+| **Katalog roboczy:** | Określa katalog roboczy debugowanego programu. W programie [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] katalog roboczy jest katalogiem, z którego aplikacja jest uruchamiana, domyślnie \bin\debug. |
 | **Początkowy adres URL** | Określa lokalizację aplikacji sieci Web, która ma być debugowana. |
 | **Nie otwieraj strony. Zaczekaj na żądanie z zewnętrznej aplikacji** | Mówi, że poczekaj na żądanie z zewnętrznej aplikacji. Ta opcja nie powoduje uruchomienia programu Internet Explorer lub innej aplikacji. Po prostu przygotowuje się do debugowania, gdy jest wywoływany przez aplikację. |
-| **Server** | Nagłówek, który grupuje opcje powiązane z serwerem, który ma być używany. |
+| **Server** (Serwer) | Nagłówek, który grupuje opcje powiązane z serwerem, który ma być używany. |
 | **Użyj domyślnego serwera sieci Web** | Mówi, aby użyć domyślnego serwera sieci Web. |
 | **Użyj serwera niestandardowego** | Umożliwia wprowadzenie podstawowego adresu URL, który będzie używany jako serwer programu. |
 | **Debugery** | Nagłówek, który grupuje opcje związane z typem debugowania, który ma zostać wykonany. |
-| **Debugowanie ASP.NET** | Umożliwia debugowanie stron serwera utworzonych dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] platformy deweloperskiej. Należy określić adres URL w polu **początkowy adres URL**. |
+| **Debugowanie ASP.NET** | Umożliwia debugowanie stron serwerowych pisanych dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] platformy deweloperskiej. Należy określić adres URL w polu **początkowy adres URL**. |
 | **Debugowanie kodu natywnego** | Umożliwia debugowanie wywołań natywnego (niezarządzanego) kodu Win32 z aplikacji zarządzanej. |
 | **Debugowanie SQL Server** | Umożliwia debugowanie obiektów SQL Server bazy danych. |
 | **Debugowanie Silverlight** | Umożliwia debugowanie składników Silverlight. |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

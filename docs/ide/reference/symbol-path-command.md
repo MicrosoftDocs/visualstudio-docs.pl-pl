@@ -15,14 +15,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed8ec8e7f990a4a2c5d943a15a105faa5ab23572
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589386"
 ---
 # <a name="symbol-path-command"></a>Ścieżka symboli — Polecenie
-Ustawia listę katalogów debugera do wyszukiwania symboli.
+Ustawia listę katalogów dla debugera do wyszukiwania symboli.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,20 +33,20 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ## <a name="arguments"></a>Argumenty
 `pathname`
 
-Element opcjonalny. Średnik rozdzielona lista ścieżek debugera do wyszukiwania symboli.
+Opcjonalny. Rozdzielana średnikami lista ścieżek dla debugera do wyszukiwania symboli.
 
 ## <a name="remarks"></a>Uwagi
-Jeśli `pathname` nie zostanie określony, polecenie wyświetla bieżące ścieżki symboli.
+Jeśli wartość nie `pathname` jest określona, polecenie wyświetla listę bieżących ścieżek symboli.
 
 ## <a name="example"></a>Przykład
-W tym przykładzie dodaje dwie ścieżki do listy katalogów symboli.
+Ten przykład dodaje dwie ścieżki do listy katalogów symboli.
 
 ```
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 ```
 
 ## <a name="example"></a>Przykład
-W tym przykładzie jest wyświetlana lista rozdzielanych średników bieżących ścieżek symboli.
+Ten przykład wyświetla listę rozdzielonych średnikami dla bieżących ścieżek symboli.
 
 ```
 Debug.SymbolPath
@@ -55,4 +55,4 @@ Debug.SymbolPath
 ## <a name="see-also"></a>Zobacz też
 
 - [Okno polecenia](../../ide/reference/command-window.md)
-- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)

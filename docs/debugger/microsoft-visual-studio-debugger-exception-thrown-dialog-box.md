@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8376d0cd82e309c2c8db94e38b8c6a2083bd429a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731212"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Microsoft Visual Studio Debugger (wystąpienie wyjątku) ― okno dialogowe
@@ -41,7 +41,7 @@ W programie wystąpił wyjątek. To okno dialogowe służy do zgłaszania rodzaj
 
  **Ignoruj** Umożliwia kontynuowanie wykonywania bez wywoływania procedury obsługi wyjątków. Ponieważ program obsługi wyjątków nie jest wywoływany, może to prowadzić do dalszych konsekwencji, w tym dodatkowych wyjątków i błędów. Ta opcja jest niedostępna w przypadku niektórych typów wyjątków.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md)
 - [Najlepsze rozwiązania dotyczące wyjątków](/dotnet/standard/exceptions/best-practices-for-exceptions)
 - [Obsługa wyjątków](/cpp/extensions/exception-handling-cpp-component-extensions)

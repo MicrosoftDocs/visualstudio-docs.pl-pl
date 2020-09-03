@@ -1,5 +1,5 @@
 ---
-title: Testowanie jednostkowe wizualnej C++ biblioteki DLL dla aplikacji ze sklepu | Microsoft Docs
+title: Testowanie jednostkowe Visual C++ DLL dla aplikacji ze sklepu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -10,22 +10,22 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d5f86eb40e1401f98a4c66d0b971fb006762cc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659692"
 ---
-# <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Testowanie jednostkowe wizualnej C++ biblioteki DLL dla aplikacji ze sklepu
+# <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Testowanie jednostkowe Visual C++ DLL dla aplikacji ze sklepu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych C++ dla bibliotek DLL dla aplikacji ze sklepu Windows. Biblioteka DLL RooterLib pokazuje niejasne informacje o limicie teoretycznym od calculus przez implementację funkcji, która oblicza oszacowanie wartości pierwiastek kwadratowy danego numeru. Biblioteka DLL może zostać następnie dołączona do aplikacji ze sklepu Windows, która przedstawia użytkownikowi zabawne rzeczy, które można wykonać za pomocą obliczeń matematycznych.
+W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bibliotek DLL języka C++ dla aplikacji ze sklepu Windows. Biblioteka DLL RooterLib pokazuje niejasne informacje o limicie teoretycznym od calculus przez implementację funkcji, która oblicza oszacowanie wartości pierwiastek kwadratowy danej liczby. Biblioteka DLL może zostać następnie dołączona do aplikacji ze sklepu Windows, która przedstawia użytkownikowi zabawne rzeczy, które można wykonać za pomocą obliczeń matematycznych.
 
  W tym temacie przedstawiono sposób korzystania z testów jednostkowych jako pierwszego kroku projektowania. W tym podejściu najpierw napiszesz metodę testową, która weryfikuje określone zachowanie w testowanym systemie, a następnie pisze kod, który przekazuje test. Wprowadzając zmiany w kolejności następującej procedury, można odwrócić tę strategię, aby najpierw napisać kod, który ma zostać przetestowany, a następnie napisać testy jednostkowe.
 
- W tym temacie jest również tworzone pojedyncze rozwiązanie programu Visual Studio i oddzielne projekty dla testów jednostkowych i biblioteki DLL, która ma zostać przetestowana. Możesz również uwzględnić testy jednostkowe bezpośrednio w projekcie DLL lub utworzyć oddzielne rozwiązania dla testów jednostkowych i. Bibliotece. Zobacz [Dodawanie testów jednostkowych do C++ istniejących aplikacji](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) , aby uzyskać wskazówki dotyczące struktury do użycia.
+ W tym temacie jest również tworzone pojedyncze rozwiązanie programu Visual Studio i oddzielne projekty dla testów jednostkowych i biblioteki DLL, która ma zostać przetestowana. Możesz również uwzględnić testy jednostkowe bezpośrednio w projekcie DLL lub utworzyć oddzielne rozwiązania dla testów jednostkowych i. Bibliotece. Zobacz [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) , aby uzyskać wskazówki dotyczące struktury do użycia.
 
-## <a name="BKMK_In_this_topic"></a>W tym temacie
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> W tym temacie
  Ten temat przeprowadzi Cię przez następujące zadania:
 
  [Utwórz rozwiązanie i projekt testu jednostkowego](#BKMK_Create_the_solution_and_the_unit_test_project)
@@ -42,15 +42,15 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych C++ dla
 
  [Refaktoryzacja kodu bez zmiany testów](#BKMK_Refactor_the_code_without_changing_tests)
 
-## <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a>Utwórz rozwiązanie i projekt testu jednostkowego
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Utwórz rozwiązanie i projekt testu jednostkowego
 
 1. W menu **plik** wybierz pozycję **Nowy**, a następnie wybierz pozycję **Nowy projekt**.
 
-2. W oknie dialogowym Nowy projekt rozwiń węzeł **zainstalowane**, rozwiń pozycję **Wizualizacja C++**  i wybierz pozycję **Sklep Windows**. Następnie wybierz pozycję **Biblioteka testów jednostkowych (aplikacje ze sklepu Windows)** z listy szablonów projektu.
+2. W oknie dialogowym Nowy projekt rozwiń węzeł **zainstalowane**, rozwiń węzeł **Visual C++** i wybierz pozycję **Sklep Windows**. Następnie wybierz pozycję **Biblioteka testów jednostkowych (aplikacje ze sklepu Windows)** z listy szablonów projektu.
 
-     ![Utwórz bibliotekę testów&#43; &#43; jednostkowych C](../test/media/ute-cpp-windows-unittestlib-create.png "UTE_Cpp_windows_UnitTestLib_Create")
+     ![Tworzenie biblioteki testów jednostkowych C&#43;&#43; ](../test/media/ute-cpp-windows-unittestlib-create.png "UTE_Cpp_windows_UnitTestLib_Create")
 
-3. Nadaj projektowi nazwę `RooterLibTests`; Określ lokalizację; Nazwij rozwiązanie `RooterLib`; Upewnij się, że jest zaznaczone pole wyboru **Utwórz katalog dla rozwiązania** .
+3. Nazwij projekt `RooterLibTests` ; Określ lokalizację; Nadaj nazwę rozwiązaniu i upewnij się, `RooterLib` że jest zaznaczone pole wyboru **Utwórz katalog dla rozwiązania** .
 
      ![Określ rozwiązanie i nazwę projektu i lokalizację](../test/media/ute-cpp-windows-unittestlib-createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
 
@@ -58,17 +58,17 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych C++ dla
 
      ![UnitTest1. cpp](../test/media/ute-cpp-windows-unittest1-cpp.png "UTE_Cpp_windows_unittest1_cpp")
 
-     Należy pamiętać o następujących kwestiach:
+     Należy pamiętać, że:
 
-    - Każdy test jest definiowany przy użyciu `TEST_METHOD(YourTestName){...}`.
+    - Każdy test jest definiowany przy użyciu `TEST_METHOD(YourTestName){...}` .
 
          Nie trzeba pisać sygnatury funkcji konwencjonalnej. Podpis jest tworzony przez makro TEST_METHOD. Makro generuje funkcję wystąpienia zwracającą typ void. Generuje również funkcję statyczną, która zwraca informacje o metodzie testowej. Te informacje umożliwiają Eksploratorowi testów znalezienie metody.
 
-    - Metody testowe są pogrupowane w klasy przy użyciu `TEST_CLASS(YourClassName){...}`.
+    - Metody testowe są pogrupowane w klasy przy użyciu `TEST_CLASS(YourClassName){...}` .
 
          Gdy testy są uruchamiane, tworzone jest wystąpienie każdej klasy testowej. Metody testowe są wywoływane w nieokreślonej kolejności. Można zdefiniować metody specjalne, które są wywoływane przed i po każdym module, klasie lub metodzie. Aby uzyskać więcej informacji, zobacz [using Microsoft. VisualStudio. TestTools. CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) w bibliotece MSDN.
 
-## <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a>Sprawdź, czy testy są uruchamiane w Eksploratorze testów
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Sprawdź, czy testy są uruchamiane w Eksploratorze testów
 
 1. Wstaw kod testu:
 
@@ -79,7 +79,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych C++ dla
     }
     ```
 
-     Należy zauważyć, że Klasa `Assert` dostarcza kilka metod statycznych, których można użyć do sprawdzenia wyników w metodach testowych.
+     Należy zauważyć, że `Assert` Klasa zawiera kilka metod statycznych, których można użyć do sprawdzenia wyników w metodach testowych.
 
 2. W menu **test** wybierz polecenie **Uruchom** , a następnie wybierz polecenie **Uruchom wszystkie**.
 
@@ -87,13 +87,13 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych C++ dla
 
      ![Eksplorator testów](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
 
-## <a name="BKMK_Add_the_DLL_project_to_the_solution"></a>Dodawanie projektu DLL do rozwiązania
+## <a name="add-the-dll-project-to-the-solution"></a><a name="BKMK_Add_the_DLL_project_to_the_solution"></a> Dodawanie projektu DLL do rozwiązania
 
 1. W Eksplorator rozwiązań wybierz nazwę rozwiązania. Z menu skrótów wybierz polecenie **Dodaj**, a następnie **Dodaj nowy projekt**.
 
      ![Tworzenie projektu RooterLib](../test/media/ute-cpp-windows-rooterlib-create.png "UTE_Cpp_windows_RooterLib_Create")
 
-2. W oknie dialogowym **Dodaj nowy projekt** wybierz pozycję **dll (aplikacje ze sklepu Windows)** .
+2. W oknie dialogowym **Dodaj nowy projekt** wybierz pozycję **dll (aplikacje ze sklepu Windows)**.
 
 3. Dodaj następujący kod do pliku **RooterLib. h** :
 
@@ -117,9 +117,9 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych C++ dla
     };
     ```
 
-     Komentarze wyjaśniają blok ifdef nie tylko dla dewelopera biblioteki DLL, ale do każdego, kto odwołuje się do biblioteki DLL w projekcie. Symbol ROOTERLIB_EXPORTS można dodać do wiersza polecenia przy użyciu właściwości projektu biblioteki DLL.
+     Komentarze wyjaśniają blok ifdef nie tylko dla dewelopera biblioteki DLL, ale do każdego, kto odwołuje się do biblioteki DLL w projekcie. Możesz dodać symbol ROOTERLIB_EXPORTS do wiersza polecenia, używając właściwości projektu biblioteki DLL.
 
-     Klasa `CRooterLib` deklaruje konstruktora i metodę `SqareRoot` szacowania.
+     `CRooterLib`Klasa deklaruje konstruktora i `SqareRoot` metodę szacowania.
 
 4. Dodaj symbol ROOTERLIB_EXPORTS do wiersza polecenia.
 
@@ -127,9 +127,9 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych C++ dla
 
          ![Dodaj definicję symbolu preprocesora](../test/media/ute-cpp-windows-addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
 
-    2. Na stronie właściwości RooterLib rozwiń węzeł **Właściwości konfiguracji**, rozwiń **C++** i wybierz **preprocesor**.
+    2. Na stronie właściwości RooterLib rozwiń węzeł **Właściwości konfiguracji**, rozwiń węzeł **C++** i wybierz **preprocesor**.
 
-    3. Wybierz **\<Edit... >** z listy **Definicje preprocesora** , a następnie Dodaj `ROOTERLIB_EXPORTS` do okna dialogowego Definicje preprocesora.
+    3. Wybierz **\<Edit...>** z listy **Definicje preprocesora** , a następnie Dodaj w oknie `ROOTERLIB_EXPORTS` dialogowym Definicje preprocesora.
 
 5. Dodaj minimalne implementacje zadeklarowanych funkcji. Otwórz **RooterLib. cpp** i Dodaj następujący kod:
 
@@ -147,7 +147,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych C++ dla
 
     ```
 
-## <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a>Połącz projekt testowy z projektem dll
+## <a name="couple-the-test-project-to-the-dll-project"></a><a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Połącz projekt testowy z projektem dll
 
 1. Dodaj RooterLib do projektu RooterLibTests.
 
@@ -200,7 +200,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych C++ dla
 
    Został skonfigurowany test i projekty kodu i zweryfikowane, że można uruchomić testy, które uruchamiają funkcje w projekcie kodu. Teraz możesz zacząć pisać prawdziwe testy i kod.
 
-## <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a>Iteracyjnie rozszerza testy i przekazują je
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Iteracyjnie rozszerza testy i przekazują je
 
 1. Dodaj nowy test:
 
@@ -261,7 +261,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych C++ dla
 > [!TIP]
 > Opracowuj kod przez dodanie testów pojedynczo. Upewnij się, że wszystkie testy są zakończone po każdej iteracji.
 
-## <a name="BKMK_Debug_a_failing_test"></a>Debuguj test zakończony niepowodzeniem
+## <a name="debug-a-failing-test"></a><a name="BKMK_Debug_a_failing_test"></a> Debuguj test zakończony niepowodzeniem
 
 1. Dodaj inny test do **UnitTest1. cpp**:
 
@@ -303,7 +303,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych C++ dla
 
 3. Aby zobaczyć dlaczego test nie powiedzie się, przechodzenie przez funkcję:
 
-   1. Ustaw punkt przerwania na początku funkcji `SquareRoot`.
+   1. Ustaw punkt przerwania na początku `SquareRoot` funkcji.
 
    2. W menu skrótów testu zakończonego niepowodzeniem wybierz **Debuguj wybrane testy**.
 
@@ -331,9 +331,9 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych C++ dla
 
    ![Wszystkie testy zakończone powodzeniem](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
 
-## <a name="BKMK_Refactor_the_code_without_changing_tests"></a>Refaktoryzacja kodu bez zmiany testów
+## <a name="refactor-the-code-without-changing-tests"></a><a name="BKMK_Refactor_the_code_without_changing_tests"></a> Refaktoryzacja kodu bez zmiany testów
 
-1. Uprość Obliczanie centralne w funkcji `SquareRoot`:
+1. Uprość Obliczanie centralne w `SquareRoot` funkcji:
 
     ```
     // old code

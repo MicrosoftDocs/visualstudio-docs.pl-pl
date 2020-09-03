@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2::GetPortNotify | Dokumenty firmy Microsoft
+title: 'IDebugDefaultPort2:: GetPortNotify | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 670dd128e6962c1e1d12f81eea03f9759fa56621
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732404"
 ---
 # <a name="idebugdefaultport2getportnotify"></a>IDebugDefaultPort2::GetPortNotify
@@ -41,13 +41,13 @@ int GetPortNotify(
 
 ## <a name="parameters"></a>Parametry
 `ppPortNotify`\
-[na zewnątrz] [Obiekt IDebugPortNotify2.](../../../extensibility/debugger/reference/idebugportnotify2.md)
+określoną Obiekt [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Zwykle `QueryInterface` metoda jest wywoływana na obiekcie implementującym interfejs [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) w celu uzyskania interfejsu [IDebugPortNotify2.](../../../extensibility/debugger/reference/idebugportnotify2.md) Istnieją jednak okoliczności, w których żądany interfejs jest implementowany na inny obiekt. Ta metoda ukrywa te okoliczności `IDebugPortNotify2` i zwraca interfejs z najbardziej odpowiedniego obiektu.
+ Zwykle `QueryInterface` Metoda jest wywoływana na obiekcie implementującym Interfejs [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) , aby uzyskać Interfejs [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) . Jednak istnieją sytuacje, w których żądany interfejs jest implementowany w innym obiekcie. Ta metoda ukrywa te sytuacje i zwraca `IDebugPortNotify2` interfejs z najbardziej odpowiedniego obiektu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)

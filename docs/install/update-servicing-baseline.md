@@ -14,10 +14,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: '>=vs-2019'
 ms.openlocfilehash: f185451a7f12c3c0b24d74d4a24b40d986ec536f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184396"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aktualizowanie programu Visual Studio w obrębie punktu odniesienia obsługi
@@ -36,7 +36,7 @@ Opcja linia bazowa obsługi zapewnia deweloperom i administratorom większą ela
 Aby zacząć korzystać z linii bazowej obsługi, Pobierz stały program inicjujący Instalatora programu Visual Studio z [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0). Program inicjujący ma linki do konfiguracji produktu, obciążeń i składników dla tej konkretnej wersji.
 
 > [!NOTE]
-> Należy zachować ostrożność w odróżnieniu od programu inicjującego o stałej wersji i standardowych programów inicjujących. Standardowe programy inicjujące są skonfigurowane do korzystania z najnowszej dostępnej wersji programu Visual Studio. Standardowa boostrappers ma numer w nazwie pliku (na przykład vs_enterprise__123456789 -123456789. exe), gdy są pobierane z usługi My.VisualStudio.com.
+> Należy zachować ostrożność w odróżnieniu od programu inicjującego o stałej wersji i standardowych programów inicjujących. Standardowe programy inicjujące są skonfigurowane do korzystania z najnowszej dostępnej wersji programu Visual Studio. Standardowa boostrappers ma numer w nazwie pliku (na przykład vs_enterprise__123456789-123456789.exe), gdy są pobierane z My.VisualStudio.com.
 
 Podczas instalacji Administratorzy przedsiębiorstwa muszą skonfigurować swoich klientów, aby uniemożliwić aktualizowanie ich przez klientów do najnowszej wersji. Można to zrobić na kilka sposobów:
 - [Zmień `channelUri` ustawienie w pliku konfiguracji odpowiedzi](update-servicing-baseline.md#install-a-servicing-baseline-on-a-network) , aby użyć manifestu kanału w układzie lub folderze lokalnym.
@@ -45,7 +45,7 @@ Podczas instalacji Administratorzy przedsiębiorstwa muszą skonfigurować swoic
 
 ### <a name="install-a-servicing-baseline-on-a-network"></a>Zainstaluj linię bazową obsługi w sieci
 
-Administratorzy, którzy korzystają z instalacji układu sieciowego, powinni zmodyfikować `channelUri` wartość w pliku *Response. JSON* w układzie, aby użyć pliku *channelmanifest. JSON* znajdującego się w tym samym folderze. Aby zapoznać się z krokami do wykonania, zobacz [Kontrola aktualizacji do wdrożeń programu Visual Studio opartych na sieci](controlling-updates-to-visual-studio-deployments.md). Zmiana `channelUri` wartości umożliwia klientom wyszukiwanie aktualizacji w lokalizacji układu.
+Administratorzy, którzy korzystają z instalacji układu sieciowego, powinni zmodyfikować `channelUri` wartość w *response.js* w pliku w układzie, aby użyć *channelmanifest.jsw* pliku znajdującym się w tym samym folderze. Aby zapoznać się z krokami do wykonania, zobacz [Kontrola aktualizacji do wdrożeń programu Visual Studio opartych na sieci](controlling-updates-to-visual-studio-deployments.md). Zmiana `channelUri` wartości umożliwia klientom wyszukiwanie aktualizacji w lokalizacji układu.
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>Zainstaluj linię bazową obsługi za pośrednictwem Internetu
 
@@ -63,7 +63,7 @@ Inna opcja kontrolowania aktualizacji na kliencie polega na wyłączeniu [powiad
 
 Gdy dostępna jest aktualizacja linii bazowej obsługi, pliki programu inicjującego z ustalonymi wersjami są udostępniane dla aktualizacji obsługi w witrynie [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0).
 
-W przypadku administratorów, którzy wdrażają program przy użyciu instalacji układu sieciowego, administrator powinien zaktualizować [lokalizację układu](update-a-network-installation-of-visual-studio.md). Klienci instalowani z lokalizacji otrzymają powiadomienia o aktualizacji. Jeśli aktualizacja musi zostać wdrożona na klientach, wykonaj [te instrukcje](update-a-network-installation-of-visual-studio.md#deploy-an-update-to-client-machines). Po zmodyfikowaniu pliku Response. JSON dla aktualizacji nie należy dodawać dodatkowych obciążeń, składników ani języków. Zarządzanie tymi ustawieniami musi odbywać się w ramach wdrożenia "Modify" po aktualizacji produktu.
+W przypadku administratorów, którzy wdrażają program przy użyciu instalacji układu sieciowego, administrator powinien zaktualizować [lokalizację układu](update-a-network-installation-of-visual-studio.md). Klienci instalowani z lokalizacji otrzymają powiadomienia o aktualizacji. Jeśli aktualizacja musi zostać wdrożona na klientach, wykonaj [te instrukcje](update-a-network-installation-of-visual-studio.md#deploy-an-update-to-client-machines). Po zmodyfikowaniu elementu "response.json" dla aktualizacji nie należy dodawać dodatkowych obciążeń, składników ani języków. Zarządzanie tymi ustawieniami musi odbywać się w ramach wdrożenia "Modify" po aktualizacji produktu.
 
 W przypadku instalacji internetowej Uruchom nowy program inicjujący stałej wersji z `--channelUri` parametrem wskazującym nieistniejący manifest kanału na komputerze klienckim. Jeśli aktualizacja została wdrożona w trybie cichym lub pasywnym, użyj dwóch oddzielnych poleceń:
 
@@ -81,7 +81,7 @@ W przypadku instalacji internetowej Uruchom nowy program inicjujący stałej wer
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Instalowanie programu Visual Studio](install-visual-studio.md)
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)

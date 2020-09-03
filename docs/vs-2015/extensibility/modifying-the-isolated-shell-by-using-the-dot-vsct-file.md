@@ -1,5 +1,5 @@
 ---
-title: Modyfikowanie programu Isolated Shell przy użyciu. Pliku Vsct | Dokumentacja firmy Microsoft
+title: Modyfikowanie izolowanej powłoki przy użyciu. Plik vsct | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8c106a04e809e772ac3b8a77192fb2f101161e9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194234"
 ---
-# <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>Modyfikowanie programu Isolated Shell przy użyciu. Pliku Vsct
+# <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>Modyfikowanie programu Isolated Shell przy użyciu pliku Vsct
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Projekt interfejsu użytkownika dla projektu programu Visual Studio shell w trybie izolowanym zawiera pliku vsct, co pozwala określić, które grupy aplikacji i poszczególne polecenia są dostępne w aplikacji. Poniżej przedstawiono fragment pliku vsct zostały zmodyfikowane.  
+Projekt interfejsu użytkownika dla projektu powłoki izolowanej programu Visual Studio zawiera plik. vsct, który umożliwia określenie, które grupy aplikacji i poszczególne polecenia są dostępne w aplikacji. Poniżej znajduje się fragment niezmodyfikowanego pliku. vsct.  
   
 ```  
 <!-- <Define name="No_WindowListCommand"/> -->  
@@ -29,9 +29,9 @@ Projekt interfejsu użytkownika dla projektu programu Visual Studio shell w tryb
 <!-- <Define name="No_PanePrevPaneCommand"/> -->  
 ```  
   
- Domyślnie większość poleceń i polecenia grupy uwzględniono. Aby wykluczyć polecenia lub grupy poleceń, po prostu usuń znaczniki komentarza tego polecenia lub grupy.  
+ Domyślnie większość poleceń i grup poleceń jest uwzględniona. Aby wykluczyć polecenie lub grupę poleceń, po prostu Usuń komentarz z tego polecenia lub grupy.  
   
- Na przykład, aby usunąć następne okienko i poprzednie okienko polecenia, usuń znaczniki komentarza `No_PaneNextPaneCommand` i `No_PanePrevPaneCommand` wpisy:  
+ Aby na przykład usunąć kolejne polecenia i poprzednie okienka, Usuń komentarz z `No_PaneNextPaneCommand` i `No_PanePrevPaneCommand` wpisów:  
   
 ```  
   
@@ -39,22 +39,22 @@ Projekt interfejsu użytkownika dla projektu programu Visual Studio shell w tryb
   
 ```  
   
- Aby uzyskać bardziej szczegółowy przykład dostosowania, zobacz [instruktażu: Tworzenie prostej Isolated Shell aplikacji](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Aby zapoznać się z bardziej szczegółowym przykładem, zobacz [Przewodnik: Tworzenie podstawowej aplikacji powłoki izolowanej](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
-## <a name="referenced-files"></a>Pliki z odwołaniami  
- Następujące pliki odwołuje się do domyślnego pliku vsct dla aplikacji. Te pliki znajdują się w podkatalogu \VisualStudioIntegration\Common\Inc\ katalogu instalacyjnego programu Visual Studio SDK.  
+## <a name="referenced-files"></a>Pliki, do których istnieją odwołania  
+ Plik default. vsct aplikacji odwołuje się do poniższych plików. Te pliki znajdują się w podkatalogu \VisualStudioIntegration\Common\Inc\ w katalogu instalacyjnym zestawu SDK programu Visual Studio.  
   
 |Plik|Opis|  
 |----------|-----------------|  
-|wbids.h|Tożsamości interfejsu użytkownika dla przeglądania sieci Web pakietu.|  
-|AppIDCmdUsed.vsct|Tabela polecenia podstawowe elementy interfejsu użytkownika usługi Visual Studio.|  
-|EmulatorCmdUsed.vsct|Tabela polecenia Emacs i krótki opis elementów interfejsu użytkownika emulacji edytora.|  
-|Vsdebugguids.h|Określa identyfikator GUID w faktycznej poleceń, Strona opcji i inne funkcje debugera programu Visual Studio.|  
-|VsDbgCmdUsed.vsct|Tabeli poleceń w debugerze.|  
+|wbids. h|Tożsamości interfejsu użytkownika dla pakietu przeglądania sieci Web.|  
+|AppIDCmdUsed. vsct|Tabela poleceń dla podstawowych elementów interfejsu użytkownika programu Visual Studio.|  
+|EmulatorCmdUsed. vsct|Tabela poleceń dla Emacs: i krótkiego edytora edytorów elementów interfejsu użytkownika.|  
+|Vsdebugguids. h|Definiuje identyfikatory GUID poleceń, strony opcji i innych funkcji debugera programu Visual Studio.|  
+|VsDbgCmdUsed. vsct|Tabela poleceń dla debugera.|  
   
- Plik AppIDCmdUsed.vsct zawiera elementy interfejsu użytkownika usługi Visual Studio, oparte na symbole zdefiniowane w pliku vsct aplikacji.  
+ Plik AppIDCmdUsed. vsct zawiera elementy interfejsu użytkownika programu Visual Studio na podstawie symboli zdefiniowanych w pliku Application. vsct.  
   
- Aby uzyskać więcej informacji, zobacz [projektowanie tabeli poleceń XML (. Pliki Vsct)](../extensibility/internals/designing-xml-command-table-dot-vsct-files.md) i [odwołanie do schematu VSCT XML](../extensibility/vsct-xml-schema-reference.md).  
+ Aby uzyskać więcej informacji, zobacz [Projektowanie tabeli poleceń XML (. Vsct)](../extensibility/internals/designing-xml-command-table-dot-vsct-files.md) i [Dokumentacja schematu XML vsct](../extensibility/vsct-xml-schema-reference.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)
+ [Visual Studio Shell (izolowany)](../extensibility/visual-studio-isolated-shell.md)

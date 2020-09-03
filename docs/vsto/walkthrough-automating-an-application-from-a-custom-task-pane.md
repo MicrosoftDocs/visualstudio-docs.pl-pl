@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f5135e96125192d7ed125287aa47c839031824fe
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871939"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Przewodnik: Automatyzowanie aplikacji z niestandardowego okienka zadań
@@ -47,16 +47,16 @@ ms.locfileid: "68871939"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- Microsoft PowerPoint 2010 lub [!INCLUDE[PowerPoint_15_short](../vsto/includes/powerpoint-15-short-md.md)].
+- Microsoft PowerPoint 2010 lub [!INCLUDE[PowerPoint_15_short](../vsto/includes/powerpoint-15-short-md.md)] .
 
 ## <a name="create-the-add-in-project"></a>Utwórz projekt dodatku
  Pierwszym krokiem jest utworzenie projektu dodatku VSTO dla programu PowerPoint.
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-1. Utwórz projekt dodatku VSTO programu PowerPoint o nazwie "Moja **addin**" przy użyciu szablonu projektu dodatku dla programu PowerPoint. Aby uzyskać więcej informacji, zobacz [jak: Utwórz projekty pakietu Office w programie](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+1. Utwórz projekt dodatku VSTO programu PowerPoint o nazwie "Moja **addin**" przy użyciu szablonu projektu dodatku dla programu PowerPoint. Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]otwiera plik kodu **ThisAddIn.cs** lub **ThisAddIn. vb** i dodaje projekt **addin** do **Eksplorator rozwiązań**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] otwiera plik kodu **ThisAddIn.cs** lub **ThisAddIn. vb** i dodaje projekt **addin** do **Eksplorator rozwiązań**.
 
 ## <a name="design-the-user-interface-of-the-custom-task-pane"></a>Projektowanie interfejsu użytkownika niestandardowego okienka zadań
  Nie istnieje projektant wizualny dla niestandardowych okienek zadań, ale można zaprojektować kontrolkę użytkownika z żądanym układem. W dalszej części tego instruktażu dodasz kontrolkę użytkownika do niestandardowego okienka zadań.
@@ -69,30 +69,30 @@ ms.locfileid: "68871939"
 
      Formant użytkownika zostanie otwarty w projektancie.
 
-3. Na karcie **Formanty standardowe** przybornika przeciągnijkontrolkę **MonthCalendar** do kontrolki użytkownika.
+3. Na karcie **Formanty standardowe** **przybornika**przeciągnij kontrolkę **MonthCalendar** do kontrolki użytkownika.
 
      Jeśli formant **MonthCalendar** jest większy niż powierzchnia projektowa kontrolki użytkownika, Zmień rozmiar kontrolki użytkownika tak, aby pasował do kontrolki **MonthCalendar** .
 
 ## <a name="automate-powerpoint-from-the-custom-task-pane"></a>Automatyzowanie programu PowerPoint z niestandardowego okienka zadań
- Celem dodatku VSTO jest umieszczenie wybranej daty pierwszego slajdu aktywnej prezentacji. <xref:System.Windows.Forms.MonthCalendar.DateChanged> Użyj zdarzenia kontrolki, aby dodać wybraną datę przy każdej zmianie.
+ Celem dodatku VSTO jest umieszczenie wybranej daty pierwszego slajdu aktywnej prezentacji. Użyj <xref:System.Windows.Forms.MonthCalendar.DateChanged> zdarzenia kontrolki, aby dodać wybraną datę przy każdej zmianie.
 
 ### <a name="to-automate-powerpoint-from-the-custom-task-pane"></a>Aby zautomatyzować program PowerPoint z niestandardowego okienka zadań
 
-1. W projektancie kliknij <xref:System.Windows.Forms.MonthCalendar> dwukrotnie formant.
+1. W projektancie kliknij dwukrotnie <xref:System.Windows.Forms.MonthCalendar> formant.
 
-     Zostanie otwarty plik **MyUserControl.cs** lub **UserControl. vb** oraz zostanie utworzony <xref:System.Windows.Forms.MonthCalendar.DateChanged> program obsługi zdarzeń dla zdarzenia.
+     Zostanie otwarty plik **MyUserControl.cs** lub **UserControl. vb** oraz zostanie utworzony program obsługi zdarzeń dla <xref:System.Windows.Forms.MonthCalendar.DateChanged> zdarzenia.
 
-2. Dodaj następujący kod na początku pliku. Ten kod tworzy aliasy dla <xref:Microsoft.Office.Core> przestrzeni nazw i [programu PowerPoint](/previous-versions/office/developer/office-2010/ff763170%28v%3doffice.14%29) .
+2. Dodaj następujący kod na górze pliku. Ten kod tworzy aliasy dla <xref:Microsoft.Office.Core> przestrzeni nazw i [programu PowerPoint](/previous-versions/office/developer/office-2010/ff763170%28v%3doffice.14%29) .
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]
      [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]
 
-3. Dodaj następujący kod do `MyUserControl` klasy. Ten kod deklaruje obiekt [Shape](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) jako element członkowski `MyUserControl`. W poniższym kroku użyjesz tego [kształtu](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) , aby dodać pole tekstowe do slajdu w aktywnej prezentacji.
+3. Dodaj następujący kod do `MyUserControl` klasy. Ten kod deklaruje obiekt [Shape](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) jako element członkowski `MyUserControl` . W poniższym kroku użyjesz tego [kształtu](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) , aby dodać pole tekstowe do slajdu w aktywnej prezentacji.
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]
      [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]
 
-4. Zastąp procedurę obsługi zdarzeń poniższym kodem. `monthCalendar1_DateChanged` Ten kod dodaje pole tekstowe do pierwszego slajdu w aktywnej prezentacji, a następnie dodaje aktualnie wybraną datę do pola tekstowego. Ten kod używa `Globals.ThisAddIn` obiektu do uzyskiwania dostępu do modelu obiektów programu PowerPoint.
+4. Zastąp `monthCalendar1_DateChanged` procedurę obsługi zdarzeń poniższym kodem. Ten kod dodaje pole tekstowe do pierwszego slajdu w aktywnej prezentacji, a następnie dodaje aktualnie wybraną datę do pola tekstowego. Ten kod używa `Globals.ThisAddIn` obiektu do uzyskiwania dostępu do modelu obiektów programu PowerPoint.
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#3)]
      [!code-vb[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#3)]
@@ -108,18 +108,18 @@ ms.locfileid: "68871939"
 
 2. Kliknij prawym przyciskiem myszy pozycję **ThisAddIn.cs** lub **ThisAddIn. vb** i kliknij polecenie **Wyświetl kod**.
 
-3. Dodaj następujący kod do `ThisAddIn` klasy. Ten kod deklaruje wystąpienia `MyUserControl` elementów <xref:Microsoft.Office.Tools.CustomTaskPane> i jako elementy członkowskie `ThisAddIn` klasy.
+3. Dodaj następujący kod do `ThisAddIn` klasy. Ten kod deklaruje wystąpienia `MyUserControl` <xref:Microsoft.Office.Tools.CustomTaskPane> elementów i jako elementy członkowskie `ThisAddIn` klasy.
 
      [!code-vb[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#4)]
      [!code-csharp[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#4)]
 
-4. Zastąp procedurę obsługi zdarzeń poniższym kodem. `ThisAddIn_Startup` Ten kod tworzy nowe <xref:Microsoft.Office.Tools.CustomTaskPane> przez `MyUserControl` dodanie obiektu do `CustomTaskPanes` kolekcji. Kod wyświetla również okienko zadań.
+4. Zastąp `ThisAddIn_Startup` procedurę obsługi zdarzeń poniższym kodem. Ten kod tworzy nowe <xref:Microsoft.Office.Tools.CustomTaskPane> przez dodanie `MyUserControl` obiektu do `CustomTaskPanes` kolekcji. Kod wyświetla również okienko zadań.
 
      [!code-vb[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#5)]
      [!code-csharp[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#5)]
 
 ## <a name="test-the-add-in"></a>Testowanie dodatku
- Po uruchomieniu projektu zostanie otwarty program PowerPoint, a dodatek VSTO wyświetli niestandardowe okienko zadań. Kliknij kontrolkę, <xref:System.Windows.Forms.MonthCalendar> aby przetestować kod.
+ Po uruchomieniu projektu zostanie otwarty program PowerPoint, a dodatek VSTO wyświetli niestandardowe okienko zadań. Kliknij <xref:System.Windows.Forms.MonthCalendar> kontrolkę, aby przetestować kod.
 
 ### <a name="to-test-your-vsto-add-in"></a>Aby przetestować dodatek narzędzi VSTO
 
@@ -136,12 +136,12 @@ ms.locfileid: "68871939"
 
 - Utwórz niestandardowe okienko zadań w dodatku narzędzi VSTO dla innej aplikacji. Aby uzyskać więcej informacji o aplikacjach, które obsługują niestandardowe okienka zadań, zobacz [niestandardowe okienka zadań](../vsto/custom-task-panes.md).
 
-- Utwórz przycisk wstążki, którego można użyć do ukrycia lub wyświetlenia niestandardowego okienka zadań. Aby uzyskać więcej informacji, [zobacz Przewodnik: Synchronizowanie niestandardowego okienka zadań z przyciskiem](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)wstążki.
+- Utwórz przycisk wstążki, którego można użyć do ukrycia lub wyświetlenia niestandardowego okienka zadań. Aby uzyskać więcej informacji, zobacz [Przewodnik: synchronizowanie niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
-- Utwórz niestandardowe okienko zadań dla każdej wiadomości e-mail, która jest otwierana w programie Outlook. Aby uzyskać więcej informacji, [zobacz Przewodnik: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)w programie Outlook.
+- Utwórz niestandardowe okienko zadań dla każdej wiadomości e-mail, która jest otwierana w programie Outlook. Aby uzyskać więcej informacji, zobacz [Przewodnik: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Niestandardowe okienka zadań](../vsto/custom-task-panes.md)
 - [Instrukcje: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Przewodnik: Synchronizowanie niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
+- [Przewodnik: synchronizowanie niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
 - [Przewodnik: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)

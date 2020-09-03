@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f08ed499e61e54ffbc6508bc8353ea955d9a20c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72730873"
 ---
 # <a name="no-source-available"></a>Nie jest dostępne żadne źródło
@@ -35,7 +35,7 @@ Projekt nie zawiera kodu źródłowego dla kodu, który próbujesz wyświetlić.
 
  **Zawsze pokazuj demontaż dla brakujących plików źródłowych** Wybierz tę opcję, aby automatycznie wyświetlić **okno demontażu** , gdy nie jest dostępne żadne źródło. To ustawienie można także zmienić w oknie dialogowym **Opcje** , kategorii **debugowanie** , stronie **Ogólne** , zaznaczając lub czyszcząc polecenie **Pokaż demontaż, jeśli źródło jest niedostępne**.
 
-## <a name="see-also"></a>Zobacz także
-- [Debugowanie plików źródłowych, Typowe właściwości, Strony właściwości rozwiązania, okno dialogowe](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
+## <a name="see-also"></a>Zobacz też
+- [Debugowanie plików źródłowych, typowe właściwości, strony właściwości rozwiązania — Okno dialogowe](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
 - [Określanie plików symboli (pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-- [SOS.dll (rozszerzenie do debugowania SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)
+- [SOS.dll (rozszerzenie debugowania SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)

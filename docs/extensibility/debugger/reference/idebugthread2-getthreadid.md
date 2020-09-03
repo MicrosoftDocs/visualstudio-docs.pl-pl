@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadId | Dokumenty firmy Microsoft
+title: 'IDebugThread2:: GetThreadId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a7788cc09d92ff4c784fbcb7004393fe0d3074c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718704"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
@@ -41,16 +41,16 @@ int GetThreadId (
 
 ## <a name="parameters"></a>Parametry
 `pdwThreadId`\
-[na zewnątrz] Zwraca identyfikator wątku systemowego.
+określoną Zwraca identyfikator wątku systemowego.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Identyfikator wątku służy do identyfikowania wątku wśród wszystkich innych wątków w procesie.
+Identyfikator wątku służy do identyfikowania wątku między wszystkimi innymi wątkami w procesie.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak `CProgram` zaimplementować tę metodę dla prostego obiektu, który implementuje interfejs [IDebugThread2.](../../../extensibility/debugger/reference/idebugthread2.md)
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CProgram` obiektu, który implementuje interfejs [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) .
 
 ```cpp
 HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {

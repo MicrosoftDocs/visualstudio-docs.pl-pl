@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2dc5477055969ca9c9424d5cd51f34f12a411579
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871596"
 ---
 # <a name="profiling-tools-apis"></a>Interfejsy API narzędzi profilowania
@@ -23,12 +23,12 @@ Można wstawić metody zarządzane lub natywne interfejsów API [!INCLUDE[vsprvs
 
 ## <a name="in-this-section"></a>W tej sekcji
  [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)\
- Opisuje metody C++ narzędzia profilowania.
+ Opisuje metody narzędzia profilowania języka C++.
 
  [Profilera](/previous-versions/ms242704(v=vs.140))\
  Opisuje metody narzędzia profilowania .NET.
 
- [Przewodnik: Korzystanie z interfejsów API profilera](../profiling/walkthrough-using-profiler-apis.md)\
+ [Przewodnik: korzystanie z interfejsów API profilera](../profiling/walkthrough-using-profiler-apis.md)\
  Dowiedz się, jak korzystać z metod narzędzia profilowania .NET w tym kompletnym przykładzie.
 
 ## <a name="related-sections"></a>Sekcje pokrewne

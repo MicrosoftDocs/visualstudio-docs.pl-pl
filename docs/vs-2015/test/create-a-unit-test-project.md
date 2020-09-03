@@ -9,10 +9,10 @@ caps.latest.revision: 10
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bfc85b0616fdf8f30732f2409a1a15040967dbb3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660650"
 ---
 # <a name="create-a-unit-test-project"></a>Tworzenie projektu testu jednostkowego
@@ -21,7 +21,7 @@ ms.locfileid: "72660650"
 Testy jednostkowe często duplikują strukturę testowanego kodu. Na przykład projekt testu jednostkowego zostanie utworzony dla każdego projektu kodu w produkcie. Projekt testowy może być w tym samym rozwiązaniu co kod produkcyjny lub może znajdować się w osobnym rozwiązaniu. W rozwiązaniu można mieć wiele projektów testów jednostkowych.
 
 > [!NOTE]
-> Lokalizacja testów jednostkowych dla kodu natywnego i struktury projektu testowego może różnić się od struktury opisanej w tym temacie. Aby uzyskać więcej informacji, zobacz [Dodawanie testów jednostkowych C++ do istniejących aplikacji](../test/unit-testing-existing-cpp-applications-with-test-explorer.md).
+> Lokalizacja testów jednostkowych dla kodu natywnego i struktury projektu testowego może różnić się od struktury opisanej w tym temacie. Aby uzyskać więcej informacji, zobacz [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md).
 
 ## <a name="to-create-a-unit-test-project"></a>Aby utworzyć projekt testu jednostkowego:
 
@@ -35,7 +35,7 @@ Testy jednostkowe często duplikują strukturę testowanego kodu. Na przykład p
 
     1. Wybierz projekt w Eksplorator rozwiązań.
 
-    2. W menu **projekt** wybierz polecenie **Dodaj odwołanie..** ..
+    2. W menu **projekt** wybierz polecenie **Dodaj odwołanie..**..
 
     3. W oknie dialogowym Menedżer odwołań Otwórz węzeł **rozwiązania** i wybierz pozycję **projekty**. Sprawdź nazwę projektu kodu i Zamknij okno dialogowe.
 

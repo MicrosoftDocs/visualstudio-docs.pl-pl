@@ -9,10 +9,10 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f2a78c10b125379d1b4aa284d4b2ff6e999b80f0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660600"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Dostosowywanie analizy pokrycia kodu
@@ -41,7 +41,7 @@ Domyślnie narzędzie pokrycia Visual Studio Code analizuje wszystkie zestawy ro
 
   Aby dostosować pokrycie kodu, należy dodać plik .runsettings do rozwiązania:
 
-1. Dodaj plik. XML jako element rozwiązania z rozszerzeniem `.runsettings`:
+1. Dodaj plik. XML jako element rozwiązania z rozszerzeniem `.runsettings` :
 
     W Eksplorator rozwiązań, w menu skrótów rozwiązania, wybierz **Dodaj**, **nowy element**i wybierz **plik XML**. Zapisz plik z nazwą kończącą się na przykład `CodeCoverage.runsettings`
 
@@ -49,7 +49,7 @@ Domyślnie narzędzie pokrycia Visual Studio Code analizuje wszystkie zestawy ro
 
 3. W menu **test** wybierz pozycję **Ustawienia testu**, **Wybierz plik ustawienia testu** i wybierz plik.
 
-4. Teraz po uruchomieniu **analizy pokrycia kodu**ten plik `.runsettings` będzie kontrolować jego zachowanie. Nie zapomnij, że należy ponownie uruchomić pokrycie kodu: Twoje poprzednie wyniki pokrycia i kolorowanie kodu nie są automatycznie ukrywane podczas uruchamiania testów czy aktualizowania kodu.
+4. Teraz po uruchomieniu **analizy pokrycia kodu**ten `.runsettings` plik będzie kontrolować jego zachowanie. Nie zapomnij, że należy ponownie uruchomić pokrycie kodu: Twoje poprzednie wyniki pokrycia i kolorowanie kodu nie są automatycznie ukrywane podczas uruchamiania testów czy aktualizowania kodu.
 
 5. Aby wyłączyć ustawienia niestandardowe i włączać, usuń zaznaczenie lub wybierz plik w menu **test**, **Ustawienia testu** .
 
@@ -94,20 +94,20 @@ Domyślnie narzędzie pokrycia Visual Studio Code analizuje wszystkie zestawy ro
 </ModulePaths>
 ```
 
- Jeśli `<Include>` jest puste, przetwarzanie pokrycia kodu obejmuje wszystkie zestawy (pliki. dll i. exe), które są ładowane i dla których pliki **. pdb** można znaleźć, z wyjątkiem elementów, które pasują do klauzuli na liście `<Exclude>`.
+ Jeśli `<Include>` jest pusty, przetwarzanie pokrycia kodu obejmuje wszystkie zestawy (pliki. dll i. exe), które są ładowane i dla których pliki **. pdb** można znaleźć, z wyjątkiem elementów, które pasują do klauzuli na `<Exclude>` liście.
 
- `Include` jest przetwarzana przed `Exclude`.
+ `Include` jest przetwarzany przed `Exclude` .
 
 ### <a name="regular-expressions"></a>Wyrażenia regularne
  Uwzględnij lub wyklucz węzły, używając wyrażeń regularnych. Aby uzyskać więcej informacji, zobacz [Używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Wyrażenia regularne nie są tym samym, co symbole wieloznaczne. W szczególności:
 
-1. **\. \\** * dopasowuje ciąg znaków
+1. **\.\\*** dopasowuje ciąg znaków
 
 2. **\\.** dopasowuje kropkę ".")
 
-3. **\\ (\\)** dopasowuje nawiasy "()"
+3. ** \\ ( \\ )** dopasowuje nawiasy "()"
 
-4. **\\ \\** dopasowuje ogranicznik ścieżki pliku "\\"
+4. **\\\\** dopasowuje ogranicznik ścieżki pliku " \\ "
 
 5. **^** dopasowuje początek ciągu
 
@@ -139,11 +139,11 @@ Domyślnie narzędzie pokrycia Visual Studio Code analizuje wszystkie zestawy ro
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Inne sposoby, aby dołączyć lub wykluczyć elementy
  Przykłady można znaleźć na [przykład na końcu tego tematu](#sample) .
 
-- `ModulePath` — zestawy określone przez ścieżkę pliku zestawu.
+- `ModulePath` — Zestawy określone przez ścieżkę pliku zestawu.
 
 - `CompanyName` — dopasowuje zestawy według atrybutu firmy.
 
-- `PublicKeyToken` — dopasowuje podpisane zestawy według tokenu klucza publicznego. Aby na przykład dopasować wszystkie składniki i rozszerzenia programu Visual Studio, użyj `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`.
+- `PublicKeyToken` — dopasowuje podpisane zestawy według tokenu klucza publicznego. Aby na przykład dopasować wszystkie składniki i rozszerzenia programu Visual Studio, użyj `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>` .
 
 - `Source` — dopasowuje elementy według nazwy ścieżki pliku źródłowego, w którym są zdefiniowane.
 
@@ -153,11 +153,11 @@ Domyślnie narzędzie pokrycia Visual Studio Code analizuje wszystkie zestawy ro
 
   **Zgodne z nazwą funkcji**
 
-  Dane wyrażenie regularne musi odpowiadać w pełni kwalifikowanej nazwie funkcji, łącznie z przestrzenią nazw, nazwą klasy, nazwą metody i listą parametrów. Na przykład
+  Dane wyrażenie regularne musi odpowiadać w pełni kwalifikowanej nazwie funkcji, łącznie z przestrzenią nazw, nazwą klasy, nazwą metody i listą parametrów. Przykład:
 
-- C#lub Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`
+- C# lub Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`
 
-- C++: `Fabrikam::Math::LocalMath::SquareRoot(double)`
+- Języków  `Fabrikam::Math::LocalMath::SquareRoot(double)`
 
 ```xml
 <Functions>
@@ -208,7 +208,7 @@ Domyślnie narzędzie pokrycia Visual Studio Code analizuje wszystkie zestawy ro
 
    Wyniki są widoczne w sekcji podsumowania raportu kompilacji.
 
-## <a name="sample"></a>Przykładowy plik. runsettings
+## <a name="sample-runsettings-file"></a><a name="sample"></a> Przykładowy plik. runsettings
  Skopiuj ten kod i dostosuj go do swoich potrzeb. Jest to domyślny plik .runsettings.
 
  (Aby uzyskać inne zastosowania pliku. runsettings, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku. runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)).

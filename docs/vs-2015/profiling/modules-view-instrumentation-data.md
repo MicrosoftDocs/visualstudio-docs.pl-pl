@@ -1,5 +1,5 @@
 ---
-title: Widok modułów - dane Instrumentacji | Dokumentacja firmy Microsoft
+title: Widok modułów — dane Instrumentacji | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,78 +12,78 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4455f850ad533f17cd9f6cb33e7e874621d0bb2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205887"
 ---
 # <a name="modules-view---instrumentation-data"></a>Widok modułów — dane instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Widok modułów przedstawia dane wydajności, które są pogrupowane według modułów, które znajdowały się w danych profilowania. Funkcji modułu znajduje się poniżej węzła modułu.  
+Widok moduły przedstawia dane wydajności pogrupowane według modułów, które znajdowały się w danych profilowania. Funkcje modułu są wymienione poniżej węzła modułu.  
   
 ## <a name="general"></a>Ogólne  
- Ogólne kolumn identyfikować ich funkcję w wierszu widoku.  
+ Kolumny ogólne identyfikują funkcję w wierszu widoku.  
   
 |Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa**|Nazwa funkcji lub modułu.|  
 |**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
-|**Liczba wywołań**|Całkowita liczba wywołań, które zostały wprowadzone do tej funkcji lub modułu.|  
+|**Liczba połączeń**|Całkowita liczba wywołań wykonanych dla tej funkcji lub modułu.|  
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|  
-|**Nazwa modułu**|Nazwa modułu, która zawiera funkcję.|  
-|**Ścieżka modułu**|Ścieżka modułu, która zawiera funkcję.|  
-|**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|  
-|**Nazwa procesu**|Nazwa procesu, w którym był wykonywany modułu lub funkcji.|  
-|**Narzut sondy czasu wyłącznego**|Narzut czasu dla tej funkcji lub modułu z powodu instrumentacji.|  
-|**Narzut sondy czasu Włącznego**|Narzut czasu dla tej funkcji lub modułu i jej funkcji podrzędnych z powodu instrumentacji.|  
+|**Nazwa modułu**|Nazwa modułu, który zawiera funkcję.|  
+|**Ścieżka modułu**|Ścieżka modułu, który zawiera funkcję.|  
+|**Identyfikator procesu**|Identyfikator procesu (PID) przebiegu profilowania.|  
+|**Nazwa procesu**|Nazwa procesu, w którym uruchomiono moduł lub funkcję.|  
+|**Obciążenie sondy czasu wyłącznego**|Narzut czasu dla tej funkcji lub modułu ze względu na instrumentację.|  
+|**Narzut sondy czasu włącznego**|Narzut czasu dla tej funkcji lub modułu oraz jej funkcji podrzędnych z powodu Instrumentacji.|  
   
-## <a name="elapsed-inclusive-values"></a>Upłynęło włącznie wartości  
- Upłynęło wartości włącznie wskazują godzinę, będący funkcji na stosie wywołań. Czas obejmuje czas spędzony w funkcji podrzędnych i w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.  
-  
-|Kolumna|Opis|  
-|------------|-----------------|  
-|**Całkowity czas, który upłynął**|— W przypadku funkcji czas spędzony w funkcji. Obejmuje to czas spędzony w funkcji podrzędnych i w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.<br />— Dla modułu, czas, w których co najmniej jedna funkcja w module był na stosie wywołań.|  
-|**% Całkowitego czasu, który upłynął**|Łączny czas całkowity czas tego modułu lub funkcji przeznaczony procent całkowity czas całkowity czas uruchomienia profilowania.|  
-|**Średnia liczba upłynęło włącznie czasu**|— Dla funkcji ŚREDNIA, który upłynął całkowity czas wywołania tej funkcji.<br />— Dla modułu średnia, który upłynął całkowity czas wszystkie wywołania do funkcji w module.|  
-|**Maksymalny czas, który upłynął (włącznie)**|— W przypadku funkcji maksymalną upłynęło całkowity czas wywołania tej funkcji.<br />— Dla modułu maksymalna, który upłynął całkowity czas wszystkie wywołania do funkcji w module.|  
-|**Min upłynęło włącznie czasu**|— Dla funkcji minimum, który upłynął całkowity czas wywołanie tego modułu lub funkcji.<br />— Dla modułu minimum, który upłynął całkowity czas wszystkie wywołania do funkcji w module.|  
-  
-## <a name="elapsed-exclusive-values"></a>Czas wyłączny wartości  
- Czas wyłączny wartości wskazują godzinę, wykonywanej funkcji bezpośrednio w górnej części stosu wywołań. Czas obejmuje czas spędzony w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia, ale nie obejmuje czas spędzony w funkcjach podrzędnych.  
+## <a name="elapsed-inclusive-values"></a>Wartości włączne, które upłynęły  
+ Wartości włączne (włącznie) wskazują czas, przez który funkcja była w stosie wywołań. Czas obejmuje czas spędzony w funkcjach podrzędnych i w wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia.  
   
 |Kolumna|Opis|  
 |------------|-----------------|  
-|**Czas wyłączny, który upłynął**|— W przypadku funkcji czas spędzony w modułu lub funkcji. Obejmuje wywołania do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia, ale nie obejmuje czas spędzony w funkcjach podrzędnych.<br />— Dla modułu sumę, który upłynął czas wyłączny funkcje w module.|  
-|**% Wyłącznego czasu, który upłynął**|Łączny czas wyłączny czas tego modułu lub funkcji przeznaczony procent całkowity czas własny czas uruchomienia profilowania.|  
-|**Średnia liczba upłynęło wyłącznie czasu**|— Dla funkcji ŚREDNIA, który upłynął własnego czasu wywołania tej funkcji.<br />— Dla modułu średnia, który upłynął własny czas wszystkie wywołania do funkcji w module.|  
-|**Maksymalny czas wyłączny, który upłynął**|— W przypadku funkcji maksymalną upłynęło własnego czasu wywołania tej funkcji.<br />— Dla modułu maksymalna, który upłynął własny czas wszystkie wywołania do funkcji w module.|  
-|**Min upłynęło wyłącznie czasu**|— Dla funkcji minimum, który upłynął własny czas wywołanie tego modułu lub funkcji.<br />— Dla modułu minimum, który upłynął własny czas wszystkie wywołania do funkcji w module.|  
+|**Czas włączny, który upłynął**|-Dla funkcji, czas spędzony w funkcji. Obejmuje to czas spędzony w funkcjach podrzędnych i w wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia.<br />-Dla modułu, czas, w którym co najmniej jedna funkcja w module znajdowała się na stosie wywołań.|  
+|**% Czasu włącznego, który upłynął**|Wartość procentowa łącznego czasu trwania przebiegu profilowania w łącznym czasie trwania tego modułu lub funkcji.|  
+|**Średni łączny czas, który upłynął**|-Dla funkcji — średni czas włączny, który upłynął w przypadku wywołania tej funkcji.<br />— Dla modułu, średni czas włączny, który upłynął dla wszystkich wywołań funkcji w module.|  
+|**Maksymalny łączny czas, który upłynął**|-Dla funkcji — maksymalny czas, który upłynął, włącznie wywołania tej funkcji.<br />— W przypadku modułu maksymalny czas, który upłynął włącznie, dla wszystkich wywołań funkcji w module.|  
+|**Minimalny łączny czas, który upłynął**|-Dla funkcji — minimalny czas, który upłynął, włącznie wywołania tego modułu lub funkcji.<br />-Dla modułu, minimalny czas, który upłynął włącznie dla wszystkich wywołań funkcji w module.|  
   
-## <a name="application-inclusive-values"></a>Wartości Włączne aplikacji  
- Aplikacji wartości włącznie wskazują czasu, która funkcja była w stosie wywołań. Czas nie obejmuje czas spędzony w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia. Jednak podczas obejmują czas spędzony w funkcjach podrzędnych.  
+## <a name="elapsed-exclusive-values"></a>Wartości wyłączne, które upłynęły  
+ Wartości wyłączne, które upłynęły, wskazują czas, przez który funkcja została bezpośrednio uruchomiona w górnej części stosu wywołań. Czas obejmuje czas spędzony w wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia, ale nie obejmuje czasu spędzonego w funkcjach podrzędnych.  
   
 |Kolumna|Opis|  
 |------------|-----------------|  
-|**Całkowity czas aplikacji**|— W przypadku funkcji czas spędzony w wywołaniach funkcji. Obejmuje to czas, jaki był poświęcony funkcji podrzędnych, ale nie obejmuje wywołania do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.<br />— Dla modułu, czas, w których co najmniej jedna funkcja w module był na stosie wywołań. Nie obejmuje to czas spędzony w wywołaniach do systemu operacyjnego.|  
-|**% Całkowitego czasu aplikacji**|Procent sumy, który upłynął całkowity czas uruchomienia profilowania, która spędzono w całkowity czas aplikacji tego modułu lub funkcji.|  
-|**Średni całkowity czas aplikacji**|— Dla funkcji, całkowity czas aplikacji średnią rozmowy dotyczących wyłącznie tej funkcji.<br />— Dla modułu, całkowity czas aplikacji średnia dla wszystkich wywołań do funkcji w module.|  
-|**Maksymalny całkowity czas aplikacji**|— Dla funkcji, całkowity czas aplikacji maksymalna wywołania tej funkcji.<br />— Dla modułu, całkowity czas aplikacji maksymalną dla wszystkich wywołań do funkcji w module.|  
-|**Minimalny całkowity czas aplikacji**|— Dla funkcji, całkowity czas aplikacji minimalne wywołania do tego modułu lub funkcji.<br />— Dla modułu, całkowity czas minimalny aplikacji dla wszystkich wywołań do funkcji w module.|  
+|**Czas wyłączny, który upłynął**|-Dla funkcji, czas spędzony w module lub funkcji. Obejmuje to wywołania systemu operacyjnego, takie jak przełączenia kontekstu i operacje wejścia/wyjścia, ale wyklucza czas spędzony w funkcjach podrzędnych.<br />-Dla modułu, suma czasu wyłącznego dla funkcji w module.|  
+|**% Czasu wyłącznego, który upłynął**|Wartość procentowa łącznego czasu trwania uruchomienia profilowania, która nastąpiła w łącznym czasie trwania tego modułu lub funkcji.|  
+|**Średni czas wyłączny, który upłynął**|— Dla funkcji — średni czas, który upłynął w przypadku wywołania tej funkcji.<br />— Dla modułu, średni czas wyłączny wszystkich wywołań funkcji w module.|  
+|**Maksymalny czas wyłączny, który upłynął**|— Dla funkcji, maksymalny czas wyłączny wywołania tej funkcji.<br />— W przypadku modułu maksymalny czas, który upłynął, przez wszystkie wywołania funkcji w module.|  
+|**Minimalny czas, który upłynął**|— Dla funkcji — minimalny czas, który upłynął podczas wywołania tego modułu lub funkcji.<br />— W przypadku modułu minimalny czas, który upłynął, w przypadku wszystkich wywołań funkcji w module.|  
+  
+## <a name="application-inclusive-values"></a>Wartości włączne aplikacji  
+ Wartości włącznie obejmują czas, przez który funkcja była w stosie wywołań. Czas nie obejmuje czasu spędzonego w wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia. Jednak ten czas obejmuje czas spędzony w funkcjach podrzędnych.  
+  
+|Kolumna|Opis|  
+|------------|-----------------|  
+|**Czas włączny aplikacji**|-Dla funkcji, czas spędzony w wywołaniach funkcji. Obejmuje to czas spędzony w funkcjach podrzędnych, ale wyklucza wywołania systemu operacyjnego, takie jak operacje przełączania kontekstu i operacji wejścia/wyjścia.<br />-Dla modułu, czas, w którym co najmniej jedna funkcja w module znajdowała się na stosie wywołań. Wyklucza to czas spędzony w wywołaniach systemu operacyjnego.|  
+|**% Włącznego czasu aplikacji**|Wartość procentowa łącznego czasu trwania przebiegu profilowania, która została wykorzystana w czasie trwania tego modułu lub funkcji przez aplikację.|  
+|**Średni czas włączny aplikacji**|-Dla funkcji — średni czas włączny aplikacji wywołania tej funkcji.<br />-Dla modułu, średni czas włączania wszystkich wywołań funkcji w module.|  
+|**Maksymalny czas włączny aplikacji**|-Dla funkcji — maksymalny czas włączny aplikacji wywołania tej funkcji.<br />— W przypadku modułu maksymalny czas trwania wszystkich wywołań funkcji w module.|  
+|**Minimalny czas włączny aplikacji**|-Dla funkcji, minimalna godzina włącznego wywołania do tego modułu lub funkcji.<br />— W przypadku modułu minimalna dołączenia do funkcji w module (włącznie).|  
   
 ## <a name="application-exclusive-values"></a>Wartości wyłączne aplikacji  
- Aplikacja wyłączne wartości wskazują czas spędzony w modułu lub funkcji. Nie obejmuje to czas, jaki był poświęcony funkcji podrzędnej, a także wyklucza wywołań do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.  
+ Wartości wyłączne aplikacji wskazują czas spędzony w module lub funkcji. Wyklucza to czas spędzony w funkcjach podrzędnych, a także wyklucza wywołania systemu operacyjnego, takie jak operacje przełączania kontekstu i operacji wejścia/wyjścia.  
   
 |Kolumna|Opis|  
 |------------|-----------------|  
-|**Własny czas aplikacji**|Łączna liczba własny czas aplikacji dla wszystkich wywołań do tego modułu lub funkcji.|  
-|**% Własnego czasu aplikacji**|Procent sumy, który upłynął własny czas uruchomienia profilowania, która spędzono w własny czas aplikacji tego modułu lub funkcji.|  
-|**Średni własny czas aplikacji**|— W przypadku funkcji własny czas aplikacji średnią rozmowy dotyczących wyłącznie tej funkcji.<br />— Dla modułu, własny czas aplikacji średnia dla wszystkich wywołań do funkcji w module.|  
-|**Maksymalny własny czas aplikacji**|— W przypadku funkcji własny czas aplikacji maksymalna wywołania tej funkcji.<br />— Dla modułu, własny czas aplikacji maksymalną dla wszystkich wywołań do funkcji w module.|  
-|**Minimalny własny czas aplikacji**|— W przypadku funkcji własny czas aplikacji minimalne wywołania do tego modułu lub funkcji.<br />— Dla modułu, własny czas aplikacji minimalną dla wszystkich wywołań do funkcji w module.|  
+|**Czas wyłączny aplikacji**|Łączny czas wyłączny aplikacji wszystkich wywołań tego modułu lub funkcji.|  
+|**% Wyłącznego czasu aplikacji**|Wartość procentowa całkowitego czasu, który upłynął w przypadku uruchomienia profilowania, który został wykorzystany w niepełnym czasie aplikacji tego modułu lub funkcji.|  
+|**Średni czas wyłączny aplikacji**|-Dla funkcji — średni czas wyłączny aplikacji wywołania tej funkcji.<br />— Dla modułu, średni czas wyłączny aplikacji dla wszystkich wywołań funkcji w module.|  
+|**Maksymalny czas wyłączny aplikacji**|— W przypadku funkcji maksymalny czas wyłączny aplikacji wywołania tej funkcji.<br />— W przypadku modułu maksymalna, wyłączny czas aplikacji dla wszystkich wywołań funkcji w module.|  
+|**Minimalny czas wyłączny aplikacji**|— W przypadku funkcji jest to minimalny czas wyłączny aplikacji wywołania tego modułu lub funkcji.<br />— W przypadku modułu minimalna, wyłączny czas wszystkich wywołań funkcji w module.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok modułów](../profiling/modules-view-sampling-data.md)   
- [Widok modułów - Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Widok modułów-Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Widok modułów — Próbkowanie](../profiling/modules-view-dotnet-memory-sampling-data.md)

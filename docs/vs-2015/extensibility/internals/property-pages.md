@@ -1,5 +1,5 @@
 ---
-title: Strony właściwości | Dokumentacja firmy Microsoft
+title: Strony właściwości | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,73 +13,73 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a45e4a98326fe829b8f87a4ecfce669118cd9d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205778"
 ---
 # <a name="property-pages"></a>Strony właściwości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Użytkownicy mogą przeglądać i zmieniać właściwości zależne od konfiguracji i - niezależny od projektu za pomocą strony właściwości. A **stron właściwości** przycisk jest aktywny w **właściwości** oknie lub na pasku narzędzi Eksploratora rozwiązań dla obiektów, które zapewniają widok strony właściwości wybranego obiektu. Strony właściwości są tworzone przez środowisko i są dostępne dla projektów i rozwiązań. Jednak mogą również być udostępnione dla elementów projektu, które należy używać właściwości zależne od konfiguracji. Ta funkcja może być używany, gdy pliki w obrębie projektu wymaga ustawienia przełącznika kompilatora różnych, aby kompilować się właściwie.  
+Użytkownicy mogą wyświetlać i zmieniać właściwości zależne od konfiguracji projektu i niezależne za pomocą stron właściwości. Przycisk **strony właściwości** jest włączony w oknie **właściwości** lub na Eksplorator rozwiązań pasku narzędzi dla obiektów, które udostępniają widok strony właściwości zaznaczonego obiektu. Strony właściwości są tworzone przez środowisko i są dostępne dla rozwiązań i projektów. Mogą one być jednak dostępne dla elementów projektu, które wykorzystują właściwości zależne od konfiguracji. Tej funkcji można użyć, gdy pliki w projekcie wymagają różnych ustawień przełącznika kompilatora w celu poprawnego skompilowania.  
   
-## <a name="using-property-pages"></a>Używanie stron właściwości  
- Jeśli już zostanie wyświetlona strona właściwości i zmieni się zaznaczenie (np. z rozwiązaniem do projektu), informacje wyświetlane na stronach zmiany, aby wyświetlić właściwości dla nowego wyboru. Jeśli nie istnieją w obiekcie właściwości, które obsługują strony właściwości, strona właściwości jest pusta.  
+## <a name="using-property-pages"></a>Korzystanie ze stron właściwości  
+ Jeśli strona właściwości jest już wyświetlana i zmieni się zaznaczenie (na przykład z rozwiązania do projektu), informacje wyświetlane na stronach zmieniają się, aby wyświetlić właściwości nowego zaznaczenia. Jeśli nie ma żadnych właściwości w obiekcie, który obsługuje strony właściwości, Strona właściwości jest pusta.  
   
- Jeśli wybrano wiele obiektów, na stronie właściwości wyświetla część wspólną właściwości dla wszystkich wybranych elementów. Jeśli wybrany element nie zawiera właściwości zależne od konfiguracji i **stron właściwości** kliknięto przycisk na pasku narzędzi Eksploratora rozwiązań, fokus zmieni się na oknie dialogowym właściwości. Aby uzyskać więcej informacji dotyczących okna właściwości i wyboru, zobacz [rozszerzanie właściwości](../../extensibility/internals/extending-properties.md).  
+ W przypadku wybrania wielu obiektów na stronie właściwości zostanie wyświetlona część wspólna właściwości dla wszystkich wybranych elementów. Jeśli wybrany element nie zawiera właściwości zależnych od konfiguracji, a przycisk **strony właściwości** na pasku narzędzi Eksplorator rozwiązań zostanie kliknięty, fokus zmieni się na okno właściwości. Aby uzyskać więcej informacji dotyczących okno Właściwości i wyboru, zobacz [Rozszerzanie właściwości](../../extensibility/internals/extending-properties.md).  
   
- Jeśli właściwości są wyświetlane dla wielu obiektów, a następnie zmień wartość na stronie właściwości, wszystkie wartości dla obiektów są ustawione na nową wartość nawet jeśli zostały one początkowo różnych i strony podczas pustej właściwości poszczególnych obiektów były wyświetlane.  
+ Jeśli właściwości są wyświetlane dla wielu obiektów i zmieniasz wartość na stronie właściwości, wszystkie wartości dla obiektów są ustawiane na nową wartość, nawet jeśli były one początkowo inne, a strona była pusta, gdy zostaną wyświetlone właściwości poszczególnych obiektów.  
   
- Istnieją dwa ogólne typy **stron ProjectProperty** dialogowych dostępne w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. W pierwszym w projektach języka Visual Basic na przykład na stronach właściwości są wyświetlane przy użyciu formatu pola, jak pokazano na poniższym zrzucie ekranu. W drugim przedstawione później w tej sekcji, właściwości hostów strony siatki właściwości doświadczyli w oknie dialogowym właściwości.  
+ Dostępne są dwa ogólne typy okien dialogowych **stron ProjectProperty** [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Na przykład w przypadku projektów Visual Basic są wyświetlane strony właściwości przy użyciu formatu pola, jak pokazano na poniższym zrzucie ekranu. W drugim pokazano w dalszej części tej sekcji Strona właściwości zawiera siatkę właściwości podobną do tej, która znajduje się w oknie właściwości.  
   
- ![Strony właściwości języka Visual Basic](../../extensibility/internals/media/vsvbproppages.gif "vsVBPropPages")  
-Okno dialogowe strony właściwości projektu o strukturze format i drzewa pola  
+ ![Visual Basic strony właściwości](../../extensibility/internals/media/vsvbproppages.gif "vsVBPropPages")  
+Okno dialogowe strony właściwości projektu z formatem pola i strukturą drzewa  
   
- Struktura drzewa w oknie dialogowym stron właściwości nie został skompilowany przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. Środowisko, na podstawie poziomu nazwy przekazany przez <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage> interfejsy, tworzy go.  
+ Struktura drzewa w oknie dialogowym strony właściwości nie jest skompilowana przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> . Środowisko, na podstawie nazwy poziomu przesłanej do niej przez <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage> interfejsów, kompiluje ją.  
   
- Tylko dwóm kategoriom najwyższego poziomu są dostępne na [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] stron właściwości:  
+ Na stronach właściwości są dostępne tylko dwie kategorie najwyższego poziomu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] :  
   
-- Typowe właściwości, które wyświetla informacje o niezależne od konfiguracji dla zaznaczonego obiektu lub obiektów. W rezultacie po wybraniu jednej z podkategorii wspólne właściwości opcje konfiguracji, platformy i programu Configuration Manager, w górnej części okna dialogowego nie są dostępne.  
+- Wspólne właściwości, które wyświetlają informacje niezależne od konfiguracji dla wybranego obiektu lub obiektów. W związku z tym, gdy zostanie wybrana jedna z kategorii wspólnych właściwości, opcje konfiguracji, platformy i Configuration Manager w górnej części okna dialogowego są niedostępne.  
   
-- Właściwości konfiguracji, który zawiera informacje zależne od konfiguracji odnoszące się do parametrów debugowanie, optymalizacji i kompilacji dla rozwiązania lub projektu.  
+- Właściwości konfiguracji, które zawierają informacje zależne od konfiguracji dotyczące debugowania, optymalizacji i parametrów kompilacji dla rozwiązania lub projektu.  
   
-  Nie można utworzyć dowolne dodatkowe kategorie najwyższego poziomu, ale można wybrać nie wyświetlać jednej z nich w danej implementacji `IVsPropertyPage`. Jeśli na przykład nie masz żadnych właściwości niezależne od konfiguracji do wyświetlenia dla obiektu, istnieje możliwość nie kategorii Wspólne właściwości wyświetlania. Wyświetl typowe właściwości, jeśli `ISpecifyPropertyPages` jest implementowany z obiektu przeglądania elementu i właściwości konfiguracji podczas implementowania `ISpecifyPropertyPages` w obiekcie konfiguracji (obiektu implementującego `IVsCfg`, `IVsProjectCfg`i pokrewne interfejsy).  
+  Nie można utworzyć żadnych dodatkowych kategorii najwyższego poziomu, ale możesz zrezygnować z wyświetlania jednej lub drugiej w implementacji `IVsPropertyPage` . Jeśli na przykład nie masz żadnych właściwości niezależnych od konfiguracji do wyświetlenia dla obiektu, możesz wybrać opcję nie wyświetlaj kategorii wspólnych właściwości. Typowe właściwości są wyświetlane, jeśli `ISpecifyPropertyPages` są implementowane z poziomu obiektu przeglądania i właściwości konfiguracji elementu podczas implementowania `ISpecifyPropertyPages` w obiekcie konfiguracji (obiekt implementujący `IVsCfg` , `IVsProjectCfg` i powiązane interfejsy).  
   
-  Każda kategoria wyświetlane w obszarze kategorii najwyższego poziomu reprezentuje stronę osobne właściwości. Kategorii i podkategorii wpisów w oknie dialogowym są określane przez implementacji `ISpecifyPropertyPages` i `IVsPropertyPage`.  
+  Każda kategoria wyświetlana w kategorii najwyższego poziomu reprezentuje osobną stronę właściwości. Pozycje kategorii i podkategorii dostępne w oknie dialogowym są określane przez implementację programu `ISpecifyPropertyPages` i `IVsPropertyPage` .  
   
-  `IDispatch` obiekty dla elementów w kontenerze zaznaczenia, które mają właściwości, które mają być wyświetlane na implementowanie stron właściwości `ISpecifyPropertyPages` wyliczyć listy identyfikatorów klas. Identyfikatory klasy są przekazywane jako zmienne `ISpecifyPropertyPages` i służą do tworzenia wystąpienia na stronach właściwości. Lista identyfikatorów klas również jest przekazywany do `IVsPropertyPage` do tworzenia struktury drzewa po lewej stronie okna dialogowego. Strony właściwości, a następnie Przekaż informacje z powrotem do `IDispatch` obiekt, który implementuje `ISpecifyPropertyPages` i wypełnia pola informacji dla każdej strony.  
+  `IDispatch` obiekty elementów w kontenerze wyboru, które mają właściwości, które mają być wyświetlane na stronach właściwości wdrożone `ISpecifyPropertyPages` w celu wyliczenia listy identyfikatorów klas. Identyfikatory klas są przenoszone jako zmienne do `ISpecifyPropertyPages` i są używane do tworzenia wystąpień stron właściwości. Lista identyfikatorów klas jest również przenoszona do programu w `IVsPropertyPage` celu utworzenia struktury drzewa po lewej stronie okna dialogowego. Strony właściwości przekazują informacje z powrotem do `IDispatch` obiektu, który implementuje `ISpecifyPropertyPages` i wypełnia informacje dla każdej strony.  
   
-  Właściwości obiektu przeglądania są pobierane przy użyciu `IDispatch` dla każdego obiektu w kontenerze zaznaczenia.  
+  Właściwości obiektu przeglądania są pobierane przy użyciu `IDispatch` dla każdego obiektu w kontenerze wyboru.  
   
-  Implementowanie `Help::DisplayTopicFromF1Keyword` w swojej pakietu VSPackage oferuje funkcje dla przycisk Pomoc.  
+  Wdrożenie `Help::DisplayTopicFromF1Keyword` w pakietu VSPackage zapewnia funkcjonalność przycisku pomoc.  
   
-  Aby uzyskać więcej informacji, zobacz `IDispatch` i `ISpecifyPropertyPages`w bibliotece MSDN.  
+  Aby uzyskać więcej informacji, zobacz `IDispatch` i `ISpecifyPropertyPages` w bibliotece MSDN.  
   
-  Drugi typ strony właściwości wyświetlane w hostach przykłady postaci siatki właściwości, jak pokazano na poniższym zrzucie ekranu.  
+  Drugi typ stron właściwości wyświetlanych w przykładach obsługuje formularz siatki właściwości, jak pokazano na poniższym zrzucie ekranu.  
   
-  ![Strony właściwości VC](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
-  Okno dialogowe strony właściwości z siatki właściwości  
+  ![Prawidłowe strony VC](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
+  Okno dialogowe strony właściwości z siatką właściwości  
   
-  Interfejsy `IVSMDPropertyBrowser` i `IVSMDPropertyGrid` (deklaracja w vsmanaged.h) są używane do tworzenia i wypełniania siatki właściwości, w ramach lub oknie dialogowym.  
+  Interfejsy `IVSMDPropertyBrowser` i `IVSMDPropertyGrid` (zadeklarowane w vsmanaged. h) są używane do tworzenia i wypełniania siatki właściwości w oknie dialogowym lub w oknach.  
   
-  Architektura projektów zmienił się znacznie z poprzednich wersji programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. W szczególności jest aktywny pojęcie projektu została zmieniona. W [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], nie obowiązuje koncepcja aktywnego projektu. W poprzednim środowiskach rozwojowych, polegającej aktywnego projektu była domyślnie projektu, który tworzenie i wdrażanie polecenia niezależnie od tego, w kontekście. Teraz rozwiązanie kontroluje i rozstrzyga o kolejności przetwarzania którego tworzenie i wdrażanie polecenia zastosowanie do projektów.  
+  Architektura projektów została znacznie zmieniona z wcześniejszych wersji programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . W szczególności pojęcie, dla którego projekt jest aktywny, zostało zmienione. W programie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nie ma koncepcji aktywnego projektu. W poprzednich środowiskach programistycznych aktywny projekt był projektem, który kompiluje i wdraża polecenia domyślnie, bez względu na kontekst. Teraz rozwiązanie kontroluje i rozstrzyga, które polecenia Kompiluj i Wdróż mają zastosowanie do projektów.  
   
-  Jaki był wcześniej aktywny projekt teraz są przechwytywane w jednym z trzech sposobów:  
+  Wcześniej aktywny projekt jest teraz przechwytywany na jeden z trzech różnych sposobów:  
   
 - Projekt startowy  
   
-   Można określić projekt lub projekty ze strony właściwości rozwiązania, który zostanie uruchomiony, gdy użytkownik naciśnie klawisz F5 lub wybiera Uruchom z menu Kompiluj. Działa to w sposób podobny do starego aktywnego projektu w tym sensie, że jego nazwa jest wyświetlana w Eksploratorze rozwiązań pogrubioną czcionką.  
+   Możesz określić projekt lub projekty na stronie właściwości rozwiązania, która będzie uruchamiana, gdy użytkownik naciśnie klawisz F5 lub wybierze opcję Uruchom z menu Kompilacja. Działa to podobnie jak w przypadku starego aktywnego projektu w sensie, że jego nazwa jest wyświetlana w Eksplorator rozwiązań z pogrubioną czcionką.  
   
-   Możesz pobrać projekt startowy jako właściwość w modelu automatyzacji, wywołując `DTE.Solution.SolutionBuild.StartupProjects`. W VSPackage, wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> metody. `IVsSolutionBuildManager` jest dostępna jako usługa przez `QueryService` na SID_SVsSolutionBuildManager. Aby uzyskać więcej informacji, zobacz [obiekt konfiguracji projektu](../../extensibility/internals/project-configuration-object.md) i [konfiguracji rozwiązania](../../extensibility/internals/solution-configuration.md).  
+   Projekt startowy można pobrać jako właściwość w modelu automatyzacji przez wywołanie metody `DTE.Solution.SolutionBuild.StartupProjects` . W pakietu VSPackage można wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> metody lub. `IVsSolutionBuildManager` jest dostępny jako usługa przez `QueryService` SID_SVsSolutionBuildManager. Aby uzyskać więcej informacji, zobacz temat Konfiguracja [obiektu i projektu](../../extensibility/internals/project-configuration-object.md) [rozwiązania](../../extensibility/internals/solution-configuration.md).  
   
-- Konfiguracja kompilacji rozwiązania Active  
+- Konfiguracja kompilacji aktywnego rozwiązania  
   
-   [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Konfiguracja aktywnego rozwiązania dostępne w modelu automatyzacji, implementując ma `DTE.Solution.SolutionBuild.ActiveConfiguration`. Konfiguracja rozwiązania jest kolekcja, która zawiera jedną konfigurację projektu dla każdego projektu w rozwiązaniu (każdy projekt może mieć wiele konfiguracji na wielu platformach, z różnymi nazwami). Aby uzyskać więcej informacji dotyczących strony właściwości rozwiązania, zobacz [konfiguracji rozwiązania](../../extensibility/internals/solution-configuration.md).  
+   [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ma aktywną konfigurację rozwiązania dostępną w modelu automatyzacji przez implementację `DTE.Solution.SolutionBuild.ActiveConfiguration` . Konfiguracja rozwiązania jest kolekcją zawierającą jedną konfigurację projektu dla każdego projektu w rozwiązaniu (każdy projekt może mieć wiele konfiguracji na wielu platformach z niepodobnymi nazwami). Aby uzyskać więcej informacji dotyczących stron właściwości rozwiązania, zobacz [Konfiguracja rozwiązania](../../extensibility/internals/solution-configuration.md).  
   
-- Obecnie wybranego projektu  
+- Aktualnie wybrany projekt  
   
-   Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> metodę, aby pobrać hierarchii projektu i elementu projektu lub wybrane elementy. Z DTE, należy użyć `SelectedItems.SelectedItem.Project` i `SelectedItems.SelectedItem.ProjectItem` metody. Brak przykładowego kodu w ramach tych nagłówków w obszarach podstawowych [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dokumentów.  
+   Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> metodę, aby pobrać hierarchię projektu i element projektu lub wybrane elementy. Z DTE można użyć `SelectedItems.SelectedItem.Project` `SelectedItems.SelectedItem.ProjectItem` metod i. Istnieje przykładowy kod pod tymi nagłówkami w podstawowych [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dokumentach.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>   

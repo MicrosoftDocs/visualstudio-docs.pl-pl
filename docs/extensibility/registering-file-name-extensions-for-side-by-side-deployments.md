@@ -1,5 +1,5 @@
 ---
-title: Rejestrowanie rozszerzeń nazw plików dla wdrożeń side-by-side | Dokumenty firmy Microsoft
+title: Rejestrowanie rozszerzeń nazw plików dla wdrożeń równoległych | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6717625a44b48a25d293f68d01cd9fa3c7c24853
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701544"
 ---
-# <a name="register-file-name-extensions-for-side-by-side-deployments"></a>Rejestrowanie rozszerzeń nazw plików dla wdrożeń side-by-side
-W przypadku pakietów VSPackages wdrożonych w środowisku side-by-side należy zarejestrować rozszerzenia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]nazw plików, aby skojarzyć pliki z poprawną wersją programu . O ile nie jest używane rozszerzenie nazwy pliku specyficzne dla wersji, rejestracja umożliwia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]użytkownikom otwieranie plików elementów projektu i projektu w odpowiedniej wersji programu .
+# <a name="register-file-name-extensions-for-side-by-side-deployments"></a>Rejestrowanie rozszerzeń nazw plików dla wdrożeń równoległych
+W przypadku pakietów VSPackage wdrożonych w środowisku Side-by-Side należy zarejestrować rozszerzenia nazw plików w celu kojarzenia plików z poprawną wersją programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Jeśli nie zostanie użyte rozszerzenie nazwy pliku specyficznego dla wersji, rejestracja umożliwia użytkownikom otwieranie plików projektu i elementów projektu w odpowiedniej wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="in-this-section"></a>W tej sekcji
-- [Rozszerzenia nazw plików – informacje](../extensibility/about-file-name-extensions.md) W tym artykule omówiono sposób rejestrowania rozszerzeń nazw plików.
+- [Informacje o rozszerzeniach nazw plików](../extensibility/about-file-name-extensions.md) W tym artykule omówiono sposób rejestrowania rozszerzeń nazw plików.
 
-- [Określanie programów obsługi plików dla rozszerzeń nazw plików](../extensibility/specifying-file-handlers-for-file-name-extensions.md) Zawiera informacje dotyczące rejestrowania aplikacji, które mogą otwierać, edytować i tak dalej, rozszerzenie nazwy określonego pliku.
+- [Określ programy obsługi plików dla rozszerzeń nazw plików](../extensibility/specifying-file-handlers-for-file-name-extensions.md) Zawiera informacje dotyczące sposobu rejestrowania aplikacji, które mogą otwierać, edytować i tak dalej, w przypadku konkretnego rozszerzenia nazwy pliku.
 
-- [Rejestrowanie zleceń dla rozszerzeń nazw plików](../extensibility/registering-verbs-for-file-name-extensions.md) W tym artykule omówiono sposób rejestrowania zleceń.
+- [Rejestrowanie czasowników dla rozszerzeń nazw plików](../extensibility/registering-verbs-for-file-name-extensions.md) W tym artykule omówiono sposób rejestrowania zleceń.
 
-- [Zarządzanie skojarzeniami plików obok siebie](../extensibility/managing-side-by-side-file-associations.md) W tym artykule omówiono sposób obsługi instalacji side-by-side, w których [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] należy wywołać określoną wersję, aby otworzyć plik.
+- [Zarządzaj skojarzeniami plików obok](../extensibility/managing-side-by-side-file-associations.md) siebie W tym artykule omówiono sposób obsługi instalacji równoległych, w których należy wywołać konkretną wersję programu, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Aby otworzyć plik.
 
-## <a name="related-sections"></a>Powiązane sekcje
-- [Obsługa wielu wersji programu Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md) W tym artykule [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opisano problemy związane z wieloma wersjami i VSPackage podczas tworzenia i wdrażania dla użytkowników końcowych.
+## <a name="related-sections"></a>Sekcje pokrewne
+- [Obsługa wielu wersji programu Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md) W tym artykule opisano problemy związane z wieloma wersjami [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i pakietu VSPackage podczas opracowywania i wdrażania dla użytkowników końcowych.

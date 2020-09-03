@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadProperties | Dokumentacja firmy Microsoft
+title: 'IDebugThread2:: GetThreadProperties | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dd32c32d2ccdb041ea34ce8d9d7ca72f2035db94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153010"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera właściwości, które opisują tego wątku.  
+Pobiera właściwości opisujące ten wątek.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,19 +42,19 @@ int GetThreadProperties ( 
   
 #### <a name="parameters"></a>Parametry  
  `dwFields`  
- [in] Kombinacja flag z [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) wyliczenie, które określa, które pola `ptp` mają być wypełnione.  
+ podczas Kombinacja flag z wyliczenia [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) , która określa, które pola `ptp` mają być wypełnione.  
   
  `ptp`  
- [out w] A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) strukturę, która jest wypełniane właściwości wątku.  
+ [in. out] Struktura [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) , która jest wypełniana przy użyciu właściwości wątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Informacje zwracane z tej metody jest zazwyczaj wyświetlana **wątków** okna debugowania.  
+ Informacje zwracane z tej metody są zwykle wyświetlane w oknie debugowania **wątków** .  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CProgram` obiekt, który implementuje [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CProgram` obiektu, który implementuje interfejs [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) .  
   
 ```cpp#  
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,  

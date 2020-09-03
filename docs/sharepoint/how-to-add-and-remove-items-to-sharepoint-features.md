@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 27c6ebfb0b0cdbff0a184859ffa2a73acab809c1
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014530"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Instrukcje: Dodawanie i usuwanie elementów do funkcji programu SharePoint
@@ -51,6 +52,6 @@ ms.locfileid: "86014530"
 
      Elementy projektu programu SharePoint są wyświetlane w **elementach listy rozwiązań** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie funkcji programu SharePoint](../sharepoint/creating-sharepoint-features.md)
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

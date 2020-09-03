@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 6913ec4c80b5cb87cf6cd980ff2da73fab309a02
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184019"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Publikowanie w środowisku deweloperskim i testowym za pomocą skryptów programu Windows PowerShell
@@ -52,7 +52,7 @@ Moduł programu Windows PowerShell generowany przez program Visual Studio zawier
 
 ### <a name="json-configuration-file"></a>Plik konfiguracji JSON
 
-Plik JSON zostanie utworzony w folderze **konfiguracje** i zawiera dane konfiguracyjne, które określają, które zasoby należy wdrożyć na platformie Azure. Nazwa pliku generowanego przez program Visual Studio to Project-Name-WAWS-dev. JSON, jeśli utworzono witrynę sieci Web lub nazwę projektu-VM-dev. JSON, jeśli utworzono maszynę wirtualną. Oto przykład pliku konfiguracji JSON, który jest generowany podczas tworzenia witryny sieci Web. Większość wartości nie wymaga wyjaśnień. Nazwa witryny sieci Web jest generowana przez platformę Azure, więc może być niezgodna z nazwą projektu.
+Plik JSON zostanie utworzony w folderze **konfiguracje** i zawiera dane konfiguracyjne, które określają, które zasoby należy wdrożyć na platformie Azure. Nazwa pliku generowanego przez program Visual Studio jest project-name-WAWS-dev.jsw przypadku utworzenia witryny sieci Web lub name-VM-dev.jsprojektu w przypadku utworzenia maszyny wirtualnej. Oto przykład pliku konfiguracji JSON, który jest generowany podczas tworzenia witryny sieci Web. Większość wartości nie wymaga wyjaśnień. Nazwa witryny sieci Web jest generowana przez platformę Azure, więc może być niezgodna z nazwą projektu.
 
 ```json
 {
@@ -175,13 +175,13 @@ Jeśli wcześniej nie uruchomiono skryptu środowiska Windows PowerShell, należ
 
     Należy pamiętać, że w przypadku automatyzowania skryptu ta metoda udostępniania poświadczeń platformy Azure nie działa. Zamiast tego należy użyć pliku, `.publishsettings` Aby podać poświadczenia. Tylko jednorazowo Użyj polecenia **Get-AzurePublishSettingsFile** , aby pobrać plik z platformy Azure, a następnie zaimportuj plik przy użyciu pliku **Import-AzurePublishSettingsFile** . Aby uzyskać szczegółowe informacje, zobacz [How to install and configure Azure PowerShell (Jak zainstalować i skonfigurować program Azure PowerShell)](/powershell/azure/overview).
 
-1. Obowiązkowe Jeśli chcesz utworzyć zasoby platformy Azure, takie jak maszyna wirtualna, baza danych i witryna internetowa bez publikowania aplikacji sieci Web, użyj polecenia **Publish-WebApplication. ps1** z argumentem **-Configuration** ustawionym na plik konfiguracji JSON. Ten wiersz polecenia używa pliku konfiguracji JSON do określenia zasobów do utworzenia. Ponieważ używa ustawień domyślnych dla innych argumentów wiersza polecenia, tworzy zasoby, ale nie publikuje aplikacji sieci Web. Opcja – verbose zawiera więcej informacji na temat tego, co się dzieje.
+1. Obowiązkowe Jeśli chcesz utworzyć zasoby platformy Azure, takie jak maszyna wirtualna, baza danych i witryna sieci Web bez publikowania aplikacji internetowej, użyj polecenia **Publish-WebApplication.ps1** z argumentem **-Configuration** ustawionym na plik konfiguracji JSON. Ten wiersz polecenia używa pliku konfiguracji JSON do określenia zasobów do utworzenia. Ponieważ używa ustawień domyślnych dla innych argumentów wiersza polecenia, tworzy zasoby, ale nie publikuje aplikacji sieci Web. Opcja – verbose zawiera więcej informacji na temat tego, co się dzieje.
 
     ```powershell
     Publish-WebApplication.ps1 -Verbose –Configuration C:\Path\WebProject-WAWS-dev.json
     ```
 
-1. Użyj polecenia **Publish-WebApplication. ps1** , jak pokazano w jednym z poniższych przykładów, aby wywołać skrypt i opublikować aplikację sieci Web. Jeśli zachodzi potrzeba zastąpienia ustawień domyślnych dla dowolnego z innych argumentów, takich jak nazwa subskrypcji, nazwa pakietu publikowania, poświadczenia maszyny wirtualnej lub poświadczenia serwera bazy danych, można określić te parametry. Użyj opcji **– verbose** , aby wyświetlić więcej informacji o postępie procesu publikowania.
+1. Użyj **Publish-WebApplication.ps1** polecenia, jak pokazano w jednym z poniższych przykładów, aby wywołać skrypt i opublikować aplikację sieci Web. Jeśli zachodzi potrzeba zastąpienia ustawień domyślnych dla dowolnego z innych argumentów, takich jak nazwa subskrypcji, nazwa pakietu publikowania, poświadczenia maszyny wirtualnej lub poświadczenia serwera bazy danych, można określić te parametry. Użyj opcji **– verbose** , aby wyświetlić więcej informacji o postępie procesu publikowania.
 
     ```powershell
     Publish-WebApplication.ps1 –Configuration C:\Path\WebProject-WAWS-dev-json `
@@ -208,7 +208,7 @@ Jeśli wcześniej nie uruchomiono skryptu środowiska Windows PowerShell, należ
 
 ## <a name="customizing-and-extending-the-publish-scripts"></a>Dostosowywanie i rozszerzanie skryptów publikowania
 
-Można dostosować skrypt publikacji i plik konfiguracji JSON. Nie ma potrzeby modyfikowania funkcji w module programu Windows PowerShell **AzureWebAppPublishModule. PSM1** . Jeśli chcesz tylko określić inną bazę danych lub zmienić niektóre właściwości maszyny wirtualnej, edytuj plik konfiguracji JSON. Jeśli chcesz zwiększyć funkcjonalność skryptu w celu zautomatyzowania kompilowania i testowania projektu, można zaimplementować klasy zastępcze w **Publish-WebApplication. ps1**.
+Można dostosować skrypt publikacji i plik konfiguracji JSON. Nie ma potrzeby modyfikowania funkcji w module programu Windows PowerShell **AzureWebAppPublishModule. PSM1** . Jeśli chcesz tylko określić inną bazę danych lub zmienić niektóre właściwości maszyny wirtualnej, edytuj plik konfiguracji JSON. Jeśli chcesz zwiększyć funkcjonalność skryptu w celu zautomatyzowania kompilowania i testowania projektu, można zaimplementować klasy zastępcze w **Publish-WebApplication.ps1**.
 
 Aby zautomatyzować Kompilowanie projektu, Dodaj kod, który wywołuje MSBuild, `New-WebDeployPackage` tak jak pokazano w tym przykładzie kodu. Ścieżka do polecenia MSBuild jest inna w zależności od zainstalowanej wersji programu Visual Studio. Aby uzyskać poprawną ścieżkę, można użyć funkcji **Get-MSBuildCmd**, jak pokazano w tym przykładzie.
 
@@ -252,7 +252,7 @@ Aby zautomatyzować Kompilowanie projektu, Dodaj kod, który wywołuje MSBuild, 
         #Write a function to build and package your web application
     ```
 
-    Aby skompilować aplikację sieci Web, użyj programu MsBuild. exe. Aby uzyskać pomoc, zobacz informacje w wierszu polecenia programu MSBuild w:[http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
+    Aby skompilować aplikację sieci Web, użyj MsBuild.exe. Aby uzyskać pomoc, zobacz informacje w wierszu polecenia programu MSBuild w: [http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -305,10 +305,10 @@ return $WebDeployPackage
     -Verbose
     ```
 
-    Aby zautomatyzować testowanie aplikacji, Dodaj kod do `Test-WebApplication` . Pamiętaj, aby usunąć komentarz z wierszy w **Publish-WebApplication. ps1** , gdy te funkcje są wywoływane. Jeśli nie podano implementacji, możesz ręcznie skompilować projekt przy użyciu programu Visual Studio, a następnie uruchomić skrypt publikacji w celu opublikowania na platformie Azure.
+    Aby zautomatyzować testowanie aplikacji, Dodaj kod do `Test-WebApplication` . Pamiętaj, aby usunąć komentarz z wierszy w **Publish-WebApplication.ps1** , w których te funkcje są wywoływane. Jeśli nie podano implementacji, możesz ręcznie skompilować projekt przy użyciu programu Visual Studio, a następnie uruchomić skrypt publikacji w celu opublikowania na platformie Azure.
 
 ## <a name="publishing-function-summary"></a>Publikowanie podsumowania funkcji
-Aby uzyskać pomoc dotyczącą funkcji, których można użyć w wierszu polecenia programu Windows PowerShell, użyj polecenia `Get-Help function-name` . Pomoc zawiera pomoc i przykłady parametrów. Ten sam tekst pomocy znajduje się również w plikach źródłowych skryptu **AzureWebAppPublishModule. PSM1** i **Publish-WebApplication. ps1**. Skrypt i pomoc są zlokalizowane w języku programu Visual Studio.
+Aby uzyskać pomoc dotyczącą funkcji, których można użyć w wierszu polecenia programu Windows PowerShell, użyj polecenia `Get-Help function-name` . Pomoc zawiera pomoc i przykłady parametrów. Ten sam tekst pomocy znajduje się również w plikach źródłowych skryptu **AzureWebAppPublishModule. PSM1** i **Publish-WebApplication.ps1**. Skrypt i pomoc są zlokalizowane w języku programu Visual Studio.
 
 **AzureWebAppPublishModule**
 
@@ -325,9 +325,9 @@ Aby uzyskać pomoc dotyczącą funkcji, których można użyć w wierszu polecen
 | Format — DevTestMessageWithTime |Dołącza datę i godzinę do komunikatu. Ta funkcja została zaprojektowana z myślą o komunikatach zapisywana w błędach i pełnych strumieniach. |
 | Get-AzureSQLDatabaseConnectionString |Składa parametry połączenia w celu nawiązania połączenia z bazą danych Azure SQL Database. |
 | Get-AzureVMStorage |Zwraca nazwę pierwszego konta magazynu z wzorcem Name "DevTest *" (bez uwzględniania wielkości liter) w określonej lokalizacji lub grupie koligacji. Jeśli konto magazynu "DevTest*" jest niezgodne z lokalizacją lub grupą koligacji, funkcja zignoruje ją. Określ lokalizację lub grupę koligacji. |
-| Get-MSDeployCmd |Zwraca polecenie, aby uruchomić narzędzie MsDeploy. exe. |
+| Get-MSDeployCmd |Zwraca polecenie, aby uruchomić narzędzie MsDeploy.exe. |
 | New-AzureVMEnvironment |Znajduje lub tworzy maszynę wirtualną w subskrypcji, która pasuje do wartości w pliku konfiguracji JSON. |
-| Publikowanie — pakiet webpackage |Używa programu MsDeploy. exe i pakietu publikacji w sieci Web. Plik zip służący do wdrażania zasobów w witrynie sieci Web. Ta funkcja nie generuje żadnych danych wyjściowych. Jeśli wywołanie programu MSDeploy. exe nie powiedzie się, funkcja zgłasza wyjątek. Aby uzyskać bardziej szczegółowe dane wyjściowe, użyj opcji **-verbose** . |
+| Publikowanie — pakiet webpackage |Używa MsDeploy.exe i pakietu publikacji w sieci Web. Plik zip służący do wdrażania zasobów w witrynie sieci Web. Ta funkcja nie generuje żadnych danych wyjściowych. Jeśli wywołanie MSDeploy.exe nie powiedzie się, funkcja zgłasza wyjątek. Aby uzyskać bardziej szczegółowe dane wyjściowe, użyj opcji **-verbose** . |
 | Publikuj — WebPackageToVM |Weryfikuje wartości parametrów, a następnie wywołuje funkcję **Publish-webpackage** . |
 | Read-ConfigFile |Sprawdza poprawność pliku konfiguracji JSON i zwraca tabelę skrótów dla wybranych wartości. |
 | Przywróć subskrypcję |Resetuje bieżącą subskrypcję do oryginalnej subskrypcji. |

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20ec2a10210517f291a3bb21db9e1689942786c9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184279"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Przewodnik: Tworzenie pliku projektu MSBuild od podstaw
@@ -49,7 +49,7 @@ Aby ukończyć przewodnik, musisz mieć zainstalowany program Visual Studio, pon
 
 ## <a name="extend-the-path"></a>Zwiększ ścieżkę
 
-Aby można było użyć programu MSBuild, należy zwiększyć zmienną środowiskową PATH, aby uwzględnić wszystkie wymagane narzędzia. Możesz użyć **wiersz polecenia dla deweloperów dla programu Visual Studio**. Wyszukaj je w systemie Windows 10 w polu wyszukiwania na pasku zadań systemu Windows. Aby skonfigurować środowisko w zwykłym wierszu polecenia lub w środowisku skryptowym, należy uruchomić *VSDevCmd. bat* w podfolderze *Common7/Tools* instalacji programu Visual Studio.
+Aby można było użyć programu MSBuild, należy zwiększyć zmienną środowiskową PATH, aby uwzględnić wszystkie wymagane narzędzia. Możesz użyć **wiersz polecenia dla deweloperów dla programu Visual Studio**. Wyszukaj je w systemie Windows 10 w polu wyszukiwania na pasku zadań systemu Windows. Aby skonfigurować środowisko w zwykłym wierszu polecenia lub w środowisku skryptów, uruchom *VSDevCmd.bat* w podfolderze *Common7/Tools* instalacji programu Visual Studio.
 
 ## <a name="create-a-minimal-application"></a>Tworzenie minimalnej aplikacji
 
@@ -87,7 +87,7 @@ Aby można było użyć programu MSBuild, należy zwiększyć zmienną środowis
 
      **Witaj, świecie!** powinien być wyświetlony komunikat.
 
-8. Usuń aplikację, wpisując **del helloworld. exe** w wierszu polecenia.
+8. Usuń aplikację, wpisując **del helloworld.exe** w wierszu polecenia.
 
 ## <a name="create-a-minimal-msbuild-project-file"></a>Utwórz minimalny plik projektu programu MSBuild
 
@@ -186,7 +186,7 @@ Zadania w miejscu docelowym kompilacji są wykonywane sekwencyjnie. W takim przy
 
 ### <a name="to-add-build-properties"></a>Aby dodać właściwości kompilacji
 
-1. Usuń istniejącą aplikację, wpisując **del helloworld. exe** w wierszu polecenia.
+1. Usuń istniejącą aplikację, wpisując **del helloworld.exe** w wierszu polecenia.
 
 2. W pliku projektu, Wstaw ten `PropertyGroup` element tuż po elemencie otwierającym `Project` :
 
@@ -329,7 +329,7 @@ Plik projektu powinien teraz wyglądać podobnie do następującego kodu:
 
 1. W wierszu polecenia wpisz **MSBuild HelloWorld. csproj-p:AssemblyName = Greetings**.
 
-     Ze względu na to, że przełącznik **-t** nie został jawnie ustawiony dla obiektu docelowego, MSBuild uruchamia domyślny element docelowy kompilacji. Przełącznik **-p** przesłania `AssemblyName` Właściwość i przekazuje ją nowej wartości `Greetings` . Powoduje to utworzenie nowej aplikacji, *Greetings. exe*w folderze *\Bin \\ * .
+     Ze względu na to, że przełącznik **-t** nie został jawnie ustawiony dla obiektu docelowego, MSBuild uruchamia domyślny element docelowy kompilacji. Przełącznik **-p** przesłania `AssemblyName` Właściwość i przekazuje ją nowej wartości `Greetings` . Powoduje to utworzenie nowej aplikacji *Greetings.exe*w folderze *\Bin \\ * .
 
 2. Aby sprawdzić, czy *folder \\ \Bin* zawiera aplikację *aplikację MSBuildSample* oraz nowe aplikacje *Greetings* , wpisz **dir bin**.
 
@@ -353,7 +353,7 @@ Plik projektu powinien teraz wyglądać podobnie do następującego kodu:
 
      Aby sprawdzić, czy *folder \\ \Bin* zawiera aplikację *aplikację MSBuildSample* , wpisz **dir bin**.
 
-## <a name="build-incrementally"></a>Kompiluj przyrostowo
+## <a name="build-incrementally"></a>Kompilacja przyrostowa
 
  Można powiedzieć, że program MSBuild ma tworzyć obiekty docelowe tylko wtedy, gdy pliki źródłowe lub docelowe, od których zależy element docelowy, zostały zmienione. MSBuild używa sygnatury czasowej pliku, aby określić, czy został zmieniony.
 
@@ -388,7 +388,7 @@ Plik projektu powinien teraz wyglądać podobnie do następującego kodu:
 
      **Pliki wejściowe: HelloWorld.cs**
 
-     **Pliki wyjściowe: BinMSBuildSample. exe**
+     **Pliki wyjściowe: BinMSBuildSample.exe**
 
      Program MSBuild pomija miejsce docelowe kompilacji, ponieważ żadne pliki źródłowe nie uległy zmianie od czasu ostatniego skompilowania aplikacji.
 
@@ -470,7 +470,7 @@ W poniższym przykładzie przedstawiono plik projektu, który kompiluje Visual B
 
  Program Visual Studio może automatycznie wykonywać większość pracy, która jest wyświetlana w tym instruktażu. Aby dowiedzieć się, jak używać programu Visual Studio do tworzenia, edytowania, kompilowania i testowania plików projektów programu MSBuild, zobacz [Przewodnik: korzystanie z MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Omówienie programu MSBuild](../msbuild/msbuild.md)
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

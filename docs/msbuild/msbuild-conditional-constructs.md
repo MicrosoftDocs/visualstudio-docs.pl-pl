@@ -23,13 +23,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a7d6693a24d208cab6bd3b58ce16dcba8a32b190
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184292"
 ---
-# <a name="msbuild-conditional-constructs"></a>Konstrukcje warunkowe MSBuild
+# <a name="msbuild-conditional-constructs"></a>Konstrukcje warunkowe programu MSBuild
 
 Program MSBuild oferuje mechanizm do wykonywania operacji lub przetwarzania za pomocą elementów [Choose](../msbuild/choose-element-msbuild.md), [when](../msbuild/when-element-msbuild.md)i [Otherwise](../msbuild/otherwise-element-msbuild.md) .
 
@@ -37,7 +37,7 @@ Program MSBuild oferuje mechanizm do wykonywania operacji lub przetwarzania za p
 
  `Choose`Element zawiera serię `When` elementów z `Condition` atrybutami, które są testowane w kolejności od góry do dołu do momentu, w którym ma zostać obliczona wartość `true` . Jeśli więcej niż jeden `When` element ma wartość `true` , zostanie użyta tylko pierwsza z nich. `Otherwise`Element, jeśli jest obecny, będzie oceniany, jeśli nie ma żadnego warunku dla `When` elementu `true` .
 
- `Choose`elementy mogą być używane jako elementy podrzędne elementów `Project` `When` i `Otherwise` . `When``Otherwise`elementami i mogą być `ItemGroup` `PropertyGroup` `Choose` elementy podrzędne.
+ `Choose` elementy mogą być używane jako elementy podrzędne elementów `Project` `When` i `Otherwise` . `When``Otherwise`elementami i mogą być `ItemGroup` `PropertyGroup` `Choose` elementy podrzędne.
 
 ## <a name="example"></a>Przykład
 
@@ -91,7 +91,7 @@ W tym przykładzie jest używany warunek dla stałej kompilatora `DEFINED_CONSTA
 </Choose>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Choose — element (MSBuild)](../msbuild/choose-element-msbuild.md)
 - [When, element (MSBuild)](../msbuild/when-element-msbuild.md)

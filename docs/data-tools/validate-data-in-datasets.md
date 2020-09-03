@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 379c5ec40a59ba044c8cce1ef7926294b763d05d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281087"
 ---
 # <a name="validate-data-in-datasets"></a>Weryfikowanie danych w zestawach danych
@@ -64,7 +64,7 @@ Jeśli aplikacja używa określonego zestawu danych, można utworzyć obsługę 
 
 ## <a name="data-update-events"></a>Zdarzenia aktualizacji danych
 
-|Zdarzenie|Opis|
+|Wydarzenie|Opis|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|Wartość w kolumnie jest zmieniana. Zdarzenie przekazuje wiersz i kolumnę do użytkownika wraz z proponowaną nową wartością.|
 |<xref:System.Data.DataTable.ColumnChanged>|Wartość w kolumnie została zmieniona. Zdarzenie przekazuje wiersz i kolumnę do użytkownika wraz z proponowaną wartością.|

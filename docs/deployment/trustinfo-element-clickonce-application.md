@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5873eb18b2f803acfd5aba9444657884b1a24581
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184435"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo, &gt; element (Aplikacja ClickOnce)
@@ -87,7 +87,7 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do uruchomienia aplikacji n
      Wymagany. Identyfikuje wersję uprawnienia. Zwykle ta wartość jest `1` .
 
 ## <a name="ipermission"></a>IPermission
- Opcjonalny. Ten element jest elementem podrzędnym `PermissionSet` elementu. `IPermission`Element w pełni identyfikuje klasę uprawnień w .NET Framework. `IPermission`Element ma następujące atrybuty, ale może mieć dodatkowe atrybuty odpowiadające właściwościom klasy uprawnień. Aby dowiedzieć się, jaka jest składnia określonego uprawnienia, zobacz przykłady wymienione w pliku Security. config.
+ Opcjonalny. Ten element jest elementem podrzędnym `PermissionSet` elementu. `IPermission`Element w pełni identyfikuje klasę uprawnień w .NET Framework. `IPermission`Element ma następujące atrybuty, ale może mieć dodatkowe atrybuty odpowiadające właściwościom klasy uprawnień. Aby dowiedzieć się, jaka jest składnia określonego uprawnienia, zobacz przykłady wymienione w pliku Security.config.
 
 - `class`
 
@@ -150,7 +150,7 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do uruchomienia aplikacji n
 
    `requireAdministrator`, żądanie pełnych uprawnień administratora.
 
-   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikacje będą instalowane tylko z wartością `asInvoker` . Instalowanie z jakąkolwiek inną wartością zakończy się niepowodzeniem.
+   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje będą instalowane tylko z wartością `asInvoker` . Instalowanie z jakąkolwiek inną wartością zakończy się niepowodzeniem.
 
 - `uiAccess`
 
@@ -267,6 +267,6 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do uruchomienia aplikacji n
 </trustInfo>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Omówienie wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md)
 - [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)

@@ -23,21 +23,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731388"
 ---
 # <a name="macros-for-reporting"></a>Makra raportowania
-Na potrzeby debugowania można użyć makr **_RPTn** i **_RPTFn** , zdefiniowanych w CRTDBG. H, aby zastąpić użycie instrukcji `printf`. Nie musisz zamykać ich w **#ifdef**s, ponieważ są one automatycznie znikane w kompilacji wydania, gdy **_DEBUG** nie jest zdefiniowany.
+Na potrzeby debugowania można użyć makr **_RPTn** i **_RPTFN** zdefiniowanych w CRTDBG. H, aby zastąpić użycie `printf` instrukcji. Nie musisz zamykać ich w **#ifdef**s, ponieważ nie jest on automatycznie znikany w kompilacji wydania, gdy **_DEBUG** nie jest zdefiniowana.
 
 |Makro|Opis|
 |-----------|-----------------|
-|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Wyprowadza ciąg komunikatu i zero do czterech argumentów. W przypadku _RPT1 przez **_RPT4**ciąg komunikatu służy jako ciąg formatowania w stylu printf dla argumentów.|
-|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Analogicznie jak **_RPTn**, ale te makra również wyprowadzają nazwę pliku i numer wiersza, w którym znajduje się makro.|
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Wyprowadza ciąg komunikatu i zero do czterech argumentów. W przypadku _RPT1 przez **_RPT4**ciąg komunikatu służy jako ciąg formatowania printf dla argumentów.|
+|**_RPTF0**, **_RPTF1**, **_RPTF2** **_RPTF4**|Analogicznie jak **_RPTn**, ale te makra również wyprowadzają nazwę pliku i numer wiersza, w którym znajduje się makro.|
 
- Rozważmy następujący przykład:
+ Rozpatrzmy następujący przykład:
 
 ```cpp
 #ifdef _DEBUG
@@ -48,7 +48,7 @@ Na potrzeby debugowania można użyć makr **_RPTn** i **_RPTFn** , zdefiniowany
 #endif
 ```
 
- Ten kod wyprowadza wartości `someVar` i `otherVar` do **stdout**. Możesz użyć następującego wywołania, aby `_RPTF2` zgłosić te same wartości, a także nazwę pliku i numer wiersza:
+ Ten kod wyprowadza wartości z `someVar` i `otherVar` do **stdout**. Możesz użyć następującego wywołania do, aby `_RPTF2` zgłosić te same wartości, a także nazwę pliku i numer wiersza:
 
 ```cpp
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );
@@ -70,7 +70,7 @@ Może się okazać, że określona aplikacja wymaga debugowania, że makra dosta
 #endif
 ```
 
- Jedno wywołanie **ALERT_IF2** może wykonać wszystkie funkcje kodu **printf** :
+ Jedno wywołanie **ALERT_IF2** mogło wykonać wszystkie funkcje kodu **printf** :
 
 ```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),
@@ -79,5 +79,5 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
 
  Możesz łatwo zmienić niestandardowe makro, aby zgłosić więcej lub mniej informacji do różnych miejsc docelowych. Takie podejście jest szczególnie przydatne, gdy Twoje wymagania dotyczące debugowania są rozwijane.
 
-## <a name="see-also"></a>Zobacz także
-- [Techniki debugowania CRT](../debugger/crt-debugging-techniques.md)
+## <a name="see-also"></a>Zobacz też
+- [Techniki testowania CRT](../debugger/crt-debugging-techniques.md)

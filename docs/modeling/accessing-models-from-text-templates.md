@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531472"
 ---
 # <a name="access-models-from-text-templates"></a>Dostęp do modeli z szablonów tekstowych
@@ -61,7 +61,7 @@ Here is a list of elements in the model:
 
 - Chociaż język, w którym są zapisywane fragmenty kodu, jest w języku C#, można wygenerować tekst dowolnego rodzaju. Możesz Alternatywnie napisać kod w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] , dodając Właściwość `language="VB"` do `template` dyrektywy.
 
-- Aby debugować szablon, Dodaj `debug="true"` do `template` dyrektywy. Szablon zostanie otwarty w innym wystąpieniu programu Visual Studio, jeśli wystąpi wyjątek. Jeśli chcesz przerwać debuger w określonym punkcie kodu, Wstaw instrukcję`System.Diagnostics.Debugger.Break();`
+- Aby debugować szablon, Dodaj `debug="true"` do `template` dyrektywy. Szablon zostanie otwarty w innym wystąpieniu programu Visual Studio, jeśli wystąpi wyjątek. Jeśli chcesz przerwać debuger w określonym punkcie kodu, Wstaw instrukcję `System.Diagnostics.Debugger.Break();`
 
    Aby uzyskać więcej informacji, zobacz [Debugowanie szablonu tekstowego T4](../modeling/debugging-a-t4-text-template.md).
 
@@ -95,7 +95,7 @@ Here is a list of elements in the model:
 
    W przypadku znalezienia błędu zostanie on zgłoszony w oknie błędy, a plik wynikowy będzie zawierał komunikat o błędzie.
 
-## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a>Uzyskiwanie dostępu do wielu modeli z szablonu tekstu
+## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a> Uzyskiwanie dostępu do wielu modeli z szablonu tekstu
 
 > [!NOTE]
 > Ta metoda umożliwia odczytywanie wielu modeli w tym samym szablonie, ale nie obsługuje odwołań ModelBus. Aby odczytywać modele, które są połączone z odwołaniami ModelBus, zobacz [używanie Visual Studio ModelBus w szablonie tekstowym](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
@@ -172,7 +172,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>
 ```
 
- `LoopSplitter.tt`wywołuje `LoopTemplate.t4` , a następnie dzieli otrzymany plik na segmenty. Należy zauważyć, że ten szablon nie musi być szablonem modelowania, ponieważ nie odczytuje modelu.
+ `LoopSplitter.tt` wywołuje `LoopTemplate.t4` , a następnie dzieli otrzymany plik na segmenty. Należy zauważyć, że ten szablon nie musi być szablonem modelowania, ponieważ nie odczytuje modelu.
 
 ```
 <#@ template hostspecific="true" language="C#" #>
