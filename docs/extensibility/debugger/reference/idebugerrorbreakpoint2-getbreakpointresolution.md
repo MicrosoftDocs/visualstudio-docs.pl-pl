@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpoint2::GetBreakpointResolution | Dokumenty firmy Microsoft
+title: 'IDebugErrorBreakpoint2:: GetBreakpointResolution | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7936a130afb1b0bf1dd4d3f4cc092090fa41ee39
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730158"
 ---
 # <a name="idebugerrorbreakpoint2getbreakpointresolution"></a>IDebugErrorBreakpoint2::GetBreakpointResolution
-Pobiera rozdzielczość błędu punktu przerwania, który opisuje błąd.
+Pobiera błąd punktu przerwania, który opisuje błąd.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,10 +41,10 @@ int GetBreakpointResolution( 
 
 ## <a name="parameters"></a>Parametry
 `ppErrorResolution`\
-[na zewnątrz] Zwraca [obiekt IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) opisujący błąd.
+określoną Zwraca obiekt [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) , który opisuje błąd.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282582"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Dostosowywanie sposobu tworzenia podpisów dla kontrolek powiązanych z danymi przez program Visual Studio
@@ -55,7 +55,7 @@ W poniższej tabeli wymieniono wewnętrzne ustawienia domyślne dla tych wartoś
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**( \\ \p{LL}) ( \\ \p{Lu}) &#124;_ +**|Dopasowuje małą literę, a po niej znak pisany wielką literą lub podkreślenie.|
 |**SmartCaptionReplacement**|**$1 $2**|**$1** reprezentuje wszystkie znaki dopasowane w pierwszym nawiasie wyrażenia, a **$2** reprezentuje wszystkie znaki dopasowane w drugim nawiasie. Zastępowanie to pierwsze dopasowanie, spacja, a następnie drugie dopasowanie.|
-|**SmartCaptionSuffix**|**:**|Reprezentuje znak dołączony do zwracanego ciągu. Na przykład, jeśli podpis ma wartość `Company Name` , sufiks czyni go`Company Name:`|
+|**SmartCaptionSuffix**|**:**|Reprezentuje znak dołączony do zwracanego ciągu. Na przykład, jeśli podpis ma wartość `Company Name` , sufiks czyni go `Company Name:`|
 
 > [!CAUTION]
 > Należy zachować ostrożność podczas wykonywania jakichkolwiek czynności w Edytorze rejestru. Przed rozpoczęciem edycji wykonaj kopię zapasową rejestru. Używanie Edytora rejestru w niewłaściwy sposób może spowodować poważne problemy, które mogą wymagać ponownego zainstalowania systemu operacyjnego. Firma Microsoft nie gwarantuje, że problemy, których przyczyną jest nieprawidłowe użycie Edytora rejestru, mogą zostać rozpoznane. Używasz Edytora rejestru na własne ryzyko.

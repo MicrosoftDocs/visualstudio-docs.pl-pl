@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetException | Dokumenty firmy Microsoft
+title: 'IDebugExceptionEvent2:: GetException | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 332cbb28bd175aa5c3b4187ae735a479ba9de6b0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729859"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
-Pobiera szczegółowy opis wyjątku, który został zgłoszony to zdarzenie.
+Pobiera szczegółowy opis wyjątku, który uruchomił to zdarzenie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,14 +41,14 @@ int GetException( 
 
 ## <a name="parameters"></a>Parametry
 `pExceptionInfo`\
-[w, na zewnątrz] [Struktura EXCEPTION_INFO,](../../../extensibility/debugger/reference/exception-info.md) która jest wypełniona opisem wyjątku.
+[in. out] Struktura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) , która jest uzupełniona o opis wyjątku.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
 
- [Tylko C++] Obiekt wywołujący jest odpowiedzialny za zwalnianie ciągów w [strukturze EXCEPTION_INFO,](../../../extensibility/debugger/reference/exception-info.md) a także zwalnianie obiektu [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) w strukturze.
+ [Tylko C++] Obiekt wywołujący jest odpowiedzialny za zwalnianie wszystkich ciągów w strukturze [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) , a także Zwalnianie obiektu [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) w strukturze.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

@@ -1,5 +1,5 @@
 ---
-title: Porównaj folder projektu z magazynem kontroli źródła | Dokumenty firmy Microsoft
+title: Porównaj folder projektu z magazynem kontroli źródła | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: facb3b656e0ac50b50fdb0291307aa2fe98b1df4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706862"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Opcjonalne porównanie lokalnego folderu projektu do magazynu kontroli kodu źródłowego
-W usłudze Source control Plug-in API 1.2 porównanie lokalnego folderu projektu i kontroli źródła odbywa się za pomocą funkcji [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) i [SccDirDiff](../../extensibility/sccdirdiff-function.md).
+W interfejsie API wtyczki kontroli źródła 1,2 porównanie między lokalnym folderem projektu a kontrolą źródła jest realizowane przy użyciu funkcji [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) i [SccDirDiff](../../extensibility/sccdirdiff-function.md).
 
- W **Eksploratorze rozwiązań,** jeśli folder jest zaznaczony zamiast pojedynczego pliku, menu **skrótów Porównaj wersje** wywołuje nowe [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) i [SccDirDiff](../../extensibility/sccdirdiff-function.md) w uszczelce formantu źródłowego.
+ W **Eksplorator rozwiązań**, jeśli wybrano folder zamiast pojedynczego pliku, menu skrótów do **porównywania wersji** wywoła nowe [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) i [SccDirDiff](../../extensibility/sccdirdiff-function.md) w dodatku plug-in kontroli źródła.
 
 ## <a name="new-capability-flags"></a>Nowe flagi możliwości
  `SCC_CAP_DIRECTORYDIFF`
@@ -33,10 +33,10 @@ W usłudze Source control Plug-in API 1.2 porównanie lokalnego folderu projektu
 
 - [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)
 
- Funkcja `SccDirQueryInfo` jest wywoływana wcześniej, `SccDirDiff` aby ustalić, czy katalog roboczy jest kontrolowany przez źródło. Funkcja `SccDirDiff` wyświetla różnice między bieżącym katalogiem lokalnym a odpowiednim folderem kontroli źródła. To polecenie prosi wtyczkę formantu źródła o wyświetlenie listy zmian w katalogu. Wtyczka kontroli źródła udostępnia własny interfejs użytkownika, aby wyświetlić różnice.
+ `SccDirQueryInfo`Funkcja jest wywoływana przed `SccDirDiff` określeniem, czy katalog roboczy jest kontrolowany przez źródło. `SccDirDiff`Funkcja wyświetla różnice między bieżącym katalogiem lokalnym i odpowiednim folderem kontroli źródła. To polecenie monituje wtyczkę kontroli źródła, aby wyświetlić listę zmian w katalogu. Wtyczka do kontroli źródła zapewnia własny interfejs użytkownika do wyświetlania różnic.
 
 > [!NOTE]
-> Ta funkcja używa tych samych flag poleceń co [SccDiff](../../extensibility/sccdiff-function.md). Jako dostawca wtyczki kontroli źródła możesz nie obsługiwać operacji "szybki diff" dla katalogów.
+> Ta funkcja używa tych samych flag poleceń co [SccDiff](../../extensibility/sccdiff-function.md). Jako dostawca wtyczki kontroli źródła możesz zdecydować, aby nie obsługiwać operacji "szybkiej diff" dla katalogów.
 
 ## <a name="see-also"></a>Zobacz też
 - [Nowości dotyczące wtyczki kontroli kodu źródłowego w interfejsie API w wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
