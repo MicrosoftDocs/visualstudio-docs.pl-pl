@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b356d8596581b1c289d9b9aa13a3d5b362e39e58
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769100"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Instrukcje: tworzenie tekstury podstawowej
@@ -87,6 +87,6 @@ Tekstura docelowa "Bullseye" została zakończona. Poniżej znajduje się obraz 
 
 Następnym krokiem jest wygenerowanie poziomów MIP dla tej tekstury. Aby uzyskać więcej informacji, zobacz [How to: Create and Modify Levels MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Edytor obrazów](../designers/image-editor.md)

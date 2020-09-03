@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c732e91649116529d30591ba9182d65d4007c211
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468617"
 ---
 # <a name="functionargtype"></a>FunctionArgType
@@ -38,4 +38,4 @@ Każdy parametr funkcji jest identyfikowany przez `SymTagFunctionArgType` symbol
 
 ## <a name="see-also"></a>Zobacz też
 - [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
-- [Funkcjatype](../../debugger/debug-interface-access/functiontype.md)
+- [FunctionType](../../debugger/debug-interface-access/functiontype.md)

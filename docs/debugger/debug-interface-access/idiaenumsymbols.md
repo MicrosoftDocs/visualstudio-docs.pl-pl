@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6018558ead8ae8b5532253cfa32180491514b040
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467681"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
@@ -57,7 +57,7 @@ Uzyskaj ten interfejs, wywołując następujące metody:
 Ten przykład pokazuje, jak uzyskać `IDiaEnumSymbols` interfejs, a następnie użyć tego wyliczenia do listy typów zdefiniowanych przez użytkownika (UDTs).
 
 > [!NOTE]
-> `CDiaBSTR`jest klasą, która zawija `BSTR` i automatycznie obsługuje zwalnianie ciągu, gdy utworzenie wystąpienia wykracza poza zakres.
+> `CDiaBSTR` jest klasą, która zawija `BSTR` i automatycznie obsługuje zwalnianie ciągu, gdy utworzenie wystąpienia wykracza poza zakres.
 
 ```C++
 void ShowUDTs(IDiaSymbol *pGlobals)
