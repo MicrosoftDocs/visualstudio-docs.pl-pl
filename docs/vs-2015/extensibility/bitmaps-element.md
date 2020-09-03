@@ -1,5 +1,5 @@
 ---
-title: Bitmaps, Element | Dokumentacja firmy Microsoft
+title: Bitmaps — element | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 50e0a57c53587d56cacc91faa8bc40b9e221b318
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184669"
 ---
 # <a name="bitmaps-element"></a>Bitmaps, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Grupy [Element bitmapy](../extensibility/bitmap-element.md) elementów.  
+Grupuje elementy [elementu mapy bitowej](../extensibility/bitmap-element.md) .  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -65,5 +65,5 @@ Grupy [Element bitmapy](../extensibility/bitmap-element.md) elementów.
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,5 +1,5 @@
 ---
-title: Dodawanie paska narzędzi do okna narzędzi | Dokumentacja firmy Microsoft
+title: Dodawanie paska narzędzi do okna narzędzi | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 49
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2c5df1ce1721c63b5c5cfc3c5b94929da088660f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184881"
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>Dodawanie paska narzędzi do okna narzędzi
@@ -23,27 +23,27 @@ ms.locfileid: "68184881"
 
 W tym instruktażu pokazano, jak dodać pasek narzędzi do okna narzędzi.  
   
- Pasek narzędzi jest pasek poziomej lub pionowej, zawierający przyciski, powiązane polecenia. Długość paska narzędzi w oknie narzędzia jest zawsze taki sam jak szerokość lub wysokość okna narzędzi, w zależności od tego, gdzie jest zadokowany pasek narzędzi.  
+ Pasek narzędzi to poziomy lub pionowy pasek, który zawiera przyciski powiązane z poleceniami. Długość paska narzędzi w oknie narzędzi jest zawsze taka sama jak szerokość lub wysokość okna narzędzi, w zależności od tego, gdzie jest zadokowany pasek narzędzi.  
   
- W przeciwieństwie do pasków narzędzi w IDE pasek narzędzi w oknie narzędzi musi być zadokowane i nie można przenosić ani dostosowane. Jeśli pakietu VSPackage są zapisywane w kodzie umanaged, pasek narzędzi może być zadokowane na żadnych urządzeniach brzegowych.  
+ W przeciwieństwie do pasków narzędzi w IDE, pasek narzędzi w oknie narzędzi musi być zadokowany i nie można go przenieść ani dostosować. Jeśli pakietu VSPackage jest zapisywana w kodzie umanaged, pasek narzędzi można zadokować na dowolnej krawędzi.  
   
- Aby uzyskać więcej informacji o tym, jak dodać pasek narzędzi, zobacz [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md).  
+ Aby uzyskać więcej informacji na temat dodawania paska narzędzi, zobacz [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dostępna jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-toolbar-for-a-tool-window"></a>Tworzenia paska narzędzi okna narzędzi  
+## <a name="creating-a-toolbar-for-a-tool-window"></a>Tworzenie paska narzędzi dla okna narzędzi  
   
-1. Utwórz projekt VSIX, o nazwie `TWToolbar` zawierający zarówno polecenie menu o nazwie **TWTestCommand** i okna narzędzi o nazwie **TestToolWindow**. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md) i [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md). Musisz dodać szablon elementu polecenia przed dodaniem szablonu okna narzędzia.  
+1. Utwórz projekt VSIX o nazwie `TWToolbar` z poleceniem menu o nazwie **TWTestCommand** i oknem narzędzia o nazwie **TestToolWindow**. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md) i [Tworzenie rozszerzenia przy użyciu okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md). Musisz dodać szablon elementu polecenia przed dodaniem szablonu okna narzędzi.  
   
-2. TWTestCommandPackage.vsct poszukaj sekcji symboli. W węźle GuidSymbol, o nazwie guidTWTestCommandPackageCmdSet zadeklarować paska narzędzi i pasek narzędzi grupy, w następujący sposób.  
+2. W TWTestCommandPackage. vsct poszukaj sekcji symboli. W węźle GuidSymbol o nazwie guidTWTestCommandPackageCmdSet Zadeklaruj pasek narzędzi i grupę pasków narzędzi w następujący sposób.  
   
     ```xml  
     <IDSymbol name="TWToolbar" value="0x1000" />  
     <IDSymbol name="TWToolbarGroup" value="0x1050" />  
     ```  
   
-3. W górnej części `Commands` sekcji, Utwórz `Menus` sekcji. Dodaj `Menu` elementu, aby zdefiniować na pasku narzędzi.  
+3. W górnej części `Commands` sekcji Utwórz `Menus` sekcję. Dodaj `Menu` element, aby zdefiniować pasek narzędzi.  
   
     ```xml  
     <Menus>  
@@ -57,9 +57,9 @@ W tym instruktażu pokazano, jak dodać pasek narzędzi do okna narzędzi.
     </Menus>  
     ```  
   
-     Nie można zagnieżdżać pasków narzędzi takich jak podmenu. W związku z tym nie trzeba przypisać element nadrzędny. Ponadto nie masz można ustawić priorytet, ponieważ użytkownik może poruszać się paski narzędzi. Zazwyczaj początkowe położenie paska narzędzi jest zdefiniowany programowo, ale kolejne zmiany przez użytkownika są zachowywane.  
+     Paski narzędzi nie mogą być zagnieżdżone jako podmenu. W związku z tym nie trzeba przypisywać elementu nadrzędnego. Ponadto nie ma konieczności ustawiania priorytetu, ponieważ użytkownik może przenosić paski narzędzi. Zwykle początkowe umieszczanie paska narzędzi jest zdefiniowane programowo, ale kolejne zmiany wprowadzane przez użytkownika są utrwalane.  
   
-4. W sekcji grupy zdefiniować grupy w celu uwzględnienia poleceń dla paska narzędzi.  
+4. W sekcji grupy Zdefiniuj grupę zawierającą polecenia dla paska narzędzi.  
   
     ```xml  
   
@@ -68,7 +68,7 @@ W tym instruktażu pokazano, jak dodać pasek narzędzi do okna narzędzi.
     </Group>  
     ```  
   
-5. W sekcji przyciski Zmień nadrzędnego istniejącego elementu przycisk do grupy pasek narzędzi, tak aby zostanie wyświetlony pasek narzędzi.  
+5. W sekcji przyciski Zmień element nadrzędny istniejącego elementu Button na grupę paska narzędzi, aby wyświetlić pasek narzędzi.  
   
     ```xml  
     <Button guid="guidTWTestCommandPackageCmdSet" id="TWTestCommandId" priority="0x0100" type="Button">  
@@ -80,11 +80,11 @@ W tym instruktażu pokazano, jak dodać pasek narzędzi do okna narzędzi.
     </Button>  
     ```  
   
-     Domyślnie jeśli pasek narzędzi ma żadne polecenia nie ma.  
+     Domyślnie, jeśli pasek narzędzi nie ma poleceń, nie jest wyświetlany.  
   
-     Ponieważ nowy pasek narzędzi nie jest automatycznie dodawany do okna narzędzi, można jawnie dodać pasek narzędzi. Ta czynność została omówiona w następnej sekcji.  
+     Ponieważ nowy pasek narzędzi nie jest automatycznie dodawany do okna narzędzi, należy dodać go jawnie. Ta czynność została omówiona w następnej sekcji.  
   
-## <a name="adding-the-toolbar-to-the-tool-window"></a>Dodawanie narzędzi do okna narzędzi  
+## <a name="adding-the-toolbar-to-the-tool-window"></a>Dodawanie paska narzędzi do okna narzędzi  
   
 1. W TWTestCommandPackageGuids.cs Dodaj następujące wiersze.  
   
@@ -99,21 +99,21 @@ W tym instruktażu pokazano, jak dodać pasek narzędzi do okna narzędzi.
     using System.ComponentModel.Design;  
     ```  
   
-3. W Konstruktorze TestToolWindow Dodaj następujący wiersz.  
+3. W konstruktorze TestToolWindow Dodaj następujący wiersz.  
   
     ```csharp  
     this.ToolBar = new CommandID(new Guid(TWTestCommandPackageGuids.guidTWTestCommandPackageCmdSet), TWTestCommandPackageGuids.TWToolbar);  
     ```  
   
-## <a name="testing-the-toolbar-in-the-tool-window"></a>Testowanie na pasku narzędzi w oknie narzędzia  
+## <a name="testing-the-toolbar-in-the-tool-window"></a>Testowanie paska narzędzi w oknie narzędzi  
   
-1. Skompiluj projekt, a następnie rozpocząć debugowanie. Wystąpienie eksperymentalne programu Visual Studio powinny być wyświetlane.  
+1. Skompiluj projekt i Rozpocznij debugowanie. Powinno zostać wyświetlone wystąpienie eksperymentalne programu Visual Studio.  
   
-2. Na **widok / inne Windows** menu, kliknij przycisk **ToolWindow testu** do wyświetlenia okna narzędzia.  
+2. W menu **Widok/inne okna** kliknij pozycję **Testuj ToolWindow** , aby wyświetlić okno narzędzia.  
   
-     Powinien pojawić się narzędzi (wygląda jak ikona domyślna), u góry po lewej części okna narzędzia tuż poniżej tytułu.  
+     Powinien pojawić się pasek narzędzi (wygląda jak ikona domyślna) w lewym górnym rogu okna narzędzi, po prostu pod tytułem.  
   
-3. Na pasku narzędzi kliknij ikonę, aby wyświetlić komunikat **TWTestCommandPackage wewnątrz TWToolbar.TWTestCommand.MenuItemCallback()** .  
+3. Na pasku narzędzi kliknij ikonę, aby wyświetlić komunikat **TWTestCommandPackage wewnątrz TWToolbar. TWTestCommand. MenuItemCallback ()**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md)

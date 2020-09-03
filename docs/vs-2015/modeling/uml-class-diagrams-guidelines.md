@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4f4fd6eed634da3aea956cddca8d2e1ff6220a94
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850185"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagramy klas UML: Zalecenia
@@ -36,7 +36,7 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
 > [!NOTE]
 > Ten temat dotyczy diagramów klas UML. Istnieje inny rodzaj diagramów klas, które można tworzyć i używać w celu wizualizacji kodu programu. Zobacz [projektowanie i wyświetlanie klas i typów](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
-## <a name="Using"></a>Korzystanie z diagramów klas UML
+## <a name="using-uml-class-diagrams"></a><a name="Using"></a> Korzystanie z diagramów klas UML
  Można używać diagramu klas UML do różnych celów:
 
 - Aby dostarczyć niezależny od implementacji opis typów, które są używane w systemie i przekazywane pomiędzy jego składnikami.
@@ -78,7 +78,7 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
 
  Zobacz [diagramy przypadków użycia UML: wytyczne](../modeling/uml-use-case-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a>Podstawowe kroki dotyczące rysowania diagramów klas
+## <a name="basic-steps-for-drawing-class-diagrams"></a><a name="BasicSteps"></a> Podstawowe kroki dotyczące rysowania diagramów klas
  Aby uzyskać informacje referencyjne na temat elementów na diagramach klas UML, zobacz [diagramy klas UML: Reference](../modeling/uml-class-diagrams-reference.md).
 
 > [!NOTE]
@@ -102,7 +102,7 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
 
 2. Aby dodać atrybuty lub operacje do typów lub literałów do wyliczenia, wybierz pozycję **atrybuty**, **operacje** lub **literały** w polu Typ, a następnie naciśnij klawisz ENTER.
 
-     Można napisać podpis, taki jak `f(x:Boolean):Integer`. Zobacz [atrybuty i operacje](#AttributesAndOperations).
+     Można napisać podpis, np `f(x:Boolean):Integer` .. Zobacz [atrybuty i operacje](#AttributesAndOperations).
 
      Aby szybko dodać kilka elementów, naciśnij klawisz ENTER dwa razy na końcu każdego elementu. Można użyć klawiszy strzałek, aby przemieszczać się w górę i w dół listy.
 
@@ -114,7 +114,7 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
 
 6. Każdy diagram jest widokiem modelu, który jest współdzielony przez inne diagramy w tym samym projekcie. Aby wyświetlić widok drzewa kompletnego modelu, wybierz **Widok**, **inne okna**, **Eksplorator modelu UML**.
 
-## <a name="UsingTypes"></a>Korzystanie z klas, interfejsów i wyliczeń
+## <a name="using-classes-interfaces-and-enumerations"></a><a name="UsingTypes"></a> Korzystanie z klas, interfejsów i wyliczeń
  W przyborniku dostępne są trzy standardowe rodzaje klasyfikatorów. Są one określane jako *typy* w całym dokumencie.
 
  ![Klasa, Wyliczenie i interfejs](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")
@@ -123,7 +123,7 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
 
 - **Interfejsy** (2) należy używać w kontekście, w którym należy rozróżnić czyste interfejsy i konkretne klasy, które mają wewnętrzne implementacje. Różnica ta jest przydatna, gdy diagram służy do opisywania implementacji oprogramowania. Mniej przydatna jest, kiedy modelowane są dane pasywne lub kiedy definiuje się koncepcje używane do opisu wymagań użytkownika.
 
-- Użyj **wyliczenia** (3) do reprezentowania typu, który ma ograniczoną liczbę wartości literału, na przykład `Stop` i `Go`.
+- Użyj **wyliczenia** (3) do reprezentowania typu, który ma ograniczoną liczbę wartości literału, na przykład `Stop` i `Go` .
 
   - Dodaj wartości literałów do wyliczenia. Każdemu z nich nadaj odrębną nazwę.
 
@@ -154,7 +154,7 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
 
  Aby utworzyć klasę z linii życia, otwórz menu skrótów dla linii życia, a następnie wybierz polecenie **Utwórz klasę** lub **Utwórz interfejs**. Zobacz [diagramy sekwencji UML: wytyczne](../modeling/uml-sequence-diagrams-guidelines.md).
 
-## <a name="AttributesAndOperations"></a>Atrybuty i operacje
+## <a name="attributes-and-operations"></a><a name="AttributesAndOperations"></a> Atrybuty i operacje
  Atrybut (4) jest nazwaną wartością, którą może mieć każde wystąpienie typu. Dostęp do atrybutu nie zmienia stanu wystąpienia.
 
  Operacja (5) jest metodą albo funkcją, którą wystąpienia danego typu mogą wykonywać. Może zwracać wartość. Jeśli właściwość **IsQuery** ma wartość true, nie można zmienić stanu wystąpienia.
@@ -174,13 +174,13 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
 ### <a name="types-of-attributes-and-operations"></a>Typy atrybutów i operacji
  Każdy *Typ* atrybutu lub operacji, a każdy typ parametru może być jedną z następujących:
 
-- **(brak)** — w podpisie można pozostawić nieokreślony typ, pomijając poprzednią dwukropek (`:`).
+- **(brak)** — można pozostawić nieokreślony typ w podpisie, pomijając poprzedni dwukropek ( `:` ).
 
 - Jeden ze standardowych typów pierwotnych: **Boolean**, **Integer**, **String**.
 
 - Typem zdefiniowanym w modelu.
 
-- Wartość sparametryzowanego typu szablonu, zapisaną\<parametru szablonu >. Zobacz [typy szablonów](#Templates).
+- Wartość sparametryzowanego typu szablonu, który został zapisany \<Parameter> . Zobacz [typy szablonów](#Templates).
 
   Możesz także wpisać nazwę typu, który nie został jeszcze zdefiniowany w modelu. Nazwa zostanie wyświetlona w obszarze **nieokreślone typy** w EKSPLORATORZE modelu UML.
 
@@ -194,7 +194,7 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
 
  `[1]`
 
- Jedną z wartości danego typu. Jest to domyślne ustawienie.
+ Jedną z wartości danego typu. Jest to opcja domyślna.
 
  `[0..1]`
 
@@ -221,13 +221,13 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
 ### <a name="visibility"></a>Widoczność
  *Widoczność* wskazuje, czy do atrybutu lub operacji można uzyskać dostęp poza definicją klasy. Dozwolone są następujące wartości:
 
- **Public**
+ **Publiczne**
 
  **+**
 
  Dostępny dla wszystkich typów.
 
- **Private**
+ **Prywatne**
 
  **-**
 
@@ -239,7 +239,7 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
 
  Dostępny tylko w ramach pakietu zawierającego ten typ oraz w dowolnych innych pakietach, które jawnie go importują. Zobacz [Definiowanie przestrzeni nazw i pakietów](#Packages).
 
- **Protected**
+ **Chronione**
 
  **#**
 
@@ -256,7 +256,7 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
 visibility attribute-name : Type
 ```
 
- \- lub —
+ \- oraz
 
 ```
 visibility operation-name (parameter1 : Type1, ...) : Type
@@ -268,7 +268,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 + AddItem (item : MenuItem, quantity : Integer) : Boolean
 ```
 
- Można użyć krótkiej formy widoczności. Wartość domyślna to `+` (publiczna).
+ Można użyć krótkiej formy widoczności. Wartość domyślna to `+` (Public).
 
  Każdy typ może być typem zdefiniowanym w modelu, typem standardowym, takim jak Integer albo String, lub nazwą nowego typu, który nie został jeszcze zdefiniowany.
 
@@ -330,7 +330,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  Zwykle pełny podpis pojawia się na diagramie tylko podczas jego edytowania. Po zakończeniu edycji dodatkowe właściwości są ukryte. Jeśli chcesz zobaczyć pełny podpis przez cały czas, otwórz menu skrótów dla tego typu, a następnie wybierz polecenie **Pokaż pełną sygnaturę**.
 
-## <a name="Associations"></a>Rysowanie i używanie skojarzeń
+## <a name="drawing-and-using-associations"></a><a name="Associations"></a> Rysowanie i używanie skojarzeń
  Można użyć asocjacji do reprezentacji dowolnego rodzaju powiązania pomiędzy dwoma elementami, niezależnie od tego, jak połączenie jest zaimplementowane w oprogramowaniu. Na przykład można użyć asocjacji do reprezentacji wskaźnika w języku C#, relacji w bazie danych lub odwołania z jednej części pliku XML do innej. Może ona reprezentować asocjacje pomiędzy obiektami w świecie rzeczywistym, takimi jak ziemia i słońce. Asocjacja nie określa, w jaki sposób połączenie jest reprezentowane, określa jedynie, że taka informacja istnieje.
 
 ### <a name="properties-of-an-association"></a>Właściwości asocjacji
@@ -356,18 +356,18 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 ### <a name="attributes-and-associations"></a>Atrybuty i asocjacje
  Asocjacja jest obrazowym sposobem przedstawiania atrybutu. Na przykład, zamiast tworzenia klasy Restauracja z atrybutem typu Menu można narysować asocjację z Restauracji do Menu.
 
- Każda nazwa atrybutu staje się nazwą roli. Pojawia się na przeciwległym końcu asocjacji względem typu, będącego właścicielem. Spójrz na przykład na `myMenu` na ilustracji.
+ Każda nazwa atrybutu staje się nazwą roli. Pojawia się na przeciwległym końcu asocjacji względem typu, będącego właścicielem. Spójrz na przykład na `myMenu` ilustracji.
 
  Ogólnie rzecz biorąc, lepiej jest używać atrybutów tylko dla typów, które nie będą rysowane na diagramie, takich jak typy pierwotne.
 
  ![Równoważne skojarzenie i atrybuty](../modeling/media/uml-classguideattrib.png "UML_ClassGuideAttrib")
 
-## <a name="Inheritance"></a>Strukturze
+## <a name="inheritance"></a><a name="Inheritance"></a> Strukturze
  Użyj narzędzia **dziedziczenie** , aby utworzyć następujące relacje:
 
 - Relacja *generalizacji* między typem wyspecjalizowanym a typem ogólnym
 
-   \- lub —
+   \- oraz
 
 - Relacja *realizacji* między klasą i interfejsem, który implementuje.
 
@@ -405,7 +405,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  ![Realizacja pokazana z conector i lizak](../modeling/media/uml-classguiderealize.png "UML_ClassGuideRealize")
 
-## <a name="Templates"></a>Typy szablonów
+## <a name="template-types"></a><a name="Templates"></a> Typy szablonów
  Można zdefiniować typ generyczny lub szablonu, który może być sparametryzowany poprzez inne typy lub wartości.
 
  Na przykład można utworzyć generyczny Słownik sparametryzowany przez typy klucza i wartości:
@@ -414,7 +414,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
 #### <a name="to-create-a-template-type"></a>Aby utworzyć typ szablonu
 
-1. Utwórz klasę lub interfejs. Będzie to typ szablonu. Nadaj odpowiednio nazwę, na przykład `Dictionary`.
+1. Utwórz klasę lub interfejs. Będzie to typ szablonu. Nadaj odpowiednio nazwę, na przykład `Dictionary` .
 
 2. Otwórz menu skrótów dla nowego typu, a następnie wybierz polecenie **Właściwości**.
 
@@ -422,9 +422,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
     Zostanie wyświetlone okno dialogowe **Edytor kolekcji parametrów szablonu** .
 
-4. Wybierz **Dodaj**.
+4. Wybierz pozycję **Dodaj**.
 
-5. Ustaw właściwość Nazwa na nazwę parametru dla typu szablonu, na przykład `Key`.
+5. Ustaw właściwość Nazwa na nazwę parametru dla typu szablonu, na przykład `Key` .
 
 6. Ustaw **rodzaj parametru**. Wartość domyślna to **Class**.
 
@@ -434,11 +434,11 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
 9. Dodaj atrybuty i operacje do typu szablonu, tak jak w przypadku innych klas.
 
-     Można użyć parametrów, których rodzaj jest **klasą**, **interfejsem** lub **wyliczeniem** w definicji atrybutów i operacji. Na przykład przy użyciu klas parametrów `Key` i `Value`, można zdefiniować tę operację w `Dictionary`:
+     Można użyć parametrów, których rodzaj jest **klasą**, **interfejsem** lub **wyliczeniem** w definicji atrybutów i operacji. Na przykład przy użyciu klas parametrów `Key` i `Value` , można zdefiniować tę operację w `Dictionary` :
 
      `Get(k : Key) : Value`
 
-     Można użyć parametru, którego rodzaj jest **liczbą całkowitą** jako powiązaną w liczebności. Na przykład maksymalna liczba całkowita parametru może służyć do definiowania liczebności atrybutu jako `[0..max]`.
+     Można użyć parametru, którego rodzaj jest **liczbą całkowitą** jako powiązaną w liczebności. Na przykład maksymalna liczba całkowita parametru może służyć do definiowania liczebności atrybutu jako `[0..max]` .
 
    Po utworzeniu typów szablonu, można ich używać do definiowania powiązań szablonów:
 
@@ -446,26 +446,26 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
 #### <a name="to-use-a-template-type"></a>Aby użyć typu szablonu
 
-1. Utwórz nowy typ, na przykład `AddressTable`.
+1. Utwórz nowy typ, na przykład `AddressTable` .
 
 2. Otwórz menu skrótów dla nowego typu, a następnie wybierz polecenie **Właściwości**.
 
-3. We właściwości **powiązanie szablonu** wybierz typ szablonu, na przykład `Dictionary`, z listy rozwijanej.
+3. We właściwości **powiązanie szablonu** wybierz `Dictionary` z listy rozwijanej Typ szablonu, na przykład.
 
 4. Rozwiń Właściwość **powiązania szablonu** .
 
      Dla każdego parametru typu szablonu pojawi się wiersz.
 
-5. Ustaw każdy parametr na odpowiednią wartość. Na przykład ustaw parametr `Key` na klasę o nazwie `Name`.
+5. Ustaw każdy parametr na odpowiednią wartość. Na przykład ustaw `Key` parametr na klasę o nazwie `Name` .
 
-## <a name="Packages"></a>Pakiety
+## <a name="packages"></a><a name="Packages"></a> Pakiety
  Pakiety można przeglądać na diagramie klas UML. Pakiet jest kontenerem dla innych elementów modelu. Można utworzyć dowolny element wewnątrz pakietu. Na diagramie elementy wewnątrz pakietu będą się poruszały podczas przesuwania pakietu.
 
  Można użyć formantu zwiń/rozwiń, aby ukryć lub pokazać zawartość pakietu.
 
  Zobacz [Definiowanie pakietów i przestrzenie nazw](../modeling/define-packages-and-namespaces.md).
 
-## <a name="generating"></a>Generowanie kodu na podstawie diagramów klas UML
+## <a name="generating-code-from-uml-class-diagrams"></a><a name="generating"></a> Generowanie kodu na podstawie diagramów klas UML
  Aby rozpocząć implementację klas na diagramie klas UML, można wygenerować kod w języku C# lub dostosować szablony do generacji kodu. Aby rozpocząć generację kodu przy użyciu dostarczonych szablonów w języku C#:
 
 - Otwórz menu skrótów dla diagramu lub elementu, wybierz polecenie **Generuj kod**, a następnie ustaw niezbędne właściwości.

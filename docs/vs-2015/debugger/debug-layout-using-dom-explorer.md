@@ -19,18 +19,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1a3c9b3a6ae2ed11e8512f8cf8857d27b3d0043b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850076"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Debugowanie układu przy użyciu eksploratora modelu DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Dotyczy systemów Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Na karcie **układ** dom Explorer jest wyświetlany [model pola CSS](https://www.w3.org/TR/CSS2/box.html) dla wybranego elementu w aplikacji [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], aplikacja do sklepu Windows Phone lub aplikacja utworzona przy użyciu Visual Studio Tools dla Apache Cordova. Ta reprezentacja wizualna modelu Box służy do identyfikowania i modyfikowania wartości związanych z układem, które wpływają na wygląd elementów.  
+ Na karcie **układ** dom Explorer jest wyświetlany [model pola CSS](https://www.w3.org/TR/CSS2/box.html) dla wybranego elementu w [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji, aplikacja Windows Phone Store lub aplikacja utworzona przy użyciu Visual Studio Tools dla Apache Cordova. Ta reprezentacja wizualna modelu Box służy do identyfikowania i modyfikowania wartości związanych z układem, które wpływają na wygląd elementów.  
   
 > [!TIP]
 > Zmiany wprowadzane na karcie **Układ** nie są trwałe. Możesz wprowadzać trwałe zmiany w kodzie źródłowym, a następnie odświeżyć aplikację przy użyciu przycisku **Odśwież aplikację systemu** Windows (tylko aplikacje Sklepu windows i Windows Phone sklepu) na pasku narzędzi Debugowanie. W ten sposób można uniknąć ponownego uruchomienia debugera.  
@@ -105,7 +105,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
      Ten widok udostępnia przydatne informacje dotyczące elementu:  
   
-    - Kolory odpowiadają wyróżnieniu pola, które pojawia się w symulatorze, gdy przesuwa się nad elementami. Niebieski kolor reprezentuje \<IMG > wymiarów elementu. Kolor Tan reprezentuje wartości marginesu.  
+    - Kolory odpowiadają wyróżnieniu pola, które pojawia się w symulatorze, gdy przesuwa się nad elementami. Niebieski kolor reprezentuje \<img> Wymiary elementu. Kolor Tan reprezentuje wartości marginesu.  
   
     - Zostanie ustawiony lewy margines (margines lewy), który wskazuje na przyczynę problemu, ponieważ pasuje do objawu (czarny po lewej stronie obrazów).  
   
@@ -114,7 +114,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 11. Aby zobaczyć, jak jest stosowana reguła z lewej strony, wybierz kartę **obliczoną** i poszukaj w obszarze reguła lewej krawędzi. Można zobaczyć, że ta reguła jest ustawiona z wartością 5em, ale obliczoną wartością jest 66.66 px lub 146.66 pikseli, w zależności od urządzenia docelowego.  
   
     > [!TIP]
-    > Karta **obliczona** pokazuje, że w selektorze css jest `..hubpage .hub. section4 .sub-image-row img` ustawiona lewa strona z lewej strony, która znajduje się w pliku Hub. css. W tej aplikacji demonstracyjnej, w której należy wprowadzić poprawkę.  
+    > Karta **obliczona** pokazuje, że w selektorze CSS jest ustawiona lewa strona z marginesem `..hubpage .hub. section4 .sub-image-row img` , którą można znaleźć w pliku Hub. css. W tej aplikacji demonstracyjnej, w której należy wprowadzić poprawkę.  
   
      Możesz również użyć karty **Układ** do testowania modyfikacji wartości układu.  
   
@@ -122,11 +122,11 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
 13. Wpisz polecenie `0` i naciśnij klawisz Enter. (Możesz również zmienić wartość za pomocą klawiszy Strzałka w górę i Strzałka w dół).  
   
-14. Wybierz inne \<IMG > elementy w DOM Explorer i zmień wartości marginesów z lewej strony na 0.  
+14. Zaznacz inne \<img> elementy w Dom Explorer i zmień ich wartości w lewym marginesie na 0.  
   
 15. Przejdź do emulatora telefonu lub symulatora. Zaktualizowane lewe marginesy zostały zastosowane do obrazów sekcji 4. Te wartości są również aktualizowane na karcie **obliczonej** w ramach reguły lewej marginesu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Debuguj Style CSS przy użyciu DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md)   
- [Wyświetlanie odbiorników zdarzeń DOM](../debugger/view-dom-event-listeners.md)
+ [Debugowanie stylów CSS przy użyciu DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md)   
+ [Podgląd odbiorników zdarzeń DOM](../debugger/view-dom-event-listeners.md)

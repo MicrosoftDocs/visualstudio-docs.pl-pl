@@ -1,5 +1,5 @@
 ---
-title: Przełączniki wiersza polecenia (Visual Studio SDK) | Dokumentacja firmy Microsoft
+title: Przełączniki wiersza polecenia (Visual Studio SDK) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,24 +13,24 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea37c105114e915e812a470474ccd8f52609056f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184348"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Przełączniki wiersza polecenia (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Devenv.exe, plik wykonywalny, który uruchamia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE) obsługuje przełączniki wiersza polecenia, w szczególności opracowywania pakietów VSPackage. Pakietów VSPackage można także udostępnić własne przełączniki wiersza polecenia Devenv. Poniższe tematy zawierają informacje o sposobie używania przełączniki wiersza polecenia w środowisku IDE.  
+Devenv.exe, plik wykonywalny, który uruchamia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowane środowisko programistyczne (IDE), obsługuje przełączniki wiersza polecenia przeznaczone do programowania w pakietów VSPackage. Pakietów VSPackage mogą również udostępniać własne przełączniki w wierszu polecenia devenv. W poniższych tematach znajdują się informacje dotyczące używania przełączników wiersza polecenia w środowisku IDE.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Przełączniki wiersza polecenia Devenv dla programowania pakietu VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md)  
- W tym artykule opisano przełączniki wiersza polecenia Devenv, używanej do uproszczenia pakietu VSPackage rozwoju, debugowania i wdrażania.  
+ Opisuje przełączniki wiersza polecenia devenv, których można użyć, aby uprościć tworzenie, debugowanie i wdrażanie pakietu VSPackage.  
   
  [Dodawanie przełączników wiersza polecenia](../extensibility/adding-command-line-switches.md)  
- Opisuje sposób implementacji, poszukaj i przeczytaj użytkownik wprowadził przełączniki wiersza polecenia dla pakietu.  
+ Opisuje sposób implementacji, wyszukiwania i odczytywania przełączników wiersza polecenia wprowadzonych przez użytkownika dla pakietu.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Przełączniki wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md)  
- Wyjaśnia, jak Devenv pozwala ustawić różne opcje środowiska IDE i jak można kompilować, kompilowanie i debugowanie projektów z wiersza polecenia. Ponadto ma informacji o składni Devenv przełączników i tabelę przełączników.
+ Wyjaśnia, w jaki sposób devenv pozwala ustawiać różne opcje środowiska IDE oraz jak kompilować, kompilować i debugować projekty z wiersza polecenia. Ponadto istnieją informacje o składni przełączników devenv i tabeli przełączników.

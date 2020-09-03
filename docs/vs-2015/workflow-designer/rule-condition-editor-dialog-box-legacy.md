@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 00df917b05f5073634b0956a0b44e5b0fc6026a6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846333"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Edytor warunku reguły, okno dialogowe (starsza wersja)
-W tym temacie opisano sposób użycia okna dialogowego **Edytor warunku reguły** w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+W tym temacie opisano sposób użycia okna dialogowego **Edytor warunku reguły** w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Użyj starszej wersji, [!INCLUDE[wfd2](../includes/wfd2-md.md)] gdy musisz być celem [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
  Można tworzyć i modyfikować warunki reguły deklaracyjnej przy użyciu okna dialogowego **Edytor warunku reguły** . Te warunki reguły są udostępniane jako właściwości w następujących Windows Workflow Foundation działaniach gotowych:
 
@@ -31,7 +31,7 @@ W tym temacie opisano sposób użycia okna dialogowego **Edytor warunku reguły*
 
 - [Działanie ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx)
 
-- [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
+- [While](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
 
 - [SequentialWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequentialworkflowactivity.aspx)
 
@@ -47,23 +47,23 @@ W tym temacie opisano sposób użycia okna dialogowego **Edytor warunku reguły*
 |**OK**|Kliknij, aby zapisać warunek reguły.|
 
 ## <a name="entering-condition-expressions"></a>Wprowadzanie wyrażeń warunku
- Wyrażenia warunku są wprowadzane jako tekst. Możesz to wpisać **.** do edytora, aby odwoływać się do pól, właściwości i metod używanych w przepływie pracy przy użyciu menu IntelliSense. Lub można wpisać bezpośrednio nazwę elementu członkowskiego przepływu pracy. Można dodać operatory logiczne do warunku, takie jak i, lub, i nie. Można również dodać predykaty. Predykat jest operatorem binarnym i dwoma operandami. Obsługiwane operatory binarne to **==** , **>** , **\<** , **>=** i **<=** . Obsługiwane argumenty operacji to stała wartość, funkcja arytmetyczna i publiczne elementy członkowskie z zakresem.
+ Wyrażenia warunku są wprowadzane jako tekst. Możesz to wpisać **.** do edytora, aby odwoływać się do pól, właściwości i metod używanych w przepływie pracy przy użyciu menu IntelliSense. Lub można wpisać bezpośrednio nazwę elementu członkowskiego przepływu pracy. Można dodać operatory logiczne do warunku, takie jak i, lub, i nie. Można również dodać predykaty. Predykat jest operatorem binarnym i dwoma operandami. Obsługiwane operatory binarne to **==** , **>** , **\<**, **>=** , i **<=** . Obsługiwane argumenty operacji to stała wartość, funkcja arytmetyczna i publiczne elementy członkowskie z zakresem.
 
- Można określić typ porównania i można ją porównać z **wartością null** lub ciągiem pustym. Można wykonywać zagnieżdżone wywołania do elementów członkowskich na zmiennej, która zawiera typ złożony, na przykład `this.Address.State == "WA"`.
+ Można określić typ porównania i można ją porównać z **wartością null** lub ciągiem pustym. Można wykonywać zagnieżdżone wywołania do elementów członkowskich na zmiennej, która zawiera typ złożony, na przykład `this.Address.State == "WA"` .
 
  Edytor warunku reguły obsługuje następujące operatory:
 
 - Operatory relacyjne: = =, =,! =
 
-- Operatory porównania: <, \<=, >, > =
+- Operatory porównania: <, \<=, > , >=
 
 - Operatory arytmetyczne: +,-, *,/, MOD
 
-- Operatory logiczne: i, & &, lub, &#124; &#124;, nie,!
+- Operatory logiczne: i,  &&, lub,  &#124;&#124;, NOT,!
 
-- Operatory bitowe: &,&#124;
+- Operatory bitowe: &, &#124;
 
-  Pierwszeństwo operatorów wyrażeń C# następuje po regułach pierwszeństwa operatorów.
+  Kolejność operatorów wyrażeń jest zgodna z regułami pierwszeństwa operatorów języka C#.
 
   Edytor warunku reguły obsługuje następujące wyrażenia liczbowe:
 
@@ -82,4 +82,4 @@ W tym temacie opisano sposób użycia okna dialogowego **Edytor warunku reguły*
   Aby uzyskać więcej informacji o warunkach, zobacz [Używanie warunków w przepływach pracy](https://msdn2.microsoft.com/library/bb628447.aspx).
 
 ## <a name="see-also"></a>Zobacz też
- [IfElseActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelseactivity.aspx) [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx) [](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx) [](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx) — [okno dialogowe wyboru stanu (starsza wersja)](../workflow-designer/select-condition-dialog-box-legacy.md) [użycie warunków w obszarze przepływy pracy](https://msdn2.microsoft.com/library/bb628447.aspx) [starszego projektanta dla pomocy interfejsu użytkownika Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [IfElseActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelseactivity.aspx) [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx) [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx) [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx) — [okno dialogowe wyboru stanu (starsza wersja)](../workflow-designer/select-condition-dialog-box-legacy.md) [użycie warunków w obszarze przepływy pracy](https://msdn2.microsoft.com/library/bb628447.aspx) [starszego projektanta dla pomocy interfejsu użytkownika Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

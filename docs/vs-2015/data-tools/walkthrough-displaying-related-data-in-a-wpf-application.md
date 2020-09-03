@@ -20,16 +20,16 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 8116d4ab4a2f20f79f3849ae7f8b324af9832dd5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850239"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Wskazówki: wyświetlanie powiązanych danych w aplikacji WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym instruktażu utworzysz aplikację WPF, która będzie wyświetlać dane z tabel bazy danych, które mają relację nadrzędny/podrzędny. Dane są hermetyzowane w jednostkach w Entity Data Model. Jednostka nadrzędna zawiera przegląd informacji dotyczących zestawu zamówień. Każda właściwość tej jednostki jest powiązana z inną kontrolką w aplikacji. Jednostka podrzędna zawiera szczegóły dotyczące poszczególnych zamówień. Ten zestaw danych jest powiązany z kontrolką <xref:System.Windows.Controls.DataGrid>.
+W tym instruktażu utworzysz aplikację WPF, która będzie wyświetlać dane z tabel bazy danych, które mają relację nadrzędny/podrzędny. Dane są hermetyzowane w jednostkach w Entity Data Model. Jednostka nadrzędna zawiera przegląd informacji dotyczących zestawu zamówień. Każda właściwość tej jednostki jest powiązana z inną kontrolką w aplikacji. Jednostka podrzędna zawiera szczegóły dotyczące poszczególnych zamówień. Ten zestaw danych jest powiązany z <xref:System.Windows.Controls.DataGrid> kontrolką.
 
  W instruktażu przedstawiono następujące zagadnienia:
 
@@ -37,7 +37,7 @@ W tym instruktażu utworzysz aplikację WPF, która będzie wyświetlać dane z 
 
 - Tworzenie zestawu formantów powiązanych z danymi, które wyświetlają przegląd informacji dla zestawu zamówień. Kontrolki można tworzyć, przeciągając jednostkę nadrzędną z okna **źródła danych** do **projektanta WPF**.
 
-- Tworzenie kontrolki <xref:System.Windows.Controls.DataGrid>, która wyświetla powiązane szczegóły dla każdej zaznaczonej kolejności. Kontrolki można tworzyć, przeciągając jednostkę podrzędną z okna **źródła danych** do okna w **projektancie WPF**.
+- Tworzenie <xref:System.Windows.Controls.DataGrid> kontrolki, która wyświetla powiązane szczegóły dla każdej wybranej kolejności. Kontrolki można tworzyć, przeciągając jednostkę podrzędną z okna **źródła danych** do okna w **projektancie WPF**.
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
@@ -65,9 +65,9 @@ W tym instruktażu utworzysz aplikację WPF, która będzie wyświetlać dane z 
 
 2. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
 
-3. Rozwiń **element C# Visual** lub **Visual Basic**, a następnie wybierz pozycję **Windows**.
+3. Rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **Windows**.
 
-4. Upewnij się, że w polu kombi w górnej części okna dialogowego została wybrana wartość **.NET Framework 4** . Formant <xref:System.Windows.Controls.DataGrid> używany w tym instruktażu jest dostępny tylko w .NET Framework 4.
+4. Upewnij się, że w polu kombi w górnej części okna dialogowego została wybrana wartość **.NET Framework 4** . <xref:System.Windows.Controls.DataGrid>Kontrolka, która jest używana w tym instruktażu, jest dostępna tylko w .NET Framework 4.
 
 5. Wybierz szablon projektu **aplikacji WPF** .
 
@@ -75,7 +75,7 @@ W tym instruktażu utworzysz aplikację WPF, która będzie wyświetlać dane z 
 
 7. Kliknij przycisk **OK**.
 
-     Program Visual Studio tworzy projekt `AdventureWorksOrdersViewer`.
+     Program Visual Studio tworzy `AdventureWorksOrdersViewer` projekt.
 
 ## <a name="creating-an-entity-data-model-for-the-application"></a>Tworzenie Entity Data Model dla aplikacji
  Aby można było tworzyć kontrolki powiązane z danymi, należy zdefiniować model danych dla aplikacji i dodać go do okna **źródła danych** . W tym instruktażu modelem danych jest Entity Data Model.
@@ -94,11 +94,11 @@ W tym instruktażu utworzysz aplikację WPF, która będzie wyświetlać dane z 
 
    - Jeśli połączenie danych z przykładową bazą danych AdventureWorksLT jest dostępne na liście rozwijanej, wybierz ją.
 
-      lub
+      -lub-
 
    - Kliknij pozycję **nowe połączenie** i Utwórz połączenie z bazą danych AdventureWorksLT.
 
-     Upewnij się, że wybrano opcję **Zapisz ustawienia połączenia jednostki w pliku App. config jako** opcja, a następnie kliknij przycisk **dalej**.
+     Upewnij się, że zaznaczono opcję **Zapisz ustawienia połączenia jednostki w App.Config jako** opcja, a następnie kliknij przycisk **dalej**.
 
 6. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele**, a następnie wybierz następujące tabele:
 
@@ -111,7 +111,7 @@ W tym instruktażu utworzysz aplikację WPF, która będzie wyświetlać dane z 
 8. Skompiluj projekt.
 
 ## <a name="creating-data-bound-controls-that-display-the-orders"></a>Tworzenie kontrolek powiązanych z danymi, które wyświetlają zamówienia
- Utwórz kontrolki, które wyświetlają rekordy kolejności, przeciągając jednostkę `SalesOrderHeaders` z okna **źródła danych** do projektanta WPF.
+ Utwórz kontrolki, które wyświetlają rekordy kolejności, przeciągając `SalesOrderHeaders` jednostkę z okna **źródła danych** do projektanta WPF.
 
 #### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>Aby utworzyć kontrolki powiązane z danymi, które wyświetlają rekordy zamówienia
 
@@ -143,7 +143,7 @@ W tym instruktażu utworzysz aplikację WPF, która będzie wyświetlać dane z 
 
    - **TaxAmt**
 
-   - **Opłaty**
+   - **Freight**
 
    - **danej**
 
@@ -160,7 +160,7 @@ W tym instruktażu utworzysz aplikację WPF, która będzie wyświetlać dane z 
 9. W oknie **Właściwości** zaznacz pole wyboru obok właściwości **IsReadOnly** .
 
 ## <a name="creating-a-datagrid-that-displays-the-order-details"></a>Tworzenie elementu DataGrid wyświetlającego szczegóły zamówienia
- Utwórz kontrolkę <xref:System.Windows.Controls.DataGrid>, która wyświetla szczegóły kolejności, przeciągając jednostkę `SalesOrderDetails` z okna **źródła danych** do projektanta WPF.
+ Utwórz <xref:System.Windows.Controls.DataGrid> kontrolkę wyświetlającą szczegóły kolejności, przeciągając `SalesOrderDetails` jednostkę z okna **źródła danych** do projektanta WPF.
 
 #### <a name="to-create-a-datagrid-that-displays-the-order-details"></a>Aby utworzyć element DataGrid, który wyświetla szczegóły zamówienia
 
@@ -181,11 +181,11 @@ W tym instruktażu utworzysz aplikację WPF, która będzie wyświetlać dane z 
 
    - **ModifiedDate**
 
-     Ta akcja uniemożliwia programowi Visual Studio uwzględnienie tych danych w kontrolce <xref:System.Windows.Controls.DataGrid> utworzonej w następnym kroku. W tym przewodniku przyjęto założenie, że użytkownik końcowy nie musi widzieć tych danych.
+     Ta akcja uniemożliwia programowi Visual Studio uwzględnienie tych danych w <xref:System.Windows.Controls.DataGrid> formancie tworzonym w następnym kroku. W tym przewodniku przyjęto założenie, że użytkownik końcowy nie musi widzieć tych danych.
 
 4. W oknie **źródła danych** przeciągnij podrzędny węzeł **SalesOrderDetails** do okna w **projektancie WPF**.
 
-    Program Visual Studio generuje kod XAML, aby zdefiniować nową kontrolkę <xref:System.Windows.Controls.DataGrid> powiązaną z danymi, a kontrolka pojawi się w projektancie. Program Visual Studio aktualizuje także wygenerowaną metodę `GetSalesOrderHeadersQuery` w pliku związanym z kodem, aby uwzględnić dane w jednostce **SalesOrderDetails** .
+    Program Visual Studio generuje kod XAML, aby zdefiniować nową kontrolkę powiązaną z danymi <xref:System.Windows.Controls.DataGrid> , a kontrolka pojawi się w projektancie. Program Visual Studio aktualizuje także wygenerowaną `GetSalesOrderHeadersQuery` metodę w pliku związanym z kodem, aby uwzględnić dane w jednostce **SalesOrderDetails** .
 
 ## <a name="testing-the-application"></a>Testowanie aplikacji
  Skompiluj i uruchom aplikację, aby sprawdzić, czy są wyświetlane rekordy zamówienia.
@@ -198,7 +198,7 @@ W tym instruktażu utworzysz aplikację WPF, która będzie wyświetlać dane z 
 
     - Pole kombi **Identyfikator zamówienia sprzedaży** zawiera **71774**. Jest to pierwszy identyfikator zamówienia w jednostce.
 
-    - Dla każdego zamówienia wybieranego w polu kombi **Identyfikator zamówienia sprzedaży** w <xref:System.Windows.Controls.DataGrid>są wyświetlane szczegółowe informacje o kolejności.
+    - Dla każdego zamówienia wybieranego w polu kombi **Identyfikator zamówienia sprzedaży** zostanie wyświetlone szczegółowe informacje o kolejności <xref:System.Windows.Controls.DataGrid> .
 
 2. Zamknij aplikację.
 

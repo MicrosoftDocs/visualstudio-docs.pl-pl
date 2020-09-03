@@ -1,5 +1,5 @@
 ---
-title: Assembly — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Assembly — element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,22 +14,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 10c894f3507ae760624b6ae18f785aae6016cd5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184707"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Określa informacje o zestawie używany w tym szablonie, aby dodać odwołanie do tego zestawu do projektów.  
+Określa informacje dotyczące zestawu, którego szablon używa do dodawania odwołania do tego zestawu do projektów.  
   
  \<VSTemplate>  
  \<TemplateContent>  
- \<Odwołania >  
- \<Odwołanie >  
- \<Zestaw >  
+ \<References>  
+ \<Reference>  
+ \<Assembly>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -50,14 +50,14 @@ Określa informacje o zestawie używany w tym szablonie, aby dodać odwołanie d
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Dokumentacja](../extensibility/reference-element-visual-studio-templates.md)|Określa odwołanie do zestawu do dodania, gdy element zostanie dodany do projektu.|  
+|[Odwołanie](../extensibility/reference-element-visual-studio-templates.md)|Określa odwołanie do zestawu, które ma zostać dodane, gdy element zostanie dodany do projektu.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- Ten tekst Określa zestaw do dodania do projektu przy tworzeniu wystąpienia szablonu elementu. Ta nazwa zestawu musi być określona w jednym z następujących sposobów:  
+ Ten tekst Określa zestaw, który ma zostać dodany do projektu po utworzeniu wystąpienia szablonu elementu. Ta nazwa zestawu musi być określona w jeden z następujących sposobów:  
   
-- Jako nazwę pełnego zestawu. Na przykład:  
+- Jako pełna nazwa zestawu. Na przykład:  
   
     ```  
     <Assembly>  
@@ -65,19 +65,19 @@ Określa informacje o zestawie używany w tym szablonie, aby dodać odwołanie d
     </Assembly>  
     ```  
   
-- Jako odwołanie do zwykłego tekstu. Na przykład:  
+- Jako proste odwołanie do tekstu. Na przykład:  
   
     ```  
     <Assembly> System </Assembly>  
     ```  
   
 ## <a name="remarks"></a>Uwagi  
- `Assembly` jest wymaganym elementem podrzędnym elementu `Reference`.  
+ `Assembly` jest wymaganym elementem podrzędnym `Reference` .  
   
- `Reference`, `References,` i `Assembly` elementów należy używać tylko w plikach .vstemplate, które mają `Type` wartość atrybutu `Item`.  
+ `Reference` `References,` `Assembly` Elementy i mogą być używane tylko w plikach. vstemplate, które mają `Type` wartość atrybutu `Item` .  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie pokazano `TemplateContent` element szablon elementu. Poniższy kod XML dodaje odwołania do zestawów: System.dll i System.Data.dll.  
+ Poniższy przykład ilustruje `TemplateContent` element szablonu elementu. Ten kod XML dodaje odwołania do zestawów System.dll i System.Data.dll.  
   
 ```  
 <TemplateContent>  
@@ -98,5 +98,5 @@ Określa informacje o zestawie używany w tym szablonie, aby dodać odwołanie d
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

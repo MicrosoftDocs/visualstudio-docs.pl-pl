@@ -19,28 +19,28 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3589f409efe2a104391eb62f939ef76d140e5224
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850142"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane z danymi. Formanty są powiązane z rekordami klientów, które są hermetyzowane w [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]. Dodasz również przyciski, za pomocą których klienci mogą wyświetlać i aktualizować rekordy.
+W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane z danymi. Formanty są powiązane z rekordami klientów, które są hermetyzowane w [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] . Dodasz również przyciski, za pomocą których klienci mogą wyświetlać i aktualizować rekordy.
 
  W instruktażu przedstawiono następujące zagadnienia:
 
 - Tworzenie Entity Data Model wygenerowanego na podstawie danych z przykładowej bazy danych AdventureWorksLT.
 
-- Tworzenie [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], która uwidacznia dane w Entity Data Model do aplikacji WPF.
+- Tworzenie [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] , które uwidacznia dane w Entity Data Model w aplikacji WPF.
 
 - Tworzenie zestawu formantów powiązanych z danymi przez przeciąganie elementów z okna **źródła danych** do projektanta WPF.
 
 - Tworzenie przycisków przechodzenia do przodu i do tyłu przez rekordy klientów.
 
-- Tworzenie przycisku, który zapisuje zmiany danych w kontrolkach do [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] i bazowego źródła danych.
+- Tworzenie przycisku, który zapisuje zmiany danych w kontrolkach do [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] i bazowe źródło danych.
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
@@ -55,7 +55,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 - Usługi danych programu WCF. Aby uzyskać więcej informacji, zobacz [Omówienie](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
 
-- Modele danych w [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].
+- Modele danych w programie [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] .
 
 - Modele danych jednostek i Entity Framework ADO.NET. Aby uzyskać więcej informacji, zobacz [Entity Framework przegląd](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).
 
@@ -64,7 +64,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 - Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz temat [powiązanie danych — omówienie](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
 ## <a name="create-the-service-project"></a>Tworzenie projektu usługi
- Rozpocznij ten przewodnik, tworząc projekt dla [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
+ Rozpocznij ten przewodnik, tworząc projekt dla elementu [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] .
 
 #### <a name="to-create-the-service-project"></a>Aby utworzyć projekt usługi
 
@@ -72,18 +72,18 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 2. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
 
-3. Rozwiń **pozycję C# Wizualizacja** lub **Visual Basic**, a następnie wybierz pozycję **Sieć Web**.
+3. Rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **Sieć Web**.
 
 4. Wybierz szablon projektu **aplikacji sieci Web ASP.NET** .
 
 5. W polu **Nazwa** wpisz `AdventureWorksService` i kliknij przycisk **OK**.
 
-     Program Visual Studio tworzy projekt `AdventureWorksService`.
+     Program Visual Studio tworzy `AdventureWorksService` projekt.
 
 6. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **default. aspx** i wybierz pozycję **Usuń**. Ten plik nie jest konieczny w tym instruktażu.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Tworzenie Entity Data Model dla usługi
- Aby udostępnić dane aplikacji przy użyciu [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], należy zdefiniować model danych dla usługi. [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] obsługuje dwa typy modeli danych: modele danych jednostek i niestandardowe modele danych, które są zdefiniowane przy użyciu obiektów środowiska uruchomieniowego języka wspólnego (CLR), które implementują interfejs <xref:System.Linq.IQueryable%601>. W tym instruktażu utworzysz Entity Data Model dla modelu danych.
+ Aby udostępnić dane aplikacji przy użyciu programu [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] , należy zdefiniować model danych dla usługi. [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]Obsługuje dwa typy modeli danych: modele danych jednostek i niestandardowe modele danych, które są zdefiniowane za pomocą obiektów środowiska uruchomieniowego języka wspólnego (CLR), które implementują <xref:System.Linq.IQueryable%601> interfejs. W tym instruktażu utworzysz Entity Data Model dla modelu danych.
 
 #### <a name="to-create-an-entity-data-model"></a>Aby utworzyć Entity Data Model
 
@@ -91,7 +91,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 2. Na liście zainstalowane szablony kliknij pozycję **dane**, a następnie wybierz element projektu **ADO.NET Entity Data Model** .
 
-3. Zmień nazwę na `AdventureWorksModel.edmx`, a następnie kliknij przycisk **Dodaj**.
+3. Zmień nazwę na `AdventureWorksModel.edmx` , a następnie kliknij przycisk **Dodaj**.
 
      Zostanie otwarty Kreator **Entity Data Model** .
 
@@ -103,14 +103,14 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
     - Kliknij pozycję **nowe połączenie**i Utwórz połączenie z bazą danych AdventureWorksLT.
 
-6. Na stronie **Wybierz połączenie danych** upewnij się, że opcja **Zapisz ustawienia połączenia jednostki w pliku App. config** jest zaznaczona, a następnie kliknij przycisk **dalej**.
+6. Na stronie **Wybierz połączenie danych** upewnij się, że zaznaczone jest pole **Zapisz ustawienia połączenia jednostki w App.Config jako** opcja, a następnie kliknij przycisk **dalej**.
 
 7. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele**, a następnie wybierz tabelę **SalesOrderHeader** .
 
 8. Kliknij przycisk **Zakończ**.
 
 ## <a name="create-the-service"></a>Tworzenie usługi
- Utwórz [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], aby udostępnić dane Entity Data Model do aplikacji WPF.
+ Utwórz element, [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] Aby uwidocznić dane w Entity Data Model w aplikacji WPF.
 
 #### <a name="to-create-the-service"></a>Aby utworzyć usługę
 
@@ -118,7 +118,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 2. Na liście zainstalowane szablony kliknij pozycję **Sieć Web**, a następnie wybierz element projekt **usługi danych programu WCF** .
 
-3. W polu **Nazwa** wpisz `AdventureWorksService.svc`, a następnie kliknij przycisk **Dodaj**.
+3. W polu **Nazwa** wpisz `AdventureWorksService.svc` , a następnie kliknij przycisk **Dodaj**.
 
      Program Visual Studio dodaje `AdventureWorksService.svc` do projektu.
 
@@ -127,31 +127,31 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 #### <a name="to-configure-the-service"></a>Aby skonfigurować usługę
 
-1. W pliku kodu `AdventureWorks.svc` Zastąp deklarację klasy `AdventureWorksService` poniższym kodem.
+1. W `AdventureWorks.svc` pliku kodu Zastąp `AdventureWorksService` deklarację klasy poniższym kodem.
 
      [!code-csharp[Data_WPFWCF#1](../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworksservice.svc.cs#1)]
      [!code-vb[Data_WPFWCF#1](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworksservice.svc.vb#1)]
 
-     Ten kod aktualizuje klasę `AdventureWorksService`, tak aby dziedziczyć z <xref:System.Data.Services.DataService%601>, który działa na klasie `AdventureWorksLTEntities` kontekstu obiektów w Entity Data Model. Aktualizuje także metodę `InitializeService`, aby umożliwić klientom usługi pełny dostęp do odczytu/zapisu do jednostki `SalesOrderHeader`.
+     Ten kod aktualizuje `AdventureWorksService` klasę, tak aby dziedziczyć z <xref:System.Data.Services.DataService%601> `AdventureWorksLTEntities` klasy kontekstu obiektów w Entity Data Model. Aktualizuje także metodę, `InitializeService` Aby umożliwić klientom usługi pełny dostęp do odczytu/zapisu do `SalesOrderHeader` jednostki.
 
 2. Skompiluj projekt i sprawdź, czy nie ma błędów.
 
 ## <a name="create-the-wpf-client-application"></a>Tworzenie aplikacji klienckiej WPF
- Aby wyświetlić dane z [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], Utwórz nową aplikację WPF ze źródłem danych opartym na usłudze. W dalszej części tego instruktażu dodasz kontrolki powiązane z danymi do aplikacji.
+ Aby wyświetlić dane z programu [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] , Utwórz nową aplikację WPF ze źródłem danych opartym na usłudze. W dalszej części tego instruktażu dodasz kontrolki powiązane z danymi do aplikacji.
 
 #### <a name="to-create-the-wpf-client-application"></a>Aby utworzyć aplikację kliencką WPF
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie, kliknij polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
-2. W oknie dialogowym **Nowy projekt** rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic**, a następnie wybierz pozycję **Windows**.
+2. W oknie dialogowym **Nowy projekt** rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **Windows**.
 
 3. Wybierz szablon projektu **aplikacji WPF** .
 
-4. W polu **Nazwa** wpisz `AdventureWorksSalesEditor`i kliknij przycisk **OK**.
+4. W polu **Nazwa** wpisz `AdventureWorksSalesEditor` , a następnie kliknij przycisk **OK**.
 
-     Program Visual Studio dodaje projekt `AdventureWorksSalesEditor` do rozwiązania.
+     Program Visual Studio dodaje `AdventureWorksSalesEditor` projekt do rozwiązania.
 
-5. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+5. W menu **dane** kliknij przycisk **Pokaż źródła danych**.
 
      Zostanie otwarte okno **źródła danych** .
 
@@ -165,7 +165,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
      Program Visual Studio przeszukuje bieżące rozwiązanie pod kątem dostępnych usług i dodaje `AdventureWorksService.svc` do listy dostępnych usług w polu **usługi** .
 
-9. W polu **przestrzeń nazw** wpisz `AdventureWorksService`.
+9. W polu **przestrzeń nazw** wpisz `AdventureWorksService` .
 
 10. W polu **usługi** kliknij pozycję **AdventureWorksService. svc**, a następnie kliknij przycisk **OK**.
 
@@ -184,7 +184,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
      Okno zostanie otwarte w projektancie WPF.
 
-2. W widoku [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] projektanta Dodaj następujący kod między tagami `<Grid>`:
+2. W [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] widoku projektanta Dodaj następujący kod między `<Grid>` tagami:
 
     ```
     <Grid.RowDefinitions>
@@ -199,7 +199,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 3. Skompiluj projekt.
 
 ## <a name="create-the-data-bound-controls"></a>Tworzenie formantów powiązanych z danymi
- Utwórz kontrolki, które wyświetlają rekordy klientów, przeciągając węzeł `SalesOrderHeaders` z okna **źródła danych** do projektanta.
+ Utwórz kontrolki, które wyświetlają rekordy klientów, przeciągając `SalesOrderHeaders` węzeł z okna **źródła danych** do projektanta.
 
 #### <a name="to-create-the-data-bound-controls"></a>Aby utworzyć formanty powiązane z danymi
 
@@ -238,11 +238,11 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
    - **Numer zamówienia sprzedaży**
 
 ## <a name="load-the-data-from-the-service"></a>Ładowanie danych z usługi
- Użyj obiektu serwera proxy usługi, aby załadować dane sprzedaży z usługi. Następnie przypisz zwrócone dane do źródła danych dla <xref:System.Windows.Data.CollectionViewSource> w oknie WPF.
+ Użyj obiektu serwera proxy usługi, aby załadować dane sprzedaży z usługi. Następnie przypisz zwrócone dane do źródła danych <xref:System.Windows.Data.CollectionViewSource> w oknie WPF.
 
 #### <a name="to-load-the-data-from-the-service"></a>Aby załadować dane z usługi
 
-1. W projektancie, aby utworzyć procedurę obsługi zdarzeń `Window_Loaded`, kliknij dwukrotnie tekst, który odczytuje: **MainWindow**.
+1. W projektancie, aby utworzyć `Window_Loaded` program obsługi zdarzeń, kliknij dwukrotnie tekst, który odczytuje: **MainWindow**.
 
 2. Zastąp procedurę obsługi zdarzeń poniższym kodem. Upewnij się, że adres *localhost* jest zastępowany w tym kodzie adresem hosta lokalnego na komputerze deweloperskim.
 
@@ -250,24 +250,24 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
      [!code-vb[Data_WPFWCF#2](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#2)]
 
 ## <a name="navigatesales-records"></a>Navigatesales rekordy
- Dodaj kod, który umożliwia użytkownikom przewijanie rekordów sprzedaży przy użyciu przycisków **\<** i **>** .
+ Dodaj kod, który umożliwia użytkownikom przewijanie rekordów sprzedaży przy użyciu **\<** and **>** przycisków.
 
 #### <a name="to-enable-users-to-navigate-sales-records"></a>Aby umożliwić użytkownikom nawigowanie po rekordach sprzedaży
 
-1. W projektancie kliknij dwukrotnie przycisk **<** na powierzchni okna.
+1. W projektancie kliknij dwukrotnie **<** przycisk na powierzchni okna.
 
-     Program Visual Studio otwiera plik związany z kodem i tworzy nowy program obsługi zdarzeń `backButton_Click` dla zdarzenia <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.
+     Program Visual Studio otwiera plik związany z kodem i tworzy nowy `backButton_Click` program obsługi zdarzeń dla <xref:System.Windows.Controls.Primitives.ButtonBase.Click> zdarzenia.
 
-2. Dodaj następujący kod do wygenerowanego programu obsługi zdarzeń `backButton_Click`:
+2. Dodaj następujący kod do wygenerowanego `backButton_Click` programu obsługi zdarzeń:
 
      [!code-csharp[Data_WPFWCF#3](../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs#3)]
      [!code-vb[Data_WPFWCF#3](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#3)]
 
-3. Wróć do projektanta i kliknij dwukrotnie przycisk **>** .
+3. Wróć do projektanta i kliknij dwukrotnie **>** przycisk.
 
-     Program Visual Studio otwiera plik związany z kodem i tworzy nowy program obsługi zdarzeń `nextButton_Click` dla zdarzenia <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.
+     Program Visual Studio otwiera plik związany z kodem i tworzy nowy `nextButton_Click` program obsługi zdarzeń dla <xref:System.Windows.Controls.Primitives.ButtonBase.Click> zdarzenia.
 
-4. Dodaj następujący kod do wygenerowanego programu obsługi zdarzeń `nextButton_Click`:
+4. Dodaj następujący kod do wygenerowanego `nextButton_Click` programu obsługi zdarzeń:
 
      [!code-csharp[Data_WPFWCF#4](../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs#4)]
      [!code-vb[Data_WPFWCF#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#4)]
@@ -279,9 +279,9 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 1. W projektancie kliknij dwukrotnie przycisk **Zapisz zmiany** .
 
-     Program Visual Studio otwiera plik związany z kodem i tworzy nowy program obsługi zdarzeń `saveButton_Click` dla zdarzenia <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.
+     Program Visual Studio otwiera plik związany z kodem i tworzy nowy `saveButton_Click` program obsługi zdarzeń dla <xref:System.Windows.Controls.Primitives.ButtonBase.Click> zdarzenia.
 
-2. Dodaj następujący kod do programu obsługi zdarzeń `saveButton_Click`.
+2. Dodaj następujący kod do `saveButton_Click` programu obsługi zdarzeń.
 
      [!code-csharp[Data_WPFWCF#5](../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs#5)]
      [!code-vb[Data_WPFWCF#5](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#5)]
@@ -305,7 +305,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
     - Pola tekstowe wyświetlają różne pola danych z pierwszego rekordu sprzedaży, który ma numer zamówienia sprzedaży **71774**.
 
-    - Możesz kliknąć przycisk **>** lub **<** , aby nawigować po innych rekordach sprzedaży.
+    - Możesz kliknąć przycisk **>** lub, **<** Aby nawigować po innych rekordach sprzedaży.
 
 5. W jednym z rekordów sprzedaży wpisz tekst w polu **komentarz** , a następnie kliknij przycisk **Zapisz zmiany**.
 

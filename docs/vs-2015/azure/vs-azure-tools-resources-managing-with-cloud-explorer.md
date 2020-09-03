@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
 ms.openlocfilehash: 64d60c3a18338956d4d34b0406fff061970d2974
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850010"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Zarządzanie zasobami skojarzonymi z kontami platformy Azure w narzędziu Visual Studio Cloud Explorer
@@ -30,7 +30,7 @@ Podobnie jak [Azure Portal](https://portal.azure.com/), Eksplorator chmury jest 
 * Konto Microsoft Azure — Jeśli nie masz konta, możesz [zarejestrować się w celu uzyskania bezpłatnej wersji próbnej](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) lub [aktywować korzyści dla subskrybentów programu Visual Studio](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
 
 > [!NOTE]
-> Aby wyświetlić program Cloud Explorer, wybierz pozycję **wyświetl** > **Cloud Explorer** na pasku menu.
+> Aby wyświetlić program Cloud Explorer, wybierz pozycję **Wyświetl**  >  **Eksploratora chmury** na pasku menu.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Dodawanie konta platformy Azure do programu Cloud Explorer
 

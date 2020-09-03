@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 06e83e254cad77d4ede9716a18a51f6476fb51ad
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850183"
 ---
 # <a name="uml-class-diagrams-reference"></a>Diagramy klas UML: Odwołanie
@@ -56,30 +56,30 @@ Diagram klas UML zawiera opis obiektów i struktur informacji używanych przez a
 
   ![Trzy klasy pokazujące relacje i właściwości](../modeling/media/uml-classovreading.png "UML_ClassOvReading")
 
-| **Przekształca** |       **Element**        |                                                                                                                                                             **Opis**                                                                                                                                                              |
+| **Kształt** |       **Element**        |                                                                                                                                                             **Opis**                                                                                                                                                              |
 |-----------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     1     |        **Class**         |                                                           Definicja obiektów, które współdzielą dane strukturalne lub behawioralne. Aby uzyskać więcej informacji, zobacz [Właściwości typów w diagramach klas UML](../modeling/properties-of-types-on-uml-class-diagrams.md).                                                            |
+|     1     |        **Klasa**         |                                                           Definicja obiektów, które współdzielą dane strukturalne lub behawioralne. Aby uzyskać więcej informacji, zobacz [Właściwości typów w diagramach klas UML](../modeling/properties-of-types-on-uml-class-diagrams.md).                                                            |
 |     1     |        Klasyfikator        |                                                                                                             Nazwa ogólna dla klasy, interfejsu lub wyliczenia. Składniki, przypadki użycia i aktory są również klasyfikatorami.                                                                                                             |
 |     2     | Zwiń/rozwiń kontrolkę |                                                                                         Jeśli nie widzisz szczegółów klasyfikatora, kliknij Ekspander w lewym górnym rogu klasyfikatora. Może być również konieczne kliknięcie [+] w każdym segmencie.                                                                                         |
 |     3     |      **Atrybut**       |   Wpisana wartość dołączona do każdego wystąpienia klasyfikatora.<br /><br /> Aby dodać atrybut, kliknij sekcję **atrybuty** , a następnie naciśnij klawisz **Enter**. Wpisz podpis atrybutu. Aby uzyskać więcej informacji, zobacz [właściwości atrybutów w diagramach klas UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md).   |
 |     4     |      **Operacja**       | Metoda lub funkcja, która może być wykonywana przez wystąpienia klasyfikatora. Aby dodać operację, kliknij sekcję **operacje** , a następnie naciśnij klawisz **Enter**. Wpisz podpis operacji. Aby uzyskać więcej informacji, zobacz [właściwości operacji na diagramach klas UML](../modeling/properties-of-operations-on-uml-class-diagrams.md). |
 |     5     |     **Skojarzenie**      |                                                                  Relacja między elementami członkowskimi dwóch klasyfikatorów. Aby uzyskać więcej informacji, zobacz [Właściwości skojarzeń na diagramach klas UML](../modeling/properties-of-associations-on-uml-class-diagrams.md).                                                                   |
-|    5a     |     **Agregacja**      |                                                                                                    Skojarzenie reprezentujące relację współużytkowanej własności. Właściwość **agregacji** roli właściciela jest ustawiona na wartość **Shared**.                                                                                                     |
+|    5a     |     **Agregacji**      |                                                                                                    Skojarzenie reprezentujące relację współużytkowanej własności. Właściwość **agregacji** roli właściciela jest ustawiona na wartość **Shared**.                                                                                                     |
 |    5B     |     **Kompozycja**      |                                                                                                      Skojarzenie reprezentujące relację częściową. Właściwość **agregacji** roli właściciela jest ustawiona na wartość **złożona**.                                                                                                      |
 |     6     |   **Nazwa skojarzenia**   |                                                                                                                                         Nazwa skojarzenia. Nazwa może pozostać pusta.                                                                                                                                          |
-|     7     |      **Nazwa roli**       |                       Nazwa roli, czyli jeden koniec skojarzenia. Może służyć do odwoływania się do skojarzonego obiektu. Na poprzedniej ilustracji dla każdej `O`zamówienia, `O.ChosenMenu` jest jej menu skojarzone.<br /><br /> Każda rola ma własne właściwości, które są wyświetlane w obszarze właściwości skojarzenia.                       |
-|     8     |     **Kardynalność**     |                                         Wskazuje, ile obiektów w tym punkcie końcowym można połączyć z każdym obiektem. W tym przykładzie każde zamówienie musi być połączone z dokładnie jednym menu.<br /><br /> **\\** \* oznacza, że nie ma górnego limitu liczby linków, które mogą zostać wykonane.                                         |
+|     7     |      **Nazwa roli**       |                       Nazwa roli, czyli jeden koniec skojarzenia. Może służyć do odwoływania się do skojarzonego obiektu. Na poprzedniej ilustracji, dla dowolnej kolejności `O` , `O.ChosenMenu` jest jej menu skojarzone.<br /><br /> Każda rola ma własne właściwości, które są wyświetlane w obszarze właściwości skojarzenia.                       |
+|     8     |     **Kardynalność**     |                                         Wskazuje, ile obiektów w tym punkcie końcowym można połączyć z każdym obiektem. W tym przykładzie każde zamówienie musi być połączone z dokładnie jednym menu.<br /><br /> **\\**\* oznacza, że nie ma górnego limitu liczby linków, które mogą zostać wykonane.                                         |
 |     9     |    **Generalizacja**    |  *Określony* klasyfikator dziedziczy część swojej definicji z klasyfikatora *ogólnego* . Klasyfikator ogólny znajduje się na końcu łącznika. Atrybuty, skojarzenia i operacje są dziedziczone przez określony klasyfikator.<br /><br /> Użyj narzędzia **dziedziczenie** , aby utworzyć generalizację między dwoma klasyfikatorami.   |
 
  ![Pakiet zawierający interfejs i Wyliczenie](../modeling/media/uml-classovpackage.png "UML_ClassOvPackage")
 
 |Kształt|Element|Opis|
 |-----------|-------------|-----------------|
-|10|**Interface**|Definicja części widocznego na zewnątrz zachowania obiektu. Aby uzyskać więcej informacji, zobacz [Właściwości typów w diagramach klas UML](../modeling/properties-of-types-on-uml-class-diagrams.md).|
-|11|**Wyliczenie**|Klasyfikator, który składa się z zestawu wartości literału.|
+|10|**Interfejs**|Definicja części widocznego na zewnątrz zachowania obiektu. Aby uzyskać więcej informacji, zobacz [Właściwości typów w diagramach klas UML](../modeling/properties-of-types-on-uml-class-diagrams.md).|
+|11|**Licznik**|Klasyfikator, który składa się z zestawu wartości literału.|
 |12|**Pakiet**|Grupa klasyfikatorów, skojarzeń, akcji, linii życia, składników i pakietów. Diagram klasy logicznej pokazuje, że klasyfikatory i pakiety elementów członkowskich są zawarte w pakiecie.<br /><br /> Nazwy są objęte zakresem pakietów, dzięki czemu **Class1** w **package1** różni się od **Class1** poza tym pakietem. Nazwa pakietu jest wyświetlana w ramach właściwości **nazwy kwalifikowanej** jej zawartości.<br /><br /> Możesz ustawić właściwość **połączony pakiet** dowolnego diagramu UML, aby odwołać się do pakietu. Wszystkie elementy, które tworzysz na tym diagramie, staną się częścią pakietu. Zostaną one wyświetlone w obszarze pakiet w **Eksploratorze modelu UML**.|
-|13|**Importujuj**|Relacja między pakietami, wskazującą, że jeden pakiet zawiera wszystkie definicje innych.|
-|14|**Zależności**|Definicja lub implementacja klasyfikatora zależnego może ulec zmianie, jeśli klasyfikator na końcu końca strzałki zostanie zmieniony.|
+|13|**Importuj**|Relacja między pakietami, wskazującą, że jeden pakiet zawiera wszystkie definicje innych.|
+|14|**Zależność**|Definicja lub implementacja klasyfikatora zależnego może ulec zmianie, jeśli klasyfikator na końcu końca strzałki zostanie zmieniony.|
 
  ![Realizacja pokazana z conector i lizak](../modeling/media/uml-classovrealize.png "UML_ClassOvRealize")
 

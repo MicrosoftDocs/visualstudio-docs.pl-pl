@@ -12,22 +12,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9b08035deec65c8c42fe875d380d9cc3d15533a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850271"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Za pomocą narzędzia wiersza polecenia wizualizatora współbieżności (CVCollectionCmd. exe) można zbierać ślady z wiersza polecenia, aby można było je wyświetlać w wizualizatorze współbieżności dla programu Visual Studio. Ule można używać na komputerach, na których nie zainstalowano programu Visual Studio.  
+Za pomocą narzędzia wiersza polecenia wizualizatora współbieżności (CVCollectionCmd.exe) można zbierać ślady z wiersza polecenia, aby można było je wyświetlić w wizualizatorze współbieżności dla programu Visual Studio. Ule można używać na komputerach, na których nie zainstalowano programu Visual Studio.  
   
 > [!NOTE]
 > Począwszy od Visual Studio 2013, Wizualizator współbieżności jest opcjonalnym rozszerzeniem. (Poprzednio został on uwzględniony w programie Visual Studio). [Narzędzia do zbierania danych Concurrency Visualizer dla programu Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) można pobrać z centrum pobierania.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Pobierz narzędzie wiersza polecenia wizualizatora współbieżności  
- Aby pobrać i zainstalować narzędzie wiersza polecenia, przejdź do narzędzia do [zbierania danych Concurrency Visualizer dla programu Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) i postępuj zgodnie z instrukcjami. Domyślnie program CVCollectionCmd. exe jest instalowany w narzędziach kolekcji%ProgramFiles%\Microsoft concurrency wizualizatora \ (% ProgramFiles (x86)% \ narzędzia kolekcji Microsoft Concurrency Visualizer \ na komputerach x64.  
+ Aby pobrać i zainstalować narzędzie wiersza polecenia, przejdź do narzędzia do [zbierania danych Concurrency Visualizer dla programu Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) i postępuj zgodnie z instrukcjami. Domyślnie CVCollectionCmd.exe jest zainstalowana w narzędziach kolekcji%ProgramFiles%\Microsoft concurrency wizualizatora \ (% ProgramFiles (x86)% \ narzędzia kolekcji Microsoft Concurrency Visualizer \ na komputerach x64.  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Zbierz ślad z CVCollectionCmd  
  Można zbierać ślady, uruchamiając aplikację z CVCollectionCmd lub dołączając do niej. Zapoznaj się z poleceniem poniżej, aby poznać odpowiednie opcje. Na przykład  
@@ -41,7 +41,7 @@ Za pomocą narzędzia wiersza polecenia wizualizatora współbieżności (CVColl
   
  **CvCollectionCmd/?**  
   
-|Opcja|Opis|Parametry|Zwracane wartości|  
+|Opcja|Opis|Parametry|Wartości zwracane|  
 |------------|-----------------|----------------|-------------------|  
 |Zapytanie|Zwraca czy można rozpocząć zbieranie danych.|Brak|0, jeśli zbieranie danych jest gotowe do rozpoczęcia.<br /><br /> 1, jeśli kolekcja jest już w toku.<br /><br /> 2 Jeśli kolekcja nie jest w toku, ale co najmniej jedna z wymaganych sesji [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) jest już włączona.|  
 |Uruchom|Uruchamia określony proces w ramach wizualizatora współbieżności.|Ścieżka pliku wykonywalnego.|0, Jeśli uruchomienie zakończyło się pomyślnie.<br /><br /> 1 Jeśli uruchomienie nie powiodło się, ponieważ nie można uruchomić aplikacji docelowej.<br /><br /> 13 Jeśli uruchomienie nie powiodło się, ponieważ CVCollectionCmd ma niewystarczające uprawnienia do zapisu w określonym katalogu wyjściowym.|  
@@ -51,7 +51,7 @@ Za pomocą narzędzia wiersza polecenia wizualizatora współbieżności (CVColl
 |LaunchArgs|Określa docelowe argumenty pliku wykonywalnego. Ta opcja ma zastosowanie tylko do polecenia Uruchom.|Argumenty wiersza polecenia do aplikacji.|Brak.|  
 |OutDir|Określa katalog, w którym mają zostać zapisane pliki śledzenia. Dotyczy poleceń uruchamiania i dołączania.|Ścieżka katalogu lub ścieżka względna.|Brak.|  
 |Proces|Określa proces dołączania po wykonaniu polecenia Attach lub proces w śladach do analizy podczas wykonywania polecenia Analizuj. Dotyczy poleceń Attach i Analizuj.|Identyfikator PID lub nazwa procesu.|Brak.|  
-|Konfiguracja|Określa ścieżkę pliku konfiguracji, jeśli chcesz, aby ustawienia kolekcji były inne niż domyślne.   Dotyczy poleceń uruchamiania, dołączania i analizowania.|Ścieżka katalogu lub względna ścieżka pliku konfiguracyjnego XML.|Brak.|  
+|Config|Określa ścieżkę pliku konfiguracji, jeśli chcesz, aby ustawienia kolekcji były inne niż domyślne.   Dotyczy poleceń uruchamiania, dołączania i analizowania.|Ścieżka katalogu lub względna ścieżka pliku konfiguracyjnego XML.|Brak.|  
   
 ## <a name="customizing-configuration-settings"></a>Dostosowywanie ustawień konfiguracji  
  Jeśli używasz CVCollectionCmd do zbierania śladów i chcesz dostosować ustawienia kolekcji, użyj pliku konfiguracji, aby je określić.  
@@ -59,26 +59,26 @@ Za pomocą narzędzia wiersza polecenia wizualizatora współbieżności (CVColl
 > [!NOTE]
 > Gdy używasz programu Visual Studio do zbierania śladów, nie Modyfikuj bezpośrednio pliku konfiguracji.  Zamiast tego użyj okna dialogowego [Ustawienia zaawansowane](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) , aby zmodyfikować ustawienia.  
   
- Aby zmodyfikować ustawienia kolekcji, Utwórz plik konfiguracji na komputerze, na którym zostanie uruchomione narzędzie CVCollectionCmd. Plik konfiguracji można utworzyć od podstaw lub skopiować plik konfiguracyjny na komputerze, na którym jest zainstalowany program Visual Studio i zmodyfikować go. Plik ma nazwę `UserConfig.xml` i znajduje się w lokalnym folderze **AppData** . Po uruchomieniu narzędzia Użyj opcji konfiguracji w połączeniu z poleceniem uruchamiania, dołączania lub analizowania.  W parametrze, który jest skojarzony z opcją konfiguracji, określ ścieżkę do pliku konfiguracji.  
+ Aby zmodyfikować ustawienia kolekcji, Utwórz plik konfiguracji na komputerze, na którym zostanie uruchomione narzędzie CVCollectionCmd. Plik konfiguracji można utworzyć od podstaw lub skopiować plik konfiguracyjny na komputerze, na którym jest zainstalowany program Visual Studio i zmodyfikować go. Plik ma nazwę i znajduje się `UserConfig.xml` w lokalnym folderze **AppData** . Po uruchomieniu narzędzia Użyj opcji konfiguracji w połączeniu z poleceniem uruchamiania, dołączania lub analizowania.  W parametrze, który jest skojarzony z opcją konfiguracji, określ ścieżkę do pliku konfiguracji.  
   
 ### <a name="configuration-file-tags"></a>Tagi pliku konfiguracji  
  Plik konfiguracji jest oparty na języku XML. Oto prawidłowe Tagi i wartości:  
   
 |Tag|Opis|Wartości|  
 |---------|-----------------|------------|  
-|Konfiguracja|Rozgranicza ogólny plik konfiguracji.|Musi zawierać następujące elementy:<br /><br /> - MinorVersion<br />-MajorVersion|  
-|Brak elementu MajorVersion|Określa wersję główną pliku konfiguracyjnego.|Dla projektów [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] musi być 1. Jeśli nie, narzędzie nie będzie działało.|  
-|MinorVersion|Określa wersję pomocniczą pliku konfiguracyjnego.|Dla projektów [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] należy mieć wartość 0. Jeśli nie jest równa 0, narzędzie nie będzie działało.|  
+|Config|Rozgranicza ogólny plik konfiguracji.|Musi zawierać następujące elementy:<br /><br /> - MinorVersion<br />-MajorVersion|  
+|MajorVersion|Określa wersję główną pliku konfiguracyjnego.|Dla projektów musi być 1 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] . Jeśli nie, narzędzie nie będzie działało.|  
+|MinorVersion|Określa wersję pomocniczą pliku konfiguracyjnego.|Musi mieć wartość 0 dla [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] projektów. Jeśli nie jest równa 0, narzędzie nie będzie działało.|  
 |IncludeEnvSymbolPath|Ustawia wartość określającą, czy jest używana ścieżka symboli środowiska (_NT_SYMBOL_PATH).|-True<br />-FAŁSZ|  
 |DeleteEtlsAfterAnalysis|Ustawia wartość określającą, czy pliki ETL zostaną usunięte po zakończeniu analizy.|-True<br />-FAŁSZ|  
 |SymbolPath —|Określa ścieżkę serwera symboli. Aby uzyskać więcej informacji, zobacz [Korzystanie z serwera symboli firmy Microsoft w celu uzyskania plików symboli debugowania](https://support.microsoft.com/kb/311503).|Nazwa lub adres URL katalogu.|  
 |Znaczniki|Zawiera listę dostawców znaczników.|Może zawierać zero lub więcej elementów MarkerProvider.|  
 |MarkerProvider|Określa dostawcę pojedynczego znacznika.|Musi zawierać następujące elementy:<br /><br /> -Poziom<br />-Identyfikator GUID<br />-Nazwa<br /><br /> Może zawierać następujące elementy:<br /><br /> -Kategorie<br />-IsEnabled|  
 |Poziom|Ustawia poziom ważności MarkerProvider.|— Niska<br />-Normalny<br />— Wysoka<br />-Krytyczny<br />— Wszystko|  
-|Guid|Unikatowy identyfikator globalny dostawcy znaczników ETW.|IDENTYFIKATOR GUID.|  
+|Guid (identyfikator GUID)|Unikatowy identyfikator globalny dostawcy znaczników ETW.|IDENTYFIKATOR GUID.|  
 |Nazwa|Określa opis dostawcy znaczników.|Ciąg.|  
 |Kategorie|Określa kategorie zebrane dla dostawcy znaczników.|Rozdzielany przecinkami ciąg liczb lub zakresów liczb.|  
-|isEnabled|Ustawia wartość określającą, czy dostawca znacznika jest włączony dla kolekcji.|-True<br />-FAŁSZ|  
+|IsEnabled|Ustawia wartość określającą, czy dostawca znacznika jest włączony dla kolekcji.|-True<br />-FAŁSZ|  
 |FilterConfig|Określa listę opcji konfiguracji zdarzeń ETW, które są filtrowane z kolekcji.|Może zawierać następujące elementy:<br /><br /> - CollectClrEvents<br />- ClrCollectionOptions<br />- CollectSampleEvents<br />- CollectGpuEvents<br />- CollectFileIO|  
 |CollectClrEvents|Ustaw wartość określającą, czy są zbierane zdarzenia środowiska CLR.|-True<br />-FAŁSZ|  
 |ClrCollectionOptions|Określa, czy mają być zbierane zdarzenia środowiska CLR dla aplikacji natywnych oraz czy mają być zbierane zdarzenia dotyczące uwalniania NGEN.|Może zawierać jedną z następujących wartości:<br /><br /> - CollectForNative<br />- DisableNGenRundown|  

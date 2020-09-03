@@ -1,5 +1,5 @@
 ---
-title: Bitmap, Element | Dokumentacja firmy Microsoft
+title: Element bitmapy | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc1fb57c7ec43421b211b29cfd6ab97b24a1864c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184744"
 ---
 # <a name="bitmap-element"></a>Bitmap, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Definiuje mapę bitową. Mapa bitowa jest ładowany z zasobu lub z pliku.  
+Definiuje mapę bitową. Mapa bitowa jest ładowana z zasobu lub z pliku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,11 +36,11 @@ Definiuje mapę bitową. Mapa bitowa jest ładowany z zasobu lub z pliku.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagany. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.<br /><br /> Atrybut guid dla mapy bitowej nie jest skojarzony z dowolnego pakietu VSPackage lub inne grupy poleceń.  Powinna mieć unikatowe dla definicji mapy bitowej i nie powinna być używana do żadnych innych celów.|  
-|Atrybut resID|Identyfikator GUID/ID identyfikator polecenia. Wymagany jest resID lub atrybut href.<br /><br /> Atrybut resID jest identyfikator zasobu liczba całkowita, określająca paska mapy bitowej, który ma być załadowane podczas tabeli poleceń scalania.  Podczas ładowania tabeli poleceń, mapy bitowe, określonego przez identyfikator zasobu zostaną załadowane z zasobu tego samego modułu.|  
-|usedList|Wymagane, jeśli atrybut resID jest obecny. Wybiera dostępne obrazy paska mapy bitowej.|  
-|{1&gt;href&lt;1}|Ścieżka do mapy bitowej. Wymagany jest resID lub atrybut href.<br /><br /> Ścieżka include jest wyszukiwana w plik wskazany obraz, który jest osadzony w wynikowego pliku binarnego.  Polecenie scalania tabeli obraz, który jest kopiowany, a nie wyszukiwanie dodatkowych zasobów obciążenia jest wymagana ani.  Jeśli nie ma atrybutu usedList, wszystkie obrazy w pasku są dostępne. **Uwaga:**  Obrazy mogą być dostarczane w jednym z kilku formatów, które zawierają bmp, PNG i .gif.  Wcześniejsze wersje kompilatora nie obsługiwał obrazy bitmapowe 32-bitowych, których dane alfa przezroczystości częściowe. Obejście problemu w przypadku tych wersji jest w formacie PNG.|  
-|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Wymagany. Identyfikator GUID identyfikatora polecenia GUID/ID.<br /><br /> Atrybut GUID dla mapy bitowej nie jest skojarzony z żadną pakietu VSPackage lub inną grupą poleceń.  Powinna być unikatowa dla definicji mapy bitowej i nie powinna być używana w żadnym innym celu.|  
+|resID|Identyfikator identyfikatora polecenia GUID/ID. Wymagany jest atrybut resID lub href.<br /><br /> Atrybut resID jest IDENTYFIKATORem zasobu liczb całkowitych, który określa pasek mapy bitowej, który ma zostać załadowany podczas scalania tabeli poleceń.  Po załadowaniu tabeli poleceń mapy bitowe określone przez identyfikator zasobu zostaną załadowane z zasobu tego samego modułu.|  
+|usedList|Wymagany, jeśli jest obecny atrybut resID. Wybiera dostępne obrazy na pasku mapy bitowej.|  
+|Tag|Ścieżka do mapy bitowej. Wymagany jest atrybut resID lub href.<br /><br /> Ścieżka include szuka wskazanego pliku obrazu, który jest osadzony w danych binarnych.  Podczas scalania tabeli poleceń obraz jest kopiowany i nie są wymagane żadne dodatkowe Wyszukiwanie zasobów ani obciążenie.  Jeśli atrybut usedList nie istnieje, wszystkie obrazy na pasku są dostępne. **Uwaga:**  Obrazy mogą być dostarczane w jednym z kilku formatów, które zawierają pliki BMP, PNG i. gif.  Wcześniejsze wersje kompilatora nie obsługują obrazów mapy bitowej 32-bitowych, które mają informacje alfa dla częściowej przejrzystości. Obejście tych wersji ma zastosowanie w formacie PNG.|  
+|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  

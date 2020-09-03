@@ -1,5 +1,5 @@
 ---
-title: Dodawanie atrybutu do elementu projektu | Dokumentacja firmy Microsoft
+title: Dodawanie atrybutu do elementu projektu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1740ac4dfdeb64d5b4b2b0aab264845de9c186dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184818"
 ---
 # <a name="adding-an-attribute-to-a-project-item"></a>Dodawanie atrybutu do elementu projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> pobieranie i ustawianie wartości atrybutów elementu projektu. SetItemAttribute tworzy atrybut, jeśli go jeszcze nie istnieje, dodając go do metadanych elementu projektu.  
+Metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> pobieranie i ustawianie wartości atrybutów elementu projektu. SetItemAttribute tworzy atrybut, jeśli jeszcze nie istnieje, dodając go do metadanych elementu projektu.  
   
 ## <a name="adding-an-attribute-to-a-project-item"></a>Dodawanie atrybutu do elementu projektu  
   
-#### <a name="to-add-an-attribute-to-a-project-item"></a>Dodawanie atrybutu do elementu projektu  
+#### <a name="to-add-an-attribute-to-a-project-item"></a>Aby dodać atrybut do elementu projektu  
   
-- Poniższy kod używa <xref:EnvDTE.DTE> obiektu automatyzacji i <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> metodę, aby dodać atrybut do elementu projektu. Identyfikator elementu projektu jest uzyskiwany z nazwy elementu projektu "program.cs". Atrybut "MyAttribute" zostanie dodany do tego elementu projektu i danej wartości "MyValue".  
+- Poniższy kod używa <xref:EnvDTE.DTE> obiektu automatyzacji i <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> metody do dodawania atrybutu do elementu projektu. Identyfikator elementu projektu jest uzyskiwany z nazwy elementu projektu "program.cs". Atrybut "atrybut" jest dodawany do tego elementu projektu i ma wartość "Moja wartość".  
   
     ```  
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  

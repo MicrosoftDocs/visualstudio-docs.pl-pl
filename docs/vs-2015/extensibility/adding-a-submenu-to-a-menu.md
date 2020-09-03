@@ -1,5 +1,5 @@
 ---
-title: Dodawanie podmenu do Menu | Dokumentacja firmy Microsoft
+title: Dodawanie podmenu do menu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,29 +14,29 @@ caps.latest.revision: 44
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f458d46395c3a902e62ba5dd4ac7d624c326700c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184889"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Dodawanie podmenu do menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym przewodniku opiera się na pokaz w [Dodawanie Menu na pasku Menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) , przedstawiający sposób dodawanie podmenu do **TestMenu** menu.  
+Ten przewodnik kompiluje się w demonstracji w obszarze [Dodawanie menu do paska menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) , pokazując sposób dodawania podmenu do menu **TestMenu** .  
   
- Podmenu jest dodatkowej menu, który pojawia się w innym menu. Podmenu można zidentyfikować strzałką, który następuje po jego nazwę. Kliknięcie nazwy powoduje, że podmenu i jego poleceń, które mają być wyświetlane.  
+ Podmenu to menu pomocnicze, które pojawia się w innym menu. Podmenu może być identyfikowane przez strzałkę, która następuje po jego nazwie. Kliknięcie nazwy powoduje wyświetlenie podmenu i jego poleceń.  
   
- Ten przewodnik utworzy podmenu w menu na pasku menu programu Visual Studio i umieszcza nowe polecenie, w podmenu. Instruktaż implementuje również nowe polecenie.  
+ Ten przewodnik tworzy podmenu w menu na pasku menu programu Visual Studio i umieszcza nowe polecenie w podmenu. Przewodnik implementuje również nowe polecenie.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dostępna jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="adding-a-submenu-to-a-menu"></a>Dodawanie podmenu do menu  
   
-1. Postępuj zgodnie z instrukcjami w [Dodawanie Menu na pasku Menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) Tworzenie elementu projektu i menu. Kroki opisane w tym przewodniku przyjęto założenie, że nazwa projektu VSIX jest `TopLevelMenu`.  
+1. Postępuj zgodnie z instrukcjami w temacie [Dodawanie menu do paska menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) , aby utworzyć projekt i element menu. W krokach w tym instruktażu przyjęto założenie, że nazwa projektu VSIX to `TopLevelMenu` .  
   
-2. Open TestCommandPackage.vsct. W `<Symbols>` Dodaj `<IDSymbol>` elementu podmenu: jeden dla grupy podmenu i jeden dla polecenia, w `<GuidSymbol>` węzeł o nazwie "guidTopLevelMenuCmdSet." Jest to ten sam węzeł, który zawiera `<IDSymbol>` element menu najwyższego poziomu.  
+2. Otwórz TestCommandPackage. vsct. W `<Symbols>` sekcji Dodaj `<IDSymbol>` element dla podmenu, jeden dla grupy podmenu, a drugi dla polecenia, wszystkie w `<GuidSymbol>` węźle o nazwie "guidTopLevelMenuCmdSet". Jest to ten sam węzeł, który zawiera `<IDSymbol>` element menu najwyższego poziomu.  
   
     ```xml  
     <IDSymbol name="SubMenu" value="0x1100"/>  
@@ -44,7 +44,7 @@ W tym przewodniku opiera się na pokaz w [Dodawanie Menu na pasku Menu programu 
     <IDSymbol name="cmdidTestSubCommand" value="0x0105"/>  
     ```  
   
-3. Dodaj nowo utworzony podmenu `<Menus>` sekcji.  
+3. Dodaj nowo utworzone podmenu do `<Menus>` sekcji.  
   
     ```xml  
     <Menu guid="guidTestCommandPackageCmdSet" id="SubMenu" priority="0x0100" type="Menu">  
@@ -56,9 +56,9 @@ W tym przewodniku opiera się na pokaz w [Dodawanie Menu na pasku Menu programu 
     </Menu>  
     ```  
   
-     Para identyfikator GUID/element nadrzędny określa grupy menu, który został wygenerowany w [Dodawanie Menu na pasku Menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md), i jest elementem podrzędnym menu najwyższego poziomu.  
+     Para identyfikator GUID/identyfikator elementu nadrzędnego określa grupę menu, która została wygenerowana podczas [dodawania menu do paska menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)i jest elementem podrzędnym menu najwyższego poziomu.  
   
-4. Dodawanie grupy menu zdefiniowane w kroku 2, aby `<Groups>` sekcji i Uczyń elementem podrzędnym podmenu.  
+4. Dodaj grupę menu zdefiniowaną w kroku 2 do `<Groups>` sekcji i ustaw ją jako podrzędną w podmenu.  
   
     ```xml  
     <Group guid="guidTestCommandPackageCmdSet" id="SubMenuGroup" priority="0x0000">  
@@ -66,7 +66,7 @@ W tym przewodniku opiera się na pokaz w [Dodawanie Menu na pasku Menu programu 
     </Group>  
     ```  
   
-5. Dodaj nową `<Button>` elementu `<Buttons>` sekcji, aby zdefiniować polecenia utworzony w kroku 2, jako element w podmenu.  
+5. Dodaj nowy `<Button>` element do sekcji, `<Buttons>` Aby zdefiniować polecenie utworzone w kroku 2 jako element w podmenu.  
   
     ```xml  
     <Button guid="guidTestCommandPackageCmdSet" id="cmdidTestSubCommand" priority="0x0000" type="Button">  
@@ -79,19 +79,19 @@ W tym przewodniku opiera się na pokaz w [Dodawanie Menu na pasku Menu programu 
     </Button>  
     ```  
   
-6. Skompiluj rozwiązanie, a następnie rozpocząć debugowanie. Powinien zostać wyświetlony wystąpienie eksperymentalne.  
+6. Skompiluj rozwiązanie i Rozpocznij debugowanie. Powinno być widoczne wystąpienie eksperymentalne.  
   
-7. Kliknij przycisk **TestMenu** aby zobaczyć nowe podmenu o nazwie **podmenu**. Kliknij przycisk **podmenu** można otworzyć podmenu i zobaczyć nowe polecenie **testu podpolecenie**. Należy zauważyć, że kliknięcie **testu podpolecenie** nic nie robi.  
+7. Kliknij przycisk **TestMenu** , aby wyświetlić nowe podmenu o nazwie **Sub podmenu**. Kliknij przycisk **podmenu** , aby otworzyć podmenu i wyświetlić nowe polecenie, **podpolecenia testu**. Zwróć uwagę, że kliknięcie **polecenia Testuj sub** nic nie robi.  
   
 ## <a name="adding-a-command"></a>Dodawanie polecenia  
   
-1. Otwórz TestCommand.cs i Dodaj następujący identyfikator polecenia po istniejący identyfikator polecenia.  
+1. Otwórz TestCommand.cs i Dodaj następujący identyfikator polecenia po istniejącym IDENTYFIKATORze polecenia.  
   
     ```csharp  
     public const int cmdidTestSubCmd = 0x105;  
     ```  
   
-2. Dodaj polecenie podrzędnych. Znajdź Konstruktor polecenia. Dodaj następujące wiersze po wywołaniu `AddCommand` metody.  
+2. Dodaj polecenie sub. Znajdź konstruktora poleceń. Dodaj następujące wiersze tuż po wywołaniu `AddCommand` metody.  
   
     ```csharp  
     CommandID subCommandID = new CommandID(CommandSet, (int)TestCommandPackageGuids.cmdidTestSubCmd);  
@@ -101,7 +101,7 @@ W tym przewodniku opiera się na pokaz w [Dodawanie Menu na pasku Menu programu 
   
     ```  
   
-     `SubItemCallback` Program obsługi poleceń zostanie zdefiniowana później. Konstruktor powinien teraz wyglądać następująco:  
+     `SubItemCallback`Program obsługi poleceń zostanie zdefiniowany później. Konstruktor powinien teraz wyglądać następująco:  
   
     ```csharp  
     private TestCommand(Package package)  
@@ -126,7 +126,7 @@ W tym przewodniku opiera się na pokaz w [Dodawanie Menu na pasku Menu programu 
                 }  
     ```  
   
-3. Dodaj SubItemCallback(). Jest to metoda, która jest wywoływana po kliknięciu polecenia Nowy w podmenu.  
+3. Dodaj SubItemCallback (). Jest to metoda wywoływana, gdy zostanie kliknięte nowe polecenie w podmenu.  
   
     ```csharp  
     private void SubItemCallback(object sender, EventArgs e)  
@@ -152,10 +152,10 @@ W tym przewodniku opiera się na pokaz w [Dodawanie Menu na pasku Menu programu 
     }  
     ```  
   
-4. Skompiluj projekt, a następnie rozpocząć debugowanie. Wystąpienie eksperymentalne powinna zostać wyświetlona.  
+4. Skompiluj projekt i Rozpocznij debugowanie. Powinno zostać wyświetlone wystąpienie eksperymentalne.  
   
-5. Na **TestMenu** menu, kliknij przycisk **podmenu** a następnie kliknij przycisk **testu podpolecenie**. Okno komunikatu powinno wyświetlane, a następnie wyświetlić tekst "Test polecenia wewnątrz TestCommand.SubItemCallback()".  
+5. W menu **TestMenu** kliknij pozycję **sub menu** , a następnie kliknij pozycję **Testuj polecenie sub**. Zostanie wyświetlone okno komunikatu z tekstem "polecenie testowe wewnątrz TestCommand. SubItemCallback ()".  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dodawanie Menu na pasku Menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)   
+ [Dodawanie menu do paska menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)   
  [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

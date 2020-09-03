@@ -1,5 +1,5 @@
 ---
-title: BuildProjectOnload, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: BuildProjectOnload, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,16 +9,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 464c427008c739f23431c58bd647aaa3b1f5609d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184653"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload, element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Kompiluje tylko nowe projekty, jak utworzyć i dodać je do rozwiązania. Całe rozwiązanie nie jest wbudowane.  
+Kompiluje tylko nowe projekty podczas tworzenia i dodawania ich do rozwiązania. Całe rozwiązanie nie zostało skompilowane.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -43,18 +43,18 @@ Kompiluje tylko nowe projekty, jak utworzyć i dodać je do rozwiązania. Całe 
   
 |Element|Opis|  
 |-------------|-----------------|  
-|TemplateData|Klasyfikuje szablon i definiuje sposób wyświetlania w obu **nowy projekt** i **Dodaj nowy element** okien dialogowych.|  
+|TemplateData|Klasyfikuje szablon i definiuje sposób jego wyświetlania w oknach dialogowych **Nowy projekt** i **Dodaj nowy element** .|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- Tekst musi być albo `true` lub `false` wskazująca, czy do tworzenia nowego projektu, gdy jest tworzona z szablonu.  
+ Tekst musi mieć wartość `true` lub, `false` Aby wskazać, czy ma zostać skompilowany tylko nowy projekt, gdy zostanie utworzony na podstawie szablonu.  
   
 ## <a name="remarks"></a>Uwagi  
- `BuildProjectOnLoad` element jest opcjonalny. Wartość domyślna to `false`.  
+ `BuildProjectOnLoad` jest elementem opcjonalnym. Wartość domyślna to `false`.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład ilustruje metadanych dla szablonu programu Visual C#.  
+ Poniższy przykład ilustruje metadane szablonu Visual C#.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
