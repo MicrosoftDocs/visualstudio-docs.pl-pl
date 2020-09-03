@@ -1,5 +1,5 @@
 ---
-title: Funkcja CvIsEnabled | Dokumentacja firmy Microsoft
+title: Funkcja Cvisenabled — | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,16 +16,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba30f3ab75504c0115b8a881f2014910f3b9fd0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68177780"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled — Funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Określa, czy dowolnej sesji ma włączone określonego dostawcy funkcji ETW.  
+Określa, czy dla każdej sesji włączono określonego dostawcę ETW.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,19 +42,19 @@ HRESULT CvIsEnabledEx(
   
 #### <a name="parameters"></a>Parametry  
  `category`  
- Kategoria.  
+ Kategorii.  
   
  `level`  
  Poziom ważności.  
   
  `pProvider`  
- Obiekt dostawcy prawidłowe. Nie może mieć wartości NULL.  
+ Prawidłowy obiekt dostawcy. Nie może mieć wartości NULL.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- S_OK, jeśli dostawca jest obecnie włączona. S_FALSE, jeśli dostawca jest obecnie wyłączona. Kod błędu w przypadku, gdy było żadnych błędów. Aby Sprawdź, czy warunek błędu, a następnie wyszukaj S_OK/S_FALSE, należy użyć makra nie powiodło się.  
+ S_OK, jeśli dostawca jest obecnie włączony. S_FALSE, jeśli dostawca jest obecnie wyłączony. Kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makra zakończonego niepowodzeniem, a następnie sprawdź, czy S_OK/S_FALSE.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkers.h  
+ **Nagłówek:** cvmarkers. h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+ [Dokumentacja biblioteki C++](../profiling/cpp-library-reference.md)

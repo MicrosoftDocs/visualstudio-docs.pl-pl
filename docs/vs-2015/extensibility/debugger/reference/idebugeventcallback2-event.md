@@ -1,5 +1,5 @@
 ---
-title: IDebugEventCallback2::Event | Dokumentacja firmy Microsoft
+title: 'IDebugEventCallback2:: Event | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 37462b5f274ca6e6c2a4a2feb4083ea94ea2f066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163974"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Wysyła powiadomienia o zdarzeniach debugowania.  
+Wysyła powiadomienie o zdarzeniach debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -52,33 +52,33 @@ int Event( 
   
 #### <a name="parameters"></a>Parametry  
  `pEngine`  
- [in] [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) obiekt, który reprezentuje aparat debugowania (DE), która wysyła tego zdarzenia. DE jest wymagany do wypełnienia tego parametru.  
+ podczas Obiekt [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) , który reprezentuje aparat debugowania, który wysyła to zdarzenie. Element DE jest wymagany do wypełnienia tego parametru.  
   
  `pProcess`  
- [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt, który reprezentuje proces, w której występuje zdarzenie. Ten parametr jest wypełniane przez Menedżer debugowania sesji (SDM). DE zawsze przekazuje wartość null dla tego parametru.  
+ podczas Obiekt [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) , który reprezentuje proces, w którym występuje zdarzenie. Ten parametr jest wypełniany przez Menedżera debugowania sesji (SDM). Element DE zawsze przekazuje wartość null dla tego parametru.  
   
  `pProgram`  
- [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje program, w którym to zdarzenie występuje. W przypadku większości zdarzeń ten parametr nie jest wartością null.  
+ podczas Obiekt [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , który reprezentuje program, w którym występuje to zdarzenie. W przypadku większości zdarzeń ten parametr nie jest wartością null.  
   
  `pThread`  
- [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątek, w którym to zdarzenie występuje. Dla zdarzeniami zatrzymującymi, ten parametr nie może być wartością null jako ramka stosu jest uzyskiwana z tego parametru.  
+ podczas Obiekt [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , który reprezentuje wątek, w którym występuje to zdarzenie. W przypadku zdarzeń zatrzymywania ten parametr nie może być wartością null, ponieważ Ramka stosu jest uzyskiwana z tego parametru.  
   
  `pEvent`  
- [in] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) obiekt, który reprezentuje zdarzenie debugowania.  
+ podczas Obiekt [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) , który reprezentuje zdarzenie debugowania.  
   
  `riidEvent`  
- [in] Identyfikator GUID, który identyfikuje interfejs zdarzenia, które można uzyskać z `pEvent` parametru.  
+ podczas Identyfikator GUID, który identyfikuje interfejs zdarzenia, który ma zostać uzyskany z `pEvent` parametru.  
   
  `dwAttrib`  
- [in] Kombinacja flag z [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) wyliczenia.  
+ podczas Kombinacja flag z wyliczenia [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Po wywołaniu tej metody `dwAttrib` parametru musi być zgodna wartość zwracana z [GetAttributes —](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) przekazanego do metody, nazywane obiektu zdarzenia `pEvent` parametru.  
+ Podczas wywoływania tej metody `dwAttrib` parametr musi być zgodny z wartością zwróconą przez metodę [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) wywoływaną w obiekcie zdarzenia przekazaną w `pEvent` parametrze.  
   
- Wszystkie zdarzenia debugowania są ogłaszane asynchronicznie, niezależnie od tego, czy samego zdarzenia jest asynchroniczne, czy nie. Gdy DE wywołuje tę metodę, zwracana wartość nie wskazuje, czy zdarzenie zostało przetworzone, tylko, czy odebrano zdarzenie. W rzeczywistości w większości przypadków zdarzenie nie zostało przetworzone po powrocie z tej metody.  
+ Wszystkie zdarzenia debugowania są ogłaszane asynchronicznie, bez względu na to, czy samo zdarzenie jest asynchroniczne, czy nie. W przypadku wywołania tej metody zwracana wartość nie wskazuje, czy zdarzenie zostało przetworzone, czy zdarzenie zostało odebrane. W rzeczywistości w większości przypadków zdarzenie nie zostało przetworzone, gdy ta metoda zwraca wartość.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

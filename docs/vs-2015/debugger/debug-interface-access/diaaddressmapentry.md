@@ -1,5 +1,5 @@
 ---
-title: Diaaddressmapentry — | Dokumentacja firmy Microsoft
+title: DiaAddressMapEntry — | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67c0a3e297f3eebfbf44724e64c4989d9bb979fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164354"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-W tym artykule opisano wpis z mapy adresów.  
+Opisuje wpis w mapie adresowej.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,26 +36,26 @@ struct DiaAddressMapEntry { 
   
 ## <a name="elements"></a>Elementy  
  `rva`  
- Względny adres wirtualny (RVA) obraz A.  
+ Względny adres wirtualny (RVA) w obrazie A.  
   
  `rvaTo`  
- Względny adres wirtualny `rva` jest mapowany na obrazie B.  
+ Względny adres wirtualny `rva` jest mapowany na obraz B.  
   
 ## <a name="remarks"></a>Uwagi  
- Mapa adres udostępnia tłumaczenia z jednego obrazu układu (A) do innego (B). Tablica `DiaAddressMapEntry` struktur, posortowane według `rva` definiuje mapę adresu.  
+ Mapa adresów zapewnia tłumaczenie z jednego układu obrazu (A) na inny (B). Tablica `DiaAddressMapEntry` struktur posortowana według `rva` definicji mapowania adresów.  
   
- Do translacji adresów `addrA`, na ilustracji A adres `addrB`, na ilustracji B, wykonaj następujące czynności:  
+ Aby przetłumaczyć adres, `addrA` w obrazie A na adres, `addrB` w obrazie B wykonaj następujące czynności:  
   
-1. Wyszukaj mapy dla wpisu, `e`, za pomocą największej `rva` mniejsze niż lub równe `addrA`.  
+1. Przeszukaj mapę dla wpisu, `e` z największą `rva` mniejszą lub równą `addrA` .  
   
-2. Ustaw `delta = addrA – e.rva`.  
+2. Ustaw `delta = addrA – e.rva` .  
   
-3. Ustaw `addrB = e.rvaTo + delta`.  
+3. Ustaw `addrB = e.rvaTo + delta` .  
   
-   Tablica `DiaAddressMapEntry` struktury jest przekazywany do [idiaaddressmap::set_addressmap —](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) metody.  
+   Tablica `DiaAddressMapEntry` struktur jest przenoszona do metody [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: dia2.h  
+ Nagłówek: dia2. h  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)   

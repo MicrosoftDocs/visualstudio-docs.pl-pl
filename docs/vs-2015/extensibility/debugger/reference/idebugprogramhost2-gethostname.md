@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramHost2::GetHostName | Dokumentacja firmy Microsoft
+title: 'IDebugProgramHost2:: gethostname | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb7ceae40282115dc455691789c3882a1620e829
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165126"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
@@ -42,16 +42,16 @@ int GetHostName( 
   
 #### <a name="parameters"></a>Parametry  
  `dwType`  
- [in] Wartość z zakresu od [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) wyliczenia.  
+ podczas Wartość z wyliczenia [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) .  
   
  `pbstrHostName`  
- [out] Zwraca nazwę żądanej procesu hostingu.  
+ określoną Zwraca żądaną nazwę procesu hostingu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- W Typowa implementacja tej metody `dwType` parametr jest ignorowany i zwracany jest przyjazną nazwę komputera hosta. Inną możliwą implementację służy do przekazywania `dwType` parametr do wywołania [gethostname —](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) metodę, aby uzyskać nazwę.  
+ W typowej implementacji tej metody `dwType` parametr jest ignorowany i jest zwracana przyjazna nazwa komputera hosta. Kolejną możliwą implementacją jest przekazanie `dwType` parametru do wywołania metody [gethostname](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) w celu uzyskania nazwy.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)   

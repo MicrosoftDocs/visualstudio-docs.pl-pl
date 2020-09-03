@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 6f05f97155427d75b88bb509a6bfb09644d8c686
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250849"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurowanie ról usług w chmurze platformy Azure przy użyciu programu Visual Studio
@@ -112,8 +112,8 @@ Przy użyciu innej wartości dla każdej konfiguracji usługi nie trzeba używa�
 
 1. W oknie dialogowym **Tworzenie parametrów połączenia magazynu** wybierz opcję **połączenia za pomocą programu**. Następnie postępuj zgodnie z instrukcjami dotyczącymi wybranej opcji:
 
-    - **Emulator magazynu Microsoft Azure** — w przypadku wybrania tej opcji pozostałe ustawienia w oknie dialogowym zostaną wyłączone, ponieważ mają zastosowanie tylko do platformy Azure. Wybierz przycisk **OK**.
-    - **Twoja subskrypcja** — w przypadku wybrania tej opcji Użyj listy rozwijanej, aby wybrać i zalogować się do konto Microsoft lub dodać konto Microsoft. Wybierz subskrypcję platformy Azure i konto magazynu. Wybierz przycisk **OK**.
+    - **Emulator magazynu Microsoft Azure** — w przypadku wybrania tej opcji pozostałe ustawienia w oknie dialogowym zostaną wyłączone, ponieważ mają zastosowanie tylko do platformy Azure. Wybierz pozycję **OK**.
+    - **Twoja subskrypcja** — w przypadku wybrania tej opcji Użyj listy rozwijanej, aby wybrać i zalogować się do konto Microsoft lub dodać konto Microsoft. Wybierz subskrypcję platformy Azure i konto magazynu. Wybierz pozycję **OK**.
     - **Ręcznie wprowadzone poświadczenia** — wprowadź nazwę konta magazynu i klucz podstawowy lub drugi. Wybierz opcję **połączenia** (protokół HTTPS jest zalecany w przypadku większości scenariuszy). Wybierz **przycisk OK**.
 
 1. Aby usunąć parametry połączenia, wybierz parametry połączenia, a następnie wybierz pozycję **Usuń ustawienie**.

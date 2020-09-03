@@ -1,5 +1,5 @@
 ---
-title: Zagadnienia dotyczące zwalniania i ponownego ładowania zagnieżdżonych projektów | Dokumentacja firmy Microsoft
+title: Zagadnienia dotyczące zwalniania i ponownego ładowania zagnieżdżonych projektów | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,25 +12,25 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 65145530c8cd6b68b82391a09b395bb8c9a61117
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197013"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Zagadnienia dotyczące zwalniania i ponownego ładowania zagnieżdżonych projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Podczas implementowania typów zagnieżdżonych projektów, można wykonać dodatkowe kroki, jeśli zwolnisz i ponownie Załaduj projekty. Poprawnie o rozwiązaniu zdarzenia, należy poprawnie zgłosić `OnBeforeUnloadProject` i `OnAfterLoadProject` zdarzenia.  
+Podczas implementowania zagnieżdżonych typów projektów należy wykonać dodatkowe czynności podczas zwalniania i ponownego ładowania projektów. Aby poprawnie powiadomić odbiorniki do zdarzeń rozwiązania, należy prawidłowo podnieść `OnBeforeUnloadProject` `OnAfterLoadProject` zdarzenia i.  
   
- Jednym z powodów trzeba zwiększyć te zdarzenia w ten sposób jest zrezygnować kontroli kodu źródłowego (SCC), aby usunąć elementy z serwera, a następnie dodać je jako coś nowego w przypadku `Get` SCC podczas operacji. W takim przypadku nowy plik, które będą ładowane poza SCC i trzeba zwolnić i załaduj ponownie wszystkie pliki w przypadku, gdy są one różne. Wywołania SCC `ReloadItem`. Implementacja to wywołanie jest do usunięcia projektu, a następnie ponownie go utworzyć ponownie przez zaimplementowanie `IVsFireSolutionEvents` do wywołania `OnBeforeUnloadProject` i `OnAfterLoadProject`. Podczas wykonywania tej implementacji SCC jest informowany, projekt został czasowo usunięty i ponownie dodać. W związku z tym SCC nie będzie działać w projekcie, tak, jakby rzeczywiście zostały usunięte z serwera i ponownie dodać projektu.  
+ Jedną z przyczyn, należy zgłosić te zdarzenia w ten sposób, że nie chcesz, aby kontrola kodu źródłowego (SCC) mogła usunąć elementy z serwera, a następnie dodać je ponownie jako nowe, jeśli istnieje jakaś `Get` operacja z SCC. W takim przypadku nowy plik zostanie załadowany z SCC i konieczne będzie zwolnienie i ponowne załadowanie wszystkich plików w przypadku, gdy są one różne. Wywołania SCC `ReloadItem` . Twoja implementacja tego wywołania polega na usunięciu projektu i ponownym utworzeniu go przez implementację `IVsFireSolutionEvents` w celu wywołania `OnBeforeUnloadProject` i `OnAfterLoadProject` . Podczas wykonywania tej implementacji SCC zostanie poinformowany o tym, że projekt został tymczasowo usunięty i ponownie dodany. W związku z tym SCC nie działa w projekcie tak, jakby projekt został rzeczywiście usunięty z serwera, a następnie ponownie dodany.  
   
-## <a name="reloading-projects"></a>Ponownego ładowania projektów  
- Aby zapewnić obsługę ponownego ładowania zagnieżdżonych projektów, możesz wdrożyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> metody. W danej implementacji `ReloadItem`, zamknij zagnieżdżonych projektów, a następnie ponownie utwórz je.  
+## <a name="reloading-projects"></a>Ponowne ładowanie projektów  
+ Aby obsługiwać ponowne ładowanie zagnieżdżonych projektów, należy zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> metodę. W implementacji programu `ReloadItem` można zamknąć zagnieżdżone projekty, a następnie utworzyć je ponownie.  
   
- Zwykle po załadowaniu projektu, IDE zgłasza <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A> i `M:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy)` zdarzenia. Dla zagnieżdżonych projektów, które zostanie usunięty i ponownie załadować projekt nadrzędny inicjuje proces nie środowiska IDE. Ponieważ projekt nadrzędny nie zgłaszać zdarzenia rozwiązania i środowiska IDE nie ma informacji o inicjowania procesu, zdarzenia nie są zgłaszane.  
+ Zwykle po ponownym załadowaniu projektu środowisko IDE wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A> i `M:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy)` zdarzenia. Jednak w przypadku projektów zagnieżdżonych, które zostaną usunięte i ponownie załadowane, projekt nadrzędny inicjuje proces, a nie IDE. Ponieważ projekt nadrzędny nie zgłasza zdarzeń rozwiązania, a IDE nie ma informacji o inicjalizacji procesu, zdarzenia nie są wywoływane.  
   
- Aby obsługiwać ten proces nadrzędny wywoływanych w projekcie `QueryInterface` na <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> interfejsu poza <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> interfejsu. `IVsFireSolutionEvents` dostępne są funkcje, pasujących do środowiska IDE, aby podnieść `OnBeforeUnloadProject` zdarzeń można zwolnić projektu zagnieżdżonego, a następnie podnieś `OnAfterLoadProject` zdarzenie, aby ponownie załadować projekt.  
+ Aby obsłużyć ten proces, projekt nadrzędny wywołuje interfejs `QueryInterface` <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> poza <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> interfejsem. `IVsFireSolutionEvents` Program zawiera funkcje, które informują IDE o podniesieniu `OnBeforeUnloadProject` zdarzenia w celu zwolnienia projektu zagnieżdżonego, a następnie podniesienia `OnAfterLoadProject` zdarzenia w celu ponownego załadowania tego samego projektu.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>   

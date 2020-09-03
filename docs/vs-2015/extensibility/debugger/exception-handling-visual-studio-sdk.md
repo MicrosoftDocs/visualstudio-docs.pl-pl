@@ -1,5 +1,5 @@
 ---
-title: (Visual Studio SDK) do obsługi wyjątków | Dokumentacja firmy Microsoft
+title: Obsługa wyjątków (Visual Studio SDK) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,44 +11,44 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 38e646f032a12de48bbfb55b089462c7f8a4dd26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152791"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>Obsługa wyjątków (zestaw SDK programu Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Poniżej opisano proces, który występuje, gdy wyjątki zostaną zgłoszone.  
+Poniżej opisano proces, który występuje, gdy są zgłaszane wyjątki.  
   
 ## <a name="exception-handling-process"></a>Proces obsługi wyjątków  
   
-1. Kiedy najpierw jest zgłaszany wyjątek, ale przed zapewniona jest obsługa przez program obsługi wyjątków w programie debugowany, aparat debugowania (DE) wysyła [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) do Menedżer debugowania sesji (SDM) jako zdarzenie zatrzymywania. `IDebugExceptionEvent2` Są wysyłane, jeśli tylko ustawienia, dla wyjątku (określone w oknie dialogowym Wyjątki w pakiecie debugowania) określ, czy użytkownik chce, aby zatrzymać na powiadomienia o wyjątkach pierwszej szansy.  
+1. Gdy wyjątek jest zgłaszany po raz pierwszy, ale zanim zostanie obsłużony przez program obsługi wyjątków w debugowanym programie, aparat debugowania (DE) wysyła [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) do Menedżera debugowania sesji (SDM) jako zdarzenie zatrzymywania. `IDebugExceptionEvent2`Jest wysyłany, jeśli tylko ustawienia dla wyjątku (określone w oknie dialogowym wyjątki w pakiecie debugowania) określają, że użytkownik chce zatrzymać powiadomienia o wyjątkach pierwszej szansy.  
   
-2. Wywołania SDM [IDebugExceptionEvent2::GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) pobrać właściwości wyjątku.  
+2. Model SDM wywołuje [IDebugExceptionEvent2:: GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) , aby uzyskać Właściwość wyjątku.  
   
-3. Wywołania pakietu debugowania [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) do określenia, jakie opcje do zaprezentowania użytkownikowi.  
+3. Pakiet debugowania wywołuje [IDebugExceptionEvent2:: CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) , aby określić opcje, które mają być obecne dla użytkownika.  
   
-4. Debugowanie pakietu pyta użytkownika, jak obsłużyć wyjątek, otwierając okno dialogowe wyjątku pierwszej szansy.  
+4. Pakiet debugowania pyta użytkownika, jak obsłużyć wyjątek, otwierając okno dialogowe wyjątek pierwszej szansy.  
   
-5. Jeśli użytkownik zdecyduje kontynuować, wywołuje metodę SDM [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md).  
+5. Jeśli użytkownik zdecyduje się kontynuować, dzwoni [IDebugExceptionEvent2:: CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md).  
   
-    - Jeśli metoda zwraca wartość S_OK, wywołuje metodę [IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md).  
+    - Jeśli metoda zwraca S_OK, wywołuje [IDebugExceptionEvent2::P asstodebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md).  
   
-         —lub—  
+         -lub-  
   
-         Jeśli metoda zwraca wartość S_FALSE, program debugowany otrzymuje drugą szansę, aby obsłużyć wyjątek.  
+         Jeśli metoda zwraca S_FALSE, debugowany program otrzymuje drugą szansę obsługi wyjątku.  
   
-6. Jeśli aktualnie debugowanego żadna procedura obsługi wyjątku pierwszej próby na sekundę, DE wysyła `IDebugExceptionEvent2` do SDM jako **EVENT_SYNC_STOP**.  
+6. Jeśli debugowany program nie ma programu obsługi dla wyjątku drugiej szansy, zostaje wysłany `IDebugExceptionEvent2` do modelu SDM jako **EVENT_SYNC_STOP**.  
   
-7. Debugowanie pakietu pyta użytkownika, jak obsłużyć wyjątek, otwierając okno dialogowe wyjątku pierwszej szansy.  
+7. Pakiet debugowania pyta użytkownika, jak obsłużyć wyjątek, otwierając okno dialogowe wyjątek pierwszej szansy.  
   
-8. Wywołania pakietu debugowania [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) do określenia, jakie opcje do zaprezentowania użytkownikowi.  
+8. Pakiet debugowania wywołuje [IDebugExceptionEvent2:: CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) , aby określić opcje, które mają być obecne dla użytkownika.  
   
-9. Debugowanie pakietu prosi użytkownika sposób obsługi wyjątku, otwierając okno dialogowe wyjątku szansy na sekundę.  
+9. Pakiet debugowania pyta użytkownika, jak obsłużyć wyjątek, otwierając okno dialogowe wyjątek drugiej szansy.  
   
-10. Jeśli metoda zwraca wartość S_OK, wywołuje metodę `IDebugExceptionEvent2::PassToDebuggee`.  
+10. Jeśli metoda zwraca S_OK, wywołuje `IDebugExceptionEvent2::PassToDebuggee` .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)

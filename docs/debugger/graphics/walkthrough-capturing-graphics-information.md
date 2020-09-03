@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aab86d42cd158ad64ebb16497b8d2d9f5a7002df
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72734723"
 ---
-# <a name="walkthrough-capturing-graphics-information"></a>Wskazówki: przechwytywanie informacji graficznych
-W tym instruktażu przedstawiono sposób użycia Diagnostyka grafiki [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] do ręcznego przechwytywania informacji graficznych z aplikacji Direct3D.
+# <a name="walkthrough-capturing-graphics-information"></a>Przewodnik: Przechwytywanie informacji graficznych
+W tym instruktażu pokazano, jak używać [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Diagnostyka grafiki do ręcznego przechwytywania informacji graficznych z aplikacji Direct3D.
 
  Ten Instruktaż ilustruje następujące zadania:
 
@@ -29,7 +29,7 @@ W tym instruktażu przedstawiono sposób użycia Diagnostyka grafiki [!INCLUDE[v
 
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>Aby włączyć Przechwytywanie informacji graficznych po załadowaniu projektu lub rozwiązania
 
-1. W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Załaduj plik projektu lub rozwiązania dla aplikacji, z której chcesz przechwytywać informacje graficzne.
+1. W programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Załaduj plik projektu lub rozwiązania dla aplikacji, z której chcesz przechwytywać informacje graficzne.
 
 2. Na pasku narzędzi Diagnostyka grafiki wybierz pozycję **Rozpocznij diagnostykę**.
 
@@ -47,7 +47,7 @@ W tym instruktażu przedstawiono sposób użycia Diagnostyka grafiki [!INCLUDE[v
 
 - Na pasku narzędzi Diagnostyka grafiki wybierz przycisk **przechwytywania** . ![Ikona przycisku przechwytywania grafiki](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")
 
-   —lub—
+   -lub-
 
    Korzystając z aplikacji na ostru, naciśnij przycisk **Print Screen**.
 
@@ -58,5 +58,5 @@ W tym instruktażu przedstawiono sposób użycia Diagnostyka grafiki [!INCLUDE[v
 
 - Dowiedz się, jak analizować przechwycone informacje graficzne przy użyciu narzędzi Diagnostyka grafiki. Zobacz [Omówienie](overview-of-visual-studio-graphics-diagnostics.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przechwytywanie informacji graficznych](capturing-graphics-information.md)

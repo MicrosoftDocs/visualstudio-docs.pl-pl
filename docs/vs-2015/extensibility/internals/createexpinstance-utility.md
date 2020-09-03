@@ -1,5 +1,5 @@
 ---
-title: Narzędzie CreateExpInstance | Dokumentacja firmy Microsoft
+title: Narzędzie CreateExpInstance | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,16 +15,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7d778f0f31a7651412915a898bff9e4bdfe6c55f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196982"
 ---
 # <a name="createexpinstance-utility"></a>Narzędzie CreateExpInstance
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Za pomocą narzędzie CreateExpInstance utworzyć, zresetować lub usunąć wystąpienie eksperymentalne programu Visual Studio. Wystąpienie eksperymentalne umożliwia debugowanie i testowanie rozszerzenia programu Visual Studio bez zmiany podstawowego produktu.  
+Użyj narzędzia CreateExpInstance, aby utworzyć, zresetować lub usunąć eksperymentalne wystąpienie programu Visual Studio. Możesz użyć eksperymentalnego wystąpienia do debugowania i testowania rozszerzeń programu Visual Studio bez zmiany bazowego produktu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -33,33 +33,33 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 ```  
   
 #### <a name="parameters"></a>Parametry  
- / Tworzenia  
+ /Create  
  Tworzy wystąpienie eksperymentalne.  
   
- / Reset  
- Usuwa wystąpienie eksperymentalne programu, a następnie tworzy nową.  
+ /Reset  
+ Usuwa wystąpienie eksperymentalne, a następnie tworzy nowe.  
   
  /Clean  
  Usuwa wystąpienie eksperymentalne.  
   
  /VSInstance  
- Nazwa katalogu, który zawiera wystąpienie programu Visual Studio w podstawowej, aby skopiować.  
+ Nazwa katalogu zawierającego podstawowe wystąpienie programu Visual Studio do skopiowania.  
   
- / RootSuffix  
- Sufiks, który można dołączyć do nazwy katalogu, w eksperymentalnym wystąpieniu.  
+ /RootSuffix  
+ Sufiks do dołączenia do nazwy eksperymentalnego katalogu wystąpień.  
   
 ## <a name="remarks"></a>Uwagi  
- Podczas pracy w rozszerzeniu Visual Studio, można nacisnąć F5, aby otworzyć domyślne wystąpienie doświadczalne i zainstaluj rozszerzenie bieżącego. Jeśli żadne wystąpienie doświadczalne jest dostępny, program Visual Studio tworzy jeden, który zawiera ustawienia domyślne.  
+ Podczas pracy nad rozszerzeniem programu Visual Studio można nacisnąć klawisz F5, aby otworzyć domyślne wystąpienie eksperymentalne i zainstalować bieżące rozszerzenie. Jeśli żadne wystąpienie eksperymentalne nie jest dostępne, program Visual Studio tworzy taki, który ma ustawienia domyślne.  
   
- Domyślna lokalizacja wystąpienie doświadczalne zależy od numeru wersji programu Visual Studio. Na przykład dla programu Visual Studio 2015, lokalizacja jest %localappdata%\Microsoft\VisualStudio\14.0Exp\ wszystkie pliki w lokalizacji katalogu są traktowane jako część tego wystąpienia. Wszelkie dodatkowe wystąpienia doświadczalnego nie zostanie załadowany przez program Visual Studio, chyba, że nazwa katalogu jest zmieniana na lokalizację domyślną.  
+ Domyślna lokalizacja wystąpienia doświadczalnego zależy od numeru wersji programu Visual Studio. Na przykład w przypadku programu Visual Studio 2015 lokalizacja jest%localappdata%\Microsoft\VisualStudio\14.0Exp\ wszystkie pliki w lokalizacji katalogu są uważane za część tego wystąpienia. Wszystkie dodatkowe eksperymentalne wystąpienia nie zostaną załadowane przez program Visual Studio, chyba że nazwa katalogu zostanie zmieniona na lokalizację domyślną.  
   
- Program Visual Studio nie uzyskać dostępu do rejestru systemowego, po otwarciu wystąpienie eksperymentalne. Różni się to z wcześniejszych wersji programu Visual Studio, które są używane w wersji doświadczalnej gałęzi rejestru.  
+ Program Visual Studio nie uzyskuje dostępu do rejestru systemowego, gdy otwiera wystąpienie eksperymentalne. Różni się to od wcześniejszych wersji programu Visual Studio, które używały eksperymentalnej wersji gałęzi rejestru.  
   
  Narzędzie CreateExpInstance zastępuje narzędzie VsRegEx.  
   
- Poniższy przykład Resetuje domyślne doświadczalnym wystąpieniu programu Visual Studio.  
+ Poniższy przykład resetuje domyślne wystąpienie eksperymentalne programu Visual Studio.  
   
- **CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp**  
+ **CreateExpInstance.exe/Reset/VSInstance = 14.0/RootSuffix = EXP**  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zwalnianie produktu](../../misc/releasing-a-visual-studio-integration-product.md)
