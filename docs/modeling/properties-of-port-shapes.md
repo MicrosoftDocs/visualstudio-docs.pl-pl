@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e5ed5703d67e4c10bd7a9e4fe2ab234c5577f65
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520863"
 ---
 # <a name="properties-of-port-shapes"></a>Właściwości kształtów portu
@@ -25,17 +25,17 @@ Za pomocą kształtów portów można reprezentować klasy domeny w wygenerowany
 
  Kształty portów mają właściwości, które są wymienione w poniższej tabeli.
 
-|Właściwość|Opis|Domyślny|
+|Właściwość|Opis|Domyślne|
 |-|-|-|
 |Kolor wypełnienia|Kolor wypełnienia tego kształtu.|Biały|
 |Tryb gradientu wypełnienia|Tryb gradientu wypełnienia tego kształtu.|Pozioma|
-|Geometrii|Geometria tego kształtu (prostokąt, prostokąt zaokrąglony, Elipsa lub koło).|Prostokąt|
+|Geometria|Geometria tego kształtu (prostokąt, prostokąt zaokrąglony, Elipsa lub koło).|Prostokąt|
 |Ma domyślne punkty połączenia|Jeśli `True` kształt będzie używać górnego, dolnego, lewego i prawego punktu połączenia w wygenerowanym projektancie.|Fałsz|
-|Kolor konturu|Kolor konturu tego kształtu.|Czarny|
+|Kolor konturu|Kolor konturu tego kształtu.|Czarnoskórzy|
 |Styl kreskowania konturu|Styl kreskowania konturu tego kształtu (pełny, kreska, kropka, DashDot, DashDotDot lub niestandardowy).|Ciągła|
 |Grubość konturu|Grubość konturu tego kształtu.|0,03125|
-|Kolor tekstu|Kolor używany dla dekoratory tekstu, które są skojarzone z tym kształtem.|Czarny|
-|Modyfikator dostępu|Poziom dostępu klasy ( `public` lub `internal` ).|Public|
+|Kolor tekstu|Kolor używany dla dekoratory tekstu, które są skojarzone z tym kształtem.|Czarnoskórzy|
+|Modyfikator dostępu|Poziom dostępu klasy ( `public` lub `internal` ).|Publiczne|
 |Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu źródłowego, która jest generowana z tego kształtu.|\<none>|
 |Generuje podwójny pochodny|Jeśli `True` , zostanie wygenerowany zarówno klasę bazową, jak i Klasa częściowa (do obsługi dostosowywania za pomocą przesłonięć). Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md)|Fałsz|
 |Ma Konstruktor niestandardowy|Jeśli `True` w kodzie źródłowym zostanie podany Konstruktor niestandardowy. Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
@@ -53,6 +53,6 @@ Za pomocą kształtów portów można reprezentować klasy domeny w wygenerowany
 |Stały tekst etykietki narzędzia|Tekst, który jest używany dla stałej etykietki narzędzia.|\<none>|
 |Słowo kluczowe pomocy|Słowo kluczowe, które jest używane do indeksowania pomocy F1 dla tego kształtu.|\<none>|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

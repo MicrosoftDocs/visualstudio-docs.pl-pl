@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520838"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
@@ -107,7 +107,7 @@ Parametr Language będzie zależeć od języka projektu.
 
 ### <a name="plain-content"></a>Zwykła zawartość
 
-Edytuj plik **TT** , aby zawierał tekst, który ma być generowany przez aplikację. Przykład:
+Edytuj plik **TT** , aby zawierał tekst, który ma być generowany przez aplikację. Na przykład:
 
 ```html
 <html><body>
@@ -119,7 +119,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>Osadzony kod programu
 
-Można wstawić kod programu między `<#` i `#>` . Przykład:
+Można wstawić kod programu między `<#` i `#>` . Na przykład:
 
 ```csharp
 <table>
