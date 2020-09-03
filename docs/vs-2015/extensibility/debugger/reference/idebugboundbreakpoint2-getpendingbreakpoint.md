@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetPendingBreakpoint | Dokumentacja firmy Microsoft
+title: 'IDebugBoundBreakpoint2:: GetPendingBreakpoint | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2030de26c384405bafaa22582145130a6a2e5da6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156228"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera oczekujący punkt przerwania, z której została utworzona określonego powiązany punkt przerwania.  
+Pobiera oczekujący punkt przerwania, z którego został utworzony określony powiązany punkt przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,16 +41,16 @@ int GetPendingBreakpoint( 
   
 #### <a name="parameters"></a>Parametry  
  `ppPendingBreakpoint`  
- [out] Zwraca [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) obiekt, który reprezentuje oczekujący punkt przerwania, który został użyty do utworzenia tego powiązany punkt przerwania.  
+ określoną Zwraca obiekt [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) reprezentujący oczekujący punkt przerwania, który został użyty do utworzenia tego powiązanego punktu przerwania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Oczekujący punkt przerwania można traktować jako kolekcja wszystkich informacji niezbędnych do powiązania punktu przerwania do kodu, który można zastosować do jednego lub wielu programów.  
+ Oczekujący punkt przerwania można traktować jako kolekcję wszystkich niezbędnych informacji potrzebnych do powiązania punktu przerwania z kodem, który można zastosować do jednego lub wielu programów.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CBoundBreakpoint` obiekt ujawniający [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CBoundBreakpoint` obiektu, który uwidacznia Interfejs [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .  
   
 ```  
 HRESULT CBoundBreakpoint::GetPendingBreakpoint(  

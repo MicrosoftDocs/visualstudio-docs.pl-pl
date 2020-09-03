@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetCondition | Dokumentacja firmy Microsoft
+title: 'IDebugBoundBreakpoint2:: setcondition | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8ac19bfe2109d7885265342ccc5ef4d358727d49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156210"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ustawia lub zmienia warunek skojarzony z ten powiązany punkt przerwania.  
+Ustawia lub zmienia warunek skojarzony z tym związanym punktem przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int SetCondition( 
   
 #### <a name="parameters"></a>Parametry  
  `bpCondition`  
- [in] Wartość z zakresu od [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) wyliczenie opisujące stan.  
+ podczas Wartość z wyliczenia [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) , która opisuje warunek.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli stan obiektu powiązany punkt przerwania jest ustawiony na `BPS_DELETED` (część [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) wyliczenia).  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` czy stan powiązanego obiektu punktu przerwania jest ustawiony na `BPS_DELETED` (część wyliczenia [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).  
   
 ## <a name="remarks"></a>Uwagi  
- Dowolny warunek, który był wcześniej skojarzony z tego punktu przerwania zostaną utracone.  
+ Wszystkie warunki, które były wcześniej skojarzone z tym punktem przerwania, zostaną utracone.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   

@@ -19,35 +19,35 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 78c80bc015ffbf39949b5295d85396dc84154208
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189585"
 ---
 # <a name="debugging-in-visual-studio"></a>Debugowanie w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Debuger programu Visual Studio pomaga obserwowania zachowania w czasie wykonywania programu i znajdowanie problemów. Debuger działa z wszystkich języków programowania Visual Studio i skojarzonymi z nimi bibliotekami. Za pomocą debugera przerwanie wykonywania programu, aby zbadać jego kod, sprawdzić i edytować zmienne, przejrzeć rejestry, zapoznaj się z instrukcjami, utworzone na podstawie kodu źródłowego i przejrzeć obszar pamięci używane przez aplikację.
+Debuger programu Visual Studio pomaga obserwować zachowanie programu w czasie wykonywania i znajdować problemy. Debuger współpracuje ze wszystkimi językami programowania programu Visual Studio i związanymi z nimi bibliotekami. Za pomocą debugera możesz przerwać wykonywanie programu, aby sprawdzić swój kod, sprawdzić i edytować zmienne, wyświetlić rejestry, zapoznać się z instrukcjami utworzonymi na podstawie kodu źródłowego i wyświetlić miejsce w pamięci używane przez aplikację.
 
- Aby uzyskać krótkie wprowadzenie do debugowania i diagnostyki w programie Visual Studio, zobacz [debugowanie, profilowanie i diagnozowanie](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).
+ Aby zapoznać się z krótkim wprowadzeniem do debugowania i diagnostyki w programie Visual Studio, zobacz [debugowanie, profilowanie i diagnozowanie](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).
 
-- [Debuger Windows](../debugger/debugger-windows.md) wyświetla inny debuger systemu windows.
+- [Okna debugera](../debugger/debugger-windows.md) Wyświetla listę różnych okien debugera.
 
-- [Podstawowe informacje o debugerze](../debugger/debugger-basics.md) w tym artykule omówiono podstawy używania debugera programu Visual Studio. Tematy obejmują podstawy, debugowania uruchamianie debugera automatycznie, zrzuty Kontrola wykonywania, dołączanie do uruchomionego programu debugowania Just-In-Time, punkty przerwania, inspekcja programu obsługi wyjątków, Edytuj i Kontynuuj oraz przy użyciu wyrażeń w debuger.
+- [Podstawowe informacje o debugerze](../debugger/debugger-basics.md) W tym artykule omówiono podstawowe informacje dotyczące korzystania z debugera programu Visual Studio. Tematy obejmują podstawowe informacje dotyczące debugowania, kontrolę wykonywania, dołączanie do uruchomionego programu, debugowanie just in Time, automatyczne uruchamianie debugera, zrzuty, punkty przerwania, inspekcję programu, obsługę wyjątków, edytowanie i kontynuowanie oraz korzystanie z wyrażeń w debugerze.
 
-- [Więcej funkcji debugowania](../debugger/more-debugging-features.md) w tym artykule opisano różne funkcje debugowania.
+- [Więcej funkcji debugowania](../debugger/more-debugging-features.md) Opisuje różne funkcje debugowania.
 
-- [Zdalne debugowanie](../debugger/remote-debugging.md) w tym artykule opisano sposób konfigurowania i używania zdalnego debugowania.
+- [Debugowanie zdalne](../debugger/remote-debugging.md) Opisuje sposób konfigurowania i używania debugowania zdalnego.
 
-- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md) w tym artykule opisano sposób debugowania aplikacji wielowątkowych.
+- [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md) Opisuje sposób debugowania aplikacji wielowątkowych.
 
-- [IntelliTrace](../debugger/intellitrace.md) zawiera opis funkcji IntelliTrace.
+- [IntelliTrace](../debugger/intellitrace.md) Opisuje funkcję IntelliTrace.
 
-- [Debugowanie aplikacji](../debugger/debugging-applications.md) w tym artykule opisano sposób debugowania różnego rodzaju aplikacji.
+- [Debugowanie aplikacji](../debugger/debugging-applications.md) Opisuje sposób debugowania różnych rodzajów aplikacji.
 
-- [Debugowanie odwołań do interfejsu użytkownika](../debugger/debugging-user-interface-reference.md) udostępnia informacje w systemach windows i oknach dialogowych podczas debugowania aplikacji. Te tematy są również dostępne po naciśnięciu klawisza F1, gdy masz skoncentrować się na element debugowania interfejsu użytkownika, takie jak **punktów przerwania** okna.
+- [Debugowanie odwołań do interfejsu użytkownika](../debugger/debugging-user-interface-reference.md) Zawiera informacje referencyjne w oknach i oknach dialogowych, które są używane podczas debugowania aplikacji. Te tematy są również dostępne po naciśnięciu klawisza F1, gdy fokusem jest element debugowanie elementu interfejsu użytkownika, na przykład okno **punkty przerwania** .
 
-- [Zestaw SDK dostępu do interfejsu debugowania](../debugger/debug-interface-access/debug-interface-access-sdk.md) opisuje debugowania programu Microsoft interfejsu dostępu Software Development Kit (DIA SDK). DIA SDK zapewnia dostęp do debugowania informacje przechowywane w plikach bazy danych (PDB) program wygenerowanych przez postcompiler narzędzi firmy Microsoft.
+- [Zestaw SDK dostępu do interfejsu debugowania](../debugger/debug-interface-access/debug-interface-access-sdk.md) Opisuje interfejs Microsoft Debug Interface Access Software Development Kit (DIA SDK). DIA SDK zapewnia dostęp do informacji debugowania przechowywanych w plikach bazy danych programu (. pdb) wygenerowanych przez narzędzia Microsoft postcompiler Tools.
 
 ## <a name="see-also"></a>Zobacz też
  [Narzędzia profilowania](../profiling/profiling-tools.md) [środowisko IDE programu Visual Studio](../ide/visual-studio-ide.md)
