@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::getSrcLineOnTypeDefn | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: getSrcLineOnTypeDefn | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a3a70cec3ab9e03dd97a1df5f0ccf8713a79cc28
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180477"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera źródło pliku i numer wiersza wskazujące, gdzie zdefiniowane jest określonego typu zdefiniowanego przez użytkownika.  
+Pobiera plik źródłowy i numer wiersza wskazujący miejsce zdefiniowania określonego typu zdefiniowanego przez użytkownika.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -32,11 +32,11 @@ HRESULT getSrcLineOnTypeDefn(
   
 #### <a name="parameters"></a>Parametry  
  `ppResult`  
- [out] A `IDiaLineNumber` obiekt, który zawiera numer pliku i wierszu źródła gdzie zdefiniowany przez użytkownika.  
+ określoną `IDiaLineNumber` Obiekt, który zawiera plik źródłowy i numer wiersza, gdzie zdefiniowany przez użytkownika.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

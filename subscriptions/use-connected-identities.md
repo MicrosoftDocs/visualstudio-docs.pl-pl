@@ -9,10 +9,10 @@ ms.topic: conceptual
 robots: noindex, nofollow
 description: Dowiedz się, jak korzystać z połączonych kont Microsoft i tożsamości Azure Active Directory
 ms.openlocfilehash: f7b2cad08eb94b15e35015db7e8ac3fe084a00ea
-ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87805617"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Jak używać połączonych tożsamości w subskrypcjach programu Visual Studio
@@ -42,7 +42,7 @@ Odp.: Aby uzyskać informacje na temat kontaktowania się z administratorem, zob
 ### <a name="q-im-an-admin--how-do-i-use-this"></a>Pytanie: jestem administratorem.  Jak mogę to użyć?
 Odp.: implementowanie połączonych tożsamości jest proste.  Aby uzyskać więcej informacji, zapoznaj się z [tym artykułem](personal-email-sign-ins.md) . 
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)

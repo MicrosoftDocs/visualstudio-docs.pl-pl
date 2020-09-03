@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87507966"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML
@@ -162,7 +162,7 @@ Po prawej stronie każdej wartości właściwości jest *znacznik właściwości
 
 Aby uzyskać więcej informacji o używaniu właściwości i obsługi zdarzeń, zobacz [wprowadzenie do formantów i wzorców](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Praca z elementami w projektancie XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [Tworzenie i stosowanie zasobów](../xaml-tools/how-to-create-and-apply-a-resource.md)

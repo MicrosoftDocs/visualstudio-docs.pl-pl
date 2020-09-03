@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c0ce6e68fa36f3b13474306ddd1d8304d640c0ec
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87507979"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Programowanie przy użyciu Visual F# w programie Visual Studio
@@ -160,7 +160,7 @@ Poniższa tabela zawiera podsumowanie obsługi języka F # w narzędziach Visual
 |Metryki kodów|Zbiera informacje o kodzie, takie jak liczby wierszy.|Nie|
 |Widok klas|Przedstawia widok kodu w projekcie oparty na typie.|Nie|
 |[Okno listy błędów](reference/error-list-window.md)|Pokazuje listę błędów w kodzie.|Tak|
-|[F# Interactive](/dotnet/fsharp/tutorials/fsharp-interactive/)|Umożliwia wpisywanie (lub kopiowanie i wklejanie) kodu F # i natychmiastowe uruchamianie go niezależnie od kompilowania projektu. Okno F# Interactive to odczytana, oszacowana i drukowana pętla (REPL).|Tak|
+|[Interaktywny F#](/dotnet/fsharp/tutorials/fsharp-interactive/)|Umożliwia wpisywanie (lub kopiowanie i wklejanie) kodu F # i natychmiastowe uruchamianie go niezależnie od kompilowania projektu. Okno F# Interactive to odczytana, oszacowana i drukowana pętla (REPL).|Tak|
 |Przeglądarka obiektów|Umożliwia wyświetlanie typów w zestawie.|Typy języka F #, które pojawiają się w skompilowanych zestawach, nie są wyświetlane dokładnie podczas ich tworzenia. Można przeglądać skompilowaną reprezentację typów języka F #, ale nie można wyświetlać typów, które są wyświetlane w języku F #.|
 |[Okno wyniku](reference/output-window.md)|Wyświetla dane wyjściowe kompilacji.|Tak|
 |Analiza wydajności|Oferuje narzędzia do mierzenia wydajności kodu.|Tak|
@@ -171,7 +171,7 @@ Poniższa tabela zawiera podsumowanie obsługi języka F # w narzędziach Visual
 |Projekty testowe|Oferuje funkcje, które ułatwiają testowanie kodu.|Nie|
 |Przybornik|Wyświetla karty zawierające przeciągane obiekty, takie jak kontrolki i sekcje tekstu lub kodu.|Tak|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przewodnik po języku F # (.NET Framework)](/dotnet/fsharp/)
 - [Wprowadzenie do języka F # w programie Visual Studio](/dotnet/fsharp/get-started/get-started-visual-studio)

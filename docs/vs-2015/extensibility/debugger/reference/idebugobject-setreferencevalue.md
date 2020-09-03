@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetReferenceValue | Dokumentacja firmy Microsoft
+title: 'IDebugObject:: SetReferenceValue | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b1da0e152d536e9bed47dfb3964df60634c017bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180503"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ustawia wartość odwołanie do tego obiektu.  
+Ustawia wartość referencyjną tego obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,13 +40,13 @@ int SetReferenceValue(
   
 #### <a name="parameters"></a>Parametry  
  `pObject`  
- [in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekt reprezentujący nową wartość odniesienia.  
+ podczas Obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący nową wartość referencyjną.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda powoduje, że to [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) odwołanie do wartości obiektu w obiekcie `pObject` parametru wyrzuca dowolnego odwołania do poprzedniego. Uwaga że `IDebugObject` obiekt już musi być typem referencyjnym.  
+ Ta metoda sprawia, że obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) odwołuje się do wartości obiektu podaną w `pObject` parametrze, zwracając wszystkie poprzednie odwołanie. Należy pamiętać, że ten `IDebugObject` obiekt musi już być typem referencyjnym.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   

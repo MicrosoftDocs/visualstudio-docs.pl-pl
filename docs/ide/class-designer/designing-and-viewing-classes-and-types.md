@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 80668f3b999d9e022de3d22abb383f2dbd10730a
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87507914"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Projektowanie i wyświetlanie klas i typów z Projektant klas
@@ -56,7 +56,7 @@ Po dostosowaniu co najmniej jednego diagramu klas można skopiować je do Micros
 > [!NOTE]
 > Projektant klas nie śledzi lokalizacji plików źródłowych, dlatego zmiana struktury projektu lub przeniesienie plików źródłowych w projekcie może spowodować, że Projektant klas utraci śledzenie tego typu, szczególnie typ źródłowy elementu typedef, klasy bazowe lub typy skojarzeń. Może zostać wyświetlony komunikat o błędzie, np. **Projektant klas nie może wyświetlić tego typu**. Jeśli to zrobisz, przeciągnij ponownie zmodyfikowany lub zlokalizowany kod źródłowy do diagramu klas, aby go wyświetlić.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Funkcje edytora kodu](../writing-code-in-the-code-and-text-editor.md)
 - [Zależności mapy w ramach rozwiązań](../../modeling/map-dependencies-across-your-solutions.md)

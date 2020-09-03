@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20aeee220bec600c2232286d18600b04201ad03b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745612"
 ---
 # <a name="crt-debug-library-use"></a>Korzystanie z biblioteki debugowania CRT
@@ -45,7 +45,7 @@ Biblioteka wykonawcza C zapewnia rozbudowaną obsługę debugowania. Aby użyć 
 
  Aby uzyskać więcej informacji na temat różnych bibliotek czasu wykonywania, których można użyć, zobacz [biblioteki uruchomieniowe języka C](/cpp/c-runtime-library/crt-library-features).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Techniki debugowania CRT](../debugger/crt-debugging-techniques.md)
-- [/MD, /MT, /LD (Korzystaj z bibliotek wykonawczych)](/cpp/build/reference/md-mt-ld-use-run-time-library)
+- [Techniki testowania CRT](../debugger/crt-debugging-techniques.md)
+- [/MD,/MT,/LD (Korzystaj z bibliotek Run-Time)](/cpp/build/reference/md-mt-ld-use-run-time-library)

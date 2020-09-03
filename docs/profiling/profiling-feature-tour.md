@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87507992"
 ---
 # <a name="first-look-at-profiling-tools"></a>Pierwsze spojrzenie na narzędzia profilowania
@@ -89,7 +89,7 @@ Po wybraniu jednego z łączy ze strzałką zostanie wyświetlony widok różnic
 
 Po kliknięciu linku po lewej stronie w widoku **użycie pamięci** widok sterty jest zorganizowany według liczby obiektów; obiekty określonego typu, które zwiększyły największą liczbę, są wyświetlane u góry (posortowane według kolumny **różnic liczby** ).
 
-## <a name="profile-release-builds-without-the-debugger"></a><a name="post_mortem"></a>Tworzenie wersji profilu kompilacji bez debugera
+## <a name="profile-release-builds-without-the-debugger"></a><a name="post_mortem"></a> Tworzenie wersji profilu kompilacji bez debugera
 
 Narzędzia profilowania, takie jak użycie procesora CPU i użycie pamięci, mogą być używane z debugerem (zobacz wcześniejsze sekcje) lub uruchamianie narzędzi profilowania z użyciem profilera wydajności, który jest przeznaczony do zapewnienia analizy kompilacji **wydań** . W profilerze wydajności można zbierać informacje diagnostyczne, gdy aplikacja jest uruchomiona, a następnie przeanalizować zebrane informacje po zatrzymaniu aplikacji. Aby uzyskać więcej informacji na temat różnych metod, zobacz [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Dodatkowe narzędzia, takie jak [Narzędzie do alokacji obiektów .NET](../profiling/dotnet-alloc-tool.md) , są również dostępne w narzędziu Performance Profiler.
 
@@ -135,7 +135,7 @@ W przypadku aplikacji .NET Core, które używają ADO.NET lub Entity Framework C
 
 Narzędzie wyświetla każde zapytanie w widoku listy. Można wyświetlić informacje takie jak godzina rozpoczęcia zapytania i czas trwania.
 
-![Alokacja](./media/db-gotosource.png "Alokacja")
+![Dział](./media/db-gotosource.png "Alokacja")
 
 ::: moniker-end
 
@@ -200,25 +200,25 @@ W programie Visual Studio 2019 starsze Eksplorator wydajności i powiązane narz
 Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanych przez program Visual Studio i różne typy projektów, z których można korzystać:
 
 ::: moniker range=">=vs-2019"
-|Narzędzie wydajności|Pulpit systemu Windows|UWP|ASP.NET/ASP.NET rdzeń|
+|Narzędzie wydajności|Pulpit systemu Windows|Platforma UWP|ASP.NET/ASP.NET rdzeń|
 |----------------------|---------------------|-------------|-------------|
 |[Wskazówki dotyczące wydajności](../profiling/perftips.md)|tak|tak|tak|
-|[Użycie procesora CPU](../profiling/cpu-usage.md)|tak|tak|tak|
+|[Użycie procesora](../profiling/cpu-usage.md)|tak|tak|tak|
 |[Użycie pamięci](../profiling/memory-usage.md)|tak|tak|tak|
 |[Alokacja obiektu platformy .NET](../profiling/dotnet-alloc-tool.md)|tak (tylko platforma .NET)|tak|tak|
 |[Użycie procesora GPU](/visualstudio/debugger/graphics/gpu-usage)|tak|tak|nie|
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|tak|tak|nie|
 |[Podgląd zdarzeń](../profiling/events-viewer.md)|tak|tak|tak|
 |[.NET Async](../profiling/analyze-async.md)|tak (tylko platforma .NET)|tak|tak|
-|[Baza danych](../profiling/analyze-database.md)|tak (tylko platforma .NET Core)|nie|tak (tylko ASP.NET Core)|
+|[Database](../profiling/analyze-database.md) (Baza danych)|tak (tylko platforma .NET Core)|nie|tak (tylko ASP.NET Core)|
 |[Eksplorator wydajności](../profiling/performance-explorer.md)|nie|nie|nie|
 |[IntelliTrace](../debugger/intellitrace.md)|Tylko platforma .NET z Visual Studio Enterprise|Tylko platforma .NET z Visual Studio Enterprise|Tylko platforma .NET z Visual Studio Enterprise|
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-|Narzędzie wydajności|Pulpit systemu Windows|UWP|ASP.NET/ASP.NET rdzeń|
+|Narzędzie wydajności|Pulpit systemu Windows|Platforma UWP|ASP.NET/ASP.NET rdzeń|
 |----------------------|---------------------|-------------|-------------|
-|[Użycie procesora CPU](../profiling/cpu-usage.md)|tak|tak|tak|
+|[Użycie procesora](../profiling/cpu-usage.md)|tak|tak|tak|
 |[Użycie pamięci](../profiling/memory-usage.md)|tak|tak|tak|
 |[Użycie procesora GPU](/visualstudio/debugger/graphics/gpu-usage)|tak|tak|nie|
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|tak|tak|nie|
@@ -231,5 +231,5 @@ Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanyc
 ::: moniker-end
 
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie w Visual Studio](../debugger/debugger-feature-tour.md)

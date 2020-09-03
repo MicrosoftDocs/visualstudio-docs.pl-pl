@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a2511fc2adfa63ff28f8459f48cbdf4b4623ff5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745664"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Konfigurowanie zapory do zdalnego debugowania — Okno dialogowe
@@ -40,7 +40,7 @@ To okno dialogowe pojawia się, gdy Zapora systemu Windows zablokuje dostęp do 
 
  **Odblokuj debugowanie zdalne z dowolnego komputera** Umożliwia zdalne debugowanie maszyn w dowolnym miejscu w sieci. To ustawienie jest najmniej bezpieczne.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

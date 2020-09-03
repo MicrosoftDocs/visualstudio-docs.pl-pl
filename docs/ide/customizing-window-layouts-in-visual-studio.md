@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2135183a474e29229d941bbd47af8d6abc263e49
-ms.sourcegitcommit: 30a810f39c06958c79505773f052e96b982e5d5b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/04/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87546078"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Dostosowywanie układów okien w programie Visual Studio
@@ -38,7 +38,7 @@ Możesz również nazwać i zapisać niestandardowy układ, a następnie przeł�
 
 ## <a name="tool-and-document-windows"></a>Okna narzędzi i dokumentów
 
-Środowisko IDE ma dwa podstawowe typy okien, okna *narzędzi* i *okna dokumentów*. Okna narzędzi obejmują **Eksplorator rozwiązań**, **Eksplorator serwera**, **okno dane wyjściowe**, **Lista błędów**, projektantów, okien debugera i tak dalej. Okna dokumentów zawierają pliki kodu źródłowego, dowolne pliki tekstowe, pliki konfiguracji i tak dalej. Rozmiar okien narzędzi można zmienić i przeciągnąć je na pasku tytułu. Okna dokumentów można przeciągać według ich kart. Kliknij prawym przyciskiem myszy kartę lub pasek tytułu, aby ustawić inne opcje okna.
+Środowisko IDE ma dwa podstawowe typy okien, okna *narzędzi* i *okna dokumentów*. Okna narzędzi obejmują **Eksplorator rozwiązań**, **Eksplorator serwera**, **okno dane wyjściowe**, **Lista błędów**, projektantów, okien debugera i tak dalej. Okna dokumentów zawierają pliki kodu źródłowego, dowolne pliki tekstowe, pliki konfiguracji i tak dalej. Rozmiar okien narzędzi można zmienić i przeciągnąć je na pasku tytułu. Okna dokumentów można przeciągnąć przez ich kartę. Kliknij prawym przyciskiem myszy kartę lub pasek tytułu, aby ustawić inne opcje okna.
 
 Menu **okno** zawiera opcje dokowania, zmiennoprzecinkowe i ukrywające okna w środowisku IDE. Kliknij prawym przyciskiem myszy kartę okna lub pasek tytułu, aby wyświetlić dodatkowe opcje dla danego okna. Można wyświetlić więcej niż jedno wystąpienie niektórych okien narzędzi naraz. Można na przykład wyświetlić więcej niż jedno okno przeglądarki sieci Web i utworzyć dodatkowe wystąpienia niektórych okien narzędzi, wybierając pozycję **nowe okno** w menu **okno** .
 
@@ -52,7 +52,7 @@ Karty umożliwiają rozmieszczenie układu na kilka różnych sposobów. Na przy
 
 #### <a name="preview-tab-document-windows"></a>Karta Podgląd (okna dokumentów)
 
-Na karcie **Podgląd** można wyświetlić pliki w edytorze bez ich otwierania. Możesz wyświetlić podgląd plików, wybierając je w **Eksplorator rozwiązań**podczas debugowania, gdy przejdziesz do plików, z **Przejdź do definicji**, a następnie przeglądając wyniki wyszukiwania. Pliki w wersji zapoznawczej są wyświetlane na karcie po prawej stronie karty dokumentu. Plik zostanie otwarty do edycji w przypadku jego modyfikacji lub wybrania opcji **Otwórz**.
+Na karcie **Podgląd** można wyświetlić pliki w edytorze bez ich otwierania. Możesz wyświetlić podgląd plików, wybierając je w **Eksplorator rozwiązań**podczas debugowania, gdy przejdziesz do plików, z **Przejdź do definicji**, a następnie przeglądając wyniki wyszukiwania. Pliki w wersji zapoznawczej są wyświetlane na karcie po prawej stronie karty dokumentu. Plik zostanie otwarty do edycji w przypadku jego modyfikacji lub wybrania opcji  **Otwórz**.
 
 ::: moniker range="vs-2019"
 

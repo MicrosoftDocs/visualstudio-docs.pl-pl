@@ -2,17 +2,17 @@
 title: Korzyść pomocy technicznej
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 03/26/2020
+ms.date: 09/02/2020
 ms.topic: how-to
 description: Dowiedz się, jak aktywować korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: 247a2b9d4649aae6f3a32a6156e2f9558c481e68
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 3081836b94fbc5fdda277d694086acc18db6eb44
+ms.sourcegitcommit: 1d74273a50ede5a90d9d64372d93aad357daef42
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387294"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89365849"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej i korzystaj z niej w subskrypcjach programu Visual Studio
 Korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio służy do rozwiązywania problemów z uszkodzeniem w **środowiskach nieprodukcyjnych** dla produktów, które są nadal w fazie wsparcia podstawowego dla [cyklu](https://support.microsoft.com/lifecycle/search)pomocy technicznej. Visual Studio Enterprise standardowa i roczna subskrypcja chmury otrzymuje cztery incydenty, podczas Visual Studio Professional standardowa i roczna subskrypcja chmury odbiera dwa zdarzenia, przez maksymalnie 1 rok od aktywacji korzyści. Aktywacja korzyści musi nastąpić, gdy subskrypcja jest aktualna.
@@ -31,6 +31,9 @@ Narzędzia deweloperskie, takie jak środowisko IDE programu Visual Studio i Azu
 Produkty niebędące deweloperami (takie jak SQL, Windows, SharePoint) pobrane z subskrypcji programu Visual Studio kwalifikują się tylko do wsparcia podstawowego. Te produkty są licencjonowane wyłącznie w środowiskach deweloperskich, które umożliwiają projektowanie, opracowywanie, testowanie i prezentowanie aplikacji. Te produkty nie są licencjonowane dla środowisk produkcyjnych.
 
 Opisy poziomów produktów: rozwiń węzeł **niedostępne plany pomocy technicznej**. Jeśli nie można **użyć planu pomocy technicznej w celu uzyskania pomocy technicznej dotyczącej określonego produktu (kod: 8)**, nie można użyć umowy serwisowej dla wybranej wersji produktu.
+
+> [!IMPORTANT]
+> Podane zdarzenia pomocy technicznej są przeznaczone do obsługi poprawek przerwania.  Nie mogą być używane w celu uzyskania pomocy w przypadku problemów z programowaniem/programowaniem obejmujących Microsoft Teams, Microsoft Office, Microsoft SharePoint lub Microsoft Outlook
 
 ## <a name="how-to-activate-the-benefit"></a>Jak aktywować korzyść
 1. Przejdź do <https://my.visualstudio.com/Benefits> , przewiń w dół do sekcji Pomoc techniczna, a następnie na kafelku pomoc techniczna kliknij pozycję **rozmowa, aby aktywować**.
@@ -135,6 +138,6 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="next-steps"></a>Następne kroki
 Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
-- [Visual Studio](vs-ide-benefit.md)
+- [Program Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)

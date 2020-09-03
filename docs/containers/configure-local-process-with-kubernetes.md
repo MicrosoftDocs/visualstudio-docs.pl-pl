@@ -10,13 +10,13 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.openlocfilehash: 234eacedbc08007ede6bb5745a1a289aa838cccb
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87508304"
 ---
-# <a name="configure-local-process-with-kubernetes"></a>Konfigurowanie procesu lokalnego przy użyciu Kubernetes
+# <a name="configure-local-process-with-kubernetes"></a>Konfigurowanie procesu lokalnego z platformą Kubernetes
 
 `KubernetesLocalProcessConfig.yaml`Plik umożliwia replikowanie zmiennych środowiskowych i zainstalowanych plików dostępnych dla Twojego zasobnika w KLASTRZE AKS. W pliku można określić następujące akcje `KubernetesLocalProcessConfig.yaml` :
 
