@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldInstance::GetTypeArguments | Dokumenty firmy Microsoft
+title: 'IDebugGenericFieldInstance:: GetTypeArguments — | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c41a3f314f641ed4bff116959b6d70f0a5fb9dcb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728178"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
@@ -44,16 +44,16 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>Parametry
 `cArgs`\
-[w] Liczba parametrów typu.
+podczas Liczba parametrów typu.
 
 `ppArgs`\
-[na zewnątrz] Zwraca tablicę parametrów typu.
+określoną Zwraca tablicę parametrów typu.
 
 `pcArgs`\
-[w, na zewnątrz] Liczba elementów `ppArgs` członkowskich w tablicy.
+[in. out] Liczba elementów członkowskich w `ppArgs` tablicy.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

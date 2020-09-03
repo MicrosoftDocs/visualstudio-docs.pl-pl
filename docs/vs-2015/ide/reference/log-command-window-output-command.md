@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d9a5a29cd63f9d51f86d41d2f0f5986a77666318
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666867"
 ---
 # <a name="log-command-window-output-command"></a>Zapisuj dane wyjściowe okna Polecenie — Polecenie
@@ -33,7 +33,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `filename` opcjonalny. Nazwa pliku dziennika. Domyślnie plik jest tworzony w folderze profilu użytkownika. Jeśli nazwa pliku już istnieje, dziennik jest dołączany na końcu istniejącego pliku. Jeśli plik nie zostanie określony, zostanie użyty ostatni określony plik. Jeśli żaden z powyższych plików nie istnieje, zostanie utworzony domyślny plik dziennika o nazwie Cmdlines. log.
+ `filename` Obowiązkowe. Nazwa pliku dziennika. Domyślnie plik jest tworzony w folderze profilu użytkownika. Jeśli nazwa pliku już istnieje, dziennik jest dołączany na końcu istniejącego pliku. Jeśli plik nie zostanie określony, zostanie użyty ostatni określony plik. Jeśli żaden z powyższych plików nie istnieje, zostanie utworzony domyślny plik dziennika o nazwie Cmdlines. log.
 
 > [!TIP]
 > Aby zmienić lokalizację, w której zapisano plik dziennika, wprowadź pełną ścieżkę pliku, ujętą w cudzysłów, jeśli ścieżka zawiera spacje.
@@ -43,7 +43,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 
  /off opcjonalne. Kończy dziennik okna **poleceń** .
 
- zastępowania opcjonalne. Jeśli plik określony w argumencie `filename` jest zgodny z istniejącym plikiem, plik zostanie nadpisany.
+ zastępowania opcjonalne. Jeśli plik określony w `filename` argumencie jest zgodny z istniejącym plikiem, plik zostanie nadpisany.
 
 ## <a name="remarks"></a>Uwagi
  Jeśli plik nie zostanie określony, domyślnie tworzony jest plik Cmdlines. log. Domyślnie alias dla tego polecenia to log.

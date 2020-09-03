@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 9a3aee5dc1c2d1272c3814fa6cfb2561f6cb4564
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801311"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Publikowanie w usłudze Azure App Service w systemie Windows
@@ -202,7 +202,7 @@ Publikowanie w Azure App Service z programu Visual Studio 2017 i nowsze kopiuje 
 
 1. Wybierz pozycję **dalej >** w razie potrzeby, aby przejrzeć dodatkowe ustawienia.
 
-1. Kliknij pozycję **Opublikuj**. Po wdrożeniu aplikacji na platformie Azure w tej witrynie zostanie otwarta przeglądarka domyślna.
+1. Wybierz pozycję **Opublikuj**. Po wdrożeniu aplikacji na platformie Azure w tej witrynie zostanie otwarta przeglądarka domyślna.
 
 W ramach tego procesu program Visual Studio wykonuje również następujące czynności:
 

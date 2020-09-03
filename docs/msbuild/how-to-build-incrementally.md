@@ -1,5 +1,5 @@
 ---
-title: 'Jak: Budować przyrostowo | Dokumenty firmy Microsoft'
+title: 'Instrukcje: kompilowanie przyrostowe | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4911bb131f5c5c878b82865b3dee61fd7bedbe1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634165"
 ---
-# <a name="how-to-build-incrementally"></a>Jak: Tworzenie przyrostowo
+# <a name="how-to-build-incrementally"></a>Instrukcje: kompilowanie przyrostowe
 
-Podczas tworzenia dużego projektu, ważne jest, że wcześniej utworzone składniki, które są nadal aktualne nie są przebudowywane. Jeśli wszystkie obiekty docelowe są budowane za każdym razem, każda kompilacja zajmie dużo czasu. Aby włączyć kompilacje przyrostowe (kompilacje, w których tylko te obiekty docelowe, które nie zostały zbudowane przed lub cele, które są nieaktualne, są przebudowywane), aparat kompilacji firmy Microsoft (MSBuild) można porównać sygnatury czasowe plików wejściowych z sygnaturami czasowymi plików wyjściowych i określić, czy pominąć, zbudować lub częściowo odbudować obiekt docelowy. Jednak musi istnieć mapowanie jeden do jednego między wejściami i wyjściami. Można użyć przekształceń, aby włączyć obiekty docelowe do identyfikowania tego mapowania bezpośredniego. Aby uzyskać więcej informacji na temat przekształceń, zobacz [Przekształcenia](../msbuild/msbuild-transforms.md).
+Podczas kompilowania dużego projektu ważne jest, aby wcześniej skompilowane składniki, które są nadal aktualne, nie zostały odbudowane. Jeśli wszystkie elementy docelowe są tworzone za każdym razem, ukończenie każdej kompilacji potrwa dużo czasu. Aby włączyć Kompilacje przyrostowe (kompilacje, w których tylko te elementy docelowe, które nie zostały skompilowane przed lub celem, które są nieaktualne, są ponownie kompilowane), Microsoft Build Engine (MSBuild) można porównać sygnatury czasowe plików wejściowych z sygnaturami czasowymi plików wyjściowych i określić, czy pominąć, skompilować lub częściowo ponownie skompilować element docelowy. Jednak musi istnieć mapowanie jeden do jednego między danymi wejściowymi i wyjściowymi. Można użyć transformacji, aby umożliwić obiektom docelowym zidentyfikowanie tego bezpośredniego mapowania. Aby uzyskać więcej informacji na temat transformacji, zobacz [transformacje](../msbuild/msbuild-transforms.md).
 
-## <a name="specify-inputs-and-outputs"></a>Określanie wejść i wyjść
+## <a name="specify-inputs-and-outputs"></a>Określanie danych wejściowych i wyjściowych
 
-Obiekt docelowy można budować przyrostowo, jeśli dane wejściowe i wyjściowe są określone w pliku projektu.
+Element docelowy można skompilować przyrostowo, jeśli dane wejściowe i wyjściowe są określone w pliku projektu.
 
-#### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Aby określić wejścia i wyjścia dla obiektu docelowego
+#### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Aby określić dane wejściowe i wyjściowe dla elementu docelowego
 
-- Użyj `Inputs` i `Outputs` atrybuty `Target` elementu. Przykład:
+- Użyj `Inputs` atrybutów i `Outputs` `Target` elementu. Na przykład:
 
   ```xml
   <Target Name="Build"
@@ -37,7 +37,7 @@ Obiekt docelowy można budować przyrostowo, jeśli dane wejściowe i wyjściowe
       Outputs="hello.exe">
   ```
 
-MSBuild można porównać sygnatury czasowe plików wejściowych z sygnatury czasowe plików wyjściowych i określić, czy pominąć, skompilować lub częściowo odbudować miejsce docelowe. W poniższym przykładzie, jeśli `@(CSFile)` dowolny plik na liście elementów jest nowszy niż plik *hello.exe,* MSBuild uruchomi obiekt docelowy; w przeciwnym razie zostanie pominięty:
+Program MSBuild może porównać sygnatury czasowe plików wejściowych z sygnaturami czasowymi plików wyjściowych i określić, czy pominąć, skompilować lub częściowo ponownie skompilować element docelowy. W poniższym przykładzie, jeśli dowolny plik na `@(CSFile)` liście elementów jest nowszy niż plik *hello.exe* , program MSBuild uruchomi element docelowy; w przeciwnym razie zostanie pominięty:
 
 ```xml
 <Target Name="Build"
@@ -50,27 +50,27 @@ MSBuild można porównać sygnatury czasowe plików wejściowych z sygnatury cza
 </Target>
 ```
 
-Gdy wejścia i wyjścia są określone w docelowych, każde wyjście można mapować tylko do jednego wejścia lub nie może być bezpośrednie mapowanie między wyjściami i wejściami. W poprzednim [zadaniu Csc](../msbuild/csc-task.md), na przykład, wyjście, *hello.exe*, nie może być mapowane na żadne pojedyncze dane wejściowe - to zależy od wszystkich z nich.
+Gdy dane wejściowe i wyjściowe są określone w elemencie docelowym, wszystkie dane wyjściowe można mapować tylko na jedną wartość wejściową lub nie może istnieć bezpośrednie mapowanie między wyjściem i danymi wejściowymi. W poprzednim [zadaniu CSC](../msbuild/csc-task.md), na przykład dane wyjściowe *hello.exe*, nie mogą być mapowane na żadne pojedyncze dane wejściowe — zależy to od wszystkich tych danych.
 
 > [!NOTE]
-> Obiekt docelowy, w którym nie ma bezpośredniego mapowania między wejściami i wyjściami zawsze będzie kompilacji częściej niż miejsce docelowe, w którym każdy wynik można mapować tylko do jednego wejścia, ponieważ MSBuild nie można określić, które dane wyjściowe muszą zostać przebudowane, jeśli niektóre dane wejściowe uległy zmianie.
+> Obiekt docelowy, w którym nie istnieje bezpośrednie mapowanie między danymi wejściowymi i wyjściowymi, zawsze kompiluje się częściej niż obiekt docelowy, w którym każde dane wyjściowe mogą być mapowane tylko do jednego elementu wejściowego, ponieważ program MSBuild nie może określić, które wyjścia należy odbudować, jeśli niektóre dane wejściowe uległy zmianie.
 
-Zadania, w których można zidentyfikować bezpośrednie mapowanie między wyjściami i wejściami, takie jak [zadanie LC,](../msbuild/lc-task.md)są najbardziej odpowiednie dla kompilacji przyrostowych, w przeciwieństwie do zadań takich jak [Csc](../msbuild/csc-task.md) i [Vbc](../msbuild/vbc-task.md), które generują jeden zestaw wyjściowy z wielu wejść.
+Zadania, w których można zidentyfikować bezpośrednie mapowanie między wynikami i danymi wejściowymi, takie jak [zadanie LC](../msbuild/lc-task.md), są najbardziej odpowiednie dla kompilacji przyrostowych, w przeciwieństwie do zadań, takich jak [CSC](../msbuild/csc-task.md) i [VBC](../msbuild/vbc-task.md), które tworzą jeden zestaw wyjściowy z wielu danych wejściowych.
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie użyto projektu, który tworzy pliki Pomocy dla hipotetycznego systemu Pomocy. Projekt polega na konwersji źródłowych plików *.txt* na pośrednie pliki *.content,* które następnie są łączone z plikami metadanych XML w celu uzyskania ostatecznego pliku *pomocy* używanego przez system Pomocy. W projekcie wykorzystuje się następujące hipotetyczne zadania:
+W poniższym przykładzie używa się projektu, który kompiluje pliki pomocy dla hipotetycznego systemu pomocy. Projekt działa przez konwertowanie źródłowych plików *txt* na pośrednie pliki *zawartości* , które następnie są łączone z plikami metadanych XML w celu utworzenia końcowego pliku *pomocy* używanego przez system pomocy. Projekt używa następujących hipotetycznych zadań:
 
-- `GenerateContentFiles`: Konwertuje pliki *txt* na pliki *.content.*
+- `GenerateContentFiles`: Konwertuje pliki *txt* na pliki *zawartości* .
 
-- `BuildHelp`: Łączy pliki *.content* i pliki metadanych XML w celu utworzenia ostatecznego pliku *pomocy.*
+- `BuildHelp`: Łączy pliki *zawartości* i pliki metadanych XML, aby skompilować końcowy plik *pomocy* .
 
-Projekt używa przekształceń do utworzenia mapowania jeden do jednego między `GenerateContentFiles` wejściami i wyjściami w zadaniu. Aby uzyskać więcej informacji, zobacz [Przekształcenia](../msbuild/msbuild-transforms.md). Ponadto `Output` element jest ustawiony na automatyczne używanie wyjść `GenerateContentFiles` z zadania jako `BuildHelp` danych wejściowych dla zadania.
+Projekt używa transformacji, aby utworzyć mapowanie jeden do jednego między danymi wejściowymi i wyjściowymi w `GenerateContentFiles` zadaniu. Aby uzyskać więcej informacji, zobacz [transformacje](../msbuild/msbuild-transforms.md). Ponadto `Output` element jest ustawiony do automatycznego używania danych wyjściowych z `GenerateContentFiles` zadania jako dane wejściowe dla `BuildHelp` zadania.
 
-Ten plik projektu `Convert` zawiera `Build` zarówno obiekty docelowe, jak i obiekty docelowe. I `GenerateContentFiles` `BuildHelp` zadania są umieszczane w `Convert` i `Build` cele odpowiednio tak, że każdy cel może być zbudowany przyrostowo. Za pomocą `Output` elementu, dane wyjściowe `GenerateContentFiles` zadania są `ContentFile` umieszczane na liście elementów, gdzie `BuildHelp` mogą być używane jako dane wejściowe dla zadania. Za `Output` pomocą elementu w ten sposób automatycznie zapewnia dane wyjściowe z jednego zadania jako dane wejściowe dla innego zadania, dzięki czemu nie trzeba ręcznie listy poszczególnych elementów lub elementów list w każdym zadaniu.
+Ten plik projektu zawiera `Convert` `Build` elementy i. `GenerateContentFiles`Zadania i `BuildHelp` są umieszczane w `Convert` i `Build` obiekty docelowe odpowiednio w taki sposób, że każdy element docelowy może być zbudowany przyrostowo. Za pomocą `Output` elementu dane wyjściowe `GenerateContentFiles` zadania są umieszczane na `ContentFile` liście elementów, gdzie mogą być używane jako dane wejściowe `BuildHelp` zadania. Użycie `Output` elementu w ten sposób automatycznie udostępnia dane wyjściowe z jednego zadania jako dane wejściowe dla innego zadania, dzięki czemu nie trzeba ręcznie wyświetlać poszczególnych elementów lub list elementów w każdym zadaniu.
 
 > [!NOTE]
-> Mimo `GenerateContentFiles` że obiekt docelowy można tworzyć przyrostowo, wszystkie dane wyjściowe z `BuildHelp` tego obiektu docelowego zawsze są wymagane jako dane wejściowe dla obiektu docelowego. MSBuild automatycznie udostępnia wszystkie dane wyjściowe z jednego obiektu docelowego `Output` jako dane wejściowe dla innego obiektu docelowego podczas korzystania z elementu.
+> Mimo że `GenerateContentFiles` element docelowy może kompilować przyrostowo, wszystkie dane wyjściowe z tego obiektu docelowego zawsze są wymagane jako wejścia dla `BuildHelp` elementu docelowego. Program MSBuild automatycznie udostępnia wszystkie dane wyjściowe z jednego obiektu docelowego jako dane wejściowe dla innego obiektu docelowego przy użyciu `Output` elementu.
 
 ```xml
 <Project DefaultTargets="Build"
@@ -106,8 +106,8 @@ Ten plik projektu `Convert` zawiera `Build` zarówno obiekty docelowe, jak i obi
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Cele](../msbuild/msbuild-targets.md)
-- [Element docelowy (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Targets (Obiekty docelowe)](../msbuild/msbuild-targets.md)
+- [Target — element (MSBuild)](../msbuild/target-element-msbuild.md)
 - [Przekształcenia](../msbuild/msbuild-transforms.md)
-- [Zadanie csc](../msbuild/csc-task.md)
-- [Zadanie Vbc](../msbuild/vbc-task.md)
+- [Csc — Zadanie](../msbuild/csc-task.md)
+- [Vbc — Zadanie](../msbuild/vbc-task.md)

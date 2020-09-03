@@ -2,7 +2,7 @@
   tocHref: /
   topicHref: /
   items:
-    - name: Wykonywanie skryptów
+    - name: Obsługa skryptów
       tocHref: /scripting/
       topicHref: /scripting
       items:
@@ -14,7 +14,7 @@
           tocHref: /scripting/winscript/
           topicHref: /scripting/winscript/windows-script-interfaces
           items:
-            - name: Tematy pomocy
+            - name: Dokumentacja
               tocHref: /scripting/winscript/reference/
               topicHref: /scripting/winscript/reference/windows-script-interfaces-reference
         - name: Hostowanie środowiska uruchomieniowego JavaScript

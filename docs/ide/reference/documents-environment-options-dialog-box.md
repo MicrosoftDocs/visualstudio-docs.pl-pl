@@ -32,56 +32,56 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7813a2e7686bef5a146e7472bce7f2c24baf9cd2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570066"
 ---
-# <a name="options-dialog-box-environment--documents"></a>Okno dialogowe \> Opcje: Dokumenty środowiskowe
+# <a name="options-dialog-box-environment--documents"></a>Opcje — okno dialogowe: \> dokumenty środowiska
 
-Ta strona okna dialogowego **Opcje** służy do kontrolowania wyświetlania dokumentów w zintegrowanym środowisku programistycznym (IDE) i zarządzania zewnętrznymi zmianami w dokumentach i plikach. Dostęp do tego okna dialogowego można uzyskać, klikając polecenie **Opcje** w menu **Narzędzia,** a następnie wybierając polecenie**Dokumenty** **środowiska** > .
+Za pomocą tej strony okna dialogowego **Opcje** można sterować wyświetlaniem dokumentów w zintegrowanym środowisku programistycznym (IDE) i zarządzać zmianami zewnętrznymi do dokumentów i plików. Możesz uzyskać dostęp do tego okna dialogowego, klikając opcję **Opcje** w menu **Narzędzia** , a **Environment**następnie wybierając  >  **dokumenty**środowiska.
 
-**Wykrywanie zmiany pliku poza środowiskiem**
+**Wykryj, kiedy plik zostanie zmieniony poza środowiskiem**
 
-Gdy ta opcja jest zaznaczona, natychmiast zostanie wyświetlony komunikat informujący o zmianach w otwartym pliku wprowadzonych przez edytor spoza IDE. Komunikat umożliwia ponowne załadowanie pliku z magazynu.
+Gdy ta opcja jest zaznaczona, komunikat natychmiast powiadamia o zmianach w otwartym pliku, który został utworzony przez Edytor poza IDE. Komunikat umożliwia ponowne załadowanie pliku z magazynu.
 
-**Ponowne ładowanie zmodyfikowanych plików, chyba że istnieją niezapisane zmiany**
+**Załaduj ponownie zmodyfikowane pliki, chyba że istnieją niezapisane zmiany**
 
-Po **wykryciu, gdy plik jest zmieniany poza wybranym środowiskiem** i otwarty plik w IDE zmienia się poza IDE, komunikat ostrzegawczy jest generowany domyślnie. Jeśli ta opcja jest włączona, nie pojawia się ostrzeżenie i dokument jest ponownie ładowany w IDE, aby odebrać zmiany zewnętrzne.
+Gdy **wykryjesz, gdy plik zostanie zmieniony poza środowiskiem** wybranym, a otwarty plik w IDE ulegnie zmianie poza IDE, domyślnie generowany jest komunikat ostrzegawczy. Jeśli ta opcja jest włączona, nie są wyświetlane żadne ostrzeżenie i dokument zostanie ponownie załadowany w środowisku IDE w celu pobrania zewnętrznych zmian.
 
-**Zezwalaj na edycję plików tylko do odczytu; ostrzegaj podczas próby zapisania**
+**Zezwalaj na edytowanie plików tylko do odczytu; Ostrzegaj przy próbie zapisu**
 
-Gdy ta opcja jest włączona, można otworzyć i edytować plik tylko do odczytu. Po zakończeniu należy użyć polecenia **Zapisz jako,** aby zapisać plik według nowej nazwy, jeśli chcesz zapisać rekord zmian.
+Gdy ta opcja jest włączona, można otworzyć i edytować plik tylko do odczytu. Po zakończeniu należy użyć polecenia **Zapisz jako** , aby zapisać plik o nowej nazwie, jeśli chcesz zapisać rekord zmian.
 
-**Otwieranie pliku przy użyciu katalogu aktualnie aktywnego dokumentu**
+**Otwórz plik, używając katalogu aktualnie aktywnego dokumentu**
 
-Po zaznaczeniu tej opcji opcja określa, że w oknie dialogowym **Otwieranie pliku** jest wyświetlany katalog aktywnego dokumentu. Gdy ta opcja jest wyczyszczona, w oknie dialogowym **Otwórz plik** jest wyświetlany katalog ostatnio używany do otwierania pliku.
+Po wybraniu tej opcji określa, że okno dialogowe **Otwórz plik** wyświetla katalog aktywnego dokumentu. Gdy ta opcja jest wyczyszczona, w oknie dialogowym **Otwórz plik** zostanie wyświetlony katalog ostatnio używany do otwierania pliku.
 
-**Sprawdzanie spójnych zakończeń linii przy obciążeniu**
+**Sprawdź spójność końców wierszy przy ładowaniu**
 
-Wybierz tę opcję, aby edytor skanował zakończenia wierszy w pliku i wyświetlał okno komunikatu, jeśli zostaną wykryte niespójności w sposobie formatowania zakończeń linii.
+Zaznacz tę opcję, aby Edytor skanował końce wiersza w pliku i wyświetlał okno komunikatu w przypadku wykrycia niespójności w sposobie formatowania końców wierszy.
 
-**Wyświetlanie ostrzeżenia, gdy globalne cofanie zmodyfikuje edytowane pliki**
+**Wyświetl ostrzeżenie, gdy globalne cofanie modyfikuje edytowane pliki**
 
-Wybierz tę opcję, aby wyświetlić okno komunikatu, gdy polecenie **Globalne cofnij** spowoduje wycofanie zmian refaktoryzacji wprowadzonych w plikach, które również zostały zmienione po operacji refaktoryzacji. Zwracanie pliku do stanu wstępnej refaktoryzacji może odrzucić kolejne zmiany wprowadzone w pliku.
+Wybierz tę opcję, aby wyświetlić okno komunikatu, gdy **globalne polecenie Cofnij** spowoduje wycofanie zmian refaktoryzacji wprowadzonych w plikach, które również zostały zmienione po operacji refaktoryzacji. Przywrócenie pliku do jego stanu sprzed refaktoryzacji może spowodować odrzucenie kolejnych zmian wprowadzonych w pliku.
 
-**Pokaż różne pliki w Eksploratorze rozwiązań**
+**Pokaż różne pliki w Eksplorator rozwiązań**
 
-Wybierz tę opcję, aby wyświetlić węzeł **Różne pliki** w **Eksploratorze rozwiązań**. Różne pliki to pliki, które nie są skojarzone z projektem lub rozwiązaniem, ale mogą pojawić się w **Eksploratorze rozwiązań** dla Twojej wygody.
+Wybierz tę opcję, aby wyświetlić węzeł **różne pliki** w **Eksplorator rozwiązań**. Różne pliki są plikami, które nie są skojarzone z projektem lub rozwiązaniem, ale mogą występować w **Eksplorator rozwiązań** dla wygody użytkownika.
 
 > [!NOTE]
-> Wybierz tę opcję, aby włączyć polecenie **Wyświetl w przeglądarce** w menu **Plik** dla dokumentów internetowych, które nie zostały uwzględnione w aktywnej aplikacji sieci web.
+> Wybierz tę opcję, aby włączyć polecenie **Widok w przeglądarce** w menu **plik** dla dokumentów sieci Web, które nie są uwzględnione w aktywnej aplikacji sieci Web.
 
-**Elementy zapisane w projekcie Różne pliki**
+**Elementy zapisywane w projekcie różne pliki**
 
-Określa liczbę plików, które mają być zachowywane w folderze **Różne pliki** **Eksploratora rozwiązań**. Te pliki są wyświetlane, nawet jeśli nie są już otwarte w edytorze. Można określić dowolną liczbę całkowita od 0 do 256. Domyślna liczba to 0.
+Określa liczbę plików, które mają być przechowywane w folderze **różne pliki** **Eksplorator rozwiązań**. Te pliki są wyświetlane nawet wtedy, gdy nie są już otwierane w edytorze. Można określić dowolną liczbę całkowitą od 0 do 256. Wartość domyślna to 0.
 
-Jeśli na przykład ta opcja zostanie ustawiona na 5 i otworzy się 10 różnych plików, po zamknięciu wszystkich 10 plików pierwsze 5 będzie nadal wyświetlane w folderze **Różne pliki.**
+Na przykład jeśli ustawisz tę opcję na 5 i masz otwarte 10 różnych plików, po zamknięciu wszystkich 10 plików, pierwsze 5 będzie nadal wyświetlane w folderze **różne pliki** .
 
-**Zapisywanie dokumentów jako Unicode, gdy danych nie można zapisać na stronie kodowej**
+**Zapisuj dokumenty jako Unicode, gdy nie można zapisać danych na stronie kodowej**
 
-Wybierz tę opcję, aby domyślnie zapisywać pliki zawierające informacje niezgodne z wybraną stroną kodową jako Unicode.
+Wybierz tę opcję, aby spowodować, że pliki zawierające informacje niezgodne z wybraną stroną kodową mają być domyślnie zapisane w formacie Unicode.
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -2,7 +2,7 @@
   items:
     - name: Analizowanie i modelowanie architektury
       href: analyze-and-model-your-architecture.md
-    - name: Co nowego?
+    - name: Co nowego
       href: what-s-new-for-design-in-visual-studio.md
     - name: Scenariusz — zmiana projektu z wykorzystaniem wizualizacji i modelowania
       href: scenario-change-your-design-using-visualization-and-modeling.md

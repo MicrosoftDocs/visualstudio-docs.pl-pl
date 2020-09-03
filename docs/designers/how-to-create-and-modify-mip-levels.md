@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e9764bdfb476d9e2c4aa8ab2c04ee3aaa4f222a
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769060"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Instrukcje: Tworzenie i modyfikowanie poziomów MIP
@@ -41,6 +41,6 @@ Aby osiągnąć efekty specjalne lub zwiększyć jakość obrazu na określonych
 > [!NOTE]
 > Jeśli nie trzeba modyfikować zawartości poszczególnych poziomów MIP, jak można osiągnąć pewne efekty — zalecamy generowanie mipmapy z tekstury źródłowej w czasie kompilacji. Pozwala to zagwarantować, że poziomy MCI pozostają zsynchronizowane ze teksturą źródłową, ponieważ modyfikacje poziomu MIP nie są propagowane do innych poziomów automatycznie. Aby uzyskać więcej informacji na temat generowania mipmapy w czasie kompilacji, zobacz [How to: Export a tekstury, która zawiera mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md)

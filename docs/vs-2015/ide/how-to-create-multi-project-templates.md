@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1de155b71e82bb7561030cae2e1d0d4d777c9586
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668059"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Porady: tworzenie szablonów wielu projektów
@@ -49,14 +49,14 @@ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projekt
 
   Plik root. vstemplate szablonu wieloprojektowego różni się od szablonu pojedynczego projektu w następujący sposób:
 
-- Atrybut `Type` elementu `VSTemplate` zawiera `ProjectGroup` wartości. Na przykład:
+- `Type`Atrybut `VSTemplate` elementu zawiera wartość `ProjectGroup` . Na przykład:
 
   ```
   <VSTemplate Version="2.0.0" Type="ProjectGroup"
       xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
   ```
 
-- Element `TemplateContent` zawiera `ProjectCollection` element, który ma co najmniej jeden `ProjectTemplateLink` elementów, które definiują ścieżki do plików. vstemplate dołączonych projektów. Na przykład:
+- `TemplateContent`Element zawiera `ProjectCollection` element, który ma co najmniej jeden element `ProjectTemplateLink` , który definiuje ścieżki do plików. vstemplate dołączonych projektów. Na przykład:
 
   ```
   <TemplateContent>
@@ -73,9 +73,9 @@ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projekt
 
   Szablony wielu projektów zachowują się również inaczej niż normalne szablony. Szablony wieloprojektowe mają następujące unikatowe cechy:
 
-- Poszczególne projekty w szablonie wieloprojektowym nie mogą być przypisane do nazw za pomocą okna dialogowego **Nowy projekt** . Zamiast tego należy użyć atrybutu `ProjectName` w elemencie `ProjectTemplateLink`, aby określić nazwę dla każdego projektu. Aby uzyskać więcej informacji, zapoznaj się z pierwszym przykładem w następnej sekcji.
+- Poszczególne projekty w szablonie wieloprojektowym nie mogą być przypisane do nazw za pomocą okna dialogowego **Nowy projekt** . Zamiast tego należy użyć `ProjectName` atrybutu dla `ProjectTemplateLink` elementu, aby określić nazwę dla każdego projektu. Aby uzyskać więcej informacji, zapoznaj się z pierwszym przykładem w następnej sekcji.
 
-- Szablony wielu projektów mogą zawierać projekty, które są zapisywane w różnych językach, ale cały szablon można umieścić tylko w jednej kategorii za pomocą elementu `ProjectType`.
+- Szablony wielu projektów mogą zawierać projekty, które są zapisywane w różnych językach, ale cały szablon można umieścić tylko w jednej kategorii za pomocą `ProjectType` elementu.
 
 ### <a name="to-create-a-multi-project-template"></a>Aby utworzyć szablon wieloprojektowy
 
@@ -85,12 +85,12 @@ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projekt
 
 3. Utwórz plik root. vstemplate, który będzie zawierał metadane dla szablonu wieloprojektowego. Aby uzyskać więcej informacji, zapoznaj się z pierwszym przykładem w następnej sekcji.
 
-4. Wybierz pliki i foldery do uwzględnienia w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, kliknij polecenie **Wyślij do**, a następnie kliknij **folder skompresowany (zip)** . Pliki i foldery są kompresowane do pliku zip.
+4. Wybierz pliki i foldery do uwzględnienia w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, kliknij polecenie **Wyślij do**, a następnie kliknij **folder skompresowany (zip)**. Pliki i foldery są kompresowane do pliku zip.
 
-5. Umieść plik. zip szablonu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] katalogu szablonów projektu. Domyślnie ten katalog to \Moje Documents\Visual Studio w *wersji*\Templates\ProjectTemplates \\.
+5. Umieść plik. zip szablonu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] katalogu szablonów projektu. Domyślnie ten katalog to \Moje Documents\Visual Studio w *wersji*\Templates\ProjectTemplates \\ .
 
 ## <a name="example"></a>Przykład
- Ten przykład pokazuje podstawowy plik vstemplate z wielojęzycznym projektem. W tym przykładzie szablon zawiera dwa projekty, `My Windows Application` i `My Class Library`. Atrybut `ProjectName` w elemencie `ProjectTemplateLink` ustawia nazwę [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], aby przypisać ten projekt. Jeśli atrybut `ProjectName` nie istnieje, nazwa pliku. vstemplate jest używana jako nazwa projektu.
+ Ten przykład pokazuje podstawowy plik vstemplate z wielojęzycznym projektem. W tym przykładzie szablon zawiera dwa projekty `My Windows Application` i `My Class Library` . `ProjectName`Atrybut w `ProjectTemplateLink` elemencie ustawia nazwę dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , aby przypisać ten projekt. Jeśli `ProjectName` atrybut nie istnieje, nazwa pliku. vstemplate jest używana jako nazwa projektu.
 
 ```
 <VSTemplate Version="2.0.0" Type="ProjectGroup"
@@ -115,7 +115,7 @@ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projekt
 ```
 
 ## <a name="example"></a>Przykład
- Ten przykład używa elementu `SolutionFolder`, aby podzielić projekty na dwie grupy, `Math Classes` i `Graphics Classes`. Szablon zawiera cztery projekty, z których dwa są umieszczane w każdym folderze rozwiązania.
+ Ten przykład używa `SolutionFolder` elementu, aby podzielić projekty na dwie grupy, `Math Classes` i `Graphics Classes` . Szablon zawiera cztery projekty, z których dwa są umieszczane w każdym folderze rozwiązania.
 
 ```
 <VSTemplate Version="2.0.0" Type="ProjectGroup"
@@ -150,4 +150,4 @@ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projekt
 ```
 
 ## <a name="see-also"></a>Zobacz też
- [Tworzenie szablonów projektów i elementów —](../ide/creating-project-and-item-templates.md) [Informacje o schemacie szablonu programu Visual](../extensibility/visual-studio-template-schema-reference.md) Studio [: Tworzenie szablonów projektu](../ide/how-to-create-project-templates.md) [programu Visual Studio szablon odwołania](../extensibility/visual-studio-template-schema-reference.md) [SolutionFolder element (szablony Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md) [ ProjectTemplateLink, element (szablony Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md) [szablon programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md) [— Informacje ogólne: Tworzenie szablonów projektu](../ide/how-to-create-project-templates.md) [szablon programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md) [SolutionFolder element (szablony Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md) [ProjectTemplateLink element (szablony Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

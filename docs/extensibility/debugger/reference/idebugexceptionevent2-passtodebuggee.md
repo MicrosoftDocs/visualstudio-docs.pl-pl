@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::PassToDebuggee | Dokumenty firmy Microsoft
+title: IDebugExceptionEvent2::P assToDebuggee | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: aec6f460295b59b2b5455b83d5b0be554bca24fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729833"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
-Określa, czy wyjątek powinien być przekazywany do programu debugowanego po wznowieniu wykonywania lub jeśli wyjątek powinien zostać odrzucony.
+Określa, czy wyjątek powinien być przekazywać do debugowanego programu po wznowieniu wykonywania lub czy wyjątek powinien zostać odrzucony.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,17 +41,17 @@ int PassToDebuggee(
 
 ## <a name="parameters"></a>Parametry
 `fPass`\
-[w] Nonzero`TRUE`( ), jeśli wyjątek powinien być przekazany do programu debugowanego po`FALSE`wznowieniu wykonywania lub zero ( ), jeśli wyjątek powinien zostać odrzucony.
+podczas Różna od zera ( `TRUE` ), jeśli wyjątek powinien zostać przesłany do debugowanego programu po wznowieniu wykonywania lub zero ( `FALSE` ), jeśli wyjątek powinien zostać odrzucony.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wywołanie tej metody faktycznie nie powoduje, że kod ma być wykonywany w debugowanym programie. Wywołanie jest po prostu ustawić stan dla następnego wykonania kodu. Na przykład wywołania [canpasstodebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) metoda `S_OK` może powrócić z [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md).`dwState` pole ustawione `EXCEPTION_STOP_SECOND_CHANCE`na .
+ Wywołanie tej metody nie powoduje faktycznego wykonania żadnego kodu w debugowanym programie. Wywołanie jest tylko ustawieniem stanu dla następnego wykonania kodu. Na przykład wywołania metody [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) mogą zwracać się `S_OK` z [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md).`dwState` pole ustawione na `EXCEPTION_STOP_SECOND_CHANCE` .
 
- IDE może odbierać [zdarzenie IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) i [wywołać Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md) metody. Aparat debugowania (DE) powinien mieć domyślne zachowanie `PassToDebuggee` do obsługi sprawy, jeśli metoda nie jest wywoływana.
+ IDE może odebrać zdarzenie [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) i wywołać metodę [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md) . Aparat debugowania (DE) powinien mieć domyślne zachowanie do obsługi przypadku, jeśli `PassToDebuggee` Metoda nie jest wywoływana.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)
 - [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)
-- [Kontynuować](../../../extensibility/debugger/reference/idebugprogram2-continue.md)
+- [Kontynuuj](../../../extensibility/debugger/reference/idebugprogram2-continue.md)

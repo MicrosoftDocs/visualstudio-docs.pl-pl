@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bb74501c15e961d8da8e1e29dd0d9979c79a305
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570092"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
@@ -31,29 +31,29 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
 ## <a name="arguments"></a>Argumenty
 
-- *Plik źródłowy*
+- *SourceFile*
 
   Wymagany. Pełna ścieżka i nazwa pierwszego pliku, który ma zostać porównany.
 
-- *Plik docelowy*
+- *TargetFile*
 
-  Wymagany. Pełna ścieżka i nazwa drugiego pliku, który ma zostać porównany.
+  Wymagany. Pełna ścieżka i Nazwa drugiego pliku, który ma zostać porównany.
 
-- *Nazwa źródłaWyświetlania*
+- *SourceDisplayName*
 
-  Element opcjonalny. Wyświetlana nazwa pierwszego pliku.
+  Opcjonalny. Nazwa wyświetlana pierwszego pliku.
 
-- *Nazwa obiektu docelowegoWyświetlać*
+- *TargetDisplayName*
 
-  Element opcjonalny. Wyświetlana nazwa drugiego pliku.
+  Opcjonalny. Nazwa wyświetlana drugiego pliku.
 
 ## <a name="remarks"></a>Uwagi
 
-Jeśli wystąpienie IDE jest już otwarte, porównanie plików pojawia się na karcie w bieżącym IDE.
+Jeśli wystąpienie IDE jest już otwarte, porównanie plików jest wyświetlane na karcie w bieżącym środowisku IDE.
 
 ## <a name="example"></a>Przykład
 
-W pierwszym przykładzie porównuje się dwa pliki bez zmiany ich nazw wyświetlanych. Drugi przykład porównuje pliki, zmieniając jednocześnie obie ich nazwy wyświetlane. W trzecim i czwartym przykładzie porównano dwa pliki, ale stosuje się alias tylko do pierwszego lub drugiego pliku.
+Pierwszy przykład porównuje dwa pliki bez zmiany ich nazw wyświetlanych. Drugi przykład porównuje pliki podczas zmiany obu nazw wyświetlanych. Trzeci i czwarty przykład porównują dwa pliki, ale stosuje alias tylko do pierwszego pliku lub drugiego pliku.
 
 ```shell
 devenv /diff File1.txt File2.txt

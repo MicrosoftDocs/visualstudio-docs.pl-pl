@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a311456fd3f8eab12c24e26c32349f208e0a723
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769069"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Instrukcje: tworzenie cieniowania tekstury skali szarości
@@ -47,7 +47,7 @@ Na poniższej ilustracji przedstawiono ukończony wykres modułu cieniującego i
 
 Niektóre kształty mogą zapewniać lepszy Podgląd niektórych programów do cieniowania. Aby uzyskać więcej informacji na temat podglądu programów do cieniowania w projektancie cieniowania, zobacz [Projektant cieniowania](../designers/shader-designer.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Instrukcje: eksportowanie cieniowania](../designers/how-to-export-a-shader.md)

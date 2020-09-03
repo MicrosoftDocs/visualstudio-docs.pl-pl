@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8755b1b70051c54157fa87ee0b66dbc9340b5024
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668464"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Właściwości definicji DSL
@@ -27,24 +27,24 @@ Właściwości DslDefinition definiują *specyficzne dla domeny* właściwości 
 
  DslDefinition ma właściwości w poniższej tabeli:
 
-|Właściwość|Opis|Domyślny|
+|Właściwość|Opis|Domyślne|
 |--------------|-----------------|-------------|
 |Modyfikator dostępu|Określa, czy modyfikator dostępu dla klasy domeny jest publiczny, czy wewnętrzny.|public|
-|Atrybuty niestandardowe|Niestandardowe atrybuty zdefiniowane dla klasy domeny.<br /><br /> **Uwaga** Użyj przycisku Przeglądaj, aby dodać atrybut.|\<none >|
+|Atrybuty niestandardowe|Niestandardowe atrybuty zdefiniowane dla klasy domeny.<br /><br /> **Uwaga** Użyj przycisku Przeglądaj, aby dodać atrybut.|\<none>|
 |Nazwa firmy|Nazwa bieżącej nazwy firmy w rejestrze systemowym.|Nazwa bieżącej firmy|
 |Nazwa|Nazwa tej klasy domeny.|Bieżąca nazwa|
 |Przestrzeń nazw|Przestrzeń nazw stowarzyszona z tą klasą domeny.|Bieżąca przestrzeń nazw|
-|Identyfikator GUID pakietu|Identyfikator GUID dla pakietu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wygenerowanego dla tego języka DSL.|\<none >|
-|Przestrzeń nazw pakietu|Przestrzeń nazw dla pakietu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wygenerowanego dla tego języka DSL.|\<none >|
-|Nazwa produktu|Nazwa produktu, która zostanie zarejestrowana dla pakietu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wygenerowanego dla tego języka DSL.|\<none >|
-|Uwagi|Uwagi skojarzone z tą klasą domeny.|\<none >|
-|Opis|Opis tej klasy domeny.|\<none >|
-|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektancie dla tej klasy domeny.|\<none >|
-|Słowo kluczowe pomocy|Słowo kluczowe pomocy skojarzone z tą klasą domeny.|\<none >|
+|Identyfikator GUID pakietu|Identyfikator GUID [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pakietu wygenerowanego dla tego języka DSL.|\<none>|
+|Przestrzeń nazw pakietu|Przestrzeń nazw dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pakietu wygenerowanego dla tego języka DSL.|\<none>|
+|Nazwa produktu|Nazwa produktu, która zostanie zarejestrowana dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pakietu wygenerowanego dla tego języka DSL.|\<none>|
+|Uwagi|Uwagi skojarzone z tą klasą domeny.|\<none>|
+|Opis|Opis tej klasy domeny.|\<none>|
+|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektancie dla tej klasy domeny.|\<none>|
+|Słowo kluczowe pomocy|Słowo kluczowe pomocy skojarzone z tą klasą domeny.|\<none>|
 |Kompilacja|Numer kompilacji przyrostowej dla tej definicji języka specyficznego dla domeny.|0|
 |Wersja główna|Przyrostowy numer kompilacji głównej dla tej definicji języka specyficznego dla domeny.|1|
-|Wersja pomocnicza|Przyrostowy numer kompilacji dla tej definicji języka specyficznego dla domeny.|0|
-|skorygowan|Numer kompilacji poprawki przyrostowej dla tej definicji języka specyficznego dla domeny.|0|
+|Wersja pośrednia|Przyrostowy numer kompilacji dla tej definicji języka specyficznego dla domeny.|0|
+|Przegląd|Numer kompilacji poprawki przyrostowej dla tej definicji języka specyficznego dla domeny.|0|
 
 ## <a name="see-also"></a>Zobacz też
  [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

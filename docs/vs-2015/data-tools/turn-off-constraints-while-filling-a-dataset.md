@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6646f669bf2c465d8e0f705f8fba956b979952ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667170"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Wyłączanie ograniczeń podczas zapełniania zestawu danych
@@ -35,10 +35,10 @@ ms.locfileid: "72667170"
 
 Jeśli zestaw danych zawiera ograniczenia (takie jak ograniczenia FOREIGN KEY), theycan zgłasza błędy związane z kolejnością operacji wykonywanych względem zestawu danych. Na przykład ładowanie rekordów podrzędnych przed loadingrelated rekordy nadrzędne może naruszać ograniczenie i spowodować błąd. Gdy tylko załadujesz rekord podrzędny, ograniczenie sprawdza pokrewny rekord nadrzędny i zgłasza błąd.
 
- Jeśli nie było żadnego mechanizmu zezwalania na tymczasowe ograniczenie ograniczeń, wystąpi błąd przy każdej próbie załadowania rekordu do tabeli podrzędnej. Innym sposobem zawieszenia wszystkich ograniczeń w zestawie danych jest <xref:System.Data.DataRow.BeginEdit%2A>, a <xref:System.Data.DataRow.EndEdit%2A> właściwości.
+ Jeśli nie było żadnego mechanizmu zezwalania na tymczasowe ograniczenie ograniczeń, wystąpi błąd przy każdej próbie załadowania rekordu do tabeli podrzędnej. Innym sposobem zawieszenia wszystkich ograniczeń w zestawie danych jest z <xref:System.Data.DataRow.BeginEdit%2A> <xref:System.Data.DataRow.EndEdit%2A> właściwościami i.
 
 > [!NOTE]
-> Zdarzenia walidacji (na przykład <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.RowChanging>) nie będą zgłaszane, gdy ograniczenia są wyłączone.
+> Zdarzenia walidacji (na przykład <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.RowChanging> ) nie będą zgłaszane, gdy ograniczenia są wyłączone.
 
 ### <a name="to-suspend-update-constraints-programmatically"></a>Aby programowo wstrzymać ograniczenia dotyczące aktualizacji
 
@@ -51,7 +51,7 @@ Jeśli zestaw danych zawiera ograniczenia (takie jak ograniczenia FOREIGN KEY), 
 
 1. Otwórz zestaw danych w Projektant obiektów Dataset. Aby uzyskać więcej informacji, zobacz [jak: otwieranie zestawu danych w Projektant obiektów DataSet](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).
 
-2. W oknie **Właściwości** ustaw właściwość <xref:System.Data.DataSet.EnforceConstraints%2A> na `false`.
+2. W oknie **Właściwości** Ustaw <xref:System.Data.DataSet.EnforceConstraints%2A> Właściwość na `false` .
 
 ## <a name="see-also"></a>Zobacz też
  [Wypełnianie zestawów danych przy użyciu relacji TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md) [w zestawach danych](../data-tools/relationships-in-datasets.md)

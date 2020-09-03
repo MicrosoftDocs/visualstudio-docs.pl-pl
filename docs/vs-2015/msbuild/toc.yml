@@ -56,9 +56,9 @@
                   href: writealltlogs.md
                 - name: WriteContextTLogs
                   href: writecontexttlogs.md
-        - name: Obiekty docelowe
+        - name: Targets (Obiekty docelowe)
           items:
-            - name: Obiekty docelowe
+            - name: Targets (Obiekty docelowe)
               href: msbuild-targets.md
             - name: Kolejność kompilowania obiektów docelowych
               href: target-build-order.md
@@ -124,9 +124,9 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Rejestrowanie rozszerzeń środowiska .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Równoległe tworzenie wielu projektów
+        - name: Równoległe kompilowanie wielu projektów
           items:
-            - name: Równoległe tworzenie wielu projektów
+            - name: Równoległe kompilowanie wielu projektów
               href: building-multiple-projects-in-parallel-with-msbuild.md
             - name: Używanie wielu procesorów w projektach kompilacji
               href: using-multiple-processors-to-build-projects.md
@@ -144,7 +144,7 @@
                   href: standard-and-custom-toolset-configurations.md
                 - name: Zastępowanie ustawień ToolsVersion
                   href: overriding-toolsversion-settings.md
-            - name: Platforma docelowa
+            - name: Docelowa platforma i architektura
               href: msbuild-target-framework-and-target-platform.md
             - name: Rozwiązywanie zestawów w czasie projektowania
               href: resolving-assemblies-at-design-time.md
@@ -156,7 +156,7 @@
                   href: how-to-configure-targets-and-tasks.md
             - name: Rozwiązywanie problemów z błędami obiektów docelowych programu .NET Framework
               href: troubleshooting-dotnet-framework-targeting-errors.md
-        - name: Najlepsze praktyki
+        - name: Najlepsze rozwiązania
           href: msbuild-best-practices.md
     - name: Logowanie w programie MSBuild
       items:
@@ -226,13 +226,13 @@
               href: usingtask-element-msbuild.md
             - name: When — Element (MSBuild)
               href: when-element-msbuild.md
-        - name: Odwołanie do zadania
+        - name: Dokumentacja zadań
           items:
-            - name: Odwołanie do zadania
+            - name: Dokumentacja zadań
               href: msbuild-task-reference.md
-            - name: Zadania w Visual C++
+            - name: Zadania w programie Visual C++
               items:
-                - name: Zadania w Visual C++
+                - name: Zadania w programie Visual C++
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: BscMake — Zadanie
                   href: bscmake-task.md
@@ -392,9 +392,9 @@
           href: common-msbuild-project-properties.md
         - name: Wspólne elementy projektów MSBuild
           href: common-msbuild-project-items.md
-        - name: Informacje w wierszu polecenia
+        - name: Dokumentacja wiersza polecenia
           href: msbuild-command-line-reference.md
-        - name: Pliki .Targets
+        - name: Pliki Targets
           href: msbuild-dot-targets-files.md
         - name: Metadane dobrze znanego elementu
           href: msbuild-well-known-item-metadata.md
@@ -406,11 +406,11 @@
           items:
             - name: Odwołanie do WPF MSBuild
               href: wpf-msbuild-reference.md
-            - name: Pliki .Targets
+            - name: Pliki Targets
               href: wpf-dot-targets-files.md
-            - name: Odwołanie do zadania
+            - name: Dokumentacja zadań
               items:
-                - name: Odwołanie do zadania
+                - name: Dokumentacja zadań
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier
                   href: fileclassifier-task.md

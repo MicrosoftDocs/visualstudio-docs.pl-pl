@@ -7,10 +7,10 @@ ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
 ms.topic: how-to
 ms.openlocfilehash: f5fe827566d9949f5dca2a1a3e1dcfb1bf191c6e
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801792"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Nawigacja przy użyciu klawiatury w Visual Studio dla komputerów Mac
@@ -37,14 +37,14 @@ Visual Studio dla komputerów Mac ma szereg skrótów klawiaturowych dla różny
 
 1. Wybierz pozycję **powiązanie klucza**i wpisz kombinację klawiszy.
 
-1. Wybierz pozycję **Zastosuj**.
+1. Wybierz przycisk **Zastosuj**.
 
 > [!TIP]
 > Możesz wybrać z listy kluczowych schematów powiązań, aby najlepiej odpowiadały potrzebom, jeśli znasz inne typowe skróty klawiaturowe (na przykład Visual Studio w systemie Windows).
 
 ## <a name="useful-keyboard-shortcuts"></a>Przydatne skróty klawiaturowe
 
-|Cecha         |Opis                                   |Skrót         |
+|Cechy         |Opis                                   |Skrót         |
 |----------------|----------------------------------------------|-----------------|
 |Nawigowanie po interfejsie użytkownika   |Przechodzenie przez wszystkie elementy interfejsu użytkownika.               |**⇥**, **⇧ ⇥**    |
 |Interaktywne        |Zaznacz formant, który jest aktualnie fokusem.         |**␣**            |

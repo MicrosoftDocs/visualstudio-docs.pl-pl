@@ -1,5 +1,5 @@
 ---
-title: Nie można usunąć właściwości &lt;property nazwy &gt; | Microsoft Docs
+title: '&lt; &gt; Nie można usunąć nazwy właściwości właściwości | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aca36919cb4c82d6ca76e0f3eecbbacd48cde768
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667242"
 ---
-# <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>Nie można usunąć właściwości &lt;property nazwy &gt;
+# <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>&lt;Nie można usunąć nazwy właściwości właściwości. &gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nie można usunąć właściwości \<property >, ponieważ jest ona ustawiona jako właściwość rozróżniacza dla dziedziczenia między \<class nazw > i \<class >
+\<property name>Nie można usunąć właściwości, ponieważ jest ona ustawiona jako właściwość rozróżniacza dla dziedziczenia między \<class name> i\<class name>
 
  Wybrana właściwość jest ustawiana jako **właściwość rozróżniacza** dla dziedziczenia między klasami wskazanymi w komunikacie o błędzie. Nie można usunąć właściwości, jeśli uczestniczą w konfiguracji dziedziczenia między klasami danych.
 

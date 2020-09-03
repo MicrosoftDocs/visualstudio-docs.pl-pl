@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23dba7b7c29c05b55af2c461f36bdaa4b46b948f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667720"
 ---
 # <a name="code-metrics-values"></a>Wartości metryk kodów
@@ -33,11 +33,11 @@ Metryki kodu są zestawem miar oprogramowania, które zapewniają deweloperom le
 - **Złożoność cyklomatyczna** — mierzy strukturalną złożoność kodu. Jest on tworzony przez obliczenie liczby różnych ścieżek kodu w przepływie programu. Program, który ma złożony przepływ sterowania, będzie wymagał większej liczby testów w celu osiągnięcia dobrego pokrycia kodu i będzie mniej utrzymany.
 
     > [!NOTE]
-    > W niektórych przypadkach Obliczanie złożoności cyklomatyczna dla metody w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] różni się od wcześniejszych wersji. Aby uzyskać więcej informacji, zobacz sekcję "zmiany w sekcji obliczenia złożoności kodu w programie Visual Studio 2010" dotyczące [rozwiązywania problemów z metrykami kodu](../code-quality/troubleshooting-code-metrics-issues.md).
+    > W niektórych przypadkach Obliczanie złożoności cyklomatyczna dla metody [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] różni się od wcześniejszych wersji. Aby uzyskać więcej informacji, zobacz sekcję "zmiany w sekcji obliczenia złożoności kodu w programie Visual Studio 2010" dotyczące [rozwiązywania problemów z metrykami kodu](../code-quality/troubleshooting-code-metrics-issues.md).
 
 - **Głębokość dziedziczenia** — wskazuje liczbę definicji klas, które zwiększają się do katalogu głównego hierarchii klas. Dokładniejsze hierarchia jest trudniejsza do zrozumienia, gdzie poszczególne metody i pola są zdefiniowane lub/i ponownie definiowane.
 
-- **Sprzęganie klas** — mierzy sprzężenie do unikatowych klas za pomocą parametrów, zmiennych lokalnych, typów zwracanych, wywołań metod, wystąpień ogólnych lub szablonów, klas bazowych, implementacji interfejsu, pól zdefiniowanych dla typów zewnętrznych i atrybutu dekorację. Dobre projektowanie oprogramowania oznacza, że typy i metody powinny mieć wysoką spójność i niskie sprzężenie. Duże sprzężenie wskazuje, że projekt jest trudno używany i konserwowany ze względu na wiele współzależności z innymi typami.
+- **Sprzęganie klas** — mierzy sprzężenie do unikatowych klas za pomocą parametrów, zmiennych lokalnych, typów zwracanych, wywołań metod, wystąpień ogólnych lub szablonów, klas bazowych, implementacji interfejsu, pól zdefiniowanych w typach zewnętrznych i dekoracji atrybutu. Dobre projektowanie oprogramowania oznacza, że typy i metody powinny mieć wysoką spójność i niskie sprzężenie. Duże sprzężenie wskazuje, że projekt jest trudno używany i konserwowany ze względu na wiele współzależności z innymi typami.
 
 - **Wiersze kodu** — wskazuje przybliżoną liczbę wierszy w kodzie. Liczba jest oparta na kodzie IL i dlatego nie jest dokładną liczbą wierszy w pliku kodu źródłowego. Bardzo duża liczba może wskazywać, że typ lub metoda próbuje wykonać zbyt dużo pracy i należy ją podzielić. Może również wskazywać, że typ lub metoda może być trudno zachować.
 
@@ -52,4 +52,4 @@ Metryki kodu są zestawem miar oprogramowania, które zapewniają deweloperom le
  Kod wygenerowany dla formularzy systemu Windows nie jest ignorowany, ponieważ jest to kod, który deweloper może zobaczyć i zmienić.
 
 ## <a name="see-also"></a>Zobacz też
- [Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+ [Mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

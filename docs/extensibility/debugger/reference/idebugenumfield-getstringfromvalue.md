@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetStringFromValue | Dokumenty firmy Microsoft
+title: 'IDebugEnumField:: GetStringFromValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5de59c573f7e233ea2aacb0dfa38826051c59373
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730289"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
-Ta metoda uzyskuje nazwę stałej wyliczenia, biorąc pod uwagę jego wartość.
+Ta metoda uzyskuje nazwę stałej wyliczenia z uwzględnieniem jej wartości.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,16 +43,16 @@ int GetStringFromValue(
 
 ## <a name="parameters"></a>Parametry
 `value`\
-[w] Wartość, dla której ma zostać nastawiła nazwę stałej wyliczenia.
+podczas Wartość, dla której ma zostać pobrana nazwa stałej wyliczenia.
 
 `pbstrValue`\
-[na zewnątrz] Zwraca nazwę stałej wyliczenia.
+określoną Zwraca nazwę stałej wyliczenia.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym `S_FALSE` razie zwraca, jeśli wartość nie ma skojarzonej nazwy lub zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` wartość, jeśli nie ma skojarzonej nazwy lub zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli istnieje więcej niż jedna nazwa skojarzona z tą samą wartością, zostanie zwrócona imię zdefiniowane w wyliczeniu.
+ Jeśli istnieje więcej niż jedna nazwa skojarzona z tą samą wartością, zostanie zwrócona Pierwsza nazwa zdefiniowana w wyliczeniu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 03619582a30893c161c44c880a0d9cf6c9766d0b
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85768759"
 ---
 # <a name="windows-forms-designer-overview"></a>Projektant formularzy systemu Windows — omówienie
@@ -35,11 +35,11 @@ Za pomocą projektanta można:
 > [!NOTE]
 > Użyj Projektant formularzy systemu Windows, a nie edytora zasobów, aby wprowadzić zmiany w pliku zasobów formularza (*. resx*). Jeśli edytujesz plik resx oparty na formularzu, zobaczysz ostrzeżenie, że zmiany wprowadzone w edytorze zasobów mogą zostać utracone. Dzieje się tak, ponieważ Projektant formularzy systemu Windows generuje plik resx.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przegląd Windows Forms](/dotnet/framework/winforms/windows-forms-overview)
 - [formanty Formularzy systemu Windows](/dotnet/framework/winforms/controls/)
 - [Dane wejściowe użytkownika w Windows Forms](/dotnet/framework/winforms/user-input-in-windows-forms)
 - [Powiązanie danych w Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)
 - [Ulepszanie aplikacji Windows Forms](/dotnet/framework/winforms/advanced/)
-- <xref:System.Windows.Forms?displayProperty=fullName>Dokumentacja interfejsu API
+- <xref:System.Windows.Forms?displayProperty=fullName> Dokumentacja interfejsu API

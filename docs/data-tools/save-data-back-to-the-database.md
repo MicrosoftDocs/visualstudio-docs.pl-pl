@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281750"
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
@@ -162,7 +162,7 @@ Typowym sposobem, aby nie aktualizować każdego rekordu w zestawie danych. Na p
 
 Można utworzyć podzestawy zmienionych rekordów przy użyciu `GetChanges` metody tabeli danych ( <xref:System.Data.DataTable.GetChanges%2A> ) lub zestawu danych ( <xref:System.Data.DataSet.GetChanges%2A> ). Jeśli wywołasz metodę dla tabeli danych, zwróci ona kopię tabeli tylko zmienionymi rekordami. Podobnie, jeśli wywołasz metodę w zestawie danych, zostanie wyświetlony nowy zestaw danych z tylko zmienionymi rekordami.
 
-`GetChanges`sama zwraca wszystkie zmienione rekordy. W przeciwieństwie do przekazanie żądanego <xref:System.Data.DataRowState> jako parametru do `GetChanges` metody można określić, który podzbiór zmienionych rekordów: nowo dodane rekordy, rekordy, które są oznaczone do usunięcia, odłączone rekordy lub zmodyfikowane rekordy.
+`GetChanges` sama zwraca wszystkie zmienione rekordy. W przeciwieństwie do przekazanie żądanego <xref:System.Data.DataRowState> jako parametru do `GetChanges` metody można określić, który podzbiór zmienionych rekordów: nowo dodane rekordy, rekordy, które są oznaczone do usunięcia, odłączone rekordy lub zmodyfikowane rekordy.
 
 Pobieranie podzbioru zmienionych rekordów jest przydatne, gdy chcesz wysyłać rekordy do innego składnika do przetwarzania. Zamiast wysyłać cały zestaw danych, można zmniejszyć obciążenie komunikacji z drugim składnikiem, pobierając tylko te rekordy, których potrzebuje składnik.
 

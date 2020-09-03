@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetIndex | Dokumenty firmy Microsoft
+title: 'IDebugGenericParamField:: getIndex | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6b31acd57685058795186fcecb73164218d5ad15
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727985"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
-Pobiera indeks tego parametru ogólnego.
+Pobiera indeks tego parametru generycznego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -39,16 +39,16 @@ int GetIndex(
 
 ## <a name="parameters"></a>Parametry
 `pIndex`\
-[na zewnątrz] Wartość indeksu tego parametru ogólnego.
+określoną Wartość indeksu tego parametru generycznego.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Na przykład dla Dictionary(K,V), K jest indeks 0, V jest indeks 1.
+Na przykład w przypadku słownika (K, V), K jest indeksem 0, V jest indeksem 1.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CDebugGenericParamFieldType,** który udostępnia interfejs [IDebugGenericParamField.](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CDebugGenericParamFieldType** , który uwidacznia Interfejs [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) .
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)

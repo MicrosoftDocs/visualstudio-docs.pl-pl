@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6fcfdc06a055df28159f9d1ddc440aaf113f3264
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568909"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implementowanie klasy abstrakcyjnej w programie Visual Studio
 
-To generowanie kodu dotyczy:
+Ta generacja kodu ma zastosowanie do:
 
 - C#
 
@@ -26,11 +26,11 @@ To generowanie kodu dotyczy:
 
 **Kiedy:** Chcesz dziedziczyć z klasy abstrakcyjnej.
 
-**Dlaczego?** Można ręcznie zaimplementować wszystkie abstrakcyjne elementy członkowskie jeden po drugim, jednak ta funkcja automatycznie wygeneruje wszystkie podpisy metod.
+**Dlaczego:** Można ręcznie zaimplementować wszystkie abstrakcyjne elementy członkowskie jeden do jednego, jednak ta funkcja będzie automatycznie generować wszystkie podpisy metod.
 
 ## <a name="how-to"></a>Porady
 
-1. Umieść kursor w wierszu, w którym znajduje się czerwona falista, która wskazuje, że zostały odziedziczone z klasy abstrakcyjnej, ale nie zaimplementowano wszystkich wymaganych elementów członkowskich.
+1. Umieść kursor w wierszu, w którym znajduje się czerwona zygzakowata, która wskazuje, że dziedziczysz z klasy abstrakcyjnej, ale nie zaimplementowano wszystkich wymaganych elementów członkowskich.
 
    - C#:
 
@@ -43,25 +43,25 @@ To generowanie kodu dotyczy:
 2. Następnie wykonaj jedną z następujących czynności:
 
    - **Klawiatura**
-      - Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
+      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
    - **Mysz**
-      - Kliknij prawym przyciskiem myszy i wybierz menu **Szybkie akcje i Refaktoryzowania.**
-      - Najedź kursorem na czerwoną falosę i kliknij przycisk ![błąd żarówki](media/error-bulb.png) pojawi się ikona.
-      - Kliknij ikonę ![błąd żarówki](media/error-bulb.png) ikonę, która pojawia się na lewym marginesie, jeśli kursor tekstowy znajduje się już w wierszu z czerwoną faliczkiem.
+      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
+      - Umieść kursor na czerwono, a następnie kliknij przycisk ![Żarówka błędów](media/error-bulb.png) zostanie wyświetlona ikona.
+      - Kliknij pozycję ![Żarówka błędów](media/error-bulb.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z czerwonym obramowaniem.
 
-   ![Implementowanie podglądu klasy](media/abstract-preview-cs.png)
+   ![Implementuj Podgląd klasy](media/abstract-preview-cs.png)
 
-3. Z menu rozwijanego **wybierz pozycję Implementuj klasę abstrakcyjną.**
+3. Wybierz opcję **Implementuj klasę abstrakcyjną** z menu rozwijanego.
 
    > [!TIP]
-   > - Użyj łącza **Podgląd zmian** u dołu okna podglądu, [aby wyświetlić wszystkie zmiany,](../../ide/preview-changes.md) które zostaną wprowadzone przed dokonaniem wyboru.
-   > - Użyj **łącza Dokumentu,** **Projektu**i **Rozwiązania** u dołu okna podglądu, aby utworzyć odpowiednie podpisy metod w wielu klasach, które dziedziczą z klasy abstrakcyjnej.
+   > - Użyj linku **Podgląd zmian** w dolnej części okna Podgląd, [Aby zobaczyć wszystkie zmiany](../../ide/preview-changes.md) , które zostaną wprowadzone przed dokonaniem wyboru.
+   > - Użyj linków **dokumentu**, **projektu**i **rozwiązania** w dolnej części okna Podgląd, aby utworzyć odpowiednie sygnatury metod dla wielu klas, które dziedziczą z klasy abstrakcyjnej.
 
-   Podpisy metody abstrakcyjnej są tworzone i są gotowe do zaimplementowania.
+   Sygnatury metod abstrakcyjnych są tworzone i są gotowe do zaimplementowania.
 
    - C#:
 
-       ![Zaimplementowanie wyniku klasy C #](media/abstract-result-cs.png)
+       ![Implementuj wynik klasy C #](media/abstract-result-cs.png)
 
    - Visual Basic:
 
