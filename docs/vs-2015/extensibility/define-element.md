@@ -1,5 +1,5 @@
 ---
-title: Zdefiniuj Element | Dokumentacja firmy Microsoft
+title: Zdefiniuj element | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cc543a07176f307641c53a2ef3e132881821ce7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162156"
 ---
 # <a name="define-element"></a>Define, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Definiuje symbol pary nazw i wartości. Ten symbol może zostać oceniony przez atrybuty warunkowe. Aby uzyskać więcej informacji, zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md). Zobacz też [symboli elementu](../extensibility/symbols-element.md).  
+Definiuje nazwę symbolu i parę wartości. Ten symbol może być oceniany przez atrybuty warunkowe. Aby uzyskać więcej informacji, zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md). Zobacz również [element Symbols](../extensibility/symbols-element.md).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,8 +36,8 @@ Definiuje symbol pary nazw i wartości. Ten symbol może zostać oceniony przez 
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|nazwa|Wymagany. Nazwa symbolu:<br /><br /> Nazwa = "Tryb"|  
-|value|Wymagana. Wartość symbolu:<br /><br /> wartość = "Standardowy"|  
+|name|Wymagany. Nazwa symbolu:<br /><br /> Nazwa = "tryb"|  
+|value|Wymagany. Wartość symbolu:<br /><br /> wartość = "Standardowa"|  
 |Warunek|Opcjonalny. Aby uzyskać więcej informacji, zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
@@ -47,7 +47,7 @@ Definiuje symbol pary nazw i wartości. Ten symbol może zostać oceniony przez 
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują poleceń, które zapewnia pakietu VSPackage do zintegrowanego środowiska programistycznego (IDE). Na przykład elementy menu, menu, paski narzędzi i pola kombi.|  
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia, które pakietu VSPackage zapewnia zintegrowane środowisko programistyczne (IDE). Na przykład elementy menu, menu, paski narzędzi i pola kombi.|  
   
 ## <a name="example"></a>Przykład  
   

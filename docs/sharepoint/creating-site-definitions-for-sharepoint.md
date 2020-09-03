@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0f1a512218c3c1b7af179cfaba3e231a90941fe0
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015063"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Tworzenie definicji witryny dla programu SharePoint
@@ -45,7 +46,7 @@ ms.locfileid: "86015063"
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Przewodnik: Tworzenie podstawowego projektu definicji witryny](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Prowadzi krok po kroku przez tworzenie podstawowego projektu definicji lokacji w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
+|[Przewodnik: tworzenie podstawowego projektu definicji witryny](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Prowadzi krok po kroku przez tworzenie podstawowego projektu definicji lokacji w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Instrukcje: Tworzenie niestandardowej definicji lokacji i konfiguracji](/previous-versions/office/developer/sharepoint-2010/ms454677(v=office.14))|Opisuje sposób tworzenia niestandardowej definicji lokacji w programie SharePoint przez skopiowanie istniejącej definicji lokacji, a następnie zmodyfikowanie kopii.|
 |[*WebTemp.xml*](/previous-versions/office/developer/sharepoint-2010/ms447717(v=office.14))|Opisuje oryginalny plik, który określa definicje witryn dostępne w sekcji **Wybór szablonu** **nowej strony witryny programu SharePoint** .|
 |[Lokalizowanie rozwiązań SharePoint](../sharepoint/localizing-sharepoint-solutions.md)|Opisuje sposób przygotowania rozwiązań programu SharePoint do użytku globalnego.|
@@ -57,5 +58,5 @@ ms.locfileid: "86015063"
 |[Programowanie stron sieci Web ASP.NET](/previous-versions/aspnet/0yt4zca8(v=vs.100))|Zawiera informacje dotyczące sposobu tworzenia programów obsługi zdarzeń na [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] stronach oraz sposobu pracy z skryptem klienta programu.|
 |[Programowanie w programie Windows SharePoint Services](/previous-versions/office/developer/sharepoint-services/ms430674(v=office.12))|Opisuje sposób korzystania z modelu obiektów zarządzanych, który jest dostępny w programie [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] .|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

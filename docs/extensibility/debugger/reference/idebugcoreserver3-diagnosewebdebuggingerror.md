@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::DiagnoseWebDebuggingError | Dokumenty firmy Microsoft
+title: IDebugCoreServer3::D iagnoseWebDebuggingError | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fec5b8fbe1cae18b8221702fe14443df231d8880
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732954"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
-Próbuje ustalić, dlaczego automatyczne dołączanie nie powiodło się.
+Próbuje określić dlaczego automatyczne dołączanie nie powiodło się.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,16 +41,16 @@ int DiagnoseWebDebuggingError(
 
 ## <a name="parameters"></a>Parametry
 `pszUrl`\
-[w] Nie jest obecnie używany; zawsze powinna być ustawiona na wartość null.
+podczas Obecnie nie używane; zawsze powinna być ustawiona na wartość null.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Poniżej przedstawiono inne typowe kody zwrotów:
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Oto inne typowe kody powrotne:
 
-|Code|Opis|
+|Kod|Opis|
 |----------|-----------------|
-|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|Nie można ustalić, dlaczego serwer zdalny nie może uruchomić debugowania.|
-|`S_WEBDBG_DEBUG_VERB_BLOCKED`|Nie można debugować na serwerze zdalnym, prawdopodobnie z powodu niewystarczających uprawnień lub ponieważ zlecenie DEBUG nie jest włączone.|
-|`E_WEBDBG_DEBUG_VERB_BLOCKED`|Serwer sieci web został zablokowany i blokuje zlecenie DEBUG, które jest wymagane do włączenia debugowania.|
+|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|Nie można określić, dlaczego zdalny serwer nie może rozpocząć debugowania.|
+|`S_WEBDBG_DEBUG_VERB_BLOCKED`|Nie można debugować na serwerze zdalnym, prawdopodobnie z powodu niewystarczających uprawnień lub że zlecenie debugowania nie jest włączone.|
+|`E_WEBDBG_DEBUG_VERB_BLOCKED`|Serwer sieci Web został zablokowany i blokuje czasownik debugowania, który jest wymagany do włączenia debugowania.|
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

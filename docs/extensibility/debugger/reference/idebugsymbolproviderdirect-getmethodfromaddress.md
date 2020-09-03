@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetMethodFromAddress | Dokumenty firmy Microsoft
+title: 'IDebugSymbolProviderDirect:: GetMethodFromAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4a062056f4a61521966417e9923a17f6d85b991a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718940"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
@@ -52,28 +52,28 @@ int GetMethodFromAddress(
 
 ## <a name="parameters"></a>Parametry
 `pAddress`\
-[w] Adres debugowania, który jest reprezentowany przez interfejs [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+podczas Adres debugowania reprezentowany przez interfejs [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 `pGuid`\
-[na zewnątrz] Unikatowy identyfikator modułu.
+określoną Unikatowy identyfikator modułu.
 
 `pAppID`\
-[na zewnątrz] Identyfikator domeny aplikacji.
+określoną Identyfikator domeny aplikacji.
 
 `pTokenClass`\
-[na zewnątrz] Token reprezentujący klasę zawierającą.
+określoną Token, który reprezentuje klasę zawierającą.
 
 `pTokenMethod`\
-[na zewnątrz] Token, który reprezentuje moduł.
+określoną Token, który reprezentuje moduł.
 
 `pdwOffset`\
-[na zewnątrz] Przesunięcie w bajtach od `pAddress` początku parametru.
+określoną Przesunięcie w bajtach od początku `pAddress` parametru.
 
 `pdwVersion`\
-[na zewnątrz] Numer wersji metody.
+określoną Numer wersji metody.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

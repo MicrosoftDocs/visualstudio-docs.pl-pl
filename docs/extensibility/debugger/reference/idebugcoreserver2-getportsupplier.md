@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetPortSupplier | Dokumenty firmy Microsoft
+title: 'IDebugCoreServer2:: GetPortSupplier | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a33fafae142ef0628130d48a9a84d10b408924c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733075"
 ---
 # <a name="idebugcoreserver2getportsupplier"></a>IDebugCoreServer2::GetPortSupplier
@@ -43,13 +43,13 @@ int GetPortSupplier( 
 
 ## <a name="parameters"></a>Parametry
 `guidPortSupplier`\
-[w] Identyfikator GUID dostawcy portu do pobrania.
+podczas Identyfikator GUID dostawcy portu do pobrania.
 
 `ppPortSupplier`\
-[na zewnątrz] Zwraca obiekt [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) reprezentujący żądanego dostawcę portu.
+określoną Zwraca obiekt [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) reprezentujący żądanego dostawcę portu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

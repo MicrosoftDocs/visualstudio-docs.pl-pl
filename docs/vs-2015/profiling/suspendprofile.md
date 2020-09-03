@@ -1,5 +1,5 @@
 ---
-title: SuspendProfile | Dokumentacja firmy Microsoft
+title: SuspendProfile | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6b40b37c8c0ee97b5d7e0cc33773af140bd1010b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155624"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`SuspendProfile` Metody zwiększa Licznik wstrzymań/wznowień dla określonego poziomu profilowania.  
+`SuspendProfile`Metoda zwiększa licznik wstrzymania/wznawiania dla określonego poziomu profilowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,46 +34,46 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 #### <a name="parameters"></a>Parametry  
  `Level`  
   
- Wskazuje poziom profilu do wydajności, które mogą być stosowane zbierania danych. Następujące **PROFILE_CONTROL_LEVEL** moduły wyliczające może służyć do wskazania jednego z trzech poziomów wydajności, które zbieranie danych można stosować:  
+ Wskazuje poziom profilu, do którego można zastosować zbieranie danych wydajności. Poniższe moduły wyliczające **PROFILE_CONTROL_LEVEL** mogą służyć do wskazania jednego z trzech poziomów, do których można zastosować zbieranie danych o wydajności:  
   
-|Moduł wyliczający|Opis|  
+|Liczeni|Opis|  
 |----------------|-----------------|  
-|PROFILE_GLOBALLEVEL|Globalne ustawienie poziomie ma wpływ na wszystkie procesy i wątki podczas uruchomienia profilowania.|  
-|PROFILE_PROCESSLEVEL|Ustawienie poziomie proces wpływają na wszystkie wątki, które są dostępne w ramach określonego procesu.|  
-|PROFILE_THREADLEVEL|Wątek ustawienie poziomie profilowania dotyczy określonego wątku.|  
+|PROFILE_GLOBALLEVEL|Globalne ustawienie poziomu ma wpływ na wszystkie procesy i wątki w przebiegu profilowania.|  
+|PROFILE_PROCESSLEVEL|Ustawienie poziomu procesu wpływa na wszystkie wątki, które są częścią określonego procesu.|  
+|PROFILE_THREADLEVEL|Ustawienie poziomu profilowania wątku ma wpływ na określony wątek.|  
   
  `dwId`  
   
- Proces lub wątek identyfikator generowany przez system.  
+ Identyfikator procesu lub wątku generowany przez system.  
   
 ## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość  
- Funkcja wskazuje powodzenie lub niepowodzenie, za pomocą **PROFILE_COMMAND_STATUS** wyliczenia. Zwracana wartość może być jedną z następujących czynności:  
+ Funkcja wskazuje powodzenie lub niepowodzenie przy użyciu wyliczenia **PROFILE_COMMAND_STATUS** . Zwracana wartość może być jedną z następujących:  
   
-|Moduł wyliczający|Opis|  
+|Liczeni|Opis|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|Identyfikator elementu profilowania nie istnieje.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|Określony poziom profilowania nie istnieje.|  
-|PROFILE_ERROR_MODE_NEVER|W trybie profilowania zostało ustawione na nigdy nie w przypadku, gdy funkcja została wywołana.|  
-|PROFILE_ERROR_NOT_YET_IMPLEMENTED|Profilowania wywołanie funkcji, profilowania poziom lub kombinacji wywołania i poziom nie została jeszcze zaimplementowana.|  
+|PROFILE_ERROR_MODE_NEVER|Tryb profilowania został ustawiony tak, aby nigdy nie był wywoływany przez funkcję.|  
+|PROFILE_ERROR_NOT_YET_IMPLEMENTED|Nie zaimplementowano jeszcze wywołania funkcji profilowania, poziomu profilowania lub kombinacji wywołania i poziomu.|  
 |PROFILE_OK|Wywołanie zakończyło się pomyślnie.|  
   
 ## <a name="remarks"></a>Uwagi  
- Początkowa wartość licznika wstrzymań/wznowień to 0. Każde wywołanie SuspendProfile dodaje 1 Liczba wstrzymań/wznowień; Każde wywołanie ResumeProfile odejmuje 1.  
+ Początkowa wartość licznika Wstrzymanie/wznowienie wynosi 0. Każde wywołanie SuspendProfile dodaje 1 do liczby wstrzymania/wznowienia; Każde wywołanie ResumeProfile odejmuje 1.  
   
- Gdy liczba wstrzymań/wznowień jest większa niż 0, stan wstrzymań/wznowień poziomu został WYŁĄCZONY. Gdy liczba jest mniejsza lub równa 0, stan wstrzymań/wznowień ma wartość ON.  
+ Gdy liczba wstrzymań/wznowień jest większa niż 0, stan wstrzymania/wznowienia dla poziomu jest wyłączony. Gdy liczba jest mniejsza lub równa 0, stan wstrzymania/wznowienia jest włączony.  
   
- W przypadku uruchomień/zatrzymań stan i stan wstrzymań/wznowień zarówno na, stan profilowania dla poziomu ma wartość ON. Na wątek być profilowane, globalne, proces i poziomie wątku stany wątku muszą być włączone.  
+ Gdy stan uruchomienia/zatrzymania i wstrzymania/wznowienia jest włączony, stan profilowania dla poziomu jest włączony. W przypadku wątku, który ma zostać profilowany, Stany globalne, proces i poziom wątku dla wątku muszą być włączone.  
   
 ## <a name="net-framework-equivalent"></a>Odpowiednik w programie .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>Informacje o funkcji  
- Nagłówek: Zadeklarowane w VSPerf.h  
+ Nagłówek: zadeklarowany w VSPerf. h  
   
- Biblioteka importów: VSPerf.lib  
+ Biblioteka importowana: VSPerf. lib  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie pokazano metodę SuspendProfile. W tym przykładzie założono, że dokonano wcześniejszym wywołaniu StartProfile proces lub wątek identyfikowane przez [PROFILE_CURRENTID](../profiling/profile-currentid.md).  
+ Poniższy przykład ilustruje metodę SuspendProfile. W tym przykładzie przyjęto założenie, że dla procesu lub wątku identyfikowanego przez [PROFILE_CURRENTID](../profiling/profile-currentid.md)zostało wykonane wcześniejsze wywołanie StartProfile.  
   
 ```  
 void ExerciseSuspendProfile()  
@@ -108,4 +108,4 @@ void ExerciseSuspendProfile()
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dokumentacja interfejsów API profilera programu Visual Studio (natywnych)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)

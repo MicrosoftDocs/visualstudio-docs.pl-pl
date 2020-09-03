@@ -1,5 +1,5 @@
 ---
-title: '&lt;assemblyIdentity&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
+title: '&lt;assemblyIdentity, &gt; element (wdrażanie ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,16 +18,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bfc2ff97a2eb465fe7306ebe368a20e2a7fd8638
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155725"
 ---
-# <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity&gt; — Element (wdrażanie ClickOnce)
+# <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity, &gt; element (wdrażanie ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Określa podstawowy zestaw z [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji.  
+Identyfikuje podstawowy zestaw [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,21 +42,21 @@ Określa podstawowy zestaw z [!INCLUDE[ndptecclick](../includes/ndptecclick-md.m
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Atrybuty i elementy  
- `assemblyIdentity` Element jest wymagany. Go nie zawiera żadnych elementów podrzędnych i ma następujące atrybuty.  
+## <a name="elements-and-attributes"></a>Elementy i atrybuty  
+ `assemblyIdentity`Element jest wymagany. Nie zawiera żadnych elementów podrzędnych i ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`name`|Wymagana. Identyfikuje zrozumiałą nazwę wdrożenia w celach informacyjnych.<br /><br /> Jeśli `name` zawiera znaki specjalne, takie jak pojedynczym lub podwójnym cudzysłowie, aplikacja może zakończyć się niepowodzeniem do aktywowania.|  
-|`version`|Wymagana. Określa numer wersji zestawu, w następującym formacie: `major.minor.build.revision`.<br /><br /> Ta wartość muszą być zwiększane w manifeście zaktualizowane w celu wyzwolenia aktualizacji aplikacji.|  
-|`publicKeyToken`|Wymagany. Określa ciąg szesnastkowy 16-znakowy, który reprezentuje ostatnie 8 bajtów wartości skrótu SHA-1 klucza publicznego, w ramach której manifest wdrożenia jest podpisany. Klucz publiczny, który jest używany do podpisywania musi wynosić 2048 bitów lub nowszej.<br /><br /> Mimo że zaleca się podpisywanie zestawu, ale opcjonalny, ten atrybut jest wymagany. Jeśli zestaw jest podpisany, możesz Kopiowanie wartości z podpisem własnym zestawu lub użyj wartości "fikcyjny" samych zer.|  
-|`processorArchitecture`|Wymagane. Określa procesor. Prawidłowe wartości to `msil` dla wszystkich procesorów `x86` dla Windows 32-bitowych `IA64` dla Windows 64-bitowych i `Itanium` dla procesorów Intel 64-bitowych procesorach Itanium.|  
-|`type`|Wymagany. Dla zachowania zgodności z technologii side-by-side instalacji Windows. Jest to jedyna wartość dozwolone `win32`.|  
+|`name`|Wymagany. Określa czytelną dla człowieka nazwę wdrożenia do celów informacyjnych.<br /><br /> Jeśli `name` zawiera znaki specjalne, takie jak pojedyncze lub podwójne cudzysłowy, uruchomienie aplikacji może się nie powieść.|  
+|`version`|Wymagany. Określa numer wersji zestawu w następującym formacie: `major.minor.build.revision` .<br /><br /> Ta wartość musi być zwiększana w zaktualizowanym manifeście, aby wyzwolić aktualizację aplikacji.|  
+|`publicKeyToken`|Wymagany. Określa 16-znakowy ciąg szesnastkowy, który reprezentuje ostatnie 8 bajtów wartości skrótu SHA-1 klucza publicznego, w którym jest podpisany manifest wdrożenia. Klucz publiczny używany do podpisywania musi mieć wartość 2048 bitów lub większą.<br /><br /> Chociaż podpisywanie zestawu jest zalecane, ale opcjonalne, ten atrybut jest wymagany. Jeśli zestaw nie jest podpisany, należy skopiować wartość z zestawu z podpisem własnym lub użyć wartości "fikcyjnej" wszystkich zer.|  
+|`processorArchitecture`|Wymagany. Określa procesor. Prawidłowe wartości są `msil` dla wszystkich procesorów, `x86` 32-bitowych systemu Windows, `IA64` dla 64-bitowego systemu Windows oraz `Itanium` dla procesorów Intel 64-bit.|  
+|`type`|Wymagany. W celu zapewnienia zgodności z technologią instalacji równoległej systemu Windows. Jedyna dozwolona wartość to `win32` .|  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie kodu pokazano `assemblyIdentity` element [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest wdrożenia. Ten przykład kodu jest częścią większego przykładu przewidzianego dla [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) tematu.  
+ Poniższy przykład kodu ilustruje `assemblyIdentity` element w [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeście wdrożenia. Ten przykład kodu jest częścią większego przykładu dostarczonego w temacie [manifestu wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) .  
   
 ```  
 <!-- Identify the deployment. -->  
@@ -70,5 +70,5 @@ Określa podstawowy zestaw z [!INCLUDE[ndptecclick](../includes/ndptecclick-md.m
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [\<assemblyIdentity>, element](../deployment/assemblyidentity-element-clickonce-application.md)
+ [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)   
+ [\<assemblyIdentity> Postaci](../deployment/assemblyidentity-element-clickonce-application.md)

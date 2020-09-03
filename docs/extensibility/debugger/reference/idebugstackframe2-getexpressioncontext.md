@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetExpressionContext | Dokumenty firmy Microsoft
+title: 'IDebugStackFrame2:: GetExpressionContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fb1a075d04ed53fdbe2181975a56eddfcbc3b683
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719740"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
@@ -41,13 +41,13 @@ int GetExpressionContext ( 
 
 ## <a name="parameters"></a>Parametry
 `ppExprCxt`\
-[na zewnątrz] Zwraca [obiekt IDebugExpressionContext2,](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) który reprezentuje kontekst do oceny wyrażenia.
+określoną Zwraca obiekt [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) , który reprezentuje kontekst oceny wyrażenia.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ogólnie rzecz biorąc kontekst oceny wyrażenia można traktować jako zakres wykonywania oceny wyrażenia. Wywołanie [Metody ParseText,](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) aby przeanalizować wyrażenie, a następnie [wywołać wynikowe EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) lub [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) metody do oceny wyrażenia analizowane.
+ Ogólnie rzecz biorąc, kontekst oceny wyrażenia może być uważany za zakres do wykonywania obliczeń wyrażeń. Wywołaj metodę [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) , aby przeanalizować wyrażenie, a następnie Wywołaj wynikowe metody [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) lub [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) , aby obliczyć przeanalizowane wyrażenie.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

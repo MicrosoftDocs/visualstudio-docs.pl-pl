@@ -11,10 +11,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 3c5cb51232457a43200c8a71ace51cc4b8a63e02
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88507989"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Uruchamianie testu jednostkowego jako procesu 64-bitowego
@@ -45,7 +45,7 @@ Jeśli masz maszynę 64-bitową, możesz uruchomić testy jednostkowe i przechwy
 
    Określ `<TargetPlatform>x64</TargetPlatform>` w pliku *. runsettings* . Zaletą tej metody jest to, że można określić grupy ustawień w różnych plikach i szybko przełączać się między różnymi ustawieniami. Możesz również kopiować ustawienia między rozwiązaniami. Aby uzyskać więcej informacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku. runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
 - [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)

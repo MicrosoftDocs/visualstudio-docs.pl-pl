@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetInfo | Dokumenty firmy Microsoft
+title: 'IDebugStackFrame2:: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 09768fc58640d79a3b5628bafc16b2267f1f8a4c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719721"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
@@ -45,16 +45,16 @@ int GetInfo ( 
 
 ## <a name="parameters"></a>Parametry
 `dwFieldSpec`\
-[w] Kombinacja flag z wyliczenia [FRAMEINFO_FLAGS,](../../../extensibility/debugger/reference/frameinfo-flags.md) która określa, które `pFrameInfo` pola parametru mają być wypełnione.
+podczas Kombinacja flag z wyliczenia [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) , która określa, które pola `pFrameInfo` parametru mają być wypełnione.
 
 `nRadix`\
-[w] Radix do wykorzystania w formatowaniu wszelkich informacji liczbowych.
+podczas Podstawy do użycia podczas formatowania wszelkich informacji numerycznych.
 
 `pFrameInfo`\
-[na zewnątrz] Struktura [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) wypełniona opisem ramki stosu.
+określoną Struktura [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) , która jest wypełniana opisem ramki stosu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

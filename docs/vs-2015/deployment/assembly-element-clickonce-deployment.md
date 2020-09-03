@@ -1,5 +1,5 @@
 ---
-title: '&lt;zestaw&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
+title: '&lt;Assembly — &gt; element (wdrożenie ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,16 +18,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3b77cfacf3dca2c2cc20d674f79929e9958a16d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155737"
 ---
-# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;zestaw&gt; — Element (wdrażanie ClickOnce)
+# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;Assembly — &gt; element (wdrażanie ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Element najwyższego poziomu do manifestu wdrażania.  
+Element najwyższego poziomu dla manifestu wdrożenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,17 +38,17 @@ Element najwyższego poziomu do manifestu wdrażania.
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Atrybuty i elementy  
- `assembly` Element jest elementem głównym i jest wymagana. Pierwszy element zawarte musi być `assemblyIdentity` elementu. Elementy manifestu musi znajdować się w następujących przestrzeni nazw: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, i `http://www.w3.org/2000/09/xmldsig#`. Elementy podrzędne zestawu również musi być w tych obszarach nazw poprzez dziedziczenie lub oznaczając.  
+## <a name="elements-and-attributes"></a>Elementy i atrybuty  
+ `assembly`Element jest elementem głównym i jest wymagany. Jego pierwszy element zawarty musi być `assemblyIdentity` elementem. Elementy manifestu muszą znajdować się w następujących obszarach nazw: `urn:schemas-microsoft-com:asm.v1` , `urn:schemas-microsoft-com:asm.v2` , i `http://www.w3.org/2000/09/xmldsig#` . Elementy podrzędne zestawu muszą również znajdować się w tych obszarach nazw, dziedziczenie lub znakowanie.  
   
- `assembly` Element ma atrybut.  
+ `assembly`Element ma następujący atrybut.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`manifestVersion`|Wymagany. Ten atrybut musi być równa `1.0`.|  
+|`manifestVersion`|Wymagany. Ten atrybut musi być ustawiony na `1.0` .|  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie kodu pokazano `assembly` elementu w manifeście wdrożenia dla aplikacji wdrożonych za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego dla [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) tematu.  
+ Poniższy przykład kodu ilustruje `assembly` element w manifeście wdrożenia dla aplikacji wdrożonej przy użyciu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . Ten przykład kodu jest częścią większego przykładu dostarczonego w temacie [manifestu wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) .  
   
 ```  
 <asmv1:assembly   
@@ -66,5 +66,5 @@ Element najwyższego poziomu do manifestu wdrażania.
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [\<assembly>, element](../deployment/assembly-element-clickonce-application.md)
+ [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)   
+ [\<assembly> Postaci](../deployment/assembly-element-clickonce-application.md)

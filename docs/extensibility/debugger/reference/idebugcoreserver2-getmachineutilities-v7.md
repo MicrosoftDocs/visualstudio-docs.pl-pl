@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineUtilities_V7 | Dokumenty firmy Microsoft
+title: 'IDebugCoreServer2:: GetMachineUtilities_V7 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,17 +16,17 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 79eba6889583f1dfa482dab107ad31eaaacdbcc2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733152"
 ---
 # <a name="idebugcoreserver2getmachineutilities_v7"></a>IDebugCoreServer2::GetMachineUtilities_V7
-Ta metoda pobiera narzędzia komputera dla serwera.
+Ta metoda pobiera narzędzia maszyny dla serwera.
 
 > [!NOTE]
-> Ta metoda jest przestarzała: nie należy używać ([!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] zawsze zwraca, `E_NOTIMPL` jeśli ta metoda jest wywoływana). Jest ontrzymyowany ze względów historycznych.
+> Ta metoda jest przestarzała: nie należy używać ( [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] zawsze zwraca, `E_NOTIMPL` Jeśli ta metoda jest wywoływana). Jest on zachowywany z przyczyn historycznych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,13 +44,13 @@ int GetMachineUtilities_V7(
 
 ## <a name="parameters"></a>Parametry
 `ppUtil`\
-[na zewnątrz] Zwraca `IDebugMDMUtil2_V7` interfejs, który reprezentuje informacje o narzędziach komputera.
+określoną Zwraca `IDebugMDMUtil2_V7` interfejs, który reprezentuje informacje o narzędziu maszynowym.
 
 ## <a name="return-value"></a>Wartość zwracana
- Zawsze `E_NOTIMPL`zwraca , wskazując, że metoda nie jest zaimplementowana.
+ Zawsze zwraca `E_NOTIMPL` , wskazując, że metoda nie jest zaimplementowana.
 
 ## <a name="remarks"></a>Uwagi
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]zawsze `E_NOTIMPL` zwraca, jeśli ta metoda jest wywoływana.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] zawsze zwraca, `E_NOTIMPL` Jeśli ta metoda jest wywoływana.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

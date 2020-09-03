@@ -1,5 +1,5 @@
 ---
-title: AddMessage | Dokumentacja firmy Microsoft
+title: AddMessage | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f01d4e80c3740ae27b5df8badbc74989c2da2c60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156512"
 ---
 # <a name="addmessage"></a>AddMessage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dodaje niestandardowy komunikat do diagnostyki grafiki *HUD* (wyświetlanie Head-Up).  
+Dodaje niestandardowy komunikat do *HUD* diagnostyki grafiki (wyświetlacz podręczny).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,6 +34,6 @@ void AddMessage(
  Komunikat, który ma zostać dodany do HUD.  
   
 ## <a name="remarks"></a>Uwagi  
- HUD diagnostyki grafiki jest wyświetlany w lewym górnym rogu aplikacji, która jest uruchomiona w ramach diagnostyki grafiki. Wyświetla informacje czasu wykonywania dotyczące aplikacji i przechwytywanie informacji graficznych i komunikaty, które są dodawane przez wywołanie tej funkcji.  
+ HUD diagnostyki grafiki jest wyświetlana w lewym górnym rogu aplikacji, która jest uruchamiana w obszarze Diagnostyka grafiki. Są w nim wyświetlane informacje o aplikacji i informacje o grafice i komunikaty dodawane przez wywołanie tej funkcji.  
   
- Aby dodać komunikat HUD, nie trzeba być aktywnie przechwytywanie informacji graficznych — oznacza to, że można dodać komunikat za pośrednictwem wystąpienia `VsgDbg` klasy, ale [Init](../debugger/init.md) funkcji składowej nie jest wywoływany jako pierwszy. Komunikaty są wyświetlane tylko w HUD, nie są rejestrowane w pliku dziennika grafiki.
+ Aby dodać komunikat do HUD, nie musisz aktywnie przechwytywać informacji graficznych — to znaczy, że komunikat można dodać za pomocą wystąpienia `VsgDbg` klasy, ale funkcja [init](../debugger/init.md) member nie jest wywoływana jako pierwsza. Komunikaty są wyświetlane tylko w HUD, nie są rejestrowane w pliku dziennika grafiki.

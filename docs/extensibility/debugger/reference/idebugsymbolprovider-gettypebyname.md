@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetTypeByName | Dokumenty firmy Microsoft
+title: 'IDebugSymbolProvider:: GetTypeByName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ce4dfab898190eb89c58503e378b410ddfc240de
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719183"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
@@ -45,19 +45,19 @@ int GetTypeByName(
 
 ## <a name="parameters"></a>Parametry
 `pszClassName`\
-[w] Nazwa symbolu.
+podczas Nazwa symbolu.
 
 `nameMatch`\
-[w] Wybiera typ dopasowania, na przykład z uwzględnieniem wielkości liter. Wartość z [wyliczenia NAME_MATCH.](../../../extensibility/debugger/reference/name-match.md)
+podczas Wybiera typ dopasowania, na przykład z rozróżnianiem wielkości liter. Wartość z wyliczenia [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) .
 
 `ppField`\
-[na zewnątrz] Zwraca typ symbolu jako obiekt [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
+określoną Zwraca typ symbolu jako obiekt [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest ogólną wersją [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).
+ Ta metoda to ogólna wersja [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentChecksum2:: GetChecksumAndAlgorithmId | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a8a603a025d6a9b5b2ba4f0418807666bba4d8b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156491"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera identyfikator sumy kontrolnej i algorytm dokumentu podana maksymalna liczba bajtów do użycia.  
+Pobiera sumę kontrolną dokumentu i identyfikator algorytmu z uwzględnieniem maksymalnej liczby bajtów do użycia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -45,22 +45,22 @@ public int GetChecksumAndAlgorithmId(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Unikatowy identyfikator algorytmu sumy kontrolnej.  
+ określoną Unikatowy identyfikator algorytmu sum kontrolnych.  
   
  `cMaxBytes`  
- [in] Maksymalna liczba bajtów, które mają być używane dla sumy kontrolnej.  
+ podczas Maksymalna liczba bajtów do użycia w sumie kontrolnej.  
   
  `pChecksum`  
- [out] Wartość sumy kontrolnej.  
+ określoną Wartość sumy kontrolnej.  
   
  `pcNumBytes`  
- [out] Rzeczywista liczba bajtów używanych przez sumę kontrolną.  
+ określoną Rzeczywista liczba bajtów użyta dla sumy kontrolnej.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie użyto tej metody można pobrać sumy kontrolnej i algorytm dokumentu.  
+ Poniższy przykład używa tej metody, aby uzyskać sumę kontrolną i algorytm dla dokumentu.  
   
 ```cpp#  
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)  

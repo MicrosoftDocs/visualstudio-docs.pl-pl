@@ -1,5 +1,5 @@
 ---
-title: Friend (dostępu do interfejsu debugowania zestawu SDK) | Dokumentacja firmy Microsoft
+title: Zaprzyjaźniony (zestaw SDK dostępu do interfejsu debugowania) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,29 +16,29 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ab8892bdf0caaa61a4b60fab10a5fecfb115e7f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164207"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>Przyjaciel (Zestaw SDK dostępu do interfejsu debugowania)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Klasy przyjazne i Friend — funkcje, które są identyfikowane przez `SymTagFriend` symboli. Ich elementy podrzędne elementu nadrzędnego typy zdefiniowane przez użytkownika (UDTs) i ma [idiasymbol::get_classparent —](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) właściwości.  
+Klasy zaprzyjaźnione i zaprzyjaźnione funkcje są identyfikowane przez `SymTagFriend` symbole. Są one elementami podrzędnymi nadrzędnych typów zdefiniowanych przez użytkownika (UDTs) i mają właściwość [IDiaSymbol:: get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) .  
   
 ## <a name="properties"></a>Właściwości  
  W poniższej tabeli przedstawiono dodatkowe prawidłowe właściwości dla tego typu symbolu.  
   
 |Właściwość|Typ danych|Opis|  
 |--------------|---------------|-----------------|  
-|[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Symbol nadrzędnego UDT.|  
-|[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|Identyfikator klasy nadrzędnej symbolu.|  
+|[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Symbol dla elementu nadrzędnego UDT.|  
+|[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|Identyfikator symbolu nadrzędnego klasy.|  
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nazwa klasy lub funkcji.|  
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Identyfikator indeksu: symbolu.|  
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Zwraca `SymTagFriend` (jeden z [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) wartości).|  
-|[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Symbol dla klasy lub funkcji.|  
-|[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|Identyfikator typu symbolu.|  
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Identyfikator indeksu symbolu.|  
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Zwraca `SymTagFriend` (jedną z wartości [wyliczenia SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md) ).|  
+|[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Symbol klasy lub funkcji.|  
+|[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|Identyfikator symbolu typu.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

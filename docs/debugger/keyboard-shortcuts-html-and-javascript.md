@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 824d0787de78ddc679d1060179e65043e0bf5299
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731495"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Skróty klawiaturowe (HTML i JavaScript)
@@ -58,7 +58,7 @@ Skróty klawiaturowe w programie Visual Studio do debugowania aplikacji platform
 |Zwiększ wybraną wartość CSS o 1|Strzałka w górę|
 |Zmniejsz wybraną wartość CSS o 1|Strzałka w dół|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Polecenia konsoli JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Szybki start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
 - [Szybki start: debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

@@ -1,5 +1,5 @@
 ---
-title: Narzędzia niestandardowe | Dokumentacja firmy Microsoft
+title: Narzędzia niestandardowe | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,47 +13,47 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 594d564cf4a18eb0b673abd9b45b7d70e20381b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196917"
 ---
 # <a name="custom-tools"></a>Narzędzia niestandardowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-*Narzędzia niestandardowe* umożliwiają skojarzenie narzędzie za pomocą elementu w projekcie i uruchomienia tego narzędzia, zawsze wtedy, gdy plik jest zapisywany. Niektóre narzędzia niestandardowe czasami określane jako *generatorów jednoplikowych*, są często używane do implementowania tłumaczy, które generują kod z danych i na odwrót. Na przykład można utworzyć generatorów jednoplikowych [!INCLUDE[csprcs](../../includes/csprcs-md.md)] i [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] kodu pliki .settings i resx poza źródłowego. Kod źródłowy wygenerowanego udostępnia silnie typizowane dane w plikach .settings i resx. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] i [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] typów projektów obsługuje narzędzi niestandardowych; [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] typów projektów nie obsługują. Swój własny typ projektu może również obsługiwać narzędzia niestandardowe.  
+*Narzędzia niestandardowe* umożliwiają skojarzenie narzędzia z elementem w projekcie i uruchamianie tego narzędzia za każdym razem, gdy plik zostanie zapisany. Niektóre niestandardowe narzędzia, nazywane czasami *generatorami pojedynczych plików*, są często używane do implementowania tłumaczeń generujących kod na podstawie danych i na odwrót. Na przykład generatory pojedynczych plików tworzą [!INCLUDE[csprcs](../../includes/csprcs-md.md)] i [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] kodu źródłowego z plików. Settings i. resx. Wygenerowany kod źródłowy zapewnia dostęp z jednoznacznie określonym dostępem do danych w plikach. Settings i. resx. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] Typy projektów i obsługują niestandardowe narzędzia; [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] typy projektów nie są. Własne typy projektów również mogą obsługiwać niestandardowe narzędzia.  
   
- Narzędzia niestandardowe są zarejestrowane składniki z zaimplementowanymi `IVsSingleFileGenerator` interfejsu.  
+ Narzędzia niestandardowe są zarejestrowanymi składnikami, które implementują `IVsSingleFileGenerator` interfejs.  
   
- Narzędzia niestandardowe są skojarzone z `ProjectItem` interfejs obiektu i są podobne do projektantów i edytorów. Niestandardowe narzędzie przyjmuje pliku, reprezentowane przez `ProjectItem` jako dane wejściowe i zapisuje nowy plik, którego nazwa pliku są dostarczane przez `DefaultExtension` metody.  
+ Narzędzia niestandardowe są skojarzone z `ProjectItem` obiektem interfejsu i są podobne do projektantów i edytorów. Narzędzie niestandardowe pobiera plik reprezentowany przez `ProjectItem` dane wejściowe i zapisuje nowy plik, którego nazwa pliku jest dostarczana przez `DefaultExtension` metodę.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Implementowanie generatorów jednoplikowych](../../extensibility/internals/implementing-single-file-generators.md)  
- Opisuje sposób używania <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interfejs do implementacji niestandardowego narzędzia.  
+ Opisuje sposób korzystania z <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interfejsu w celu zaimplementowania niestandardowego narzędzia.  
   
- [Określanie Namespace domyślnego projektu](../../misc/determining-the-default-namespace-of-a-project.md)  
- W tym artykule opisano, jak określić poprawną przestrzeń nazw na podstawie języka używany.  
+ [Określanie domyślnej przestrzeni nazw projektu](../../misc/determining-the-default-namespace-of-a-project.md)  
+ Opisuje sposób określania poprawnej przestrzeni nazw na podstawie używanego języka.  
   
  [Rejestrowanie generatorów jednoplikowych](../../extensibility/internals/registering-single-file-generators.md)  
- Zawiera opis wszystkie wpisy rejestru dla niestandardowego narzędzia.  
+ Zawiera opisy wszystkich wpisów rejestru dla niestandardowego narzędzia.  
   
  [Udostępnianie typów dla projektantów wizualnych](../../extensibility/internals/exposing-types-to-visual-designers.md)  
- W tym artykule wyjaśniono, jak systemy projektu obsługują projektantów wizualnych do dostępu do wygenerowanych klas i typów plików tymczasowych przenośny plik wykonywalny (PE).  
+ Wyjaśnia, jak systemy projektów zapewniają obsługę projektantów wizualizacji w celu uzyskiwania dostępu do wygenerowanych klas i typów za pomocą tymczasowych przenośnych plików wykonywalnych (PE).  
   
  [Utrwalanie właściwości elementu projektu](../../extensibility/persisting-the-property-of-a-project-item.md)  
- Pokazuje, jak można utrwalić właściwości elementu projektu, takich jak tworzenie pliku źródłowego, w pliku projektu.  
+ Pokazuje, jak zachować właściwość elementu projektu, na przykład autora pliku źródłowego w pliku projektu.  
   
-## <a name="reference"></a>Tematy pomocy  
+## <a name="reference"></a>Dokumentacja  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>  
- Zawiera szczegółowe informacje na temat <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>, który przekształca jeden plik wejściowy w pliku pojedynczego wyjścia, który może być skompilowany lub dodane do projektu.  
+ Zawiera szczegółowe informacje na temat <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> , który przekształca pojedynczy plik wejściowy w jeden plik wyjściowy, który można skompilować lub dodać do projektu.  
   
  <xref:EnvDTE.ProjectItem>  
  Wyjaśnia `ProjectItem` interfejs, który reprezentuje element w projekcie.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>  
- Zawiera szczegółowe informacje na temat `DefaultExtension` metody, która pobiera rozszerzenie nazwy pliku, który znajduje się na nazwę pliku wyjściowego.  
+ Zawiera szczegółowe informacje na temat `DefaultExtension` metody, która pobiera rozszerzenie nazwy pliku, które jest przyznany do nazwy pliku wyjściowego.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Rozszerzanie projektów](../../extensibility/extending-projects.md)  
- Opisuje sposób używania [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] projekty i rozwiązania do organizowania plików kodu i plików zasobów i sposób implementowania kontroli źródła.
+ Opisuje sposób używania [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] projektów i rozwiązań do organizowania plików kodu i plików zasobów oraz sposobu implementacji kontroli źródła.

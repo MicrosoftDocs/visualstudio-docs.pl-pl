@@ -1,5 +1,5 @@
 ---
-title: Analizowanie wydajności danych dotyczących narzędzi | Dokumentacja firmy Microsoft
+title: Analizowanie danych narzędzi wydajności | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,24 +18,24 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a141e6f02c8457adaee45ddc6905470a747123d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156437"
 ---
 # <a name="analyzing-performance-tools-data"></a>Analizowanie danych dotyczących narzędzi do oceny wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wydajność raportów z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools pozwalają przeglądać i analizować problemy z wydajnością aplikacji. Ta sekcja zawiera omówienie raporty dotyczące wydajności i widoki, których można użyć do sprawdzenia danych dotyczących wydajności.  
+Raporty wydajności [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] narzędzia profilowania umożliwiają wyświetlanie i analizowanie problemów z wydajnością aplikacji. Ta sekcja zawiera omówienie raportów i widoków wydajności, których można użyć do sprawdzenia danych wydajności.  
   
 ## <a name="common-tasks"></a>Typowe zadania  
   
 |Zadanie|Powiązana zawartość|  
 |----------|---------------------|  
-|**Korzystanie z reguł wydajności, szybkie identyfikowanie problemów:** Reguły wydajności z narzędzi profilowania zidentyfikować najczęściej występujących problemów i pomoc, której możesz łatwo przejść do kodu źródłowego, który zawiera ten problem. Tematy pomocy szczegółowe często może sugerować rozwiązania.|-   [Korzystanie z reguł wydajności do analizowania danych](../profiling/using-performance-rules-to-analyze-data.md)|  
-|**Poznaj szczegóły widoku raportu:** Narzędzia profilowania widoków raportów Obejmij zagregowane dane wydajności procesy, wątki, moduły i funkcje przebiegu profilowania. Dane, które pojawia się zależy od metody profilowania, użytej do zebrania danych.|-   [Widoki raportu wydajności](../profiling/performance-report-views.md)|  
-|**Konfigurowanie, sortowanie i filtrowanie raportu widoki:** Możesz określić i kolejność kolumn danych do wyświetlania w raporcie, sortować wiersze raportów i filtrować dane, aby uwzględnić tylko jeden segment czas, który określisz.|-   [Dostosowywanie wydajności widoków raportów narzędzi](../profiling/customizing-performance-tools-report-views.md)|  
+|**Użyj reguł wydajności, aby szybko identyfikować problemy:** Narzędzia profilowania reguły wydajności identyfikują typowe problemy i ułatwiają przechodzenie do kodu źródłowego, który zawiera problem. Szczegółowe tematy pomocy często sugerują rozwiązanie.|-   [Korzystanie z reguł wydajności do analizowania danych](../profiling/using-performance-rules-to-analyze-data.md)|  
+|**Informacje o widoku raportu:** Widoki raportów narzędzia profilowania zapewniają zagregowane dane wydajności dla procesów, wątków, modułów i funkcji przebiegu profilowania. Wyświetlane dane są zależne od metody profilowania, która została użyta do zbierania danych.|-   [Widoki raportów wydajności](../profiling/performance-report-views.md)|  
+|**Konfigurowanie, sortowanie i filtrowanie widoków raportu:** Można określić i zamówić kolumny danych, które mają być wyświetlane w raporcie, sortować wiersze raportu i filtrować dane w celu uwzględnienia tylko określonego segmentu czasu.|-   [Dostosowywanie widoków raportów narzędzi wydajności](../profiling/customizing-performance-tools-report-views.md)|  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Porównywanie plików danych dotyczących wydajności](../profiling/comparing-performance-data-files.md)  

@@ -24,9 +24,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015049"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Tworzenie składników Web Part dla programu SharePoint
@@ -99,7 +100,7 @@ ms.locfileid: "86015049"
   Aby uzyskać więcej informacji o rozwiązaniach w trybie piaskownicy, zobacz [różnice między rozwiązaniami w trybie piaskownicy a farmą](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).
 
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>Tworzenie starszych składników Web Part opartych na programie SharePoint
- Za pomocą szablonów w programie Visual Studio można tworzyć niestandardowe [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] składniki Web Part dla programu SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]części sieci Web są zbudowane na podstawie [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastruktury składnika Web Part i są zalecanym typem dla nowych projektów.
+ Za pomocą szablonów w programie Visual Studio można tworzyć niestandardowe [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] składniki Web Part dla programu SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] części sieci Web są zbudowane na podstawie [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastruktury składnika Web Part i są zalecanym typem dla nowych projektów.
 
  W bardzo niewielkich przypadkach może być konieczne utworzenie składnika Web Part przy użyciu starszej części sieci Web opartej na programie SharePoint. Możesz użyć programu Visual Studio, aby utworzyć te typy części sieci Web, ale program Visual Studio nie udostępnia żadnych szablonów, które zostały zaprojektowane specjalnie w celu ułatwienia ich tworzenia.
 

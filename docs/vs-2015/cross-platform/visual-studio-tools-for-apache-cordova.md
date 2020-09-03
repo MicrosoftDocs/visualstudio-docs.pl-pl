@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Tools for Apache Cordova | Dokumentacja firmy Microsoft
+title: Visual Studio Tools Apache Cordova | Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 21dcf46e-5d6d-439c-90e3-3d678e50c5a6
@@ -8,27 +8,27 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 0d0903db05b193b3318dc30c250bfdb21e76b093
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155282"
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Visual Studio Tools for Apache Cordova
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Twórz aplikacje, które są uruchamiane, w systemach iOS, Android i Windows, urządzenia i udostępniać prawie 100% kodu. Twórz je przy użyciu technologii internetową. Apache Cordova umożliwia dostęp do natywnych funkcji urządzenia, takie jak kamery na telefonie, a przede wszystkim jest bezpłatny. Program Visual Studio dodaje te dodatki, aby jeszcze bardziej ułatwić tworzenie aplikacji:  
+Twórz aplikacje, które działają na urządzeniach z systemem iOS, Android i Windows i dzielą się na niemal 100% kodu. Kompiluj je przy użyciu ulubionych technologii sieci Web. Apache Cordova zapewnia natywny dostęp do możliwości urządzenia, takich jak aparat fotograficzny na telefonie, i najlepiej jest bezpłatny. Program Visual Studio dodaje te dodatki, aby ułatwić tworzenie aplikacji:  
   
 - Łatwa instalacja i konfiguracja.  
   
-- Zaawansowany debuger, aby ułatwić znajdowanie i rozwiązywanie problemów.  
+- Zaawansowany debuger ułatwiający znajdowanie i rozwiązywanie problemów.  
   
 - Łatwy dostęp do emulatorów urządzeń.  
   
-- Projektant Zarządzanie wtyczki urządzenia.  
+- Projektant umożliwiający zarządzanie wtyczkami urządzeń.  
   
-- Projekt, który jest całkowicie zgodne z interfejsu wiersza polecenia.  
+- Projekt, który jest w pełni zgodny z interfejsem wiersza polecenia.  
   
-Jeśli rozważasz tych narzędzi, ale których nie jesteś gotowy je wypróbować, ale można znaleźć w naszej [funkcji](https://www.visualstudio.com/explore/cordova-vs) strony, a firma Microsoft dowiesz więcej o nich.  
+Jeśli rozważasz te narzędzia, ale nie jesteś gotowy do wypróbowania tych narzędzi, odwiedź stronę naszych [funkcji](https://www.visualstudio.com/explore/cordova-vs) , a my poinformujemy Cię o nich.  
   
-Jeśli wszystko będzie gotowe rozpocząć, zobacz [opracowywania aplikacji mobilnych za pomocą języka JavaScript](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017).
+Jeśli wszystko jest gotowe do rozpoczęcia, zobacz [Programowanie aplikacji mobilnych za pomocą języka JavaScript](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017).

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetCodeContext | Dokumenty firmy Microsoft
+title: 'IDebugStackFrame2:: GetCodeContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e14826e9c01e6cb8e9eba6ce2adf8686ad8b2f91
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719879"
 ---
 # <a name="idebugstackframe2getcodecontext"></a>IDebugStackFrame2::GetCodeContext
@@ -41,10 +41,10 @@ int GetCodeContext ( 
 
 ## <a name="parameters"></a>Parametry
 `ppCodeCxt`\
-[na zewnątrz] Zwraca obiekt [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) reprezentujący bieżący wskaźnik instrukcji w tej ramce stosu.
+określoną Zwraca obiekt [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , który reprezentuje bieżący wskaźnik instrukcji w tej klatce stosu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

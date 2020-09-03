@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2 | Dokumenty firmy Microsoft
+title: IDebugCoreServer2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7a5990c84fbaeb5ebb3b1e188d3317234afda06b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733035"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
@@ -29,33 +29,33 @@ IDebugCoreServer2 : IUknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Visual Studio implementuje ten interfejs do reprezentowania serwera. Każde wystąpienie programu Visual Studio tworzy wystąpienie tego interfejsu.
+ Program Visual Studio implementuje ten interfejs, aby reprezentować serwer. Każde wystąpienie programu Visual Studio tworzy wystąpienie tego interfejsu.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
  Dostawca portu niestandardowego odbiera ten interfejs w wywołaniu [zdarzenia](../../../extensibility/debugger/reference/idebugportevents2-event.md).
 
- Aparat debugowania można uzyskać ten interfejs pośrednio za pośrednictwem wywołania [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) (który zwraca [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md), interfejs, który pochodzi od `IDebugCoreServer2`).
+ Aparat debugowania może uzyskać ten interfejs pośrednio za pośrednictwem wywołania metody [getserver](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) (która zwraca [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md), interfejs, który jest pochodną `IDebugCoreServer2` ).
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- W poniższej tabeli `IDebugCoreServer2`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ W poniższej tabeli przedstawiono metody `IDebugCoreServer2` .
 
 |Metoda|Opis|
 |------------|-----------------|
 |[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)|Pobiera nazwę i atrybuty maszyny.|
 |[GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)|Pobiera nazwę komputera.|
-|[GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)|Pobiera dostawcy portu, który istnieje na komputerze.|
-|[GetPort](../../../extensibility/debugger/reference/idebugcoreserver2-getport.md)|Pobiera port, który już istnieje na komputerze.|
-|[EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)|Tworzy wyliczenie dla wszystkich portów na komputerze.|
-|[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)|Tworzy wyliczenie dla wszystkich dostawców portów na komputerze.|
-|[GetMachineUtilities_V7](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineutilities-v7.md)|Pobiera narzędzia maszyny dla maszyny.|
+|[GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)|Pobiera dostawcę portu, który istnieje na komputerze.|
+|[GetPort](../../../extensibility/debugger/reference/idebugcoreserver2-getport.md)|Pobiera port, który już istnieje na maszynie.|
+|[EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)|Tworzy moduł wyliczający dla wszystkich portów na komputerze.|
+|[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)|Tworzy moduł wyliczający dla wszystkich dostawców portów na komputerze.|
+|[GetMachineUtilities_V7](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineutilities-v7.md)|Pobiera narzędzia maszyny dla komputera.|
 
 ## <a name="remarks"></a>Uwagi
- Ten interfejs jest również używany przez program Visual Studio do przeglądania procesów uruchomionych na komputerach w sieci.
+ Ten interfejs jest również używany przez program Visual Studio do przeglądania procesów uruchomionych na maszynach w sieci.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

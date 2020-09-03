@@ -1,5 +1,5 @@
 ---
-title: Polecenie Projekt | Dokumentacja firmy Microsoft
+title: Projekt polecenia | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,63 +12,63 @@ caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a6e9eaf69be62b38a880b07fd8eb51cfc9c256a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195073"
 ---
 # <a name="command-design"></a>Projektowanie poleceń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Dodając polecenie do VSPackage, należy określić, gdzie jest wyświetlane, gdy jest dostępna i jak ma być obsługiwane.  
+Po dodaniu polecenia do pakietu VSPackage należy określić, gdzie ma być wyświetlana, gdy jest dostępne, oraz jak ma być obsługiwane.  
   
 ## <a name="defining-commands"></a>Definiowanie poleceń  
- Aby zdefiniować nowe polecenia, należy dołączyć plik tabeli poleceń w usłudze Visual Studio (vsct) w projekcie pakietu VSPackage. Jeśli utworzono pakietu VSPackage przy użyciu szablonu z pakietu Visual Studio, projekt zawiera jeden z tych plików. Aby uzyskać więcej informacji, zobacz [tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+ Aby zdefiniować nowe polecenia, należy dołączyć plik tabeli programu Visual Studio (. vsct) do projektu pakietu VSPackage. Jeśli utworzono pakietu VSPackage za pomocą szablonu pakietu programu Visual Studio, projekt zawiera jeden z tych plików. Aby uzyskać więcej informacji, zobacz [tabela poleceń programu Visual Studio (. Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
- Visual Studio łączy wszystkie pliki vsct znalezionych tak, aby go wyświetlić polecenia. Ponieważ te pliki różnią się od pakietu VSPackage binarne, Visual Studio nie ma załadowanie pakietu można znaleźć polecenia. Aby uzyskać więcej informacji, zobacz [jak pakietów VSPackage dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
+ Program Visual Studio scala wszystkie znalezione pliki. vsct, aby umożliwić wyświetlanie poleceń. Ponieważ te pliki różnią się od pliku binarnego pakietu VSPackage, program Visual Studio nie musi ładować pakietu, aby znaleźć polecenia. Aby uzyskać więcej informacji, zobacz [jak pakietów VSPackage dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
   
- Program Visual Studio używa <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> rejestracji atrybut do definiowania zasobów menu i poleceń. Aby uzyskać więcej informacji, zobacz [implementacji](../../extensibility/internals/command-implementation.md).  
+ Program Visual Studio używa <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> atrybutu rejestracji do definiowania zasobów menu i poleceń. Aby uzyskać więcej informacji, zobacz [implementacja](../../extensibility/internals/command-implementation.md).  
   
- Polecenia można zmienić w czasie wykonywania na wiele różnych sposobów. Można je wyświetlane lub ukryte, włączone lub wyłączone. Mogą wyświetlić inny tekst lub ikony lub zawierać różne wartości. Bardzo duże możliwości dostosowania mogą być wykonywane przed Visual Studio ładuje Twojego pakietu VSPackage. Aby uzyskać więcej informacji, zobacz [jak pakietów VSPackage dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
+ Polecenia można zmieniać w czasie wykonywania na wiele różnych sposobów. Mogą być wyświetlane lub ukrywane, włączane lub wyłączane. Mogą wyświetlać różne teksty lub ikony lub zawierać różne wartości. Aby program Visual Studio ładował Twoje pakietu VSPackage, można wykonać bardzo wiele operacji dostosowywania. Aby uzyskać więcej informacji, zobacz [jak pakietów VSPackage dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
   
 ## <a name="command-handlers"></a>Programy obsługi poleceń  
- Podczas tworzenia polecenia należy podać program obsługi zdarzeń w celu wykonania tego polecenia. Jeśli użytkownik wybierze polecenie, należy odpowiednio kierowana. Routing polecenie oznacza wysłaniem go do poprawne pakietu VSPackage, aby włączyć lub ją wyłączyć, ukryć lub wyświetlić je i wykonaj go, jeśli użytkownik zdecyduje to zrobić. Aby uzyskać więcej informacji, zobacz [algorytm routingu](../../extensibility/internals/command-routing-algorithm.md).  
+ Podczas tworzenia polecenia należy podać procedurę obsługi zdarzeń, aby wykonać polecenie. Jeśli użytkownik wybierze polecenie, musi być odpowiednio rozesłane. Kierowanie polecenia oznacza wysłanie go do odpowiedniej pakietu VSPackage, aby włączyć lub wyłączyć go, ukryć lub wyświetlić, a następnie wykonać, jeśli użytkownik zdecyduje się to zrobić. Aby uzyskać więcej informacji, zobacz [algorytm routingu](../../extensibility/internals/command-routing-algorithm.md).  
   
-## <a name="the-visual-studio-command-environment"></a>Środowisko polecenia programu Visual Studio  
- Program Visual Studio może obsługiwać dowolną liczbę pakietów VSPackage, a każdy może współtworzyć zawartość swój własny zestaw poleceń. Środowisko zawiera tylko polecenia, które są odpowiednie dla bieżącego zadania. Aby uzyskać więcej informacji, zobacz [dostępności](../../extensibility/internals/command-availability.md) i [wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md).  
+## <a name="the-visual-studio-command-environment"></a>Środowisko poleceń programu Visual Studio  
+ Program Visual Studio może obsługiwać dowolną liczbę pakietów VSPackage, a każdy z nich może współtworzyć własny zestaw poleceń. Środowisko wyświetla tylko te polecenia, które są odpowiednie dla bieżącego zadania. Aby uzyskać więcej informacji, zobacz [obiekty kontekstu](../../extensibility/internals/selection-context-objects.md) [dostępności](../../extensibility/internals/command-availability.md) i wyboru.  
   
- Pakietu VSPackage, który definiuje nowe polecenia, menu, paski narzędzi lub menu skrótów informacje jego polecenia do programu Visual Studio w momencie instalacji za pośrednictwem wpisów rejestru dodawanych odwoływać się do zasobów w zestawach natywnego, zarządzanego. Następnie każdy zasób odwołuje się do pliku zasobów (.cto) dane binarne, które są generowane podczas kompilowania pliku tabeli poleceń w usłudze Visual Studio (vsct). Dzięki temu program Visual Studio zapewniają zestawy poleceń scalone, menu i paski narzędzi bez konieczności ładowania każdego zainstalowanego pakietu VSPackage.  
+ Pakietu VSPackage, który definiuje nowe polecenia, menu, paski narzędzi lub menu skrótów, zawiera informacje o poleceniach do programu Visual Studio podczas instalacji za pomocą wpisów rejestru, które odwołują się do zasobów w zestawach natywnych lub zarządzanych. Każdy zasób odwołuje się do pliku zasobów danych binarnych (Dyrektor ds), który jest tworzony podczas kompilowania pliku tabeli poleceń programu Visual Studio (. vsct). Dzięki temu program Visual Studio może udostępniać scalone zestawy poleceń, menu i paski narzędzi bez konieczności ładowania wszystkich zainstalowanych pakietu VSPackage.  
   
-### <a name="command-organization"></a>Polecenie organizacji  
- Środowisko umieszcza polecenia według grupy, priorytetu i menu.  
+### <a name="command-organization"></a>Organizacja poleceń  
+ Środowisko określa polecenia według grup, priorytetów i menu.  
   
-- Grupy są logicznymi kolekcjami powiązane polecenia, na przykład, **Wytnij**, **kopiowania**, i **Wklej** grupy poleceń. Grupy są poleceniami, które są wyświetlane w menu.  
+- Grupy są logicznymi kolekcjami powiązanych poleceń, na przykład z grupą poleceń **wycinania**, **kopiowania**i **wklejania** . Grupy są poleceniami, które pojawiają się w menu.  
   
-- Priorytet określa kolejność wyświetlania pojedynczych poleceń w grupie menu.  
+- Priorytet określa kolejność, w jakiej poszczególne polecenia w grupie pojawiają się w menu.  
   
-- Menu działają jak kontenery dla grupy.  
+- Menu pełnią rolę kontenerów dla grup.  
   
-  Środowisko powoduje wstępne definiowanie niektórych poleceń, grup i menu. Aby uzyskać więcej informacji, zobacz [polecenie domyślne, grupy i położenie paska narzędzi](../../extensibility/internals/default-command-group-and-toolbar-placement.md).  
+  Środowisko wstępnie definiuje niektóre polecenia, grupy i menu. Aby uzyskać więcej informacji, zobacz [domyślne umieszczanie poleceń, grup i pasków narzędzi](../../extensibility/internals/default-command-group-and-toolbar-placement.md).  
   
-  Polecenia można przypisać do grupy podstawowej. Grupa podstawowa określa położenie polecenia w strukturze menu głównego, a w **Dostosuj** okno dialogowe. Polecenie może znajdować się w wielu grupach; na przykład polecenie może być menu głównego, w menu skrótów i na pasku narzędzi. Aby uzyskać więcej informacji, zobacz [jak pakietów VSPackage dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
+  Polecenie można przypisać do grupy podstawowej. Grupa podstawowa kontroluje położenie polecenia w strukturze menu głównego i w oknie dialogowym **Dostosuj** . Polecenie może pojawić się w wielu grupach; na przykład polecenie może być w menu głównym, w menu skrótów i na pasku narzędzi. Aby uzyskać więcej informacji, zobacz [jak pakietów VSPackage dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
   
 ### <a name="command-routing"></a>Routing poleceń  
- Proces wywoływania i routing poleceń dla pakietów VSPackage różni się od proces wywoływania metod dla wystąpienia obiektu.  
+ Proces wywoływania poleceń i routingu dla pakietów VSPackage różni się od procesu wywoływania metod w wystąpieniach obiektów.  
   
- Środowisko kieruje polecenia sekwencyjnie od kontekst najbardziej polecenia (local), który jest oparty na bieżącym zaznaczeniu, prowadzące kontekst (globalna). Pierwszy kontekst, który jest w stanie wykonać polecenia jest to, która je obsługuje. Aby uzyskać więcej informacji, zobacz [algorytm routingu](../../extensibility/internals/command-routing-algorithm.md).  
+ Środowisko kieruje polecenia sekwencyjnie od wewnętrznego kontekstu poleceń (lokalnego), który jest oparty na bieżącym zaznaczeniu, do zewnętrznego kontekstu (globalnego). Pierwszy kontekst, który jest w stanie wykonać polecenie, jest taki, który go obsługuje. Aby uzyskać więcej informacji, zobacz [algorytm routingu](../../extensibility/internals/command-routing-algorithm.md).  
   
- W większości przypadków środowiska obsługi poleceń przy użyciu <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu. Ponieważ schemat routingu poleceń umożliwia wiele różnych obiektów, do obsługi poleceń, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> może być implementowany przez dowolną liczbę obiektów; te obejmują kontrolek ActiveX firmy Microsoft, implementacje widoku okna, obiektów dokumentu, hierarchii projektu i pakietu VSPackage same obiekty (w przypadku polecenia globalne). W niektórych przypadkach specjalistyczne, na przykład routingu poleceń w hierarchii, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> należy zaimplementować interfejs.  
+ W większości przypadków środowisko obsługuje polecenia przy użyciu <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu. Ze względu na to, że schemat routingu poleceń umożliwia wiele różnych obiektów do obsługi poleceń, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> może być zaimplementowany przez dowolną liczbę obiektów. obejmują one kontrolki ActiveX firmy Microsoft, implementacje widoku okna, obiekty dokumentów, hierarchie projektu i same obiekty pakietu VSPackage (dla poleceń globalnych). W niektórych wyspecjalizowanych przypadkach, na przykład poleceń routingu w hierarchii, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> należy zaimplementować interfejs.  
   
 ## <a name="related-topics"></a>Tematy pokrewne  
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Implementacja](../../extensibility/internals/command-implementation.md)|Opisuje sposób implementacji poleceń w VSPackage.|  
-|[Dostępność](../../extensibility/internals/command-availability.md)|W tym artykule opisano, jak kontekstu programu Visual Studio Określa, jakie polecenia są dostępne.|  
-|[Algorytm routingu](../../extensibility/internals/command-routing-algorithm.md)|W tym artykule opisano, jak Visual Studio polecenie routingu w uzyskaniu poleceń, które mają być obsługiwane przez różne pakietów VSPackage.|  
-|[Wskazówki dotyczące umieszczania](../../extensibility/internals/command-placement-guidelines.md)|Sugeruje położenie poleceń w środowisku Visual Studio.|  
-|[Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|W tym artykule opisano, jak pakietów VSPackage najlepiej mogą korzystać z architekturą polecenia programu Visual Studio.|  
-|[Domyślne położenie poleceń, grup i pasków narzędzi](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|W tym artykule opisano, jak pakietów VSPackage najlepiej użyć polecenia, które znajdują się w programie Visual Studio.|  
-|[Zarządzanie pakietami VSPackage](../../extensibility/managing-vspackages.md)|W tym artykule opisano, jak Visual Studio ładuje pakietów VSPackage.|  
-|[Tabela poleceń programu Visual Studio (pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Zawiera informacje dotyczące plików vsct opartych na języku XML, które są używane do opisywania układ i wygląd poleceń w pakietach VSPackage.|
+|[Implementacja](../../extensibility/internals/command-implementation.md)|Opisuje sposób implementacji poleceń w pakietu VSPackage.|  
+|[Dostępność](../../extensibility/internals/command-availability.md)|Opisuje, w jaki sposób kontekst programu Visual Studio Określa, które polecenia są dostępne.|  
+|[Algorytm routingu](../../extensibility/internals/command-routing-algorithm.md)|Opisuje sposób, w jaki architektura routingu poleceń programu Visual Studio umożliwia obsługę poleceń przez różne pakietów VSPackage.|  
+|[Wskazówki dotyczące umieszczania](../../extensibility/internals/command-placement-guidelines.md)|Sugeruje sposób pozycjonowania poleceń w środowisku programu Visual Studio.|  
+|[Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|Opisuje, jak pakietów VSPackage może najlepiej wykorzystać architekturę poleceń programu Visual Studio.|  
+|[Domyślne położenie poleceń, grup i pasków narzędzi](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Opisuje, jak pakietów VSPackage może najlepiej korzystać z poleceń, które są zawarte w programie Visual Studio.|  
+|[Zarządzanie pakietami VSPackage](../../extensibility/managing-vspackages.md)|Opisuje, jak program Visual Studio ładuje pakietów VSPackage.|  
+|[Tabela poleceń programu Visual Studio (pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Zawiera informacje o plikach vsct opartych na języku XML, które są używane do opisywania układu i wyglądu poleceń w pakietów VSPackage.|

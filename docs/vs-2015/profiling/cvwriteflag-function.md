@@ -1,5 +1,5 @@
 ---
-title: Funkcja CvWriteFlag | Dokumentacja firmy Microsoft
+title: Funkcja CvWriteFlag | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,16 +20,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bea5e2acea9a89c5a3b2fdfba441530a74ad8515
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68177741"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag — Funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zapisuje plik śledzenia Concurrency Visualizer flagę.  
+Zapisuje flagę w pliku śledzenia Concurrency Visualizer.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -70,26 +70,26 @@ HRESULT CvWriteFlagExVA(
  Lista argumentów.  
   
  `category`  
- Kategoria.  
+ Kategorii.  
   
  `level`  
  Poziom ważności.  
   
  `pMarkerSeries`  
- Kontekst serii prawidłowe znacznika. Nie może mieć wartości NULL.  
+ Prawidłowy kontekst serii znaczników. Nie może mieć wartości NULL.  
   
  `pMessage`  
- Ciąg formatu komunikatów. Nie może mieć wartości NULL.  
+ Ciąg formatu komunikatu. Nie może mieć wartości NULL.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- S_OK, gdy komunikat jest pomyślnie zapisane. Kod błędu w przypadku, gdy było żadnych błędów. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.  
+ S_OK, gdy komunikat został pomyślnie zapisany. Kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkers.h  
+ **Nagłówek:** cvmarkers. h  
   
- **Unicode:** Cvwriteflagexw —, cvwriteflagexvw —  
+ **Unicode:** CvWriteFlagExW, CvWriteFlagExVW  
   
- <strong>ANSI:</strong>CvWriteFlagExA, CvWriteFlagExVA  
+ <strong>ANSI:</strong> CvWriteFlagExA, CvWriteFlagExVA  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+ [Dokumentacja biblioteki C++](../profiling/cpp-library-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Badanie kodu systemu po wystąpieniu wyjątku | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: badanie kodu systemu po wystąpieniu wyjątku | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,32 +18,32 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5c34b2fdf2b6400ffe88f9e9ff08cbe6e4b41daa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155575"
 ---
-# <a name="how-to-examine-system-code-after-an-exception"></a>Instrukcje: Badanie kodu systemu po wystąpieniu wyjątku
+# <a name="how-to-examine-system-code-after-an-exception"></a>Porady: badanie kodu systemu po wystąpieniu wyjątku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gdy wystąpi wyjątek, Niewykluczone, że sprawdzić kod wewnątrz wywołania systemu, aby ustalić przyczynę wyjątku. Poniższa procedura wyjaśnia, jak to zrobić, jeśli nie masz symbole załadowane dla kodu systemowego lub jeśli włączono opcję tylko mój kod.  
+Gdy wystąpi wyjątek, może być konieczne przeanalizowanie kodu wewnątrz wywołania systemowego w celu ustalenia przyczyny wyjątku. Poniższa procedura wyjaśnia, jak to zrobić, jeśli nie masz symboli ładowanych dla kodu systemowego lub jeśli Tylko mój kod jest włączona.  
   
-### <a name="to-examine-system-code-following-an-exception"></a>Aby sprawdzić kod systemu w następstwie wyjątku  
+### <a name="to-examine-system-code-following-an-exception"></a>Aby przejrzeć kod systemowy po wyjątku  
   
-1. W **stos wywołań** okna, kliknij prawym przyciskiem myszy, następnie kliknij przycisk **Pokaż kod zewnętrzny**.  
+1. W oknie **stos wywołań** kliknij prawym przyciskiem myszy, a następnie kliknij polecenie **Pokaż kod zewnętrzny**.  
   
-     Jeśli nie włączono opcję tylko mój kod, ta opcja nie jest dostępne w menu skrótów, a kod systemowy jest wyświetlany domyślnie.  
+     Jeśli Tylko mój kod nie jest włączona, ta opcja nie jest dostępna w menu skrótów, a kod systemowy jest domyślnie wyświetlany.  
   
-2. Kliknij prawym przyciskiem myszy ramki kodu zewnętrznego, które pojawiają się w **stos wywołań** okna.  
+2. Kliknij prawym przyciskiem myszy ramki kodu zewnętrznego, które są teraz wyświetlane w oknie **stosu wywołań** .  
   
-3. Wskaż **Załaduj symbole z** a następnie kliknij przycisk **serwery symboli firmy Microsoft**.  
+3. Wskaż **Załaduj symbole z** , a następnie kliknij pozycję **serwery symboli firmy Microsoft**.  
   
-    1. Jeśli włączono opcję tylko mój kod, pojawi się okno dialogowe. Stwierdza, że tylko mój kod teraz został wyłączony. Jest to konieczne do przechodzenia do wywołań systemowych.  
+    1. Jeśli Tylko mój kod została włączona, zostanie wyświetlone okno dialogowe. Stany IT Tylko mój kod już wyłączone. Jest to niezbędne do przechodzenia do wywołań systemowych.  
   
-    2. **Pobieranie symboli publicznych** pojawi się okno dialogowe. Znikną po zakończeniu pobierania.  
+    2. Zostanie wyświetlone okno dialogowe **pobieranie symboli publicznych** . Zostanie ona usunięta po zakończeniu pobierania.  
   
-4. Można teraz sprawdzić kod systemu w **stos wywołań** okna i innych oknach. Na przykład, możesz kliknąć dwukrotnie ramki stosu wywołań, aby wyświetlić kod w źródle lub **dezasemblacji** okna.  
+4. Teraz można przeanalizować kod systemowy w oknie **stosu wywołań** i innych oknach. Na przykład możesz dwukrotnie kliknąć ramkę stosu wywołań, aby wyświetlić kod w oknie źródłowym lub **rozasembleru** .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md)
