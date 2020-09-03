@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34da9091c0f96b7270678f9b36fe861e4a87418f
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876089"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch, projektant działań
@@ -23,7 +23,7 @@ ms.locfileid: "86876089"
 
 ## <a name="pickbranch"></a>PickBranch
 
-<xref:System.Activities.Statements.PickBranch>obiekty są zawarte w <xref:System.Activities.Statements.Pick.Branches%2A> kolekcji <xref:System.Activities.Statements.Pick> działań. Każda z nich <xref:System.Activities.Statements.PickBranch> jest zawarta w gałęzi <xref:System.Activities.Statements.Pick> działania i może być wykonana z powodu zdarzenia przychodzącego, które służy jako wyzwalacz. W ten sposób Projektant przepływu pracy zapewnia modelowanie przepływu sterowania opartego na zdarzeniach. Każdy <xref:System.Activities.Statements.PickBranch> z nich zawiera <xref:System.Activities.Statements.PickBranch.Trigger%2A> a i <xref:System.Activities.Statements.PickBranch.Action%2A> .
+<xref:System.Activities.Statements.PickBranch> obiekty są zawarte w <xref:System.Activities.Statements.Pick.Branches%2A> kolekcji <xref:System.Activities.Statements.Pick> działań. Każda z nich <xref:System.Activities.Statements.PickBranch> jest zawarta w gałęzi <xref:System.Activities.Statements.Pick> działania i może być wykonana z powodu zdarzenia przychodzącego, które służy jako wyzwalacz. W ten sposób Projektant przepływu pracy zapewnia modelowanie przepływu sterowania opartego na zdarzeniach. Każdy <xref:System.Activities.Statements.PickBranch> z nich zawiera <xref:System.Activities.Statements.PickBranch.Trigger%2A> a i <xref:System.Activities.Statements.PickBranch.Action%2A> .
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>Jak używać projektanta działań wyboru
 
@@ -58,7 +58,7 @@ W poniższej tabeli przedstawiono najbardziej przydatne <xref:System.Activities.
 |<xref:System.Activities.Statements.PickBranch.Trigger%2A>|Prawda|Każda <xref:System.Activities.Statements.PickBranch> z nich zawiera <xref:System.Activities.Statements.PickBranch.Trigger%2A> akcję, która może wywołać <xref:System.Activities.Statements.PickBranch.Action%2A> .|
 |<xref:System.Activities.Statements.PickBranch.Action%2A>|Fałsz|Każdy <xref:System.Activities.Statements.PickBranch> z nich zawiera element <xref:System.Activities.Statements.PickBranch.Action%2A> , który jest wykonywany, gdy zostanie wyzwolony.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)
 - [Wybieranie działania](/dotnet/framework/windows-workflow-foundation/pick-activity)

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 9478394162051fc08c33047cf1ac24275aff75e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609333"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Wskazówki: analizowanie zarządzanego kodu pod względem wad kodu
@@ -33,15 +33,15 @@ W tym instruktażu analizujesz zarządzany projekt pod kątem wad kodu za pomoc�
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].,
+- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].
 
 ## <a name="create-a-class-library"></a>Tworzenie biblioteki klas
 
 #### <a name="to-create-a-class-library"></a>Aby utworzyć bibliotekę klas
 
-1. W menu **plik** [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] kliknij pozycję **Nowy** , a następnie kliknij pozycję **projekt**.
+1. W menu **plik** kliknij pozycję [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Nowy** , a następnie kliknij pozycję **projekt**.
 
-2. W oknie dialogowym **Nowy projekt** w obszarze **typy projektów**kliknij pozycję **Wizualizacja C#** .
+2. W oknie dialogowym **Nowy projekt** w obszarze **typy projektów**kliknij pozycję **Visual C#**.
 
 3. W obszarze **Szablony**wybierz pozycję **Biblioteka klas**.
 
@@ -67,7 +67,7 @@ W tym instruktażu analizujesz zarządzany projekt pod kątem wad kodu za pomoc�
 
 3. Kliknij pozycję **CodeAnalysis**.
 
-4. Upewnij się, że jest zaznaczone pole wyboru **Włącz analizę kodu podczas kompilacji (zdefiniowano stałą CODE_ANALYSIS**).
+4. Upewnij się, że jest zaznaczona opcja  **Włącz analizę kodu podczas kompilacji (definiuje stałą CODE_ANALYSIS**).
 
 5. Z listy rozwijanej **Uruchom ten zestaw reguł** wybierz pozycję **Microsoft wszystkie reguły**.
 
@@ -95,7 +95,7 @@ W tym instruktażu analizujesz zarządzany projekt pod kątem wad kodu za pomoc�
 
 - [CA1014: Oznacz zestawy za pomocą CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft. Design: "demonstracja" powinna być oznaczona przy użyciu CLSCompliantAttribute, a jego wartość powinna być równa true.
 
-  - Dodaj `using``System;` kodu do pliku AssemblyInfo.cs.
+  - Dodaj kod `using``System;` do pliku AssemblyInfo.cs.
 
        Następnie Dodaj kod `[assembly: CLSCompliant(true)]` na końcu pliku AssemblyInfo.cs.
 
@@ -103,15 +103,15 @@ W tym instruktażu analizujesz zarządzany projekt pod kątem wad kodu za pomoc�
 
 - [CA1032: Zaimplementuj standardowe konstruktory wyjątków](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: Dodaj następujący Konstruktor do tej klasy: Demonstracja publiczna (ciąg)
 
-  - Dodaj Konstruktor `public demo (String s) : base(s) { }` do klasy `demo`.
+  - Dodaj konstruktora `public demo (String s) : base(s) { }` do klasy `demo` .
 
 - [CA1032: Zaimplementuj standardowe konstruktory wyjątków](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: Dodaj następujący Konstruktor do tej klasy: Demonstracja publiczna (String, Exception)
 
-  - Dodaj Konstruktor `public demo (String s, Exception e) : base(s, e) { }` do klasy `demo`.
+  - Dodaj konstruktora `public demo (String s, Exception e) : base(s, e) { }` do klasy `demo` .
 
 - [CA1032: Zaimplementuj standardowe konstruktory wyjątków](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: Dodaj następujący Konstruktor do tej klasy: Prezentacja chroniona (SerializationInfo, StreamingContext)
 
-  - Dodaj `using System.Runtime.Serialization;` kodu na początku pliku Class1.cs.
+  - Dodaj kod `using System.Runtime.Serialization;` na początku pliku Class1.cs.
 
        Następnie Dodaj Konstruktor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
@@ -119,25 +119,25 @@ W tym instruktażu analizujesz zarządzany projekt pod kątem wad kodu za pomoc�
 
 - [CA1032: Zaimplementuj standardowe konstruktory wyjątków](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: Dodaj następujący Konstruktor do tej klasy: pokaz publiczny ()
 
-  - Dodaj Konstruktor `public demo () : base() { }` do klasy `demo` **.**
+  - Dodaj konstruktora `public demo () : base() { }` do klasy `demo` **.**
 
        Ponownie skompiluj projekt.
 
 - [CA1709: Identyfikatory powinny mieć poprawną wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Name: Popraw wielkość liter w nazwie przestrzeni nazw "TestCode", zmieniając ją na "TestCode".
 
-  - Zmień wielkość liter `testCode` przestrzeni nazw, aby `TestCode`.
+  - Zmień wielkość liter w przestrzeni nazw `testCode` na `TestCode` .
 
 - [CA1709: Identyfikatory powinny mieć poprawną wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Name: Popraw wielkość liter nazwy typu "demonstracyjna" przez zmianę na "demonstracja".
 
-  - Zmień nazwę elementu członkowskiego na `Demo`.
+  - Zmień nazwę elementu członkowskiego na `Demo` .
 
 - [CA1709: Identyfikatory powinny mieć poprawną wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Name: Popraw wielkość liter w nazwie elementu członkowskiego przez zmianę na "Item".
 
-  - Zmień nazwę elementu członkowskiego na `Item`.
+  - Zmień nazwę elementu członkowskiego na `Item` .
 
 - [CA1710: Identyfikatory powinny mieć poprawny sufiks](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft. Rename: Zmień nazwę "TestCode. demonstracyjna" na zakończenie "Exception".
 
-  - Zmień nazwę klasy i jej konstruktorów na `DemoException`.
+  - Zmień nazwę klasy i jej konstruktorów na `DemoException` .
 
 - [CA2210: zestawy powinny mieć prawidłowe silne nazwy](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Podpisz "ManagedDemo" kluczem o silnej nazwie.
 
@@ -149,7 +149,7 @@ W tym instruktażu analizujesz zarządzany projekt pod kątem wad kodu za pomoc�
 
        Zaznacz pole wyboru **podpisz zestaw** .
 
-       Z listy **Wybierz plik klucza nazwy ciągu** wybierz **\<New... >** .
+       Z listy **Wybierz plik klucza nazwy ciągu** wybierz opcję **\<New…>** .
 
        Zostanie wyświetlone okno dialogowe **Tworzenie klucza silnej nazwy** .
 
@@ -163,7 +163,7 @@ W tym instruktażu analizujesz zarządzany projekt pod kątem wad kodu za pomoc�
 
 - [CA2237: Oznacz typy ISerializable with SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft. Usage: Dodaj atrybut [Serializable] do typu "demonstracji", ponieważ ten typ implementuje interfejs ISerializable.
 
-  - Dodaj atrybut `[Serializable ()]` do klasy `demo`.
+  - Dodaj `[Serializable ()]` atrybut do klasy `demo` .
 
        Ponownie skompiluj projekt.
 

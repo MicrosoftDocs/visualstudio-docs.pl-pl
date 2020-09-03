@@ -1,5 +1,5 @@
 ---
-title: StartTrackingContextWithRoot | Dokumentacja firmy Microsoft
+title: StartTrackingContextWithRoot | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -18,16 +18,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 68e80da01a0ab1ad59bbb5bdb06c92c1a11a8ac1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182320"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rozpoczyna kontekst śledzenia, przy użyciu pliku odpowiedzi, określając znaczników głównych.  
+Uruchamia kontekst śledzenia przy użyciu pliku odpowiedzi określającego znacznik główny.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,20 +36,20 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 ```  
   
 #### <a name="parameters"></a>Parametry  
- [in] `intermediateDirectory`  
- Katalog, w którym mają zostać zapisane w dzienniku śledzenia.  
+ podczas `intermediateDirectory`  
+ Katalog, w którym ma być przechowywany dziennik śledzenia.  
   
- [in] `taskName`  
+ podczas `taskName`  
  Identyfikuje kontekst śledzenia. Ta nazwa jest używana do tworzenia nazwy pliku dziennika.  
   
- [in] `rootMarkerResponseFile`  
- Nazwa ścieżki pliku odpowiedzi, który zawiera znacznik główny. Główna nazwa jest używana do grupy wszystkich śledzenia dla kontekstu wspólnie.  
+ podczas `rootMarkerResponseFile`  
+ Nazwa ścieżki pliku odpowiedzi zawierającego znacznik główny. Nazwa główna służy do grupowania wszystkich śledzenia dla kontekstu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) with ([sukces]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) ustawiony bit, jeśli kontekst śledzenia został utworzony.  
+ [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) z [powodzenie] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) Ustaw bit w przypadku utworzenia kontekstu śledzenia.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** FileTracker.h  
+ **Nagłówek:** FileTracker. h  
   
 ## <a name="see-also"></a>Zobacz też  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

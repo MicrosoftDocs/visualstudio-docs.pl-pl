@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 135acfbbaf9fdcbbf219fd50a504cf9262fe4d24
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876102"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope, projektant działań
@@ -45,7 +45,7 @@ W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.Correlati
 |<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|Fałsz|Określa <xref:System.ServiceModel.Activities.CorrelationHandle> używany do zarządzania podrzędnymi działaniami związanymi z obsługą komunikatów. Jeśli ta właściwość nie zostanie ustawiona, program <xref:System.ServiceModel.Activities.CorrelationScope> automatycznie tworzy niejawny element <xref:System.ServiceModel.Activities.CorrelationHandle> .|
 |<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|Fałsz|Określa działania w zakresie korelacji.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [Odbieranie](../workflow-designer/receive-activity-designer.md)

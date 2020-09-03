@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dcfa4a2fb15ed8f4abfff24aa8e78c2b08eb8412
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662246"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Opcje, edytor tekstu, JavaScript, formatowanie
@@ -47,9 +47,9 @@ Na stronie **Formatowanie** okna dialogowego **Opcje** można ustawić opcje for
 |Opcja|Opis|
 |------------|-----------------|
 |**Umieść otwierający nawias klamrowy w nowym wierszu dla funkcji**|Po wybraniu tej opcji Edytor kodu przenosi otwierający nawias klamrowy skojarzony z funkcją do nowego wiersza.|
-|**Umieść otwierający nawias klamrowy w nowym wierszu dla bloków sterowania**|Gdy ta opcja jest zaznaczona, Edytor kodu przenosi nawias klamrowy skojarzony z blokiem sterowania (na przykład `if` i `while` bloki sterujące) do nowego wiersza.|
+|**Umieść otwierający nawias klamrowy w nowym wierszu dla bloków sterowania**|Gdy ta opcja jest zaznaczona, Edytor kodu przenosi nawias otwierający, który jest skojarzony z blokiem sterowania (na przykład `if` `while` bloki sterujące) do nowego wiersza.|
 
-## <a name="spacing"></a>Nimi
+## <a name="spacing"></a>Odstępy
  Te opcje określają, jak spacje są wstawiane w widoku **źródła** .
 
 ## <a name="uielement-list"></a>Lista elementów UI
@@ -57,11 +57,11 @@ Na stronie **Formatowanie** okna dialogowego **Opcje** można ustawić opcje for
 |Opcja|Opis|
 |------------|-----------------|
 |**Wstaw spację po ograniczniku przecinka**|Gdy ta opcja jest zaznaczona, Edytor kodu dodaje spację po przecinku.|
-|**Wstaw spację po średniku w instrukcji "for"**|Gdy ta opcja jest zaznaczona, Edytor kodu dodaje odstęp po każdym średniku w pierwszym wierszu pętli `for`.|
-|**Wstaw spację przed operatorami binarnymi i po nich**|Gdy ta opcja jest zaznaczona, Edytor kodu dodaje spację przed operatorami binarnymi i po nich (na przykład +,-, & & &#124; &#124;,).|
+|**Wstaw spację po średniku w instrukcji "for"**|Gdy ta opcja jest zaznaczona, Edytor kodu dodaje odstęp po każdym średniku w pierwszym wierszu `for` pętli.|
+|**Wstaw spację przed operatorami binarnymi i po nich**|Gdy ta opcja jest zaznaczona, Edytor kodu dodaje spację przed operatorami binarnymi i po nich (na przykład +,-,  &&,  &#124;&#124;).|
 |**Wstaw spację po słowach kluczowych w instrukcjach przepływu sterowania**|Gdy ta opcja jest zaznaczona, Edytor kodu dodaje odstęp po słowach kluczowych języka JavaScript w instrukcjach przepływu sterowania.|
-|**Wstaw spację po słowie kluczowym function dla funkcji anonimowych.**|Gdy ta opcja jest zaznaczona, Edytor kodu dodaje spację po słowie kluczowym `function` dla funkcji anonimowych.|
+|**Wstaw spację po słowie kluczowym function dla funkcji anonimowych.**|Gdy ta opcja jest zaznaczona, Edytor kodu dodaje spację po `function` słowie kluczowym dla funkcji anonimowych.|
 |**Wstaw spację po otwarciu i przed zamknięciem niepustego nawiasu**|Gdy ta opcja jest zaznaczona, Edytor kodu dodaje odstęp po nawiasie otwierającym i przed nawiasem zamykającym, jeśli znaki niepuste są obecne w nawiasach.|
 
 ## <a name="see-also"></a>Zobacz też
- [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
+ [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)

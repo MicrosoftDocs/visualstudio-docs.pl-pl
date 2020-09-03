@@ -1,5 +1,5 @@
 ---
-title: dwTYPE_KIND | Dokumenty firmy Microsoft
+title: dwTYPE_KIND | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a9d790f12d3fc21bbae7373470746af2ebfe6dc9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737197"
 ---
 # <a name="dwtype_kind"></a>dwTYPE_KIND
-Określa sposób interpretowania typu obiektu [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
+Określa sposób interpretowania typu obiektu [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,21 +47,21 @@ public enum enum_dwTYPE_KIND {
 
 ## <a name="fields"></a>Pola
 `TYPE_KIND_METADATA`\
-Związek [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) należy interpretować jako strukturę [METADATA_TYPE.](../../../extensibility/debugger/reference/metadata-type.md)
+Unia [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) powinna być interpretowana jako struktura [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) .
 
 `TYPE_KIND_PDB`\
-Związek `TYPE_INFO` należy interpretować jako [strukturę PDB_TYPE.](../../../extensibility/debugger/reference/pdb-type.md)
+`TYPE_INFO`Unia powinna być interpretowana jako struktura [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) .
 
 `TYPE_KIND_BUILT`\
-Związek `TYPE_INFO` należy interpretować jako [strukturę BUILT_TYPE.](../../../extensibility/debugger/reference/built-type.md)
+`TYPE_INFO`Unia powinna być interpretowana jako struktura [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) .
 
 ## <a name="remarks"></a>Uwagi
-Wartości tego wyliczenia są `dwKind` wyświetlane w polu [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) struktury i są używane do `type` określenia sposobu interpretowania elementu członkowskiego unii. Struktura `TYPE_INFO` jest zwracana przez wywołanie [metody GetTypeInfo.](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)
+Wartości tego wyliczenia pojawiają się w `dwKind` polu struktury [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) i służą do określania sposobu interpretowania `type` elementu członkowskiego Unii. `TYPE_INFO`Struktura jest zwracana przez wywołanie metody. [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: sh.h
+Nagłówek: sh. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: abfd625a248c14f646683c7b035065e6ca096f68
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876115"
 ---
 # <a name="delay-activity-designer"></a>Delay, projektant działań
@@ -40,7 +40,7 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Delay> wła
 |<xref:System.Activities.Activity.DisplayName%2A>|Fałsz|Przyjazna nazwa <xref:System.Activities.Statements.Delay> działania. Wartość domyślna to opóźnienie. Chociaż <xref:System.Activities.Activity.DisplayName%2A> wartość nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie jednego z nich.|
 |<xref:System.Activities.Statements.Delay.Duration%2A>|Prawda|Czas opóźnienia przepływu pracy. Ta właściwość jest ustawiana w siatce właściwości. Wpisz w postaci literału w <xref:System.TimeSpan> formacie 00:00:00 lub Visual Basic wyrażenie, aby określić ilość czasu.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Typy pierwotne](../workflow-designer/primitives-activity-designers.md)
 - [Ponownie](../workflow-designer/assign-activity-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2::GetProgramNode | Dokumentacja firmy Microsoft
+title: 'IDebugProgramEx2:: GetProgramNode | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caf3ef288a98d538c94702cf18f2cba8b7b87c20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182002"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera węzeł program skojarzony z programu.  
+Pobiera węzeł programu skojarzony z programem.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,10 +40,10 @@ int GetProgramNode( 
   
 #### <a name="parameters"></a>Parametry  
  `ppProgramNode`  
- [out] Zwraca [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekt, który reprezentuje węzeł program skojarzony z tym programem.  
+ określoną Zwraca obiekt [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , który reprezentuje węzeł programu skojarzony z tym programem.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   

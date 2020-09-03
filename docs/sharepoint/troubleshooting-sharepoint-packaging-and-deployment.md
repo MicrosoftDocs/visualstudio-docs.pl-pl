@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7eafac8015b7a2c51279b7a2d664f0e094d2397b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72981936"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Rozwiązywanie problemów z pakietami i wdrażaniem programu SharePoint
@@ -37,7 +37,7 @@ ms.locfileid: "72981936"
  Aby zdiagnozować między programem Visual Studio, SharePoint i innymi warstwami, można użyć klucza rejestru EnableDiagnostics do wyświetlania śladu stosu. Aby uzyskać więcej informacji, zobacz [Debugowanie rozwiązań programu SharePoint](../sharepoint/debugging-sharepoint-solutions.md).
 
 ## <a name="add-project-output-to-the-solution-package"></a>Dodawanie danych wyjściowych projektu do pakietu rozwiązania
- Dane wyjściowe projektu można dodać do pakietu za pomocą projektanta pakietów. Jednak podczas dodawania danych wyjściowych projektu upewnij się, że platforma projektu jest zgodna z platformą rozwiązania SharePoint. Zalecamy używanie dowolnego celu platformy **procesora CPU** dla zestawów, które mają zostać wdrożone na serwerze programu SharePoint. Aby uzyskać więcej informacji, zobacz okno dialogowe [Kompilowanie &#40;strony&#41; , Projektant projektu Visual Basic](../ide/reference/compile-page-project-designer-visual-basic.md) i [Zaawansowane &#40;ustawienia&#41;kompilatora Visual Basic](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
+ Dane wyjściowe projektu można dodać do pakietu za pomocą projektanta pakietów. Jednak podczas dodawania danych wyjściowych projektu upewnij się, że platforma projektu jest zgodna z platformą rozwiązania SharePoint. Zalecamy używanie dowolnego celu platformy **procesora CPU** dla zestawów, które mają zostać wdrożone na serwerze programu SharePoint. Aby uzyskać więcej informacji, zobacz [stronę Kompilacja, Projektant projektu &#40;Visual Basic&#41;](../ide/reference/compile-page-project-designer-visual-basic.md) i [Zaawansowane ustawienia kompilatora okno dialogowe &#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
 ## <a name="validation-warnings-and-errors"></a>Ostrzeżenia i błędy walidacji
  Narzędzia deweloperskie programu SharePoint w programie Visual Studio wykonują kroki weryfikacji, aby sprawdzić, czy pakiet rozwiązania został poprawnie sformatowany. Możesz również utworzyć niestandardowe kroki walidacji dla swoich funkcji i pakietów. Aby uzyskać więcej informacji, zobacz [How to: Create Custom Feature and Package Rules for SharePoint Solutions](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
@@ -49,12 +49,12 @@ ms.locfileid: "72981936"
 
 |Wartość|Opis|
 |-----------|-----------------|
-|Automatyczne|Wykrywa kolizje i automatycznie rozwiązuje konflikty.|
-|pytać|Wykrywa kolizje i przekazuje je deweloperom przed rozpuszczeniem konfliktów.|
+|Automatyczny|Wykrywa kolizje i automatycznie rozwiązuje konflikty.|
+|Monit|Wykrywa kolizje i przekazuje je deweloperom przed rozpuszczeniem konfliktów.|
 |Brak|Nie wykrywa kolizji.|
 
 ## <a name="differences-between-f5-deployment"></a>Różnice między wdrożeniem F5
- W przypadku użycia [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do wdrożenia projektu programu SharePoint na lokalnym serwerze programu SharePoint do testowania i debugowania należy wykonać kilka dodatkowych kroków, które są wykonywane przez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+ W przypadku używania programu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do wdrażania projektu programu SharePoint na lokalnym serwerze SharePoint do testowania i debugowania należy wykonać kilka dodatkowych kroków, które są wykonywane przez program [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 1. Zresetuj Internet Information Service (IIS) podczas kroku wdrożenia.
 
@@ -65,7 +65,7 @@ ms.locfileid: "72981936"
    Możesz dodać niestandardowe kroki wdrażania, aby zmienić zachowanie **F5** . Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Opóźnienie wyświetlania strony programu SharePoint podczas wdrażania wizualnego składnika Web Part
- Podczas wdrażania wizualnego składnika Web Part do folderu bin na [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)]lub [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]trwa długi czas wyświetlania strony programu SharePoint. W przypadku zmiany plików w katalogu [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] najwyższego poziomu, takich jak katalog bin, cała aplikacja sieci Web zostanie ponownie skompilowana. Może to spowodować opóźnienie do 25 sekund, aby można było renderować stronę programu SharePoint.
+ Podczas wdrażania wizualnego składnika Web Part do folderu bin w systemie, [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)] [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] lub [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] . W przypadku zmiany plików w katalogu najwyższego poziomu [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] , takich jak katalog bin, cała aplikacja sieci Web zostanie ponownie skompilowana. Może to spowodować opóźnienie do 25 sekund, aby można było renderować stronę programu SharePoint.
 
 ### <a name="error-message"></a>Komunikat o błędzie
  Brak.
@@ -75,7 +75,7 @@ ms.locfileid: "72981936"
 
 1. Zainstaluj aktualizację KB967535, zgodnie z opisem w artykule Naprawa artykułu pomoc techniczna firmy Microsoft [: poprawka jest dostępna do rozwiązywania dwóch problemów w programie ASP.NET w usługach IIS 7,0 dla systemów Windows Vista i Windows Server 2008](https://support.microsoft.com/help/967535).
 
-2. Dodaj następujący wiersz do pliku Web. config:
+2. Dodaj następujący wiersz do pliku Web.config:
 
     ```xml
     <compilation batch="false" optimizeCompilations="true">
@@ -100,16 +100,16 @@ ms.locfileid: "72981936"
  Ten błąd występuje ze względu na sposób wycofywania funkcji wizualnego składnika Web Part w programie SharePoint. Aby pomyślnie wdrożyć wizualny składnik Web Part, wdróż rozwiązanie ponownie, wybierając klawisz **F5** .
 
 ## <a name="warning-appears-when-deploying-nested-user-controls"></a>Ostrzeżenie pojawia się podczas wdrażania zagnieżdżonych formantów użytkownika
- To ostrzeżenie występuje, gdy wdrażasz rozwiązanie SharePoint z zagnieżdżonymi kontrolkami użytkownika, takimi jak wizualny składnik Web Part, który zawiera kontrolkę użytkownika lub kontrolkę użytkownika, która zawiera wizualny składnik Web Part lub inną kontrolkę użytkownika. To ostrzeżenie występuje niezależnie od tego, czy dodajesz formant do projektanta, przeciągając go z przybornika, czy za pomocą dyrektywy @Register w widoku źródło.
+ To ostrzeżenie występuje, gdy wdrażasz rozwiązanie SharePoint z zagnieżdżonymi kontrolkami użytkownika, takimi jak wizualny składnik Web Part, który zawiera kontrolkę użytkownika lub kontrolkę użytkownika, która zawiera wizualny składnik Web Part lub inną kontrolkę użytkownika. To ostrzeżenie jest wykonywane niezależnie od tego, czy dodajesz formant do projektanta, przeciągając go z przybornika, czy za pomocą @Register dyrektywy w widoku źródło.
 
 ### <a name="error-message"></a>Komunikat o błędzie
- Ostrzeżenie 1 element ' [*Nazwa formantu*] ' nie jest znanym elementem. Taka sytuacja może wystąpić, jeśli wystąpi błąd kompilacji w witrynie sieci Web lub brakuje pliku Web. config.
+ Ostrzeżenie 1 element ' [*Nazwa formantu*] ' nie jest znanym elementem. Taka sytuacja może wystąpić, jeśli wystąpi błąd kompilacji w witrynie sieci Web lub brak pliku web.config.
 
 ### <a name="resolution"></a>Rozwiązanie
- Jeśli system projektu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie rozpoznaje zagnieżdżonej kontrolki użytkownika, nie może dostarczyć funkcji IntelliSense i emituje ostrzeżenie. System projektu jest nieświadomy zagnieżdżonej kontrolki użytkownika, jeśli projekt nie został skompilowany i projektant nie zostanie zamknięty i ponownie otwarty, lub jeśli włączono opcję autowycofywania, co powoduje, że kontrolka użytkownika zostanie wycofana z gałęzi programu SharePoint po debugowaniu.
+ Jeśli [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] system projektu nie jest świadomy zagnieżdżonej kontrolki użytkownika, nie może dostarczyć funkcji IntelliSense i emituje ostrzeżenie. System projektu jest nieświadomy zagnieżdżonej kontrolki użytkownika, jeśli projekt nie został skompilowany i projektant nie zostanie zamknięty i ponownie otwarty, lub jeśli włączono opcję autowycofywania, co powoduje, że kontrolka użytkownika zostanie wycofana z gałęzi programu SharePoint po debugowaniu.
 
  Aby usunąć to ostrzeżenie, Skompiluj projekt, a następnie zamknij i ponownie otwórz projektanta lub wyłącz opcję autowycofywania dla projektu. W tym celu wyczyść pole wyboru **autowycofywanie po debugowaniu** na karcie **SharePoint** w oknie dialogowym właściwości projektu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

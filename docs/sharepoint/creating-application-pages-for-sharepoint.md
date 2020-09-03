@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 47f403f4eec6ec66563ae88bec226e073f625716
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72981100"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Tworzenie stron aplikacji dla programu SharePoint
@@ -44,13 +44,13 @@ ms.locfileid: "72981100"
 |Folder|Opis|
 |------------|-----------------|
 |Układy|Mapuje do katalogu wirtualnego _layouts systemu plików programu SharePoint.|
-|Podfolder Layouts|Zawiera pliki wchodzące w skład strony aplikacji. Domyślnie ten folder ma taką samą nazwę jak projekt. W każdej chwili można zmienić nazwę tego folderu. Po uruchomieniu projektu program Visual Studio wdraża ten folder w katalogu wirtualnym _layouts w systemie plików programu SharePoint.|
+|Podfolder Layouts|Zawiera pliki wchodzące w skład strony aplikacji. Domyślnie ten folder ma taką samą nazwę jak projekt. W każdej chwili można zmienić nazwę tego folderu. Po uruchomieniu projektu program Visual Studio wdraża ten folder w katalogu wirtualnym _layouts systemu plików programu SharePoint.|
 
  Program Visual Studio dodaje do projektu następujące pliki:
 
 |Plik|Opis|
 |----------|-----------------|
-|Plik stronicowania ASP.NET ( *. aspx*)|Zawiera znacznik XML definiujący stronę.|
+|Plik stronicowania ASP.NET (*. aspx*)|Zawiera znacznik XML definiujący stronę.|
 |Plik kodu strony aplikacji|Zawiera kod związany ze stroną aplikacji. Dodaj kod, który obsługuje zdarzenia do tego pliku.|
 |Plik kodu projektanta stron aplikacji|Zawiera kod, który jest generowany przez projektanta. Nie Edytuj bezpośrednio tego pliku.|
 
@@ -62,16 +62,16 @@ ms.locfileid: "72981100"
 
  Można debugować stronę aplikacji tak samo jak w przypadku debugowania innych elementów projektu programu SharePoint w programie Visual Studio. Po uruchomieniu debugera programu Visual Studio program Visual Studio otwiera witrynę programu SharePoint.
 
- Aby wyświetlić stronę aplikacji, musisz ręcznie przejść do lokalizacji strony aplikacji (na przykład: http://<em>nazwa_serwera</em>/_layouts/*Project_Name*/ApplicationPage1.aspx).
+ Aby wyświetlić stronę aplikacji, musisz ręcznie przejść do lokalizacji strony aplikacji (na przykład: http://<em>server_name</em>/_layouts/*Project_Name*/ApplicationPage1.aspx).
 
  Aby uzyskać więcej informacji na temat debugowania projektów programu SharePoint, zobacz [Rozwiązywanie problemów z rozwiązaniami programu SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
 
 ## <a name="choose-a-master-page"></a>Wybierz stronę wzorcową
  Domyślnie element **strony aplikacji** odwołuje się do strony wzorcowej witryny, która jest używana do debugowania projektu. Ta strona ma nazwę v4. Master i można ją znaleźć w **galerii stron wzorcowych** witryny programu SharePoint.
 
- Można jawnie zmienić, która strona wzorcowa jest używana przez stronę aplikacji, ustawiając atrybut `MasterPageFile` elementu `Page` aplikacji. (Na przykład: `MasterPageFile="~/_layouts/applicationv4.master"`). W rzeczywistości należy ustawić ten atrybut, jeśli dynamiczne strony główne nie są włączone na serwerze programu SharePoint. Aby uzyskać więcej informacji na temat stron wzorcowych w programie SharePoint, zobacz [stronę wzorcową](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
+ Możesz jawnie zmienić stronę wzorcową używaną przez ustawienie `MasterPageFile` atrybutu `Page` elementu aplikacji. (Na przykład: `MasterPageFile="~/_layouts/applicationv4.master"` ). W rzeczywistości należy ustawić ten atrybut, jeśli dynamiczne strony główne nie są włączone na serwerze programu SharePoint. Aby uzyskać więcej informacji na temat stron wzorcowych w programie SharePoint, zobacz [stronę wzorcową](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Projektowanie programu SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [Omówienie platformy ASP.NET](/aspnet/overview)
 - [ASP.NET Web Pages](/aspnet/web-pages/index)

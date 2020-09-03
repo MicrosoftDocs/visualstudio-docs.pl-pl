@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 26c53633bc55efcf95ffbc579e24d2d61e4a0932
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662275"
 ---
 # <a name="options-text-editor-file-extension"></a>Opcje, edytor tekstu, rozszerzenie pliku
@@ -49,4 +49,4 @@ To okno dialogowe opcji pozwala określić, w jaki sposób wszystkie pliki z okr
  **Opcje pliku Bezrozszerzającego** Zapewnia taką samą listę jak **Edytor**. Wybierz Edytor IDE lub projektanta, w którym będą otwierane dokumenty bez rozszerzeń plików.
 
 ## <a name="see-also"></a>Zobacz też
- [Instrukcje: Zarządzanie trybami edytora](../../ide/how-to-manage-editor-modes.md)
+ [Porady: zarządzanie trybami edytora](../../ide/how-to-manage-editor-modes.md)

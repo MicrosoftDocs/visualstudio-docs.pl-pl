@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1b0d9dec8ec9b3eb8860bb8b3a4ed8f7347aa54d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662234"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opcje, edytor tekstu, JavaScript, IntelliSense
@@ -49,7 +49,7 @@ Na stronie **IntelliSense** okna dialogowego **Opcje** można modyfikować ustaw
 ## <a name="uielement-list"></a>Lista elementów UI
  **Użyj klawisza TAB lub ENTER, aby zatwierdzić** Gdy to pole wyboru jest zaznaczone, Edytor kodu JavaScript dołącza instrukcje do elementów wybranych na liście uzupełniania tylko po wybraniu karty lub klawisza ENTER. Gdy to pole wyboru nie jest zaznaczone, inne znaki, takie jak kropka, przecinek, dwukropek, nawias otwierający i otwierający nawias klamrowy ({) również mogą dołączać instrukcje z wybranymi elementami.
 
-## <a name="references"></a>Odwołania
+## <a name="references"></a>Dokumentacja
  Można używać tych opcji, aby określać typy plików .js IntelliSense, które znajdują się w zakresie dla różnych typów projektów JavaScript. Odwołania IntelliSense są zazwyczaj używane do obsługi technologii IntelliSense dla obiektów globalnych. Można również użyć tej strony, aby ustawić kolejność ładowania skryptów, które muszą być ładowane w czasie wykonywania, oraz aby dodawać pliki rozszerzeń IntelliSense.
 
 ## <a name="uielement-list"></a>Lista elementów UI
@@ -57,7 +57,7 @@ Na stronie **IntelliSense** okna dialogowego **Opcje** można modyfikować ustaw
 
  Można używać wstępnie zdefiniowanych grup odwołań w celu określania, że konkretne pliki .js IntelliSense znajdują się w zakresie dla różnych projektów JavaScript. Dostępne są cztery grupy odniesień:
 
-- Niejawne ( *wersja*systemu Windows) dla aplikacji [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] przy użyciu języka JavaScript. Pliki dołączone do tej grupy są w zakresie dla każdego pliku. js otwartego w edytorze kodu dla [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji przy użyciu języka JavaScript.
+- Niejawne ( *wersja*systemu Windows) dla [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji korzystających z języka JavaScript. Pliki dołączone do tej grupy są w zakresie dla każdego pliku. js otwartego w edytorze kodu dla [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji korzystających z języka JavaScript.
 
 - Niejawna (sieć Web) dla projektów HTML5. Pliki dołączone do tej grupy są w zakresie dla każdego pliku .js otwartego w Edytorze kodu dla tych typów projektu.
 
@@ -73,4 +73,4 @@ Na stronie **IntelliSense** okna dialogowego **Opcje** można modyfikować ustaw
  **Dodawanie odwołania do grupy** Ta opcja umożliwia dodanie dodatkowych plików IntelliSense. js poprzez przechodzenie do odpowiednich plików.
 
 ## <a name="see-also"></a>Zobacz też
- [Funkcja IntelliSense dla języka JavaScript](../../ide/javascript-intellisense.md)
+ [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

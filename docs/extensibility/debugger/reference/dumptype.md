@@ -1,5 +1,5 @@
 ---
-title: DUMPTYPE | Dokumenty firmy Microsoft
+title: DUMPTYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0d4d42709efdefe097b4c8a78a0b00f45f2e1a2b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737201"
 ---
 # <a name="dumptype"></a>DUMPTYPE
-Określa, jaka część stanu programu (na przykład uruchomione wątki, ramki stosu i bieżący adres instrukcji) do zrzutu.
+Określa, jak część stanu programu (na przykład uruchomione wątki, ramki stosu i adres bieżącej instrukcji) ma zostać zastrzeżona.
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,18 +44,18 @@ public enum enum_DUMPTYPE {
 
 ## <a name="fields"></a>Pola
 `DUMP_MINIDUMP`\
-Określa mały, kompaktowy zrzut.
+Określa Mały zrzut kompaktowy.
 
 `DUMP_FULLDUMP`\
 Określa duży, kompletny zrzut.
 
 ## <a name="remarks"></a>Uwagi
-Przekazany jako argument do [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) metody.
+Przekazanie jako argument do metody [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

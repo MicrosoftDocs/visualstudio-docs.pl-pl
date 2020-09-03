@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_FLAGS | Dokumenty firmy Microsoft
+title: DISASSEMBLY_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ba6d9db3ad2cb1f9bbc9e3cea27aba939c6dd499
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737373"
 ---
 # <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
-Określa flagi do demontażu.
+Określa flagi do odzbiór.
 
 ## <a name="syntax"></a>Składnia
 
@@ -58,26 +58,26 @@ Wskazuje, że ta instrukcja znajduje się w innym dokumencie niż poprzedni.
 Wskazuje, że ta instrukcja nie zostanie wykonana.
 
 `DF_INSTRUCTION_ACTIVE`\
-Wskazuje, że ta instrukcja jest jedną z następnych instrukcji do wykonania (może być więcej niż jedna).
+Wskazuje, że ta instrukcja jest jedną z następnych instrukcji do wykonania (może być więcej niż jeden).
 
 `DF_DATA`\
-Wskazuje, że ta instrukcja jest naprawdę dane (nie kod).
+Wskazuje, że ta instrukcja jest naprawdę danymi (nie kod).
 
 `DF_HASSOURCE`\
-Wskazuje, że ta instrukcja ma źródło. Niektóre instrukcje, takie jak profilowanie lub kod wyrzucania elementów bezużytecznych, nie mają odpowiedniego źródła.
+Wskazuje, że ta instrukcja ma źródło. Niektóre instrukcje, takie jak profilowanie lub kod odzyskiwania pamięci, nie mają odpowiedniego źródła.
 
 `DF_DOCUMENT_CHECKSUM`\
-Wskazuje, `bstrDocumentUrl` że pole zawiera dane sumy kontrolnej po adresie URL dokumentu. Zobacz uwagi sekcji dla [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury jak dane sumy kontrolnej są przechowywane.
+Wskazuje, że `bstrDocumentUrl` pole zawiera dane sum kontrolnych po adresie URL dokumentu. Zapoznaj się z sekcją uwagi struktury [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) , w jaki sposób są przechowywane dane sum kontrolnych.
 
 ## <a name="remarks"></a>Uwagi
-Używany jako `dwFlags` element członkowski [struktury DisassemblyData.](../../../extensibility/debugger/reference/disassemblydata.md)
+Używane jako `dwFlags` element członkowski struktury [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .
 
-Flagi te mogą być łączone z bitowym `OR`.
+Flagi te mogą być połączone z bitową `OR` .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

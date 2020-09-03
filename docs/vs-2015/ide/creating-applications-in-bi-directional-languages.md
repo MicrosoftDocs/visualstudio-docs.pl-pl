@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3b3d8649484178a537ed4af7bdde044a29893275
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619261"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Tworzenie aplikacji w językach dwukierunkowych
@@ -32,7 +32,7 @@ Za pomocą programu Visual Studio można tworzyć aplikacje, które prawidłowo 
 
 1. Aplikacje systemu Windows. Można utworzyć w pełni dwukierunkowe aplikacje, które obejmują obsługę tekstu dwukierunkowego, kolejność odczytywania od prawej do lewej i funkcję dublowania (odwracanie układu okien, menu, okien dialogowych itd.). Z wyjątkiem dublowania te funkcje są dostępne domyślnie lub jako ustawienia właściwości. Dublowanie jest obsługiwane w sposób niezależny dla niektórych funkcji, takich jak okna komunikatów. Jednak w innych przypadkach należy zaimplementować dublowanie w kodzie. Aby uzyskać więcej informacji, zobacz [dwukierunkowa obsługa aplikacji Windows Forms](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).
 
-2. Aplikacje sieci Web. Usługi sieci Web obsługują i otrzymują wysyłanie tekstu UTF-8 i Unicode, dzięki czemu są odpowiednie dla aplikacji korzystających z języków dwukierunkowych. Aplikacje klienckie sieci Web korzystają z przeglądarek dla ich interfejsów użytkownika, więc stopień dwukierunkowego wsparcia w aplikacji sieci Web zależy od tego, jak dobrze przeglądarka użytkownika obsługuje te funkcje dwukierunkowe. W programie Visual Studio można tworzyć aplikacje obsługujące tekst arabski lub hebrajski, kolejność odczytywania od prawej do lewej, kodowanie plików i ustawienia kultur lokalnych. Aby uzyskać więcej informacji, zobacz [dwukierunkowe wsparcie dla aplikacji sieci Web ASP.NET](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+2. aplikacjami internetowymi. Usługi sieci Web obsługują i otrzymują wysyłanie tekstu UTF-8 i Unicode, dzięki czemu są odpowiednie dla aplikacji korzystających z języków dwukierunkowych. Aplikacje klienckie sieci Web korzystają z przeglądarek dla ich interfejsów użytkownika, więc stopień dwukierunkowego wsparcia w aplikacji sieci Web zależy od tego, jak dobrze przeglądarka użytkownika obsługuje te funkcje dwukierunkowe. W programie Visual Studio można tworzyć aplikacje obsługujące tekst arabski lub hebrajski, kolejność odczytywania od prawej do lewej, kodowanie plików i ustawienia kultur lokalnych. Aby uzyskać więcej informacji, zobacz [dwukierunkowe wsparcie dla aplikacji sieci Web ASP.NET](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 
 3. Aplikacje konsolowe. Aplikacje konsolowe nie obejmują obsługi tekstu w językach dwukierunkowych. Jest to wynikiem działania systemu Windows z aplikacjami konsolowymi.
 

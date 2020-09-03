@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 16a410b59cef6f282d2d27ad90a90013636d6489
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984466"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Projektowanie modelu łączności danych firmy
@@ -26,7 +26,7 @@ ms.locfileid: "72984466"
 ## <a name="add-entities"></a>Dodawanie jednostek
  Możesz dodać jednostkę, przeciągając lub kopiując **jednostkę** z **przybornika** programu Visual Studio do projektanta usługi BDC. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
- Zdefiniuj pola jednostki w klasie. Na przykład można dodać pole o nazwie `Address` do klasy `Customer`. Do projektu można dodać nową klasę lub użyć istniejącej klasy utworzonej przy użyciu innych narzędzi, takich jak Object Relational Designer (Projektant O/R). Nazwa jednostki i nazwa klasy reprezentującej jednostkę nie muszą być zgodne. Klasę należy powiązać z jednostką podczas definiowania metod w modelu.
+ Zdefiniuj pola jednostki w klasie. Na przykład można dodać pole o nazwie `Address` do `Customer` klasy. Do projektu można dodać nową klasę lub użyć istniejącej klasy utworzonej przy użyciu innych narzędzi, takich jak Object Relational Designer (Projektant O/R). Nazwa jednostki i nazwa klasy reprezentującej jednostkę nie muszą być zgodne. Klasę należy powiązać z jednostką podczas definiowania metod w modelu.
 
 ## <a name="add-methods"></a>Dodawanie metod
  Usługa BDC wywołuje metody w modelu, gdy użytkownicy wyświetlają, dodają, aktualizują lub usuwają informacje na liście lub w składniku Web Part opartym na modelu. Należy dodać metodę do modelu dla każdego zadania, które użytkownik może wykonywać. Utwórz metody, wybierając spośród pięciu podstawowych typów metod z okna **Szczegóły metody BDC** . W poniższej tabeli opisano pięć podstawowych metod modelu usługi BDC.
@@ -42,7 +42,7 @@ ms.locfileid: "72984466"
 ## <a name="define-method-parameters"></a>Definiuj parametry metody
  Podczas tworzenia metody program Visual Studio dodaje parametry wejściowe i wyjściowe, które są odpowiednie dla typu metody. Te parametry są tylko symbolami zastępczymi. W większości przypadków należy zmodyfikować parametry tak, aby przekazywać lub zwracały poprawny typ danych. Na przykład domyślnie Metoda wyszukiwania zwraca ciąg. W większości przypadków należy zmodyfikować parametr zwracany metody wyszukiwania, tak aby zwracała kolekcję jednostek. Można to zrobić, modyfikując deskryptor typu parametru. Deskryptor typu jest kolekcją atrybutów, które opisują typ danych parametru. Aby uzyskać więcej informacji, zobacz [How to: define The Type Descriptor of a Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
- Program Visual Studio umożliwia kopiowanie deskryptorów typu między parametrami w modelu. Na przykład można zdefiniować deskryptor typu o nazwie `CustomerTD` dla parametru Return metody `GetCustomer`. Można skopiować deskryptor typu `CustomerTD` w **Eksploratorze BDC**, a następnie wkleić ten deskryptor typu do parametru wejściowego metody `CreateCustomer`. Zapobiega to konieczności definiowania tego samego deskryptora typu więcej niż raz.
+ Program Visual Studio umożliwia kopiowanie deskryptorów typu między parametrami w modelu. Na przykład można zdefiniować deskryptor typu o nazwie `CustomerTD` dla parametru powrotu `GetCustomer` metody. Można skopiować `CustomerTD` deskryptor typu w **Eksploratorze BDC**, a następnie wkleić ten deskryptor typu do parametru wejściowego `CreateCustomer` metody. Zapobiega to konieczności definiowania tego samego deskryptora typu więcej niż raz.
 
 ## <a name="method-instances"></a>Wystąpienia metod
  Podczas tworzenia metody program Visual Studio dodaje domyślne wystąpienie metody. Wystąpienie metody jest odwołaniem do metody i wartościami domyślnymi parametrów. Pojedyncza Metoda może mieć wiele wystąpień metod. Każde wystąpienie jest kombinacją sygnatury metody i zestawu wartości domyślnych. Aby uzyskać więcej informacji, zobacz [How to: define The Type Descriptor of a Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
@@ -71,7 +71,7 @@ ms.locfileid: "72984466"
 ## <a name="validate-the-model"></a>Weryfikowanie modelu
  Podczas opracowywania można sprawdzić poprawność modelu. Program Visual Studio identyfikuje problemy, które mogą uniemożliwić zachowanie modelu zgodnie z oczekiwaniami. Te problemy są wyświetlane w **Lista błędów**programu Visual Studio.
 
- Możesz sprawdzić poprawność modelu, otwierając menu skrótów dla projektanta usługi BDC, a następnie wybierając polecenie **Weryfikuj**. Jeśli model zawiera błędy, pojawiają się one w **Lista błędów**. Możesz szybko przenieść kursor do kodu, który zawiera błąd przez dwukrotne kliknięcie na liście błędu. Alternatywnie można wielokrotnie wybrać klawisze **F8** lub **SHIFT**+**F8** , aby krok do przodu lub do tyłu przekroczyć błędy na liście.
+ Możesz sprawdzić poprawność modelu, otwierając menu skrótów dla projektanta usługi BDC, a następnie wybierając polecenie **Weryfikuj**. Jeśli model zawiera błędy, pojawiają się one w **Lista błędów**. Możesz szybko przenieść kursor do kodu, który zawiera błąd przez dwukrotne kliknięcie na liście błędu. Alternatywnie można wielokrotnie wybrać klawisze **F8** lub **SHIFT** + **F8** , aby krok do przodu lub do tyłu przekroczyć błędy na liście.
 
  Błędy sprawdzania poprawności mogą wystąpić, gdy reguły modelu zostały naruszone w jakiś sposób. Na przykład, jeśli właściwość **IsCollection** typu deskryptora ma **wartość true**, ale nie istnieją żadne deskryptory typu podrzędnego, zostanie wyświetlony komunikat o błędzie walidacji. Może zajść konieczność odwoływania się do reguł modelu usługi BDC w celu poznania niektórych błędów, które pojawiają się w programie Visual Studio **Lista błędów**. Aby uzyskać więcej informacji na temat reguł modelu usługi BDC, zobacz [schemat BDCMetadata](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14)).
 
@@ -87,9 +87,9 @@ ms.locfileid: "72984466"
 
 |Zadanie|Opcja|
 |----------|------------|
-|Do wdrażania modeli w usłudze BDC.|Edytowanie|
+|Do wdrażania modeli w usłudze BDC.|Edytuj|
 |Tworzenie list i składniki Web Part przy użyciu zewnętrznych typów zawartości (jednostek) w modelu.|Wybór w klientach|
-|Tworzenie, odczytywanie, aktualizowanie i usuwanie danych jednostki.|Wykonana|
+|Tworzenie, odczytywanie, aktualizowanie i usuwanie danych jednostki.|Realizacja|
 
  Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Zarządzanie usługą łączności danych firmowych](/previous-versions/office/sharepoint-server-2010/ee661742(v=office.14)).
 
@@ -109,7 +109,7 @@ ms.locfileid: "72984466"
 ## <a name="locate-documentation-for-bdc-model-elements"></a>Znajdź dokumentację dla elementów modelu usługi BDC
  Program Visual Studio dodaje do modelu element XML dla każdej utworzonej jednostki, metody lub innego elementu. Atrybuty elementu są wyświetlane jako właściwości w oknie **Właściwości** . Aby uzyskać informacje na temat elementów i atrybutów, które program Visual Studio generuje podczas projektowania modelu, zobacz [schemat BDCMetadata](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14)).
 
-## <a name="related-topics"></a>Tematy pokrewne
+## <a name="related-topics"></a>Powiązane tematy
 
 |Tytuł|Opis|
 |-----------|-----------------|

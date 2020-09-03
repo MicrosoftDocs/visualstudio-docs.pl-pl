@@ -10,27 +10,27 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9c2f6f6f65410336eacf72967c8360a56e8fa5ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72610002"
 ---
-# <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Instrukcje: Tworzenie skojarzenia (relacji) między klasami LINQ to SQL (Projektant O/R)
+# <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Instrukcje: tworzenie skojarzenia (relacji) między klasami LINQ do SQL (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Skojarzenia klas jednostek w [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] są analogiczne do relacji między tabelami w bazie danych. Skojarzenia klas jednostek można utworzyć przy użyciu okna dialogowego **Edytor skojarzeń** .
+Skojarzenia między klasami jednostek w programie [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] są analogiczne do relacji między tabelami w bazie danych. Skojarzenia klas jednostek można utworzyć przy użyciu okna dialogowego **Edytor skojarzeń** .
 
  Należy wybrać klasę nadrzędną i klasę podrzędną podczas korzystania z okna dialogowego **Edytor skojarzeń** w celu utworzenia skojarzenia. Klasa nadrzędna jest klasą jednostki, która zawiera klucz podstawowy; Klasa podrzędna jest klasą jednostki, która zawiera klucz obcy. Na przykład jeśli utworzono klasy jednostki, które mapują do tabel klienci i zamówienia Northwind, Klasa klienta byłaby klasą nadrzędną, a Klasa Order będzie klasą podrzędną.
 
 > [!NOTE]
-> Gdy przeciągniesz tabele z **Eksplorator serwera** /**Eksplorator bazy danych** na [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]), skojarzenia są tworzone automatycznie na podstawie istniejących relacji klucza obcego w bazie danych.
+> Gdy przeciągniesz tabele z **Eksplorator serwera** / **Eksplorator bazy danych** do [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ( [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ), skojarzenia są tworzone automatycznie na podstawie istniejących relacji klucza obcego w bazie danych.
 
  Po utworzeniu skojarzenia, gdy wybierzesz skojarzenie w Projektancie O/R, w oknie **Właściwości** znajdują się pewne konfigurowalne właściwości. (Skojarzenie jest linią między powiązanymi klasami). Poniższa tabela zawiera opisy właściwości skojarzenia.
 
 |Właściwość|Opis|
 |--------------|-----------------|
-|**Kardynalności**|Określa, czy skojarzenie jest jedno-do-wielu, czy jeden-do-jednego.|
+|**Kardynalność**|Określa, czy skojarzenie jest jedno-do-wielu, czy jeden-do-jednego.|
 |**Właściwość podrzędna**|Określa, czy ma zostać utworzona właściwość obiektu nadrzędnego, który jest kolekcją lub odwołaniem do rekordów podrzędnych po stronie klucza obcego skojarzenia. Na przykład w skojarzeniu między klientem i kolejności, jeśli **Właściwość podrzędna** ma wartość **true**, w klasie nadrzędnej jest tworzona właściwość o nazwie Orders.|
 |**Właściwość nadrzędna**|Właściwość klasy podrzędnej, która odwołuje się do skojarzonej klasy nadrzędnej. Na przykład w skojarzeniu między klientem i kolejnością właściwość o nazwie klient odwołująca się do skojarzonego klienta dla zamówienia jest tworzona w klasie Order.|
 |**Właściwości uczestniczące**|Wyświetla właściwości skojarzenia i zawiera przycisk **wielokropka** (...), który powoduje ponowne otwarcie okna dialogowego **Edytor skojarzeń** .|

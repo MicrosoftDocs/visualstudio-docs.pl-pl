@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e2d3d33b150bd9c360896f88eddf032837fe9c9
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876050"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach, projektant działań
@@ -25,11 +25,11 @@ ms.locfileid: "86876050"
 
 ## <a name="the-parallelforeacht-activity"></a>Działanie ParallelForEach<T \>
 
-<xref:System.Activities.Statements.ParallelForEach%601>Wylicza wartości i planuje <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> dla każdej wartości, która jest wyliczana. Planuje tylko <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> . Sposób wykonywania treści zależy od tego, czy <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> przechodzą w stan bezczynności.
+<xref:System.Activities.Statements.ParallelForEach%601> Wylicza wartości i planuje <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> dla każdej wartości, która jest wyliczana. Planuje tylko <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> . Sposób wykonywania treści zależy od tego, czy <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> przechodzą w stan bezczynności.
 
 Jeśli <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> polecenie nie przechodzi w stan bezczynności, jest wykonywane w odwrotnej kolejności, ponieważ zaplanowane działania są obsługiwane jako stos, najpierw wykonywane jest ostatnie zaplanowane działanie. Na przykład jeśli masz kolekcję {1,2,3,4} w programie <xref:System.Activities.Statements.ParallelForEach%601> i używasz funkcji **WriteLine** jako treści do zapisania wartości. W konsoli programu znajduje się 4, 3, 2, 1. Wynika to z faktu, że funkcja **WriteLine** nie przechodzi w stan bezczynności, więc po zaplanowaniu **4 działań** na stosie wykonywane przy użyciu zachowania stosu (najpierw w ostatniej kolejności).
 
-Ale jeśli masz działania <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> , które mogą przejść w stan bezczynności, np <xref:System.ServiceModel.Activities.Receive> . działanie lub <xref:System.Activities.Statements.Delay> działanie. Nie trzeba czekać na ich zakończenie. <xref:System.Activities.Statements.ParallelForEach%601>przechodzi do następnego działania zaplanowanej treści i spróbuje go wykonać. Jeśli to działanie przekroczy wartość bezczynną, <xref:System.Activities.Statements.ParallelForEach%601> przenosi się ponownie przy następnym działaniu treści.
+Ale jeśli masz działania <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> , które mogą przejść w stan bezczynności, np <xref:System.ServiceModel.Activities.Receive> . działanie lub <xref:System.Activities.Statements.Delay> działanie. Nie trzeba czekać na ich zakończenie. <xref:System.Activities.Statements.ParallelForEach%601> przechodzi do następnego działania zaplanowanej treści i spróbuje go wykonać. Jeśli to działanie przekroczy wartość bezczynną, <xref:System.Activities.Statements.ParallelForEach%601> przenosi się ponownie przy następnym działaniu treści.
 
 ### <a name="using-the-parallelforeacht-activity-designer"></a>Korzystanie z \<T> projektanta działań ParallelForEach
 
@@ -51,7 +51,7 @@ W poniższej tabeli przedstawiono najbardziej przydatne <xref:System.Activities.
 
 Domyślnie iterator pętli ma nazwę element. Nazwę zmiennej iteratora można zmienić w polu **foreach** w projektancie działań **ParallelForEach \<T> ** . Iteratora pętli można używać w wyrażeniach w elemencie podrzędnym <xref:System.Activities.Statements.ParallelForEach%601> działania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Sequence](../workflow-designer/sequence-activity-designer.md)
 - [Równoległy](../workflow-designer/parallel-activity-designer.md)

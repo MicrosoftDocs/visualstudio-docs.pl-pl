@@ -49,16 +49,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fa81b08d6e375da4ad67b2e6eec32f244a779408
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662261"
 ---
 # <a name="options-text-editor-general"></a>Opcje, edytor tekstów, ogólne
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-To okno dialogowe umożliwia zmianę ustawień globalnych dla kodu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] i edytora tekstu. Aby wyświetlić to okno dialogowe, kliknij przycisk **Opcje** w menu **Narzędzia** , rozwiń folder **Edytor tekstu** , a następnie kliknij pozycję **Ogólne**.
+To okno dialogowe umożliwia zmianę ustawień globalnych dla [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] edytora kodu i tekstu. Aby wyświetlić to okno dialogowe, kliknij przycisk **Opcje** w menu **Narzędzia** , rozwiń folder **Edytor tekstu** , a następnie kliknij pozycję **Ogólne**.
 
 > [!NOTE]
 > Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -72,7 +72,7 @@ To okno dialogowe umożliwia zmianę ustawień globalnych dla kodu [!INCLUDE[vsp
 
  Automatyczne wykrywanie kodowania UTF-8 bez podpisu domyślnie Edytor wykrywa kodowanie, wyszukując znaczniki kolejności bajtów lub Tagi charset. Jeśli żaden z nich nie zostanie znaleziony w bieżącym dokumencie, Edytor kodu próbuje automatycznie wykryć kodowanie UTF-8 przez skanowanie sekwencji bajtów. Aby wyłączyć Autowykrywanie kodowania, usuń zaznaczenie tej opcji.
 
-## <a name="display"></a>Monitor
+## <a name="display"></a>Wyświetlanie
  Zaznaczony margines zaznaczenia powoduje wyświetlenie pionowego marginesu wzdłuż lewej krawędzi obszaru tekstowego edytora. Możesz kliknąć ten margines, aby zaznaczyć cały wiersz tekstu, lub kliknij i przeciągnij, aby zaznaczyć kolejne wiersze tekstu.
 
 |Margines zaznaczenia na|Margines zaznaczenia jest wyłączony|
@@ -88,4 +88,4 @@ To okno dialogowe umożliwia zmianę ustawień globalnych dla kodu [!INCLUDE[vsp
  Wyróżnij bieżący wiersz po zaznaczeniu, wyświetla szare pole wokół wiersza kodu, w którym znajduje się kursor.
 
 ## <a name="see-also"></a>Zobacz też
- [Opcje, Edytor tekstu, wszystkie opcje języka](../../ide/reference/options-text-editor-all-languages.md) [, Edytor tekstu, wszystkie języki, opcje kart](../../ide/reference/options-text-editor-all-languages-tabs.md) [, Edytor tekstu, rozszerzenie pliku](../../ide/reference/options-text-editor-file-extension.md) [identyfikujący i dostosowujący skróty klawiaturowe](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [dostosowujące edytora](../../ide/customizing-the-editor.md) [za pomocą Funkcja IntelliSense](../../ide/using-intellisense.md)
+ [Opcje, Edytor tekstu, wszystkie opcje języka](../../ide/reference/options-text-editor-all-languages.md) [, Edytor tekstu, wszystkie języki,](../../ide/reference/options-text-editor-all-languages-tabs.md) [Opcje kart, Edytor tekstu, rozszerzenie pliku](../../ide/reference/options-text-editor-file-extension.md) [identyfikujący i dostosowujący skróty klawiaturowe](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [dostosowujące Edytor](../../ide/customizing-the-editor.md) [przy użyciu funkcji IntelliSense](../../ide/using-intellisense.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 136edf7fa91e4caeb9303edfd4441ee178fa6038
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662159"
 ---
 # <a name="print-command"></a>Print — Polecenie
@@ -34,7 +34,7 @@ Debug.Print text
 ```
 
 ## <a name="arguments"></a>Argumenty
- Wymagane `text`. Wyrażenie, które ma zostać obliczone lub tekst do wyświetlenia.
+ `text` Wymagane. Wyrażenie, które ma zostać obliczone lub tekst do wyświetlenia.
 
 ## <a name="remarks"></a>Uwagi
  Możesz użyć znaku zapytania (?) jako aliasu dla tego polecenia. Tak więc, na przykład, polecenie
@@ -49,7 +49,7 @@ Debug.Print text
 >? expA
 ```
 
- Obie wersje tego polecenia zwróci bieżącą wartość wyrażenia `expA`.
+ Obie wersje tego polecenia zwróci bieżącą wartość wyrażenia `expA` .
 
 ## <a name="example"></a>Przykład
 

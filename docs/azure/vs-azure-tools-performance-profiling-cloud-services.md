@@ -9,10 +9,10 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.openlocfilehash: 04e3ee89498447f7743fc1b5119e129f046b4fcc
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911780"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testowanie wydajności usługi w chmurze
@@ -101,7 +101,7 @@ Dla każdego wystąpienia roli w usłudze w chmurze zostanie utworzona sesja pro
 2. Wybierz węzeł obliczenia platformy Azure, a następnie wybierz węzeł wdrożenia platformy Azure dla usługi w chmurze, która została wybrana do profilowania przy publikowaniu z programu Visual Studio.
 3. Aby wyświetlić raporty profilowania dla wystąpienia, wybierz rolę w usłudze, otwórz menu skrótów dla określonego wystąpienia, a następnie wybierz polecenie **Wyświetl raport profilowania**.
 
-    Raport, plik. vsp, jest teraz pobierany z platformy Azure, a w dzienniku aktywności platformy Azure zostanie wyświetlony stan pobierania. Po zakończeniu pobierania raport profilowania zostanie wyświetlony na karcie w edytorze dla programu Visual Studio o nazwie < nazwa roli\> *< numer wystąpienia\>* < identyfikator\>. vsp. Dane podsumowujące raportu są wyświetlane.
+    Raport, plik. vsp, jest teraz pobierany z platformy Azure, a w dzienniku aktywności platformy Azure zostanie wyświetlony stan pobierania. Po zakończeniu pobierania raport profilowania zostanie wyświetlony na karcie w edytorze dla programu Visual Studio o nazwie <nazwa roli \> *<numerem \> wystąpienia*<identyfikator \> . vsp. Dane podsumowujące raportu są wyświetlane.
 4. Aby wyświetlić różne widoki raportu, na liście bieżący widok wybierz odpowiedni typ widoku. Aby uzyskać więcej informacji, zobacz [narzędzia profilowania widoków raportów](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Następne kroki

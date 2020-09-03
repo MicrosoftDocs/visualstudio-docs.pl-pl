@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 57841baaf147c2aae02ac89a8401c46d3bd64ca3
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911679"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Konfigurowanie nazwanych poświadczeń uwierzytelniania
@@ -21,7 +21,7 @@ ms.locfileid: "72911679"
 Aby opublikować aplikację na platformie Azure lub monitorować istniejącą usługę w chmurze, program Visual Studio wymaga poświadczeń do uwierzytelniania żądań na platformie Azure, a mianowicie identyfikatora subskrypcji platformy Azure i prawidłowego certyfikatu X. 509 v3 z kluczem co najmniej 2048 bitów. Te poświadczenia są podane za pomocą jednej z następujących metod:
 
 - W programie Visual Studio wybierz pozycję **wyświetl > Eksplorator serwera**, kliknij prawym przyciskiem myszy węzeł **platformy Azure** , wybierz pozycję **Połącz z subskrypcją Microsoft Azure**i zaloguj się.
-- Utwórz plik subskrypcji (`.publishsettings`), który zawiera klucz publiczny certyfikatu. Plik subskrypcji może zawierać poświadczenia dla więcej niż jednej subskrypcji, zgodnie z opisem w tym artykule.
+- Utwórz plik subskrypcji ( `.publishsettings` ), który zawiera klucz publiczny certyfikatu. Plik subskrypcji może zawierać poświadczenia dla więcej niż jednej subskrypcji, zgodnie z opisem w tym artykule.
 
 Uwaga: te poświadczenia różnią się od poświadczeń używanych do uwierzytelniania żądań w usługach Azure Storage.
 
@@ -31,7 +31,7 @@ W Eksplorator serwera kliknij prawym przyciskiem myszy węzeł **platformy Azure
 
 - Wybierz pozycję **Importuj** , aby otworzyć okno dialogowe **Importuj subskrypcje Microsoft Azure** . Wybierz łącze **Pobierz plik subskrypcji** , a w przeglądarce Zapisz pobrany plik w lokalizacji tymczasowej. W oknie dialogowym przejdź do lokalizacji pobierania, a następnie zaimportuj ją do użycia podczas uwierzytelniania.
 - Wybierz aktywną subskrypcję i wybierz pozycję **Edytuj**, aby otworzyć okno dialogowe, w którym można edytować istniejącą subskrypcję do użycia w ramach uwierzytelniania.
-- Wybierz pozycję **Nowy** , aby otworzyć okno dialogowe **Nowa subskrypcja** i podać wymagane szczegóły. Aby przekazać certyfikat do usługi w chmurze w oknie dialogowym, zaloguj się do Azure Portal, przejdź do usługi w chmurze, wybierz pozycję **ustawienia > certyfikaty zarządzania**, wybierz pozycję **Przekaż**, a następnie określ ścieżkę do pliku `.cer`.
+- Wybierz pozycję **Nowy** , aby otworzyć okno dialogowe **Nowa subskrypcja** i podać wymagane szczegóły. Aby przekazać certyfikat do usługi w chmurze w oknie dialogowym, zaloguj się do Azure Portal, przejdź do usługi w chmurze, wybierz pozycję **ustawienia > certyfikaty zarządzania**, wybierz pozycję **Przekaż**, a następnie określ ścieżkę do `.cer` pliku.
 
 Jeśli chcesz samodzielnie utworzyć certyfikat, możesz zapoznać się z instrukcjami w temacie [Tworzenie i przekazywanie certyfikatu zarządzania dla platformy Azure](https://msdn.microsoft.com/library/windowsazure/gg551722.aspx) , a następnie ręczne przekazywanie certyfikatu do [Azure Portal](https://portal.azure.com/).
 
@@ -39,5 +39,5 @@ Jeśli chcesz samodzielnie utworzyć certyfikat, możesz zapoznać się z instru
 
 - [Ogólne omówienie Web Apps](/azure/app-service/)
 - [Wdróż aplikację w usłudze Azure App Service](/azure/app-service/app-service-deploy-local-git)
-- [Wdrażanie zadań WebJob za pomocą programu Visual Studio](/azure/app-service/websites-dotnet-deploy-webjobs)
+- [Wdrażanie zadań WebJobs za pomocą programu Visual Studio](/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Tworzenie i wdrażanie usługi w chmurze](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

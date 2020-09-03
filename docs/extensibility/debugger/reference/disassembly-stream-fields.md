@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_FIELDS | Dokumenty firmy Microsoft
+title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d10f2143cbefa86442e4087ac098020f5f2bd6ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737355"
 ---
 # <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
-Określa, jakie informacje mają być pobierane o polu demontażu.
+Określa informacje, które mają zostać pobrane dla pola demontażu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -66,55 +66,55 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 
 ## <a name="fields"></a>Pola
 `DSF_ADDRESS`\
-Inicjowanie/używanie tego `bstrAddress` pola.
+Zainicjuj/Użyj `bstrAddress` pola.
 
 `DSF_ADDRESSOFFSET`\
-Inicjowanie/używanie tego `bstrAddressOffset` pola.
+Zainicjuj/Użyj `bstrAddressOffset` pola.
 
 `DSF_CODEBYTES`\
-Inicjowanie/używanie tego `bstrCodeBytes` pola.
+Zainicjuj/Użyj `bstrCodeBytes` pola.
 
 `DSF_OPCODE`\
-Inicjowanie/używanie tego `bstrOpCode` pola.
+Zainicjuj/Użyj `bstrOpCode` pola.
 
 `DSF_OPERANDS`\
-Inicjowanie/używanie tego `bstrOperands` pola.
+Zainicjuj/Użyj `bstrOperands` pola.
 
 `DSF_SYMBOL`\
-Inicjowanie/używanie tego `bstrSymbol` pola.
+Zainicjuj/Użyj `bstrSymbol` pola.
 
 `DSF_CODELOCATIONID`\
-Inicjowanie/używanie tego `uCodeLocationId` pola.
+Zainicjuj/Użyj `uCodeLocationId` pola.
 
 `DSF_POSITION`\
-Inicjuj/użyj pól `posBeg` i. `posEnd`
+Inicjowanie/używanie `posBeg` pól i `posEnd` .
 
 `DSF_DOCUMENTURL`\
-Inicjowanie/używanie tego `bstrDocumentUrl` pola.
+Zainicjuj/Użyj `bstrDocumentUrl` pola.
 
 `DSF_BYTEOFFSET`\
-Inicjowanie/używanie tego `dwByteOffset` pola.
+Zainicjuj/Użyj `dwByteOffset` pola.
 
 `DSF_FLAGS`\
-Zainicjować/użyć `dwFlags` pola ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).
+Zainicjuj/Użyj `dwFlags` pola ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).
 
 `DSF_OPERANDS_SYMBOLS`\
-Uwzględnij nazwy `bstrOperands` symboli w polu.
+Dołącz nazwy symboli w `bstrOperands` polu.
 
 `DSF_ALL`\
-Określa wszystkie pola dla strumienia demontażu.
+Określa wszystkie pola dla strumienia rozasemblera.
 
 ## <a name="remarks"></a>Uwagi
-Przekazany jako parametr do [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metody, aby wskazać, które pola [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury mają być inicjowane.
+Przekazuje jako parametr do metody [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) , aby wskazać, które pola struktury [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) mają być inicjowane.
 
-Używane dla `dwFields` elementu `DisassemblyData` członkowskiego struktury, aby wskazać, które pola są używane i prawidłowe, gdy struktura jest zwracana.
+Używane dla `dwFields` składowej struktury, `DisassemblyData` Aby wskazać, które pola są używane i są ważne podczas zwracania struktury.
 
-Wartości te mogą być łączone z bitowym `OR`.
+Te wartości mogą być połączone z bitową `OR` .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2::SetEngine | Dokumenty firmy Microsoft
+title: 'IDebugProgramEngines2:: SetEngine | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 226f5bbf11627a3171641806a673eaa15b614572
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722408"
 ---
 # <a name="idebugprogramengines2setengine"></a>IDebugProgramEngines2::SetEngine
-Informuje o węźle programu lub programu, który aparat debugowania (DE) ma być używany do debugowania tego programu.
+Informuje program lub węzeł programu, który aparat debugowania (DE) ma używać do debugowania tego programu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,10 +41,10 @@ int SetEngine( 
 
 ## <a name="parameters"></a>Parametry
 `guidEngine`\
-[w] Identyfikator GUID DE.
+podczas Identyfikator GUID DE.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

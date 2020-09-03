@@ -57,17 +57,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 01b225b27dfe9c5e1f006105b8e2676a509234b9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984635"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Dodatkowa obsługa błędów w rozwiązaniach pakietu Office
 
 Poniższe zasoby mogą pomóc w znalezieniu odpowiedzi na problemy występujące podczas tworzenia rozwiązań pakietu Office w programie Visual Studio.
 
-## <a name="troubleshoot-specific-errors"></a>Rozwiązywanie określonych błędów
+## <a name="troubleshoot-specific-errors"></a>Rozwiązywanie problemów z konkretnymi błędami
 
 Aby uzyskać pomoc dotyczącą niektórych typowych błędów w rozwiązaniach pakietu Office, zobacz następujące tematy:
 
@@ -91,7 +91,7 @@ Umożliwia dostęp do artykułów w bazie wiedzy Knowledge Base (KB), plików do
 
 Oferuje linki do dodatkowych zasobów, aby dowiedzieć się więcej na temat opracowywania rozwiązań biurowych i programowania Office przy użyciu programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 - [Rozwiązywanie problemów z zabezpieczeniami rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-security.md)

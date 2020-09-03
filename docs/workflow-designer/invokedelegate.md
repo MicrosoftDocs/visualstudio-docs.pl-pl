@@ -11,10 +11,10 @@ ms.author: tglee
 ms.workload:
 - multiple
 ms.openlocfilehash: 9e63fb7a766b79467749cc5181a575e0d35a07b8
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876076"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
@@ -39,6 +39,6 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.InvokeDeleg
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|Prawda|Nazwa, <xref:System.Activities.ActivityDelegate> która ma być wywoływana, gdy działanie jest wykonywane. Tę właściwość można edytować na powierzchni projektanta i jest obowiązkowe.|
 |<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|Fałsz|Kolekcja argumentów wywołanego delegata. Klucze są nazwami obiektów parametrów w <xref:System.Activities.ActivityDelegate> , a wartości są argumentami, których wyrażenia są oceniane i przypisywane do odpowiednich obiektów parametrów. Aby wyświetlić okno dialogowe **DelegateArguments** , w którym można ustawić tę właściwość, kliknij przycisk wielokropka w polu **DelegateArguments** siatki właściwości. Kliknij pole **Utwórz argument** , aby dodać argumenty.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Definiowanie i stosowanie delegowania działania w Projektancie przepływu pracy](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

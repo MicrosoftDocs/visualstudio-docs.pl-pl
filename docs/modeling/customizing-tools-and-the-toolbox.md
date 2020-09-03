@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 685da1184706e106f3bdd2088b4d937e0aa7cc9f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548294"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Dostosowywanie narzędzi i przybornika
 
 Należy zdefiniować elementy przybornika dla elementów, które chcesz zezwolić użytkownikom na dodawanie ich do modeli. Istnieją dwa rodzaje narzędzi: narzędzia elementów i narzędzia do nawiązywania połączeń. W wygenerowanym projektancie użytkownik może wybrać narzędzie elementu, aby przeciągnąć kształty do diagramu i można wybrać narzędzie połączenia do rysowania linków między kształtami. Ogólnie rzecz biorąc, elementy Tools pozwalają użytkownikom dodawać wystąpienia klas domeny do ich modeli, a narzędzia połączenia pozwalają im dodawać wystąpienia relacji domeny.
 
-## <a name="how-the-toolbox-is-defined"></a><a name="ToolboxDef"></a>Sposób definiowania przybornika
+## <a name="how-the-toolbox-is-defined"></a><a name="ToolboxDef"></a> Sposób definiowania przybornika
  W Eksploratorze DSL rozwiń węzeł Edytor i węzły znajdujące się poniżej. Zwykle zostanie wyświetlona hierarchia podobna do poniższego:
 
 ```
@@ -79,7 +79,7 @@ Właściwość **konstruktora połączeń** narzędzia połączenia odwołuje si
 
      Jeśli narzędzie nie jest wyświetlane, Zatrzymaj eksperymentalny program Visual Studio. W menu **Start** systemu Windows uruchom polecenie **Zresetuj wystąpienie eksperymentalne Microsoft Visual Studio 2010**. W menu **kompilacja** kliknij polecenie **Kompiluj ponownie rozwiązanie**. Następnie ponownie przetestuj DSL.
 
-## <a name="customizing-element-tools"></a><a name="customizing"></a>Dostosowywanie narzędzi elementów
+## <a name="customizing-element-tools"></a><a name="customizing"></a> Dostosowywanie narzędzi elementów
  Domyślnie Narzędzie utworzy pojedyncze wystąpienie określonej klasy, ale można to zmienić na dwa sposoby:
 
 - Zdefiniuj dyrektywy scalania elementów dla innych klas, umożliwiając im akceptowanie nowych wystąpień tej klasy i umożliwienie im tworzenia dodatkowych linków po utworzeniu nowego elementu. Na przykład można zezwolić użytkownikowi na porzucenie komentarza do innego elementu, a tym samym utworzyć łącze odwołania między nimi.
@@ -90,7 +90,7 @@ Właściwość **konstruktora połączeń** narzędzia połączenia odwołuje si
 
 - Napisz kod w celu dostosowania tego narzędzia, aby można było tworzyć grupy elementów. Narzędzie jest inicjowane przez metody w ToolboxHelper.cs, które można przesłonić. Aby uzyskać więcej informacji, zobacz [Tworzenie grup elementów za pomocą narzędzia](#groups).
 
-## <a name="creating-groups-of-elements-from-a-tool"></a><a name="groups"></a>Tworzenie grup elementów za pomocą narzędzia
+## <a name="creating-groups-of-elements-from-a-tool"></a><a name="groups"></a> Tworzenie grup elementów za pomocą narzędzia
  Każdy element narzędzia zawiera prototyp elementów, które powinny być tworzone. Domyślnie każde narzędzie elementu tworzy pojedynczy element, ale można również utworzyć grupę powiązanych obiektów przy użyciu jednego narzędzia. W tym celu należy zainicjować narzędzie z elementem zawierającym <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> powiązane elementy.
 
  Poniższy przykład jest pobierany z linii DSL, w której istnieje tranzystor typu. Każdy tranzystor ma trzy nazwane terminale. Narzędzie elementu dla tranzystorów przechowuje prototyp zawierający cztery elementy modelu i trzy linki relacji. Gdy użytkownik przeciągnie narzędzie na diagram, zostanie utworzone wystąpienie prototypu i połączone z głównym modelem.
@@ -139,7 +139,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 }  }    }
 ```
 
-## <a name="customizing-connection-tools"></a><a name="connections"></a>Dostosowywanie narzędzi do połączeń
+## <a name="customizing-connection-tools"></a><a name="connections"></a> Dostosowywanie narzędzi do połączeń
  Zazwyczaj tworzysz narzędzie elementu podczas tworzenia nowej klasy łącznika. Alternatywnie można przeciążyć jedno narzędzie, zezwalając na typy dwóch punktów końcowych, aby określić typ relacji. Można na przykład zdefiniować jedno narzędzie połączenia, które może utworzyć relacje między osobami i osobami.
 
  Narzędzia połączeń wywołują konstruktory połączeń. Użyj konstruktorów połączeń, aby określić, jak użytkownicy mogą łączyć elementy w wygenerowanym projektancie. Konstruktory połączeń określają elementy, które mogą być połączone, oraz rodzaj linku, który jest tworzony między nimi.

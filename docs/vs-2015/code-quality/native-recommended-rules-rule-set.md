@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: db76627afdf44ef1c46ed9ff7a9e204da8eb112d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72608875"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Zestaw reguł macierzystych reguł zalecanych
@@ -156,7 +156,7 @@ Natywne reguły zalecane są skoncentrowane na najważniejszych i typowych probl
 |                      [C28020](../code-quality/c28020.md)                       |                                               Wyrażenie nie jest prawdziwe w tym wywołaniu                                               |
 |                      [C28021](../code-quality/c28021.md)                       |                                           Parametr, którego typem jest adnotacja, musi być wskaźnikiem                                           |
 |                      [C28022](../code-quality/c28022.md)                       |            Klasy funkcji w tej funkcji nie są zgodne z klasami funkcji dla elementu typedef użytego do jego zdefiniowania.            |
-|                      [C28023](../code-quality/c28023.md)                       |         Przypisana lub przenoszona funkcja powinna mieć \_Function_class \_ adnotacja dla co najmniej jednej z klas (ES)         |
+|                      [C28023](../code-quality/c28023.md)                       |         Przypisana lub przenoszona funkcja powinna mieć \_ Function_class \_ adnotację dla co najmniej jednej z klas (ES)         |
 |                      [C28024](../code-quality/c28024.md)                       | Wskaźnik funkcji, do której jest przypisany, ma adnotację z klasą funkcji, która nie znajduje się na liście klas funkcji. |
 |                      [C28039](../code-quality/c28039.md)                       |                                     Typ rzeczywistego parametru powinien dokładnie pasować do typu                                      |
 |                      [C28112](../code-quality/c28112.md)                       |            Do zmiennej, do której uzyskuje się dostęp za pośrednictwem funkcji zablokowaniej, zawsze należy uzyskać dostęp za pośrednictwem funkcji Zablokowani.            |
@@ -174,14 +174,14 @@ Natywne reguły zalecane są skoncentrowane na najważniejszych i typowych probl
 |                      [C28196](../code-quality/c28196.md)                       |                            Wymaganie nie jest spełnione. (Wyrażenie nie jest szacowane na wartość true).                            |
 |                      [C28202](../code-quality/c28202.md)                       |                                               Niedozwolone odwołanie do niestatycznej składowej                                                |
 |                      [C28203](../code-quality/c28203.md)                       |                                                Niejednoznaczne odwołanie do składowej klasy.                                                 |
-|                      [C28205](../code-quality/c28205.md)                       |                                      \_Success \_ lub \_On_failure \_ używane w niedozwolonym kontekście                                       |
+|                      [C28205](../code-quality/c28205.md)                       |                                      \_Powodzenie \_ lub \_ On_failure \_ używane w niedozwolonym kontekście                                       |
 |                      [C28206](../code-quality/c28206.md)                       |                                              Lewy argument operacji wskazuje na strukturę, użyj "->"                                              |
 |                      [C28207](../code-quality/c28207.md)                       |                                                  Lewy argument operacji jest strukturą, użyj "."                                                  |
 |                      [C28209](../code-quality/c28209.md)                       |                                      Deklaracja symbolu ma sprzeczną deklarację                                       |
 |                      [C28210](../code-quality/c28210.md)                       |                            Adnotacje dla kontekstu __on_failure nie mogą być w jawnym kontekście wstępnym                             |
 |                      [C28211](../code-quality/c28211.md)                       |                                            Oczekiwano nazwy kontekstu statycznego dla SAL_context                                             |
 |                      [C28212](../code-quality/c28212.md)                       |                                             Oczekiwano wyrażenia wskaźnika dla adnotacji                                              |
-|                      [C28213](../code-quality/c28213.md)                       |            Adnotacja \_ \_Use_decl_annotations musi być używana do odwoływania się, bez modyfikacji, wcześniejszej deklaracji.            |
+|                      [C28213](../code-quality/c28213.md)                       |            \_ \_ Adnotacja Use_decl_annotations musi być używana do odwoływania się, bez modyfikacji, wcześniejszej deklaracji.            |
 |                      [C28214](../code-quality/c28214.md)                       |                                              Nazwy parametrów atrybutu muszą być P1... P9                                              |
 |                      [C28215](../code-quality/c28215.md)                       |                               Nie można zastosować typefix do parametru, który ma już typefix                               |
 |                      [C28216](../code-quality/c28216.md)                       |                   Adnotacja Checkreturn dotyczy ma zastosowanie tylko do warunki końcowe dla określonego parametru funkcji.                    |
@@ -190,7 +190,7 @@ Natywne reguły zalecane są skoncentrowane na najważniejszych i typowych probl
 |                      [C28219](../code-quality/c28219.md)                       |                            Oczekiwano składowej wyliczenia dla adnotacji, parametr w adnotacji                            |
 |                      [C28220](../code-quality/c28220.md)                       |                             Oczekiwano wyrażenia liczby całkowitej dla adnotacji, parametr w adnotacji                              |
 |                      [C28221](../code-quality/c28221.md)                       |                                   Oczekiwano wyrażenia ciągu dla parametru w adnotacji                                    |
-|                      [C28222](../code-quality/c28222.md)                       |                                          __yes, \__no lub \__maybe oczekiwane dla adnotacji                                          |
+|                      [C28222](../code-quality/c28222.md)                       |                                          \_oczekiwano __yes, _NO lub \_ _maybe dla adnotacji                                          |
 |                      [C28223](../code-quality/c28223.md)                       |                                  Nie znaleziono oczekiwanego tokenu/identyfikatora dla adnotacji, parametr                                   |
 |                      [C28224](../code-quality/c28224.md)                       |                                                   Adnotacja wymaga parametrów                                                    |
 |                      [C28225](../code-quality/c28225.md)                       |                                Nie znaleziono poprawnej liczby wymaganych parametrów w adnotacji                                 |
@@ -218,28 +218,28 @@ Natywne reguły zalecane są skoncentrowane na najważniejszych i typowych probl
 |                      [C28251](../code-quality/c28251.md)                       |                                  Niespójna adnotacja dla funkcji: to wystąpienie zawiera błąd.                                  |
 |                      [C28252](../code-quality/c28252.md)                       |                      Niespójna adnotacja dla funkcji: parametr ma inne adnotacje w tym wystąpieniu.                      |
 |                      [C28253](../code-quality/c28253.md)                       |                      Niespójna adnotacja dla funkcji: parametr ma inne adnotacje w tym wystąpieniu.                      |
-|                      [C28254](../code-quality/c28254.md)                       |                                          dynamic_cast < > () nie jest obsługiwane w adnotacjach                                           |
+|                      [C28254](../code-quality/c28254.md)                       |                                          dynamic_cast<> () nie jest obsługiwane w adnotacjach                                           |
 |                      [C28262](../code-quality/c28262.md)                       |                               Znaleziono błąd składniowy w adnotacji w funkcji dla adnotacji                                |
 |                      [C28263](../code-quality/c28263.md)                       |                            Znaleziono błąd składni w adnotacji warunkowej dla wewnętrznej adnotacji                            |
 |                      [C28267](../code-quality/c28267.md)                       |                               W adnotacji znaleziono błąd składni w funkcji.                               |
 |                      [C28272](../code-quality/c28272.md)                       |                 Adnotacja dla funkcji, parametr podczas badania, jest niespójna z deklaracją funkcji                 |
 |                      [C28273](../code-quality/c28273.md)                       |                               W przypadku funkcji wskazówki są niespójne z deklaracją funkcji                                |
-|                      [C28275](../code-quality/c28275.md)                       |                                              Parametr do \_Macro_value \_ ma wartość null                                               |
+|                      [C28275](../code-quality/c28275.md)                       |                                              Parametr do \_ Macro_value \_ ma wartość null                                               |
 |                      [C28279](../code-quality/c28279.md)                       |                                      Dla symbolu znaleziono "BEGIN" bez odpowiadającego mu "End"                                       |
 |                      [C28280](../code-quality/c28280.md)                       |                                      Dla symbolu znaleziono element "End" bez odpowiadającego mu elementu "BEGIN                                      |
 |                      [C28282](../code-quality/c28282.md)                       |                                               Ciągi formatu muszą znajdować się w warunkach wstępnych                                               |
 |                      [C28285](../code-quality/c28285.md)                       |                                               Dla funkcji, błąd składni w parametrze                                               |
 |                      [C28286](../code-quality/c28286.md)                       |                                               Dla funkcji, błąd składniowy blisko końca                                               |
-|                      [C28287](../code-quality/c28287.md)                       |                           Dla funkcji, błąd składniowy w \_At \_ () () adnotacji (Nierozpoznana Nazwa parametru)                           |
-|                      [C28288](../code-quality/c28288.md)                       |                             Dla funkcji, błąd składni w adnotacji \_At \_ () (Nieprawidłowa nazwa parametru)                              |
+|                      [C28287](../code-quality/c28287.md)                       |                           Dla funkcji, błąd składni w \_ elemencie \_ adnotacji at () (Nierozpoznana Nazwa parametru)                           |
+|                      [C28288](../code-quality/c28288.md)                       |                             Dla funkcji, błąd składni w \_ elemencie \_ Annotation () (Nieprawidłowa nazwa parametru)                              |
 |                      [C28289](../code-quality/c28289.md)                       |                           Dla funkcji: ReadableTo lub WritableTo nie ma specyfikacji limitu jako parametru                           |
 |                      [C28290](../code-quality/c28290.md)                       |                      Adnotacja dla funkcji zawiera więcej elementów zewnętrznych niż rzeczywista liczba parametrów                       |
 |                      [C28291](../code-quality/c28291.md)                       |                                   wpis o wartości null/notnull na poziomie DEREF 0 jest bezużyteczne dla funkcji.                                   |
 |                      [C28300](../code-quality/c28300.md)                       |                                       Operandy wyrażenia niezgodnych typów dla operatora                                        |
 |                      [C28301](../code-quality/c28301.md)                       |                                          Brak adnotacji dla pierwszej deklaracji funkcji.                                          |
-|                      [C28302](../code-quality/c28302.md)                       |                                        Znaleziono dodatkowy operator \_ \_Deref w adnotacji.                                         |
-|                      [C28303](../code-quality/c28303.md)                       |                                      W adnotacji znaleziono niejednoznaczny operator \_Deref \_.                                       |
-|                      [C28304](../code-quality/c28304.md)                       |                                Znaleziono niewłaściwie umieszczony operator \_ \_Notref, który został zastosowany do tokenu.                                 |
+|                      [C28302](../code-quality/c28302.md)                       |                                        Znaleziono dodatkowy \_ \_ operator DEREF w adnotacji.                                         |
+|                      [C28303](../code-quality/c28303.md)                       |                                      \_Znaleziono niejednoznaczny \_ operator DEREF w adnotacji.                                       |
+|                      [C28304](../code-quality/c28304.md)                       |                                Znaleziono niepoprawnie umieszczony \_ operator Notref \_ został zastosowany do tokenu.                                 |
 |                      [C28305](../code-quality/c28305.md)                       |                                           Wykryto błąd podczas analizowania tokenu.                                            |
 |                      [C28306](../code-quality/c28306.md)                       |                                             Adnotacja dla parametru jest przestarzała                                              |
 |                      [C28307](../code-quality/c28307.md)                       |                                             Adnotacja dla parametru jest przestarzała                                              |

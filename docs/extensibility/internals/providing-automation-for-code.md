@@ -1,5 +1,5 @@
 ---
-title: Zapewnienie automatyzacji dla kodu | Dokumenty firmy Microsoft
+title: Dostarczanie automatyzacji dla kodu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,26 +11,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bd13b7db2065069ff1540dbfc921570c2b230b8a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705990"
 ---
 # <a name="providing-automation-for-code"></a>Zapewnianie automatyzacji kodu
-Tworzenie modelu automatyzacji dla kodu nie jest wymagane. Zestaw SDK środowiska nie udostępnia próbki w tym celu. Aby uzyskać wgląd w <xref:EnvDTE.CodeModel> modele kodu, zobacz obiekt.
+Tworzenie modelu automatyzacji dla kodu nie jest wymagane. Zestaw SDK środowiska nie dostarcza przykładu do tego celu. Aby uzyskać wgląd w modele kodu, zapoznaj się z <xref:EnvDTE.CodeModel> obiektem.
 
- Aby zaimplementować model kodu, należy zaimplementować wszystkie interfejsy, które są określane przez wewnętrzną strukturę danych. Obiekty muszą pochodzić z `IDispatch` klasy.
+ Aby zaimplementować model kodu, należy zaimplementować wszystkie interfejsy, które są określone przez wewnętrzną strukturę danych. Obiekty muszą pochodzić od `IDispatch` klasy.
 
- Obiekty, <xref:EnvDTE.CodeModel> które można <xref:EnvDTE.FileCodeModel>rozszerzyć i , <xref:EnvDTE.Project> są dostępne z obiektu i wyglądają następująco:
+ Obiekty, które można rozłożyć <xref:EnvDTE.CodeModel> , <xref:EnvDTE.FileCodeModel> są dostępne z obiektu i <xref:EnvDTE.Project> wyglądać następująco:
 
 - <xref:EnvDTE.Project.CodeModel%2A>
 
 - <xref:EnvDTE.ProjectItem.FileCodeModel%2A>
 
- Można `CodeModel` wybrać do zaimplementowania tylko lub `FileCodeModel` interfejs `Project` <xref:EnvDTE.ProjectItem> w obiekcie, który zwraca z i obiektów. Podaj wszelkie funkcje z tego interfejsu, który jest odpowiedni dla systemu projektu.
+ Można wybrać opcję implementacji tylko `CodeModel` `FileCodeModel` interfejsu lub w obiekcie zwracanym z `Project` <xref:EnvDTE.ProjectItem> obiektów i. Podaj wszelkie funkcje z tego interfejsu, które są odpowiednie dla Twojego systemu projektu.
 
- Jeśli chcesz dodać funkcje, takie jak metody lub właściwości, `CodeModel` które `FileCodeModel` nie są dostępne ze standardu i interfejsów, utwórz własny interfejs, który dziedziczy od standardu. Pamiętaj, aby udokumentować go za pomocą systemu projektu, aby użytkownicy końcowi wiedzieli, aby go wyszukać. Zwracasz standardowy interfejs, ale użytkownik `QueryInterface` może wywołać metodę lub rzutować do interfejsu, jeśli wiadomo, że istnieje.
+ Jeśli chcesz dodać funkcje, takie jak metody lub właściwości, które nie są dostępne ze standardowego `CodeModel` i `FileCodeModel` interfejsów, Utwórz własny interfejs, który dziedziczy ze standardowego. Upewnij się, że dokument został udokumentowany w systemie projektu, aby użytkownicy końcowi wiedzieli, że zobaczysz ją. Można zwrócić standardowy interfejs, ale użytkownik może wywołać `QueryInterface` metodę lub rzutowanie do interfejsu, jeśli wiadomo, że istnieje.
 
 ## <a name="see-also"></a>Zobacz też
 - [Omówienie modelu automatyzacji](../../extensibility/internals/automation-model-overview.md)
