@@ -1,5 +1,5 @@
 ---
-title: -Safemode (devenv. exe) | Microsoft Docs
+title: -Safemode (devenv.exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 28480399238c1c915056d3929f8fd188cfff7eca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665507"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Uruchamia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] w trybie awaryjnym, ładując tylko domyślne środowisko i usługi.
+Uruchamia się [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] w trybie awaryjnym, ładując tylko domyślne środowisko i usługi.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,7 +32,7 @@ devenv /SafeMode
 ```
 
 ## <a name="remarks"></a>Uwagi
- Ten przełącznik zapobiega ładowaniu wszystkich pakietów VSPackage innych firm podczas uruchamiania [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], co zapewnia stabilne wykonanie.
+ Ten przełącznik zapobiega ładowaniu wszystkich innych firm pakietów VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , co zapewnia stabilne wykonanie.
 
 ## <a name="description"></a>Opis
  Poniższy przykład jest uruchamiany [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] w trybie awaryjnym.

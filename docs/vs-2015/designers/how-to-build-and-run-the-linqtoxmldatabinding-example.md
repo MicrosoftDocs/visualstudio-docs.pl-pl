@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5584494f65eaef72c2aa350af4e5af36155e0501
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664627"
 ---
-# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Instrukcje: kompilowanie i uruchamianie przykładu elementu LinqToXmlDataBinding —
+# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Instrukcje: kompilowanie i uruchamianie elementu LinqToXmlDataBinding — przykład
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym temacie pokazano, jak utworzyć i skompilować projekt programu elementu LinqToXmlDataBinding — w programie Visual Studio oraz jak uruchomić w tym celu Przykładowy program elementu LinqToXmlDataBinding — Windows Presentation Foundation (WPF).
@@ -27,7 +27,7 @@ W tym temacie pokazano, jak utworzyć i skompilować projekt programu elementu L
 
 #### <a name="to-create-the-starting-project"></a>Aby utworzyć projekt początkowy
 
-1. Uruchom program Visual Studio i Utwórz C# aplikację WPF o nazwie elementu LinqToXmlDataBinding —. Projekt musi używać .NET Framework 3,5 (lub nowszego).
+1. Uruchom program Visual Studio i Utwórz aplikację WPF w języku C# o nazwie elementu LinqToXmlDataBinding —. Projekt musi używać .NET Framework 3,5 (lub nowszego).
 
 2. Jeśli jeszcze nie istnieje, Dodaj odwołania do projektu dla następujących zestawów .NET:
 
@@ -37,7 +37,7 @@ W tym temacie pokazano, jak utworzyć i skompilować projekt programu elementu L
 
     - System.Xml
 
-    - System. XML. LINQ
+    - System.Xml. LINQ
 
 3. Skompiluj rozwiązanie, naciskając pozycję **Ctnrl + Shift + B**, a następnie uruchom ją, naciskając klawisz **F5**. Projekt powinien zostać skompilowany bez błędów i uruchomiony jako ogólna aplikacja WPF.
 
@@ -60,21 +60,21 @@ W tym temacie pokazano, jak utworzyć i skompilować projekt programu elementu L
 
 1. Uruchom elementu LinqToXmlDataBinding —, naciskając klawisz **F5** (**Rozpocznij debugowanie**) lub **Ctrl + F5** (**Rozpocznij bez debugowania**). Należy wyświetlić okno programu z tytułem **powiązania danych WPF przy użyciu LINQ to XML** .
 
-2. Zwróć uwagę na górną sekcję interfejsu użytkownika, która wyświetla nieprzetworzony **kod XML** , który reprezentuje listę książek. Jest ona wyświetlana przy użyciu kontrolki <xref:System.Windows.Controls.TextBlock> WPF, która nie umożliwia interakcji za pośrednictwem myszy lub klawiatury.
+2. Zwróć uwagę na górną sekcję interfejsu użytkownika, która wyświetla nieprzetworzony **kod XML** , który reprezentuje listę książek. Jest ona wyświetlana przy użyciu <xref:System.Windows.Controls.TextBlock> kontrolki WPF, która nie umożliwia interakcji za pośrednictwem myszy lub klawiatury.
 
-3. Druga sekcja pionowa z etykietą **lista książek**zawiera książki jako listę uporządkowaną jako zwykły tekst. Używa kontrolki <xref:System.Windows.Controls.ListBox>, która umożliwia wybór za pośrednictwem myszy lub klawiatury.
+3. Druga sekcja pionowa z etykietą **lista książek**zawiera książki jako listę uporządkowaną jako zwykły tekst. Używa <xref:System.Windows.Controls.ListBox> kontrolki, która umożliwia zaznaczenie, chociaż myszą lub klawiaturą.
 
 #### <a name="to-add-and-delete-books-from-the-list"></a>Aby dodać i usunąć książki z listy
 
 1. Aby usunąć istniejącą książkę z listy, wybierz ją w sekcji **lista książek** , a następnie kliknij przycisk **Usuń wybraną książkę** . Zwróć uwagę, że wpis książki został usunięty z list książek i nieprzetworzonych źródeł XML.
 
-2. Aby dodać nową książkę do listy, wprowadź wartości w polu **Identyfikator** i **wartość** <xref:System.Windows.Controls.TextBox> kontrolki w ostatniej sekcji, **Dodaj nową książkę**, a następnie kliknij przycisk **Dodaj książkę** . Należy pamiętać, że książka jest dołączana do listy w listach książki i XML. Ten program nie weryfikuje wartości wejściowych.
+2. Aby dodać nową książkę do listy, wprowadź wartości w kontrolce **Identyfikator** i **wartość** <xref:System.Windows.Controls.TextBox> w ostatniej sekcji, **Dodaj nową książkę**, a następnie kliknij przycisk **Dodaj książkę** . Należy pamiętać, że książka jest dołączana do listy w listach książki i XML. Ten program nie weryfikuje wartości wejściowych.
 
 #### <a name="to-edit-an-existing-book-entry"></a>Aby edytować istniejący wpis książki
 
 1. Wybierz wpis książki w drugiej sekcji **listy książek** . Bieżące wartości powinny być wyświetlane w trzeciej sekcji **Edytuj wybraną książkę**.
 
-2. Edytuj wartości przy użyciu klawiatury. Gdy tylko formant <xref:System.Windows.Controls.TextBox> ma swobodny fokus, zmiany są automatycznie propagowane do listy źródłowej XML i książki.
+2. Edytuj wartości przy użyciu klawiatury. Gdy tylko <xref:System.Windows.Controls.TextBox> formant utraci fokus, zmiany są automatycznie propagowane do listy źródeł XML i książek.
 
 ## <a name="see-also"></a>Zobacz też
  [Powiązanie danych WPF przy użyciu LINQ to XML przykładowego](../designers/wpf-data-binding-using-linq-to-xml-example.md) [przewodnika: elementu LinqToXmlDataBinding — przykład](../designers/walkthrough-linqtoxmldatabinding-example.md) [tworzenia aplikacji w programie Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)

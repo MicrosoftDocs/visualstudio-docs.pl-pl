@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c6171a5dedfd6985a6f54e748011bf86e03f4d3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664650"
 ---
 # <a name="element-xelement-dynamic-property"></a>Element (właściwość dynamiczna XElement)
@@ -32,10 +32,10 @@ elem.Element[{namespaceName}localName]
 ```
 
 ## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość
- Indeksator typu `XElement Item(String expandedName)`. Ten indeksator przyjmuje rozszerzony parametr name i zwraca odpowiednie <xref:System.Xml.Linq.XElement> lub `null`, jeśli nie ma elementu o określonej nazwie.
+ Indeksator typu `XElement Item(String expandedName)` . Ten indeksator przyjmuje rozwinięty parametr name i zwraca odpowiednie <xref:System.Xml.Linq.XElement> lub `null` Jeśli nie ma elementu o określonej nazwie.
 
 ## <a name="remarks"></a>Uwagi
- Ta właściwość jest równoważna <xref:System.Xml.Linq.XContainer.Element%2A> metodzie klasy <xref:System.Xml.Linq.XContainer?displayProperty=fullName>.
+ Ta właściwość jest równoważna <xref:System.Xml.Linq.XContainer.Element%2A> metodzie <xref:System.Xml.Linq.XContainer?displayProperty=fullName> klasy.
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.Xml.Linq.XContainer.Element%2A?displayProperty=fullName> [elementów](../designers/elements-xelement-dynamic-property.md) [właściwości dynamicznych klasy XElement](../designers/xelement-class-dynamic-properties.md)
+ <xref:System.Xml.Linq.XContainer.Element%2A?displayProperty=fullName>[Elementy](../designers/elements-xelement-dynamic-property.md) [właściwości dynamicznych klasy XElement](../designers/xelement-class-dynamic-properties.md)

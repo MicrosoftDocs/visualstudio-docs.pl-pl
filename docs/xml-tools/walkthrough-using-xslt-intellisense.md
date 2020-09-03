@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a085627d598bfcc969c2e76d717a2f49a31922b2
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817284"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Przewodnik: używanie funkcji XSLT IntelliSense
@@ -160,6 +160,6 @@ W tym instruktażu pokazano, jak używać funkcji IntelliSense XSLT do autouzupe
 
      Zwróć uwagę na to, jak lista prefiksów występuje `stylesheet-prefix` w `result-prefix` atrybuty i `xsl:namespace-alias` elementu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Funkcje IntelliSense w edytorze XML](../xml-tools/xml-editor-intellisense-features.md)

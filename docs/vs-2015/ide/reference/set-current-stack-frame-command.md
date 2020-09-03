@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4fcb38e565ea4f30ed6e669f8b98df09c9d733ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665455"
 ---
 # <a name="set-current-stack-frame-command"></a>Ustaw bieżącą ramkę stosu — Polecenie
@@ -33,7 +33,7 @@ Debug.SetCurrentStackFrame index
 ```
 
 ## <a name="arguments"></a>Argumenty
- Wymagane `index`. Wybiera ramkę stosu według jej indeksu.
+ `index` Wymagane. Wybiera ramkę stosu według jej indeksu.
 
 ## <a name="example"></a>Przykład
 

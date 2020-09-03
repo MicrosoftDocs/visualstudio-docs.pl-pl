@@ -15,19 +15,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7ff759681ca3e4f48f264e00f9e376487dfe4d24
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817310"
 ---
 # <a name="expected-end"></a>Oczekiwano instrukcji " \@ End"
-Podjęto próbę utworzenia skompilowanego warunkowo bloku kodu, ale nie zawiera on <strong>@end</strong> instrukcji na końcu. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]instrukcje można kompilować warunkowo, umieszczając je w <strong>@if/@end</strong> bloku.  
+Podjęto próbę utworzenia skompilowanego warunkowo bloku kodu, ale nie zawiera on <strong>@end</strong> instrukcji na końcu. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] instrukcje można kompilować warunkowo, umieszczając je w <strong>@if/@end</strong> bloku.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
 - Dodaj odpowiednią <strong>@end</strong> instrukcję.  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Kompilacja warunkowa](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Zmienne kompilacji warunkowej](../../javascript/advanced/conditional-compilation-variables-javascript.md)

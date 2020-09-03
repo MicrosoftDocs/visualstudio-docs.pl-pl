@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: da9ba9572e121a9eba74cd8d624789032f1bb4a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665668"
 ---
 # <a name="quick-watch-command"></a>Szybka czujka — Polecenie
@@ -33,10 +33,10 @@ Debug.QuickWatchq [text]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `text` opcjonalny. Tekst, który ma zostać dodany do okna dialogowego **QuickWatch** .
+ `text` Obowiązkowe. Tekst, który ma zostać dodany do okna dialogowego **QuickWatch** .
 
 ## <a name="remarks"></a>Uwagi
- W przypadku pominięcia `text`, w okno wyrażeń kontrolnych zostanie dodany aktualnie zaznaczony tekst lub słowo.
+ Jeśli `text` zostanie pominięty, aktualnie zaznaczony tekst lub słowo w kursorze zostanie dodane do okno wyrażeń kontrolnych.
 
 ## <a name="example"></a>Przykład
 

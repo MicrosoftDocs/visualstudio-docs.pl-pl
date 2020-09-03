@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3f043aae44231608fb514e87a05717f4aeb924bc
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350098"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Instrukcje: debugowanie źródła .NET Framework
@@ -31,9 +31,9 @@ Aby debugować źródło .NET Framework, musisz:
 
 1. W obszarze **Narzędzia** (lub **Debuguj**) > **Opcje**  >  **debugowania**  >  **Ogólne**wybierz pozycję **Włącz .NET Framework Źródło**.
 
-   - Jeśli Tylko mój kod włączone, okno dialogowe ostrzeżenia informuje, że Tylko mój kod jest teraz wyłączone. Wybierz przycisk **OK**.
+   - Jeśli Tylko mój kod włączone, okno dialogowe ostrzeżenia informuje, że Tylko mój kod jest teraz wyłączone. Wybierz pozycję **OK**.
 
-   - Jeśli nie masz ustawionej lokalnej pamięci podręcznej symboli, okno dialogowe ostrzeżenia informuje, że ustawiono domyślną pamięć podręczną symboli. Wybierz przycisk **OK**.
+   - Jeśli nie masz ustawionej lokalnej pamięci podręcznej symboli, okno dialogowe ostrzeżenia informuje, że ustawiono domyślną pamięć podręczną symboli. Wybierz pozycję **OK**.
 
 1. Wybierz **przycisk OK** , aby zamknąć okno dialogowe **Opcje** .
 

@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8bb18ec8dd12431d650d844e3698c1986c8d8bd8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665642"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Strona odwołań, Projektant projektu (Visual Basic)
@@ -62,7 +62,7 @@ Za pomocą strony **odwołania** **projektanta projektu** można zarządzać odw
 
  **Zaimportowane przestrzenie nazw** W tym polu można wpisać własną przestrzeń nazw, a następnie kliknąć pozycję **Dodaj Import użytkowników** , aby dodać go do listy przestrzeni nazw.
 
- Można tworzyć aliasy dla przestrzeni nazw zaimportowanych przez użytkownika. W tym celu wprowadź alias i przestrzeń nazw w formacie *alias* =*przestrzeni nazw*. Jest to przydatne, jeśli używasz długich przestrzeni nazw, na przykład: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+ Można tworzyć aliasy dla przestrzeni nazw zaimportowanych przez użytkownika. W tym celu wprowadź alias i przestrzeń nazw w formacie *alias* = *przestrzeni nazw*aliasu. Jest to przydatne, jeśli używasz długich przestrzeni nazw, na przykład: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http` .
 
  **Dodaj Import użytkownika** Kliknij ten przycisk, aby dodać obszar nazw określony w polu **zaimportowane przestrzenie** nazw do listy importowanych przestrzeni nazw. Przycisk jest aktywny tylko wtedy, gdy określona przestrzeń nazw nie znajduje się już na liście.
 
@@ -70,11 +70,11 @@ Za pomocą strony **odwołania** **projektanta projektu** można zarządzać odw
 
  **Aktualizowanie importowania użytkowników** Wybierz określoną przez użytkownika przestrzeń nazw na liście przestrzenie nazw, wpisz nazwę, która ma zostać zastąpiona w polu **zaimportowane przestrzenie nazw** , a następnie kliknij ten przycisk, aby przejść do nowej przestrzeni nazw. Przycisk jest aktywny tylko wtedy, gdy wybrany obszar nazw jest taki, który został dodany do listy za pomocą przycisku **Dodaj użytkownika importowania** . Możesz dodać:
 
-- Klasy lub przestrzenie nazw, takie jak <xref:System.Math?displayProperty=fullName>.
+- Klasy lub przestrzenie nazw, takie jak <xref:System.Math?displayProperty=fullName> .
 
-- Importy aliasów, takie jak `VB=Microsoft.VisualBasic`.
+- Importy aliasów, takie jak `VB=Microsoft.VisualBasic` .
 
-- Przestrzenie nazw XML, takie jak `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
+- Przestrzenie nazw XML, takie jak `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">` .
 
 ## <a name="see-also"></a>Zobacz też
  [NIB: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodaj odwołanie](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [instrukcje: Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md) [NIB: Dodaj odwołanie sieci Web](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5) , [instrukcja Imports (przestrzeń nazw XML)](https://msdn.microsoft.com/library/1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4)

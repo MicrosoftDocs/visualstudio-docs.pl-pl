@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d2973f4e1d775d1b71642ea60b8cf00b1430c77
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664698"
 ---
-# <a name="direct-selection-tool-modifier-keys-in-blend"></a>Klawisze modyfikujące narzędzie Wybór bezpośredni w programie Blend
+# <a name="direct-selection-tool-modifier-keys-in-blend"></a>Klawisze modyfikujące narzędzie Bezpośrednie zaznaczenie w programie Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W poniższej tabeli przedstawiono skróty, których można użyć do modyfikacji kształtu istniejącej ścieżki przy użyciu narzędzia ![ ](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362") **wybór bezpośredni** . Aby dodać lub usunąć punkty w istniejącej ścieżce lub połączyć dwie istniejące ścieżki, użyj narzędzia **pióro** .
+W poniższej tabeli przedstawiono skróty, których można użyć do modyfikacji kształtu istniejącej ścieżki przy użyciu narzędzia **wybór bezpośredni** ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362") . Aby dodać lub usunąć punkty w istniejącej ścieżce lub połączyć dwie istniejące ścieżki, użyj narzędzia **pióro** .
 
-|Aby wykonać tę akcję|Zrób to|Przytrzymaj|
+|Akcja do wykonania|Zrób to|Wskaźnik|
 |-----------------------|-------------|-------------|
 |Wyświetlanie uchwytów styczności dla punktu na ścieżce|Kliknij punkt na ścieżce|![](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png "cfcc5f41-a666-4524-a958-50b9051130ca")<br /><br /> Wskaźnik przenoszenia punktu|
 |Przenoszenie punktu na ścieżce|Przeciąganie punktu na ścieżce|![](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png "cfcc5f41-a666-4524-a958-50b9051130ca")<br /><br /> Wskaźnik przenoszenia punktu|

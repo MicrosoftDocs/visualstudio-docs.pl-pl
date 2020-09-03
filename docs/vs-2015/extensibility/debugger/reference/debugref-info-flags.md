@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS | Dokumentacja firmy Microsoft
+title: DEBUGREF_INFO_FLAGS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 05a073b3663ff85fe3d68878999aaf1dfa9e0017
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198847"
 ---
-# <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
+# <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa, jakie informacje należy pobrać o obiektu odwołania debugowania.  
+Określa, jakie informacje mają być pobierane na temat obiektu odwołania debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -57,43 +57,43 @@ public enum enum_DEBUGREF_INFO_FLAGS { 
   
 ## <a name="members"></a>Elementy członkowskie  
  DEBUGREF_INFO_NAME  
- Inicjowanie bądź użyj `bstrName` pole w strukturze.  
+ Zainicjuj/Użyj `bstrName` pola w strukturze.  
   
  DEBUGREF_INFO_TYPE  
- Inicjowanie bądź użyj `bstrType` pole w strukturze.  
+ Zainicjuj/Użyj `bstrType` pola w strukturze.  
   
  DEBUGREF_INFO_VALUE  
- Inicjowanie bądź użyj `bstrValue` pole w strukturze.  
+ Zainicjuj/Użyj `bstrValue` pola w strukturze.  
   
  DEBUGREF_INFO_ATTRIB  
- Inicjowanie bądź użyj `dwAttrib` pole w strukturze.  
+ Zainicjuj/Użyj `dwAttrib` pola w strukturze.  
   
  DEBUGREF_INFO_REFTYPE  
- Inicjowanie bądź użyj `dwRefType` pole w strukturze.  
+ Zainicjuj/Użyj `dwRefType` pola w strukturze.  
   
  DEBUGREF_INFO_REF  
- Inicjowanie bądź użyj `pReference` pole w strukturze.  
+ Zainicjuj/Użyj `pReference` pola w strukturze.  
   
  DEBUGREF_INFO_VALUE_AUTOEXPAND  
- Pole wartości powinien zawierać wartość rozwinięte automatycznie, jeśli są dostępne dla tego typu obiektu.  
+ Pole Value powinno zawierać wartość autoexpanded (jeśli jest dostępna) dla tego typu obiektu.  
   
  DEBUGREF_INFO_NONE  
- Wskazuje, że nie flagi są ustawione.  
+ Wskazuje, że flagi nie są ustawione.  
   
  DEBUGREF_INFO_ALL  
- Określa maskę flag.  
+ Wskazuje maskę flag.  
   
 ## <a name="remarks"></a>Uwagi  
- Te flagi są przekazywane do [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) i [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) metod, aby określić które pola [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struktury, które mają zostać zainicjowane.  
+ Te flagi są przesyłane do metod [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) i [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) , aby wskazać, które pola struktury [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) mają być inicjowane.  
   
- Używany do `dwFields` członkiem `DEBUG_REFERENCE_INFO` struktury, aby wskazać, pola, które są używane i ważne, gdy zwracany jest struktura.  
+ Używane dla `dwFields` składowej struktury, `DEBUG_REFERENCE_INFO` Aby wskazać, które pola są używane i są ważne podczas zwracania struktury.  
   
- Te wartości mogą być łączone przy użyciu bitowego operatora `OR`.  
+ Te wartości mogą być połączone z bitową `OR` .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

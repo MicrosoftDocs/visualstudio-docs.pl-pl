@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3d5088366548c9f92d04f1b65a3afc378db29d6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665616"
 ---
 # <a name="replace-in-files-command"></a>Zastąp w plikach — Polecenie
@@ -36,47 +36,47 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 ```
 
 ## <a name="arguments"></a>Argumenty
- Wymagane `findwhat`. Tekst do dopasowania.
+ `findwhat` Wymagane. Tekst do dopasowania.
 
- Wymagane `replacewith`. Tekst, który ma zostać zastąpiony dla dopasowanego tekstu.
+ `replacewith` Wymagane. Tekst, który ma zostać zastąpiony dla dopasowanego tekstu.
 
 ## <a name="switches"></a>Przełączniki
  /All lub/a Optional. Zamienia wszystkie wystąpienia szukanego tekstu na tekst zastępczy.
 
- /Case lub/c opcjonalne. Dopasowań występuje tylko wtedy, gdy wielkie i małe litery dokładnie pasują do znaków określonych w argumencie `findwhat`.
+ /Case lub/c opcjonalne. Dopasowań występuje tylko wtedy, gdy wielkie i małe litery dokładnie pasują do znaków określonych w `findwhat` argumencie.
 
- /EXT: `extensions` opcjonalny. Określa rozszerzenia plików, które mają być przeszukiwane.
+ /EXT: `extensions` opcjonalne. Określa rozszerzenia plików, które mają być przeszukiwane.
 
  /Keep lub/k opcjonalne. Określa, że wszystkie zmodyfikowane pliki są otwarte.
 
- /lookin: `searchpath` opcjonalny. Katalog do przeszukania. Jeśli ścieżka zawiera spacje, ujmij całą ścieżkę w cudzysłów.
+ /lookin: `searchpath` opcjonalne. Katalog do przeszukania. Jeśli ścieżka zawiera spacje, ujmij całą ścieżkę w cudzysłów.
 
  /Options lub/t opcjonalne. Wyświetla listę bieżących ustawień opcji Znajdź i nie wykonuje wyszukiwania.
 
- /Regex lub/r Optional. Używa wstępnie zdefiniowanych znaków specjalnych w argumencie `findwhat` jako notacji, które reprezentują wzorce tekstu, a nie znaki literału. Aby uzyskać pełną listę znaków wyrażenia regularnego, zobacz [wyrażenia regularne](../../ide/using-regular-expressions-in-visual-studio.md).
+ /Regex lub/r Optional. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argumencie jako notacji, które reprezentują wzorce tekstu, a nie znaki literału. Aby uzyskać pełną listę znaków wyrażenia regularnego, zobacz [wyrażenia regularne](../../ide/using-regular-expressions-in-visual-studio.md).
 
  /Reset lub/e opcjonalne. Zwraca ustawienia domyślne opcji Znajdź i nie wykonuje wyszukiwania.
 
- Opcja/Stop jest opcjonalna. Zatrzymuje bieżącą operację wyszukiwania, jeśli jest w toku. Zastąp ignoruje wszystkie inne argumenty w przypadku określenia `/stop`. Na przykład aby zatrzymać bieżącą zamianę, należy wprowadzić następujące polecenie:
+ Opcja/Stop jest opcjonalna. Zatrzymuje bieżącą operację wyszukiwania, jeśli jest w toku. Zastąp ignoruje wszystkie inne argumenty, gdy `/stop` zostały określone. Na przykład aby zatrzymać bieżącą zamianę, należy wprowadzić następujące polecenie:
 
 ```
 >Edit.ReplaceinFiles /stop
 ```
 
- /Sub. lub/s opcjonalne. Przeszukuje podfoldery w katalogu określonym w argumencie/lookin: `searchpath`.
+ /Sub. lub/s opcjonalne. Przeszukuje podfoldery w katalogu określonym w argumencie/lookin: `searchpath` .
 
  /Text2 lub/2 opcjonalne. Wyświetla wyniki zamiany w oknie **Znajdź wyniki 2** .
 
- /Wild lub/l Optional. Używa wstępnie zdefiniowanych znaków specjalnych w argumencie `findwhat` jako notacji do reprezentowania znaku lub sekwencji znaków.
+ /Wild lub/l Optional. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argumencie jako notacji do reprezentowania znaku lub sekwencji znaków.
 
  /Word lub/w opcjonalne. Wyszukuje tylko całe wyrazy.
 
 ## <a name="example"></a>Przykład
- Ten przykład wyszukuje `btnCancel` i zastępuje go `btnReset` we wszystkich plikach. CLS znajdujących się w folderze "Moje projekty programu Visual Studio" i wyświetla informacje zastępcze w oknie **Znajdź wyniki 2** .
+ Ten przykład wyszukuje `btnCancel` i zastępuje je `btnReset` we wszystkich plikach. CLS znajdujących się w folderze "Moje projekty programu Visual Studio" i wyświetla informacje zastępcze w oknie **Znajdź wyniki 2** .
 
 ```
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2
 ```
 
 ## <a name="see-also"></a>Zobacz też
- [Znajdowanie i zastępowanie tekstu](../../ide/finding-and-replacing-text.md) [Zamień w plikach](../../ide/replace-in-files.md) [poleceń okno](../../ide/reference/command-window.md) [Znajdź/polecenie](../../ide/find-command-box.md) [programu Visual Studio polecenia](../../ide/reference/visual-studio-commands.md) [](../../ide/reference/visual-studio-command-aliases.md)
+ [Znajdowanie i zastępowanie tekstu](../../ide/finding-and-replacing-text.md) [Zamień w plikach](../../ide/replace-in-files.md) [poleceń okno](../../ide/reference/command-window.md) [Znajdź/polecenie](../../ide/find-command-box.md) [programu Visual Studio polecenia](../../ide/reference/visual-studio-commands.md) [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

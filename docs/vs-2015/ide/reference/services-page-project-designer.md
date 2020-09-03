@@ -15,23 +15,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 11e1cd997c76974e7b4b8771c0579c175469eca6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665485"
 ---
 # <a name="services-page-project-designer"></a>Strona usług, Projektant projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Usługi aplikacji klienta zapewniają uproszczony dostęp do [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] logowania, ról i usług profilów z aplikacji Windows Forms i Windows Presentation Foundation (WPF). Możesz użyć strony **usługi** **projektanta projektu** , aby włączyć i skonfigurować usługi aplikacji klienta dla projektu.
+Usługi aplikacji klienta zapewniają uproszczony dostęp do danych [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] logowania, ról i usług profilów z aplikacji Windows Forms i Windows Presentation Foundation (WPF). Możesz użyć strony **usługi** **projektanta projektu** , aby włączyć i skonfigurować usługi aplikacji klienta dla projektu.
 
  Za pomocą usług aplikacji klienckich można używać scentralizowanego serwera do uwierzytelniania użytkowników, określania przypisanej roli lub ról poszczególnych użytkowników oraz przechowywania ustawień aplikacji dla poszczególnych użytkowników, które można udostępniać w sieci. Aby uzyskać więcej informacji, zobacz [usługi aplikacji klienta](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e).
 
  Aby uzyskać dostęp do strony **usługi** , wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie kliknij pozycję **Właściwości** w menu **projekt** . Gdy zostanie wyświetlony **Projektant projektu** , kliknij kartę **usługi** .
 
 > [!NOTE]
-> Usługi aplikacji klienta wymagają pełnej wersji .NET Framework i nie są obsługiwane w profilu klienta .NET Framework. Jeśli pole wyboru **Włącz usługi aplikacji klienta** jest wyłączone, sprawdź, czy dla **platformy docelowej** jest ustawiona wartość .NET Framework 3,5 lub nowsza. Aby wyświetlić ustawienie **platformy docelowej** w programie C#, Otwórz projektanta projektu, a następnie kliknij stronę **aplikacji** . Aby wyświetlić ustawienie **platformy docelowej** w Visual Basic, Otwórz projektanta projektu, kliknij stronę **kompilacja** , a następnie kliknij pozycję **Zaawansowane opcje kompilacji**.
+> Usługi aplikacji klienta wymagają pełnej wersji .NET Framework i nie są obsługiwane w profilu klienta .NET Framework. Jeśli pole wyboru **Włącz usługi aplikacji klienta** jest wyłączone, sprawdź, czy dla **platformy docelowej** jest ustawiona wartość .NET Framework 3,5 lub nowsza. Aby wyświetlić ustawienie **platformy docelowej** w języku C#, Otwórz projektanta projektu, a następnie kliknij stronę **aplikacji** . Aby wyświetlić ustawienie **platformy docelowej** w Visual Basic, Otwórz projektanta projektu, kliknij stronę **kompilacja** , a następnie kliknij pozycję **Zaawansowane opcje kompilacji**.
 
 ## <a name="task-list"></a>Lista zadań
  [Instrukcje: konfigurowanie usług aplikacji klienckich](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)
@@ -49,7 +49,7 @@ Usługi aplikacji klienta zapewniają uproszczony dostęp do [!INCLUDE[ajax_curr
 
  **Lokalizacja usługi uwierzytelniania** Używany tylko z uwierzytelnianiem formularzy. Określa lokalizację usługi uwierzytelniania.
 
- **Opcjonalne: Dostawca poświadczeń** Używany tylko z uwierzytelnianiem formularzy. Wskazuje implementację <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider>, która będzie używana przez usługę uwierzytelniania do wyświetlania okna dialogowego logowania, gdy aplikacja wywołuje metodę `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> i przekazuje puste ciągi lub `null` parametrów. Jeśli to pole pozostanie puste, należy przekazać prawidłową nazwę użytkownika i hasło do metody <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. Należy określić dostawcę poświadczeń jako nazwę typu kwalifikowanego dla zestawu. Aby uzyskać więcej informacji, zobacz <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> i [nazwy zestawów](https://msdn.microsoft.com/library/8f8c2c90-f15d-400e-87e7-a757e4f04d0e). W najprostszej postaci nazwa typu kwalifikowana dla zestawu wygląda podobnie do poniższego przykładu: `MyNamespace.MyLoginClass, MyAssembly`
+ **Opcjonalne: Dostawca poświadczeń** Używany tylko z uwierzytelnianiem formularzy. Wskazuje <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementację, która będzie używana przez usługę uwierzytelniania do wyświetlania okna dialogowego logowania, gdy aplikacja wywołuje `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metodę i przekazuje puste ciągi lub `null` parametry. Jeśli to pole pozostanie puste, należy przekazać do metody prawidłową nazwę użytkownika i hasło <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> . Należy określić dostawcę poświadczeń jako nazwę typu kwalifikowanego dla zestawu. Aby uzyskać więcej informacji, zobacz <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> i [nazwy zestawów](https://msdn.microsoft.com/library/8f8c2c90-f15d-400e-87e7-a757e4f04d0e). W najprostszej postaci nazwa typu kwalifikowana dla zestawu wygląda podobnie do poniższego przykładu: `MyNamespace.MyLoginClass, MyAssembly`
 
  **Lokalizacja usługi ról** Określa lokalizację usługi ról.
 
@@ -58,4 +58,4 @@ Usługi aplikacji klienta zapewniają uproszczony dostęp do [!INCLUDE[ajax_curr
  **Zaawansowane** Otwiera okno [dialogowe Ustawienia zaawansowane dla usług](../../ide/reference/advanced-settings-for-services-dialog-box.md), za pomocą którego można przesłonić zachowanie domyślne. Na przykład można użyć tego okna dialogowego, aby określić bazę danych do przechowywania w trybie offline, zamiast korzystać z lokalnego systemu plików. Aby uzyskać więcej informacji, zobacz [okno dialogowe Ustawienia zaawansowane dla usług](../../ide/reference/advanced-settings-for-services-dialog-box.md).
 
 ## <a name="see-also"></a>Zobacz też
- [Usługi aplikacji klienta](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e) [Ustawienia zaawansowane dla usług — okno dialogowe](../../ide/reference/advanced-settings-for-services-dialog-box.md) [instrukcje: Konfigurowanie klienta usługi aplikacji](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8) [Strona kompilacja, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) [, Projektant projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md) [Wprowadzenie do projektanta projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)
+ [Usługi aplikacji klienta](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e) [Ustawienia zaawansowane dla usług — okno dialogowe](../../ide/reference/advanced-settings-for-services-dialog-box.md) [instrukcje: Konfigurowanie klienta usługi aplikacji](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8) [Strona kompilacja, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) [Strona kompilacji, Projektant projektu (C#) —](../../ide/reference/build-page-project-designer-csharp.md) [wprowadzenie do projektanta projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)

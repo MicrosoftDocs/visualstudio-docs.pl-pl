@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c362d3f5dda5015e91ac88dd8f0abd60a185ba72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665465"
 ---
 # <a name="set-current-process"></a>Ustaw bieżący proces
@@ -31,10 +31,10 @@ Debug.SetCurrentProcess index
 ```
 
 ## <a name="arguments"></a>Argumenty
- Wymagane `index`. Indeks procesu.
+ `index` Wymagane. Indeks procesu.
 
 ## <a name="remarks"></a>Uwagi
- Podczas debugowania można dołączyć do wielu procesów, ale tylko jeden proces jest aktywny w programie w danym momencie. Możesz użyć `SetCurrentProcess` polecenie, aby ustawić aktywny proces.
+ Podczas debugowania można dołączyć do wielu procesów, ale tylko jeden proces jest aktywny w programie w danym momencie. Możesz użyć polecenia, `SetCurrentProcess` Aby ustawić aktywny proces.
 
 ## <a name="example"></a>Przykład
 
