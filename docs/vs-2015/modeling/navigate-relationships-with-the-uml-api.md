@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8d54964cc74422d34ae6c6df489d02768e6d4bbd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918258"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Nawigowanie po relacjach za pomocą interfejsu API UML
@@ -26,7 +26,7 @@ Model składa się z elementów połączonych wspólnie z różnymi rodzajami re
 ## <a name="traversing-relationships"></a>Przechodzenie między relacjami
 
 ### <a name="any-relationship"></a>Dowolna relacja
- Użyj `GetRelatedElements<T>()`, aby znaleźć wszystkie elementy podłączone do określonego elementu. Ustaw `T` na `IRelationship`, aby przechodzą relacje wszystkich rodzajów, lub Użyj bardziej konkretnego typu, takiego jak `IAssociation`, aby przechodzący tylko ten typ.
+ Służy `GetRelatedElements<T>()` do znajdowania wszystkich elementów podłączonych do określonego elementu. Ustaw `T` , aby `IRelationship` przechodzą relacje wszystkich rodzajów, lub Użyj bardziej konkretnego typu, takiego jak `IAssociation` Przechodzenie po prostu tego typu.
 
 ```
 IElement anElement;
@@ -37,7 +37,7 @@ Context.CurrentDiagram.SelectShapes (
 
 ```
 
- Użyj `GetRelatedLinks<T>()`, aby znaleźć wszystkie relacje połączone z elementem.
+ Użyj `GetRelatedLinks<T>()` , aby znaleźć wszystkie relacje połączone z elementem.
 
 ```
 // Process all relationships connected to an element.
@@ -152,7 +152,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>Wyliczanie relacji
- Wszystkie właściwości modelu UML, które zwracają wiele wartości, są zgodne z interfejsem IEnumerable < >. Oznacza to, że można używać [wyrażeń zapytań LINQ](/dotnet/csharp/linq/index) oraz metod rozszerzających zdefiniowanych w przestrzeni nazw **System. LINQ** .
+ Wszystkie właściwości modelu UML, które zwracają wiele wartości, są zgodne z interfejsem IEnumerable<> . Oznacza to, że można używać [wyrażeń zapytań LINQ](/dotnet/csharp/linq/index) oraz metod rozszerzających zdefiniowanych w przestrzeni nazw **System. LINQ** .
 
  Na przykład:
 

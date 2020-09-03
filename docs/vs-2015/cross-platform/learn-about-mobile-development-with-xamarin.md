@@ -7,10 +7,10 @@ caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: a362bd4eef2a48667c67c03e940e213fc960418b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919005"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Informacje dotyczące programowania mobilnego za pomocą platformy Xamarin
@@ -28,7 +28,7 @@ W tym temacie przedstawiono informacje o materiałach, które ułatwiają zrozum
   
 1. [Mobile Apps w programie Visual Studio z](https://www.visualstudio.com/explore/xamarin-vs) platformą xamarin (VisualStudio.com) zapewnia bardzo krótkie uwalnianie podstawowych charakterystyk platformy Xamarin.  
   
-2. [Tworzenie Międzyplatformowych Mobile Apps za C# pomocą programu i programu Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (channel9, 15M16s) przy użyciu platformy Xamarin propagator, Kuba Montemagno. Pierwsze trzy minuty to omówienie platformy Xamarin, a następnie demonstracje kodu.  
+2. [Tworzenie Międzyplatformowych Mobile Apps przy użyciu języka C# i programu Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (channel9, 15m16s) przy użyciu platformy Xamarin propagator, Kuba Montemagno. Pierwsze trzy minuty to omówienie platformy Xamarin, a następnie demonstracje kodu.  
   
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Podstawowe informacje: przegląd środowiska Visual Studio i Xamarin  
  *5-15 minut*  
@@ -55,7 +55,7 @@ W tym temacie przedstawiono informacje o materiałach, które ułatwiają zrozum
   
  Za pomocą platformy Xamarin Native napiszesz osobny kod interfejsu użytkownika dla poszczególnych platform docelowych: iOS, Android i Windows.  Dzięki temu masz bezpośredni dostęp do interfejsów API specyficznych dla platformy, co pozwala na dostosowanie środowiska interfejsu użytkownika na platformę.  Ponadto masz pełny dostęp do macierzystego projektanta i formantów dla każdej platformy, aby pomóc w tworzeniu odpowiedniego interfejsu użytkownika.  
   
- Środowisko Xamarin. Forms zawiera uogólniony zestaw interfejsów API, które umożliwiają pisanie udostępnionej warstwy interfejsu użytkownika dla wszystkich platform w przenośnej bibliotece klas.  Program Xamarin. Forms renderuje natywne kontrolki na każdej platformie docelowej w celu zapewnienia natywnego wyglądu i działania.  Zamiast korzystać z projektanta przy użyciu programu Xamarin. Forms, można skompilować interfejs użytkownika za C# pomocą i XAML.  
+ Środowisko Xamarin. Forms zawiera uogólniony zestaw interfejsów API, które umożliwiają pisanie udostępnionej warstwy interfejsu użytkownika dla wszystkich platform w przenośnej bibliotece klas.  Program Xamarin. Forms renderuje natywne kontrolki na każdej platformie docelowej w celu zapewnienia natywnego wyglądu i działania.  Zamiast korzystać z projektanta, za pomocą interfejsu Xamarin. Forms tworzysz interfejs użytkownika przy użyciu języka C# i języka XAML.  
   
  Nie musisz podejmować decyzji o tym, które podejście należy podjąć; Aplikacje można zaimplementować przy użyciu kombinacji programów Xamarin Native i Xamarin. Forms:  
   
@@ -71,7 +71,7 @@ W tym temacie przedstawiono informacje o materiałach, które ułatwiają zrozum
   
 1. [Xamarin. Forms](/xamarin/xamarin-forms/) (Xamarin.com) zawiera krótkie omówienie oraz zalety i wady narzędzi Xamarin. Forms i natywnych warstw interfejsu użytkownika (czyli platformy Xamarin. iOS i Xamarin. Android).  
   
-2. Pierwsze trzy minuty Montemagno wideo [Xamarin. Forms: Native iOS, Android & Windows Apps with C# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (channel9, 13m3s) zawiera inne omówienie i można kontynuować przeglądanie w poszukiwaniu pokazów.  
+2. Pierwsze trzy minuty Montemagno wideo [Xamarin. Forms: Native iOS, Android & aplikacje systemu Windows przy użyciu języka C# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (channel9, 13m3s) udostępniają inne omówienie i można nadal oglądać pokazy.  
   
 3. Obowiązkowe [Wprowadzenie do platformy Xamarin. Forms](/xamarin/get-started/quickstarts/deepdive?pivots=windows) (Xamarin.com)  
   
@@ -94,7 +94,7 @@ W tym temacie przedstawiono informacje o materiałach, które ułatwiają zrozum
   
 3. **Emulator Windows Phone firmy Microsoft.** Aby dowiedzieć się więcej, Przeczytaj [Windows Phone Emulator dla Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
   
-## <a name="components"></a>Dokładniejsze szczegółowe: składniki platformy Xamarin  
+## <a name="deeper-dive-xamarin-components"></a><a name="components"></a> Dokładniejsze szczegółowe: składniki platformy Xamarin  
  *10 minut*  
   
- Wiele rozszerzonych funkcji jest dostępnych dla aplikacji platformy Xamarin za poorednictwem składników platformy Xamarin. Możesz znaleźć pełny wykaz dostępny do pobrania na [http://components.xamarin.com/](/xamarin/cross-platform/troubleshooting/component-nuget?tabs=windows), który obejmuje składniki dla dodatkowych formantów interfejsu użytkownika, uwierzytelniania, różnych usług w chmurze, takich jak Microsoft Azure i wiele innych.
+ Wiele rozszerzonych funkcji jest dostępnych dla aplikacji platformy Xamarin za poorednictwem składników platformy Xamarin. Można znaleźć pełny wykaz dostępny do pobrania [http://components.xamarin.com/](/xamarin/cross-platform/troubleshooting/component-nuget?tabs=windows) , który obejmuje składniki dla dodatkowych formantów interfejsu użytkownika, uwierzytelnianie, różne usługi w chmurze, takie jak Microsoft Azure i wiele innych.

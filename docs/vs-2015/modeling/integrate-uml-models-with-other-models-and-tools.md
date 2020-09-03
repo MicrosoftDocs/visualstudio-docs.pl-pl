@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 72ea0c562bb9c2a8050fc1365fac19df20232f80
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918356"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Integrowanie modeli UML z innymi modelami i narzędziami
@@ -36,7 +36,7 @@ W elemencie UML można przechowywać linki do innych elementów UML, plików lub
 
    Stereotyp i jego właściwości są widoczne dla użytkownika w okno Właściwości.
 
-   Aby wdrożyć to rozszerzenie, należy spakować definicję profilu i kod rozszerzenia w jednym rozszerzeniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+   Aby wdrożyć to rozszerzenie, należy spakować definicję profilu i kod rozszerzenia w jednym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzeniu.
 
    Aby uzyskać więcej informacji, zobacz [Definiowanie profilu do rozszerania UML](../modeling/define-a-profile-to-extend-uml.md).
 

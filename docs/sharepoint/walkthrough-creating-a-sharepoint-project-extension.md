@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5df10e2da9e6b4c31894dce0669e9aa0e580b92f
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015071"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Przewodnik: Tworzenie rozszerzenia projektu SharePoint
@@ -82,7 +83,7 @@ ms.locfileid: "86015071"
 
 4. W polu **Nazwa** wprowadź **elementu ProjectExtension**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **elementu ProjectExtension** do rozwiązania i otwiera domyślny plik kodu Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **elementu ProjectExtension** do rozwiązania i otwiera domyślny plik kodu Class1.
 
 5. Usuń plik kodu Class1 z projektu.
 
@@ -127,7 +128,7 @@ ms.locfileid: "86015071"
 
 1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla pliku source. Extension. vsixmanifest, a następnie wybierz przycisk **Otwórz** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]otwiera plik w Projektancie manifestów. Informacje wyświetlane na karcie **metadane** są również wyświetlane w obszarze **rozszerzenia i aktualizacje**. Wszystkie pakiety VSIX wymagają pliku Extension. vsixmanifest. Aby uzyskać więcej informacji na temat tego pliku, zobacz [Dokumentacja schematu rozszerzenia VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] otwiera plik w Projektancie manifestów. Informacje wyświetlane na karcie **metadane** są również wyświetlane w obszarze **rozszerzenia i aktualizacje**. Wszystkie pakiety VSIX wymagają pliku Extension. vsixmanifest. Aby uzyskać więcej informacji na temat tego pliku, zobacz [Dokumentacja schematu rozszerzenia VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
 
 2. W polu **Nazwa produktu** wprowadź **niestandardową właściwość projektu**.
 
@@ -171,7 +172,7 @@ ms.locfileid: "86015071"
 
 2. Rozpocznij kompilację debugowania projektu, wybierając klawisz **F5** lub na pasku menu, wybierając **Debuguj**  >  **Rozpocznij debugowanie**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]instaluje rozszerzenie%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Project Property\1.0 i uruchamia eksperymentalne wystąpienie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] instaluje rozszerzenie%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Project Property\1.0 i uruchamia eksperymentalne wystąpienie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 3. W eksperymentalnym wystąpieniu programu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Utwórz projekt SharePoint dla rozwiązania farmy i użyj wartości domyślnych dla innych wartości w kreatorze.
 
@@ -199,7 +200,7 @@ ms.locfileid: "86015071"
 
 7. Zamknij wystąpienie eksperymentalne [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zwiększ projekty programu SharePoint](../sharepoint/extending-sharepoint-projects.md)
 - [Instrukcje: Dodawanie właściwości do projektów programu SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
 - [Konwersja między typami systemu projektu SharePoint a innymi typami projektów programu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)

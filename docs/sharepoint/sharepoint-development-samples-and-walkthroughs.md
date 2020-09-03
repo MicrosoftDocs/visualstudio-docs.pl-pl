@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 39f4d52b8a94409abeffb7cc9ce2329e463cf8bd
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015808"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>Przykłady i przewodniki dotyczące projektowania programu SharePoint
@@ -31,5 +32,5 @@ ms.locfileid: "86015808"
 |[Przykłady projektowania programu SharePoint](../sharepoint/sharepoint-development-samples.md)|Opisuje przykładowe aplikacje, które pokazują, jak używać narzędzi deweloperskich programu SharePoint w programie Visual Studio.|
 |[Przewodniki dotyczące projektowania programu SharePoint](../sharepoint/sharepoint-development-walkthroughs.md)|Zawiera instrukcje krok po kroku, które zawierają wprowadzenie do narzędzi deweloperskich programu SharePoint w programie Visual Studio.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie rozwiązań SharePoint](../sharepoint/create-sharepoint-solutions.md)

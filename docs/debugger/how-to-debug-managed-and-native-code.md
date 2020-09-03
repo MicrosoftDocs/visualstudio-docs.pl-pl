@@ -16,10 +16,10 @@ ms.workload:
 - dotnet
 - cplusplus
 ms.openlocfilehash: 9f3fd94f8c294dce81bc69011e7d6f5fdd505325
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84182641"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Samouczek: debugowanie C# i C++ w tej samej sesji debugowania
@@ -131,7 +131,7 @@ Jeśli masz zainstalowany program Visual Studio, ale nie masz potrzebnych obcią
     Następnie wpisz nazwę, taką jak **Mixed_Mode_Calling_App** , i kliknij przycisk **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual C#** wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **Aplikacja konsolowa (.NET Framework)** lub **Aplikacja konsolowa (.NET Core)**.
+    Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual C#** wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **Aplikacja konsolowa (.NET Framework)** lub  **Aplikacja konsolowa (.NET Core)**.
 
     Następnie wpisz nazwę, taką jak **Mixed_Mode_Calling_App** , i kliknij przycisk **OK**.
     ::: moniker-end
@@ -171,7 +171,7 @@ Jeśli masz zainstalowany program Visual Studio, ale nie masz potrzebnych obcią
     }
     ```
 
-1. W nowym kodzie Zastąp ścieżkę pliku w `[DllImport]` ścieżce do pliku *Mixed_Mode_Debugging. dll* , który właśnie został utworzony. Zobacz komentarz do kodu, aby uzyskać wskazówki. Pamiętaj, aby zastąpić symbol zastępczy *nazwy użytkownika* .
+1. W nowym kodzie Zastąp ścieżkę pliku w `[DllImport]` ścieżce do pliku *Mixed_Mode_Debugging.dll* , który właśnie został utworzony. Zobacz komentarz do kodu, aby uzyskać wskazówki. Pamiętaj, aby zastąpić symbol zastępczy *nazwy użytkownika* .
 
 1. Wybierz pozycję **plik**  >  **Zapisz program.cs** lub naciśnij **klawisze CTRL** + **S** , aby zapisać plik.
 
@@ -187,14 +187,14 @@ Jeśli masz zainstalowany program Visual Studio, ale nie masz potrzebnych obcią
 
 ### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Aby skonfigurować debugowanie w trybie mieszanym dla aplikacji .NET Core
 
-W większości wersji programu Visual Studio, począwszy od programu Visual Studio 2017, należy użyć pliku *profilu launchsettings. JSON* zamiast właściwości projektu, aby włączyć debugowanie w trybie mieszanym dla kodu natywnego w aplikacji .NET Core. Aby śledzić aktualizacje interfejsu użytkownika dla tej funkcji, zobacz ten problem w usłudze [GitHub](https://github.com/dotnet/project-system/issues/1125).
+W większości wersji programu Visual Studio, począwszy od programu Visual Studio 2017, należy użyć *launchSettings.jsw* pliku zamiast właściwości projektu, aby włączyć debugowanie w trybie mieszanym dla kodu natywnego w aplikacji .NET Core. Aby śledzić aktualizacje interfejsu użytkownika dla tej funkcji, zobacz ten problem w usłudze [GitHub](https://github.com/dotnet/project-system/issues/1125).
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł **Właściwości**, a następnie otwórz plik *profilu launchsettings. JSON* .
+1. W **Eksplorator rozwiązań**rozwiń węzeł **Właściwości**, a następnie otwórz *launchSettings.jsna* pliku.
 
    >[!NOTE]
-   >Domyślnie *profilu launchsettings. JSON* znajduje się w *c:\users\username\source\repos\ Mixed_Mode_Calling_App \properties*. Jeśli *profilu launchsettings. JSON* nie istnieje, zaznacz projekt **Mixed_Mode_Calling_App** w **Eksplorator rozwiązań** a następnie wybierz ikonę **Właściwości** lub kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Właściwości**. Wprowadź tymczasową zmianę na karcie **debugowanie** i skompiluj projekt. Spowoduje to utworzenie pliku *profilu launchsettings. JSON* . Przywróć zmianę dokonaną na karcie **debugowanie** .
+   >Domyślnie *launchSettings.json* jest w *c:\users\username\source\repos\ Mixed_Mode_Calling_App \properties*. Jeśli *launchSettings.json* nie istnieje, wybierz projekt **Mixed_Mode_Calling_App** w **Eksplorator rozwiązań** a następnie wybierz ikonę **Właściwości** lub kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Właściwości**. Wprowadź tymczasową zmianę na karcie **debugowanie** i skompiluj projekt. Spowoduje to utworzenie *launchSettings.js* pliku. Przywróć zmianę dokonaną na karcie **debugowanie** .
 
-1. W pliku *profilu launchsettings. JSON* Dodaj następujący wiersz:
+1. W *launchsettings.jsna* pliku Dodaj następujący wiersz:
 
     ```csharp
     "nativeDebugging": true
