@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9a66ff327659ab44958c412f6f5b1f4a6390de39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205040"
 ---
-# <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
+# <a name="port_supplier_description_flags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Definiuje metadanych, które mogą być pobierane o dostawcy portu.  
+Definiuje metadane, które można pobrać dla dostawcy portów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,17 +39,17 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 };  
 ```  
   
-## <a name="terms"></a>Warunki  
+## <a name="terms"></a>Terminologia  
  PSDFLAG_SHOW_WARNING_ICON  
- Jeśli zaznaczone, pojawi się ikona ostrzeżenia w interfejsie użytkownika.  
+ W przypadku wybrania tej funkcji ikona ostrzeżenia będzie wyświetlana w interfejsie użytkownika.  
   
 ## <a name="remarks"></a>Uwagi  
- To wyliczenie jest zwracany przez [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) metody.  
+ To wyliczenie jest zwracane przez metodę [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetProgramId | Dokumenty firmy Microsoft
+title: 'IDebugProgram2:: GetProgramId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8bb172f48b63ef2ec182f1a83d599a91eff1e2ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722771"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
@@ -41,13 +41,13 @@ int GetProgramId( 
 
 ## <a name="parameters"></a>Parametry
 `pguidProgramId`\
-[na zewnątrz] Zwraca `GUID` dla tego programu.
+określoną Zwraca wartość `GUID` dla tego programu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Aparat debugowania (DE) musi zwracać identyfikator programu pierwotnie przekazany do [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) lub [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) metody. Umożliwia to identyfikację programu w składnikach debugera.
+ Aparat debugowania (DE) musi zwrócić identyfikator programu pierwotnie przesłany do metod [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) i [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) . Pozwala to na identyfikację programu we wszystkich składnikach debugera.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

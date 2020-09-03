@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7726379258ef474b57f1ca4a924413cd93cf80bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672791"
 ---
 # <a name="attach-reference-strings-to-uml-model-elements"></a>Dołączanie ciągów odwołania do elementów modelu UML
@@ -28,7 +28,7 @@ Można napisać kod, aby dołączyć dowolne ciągi do elementów modelu. Ciąg 
 ## <a name="attaching-a-reference-to-an-ielement"></a>Dołączanie odwołania do elementu IElement
  Aby skorzystać z następujących metod, należy dodać odwołanie do:
 
- Microsoft. VisualStudio. ArchitectureTools. rozszerzalność. dll
+ Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll
 
  Tę dyrektywę należy wstawić w kodzie:
 
@@ -36,10 +36,10 @@ Można napisać kod, aby dołączyć dowolne ciągi do elementów modelu. Ciąg 
 
 |Wywołanie metody|Opis|
 |-----------------|-----------------|
-|`element.AddReference (nameString, valueString, duplicatesAllowed)`|Tworzy `IReference` z podaną nazwą i ciągami wartości, a następnie łączy je z `element`. Zwraca `IReference`.<br /><br /> Zgłasza wyjątek, jeśli `duplicatesAllowed` ma wartość false i istnieje już `IReference` o tej samej nazwie dołączonej do `element`.|
-|`element.GetReferences(name)`|Zwraca wszystkie obiekty `IReference` połączone z `element`, które mają daną `name`.|
-|`element.DeleteAllReferences(name)`|Usuwa wszystkie obiekty `IReference` połączone z elementem, który ma daną nazwę.|
-|`reference.Delete()`|Usuwa ten `IReference`.|
+|`element.AddReference (nameString, valueString, duplicatesAllowed)`|Tworzy obiekt `IReference` z podaną nazwą i ciągami wartości, a następnie łączy go z `element` . Zwraca wartość `IReference` .<br /><br /> Zgłasza wyjątek, jeśli `duplicatesAllowed` ma wartość false i istnieje już `IReference` z tą samą nazwą, która jest dołączona do `element` .|
+|`element.GetReferences(name)`|Zwraca wszystkie `IReference` obiekty połączone z `element` , które mają daną wartość `name` .|
+|`element.DeleteAllReferences(name)`|Usuwa wszystkie `IReference` obiekty połączone z elementem o danej nazwie.|
+|`reference.Delete()`|Usuwa `IReference` .|
 |`ReferenceConstants.WorkItem`|Wartość służąca do nazwy odwołań do elementów roboczych.|
 
 ## <a name="see-also"></a>Zobacz też

@@ -24,16 +24,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b8f6ee192399c8af8a508b2f9c2817db954bb36
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673015"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Powiązywanie kontrolek z obrazami z bazy danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz użyć okna **źródła danych** , aby powiązać obraz w bazie danych z kontrolką w aplikacji. Na przykład można powiązać obraz z kontrolką <xref:System.Windows.Controls.Image> w aplikacji WPF lub z kontrolką <xref:System.Windows.Forms.PictureBox> w aplikacji Windows Forms.
+Możesz użyć okna **źródła danych** , aby powiązać obraz w bazie danych z kontrolką w aplikacji. Na przykład można powiązać obraz z <xref:System.Windows.Controls.Image> kontrolką w aplikacji WPF lub z <xref:System.Windows.Forms.PictureBox> kontrolką w aplikacji Windows Forms.
 
  Obrazy w bazie danych są zwykle przechowywane jako tablice bajtowe. Elementy w oknie **źródła danych** , które są przechowywane jako tablice bajtowe mają typ kontroli ustawiony domyślnie na **none** , ponieważ tablice bajtowe mogą zawierać wszystko z prostej tablicy bajtów do pliku wykonywalnego dużej aplikacji. Aby utworzyć kontrolkę powiązaną z danymi dla elementu tablicy bajtów w oknie **źródła danych** , które reprezentuje obraz, należy wybrać kontrolkę, która ma zostać utworzona.
 

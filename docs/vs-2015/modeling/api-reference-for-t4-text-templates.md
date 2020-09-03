@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd4f0ef9fe4e9b8f284dd082ebadf27910806beb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672853"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Wykaz interfejsów API dla szablonów tekstowych T4
@@ -21,10 +21,10 @@ ms.locfileid: "72672853"
 
 Interfejs API tworzenia szablonów tekstu umożliwia wywoływanie i dostosowanie transformacji [szablonów tekstowych](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="namespaces"></a>Namespaces
+## <a name="namespaces"></a>Przestrzenie nazw
 
-|Przestrzeń nazw|Cel|
+|Przestrzeń nazw|Przeznaczenie|
 |---------------|-------------|
 |<xref:Microsoft.VisualStudio.TextTemplating>|Zawiera klasy dla funkcji transformacji szablonu tekstu. Aparat transformacji szablonu tekstu jest zintegrowany z Visual Studio i przekształca pliki szablonów tekstowych w wygenerowane pliki wyjściowe tekstu.|
-|[Modelu](/previous-versions/ee844312(v=vs.140))|Zapewnia obiekty transformacji tekstu powiązane z modelami UML i językami specyficznymi dla domeny, takimi jak dostęp do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus.|
-|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|Zapewnia dostęp do usługi Text tworzenia szablonów w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Modelowanie](/previous-versions/ee844312(v=vs.140))|Zapewnia obiekty transformacji tekstu powiązane z modelami UML i językami specyficznymi dla domeny, takimi jak dostęp do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus.|
+|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|Zapewnia dostęp do usługi tekstu tworzenia szablonów w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|

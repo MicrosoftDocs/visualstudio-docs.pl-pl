@@ -22,35 +22,35 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0157b1ade2c38a2c10920b9674d7c9a58ac036b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156529"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Wystąpił błąd modelu DCOM podczas próby skontaktowania się z komputerem zdalnym. Odmowa dostępu.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zdalne debugowanie używa modelu DCOM do komunikacji między komputerami lokalnymi i zdalnymi w następujących sytuacjach:  
+Debugowanie zdalne używa modelu DCOM do komunikacji między komputerami lokalnymi i zdalnymi w następujących sytuacjach:  
   
-- Debuger jest ustawiona na **macierzysty tryb zgodności** lub **trybu zgodności zarządzanej** jest zaewidencjonowany **narzędzia / Opcje / Debugowanie** strony  
+- Debuger jest ustawiony na **natywny tryb zgodności** lub **zarządzany tryb zgodności** jest sprawdzany na stronie **Narzędzia/Opcje/debugowanie**  
   
-- Debugowania zarządzanego C++ (C++sposób niezamierzony) kod.  
+- Debugujesz zarządzany kod C++ (C++/CLI).  
   
-- W programie Visual Studio 2013 gdy **Włączanie natywnego Edytuj i Kontynuuj** jest zaewidencjonowany **narzędzia / Opcje / Debugowanie** strony  
+- W Visual Studio 2013, po **włączeniu opcji Edytuj natywny i Kontynuuj** jest zaznaczone na stronie **Narzędzia/Opcje/debugowanie**  
   
-- Niektóre innych firm debugowania scenariuszy  
+- Niektóre scenariusze debugowania innych firm  
   
-  Ten błąd występuje, gdy proces programu Visual Studio nie może uwierzytelniać (lub podane poświadczenia zostały uznane za niewystarczające) do procesu zdalnego debugera za pośrednictwem protokołów DCOM. Co najmniej jedno z następujących rozwiązań może rozwiązać ten problem:  
+  Ten błąd występuje, gdy proces programu Visual Studio nie może uwierzytelnić się samodzielnie (lub podane poświadczenia zostały uznane za niewystarczające) do procesu zdalnego debugera za pośrednictwem modelu DCOM. Co najmniej jedno z następujących obejść może rozwiązać ten problem:  
   
-- Wyłącz **natywny tryb zgodności** i **trybu zgodności zarządzanej**.  
+- Wyłącz  **tryb zgodności natywnej** i **tryb zgodności zarządzanej**.  
   
-- W programie Visual Studio 2013, wyłącz **Włączanie natywnego Edytuj i Kontynuuj**.  
+- W Visual Studio 2013 Wyłącz opcję **Włącz natywną edycję i Kontynuuj**.  
   
-- Ponowne uruchomienie obu komputerów.  
+- Uruchom ponownie oba komputery.  
   
-- Jeśli zdalne debugowanie wymaga wprowadzania poświadczeń, zaznacz opcję zapisania poświadczeń.  
+- Jeśli debugowanie zdalne wymaga wprowadzenia poświadczeń, zaznacz opcję zapisania poświadczeń.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Błędy debugowania zdalnego i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Debugowanie zdalne](../debugger/remote-debugging.md)

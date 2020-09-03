@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO_FLAGS | Dokumenty firmy Microsoft
+title: FRAMEINFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3510726400623c5ddf3e7a4d58a4903763b91245
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736798"
 ---
 # <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
-Określa informacje o obiekcie ramki stosu.
+Określa informacje do pobrania na temat obiektu ramki stosu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -102,43 +102,43 @@ public enum enum_FRAMEINFO_FLAGS {
 
 ## <a name="fields"></a>Pola
 `FIF_FUNCNAME`\
-Inicjowanie/używanie tego `m_bstrFuncName` pola.
+Zainicjuj/Użyj `m_bstrFuncName` pola.
 
 `FIF_RETURNTYPE`\
-Inicjowanie/używanie tego `m_bstrReturnType` pola.
+Zainicjuj/Użyj `m_bstrReturnType` pola.
 
 `FIF_ARGS`\
-Inicjowanie/używanie tego `m_bstrArgs` pola.
+Zainicjuj/Użyj `m_bstrArgs` pola.
 
 `FIF_LANGUAGE`\
-Inicjowanie/używanie tego `m_bstrLanguage` pola.
+Zainicjuj/Użyj `m_bstrLanguage` pola.
 
 `FIF_MODULE`\
-Inicjowanie/używanie tego `m_bstrModule` pola.
+Zainicjuj/Użyj `m_bstrModule` pola.
 
 `FIF_STACKRANGE`\
-Inicjuj/użyj pól `m_addrMin` (zakres `m_addrMax` stosu).
+Zainicjuj/Użyj `m_addrMin` `m_addrMax` pól i (zakres stosu).
 
 `FIF_FRAME`\
-Inicjowanie/używanie tego `m_pFrame` pola.
+Zainicjuj/Użyj `m_pFrame` pola.
 
 `FIF_DEBUGINFO`\
-Inicjowanie/używanie tego `m_fHasDebugInfo` pola.
+Zainicjuj/Użyj `m_fHasDebugInfo` pola.
 
 `FIF_STALECODE`\
-Inicjowanie/używanie tego `m_fStaleCode` pola.
+Zainicjuj/Użyj `m_fStaleCode` pola.
 
 `FIF_ANNOTATEDFRAME`\
-Inicjowanie/używanie tego `m_fAnnotatedFrame` pola.
+Zainicjuj/Użyj `m_fAnnotatedFrame` pola.
 
 `FIF_DEBUG_MODULEP`\
-Inicjowanie/używanie tego `m_pModule` pola.
+Zainicjuj/Użyj `m_pModule` pola.
 
 `FIF_FUNCNAME_FORMAT`\
-Formatuje nazwę funkcji. Wynik jest zwracany `m_bstrFunName` w polu i żadne inne pola nie są wypełniane.
+Formatuje nazwę funkcji. Wynik jest zwracany w `m_bstrFunName` polu i żadne inne pola nie są wypełnione.
 
 `FIF_FUNCNAME_RETURNTYPE`\
-Dodaje typ zwracany `m_bstrFuncName` do pola.
+Dodaje zwracany typ do `m_bstrFuncName` pola.
 
 `FIF_FUNCNAME_ARGS`\
 Dodaje argumenty do `m_bstrFuncName` pola.
@@ -147,25 +147,25 @@ Dodaje argumenty do `m_bstrFuncName` pola.
 Dodaje język do `m_bstrFuncName` pola.
 
 `FIF_FUNCNAME_MODULE`\
-Dodaje nazwę modułu `m_bstrFuncName` do tego pola.
+Dodaje nazwę modułu do `m_bstrFuncName` pola.
 
 `FIF_FUNCNAME_LINES`\
-Dodaje liczbę wierszy `m_bstrFuncName` do pola.
+Dodaje liczbę wierszy do `m_bstrFuncName` pola.
 
 `FIF_FUNCNAME_OFFSET`\
-Dodaje do `m_bstrFuncName` pola przesunięcie w bajtach od `FIF_FUNCNAME_LINES` początku wiersza, jeśli jest określony. Jeśli `FIF_FUNCNAME_LINES` nie jest określony lub jeśli numery wierszy nie są dostępne, dodaje przesunięcie w bajtach od początku funkcji.
+Dodaje do `m_bstrFuncName` pola przesunięcie w bajtach od początku wiersza, jeśli `FIF_FUNCNAME_LINES` jest określony. Jeśli `FIF_FUNCNAME_LINES` nie jest określony lub numery wierszy nie są dostępne, program dodaje przesunięcie w bajtach od początku funkcji.
 
 `FIF_FUNCNAME_ARGS_TYPES`\
-Dodaje typ każdego argumentu `m_bstrFuncName` funkcji do pola.
+Dodaje typ każdego argumentu funkcji do `m_bstrFuncName` pola.
 
 `FIF_FUNCNAME_ARGS_NAMES`\
-Dodaje nazwę każdego argumentu `m_bstrFuncName` funkcji do pola.
+Dodaje nazwę każdego argumentu funkcji do `m_bstrFuncName` pola.
 
 `FIF_FUNCNAME_ARGS_VALUES`\
-Dodaje wartość każdego argumentu `m_bstrFuncName` funkcji do pola.
+Dodaje wartość każdego argumentu funkcji do `m_bstrFuncName` pola.
 
 `FIF_FUNCNAME_ARGS_ALL`\
-Dodaje do `m_bstrFuncName` pola typ, nazwę i wartość wszystkich argumentów.
+Dodaje typ, nazwę i wartość wszystkich argumentów do `m_bstrFuncName` pola.
 
 `FIF_ARGS_TYPES`\
 Typy argumentów są pobierane i formatowane.
@@ -177,32 +177,32 @@ Nazwy argumentów są pobierane i formatowane.
 Wartości argumentów są pobierane i formatowane.
 
 `FIF_ARGS_ALL`\
-Pobieranie i formatowanie typu, nazwy i wartości wszystkich argumentów.
+Pobierz i sformatuj typ, nazwę i wartość wszystkich argumentów.
 
 `FIF_ARGS_NOFORMAT`\
-Określa, że argumenty nie są formatowane (na przykład nie należy dodawać nawiasów otwierania i zamykania wokół listy argumentów ani nie dodawać separatora między argumentami).
+Określa, że argumenty nie są formatowane (na przykład nie należy dodawać nawiasów otwierających i zamykających wokół listy argumentów ani dodawać separatora między argumentami).
 
 `FIF_ARGS_NO_FUNC_EVAL`\
-Określa, że ocena funkcji (właściwości) nie powinna być używana podczas pobierania wartości argumentów.
+Określa, że podczas pobierania wartości argumentów nie należy używać oceny funkcji (właściwości).
 
 `FIF_FILTER_NON_USER_CODE`\
-Aparat debugowania jest filtrowanie ramek kodu innych niż użytkownik, więc nie są one uwzględniane.
+Aparat debugowania przefiltruje ramki kodu niebędące użytkownikami, więc nie są one uwzględniane.
 
 `FIF_ARGS_NO_TOSTRING`\
-Nie zezwalaj na `ToString()` ocenę funkcji lub formatowanie podczas zwracania argumentów funkcji.
+Nie Zezwalaj na `ToString()` Obliczanie ani formatowanie funkcji podczas zwracania argumentów funkcji.
 
 `FIF_DESIGN_TIME_EXPR_EVAL`\
-Informacje o ramce powinny być ujmowane z hostowanego domeny aplikacji, a nie z procesu hostingu.
+Informacje o ramce powinny być uzyskane z hostowanej domeny aplikacji, a nie procesu hostingu.
 
 ## <a name="remarks"></a>Uwagi
-Flagi te są przekazywane do [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) i [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) metody, aby wskazać, które pola mają być inicjowane w [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury lub struktur.
+Te flagi są przekazywane do metod [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) i [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) , aby wskazać, które pola mają być inicjowane w strukturze lub strukturach [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) .
 
-Flagi te są również używane do wskazania, które pola [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury są używane i prawidłowe, gdy struktura jest zwracana. Wartości te mogą być łączone z bitowym `OR`.
+Te flagi są również używane do wskazywania, które pola struktury [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) są używane i są ważne podczas zwracania struktury. Te wartości mogą być połączone z bitową `OR` .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

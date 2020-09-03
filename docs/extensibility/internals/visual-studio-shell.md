@@ -1,5 +1,5 @@
 ---
-title: Powłoka programu Visual Studio | Dokumenty firmy Microsoft
+title: Powłoka programu Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,63 +12,63 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fb89fc3b82dc7f142714608d8a669e368216c729
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704004"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
-Powłoka [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest głównym czynnikiem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]integracji w . Powłoka zapewnia niezbędne funkcje, aby włączyć VSPackages do udostępniania wspólnych usług. Ponieważ celem architektury [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest vest podstawowej funkcjonalności w VSPackages, powłoki jest strukturą, aby zapewnić podstawowe funkcje i obsługi komunikacji krzyżowej między jego składnik VSPackages.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Powłoka jest głównym agentem integracji w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Powłoka zawiera niezbędne funkcje umożliwiające pakietów VSPackage udostępniania wspólnych usług. Ponieważ celem architektury [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest przyjęcie podstawowych funkcji w pakietów VSPackage, powłoka jest strukturą, która zapewnia podstawowe funkcje i obsługuje komunikację między składnikami pakietów VSPackage.
 
 ## <a name="shell-responsibilities"></a>Obowiązki powłoki
  Powłoka ma następujące kluczowe obowiązki:
 
-- Obsługa (za pośrednictwem interfejsów COM) podstawowych elementów interfejsu użytkownika (UI). Należą do nich domyślne menu i paski narzędzi, ramki okien dokumentów lub okna podrzędne interfejsu wielu dokumentów (MDI) oraz ramki okien narzędzi i obsługa dokowania.
+- Obsługa (za pomocą interfejsów COM) podstawowe elementy interfejsu użytkownika (UI). Należą do nich domyślne menu i paski narzędzi, ramki okna dokumentu lub okna podrzędne interfejsu Wielodokumentowego (MDI) oraz ramki okna narzędzi i obsługa dokowania.
 
-- Obsługa listy wszystkich aktualnie otwartych dokumentów w uruchomionej tabeli dokumentów (RDT) w celu skoordynowania trwałości dokumentów i zagwarantowania, że jeden dokument nie może być otwarty w więcej niż jeden sposób lub w sposób niezgodny.
+- Utrzymywanie uruchomionej listy wszystkich aktualnie otwartych dokumentów w uruchomionej tabeli dokumentu (RDT) w celu koordynowania trwałości dokumentów i zagwarantowania, że nie można otworzyć jednego dokumentu w więcej niż jeden sposób lub na niezgodnych sposobach.
 
-- Obsługa interfejsu routingu i obsługi poleceń, `IOleCommandTarget`.
+- Obsługa routingu poleceń i interfejsu obsługi poleceń `IOleCommandTarget` .
 
-- Ładowanie vspackages w odpowiednim czasie. Opóźnienie ładowania VSPackage jest konieczne do poprawy wydajności powłoki.
+- Ładowanie pakietów VSPackage w odpowiednim czasie. Ładowanie opóźnień pakietu VSPackage jest niezbędne w celu poprawienia wydajności powłoki.
 
-- Zarządzanie niektórymi usługami <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>udostępnionymi, takimi jak <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, który zapewnia podstawowe funkcje powłoki, i , który zapewnia podstawowe funkcje okien.
+- Zarządzanie określonymi usługami udostępnionymi, takimi jak <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell> , zapewniającymi podstawowe funkcje powłoki, i <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> , które dostarczają podstawowe funkcje okna.
 
-- Zarządzanie plikami rozwiązania (.sln). Rozwiązania zawierają grupy powiązanych projektów, podobne do plików obszaru roboczego (dsw) w programie Visual C++ 6.0.
+- Zarządzanie plikami rozwiązania (. sln). Rozwiązania zawierają grupy powiązanych projektów, podobnie jak pliki obszaru roboczego (DSW) w Visual C++ 6,0.
 
-- Śledzenie selekcji, kontekstu i waluty w całej skorupie. Powłoka śledzi następujące typy elementów:
+- Śledzenie wyboru, kontekstu i waluty całej powłoki. Powłoka śledzi następujące typy elementów:
 
   - Bieżący projekt
 
-  - Bieżący element projektu lub ItemID bieżący<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
+  - Bieżący element projektu lub identyfikator elementu bieżącego <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 
-  - Bieżący wybór okna **Właściwości** lub`SelectionContainer`
+  - Bieżący wybór okna **Właściwości** lub `SelectionContainer`
 
-  - Identyfikatory kontekstu interfejsu użytkownika lub cmdUIguids, które kontrolują widoczność poleceń, menu i pasków narzędzi
+  - Identyfikatory kontekstu interfejsu użytkownika lub CmdUIGuids kontrolujące widoczność poleceń, menu i pasków narzędzi
 
-  - Aktualnie aktywne elementy, takie jak aktywne okno, dokument i menedżer cofania
+  - Aktualnie aktywne elementy, takie jak aktywne okno, dokument i Menedżer cofania
 
-  - Atrybuty Kontekstu użytkownika, które napędzają Pomoc dynamiczną
+  - Atrybuty kontekstu użytkownika, które zapewniają dynamiczną pomoc
 
-  Powłoka pośredniczy również komunikacji między zainstalowanymi pakietami VSPackage i bieżącymi usługami. Obsługuje podstawowe cechy powłoki i udostępnia je wszystkim vspackages zintegrowany w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Te podstawowe funkcje obejmują następujące elementy:
+  Powłoka również koryguje komunikację między zainstalowanymi pakietów VSPackage i bieżącymi usługami. Obsługuje ona podstawowe funkcje powłoki i udostępnia je wszystkim pakietów VSPackage zintegrowanym w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Podstawowe funkcje obejmują następujące elementy:
 
-- **Informacje o** oknie dialogowym i ekranie powitakiem
+- **Informacje o** oknie dialogowym i ekranie powitalnym
 
-- Okna dialogowe **Dodawanie nowego i dodawanie istniejącego elementu**
+- Okna dialogowe **Dodawanie nowego i Dodawanie istniejącego elementu**
 
-- Okno **Widok klasy** i **przeglądarka obiektów**
+- **Widok klasy** okno i **Przeglądarka obiektów**
 
-- **Okno** dialogowe Odwołania
+- **Odwołania** — okno dialogowe
 
-- Okno **Konspekt dokumentu**
+- Okno **konspektu dokumentu**
 
-- Okno **Pomoc dynamiczna**
+- **Dynamiczne okno pomocy**
 
-- **Znajdowanie** i **zamienianie**
+- **Znajdź** i **Zamień**
 
-- **Otwieranie** okien dialogowych Projekt i **Otwórz plik** w menu **Nowy**
+- Okna dialogowe **Otwieranie projektu** i **otwieranie plików** w menu **Nowy**
 
-- **Okno** dialogowe Opcje w menu **Narzędzia**
+- **Opcje** — okno dialogowe w menu **Narzędzia**
 
 - Okno **Właściwości**
 

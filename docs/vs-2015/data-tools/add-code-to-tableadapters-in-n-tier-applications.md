@@ -18,23 +18,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 942850e776cdd493afaad56b782b417db2040625
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673100"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Dodawanie kodu do adapterów TableAdapter w aplikacjach n-warstwowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można zwiększyć funkcjonalność `TableAdapter`, tworząc plik klasy częściowej dla `TableAdapter` i dodając do niego kod (zamiast dodawać kod do *zestawu danychname*. Plik DataSet. Designer). Klasy częściowe umożliwiają dzielenie kodu dla określonej klasy, aby można je było podzielić między wiele plików fizycznych. Aby uzyskać więcej informacji, zobacz [częściowe](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) lub [częściowe (Type)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).
+Można zwiększyć funkcjonalność a `TableAdapter` przez utworzenie pliku klasy częściowej dla `TableAdapter` i dodanie do niego kodu (zamiast dodawania kodu do *elementu DataSetName*. Plik DataSet. Designer). Klasy częściowe umożliwiają dzielenie kodu dla określonej klasy, aby można je było podzielić między wiele plików fizycznych. Aby uzyskać więcej informacji, zobacz [częściowe](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) lub [częściowe (Type)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).
 
- Kod definiujący `TableAdapter` jest generowany za każdym razem, gdy wprowadzane są zmiany w `TableAdapter`. Ten kod jest również generowany, gdy wprowadzane są zmiany w trakcie działania kreatora, który modyfikuje konfigurację `TableAdapter`. Aby zapobiec usunięciu kodu podczas ponownej generacji `TableAdapter`, Dodaj kod do pliku klasy częściowej `TableAdapter`.
+ Kod definiujący `TableAdapter` jest generowany po każdym wprowadzeniu zmian czasu do `TableAdapter` . Ten kod jest również generowany, gdy zmiany są wprowadzane w trakcie działania kreatora, który modyfikuje konfigurację `TableAdapter` . Aby zapobiec usunięciu kodu podczas jego regeneracji `TableAdapter` , Dodaj kod do pliku klasy częściowej `TableAdapter` .
 
- Domyślnie po rozdzieleniu zestawu danych i kodu `TableAdapter` wynik jest dyskretnym plikiem klasy w każdym projekcie. Oryginalny projekt ma plik o nazwie *DataSetName*. Designer. vb (lub *DataSetName*. Designer.cs), który zawiera kod `TableAdapter`. Projekt, który jest wskazany we właściwości **projektu DataSet** , ma plik o nazwie *DataSetName*. DataSet. Designer. vb (lub *DataSetName*. DataSet.Designer.cs), który zawiera kod zestawu danych.
+ Domyślnie po oddzieleniu zestawu danych i `TableAdapter` kodu wynik jest dyskretnym plikiem klasy w każdym projekcie. Oryginalny projekt ma plik o nazwie *DataSetName*. Designer. vb (lub *DataSetName*. Designer.cs), który zawiera `TableAdapter` kod. Projekt, który jest wskazany we właściwości **projektu DataSet** , ma plik o nazwie *DataSetName*. DataSet. Designer. vb (lub *DataSetName*. DataSet.Designer.cs), który zawiera kod zestawu danych.
 
 > [!NOTE]
-> W przypadku rozdzielania zestawów danych i `TableAdapter`s (przez ustawienie właściwości **projektu DataSet** ) istniejące częściowe klasy zestawu danych w projekcie nie będą automatycznie przenoszone. Istniejące klasy częściowe zestawu danych muszą być przenoszone ręcznie do projektu DataSet.
+> W przypadku rozdzielania zestawów danych i `TableAdapter` s (przez ustawienie właściwości **projektu DataSet** ) istniejące częściowe klasy zestawu danych w projekcie nie będą automatycznie przenoszone. Istniejące klasy częściowe zestawu danych muszą być przenoszone ręcznie do projektu DataSet.
 
 > [!NOTE]
 > Projektant obiektów DataSet udostępnia funkcje generowania <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.RowChanging> obsługi zdarzeń, gdy jest wymagana Walidacja. Aby uzyskać więcej informacji, zobacz [Dodawanie walidacji do wielowarstwowego zestawu danych](../data-tools/add-validation-to-an-n-tier-dataset.md).
@@ -47,13 +47,13 @@ Można zwiększyć funkcjonalność `TableAdapter`, tworząc plik klasy części
 
 2. Kliknij dwukrotnie plik **XSD** , aby otworzyć zestaw danych.
 
-3. Kliknij prawym przyciskiem myszy `TableAdapter`, do której chcesz dodać kod, a następnie wybierz polecenie**Wyświetl kod**.
+3. Kliknij prawym przyciskiem myszy, `TableAdapter` do której chcesz dodać kod, a następnie wybierz polecenie**Wyświetl kod**.
 
      Klasa częściowa jest tworzona i otwiera się w edytorze kodu.
 
 4. Dodaj kod wewnątrz deklaracji klasy częściowej.
 
-5. Poniższy przykład pokazuje, gdzie dodać kod do `CustomersTableAdapter` w `NorthwindDataSet`:
+5. Poniższy przykład pokazuje, gdzie dodać kod do `CustomersTableAdapter` `NorthwindDataSet` :
 
     ```vb
     Partial Public Class CustomersTableAdapter

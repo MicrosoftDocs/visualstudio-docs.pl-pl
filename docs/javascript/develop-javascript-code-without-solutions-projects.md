@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 187ca5ea0d0232e0ca8b99165e77ee265b81e801
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285091"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Programowanie kodu JavaScript i TypeScript w programie Visual Studio bez rozwiązań i projektów
@@ -57,7 +57,7 @@ Jeśli w folderze nie ma *tsconfig.js* , możesz kliknąć prawym przyciskiem my
 Jeśli istnieje *tsconfig.js* w pliku znajdującym się w folderze, możesz kliknąć prawym przyciskiem myszy plik TypeScript, aby wyświetlić polecenie menu, aby debugować ten plik TypeScript. Ta opcja jest dostępna tylko wtedy, gdy nie `outFile` określono w *tsconfig.js*. Jeśli `outFile` jest określony, można debugować ten plik przez kliknięcie prawym przyciskiem myszy *tsconfig.jsna* i wybranie odpowiedniej opcji. `tsconfig.json`Plik udostępnia również opcję kompilacji umożliwiającą określenie opcji kompilatora.
 
 > [!NOTE]
-> Więcej informacji na temat *tsconfig.js* można znaleźć na [stronietsconfig.jsna podręczniku TypeScript](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+> Więcej informacji na temat *tsconfig.js* można znaleźć na [ stronietsconfig.jsna podręczniku TypeScript](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
 ## <a name="unit-tests"></a>Testy jednostkowe
 Możesz włączyć integrację testu jednostkowego w programie Visual Studio, określając główny test w *package.jsna*:

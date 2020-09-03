@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2cdd069e8b17bcc26e067e0927ceef8cd9b1125a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658009"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Klawisze modyfikujące obszar kompozycji w programie Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Niektóre skróty klawiaturowe nie mają skojarzonych elementów menu, co oznacza, że nie można użyć interfejsu użytkownika [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] do ich odnalezienia. W poniższej tabeli wymieniono skróty, które modyfikują akcję, na przykład zmianę rozmiarów obiektu.
+Niektóre skróty klawiaturowe nie mają skojarzonych elementów menu, co oznacza, że nie można użyć [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] interfejsu użytkownika do ich odnalezienia. W poniższej tabeli wymieniono skróty, które modyfikują akcję, na przykład zmianę rozmiarów obiektu.
 
-|Aby wykonać tę akcję|Zrób to|
+|Akcja do wykonania|Zrób to|
 |-----------------------|-------------|
 |Tymczasowo wybierz narzędzie **Zaznaczanie** , gdy zostanie wybrane inne narzędzie (zmniejsza to liczbę razy, w których trzeba kliknąć coś w panelu **Narzędzia** , przechodząc między narzędziem **zaznaczania** a innymi).|Przytrzymaj klawisz CTRL|
 |Posuń zaznaczone obiekty, gdy wybrane jest narzędzie **Zaznaczanie**|Naciśnij klawisze strzałek|

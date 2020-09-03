@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FIELDS | Dokumentacja firmy Microsoft
+title: PROCESS_INFO_FIELDS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7700670774dcb38b054cf28275f64c0c3046f741
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205027"
 ---
-# <a name="processinfofields"></a>PROCESS_INFO_FIELDS
+# <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określić, jakiego rodzaju informacje należy pobrać dla procesu.  
+Określony rodzaj informacji do pobrania dla procesu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -57,43 +57,43 @@ public enum enum_PROCESS_INFO_FIELDS { 
   
 ## <a name="members"></a>Elementy członkowskie  
  PIF_FILE_NAME  
- Inicjowanie bądź użyj `bstrFileName` pole [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struktury.  
+ Zainicjuj/Użyj `bstrFileName` pola struktury [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) .  
   
  PIF_BASE_NAME  
- Inicjowanie bądź użyj `bstrBaseName` pole `PROCESS_INFO` struktury.  
+ Zainicjuj/Użyj `bstrBaseName` pola `PROCESS_INFO` struktury.  
   
  PIF_TITLE  
- Inicjowanie bądź użyj `bstrTitle` pole `PROCESS_INFO` struktury.  
+ Zainicjuj/Użyj `bstrTitle` pola `PROCESS_INFO` struktury.  
   
  PIF_PROCESS_ID  
- Inicjowanie bądź użyj `ProcessId` pole `PROCESS_INFO` struktury.  
+ Zainicjuj/Użyj `ProcessId` pola `PROCESS_INFO` struktury.  
   
  PIF_SESSION_ID  
- Inicjowanie bądź użyj `dwSessionId` pole `PROCESS_INFO` struktury.  
+ Zainicjuj/Użyj `dwSessionId` pola `PROCESS_INFO` struktury.  
   
  PIF_ATTACHED_SESSION_NAME  
- Inicjowanie bądź użyj `bstrAttachedSessionName` pole `PROCESS_INFO` struktury.  
+ Zainicjuj/Użyj `bstrAttachedSessionName` pola `PROCESS_INFO` struktury.  
   
  PIF_CREATION_TIME  
- Inicjowanie bądź użyj `CreationTime` pole `PROCESS_INFO` struktury.  
+ Zainicjuj/Użyj `CreationTime` pola `PROCESS_INFO` struktury.  
   
  PIF_FLAGS  
- Inicjowanie bądź użyj `Flags` pole `PROCESS_INFO` struktury.  
+ Zainicjuj/Użyj `Flags` pola `PROCESS_INFO` struktury.  
   
  PIF_ALL  
  Wypełnia wszystkie pola.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany do [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) metodę, aby wskazać, które pola [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struktury, które mają zostać zainicjowane.  
+ Przeszedł do metody [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) , aby wskazać, które pola struktury [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) mają być inicjowane.  
   
- Używany również w `Fields` pole `PROCESS_INFO` struktury, aby wskazać, które pola są używane i prawidłowy.  
+ Używane również w `Fields` polu `PROCESS_INFO` struktury do wskazywania, które pola są używane i są prawidłowe.  
   
- Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.  
+ Flagi te mogą być połączone z bitową `OR` .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -22,21 +22,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590530"
 ---
 # <a name="create-models-for-your-app"></a>Tworzenie modeli aplikacji
 
-Diagramy modelowania pomagają zrozumieć, objaśnić i przedstawić istotę Twojego kodu oraz wymagania użytkowników, jakie musi spełniać Twój system oprogramowania.
+Diagramy modelowania ułatwiają zrozumienie, wyjaśnienie i komunikowanie pomysłów dotyczących kodu oraz wymagań użytkownika, które musi obsługiwać system oprogramowania.
 
 Aby sprawdzić, które wersje programu Visual Studio obsługują poszczególne typy diagramów, zobacz temat [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 Aby wizualizować architekturę systemu lub istniejącego kodu, Utwórz następujące diagramy:
 
-|**Diagram**|**Pokazując**|
+|**4b**|**Seriale**|
 |-|-|
 |[Diagramy zależności: Wskazówki](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)|Architektura wysokiego poziomu systemu|
 |Mapy kodu<br /><br /> [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)|Zależności i inne relacje w istniejącym kodzie|
@@ -44,7 +44,7 @@ Aby wizualizować architekturę systemu lub istniejącego kodu, Utwórz następu
 
 ## <a name="related-tasks"></a>Powiązane zadania
 
-|**Temat**|**Zadanie**|
+|**Rozdziału**|**Zadanie**|
 |-|-|
 |[Tworzenie wizualizacji kodu](../modeling/visualize-code.md)|Twórz mapy kodu i diagramy zależności, aby lepiej zrozumieć nieznany kod.|
 |[Wymagania modelu użytkownika](../modeling/model-user-requirements.md)|Używaj modeli, aby wyjaśnić potrzeby użytkowników.|
@@ -53,7 +53,7 @@ Aby wizualizować architekturę systemu lub istniejącego kodu, Utwórz następu
 |[Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)<br /><br /> [Używanie modeli w programowaniu Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Używaj modeli, aby pomóc w zrozumieniu i zmianie systemu podczas jego tworzenia.|
 |[Tworzenie struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)|Organizuj modele w dużym lub średnim projekcie.|
 
-## <a name="resources"></a>Resources
+## <a name="resources"></a>Zasoby
 
 - [Wizualizacja programu Visual Studio & forum narzędzi do modelowania](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)
 - [Forum rozszerzalności programu Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

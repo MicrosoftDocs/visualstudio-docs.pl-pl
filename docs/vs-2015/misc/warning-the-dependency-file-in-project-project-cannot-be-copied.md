@@ -1,5 +1,5 @@
 ---
-title: '&#39;Ostrzeżenie: plik&#39; zależności w &#39;projekcie&#39; projektu nie może zostać skopiowany do katalogu uruchomieniowego, ponieważ spowodowałoby to zastąpienie pliku &#39;referencyjnego. &#39; | Microsoft Docs'
+title: 'Ostrzeżenie: nie można skopiować zależności &#39;pliku&#39; w projekcie &#39;Project&#39; do katalogu uruchomieniowego, ponieważ spowodowałoby to zastąpienie pliku &#39;odwołania. &#39; | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,20 +12,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a619168bd07fde5d27e5c3d87dc46f505cf5268d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672818"
 ---
-# <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>&#39;Ostrzeżenie: plik&#39; zależności w &#39;projekcie&#39; projektu nie może zostać skopiowany do katalogu uruchomieniowego, ponieważ spowodowałoby to zastąpienie pliku &#39;referencyjnego.&#39;
+# <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Ostrzeżenie: nie można skopiować zależności &#39;pliku&#39; w projekcie &#39;Project&#39; do katalogu uruchomieniowego, ponieważ spowodowałoby to zastąpienie pliku &#39;odwołania. &#39;
 Występuje konflikt między zależnościami. więcej niż jeden plik zestawu DISTINCT o tej samej nazwie powinien zostać skopiowany do katalogu bin, aby można było uruchomić aplikację. Katalog uruchamiania może rozwiązać konflikt, ponieważ jedna z zależności jest odwołaniem podstawowym.
 
  Dwukrotne kliknięcie tego elementu Lista zadań spowoduje przejście do podstawowego węzła odwołania powodującego konflikt.
 
  To ostrzeżenie występuje w przypadku konfliktu zależności, ale pracowało nad nim przez dodanie jednej z zależności powodujących konflikt jako odwołania. Może istnieć odwołanie do wersji 1, a następnie dodano drugie odwołanie, które sama odwołuje się do wersji 2 pierwszego odwołania.
 
- Oznacza to, że ten błąd występuje, ponieważ projekty w rozwiązaniu zawierają odwołania do siebie, ale odwołania zostały utworzone jako odwołania do pliku (za pomocą przycisku **Przeglądaj** w oknie dialogowym [Dodaj odwołanie](https://msdn.microsoft.com/2feb0fe2-0805-4cc9-8cba-b0315849dfb7) ), a nie projektu do projektu odwołania (za pomocą karty **projekt** w oknie dialogowym **Dodaj odwołanie** ). Zaletą projektu w odniesieniu do projektu jest utworzenie zależności między projektami w systemie kompilacji, dzięki czemu projekt zależny zostanie skompilowany, jeśli został zmieniony od czasu skompilowania projektu odniesienia. Odwołanie do pliku nie tworzy zależności kompilacji, więc możliwe jest skompilowanie odwołującego się projektu bez kompilowania projektu zależnego, więc odwołanie może stać się przestarzałe. projekt może odwoływać się do wcześniej skompilowanej wersji projektu. Może to spowodować, że w katalogu bin jest wymagana kilka wersji pojedynczej biblioteki DLL, co nie jest możliwe i spowoduje to przeprowadzenie tego komunikatu o błędzie.
+ Oznacza to, że ten błąd występuje, ponieważ projekty w rozwiązaniu zawierają odwołania do siebie, ale odwołania zostały utworzone jako odwołania do pliku (za pomocą przycisku **Przeglądaj** w oknie dialogowym [Dodaj odwołanie](https://msdn.microsoft.com/2feb0fe2-0805-4cc9-8cba-b0315849dfb7) ), a nie do odwołań projektu (przy użyciu karty **projekt** w oknie dialogowym **Dodaj odwołanie** ). Zaletą projektu w odniesieniu do projektu jest utworzenie zależności między projektami w systemie kompilacji, dzięki czemu projekt zależny zostanie skompilowany, jeśli został zmieniony od czasu skompilowania projektu odniesienia. Odwołanie do pliku nie tworzy zależności kompilacji, więc możliwe jest skompilowanie odwołującego się projektu bez kompilowania projektu zależnego, więc odwołanie może stać się przestarzałe. projekt może odwoływać się do wcześniej skompilowanej wersji projektu. Może to spowodować, że w katalogu bin jest wymagana kilka wersji pojedynczej biblioteki DLL, co nie jest możliwe i spowoduje to przeprowadzenie tego komunikatu o błędzie.
 
  Ten komunikat jest wyświetlany za każdym razem, gdy w katalogu bin występuje konflikt, a aplikacja może nie funkcjonować prawidłowo. Mimo że ten problem mógł obejść, to ostrzeżenie będzie nadal wyświetlane, ponieważ system projektu nie może określić, czy wersja zależności będzie działała poprawnie ze wszystkimi składnikami.
 

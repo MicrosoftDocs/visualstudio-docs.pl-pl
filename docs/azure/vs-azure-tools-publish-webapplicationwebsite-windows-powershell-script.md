@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: c5eff35247c85783659f66b13d03c3a5f781df07
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911769"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (skrypt programu Windows PowerShell)
@@ -36,11 +36,11 @@ Publish-WebApplicationWebSite
 | Parametr | Wartość domyślna |
 | --- | --- |
 | Aliasy |brak |
-| Wymagany? |true |
-| Pozycja |nazwane |
+| Wymagane? |true |
+| Położenie |nazwane |
 | Wartość domyślna |brak |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
 ## <a name="subscriptionname"></a>SubscriptionName
 Nazwa subskrypcji platformy Azure, w której chcesz utworzyć witrynę sieci Web.
@@ -48,11 +48,11 @@ Nazwa subskrypcji platformy Azure, w której chcesz utworzyć witrynę sieci Web
 | Parametr | Wartość domyślna |
 | --- | --- |
 | Aliasy |brak |
-| Wymagany? |false |
-| Pozycja |nazwane |
+| Wymagane? |fałsz |
+| Położenie |nazwane |
 | Wartość domyślna |brak |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
 ## <a name="webdeploypackage"></a>Webdeploypackage została
 Ścieżka do pakietu wdrożeniowego sieci Web do opublikowania w witrynie sieci Web. Ten pakiet można utworzyć przy użyciu Kreatora publikacji w sieci Web w programie Visual Studio. Aby uzyskać więcej informacji, zobacz Rozpoczynanie [pracy z usługą Azure Cloud Services i ASP.NET](vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md).
@@ -60,11 +60,11 @@ Nazwa subskrypcji platformy Azure, w której chcesz utworzyć witrynę sieci Web
 | Parametr | Wartość domyślna |
 | --- | --- |
 | Aliasy |brak |
-| Wymagany? |false |
-| Pozycja |nazwane |
+| Wymagane? |fałsz |
+| Położenie |nazwane |
 | Wartość domyślna |brak |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
 ## <a name="databaseserverpassword"></a>DatabaseServerPassword
 Nazwa użytkownika i hasło do bazy danych SQL na platformie Azure.
@@ -72,11 +72,11 @@ Nazwa użytkownika i hasło do bazy danych SQL na platformie Azure.
 | Parametr | Wartość domyślna |
 | --- | --- |
 | Aliasy |brak |
-| Wymagany? |false |
-| Pozycja |nazwane |
+| Wymagane? |fałsz |
+| Położenie |nazwane |
 | Wartość domyślna |brak |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
 ## <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 Jeśli wartość jest równa true, Wydrukuj komunikaty ze skryptu do strumienia wyjściowego.
@@ -84,11 +84,11 @@ Jeśli wartość jest równa true, Wydrukuj komunikaty ze skryptu do strumienia 
 | Parametr | Wartość domyślna |
 | --- | --- |
 | Aliasy |brak |
-| Wymagany? |false |
-| Pozycja |nazwane |
-| Wartość domyślna |false |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Wymagane? |fałsz |
+| Położenie |nazwane |
+| Wartość domyślna |fałsz |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
 ## <a name="remarks"></a>Uwagi
 Aby uzyskać pełne wyjaśnienie, jak używać skryptu do tworzenia środowisk deweloperskich i testowych, zobacz [Używanie skryptów programu Windows PowerShell do publikowania w środowiskach deweloperskich i testowych](vs-azure-tools-publishing-using-powershell-scripts.md).

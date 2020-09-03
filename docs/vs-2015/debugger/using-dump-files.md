@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1a2d6215887512f2e0c1410688b2bc924dc1fe3a
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387060"
 ---
 # <a name="using-dump-files"></a>Używanie plików zrzutów
@@ -37,7 +37,7 @@ ms.locfileid: "86387060"
 
 Pliki zrzutu ze stertami lub bez nich; tworzenie pliku zrzutu; otwieranie pliku zrzutu; znajdowanie plików binarnych, PDB i pliku źródłowego pliku zrzutu. 
   
-## <a name="contents"></a><a name="BKMK_Contents"></a>Contents  
+## <a name="contents"></a><a name="BKMK_Contents"></a> Contents  
  [Co to jest plik zrzutu?](#BKMK_What_is_a_dump_file_)  
   
  [Pliki zrzutu, z stertami lub bez nich](#BKMK_Dump_files__with_or_without_heaps)  
@@ -50,14 +50,14 @@ Pliki zrzutu ze stertami lub bez nich; tworzenie pliku zrzutu; otwieranie pliku 
   
  [Znajdowanie plików binarnych, pliki symboli (. pdb) i pliki źródłowe](#BKMK_Find_binaries__symbol___pdb__files__and_source_files)  
   
-## <a name="what-is-a-dump-file"></a><a name="BKMK_What_is_a_dump_file_"></a>Co to jest plik zrzutu?  
+## <a name="what-is-a-dump-file"></a><a name="BKMK_What_is_a_dump_file_"></a> Co to jest plik zrzutu?  
  *Plik zrzutu* jest migawką aplikacji w momencie trwania zrzutu. To pokazuje, jaki proces był wykonywany i które moduły zostały załadowane. Jeśli zrzut został zapisany z informacjami o stercie, plik zrzutu zawiera migawkę tego, co było w pamięci aplikacji w tamtym momencie. Otwieranie pliku zrzutu ze stertą w Visual Studio przypomina zatrzymywanie w punkcie przerwania sesji debugowania. Chociaż nie możesz kontynuować wykonywania, możesz przeanalizować stosy, wątki i wartości zmiennych aplikacji dla momentu zrzutu.  
   
  Zrzuty są wykorzystywane głównie do debugowania problemów występujących na komputerach, do których deweloper nie ma dostępu. Na przykład można użyć pliku zrzutu z komputera klienta, gdy nie można odtworzyć programu awarii lub nieodpowiadający na komputerze klienta. Zrzuty są również tworzone przez testerów w celu zapisania danych o awarii lub braku odpowiedzi, aby można było użyć maszyny testowej do większej liczby testów. Debuger programu Visual Studio może zapisywać pliki zrzutu dla kodu zarządzanego lub natywnego. Debuger może załadować pliki zrzutu utworzone przez program Visual Studio lub przez inne programy, które zapisują pliki w formacie *minizrzutu* .  
   
  ![Z powrotem do najwyższej](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
-## <a name="dump-files-with-or-without-heaps"></a><a name="BKMK_Dump_files__with_or_without_heaps"></a>Pliki zrzutu, z stertami lub bez nich  
+## <a name="dump-files-with-or-without-heaps"></a><a name="BKMK_Dump_files__with_or_without_heaps"></a> Pliki zrzutu, z stertami lub bez nich  
  Można tworzyć pliki zrzutu z informacjami o stercie lub bez nich.  
   
 - **Pliki zrzutu ze stertami** zawierają migawkę pamięci aplikacji. Obejmuje to wartości zmiennych utworzonych w momencie zrzutu. Jeśli załadujesz plik zrzutu, który został zapisany ze stertą, program Visual Studio można załadować symbole, nawet jeśli nie można odnaleźć pliku binarnego aplikacji. Program Visual Studio zapisuje także pliki binarne załadowanych modułów macierzystych w pliku zrzutu, co znacznie ułatwia debugowanie.  
@@ -66,7 +66,7 @@ Pliki zrzutu ze stertami lub bez nich; tworzenie pliku zrzutu; otwieranie pliku 
   
   ![Z powrotem do najwyższej](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
-## <a name="requirements-and-limitations"></a><a name="BKMK_Requirements_and_limitations"></a>Wymagania i ograniczenia  
+## <a name="requirements-and-limitations"></a><a name="BKMK_Requirements_and_limitations"></a> Wymagania i ograniczenia  
   
 - Debugowanie plików zrzutu zoptymalizowanego kodu może być mylące. Na przykład wbudowywanie funkcji przez kompilator może spowodować nieoczekiwane stosy wywołań, a inne optymalizacje mogą zmienić okres istnienia zmiennych.  
   
@@ -84,7 +84,7 @@ Pliki zrzutu ze stertami lub bez nich; tworzenie pliku zrzutu; otwieranie pliku 
   
   ![Z powrotem do najwyższej](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
-## <a name="create-a-dump-file"></a><a name="BKMK_Create_a_dump_file"></a>Utwórz plik zrzutu  
+## <a name="create-a-dump-file"></a><a name="BKMK_Create_a_dump_file"></a> Utwórz plik zrzutu  
  Aby utworzyć plik zrzutu z programu Visual Studio:  
   
 - Podczas debugowania procesu w Visual Studio, można zapisać plik zrzutu po zatrzymaniu debugera w sytuacji wyjątku lub w punkcie przerwania. Wybierz pozycję **Zapisz zrzut jako**, **Debuguj**. W oknie dialogowym **Zapisz zrzut jako** na liście **Zapisz jako typ** możesz wybrać **minizrzutu** lub **minizrzutu z stertą** (domyślnie).  
@@ -95,7 +95,7 @@ Pliki zrzutu ze stertami lub bez nich; tworzenie pliku zrzutu; otwieranie pliku 
   
   ![Z powrotem do najwyższej](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
-## <a name="open-a-dump-file"></a><a name="BKMK_Open_a_dump_file"></a>Otwórz plik zrzutu  
+## <a name="open-a-dump-file"></a><a name="BKMK_Open_a_dump_file"></a> Otwórz plik zrzutu  
   
 1. W programie Visual Studio wybierz **plik**, **Otwórz**, **plik**.  
   
@@ -107,7 +107,7 @@ Pliki zrzutu ze stertami lub bez nich; tworzenie pliku zrzutu; otwieranie pliku 
   
 4. Aby rozpocząć debugowanie, przejdź do sekcji **Akcje** , a następnie wybierz opcję **Debuguj tylko w trybie natywnym** lub **Debuguj z mieszaniem mieszanym**.  
   
-## <a name="find-binaries-symbol-pdb-files-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a>Znajdowanie plików binarnych, pliki symboli (. pdb) i pliki źródłowe  
+## <a name="find-binaries-symbol-pdb-files-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Znajdowanie plików binarnych, pliki symboli (. pdb) i pliki źródłowe  
  Aby użyć wszystkich funkcji programu Visual Studio do debugowania pliku zrzutu, potrzebny jest dostęp do następujących elementów:  
   
 - Plik .exe, dla którego zrobiono zrzut, i inne pliki binarne (biblioteki DLL itd.), które były używane w procesie zrzutu.  

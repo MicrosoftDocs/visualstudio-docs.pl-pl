@@ -1,5 +1,5 @@
 ---
-title: Odinstalowywanie pakietu VSPackage za pomocą Instalatora Windows | Dokumenty firmy Microsoft
+title: Odinstalowywanie pakietu VSPackage z Instalator Windows | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,30 +13,30 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fee88e895d40d42114eaf53422503524594b485f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704277"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Odinstalowywanie pakietów VSPackage przy użyciu Instalatora Windows
-W przeważającej części Instalator Windows może odinstalować vsPackage tylko przez "cofanie" co zrobił, aby zainstalować VSPackage. Akcje niestandardowe omówione w [poleceniach, które muszą być uruchamiane po instalacji,](../../extensibility/internals/commands-that-must-be-run-after-installation.md) muszą być również uruchamiane po odinstalowaniu. Ponieważ wywołania devenv.exe występują tuż przed installFinalize standardowej akcji zarówno instalacji i dezinstalacji, CustomAction i InstallExecuteSequence wpisy tabeli służyć obu przypadkach.
+W największej części Instalator Windows można odinstalować pakietu VSPackage tylko przez "wycofywanie" co miało na celu zainstalowanie pakietu VSPackage. Akcje niestandardowe omówione w [poleceniach, które muszą zostać uruchomione po instalacji](../../extensibility/internals/commands-that-must-be-run-after-installation.md) , muszą zostać uruchomione po odinstalowaniu programu. Ponieważ wywołania devenv.exe wystąpią tuż przed akcją standardu funkcję InstallFinalize zarówno w przypadku instalacji, jak i dezinstalacji, w obu przypadkach w tabeli.
 
 > [!NOTE]
-> Uruchom `devenv /setup` po odinstalowaniu pakietu MSI.
+> Uruchom `devenv /setup` po odinstalowaniu pakietu msi.
 
- Zgodnie z ogólną zasadą, jeśli dodasz akcje niestandardowe do pakietu Instalatora Windows, należy obsługiwać te akcje podczas dezinstalacji i wycofywania. Jeśli na przykład dodasz akcje niestandardowe do samodzielnego rejestrowania pakietu VSPackage, należy również dodać akcje niestandardowe, aby go wyrejestrować.
-
-> [!NOTE]
-> Użytkownik może zainstalować pakiet VSPackage, a następnie odinstalować wersje, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] z którymi jest zintegrowany. Dezinstalacja vspackage działa w tym scenariuszu, eliminując akcje niestandardowe, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]które uruchamiają kod z zależnościami na .
-
-## <a name="handling-launch-conditions-at-uninstall-time"></a>Obsługa warunków uruchamiania w czasie odinstalowywania
- Akcja standardowa LaunchConditions odczytuje wiersze tabeli LaunchCondition, aby wyświetlić komunikaty o błędach, jeśli warunki nie są spełnione. Ponieważ warunki uruchamiania są zazwyczaj używane w celu zapewnienia, że wymagania systemowe są spełnione, `NOT Installed`zazwyczaj można pominąć warunki uruchamiania podczas dezinstalacji, dodając warunek, do wiersza LaunchConditions tabeli LaunchCondition.
-
- Alternatywą jest `OR Installed` dodanie do warunków uruchamiania, które nie są ważne podczas dezinstalacji. Dzięki temu warunek będzie zawsze spełniony podczas dezinstalacji i dlatego nie będzie wyświetlany komunikat o błędzie warunku uruchamiania.
+ Zgodnie z ogólną regułą, jeśli dodajesz niestandardowe akcje do pakietu Instalator Windows, musisz obsługiwać te akcje podczas odinstalowywania i wycofywania. Jeśli dodasz niestandardowe akcje do samorejestruj pakietu VSPackage, na przykład musisz dodać niestandardowe akcje, aby je wyrejestrować.
 
 > [!NOTE]
-> `Installed`jest właściwością Instalatora Windows ustawia, gdy wykryje, że vsPackage został już zainstalowany w systemie.
+> Użytkownik może zainstalować pakietu VSPackage, a następnie odinstalować wersje programu, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] z którymi jest ona zintegrowana. Możesz pomóc zapewnić, że Dezinstalacja pakietu VSPackage działa w tym scenariuszu, eliminując niestandardowe akcje, które uruchamiają kod z zależnościami od [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+
+## <a name="handling-launch-conditions-at-uninstall-time"></a>Obsługa warunków uruchamiania w czasie dezinstalacji
+ Akcja standard LaunchConditions odczytuje wiersze tabeli LaunchCondition w celu wyświetlenia komunikatów o błędach, jeśli warunki nie są spełnione. Ponieważ warunki uruchamiania są zwykle używane do zapewnienia, że wymagania systemowe są spełnione, można zwykle pominąć warunki uruchamiania podczas odinstalowywania, dodając warunek, `NOT Installed` do wiersza LaunchConditions tabeli LaunchCondition.
+
+ Alternatywą jest dodanie `OR Installed` do warunków uruchamiania, które nie są ważne podczas odinstalowywania. Dzięki temu warunek będzie zawsze prawdziwy podczas odinstalowywania i w związku z tym nie zostanie wyświetlony komunikat o błędzie stanu uruchomienia.
+
+> [!NOTE]
+> `Installed` jest właściwością Instalator Windows ustawianą, gdy wykryje, że pakietu VSPackage został już zainstalowany w systemie.
 
 ## <a name="see-also"></a>Zobacz też
 - [Instalator Windows](https://msdn.microsoft.com/library/187d8965-c79d-4ecb-8689-10930fa8b3b5)

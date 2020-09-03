@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 6b53fb34b3cff444e57491f878f8385bdb523c6e
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285052"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Zarządzanie pakietami npm w programie Visual Studio
@@ -29,7 +29,7 @@ Integracja programu Visual Studio z usługą npm różni się w zależności od 
 * [Otwórz folder (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md)
 
 > [!Important]
-> npm oczekuje folderu *node_modules* ipackage.jsw *elemencie* głównym projektu. Jeśli struktura folderów aplikacji jest inna, należy zmodyfikować strukturę folderów, jeśli chcesz zarządzać pakietami npm za pomocą programu Visual Studio.
+> npm oczekuje folderu *node_modules* ipackage.jsw * elemencie* głównym projektu. Jeśli struktura folderów aplikacji jest inna, należy zmodyfikować strukturę folderów, jeśli chcesz zarządzać pakietami npm za pomocą programu Visual Studio.
 
 ## <a name="nodejs-projects"></a>Projekty Node.js
 
@@ -42,12 +42,12 @@ Te funkcje współpracują i synchronizują z systemem projektu oraz *package.js
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
-PotrzebujeszNode.js obciążenie **programowaniem** i zainstalowanym środowiskiem uruchomieniowym Node.js, aby dodać obsługę npm do projektu. Aby uzyskać szczegółowe instrukcje, zobacz [Tworzenie projektu Node.js](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json).
+PotrzebujeszNode.js obciążenie ** programowaniem** i zainstalowanym środowiskiem uruchomieniowym Node.js, aby dodać obsługę npm do projektu. Aby uzyskać szczegółowe instrukcje, zobacz [Tworzenie projektu Node.js](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json).
 
 > [!NOTE]
 > W przypadku istniejących projektów Node.js Użyj szablonu **z istniejącego Node.js kod** rozwiązania lub typu projektu [otwórz folder (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md) , aby włączyć npm w projekcie.
 
-### <a name="install-packages-from-solution-explorer-nodejs"></a><a name="npmInstallWindow"></a>Zainstaluj pakiety z Eksplorator rozwiązań (Node.js)
+### <a name="install-packages-from-solution-explorer-nodejs"></a><a name="npmInstallWindow"></a> Zainstaluj pakiety z Eksplorator rozwiązań (Node.js)
 
 W przypadku projektów Node.js Najprostszym sposobem instalowania pakietów npm jest użycie okna instalacji pakietu npm. Aby uzyskać dostęp do tego okna, kliknij prawym przyciskiem myszy węzeł **npm** w projekcie i wybierz polecenie **Instaluj nowe pakiety npm**.
 
@@ -128,7 +128,7 @@ W przypadku projektów takich jak projekty ASP.NET Core można zintegrować obs�
 >[!NOTE]
 > W przypadku projektów ASP.NET Core można także użyć [Menedżera bibliotek](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) lub przędzy zamiast npm do instalowania plików JavaScript i CSS po stronie klienta.
 
-### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a>Dodawanie obsługi npm do projektu (ASP.NET Core)
+### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a> Dodawanie obsługi npm do projektu (ASP.NET Core)
 
 Jeśli projekt nie zawiera jeszcze *package.jsw* pliku, można dodać jeden, aby włączyć obsługę npm przez dodanie *package.js* do pliku do projektu.
 

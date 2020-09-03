@@ -1,5 +1,5 @@
 ---
-title: FIELD_MODIFIERS | Dokumenty firmy Microsoft
+title: FIELD_MODIFIERS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7a24345174854462a2118df626223a8a299cd7f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736857"
 ---
 # <a name="field_modifiers"></a>FIELD_MODIFIERS
-Określa modyfikatory typu pola.
+Określa Modyfikatory dla typu pola.
 
 ## <a name="syntax"></a>Składnia
 
@@ -106,7 +106,7 @@ public enum enum_FIELD_MODIFIERS {
 
 ## <a name="fields"></a>Pola
 `FIELD_MOD_ACCESS_TYPE`\
-Wskazuje, że nie można uzyskać dostępu do tego pola.
+Wskazuje, że nie można uzyskać dostępu do pola.
 
 `FIELD_MOD_ACCESS_PUBLIC`\
 Wskazuje, że pole ma dostęp publiczny.
@@ -148,10 +148,10 @@ Wskazuje, że pole jest wirtualne.
 Wskazuje, że pole jest interfejsem.
 
 `FIELD_MOD_FINAL`\
-Wskazuje, że pole jest ostateczne.
+Wskazuje, że pole jest końcowe.
 
 `FIELD_MOD_SENTINEL`\
-Wskazuje, że pole jest wartownikiem.
+Wskazuje, że pole jest wskaźnikiem.
 
 `FIELD_MOD_INNERCLASS`\
 Wskazuje, że pole jest klasą wewnętrzną.
@@ -160,38 +160,38 @@ Wskazuje, że pole jest klasą wewnętrzną.
 Wskazuje, że pole jest opcjonalne.
 
 `FIELD_MOD_BYREF`\
-Wskazuje, że pole jest argumentem referencyjnym. Jest to specjalnie dla argumentów metody.
+Wskazuje, że pole jest argumentem odwołania. Jest to przeznaczone dla argumentów metody.
 
 `FIELD_MOD_HIDDEN`\
-Wskazuje, że pole musi być ukryte lub przedstawione w innym kontekście; na przykład [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] statyczne miejscowi.
+Wskazuje, że pole musi być ukryte lub zaprezentowane w innym kontekście; na przykład [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] statyczne zmienne lokalne.
 
 `FIELD_MOD_MARSHALASOBJECT`\
-Wskazuje, że pole reprezentuje obiekt `IUnknown` z interfejsem.
+Wskazuje, że pole reprezentuje obiekt z `IUnknown` interfejsem.
 
 `FIELD_MOD_SPECIAL_NAME`\
-Wskazuje, że pole ma specjalną nazwę, `.ctor` na przykład[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] dla konstruktora ( tylko).
+Wskazuje, że pole ma specjalną nazwę, na przykład `.ctor` dla konstruktora ( [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] tylko).
 
 `FIELD_MOD_HIDEBYSIG`\
-Wskazuje, że pole `Overloads` ma zastosowane słowo[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] kluczowe (tylko).
+Wskazuje, że do pola jest `Overloads` stosowane słowo kluczowe ( [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] tylko).
 
 `FIELD_MOD_WRITEONLY`\
-Wskazuje, że pole jest tylko do zapisu. Ta wartość nie jest `FIELD_MOD_ALL`uwzględniona w , ponieważ jedynym zastosowaniem takich pól tylko do zapisu jest ocena funkcji. Użytkownik musi jawnie `FIELD_MOD_WRITEONLY` poprosić o pola.
+Wskazuje, że pole jest tylko do zapisu. Ta wartość nie jest uwzględniona w `FIELD_MOD_ALL` , ponieważ jedynym zastosowaniem pól tylko do zapisu jest obliczanie funkcji. Użytkownik musi jawnie zażądać `FIELD_MOD_WRITEONLY` pól.
 
 `FIELD_MOD_ACCESS_MASK`\
-Wskazuje maskę dostępu do pól.
+Wskazuje maskę dostępu do pola.
 
 `FIELD_MOD_MASK`\
-Wskazuje maskę modyfikatorów pól.
+Wskazuje maskę dla modyfikatorów pól.
 
 ## <a name="remarks"></a>Uwagi
-Używany dla `dwModifiers` członka struktury [FIELD_INFO.](../../../extensibility/debugger/reference/field-info.md)
+Używane dla `dwModifiers` elementu członkowskiego struktury [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) .
 
-Wartości te są również przekazywane do [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) metody filtrowania dla określonych pól.
+Te wartości są również przesyłane do metody [EnumFields —](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) w celu filtrowania określonych pól.
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: sh.h
+Nagłówek: sh. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

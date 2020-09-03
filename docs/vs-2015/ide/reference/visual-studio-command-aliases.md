@@ -18,96 +18,96 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7e9419e64cd211490fc1d3785045b5de117d392e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657851"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio — Aliasy poleceń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Aliasy umożliwiają wprowadzanie polecenia do okna **Znajdź/polecenie** lub okno **poleceń** przez skrócenie tekstu wymaganego do wykonania polecenia. Na przykład zamiast wprowadzania `>File.OpenFile`, aby wyświetlić okno dialogowe **Otwórz plik** , można użyć wstępnie zdefiniowanego aliasu `>of`.
+Aliasy umożliwiają wprowadzanie polecenia do okna **Znajdź/polecenie** lub okno **poleceń** przez skrócenie tekstu wymaganego do wykonania polecenia. Na przykład zamiast wprowadzania `>File.OpenFile` do wyświetlania okna dialogowego **Otwórz plik** można użyć wstępnie zdefiniowanego aliasu `>of` .
 
- Wpisz `alias` w oknie **polecenia** , aby wyświetlić listę bieżących aliasów i ich definicji. Wpisz `>cls`, aby wyczyścić zawartość okna **poleceń** . Jeśli chcesz zobaczyć alias określonego polecenia, wpisz `alias <command name>`.
+ Wpisz `alias` w oknie **polecenia** , aby wyświetlić listę bieżących aliasów i ich definicje. Wpisz, `>cls` Aby wyczyścić zawartość okna **poleceń** . Jeśli chcesz zobaczyć alias dla określonego polecenia, wpisz `alias <command name>` .
 
- Można łatwo utworzyć własny alias dla jednego z poleceń programu Visual Studio (z argumentami lub bez nich). Na przykład składnia aliasu `File.NewFile MyFile.txt` jest `alias MyAlias File.NewFile MyFile.txt`. Jeden z aliasów można usunąć za pomocą `alias <alias name> /delete`
+ Można łatwo utworzyć własny alias dla jednego z poleceń programu Visual Studio (z argumentami lub bez nich). Na przykład składnia aliasu `File.NewFile MyFile.txt` to `alias MyAlias File.NewFile MyFile.txt` . Jeden z aliasów można usunąć za pomocą `alias <alias name> /delete`
 
  Poniższa tabela zawiera listę wstępnie zdefiniowanych aliasów poleceń programu Visual Studio. Niektóre nazwy poleceń mają więcej niż jeden wstępnie zdefiniowany alias. Kliknij linki do poniższych nazw poleceń, aby wyświetlić szczegółowe tematy objaśniające poprawną składnię, argumenty i przełączniki dla tych poleceń.
 
 |Nazwa polecenia|Alias|Pełna nazwa|
 |------------------|-----------|-------------------|
-|[Drukuj, polecenie](../../ide/reference/print-command.md)|?|Debuguj. Print|
-|[Szybka czujka, polecenie](../../ide/reference/quick-watch-command.md)|??|Debuguj. QuickWatch|
+|[Print — polecenie](../../ide/reference/print-command.md)|?|Debuguj. Print|
+|[Szybkie czujka — polecenie](../../ide/reference/quick-watch-command.md)|??|Debuguj. QuickWatch|
 |Dodaj nowy projekt|Addproj|Plik. AddNewProject|
-|[Alias, polecenie](../../ide/reference/alias-command.md)|Alias|Tools. alias|
+|[Alias — polecenie](../../ide/reference/alias-command.md)|Alias|Tools. alias|
 |okno zmiennych automatycznych|Automatyczne|Debug.Autos|
 |Okno punktów przerwania|czarnej listy|Debug.Breakpoints|
 |Przełącz punkt przerwania|BP|Debuguj. Togglebreakpoint —|
 |Stos wywołań, okno|Stosu wywołań|Debug.CallStack|
 |Wyczyść zakładki|ClearBook|Edit.ClearBookmarks|
-|Zamknięcie|Zamknięcie|Plik. Zamknij|
+|Zamknij|Zamknij|Plik. Zamknij|
 |Zamknij wszystkie dokumenty|CloseAll|Window. CloseAllDocuments|
 |Wyczyść wszystko|ze|Edytuj. ClearAll|
 |Tryb polecenia|cmd|View.CommandWindow|
 |Wyświetl kod|kod|View.ViewCode|
-|[Lista pamięci, polecenie](../../ide/reference/list-memory-command.md)|d|Debuguj. ListMemory —|
-|[Wyświetl pamięć polecenia](../../ide/reference/list-memory-command.md) jako ANSI|Funkcją|Debug. ListMemory —/ANSI|
-|[List Memory — polecenie](../../ide/reference/list-memory-command.md) Format jednego bajtu|bazą|Debug. ListMemory —/format: OneByte|
+|[List Memory — polecenie](../../ide/reference/list-memory-command.md)|d|Debuguj. ListMemory —|
+|[Wyświetl pamięć polecenia](../../ide/reference/list-memory-command.md) jako ANSI|da|Debug. ListMemory —/ANSI|
+|[List Memory — polecenie](../../ide/reference/list-memory-command.md) Format jednego bajtu|bazy danych|Debug. ListMemory —/format: OneByte|
 |[Wyświetl pamięć polecenia](../../ide/reference/list-memory-command.md) jako ANSI z czterema formatem bajtowym|DC|Debug. ListMemory —/format: FourBytes/ANSI|
 |[List Memory — polecenie](../../ide/reference/list-memory-command.md) Format czterocyfrowy|dd|Debug. ListMemory —/format: FourBytes|
 |Usuń do BOL|DelBOL|Edytuj. DeleteToBOL|
 |Usuń do EOL|DelEOL|Edytuj. DeleteToEOL|
 |Usuń odstępy w poziomie|DelHSp|Edytuj. DeleteHorizontalWhitespace|
-|Pokaż projektanta|projektant|View.ViewDesigner|
+|Projektant widoków|projektant|View.ViewDesigner|
 |[List Memory — polecenie](../../ide/reference/list-memory-command.md) Format zmiennoprzecinkowy|DF|Debug. ListMemory —/format: float|
 |Dezasemblacja, okno|DISASM|Debug.Disassembly|
 |[List Memory — polecenie](../../ide/reference/list-memory-command.md) Format osiem bajtów|elemencie DQ|Debug. ListMemory —/format: EightBytes|
 |[Wyświetl pamięć polecenia](../../ide/reference/list-memory-command.md) jako Unicode|du|Debug. ListMemory —/Unicode|
-|[Oceń instrukcję, polecenie](../../ide/reference/evaluate-statement-command.md)|powiadomienie|Debuguj. EvaluateStatement|
+|[Polecenie szacowania instrukcji](../../ide/reference/evaluate-statement-command.md)|powiadomienie|Debuguj. EvaluateStatement|
 |Zakończ|Zakończ|File.Exit|
 |Formatowanie zaznaczenia|format|Edit.FormatSelection|
 |Pełny ekran|Pełnoekranowy|View.FullScreen|
-|[Uruchomienie, polecenie](../../ide/reference/start-command.md)|G|Debug.Start|
-|[Przejdź do, polecenie](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
+|[Uruchom polecenie](../../ide/reference/start-command.md)|g|Debug.Start|
+|[Przejdź do — polecenie](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Przejdź do nawiasu klamrowego|GotoBrace|Edit.GotoBrace|
 |F1Help|Pomoc|Help.F1Help|
 |Tryb natychmiastowy|immed|Tools. immediatemode|
 |Wstaw plik jako tekst|InsertFile|Edytuj. InsertFileAsText|
-|[Lista stosu wywołań, polecenie](../../ide/reference/list-call-stack-command.md)|bazy|Debuguj. ListCallStack|
+|[Listing stosu wywołań — polecenie](../../ide/reference/list-call-stack-command.md)|bazy|Debuguj. ListCallStack|
 |Zmień na małe litery|Lcase|Edit.MakeLowercase|
 |Wytnij wiersz|LineCut|Edit.LineCut|
 |Usuń wiersz|LineDel|Edit.LineDelete|
 |Lista składników|Wyświetlanie członków|Edit.ListMembers|
 |okno zmiennych lokalnych|Zmienne lokalne|Debug.Locals|
-|[Zapisuj dane wyjściowe okna Polecenie, polecenie](../../ide/reference/log-command-window-output-command.md)|rejestrowane|Tools. LogCommandWindowOutput|
+|[Polecenie dziennika danych wyjściowych okna polecenia](../../ide/reference/log-command-window-output-command.md)|Log|Tools. LogCommandWindowOutput|
 |Tryb oznaczania okna polecenia|znacznik|Tools. CommandWindowMarkMode|
 |okno pamięci|Memory1 pamięci|Debug.Memory1|
 |Okno pamięci 2|Memory2|Debug.Memory2|
 |Okno pamięci 3|Memory3|Debug.Memory3|
 |Okno pamięci 4|Memory4|Debug.Memory4|
-|[Ustaw Radix, polecenie](../../ide/reference/set-radix-command.md)|n|Debuguj. SetRadix|
-|[ShowWebBrowser, polecenie](../../ide/reference/showwebbrowser-command.md)|Nawigacja nawigacji|Widok. ShowWebBrowser —|
+|[Set podstawy — polecenie](../../ide/reference/set-radix-command.md)|n|Debuguj. SetRadix|
+|[ShowWebBrowser — — polecenie](../../ide/reference/showwebbrowser-command.md)|Nawigacja nawigacji|Widok. ShowWebBrowser —|
 |Następna zakładka|NextBook|Edit.NextBookmark|
-|[Nowy plik, polecenie](../../ide/reference/new-file-command.md)|oznaczona|File.NewFile|
+|[Nowy plik — polecenie](../../ide/reference/new-file-command.md)|oznaczona|File.NewFile|
 |Nowy projekt|np. NewProj|File.NewProject|
-|[Otwórz plik, polecenie](../../ide/reference/open-file-command.md)|z otwartego|File.OpenFile|
-|[Otwórz projekt, polecenie](../../ide/reference/open-project-command.md)|op|File.OpenProject|
+|[Otwórz plik — polecenie](../../ide/reference/open-file-command.md)|z otwartego|File.OpenFile|
+|[Otwórz projekt — polecenie](../../ide/reference/open-project-command.md)|op|File.OpenProject|
 |Zwiń do definicji/Zatrzymaj tworzenie konspektu|OutlineDefs StopOutlining|Edit.CollapsetoDefinitions|
-|Przekrocz nad|St|Debug.StepOver|
+|Przekrocz nad|p|Debug.StepOver|
 |Informacje o parametrach|ParamInfo|Edit.ParameterInfo|
 |Wyjdź|Public|Debug.StepOut|
 |Poprzednia zakładka|PrevBook|Edit.PreviousBookmark|
-|Plik wydruku|drukowany|File.Print|
+|Drukowanie pliku|drukowanie|File.Print|
 |Okno Właściwości|props|View.PropertiesWindow|
-|Zatrzymywanie|q|Debug.StopDebugging|
-|Ponawia|Ponawia|Edit.Redo|
+|Stop|q|Debug.StopDebugging|
+|Ponów|ponawia|Edit.Redo|
 |Okno rejestrów|rejestry|Debug.Registers|
 |Uruchom do kursora|RTC|Debug.RunToCursor|
-|Zapisz zaznaczone elementy|pisał|File.SaveSelectedItems|
+|Zapisz zaznaczone elementy|zapisywanie|File.SaveSelectedItems|
 |Zapisz wszystko|SaveAll|File.SaveAll|
 |Zapisz jako|Przełącznik|Plik. SaveSelectedItemsAs|
-|[Powłoka, polecenie](../../ide/reference/shell-command.md)|powłoka|Tools. Shell|
+|[Shell — polecenie](../../ide/reference/shell-command.md)|powłoka|Tools. Shell|
 |Zatrzymaj Znajdowanie w plikach|StopFind|Edit. FindInFiles/Stop|
 |Zakotwiczenie wymiany|SwapAnchor|Edit.SwapAnchor|
 |Wkrocz do|t|Debug.StepInto|
@@ -118,14 +118,14 @@ Aliasy umożliwiają wprowadzanie polecenia do okna **Znajdź/polecenie** lub ok
 |Sąsiadująco w pionie|TileV|Window. TileVertically|
 |Przełącz zakładkę|ToggleBook|Edit.ToggleBookmark|
 |Okno przybornika|przybornik|View.Toolbox|
-|[Lista dezasemblacji, polecenie](../../ide/reference/list-disassembly-command.md)|u|Debuguj. ListDisassembly|
+|[List demontażu — polecenie](../../ide/reference/list-disassembly-command.md)|u|Debuguj. ListDisassembly|
 |Zmień wielkie litery|Ucase|Edit.MakeUppercase|
-|Anulowanie|Anulowanie|Edit.Undo|
+|Cofnij|Anulowanie|Edit.Undo|
 |Tabulatory na zaznaczenie|Tabulatory na|Edytuj. UntabifySelection|
 |okno czujki|Obejrzyj|Debuguj. WatchN|
 |Przełącz Zawijanie wierszy|WordWrap|Edit.ToggleWordWrap|
 |Wyświetlanie listy procesów|&#124;|Debuguj. ListProcesses|
-|[Lista wątków, polecenie](../../ide/reference/list-threads-command.md)|~ ~ * KB ~ \*kb|Debug. Listthreads — Debug. ListTheads/AllThreads|
+|[Lista wątków — polecenie](../../ide/reference/list-threads-command.md)|~ ~ * k ~ \* KB|Debug. Listthreads — Debug. ListTheads/AllThreads|
 
 ## <a name="see-also"></a>Zobacz też
  Okno poleceń [programu Visual Studio](../../ide/reference/visual-studio-commands.md) [polecenie](../../ide/reference/command-window.md) [Znajdź/polecenie](../../ide/find-command-box.md)

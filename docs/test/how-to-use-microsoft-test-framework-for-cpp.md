@@ -9,21 +9,21 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: a9393fd248f4e6520c261d405bc624a75d8cf69f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287119"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Korzystanie z struktury testów jednostkowych firmy Microsoft dla języka C++ w programie Visual Studio
 
 Struktura testów jednostkowych firmy Microsoft dla języka C++ jest domyślnie dołączona do **tworzenia aplikacji klasycznych przy użyciu obciążenia c++** .
 
-## <a name="to-write-unit-tests-in-a-separate-project"></a><a name="separate_project"></a>Aby napisać testy jednostkowe w osobnym projekcie
+## <a name="to-write-unit-tests-in-a-separate-project"></a><a name="separate_project"></a> Aby napisać testy jednostkowe w osobnym projekcie
 
 Zazwyczaj kod testowy jest uruchamiany w osobnym projekcie w tym samym rozwiązaniu co kod, który ma zostać przetestowany. Aby skonfigurować i skonfigurować nowy projekt testowy, zobacz [pisanie testów jednostkowych dla C/C++](writing-unit-tests-for-c-cpp.md).
 
-## <a name="to-write-unit-tests-in-the-same-project"></a><a name="same_project"></a>Aby napisać testy jednostkowe w tym samym projekcie
+## <a name="to-write-unit-tests-in-the-same-project"></a><a name="same_project"></a> Aby napisać testy jednostkowe w tym samym projekcie
 
 W niektórych przypadkach, na przykład podczas testowania niewyeksportowanych funkcji w bibliotece DLL, może być konieczne utworzenie testów w tym samym projekcie co program, który jest testowany. Aby zapisać testy jednostkowe w tym samym projekcie:
 
@@ -44,7 +44,7 @@ W niektórych przypadkach, na przykład podczas testowania niewyeksportowanych f
 
    - Kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  >  **nowy element**  >  **plik C++ (. cpp)**.
 
-## <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="object_files"></a>Aby połączyć testy z plikami obiektu lub biblioteki
+## <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="object_files"></a> Aby połączyć testy z plikami obiektu lub biblioteki
 
 Jeśli testowy kod nie eksportuje funkcji, które mają zostać przetestowane, można dodać plik Output **. obj** lub **. lib** do zależności projektu testowego. Zmodyfikuj właściwości projektu testowego, aby uwzględnić nagłówki i pliki bibliotek lub obiektów, które są wymagane do testowania jednostkowego.
 

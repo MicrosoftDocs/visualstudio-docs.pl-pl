@@ -1,5 +1,5 @@
 ---
-title: EVENTATTRIBUTES | Dokumenty firmy Microsoft
+title: EVENTATTRIBUTES | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c479058a5e6abb61fb419425706d2a8b26858d04
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737060"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
@@ -54,35 +54,35 @@ public enum enum_EVENTATTRIBUTES {
 
 ## <a name="fields"></a>Pola
 `EVENT_ASYNCHRONOUS`\
-Wskazuje, że zdarzenie jest asynchroniczne i nie jest wymagana żadna odpowiedź na zdarzenie.
+Wskazuje, że zdarzenie jest asynchroniczne i nie są konieczne żadne odpowiedzi na zdarzenie.
 
 `EVENT_SYNCHRONOUS`\
-Wskazuje, że zdarzenie jest synchroniczne; odpowiedź za pomocą [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
+Wskazuje, że zdarzenie jest synchroniczne; Odpowiedz przy użyciu metody [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
 
 `EVENT_STOPPING`\
-Wskazuje, że jest to zdarzenie zatrzymania. Muszą być połączone `EVENT_ASYNCHRONOUS` z `EVENT_SYNCHRONOUS`jednym lub .
+Wskazuje, że jest to zdarzenie zatrzymywania. Musi być połączony z albo `EVENT_ASYNCHRONOUS` `EVENT_SYNCHRONOUS` .
 
 `EVENT_ASYNC_STOP`\
-Wskazuje zdarzenie zatrzymania asynchroniiowego. Obecnie nie ma takiego zdarzenia. Ta flaga jest tylko symbolem zastępczym.
+Wskazuje asynchroniczne zdarzenie zatrzymywania. Obecnie nie ma takiego zdarzenia. Ta flaga jest tylko symbolem zastępczym.
 
 `EVENT_SYNC_STOP`\
-Wskazuje zdarzenie zatrzymania synchronicznego `EVENT_SYNCHRONOUS` (kombinacja `EVENT_STOPPING`i ). Ta wartość jest używana przez aparat debugowania (DE) podczas wysyła zdarzenie zatrzymania. Odpowiedź jest dokonywana za pomocą wywołania [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)lub [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
+Wskazuje synchroniczne zdarzenie zatrzymania (kombinację `EVENT_SYNCHRONOUS` i `EVENT_STOPPING` ). Ta wartość jest używana przez aparat debugowania (DE), gdy wysyła zdarzenie zatrzymania. Odpowiedź jest podejmowana przez wywołanie do [wykonania](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [krok](../../../extensibility/debugger/reference/idebugprogram2-step.md)lub [kontynuacja](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
 
 `EVENT_IMMEDIATE`\
-Wskazuje zdarzenie, które jest wysyłane natychmiast i synchronicznie do IDE. Ta flaga jest łączona `EVENT_SYNCHRONOUS`z `EVENT_SYNC_STOP` innymi flagami, takimi jak `EVENT_ASYNCHRONOUS`, lub w celu wskazania typu zdarzenia i faktu, że mechanizm odpowiedzi (jeśli istnieje) jest znany.
+Wskazuje zdarzenie, które jest wysyłane natychmiast i synchronicznie do IDE. Ta flaga jest połączona z innymi flagami, takimi jak `EVENT_ASYNCHRONOUS` , `EVENT_SYNCHRONOUS` , lub `EVENT_SYNC_STOP` wskazują typ zdarzenia i fakt, że mechanizm odpowiedzi (jeśli istnieje) jest znany.
 
 `EVENT_EXPRESSION_EVALUATION`\
-Zdarzenie jest wynikiem oceny wyrażenia.
+Zdarzenie jest wynikiem obliczenia wyrażenia.
 
 ## <a name="remarks"></a>Uwagi
-Te wartości są `dwAttrib` przekazywane w parametrze [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) metody.
+Te wartości są przesyłane w `dwAttrib` parametrze metody [zdarzenia](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) .
 
-Wartości te mogą być łączone z bitowym `OR`.
+Te wartości mogą być połączone z bitową `OR` .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

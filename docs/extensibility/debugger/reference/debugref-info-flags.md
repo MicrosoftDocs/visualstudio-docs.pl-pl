@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS | Dokumenty firmy Microsoft
+title: DEBUGREF_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cb10ae5d3b4ce9f8aa777f643d412e075bd5293f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737389"
 ---
 # <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
-Określa, jakie informacje mają być pobierane o obiekcie odwołania do debugowania.
+Określa, jakie informacje mają być pobierane na temat obiektu odwołania debugowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -58,43 +58,43 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 
 ## <a name="fields"></a>Pola
 `DEBUGREF_INFO_NAME`\
-Inicjowanie/używanie `bstrName` pola w strukturze.
+Zainicjuj/Użyj `bstrName` pola w strukturze.
 
 `DEBUGREF_INFO_TYPE`\
-Inicjowanie/używanie `bstrType` pola w strukturze.
+Zainicjuj/Użyj `bstrType` pola w strukturze.
 
 `DEBUGREF_INFO_VALUE`\
-Inicjowanie/używanie `bstrValue` pola w strukturze.
+Zainicjuj/Użyj `bstrValue` pola w strukturze.
 
 `DEBUGREF_INFO_ATTRIB`\
-Inicjowanie/używanie `dwAttrib` pola w strukturze.
+Zainicjuj/Użyj `dwAttrib` pola w strukturze.
 
 `DEBUGREF_INFO_REFTYPE`\
-Inicjowanie/używanie `dwRefType` pola w strukturze.
+Zainicjuj/Użyj `dwRefType` pola w strukturze.
 
 `DEBUGREF_INFO_REF`\
-Inicjowanie/używanie `pReference` pola w strukturze.
+Zainicjuj/Użyj `pReference` pola w strukturze.
 
 `DEBUGREF_INFO_VALUE_AUTOEXPAND`\
-Pole wartości powinno zawierać automatycznie rozwiniętą wartość dla tego typu obiektu, jeśli jest dostępna.
+Pole Value powinno zawierać wartość autoexpanded (jeśli jest dostępna) dla tego typu obiektu.
 
 `DEBUGREF_INFO_NONE`\
-Wskazuje, że nie ustawiono żadnych flag.
+Wskazuje, że flagi nie są ustawione.
 
 `DEBUGREF_INFO_ALL`\
 Wskazuje maskę flag.
 
 ## <a name="remarks"></a>Uwagi
-Flagi te są przekazywane do [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) i [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) metody, aby wskazać, które pola [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struktury mają zostać zainicjowane.
+Te flagi są przesyłane do metod [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) i [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) , aby wskazać, które pola struktury [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) mają być inicjowane.
 
-Używane dla `dwFields` elementu `DEBUG_REFERENCE_INFO` członkowskiego struktury, aby wskazać, które pola są używane i prawidłowe, gdy struktura jest zwracana.
+Używane dla `dwFields` składowej struktury, `DEBUG_REFERENCE_INFO` Aby wskazać, które pola są używane i są ważne podczas zwracania struktury.
 
-Wartości te mogą być łączone z bitowym `OR`.
+Te wartości mogą być połączone z bitową `OR` .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

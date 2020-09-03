@@ -13,10 +13,10 @@ caps.latest.revision: 34
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f669c4dcfb91579ac50270914112cd6388e2743
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547982"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Wskazówki: korzystanie z pliku konfiguracji do określania źródła danych
@@ -55,7 +55,7 @@ W tym instruktażu pokazano, jak używać źródła danych zdefiniowanego w plik
 
 3. Wybierz szablon **pliku konfiguracji aplikacji** , a następnie kliknij przycisk **Dodaj**.
 
-## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a>Definiowanie sekcji konfiguracji niestandardowej
+## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a> Definiowanie sekcji konfiguracji niestandardowej
  Zapoznaj się z plikiem app.config. Zawiera co najmniej deklarację XML i element główny.
 
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Aby dodać sekcję Konfiguracja niestandardowa do pliku app.config
@@ -64,7 +64,7 @@ W tym instruktażu pokazano, jak używać źródła danych zdefiniowanego w plik
 
 2. W `configSections` elemencie Utwórz `section` element.
 
-3. W `section` elemencie Dodaj atrybut o nazwie `name` i przypisz mu wartość równą `microsoft.visualstudio.testtools` . Dodaj inny atrybut o nazwie `type` i przypisz mu wartość równą`Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`
+3. W `section` elemencie Dodaj atrybut o nazwie `name` i przypisz mu wartość równą `microsoft.visualstudio.testtools` . Dodaj inny atrybut o nazwie `type` i przypisz mu wartość równą `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`
 
    `section`Element powinien wyglądać podobnie do tego:
 
@@ -112,13 +112,13 @@ W tym instruktażu pokazano, jak używać źródła danych zdefiniowanego w plik
 ## <a name="define-data-sources"></a>Definiowanie źródeł danych
  Sekcja źródła danych zawiera cztery atrybuty, które są używane przez aparat testowy do pobierania danych ze źródła danych.
 
-- `name`definiuje tożsamość używaną przez <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> program do określenia źródła danych, które ma być używane.
+- `name` definiuje tożsamość używaną przez <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> program do określenia źródła danych, które ma być używane.
 
-- `connectionString`Identyfikuje parametry połączenia utworzone w poprzedniej sekcji Definiowanie parametrów połączenia.
+- `connectionString` Identyfikuje parametry połączenia utworzone w poprzedniej sekcji Definiowanie parametrów połączenia.
 
-- `dataTableName`definiuje tabelę lub arkusz, który przechowuje dane do użycia w teście.
+- `dataTableName` definiuje tabelę lub arkusz, który przechowuje dane do użycia w teście.
 
-- `dataAccessMethod`definiuje technikę uzyskiwania dostępu do wartości danych w źródle danych.
+- `dataAccessMethod` definiuje technikę uzyskiwania dostępu do wartości danych w źródle danych.
 
   W tej sekcji zdefiniujesz dwa źródła danych, które zostaną użyte w teście jednostkowym.
 

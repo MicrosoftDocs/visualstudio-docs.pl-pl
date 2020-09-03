@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::DetachDebugger_V7 | Dokumenty firmy Microsoft
+title: IDebugProgramNode2::D etachDebugger_V7 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 925f1b07662ece35d21f9b647681bc898428c4c7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722105"
 ---
 # <a name="idebugprogramnode2detachdebugger_v7"></a>IDebugProgramNode2::DetachDebugger_V7
 
 > [!Note]
-> Przestarzałe. NIE UŻYWAĆ.
+> Przestarzałe. NIE NALEŻY UŻYWAĆ.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,14 +41,14 @@ int DetachDebugger_V7 ();
 
 ## <a name="return-value"></a>Wartość zwracana
 
-Implementacja powinna `E_NOTIMPL`zawsze zwracać .
+Implementacja powinna zawsze zwrócić `E_NOTIMPL` .
 
 ## <a name="remarks"></a>Uwagi
 
 > [!WARNING]
-> Od programu Visual Studio 2005 ta metoda nie `E_NOTIMPL`jest już używana i zawsze powinna zwracać .
+> Począwszy od programu Visual Studio 2005, ta metoda nie jest już używana i zawsze powinna zostać zwrócona `E_NOTIMPL` .
 
-Ta metoda jest wywoływana, gdy debuger nieoczekiwanie kończy pracę. Gdy ta metoda jest wywoływana, DE należy wznowić program tak, jakby użytkownik odłączony od niego. Nie więcej zdarzeń debugowania powinny być wysyłane. Program powinien być w stanie, w którym można dołączyć z innego wystąpienia debugera.
+Ta metoda jest wywoływana, gdy debuger nieoczekiwanie kończy pracę. Po wywołaniu tej metody DE powinien wznowić program tak, jakby został odłączony przez użytkownika. Nie należy wysyłać więcej zdarzeń debugowania. Program powinien znajdować się w stanie, w którym jest możliwy do dołączenia z innego wystąpienia debugera.
 
 ## <a name="see-also"></a>Zobacz też
 

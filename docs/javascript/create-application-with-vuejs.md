@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: e16b09a165421d36c67dad1fc657fd36846cd382
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285169"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Tworzenie aplikacji Vue.js przy użyciu narzędzi Node.js Tools for Visual Studio
@@ -31,7 +31,7 @@ Poniższe nowe funkcje obsługują Programowanie aplikacji Vue.js w programie Vi
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Musisz mieć zainstalowany program Visual Studio 2017 w wersji 15,8 lub nowszej orazNode.js obciążenie **programowaniem** .
+* Musisz mieć zainstalowany program Visual Studio 2017 w wersji 15,8 lub nowszej orazNode.js obciążenie ** programowaniem** .
 
     > [!IMPORTANT]
     > Ten artykuł wymaga funkcji, które są dostępne tylko w programie Visual Studio 2017 w wersji 15,8.
@@ -181,8 +181,8 @@ cd ../
 
 ## <a name="limitations"></a>Ograniczenia
 
-* `lang`atrybut obsługuje tylko języki JavaScript i TypeScript. Akceptowane są następujące wartości: JS, JSX, TS i TSX.
-* `lang`atrybut nie działa z tagami szablonu lub stylu.
+* `lang` atrybut obsługuje tylko języki JavaScript i TypeScript. Akceptowane są następujące wartości: JS, JSX, TS i TSX.
+* `lang` atrybut nie działa z tagami szablonu lub stylu.
 * Debugowanie bloków skryptu w plikach *. Vue* nie jest obsługiwane ze względu na jego wstępnie przetworzony charakter.
 * Język TypeScript nie rozpoznaje plików *Vue* jako modułów. Potrzebny jest plik, który zawiera kod, taki jak poniżej, aby poinformować program TypeScript, jak wyglądają pliki *. Vue* (szablon Vue-CLI 3,0 zawiera już ten plik).
 

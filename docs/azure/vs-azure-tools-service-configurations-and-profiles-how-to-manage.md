@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 55fc29117b1b01bd6c9b214d1db111af72127871
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911684"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Jak zarządzać profilami i konfiguracjami usług
@@ -59,7 +59,7 @@ Możesz również otworzyć okno dialogowe **Zarządzanie konfiguracjami** ze st
 * Jeśli chcesz zmienić konfigurację usługi, otwórz menu skrótów dla określonej roli, którą chcesz zmienić w projekcie platformy Azure, a następnie wybierz pozycję **Właściwości**. Aby uzyskać więcej informacji [, zobacz jak: Konfigurowanie ról dla usługi w chmurze platformy Azure w programie Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) .
 
 ## <a name="make-different-setting-combinations-by-using-profiles"></a>Ustawianie różnych kombinacji ustawień przy użyciu profilów
-Korzystając z profilu, można automatycznie wypełnić **Kreatora publikacji** różnymi kombinacjami ustawień do różnych celów. Na przykład można mieć jeden profil do debugowania i drugi dla kompilacji wydań. W takim przypadku Twój profil **debugowania** będzie **IntelliTrace** włączony i wybrana konfiguracja **debugowania** , a Twój profil **wydania** będzie **IntelliTrace** wyłączony i konfiguracja **wydania** niezaznaczone. Można również użyć różnych profilów do wdrożenia usługi przy użyciu innego konta magazynu.
+Korzystając z profilu, można automatycznie wypełnić **Kreatora publikacji** różnymi kombinacjami ustawień do różnych celów. Na przykład można mieć jeden profil do debugowania i drugi dla kompilacji wydań. W takim przypadku Twój profil **debugowania** będzie **IntelliTrace** włączony i wybrana konfiguracja **debugowania** , a Twój profil **wydania** będzie **IntelliTrace** wyłączony i wybraną konfiguracją **wydania** . Można również użyć różnych profilów do wdrożenia usługi przy użyciu innego konta magazynu.
 
 Po pierwszym uruchomieniu kreatora zostanie utworzony profil domyślny. Program Visual Studio przechowuje profil w pliku z rozszerzeniem. azurePubXml, które jest dodawane do projektu platformy Azure w folderze **Profile** . Jeśli ręcznie określisz różne opcje po uruchomieniu kreatora później, plik zostanie automatycznie zaktualizowany. Przed uruchomieniem poniższej procedury należy wcześniej opublikować usługę w chmurze co najmniej raz.
 
@@ -68,7 +68,7 @@ Po pierwszym uruchomieniu kreatora zostanie utworzony profil domyślny. Program 
 2. Obok listy **profil docelowy** wybierz przycisk **Zapisz profil** , jak pokazano na poniższej ilustracji. Spowoduje to utworzenie profilu.
 
     ![Utwórz nowy profil](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/create-new-profile.png)
-3. Po utworzeniu profilu wybierz pozycję **< Zarządzaj... >** na liście **profil docelowy** .
+3. Po utworzeniu profilu wybierz pozycję **<Zarządzaj... >** na liście **profil docelowy** .
 
     Zostanie wyświetlone okno dialogowe **Zarządzaj profilami** , jak pokazano na poniższej ilustracji.
 

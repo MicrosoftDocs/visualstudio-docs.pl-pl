@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgram | Dokumenty firmy Microsoft
+title: 'IDebugProgramPublisher2:: UnpublishProgram | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1fa3d111559a2c82fe36def202e5c1cf120c5202
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721586"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
@@ -41,13 +41,13 @@ int UnpublishProgram(
 
 ## <a name="parameters"></a>Parametry
 `pDebuggeeInterface`\
-[w] Interfejs `IUnknown` do programu. Jest to ta sama wartość dostarczona do [Metody PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) i jednoznacznie identyfikuje usuwany program (oznacza to, że jest używany jako plik cookie).
+podczas `IUnknown` Interfejs do programu. Jest to taka sama wartość, która jest dostarczana do metody [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) i jednoznacznie identyfikuje usuwany program (czyli jest używany jako plik cookie).
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Aby udostępnić program aparatom debugowania i menedżerowi debugowania sesji, użyj metody [PublishProgram.](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)
+ Aby udostępnić program dla aparatów debugowania i Menedżera debugowania sesji, należy użyć metody [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)

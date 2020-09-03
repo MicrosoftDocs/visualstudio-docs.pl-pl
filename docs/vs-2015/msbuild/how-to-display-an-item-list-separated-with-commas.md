@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wyświetlanie listy elementów rozdzielanych przecinkami | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Wyświetlanie listy elementów rozdzielanych przecinkami | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,42 +13,42 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 93451d6d49082621df48c734de951e6a4bc7e281
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156622"
 ---
-# <a name="how-to-display-an-item-list-separated-with-commas"></a>Instrukcje: Wyświetlanie listy elementów rozdzielanych przecinkami
+# <a name="how-to-display-an-item-list-separated-with-commas"></a>Porady: wyświetlanie listy elementów rozdzielanych przecinkami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas pracy z elementu listy w [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]), czasami jest to przydatne do wyświetlania zawartości listy tych elementów w sposób, który jest łatwy do odczytania. Lub możesz mieć do zadań, która przyjmuje listę elementów oddzielonych specjalne separatora. W obu przypadkach można określić ciąg separatora listy elementów.  
+Podczas pracy z listami elementów w programie [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ( [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ) czasami warto wyświetlić zawartość tych list elementów w sposób łatwy do odczytu. Można też mieć zadanie, które pobiera listę elementów oddzielonych od specjalnego ciągu separatora. W obu tych przypadkach można określić ciąg separatora dla listy elementów.  
   
-## <a name="separating-items-in-a-list-with-commas"></a>Oddziel przecinkami elementów na liście  
- Domyślnie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] używa średników do oddzielania elementów listy. Na przykład, rozważmy `Message` element z następujących wartości:  
+## <a name="separating-items-in-a-list-with-commas"></a>Oddzielanie elementów na liście przecinkami  
+ Domyślnie program [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] używa średników do rozdzielania elementów na liście. Rozważmy na przykład `Message` element o następującej wartości:  
   
  `<Message Text="This is my list of TXT files: @(TXTFile)"/>`  
   
- Gdy `@(TXTFile)` listy elementów zawiera elementy App1.txt, App2.txt i App3.txt, komunikat:  
+ Gdy `@(TXTFile)` Lista elementów zawiera elementy App1.txt, App2.txt i App3.txt, komunikat jest:  
   
  `This is my list of TXT files: App1.txt;App2.txt;App3.txt`  
   
- Jeśli chcesz zmienić domyślne zachowanie, możesz określić własne separatora. Składnia określająca element separatora listy jest następująca:  
+ Jeśli chcesz zmienić zachowanie domyślne, możesz określić własny separator. Składnia określająca separator listy elementów:  
   
  `@(ItemListName, '<separator>')`  
   
- Separator może być pojedynczy znak lub ciąg, a musi być ujęta w apostrofy.  
+ Separator może być pojedynczym znakiem lub ciągiem i musi być ujęty w cudzysłów pojedynczy.  
   
 #### <a name="to-insert-a-comma-and-a-space-between-items"></a>Aby wstawić przecinek i spację między elementami  
   
-- Notacja elementu podobny do następującego:  
+- Użyj notacji elementu podobnego do poniższego:  
   
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie [Exec](../msbuild/exec-task.md) zadanie jest uruchamiane narzędzie findstr, aby znaleźć ciągów tekstowych określonej w pliku Phrases.txt. W poleceniu findstr literałów ciągów znaków są wskazywane przez **/c:** przełączyć, więc separator elementów `/c:` jest wstawiany między elementami w `@(Phrase)` listy elementów.  
+ W tym przykładzie zadanie [exec](../msbuild/exec-task.md) uruchamia narzędzie findstr, aby znaleźć określone ciągi tekstowe w pliku, Phrases.txt. W poleceniu findstr ciągi wyszukiwania literału są wskazywane przez **/c:** przełącznik, więc separator elementu `/c:` jest wstawiany między elementami na `@(Phrase)` liście elementów.  
   
- W tym przykładzie jest równoważne wiersza polecenia:  
+ W tym przykładzie równoważne polecenie wiersza polecenia to:  
   
  `findstr /i /c:hello /c:world /c:msbuild phrases.txt`  
   
@@ -70,5 +70,5 @@ Podczas pracy z elementu listy w [!INCLUDE[vstecmsbuildengine](../includes/vstec
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)   
+ [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)   
  [Elementy](../msbuild/msbuild-items.md)

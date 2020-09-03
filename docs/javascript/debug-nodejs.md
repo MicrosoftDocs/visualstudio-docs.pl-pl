@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 801ea23430d13dbefd9498c57b07881235275961
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285195"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debugowanie aplikacji JavaScript lub TypeScript w programie Visual Studio
@@ -58,7 +58,7 @@ Jeśli źródło jest zminimalizowanego lub utworzone przez transstertę, taką 
 
 Aby uzyskać pomoc dotyczącą generowania map źródeł, zobacz [Generuj mapy źródeł na potrzeby debugowania](#generate_source_maps).
 
-### <a name="prepare-the-browser-for-debugging"></a><a name="prepare_the_browser_for_debugging"></a>Przygotowanie przeglądarki do debugowania
+### <a name="prepare-the-browser-for-debugging"></a><a name="prepare_the_browser_for_debugging"></a> Przygotowanie przeglądarki do debugowania
 
 ::: moniker range=">=vs-2019"
 W tym scenariuszu należy użyć przeglądarki Microsoft Edge (chrom), obecnie o nazwie **Microsoft Edge beta** w środowisku IDE lub w przeglądarce Chrome.
@@ -162,7 +162,7 @@ Aby dołączyć debuger z programu Visual Studio i trafić punkty przerwania w k
 
    * Jeśli trzeba podzielić na kod w przekształconym pliku JavaScript (na przykład *app-bundle.js*) i nie można go wykonać, usuń plik mapy źródłowej, *filename.js. map*.
 
-### <a name="troubleshooting-breakpoints-and-source-maps"></a><a name="troubleshooting_source_maps"></a>Rozwiązywanie problemów z punktami przerwania i mapy źródeł
+### <a name="troubleshooting-breakpoints-and-source-maps"></a><a name="troubleshooting_source_maps"></a> Rozwiązywanie problemów z punktami przerwania i mapy źródeł
 
 Jeśli musisz przerwać kod w pliku źródłowym TypeScript lub JSX i nie można go wykonać, użyj **dołączenia do procesu** , jak opisano w poprzednich krokach, aby dołączyć debuger. Upewnij się, że środowisko zostało prawidłowo skonfigurowane:
 
@@ -174,7 +174,7 @@ Jeśli musisz przerwać kod w pliku źródłowym TypeScript lub JSX i nie można
 
 Alternatywnie, jeśli trzeba podzielić na kod w pliku źródłowym (na przykład *App. TSX*) i nie można go wykonać, spróbuj użyć `debugger;` instrukcji w pliku źródłowym lub ustawić punkty przerwania w narzędzia deweloperskie Chrome (lub F12 narzędzia dla przeglądarki Microsoft Edge).
 
-## <a name="generate-source-maps-for-debugging"></a><a name="generate_source_maps"></a>Generuj mapy źródeł na potrzeby debugowania
+## <a name="generate-source-maps-for-debugging"></a><a name="generate_source_maps"></a> Generuj mapy źródeł na potrzeby debugowania
 
 Program Visual Studio oferuje możliwość używania i generowania map źródeł w plikach źródłowych JavaScript. Jest to często wymagane, jeśli źródło jest zminimalizowanego lub utworzone przez transstertę, taką jak TypeScript lub Babel. Dostępne opcje zależą od typu projektu.
 
@@ -197,7 +197,7 @@ Aby włączyć debugowanie przy użyciu programu Visual Studio, należy się upe
   },
 ```
 
-z tym kodem:
+następującym:
 
 ```javascript
   output: {
@@ -210,7 +210,7 @@ Jest to ustawienie tylko do programowania, które umożliwia debugowanie kodu po
 
 W przypadku skomplikowanych scenariuszy narzędzia przeglądarki (**F12**) czasami działają najlepiej do debugowania, ponieważ nie wymagają zmiany niestandardowych prefiksów.
 
-### <a name="configure-source-maps-using-a-tsconfigjson-file"></a><a name="configure_source_maps"></a>Skonfiguruj mapy źródłowe przy użyciu tsconfig.jsw pliku
+### <a name="configure-source-maps-using-a-tsconfigjson-file"></a><a name="configure_source_maps"></a> Skonfiguruj mapy źródłowe przy użyciu tsconfig.jsw pliku
 
 W przypadku dodania *tsconfig.js* pliku do projektu, program Visual Studio traktuje katalog główny katalogu jako projekt TypeScript. Aby dodać plik, kliknij prawym przyciskiem myszy projekt w Eksplorator rozwiązań, a następnie wybierz polecenie **dodaj > nowy element > pliku konfiguracji języka TYPESCRIPT JSON**. Do projektu dodano *tsconfig.jsw* pliku, podobnie jak następujące.
 
