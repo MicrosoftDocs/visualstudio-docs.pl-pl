@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4b57a5bd51ff20de8da87798aa398db04bc1c7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567778"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
-Identyfikuje pojedynczy projekt w ramach określonej konfiguracji rozwiązania do tworzenia, czyszczenia, przebudowy lub wdrażania.
+Identyfikuje pojedynczy projekt w ramach określonej konfiguracji rozwiązania do kompilowania, czyszczenia, odbudowy lub wdrożenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,35 +41,35 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
 
-  Wymagany. [Tworzy,](build-devenv-exe.md) [czyści,](clean-devenv-exe.md) [wdraża](deploy-devenv-exe.md)lub [odbudowuje](rebuild-devenv-exe.md) projekt.
+  Wymagany. [Kompiluje](build-devenv-exe.md), [czyści](clean-devenv-exe.md), [wdraża](deploy-devenv-exe.md)lub ponownie [kompiluje](rebuild-devenv-exe.md) projekt.
 
-- *Nazwa SolnConfigName*
+- *SolnConfigName*
 
-  Element opcjonalny. Nazwa konfiguracji rozwiązania (na `Debug` przykład `Release`lub) zastosowana do rozwiązania o nazwie w *rozwiązaniu SolutionName*. Jeśli dostępna jest więcej niż jedna platforma rozwiązania, należy `Debug|Win32`również określić platformę (na przykład). Jeśli ten argument jest nieokreślony lub`""`pusty ciąg ( ), narzędzie używa aktywnej konfiguracji rozwiązania.
+  Opcjonalny. Nazwa konfiguracji rozwiązania (na przykład `Debug` lub `Release` ) zastosowana do rozwiązania o nazwie w *SolutionName*. Jeśli jest dostępna więcej niż jedna platforma rozwiązania, należy również określić platformę (na przykład `Debug|Win32` ). Jeśli ten argument jest nieokreślony lub jest ciągiem pustym ( `""` ), narzędzie używa aktywnej konfiguracji rozwiązania.
 
-- `/Project`*Nazwa proj*
+- `/Project` *ProjName*
 
-  Element opcjonalny. Ścieżka i nazwa pliku projektu w rozwiązaniu. Można wprowadzić nazwę wyświetlaną projektu lub ścieżkę względną z folderu *SolutionName* do pliku projektu. Można również wprowadzić pełną ścieżkę i nazwę pliku projektu.
+  Opcjonalny. Ścieżka i nazwa pliku projektu w ramach rozwiązania. Możesz wprowadzić nazwę wyświetlaną projektu lub ścieżkę względną z folderu *SolutionName* do pliku projektu. Możesz również wprowadzić pełną ścieżkę i nazwę pliku projektu.
 
-- `/ProjectConfig`*Nazwa ProjConfigName*
+- `/ProjectConfig`*ProjConfigName*
 
-  Element opcjonalny. Nazwa konfiguracji kompilacji projektu (na przykład `Debug` lub `Release`) `/Project` do zastosowania do nazwanego. Jeśli dostępna jest więcej niż jedna platforma rozwiązania, należy `Debug|Win32`również określić platformę (na przykład).
+  Opcjonalny. Nazwa konfiguracji kompilacji projektu (taka jak `Debug` lub), `Release` która ma zostać zastosowana do `/Project` nazwanego. Jeśli jest dostępna więcej niż jedna platforma rozwiązania, należy również określić platformę (na przykład `Debug|Win32` ).
 
-- `/Out`*Plik wyjściowy*
+- `/Out`*OutputFilename*
 
-  Element opcjonalny. Nazwa pliku, do którego chcesz wysłać dane wyjściowe narzędzia. Jeśli plik już istnieje, narzędzie dołącza dane wyjściowe na końcu pliku.
+  Opcjonalny. Nazwa pliku, do którego chcesz wysłać dane wyjściowe narzędzia. Jeśli plik już istnieje, narzędzie dołącza dane wyjściowe do końca pliku.
 
 ## <a name="remarks"></a>Uwagi
 
-- Musi być używana `devenv` `/Build`część `/Clean` `/Rebuild`, `/Deploy` , lub polecenia.
+- Musi być użyta część `devenv` `/Build` polecenia, `/Clean` , `/Rebuild` lub `/Deploy` .
 
-- Łącz ciągi, które zawierają spacje w cudzysłowie podwójnym.
+- Ujmij ciągi, które zawierają spacje w podwójnym cudzysłowie.
 
-- Informacje podsumowujące dla kompilacji, w tym błędy, mogą być wyświetlane w oknie `/Out` **polecenia** lub w dowolnym pliku dziennika określonym za pomocą przełącznika.
+- Informacje podsumowujące dla kompilacji, w tym błędy, można wyświetlić w oknie **polecenia** lub w dowolnym pliku dziennika określonym za pomocą `/Out` przełącznika.
 
 ## <a name="example"></a>Przykład
 
-W tym przykładzie `CSharpWinApp`tworzy `Debug` projekt, przy `MySolution`użyciu konfiguracji kompilacji projektu w ramach .
+Ten przykład kompiluje projekt `CSharpWinApp` przy użyciu `Debug` konfiguracji kompilacji projektu w programie `MySolution` .
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
@@ -81,6 +81,6 @@ devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /proj
 - [/ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
-- [/Odbuduj (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
 - [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

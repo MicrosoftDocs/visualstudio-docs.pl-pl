@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a1701322bec623c6bb2657f78ecdcc1dc16dde1
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85327670"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Instrukcje: ręczne tworzenie sesji wydajności
@@ -39,4 +39,4 @@ Sesję wydajności można utworzyć ręcznie. Nie jest wymagane Otwieranie proje
 
 ## <a name="see-also"></a>Zobacz też
 - [Eksplorator wydajności](../profiling/performance-explorer.md)
-- [Wprowadzenie](../profiling/getting-started-with-performance-tools.md)
+- [Rozpoczęcie pracy](../profiling/getting-started-with-performance-tools.md)

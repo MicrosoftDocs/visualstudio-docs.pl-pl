@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d345d532c29931577edbe0441003cc80b069e335
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289147"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Przewodnik: Tworzenie zadania wbudowanego
@@ -240,11 +240,11 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
 
    Ten kod definiuje zadanie wbudowane o nazwie RegX i ma trzy parametry:
 
-- `Expression`jest wymaganym parametrem wejściowym ciągu, który ma wartość, która jest wyrażeniem regularnym do dopasowania. W tym przykładzie wyrażenie pasuje do wyrazów "Public" lub "Protected".
+- `Expression` jest wymaganym parametrem wejściowym ciągu, który ma wartość, która jest wyrażeniem regularnym do dopasowania. W tym przykładzie wyrażenie pasuje do wyrazów "Public" lub "Protected".
 
-- `Files`jest parametrem wejściowym listy wymaganych elementów, który ma wartość, która jest listą plików, które mają być wyszukiwane dla dopasowania. W tym przykładzie `Files` jest ustawiony na `Compile` element, który zawiera listę źródłowych plików projektu.
+- `Files` jest parametrem wejściowym listy wymaganych elementów, który ma wartość, która jest listą plików, które mają być wyszukiwane dla dopasowania. W tym przykładzie `Files` jest ustawiony na `Compile` element, który zawiera listę źródłowych plików projektu.
 
-- `Result`jest parametrem wyjściowym, który ma wartość, która jest listą plików, które pasują do wyrażenia regularnego.
+- `Result` jest parametrem wyjściowym, który ma wartość, która jest listą plików, które pasują do wyrażenia regularnego.
 
   Wartość parametrów wejściowych ustawia się, gdy obiekt docelowy TestBuild wywołuje zadanie RegX. Zadanie RegX odczytuje każdy plik i zwraca listę plików, które pasują do wyrażenia regularnego. Ta lista jest zwracana jako `Result` parametr wyjściowy, który jest emitowany jako element MSBuild `MatchedFiles` .
 
@@ -268,4 +268,4 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
 
 - [Zadania wbudowane](../msbuild/msbuild-inline-tasks.md)
 - [Zadania](../msbuild/msbuild-tasks.md)
-- [Obiekty docelowe](../msbuild/msbuild-targets.md)
+- [Targets (Obiekty docelowe)](../msbuild/msbuild-targets.md)

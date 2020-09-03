@@ -1,5 +1,5 @@
 ---
-title: Dopasowywanie nawiasów klamrowych w starszej usłudze językowej | Dokumenty firmy Microsoft
+title: Dopasowywanie nawiasów klamrowych w starszej wersji usługi językowej | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,45 +12,45 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0081be3e3ab5a53f7d85f77475d4288aa5c87092
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709816"
 ---
-# <a name="brace-matching-in-a-legacy-language-service"></a>Dopasowywanie nawiasów klamrowych w starszej usłudze językowej
-Dopasowywanie nawiasów klamrowych pomaga deweloperowi śledzić elementy języka, które muszą występować razem, takie jak nawiasy i nawiasy klamrowe. Gdy deweloper wprowadzi nawias zamykający, wyróżniony jest nawias otwierający.
+# <a name="brace-matching-in-a-legacy-language-service"></a>Dopasowywanie nawiasów klamrowych w starszej wersji usługi językowej
+Dopasowywanie nawiasów klamrowych pomaga elementom języka śledzenia dla deweloperów, które muszą występować razem, takich jak nawiasy i nawiasy klamrowe. Gdy programista wprowadzi zamykający nawias klamrowy, otwierający nawias klamrowy zostanie wyróżniony.
 
- Można dopasować dwa lub trzy współnastępujące elementy, zwane parami i trójkami. Trójki to zestawy trzech współnastępujących elementów. Na przykład w języku `foreach` C#instrukcja `foreach()`tworzy `{`potrójną: , , i `}`. Wszystkie trzy elementy są podświetlane po wpisaniu nawiasu klamrowego.
+ Można dopasować dwa lub trzy elementy wspólne, nazywane parami i potrójną. Potrójne są zestawami trzech elementów współpracujących. Na przykład w języku C# `foreach` instrukcja tworzy trzy: `foreach()` , `{` , i `}` . Wszystkie trzy elementy są podświetlane po wpisaniu zamykającego nawiasu klamrowego.
 
- Starsze usługi języka są implementowane jako część VSPackage, ale nowszym sposobem implementowania funkcji usługi języka jest użycie rozszerzeń MEF. Aby dowiedzieć się więcej o nowym sposobie implementacji dopasowywania nawiasów klamrowych, zobacz [Przewodnik: Wyświetlanie pasujących nawiasów klamrowych](../../extensibility/walkthrough-displaying-matching-braces.md).
+ Starsze usługi językowe są implementowane w ramach pakietu VSPackage, ale nowszym sposobem implementacji funkcji usługi językowej jest korzystanie z rozszerzeń MEF. Aby dowiedzieć się więcej o nowym sposobie implementowania dopasowywania nawiasów klamrowych, zobacz [Przewodnik: wyświetlanie pasujących nawiasów klamrowych](../../extensibility/walkthrough-displaying-matching-braces.md).
 
 > [!NOTE]
-> Zaleca się, aby rozpocząć korzystanie z nowego interfejsu API edytora tak szybko, jak to możliwe. Poprawi to wydajność usługi językowej i umożliwi korzystanie z nowych funkcji edytora.
+> Zalecamy rozpoczęcie korzystania z nowego interfejsu API edytora tak szybko, jak to możliwe. Poprawi to wydajność usługi językowej i pozwala korzystać z nowych funkcji edytora.
 
- Klasa <xref:Microsoft.VisualStudio.Package.AuthoringSink> obsługuje zarówno pary, jak <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> i <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> trójki z i metod.
+ <xref:Microsoft.VisualStudio.Package.AuthoringSink>Klasa obsługuje obie pary i trzykrotnie przy użyciu <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> metod i <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> .
 
-## <a name="implementation"></a>Wdrażanie
- Usługa języka musi zidentyfikować wszystkie dopasowane elementy w języku, a następnie zlokalizować wszystkie pasujące pary. Jest to zazwyczaj realizowane przez <xref:Microsoft.VisualStudio.Package.IScanner> implementowanie do wykrywania dopasowanego języka, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> a następnie przy użyciu metody, aby dopasować elementy.
+## <a name="implementation"></a>Implementacja
+ Usługa językowa musi identyfikować wszystkie dopasowane elementy w języku, a następnie lokalizować wszystkie zgodne pary. Jest to zazwyczaj realizowane przez implementację <xref:Microsoft.VisualStudio.Package.IScanner> w celu wykrycia dopasowanego języka, a następnie zastosowania <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody do dopasowania do elementów.
 
- Metoda <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> wywołuje skanera tokenize wiersza i zwraca token tuż przed caret. Skaner wskazuje, że para elementów języka została znaleziona <xref:Microsoft.VisualStudio.Package.TokenTriggers> przez ustawienie wartości wyzwalacza tokenu na bieżącym tokenie. Metoda <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> wywołuje <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> metodę, która z <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> kolei wywołuje metodę z <xref:Microsoft.VisualStudio.Package.ParseReason> wartością przyczyny analizy, aby zlokalizować pasujący element języka. Po znalezieniu pasującego elementu języka oba elementy są wyróżnione.
+ <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>Metoda wywołuje skaner, aby tokenize wiersz i zwracać token tuż przed karetką. Skaner wskazuje, że para elementów języka została znaleziona przez ustawienie wartości wyzwalacza tokenu <xref:Microsoft.VisualStudio.Package.TokenTriggers> dla bieżącego tokenu. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>Metoda wywołuje <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> metodę, która z kolei wywołuje <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> metodę z wartością przyczyny analizy, <xref:Microsoft.VisualStudio.Package.ParseReason> Aby zlokalizować pasujący element języka. Gdy zostanie znaleziony pasujący element języka, oba elementy są wyróżnione.
 
- Aby uzyskać pełny opis sposobu wpisywania nawiasu klamrowego wyzwala wyróżnianie nawiasu klamrowego, zobacz przykładową *sekcję operacji analizy* w artykule [Starsza analizator usługi języka i skaner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
+ Pełny opis sposobu pisania nawiasów klamrowych wyzwala wyróżnianie nawiasów klamrowych, zapoznaj się z sekcją *Przykładowa operacja analizy* w artykule [Starsza wersja programu Service parser i skaner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
 
-## <a name="enable-support-for-brace-matching"></a>Włącz obsługę dopasowywania nawiasów klamrowych
- Atrybut <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> można ustawić **MatchBraces**, **MatchBracesAtCaret**i **ShowMatchingBrace** wpisy rejestru, które <xref:Microsoft.VisualStudio.Package.LanguagePreferences> ustawiają odpowiednie właściwości klasy. Właściwości preferencji językowych mogą być również ustawiane przez użytkownika.
+## <a name="enable-support-for-brace-matching"></a>Włącz obsługę dopasowania nawiasów klamrowych
+ Ten <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atrybut może ustawiać wpisy rejestru **MatchBraces**, **MatchBracesAtCaret**i **ShowMatchingBrace** , które ustawiają odpowiednie właściwości <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy. Właściwości preferencji języka mogą być również ustawiane przez użytkownika.
 
 |Wpis rejestru|Właściwość|Opis|
 |--------------------|--------------|-----------------|
-|MatchBraces ( MatchBraces )|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Umożliwia dopasowywanie nawiasów klamrowych.|
-|MatchBracesAtCaret ( MatchBracesAtCaret )|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Włącza dopasowywanie nawiasów klamrowych w miarę przenoszenia się cieczy.|
-|ShowMatchingBrace (PokażMatchingBrace)|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|Podświetla pasujący nawias klamrowy.|
+|MatchBraces|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Włącza Dopasowywanie nawiasów klamrowych.|
+|MatchBracesAtCaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Włącza Dopasowywanie nawiasów klamrowych w miarę przesuwania karetki.|
+|ShowMatchingBrace|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|Podświetla pasujący nawias klamrowy.|
 
-## <a name="match-conditional-statements"></a>Dopasowywuj instrukcje warunkowe
- Można dopasować instrukcje warunkowe, `else`takie `#if`jak `#elif` `if` `#else`, `#endif` `else if`i , lub , , w taki sam sposób jak pasujące ograniczniki. Można podklasy <xref:Microsoft.VisualStudio.Package.AuthoringSink> klasy i podać metodę, która może dodawać zakresy tekstu, a także ograniczniki do wewnętrznej tablicy pasujących elementów.
+## <a name="match-conditional-statements"></a>Dopasuj instrukcje warunkowe
+ Można dopasować instrukcje warunkowe, takie jak `if` , `else if` , i `else` , lub `#if` ,,, `#elif` w taki `#else` `#endif` sam sposób jak ograniczniki. Można podtworzyć podklasę <xref:Microsoft.VisualStudio.Package.AuthoringSink> klasy i udostępnić metodę, która może dodawać zakresy tekstu, a także ograniczniki do wewnętrznej tablicy pasujących elementów.
 
 ## <a name="set-the-trigger"></a>Ustawianie wyzwalacza
- W poniższym przykładzie pokazano, jak wykryć pasujące nawiasy, nawiasy klamrowe i nawiasy klamrowe kwadratowe oraz ustawienie wyzwalacza dla niego w skanerze. Metoda <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> w <xref:Microsoft.VisualStudio.Package.Source> klasie wykrywa wyzwalacz i wywołuje analizatora, aby znaleźć pasującą parę (zobacz *sekcję Znajdowanie dopasowania* w tym artykule). Ten przykład służy wyłącznie do celów ilustracyjnych. Przyjęto założenie, że skaner `GetNextToken` zawiera metodę, która identyfikuje i zwraca tokeny z wiersza tekstu.
+ Poniższy przykład pokazuje, jak wykrywać pasujące nawiasy, nawiasy klamrowe i kwadratowe nawiasy klamrowe oraz ustawić wyzwalacz dla niego w skanerze. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>Metoda <xref:Microsoft.VisualStudio.Package.Source> klasy wykrywa wyzwalacz i wywołuje parser, aby znaleźć pasującą parę (zobacz sekcję *Znajdowanie dopasowania* w tym artykule). Ten przykład służy tylko do celów informacyjnych. Przyjęto założenie, że skaner zawiera metodę `GetNextToken` , która identyfikuje i zwraca tokeny z wiersza tekstu.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -84,8 +84,8 @@ namespace TestLanguagePackage
         }
 ```
 
-## <a name="match-the-braces"></a>Dopasuj nawiasy klamrowe
- Oto uproszczony przykład dopasowywania `{ }` `( )`elementów `[ ]`języka i , i <xref:Microsoft.VisualStudio.Package.AuthoringSink> dodawania ich zakresów do obiektu. Takie podejście nie jest zalecane podejście do analizowania kodu źródłowego; wyłącznie w celach ilustracyjnych.
+## <a name="match-the-braces"></a>Dopasowuje nawiasy klamrowe
+ Poniżej przedstawiono uproszczony przykład dopasowywania elementów języka `{ }` , `( )` i i `[ ]` dodawania ich zakresów do <xref:Microsoft.VisualStudio.Package.AuthoringSink> obiektu. Takie podejście nie jest zalecanym podejściem do analizowania kodu źródłowego; jest to tylko do celów informacyjnych.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -136,5 +136,5 @@ namespace TestLanguagePackage
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Starsze funkcje usługi językowej](../../extensibility/internals/legacy-language-service-features1.md)
-- [Starsza usługa obsługi języka analizator i skaner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
+- [Funkcje starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-features1.md)
+- [Analizator i skaner starszej usługi językowej](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

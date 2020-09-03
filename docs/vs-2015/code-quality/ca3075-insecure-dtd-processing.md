@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d8cd78b529618504b5f14905a764c369da249fe2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545174"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Niezabezpieczone przetwarzanie definicji DTD
@@ -35,13 +35,13 @@ ms.locfileid: "85545174"
 
 - <xref:System.Xml.XmlNode.InnerXml%2A>Właściwość w pliku XML jest ustawiona.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>Właściwość jest ustawiona na wartość Parse.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> Właściwość jest ustawiona na wartość Parse.
 
 - Niezaufane dane wejściowe są przetwarzane przy użyciu <xref:System.Xml.XmlResolver> zamiast <xref:System.Xml.XmlSecureResolver> .
 
 - Element XmlReader.<xref:System.Xml.XmlReader.Create%2A> Metoda jest wywoływana z niezabezpieczonym <xref:System.Xml.XmlReaderSettings> wystąpieniem lub bez wystąpienia.
 
-- <xref:System.Xml.XmlReader>jest tworzony z niezabezpieczonymi domyślnymi ustawieniami lub wartościami.
+- <xref:System.Xml.XmlReader> jest tworzony z niezabezpieczonymi domyślnymi ustawieniami lub wartościami.
 
   W każdym z tych przypadków wynik jest taki sam: zawartość z systemu plików lub udziałów sieciowych z komputera, na którym jest przetwarzany kod XML, zostanie uwidoczniona dla osoby atakującej, która może być następnie użyta jako wektor DoS.
 

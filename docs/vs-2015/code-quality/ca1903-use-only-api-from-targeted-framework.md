@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 10649b4106a280089fd6b086167c7e92bff1300b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545252"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Używaj tylko interfejsu API platformy docelowej
@@ -48,7 +48,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1903: U�
 |.NET Framework 2.0|.NET Framework 2,0 z dodatkiem SP1, .NET Framework 2,0 SP2|
 |.NET Framework 3.0|.NET Framework 2,0 z dodatkiem SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
 |Program .NET Framework 3,5|.NET Framework 3.5 SP1|
-|Program .NET Framework 4|Nie dotyczy|
+|Program .NET Framework 4|Brak|
 
  Aby zmienić platformę docelową projektu, zobacz [Określanie docelowej wersji .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
 

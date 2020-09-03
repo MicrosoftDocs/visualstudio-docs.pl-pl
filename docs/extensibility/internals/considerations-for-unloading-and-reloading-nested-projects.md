@@ -1,5 +1,5 @@
 ---
-title: Zagadnienia dotyczące rozładunku i przeładunku projektów zagnieżdżonych | Dokumenty firmy Microsoft
+title: Zagadnienia dotyczące zwalniania i ponownego ładowania zagnieżdżonych projektów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,29 +12,29 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2ab705953eea1fcac99883bb4f88c0e95eced108
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709287"
 ---
-# <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Zagadnienia dotyczące rozładunku i przeładunku projektów zagnieżdżonych
+# <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Zagadnienia dotyczące zwalniania i ponownego ładowania zagnieżdżonych projektów
 
-Podczas implementowania zagnieżdżonych typów projektów, należy wykonać dodatkowe kroki podczas zwalniania i ponownego ładowania projektów. Aby poprawnie powiadomić detektory o zdarzeniach `OnBeforeUnloadProject` `OnAfterLoadProject` rozwiązania, należy poprawnie podnieść i zdarzenia.
+Podczas implementowania zagnieżdżonych typów projektów należy wykonać dodatkowe czynności podczas zwalniania i ponownego ładowania projektów. Aby poprawnie powiadomić odbiorniki do zdarzeń rozwiązania, należy prawidłowo podnieść `OnBeforeUnloadProject` `OnAfterLoadProject` zdarzenia i.
 
-Jednym z powodów, aby podnieść te zdarzenia jest kontroli kodu źródłowego (SCC). Nie chcesz SCC usunąć elementy z serwera, a następnie dodać je z `Get` powrotem jako *nowe,* jeśli istnieje operacja z SCC. W takim przypadku nowy plik zostanie załadowany z SCC. Musisz zwolnić i ponownie załadować wszystkie pliki w przypadku, gdy są one różne.
+Jedną z przyczyn podniesienia tych zdarzeń jest kontrola kodu źródłowego (SCC). Nie chcesz, aby SCC usunął elementy z serwera, a następnie dodać je ponownie jako *nowe* , jeśli istnieje `Get` operacja z SCC. W takim przypadku nowy plik zostanie załadowany z SCC. Musisz zwolnić i załadować ponownie wszystkie pliki, jeśli są różne.
 
-Wywołania `ReloadItem`kontroli kodu źródłowego . Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> interfejs do wywołania `OnBeforeUnloadProject` i `OnAfterLoadProject` usunięcia projektu i ponownego utworzenia go. Po zaimplementowanie interfejsu w ten sposób, SCC jest informowany, że projekt został tymczasowo usunięty i dodany ponownie. W związku z tym SCC nie działa na projekcie tak, jakby projekt został *faktycznie* usunięty i ponownie dodany.
+Wywołania kontroli kodu źródłowego `ReloadItem` . Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> interfejs, aby wywołać `OnBeforeUnloadProject` i `OnAfterLoadProject` usunąć projekt i utworzyć go ponownie. Po zaimplementowaniu interfejsu w ten sposób, SCC zostanie poinformowany o tym, że projekt został tymczasowo usunięty i ponownie dodany. W związku z tym SCC nie działa w projekcie tak, jakby projekt został *rzeczywiście* usunięty i dodany do niego.
 
-## <a name="reload-projects"></a>Przeładuj projekty
+## <a name="reload-projects"></a>Załaduj ponownie projekty
 
-Aby obsługiwać ponowne ładowanie projektów zagnieżdżonych, należy zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> metodę. W implementacji `ReloadItem`programu zamknij projekty zagnieżdżone, a następnie ponownie je tworzysz.
+Aby obsługiwać ponowne ładowanie zagnieżdżonych projektów, należy zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> metodę. W implementacji programu `ReloadItem` można zamknąć zagnieżdżone projekty, a następnie utworzyć je ponownie.
 
-Zazwyczaj, gdy projekt jest ponownie załadowany, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A> IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> wywołuje i zdarzenia. Jednak dla projektów zagnieżdżonych, które są usuwane i ponownie załadowany, projekt nadrzędny inicjuje proces, a nie IDE. Ponieważ projekt nadrzędny nie wywołuje zdarzeń rozwiązania, a IDE nie ma informacji o inicjalizacji procesu, zdarzenia nie są wywoływane.
+Zwykle po ponownym załadowaniu projektu środowisko IDE wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> zdarzenia i. Jednak w przypadku projektów zagnieżdżonych, które są usuwane i ponownie ładowane, projekt nadrzędny inicjuje proces, a nie IDE. Ponieważ projekt nadrzędny nie zgłasza zdarzeń rozwiązania, a IDE nie ma informacji o inicjalizacji procesu, zdarzenia nie są zgłaszane.
 
-Aby obsłużyć ten `QueryInterface` proces, projekt nadrzędny wywołuje interfejs. <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> `IVsFireSolutionEvents`ma funkcje, które mówią `OnBeforeUnloadProject` IDE do podniesienia zdarzenia, aby `OnAfterLoadProject` zwolnić zagnieżdżonego projektu, a następnie podnieść zdarzenie, aby ponownie załadować tego samego projektu.
+Aby obsłużyć ten proces, projekt nadrzędny jest wywoływany przez ten `QueryInterface` <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> interfejs. `IVsFireSolutionEvents` Program zawiera funkcje, które informują IDE o podniesieniu `OnBeforeUnloadProject` zdarzenia w celu zwolnienia projektu zagnieżdżonego, a następnie podniesienia `OnAfterLoadProject` zdarzenia w celu ponownego załadowania tego samego projektu.
 
 ## <a name="see-also"></a>Zobacz też
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>
-- [Projekty nest](../../extensibility/internals/nesting-projects.md)
+- [Zagnieżdżanie projektów](../../extensibility/internals/nesting-projects.md)

@@ -1,5 +1,5 @@
 ---
-title: Stosowanie ustawień w wielu połączeniach projektu | Dokumenty firmy Microsoft
+title: Stosowanie ustawień dla wielu połączeń projektów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,28 +11,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bcaed0f7f2380dd36bcbffd776839025fe9efa16
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710058"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Stosowanie ustawień w wielu połączeniach projektu
-Wtyczka kontroli źródła zbudowana przy użyciu interfejsu API wtyczki kontroli źródła w wersji 1.2 może używać operacji wsadowej do wykonywania tej samej operacji kontroli źródła w wielu projektach lub w wielu kontekstach połączeń. Partie mogą służyć do wyeliminowania nadmiarowych okien dialogowych dla projektu z środowiska użytkownika.
+Wtyczka do kontroli źródła utworzona przy użyciu wtyczki kontroli źródła w wersji 1,2, może użyć operacji wsadowej do wykonania tej samej operacji kontroli źródła w wielu projektach lub wielu kontekstach połączenia. Partie mogą służyć do eliminowania nadmiarowych okien dialogowych dla projektu ze środowiska użytkownika.
 
- Jeśli użytkownik wybierze wiele elementów, które należą do więcej niż jednego połączenia w usłudze kontroli źródła wbudowanej przy użyciu interfejsu API wtyczki kontroli źródła w wersji 1.1 (na przykład dwa projekty sieci Web na różnych komputerach współużytkujących pliki) i wyewidencjonowuje je, użytkownik wielokrotnie widzi to samo okno dialogowe. W tym scenariuszu występuje, nawet jeśli użytkownik kliknie zastosuj **do wszystkich** pole wyboru w oknie dialogowym, ponieważ IDE resetuje swój stan dla każdego kontekstu połączenia.
+ Jeśli użytkownik wybierze wiele elementów, które należą do więcej niż jednego połączenia w wtyczki kontroli źródła utworzonym przy użyciu interfejsu API dodatku plug-in kontroli źródła w wersji 1,1 (na przykład dwa projekty sieci Web na różnych maszynach udziałów plików) i sprawdza je, użytkownik zobaczy to samo okno dialogowe. Ten scenariusz występuje nawet wtedy, gdy użytkownik kliknie pole wyboru **Zastosuj do wszystkich** w oknie dialogowym, ponieważ IDE resetuje swój stan dla każdego kontekstu połączenia.
 
-## <a name="new-capability-flag"></a>Flaga nowych możliwości
- Funkcja `SccBeginBatch` ustawia `SCC_CAP_BATCH` flagę, aby wskazać, że operacja wsadowa jest w toku.
+## <a name="new-capability-flag"></a>Nowa flaga możliwości
+ `SccBeginBatch`Funkcja ustawia `SCC_CAP_BATCH` flagę, aby wskazać, że operacja wsadowa jest w toku.
 
 ## <a name="new-functions"></a>Nowe funkcje
-Następujące nowe funkcje obsługują operację wsadowego:
+Następujące nowe funkcje obsługują operację wsadową:
 
 - [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
 
 - [SccEndBatch](../../extensibility/sccendbatch-function.md)
 
-Funkcja `SCCBeginBatch` uruchamia grupę operacji kontroli źródła. Funkcja `SccEndBatch` zamyka grupę. Grupy nie mogą być zagnieżdżone.
+`SCCBeginBatch`Funkcja uruchamia grupę operacji kontroli źródła. `SccEndBatch`Funkcja zamyka grupę. Grupy nie mogą być zagnieżdżane.
 
 ## <a name="see-also"></a>Zobacz też
-- [Co nowego w interfejsie API wtyczki kontroli źródła w wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+- [Co nowego w interfejsie API dodatku plug-in kontroli źródła w wersji 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

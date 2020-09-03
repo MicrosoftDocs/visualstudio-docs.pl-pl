@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a1f606ed9e3d42d9f57cb941ee9518c1abfbc47
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289212"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Zadania wbudowane programu MSBuild przy użyciu fabryki RoslynCodeTaskFactory
@@ -64,7 +64,7 @@ Pozostałe elementy `DoNothing` zadania są puste i są dostarczane w celu zilus
 
 - `Using`Element zawiera listę przestrzeni nazw, do których chcesz uzyskać dostęp. Jest to podobne do `Using` instrukcji w Visual C#. `Namespace`Atrybut określa przestrzeń nazw do uwzględnienia.
 
-`Reference`i `Using` są elementami języka niezależny od. Zadania wbudowane można napisać w jednym z obsługiwanych języków języka .NET CodeDom, na przykład Visual Basic lub Visual C#.
+`Reference` i `Using` są elementami języka niezależny od. Zadania wbudowane można napisać w jednym z obsługiwanych języków języka .NET CodeDom, na przykład Visual Basic lub Visual C#.
 
 > [!NOTE]
 > Elementy zawarte w `Task` elemencie są specyficzne dla fabryki zadań, w tym przypadku fabryki zadań Code.
@@ -140,13 +140,13 @@ Zadanie HelloWorld można zapisać w pliku o nazwie *HelloWorld. targets*, a nas
 
 Parametry mogą mieć jeden lub więcej z następujących atrybutów:
 
-- `Required`jest opcjonalnym atrybutem, który jest `false` domyślnie. Jeśli `true` parametr jest wymagany i musi mieć określoną wartość przed wywołaniem zadania.
+- `Required` jest opcjonalnym atrybutem, który jest `false` domyślnie. Jeśli `true` parametr jest wymagany i musi mieć określoną wartość przed wywołaniem zadania.
 
-- `ParameterType`jest opcjonalnym atrybutem, który jest `System.String` domyślnie. Może być ustawiony na dowolny w pełni kwalifikowany typ, który jest elementem lub wartością, którą można przekonwertować na i z ciągu przy użyciu System. Convert. ChangeType. (Innymi słowy każdy typ, który może być przekazywać do i z zewnętrznego zadania).
+- `ParameterType` jest opcjonalnym atrybutem, który jest `System.String` domyślnie. Może być ustawiony na dowolny w pełni kwalifikowany typ, który jest elementem lub wartością, którą można przekonwertować na i z ciągu przy użyciu System. Convert. ChangeType. (Innymi słowy każdy typ, który może być przekazywać do i z zewnętrznego zadania).
 
-- `Output`jest opcjonalnym atrybutem, który jest `false` domyślnie. Jeśli `true` , wówczas parametr musi mieć wartość przed powrotem z metody Execute.
+- `Output` jest opcjonalnym atrybutem, który jest `false` domyślnie. Jeśli `true` , wówczas parametr musi mieć wartość przed powrotem z metody Execute.
 
-Na przykład
+Przykład:
 
 ```xml
 <ParameterGroup>
@@ -158,11 +158,11 @@ Na przykład
 
 definiuje te trzy parametry:
 
-- `Expression`jest wymaganym parametrem wejściowym typu System. String.
+- `Expression` jest wymaganym parametrem wejściowym typu System. String.
 
-- `Files`jest parametrem wejściowym listy wymaganych elementów.
+- `Files` jest parametrem wejściowym listy wymaganych elementów.
 
-- `Tally`jest parametrem wyjściowym typu System. Int32.
+- `Tally` jest parametrem wyjściowym typu System. Int32.
 
 Jeśli `Code` element ma `Type` atrybut `Fragment` lub `Method` , wówczas właściwości są tworzone automatycznie dla każdego parametru.  W RoslynCodeTaskFactory, jeśli `Code` element ma `Type` atrybut `Class` , nie trzeba określać `ParameterGroup` , ponieważ jest wywnioskowany na podstawie kodu źródłowego (jest to różnica od `CodeTaskFactory` ). W przeciwnym razie właściwości muszą być jawnie zadeklarowane w kodzie źródłowym zadania i muszą dokładnie pasować do ich definicji parametrów.
 
@@ -261,7 +261,7 @@ Te zadania wbudowane mogą łączyć ścieżki i uzyskać nazwę pliku.
 
 ## <a name="provide-backward-compatibility"></a>Zapewnianie zgodności z poprzednimi wersjami
 
-`RoslynCodeTaskFactory`Pierwsza stała się dostępna w programie MSBuild w wersji 15,8. Załóżmy, że masz sytuacje, w których chcesz obsługiwać poprzednie wersje programu Visual Studio i MSBuild, gdy `RoslynCodeTaskFactory` była niedostępna, ale jeśli `CodeTaskFactory` chcesz użyć tego samego skryptu kompilacji. Można użyć konstrukcji korzystającej z `Choose` właściwości, `$(MSBuildVersion)` aby decydować w czasie kompilacji, czy użyć `RoslynCodeTaskFactory` lub wrócić do `CodeTaskFactory` , jak w poniższym przykładzie:
+`RoslynCodeTaskFactory` Pierwsza stała się dostępna w programie MSBuild w wersji 15,8. Załóżmy, że masz sytuacje, w których chcesz obsługiwać poprzednie wersje programu Visual Studio i MSBuild, gdy `RoslynCodeTaskFactory` była niedostępna, ale jeśli `CodeTaskFactory` chcesz użyć tego samego skryptu kompilacji. Można użyć konstrukcji korzystającej z `Choose` właściwości, `$(MSBuildVersion)` aby decydować w czasie kompilacji, czy użyć `RoslynCodeTaskFactory` lub wrócić do `CodeTaskFactory` , jak w poniższym przykładzie:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

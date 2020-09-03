@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25720f31c721cae44ed5425631a86b3a41bf475e
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84180548"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Wskazówki: pisanie wizualizatora w Visual Basic
@@ -48,7 +48,7 @@ Kod wizualizatora musi być umieszczony w pliku DLL, który będzie odczytywany 
 
 2. Wpisz odpowiednią nazwę biblioteki klas, np `MyFirstVisualizer` ., a następnie kliknij przycisk **Utwórz** lub **OK**.
 
-   Po utworzeniu biblioteki klas należy dodać odwołanie do pliku Microsoft. VisualStudio. DebuggerVisualizers. DLL, aby można było użyć zdefiniowanych tam klas. Najpierw jednak Nadaj projektowi zrozumiałą nazwę.
+   Po utworzeniu biblioteki klas należy dodać odwołanie do Microsoft.VisualStudio.DebuggerVisualizers.DLL, tak aby można było używać klas zdefiniowanych w tym miejscu. Najpierw jednak Nadaj projektowi zrozumiałą nazwę.
 
 ### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>Aby zmienić nazwę Class1. vb i dodać Microsoft. VisualStudio. DebuggerVisualizers
 
@@ -57,11 +57,11 @@ Kod wizualizatora musi być umieszczony w pliku DLL, który będzie odczytywany 
 2. Zmień nazwę z Class1. vb na coś znaczącego, na przykład DebuggerSide. vb.
 
    > [!NOTE]
-   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]automatycznie zmienia deklarację klasy w DebuggerSide. vb w celu dopasowania jej do nazwy nowego pliku.
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie zmienia deklarację klasy w DebuggerSide. vb w celu dopasowania jej do nazwy nowego pliku.
 
 3. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy **mój pierwszy wizualizator**, a następnie w menu skrótów kliknij pozycję **Dodaj odwołanie**.
 
-4. W oknie dialogowym **Dodaj odwołanie** na karcie **Przeglądaj** wybierz pozycję **Przeglądaj** i Znajdź plik Microsoft. VisualStudio. DebuggerVisualizers. dll.
+4. W oknie dialogowym **Dodaj odwołanie** na karcie **Przeglądaj** wybierz pozycję **Przeglądaj** i Znajdź Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
     Bibliotekę DLL można znaleźć w podkatalogu * \<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies* w katalogu instalacyjnym programu Visual Studio.
 
@@ -91,7 +91,7 @@ Kod wizualizatora musi być umieszczony w pliku DLL, który będzie odczytywany 
    Inherits DialogDebuggerVisualizer
    ```
 
-   `DialogDebuggerVisualizer`ma jedną metodę abstrakcyjną, `Show` która musi zostać przesłonięta.
+   `DialogDebuggerVisualizer` ma jedną metodę abstrakcyjną, `Show` która musi zostać przesłonięta.
 
 ### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Aby zastąpić metodę DialogDebuggerVisualizer. show
 
@@ -109,7 +109,7 @@ Kod wizualizatora musi być umieszczony w pliku DLL, który będzie odczytywany 
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **odwołania**, a następnie w menu skrótów kliknij pozycję **Dodaj odwołanie**.
 
-2. W oknie dialogowym **Dodaj odwołanie** na karcie **Przeglądaj** wybierz pozycję **Przeglądaj**, a następnie znajdź polecenie System. Windows. Forms. dll.
+2. W oknie dialogowym **Dodaj odwołanie** na karcie **Przeglądaj** wybierz pozycję **Przeglądaj**i Znajdź System.Windows.Forms.DLL.
 
     Bibliotekę DLL można znaleźć w *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
@@ -236,7 +236,7 @@ W kodzie po stronie debugera należy określić typ do wizualizacji (źródło o
 
    Jeśli chcesz użyć wizualizatora [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zamiast tylko wywołać go z zespołu testowego, musisz go zainstalować. Aby uzyskać więcej informacji, zobacz [How to: Install the wizualizator](../debugger/how-to-install-a-visualizer.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Architektura wizualizatora](../debugger/visualizer-architecture.md)
 - [Instrukcje: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)

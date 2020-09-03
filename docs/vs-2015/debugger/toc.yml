@@ -28,7 +28,7 @@
                   href: format-specifiers-in-cpp.md
                 - name: Operator kontekstu (C++)
                   href: context-operator-cpp.md
-                - name: 'Specyfikatory formatu w C#'
+                - name: Specyfikatory formatu w C#
                   href: format-specifiers-in-csharp.md
                 - name: Pseudozmienne
                   href: pseudovariables.md
@@ -118,7 +118,7 @@
                   href: enabling-debug-features-in-visual-cpp-d-debug.md
             - name: Ustawienia stron właściwości dla projektów sieci Web
               href: property-pages-settings-for-web-projects.md
-            - name: 'Ustawienia projektu dla konfiguracji debugowania w C#'
+            - name: Ustawienia projektu dla konfiguracji debugowania w C#
               href: project-settings-for-csharp-debug-configurations.md
             - name: Ustawienia projektu dla konfiguracji debugowania w Visual Basic
               href: project-settings-for-a-visual-basic-debug-configuration.md
@@ -170,7 +170,7 @@
                   href: how-to-write-a-visualizer.md
                 - name: Architektura wizualizatora
                   href: visualizer-architecture.md
-                - name: 'Pisanie wizualizatora w języku C#'
+                - name: Pisanie wizualizatora w języku C#
                   href: walkthrough-writing-a-visualizer-in-csharp.md
                 - name: Pisanie wizualizatora w języku Visual Basic
                   href: walkthrough-writing-a-visualizer-in-visual-basic.md
@@ -204,13 +204,13 @@
               href: edit-and-continue-visual-cpp.md
             - name: Obsługiwane zmiany kodu (C++)
               href: supported-code-changes-cpp.md
-        - name: 'Edytuj i kontynuuj (Visual C#)'
+        - name: Edytuj i kontynuuj (Visual C#)
           items:
-            - name: 'Edytuj i kontynuuj (Visual C#)'
+            - name: Edytuj i kontynuuj (Visual C#)
               href: edit-and-continue-visual-csharp.md
             - name: 'Korzystanie z funkcji Edytuj i kontynuuj [C#]'
               href: how-to-use-edit-and-continue-csharp.md
-            - name: 'Obsługiwane zmiany kodu (C#)'
+            - name: Obsługiwane zmiany kodu (C#)
               href: supported-code-changes-csharp.md
         - name: Edytuj i kontynuuj (Visual Basic)
           items:
@@ -220,7 +220,7 @@
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
             - name: Nieobsługiwane edycje funkcji Edytuj i kontynuuj programu Visual Basic
               href: unsupported-edits-in-visual-basic-edit-and-continue.md
-        - name: 'Opcje edytuj i kontynuuj nie są obsługiwane w F#'
+        - name: Opcje edytuj i kontynuuj nie są obsługiwane w F#
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Używanie plików zrzutów
       items:
@@ -400,11 +400,11 @@
               href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
             - name: Debugowanie kodu XAML w narzędziu Blend for Visual Studio
               href: debug-xaml-in-blend.md
-            - name: 'Nawigowanie po sesji debugowania (Xaml i C#)'
+            - name: Nawigowanie po sesji debugowania (Xaml i C#)
               items:
-                - name: 'Nawigowanie po sesji debugowania (Xaml i C#)'
+                - name: Nawigowanie po sesji debugowania (Xaml i C#)
                   href: navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md
-                - name: 'Przykładowy kod nawigacji debugera (Xaml i C#)'
+                - name: Przykładowy kod nawigacji debugera (Xaml i C#)
                   href: debugger-navigation-sample-code-xaml-and-csharp.md
             - name: 'Wyzwalanie wstrzymania, wznowienia i zdarzeń w tle w aplikacjach ze Sklepu Windows'
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
@@ -454,7 +454,7 @@
               href: how-to-use-the-wpf-tree-visualizer.md
             - name: Wyświetlanie informacji o śledzeniu platformy WPF
               href: how-to-display-wpf-trace-information.md
-        - name: 'Debugowanie F#'
+        - name: Debugowanie F#
           href: debugging-f-hash.md
     - name: Debugowanie kodu natywnego
       items:

@@ -9,10 +9,10 @@ caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f7cbe9606b73741e1e59eb14f40cb277052944a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545083"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Zestaw SDK Podglądu Pomocy firmy Microsoft
@@ -132,17 +132,17 @@ Ten artykuł zawiera następujące zadania dla integratorów podglądu pomocy pr
 
  Treść (bez nagłówka i stopki) tematu będzie zawierać linki do stron, sekcję notatki, obszar zwijany, fragment kodu i sekcję tekstu określonego dla języka.  Zapoznaj się z sekcją znakowanie, aby uzyskać informacje o tych obszarach prezentowanego tematu.
 
-1. Dodaj tag tytułu tematu:`<div class="title">Contoso Topic 4</div>`
+1. Dodaj tag tytułu tematu:  `<div class="title">Contoso Topic 4</div>`
 
-2. Dodaj sekcję Uwagi:`<div class="alert"> add your table tag and text </div>`
+2. Dodaj sekcję Uwagi: `<div class="alert"> add your table tag and text </div>`
 
-3. Dodaj obszar zwijany:`<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Dodaj obszar zwijany:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4. Dodawanie fragmentu kodu:`<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Dodawanie fragmentu kodu:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5. Dodaj tekst specyficzny dla języka kodu: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` należy pamiętać, że devLangnu = umożliwia wprowadzanie innych języków. Na przykład devLangnu = "Pascal" będzie wyświetlał Pascal, gdy fragment kodu DisplayLanguage = Pascal
+5. Dodaj tekst specyficzny dla języka kodu:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` należy pamiętać, że devLangnu = umożliwia wprowadzanie innych języków. Na przykład devLangnu = "Pascal" będzie wyświetlał Pascal, gdy fragment kodu DisplayLanguage = Pascal
 
-6. Dodaj linki do stron:`<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. Dodaj linki do stron: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 > Uwaga: w przypadku nieobsługiwanego nowego koloru "język wyświetlania" (przykład: F #, COBOL, Pascal) kolorowanie kodu w fragmencie kodu będzie monochromatyczne.
@@ -436,14 +436,14 @@ some F# code
 
 Funkcja: **CollapsibleArea** use: expand zwija tekst kontrolki zawartości
 
-|**Postaci**|**Wartość**|
+|**Element**|**Wartość**|
 |-|-|
 |ExpandText|Rozwiń|
 |CollapseText|Zwiń|
 
 Funkcja:**CodeSnippet** use: tekst kontrolki fragmentu kodu.  Uwaga: zawartość fragmentu kodu z rozrywanym miejscem zostanie zmieniona na spacja.
 
-|**Postaci**|**Wartość**|
+|**Element**|**Wartość**|
 |-|-|
 |CopyToClipboard|Kopiuj do schowka|
 |ViewColorizedText|Wyświetl kolory|
@@ -453,9 +453,9 @@ Funkcja:**CodeSnippet** use: tekst kontrolki fragmentu kodu.  Uwaga: zawartość
 
 Funkcja: **informacje zwrotne, stopka i logo** : Podaj kontrolę opinii dla klienta, aby przekazać opinię na temat bieżącego tematu za pośrednictwem poczty e-mail.  Tekst praw autorskich dla zawartości.  Definicja logo.
 
-|**Postaci**|**Wartość (te ciągi mogą być modyfikowane w celu spełnienia wymagań dotyczących przyjmowanego przez zawartość).**|
+|**Element**|**Wartość (te ciągi mogą być modyfikowane w celu spełnienia wymagań dotyczących przyjmowanego przez zawartość).**|
 |-|-|
-|Prawo|© 2013 Microsoft Corporation. Wszelkie prawa zastrzeżone.|
+|Prawo|© 2013 Microsoft Corporation. All rights reserved.|
 |SendFeedback|\<a href="{0}" {1}>Prześlij opinię \</a> na temat tego tematu do firmy Microsoft.|
 |FeedbackLink||
 |LogoTitle|[!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]|
@@ -464,7 +464,7 @@ Funkcja: **informacje zwrotne, stopka i logo** : Podaj kontrolę opinii dla klie
 
 Funkcja: **oświadczenie** dotyczące użycia: zestaw specyficznych dla odrzutów dla zawartości przetłumaczonej maszynowo.
 
-|**Postaci**|**Wartość**|
+|**Element**|**Wartość**|
 |-|-|
 |MT_Editable|Ten artykuł został przetłumaczony maszynowo. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie.|
 |MT_NonEditable|Ten artykuł został przetłumaczony maszynowo. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie.|
@@ -475,16 +475,16 @@ Funkcja: **oświadczenie** dotyczące użycia: zestaw specyficznych dla odrzutó
 
 Funkcja: użycie **linku** : obsługa linków tematu online
 
-|**Postaci**|**Wartość**|
+|**Element**|**Wartość**|
 |-|-|
 |LinkTableTitle|Tabela łączy|
 |TopicEnuLinkText|Zapoznaj się z angielską wersją \</a> tego tematu, która jest dostępna na komputerze.|
 |TopicOnlineLinkText|Wyświetl ten temat \<a href="{0}" {1}> online\</a>|
-|OnlineText|Online|
+|OnlineText|Tryb online|
 
 Funkcja: użycie **kontrolki audio wideo** : Wyświetlanie elementów i tekstu dla zawartości wideo
 
-|**Postaci**|**Wartość**|
+|**Element**|**Wartość**|
 |-|-|
 |MultiMediaNotSupported|Aby można było obsługiwać zawartość, musi być zainstalowany program Internet Explorer 9 lub nowszy {0} .|
 |VideoText|Wyświetlanie wideo|
@@ -494,7 +494,7 @@ Funkcja: użycie **kontrolki audio wideo** : Wyświetlanie elementów i tekstu d
 
 Funkcja: **zawartość nie jest zainstalowana kontrolka** use: elementy tekstowe (ciągi) używane do renderowania contentnotinstalled.htm
 
-|**Postaci**|**Wartość**|
+|**Element**|**Wartość**|
 |-|-|
 |ContentNotInstalledTitle|Nie znaleziono zawartości na komputerze.|
 |ContentNotInstalledDownloadContentText|\<p>Aby pobrać zawartość na komputer, \<a href="{0}" {1}> kliknij kartę Zarządzanie \</a> .\</p>|
@@ -502,7 +502,7 @@ Funkcja: **zawartość nie jest zainstalowana kontrolka** use: elementy tekstowe
 
 Funkcja: **nie znaleziono tematu sterującego** use: elementy tekstowe (ciągi) używane do renderowania topicnotfound.htm
 
-|**Postaci**|**Wartość**|
+|**Element**|**Wartość**|
 |-|-|
 |TopicNotFoundTitle|Nie można znaleźć żądanego tematu na komputerze.|
 |TopicNotFoundViewOnlineText|\<p>Nie znaleziono żądanego tematu na komputerze, ale można \<a href="{0}" {1}> wyświetlić temat w trybie online \</a> .\</p>|
@@ -511,14 +511,14 @@ Funkcja: **nie znaleziono tematu sterującego** use: elementy tekstowe (ciągi) 
 
 Funkcja: w **temacie uszkodzona kontrola** użycia: elementy tekstowe (ciągi) używane do renderowania topiccorrupted.htm
 
-|**Postaci**|**Wartość**|
+|**Element**|**Wartość**|
 |-|-|
 |TopicCorruptedTitle|Nie można wyświetlić żądanego tematu.|
 |TopicCorruptedViewOnlineText|\<p>Podgląd pomocy nie może wyświetlić żądanego tematu. Może wystąpić błąd w zawartości tematu lub podstawowej zależności od systemu.\</p>|
 
 Funkcja: użycie **kontrolki strony głównej** : tekst obsługujący wyświetlanie zawartości węzła najwyższego poziomu podglądu pomocy.
 
-|**Postaci**|**Wartość**|
+|**Element**|**Wartość**|
 |-|-|
 |HomePageTitle|Strona główna podglądu pomocy|
 |HomePageIntroduction|\<p>Witamy w Podgląd Pomocy firmy Microsoft, podstawowe źródło informacji dla wszystkich osób korzystających z narzędzi, produktów, technologii i usług firmy Microsoft. Podgląd pomocy zapewnia dostęp do informacji o sposobach i odwołaniach, przykładowym kodzie, artykułach technicznych i innych. Aby znaleźć potrzebną zawartość, przejrzyj Spis treści, użyj wyszukiwania pełnotekstowego lub przejdź przez zawartość przy użyciu indeksu słowa kluczowego.\</p>|
@@ -569,25 +569,25 @@ Funkcja: użycie **kontrolki strony głównej** : tekst obsługujący wyświetla
 
  Pakiet znakowania zawiera zestaw plików HTM, które obsługują scenariusze przekazywania informacji o kluczach w celu ułatwienia użytkownikom zawartości, na przykład Strona główna zawierająca sekcję opisującą, które zestawy zawartości są zainstalowane, oraz strony informujące użytkownika o tym, że nie można znaleźć tematów w lokalnym zestawie tematów. Te pliki HTM można modyfikować na produkt.  Dostawcy powłoki ISO mogą korzystać z domyślnego pakietu znakowania i zmieniać zachowanie i zawartość tych stron w celu ich potrzeby.  Te pliki odnoszą się do odpowiedniego pakietu markowego, aby Tagi znakowania pobierają odpowiednią zawartość z pliku branding.xml.
 
-|**Plik**|**Użycie**|**Wyświetlone źródło zawartości**|
+|**Plik**|**Używanych**|**Wyświetlone źródło zawartości**|
 |-|-|-|
 |homepage.htm|Jest to strona wyświetlająca aktualnie zainstalowaną zawartość oraz wszelkie inne komunikaty, które są odpowiednie dla użytkownika dotyczące ich zawartości.  Ten plik ma dodatkowy atrybut metadanych "Microsoft.Help.Id" Content = "-1", który umieszcza tę zawartość w górnej części lokalnego SPISu treści zawartości.||
-||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, tag\<HomePageTitle>|
-||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, tag\<HomePageIntroduction>|
-||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, tag\<HomePageContentInstallText>|
-||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|Sekcja nagłówka Branding.xml znacznik \<HomePageInstalledBooks> , dane wygenerowane z aplikacji, \<HomePageNoBooksInstalled> gdy nie są zainstalowane żadne książki.|
+||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, tag \<HomePageTitle>|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, tag \<HomePageIntroduction>|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, tag \<HomePageContentInstallText>|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|Sekcja nagłówka Branding.xml znacznik \<HomePageInstalledBooks> , dane wygenerowane z aplikacji,  \<HomePageNoBooksInstalled> gdy nie są zainstalowane żadne książki.|
 ||<HOME_PAGE_SETTINGS_SECTION_ADD/>|Sekcja nagłówka Branding.xml znacznik \<HomePageHelpSettings> , tekst sekcji \<HomePageHelpSettingsText> .|
 |topiccorrupted.htm|Gdy w zestawie lokalnym istnieje temat, ale z jakiegoś powodu nie można wyświetlić (uszkodzona zawartość).||
-||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, tag\<TopicCorruptedTitle>|
-||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, tag\<TopicCorruptedViewOnlineText>|
+||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, tag \<TopicCorruptedTitle>|
+||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, tag \<TopicCorruptedViewOnlineText>|
 |topicnotfound.htm|Jeśli temat nie zostanie znaleziony w lokalnym zestawie zawartości lub jest dostępny w trybie online||
-||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, tag\<TopicNotFoundTitle>|
-||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, tag\<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
-||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, tag\<TopicNotFoundText>|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, tag \<TopicNotFoundTitle>|
+||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, tag \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, tag \<TopicNotFoundText>|
 |contentnotinstalled.htm|W przypadku braku zainstalowanej zawartości lokalnej dla produktu.||
-||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, tag\<ContentNotInstalledTitle>|
-||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, tag\<ContentNotInstalledDownloadContentText>|
-||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, tag\<ContentNotInstalledText>|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, tag \<ContentNotInstalledTitle>|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, tag \<ContentNotInstalledDownloadContentText>|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, tag \<ContentNotInstalledText>|
 
  **Pliki CSS**
 
@@ -603,7 +603,7 @@ Funkcja: użycie **kontrolki strony głównej** : tekst obsługujący wyświetla
 
   Zawartość programu Visual Studio zawiera logo programu Visual Studio, a także inne grafiki.  Poniżej przedstawiono kompletną listę plików graficznych w pakiecie znakowania podglądu pomocy programu Visual Studio.
 
-|**Plik**|**Użycie**|**Przykłady**|
+|**Plik**|**Używanych**|**Przykłady**|
 |-|-|-|
 |clear.gif|Używane do renderowania zwijanego obszaru||
 |footer_slice.gif|Prezentacja stopki||
@@ -747,9 +747,9 @@ Funkcja: użycie **kontrolki strony głównej** : tekst obsługujący wyświetla
 
   Aby utworzyć rozszerzenie powłoki izolowanej:
 
-1. W programie Visual Studio w **obszarze plik**wybierz pozycję **Nowy projekt**, w obszarze **Inne typy projektów** wybierz pozycję **rozszerzalność**, a następnie wybierz pozycję **izolowany powłoka programu Visual Studio**. Nazwij projekt `ContosoHelpShell` ), aby utworzyć projekt rozszerzalności oparty na szablonie powłoki izolowanej programu Visual Studio.
+1. W programie Visual Studio w **obszarze plik**wybierz pozycję **Nowy projekt**, w obszarze **Inne typy projektów** wybierz pozycję **rozszerzalność**, a następnie wybierz pozycję  **izolowany powłoka programu Visual Studio**. Nazwij projekt `ContosoHelpShell` ), aby utworzyć projekt rozszerzalności oparty na szablonie powłoki izolowanej programu Visual Studio.
 
-2. W Eksplorator rozwiązań w projekcie ContosoHelpShellUI w folderze pliki zasobów Otwórz ApplicationCommands. vsct. Upewnij się, że ten wiersz jest oznaczony jako komentarz (Wyszukaj ciąg "No_Help"):`<!-- <define name=“No_HelpMenuCommands”/> -->`
+2. W Eksplorator rozwiązań w projekcie ContosoHelpShellUI w folderze pliki zasobów Otwórz ApplicationCommands. vsct. Upewnij się, że ten wiersz jest oznaczony jako komentarz (Wyszukaj ciąg "No_Help"): `<!-- <define name=“No_HelpMenuCommands”/> -->`
 
 3. Wybierz klawisz F5, aby skompilować i uruchomić **debugowanie**. W eksperymentalnym wystąpieniu środowiska IDE izolowanej powłoki wybierz menu **Pomoc** . Upewnij się, że są wyświetlane polecenia **Wyświetl pomoc**, **Dodaj i Usuń zawartość pomocy**oraz **Ustaw polecenie preferencji pomocy** .
 
@@ -791,7 +791,7 @@ Funkcja: użycie **kontrolki strony głównej** : tekst obsługujący wyświetla
 
 10. Skopiuj zawartość z folderu ContosoHelpShell Release do \\ folderu \Program Files (x86) \Contoso\.
 
-11. Uruchom Edytor rejestru, wybierając pozycję **Uruchom** w menu **Start** i wprowadzając polecenie `Regedit` . W Edytorze rejestru wybierz **plik**, a następnie **Importuj**. Przejdź do folderu projektu ContosoHelpShell. W podfolderze ContosoHelpShell wybierz ContosoHelpShell. reg.
+11. Uruchom Edytor rejestru, wybierając pozycję  **Uruchom** w menu **Start** i wprowadzając polecenie `Regedit` . W Edytorze rejestru wybierz **plik**, a następnie **Importuj**. Przejdź do folderu projektu ContosoHelpShell. W podfolderze ContosoHelpShell wybierz ContosoHelpShell. reg.
 
 12. Utwórz magazyn zawartości:
 
@@ -814,7 +814,7 @@ Funkcja: użycie **kontrolki strony głównej** : tekst obsługujący wyświetla
 
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12
 
-     [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]Zintegrowana powłoka:
+     [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Zintegrowana powłoka:
 
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12en-US
 

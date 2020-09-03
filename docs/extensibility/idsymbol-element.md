@@ -1,5 +1,5 @@
 ---
-title: Element IDSymbol | Dokumenty firmy Microsoft
+title: IDSymbol — element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d02a26a6874165738d917a14986d16d142c01915
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710376"
 ---
-# <a name="idsymbol-element"></a>IDSymbol element
-Element `IDSymbol` zawiera identyfikator pary GUID:ID, która reprezentuje menu, grupę lub polecenie. Identyfikator GUID pochodzi `GuidSymbol` z elementu nadrzędnego. Element `IDSymbol` ma `name` atrybut, który zapewnia przyjazną nazwę dla identyfikatora, `value` który jest zawarty w atrybucie.
+# <a name="idsymbol-element"></a>IDSymbol, element
+`IDSymbol`Element zawiera identyfikator pary GUID: ID, która reprezentuje menu, grupę lub polecenie. Identyfikator GUID pochodzi z elementu nadrzędnego `GuidSymbol` . `IDSymbol`Element ma `name` atrybut, który zawiera przyjazną nazwę dla identyfikatora, który jest zawarty w `value` atrybucie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,10 +44,10 @@ Element `IDSymbol` zawiera identyfikator pary GUID:ID, która reprezentuje menu,
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element GuidSymbol](../extensibility/guidsymbol-element.md)|Zawiera identyfikator GUID:ID, który reprezentuje menu, grupę lub polecenie. Grupuje `IDSymbol` elementy.|
+|[GuidSymbol, element](../extensibility/guidsymbol-element.md)|Zawiera identyfikator GUID pary identyfikatora GUID:, która reprezentuje menu, grupę lub polecenie. Grupuje `IDSymbol` elementy.|
 
 ## <a name="remarks"></a>Uwagi
- Każdy `IDSymbol` element w `GuidSymbol` danym elemencie musi mieć unikatowy `value`element. Jednak `IDSymbol` elementy, które mają identyczne wartości mogą istnieć w pakiecie, tak długo, jak mają różne elementy podstawowe.
+ Każdy `IDSymbol` element w danym `GuidSymbol` elemencie musi mieć unikatową wartość `value` . Jednak `IDSymbol` elementy mające identyczne wartości mogą istnieć w pakiecie, o ile mają różne obiekty nadrzędne.
 
 ## <a name="see-also"></a>Zobacz też
-- [Pliki tabeli poleceń programu Visual Studio (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

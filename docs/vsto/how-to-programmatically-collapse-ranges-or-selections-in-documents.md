@@ -17,18 +17,18 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1575a130a525c169553598fd15acfa8ba8fc397a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546123"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Instrukcje: programowe zwijanie zakresów lub zaznaczenia w dokumentach
   Jeśli pracujesz z <xref:Microsoft.Office.Interop.Word.Range> <xref:Microsoft.Office.Interop.Word.Selection> obiektem lub, możesz chcieć zmienić zaznaczenie na punkt wstawiania przed wstawianiem tekstu, aby uniknąć zastępowania istniejącego tekstu. Zarówno <xref:Microsoft.Office.Interop.Word.Range> obiekty, jak i <xref:Microsoft.Office.Interop.Word.Selection> mają metodę zwijania, która korzysta z <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> wartości wyliczenia:
 
-- <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart>zwija zaznaczenie do początku zaznaczenia. Jest to wartość domyślna, jeśli nie określisz wartości wyliczenia.
+- <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> zwija zaznaczenie do początku zaznaczenia. Jest to wartość domyślna, jeśli nie określisz wartości wyliczenia.
 
-- <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd>zwija zaznaczenie do końca zaznaczenia.
+- <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> zwija zaznaczenie do końca zaznaczenia.
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -56,7 +56,7 @@ ms.locfileid: "85546123"
     [!code-vb[Trin_VstcoreWordAutomation#48](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#48)]
     [!code-csharp[Trin_VstcoreWordAutomation#48](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#48)]
 
-4. Wybierz pozycję <xref:Microsoft.Office.Interop.Word.Range> .
+4. Wybierz aplikację <xref:Microsoft.Office.Interop.Word.Range>.
 
     [!code-vb[Trin_VstcoreWordAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#49)]
     [!code-csharp[Trin_VstcoreWordAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#49)]

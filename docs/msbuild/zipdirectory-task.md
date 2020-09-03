@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1092add6386ccc5bc1de78efcf7b623a617d920b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183070"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory, zadanie
@@ -66,7 +66,7 @@ Tworzy archiwum *zip* z zawartości katalogu.
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zadania](../msbuild/msbuild-tasks.md)
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

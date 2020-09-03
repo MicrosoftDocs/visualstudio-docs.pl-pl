@@ -1,5 +1,5 @@
 ---
-title: Obsługa automatyzacji stron opcji | Dokumenty firmy Microsoft
+title: Obsługa automatyzacji dla stron opcji | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,29 +12,29 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fe45238948d5b4cdebbf9f002f6b242515e7622e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709930"
 ---
-# <a name="automation-support-for-options-pages"></a>Obsługa automatyzacji stron opcji
-Pakiety VSPackages mogą udostępniać niestandardowe **okna dialogowe Opcje** do menu **Narzędzia** (Strony**Opcje narzędzi)** [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i udostępniać je modelowi automatyzacji.
+# <a name="automation-support-for-options-pages"></a>Obsługa automatyzacji dla stron opcji
+Pakietów VSPackage mogą udostępniać okna dialogowe **opcji** niestandardowych do menu **Narzędzia** (strony**opcji narzędzia** ) w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i mogą być dostępne dla modelu automatyzacji.
 
 ## <a name="tools-options-pages"></a>strony opcji Narzędzi
- Aby utworzyć stronę **Opcje narzędzi,** VSPackage musi zapewnić implementacji kontroli użytkownika zwrócone do <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> środowiska za pośrednictwem vsPackage implementacji metody. (Lub, dla kodu zarządzanego, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metoda.)
+ Aby utworzyć stronę **opcji narzędzi** , pakietu VSPackage musi dostarczyć implementację kontroli użytkownika, która jest zwracana do środowiska przez implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metody pakietu VSPackage. (Lub, dla kodu zarządzanego, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metody).
 
- Jest to opcjonalne, ale zdecydowanie zalecane, aby umożliwić dostęp do tej nowej strony za pośrednictwem modelu automatyzacji. Można to zrobić za pomocą następujących kroków:
+ Jest to opcjonalne, ale zdecydowanie zalecane, aby umożliwić dostęp do tej nowej strony za pomocą modelu automatyzacji. Można to zrobić, wykonując następujące czynności:
 
-1. Rozszerzanie <xref:EnvDTE._DTE.Properties%2A> obiektu poprzez implementację obiektu pochodnego IDispatch.
+1. Rozszerzając <xref:EnvDTE._DTE.Properties%2A> obiekt przez implementację obiektu pochodnego IDispatch.
 
-2. Zwraca implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metody (lub dla <xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A> kodu zarządzanego metody) do obiektu pochodnego IDispatch.
+2. Zwróć implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metody (lub dla kodu zarządzanego <xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A> Metoda) do obiektu pochodnego IDispatch.
 
-3. Gdy konsument automatyzacji <xref:EnvDTE._DTE.Properties%2A> wywołuje metodę na niestandardowej option **strony** właściwości, środowisko używa <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metody, aby uzyskać implementację automatyzacji niestandardowych opcji **narzędzi** strony.
+3. Gdy odbiorca automatyzacji wywołuje <xref:EnvDTE._DTE.Properties%2A> metodę na niestandardowej stronie właściwości **opcji** , środowisko używa <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metody, aby uzyskać implementację automatyzacji strony **opcji narzędzi** niestandardowych.
 
-4. Obiekt automatyzacji VSPackage jest następnie używany <xref:EnvDTE.Property> do <xref:EnvDTE._DTE.Properties%2A>zapewnienia każdego zwróconego przez .
+4. Obiekt automatyzacji elementu pakietu VSPackage jest następnie używany do dostarczania każdej <xref:EnvDTE.Property> zwróconej przez <xref:EnvDTE._DTE.Properties%2A> .
 
-   Aby zapoznać się z przykładową stroną implementującą niestandardową stronę **Opcje narzędzi,** zobacz [Przykłady programu VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
+   Aby zapoznać się z przykładem implementującym niestandardowe **Opcje narzędzi** , zobacz [VSSDK Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
 ## <a name="see-also"></a>Zobacz też
-- [Udostępnianie obiektów projektu](../../extensibility/internals/exposing-project-objects.md)
+- [Uwidacznianie obiektów projektu](../../extensibility/internals/exposing-project-objects.md)

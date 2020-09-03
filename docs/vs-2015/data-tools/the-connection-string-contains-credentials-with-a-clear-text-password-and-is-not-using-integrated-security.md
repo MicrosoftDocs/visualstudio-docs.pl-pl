@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a8fc2a428753e9650bb0dfebdb2bfdfdde10697a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672285"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>Parametry połączenia zawierają poświadczenia z hasłem w postaci zwykłego tekstu i nie korzystają ze zintegrowanych zabezpieczeń
@@ -21,14 +21,14 @@ ms.locfileid: "72672285"
 
 Czy chcesz zapisać parametry połączenia w bieżącym pliku DBML i plikach konfiguracji aplikacji z tymi informacjami poufnymi?  Kliknij przycisk nie, aby zapisać parametry połączenia bez informacji poufnych.
 
- Podczas pracy z połączeniami danych zawierającymi informacje poufne (hasła zawarte w parametrach połączenia) można zapisać parametry połączenia w pliku DBML projektu i pliku konfiguracji aplikacji z lub bez informacje poufne.
+ Podczas pracy z połączeniami danych, które zawierają informacje poufne (hasła zawarte w parametrach połączenia), można zapisać parametry połączenia w pliku DBML projektu i plikach konfiguracji aplikacji z lub bez informacji poufnych.
 
 > [!WARNING]
 > Jawne ustawienie właściwości **połączenia** właściwości **ustawień aplikacji** na **Fałsz** spowoduje dodanie hasła do pliku DBML.
 
 ### <a name="to-save-the-connection-string-with-the-sensitive-information-in-the-projects-application-settings"></a>Aby zapisać parametry połączenia z informacjami poufnymi w ustawieniach aplikacji projektu
 
-- Kliknij przycisk **Tak**.
+- Kliknij przycisk **Yes** (Tak).
 
      Parametry połączenia są przechowywane jako ustawienia aplikacji. Parametry połączenia zawierają informacje poufne w postaci zwykłego tekstu. Plik DBML nie zawiera informacji poufnych.
 
