@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::CreatePendingBreakpoint | Dokumenty firmy Microsoft
+title: 'IDebugEngine2:: CreatePendingBreakpoint | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f88cae3610487b92fed0d8390d44c55d3f536c4b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731118"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
-Tworzy oczekujący punkt przerwania w silniku debugowania (DE).
+Tworzy oczekujący punkt przerwania w aparacie debugowania (DE).
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,23 +43,23 @@ int CreatePendingBreakpoint(
 
 ## <a name="parameters"></a>Parametry
 `pBPRequest`\
-[w] [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) obiekt, który opisuje oczekujących punkt przerwania do utworzenia.
+podczas Obiekt [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) , który opisuje oczekujący punkt przerwania do utworzenia.
 
 `ppPendingBP`\
-[na zewnątrz] Zwraca obiekt [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) reprezentujący oczekujący punkt przerwania.
+określoną Zwraca obiekt [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) , który reprezentuje oczekujący punkt przerwania.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Zazwyczaj zwraca, `E_FAIL` `pBPRequest` jeśli parametr nie pasuje do żadnego języka `pBPRequest` obsługiwanego przez DE, jeśli parametr jest nieprawidłowy lub niekompletny.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwykle zwraca `E_FAIL` , jeśli `pBPRequest` parametr nie jest zgodny z żadnym językiem obsługiwanym przez de z, jeśli `pBPRequest` parametr jest nieprawidłowy lub niekompletny.
 
 ## <a name="remarks"></a>Uwagi
-Oczekujący punkt przerwania jest zasadniczo zbiór wszystkich informacji potrzebnych do powiązania punktu przerwania z kodem. Oczekujący punkt przerwania zwrócony z tej metody nie jest powiązany z kodem, dopóki nie zostanie wywołana metoda [Bind.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+Oczekujący punkt przerwania jest zasadniczo kolekcją wszystkich informacji niezbędnych do powiązania punktu przerwania z kodem. Oczekujący punkt przerwania zwrócony przez tę metodę nie jest powiązany z kodem do momentu wywołania metody [bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) .
 
-Dla każdego oczekującego punktu przerwania ustawia użytkownik, menedżer debugowania sesji (SDM) wywołuje tę metodę w każdym dołączonym DE. Do DE należy sprawdzenie, czy punkt przerwania jest prawidłowy dla programów uruchomionych w tym DE.
+Dla każdego oczekującego punktu przerwania ustawionego przez użytkownika Menedżer debugowania sesji (SDM) wywołuje tę metodę w każdej dołączonej. Należy sprawdzić, czy punkt przerwania jest prawidłowy dla programów uruchomionych w tym elemencie.
 
-Gdy użytkownik ustawia punkt przerwania w wierszu kodu, DE jest wolny do powiązania punktu przerwania z najbliższym wierszu w dokumencie, który odpowiada temu kodowi. Dzięki temu użytkownik może ustawić punkt przerwania w pierwszym wierszu instrukcji wielowierszowej, ale powiązać go w ostatnim wierszu (gdzie cały kod jest przypisany w informacjach debugowania).
+Gdy użytkownik ustawia punkt przerwania w wierszu kodu, to DE jest bezpłatny, aby powiązać punkt przerwania z najbliższym wierszem w dokumencie, który odnosi się do tego kodu. Dzięki temu użytkownik może ustawić punkt przerwania w pierwszym wierszu instrukcji wielowierszowej, ale powiązać ją z ostatnim wierszem (gdzie cały kod jest przypisany do informacji debugowania).
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak `CProgram` zaimplementować tę metodę dla prostego obiektu. De realizacji `IDebugEngine2::CreatePendingBreakpoint` może następnie przekazać wszystkie wywołania do tej implementacji metody w każdym programie.
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CProgram` obiektu. Po COFNIĘCIu implementacji `IDebugEngine2::CreatePendingBreakpoint` można przesłać dalej wszystkie wywołania tej implementacji metody w każdym programie.
 
 ```
 HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, IDebugPendingBreakpoint2** ppPendingBP)
@@ -74,6 +74,6 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
-- [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+- [Węglowodor](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

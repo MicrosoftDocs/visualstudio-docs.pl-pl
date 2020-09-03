@@ -8,10 +8,10 @@ ms.date: 04/20/2020
 ms.topic: how-to
 description: Dowiedz się, jak aktywować subskrypcję Test Professional wirtualizacji/SOA Parasoft w ramach subskrypcji programu Visual Studio.
 ms.openlocfilehash: 8472c27e0196ec5837fccb17535061ea9b1b4867
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904389"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft wirtualizację/SOAtest Professional w subskrypcjach programu Visual Studio
@@ -89,8 +89,8 @@ Przetestuj się wcześniej i częściej.  Symuluj i Przetestuj zachowanie niedos
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Potrzebujesz pomocy dotyczącej produktów Parasoft?  Zapoznaj się z tymi zasobami:
-  - Pomoc techniczna:https://www.parasoft.com/support/
-  - Parasoft centrum zasobów:https://www.parasoft.com/resources/
+  - Pomoc techniczna:  https://www.parasoft.com/support/
+  - Parasoft centrum zasobów:  https://www.parasoft.com/resources/
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 

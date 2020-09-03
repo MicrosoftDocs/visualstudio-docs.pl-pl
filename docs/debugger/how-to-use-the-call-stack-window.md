@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348746"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Wyświetlanie stosu wywołań i korzystanie z okna stosu wywołań w debugerze
@@ -66,7 +66,7 @@ Kod niebędący użytkownikiem jest dowolnym kodem, który nie jest wyświetlany
 
 `[<External Code>]`
 
-## <a name="switch-to-another-stack-frame-change-the-debugger-context"></a><a name="bkmk_switch"></a>Przełącz do innej ramki stosu (Zmień kontekst debugera)
+## <a name="switch-to-another-stack-frame-change-the-debugger-context"></a><a name="bkmk_switch"></a> Przełącz do innej ramki stosu (Zmień kontekst debugera)
 
 1. W oknie **stos wywołań** kliknij prawym przyciskiem myszy ramkę stosu, której kod i dane chcesz wyświetlić.
 
@@ -110,7 +110,7 @@ W Visual Studio Enterprise (tylko) można wyświetlić mapy kodu dla stosu wywo�
 
 - Kliknij prawym przyciskiem myszy w oknie **stos wywołań** i ustaw lub wyczyść opcję **Pokaż \<**_the information that you want_**> **.
 
-## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a>Załaduj symbole dla modułu (C#, C++, Visual Basic, F #)
+## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a> Załaduj symbole dla modułu (C#, C++, Visual Basic, F #)
 
 W oknie **stos wywołań** można załadować symbole debugowania dla kodu, który nie ma obecnie załadowanych symboli. Tymi symbolami mogą być symbole .NET lub systemowe pobrane z publicznych serwerów symboli firmy Microsoft lub symbole w ścieżce symboli na komputerze, który jest debugowany.
 

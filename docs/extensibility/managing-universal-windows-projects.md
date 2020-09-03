@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie uniwersalnymi projektami systemu Windows | Dokumenty firmy Microsoft
+title: Zarządzanie projektami uniwersalnymi systemu Windows | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
@@ -9,27 +9,27 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc6894bcfe3bfab3b0246d716b0bd85152ad17e2
-ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81744937"
 ---
-# <a name="manage-universal-windows-projects"></a>Zarządzanie projektami systemu Uniwersalnego systemu Windows
+# <a name="manage-universal-windows-projects"></a>Zarządzanie projektami uniwersalnymi systemu Windows
 
-Uniwersalne aplikacje systemu Windows to aplikacje przeznaczone zarówno dla systemu Windows 8.1, jak i Windows Phone 8.1, umożliwiające deweloperom korzystanie z kodu i innych zasobów na obu platformach. Udostępniony kod i zasoby są przechowywane w projekcie udostępnionym, podczas gdy kod i zasoby specyficzne dla platformy są przechowywane w oddzielnych projektach, jeden dla systemu Windows, a drugi dla systemu Windows Phone. Aby uzyskać więcej informacji na temat uniwersalnych aplikacji systemu Windows, zobacz [Uniwersalne aplikacje systemu Windows](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Rozszerzenia programu Visual Studio, które zarządzają projektami, powinny mieć świadomość, że uniwersalne projekty aplikacji systemu Windows mają strukturę, która różni się od aplikacji jednoplatformowych. W tym przewodniku pokazano, jak poruszać się po projekcie udostępnionym i zarządzać elementami udostępnionymi.
+Aplikacje uniwersalne systemu Windows to aplikacje przeznaczone zarówno dla Windows 8.1, jak i Windows Phone 8,1, dzięki czemu deweloperzy mogą korzystać z kodu i innych zasobów na obu platformach. Udostępniony kod i zasoby są przechowywane w projekcie udostępnionym, podczas gdy kod i zasoby specyficzne dla platformy są przechowywane w oddzielnych projektach, jeden dla systemu Windows, a drugi dla Windows Phone. Aby uzyskać więcej informacji na temat uniwersalnych aplikacji systemu Windows, zobacz [aplikacje uniwersalne systemu Windows](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Rozszerzenia programu Visual Studio, które zarządzają projektami, powinny mieć świadomość, że projekty aplikacji uniwersalnych systemu Windows mają strukturę, która różni się od aplikacji jednoplatformowych. W tym instruktażu pokazano, jak nawigować po projekcie udostępnionym i zarządzać elementami udostępnionymi.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Począwszy od programu Visual Studio 2015, nie należy instalować visual studio SDK z centrum pobierania. Jest on dołączony jako opcjonalna funkcja w konfiguracji programu Visual Studio. Można również zainstalować vs SDK później. Aby uzyskać więcej informacji, zobacz [Instalowanie pakietu SDK programu Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dołączana jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-### <a name="navigate-the-shared-project"></a>Poruszanie się po projekcie udostępnionym
+### <a name="navigate-the-shared-project"></a>Nawigowanie po projekcie udostępnionym
 
-1. Utwórz projekt VSIX w języku C# o nazwie **TestUniversalProject**. (Plik**File** > **nowy** > **projekt,** a następnie **C#** > **Rozszerzalność** > pakietu programu Visual**Studio**). Dodaj szablon elementu projektu **polecenia niestandardowego** (w **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj** > **nowy element,** a następnie przejdź do **pozycji Rozszerzalność).** Nazwij plik **TestUniversalProject**.
+1. Utwórz projekt w języku C# o nazwie **TestUniversalProject**. (**Plik**  >  **Nowe**  >  **Projekt** , a następnie język **C#**  >  **Rozszerzalny**  >  **pakiet Visual Studio**). Dodaj niestandardowy szablon elementu projektu **polecenia** (na **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**, a następnie przejdź do obszaru **rozszerzalności**). Nazwij plik **TestUniversalProject**.
 
-2. Dodaj odwołanie do *pliku Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* i *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (w sekcji **Rozszerzenia).**
+2. Dodaj odwołanie do *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* i *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (w sekcji **rozszerzenia** ).
 
-3. Otwórz *TestUniversalProject.cs* i dodaj następujące `using` dyrektywy:
+3. Otwórz *TestUniversalProject.cs* i Dodaj następujące `using` dyrektywy:
 
     ```csharp
     using EnvDTE;
@@ -42,7 +42,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     using System.Windows.Forms;
     ```
 
-4. W `TestUniversalProject` klasie dodać pole prywatne wskazujące na **dane wyjściowe** okna.
+4. W `TestUniversalProject` klasie Dodaj pole private wskazujące okno **dane wyjściowe** .
 
     ```csharp
     public sealed class TestUniversalProject
@@ -52,7 +52,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     }
     ```
 
-5. Ustaw odwołanie do okienka wyjściowego wewnątrz konstruktora TestUniversalProject:
+5. Ustaw odwołanie do okienka danych wyjściowych w konstruktorze TestUniversalProject:
 
     ```csharp
     private TestUniversalProject(Package package)
@@ -78,7 +78,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     }
     ```
 
-6. Usuń istniejący kod `ShowMessageBox` z metody:
+6. Usuń istniejący kod z `ShowMessageBox` metody:
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -86,7 +86,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     }
     ```
 
-7. Pobierz DTE obiektu, który będziemy używać do kilku różnych celów w tym instruktażu. Upewnij się również, że rozwiązanie jest ładowane po kliknięciu przycisku menu.
+7. Pobierz obiekt DTE, który będzie używany w kilku różnych celach w tym instruktażu. Upewnij się również, że rozwiązanie zostało załadowane po kliknięciu przycisku menu.
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -104,7 +104,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     }
     ```
 
-8. Znajdź udostępniony projekt. Wspólny projekt jest czystym kontenerem; nie tworzy ani nie generuje wyników. Poniższa metoda znajduje pierwszy projekt udostępniony w <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> rozwiązaniu, szukając obiektu, który ma możliwości projektu udostępnionego.
+8. Znajdź projekt udostępniony. Udostępniony projekt jest czystym kontenerem; nie kompiluje ani nie tworzy danych wyjściowych. Poniższa metoda umożliwia znalezienie pierwszego udostępnionego projektu w rozwiązaniu przez wyszukanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> obiektu, który ma możliwość projektu udostępnionego.
 
     ```csharp
     private IVsHierarchy FindSharedProject()
@@ -126,7 +126,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     }
     ```
 
-9. W `ShowMessageBox` metodzie dane wyjściowe podpis (nazwa projektu, który pojawia się w **Eksploratorze rozwiązań)** udostępnionego projektu.
+9. W `ShowMessageBox` metodzie dane wyjściowe podpisu (nazwa projektu, który pojawia się w **Eksplorator rozwiązań**) projektu udostępnionego.
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -156,7 +156,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     }
     ```
 
-10. Pobierz aktywny projekt platformy. Projekty platformy są projekty, które zawierają kod specyficzne dla platformy i zasobów. Poniższa metoda używa nowego <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_SharedItemContextHierarchy> pola, aby uzyskać projekt aktywnej platformy.
+10. Pobierz aktywny projekt platformy. Projekty platformy to projekty, które zawierają kod i zasoby specyficzne dla platformy. Poniższa metoda używa nowego pola <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_SharedItemContextHierarchy> do uzyskania aktywnego projektu platformy.
 
     ```csharp
     private IVsHierarchy GetActiveProjectContext(IVsHierarchy hierarchy)
@@ -174,7 +174,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     }
     ```
 
-11. W `ShowMessageBox` metodzie danych wyjściowych podpis projektu aktywnej platformy.
+11. W `ShowMessageBox` metodzie dane wyjściowe mają podpis aktywnego projektu platformy.
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -214,7 +214,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     }
     ```
 
-12. Iterować poprzez projekty platformy. Następująca metoda pobiera wszystkie projekty importowania (platformy) z udostępnionego projektu.
+12. Wykonaj iterację projektów platformy. Poniższa metoda pobiera wszystkie projekty importowania (platformy) z projektu udostępnionego.
 
     ```csharp
     private IEnumerable<IVsHierarchy> EnumImportingProjects(IVsHierarchy hierarchy)
@@ -233,7 +233,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     ```
 
     > [!IMPORTANT]
-    > Jeśli użytkownik otworzył projekt aplikacji uniwersalnej systemu Windows języka C++ w wystąpieniu eksperymentalnym, powyższy kod zgłasza wyjątek. Jest to znany problem. Aby uniknąć wyjątku, `foreach` należy zastąpić powyższy blok następującymi elementami:
+    > Jeśli użytkownik otworzył projekt uniwersalnej aplikacji systemu Windows w języku C++ w eksperymentalnym wystąpieniu, kod powyżej zgłasza wyjątek. Jest to znany problem. Aby uniknąć wyjątku, Zastąp `foreach` blok powyżej następującym:
 
     ```csharp
     var importingProjects = sharedAssetsProject.EnumImportingProjects();
@@ -243,7 +243,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     }
     ```
 
-13. W `ShowMessageBox` metodzie danych wyjściowych podpis każdego projektu platformy. Wstaw następujący kod po wierszu, który wyprowadza podpis projektu aktywnej platformy. Tylko projekty platformy, które są ładowane są wyświetlane na tej liście.
+13. W `ShowMessageBox` metodzie dane wyjściowe są wyświetlane na końcu podpisu każdego projektu platformy. Wstaw poniższy kod po wierszu, który wyprowadza podpis aktywnego projektu platformy. Na tej liście są wyświetlane tylko te projekty platformy, które zostały załadowane.
 
     ```csharp
     output.OutputStringThreadSafe("Platform projects:\n");
@@ -259,7 +259,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     }
     ```
 
-14. Zmień projekt aktywnej platformy. Poniższa metoda ustawia aktywny <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>projekt za pomocą .
+14. Zmień aktywny projekt platformy. Poniższa metoda ustawia aktywny projekt przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A> .
 
     ```csharp
     private int SetActiveProjectContext(IVsHierarchy hierarchy, IVsHierarchy activeProjectContext)
@@ -268,7 +268,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     }
     ```
 
-15. W `ShowMessageBox` metodzie zmień projekt aktywnej platformy. Wstaw ten `foreach` kod wewnątrz bloku.
+15. W `ShowMessageBox` metodzie Zmień aktywny projekt platformy. Wstaw ten kod wewnątrz `foreach` bloku.
 
     ```csharp
     bool isActiveProjectSet = false;
@@ -291,7 +291,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. Teraz wypróbuj. Naciśnij klawisz F5, aby uruchomić wystąpienie eksperymentalne. Utwórz projekt uniwersalnej aplikacji centrum języka C# w wystąpieniu eksperymentalnym (w oknie dialogowym **Nowy projekt** **aplikacja Visual C#** > **Windows** > **8** > **Universal** > Hub **).** Po załadowaniu rozwiązania przejdź do menu **Narzędzia** i kliknij przycisk **Wywołaj TestUniversalProject**, a następnie sprawdź tekst w okienku **Dane wyjściowe.** Powinna zostać wyświetlona zawartość podobna do tej:
+16. Wypróbuj teraz. Naciśnij klawisz F5, aby uruchomić wystąpienie eksperymentalne. Tworzenie projektu aplikacji uniwersalnej w języku C# w eksperymentalnym wystąpieniu (w oknie dialogowym **Nowy projekt** , **Visual C#**  >  **Windows**  >  **Windows 8**  >  **Universal**  >  **aplikacja Universal Hub**systemu Windows w języku Visual C#). Po załadowaniu rozwiązania przejdź do menu **Narzędzia** , a następnie kliknij pozycję **Wywołaj TestUniversalProject**, a następnie sprawdź tekst w okienku **dane wyjściowe** . Powinna zostać wyświetlona zawartość podobna do tej:
 
     ```
     Found shared project: HubApp.Shared
@@ -302,9 +302,9 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     set active project: HubApp.WindowsPhone
     ```
 
-### <a name="manage-the-shared-items-in-the-platform-project"></a>Zarządzanie udostępnionymi elementami w projekcie platformy
+### <a name="manage-the-shared-items-in-the-platform-project"></a>Zarządzanie elementami udostępnionymi w projekcie platformy
 
-1. Znajdź elementy udostępnione w projekcie platformy. Elementy w projekcie udostępnionym są wyświetlane w projekcie platformy jako elementy udostępnione. Nie widać ich w **Eksploratorze rozwiązań,** ale można przejść do hierarchii projektu, aby je znaleźć. Poniższa metoda przechodzi hierarchii i zbiera wszystkie elementy udostępnione. Opcjonalnie wyprowadza podpis każdego elementu.It optionally outputs the caption of each item,. Elementy udostępnione są identyfikowane <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>przez nową właściwość .
+1. Znajdź elementy udostępnione w projekcie platformy. Elementy w projekcie udostępnionym są wyświetlane w projekcie platformy jako elementy udostępnione. Nie są one widoczne w **Eksplorator rozwiązań**, ale można przeszukać hierarchię projektu, aby je znaleźć. Poniższa metoda przeprowadzi hierarchię i gromadzi wszystkie elementy udostępnione. Opcjonalnie zwraca podpis każdego elementu,. Elementy udostępnione są identyfikowane przez nową właściwość <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem> .
 
     ```csharp
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)
@@ -336,7 +336,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     }
     ```
 
-2. W `ShowMessageBox` metodzie dodaj następujący kod, aby przejść do elementów hierarchii projektu platformy. Włóż go `foreach` do bloku.
+2. W `ShowMessageBox` metodzie Dodaj następujący kod, aby przeprowadzić elementy hierarchii projektu platformy. Wstaw ją wewnątrz `foreach` bloku.
 
     ```csharp
     output.OutputStringThreadSafe("Walk the active platform project:\n");
@@ -344,7 +344,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);
     ```
 
-3. Przeczytaj udostępnione elementy. Udostępnione elementy są wyświetlane w projekcie platformy jako ukryte połączone pliki i można odczytać wszystkie właściwości jako zwykłe połączone pliki. Poniższy kod odczytuje pełną ścieżkę pierwszego elementu udostępnionego.
+3. Odczytaj elementy udostępnione. Elementy udostępnione są wyświetlane w projekcie platformy jako ukryte pliki połączone i można odczytywać wszystkie właściwości jako zwykłe pliki połączone. Poniższy kod odczytuje pełną ścieżkę pierwszego elementu udostępnionego.
 
     ```csharp
     var sharedItemId = sharedItemIds[0];
@@ -353,7 +353,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4. Teraz wypróbuj. Naciśnij **klawisz F5,** aby uruchomić wystąpienie eksperymentalne. Utwórz projekt uniwersalnej aplikacji centrum języka C# w wystąpieniu eksperymentalnym (w oknie dialogowym **Nowy projekt,** **Visual C#** > **Windows** > **8** > **Universal** > Hub**App**) przejdź do menu **Narzędzia** i kliknij przycisk **Wywołaj TestUniversalProject**, a następnie sprawdź tekst w okienku Dane **wyjściowe.** Powinna zostać wyświetlona zawartość podobna do tej:
+4. Wypróbuj teraz. Naciśnij klawisz **F5** , aby uruchomić wystąpienie eksperymentalne. Utwórz projekt aplikacji uniwersalnej w języku C# w eksperymentalnym wystąpieniu (w oknie dialogowym **Nowy projekt** , aplikacji uniwersalnej centrum systemu Windows w języku **Visual C#**  >  **Windows**  >  **Windows 8**  >  **Universal**  >  **Hub App**) przejdź do menu **Narzędzia** i kliknij polecenie **Wywołaj TestUniversalProject**, a następnie sprawdź tekst w okienku **danych wyjściowych** . Powinna zostać wyświetlona zawartość podobna do tej:
 
     ```
     Found shared project: HubApp.Shared
@@ -407,25 +407,25 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
                 SectionPage.xaml.cs
     ```
 
-### <a name="detect-changes-in-platform-projects-and-shared-projects"></a>Wykrywanie zmian w projektach platformy i projektach współdzielonych
+### <a name="detect-changes-in-platform-projects-and-shared-projects"></a>Wykrywaj zmiany w projektach platformy i projektach udostępnionych
 
-1. Za pomocą hierarchii i zdarzeń projektu można wykrywać zmiany w projektach udostępnionych, tak samo jak w przypadku projektów platformy. Jednak elementy projektu w projekcie udostępnionym nie są widoczne, co oznacza, że niektóre zdarzenia nie są uruchamiane po zmianie elementów projektu udostępnionego.
+1. Zdarzenia hierarchii i projektu umożliwiają wykrywanie zmian w projektach udostępnionych, podobnie jak w przypadku projektów platformy. Jednak elementy projektu w projekcie udostępnionym nie są widoczne, co oznacza, że niektóre zdarzenia nie są uruchamiane po zmianie elementów projektu udostępnionego.
 
-    Należy wziąć pod uwagę kolejność zdarzeń, gdy nazwa pliku w projekcie jest zmieniana:
+    Należy wziąć pod uwagę sekwencję zdarzeń, gdy zostanie zmieniona nazwa pliku w projekcie:
 
-   1. Nazwa pliku zostanie zmieniona na dysku.
+   1. Nazwa pliku została zmieniona na dysku.
 
-   2. Plik projektu zostanie zaktualizowany w celu uwzględnienia nowej nazwy pliku.
+   2. Plik projektu został zaktualizowany tak, aby zawierał nową nazwę pliku.
 
-      Zdarzenia hierarchii (na <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>przykład) zazwyczaj śledzą zmiany wyświetlane w interfejsie użytkownika, tak jak w **Eksploratorze rozwiązań**. Zdarzenia hierarchii uważają, że operacja zmiany nazwy pliku składa się z usunięcia pliku, a następnie dodania pliku. Jednak po zmianie niewidocznych elementów system <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> zdarzeń hierarchii <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> uruchamia zdarzenie, ale nie zdarzenie. W związku z tym jeśli zmienisz nazwę pliku <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> w <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>projekcie platformy, otrzymasz oba i , ale <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>jeśli zmienisz nazwę pliku w projekcie udostępnionym, otrzymasz tylko .
+      Zdarzenia hierarchii (na przykład <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents> ) zazwyczaj śledzą zmiany wyświetlane w interfejsie użytkownika, jak w **Eksplorator rozwiązań**. Zdarzenia hierarchii należy wziąć pod uwagę operację zmiany nazwy pliku, aby składać się z usuwania plików, a następnie dodawania plików. Jednak po zmianie niewidocznych elementów system zdarzeń hierarchii uruchamia <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> zdarzenie, ale nie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> zdarzenie. W związku z tym, jeśli zmienisz nazwę pliku w projekcie platformy, będziesz mieć zarówno, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> jak i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> , ale jeśli zmienisz nazwę pliku w projekcie udostępnionym, uzyskasz tylko <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> .
 
-      Aby śledzić zmiany w elementach projektu, można obsługiwać <xref:EnvDTE.ProjectItemsEventsClass>zdarzenia elementu projektu DTE (te znalezione w ). Jeśli jednak obsługujesz dużą liczbę zdarzeń, możesz uzyskać lepszą wydajność <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>obsługi zdarzeń w pliku . W tym instruktażu pokazujemy tylko zdarzenia hierarchii i zdarzenia DTE. W tej procedurze można dodać detektor zdarzeń do udostępnionego projektu i projektu platformy. Następnie po zmianie nazwy jednego pliku w projekcie udostępnionym i innego pliku w projekcie platformy, można zobaczyć zdarzenia, które są uruchamiane dla każdej operacji zmiany nazwy.
+      Aby śledzić zmiany w elementach projektu, można obsługiwać zdarzenia elementów projektu DTE (Znalezione w programie <xref:EnvDTE.ProjectItemsEventsClass> ). Jednak w przypadku obsługi dużej liczby zdarzeń można uzyskać lepszą wydajność obsługi zdarzeń w programie <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> . W tym instruktażu przedstawiono tylko zdarzenia hierarchii i zdarzenia DTE. W tej procedurze należy dodać odbiornik zdarzeń do projektu udostępnionego i projektu platformy. Po zmianie nazwy jednego pliku w projekcie udostępnionym i innym pliku w projekcie platformy można zobaczyć zdarzenia, które są generowane dla każdej operacji zmiany nazwy.
 
-      W tej procedurze można dodać detektor zdarzeń do udostępnionego projektu i projektu platformy. Następnie po zmianie nazwy jednego pliku w projekcie udostępnionym i innego pliku w projekcie platformy, można zobaczyć zdarzenia, które są uruchamiane dla każdej operacji zmiany nazwy.
+      W tej procedurze należy dodać odbiornik zdarzeń do projektu udostępnionego i projektu platformy. Po zmianie nazwy jednego pliku w projekcie udostępnionym i innym pliku w projekcie platformy można zobaczyć zdarzenia, które są generowane dla każdej operacji zmiany nazwy.
 
-2. Dodaj detektor zdarzeń. Dodaj nowy plik klasy do projektu i nazwij go *HierarchyEventListener.cs*.
+2. Dodaj odbiornik zdarzeń. Dodaj nowy plik klasy do projektu i Wywołaj go *HierarchyEventListener.cs*.
 
-3. Otwórz plik *HierarchyEventListener.cs* i dodaj następujące elementy za pomocą dyrektyw:
+3. Otwórz plik *HierarchyEventListener.cs* i Dodaj następujące dyrektywy using:
 
    ```csharp
    using Microsoft.VisualStudio.Shell.Interop;
@@ -433,14 +433,14 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
    using System.IO;
    ```
 
-4. Zaimplementuj `HierarchyEventListener` klasę: <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>
+4. Zaimplementuj `HierarchyEventListener` klasę <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents> :
 
    ```csharp
    class HierarchyEventListener : IVsHierarchyEvents
    { }
    ```
 
-5. Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>członków , jak w poniższym kodzie.
+5. Zaimplementuj elementy członkowskie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents> , jak w poniższym kodzie.
 
    ```csharp
    class HierarchyEventListener : IVsHierarchyEvents
@@ -483,7 +483,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
    }
    ```
 
-6. W tej samej klasie dodać inny <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>program obsługi zdarzeń dla zdarzenia DTE , który występuje za każdym razem, gdy element projektu zostanie zmieniona.
+6. W tej samej klasie Dodaj kolejną procedurę obsługi zdarzeń dla zdarzenia DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> , która występuje zawsze, gdy zostanie zmieniona nazwa elementu projektu.
 
    ```csharp
    public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)
@@ -493,7 +493,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
    }
    ```
 
-7. Zarejestruj się, aby zarejestrować się w przypadku zdarzeń hierarchii. Musisz zarejestrować się oddzielnie dla każdego projektu, który śledzisz. Dodaj następujący kod `ShowMessageBox`w programie , jeden dla udostępnionego projektu, a drugi dla jednego z projektów platformy.
+7. Utwórz konto dla zdarzeń hierarchii. Musisz zarejestrować się osobno dla każdego śledzonego projektu. Dodaj następujący kod w `ShowMessageBox` , jeden dla projektu udostępnionego, a drugi dla jednego z projektów platformy.
 
    ```csharp
    // hook up the event listener for hierarchy events on the shared project
@@ -508,7 +508,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
    activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);
    ```
 
-8. Zarejestruj się, aby zarejestrować <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>zdarzenie elementu projektu DTE . Dodaj następujący kod po podłączeniu drugiego odbiornika.
+8. Utwórz konto dla zdarzenia elementu projektu DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> . Dodaj następujący kod po podłączaniu drugiego odbiornika.
 
    ```csharp
    // hook up DTE events for project items
@@ -516,12 +516,12 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
    dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;
    ```
 
-9. Modyfikowanie elementu udostępnionego. Nie można modyfikować elementów udostępnionych w projekcie platformy; Zamiast tego należy zmodyfikować je w projekcie udostępnionym, który jest rzeczywistym właścicielem tych elementów. Odpowiedni identyfikator elementu w projekcie udostępnionym <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>można uzyskać, nadając mu pełną ścieżkę elementu udostępnionego. Następnie można zmodyfikować element udostępniony. Zmiana jest propagowana do projektów platformy.
+9. Zmodyfikuj element współużytkowany. Nie można modyfikować elementów udostępnionych w projekcie platformy; Zamiast tego należy je zmodyfikować w projekcie udostępnionym, który jest rzeczywistym właścicielem tych elementów. Możesz uzyskać odpowiedni identyfikator elementu w projekcie udostępnionym z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A> , nadając mu pełną ścieżkę do udostępnionego elementu. Następnie można zmodyfikować element współużytkowany. Zmiana jest propagowana do projektów platformy.
 
     > [!IMPORTANT]
-    > Przed zmodyfikowaniem elementu projektu należy dowiedzieć się, czy element projektu jest elementem udostępnionym.
+    > Należy sprawdzić, czy element projektu jest elementem udostępnionym przed jego zmodyfikowaniem.
 
-     Poniższa metoda modyfikuje nazwę pliku elementu projektu.
+     Poniższa Metoda modyfikuje nazwę pliku elementu projektu.
 
     ```csharp
     private void ModifyFileNameInProject(IVsHierarchy project, string path)
@@ -539,7 +539,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     }
     ```
 
-10. Wywołanie tej metody po `ShowMessageBox` wszystkich innych kodu w celu zmodyfikowania nazwy pliku elementu w projekcie udostępnionym. Wstaw to po kodzie, który pobiera pełną ścieżkę elementu w projekcie udostępnionym.
+10. Wywołaj tę metodę po każdym innym kodzie w programie, `ShowMessageBox` Aby zmodyfikować plik w projekcie udostępnionym. Wstaw ten element po kodzie, który pobiera pełną ścieżkę elementu w projekcie udostępnionym.
 
     ```csharp
     // change the file name of an item in a shared project
@@ -549,9 +549,9 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     this.ModifyFileNameInProject(sharedHier, fullPath);
     ```
 
-11. Tworzenie i uruchamianie projektu. Utwórz uniwersalną aplikację centrum języka C# w wystąpieniu eksperymentalnym, przejdź do menu **Narzędzia** i kliknij przycisk **Wywołaj TestUniversalProject**i sprawdź tekst w ogólnym okienku danych wyjściowych. Nazwa pierwszego elementu w projekcie udostępnionym (oczekujemy, że będzie to plik *App.xaml)* powinna <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> zostać zmieniona i powinien zostać wyświetlony, że zdarzenie zostało zwolnione. W takim przypadku od zmiany nazwy *App.xaml* *powoduje, App.xaml.cs,* aby zmienić nazwę, jak również, powinny być widoczne cztery zdarzenia (dwa dla każdego projektu platformy). (Zdarzenia DTE nie śledzą elementów w projekcie udostępnionym). Powinny być <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> widoczne dwa zdarzenia (po jednym <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> dla każdego z projektów platformy), ale bez zdarzeń.
+11. Skompiluj i Uruchom projekt. Utwórz aplikację uniwersalną centrum w języku C# w eksperymentalnym wystąpieniu, przejdź do menu **Narzędzia** i kliknij polecenie **Wywołaj TestUniversalProject**i zaznacz tekst w okienku danych wyjściowych ogólne. Nazwa pierwszego elementu w projekcie udostępnionym (oczekujemy, że plik *App. XAML* ) powinien zostać zmieniony i należy zobaczyć, że <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> zdarzenie zostało wyzwolone. W takim przypadku zmiana nazwy pliku *App. XAML* powoduje, że zmiany nazwy *App.XAML.cs* również powinny być widoczne cztery zdarzenia (dwa dla każdego projektu platformy). (Zdarzenia DTE nie śledzą elementów w projekcie udostępnionym). Powinny być widoczne dwa <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> zdarzenia (po jednym dla każdego projektu platformy), ale nie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> zdarzenia.
 
-12. Teraz spróbuj zmienić nazwę pliku w projekcie platformy, a zobaczysz różnicę w zdarzeniach, które są uruchamiane. Dodaj następujący kod `ShowMessageBox` po wywołaniu do `ModifyFileName`.
+12. Teraz spróbuj zmienić nazwę pliku w projekcie platformy i zobaczyć różnicę w zdarzeniach, które są wywoływane. Dodaj następujący kod do programu `ShowMessageBox` po wywołaniu metody `ModifyFileName` .
 
     ```csharp
     // change the file name of an item in a platform project
@@ -566,4 +566,4 @@ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio
     this.ModifyFileNameInProject(activePlatformHier, unsharedPath);
     ```
 
-13. Tworzenie i uruchamianie projektu. Utwórz projekt uniwersalny języka C# w wystąpieniu eksperymentalnym, przejdź do menu **Narzędzia** i kliknij przycisk **Wywołaj TestUniversalProject**i sprawdź tekst w ogólnym okienku danych wyjściowych. Po zmianie nazwy pliku w projekcie platformy powinien <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> zostać wyświetlony <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> zarówno zdarzenie, jak i zdarzenie. Ponieważ zmiana pliku spowodowała, że żadne inne pliki nie zostały zmienione, a ponieważ zmiany elementów w projekcie platformy nie są propagowane nigdzie, istnieje tylko jedno z tych zdarzeń.
+13. Skompiluj i Uruchom projekt. Utwórz projekt uniwersalny C# w eksperymentalnym wystąpieniu, przejdź do menu **Narzędzia** i kliknij polecenie **Wywołaj TestUniversalProject**i zaznacz tekst w okienku danych wyjściowych ogólne. Po zmianie nazwy pliku w projekcie platformy powinno być widoczne <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> zdarzenie i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> zdarzenie. Ponieważ zmiana pliku spowodowała, że nie można zmienić plików, a ponieważ zmiany elementów w projekcie platformy nie są propagowane w dowolnym miejscu, istnieje tylko jedno z tych zdarzeń.

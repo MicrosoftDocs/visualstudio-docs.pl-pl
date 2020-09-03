@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4af506da822a7f8e38a8952d7c1d0d15fc1995d2
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468554"
 ---
 # <a name="idiaaddressmapset_addressmap"></a>IDiaAddressMap::set_addressMap
@@ -43,7 +43,7 @@ podczas Tablica struktur [struktury DiaAddressMapEntry —](../../debugger/debug
 
  `imagetoSymbols`
 
-[w] `TRUE` Jeśli `data` parametr definiuje mapę z nowego układu obrazu do oryginalnego układu (zgodnie z opisem przez symbole debugowania). `FALSE`Jeśli `data` jest mapą do nowego układu obrazu pobranego z oryginalnego układu.
+[w] `TRUE` Jeśli `data` parametr definiuje mapę z nowego układu obrazu do oryginalnego układu (zgodnie z opisem przez symbole debugowania). `FALSE` Jeśli `data` jest mapą do nowego układu obrazu pobranego z oryginalnego układu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.

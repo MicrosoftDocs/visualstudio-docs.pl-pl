@@ -12,24 +12,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b70f1d3174990ec12c621dff4a45ce4d899ceb4e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593073"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch, projektant działań
 
-Projektant działań **TryCatch** służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.TryCatch>.
+Projektant działań **TryCatch** służy do tworzenia i konfigurowania <xref:System.Activities.Statements.TryCatch> działania.
 
 ## <a name="the-trycatch-activity"></a>Działanie TryCatch
- Działanie <xref:System.Activities.Statements.TryCatch> zawiera działanie <xref:System.Activities.Statements.TryCatch.Try%2A>, kolekcja **\<przechwytywania >** i działanie <xref:System.Activities.Statements.TryCatch.Finally%2A>. <xref:System.Activities.Statements.Catch%601> typu **TException** zawiera <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> i <xref:System.Activities.Statements.Catch%601.Action%2A>. Są one używane do implementowania typowego mechanizmu obsługi błędów opartych na wyjątkach. Działanie <xref:System.Activities.Statements.TryCatch> próbuje wykonać <xref:System.Activities.Statements.TryCatch.Try%2A> działania. Jeśli działanie <xref:System.Activities.Statements.TryCatch.Try%2A> zgłosi jakikolwiek wyjątek, działanie <xref:System.Activities.Statements.TryCatch> używa swojej kolekcji **TException < przechwytywania\>** , aby dopasować wyjątek. Jeśli istnieje dopasowanie, zostanie wykonane <xref:System.Activities.Statements.Catch%601.Action%2A> odpowiedniej **> Catch\<TException** , co służy jako logika obsługi błędów dla wyjątku. W przypadku pomyślnego ukończenia działań w sekcji <xref:System.Activities.Statements.TryCatch.Try%2A> lub działania w <xref:System.Activities.Statements.TryCatch.Catches%2A> pomyślnie wykonane działanie <xref:System.Activities.Statements.TryCatch> wykonuje jego działanie <xref:System.Activities.Statements.TryCatch.Finally%2A>. Aby uzyskać więcej informacji, zobacz [wyjątki przepływu pracy systemu Windows](/dotnet/framework/windows-workflow-foundation/exceptions).
+ <xref:System.Activities.Statements.TryCatch>Działanie zawiera <xref:System.Activities.Statements.TryCatch.Try%2A> działanie, kolekcję funkcji **Catch \<TException> ** i <xref:System.Activities.Statements.TryCatch.Finally%2A> Activity. A <xref:System.Activities.Statements.Catch%601> typu **TException** zawiera <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> a i <xref:System.Activities.Statements.Catch%601.Action%2A> . Są one używane do implementowania typowego mechanizmu obsługi błędów opartych na wyjątkach. <xref:System.Activities.Statements.TryCatch>Działanie próbuje wykonać <xref:System.Activities.Statements.TryCatch.Try%2A> działanie. Jeśli <xref:System.Activities.Statements.TryCatch.Try%2A> działanie zgłasza jakikolwiek wyjątek, <xref:System.Activities.Statements.TryCatch> działanie używa swojej kolekcji **TException \> do<przechwytywania** , aby dopasować wyjątek. Jeśli istnieje dopasowanie, to jest <xref:System.Activities.Statements.Catch%601.Action%2A> wykonywana odpowiednia wartość ** \<TException> catch** , która służy jako logika obsługi błędów dla wyjątku. Jeśli działania w <xref:System.Activities.Statements.TryCatch.Try%2A> sekcji zostały pomyślnie zakończone lub działania <xref:System.Activities.Statements.TryCatch.Catches%2A> wykonane pomyślnie, <xref:System.Activities.Statements.TryCatch> działanie wykonuje jego <xref:System.Activities.Statements.TryCatch.Finally%2A> działanie. Aby uzyskać więcej informacji, zobacz [wyjątki przepływu pracy systemu Windows](/dotnet/framework/windows-workflow-foundation/exceptions).
 
 ### <a name="using-the-trycatch-activity-designer"></a>Korzystanie z projektanta działań TryCatch
 
 Dostęp do projektanta działań **TryCatch** w kategorii **Obsługa błędów** w **przyborniku**.
 
-Projektanta działań **TryCatch** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie działania <xref:System.Activities.Statements.TryCatch> przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> TryCatch. Wartość <xref:System.Activities.Activity.DisplayName%2A> można edytować w nagłówku projektanta działań **TryCatch** lub w polu **DisplayName** siatki właściwości. Inne właściwości muszą być edytowane na powierzchni projektanta działań **TryCatch** .
+Projektanta działań **TryCatch** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Spowoduje to utworzenie <xref:System.Activities.Statements.TryCatch> działania z wartością domyślną <xref:System.Activities.Activity.DisplayName%2A> TryCatch. <xref:System.Activities.Activity.DisplayName%2A>Wartość można edytować w nagłówku projektanta działań **TryCatch** lub w polu **DisplayName** siatki właściwości. Inne właściwości muszą być edytowane na powierzchni projektanta działań **TryCatch** .
 
 Kliknij przycisk Rozwiń w prawym górnym rogu projektanta **TryCatch** , aby wyświetlić pola **try**, **catch**i **finally** w rozwiniętym widoku. Aby dodać catch, kliknij przycisk **Dodaj nowy catch** w programie **TryCatch** Designer. Przycisk zostanie zmieniony na pole kombi typu. Wybierz typ wyjątku i naciśnij klawisz ENTER, aby dodać catch. Po dodaniu **catch**zostanie rozwinięte miejsce przechwycenia, a działanie może zostać porzucone do przechwytywania w celu zdefiniowania logiki wykonywania dla catch. Zwróć uwagę, że po prawej stronie rozwiniętego obszaru catch znajduje się pole tekstowe. Można nazwać zmienną wyjątku przy użyciu tego pola tekstowego. Zmienna wyjątku może być używana tylko dla działań w ramach tego samego **przechwycenia**.
 
@@ -37,17 +37,17 @@ Program **TryCatch** Designer nie obsługuje edytowania funkcji **przechwytywani
 
 ### <a name="the-trycatch-properties"></a>Właściwości TryCatch
 
-W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.TryCatch>i opisano sposób ich używania w projektancie.
+W poniższej tabeli przedstawiono <xref:System.Activities.Statements.TryCatch> właściwości i opisano sposób ich użycia w projektancie.
 
-|Nazwa właściwości|Wymagane|Pomiar|
+|Nazwa właściwości|Wymagany|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Fałsz|Określa opcjonalną przyjazną nazwę działania <xref:System.Activities.Statements.TryCatch>. Wartość domyślna to TryCatch.|
-|<xref:System.Activities.Statements.TryCatch.Try%2A>|Fałsz|Działanie wykonywane najpierw po wykonaniu <xref:System.Activities.Statements.TryCatch>.|
-|<xref:System.Activities.Statements.TryCatch.Catches%2A>|Fałsz|Kolekcja elementów **przechwytywania** do sprawdzenia, gdy działanie <xref:System.Activities.Statements.TryCatch.Try%2A> zgłasza wyjątek.<br /><br /> Potrzebujesz co najmniej jednego działania w <xref:System.Activities.Statements.TryCatch.Catches%2A> lub działania w bloku <xref:System.Activities.Statements.TryCatch.Finally%2A>.|
-|<xref:System.Activities.Statements.TryCatch.Finally%2A>|Fałsz|Działanie, które ma zostać wykonane, gdy <xref:System.Activities.Statements.TryCatch.Try%2A> i wszelkie niezbędne działania w kolekcji <xref:System.Activities.Statements.TryCatch.Catches%2A> ukończą wykonywanie.<br /><br /> Potrzebujesz co najmniej jednego działania w <xref:System.Activities.Statements.TryCatch.Catches%2A> lub działania w bloku <xref:System.Activities.Statements.TryCatch.Finally%2A>.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Fałsz|Określa opcjonalną przyjazną nazwę <xref:System.Activities.Statements.TryCatch> działania. Wartość domyślna to TryCatch.|
+|<xref:System.Activities.Statements.TryCatch.Try%2A>|Fałsz|Działanie wykonywane najpierw po wykonaniu <xref:System.Activities.Statements.TryCatch> .|
+|<xref:System.Activities.Statements.TryCatch.Catches%2A>|Fałsz|Kolekcja elementów **przechwytywania** do sprawdzenia, gdy <xref:System.Activities.Statements.TryCatch.Try%2A> działanie zgłasza wyjątek.<br /><br /> W bloku należy dodać co najmniej jedno działanie <xref:System.Activities.Statements.TryCatch.Catches%2A> lub działanie <xref:System.Activities.Statements.TryCatch.Finally%2A> .|
+|<xref:System.Activities.Statements.TryCatch.Finally%2A>|Fałsz|Działanie, które ma zostać wykonane, gdy <xref:System.Activities.Statements.TryCatch.Try%2A> i wszelkie niezbędne działania w <xref:System.Activities.Statements.TryCatch.Catches%2A> kolekcji zakończą wykonywanie.<br /><br /> W bloku należy dodać co najmniej jedno działanie <xref:System.Activities.Statements.TryCatch.Catches%2A> lub działanie <xref:System.Activities.Statements.TryCatch.Finally%2A> .|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kolekcja](../workflow-designer/collection-activity-designers.md)
 - [Rethrow](../workflow-designer/rethrow-activity-designer.md)
-- [Throw](../workflow-designer/throw-activity-designer.md)
+- [Generować](../workflow-designer/throw-activity-designer.md)

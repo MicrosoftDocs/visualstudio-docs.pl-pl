@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 160897a37ff6a8b335479b42a80f4186f176cab6
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254401"
 ---
 # <a name="controls-on-office-documents"></a>Formanty w dokumentach pakietu Office
@@ -41,7 +41,7 @@ ms.locfileid: "71254401"
 
  W tym artykule opisano problemy, które mogą wystąpić w przypadku używania elementów hosta i kontrolek hosta w kodzie.
 
-- [Formanty Windows Forms na przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Kontrolki Windows Forms w dokumentach pakietu Office — omówienie](../vsto/windows-forms-controls-on-office-documents-overview.md)
 
  Zawiera informacje o korzystaniu z formantów Windows Forms w dokumentach programów Excel i Word oraz o tym, jak różnią się one od kontrolek w formularzu systemu Windows.
 

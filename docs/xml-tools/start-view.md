@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f05c3023a246ba193c98cb1b01984a54fdaa0ebb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592532"
 ---
 # <a name="start-view"></a>Widok startowy
@@ -23,7 +23,7 @@ Widok początkowy zawiera dwie główne sekcje, *znak wodny* i okienko **Szczeg�
 
 ![Widok początkowy projektanta schematu XML](../xml-tools/media/xsddesigner_startview.gif)
 
-## <a name="watermark"></a>Znak wodny
+## <a name="watermark"></a>-
 
 Okienko znaku wodnego zawiera listę linków do wszystkich widoków projektanta XSD, edytora XML i **Eksploratora schematu XML**. Jeśli zestaw schematu zawiera błędy, na końcu listy zostanie wyświetlony następujący tekst: "Użyj Lista błędów, aby wyświetlić i naprawić błędy w zestawie".
 
@@ -41,11 +41,11 @@ Poniższe przyciski są włączane na pasku narzędzi projektanta XSD, gdy widok
 
 |Opcja|Opis|
 |-|-----------------|
-|**Pokaż widok startowy**|Przełącza do widoku Start. Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl**+**1**.|
-|**Pokaż widok modelu zawartości**|Przełącza do widoku modelu zawartości. Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl**+**2**.|
-|**Pokaż widok wykresu**|Przełącza do widoku wykresu. Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl**+**3**.|
+|**Pokaż widok startowy**|Przełącza do widoku Start. Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **1**.|
+|**Pokaż widok modelu zawartości**|Przełącza do widoku modelu zawartości. Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **2**.|
+|**Pokaż widok wykresu**|Przełącza do widoku wykresu. Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **3**.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md)
 - [Widok wykresu](../xml-tools/graph-view.md)

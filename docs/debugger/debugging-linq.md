@@ -20,19 +20,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 256dadfeea4108f12e24864017b6e1752ece25a5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738203"
 ---
 # <a name="debugging-linq"></a>Debugowanie LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] obsługuje debugowanie kodu programu Query Integrated Language (LINQ) z pewnymi ograniczeniami. Większość funkcji debugowania współpracuje z instrukcjami LINQ, w tym krokowe, ustawianie punktów przerwania i wyświetlanie wyników w oknach debugera. W tym temacie opisano główne ograniczenia debugowania LINQ.
 
-## <a name="BKMK_ViewingLINQResults"></a>Wyświetlanie wyników LINQ
+## <a name="viewing-linq-results"></a><a name="BKMK_ViewingLINQResults"></a> Wyświetlanie wyników LINQ
  Można wyświetlić wynik instrukcji LINQ przy użyciu etykietek danych, okno wyrażeń kontrolnych i okna dialogowego QuickWatch. W przypadku korzystania z okna źródłowego można wstrzymywać wskaźnik zapytania w oknie źródło i pojawić się etykietki danych. Można skopiować zmienną LINQ i wkleić ją do okna dialogowego okno wyrażeń kontrolnych lub QuickWatch.
 
- W LINQ, zapytanie nie jest oceniane podczas tworzenia lub deklarowania, ale tylko wtedy, gdy zapytanie jest używane. W związku z tym zapytanie nie ma wartości, dopóki nie zostanie obliczone. Pełny opis tworzenia i oceny zapytania zawiera temat [wprowadzenie do zapytań LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) lub [pisanie pierwszej kwerendy LINQ](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).
+ W LINQ, zapytanie nie jest oceniane podczas tworzenia lub deklarowania, ale tylko wtedy, gdy zapytanie jest używane. W związku z tym zapytanie nie ma wartości, dopóki nie zostanie obliczone. Pełny opis tworzenia i oceny zapytania można znaleźć w temacie [wprowadzenie do zapytań LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) lub [pisanie pierwszej kwerendy LINQ](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).
 
  Aby wyświetlić wynik zapytania, debuger musi ją oszacować. Ta niejawna Ocena, która występuje po wyświetleniu wyniku zapytania LINQ w debugerze, ma pewne skutki, które należy wziąć pod uwagę:
 
@@ -40,10 +40,10 @@ ms.locfileid: "72738203"
 
 - Obliczenie zapytania może skutkować efektami ubocznymi, które są zmianami wartości danych lub stanu programu. Nie wszystkie zapytania mają efekty uboczne. Aby określić, czy zapytanie może być bezpiecznie ocenione bez efektów ubocznych, należy zrozumieć kod implementujący zapytanie.
 
-## <a name="BKMK_SteppingAndLinq"></a>Krokowe i LINQ
+## <a name="stepping-and-linq"></a><a name="BKMK_SteppingAndLinq"></a> Krokowe i LINQ
  Podczas debugowania kodu LINQ, krok po kroku ma pewne różnice behawioralne, o których należy wiedzieć.
 
-### <a name="linq-to-sql"></a>LINQ do SQL
+### <a name="linq-to-sql"></a>LINQ to SQL
  W LINQ to SQL zapytaniach kod predykatu jest poza kontrolą debugera. W związku z tym nie można wkroczyć do kodu predykatu. Wszystkie zapytania, które kompilują do drzewa wyrażenia, tworzą kod, który jest poza kontrolą debugera.
 
 ### <a name="stepping-in-visual-basic"></a>Krokowe Visual Basic
@@ -69,7 +69,7 @@ Sub Main()
 End Sub
 ```
 
- Po ponownym przekroczeniu kroku debuger wyróżnia `For Each cur In x`. W następnym kroku przeprowadzimy do `MyFunction`funkcji. Po przejściu przez `MyFunction`przeskakuje z powrotem do `Console.WriteLine(cur.ToSting())`. W żadnym momencie przekroczenie kodu predykatu w deklaracji zapytania, chociaż debuger szacuje ten kod.
+ Po ponownym przekroczeniu kroku debuger zostanie wyróżniony `For Each cur In x` . W następnym kroku przeprowadzimy do funkcji `MyFunction` . Po przejściu przez `MyFunction` program przechodzi z powrotem do `Console.WriteLine(cur.ToSting())` . W żadnym momencie przekroczenie kodu predykatu w deklaracji zapytania, chociaż debuger szacuje ten kod.
 
 ### <a name="replacing-a-predicate-with-a-function-to-enable-stepping-visual-basic"></a>Zamienianie predykatu na funkcję w celu włączenia taktowania (Visual Basic)
  Jeśli musisz przejść przez kod predykatu do celów debugowania, możesz zamienić predykat z wywołaniem funkcji, która zawiera oryginalny kod predykatu. Załóżmy na przykład, że masz ten kod:
@@ -85,7 +85,7 @@ For each item in query
 Next
 ```
 
- Kod predykatu można przenieść do nowej funkcji o nazwie `IsEven`:
+ Kod predykatu można przenieść do nowej funkcji o nazwie `IsEven` :
 
 ```vb
 Dim items () as integer ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
@@ -102,14 +102,14 @@ Function IsEven(item As =Integer) as Boolean
 End Function
 ```
 
- Poprawione zapytanie wywołuje funkcję `IsEven` przy każdym przejściu przez `items`. Możesz użyć okien debugera, aby sprawdzić, czy każdy element spełnia określony warunek, i możesz przejść przez kod w `IsEven`. Predykat w tym przykładzie jest dość prosty. Jednak jeśli istnieje trudniejszy predykat, który trzeba debugować, ta technika może być bardzo przydatna.
+ Poprawione zapytanie wywołuje funkcję `IsEven` przy każdym przebiegu przez `items` . Możesz użyć okien debugera, aby sprawdzić, czy każdy element spełnia określony warunek, i możesz przejść przez kod w `IsEven` . Predykat w tym przykładzie jest dość prosty. Jednak jeśli istnieje trudniejszy predykat, który trzeba debugować, ta technika może być bardzo przydatna.
 
-## <a name="BKMK_EditandContinueNotSupportedforLINQ"></a>Edytowanie i kontynuowanie nie jest obsługiwane w przypadku LINQ
+## <a name="edit-and-continue-not-supported-for-linq"></a><a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Edytowanie i kontynuowanie nie jest obsługiwane w przypadku LINQ
  Edytuj i Kontynuuj obsługuje zmiany zapytań LINQ z ograniczeniami. Aby uzyskać szczegółowe informacje, zobacz temat [obsługiwane zmiany](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)w programie ENC).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6\(v\=vs.100\))
 - [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md)
-- [Wprowadzenie do zapytań LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)
+- [Wprowadzenie do kwerend LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)
 - [Wprowadzenie do LINQ w Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)

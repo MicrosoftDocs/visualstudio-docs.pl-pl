@@ -18,33 +18,33 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2b8557581e93c8d2ba5a54a13c04d5de74b24f71
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255148"
 ---
 # <a name="bookmark-control"></a>Bookmark, formant:
-  <xref:Microsoft.Office.Tools.Word.Bookmark> Kontrolka jest zakładką, która ma unikatową nazwę, uwidacznia zdarzenia i może być powiązana z danymi. Zakładka może służyć jako symbol zastępczy do oznaczania elementu lub lokalizacji w Microsoft Office dokumencie programu Word. Kontrolka jest kombinacją <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu i <xref:Microsoft.Office.Interop.Word.Range> obiektu. <xref:Microsoft.Office.Tools.Word.Bookmark>
+  <xref:Microsoft.Office.Tools.Word.Bookmark>Kontrolka jest zakładką, która ma unikatową nazwę, uwidacznia zdarzenia i może być powiązana z danymi. Zakładka może służyć jako symbol zastępczy do oznaczania elementu lub lokalizacji w Microsoft Office dokumencie programu Word. <xref:Microsoft.Office.Tools.Word.Bookmark>Kontrolka jest kombinacją <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu i <xref:Microsoft.Office.Interop.Word.Range> obiektu.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- W projektach na poziomie dokumentu można dodawać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu w czasie projektowania lub w czasie wykonywania. W projektach dodatku VSTO można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dowolnego otwartego dokumentu w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie kontrolek zakładek do](../vsto/how-to-add-bookmark-controls-to-word-documents.md)dokumentów programu Word.
+ W projektach na poziomie dokumentu można dodawać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu w czasie projektowania lub w czasie wykonywania. W projektach dodatku VSTO można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dowolnego otwartego dokumentu w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie kontrolek zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
 
 ## <a name="bind-data-to-the-control"></a>Powiąż dane z kontrolką
- <xref:Microsoft.Office.Tools.Word.Bookmark> Kontrolka obsługuje proste powiązanie danych. Zakładka powinna być powiązana ze źródłem danych przy użyciu <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> właściwości. Domyślną właściwością powiązania danych zakładki jest <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> właściwość.
+ <xref:Microsoft.Office.Tools.Word.Bookmark>Kontrolka obsługuje proste powiązanie danych. Zakładka powinna być powiązana ze źródłem danych przy użyciu <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> właściwości. Domyślną właściwością powiązania danych zakładki jest <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> Właściwość.
 
  Jeśli dane w powiązanym zestawie danych zostaną zaktualizowane, <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolka wyświetli te zmiany.
 
- W projektach na poziomie dokumentu można także powiązać dane z zakładkami przy użyciu okna **źródła danych** . Aby uzyskać więcej informacji, zobacz [jak: Wypełnij dokumenty danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md).
+ W projektach na poziomie dokumentu można także powiązać dane z zakładkami przy użyciu okna **źródła danych** . Aby uzyskać więcej informacji, zobacz [How to: zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md).
 
 ## <a name="formatting"></a>Formatowanie
- Formatowanie, które można zastosować do elementu <xref:Microsoft.Office.Interop.Word.Bookmark> , można zastosować <xref:Microsoft.Office.Tools.Word.Bookmark> do kontrolki. To formatowanie obejmuje czcionki, wcięcia, odstępy, numerację i style.
+ Formatowanie, które można zastosować do elementu, <xref:Microsoft.Office.Interop.Word.Bookmark> można zastosować do <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki. To formatowanie obejmuje czcionki, wcięcia, odstępy, numerację i style.
 
 ## <a name="assign-text-to-the-bookmark"></a>Przypisywanie tekstu do zakładki
- Dodatkowa różnica między <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> obiektem <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> a kontrolką jest zachowaniem, gdy tekst jest przypisany do zakładki. W przypadku przypisywania tekstu do długości <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>zerowej tekst jest dołączany po prawej stronie zakładki, a zakładki pozostają zerowej długości. Jeśli jednak tekst zostanie przypisany do zerowej długości <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>, tekst zostanie wstawiony do zakładki, a długość zakładki zostanie rozwinięta do całkowitej liczby wstawionych znaków.
+ Dodatkowa różnica między <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> obiektem a <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> kontrolką jest zachowaniem, gdy tekst jest przypisany do zakładki. W przypadku przypisywania tekstu do długości zerowej <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> tekst jest dołączany po prawej stronie zakładki, a zakładki pozostają zerowej długości. Jeśli jednak tekst zostanie przypisany do zerowej długości <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> , tekst zostanie wstawiony do zakładki, a długość zakładki zostanie rozwinięta do całkowitej liczby wstawionych znaków.
 
- Kontrolka<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>marównieżwłaściwość. <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> Ta <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> właściwość różni się od właściwości, która jest dostępna <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> we właściwości <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> kontrolki lub <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> właściwości <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> obiektu.
+ <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>Kontrolka ma również <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> Właściwość. Ta właściwość różni się od <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> właściwości, która jest dostępna we <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> właściwości <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> kontrolki lub <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> właściwości <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> obiektu.
 
 |Właściwość Text|Opis|
 |-------------------|-----------------|
@@ -89,11 +89,11 @@ W poniższej tabeli pokazano, jak zdanie "to jest przykładowy tekst". jest wsp�
 |--------------|----------|
 |Dwie oddzielne zakładki|[to jest zastąpienie.]{}|
 |Bookmark1|To zastępuje.|
-|Bookmark2|*\<puste >*|
+|Bookmark2|*\<empty>*|
 
 ## <a name="events"></a>Zdarzenia
 
-Dla <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki dostępne są następujące zdarzenia:
+Dla kontrolki dostępne są następujące zdarzenia <xref:Microsoft.Office.Tools.Word.Bookmark> :
 
 - <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
 
@@ -109,7 +109,7 @@ Dla <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki dostępne są następu
 
 - <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
 - [Instrukcje: Dodawanie kontrolek zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

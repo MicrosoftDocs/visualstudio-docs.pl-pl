@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592428"
 ---
 # <a name="xml-document-properties-properties-window"></a>Właściwości dokumentu XML, okno Właściwości
@@ -28,17 +28,17 @@ Kodowanie znaków dla pliku. Zmiana tej właściwości powoduje także zmianę a
 
 **Dane wejściowe**
 
-Dokument wejściowy skojarzony z arkuszem stylów XSLT. Jest on używany przez polecenia **Uruchom XSLT** , na przykład, **XML** > **uruchomić XSLT bez debugowania**. Dokument można wybrać za pomocą przycisku Przeglądaj (.. **.** ).
+Dokument wejściowy skojarzony z arkuszem stylów XSLT. Jest on używany przez polecenia **Uruchom XSLT** , na przykład **kod XML**  >  **uruchamiania XSLT bez debugowania**. Dokument można wybrać za pomocą przycisku Przeglądaj (..**.**).
 
 Ta właściwość jest widoczna tylko wtedy, gdy plik XSLT jest otwarty w edytorze.
 
-**Output**
+**Dane wyjściowe**
 
 Plik, który jest generowany podczas przekształcania dokumentu XML.
 
-Jeśli plik nie zostanie określony, domyślna nazwa pliku jest generowana na podstawie atrybutu `method` w elemencie `xsl:output`, który określa rozszerzenie pliku. Plik domyślny znajduje się w katalogu tymczasowym bieżącego użytkownika.
+Jeśli plik nie zostanie określony, domyślna nazwa pliku jest generowana na podstawie `method` atrybutu `xsl:output` elementu, który określa rozszerzenie pliku. Plik domyślny znajduje się w katalogu tymczasowym bieżącego użytkownika.
 
-**Punktu**
+**Schematy**
 
 Schematy do użycia na potrzeby walidacji. Przycisk otwiera okno dialogowe **schematy XSD** , za pomocą którego można wybrać schematy do użycia.
 
@@ -46,10 +46,10 @@ Możesz również wprowadzić ścieżkę do schematów. Jeśli określono wiele 
 
 **Rozszerzaln**
 
-Plik XSLT, który jest używany do przekształcania dokumentu po użyciu poleceń **Rozpocznij debugowanie XSLT** i **Rozpocznij XSLT bez debugowania** . Jeśli to pole jest puste, Edytor używa wartości podanej w instrukcji przetwarzania `xml-stylesheet` dokumentu lub poprosi o nazwę pliku.
+Plik XSLT, który jest używany do przekształcania dokumentu po użyciu poleceń **Rozpocznij debugowanie XSLT** i **Rozpocznij XSLT bez debugowania** . Jeśli to pole jest puste, Edytor używa wartości podanej w `xml-stylesheet` instrukcji przetwarzania dokumentu lub poprosi o nazwę pliku.
 
 Podczas edytowania pliku XSLT ta właściwość może służyć do określenia, że inny arkusz stylów ma być używany, gdy jest zaznaczone polecenie **Rozpocznij debugowanie XSLT** lub **Rozpocznij XSLT bez debugowania** . Na przykład możesz to zrobić, gdy edytujesz arkusz stylów, który znajduje się w arkuszu stylów nadrzędnych.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Edytor XML](../xml-tools/xml-editor.md)

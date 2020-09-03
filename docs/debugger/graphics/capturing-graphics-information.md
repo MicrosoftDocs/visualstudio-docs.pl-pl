@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b38dd994eca30bfee071f00431f3b111c2ea444a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72736187"
 ---
 # <a name="capturing-graphics-information"></a>Przechwytywanie informacji graficznych
@@ -42,7 +42,7 @@ Przechwyć informacje graficzne z aplikacji Direct3D, aby móc używać analizat
   > [!NOTE]
   > Gdy aplikacja działa w **Diagnostyka grafiki**, można użyć klawisza Print Screen tylko do przechwytywania ramki informacji graficznych. nie wykonuje swojej zwykłej funkcji. To pozostaje, dopóki nie zatrzymasz przechwytywania informacji graficznych — zwykle przez zatrzymanie debugowania lub normalne wyjście z aplikacji — nawet wtedy, gdy fokus jest na innej aplikacji.
 
-- W interfejsie przechwytywania programu Visual Studio wybierz przycisk **przechwytywania ramki** znajdujący się poniżej osi czasu **sesji diagnostycznej** lub wybierz przycisk dużej **ramki przechwytywania** znajdującego się poniżej **ramek na sekundę** torach-Lane i z prawej strony wszystkie poprzednio przechwycone ramki. Oba przyciski zostały wyróżnione na poniższej ilustracji.
+- W interfejsie przechwytywania programu Visual Studio wybierz przycisk **przechwytywania ramki** znajdujący się poniżej osi czasu **sesji diagnostycznej** lub wybierz przycisk dużej **ramki przechwytywania** znajdującego się poniżej **ramek na sekundę** torach-Lane i po prawej stronie wszystkich wcześniej przechwyconych ramek. Oba przyciski zostały wyróżnione na poniższej ilustracji.
 
    ![Przechwyć ramki przy użyciu narzędzia użycie procesora GPU.](media/pix_gpu_usage_tool_capture_frame.png)
 
@@ -61,7 +61,7 @@ Przechwyć informacje graficzne z aplikacji Direct3D, aby móc używać analizat
 
 2. Na liście Kategoria opcji po lewej stronie wybierz pozycję Diagnostyka grafiki, a następnie skonfiguruj odpowiednie opcje Diagnostyka grafiki.
 
-     **Zbieraj stosy wywołań podczas przechwytywania (powoduje wolniejsze przechwytywanie)** Zaznacz to pole, aby zebrać stosy wywołań. Domyślnie stosy wywołań nie są zbierane. Aby przechwytywać stosy wywołań, upewnij się, że **stosy wywołań podczas przechwytywania (powoduje, że pole wyboru Przechwyć wolniej** jest ustawione na wartość Włącz zbieranie, a następnie ustaw opcję **dla opcji rysowania, wysyłania, prezentowania i wydajności** (domyślnie), aby zebrać tylko Najważniejsze stosy wywołań lub opcja **dla wszystkiego** , aby zebrać wszystkie stosy wywołań. Aby później przerwać zbieranie stosów wywołań, wyczyść pole wyboru **Zbieraj stosy wywołań podczas przechwytywania (powoduje wolniejsze przechwytywanie** ).
+     **Zbieraj stosy wywołań podczas przechwytywania (powoduje wolniejsze przechwytywanie)** Zaznacz to pole, aby zebrać stosy wywołań. Domyślnie stosy wywołań nie są zbierane. Aby przechwytywać stosy wywołań, upewnij się, że **stosy wywołań podczas przechwytywania (powoduje, że pole wyboru Przechwyć wolniej** jest ustawione na wartość Włącz zbieranie, a następnie ustaw opcję **dla opcji rysowania, wysyłania, prezentowania i wydajności** (domyślnie), aby zebrać tylko najważniejsze stosy wywołań lub opcję **dla wszystkiego** , aby zebrać wszystkie stosy wywołań. Aby później przerwać zbieranie stosów wywołań, wyczyść pole wyboru **Zbieraj stosy wywołań podczas przechwytywania (powoduje wolniejsze przechwytywanie** ).
 
      **Wyłącz HUD gry podczas przechwytywania** Zaznacz to pole, aby wyłączyć nakładkę HUD, która jest zwykle wyświetlana w aplikacji działającej w ramach diagnostyki grafiki. Usuń zaznaczenie tego pola, aby wyświetlić nakładkę HUD.
 
@@ -70,14 +70,14 @@ Przechwyć informacje graficzne z aplikacji Direct3D, aby móc używać analizat
      **Zatrzymaj przechwytywanie, jeśli wystąpią błędy warstw zestawu SDK** Zaznacz to pole, aby zatrzymać przechwytywanie natychmiast w przypadku napotkania błędów.
 
 ## <a name="capturing-graphics-information-remotely"></a>Zdalne przechwytywanie informacji graficznych
- Informacje graficzne mogą być przechwytywane z aplikacji, która jest uruchomiona na komputerze lokalnym lub na zdalnym komputerze lub urządzeniu. Zdalne przechwytywanie jest obsługiwane w przypadku maszyn [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)] i urządzeń [!INCLUDE[winblue_winrt_2](../includes/winblue_winrt_2_md.md)]. Aby przechwytywać informacje graficzne z aplikacji, która jest uruchomiona zdalnie, skonfiguruj projekt dla zdalnego debugowania, a następnie uruchom aplikację w obszarze Diagnostyka grafiki zgodnie z wcześniejszym opisem. Aplikacja jest uruchamiana na komputerze zdalnym, a przechwycone informacje graficzne są rejestrowane na komputerze deweloperskim.
+ Informacje graficzne mogą być przechwytywane z aplikacji, która jest uruchomiona na komputerze lokalnym lub na zdalnym komputerze lub urządzeniu. Zdalne przechwytywanie jest obsługiwane w przypadku [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)] maszyn i [!INCLUDE[winblue_winrt_2](../includes/winblue_winrt_2_md.md)] urządzeń. Aby przechwytywać informacje graficzne z aplikacji, która jest uruchomiona zdalnie, skonfiguruj projekt dla zdalnego debugowania, a następnie uruchom aplikację w obszarze Diagnostyka grafiki zgodnie z wcześniejszym opisem. Aplikacja jest uruchamiana na komputerze zdalnym, a przechwycone informacje graficzne są rejestrowane na komputerze deweloperskim.
 
  Konfiguracja projektu dla zdalnego debugowania zależy od rodzaju aplikacji, którą projektujesz, i języka programowania, którego używasz. Aby uzyskać informacje na temat sposobu konfigurowania zdalnego debugowania dla aplikacji platformy UWP, zobacz [Uruchamianie aplikacji platformy UWP na maszynie zdalnej](../run-windows-store-apps-on-a-remote-machine.md). Informacje o sposobie konfigurowania zdalnego debugowania dla aplikacji klasycznych systemu Windows znajdują się w temacie [debugowanie zdalne](../remote-debugging.md).
 
  Później można użyć zdalnego komputera lub urządzenia do odtwarzania informacji graficznych, bez względu na to, gdzie informacje zostały przechwycone. Aby uzyskać więcej informacji, zobacz [How to: Change a Diagnostyka grafiki playback Machine](how-to-change-the-graphics-diagnostics-playback-machine.md).
 
 ## <a name="capturing-graphics-information-from-the-command-line"></a>Przechwytywanie informacji graficznych z wiersza polecenia
- Informacje o grafice mogą być przechwytywane z aplikacji za pomocą narzędzia wiersza polecenia. To narzędzie, DXCap. exe, umożliwia szybkie przechwytywanie i odtwarzanie informacji graficznych bez użycia programu Visual Studio lub funkcji przechwytywania programowego. W szczególności można użyć programu DXCap. exe do automatyzacji lub w środowisku testowym. Aby uzyskać więcej informacji na temat programu DXCap. exe, zobacz [Narzędzie do przechwytywania wiersza polecenia](command-line-capture-tool.md)
+ Informacje o grafice mogą być przechwytywane z aplikacji za pomocą narzędzia wiersza polecenia. To narzędzie, DXCap.exe, umożliwia szybkie przechwytywanie i odtwarzanie informacji graficznych bez użycia programu Visual Studio lub funkcji przechwytywania programowego. W szczególności można użyć DXCap.exe do automatyzacji lub w środowisku testowym. Aby uzyskać więcej informacji na temat DXCap.exe, zobacz [Narzędzie do przechwytywania wiersza polecenia](command-line-capture-tool.md)
 
-## <a name="see-also"></a>Zobacz także
-- [Przewodnik: przechwytywanie informacji graficznych](walkthrough-capturing-graphics-information.md)
+## <a name="see-also"></a>Zobacz też
+- [Przewodnik: Przechwytywanie informacji graficznych](walkthrough-capturing-graphics-information.md)

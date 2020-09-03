@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8378ebaccefaedfcc3d83f23bcab56f7417264dd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592506"
 ---
 # <a name="search-the-schema-set"></a>Wyszukiwanie zestawu schematów
@@ -31,11 +31,11 @@ Wyszukiwanie słów kluczowych jest wykonywane przez wprowadzenie podciągu w po
 
 **Eksplorator schematu XML** przeszukuje zestaw schematów dla następujących atrybutów:
 
-- Wszystkie atrybuty `name` lub `ref`, które pasują do określonego słowa kluczowego. Można znaleźć elementy, atrybuty, typy i tak dalej, według nazwy.
+- Wszystkie `name` lub `ref` atrybuty, które pasują do określonego słowa kluczowego. Można znaleźć elementy, atrybuty, typy i tak dalej, według nazwy.
 
-- `schemaLocation` atrybuty instrukcji INCLUDE.
+- `schemaLocation`Atrybuty instrukcji INCLUDE.
 
-- `namespace` atrybuty instrukcji import.
+- `namespace`Atrybuty instrukcji import.
 
 ## <a name="schema-specific-search"></a>Wyszukiwanie specyficzne dla schematu
 
@@ -43,7 +43,7 @@ Wyszukiwanie słów kluczowych jest wykonywane przez wprowadzenie podciągu w po
 
 ## <a name="display-and-navigate-search-results"></a>Wyświetlanie i nawigowanie po wynikach wyszukiwania
 
-Po zakończeniu wyszukiwania okienko wyniki podsumowania zostanie dodane do paska narzędzi z wynikami wyszukiwania. Wyniki wyszukiwania są również wyróżnione w **Eksploratorze schematu XML** i oznaczone przez Takty na pionowym pasku przewijania. Wyniki wyszukiwania można nawigować przy użyciu przycisków **Przejdź do następnego wyszukiwania** wynik i **Przejdź do poprzedniego wyniku wyszukiwania** w okienku wyników podsumowania na pasku narzędzi **Eksploratora schematu XML** . przy użyciu klawiszy klawiatury **F3** i **SHIFT**+**F3**; lub klikając znaczniki osi na pasku przewijania.
+Po zakończeniu wyszukiwania okienko wyniki podsumowania zostanie dodane do paska narzędzi z wynikami wyszukiwania. Wyniki wyszukiwania są również wyróżnione w **Eksploratorze schematu XML** i oznaczone przez Takty na pionowym pasku przewijania. Wyniki wyszukiwania można nawigować przy użyciu przycisków **Przejdź do następnego wyszukiwania** wynik i **Przejdź do poprzedniego wyniku wyszukiwania** w okienku wyników podsumowania na pasku narzędzi **Eksploratora schematu XML** . za pomocą klawiszy klawiatury **F3** i **SHIFT** + **F3**; lub klikając znaczniki osi na pasku przewijania.
 
 Możesz dodać wyniki wyszukiwania do obszaru roboczego, klikając przycisk **Dodaj wyróżnione węzły do obszaru roboczego** w okienku wyników podsumowania.
 
@@ -53,6 +53,6 @@ Możesz dodać wyniki wyszukiwania do obszaru roboczego, klikając przycisk **Do
 
 Aby wyczyścić wyniki wyszukiwania, kliknij przycisk **x** w okienku wyników podsumowania na pasku narzędzi wyszukiwania **Eksploratora schematu XML** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md)

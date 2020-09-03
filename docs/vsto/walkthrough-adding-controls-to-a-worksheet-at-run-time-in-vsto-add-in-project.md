@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5bf2610ca1f3f3767082bf50953f821d37d1af2a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71253895"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Przewodnik: Dodawanie kontrolek do arkusza w czasie wykonywania w projekcie dodatku narzędzi VSTO
-  Możesz dodać kontrolki do dowolnego otwartego arkusza przy użyciu dodatku narzędzi VSTO dla programu Excel. W tym instruktażu pokazano, jak za pomocą wstążki umożliwić użytkownikom dodawanie <xref:Microsoft.Office.Tools.Excel.Controls.Button> <xref:Microsoft.Office.Tools.Excel.NamedRange>, a i <xref:Microsoft.Office.Tools.Excel.ListObject> do arkusza. Aby uzyskać więcej informacji, zobacz [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).
+  Możesz dodać kontrolki do dowolnego otwartego arkusza przy użyciu dodatku narzędzi VSTO dla programu Excel. W tym instruktażu pokazano, jak za pomocą wstążki umożliwić użytkownikom dodawanie <xref:Microsoft.Office.Tools.Excel.Controls.Button> , a <xref:Microsoft.Office.Tools.Excel.NamedRange> i <xref:Microsoft.Office.Tools.Excel.ListObject> do arkusza. Aby uzyskać więcej informacji, zobacz [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
  **Dotyczy:** Informacje przedstawione w tym temacie dotyczą projektów dodatku VSTO dla programu Excel. Aby uzyskać więcej informacji, zobacz [Dostępne funkcje uporządkowane według aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md).
 
@@ -49,9 +49,9 @@ ms.locfileid: "71253895"
 
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>Aby utworzyć nowy projekt dodatku narzędzi VSTO dla programu Excel
 
-1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]programie Utwórz projekt dodatku VSTO dla programu Excel o nazwie **ExcelDynamicControls**. Aby uzyskać więcej informacji, zobacz [jak: Utwórz projekty pakietu Office w programie](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+1. W programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Utwórz projekt dodatku VSTO dla programu Excel o nazwie **ExcelDynamicControls**. Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Dodaj odwołanie do zestawu **Microsoft. Office. Tools. Excel. v 4.0. Utilities. dll** . To odwołanie jest wymagane do programowego dodawania kontrolki Windows Forms do arkusza w dalszej części tego przewodnika.
+2. Dodaj odwołanie do zestawu **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** . To odwołanie jest wymagane do programowego dodawania kontrolki Windows Forms do arkusza w dalszej części tego przewodnika.
 
 ## <a name="provide-a-ui-to-add-controls-to-a-worksheet"></a>Podaj interfejs użytkownika, aby dodać kontrolki do arkusza
  Dodaj kartę niestandardową do wstążki programu Excel. Użytkownicy mogą zaznaczyć pola wyboru na karcie, aby dodać kontrolki do arkusza.
@@ -60,7 +60,7 @@ ms.locfileid: "71253895"
 
 1. W menu **projekt** kliknij polecenie **Dodaj nowy element**.
 
-2. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **wstążka (projektant graficzny)** , a następnie kliknij przycisk **Dodaj**.
+2. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **wstążka (projektant graficzny)**, a następnie kliknij przycisk **Dodaj**.
 
      Plik o nazwie **Ribbon1.cs** lub **Ribbon1. vb** zostanie otwarty w Projektancie wstążki i zostanie wyświetlona domyślna karta i Grupa.
 
@@ -90,17 +90,17 @@ ms.locfileid: "71253895"
     |**Etykieta**|**ListObject**|
 
 ## <a name="add-controls-to-the-worksheet"></a>Dodawanie formantów do arkusza
- Formanty zarządzane można dodawać tylko do elementów hosta, które działają jako kontenery. Ponieważ projekty dodatków VSTO współpracują z dowolnym otwartym skoroszytem, dodatek VSTO konwertuje arkusz na element hosta lub pobiera istniejący element hosta przed dodaniem formantu. Dodaj kod do programów obsługi zdarzeń kliknięcia dla każdej kontrolki, aby wygenerować <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta, który jest oparty na otwartym arkuszu. Następnie Dodaj <xref:Microsoft.Office.Tools.Excel.Controls.Button>a <xref:Microsoft.Office.Tools.Excel.NamedRange>, a i <xref:Microsoft.Office.Tools.Excel.ListObject> a na bieżącym zaznaczeniu w arkuszu.
+ Formanty zarządzane można dodawać tylko do elementów hosta, które działają jako kontenery. Ponieważ projekty dodatków VSTO współpracują z dowolnym otwartym skoroszytem, dodatek VSTO konwertuje arkusz na element hosta lub pobiera istniejący element hosta przed dodaniem formantu. Dodaj kod do programów obsługi zdarzeń kliknięcia dla każdej kontrolki, aby wygenerować <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta, który jest oparty na otwartym arkuszu. Następnie Dodaj a <xref:Microsoft.Office.Tools.Excel.Controls.Button> , a <xref:Microsoft.Office.Tools.Excel.NamedRange> i a <xref:Microsoft.Office.Tools.Excel.ListObject> na bieżącym zaznaczeniu w arkuszu.
 
 ### <a name="to-add-controls-to-a-worksheet"></a>Aby dodać kontrolki do arkusza
 
 1. W Projektancie wstążki kliknij dwukrotnie **przycisk.**
 
-     Procedura obsługi zdarzeń przycisku wyboru zostanie otwarta w edytorze kodu. <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click>
+     <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click>Procedura obsługi zdarzeń **przycisku** wyboru zostanie otwarta w edytorze kodu.
 
-2. Zastąp procedurę obsługi zdarzeń poniższym kodem. `Button_Click`
+2. Zastąp `Button_Click` procedurę obsługi zdarzeń poniższym kodem.
 
-     Ten kod używa `GetVstoObject` metody, aby uzyskać element hosta, który reprezentuje pierwszy arkusz w skoroszycie, a następnie <xref:Microsoft.Office.Tools.Excel.Controls.Button> dodaje formant do aktualnie zaznaczonej komórki.
+     Ten kod używa `GetVstoObject` metody, aby uzyskać element hosta, który reprezentuje pierwszy arkusz w skoroszycie, a następnie dodaje <xref:Microsoft.Office.Tools.Excel.Controls.Button> formant do aktualnie zaznaczonej komórki.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]
@@ -111,18 +111,18 @@ ms.locfileid: "71253895"
 
 5. W Projektancie wstążki kliknij dwukrotnie pozycję **NamedRange**.
 
-6. Zastąp procedurę obsługi zdarzeń poniższym kodem. `NamedRange_Click`
+6. Zastąp `NamedRange_Click` procedurę obsługi zdarzeń poniższym kodem.
 
-     Ten kod używa `GetVstoObject` metody, aby uzyskać element hosta, który reprezentuje pierwszy arkusz w skoroszycie, a następnie <xref:Microsoft.Office.Tools.Excel.NamedRange> definiuje kontrolkę dla aktualnie zaznaczonej komórki lub komórek.
+     Ten kod używa `GetVstoObject` metody, aby uzyskać element hosta, który reprezentuje pierwszy arkusz w skoroszycie, a następnie definiuje <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę dla aktualnie zaznaczonej komórki lub komórek.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#3)]
      [!code-vb[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#3)]
 
 7. W Projektancie wstążki kliknij dwukrotnie pozycję **listaobject**.
 
-8. Zastąp procedurę obsługi zdarzeń poniższym kodem. `ListObject_Click`
+8. Zastąp `ListObject_Click` procedurę obsługi zdarzeń poniższym kodem.
 
-     Ten kod używa `GetVstoObject` metody, aby uzyskać element hosta, który reprezentuje pierwszy arkusz w skoroszycie, a następnie <xref:Microsoft.Office.Tools.Excel.ListObject> definiuje dla aktualnie zaznaczonej komórki lub komórek.
+     Ten kod używa `GetVstoObject` metody, aby uzyskać element hosta, który reprezentuje pierwszy arkusz w skoroszycie, a następnie definiuje <xref:Microsoft.Office.Tools.Excel.ListObject> dla aktualnie zaznaczonej komórki lub komórek.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#4](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#4)]
      [!code-vb[Trin_Excel_Dynamic_Controls#4](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#4)]
@@ -146,7 +146,7 @@ ms.locfileid: "71253895"
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]
 
-4. W C#programie należy utworzyć procedurę obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> zdarzenia. Możesz umieścić ten kod w `ThisAddIn_Startup` metodzie. Aby uzyskać więcej informacji na temat tworzenia programów obsługi zdarzeń [, zobacz How to: Tworzenie obsługi zdarzeń w projektach](../vsto/how-to-create-event-handlers-in-office-projects.md)pakietu Office. Zastąp `ThisAddIn_Startup` metodę poniższym kodem.
+4. W języku C# należy utworzyć procedurę obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> zdarzenia. Możesz umieścić ten kod w `ThisAddIn_Startup` metodzie. Aby uzyskać więcej informacji na temat tworzenia programów obsługi zdarzeń, zobacz [How to: Create Event Handles in Office projects](../vsto/how-to-create-event-handlers-in-office-projects.md). Zastąp metodę `ThisAddIn_Startup` następującym kodem.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]
 
@@ -186,7 +186,7 @@ ms.locfileid: "71253895"
 
 - Aby dowiedzieć się więcej o sposobach zapisywania formantów w arkuszu, zobacz przykład formantów dynamicznych dodatku VSTO programu Excel w temacie [przykłady i Instruktaże dotyczące programowania w pakiecie Office](../vsto/office-development-samples-and-walkthroughs.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozwiązania programu Excel](../vsto/excel-solutions.md)
 - [Kontrolki formularzy Windows Forms w dokumentach pakietu Office — omówienie](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)

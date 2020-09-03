@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cd288171cd8713e6b403f71a4eee6ba09d3f6ea9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592519"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Sortowanie, filtrowanie i grupowanie (Eksplorator schematu XML)
@@ -27,7 +27,7 @@ Dostępne są następujące opcje filtra. Domyślnie są zaznaczone opcje **Poka
 
 - **Pokaż pliki schematu**.
 
-- **Pokaż kompozytory (sekwencja/wybór/wszystko)** .
+- **Pokaż kompozytory (sekwencja/wybór/wszystko)**.
 
 ## <a name="sorting-options"></a>Opcje sortowania
 
@@ -43,33 +43,33 @@ Dostępne są następujące opcje sortowania. Wartość domyślna to **Sortuj we
 
 W przypadku wybrania opcji **Sortuj według typu** węzły globalne są sortowane w następującej kolejności. Węzły są następnie sortowane alfabetycznie w każdej grupie.
 
-1. `import` węzły.
+1. `import` nich.
 
-2. `include` węzły.
+2. `include` nich.
 
-3. `redefine` węzły.
+3. `redefine` nich.
 
-4. `attribute` węzły.
+4. `attribute` nich.
 
-5. `attributeGroup` węzły.
+5. `attributeGroup` nich.
 
-6. `complexType` węzły.
+6. `complexType` nich.
 
-7. `simpleType` węzły.
+7. `simpleType` nich.
 
-8. `element` węzły.
+8. `element` nich.
 
-9. `group` węzły.
+9. `group` nich.
 
 ### <a name="sort-by-name"></a>Sortuj według nazwy
 
 W przypadku wybrania opcji **Sortuj według nazwy** węzły globalne są sortowane w następującej kolejności:
 
-1. węzły `import` (w kolejności alfabetycznej przestrzeni nazw).
+1. `import` węzły (w kolejności alfabetycznej przestrzeni nazw).
 
-2. węzły `include` (w kolejności alfabetycznej atrybutów `schemaLocation`).
+2. `include` węzły (w kolejności alfabetycznej `schemaLocation` atrybutów).
 
-3. węzły `redefine` (w kolejności alfabetycznej atrybutów `schemaLocation`).
+3. `redefine` węzły (w kolejności alfabetycznej `schemaLocation` atrybutów).
 
 4. Inne węzły globalne w kolejności alfabetycznej.
 

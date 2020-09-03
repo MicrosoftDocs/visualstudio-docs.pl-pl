@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33375a8970638765d02a94e6e3e9cd8afc1a0fe7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348655"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Przewodnik: debugowanie aplikacji wielowątkowej przy użyciu okna wątków (C#, Visual Basic, C++)
@@ -168,7 +168,7 @@ Oprócz **flagi flaga**, Usuń **flagę**i Usuń **flagę wszystkich wątków**,
 - **Zmień**nazwę, co pozwala zmienić nazwę wątku.
 - [Zamrażanie i odblokowywanie](#bkmk_freeze) poleceń.
 
-## <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a>Zamrażanie i odblokowywanie wykonywania wątku
+## <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a> Zamrażanie i odblokowywanie wykonywania wątku
 
 Można zablokować i odblokować lub zawiesić i wznowić wątki, aby kontrolować kolejność, w jakiej wątki działają. Wątki zamrażające i rozmrażające mogą pomóc w rozwiązywaniu problemów współbieżności, takich jak zakleszczenie i sytuacje wyścigu.
 

@@ -1,5 +1,5 @@
 ---
-title: Kiedy należy tworzyć typy projektów | Dokumentacja firmy Microsoft
+title: Kiedy tworzyć typy projektów | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,55 +11,55 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5b5bc2bacb53973bd552b983b742e4f9e68fe31b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687701"
 ---
 # <a name="when-to-create-project-types"></a>Kiedy należy tworzyć typy projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Tworzenie nowych typów projektów stanowi podstawę do dostosowywania [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dla użytkowników. Jednak tworzenie nowy typ projektu nie jest wymagane w przypadku wszystkich [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dostosowań. Poniższe wskazówki pomoże określić, czy nowy typ projektu jest wymagana dla danego scenariusza.  
+Tworzenie nowego typu projektu stanowi podstawę do dostosowania [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dla użytkowników. Jednak tworzenie nowego typu projektu nie jest wymagane dla wszystkich [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dostosowań. Poniższe wskazówki powinny pomóc w ustaleniu, czy dla danego scenariusza jest wymagany nowy typ projektu.  
   
 ## <a name="create-a-new-project-type"></a>Utwórz nowy typ projektu  
- Należy utworzyć typ projektu, jeśli chcesz dostosować [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] do działania w co najmniej jednej z następujących sposobów:  
+ Należy utworzyć typ projektu, jeśli chcesz dostosować [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] się do działania na co najmniej jeden z następujących sposobów:  
   
-- Uczestniczy w kompilacji, wdrażania, konfiguracji i kontroli źródła.  
+- Uczestnictwo w kompilacjach, wdrażaniu, konfiguracjach i kontroli źródła.  
   
-- Oferuje obsługę debugowania.  
+- Oferowanie pomocy technicznej dotyczącej debugowania.  
   
-- Wyświetl elementy projektu w **Eksploratora rozwiązań**.  
+- Wyświetl elementy projektu w **Eksplorator rozwiązań**.  
   
-- Użyj **Otwórz projekt** lub **nowy projekt** okno dialogowe.  
+- Użyj okna dialogowego **Otwórz projekt** lub **Nowy projekt** .  
   
-- Zagnieżdżanie projektów pomocy technicznej.  
+- Obsługa zagnieżdżania projektów.  
   
-## <a name="extend-an-existing-project-type"></a>Rozszerzyć istniejący typ projektu  
- Należy utworzyć nowy typ projektu, można użyć [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pod następującymi względami do modyfikowania lub rozszerzania działania istniejącego typu projektu, na przykład, modyfikując procesem kompilacji dla [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektów:  
+## <a name="extend-an-existing-project-type"></a>Rozwiń istniejący typ projektu  
+ Można utworzyć nowy typ projektu, który może być używany [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] w następujących sposobach, aby zmodyfikować lub zwiększyć zachowanie istniejącego typu projektu, na przykład modyfikując proces kompilacji dla [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektów:  
   
-- Praca z wieloma plikami jako pojedyncza jednostka.  
+- Pracuj z wieloma plikami jako pojedynczą jednostką.  
   
-- Wyświetl pojedynczy plik jako hierarchię elementów podrzędnych.  
+- Wyświetla jeden plik jako hierarchię elementów podrzędnych.  
   
-- Wyświetlanie w kontekście polecenia wokół edytorów.  
+- Wyświetlanie kontekstu poleceń wokół edytorów.  
   
-- Wyświetl kontekstu usługi dla edytorów.  
+- Wyświetlanie kontekstu usługi dla edytorów.  
   
 ## <a name="use-an-existing-project-type"></a>Użyj istniejącego typu projektu  
- Tworzenie nowego projektu Czasami nie jest konieczne. W poniższej tabeli przedstawiono zadania, które jest konieczne tworzenie typu projektu.  
+ Tworzenie nowego projektu nie jest czasami konieczne. W poniższej tabeli przedstawiono zadania, które nie są potrzebne do utworzenia typu projektu dla.  
   
 |Zadanie|Opis|  
 |----------|-----------------|  
-|Obsługa poleceń|Dowolnego pakietu VSPackage może obsługiwać poleceń.|  
-|Tworzenie edytora|Można zarejestrować edytorach niestandardowych. Aby uzyskać więcej informacji, zobacz [Windows dokumentu i edytory](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
-|Będącej właścicielem systemu windows|Bez dodawania nowych typów projektów, można utworzyć okna dokumentów i narzędzi.|  
-|Uwidacznianie właściwości w oknie dialogowym właściwości|Wszystkie obiekty można ujawnić właściwości.|  
+|Obsługa poleceń|Każdy pakietu VSPackage może obsłużyć polecenia.|  
+|Kompilowanie edytora|Edytory niestandardowe mogą być rejestrowane. Aby uzyskać więcej informacji, zobacz [dokumentowanie okien i edytorów](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
+|Okna posiadające własność|Można utworzyć okna narzędzi i dokumentów bez dodawania nowego typu projektu.|  
+|Uwidacznianie właściwości w okno Właściwości|Wszystkie obiekty mogą uwidaczniać właściwości.|  
   
-## <a name="create-a-project-subtype"></a>Utwórz podtypu projektu  
- Podtypy projektów można użyć w celu rozszerzania typu zarządzanego projektu bez konieczności tworzenia nowego typu projektu. Podtypy projektów użycia agregacji COM, aby rozszerzyć projektów zarządzanych, napisane w firmie Microsoft [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] lub [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Za pomocą agregacji COM można ponownie użyć większość implementacji systemu zarządzanego projektu i nadal dostosować do danego scenariusza za pomocą agregacji i umożliwia korzystanie z obsługi interfejsów. Aby uzyskać więcej informacji na temat podtypy projektów, zobacz [podtypy projektów](../../extensibility/internals/project-subtypes.md).  
+## <a name="create-a-project-subtype"></a>Utwórz podtyp projektu  
+ Można użyć podtypów projektu, aby rozłożyć typ projektu zarządzanego bez konieczności tworzenia nowego typu projektu. Podtypy projektu używają agregacji COM do rozbudowania zarządzanych projektów utworzonych w firmie Microsoft [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] lub [!INCLUDE[csprcs](../../includes/csprcs-md.md)] . Dzięki agregacji COM można ponownie wykorzystać większość zarządzanych implementacji systemu projektu i nadal dostosowywać się do określonego scenariusza za pomocą agregacji i używania interfejsów pomocniczych. Aby uzyskać więcej informacji na temat podtypów projektów, zobacz [podtypy projektów](../../extensibility/internals/project-subtypes.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Windows dokumentu i edytory](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
- [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Okna dokumentów i edytory](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
+ [Lista kontrolna: tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Hierarchie w programie Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

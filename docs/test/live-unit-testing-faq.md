@@ -9,47 +9,47 @@ ms.author: mikejo
 ms.workload:
 - dotnet
 ms.openlocfilehash: ba231e6c203197518b75a7a8c0592f01bba4ffe9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591544"
 ---
-# <a name="live-unit-testing-frequently-asked-questions"></a>Często zadawane pytania dotyczące testowania jednostek na żywo
+# <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing często zadawane pytania
 
 ## <a name="supported-frameworks"></a>Obsługiwane struktury
 
-**Jakie struktury testów obsługuje testowanie jednostek na żywo i jakie są minimalne obsługiwane wersje?**
+**Jakie platformy testowe Live Unit Testing obsługiwać i jakie są minimalne obsługiwane wersje?**
 
-Live Unit Testing współpracuje z trzech popularnych jednostek testowania struktur wymienionych w poniższej tabeli. Minimalna obsługiwana wersja ich kart i struktur jest również wymieniona w tabeli. Struktury testowania jednostkowego są dostępne od NuGet.org.
+Live Unit Testing współpracuje z trzema popularnymi platformami testowania jednostkowego wymienionymi w poniższej tabeli. Minimalna obsługiwana wersja ich kart i struktur jest również wymieniona w tabeli. Platformy testów jednostkowych są dostępne z NuGet.org.
 
-|Struktura testów  |Minimalna wersja karty programu Visual Studio  |Minimalna wersja ramowa  |
+|Platforma testowa  |Minimalna wersja programu Visual Studio adapter  |Minimalna wersja platformy  |
 |---------|---------|---------|
-|xUnit.net |xunit.runner.visualstudio wersja 2.2.0-beta3-build1187 |xjedna 1.9.2 |
-|Nunit |NUnit3TestAdapter wersja 3.7.0 |NUnit w wersji 3.5.0 |
-|MSTest |MSTest.TestAdapter 1.1.4-podgląd |MSTest.TestFramework 1.0.5-podgląd |
+|xUnit.net |xUnit. Runner. VisualStudio w wersji 2.2.0-beta3-build1187 |xUnit 1.9.2 |
+|NUnit |NUnit3TestAdapter wersja 3.7.0 |NUnit wersja 3.5.0 |
+|MSTest |MSTest. TestAdapter 1.1.4 — wersja zapoznawcza |MSTest. TestFramework 1.0.5 — wersja zapoznawcza |
 
-Jeśli masz starsze projekty testowe `Microsoft.VisualStudio.QualityTools.UnitTestFramework` oparte na MSTest, które odwołują się do i nie chcesz przenieść do nowszych pakietów MSTest NuGet, uaktualnij do programu Visual Studio 2019 lub Visual Studio 2017.
+Jeśli masz starsze projekty testowe bazujące na MSTestach, których odwołuje się `Microsoft.VisualStudio.QualityTools.UnitTestFramework` i nie chcesz przejść do nowszych pakietów NuGet MSTest, przeprowadź uaktualnienie do programu Visual studio 2019 lub Visual studio 2017.
 
-W niektórych przypadkach może być konieczne jawne przywrócenie pakietów NuGet, do których odwołuje się projekty w rozwiązaniu, aby testy jednostek na żywo działały. Pakiety można przywrócić, wykonując jawną kompilację rozwiązania (wybierz **build** > **rebuild solution** z menu programu Visual Studio najwyższego poziomu) lub klikając prawym przyciskiem myszy rozwiązanie i wybierając **przywróć pakiety NuGet** przed włączeniem testowania jednostek mieszkalnych.
+W niektórych przypadkach może być konieczne jawne przywrócenie pakietów NuGet, do których odwołują się projekty w rozwiązaniu, aby Live Unit Testing działały. Pakiety można przywrócić, wykonując jawną kompilację rozwiązania (wybierz opcję **Kompiluj**  >  **ponownie rozwiązanie** z menu programu Visual Studio najwyższego poziomu) lub klikając rozwiązanie prawym przyciskiem myszy i wybierając pozycję **Przywróć pakiety NuGet** przed włączeniem testów jednostkowych.
 
-## <a name="net-core-support"></a>Obsługa .NET Core
+## <a name="net-core-support"></a>Obsługa platformy .NET Core
 
-**Czy testowanie jednostek na żywo działa z programem .NET Core?**
+**Czy Live Unit Testing współpracuje z platformą .NET Core?**
 
-Tak. Testowanie jednostek na żywo współpracuje z programem .NET Core i platformą .NET Framework.
+Tak. Live Unit Testing współpracuje z platformą .NET Core i .NET Framework.
 
-## <a name="configuration"></a>Konfigurowanie
+## <a name="configuration"></a>Konfiguracja
 
-**Dlaczego testy jednostek na żywo nie działają po włączeniu?**
+**Dlaczego Live Unit Testing nie działa po włączeniu?**
 
-Okno Dane wyjściowe (po wybraniu listy rozwijanej Live Unit Testing) powinno być zaznaczone, dlaczego testowanie jednostek na żywo nie działa. Testy jednostkowe na żywo mogą nie działać z jednego z następujących powodów:
+Okno dane wyjściowe (po wybraniu listy rozwijanej Live Unit Testing jest zaznaczone) powinien poinformować, dlaczego Live Unit Testing nie działa. Live Unit Testing mogą nie funkcjonować z jednego z następujących powodów:
 
-- Jeśli pakiety NuGet, do których odwołuje się projekty w rozwiązaniu, nie zostały przywrócone, testowanie jednostek na żywo nie będzie działać. Wykonanie jawnej kompilacji rozwiązania lub przywrócenie pakietów NuGet w rozwiązaniu przed włączeniem live unit testing należy rozwiązać ten problem.
+- Jeśli pakiety NuGet, do których odwołują się projekty w rozwiązaniu, nie zostały przywrócone, Live Unit Testing nie będą działały. Przed włączeniem Live Unit Testing należy rozwiązać ten problem, wykonując jawną kompilację rozwiązania lub przywracając pakiety NuGet w rozwiązaniu.
 
-- Jeśli używasz testów opartych na MSTest w projektach, `Microsoft.VisualStudio.QualityTools.UnitTestFramework`upewnij się, że usuniesz odwołanie `MSTest.TestAdapter` do , i dodaj odwołania do najnowszych pakietów MSTest NuGet (wymagana jest minimalna wersja 1.1.11) i `MSTest.TestFramework` (wymagana jest minimalna wersja 1.1.11). Aby uzyskać więcej informacji, zobacz sekcję "Obsługiwane struktury testów" artykułu [Użyj testowania jednostek na żywo w programie Visual Studio.](live-unit-testing.md#supported-test-frameworks)
+- Jeśli używasz testów opartych na MSTest w projektach, upewnij się, że usunięto odwołanie do `Microsoft.VisualStudio.QualityTools.UnitTestFramework` i Dodaj odwołania do najnowszych pakietów NuGet MSTest, `MSTest.TestAdapter` (wymagana jest minimalna wersja 1.1.11) i `MSTest.TestFramework` (wymagana jest minimalna wersja 1.1.11). Aby uzyskać więcej informacji, zobacz sekcję "obsługiwane struktury testów" [w artykule korzystanie Live Unit Testing w programie Visual Studio](live-unit-testing.md#supported-test-frameworks) .
 
-- Co najmniej jeden projekt w rozwiązaniu powinien mieć odwołanie NuGet lub bezpośrednie odwołanie do struktury testów xUnit, NUnit lub MSTest. Ten projekt powinien również odwoływać się do odpowiednich kart testowych programu Visual Studio pakietu NuGet. Karta testowa programu Visual Studio można również odwoływać się za pośrednictwem pliku *runsettings.* Plik *runsettings* musi mieć wpis podobny do następującego przykładu:
+- Co najmniej jeden projekt w rozwiązaniu powinien mieć odwołanie do programu NuGet lub bezpośrednie odwołanie do platformy testowej xUnit, NUnit lub MSTest. Ten projekt powinien również odwoływać się do odpowiednich pakietów NuGet kart testowych programu Visual Studio. Do adaptera testowego programu Visual Studio można także odwoływać się za pomocą pliku *. runsettings* . Plik *. runsettings* musi mieć wpis podobny do następującego:
 
 ```xml
 <RunSettings>
@@ -61,23 +61,23 @@ Okno Dane wyjściowe (po wybraniu listy rozwijanej Live Unit Testing) powinno by
 
 ## <a name="incorrect-coverage-after-upgrade"></a>Nieprawidłowe pokrycie po uaktualnieniu
 
-**Dlaczego testy jednostek na żywo wykazują niepoprawne pokrycie po uaktualnieniu karty testowej, do której odwołuje się w projektach programu Visual Studio do obsługiwanej wersji?**
+**Dlaczego Live Unit Testing pokazać błędne pokrycie po uaktualnieniu adaptera testowego, do którego odwołuje się projekt programu Visual Studio, do obsługiwanej wersji?**
 
-- Jeśli wiele projektów w rozwiązaniu odwołuje się do pakietu karty testowej NuGet, każdy z nich musi zostać uaktualniony do obsługiwanej wersji.
+- Jeśli wiele projektów w rozwiązaniu odwołuje się do pakietu adaptera testowego NuGet, każdy z nich musi zostać uaktualniony do obsługiwanej wersji.
 
-- Upewnij się, że plik MSBuild *.props* zaimportowany z pakietu karty testowej również został poprawnie zaktualizowany. Sprawdź wersję pakietu NuGet/ścieżkę importu, który zwykle można znaleźć w górnej części pliku projektu, jak poniżej:
+- Upewnij się, że plik MSBuild *. props* zaimportowany z pakietu adaptera testowego również został poprawnie zaktualizowany. Sprawdź wersję pakietu NuGet/ścieżkę importu, która zwykle znajduje się w górnej części pliku projektu, tak jak poniżej:
 
    ```xml
     <Import Project="..\packages\xunit.runner.visualstudio.2.2.0\build\net20\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.2.0\build\net20\xunit.runner.visualstudio.props')" />
    ```
 
-## <a name="customize-builds"></a>Dostosowywanie kompilacji
+## <a name="customize-builds"></a>Dostosuj kompilacje
 
-**Czy mogę dostosować kompilacje testów jednostek na żywo?**
+**Czy mogę dostosować kompilacje Live Unit Testing?**
 
-Jeśli rozwiązanie wymaga niestandardowych kroków do tworzenia instrumentacji (Live Unit Testing), które nie są wymagane dla "regularnych" kompilacji nieprzyrządzowanego, następnie można dodać kod do projektu lub *.targets* plików, które sprawdza `BuildingForLiveUnitTesting` właściwości i wykonuje niestandardowe kroki kompilacji przed/post. Można również usunąć niektóre kroki kompilacji (takie jak publikowanie lub generowanie pakietów) lub dodać kroki kompilacji (takie jak wymagania wstępne kopiowania) do kompilacji testowania jednostek na żywo na podstawie tej właściwości projektu. Dostosowywanie kompilacji na podstawie tej właściwości nie zmienia regularne kompilacji w żaden sposób i wpływa tylko na kompilacje testowania jednostek na żywo.
+Jeśli rozwiązanie wymaga niestandardowych kroków do kompilowania Instrumentacji (Live Unit Testing), które nie są wymagane dla "regularnej" kompilacji bez instrumentacji, wówczas można dodać kod do projektu lub plików *docelowych* , które sprawdzają `BuildingForLiveUnitTesting` Właściwość i wykonuje niestandardowe kroki kompilacji pre/post. Można również usunąć niektóre kroki kompilacji (na przykład Publikowanie lub generowanie pakietów) lub dodać kroki kompilacji (na przykład kopiowanie wymagań wstępnych) do kompilacji Live Unit Testing opartej na tej właściwości projektu. Dostosowanie kompilacji opartej na tej właściwości nie powoduje zmiany regularnej kompilacji w żaden sposób i ma wpływ tylko na kompilacje Live Unit Testing.
 
-Na przykład może istnieć obiekt docelowy, który produkuje pakiety NuGet podczas zwykłej kompilacji. Prawdopodobnie nie chcesz, aby pakiety NuGet były generowane po każdej edycji. Dlatego można wyłączyć ten cel w kompilacji Testowanie jednostek na żywo, wykonując następujące czynności:  
+Na przykład może istnieć obiekt docelowy, który tworzy pakiety NuGet podczas zwykłej kompilacji. Prawdopodobnie nie chcesz generować pakietów NuGet po każdej edycji. Aby można było wyłączyć ten cel w ramach kompilacji Live Unit Testing, należy wykonać następujące czynności:  
 
 ```xml
 <Target Name="GenerateNuGetPackages" BeforeTargets="AfterBuild" Condition="'$(BuildingForLiveUnitTesting)' != 'true'">
@@ -85,24 +85,24 @@ Na przykład może istnieć obiekt docelowy, który produkuje pakiety NuGet podc
 </Target>
 ```
 
-## <a name="error-messages-with-outputpath-outdir-or-intermediateoutputpath"></a>Komunikaty \<o błędach z \<> OutputPath, OutDir> lub \<IntermediateOutputPath>
+## <a name="error-messages-with-outputpath-outdir-or-intermediateoutputpath"></a>Komunikaty o błędach z \<OutputPath> , \<OutDir> lub \<IntermediateOutputPath>
 
-**Dlaczego pojawia się następujący błąd, gdy testy jednostek na żywo próbują zbudować moje rozwiązanie: "... wydaje się bezwarunkowo `<OutputPath>` `<OutDir>`ustawione lub . Live Unit Testing nie wykona testów z zestawu wyjściowego"?**
+**Dlaczego otrzymuję następujący błąd, gdy Live Unit Testing próbuje skompilować moje rozwiązanie: "... wydaje się ustawić bezwarunkowo `<OutputPath>` lub `<OutDir>` . Live Unit Testing nie będzie wykonywać testów z zestawu wyjściowego "?**
 
-Ten błąd można uzyskać, jeśli proces kompilacji dla rozwiązania ma niestandardową logikę, która określa, gdzie powinny być generowane pliki binarne. Domyślnie lokalizacja plików binarnych `<OutputPath>` `<OutDir>` zależy `<IntermediateOutputPath>` od `<BaseOutputPath>` , `<BaseIntermediateOutputPath>`lub jak również lub .
+Ten błąd może wystąpić, jeśli proces kompilacji dla Twojego rozwiązania ma logikę niestandardową, która określa, gdzie powinny być generowane pliki binarne. Domyślnie lokalizacja plików binarnych zależy od systemu `<OutputPath>` , lub i `<OutDir>` `<IntermediateOutputPath>` `<BaseOutputPath>` `<BaseIntermediateOutputPath>` .
 
-Testowanie jednostek na żywo zastępuje te zmienne, aby upewnić się, że artefakty kompilacji są porzucone do folderu artefaktów testowania jednostek na żywo i zakończy się niepowodzeniem, jeśli proces kompilacji również zastępuje te zmienne.
+Live Unit Testing zastępuje te zmienne, aby upewnić się, że artefakty kompilacji są upuszczane do folderu Live Unit Testing artefakty i zakończą się niepowodzeniem, jeśli proces kompilacji również zastępuje te zmienne.
 
-Istnieją dwa główne podejścia, aby pomyślnie wykonać kompilację testowania jednostek na żywo. Aby ułatwić konfiguracje kompilacji, można oprzeć `<BaseIntermediateOutputPath>`ścieżki wyjściowe na programie . W przypadku bardziej złożonych konfiguracji można `<LiveUnitTestingBuildRootPath>`oprzeć ścieżki wyjściowe na programie .
+Istnieją dwa główne podejścia do pomyślnej kompilacji Live Unit Testing. Aby ułatwić konfigurację kompilacji, można oprzeć ścieżki wyjściowe na `<BaseIntermediateOutputPath>` . Aby uzyskać bardziej skomplikowane konfiguracje, można oprzeć ścieżki wyjściowe `<LiveUnitTestingBuildRootPath>` .
 
-### <a name="overriding-outputpathintermediateoutputpath-conditionally-based-on-baseoutputpath-baseintermediateoutputpath"></a>Zastępowanie `<OutputPath>` / `<IntermediateOutputPath>` warunkowo na `<BaseOutputPath>` / `<BaseIntermediateOutputPath>`podstawie .
+### <a name="overriding-outputpathintermediateoutputpath-conditionally-based-on-baseoutputpath-baseintermediateoutputpath"></a>Zastępowanie `<OutputPath>` / `<IntermediateOutputPath>` warunkowo na podstawie `<BaseOutputPath>` / `<BaseIntermediateOutputPath>` .
 
 > [!NOTE]
-> Aby korzystać z tego podejścia, każdy projekt musi być w stanie budować niezależnie od siebie. Nie ma jednego artefaktów odniesienia projektu z innego projektu podczas kompilacji. Nie ma jednego projektu dynamicznie załadować zestawy z innego `Assembly.Loadfile("..\..\Project2\Release\Project2.dll")`projektu w czasie wykonywania (na przykład wywołanie).
+> Aby skorzystać z tej metody, każdy projekt musi być w stanie niezależny od siebie. Podczas kompilowania nie ma jednego artefaktu odwołania do projektu z innego projektu. Nie ma możliwości dynamicznego ładowania zestawów z innego projektu w czasie wykonywania (na przykład wywołania `Assembly.Loadfile("..\..\Project2\Release\Project2.dll")` ).
 
-Podczas kompilacji live unit testing automatycznie `<BaseOutputPath>` / `<BaseIntermediateOutputPath>` zastępuje zmienne do docelowego live unit testing artefaktów folderu.
+Podczas kompilacji Live Unit Testing automatycznie przesłania `<BaseOutputPath>` / `<BaseIntermediateOutputPath>` zmienne do folderu Live Unit Testing artefaktów.
 
-Jeśli na przykład kompilacja zastąpi <OutputPath> poniższe informacje:
+Na przykład, jeśli kompilacja zastępuje <OutputPath> poniższy sposób:
 
 ```xml
 <Project>
@@ -112,7 +112,7 @@ Jeśli na przykład kompilacja zastąpi <OutputPath> poniższe informacje:
 </Project>
 ```
 
-następnie można go zastąpić następującym XML:
+następnie można zastąpić go następującym kodem XML:
 
 ```xml
 <Project>
@@ -123,18 +123,18 @@ następnie można go zastąpić następującym XML:
 </Project>
 ```
 
-Dzięki temu `<OutputPath>` znajduje się `<BaseOutputPath>` w folderze.
+Gwarantuje to, że `<OutputPath>` znajduje się w `<BaseOutputPath>` folderze.
 
-Nie należy zastępować `<OutDir>` bezpośrednio w procesie kompilacji; zamiast tego `<OutputPath>` należy usunąć artefakty kompilacji do określonej lokalizacji.
+Nie przesłonięcia `<OutDir>` bezpośrednio w procesie kompilacji; zamiast tego Przesłoń, `<OutputPath>` Aby porzucić artefakty kompilacji do określonej lokalizacji.
 
 ### <a name="overriding-your-properties-based-on-the-liveunittestingbuildrootpath-property"></a>Zastępowanie właściwości na podstawie `<LiveUnitTestingBuildRootPath>` właściwości.
 
 > [!NOTE]
-> W tym podejściu należy uważać na pliki dodane w folderze artefaktów, które nie są generowane podczas kompilacji. W poniższym przykładzie pokazano, co zrobić podczas umieszczania folderu pakietów w artefaktach. Ponieważ zawartość tego folderu nie są generowane podczas kompilacji, MSBuild właściwość **nie powinna być zmieniana**.
+> W tym podejściu należy zachować ostrożność w przypadku plików dodanych w folderze artefaktów, które nie są generowane podczas kompilacji. W poniższym przykładzie pokazano, co należy zrobić podczas umieszczania folderu Packages w obszarze artefakty. Ponieważ zawartość tego folderu nie jest generowana podczas kompilacji, właściwość MSBuild **nie powinna być zmieniana**.
 
-Podczas kompilacji testowania `<LiveUnitTestingBuildRootPath>` jednostek na żywo właściwość jest ustawiona na lokalizację live unit testing artefaktów folderu.
+Podczas kompilacji Live Unit Testing `<LiveUnitTestingBuildRootPath>` Właściwość jest ustawiana na lokalizację folderu Live Unit Testing artefaktów.
 
-Załóżmy na przykład, że projekt ma strukturę pokazaną w tym miejscu.
+Załóżmy na przykład, że w projekcie znajduje się struktura.
 
 ```
 .vs\...\lut\0\b
@@ -143,7 +143,7 @@ src\{proj1,proj2,proj3}
 tests\{testproj1,testproj2}
 Solution.sln
 ```
-Podczas live unit testing `<LiveUnitTestingBuildRootPath>` kompilacji, właściwość jest `.vs\...\lut\0\b`ustawiona na pełną ścieżkę . Jeśli projekt definiuje `<ArtifactsRoot>` właściwość, która jest mapowana do dir rozwiązania, można zaktualizować projekt MSBuild w następujący sposób:
+Podczas kompilacji Live Unit Testing `<LiveUnitTestingBuildRootPath>` Właściwość jest ustawiona na pełną ścieżkę `.vs\...\lut\0\b` . Jeśli projekt definiuje `<ArtifactsRoot>` Właściwość, która jest mapowana na katalog rozwiązania, można zaktualizować projekt MSBuild w następujący sposób:
 
 ```xml
 <Project>
@@ -167,35 +167,35 @@ Podczas live unit testing `<LiveUnitTestingBuildRootPath>` kompilacji, właściw
 </Project>
 ```
 
-## <a name="build-artifact-location"></a>Tworzenie lokalizacji artefaktów
+## <a name="build-artifact-location"></a>Lokalizacja artefaktu kompilacji
 
-**Chcę, aby artefakty kompilacji testowania jednostek na żywo przechodzili do określonej lokalizacji, a nie do domyślnej lokalizacji w folderze *.vs.* Jak mogę to zmienić?**
+**Chcę, aby artefakty Live Unit Testing kompilację przechodzą do określonej lokalizacji zamiast domyślnej lokalizacji w folderze *. vs* . Jak mogę to zmienić?**
 
-Ustaw `LiveUnitTesting_BuildRoot` zmienną środowiskową na poziomie użytkownika do ścieżki, w której chcesz artefakty kompilacji live unit testing, które mają zostać usunięte. 
+Ustaw `LiveUnitTesting_BuildRoot` zmienną środowiskową na poziomie użytkownika na ścieżkę, w której chcesz porzucić artefakty kompilacji Live Unit Testing. 
 
-## <a name="test-explorer-versus-live-unit-testing"></a>Eksplorator testów a testowanie jednostek na żywo
+## <a name="test-explorer-versus-live-unit-testing"></a>Eksplorator testów a Live Unit Testing
 
-**Czym różni się uruchamianie testów z okna Eksploratora testów od uruchamiania testów w testach jednostkowych na żywo?**
+**Jak uruchomione testy z okna Eksploratora testów różnią się od uruchamiania testów w Live Unit Testing?**
 
 Istnieje kilka różnic:
 
-- Uruchamianie lub debugowanie testów z okna **Eksploratora testów** uruchamia regularne pliki binarne, podczas gdy testowanie jednostek na żywo uruchamia instrumentowane pliki binarne. Jeśli chcesz debugować instrumentowane pliki binarne, dodanie wywołania metody [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) w metodzie testowej powoduje, że debuger uruchamia się za każdym razem, gdy ta metoda jest wykonywana (w tym podczas wykonywania przez testowanie jednostek na żywo), a następnie można dołączyć i debugować instrumentowane binarne. Jednak mamy nadzieję, że instrumentacja jest przezroczyste dla większości scenariuszy użytkownika i że nie trzeba debugować instrumentowane pliki binarne.
+- Uruchamianie lub debugowanie testów z okna **Eksploratora testów** powoduje uruchomienie zwykłych plików binarnych, podczas gdy Live Unit Testing uruchamia instrumentację plików binarnych. Jeśli chcesz debugować instrumentację plików binarnych, dodając [debuger.](xref:System.Diagnostics.Debugger.Launch)   wywołanie metody uruchamiania w metodzie testowej powoduje, że debuger jest uruchamiany za każdym razem, gdy ta metoda jest wykonywana (w tym gdy jest wykonywane przez Live Unit Testing), a następnie można dołączyć i debugować plik binarny Instrumentacji. Mamy nadzieję, że Instrumentacja jest niewidoczna dla większości scenariuszy użytkownika i nie ma potrzeby debugowania plików binarnych instrumentacji.
 
-- Testowanie jednostek na żywo nie tworzy nowej domeny aplikacji do uruchamiania testów, ale testy uruchamiane z okna **Eksploratora testów** tworzą nową domenę aplikacji.
+- Live Unit Testing nie tworzy nowej domeny aplikacji do uruchamiania testów, ale testy są uruchamiane z okna **Eksplorator testów** Utwórz nową domenę aplikacji.
 
-- Live Unit Testing uruchamia testy w każdym zestawie testowym sekwencyjnie. W **Eksploratorze testów**można uruchomić wiele testów równolegle.
+- Live Unit Testing uruchamia testy w każdym zestawie testów sekwencyjnie. W **Eksploratorze testów**można wybrać uruchamianie wielu testów równolegle.
 
-- **Eksplorator testów** domyślnie uruchamia testy w mieszkaniu jednowątkowym (STA), podczas gdy testy jednostek na żywo uruchamiają testy w mieszkaniu wielowątkowym (MTA). Aby uruchomić testy MSTest w STA w live unit testing, ozdobić `<STATestClass>` metodę testową lub `MSTest.STAExtensions 1.0.3-beta` zawierającą klasę z lub atrybut, `<STATestMethod>` który można znaleźć w pakiecie NuGet. Dla NUnit, udekoruj `<RequiresThread(ApartmentState.STA)>` metodę testową atrybutem i `<STAFact>` dla xUnit, za pomocą atrybutu.
+- **Eksplorator testów** uruchamia testy w jednowątkowym apartamentie (STA) domyślnie, a Live Unit Testing uruchamia testy w wielowątkowym apartamentie (MTA). Aby uruchomić testy MSTest w STA w Live Unit Testing, dekorować metodę testową lub klasy zawierającej z `<STATestMethod>` `<STATestClass>` atrybutem lub, który można znaleźć w `MSTest.STAExtensions 1.0.3-beta` pakiecie NuGet. Dla NUnit, dekorować metodę testową z `<RequiresThread(ApartmentState.STA)>` atrybutem i dla xUnit, z `<STAFact>` atrybutem.
 
 ## <a name="exclude-tests"></a>Wyklucz testy
 
-**Jak wykluczyć testy z udziału w testach jednostkowych na żywo?**
+**Jak mogę wykluczyć testy z uczestnictwa w Live Unit Testing?**
 
-Zobacz sekcję "Uwzględnij i wyklucz projekty testowe i metody testowe" artykułu [Użyj testowania jednostek na żywo w programie Visual Studio](live-unit-testing.md#include-and-exclude-test-projects-and-test-methods) dla ustawienia specyficznego dla użytkownika. Uwzględnienie lub wykluczenie testów jest przydatne, gdy chcesz uruchomić określony zestaw testów dla określonej sesji edycji lub utrwalić własne preferencje osobiste.
+Zobacz sekcję "Dołączanie i Wyklucz projekty testowe i metody testowe" [w artykule Live Unit Testing w programie Visual Studio](live-unit-testing.md#include-and-exclude-test-projects-and-test-methods) , aby zapoznać się z ustawieniami specyficznymi dla użytkownika. Włączenie lub wyłączenie testów jest przydatne, gdy chcesz uruchomić określony zestaw testów dla konkretnej sesji edytowania lub zachować własne preferencje osobiste.
 
-W przypadku ustawień specyficznych dla <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> rozwiązania można zastosować atrybut programowo, aby wykluczyć metody, właściwości, klasy lub struktury z instrumentów przez testowanie jednostek na żywo. Ponadto można również ustawić `<ExcludeFromCodeCoverage>` właściwość `true` w pliku projektu, aby wykluczyć cały projekt z instrumentów. Testy jednostkowe na żywo będą nadal uruchamiać testy, które nie zostały oprzyrządowane, ale ich zasięg nie zostanie wizualizowany.
+W przypadku ustawień specyficznych dla rozwiązania można zastosować <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> atrybut programowo, aby wykluczyć metody, właściwości, klasy lub struktury z instrumentacji Live Unit Testing. Ponadto można również ustawić `<ExcludeFromCodeCoverage>` Właściwość na `true` w pliku projektu, aby wykluczyć cały projekt z Instrumentacji. Live Unit Testing nadal będzie uruchamiać testy, które nie zostały instrumentacji, ale ich pokrycie nie zostanie wizualizacją.
 
-Można również sprawdzić, czy `Microsoft.CodeAnalysis.LiveUnitTesting.Runtime` jest ładowany w bieżącej domenie aplikacji i wyłączyć testy na podstawie dlaczego. Na przykład można wykonać coś podobnego z xUnit:
+Możesz również sprawdzić, czy `Microsoft.CodeAnalysis.LiveUnitTesting.Runtime` jest załadowany w bieżącej domenie aplikacji i wyłączyć testy na podstawie tego, dlaczego. Można na przykład wykonać następujące czynności w programie xUnit:
 
 ```csharp
 [ExcludeFromCodeCoverage]
@@ -220,50 +220,50 @@ public class Class1
 
 ## <a name="win32-pe-headers"></a>Nagłówki Win32 PE
 
-**Dlaczego nagłówki Win32 PE różnią się w zespołach oprzyrządowanych zbudowanych w wyniku testowania jednostek na żywo?**
+**Dlaczego nagłówki Win32 PE różnią się w zestawach Instrumentacji utworzonych przez testy jednostkowe na żywo?**
 
-Ten problem został rozwiązany i nie istnieje w programie Visual Studio 2017 w wersji 15.3 i nowszych.
+Ten problem został rozwiązany i nie istnieje w programie Visual Studio 2017 w wersji 15,3 lub nowszej.
 
-W przypadku starszych wersji programu Visual Studio 2017 istnieje znany błąd, który może spowodować, że kompilacje testów jednostek na żywo nie mogą osadzić następujących danych nagłówka win32 PE:
+W przypadku starszych wersji programu Visual Studio 2017 istnieje znany błąd, który może spowodować niepowodzenie Live Unit Testing kompilacje w celu osadzenia następujących danych nagłówka Win32 PE:
 
-- Wersja pliku (określona w @System.Reflection.AssemblyFileVersionAttribute kodzie).
+- Wersja pliku (określona przez @System.Reflection.AssemblyFileVersionAttribute w kodzie).
 
-- Ikona Win32 `/win32icon:` (określona przez w wierszu polecenia).
+- Ikona Win32 (określona przez `/win32icon:` wiersz polecenia).
 
 - Manifest Win32 (określony przez `/win32manifest:` wiersz polecenia).
 
-Testy, które opierają się na tych wartości może zakończyć się niepowodzeniem podczas wykonywania przez live unit testowania.
+Testy, które opierają się na tych wartościach, mogą zakończyć się niepowodzeniem podczas testów jednostkowych na żywo.
 
 ::: moniker-end
 
 ## <a name="continuous-builds"></a>Kompilacje ciągłe
 
-**Dlaczego testy live unit cały czas budują moje rozwiązanie, nawet jeśli nie wprowadzam żadnych zmian?**
+**Dlaczego usługa Live Unit Testing kontynuuje Kompilowanie mojego rozwiązania przez cały czas, nawet jeśli nie wprowadzam żadnych zmian?**
 
-Rozwiązanie można utworzyć, nawet jeśli nie wprowadzasz zmian, jeśli proces kompilacji generuje kod źródłowy, który jest częścią samego rozwiązania, a pliki docelowe kompilacji nie mają odpowiednich danych wejściowych i wyjściowych określonych. Obiekty docelowe powinny mieć listę danych wejściowych i wyjściowych, tak aby MSBuild może wykonywać odpowiednie aktualne kontrole i określać, czy nowa kompilacja jest wymagana.
+Rozwiązanie może zostać skompilowane nawet wtedy, gdy nie wprowadzasz edycji, jeśli proces kompilacji generuje kod źródłowy, który jest częścią rozwiązania, a pliki docelowe kompilacji nie mają odpowiednich danych wejściowych i danych wyjściowych. Elementy docelowe powinny mieć listę danych wejściowych i wyjściowych, aby program MSBuild mógł wykonać odpowiednie aktualne sprawdzenia i określić, czy jest wymagana Nowa kompilacja.
 
-Live Unit Testing uruchamia kompilację za każdym razem, gdy wykryje, że pliki źródłowe uległy zmianie. Ponieważ kompilacja rozwiązania generuje pliki źródłowe, live unit testing dostaje się do nieskończonej pętli kompilacji. Jeśli jednak dane wejściowe i wyjściowe obiektu docelowego są sprawdzane podczas uruchamiania drugiej kompilacji podczas testowania jednostek na żywo (po wykryciu nowo wygenerowanych plików źródłowych z poprzedniej kompilacji), wypada ona z pętli kompilacji, ponieważ kontrole wejść i wyjść wskazują, że wszystko jest aktualne.
+Live Unit Testing uruchamia kompilację za każdym razem, gdy wykryje, że pliki źródłowe uległy zmianie. Ponieważ kompilacja rozwiązania generuje pliki źródłowe, Live Unit Testing pobiera w nieskończoną pętlę kompilacji. Jeśli jednak dane wejściowe i wyjściowe elementu docelowego są sprawdzane, gdy Live Unit Testing rozpoczyna drugą kompilację (po wykryciu nowo wygenerowanych plików źródłowych z poprzedniej kompilacji), spowoduje to przerwanie działania pętli kompilacji, ponieważ testy danych wejściowych i wyjściowych wskazują, że wszystko jest aktualne.
 
 ## <a name="editor-icons"></a>Ikony edytora
 
-**Dlaczego nie widzę żadnych ikon w edytorze, mimo że live unit testing wydaje się być uruchomiony testy na podstawie komunikatów w oknie Dane wyjściowe?**
+**Dlaczego nie widzę żadnych ikon w edytorze, mimo że Live Unit Testing wygląda na to, że testy są uruchamiane na podstawie komunikatów w oknie danych wyjściowych?**
 
-Ikony w edytorze mogą nie być widoczne, jeśli zestawy, na których działa testowanie jednostek na żywo, nie są instrumentowane z jakiegokolwiek powodu. Na przykład testowanie jednostek na żywo `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`nie jest zgodne z projektami, które są ustawione . W takim przypadku proces kompilacji musi zostać zaktualizowany, aby usunąć `true` to ustawienie lub zmienić je na do testowania jednostek na żywo do pracy. 
+W edytorze mogą nie być widoczne ikony, jeśli zestawy, na których działa Live Unit Testing, nie są z jakiegokolwiek powodu Instrumentacją. Na przykład Live Unit Testing nie jest zgodny z projektami, które ustawiono `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>` . W takim przypadku należy zaktualizować proces kompilacji w celu usunięcia tego ustawienia lub zmiany go na `true` Live Unit Testing działać. 
 
-## <a name="capture-logs"></a>Przechwytywanie dzienników
+## <a name="capture-logs"></a>Dzienniki przechwytywania
 
-**Jak zbierać bardziej szczegółowe dzienniki, aby zgłaszać błędy?**
+**Jak mogę zebrać więcej szczegółowych dzienników do raportów o błędach plików?**
 
-Możesz wykonać kilka czynności, aby zebrać bardziej szczegółowe dzienniki:
+Aby zebrać więcej szczegółowych dzienników, można wykonać kilka czynności:
 
-- Przejdź do**pozycji Opcje** >  **narzędzi** > **Testowanie jednostek na żywo** i zmień opcję rejestrowania na **Pełne**. Pełne rejestrowanie powoduje, że bardziej szczegółowe dzienniki mają być wyświetlane w **output** okna.
+- Przejdź do **Tools**  >  **opcji**narzędzia  >  **Live Unit Testing** i zmień opcję rejestrowania na **pełne**. Pełne rejestrowanie powoduje wyświetlenie bardziej szczegółowych dzienników w oknie **danych wyjściowych** .
 
-- Ustaw `LiveUnitTesting_BuildLog` zmienną środowiskową użytkownika na nazwę pliku, którego chcesz użyć do przechwycenia dziennika MSBuild. Szczegółowe MSBuild komunikaty dziennika z live unit testing kompilacje można następnie pobrać z tego pliku.
+- Ustaw `LiveUnitTesting_BuildLog` zmienną środowiskową użytkownika na nazwę pliku, który ma być używany do przechwytywania dziennika programu MSBuild. Szczegółowe komunikaty dziennika programu MSBuild z kompilacji Live Unit Testing można następnie pobrać z tego pliku.
 
-- Ustaw `LiveUnitTesting_TestPlatformLog` zmienną środowiska `1` użytkownika do przechwytywania dziennika platformy testowej. Szczegółowe komunikaty dziennika platformy testowej z przebiegów `[Solution Root]\.vs\[Solution Name]\log\[VisualStudio Process ID]`testowania jednostek na żywo można następnie pobrać z .
+- Ustaw `LiveUnitTesting_TestPlatformLog` zmienną środowiskową użytkownika, aby `1` przechwycić dziennik platformy testów. Szczegółowe komunikaty dziennika platformy testowej z przebiegów Live Unit Testing można następnie pobrać z programu `[Solution Root]\.vs\[Solution Name]\log\[VisualStudio Process ID]` .
 
-- Utwórz zmienną środowiskową `VS_UTE_DIAGNOSTICS` na poziomie użytkownika o nazwie i ustaw ją na 1 (lub dowolną wartość) i uruchom ponownie program Visual Studio. Teraz powinieneś zobaczyć wiele rejestrowania na dane **wyjściowe — testy** kartę w programie Visual Studio.
+- Utwórz zmienną środowiskową na poziomie użytkownika o nazwie `VS_UTE_DIAGNOSTICS` i ustaw ją na 1 (lub dowolną wartość) i uruchom ponownie program Visual Studio. Teraz na karcie **testy danych wyjściowych** w programie Visual Studio powinna zostać wyświetlona duża liczba dzienników.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Testowanie jednostek na żywo](live-unit-testing.md)
+- [Live Unit Testing](live-unit-testing.md)

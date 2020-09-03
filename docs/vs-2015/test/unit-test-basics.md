@@ -11,10 +11,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0657fdd846c201b4f9bff4910bdd9fc271c399c9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543783"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
@@ -40,9 +40,9 @@ Sprawdź, czy kod działa zgodnie z oczekiwaniami, tworząc i uruchamiając test
 
 - [Uruchom i Wyświetl testy](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)
 
-## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a>Przegląd testów jednostkowych
+## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a> Przegląd testów jednostkowych
 
-### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a>Szybki Start
+### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a> Szybki Start
  Aby zapoznać się z wprowadzeniem do testów jednostkowych, które są bezpośrednio wprowadzane do kodu, zobacz jeden z następujących tematów:
 
 - [Przewodnik: tworzenie i uruchamianie testów jednostkowych zarządzanego kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
@@ -51,7 +51,7 @@ Sprawdź, czy kod działa zgodnie z oczekiwaniami, tworząc i uruchamiając test
 
 - [Testowanie jednostkowe kodu natywnego za pomocą Eksploratora testów](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)
 
-## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a>Przykład rozwiązania z banku
+## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a> Przykład rozwiązania z banku
  W tym temacie wykorzystujemy programowanie fikcyjnej aplikacji o nazwie `MyBank` jako przykład. Kod nie jest potrzebny do wykonania wyjaśnień w tym temacie. Metody testowe są zapisywane w języku C# i prezentowane przy użyciu struktury testów jednostkowych firmy Microsoft dla kodu zarządzanego, jednak te koncepcje można łatwo przenieść do innych języków i struktur.
 
  ![Rozwiązanie z banku](../test/media/ute-mybanksolution.png "UTE_MyBankSolution")
@@ -66,11 +66,11 @@ Sprawdź, czy kod działa zgodnie z oczekiwaniami, tworząc i uruchamiając test
 
   Nasza pierwsza próba projektowania `Accounts` projektu zawiera klasę, aby przechowywać podstawowe informacje o koncie, interfejs, który określa typowe funkcje dowolnego typu konta, takie jak kaucja i wycofanie zasobów z konta, oraz Klasa pochodna interfejsu, który reprezentuje konto sprawdzania. Rozpoczynamy projekty kont, tworząc następujące pliki źródłowe:
 
-- `AccountInfo.cs`Definiuje podstawowe informacje o koncie.
+- `AccountInfo.cs` Definiuje podstawowe informacje o koncie.
 
-- `IAccount.cs`Definiuje standardowy `IAccount` interfejs dla konta, w tym metody do depozytu i wycofywania zasobów z konta oraz do pobierania salda konta.
+- `IAccount.cs` Definiuje standardowy `IAccount` interfejs dla konta, w tym metody do depozytu i wycofywania zasobów z konta oraz do pobierania salda konta.
 
-- `CheckingAccount.cs`zawiera `CheckingAccount` klasę, która implementuje `IAccounts` interfejs do sprawdzania konta.
+- `CheckingAccount.cs` zawiera `CheckingAccount` klasę, która implementuje `IAccounts` interfejs do sprawdzania konta.
 
   Wiemy, że jednym z nich jest wycofanie z konta kontroli, aby upewnić się, że wycofana kwota jest mniejsza niż saldo konta. Dlatego zastąpimy `IAccount.Withdaw` metodę `CheckingAccount` z użyciem metody, która sprawdza, czy jest to warunek. Metoda może wyglądać następująco:
 
@@ -92,7 +92,7 @@ public void Withdraw(double amount)
 
  Teraz, gdy mamy jakiś kod, czas na przetestowanie.
 
-## <a name="create-unit-test-projects-and-test-methods"></a><a name="BKMK_Creating_the_unit_test_projects"></a>Tworzenie projektów testów jednostkowych i metod testowych
+## <a name="create-unit-test-projects-and-test-methods"></a><a name="BKMK_Creating_the_unit_test_projects"></a> Tworzenie projektów testów jednostkowych i metod testowych
  Często jest szybsze generowanie projektu testów jednostkowych i testów jednostkowych w kodzie. Możesz też utworzyć projekt testu jednostkowego i testy ręcznie, w zależności od wymagań.
 
  **Generuj projekty testów jednostkowych i testy jednostkowe**
@@ -138,11 +138,11 @@ public void Withdraw(double amount)
 
    Każdy projekt testu jednostkowego zawiera klasy, które są duplikatami nazw klas w projekcie kodu. W naszym przykładzie `AccountsTests` projekt będzie zawierał następujące klasy:
 
-- `AccountInfoTests`Klasa zawiera metody testów jednostkowych dla `AccountInfo` klasy w `BankAccount` projekcie
+- `AccountInfoTests` Klasa zawiera metody testów jednostkowych dla `AccountInfo` klasy w `BankAccount` projekcie
 
-- `CheckingAccountTests`Klasa zawiera metody testów jednostkowych `CheckingAccount` klasy.
+- `CheckingAccountTests` Klasa zawiera metody testów jednostkowych `CheckingAccount` klasy.
 
-## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a>Napisz testy
+## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a> Napisz testy
  Używana struktura testów jednostkowych i Visual Studio IntelliSense przeprowadzi Cię przez proces pisania kodu dla testów jednostkowych w projekcie kodu. Aby uruchomić program w Eksploratorze testów, większość platform wymaga dodania określonych atrybutów do identyfikacji metod testów jednostkowych. Struktury zapewniają również sposób — zwykle za pomocą instrukcji Assert lub atrybutów metod — w celu wskazania, czy metoda testowa została pomyślnie zakończyła się powodzeniem, czy nie. Inne atrybuty identyfikują opcjonalne metody instalacji, które są inicjowane podczas inicjalizacji klasy, oraz przed każdą metodą testową i metodami usuwania, które są uruchamiane po każdej metodzie testowej i przed zniszczeniem klasy.
 
  Wzorzec AAA (porządkowanie, działanie, potwierdzenie) jest wspólnym sposobem pisania testów jednostkowych dla testowanej metody.
@@ -217,7 +217,7 @@ public void My_Test ()
 }
 ```
 
-## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>Uruchom testy w Eksploratorze testów
+## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a> Uruchom testy w Eksploratorze testów
  Podczas kompilowania projektu testowego, testy są wyświetlane w Eksploratorze testów. Jeśli Eksplorator testów nie jest widoczny, wybierz **Testuj** w menu programu Visual Studio, wybierz pozycję **Windows**, a następnie wybierz **Eksplorator testów**.
 
  ![Eksplorator testów jednostkowych](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -226,7 +226,7 @@ public void My_Test ()
 
  Możesz również filtrować testy w dowolnym widoku, dopasowując tekst w polu wyszukiwania na poziomie globalnym lub wybierając jeden z wstępnie zdefiniowanych filtrów. Dowolny wybór testów można uruchomić w dowolnym momencie. Wyniki przebiegu testu są natychmiast widoczne na pasku przekazywania/niepowodzenia w górnej części okna Eksploratora. Szczegóły wyniku metody testowej są wyświetlane po wybraniu testu.
 
-### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a>Uruchom i Wyświetl testy
+### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> Uruchom i Wyświetl testy
  Pasek narzędzi Eksploratora testów pomaga odkrywać, organizować i uruchamiać testy, które Cię interesują.
 
  ![Uruchom testy z paska narzędzi Eksploratora testów](../test/media/ute-toolbar.png "UTE_ToolBar")
@@ -235,21 +235,21 @@ public void My_Test ()
 
  Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, Włącz równoległe wykonywanie testów przy użyciu przycisku ![wykonaj&#95;parallelicon&#45;mały](../test/media/ute-parallelicon-small.png "UTE_parallelicon — mały") przełącznik na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
 
-### <a name="run-tests-after-every-build"></a><a name="BKMK_Running_tests_after_every_build"></a>Uruchom testy po każdej kompilacji
+### <a name="run-tests-after-every-build"></a><a name="BKMK_Running_tests_after_every_build"></a> Uruchom testy po każdej kompilacji
 
 > [!WARNING]
 > Uruchamianie testów jednostkowych po każdej kompilacji jest obsługiwane tylko w Visual Studio Enterprise.
 
-|Image (Obraz)|Opis|
+|Obraz|Opis|
 |-|-|
 |![Uruchom po kompilacji](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|Aby uruchomić testy jednostkowe po każdej kompilacji lokalnej, wybierz **test** w menu Standard, wybierz opcję **Uruchom testy po kompilacji** na pasku narzędzi Eksploratora testów.|
 
-### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a>Filtrowanie i grupowanie listy testów
+### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a> Filtrowanie i grupowanie listy testów
  Jeśli masz dużą liczbę testów, możesz wpisać w polu wyszukiwania programu Test Explorer, aby odfiltrować listę według określonego ciągu. Możesz ograniczyć zakres zdarzenia filtru, wybierając z listy filtr.
 
  ![Kategorie filtrów wyszukiwania](../test/media/ute-searchfilter.png "UTE_SearchFilter")
 
-|Image (Obraz)|Opis|
+|Obraz|Opis|
 |-|-|
 |![Przycisk grupy Eksploratora testów](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Aby zgrupować testy według kategorii, wybierz przycisk **Grupuj według** .|
 
@@ -282,7 +282,7 @@ public void My_Test ()
 > [!NOTE]
 > Te procedury dotyczą tylko metod testowych, które można napisać przy użyciu struktury testów jednostkowych firmy Microsoft dla kodu zarządzanego. Jeśli używasz innej platformy, zapoznaj się z dokumentacją struktury w celu zapewnienia odpowiedniej funkcjonalności.
 
- Załóżmy na przykład, że dodajemy niezbędną metodę do `CheckingAccount` klasy o nazwie `AddIntegerHelper` . `AddIntegerHelper`dodaje dwie liczby całkowite.
+ Załóżmy na przykład, że dodajemy niezbędną metodę do `CheckingAccount` klasy o nazwie `AddIntegerHelper` . `AddIntegerHelper` dodaje dwie liczby całkowite.
 
  Aby utworzyć Test oparty na danych dla `AddIntegerHelper` metody, najpierw tworzymy bazę danych Access o nazwie `AccountsTest.accdb` i tabelę o nazwie `AddIntegerHelperData` . `AddIntegerHelperData`Tabela definiuje kolumny, aby określić pierwszy i drugi operandy dodawania i kolumny, aby określić oczekiwany wynik. Wypełnijmy kilka wierszy z odpowiednimi wartościami.
 

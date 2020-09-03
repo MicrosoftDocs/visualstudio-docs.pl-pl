@@ -28,16 +28,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a101f22bccb3624eccff1edcea502c9350991392
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254916"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Kontrolki Windows Forms w dokumentach pakietu Office — omówienie
   Kontrolki Windows Forms są obiektami, z którymi użytkownicy mogą wprowadzać dane lub manipulować nimi. W projektach na poziomie dokumentu dla Microsoft Office Excel i Microsoft Office Word, można dodać kontrolki Windows Forms do dokumentu lub skoroszytu w projekcie w czasie projektowania lub można programowo dodać te kontrolki w czasie wykonywania. Można programowo dodać te kontrolki do dowolnego otwartego dokumentu lub arkusza w czasie wykonywania w dodatku narzędzi VSTO dla programu Excel lub Word.
 
- Aby uzyskać więcej informacji, zobacz [jak: Dodawanie formantów Windows Forms do dokumentów](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)pakietu Office.
+ Aby uzyskać więcej informacji, zobacz [jak: Dodawanie formantów Windows Forms do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).
 
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -71,7 +71,7 @@ W formularzu systemu Windows.
 - Gdy chcesz uzyskać dane wejściowe od użytkownika i uniemożliwić użytkownikowi wykonywanie jakichkolwiek czynności w dokumencie do momentu odebrania danych wejściowych.
 
 ## <a name="add-windows-forms-controls-programmatically"></a>Programowe dodawanie formantów Windows Forms
- Możesz dodać kontrolki Windows Forms do dokumentów programu Word i arkuszy programu Excel w czasie wykonywania. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zapewnia metody pomocnika do dodawania najpopularniejszych formantów Windows Forms. Te metody pomocnika umożliwiają szybkie dodawanie kontrolek do dokumentu pakietu Office oraz uzyskiwanie dostępu do połączonych funkcji kontroli Windows Forms i funkcji związanych z pakietem Office tych kontrolek.
+ Możesz dodać kontrolki Windows Forms do dokumentów programu Word i arkuszy programu Excel w czasie wykonywania. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Zapewnia metody pomocnika do dodawania najpopularniejszych formantów Windows Forms. Te metody pomocnika umożliwiają szybkie dodawanie kontrolek do dokumentu pakietu Office oraz uzyskiwanie dostępu do połączonych funkcji kontroli Windows Forms i funkcji związanych z pakietem Office tych kontrolek.
 
  Aby uzyskać więcej informacji, zobacz [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
@@ -116,13 +116,13 @@ W formularzu systemu Windows.
 
  Gdy otwierany jest skoroszyt programu Excel, który zawiera formanty statyczne, w skoroszycie zostanie wyświetlona mapa bitowa kontrolki w kontrolce ActiveX do momentu uruchomienia kodu dostosowania i załadowania rzeczywistej kontrolki. Program Excel tworzy tę mapę bitową i zapisuje ją w skoroszycie za każdym razem, gdy skoroszyt zostanie zapisany. Mapa bitowa pokazuje kontrolkę, która pojawiła się podczas ostatniego zapisywania skoroszytu, włącznie z danymi wyświetlanymi przez formant. Aby uzyskać więcej informacji na temat kontrolki ActiveX, która zawiera Windows Forms kontrolki i mapy bitowe, zobacz [ograniczenia Windows Forms formantów w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
- W pewnych warunkach kod nie zostanie załadowany i zostanie wyświetlona tylko mapa bitowa, na przykład gdy użytkownik otworzy skoroszyt w trybie projektowania. Ponadto, jeśli użytkownik otworzy skoroszyt na komputerze, na którym nie zainstalowano programu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , nie można uruchomić dostosowania w celu załadowania formantów i dlatego tylko mapa bitowa kontrolki jest widoczna. Przed zapisaniem skoroszytu i wysłaniem go do innego użytkownika w celu upewnienia się, że dane osobowe nie zostaną przypadkowo ujawnione, należy usunąć dane osobowe z formantów w skoroszytach.
+ W pewnych warunkach kod nie zostanie załadowany i zostanie wyświetlona tylko mapa bitowa, na przykład gdy użytkownik otworzy skoroszyt w trybie projektowania. Ponadto, jeśli użytkownik otworzy skoroszyt na komputerze, na którym nie [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] zainstalowano programu, nie można uruchomić dostosowania w celu załadowania formantów i dlatego tylko mapa bitowa kontrolki jest widoczna. Przed zapisaniem skoroszytu i wysłaniem go do innego użytkownika w celu upewnienia się, że dane osobowe nie zostaną przypadkowo ujawnione, należy usunąć dane osobowe z formantów w skoroszytach.
 
 ### <a name="match-control-size-to-cell-size-on-an-excel-worksheet"></a>Dopasowanie rozmiaru kontrolki do rozmiaru komórki w arkuszu programu Excel
- Można ustawić zmianę rozmiaru kontrolki automatycznie, gdy zmieni się rozmiar komórki nadrzędnej. Aby uzyskać więcej informacji, zobacz [jak: Zmień rozmiar kontrolek w](../vsto/how-to-resize-controls-within-worksheet-cells.md)komórkach arkusza.
+ Można ustawić zmianę rozmiaru kontrolki automatycznie, gdy zmieni się rozmiar komórki nadrzędnej. Aby uzyskać więcej informacji, zobacz [How to: zmiana rozmiaru kontrolek w komórkach arkusza](../vsto/how-to-resize-controls-within-worksheet-cells.md).
 
 ### <a name="add-components-that-are-shared-by-all-worksheets"></a>Dodaj składniki, które są współużytkowane przez wszystkie arkusze
- Możesz dodać składniki, które mają być udostępniane między wszystkimi arkuszami, takimi jak <xref:System.Data.DataSet>, do projektanta skoroszytów, a nie arkuszami. Składnik będzie widoczny na pasku składnika.
+ Możesz dodać składniki, które mają być udostępniane między wszystkimi arkuszami, takimi jak <xref:System.Data.DataSet> , do projektanta skoroszytów, a nie arkuszami. Składnik będzie widoczny na pasku składnika.
 
 ### <a name="formula-for-embedding-controls-on-an-excel-worksheet"></a>Formuła osadzania formantów w arkuszu programu Excel
  Po wybraniu kontrolki w programie Excel zobaczysz wartość " **Osadź" (WinForms. Control. host "," ")** na **pasku formuły**. Ten tekst jest wymagany i nie należy go usuwać.
@@ -130,7 +130,7 @@ W formularzu systemu Windows.
 ### <a name="layout-style-of-controls-on-a-word-document"></a>Styl układu formantów w dokumencie programu Word
  Po dodaniu kontrolki do dokumentu programu Word w projekcie na poziomie dokumentu przy użyciu projektanta programu Visual Studio, formant jest dodawany w wierszu z tekstem. Aby zmienić styl układu kontrolki, kliknij prawym przyciskiem myszy kontrolkę, a następnie kliknij polecenie **Formatuj formant**. Wybierz styl zawijania na stronie **Układ** okna dialogowego **Formatowanie obiektu** .
 
- Gdy dodajesz formant do dokumentu programu Word w czasie wykonywania, możesz `Add`określić styl układu nowej kontrolki przy użyciu innej \< <xref:Microsoft.Office.Tools.Word.ControlCollection> *klasy sterującej*, > przeciążenia metody klasy:
+ Gdy dodajesz formant do dokumentu programu Word w czasie wykonywania, możesz określić styl układu nowej kontrolki przy użyciu różnych `Add` \<*control class*> przeciążeń metody <xref:Microsoft.Office.Tools.Word.ControlCollection> klasy:
 
 - Aby dodać formant w wierszu z tekstem, Użyj przeciążenia, które akceptuje element <xref:Microsoft.Office.Interop.Word.Range> określający lokalizację formantu.
 
@@ -146,20 +146,20 @@ W formularzu systemu Windows.
 ### <a name="add-components-at-design-time"></a>Dodawanie składników w czasie projektowania
  Niektóre kontrolki lub składniki nie są widoczne w dokumencie i są wyświetlane w zasobniku składników. Program Visual Studio udostępnia zasobnik składników dla każdego okna dokumentu. Zasobnik składnika pojawia się na ekranie tylko wtedy, gdy składniki istnieją w dokumencie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
 - [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
-- [Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)
-- [Kontrolki Windows Forms](/dotnet/framework/winforms/controls/index)
+- [Przegląd okienka Akcje](../vsto/actions-pane-overview.md)
+- [formanty Formularzy systemu Windows](/dotnet/framework/winforms/controls/index)
 - [Ograniczenia Windows Forms formantów w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
 - [Instrukcje: Dodawanie formantów Windows Forms do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
-- [Instrukcje: Zmień rozmiar kontrolek w komórkach arkusza](../vsto/how-to-resize-controls-within-worksheet-cells.md)
-- [Instrukcje: Ukryj kontrolki w arkuszach podczas drukowania](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
-- [Przewodnik: Zmiana formatowania arkusza za pomocą kontrolek CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
-- [Przewodnik: Zmienianie formatowania dokumentu przy użyciu kontrolek CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)
-- [Przewodnik: Wyświetlanie tekstu w polu tekstowym w arkuszu przy użyciu przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)
-- [Przewodnik: Wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)
+- [Instrukcje: zmiana rozmiaru kontrolek w komórkach arkusza](../vsto/how-to-resize-controls-within-worksheet-cells.md)
+- [Instrukcje: ukrywanie kontrolek w arkuszach podczas drukowania](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
+- [Przewodnik: zmiana formatowania arkusza za pomocą kontrolek CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
+- [Przewodnik: zmienianie formatowania dokumentu przy użyciu kontrolek CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)
+- [Przewodnik: wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)
+- [Przewodnik: wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)
 - [Ograniczenia Windows Forms formantów w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
-- [Przewodnik: Aktualizowanie wykresu w dokumencie za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)
-- [Przewodnik: Aktualizowanie wykresu w arkuszu za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)
+- [Przewodnik: aktualizowanie wykresu w dokumencie za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)
+- [Przewodnik: aktualizowanie wykresu w arkuszu za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ded09d64a071c12e14de1597c21aad3872cacf4
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468547"
 ---
 # <a name="idiaaddressmapset_imageheaders"></a>IDiaAddressMap::set_imageHeaders
@@ -39,7 +39,7 @@ podczas Liczba bajtów danych nagłówka. Musi mieć `n*sizeof(IMAGE_SECTION_HEA
 
  dane []
 
-podczas Tablica struktur, `IMAGE_SECTION_HEADER` która ma być używana jako nagłówki obrazu.
+podczas Tablica struktur,  `IMAGE_SECTION_HEADER` która ma być używana jako nagłówki obrazu.
 
  originalHeaders
 

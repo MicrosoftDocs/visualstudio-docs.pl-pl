@@ -1,5 +1,5 @@
 ---
-title: Funkcje punktu zaczepienia alokacji | Dokumentacja firmy Microsoft
+title: Funkcje punktu zaczepienia alokacji | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,21 +25,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 81135546ffa208a4efb96569cd7968dfe560cdf9
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702526"
 ---
 # <a name="allocation-hook-functions"></a>Funkcje punktu zaczepienia alokacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Funkcji podłączania alokacji zainstalowane za pomocą [_CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), jest wywoływana za każdym razem, gdy przydzielone, ponownie przydzielić lub zwolnienie pamięci. Ten typ punktu zaczepienia może służyć do wielu różnych celów. Użyj go, aby przetestować, jak aplikacja obsługuje sytuacje braku pamięci, na przykład do zbadania wzorców przydziału lub do rejestrowania informacji o alokacji do późniejszej analizy.  
+Funkcja punktu zaczepienia alokacji, zainstalowana za pomocą [_CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), jest wywoływana za każdym razem, gdy pamięć zostanie przydzielone, ponownie przydzielone lub zwolnione. Ten typ punktu zaczepienia może być używany w wielu różnych celach. Służy do testowania, w jaki sposób aplikacja obsługuje niewystarczającą ilość pamięci, na przykład lub do zbadania wzorców alokacji lub aby rejestrować informacje o alokacji na potrzeby późniejszej analizy.  
   
 > [!NOTE]
-> Należy pamiętać o ograniczeniu dotyczącym używania funkcji biblioteki wykonawczej języka C w funkcji punktu zaczepienia alokacji, opisanego w artykule [Punkty zaczepienia alokacji i alokacja pamięci środowiska wykonawczego języka C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
+> Należy pamiętać o ograniczeniu dotyczącego użycia funkcji biblioteki wykonawczej C w funkcji punktu zaczepienia alokacji, opisanej w obszarze [punkty zaczepienia alokacji i alokacji pamięci w czasie wykonywania c](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
   
- Funkcji podłączania alokacji powinny mieć prototypu, jak pokazano poniżej:  
+ Funkcja punktu zaczepienia alokacji powinna mieć prototyp podobny do następującego:  
   
 ```  
 int YourAllocHook(int nAllocType, void *pvData,  
@@ -47,16 +47,16 @@ int YourAllocHook(int nAllocType, void *pvData,
         const unsigned char * szFileName, int nLine )  
 ```  
   
- Wskaźnik, który jest przekazywany do [_CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) typu **_crt_alloc_hook —**, zgodnie z definicją w CRTDBG. GODZ.:  
+ Wskaźnik przekazany do [_CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) jest typu **_CRT_ALLOC_HOOK**, zgodnie z definicją w CRTDBG. C  
   
 ```  
 typedef int (__cdecl * _CRT_ALLOC_HOOK)  
     (int, void *, size_t, int, long, const unsigned char *, int);  
 ```  
   
- Gdy biblioteka środowiska uruchomieniowego wywołuje usługi podłączania *nAllocType* argument wskazuje, jakie alokacji ma być wykonywana operacja (**_HOOK_ALLOC**, **_HOOK_REALLOC**, lub **_HOOK_FREE**). W przypadku bezpłatnej lub realokacja `pvData` zawiera wskaźnik do tematu użytkownika bloku, która będzie zwolniona. Jednak w przypadku alokacji this, wskaźnik ma wartość null, ponieważ nie ma jeszcze wystąpiła Alokacja. Pozostałe argumenty zawierają rozmiar alokacji w danym, jego typ bloku numeru sekwencyjnego żądania, skojarzone z, a także wskaźnik do pliku nazwa i numer wiersza w którym dokonano alokacji, jeśli jest dostępny. Po funkcja podłączania wykonuje niezależnie od analizy i inne zadania chce jego autora, aplikacja musi zwracać jedną **TRUE**, co oznacza, że można kontynuować operacji alokacji, lub **FALSE**oznaczający, operacja powinna zakończyć się niepowodzeniem. Proste punktu zaczepienia tego typu może sprawdzić ilość pamięci przydzielonej do tej pory i powrócić **FALSE** przekroczeniu limitu małych takimi problemami znacznie mniej. Aplikacja następnie doświadczenie rodzaju błędów alokacji, które normalnie mogą się pojawić tylko wtedy, gdy ilość dostępnej pamięci była bardzo niska. Bardziej złożone punkty zaczepienia może informacje o wzorcach alokacji, analiza użycia pamięci lub raportu po wystąpieniu określonych sytuacjach.  
+ Gdy Biblioteka wykonawcza wywołuje punkt zaczepienia, argument *nAllocType* wskazuje, jaka operacja alokacji ma zostać wykonana (**_HOOK_ALLOC**, **_HOOK_REALLOC**lub **_HOOK_FREE**). W przypadku bezpłatnej lub ponownej alokacji program `pvData` zawiera wskaźnik do tematu użytkownika bloku, który ma zostać zwolniony. Jednak w przypadku alokacji wskaźnik ten ma wartość null, ponieważ alokacja nie została jeszcze osiągnięta. Pozostałe argumenty zawierają rozmiar danego przydziału, jego typ bloku, sekwencyjny numer żądania skojarzony z nim oraz wskaźnik do nazwy pliku i numer wiersza, w którym wykonano alokację, jeśli jest dostępny. Gdy funkcja podłączania wykonuje dowolną analizę i inne zadania, których autor chce, musi zwrócić **wartość true**, co oznacza, że operacja alokacji może być kontynuowana, lub **false**, co oznacza, że operacja powinna zakończyć się niepowodzeniem. Prosty hak tego typu może sprawdzić ilość pamięci przydzieloną do tej pory i zwrócić **wartość false** , jeśli ta wartość przekracza mały limit. Następnie aplikacja będzie korzystać z rodzaju błędów alokacji, które zwykle występują tylko wtedy, gdy dostępna pamięć była bardzo niska. Bardziej złożone punkty zaczepienia mogą śledzić wzorce alokacji, analizować użycie pamięci lub raportować, gdy wystąpią określone sytuacje.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Punkty zaczepienia alokacji i alokacji pamięci środowiska wykonawczego języka C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
- [Debugowanie pisanie funkcji punktów zaczepienia](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 Sample](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)
+ [Punkty zaczepienia alokacji i alokacje pamięci w czasie wykonywania C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
+ [Zapisywanie funkcji punktu zaczepienia debugowania](../debugger/debug-hook-function-writing.md)   
+ [Przykład crt_dbg2](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)

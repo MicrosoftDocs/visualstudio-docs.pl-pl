@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592883"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfejs użytkownika debugera (XSLT)
@@ -64,7 +64,7 @@ W oknie punkty przerwania są wyświetlane wszystkie punkty przerwania ustawione
 
 Okno punktów przerwania powinno zachowywać się tak samo jak w przypadku innych debugerów programu Visual Studio.
 
-## <a name="watch-window"></a>Obserwuj okno
+## <a name="watch-window"></a>okno czujki
 
 Okno wyrażeń kontrolnych służy do obliczania zmiennych. Możesz również zmienić wartości zmiennych.
 
@@ -82,13 +82,13 @@ Kliknięcie elementu poza nim znajdującego się w górnej części listy wskazu
 
 ## <a name="quickwatch-dialog-box"></a>QuickWatch — okno dialogowe
 
-Okno dialogowe **QuickWatch** służy do obliczania wyrażeń XPath 1,0. Węzeł kontekstu (węzeł `self::node()` z okna lokalnego) zawiera kontekst wykonywania wyrażenia XPath. W okno wyrażeń kontrolnych zostanie wyświetlony wynik wykonywania wyrażenia XPath.
+Okno dialogowe **QuickWatch** służy do obliczania wyrażeń XPath 1,0. Węzeł kontekstu ( `self::node()` węzeł z okna zmiennych lokalnych) zawiera kontekst wykonywania wyrażenia XPath. W okno wyrażeń kontrolnych zostanie wyświetlony wynik wykonywania wyrażenia XPath.
 
 Na poniższej liście opisano ograniczenia dotyczące oceny wyrażenia XPath:
 
 - Dozwolone są tylko wbudowane funkcje XPath.
 
-- Wbudowane funkcje XSLT, takie jak `document()` i `key()`, są niedozwolone.
+- Wbudowane funkcje XSLT, takie jak `document()` i, `key()` są niedozwolone.
 
 - Funkcje zdefiniowane przez użytkownika są niedozwolone.
 
@@ -100,7 +100,7 @@ Okno demontaż pokazuje kod zestawu, który jest generowany przez kompilator XSL
 
 Aby uzyskać więcej informacji, w [jaki sposób: użyć okna demontażu](../debugger/how-to-use-the-disassembly-window.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie kodu XSLT](../xml-tools/debugging-xslt.md)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

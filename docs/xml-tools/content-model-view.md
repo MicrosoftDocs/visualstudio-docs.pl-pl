@@ -9,23 +9,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 830dbdda0027551a25747235e6ad9dffbbc11b23
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592916"
 ---
 # <a name="content-model-view"></a>Widok modelu zawartości
 
 Widok model zawartości zawiera graficzną reprezentację lokalnych i globalnych węzłów schematu oraz ich składników, w tym prostych i złożonych typów, elementów, grup modeli, atrybutów i grup atrybutów. Nie można wyświetlić komentarzy i instrukcji przetwarzania XML w widoku modelu zawartości. Widok modelu zawartości zawiera dwa panele: Panel **obszaru roboczego** zawierający listę węzłów w [obszarze roboczym Projektant schematu XML](../xml-tools/xml-schema-designer-workspace.md)oraz powierzchnię projektu, w której można zobaczyć model zawartości węzłów schematu, które są wybrane w panelu **obszaru roboczego** . Widok modelu zawartości obejmuje również pasek narzędzi projektanta schematu XML i pasek nawigacyjny.
 
-Na poniższej ilustracji panel **obszary robocze** zawiera sześć węzłów schematu. Węzeł `purchaseOrder` jest wybierany w panelu **obszaru roboczego** i wyświetlany na powierzchni projektowej.
+Na poniższej ilustracji panel **obszary robocze** zawiera sześć węzłów schematu. `purchaseOrder`Węzeł jest wybierany w panelu **obszaru roboczego** i wyświetlany na powierzchni projektowej.
 
 ![Widok modelu zawartości projektanta schematu XML](../xml-tools/media/xsddesigner_contentmodelview.gif)
 
 ## <a name="workspace-panel"></a>Panel obszary robocze
 
-Po dodaniu węzłów do obszaru roboczego lista węzłów zostanie wyświetlona w panelu **obszaru roboczego** widoku modelu zawartości. Po wybraniu węzłów w panelu **obszaru roboczego** są one wyświetlane na powierzchni projektowej widok modelu zawartości. Aby usunąć węzły z obszaru roboczego, użyj paska narzędzi projektanta XSD, menu podręcznego kliknij prawym przyciskiem myszy lub klawisza **delete** .
+Po dodaniu węzłów do obszaru roboczego lista węzłów zostanie wyświetlona w panelu **obszaru roboczego** widoku modelu zawartości. Po wybraniu węzłów w panelu **obszaru roboczego** są one wyświetlane na powierzchni projektowej widok modelu zawartości. Aby usunąć węzły z obszaru roboczego, użyj paska narzędzi projektanta XSD, menu **Workspace** podręcznego kliknij prawym przyciskiem myszy lub klawisza **delete** .
 
 Aby uzyskać informacje na temat dodawania węzłów, zobacz sekcję "Dodawanie węzłów do obszaru roboczego" w [obszarze roboczym Projektant schematu XML](../xml-tools/xml-schema-designer-workspace.md).
 
@@ -81,9 +81,9 @@ Poniższe przyciski paska narzędzi projektanta XSD są włączone, gdy aktywny 
 
 |Opcja|Opis|
 |-|-----------------|
-|**Pokaż widok startowy**|Przełącza do [widoku Start](../xml-tools/start-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl**+**1**.|
-|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl**+**2**.|
-|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl**+**3**.|
+|**Pokaż widok startowy**|Przełącza do [widoku Start](../xml-tools/start-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **1**.|
+|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **2**.|
+|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **3**.|
 |**Wyczyść obszar roboczy**|Czyści obszar roboczy i powierzchnię projektu.|
 |**Usuń z obszaru roboczego**|Usuwa wybrane węzły z obszaru roboczego i powierzchni projektowej.|
 |**Usuń wszystko oprócz zaznaczenia z obszaru roboczego**|Usuwa węzły, które nie są wybrane z obszaru roboczego i powierzchni projektowej.|
@@ -93,7 +93,7 @@ Poniższe przyciski paska narzędzi projektanta XSD są włączone, gdy aktywny 
 
 Powierzchnię projektu można przesuwać przy użyciu pasków przewijania lub przez przytrzymanie klawisza **Ctrl** podczas klikania i przeciągania myszy. Gdy przesuwasz powierzchnię projektu przy użyciu przycisku kliknij i przeciągnij, kursor zmieni się na cztery przecinające się strzałki, wskazując cztery kierunki.
 
-## <a name="undoredo"></a>Cofnij/Ponów.
+## <a name="undoredo"></a>Cofnij/ponów
 
 Funkcja Cofnij/ponów jest włączona w widoku modelu zawartości dla następujących akcji:
 
@@ -105,7 +105,7 @@ Funkcja Cofnij/ponów jest włączona w widoku modelu zawartości dla następuj�
 
 - Usuwanie jednego lub wielu węzłów.
 
-## <a name="zoom"></a>Powiększenie
+## <a name="zoom"></a>Zoom
 
 Powiększenie jest dostępne w prawym dolnym rogu widoku modelu zawartości.
 
@@ -123,6 +123,6 @@ Można przełączać się między **projektantem XSD** a edytorem XML za pomocą
 
 W przypadku wprowadzenia zmian w zestawie schematu w edytorze XML zmiany są synchronizowane w widoku modelu zawartości. Aby uzyskać więcej informacji, zobacz [integracja z edytorem XML](../xml-tools/integration-with-xml-editor.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Obszar roboczy projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md)

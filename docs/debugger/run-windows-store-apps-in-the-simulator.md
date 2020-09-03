@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 1c208e435e63891c71fe47ebd64c5fe1307e0c82
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348144"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Uruchamianie aplikacji platformy UWP w symulatorze
@@ -31,13 +31,13 @@ Program Visual Studio symulator for platformy UWP Apps nie działa w izolowanym 
 > [!IMPORTANT]
 > Symulator programu Visual Studio 2015 nie zawiera przycisku geolokalizacji. Jest to spowodowane tym, że symulator systemu Windows 10 nie obejmuje symulacji geolokalizacji.
 
-## <a name="set-the-simulator-as-the-target"></a><a name="BKMK_Set_the_simulator_as_the_target"></a>Ustaw symulator jako element docelowy
+## <a name="set-the-simulator-as-the-target"></a><a name="BKMK_Set_the_simulator_as_the_target"></a> Ustaw symulator jako element docelowy
 
 Aby uruchomić aplikację platformy UWP w symulatorze, wybierz z listy rozwijanej pozycję **symulator** , obok przycisku **Rozpocznij debugowanie** na pasku narzędzi **Standardowy** debuger. Ta opcja jest dostępna tylko wtedy, gdy **minimalna wersja platformy docelowej** aplikacji jest mniejsza lub równa systemowi operacyjnemu na komputerze deweloperskim.
 
 ![Uruchamianie w symulatorze](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")
 
-## <a name="choose-an-interaction-mode"></a><a name="BKMK_Choose_an_interaction_mode"></a>Wybierz tryb interakcji
+## <a name="choose-an-interaction-mode"></a><a name="BKMK_Choose_an_interaction_mode"></a> Wybierz tryb interakcji
 
 Można wybrać następujące tryby interakcji:
 
@@ -81,10 +81,10 @@ Przycisk **Obróć emulacji dotykowej** ustawia tryb interakcji, aby obracał ge
 
 - Naciśnij przycisk z lewej strony i obróć kółko myszy do przodu (od użytkownika), aby obrócić obiekt w prawo.
 
-## <a name="enable-or-disable-always-on-top-mode"></a><a name="BKMK_Enable_or_disable_Always_on_top_mode"></a>Włącz lub Wyłącz zawsze włączony tryb górny
+## <a name="enable-or-disable-always-on-top-mode"></a><a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Włącz lub Wyłącz zawsze włączony tryb górny
  Okno symulatora można ustawić zawsze na wierzchu innych okien. Przycisk **przełączania okna** z góry włącza lub wyłącza tryb **zawsze włączony** w oknie symulatora.
 
-## <a name="change-the-device-orientation"></a><a name="BKMK_Change_the_device_orientation"></a>Zmiana orientacji urządzenia
+## <a name="change-the-device-orientation"></a><a name="BKMK_Change_the_device_orientation"></a> Zmiana orientacji urządzenia
  Orientację urządzenia można zmienić między pionową i poziomą, obracając symulatora o 90 stopni w dowolnym kierunku.
 
 > [!NOTE]
@@ -93,7 +93,7 @@ Przycisk **Obróć emulacji dotykowej** ustawia tryb interakcji, aby obracał ge
 > [!NOTE]
 > W przypadku obrócenia symulatora tak, aby jedna krawędź symulatora była większa niż ekran, na którym jest wyświetlana, symulator zostanie automatycznie zmieniony w celu dopasowania do ekranu. Zmiany rozmiaru symulatora nie są zmieniane na oryginalny rozmiar, jeśli zostanie on ponownie obrócony.
 
-## <a name="change-the-simulated-screen-size-and-resolution"></a><a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a>Zmiana rozmiaru i rozdzielczości ekranu symulowanego
+## <a name="change-the-simulated-screen-size-and-resolution"></a><a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Zmiana rozmiaru i rozdzielczości ekranu symulowanego
  Aby zmienić rozmiar symulowanego ekranu i rozdzielczość, wybierz przycisk **Zmień rozdzielczość** na palecie, a następnie wybierz nowy rozmiar i rozdzielczość z listy.
 
  Rozmiar i rozdzielczość ekranu są wyświetlane jako *Szerokość ekranu, Szerokość pikseli (* w pikselach). Należy zauważyć, że zarówno rozmiar ekranu, jak i rozdzielczość są symulowane. Lokalizacje współrzędnych w symulatorze są tłumaczone na wybrane rozmiary i rozdzielczość urządzenia.
@@ -101,7 +101,7 @@ Przycisk **Obróć emulacji dotykowej** ustawia tryb interakcji, aby obracał ge
 > [!NOTE]
 > Możesz zapisywać skalowane wersje obrazów mapy bitowej w aplikacji, a system Windows załaduje prawidłowy obraz dla bieżącej skali. Aby uzyskać więcej informacji, zobacz [projektowanie i wprowadzenie do interfejsu użytkownika](/windows/uwp/layout/design-and-ui-intro). Jednakże w przypadku zmiany rozdzielczości symulatora tak, aby system Windows pobierał inny obraz w celu dopasowania go do rozdzielczości, należy zatrzymać i ponownie uruchomić sesję debugowania, aby wyświetlić nowy obraz.
 
-## <a name="capture-a-screenshot-of-your-app-for-submission-to-microsoft-store"></a><a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>Przechwyć zrzut ekranu aplikacji na potrzeby przesłania do Microsoft Store
+## <a name="capture-a-screenshot-of-your-app-for-submission-to-microsoft-store"></a><a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Przechwyć zrzut ekranu aplikacji na potrzeby przesłania do Microsoft Store
  Po przesłaniu aplikacji do Microsoft Store należy dołączyć zrzuty ekranu aplikacji.
 
 > [!NOTE]
@@ -113,7 +113,7 @@ Przycisk **Obróć emulacji dotykowej** ustawia tryb interakcji, aby obracał ge
 
    ![Menu kontekstowe ustawień zrzutu ekranu](../debugger/media/simulator_screenshotsettingscntxmnu.png)
 
-## <a name="simulate-network-connection-properties"></a><a name="BKMK_Simulate_network_connection_properties"></a>Symulowanie właściwości połączenia sieciowego
+## <a name="simulate-network-connection-properties"></a><a name="BKMK_Simulate_network_connection_properties"></a> Symulowanie właściwości połączenia sieciowego
 
 Aby ułatwić użytkownikom aplikacji Zarządzanie kosztami taryfowych połączeń sieciowych, należy utrzymać świadomość kosztu połączenia sieciowego lub zmian stanu planu danych oraz umożliwić aplikacji korzystanie z tych informacji w celu uniknięcia ponoszenia dodatkowych kosztów dla roamingu lub przekroczenia określonego limitu transferu danych. Interfejsy API [Windows. Networking. Connectivity](/uwp/api/windows.networking.connectivity) umożliwiają reagowanie na zdarzenia [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) i [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) , które są podpisywany. Zobacz [Szybki Start: Zarządzanie naliczanymi ograniczeniami kosztów sieci](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
 
@@ -153,7 +153,7 @@ Aby uzyskać więcej informacji na temat zarządzania połączeniami sieciowymi,
 
 [Porady: wyzwalanie wstrzymania, wznowienia i zdarzeń w tle w aplikacjach platformy UWP](how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)
 
-## <a name="navigate-the-simulator-with-the-keyboard"></a><a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a>Nawigowanie po symulatorze przy użyciu klawiatury
+## <a name="navigate-the-simulator-with-the-keyboard"></a><a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Nawigowanie po symulatorze przy użyciu klawiatury
 
 Możesz nawigować na pasku narzędzi symulatora, naciskając **klawisze Ctrl + Alt + Strzałka w górę** , aby przełączyć fokus z okna symulatora na pasek narzędzi symulatora. Użyj **strzałki w górę** i **strzałki w dół** , aby przejść między przyciskami paska narzędzi.
 

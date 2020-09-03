@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 63404d3d81c44ac4b8308d949cdb87df419f2e04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662870"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Instrukcje: Tworzenie biblioteki projektanta działań
@@ -21,11 +21,11 @@ Niestandardowe projektanty działań umożliwiają tworzenie interfejsu użytkow
 
 ### <a name="to-create-an-activity-designer-library"></a>Aby utworzyć bibliotekę projektanta działań
 
-1. Rozpocznij [!INCLUDE[vs2010](../includes/vs2010-md.md)].
+1. Rozpocznij [!INCLUDE[vs2010](../includes/vs2010-md.md)] .
 
 2. W menu **plik** , wskaż **Nowy**, a następnie wybierz **projekt...** Aby otworzyć okno dialogowe **Nowy projekt** .
 
-3. W okienku **typy projektów** wybierz pozycję **przepływ pracy** z poziomu grupowania **wizualizacji C#**  lub **Visual Basic** w zależności od preferowanego języka.
+3. W okienku **typy projektów** wybierz pozycję **przepływ pracy** z grup **Visual C#** lub **Visual Basic** w zależności od preferowanego języka.
 
 4. W okienku **Szablony** wybierz pozycję **Biblioteka projektanta działań**.
 
@@ -36,14 +36,14 @@ Niestandardowe projektanty działań umożliwiają tworzenie interfejsu użytkow
 7. W polu **rozwiązanie** wpisz nazwę opisową rozwiązania, a następnie kliknij przycisk **OK**.
 
     > [!NOTE]
-    > Jeśli chcesz dodać aplikację konsoli przepływu pracy do istniejącego rozwiązania, Otwórz to rozwiązanie w [!INCLUDE[vs2010](../includes/vs2010-md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań**, a następnie wybierz polecenie **Dodaj**, a następnie **Nowy projekt...** Aby otworzyć okno dialogowe **Nowy projekt** . Postępuj zgodnie z powyższym opisem w tej procedurze.
+    > Jeśli chcesz dodać aplikację konsoli przepływu pracy do istniejącego rozwiązania, Otwórz to rozwiązanie w programie, kliknij [!INCLUDE[vs2010](../includes/vs2010-md.md)] prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań**i wybierz polecenie **Dodaj**, a następnie **Nowy projekt...** Aby otworzyć okno dialogowe **Nowy projekt** . Postępuj zgodnie z powyższym opisem w tej procedurze.
 
-8. Szablon projektu tworzy definicję projektanta działań w języku XAML i plik implementacji związany z kodem w kodzie źródłowym. Zostanie otwarty [!INCLUDE[wfd1](../includes/wfd1-md.md)] i zostanie wyświetlona Kanwa projektanta działań.
+8. Szablon projektu tworzy definicję projektanta działań w języku XAML i plik implementacji związany z kodem w kodzie źródłowym. [!INCLUDE[wfd1](../includes/wfd1-md.md)]Zostanie otwarta i zostanie wyświetlona Kanwa projektanta działań.
 
-9. Przeciągnij kontrolki [!INCLUDE[avalon1](../includes/avalon1-md.md)] z **przybornika** na powierzchnię projektu, aby użyć ich w niestandardowym projektancie działań.  Aby zapoznać się z przykładem sposobu implementacji niestandardowego projektanta działań, zobacz [How to: Create an Custom Activity Designer](https://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).
+9. Przeciągnij [!INCLUDE[avalon1](../includes/avalon1-md.md)] kontrolki z **przybornika** na powierzchnię projektu, aby użyć ich w niestandardowym projektancie działań.  Aby zapoznać się z przykładem sposobu implementacji niestandardowego projektanta działań, zobacz [How to: Create an Custom Activity Designer](https://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).
 
     > [!WARNING]
-    > Niestandardowe Projektanci działań mogą służyć do działań niestandardowych, a także dla domyślnych [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]activities.
+    > Niestandardowe Projektanci działań mogą służyć do działań niestandardowych, a także dla działań domyślnych [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] .
 
 ## <a name="see-also"></a>Zobacz też
  [Tworzenie projektu przepływu pracy](../workflow-designer/creating-a-workflow-project.md)

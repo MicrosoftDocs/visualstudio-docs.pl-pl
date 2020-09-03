@@ -21,14 +21,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 65734f5397bae8c35fb8e312041d0600b8fa84e9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254346"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatyzowanie programu Excel za pomocą obiektów rozszerzonych
-  Podczas opracowywania rozwiązań programu Excel w programie Visual Studio można używać *elementów hosta* i *kontrolek hosta*w swoich rozwiązaniach. Są to obiekty rozszerzające niektóre często używane obiekty w modelu obiektów programu Excel (czyli model obiektów, który jest udostępniany przez podstawowy zestaw międzyoperacyjny dla programu Excel), taki jak <xref:Microsoft.Office.Interop.Excel.Worksheet> obiekty i. <xref:Microsoft.Office.Interop.Excel.Range> Obiekty rozszerzone zachowują się jak obiekty programu Excel, na których się opierają, ale dodają do obiektów dodatkowe funkcje, takie jak nowe zdarzenia i możliwości powiązania danych.
+  Podczas opracowywania rozwiązań programu Excel w programie Visual Studio można używać *elementów hosta* i *kontrolek hosta*w swoich rozwiązaniach. Są to obiekty rozszerzające niektóre często używane obiekty w modelu obiektów programu Excel (czyli model obiektów, który jest udostępniany przez podstawowy zestaw międzyoperacyjny dla programu Excel), taki jak <xref:Microsoft.Office.Interop.Excel.Worksheet> obiekty i <xref:Microsoft.Office.Interop.Excel.Range> . Obiekty rozszerzone zachowują się jak obiekty programu Excel, na których się opierają, ale dodają do obiektów dodatkowe funkcje, takie jak nowe zdarzenia i możliwości powiązania danych.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -45,7 +45,7 @@ ms.locfileid: "71254346"
 
      Po dodaniu arkusza wykresu w czasie projektowania jako nowego arkusza w projekcie dostosowania Microsoft Office na poziomie dokumentu programu Excel program Visual Studio automatycznie tworzy <xref:Microsoft.Office.Tools.Excel.ChartSheet> element hosta.
 
-     Mimo że element hosta jest arkuszem w programie Excel, nie można dodać żadnych formantów do arkusza wykresu. <xref:Microsoft.Office.Tools.Excel.ChartSheet> Jeśli chcesz mieć inne kontrolki arkusza z wykresem, nie używaj arkusza wykresu. Zamiast tego można umieścić wykres jako osadzony obiekt w arkuszu przy użyciu <xref:Microsoft.Office.Tools.Excel.Chart> kontrolki hosta. Aby uzyskać więcej informacji, zobacz [kontrolka wykres](../vsto/chart-control.md).
+     Mimo że <xref:Microsoft.Office.Tools.Excel.ChartSheet> element hosta jest arkuszem w programie Excel, nie można dodać żadnych formantów do arkusza wykresu. Jeśli chcesz mieć inne kontrolki arkusza z wykresem, nie używaj arkusza wykresu. Zamiast tego można umieścić wykres jako osadzony obiekt w arkuszu przy użyciu <xref:Microsoft.Office.Tools.Excel.Chart> kontrolki hosta. Aby uzyskać więcej informacji, zobacz [kontrolka wykres](../vsto/chart-control.md).
 
 ## <a name="excel-host-controls"></a>kontrolki hosta programu Excel
  Istnieje kilka kontrolek hosta dla programu Excel, które ułatwiają tworzenie, organizowanie i automatyzowanie skoroszytów oraz arkuszy. Te kontrolki hosta zapewniają zdarzenia i możliwości powiązań danych, których odpowiedniki w natywnym modelu obiektów programu Excel nie są dostępne.
@@ -60,17 +60,17 @@ ms.locfileid: "71254346"
 
 - [XmlMappedRange — formant](../vsto/xmlmappedrange-control.md)
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Wypełnij kontrolki ListObject danymi](../vsto/how-to-fill-listobject-controls-with-data.md)
-- [Instrukcje: Dodawanie formantów wykresu do arkuszy](../vsto/how-to-add-chart-controls-to-worksheets.md)
+## <a name="see-also"></a>Zobacz też
+- [Instrukcje: wypełnianie kontrolek ListObject danymi](../vsto/how-to-fill-listobject-controls-with-data.md)
+- [Instrukcje: Dodawanie kontrolek wykresu do arkuszy](../vsto/how-to-add-chart-controls-to-worksheets.md)
 - [Instrukcje: Dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 - [Instrukcje: Dodawanie kontrolek NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
 - [Instrukcje: Dodawanie kontrolek XMLMappedRange do arkuszy](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
-- [Instrukcje: Zmień rozmiar kontrolek NamedRange](../vsto/how-to-resize-namedrange-controls.md)
-- [Instrukcje: Zmień rozmiar formantów ListObject](../vsto/how-to-resize-listobject-controls.md)
-- [Instrukcje: Sprawdź poprawność danych po dodaniu nowego wiersza do kontrolki ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)
+- [Instrukcje: zmiana rozmiaru kontrolek NamedRange](../vsto/how-to-resize-namedrange-controls.md)
+- [Instrukcje: Zmienianie rozmiaru formantów ListObject](../vsto/how-to-resize-listobject-controls.md)
+- [Instrukcje: sprawdzanie poprawności danych po dodaniu nowego wiersza do kontrolki ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)
 - [Instrukcje: Mapowanie kolumn ListObject na dane](../vsto/how-to-map-listobject-columns-to-data.md)
-- [Przewodnik: Program przed zdarzeniami kontrolki NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
+- [Przewodnik: program dla zdarzeń kontrolki NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
 - [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
 - [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6c5f019907495c3cad3fddef501455aedf345bb2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71253810"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Ochrona dokumentów w rozwiązaniach na poziomie dokumentu
@@ -40,22 +40,22 @@ ms.locfileid: "71253810"
 
  Jeśli jednak tworzysz projekt, który używa istniejącego dokumentu programu Word, który ma włączoną ochronę, dokument jest chroniony, gdy jest otwarty w projektancie. Nie można edytować chronionych części dokumentu, ale nadal można napisać kod w edytorze kodu w celu zautomatyzowania dokumentu. Nie można też skompilować projektu, jeśli włączono ochronę, gdy dokument jest otwarty w programie Visual Studio.
 
- Można wyłączyć ochronę, gdy dokument jest otwarty w projektancie, aby można było edytować dokument i skompilować projekt. Nie można wyłączyć ochrony kopii w Projektancie podczas debugowania; dokument otwarty podczas debugowania jest oddzielną kopią od samego otwarty w projektancie (kopia wyjściowa jest przechowywana w katalogu *\Bin* dla Visual Basic i katalogu *\bin\debug* dla C#).
+ Można wyłączyć ochronę, gdy dokument jest otwarty w projektancie, aby można było edytować dokument i skompilować projekt. Nie można wyłączyć ochrony kopii w Projektancie podczas debugowania; dokument otwarty podczas debugowania jest oddzielną kopią od samego otwarty w projektancie (kopia wyjściowa jest przechowywana w katalogu *\Bin* dla Visual Basic i katalogu *\Bin\debug* dla języka C#).
 
  Możesz włączyć ochronę kopii dokumentu, która jest otwierana w projektancie, zamykając projekt w programie Visual Studio, otwierając kopię dokumentu znajdującego się w katalogu projektu i włączając ochronę.
 
 ## <a name="enforce-word-document-protection-on-build"></a>Wymuś ochronę dokumentów programu Word podczas kompilacji
  Program Visual Studio uruchamia wymuszanie ochrony dokumentów programu Word i szablonów w procesie kompilacji, dzięki czemu ochrona jest włączona, gdy dokument zostanie otwarty na potrzeby debugowania. Dokument jest chroniony za pomocą pustego hasła.
 
- Ochrona jest włączana podczas kompilacji, więc jeśli w zdarzeniu dokumentu <xref:Microsoft.Office.Tools.Word.Document.Startup> występuje kod, który może powodować wyjątki lub zmieniać zachowanie aplikacji, ten kod może być poprawnie debugowany. Jeśli po otwarciu dokumentu zostanie włączona ochrona, kod inicjalizacji nie może być debugowany ani przetestowany.
+ Ochrona jest włączana podczas kompilacji, więc jeśli w zdarzeniu dokumentu występuje kod <xref:Microsoft.Office.Tools.Word.Document.Startup> , który może powodować wyjątki lub zmieniać zachowanie aplikacji, ten kod może być poprawnie debugowany. Jeśli po otwarciu dokumentu zostanie włączona ochrona, kod inicjalizacji nie może być debugowany ani przetestowany.
 
 ## <a name="setting-the-password"></a>Ustawianie hasła
  Program Visual Studio automatycznie włącza ochronę, ale domyślnie nie udostępnia hasła. Jeśli chcesz, aby ochrona dokumentów miała hasło, musisz ją dodać przed wdrożeniem rozwiązania. Dodanie hasła umożliwia autoryzowanym użytkownikom usuwanie ochrony dokumentu; bez hasła nie można łatwo usunąć ochrony. Aby uzyskać szczegółowe informacje na temat ustawiania hasła, zobacz Pomoc w określonej aplikacji pakietu Office.
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Programowe Włączanie ochrony dokumentów i części dokumentów](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)
+## <a name="see-also"></a>Zobacz też
+- [Instrukcje: programowe Włączanie ochrony dokumentów i części dokumentów](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)
 - [Przykłady i przewodniki dotyczące programowania pakietu Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Zarządzanie prawami do informacji i rozszerzenia kodu zarządzanego — Omówienie](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Ochrona hasłem w dokumentach pakietu Office](../vsto/password-protection-on-office-documents.md)
-- [Instrukcje: Zezwalaj na uruchamianie kodu w tle dokumentów z ograniczonymi uprawnieniami](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
+- [Instrukcje: Zezwalanie na uruchamianie kodu w tle dokumentów z ograniczonymi uprawnieniami](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4cf86dd39e010424b25916deec8cdebd23ee1c1b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592376"
 ---
 # <a name="xml-schema-designer-workspace-views"></a>Widoki obszarów roboczych projektanta schematu XML
@@ -47,4 +47,4 @@ Aby przełączyć widoki, użyj jednego z następujących elementów:
 
 - Znaki wodne na stronie widok początkowy lub znak wodny w widoku pusty model zawartości lub widok wykresu.
 
-- Klawisze skrótu: **ctrl**+**1** dla widoku Start, **Ctrl**+**2** dla widoku wykresu i **Ctrl**+**3** dla widoku modelu zawartości.
+- Klawisze skrótu: **Ctrl** + **1** dla widoku Start, **Ctrl** + **2** dla widoku wykresu i **Ctrl** + **3** dla widoku modelu zawartości.
