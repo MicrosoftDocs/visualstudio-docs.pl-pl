@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 743543e03806a842eabc2bbfc69011d63b1264d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660966"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>AutoRecover, środowisko, opcje — Okno dialogowe
@@ -34,9 +34,9 @@ Za pomocą tej strony okna dialogowego Opcje można określić, czy kopie zapaso
 > [!NOTE]
 > Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
- **Zapisuj informacje Autoodzyskiwania co \<n > minut** Użyj tej opcji, aby dostosować częstotliwość automatycznego zapisywania pliku w edytorze. W przypadku wcześniej zapisanych plików kopia pliku jest zapisywana w \\. ..\My Documents\Visual Studio \<*wersja*> \Backup \\ <*ProjectName*>. Jeśli plik jest nowy i nie został ręcznie zapisany, plik zostanie automatycznie zapisany przy użyciu losowo wygenerowanej nazwy pliku.
+ **Zapisuj informacje Autoodzyskiwania co \<n> ** minutę Użyj tej opcji, aby dostosować częstotliwość automatycznego zapisywania pliku w edytorze. W przypadku wcześniej zapisanych plików kopia pliku jest zapisywana w \\ plikach. ..\My Documents\Visual Studio \<*version*> \Backup \\ < *ProjectName*>. Jeśli plik jest nowy i nie został ręcznie zapisany, plik zostanie automatycznie zapisany przy użyciu losowo wygenerowanej nazwy pliku.
 
- **Zachowaj informacje automatycznego odzyskiwania dla \<n > dni** Użyj tej opcji, aby określić, jak długo program Visual Studio ma nadal tworzyć pliki do odzyskania.
+ **Zachowaj informacje Autoodzyskiwania dla \<n> dni** Użyj tej opcji, aby określić, jak długo program Visual Studio ma przechowywać pliki do odzyskania.
 
 ## <a name="see-also"></a>Zobacz też
- [Opcje, okno dialogowe](../../ide/reference/options-dialog-box-visual-studio.md)
+ [Opcje — okno dialogowe](../../ide/reference/options-dialog-box-visual-studio.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef809b646a0af58e46b8c68dc5a8cf7633692bcc
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72734819"
 ---
 # <a name="uninit"></a>UnInit
@@ -25,9 +25,9 @@ void UnInit();
 ```
 
 ## <a name="remarks"></a>Uwagi
- `UnInit` jest wywoływana automatycznie, gdy wystąpienie klasy `VsgDbg` jest niszczone. Jeśli wystąpienie `VsgDbg` nie było aktywnie rejestrować informacji graficznych, nie ma to żadnego efektu.
+ `UnInit` jest wywoływana automatycznie, gdy wystąpienie `VsgDbg` klasy zostanie zniszczone. Jeśli `VsgDbg` wystąpienie nie było aktywnie rejestrować informacji graficznych, nie ma to wpływu.
 
- Po wywołaniu `UnInit` na wystąpieniu klasy `VsgDbg` można utworzyć nowy plik dziennika grafiki, wywołując `Init` i finaljąc wywołując `UnInit`. Możesz powtórzyć tyle razy, ile chcesz użyć tego samego wystąpienia `VsgDbg`, aby utworzyć kilka niezależnych plików dziennika grafiki.
+ Po `UnInit` wywołaniu w wystąpieniu `VsgDbg` klasy nowy plik dziennika grafiki można utworzyć, wywołując `Init` i finaljąc wywołując metodę `UnInit` . Możesz powtórzyć tyle razy, ile chcesz używać tego samego `VsgDbg` wystąpienia do tworzenia kilku niezależnych plików dziennika grafiki.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Init](init.md)

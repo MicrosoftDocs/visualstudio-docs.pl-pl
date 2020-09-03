@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1d697313289bbf00234764cc04603b7bc256f174
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735464"
 ---
 # <a name="graphics-pipeline-stages"></a>Etapy potoku grafiki
@@ -63,14 +63,14 @@ Okno etapy potoku grafiki ułatwia zrozumienie, w jaki sposób poszczególne wyw
  W oknie etapy potoku, dane wyjściowe asemblera wejściowego są wizualizowane jako model szkieletowy. Aby przyjrzeć się bliżej wyniku, wybierz pozycję **asembler wejściowy** w oknie **etapy potoku grafiki** , aby wyświetlić złożone wierzchołki w pełnej 3D przy użyciu edytora modelu.
 
 > [!NOTE]
-> Jeśli semantyka `POSITION` nie występuje w danych wyjściowych asemblera wejściowego, nic nie zostanie wyświetlone na etapie **asemblera wejściowego** .
+> Jeśli `POSITION` semantyka nie występuje w danych wyjściowych asemblera wejściowego, nic nie zostanie wyświetlone na etapie **asemblera wejściowego** .
 
  Program do **cieniowania wierzchołków** Etap modułu cieniującego wierzchołków przetwarza wierzchołki, zazwyczaj wykonując operacje, takie jak przekształcanie, tworzenie karnacji i oświetlenie. Programy do cieniowania wierzchołków tworzą tę samą liczbę wierzchołków, które pobierają jako dane wejściowe.
 
  W oknie etapy potoku, dane wyjściowe programu do cieniowania wierzchołka są wizualizowane jako obraz szkieletu rastrowego. Aby przyjrzeć się bliżej wyniku, wybierz opcję program do **cieniowania wierzchołków** w oknach **etapy potoku grafiki** , aby wyświetlić przetworzone wierzchołki w edytorze obrazów.
 
 > [!NOTE]
-> Jeśli `POSITION` lub semantyka `SV_POSITION` nie występuje w danych wyjściowych programu do cieniowania wierzchołków, nic nie zostanie wyświetlone na etapie programu do **cieniowania wierzchołków** .
+> Jeśli `POSITION` `SV_POSITION` semantyka lub nie występuje w danych wyjściowych programu do cieniowania wierzchołków, nic nie jest wyświetlane na etapie **cieniowania wierzchołka** .
 
  Program do **cieniowania kadłuba** (tylko program Direct3D 11 i program Direct3D 12) proces cieniowania kadłuba przetwarza punkty kontrolne, które definiują powierzchnię o niskiej kolejności, taką jak linia, Trójkąt lub cztery. Ponieważ dane wyjściowe generują poprawkę geometryczną o wyższej kolejności i stałe poprawek, które są przekazywane do etapu mozaikowania stałej funkcji.
 
@@ -113,6 +113,6 @@ Okno etapy potoku grafiki ułatwia zrozumienie, w jaki sposób poszczególne wyw
 
  ![Podgląd wyników etapu programu do cieniowania wierzchołków](media/gfx_diag_vertex_shader_preview.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przewodnik: brak obiektów spowodowany cieniowaniem wierzchołków](walkthrough-missing-objects-due-to-vertex-shading.md)
 - [Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem](walkthrough-debugging-rendering-errors-due-to-shading.md)

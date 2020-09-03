@@ -1,5 +1,5 @@
 ---
-title: -DebugExe (devenv. exe) | Microsoft Docs
+title: -DebugExe (devenv.exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f472add6b821693d1d48397e878db19e707e2868
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660804"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
@@ -32,15 +32,15 @@ Devenv /debugexe ExecutableFile
 ```
 
 ## <a name="arguments"></a>Argumenty
- Wymagane `ExecutableFile`. Ścieżka i nazwa pliku. exe.
+ `ExecutableFile` Wymagane. Ścieżka i nazwa pliku. exe.
 
- Jeśli plik exe nie zostanie znaleziony lub nie istnieje, nie jest wyświetlane ostrzeżenie ani błąd, a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zaczyna się normalnie.
+ Jeśli plik exe nie zostanie znaleziony lub nie istnieje, ostrzeżenie lub błąd nie jest wyświetlany i [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] uruchamiany normalnie.
 
 ## <a name="remarks"></a>Uwagi
- Wszystkie ciągi po parametrze `ExecutableFile` są przekazane do tego pliku jako argumenty.
+ Wszystkie ciągi po `ExecutableFile` parametrze są przekazane do tego pliku jako argumenty.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład otwiera plik `MyApplication.exe` na potrzeby debugowania.
+ Poniższy przykład otwiera plik `MyApplication.exe` do debugowania.
 
 ```
 Devenv.exe /debugexe MyApplication.exe

@@ -20,24 +20,24 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3199b23f7ad1bb45fd509d2a9b5cd21da1a49971
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551544"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Włącz dostęp do języka VBA, aby utworzyć lub otworzyć Visual Studio Tools dla projektu systemu Microsoft Office
 
 Aby można było utworzyć lub otworzyć Visual Studio Tools dla projektu systemu Microsoft Office, należy jawnie włączyć dostęp do systemu projektu Visual Basic for Applications (VBA) w programie Microsoft Office.
 
- Projekty deweloperskie Microsoft Office wymagają dostępu do systemu projektu Visual Basic for Applications (VBA) w Microsoft Office Word i Microsoft Office Excel, nawet jeśli projekty nie używają Visual Basic for Applications. Obsługa kontrolek w czasie projektowania w ramach obu Visual Basic C# i projektów zależy od systemu projektu Visual Basic for Applications.
+ Projekty deweloperskie Microsoft Office wymagają dostępu do systemu projektu Visual Basic for Applications (VBA) w Microsoft Office Word i Microsoft Office Excel, nawet jeśli projekty nie używają Visual Basic for Applications. Obsługa kontrolek w czasie projektowania w projektach Visual Basic i C# zależy od systemu Visual Basic for Applications Project.
 
  Niektóre Microsoft Office wirusy makr podejmują próbę zautomatyzowania systemu Visual Basic for Applications projektu jako środek do propagowania siebie. Przez umożliwienie dostępu do systemu projektu Visual Basic for Applications, należy usunąć ochronę, która pomaga zapobiegać rozproszeniu wirusów makr. Jednak normalne zabezpieczenia makr pozostają na miejscu, dlatego poziom zabezpieczeń makr i lista zaufanych wydawców obsługiwanych przez aplikacje pakietu Office określają, czy dowolne makro jest uruchamiane na komputerze.
 
 > [!NOTE]
 > Dotyczy to tylko komputera deweloperskiego. Na komputerach użytkowników końcowych nie jest wymagana opcja uruchamiania rozwiązań pakietu Office.
 
- Należy pamiętać, że wyłączenie dostępu do samodzielnego systemu Visual Basic for Applications projektu nie chroni przed wirusami, a po prostu pomaga w zatrzymaniu niektórych wirusów z rozproszeniem do innych dokumentów, jeśli komputer kiedykolwiek zostanie zainfekowany przez makro komputer. Opcja jest domyślnie wyłączona jako dodaną warstwę ochrony dla komputera, ale włączenie jej nie sprawia, że komputer jest bardziej podatny na wirusy, jeśli są stosowane najlepsze rozwiązania w zakresie zabezpieczeń.
+ Należy pamiętać, że wyłączenie dostępu do samodzielnego systemu projektowego Visual Basic for Applications nie chroni przed wirusami, a po prostu pomaga zapobiec rozproszeniu niektórych wirusów do innych dokumentów, jeśli komputer zostanie zainfekowany wirusem makra. Opcja jest domyślnie wyłączona jako dodaną warstwę ochrony dla komputera, ale włączenie jej nie sprawia, że komputer jest bardziej podatny na wirusy, jeśli są stosowane najlepsze rozwiązania w zakresie zabezpieczeń.
 
  Najlepszą ochroną przed wirusami makr pakietu Office jest uruchamianie pakietu Office na wysokim lub bardzo wysokim poziomie zabezpieczeń, a jedynie ufają makrom ze zweryfikowanych, znanych źródeł i na bieżąco z poprawkami zabezpieczeń i skanerami wirusów.
 
@@ -51,7 +51,7 @@ Aby można było utworzyć lub otworzyć Visual Studio Tools dla projektu system
 
 1. Kliknij kartę **plik** .
 
-2. Kliknij przycisk **Opcje**.
+2. Kliknij pozycję **Opcje**.
 
 3. Kliknij pozycję **Centrum zaufania**, a następnie kliknij pozycję **Ustawienia Centrum zaufania**.
 
@@ -75,7 +75,7 @@ Aby można było utworzyć lub otworzyć Visual Studio Tools dla projektu system
 
 1. Kliknij kartę **plik** .
 
-2. Kliknij przycisk **Opcje**.
+2. Kliknij pozycję **Opcje**.
 
 3. Kliknij pozycję **Centrum zaufania**, a następnie kliknij pozycję **Ustawienia Centrum zaufania**.
 
@@ -109,7 +109,7 @@ Aby można było utworzyć lub otworzyć Visual Studio Tools dla projektu system
 
 7. Otwórz menu rozwijane obok **Visual Basic for Applications**, a następnie kliknij pozycję **Uruchom z mojego komputera**.
 
-8. Kliknij przycisk **Kontynuuj**.
+8. Kliknij pozycję **Kontynuuj**.
 
 9. Kliknij przycisk **Zamknij**.
 
@@ -125,5 +125,5 @@ Aby można było utworzyć lub otworzyć Visual Studio Tools dla projektu system
 
 5. Wybierz pozycję **Wykryj i napraw błędy w instalacji pakietu Office**, a następnie kliknij przycisk **Instaluj**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0842cab03ba92568b0b672e2b8d257af4b6aa490
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551880"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Architektura rozwiązań pakietu Office w programie Visual Studio
@@ -51,11 +51,11 @@ Wyjaśnia, jak właściwości dokumentu niestandardowego działają w dostosowan
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
-[Programowanie rozwiązań pakietu Office &#40;— Omówienie&#41;](../vsto/office-solutions-development-overview-vsto.md)
+[Omówienie programowania rozwiązań dla pakietu Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
 Zawiera wprowadzenie do korzystania z Microsoft Office jako platformy do tworzenia rozwiązań dla firm.
 
-[Wprowadzenie &#40;do programowania pakietu Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+[Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
 Zawiera łącza do informacji na temat konfigurowania komputera deweloperskiego do tworzenia rozwiązań pakietu Office, sposobu rozpoczęcia tworzenia rozwiązań oraz zmiany od wcześniejszych wersji narzędzi deweloperskich pakietu Office w programie Visual Studio.
 
@@ -63,6 +63,6 @@ Zawiera łącza do informacji na temat konfigurowania komputera deweloperskiego 
 
 Zawiera łącza do informacji na temat tworzenia rozwiązań pakietu Office.
 
-[Ogólne informacje &#40;na temat programowania pakietu Office w programie Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+[Ogólne informacje &#40;Office Development w programie Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
 
-Zawiera łącza do informacji dotyczących elementów interfejsu użytkownika w projektach pakietu Office, manifestach aplikacji i wdrożenia dla projektów pakietu Office oraz interfejsów API [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]w programie.
+Zawiera łącza do informacji dotyczących elementów interfejsu użytkownika w projektach pakietu Office, manifestach aplikacji i wdrożenia dla projektów pakietu Office oraz interfejsów API w programie [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .

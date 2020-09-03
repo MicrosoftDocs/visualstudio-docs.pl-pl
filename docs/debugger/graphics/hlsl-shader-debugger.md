@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 164c404f3bce6b8216092635e3489843039fb1eb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735299"
 ---
 # <a name="hlsl-shader-debugger"></a>Debuger programu do cieniowania HLSL
@@ -25,9 +25,9 @@ Debuger HLSL w analizator grafiki programu Visual Studio pomaga zrozumieć, w ja
  ![Debugowanie HLSL przy użyciu okna Czujka i stosu wywołań.](media/gfx_diag_demo_hlsl_debugger_orientation.png "gfx_diag_demo_hlsl_debugger_orientation")
 
 ## <a name="understanding-the-hlsl-debugger"></a>Opis debugera HLSL
- Debuger HLSL ułatwia lepsze poznanie problemów, które występują w kodzie modułu cieniującego. Debugowanie kodu HLSL w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przypomina Debugowanie kodu, który jest pisany w innych językach — na przykład C++ C#, lub Visual Basic. Można zbadać zawartość zmiennych, ustawić punkty przerwania, wykonywać kod krokowo i przechodzić przez stos wywołań, podobnie jak podczas debugowania innych języków.
+ Debuger HLSL ułatwia lepsze poznanie problemów, które występują w kodzie modułu cieniującego. Debugowanie kodu HLSL w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przypomina Debugowanie kodu, który jest pisany w innych językach — na przykład C++, C# lub Visual Basic. Można zbadać zawartość zmiennych, ustawić punkty przerwania, wykonywać kod krokowo i przechodzić przez stos wywołań, podobnie jak podczas debugowania innych języków.
 
- Jednak ponieważ procesory GPU osiągają wysoką wydajność dzięki uruchomieniu kodu programu do cieniowania na setkach wątków jednocześnie, debuger HLSL został zaprojektowany tak, aby współpracował z innymi narzędziami analizatora grafiki, aby przedstawić wszystkie te informacje w sposób, który ułatwia zrozumienie go. Analizator grafiki ponownie tworzy przechwycone ramki przy użyciu informacji, które zostały zapisane w dzienniku grafiki; debuger HLSL nie monitoruje wykonywania procesora GPU w czasie rzeczywistym, ponieważ uruchamia kod programu do cieniowania. Ponieważ dziennik graficzny zawiera wystarczające informacje do odtworzenia dowolnej części danych wyjściowych, a ponieważ analiza grafiki zawiera narzędzia, które mogą pomóc w określeniu dokładnego piksela i zdarzenia w przypadku wystąpienia błędu, debuger HLSL musi tylko symulować dokładne cieniowanie wątek, który Cię interesuje. Oznacza to, że działanie programu cieniującego może być symulowane w procesorze CPU, gdzie działanie jego wewnętrznych mechanizmów jest w pełni widoczne. Dzięki temu debugger HLSL otrzymuje debugowanie podobne do procesora.
+ Ponieważ jednak procesory GPU osiągają wysoką wydajność przez uruchamianie kodu programu do cieniowania na setkach wątków jednocześnie, debuger HLSL został zaprojektowany tak, aby współpracował z innymi narzędziami analizatora grafiki, aby przedstawić wszystkie te informacje w sposób, który ułatwia ich zrozumienie. Analizator grafiki ponownie tworzy przechwycone ramki przy użyciu informacji, które zostały zapisane w dzienniku grafiki; debuger HLSL nie monitoruje wykonywania procesora GPU w czasie rzeczywistym, ponieważ uruchamia kod programu do cieniowania. Ponieważ dziennik grafiki zawiera wystarczające informacje, aby odtworzyć każdą część danych wyjściowych, a ponieważ analiza grafiki zawiera narzędzia, które mogą pomóc w określeniu dokładnego piksela i zdarzenia w przypadku wystąpienia błędu, debuger HLSL musi tylko symulować dokładnie odpowiedni wątek programu do cieniowania. Oznacza to, że działanie programu cieniującego może być symulowane w procesorze CPU, gdzie działanie jego wewnętrznych mechanizmów jest w pełni widoczne. Dzięki temu debugger HLSL otrzymuje debugowanie podobne do procesora.
 
  Jednak debuger języka HLSL jest obecnie ograniczony pod następującymi względami:
 
@@ -72,7 +72,7 @@ Debuger HLSL w analizator grafiki programu Visual Studio pomaga zrozumieć, w ja
 
    Aby zapoznać się z przykładami dotyczącymi sposobu używania debugera HLSL do debugowania błędów programu do cieniowania, zobacz [przykłady](graphics-diagnostics-examples.md) lub instruktaże powiązane z w sekcji Zobacz też.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przewodnik: brak obiektów spowodowany cieniowaniem wierzchołków](walkthrough-missing-objects-due-to-vertex-shading.md)
 - [Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem](walkthrough-debugging-rendering-errors-due-to-shading.md)
 - [Przewodnik: używanie diagnostyki grafiki do debugowania cieniowania obliczenia](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

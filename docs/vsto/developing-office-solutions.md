@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8ede09f18808eda22c747ac28e3c279fc43266bc
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551577"
 ---
 # <a name="develop-office-solutions"></a>Opracowywanie rozwiązań pakietu Office
@@ -32,7 +32,7 @@ ms.locfileid: "69551577"
  Model obiektów pakietu Office uwidacznia różne obiekty, dla których można programować. Za każdym razem, gdy program jest wdrażany za pomocą kodu zarządzanego, napisać kod, który używa typów w podstawowych zestawach międzyoperacyjnych pakietu Office. W rozwiązaniach tworzonych przy użyciu szablonów projektu pakietu Office w programie Visual Studio można napisać kod bezpośrednio na wygenerowane klasy w projekcie. Aby uzyskać więcej informacji, zobacz [pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).
 
 ## <a name="program-different-types-of-office-solutions"></a>Programowanie różnych typów rozwiązań pakietu Office
- Typ tworzonego rozwiązania określa funkcje, których można użyć w projekcie. Na przykład można dodać kontrolki Windows Forms i rozszerzone formanty pakietu Office (nazwane *kontrolki hosta*) do dostosowania na poziomie dokumentu, przeciągając elementy z przybornika w programie Visual Studio w czasie projektowania. Jeśli jednak tworzysz dodatek narzędzi VSTO, możesz dodać tylko te rodzaje kontrolek do dokumentów w czasie wykonywania, pisząc kod.
+ Typ tworzonego rozwiązania określa funkcje, których można użyć w projekcie. Na przykład można dodać kontrolki Windows Forms i rozszerzone formanty pakietu Office (nazwane *kontrolki hosta*) do dostosowania na poziomie dokumentu, przeciągając elementy z **przybornika** w programie Visual Studio w czasie projektowania. Jeśli jednak tworzysz dodatek narzędzi VSTO, możesz dodać tylko te rodzaje kontrolek do dokumentów w czasie wykonywania, pisząc kod.
 
  Więcej informacji o funkcjach specyficznych dla różnych typów rozwiązań znajduje się w następujących tematach:
 
@@ -44,7 +44,7 @@ ms.locfileid: "69551577"
 
   Informacje w tle ułatwiające zaplanowanie rozwiązań i procedur związanych z pakietem Office w celu ułatwienia tworzenia projektów można znaleźć w temacie [projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md).
 
-## <a name="related-topics"></a>Tematy pokrewne
+## <a name="related-topics"></a>Powiązane tematy
 
 |Tytuł|Opis|
 |-----------|-----------------|
@@ -58,14 +58,14 @@ ms.locfileid: "69551577"
 |[Obsługa wątkowości w pakiecie Office](../vsto/threading-support-in-office.md)|Zawiera omówienie pracy z wieloma wątkami w rozwiązaniach pakietu Office.|
 |[Ułatwienia dostępu w projektach pakietu Office](../vsto/accessibility-in-office-projects.md)|Zawiera opis funkcji ułatwień dostępu dostępnych w rozwiązaniach pakietu Office.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Tworzenie i modyfikowanie właściwości dokumentu niestandardowego](../vsto/how-to-create-and-modify-custom-document-properties.md)
-- [Instrukcje: Odczytywanie i zapisywanie właściwości dokumentu](../vsto/how-to-read-from-and-write-to-document-properties.md)
-- [Instrukcje: Docelowa wersja wielojęzycznego interfejsu użytkownika pakietu Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)
+- [Instrukcje: odczytywanie i zapisywanie właściwości dokumentu](../vsto/how-to-read-from-and-write-to-document-properties.md)
+- [Instrukcje: kierowanie wielojęzycznego interfejsu użytkownika pakietu Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)
 - [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
 - [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
 - [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
 - [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 - [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla projektu](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
 - [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)
-- [Przewodnik: Utwórz swoje pierwsze dostosowanie na poziomie dokumentu dla programu Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+- [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)

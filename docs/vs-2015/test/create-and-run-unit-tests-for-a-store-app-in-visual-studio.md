@@ -12,16 +12,16 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a7efb5fe4484fdd0ce7d2fcb0a1988e9b089509e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660625"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Tworzenie i uruchamianie testów jednostkowych dla aplikacji ze sklepu w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Narzędzia testów jednostkowych w programie Visual Studio 2012 Express for Windows 8 zostały zaprojektowane z myślą o wspieraniu deweloperów i zespołów, które obejmują testy jednostkowe w ramach praktyk rozwojowych oprogramowania. Testy jednostkowe umożliwiają deweloperom i testerom wydajny, obsługiwany sposób wyszukiwania błędów logicznych w metodach klas w wizualizacji C#, Visual Basic i Visual. C++
+Narzędzia testów jednostkowych w programie Visual Studio 2012 Express for Windows 8 zostały zaprojektowane z myślą o wspieraniu deweloperów i zespołów, które obejmują testy jednostkowe w ramach praktyk rozwojowych oprogramowania. Testy jednostkowe umożliwiają deweloperom i testerom wydajny, obsługiwany sposób wyszukiwania błędów logicznych w metodach klas w Visual C#, Visual Basic i Visual C++ projektach.
 
 > [!NOTE]
 > W tematach w tej sekcji opisano funkcje programu Visual Studio 2012 Express for Windows 8. Visual Studio Ultimate, VS Premium i VS Professional oferują dodatkowe funkcje do testowania jednostkowego.

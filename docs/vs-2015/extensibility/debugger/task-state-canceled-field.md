@@ -1,5 +1,5 @@
 ---
-title: Pole TASK_STATE_CANCELED | Dokumentacja firmy Microsoft
+title: TASK_STATE_CANCELED pole | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 54e0b95084bd685d5bc4b025f777c82b0ab1381f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162236"
 ---
-# <a name="taskstatecanceled-field"></a>TASK_STATE_CANCELED, pole
+# <a name="task_state_canceled-field"></a>TASK_STATE_CANCELED, pole
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Zadanie zostało anulowane przed osiągnięciem zacznie działać lub potwierdzone jej anulowania i ukończone bez wyjątku.  
+Zadanie zostało anulowane przed osiągnięciem stanu uruchomienia lub potwierdzenie jego anulowania i zakończyło się bez wyjątku.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Zestaw:** mscorlib (w mscorlib.dll)  
   
- Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,7 +35,7 @@ Zadanie zostało anulowane przed osiągnięciem zacznie działać lub potwierdzo
 ```  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) pole zawiera wartość ta <xref:System.Threading.Tasks.Task.Status%2A> właściwość zwraca <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
+ Jeśli pole [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) zawiera tę wartość, <xref:System.Threading.Tasks.Task.Status%2A> Właściwość zwraca <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Task, klasa](../../extensibility/debugger/task-class-internal-members.md)

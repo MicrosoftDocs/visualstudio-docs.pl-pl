@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2c08967d333fc23dfed9089936cbef86889b2145
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661259"
 ---
 # <a name="go-to-line"></a>Przejdź do wiersza
@@ -26,7 +26,7 @@ ms.locfileid: "72661259"
 
 To okno dialogowe umożliwia przejście do określonego wiersza w aktywnym dokumencie. Aby uzyskać dostęp do tego okna dialogowego, Otwórz dokument do edycji, a następnie wybierz polecenie **Przejdź do** w menu **Edycja** .
 
- Numer wiersza (1-`n`) umożliwia wprowadzenie numeru wiersza w aktywnym dokumencie, do którego chcesz przenieść. Wprowadzona liczba musi zawierać się w przedziale od 1 do `n`, liczbę wierszy w bieżącym dokumencie.
+ Numer wiersza (1- `n` ) umożliwia wprowadzenie numeru wiersza w aktywnym dokumencie, do którego chcesz przenieść. Wprowadzona liczba musi należeć do przedziału od 1 do `n` , czyli liczby wierszy w bieżącym dokumencie.
 
 ## <a name="see-also"></a>Zobacz też
  [Ustawianie zakładek w kodzie](../../ide/setting-bookmarks-in-code.md) [Znajdowanie i zastępowanie tekstu](../../ide/finding-and-replacing-text.md) [pisanie kodu](../../ide/writing-code-in-the-code-and-text-editor.md)

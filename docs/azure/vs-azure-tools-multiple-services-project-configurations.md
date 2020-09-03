@@ -10,18 +10,18 @@ ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 8c9f65291d43a55ee75840591698c26fdde6e967
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280547"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurowanie projektu platformy Azure w programie Visual Studio w celu używania wielu konfiguracji usługi
 
 Projekt usługi w chmurze platformy Azure w programie Visual Studio zawiera trzy pliki konfiguracji: `ServiceDefinition.csdef` , `ServiceConfiguration.Local.cscfg` i `ServiceConfiguration.Cloud.cscfg` :
 
-- `ServiceDefinition.csdef`Program został wdrożony na platformie Azure, aby opisać wymagania usługi w chmurze i jej ról oraz zapewnić ustawienia, które mają zastosowanie do wszystkich wystąpień. Ustawienia można odczytać w czasie wykonywania za pomocą interfejsu API środowiska uruchomieniowego hostingu usług platformy Azure. Ten plik można zaktualizować na platformie Azure tylko wtedy, gdy usługa w chmurze jest zatrzymana.
-- `ServiceConfiguration.Local.cscfg`i `ServiceConfiguration.Cloud.cscfg` podaj wartości ustawień w pliku definicji i określ liczbę wystąpień do uruchomienia dla każdej roli. Plik "Local" zawiera wartości używane w debugowaniu lokalnym; plik "Cloud" został wdrożony na platformie Azure jako `ServiceConfiguration.cscfg` i zawiera ustawienia dla środowiska serwera. Ten plik można zaktualizować, gdy usługa w chmurze jest uruchomiona na platformie Azure.
+- `ServiceDefinition.csdef` Program został wdrożony na platformie Azure, aby opisać wymagania usługi w chmurze i jej ról oraz zapewnić ustawienia, które mają zastosowanie do wszystkich wystąpień. Ustawienia można odczytać w czasie wykonywania za pomocą interfejsu API środowiska uruchomieniowego hostingu usług platformy Azure. Ten plik można zaktualizować na platformie Azure tylko wtedy, gdy usługa w chmurze jest zatrzymana.
+- `ServiceConfiguration.Local.cscfg` i `ServiceConfiguration.Cloud.cscfg` podaj wartości ustawień w pliku definicji i określ liczbę wystąpień do uruchomienia dla każdej roli. Plik "Local" zawiera wartości używane w debugowaniu lokalnym; plik "Cloud" został wdrożony na platformie Azure jako `ServiceConfiguration.cscfg` i zawiera ustawienia dla środowiska serwera. Ten plik można zaktualizować, gdy usługa w chmurze jest uruchomiona na platformie Azure.
 
 Ustawienia konfiguracji są zarządzane i modyfikowane w programie Visual Studio przy użyciu stron właściwości dla odpowiedniej roli (kliknij prawym przyciskiem myszy rolę i wybierz pozycję **Właściwości**lub kliknij dwukrotnie rolę). Zmiany mogą być ograniczone do zakresu konfiguracji wybranej na liście rozwijanej **Konfiguracja usługi** . Właściwości ról Sieć Web i proces roboczy są podobne, z wyjątkiem przypadków opisanych w poniższych sekcjach.
 

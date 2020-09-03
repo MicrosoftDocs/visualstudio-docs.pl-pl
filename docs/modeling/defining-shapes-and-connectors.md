@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd95c467f0cfcc997fe419abacb1811e02b468b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589672"
 ---
 # <a name="define-shapes-and-connectors"></a>Definiowanie kształtów i łączników
 
 Istnieje kilka podstawowych typów kształtów, których można użyć do wyświetlania informacji na diagramie w języku specyficznym dla domeny (DSL).
 
-## <a name="shapeTypes"></a>Podstawowe typy kształtów i łączników
+## <a name="basic-types-of-shapes-and-connectors"></a><a name="shapeTypes"></a> Podstawowe typy kształtów i łączników
 
 Diagram DSL przedstawia kolekcję *kształtów* połączonych przez linie lub *Łączniki*. Zwykle, ale nie zawsze:
 

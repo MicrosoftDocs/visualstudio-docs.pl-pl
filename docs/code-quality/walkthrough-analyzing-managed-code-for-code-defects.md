@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ab1e0b890d6241742770ed38ff61fc1c2c0ed2f4
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72535702"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Wskazówki: aby znaleźć wady kodu, użyj statycznej analizy kodu
@@ -93,25 +93,25 @@ Ten artykuł przeprowadzi Cię przez proces korzystania z starszej analizy w cel
 
 1. Poniższe porady umożliwiają poprawienie ostrzeżeń:
 
-   [CA1014: Oznacz zestawy za pomocą CLSCompliantAttribute](../code-quality/ca1014.md): dodaj kod `[assembly: CLSCompliant(true)]` na końcu pliku AssemblyInfo.cs.
+   [CA1014: Oznacz zestawy za pomocą CLSCompliantAttribute](../code-quality/ca1014.md): Dodaj kod `[assembly: CLSCompliant(true)]` na końcu pliku AssemblyInfo.cs.
 
-   [CA1032: Zaimplementuj standardowe konstruktory wyjątków](../code-quality/ca1032.md): dodaj Konstruktor `public demo (String s) : base(s) { }` do klasy `demo`.
+   [CA1032: Zaimplementuj standardowe konstruktory wyjątków](../code-quality/ca1032.md): Dodaj Konstruktor `public demo (String s) : base(s) { }` do klasy `demo` .
 
-   [CA1032: Zaimplementuj standardowe konstruktory wyjątków](../code-quality/ca1032.md): dodaj Konstruktor `public demo (String s, Exception e) : base(s, e) { }` do klasy `demo`.
+   [CA1032: Zaimplementuj standardowe konstruktory wyjątków](../code-quality/ca1032.md): Dodaj Konstruktor `public demo (String s, Exception e) : base(s, e) { }` do klasy `demo` .
 
-   [CA1032: Zaimplementuj standardowe konstruktory wyjątków](../code-quality/ca1032.md): dodaj Konstruktor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` do demonstracyjnej klasy. Należy również dodać instrukcję `using` dla <xref:System.Runtime.Serialization?displayProperty=fullName>.
+   [CA1032: Zaimplementuj standardowe konstruktory wyjątków](../code-quality/ca1032.md): Dodaj Konstruktor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` do demonstracyjnej klasy. Należy również dodać `using` instrukcję dla <xref:System.Runtime.Serialization?displayProperty=fullName> .
 
-   [CA1032: Zaimplementuj standardowe konstruktory wyjątków](../code-quality/ca1032.md): dodaj Konstruktor `public demo () : base() { }` do klasy `demo`.
+   [CA1032: Zaimplementuj standardowe konstruktory wyjątków](../code-quality/ca1032.md): Dodaj Konstruktor `public demo () : base() { }` do klasy `demo` .
 
-   [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709.md): Zmień wielkość liter w przestrzeni nazw `testCode` na `TestCode`.
+   [CA1709: Identyfikatory powinny mieć poprawną wielkość liter](../code-quality/ca1709.md): Zmień wielkość liter w przestrzeni nazw `testCode` na `TestCode` .
 
-   [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709.md): Zmień nazwę elementu członkowskiego na `Demo`.
+   [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709.md): Zmień nazwę elementu członkowskiego na `Demo` .
 
-   [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709.md): Zmień nazwę elementu członkowskiego na `Item`.
+   [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709.md): Zmień nazwę elementu członkowskiego na `Item` .
 
-   [CA1710: Identyfikatory powinny mieć poprawny sufiks](../code-quality/ca1710.md): Zmień nazwę klasy i jej konstruktorów na `DemoException`.
+   [CA1710: Identyfikatory powinny mieć poprawny sufiks](../code-quality/ca1710.md): Zmień nazwę klasy i jej konstruktorów na `DemoException` .
 
-   [CA2237: Oznacz typy ISerializable z SerializableAttribute](../code-quality/ca2237.md): dodaj atrybut `[Serializable ()]` do klasy `demo`.
+   [CA2237: Oznacz typy ISerializable z SerializableAttribute](../code-quality/ca2237.md): Dodaj `[Serializable ()]` atrybut do klasy `demo` .
 
    [CA2210: zestawy powinny mieć prawidłowe silne nazwy](../code-quality/ca2210.md): Podpisz "CodeAnalysisManagedDemo" kluczem o silnej nazwie:
 
@@ -123,7 +123,7 @@ Ten artykuł przeprowadzi Cię przez proces korzystania z starszej analizy w cel
 
    1. Zaznacz pole wyboru **podpisz zestaw** .
 
-   1. Z listy **Wybierz plik klucza nazwy ciągu** wybierz pozycję **\<New >** .
+   1. Z listy **Wybierz plik klucza nazwy ciągu** wybierz opcję **\<New>** .
 
       Zostanie wyświetlone okno dialogowe **Tworzenie klucza silnej nazwy** .
 
@@ -164,12 +164,12 @@ Ten artykuł przeprowadzi Cię przez proces korzystania z starszej analizy w cel
 
     1. Wybierz ostrzeżenie w **Lista błędów**.
 
-    1. W menu rozwijanym prawym przyciskiem myszy (menu kontekstowe) wybierz opcję **pomijaj** > **w pliku pomijania**.
+    1. W menu rozwijanym prawym przyciskiem myszy (menu kontekstowe) wybierz opcję **Pomijaj**  >  **w pliku pomijania**.
 
 1. Ponownie skompiluj projekt.
 
      Projekt kompiluje się bez żadnych ostrzeżeń lub błędów.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Analiza kodu zarządzanego](../code-quality/code-analysis-for-managed-code-overview.md)

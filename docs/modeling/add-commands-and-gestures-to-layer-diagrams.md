@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531394"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Dodawanie poleceń i gestów do diagramów zależności
@@ -87,7 +87,7 @@ Jeśli chcesz utworzyć jeden VSIX zawierający polecenia, moduły sprawdzania w
 
 5. Wróć do projektu obsługi polecenia lub gestu i Dodaj następujące odwołania do projektu:
 
-   |**Tematy pomocy**|**Co można zrobić**|
+   |**Odwołanie**|**Co można zrobić**|
    |-|-|
    |Program Files\Microsoft Visual Studio [wersja] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Tworzenie i Edytowanie warstw|
    |Microsoft. VisualStudio. UML. Interfaces|Tworzenie i Edytowanie warstw|
@@ -108,7 +108,7 @@ Jeśli chcesz utworzyć jeden VSIX zawierający polecenia, moduły sprawdzania w
 
 8. Aby zainstalować VSIX w głównym wystąpieniu programu Visual Studio lub na innym komputerze, Znajdź plik **. vsix** w katalogu **bin** projektu VSIX. Skopiuj go do komputera, na którym chcesz zainstalować VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze plików.
 
-## <a name="defining-a-menu-command"></a><a name="command"></a>Definiowanie polecenia menu
+## <a name="defining-a-menu-command"></a><a name="command"></a> Definiowanie polecenia menu
 
 Można dodać więcej definicji poleceń menu do istniejącego gestu lub projektu polecenia. Każde polecenie jest zdefiniowane przez klasę, która ma następujące cechy:
 
@@ -124,11 +124,11 @@ Można dodać więcej definicji poleceń menu do istniejącego gestu lub projekt
 
 - Metody, które implementują `ICommandExtension` są następujące:
 
-  - `string Text {get;}`— Etykieta, która pojawia się w menu.
+  - `string Text {get;}` — Etykieta, która pojawia się w menu.
 
-  - `void QueryStatus(IMenuCommand command)`-wywoływana, gdy użytkownik kliknie prawym przyciskiem myszy diagram i określi, czy polecenie powinno być widoczne i włączone dla bieżącego zaznaczenia użytkownika.
+  - `void QueryStatus(IMenuCommand command)` -wywoływana, gdy użytkownik kliknie prawym przyciskiem myszy diagram i określi, czy polecenie powinno być widoczne i włączone dla bieżącego zaznaczenia użytkownika.
 
-  - `void Execute(IMenuCommand command)`-wywoływana, gdy użytkownik wybierze polecenie.
+  - `void Execute(IMenuCommand command)` -wywoływana, gdy użytkownik wybierze polecenie.
 
 - Aby określić bieżące zaznaczenie, można zaimportować `IDiagramContext` :
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-## <a name="defining-a-gesture-handler"></a><a name="gesture"></a>Definiowanie procedury obsługi gestu
+## <a name="defining-a-gesture-handler"></a><a name="gesture"></a> Definiowanie procedury obsługi gestu
 
 Procedura obsługi gestu reaguje, gdy użytkownik przeciągnie elementy na diagram zależności i gdy użytkownik kliknie dwukrotnie dowolne miejsce na diagramie.
 
@@ -246,7 +246,7 @@ Zwróć uwagę na następujące kwestie dotyczące programów obsługi gestu:
 
      **OnDragDrop** — wywoływana, gdy użytkownik porzuca element na diagramie.
 
-- Pierwszym argumentem każdej metody jest `IShape` , z którego można uzyskać element warstwy. Przykład:
+- Pierwszym argumentem każdej metody jest `IShape` , z którego można uzyskać element warstwy. Na przykład:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -261,6 +261,6 @@ Zwróć uwagę na następujące kwestie dotyczące programów obsługi gestu:
 
 - Procedury obsługi dla niektórych typów przeciąganego elementu są już zdefiniowane. Na przykład użytkownik może przeciągnąć elementy z Eksplorator rozwiązań na diagram zależności. Nie można zdefiniować procedury obsługi przeciągania dla tego typu elementu. W takich przypadkach `DragDrop` metody nie będą wywoływane.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dodawanie niestandardowej walidacji architektury do diagramów zależności](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

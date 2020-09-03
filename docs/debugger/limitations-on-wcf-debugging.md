@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c70195cdc0a6a03395744c63f556ce8c2970aa30
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731510"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Ograniczenia debugowania WCF
@@ -43,7 +43,7 @@ Istnieją trzy sposoby rozpoczęcia debugowania usługi WCF:
 
 - Jeśli serwer jest asynchroniczny, nie można wyświetlić pełnego stosu wywołań podczas wykonywania kodu w ramach usługi.
 
-- Debugowanie musi być włączone przy użyciu następującego kodu w pliku App. config lub Web. config:
+- Debugowanie musi być włączone przy użyciu następującego kodu w pliku app.config lub Web.config:
 
     ```xml
     <system.web>
@@ -59,13 +59,13 @@ Istnieją trzy sposoby rozpoczęcia debugowania usługi WCF:
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>Ograniczenia dotyczące automatycznego dołączania do usługi
  Automatyczne dołączanie do usługi ma następujące ograniczenia:
 
-- Usługa musi być częścią debugowanego rozwiązania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+- Usługa musi być częścią [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugowanego rozwiązania.
 
 - Usługa musi być hostowana. Może być częścią projektu witryny sieci Web (systemu plików i HTTP), projektu aplikacji sieci Web (systemu plików i HTTP) lub projektu biblioteki usług WCF. Projekty biblioteki usług WCF mogą być bibliotekami usług lub bibliotekami usługi przepływu pracy.
 
 - Usługa musi być wywołana z poziomu klienta WCF.
 
-- Debugowanie musi być włączone przy użyciu następującego kodu w pliku App. config lub Web. config:
+- Debugowanie musi być włączone przy użyciu następującego kodu w pliku app.config lub Web.config:
 
   ```xml
   <system.web>
@@ -77,8 +77,8 @@ Istnieją trzy sposoby rozpoczęcia debugowania usługi WCF:
  *Samoobsługowa usługa* to usługa WCF, która nie działa w ramach usług IIS, hosta usługi WCF ani [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serwera deweloperskiego. Informacje o sposobie debugowania usługi samodzielnej można znaleźć w temacie [How to: Debug a The Inhosteding WCF Service](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
 
 ## <a name="self-hosting"></a>Samoobsługowe hosting
- Aby włączyć debugowanie aplikacji [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3,0 lub 3,5, przed zainstalowaniem [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] należy zainstalować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3,0 lub 3,5. Jeśli [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] jest zainstalowana przed [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3,0 lub 3,5, wystąpi błąd podczas próby debugowania aplikacji [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3,0 lub 3,5. Komunikat o błędzie to "nie można automatycznie wkroczyć do serwera". Aby rozwiązać ten problem, należy użyć **Panelu sterowania** systemu Windows  > **programów i funkcji** w celu naprawy [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] instalacji.
+ Aby włączyć debugowanie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji 3,0 lub 3,5, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] przed zainstalowaniem programu należy zainstalować program 3,0 lub 3,5 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] . Jeśli program [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] został zainstalowany przed [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3,0 lub 3,5, wystąpi błąd podczas próby debugowania [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji 3,0 lub 3,5. Komunikat o błędzie to "nie można automatycznie wkroczyć do serwera". Aby rozwiązać ten problem, należy użyć **Control Panel**  >  **narzędzi i funkcji** panelu sterowania systemu Windows w celu naprawy [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] instalacji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie usług WCF](../debugger/debugging-wcf-services.md)
 - [Instrukcje: debugowanie hostowanej samodzielnie usługi WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

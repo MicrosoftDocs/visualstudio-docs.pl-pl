@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ca095bf424420fb73ba8f369f7e41daea92fe33d
-ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88584505"
 ---
 # <a name="report-a-problem-states-and-faq"></a>Zgłoś problem: Stany i często zadawane pytania
@@ -98,7 +98,7 @@ Po zgłoszeniu problemu Stany wskazują, gdzie Twoje zgłoszenia są w cyklu ży
 
 - - -
 
-## <a name="faq"></a>Często zadawane pytania
+## <a name="faq"></a>Najczęściej zadawane pytania
 
 ### <a name="how-can-i-increase-the-chance-of-my-problem-getting-resolved-quickly"></a>Jak zwiększyć szansę szybkiego rozwiązywania problemu?
 

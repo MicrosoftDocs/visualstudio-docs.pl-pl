@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 32e309497a90622f0091d13f6619ac9527d4cfa9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661280"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Porady: generowanie metryk kodów
@@ -25,7 +25,7 @@ ms.locfileid: "72661280"
 
 Możesz zdecydować się na wygenerowanie wyników metryk kodu dla całego rozwiązania lub wybranego projektu.
 
- **Requirements**
+ **Wymagania**
 
  Visual Studio Enterprise
 
@@ -33,11 +33,11 @@ Możesz zdecydować się na wygenerowanie wyników metryk kodu dla całego rozwi
 
 - Kliknij pozycję **Analizuj menu**, a następnie kliknij pozycję **metryki CalculateCode dla rozwiązania**.
 
-     \- lub-
+     \- oraz
 
 - W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie, a następnie kliknij pozycję **metryki CalculateCode**.
 
-     \- lub-
+     \- oraz
 
 - W oknie **wyników metryk kodu** kliknij przycisk **CalculateCode metryki dla rozwiązania** .
 
@@ -49,7 +49,7 @@ Możesz zdecydować się na wygenerowanie wyników metryk kodu dla całego rozwi
 
 2. Kliknij pozycję **Analizuj**, a następnie kliknij pozycję **Generuj metryki kodu dla wybranych projektów**.
 
-    \- lub-
+    \- oraz
 
     Kliknij prawym przyciskiem myszy wybrane opcje, a następnie kliknij pozycję **metryki CalculateCode**.
 
@@ -60,4 +60,4 @@ Możesz zdecydować się na wygenerowanie wyników metryk kodu dla całego rozwi
 - Rozwiń drzewo w kolumnie **Hierarchia** .
 
 ## <a name="see-also"></a>Zobacz też
- [Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+ [Mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

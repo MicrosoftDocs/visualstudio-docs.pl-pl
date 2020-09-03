@@ -18,15 +18,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f9ab4ef453a921371ab7ef4f272cd0e38f4108a
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71322534"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Instrukcje „Stop” w języku Visual Basic
 
-Instrukcja Visual Basic Stop zawiera programistyczną alternatywę do ustawiania punktu przerwania. Gdy debuger napotka instrukcję stop, przerywa wykonywanie programu (przejdzie do trybu przerwania). C#Programiści mogą osiągać ten sam efekt przy użyciu wywołania <xref:System.Diagnostics.Debugger.Break%2A?displayProperty=nameWithType>do.
+Instrukcja Visual Basic Stop zawiera programistyczną alternatywę do ustawiania punktu przerwania. Gdy debuger napotka instrukcję stop, przerywa wykonywanie programu (przejdzie do trybu przerwania). Programiści języka C# mogą osiągać ten sam efekt przy użyciu wywołania do <xref:System.Diagnostics.Debugger.Break%2A?displayProperty=nameWithType> .
 
 Możesz ustawić lub usunąć instrukcję zatrzymania, edytując kod źródłowy. Nie można ustawiać lub czyścić instrukcji zatrzymania przy użyciu poleceń debugera, tak jak w przypadku punktu przerwania.
 
@@ -44,7 +44,7 @@ Po uruchomieniu aplikacji Visual Basic poza debugerem instrukcja Stop uruchamia 
 #End If
 ```
 
-Kolejną alternatywą jest użycie <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> instrukcji zamiast instrukcji Stop. <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> Instrukcja przerywa wykonywanie tylko wtedy, gdy określony warunek nie jest spełniony. <xref:System.Diagnostics.Debug.Assert%2A>instrukcje są usuwane automatycznie podczas tworzenia wersji wydania. Aby uzyskać więcej informacji, zobacz [potwierdzenia w kodzie zarządzanym](assertions-in-managed-code.md). Jeśli chcesz <xref:System.Diagnostics.Debug.Assert%2A> , aby instrukcja, która zawsze przerywa wykonywanie w wersji Debug, można wykonać następujące czynności:
+Kolejną alternatywą jest użycie <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> instrukcji zamiast instrukcji Stop. <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType>Instrukcja przerywa wykonywanie tylko wtedy, gdy określony warunek nie jest spełniony. <xref:System.Diagnostics.Debug.Assert%2A> instrukcje są usuwane automatycznie podczas tworzenia wersji wydania. Aby uzyskać więcej informacji, zobacz [potwierdzenia w kodzie zarządzanym](assertions-in-managed-code.md). Jeśli chcesz <xref:System.Diagnostics.Debug.Assert%2A> , aby instrukcja, która zawsze przerywa wykonywanie w wersji Debug, można wykonać następujące czynności:
 
 ```csharp
 Debug.Assert(false);
@@ -64,8 +64,8 @@ Debug.Fail("a clever output string goes here");
 Debug.Fail("a clever output string goes here")
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zabezpieczenia debugera](debugger-security.md)
 - [Typy projektów C#, F# i Visual Basic](debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
-- [Debugowanie kodu zarządzanego](debugging-managed-code.md)
+- [Debugowanie zarządzanego kodu](debugging-managed-code.md)

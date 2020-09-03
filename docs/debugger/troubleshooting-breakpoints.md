@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c11741cb9bb9a0b0c64b9452b54daa6ac226b92
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72535929"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Rozwiązywanie problemów z punktami przerwania w debugerze programu Visual Studio
@@ -25,7 +25,7 @@ W poniższych dwóch sekcjach opisano widoczne ostrzeżenia i sposoby ich napraw
 
 ### <a name="no-symbols-have-been-loaded-for-this-document"></a>"Nie załadowano żadnych symboli dla tego dokumentu"
 
-Przejdź do okna **moduły** (**debuguj**  > **modułów** > **systemu Windows** ) i sprawdź, czy moduł jest załadowany.
+Przejdź do okna **moduły** (**debugowanie**  >  modułów**systemu Windows**  >  **Modules**) i sprawdź, czy moduł jest załadowany.
 * Jeśli moduł jest załadowany, Sprawdź kolumnę **stan symbolu** , aby sprawdzić, czy symbole zostały załadowane.
   * Jeśli symbole nie są załadowane, sprawdź stan symbolu, aby zdiagnozować problem. Z menu kontekstowego modułu w oknie **moduły** kliknij pozycję **Informacje o załadowaniu symboli...** , aby zobaczyć, gdzie debuger ma próbować i załadować symbole. Aby uzyskać więcej informacji na temat ładowania symboli, zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
   * Jeśli symbole są załadowane, PDB nie zawiera informacji o plikach źródłowych. Oto kilka możliwych przyczyn:
@@ -35,9 +35,9 @@ Przejdź do okna **moduły** (**debuguj**  > **modułów** > **systemu Windows**
 
 * Jeśli moduł nie jest załadowany, sprawdź poniższe informacje, aby znaleźć przyczynę:
   * Upewnij się, że debugujesz właściwy proces.
-  * Sprawdź, czy debugujesz właściwy rodzaj kodu. Możesz dowiedzieć się, jakiego typu kodu debuger jest skonfigurowany do debugowania w oknie **procesy** (**debugowanie**  > **procesów** > **systemu Windows** ). Na przykład, jeśli próbujesz debugować C# kod, upewnij się, że debuger jest skonfigurowany dla odpowiedniego typu i wersji platformy .NET (na przykład zarządzane (v4 \*) i zarządzane (v2 \*/v3 \*) i zarządzane (CoreCLR)).
+  * Sprawdź, czy debugujesz właściwy rodzaj kodu. Możesz dowiedzieć się, jakiego typu kodu debuger jest skonfigurowany do debugowania w oknie **procesy** (**debugowanie**  >  **procesów systemu Windows**  >  **Processes**). Na przykład, jeśli próbujesz debugować kod w języku C#, upewnij się, że debuger jest skonfigurowany dla odpowiedniego typu i wersji platformy .NET (na przykład zarządzane (v4 \* ) i zarządzane (v2 \* /v3) i \* zarządzane (CoreCLR)).
 
-### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"... bieżący kod źródłowy różni się od wersji wbudowanej w... "
+### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… bieżący kod źródłowy różni się od wersji wbudowanej w... "
 
 Jeśli plik źródłowy został zmieniony i źródło nie pasuje już do kodu, który jest debugowany, debuger nie ustawi domyślnie punktów przerwania w kodzie. Zazwyczaj ten problem występuje, gdy plik źródłowy zostanie zmieniony, ale kod źródłowy nie został odbudowany. Aby rozwiązać ten problem, ponownie skompiluj projekt. Jeśli system kompilacji uzna, że projekt jest już aktualny, nawet jeśli nie jest, można wymusić ponowne kompilowanie systemu projektu przez zapisanie pliku źródłowego lub oczyszczenie danych wyjściowych kompilacji projektu przed kompilacją.
 
@@ -45,7 +45,7 @@ W rzadkich scenariuszach może być konieczne debugowanie bez konieczności uży
 
 Aby wyłączyć te kontrole bezpieczeństwa, wykonaj jedną z następujących czynności:
 * Aby zmodyfikować pojedynczy punkt przerwania, umieść kursor nad ikoną punktu przerwania w edytorze i kliknij ikonę Ustawienia (koła zębate). Okno wglądu jest dodawane do edytora. W górnej części okna wglądu istnieje hiperłącze wskazujące lokalizację punktu przerwania. Kliknij hiperlink, aby zezwolić na modyfikację lokalizacji punktu przerwania i sprawdź, czy **kod źródłowy różni się od oryginału**.
-* Aby zmodyfikować to ustawienie dla wszystkich punktów przerwania, przejdź do pozycji **debuguj**  > **Opcje i ustawienia**. Na stronie **debugowanie/ogólne** wyczyść pole wyboru **Wymagaj plików źródłowych, które dokładnie pasują do oryginalnej wersji** . Upewnij się, że ta opcja jest ponownie włączona po zakończeniu debugowania.
+* Aby zmodyfikować to ustawienie dla wszystkich punktów przerwania, przejdź do opcji **debugowania**  >  **i ustawienia**. Na stronie **debugowanie/ogólne** wyczyść pole wyboru **Wymagaj plików źródłowych, które dokładnie pasują do oryginalnej wersji** . Upewnij się, że ta opcja jest ponownie włączona po zakończeniu debugowania.
 
 ## <a name="the-breakpoint-was-successfully-set-no-warning-but-didnt-hit"></a>Punkt przerwania został pomyślnie ustawiony (bez ostrzeżenia), ale nie został trafiony
 
@@ -54,7 +54,7 @@ Ta sekcja zawiera informacje dotyczące rozwiązywania problemów, gdy w debuger
 Oto kilka rzeczy do sprawdzenia:
 1. Jeśli kod działa w więcej niż jednym procesie lub więcej niż jednym komputerze, należy się upewnić, że debugowano właściwy proces lub komputer.
 2. Upewnij się, że Twój kod jest uruchomiony. Aby sprawdzić, czy kod jest uruchomiony, Dodaj wywołanie do `System.Diagnostics.Debugger.Break` (C#/VB) lub `__debugbreak` (C++) do wiersza kodu, w którym próbujesz ustawić punkt przerwania, a następnie ponownie skompiluj projekt.
-3. W przypadku debugowania zoptymalizowanego kodu upewnij się, że funkcja, w której ustawiono punkt przerwania, nie jest wbudowana w inną funkcję. Test `Debugger.Break` opisany w poprzednim sprawdzaniu może obsłużyć również test tego problemu.
+3. W przypadku debugowania zoptymalizowanego kodu upewnij się, że funkcja, w której ustawiono punkt przerwania, nie jest wbudowana w inną funkcję. `Debugger.Break`Test opisany w poprzednim sprawdzaniu może obsłużyć również test tego problemu.
 
 ## <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Po usunięciu punktu przerwania nadal go klikam, gdy Rozpocznij debugowanie ponownie
 

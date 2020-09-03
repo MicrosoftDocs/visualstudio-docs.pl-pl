@@ -1,5 +1,5 @@
 ---
-title: Polecenie wdrożenia | Dokumentacja firmy Microsoft
+title: Implementacja polecenia | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,27 +11,27 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a208fabd3d205793763698cde0f6fe367c7bb8b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195061"
 ---
 # <a name="command-implementation"></a>Implementacja poleceń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Aby zaimplementować polecenia w VSPackage, należy wykonać następujące zadania:  
+Aby zaimplementować polecenie w pakietu VSPackage, należy wykonać następujące zadania:  
   
-1. W pliku vsct należy skonfigurować grupy poleceń, a następnie dodaj polecenie do niego. Aby uzyskać więcej informacji, zobacz [tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)"  
+1. W pliku. vsct Skonfiguruj grupę poleceń, a następnie Dodaj do niej polecenie. Aby uzyskać więcej informacji, zobacz [tabela poleceń programu Visual Studio (. Vsct) — pliki](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)  
   
-2. Polecenie należy zarejestrować w usłudze Visual Studio.  
+2. Zarejestruj polecenie w programie Visual Studio.  
   
-3. Implementowanie polecenia.  
+3. Zaimplementuj polecenie.  
   
-   W poniższych sekcjach opisano, jak się zarejestrować i wdrożyć poleceń.  
+   W poniższych sekcjach opisano sposób rejestrowania i implementowania poleceń.  
   
-## <a name="registering-commands-with-visual-studio"></a>Rejestrowanie poleceń przy użyciu programu Visual Studio  
- Jeśli polecenie jest wyświetlane w menu, należy dodać <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> pakietu VSPackage i używany jako wartość nazwy menu lub jego identyfikator zasobu.  
+## <a name="registering-commands-with-visual-studio"></a>Rejestrowanie poleceń w programie Visual Studio  
+ Jeśli polecenie ma być wyświetlane w menu, należy dodać <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> do pakietu VSPackage i użyć jako wartość jako nazwę menu lub jego identyfikator zasobu.  
   
 ```  
 [ProvideMenuResource("Menus.ctmenu", 1)]  
@@ -41,7 +41,7 @@ Aby zaimplementować polecenia w VSPackage, należy wykonać następujące zadan
   
 ```  
   
- Ponadto, musisz się zarejestrować, polecenie <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>. Tę usługę można uzyskać za pomocą <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> metodę, jeśli Twoja pakietu VSPackage jest tworzony na podstawie <xref:Microsoft.VisualStudio.Shell.Package>.  
+ Ponadto należy zarejestrować polecenie przy użyciu <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> . Tę usługę można uzyskać, korzystając <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> z metody, jeśli pakietu VSPackage pochodzi od <xref:Microsoft.VisualStudio.Shell.Package> .  
   
 ```  
 OleMenuCommandService mcs = GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
@@ -55,43 +55,43 @@ if ( null != mcs )
   
 ```  
   
-## <a name="implementing-commands"></a>Implementacja poleceń  
- Istnieje kilka sposobów implementowania poleceń. Polecenia menu statycznych, który jest zawsze wyświetlany taki sam sposób, jak i w tym samym menu polecenia, utworzyć polecenie przy użyciu <xref:System.ComponentModel.Design.MenuCommand> jak pokazano w przykładach w poprzedniej sekcji. Aby utworzyć statyczne polecenia, musisz podać program obsługi zdarzeń, który jest odpowiedzialny za wykonywanie polecenia. Ponieważ polecenie jest zawsze włączone i są widoczne, trzeba podać jego stan w programie Visual Studio. Jeśli chcesz zmienić stan polecenia, w zależności od określonych warunków, można utworzyć polecenie jako wystąpienie <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> klasy, a jej konstruktora zawiera program obsługi zdarzeń w celu wykonania tego polecenia i obsługi stan zapytania, aby powiadomić Visual Studio po zmianie stanu polecenia. Możesz również wdrożyć <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> jako część klasy polecenia lub, można zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Jeśli udostępniasz polecenia jako część projektu. Dwa interfejsy i <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> wszystkie klasy mają metody, które powiadamiają o Visual Studio o zmianie stanu polecenia i innych metod, które zapewniają wykonanie polecenia.  
+## <a name="implementing-commands"></a>Implementowanie poleceń  
+ Istnieje kilka sposobów implementacji poleceń. Jeśli chcesz użyć statycznego polecenia menu, które jest zawsze wyświetlane w taki sam sposób i w tym samym menu, Utwórz polecenie za pomocą, <xref:System.ComponentModel.Design.MenuCommand> jak pokazano w przykładach w poprzedniej sekcji. Aby utworzyć polecenie statyczne, należy podać procedurę obsługi zdarzeń, która jest odpowiedzialna za wykonywanie polecenia. Ponieważ polecenie jest zawsze włączone i widoczne, nie trzeba podawać jego statusu do programu Visual Studio. Jeśli chcesz zmienić stan polecenia w zależności od określonych warunków, można utworzyć polecenie jako wystąpienie <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> klasy i, w konstruktorze, podać procedurę obsługi zdarzeń do wykonania polecenia i procedurę obsługi stanu zapytania, aby powiadomić program Visual Studio o zmianie stanu polecenia. Można również zaimplementować <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> jako część klasy polecenia lub, można zaimplementować, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Jeśli podajesz polecenie jako część projektu. Dwa interfejsy i <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Klasa mają metody, które powiadamiają program Visual Studio o zmianie stanu polecenia i innych metodach, które zapewniają wykonanie polecenia.  
   
- Polecenie zostanie dodany do usługi polecenia, staje się jedną z łańcucha poleceń. Podczas implementowania stanu powiadomień i wykonywanie metod dla polecenia powinien zachować ostrożność, zapewnienie tylko tym konkretnym poleceniem i do przekazywania wszystkich innych przypadkach się do innych poleceń w łańcuchu. Jeśli nie zostanie ona przekazać polecenie (zwykle, zwracając <xref:Microsoft.VisualStudio.OLE.Interop.Constants>), program Visual Studio mogą przestać działać prawidłowo.  
+ Po dodaniu polecenia do usługi poleceń zostanie on jeden z łańcuchu poleceń. W przypadku zaimplementowania metody powiadamiania o stanie i wykonywania dla polecenia należy zachować ostrożność w przypadku tego konkretnego polecenia i przekazać wszystkie inne przypadki do innych poleceń w łańcuchu. Jeśli nie powiodło się przekazanie polecenia (zazwyczaj przez zwrócenie <xref:Microsoft.VisualStudio.OLE.Interop.Constants> ), program Visual Studio może przestać działać poprawnie.  
   
-## <a name="query-status-methods"></a>Metody stan zapytania  
- Przed zaimplementowaniem albo <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> metody, wyszukaj identyfikator GUID polecenia zestawu, do którego należy polecenia i identyfikator polecenia. Należy przestrzegać następujących wytycznych:  
+## <a name="query-status-methods"></a>Metody stanu zapytania  
+ Jeśli wdrażasz <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodę lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> metodę, Sprawdź identyfikator GUID zestawu poleceń, do którego należy to polecenie, i identyfikator polecenia. Postępuj zgodnie z następującymi wskazówkami:  
   
-- Jeśli nie zostanie rozpoznany identyfikator GUID, implementacja jednej z metod musi zwracać <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+- Jeśli identyfikator GUID nie zostanie rozpoznany, implementacja obu metod musi zwracać <xref:Microsoft.VisualStudio.OLE.Interop.Constants> .  
   
-- Jeśli implementacja jednej z metod przez identyfikator GUID, ale faktycznie nie została zaimplementowana polecenia, a następnie metoda powinna zwrócić <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+- Jeśli implementacja obu metod rozpoznaje identyfikator GUID, ale w rzeczywistości nie zaimplementowano polecenia, metoda powinna zwrócić <xref:Microsoft.VisualStudio.OLE.Interop.Constants> .  
   
-- Jeśli implementacja jednej z metod rozpoznaje zarówno identyfikatora GUID, a polecenie, a następnie metoda powinna być ustawiona na pole flag poleceń każdego polecenia (w `prgCmds` parametr) przy użyciu następujących flag:  
+- Jeśli implementacja obu metod rozpoznaje identyfikator GUID i polecenie, wówczas metoda powinna ustawić pole flags każdego polecenia (w `prgCmds` parametrze) przy użyciu następujących flag:  
   
   - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie jest obsługiwane.  
   
-  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie nie powinny być widoczne.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie nie powinno być widoczne.  
   
-  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie jest przełączona w i prawdopodobnie zostały zaewidencjonowane.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie jest włączone i pojawia się, że zostało zaznaczone.  
   
   - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie jest włączone.  
   
-  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie ma być ukryty, jeśli jest wyświetlana w menu skrótów.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie powinno być ukryte, jeśli pojawia się w menu skrótów.  
   
-  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie jest kontroler menu i nie jest włączona, ale jego menu rozwijane listy nie jest pusta i jest nadal dostępna. (Ta flaga jest rzadko używany).  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie jest kontrolerem menu i nie jest włączone, ale jego lista rozwijana nie jest pusta i nadal jest dostępna. (Ta flaga jest rzadko używana).  
   
-- Jeśli polecenie zostało zdefiniowane w pliku vsct z `TextChanges` Flaga, ustaw następujące parametry:  
+- Jeśli polecenie zostało zdefiniowane w pliku vsct z `TextChanges` flagą, ustaw następujące parametry:  
   
-  - Ustaw `rgwz` elementu `pCmdText` parametr nowego tekstu polecenia.  
+  - Ustaw `rgwz` element `pCmdText` parametru na nowy tekst polecenia.  
   
-  - Ustaw `cwActual` elementu `pCmdText` parametru, aby rozmiar ciągu polecenia.  
+  - Ustaw `cwActual` element `pCmdText` parametru na rozmiar ciągu polecenia.  
   
-  Upewnij się również, bieżącego kontekstu nie jest funkcją usługi automation, chyba że polecenie jest przeznaczony specjalnie do obsługi funkcji automatyzacji.  
+  Upewnij się również, że bieżący kontekst nie jest funkcją automatyzacji, chyba że polecenie jest przeznaczone wyłącznie do obsługi funkcji automatyzacji.  
   
-  Aby wskazać, że będziesz obsługiwał określonego polecenia, należy zwracać <xref:Microsoft.VisualStudio.VSConstants.S_OK>. W przypadku innych poleceń, zwracają <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+  Aby wskazać, że obsługujesz określone polecenie, zwraca <xref:Microsoft.VisualStudio.VSConstants.S_OK> . Dla wszystkich innych poleceń Zwróć <xref:Microsoft.VisualStudio.OLE.Interop.Constants> .  
   
-  W poniższym przykładzie metoda stan zapytania najpierw sprawia, że się upewnić, że kontekst nie jest funkcją usługi automation, a następnie znajduje poprawne GUID zestawu poleceń i identyfikator polecenia. Samo polecenie ustawiono włączony i obsługiwane. Inne polecenia są obsługiwane.  
+  W poniższym przykładzie metoda zapytania-status najpierw upewnia się, że kontekst nie jest funkcją automatyzacji, a następnie znajduje poprawny identyfikator GUID zestawu poleceń i identyfikatora polecenia. Samo polecenie jest ustawione na włączone i obsługiwane. Nie są obsługiwane żadne inne polecenia.  
   
 ```  
 public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
@@ -114,9 +114,9 @@ public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, Int
 ```  
   
 ## <a name="execution-methods"></a>Metody wykonywania  
- Implementacja metody stan zapytania jest podobny do implementacji metody execute. Najpierw upewnij się, że kontekst nie jest funkcją usługi automation. Następnie przetestuj zarówno identyfikator GUID i identyfikator polecenia. Jeśli identyfikator GUID lub nie został rozpoznany identyfikator polecenia, zwróć <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+ Implementacja metody Execute jest podobna do implementacji metody query-status. Najpierw upewnij się, że kontekst nie jest funkcją automatyzacji. Następnie przetestuj dla identyfikatora GUID i identyfikatora polecenia. Jeśli nie rozpoznano identyfikatora GUID lub identyfikatora polecenia, Return <xref:Microsoft.VisualStudio.OLE.Interop.Constants> .  
   
- Do obsługi polecenia, należy ją wykonać i zwracają <xref:Microsoft.VisualStudio.VSConstants.S_OK> Jeśli wykonanie zakończy się powodzeniem. Polecenie jest odpowiedzialny za wykrywanie błędów oraz powiadomienia; Dlatego należy zwrócić kod błędu, jeśli wykonanie nie powiedzie się. W poniższym przykładzie pokazano, jak można zaimplementować metodę wykonywania.  
+ Aby obsłużyć polecenie, należy wykonać to działanie i zwrócić <xref:Microsoft.VisualStudio.VSConstants.S_OK> w przypadku pomyślnego wykonania. Polecenie jest odpowiedzialne za wykrywanie błędów i powiadamianie; w związku z tym Zwróć kod błędu, jeśli wykonanie nie powiedzie się. W poniższym przykładzie pokazano, jak metoda wykonywania powinna być zaimplementowana.  
   
 ```  
 public int Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)  

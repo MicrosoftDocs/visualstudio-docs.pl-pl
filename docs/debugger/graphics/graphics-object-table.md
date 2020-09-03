@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea80420b2146bd8c604a95d71012009dcb940ef5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735449"
 ---
 # <a name="graphics-object-table"></a>Tabela obiektów graficznych
@@ -31,25 +31,25 @@ Tabela obiektów graficznych w analizie grafiki programu Visual Studio ułatwia 
 
  Tabela obiektów obsługuje kopiowanie i wklejanie, aby można było użyć innego narzędzia — na przykład programu Microsoft Excel — do badania jego zawartości.
 
- Ponadto można użyć listy rozwijanej **Typ** w lewym górnym rogu, aby przełączyć obiekty typu **bufory**, programy do **cieniowania** lub **tekstury**lub wszystkie te elementy jednocześnie.  Ponadto możesz użyć pola wyszukiwania w prawym górnym rogu, aby znaleźć określone wiersze dla wszystkich prezentowanych danych.  Na przykład można wyszukać *D32_FLOAT* , aby znaleźć wszystkie wystąpienia obiektów tego formatu na liście.
+ Ponadto można użyć listy rozwijanej **Typ** w lewym górnym rogu, aby przełączyć obiekty typu **bufory**, programy do **cieniowania** lub **tekstury**lub wszystkie te elementy jednocześnie.  Ponadto możesz użyć pola wyszukiwania w prawym górnym rogu, aby znaleźć określone wiersze dla wszystkich prezentowanych danych.  Można na przykład wyszukać *D32_FLOAT* , aby znaleźć na liście wszystkie wystąpienia obiektów tego formatu.
 
 ### <a name="graphics-object-table-format"></a>Format tabeli obiektów graficznych
  W tabeli obiektów są wyświetlane obiekty i zasoby Direct3D, które obsługują ramkę, która jest skojarzona z wybranym zdarzeniem — na przykład obiekty stanu, bufory, cieniowanie, tekstury i inne zasoby. Obiekty, które zostały utworzone w poprzedniej klatce, ale nie są używane w przechwyconej ramce, są pomijane w tabeli obiektów. Obiekty, które zostały zniszczone przez poprzednie zdarzenia w przechwyconej ramce, są pomijane w kolejnych zdarzeniach. Obiekty, które nie są ustawione na D3D10Device lub D3D11DeviceContext są wyświetlane jako szary tekst. Obiekty są wyświetlane w formacie tabeli.
 
 |Kolumna|Opis|
 |------------|-----------------|
-|**Identyfikatora**|Identyfikator obiektu.|
+|**Identyfikator**|Identyfikator obiektu.|
 |**Nazwa**|Informacje specyficzne dla aplikacji, które zostały ustawione dla obiektu za pomocą funkcji Direct3D `SetPrivateData` — zwykle do dostarczania dodatkowych informacji identyfikujących obiekt.|
-|**Wprowadź**|Typ obiektu.|
-|**Wyprzedzeni**|Wyświetla wartość "*" dla obiektu, który został ustawiony w D3D10Device lub D3D11DeviceContext w przechwyconej ramce.<br /><br /> Odnosi się to do obiektów, które są wyświetlane w postaci szarego tekstu, ale zawiera wpis kolumny, którego można użyć w celu sortowania tabeli obiektów.|
-|**Zmienia**|Rozmiar obiektu w bajtach.|
-|**Formatowanie**|Format obiektu. Na przykład format obiektu tekstury lub model cieniowania obiektu cieniowania.|
-|**Szerokość**|Szerokość obiektu tekstury. Nie dotyczy innych typów obiektów.|
-|**Proporcj**|Wysokość obiektu tekstury. Nie dotyczy innych typów obiektów.|
+|**Typ**|Typ obiektu.|
+|**Aktywny**|Wyświetla wartość "*" dla obiektu, który został ustawiony w D3D10Device lub D3D11DeviceContext w przechwyconej ramce.<br /><br /> Odnosi się to do obiektów, które są wyświetlane w postaci szarego tekstu, ale zawiera wpis kolumny, którego można użyć w celu sortowania tabeli obiektów.|
+|**Rozmiar**|Rozmiar obiektu w bajtach.|
+|**Format**|Format obiektu. Na przykład format obiektu tekstury lub model cieniowania obiektu cieniowania.|
+|**Width**|Szerokość obiektu tekstury. Nie dotyczy innych typów obiektów.|
+|**Height**|Wysokość obiektu tekstury. Nie dotyczy innych typów obiektów.|
 |**Ścisł**|Głębokość obiektu tekstury trójwymiarowej. Jeśli teksturą nie jest 3-D, wówczas wartość jest równa 0. Nie dotyczy innych typów obiektów.|
 |**MIPS**|Liczba poziomów MIP, które ma obiekt tekstury. Nie dotyczy innych typów obiektów.|
 |**Rozmiaru tablicy**|Liczba tekstur w tablicy tekstury. Zakres jest z przedziału od 1 do górnej granicy zdefiniowanej przez bieżący poziom funkcji. W przypadku mapy modułu ta wartość jest 6 razy większa od liczby map modułów w tablicy.|
-|**Przykłady**|Liczba próbek na piksel.|
+|**Samples**|Liczba próbek na piksel.|
 
 ## <a name="graphics-object-viewers"></a>Przeglądarki obiektów graficznych
  Aby wyświetlić szczegóły dotyczące obiektu, otwórz go, wybierając jego nazwę w tabeli obiektów. Szczegóły dotyczące obiektu są wyświetlane w różnych formatach, w zależności od typu obiektu. Na przykład tekstury są wyświetlane przy użyciu przeglądarki tekstury i stanu urządzenia, takich jak kontekst urządzenia D3D11, jest wyświetlany jako sformatowana lista. Różne wersje programu Direct3D korzystają z różnych obiektów, a często charakterystyczne Wizualizatory dla najważniejszych obiektów każdej wersji.
@@ -80,11 +80,11 @@ Tabela obiektów graficznych w analizie grafiki programu Visual Studio ułatwia 
 
 |Typ|Opis|
 |----------|-----------------|
-|**float**|32-bitowa wartość zmiennoprzecinkowa.|
+|**liczba zmiennoprzecinkowa**|32-bitowa wartość zmiennoprzecinkowa.|
 |**float2**|Wektor, który zawiera 2 32-bitowe wartości zmiennoprzecinkowe.|
 |**float3**|Wektor, który zawiera 3 32-bitowe wartości zmiennoprzecinkowe.|
 |**float4**|Wektor, który zawiera 4 32-bitowe wartości zmiennoprzecinkowe.|
-|**byte**|8-bitowa liczba całkowita ze znakiem.|
+|**Bajc**|8-bitowa liczba całkowita ze znakiem.|
 |**2byte**|16-bitowa liczba całkowita ze znakiem.|
 |**4byte**|32-bitowa liczba całkowita ze znakiem. Wartość taka sama jak **int**.|
 |**8byte**|64-bitowa liczba całkowita ze znakiem. Taka sama jak **Int64**.|
@@ -100,15 +100,15 @@ Tabela obiektów graficznych w analizie grafiki programu Visual Studio ułatwia 
 |**half2**|Wektor, który zawiera 2 16-bitowe wartości zmiennoprzecinkowe.|
 |**half3**|Wektor, który zawiera 3 16-bitowe wartości zmiennoprzecinkowe.|
 |**half4**|Wektor, który zawiera 4 16-bitowe wartości zmiennoprzecinkowe.|
-|**double**|64-bitowa wartość zmiennoprzecinkowa.|
+|**liczba o podwójnej precyzji**|64-bitowa wartość zmiennoprzecinkowa.|
 |**int**|32-bitowa liczba całkowita ze znakiem. Analogicznie jak **4byte**.|
 |**Int64**|64-bitowa liczba całkowita ze znakiem. Analogicznie jak **8byte**.|
 |**xint**|32-bitowa wartość szesnastkowa. Analogicznie jak **x4byte**.|
 |**xint64**|64-bitowa wartość szesnastkowa. Analogicznie jak **x8byte**.|
 |**uint**|32-bitowa liczba całkowita bez znaku. Analogicznie jak **u4byte**.|
 |**UInt64**|64-bitowa liczba całkowita bez znaku. Analogicznie jak **u8byte**.|
-|**bool**|Wartość logiczna (`true` lub `false`). Każda wartość logiczna jest reprezentowana przez 32-bitową wartość.|
+|**bool**|Wartość logiczna ( `true` lub `false` ). Każda wartość logiczna jest reprezentowana przez 32-bitową wartość.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Diagnostyka grafiki (debugowanie grafiki DirectX)](visual-studio-graphics-diagnostics.md)
 - [Przewodnik: brak obiektów spowodowany stanem urządzenia](walkthrough-missing-objects-due-to-device-state.md)

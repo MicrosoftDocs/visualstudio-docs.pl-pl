@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ff25c7b03f9287afe9b8070a656643d34d5ec478
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661249"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>Ogólne elementy interfejsu użytkownika (Visual Studio)
@@ -41,15 +41,15 @@ W tej sekcji opisano niektóre elementy interfejsu użytkownika zintegrowanego �
 
  [Opcje, Edytor tekstu, podstawowe (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) Pozwala określić opcje dla plików Visual Basic.
 
- [Opcje, Edytor tekstu, C/C++, formatowanie](../../ide/reference/options-text-editor-c-cpp-formatting.md) pozwala określić opcje formatowania dla C lub C++ plików.
+ [Opcje, Edytor tekstu, C/C++, formatowanie](../../ide/reference/options-text-editor-c-cpp-formatting.md) Pozwala określić opcje formatowania dla plików C lub C++.
 
- [Opcje, Edytor tekstu, C/C++, zaawansowane](../../ide/reference/options-text-editor-c-cpp-advanced.md) umożliwiają określenie opcji zaawansowanych dla C lub C++ plików.
+ [Opcje, Edytor tekstu, C/C++, zaawansowane](../../ide/reference/options-text-editor-c-cpp-advanced.md) Umożliwia określenie opcji zaawansowanych dla plików C lub C++.
 
- [Opcje, Edytor tekstu, C#, formatowanie](../../ide/reference/options-text-editor-csharp-formatting.md) pozwala określić opcje formatowania dla C# plików.
+ [Opcje, Edytor tekstu, C#, formatowanie](../../ide/reference/options-text-editor-csharp-formatting.md) Pozwala określić opcje formatowania dla plików języka C#.
 
- [Opcje, Edytor tekstu, C#, zaawansowane —](../../ide/reference/options-text-editor-csharp-advanced.md) umożliwiają określenie opcji zaawansowanych dla C# plików.
+ [Opcje, Edytor tekstu, C#, zaawansowane](../../ide/reference/options-text-editor-csharp-advanced.md) Umożliwia określenie opcji zaawansowanych dla plików języka C#.
 
- [Opcje, Edytor tekstu, C#funkcja IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) umożliwia określenie opcji IntelliSense dla C# plików.
+ [Opcje, Edytor tekstu, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) Umożliwia określenie opcji IntelliSense dla plików języka C#.
 
  [Opcje, Edytor tekstu, XAML, formatowanie](../../ide/reference/options-text-editor-xaml-formatting.md) Pozwala określić opcje formatowania dla plików XAML.
 

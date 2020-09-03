@@ -15,15 +15,15 @@ dev_langs:
 - CSharp
 - CPP
 ms.openlocfilehash: 09ec5d82251fa4598096fca8a59c9a1fd29e3f27
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69585372"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Obsługa zapewniania świadomości dla rozszerzeń programu Visual Studio
 
-Wersje starsze niż program Visual Studio 2019 mają kontekst rozpoznawania DPI ustawiony dla systemu, a nie dla monitora (PMA). Działanie w systemie rozpoznawania systemu spowodowało spadek wydajności wizualizacji (np. czcionki rozmyte lub ikony), gdy program Visual Studio ma renderować różne monitory z różnymi czynnikami skalowania lub zdalnie na maszynach z różnymi konfiguracjami wyświetlania (np. różne Skalowanie systemu Windows).
+Wersje starsze niż program Visual Studio 2019 mają kontekst rozpoznawania DPI ustawiony dla systemu, a nie dla monitora (PMA). Uruchamianie w systemie rozpoznawania systemu spowodowało spadek wydajności wizualizacji (np. czcionki rozmyte lub ikony), gdy program Visual Studio ma renderować różne monitory z różnymi czynnikami skalowania lub zdalnie do maszyn z różnymi konfiguracjami wyświetlania (np. różnymi skalowaniem systemu Windows).
 
 Kontekst rozpoznawania DPI programu Visual Studio 2019 jest ustawiany jako PMA, gdy obsługuje to środowisko, co pozwala programowi Visual Studio na renderowanie zgodnie z konfiguracją ekranu, w którym jest hostowana, a nie z jedną konfiguracją zdefiniowaną w systemie. Ostatecznie tłumaczenie na zawsze wyrazisty interfejs użytkownika dla obszarów powierzchni, które obsługują tryb PMA.
 
@@ -116,7 +116,7 @@ Za każdym razem, gdy działa w trybie mieszanym (na przykład inne elementy int
 Niektóre elementy interfejsu użytkownika zostały utworzone poza procesem, a jeśli proces tworzenia zewnętrznego ma inny tryb rozpoznawania DPI niż program Visual Studio, może to spowodować, że wszystkie poprzednie problemy z renderowaniem.
 
 #### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Windows Forms kontrolki, obrazy lub układy renderowane niepoprawnie
-Nie wszystkie Windows Forms Content obsługują tryb PMA. W związku z tym może wystąpić problem z renderowaniem z nieprawidłowymi układami lub skalowaniem. Możliwe rozwiązanie w tym przypadku jest jawnie renderowane Windows Forms zawartości w DpiAwarenessContext "system aware" (Zobacz, aby wymusić [kontrolę w określonym DpiAwarenessContext](#force-a-control-into-a-specific-dpiawarenesscontext)).
+Nie wszystkie Windows Forms Content obsługują tryb PMA. W związku z tym może wystąpić problem z renderowaniem z nieprawidłowymi układami lub skalowaniem. Możliwe rozwiązanie w tym przypadku jest jawnie renderowane Windows Forms zawartości w DpiAwarenessContext "system aware" (Zobacz, aby [wymusić kontrolę w określonym DpiAwarenessContext](#force-a-control-into-a-specific-dpiawarenesscontext)).
 
 #### <a name="windows-forms-controls-or-windows-not-displaying"></a>Kontrolki Windows Forms lub okna niewyświetlane
 Jednym z głównych przyczyn tego problemu są deweloperzy próbujący zmienić nadrzędny formant lub okno z jednym DpiAwarenessContextem do okna z innym DpiAwarenessContextem.
@@ -126,11 +126,11 @@ Na poniższych ilustracjach przedstawiono bieżące **domyślne** ograniczenia s
 ![Zrzut ekranu przedstawiający poprawność działania nadrzędnego](media/PMA-parenting-behavior.PNG)
 
 > [!Note]
-> Możesz zmienić to zachowanie, ustawiając zachowanie hostingu wątku (zobacz [Wyliczenie Dpi_Hosting_Behavior](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
+> Możesz zmienić to zachowanie, ustawiając zachowanie hostingu wątku (zobacz [wyliczenie Dpi_Hosting_Behavior](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
 
 W związku z tym, jeśli ustawisz relację nadrzędny-podrzędny między nieobsługiwanymi trybami, zakończy się niepowodzeniem, a kontrolka lub okno może nie być renderowane zgodnie z oczekiwaniami.
 
-### <a name="diagnose-issues"></a>Diagnozuj problemy
+### <a name="diagnose-issues"></a>Diagnozowanie problemów
 
 Istnieje wiele czynników, które należy wziąć pod uwagę podczas identyfikowania problemów związanych z PMA: 
 
@@ -168,7 +168,7 @@ Podobnie jak w przypadku wysłuchiwania, narzędzia XAML w programie Visual Stud
 
 ### <a name="replace-dpihelper-calls"></a>Zastąp wywołania DpiHelper
 
-W większości przypadków Rozwiązywanie problemów z interfejsem użytkownika w trybie PMA powoduje zagotowanie wywołań w kodzie zarządzanym do starej klasy *Microsoft. VisualStudio. Utilities. dpi. DpiHelper* i *Microsoft. VisualStudio. PlatformUI. DpiHelper* , z wywołaniami do nowego  *Microsoft. VisualStudio. Utilities. DpiAwareness* — Klasa pomocnika. 
+W większości przypadków Rozwiązywanie problemów z interfejsem użytkownika w trybie PMA jest zamienione na zastępowanie wywołań w kodzie zarządzanym do starej klasy *Microsoft. VisualStudio. Utilities. dpi. DpiHelper* i *Microsoft. VisualStudio. PlatformUI. DpiHelper* , z wywołaniami do nowej klasy pomocnika *Microsoft. VisualStudio. Utilities. DpiAwareness* . 
 
 ```cs
 // Remove this kind of use:
@@ -230,9 +230,9 @@ IVsDpiAware : public IUnknown
 };
 ```
 
-W przypadku języków zarządzanych najlepszym miejscem do wdrożenia tego interfejsu jest ta sama klasa, która pochodzi od *Microsoft. VisualStudio. Shell. elementu toolwindowpane*. W C++przypadku, najlepszym miejscem do wdrożenia tego interfejsu jest w tej samej klasie, która implementuje *interfejsu IVsWindowPane* z vsshell. h.
+W przypadku języków zarządzanych najlepszym miejscem do wdrożenia tego interfejsu jest ta sama klasa, która pochodzi od *Microsoft. VisualStudio. Shell. elementu toolwindowpane*. W przypadku języka C++ najlepszym miejscem do wdrożenia tego interfejsu jest w tej samej klasie, która implementuje *interfejsu IVsWindowPane* z vsshell. h.
 
-Wartość zwrócona przez Właściwość Mode w interfejsie to element __VSDPIMODE (i rzutowany do elementu uint w zarządzanych):
+Wartość zwrócona przez Właściwość Mode w interfejsie to __VSDPIMODE (i rzutowania na element uint w zarządzanych):
 
 ```cs
 enum __VSDPIMODE
@@ -248,7 +248,7 @@ enum __VSDPIMODE
 - PerMonitor oznacza, że okno narzędzi musi obsługiwać wszystkie rozdzielczościami na wszystkich ekranach i za każdym razem, gdy zmienia się wartość DPI.
 
 > [!NOTE]
-> Program Visual Studio obsługuje tylko świadomość PerMonitorV2, więc wartość wyliczenia PerMonitor jest tłumaczona na wartość DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2 w systemie Windows.
+> Program Visual Studio obsługuje tylko świadomość PerMonitorV2, więc wartość wyliczenia PerMonitor jest tłumaczona na wartość DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2.
 
 #### <a name="force-a-control-into-a-specific-dpiawarenesscontext"></a>Wymuś kontrolę w określonym DpiAwarenessContext
 

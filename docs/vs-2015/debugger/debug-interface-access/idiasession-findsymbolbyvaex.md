@@ -1,5 +1,5 @@
 ---
-title: Idiasession::findsymbolbyvaex — | Dokumentacja firmy Microsoft
+title: 'IDiaSession:: findSymbolByVAEx | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 14a0b573609d52269809dcaa6e900e17affcecfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196375"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera typ określony symbol, który zawiera lub jest najbardziej zbliżony do określonego adresu wirtualnego (oceny luk w zabezpieczeniach) i przesunięcie.  
+Pobiera określony typ symbolu, który zawiera lub jest najbliższy do, określony adres wirtualny (VA) i przesunięcie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,19 +38,19 @@ HRESULT findSymbolByVAEx ( 
   
 #### <a name="parameters"></a>Parametry  
  `va`  
- [in] Określa VA.  
+ podczas Określa wartość VA.  
   
  `symtag`  
- [in] Typ symbolu, który ma zostać odnaleziona. Wartości są pobierane z [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) wyliczenia.  
+ podczas Typ symbolu, który ma zostać znaleziony. Wartości są pobierane z wyliczenia [wyliczenia SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md) .  
   
  `ppSymbol`  
- [out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) pobrać obiekt reprezentujący symbol.  
+ określoną Zwraca obiekt [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , który reprezentuje pobrany symbol.  
   
  `displacement`  
- [out] Zwraca wartość, która określa przesunięcie od wirtualny adres podany przez `va`.  
+ określoną Zwraca wartość określającą przesunięcie od adresu wirtualnego podanym przez `va` .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
   
@@ -61,8 +61,8 @@ pSession->findSymbolByVAEx( va, SymTagFunction, &pFunc, &disp );
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasession::findchildren —](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [Idiasession::findsymbolbyva —](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)   
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
+ [IDiaSession:: findChildren —](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSession:: findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

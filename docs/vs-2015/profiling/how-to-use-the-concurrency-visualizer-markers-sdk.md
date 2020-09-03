@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Korzystanie z zestawu znaczniki wizualizatora współbieżności | Microsoft Docs'
+title: 'Instrukcje: korzystanie ze znaczników zestawu SDK programu Concurrency Visualizer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,30 +10,30 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3df1139f34c17055703b1ffcbbe2711d5750b9a8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68870046"
 ---
-# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Instrukcje: Korzystanie ze znaczników zestawu SDK narzędzia Concurrency Visualizer
+# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Porady: korzystanie ze znaczników wizualizatora współbieżności SDK
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym temacie pokazano, jak używać zestawu SDK wizualizatora współbieżności do tworzenia zakresów i flag zapisu, komunikatów i alertów.
 
-### <a name="to-use-c"></a>Aby użyćC++
+### <a name="to-use-c"></a>Aby użyć języka C++
 
 1. Dodaj do aplikacji obsługę zestawu SDK wizualizatora współbieżności. Aby uzyskać więcej informacji, zobacz [zestaw SDK wizualizatora współbieżności](../profiling/concurrency-visualizer-sdk.md).
 
-2. `include` Dodaj instrukcję`using` i instrukcję dla zestawu SDK.
+2. Dodaj `include` instrukcję i `using` instrukcję dla zestawu SDK.
 
     ```cpp
     #include <cvmarkersobj.h>
     using namespace Concurrency::diagnostic;
     ```
 
-3. Dodaj kod, aby utworzyć trzy zakresy w domyślnej serii znaczników i napisać flagę, komunikat i alert, jeden do każdego zakresu. Metody zapisywania flag, komunikatów i alertów są elementami członkowskimi klasy [marker_series](../profiling/marker-series-class.md) . Konstruktor klasy [span](../profiling/span-class.md) wymaga `marker_series` obiektu, dzięki czemu każdy zakres jest skojarzony z konkretną serią znaczników. Zostanie `span` zakończona po usunięciu.
+3. Dodaj kod, aby utworzyć trzy zakresy w domyślnej serii znaczników i napisać flagę, komunikat i alert, jeden do każdego zakresu. Metody zapisywania flag, komunikatów i alertów są elementami członkowskimi klasy [marker_series](../profiling/marker-series-class.md) . Konstruktor klasy [span](../profiling/span-class.md) wymaga `marker_series` obiektu, dzięki czemu każdy zakres jest skojarzony z konkretną serią znaczników. `span`Zostanie zakończona po usunięciu.
 
     ```cpp
     marker_series series;
@@ -54,7 +54,7 @@ W tym temacie pokazano, jak używać zestawu SDK wizualizatora współbieżnośc
 
      ![Wizualizator współbieżności z 3 znacznikami i alertami](../profiling/media/cvmarkersnative.png "CvMarkersNative")
 
-5. Dodaj kod, aby utworzyć dodatkową, niestandardową serię znaczników przez `marker_series` wywołanie konstruktora dla, który pobiera nazwę ciągu dla serii znaczników.
+5. Dodaj kod, aby utworzyć dodatkową, niestandardową serię znaczników przez wywołanie konstruktora dla `marker_series` , który pobiera nazwę ciągu dla serii znaczników.
 
     ```cpp
     marker_series flagSeries(_T("flag series"));
@@ -80,7 +80,7 @@ W tym temacie pokazano, jak używać zestawu SDK wizualizatora współbieżnośc
 
 1. Dodaj do aplikacji obsługę zestawu SDK wizualizatora współbieżności. Aby uzyskać więcej informacji, zobacz [zestaw SDK wizualizatora współbieżności](../profiling/concurrency-visualizer-sdk.md).
 
-2. Dodaj instrukcję `Imports` or dla zestawu SDK. `using`
+2. Dodaj `using` instrukcję or `Imports` dla zestawu SDK.
 
     ```vb
     Imports Microsoft.ConcurrencyVisualizer.Instrumentation
@@ -90,7 +90,7 @@ W tym temacie pokazano, jak używać zestawu SDK wizualizatora współbieżnośc
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3. Dodaj kod, aby utworzyć trzy zakresy na domyślnej serii znaczników i napisać flagę, komunikat i alert, jeden do każdego zakresu. Tworzysz obiekt [span](/previous-versions/hh694189(v=vs.140)) przez wywołanie metody statycznej `EnterSpan` . Aby zapisać w serii domyślnej, należy użyć statycznych metod zapisu klasy Marks. [](/previous-versions/hh694099(v=vs.140))
+3. Dodaj kod, aby utworzyć trzy zakresy na domyślnej serii znaczników i napisać flagę, komunikat i alert, jeden do każdego zakresu. Tworzysz obiekt [span](/previous-versions/hh694189(v=vs.140)) przez wywołanie metody statycznej `EnterSpan` . Aby zapisać w serii domyślnej, należy użyć statycznych metod zapisu klasy [Marks](/previous-versions/hh694099(v=vs.140)) .
 
     ```vb
     Dim flagSpan As Span = Markers.EnterSpan("flag span")
@@ -170,4 +170,4 @@ W tym temacie pokazano, jak używać zestawu SDK wizualizatora współbieżnośc
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)
+- [Concurrency Visualizer SDK](../profiling/concurrency-visualizer-sdk.md)

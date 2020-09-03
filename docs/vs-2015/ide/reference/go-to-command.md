@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 454b51b6939a78cdaab8d29f51d30910024adbe3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661200"
 ---
 # <a name="go-to-command"></a>Przejdź do — Polecenie
@@ -33,12 +33,12 @@ Edit.GoTo [linenumber]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `linenumber` opcjonalny. Liczba całkowita reprezentująca liczbę wierszy, które mają zostać przechodzenie.
+ `linenumber` Obowiązkowe. Liczba całkowita reprezentująca liczbę wierszy, które mają zostać przechodzenie.
 
 ## <a name="remarks"></a>Uwagi
  Numerowanie wierszy rozpoczyna się od jednej. Jeśli wartość `linenumber` jest mniejsza od 1, zostanie wyświetlona pierwsza linia. Jeśli wartość `linenumber` jest większa niż liczba ostatniego wiersza, zostanie wyświetlony ostatni wiersz.
 
- Jeśli nie określono wartości dla `linenumber`, zostanie wyświetlone okno dialogowe **Przejdź do wiersza** .
+ Jeśli wartość `linenumber` nie jest określona, zostanie wyświetlone okno dialogowe **Przejdź do wiersza** .
 
  Alias dla tego polecenia to GoToLn.
 

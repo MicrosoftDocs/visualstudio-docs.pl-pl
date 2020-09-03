@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Aktualizowanie kontrolek na Wstążce w czasie wykonywania'
+title: 'Przewodnik: aktualizowanie kontrolek na Wstążce w czasie wykonywania'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 425918ea32c14e6ba905d6b32864a2844d2b5a90
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255337"
 ---
-# <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Przewodnik: Aktualizowanie kontrolek na Wstążce w czasie wykonywania
+# <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Przewodnik: aktualizowanie kontrolek na Wstążce w czasie wykonywania
 
 W tym instruktażu przedstawiono sposób użycia modelu obiektów wstążki do aktualizowania kontrolek na Wstążce po załadowaniu wstążki do aplikacji pakietu Office.
 
@@ -59,13 +59,13 @@ Najpierw utwórz projekt dodatku VSTO dla programu Outlook.
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Aby utworzyć nowy projekt dodatku VSTO dla programu Outlook
 
-1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]programie Utwórz projekt dodatku VSTO programu Outlook o nazwie **Ribbon_Update_At_Runtime**.
+1. W programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Utwórz projekt dodatku VSTO programu Outlook o nazwie **Ribbon_Update_At_Runtime**.
 
 2. W oknie dialogowym **Nowy projekt** wybierz pozycję **Utwórz katalog dla rozwiązania**.
 
 3. Zapisz projekt w domyślnym katalogu projektu.
 
-     Aby uzyskać więcej informacji, zobacz [jak: Utwórz projekty pakietu Office w programie](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+     Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="design-a-custom-ribbon-group"></a>Projektowanie niestandardowej grupy wstążki
 
@@ -75,7 +75,7 @@ Wstążka dla tego przykładu będzie wyświetlana, gdy użytkownik utworzy now�
 
 1. W menu **projekt** kliknij polecenie **Dodaj nowy element**.
 
-2. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **wstążka (projektant wizualny)** .
+2. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **wstążka (projektant wizualny)**.
 
 3. Zmień nazwę nowej wstążki na **CustomerRibbon**, a następnie kliknij przycisk **Dodaj**.
 
@@ -149,11 +149,11 @@ Użyj okna **źródła danych** , aby dodać do projektu typ zestawu danych.
 
 8. Zaznacz pole wyboru obok każdej z następujących tabel:
 
-    1. **Klientów**
+    1. **Klienci**
 
     2. **Szczegóły zamówienia**
 
-    3. **Zamówienie**
+    3. **Orders (Zamówienia)**
 
     4. **Produkty**
 
@@ -198,11 +198,11 @@ Użyj modelu obiektów wstążki, aby wykonać następujące zadania:
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]
 
-8. Zastąp metodę obsługi zdarzeń poniższym kodem. `CustomerRibbon_Load` Ten kod używa zapytania LINQ do wykonywania następujących zadań:
+8. Zastąp `CustomerRibbon_Load` metodę obsługi zdarzeń poniższym kodem. Ten kod używa zapytania LINQ do wykonywania następujących zadań:
 
    - Wypełnij pole kombi **klientom** przy użyciu identyfikatora i nazwy 20 klientów w bazie danych Northwind.
 
-   - Wywołuje metodę `PopulateSalesOrderInfo` pomocnika. Ta metoda aktualizuje menu **ProductsPurchased** za pomocą numerów zamówień sprzedaży odnoszących się do aktualnie wybranego klienta.
+   - Wywołuje `PopulateSalesOrderInfo` metodę pomocnika. Ta metoda aktualizuje menu **ProductsPurchased** za pomocą numerów zamówień sprzedaży odnoszących się do aktualnie wybranego klienta.
 
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]
@@ -226,21 +226,21 @@ Użyj modelu obiektów wstążki, aby wykonać następujące zadania:
 
      Plik kodu wstążki zostanie otwarty w edytorze kodu i `ComboBox1_TextChanged` pojawi się procedura obsługi zdarzeń.
 
-12. Zastąp procedurę obsługi zdarzeń poniższym kodem. `ComboBox1_TextChanged` Kod będzie wykonywał następujące zadania:
+12. Zastąp `ComboBox1_TextChanged` procedurę obsługi zdarzeń poniższym kodem. Ten kod wykonuje następujące zadania:
 
-    - Wywołuje metodę `PopulateSalesOrderInfo` pomocnika. Ta metoda aktualizuje menu **zakupione produkty** przy użyciu zamówień sprzedaży odnoszących się do wybranego klienta.
+    - Wywołuje `PopulateSalesOrderInfo` metodę pomocnika. Ta metoda aktualizuje menu **zakupione produkty** przy użyciu zamówień sprzedaży odnoszących się do wybranego klienta.
 
-    - Wywołuje metodę `PopulateMailItem` pomocnika i przekazuje bieżący tekst, który jest wybraną nazwą klienta. Ta metoda wypełnia pola do, temat i treść nowych wiadomości e-mail.
+    - Wywołuje `PopulateMailItem` metodę pomocnika i przekazuje bieżący tekst, który jest wybraną nazwą klienta. Ta metoda wypełnia pola do, temat i treść nowych wiadomości e-mail.
 
       [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
       [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]
 
-13. `Click` Dodaj`CustomerRibbon` do klasy następujący program obsługi zdarzeń. Ten kod dodaje nazwę wybranych produktów do pola Body nowych wiadomości e-mail.
+13. Dodaj `Click` do klasy następujący program obsługi zdarzeń `CustomerRibbon` . Ten kod dodaje nazwę wybranych produktów do pola Body nowych wiadomości e-mail.
 
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]
 
-14. Dodaj następujący kod do `CustomerRibbon` klasy. Kod będzie wykonywał następujące zadania:
+14. Dodaj następujący kod do `CustomerRibbon` klasy. Ten kod wykonuje następujące zadania:
 
     - Wypełnia wiersz do nowej wiadomości e-mail przy użyciu adresu e-mail aktualnie wybranego klienta.
 
@@ -263,7 +263,7 @@ Aby utworzyć monit e-mail dotyczący klienta, wybierz klienta, a następnie wyb
 
 2. W programie Outlook w menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **wiadomość e-mail**.
 
-     Są wykonywane następujące akcje:
+     Wykonywane są następujące akcje:
 
     - Zostanie wyświetlone nowe okno Inspektora wiadomości e-mail.
 
@@ -273,7 +273,7 @@ Aby utworzyć monit e-mail dotyczący klienta, wybierz klienta, a następnie wyb
 
 3. Na karcie **komunikat** na Wstążce w grupie **zakupy klienta** wybierz klienta z pola kombi **klienci** .
 
-     Są wykonywane następujące akcje:
+     Wykonywane są następujące akcje:
 
     - Menu **zakupione produkty** zostało zaktualizowane, aby pokazać każde zamówienie sprzedaży dla wybranego klienta.
 
@@ -291,22 +291,22 @@ Więcej informacji na temat sposobu dostosowywania interfejsu użytkownika pakie
 
 - Dodaj interfejs użytkownika oparty na kontekście do dowolnych dostosowań na poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [Omówienie okienka Akcje](../vsto/actions-pane-overview.md).
 
-- Rozbudowa standardowego lub niestandardowego formularza programu Outlook Microsoft Office. Aby uzyskać więcej informacji, [zobacz Przewodnik: Projektuj region](../vsto/walkthrough-designing-an-outlook-form-region.md)formularza programu Outlook.
+- Rozbudowa standardowego lub niestandardowego formularza programu Outlook Microsoft Office. Aby uzyskać więcej informacji, zobacz [Przewodnik: Projektowanie regionu formularza programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 - Dodawanie niestandardowego okienka zadań do programu Outlook. Aby uzyskać więcej informacji, zobacz [niestandardowe okienka zadań](../vsto/custom-task-panes.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
-- [Wstążka — omówienie](../vsto/ribbon-overview.md)
-- [Language-Integrated Query (LINQ)](/dotnet/csharp/linq/index)
-- [Instrukcje: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Omówienie wstążki](../vsto/ribbon-overview.md)
+- [Zapytanie o języku zintegrowanym (LINQ)](/dotnet/csharp/linq/index)
+- [Instrukcje: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
 - [Przewodnik: Tworzenie niestandardowej karty przy użyciu projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Omówienie modelu obiektów wstążki](../vsto/ribbon-object-model-overview.md)
 - [Dostosowywanie wstążki dla programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Instrukcje: Zmiana pozycji karty na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Instrukcje: Dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)
-- [Instrukcje: Dodawanie formantów do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Instrukcje: Eksportowanie wstążki z projektanta wstążki do kodu XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Instrukcje: Pokaż błędy interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Instrukcje: zmiana położenia karty na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Instrukcje: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)
+- [Instrukcje: Dodawanie kontrolek do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Instrukcje: Eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Instrukcje: pokazywanie błędów interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md)
