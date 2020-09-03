@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ee4e307040f22078ed66f897eaa868ccfd259577
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586728"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Rozszerzanie modeli i diagramów UML
@@ -32,7 +32,7 @@ Ten temat zawiera podsumowanie różnych sposobów, w których można rozłoży�
 
  Aby uzyskać więcej informacji, zobacz ten film wideo: ![link do filmu wideo](../data-tools/media/playvideo.gif "PlayVideo")[MSDN — jak to zrobić: narzędzia i rozszerzalność UML](https://msdn.microsoft.com/vstudio/ff859492).
 
-## <a name="requirements"></a><a name="Requirements"></a>Wymagania
+## <a name="requirements"></a><a name="Requirements"></a> Wymagania
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
@@ -58,7 +58,7 @@ Ten temat zawiera podsumowanie różnych sposobów, w których można rozłoży�
  Aby uzyskać więcej informacji, zobacz [Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md).
 
 ## <a name="menu-commands"></a>Polecenia menu
- Można definiować polecenia, które użytkownicy mogą wywoływać przez kliknięcie prawym przyciskiem myszy elementów na diagramie UML. Polecenia mogą aktualizować model i diagramy lub wykonywać inne operacje w programie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
+ Można definiować polecenia, które użytkownicy mogą wywoływać przez kliknięcie prawym przyciskiem myszy elementów na diagramie UML. Polecenia mogą aktualizować model i diagramy lub wykonywać inne operacje w programie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] .
 
  Firma Fabrikam definiuje polecenia menu do automatyzowania często wykonywanych operacji, takich jak tworzenie biurka zaewidencjonowania i łączenie go z wybranym taśmą przenośnika lub zmiana rozmieszczenia diagramu zgodnie z regułami układu firmy.
 

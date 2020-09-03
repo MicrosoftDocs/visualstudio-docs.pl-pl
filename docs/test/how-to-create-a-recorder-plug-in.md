@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f75114683a4f456d0514af20c1c201c373bd4b0
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288013"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Instrukcje: tworzenie wtyczki rejestratora
@@ -67,7 +67,7 @@ W poniższych procedurach opisano, jak utworzyć kod podstawowe dla wtyczki reje
      Argumenty zdarzeń będą zawierać dwa obiekty do współpracy: zarejestrowany wynik i zarejestrowany test wydajności sieci Web. Pozwoli to na iterację wyników szukających określonych wartości, a następnie przechodzenie do tego samego żądania w teście wydajności sieci Web, aby wprowadzić modyfikacje. Możesz również zmodyfikować test wydajności sieci Web, jeśli chcesz dodać parametr kontekstowy lub Sparametryzuj części adresu URL.
 
     > [!NOTE]
-    > Jeśli modyfikujesz test wydajności sieci Web, należy również ustawić <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> Właściwość na true:`e.RecordedWebTestModified = true;`
+    > Jeśli modyfikujesz test wydajności sieci Web, należy również ustawić <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> Właściwość na true: `e.RecordedWebTestModified = true;`
 
 8. Dodaj więcej kodu według tego, co wtyczka Rejestrator ma wykonać po nagraniu w sieci Web. Na przykład można dodać kod do obsługi korelacji niestandardowej, jak pokazano w poniższym przykładzie. Możesz również utworzyć wtyczkę rejestratora dla takich elementów jak konwertowanie komentarzy do transakcji lub dodawanie reguł sprawdzania poprawności do testu wydajności sieci Web.
 

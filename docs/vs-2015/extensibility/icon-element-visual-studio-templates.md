@@ -1,5 +1,5 @@
 ---
-title: Icon, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Icon — element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,20 +13,20 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3de31652af7bc3fd2da3c5e67e37df8e9ff120e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204003"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Określa ścieżkę i nazwę pliku obrazu, który służy jako ikonę, która pojawia się w jednym **nowy projekt** lub **Dodaj nowy element** okno dialogowe dla szablonu.  
+Określa ścieżkę i nazwę pliku obrazu, który służy jako ikona, która pojawia się w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** , dla szablonu.  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<Ikona >  
+ \<Icon>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,8 +47,8 @@ Określa ścieżkę i nazwę pliku obrazu, który służy jako ikonę, która po
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Package`|Opcjonalny atrybut, scenariusze użytkownika wersji advanced.<br /><br /> Identyfikator GUID, który określa pakietu programu Visual Studio.|  
-|`ID`|Opcjonalny atrybut, scenariusze użytkownika wersji advanced.<br /><br /> Określa identyfikator zasobu. w programie Visual Studio|  
+|`Package`|Opcjonalny atrybut, dla zaawansowanych scenariuszy użytkownika.<br /><br /> Identyfikator GUID, który określa identyfikatora pakietu programu Visual Studio.|  
+|`ID`|Opcjonalny atrybut, dla zaawansowanych scenariuszy użytkownika.<br /><br /> Określa identyfikator zasobu programu Visual Studio.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  
@@ -57,18 +57,18 @@ Określa ścieżkę i nazwę pliku obrazu, który służy jako ikonę, która po
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
- Wartość tekstowa jest wymagany, chyba że `Package` i `ID` atrybuty są używane.  
+ Wartość tekstowa jest wymagana, jeśli `Package` nie `ID` są używane atrybuty i.  
   
- Tekst zawiera ścieżkę i nazwę Ikona szablonu, który będzie wyświetlany w **nowy projekt** okno dialogowe.  
+ Tekst zawiera ścieżkę i nazwę pliku ikony szablonu, która zostanie wyświetlona w oknie dialogowym **Nowy projekt** .  
   
 ## <a name="remarks"></a>Uwagi  
- `Icon` jest wymaganym elementem podrzędnym elementu `TemplateData`.  
+ `Icon` jest wymaganym elementem podrzędnym `TemplateData` .  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie pokazano metadanych szablon projektu służący do [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplikacji.  
+ W poniższym przykładzie przedstawiono metadane dla szablonu projektu dla [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplikacji.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -95,5 +95,5 @@ Określa ścieżkę i nazwę pliku obrazu, który służy jako ikonę, która po
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

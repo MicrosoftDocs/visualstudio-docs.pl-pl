@@ -1,5 +1,5 @@
 ---
-title: Przygotowywanie do debugowania projektów konsoli | Dokumentacja firmy Microsoft
+title: Przygotowanie do debugowania projektów konsoli | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: reference
@@ -19,48 +19,48 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916273"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Przygotowanie debugowania: Projekty konsoli (C#, C++, Visual Basic F#)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Przygotowanie debugowania: Projekty konsoli (C#, C++, Visual Basic, F #)
 
-Przygotowanie do debugowania projektu konsoli jest podobne do przygotowania do debugowania projektu systemu Windows, z kilkoma dodatkowymi zagadnieniami, takimi jak argumenty wiersza polecenia i jak wstrzymać debugowanie aplikacji. Aby uzyskać więcej informacji, zobacz [aplikacji z formularzem Windows](../debugger/debugging-preparation-windows-forms-applications.md), i [przygotowanie debugowania: Windows Forms aplikacji (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). Z powodu podobieństwa wszystkich aplikacji konsoli w tym temacie omówiono następujące typy projektu:
+Przygotowanie do debugowania projektu konsoli jest podobne do przygotowania do debugowania projektu systemu Windows, z kilkoma dodatkowymi zagadnieniami, takimi jak argumenty wiersza polecenia i jak wstrzymać debugowanie aplikacji. Aby uzyskać więcej informacji, zobacz [Windows Forms aplikacji](../debugger/debugging-preparation-windows-forms-applications.md)i [Przygotowanie debugowania: aplikacje Windows Forms (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). Ze względu na podobieństwo wszystkich aplikacji konsolowych w tym temacie omówiono następujące typy projektów:
 
-- C#, Visual Basic i F# aplikacji konsoli
+- Aplikacja konsolowa C#, Visual Basic i języka F #
 
-- Aplikacja Konsolowa w języku C++ (platforma .NET)
+- Aplikacja konsolowa C++ (.NET)
 
-- Aplikacja Konsolowa w języku C++ (Win32)
+- Aplikacja konsolowa C++ (Win32)
 
-  Aplikacja konsoli używa **konsoli** okna, aby akceptować dane wejściowe i wyświetlić komunikaty wyjściowe. Aby zapisać **konsoli** oknie, aplikacja musi używać **konsoli** obiekt, a nie obiektu debugowania. Można zapisać do **Visual Studio dane wyjściowe** okna, użyj obiektu debugowania w zwykły sposób. Pamiętaj, że wiesz, gdzie pisania aplikacji, lub możesz poszukać komunikatów w niewłaściwym miejscu. Aby uzyskać więcej informacji, zobacz [klasy konsoli](/dotnet/api/system.console), [klasy Debug](/dotnet/api/system.diagnostics.debug), i [okno danych wyjściowych](../ide/reference/output-window.md).
+  Aplikacja konsolowa używa okna **konsoli** , aby akceptować dane wejściowe i wyświetlać komunikaty wyjściowe. Aby zapisać w oknie **konsoli** , aplikacja musi używać obiektu **konsoli** zamiast obiektu debugowania. Aby zapisać w oknie **danych wyjściowych programu Visual Studio** , użyj obiektu Debug w zwykły sposób. Upewnij się, że wiesz, gdzie aplikacja jest zapisywany, lub Szukaj komunikatów w niewłaściwym miejscu. Aby uzyskać więcej informacji, zobacz [Klasa konsoli](/dotnet/api/system.console), [klasa debugowania](/dotnet/api/system.diagnostics.debug)i [okno dane wyjściowe](../ide/reference/output-window.md).
 
 ## <a name="set-command-line-arguments"></a>Ustawianie argumentów wiersza polecenia
 
-Trzeba określić argumenty wiersza polecenia dla całej aplikacji konsolowej. Aby uzyskać więcej informacji, zobacz [ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [ustawienia projektu dla konfiguracji debugowania języka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), lub [ustawienia projektu dla języka C# Debuguj konfiguracje ](../debugger/project-settings-for-csharp-debug-configurations.md).
+Może być konieczne określenie argumentów wiersza polecenia dla aplikacji konsolowej. Aby uzyskać więcej informacji, zobacz [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [Ustawienia projektu dla konfiguracji debugowania Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)lub [Ustawienia projektu dla konfiguracji debugowania w języku C#](../debugger/project-settings-for-csharp-debug-configurations.md).
 
-Tak jak wszystkie właściwości projektu, te argumenty są zachowywane między sesjami debugowania oraz między sesjami programu Visual Studio. W związku z tym, jeśli aplikacja konsoli jest taki, który ma zostać wcześniej debugowane, pamiętaj, że może być argumenty z poprzedniej sesji w  **\<Projekt > strony właściwości** okno dialogowe.
+Podobnie jak wszystkie właściwości projektu, te argumenty są utrwalane między sesjami debugowania i między sesjami programu Visual Studio. W związku z tym, jeśli aplikacja konsolowa jest już debugowana, należy pamiętać, że w oknie dialogowym ** \<Project> strony właściwości** mogą istnieć argumenty z poprzednich sesji.
 
 ## <a name="start-the-application"></a>Uruchamianie aplikacji
 
- Niektóre aplikacje konsoli uruchomić, zostało ukończone i zamknij. To zachowanie może nie dać wystarczająco dużo czasu na przerwanie wykonywania i debugowania. Aby można było debugować aplikację, użyj jednej z poniższych procedur do uruchamiania aplikacji:
+ Po uruchomieniu niektórych aplikacji konsolowych są one uruchamiane do zakończenia, a następnie opuszcza. Takie zachowanie może nie dać wystarczającej ilości czasu na przerwanie wykonywania i debugowania. Aby móc debugować aplikację, użyj jednej z następujących procedur, aby uruchomić aplikację:
 
-- Ustaw punkt przerwania w kodzie i uruchomić aplikację.
+- Ustaw punkt przerwania w kodzie i uruchom aplikację.
 
-- Rozpocznij swojej aplikacji za pomocą **F10** (**debugowania** > **Step Over**) lub **F11** (**debugowania**  >  **Step Into**), a następnie przejdź przez kod przy użyciu innych opcji, takich jak **Uruchom do kliknięcia**.
+- Uruchom aplikację przy użyciu klawisza **F10** (**Debuguj**  >  **krok**od) lub**Debug** **F11** (  >  **Wkrocz krok do**), a następnie przejdź przez kod przy użyciu innych opcji, takich jak **Uruchom do kliknięcia**.
 
-- W edytorze kodu, kliknij prawym przyciskiem myszy linię i wybierz **Uruchom do kursora**.
+- W edytorze kodu kliknij prawym przyciskiem myszy wiersz i wybierz polecenie **Uruchom do kursora**.
 
-  Podczas debugowania aplikacji konsoli można uruchomić aplikacji z poziomu wiersza polecenia, a nie z programu Visual Studio. W takim przypadku można uruchomić aplikacji z poziomu wiersza polecenia i do niej dołączyć debuger programu Visual Studio. Aby uzyskać więcej informacji, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+  Podczas debugowania aplikacji konsolowej można uruchomić aplikację z poziomu wiersza polecenia, a nie z programu Visual Studio. W takim przypadku można uruchomić aplikację z wiersza polecenia i dołączyć do niej debuger programu Visual Studio. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
-  Po uruchomieniu aplikacji konsoli w programie Visual Studio, **konsoli** czasami za oknem programu Visual Studio zostanie wyświetlone okno. Jeśli użytkownik próbuje uruchomić aplikację konsoli w programie Visual Studio i nic nie wydaje się, że może mieć miejsce, spróbuj przenieść okna programu Visual Studio.
+  Po uruchomieniu aplikacji konsolowej z programu Visual Studio okno **konsoli** czasami pojawia się za oknem programu Visual Studio. Jeśli spróbujesz uruchomić aplikację konsolową z programu Visual Studio i nic się nie dzieje, spróbuj przenieść okno programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)
-- [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
-- [Przygotowanie do debugowania C++ projektów](../debugger/debugging-preparation-visual-cpp-project-types.md)
+- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
+- [Przygotowanie do debugowania projektów C++](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [Typy projektów C#, F# i Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
-- [Ustawienia projektu dla konfiguracji debugowania w języku C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Ustawienia projektu dla konfiguracji debugowania w C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)

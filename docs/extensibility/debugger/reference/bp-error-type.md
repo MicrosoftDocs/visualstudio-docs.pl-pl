@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE | Dokumenty firmy Microsoft
+title: BP_ERROR_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e777e1f8cb67187a81f8f3bb4f79299939bfa31c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738078"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
@@ -62,10 +62,10 @@ public enum enum_BP_ERROR_TYPE {
 
 ## <a name="fields"></a>Pola
 `BPET_NONE`\
-Określa brak błędu punktu przerwania.
+Określa błąd punktu przerwania.
 
 `BPET_TYPE_WARNING`\
-Określa błąd punktu przerwania w stylu ostrzeżenia.
+Określa błąd punktu przerwania stylu ostrzeżenia.
 
 `BPET_TYPE_ERROR`\
 Określa błąd punktu przerwania w stylu błędu.
@@ -80,29 +80,29 @@ Określa błąd punktu przerwania o średniej ważności.
 Określa błąd punktu przerwania o niskiej ważności.
 
 `BPET_TYPE_MASK`\
-Określa błąd punktu przerwania w stylu maski.
+Określa błąd punktu przerwania stylu maski.
 
 `BPET_SEV_MASK`\
-Określa błąd punktu przerwania w stylu ważności maski.
+Określa błąd punktu przerwania w stylu z maską ważności.
 
 `BPET_GENERAL_WARNING`\
-Określa błąd punktu przerwania w stylu ostrzeżenia ogólnego.
+Określa błąd punktu przerwania w stylu ogólnym ostrzeżenia.
 
 `BPET_GENERAL_ERROR`\
-Określa błąd punktu przerwania w stylu błędu ogólnego.
+Określa błąd punktu przerwania z ogólnym stylem błędu.
 
 `BPET_ALL`\
-Określa wszystkie typy błędów punktu przerwania.
+Określa wszystkie typy błędów punktów przerwania.
 
 ## <a name="remarks"></a>Uwagi
-Wartości te mogą być łączone z bitowym `OR` i używane dla `dwType` elementu członkowskiego [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struktury. Przekazany jako parametr do [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) metody.
+Te wartości mogą być połączone z bitową `OR` i używane dla `dwType` elementu członkowskiego struktury [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) . Przekazanie jako parametr do metody [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) .
 
-Typ błędu punktu przerwania składa się z typu i ważności. Oznacza to, że typ błędu punktu przerwania nigdy `BPET_TYPE_ERROR`nie jest tylko typem `BPET_SEV_GENERAL`(na przykład ,) lub ważnością (na przykład) sam. `BPET_GENERAL_WARNING`i `BPET_GENERAL_ERROR` podaj wstępnie zdefiniowane wartości dla ogólnych punktów przerwania ostrzeżeń i błędów.
+Typ błędu punktu przerwania składa się z typu i ważności. Oznacza to, że typ błędu punktu przerwania nigdy nie jest tylko typem (na przykład, `BPET_TYPE_ERROR` ) lub ważności (na przykład `BPET_SEV_GENERAL` ). `BPET_GENERAL_WARNING` i `BPET_GENERAL_ERROR` Podaj wstępnie zdefiniowane wartości dla ogólnych ostrzeżeń i punktów przerwania błędów.
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

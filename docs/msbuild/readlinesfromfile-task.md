@@ -1,5 +1,5 @@
 ---
-title: ReadLinesFromFile Zadanie | Dokumenty firmy Microsoft
+title: ReadLinesFromFile — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c926c131fab101563841bea3362e88e27674226
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632904"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile — zadanie
@@ -31,20 +31,20 @@ Odczytuje listę elementów z pliku tekstowego.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli `ReadLinesFromFile` opisano parametry zadania.
+ W poniższej tabeli opisano parametry `ReadLinesFromFile` zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`File`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa plik do odczytu. Plik musi mieć jeden element w każdym wierszu.|
-|`Lines`|Opcjonalny parametr wyjściowy. <xref:Microsoft.Build.Framework.ITaskItem> `[]`<br /><br /> Zawiera wiersze odczytywane z pliku.|
+|`File`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa plik, który ma zostać odczytany. Plik musi zawierać jeden element w każdym wierszu.|
+|`Lines`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera wiersze odczytane z pliku.|
 
 ## <a name="remarks"></a>Uwagi
 
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 
- W poniższym przykładzie `ReadLinesFromFile` użyto zadania do utworzenia elementów z listy w pliku tekstowym. Elementy odczytywane z pliku `ItemsFromFile` są przechowywane w kolekcji elementów.
+ Poniższy przykład używa `ReadLinesFromFile` zadania do tworzenia elementów z listy w pliku tekstowym. Elementy odczytane z pliku są przechowywane w `ItemsFromFile` kolekcji elementów.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -67,6 +67,6 @@ Odczytuje listę elementów z pliku tekstowego.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
-- [Koncepcje MSBuild](../msbuild/msbuild-concepts.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)
+- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
 - [Zadania](../msbuild/msbuild-tasks.md)

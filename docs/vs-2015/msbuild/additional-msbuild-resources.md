@@ -1,5 +1,5 @@
 ---
-title: Dodatkowe zasoby MSBuild | Dokumenty firmy Microsoft
+title: Dodatkowe zasoby programu MSBuild | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -600,27 +600,27 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa25e4e15406c9091e90dfd8be5c2efd0a19e41b
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81445054"
 ---
 # <a name="additional-msbuild-resources"></a>Dodatkowe zasoby MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Jeśli próbujesz rozwiązać problem i nie możesz znaleźć potrzebnych informacji w dokumentacji, możesz zapoznać się z innymi zasobami, takimi jak artykuły z bazy wiedzy Knowledge Base, społeczność deweloperów lub pomoc techniczna dotycząca produktów.  
+Jeśli próbujesz rozwiązać problem i nie możesz znaleźć wymaganych informacji w dokumentacji, możesz zapoznać się z innymi zasobami, takimi jak artykuły z bazy wiedzy, społeczność deweloperów lub pomoc techniczna.  
   
 ## <a name="knowledge-base-articles"></a>Artykuły bazy wiedzy  
- Artykuły dotyczące problemów z produktem można przeszukiwać bazę wiedzy (KB) w internecie. Nie wszystkie problemy mają odpowiedni artykuł KB, ale błędy napotkane przez znaczną liczbę klientów są zazwyczaj udokumentowane. Dostęp do artykułów bazy wiedzy w witrynie sieci Web [bazy wiedzy Knowledge Base.](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query)  
+ Możesz wyszukać artykuły w bazie wiedzy (KB) w trybie online, aby zapoznać się z artykułami dotyczącymi problemów produktów. Nie wszystkie problemy mają odpowiadające im artykuły z bazy wiedzy, ale zazwyczaj udokumentowano błędy napotykane przez znaczną liczbę klientów. Dostęp do artykułów bazy wiedzy można uzyskać w witrynie sieci Web [bazy wiedzy](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) .  
   
 ## <a name="community-forums"></a>Fora społeczności  
- Fora umożliwiają interakcję z innymi deweloperami, a także z pracownikami firmy Microsoft. Jeśli napotkasz błąd, dla którego nie możesz znaleźć rozwiązania problemu, możesz opublikować pytania dotyczące problemu na forum. Można również przeszukać grupy dyskusyjne, aby sprawdzić, czy inne osoby opublikowały informacje o tym samym problemie. Dostęp do forum programu Visual Studio MSBuild można uzyskać w witrynie sieci Web [forów MSDN.](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/)  
+ Fora umożliwiają współpracę z innymi deweloperami, a także pracowników firmy Microsoft. Jeśli wystąpi błąd, którego nie można znaleźć, możesz ogłosić pytania dotyczące problemu na forum. Możesz również przeszukać grupy dyskusyjne, aby sprawdzić, czy inne osoby opublikowały ten sam problem. Możesz uzyskać dostęp do forum programu Visual Studio MSBuild w witrynie sieci Web [forów MSDN](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/) .  
   
- Dostęp do [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zasobów społeczności można uzyskać w witrynie sieci Web [Channel 9 MSBuild.](https://channel9.msdn.com/)  
+ Dostęp do [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zasobów społeczności można uzyskać w witrynie sieci Web programu [MSBuild kanału 9](https://channel9.msdn.com/) .  
   
 ## <a name="product-support"></a>Pomoc techniczna  
- Jeśli po wypróbowaniu innych zasobów nadal masz pytania, możesz skontaktować się z pomocą techniczną firmy [Microsoft,](https://support.microsoft.com/) odwiedzając witrynę pomocy i obsługi technicznej firmy Microsoft w sieci Web. Aby uzyskać informacje na temat pomocy technicznej dostępnej w Twojej okolicy, zobacz [Porozmawiaj z nami](../ide/talk-to-us.md).  
+ Jeśli nadal masz pytania po wypróbie innych zasobów, możesz skontaktować się z pomocą techniczną firmy Microsoft, odwiedzając witrynę sieci Web [pomocy i obsługi technicznej firmy Microsoft](https://support.microsoft.com/) . Aby uzyskać informacje o pomocy technicznej dotyczącej produktów dostępnych w Twoim regionie, zobacz [rozmowy z nami](../ide/talk-to-us.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozwiązywanie problemów z błędami obiektów docelowych programu .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

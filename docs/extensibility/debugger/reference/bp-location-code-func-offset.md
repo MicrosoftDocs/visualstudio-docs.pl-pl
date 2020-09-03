@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_FUNC_OFFSET | Dokumenty firmy Microsoft
+title: BP_LOCATION_CODE_FUNC_OFFSET | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,10 +15,10 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: 32331a5b628c27dc79d6a2e5919c8d268c96a3aa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737995"
 ---
 # <a name="bp_location_code_func_offset"></a>BP_LOCATION_CODE_FUNC_OFFSET
@@ -35,20 +35,20 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
 
 ## <a name="members"></a>Elementy członkowskie
 `bstrContext`\
-Kontekst punktu przerwania, zazwyczaj nazwa metody lub funkcji, jak widać na stosie wywołań.
+Kontekst punktu przerwania, zazwyczaj nazwa metody lub funkcji, jak pokazano na stosie wywołań.
 
 `pFuncPos`\
-[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) obiekt, który opisuje nazwę funkcji i położenie względne od początku funkcji.
+Obiekt [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) , który opisuje nazwę funkcji i względną pozycję od początku funkcji.
 
 ## <a name="remarks"></a>Uwagi
-Struktura ta jest członkiem [struktury BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) jako część związku.
+Ta struktura jest składową struktury [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) w ramach Unii.
 
-Element `pFuncPos` członkowski wskazuje, gdzie ustawić punkt przerwania funkcji.
+`pFuncPos`Element członkowski wskazuje, gdzie ustawić punkt przerwania funkcji.
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

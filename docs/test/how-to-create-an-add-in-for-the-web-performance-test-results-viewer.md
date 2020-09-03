@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 736c43a83a956c02b760b4909a427a82c6fa9e4c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287834"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Instrukcje: Tworzenie dodatku dla usługi Web Performance Wyniki testów Viewer
@@ -324,7 +324,7 @@ Dodatek Visual Studio utworzony w poprzedniej procedurze odwołuje się do proje
 
 Aby zwiększyć bezpieczeństwo, zapobiegając automatycznej aktywacji szkodliwych dodatków, program Visual Studio udostępnia ustawienia na stronie **Opcje narzędzi** o nazwie **Zabezpieczenia dodatków/makr**.
 
-Ponadto ta strona opcji pozwala określić foldery, w których program Visual Studio wyszukuje *. *Pliki rejestracji dodatków. Zwiększa to bezpieczeństwo przez umożliwienie ograniczenia lokalizacji w miejscu *. *Pliki rejestracji dodatków można odczytać. Pozwala to zapobiec złośliwemu *. Pliki dodatków* z niezamierzonego użycia.
+Ponadto ta strona opcji pozwala określić foldery, w których program Visual Studio wyszukuje *. * Pliki rejestracji dodatków. Zwiększa to bezpieczeństwo przez umożliwienie ograniczenia lokalizacji w miejscu *. * Pliki rejestracji dodatków można odczytać. Pozwala to zapobiec złośliwemu *. Pliki dodatków* z niezamierzonego użycia.
 
 **Ustawienia zabezpieczeń dodatku**
 

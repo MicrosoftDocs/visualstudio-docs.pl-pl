@@ -1,5 +1,5 @@
 ---
-title: Icon, Element | Dokumentacja firmy Microsoft
+title: Ikona — element | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ca5ced87596b5e40ae70e3faa06e58493da3d8ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203992"
 ---
 # <a name="icon-element"></a>Icon, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Atrybut guid tagu ikona jest identyfikatorem guid zdefiniowanych mapy bitowej.  Atrybut id zaznacza gniazda paska mapy bitowej. Ten element jest opcjonalny.  W przypadku pominięcia tego elementu wartość **guidOfficeIcon:msotcidNoIcon** będzie wynikać.  
+Atrybut GUID tagu Icon jest identyfikatorem GUID zdefiniowanej mapy bitowej.  Atrybut ID wybiera miejsce na pasku mapy bitowej. Ten element jest opcjonalny.  Jeśli ten element zostanie pominięty, wartość **guidOfficeIcon: msotcidNoIcon** zostanie implikowana.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,8 +36,8 @@ Atrybut guid tagu ikona jest identyfikatorem guid zdefiniowanych mapy bitowej.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagana. Identyfikator guid zdefiniowanych mapy bitowej.|  
-|identyfikator|Wymagany. Wybiera gniazda na pasku mapy bitowej.|  
+|guid|Wymagany. Identyfikator GUID zdefiniowanej mapy bitowej.|  
+|identyfikator|Wymagany. Wybiera miejsce na pasku mapy bitowej.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   

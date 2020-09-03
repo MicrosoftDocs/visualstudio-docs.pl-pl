@@ -10,15 +10,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03de870da2cd75c8a254010db682903f314cc10d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287977"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Instrukcje: tworzenie wtyczki na poziomie żądania
 
-*Żądania* to instrukcje deklaracyjne, które stanowią testy wydajności sieci Web. Wtyczki testów wydajności sieci Web umożliwiają izolowanie i ponowne użycie kodu poza głównymi instrukcjami deklaracyjne w teście wydajności sieci Web. Można utworzyć wtyczki i dodać je do indywidualnego żądania, a także do testu wydajności sieci Web, który go zawiera. Dostosowana *wtyczka żądania* oferuje sposób wywoływania kodu, ponieważ określone żądanie jest uruchamiane w teście wydajności sieci Web.
+*Żądania* to instrukcje deklaracyjne, które stanowią testy wydajności sieci Web. Wtyczki testów wydajności sieci Web umożliwiają izolowanie i ponowne użycie kodu poza głównymi instrukcjami deklaracyjne w teście wydajności sieci Web. Można utworzyć wtyczki i dodać je do indywidualnego żądania, a także do testu wydajności sieci Web, który go zawiera. Dostosowana  *wtyczka żądania* oferuje sposób wywoływania kodu, ponieważ określone żądanie jest uruchamiane w teście wydajności sieci Web.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS | Dokumenty firmy Microsoft
+title: BP_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 62626ff75a4545d89835d3136649191004291f8f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738063"
 ---
 # <a name="bp_flags"></a>BP_FLAGS
-Zawiera opcjonalne flagi, które mogą służyć do określania dodatkowych informacji podczas ustawiania punktu przerwania.
+Zapewnia opcjonalne flagi, które mogą być używane do określania dodatkowych informacji podczas ustawiania punktu przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -49,20 +49,20 @@ public enum enum_BP_FLAGS {
 Określa brak flagi punktu przerwania.
 
 `BP_FLAG_MAP_DOCPOSITION`\
-Określa, że aparat debugowania (DE) powinien mapować punkt przerwania przy użyciu położenia dokumentu. Dotyczy to tylko punktów przerwania ustawionych w plikach źródłowych zorientowanych na skrypty, takich jak Active Server Pages (ASP).
+Określa, że aparat debugowania (DE) powinien mapować punkt przerwania przy użyciu pozycji dokumentu. Ma to zastosowanie tylko do punktów przerwania ustawionych w plikach źródłowych zorientowanych na skrypty, takich jak strony Active Server (ASP).
 
 `BP_FLAG_DONT_STOP`\
-Określa, że punkt przerwania powinny być przetwarzane przez aparat debugowania, ale aparat debugowania ostatecznie nie powinien zatrzymać tam (oznacza to, że [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) obiekt zdarzenia nie powinny być wysyłane). Ta flaga jest przeznaczona do użycia głównie z punktami śledzenia.
+Określa, że punkt przerwania powinien być przetwarzany przez aparat debugowania, ale aparat debugowania ostatecznie nie powinien go zatrzymać (to oznacza, że obiekt zdarzenia [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) nie powinien być wysyłany). Ta flaga jest przeznaczona do użycia głównie z punkty śledzenia.
 
 ## <a name="remarks"></a>Uwagi
-Używany dla `dwFlags` członków [struktur BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
+Używane dla `dwFlags` elementu członkowskiego struktur [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
-Wartości te mogą być łączone z bitowym `OR`.
+Te wartości mogą być połączone z bitową `OR` .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

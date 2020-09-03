@@ -1,5 +1,5 @@
 ---
-title: ATTACH_REASON | Dokumenty firmy Microsoft
+title: ATTACH_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ca871d9dac2b6f37018af925eece5c1a6f3d1585
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738122"
 ---
 # <a name="attach_reason"></a>ATTACH_REASON
-Określa przyczynę dołączania aparatu debugowania (DE) do węzła programu.
+Określa przyczynę, z którą aparat debugowania ma zostać dołączony do węzła programu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -52,15 +52,15 @@ Dołącz, ponieważ proces jest obecnie w trybie debugowania.
 Dołącz, ponieważ proces został uruchomiony.
 
 `ATTACH_REASON_USER`\
-Dołącz z powodu żądania użytkownika.
+Dołącz ze względu na żądanie użytkownika.
 
 ## <a name="remarks"></a>Uwagi
-Wartości te są używane jako parametr do [Dołączania](../../../extensibility/debugger/reference/idebugengine2-attach.md) i [Dołączanie](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) metody.
+Te wartości są używane jako parametr w metodach [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) i [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

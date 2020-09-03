@@ -1,5 +1,5 @@
 ---
-title: XDCZadumy | Dokumenty firmy Microsoft
+title: XDCMake — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,38 +20,38 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c41bfc2015f29cbb73b33df3594b3a3430af3f3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630655"
 ---
 # <a name="xdcmake-task"></a>XDCMake — Zadanie
 
-Zawija narzędzie Dokumentacja XML *(xdcmake.exe),* które scala pliki dokumentu XML *(xdc)* w plik *xml.*
+Zawija narzędzie dokumentacji XML (*xdcmake.exe*), które scala pliki komentarzy dokumentów XML (*. xdc*) w pliku *XML* .
 
- Plik *.xdc* jest tworzony po podaniu komentarzy dokumentacji w kodzie źródłowym języka C++ i kompilacji przy użyciu opcji kompilatora [/doc.](/cpp/build/reference/doc-process-documentation-comments-c-cpp) Aby uzyskać więcej informacji, zobacz [XDCMake reference](/cpp/build/reference/xdcmake-reference), [Strony właściwości narzędzia generator dokumentów XML](/cpp/build/reference/xml-document-generator-tool-property-pages)i opcja pomocy wiersza polecenia (**/?**) dla *pliku xdcmake.exe*.
+ Plik *. xdc* jest tworzony podczas dostarczania komentarzy do dokumentacji w kodzie źródłowym języka C++ i kompilowania przy użyciu opcji kompilatora [/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp) . Aby uzyskać więcej informacji, zobacz [odwołania xdcmake](/cpp/build/reference/xdcmake-reference), [strony właściwości narzędzia generatora dokumentów XML](/cpp/build/reference/xml-document-generator-tool-property-pages)i opcji pomocy wiersza polecenia (**/?**) dla *xdcmake.exe*.
 
 ## <a name="remarks"></a>Uwagi
 
- Domyślnie narzędzie *xdcmake.exe* obsługuje kilka opcji wiersza polecenia. Dodatkowe opcje są obsługiwane po określeniu **/old** opcji wiersza polecenia.
+ Domyślnie narzędzie *xdcmake.exe* obsługuje kilka opcji wiersza polecenia. Dodatkowe opcje są obsługiwane w przypadku określenia opcji wiersza polecenia **/Old** .
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli opisano parametry zadania **XDCMake.**
+ W poniższej tabeli opisano parametry zadania **xdcmake** .
 
 |Parametr|Opis|
 |---------------|-----------------|
-|**AdditionalDocumentFile**|Parametr **Opcjonalny ciąg[].**<br /><br /> Określa jeden lub więcej dodatkowych plików *xdc* do scalenia.<br /><br /> Aby uzyskać więcej informacji, zobacz opis **dodatkowych plików dokumentów** na stronach właściwości Narzędzia [generatora dokumentów XML](/cpp/build/reference/xml-document-generator-tool-property-pages). Zobacz też opcje wiersza polecenia **/old** i **/Fs** dla *pliku xdcmake.exe*.|
-|**Dodatkoweopcje**|Opcjonalny parametr **String.**<br /><br /> Lista opcji określonych w wierszu polecenia. Na przykład\</ option1>\</ option2\<> / option#>. Ten parametr służy do określania opcji, które nie są reprezentowane przez żaden inny parametr zadania **XDCMake.**<br /><br /> Aby uzyskać więcej informacji, zobacz [XDCMake reference](/cpp/build/reference/xdcmake-reference), [strony właściwości narzędzia XML Generator dokumentów](/cpp/build/reference/xml-document-generator-tool-property-pages)i pomoc wiersza polecenia (**/?**) dla *pliku xdcmake.exe*.|
-|**DocumentLibraryZależności**|Opcjonalny parametr **logiczny.**<br /><br /> Jeśli `true` bieżący projekt ma zależność od projektu biblioteki statycznej (*lib*) w rozwiązaniu, pliki *.xdc* dla tego projektu biblioteki są zawarte w danych wyjściowych pliku *xml* dla bieżącego projektu.<br /><br /> Aby uzyskać więcej informacji, zobacz opis **zależności biblioteki dokumentów** na [stronach właściwości Narzędzia generatora dokumentów XML](/cpp/build/reference/xml-document-generator-tool-property-pages).|
-|**Outputfile**|Opcjonalny parametr **String.**<br /><br /> Zastępuje domyślną nazwę pliku wyjściowego. Nazwa domyślna pochodzi od nazwy pierwszego pliku *xdc,* który jest przetwarzany.<br /><br /> Aby uzyskać więcej informacji, zobacz **/out:\<opcja>nazwa pliku** w [XDCMake reference](/cpp/build/reference/xdcmake-reference). Zobacz też opcje wiersza polecenia **/old** i **/Fo** dla *pliku xdcmake.exe*.|
-|**Nazwaprojektu**|Opcjonalny parametr **String.**<br /><br /> Nazwa bieżącego projektu.|
-|**SlashOld (Cięcie)**|Opcjonalny parametr **logiczny.**<br /><br /> Jeśli `true`program , włącza dodatkowe opcje *xdcmake.exe.*<br /><br /> Aby uzyskać więcej informacji, zobacz **/old** command-line option for *xdcmake.exe*.|
-|**Źródeł**|Wymagany parametr interfejsu `ITaskItem[]`.<br /><br /> Definiuje tablicę elementów pliku źródłowego MSBuild, które mogą być używane i emitowane przez zadania.|
-|**SuppressStartupBanner (SuppressStartupBanner)**|Opcjonalny parametr **logiczny.**<br /><br /> Jeśli `true`program Zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji po uruchomieniu zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/nologo** opcja w [XDCMake odwołania](/cpp/build/reference/xdcmake-reference).|
-|**TrackerLogDirectory (TrackerLogDirectory)**|Opcjonalny parametr **String.**<br /><br /> Określa katalog dziennika modułu śledzącego.|
+|**AdditionalDocumentFile**|Opcjonalny parametr **String []** .<br /><br /> Określa co najmniej jeden plik *. xdc* do scalenia.<br /><br /> Aby uzyskać więcej informacji, zobacz Opis **dodatkowych plików dokumentów** w [stronach właściwości narzędzia Generator dokumentów XML](/cpp/build/reference/xml-document-generator-tool-property-pages). Zobacz również opcje wiersza polecenia **/Old** i **/FS** dla *xdcmake.exe*.|
+|**AdditionalOptions**|Opcjonalny parametr **ciągu** .<br /><br /> Lista opcji określona w wierszu polecenia. Na przykład/ \<option1>  / \<option2>  / \<option#> . Użyj tego parametru, aby określić opcje, które nie są reprezentowane przez żaden inny parametr zadania **xdcmake** .<br /><br /> Aby uzyskać więcej informacji, zobacz [odwołania xdcmake](/cpp/build/reference/xdcmake-reference), [strony właściwości narzędzia generatora dokumentów XML](/cpp/build/reference/xml-document-generator-tool-property-pages)i pomoc w wierszu polecenia (**/?**) dla *xdcmake.exe*.|
+|**DocumentLibraryDependencies**|Opcjonalny parametr **logiczny** .<br /><br /> Jeśli `true` bieżący projekt ma zależność od projektu biblioteki statycznej (*. lib*) w rozwiązaniu, pliki *. xdc* dla tego projektu biblioteki są zawarte w pliku *XML* wyjściowym dla bieżącego projektu.<br /><br /> Aby uzyskać więcej informacji, zobacz Opis **zależności biblioteki dokumentów** w [stronach właściwości narzędzia Generator dokumentów XML](/cpp/build/reference/xml-document-generator-tool-property-pages).|
+|**Plik_wyjściowy**|Opcjonalny parametr **ciągu** .<br /><br /> Zastępuje domyślną nazwę pliku wyjściowego. Nazwa domyślna pochodzi od nazwy pierwszego pliku *. xdc* , który jest przetwarzany.<br /><br /> Aby uzyskać więcej informacji, zobacz polecenie **/out \<filename> :** w [xdcmake Reference](/cpp/build/reference/xdcmake-reference). Zapoznaj się również z opcjami wiersza polecenia **/Old** i **/fo** dla *xdcmake.exe*.|
+|**ProjectName**|Opcjonalny parametr **ciągu** .<br /><br /> Nazwa bieżącego projektu.|
+|**SlashOld**|Opcjonalny parametr **logiczny** .<br /><br /> Jeśli `true` , włącza dodatkowe opcje *xdcmake.exe* .<br /><br /> Aby uzyskać więcej informacji, zobacz **/Old** opcji wiersza polecenia dla *xdcmake.exe*.|
+|**Źródła**|Wymagany parametr interfejsu `ITaskItem[]`.<br /><br /> Definiuje tablicę elementów plików źródłowych MSBuild, które mogą być używane i emitowane przez zadania.|
+|**SuppressStartupBanner**|Opcjonalny parametr **logiczny** .<br /><br /> Jeśli `true` , program zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji, gdy zadanie zostanie uruchomione.<br /><br /> Aby uzyskać więcej informacji, zobacz **/nologo** Option in [xdcmake Reference](/cpp/build/reference/xdcmake-reference).|
+|**Katalog trackerlogdirectory**|Opcjonalny parametr **ciągu** .<br /><br /> Określa katalog dziennika śledzenia.|
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

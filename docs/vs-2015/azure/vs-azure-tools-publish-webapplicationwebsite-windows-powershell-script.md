@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 3d56cfce70b0723b636b9b8ef7c6f3917015bf66
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915546"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (skrypt programu Windows PowerShell)
@@ -32,17 +32,17 @@ Publish-WebApplicationWebSite
 -Verbose
 ```
 
-## <a name="configuration"></a>Konfiguracja
+## <a name="configuration"></a>Konfigurowanie
 Ścieżka do pliku konfiguracji JSON opisującego Szczegóły wdrożenia.
 
 | Parametr | Wartość domyślna |
 | --- | --- |
 | Aliasy |brak |
-| Wymagany? |true |
-| Pozycja |nazwane |
+| Wymagane? |true |
+| Położenie |nazwane |
 | Wartość domyślna |brak |
-| Akceptujesz dane wejściowe potoku? |{1&gt;false&lt;1} |
-| Akceptować symbole wieloznaczne? |{1&gt;false&lt;1} |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
 ## <a name="subscriptionname"></a>SubscriptionName
 Nazwa subskrypcji platformy Azure, w której chcesz utworzyć witrynę sieci Web.
@@ -50,23 +50,23 @@ Nazwa subskrypcji platformy Azure, w której chcesz utworzyć witrynę sieci Web
 | Parametr | Wartość domyślna |
 | --- | --- |
 | Aliasy |brak |
-| Wymagany? |{1&gt;false&lt;1} |
-| Pozycja |nazwane |
+| Wymagane? |fałsz |
+| Położenie |nazwane |
 | Wartość domyślna |brak |
-| Akceptujesz dane wejściowe potoku? |{1&gt;false&lt;1} |
-| Akceptować symbole wieloznaczne? |{1&gt;false&lt;1} |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
-## <a name="webdeploypackage"></a>WebDeployPackage
+## <a name="webdeploypackage"></a>Webdeploypackage została
 Ścieżka do pakietu wdrożeniowego sieci Web do opublikowania w witrynie sieci Web. Ten pakiet można utworzyć przy użyciu Kreatora publikacji w sieci Web w programie Visual Studio. Aby uzyskać więcej informacji, zobacz Rozpoczynanie [pracy z usługą Azure Cloud Services i ASP.NET](vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md).
 
 | Parametr | Wartość domyślna |
 | --- | --- |
 | Aliasy |brak |
-| Wymagany? |{1&gt;false&lt;1} |
-| Pozycja |nazwane |
+| Wymagane? |fałsz |
+| Położenie |nazwane |
 | Wartość domyślna |brak |
-| Akceptujesz dane wejściowe potoku? |{1&gt;false&lt;1} |
-| Akceptować symbole wieloznaczne? |{1&gt;false&lt;1} |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
 ## <a name="databaseserverpassword"></a>DatabaseServerPassword
 Nazwa użytkownika i hasło do bazy danych SQL na platformie Azure.
@@ -74,11 +74,11 @@ Nazwa użytkownika i hasło do bazy danych SQL na platformie Azure.
 | Parametr | Wartość domyślna |
 | --- | --- |
 | Aliasy |brak |
-| Wymagany? |{1&gt;false&lt;1} |
-| Pozycja |nazwane |
+| Wymagane? |fałsz |
+| Położenie |nazwane |
 | Wartość domyślna |brak |
-| Akceptujesz dane wejściowe potoku? |{1&gt;false&lt;1} |
-| Akceptować symbole wieloznaczne? |{1&gt;false&lt;1} |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
 ## <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 Jeśli wartość jest równa true, Wydrukuj komunikaty ze skryptu do strumienia wyjściowego.
@@ -86,11 +86,11 @@ Jeśli wartość jest równa true, Wydrukuj komunikaty ze skryptu do strumienia 
 | Parametr | Wartość domyślna |
 | --- | --- |
 | Aliasy |brak |
-| Wymagany? |{1&gt;false&lt;1} |
-| Pozycja |nazwane |
-| Wartość domyślna |{1&gt;false&lt;1} |
-| Akceptujesz dane wejściowe potoku? |{1&gt;false&lt;1} |
-| Akceptować symbole wieloznaczne? |{1&gt;false&lt;1} |
+| Wymagane? |fałsz |
+| Położenie |nazwane |
+| Wartość domyślna |fałsz |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
 ## <a name="remarks"></a>Uwagi
 Aby uzyskać pełne wyjaśnienie, jak używać skryptu do tworzenia środowisk deweloperskich i testowych, zobacz [Używanie skryptów programu Windows PowerShell do publikowania w środowiskach deweloperskich i testowych](vs-azure-tools-publishing-using-powershell-scripts.md).

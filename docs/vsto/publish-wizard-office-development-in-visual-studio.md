@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77558177"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Kreator publikacji (Office Development w Visual Studio)
@@ -39,14 +39,14 @@ ms.locfileid: "77558177"
 
 - Ścieżka względna lub bezwzględna w standardowym formacie systemu Windows, na przykład *C:\Deploy\MyApplication* lub *\MyApplication*.
 
-- Ścieżka Universal Naming Convention (UNC), taka jak *\\\ServerName\MyApplication\\* .
+- Ścieżka Universal Naming Convention (UNC), taka jak * \\ \ServerName\MyApplication \\ *.
 
-- Adres URL witryny sieci Web, na przykład `http://www.contoso.com/MyApplication`.
+- Adres URL witryny sieci Web, na przykład `http://www.contoso.com/MyApplication` .
 
-  Domyślnie lokalizacja publikowania jest *http://localhost/projectname/* , jeśli są zainstalowane usługi IIS lub jeśli nie zainstalowano usług IIS.
+  Domyślnie lokalizacja publikowania to *http://localhost/projectname/* , czy program IIS jest zainstalowany, lub polecenie Publikuj \ katalog, jeśli nie zainstalowano usług IIS.
 
 > [!NOTE]
-> Jeśli na komputerze docelowym jest uruchomiony system Windows Vista, należy wziąć pod uwagę więcej zagadnień. Aby użyć opcji publikowania lokalnego, musisz być administratorem na komputerze z systemem Windows Vista. Ponadto domyślną lokalizacją jest zawsze katalog *publikowania\\* niezależnie od tego, czy są zainstalowane usługi IIS.
+> Jeśli na komputerze docelowym jest uruchomiony system Windows Vista, należy wziąć pod uwagę więcej zagadnień. Aby użyć opcji publikowania lokalnego, musisz być administratorem na komputerze z systemem Windows Vista. Ponadto domyślną lokalizacją jest zawsze katalog *publikowania \\ * , niezależnie od tego, czy są zainstalowane usługi IIS.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Jaka jest domyślna ścieżka instalacji na komputerach użytkowników końcowych?
  Ścieżka instalacji jest opcjonalna. Możesz ustawić ścieżkę instalacji później, jeśli wolisz. Aby uzyskać szczegółowe informacje, zobacz [jak to zrobić: zmiana ścieżki instalacji rozwiązania pakietu Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
@@ -63,5 +63,5 @@ ms.locfileid: "77558177"
 
 ## <a name="see-also"></a>Zobacz też
 - [Wdrażanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Strona publikowanie, programowanie projektów &#40;Office Designer w programie Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
+- [Strona publikowania, Projektant projektu &#40;Office Development w programie Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 - [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)
