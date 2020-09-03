@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccRunScc | Dokumentacja firmy Microsoft
+title: Funkcja SccRunScc | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d2b36bd226d4eb19a694347edcba51812ee6f771
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190871"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ta funkcja wywołuje narzędzia administracji kontroli źródła.  
+Ta funkcja wywołuje narzędzie administracyjne kontroli źródła.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,36 +37,36 @@ SCCRTN SccRunScc(
   
 #### <a name="parameters"></a>Parametry  
  pvContext  
- [in] Struktura kontekście wtyczki kontroli źródła.  
+ podczas Struktura kontekstu wtyczki kontroli źródła.  
   
- hWnd  
- [in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.  
+ Właściwość  
+ podczas Uchwyt okna środowiska IDE, który może być używany przez wtyczkę kontroli źródła jako element nadrzędny dla dowolnych okien dialogowych, które zapewnia.  
   
- Niepowodzeń  
- [in] Liczba plików określonych w `lpFileNames` tablicy.  
+ nFiles  
+ podczas Liczba plików określona w `lpFileNames` tablicy.  
   
  lpFileNames  
- [in] Tablica nazw wybranego pliku.  
+ podczas Tablica wybranych nazw plików.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|SCC_OK|Pomyślnie wywołano narzędzia administracji kontroli źródła.|  
+|SCC_OK|Pomyślnie wywołano narzędzie administracyjne kontroli źródła.|  
 |SCC_I_OPERATIONCANCELED|Operacja została anulowana.|  
 |SCC_E_INITIALIZEFAILED|Nie można zainicjować systemu kontroli źródła.|  
-|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby.|  
-|SCC_E_CONNECTIONFAILURE|Nie można nawiązać połączenia z systemu kontroli źródła.|  
-|SCC_E_FILENOTCONTROLLED|Wybrany plik nie jest pod kontrolą źródła.|  
-|SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony błąd.|  
+|SCC_E_ACCESSFAILURE|Wystąpił problem z uzyskaniem dostępu do systemu kontroli źródła prawdopodobnie z powodu problemów z siecią lub rywalizacją.|  
+|SCC_E_CONNECTIONFAILURE|Nie można nawiązać połączenia z systemem kontroli źródła.|  
+|SCC_E_FILENOTCONTROLLED|Wybrany plik nie znajduje się pod kontrolą źródła.|  
+|SCC_E_NONSPECIFICERROR|Nieokreślony błąd.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta funkcja umożliwia obiektowi wywołującemu dostęp do pełnego zakresu funkcji systemu kontroli źródła, za pomocą narzędzia do administrowania zewnętrznych. Jeśli system kontroli źródła nie ma interfejsu użytkownika, wtyczka do kontroli źródła może implementować interfejs do wykonywania funkcji administracyjnych niezbędne.  
+ Ta funkcja umożliwia obiektowi wywołującemu dostęp do pełnego zakresu funkcji systemu kontroli źródła za pomocą zewnętrznego narzędzia administracyjnego. Jeśli system kontroli źródła nie ma interfejsu użytkownika, wtyczka do kontroli źródła może zaimplementować interfejs do wykonywania niezbędnych funkcji administracyjnych.  
   
- Ta funkcja jest wywoływana z liczbą i Tablica nazw plików dla aktualnie wybranych plików. Jeśli narzędzie administracyjne obsługuje tę funkcję, lista plików może służyć do wstępnego wyboru plików w interfejs administracyjny; w przeciwnym razie listy można zignorować.  
+ Ta funkcja jest wywoływana z liczbą i tablicą nazw plików dla aktualnie wybranych plików. Jeśli narzędzie administracyjne je obsługuje, lista plików może służyć do prewybierania plików w interfejsie administracyjnym. w przeciwnym razie lista może być ignorowana.  
   
- Ta funkcja jest zwykle wywoływane, gdy użytkownik wybierze **Uruchom \<serwera kontroli źródła >** z **pliku** -> **kontroli źródła** menu. To **Uruchom** opcję menu, które mogą być zawsze wyłączone lub nawet ukryte przez ustawienie wpisu rejestru. Zobacz [jak: Zainstaluj wtyczkę kontroli źródła](../extensibility/internals/how-to-install-a-source-control-plug-in.md) Aby uzyskać szczegółowe informacje. Ta funkcja jest wywoływana tylko wtedy, gdy [SccInitialize](../extensibility/sccinitialize-function.md) zwraca `SCC_CAP_RUNSCC` bit możliwości (zobacz [flagi możliwości](../extensibility/capability-flags.md) Aby uzyskać szczegółowe informacje na ten temat i inne możliwości usługi bits).  
+ Ta funkcja jest zazwyczaj wywoływana, gdy użytkownik wybierze **opcję \<Source Control Server> Uruchom** z **File**  ->  menu**kontroli źródła** pliku. Ta opcja menu **uruchamiania** może być zawsze wyłączona lub nawet ukryta przez ustawienie wpisu rejestru. Zobacz [jak: zainstalować wtyczkę kontroli źródła,](../extensibility/internals/how-to-install-a-source-control-plug-in.md) Aby uzyskać szczegółowe informacje. Ta funkcja jest wywoływana tylko wtedy, gdy [SccInitialize](../extensibility/sccinitialize-function.md) zwraca `SCC_CAP_RUNSCC` bit możliwości (zobacz [flagi możliwości](../extensibility/capability-flags.md) , aby uzyskać szczegółowe informacje o tej i innych bitach możliwości).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   

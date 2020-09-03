@@ -10,27 +10,27 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 624fffb9c86a7ad874f27797dfd5251c8585870f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664027"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Przewodnik: Tworzenie aplikacji klasycznej WPF połączonej z usługą mobilną platformy Azure
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Przewodnik: tworzenie aplikacji klasycznej WPF podłączonej do usługi mobilnej platformy Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Za pomocą Windows Presentation Foundation (WPF) można szybko utworzyć nowoczesne aplikacje klasyczne, które używają usługi mobilnej platformy Azure do przechowywania i dostarczania danych.
 
-## <a name="Requirements"></a> Wymagania wstępne
+## <a name="prerequisites"></a><a name="Requirements"></a> Wymagany
  Aby ukończyć ten przewodnik, musisz wykonać następujące czynności:
 
 - Visual Studio 2015 — dowolna wersja, która obsługuje programowanie WPF.
 
-- Aktywne konto Microsoft Azure.
+- Aktywne konto platformy Microsoft Azure.
 
   - W [tym miejscu](https://azure.microsoft.com/pricing/free-trial/)możesz utworzyć konto bezpłatnej wersji próbnej.
 
-  - Możesz aktywować [korzyści dla subskrybentów MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Subskrypcja MSDN daje środki na korzystanie z płatnych usług platformy Azure.
+  - Możesz aktywować [korzyści dla subskrybentów MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). W ramach subskrypcji MSDN co miesiąc otrzymasz środki, które możesz przeznaczyć na płatne usługi platformy Azure.
 
 ## <a name="create-a-project-and-add-references"></a>Utwórz projekt i Dodaj odwołania
  Pierwszym krokiem jest utworzenie projektu WPF i dodanie pakietu NuGet, który umożliwia nawiązywanie połączenia z usługą Azure Mobile Services.
@@ -39,11 +39,11 @@ Za pomocą Windows Presentation Foundation (WPF) można szybko utworzyć nowocze
 
 1. Na pasku menu wybierz **plik**, **Nowy**, **projekt**.
 
-2. W oknie dialogowym **Nowy projekt** rozwiń węzeł  **C# Wizualizacja** lub **Visual Basic** i wybierz węzeł **systemu Windows** , a następnie rozwiń węzeł **Windows** i wybierz węzeł **klasyczny pulpit** .
+2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual C#** lub **Visual Basic** , a następnie wybierz węzeł **Windows** , a następnie rozwiń węzeł **Windows** i wybierz węzeł **klasyczny pulpit** .
 
 3. Z listy szablon wybierz szablon **Aplikacja WPF** .
 
-4. W polu tekstowym **Nazwa** wprowadź `WPFQuickStart`, a następnie wybierz przycisk **OK** .
+4. W polu tekstowym **Nazwa** wprowadź wartość `WPFQuickStart` , a następnie wybierz przycisk **OK** .
 
      Projekt zostanie utworzony, a pliki projektu zostaną dodane do **Eksplorator rozwiązań**i zostanie wyświetlony Projektant domyślnego okna aplikacji o nazwie **MainWindow. XAML** .
 
@@ -51,7 +51,7 @@ Za pomocą Windows Presentation Foundation (WPF) można szybko utworzyć nowocze
 
 1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła **odwołania** i wybierz polecenie **Zarządzaj pakietami NuGet**.
 
-2. W **Menedżerze pakietów NuGet**wybierz pole **wyszukiwania** i wprowadź `mobileservices`.
+2. W **Menedżerze pakietów NuGet**wybierz pole **wyszukiwania** i wprowadź `mobileservices` .
 
 3. W lewym okienku wybierz **windowsazure. MobileServices**, a następnie w okienku po prawej stronie wybierz przycisk **Instaluj** .
 
@@ -72,15 +72,15 @@ Za pomocą Windows Presentation Foundation (WPF) można szybko utworzyć nowocze
 
 1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła **WPFQuickStart** , a następnie wybierz **Dodaj**, **Nowy folder**.
 
-2. Nazwij folder `Common`.
+2. Nazwij folder `Common` .
 
 3. Otwórz menu skrótów dla **wspólnego** folderu i wybierz polecenie **Dodaj**, **kontrolkę użytkownika**.
 
-4. W oknie dialogowym **Dodaj nowy element** wybierz pole Nazwa i wprowadź `QuickStartTask`, a następnie wybierz przycisk **Dodaj** .
+4. W oknie dialogowym **Dodaj nowy element** wybierz pole Nazwa i wprowadź `QuickStartTask` , a następnie wybierz przycisk **Dodaj** .
 
      Kontrolka użytkownika zostanie dodana do projektu, a plik **QuickStartTask. XAML** zostanie otwarty w projektancie.
 
-5. W dolnym okienku projektanta wybierz Tagi `<Grid>` i `</Grid>` i zastąp je następującym kodem XAML:
+5. W dolnym okienku projektanta wybierz `<Grid>` `</Grid>` znaczniki i zastąp je następującym kodem XAML:
 
     ```xaml
     <Grid VerticalAlignment="Top">
@@ -102,7 +102,7 @@ Za pomocą Windows Presentation Foundation (WPF) można szybko utworzyć nowocze
 
 6. W **Eksplorator rozwiązań**rozwiń węzeł **QuickStartTask. XAML** i Otwórz plik **QuickStartTask.XAML.cs** lub **QuickStartTask. XAML. vb** .
 
-7. W edytorze kodu Zastąp przestrzeń nazw `namespace WPFQuickStart.Common` (C#) lub `Public Class QuickStartTask` (VB) przy użyciu następującego kodu:
+7. W edytorze kodu Zastąp `namespace WPFQuickStart.Common` przestrzeń nazw (C#) lub `Public Class QuickStartTask` metodę (VB) następującym kodem:
 
     ```csharp
     namespace WPFQuickStart.Common
@@ -206,21 +206,21 @@ Za pomocą Windows Presentation Foundation (WPF) można szybko utworzyć nowocze
 
 1. W **Eksplorator rozwiązań**Otwórz plik **MainWindow. XAML** .
 
-2. **Ważne**. Ten krok dotyczy tylko C# programu. Jeśli używasz Visual Basic, przejdź do następnego kroku. W dolnym okienku projektanta Znajdź wiersz `xmlns:local=”clr-namespace:WPFQuickStart”` i zastąp go następującym kodem XAML:
+2. **Ważne**. Ten krok dotyczy tylko języka C#. Jeśli używasz Visual Basic, przejdź do następnego kroku. W dolnym okienku projektanta Znajdź wiersz `xmlns:local=”clr-namespace:WPFQuickStart”` i zastąp go następującym kodem XAML:
 
     ```xaml
     xmlns:local=”clr-namespace:WPFQuickStart.Common”
     ```
 
-3. W oknie **Właściwości** rozwiń węzeł **wspólnych** kategorii i wybierz właściwość **Title** , a następnie wprowadź `WPF Todo List` i naciśnij klawisz **Enter** .
+3. W oknie **Właściwości** rozwiń węzeł **wspólnych** kategorii i wybierz właściwość **title** , a następnie wprowadź `WPF Todo List` i naciśnij klawisz **Enter** .
 
      Zwróć uwagę, że element **title** w oknie XAML zmienia się w taki sposób, aby odpowiadał nowej wartości. Właściwości XAML można modyfikować w oknie XAML lub w oknie **Właściwości** , a zmiany są synchronizowane.
 
-4. W oknie XAML ustaw wartość elementu **Height** na `768` i ustaw wartość właściwości **Width** na `1280`.
+4. W oknie XAML ustaw wartość elementu **Height** na `768` i ustaw wartość właściwości **Width** na `1280` .
 
      Te elementy odpowiadają właściwościom **wysokości** i **szerokości** , które znajdują się w kategorii **Układ** w oknie **Właściwości** .
 
-5. Wybierz Tagi `<Grid>` i `</Grid>` i zastąp je następującym kodem XAML:
+5. Wybierz `<Grid>` znaczniki i `</Grid>` Zamień je na następujący kod XAML:
 
     ```xaml
     <Grid>
@@ -292,7 +292,7 @@ Za pomocą Windows Presentation Foundation (WPF) można szybko utworzyć nowocze
 
 6. W **Eksplorator rozwiązań**rozwiń węzeł **MainWindow. XAML** i Otwórz plik **MainWindow.XAML.cs** lub **MainWindow. XAML. vb** .
 
-7. W edytorze kodu Dodaj następujące dyrektywy `using` lub `Imports` na początku pliku:
+7. W edytorze kodu Dodaj następujące `using` `Imports` dyrektywy lub na początku pliku:
 
     ```csharp
     using Microsoft.WindowsAzure.MobileServices;
@@ -304,7 +304,7 @@ Za pomocą Windows Presentation Foundation (WPF) można szybko utworzyć nowocze
     Imports Newtonsoft.Json
     ```
 
-8. Zastąp cały kod w przestrzeni nazw **WPFQuickStart** (C#) lub klasy **MainWindow** Class (VB) następującym kodem:
+8. Zastąp cały kod w przestrzeni nazw **WPFQuickStart** (C#) lub klasy **MAINWINDOW** Class (VB) następującym kodem:
 
     ```csharp
     namespace WPFQuickStart
@@ -479,12 +479,12 @@ Za pomocą Windows Presentation Foundation (WPF) można szybko utworzyć nowocze
 
 2. Wybierz przycisk **Nowy** , a następnie w oknie dialogowym wybierz pozycję **obliczenia**, **Usługa mobilna, Utwórz**.
 
-3. W oknie dialogowym **Nowa usługa mobilna** wybierz pole tekstowe **adres URL** i wprowadź `wpfquickstart01`.
+3. W oknie dialogowym **Nowa usługa mobilna** wybierz pole tekstowe **adres URL** i wprowadź `wpfquickstart01` .
 
     > [!NOTE]
     > Może zajść potrzeba zmiany numerycznej części adresu URL. Microsoft Azure wymaga unikatowego adresu URL dla każdej usługi mobilnej.
 
-     Spowoduje to ustawienie adresu URL usługi do `https://wpfquickstart01.azure-mobile.net/`.
+     Spowoduje to ustawienie adresu URL usługi `https://wpfquickstart01.azure-mobile.net/` .
 
 4. Na liście **baza danych** wybierz opcję bazy danych. Ponieważ jest to aplikacja, która prawdopodobnie nie będzie mogła uzyskać dużo użycia, możesz chcieć wybrać opcję **Utwórz bezpłatną baza bazę danych SQL** lub wybrać bezpłatną bazę danych, która jest już skojarzona z subskrypcją.
 
@@ -493,7 +493,7 @@ Za pomocą Windows Presentation Foundation (WPF) można szybko utworzyć nowocze
     > [!NOTE]
     > Dla tej usługi będziesz używać domyślnego ustawienia **zaplecza** , **JavaScript**.
 
-6. W przypadku tworzenia nowej bazy danych na stronie **Określanie ustawień bazy danych** na liście **serwer** wybierz pozycję **nowy serwer bazy danych SQL**, wprowadź **nazwę logowania SQL** i **hasło**, a następnie wybierz przycisk **Zakończ** (znacznik wyboru przycisk.
+6. W przypadku tworzenia nowej bazy danych na stronie **Określanie ustawień bazy danych** na liście **serwer** wybierz pozycję **nowy serwer bazy danych SQL**, wprowadź **nazwę logowania SQL** i **hasło**, a następnie wybierz przycisk **Ukończ** (znacznik wyboru).
 
 7. W przypadku wybrania istniejącej bazy danych na stronie **Ustawienia bazy danych** wprowadź **hasło logowania** , a następnie wybierz przycisk **Ukończ** (znacznik wyboru).
 
@@ -509,15 +509,15 @@ Za pomocą Windows Presentation Foundation (WPF) można szybko utworzyć nowocze
 
 1. W Microsoft Azure Portal wybierz strzałkę w prawo obok nazwy usługi mobilnej, a następnie na pasku menu wybierz pozycję **dane**, a następnie wybierz łącze **Dodaj tabelę** .
 
-2. W oknie dialogowym **Utwórz nową tabelę** w polu tekstowym **nazwa tabeli** wprowadź `TodoItem`, a następnie wybierz przycisk **Ukończ** (znacznik wyboru).
+2. W oknie dialogowym **Utwórz nową tabelę** w polu tekstowym **Nazwa tabeli** wprowadź `TodoItem` , a następnie wybierz przycisk **Ukończ** (znacznik wyboru).
 
      Zaczekaj na utworzenie tabeli, a następnie przejdź do ostatniej procedury.
 
 #### <a name="to-add-a-declaration-for-the-mobile-service"></a>Aby dodać deklarację dla usługi mobilnej
 
-1. Wróć do programu Visual Studio. W **Eksplorator rozwiązań**rozwiń węzeł **App. XAML** (C#) lub **Application. XAML** (Visual Basic) i Otwórz plik **App.XAML.cs** lub **App. XAML. vb** .
+1. Wróć do programu Visual Studio. W **Eksplorator rozwiązań**rozwiń węzeł **App. XAML** (C#) lub **Application. XAML** (Visual Basic), a następnie otwórz plik **App.XAML.cs** lub **App. XAML. vb** .
 
-2. W edytorze kodu Dodaj następujące `using` lub **importuje** dyrektywy na początku pliku:
+2. W edytorze kodu Dodaj następujące `using` dyrektywy lub **importuje** je na początku pliku:
 
     ```csharp
     using Microsoft.WindowsAzure.MobileServices;
@@ -549,9 +549,9 @@ Za pomocą Windows Presentation Foundation (WPF) można szybko utworzyć nowocze
 
 1. Na pasku menu wybierz **Debuguj**, **Rozpocznij debugowanie** (lub naciśnij klawisz F5).
 
-2. W polu tekstowym **Wstaw TodoItem** wprowadź `Do something`, a następnie wybierz przycisk **Zapisz** .
+2. W polu tekstowym **Wstaw TodoItem** wprowadź `Do something` , a następnie wybierz przycisk **Zapisz** .
 
-3. Wprowadź `Do something else`, a następnie ponownie wybierz przycisk **Zapisz** .
+3. Wprowadź `Do something else` wartość, a następnie ponownie wybierz przycisk **Zapisz** .
 
      Zwróć uwagę, że dwa wpisy są dodawane do listy **zapytanie i dane aktualizacji** , jak pokazano na poniższej ilustracji.
 

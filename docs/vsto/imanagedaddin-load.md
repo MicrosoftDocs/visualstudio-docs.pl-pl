@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1307d720e005855770ee68659374dbbfae247d65
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541040"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
@@ -45,6 +45,6 @@ HRESULT Load([in] BSTR bstrManifestURL,
 
  Zaimplementuj metodę [IManagedAddin —:: Load](../vsto/imanagedaddin-load.md) , aby wykonać zadania, takie jak konfigurowanie domeny aplikacji i zasad zabezpieczeń dla załadowanego dodatku VSTO.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IManagedAddin — Interfejs](../vsto/imanagedaddin-interface.md)
 - [IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)

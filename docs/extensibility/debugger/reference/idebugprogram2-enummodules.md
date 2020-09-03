@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::WyliczeniaModule | Dokumenty firmy Microsoft
+title: 'IDebugProgram2:: EnumModules — | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 967b9b4a06f382e5da2ee2422dd48209184e474b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723015"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
-Pobiera listę modułów, które ten program załadował i jest wykonywany.
+Pobiera listę modułów załadowanych i wykonywanych przez ten program.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,13 +41,13 @@ int EnumModules( 
 
 ## <a name="parameters"></a>Parametry
 `ppEnum`\
-[na zewnątrz] Zwraca [obiekt IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) zawierający listę modułów.
+określoną Zwraca obiekt [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) , który zawiera listę modułów.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Moduł jest biblioteką DLL lub zestawu i jest zazwyczaj wymienione w **module** debugowania okna.
+ Moduł jest biblioteką DLL lub zestawem i jest zazwyczaj wyświetlany w oknie debugowania **modułów** .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

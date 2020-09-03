@@ -1,5 +1,5 @@
 ---
-title: CONNECTION_PROTOCOL | Dokumenty firmy Microsoft
+title: CONNECTION_PROTOCOL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 29ac287462149a20f52a1affdeab7fa6b8333711
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737651"
 ---
 # <a name="connection_protocol"></a>CONNECTION_PROTOCOL
@@ -53,33 +53,33 @@ public enum CONNECTION_PROTOCOL {
 
 ## <a name="fields"></a>Pola
 `CONNECTION_NONE`\
-Nie nawiązyno połączenia z serwerem.
+Nie wprowadzono połączenia z serwerem.
 
 `CONNECTION_UNKNOWN`\
-Nawiązanie połączenia, ale jest typu nieznanego.
+Połączenie zostało nawiązane, ale jego typ jest nieznany.
 
 `CONNECTION_LOCAL`\
-Połączenie jest z serwerem lokalnym.
+Połączenie jest serwerem lokalnym.
 
 `CONNECTION_PIPE`\
-Połączenie odbywa się za pośrednictwem nazwanego potoku.
+Połączenie odbywa się za pomocą nazwanego potoku.
 
 `CONNECTION_TCPIP`\
 Połączenie używa protokołu TCP/IP.
 
 `CONNECTION_HTTP`\
-Połączenie używa protokołu HTTP (za pośrednictwem serwera sieci Web).
+Połączenie korzysta z protokołu HTTP (za pośrednictwem serwera sieci Web).
 
 `CONNECTION_OTHER`\
-Ustanowiono inny typ połączenia (ta wartość nie jest obecnie używana).
+Nawiązano połączenie innego typu (ta wartość nie jest obecnie używana).
 
 ## <a name="remarks"></a>Uwagi
-Wartości te są zwracane z [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) metody.
+Te wartości są zwracane z metody [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

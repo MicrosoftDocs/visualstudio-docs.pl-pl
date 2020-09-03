@@ -27,16 +27,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5371b7180aed462910a57daeb9bf5d43f2ecfedb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662285"
 ---
 # <a name="options-text-editor-c-formatting"></a>Opcje, edytor tekstu, C#, formatowanie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Za pomocą okna dialogowego **Formatowanie** strony właściwości można ustawić opcje formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tego okna dialogowego, kliknij opcję **Opcje** w menu **Narzędzia** , rozwiń **Edytor tekstu**, rozwiń **C#** , a następnie kliknij pozycję **Formatowanie**.
+Za pomocą okna dialogowego **Formatowanie** strony właściwości można ustawić opcje formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tego okna dialogowego, kliknij opcję **Opcje** w menu **Narzędzia** , rozwiń **Edytor tekstu**, rozwiń język **C#**, a następnie kliknij pozycję **Formatowanie**.
 
 > [!NOTE]
 > Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -59,4 +59,4 @@ Za pomocą okna dialogowego **Formatowanie** strony właściwości można ustawi
  Opcje wcięć na stronach **kart** dla każdego języka określają, gdzie Edytor kodu umieszcza kursor po naciśnięciu klawisza Enter na końcu wiersza. Opcje wcięć w obszarze **Formatowanie** stosuje się, gdy kod jest formatowany automatycznie, na przykład podczas wklejania kodu do pliku, podczas gdy jest zaznaczona opcja **Dostosuj wcięcie przy wklejaniu** i gdy format jest pisany ręcznie.
 
 ## <a name="see-also"></a>Zobacz też
- [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
+ [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)

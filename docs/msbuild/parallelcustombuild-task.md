@@ -1,5 +1,5 @@
 ---
-title: Zadanie Równoległego Budowania | Dokumenty firmy Microsoft
+title: ParallelCustomBuild — zadanie | Microsoft Docs
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -18,27 +18,27 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d8a171d393f629d0b6ab3a7fc61ad37862b0da1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77279261"
 ---
-# <a name="parallelcustombuild-task"></a>Zadanie ParallelCustomBuild
+# <a name="parallelcustombuild-task"></a>ParallelCustomBuild, zadanie
 
-Uruchom równoległe wystąpienia [zadania CustomBuild](../msbuild/custombuild-task.md).
+Uruchamianie równoległych wystąpień [zadania CustomBuild](../msbuild/custombuild-task.md).
 
 ## <a name="parameters"></a>Parametry
 
-W poniższej tabeli opisano parametry zadania **ParallelCustomBuild.**
+W poniższej tabeli opisano parametry zadania **ParallelCustomBuild** .
 
 |Parametr|Opis|
 |---------------|-----------------|
-|**BreakOnFirstFailure**|Opcjonalny parametr **bool.**|
-|**MaxItemsInBatch ( MaxItemsInBatch )**|Opcjonalny parametr **int.**|
-|**MaxProcesses ( MaxProcesses )**|Opcjonalny parametr **int.**|
-|**Źródeł**|Wymagany parametr **ITaskItem[].**|
+|**BreakOnFirstFailure**|Opcjonalny parametr **bool** .|
+|**MaxItemsInBatch**|Opcjonalny parametr **int** .|
+|**MaxProcesses**|Opcjonalny parametr **int** .|
+|**Źródła**|Wymagany parametr **ITaskItem []** .|
 
 ## <a name="see-also"></a>Zobacz też
 
-[Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+[Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

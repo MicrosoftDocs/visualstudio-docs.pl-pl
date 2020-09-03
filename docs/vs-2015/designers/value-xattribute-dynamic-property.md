@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9a31b4c4182ed67a3e67d3c25c2c5ccf50e083f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664046"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Wartość (właściwość dynamiczna XAttribute)
@@ -32,16 +32,16 @@ attrib.Value
 ```
 
 ## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość
- @No__t_0 zawierający wartość tego atrybutu.
+ A <xref:System.String> zawierająca wartość tego atrybutu.
 
 ## <a name="exceptions"></a>Wyjątki
 
 |Typ wyjątku|Warunek|
 |--------------------|---------------|
-|<xref:System.ArgumentNullException>|Ustawienie `value` jest `null`.|
+|<xref:System.ArgumentNullException>|Gdy ustawienie ma wartość `value` `null` .|
 
 ## <a name="remarks"></a>Uwagi
- Ta właściwość jest równoważna z właściwością <xref:System.Xml.Linq.XAttribute.Value%2A> klasy <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>, ale ta właściwość dynamiczna obsługuje również powiadomienia o zmianach.
+ Ta właściwość jest równoważna z <xref:System.Xml.Linq.XAttribute.Value%2A> właściwością <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> klasy, ale ta właściwość dynamiczna obsługuje również powiadomienia o zmianach.
 
 ## <a name="see-also"></a>Zobacz też
- [atrybut](../designers/attribute-xelement-dynamic-property.md) <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=fullName> [Właściwości dynamicznej klasy XAttribute](../designers/xattribute-class-dynamic-properties.md)
+ <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=fullName>[Atrybut](../designers/attribute-xelement-dynamic-property.md) [właściwości dynamicznych klasy XAttribute](../designers/xattribute-class-dynamic-properties.md)

@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO2 | Dokumenty firmy Microsoft
+title: BP_REQUEST_INFO2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 04d1db2ca8176678d8a72a84ede2bddcbfa2f152
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737880"
 ---
 # <a name="bp_request_info2"></a>BP_REQUEST_INFO2
-Zawiera informacje wymagane do zaimplementowania punktu przerwania, w tym identyfikator GUID dostawcy, ograniczenia i punkt śledzenia.
+Zawiera informacje wymagane do zaimplementowania punktu przerwania, w tym identyfikator GUID dostawcy, ograniczenie i punkt śledzenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -65,34 +65,34 @@ public struct BP_REQUEST_INFO2 {
 
 ## <a name="members"></a>Elementy członkowskie
 `dwFields`\
-Kombinacja flag z wyliczenia [BPREQI_FIELDS,](../../../extensibility/debugger/reference/bpreqi-fields.md) która określa, które pola są wypełniane.
+Kombinacja flag z wyliczenia [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) , która określa, które pola są wypełniane.
 
 `guidLanguage`\
 Identyfikator GUID języka.
 
 `bpLocation`\
-Struktura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) określająca typ lokalizacji punktu przerwania.
+Struktura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) , która określa typ lokalizacji punktu przerwania.
 
 `pProgram`\
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje aplikację, w której występuje punkt przerwania.
+Obiekt [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , który reprezentuje aplikację, w której występuje punkt przerwania.
 
 `bstrProgramName`\
 Nazwa aplikacji, w której występuje punkt przerwania.
 
 `pThread`\
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątek, w którym występuje punkt przerwania.
+Obiekt [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , który reprezentuje wątek, w którym występuje punkt przerwania.
 
 `bstrThreadName`\
 Nazwa wątku, w którym występuje punkt przerwania.
 
 `bpCondition`\
-[Struktura BP_CONDITION,](../../../extensibility/debugger/reference/bp-condition.md) która opisuje warunki, w których punkt przerwania będzie uruchamiany.
+Struktura [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) opisująca warunki, w których zostanie uruchomiony punkt przerwania.
 
 `bpPassCount`\
-[Struktura BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) zawierająca informacje o liczbie przebiegów punktu przerwania.
+Struktura [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) , która zawiera informacje o liczbie przebiegu punktu przerwania.
 
 `dwFlags`\
-Kombinacja flag z wyliczenia [BP_FLAGS,](../../../extensibility/debugger/reference/bp-flags.md) która określa flagi żądanego punktu przerwania.
+Kombinacja flag z wyliczenia [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) , która określa flagi dla żądanego punktu przerwania.
 
 `guidVendor`\
 Identyfikator GUID dostawcy. Może być wartością null.
@@ -104,12 +104,12 @@ Nazwa ograniczenia punktu przerwania. Może być wartością null.
 Nazwa punktu śledzenia. Może być wartością null.
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest zwracana przez [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) metody.
+Ta struktura jest zwracana przez metodę [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

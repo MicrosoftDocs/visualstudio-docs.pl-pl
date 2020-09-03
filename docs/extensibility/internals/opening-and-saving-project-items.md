@@ -1,5 +1,5 @@
 ---
-title: Otwieranie i zapisywanie elementów projektu | Dokumenty firmy Microsoft
+title: Otwieranie i zapisywanie elementów projektu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,53 +13,53 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bbb89d99e401be6bae7d8ee9be8ee33fa7574723
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706969"
 ---
 # <a name="opening-and-saving-project-items"></a>Otwieranie i zapisywanie elementów projektu
-Po dodaniu nowego typu projektu należy zarządzać otwieraniem i zapisywaniem plików projektów w zintegrowanym [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowisku programistycznym (IDE). W poniższych tematach omówiono różne podejścia do otwierania i zapisywania plików.
+Po dodaniu nowego typu projektu należy zarządzać otwieraniem i zapisywaniem plików projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE). W poniższych tematach omówiono różne podejścia do otwierania i zapisywania plików.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Wyświetlanie plików za pomocą polecenia Otwórz plik](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
 
- Zawiera szczegółowe wyjaśnienie, w jaki sposób IDE obsługuje polecenie **Otwórz plik** i rolę projektów w odpowiadaniu na to polecenie.
+ Zawiera objaśnienie krok po kroku dotyczące sposobu, w jaki środowisko IDE obsługuje polecenie **Otwórz plik** i rolę projektów w odpowiedzi na to polecenie.
 
 - [Wyświetlanie plików przy użyciu polecenia Otwórz za pomocą](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
 
- Zawiera szczegółowe, krok po kroku wyjaśnienie, jak IDE obsługuje **Open With** polecenia, monitując o otwarcie pliku, który ma wybór standardowych edytorów.
+ Zawiera szczegółowe objaśnienie krok po kroku dotyczące sposobu, w jaki środowisko IDE obsługuje polecenie **Otwórz za pomocą** , monitując o otwarcie pliku, który ma kilka wybranych edytorów standardowych.
 
 - [Instrukcje: otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md)
 
- Zawiera instrukcje krok po kroku określające, że pliki określonego typu w projekcie powinny być otwierane przy użyciu edytora specyficznego dla projektu.
+ Zawiera instrukcje krok po kroku dotyczące określania, że pliki określonego typu w projekcie powinny być otwierane za pomocą edytora specyficznego dla projektu.
 
 - [Instrukcje: otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md)
 
- Zawiera instrukcje krok po kroku określające sposób włączania IDE, aby otworzyć standardowy edytor dla plików w typie projektu.
+ Zawiera instrukcje krok po kroku dotyczące sposobu włączania środowiska IDE do otwierania standardowego edytora dla plików w typie projektu.
 
 - [Instrukcje: otwieranie edytorów dla otwartych dokumentów](../../extensibility/how-to-open-editors-for-open-documents.md)
 
- Zawiera instrukcje krok po kroku, aby otworzyć edytor specyficzny dla projektu dla otwartego pliku.
+ Zawiera instrukcje krok po kroku, aby otworzyć Edytor specyficzny dla projektu dla otwartego pliku.
 
 - [Zapisywanie standardowego dokumentu](../../extensibility/internals/saving-a-standard-document.md)
 
- Zawiera szczegółowe wyjaśnienie, w jaki sposób IDE obsługuje **polecenia Zapisz,** **Zapisz jako**i Zapisz **wszystkie** dla dokumentu otwartego w edytorze standardowym.
+ Zawiera szczegółowy opis sposobu, w jaki środowisko IDE obsługuje **Zapisywanie**, **Zapisywanie jako**i **zapisywanie wszystkich** poleceń dla dokumentu otwartego w standardowym edytorze.
 
 - [Zapisywanie niestandardowego dokumentu](../../extensibility/internals/saving-a-custom-document.md)
 
- Zawiera diagram i szczegółowe wyjaśnienie, w jaki sposób IDE obsługuje **polecenia Zapisz,** **Zapisz jako**i Zapisz **wszystkie** dla dokumentów otwartych w edytorze niestandardowym.
+ Zawiera diagram i szczegółowe wyjaśnienie, jak środowisko IDE obsługuje **Zapisywanie**, **Zapisywanie jako**i **zapisywanie wszystkich** poleceń dla dokumentów otwartych w edytorze niestandardowym.
 
 - [Określanie, który edytor służy do otwierania pliku w projekcie](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)
 
- W tym artykule omówiono proces, który ide następuje, aby wybrać odpowiedni edytor lub projektant dla pliku.
+ W tym artykule omówiono proces, w którym IDE następuje wybranie odpowiedniego edytora lub projektanta pliku.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 - [Tworzenie niestandardowych edytorów i projektantów](../../extensibility/creating-custom-editors-and-designers.md)
 
- Wyświetla listę czterech typów edytorów, które IDE może obsługiwać i zawiera opisy każdego edytora.
+ Wyświetla cztery typy edytorów, które mogą być obsługiwane przez środowisko IDE i zawiera opisy poszczególnych edytorów.
 
-- [Project Types (Typy projektów)](../../extensibility/internals/project-types.md)
+- [Typy projektów](../../extensibility/internals/project-types.md)
 
- W tym artykule omówiono sposób, w jaki projekty kontrolują sposób kompilowania i kompilowania kodu, jak otwierane są edytory i jak elementy projektu są formatowane.
+ W tym artykule omówiono sposób, w jaki projekty kontrolują sposób, w jaki kod jest kompilowany i skompilowany, jak edytory są otwierane oraz jak są formatowane elementy projektu.

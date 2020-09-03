@@ -1,5 +1,5 @@
 ---
-title: Model pakietów kontroli źródła | Dokumenty firmy Microsoft
+title: Model dla pakietów kontroli źródła | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,26 +11,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 46845be1bc22a67d6703af12933945bdfcfa7f4b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707069"
 ---
 # <a name="model-for-source-control-packages"></a>Model pakietów kontroli kodu źródłowego
-Poniższy model przedstawia przykład implementacji kontroli źródła. W modelu zostaną wyświetlony interfejsy, które należy zaimplementować i usługi środowiska, które należy wywołać. Podobnie jak wszystkie usługi, faktycznie wywołać metody określonego interfejsu, które można uzyskać za pomocą usługi. Nazwy klas są identyfikowane, aby ułatwić, aby zobaczyć, jak kontrola źródła jest przeprowadzana.
+Poniższy model reprezentuje przykład implementacji kontroli źródła. W modelu widoczne są interfejsy, które należy zaimplementować, oraz usługi środowiska, które należy wywołać. Podobnie jak wszystkie usługi, w rzeczywistości wywołujemy metody określonego interfejsu, które uzyskuje się w ramach usługi. Nazwy klas są identyfikowane, aby ułatwić sprawdzenie, jak jest przeprowadzana kontrola źródła.
 
- ![SCC&#95;TUP Przykłady](../../extensibility/internals/media/scc_tup.gif "SCC_TUP") Przykładowy projekt kontroli źródła
+ ![Przykłady instalacyjnya SCC&#95;](../../extensibility/internals/media/scc_tup.gif "SCC_TUP") Przykładowy projekt kontroli źródła
 
 ## <a name="interfaces"></a>Interfejsy
- Formant źródła dla nowych typów projektów w programie Visual Studio można zaimplementować przy użyciu listy interfejsów pokazano w poniższej tabeli.
+ Można zaimplementować kontrolę źródła dla nowych typów projektów w programie Visual Studio przy użyciu listy interfejsów przedstawionych w poniższej tabeli.
 
-|Interface|Użycie|
+|Interfejs|Zastosowanie|
 |---------------|---------|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Wywoływane przez projekty i edytory, zanim zapiszą lub zmienią (zabrudzone) pliki. Ten interfejs jest dostępny <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> za pomocą usługi.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Wywoływane przez projekty, aby poprosić o uprawnienie do dodawania, usuwania lub zmieniania nazwy pliku lub katalogu. Ten interfejs jest również wywoływany przez projekty, aby poinformować środowisko po zakończeniu zatwierdzonej akcji dodawania, usuwania lub zmiany nazwy. Jest on dostępny <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> za pomocą usługi.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|Zaimplementowana przez dowolną jednostkę, która rejestruje się, aby otrzymywać powiadomienia, gdy projekty dodają, zmieniają nazwę lub usuwają plik lub katalog. Aby zarejestrować się <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>w celu powiadomienia o zdarzeniu, zadzwoń do .|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Wywoływane przez projekty, aby zarejestrować się w pakiecie kontroli źródła i uzyskać informacje na temat stanu kontroli źródła. Ten interfejs jest dostępny <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> za pomocą usługi.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Wywoływane przez projekty i edytory, zanim zapiszą lub zmienią (zanieczyszczony) pliki. Dostęp do tego interfejsu uzyskuje się za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> usługi.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Wywoływane przez projekty, aby zażądać uprawnień do dodawania, usuwania lub zmiany nazwy pliku lub katalogu. Ten interfejs jest również wywoływany przez projekty w celu informowania środowiska o zakończeniu zatwierdzonej akcji dodawania, usuwania lub zmiany nazwy. Dostęp do niego odbywa się za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> usługi.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|Zaimplementowane przez każdą jednostkę, która ma zostać powiadomiona, gdy projekty dodają, zmienią nazwę lub usuwają plik lub katalog. Aby zarejestrować się w celu powiadomienia o zdarzeniach, wywołaj polecenie <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A> .|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Wywoływane przez projekty, aby zarejestrować się w pakiecie kontroli źródła i uzyskać informacje o stanie kontroli źródła. Dostęp do tego interfejsu uzyskuje się za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> usługi.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Zaimplementowane przez projekt, aby odpowiedzieć na żądania kontroli źródła informacji o plikach i uzyskać ustawienia kontroli źródła wymagane dla pliku projektu.|
 
 ## <a name="see-also"></a>Zobacz też

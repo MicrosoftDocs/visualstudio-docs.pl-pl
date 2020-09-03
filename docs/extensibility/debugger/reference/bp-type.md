@@ -1,5 +1,5 @@
 ---
-title: BP_TYPE | Dokumenty firmy Microsoft
+title: BP_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 02550141fb1857214d5bfd80d5dd86969bec9fba
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737788"
 ---
 # <a name="bp_type"></a>BP_TYPE
-Określa, czy punkt przerwania znajduje się w lokalizacji kodu, jest lokalizacją danych, czy jest innym typem punktu przerwania.
+Określa, czy punkt przerwania znajduje się w lokalizacji kodu, jest lokalizacją danych lub jest innym typem punktu przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,7 +48,7 @@ public enum enum_BP_TYPE {
 
 ## <a name="fields"></a>Pola
 `BPT_NONE`\
-Określa brak typu punktu przerwania.
+Określa typ punktu przerwania.
 
 `BPT_CODE`\
 Określa punkt przerwania kodu.
@@ -57,15 +57,15 @@ Określa punkt przerwania kodu.
 Określa punkt przerwania danych.
 
 `BPT_SPECIAL`\
-Określa punkt przerwania, który nie jest ani kodem, ani typem danych. Ten typ jest przestarzały i nie powinien być używany.
+Określa punkt przerwania, który nie jest kodem ani typem danych. Ten typ jest przestarzały i nie powinien być używany.
 
 ## <a name="remarks"></a>Uwagi
-Przekazany jako parametr do [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) i [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) metody.
+Przekazanie jako parametr do metod getpunkion [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) [i](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) getpunks.
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

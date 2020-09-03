@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO | Dokumenty firmy Microsoft
+title: CONTEXT_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4838df34c14b936af15b8a7a582a6d30ea12bee1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737566"
 ---
 # <a name="context_info"></a>CONTEXT_INFO
@@ -53,7 +53,7 @@ public struct CONTEXT_INFO {
 
 ## <a name="members"></a>Elementy członkowskie
 `dwFields`\
-Kombinacja flag z [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) wyliczenie, które określa, które pola są wypełniane<strong>.</strong>
+Kombinacja flag z wyliczenia [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) , która określa, które pola są wypełniane<strong>.</strong>
 
 `bstrModuleUrl`\
 Nazwa modułu, w którym znajduje się kontekst.
@@ -62,7 +62,7 @@ Nazwa modułu, w którym znajduje się kontekst.
 Nazwa funkcji, w której znajduje się kontekst.
 
 `posFunctionOffset`\
-Struktura [TEXT_POSITION,](../../../extensibility/debugger/reference/text-position.md) która identyfikuje przesunięcie linii i kolumny funkcji skojarzonej z kontekstem kodu.
+Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , która identyfikuje przesunięcie wiersza i kolumny funkcji skojarzonej z kontekstem kodu.
 
 `bstrAddress`\
 Adres w kodzie, w którym znajduje się dany kontekst.
@@ -71,17 +71,17 @@ Adres w kodzie, w którym znajduje się dany kontekst.
 Przesunięcie adresu w kodzie, w którym znajduje się dany kontekst.
 
 `bstrAddressAbsolute`\
-Adres bezwzględny w pamięci, w którym znajduje się dany kontekst.
+Adres bezwzględny w pamięci, w której znajduje się dany kontekst.
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest zwracana z wywołania [getInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) metody.
+Ta struktura jest zwracana z wywołania metody [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) .
 
-Typowym zastosowaniem dla tej struktury jest obsługa okna debugowania **pamięci.**
+Typowym zastosowaniem tej struktury jest obsługa okna debugowania **pamięci** .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

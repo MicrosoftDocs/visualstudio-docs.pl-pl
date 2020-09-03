@@ -1,5 +1,5 @@
 ---
-title: COMPUTER_INFO | Dokumenty firmy Microsoft
+title: COMPUTER_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 27794dff51646b72dbbfda81ead02e5206ade78b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737654"
 ---
 # <a name="computer_info"></a>COMPUTER_INFO
-W tym artykule opisano komputer, na którym jest uruchomiony debuger.
+Opisuje komputer, na którym jest uruchomiony debuger.
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,18 +48,18 @@ public struct COMPUTER_INFO
 Identyfikuje architekturę mikroprocesora.
 
 `wSuiteMask`\
-Identyfikuje maskę pakietu.
+Identyfikuje maskę zestawu.
 
 `dwOperatingSystemVersion`\
 Numer wersji systemu operacyjnego.
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest zwracana przez [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) metody.
+Ta struktura jest zwracana przez metodę [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: Msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

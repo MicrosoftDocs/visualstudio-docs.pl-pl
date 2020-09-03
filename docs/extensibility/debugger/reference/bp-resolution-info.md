@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_INFO | Dokumenty firmy Microsoft
+title: BP_RESOLUTION_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 70e66a936ec1eaf1f818ad249aa4eb14b0b63749
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737826"
 ---
 # <a name="bp_resolution_info"></a>BP_RESOLUTION_INFO
-W tym artykule opisano informacje o powiązanym punkcie przerwania dla punktu przerwania kodu lub punktu przerwania danych.
+Opisuje powiązane informacje o punkcie przerwania dla punktu przerwania kodu lub punktu przerwania danych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,24 +47,24 @@ public struct BP_RESOLUTION_INFO {
 
 ## <a name="members"></a>Elementy członkowskie
 `dwFields`\
-Kolekcja flag z [wyliczenia BPRESI_FIELDS,](../../../extensibility/debugger/reference/bpresi-fields.md) która określa, które pola są wypełniane.
+Kolekcja flag z wyliczeń [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) , które określają, które pola są wypełniane.
 
 `bpResLocation`\
-[Struktura BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) określająca lokalizację punktu przerwania w kodzie lub danych.
+Struktura [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) , która określa lokalizację punktu przerwania w kodzie lub danych.
 
 `pProgram`\
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje aplikację, w której wystąpił błąd punktu przerwania.
+Obiekt [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , który reprezentuje aplikację, w której wystąpił błąd punktu przerwania.
 
 `pThread`\
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątek, w którym aplikacja, która zawiera błąd punktu przerwania jest uruchomiona.
+Obiekt [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , który reprezentuje wątek, w którym działa aplikacja, która zawiera błąd punktu przerwania.
 
 ## <a name="remarks"></a>Uwagi
 Ta struktura jest zwracana przez [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md).
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

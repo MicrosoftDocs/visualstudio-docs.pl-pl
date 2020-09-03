@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON | Dokumenty firmy Microsoft
+title: BP_UNBOUND_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737773"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
-Podaje powód, dla którego punkt przerwania był niezwiązany.
+Zwraca powód, dla którego nie powiązano punkt przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,24 +48,24 @@ public enum enum_BP_UNBOUND_REASON {
 
 ## <a name="fields"></a>Pola
 `BPUR_UNKNOWN`\
-Przyczyna nie jest znana.
+Przyczyna jest nieznana.
 
 `BPUR_CODE_UNLOADED`\
 Kod, który zawiera punkt przerwania został zwolniony.
 
 `BPUR_BREAKPOINT_REBIND`\
-Punkt przerwania został odbicia do innej lokalizacji. Może się to zdarzyć po operacji Edycji i Kontynuuj, gdy punkt przerwania zostanie przeniesiony lub gdy punkt przerwania jest powiązany z plikiem ze ścieżką, która nie jest już prawidłowa.
+Punkt przerwania został Przewiązany do innej lokalizacji. Może to nastąpić po przejściu operacji Edytuj i Kontynuuj, gdy punkt przerwania jest przenoszony lub gdy punkt przerwania jest powiązany z plikiem o ścieżce, która nie jest już prawidłowa.
 
 `BPUR_ BREAKPOINT_ERROR`\
-Punkt przerwania jest określany jako błąd po jego powiązaniu. Dzieje się tak w przypadku zarządzanych punktów przerwania, których warunki nie są już prawidłowe.
+Punkt przerwania jest określany jako błąd, po którym jest powiązany. Dzieje się tak w przypadku zarządzanych punktów przerwania, których warunki nie są już prawidłowe.
 
 ## <a name="remarks"></a>Uwagi
-Zwrócony przez [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) metody.
+Zwrócone przez metodę [getpowód](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

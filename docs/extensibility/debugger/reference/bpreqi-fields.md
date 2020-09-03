@@ -1,5 +1,5 @@
 ---
-title: BPREQI_FIELDS | Dokumenty firmy Microsoft
+title: BPREQI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4c0e10b6c253c61a9e68e0cf161201f7d2520ae6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737745"
 ---
 # <a name="bpreqi_fields"></a>BPREQI_FIELDS
-Określa informacje, które mają być pobierane o żądaniu punktu przerwania.
+Określa informacje do pobrania dla żądania punktu przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -68,58 +68,58 @@ public enum enum_BPREQI_FIELDS {
 
 ## <a name="fields"></a>Pola
 `BPREQI_BPLOCATION`\
-Inicjowanie/używanie pola `bpLocation` (lokalizacja punktu przerwania) [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) lub [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.
+Zainicjuj/Użyj `bpLocation` pola (Lokalizacja punktu przerwania) struktury [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) lub [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
 `BPREQI_LANGUAGE`\
-Zainicjować/użyć `guidLanguage` pola `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.
+Zainicjuj lub Użyj `guidLanguage` pola `BP_REQUEST_INFO` `BP_REQUEST_INFO2` struktury lub.
 
 `BPREQI_PROGRAM`\
-Zainicjować/użyć `pProgram` pola `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.
+Zainicjuj lub Użyj `pProgram` pola `BP_REQUEST_INFO` `BP_REQUEST_INFO2` struktury lub.
 
 `BPREQI_PROGRAMNAME`\
-Zainicjować/użyć `bstrProgramName` pola `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.
+Zainicjuj lub Użyj `bstrProgramName` pola `BP_REQUEST_INFO` `BP_REQUEST_INFO2` struktury lub.
 
 `BPREQI_THREAD`\
-Zainicjować/użyć `pThread` pola `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.
+Zainicjuj lub Użyj `pThread` pola `BP_REQUEST_INFO` `BP_REQUEST_INFO2` struktury lub.
 
 `BPREQI_THREADNAME`\
-Zainicjować/użyć `bstrThreadName` pola `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.
+Zainicjuj lub Użyj `bstrThreadName` pola `BP_REQUEST_INFO` `BP_REQUEST_INFO2` struktury lub.
 
 `BPREQI_PASSCOUNT`\
-Zainicjować/użyć `bpPassCount` pola `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.
+Zainicjuj lub Użyj `bpPassCount` pola `BP_REQUEST_INFO` `BP_REQUEST_INFO2` struktury lub.
 
 `BPREQI_CONDITION`\
-Zainicjować/użyć `bpCondition` pola (warunek punktu przerwania) `BP_REQUEST_INFO` pola lub `BP_REQUEST_INFO2` struktury.
+Zainicjuj/Użyj `bpCondition` pola (warunek punktu przerwania) `BP_REQUEST_INFO` `BP_REQUEST_INFO2` struktury lub.
 
 `BPREQI_FLAGS`\
-Zainicjować/użyć `dwFlags` pola `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.
+Zainicjuj lub Użyj `dwFlags` pola `BP_REQUEST_INFO` `BP_REQUEST_INFO2` struktury lub.
 
 `BPREQI_ALLOLDFIELDS`\
-Inicjuj/użyj wszystkich `BP_REQUEST_INFO` pól dla struktury.
+Zainicjuj/Użyj wszystkich pól dla `BP_REQUEST_INFO` struktury.
 
 `BPREQI_VENDOR`\
-Zainicjować/użyć `guidVendor` pola `BP_REQUEST_INFO2` struktury.
+Zainicjuj/Użyj `guidVendor` pola `BP_REQUEST_INFO2` struktury.
 
 `BPREQI_CONSTRAINT`\
-Zainicjować/użyć `bstrConstraint` pola `BP_REQUEST_INFO2` struktury.
+Zainicjuj/Użyj `bstrConstraint` pola `BP_REQUEST_INFO2` struktury.
 
 `BPREQI_TRACEPOINT`\
-Zainicjować/użyć `bstrTracepoint` pola `BP_REQUEST_INFO2` struktury.
+Zainicjuj/Użyj `bstrTracepoint` pola `BP_REQUEST_INFO2` struktury.
 
 `BPREQI_ALLFIELDS`\
-Określa wszystkie pola `BP_REQUEST_INFO2` dla struktury.
+Określa wszystkie pola `BP_REQUEST_INFO2` struktury.
 
 ## <a name="remarks"></a>Uwagi
-Przekazywane jako argument do [Metody GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) i [BP_REQUEST_INFO,](../../../extensibility/debugger/reference/bp-request-info.md) aby określić, które pola [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktur mają zostać zainicjowane.
+Przeszedł jako argument do [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) i metod [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) , aby określić, które pola [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i struktur [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) mają być inicjowane.
 
-Flagi te są również używane do `BP_REQUEST_INFO` `BP_REQUEST_INFO2` wskazania, które pola i struktury są używane i prawidłowe, gdy każda struktura jest zwracana.
+Te flagi są również używane do wskazywania, które pola `BP_REQUEST_INFO` `BP_REQUEST_INFO2` struktur i są używane i są prawidłowe podczas zwracania każdej struktury.
 
-Wartości te mogą być łączone z bitowym `OR`.
+Te wartości mogą być połączone z bitową `OR` .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

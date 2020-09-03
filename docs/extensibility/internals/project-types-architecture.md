@@ -1,5 +1,5 @@
 ---
-title: Architektura typów projektów | Dokumenty firmy Microsoft
+title: Architektura typów projektów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,37 +11,37 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e53929b1ec2ed9c73191bf16f1cedc84a53b58f2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706321"
 ---
 # <a name="project-types-architecture"></a>Architektura typów projektów
-Ta sekcja zawiera szczegółowe informacje na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]temat architektury typów projektów w programie .
+Ta sekcja zawiera szczegółowe informacje o architekturze typów projektów w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Elementy modelu projektu](../../extensibility/internals/elements-of-a-project-model.md)
 
- Wyświetla listę usług, z które może korzystać typ projektu i interfejsów, które musi implementować.
+ Wyświetla listę usług, które mogą być używane przez typ projektu i interfejsy, które musi zaimplementować.
 
 - [Podstawowe składniki modelu projektu](../../extensibility/internals/project-model-core-components.md)
 
- W tym artykule opisano interfejsy typy projektu zarówno należy zaimplementować i opcjonalnie można zaimplementować w celu zapewnienia dodatkowych funkcji.
+ Opisuje typy projektów interfejsów, które muszą implementować i opcjonalnie można zaimplementować w celu zapewnienia dodatkowych funkcji.
 
 - [Kiedy należy tworzyć typy projektów](../../extensibility/internals/when-to-create-project-types.md)
 
- Pomaga zdecydować, kiedy należy utworzyć typ projektu i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kiedy można użyć innej funkcji rozszerzalności, takich jak VSPackages i edytorów, aby osiągnąć ten sam cel.
+ Pomaga określić, kiedy należy utworzyć typ projektu i kiedy można użyć innej [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funkcji rozszerzalności, takiej jak pakietów VSPackage i Editors, aby osiągnąć ten sam cel.
 
 - [Hierarchie i wybór](../../extensibility/internals/hierarchies-and-selection.md)
 
- W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tym artykule opisano, jak używa hierarchii i kontekstu wyboru, aby zapewnić spójne i uproszczone środowisko użytkownika.
+ Opisuje, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] w jaki sposób używa hierarchii i kontekstu wyboru w celu zapewnienia spójnego i uproszczonego środowiska użytkownika.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 - [Podtypy projektów](../../extensibility/internals/project-subtypes.md)
 
- W tym artykule wyjaśniono, w jaki sposób [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] podtypy projektu umożliwiają dostosowanie zachowania systemów projektu i [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].
+ Wyjaśnia, w jaki sposób podtypy projektów pozwalają dostosować zachowanie systemów projektowych [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] i [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] .
 
-- [Project Types (Typy projektów)](../../extensibility/internals/project-types.md)
+- [Typy projektów](../../extensibility/internals/project-types.md)
 
- Zawiera omówienie projektów jako podstawowych [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] elementów składowych zintegrowanego środowiska programistycznego (IDE). Łącza są dostarczane do dodatkowych tematów, które wyjaśniają, jak projekty kontroli tworzenia i kompilacji kodu.
+ Zawiera omówienie projektów jako podstawowych bloków konstrukcyjnych [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Linki są dostarczane do dodatkowych tematów, które wyjaśniają, jak projekty kontrolują Kompilowanie i kompilowanie kodu.

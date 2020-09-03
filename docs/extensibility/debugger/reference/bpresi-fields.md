@@ -1,5 +1,5 @@
 ---
-title: BPRESI_FIELDS | Dokumenty firmy Microsoft
+title: BPRESI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 837bb7d25ab8dea2b146a98cc65d320b58162685
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737719"
 ---
 # <a name="bpresi_fields"></a>BPRESI_FIELDS
-Określa informacje, które mają być pobierane o pomyślnym rozwiązaniu punktu przerwania.
+Określa informacje, które mają zostać pobrane o pomyślnym rozpoznaniu punktu przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,28 +48,28 @@ public enum enum_BPRESI_FIELDS {
 
 ## <a name="fields"></a>Pola
 `BPRESI_BPRESLOCATION`\
-Inicjowanie/używanie pola `bpResLocation` (lokalizacja rozpoznawania punktów przerwania) BP_RESOLUTION_INFO struktury. [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
+Zainicjuj/Użyj `bpResLocation` pola (lokalizacja rozpoznawania punktów przerwania) struktury [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) .
 
 `BPRESI_PROGRAM`\
-Inicjuj/użyj `pProgram` `BP_RESOLUTION_INFO` pola konstrukcji.
+Zainicjuj/Użyj `pProgram` pola `BP_RESOLUTION_INFO` struktury.
 
 `BPRESI_THREAD`\
-Inicjuj/użyj `pThread` `BP_RESOLUTION_INFO` pola konstrukcji.
+Zainicjuj/Użyj `pThread` pola `BP_RESOLUTION_INFO` struktury.
 
 `BPRESI_ALLFIELDS`\
 Określa wszystkie pola.
 
 ## <a name="remarks"></a>Uwagi
-Przekazany do [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) metody, aby wskazać, które pola [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury mają być inicjowane.
+Przeszedł do metody [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) , aby wskazać, które pola struktury [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) mają być inicjowane.
 
-Flagi te są również używane do `BP_RESOLUTION_INFO` wskazania, które pola struktury są używane i prawidłowe, gdy ta struktura jest zwracana.
+Te flagi są również używane do wskazywania, które pola `BP_RESOLUTION_INFO` struktury są używane i są prawidłowe podczas zwracania tej struktury.
 
-Wartości te mogą być łączone z bitowym `OR`.
+Te wartości mogą być połączone z bitową `OR` .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
