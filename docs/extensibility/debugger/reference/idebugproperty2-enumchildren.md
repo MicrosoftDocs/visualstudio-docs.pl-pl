@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::WyliczeniaDzieci | Dokumenty firmy Microsoft
+title: 'IDebugProperty2:: EnumChildren | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d6d3908c469b489eb16e4662f7515ea624825e3b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721511"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
-Pobiera listę korżenia obiektu.
+Pobiera listę elementów podrzędnych właściwości.
 
 ## <a name="syntax"></a>Składnia
 
@@ -53,28 +53,28 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>Parametry
 `dwFields`\
-[w] Kombinacja flag z wyliczenia [DEBUGPROP_INFO_FLAGS,](../../../extensibility/debugger/reference/debugprop-info-flags.md) która określa, które pola w wyliczonych [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktur mają być wypełnione.
+podczas Kombinacja flag z wyliczenia [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) , która określa, które pola w strukturze [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) wyliczane mają być wypełnione.
 
 `dwRadix`\
-[w] Określa radix, który ma być używany do formatowania dowolnych informacji liczbowych.
+podczas Określa podstawy do użycia podczas formatowania dowolnych informacji numerycznych.
 
 `guidFilter`\
-[w] Identyfikator GUID filtru `dwAttribFilter` używanego z parametrami i `pszNameFilter` parametrami, aby wybrać elementy podrzędne, które `DEBUG_PROPERTY_INFO` mają być wyliczone. Na przykład `guidFilterLocals` filtry dla zmiennych lokalnych.
+podczas Identyfikator GUID filtru używany z `dwAttribFilter` `pszNameFilter` parametrami i, aby wybrać elementy podrzędne, które mają `DEBUG_PROPERTY_INFO` zostać wyliczone. Na przykład `guidFilterLocals` filtry dla zmiennych lokalnych.
 
 `dwAttribFilter`\
-[w] Kombinacja flag z [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) wyliczenia, która określa, jaki typ obiektów do wyliczenia, na przykład `DBG_ATTRIB_METHOD` dla wszystkich metod, które mogą być części podrzędnych tej właściwości. Używany w połączeniu `guidFilter` `pszNameFilter` z parametrami i.
+podczas Kombinacja flag z wyliczenia [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) , która określa typ obiektów do wyliczenia, na przykład `DBG_ATTRIB_METHOD` dla wszystkich metod, które mogą być elementami podrzędnymi tej właściwości. Używane w połączeniu z `guidFilter` `pszNameFilter` parametrami i.
 
 `pszNameFilter`\
-[w] Nazwa filtru używanego `guidFilter` z `dwAttribFilter` i parametrów, aby wybrać, które `DEBUG_PROPERTY_INFO` elementy podrzędne mają być wyliczone. Na przykład ustawienie tego parametru na filtry "MyX" dla wszystkich dziewiętnastych dzieci o nazwie "MyX".
+podczas Nazwa filtru użyta z `guidFilter` parametrami i, `dwAttribFilter` Aby wybrać elementy podrzędne, które mają `DEBUG_PROPERTY_INFO` zostać wyliczone. Na przykład ustawienie tego parametru na filtry "MyX" dla wszystkich elementów podrzędnych o nazwie "MyX".
 
 `dwTimeout`\
-[w] Określa maksymalny czas oczekiwania w milisekundach przed zwróceniem z tej metody. Służy `INFINITE` do oczekiwania przez czas nieokreślony.
+podczas Określa maksymalny czas oczekiwania (w milisekundach) przed powrotem z tej metody. Użyj `INFINITE` , aby czekać w nieskończoność.
 
 `ppEnum`\
-[na zewnątrz] Zwraca obiekt [IEnumDebugPropertyInfo2 zawierający](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) listę właściwości podrzędnych.
+określoną Zwraca obiekt [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) zawierający listę właściwości podrzędnych.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli to się powiedzie, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

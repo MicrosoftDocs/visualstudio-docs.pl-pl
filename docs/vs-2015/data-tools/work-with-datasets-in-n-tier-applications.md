@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4f7be307ec94b15871da20ace8055fc7121d5d92
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657814"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Praca z zestawami danych w aplikacjach n-warstwowych
@@ -54,7 +54,7 @@ N-warstwowe aplikacje danych * są aplikacjami zorientowanymi na dane, które s�
 
  [Przewodnik: Dodawanie walidacji do wielowarstwowej aplikacji danych](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265) Zawiera instrukcje krok po kroku dotyczące dodawania walidacji do aplikacji, która została utworzona w przewodniku dotyczącym wielowarstwowej aplikacji do obsługi danych.
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
  <xref:System.Data.DataSet>
 
  <xref:System.Data.TypedTableBase%601>

@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1ac04a3d8834e3fc24f148fc36327d101e43720a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658849"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Porady: konfigurowanie analizy kodu dla projektu zarządzanego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] i [!INCLUDE[vsPro](../includes/vspro-md.md)] można wybrać spośród listy *zestawów reguł* analizy kodu, które mają być stosowane do projektu kodu zarządzanego. Domyślnym zestawem reguł są reguły zalecane przez firmę Microsoft. Do projektu lub wszystkich projektów w rozwiązaniu można zastosować inny zestaw reguł.
+W [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] programie [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] [!INCLUDE[vsPro](../includes/vspro-md.md)] można wybrać jedną z listy *zestawów reguł* analizy kodu, która ma zostać zastosowana do projektu kodu zarządzanego. Domyślnym zestawem reguł są reguły zalecane przez firmę Microsoft. Do projektu lub wszystkich projektów w rozwiązaniu można zastosować inny zestaw reguł.
 
 > [!NOTE]
 > Informacje o sposobie konfigurowania zestawu reguł dla aplikacji sieci Web ASP.NET można znaleźć w temacie [How to: Configure Code Analysis for a ASP.NET Web Application](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
@@ -48,7 +48,7 @@ W [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] [!INCLUDE[vsPreLong](../inc
 
     - Kliknij zestaw reguł, którego chcesz użyć.
 
-    - Kliknij **\<Browse... >** określić istniejącego niestandardowego zestawu reguł, którego nie ma na liście.
+    - Kliknij **\<Browse...>** , aby określić istniejący niestandardowy zestaw reguł, którego nie ma na liście.
 
     - Zdefiniuj niestandardowy zestaw reguł.
 

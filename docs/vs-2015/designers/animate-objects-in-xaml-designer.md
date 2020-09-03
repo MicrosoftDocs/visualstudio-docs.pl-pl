@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ea2fdf1f47385a9be26fa65a93b9104b2d864079
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658022"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animowanie obiektów w projektancie XAML
@@ -29,7 +29,7 @@ Można tworzyć krótkie animacje, które przesuwają obiekty lub rozjaśniają 
 
  Dowiedz się, jak tworzyć animacje, obserwując te wideo.
 
-|Obejrzyj krótkie wideo:|Dowiedz się, jak:|
+|Obejrzyj krótkie wideo:|Instrukcje:|
 |--------------------------|-------------------|
 |![Konfigurowanie zainstalowanych funkcji](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Tworzenie osi czasu](http://www.popscreen.com/v/6A4eF/Microsoft-Expression-Blend-Creating-Timelines)|Utwórz oś czasu i pracuj z obiektami na osi czasu.|
 |![Konfigurowanie zainstalowanych funkcji](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Dodaj klatki kluczowe i powtórz animację](http://www.popscreen.com/v/6A4fi/Microsoft-Expression-Blend-Adding-Keyframes-and-Repeating-an-Animation)|Dodaj klatki kluczowe i ustaw właściwości w każdej klatce kluczowej. Następnie Uruchom animację i obserwuj obiekty płynnie przechodzą między nimi.|

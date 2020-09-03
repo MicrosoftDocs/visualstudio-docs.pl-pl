@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9349745eeee24f2f8b1e62eb2b01bd75273c86d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658595"
 ---
 # <a name="toolbox-data-tab"></a>Przybornik, karta Dane
@@ -33,7 +33,7 @@ Wyświetla obiekty danych, które można dodać do formularzy i składników. Ka
 
 |Nazwa|Opis|
 |----------|-----------------|
-|<xref:System.Data.DataSet>|Dodaje do formularza lub składnika wystąpienie zestawu danych typu lub z nieokreślonym typem. Po przeciągnięciu tego obiektu do projektanta wyświetla okno dialogowe, które umożliwia wybranie istniejącej klasy zestawu danych lub określenie, czy chcesz utworzyć nowy, pusty, nieokreślony zestaw danych. **Uwaga:**  Nie używasz obiektu <xref:System.Data.DataSet> w **przyborniku** , aby utworzyć nowy, typ schematu i klasę zestawu danych. Aby uzyskać więcej informacji, zobacz [Tworzenie i konfigurowanie zestawów danych](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
+|<xref:System.Data.DataSet>|Dodaje do formularza lub składnika wystąpienie zestawu danych typu lub z nieokreślonym typem. Po przeciągnięciu tego obiektu do projektanta wyświetla okno dialogowe, które umożliwia wybranie istniejącej klasy zestawu danych lub określenie, czy chcesz utworzyć nowy, pusty, nieokreślony zestaw danych. **Uwaga:**  Nie używasz <xref:System.Data.DataSet> obiektu w **przyborniku** , aby utworzyć nowy typ schematu i klasę zestawu danych. Aby uzyskać więcej informacji, zobacz [Tworzenie i konfigurowanie zestawów danych](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
 |<xref:System.Windows.Forms.DataGridView>|Zapewnia zaawansowany i elastyczny sposób wyświetlania danych w formacie tabelarycznym.|
 |<xref:System.Windows.Forms.BindingSource>|Upraszcza proces kontroli powiązań z bazowym źródłem danych.|
 |<xref:System.Windows.Forms.BindingNavigator>|Reprezentuje interfejs użytkownika nawigacji i manipulowania dla kontrolek w formularzu, które są powiązane z danymi.|

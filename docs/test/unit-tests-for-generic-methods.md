@@ -11,40 +11,40 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 2158c889aefc85c908aa9ee42d45858fd11d557e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590816"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testy jednostkowe metod ogólnych
 
-Można wygenerować testy jednostkowe dla metod ogólnych dokładnie tak, jak w przypadku innych metod. Poniższe sekcje zawierają informacje i przykłady tworzenia testów jednostkowych dla metod ogólnych.
+Można generować testy jednostkowe dla metod ogólnych dokładnie tak samo jak w przypadku innych metod. Poniższe sekcje zawierają informacje o i przykłady tworzenia testów jednostkowych dla metod ogólnych.
 
-## <a name="type-arguments-and-type-constraints"></a>Typ argumenty i ograniczenia typu
+## <a name="type-arguments-and-type-constraints"></a>Argumenty typu i ograniczenia typu
 
-Gdy visual studio generuje test jednostkowy dla `MyList<T>`klasy ogólnej, takich jak , generuje dwie metody: pomocnika ogólnego i metody testowej. Jeśli `MyList<T>` ma jeden lub więcej ograniczeń typu, argument typu musi spełniać wszystkie ograniczenia typu. Aby upewnić się, że kod ogólny w ramach testu działa zgodnie z oczekiwaniami dla wszystkich dopuszczalnych danych wejściowych, metoda testowa wywołuje metodę pomocnika ogólnego ze wszystkimi ograniczeniami, które chcesz przetestować.
+Gdy program Visual Studio generuje test jednostkowy dla klasy generycznej, na przykład `MyList<T>` generuje dwie metody: pomocnik generyczny i metodę testową. Jeśli `MyList<T>` ma co najmniej jedno ograniczenie typu, argument typu musi spełniać wszystkie ograniczenia typu. Aby upewnić się, że kod generyczny w teście działa zgodnie z oczekiwaniami dla wszystkich dopuszczalnych danych wejściowych, metoda testowa wywołuje ogólną metodę pomocnika ze wszystkimi ograniczeniami, które mają zostać przetestowane.
 
 ## <a name="examples"></a>Przykłady
-Poniższe przykłady ilustrują testy jednostkowe dla leków generycznych:
+Poniższe przykłady ilustrują testy jednostkowe dla typów ogólnych:
 
-- [Edytuj wygenerowany kod testowy](#EditingGeneratedTestCode). W tym przykładzie ma dwie sekcje, wygenerowany kod testowy i edytowany kod testu. Pokazuje, jak edytować nieprzetworzony kod testowy, który jest generowany z metody ogólnej do użytecznej metody testowej.
+- [Edytuj wygenerowany kod testu](#EditingGeneratedTestCode). Ten przykład ma dwie sekcje, Wygenerowano kod testowy i edytowany kod testowy. Pokazuje, jak edytować nieprzetworzony kod testu, który jest generowany z metody ogólnej do przydatnej metody testowej.
 
-- [Użyj ograniczenia typu](#TypeConstraintNotSatisfied). W tym przykładzie pokazano test jednostkowy dla metody ogólnej, która używa ograniczenia typu. W tym przykładzie ograniczenie typu nie jest spełnione.
+- [Użyj ograniczenia typu](#TypeConstraintNotSatisfied). Ten przykład pokazuje test jednostkowy dla metody ogólnej, która używa ograniczenia typu. W tym przykładzie ograniczenie typu nie jest spełnione.
 
-### <a name="example-1-editing-generated-test-code"></a><a name="EditingGeneratedTestCode"></a>Przykład 1: Edytowanie wygenerowanego kodu testowego
-Kod testowy w tej sekcji testuje metodę `SizeOfLinkedList()`kodu pod testem o nazwie . Ta metoda zwraca liczbę całkowitą, która określa liczbę węzłów na połączonej liście.
+### <a name="example-1-editing-generated-test-code"></a><a name="EditingGeneratedTestCode"></a> Przykład 1: edytowanie wygenerowanego kodu testowego
+Kod testu w tej sekcji testuje metodę testową w kodzie pod nazwą `SizeOfLinkedList()` . Ta metoda zwraca liczbę całkowitą, która określa liczba węzłów na liście połączonej.
 
-Pierwszy przykład kodu w sekcji Wygenerowany kod testowy pokazuje nieedytowany kod testowy, który został wygenerowany przez program Visual Studio Enterprise. Drugi przykład, w sekcji Edytowany kod testowy, pokazuje, jak można go przetestować działanie SizeOfLinkedList metody dla dwóch różnych typów danych `int` i `char`.
+Pierwszy przykład kodu, w sekcji wygenerowała kod testu, pokazuje Nieedytowany kod testu, ponieważ został wygenerowany przez Visual Studio Enterprise. Drugi przykład w sekcji edytowanego kodu testowego pokazuje, jak można przetestować działanie metody SizeOfLinkedList dla dwóch różnych typów danych `int` i `char` .
 
 Ten kod ilustruje dwie metody:
 
-- metodę pomocnika testu, `SizeOfLinkedListTestHelper<T>()`. Domyślnie metoda pomocnika testu ma "TestHelper" w nazwie.
+- metoda pomocnika testowego `SizeOfLinkedListTestHelper<T>()` . Domyślnie metoda pomocnika testowego ma nazwę "TestHelper".
 
-- metodę badawczą, `SizeOfLinkedListTest()`. Każda metoda testowa jest oznaczona atrybutem TestMethod.
+- Metoda testowa, `SizeOfLinkedListTest()` . Każda metoda testowa jest oznaczona przy użyciu atrybutu TestMethod.
 
-#### <a name="generated-test-code"></a>Wygenerowany kod testowy
-Poniższy kod testu został `SizeOfLinkedList()` wygenerowany z metody. Ponieważ jest to test wygenerowany bez daty, musi zostać zmodyfikowany, aby poprawnie przetestować Metodę SizeOfLinkedList.
+#### <a name="generated-test-code"></a>Wygenerowany kod testu
+Następujący kod testu został wygenerowany z `SizeOfLinkedList()` metody. Ponieważ jest to nieedytowane wygenerowane testy, należy zmodyfikować, aby prawidłowo przetestować metodę SizeOfLinkedList.
 
 ```csharp
 public void SizeOfLinkedListTestHelper<T>()
@@ -65,30 +65,30 @@ public void SizeOfLinkedListTest()
 }
 ```
 
-W poprzednim kodzie parametr typu `GenericParameterHelper`ogólnego to . Podczas gdy można edytować go do dostarczania określonych typów danych, jak pokazano w poniższym przykładzie, można uruchomić test bez edycji tej instrukcji.
+W poprzednim kodzie parametr typu ogólnego to `GenericParameterHelper` . Można edytować go w celu dostarczania określonych typów danych, jak pokazano w poniższym przykładzie, można uruchomić test bez edytowania tej instrukcji.
 
-#### <a name="edited-test-code"></a>Edytowany kod testowy
-W poniższym kodzie metoda testowa i metoda pomocnika testu zostały edytowane, aby pomyślnie `SizeOfLinkedList()`przetestować metodę kodu pod testem.
+#### <a name="edited-test-code"></a>Edytowano kod testu
+W poniższym kodzie metoda testowa i metoda pomocnika testu zostały edytowane w celu pomyślnego przetestowania metody kodu w teście `SizeOfLinkedList()` .
 
 ##### <a name="test-helper-method"></a>Metoda pomocnika testu
-Metoda pomocnika testu wykonuje następujące kroki, które odpowiadają wierszom w kodzie oznaczonym krok od 1 do kroku 5.
+Metoda pomocnika testu wykonuje następujące czynności, które odnoszą się do wierszy w kodzie oznaczonym krok 1 do kroku 5.
 
-1. Utwórz ogólną listę połączony.
+1. Utwórz połączoną listę ogólną.
 
-2. Dołącz cztery węzły do połączonej listy. Typ danych zawartości tych węzłów jest nieznany.
+2. Dołącz cztery węzły do listy połączonej. Typ danych zawartości tych węzłów jest nieznany.
 
-3. Przypisz oczekiwany rozmiar połączonej `expected`listy do zmiennej .
+3. Przypisz do zmiennej oczekiwany rozmiar połączonej listy `expected` .
 
-4. Oblicz rzeczywisty rozmiar połączonej listy i przypisz ją do zmiennej `actual`.
+4. Oblicza rzeczywisty rozmiar połączonej listy i przypisz ją do zmiennej `actual` .
 
-5. `actual` Porównaj `expected` z w Assert instrukcji. Jeśli rzeczywista nie jest równa oczekiwanej, test zakończy się niepowodzeniem.
+5. Porównaj `actual` z elementem `expected` w instrukcji Assert. Jeśli wartość rzeczywista nie jest równa oczekiwanego, test zakończy się niepowodzeniem.
 
 ##### <a name="test-method"></a>Metoda testowa
-Metoda testowa jest kompilowana do kodu, który jest wywoływany po uruchomieniu testu o nazwie SizeOfLinkedListTest. Wykonuje następujące kroki, które odpowiadają wierszom w kodzie oznaczonym krokiem 6 i 7.
+Metoda testowa jest kompilowana do kodu, który jest wywoływany po uruchomieniu testu o nazwie SizeOfLinkedListTest. Wykonuje następujące czynności, które odnoszą się do wierszy w kodzie oznaczonych krok 6 i 7.
 
-1. Określ, `<int>` kiedy wywołasz metodę pomocnika testu, aby `integer` sprawdzić, czy test działa dla zmiennych.
+1. Określ `<int>` , kiedy wywołujesz metodę pomocnika testowego, aby sprawdzić, czy test działa w przypadku `integer` zmiennych.
 
-2. Określ, `<char>` kiedy wywołasz metodę pomocnika testu, aby `char` sprawdzić, czy test działa dla zmiennych.
+2. Określ `<char>` , kiedy wywołujesz metodę pomocnika testowego, aby sprawdzić, czy test działa w przypadku `char` zmiennych.
 
 ```csharp
 public void SizeOfLinkedListTestHelper<T>()
@@ -115,14 +115,14 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
-> Za każdym razem, gdy test SizeOfLinkedListTest jest uruchamiany, jego TestHelper metoda jest wywoływana dwa razy. Instrukcja assert musi ocenić true za każdym razem, aby test przeszedł. Jeśli test zakończy się niepowodzeniem, może nie `<int>` być jasne, `<char>` czy wywołanie, które określone lub wywołanie, które określiło spowodowało jego niepowodzenie. Aby znaleźć odpowiedź, można sprawdzić stos wywołań lub można ustawić punkty przerwania w metodzie testowej, a następnie debugowania podczas uruchamiania testu. Aby uzyskać więcej informacji, zobacz [Jak: Debugowanie podczas uruchamiania testu w ASP.NET rozwiązanie](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> Po każdym uruchomieniu testu SizeOfLinkedListTest jego Metoda TestHelper jest wywoływana dwa razy. Instrukcja Assert musi być szacowana na wartość true za każdym razem, gdy test zostanie przekazany. Jeśli test nie powiedzie się, może nie być jasne, czy wywołanie określone `<int>` lub wywołanie, które zostało określone, `<char>` spowodowało niepowodzenie. Aby znaleźć odpowiedź, można sprawdzić stos wywołań lub ustawić punkty przerwania w metodzie testowej, a następnie debugować podczas wykonywania testu. Aby uzyskać więcej informacji, zobacz [How to: Debug in Test in the ASP.NET Solution](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
-### <a name="example-2-using-a-type-constraint"></a><a name="TypeConstraintNotSatisfied"></a>Przykład 2: Używanie ograniczenia typu
-W tym przykładzie pokazano test jednostkowy dla metody rodzajowej, która używa ograniczenia typu, który nie jest spełniony. Pierwsza sekcja zawiera kod z projektu testowego kodu. Ograniczenie typu jest wyróżnione.
+### <a name="example-2-using-a-type-constraint"></a><a name="TypeConstraintNotSatisfied"></a> Przykład 2: użycie ograniczenia typu
+Ten przykład pokazuje test jednostkowy dla metody ogólnej, która używa ograniczenia typu, który nie jest spełniony. W pierwszej sekcji jest wyświetlany kod z projektu kodu testowego. Zostanie wyróżnione ograniczenie typu.
 
 Druga sekcja zawiera kod z projektu testowego.
 
-#### <a name="code-under-test-project"></a>Projekt podtestowany
+#### <a name="code-under-test-project"></a>Projekt w środowisku testowym
 
 ```csharp
 using System;
@@ -156,11 +156,11 @@ namespace ClassLibrary2
 
 #### <a name="test-project"></a>Projekt testowy
 
-Podobnie jak w przypadku wszystkich nowo wygenerowanych testów jednostkowych, należy dodać nierozłączne Assert instrukcji do tego testu jednostkowego, aby zwrócić przydatne wyniki. Nie dodajesz ich do metody oznaczonej atrybutem TestMethod, ale do metody "TestHelper", która dla tego testu nosi nazwę `DataTestHelper<T>()`.
+Podobnie jak w przypadku wszystkich nowo wygenerowanych testów jednostkowych, należy dodać nieniejednoznaczne instrukcje Assert do tego testu jednostkowego, aby zwracały przydatne wyniki. Nie należy dodawać ich do metody oznaczonej atrybutem TestMethod, ale do metody "TestHelper", która dla tego testu jest nazywana `DataTestHelper<T>()` .
 
-W tym przykładzie parametr `T` typu `where T : Employee`ogólnego ma ograniczenie . To ograniczenie nie jest spełnione w metodzie testowej. W związku `DataTest()` z tym metoda zawiera Assert instrukcji, która ostrzega do wymagań, `T`aby podać ograniczenie typu, który został umieszczony na . Komunikat tego Assert instrukcji brzmi następująco:`("No appropriate type parameter is found to satisfies the type constraint(s) of T. " + "Please call DataTestHelper<T>() with appropriate type parameters.");`
+W tym przykładzie parametr typu generycznego `T` ma ograniczenie `where T : Employee` . To ograniczenie nie jest spełnione w metodzie testowej. W związku z tym `DataTest()` Metoda zawiera instrukcję Assert, która powiadamia użytkownika o wymaganiu podania ograniczenia typu, które zostało umieszczone `T` . Komunikat tej instrukcji Assert jest odczytywany w następujący sposób: `("No appropriate type parameter is found to satisfies the type constraint(s) of T. " + "Please call DataTestHelper<T>() with appropriate type parameters.");`
 
-Innymi słowy, po `DataTestHelper<T>()` wywołaniu metody z `DataTest()`metody testowej, należy `Employee` zdać parametr typu `Employee`lub klasę pochodną .
+Innymi słowy, gdy wywoływana jest `DataTestHelper<T>()` Metoda z metody testowej, należy `DataTest()` przekazać parametr typu `Employee` lub klasy pochodnej z `Employee` .
 
 ```csharp
 using ClassLibrary2;
@@ -196,4 +196,4 @@ namespace TestProject1
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Jednostka przetestować swój kod](../test/unit-test-your-code.md)
+- [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)

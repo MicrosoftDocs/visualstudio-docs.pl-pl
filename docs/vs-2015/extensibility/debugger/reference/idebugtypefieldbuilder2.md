@@ -1,5 +1,5 @@
 ---
-title: IDebugTypeFieldBuilder2 | Dokumentacja firmy Microsoft
+title: IDebugTypeFieldBuilder2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 96241026afff71c061abcfae3547d25cc2166902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152874"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Rozszerza **IDebugTypeFieldBuilder** aby można było utworzyć typy tablic.  
+Rozszerza **IDebugTypeFieldBuilder** , aby można było tworzyć typy tablic.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -32,15 +32,15 @@ IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder
  Ten interfejs można uzyskać od dostawcy symboli.  
   
 ## <a name="methods"></a>Metody  
- Oprócz metod na [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) interfejsu, ten interfejs implementuje następującą metodę:  
+ Oprócz metod w interfejsie [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) ten interfejs implementuje następujące metody:  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|Tworzy tablicę określonego typu i rozmiaru.|  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: SH.h  
+ Nagłówek: sh. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll

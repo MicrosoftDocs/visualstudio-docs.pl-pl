@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricDword | Dokumentacja firmy Microsoft
+title: 'IDebugSettingsCallback2:: GetEEMetricDword | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 461371efdb6152fc8507f081a6d20ccece932d09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155228"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera wartość, która odnosi się do określonej metryki Ewaluator wyrażeń.  
+Pobiera wartość odpowiadającą określonej metryce ewaluatora wyrażeń.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,19 +44,19 @@ private int GetEEMetricDword(
   
 #### <a name="parameters"></a>Parametry  
  `guidLang`  
- [in] Unikatowy identyfikator języka programowania.  
+ podczas Unikatowy identyfikator języka programowania.  
   
  `guidVendor`  
- [in] Unikatowy identyfikator dostawcy.  
+ podczas Unikatowy identyfikator dostawcy.  
   
  `pszMetric`  
- [in] Nazwa metryki.  
+ podczas Nazwa metryki.  
   
  `pdwValue`  
- [out] Zwraca wartość, która odpowiada ciągowi metryki.  
+ określoną Zwraca wartość, która odpowiada ciągowi metryki.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

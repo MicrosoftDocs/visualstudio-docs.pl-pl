@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f124e997669370e71819cf37423d0c2d6a414d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658055"
 ---
 # <a name="n-tier-data-applications-overview"></a>Aplikacje warstwowe — Przegląd
@@ -35,11 +35,11 @@ N-warstwowa * aplikacje danych to aplikacje, które są rozdzielone na wiele *wa
 
  Program Visual Studio zawiera kilka funkcji, które ułatwiają deweloperom tworzenie aplikacji n-warstwowych:
 
-- Projektant zestawu danych udostępnia właściwość **projektu zestawu** danych, która umożliwia rozdzielenie zestawu danych (warstwy jednostek danych) i `TableAdapter`s (warstwa dostępu do danych) na projekty dyskretne.
+- Projektant zestawu danych udostępnia właściwość **projektu zestawu** danych, która umożliwia rozdzielenie zestawu danych (warstwy jednostek danych) i `TableAdapter` s (warstwa dostępu do danych) na projekty dyskretne.
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) udostępniają ustawienia umożliwiające wygenerowanie elementów DataContext i Data w oddzielnych obszarach nazw. Takie rozwiązania pozwala logicznie rozdzielić warstwy dostępu do danych i jednostek danych.
 
-- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) udostępnia metodę <xref:System.Data.Linq.Table%601.Attach%2A>, która umożliwia łączenie DataContext z różnych warstw w aplikacji. Aby uzyskać więcej informacji, zobacz [aplikacje N-warstwowe i zdalne za pomocą LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).
+- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) udostępnia <xref:System.Data.Linq.Table%601.Attach%2A> metodę, która umożliwia łączenie DataContext z różnych warstw w aplikacji. Aby uzyskać więcej informacji, zobacz [aplikacje N-warstwowe i zdalne za pomocą LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).
 
 ## <a name="presentation-tier"></a>Warstwa prezentacji
  *Warstwa prezentacji* to warstwa, w której użytkownicy współpracują z aplikacją. Często zawiera także dodatkową logikę aplikacji. Oto typowe składniki warstwy prezentacji:
@@ -70,7 +70,7 @@ N-warstwowa * aplikacje danych to aplikacje, które są rozdzielone na wiele *wa
   Warstwa środkowa zazwyczaj łączy się z warstwą danych przy użyciu połączenia danych. To połączenie danych jest zazwyczaj przechowywane w składniku dostępu do danych.
 
 ## <a name="data-tier"></a>Warstwa danych
- *Warstwa danych* jest zasadniczo serwerem, w którym są przechowywane dane aplikacji (na przykład serwer z uruchomionym [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]).
+ *Warstwa danych* jest zasadniczo serwerem, w którym są przechowywane dane aplikacji (na przykład serwer z systemem [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] ).
 
  Na ilustracji poniżej widać funkcje i technologie, które są dostępne w programie Visual Studio i mogą być umieszczone w warstwie danych aplikacji n-warstwowej.
 
@@ -90,4 +90,4 @@ N-warstwowa * aplikacje danych to aplikacje, które są rozdzielone na wiele *wa
  [N-warstwowe i zdalne aplikacje z użyciem LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
 
 ## <a name="see-also"></a>Zobacz też
- [przewodnik <xref:System.Data.Linq.ITable.Attach%2A>: Tworzenie wielowarstwowych aplikacji do obsługi danych,](../data-tools/walkthrough-creating-an-n-tier-data-application.md) [hierarchicznych narzędzi aktualizacji](../data-tools/hierarchical-update.md) [w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) [dostęp do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+ <xref:System.Data.Linq.ITable.Attach%2A>Wskazówki [: Tworzenie wielowarstwowych aplikacji do obsługi danych,](../data-tools/walkthrough-creating-an-n-tier-data-application.md) [hierarchicznych narzędzi aktualizacji](../data-tools/hierarchical-update.md) [w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) [dostęp do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

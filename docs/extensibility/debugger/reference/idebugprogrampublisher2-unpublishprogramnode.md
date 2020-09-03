@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgramNode | Dokumenty firmy Microsoft
+title: 'IDebugProgramPublisher2:: UnpublishProgramNode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ae2c3d9f3c9f6c500b10f580035312b2d045689a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721580"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
-Usuwa określony węzeł programu z dostępności do aparatów debugowania (DEs) i menedżera debugowania sesji (SDM).
+Usuwa określony węzeł programu z dostępności do aparatów debugowania (DEs) i Menedżera debugowania sesji (SDM).
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,15 +41,15 @@ int UnpublishProgramNode(
 
 ## <a name="parameters"></a>Parametry
 `pProgramNode`\
-[w] [Obiekt IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) reprezentujący usunięty węzeł programu.
+podczas Obiekt [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) reprezentujący usuwany węzeł programu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Po usunięciu węzeł programu nie jest już dostępny do kwerendy w celu uzyskania informacji o programie.
+ Po usunięciu węzeł programu nie jest już dostępny do wykonywania zapytań o informacje o programie.
 
- Aby udostępnić węzeł programu, należy [wywołać metodę PublishProgramNode.](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)
+ Aby udostępnić węzeł programu, wywołaj metodę [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)

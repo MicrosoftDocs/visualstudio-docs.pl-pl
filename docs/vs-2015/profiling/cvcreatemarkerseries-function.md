@@ -1,5 +1,5 @@
 ---
-title: Funkcja CvCreateMarkerSeries | Dokumentacja firmy Microsoft
+title: Funkcja CvCreateMarkerSeries | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,16 +16,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6dc4af6ef3b2ffc89ec0e69a6dd63923f5c55ffe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155538"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries — Funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Tworzy serię znacznika dla danego dostawcy.  
+Tworzy serię znaczników dla danego dostawcy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,23 +43,23 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
   
 #### <a name="parameters"></a>Parametry  
  `pProvider`  
- Poprzednio inicjowany przez cvinitprovider — obiekt dostawcy. Nie może mieć wartości NULL.  
+ Obiekt dostawcy został wcześniej zainicjowany przez CvInitProvider —. Nie może mieć wartości NULL.  
   
  `pSeriesName`  
- Nazwa serii znacznika. Nie może mieć wartości NULL, ale dozwolone jest pustym ciągiem.  
+ Nazwa serii znaczników. Nie może mieć wartości NULL, ale jest dozwolony pusty ciąg.  
   
  `ppMarkerSeries`  
- Adres zmiennej danych wyjściowych, który będzie przechowywał znaczników serii kontekstu. Nie może mieć wartości NULL.  
+ Adres zmiennej wyjściowej, w której będzie przechowywany kontekst serii znaczników. Nie może mieć wartości NULL.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- S_OK znaczników serii został pomyślnie utworzony lub kod błędu w przypadku zostały wszystkie błędy. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.  
+ S_OK, gdy seria znaczników zostanie pomyślnie utworzona lub kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkers.h  
+ **Nagłówek:** cvmarkers. h  
   
- **Unicode:** Cvcreatemarkerseriesw —  
+ **Unicode:** CvCreateMarkerSeriesW  
   
- **ANSI:** Cvcreatemarkerseriesa —  
+ **ANSI:** CvCreateMarkerSeriesA  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+ [Dokumentacja biblioteki C++](../profiling/cpp-library-reference.md)

@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ee73ea3a9b65635cf14d4d345bf22de4e9593989
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387086"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
@@ -43,7 +43,7 @@ int Continue( 
 ```
 
 ## <a name="parameters"></a>Parametry
-`pThread`podczas Obiekt [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , który reprezentuje wątek.
+`pThread` podczas Obiekt [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , który reprezentuje wątek.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
@@ -56,4 +56,4 @@ int Continue( 
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
-- [Zdarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Wydarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

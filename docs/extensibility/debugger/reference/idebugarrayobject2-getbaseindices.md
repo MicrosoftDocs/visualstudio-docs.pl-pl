@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject2::GetBaseIndices | Dokumenty firmy Microsoft
+title: 'IDebugArrayObject2:: GetBaseIndices | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 925ce3a7bcce9f787e02c2bd2714f8b26d8cec26
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736151"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
-Pobiera indeksy podstawowe (dolne granice) dla każdego indeksu, biorąc pod uwagę liczbę wymiarów w tablicy.
+Pobiera indeksy podstawowe (dolne granice) dla każdego indeksu z określoną liczbą wymiarów w tablicy.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,16 +42,16 @@ int GetBaseIndices (
 
 ## <a name="parameters"></a>Parametry
 `dwRank`\
-[w] Liczba wymiarów (ranga) tablicy.
+podczas Liczba wymiarów (ranga) tablicy.
 
 `dwIndices`\
-[na zewnątrz] Indeksy podstawowe (dolne granice) dla tablicy.
+określoną Indeksy podstawowe (dolne granice) dla tablicy.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Na przykład ta funkcja zwróci "5" dla tablicy utworzonej przez następujący kod Języka C#:
+ Na przykład ta funkcja zwróci wartość "5" dla tablicy utworzonej przy użyciu następującego kodu w języku C#:
 
 ```
 int[] lengths = { 12 };

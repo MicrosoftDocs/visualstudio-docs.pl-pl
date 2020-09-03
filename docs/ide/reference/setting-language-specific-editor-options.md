@@ -12,37 +12,37 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 988e89b9019b149e89ed569cf3ff585fdd4641bc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590842"
 ---
 # <a name="set-language-specific-editor-options"></a>Ustawianie opcji edytora specyficznych dla języka
 
-Visual Studio oferuje wiele opcji edytora tekstu, które mają zastosowanie do określonych języków programowania. Opcje można skonfigurować w oknie dialogowym **Opcje,** do którego można uzyskać dostęp z menu **Narzędzia.** Można również skonfigurować niektóre ustawienia edytora na podstawie projektu lub bazy kodu, [tworząc plik EditorConfig](../../ide/create-portable-custom-editor-options.md).
+Program Visual Studio oferuje różne opcje edytora tekstu, które mają zastosowanie do określonych języków programowania. Opcje można skonfigurować w oknie dialogowym **Opcje** , które jest dostępne z menu **Narzędzia** . Możesz również skonfigurować niektóre ustawienia edytora na podstawie projektu lub bazy kodu, [tworząc plik EditorConfig](../../ide/create-portable-custom-editor-options.md).
 
 ## <a name="settings-available-in-the-options-dialog-box"></a>Ustawienia dostępne w oknie dialogowym Opcje
 
-[Opcje, Edytor tekstu, Podstawowy (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)\
-W tym artykule opisano ustawienia konstrukcji końcowych, formatowania kodu, konspektów i sugestii korekcji błędów, między innymi dla kodu języka Visual Basic.
+[Opcje, Edytor tekstu, podstawowe (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)\
+Opisuje ustawienia dla konstrukcji końcowych, ponownego formatowania kodu, konspektów i sugestii korekcji błędów, między innymi, dla kodu Visual Basic.
 
-[Opcje, Edytor tekstu, C/C++, Formatowanie](../../ide/reference/options-text-editor-c-cpp-formatting.md)\
+[Opcje, Edytor tekstu, C/C++, formatowanie](../../ide/reference/options-text-editor-c-cpp-formatting.md)\
 W tym artykule opisano tworzenie konspektu, wcięcia, szybkie informacje i inne ustawienia dla kodu C i C++.
 
-[Opcje, Edytor tekstu, C/C++, Zaawansowane](../../ide/reference/options-text-editor-c-cpp-advanced.md)\
+[Opcje, Edytor tekstu, C/C++, zaawansowane](../../ide/reference/options-text-editor-c-cpp-advanced.md)\
 W tym artykule opisano ustawienia dla plików bazy danych i technologii IntelliSense podczas korzystania z C i C++.
 
-[Opcje, Edytor tekstu, C#, Formatowanie](../../ide/reference/options-text-editor-csharp-formatting.md)\
-Opisuje ustawienia wcięcie, nowe formatowanie wiersza i zawijania tekstu, między innymi dla języka C#.
+[Opcje, Edytor tekstu, C#, formatowanie](../../ide/reference/options-text-editor-csharp-formatting.md)\
+Opisuje ustawienia wcięć, nowego formatowania linii i zawijania tekstu między innymi dla języka C#.
 
-[Opcje, Edytor tekstu, C#, Zaawansowane](../../ide/reference/options-text-editor-csharp-advanced.md)\
-W tym artykule opisano ustawienia przedstawiające, identyfikację błędów i komentarz dokumentacji XML dla języka C#.
+[Opcje, Edytor tekstu, C#, zaawansowane](../../ide/reference/options-text-editor-csharp-advanced.md)\
+Opisuje ustawienia konspektu, identyfikacji błędów i komentarza dokumentacji XML dla języka C#.
 
 [Opcje, Edytor tekstu, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)\
-W tym artykule opisano ustawienia, które określają, jak lista ukończenia IntelliSense zachowuje się podczas pracy w kodzie C#.
+Opisuje ustawienia określające zachowanie listy uzupełniania IntelliSense podczas pracy w kodzie C#.
 
-[Opcje, Edytor tekstu, XAML, Formatowanie](../../ide/reference/options-text-editor-xaml-formatting.md)\
+[Opcje, Edytor tekstu, XAML, formatowanie](../../ide/reference/options-text-editor-xaml-formatting.md)\
 Zawiera opis ustawień rozmieszczenia elementów i atrybutów w dokumentach w języku XAML.
 
 ## <a name="see-also"></a>Zobacz też

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::GetProviderProgramNode | Dokumenty firmy Microsoft
+title: 'IDebugProgramProvider2:: GetProviderProgramNode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fd8ca7d5120ba20695caef2e9021ee25869df72f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721794"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
@@ -51,31 +51,31 @@ int GetProviderProgramNode(
 
 ## <a name="parameters"></a>Parametry
 `Flags`\
-[w] Kombinacja flag z wyliczenia [PROVIDER_FLAGS.](../../../extensibility/debugger/reference/provider-flags.md) Następujące flagi są typowe dla tego wywołania:
+podczas Kombinacja flag z wyliczenia [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) . Następujące flagi są typowe dla tego wywołania:
 
 |Flaga|Opis|
 |----------|-----------------|
-|`PFLAG_REMOTE_PORT`|Rozmówca jest uruchomiony na komputerze zdalnym.|
-|`PFLAG_DEBUGGEE`|Wywołujący jest obecnie debugowane (dodatkowe informacje na temat marshalling zostaną zwrócone dla każdego węzła).|
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Wywołujący został dołączony do, ale nie został uruchomiony przez debugera.|
+|`PFLAG_REMOTE_PORT`|Obiekt wywołujący jest uruchomiony na komputerze zdalnym.|
+|`PFLAG_DEBUGGEE`|Obiekt wywołujący jest obecnie debugowany (dodatkowe informacje o kierowaniu zostaną zwrócone dla każdego węzła).|
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Obiekt wywołujący został dołączony do, ale nie został uruchomiony przez debuger.|
 
 `pPort`\
-[w] Port, na który jest uruchomiony proces wywoływania.
+podczas Port, na którym jest uruchomiony proces wywołujący.
 
 `processId`\
-[w] Struktura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) zawierająca identyfikator procesu, który zawiera dany program.
+podczas Struktura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) przechowująca identyfikator procesu zawierającego dany program.
 
 `guidEngine`\
-[w] Identyfikator GUID aparatu debugowania, do którego jest dołączony program (jeśli istnieje).
+podczas Identyfikator GUID aparatu debugowania, do którego jest dołączony program (jeśli istnieje).
 
 `programId`\
-[w] Identyfikator programu, dla którego ma zostać wydzielona węźle programu.
+podczas Identyfikator programu, dla którego ma zostać pobrany węzeł programu.
 
 `ppProgramNode`\
-[na zewnątrz] [Obiekt IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) reprezentujący żądany węzeł programu.
+określoną Obiekt [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) reprezentujący żądany węzeł programu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

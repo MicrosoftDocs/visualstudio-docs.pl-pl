@@ -8,29 +8,29 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: ec1025eaa53861fae2cf92395d8842854649fa8c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591219"
 ---
-# <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analizowanie zakodowanych testów interfejsu użytkownika przy użyciu kodowanych dzienników testów interfejsu użytkownika
+# <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analizowanie kodowanych testów interfejsu użytkownika za pomocą dzienników kodowanych testów interfejsu użytkownika
 
-Kodowane dzienniki testów interfejsu użytkownika filtrują i rejestrują ważne informacje o kodowanych przebiegach testu interfejsu użytkownika. Dzienniki są prezentowane w formacie, który pozwala na problemy debugowania szybko.
+Dzienniki kodowanych testów interfejsu użytkownika filtru i rejestrowania ważnych informacji o kodowanych przebiegach testów interfejsu użytkownika. Dzienniki są prezentowane w formacie umożliwiającym szybkie Debugowanie problemów.
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="step-1-enable-logging"></a>Krok 1: Włącz rejestrowanie
+## <a name="step-1-enable-logging"></a>Krok 1. Włączanie rejestrowania
 
-W zależności od scenariusza użyj jednej z następujących metod, aby włączyć dziennik:
+W zależności od scenariusza należy użyć jednej z następujących metod, aby włączyć dziennik:
 
-- Jeśli w projekcie testowym nie ma pliku *App.config:*
+- Jeśli w projekcie testowym nie istnieje plik *App.config* :
 
-   1. Określ, który proces *QTAgent\*.exe* jest uruchamiany po uruchomieniu testu. Jednym ze sposobów, aby to zrobić, jest oglądanie karty **Szczegóły** w **Menedżerze zadań**systemu Windows .
+   1. Określ, który proces *QTAgent \* . exe* jest uruchamiany po uruchomieniu testu. Jednym ze sposobów jest Obejrzyj kartę **szczegóły** w **Menedżerze zadań**systemu Windows.
 
-   2. Otwórz odpowiedni plik *.config* z folderu *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<>\\ \<edition>\Common7\IDE* folder. Na przykład, jeśli proces, który jest uruchamiany jest *QTAgent_40.exe*, otwórz *QTAgent_40.exe.config*.
+   2. Otwórz odpowiedni plik *config* w folderze *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \\ \<edition> \Common7\IDE* . Na przykład jeśli proces, który jest uruchomiony, jest *QTAgent_40.exe*, Otwórz *QTAgent_40.exe.config*.
 
-   2. Zmodyfikuj wartość **EqtTraceLevel** do żądanego poziomu dziennika.
+   2. Zmodyfikuj wartość **EqtTraceLevel** na żądany poziom dziennika.
 
       ```xml
       <!-- You must use integral values for "value".
@@ -40,9 +40,9 @@ W zależności od scenariusza użyj jednej z następujących metod, aby włączy
 
    3. Zapisz plik.
 
-- Jeśli w projekcie testowym znajduje się plik *App.config:*
+- Jeśli istnieje plik *App.config* obecny w projekcie testowym:
 
-  - Otwórz plik *App.config* w projekcie i dodaj następujący kod w węźle konfiguracji:
+  - Otwórz plik *App.config* w projekcie i Dodaj następujący kod w węźle Konfiguracja:
 
     ```xml
     <system.diagnostics>
@@ -52,42 +52,42 @@ W zależności od scenariusza użyj jednej z następujących metod, aby włączy
     </system.diagnostics>`
     ```
 
-- Włącz rejestrowanie z samego kodu testowego:
+- Włącz rejestrowanie z poziomu kodu testu:
 
    ```csharp
    Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState = HtmlLoggerState.AllActionSnapshot;
    ```
 
-## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2: Uruchom kodowany test interfejsu użytkownika i wyświetl dziennik
+## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2. Uruchamianie kodowanego testu interfejsu użytkownika i Wyświetlanie dziennika
 
-Po uruchomieniu zakodowany test interfejsu użytkownika z modyfikacjami pliku *\*QTAgent .exe.config* w miejscu, zobaczysz łącze wyjściowe w **wynikach Eksploratora testów.** Pliki dziennika są tworzone nie tylko wtedy, gdy test zakończy się niepowodzeniem, ale także dla pomyślnych testów, gdy poziom śledzenia jest ustawiony na **pełne**.
+Po uruchomieniu kodowanego testu interfejsu użytkownika przy użyciu modyfikacji w pliku *QTAgent \*.exe.config* , w wynikach programu **Test Explorer** zostanie wyświetlony link danych wyjściowych. Pliki dzienników są tworzone nie tylko wtedy, gdy test zakończy się niepowodzeniem, ale również dla testów zakończonych powodzeniem, gdy poziom śledzenia ma wartość **pełne**.
 
-1. W menu **Test** wybierz polecenie **Windows,** a następnie wybierz pozycję **Eksplorator testów**.
+1. Z menu **test** wybierz pozycję **Windows** , a następnie wybierz pozycję **Eksplorator testów**.
 
-2. W menu **Kompilacja** wybierz polecenie **Build Solution**.
+2. W menu **kompilacja** wybierz polecenie **Kompiluj rozwiązanie**.
 
-3. W **Eksploratorze testów**wybierz kodowany test interfejsu użytkownika, który chcesz uruchomić, otwórz menu skrótów, a następnie wybierz polecenie **Uruchom testy wybierz**.
+3. W **Eksploratorze testów**wybierz kodowany test interfejsu użytkownika, który chcesz uruchomić, otwórz jego menu skrótów, a następnie wybierz polecenie **Uruchom wybrane testy**.
 
-     Testy automatyczne są uruchamiane i wskazują, czy przeszły, czy nie powiodły się.
+     Testy automatyczne są uruchamiane i wskazują, czy zakończyły się powodzeniem, czy nie.
 
     > [!TIP]
-    > Aby wyświetlić **Eksploratora testów,** wybierz pozycję **Test** > **Windows**, a następnie wybierz pozycję **Eksplorator testów**.
+    > Aby wyświetlić **Eksplorator testów**, wybierz **Test**pozycję  >  **Windows**test, a następnie wybierz **Eksplorator testów**.
 
-4. Wybierz **łącze Dane wyjściowe** w wynikach **Eksploratora testów.**
+4. Wybierz łącze **dane wyjściowe** w wynikach programu **Test Explorer** .
 
-     ![Łącze wyjściowe w Eksploratorze testów](../test/media/cuit_htmlactionlog1.png)
+     ![Link wyjściowy w Eksploratorze testów](../test/media/cuit_htmlactionlog1.png)
 
-     Spowoduje to wyświetlenie danych wyjściowych dla testu, który zawiera łącze do dziennika akcji.
+     Spowoduje to wyświetlenie danych wyjściowych testu zawierającego link do dziennika akcji.
 
-     ![Wyniki i łącza wyjściowe z zakodowany test interfejsu użytkownika](../test/media/cuit_htmlactionlog2.png)
+     ![Wyniki i linki wyjściowe z kodowanego testu interfejsu użytkownika](../test/media/cuit_htmlactionlog2.png)
 
-5. Wybierz łącze *UITestActionLog.html.*
+5. Wybierz łącze *UITestActionLog.html* .
 
      Dziennik jest wyświetlany w przeglądarce internetowej.
 
-     ![Kodowany plik dziennika testu interfejsu użytkownika](../test/media/cuit_htmlactionlog3.png)
+     ![Plik dziennika kodowanego testu interfejsu użytkownika](../test/media/cuit_htmlactionlog3.png)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Użyj automatyzacji interfejsu użytkownika, aby przetestować kod](../test/use-ui-automation-to-test-your-code.md)
-- [Jak: Uruchamianie testów z programu Microsoft Visual Studio](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+- [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
+- [Instrukcje: uruchamianie testów z Microsoft Visual Studio](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

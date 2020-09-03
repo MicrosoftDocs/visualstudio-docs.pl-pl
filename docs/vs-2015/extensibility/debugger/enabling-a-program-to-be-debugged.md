@@ -1,5 +1,5 @@
 ---
-title: Włączanie debugowania programu | Dokumentacja firmy Microsoft
+title: Włączanie debugowania programu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,33 +11,33 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b0f0331430a1cc625dee2a7029742fd62d67fb56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155373"
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>Włączanie debugowania programu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Zanim program debugować silnik debugowania (DE), możesz uruchomić DE lub dołączyć do istniejącego programu.  
+Zanim aparat debugowania (DE) będzie mógł debugować program, należy najpierw uruchomić go lub dołączyć do istniejącego programu.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Pobieranie portu](../../extensibility/debugger/getting-a-port.md)  
- W tym artykule omówiono sposób uzyskiwania portu jako pierwszy krok, aby włączyć program do debugowania.  
+ W tym artykule omówiono, jak uzyskać port jako pierwszy krok w celu umożliwienia debugowania programu.  
   
  [Rejestrowanie programu](../../extensibility/debugger/registering-the-program.md)  
- Wyjaśnia, następnym krokiem podczas włączania programu do debugowania: rejestrując ją za pomocą portu. Po zarejestrowaniu programu mogą być debugowane przez proces dołączania lub debugowania just-in-time (JIT).  
+ Wyjaśnia następny krok w celu włączenia debugowania programu: zarejestrowanie go z portem. Po zarejestrowaniu program może być debugowany przez proces dołączania lub debugowania just-in-Time (JIT).  
   
  [Dołączanie do programu](../../extensibility/debugger/attaching-to-the-program.md)  
- Wyjaśnia, następnym krokiem: dołączanie debugera do programu.  
+ Wyjaśnia następny krok: dołączanie debugera do programu.  
   
  [Dołączanie na podstawie uruchamiania](../../extensibility/debugger/launch-based-attachment.md)  
- W tym artykule opisano na podstawie uruchamiania załącznika program, który odbywa się automatycznie po uruchomieniu przez kierownika ds.  
+ Opisuje załącznik na podstawie uruchamiania do programu, który jest automatycznie uruchamiany przez model SDM.  
   
  [Wysyłanie wymaganych zdarzeń](../../extensibility/debugger/sending-the-required-events.md)  
- Kroki wykonywane w wymaganych zdarzeń podczas tworzenia aparatu debugowania (DE) i dołączania ich do programu.  
+ Przeprowadzi Cię przez wymagane zdarzenia podczas tworzenia aparatu debugowania (DE) i dołączenia go do programu.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- Definiuje aparat debugowania (DE), a w tym artykule opisano usług implementowane za pomocą interfejsów DE i jak może spowodować, że debuger w celu przejścia między różne tryby operacyjne.
+ Definiuje aparat debugowania (DE) i opisuje usługi zaimplementowane za pomocą DE Interfaces oraz jak mogą spowodować przejście debugera między różnymi trybami operacyjnymi.

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0af30f31e7ee63c521a3a7c1acbafbb1cd109832
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548021"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Dostosowywanie przechowywania plików i serializacji XML
@@ -81,7 +81,7 @@ Gdy użytkownik zapisuje wystąpienie lub *model*w języku specyficznym dla dome
 
  Zwróć uwagę na następujące kwestie dotyczące serializowanego modelu:
 
-- Każdy węzeł XML ma nazwę, która jest taka sama jak nazwa klasy domeny, z tą różnicą, że inicjał jest pisany małymi literami. Na przykład `familyTreeModel` i `person` .
+- Każdy węzeł XML ma nazwę, która jest taka sama jak nazwa klasy domeny, z tą różnicą, że inicjał jest pisany małymi literami. Na przykład `familyTreeModel` i `person`.
 
 - Właściwości domeny, takie jak Name i BirthYear, są serializowane jako atrybuty w węzłach XML. Ponownie początkowy znak nazwy właściwości jest konwertowany na małe litery.
 
@@ -102,7 +102,7 @@ Gdy użytkownik zapisuje wystąpienie lub *model*w języku specyficznym dla dome
 ## <a name="understanding-monikers"></a>Zrozumienie monikerów
  Monikery służą do reprezentowania odwołań między różnymi częściami modelu i plików diagramu. Są one również używane w `.diagram` pliku do odwoływania się do węzłów w pliku modelu. Istnieją dwie formy monikera:
 
-- *Monikery identyfikatorów* wyznaczają identyfikator GUID elementu docelowego. Przykład:
+- *Monikery identyfikatorów* wyznaczają identyfikator GUID elementu docelowego. Na przykład:
 
   ```
   <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />
@@ -145,13 +145,13 @@ Gdy użytkownik zapisuje wystąpienie lub *model*w języku specyficznym dla dome
 
     2. W okno Właściwości ustaw **klucz monikera** na `true` .
 
-- \-oraz
+- \- oraz
 
      Utwórz nową klasę domeny za pomocą narzędzia **klasy nazwanej domeny** .
 
      To narzędzie tworzy nową klasę, która ma właściwość domeny o nazwie name. **Nazwa elementu is** i **ma właściwości klucza monikera** tej właściwości domeny są inicjowane do `true` .
 
-- \-oraz
+- \- oraz
 
      Utwórz relację dziedziczenia z klasy domeny do innej klasy, która ma właściwość klucza monikera.
 
@@ -275,7 +275,7 @@ Gdy użytkownik zapisuje wystąpienie lub *model*w języku specyficznym dla dome
 |Jest niestandardowy|Ustaw tę **wartość na true (prawda** ), jeśli chcesz napisać własny kod serializacji i deserializacji dla tej klasy domeny.<br /><br /> Skompiluj rozwiązanie i zbadaj błędy, aby poznać szczegółowe instrukcje.|
 |Klasa domeny|Klasa domeny, do której stosuje się ten węzeł danych klasy. Tylko do odczytu.|
 |Nazwa elementu|Nazwa węzła XML dla elementów tej klasy. Wartością domyślną jest mała wersja klasy domeny.|
-|Nazwa atrybutu monikera|Nazwa atrybutu używanego w elementach monikera, który będzie zawierać odwołanie. Jeśli pole pozostanie puste, zostanie użyta nazwa właściwości klucza lub identyfikatora.<br /><br /> W tym przykładzie jest to "nazwa":`<personMoniker name="/Mike Nash"/>`|
+|Nazwa atrybutu monikera|Nazwa atrybutu używanego w elementach monikera, który będzie zawierać odwołanie. Jeśli pole pozostanie puste, zostanie użyta nazwa właściwości klucza lub identyfikatora.<br /><br /> W tym przykładzie jest to "nazwa":  `<personMoniker name="/Mike Nash"/>`|
 |Nazwa elementu monikera|Nazwa elementu XML używanego dla monikerów odwołujących się do elementów tej klasy.<br /><br /> Wartość domyślna to mała wersja nazwy klasy z sufiksem "moniker". Na przykład `personMoniker`.|
 |Nazwa typu monikera|Nazwa typu XSD wygenerowanego dla monikerów elementów tej klasy. XSD znajduje się w ** \\ \* schemacie Code Dsl\Generated. xsd**|
 |Identyfikator serializacji|W przypadku wartości true identyfikator GUID elementu jest dołączany do pliku. Musi to być prawdziwe, jeśli nie istnieje właściwość, która jest oznaczona jako **klucz monikera** , a DSL definiuje relacje odwołania do tej klasy.|

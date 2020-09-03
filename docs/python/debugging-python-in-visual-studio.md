@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 094305e901624e13df147030899981f8fedb80d1
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387034"
 ---
 # <a name="debug-your-python-code"></a>Debugowanie kodu w języku Python
@@ -66,7 +66,7 @@ Podczas ustawiania warunków można także ustawić **akcję** i utworzyć komun
 
 Po zatrzymaniu w punkcie przerwania masz różne sposoby przechodzenia przez kod lub uruchamiania bloków kodu przed ponownym rozdzieleniem. Te polecenia są dostępne w wielu miejscach, w tym na górnym pasku narzędzi do debugowania, **w menu** kontekstowym po kliknięciu prawym przyciskiem myszy w edytorze kodu oraz za pomocą skrótów klawiaturowych (chociaż nie wszystkie polecenia znajdują się we wszystkich miejscach):
 
-| Obiekt feature | Klawiszy | Opis |
+| Cechy | Klawiszy | Opis |
 | --- | --- | --- |
 | **Kontynuuj** | **F5** | Uruchamia kod do momentu osiągnięcia następnego punktu przerwania. |
 | **Wkrocz do** | **F11** | Uruchamia następną instrukcję i kończy. Jeśli następna instrukcja jest wywołaniem funkcji, debuger zatrzyma się w pierwszym wierszu wywoływanej funkcji. |

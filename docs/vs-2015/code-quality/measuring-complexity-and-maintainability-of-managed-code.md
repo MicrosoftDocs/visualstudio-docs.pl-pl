@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6aaddd47a20623ee21855d4c7bb86e91b2796d53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658070"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Mierzenie złożoności i łatwości konserwacji zarządzanego kodu
@@ -33,12 +33,12 @@ Zwiększona złożoność nowoczesnych aplikacji oprogramowania również zwięk
 
  Deweloperzy mogą używać [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] do generowania danych metryk kodu, które mierzą złożoność i łatwość utrzymania kodu zarządzanego. Dane metryk kodu mogą być generowane dla całego rozwiązania lub pojedynczego projektu.
 
- W tej sekcji opisano sposób generowania i używania metryk kodu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ W tej sekcji opisano sposób generowania i używania metryk kodu w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Wartości metryk kodu](../code-quality/code-metrics-values.md)
+ [Wartości metryk kodów](../code-quality/code-metrics-values.md)
 
- [Instrukcje: Generowanie danych metryk kodu](../code-quality/how-to-generate-code-metrics-data.md)
+ [Porady: generowanie metryk kodów](../code-quality/how-to-generate-code-metrics-data.md)
 
  [Praca z danymi metryk kodu](../code-quality/working-with-code-metrics-data.md)
 

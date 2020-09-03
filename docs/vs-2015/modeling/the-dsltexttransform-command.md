@@ -12,20 +12,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 599bf14a3d37fbd6bdff111f79e658f44624792b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658462"
 ---
 # <a name="the-dsltexttransform-command"></a>DslTextTransform — Polecenie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DslTextTransform. cmd to skrypt, który wywołuje element TextTransform. exe i uruchamia go z typowymi opcjami. Możesz użyć DslTextTransformation. cmd, aby zautomatyzować nocną kompilację projektów [!INCLUDE[dsl](../includes/dsl-md.md)]. Aby uzyskać więcej informacji, zobacz [generowanie plików za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
+DslTextTransform. cmd jest skryptem, który wywołuje TextTransform.exe i uruchamia go ze wspólnymi opcjami. Możesz użyć DslTextTransformation. cmd, aby zautomatyzować nocną kompilację [!INCLUDE[dsl](../includes/dsl-md.md)] projektów. Aby uzyskać więcej informacji, zobacz [generowanie plików za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
  DslTextTransform. cmd znajduje się w następującym katalogu:
 
- **Ścieżka instalacji zestawu SDK \<Visual Studio > \VisualStudioIntegration\Tools\Bin**
+ **\<Visual Studio SDK Installation Path>\VisualStudioIntegration\Tools\Bin**
 
  Można określić następujące argumenty jako dane wejściowe do DslTextTransform. cmd:
 
@@ -35,4 +35,4 @@ DslTextTransform. cmd to skrypt, który wywołuje element TextTransform. exe i u
 
 - Lokalizacja pliku szablonu tekstu.
 
-  DslTextTransform. cmd przetwarza określony plik szablonu tekstowego przy użyciu domyślnych procesorów dyrektywy i zestawów. W przypadku tworzenia niestandardowych procesorów dyrektywy można utworzyć własny plik wsadowy, który wywołuje element TextTransform. exe. W tym pliku wsadowym można określić zestawy i skojarzone procesory dyrektywy niestandardowej.
+  DslTextTransform. cmd przetwarza określony plik szablonu tekstowego przy użyciu domyślnych procesorów dyrektywy i zestawów. W przypadku tworzenia niestandardowych procesorów dyrektywy można utworzyć własny plik wsadowy, który wywołuje TextTransform.exe. W tym pliku wsadowym można określić zestawy i skojarzone procesory dyrektywy niestandardowej.

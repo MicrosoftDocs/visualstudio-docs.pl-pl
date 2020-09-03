@@ -12,22 +12,22 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c38b15a3b819ce561c098c3b9810ee6884e526b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658522"
 ---
 # <a name="text-template-utility-methods"></a>Metody korzystania z szablonów tekstowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Istnieje kilka metod, które są zawsze dostępne, gdy piszesz kod w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablonu tekstu. Te metody są zdefiniowane w <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+Istnieje kilka metod, które są zawsze dostępne, gdy piszesz kod w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablonie tekstowym. Te metody są zdefiniowane w <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> .
 
 > [!TIP]
-> Można również użyć innych metod i usług udostępnianych przez środowisko hosta w zwykłym (niewstępnie przetworzonym) szablonie tekstowym. Można na przykład rozpoznać ścieżki plików, rejestrować błędy i pobrać usługi udostępniane przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i wszystkie załadowane pakiety.  Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dostępu do programu Visual Studio z szablonu tekstu](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
+> Można również użyć innych metod i usług udostępnianych przez środowisko hosta w zwykłym (niewstępnie przetworzonym) szablonie tekstowym. Można na przykład rozpoznać ścieżki plików, rejestrować błędy i pobrać usługi udostępniane przez program [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oraz wszystkie załadowane pakiety.  Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dostępu do programu Visual Studio z szablonu tekstu](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
 
 ## <a name="write-methods"></a>Metody zapisu
- Możesz użyć metod `Write()` i `WriteLine()` do dołączania tekstu wewnątrz standardowego bloku kodu, zamiast korzystać z bloku kodu wyrażenia. Poniższe dwa bloki kodu są funkcjonalnie równoważne.
+ Możesz użyć `Write()` metod i, `WriteLine()` Aby dołączyć tekst wewnątrz standardowego bloku kodu, zamiast używać bloku kodu wyrażenia. Poniższe dwa bloki kodu są funkcjonalnie równoważne.
 
 ##### <a name="code-block-with-an-expression-block"></a>Blok kodu z blokiem wyrażenia
 
@@ -55,7 +55,7 @@ while (i-- > 0)
 
  Przydatne może okazać się użycie jednej z tych metod narzędzi zamiast bloku wyrażenia wewnątrz długiego bloku kodu z zagnieżdżonymi strukturami formantów.
 
- Metody `Write()` i `WriteLine()` mają dwa przeciążenia, jeden, który przyjmuje jeden parametr ciągu i jeden, który pobiera ciąg formatu złożonego i tablicę obiektów do uwzględnienia w ciągu (jak Metoda `Console.WriteLine()`). Poniższe dwa zastosowania `WriteLine()` są funkcjonalnie równoważne:
+ `Write()`Metody i `WriteLine()` mają dwa przeciążenia, jeden, który przyjmuje jeden parametr ciągu i jeden, który pobiera ciąg formatu złożonego oraz tablicę obiektów do uwzględnienia w ciągu (jak `Console.WriteLine()` Metoda). Poniższe dwa zastosowania `WriteLine()` są funkcjonalnie równoważne:
 
 ```
 <#
@@ -70,7 +70,7 @@ while (i-- > 0)
 ```
 
 ## <a name="indentation-methods"></a>Metody wcięć
- Możesz użyć metod wcięć, aby sformatować dane wyjściowe szablonu tekstu. Klasa <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> ma właściwość `CurrentIndent` String, która pokazuje bieżące wcięcia w szablonie tekstowym i pole `indentLengths`, które jest listą wcięć, które zostały dodane. Możesz dodać wcięcie z użyciem metody `PushIndent()` i odjąć wcięcie przy użyciu metody `PopIndent()`. Jeśli chcesz usunąć wszystkie wcięcia, użyj metody `ClearIndent()`. Poniższy blok kodu przedstawia sposób korzystania z tych metod:
+ Możesz użyć metod wcięć, aby sformatować dane wyjściowe szablonu tekstu. <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>Klasa ma `CurrentIndent` właściwość String, która pokazuje bieżące wcięcia w szablonie tekstowym i `indentLengths` pole, które jest listą wcięć, które zostały dodane. Możesz dodać wcięcie z `PushIndent()` metodą i odjąć wcięcie przy użyciu `PopIndent()` metody. Jeśli chcesz usunąć wszystkie wcięcia, użyj `ClearIndent()` metody. Poniższy blok kodu przedstawia sposób korzystania z tych metod:
 
 ```
 <#
@@ -97,7 +97,7 @@ Hello
 ```
 
 ## <a name="error-and-warning-methods"></a>Metody błędów i ostrzeżeń
- Za pomocą metod narzędzi Error i Warning można dodawać komunikaty do Lista błędów [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Na przykład poniższy kod doda komunikat o błędzie do Lista błędów.
+ Za pomocą metod narzędzi Error i Warning można dodawać komunikaty do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Lista błędów. Na przykład poniższy kod doda komunikat o błędzie do Lista błędów.
 
 ```
 <#
@@ -114,11 +114,11 @@ Hello
 ```
 
 ## <a name="access-to-host-and-service-provider"></a>Dostęp do hosta i dostawcy usług
- Właściwość `this.Host` może zapewnić dostęp do właściwości uwidocznionych przez hosta, który wykonuje szablon. Aby użyć `this.Host`, należy ustawić atrybut `hostspecific` w dyrektywie `<@template#>`:
+ Właściwość `this.Host` może zapewnić dostęp do właściwości uwidocznionych przez hosta, który wykonuje szablon. Aby użyć `this.Host` , należy ustawić `hostspecific` atrybut w `<@template#>` dyrektywie:
 
  `<#@template ... hostspecific="true" #>`
 
- Typ `this.Host` zależy od typu hosta, w którym wykonywany jest szablon. W szablonie, który jest uruchomiony w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można rzutować `this.Host` do `IServiceProvider` w celu uzyskania dostępu do usług, takich jak IDE. Na przykład:
+ Typ `this.Host` zależy od typu hosta, w którym wykonywany jest szablon. W szablonie, który jest uruchomiony w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , można rzutować, aby `this.Host` `IServiceProvider` uzyskać dostęp do usług, takich jak IDE. Na przykład:
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
@@ -126,10 +126,10 @@ EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
 ```
 
 ## <a name="using-a-different-set-of-utility-methods"></a>Korzystanie z innego zestawu metod narzędzi
- W ramach procesu generowania tekstu plik szablonu jest przekształcany do klasy, która zawsze nosi nazwę `GeneratedTextTransformation`and dziedziczy po <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Jeśli zamiast tego chcesz użyć innego zestawu metod, możesz napisać własną klasę i określić ją w dyrektywie Template. Klasa musi dziedziczyć po <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+ W ramach procesu generowania tekstu plik szablonu jest przekształcany do klasy, która zawsze nazywa się `GeneratedTextTransformation` i dziedziczy po <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> . Jeśli zamiast tego chcesz użyć innego zestawu metod, możesz napisać własną klasę i określić ją w dyrektywie Template. Klasa musi dziedziczyć po elemencie <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> .
 
 ```
 <#@ template inherits="MyUtilityClass" #>
 ```
 
- Użyj dyrektywy `assembly`, aby odwołać się do zestawu, w którym można znaleźć skompilowaną klasę.
+ Użyj `assembly` dyrektywy, aby odwołać się do zestawu, w którym można znaleźć skompilowaną klasę.

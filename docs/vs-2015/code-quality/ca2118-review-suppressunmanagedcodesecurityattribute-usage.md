@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: bc0e88265245d795697d32a9e6a95909c0415259
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538661"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Przejrzyj przypadki użycia atrybutu SuppressUnmanagedCodeSecurityAttribute
@@ -36,7 +36,7 @@ ms.locfileid: "85538661"
  Typ publiczny lub chroniony lub składowa ma <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> atrybut.
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>zmienia domyślne zachowanie systemu zabezpieczeń dla elementów członkowskich wykonujących niezarządzany kod przy użyciu międzyoperacyjności modelu COM lub wywołania platformy. Ogólnie rzecz biorąc, system wprowadza [dane i modelowanie](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) do niezarządzanego kodu. To zapotrzebowanie występuje w czasie wykonywania dla każdego wywołania elementu członkowskiego i sprawdza każdy obiekt wywołujący w stosie wywołań w celu uzyskania uprawnień. Gdy atrybut jest obecny, system wykonuje [żądania](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) dotyczące uprawnień: uprawnienia bezpośredniego wywołującego są sprawdzane, gdy obiekt wywołujący jest skompilowany w trybie JIT.
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> zmienia domyślne zachowanie systemu zabezpieczeń dla elementów członkowskich wykonujących niezarządzany kod przy użyciu międzyoperacyjności modelu COM lub wywołania platformy. Ogólnie rzecz biorąc, system wprowadza [dane i modelowanie](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) do niezarządzanego kodu. To zapotrzebowanie występuje w czasie wykonywania dla każdego wywołania elementu członkowskiego i sprawdza każdy obiekt wywołujący w stosie wywołań w celu uzyskania uprawnień. Gdy atrybut jest obecny, system wykonuje [żądania](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) dotyczące uprawnień: uprawnienia bezpośredniego wywołującego są sprawdzane, gdy obiekt wywołujący jest skompilowany w trybie JIT.
 
  Atrybut ten jest używany głównie w celu zwiększenia wydajności; jednak wzrost wydajności powoduje znaczące zagrożenia dla bezpieczeństwa. Jeśli umieścisz atrybut na publicznych składowych, które wywołują metody natywne, wywołujący w stosie wywołań (innym niż bezpośredni obiekt wywołujący) nie potrzebują uprawnień do kodu niezarządzanego do wykonywania kodu niezarządzanego. W zależności od akcji i obsługi danych w publicznej składowej można zezwolić niezaufanym wywołującym na dostęp do funkcji zwykle ograniczonych do wiarygodnego kodu.
 

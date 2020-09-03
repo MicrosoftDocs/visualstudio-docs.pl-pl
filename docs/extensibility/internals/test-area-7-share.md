@@ -1,5 +1,5 @@
 ---
-title: 'Obszar badania 7: Udział | Dokumenty firmy Microsoft'
+title: 'Obszar testowy 7: udostępnianie | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,51 +12,51 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fd4c48e94015d95f5e56d465cdbf98562108d3b3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704406"
 ---
-# <a name="test-area-7-share"></a>Obszar testowy 7: udostępnianie
-Ten obszar testowy obejmuje udostępnianie elementów między lokalizacjami za pomocą polecenia **Udostępnij.**
+# <a name="test-area-7-share"></a>Obszar testowy 7: Udostępnij
+Ten obszar testowy obejmuje udostępnianie elementów między lokalizacjami za pośrednictwem polecenia **udostępniania** .
 
- Operacja hhare jest widoczne powielanie plików i elementów folderów między dwoma lub więcej lokalizacji w hierarchii plików kontroli źródła. Duplikacja nie występuje na serwerze, ale użytkownik widzi ten sam plik w dwóch lub więcej określonych lokalizacjach. Za każdym razem, gdy wprowadzane są zmiany w dowolnym z elementów udostępnionych, zmiany te są wyświetlane we wszystkich innych lokalizacjach udostępnionych.
+ Operacja hhare to widoczne duplikowanie plików i elementów folderów między dwiema lub większą liczbą lokalizacji w hierarchii plików kontroli źródła. Duplikowanie nie występuje na serwerze, ale użytkownik widzi ten sam plik w co najmniej dwóch określonych lokalizacjach. Po wprowadzeniu zmian do któregokolwiek z elementów udostępnionych te zmiany są wyświetlane we wszystkich innych udostępnionych lokalizacjach.
 
- Udostępnianie w folderach działa, jeśli wybierzesz folder z co najmniej jednym plikiem pod kontrolą źródła. Polecenie share jest wyłączone pod następującymi warunkami:
+ Udostępnianie w folderach działa w przypadku wybrania folderu z co najmniej jednym plikiem pod kontrolą źródła. Polecenie Share jest wyłączone w następujących warunkach:
 
 - Jeśli wybrany folder jest pustym folderem.
 
-- Jeśli istnieje prawdziwy folder, ale nie zawiera żadnych plików kontroli źródła.
+- Jeśli istnieje rzeczywisty folder, ale nie zawiera on plików kontroli źródła.
 
-- Jeśli istnieje folder wirtualny, czy pliki pod kontrolą źródła znajdują się w nim, czy nie.
+- Jeśli istnieje folder wirtualny, niezależnie od tego, czy pliki pod kontrolą źródła znajdują się w nim.
 
-- Jeśli istnieje projekt witryny zdalnej w sieci Web.
+- Jeśli istnieje zdalny projekt sieci Web.
 
-## <a name="command-menu-access"></a>Dostęp do menu polecenia
- Następujące [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ścieżki menu zintegrowanego środowiska programistycznego są używane w przypadkach testowych.
+## <a name="command-menu-access"></a>Dostęp do menu poleceń
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]W przypadku przypadków testowych używane są następujące ścieżki menu zintegrowanego środowiska deweloperskiego.
 
- Udostępnij:**Udział****kontroli**->źródła **plików**->.
+ Udostępnianie: **File** -> **udział kontroli źródła**plików -> **Share**.
 
 ## <a name="expected-behavior"></a>Oczekiwane zachowanie
 
 - Udostępniony plik jest wyświetlany w lokalizacji udostępnionej.
 
-- Wyświetlanie historii magazynu wersji kontroli źródła pokazuje, że pliki są udostępniane.
+- Wyświetlanie historii magazynu wersji kontroli źródła pokazuje, że pliki są udostępnione.
 
-- Edycja udostępnionego pliku edytuje obie lokalizacje pliku.
+- Edytowanie udostępnionego pliku umożliwia edycję obu lokalizacji pliku.
 
 ## <a name="test-cases"></a>Przypadki testowe
- Poniżej przedstawiono konkretne przypadki testowe dla obszaru testu udostępnić.
+ Następujące przypadki testowe są określone dla obszaru testowego udostępniania.
 
-|Akcja|Etapy testu|Oczekiwane wyniki do zweryfikowania|
+|Akcja|Kroki testu|Oczekiwane wyniki do zweryfikowania|
 |------------|----------------|--------------------------------|
-|Udostępnianie pliku z jednego załadowanego projektu pod kontrolą źródła do innego załadowanego projektu|1. Utwórz nowy projekt.<br />2. Dodaj drugi projekt do rozwiązania.<br />3. Utwórz plik w drugim projekcie o nazwie, która nie znajduje się w pierwszym projekcie.<br />4. Dodaj rozwiązanie do kontroli źródła.<br />5. Wybierz pierwszy projekt.<br />6. Otwórz okno dialogowe **Udostępnianie** **(Udział****kontroli** -> źródła**pliku).** -> <br />7. Udostępnij plik z drugiego projektu do pierwszego projektu.<br />8. Zaakceptuj **wyewidencjonowanie,** jeśli zostanie wyświetlony monit.|Typowe oczekiwane zachowanie.|
-|Udostępnianie pliku z jednego projektu do drugiego|1. Utwórz nowy projekt.<br />2. Dodaj go do kontroli źródła.<br />3. Zamknąć roztwór.<br />4. Utwórz drugi projekt (nowe rozwiązanie).<br />5. Dodaj rozwiązanie do kontroli źródła.<br />6. Wybierz projekt.<br />7. Otwórz okno dialogowe **Udostępnianie** **(Udział****kontroli** -> źródła**pliku).** -> <br />8. Udostępnij plik z wcześniej dodanego projektu do otwartego projektu.<br />9. Zaakceptuj **wyewidencjonowanie,** jeśli zostanie wyświetlony monit.|Typowe oczekiwane zachowanie.|
-|Udostępnianie pliku niewchodzącego w skład projektu z kontroli źródła w aktualnie załadowanym projekcie|1. Utwórz nowy projekt.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Dodaj plik do kontroli źródła, który nie jest częścią projektu lub rozwiązania.<br />4. Wybierz projekt i otwórz okno dialogowe **Udostępnianie** **(Udział****w kontroli** -> źródła**plików).** -> <br />5. Wybierz plik w oknie dialogowym **Udostępnianie,** który nie istnieje w bieżącym projekcie lub rozwiązaniu i udostępnij go.<br />6. Zaakceptuj **wyewidencjonowanie,** jeśli zostanie wyświetlony monit.|Magazyn kontroli źródła wykonał Get, więc plik jest teraz w lokalnej lokalizacji projektu.|
-|Udostępnianie plików w ramach tego samego projektu do innego folderu|1. Wybierz opcję **Wyewidencjonuj automatycznie** w obszarze**Opcje** ->  **narzędzi.** -> **Source Control**<br />2. Utwórz nowy projekt i dodaj go do kontroli źródła.<br />3. Dodaj folder do projektu.<br />4. Dodaj plik do folderu i zaewidencjonuj folder.<br />5. Wybierz folder.<br />6. Otwórz okno dialogowe **Udostępnianie** **(Udział****kontroli** -> źródła**pliku).** -> <br />7. Udostępnij plik do wybranego folderu.|Typowe oczekiwane zachowanie.<br /><br /> Folder musi zostać zaewidencjonowany z plikiem w nim, zanim będzie można go użyć do udostępnienia.|
-|Udostępnianie folderu w załadowanym projekcie — cykliczne|1. Utwórz nowy projekt.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Wybierz projekt.<br />4. Otwórz okno dialogowe **Udostępnianie** **(Udział****kontroli** -> źródła**pliku).** -> <br />5. Wybierz folder.<br />6. Udostępnij folder rekursywnie w projekcie.|Typowe oczekiwane zachowanie.|
-|Udostępnianie kilku plików z jednego projektu do drugiego|1. Utwórz nowy projekt z kilkoma plikami.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Zamknąć roztwór.<br />4. Utwórz nowy projekt w nowym rozwiązaniu.<br />5. Dodaj rozwiązanie do kontroli źródła.<br />6. Wybierz projekt.<br />7. Otwórz okno dialogowe **Udostępnianie** **(Udział****kontroli** -> źródła**pliku).** -> <br />8. Udostępnij kilka plików z poprzednio utworzonego projektu do aktualnie otwartego projektu.|Typowe oczekiwane zachowanie.|
+|Udostępnianie pliku z jednego załadowanego projektu pod kontrolą źródła do innego załadowanego projektu|1. Utwórz nowy projekt.<br />2. Dodaj drugi projekt do rozwiązania.<br />3. Utwórz plik w drugim projekcie z nazwą, która nie znajduje się w pierwszym projekcie.<br />4. Dodaj rozwiązanie do kontroli źródła.<br />5. Wybierz pierwszy projekt.<br />6. Otwórz okno dialogowe **udostępniania** (**File**  ->  **udział kontroli źródła**plików  ->  **Share**).<br />7. Udostępnij plik z drugiego projektu do pierwszego projektu.<br />8 **. Zaakceptuj** wyewidencjonowanie, jeśli zostanie wyświetlony monit.|Typowe oczekiwane zachowanie.|
+|Udostępnianie pliku z jednego projektu do innego|1. Utwórz nowy projekt.<br />2. Dodaj ją do kontroli źródła.<br />3. Zamknij rozwiązanie.<br />4. Utwórz drugi projekt (nowe rozwiązanie).<br />5. Dodaj rozwiązanie do kontroli źródła.<br />6. Wybierz projekt.<br />7. Otwórz okno dialogowe **udostępnianie** (**File**  ->  **udział kontroli źródła**plików  ->  **Share**).<br />8. Udostępnij plik z wcześniej dodanego projektu do otwartego projektu.<br />9 **. Zaakceptuj** wyewidencjonowanie, jeśli zostanie wyświetlony monit.|Typowe oczekiwane zachowanie.|
+|Udostępnianie pliku nienależącego do projektu z kontroli źródła do aktualnie załadowanego projektu|1. Utwórz nowy projekt.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Dodaj plik do kontroli źródła, która nie jest częścią projektu lub rozwiązania.<br />4. Wybierz projekt i Otwórz okno dialogowe **udostępnianie** (**File**  ->  **udział kontroli źródła**plików  ->  **Share**).<br />5. Wybierz plik w oknie dialogowym **udział** , który nie istnieje w bieżącym projekcie lub rozwiązaniu i udostępnij go.<br />6 **. Zaakceptuj** wyewidencjonowanie, jeśli zostanie wyświetlony monit.|Magazyn kontroli źródła wykonał pobieranie, więc plik znajduje się teraz w lokalizacji lokalnej projektu.|
+|Udostępnianie plików w tym samym projekcie do innego folderu|1. Wybierz pozycję **Wyewidencjonuj automatycznie** w obszarze **Narzędzia**  ->  **Opcje**  ->  **kontroli źródła**.<br />2. Utwórz nowy projekt i dodaj go do kontroli źródła.<br />3. Dodaj folder do projektu.<br />4. Dodaj plik do folderu i Zaewidencjonuj go.<br />5. Wybierz folder.<br />6. Otwórz okno dialogowe **udostępniania** (**File**  ->  **udział kontroli źródła**plików  ->  **Share**).<br />7. Udostępnij plik w wybranym folderze.|Typowe oczekiwane zachowanie.<br /><br /> Folder musi być zaewidencjonowany przy użyciu pliku, zanim będzie można go użyć do udostępniania.|
+|Udostępnianie folderu w załadowanym projekcie — rekursywnie|1. Utwórz nowy projekt.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Wybierz projekt.<br />4. Otwórz okno dialogowe **udostępnianie** (**File**  ->  **udział kontroli źródła**plików  ->  **Share**).<br />5. Wybierz folder.<br />6. Udostępnij folder rekursywnie w projekcie.|Typowe oczekiwane zachowanie.|
+|Udostępnianie kilku plików z jednego projektu do innego|1. Utwórz nowy projekt zawierający kilka plików.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Zamknij rozwiązanie.<br />4. Utwórz nowy projekt w nowym rozwiązaniu.<br />5. Dodaj rozwiązanie do kontroli źródła.<br />6. Wybierz projekt.<br />7. Otwórz okno dialogowe **udostępnianie** (**File**  ->  **udział kontroli źródła**plików  ->  **Share**).<br />8. Udostępnij w aktualnie otwartym projekcie kilka plików z wcześniej utworzonego projektu.|Typowe oczekiwane zachowanie.|
 
 ## <a name="see-also"></a>Zobacz też
 - [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
