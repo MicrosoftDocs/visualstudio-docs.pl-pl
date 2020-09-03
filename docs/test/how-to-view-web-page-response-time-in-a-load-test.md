@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1affda002290a191fde6d5115094a2185ac8bfcb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287054"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Instrukcje: wyświetlanie czasu odpowiedzi strony sieci Web w teście obciążenia za pomocą analizatora testu obciążenia
@@ -52,7 +52,7 @@ Jeśli uruchomisz test wydajności sieci Web w ramach obciążenia w teście obc
    |**Łącznie**|Całkowita liczba żądań, które zostały wykonane dla strony sieci Web. Jest to suma wszystkich iteracji w teście obciążenia.|
    |**Ave**|Średni czas odpowiedzi strony.<br /><br /> Domyślnie te dane nie są zbierane. Aby zebrać te dane, w **Edytor testu obciążeniowego**w węźle **Parametry uruchomieniowe** wybierz węzeł ustawienie uruchomieniowe, które ma zostać zmienione. W oknie **Właściwości** dla właściwości **Magazyn szczegóły czasu** wybierz pozycję **AllIndividualDetails**.|
    |**Długości**|Minimalny czas odpowiedzi strony.<br /><br /> Domyślnie te dane nie są zbierane. Aby zebrać te dane, w **Edytor testu obciążeniowego**w węźle **Parametry uruchomieniowe** wybierz węzeł ustawienie uruchomieniowe, które ma zostać zmienione. W oknie **Właściwości** dla właściwości **Magazyn szczegóły czasu** wybierz pozycję **AllIndividualDetails**.|
-   |**Symetri**|Średni czas odpowiedzi strony.<br /><br /> Domyślnie te dane nie są zbierane. Aby zebrać te dane, w **Edytor testu obciążeniowego**w węźle **Parametry uruchomieniowe** wybierz węzeł ustawienie uruchomieniowe, które ma zostać zmienione. W oknie **Właściwości** dla właściwości **Magazyn szczegóły czasu** wybierz pozycję **AllIndividualDetails**.|
+   |**Mediana**|Średni czas odpowiedzi strony.<br /><br /> Domyślnie te dane nie są zbierane. Aby zebrać te dane, w **Edytor testu obciążeniowego**w węźle **Parametry uruchomieniowe** wybierz węzeł ustawienie uruchomieniowe, które ma zostać zmienione. W oknie **Właściwości** dla właściwości **Magazyn szczegóły czasu** wybierz pozycję **AllIndividualDetails**.|
    |**90%**|90. percentyl dla czasu odpowiedzi. Oznacza to, że 90% stron odpowiada szybciej niż ta liczba, a 10% stron reaguje wolniej.<br /><br /> Domyślnie te dane nie są zbierane. Aby zebrać te dane, w **Edytor testu obciążeniowego**w węźle **Parametry uruchomieniowe** wybierz węzeł ustawienie uruchomieniowe, które ma zostać zmienione. W oknie **Właściwości** dla właściwości **Magazyn szczegóły czasu** wybierz pozycję **AllIndividualDetails**.|
    |**95%**|Używany 95. percentyl na czas odpowiedzi. Oznacza to, że 95% stron odpowiada szybciej niż ta liczba, a 5% stron reaguje wolniej.|
    |**99%**|99 percentyl na czas odpowiedzi. Oznacza to, że 99% stron odpowiada szybciej niż ta liczba, a 1% stron reaguje wolniej.<br /><br /> Domyślnie te dane nie są zbierane. Aby zebrać te dane, w **Edytor testu obciążeniowego**w węźle **Parametry uruchomieniowe** wybierz węzeł ustawienie uruchomieniowe, które ma zostać zmienione. W oknie **Właściwości** dla właściwości **Magazyn szczegóły czasu** wybierz pozycję **AllIndividualDetails**.|

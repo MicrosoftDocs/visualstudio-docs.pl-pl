@@ -9,10 +9,10 @@ manager: justinclareburt
 ms.workload:
 - willbrown
 ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387281"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Instrukcje: Udostępnianie rozszerzeń dla programu Visual Studio 2019/2017 i Visual Studio 2015
@@ -36,7 +36,7 @@ Poniżej przedstawiono zarys kroków, które należy wykonać w tym dokumencie w
     * Dodaj właściwość debugowania `($DevEnvDir)` 3 razy.
     * Dodaj warunki do importowania narzędzi kompilacji i elementów docelowych.
 
-4. Kompiluj i Testuj
+4. Kompilowanie i testowanie
 
 ## <a name="environment-setup"></a>Konfigurowanie środowiska
 

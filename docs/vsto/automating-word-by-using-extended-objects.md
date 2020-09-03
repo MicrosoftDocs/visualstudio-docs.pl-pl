@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 083fe8cdd3bf9d0e4de4809aacfb78b537e4ed8e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255534"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Automatyzowanie programu Word za pomocą obiektów rozszerzonych
@@ -35,7 +35,7 @@ ms.locfileid: "71255534"
  Elementy hosta i formanty hosta są dostępne zarówno dla dodatków VSTO, jak i dostosowań na poziomie dokumentu, chociaż kontekst, w którym mogą być używane, różni się w zależności od typu rozwiązania. Aby uzyskać więcej informacji, zobacz [Omówienie elementów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md).
 
 ## <a name="document-host-item"></a>Element hosta dokumentu
- Projekty programu Word umożliwiają dostęp do <xref:Microsoft.Office.Tools.Word.Document> elementu hosta. Element <xref:Microsoft.Office.Tools.Word.Document> hosta działa jako kontener dla innych kontrolek, w tym formantów hosta i kontrolek Windows Forms, i utrzymuje informacje o kontrolkach na jego powierzchni. Element hosta zapewnia również większość elementów członkowskich <xref:Microsoft.Office.Interop.Word.Document> , które są w klasie, która jest odpowiednią klasą w modelu obiektów programu Word. <xref:Microsoft.Office.Tools.Word.Document>
+ Projekty programu Word umożliwiają dostęp do <xref:Microsoft.Office.Tools.Word.Document> elementu hosta. <xref:Microsoft.Office.Tools.Word.Document>Element hosta działa jako kontener dla innych kontrolek, w tym formantów hosta i kontrolek Windows Forms, i utrzymuje informacje o kontrolkach na jego powierzchni. <xref:Microsoft.Office.Tools.Word.Document>Element hosta zapewnia również większość elementów członkowskich <xref:Microsoft.Office.Interop.Word.Document> , które są w klasie, która jest odpowiednią klasą w modelu obiektów programu Word.
 
  Aby uzyskać więcej informacji, zobacz [dokument element hosta](../vsto/document-host-item.md).
 
@@ -54,14 +54,14 @@ ms.locfileid: "71255534"
 
 - [Formant XMLNodes](../vsto/xmlnodes-control.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Instrukcje: Dodawanie kontrolek zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Instrukcje: Dodawanie formantów XMLNode do dokumentów programu Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)
-- [Instrukcje: Dodawanie formantów XMLNodes do dokumentów programu Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
-- [Instrukcje: Zmień rozmiar kontrolek zakładek](../vsto/how-to-resize-bookmark-controls.md)
+- [Instrukcje: Dodawanie kontrolek XMLNodes do dokumentów programu Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
+- [Instrukcje: zmiana rozmiaru kontrolek zakładek](../vsto/how-to-resize-bookmark-controls.md)
 - [Przewodnik: Tworzenie szablonu za pomocą kontrolek zawartości](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)
-- [Przewodnik: Powiązywanie kontrolek zawartości z niestandardowymi częściami XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)
+- [Wskazówki: powiązywanie kontrolek zawartości z niestandardowymi częściami XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)
 - [Przewodnik: Tworzenie menu skrótów dla zakładek](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Rozwiązania programu Word](../vsto/word-solutions.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)

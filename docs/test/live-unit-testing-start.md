@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ef0fbd5c422d16df4e361ff95f4ac8deabdd5bae
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287015"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Rozpoczynanie pracy z funkcją Live Unit Testing
@@ -84,11 +84,11 @@ Teraz, po utworzeniu rozwiązania, utworzysz bibliotekę klas o nazwie StringLib
 
    StringLibrary ma trzy metody statyczne:
 
-   - `StartsWithUpper`zwraca `true` czy ciąg rozpoczyna się od znaku wielką literą; w przeciwnym razie zwraca `false` .
+   - `StartsWithUpper` zwraca `true` czy ciąg rozpoczyna się od znaku wielką literą; w przeciwnym razie zwraca `false` .
 
    - `StartsWithLower`zwraca `true` czy ciąg rozpoczyna się od małej litery; w przeciwnym razie zwraca `false` .
 
-   - `HasEmbeddedSpaces`zwraca `true` czy ciąg zawiera osadzony znak odstępu; w przeciwnym razie zwraca wartość `false` .
+   - `HasEmbeddedSpaces` zwraca `true` czy ciąg zawiera osadzony znak odstępu; w przeciwnym razie zwraca wartość `false` .
 
 6. Wybierz pozycję **Kompiluj**  >  **kompilację rozwiązania** z menu programu Visual Studio najwyższego poziomu. Kompilacja powinna zakończyć się powodzeniem.
 

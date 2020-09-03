@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1f6f54e781dfae15b4b1c1159d73ac3495b35c21
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603865"
 ---
-# <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Instrukcje: Implementowanie operacji kontraktu Windows Communication Foundation (starsza wersja)
-W tym temacie opisano sposób implementacji operacji [!INCLUDE[indigo1](../includes/indigo1-md.md)] kontraktu przy użyciu starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)], która jest przeznaczona dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+# <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Instrukcje: Implementowanie operacji kontraktu usługi WCF (Windows Communication Foundation) (starsza wersja)
+W tym temacie opisano sposób implementacji [!INCLUDE[indigo1](../includes/indigo1-md.md)] operacji kontraktu przy użyciu starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] , która jest przeznaczona dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
- Po przeciągnięciu działania **Receive** z przybornika na powierzchnię projektu przepływu pracy utworzysz nowy kontrakt [!INCLUDE[indigo2](../includes/indigo2-md.md)] lub zaimportuj istniejący kontrakt i zaimplementuj operacje. Wybierasz i/lub tworzysz kontrakt oraz jego operacje za pomocą [okna dialogowego Wybieranie operacji (starsza wersja)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+ Po przeciągnięciu działania **Receive** z przybornika do powierzchni projektowej przepływu pracy zostanie utworzony nowy [!INCLUDE[indigo2](../includes/indigo2-md.md)] kontrakt lub zaimportowano istniejący kontrakt i zaimplementowano operacje. Wybierasz i/lub tworzysz kontrakt oraz jego operacje za pomocą [okna dialogowego Wybieranie operacji (starsza wersja)](../workflow-designer/choose-operation-dialog-box-legacy.md).
 
 ### <a name="to-implement-a-wcf-contract-operation"></a>Aby zaimplementować operację kontraktu WCF
 
@@ -29,7 +29,7 @@ W tym temacie opisano sposób implementacji operacji [!INCLUDE[indigo1](../inclu
 
    - Kliknij przycisk **Dodaj kontrakt** w prawym górnym rogu okna dialogowego. Spowoduje to utworzenie nowego [!INCLUDE[indigo2](../includes/indigo2-md.md)] kontraktu i operacji.
 
-      —lub—
+      -lub-
 
    - Kliknij przycisk **Importuj** w prawym górnym rogu okna dialogowego. Zostanie otwarte okno [dialogowe Przeglądaj i wybierz typ platformy .NET (starsza wersja)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) . Wyszukaj zestaw lub projekt zawierający żądany kontrakt. Wybierz kontrakt, a następnie kliknij przycisk **OK**.
 

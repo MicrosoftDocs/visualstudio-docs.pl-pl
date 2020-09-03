@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 823c61e7625850c680b52cd4ad9386ef0838d340
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660931"
 ---
 # <a name="call-hierarchy"></a>Hierarchia wywołań
@@ -50,7 +50,7 @@ Hierarchia wywołań umożliwia nawigowanie po kodzie przez wyświetlanie wszyst
 
 - W okienku Szczegóły **hierarchii wywołań** są wyświetlane wszystkie wiersze kodu, w których ten podrzędny element członkowski jest wywoływany z nadrzędnego elementu członkowskiego.
 
-- **Okno definicji kodu**, jeśli jest otwarte, wyświetla kod dla wybranego elementu członkowskiego. To okno jest dostępne w C# i C++. Aby uzyskać więcej informacji na temat tego okna, zobacz [Wyświetlanie struktury kodu](../../ide/viewing-the-structure-of-code.md).
+- **Okno definicji kodu**, jeśli jest otwarte, wyświetla kod dla wybranego elementu członkowskiego. To okno jest dostępne w językach C# i C++. Aby uzyskać więcej informacji na temat tego okna, zobacz [Wyświetlanie struktury kodu](../../ide/viewing-the-structure-of-code.md).
 
 > [!NOTE]
 > W hierarchii wywołań nie znajdują się odwołania do grup metod, w tym miejsca, w których metoda jest dodawana jako procedura obsługi zdarzeń lub jest przypisana do delegata. Aby znaleźć wszystkie odwołania do metody, można użyć polecenia **Znajdź wszystkie odwołania** .
@@ -65,4 +65,4 @@ Hierarchia wywołań umożliwia nawigowanie po kodzie przez wyświetlanie wszyst
 |**Przejdź do definicji**|Uruchamia polecenie Przejdź do definicji w wybranym węźle. Spowoduje to przejście do oryginalnej definicji wywołania elementu członkowskiego lub definicji zmiennej.<br /><br /> Aby uruchomić polecenie Przejdź do definicji, można również kliknąć dwukrotnie wybrany węzeł lub nacisnąć klawisz F12 w wybranym węźle.|
 |**Znajdź wszystkie odwołania**|Uruchamia polecenie Znajdź wszystkie odwołania w wybranym węźle. Spowoduje to znalezienie wszystkich wierszy kodu w projekcie, które odwołują się do klasy lub składowej.<br /><br /> Możesz również użyć klawiszy SHIFT + F12, aby uruchomić polecenie Znajdź wszystkie odwołania w wybranym węźle.|
 |**Kopiuj**|Kopiuje zawartość wybranego węzła (ale nie jego węzłów podrzędnych).|
-|**Odowieżenie**|Zwija zaznaczony węzeł, tak aby jego ponowne rozwinięcie zawierało bieżące informacje.|
+|**Odświeżanie**|Zwija zaznaczony węzeł, tak aby jego ponowne rozwinięcie zawierało bieżące informacje.|

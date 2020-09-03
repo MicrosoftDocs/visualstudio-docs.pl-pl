@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8cb1b7a869915eebc561e1baf47082dd5dbc00df
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735487"
 ---
 # <a name="graphics-pixel-history"></a>Historia pikseli grafiki
@@ -29,13 +29,13 @@ Okno Historia pikseli grafiki w analizator grafiki programu Visual Studio pomaga
 
  W oknie Historia pikseli zostanie wyświetlona kompletna Historia pikseli w ramach kursu wybranej ramki. **Ostatni bufor ramki** w górnej części okna wyświetla kolor, który jest zapisywana w bufor ramki na końcu ramki, wraz z dodatkowymi informacjami o pikselach, takimi jak klatka, z której pochodzi i współrzędne ekranu. Ten obszar zawiera również pole wyboru **Renderuj alfa** . Gdy to pole wyboru jest zaznaczone, kolor **buforu ramki końcowej** i pośrednich wartości koloru są wyświetlane z przezroczystością na wzorcu szachownicy. Jeśli pole wyboru jest wyczyszczone, kanał alfa wartości koloru jest ignorowany.
 
- W dolnej części okna są wyświetlane zdarzenia, które miały wpływ na kolor piksela oraz **początkowe** i **końcowe** pseudo zdarzeń, które reprezentują początkowe i końcowe wartości koloru piksela w bufor ramki. Początkowa wartość koloru jest określana przez pierwsze zdarzenie, które zmieniło kolor piksela (zwykle jest to zdarzenie `Clear`). Piksel zawsze mają te dwa pseudo zdarzeń w swojej historii, nawet jeśli nie ma żadnych innych zdarzeń. Gdy inne zdarzenia mają wpływ na piksel, są wyświetlane między zdarzeniami **początkowymi** i **końcowymi** . Zdarzenia mogą być rozwinięte, aby pokazać ich szczegóły. W przypadku prostych zdarzeń, takich jak te, które wyczyścili obiekt docelowy renderowania, efekt zdarzenia jest tylko wartością koloru. Bardziej złożone zdarzenia, takie jak wywołania rysowania, generują co najmniej jeden element pierwotny, który może współtworzyć kolor piksela.
+ W dolnej części okna są wyświetlane zdarzenia, które miały wpływ na kolor piksela oraz **początkowe** i **końcowe** pseudo zdarzeń, które reprezentują początkowe i końcowe wartości koloru piksela w bufor ramki. Początkowa wartość koloru jest określana przez pierwsze zdarzenie, które zmieniło kolor piksela (zazwyczaj jest to `Clear` zdarzenie). Piksel zawsze mają te dwa pseudo zdarzeń w swojej historii, nawet jeśli nie ma żadnych innych zdarzeń. Gdy inne zdarzenia mają wpływ na piksel, są wyświetlane między zdarzeniami **początkowymi** i **końcowymi** . Zdarzenia mogą być rozwinięte, aby pokazać ich szczegóły. W przypadku prostych zdarzeń, takich jak te, które wyczyścili obiekt docelowy renderowania, efekt zdarzenia jest tylko wartością koloru. Bardziej złożone zdarzenia, takie jak wywołania rysowania, generują co najmniej jeden element pierwotny, który może współtworzyć kolor piksela.
 
  Elementy pierwotne, które były rysowane przez zdarzenie, są identyfikowane przez ich typ pierwotny i indeks oraz łączną liczbę pierwotną dla obiektu. Na przykład, identyfikator, taki jak **Trójkąt (1456) z (6214)** oznacza, że pierwotna odnosi się do trójkąta 1456th w obiekcie, który składa się z 6214 trójkąty. Po lewej stronie każdego identyfikatora pierwotnego jest ikona, która podsumowuje efekt pierwotny w pikselach. Elementy pierwotne, które wpływają na kolor pikseli, są reprezentowane przez zaokrąglony prostokąt, który jest wypełniony kolorem wynikowym. Elementy pierwotne, które są wykluczone z mają wpływ na kolor pikseli, są reprezentowane przez ikony wskazujące przyczynę wykluczenia piksela. Te ikony są opisane w sekcji [pierwotne wykluczenie](#exclusion) w dalszej części tego artykułu.
 
  Można rozwinąć każdy element pierwotny, aby określić, jak dane wyjściowe programu do cieniowania pikseli zostały scalone z istniejącym kolorem pikseli w celu uzyskania koloru wynikowego. W tym miejscu można również przeanalizować lub debugować kod programu do cieniowania pikseli skojarzony z elementem pierwotnym, a następnie można rozwinąć węzeł cieniowania wierzchołków, aby przeanalizować dane wejściowe programu do cieniowania wierzchołków.
 
-### <a name="exclusion"></a>Wykluczenia pierwotne
+### <a name="primitive-exclusion"></a><a name="exclusion"></a> Wykluczenia pierwotne
  Jeśli element pierwotny jest wykluczony z wpływu na kolor pikseli, wykluczenie może wystąpić z różnych powodów. Każdy powód jest reprezentowany przez ikonę, która jest opisana w tej tabeli:
 
 |Ikona|Przyczyna wykluczenia|
@@ -74,6 +74,6 @@ Okno Historia pikseli grafiki w analizator grafiki programu Visual Studio pomaga
 ### <a name="links-to-graphics-objects"></a>Linki do obiektów graficznych
  Aby zrozumieć zdarzenia grafiki w historii pikseli, może być konieczne informacje o stanie urządzenia w momencie zdarzenia lub o obiektach Direct3D, do których odwołuje się zdarzenie. Dla każdego zdarzenia w historii pikseli, **Historia pikseli grafiki** zawiera linki do stanu bieżącego urządzenia i pokrewnych obiektów.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przewodnik: brak obiektów spowodowany stanem urządzenia](walkthrough-missing-objects-due-to-device-state.md)
 - [Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem](walkthrough-debugging-rendering-errors-due-to-shading.md)

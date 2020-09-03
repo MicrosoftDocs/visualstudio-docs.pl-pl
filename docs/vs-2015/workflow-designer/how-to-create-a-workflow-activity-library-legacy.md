@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5bc4566c1ea520ac1050227ac8e4c0aee22e617
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72604961"
 ---
-# <a name="how-to-create-a-workflow-activity-library-legacy"></a>Instrukcje: Tworzenie biblioteki działań przepływu pracy (starsza wersja)
-Wykonaj następujące kroki, aby utworzyć projekt biblioteki działań przepływu pracy przy użyciu starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczonej przez [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Użyj starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)], jeśli chcesz wskazać [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+# <a name="how-to-create-a-workflow-activity-library-legacy"></a>Instrukcje: Tworzenie biblioteki działań przepływów pracy (starsza wersja)
+Wykonaj następujące kroki, aby utworzyć projekt biblioteki działań przepływu pracy przy użyciu starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczonej przez program [!INCLUDE[vs2010](../includes/vs2010-md.md)] . Użyj starszej wersji, [!INCLUDE[wfd2](../includes/wfd2-md.md)] gdy musisz być celem [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
 ### <a name="to-create-a-workflow-activity-library-project"></a>Aby utworzyć projekt biblioteki działań przepływu pracy
 
@@ -34,9 +34,9 @@ Wykonaj następujące kroki, aby utworzyć projekt biblioteki działań przepły
 3. Wybierz opcję **.NET Framework 3,0** lub opcję **.NET Framework 3,5** na liście rozwijanej w górnej części okna **Nowy projekt** , aby uzyskać dostęp do starszego projektanta.
 
     > [!NOTE]
-    > Opcja domyślna w [!INCLUDE[vs2010](../includes/vs2010-md.md)] jest **.NET Framework 4**. Ta opcja służy do tworzenia aplikacji [!INCLUDE[wf](../includes/wf-md.md)] przeznaczonych dla [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] i nie korzysta z starszego projektanta.
+    > Opcja domyślna w programie [!INCLUDE[vs2010](../includes/vs2010-md.md)] jest **.NET Framework 4**. Ta opcja służy do tworzenia [!INCLUDE[wf](../includes/wf-md.md)] aplikacji przeznaczonych dla programu [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] i nie korzysta z starszego projektanta.
 
-4. W okienku **typy projektów** wybierz pozycję Wizualizacja C# lub Visual Basic (w obszarze **inne języki**), a następnie wybierz pozycję **przepływ pracy**.
+4. W okienku **typy projektów** wybierz pozycję Visual C# lub Visual Basic (w obszarze **inne języki**), a następnie wybierz pozycję **przepływ pracy**.
 
 5. W okienku **Szablony** wybierz pozycję **Biblioteka działań przepływu pracy**.
 

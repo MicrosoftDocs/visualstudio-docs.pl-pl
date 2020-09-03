@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c6a70a96014ebf18984c75df60cfeb75ba0d0577
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387242"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
@@ -68,4 +68,4 @@ podczas Wartość z wyliczenia [STEPUNIT](../../../extensibility/debugger/refere
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
-- [Zdarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Wydarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

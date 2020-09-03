@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8cb50fffc1411e77f771b0f74fbb947144eb6017
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672920"
 ---
 # <a name="code-analysis-policy-errors"></a>Błędy zasad analizy kodu
@@ -31,7 +31,7 @@ Jeśli zasady analizy kodu nie są spełnione podczas zaewidencjonowania, wystą
 
 1. Analiza kodu nie jest włączona podczas kompilacji dla wszystkich projektów w rozwiązaniu.
 
-2. Lokalna reguła zestawu reguł dla projektu w programie Visual Studio ma mniej restrykcyjne ustawienie **akcji** niż zestaw reguł projektu zespołowego, na przykład regułę, która jest ustawiona na **akcję** =**błąd** na serwerze, ma **akcję** ustawioną na **Ostrzeżenie** lub **Brak** w zestawie reguł uruchomionym w programie Visual Studio).
+2. Lokalna reguła zestawu reguł dla projektu w programie Visual Studio ma mniej restrykcyjne ustawienie **akcji** niż zestaw reguł projektu zespołowego, na przykład regułę, która jest ustawiona na **Action** = **błąd** akcji na serwerze, ma **akcję** ustawioną na **Ostrzeżenie** lub **Brak** w zestawie reguł uruchomionym w programie Visual Studio).
 
 3. Zestaw reguł określony w Visual Studio nie zawiera wszystkich reguł określonych w zestawie reguł określonym w zasadach ewidencjonowania analizy kodu dla projektu zespołowego.
 
@@ -47,33 +47,33 @@ Jeśli zasady analizy kodu nie są spełnione podczas zaewidencjonowania, wystą
 
    Zasady analizy kodu wymagają, aby wszystkie pliki, które zostały zaewidencjonowane, muszą znajdować się w aktualnie otwartym rozwiązaniu. Ten błąd jest zgłaszany, gdy istnieje otwarte rozwiązanie, ale niektóre pliki w widoku "oczekujące na sprawdzenie" nie są częścią aktualnie otwartego rozwiązania. Aby naprawić ten błąd, Otwórz rozwiązanie, które zawiera plik do zaewidencjonowania.
 
-   **Wersja "{0}" jest niepoprawna. Silna nazwa określona w zasadach to "{1}".**
+   **Wersja elementu " {0} " jest niepoprawna. Silna nazwa określona w zasadach to " {1} ".**
 
-   Ten błąd dotyczy projektów platformy .NET. Reguła. dll wymagana przez zasady analizy kodu istnieje na komputerze lokalnym, ale wersja/klucz publiczny nie są zgodne. Aby naprawić ten błąd, twórca zasad musi zaktualizować pliki dll w *folderze C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* na swoim komputerze.
+   Ten błąd dotyczy projektów platformy .NET. Reguła. dll wymagana przez zasady analizy kodu istnieje na komputerze lokalnym, ale wersja/klucz publiczny nie są zgodne. Aby naprawić ten błąd, twórca zasad musi zaktualizować pliki dll w katalogu *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\ * na swoim komputerze.
 
-   **zestaw "{0}" określony w zasadach nie istnieje.**
+   **{0}zestaw "" określony w zasadach nie istnieje.**
 
-   Ten błąd dotyczy projektów platformy .NET. Reguła wymagana przez zasady analizy kodu nie ma odpowiedniej biblioteki DLL zainstalowanej na komputerze klienckim. Aby naprawić ten błąd, twórca zasad musi zaktualizować bibliotekę DLL w katalogu *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* na swoim komputerze.
+   Ten błąd dotyczy projektów platformy .NET. Reguła wymagana przez zasady analizy kodu nie ma odpowiedniej biblioteki DLL zainstalowanej na komputerze klienckim. Aby naprawić ten błąd, twórca zasad musi zaktualizować bibliotekę DLL w katalogu *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\ * na swoim komputerze.
 
-   **Ustawienia reguły {0} projektu nie są zgodne z zasadami analizy kodu.**
+   **{0}Ustawienia reguły projektu nie są zgodne z zasadami analizy kodu.**
 
    Ten błąd dotyczy projektów platformy .NET. Ustawienia reguł kodu zarządzanego nie są zgodne z wymaganiami zasad. Aby naprawić ten błąd, ustawienie klienta musi być takie samo lub rygorystyczne jak wymaganie zasad na serwerze.
 
-   **Analiza kodu nie jest włączona w aktywnej konfiguracji. Przed zaewidencjonowaniem przejdź do konfiguracji {0} i skompiluj projekt {1}.**
+   **Analiza kodu nie jest włączona w aktywnej konfiguracji. Przełącz się do konfiguracji {0} i skompiluj projekt {1} przed zaewidencjonowaniem.**
 
-   W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aktywna konfiguracja nie ma włączonej analizy kodu, ale jest włączona co najmniej jedna Analiza kodu.
+   W programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aktywna konfiguracja nie ma włączonej analizy kodu, ale jest włączona co najmniej jedna Analiza kodu.
 
-   **Należy włączyć analizę kodu dla zarządzanych plików binarnych w projekcie {0} właściwości i skompilować przed zaewidencjonowaniem.**
+   **Należy włączyć analizę kodu dla zarządzanych plików binarnych we {0} właściwościach projektu i skompilować przed zaewidencjonowaniem.**
 
-   Ten błąd dotyczy aplikacji platformy .NET [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Zasady wymagają wykonania analizy kodu zarządzanego, ale nie jest ona włączona w bieżącym projekcie na kliencie.
+   Ten błąd dotyczy [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] aplikacji .NET. Zasady wymagają wykonania analizy kodu zarządzanego, ale nie jest ona włączona w bieżącym projekcie na kliencie.
 
-   **Należy włączyć analizę kodu w projekcie {0} właściwości i skompilować przed zaewidencjonowaniem.**
+   **Należy włączyć analizę kodu we {0} właściwościach projektu i skompilować przed zaewidencjonowaniem.**
 
    Ten błąd został zastosowany do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektów i projektów sieci Web. Zasady wymagają wykonania analizy kodu zarządzanego, ale nie jest ona włączona w bieżącym projekcie na kliencie.
 
-   **Należy włączyć analizę kodu CC++ /Code w projekcie {0} właściwości i skompilować przed zaewidencjonowaniem.**
+   **Przed zaewidencjonowaniem należy włączyć analizę kodu C/C++ we {0} właściwościach projektu i skompilować ją.**
 
-   Ten błąd dotyczy projektów niezarządzanych. Zasady analizy kodu wymagają analizy kodu dla języka C/C++, ale nie jest ona włączona w bieżącym projekcie na kliencie.
+   Ten błąd dotyczy projektów niezarządzanych. Zasady analizy kodu wymagają analizy kodu C/C++, ale nie jest ona włączona w bieżącym projekcie na kliencie.
 
 ## <a name="see-also"></a>Zobacz też
- [Błędy zgłaszane przez aplikację do analizy kodu](../code-quality/code-analysis-application-errors.md)
+ [Błędy aplikacji analizy kodu](../code-quality/code-analysis-application-errors.md)

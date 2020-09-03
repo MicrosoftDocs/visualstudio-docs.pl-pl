@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 06da9e1a8db332f12a08c1182291c5fcfb4555de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602269"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Porady: wyświetlanie adresów URL jako łączy w Edytorze
@@ -38,7 +38,7 @@ Można wybrać, aby Edytor kodu traktuje Uniform Resource Locators (URL) w kodzi
 
 #### <a name="to-display-urls-as-links"></a>Aby wyświetlić adresy URL jako linki
 
-1. W menu **Narzędzia** kliknij pozycję **Opcje**.
+1. W menu **Tools** (Narzędzia) kliknij pozycję **Options** (Opcje).
 
 2. Kliknij pozycję **Edytor tekstu**.
 

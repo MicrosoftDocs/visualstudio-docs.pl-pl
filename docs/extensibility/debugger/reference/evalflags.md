@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS | Dokumenty firmy Microsoft
+title: EVALFLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4136726e5c8b798121dbd38975d8f2bb935ed04a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737108"
 ---
 # <a name="evalflags"></a>EVALFLAGS
-Określa flagi, które kontrolują ocenę wyrażenia.
+Określa flagi kontrolujące Obliczanie wyrażenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -54,35 +54,35 @@ public enum enum_EVALFLAGS {
 
 ## <a name="fields"></a>Pola
 `EVAL_RETURNVALUE`\
-Określa, że wartość zwracana, jeśli istnieje, być oceniane.
+Określa, że wartość zwracana, jeśli ma zostać obliczona.
 
 `EVAL_NOSIDEEFFECTS`\
-Określa, że działania niepożądane nie są dozwolone.
+Określa, że efekty uboczne nie są dozwolone.
 
 `EVAL_ALLOWBPS`\
-Określa zatrzymywanie punktów przerwania.
+Określa zatrzymanie dla punktów przerwania.
 
 `EVAL_ALLOWERRORREPORT`\
-Określa raportowanie błędów do hosta, który ma być dozwolony. Używany głównie do oceny wyrażenia w skrypcie w programie Internet Explorer.
+Określa, że raportowanie błędów ma być dozwolone dla hosta. Służy głównie do oceny wyrażeń w skrypcie w programie Internet Explorer.
 
 `EVAL_FUNCTION_AS_ADDRESS`\
-Wymusza funkcje, które mają być oceniane jako adresy, zamiast wywoływania funkcji.
+Wymusza, aby funkcje były oceniane jako adresy zamiast wywoływania funkcji.
 
 `EVAL_NOFUNCEVAL`\
-Zapobiega ocenie funkcji. Rozważmy na `int` przykład token `myExpression(int) + 10`w wyrażeniu . Ta funkcja może być poprawnie oceniona jako adres, ale nie jako wartość.
+Zapobiega ocenie funkcji. Rozważmy na przykład `int` token w wyrażeniu `myExpression(int) + 10` . Ta funkcja może być poprawnie oceniona jako adres, ale nie jako wartość.
 
 `EVAL_NOEVENTS`\
-Flaga, aby wskazać, że zdarzenia, które występują podczas oceny wyrażenia nie powinny być wysyłane do menedżera debugowania sesji (SDM) lub ide.
+Flaga wskazująca, że zdarzenia występujące podczas obliczania wyrażenia nie powinny być wysyłane do Menedżera debugowania sesji (SDM) ani do IDE.
 
 ## <a name="remarks"></a>Uwagi
-Flagi te są przekazywane jako argument do [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) i [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) metody.
+Flagi te są przenoszone jako argumenty do metod [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) i [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) .
 
-Flagi te mogą być łączone z bitowym OR.
+Flagi te mogą być połączone z bitowym lub.
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 47b5055cca0b00e7fdec49947df13b473a090aaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659083"
 ---
-# <a name="how-to-use-the-imports-designer"></a>Instrukcje: korzystanie z projektanta importów
-Projektant Imports umożliwia wprowadzanie przestrzeni nazw dla typów, które będą używane w wyrażeniach. Podobnie jak w przypadku **importów** lub **użycia** słów kluczowych w C#Visual Basic .NET i, określenie przestrzeni nazw w projektancie Imports umożliwia po prostu wprowadzanie nazwy typu w wyrażeniu zamiast w pełni kwalifikowanej nazwy typu wersji.
+# <a name="how-to-use-the-imports-designer"></a>Instrukcje: Używanie projektanta importów
+Projektant Imports umożliwia wprowadzanie przestrzeni nazw dla typów, które będą używane w wyrażeniach. Podobnie jak w przypadku **importów** lub **za pomocą** słów kluczowych w Visual Basic .NET i C#, określenie przestrzeni nazw w projektancie Imports umożliwia po prostu wprowadzanie nazwy typu w wyrażeniu zamiast w pełni kwalifikowanej nazwy typu wersji.
 
- Projektant Imports reaguje na obie zmiany w interfejsie użytkownika i zmiany wprowadzone podczas zapisywania przepływu pracy. Gdy przepływ pracy zostanie zapisany, przestrzenie nazw mogą być dodawane automatycznie do projektanta Imports. Należą do nich między innymi:
+ Projektant Imports reaguje na obie zmiany w interfejsie użytkownika i zmiany wprowadzone podczas zapisywania przepływu pracy. Gdy przepływ pracy zostanie zapisany, przestrzenie nazw mogą być dodawane automatycznie do projektanta Imports. Należą do nich następujące funkcje:
 
 - Przestrzenie nazw dla wszystkich typów używanych w deklaracjach zmiennych i argumentów.
 
@@ -33,7 +33,7 @@ Projektant Imports umożliwia wprowadzanie przestrzeni nazw dla typów, które b
 
 ### <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Aby dodać przestrzeń nazw do listy importowanych przestrzeni nazw
 
-1. Otwórz aplikację usługi przepływu pracy WCF, aplikację konsoli przepływu pracy lub projekt biblioteki działań w [!INCLUDE[vs2010](../includes/vs2010-md.md)] lub ponownie hostowanej aplikacji przepływu pracy.
+1. Otwórz aplikację usługi przepływu pracy WCF, aplikację konsoli przepływu pracy lub projekt biblioteki działań w programie [!INCLUDE[vs2010](../includes/vs2010-md.md)] lub w aplikacji przepływu pracy przehostowanej.
 
 2. Kliknij pozycję **Importy** w dolnej części kanwy głównej. Zostanie wyświetlony Projektant Imports.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramHost2::GetHostName | Dokumenty firmy Microsoft
+title: 'IDebugProgramHost2:: gethostname | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5f1bd63d6b53359cf3b86f5e3849cb18bd8367f7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722231"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
@@ -43,16 +43,16 @@ int GetHostName( 
 
 ## <a name="parameters"></a>Parametry
 `dwType`\
-[w] Wartość z [wyliczenia GETHOSTNAME_TYPE.](../../../extensibility/debugger/reference/gethostname-type.md)
+podczas Wartość z wyliczenia [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) .
 
 `pbstrHostName`\
-[na zewnątrz] Zwraca żądaną nazwę procesu hostingu.
+określoną Zwraca żądaną nazwę procesu hostingu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- W typowej implementacji tej `dwType` metody parametr jest ignorowany i zwracana jest przyjazna nazwa komputera hosta. Inną możliwą `dwType` implementacją jest przekazanie parametru do wywołania metody [GetHostName,](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) aby uzyskać nazwę.
+ W typowej implementacji tej metody `dwType` parametr jest ignorowany i jest zwracana przyjazna nazwa komputera hosta. Kolejną możliwą implementacją jest przekazanie `dwType` parametru do wywołania metody [gethostname](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) w celu uzyskania nazwy.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)

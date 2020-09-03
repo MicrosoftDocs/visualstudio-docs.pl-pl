@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ba1510745b4781d56655fe83fffbb18f4ca65254
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156480"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Reprezentuje sumy kontrolnej dla dokumentu debugowania i umożliwia przekazanie sumę kontrolną między składnikami.  
+Reprezentuje sumę kontrolną dla dokumentu debugowania i umożliwia przekazywanie sum kontrolnych między składnikami.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -29,18 +29,18 @@ IDebugDocumentChecksum2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Ten interfejs może być implementowany przez dowolny składnik, który udostępnia [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfejsu. Jednak go jest głównie implementowany przez aparaty debugowania sumy kontrolnej osadzone w pliku symboli (*.pdb) może być przekazywany z powrotem do środowiska IDE i używane przy wyszukiwaniu źródła.  
+ Ten interfejs może być zaimplementowany przez dowolny składnik, który uwidacznia Interfejs [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) . Jest to jednak głównie zaimplementowane przez aparaty debugowania, aby suma kontrolna osadzona w pliku symboli (*. pdb) mogła zostać przeniesiona z powrotem do IDE i użyta podczas znajdowania źródła.  
   
 ## <a name="methods"></a>Metody  
- W poniższej tabeli przedstawiono metody `IDebugDocumentChecksum2`.  
+ W poniższej tabeli przedstawiono metody `IDebugDocumentChecksum2` .  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|Pobiera identyfikator sumy kontrolnej i algorytm dokumentu podana maksymalna liczba bajtów do użycia.|  
+|[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|Pobiera sumę kontrolną dokumentu i identyfikator algorytmu z uwzględnieniem maksymalnej liczby bajtów do użycia.|  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
