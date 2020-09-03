@@ -1,5 +1,5 @@
 ---
-title: Średnie wykorzystanie procesora CPU | Dokumentacja firmy Microsoft
+title: Średnie użycie procesora CPU | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,17 +14,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: abd175e2ebc69fc21481aeeee9f5da76d1c40109
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202453"
 ---
 # <a name="average-cpu-utilization"></a>Średnie wykorzystanie CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pokazuje PROFILOWANEGO procesu średnie wykorzystanie rdzenie logiczne systemu w czasie trwania procesu. Wykres nie pokazuje, które określonych core jest aktywny w dowolnym momencie. Na przykład jeśli każdy dwa rdzenie są uruchamiane o pojemności 50% dla danego okresu, w tym widoku pokaże jednego rdzenia logicznego wykorzystywane.  
+Pokazuje średnie użycie procesu PROFILOWANEGO rdzenia logicznego systemu na czas trwania procesu. Wykres nie pokazuje, który konkretny rdzeń jest aktywny w danym momencie. Na przykład jeśli dwa rdzenie są uruchomione o pojemności 50% w danym okresie, w tym widoku zostanie wyświetlony jeden rdzeń logiczny, który jest używany.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok rdzeni](../profiling/cores-view.md)   
- [Wykres wykorzystania procesora CPU](../profiling/cpu-utilization-graph.md)
+ [Wykres wykorzystania CPU](../profiling/cpu-utilization-graph.md)

@@ -1,64 +1,62 @@
 ---
-title: IDebugSettingsCallback2::GetEELocalObject | Dokumentacja firmy Microsoft
-ms.date: 11/04/2016
+title: 'IDebugSettingsCallback2:: GetEELocalObject | Microsoft Docs'
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEELocalObject
 ms.assetid: e69a3469-a049-420c-b918-c48a1e7b9baf
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 7e6bf186d8b4bf660cc4a22e962754e859378674
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202481"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
-Pobiera wyrażenie ewaluatora lokalnego obiektu podanej nazwy metryki.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Składnia
-
-```cpp
-HRESULT GetEELocalObject(
-   REFGUID     guidLang,
-   REFGUID     guidVendor,
-   LPCWSTR     pszMetric,
-   IUnknown ** ppUnk
-);
-```
-
-```csharp
-private int GetEELocalObject(
-   ref Guid          guidLang,
-   ref Guid          guidVendor,
-   string            pszMetric,
-   out System.Object ppUnk
-);
-```
-
-#### <a name="parameters"></a>Parametry
- `guidLang`
-
- [in] Unikatowy identyfikator języka programowania.
-
- `guidVendor`
-
- [in] Unikatowy identyfikator dostawcy.
-
- `pszMetric`
-
- [in] Nazwa metryki.
-
- `ppUnk`
-
- [out] Zwraca wyrażenie ewaluatora lokalnego obiektu.
-
-## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
-
-## <a name="see-also"></a>Zobacz też
-- [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)
+Pobiera obiekt lokalny ewaluatora wyrażeń, używając nazwy metryki.  
+  
+## <a name="syntax"></a>Składnia  
+  
+```cpp#  
+HRESULT GetEELocalObject(  
+   REFGUID     guidLang,  
+   REFGUID     guidVendor,  
+   LPCWSTR     pszMetric,  
+   IUnknown ** ppUnk  
+);  
+```  
+  
+```csharp  
+private int GetEELocalObject(  
+   ref Guid          guidLang,  
+   ref Guid          guidVendor,  
+   string            pszMetric,  
+   out System.Object ppUnk  
+);  
+```  
+  
+#### <a name="parameters"></a>Parametry  
+ `guidLang`  
+ podczas Unikatowy identyfikator języka programowania.  
+  
+ `guidVendor`  
+ podczas Unikatowy identyfikator dostawcy.  
+  
+ `pszMetric`  
+ podczas Nazwa metryki.  
+  
+ `ppUnk`  
+ określoną Zwraca obiekt lokalny ewaluatora wyrażeń.  
+  
+## <a name="return-value"></a>Wartość zwracana  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
+  
+## <a name="see-also"></a>Zobacz też  
+ [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

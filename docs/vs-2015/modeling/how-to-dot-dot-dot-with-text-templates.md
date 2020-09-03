@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c55c7a277d3f38b36367008ae6393f58c9c9a2c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671617"
 ---
 # <a name="how-to--with-text-templates"></a>How to ... with — Szablony tekstowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Szablony tekstowe w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zapewniają przydatny sposób generowania tekstu dowolnego rodzaju. Za pomocą szablonów tekstowych można generować tekst w czasie wykonywania jako część aplikacji i w czasie projektowania, aby wygenerować część kodu projektu. W tym temacie przedstawiono podsumowanie najczęściej zaproszonych "Jak mogę...?" masz.
+Szablony tekstowe w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zapewniają przydatny sposób generowania tekstu dowolnego rodzaju. Za pomocą szablonów tekstowych można generować tekst w czasie wykonywania jako część aplikacji i w czasie projektowania, aby wygenerować część kodu projektu. W tym temacie przedstawiono podsumowanie najczęściej zaproszonych "Jak mogę...?" masz.
 
  W tym temacie wiele odpowiedzi, które są poprzedzone punktorami, są sugestiami alternatywnymi.
 
@@ -33,25 +33,25 @@ Szablony tekstowe w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zapewniają prz
 - Generuj niektóre pliki kodu z szablonów tekstowych. Aby uzyskać więcej informacji, zobacz [generowanie kodu w czasie projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) i [jaki jest najlepszy sposób rozpoczęcia pisania szablonu?](#starting).
 
 ### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>Generowanie plików w czasie wykonywania, przekazywanie danych do szablonu
- W czasie wykonywania moja aplikacja generuje pliki tekstowe, takie jak raporty, które zawierają kombinację standardowego tekstu i danych. Chcę uniknąć pisania setek instrukcji `write`.
+ W czasie wykonywania moja aplikacja generuje pliki tekstowe, takie jak raporty, które zawierają kombinację standardowego tekstu i danych. Chcę uniknąć pisania setek `write` instrukcji.
 
 - Dodaj szablon tekstu środowiska uruchomieniowego do projektu. Ten szablon służy do tworzenia klasy w kodzie, którą można utworzyć i użyć do generowania tekstu. W parametrach konstruktora można przekazać do niego dane. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-- Jeśli chcesz generować z szablonów, które są dostępne tylko w czasie wykonywania, możesz użyć standardowych szablonów tekstowych. Jeśli piszesz rozszerzenie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], możesz wywołać usługę Text tworzenia szablonów. Aby uzyskać więcej informacji, zobacz [Wywoływanie transformacji tekstu w rozszerzeniu programu vs](../modeling/invoking-text-transformation-in-a-vs-extension.md). W innych kontekstach można użyć aparatu tekstu tworzenia szablonów. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
+- Jeśli chcesz generować z szablonów, które są dostępne tylko w czasie wykonywania, możesz użyć standardowych szablonów tekstowych. Jeśli piszesz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenie, możesz wywołać usługę Text tworzenia szablonów. Aby uzyskać więcej informacji, zobacz [Wywoływanie transformacji tekstu w rozszerzeniu programu vs](../modeling/invoking-text-transformation-in-a-vs-extension.md). W innych kontekstach można użyć aparatu tekstu tworzenia szablonów. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
 
-     Użyj dyrektywy \< # @parameter # > do przekazywania parametrów do tych szablonów. Aby uzyskać więcej informacji, zobacz [dyrektywa parametrów T4](../modeling/t4-parameter-directive.md).
+     Użyj \<#@parameter#> dyrektywy do przekazania parametrów do tych szablonów. Aby uzyskać więcej informacji, zobacz [dyrektywa parametrów T4](../modeling/t4-parameter-directive.md).
 
 ### <a name="read-another-project-file-from-a-template"></a>Odczytaj inny plik projektu z szablonu
- Aby odczytać plik z tego samego projektu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] co szablon:
+ Aby odczytać plik z tego samego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu co szablon:
 
-- Wstaw `hostSpecific="true"` do dyrektywy `<#@template#>`.
+- Wstaw `hostSpecific="true"` do `<#@template#>` dyrektywy.
 
-     W kodzie Użyj `this.Host.ResolvePath(filename)`, aby uzyskać pełną ścieżkę pliku.
+     W kodzie, użyj, `this.Host.ResolvePath(filename)` Aby uzyskać pełną ścieżkę pliku.
 
 ### <a name="invoke-methods-from-a-template"></a>Wywoływanie metod z szablonu
- Jeśli istnieją już metody, na przykład w standardowych klasach [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]:
+ Jeśli istnieją już metody, na przykład w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] klasach standardowych:
 
-- Użyj dyrektywy \< # @assembly # > do załadowania zestawu, a następnie użyj \< # @import # >, aby ustawić kontekst przestrzeni nazw. Aby uzyskać więcej informacji, zobacz [dyrektywa importowania T4](../modeling/t4-import-directive.md).
+- Użyj \<#@assembly#> dyrektywy do załadowania zestawu i Użyj, \<#@import#> Aby ustawić kontekst przestrzeni nazw. Aby uzyskać więcej informacji, zobacz [dyrektywa importowania T4](../modeling/t4-import-directive.md).
 
    Jeśli często używasz tego samego zestawu dyrektyw Assembly i import, rozważ zapisanie procesora dyrektywy. W każdym szablonie można wywołać procesor dyrektywy, który może ładować zestawy i pliki modelu i ustawić kontekst przestrzeni nazw. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych procesorów dyrektywy T4](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
@@ -59,13 +59,13 @@ Szablony tekstowe w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zapewniają prz
 
 - W przypadku pisania szablonu tekstu środowiska uruchomieniowego należy napisać częściową definicję klasy, która ma taką samą nazwę jak szablon tekstu środowiska uruchomieniowego. Dodaj dodatkowe metody do tej klasy.
 
-- Napisz blok sterowania funkcją klasy `<#+ ... #>`, w którym można zadeklarować metody, właściwości i klasy prywatne. Po skompilowaniu szablonu tekstu jest on przekształcany w klasę. Bloki formantów standardowych `<#...#>` i Text są przekształcane na pojedynczą metodę, a bloki funkcji klasy są wstawiane jako osobne elementy członkowskie. Aby uzyskać więcej informacji, zobacz [bloki kontrolne szablonu tekstu](../modeling/text-template-control-blocks.md).
+- Napisz blok sterowania cechą klasy `<#+ ... #>` , w którym można zadeklarować metody, właściwości i klasy prywatne. Po skompilowaniu szablonu tekstu jest on przekształcany w klasę. Standardowe bloki kontrolne `<#...#>` i tekst są przekształcane na pojedynczą metodę, a bloki funkcji klasy są wstawiane jako odrębne elementy członkowskie. Aby uzyskać więcej informacji, zobacz [bloki kontrolne szablonu tekstu](../modeling/text-template-control-blocks.md).
 
    Metody zdefiniowane jako funkcje klasy mogą również zawierać osadzone bloki tekstu.
 
-   Rozważ umieszczenie funkcji klasy w osobnym pliku, który można `<#@include#>` do jednego lub kilku plików szablonów.
+   Rozważ umieszczenie funkcji klasy w osobnym pliku, który można `<#@include#>` umieścić w jednym lub kilku plikach szablonów.
 
-- Napisz metody w osobnym zestawie (bibliotece klas) i Wywołaj je z szablonu. Użyj dyrektywy `<#@assembly#>` do załadowania zestawu i `<#@import#>`, aby ustawić kontekst przestrzeni nazw. Należy pamiętać, że w celu odbudowania zestawu podczas jego debugowania może być konieczne zatrzymanie i ponowne uruchomienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [dyrektywy dotyczące szablonów tekstowych T4](../modeling/t4-text-template-directives.md).
+- Napisz metody w osobnym zestawie (bibliotece klas) i Wywołaj je z szablonu. Użyj `<#@assembly#>` dyrektywy do załadowania zestawu i `<#@import#>` Ustawienia kontekstu przestrzeni nazw. Należy pamiętać, że w celu odbudowania zestawu podczas jego debugowania może być konieczne zatrzymanie i ponowne uruchomienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Aby uzyskać więcej informacji, zobacz [dyrektywy dotyczące szablonów tekstowych T4](../modeling/t4-text-template-directives.md).
 
 ### <a name="generate-many-files-from-one-model-schema"></a>Generowanie wielu plików z jednego schematu modelu
  Jeśli często generowane są pliki z modeli, które mają ten sam schemat XML lub bazy danych:
@@ -86,8 +86,8 @@ Szablony tekstowe w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zapewniają prz
 
      Aby uzyskać więcej informacji, zobacz [Tworzenie modeli dla aplikacji](../modeling/create-models-for-your-app.md) i [generowanie plików z modelu UML](../modeling/generate-files-from-a-uml-model.md).
 
-### <a name="get-data-from-includevsprvsincludesvsprvs-mdmd"></a>Pobierz dane z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
- Aby korzystać z usług oferowanych w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ustaw atrybut `hostSpecific` i Załaduj zestaw `EnvDTE`. Na przykład:
+### <a name="get-data-from-vsprvs"></a>Pobierz dane z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+ Aby skorzystać z usług oferowanych w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ustaw `hostSpecific` atrybut i Załaduj `EnvDTE` zestaw. Na przykład:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -108,11 +108,11 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ## <a name="more-general-questions"></a>Więcej pytań ogólnych
 
-### <a name="starting"></a>Co to jest najlepszy sposób na rozpoczęcie pisania szablonu tekstu?
+### <a name="what-is-the-best-way-to-start-writing-a-text-template"></a><a name="starting"></a> Co to jest najlepszy sposób na rozpoczęcie pisania szablonu tekstu?
 
 1. Napisz konkretny przykład wygenerowanego pliku.
 
-2. Przekształcenie go w szablon tekstowy przez wstawienie dyrektywy `<#@template #>` i dyrektyw i kodu, które są wymagane do załadowania pliku wejściowego lub modelu.
+2. Przekształcenie go w szablon tekstowy przez wstawienie `<#@template #>` dyrektywy i dyrektyw i kodu, które są wymagane do załadowania pliku wejściowego lub modelu.
 
 3. Stopniowo zamieniaj części pliku na bloki wyrażeń i kodu.
 
@@ -133,4 +133,4 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ### <a name="what-is-t4"></a>Co to jest "T4"?
 
-- Inna nazwa dla funkcji szablonu tekstu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] opisana tutaj. Starsza wersja, która nie została opublikowana, była skrótem "transformacji szablonu tekstu".
+- Inna nazwa dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] funkcji szablonu tekstu opisana tutaj. Starsza wersja, która nie została opublikowana, była skrótem "transformacji szablonu tekstu".

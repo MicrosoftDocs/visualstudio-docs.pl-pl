@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 1526a5f4137ece5b76c282255af3da4ab20ac119
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586006"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Przewodnik: Tworzenie elementu DataTable w Projektant obiektów Dataset
@@ -25,9 +25,9 @@ W tym instruktażu wyjaśniono, jak utworzyć <xref:System.Data.DataTable> (bez 
 
 ## <a name="create-a-new-windows-forms-application"></a>Utwórz nową aplikację Windows Forms
 
-1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy** **projekt** > .
+1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy**  >  **projekt**.
 
-2. Rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **pulpit systemu Windows**.
+2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **Windows Desktop**.
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
@@ -39,11 +39,11 @@ W tym instruktażu wyjaśniono, jak utworzyć <xref:System.Data.DataTable> (bez 
 
 1. W menu **projekt** wybierz polecenie **Dodaj nowy element**.
 
-     **Dodaj nowy element** pojawi się okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Dodawanie nowego elementu**.
 
 2. W okienku po lewej stronie wybierz pozycję **dane**, a następnie wybierz pozycję **zestaw danych** w środkowym okienku.
 
-3. Wybierz **Dodaj**.
+3. Wybierz pozycję **Dodaj**.
 
      Program Visual Studio dodaje plik o nazwie **pozycję DataSet1. xsd** do projektu i otwiera go w **Projektant obiektów DataSet**.
 
@@ -53,15 +53,15 @@ W tym instruktażu wyjaśniono, jak utworzyć <xref:System.Data.DataTable> (bez 
 
      Tabela o nazwie **datatabela1** jest dodawana do zestawu danych.
 
-2. Kliknij pasek tytułu elementu **datatabela1** i zmień jego nazwę na `Music`.
+2. Kliknij pasek tytułu elementu **datatabela1** i zmień jego nazwę `Music` .
 
 ## <a name="add-columns-to-the-datatable"></a>Dodawanie kolumn do tabeli DataTable
 
 1. Kliknij prawym przyciskiem myszy tabelę **muzyka** . Wskaż polecenie **Dodaj**, a następnie kliknij pozycję **kolumna**.
 
-2. Nadaj kolumnie nazwę `SongID`.
+2. Nadaj nazwę kolumnie `SongID` .
 
-3. W oknie **Właściwości** ustaw właściwość <xref:System.Data.DataColumn.DataType%2A> na <xref:System.Int16?displayProperty=fullName>.
+3. W oknie **Właściwości** Ustaw <xref:System.Data.DataColumn.DataType%2A> Właściwość na <xref:System.Int16?displayProperty=fullName> .
 
 4. Powtórz ten proces i Dodaj następujące kolumny:
 
@@ -81,7 +81,7 @@ Aby ustawić klucz podstawowy, kliknij prawym przyciskiem myszy kolumnę **SongI
 
 Aby zapisać projekt **DataTableWalkthrough** , w menu **plik** wybierz polecenie **Zapisz wszystko**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie i konfigurowanie zestawów danych w programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

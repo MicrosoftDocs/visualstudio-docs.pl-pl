@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e2335b6d2bc3a5e99f0e6de1afefac4f42de0501
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521306"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Przechwytuj wyjątki bez atrybutu CLSCompliant w ogólnych procedurach obsługi
@@ -37,9 +37,9 @@ ms.locfileid: "85521306"
 ## <a name="rule-description"></a>Opis reguły
  Blok catch obsługujący <xref:System.Exception> przechwycenie wszystkich wyjątków zgodnych z Common Language Specification (CLS). Nie są jednak przechwytywane wyjątki niezgodne ze specyfikacją CLS. Wyjątki niezgodne ze specyfikacją CLS mogą być zgłaszane z kodu natywnego lub kodu zarządzanego, który został wygenerowany przez asembler języka pośredniego firmy Microsoft (MSIL). Należy zauważyć, że język C# i [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kompilatory nie zezwalają na zgłaszanie wyjątków niezgodnych ze specyfikacją CLS i nie [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] przechwytuje wyjątków niezgodnych ze specyfikacją CLS. Jeśli cel bloku catch ma obsługiwać wszystkie wyjątki, należy użyć następującej składni ogólnego bloku catch.
 
-- Znajd`catch {}`
+- Znajd `catch {}`
 
-- C++: `catch(...) {}` lub`catch(Object^) {}`
+- C++: `catch(...) {}` lub `catch(Object^) {}`
 
   Nieobsłużony wyjątek nieobsługiwany przez CLS jest problemem z zabezpieczeniami, gdy wcześniej dozwolone uprawnienia zostaną usunięte w bloku catch. Ponieważ wyjątki niezgodne ze specyfikacją CLS nie są przechwytywane, złośliwa Metoda, która zgłasza wyjątek niezgodny ze specyfikacją CLS, może działać z podniesionymi uprawnieniami.
 

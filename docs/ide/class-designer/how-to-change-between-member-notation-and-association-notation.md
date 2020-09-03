@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d453dd2cd19f8a6c9c76ebcc48a762ba3142ea74
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85771014"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Instrukcje: zmiana między notacją składowej i notacją skojarzenia w Projektant klas
@@ -42,7 +42,7 @@ W **Projektant klas**można zmienić sposób, w jaki Diagram klas reprezentuje r
 
 Na diagramie klas kliknij prawym przyciskiem myszy linię skojarzenia, a następnie wybierz polecenie **Pokaż jako właściwość** lub **Pokaż jako odpowiednie pole** . Wiersz skojarzenia znika, a właściwość jest wyświetlana w odpowiednim przedziale w obrębie kształtu typ na diagramie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Tworzenie dziedziczenia między typami](how-to-create-inheritance-between-types.md)
 - [Instrukcje: wyświetlanie dziedziczenia między typami](how-to-view-inheritance-between-types.md)

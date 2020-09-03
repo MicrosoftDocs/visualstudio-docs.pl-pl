@@ -1,5 +1,5 @@
 ---
-title: '&lt;RelatedProducts&gt; — Element (program inicjujący) | Dokumentacja firmy Microsoft'
+title: '&lt;RelatedProducts — &gt; element (program inicjujący) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -23,16 +23,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 70afe724be5b782bc90e162fd65f83ad1b0d0d23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202533"
 ---
-# <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; — Element (program inicjujący)
+# <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts — &gt; element (program inicjujący)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`RelatedProducts` Element definiuje innych produktów, które zależą od lub znajdują się w bieżącym produkcie.  
+`RelatedProducts`Element definiuje inne produkty, które są zależne od lub są zawarte w bieżącym produkcie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -52,32 +52,32 @@ ms.locfileid: "68202533"
 </RelatedProducts>  
 ```  
   
-## <a name="elements-and-attributes"></a>Atrybuty i elementy  
- `RelatedProducts` Element jest elementem podrzędnym `Product` elementu. Go nie ma żadnych atrybutów.  
+## <a name="elements-and-attributes"></a>Elementy i atrybuty  
+ `RelatedProducts`Element jest elementem podrzędnym `Product` elementu. Nie ma atrybutów.  
   
 ## <a name="dependsonproduct"></a>DependsOnProduct  
- `DependsOnProduct` Element oznacza, że bieżącego produktu zależy od wskazanego produktu i że wskazanego produktu powinien zostać zainstalowany przed bieżącym. Jest elementem podrzędnym `RelatedProducts` elementu. A `RelatedProducts` element może mieć co najmniej jeden `DependsOnProduct` elementów.  
+ `DependsOnProduct`Element oznacza, że bieżący produkt zależy od określonego produktu i że nazwany produkt należy zainstalować przed bieżącym. Jest elementem podrzędnym `RelatedProducts` elementu. `RelatedProducts`Element może mieć jeden lub więcej `DependsOnProduct` elementów.  
   
  `DependsOnProduct` ma następujący atrybut.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Code`|Nazwa kodu produktu uwzględniona, określony przez `ProductCode` atrybutu `Product` elementu. Aby uzyskać więcej informacji, zobacz [ \<produktu > Element](../deployment/product-element-bootstrapper.md).|  
+|`Code`|Nazwa kodu dołączonego produktu określona przez `ProductCode` atrybut `Product` elementu. Aby uzyskać więcej informacji, zobacz [ \<Product> element](../deployment/product-element-bootstrapper.md).|  
   
 ## <a name="eitherproducts"></a>EitherProducts  
- `EitherProducts` Element definiuje zero lub więcej `DependsOnProduct` elementów, a nie ma żadnych atrybutów. Co najmniej jeden `DependsOnProduct` w tym zestawie musi zostać zainstalowany przed bieżącego produktu. A `RelatedProducts` element może mieć zero lub więcej `EitherProducts` elementów.  
+ `EitherProducts`Element definiuje zero lub więcej `DependsOnProduct` elementów i nie ma żadnych atrybutów. `DependsOnProduct`Przed bieżącym produktem należy zainstalować co najmniej jeden z tych zestawów. `RelatedProducts`Element może mieć zero lub więcej `EitherProducts` elementów.  
   
 ## <a name="includesproduct"></a>IncludesProduct  
- `IncludesProduct` Element oznacza znajduje się w bieżącej instalacji produktu i nie wymagają oddzielnej instalacji. Jest elementem podrzędnym `RelatedProducts` elementu. A `RelatedProducts` element może mieć co najmniej jeden `IncludesProduct` elementów.  
+ `IncludesProduct`Element oznacza, że produkt jest dołączony do bieżącej instalacji i nie wymaga osobnej instalacji. Jest elementem podrzędnym `RelatedProducts` elementu. `RelatedProducts`Element może mieć jeden lub więcej `IncludesProduct` elementów.  
   
  `IncludesProduct` ma następujący atrybut.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Code`|Nazwa kodu produktu uwzględniona, określony przez `ProductCode` atrybutu `Product` elementu. Aby uzyskać więcej informacji, zobacz [ \<produktu > Element](../deployment/product-element-bootstrapper.md).|  
+|`Code`|Nazwa kodu dołączonego produktu określona przez `ProductCode` atrybut `Product` elementu. Aby uzyskać więcej informacji, zobacz [ \<Product> element](../deployment/product-element-bootstrapper.md).|  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu Określa, że Microsoft Installer został zainstalowany z [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]i w związku z tym nie wymagają oddzielnej instalacji.  
+ Poniższy przykład kodu określa, że Instalator firmy Microsoft jest instalowany z programem [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] i w związku z tym nie wymaga osobnej instalacji.  
   
 ```  
 <RelatedProducts>  
@@ -86,4 +86,4 @@ ms.locfileid: "68202533"
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [\<Product>, element](../deployment/product-element-bootstrapper.md)
+ [\<Product> Postaci](../deployment/product-element-bootstrapper.md)

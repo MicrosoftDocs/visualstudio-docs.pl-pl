@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Określanie strony publikowania dla aplikacji ClickOnce | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Określanie strony publikowania dla aplikacji ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,48 +19,48 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63356c6eb423ddead54290cc11c865a5102f55f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202161"
 ---
-# <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Instrukcje: Określanie strony publikowania dla aplikacji ClickOnce
+# <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Porady: określanie strony publikowania dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji domyślnej strony sieci Web (publish.htm) jest wygenerowany i opublikowanych wraz z aplikacji. Ta strona zawiera nazwę aplikacji, link do instalacji aplikacji i/lub wszystkie wstępnie wymagane składniki oraz łącza do tematów Pomocy zawierająca opis [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. **Opublikuj stronę** właściwość dla projektu pozwala określić nazwę dla strony sieci Web dla usługi [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji.  
+Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji domyślna strona sieci Web (publish.htm) jest generowana i publikowana razem z aplikacją. Ta strona zawiera nazwę aplikacji, link do zainstalowania aplikacji i/lub wymagania wstępne oraz link do tematu pomocy opisującego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . Właściwość **Publikowanie strony** dla projektu pozwala określić nazwę strony sieci Web [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji.  
   
- Po stronie publikowania została określona, podczas następnego publikowania, zostanie on skopiowany do lokalizacji publikowania; nie zostaną zastąpione, jeśli w przypadku ponownego publikowania. Jeśli chcesz dostosować wygląd strony, możesz to zrobić bez konieczności martwienia się o utratę danych. Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie ClickOnce domyślnej strony sieci Web](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md).  
+ Po określeniu strony publikowania przy następnym opublikowaniu zostanie ona skopiowana do lokalizacji publikowania. po ponownym opublikowaniu nie zostanie on nadpisany. Jeśli chcesz dostosować wygląd strony, możesz to zrobić bez obaw o utracie zmian. Aby uzyskać więcej informacji, zobacz [How to: dostosowywanie domyślnej strony sieci Web ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md).  
   
- **Opublikuj stronę** właściwość można ustawić **opcji publikowania** okno dialogowe, dostępna z **Publikuj** okienku **projektanta projektu**.  
+ Właściwość **Publikuj stronę** można ustawić w oknie dialogowym **Opcje publikowania** dostępnym w okienku **Publikowanie** **projektanta projektu**.  
   
-### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>Aby określić niestandardowe strony sieci Web dla aplikacji ClickOnce  
+### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>Aby określić niestandardową stronę sieci Web dla aplikacji ClickOnce  
   
-1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.  
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.  
   
-2. Wybierz **Publikuj** okienka.  
+2. Wybierz okienko **Publikowanie** .  
   
-3. Kliknij przycisk **opcje** przycisk, aby otworzyć **opcji publikowania** okno dialogowe.  
+3. Kliknij przycisk **Opcje** , aby otworzyć okno dialogowe **Opcje publikowania** .  
   
-4. Kliknij przycisk **wdrożenia**.  
+4. Kliknij pozycję **wdrażanie**.  
   
-5. W **opcji publikowania** okna dialogowego pole, upewnij się, że **opublikować stronę sieci web Otwórz wdrożenia po** pole wyboru jest zaznaczone (powinna ona zostać wybrana domyślnie).  
+5. W oknie dialogowym **Opcje publikowania** upewnij się, że pole wyboru **Otwórz stronę sieci Web wdrożenia po publikacji** jest zaznaczone (powinno być wybrane domyślnie).  
   
-6. W **stronę sieci web wdrożenia:** , wprowadź nazwę dla strony sieci Web, a następnie kliknij **OK**.  
+6. Na **stronie sieci Web wdrożenia:** wprowadź nazwę strony sieci Web, a następnie kliknij przycisk **OK**.  
   
-### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Aby uniemożliwić uruchamianie każdorazowo, gdy opublikujesz strony publikowania  
+### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Aby zapobiec uruchamianiu strony publikowania przy każdym publikowaniu  
   
-1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.  
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.  
   
-2. Wybierz **Publikuj** okienka.  
+2. Wybierz okienko **Publikowanie** .  
   
-3. Kliknij przycisk **opcje** przycisk, aby otworzyć **opcji publikowania** okno dialogowe.  
+3. Kliknij przycisk **Opcje** , aby otworzyć okno dialogowe **Opcje publikowania** .  
   
-4. Kliknij przycisk **wdrożenia**.  
+4. Kliknij pozycję **wdrażanie**.  
   
-5. W **opcji publikowania** okno dialogowe wyczyść **opublikować stronę sieci web Otwórz wdrożenia po** pole wyboru.  
+5. W oknie dialogowym **Opcje publikowania** wyczyść pole wyboru **Otwórz stronę sieci Web wdrożenia po publikacji** .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Instrukcje: Dostosowywanie domyślnej strony internetowej technologii ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)
+ [Instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Instrukcje: dostosowywanie domyślnej strony internetowej technologii ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodePaths | Dokumentacja firmy Microsoft
+title: 'IDebugProgram2:: EnumCodePaths | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e4d34b1b6519407e02d4340a5108ef03cece12b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202772"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera listę ścieżek kodu dla danego stanowiska w pliku źródłowym.  
+Pobiera listę ścieżek kodu dla danego położenia w pliku źródłowym.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -50,28 +50,28 @@ int EnumCodePaths( 
   
 #### <a name="parameters"></a>Parametry  
  `pszHint`  
- [in] Word pod kursorem w **źródła** lub **dezasemblacji** widoku w środowisku IDE.  
+ podczas Słowo pod kursorem w widoku **Źródło** lub **demontaż** w środowisku IDE.  
   
  `pStart`  
- [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt reprezentujący bieżący kontekst kodu.  
+ podczas Obiekt [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) reprezentujący bieżący kontekst kodu.  
   
  `pFrame`  
- [in] [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) obiekt reprezentujący ramkę stosu skojarzone z bieżącym punktu przerwania.  
+ podczas Obiekt [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) reprezentujący ramkę stosu skojarzoną z bieżącym punktem przerwania.  
   
  `fSource`  
- [in] Wartość różną od zera (`TRUE`) Jeśli w **źródła** widoku lub zero (`FALSE`) Jeśli w **dezasemblacji** widoku.  
+ podczas Różna od zera ( `TRUE` ), jeśli znajduje się w widoku **źródła** lub zero ( `FALSE` ), jeśli znajduje się w widoku **demontażu** .  
   
  `ppEnum`  
- [out] Zwraca [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) obiekt, który zawiera listę ścieżek kodu.  
+ określoną Zwraca obiekt [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) zawierający listę ścieżek kodu.  
   
  `ppSafety`  
- [out] Zwraca [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiektów reprezentującą kontekst dodatkowy kod ma być ustawiona jako punkt przerwania, w przypadku, gdy wybrana kodu ścieżka zostanie pominięta. Może to nastąpić w przypadku zwartym wyrażenie logiczne, np.  
+ określoną Zwraca obiekt [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) reprezentujący dodatkowy kontekst kodu, który ma być ustawiony jako punkt przerwania w przypadku pominięcia wybranej ścieżki kodu. Może się tak zdarzyć w przypadku krótko-obwodowego wyrażenia logicznego, na przykład.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ścieżka kodu w tym artykule opisano nazwę metody lub funkcji, która została wywołana, aby uzyskać dostęp do bieżącego punktu podczas wykonywania programu. Lista ścieżek kodu przedstawia stos wywołań.  
+ Ścieżka kodu opisuje nazwę metody lub funkcji, która została wywołana, aby przejść do bieżącego punktu w trakcie wykonywania programu. Lista ścieżek kodu reprezentuje stos wywołań.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::EnumErrorBreakpoints | Dokumentacja firmy Microsoft
+title: 'IDebugPendingBreakpoint2:: EnumErrorBreakpoints | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f9cac8b19e6281b8993e84d13ae60138ddaeac89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201085"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera listę wszystkich punktów przerwania błędów, które powstały w wyniku ten oczekujący punkt przerwania.  
+Pobiera listę wszystkich punktów przerwania błędów, które spowodowały ten oczekujący punkt przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,16 +43,16 @@ int EnumErrorBreakpoints( 
   
 #### <a name="parameters"></a>Parametry  
  `bpErrorType`  
- [in] Kombinacja wartości z [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) wyliczenie, które wybiera typ błędy do wyliczenia.  
+ podczas Kombinacja wartości z wyliczenia [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) , który wybiera typ błędów do wyliczenia.  
   
  `ppEnum`  
- [out] Zwraca [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) obiekt, który zawiera listę [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) obiektów.  
+ określoną Zwraca obiekt [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) , który zawiera listę obiektów [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli punkt przerwania został usunięty.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` czy punkt przerwania został usunięty.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CPendingBreakpoint` obiekt ujawniający [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CPendingBreakpoint` obiektu, który uwidacznia Interfejs [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .  
   
 ```cpp#  
 HRESULT CPendingBreakpoint::EnumErrorBreakpoints(  

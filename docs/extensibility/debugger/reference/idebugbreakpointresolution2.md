@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2 | Dokumenty firmy Microsoft
+title: IDebugBreakpointResolution2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb5e4f9e32017cfb493aae00a24f9f8184605d1d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734746"
 ---
 # <a name="idebugbreakpointresolution2"></a>IDebugBreakpointResolution2
@@ -29,23 +29,23 @@ IDebugBreakpointResolution2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Aparat debugowania (DE) implementuje ten interfejs jako część jego obsługi punktów przerwania. Ten interfejs zawiera opis powiązanego punktu przerwania, którego menedżer debugowania sesji używa, gdy użytkownik wyświetla właściwości punktu przerwania.
+ Aparat debugowania (DE) implementuje ten interfejs w ramach obsługi punktów przerwania. Ten interfejs zawiera opis powiązanego punktu przerwania używanego przez Menedżera debugowania sesji, gdy użytkownik przegląda właściwości punktu przerwania.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
  Wywołanie [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) zwraca ten interfejs.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- W poniższej tabeli `IDebugBreakpointResolution2`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ W poniższej tabeli przedstawiono metody `IDebugBreakpointResolution2` .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Pobiera typ punktu przerwania reprezentowane przez tę rozdzielczość.|
-|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Pobiera informacje o rozdzielczości punktu przerwania, który opisuje ten punkt przerwania.|
+|[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Pobiera typ punktu przerwania reprezentowanego przez to rozwiązanie.|
+|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Pobiera informacje o rozdzielczości punktu przerwania, które opisują ten punkt przerwania.|
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

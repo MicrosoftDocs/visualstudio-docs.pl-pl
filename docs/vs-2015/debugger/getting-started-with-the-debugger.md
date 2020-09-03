@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do debugera | Dokumentacja firmy Microsoft
+title: Wprowadzenie z debugerem | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,19 +15,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202315"
 ---
 # <a name="getting-started-with-the-debugger"></a>Wprowadzenie do debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Debuger programu Visual Studio jest łatwa w użyciu w dowolnym języku. Tutaj pokażemy sposób debugowania prostego programu C#, ale te same kroki można stosować do kodu w innych językach, takich jak C++ i JavaScript.  
+Debuger programu Visual Studio jest łatwy w użyciu w dowolnym języku. Tutaj pokażemy sposób debugowania prostego programu w języku C#, ale można zastosować te same kroki do kodu w innych językach, takich jak C++ i JavaScript.  
   
-## <a name="BKMK_Start_debugging_a_VS_project"></a> Debugowanie projektu podstawowe języka C#  
- Zacznijmy od prostej aplikacji konsoli języka C# (**plik / nowy / Project**, a następnie wybierz **Visual C#** , a następnie wybierz **aplikację Konsolową**). Jeśli nigdy nie Pracowałem przy użyciu programu Visual Studio przed [instruktażu: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Main** metoda po prostu dodaje 1 na zmienną całkowitoliczbową 10 razy i drukuje wynik do konsoli:  
+## <a name="debug-a-basic-c-project"></a><a name="BKMK_Start_debugging_a_VS_project"></a> Debugowanie podstawowego projektu C#  
+ Zacznijmy od prostej aplikacji konsolowej w języku C# (**plik/nowy/projekt**, a następnie wybierz pozycję **Visual C#** , a następnie wybierz pozycję **Aplikacja konsolowa**). Jeśli wcześniej nie pracowałeś z programem Visual Studio, zobacz [Przewodnik: tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). Metoda **Main** po prostu dodaje 1 do zmiennej całkowitej 10 razy i drukuje wynik do konsoli:  
   
 ```csharp  
 static void Main(string[] args)  
@@ -41,37 +41,37 @@ static void Main(string[] args)
 }  
 ```  
   
- Utwórz ten kod w **debugowania** konfiguracji. Ta konfiguracja jest ustawieniem domyślnym. Aby uzyskać więcej informacji o konfiguracji, zobacz [ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md).  
+ Skompiluj ten kod w konfiguracji **debugowania** . Ta konfiguracja jest domyślnie ustawiona. Więcej informacji o konfiguracjach znajduje się w temacie [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md).  
   
- Uruchom ten kod w debugerze, klikając pozycję **debugowania / uruchamiania debugowania** (lub **Start** na pasku narzędzi lub **F5**). Tak naprawdę nie można sprawdzić, czy wszystko zostało zrealizowane w oknie konsoli, aplikacji powinno powodować wyjście niemal natychmiast.  
+ Uruchom ten kod w debugerze, klikając pozycję **Debuguj/Rozpocznij debugowanie** (lub **Rozpocznij** na pasku narzędzi lub **F5**). Aplikacja powinna zakończyć niemal natychmiast, dlatego nie można w rzeczywistości sprawdzić, czy wszystkie elementy zostały wydrukowane w oknie konsoli.  
   
- Zatrzymaj wykonywanie wystarczająco długi, tak aby wyświetlić okno konsoli przez ustawienie punktu przerwania i następnie krok naprzód. Aby ustawić punkt przerwania, umieść kursor `Console.WriteLine` wiersza, a następnie kliknij przycisk **debugowanie / nowy punkt przerwania / przerwania funkcji**, lub po prostu kliknij na lewym marginesie, w tym samym wierszu. Punkt przerwania powinien wyglądać następująco:  
+ Można zatrzymać wykonywanie wystarczająco długo, aby wyświetlić okno konsoli przez ustawienie punktu przerwania, a następnie przechodzenie do przodu. Aby ustawić punkt przerwania, umieść kursor w `Console.WriteLine` wierszu i kliknij kolejno opcje **Debuguj/nowy punkt przerwania/funkcja**lub po prostu kliknij w lewym górnym rogu w tym samym wierszu. Punkt przerwania powinien wyglądać następująco:  
   
- ![Ustaw punkt przerwania](../debugger/media/getstartedbreakpoint.png "GetStartedBreakpoint")  
+ ![Ustawianie punktu przerwania](../debugger/media/getstartedbreakpoint.png "GetStartedBreakpoint")  
   
- Aby uzyskać więcej informacji na temat punktów przerwania, zobacz [przy użyciu punktów przerwania](../debugger/using-breakpoints.md).  
+ Aby uzyskać więcej informacji na temat punktów przerwania, zobacz [Używanie punktów przerwania](../debugger/using-breakpoints.md).  
   
-## <a name="BKMK_Inspect_Variables"></a> Sprawdzanie zmiennych  
- Debugowanie często polega na znajdowaniu zmiennych, które nie zawierają wartości, których oczekujesz, że w określonym punkcie. W tekście objaśniono niektóre metody, można sprawdzić zmiennych.  
+## <a name="inspect-variables"></a><a name="BKMK_Inspect_Variables"></a> Sprawdzanie zmiennych  
+ Debugowanie często polega na znalezieniu zmiennych, które nie zawierają wartości oczekiwanych w określonym punkcie. Pokażemy kilka sposobów na sprawdzenie zmiennych.  
   
- Uruchom ponownie debugowanie. Wykonanie zatrzymuje się przed `Console.WriteLine` kod jest wykonywany. Może spowodować, że wykonanie przez przechodzenie do przodu (kliknij **debugowanie / krok Over** lub **F10**). W takim przypadku może wybrano **Step Into** (**F11**) i uzyskać ten sam wynik; wyjaśnimy różnica później. Wiersz z ostatni nawias klamrowy metody powinny włączyli żółty. Spójrz na okno konsoli. Powinien zostać wyświetlony **10**.  
+ Rozpocznij debugowanie ponownie. Wykonywanie zostało zatrzymane przed wykonaniem `Console.WriteLine` kodu. Możesz to zrobić, przewołując z wyprzedzeniem (kliknij pozycję **Debuguj/przekroczenie** lub **F10**). W takim przypadku można wybrać opcję **Wkrocz** (**F11**) i uzyskać ten sam wynik. wyjaśnimy różnicę później. Linia z ostatnim nawiasem klamrowym metody powinna mieć kolor żółty. Sprawdź okno konsoli. Powinna zostać wyświetlona **10**.  
   
- Możesz umieścić kursor **testInt** zmiennej, aby wyświetlić bieżącą wartość w oknie z poradami danych.  
+ Możesz umieścić wskaźnik myszy nad zmienną **testInt** , aby wyświetlić bieżącą wartość w etykietce danych.  
   
- ![DBG&#95;Basics&#95;Data&#95;Tips](../debugger/media/dbg-basics-data-tips.png "DBG_Basics_Data_Tips")  
+ ![DBG&#95;podstawowe wskazówki&#95;danych&#95;](../debugger/media/dbg-basics-data-tips.png "DBG_Basics_Data_Tips")  
   
- Tuż poniżej oknie Kod powinien zostać wyświetlony **Autos**, **lokalne**, i **Obejrzyj** systemu windows. Te okna, Pokaż bieżące wartości zmiennych w czasie wykonywania. Zarówno **Autos** i **lokalne** Pokaż windows **testInt** o wartości **10**.  
+ Tuż poniżej okna kod, powinny być **widoczne okna** **zmiennych, lokalne**i **czujka** . Te okna pokazują bieżące wartości zmiennych w czasie wykonywania. Zarówno zmienne **Autostart** , jak i **lokalne** pokażą **testInt** z wartością **10**.  
   
- ![Okno zmiennych automatycznych podczas debugowania](../debugger/media/getstartedwindows.png "GetStartedWindows")  
+ ![Okno autowypełniane podczas debugowania](../debugger/media/getstartedwindows.png "GetStartedWindows")  
   
- Aby uzyskać więcej informacji na temat tych okien, zobacz [zmiennych automatycznych i zmiennych lokalnych Windows](../debugger/autos-and-locals-windows.md).  
+ Aby uzyskać więcej informacji na temat tych okien, zobacz [Autostarty i lokalne okna](../debugger/autos-and-locals-windows.md).  
   
- Zobaczmy, jak zmienia się wartość zmiennej jako części omówimy program. Ustaw punkt przerwania na `testInt += 1;` wiersza i uruchom ponownie debugowanie. Powinien zostać wyświetlony, który **testInt** w **lokalne** i **Autos** systemu windows jest **0**, i **i** jest **1**. Gdy Kontynuuj debugowanie (**debugowanie / Continue**, lub **Kontynuuj** na pasku narzędzi lub **F5**), możesz zobaczyć, że wartość **testInt** zmienia się na **1**, następnie **2**i tak dalej. Po otrzymaniu gdy spojrzenie na te zmiany, Usuń punkt przerwania (**debugowanie / Przełącz punkt przerwania**, lub kliknąć na marginesie) i Kontynuuj debugowanie. Jeśli chcesz usunąć wszystkie punkty przerwania, kliknij przycisk **debugowanie / Usuń wszystkie punkty przerwania**, lub **CTRL + SHIFT + F9**i kliknij przycisk **tak** w oknie dialogowym z pytaniem, **czy Czy chcesz usunąć wszystkie punkty przerwania?** .  
+ Zobaczmy, jak zmienia się wartość zmiennej w miarę przechodzenia przez program. Ustaw punkt przerwania w `testInt += 1;` wierszu i ponownie uruchom debugowanie. Powinieneś zobaczyć, że **testInt** w wartościach **lokalnych** i **autouzupełniania** to **0**, a **i to** **1**. W przypadku kontynuowania debugowania (**Debuguj/Kontynuuj**lub **Kontynuuj** na pasku narzędzi lub **F5**) można zobaczyć, że wartość **testInt** zmienia się na **1**, a następnie **2**itd. Po uzyskaniu jakichkolwiek zmian w tych zmianach Usuń punkt przerwania (**Debuguj/Przełącz punkt przerwania**lub kliknij go na marginesie) i Kontynuuj debugowanie. Jeśli chcesz usunąć wszystkie punkty przerwania, kliknij pozycję **Debuguj/Usuń wszystkie punkty przerwania**lub **naciśnij klawisze CTRL + SHIFT + F9**, a następnie kliknij przycisk **tak** w oknie dialogowym z pytaniem, czy **chcesz usunąć wszystkie punkty przerwania?**.  
   
-## <a name="stepping-into-and-over-function-calls"></a>Przechodzenie krok po kroku do, jak i za pośrednictwem wywołania funkcji  
- Można uruchamiać kod w instrukcji przez instrukcja debugera (**Step Into**) lub można wykonywać kod, gdy debuger pomija funkcji (**Step Over**) szybko w pełni do kodu, czy interesuje Cię bardziej () Kod funkcji jest nadal wykonywane). Możesz przełączać się między obu metod w tej samej sesji debugowania.  
+## <a name="stepping-into-and-over-function-calls"></a>Przechodzenie do i przekroczenie wywołań funkcji  
+ Można wykonać kod w instrukcji debugera (**krok po kroku**) lub wykonać kod, gdy debuger pomija funkcje (**Step over**), aby szybko uzyskać kod, który jest bardziej interesujący (kod funkcji jest nadal wykonywany). Można przełączać się między obiema metodami w ramach tej samej sesji debugowania.  
   
- Aby zobaczyć różnicę między **Step Into** i **Step Over**, musimy dodać metodę, która jest wywoływana przy użyciu innej metody. Dodawanie metody do aplikacji C# i wywołać go z metody Main. Kod powinien wyglądać mniej więcej tak:  
+ Aby zobaczyć różnicę między **krokiem** i **przekroczeniem**, musimy dodać metodę, która jest wywoływana przez inną metodę. Dodaj metodę do aplikacji C# i Wywołaj ją z metody Main. Kod powinien wyglądać następująco:  
   
 ```csharp  
 static void Main(string[] args)  
@@ -86,10 +86,10 @@ private static void Method1()
 }  
 ```  
   
- Ustaw punkt przerwania na `Method1();` wywołania metody Main, a następnie rozpocząć debugowanie. Kiedy przerywa wykonywanie, kliknij przycisk **debugowanie / Wkrocz** (lub **Step Into** na pasku narzędzi lub **F11**). Podziały wykonywania ponownie w pierwszym nawias klamrowy w method1() poprzez odwołanie:  
+ Ustaw punkt przerwania w `Method1();` wywołaniu metody Main i Rozpocznij debugowanie. Po przerwaniu wykonywania kliknij pozycję **Debuguj/Wkrocz do** (lub **Przejdź do** paska narzędzi lub klawisza **F11**). Ponownie podziały wykonania przy pierwszym nawiasie klamrowym w Metoda1 ():  
   
- ![Przechodzenie do kodu](../debugger/media/getstartedstepinto.png "GetStartedStepInto")  
+ ![Krokowe wykonywanie kodu](../debugger/media/getstartedstepinto.png "GetStartedStepInto")  
   
- Zatrzymaj debugowanie, uruchom ponownie i kiedy przerywa wykonywanie w punkcie przerwania, kliknij przycisk **debugowanie / krok Over** (lub **Step Over** na pasku narzędzi lub **F10**). Wykonanie ponownie przerywa w `Console.WriteLine("end");`.  
+ Zatrzymaj debugowanie i rozpocznij ponownie, a kiedy wykonywanie jest przerywane w punkcie przerwania, kliknij pozycję **Debuguj/Przekrocz** **(lub Przekrocz na** pasku narzędzi lub **F10**). Podziały wykonania ponownie o `Console.WriteLine("end");` .  
   
- Jeśli chcesz dowiedzieć się więcej o nawigowanie po kodzie za pomocą debugera, zobacz [nawigowanie po kodzie za pomocą debugera za](../debugger/navigating-through-code-with-the-debugger.md).
+ Jeśli chcesz dowiedzieć się więcej na temat nawigowania po kodzie za pomocą debugera, zobacz [nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md).

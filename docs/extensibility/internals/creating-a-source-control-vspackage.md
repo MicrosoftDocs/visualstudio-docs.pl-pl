@@ -1,5 +1,5 @@
 ---
-title: Tworzenie vspackage formantu źródła | Dokumenty firmy Microsoft
+title: Tworzenie pakietu VSPackage kontroli źródła | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,25 +12,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8608aae718ff9f8bdf2e40c0ab648c1d22c38257
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709189"
 ---
-# <a name="create-a-source-control-vspackage"></a>Tworzenie formantu źródła VSPackage
-Ta dokumentacja zawiera łącza do przeglądu architektury pakietu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]kontroli źródła zintegrowane z , interfejs API, który jest zdefiniowany przez interfejsy, które mają być zaimplementowane i usługi, które mają być używane, a przykład, który ilustruje implementację pakietu kontroli źródła proste.
+# <a name="create-a-source-control-vspackage"></a>Tworzenie pakietu VSPackage kontroli źródła
+Ta dokumentacja zawiera linki do omówienia architektury pakietu kontroli źródła zintegrowanego z programem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , interfejs API, który jest zdefiniowany przez interfejsy do zaimplementowania i usługi, które mają być używane, oraz przykład, który ilustruje prostą implementację pakietu kontroli źródła.
 
- Za pomocą formantu źródłowego VSPackage można utworzyć ścieżkę [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]głębokiej integracji dla kontroli źródła w celu integracji z programem . Umożliwia pakiet ominąć domyślny interfejs użytkownika kontroli [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]źródła obsługiwany przez , odpowiadać na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] żądania kontroli źródła z systemu projektu i interakcji ze składnikami, takimi jak **Eksplorator rozwiązań**. Upoważnia [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] partnerów z mechanizmem do tworzenia VSPackage, które można zintegrować z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przy użyciu modelu usługi.
+ Za pomocą pakietu VSPackage kontroli źródła można utworzyć ścieżkę głębokiej integracji dla kontroli źródła w celu integracji z programem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Umożliwia pakietowi ominięcie domyślnego interfejsu użytkownika kontroli źródła hostowanego przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , odpowiadanie na żądania kontroli źródła od systemu projektu i współdziałanie ze [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] składnikami, takimi jak **Eksplorator rozwiązań**. Program umożliwia [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] partnerom Tworzenie pakietu VSPackage, który można zintegrować z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usługą przy użyciu modelu usług.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Wprowadzenie](../../extensibility/internals/getting-started-with-source-control-vspackages.md)
 
- W tym artykule omówiono pakiet kontroli źródła, który jest bardziej zaawansowaną alternatywą dla wtyczki kontroli źródła do implementowania funkcji kontroli źródła w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Omawia pakiet kontroli źródła, który jest bardziej zaawansowaną alternatywą dla wtyczki kontroli źródła na potrzeby implementowania funkcji kontroli źródła w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
 - [Architektura](../../extensibility/internals/source-control-vspackage-architecture.md)
 
- Przedstawia diagram i wyjaśnia składniki pakietu kontroli źródła.
+ Przedstawia diagram i objaśnia składniki pakietu kontroli źródła.
 
 - [Funkcje](../../extensibility/internals/source-control-vspackage-features.md)
 
@@ -38,13 +38,13 @@ Ta dokumentacja zawiera łącza do przeglądu architektury pakietu [!INCLUDE[vsp
 
 - [Elementy projektu](../../extensibility/internals/source-control-vspackage-design-elements.md)
 
- Opisuje strukturę VSPackage, że pakiet kontroli źródła musi zaimplementować dla głębokiej integracji.
+ Opisuje strukturę pakietu VSPackage, którą musi zaimplementować pakiet kontroli źródła na potrzeby głębokiej integracji.
 
-## <a name="related-sections"></a>Powiązane sekcje
-- [Tworzenie wtyczki formantu źródła](../../extensibility/internals/creating-a-source-control-plug-in.md)
+## <a name="related-sections"></a>Sekcje pokrewne
+- [Tworzenie wtyczki kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md)
 
- W tym artykule omówiono sposób tworzenia wtyczki kontroli źródła, która dostarcza funkcje kontroli źródła w interfejsie użytkownika kontroli [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] źródła (UI).
+ W tym artykule omówiono sposób tworzenia wtyczki kontroli źródła, która dostarcza funkcje kontroli źródła w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsie użytkownika kontroli źródła (UI).
 
 - [Kontrola źródła](../../extensibility/internals/source-control.md)
 
- W tym artykule omówiono opcje implementowania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]kontroli źródła jako zintegrowanej funkcji programu .
+ W tym artykule omówiono opcje implementowania kontroli źródła jako funkcji zintegrowanej programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .

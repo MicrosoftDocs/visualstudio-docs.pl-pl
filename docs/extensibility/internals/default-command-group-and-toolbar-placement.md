@@ -1,5 +1,5 @@
 ---
-title: Ustawienie polecenia domyślnego, grupowania i paska narzędzi | Dokumenty firmy Microsoft
+title: Domyślne położenie poleceń, grup i pasków narzędzi | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,30 +16,30 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b432b514231e876dda1393bad8a315030272d998
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708891"
 ---
-# <a name="default-command-group-and-toolbar-placement"></a>Domyślne rozmieszczenie polecenia, grupy i paska narzędzi
-Aby uzyskać jednolitość i stabilność produktu, interfejs użytkownika [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] domyślnie wyświetla niektóre grupy poleceń i zawiera definicje poleceń i grup poleceń. VsPackages można również używać standardowych poleceń i grup poleceń.
+# <a name="default-command-group-and-toolbar-placement"></a>Domyślne położenie poleceń, grup i pasków narzędzi
+W celu zapewnienia jednorodności i stabilności produktu interfejs użytkownika domyślnie wyświetla pewne grupy poleceń i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zawiera definicje poleceń i grup poleceń. Pakietów VSPackage może również używać standardowych poleceń i grup poleceń.
 
- Domyślne grupy poleceń dzielą się na trzy kategorie: polecenia IDE, polecenia produktu i polecenia edytora.
+ Domyślne grupy poleceń dzielą się na trzy kategorie: polecenia środowiska IDE, polecenia produktów i polecenia edytora.
 
-## <a name="default-ide-commands"></a>Domyślne polecenia IDE
- Domyślny pasek narzędzi IDE zawiera polecenia udostępnione [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]przez wszystkie produkty zawarte w programie . Należą do nich polecenia odnoszące się do ogólnych operacji projektu, takich jak **polecenie Zapisz** i Polecenie **Dodaj element.** VsPackages nie należy dodawać lub odejmować od tego paska narzędzi, z jednym wyjątkiem: Jeśli produkt lub VSPackage dodaje nowe okno narzędzia, a następnie okno powinno zostać dodane do listy dostępnych okien narzędzi w menu **Widok.** Nowe produkty lub VSPackages można dodać własny pasek narzędzi.
+## <a name="default-ide-commands"></a>Domyślne polecenia środowiska IDE
+ Domyślny pasek narzędzi IDE zawiera polecenia udostępniane przez wszystkie produkty zawarte w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Obejmują one polecenia dotyczące ogólnych operacji projektu, takich jak polecenie **Zapisz** i polecenie **Dodaj element** . Pakietów VSPackage nie powinna dodawać ani odejmować z tego paska narzędzi, z wyjątkiem jednego wyjątku: Jeśli produkt lub pakietu VSPackage dodaje nowe okno narzędzi, to okno należy dodać do listy dostępnych okien narzędzi w menu **Widok** . Nowe produkty lub pakietów VSPackage mogą dodawać własne paski narzędzi.
 
 ## <a name="default-product-commands"></a>Domyślne polecenia produktu
- Każdy produkt może dostarczyć IDE z własnym domyślnym paskiem narzędzi, który zawiera ważne i często używane polecenia. Najlepiej jest jednak używać istniejących menu i pasków narzędzi, gdy tylko jest to możliwe i uzupełnić je innymi paskami narzędzi specyficznymi dla zadania, zgodnie z potrzebami.
+ Każdy produkt może zapewnić środowisko IDE z własnym domyślnym paskiem narzędzi zawierającym ważne i często używane polecenia. Najlepszym rozwiązaniem jest jednak używanie istniejących menu i pasków narzędzi, gdy jest to możliwe, a także uzupełnienie ich przy użyciu innych pasków narzędzi specyficznych dla zadań.
 
- Pole priorytetu dla paska narzędzi określa jego położenie wiersza. Zerowy priorytet umieszcza pasek narzędzi w trzecim wierszu (wiersz 3), pod paskiem menu (wiersz 1) i paskiem narzędzi **Standardowy** (wiersz 2). W związku z tym inne paski narzędzi są wyświetlane w wierszu (priorytet + 3). Kolejne paski narzędzi są umieszczane w tym samym wierszu, jeśli jest miejsce; w przeciwnym razie są one automatycznie przenoszone do następnego wiersza.
+ Pole priorytet dla paska narzędzi określa położenie wiersza. Zero priorytecie umieszcza pasek narzędzi w trzecim wierszu (wiersz 3), pod paskiem menu (wiersz 1) i **standardowym** paskiem narzędzi (wiersz 2). W związku z tym inne paski narzędzi są wyświetlane w wierszu (priorytet + 3). Kolejne paski narzędzi są umieszczane w tym samym wierszu, w przypadku których występuje pomieszczenie; w przeciwnym razie są one automatycznie przenoszone do następnego wiersza.
 
 ## <a name="default-editor-commands"></a>Domyślne polecenia edytora
- VsPackage, który zapewnia edytor niestandardowy powinien zapewnić domyślny pasek narzędzi, który zawiera najważniejsze i często używane polecenia w tym edytorze. Pasek narzędzi edytora powinien pojawić się, gdy edytor jest aktywny i powinien być ukryty, gdy edytor nie jest aktywny. Ta widoczność jest `VisibilityConstraints` kontrolowana w elemencie pliku *vsct.*
+ Pakietu VSPackage z edytorem niestandardowym powinien udostępniać domyślny pasek narzędzi, który zawiera najważniejsze i często używane polecenia w tym edytorze. Pasek narzędzi edytora powinien pojawić się, gdy Edytor jest aktywny i powinien być ukryty, gdy Edytor nie jest aktywny. Widoczność jest kontrolowana w `VisibilityConstraints` elemencie pliku *. vsct* .
 
- Paski narzędzi edytora powinny być umieszczone poniżej IDE i paski narzędzi produktu.
+ Paski narzędzi edytora powinny być umieszczone poniżej pasków narzędzi IDE i produktów.
 
 ## <a name="see-also"></a>Zobacz też
-- [Polecenia, menu i grupy zdefiniowane przez IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)
-- [Jak vspackages dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Polecenia, menu i grupy zdefiniowane w środowisku IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)
+- [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
