@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 913fec8b820b5f32f564c84aba52a78df82efac1
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711758"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Co&#39;s w interfejsie API dodatku plug-in kontroli źródła w wersji 1,2
@@ -32,5 +32,5 @@ W tej sekcji przedstawiono zaawansowane funkcje kontroli kodu źródłowego w in
 
 - [Usuwanie informacji o kontroli źródła z. Proj i. Pliki sln](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md) wyjaśniają, w jaki sposób interfejs API wtyczki kontroli źródła w wersji 1,2 przechowuje informacje o projektach i rozwiązaniach.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wprowadzenie](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73187146"
 ---
 # <a name="visualizer-security-considerations"></a>Zagadnienia dotyczące zabezpieczeń internetowych
@@ -37,8 +37,8 @@ Pisanie wizualizatora wiąże się z potencjalnymi zagrożeniami bezpieczeństwa
 
  Aby wyeliminować tę lukę w zabezpieczeniach, należy mieć na uwadze interfejsy uwidocznione przez wizualizator.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Architektura wizualizatora](../debugger/visualizer-architecture.md)
-- [Instrukcje: pisanie wizualizatora](create-custom-visualizers-of-data.md)
+- [Porady: pisanie wizualizatora](create-custom-visualizers-of-data.md)
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
 - [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

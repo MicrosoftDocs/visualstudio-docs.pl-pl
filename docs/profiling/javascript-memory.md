@@ -21,10 +21,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 22a9c7a4b58613c0c4bd94ea4f4ce6162f620553
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331265"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analizowanie użycia pamięci JavaScript w aplikacjach platformy UWP
@@ -317,9 +317,9 @@ Analizator pamięci języka JavaScript jest dostępny w programie Visual Studio,
 
   W kodzie źródłowym można używać następujących poleceń:
 
-- `console.takeHeapSnapshot`wykonuje migawkę sterty, która pojawia się w analizatorze pamięci JavaScript. To polecenie jest jednym z [poleceń konsoli JavaScript](../debugger/javascript-console-commands.md).
+- `console.takeHeapSnapshot` wykonuje migawkę sterty, która pojawia się w analizatorze pamięci JavaScript. To polecenie jest jednym z [poleceń konsoli JavaScript](../debugger/javascript-console-commands.md).
 
-- `performance.mark`Ustawia znacznik użytkownika (odwrócony trójkąt), który pojawia się na osi czasu grafu pamięci w widoku Podsumowanie, gdy aplikacja jest uruchomiona. To polecenie przyjmuje jeden argument ciągu, który opisuje zdarzenie i pojawia się jako etykietka narzędzia w grafie pamięci. Ten opis nie może zawierać więcej niż 100 znaków.
+- `performance.mark` Ustawia znacznik użytkownika (odwrócony trójkąt), który pojawia się na osi czasu grafu pamięci w widoku Podsumowanie, gdy aplikacja jest uruchomiona. To polecenie przyjmuje jeden argument ciągu, który opisuje zdarzenie i pojawia się jako etykietka narzędzia w grafie pamięci. Ten opis nie może zawierać więcej niż 100 znaków.
 
 > [!TIP]
 > Służy `console.takeHeapSnapshot` do przyspieszenia analizy w przypadku powtarzających się scenariuszy użycia pamięci.
@@ -353,7 +353,7 @@ if (performance && performance.mark) {
 
 - Gdy trudno jest zidentyfikować przyczynę problemu z pamięcią, Użyj różnych widoków (takich jak obiekty i typy), aby wyszukać commonalities, szczególnie w celu ułatwienia zidentyfikowania jednego obiektu (lub kilku obiektów), które mogą zawierać odwołania do wielu innych obiektów, które są wyświetlane w widoku.
 
-- Poszukaj obiektów, które są przechowywane w pamięci przypadkowo po przejściu do nowej strony, która jest często przyczyną problemów z pamięcią. Przykład:
+- Poszukaj obiektów, które są przechowywane w pamięci przypadkowo po przejściu do nowej strony, która jest często przyczyną problemów z pamięcią. Na przykład:
 
   - Nieprawidłowe użycie [adresu URL. Funkcja CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) może być przyczyną tego problemu.
 

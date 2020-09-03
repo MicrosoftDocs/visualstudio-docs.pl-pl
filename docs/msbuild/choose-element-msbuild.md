@@ -1,5 +1,5 @@
 ---
-title: Wybierz element (MSBuild) | Dokumenty firmy Microsoft
+title: Wybierz element (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -20,17 +20,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c4f699b4ffc9372af0c803d094390544932d652b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634477"
 ---
-# <a name="choose-element-msbuild"></a>Wybierz element (MSBuild)
+# <a name="choose-element-msbuild"></a>Choose — element (MSBuild)
 
-Ocenia elementy podrzędne, aby `ItemGroup` wybrać jeden `PropertyGroup` zestaw elementów i/lub elementów do oceny.
+Oblicza elementy podrzędne w celu wybrania jednego zestawu `ItemGroup` elementów i/lub `PropertyGroup` elementów do obliczenia.
 
- \<> projektu \<wybierz \<>, kiedy> \<wybierz> ... \<W przeciwnym razie \<> Wybierz> ...
+ \<Project> \<Choose>
+ \<When>
+ \<Choose>
+... \<Otherwise>
+ \<Choose>
+...
 
 ## <a name="syntax"></a>Składnia
 
@@ -53,24 +58,24 @@ Ocenia elementy podrzędne, aby `ItemGroup` wybrać jeden `PropertyGroup` zestaw
 
 |Element|Opis|
 |-------------|-----------------|
-|[Inaczej](../msbuild/otherwise-element-msbuild.md)|Element opcjonalny.<br /><br /> Określa `PropertyGroup` blok kodu i `ItemGroup` elementy do oceny, `When` czy warunki `false`wszystkich elementów są obliczane na . Może być zero `Otherwise` lub jeden `Choose` element w elemencie i musi być ostatnim elementem.|
-|[Kiedy](../msbuild/when-element-msbuild.md)|Element wymagany.<br /><br /> Określa możliwy blok kodu dla `Choose` elementu do wybrania. Może istnieć jeden `When` lub `Choose` więcej elementów w elemencie.|
+|[Przypadku](../msbuild/otherwise-element-msbuild.md)|Element opcjonalny.<br /><br /> Określa blok kodu `PropertyGroup` i `ItemGroup` elementów do obliczenia w przypadku, gdy warunki wszystkich `When` elementów są oceniane do `false` . Może istnieć zero lub jeden element `Otherwise` w `Choose` elemencie i musi być ostatnim elementem.|
+|[Kiedy](../msbuild/when-element-msbuild.md)|Element wymagany.<br /><br /> Określa możliwy blok kodu dla `Choose` elementu do wybrania. Może istnieć co najmniej jeden element `When` w `Choose` elemencie.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 | Element | Opis |
 | - | - |
-| [Inaczej](../msbuild/otherwise-element-msbuild.md) | Określa blok kodu do wykonania, jeśli `When` warunki wszystkich `false`elementów są obliczane na . |
+| [Przypadku](../msbuild/otherwise-element-msbuild.md) | Określa blok kodu do wykonania, jeśli warunki wszystkich `When` elementów są oceniane do `false` . |
 | [Project](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu MSBuild. |
 | [Kiedy](../msbuild/when-element-msbuild.md) | Określa możliwy blok kodu dla `Choose` elementu do wybrania. |
 
 ## <a name="remarks"></a>Uwagi
 
- `When` `Otherwise` , `Choose`i elementy są używane razem, aby zapewnić sposób, aby wybrać jedną sekcję kodu do wykonania z wielu możliwych alternatyw. Aby uzyskać więcej informacji, zobacz [Konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md).
+ `Choose`Elementy, `When` , i `Otherwise` są używane razem, aby zapewnić możliwość wyboru jednej sekcji kodu do wykonania z wielu możliwych wariantów. Aby uzyskać więcej informacji, zobacz [konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md).
 
 ## <a name="example"></a>Przykład
 
- W poniższym `Choose` projekcie używa elementu, aby wybrać, `When` który zestaw wartości właściwości w elementach do ustawionego. Jeśli `Condition` atrybuty `When` obu elementów ocenić `false`do `Otherwise` , wartości właściwości w elemencie są ustawione.
+ Następujący projekt używa elementu, `Choose` Aby wybrać zestaw wartości właściwości w elementach, które `When` mają zostać ustawione. Jeśli `Condition` atrybuty obu `When` elementów są oceniane do `false` , wartości właściwości w `Otherwise` elemencie są ustawiane.
 
 ```xml
 <Project

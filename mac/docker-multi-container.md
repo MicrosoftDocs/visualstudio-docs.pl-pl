@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 07/03/2020
 ms.topic: tutorial
 ms.openlocfilehash: 4dd8695ccf8f1fcf13b9b52387d28c68f8812aec
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800726"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Tworzenie aplikacji z wieloma kontenerami przy użyciu narzędzia Docker Compose

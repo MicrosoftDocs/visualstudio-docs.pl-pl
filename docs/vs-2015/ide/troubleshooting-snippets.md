@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f73cb7ba59daf2f8ee957d95dee36bba59f87614
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654780"
 ---
 # <a name="troubleshooting-snippets"></a>Rozwiązywanie problemów z wstawkami kodu programu
@@ -29,9 +29,9 @@ Problemy ze fragmentami kodu IntelliSense są zwykle spowodowane przez dwa probl
 
 ### <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>Nie można przeciągnąć fragmentu z Eksploratora plików do pliku źródłowego programu Visual Studio
 
-- KOD XML w pliku fragmentu kodu może być uszkodzony. **Edytor XML** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] może lokalizować problemy w strukturze XML.
+- KOD XML w pliku fragmentu kodu może być uszkodzony. **Edytor XML** w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] może lokalizować problemy w strukturze XML.
 
-- Plik fragmentu kodu może nie być zgodny ze schematem fragmentu kodu. **Edytor XML** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] może lokalizować problemy w strukturze XML.
+- Plik fragmentu kodu może nie być zgodny ze schematem fragmentu kodu. **Edytor XML** w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] może lokalizować problemy w strukturze XML.
 
 ### <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>Kod zawiera błędy kompilatora, które nie są wyróżnione
 

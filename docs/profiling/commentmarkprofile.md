@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2972f9d470bebe3a65b7d525aa2b358d68ad5f1c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546591"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
@@ -68,8 +68,8 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 |Element|Wartość|
 |-|-|
 |**Nagłówki**|Uwzględnij VSPerf. h|
-|**Biblioteka**|Użyj VSPerf. lib|
-|**Unicode**|Zaimplementowane jako `CommentMarkProfileW` (Unicode) i `CommentMarkProfileA` (ANSI).|
+|**Biblioteki**|Użyj VSPerf. lib|
+|**Kod Unicode**|Zaimplementowane jako `CommentMarkProfileW` (Unicode) i `CommentMarkProfileA` (ANSI).|
 
 ## <a name="example"></a>Przykład
  Poniższy kod ilustruje wywołanie funkcji CommentMarkProfile. W przykładzie założono użycie makr ciągu Win32 i ustawień kompilatora Unicode do określenia, czy kod wywołuje [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)] wywołanie funkcji.
@@ -110,5 +110,5 @@ void ExerciseCommentMarkProfile()
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)

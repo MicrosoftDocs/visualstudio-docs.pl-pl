@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetDerivedMostReference | Dokumenty firmy Microsoft
+title: 'IDebugReference2:: GetDerivedMostReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 15e98884d040cfb2ebf1b33a56c7edea331fbff0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720614"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
-Pobiera odwołanie najbardziej pochodne odwołania. Zarezerwowane do użytku w przyszłości.
+Pobiera odwołanie pochodne do odwołania. Zarezerwowane do użytku w przyszłości.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,13 +41,13 @@ int GetDerivedMostReference( 
 
 ## <a name="parameters"></a>Parametry
 `ppDerivedMost`\
-[na zewnątrz] Zwraca obiekt [IDebugReference2,](../../../extensibility/debugger/reference/idebugreference2.md) który reprezentuje właściwość najbardziej pochodną.
+określoną Zwraca obiekt [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) , który reprezentuje właściwość pochodną.
 
 ## <a name="return-value"></a>Wartość zwracana
  Zawsze zwraca wartość `E_NOTIMPL`.
 
 ## <a name="remarks"></a>Uwagi
- Na przykład jeśli ta właściwość opisuje `ClassRoot` obiekt, który implementuje, `ClassDerived` ale który `ClassRoot`jest faktycznie wystąpienia, który pochodzi od , a następnie zwraca `ClassDerived` [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) obiekt reprezentujący odwołanie do obiektu.
+ Na przykład, jeśli ta właściwość opisuje obiekt, który implementuje `ClassRoot` , ale jest w rzeczywistości wystąpieniem, `ClassDerived` które pochodzi od `ClassRoot` , Metoda ta zwraca obiekt [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) reprezentujący odwołanie do `ClassDerived` obiektu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

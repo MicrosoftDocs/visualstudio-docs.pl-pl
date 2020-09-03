@@ -12,13 +12,13 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
 ms.openlocfilehash: c35e6a12262083d09575b51f6c9f918ba30a27b1
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88714450"
 ---
-# <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Rozszerzenia projektów Instalator programu Visual Studio i .NET Core 3,1
+# <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Rozszerzenie projektów instalatora programu Visual Studio i platforma .NET Core 3.1
 
 Pakowanie aplikacji jako MSI jest często realizowane przy użyciu rozszerzenia projektów Instalator programu Visual Studio.
 
@@ -54,7 +54,7 @@ Należy wybrać opcję **środowiska uruchomieniowego .NET Core...** dla aplikac
 >[!NOTE]
 >Te elementy są obecne od wersji programu Visual Studio 2019 Update 7.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wstępnie wymagane składniki — Okno dialogowe](../ide/reference/prerequisites-dialog-box.md)
 - [Wymagania wstępne dotyczące wdrażania aplikacji](../deployment/application-deployment-prerequisites.md)

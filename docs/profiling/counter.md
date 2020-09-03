@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 64c882514d6bcf27de36a6ca4420fbaf671c72f2
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331197"
 ---
 # <a name="counter"></a>Licznik
@@ -36,11 +36,11 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 ```
 
 #### <a name="parameters"></a>Parametry
- `Name`Nazwa licznika. Użyj opcji VSPerfCmd.exe **/QueryCounters** , aby wyświetlić listę nazw dostępnych liczników na komputerze.
+ `Name` Nazwa licznika. Użyj opcji VSPerfCmd.exe **/QueryCounters** , aby wyświetlić listę nazw dostępnych liczników na komputerze.
 
- `Reload`Liczba zdarzeń licznika w interwale próbkowania. Nie należy używać z metodą Instrumentacji.
+ `Reload` Liczba zdarzeń licznika w interwale próbkowania. Nie należy używać z metodą Instrumentacji.
 
- `FriendlyName`Obowiązkowe Ciąg, który ma zostać użyty zamiast `Name` w nagłówkach kolumn w raportach i widokach profilera.
+ `FriendlyName` Obowiązkowe Ciąg, który ma zostać użyty zamiast `Name` w nagłówkach kolumn w raportach i widokach profilera.
 
 ## <a name="required-options"></a>Wymagane opcje
  Opcji Counter można używać tylko z jedną z następujących opcji:

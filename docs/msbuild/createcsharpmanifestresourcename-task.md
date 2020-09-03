@@ -1,5 +1,5 @@
 ---
-title: Tworzenie Zadania Programu CreateCSharpManifestResourceName | Dokumenty firmy Microsoft
+title: CreateCSharpManifestResourceName — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,35 +17,35 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e8e72ef282911ecb36fb9a16838f6cc311e253e1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634360"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName — zadanie
 
-Tworzy nazwę manifestu w stylu C#z podanej nazwy pliku *resx* lub innego zasobu.
+Tworzy nazwę manifestu w stylu C# na podstawie danej nazwy pliku *resx* lub innego zasobu.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli opisano parametry [zadania CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md).
+ W poniższej tabeli opisano parametry [zadania CreateCSharpManifestResourceName —](../msbuild/createcsharpmanifestresourcename-task.md).
 
 | Parametr | Opis |
 | - | - |
-| `ManifestResourceNames` | <xref:Microsoft.Build.Framework.ITaskItem>`[]` wyjściowego parametru tylko do odczytu.<br /><br /> Wynikowe nazwy manifestu. |
-| `ResourceFiles` | Wymagany parametr interfejsu `String`.<br /><br /> Nazwa pliku zasobu, z którego ma być tworzę nazwę manifestu języka C#. |
-| `RootNamespace` | Parametr `String` opcjonalny.<br /><br /> Główny obszar nazw pliku zasobów, zwykle pobrany z pliku projektu. Może `null`być . |
-| `PrependCultureAsDirectory` | Parametr `Boolean` opcjonalny.<br /><br /> Jeśli `true`nazwa kultury jest dodawana jako nazwa katalogu tuż przed nazwą zasobu manifestu. Wartością `true`domyślną jest . |
-| `ResourceFilesWithManifestResourceNames` | Opcjonalny parametr `String` wyjściowy tylko do odczytu.<br /><br /> Zwraca nazwę pliku zasobu, który teraz zawiera nazwę zasobu manifestu. |
+| `ManifestResourceNames` | <xref:Microsoft.Build.Framework.ITaskItem>`[]`wyjściowy parametr tylko do odczytu.<br /><br /> Nazwy manifestów. |
+| `ResourceFiles` | Wymagany parametr interfejsu `String`.<br /><br /> Nazwa pliku zasobów, z którego ma zostać utworzona Nazwa manifestu języka C#. |
+| `RootNamespace` | Opcjonalny `String` parametr.<br /><br /> Główna przestrzeń nazw pliku zasobów, zazwyczaj pobierana z pliku projektu. Może być `null` . |
+| `PrependCultureAsDirectory` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli nazwa `true` kultury zostanie dodana jako nazwa katalogu tuż przed nazwą zasobu manifestu. Wartość domyślna to `true` . |
+| `ResourceFilesWithManifestResourceNames` | Opcjonalny parametr wyjściowy tylko do odczytu `String` .<br /><br /> Zwraca nazwę pliku zasobu, który zawiera teraz nazwę zasobu manifestu. |
 
 ## <a name="remarks"></a>Uwagi
 
- [Zadanie CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) określa odpowiednią nazwę zasobu manifestu do przypisania do danego pliku *.resx* lub innego pliku zasobów. Zadanie zawiera nazwę logiczną do pliku zasobów, a następnie dołącza go do parametru wyjściowego jako metadane.
+ [Zadanie CreateVisualBasicManifestResourceName —](../msbuild/createvisualbasicmanifestresourcename-task.md) określa odpowiednią nazwę zasobu manifestu, która ma zostać przypisana do danego pliku *resx* lub innego zasobu. Zadanie zawiera nazwę logiczną pliku zasobów, a następnie dołącza ją do parametru wyjściowego jako metadane.
 
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Zadania](../msbuild/msbuild-tasks.md)
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

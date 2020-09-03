@@ -1,5 +1,5 @@
 ---
-title: pole m_stateObject | Dokumenty firmy Microsoft
+title: m_stateObject pole | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fed70f2eda19ad96454a83217c20c046809f3034
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738373"
 ---
-# <a name="m_stateobject-field"></a>Pole m_stateObject
-Obiekt, który reprezentuje dane, które będą używane akcji.
+# <a name="m_stateobject-field"></a>pole m_stateObject
+Obiekt reprezentujący dane, które będą używane przez tę akcję.
 
- **Obszar nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Montaż:** mscorlib (w *mscorlib.dll*)
+ **Zestaw:** mscorlib (w *mscorlib.dll*)
 
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następująca składnia znajduje się we wspólnym języku pośrednim (CIL).
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,7 +33,7 @@ Obiekt, który reprezentuje dane, które będą używane akcji.
 ```
 
 ## <a name="remarks"></a>Uwagi
- Jest to `state` parametr <xref:System.Threading.Tasks.Task.%23ctor%2A> w konstruktorze. Jest to również pole <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> podkładowe dla właściwości.
+ Jest to `state` parametr w <xref:System.Threading.Tasks.Task.%23ctor%2A> konstruktorze. Jest to również pole zapasowe dla <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> właściwości.
 
 ## <a name="see-also"></a>Zobacz też
-- [Klasa zadań](../../extensibility/debugger/task-class-internal-members.md)
+- [Klasa zadania](../../extensibility/debugger/task-class-internal-members.md)

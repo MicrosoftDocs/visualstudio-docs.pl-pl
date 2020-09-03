@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce96f2a3df901c1fea0aa4caa97d29c07db5e681
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654951"
 ---
 # <a name="customizing-the-model-explorer"></a>Dostosowywanie Eksploratora modelu
@@ -37,14 +37,14 @@ Wygląd i zachowanie Eksploratora dla projektanta języka specyficznego dla dome
  Aby zmienić tytuł okna wygenerowanego Eksploratora, wybierz pozycję **zachowanie Eksploratora** w **Eksploratorze DSL**, a następnie w oknie **Właściwości** ustaw właściwość **title** na tytuł, który ma zostać wybrany.
 
 ## <a name="changing-the-tab-icon"></a>Zmiana ikony karty
- Aby zmienić ikonę karty dla Eksploratora, użyj ikony 16x16 pikseli w pliku BMP. Umieść plik ikony w folderze \DslPackage\Resources\, a następnie zmień nazwę pliku na **ModelExplorerToolWindowBitmaps. bmp**. Na przykład można zmienić plik ikony Setup. ico [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na format bmp i zmienić jego nazwę na **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. Wygenerowany Projektant wyświetli tę ikonę na karcie Eksploratora, gdy zostanie ona zadokowany przy użyciu **Eksplorator rozwiązań**.
+ Aby zmienić ikonę karty dla Eksploratora, użyj ikony 16x16 pikseli w pliku BMP. Umieść plik ikony w folderze \DslPackage\Resources\, a następnie zmień nazwę pliku na **ModelExplorerToolWindowBitmaps.bmp**. Na przykład można zmienić [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] plik ikony Setup. ico na format bmp i zmienić jego nazwę na **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. Wygenerowany Projektant wyświetli tę ikonę na karcie Eksploratora, gdy zostanie ona zadokowany przy użyciu **Eksplorator rozwiązań**.
 
 ## <a name="setting-custom-icons-on-explorer-nodes"></a>Ustawianie ikon niestandardowych w węzłach Eksploratora
  Węzły w Eksploratorze można dostosować za pomocą ustawień węzła Eksploratora. Poniższa procedura pokazuje, jak dodać ikonę do węzła.
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>Aby dodać ikonę do węzła Eksploratora
 
-1. Utwórz rozwiązanie [!INCLUDE[dsl](../includes/dsl-md.md)] przy użyciu szablonu rozwiązania przepływu zadań.
+1. Utwórz [!INCLUDE[dsl](../includes/dsl-md.md)] rozwiązanie przy użyciu szablonu rozwiązania przepływu zadań.
 
 2. Umieść plik BMP, który zawiera ikonę 16x16 pikseli w folderze **Dsl\Resources** w rozwiązaniu.
 

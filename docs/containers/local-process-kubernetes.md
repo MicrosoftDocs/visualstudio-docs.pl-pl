@@ -10,10 +10,10 @@ ms.author: ghogen
 author: ghogen
 manager: jillfra
 ms.openlocfilehash: 191fd1df377bd15d78c329b88d20f1fed8669663
-ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87913281"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>Korzystanie z procesu lokalnego z Kubernetes (wersja zapoznawcza)

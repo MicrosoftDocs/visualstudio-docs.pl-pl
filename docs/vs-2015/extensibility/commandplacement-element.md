@@ -1,5 +1,5 @@
 ---
-title: CommandPlacement, Element | Dokumentacja firmy Microsoft
+title: CommandPlacement — element | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,18 +12,18 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43fd417c4d54c0ab57133cf6dbff2c770c1ffc45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184333"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-CommandPlacement, element umożliwia przyciski, grup i menu, mają zostać uwzględnione w więcej niż jednej grupie lub menu. Przy użyciu elementu CommandPlacement, nie trzeba całkowicie ponownie zdefiniować te elementy, aby zmodyfikować wygląd interfejsu użytkownika.  
+Element CommandPlacement umożliwia uwzględnienie przycisków, grup i menu w więcej niż jednej grupie lub menu. Za pomocą elementu CommandPlacement nie trzeba całkowicie ponownie definiować tych elementów, aby modyfikować wygląd interfejsu użytkownika.  
   
- Aby uzyskać więcej informacji, zobacz [tworzenia wielokrotnego użytku, do grup przycisków](../extensibility/creating-reusable-groups-of-buttons.md).  
+ Aby uzyskać więcej informacji, zobacz [Tworzenie grup przycisków do wielokrotnego użytku](../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,22 +40,22 @@ CommandPlacement, element umożliwia przyciski, grup i menu, mają zostać uwzgl
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagane. Identyfikator guid zestawu poleceń, zgodnie z definicją w [Symbols, Element](../extensibility/symbols-element.md).|  
-|identyfikator|Wymagane. Identyfikator menu, grupy lub polecenie, aby umieścić zgodnie z definicją w `Symbols Element`.|  
-|priority|Wymagane. Określa położenie visual elementu w jego elementu nadrzędnego.|  
+|guid|Wymagany. Identyfikator GUID zestawu poleceń, zgodnie z definicją w [elemencie Symbols](../extensibility/symbols-element.md).|  
+|identyfikator|Wymagany. Identyfikator menu, grupy lub polecenia, które mają zostać umieszczone, zgodnie z definicją w `Symbols Element` .|  
+|priority|Wymagany. Określa położenie wizualizacji elementu w jego elemencie nadrzędnym.|  
 |Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|Nadrzędny|Wymagany. Menu lub grupy, która hostuje element które mają być umieszczone.|  
+|Nadrzędny|Wymagany. Menu lub Grupa, która zawiera element, który ma zostać umieszczony.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[CommandPlacements, element](../extensibility/commandplacements-element.md)|Określa grupy CommandPlacements i CommandPlacement elementów.|  
+|[CommandPlacements, element](../extensibility/commandplacements-element.md)|Określa grupy elementów CommandPlacements i CommandPlacement.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -69,5 +69,5 @@ CommandPlacement, element umożliwia przyciski, grup i menu, mają zostać uwzgl
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [CommandPlacements, Element](../extensibility/commandplacements-element.md)   
+ [CommandPlacements, element](../extensibility/commandplacements-element.md)   
  [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

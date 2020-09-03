@@ -1,5 +1,5 @@
 ---
-title: IDebugProviderProgramNode2 | Dokumenty firmy Microsoft
+title: IDebugProviderProgramNode2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 815a945f6fb591960ebf0bf4b4fcd9d842ffefd3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720682"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
-Ten interfejs marshals interfejsów związanych z programem w granicach procesu.
+Ten interfejs służy do organizowania interfejsów związanych z programem między granicami procesów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,25 +29,25 @@ IDebugProviderProgramNode2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Aparat debugowania (DE) implementuje ten interfejs na tym samym obiekcie, który implementuje [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) do obsługi interfejsów kierowanie przez granice procesu.
+ Aparat debugowania (DE) implementuje ten interfejs na tym samym obiekcie, który implementuje [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , aby obsługiwał interfejsy kierujące między różnymi procesami.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Wywołanie [QueryInterface](/cpp/atl/queryinterface) na interfejsie, `IDebugProgramNode2` aby uzyskać ten interfejs. Jeśli nie można uzyskać tego interfejsu, DE nie obsługuje organizowania interfejsów.
+ Wywołaj metodę [QueryInterface](/cpp/atl/queryinterface) na `IDebugProgramNode2` interfejsie, aby uzyskać ten interfejs. Jeśli nie można uzyskać tego interfejsu, usługa DE nie obsługuje organizowania interfejsów.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
  Ten interfejs implementuje następującą metodę:
 
 |Metoda|Opis|
 |------------|-----------------|
-|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Pobiera określony interfejs w granicach procesu.|
+|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Pobiera określony interfejs między granicami procesu.|
 
 ## <a name="remarks"></a>Uwagi
- Ten interfejs jest implementowany, gdy DE działa w oddzielnej przestrzeni procesu z programu są debugowane: na przykład, gdy DE jest uruchomiony w przestrzeni procesu programu Visual Studio zamiast przestrzeni procesu programu jest debugowany.
+ Ten interfejs jest implementowany, gdy działa w oddzielnym obszarze procesu z debugowanym programem: na przykład gdy w obszarze przetwarzania programu Visual Studio nie jest miejsce w debugowanym programie.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: Zainstaluj wizualizację C++ dla wieloplatformowego opracowywania aplikacji mobilnych | Microsoft Docs
+title: Zainstaluj Visual C++ dla opracowywania aplikacji mobilnych na wiele platform | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-mobile
@@ -12,24 +12,24 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 70f1266581bb633086fa33a28b43e04befc7e6f9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844330"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wizualizacja C++ dla wieloplatformowego opracowywania aplikacji mobilnych (https://go.microsoft.com/fwlink/p/?LinkId=536383) jest składnikiem instalowalnym programu Visual Studio 2015. Obejmuje to międzyplatformowe szablony programu Visual Studio, a także instaluje narzędzia i zestawy SDK dla wielu platform, aby szybko rozpocząć pracę bez konieczności lokalizowania, pobierania i konfigurowania. Za pomocą tych narzędzi w programie Visual Studio można łatwo tworzyć, edytować, debugować i testować projekty Międzyplatformowe. W tym temacie opisano sposób instalowania narzędzi i oprogramowania innych firm wymagane do tworzenia aplikacji dla wielu platform przy użyciu programu Visual Studio. Aby zapoznać się z omówieniem składnika, zobacz [ C++ Międzyplatformowe aplikacje mobilne](https://go.microsoft.com/fwlink/p/?LinkId=536387)  
+Visual C++ dla opracowywania aplikacji mobilnych na wiele platform] ( https://go.microsoft.com/fwlink/p/?LinkId=536383) jest składnikiem instalowalnym programu Visual Studio 2015. Obejmuje to międzyplatformowe szablony programu Visual Studio, a także instaluje narzędzia i zestawy SDK dla wielu platform, aby szybko rozpocząć pracę bez konieczności lokalizowania, pobierania i konfigurowania. Za pomocą tych narzędzi w programie Visual Studio można łatwo tworzyć, edytować, debugować i testować projekty Międzyplatformowe. W tym temacie opisano sposób instalowania narzędzi i oprogramowania innych firm wymagane do tworzenia aplikacji dla wielu platform przy użyciu programu Visual Studio. Aby zapoznać się z omówieniem składnika, zobacz [Visual C++ aplikacji mobilnych na wiele platform](https://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
  [Wymagania](#Requirements)   
- [Pobierz  narzędzi](#GetTheTools)  
- [Zainstaluj  narzędzi](#InstallTheTools)  
+ [Pobierz narzędzia](#GetTheTools)   
+ [Instalowanie narzędzi](#InstallTheTools)   
  [Zainstaluj narzędzia dla systemu iOS](#InstallForiOS)   
  [Ręczne instalowanie lub aktualizowanie zależności](#ThirdParty)  
   
-## <a name="Requirements"></a> Wymagania  
+## <a name="requirements"></a><a name="Requirements"></a> Wymagania  
   
 - Wymagania dotyczące instalacji znajdują się w temacie [wymagania systemowe programu Visual Studio 2015](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
@@ -44,33 +44,33 @@ Wizualizacja C++ dla wieloplatformowego opracowywania aplikacji mobilnych (https
   
 - Kompilowanie kodu dla systemu iOS wymaga identyfikatora Apple ID, konta programu dla deweloperów systemu iOS i komputera Mac, na którym można uruchomić [Xcode 6](https://go.microsoft.com/fwlink/p/?LinkId=536387) lub nowszą wersję systemu operacyjnego X Mavericks lub nowszego. Aby zapoznać się z prostymi krokami instalacji, zobacz [Instalowanie narzędzi dla systemu iOS](#InstallForiOS).  
   
-## <a name="GetTheTools"></a>Pobierz narzędzia  
- Wizualizacja C++ dla wieloplatformowego opracowywania aplikacji mobilnych to składnik, który można zainstalować w programie Visual Studio Community, wersje Professional i Enterprise. Aby uzyskać program Visual Studio, przejdź do strony [plików do pobrania programu Visual studio 2015](https://visualstudio.microsoft.com/downloads/) i Pobierz program visual Studio 2015 z aktualizacją Update 2 lub nowszą.  
+## <a name="get-the-tools"></a><a name="GetTheTools"></a> Pobierz narzędzia  
+ Visual C++ dla opracowywania aplikacji mobilnych na wiele platform to składnik instalowalny dostępny w programie Visual Studio Community, Professional i Enterprise Edition. Aby uzyskać program Visual Studio, przejdź do strony [plików do pobrania programu Visual studio 2015](https://visualstudio.microsoft.com/downloads/) i Pobierz program visual Studio 2015 z aktualizacją Update 2 lub nowszą.  
   
-## <a name="InstallTheTools"></a>Instalowanie narzędzi  
- Instalator programu Visual Studio 2015 zawiera opcję instalacji wizualizacji C++ na potrzeby tworzenia aplikacji mobilnych na wiele platform. Spowoduje to zainstalowanie wymaganych C++ narzędzi języka, szablonów i składników dla programu Visual Studio, zestawów narzędzi w zatoce i Clang, które są potrzebne do kompilowania i debugowania systemu Android, oraz składniki do komunikowania się z komputerem Mac na potrzeby tworzenia aplikacji dla systemu iOS. Instaluje także wszystkie narzędzia innych firm i zestawy SDK, które są wymagane do obsługi projektowania aplikacji dla systemów iOS i Android. Większość tych narzędzi innych firm to oprogramowanie typu open source wymagane do obsługi platformy Android.  
+## <a name="install-the-tools"></a><a name="InstallTheTools"></a> Instalowanie narzędzi  
+ Instalator programu Visual Studio 2015 zawiera opcję instalacji Visual C++ dla opracowywania aplikacji mobilnych na wiele platform. Spowoduje to zainstalowanie wymaganych narzędzi języka C++, szablonów i składników dla programu Visual Studio, zestawów narzędzi w zatoce i Clang, które są potrzebne do kompilowania i debugowania systemu Android, oraz składniki do komunikowania się z komputerem Mac na potrzeby tworzenia aplikacji dla systemu iOS. Instaluje także wszystkie narzędzia innych firm i zestawy SDK, które są wymagane do obsługi projektowania aplikacji dla systemów iOS i Android. Większość tych narzędzi innych firm to oprogramowanie typu open source wymagane do obsługi platformy Android.  
   
-- Zestaw Android Native Development Kit (NDK) jest wymagany do C++ kompilowania kodu przeznaczonego dla platformy Android.  
+- Zestaw Android Native Development Kit (NDK) jest wymagany do kompilowania kodu C++ przeznaczonego dla platformy Android.  
   
 - W procesie kompilacji systemu Android są wymagane Android SDK, Apache Ant i Java SE Development Kit.  
   
 - Microsoft Visual Studio Emulator for Android to opcjonalny emulator o wysokiej wydajności przydatny do testowania i debugowania kodu.  
   
-#### <a name="to-install-visual-c-for-cross-platform-mobile-development-and-the-third-party-tools"></a>Aby zainstalować wizualizację C++ dla wieloplatformowego opracowywania aplikacji mobilnych i narzędzi innych firm  
+#### <a name="to-install-visual-c-for-cross-platform-mobile-development-and-the-third-party-tools"></a>Aby zainstalować Visual C++ dla opracowywania aplikacji mobilnych na wiele platform i narzędzia innych firm  
   
 1. Uruchom Instalatora programu Visual Studio 2015, który został pobrany po pobraniu linku w [narzędziu Pobierz narzędzia](#GetTheTools). Aby zainstalować składniki opcjonalne, wybierz opcję **niestandardowy** jako typ instalacji. Wybierz pozycję **dalej** , aby wybrać opcjonalne składniki do zainstalowania.  
   
-2. W obszarze Wybieranie funkcji rozwiń pozycję **Programowanie aplikacji mobilnych dla wielu platform** i sprawdź  **C++ Visual Mobile Development**.  
+2. W obszarze Wybieranie funkcji rozwiń pozycję **Programowanie aplikacji mobilnych dla wielu platform** i sprawdź, **Visual C++ opracowywanie aplikacji mobilnych**.  
   
-     ![Wybierz pozycję Programowanie&#43; &#43; aplikacji mobilnych w języku Visual C](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
+     ![Wybieranie Visual C&#43;&#43; opracowywanie aplikacji mobilnych](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
   
-     Domyślnie po wybraniu opcji  **C++ programowanie wizualizacji mobilnej**opcja **Języki programowania** jest ustawiana na wartość **Zainstaluj C++wizualizację** , a w obszarze **popularne narzędzia i zestawy** SDK są ustawiane, aby instalować wymagane składniki innych firm. Jeśli są potrzebne, możesz wybrać dodatkowe składniki. Domyślnie jest również zaznaczona **Microsoft Visual Studio Emulator for Android** . Składniki, które są już zainstalowane, są nieaktywne na liście.  
+     Domyślnie po wybraniu **Visual C++ opracowywanie aplikacji mobilnych**opcja **Języki programowania** jest ustawiana na zainstaluj **Visual C++**, a opcje  **popularnych narzędzi i zestawów Software Development Kit** są skonfigurowane do instalowania wymaganych składników innych firm. Jeśli są potrzebne, możesz wybrać dodatkowe składniki. Domyślnie jest również zaznaczona **Microsoft Visual Studio Emulator for Android** . Składniki, które są już zainstalowane, są nieaktywne na liście.  
   
-     Aby skompilować aplikacje uniwersalne systemu Windows i udostępnić kod między nimi a projektami z systemami Android i iOS, w obszarze **Wybierz funkcje**rozwiń pozycję **Programowanie dla systemu Windows i sieci Web** i sprawdź **Narzędzia programistyczne dla aplikacji uniwersalnych systemu Windows**. Jeśli nie planujesz kompilowania aplikacji uniwersalnych systemu Windows, możesz pominąć tę opcję.  
+     Aby skompilować aplikacje uniwersalne systemu Windows i udostępnić kod między nimi a projektami z systemami Android i iOS, w obszarze  **Wybierz funkcje**rozwiń pozycję **Programowanie dla systemu Windows i sieci Web** i sprawdź **Narzędzia programistyczne dla aplikacji uniwersalnych systemu Windows**. Jeśli nie planujesz kompilowania aplikacji uniwersalnych systemu Windows, możesz pominąć tę opcję.  
   
      Wybierz pozycję **Dalej**, aby kontynuować.  
   
-3. Składniki innych firm mają własne postanowienia licencyjne. Postanowień licencyjnych można wyświetlić, wybierając link **postanowienia licencyjne** obok każdego składnika. Wybierz pozycję **Zainstaluj** , aby dodać składniki i zainstalować program Visual Studio C++ i wizualizację dla wieloplatformowego opracowywania aplikacji mobilnych.  
+3. Składniki innych firm mają własne postanowienia licencyjne. Postanowień licencyjnych można wyświetlić, wybierając link **postanowienia licencyjne** obok każdego składnika. Wybierz pozycję **Zainstaluj** , aby dodać składniki i zainstalować program Visual Studio i Visual C++ dla opracowywania aplikacji mobilnych na wiele platform.  
   
 4. Po zakończeniu instalacji zamknij Instalatora, a następnie uruchom ponownie komputer. Niektóre akcje Instalatora dla składników innych firm nie zaczynają obowiązywać do momentu ponownego uruchomienia komputera.  
   
@@ -82,13 +82,13 @@ Wizualizacja C++ dla wieloplatformowego opracowywania aplikacji mobilnych (https
     > [!NOTE]
     > Jeśli komputer lub Twoja wersja systemu Windows nie obsługuje funkcji Hyper-V, nie można użyć składnika Microsoft Visual Studio Emulator for Android. Wersja Home Edition systemu Windows nie obejmuje obsługi funkcji Hyper-V.  
   
-5. Otwórz program Visual Studio. W przypadku korzystania z programu Visual Studio po raz pierwszy może upłynąć trochę czasu, aby skonfigurować i zalogować się. Gdy program Visual Studio jest gotowy, w menu **Narzędzia** wybierz opcję **rozszerzenia i aktualizacje**, **aktualizacje**. Jeśli istnieją aktualizacje programu Visual Studio dla wizualizacji C++ na potrzeby programowania aplikacji mobilnych dla wielu Platform lub Microsoft Visual Studio Emulator for Android, zainstaluj je.  
+5. Otwórz program Visual Studio. W przypadku korzystania z programu Visual Studio po raz pierwszy może upłynąć trochę czasu, aby skonfigurować i zalogować się. Gdy program Visual Studio jest gotowy, w menu **Narzędzia** wybierz opcję **rozszerzenia i aktualizacje**, **aktualizacje**. Jeśli są dostępne aktualizacje programu Visual Studio dla Visual C++ dla opracowywania aplikacji mobilnych na wiele platform lub Microsoft Visual Studio Emulator for Android, zainstaluj je.  
   
-## <a name="InstallForiOS"></a>Zainstaluj narzędzia dla systemu iOS  
- Możesz użyć wizualizacji C++ do wieloplatformowego opracowywania aplikacji mobilnych, aby edytować, debugować i wdrażać kod systemu iOS w symulatorze systemu iOS lub na urządzeniu z systemem iOS, ale z powodu ograniczeń licencjonowania kod musi być skompilowany zdalnie na komputerze Mac. Aby kompilować i uruchamiać aplikacje dla systemu iOS przy użyciu programu Visual Studio, należy skonfigurować i skonfigurować agenta zdalnego na komputerze Mac. Szczegółowe instrukcje dotyczące instalacji, wymagania wstępne i opcje konfiguracji znajdują się w temacie [Instalowanie i Konfigurowanie narzędzi do kompilowania przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Jeśli nie tworzysz dla systemu iOS, możesz pominąć ten krok.  
+## <a name="install-tools-for-ios"></a><a name="InstallForiOS"></a> Zainstaluj narzędzia dla systemu iOS  
+ Za pomocą Visual C++ dla opracowywania aplikacji mobilnych na wiele platform do edytowania, debugowania i wdrażania kodu systemu iOS w symulatorze systemu iOS lub na urządzeniu z systemem iOS, ale ze względu na ograniczenia licencjonowania, kod musi być skompilowany zdalnie na komputerze Mac. Aby kompilować i uruchamiać aplikacje dla systemu iOS przy użyciu programu Visual Studio, należy skonfigurować i skonfigurować agenta zdalnego na komputerze Mac. Szczegółowe instrukcje dotyczące instalacji, wymagania wstępne i opcje konfiguracji znajdują się w temacie [Instalowanie i Konfigurowanie narzędzi do kompilowania przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Jeśli nie tworzysz dla systemu iOS, możesz pominąć ten krok.  
   
-## <a name="ThirdParty"></a>Ręczne instalowanie lub aktualizowanie zależności  
- Jeśli użytkownik zdecyduje się nie instalować co najmniej jednej zależności innej firmy przy użyciu Instalatora programu Visual Studio podczas instalacji opcji tworzenia C++ aplikacji mobilnej dla urządzeń przenośnych, można zainstalować je później, wykonując kroki opisane w temacie [Instalowanie narzędzi](#InstallTheTools). Można także zainstalować lub zaktualizować je niezależnie od programu Visual Studio.  
+## <a name="install-or-update-dependencies-manually"></a><a name="ThirdParty"></a> Ręczne instalowanie lub aktualizowanie zależności  
+ Jeśli użytkownik zdecyduje się nie instalować co najmniej jednej zależności innej firmy przy użyciu Instalatora programu Visual Studio po zainstalowaniu opcji Visual C++ Mobile Development, można zainstalować je później, wykonując kroki opisane w temacie [Instalowanie narzędzi](#InstallTheTools). Można także zainstalować lub zaktualizować je niezależnie od programu Visual Studio.  
   
 > [!CAUTION]
 > Zależności można zainstalować w dowolnej kolejności, z wyjątkiem języka Java. Przed zainstalowaniem Android SDK należy zainstalować i skonfigurować JDK.  
@@ -107,7 +107,7 @@ Wizualizacja C++ dla wieloplatformowego opracowywania aplikacji mobilnych (https
   
    Aby korzystać z niektórych emulatorów systemu Android, które są dostarczane z Android SDK, należy zainstalować opcjonalne sterowniki Intel HAXM. Może być konieczne usunięcie funkcji Hyper-V z systemu Windows w celu pomyślnego zainstalowania sterowników Intel HAXM. Funkcja Hyper-V musi zostać przywrócona, aby można było używać emulatorów Windows Phone i Microsoft Visual Studio Emulator for Android.  
   
-- [Zestaw Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
+- [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
   
    Domyślnie Instalator umieszcza zestaw Android NDK w C:\ProgramData\Microsoft\AndroidNDK. Możesz ponownie pobrać i zainstalować zestaw Android NDK, aby zaktualizować instalację NDK.  
   
@@ -125,14 +125,14 @@ Wizualizacja C++ dla wieloplatformowego opracowywania aplikacji mobilnych (https
   
 1. Na pasku menu programu Visual Studio wybierz pozycję **Narzędzia**, **Opcje**.  
   
-2. W oknie dialogowym **Opcje** rozwiń pozycję **Międzyplatformowe**, **C++** a następnie wybierz pozycję **Android**.  
+2. W oknie dialogowym **Opcje** rozwiń pozycję **Międzyplatformowe**, **C++** i wybierz pozycję **Android**.  
   
      ![Opcje ścieżek narzędzi systemu Android](../cross-platform/media/cppmdd-options-android.PNG "CPPMDD_Options_Android")  
   
-3. Aby zmienić ścieżkę używaną przez narzędzie, zaznacz pole wyboru obok ścieżki i Edytuj ścieżkę folderu w polu tekstowym. Możesz również użyć przycisku przeglądania ( **...** ), aby otworzyć okno dialogowe **Wybieranie lokalizacji** w celu wybrania folderu.  
+3. Aby zmienić ścieżkę używaną przez narzędzie, zaznacz pole wyboru obok ścieżki i Edytuj ścieżkę folderu w polu tekstowym. Możesz również użyć przycisku przeglądania (**...**), aby otworzyć okno dialogowe **Wybieranie lokalizacji** w celu wybrania folderu.  
   
 4. Wybierz **przycisk OK** , aby zapisać lokalizacje folderów narzędzi niestandardowych.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instalowanie i Konfigurowanie narzędzi do kompilowania przy użyciu  systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
- [Wizualizacja C++ międzyplatformowa dla urządzeń przenośnych](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)
+ [Instalowanie i Konfigurowanie narzędzi do kompilowania przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
+ [Visual C++ aplikacji mobilnych na wiele platform](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)

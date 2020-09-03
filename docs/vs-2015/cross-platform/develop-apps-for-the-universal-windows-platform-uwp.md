@@ -10,20 +10,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b3f38f519444de7876046baf242f74a18b8c5a59
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844366"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Uniwersalnej platformy Windows i naszych jednego rdzenia Windows umożliwia uruchamianie tę samą aplikację na dowolnym urządzeniu z systemem Windows 10 z telefonów do komputerów stacjonarnych. Tworzenie aplikacji Windows Universal za pomocą programu Visual Studio 2015 i narzędzi Universal Windows App Development.
+Dzięki platforma uniwersalna systemu Windows i naszym jednemu rdzeńowi systemu Windows można uruchomić tę samą aplikację na dowolnym urządzeniu z systemem Windows 10 z telefonów na komputerach stacjonarnych. Twórz te aplikacje uniwersalne systemu Windows za pomocą programu Visual Studio 2015 i narzędzi do tworzenia aplikacji uniwersalnych systemu Windows.
 
  ![Platforma uniwersalna systemu Windows](../cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")
 
- Uruchom aplikację na telefonie z systemem Windows 10, system Windows 10 desktop lub konsoli Xbox. To ten sam pakiet aplikacji! Wraz z wprowadzeniem core systemu Windows 10 w pojedynczą, jednolitą jednego pakietu aplikacji można uruchamiać na wszystkich platformach. Różnych platform mają zestawów SDK rozszerzeń, które można dodać do aplikacji, aby skorzystać z zachowań określonych platform. Na przykład zestawu SDK rozszerzenia dla urządzeń przenośnych obsługuje przycisku Wstecz naciśniętym na urządzeniu z systemem Windows phone. Jeśli odwołujesz rozszerzenie SDK w projekcie, wystarczy dodać testy środowiska uruchomieniowego, aby sprawdzić, czy ten zestaw SDK jest dostępny na tej platformie. To, jak może mieć ten sam pakiet aplikacji dla każdej platformy.
+ Uruchom aplikację na telefonie z systemem Windows 10, Windows 10 Desktop lub Xbox. Jest to ten sam pakiet aplikacji. Wraz z wprowadzeniem pojedynczego, ujednoliconego rdzeń systemu Windows 10 jeden pakiet aplikacji może być uruchamiany na wszystkich platformach. Kilka platform zawiera zestawy SDK rozszerzeń, które można dodać do aplikacji, aby korzystać z zachowań specyficznych dla platformy. Na przykład zestaw SDK rozszerzenia dla urządzeń przenośnych obsługuje naciśnięcie przycisku Wstecz w systemie Windows Phone. Jeśli odwołujesz się do zestawu SDK rozszerzenia w projekcie, po prostu Dodaj testy środowiska uruchomieniowego, aby sprawdzić, czy ten zestaw SDK jest dostępny na tej platformie. Oznacza to, że możesz mieć ten sam pakiet aplikacji dla każdej platformy.
 
  **Co to jest rdzeń systemu Windows?**
 
@@ -40,7 +40,7 @@ Uniwersalnej platformy Windows i naszych jednego rdzenia Windows umożliwia uruc
 
 - [Windows 10](https://windows.microsoft.com/windows/downloads)
 
-- [Visual Studio 2015](https://visualstudio.microsoft.com/downloads/). Upewnij się, że na liście funkcje opcjonalne są wybrane narzędzia programistyczne dla aplikacji uniwersalnych systemu Windows. Bez tych narzędzi nie będziesz mieć możliwości tworzenia aplikacji uniwersalnych.
+- [Program Visual Studio 2015](https://visualstudio.microsoft.com/downloads/). Upewnij się, że na liście funkcje opcjonalne są wybrane narzędzia programistyczne dla aplikacji uniwersalnych systemu Windows. Bez tych narzędzi nie będziesz mieć możliwości tworzenia aplikacji uniwersalnych.
 
   Po zainstalowaniu tego oprogramowania musisz [włączyć urządzenie z systemem Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) na potrzeby programowania. (W przypadku każdego urządzenia z systemem Windows 10 nie jest już wymagana licencja dewelopera).
 
@@ -55,7 +55,7 @@ Uniwersalnej platformy Windows i naszych jednego rdzenia Windows umożliwia uruc
   Projektanta XAML można używać tylko wtedy, gdy platforma deweloperskia jest w systemie Windows 10.
 
 ## <a name="universal-windows-apps"></a>Aplikacje uniwersalne systemu Windows
- Wybierz preferowany język programistyczny C#od, Visual Basic C++ lub JavaScript, aby [utworzyć uniwersalną aplikację systemu Windows dla urządzeń z systemem Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Lub obejrzyj [to wideo z wprowadzeniem](https://channel9.msdn.com/Series/ConnectOn-Demand/229).
+ Wybierz preferowany język programowania w języku C#, Visual Basic, C++ lub JavaScript, aby [utworzyć uniwersalną aplikację systemu Windows dla urządzeń z systemem Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Lub obejrzyj [to wideo z wprowadzeniem](https://channel9.msdn.com/Series/ConnectOn-Demand/229).
 
  Jeśli masz istniejące aplikacje ze sklepu Windows 8,1, aplikacje Windows Phone 8,1 lub aplikacje uniwersalne systemu Windows utworzone za pomocą programu Visual Studio 2015 RC, należy [przenieść te istniejące aplikacje](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) , aby używały najnowszych platforma uniwersalna systemu Windows.
 

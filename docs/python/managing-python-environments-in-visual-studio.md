@@ -10,10 +10,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 1b6782a95793f222ba15fe8f928ecd9d7337c90f
-ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87913310"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak tworzyć środowiska Python i zarządzać nimi w programie Visual Studio
@@ -159,12 +159,12 @@ Program Visual Studio udostępnia również polecenie generowania pliku *require
 
     | Pole | Opis |
     | --- | --- |
-    | Project | Projekt, w którym ma zostać utworzone środowisko (Jeśli masz wiele projektów w tym samym rozwiązaniu programu Visual Studio). |
+    | Projekt | Projekt, w którym ma zostać utworzone środowisko (Jeśli masz wiele projektów w tym samym rozwiązaniu programu Visual Studio). |
     | Nazwa | Nazwa środowiska Conda. |
     | Dodaj pakiety z | Wybierz **plik środowiska** , jeśli masz plik *Environment. yml* opisujący zależności lub wybierz co najmniej **jedną nazwę pakietu Anaconda** i Wyświetl co najmniej jeden pakiet w języku Python lub wersję języka Python w polu poniżej. Lista pakietów instruuje Conda o utworzeniu środowiska języka Python. Aby zainstalować najnowszą wersję środowiska Python, użyj programu `python` ; Aby zainstalować określoną wersję, użyj `python=,major>.<minor>` programu jako wersji `python=3.7` . Możesz również użyć przycisku pakiet, aby wybrać wersje środowiska Python i wspólne pakiety z serii menu. |
     | Ustaw jako bieżące środowisko | Aktywuje nowe środowisko w wybranym projekcie po utworzeniu środowiska. |
     | Ustaw jako domyślne środowisko dla nowych projektów | Automatycznie ustawia i aktywuje środowisko Conda w każdym nowym projekcie utworzonym w programie Visual Studio. Ta opcja jest taka sama jak w przypadku korzystania z **tego ustawienia domyślne środowisko dla nowych projektów** w oknie **środowiska języka Python** . |
-    | Wyświetl w oknie środowiska języka Python | Określa, czy okno **środowiska języka Python** ma być wyświetlane po utworzeniu środowiska. |
+    | Wyświetl w oknie środowiska języka Python | Określa, czy okno  **środowiska języka Python** ma być wyświetlane po utworzeniu środowiska. |
 
     > [!Important]
     > Podczas tworzenia środowiska Conda należy określić co najmniej jedną wersję języka Python lub pakiet języka Python przy użyciu albo `environments.yml` listy pakietów, co zapewnia, że środowisko zawiera środowisko uruchomieniowe języka Python. W przeciwnym razie program Visual Studio zignoruje środowisko: środowisko nie pojawia się w dowolnym miejscu okna **środowiska języka Python** , nie jest ustawiane jako bieżące środowisko dla projektu i nie jest dostępne jako środowisko globalne.
@@ -225,7 +225,7 @@ Wykonaj następujące kroki, aby zidentyfikować środowisko zainstalowane w lok
 
 1. Gdy pola zawierają odpowiednie wartości, wybierz pozycję **Zastosuj** , aby zapisać konfigurację. Możesz teraz używać środowiska, takiego jak dowolne inne w programie Visual Studio.
 
-1. Jeśli musisz usunąć ręcznie zidentyfikowane środowisko, wybierz polecenie **Usuń** na karcie **Konfiguracja** . automatycznie wykryte środowiska nie zapewniają tej opcji. Aby uzyskać więcej informacji, zobacz [Konfigurowanie karty](python-environments-window-tab-reference.md#configure-tab).
+1. Jeśli musisz usunąć ręcznie zidentyfikowane środowisko, wybierz polecenie **Usuń** na karcie **Konfiguracja** . Środowiska wykryte przez Autowykrywanie nie zapewniają tej opcji. Aby uzyskać więcej informacji, zobacz [Konfigurowanie karty](python-environments-window-tab-reference.md#configure-tab).
 
 ::: moniker-end
 
@@ -272,7 +272,7 @@ Aby poprawić środowisko, w którym nie jest dostępna opcja naprawy lub aby us
     - Jeśli środowisko nie istnieje już na komputerze i chcesz je usunąć z okna **środowiska języka Python** , Usuń węzeł nadrzędny **InstallPath**, taki jak **3,6** na powyższym obrazie.
     - Nieprawidłowe ustawienia w **HKEY_CURRENT_USER \software\python** zastąpić ustawienia w **HKEY_LOCAL_MACHINE \software\python**
     
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instalowanie interpreterów języka Python](installing-python-interpreters.md)
 - [Wybieranie interpretera dla projektu](selecting-a-python-environment-for-a-project.md)

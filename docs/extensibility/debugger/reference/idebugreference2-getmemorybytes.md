@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetMemoryBytes | Dokumenty firmy Microsoft
+title: 'IDebugReference2:: GetMemoryBytes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 958c38d6650c7152efef9fe72481a46a70090660
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720600"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
-Pobiera bajtów pamięci, które fizycznie zawierają wartość odwołania. Zarezerwowane do użytku w przyszłości.
+Pobiera bajty pamięci, które fizycznie zawierają wartość odwołania. Zarezerwowane do użytku w przyszłości.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,7 +41,7 @@ int GetMemoryBytes ( 
 
 ## <a name="parameters"></a>Parametry
 `ppMemoryBytes`\
-[na zewnątrz] Zwraca obiekt [IDebugMemoryBytes2,](../../../extensibility/debugger/reference/idebugmemorybytes2.md) który może służyć do pobierania pamięci zawierającej wartość odwołania.
+określoną Zwraca obiekt [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) , którego można użyć do pobrania pamięci, która zawiera wartość odwołania.
 
 ## <a name="return-value"></a>Wartość zwracana
  Zawsze zwraca wartość `E_NOTIMPL`.

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d0dcfc5724e87d57d2803b9b64a6eb121314b99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655043"
 ---
 # <a name="customizing-deletion-behavior"></a>Dostosowywanie zachowania dotyczącego usuwania
@@ -37,11 +37,11 @@ Usunięcie elementu zwykle powoduje również usunięcie powiązanych elementów
 
 - [Reguły usuwania](#rules) — używanie reguł do propagowania aktualizacji dowolnego rodzaju w sklepie, w przypadku których jedna zmiana może prowadzić do innych operacji.
 
-- [Zdarzenia usuwania](#rules) — używanie zdarzeń ze sklepu do propagowania aktualizacji poza magazynem, na przykład do innych dokumentów [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+- [Zdarzenia usuwania](#rules) — używanie zdarzeń ze sklepu do propagowania aktualizacji poza magazynem, na przykład do innych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dokumentów.
 
 - Cofnij [scalanie](#unmerge) — Użyj operacji cofania scalania, aby cofnąć operację scalania, która dołączyła element podrzędny do jego elementu nadrzędnego.
 
-## <a name="default"></a>Domyślne zachowanie usuwania
+## <a name="default-deletion-behavior"></a><a name="default"></a> Domyślne zachowanie usuwania
  Domyślnie następujące reguły regulują propagację usuwania:
 
 - Jeśli element zostanie usunięty, wszystkie osadzone elementy również zostaną usunięte. Elementy osadzone to te, które są obiektami docelowymi relacji osadzania, dla których ten element jest źródłem. Na przykład jeśli istnieje relacja osadzania z **albumu** do **piosenki**, po usunięciu określonego albumu wszystkie jego utwory również zostaną usunięte.
@@ -54,7 +54,7 @@ Usunięcie elementu zwykle powoduje również usunięcie powiązanych elementów
 
 - Każda relacja, która jest połączona z elementem, w roli źródłowej lub docelowej, jest usuwana. Właściwość roli elementu w roli przeciwległej nie zawiera już usuniętego elementu.
 
-## <a name="property"></a>Ustawianie opcji propagowania usuwania roli
+## <a name="setting-the-propagate-delete-option-of-a-role"></a><a name="property"></a> Ustawianie opcji propagowania usuwania roli
  Można spowodować propagowanie operacji usuwania przy użyciu relacji odwołania lub osadzonego elementu podrzędnego z elementem nadrzędnym.
 
 #### <a name="to-set-delete-propagation"></a>Aby ustawić propagację usuwania
@@ -79,8 +79,8 @@ Usunięcie elementu zwykle powoduje również usunięcie powiązanych elementów
 > [!NOTE]
 > Aby dodać kod programu do definicji DSL, Utwórz oddzielny plik kodu w projekcie **DSL** i Zapisz definicje częściowe, aby rozszerzyć klasy w folderze wygenerowanego kodu. Aby uzyskać więcej informacji, zobacz [pisanie kodu w celu dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
-## <a name="closure"></a>Definiowanie zamknięcia usuwania
- Operacja usuwania używa klasy _YourModel_**DeleteClosure** , aby określić, które elementy należy usunąć. Wielokrotnie wywołuje `ShouldVisitRelationship()` i `ShouldVisitRolePlayer()`, przenosząc Graf relacji. Można zastąpić te metody. ShouldVisitRolePlayer jest dostarczany z tożsamością linku i elementem w jednej z ról linku. Powinna zwracać jedną z następujących wartości:
+## <a name="defining-a-delete-closure"></a><a name="closure"></a> Definiowanie zamknięcia usuwania
+ Operacja usuwania używa klasy _YourModel_**DeleteClosure** , aby określić, które elementy należy usunąć. Wywołuje `ShouldVisitRelationship()` i `ShouldVisitRolePlayer()` wielokrotnie, przenosząc Graf relacji. Można zastąpić te metody. ShouldVisitRolePlayer jest dostarczany z tożsamością linku i elementem w jednej z ról linku. Powinna zwracać jedną z następujących wartości:
 
 - **VisitorFilterResult. Yes**— element powinien zostać usunięty i Analizator powinien wykonać próbę wykonania innych linków elementu.
 
@@ -132,18 +132,18 @@ partial class MusicLibDeleteClosure
 
  Jednak w technice przyjęto, że usunięcie ma wpływ tylko na jego sąsiadów na grafie relacji: nie można użyć tej metody do usunięcia elementu w innej części modelu. Nie można jej użyć, jeśli chcesz dodać elementy lub wprowadzić inne zmiany w odpowiedzi na usunięcie.
 
-## <a name="ondeleting"></a>Korzystanie z funkcji onDelete i po usunięciu
- Można przesłonić `OnDeleting()` lub `OnDeleted()` w klasie domeny lub w relacji domeny.
+## <a name="using-ondeleting-and-ondeleted"></a><a name="ondeleting"></a> Korzystanie z funkcji onDelete i po usunięciu
+ Można przesłonić `OnDeleting()` lub `OnDeleted()` albo w klasie domeny, albo w relacji domeny.
 
-1. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> jest wywoływana, gdy element zostanie usunięty, ale zanim jego relacje zostały odłączone. Nadal jest nawigować do i z innych elementów i nadal jest `store.ElementDirectory`.
+1. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> jest wywoływana, gdy element zostanie usunięty, ale zanim jego relacje zostały odłączone. Nadal jest nawigować do i z innych elementów i nadal znajduje się w `store.ElementDirectory` .
 
     Jeśli kilka elementów jest usuniętych w tym samym czasie, to po usunięciu zostanie wywołane wszystkie przed wykonaniem operacji usuwania.
 
     `IsDeleting` ma wartość true.
 
-2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> jest wywoływana, gdy element został usunięty. Pozostaje w stercie środowiska CLR, aby można było wykonać operację cofania w razie potrzeby, ale nie jest ona połączona z innymi elementami i została usunięta z `store.ElementDirectory`. W przypadku relacji role nadal odwołują się do starych graczy ról. `IsDeleted` ma wartość true.
+2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> jest wywoływana, gdy element został usunięty. Pozostaje w stercie środowiska CLR, aby można było wykonać operację cofania w razie potrzeby, ale nie jest on połączony z innymi elementami i został usunięty z `store.ElementDirectory` . W przypadku relacji role nadal odwołują się do starych graczy ról.`IsDeleted` ma wartość true.
 
-3. Po usunięciu elementu i po jego usunięciu są wywoływane, gdy użytkownik wywołuje polecenie Cofnij po utworzeniu obiektu, a wcześniejsze usunięcie zostanie powtórzone w ciągu wykonywania ponownie. Użyj `this.Store.InUndoRedoOrRollback`, aby uniknąć aktualizowania elementów sklepu w takich przypadkach. Aby uzyskać więcej informacji, zobacz [How to: use Transactions to updateing model](../modeling/how-to-use-transactions-to-update-the-model.md).
+3. Po usunięciu elementu i po jego usunięciu są wywoływane, gdy użytkownik wywołuje polecenie Cofnij po utworzeniu obiektu, a wcześniejsze usunięcie zostanie powtórzone w ciągu wykonywania ponownie. Użyj `this.Store.InUndoRedoOrRollback` , aby uniknąć aktualizowania elementów sklepu w takich przypadkach. Aby uzyskać więcej informacji, zobacz [How to: use Transactions to updateing model](../modeling/how-to-use-transactions-to-update-the-model.md).
 
    Na przykład poniższy kod usuwa album, gdy ostatni utwór podrzędny jest usuwany:
 
@@ -197,9 +197,9 @@ partial class Artist
 
 ```
 
- Po wykonaniu <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> na elemencie zostanie wywołane polecenie onDelete, a po jego usunięciu. Te metody są zawsze wykonywane wewnętrznie — to oznacza, bezpośrednio przed i po rzeczywistym usunięciu. Jeśli kod usuwa dwa lub więcej elementów, po ich usunięciu i onDelete zostanie wywołane zamienianie na wszystkie z nich.
+ Po wykonaniu <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> na elemencie zostanie wywołane polecenie onDelete, które zostało usunięte. Te metody są zawsze wykonywane wewnętrznie — to oznacza, bezpośrednio przed i po rzeczywistym usunięciu. Jeśli kod usuwa dwa lub więcej elementów, po ich usunięciu i onDelete zostanie wywołane zamienianie na wszystkie z nich.
 
-## <a name="rules"></a>Reguły usuwania i zdarzenia
+## <a name="deletion-rules-and-events"></a><a name="rules"></a> Reguły usuwania i zdarzenia
  Jako alternatywę dla programów obsługi OnDelete można definiować reguły usuwania i zdarzenia usuwania.
 
 1. **Usuwanie** i **usuwanie** reguł jest wyzwalane tylko w transakcji, a nie w operacji cofania ani ponawiania. Można ustawić, aby były umieszczane w kolejce do wykonania na końcu transakcji, w której jest wykonywane usuwanie. Usuwanie reguł jest zawsze wykonywane przed wszystkimi usuniętymi regułami, które znajdują się w kolejce.
@@ -208,7 +208,7 @@ partial class Artist
 
      Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
-2. **Usunięte** zdarzenie magazynu jest wywoływane na końcu transakcji i jest wywoływane po cofnięciu lub ponowieniu. W związku z tym może służyć do propagowania usunięć do obiektów spoza magazynu, takich jak pliki, wpisy w bazie danych lub inne obiekty w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+2. **Usunięte** zdarzenie magazynu jest wywoływane na końcu transakcji i jest wywoływane po cofnięciu lub ponowieniu. W związku z tym może służyć do propagowania usunięć do obiektów spoza magazynu, takich jak pliki, wpisy w bazie danych lub inne obiekty w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
      Aby uzyskać więcej informacji, zobacz [programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
@@ -289,10 +289,10 @@ partial class NestedShapesSampleDocData
 
 ```
 
-## <a name="unmerge"></a>Anuluj scalenie
+## <a name="unmerge"></a><a name="unmerge"></a> Anuluj scalenie
  Operacja dołączania elementu podrzędnego do jego elementu nadrzędnego jest nazywana *scalaniem*. Występuje po utworzeniu nowego elementu lub grupy elementów z przybornika lub przeniesieniu z innej części modelu lub skopiowaniu ze schowka. Oprócz tworzenia relacji osadzania między elementem nadrzędnym i jego nowym elementem podrzędnym, operacja scalania może również skonfigurować dodatkowe relacje, utworzyć elementy pomocnicze i ustawić wartości właściwości w elementach. Operacja scalania jest hermetyzowana w dyrektywie scalania elementów (EMD).
 
- EMD również hermetyzuje uzupełniające operacje *niescalania* lub `MergeDisconnect`. Jeśli masz klaster elementów, który został skonstruowany przy użyciu scalania, zaleca się użycie skojarzonej operacji unscalenia w celu usunięcia z niej elementu, jeśli chcesz pozostawić pozostałe elementy w spójnym stanie. Operacja rozscalania zwykle używa technik opisanych w poprzednich sekcjach.
+ EMD również hermetyzuje uzupełniające *niescalanie* lub `MergeDisconnect` operację. Jeśli masz klaster elementów, który został skonstruowany przy użyciu scalania, zaleca się użycie skojarzonej operacji unscalenia w celu usunięcia z niej elementu, jeśli chcesz pozostawić pozostałe elementy w spójnym stanie. Operacja rozscalania zwykle używa technik opisanych w poprzednich sekcjach.
 
  Aby uzyskać więcej informacji, zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).
 

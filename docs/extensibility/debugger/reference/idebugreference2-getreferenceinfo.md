@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetReferenceInfo | Dokumenty firmy Microsoft
+title: 'IDebugReference2:: GetReferenceInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4fa198a3ded56a0dd054cf225bfb6b10968d1da3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720423"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
-Pobiera [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struktury, która opisuje odwołanie. Zarezerwowane do użytku w przyszłości.
+Pobiera strukturę [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) , która opisuje odwołanie. Zarezerwowane do użytku w przyszłości.
 
 ## <a name="syntax"></a>Składnia
 
@@ -51,22 +51,22 @@ int GetReferenceInfo ( 
 
 ## <a name="parameters"></a>Parametry
 `dwFields`\
-[w] Kombinacja flag z wyliczenia [DEBUGREF_INFO_FLAGS,](../../../extensibility/debugger/reference/debugref-info-flags.md) które określają pola, które mają być wypełnione w [strukturze DEBUG_REFERENCE_INFO.](../../../extensibility/debugger/reference/debug-reference-info.md)
+podczas Kombinacja flag z wyliczenia [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) , która określa pola do wypełnienia w strukturze [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) .
 
 `nRadix`\
-[w] Radix do wykorzystania w formatowaniu wszelkich informacji liczbowych.
+podczas Podstawy do użycia podczas formatowania wszelkich informacji numerycznych.
 
 `dwTimeout`\
-[w] Maksymalny czas ( w milisekundach) oczekiwania przed zwróceniem tej metody. Służy `INFINITE` do oczekiwania przez czas nieokreślony.
+podczas Maksymalny czas oczekiwania (w milisekundach) przed powrotem z tej metody. Użyj `INFINITE` , aby czekać w nieskończoność.
 
 `rgpArgs`\
-[w] Tablica obiektów [IDebugReference2.](../../../extensibility/debugger/reference/idebugreference2.md) Zarezerwowane do wykorzystania w przyszłości; ustawiona na wartość null.
+podczas Tablica obiektów [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) . Zarezerwowane do użytku w przyszłości; Ustaw wartość null.
 
 `dwArgCount`\
-[w] Liczba argumentów odwołania `rgpArgs` w tablicy. Zarezerwowane do wykorzystania w przyszłości; ustawiona na 0.
+podczas Liczba argumentów odwołania w `rgpArgs` tablicy. Zarezerwowane do użytku w przyszłości; Ustaw wartość 0.
 
 `pReferenceInfo`\
-[na zewnątrz] Struktura [DEBUG_REFERENCE_INFO,](../../../extensibility/debugger/reference/debug-reference-info.md) która jest wypełniona opisem właściwości.
+określoną Struktura [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) , która jest wypełniana opisem właściwości.
 
 ## <a name="return-value"></a>Wartość zwracana
  Zawsze zwraca wartość `E_NOTIMPL`.

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5994e3f5b17f50d707c4c5a00666d60c2efd3184
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711706"
 ---
 # <a name="msbuild-conditions"></a>Warunki programu MSBuild
@@ -64,7 +64,7 @@ Logika logiczna jest obliczana tylko w kontekście warunków, dlatego ustawienia
 
 Program MSBuild implementuje kilka specjalnych reguł przetwarzania, aby ułatwić pracę z właściwościami ciągu, które są używane jako wartości logiczne. Literały logiczne są akceptowane, więc `Condition="true"` i `Condition="false"` działają zgodnie z oczekiwaniami. Program MSBuild zawiera również specjalne reguły obsługujące operator negacji logicznej. Tak więc, jeśli `$(Prop)` ma wartość "true", `!$(Prop)` rozwija się do `!true` i porównywane jest równe `false` , zgodnie z oczekiwaniami.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 - [Konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md)

@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6f11125f43fd06b0442d1c40cbd4da41e346fd1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546461"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: Kod przezroczysty nie może przywoływać elementów krytycznych pod względem zabezpieczeń
@@ -61,7 +61,7 @@ ms.locfileid: "85546461"
 
 - Oznacz element kodu, który używa krytycznego kodu zabezpieczeń z <xref:System.Security.SecurityCriticalAttribute> atrybutem
 
-     \-oraz
+     \- oraz
 
 - Usuń <xref:System.Security.SecurityCriticalAttribute> atrybut z elementów kodu, które są oznaczone jako krytyczne dla zabezpieczeń, a zamiast tego oznacz je <xref:System.Security.SecuritySafeCriticalAttribute> <xref:System.Security.SecurityTransparentAttribute> atrybutem or.
 

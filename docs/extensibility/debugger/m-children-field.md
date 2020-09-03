@@ -1,5 +1,5 @@
 ---
-title: pole m_children | Dokumenty firmy Microsoft
+title: m_children pole | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 07933fd4c9f359e72714600abdf8b4ee29268f84
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738425"
 ---
-# <a name="m_children-field"></a>Pole m_children
-Lista zadań podrzędnych zarejestrowanych w tym zadaniu.
+# <a name="m_children-field"></a>pole m_children
+Lista zadań podrzędnych, które są zarejestrowane w tym zadaniu.
 
- **Obszar nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Montaż:** mscorlib (w *mscorlib.dll*)
+ **Zestaw:** mscorlib (w *mscorlib.dll*)
 
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następująca składnia znajduje się we wspólnym języku pośrednim (CIL).
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,9 +33,9 @@ Lista zadań podrzędnych zarejestrowanych w tym zadaniu.
 ```
 
 ## <a name="remarks"></a>Uwagi
- Gdy zadanie jest uruchomione, tylko wątek, który wykonuje zadanie należy uzyskać dostęp do tej tablicy.
+ Gdy zadanie jest uruchomione, tylko wątek, który wykonuje zadanie, powinien uzyskać dostęp do tej tablicy.
 
- Jeśli zadanie zostało ukończone, inne wątki mogą uzyskać dostęp do tego pola, o ile nie dodają do niego niczego ani nie usuwają niczego z niego.
+ Jeśli zadanie zostanie ukończone, inne wątki mogą uzyskać dostęp do tego pola, o ile nie dodają do niego niczego lub usuwają coś z niego.
 
 ## <a name="see-also"></a>Zobacz też
-- [Klasa Właściwości warunkowe](../../extensibility/debugger/contingentproperties-class-internal-members.md)
+- [Klasa ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)

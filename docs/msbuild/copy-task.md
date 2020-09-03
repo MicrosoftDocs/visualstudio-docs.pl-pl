@@ -1,5 +1,5 @@
 ---
-title: Kopiuj zadanie | Dokumenty firmy Microsoft
+title: Kopiuj zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 28fd0033f5ef6f83ca29432f95d6b635fcd36116
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634373"
 ---
 # <a name="copy-task"></a>Copy — Zadanie
@@ -34,23 +34,23 @@ Kopiowanie plików do nowej lokalizacji w systemie plików.
 
 ## <a name="parameters"></a>Parametry
 
-W poniższej tabeli `Copy` opisano parametry zadania.
+W poniższej tabeli opisano parametry `Copy` zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`CopiedFiles`|Opcjonalny parametr wyjściowy. <xref:Microsoft.Build.Framework.ITaskItem> `[]`<br /><br /> Zawiera elementy, które zostały pomyślnie skopiowane, *w tym* te, które nie zostały faktycznie skopiowane, ale zostały pominięte, ponieważ były już aktualne i `SkipUnchangedFiles` były `true`.|
-|`DestinationFiles`|Parametr <xref:Microsoft.Build.Framework.ITaskItem> `[]` opcjonalny.<br /><br /> Określa listę plików, do których należy skopiować pliki źródłowe. Ta lista powinna być zmapowana jeden-do-jednego na listę określoną w parametrze `SourceFiles`. Oznacza to, że pierwszy plik określony w parametrze `SourceFiles` będzie kopiowany do pierwszej lokalizacji określonej w parametrze `DestinationFiles` itd.|
-|`DestinationFolder`|Parametr <xref:Microsoft.Build.Framework.ITaskItem> opcjonalny.<br /><br /> Określa katalog, do którego pliki mają zostać skopiowane. Musi to być katalog, a nie plik. Jeśli katalog nie istnieje, zostanie utworzony automatycznie.|
-|`OverwriteReadOnlyFiles`|Parametr `Boolean` opcjonalny.<br /><br /> Zastępowanie plików następuje nawet wtedy, gdy są oznaczone jako tylko do odczytu.|
-|`Retries`|Parametr `Int32` opcjonalny.<br /><br /> Określa, ile razy należy podjąć próbę kopiowania, jeśli wszystkie poprzednie próby się nie powiodły. Domyślnie przyjmuje wartość zero.<br /><br /> **Uwaga:** Użycie ponownych prób może maskować problem synchronizacji w procesie kompilacji.|
-|`RetryDelayMilliseconds`|Parametr `Int32` opcjonalny.<br /><br /> Określa opóźnienie między kolejnymi niezbędnymi ponownymi próbami. Wartością domyślną jest wartość argumentu RetryDelayMillisecondsDefault, który jest przekazywany do konstruktora CopyTask.|
-|`SkipUnchangedFiles`|Parametr `Boolean` opcjonalny.<br /><br /> Jeśli ma wartość `true`, następuje pomijanie kopiowania plików, które są niezmienione między lokalizacjami źródłowymi i docelowymi. Zadanie `Copy` uznaje pliki za niezmienione, jeśli mają taki sam rozmiar i taki sam czas ostatniej modyfikacji. <br /><br /> **Uwaga:**  Jeśli ten parametr `true`zostanie ustawiony na , nie należy używać analizy zależności na zawierający obiekt docelowy, ponieważ to uruchamia zadanie tylko wtedy, gdy ostatnio zmodyfikowane czasy plików źródłowych są nowsze niż ostatnio zmodyfikowane czasy plików docelowych.|
+|`CopiedFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera elementy, które zostały pomyślnie skopiowane, w *tym* te, które nie zostały faktycznie skopiowane, ale zostały pominięte, ponieważ były już aktualne i `SkipUnchangedFiles` były `true` .|
+|`DestinationFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Określa listę plików, do których należy skopiować pliki źródłowe. Ta lista powinna być zmapowana jeden-do-jednego na listę określoną w parametrze `SourceFiles`. Oznacza to, że pierwszy plik określony w parametrze `SourceFiles` będzie kopiowany do pierwszej lokalizacji określonej w parametrze `DestinationFiles` itd.|
+|`DestinationFolder`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Określa katalog, do którego pliki mają zostać skopiowane. Musi to być katalog, a nie plik. Jeśli katalog nie istnieje, zostanie utworzony automatycznie.|
+|`OverwriteReadOnlyFiles`|Opcjonalny `Boolean` parametr.<br /><br /> Zastępowanie plików następuje nawet wtedy, gdy są oznaczone jako tylko do odczytu.|
+|`Retries`|Opcjonalny `Int32` parametr.<br /><br /> Określa, ile razy należy podjąć próbę kopiowania, jeśli wszystkie poprzednie próby się nie powiodły. Domyślnie przyjmuje wartość zero.<br /><br /> **Uwaga:** Użycie ponownych prób może maskować problem z synchronizacją w procesie kompilacji.|
+|`RetryDelayMilliseconds`|Opcjonalny `Int32` parametr.<br /><br /> Określa opóźnienie między kolejnymi niezbędnymi ponownymi próbami. Wartością domyślną jest wartość argumentu RetryDelayMillisecondsDefault, który jest przekazywany do konstruktora CopyTask.|
+|`SkipUnchangedFiles`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli ma wartość `true`, następuje pomijanie kopiowania plików, które są niezmienione między lokalizacjami źródłowymi i docelowymi. Zadanie `Copy` uznaje pliki za niezmienione, jeśli mają taki sam rozmiar i taki sam czas ostatniej modyfikacji. <br /><br /> **Uwaga:**  Jeśli ustawisz ten parametr na `true` , nie należy używać analizy zależności na elemencie docelowym zawierającym, ponieważ to zadanie działa tylko wtedy, gdy czas ostatniej modyfikacji plików źródłowych jest nowszy niż czas ostatniej modyfikacji plików docelowych.|
 |`SourceFiles`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa pliki do skopiowania.|
-|`UseHardlinksIfPossible`|Parametr `Boolean` opcjonalny.<br /><br /> Jeśli ma wartość `true`, będą tworzone twarde łącza do kopiowanych plików zamiast kopiowania plików.|
+|`UseHardlinksIfPossible`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli ma wartość `true`, będą tworzone twarde łącza do kopiowanych plików zamiast kopiowania plików.|
 
 ## <a name="warnings"></a>Ostrzeżenia
 
-Rejestrowane są ostrzeżenia, w tym:
+Ostrzeżenia są rejestrowane, w tym:
 
 - `Copy.DestinationIsDirectory`
 
@@ -72,11 +72,11 @@ Rejestrowane są ostrzeżenia, w tym:
 
 Musi być określony parametr `DestinationFolder` lub `DestinationFiles`, ale nie oba. W razie podania obu parametrów zadanie nie powiedzie się i zostanie zarejestrowany błąd.
 
-Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
+Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład kopiuje `MySourceFiles` elementy w kolekcji elementów do folderu *c:\MyProject\Destination*.
+Poniższy przykład kopiuje elementy z `MySourceFiles` kolekcji Item do folderu *c:\MyProject\Destination*.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -97,7 +97,7 @@ Poniższy przykład kopiuje `MySourceFiles` elementy w kolekcji elementów do fo
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład ilustruje, jak wykonać kopiowanie cykliczne. Ten projekt kopiuje wszystkie pliki rekursywnie z *c:\MySourceTree* do *c:\MyDestinationTree*, przy zachowaniu struktury katalogów.
+Poniższy przykład ilustruje, jak wykonać kopiowanie cykliczne. Ten projekt kopiuje wszystkie pliki cyklicznie z *c:\MySourceTree* do *c:\MyDestinationTree*przy zachowaniu struktury katalogów.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -119,4 +119,4 @@ Poniższy przykład ilustruje, jak wykonać kopiowanie cykliczne. Ten projekt ko
 ## <a name="see-also"></a>Zobacz też
 
 - [Zadania](../msbuild/msbuild-tasks.md)
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

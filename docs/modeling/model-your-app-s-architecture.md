@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 449f528264f2101a45bc809a5002ce4e88659d05
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711732"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelowanie aplikacji&#39;s architektura
@@ -102,7 +102,7 @@ Aby zapewnić, że system oprogramowania lub aplikacja spełnia potrzeby użytko
 
 - Opis wariantów, które mogą być w stanie zastosować deweloperzy.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie wizualizacji kodu](../modeling/visualize-code.md)
 - [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)

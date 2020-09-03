@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b72f419331b2a02c55d885a2b8855070698879a
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78167614"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Błędy narzędzi plik FxCopCmd
@@ -54,4 +54,4 @@ W poniższej tabeli opisano kody błędów zwracane przez plik FxCopCmd:
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Błędy zgłaszane przez aplikację do analizy kodu](../code-quality/code-analysis-application-errors.md)
+- [Błędy aplikacji analizy kodu](../code-quality/code-analysis-application-errors.md)

@@ -1,5 +1,5 @@
 ---
-title: CreateProperty — zadanie | Dokumentacja firmy Microsoft
+title: Zadanie właściwości | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,30 +20,30 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ea16950e47760e89204503413fd98811e781d059
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184058"
 ---
 # <a name="createproperty-task"></a>CreateProperty — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zostaną wyświetlone wszystkie właściwości wartości przekazane. Dzięki temu wartości, które mają być kopiowane z jedną właściwość lub ciągu do innego.  
+Wypełnia właściwości wartościami z przekazaną. Pozwala to na kopiowanie wartości z jednej właściwości lub ciągu do innej.  
   
 ## <a name="attributes"></a>Atrybuty  
  W poniższej tabeli opisano parametry `CreateProperty` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`Value`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Określa wartość do skopiowania do nowej właściwości.|  
-|`ValueSetByTask`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Zawiera taką samą wartość jak `Value` parametru. Użyj tego parametru, tylko wtedy, gdy chcesz uniknąć dane wyjściowe właściwością [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] po pomija otaczającego element docelowy, ponieważ dane wyjściowe są aktualne.|  
+|`Value`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Określa wartość, która ma zostać skopiowana do nowej właściwości.|  
+|`ValueSetByTask`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Zawiera tę samą wartość, co `Value` parametr. Tego parametru należy użyć tylko wtedy, gdy nie ma właściwości Output ustawionej przez, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] gdy pomija otaczający element docelowy, ponieważ dane wyjściowe są aktualne.|  
   
 ## <a name="remarks"></a>Uwagi  
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie użyto `CreateProperty` zadania do utworzenia `NewFile` przy użyciu kombinacji wartości właściwości `SourceFilename` i `SourceFileExtension` właściwości.  
+ W poniższym przykładzie użyto `CreateProperty` zadania do utworzenia `NewFile` właściwości przy użyciu kombinacji wartości `SourceFilename` `SourceFileExtension` właściwości i.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -67,7 +67,7 @@ Zostaną wyświetlone wszystkie właściwości wartości przekazane. Dzięki tem
 </Project>  
 ```  
   
- Po uruchomieniu projektu, a wartość `NewFile` właściwość `Module1.vb`.  
+ Po uruchomieniu projektu wartość `NewFile` właściwości jest `Module1.vb` .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   

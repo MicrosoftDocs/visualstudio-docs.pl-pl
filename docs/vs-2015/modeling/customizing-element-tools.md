@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b6b35bbb0592f7ec9f8defcd9d78dbba5a6a47a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655021"
 ---
 # <a name="customizing-element-tools"></a>Narzędzia dostosowywania elementów
@@ -24,7 +24,7 @@ Niektóre definicje DSL reprezentują pojedyncze koncepcje jako grupę elementó
  Można również zastąpić to, co się dzieje, gdy narzędzie zostanie przeciągnięte na diagram lub element.
 
 ## <a name="customizing-the-content-of-an-element-tool"></a>Dostosowywanie zawartości narzędzia elementu
- Każde narzędzie elementu przechowuje wystąpienie <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), które zawiera serializowaną wersję co najmniej jednego elementu modelu i linki. Domyślnie EGP narzędzia elementu zawiera jedno wystąpienie klasy, która jest określona dla narzędzia. Możesz to zmienić, zastępując `ToolboxHelper.CreateElementToolPrototype` *YourLanguage* . Ta metoda jest wywoływana, gdy jest ładowany pakiet DSL.
+ Każde narzędzie elementu przechowuje wystąpienie elementu <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), które zawiera serializowaną wersję co najmniej jednego elementu modelu i linków. Domyślnie EGP narzędzia elementu zawiera jedno wystąpienie klasy, która jest określona dla narzędzia. Możesz to zmienić, zastępując *YourLanguage* `ToolboxHelper.CreateElementToolPrototype` . Ta metoda jest wywoływana, gdy jest ładowany pakiet DSL.
 
  Parametr metody jest IDENTYFIKATORem klasy, która została określona w definicji DSL. Gdy metoda jest wywoływana z klasą, która Cię interesuje, można dodać dodatkowe elementy do EGP.
 

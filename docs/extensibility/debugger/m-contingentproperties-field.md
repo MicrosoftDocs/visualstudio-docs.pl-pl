@@ -1,5 +1,5 @@
 ---
-title: pole m_contingentProperties | Dokumenty firmy Microsoft
+title: m_contingentProperties pole | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c216a99042a3b9b67eaa0dc13555c27a1e8bfad9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738416"
 ---
-# <a name="m_contingentproperties-field"></a>Pole m_contingentProperties
+# <a name="m_contingentproperties-field"></a>pole m_contingentProperties
 Przechowuje dodatkowe właściwości <xref:System.Threading.Tasks.Task> obiektu.
 
- **Obszar nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Montaż:** mscorlib (w *mscorlib.dll*)
+ **Zestaw:** mscorlib (w *mscorlib.dll*)
 
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następująca składnia znajduje się we wspólnym języku pośrednim (CIL).
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,4 +35,4 @@ Przechowuje dodatkowe właściwości <xref:System.Threading.Tasks.Task> obiektu.
 ## <a name="remarks"></a>Uwagi
 
 ## <a name="see-also"></a>Zobacz też
-- [Klasa zadań](../../extensibility/debugger/task-class-internal-members.md)
+- [Klasa zadania](../../extensibility/debugger/task-class-internal-members.md)

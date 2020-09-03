@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::Porównaj | Dokumenty firmy Microsoft
+title: 'IDebugReference2:: Compare | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0d293fcb89c92a19acc4f5a3910015914ef4231a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720642"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
-Porównuje jedno odwołanie do drugiego. Zarezerwowane do użytku w przyszłości.
+Porównuje jedno odwołanie z drugim. Zarezerwowane do użytku w przyszłości.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,10 +43,10 @@ int Compare ( 
 
 ## <a name="parameters"></a>Parametry
 `dwCompare`\
-[w] Wartość z [wyliczenia REFERENCE_COMPARE,](../../../extensibility/debugger/reference/reference-compare.md) która określa operację porównania, na przykład, równa, mniejsza niż lub większa niż.
+podczas Wartość z wyliczenia [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) , która określa operacje porównania, na przykład równe, mniejsze niż lub większe niż.
 
 `pReference`\
-[w] [Obiekt IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) reprezentujący odwołanie, z którego należy porównać.
+podczas Obiekt [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) reprezentujący odwołanie, które ma zostać porównane z.
 
 ## <a name="return-value"></a>Wartość zwracana
  Zawsze zwraca wartość `E_NOTIMPL`.
