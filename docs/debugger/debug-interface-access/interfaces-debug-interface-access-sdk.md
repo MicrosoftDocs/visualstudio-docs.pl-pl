@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 902a3d361eb06288a0e50e9f384b67a2a8c61aa1
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461274"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)
@@ -168,4 +168,4 @@ Opisuje stałe dostępne w DIA SDK.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Tematy pomocy](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+- [Odwołanie](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3be233ce8730879c2f0406ec9cc180685992c6bf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544940"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Obsługiwane wersje programu Visual Studio dla zestawu Visualization & Modeling SDK
@@ -35,7 +35,7 @@ Aby zdefiniować DSL, należy zainstalować następujące składniki:
 
 ## <a name="deployment-editions"></a>Wersje wdrożenia
 
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]Program obsługuje następujące konfiguracje wdrażania utworzonych języków specyficznych dla domeny:
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Program obsługuje następujące konfiguracje wdrażania utworzonych języków specyficznych dla domeny:
 
 - Visual Studio Enterprise
 
@@ -48,6 +48,6 @@ Aby zdefiniować DSL, należy zainstalować następujące składniki:
 > [!NOTE]
 > Aby można było uruchomić interfejs DSL w produkcie powłoki, należy ustawić pole **obsługiwanego programu vs Edition** w manifeście rozszerzenia. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

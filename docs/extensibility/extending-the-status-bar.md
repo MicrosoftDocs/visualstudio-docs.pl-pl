@@ -1,5 +1,5 @@
 ---
-title: Rozszerzanie paska stanu | Dokumenty firmy Microsoft
+title: Rozszerzanie paska stanu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,29 +12,29 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aa62326d82d81f7ee4d10a838209364355cc488e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711541"
 ---
-# <a name="extend-the-status-bar"></a>Rozszerzanie paska stanu
-Można użyć paska stanu programu Visual Studio u dołu IDE do wyświetlania informacji.
+# <a name="extend-the-status-bar"></a>Rozwiń pasek stanu
+Aby wyświetlić informacje, można użyć paska stanu programu Visual Studio znajdującego się u dołu IDE.
 
- Po rozszerzeniu paska stanu można wyświetlać informacje i interfejs użytkownika w czterech regionach: regionie opinii, pasku postępu, regionie animacji i regionie projektanta. Obszar sprzężenia zwrotnego umożliwia wyświetlanie tekstu i wyróżnianie wyświetlanego tekstu. Pasek postępu pokazuje przyrostowy postęp dla operacji krótkokładowych, takich jak zapisywanie pliku. Region animacji wyświetla animację w pętli w pętli dla długotrwałych operacji lub operacji o nieokreślonej długości, takich jak tworzenie wielu projektów w rozwiązaniu. Region projektanta pokazuje numer linii i kolumny lokalizacji kursora.
+ Rozszerzając pasek stanu, można wyświetlić informacje i interfejs użytkownika w czterech regionach: region opinii, pasek postępu, region animacji oraz region projektanta. Region opinii umożliwia wyświetlenie tekstu i wyróżnienie wyświetlanego tekstu. Pasek postępu pokazuje przyrostowy postęp dla krótko działających operacji, takich jak zapisywanie pliku. W regionie animacji jest wyświetlana ciągła pętla pętli dla długotrwałych operacji lub operacji o nieokreślonej długości, takich jak kompilowanie wielu projektów w rozwiązaniu. Natomiast region projektanta pokazuje numer wiersza i kolumny lokalizacji kursora.
 
- Pasek stanu można uzyskać za <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> pomocą interfejsu <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> (z usługi). Ponadto każdy obiekt umiejscowiony w ramce okna może zarejestrować się <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> jako obiekt klienta paska stanu, implementując interfejs. Za każdym razem, gdy okno jest aktywowane, Visual Studio `IVsStatusbarUser` wysyła zapytanie do obiektu umiejscowionego w tym oknie dla interfejsu. Jeśli zostanie znaleziony, <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> wywołuje metodę na zwróconym interfejsie i obiekt może zaktualizować pasek stanu z poziomu tej metody. Okna dokumentu, na przykład, <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> można użyć metody, aby zaktualizować informacje w regionie projektanta, gdy stają się aktywne.
+ Pasek stanu można uzyskać przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> interfejsu (z <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> usługi). Ponadto każdy obiekt zlokalizowany w ramce okna może być zarejestrowany jako obiekt klienta paska stanu przez implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> interfejsu. Za każdym razem, gdy okno jest aktywowane, program Visual Studio wysyła zapytanie do obiektu zlokalizowanego w tym oknie dla `IVsStatusbarUser` interfejsu. Jeśli ta wartość zostanie znaleziona, wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> metodę w zwracanym interfejsie, a obiekt może zaktualizować pasek stanu z poziomu tej metody. Okna dokumentów, na przykład, mogą używać <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> metody do aktualizowania informacji w regionie projektanta, gdy staną się aktywne.
 
- W poniższych procedurach przyjęto założenie, że rozumiesz, jak utworzyć projekt VSIX i dodać polecenie menu niestandardowego. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+ W poniższych procedurach założono, że rozumiesz, jak utworzyć projekt VSIX i dodać niestandardowe polecenie menu. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-## <a name="modify-the-status-bar"></a>Modyfikowanie paska stanu
- W tej procedurze pokazano, jak ustawić i uzyskać tekst, wyświetlić tekst statyczny i wyróżnić wyświetlany tekst w regionie opinii paska stanu.
+## <a name="modify-the-status-bar"></a>Modyfikuj pasek stanu
+ Ta procedura pokazuje, jak ustawić i pobrać tekst, wyświetlić tekst statyczny i podświetlić wyświetlany tekst w obszarze opinii na pasku stanu.
 
 ### <a name="read-and-write-to-the-status-bar"></a>Odczyt i zapis na pasku stanu
 
-1. Utwórz projekt VSIX o nazwie **TestStatusBarExtension** i dodaj polecenie menu o nazwie **TestStatusBarCommand**.
+1. Utwórz projekt VSIX o nazwie **TestStatusBarExtension** i Dodaj polecenie menu o nazwie **TestStatusBarCommand**.
 
-2. W *TestStatusBarCommand.cs*, zastąp kod`MenuItemCallback`metody obsługi poleceń ( ) następującymi:
+2. W *TestStatusBarCommand.cs*Zastąp kod metody procedury obsługi polecenia ( `MenuItemCallback` ) następującym:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -68,17 +68,17 @@ Można użyć paska stanu programu Visual Studio u dołu IDE do wyświetlania in
     }
     ```
 
-3. Skompiluj kod i rozpocznij debugowanie.
+3. Skompiluj kod i Rozpocznij debugowanie.
 
-4. Otwórz menu **Narzędzia** w eksperymentalnym wystąpieniu programu Visual Studio. Kliknij przycisk **Invoke TestStatusBarCommand.**
+4. Otwórz menu **Narzędzia** w eksperymentalnym wystąpieniu programu Visual Studio. Kliknij przycisk **Wywołaj TestStatusBarCommand** .
 
-     Powinieneś zobaczyć, że tekst na pasku stanu teraz brzmi **Właśnie napisałem do paska stanu.** a wyświetlenie okna komunikatu ma ten sam tekst.
+     Powinieneś zobaczyć, że tekst na pasku stanu jest teraz odczytywany **na pasku stanu.** i wyświetlone okno komunikatu ma ten sam tekst.
 
 ### <a name="update-the-progress-bar"></a>Aktualizowanie paska postępu
 
-1. W tej procedurze pokażemy, jak zainicjować i zaktualizować pasek postępu.
+1. W tej procedurze pokazano, jak zainicjować i zaktualizować pasek postępu.
 
-2. Otwórz plik *TestStatusBarCommand.cs* i zastąp `MenuItemCallback` metodę następującym kodem:
+2. Otwórz plik *TestStatusBarCommand.cs* i Zastąp `MenuItemCallback` metodę następującym kodem:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -102,21 +102,21 @@ Można użyć paska stanu programu Visual Studio u dołu IDE do wyświetlania in
     }
     ```
 
-3. Skompiluj kod i rozpocznij debugowanie.
+3. Skompiluj kod i Rozpocznij debugowanie.
 
-4. Otwórz menu **Narzędzia** w eksperymentalnym wystąpieniu programu Visual Studio. Kliknij przycisk **Wywołaj teststatusbarkommand.**
+4. Otwórz menu **Narzędzia** w eksperymentalnym wystąpieniu programu Visual Studio. Kliknij przycisk **Wywołaj TestStatusBarCommand** .
 
-     Powinieneś zobaczyć, że tekst na pasku stanu teraz odczytuje **Pisanie na pasku postępu.** Powinieneś również zobaczyć pasek postępu aktualizowany co sekundę przez 20 sekund. Następnie pasek stanu i pasek postępu zostaną wyczyszczone.
+     Powinieneś zobaczyć, że tekst na pasku stanu odczytuje teraz **zapis na pasku postępu.** Pasek postępu powinien również zostać zaktualizowany co sekundę przez 20 sekund. Gdy pasek stanu i pasek postępu zostaną wyczyszczone.
 
 ### <a name="display-an-animation"></a>Wyświetlanie animacji
 
-1. Pasek stanu wyświetla animację pętli, która wskazuje, że operacja długotrwała (na przykład tworzenie wielu projektów w rozwiązaniu). Jeśli ta animacja nie jest widoczna, upewnij się, że masz poprawne ustawienia**opcji** **narzędzi:** > 
+1. Na pasku stanu jest wyświetlana animacja pętli, która wskazuje długotrwałą operację (na przykład budowanie wielu projektów w rozwiązaniu). Jeśli animacja nie jest widoczna, upewnij się, że masz prawidłowe ustawienia opcji **narzędzi**  >  **Options** :
 
-     Przejdź do**karty** **Ogólne Opcje** >  **narzędzi** > i wyelikonuj zaznacz **opcję Automatycznie dopasowuj środowisko wizualne na podstawie wydajności klienta**. Następnie sprawdź opcję podrzędną **Włącz bogate środowisko wizualne klienta**. Teraz powinien być w stanie zobaczyć animacji podczas tworzenia projektu w eksperymentalnym wystąpieniu programu Visual Studio.
+     Przejdź do karty **Tools**  >  **Opcje**narzędzia  >  **Ogólne** i usuń zaznaczenie pola wyboru **automatycznie Dostosuj środowisko wizualne na podstawie wydajności klienta**. Następnie zaznacz opcję sub, aby **włączyć rozbudowane wizualizacje klientów**. Teraz po skompilowaniu projektu w eksperymentalnym wystąpieniu programu Visual Studio powinna być widoczna animacja.
 
-     W tej procedurze wyświetlamy standardową animację programu Visual Studio, która reprezentuje tworzenie projektu lub rozwiązania.
+     W tej procedurze zostanie wyświetlona standardowa animacja programu Visual Studio, która przedstawia Kompilowanie projektu lub rozwiązania.
 
-2. Otwórz plik *TestStatusBarCommand.cs* i zastąp `MenuItemCallback` metodę następującym kodem:
+2. Otwórz plik *TestStatusBarCommand.cs* i Zastąp `MenuItemCallback` metodę następującym kodem:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -137,8 +137,8 @@ Można użyć paska stanu programu Visual Studio u dołu IDE do wyświetlania in
     }
     ```
 
-3. Skompiluj kod i rozpocznij debugowanie.
+3. Skompiluj kod i Rozpocznij debugowanie.
 
-4. Otwórz menu **Narzędzia** w eksperymentalnym wystąpieniu programu Visual Studio i kliknij przycisk **Wywołaj teststatusbarcommand**.
+4. Otwórz menu **Narzędzia** w eksperymentalnym wystąpieniu programu Visual Studio, a następnie kliknij pozycję **Wywołaj TestStatusBarCommand**.
 
-     Gdy zostanie wyświetlenie okna komunikatu, animacja powinna być również widoczna na pasku stanu po prawej stronie. Po odrzuceniu okna komunikatu animacja zniknie.
+     Gdy zobaczysz okno komunikatu, na pasku stanu powinna pojawić się również animacja, która znajduje się po prawej stronie. Po odrzuceniu okna komunikatu animacja znika.

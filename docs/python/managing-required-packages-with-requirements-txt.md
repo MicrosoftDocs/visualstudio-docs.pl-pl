@@ -11,15 +11,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 9179ca2b77e7a6d3ae5b5dffded06524114a0f8d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544121"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Zarządzaj wymaganymi pakietami za pomocą requirements.txt
 
-Jeśli projekt jest współużytkowany z innymi osobami, należy użyć systemu kompilacji lub zaplanować skopiowanie projektu do innej lokalizacji, w której należy przywrócić środowisko, należy określić pakiety zewnętrzne wymagane przez ten projekt. Zalecanym podejściem jest użycie [plikurequirements.txt](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) zawierającego listę poleceń dla narzędzia PIP instalującego wymagane wersje pakietów zależnych. Najbardziej typowym poleceniem jest `pip freeze > requirements.txt` , które rejestruje listę bieżących pakietów środowiska w *requirements.txt*.
+Jeśli projekt jest współużytkowany z innymi osobami, należy użyć systemu kompilacji lub zaplanować skopiowanie projektu do innej lokalizacji, w której należy przywrócić środowisko, należy określić pakiety zewnętrzne wymagane przez ten projekt. Zalecanym podejściem jest użycie [ plikurequirements.txt](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) zawierającego listę poleceń dla narzędzia PIP instalującego wymagane wersje pakietów zależnych. Najbardziej typowym poleceniem jest `pip freeze > requirements.txt` , które rejestruje listę bieżących pakietów środowiska w *requirements.txt*.
 
 Technicznie wszystkie nazwy plików mogą być używane do śledzenia wymagań (przy użyciu `-r <full path to file>` podczas instalowania pakietu), ale program Visual Studio zapewnia pomoc techniczną dla *requirements.txt*:
 
@@ -66,7 +66,7 @@ Cleaning up...
     Removing temporary dir C:\Project\env\build...
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zarządzanie środowiskami języka Python w programie Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Wybieranie interpretera dla projektu](selecting-a-python-environment-for-a-project.md)

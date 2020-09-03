@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 00d27dafd5e44b058cff05b3c478322e45242b3c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460042"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Błąd: Nie można rozpocząć debugowania na serwerze sieci Web
@@ -54,32 +54,32 @@ Często ten błąd występuje, ponieważ wystąpił błąd lub zmiana konfigurac
 - [Zobacz pomoc dotyczącą typowych błędów konfiguracji. Uruchomienie strony sieci Web poza debugerem może dostarczyć więcej informacji.](#see_help)
 - [Operacja nie jest obsługiwana. Nieznany błąd: *ErrorNumber*](#operation_not_supported)
 
-## <a name="iis-does-not-list-a-website-that-matches-the-launch-url"></a><a name="IISlist"></a>Usługi IIS nie wyświetlają witryny sieci Web zgodnej z adresem URL uruchamiania
+## <a name="iis-does-not-list-a-website-that-matches-the-launch-url"></a><a name="IISlist"></a> Usługi IIS nie wyświetlają witryny sieci Web zgodnej z adresem URL uruchamiania
 
 - Uruchom ponownie program Visual Studio jako administrator i ponów próbę debugowania. (Niektóre scenariusze debugowania ASP.NET wymagają podniesionych uprawnień).
 
     Program Visual Studio można skonfigurować tak, aby zawsze był uruchamiany jako administrator, klikając prawym przyciskiem myszy ikonę skrótu programu Visual Studio, wybierając **właściwości > zaawansowane**, a następnie wybierając opcję Zawsze uruchamiaj jako administrator.
 
-## <a name="the-web-server-is-not-configured-correctly"></a><a name="web_server_config"></a>Serwer sieci Web nie jest prawidłowo skonfigurowany
+## <a name="the-web-server-is-not-configured-correctly"></a><a name="web_server_config"></a> Serwer sieci Web nie jest prawidłowo skonfigurowany
 
 - Zobacz [błąd: serwer sieci Web nie jest prawidłowo skonfigurowany](../debugger/error-the-web-server-is-not-configured-correctly.md).
 
-## <a name="unable-to-connect-to-the-webserver"></a><a name="unabletoconnect"></a>Nie można nawiązać połączenia z serwerem
+## <a name="unable-to-connect-to-the-webserver"></a><a name="unabletoconnect"></a> Nie można nawiązać połączenia z serwerem
 
 - Czy używasz programu Visual Studio i serwera sieci Web na tym samym komputerze i debugowania przy użyciu klawisza **F5** (zamiast **dołączania do procesu**)? Otwórz właściwości projektu i upewnij się, że projekt jest skonfigurowany do nawiązywania połączenia z prawidłowym serwerem sieci Web i adresem URL uruchomienia. (Otwórz **właściwości > serwery > sieci Web** lub **Właściwości > debugowanie** w zależności od typu projektu. W przypadku projektu formularzy sieci Web Otwórz **stronę właściwości > opcje uruchamiania > Server**).
 
 - W przeciwnym razie ponownie uruchom pulę aplikacji, a następnie zresetuj usługi IIS. Aby uzyskać więcej informacji, zobacz [Sprawdzanie konfiguracji usług IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="the-web-server-did-not-respond-in-a-timely-manner"></a><a name="webservertimeout"></a>Serwer sieci Web nie odpowiedział w odpowiednim czasie
+## <a name="the-web-server-did-not-respond-in-a-timely-manner"></a><a name="webservertimeout"></a> Serwer sieci Web nie odpowiedział w odpowiednim czasie
 
 - Zresetuj usługi IIS i ponów próbę debugowania. Do procesu usług IIS mogą być dołączone wiele wystąpień debugera; Resetowanie kończy się. Aby uzyskać więcej informacji, zobacz [Sprawdzanie konfiguracji usług IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="the-microsoft-visual-studio-remote-debugging-monitormsvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a><a name="msvsmon"></a>Monitor zdalnego debugowania programu Microsoft Visual Studio (msvsmon.exe) nie jest uruchomiony na komputerze zdalnym
+## <a name="the-microsoft-visual-studio-remote-debugging-monitormsvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a><a name="msvsmon"></a> Monitor zdalnego debugowania programu Microsoft Visual Studio (msvsmon.exe) nie jest uruchomiony na komputerze zdalnym
 
 - W przypadku debugowania na maszynie zdalnej upewnij się, że [zainstalowano i uruchomiono zdalny debuger](../debugger/remote-debugging.md). Jeśli komunikat zawiera informacje o zaporze, upewnij się, że [w zaporze są otwarte odpowiednie porty](../debugger/remote-debugger-port-assignments.md) , zwłaszcza jeśli używasz zapory innej firmy.
 - Jeśli używasz pliku HOSTs, upewnij się, że jest prawidłowo skonfigurowany. Na przykład jeśli debugowanie przy użyciu klawisza **F5** (zamiast **dołączania do procesu**), plik hosts musi zawierać ten sam adres URL projektu, co we właściwościach projektu, **Właściwości > serwery > sieci Web** lub **Właściwości > debugowanie**, w zależności od typu projektu.
 
-## <a name="the-remote-server-returned-an-error"></a><a name="server_error"></a>Serwer zdalny zwrócił błąd
+## <a name="the-remote-server-returned-an-error"></a><a name="server_error"></a> Serwer zdalny zwrócił błąd
 
 Sprawdź, czy w [pliku dziennika usług IIS zarejestrowano](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0) błędy i dodatkowe informacje oraz wpis w [blogu](https://blogs.iis.net/tomkmvp/troubleshoot-a-403)usług IIS 7.
 
@@ -88,12 +88,12 @@ Ponadto poniżej przedstawiono niektóre typowe kody błędów i kilka sugestii.
 - (503) serwer jest niedostępny. Pula aplikacji mogła zostać zatrzymana z powodu błędu lub zmiany konfiguracji. Ponownie uruchom pulę aplikacji.
 - nie znaleziono (404). Upewnij się, że Pula aplikacji została skonfigurowana pod kątem poprawnej wersji ASP.NET.
 
-## <a name="could-not-start-aspnet-debugging"></a><a name="aspnet"></a>Nie można rozpocząć debugowania ASP.NET
+## <a name="could-not-start-aspnet-debugging"></a><a name="aspnet"></a> Nie można rozpocząć debugowania ASP.NET
 
 - Ponownie uruchom pulę aplikacji i zresetuj usługi IIS. Aby uzyskać więcej informacji, zobacz [Sprawdzanie konfiguracji usług IIS](#vxtbshttpservererrorsthingstocheck).
 - Jeśli wykonujesz ponowne zapisywanie adresów URL, przetestuj podstawową web.config bez ponownego zapisywania adresów URL. Zapoznaj **się z informacjami na** temat modułu ponowne zapisywanie adresów URL w temacie [Sprawdzanie konfiguracji usług IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="the-debugger-cannot-connect-to-the-remote-computer"></a><a name="cannot_connect"></a>Debuger nie może nawiązać połączenia z komputerem zdalnym
+## <a name="the-debugger-cannot-connect-to-the-remote-computer"></a><a name="cannot_connect"></a> Debuger nie może nawiązać połączenia z komputerem zdalnym
 
 Jeśli debugujesz lokalnie, Otwórz właściwości projektu w programie Visual Studio i upewnij się, że projekt jest skonfigurowany do nawiązywania połączenia z prawidłowym serwerem sieci Web i adresem URL. (Otwórz **właściwości > serwery > sieci Web** lub **Właściwości > debugowanie** w zależności od typu projektu).
 
@@ -101,17 +101,17 @@ Ten błąd może wystąpić w przypadku debugowania lokalnego, ponieważ program
 
 Ponadto, jeśli używasz pliku HOSTs, upewnij się, że jest prawidłowo skonfigurowany. Na przykład plik HOSTs musi zawierać ten sam adres URL projektu, jak we właściwościach projektu, **właściwości > serwery > sieci Web** lub **Właściwości > debugowanie**, w zależności od typu projektu.
 
-## <a name="see-help-for-common-configuration-errors-running-the-webpage-outside-of-the-debugger-may-provide-further-information"></a><a name="see_help"></a>Zobacz pomoc dotyczącą typowych błędów konfiguracji. Uruchomienie strony sieci Web poza debugerem może dostarczyć więcej informacji.
+## <a name="see-help-for-common-configuration-errors-running-the-webpage-outside-of-the-debugger-may-provide-further-information"></a><a name="see_help"></a> Zobacz pomoc dotyczącą typowych błędów konfiguracji. Uruchomienie strony sieci Web poza debugerem może dostarczyć więcej informacji.
 
 - Czy używasz programu Visual Studio i serwera sieci Web na tym samym komputerze? Otwórz właściwości projektu i upewnij się, że projekt jest skonfigurowany do nawiązywania połączenia z prawidłowym serwerem sieci Web i adresem URL uruchomienia. (Otwórz **właściwości > serwery > sieci Web** lub **Właściwości > debugowanie** w zależności od typu projektu).
 
 - Jeśli to nie zadziała lub debugujesz zdalnie, wykonaj kroki opisane w sekcji [Sprawdzanie konfiguracji usług IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="operation-not-supported-unknown-error-errornumber"></a><a name="operation_not_supported"></a>Operacja nie jest obsługiwana. Nieznany błąd: *ErrorNumber*
+## <a name="operation-not-supported-unknown-error-errornumber"></a><a name="operation_not_supported"></a> Operacja nie jest obsługiwana. Nieznany błąd: *ErrorNumber*
 
 Jeśli wykonujesz ponowne zapisywanie adresów URL, przetestuj podstawową web.config bez ponownego zapisywania adresów URL. Zapoznaj **się z informacjami na** temat modułu ponowne zapisywanie adresów URL w temacie [Sprawdzanie konfiguracji usług IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="check-your-iis-configuration"></a><a name="vxtbshttpservererrorsthingstocheck"></a>Sprawdź konfigurację usług IIS
+## <a name="check-your-iis-configuration"></a><a name="vxtbshttpservererrorsthingstocheck"></a> Sprawdź konfigurację usług IIS
 
 Po pomyślnym wykonaniu kroków w celu rozwiązania problemu i przed ponowieniem próby debugowania należy zresetować usługi IIS. Możesz to zrobić, otwierając wiersz polecenia z podwyższonym poziomem uprawnień i wpisując `iisreset` .
 

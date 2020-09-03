@@ -11,34 +11,34 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: e48777a50ddf66a8e5493698fb401ff7201de03e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114691"
 ---
-# <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>Okno dialogowe Opcje: Dostosowanie interfejsu użytkownika > programu Windows Forms Designer >
+# <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>Opcje — okno dialogowe: Projektant formularzy systemu Windows > dostosowywania interfejsu użytkownika danych
 
-To okno dialogowe określa, które formanty są wyświetlane na liście dostępnych formantów dla elementów w oknie Źródła danych. Aby ją otworzyć, wybierz pozycję **Opcje narzędzi** > **Options**, a następnie wybierz pozycję**Dostosowanie interfejsu użytkownika danych**programu Windows Forms **Designer** > Data .
+To okno dialogowe definiuje, które kontrolki są wyświetlane na liście dostępnych kontrolek dla elementów w oknie źródła danych. Aby go otworzyć, wybierz pozycję **Narzędzia**  >  **Opcje**, a następnie wybierz pozycję **Projektant formularzy systemu Windows**  >  **Dostosowywanie interfejsu użytkownika danych**.
 
-Formant można wybrać z elementu w oknie Źródła danych przed przeciągnięciem go do formularza w aplikacji Windows Forms. Dostępne formanty są określane przez typ danych elementu. Każdy typ danych ma listę prawidłowych skojarzonych formantów zdefiniowanych w tym oknie dialogowym, w tym formant domyślny. Podczas przeciągania elementu z okna Źródła danych do formularza bez wybierania formantu domyślny formant dla typu danych wybranego elementu jest dodawany do formularza.
+Możesz wybrać formant z elementu w oknie źródła danych przed przeciągnięciem go do formularza w aplikacji Windows Forms. Dostępne kontrolki są określane przez typ danych elementu. Każdy typ danych ma listę prawidłowych skojarzonych kontrolek zdefiniowanych w tym oknie dialogowym, w tym kontrolki domyślnej. Po przeciągnięciu elementu z okna źródła danych na formularz bez wybierania kontrolki w formularzu zostanie dodany domyślny formant dla typu danych wybranego elementu.
 
-Dostosuj listę skojarzonych formantów, zaznaczając i czyszcząc pola wyboru dostępnych formantów dla każdego typu danych. Aby dodać formant do listy, należy dodać formant, który implementuje <xref:System.ComponentModel.DefaultBindingPropertyAttribute> atrybut lub <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> powiązanie danych do przybornika. Formant pojawi się na liście formantów dla typu danych. Aby uzyskać więcej informacji, zobacz [Jak: Dodawanie kontrolek niestandardowych do okna Źródła danych](../..//data-tools/add-custom-controls-to-the-data-sources-window.md).
+Dostosuj listę skojarzonych kontrolek, zaznaczając i czyszcząc pola wyboru dostępnych kontrolek dla każdego typu danych. Aby dodać kontrolkę do listy, Dodaj kontrolkę, która implementuje <xref:System.ComponentModel.DefaultBindingPropertyAttribute> <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> atrybut lub powiązania danych do przybornika. Kontrolka zostanie następnie wyświetlona na liście kontrolek dla tego typu danych. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie niestandardowych kontrolek do okna źródła danych](../..//data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 ## <a name="data-type"></a>Typ danych
 
-Wyświetla listę typów, z którymi można skojarzyć formanty. Tabele są reprezentowane jako typ `[List]` danych. Kolumny są reprezentowane jako rzeczywisty typ danych kolumny w podstawowym magazynie danych.
+Wyświetla listę typów, z którymi są skojarzone formanty. Tabele są reprezentowane jako `[List]` Typ danych. Kolumny są reprezentowane jako rzeczywisty typ danych kolumny w źródłowym magazynie danych.
 
-## <a name="associated-controls"></a>Skojarzone formanty
+## <a name="associated-controls"></a>Skojarzone kontrolki
 
-Wyświetla listę formantów skojarzonych z wybranym typem danych. Zaznacz lub wyczyść pole wyboru obok formantu, aby skojarzyć lub usunąć skojarzenie. Wybrane formanty są wyświetlane w oknie Źródła danych dla kolumny bazy danych powiązanej ze skojarzonym typem danych.
+Wyświetla listę formantów, które są skojarzone z wybranym typem danych. Zaznacz lub usuń zaznaczenie pola wyboru obok kontrolki, aby skojarzyć lub usunąć jego skojarzenie. Wybrane kontrolki pojawiają się w oknie źródła danych dla kolumny bazy danych powiązanej z skojarzonym typem danych.
 
 ## <a name="set-default"></a>Ustaw Domyślne
 
-Przypisuje wybrany typ formantu jako domyślny dla wybranego typu danych. Formant domyślny jest wyświetlany jako pierwsze zaznaczenie w menu skrótów dla kolumny bazy danych w oknie Źródła danych. Podczas przeciągania elementu z okna Źródła danych do formularza bez wybierania formantu domyślny formant dla typu danych wybranego elementu jest dodawany do formularza.
+Przypisuje wybrany typ kontrolki jako domyślny dla wybranego typu danych. Kontrolka domyślna jest wyświetlana jako pierwszy wybór w menu skrótów kolumny bazy danych w oknie źródła danych. Po przeciągnięciu elementu z okna źródła danych na formularz bez wybierania kontrolki w formularzu zostanie dodany domyślny formant dla typu danych wybranego elementu.
 
-Tylko jeden typ formantu można przypisać jako domyślny dla typu danych.
+Tylko jeden typ kontrolki może być przypisany jako domyślny dla typu danych.
 
 ## <a name="clear-default"></a>Wyczyść domyślne
 
-Usuwa oznaczenie formantu jako domyślne dla wybranego typu danych. Jeśli dla wybranego typu danych nie `[None]` ma wartości domyślnej, jest wyświetlany jako pierwsze zaznaczenie w menu skrótów dla kolumny bazy danych tego typu.
+Usuwa oznaczenie formantu jako domyślny dla wybranego typu danych. Jeśli nie ma wartości domyślnej dla wybranego typu danych, `[None]` pojawia się jako pierwszy wybór w menu skrótów dla kolumny bazy danych tego typu.

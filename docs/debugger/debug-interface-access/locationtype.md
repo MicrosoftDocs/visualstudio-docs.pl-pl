@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b2fafbb25d52df6082736431727222c788d73476
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461218"
 ---
 # <a name="locationtype"></a>LocationType
@@ -42,29 +42,29 @@ enum LocationType {
 ```
 
 ## <a name="elements"></a>Elementy
-`LocIsNull`Informacje o lokalizacji są niedostępne.
+`LocIsNull` Informacje o lokalizacji są niedostępne.
 
-`LocIsStatic`Lokalizacja jest statyczna.
+`LocIsStatic` Lokalizacja jest statyczna.
 
-`LocIsTLS`Lokalizacja znajduje się w lokalnym magazynie wątków.
+`LocIsTLS` Lokalizacja znajduje się w lokalnym magazynie wątków.
 
-`LocIsRegRel`Lokalizacja jest zależna od rejestru.
+`LocIsRegRel` Lokalizacja jest zależna od rejestru.
 
-`LocIsThisRel`Lokalizacja jest `this` względna.
+`LocIsThisRel` Lokalizacja jest `this` względna.
 
-`LocIsEnregistered`Lokalizacja znajduje się w rejestrze.
+`LocIsEnregistered` Lokalizacja znajduje się w rejestrze.
 
-`LocIsBitField`Lokalizacja znajduje się w polu bitowym.
+`LocIsBitField` Lokalizacja znajduje się w polu bitowym.
 
-`LocIsSlot`Lokalizacja jest miejscem języka pośredniego firmy Microsoft (MSIL).
+`LocIsSlot` Lokalizacja jest miejscem języka pośredniego firmy Microsoft (MSIL).
 
-`LocIsIlRel`Lokalizacja jest zależna od języka MSIL.
+`LocIsIlRel` Lokalizacja jest zależna od języka MSIL.
 
-`LocInMetaData`Lokalizacja znajduje się w metadanych.
+`LocInMetaData` Lokalizacja znajduje się w metadanych.
 
-`LocIsConstant`Lokalizacja jest w stałej wartości.
+`LocIsConstant` Lokalizacja jest w stałej wartości.
 
-`LocTypeMax`Liczba typów lokalizacji w tym wyliczeniu.
+`LocTypeMax` Liczba typów lokalizacji w tym wyliczeniu.
 
 ## <a name="remarks"></a>Uwagi
 Właściwości dostępne dla interfejsu [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) zależą od lokalizacji symbolu w pliku obrazu. Aby uzyskać więcej informacji, zobacz [lokalizacje symboli](../../debugger/debug-interface-access/symbol-locations.md).

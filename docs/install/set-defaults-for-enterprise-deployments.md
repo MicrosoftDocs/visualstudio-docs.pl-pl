@@ -1,6 +1,6 @@
 ---
-title: Ustawianie ustawień domyślnych dla wdrożeń przedsiębiorstw
-description: Dowiedz się więcej o zasadach domeny i innych operacjach konfiguracji dla wdrożeń programu Visual Studio w przedsiębiorstwie.
+title: Ustawianie wartości domyślnych dla wdrożeń w przedsiębiorstwie
+description: Dowiedz się więcej na temat zasad domeny i innych operacji konfiguracji dla wdrożeń w przedsiębiorstwie programu Visual Studio.
 ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
@@ -19,52 +19,52 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d03912eecd7b3cfa3563fc095453fee3ddf9b163
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114283"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Ustawianie wartości domyślnych dla wdrożeń programu Visual Studio w przedsiębiorstwie
 
-Można ustawić zasady rejestru, które mają wpływ na wdrożenie programu Visual Studio. Te zasady mają charakter globalny dla nowego instalatora i mają wpływ na:
+Można ustawić zasady rejestru mające wpływ na wdrożenie programu Visual Studio. Te zasady są globalne dla nowego Instalatora i mają wpływ na:
 
-- Gdzie niektóre pakiety udostępnione innym wersjom lub wystąpieniom są zainstalowane
-- Gdzie pakiety są buforowane
+- Gdzie są zainstalowane niektóre pakiety udostępniane z innymi wersjami lub wystąpieniami
+- Gdzie są buforowane pakiety
 - Czy wszystkie pakiety są buforowane
 
-Niektóre z tych zasad można ustawić za pomocą [opcji wiersza polecenia,](use-command-line-parameters-to-install-visual-studio.md)ustawić wartości rejestru na komputerze, a nawet rozpowszechniać je przy użyciu zasad grupy w całej organizacji.
+Niektóre z tych zasad można ustawiać przy użyciu [opcji wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md), ustawiać wartości rejestru na komputerze, a nawet rozpowszechniać je przy użyciu zasady grupy w całej organizacji.
 
 ## <a name="registry-keys"></a>Klucze rejestru
 
-Istnieje kilka lokalizacji, w których można ustawić domyślne ustawienia przedsiębiorstwa, aby włączyć ich kontrolę za pośrednictwem zasad grupy lub bezpośrednio w rejestrze. Visual Studio wygląda sekwencyjnie, aby sprawdzić, czy zostały ustawione zasady przedsiębiorstwa; jak tylko wartość zasad zostanie wykryta w poniższej kolejności, pozostałe klucze są ignorowane.
+Istnieje kilka lokalizacji, w których można ustawić wartości domyślne przedsiębiorstwa, aby włączyć ich kontrolę przez zasady grupy lub bezpośrednio w rejestrze. Program Visual Studio sprawdza się sekwencyjnie, aby sprawdzić, czy zostały ustawione jakieś zasady przedsiębiorstwa. gdy tylko zostanie wykryta wartość zasad w poniższej kolejności, pozostałe klucze zostaną zignorowane.
 
 1. `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\Setup`
 2. `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup`
-3. `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\VisualStudio\Setup`(w 64-bitowych systemach operacyjnych)
+3. `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\VisualStudio\Setup` (w 64-bitowych systemach operacyjnych)
 
 > [!IMPORTANT]
-> Jeśli nie ustawisz klucza `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\Setup` i zamiast tego ustawisz jeden z innych kluczy, należy ustawić oba inne klucze w 64-bitowych systemach operacyjnych. Ten problem został rozwiązany w przyszłej aktualizacji produktu.
+> Jeśli nie ustawisz `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\Setup` klucza i zamiast tego ustawisz jeden z pozostałych kluczy, należy ustawić obydwa klucze w 64-bitowych systemach operacyjnych. Ten problem został rozwiązany w przyszłej aktualizacji produktu.
 
-Niektóre wartości rejestru są ustawiane automatycznie przy pierwszym użyciu, jeśli nie są już ustawione. Ta praktyka gwarantuje, że kolejne instalacje używają tych samych wartości. Wartości te są przechowywane w `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup`drugim kluczu rejestru, .
+Niektóre wartości rejestru są ustawiane automatycznie przy pierwszym użyciu, jeśli nie zostały jeszcze ustawione. Ta metoda zapewnia, że w przypadku kolejnych instalacji są używane te same wartości. Te wartości są przechowywane w drugim kluczu rejestru, `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup` .
 
 Można ustawić następujące wartości rejestru:
 
-| **Nazwa** | **Typ** | **Domyślny** | **Opis** |
+| **Nazwa** | **Typ** | **Wartooć** | **Opis** |
 | -------- | -------- | ----------- | --------------- |
-| `CachePath` | `REG_SZ` lub `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Katalog, w którym są przechowywane manifesty pakietu i opcjonalnie ładunki. Aby uzyskać więcej informacji, zobacz [wyłączanie lub przenoszenie pamięci podręcznej pakietu.](disable-or-move-the-package-cache.md) |
-| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Zachowaj ładunki pakietów nawet po ich zainstalowaniu. Wartość można zmienić w dowolnym momencie. Wyłączenie zasad usuwa wszystkie ładunki buforowanego pakietu dla wystąpienia, które naprawiasz lub modyfikujesz. Aby uzyskać więcej informacji, zobacz [wyłączanie lub przenoszenie pamięci podręcznej pakietu.](disable-or-move-the-package-cache.md) |
-| `SharedInstallationPath` | `REG_SZ` lub `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Udostępnione | Katalog, w którym są instalowane niektóre pakiety współużytkowane przez wersje wystąpień programu Visual Studio. Wartość można zmienić w dowolnym momencie, ale będzie miała wpływ tylko na przyszłe instalacje. Nie wolno przenosić żadnych produktów już zainstalowanych w starej lokalizacji lub mogą one nie działać poprawnie. |
-| `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | Uniemożliwić instalatorowi automatyczne pobieranie aktualizacji dla wszystkich zainstalowanych produktów programu Visual Studio. Wartość można zmienić w dowolnym momencie. |
+| `CachePath` | `REG_SZ` lub `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Katalog, w którym są przechowywane manifesty pakietów i, opcjonalnie, ładunki. Aby uzyskać więcej informacji, zobacz stronę [wyłączanie lub przenoszenie pamięci podręcznej pakietu](disable-or-move-the-package-cache.md) . |
+| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Przechowuj ładunki pakietów nawet po ich zainstalowaniu. Wartość można zmienić w dowolnym momencie. Wyłączenie zasad usuwa wszystkie buforowane ładunki pakietów dla wystąpienia, które należy naprawić lub zmodyfikować. Aby uzyskać więcej informacji, zobacz stronę [wyłączanie lub przenoszenie pamięci podręcznej pakietu](disable-or-move-the-package-cache.md) . |
+| `SharedInstallationPath` | `REG_SZ` lub `REG_EXPAND_SZ` | % ProgramFiles (x86)% \ Microsoft Visual Studio\Shared | Katalog, w którym są zainstalowane pewne pakiety udostępniane między wersjami wystąpień programu Visual Studio. Wartość można zmienić w dowolnym momencie, ale będzie to miało wpływ tylko na przyszłe instalacje. Wszelkie produkty już zainstalowane w starej lokalizacji nie mogą być przenoszone lub mogą nie działać prawidłowo. |
+| `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | Zapobiegaj automatycznym pobieraniu aktualizacji przez Instalatora dla wszystkich zainstalowanych produktów programu Visual Studio. Wartość można zmienić w dowolnym momencie. |
 
 > [!IMPORTANT]
-> Jeśli zmienisz `CachePath` zasady rejestru po każdej instalacji, należy przenieść istniejącą pamięć podręczną pakietu `SYSTEM` `Administrators` do nowej lokalizacji `Everyone` i upewnij się, że jest zabezpieczony tak, że i pełna kontrola i który ma dostęp do odczytu.
-> Nieprzeprowadzenie istniejącej pamięci podręcznej lub jej zabezpieczenie może spowodować problemy z przyszłymi instalacjami.
+> W przypadku zmiany `CachePath` zasad rejestru po dowolnych instalacjach należy przenieść istniejącą pamięć podręczną pakietu do nowej lokalizacji i upewnić się, że jest zabezpieczona, tak aby `SYSTEM` `Administrators` miała pełną kontrolę i `Everyone` ma dostęp do odczytu.
+> Niepowodzenie przenoszenia istniejącej pamięci podręcznej lub jej zabezpieczenia może spowodować problemy z przyszłymi instalacjami.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Instalacja programu Visual Studio](install-visual-studio.md)
+- [Instalowanie programu Visual Studio](install-visual-studio.md)
 - [Wyłączanie lub przenoszenie pamięci podręcznej pakietów](disable-or-move-the-package-cache.md)
-- [Instalowanie programu Visual Studio za pomocą parametrów wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md)
+- [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

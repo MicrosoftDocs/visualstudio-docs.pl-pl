@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1a65f42dafca696bfa638964b825410b576d4845
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544290"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio
@@ -40,12 +40,12 @@ Blend for Visual Studio ułatwia projektowanie aplikacji klasycznych dla systemu
 
 - [Przewodnik po panelu Właściwości](#Properties)
 
-## <a name="tour-of-the-tools-panel"></a><a name="Tools"></a>Przewodnik po panelu Narzędzia
+## <a name="tour-of-the-tools-panel"></a><a name="Tools"></a> Przewodnik po panelu Narzędzia
  Panel **Narzędzia** w Blend for Visual Studio służy do tworzenia i modyfikowania obiektów w aplikacji. Obiekty są tworzone przez wybranie narzędzia i rysowanie w obszarze kompozycji za pomocą myszy.
 
  ![Panel narzędzi](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
 
-|Image (Obraz)|Typ narzędzia|Image (Obraz)|Typ narzędzia|
+|Obraz|Typ narzędzia|Obraz|Typ narzędzia|
 |-|-|-|-|
 |![](../designers/media/b1-1.png "B1_1")|**Narzędzia wyboru** Wybierz obiekty i ścieżki.<br /><br /> Użyj narzędzia **wybór bezpośredni** , aby zaznaczyć zagnieżdżone obiekty i segmenty ścieżki.|![Objaśnienie A](../designers/media/b5-label-a.png "b5_label_A")|**Narzędzia gradientowe i pędzle**|
 |![](../designers/media/b1-2.png "B1_2")|**Narzędzia widoku** Dostosuj widok obszaru kompozycji, taki jak przesuwanie i powiększanie.|![Objaśnienie B](../designers/media/b5-label-b.png "b5_label_B")|**Narzędzia ścieżki**|
@@ -56,12 +56,12 @@ Blend for Visual Studio ułatwia projektowanie aplikacji klasycznych dla systemu
 
  **Obejrzyj krótkie wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [na pasku narzędzi](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
-## <a name="tour-of-the-assets-panel"></a><a name="Assets"></a>Przewodnik po panelu Składniki
+## <a name="tour-of-the-assets-panel"></a><a name="Assets"></a> Przewodnik po panelu Składniki
  Wszystkie kontrolki można znaleźć w panelu **składniki** , podobnie jak w przypadku **przybornika** w programie Visual Studio. Oprócz formantów znajdziesz wszystko, co można dodać do obszaru kompozycji w panelu **składniki** , w tym style, multimedia, zachowania i efekty.
 
  ![Panel składników zasobów](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
 
-|Image (Obraz)|Opis|
+|Obraz|Opis|
 |-|-|
 |![](../designers/media/b1-1.png "B1_1")|**Pole wyszukiwania** Wpisz w polu **wyszukiwania** , aby odfiltrować listę zasobów.|
 |![](../designers/media/b1-2.png "B1_2")|**Tryb siatki i tryb listy** Przełączanie między widokiem **siatki** a widokiem **listy** zasobów.|
@@ -69,12 +69,12 @@ Blend for Visual Studio ułatwia projektowanie aplikacji klasycznych dla systemu
 |![](../designers/media/b1-4.png "B1_4")|**Style** Pokaż wszystkie style, które są zawarte w słowniku zasobów.|
 |![](../designers/media/b1-5.png "B1_5")|**Opis** Wyświetl opis kategorii lub podkategorii wybranych zasobów.|
 
-## <a name="tour-of-the-objects-and-timeline-panel"></a><a name="Objects"></a>Przewodnik po panelu Obiekty i oś czasu
+## <a name="tour-of-the-objects-and-timeline-panel"></a><a name="Objects"></a> Przewodnik po panelu Obiekty i oś czasu
  Ten panel służy do organizowania obiektów w obszarze kompozycji i, jeśli chcesz, animowania ich.
 
  ![Panel obiektów i osi czasu w trybie animacji](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
 
-|Image (Obraz)|Opis|
+|Obraz|Opis|
 |-|-|
 |![](../designers/media/b1-1.png "B1_1")|**Widok obiektów** Wyświetlanie drzewa wizualnego dokumentu. Możesz przejść do szczegółów na różne poziomy szczegółowości. Możesz również dodać warstwy, aby dodatkowo organizować obiekty w obszarze kompozycji. Dzięki temu można zablokować i ukryć je jako grupę.|
 |![](../designers/media/b1-2.png "B1_2")|**Wskaźnik trybu rekordu** Sprawdź, czy rejestrujesz zmiany właściwości na osi czasu.|
@@ -93,7 +93,7 @@ Blend for Visual Studio ułatwia projektowanie aplikacji klasycznych dla systemu
 |![](../designers/media/b1-15.png "B1_15")|**Powiększenie osi czasu** Ustaw rozdzielczość osi czasu dla powiększenia. Powiększanie pozwala bardziej szczegółowo edytować animację, a pomniejszenie przedstawia bardziej ogólny obraz zdarzeń w dłuższym okresie. Jeśli po powiększeniu nie można ustawić ramki kluczowej na żądanej pozycji w czasie, należy sprawdzić, czy ustawiono odpowiednio dużą rozdzielczość przyciągania.|
 |![Objaśnienie 16](../designers/media/b5-label-16.png "b5_label_16")|**Obszar kompozycji osi czasu** Wyświetlaj oś czasu i przenoś ramki kluczowe, przeciągając je lub używając ich menu skrótów.|
 
-## <a name="tour-of-the-properties-panel"></a><a name="Properties"></a>Przewodnik po panelu Właściwości
+## <a name="tour-of-the-properties-panel"></a><a name="Properties"></a> Przewodnik po panelu Właściwości
  Ten panel służy do wyświetlania i modyfikowania właściwości obiektu. Można je również ustawić bezpośrednio w obszarze kompozycji. W takim przypadku zmiany właściwości zostaną odzwierciedlone w panelu **Właściwości** .
 
  ![Panel właściwości](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
@@ -113,7 +113,7 @@ Blend for Visual Studio ułatwia projektowanie aplikacji klasycznych dla systemu
 |                                 ![](../designers/media/b1-9.png "B1_9")                                 |                                                         **Pole wyszukiwania** Wyszukaj właściwości. Filtruj właściwości, które są wyświetlane, wpisując w polu **wyszukiwania** .                                                          |
 | ![](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png "97fa60b9-0caf-4387-9225-b57510d32209") |                                **Karty edytora pędzla** Użyj, aby wybrać Edytor pędzla. Możesz wybrać **Brak pędzla**, **pełnego pędzla kolorów**, pędzla **gradientu**, **pędzla kafelków**lub **zasobu pędzla**.                                |
 |                                ![](../designers/media/b1-11.png "B1_11")                                |                                    **Zasoby koloru** Zastosuj dokładnie ten sam kolor do różnych właściwości. Karta **zasoby kolorów** zawiera **Zasoby lokalne** i **zasoby systemowe**.                                    |
-|                                ![](../designers/media/b1-12.png "B1_12")                                |                                                 **Przestrzeń kolorów RGB** Zmodyfikuj kolor, dostosowując wartości dla edytorów liczb **R**, **G**lub **B** (czerwony, zielony, niebieski).                                                  |
+|                                ![](../designers/media/b1-12.png "B1_12")                                |                                                 **Przestrzeń kolorów RGB** Zmodyfikuj kolor, dostosowując wartości dla edytorów liczb **R**,  **G**lub **B** (czerwony, zielony, niebieski).                                                  |
 |                                ![](../designers/media/b1-13.png "B1_13")                                |                                                                        **Kanał alfa** Zmodyfikuj wartość alfa przy użyciu edytora liczb obok **elementu**.                                                                        |
 | ![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png "d839d12c-07a1-4127-a830-4a8e7069f4fe") |                                       **Konwertuj kolor na zasób** Konwertuj wybrany kolor na zasób koloru. Zasoby koloru są dostępne po kliknięciu karty zasoby koloru.                                        |
 |                                ![](../designers/media/b1-15.png "B1_15")                                |                                                                                 **Wartość szesnastkowa** Wyświetl wartość szesnastkową wyświetlanego koloru.                                                                                 |

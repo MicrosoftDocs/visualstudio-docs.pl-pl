@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1ada86be30e207e36c7e0d84d3fd5dd877605e4d
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016304"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Instrukcje: Dołączanie plików przy użyciu modułu
@@ -52,7 +53,7 @@ ms.locfileid: "86016304"
 
      Po dodaniu pliku do projektu, jego wpis jest automatycznie dodawany do pliku Elements.xml modułu. Po wdrożeniu projektu pliki są kopiowane do programu SharePoint Server względem katalogu głównego projektu, który jest określony przez atrybut **adresu URL** elementu **pliku** , na przykład `Url="Module1/New Folder/SomeFile.doc` . Jeśli chcesz zmienić lokalizację wdrożenia pliku, przenieś go do innego folderu w **Eksplorator rozwiązań** lub zmień jego ustawienie **adresu URL** .
 
-8. Dla wszystkich plików, które mają być wyświetlane w bibliotece dokumentów, Dołącz `Type="GhostableInLibrary"` atrybut do ich wpisu w *Elements.xml*. Na przykład
+8. Dla wszystkich plików, które mają być wyświetlane w bibliotece dokumentów, Dołącz `Type="GhostableInLibrary"` atrybut do ich wpisu w *Elements.xml*. Przykład:
 
     ```xml
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />
@@ -62,6 +63,6 @@ ms.locfileid: "86016304"
 
      Pliki są kopiowane do określonych lokalizacji w programie SharePoint.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

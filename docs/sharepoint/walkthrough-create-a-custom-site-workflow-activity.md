@@ -17,9 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: dc7eef8b0924be745de436e06acc36785b1cb99b
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016529"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Przewodnik: Tworzenie niestandardowego działania przepływu pracy witryny
@@ -44,7 +45,7 @@ ms.locfileid: "86016529"
 
 - Obsługiwane wersje programów [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i SharePoint.
 
-- Program Visual Studio.
+- Programu Visual Studio.
 
 ## <a name="create-a-site-workflow-custom-activity-project"></a>Tworzenie projektu niestandardowego działania przepływu pracy witryny
  Najpierw utwórz projekt, aby wstrzymać i przetestować działanie niestandardowego przepływu pracy.
@@ -121,6 +122,6 @@ ms.locfileid: "86016529"
 
 5. Na pasku szybkiego uruchamiania wybierz łącze **anonse kopii zapasowej** . Zwróć uwagę, że wszystkie anonse zawarte na liście **anonsów** zostały skopiowane na tę nową listę.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Tworzenie odbiorcy zdarzeń](../sharepoint/how-to-create-an-event-receiver.md)
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

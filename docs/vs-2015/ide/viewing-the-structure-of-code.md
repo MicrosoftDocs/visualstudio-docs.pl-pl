@@ -29,10 +29,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1a860fbb88bb15786fad5fdf277f8f65b245056b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545018"
 ---
 # <a name="viewing-the-structure-of-code"></a>Wyświetlanie struktury kodu
@@ -57,7 +57,7 @@ Można przeanalizować obiekty i członków w projektach programu Visual Studio 
 > [!NOTE]
 > Wersja programu Visual Studio i używane ustawienia mogą mieć wpływ na funkcje w środowisku IDE. Mogą się one różnić od tych opisanych w tym temacie.
 
-## <a name="class-view-visual-basic-c-c"></a><a name="BKMK_ClassView"></a>Widok klasy (Visual Basic, C#, C++)
+## <a name="class-view-visual-basic-c-c"></a><a name="BKMK_ClassView"></a> Widok klasy (Visual Basic, C#, C++)
  **Widok klasy** jest pokazywany jako część **Eksplorator rozwiązań** , jak również w osobnym oknie. W oknie **Widok klasy** są wyświetlane elementy aplikacji. W górnym okienku są wyświetlane przestrzenie nazw, typy, interfejsy, wyliczenia i klasy, a w dolnym okienku są wyświetlane elementy członkowskie należące do typu wybranego w górnym okienku. Za pomocą tego okna można przenieść do definicji elementów członkowskich w kodzie źródłowym (lub w **Przeglądarka obiektów** , jeśli element jest zdefiniowany poza rozwiązaniem).
 
  Nie trzeba kompilować projektu, aby wyświetlić jego elementy **Widok klasy**. Okno jest odświeżane w miarę modyfikowania kodu w projekcie.
@@ -110,7 +110,7 @@ Można przeanalizować obiekty i członków w projektach programu Visual Studio 
 |**Przejdź do odwołania**|Wyświetla odwołanie do typu lub elementu członkowskiego w kodzie źródłowym, jeśli jest dostępny.|
 |**Wyświetl hierarchię wywołań**|Wyświetla wybraną metodę w oknie **Hierarchia wywołań** .|
 
-## <a name="call-hierarchy-visual-basic-c-c"></a><a name="BKMK_CallHierarchy"></a>Hierarchia wywołań (Visual Basic, C#, C++)
+## <a name="call-hierarchy-visual-basic-c-c"></a><a name="BKMK_CallHierarchy"></a> Hierarchia wywołań (Visual Basic, C#, C++)
  Okno **Hierarchia wywołań** pokazuje, gdzie wywoływana jest dana metoda (lub właściwość lub Konstruktor), a także listę metod, które są wywoływane z tej metody. Można wyświetlić wiele poziomów grafu wywołań, który pokazuje relacje wywołujące/wywoływane między metodami w określonym zakresie.
 
  Możesz wyświetlić okno **Hierarchia wywołań** , wybierając metodę (lub konstruktora), a następnie wybierając opcję **Wyświetl hierarchię klas** w menu skrótów. Ekran powinien wyglądać podobnie do poniższej ilustracji.
@@ -134,7 +134,7 @@ Można przeanalizować obiekty i członków w projektach programu Visual Studio 
 |**Kopiuj**|Kopiuje wybrany węzeł (ale nie jego węzły podrzędne).|
 |**Odświeżanie**|Odświeża informacje.|
 
-## <a name="object-browser"></a><a name="BKMK_ObjectBrowser"></a>Przeglądarka obiektów
+## <a name="object-browser"></a><a name="BKMK_ObjectBrowser"></a> Przeglądarka obiektów
  **Przeglądarka obiektów** Wyświetla opisy kodu w projektach.
 
  Można filtrować elementy, które mają być wyświetlane w **Przeglądarka obiektów**. Korzystając z listy rozwijanej w górnej części okna, można wybrać jedną z następujących opcji:
@@ -193,7 +193,7 @@ Można przeanalizować obiekty i członków w projektach programu Visual Studio 
 |**Przejdź do odwołania**|Wyświetla odwołanie do typu lub elementu członkowskiego w kodzie źródłowym, jeśli jest dostępny.|
 |**Wyświetl hierarchię wywołań**|Wyświetla wybraną metodę w oknie **Hierarchia wywołań** .|
 
-## <a name="code-definition-window-c-c"></a><a name="BKMK_CodeDefinition"></a>Okno definicji kodu (C#, C++)
+## <a name="code-definition-window-c-c"></a><a name="BKMK_CodeDefinition"></a> Okno definicji kodu (C#, C++)
  W oknie **definicji kodu** zostanie wyświetlona definicja wybranego typu lub elementu członkowskiego w aktywnym projekcie. Typ lub element członkowski można wybrać w edytorze kodu lub w oknie widoku kodu.
 
  Mimo że to okno jest tylko do odczytu, można ustawić punkty przerwania lub zakładki. Aby zmodyfikować wyświetlaną definicję, wybierz polecenie **Edytuj definicję** w menu skrótów. Spowoduje to otwarcie pliku źródłowego w edytorze kodu i przeniesienie punktu wstawiania do wiersza, w którym rozpoczyna się definicja.

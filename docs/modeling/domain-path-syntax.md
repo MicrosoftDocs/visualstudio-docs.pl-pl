@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d7ab5f080328338e40bed080ec8a4c7a85eabdb
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114641"
 ---
 # <a name="domain-path-syntax"></a>Składnia ścieżki domeny
@@ -23,7 +23,7 @@ Definicje DSL używają składni podobnej do XPath do lokalizowania określonych
 
  Ścieżka domeny ma następującą postać:
 
- *RelationshipName.PropertyName/!Role*
+ *RelationshipName. PropertyName/! Roli*
 
  ![Relacja odwołania CommentReferencesSubjects](../modeling/media/dsl_reference.png)
 
@@ -33,8 +33,8 @@ Definicje DSL używają składni podobnej do XPath do lokalizowania określonych
 
  Ukośniki oddzielają składnię ścieżki. Każdy segment ścieżki jest przeskokiem z elementu do linku (wystąpienie relacji) lub z linku do elementu. Segmenty ścieżki często pojawiają się w parach. Jeden segment ścieżki reprezentuje przeskok z elementu do linku, a następny segment reprezentuje przeskok z linku do elementu na drugim końcu. (Dowolne łącze może być również źródłem lub obiektem docelowym relacji).
 
- Nazwa, która jest używana na potrzeby przeskoku elementu do linku, jest wartością `Property Name`roli. Nazwa użyta dla przeskoku link-element jest nazwą roli docelowej.
+ Nazwa, która jest używana dla skoku element-link, jest wartością roli `Property Name` . Nazwa użyta dla przeskoku link-element jest nazwą roli docelowej.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 125245f38be5588f2661b45162ffde24e5930ad7
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461078"
 ---
 # <a name="symbol-locations"></a>Lokalizacje symboli
@@ -53,4 +53,4 @@ Większość symboli ma zdefiniowaną lokalizację w pliku obrazu. Lokalizacja s
 - [IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)
 - [IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)
 - [LocationType, wyliczenie](../../debugger/debug-interface-access/locationtype.md)
-- [Symbole i znaczniki symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+- [Symbole i tagi symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
