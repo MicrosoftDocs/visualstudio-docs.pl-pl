@@ -1,5 +1,5 @@
 ---
-title: Ocena wyrażenia zegarka | Dokumenty firmy Microsoft
+title: Ocenianie wyrażenia czujki | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,28 +12,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9a239e430338e88a0be4bc35ad1c357925f7d8f5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738858"
 ---
-# <a name="evaluate-a-watch-expression"></a>Ocenianie wyrażenia zegarka
+# <a name="evaluate-a-watch-expression"></a>Oceń wyrażenie kontrolne
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [oceniający wyrażenia CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład oceniającego zarządzane wyrażenia](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniania wyrażeń jest przestarzały. Aby uzyskać informacje na temat implementowania oceniania wyrażeń CLR, zobacz testerzy [wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzana próbnik wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
-Gdy program Visual Studio jest gotowy do wyświetlania wartości wyrażenia zegarka, wywołuje [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md), który z kolei wywołuje [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Ten proces tworzy [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który zawiera wartość i typ wyrażenia.
+Gdy program Visual Studio jest gotowy do wyświetlenia wartości wyrażenia czujka, wywołuje [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md), co z kolei wywołuje [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Ten proces generuje obiekt [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , który zawiera wartość i typ wyrażenia.
 
-W tej `IDebugParsedExpression::EvaluateSync`implementacji , wyrażenie jest analizowane i oceniane w tym samym czasie. Ta implementacja wykonuje następujące zadania:
+W tej implementacji `IDebugParsedExpression::EvaluateSync` wyrażenie jest analizowane i oceniane w tym samym czasie. Ta implementacja wykonuje następujące zadania:
 
-1. Analizuje i ocenia wyrażenie do produkcji obiektu ogólnego, który przechowuje wartość i jego typ. W języku C#jest to `object` reprezentowane jako while w języku C++, jest to reprezentowane jako `VARIANT`.
+1. Analizuje i szacuje wyrażenie, aby utworzyć obiekt generyczny, który przechowuje wartość i jej typ. W języku C# jest to reprezentowane przez `object` program w języku C++, który jest reprezentowany jako `VARIANT` .
 
-2. Wystąpienia klasy (o `CValueProperty` nazwie w tym przykładzie), która implementuje `IDebugProperty2` interfejs i przechowuje w klasie wartość, która ma zostać zwrócona.
+2. Tworzy wystąpienie klasy (wywoływana `CValueProperty` w tym przykładzie) implementującej `IDebugProperty2` interfejs i sklepy w klasie, która ma zostać zwrócona.
 
 3. Zwraca `IDebugProperty2` interfejs z `CValueProperty` obiektu.
 
 ## <a name="managed-code"></a>Kod zarządzany
-Jest to implementacja `IDebugParsedExpression::EvaluateSync` w kodzie zarządzanym. Metoda `Tokenize` pomocnika analizuje wyrażenie w drzewie analizy. Funkcja `EvalToken` pomocnika konwertuje token na wartość. Funkcja `FindTerm` pomocnika cyklicznie przechodzi przez drzewo analizy, wywołując `EvalToken` dla każdego węzła reprezentującego wartość i stosując wszystkie operacje (dodawanie lub odejmowanie) w wyrażeniu.
+Jest to implementacja `IDebugParsedExpression::EvaluateSync` w kodzie zarządzanym. Metoda pomocnika `Tokenize` analizuje wyrażenie w drzewie analizy. Funkcja pomocnika `EvalToken` konwertuje token na wartość. Funkcja pomocnika `FindTerm` cyklicznie przechodzi drzewo analizy, wywołując `EvalToken` dla każdego węzła reprezentującego wartość i stosując wszystkie operacje (Dodawanie lub odejmowanie) w wyrażeniu.
 
 ```csharp
 namespace EEMC
@@ -79,8 +79,8 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code"></a>Niezarządzany kod
-Jest to implementacja `IDebugParsedExpression::EvaluateSync` w kodzie niezarządzanym. Funkcja `Evaluate` pomocnika analizuje i ocenia wyrażenie, zwracając `VARIANT` przytrzymanie wartości wynikowej. Funkcja `VariantValueToProperty` pomocnika łączy go `VARIANT` w `CValueProperty` obiekt.
+## <a name="unmanaged-code"></a>Kod niezarządzany
+Jest to implementacja `IDebugParsedExpression::EvaluateSync` kodu niezarządzanego. Funkcja pomocnika `Evaluate` analizuje i szacuje wyrażenie, zwracając element `VARIANT` utrzymujący wartość wynikową. Funkcja pomocnika `VariantValueToProperty` `VARIANT` tworzy pakiet do `CValueProperty` obiektu.
 
 ```cpp
 STDMETHODIMP CParsedExpression::EvaluateSync(
@@ -172,5 +172,5 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Ocena wyrażenia okna zegarka](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
+- [Oceń wyrażenie okna czujki](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
 - [Przykładowa implementacja oceny wyrażenia](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 18629f8d5c63b652d6539db10c6e6dba5d621c24
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542301"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: Metody interfejsu powinny móc zostać wywołane przez typy podrzędne

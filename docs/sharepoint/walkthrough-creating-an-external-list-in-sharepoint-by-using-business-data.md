@@ -20,9 +20,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 29f6c4e170bce8ae7bacfc7178ebd9386f2d4416
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015832"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Przewodnik: Tworzenie listy zewnętrznej w programie SharePoint przy użyciu danych firmowych
@@ -183,10 +184,10 @@ Dodaj określoną metodę wyszukiwania do jednostki Contact przy użyciu okna **
 
     |Nazwa|Nazwa typu|
     |----------|---------------|
-    |FirstName|System. String|
-    |LastName|System. String|
+    |FirstName (Imię)|System. String|
+    |LastName (Nazwisko)|System. String|
     |Telefon|System. String|
-    |EmailAddress|System. String|
+    |EmailAddress (Adres e-mail)|System. String|
     |EmailPromotion|System. Int32|
     |Nazwa|System. Boolean|
     |PasswordHash|System. String|
@@ -273,7 +274,7 @@ Więcej informacji na temat sposobu projektowania modeli dla usługi BDC w progr
 - [Instrukcje: Dodawanie metody Aktualizator](../sharepoint/how-to-add-an-updater-method.md).
 - [Instrukcje: Dodawanie metody usuwania](../sharepoint/how-to-add-a-deleter-method.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Projektowanie modelu](../sharepoint/designing-a-business-data-connectivity-model.md) 
  łączności danych firmy [Tworzenie modelu](../sharepoint/creating-a-business-data-connectivity-model.md) 

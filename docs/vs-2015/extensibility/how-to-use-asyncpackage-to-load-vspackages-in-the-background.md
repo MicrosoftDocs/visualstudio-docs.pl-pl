@@ -1,63 +1,63 @@
 ---
-title: 'Instrukcje: Używanie klasy AsyncPackage do ładowania pakietów VSPackages w tle | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: używanie AsyncPackage do ładowania pakietów VSPackage w tle | Microsoft Docs'
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
 ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204028"
 ---
-# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Instrukcje: Używanie klasy AsyncPackage do ładowania pakietów VSPackages w tle
+# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Instrukcje: używanie klasy AsyncPackage do ładowania pakietów VSPackages w tle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ładowanie i Inicjowanie pakietu programu VS może spowodować We/Wy dysku. W przypadku takich operacji We/Wy na wątek interfejsu użytkownika, może to prowadzić do problemów z czasem odpowiedzi. Aby rozwiązać ten problem, Visual Studio 2015 wprowadzono <xref:Microsoft.VisualStudio.Shell.AsyncPackage> klasy, który umożliwia ładowanie pakiet w wątku tła.  
+Załadowanie i zainicjowanie pakietu programu VS może spowodować powstanie we/wy dysku. Jeśli takie operacje we/wy wystąpią w wątku interfejsu użytkownika, może to prowadzić do problemów z czasem odpowiedzi. W programie Visual Studio 2015 wprowadzono  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> klasę, która umożliwia ładowanie pakietów w wątku w tle.  
   
-## <a name="creating-an-asyncpackage"></a>Tworzenie AsyncPackage  
- Możesz zacząć od utworzenia projektu VSIX (**plik / nowy / Project / Visual C# / rozszerzalności / projekt VSIX**) i dodawanie pakietu VSPackage do projektu (kliknij prawym przyciskiem myszy projekt i **elementu Dodawanie/New / C# elementu/rozszerzalność/Visual Pakiet Studio**). Można utworzyć usługi i dodawanie tych usług do pakietu.  
+## <a name="creating-an-asyncpackage"></a>Tworzenie elementu AsyncPackage  
+ Możesz rozpocząć od utworzenia projektu VSIX (**plik/nowy/projekt/Visual C#/rozszerzalny/projekt VSIX**) i dodania pakietu VSPackage do projektu (kliknij prawym przyciskiem myszy projekt, a następnie **Dodaj/nowy element/element/rozszerzalny/rozszerzanie/pakiet Visual Studio**). Następnie możesz utworzyć usługi i dodać te usługi do pakietu.  
   
-1. Pochodzi pakiet z <xref:Microsoft.VisualStudio.Shell.AsyncPackage>.  
+1. Utwórz pakiet z programu <xref:Microsoft.VisualStudio.Shell.AsyncPackage> .  
   
-2. Jeśli udostępniasz usług, których wykonywanie kwerend może spowodować, że można załadować pakietu:  
+2. Jeśli dostarczasz usługi, których wykonywanie zapytania może spowodować załadowanie pakietu:  
   
-    Aby wskazać w programie Visual Studio, czy pakiet jest bezpieczny dla tła ładowania oraz zdecydować się na to zachowanie usługi <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> należy ustawić **AllowsBackgroundLoading** właściwości na wartość true w Konstruktorze atrybutu.  
+    Aby wskazać programowi Visual Studio, że pakiet jest bezpieczny do załadowania w tle i aby to zrobić, <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> należy ustawić właściwość **AllowsBackgroundLoading** na true w konstruktorze atrybutu.  
   
    ```csharp  
    [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]  
   
    ```  
   
-    Aby wskazać w programie Visual Studio, bezpiecznego do utworzenia wystąpienia usługi w wątku w tle, należy ustawić <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttributeBase.IsAsyncQueryable%2A> właściwości na wartość true w <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> konstruktora.  
+    Aby wskazać programowi Visual Studio bezpieczne wystąpienie usługi w wątku w tle, należy ustawić <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttributeBase.IsAsyncQueryable%2A> Właściwość na wartość true w <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> konstruktorze.  
   
    ```csharp  
    [ProvideService(typeof(SMyTestService), IsAsyncQueryable = true)]  
   
    ```  
   
-3. Jeśli są ładowane za pośrednictwem interfejsu użytkownika kontekstów, a następnie należy określić **PackageAutoLoadFlags.BackgroundLoad** dla <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> lub wartość (0x2) do flag zapisywane jako wartość wpisu automatycznie załadować do pakietu.  
+3. W przypadku ładowania za pomocą kontekstów interfejsu użytkownika należy określić **PackageAutoLoadFlags. BackgroundLoad** dla <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> lub wartość (0x2) do flag zapisanych jako wartość wpisu ładowania automatyczne pakietu.  
   
    ```csharp  
    [ProvideAutoLoad(UIContextGuid, PackageAutoLoadFlags.BackgroundLoad)]  
   
    ```  
   
-4. W przypadku inicjowania asynchroniczne zadania do wykonania należy zastąpić <xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>. Usuń **Initialize()** metody dostarczone przez szablon VSIX. ( **Initialize()** method in Class metoda **AsyncPackage** jest zapieczętowany). Można użyć dowolnego z <xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A> metod dodawania asynchronicznych usług do pakietu.  
+4. Jeśli asynchroniczna Inicjalizacja została zainicjowana, należy przesłonić <xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A> . Usuń metodę **Initialize ()** dostarczoną przez szablon VSIX. (Metoda **Initialize ()** w **AsyncPackage** jest zapieczętowana). <xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A>Aby dodać usługi asynchroniczne do pakietu, można użyć dowolnej z tych metod.  
   
-    UWAGA: Aby wywołać **podstawowej. InitializeAsync()** , można zmienić kod źródłowy, aby:  
+    Uwaga: aby wywołać **base.InitializeAsync ()**, możesz zmienić kod źródłowy na:  
   
    ```csharp  
    await base.InitializeAsync(cancellationToken, progress);  
    ```  
   
-5. Możesz należy uważać, aby nie wprowadzać RPC (Usuń wywoływanie procedur) w kodzie inicjowania asynchroniczne (w **InitializeAsync**). One może wystąpić, gdy wywołujesz <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> bezpośrednio lub pośrednio.  Podczas ładowania synchronizacji są wymagane, wątek interfejsu użytkownika zostanie zablokowane, używając <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>. Domyślny model blokowania wyłącza RPC. Oznacza to, że Jeśli spróbujesz użyć wywołania RPC ze swojej zadań asynchronicznych, będzie zakleszczenie wtedy wątku interfejsu użytkownika jest oczekiwanie pakietu do załadowania. Ogólne alternatywą jest do organizowania kodu do wątku interfejsu użytkownika, jeśli to konieczne, przy użyciu polecenia podobnego **sprzęganiu fabryki zadań**firmy <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> lub inny mechanizm, który nie korzysta z usługi RPC.  Nie używaj **ThreadHelper.Generic.Invoke** lub ogólnie blokuje wątek wywołujący, oczekiwanie na wątek interfejsu użytkownika.  
+5. Należy zachować ostrożność, aby nie wykonywać zdalnych wywołań procedur (usuwania wywołania procedury) z kodu inicjacji asynchronicznej (w **InitializeAsync**). Mogą wystąpić w przypadku wywołania <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> bezpośrednio lub pośrednio.  Gdy wymagane są obciążenia synchronizacji, wątek interfejsu użytkownika blokuje użycie <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> . Domyślny model blokowania wyłącza zdalne wywołania procedury. Oznacza to, że jeśli spróbujesz użyć wywołania RPC z zadań asynchronicznych, wystąpi zakleszczenie, jeśli wątek interfejsu użytkownika zaczeka na załadowanie pakietu. Ogólna alternatywa polega na kierowaniu kodu do wątku interfejsu użytkownika, jeśli jest to konieczne przy użyciu **dołączanej fabryki zadań** <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> lub innego mechanizmu, który nie korzysta z wywołania RPC.  NIE należy używać **ThreadHelper. Generic. Invoke** ani ogólnie blokować wątek wywołujący oczekujący na przejście do wątku interfejsu użytkownika.  
   
-    UWAGA: Należy unikać używania **GetService** lub **QueryService** w swojej **InitializeAsync** metody. Jeśli masz ich użyć, należy najpierw przełącz do wątku interfejsu użytkownika. Alternatywą jest użycie <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> z Twojej **AsyncPackage** (przez rzutowanie jego <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>.)  
+    Uwaga: należy unikać używania metody **GetService** lub **QueryService** w metodzie **InitializeAsync** . Jeśli musisz korzystać z tych funkcji, musisz najpierw przełączyć się do wątku interfejsu użytkownika. Alternatywą jest użycie <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> z **AsyncPackage** (przez rzutowanie na <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider> .)  
   
-   C#: Utwórz AsyncPackage:  
+   C#: Tworzenie elementu AsyncPackage:  
   
 ```csharp  
 [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]       
@@ -72,29 +72,29 @@ public sealed class TestPackage : AsyncPackage
 }  
 ```  
   
-## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Konwertowanie istniejącego pakietu VSPackage na AsyncPackage  
- Większość pracy jest taka sama, jak podczas tworzenia nowego **AsyncPackage**. Należy wykonać kroki od 1 do 5 powyżej. Należy również wykonać wyjątkową ostrożność od następujących czynników:  
+## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Konwertuj istniejący pakietu VSPackage na AsyncPackage  
+ Większość pracy jest taka sama jak w przypadku tworzenia nowego **AsyncPackage**. Należy wykonać kroki od 1 do 5 powyżej. Należy również zachować szczególną ostrożność w następujących kwestiach:  
   
-1. Pamiętaj, aby usunąć **zainicjować** zastąpienie miał w pakiecie.  
+1. Pamiętaj, aby usunąć **zastępowanie** zastępujące w pakiecie.  
   
-2. Należy unikać zakleszczenia: Może być ukryta zdalnych wywołań procedury w kodzie, który teraz powinny być wykonywane dla wątku w tle. Należy upewnić się, że jeśli wykonujesz zdalnego wywołania procedury (np. **GetService**), musisz albo (1) Przełącz do wątku głównego, lub (2) Użyj asynchroniczną wersję interfejsu API, jeśli taki istnieje (np. **element GetServiceAsync**).  
+2. Unikaj zakleszczeń: w kodzie mogą istnieć ukryte zdalne wywołania procedury, które są teraz wykonywane w wątku w tle. Należy upewnić się, że w przypadku tworzenia zdalnego wywołania procedury (np. **GetService**), należy przełączyć się do głównego wątku lub (2) użyć asynchronicznej wersji interfejsu API (np. **GetServiceAsync**).  
   
-3. Nie Przełączaj pomiędzy wątkami zbyt często. Spróbuj zlokalizować pracy, która może nastąpić w wątku w tle. Powoduje to skrócenie czasu ładowania.  
+3. Nie przełączaj między wątkami zbyt często. Spróbuj zlokalizować działanie, które może wystąpić w wątku w tle. Pozwala to skrócić czas ładowania.  
   
-## <a name="querying-services-from-asyncpackage"></a>Podczas badania usługi AsyncPackage  
- **AsyncPackage** może lub nie może załadować asynchronicznie w zależności od obiektu wywołującego. Na przykład  
+## <a name="querying-services-from-asyncpackage"></a>Wykonywanie zapytań względem usług z AsyncPackage  
+ **AsyncPackage** może lub nie może ładować się asynchronicznie w zależności od obiektu wywołującego. Na przykład  
   
-- Jeśli element wywołujący o nazwie **GetService** lub **QueryService** (zarówno synchronicznych interfejsów API) lub  
+- Jeśli obiekt wywołujący o nazwie **GetService** lub **QueryService** (synchroniczne interfejsy API) lub  
   
-- Jeśli element wywołujący o nazwie **IVsShell::LoadPackage** (lub **IVsShell5::LoadPackageWithContext**) lub  
+- Jeśli obiekt wywołujący o nazwie **IVsShell:: LoadPackage** (lub **IVsShell5:: LoadPackageWithContext**) lub  
   
-- Obciążenie jest wyzwalany przez kontekstu interfejsu użytkownika, ale nie określono, że mogą być można ładować asynchronicznie w mechanizm kontekstu interfejsu użytkownika  
+- Obciążenie jest wyzwalane przez kontekst interfejsu użytkownika, ale nie określono mechanizmu kontekstu interfejsu użytkownika, który może ładować Cię asynchronicznie  
   
-  następnie pakietu zostanie załadowany synchronicznie.  
+  następnie pakiet zostanie załadowany synchronicznie.  
   
-  Należy zauważyć, że pakietu nadal ma szansy sprzedaży (w fazie asynchronicznego inicjowania) do pracy Wyłącz wątku interfejsu użytkownika do wątku interfejsu użytkownika zostanie zablokowane na ukończenie tej pracy. Jeśli obiekt wywołujący używa **IAsyncServiceProvider** asynchronicznie zapytania dla Twojej usługi, następnie obciążenia i inicjowania zostanie wykonane asynchronicznie zakładając, że nie są natychmiast zablokować w obiekcie wynikowym zadania.  
+  Należy pamiętać, że pakiet nadal ma szansę (w fazie inicjowania asynchronicznego) do pracy z wątkiem interfejsu użytkownika, chociaż wątek interfejsu użytkownika zostanie zablokowany dla ukończenia tego działania. Jeśli obiekt wywołujący używa **IAsyncServiceProvider** do asynchronicznego zapytania dla usługi, to obciążenie i Inicjalizacja zostaną wykonane asynchronicznie, przy założeniu, że nie będą natychmiast blokowane w obiekcie zadania.  
   
-  C#: Jak asynchronicznie zapytań usługi:  
+  C#: jak wysyłać zapytania do usługi asynchronicznej:  
   
 ```csharp  
 using Microsoft.VisualStudio.Shell;   

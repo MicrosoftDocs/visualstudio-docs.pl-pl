@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eccb9038b9fd929c713422aa79082c94ade512fa
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015934"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 1
@@ -86,7 +87,7 @@ ms.locfileid: "86015934"
 
 6. W polu **Nazwa** wprowadź **CustomActionProjectItem**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **CustomActionProjectItem** do **Eksplorator rozwiązań**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **CustomActionProjectItem** do **Eksplorator rozwiązań**.
 
 #### <a name="to-create-the-item-template-project"></a>Aby utworzyć projekt szablonu elementu
 
@@ -100,7 +101,7 @@ ms.locfileid: "86015934"
 
 5. W polu **Nazwa** wprowadź **ItemTemplate**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **ItemTemplate** do rozwiązania.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **ItemTemplate** do rozwiązania.
 
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia
 
@@ -112,7 +113,7 @@ ms.locfileid: "86015934"
 
 4. W polu **Nazwa** wprowadź **ProjectItemDefinition**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **ProjectItemDefinition** do rozwiązania i otwiera domyślny plik kodu Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **ProjectItemDefinition** do rozwiązania i otwiera domyślny plik kodu Class1.
 
 5. Usuń plik kodu Class1 z projektu.
 
@@ -448,7 +449,7 @@ ms.locfileid: "86015934"
 ## <a name="next-steps"></a>Następne kroki
  Po zakończeniu tego instruktażu można dodać kreatora do szablonu elementu. Gdy użytkownik dodaje niestandardowy element projektu akcji do projektu programu SharePoint, Kreator zbiera informacje o akcji (takie jak lokalizacja i adres URL, do którego należy przejść po wybraniu akcji) i dodaje te informacje do pliku *Elements.xml* w nowym elemencie projektu. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu, część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)
 - [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)

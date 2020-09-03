@@ -63,7 +63,7 @@
           href: context-menus-xml-schema-explorer.md
         - name: Integracja literałów XML
           href: integration-of-xml-literals-with-xml-schema-explorer.md
-    - name: Obszar roboczy
+    - name: Workspace
       items:
         - name: Omówienie widoków
           href: xml-schema-designer-workspace.md

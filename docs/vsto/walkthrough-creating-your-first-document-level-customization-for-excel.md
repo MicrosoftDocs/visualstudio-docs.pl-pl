@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d45461c7dab250cd43d7a25d8693658c7b8e164
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74566983"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel
@@ -49,15 +49,15 @@ ms.locfileid: "74566983"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-## <a name="create-the-project"></a>Utwórz projekt
+## <a name="create-the-project"></a>Tworzenie projektu
 
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>Aby utworzyć nowy projekt skoroszytu programu Excel w programie Visual Studio
 
-1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 2. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
 ::: moniker range="vs-2017"
-3. W okienku szablony rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic**, a następnie rozwiń węzeł **Office/SharePoint**.
+3. W okienku szablony rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie rozwiń węzeł **Office/SharePoint**.
 
 4. W rozwiniętym węźle **Office/SharePoint** wybierz węzeł **dodatki narzędzi VSTO** .
 
@@ -84,13 +84,13 @@ ms.locfileid: "74566983"
 
    - *FirstWorkbookCustomization*. xlsx — reprezentuje skoroszyt programu Excel w projekcie. Zawiera wszystkie arkusze i wykresy.
 
-   - Arkusz1 (plik *. vb* dla plików Visual Basic lub *CS* dla wizualizacji C#) — arkusz, który udostępnia powierzchnię projektu i kod dla pierwszego arkusza w skoroszycie. Aby uzyskać więcej informacji, zobacz [arkusz elementów hosta](../vsto/worksheet-host-item.md).
+   - Arkusz1 (plik *. vb* dla plików Visual Basic lub *CS* dla programu Visual C#) — arkusz, który udostępnia powierzchnię projektu i kod dla pierwszego arkusza w skoroszycie. Aby uzyskać więcej informacji, zobacz [arkusz elementów hosta](../vsto/worksheet-host-item.md).
 
-   - Arkusz Arkusz2 (plik *. vb* dla Visual Basic lub plik *. cs* dla C#wizualizacji) — skoroszyt, który udostępnia powierzchnię projektu i kod dla drugiego arkusza w skoroszycie.
+   - Arkusz Arkusz2 (plik *. vb* dla pliku Visual Basic lub *CS* dla programu Visual C#) — skoroszyt zawierający powierzchnię projektu i kod dla drugiego arkusza w skoroszycie.
 
-   - Sheet3 (plik *. vb* dla plików Visual Basic lub *CS* dla wizualizacji C#) — arkusz, który udostępnia powierzchnię projektu i kod dla trzeciego arkusza w skoroszycie.
+   - Sheet3 (plik *. vb* dla pliku Visual Basic lub *CS* dla programu Visual C#) — arkusz, który udostępnia powierzchnię projektu i kod dla trzeciego arkusza w skoroszycie.
 
-   - ThisWorkbook (plik *. vb* dla plików Visual Basic lub *CS* dla wizualizacji C#) — zawiera powierzchnię projektowania i kod dla dostosowań na poziomie skoroszytu. Aby uzyskać więcej informacji, zobacz [skoroszyt element hosta](../vsto/workbook-host-item.md).
+   - ThisWorkbook (plik *. vb* dla pliku Visual Basic lub *CS* dla programu Visual C#) — zawiera powierzchnię projektowania i kod dla dostosowań na poziomie skoroszytu. Aby uzyskać więcej informacji, zobacz [skoroszyt element hosta](../vsto/workbook-host-item.md).
 
      Plik kodu Arkusz1 zostanie automatycznie otwarty w projektancie.
 
@@ -104,7 +104,7 @@ ms.locfileid: "74566983"
 
 2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik kodu **Arkusz1** , a następnie kliknij pozycję **Projektant widoków**.
 
-     \- lub-
+     \- oraz
 
      W **Eksplorator rozwiązań**kliknij dwukrotnie plik kodu **Arkusz1** .
 
@@ -125,9 +125,9 @@ ms.locfileid: "74566983"
 
  Następnie Dodaj kod do pliku kodu Arkusz1. Nowy kod używa modelu obiektów programu Excel do dodawania drugiego wiersza tekstu do skoroszytu. Domyślnie plik kodu Arkusz1 zawiera następujący wygenerowany kod:
 
-- Częściowa definicja klasy `Sheet1`, która reprezentuje model programowania arkusza i zapewnia dostęp do modelu obiektów programu Excel. Aby uzyskać więcej informacji, należy zapoznać się z [arkuszem elementów hosta](../vsto/worksheet-host-item.md) i [modelu obiektów programu Word](../vsto/word-object-model-overview.md). Pozostała część klasy `Sheet1` jest zdefiniowana w ukrytym pliku kodu, który nie powinien być modyfikowany.
+- Częściowa definicja `Sheet1` klasy, która reprezentuje model programowania arkusza i zapewnia dostęp do modelu obiektów programu Excel. Aby uzyskać więcej informacji, należy zapoznać się z [arkuszem elementów hosta](../vsto/worksheet-host-item.md) i [modelu obiektów programu Word](../vsto/word-object-model-overview.md). Pozostała część `Sheet1` klasy jest zdefiniowana w ukrytym pliku kodu, który nie powinien być modyfikowany.
 
-- Programy obsługi zdarzeń `Sheet1_Startup` i `Sheet1_Shutdown`. Te programy obsługi zdarzeń są wywoływane, gdy program Excel ładuje i zwalnia dostosowanie. Te programy obsługi zdarzeń umożliwiają zainicjowanie dostosowania podczas ładowania i oczyszczenie zasobów używanych przez dostosowanie podczas jego zwalniania. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
+- `Sheet1_Startup` `Sheet1_Shutdown` Programy obsługi zdarzeń i. Te programy obsługi zdarzeń są wywoływane, gdy program Excel ładuje i zwalnia dostosowanie. Te programy obsługi zdarzeń umożliwiają zainicjowanie dostosowania podczas ładowania i oczyszczenie zasobów używanych przez dostosowanie podczas jego zwalniania. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>Aby dodać drugi wiersz tekstu do arkusza przy użyciu kodu
 
@@ -135,7 +135,7 @@ ms.locfileid: "74566983"
 
      Plik kodu zostanie otwarty w programie Visual Studio.
 
-2. Zastąp procedurę obsługi zdarzeń `Sheet1_Startup` poniższym kodem. Po otwarciu Arkusz1 ten kod dodaje drugi wiersz tekstu do arkusza.
+2. Zastąp `Sheet1_Startup` procedurę obsługi zdarzeń poniższym kodem. Po otwarciu Arkusz1 ten kod dodaje drugi wiersz tekstu do arkusza.
 
      [!code-csharp[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelWorkbookTutorial/Sheet1.cs#1)]
      [!code-vb[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelWorkbookTutorial/Sheet1.vb#1)]
@@ -182,9 +182,9 @@ ms.locfileid: "74566983"
 
 - Wdrażanie dostosowań na poziomie dokumentu dla programu Excel: [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Programowanie rozwiązań pakietu Office &#40;— Omówienie&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Omówienie programowania rozwiązań dla pakietu Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Rozwiązania programu Excel](../vsto/excel-solutions.md)
 - [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)
 - [Model obiektów programu Excel — Omówienie](../vsto/excel-object-model-overview.md)

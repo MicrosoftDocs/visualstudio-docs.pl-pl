@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5e5221d1cce065a352051ca700cf0fc5ef4ae843
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015632"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Przewodnik: rozszerzona Eksplorator serwera do wyświetlania składników Web Part
@@ -71,7 +72,7 @@ ms.locfileid: "86015632"
 
 2. Na pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**.
 
-3. W oknie dialogowym **Nowy projekt** rozwiń węzły **Visual C#** lub **Visual Basic** , a następnie wybierz węzeł **rozszerzalności** .
+3. W oknie dialogowym  **Nowy projekt** rozwiń węzły **Visual C#** lub **Visual Basic** , a następnie wybierz węzeł **rozszerzalności** .
 
     > [!NOTE]
     > Węzeł **rozszerzalności** jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz sekcję wymagania wstępne we wcześniejszej części tego tematu.
@@ -80,7 +81,7 @@ ms.locfileid: "86015632"
 
 5. Wybierz szablon **projektu VSIX** , nazwij projekt **WebPartNode**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **WebPartNode** do **Eksplorator rozwiązań**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **WebPartNode** do **Eksplorator rozwiązań**.
 
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia
 
@@ -92,7 +93,7 @@ ms.locfileid: "86015632"
 
 4. Na liście szablonów projektu wybierz pozycję **Biblioteka klas**, nazwij projekt **WebPartNodeExtension**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **WebPartNodeExtension** do rozwiązania i otwiera domyślny plik kodu Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **WebPartNodeExtension** do rozwiązania i otwiera domyślny plik kodu Class1.
 
 5. Usuń plik kodu Class1 z projektu.
 
@@ -100,13 +101,13 @@ ms.locfileid: "86015632"
 
 1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
-2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual C#** Node lub **Visual Basic** , a następnie wybierz węzeł **systemu Windows** .
+2. W oknie dialogowym  **Nowy projekt** rozwiń węzeł **Visual C#** Node lub **Visual Basic** , a następnie wybierz węzeł **systemu Windows** .
 
 3. W górnej części okna dialogowego wybierz pozycję **.NET Framework 3,5** na liście wersji .NET Framework.
 
 4. Na liście szablonów projektu wybierz pozycję **Biblioteka klas**, nazwij projekt **WebPartCommands**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **WebPartCommands** do rozwiązania i otwiera domyślny plik kodu Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **WebPartCommands** do rozwiązania i otwiera domyślny plik kodu Class1.
 
 5. Usuń plik kodu Class1 z projektu.
 
@@ -153,7 +154,7 @@ ms.locfileid: "86015632"
 
 4. Wybierz strzałkę obok przycisku **Dodaj** , a następnie wybierz polecenie **Dodaj jako link** w wyświetlonym menu.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje pliki kodu do projektu WebPartCommands jako linki. W związku z tym pliki kodu znajdują się w projekcie WebPartNodeExtension, ale kod w plikach są również kompilowane w projekcie WebPartCommands.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje pliki kodu do projektu WebPartCommands jako linki. W związku z tym pliki kodu znajdują się w projekcie WebPartNodeExtension, ale kod w plikach są również kompilowane w projekcie WebPartCommands.
 
 5. Otwórz menu skrótów dla projektu **WebPartCommands** i wybierz polecenie **Dodaj odwołanie**.
 
@@ -182,7 +183,7 @@ ms.locfileid: "86015632"
 
 3. Wybierz kartę **zasoby** , a następnie wybierz **ten projekt nie zawiera domyślnego pliku zasobów. Kliknij tutaj, aby utworzyć jedno** łącze.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]tworzy plik zasobów i otwiera go w projektancie.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tworzy plik zasobów i otwiera go w projektancie.
 
 4. W górnej części okna projektanta wybierz strzałkę obok pozycji menu **Dodaj zasób** , a następnie wybierz polecenie **Dodaj nową ikonę** w wyświetlonym menu.
 
@@ -291,7 +292,7 @@ ms.locfileid: "86015632"
     > [!NOTE]
     > Ta wartość odnosi się do `MefComponent` elementu w pliku Extension. vsixmanifest. Ten element określa nazwę zestawu rozszerzenia w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MefComponent element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-7. Z listy **Źródło** wybierz **projekt w bieżącym rozwiązaniu**.
+7. Z listy  **Źródło** wybierz **projekt w bieżącym rozwiązaniu**.
 
 8. Na liście **projekt** wybierz pozycję **WebPartNodeExtension** , a następnie wybierz przycisk **OK** .
 
@@ -368,7 +369,7 @@ ms.locfileid: "86015632"
 
 4. Zamknij oba wystąpienia programu Visual Studio (wystąpienie eksperymentalne i wystąpienie programu Visual Studio, w którym jest otwarte rozwiązanie WebPartNode).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozwiń węzeł połączenia programu SharePoint w Eksplorator serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Przewodnik: wywoływanie modelu obiektów klienta programu SharePoint w rozszerzeniu Eksplorator serwera](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 - [Edytor obrazów dla ikon](/cpp/windows/image-editor-for-icons)

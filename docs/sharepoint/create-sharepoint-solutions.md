@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2a7aaa8a5e5c8e6079c04b05d887138d294116dd
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016249"
 ---
 # <a name="create-sharepoint-solutions"></a>Tworzenie rozwiązań SharePoint

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c07c3257b8df0e671941ae08bc3738350e017a8a
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74567007"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word
@@ -49,15 +49,15 @@ ms.locfileid: "74567007"
 
 - Microsoft Word
 
-## <a name="create-the-project"></a>Utwórz projekt
+## <a name="create-the-project"></a>Tworzenie projektu
 
 ### <a name="to-create-a-new-word-document-project-in-visual-studio"></a>Aby utworzyć nowy projekt dokumentu programu Word w programie Visual Studio
 
-1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 2. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
 ::: moniker range="vs-2017"
-3. W okienku szablony rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic**, a następnie rozwiń węzeł **Office/SharePoint**.
+3. W okienku szablony rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie rozwiń węzeł **Office/SharePoint**.
 
 4. W rozwiniętym węźle **Office/SharePoint** wybierz węzeł **dodatki narzędzi VSTO** .
 
@@ -92,7 +92,7 @@ ms.locfileid: "74567007"
 
 2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik kodu **ThisDocument** , a następnie kliknij pozycję **Projektant widoków**.
 
-     \- lub-
+     \- oraz
 
      W **Eksplorator rozwiązań**kliknij dwukrotnie plik kodu **ThisDocument** .
 
@@ -110,9 +110,9 @@ ms.locfileid: "74567007"
 
  Następnie Dodaj kod do pliku kodu ThisDocument. Nowy kod używa modelu obiektów programu Word w celu dodania drugiego akapitu tekstu do dokumentu. Domyślnie plik kodu ThisDocument zawiera następujący wygenerowany kod:
 
-- Częściowa definicja klasy `ThisDocument`, która reprezentuje model programowania dokumentu i zapewnia dostęp do modelu obiektów programu Word. Aby uzyskać więcej informacji, zobacz dokument dotyczący [elementów hosta](../vsto/document-host-item.md) i [modelu obiektów programu Word](../vsto/word-object-model-overview.md). Pozostała część klasy `ThisDocument` jest zdefiniowana w ukrytym pliku kodu, który nie powinien być modyfikowany.
+- Częściowa definicja `ThisDocument` klasy, która reprezentuje model programowania dokumentu i zapewnia dostęp do modelu obiektów programu Word. Aby uzyskać więcej informacji, zobacz dokument dotyczący [elementów hosta](../vsto/document-host-item.md) i [modelu obiektów programu Word](../vsto/word-object-model-overview.md). Pozostała część `ThisDocument` klasy jest zdefiniowana w ukrytym pliku kodu, który nie powinien być modyfikowany.
 
-- Programy obsługi zdarzeń `ThisDocument_Startup` i `ThisDocument_Shutdown`. Te programy obsługi zdarzeń są wywoływane, gdy dokument zostanie otwarty i zamknięty. Te programy obsługi zdarzeń umożliwiają zainicjowanie dostosowania podczas otwierania dokumentu oraz czyszczenie zasobów używanych przez dostosowanie po zamknięciu dokumentu. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
+- `ThisDocument_Startup` `ThisDocument_Shutdown` Programy obsługi zdarzeń i. Te programy obsługi zdarzeń są wywoływane, gdy dokument zostanie otwarty i zamknięty. Te programy obsługi zdarzeń umożliwiają zainicjowanie dostosowania podczas otwierania dokumentu oraz czyszczenie zasobów używanych przez dostosowanie po zamknięciu dokumentu. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
 ### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>Aby dodać drugi akapit tekstu do dokumentu przy użyciu kodu
 
@@ -120,13 +120,13 @@ ms.locfileid: "74567007"
 
      Plik kodu zostanie otwarty w programie Visual Studio.
 
-2. Zastąp procedurę obsługi zdarzeń `ThisDocument_Startup` poniższym kodem. Gdy dokument zostanie otwarty, ten kod dodaje drugi akapit tekstu do dokumentu.
+2. Zastąp `ThisDocument_Startup` procedurę obsługi zdarzeń poniższym kodem. Gdy dokument zostanie otwarty, ten kod dodaje drugi akapit tekstu do dokumentu.
 
      [!code-vb[Trin_WordDocumentTutorial#1](../vsto/codesnippet/VisualBasic/FirstDocumentCustomization/ThisDocument.vb#1)]
      [!code-csharp[Trin_WordDocumentTutorial#1](../vsto/codesnippet/CSharp/FirstDocumentCustomization/ThisDocument.cs#1)]
 
     > [!NOTE]
-    > Ten kod używa wartości indeksu 1 w celu uzyskania dostępu do pierwszego akapitu we właściwości <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A>. Chociaż Visual Basic i wizualizacje C# używają tablic 0, Dolna granica tablicy większości kolekcji w modelu obiektów programu Word to 1. Aby uzyskać więcej informacji, zobacz [pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).
+    > Ten kod używa wartości indeksu 1 w celu uzyskania dostępu do pierwszego akapitu we <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> właściwości. Chociaż Visual Basic i Visual C# używają tablic opartych na liczbie 0, Dolna granica tablicy większości kolekcji w modelu obiektów programu Word to 1. Aby uzyskać więcej informacji, zobacz [pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).
 
 ## <a name="test-the-project"></a>Testowanie projektu
 
@@ -170,9 +170,9 @@ ms.locfileid: "74567007"
 
 - Wdrażanie dostosowań na poziomie dokumentu dla programu Word: [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Programowanie rozwiązań pakietu Office &#40;— Omówienie&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Omówienie programowania rozwiązań dla pakietu Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Rozwiązania programu Word](../vsto/word-solutions.md)
 - [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)
 - [Model obiektów programu Word — omówienie](../vsto/word-object-model-overview.md)

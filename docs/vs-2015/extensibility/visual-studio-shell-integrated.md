@@ -12,10 +12,10 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 907b71d82a3c630bedc48209e735d9cf817432ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543159"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (zintegrowany)
@@ -32,7 +32,7 @@ Zintegrowana powłoka programu Visual Studio obejmuje zintegrowane środowisko p
   
 ## <a name="features-in-the-integrated-shell"></a>Funkcje w zintegrowanej powłoce  
   
-|Obszar funkcji|Cecha|  
+|Obszar funkcji|Cechy|  
 |-|-|  
 |Obsługa języków|-   Brak|  
 |IDE|<ul><li>Ustawienia<br /><br /> <ul><li>Utwórz ustawienia</li><li>Importowanie i eksportowanie ustawień</li><li>Resetuj ustawienia</li></ul></li><li>Integracja z **zestawem narzędzi**</li><li>Integracja **Lista zadań**</li><li>Pomoc dotycząca integracji</li><li>**Opcje** — okno dialogowe</li><li>Zarządzanie czcionkami i kolorami</li><li>Okno **danych wyjściowych**</li><li>Okno **polecenia**</li><li>Zarządzanie oknem</li><li>Polecenia, menu i powiązania klawiszy</li><li>Środowisko uruchomieniowe języka specyficznego dla domeny (DSL)</li></ul>|  

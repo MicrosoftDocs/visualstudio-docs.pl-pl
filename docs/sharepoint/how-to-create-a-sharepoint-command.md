@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 15ea7ff86e90bf7a474f9d64c30a9803e3e20bf5
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016216"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Instrukcje: Tworzenie polecenia SharePoint
@@ -76,7 +77,7 @@ ms.locfileid: "86016216"
 ## <a name="deploying-the-command"></a>Wdrażanie polecenia
  Aby wdrożyć polecenie, należy uwzględnić zestaw poleceń w tym samym [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiecie rozszerzenia (*VSIX*) z zestawem rozszerzeń, który używa polecenia. Należy również dodać wpis dla zestawu poleceń w pliku Extension. vsixmanifest. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wywoływanie modeli obiektów programu SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Instrukcje: wykonywanie polecenia SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [Przewodnik: rozszerzona Eksplorator serwera do wyświetlania składników Web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

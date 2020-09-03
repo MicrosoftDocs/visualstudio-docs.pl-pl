@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef80ac1c7e64eb3591e2e6b09de97c77a26e46f8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532370"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Przegląd narzędzi językowych właściwych dla domeny
@@ -74,7 +74,7 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
 
  Podczas kompilowania i uruchamiania rozwiązania narzędzi DSL w programie Visual Studio drugie wystąpienie programu Visual Studio pokazuje, w jaki sposób język specyficzny dla domeny będzie wyglądał użytkownikowi w języku. Po zweryfikowaniu, że wszystko działa prawidłowo, można rozpowszechnić `.vsix` plik, który można znaleźć w folderze Build projektu DslPackage. Ten plik może służyć do instalowania programu DSL jako rozszerzenia programu Visual Studio na innych komputerach.  Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wystąpienie eksperymentalne](../extensibility/the-experimental-instance.md)
 - [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

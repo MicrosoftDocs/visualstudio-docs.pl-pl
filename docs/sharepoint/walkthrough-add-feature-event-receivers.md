@@ -17,9 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f40358c157ec24557947f36b0c6eadb6d8a2622d
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015357"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Przewodnik: dodawanie odbiorców zdarzeń funkcji
@@ -48,7 +49,7 @@ ms.locfileid: "86015357"
 
 - Obsługiwane wersje systemu Microsoft Windows i programu SharePoint.
 
-- Program Visual Studio.
+- Programu Visual Studio.
 
 ## <a name="create-a-feature-event-receiver-project"></a>Utwórz projekt odbiorcy zdarzeń funkcji
  Najpierw utwórz projekt, aby zawierał odbiorcę zdarzeń funkcji.
@@ -116,7 +117,7 @@ ms.locfileid: "86015357"
 
      Zwróć uwagę, że anons pojawia się na liście **Anonsy** Po zdezaktywowaniu funkcji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Tworzenie odbiorcy zdarzeń](../sharepoint/how-to-create-an-event-receiver.md)
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

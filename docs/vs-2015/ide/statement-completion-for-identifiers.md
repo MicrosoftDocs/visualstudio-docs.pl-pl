@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f5e52bf174e5a41d79fa23bfca39121db668e40e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72643857"
 ---
 # <a name="statement-completion-for-identifiers"></a>Uzupełnianie składni dla identyfikatorów
@@ -50,9 +50,9 @@ Język JavaScript nie dopuszcza jawnego wpisywania dla deklaracji zmiennych. W z
 
 - Obiekt znajduje się w funkcji, która jest wywoływana w odpowiedzi na zdarzenie. W czasie projektowania aparat IntelliSense nie może określić typu obiektów używanych w tej sytuacji.
 
-   Jeśli aparat IntelliSense może określić, że zdarzenie ma być wywoływane, zwykle za pomocą `addEventListener` dla zdarzenia w aktywnym dokumencie, dostępne są bardziej dokładne informacje IntelliSense.
+   Jeśli aparat IntelliSense może określić, że zdarzenie ma zostać wywołane, zwykle przez użycie `addEventListener` dla zdarzenia w aktywnym dokumencie, dostępne są bardziej dokładne informacje IntelliSense.
 
-  Gdy technologia IntelliSense nie może zidentyfikować obiektu, aparat IntelliSense wypełnia listę uzupełniania nazwanymi jednostkami lub identyfikatorami, które znajdują się w aktywnym dokumencie. Gdy lista uzupełniania zawiera te identyfikatory, obok nich są wyświetlane ikony informacji. Ponadto etykietka narzędzia dla każdego identyfikatora wskazuje, że wyrażenie jest nieznane. Na poniższej ilustracji przedstawiono opcje uzupełniania instrukcji dla obiektu typu `light`, którego nie można zidentyfikować, ponieważ obiekt i jego właściwości są niezdefiniowane. Jednak Właściwość `intensity` jest dostępna na liście identyfikatorów, ponieważ została użyta w funkcji `illuminate`.
+  Gdy technologia IntelliSense nie może zidentyfikować obiektu, aparat IntelliSense wypełnia listę uzupełniania nazwanymi jednostkami lub identyfikatorami, które znajdują się w aktywnym dokumencie. Gdy lista uzupełniania zawiera te identyfikatory, obok nich są wyświetlane ikony informacji. Ponadto etykietka narzędzia dla każdego identyfikatora wskazuje, że wyrażenie jest nieznane. Na poniższej ilustracji przedstawiono opcje uzupełniania instrukcji dla obiektu typu `light` , którego nie można zidentyfikować, ponieważ obiekt i jego właściwości są niezdefiniowane. Jednak `intensity` Właściwość jest dostępna na liście identyfikatorów, ponieważ została użyta w `illuminate` funkcji.
 
   **Opcje uzupełniania dla obiektu, którego nie można zidentyfikować**
 
@@ -61,4 +61,4 @@ Język JavaScript nie dopuszcza jawnego wpisywania dla deklaracji zmiennych. W z
   Listę uzupełniania dla obiektu można przesłonić, korzystając z komentarzy do dokumentacji XML lub funkcji rozszerzenia JavaScript IntelliSense. Korzystając z tych funkcji, możesz podać informacje o typie i więcej opisowych informacji IntelliSense, gdy może nie być dostępny w inny sposób. Aby uzyskać więcej informacji, zobacz [Rozszerzanie kodu JavaScript IntelliSense](../ide/extending-javascript-intellisense.md) i [tworzenie komentarzy do dokumentacji XML](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).
 
 ## <a name="see-also"></a>Zobacz też
- [Funkcja IntelliSense dla języka JavaScript](../ide/javascript-intellisense.md)
+ [JavaScript IntelliSense](../ide/javascript-intellisense.md)

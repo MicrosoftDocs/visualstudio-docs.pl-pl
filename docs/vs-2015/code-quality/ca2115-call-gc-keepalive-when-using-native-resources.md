@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c668172ca318000068fb4e90f4848e456c32208d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543627"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Wywołaj funkcję GC.KeepAlive w przypadku korzystania z zasobów natywnych
@@ -53,7 +53,7 @@ ms.locfileid: "85543627"
   Uważnie Przejrzyj inne komunikaty przed wyłączeniem ich. Ta zasada wykrywa błędy, które są trudne do odtworzenia i debugowania.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie nie `BadMethod` zawiera wywołania do i w związku z `GC.KeepAlive` tym narusza zasady. `GoodMethod`zawiera poprawiony kod.
+ W poniższym przykładzie nie `BadMethod` zawiera wywołania do i w związku z `GC.KeepAlive` tym narusza zasady. `GoodMethod` zawiera poprawiony kod.
 
 > [!NOTE]
 > Ten przykład jest pseudo kod, chociaż kod kompiluje i uruchamia, ostrzeżenie nie zostanie wyzwolone, ponieważ zasób niezarządzany nie został utworzony ani zwolniony.

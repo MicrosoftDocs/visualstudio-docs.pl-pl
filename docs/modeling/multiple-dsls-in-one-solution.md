@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542600"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Wiele języków DSL w jednym rozwiązaniu
@@ -44,11 +44,11 @@ Do integracji wielu językami DSL można użyć kilku technik. Aby uzyskać wię
 
    2. Dla każdego DSL wybierz pozycję **Dodaj zawartość** i Dodaj:
 
-       - `Dsl*`projekt jako **składnik MEF**
+       - `Dsl*` projekt jako **składnik MEF**
 
-       - `DslPackage*`projekt jako **składnik MEF**
+       - `DslPackage*` projekt jako **składnik MEF**
 
-       - `DslPackage*`projekt jako **pakiet programu vs**
+       - `DslPackage*` projekt jako **pakiet programu vs**
 
 3. Skompiluj rozwiązanie.
 

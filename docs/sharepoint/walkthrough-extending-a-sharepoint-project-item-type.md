@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f949329c7db71386a12c3ab8d7fccf1483b8cca2
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015672"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Przewodnik: zwiększanie typu elementu projektu SharePoint
@@ -76,7 +77,7 @@ ms.locfileid: "86015672"
 
 6. W polu **Nazwa** wprowadź **GenerateExternalDataLists**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **GenerateExternalDataLists** do **Eksplorator rozwiązań**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **GenerateExternalDataLists** do **Eksplorator rozwiązań**.
 
 7. Jeśli plik source. Extension. vsixmanifest nie zostanie otwarty automatycznie, otwórz jego menu skrótów w projekcie GenerateExternalDataLists, a następnie wybierz polecenie **Otwórz** .
 
@@ -94,7 +95,7 @@ ms.locfileid: "86015672"
 
 5. W polu **Nazwa** wprowadź **BdcProjectItemExtension**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **BdcProjectItemExtension** do rozwiązania i otwiera domyślny plik kodu Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **BdcProjectItemExtension** do rozwiązania i otwiera domyślny plik kodu Class1.
 
 6. Usuń plik kodu Class1 z projektu.
 
@@ -291,7 +292,7 @@ ms.locfileid: "86015672"
 
 5. Zamknij oba wystąpienia programu Visual Studio (wystąpienie eksperymentalne i wystąpienie, w którym jest otwarte rozwiązanie GenerateExternalDataLists).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Poszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Tworzenie modelu łączności danych firmy](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Projektowanie modelu łączności danych firmy](../sharepoint/designing-a-business-data-connectivity-model.md)

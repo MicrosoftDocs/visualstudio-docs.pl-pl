@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3c9651f4003647e18ba52e916aeb21e176274de5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287938"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Instrukcje: tworzenie wtyczki testu wydajności sieci Web

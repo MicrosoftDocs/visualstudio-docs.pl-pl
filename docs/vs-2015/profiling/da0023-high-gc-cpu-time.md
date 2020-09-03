@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 667dc76019259faa12d41b7e4b7bf383bcda2258
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542925"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023: Duże zużycie czasu procesora przez odzyskiwanie pamięci
@@ -27,7 +27,7 @@ ms.locfileid: "85542925"
 |-|-|  
 |Identyfikator reguły|DA0023|  
 |Kategoria|Użycie .NET Framework|  
-|Metoda profilowania|Wszystkie|  
+|Metoda profilowania|Wszystko|  
 |Komunikat|Czas trwania operacji odzyskiwania pamięci (%) jest stosunkowo wysoki. Ten wskaźnik nadmiernej ilości wyrzucania elementów bezużytecznych może mieć wpływ na czas odpowiedzi aplikacji. Można zebrać dane alokacji pamięci platformy .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci, która jest stosowana przez aplikację.|  
 |Typ reguły|Informacyjne|  
   

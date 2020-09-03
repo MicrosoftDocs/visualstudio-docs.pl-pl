@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 936c6b2ee9e05d059c09c2aa074829b35b6ca5fd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287990"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Instrukcje: Tworzenie testu jednostkowego opartego na danych
@@ -152,7 +152,7 @@ Parametry połączenia zależą od typu źródła danych, ale powinny zawierać 
 
 ### <a name="use-testcontextdatarow-to-access-the-data"></a>Używanie TestContext. DataRow do uzyskiwania dostępu do danych
 
-Aby uzyskać dostęp do danych w `AddIntegersData` tabeli, użyj `TestContext.DataRow` indeksatora. `DataRow`jest <xref:System.Data.DataRow> obiektem, więc pobiera wartości kolumn według nazw indeksu lub kolumn. Ponieważ wartości są zwracane jako obiekty, przekonwertuj je na odpowiedni typ:
+Aby uzyskać dostęp do danych w `AddIntegersData` tabeli, użyj `TestContext.DataRow` indeksatora. `DataRow` jest <xref:System.Data.DataRow> obiektem, więc pobiera wartości kolumn według nazw indeksu lub kolumn. Ponieważ wartości są zwracane jako obiekty, przekonwertuj je na odpowiedni typ:
 
 ```csharp
 int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);

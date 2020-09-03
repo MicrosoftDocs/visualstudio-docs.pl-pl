@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b524c9d630f30edd226265ac150ef7ec4f6c60d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651074"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji do obsługi danych za pomocą pakietu ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas tworzenia aplikacji, która operuje na danych w bazie danych, wykonywane są podstawowe zadania, takie jak Definiowanie parametrów połączenia, wstawianie danych i uruchamianie procedur składowanych. Postępując zgodnie z tym tematem, można dowiedzieć się, jak korzystać z bazy danych z poziomu prostej Windows Forms "Formularze danych" przy użyciu C# wizualizacji lub Visual Basic i ADO.NET.  Wszystkie technologie danych platformy .NET, w tym zestawy, LINQ to SQL i Entity Framework, ostatecznie wykonują czynności, które są bardzo podobne do tych, które przedstawiono w tym artykule.
+Podczas tworzenia aplikacji, która operuje na danych w bazie danych, wykonywane są podstawowe zadania, takie jak Definiowanie parametrów połączenia, wstawianie danych i uruchamianie procedur składowanych. Postępując zgodnie z tym tematem, można dowiedzieć się, jak korzystać z bazy danych z poziomu prostej Windows Forms "Formularze danych" przy użyciu języka Visual C# lub Visual Basic i ADO.NET.  Wszystkie technologie danych platformy .NET, w tym zestawy, LINQ to SQL i Entity Framework, ostatecznie wykonują czynności, które są bardzo podobne do tych, które przedstawiono w tym artykule.
 
  W tym artykule przedstawiono prosty sposób pobierania danych z bazy danych w bardzo szybki sposób. Jeśli aplikacja wymaga modyfikacji danych w sposób nieuproszczony i zaktualizowania bazy danych, należy rozważyć użycie Entity Framework i użycie powiązania danych w celu automatycznego synchronizowania kontrolek interfejsu użytkownika z zmianami danych źródłowych.
 
@@ -39,7 +39,7 @@ Podczas tworzenia aplikacji, która operuje na danych w bazie danych, wykonywane
 
 - [Przechowywanie parametrów połączenia](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)
 
-- [Pobierz parametry połączenia](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)
+- [Pobieranie parametrów połączenia](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)
 
 - [Napisz kod dla formularzy](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)
 
@@ -54,14 +54,14 @@ Podczas tworzenia aplikacji, która operuje na danych w bazie danych, wykonywane
 
 - Niewielka Przykładowa baza danych, którą tworzysz, wykonując kroki opisane w temacie [Tworzenie bazy danych SQL przy użyciu skryptu](../data-tools/create-a-sql-database-by-using-a-script.md).
 
-- Parametry połączenia dla bazy danych po jej skonfigurowaniu. Tę wartość można znaleźć, otwierając **Eksplorator obiektów SQL Server**, otwierając menu skrótów dla bazy danych, wybierając **Właściwości**, a następnie przewijając do właściwości **ConnectionString** .
+- Parametry połączenia dla bazy danych po jej skonfigurowaniu. Tę wartość można znaleźć, otwierając **Eksplorator obiektów SQL Server**, otwierając menu skrótów dla bazy danych, wybierając **Właściwości**, a następnie przewijając do właściwości **ConnectionString**  .
 
-  W tym temacie założono, że znasz podstawowe funkcje środowiska IDE programu Visual Studio i można utworzyć Windows Forms aplikację, dodać formularze do tego projektu, umieścić przyciski i inne kontrolki na tych formularzach, ustawić właściwości tych formantów i prostych zdarzeń kodu . Jeśli nie masz doświadczenia z tymi zadaniami, zalecamy ukończenie [wprowadzenie przy użyciu C# wizualizacji i Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) przed uruchomieniem tego tematu.
+  W tym temacie założono, że znasz podstawowe funkcje środowiska IDE programu Visual Studio i można utworzyć Windows Forms aplikację, dodać formularze do tego projektu, umieścić przyciski i inne kontrolki na tych formularzach, ustawić właściwości tych formantów i kod prostych zdarzeń. Jeśli nie masz doświadczenia z tymi zadaniami, zalecamy ukończenie [wprowadzenie przy użyciu języka Visual C# i Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) przed uruchomieniem tego tematu.
 
-## <a name="BKMK_setupthesampledatabase"></a>Konfigurowanie przykładowej bazy danych
+## <a name="set-up-the-sample-database"></a><a name="BKMK_setupthesampledatabase"></a> Konfigurowanie przykładowej bazy danych
  Przykładowa baza danych dla tego instruktażu składa się z tabel klienta i zamówień. Tabele nie zawierają początkowo żadnych danych, ale po uruchomieniu aplikacji, którą utworzysz, należy dodać dane. Baza danych ma również pięć prostych procedur składowanych. [Tworzenie bazy danych SQL przy użyciu skryptu](../data-tools/create-a-sql-database-by-using-a-script.md) zawiera skrypt Transact-SQL, który tworzy tabele, klucze podstawowe i obce, ograniczenia oraz procedury składowane.
 
-## <a name="BKMK_createtheformsandaddcontrols"></a>Tworzenie formularzy i Dodawanie kontrolek
+## <a name="create-the-forms-and-add-controls"></a><a name="BKMK_createtheformsandaddcontrols"></a> Tworzenie formularzy i Dodawanie kontrolek
 
 1. Utwórz projekt dla Windows Forms aplikacji, a następnie nadaj mu nazwę SimpleDataApp.
 
@@ -119,16 +119,16 @@ Podczas tworzenia aplikacji, która operuje na danych w bazie danych, wykonywane
 |Przycisk|Nazwa = btnFillOrder|
 |Przycisk|Nazwa = btnFinishUpdates|
 
-## <a name="BKMK_storetheconnectionstring"></a>Przechowywanie parametrów połączenia
+## <a name="store-the-connection-string"></a><a name="BKMK_storetheconnectionstring"></a> Przechowywanie parametrów połączenia
  Gdy aplikacja próbuje otworzyć połączenie z bazą danych, aplikacja musi mieć dostęp do parametrów połączenia. Aby uniknąć wprowadzania ciągu ręcznie w każdym formularzu, należy przechowywać ciąg w pliku konfiguracji aplikacji w projekcie i utworzyć metodę zwracającą ciąg, gdy metoda jest wywoływana z dowolnej formy w aplikacji.
 
  Parametry połączenia można znaleźć w **Eksplorator obiektów SQL Server** przez kliknięcie prawym przyciskiem myszy bazy danych, wybranie **Właściwości**, a następnie znalezienie właściwości ConnectionString. Użyj kombinacji klawiszy Ctrl + A, aby wybrać ciąg.
 
 1. W **Eksplorator rozwiązań**wybierz węzeł **Właściwości** w ramach projektu, a następnie wybierz pozycję **Ustawienia. ustawienia**.
 
-2. W kolumnie **Nazwa** wprowadź `connString`.
+2. W kolumnie **Nazwa** wprowadź wartość `connString` .
 
-3. Na liście **Typ** wybierz pozycję **(parametry połączenia)** .
+3. Na liście **Typ** wybierz pozycję **(parametry połączenia)**.
 
 4. Z listy **zakres** wybierz pozycję **aplikacja**.
 
@@ -137,11 +137,11 @@ Podczas tworzenia aplikacji, która operuje na danych w bazie danych, wykonywane
 > [!NOTE]
 > W prawdziwej aplikacji należy przechowywać parametry połączenia bezpiecznie, zgodnie z opisem w temacie [Parametry połączenia i pliki konfiguracji](https://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).
 
-## <a name="BKMK_retrievetheconnectionstring"></a>Pobierz parametry połączenia
+## <a name="retrieve-the-connection-string"></a><a name="BKMK_retrievetheconnectionstring"></a> Pobierz parametry połączenia
 
-1. Na pasku menu wybierz kolejno opcje **projekt**  > **Dodaj odwołanie**, a następnie Dodaj odwołanie do elementu System. Configuration. dll.
+1. Na pasku menu wybierz pozycję **projekt**  >  **Dodaj odwołanie**, a następnie Dodaj odwołanie do System.Configuration.dll.
 
-2. Na pasku menu wybierz pozycję **projekt**  > **Dodaj klasę** , aby dodać plik klasy do projektu, a następnie Nazwij plik `Utility`.
+2. Na pasku menu wybierz pozycję **projekt**  >  **Dodaj klasę** , aby dodać plik klasy do projektu, a następnie Nazwij plik `Utility` .
 
      Program Visual Studio utworzy plik i wyświetli go w **Eksplorator rozwiązań**.
 
@@ -215,18 +215,18 @@ Podczas tworzenia aplikacji, która operuje na danych w bazie danych, wykonywane
 
     |Komentarz|Opis|
     |-------------|-----------------|
-    |Util-1|Dodaj przestrzeń nazw `System.Configuration`.|
+    |Util-1|Dodaj `System.Configuration` przestrzeń nazw.|
     |Util-2|Zdefiniuj zmienną, `returnValue` i zainicjuj ją do `null` (C#) lub `Nothing` (Visual Basic).|
-    |Util-3|Mimo że wprowadzono `connString` jako nazwę parametrów połączenia w oknie **Właściwości** , należy określić `"SimpleDataApp.Properties.Settings.connString"` (C#) lub `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) w kodzie.|
+    |Util-3|Mimo że wprowadzono `connString` jako nazwę parametrów połączenia w oknie **Właściwości** , musisz określić `"SimpleDataApp.Properties.Settings.connString"` (C#) lub `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) w kodzie.|
 
-## <a name="BKMK_writethecodefortheforms"></a>Napisz kod dla formularzy
+## <a name="write-the-code-for-the-forms"></a><a name="BKMK_writethecodefortheforms"></a> Napisz kod dla formularzy
  Ta sekcja zawiera krótkie przeglądy działania poszczególnych formularzy i pokazuje kod, który tworzy formularze. Numerowane Komentarze identyfikują sekcje kodu.
 
 ### <a name="navigation-form"></a>Formularz nawigacji
  Po uruchomieniu aplikacji zostanie otwarty formularz nawigacji. Przycisk **Dodaj konto** otwiera formularz newCustomer. Przycisk **Wypełnij lub Anuluj zamówienia** powoduje otwarcie formularza FillOrCancel. Przycisk **Zakończ** zamyka aplikację.
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Ustaw nawigację formularza startowego
- Jeśli używasz programu C#, w **Eksplorator rozwiązań**Otwórz program.cs, a następnie zmień wiersz `Application.Run` na: `Application.Run(new Navigation());`
+ Jeśli używasz języka C#, w **Eksplorator rozwiązań**Otwórz program.cs, a następnie zmień `Application.Run` wiersz na: `Application.Run(new Navigation());`
 
  Jeśli używasz Visual Basic, w **Eksplorator rozwiązań**, Otwórz okno **Właściwości** , wybierz kartę **aplikacja** , a następnie wybierz pozycję **SimpleDataApp. Nawigacja** na liście **formularz startowy** .
 
@@ -713,27 +713,27 @@ End Namespace
 |Komentarz|Opis|
 |-------------|-----------------|
 |NC-1|Dodaj `System.Data.SqlClient` i `System.Configuration` do listy przestrzeni nazw.|
-|NC-2|Zadeklaruj zmienne `parsedCustomerID` i `orderID`, które będą używane później.|
-|NC-3|Wywołaj metodę `GetConnectionString`, aby uzyskać parametry połączenia z pliku konfiguracji aplikacji, i Przechowaj wartość w zmiennej ciągu `connstr`.|
-|NC-4|Dodaj kod do programu obsługi zdarzeń kliknięcia dla przycisku `btnCreateAccount`.|
-|NC 5|Zawiń wywołanie `isCustomerName` wokół kodu zdarzenia kliknięcia, aby `uspNewCustomer` działać tylko wtedy, gdy nazwa klienta jest obecna.|
-|NC-6|Utwórz obiekt `SqlConnection` (`conn`) i przekaż parametry połączenia w `connstr`.|
-|NC 7|Utwórz obiekt `SqlCommand`, `cmdNewCustomer`.<br /><br /> -Określ `Sales.uspNewCustomer` jako procedurę przechowywaną do uruchomienia.<br />-Użyj właściwości `CommandType`, aby określić, że polecenie jest procedurą składowaną.|
-|NC-8|Dodaj `@CustomerName` parametr wejściowy z procedury składowanej.<br /><br /> -Dodaj parametr do kolekcji `Parameters`.<br />-Użyj wyliczenia `SqlDbType`, aby określić typ parametru jako nvarchar (40).<br />-Określ `txtCustomerName.Text` jako źródło.|
-|NC-9|Dodaj parametr wyjściowy z procedury składowanej.<br /><br /> -Dodaj parametr do kolekcji `Parameters`.<br />-Użyj `ParameterDirection.Output`, aby zidentyfikować parametr jako dane wyjściowe.|
+|NC-2|Zadeklaruj `parsedCustomerID` `orderID` zmienne i, których będziesz używać później.|
+|NC-3|Wywołaj `GetConnectionString` metodę, aby uzyskać parametry połączenia z pliku konfiguracji aplikacji, i Przechowaj wartość w `connstr` zmiennej ciągu.|
+|NC-4|Dodaj kod do programu obsługi zdarzeń kliknięcia dla `btnCreateAccount` przycisku.|
+|NC 5|Zawiń wywołanie `isCustomerName` wokół kodu zdarzenia kliknięcia, aby `uspNewCustomer` uruchomić tylko wtedy, gdy istnieje Nazwa klienta.|
+|NC-6|Utwórz `SqlConnection` obiekt ( `conn` ) i przekaż parametry połączenia w `connstr` .|
+|NC 7|Utwórz `SqlCommand` obiekt, `cmdNewCustomer` .<br /><br /> -Określ `Sales.uspNewCustomer` jako procedurę przechowywaną do uruchomienia.<br />-Użyj `CommandType` właściwości, aby określić, że polecenie jest procedurą składowaną.|
+|NC-8|Dodaj `@CustomerName` parametr wejściowy z procedury składowanej.<br /><br /> -Dodaj parametr do `Parameters` kolekcji.<br />-Użyj `SqlDbType` wyliczenia, aby określić typ parametru jako nvarchar (40).<br />-Określ `txtCustomerName.Text` jako źródło.|
+|NC-9|Dodaj parametr wyjściowy z procedury składowanej.<br /><br /> -Dodaj parametr do `Parameters` kolekcji.<br />-Użyj, `ParameterDirection.Output` Aby zidentyfikować parametr jako dane wyjściowe.|
 |NC-10|Dodaj blok try-catch-finally, aby otworzyć połączenie, uruchomić procedurę przechowywaną, obsłużyć wyjątki, a następnie zamknąć połączenie.|
-|NC-11|Otwórz połączenie (`conn`), które zostało utworzone w NC-6.|
-|NC 12|Użyj metody `ExecuteNonQuery`, aby `cmdNewCustomer` do uruchomienia `Sales.uspNewCustomer` procedury składowanej. Ta procedura składowana uruchamia instrukcję `INSERT`, a nie zapytanie.|
-|NC-13|Wartość `@CustomerID` jest zwracana jako wartość tożsamości z bazy danych. Ponieważ jest to liczba całkowita, należy przekonwertować ją na ciąg w celu wyświetlenia go w polu tekstowym **Identyfikator klienta** .<br /><br /> -Zadeklarowano `parsedCustomerID` w NC-2.<br />-Przechowuj wartość `@CustomerID` w `parsedCustomerID` do późniejszego użycia.<br />— Konwertuj zwrócony identyfikator klienta na ciąg i Wstaw go do `txtCustomerID.Text`.|
+|NC-11|Otwórz połączenie ( `conn` ), które zostało utworzone w NC-6.|
+|NC 12|Użyj `ExecuteNonQuery` metody, aby  `cmdNewCustomer` uruchomić `Sales.uspNewCustomer` procedurę składowaną. Ta procedura składowana uruchamia `INSERT` instrukcję, a nie zapytanie.|
+|NC-13|`@CustomerID`Wartość jest zwracana jako wartość tożsamości z bazy danych. Ponieważ jest to liczba całkowita, należy przekonwertować ją na ciąg w celu wyświetlenia go w polu tekstowym **Identyfikator klienta** .<br /><br /> -Zadeklarowano `parsedCustomerID` w NC-2.<br />— Przechowywanie `@CustomerID` wartości w `parsedCustomerID` celu późniejszego użycia.<br />— Konwertuj zwrócony identyfikator klienta na ciąg i Wstaw go do `txtCustomerID.Text` .|
 |NC-14|Na potrzeby tego przykładu Dodaj prostą klauzulę catch (niebędącą jakością produkcyjną).|
 |NC 15|Zawsze zamykaj połączenie po zakończeniu korzystania z niego, aby można było je zwolnić do puli połączeń. Zobacz [SQL Servering Connection pooling (ADO.NET)](https://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|
-|NC-16|Zdefiniuj metodę, aby sprawdzić, czy nazwa klienta jest obecna.<br /><br /> — Jeśli pole tekstowe jest puste, Wyświetl komunikat i zwróć `false`, ponieważ nazwa jest wymagana do utworzenia konta.<br />-Jeśli pole tekstowe nie jest puste, zwróć `true`.|
-|NC – 17|Dodaj kod do programu obsługi zdarzeń kliknięcia dla przycisku `btnPlaceOrder`.|
-|NC 18|Zawiń wywołanie `isPlaceOrderReady` wokół kodu zdarzenia `btnPlaceOrder_Click`, dzięki czemu `uspPlaceNewOrder` nie zostanie uruchomiona, jeśli wymagane dane wejściowe nie są obecne.|
-|NC-19 za poorednictwem NC-25|Te sekcje kodu przypominają kod, który został dodany dla programu obsługi zdarzeń `btnCreateAccount_Click`.<br /><br /> -NC-19. Utwórz obiekt `SqlCommand`, `cmdNewOrder` i określ `Sales.uspPlaceOrder` jako procedurę składowaną.<br />-NC-20 do NC-23 są parametrami wejściowymi procedury składowanej.<br />-NC-24. `@RC` będzie zawierać wartość zwracaną, która jest wygenerowanym IDENTYFIKATORem zamówienia z bazy danych. Kierunek tego parametru jest określany jako `ReturnValue`.<br />-NC-25. Zapisz wartość identyfikatora zamówienia w zmiennej `orderID`, która została zadeklarowana w NC-2, i wyświetl wartość w oknie komunikatu.|
-|NC-26|Zdefiniuj metodę, aby sprawdzić, czy identyfikator klienta istnieje i czy kwota została określona w `numOrderAmount`.|
-|NC — 27|Wywołaj metodę `ClearForm` w programie obsługi zdarzeń `btnAddAnotherAccount` kliknij.|
-|NC — 28|Utwórz metodę `ClearForm`, aby wyczyścić wartości z formularza, jeśli chcesz dodać innego klienta.|
+|NC-16|Zdefiniuj metodę, aby sprawdzić, czy nazwa klienta jest obecna.<br /><br /> — Jeśli pole tekstowe jest puste, Wyświetl komunikat i wróć `false` , ponieważ nazwa jest wymagana do utworzenia konta.<br />— Jeśli pole tekstowe nie jest puste, Wróć `true` .|
+|NC – 17|Dodaj kod do programu obsługi zdarzeń kliknięcia dla `btnPlaceOrder` przycisku.|
+|NC 18|Zawiń wywołanie `isPlaceOrderReady` wokół `btnPlaceOrder_Click` kodu zdarzenia, tak aby nie był `uspPlaceNewOrder` uruchamiany, jeśli wymagane dane wejściowe nie są obecne.|
+|NC-19 za poorednictwem NC-25|Te sekcje kodu przypominają kod, który został dodany do programu `btnCreateAccount_Click` obsługi zdarzeń.<br /><br /> -NC-19. Utwórz `SqlCommand` obiekt, `cmdNewOrder` i określ `Sales.uspPlaceOrder` jako procedurę składowaną.<br />-NC-20 do NC-23 są parametrami wejściowymi procedury składowanej.<br />-NC-24. `@RC` będzie zawierać wartość zwracaną z wygenerowanego identyfikatora zamówienia z bazy danych. Kierunek tego parametru jest określony jako `ReturnValue` .<br />-NC-25. Zapisz wartość identyfikatora zamówienia w `orderID` zmiennej zadeklarowanej w NC-2 i wyświetl wartość w oknie komunikatu.|
+|NC-26|Zdefiniuj metodę, aby sprawdzić, czy identyfikator klienta istnieje i czy kwota została określona w `numOrderAmount` .|
+|NC — 27|Wywołaj `ClearForm` metodę w `btnAddAnotherAccount` obsłudze zdarzeń kliknięcia.|
+|NC — 28|Utwórz `ClearForm` metodę, aby wyczyścić wartości z formularza, jeśli chcesz dodać innego klienta.|
 |NC29|Zamknij formularz NewCustomer i zwróć fokus na formularz nawigacji.|
 
 ### <a name="fillorcancel-form"></a>Formularz FillOrCancel
@@ -1129,15 +1129,15 @@ End Namespace
 
 |Komentarz|Opis|
 |-------------|-----------------|
-|FC-1|Dodaj `System.Data.SqlClient`, `System.Configuration` i `System.Text.RegularExpressions` do listy przestrzeni nazw.|
-|FC-2|Zadeklaruj zmienną `parsedOrderID`.|
-|FC-3|Wywołaj metodę `GetConnectionString`, aby uzyskać parametry połączenia z pliku konfiguracji aplikacji, i Przechowaj wartość w zmiennej ciągu `connstr`.|
-|FC 4|Dodaj kod do programu obsługi zdarzeń kliknięcia dla `btnFindOrderByID`.|
-|FC-5|Te zadania są wymagane przed podjęciem próby uruchomienia instrukcji SQL lub procedury składowanej.<br /><br /> — Utwórz obiekt `SqlConnection`.<br />-Zdefiniuj instrukcję SQL lub określ nazwę procedury składowanej. (W tym przypadku zostanie uruchomiona instrukcja `SELECT`).<br />— Utwórz obiekt `SqlCommand`.<br />-Zdefiniuj wszystkie parametry instrukcji SQL lub procedury składowanej.|
-|FC-6|Ten kod używa `SqlDataReader` i `DataTable` do pobierania i wyświetlania wyników zapytania.<br /><br /> — Otwórz połączenie.<br />-Utwórz obiekt `SqlDataReader`, `rdr`, uruchamiając metodę `ExecuteReader` dla `cmdOrderID`.<br />— Utwórz obiekt `DataTable`, aby przechowywać pobrane dane.<br />— Załaduj dane z obiektu `SqlDataReader` do obiektu `DataTable`.<br />-Wyświetl dane w widoku siatki danych, określając `DataTable` jako `DataSource` dla widoku siatki danych.<br />-Zamknij `SqlDataReader`.|
-|FC-7|Dodaj kod do programu obsługi zdarzeń kliknięcia dla `btnCancelOrder`. Ten kod uruchamia `Sales.uspCancelOrder` procedury składowanej.|
-|FC-8|Dodaj kod do programu obsługi zdarzeń kliknięcia dla `btnFillOrder`. Ten kod uruchamia `Sales.uspFillOrder` procedury składowanej.|
-|FC-9|Utwórz metodę, aby sprawdzić, czy `OrderID` jest gotowa do przesłania jako parametr do obiektu `SqlCommand`.<br /><br /> -Upewnij się, że identyfikator został wprowadzony w `txtOrderID`.<br />-Użyj `Regex.IsMatch`, aby zdefiniować proste sprawdzanie dla znaków niebędących liczbami całkowitymi.<br />— Zadeklarowano zmienną `parsedOrderID` na FC-2.<br />-Jeśli dane wejściowe są prawidłowe, przekonwertuj tekst na liczbę całkowitą i Zapisz wartość w zmiennej `parsedOrderID`.<br />— Zawiń `isOrderID` metodę wokół `btnFindByOrderID`, `btnCancelOrder` i `btnFillOrder` obsługi zdarzeń.|
+|FC-1|Dodaj `System.Data.SqlClient` , `System.Configuration` i `System.Text.RegularExpressions` do listy przestrzeni nazw.|
+|FC-2|Zadeklaruj `parsedOrderID` zmienną.|
+|FC-3|Wywołaj `GetConnectionString` metodę, aby uzyskać parametry połączenia z pliku konfiguracji aplikacji, i Przechowaj wartość w `connstr` zmiennej ciągu.|
+|FC 4|Dodaj kod do programu obsługi zdarzeń kliknięcia dla `btnFindOrderByID` .|
+|FC-5|Te zadania są wymagane przed podjęciem próby uruchomienia instrukcji SQL lub procedury składowanej.<br /><br /> — Utwórz `SqlConnection` obiekt.<br />-Zdefiniuj instrukcję SQL lub określ nazwę procedury składowanej. (W tym przypadku należy uruchomić `SELECT` instrukcję).<br />— Utwórz `SqlCommand` obiekt.<br />-Zdefiniuj wszystkie parametry instrukcji SQL lub procedury składowanej.|
+|FC-6|Ten kod używa `SqlDataReader` i `DataTable` do pobierania i wyświetlania wyników zapytania.<br /><br /> — Otwórz połączenie.<br />-Utwórz `SqlDataReader` obiekt, `rdr` , uruchamiając `ExecuteReader` metodę dla `cmdOrderID` .<br />— Utwórz `DataTable` obiekt, w którym mają być przechowywane pobrane dane.<br />— Załaduj dane z `SqlDataReader` obiektu do `DataTable` obiektu.<br />-Wyświetlanie danych w widoku siatki danych, określając `DataTable` jako `DataSource` dla widoku siatki danych.<br />— Zamknij `SqlDataReader` .|
+|FC-7|Dodaj kod do programu obsługi zdarzeń kliknięcia dla `btnCancelOrder` . Ten kod uruchamia `Sales.uspCancelOrder` procedurę składowaną.|
+|FC-8|Dodaj kod do programu obsługi zdarzeń kliknięcia dla `btnFillOrder` . Ten kod uruchamia `Sales.uspFillOrder` procedurę składowaną.|
+|FC-9|Utwórz metodę, aby sprawdzić, czy `OrderID` jest gotowa do przesłania jako parametr do `SqlCommand` obiektu.<br /><br /> -Upewnij się, że identyfikator został wprowadzony w `txtOrderID` .<br />-Użyj `Regex.IsMatch` , aby zdefiniować proste sprawdzenie dla znaków niebędących liczbami całkowitymi.<br />— Zadeklarowano `parsedOrderID` zmienną na FC-2.<br />-Jeśli dane wejściowe są prawidłowe, przekonwertuj tekst na liczbę całkowitą i Zapisz wartość w `parsedOrderID` zmiennej.<br />— Zawiń `isOrderID` metodę wokół `btnFindByOrderID` , `btnCancelOrder` i `btnFillOrder` kliknij programy obsługi zdarzeń.|
 
-## <a name="BKMK_testyourapplication"></a>Testowanie aplikacji
+## <a name="test-your-application"></a><a name="BKMK_testyourapplication"></a> Testowanie aplikacji
  Wybierz klawisz F5, aby skompilować i przetestować aplikację po wprowadzeniu kodu dla każdej procedury obsługi zdarzeń, a następnie po zakończeniu kodowania.

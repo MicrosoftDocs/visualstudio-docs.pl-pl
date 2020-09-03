@@ -8,10 +8,10 @@ ms.date: 03/11/2020
 ms.topic: how-to
 description: Dowiedz się, jak zalogować się do subskrypcji programu Visual Studio przy użyciu konta służbowego.
 ms.openlocfilehash: 74007dbca34294b580c1dacac7a8fef0da883f9b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906126"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Logowanie do subskrypcji programu Visual Studio przy użyciu konta służbowego 
@@ -57,7 +57,7 @@ W prawym górnym rogu możesz także zobaczyć swoją obecnie wybraną subskrypc
     - W przypadku niepowodzenia jednej ścieżki Wypróbuj drugą.  Administratorzy subskrypcji mogli zmodyfikować twoją subskrypcję.
 
 5. Wprowadź hasło.
-6. Kliknij przycisk **Zaloguj**.
+6. Kliknij pozycję **Zaloguj się**.
 7. Na tym etapie powinna zostać wyświetlona strona "korzyści".
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania

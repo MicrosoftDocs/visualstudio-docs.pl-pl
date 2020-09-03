@@ -8,10 +8,10 @@ ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.topic: overview
 ms.openlocfilehash: 5db0cd7a9c1fc21f5b109a3c103a06a35d348755
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938792"
 ---
 # <a name="debugging-with-xamarin"></a>Debugowanie za pomocą platformy Xamarin
@@ -28,7 +28,7 @@ Mocne debugery, takie jak [LLDB](https://lldb.llvm.org/index.html) lub [GDB](htt
 
 ## <a name="using-the-debugger"></a>Korzystanie z debugera
 
-Aby rozpocząć debugowanie aplikacji, zawsze upewnij się, że konfiguracja jest ustawiona na **Debuguj**. Konfiguracja debugowania oferuje przydatny zestaw narzędzi do obsługi debugowania, takich jak punkty przerwania, używanie wizualizatorów danych i wyświetlanie stosu wywołań:
+Aby rozpocząć debugowanie aplikacji, zawsze upewnij się, że konfiguracja jest ustawiona na  **Debuguj**. Konfiguracja debugowania oferuje przydatny zestaw narzędzi do obsługi debugowania, takich jak punkty przerwania, używanie wizualizatorów danych i wyświetlanie stosu wywołań:
 
 ![Debuguj konfigurację](media/debugging-image_0.png)
 
@@ -38,7 +38,7 @@ Aby ustawić punkt przerwania w środowisku IDE, kliknij obszar marginesu w edyt
 
 ![Ustawianie punktu przerwania na marginesie](media/debugging-image0.png)
 
-Wszystkie punkty przerwania, które zostały ustawione w kodzie, można wyświetlić, przechodząc do **konsoli punkty przerwania**:
+Wszystkie punkty przerwania, które zostały ustawione w kodzie, można wyświetlić, przechodząc do  **konsoli punkty przerwania**:
 
 ![Lista punktów przerwania](media/debugging-image0a.png)
 
@@ -48,7 +48,7 @@ Aby rozpocząć debugowanie, wybierz urządzenie docelowe lub podobną/emulator 
 
 ![Wybierz urządzenie docelowe](media/debugging-image1.png)
 
-Następnie wdróż aplikację, naciskając przycisk **Odtwórz** lub **polecenie cmd + Return**. Po trafieniu punktu przerwania kod zostanie wyróżniony żółty:
+Następnie wdróż aplikację, naciskając przycisk  **Odtwórz** lub  **polecenie cmd + Return**. Po trafieniu punktu przerwania kod zostanie wyróżniony żółty:
 
 ![Wyróżnij wyświetlany punkt przerwania został trafiony](media/debugging-image2.png)
 
@@ -58,13 +58,13 @@ Aby uzyskać więcej informacji na temat tego, co dzieje się w kodzie, można u
 
 ## <a name="conditional-breakpoints"></a>Warunkowe punkty przerwania
 
-Można również ustawić reguły określające sytuacje, w których powinien wystąpić punkt przerwania, tak jak w przypadku dodawania *warunkowego punktu przerwania*. Aby ustawić warunkowy punkt przerwania, uzyskaj dostęp do **okno właściwości punktu przerwania**, który można wykonać na dwa sposoby:
+Można również ustawić reguły określające sytuacje, w których powinien wystąpić punkt przerwania, tak jak w przypadku dodawania *warunkowego punktu przerwania*. Aby ustawić warunkowy punkt przerwania, uzyskaj dostęp do  **okno właściwości punktu przerwania**, który można wykonać na dwa sposoby:
 
 * Aby dodać nowy warunkowy punkt przerwania, kliknij prawym przyciskiem myszy na marginesie edytora, po lewej stronie numeru wiersza dla kodu, dla którego chcesz ustawić punkt przerwania, a następnie wybierz polecenie Nowy punkt przerwania:
 
  ![Menu kontekstowe punktu przerwania](media/debugging-image4.png)
 
-* Aby dodać warunek do istniejącego punktu przerwania, kliknij prawym przyciskiem myszy punkt przerwania i wybierz polecenie **właściwości punktu przerwania**, lub w **konsoli punkty przerwania**wybierz przycisk Edytuj punkt przerwania przedstawiony poniżej:
+* Aby dodać warunek do istniejącego punktu przerwania, kliknij prawym przyciskiem myszy punkt przerwania i wybierz polecenie  **właściwości punktu przerwania**, lub w  **konsoli punkty przerwania**wybierz przycisk Edytuj punkt przerwania przedstawiony poniżej:
 
  ![Edytuj istniejący punkt przerwania w konsoli punkty przerwania](media/debugging-image5.png)
 

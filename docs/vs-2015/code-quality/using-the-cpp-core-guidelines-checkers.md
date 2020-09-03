@@ -10,10 +10,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: fffa4cec6a2bd7a340b90776ac20dc486f28045b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173575"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++
@@ -51,7 +51,7 @@ Podstawowe wytyczne dotyczące języka C++ są przenośnym zestawem wytycznych, 
   
    ![Strona właściwości dla ustawień rozszerzeń analizy kodu](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   Aby włączyć lub wyłączyć zestawy reguł podstawowe sprawdzanie języka C++, Otwórz okno dialogowe **strony właściwości** dla projektu. W obszarze **Właściwości konfiguracji**rozwiń węzeł **Analiza kodu**, **rozszerzenia**. W kontrolce listy rozwijanej obok pozycji **włącz podstawowe sprawdzanie języka C++ (wydano)** lub **Włącz podstawowe sprawdzanie języka C++ (eksperymentalne)** wybierz opcję **tak** lub **nie**. Wybierz **przycisk OK** lub **Zastosuj** , aby zapisać zmiany.  
+   Aby włączyć lub wyłączyć zestawy reguł podstawowe sprawdzanie języka C++, Otwórz okno dialogowe **strony właściwości** dla projektu. W obszarze **Właściwości konfiguracji**rozwiń węzeł  **Analiza kodu**, **rozszerzenia**. W kontrolce listy rozwijanej obok pozycji **włącz podstawowe sprawdzanie języka C++ (wydano)** lub **Włącz podstawowe sprawdzanie języka C++ (eksperymentalne)** wybierz opcję **tak** lub **nie**. Wybierz **przycisk OK** lub **Zastosuj** , aby zapisać zmiany.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Sprawdzanie typów, granic i okresów istnienia  
  Pakiet podstawowe sprawdzanie języka C++ obecnie zawiera kontrolki dotyczące [bezpieczeństwa typu](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [bezpieczeństwa granic](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds)oraz profilów [bezpieczeństwa okresu istnienia](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) .  
@@ -96,7 +96,7 @@ int main()
 **rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (pełny plik PDB)**  
 **c:\users\username\documents\visual Studio 2015 \ projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (6): ostrzeżenie C26494: zmienna "ARR" jest uninitializ**  
-**Ed. zawsze Inicjuj obiekt. (Type. 5: https: \/ /go.Microsoft.com/fwlink/p/?link**  
+**Ed. Zawsze Inicjuj obiekt. (Type. 5: https: \/ /go.Microsoft.com/fwlink/p/?link**  
 **ID = 620421)**  
 **c:\users\username\documents\visual Studio 2015 \ projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (7): ostrzeżenie C26485: wyrażenie "ARR": brak tablicy do**  

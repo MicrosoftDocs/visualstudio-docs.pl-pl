@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 778bbc9cff2d7853628edbb5be6466acc55d9ab8
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015811"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Używanie modułów do dołączania plików w rozwiązaniu
@@ -55,7 +56,7 @@ ms.locfileid: "86015811"
 
  Każdy plik, który chcesz wdrożyć, wymaga oddzielnego `<File>` wpisu elementu w *Elements.xml*.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Dołączanie plików przy użyciu modułu](../sharepoint/how-to-include-files-by-using-a-module.md)
 - [Instrukcje: Inicjowanie obsługi pliku](/previous-versions/office/developer/sharepoint-2010/ms441170(v=office.14))
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

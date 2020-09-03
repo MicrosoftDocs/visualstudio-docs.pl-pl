@@ -26,10 +26,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 33b97050f04fd23a9fa3b6c3c641faa5dfe4802f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651060"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Tworzenie bazy danych SQL za pomocą projektanta
@@ -50,13 +50,13 @@ Możesz eksplorować podstawowe zadania, takie jak Dodawanie tabel i Definiowani
 ## <a name="prerequisites"></a>Wymagania wstępne
  Aby ukończyć ten przewodnik, upewnij się, że zainstalowano narzędzia do SQL Server Data Tools. W menu **Widok** powinien zostać wyświetlony **Eksplorator obiektów SQL Server**. Jeśli go nie ma, przejdź do pozycji **Dodaj lub usuń programy**, kliknij pozycję **Visual Studio 2015**, wybierz pozycję **Zmień**, a następnie zaznacz pole wyboru obok **SQL Server narzędzia danych**.
 
-## <a name="BKMK_CreateNewSQLDB"></a>Tworzenie projektu i pliku lokalnej bazy danych
+## <a name="create-a-project-and-a-local-database-file"></a><a name="BKMK_CreateNewSQLDB"></a> Tworzenie projektu i pliku lokalnej bazy danych
 
 #### <a name="to-create-a-project-and-a-database-file"></a>Aby utworzyć projekt i plik bazy danych
 
-1. Utwórz projekt Windows Forms o nazwie `SampleDatabaseWalkthrough`.
+1. Utwórz projekt Windows Forms o nazwie `SampleDatabaseWalkthrough` .
 
-2. Na pasku menu wybierz pozycję **projekt**  > **Dodaj nowy element**.
+2. Na pasku menu wybierz pozycję **projekt**  >  **Dodaj nowy element**.
 
 3. Na liście szablonów elementów przewiń w dół i wybierz pozycję **baza danych oparta na usłudze**.
 
@@ -64,7 +64,7 @@ Możesz eksplorować podstawowe zadania, takie jak Dodawanie tabel i Definiowani
 
 4. Nazwij bazę danych **SampleDatabase**, a następnie wybierz przycisk **Dodaj** .
 
-5. Jeśli okno **źródła danych** nie jest otwarte, otwórz je, wybierając klawisze Shift + Alt + D lub na pasku menu wybierz opcję **Wyświetl**  >  inne**źródła danych** **systemu Windows**  > .
+5. Jeśli okno **źródła danych** nie jest otwarte, otwórz je, wybierając klawisze Shift + Alt + D lub na pasku menu wybierz opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
 
 6. W oknie **źródła danych** wybierz łącze **Dodaj nowe źródło danych** .
 
@@ -72,11 +72,11 @@ Możesz eksplorować podstawowe zadania, takie jak Dodawanie tabel i Definiowani
 
    Otwierając okno właściwości bazy danych, możesz wyświetlić parametry połączenia i lokalizację głównego pliku bazy danych (mdf). Zobaczysz, że plik bazy danych znajduje się w folderze projektu.
 
-- W programie Visual Studio wybierz pozycję **wyświetl**  > **Eksplorator obiektów SQL Server** , jeśli to okno nie jest jeszcze otwarte. Otwórz okno właściwości, rozwijając węzeł **połączenia danych** , otwierając menu skrótów dla SampleDatabase. mdf, a następnie wybierając **Właściwości**.
+- W programie Visual Studio wybierz pozycję **Wyświetl**  >  **Eksplorator obiektów SQL Server** , jeśli to okno nie jest jeszcze otwarte. Otwórz okno właściwości, rozwijając węzeł **połączenia danych** , otwierając menu skrótów dla SampleDatabase. mdf, a następnie wybierając **Właściwości**.
 
-- Alternatywnie można wybrać opcję **wyświetl**  > **Eksplorator serwera**, jeśli to okno nie jest jeszcze otwarte. Otwórz okno właściwości, rozwijając węzeł **połączenia danych** . Otwórz menu skrótów dla SampleDatabase. mdf, a następnie wybierz polecenie **Właściwości**.
+- Alternatywnie możesz wybrać opcję **Wyświetl**  >  **Eksplorator serwera**, jeśli to okno nie jest jeszcze otwarte. Otwórz okno właściwości, rozwijając węzeł **połączenia danych** . Otwórz menu skrótów dla SampleDatabase. mdf, a następnie wybierz polecenie **Właściwości**.
 
-## <a name="BKMK_CreateNewTbls"></a>Tworzenie tabel, kolumn, kluczy podstawowych i kluczy obcych
+## <a name="create-tables-columns-primary-keys-and-foreign-keys"></a><a name="BKMK_CreateNewTbls"></a> Tworzenie tabel, kolumn, kluczy podstawowych i kluczy obcych
  W tej sekcji utworzysz kilka tabel, klucz podstawowy w każdej tabeli i kilka wierszy przykładowych danych. W następnym instruktażu dowiesz się, jak te informacje mogą pojawiać się w aplikacji. Utworzysz też klucz obcy, aby określić, jak rekordy w jednej tabeli mogą odpowiadać rekordom w drugiej tabeli.
 
 #### <a name="to-create-the-customers-table"></a>Aby utworzyć tabelę Customers
@@ -96,7 +96,7 @@ Możesz eksplorować podstawowe zadania, takie jak Dodawanie tabel i Definiowani
     |`ContactName`|`nvarchar (50)`|True (wybrane)|
     |`Phone`|`nvarchar (24)`|True (wybrane)|
 
-4. Otwórz menu skrótów dla wiersza `CustomerID`, a następnie wybierz pozycję **Ustaw klucz podstawowy**.
+4. Otwórz menu skrótów dla `CustomerID` wiersza, a następnie wybierz **Ustaw klucz podstawowy**.
 
 5. Otwórz menu skrótów dla wiersza domyślnego, a następnie wybierz polecenie **Usuń**.
 
@@ -106,7 +106,7 @@ Możesz eksplorować podstawowe zadania, takie jak Dodawanie tabel i Definiowani
     CREATE TABLE [dbo].[Customers]
     ```
 
-     Powinieneś wyglądać następująco:
+     Powinny zostać wyświetlone informacje podobne do następujących:
 
      ![Projektant tabel](../data-tools/media/raddata-table-designer.png "Projektant tabel raddata")
 
@@ -147,7 +147,7 @@ Możesz eksplorować podstawowe zadania, takie jak Dodawanie tabel i Definiowani
 
      ![Dodawanie klucza obcego w Projektancie tabel](../data-tools/media/foreignkey.png "ForeignKey")
 
-2. W wyświetlonym polu tekstowym Zamień **ToTable** na `Customers`.
+2. W wyświetlonym polu tekstowym Zamień **ToTable** na `Customers` .
 
 3. W okienku T-SQL zaktualizuj ostatni wiersz, aby dopasować go do poniższego przykładu:
 
@@ -161,7 +161,7 @@ Możesz eksplorować podstawowe zadania, takie jak Dodawanie tabel i Definiowani
 
      Wprowadzone zmiany są zapisywane w lokalnym pliku bazy danych.
 
-## <a name="BKMK_Populating"></a>Wypełnianie tabel danymi
+## <a name="populate-the-tables-with-data"></a><a name="BKMK_Populating"></a> Wypełnianie tabel danymi
 
 #### <a name="to-populate-the-tables-with-data"></a>Aby wypełnić tabele danymi
 
@@ -182,9 +182,9 @@ Możesz eksplorować podstawowe zadania, takie jak Dodawanie tabel i Definiowani
     > [!IMPORTANT]
     > Upewnij się, że wszystkie identyfikatory zamówień i ilości zamówienia są liczbami całkowitymi i że każdy identyfikator klienta odpowiada wartości określonej w kolumnie CustomerID w tabeli Customers.
 
-7. Na pasku menu wybierz pozycję **plik**  > **Zapisz wszystko**.
+7. Na pasku menu wybierz pozycję **plik**  >  **Zapisz wszystko**.
 
-8. Na pasku menu wybierz pozycję **plik**  > **Zamknij rozwiązanie**.
+8. Na pasku menu wybierz pozycję **plik**  >  **Zamknij rozwiązanie**.
 
     > [!NOTE]
     > Zgodnie z zaleceniami można zrobić kopię zapasową pliku bazy danych, która właśnie została utworzona przez skopiowanie jej i następnie wklejenie kopii w innej lokalizacji lub nadając kopii pod inną nazwą.

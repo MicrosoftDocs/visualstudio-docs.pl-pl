@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b2b0431ab4f985d801a78159fc2d324a29f8b638
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015528"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Instrukcje: uruchamianie kodu po wykonaniu kroków wdrożenia
@@ -51,7 +52,7 @@ ms.locfileid: "86015528"
 ## <a name="deploy-the-extension"></a>Wdróż rozszerzenie
  Aby wdrożyć rozszerzenie, Utwórz [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiet rozszerzenia (VSIX) dla zestawu i wszystkie inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozszerzona pakowanie i wdrażanie programu SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 - [Instrukcje: uruchamianie kodu, gdy projekt SharePoint jest wdrażany lub wycofywany](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)

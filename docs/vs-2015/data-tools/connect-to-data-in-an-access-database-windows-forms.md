@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8426e9fcaa29bef36b6701c78d622f6f42fd1171
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651132"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Łączenie z danymi w bazie danych programu Access (Windows Forms)
@@ -42,7 +42,7 @@ Możesz połączyć się z bazą danych programu Access (plik. mdf lub plik accd
 
 1. Otwórz aplikację Windows Forms, do której chcesz połączyć dane.
 
-2. W menu **Widok** wybierz inne**źródła danych** **systemu Windows**  > .
+2. W menu **Widok** wybierz **inne**  >  **źródła danych**systemu Windows.
 
      ![Wyświetl inne źródła danych systemu Windows](../data-tools/media/viewdatasources.png "ViewDataSources")
 
@@ -89,7 +89,7 @@ Możesz połączyć się z bazą danych programu Access (plik. mdf lub plik accd
 
 1. Otwórz aplikację Windows Forms, do której chcesz połączyć dane.
 
-2. W menu **Widok** wybierz inne**źródła danych** **systemu Windows**  > .
+2. W menu **Widok** wybierz **inne**  >  **źródła danych**systemu Windows.
 
      ![Wyświetl inne źródła danych systemu Windows](../data-tools/media/viewdatasources.png "ViewDataSources")
 
@@ -101,7 +101,7 @@ Możesz połączyć się z bazą danych programu Access (plik. mdf lub plik accd
 
 6. Na stronie **Wybierz połączenie danych** wybierz pozycję **nowe połączenie** , aby skonfigurować nowe połączenie danych.
 
-7. Jeśli źródło danych nie jest **plikiem bazy danych programu Microsoft Access (OLE DB)** , wybierz pozycję **Zmień** , aby otworzyć okno dialogowe **Zmień źródło danych** i wybierz **plik bazy danych programu Microsoft Access**, a następnie wybierz przycisk **OK**.
+7. Jeśli źródło danych nie jest **plikiem bazy danych programu Microsoft Access (OLE DB)**, wybierz pozycję **Zmień** , aby otworzyć okno dialogowe **Zmień źródło danych** i wybierz **plik bazy danych programu Microsoft Access**, a następnie wybierz przycisk **OK**.
 
 8. W polu **Nazwa pliku bazy danych**określ ścieżkę i nazwę pliku. mdb, z którym chcesz się połączyć, a następnie wybierz przycisk **OK**.
 
@@ -127,7 +127,7 @@ Możesz połączyć się z bazą danych programu Access (plik. mdf lub plik accd
 
 - Otwórz źródło danych w Projektant obiektów Dataset, aby dodać lub edytować obiekty wchodzące w skład zestawu danych.
 
-- Dodaj logikę walidacji do <xref:System.Data.DataTable.ColumnChanging> lub <xref:System.Data.DataTable.RowChanging> zdarzenia tabel [danych w zestawie](../data-tools/validate-data-in-datasets.md)danych
+- Dodaj logikę walidacji <xref:System.Data.DataTable.ColumnChanging> do <xref:System.Data.DataTable.RowChanging> zdarzenia lub tabel danych w zestawie danych (zobacz [Validate Data in DataSets](../data-tools/validate-data-in-datasets.md)).
 
 ## <a name="see-also"></a>Zobacz też
 

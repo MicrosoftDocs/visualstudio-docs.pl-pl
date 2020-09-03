@@ -1,5 +1,5 @@
 ---
-title: Okna dialogowe Projekty i rozwiązania, Opcje
+title: Projekty i rozwiązania, Opcje — okno dialogowe
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -14,90 +14,90 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567648"
 ---
-# <a name="options-dialog-box-projects-and-solutions--general"></a>Okno dialogowe Opcje: \> Ogólne projekty i rozwiązania
+# <a name="options-dialog-box-projects-and-solutions--general"></a>Opcje — okno dialogowe: projekty i rozwiązania \> Ogólne
 
-Ta strona służy do definiowania zachowania programu Visual Studio związane z projektami i rozwiązaniami. Aby uzyskać dostęp do tych opcji, wybierz pozycję**Opcje** **narzędzi** > , rozwiń pozycję **Projekty i rozwiązania**, a następnie wybierz pozycję **Ogólne**.
+Ta strona służy do definiowania zachowań programu Visual Studio związanych z projektami i rozwiązaniami. Aby uzyskać dostęp do tych opcji, wybierz pozycję **Narzędzia**  >  **Opcje**, rozwiń węzeł **projekty i rozwiązania**, a następnie wybierz pozycję **Ogólne**.
 
-Następujące opcje są dostępne na stronie **Ogólne.**
+Poniższe opcje są dostępne na stronie **Ogólne** .
 
-## <a name="always-show-error-list-if-build-finishes-with-errors"></a>Zawsze pokazuj listę błędów, jeśli kompilacja kończy się błędami
+## <a name="always-show-error-list-if-build-finishes-with-errors"></a>Zawsze pokazuj Lista błędów, jeśli kompilacja zakończy się z błędami
 
-Otwiera okno **lista błędów** po zakończeniu kompilacji, tylko wtedy, gdy projekt nie udało się skompilować. Błędy występujące podczas procesu kompilacji są wyświetlane. Gdy ta opcja jest wyczyszczona, błędy nadal występują, ale okno nie otwiera się po zakończeniu kompilacji. Ta opcja jest domyślnie włączona.
+Otwiera okno **Lista błędów** po zakończeniu kompilacji, tylko wtedy, gdy kompilacja projektu nie powiodła się. Zostaną wyświetlone błędy występujące podczas procesu kompilacji. Gdy ta opcja jest wyczyszczona, błędy nadal występują, ale okno nie jest otwierane po zakończeniu kompilacji. Ta opcja jest domyślnie włączona.
 
-## <a name="track-active-item-in-solution-explorer"></a>Śledzenie aktywnego elementu w Eksploratorze rozwiązań
+## <a name="track-active-item-in-solution-explorer"></a>Śledź aktywny element w Eksplorator rozwiązań
 
-Po wybraniu tej opcji **Eksplorator rozwiązań** zostanie automatycznie otwarty i zostanie wybrany aktywny element. Wybrany element zmienia się podczas pracy z różnymi plikami w projekcie lub rozwiązaniu lub różnymi składnikami w projektancie. Gdy ta opcja jest wyczyszczona, zaznaczenie w **Eksploratorze rozwiązań** nie zmienia się automatycznie. Ta opcja jest domyślnie włączona.
+Po wybraniu **Eksplorator rozwiązań** automatycznie otwierane, a aktywny element jest zaznaczony. Wybrany element zmienia się podczas pracy z różnymi plikami w projekcie lub rozwiązaniu lub różnymi składnikami projektanta. Gdy ta opcja jest wyczyszczona, wybór w **Eksplorator rozwiązań** nie zmienia się automatycznie. Ta opcja jest domyślnie włączona.
 
 ## <a name="show-advanced-build-configurations"></a>Pokaż zaawansowane konfiguracje kompilacji
 
-Po zaznaczeniu tej opcji opcje konfiguracji kompilacji są wyświetlane w oknie dialogowym **Strony właściwości projektu** i w oknie dialogowym Strony właściwości **rozwiązania.** Po wyczyszczeniu opcje konfiguracji kompilacji nie są wyświetlane w oknie dialogowym **Strony właściwości projektu** i w oknie dialogowym Strony właściwości **rozwiązania** dla projektów języka Visual Basic i C#, które zawierają jedną konfigurację lub dwie konfiguracje debugowania i zwalniania. Jeśli projekt ma konfigurację zdefiniowaną przez użytkownika, wyświetlane są opcje konfiguracji kompilacji.
+Po wybraniu opcji konfiguracji kompilacji są wyświetlane w oknie dialogowym **strony właściwości projektu** i w oknie dialogowym **strony właściwości rozwiązania** . Po wyczyszczeniu opcji konfiguracji kompilacji nie są wyświetlane w oknie dialogowym **strony właściwości projektu** i w oknie dialogowym **strony właściwości rozwiązania** dla projektów Visual Basic i C#, które zawierają jedną konfigurację lub dwie konfiguracje debugowania i wydania. Jeśli projekt zawiera konfigurację zdefiniowaną przez użytkownika, są wyświetlane opcje konfiguracji kompilacji.
 
-Po niezaznaczeniu polecenia w menu **Kompilacja,** takie jak **Build Solution**, Rebuild **Solution**i Clean **Solution**, są wykonywane w konfiguracji release i polecenia w menu **debugowania,** takie jak **Uruchamianie debugowania** i **Uruchamianie bez debugowania,** są wykonywane w konfiguracji debugowania.
+W przypadku usunięcia zaznaczenia polecenia w menu **kompilacja** , takie jak **rozwiązanie do kompilowania**, ponowne **Kompilowanie rozwiązania**i **czyste rozwiązanie**, są wykonywane w konfiguracji wydania i polecenia w menu **Debuguj** , takie jak **Rozpocznij debugowanie** i **Uruchom bez debugowania**, są wykonywane w konfiguracji debugowania.
 
 ## <a name="always-show-solution"></a>Zawsze pokazuj rozwiązanie
 
-Po wybraniu tej opcji rozwiązanie i wszystkie polecenia, które działają na rozwiązania są zawsze wyświetlane w IDE. Po wyczyszczeniu wszystkie projekty są tworzone jako projekty autonomiczne i nie widzisz rozwiązania w Eksploratorze rozwiązań lub poleceniach, które działają na rozwiązania w IDE, jeśli rozwiązanie zawiera tylko jeden projekt.
+Po wybraniu rozwiązanie i wszystkie polecenia działające na rozwiązaniach są zawsze wyświetlane w środowisku IDE. Po wyczyszczeniu wszystkie projekty są tworzone jako projekty autonomiczne, a rozwiązanie nie jest widoczne w Eksplorator rozwiązań lub polecenia, które działają na rozwiązaniach w IDE, jeśli rozwiązanie zawiera tylko jeden projekt.
 
 ::: moniker range="vs-2017"
 
-## <a name="save-new-projects-when-created"></a>Zapisywanie nowych projektów podczas tworzenia
+## <a name="save-new-projects-when-created"></a>Zapisuj nowe projekty po utworzeniu
 
-Po wybraniu tej opcji można określić lokalizację projektu w oknie dialogowym **Nowy projekt.** Po wyczyszczeniu wszystkie nowe projekty są tworzone jako projekty tymczasowe. Podczas pracy z projektami tymczasowymi można tworzyć i eksperymentować z projektem bez konieczności określania lokalizacji dysku.
+Po wybraniu można określić lokalizację projektu w oknie dialogowym **Nowy projekt** . Po wyczyszczeniu wszystkie nowe projekty są tworzone jako projekty tymczasowe. Podczas pracy z projektami tymczasowymi można tworzyć i eksperymentować z projektem bez konieczności określania lokalizacji na dysku.
 
 ::: moniker-end
 
-## <a name="warn-user-when-the-project-location-is-not-trusted"></a>Ostrzegaj użytkownika, gdy lokalizacja projektu nie jest zaufana
+## <a name="warn-user-when-the-project-location-is-not-trusted"></a>Ostrzegaj użytkownika, gdy Lokalizacja projektu nie jest zaufana
 
-Jeśli spróbujesz utworzyć nowy projekt lub otworzyć istniejący projekt w lokalizacji, która nie jest w pełni zaufana (na przykład na ścieżce UNC lub ścieżce HTTP), zostanie wyświetlony komunikat. Ta opcja służy do określania, czy wiadomość jest wyświetlana przy każdej próbie utworzenia lub otwarcia projektu w lokalizacji, która nie jest w pełni zaufana.
+Jeśli spróbujesz utworzyć nowy projekt lub otworzyć istniejący projekt w lokalizacji, która nie jest w pełni zaufana (na przykład w ścieżce UNC lub w ścieżce HTTP), zostanie wyświetlony komunikat. Użyj tej opcji, aby określić, czy komunikat jest wyświetlany za każdym razem, gdy próbujesz utworzyć lub otworzyć projekt w lokalizacji, która nie jest w pełni zaufana.
 
-## <a name="show-output-window-when-build-starts"></a>Pokaż okno Dane wyjściowe podczas uruchamiania kompilacji
+## <a name="show-output-window-when-build-starts"></a>Pokaż okno danych wyjściowych po rozpoczęciu kompilacji
 
-Automatycznie wyświetla [okno Dane wyjściowe](../../ide/reference/output-window.md) w IDE na początku kompilacji rozwiązania.
+Automatycznie wyświetla [okno dane wyjściowe](../../ide/reference/output-window.md) w środowisku IDE na początku kompilacji rozwiązania.
 
-## <a name="prompt-for-symbolic-renaming-when-renaming-files"></a>Monitowanie o symboliczną zmianę nazwy podczas zmiany nazwy plików
+## <a name="prompt-for-symbolic-renaming-when-renaming-files"></a>Monituj o zmianę nazwy symbolicznej podczas zmiany nazwy plików
 
-Po wybraniu tej opcji program Visual Studio wyświetla okno komunikatu z pytaniem, czy należy również zmienić nazwę wszystkich odwołań w projekcie do elementu kodu.
+Po wybraniu program Visual Studio wyświetli okno komunikatu z pytaniem, czy należy również zmienić nazwy wszystkich odwołań w projekcie na element kodu.
 
-## <a name="prompt-before-moving-files-to-a-new-location"></a>Monitowanie przed przeniesieniem plików do nowej lokalizacji
+## <a name="prompt-before-moving-files-to-a-new-location"></a>Monituj przed przeniesieniem plików do nowej lokalizacji
 
-Po wybraniu tej opcji program Visual Studio wyświetla okno komunikatu potwierdzającego, zanim lokalizacje plików zostaną zmienione przez akcje w **Eksploratorze rozwiązań**.
+Po wybraniu tego pola program Visual Studio wyświetla komunikat potwierdzenia przed zmianą lokalizacji plików przez akcje w **Eksplorator rozwiązań**.
 
-## <a name="reopen-documents-on-solution-load"></a>Ponowne otwieranie dokumentów przy obciążeniu rozwiązania
+## <a name="reopen-documents-on-solution-load"></a>Otwieraj ponownie dokumenty po załadowaniu rozwiązania
 
-Po wybraniu tej opcji dokumenty, które pozostały otwarte podczas poprzedniego zamknięcia rozwiązania, są automatycznie otwierane po otwarciu rozwiązania.
+Po wybraniu dokumenty, które zostały pozostawione, otwierają się przed zamknięciem rozwiązania, są automatycznie otwierane po otwarciu rozwiązania.
 
-Ponowne otwarcie niektórych typów plików lub projektantów może opóźnić załadowanie rozwiązania. Odznacz tę opcję, aby [zwiększyć wydajność ładowania rozwiązania,](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore) jeśli nie chcesz przywracać poprzedniego kontekstu rozwiązania.
+Ponowne otwieranie niektórych typów plików lub projektantów może opóźnić ładowanie rozwiązania. Usuń zaznaczenie tej opcji, aby [zwiększyć wydajność ładowania rozwiązań](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore) , jeśli nie chcesz przywrócić poprzedniego kontekstu rozwiązania.
 
 ::: moniker range=">=vs-2019"
 
-## <a name="restore-solution-explorer-project-hierarchy-state-on-solution-load"></a>Przywróć stan hierarchii projektu Eksploratora rozwiązań przy obciążeniu rozwiązania
+## <a name="restore-solution-explorer-project-hierarchy-state-on-solution-load"></a>Przywróć stan hierarchii projektu Eksplorator rozwiązań podczas ładowania rozwiązania
 
-Po wybraniu tej opcji przywraca stan węzłów w Eksploratorze rozwiązań w odniesieniu do tego, czy zostały one rozwinięte, czy zwinięte podczas ostatniego otwarcia rozwiązania. Usuń zaznaczenie tej opcji, aby skrócić czas ładowania rozwiązania dla dużych rozwiązań.
+Po wybraniu przywraca stan węzłów w Eksplorator rozwiązań w odniesieniu do tego, czy były rozwinięte czy zwinięte podczas ostatniego otwarcia rozwiązania. Usuń zaznaczenie tej opcji, aby skrócić czas ładowania rozwiązania dla dużych rozwiązań.
 
 > [!TIP]
-> Jeśli ta opcja zostanie wyłączona, łatwym sposobem przejścia do aktywnego dokumentu w Eksploratorze rozwiązań jest **wybranie opcji Synchronizuj z aktywnym dokumentem** na pasku narzędzi **Eksploratora rozwiązań.**
+> Jeśli wyłączysz tę opcję, prostym sposobem przejścia do aktywnego dokumentu w Eksplorator rozwiązań jest wybranie opcji **Synchronizuj z aktywnym dokumentem** na pasku narzędzi **Eksplorator rozwiązań** .
 >
-> ![Synchronizacja z aktywnym dokumentem w Eksploratorze rozwiązań](media/sync-active-document.png)
+> ![Synchronizuj z aktywnym dokumentem w Eksplorator rozwiązań](media/sync-active-document.png)
 
-## <a name="open-sdk-style-project-files-with-double-click-or-the-enter-key"></a>Otwieranie plików projektu w stylu SDK za pomocą dwukrotnego kliknięcia lub klawisza Enter
+## <a name="open-sdk-style-project-files-with-double-click-or-the-enter-key"></a>Otwieranie plików projektu w stylu zestawu SDK przy użyciu dwukrotnego kliknięcia lub klawisza ENTER
 
-Po wybraniu tej opcji i dwukrotnym kliknięciu węzła projektu w stylu SDK w Eksploratorze \*rozwiązań lub wybraniu go, a następnie **naciśnięciu klawisza Enter**, plik projektu (na przykład plik csproj) zostanie otwarty jako kod XML w edytorze. Po usunięciu zaznaczenia dwukrotne kliknięcie węzła projektu w stylu SDK w Eksploratorze rozwiązań lub wybranie go i **naciśnięcie klawisza Enter** powoduje tylko rozwinięcie lub zwijanie węzła.
+Gdy ta opcja jest zaznaczona, kliknij dwukrotnie węzeł projektu w stylu zestawu SDK w Eksplorator rozwiązań lub wybierz go, a następnie naciśnij klawisz **Enter**, plik projektu (na przykład \* plik. csproj) zostanie otwarty jako XML w edytorze. Po zaznaczeniu tej opcji kliknij dwukrotnie węzeł projektu w stylu zestawu SDK w Eksplorator rozwiązań lub wybierz go, a naciśnięcie klawisza **Enter** ma wpływ na rozwijanie lub zwijanie węzła.
 
-Jeśli nie masz zaznaczonej tej opcji i chcesz edytować plik projektu w stylu SDK, kliknij prawym przyciskiem myszy węzeł projektu w Eksploratorze rozwiązań i wybierz pozycję **Edytuj plik projektu**. W przypadku innych typów projektów należy najpierw zwolnić projekt przed edycją go w programie Visual Studio.
+Jeśli ta opcja nie jest zaznaczona i chcesz edytować plik projektu w stylu zestawu SDK, kliknij prawym przyciskiem myszy węzeł projektu w Eksplorator rozwiązań a następnie wybierz polecenie **Edytuj plik projektu**. W przypadku innych typów projektów należy najpierw zwolnić projekt przed jego edycją w programie Visual Studio.
 
 > [!TIP]
-> *Projekt w stylu SDK*lub [SDK projektu](../../msbuild/how-to-use-project-sdk.md)ma nowszy, bardziej usprawniony format pliku projektu, który został wprowadzony za pomocą programu MSBuild 15.0. Projekt w stylu SDK `Sdk` zawiera atrybut `Project` elementu, `<Project Sdk="Microsoft.NET.Sdk">`na przykład . Visual Studio tworzy projekt w stylu SDK podczas tworzenia nowego projektu .NET Core z jednego z szablonów programu Visual Studio, na przykład.
+> *Projekt w stylu zestawu SDK*lub [zestaw SDK projektu](../../msbuild/how-to-use-project-sdk.md)ma nowszy, bardziej zoptymalizowany format pliku projektu, który został wprowadzony w programie MSBuild 15,0. Projekt w stylu zestawu SDK zawiera `Sdk` atrybut w `Project` elemencie, na przykład `<Project Sdk="Microsoft.NET.Sdk">` . Program Visual Studio tworzy projekt w stylu zestawu SDK podczas tworzenia nowego projektu .NET Core z jednego z szablonów programu Visual Studio, na przykład.
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Okno dialogowe Opcje: \> Lokalizacje projektów i rozwiązań](projects-solutions-locations-options.md)
-- [Okno dialogowe Opcje, Projekty i rozwiązania, Tworzenie i uruchamianie](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
+- [Opcje — okno dialogowe: projekty i \> lokalizacje rozwiązań](projects-solutions-locations-options.md)
+- [Okno dialogowe Opcje, projekty i rozwiązania, kompilacja i uruchomienie](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Okno dialogowe Opcje, Projekty i rozwiązania, Projekty internetowe](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

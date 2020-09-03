@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 403415eaf8a882efdd63fdb9a73b5489b91f2529
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651082"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Tworzenie prostej aplikacji do obsługi danych za pomocą platform WPF i Entity Framework 6
@@ -34,9 +34,9 @@ W tym walkthough pokazano, jak utworzyć podstawową aplikację "Formularze dany
 
 ## <a name="configure-the-project"></a>Konfigurowanie projektu
 
-1. W programie Visual Studio wybierz **pozycję &#124; plik nowy projekt** , a następnie Utwórz C# nową aplikację WPF.
+1. W programie Visual Studio wybierz pozycję **plik &#124; nowy projekt** , a następnie utwórz nową aplikację WPF w języku C#.
 
-2. Następnie dodamy pakiet NuGet dla Entity Framework 6. W Eksplorator rozwiązań wybierz węzeł projektu. W menu głównym wybierz kolejno **pozycje &#124; projekt Zarządzaj pakietami NuGet...**
+2. Następnie dodamy pakiet NuGet dla Entity Framework 6. W Eksplorator rozwiązań wybierz węzeł projektu. W menu głównym wybierz **projekt &#124; zarządzanie pakietami NuGet...**
 
      ![Element menu Zarządzaj pakietami NuGet](../data-tools/media/raddata-vs2015-manage-nuget-packages.png "raddata_vs2015_manage_nuget_packages")
 
@@ -48,7 +48,7 @@ W tym walkthough pokazano, jak utworzyć podstawową aplikację "Formularze dany
 
 ## <a name="create-the-model"></a>Tworzenie modelu
 
-1. Kliknij prawym przyciskiem myszy węzeł projektu w Eksplorator rozwiązań i wybierz polecenie  **&#124; Dodaj nowy element**. W lewym okienku w C# węźle wybierz pozycję **dane** , a następnie w środkowym okienku wybierz pozycję **ADO.NET Entity Data Model**.
+1. Kliknij prawym przyciskiem myszy węzeł projektu w Eksplorator rozwiązań i wybierz polecenie **dodaj &#124; nowy element**. W lewym okienku w węźle C# wybierz pozycję **dane** , a następnie w środkowym okienku wybierz pozycję **ADO.NET Entity Data Model**.
 
     ![Nowy element projektu Entity Framework model](../data-tools/media/raddata-ef-new-project-item.png "raddata Dr — nowy element projektu")
 
@@ -62,19 +62,19 @@ W tym walkthough pokazano, jak utworzyć podstawową aplikację "Formularze dany
 
     ![Wybierz obiekty bazy danych dla modelu](../data-tools/media/raddata-choose-ef-objects.png "raddata wybierz obiekty EF")
 
-5. Kreator generuje C# klasy, które reprezentują model Entity Framework. Są to zwykłe stare C# klasy, które będą wiązać się z interfejsem użytkownika WPF. Plik. edmx opisuje relacje i inne metadane, które kojarzą klasy z obiektami w bazie danych.  Pliki. TT są szablonami T4, które generują kod, który będzie działać w modelu i zapisuje zmiany w bazie danych. Wszystkie te pliki można zobaczyć w Eksplorator rozwiązań w węźle Northwind_model:
+5. Kreator generuje klasy języka C#, które reprezentują model Entity Framework. Są to zwykłe stare klasy C# i są to elementy, które będziemy wiązać z interfejsem użytkownika WPF. Plik. edmx opisuje relacje i inne metadane, które kojarzą klasy z obiektami w bazie danych.  Pliki. TT są szablonami T4, które generują kod, który będzie działać w modelu i zapisuje zmiany w bazie danych. Wszystkie te pliki można zobaczyć w Eksplorator rozwiązań w węźle Northwind_model:
 
     ![Eksplorator rozwiązań pliki modelu EF](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata Eksplorator rozwiązań pliki modelu EF")
 
     Powierzchnia projektanta dla pliku. edmx umożliwia modyfikowanie niektórych właściwości i relacji w modelu. Nie będziemy używać projektanta w tym instruktażu.
 
-6. Pliki. TT są ogólnego przeznaczenia i musimy dostosować jedną z nich do pracy z danymi DataBinding WPF, które wymagają ObservableCollections.  W Eksplorator rozwiązań rozwiń węzeł Northwind_model, dopóki nie znajdziesz Northwind_model. tt. (Upewnij się, że **nie** masz znaku *. Plik Context. TT, który znajduje się bezpośrednio poniżej pliku. edmx).
+6. Pliki. TT są ogólnego przeznaczenia i musimy dostosować jedną z nich do pracy z danymi DataBinding WPF, które wymagają ObservableCollections.  W Eksplorator rozwiązań rozwiń węzeł Northwind_model do momentu znalezienia Northwind_model. tt. (Upewnij się, że **nie** masz znaku *. Plik Context. TT, który znajduje się bezpośrednio poniżej pliku. edmx).
 
-   - Zastąp dwa wystąpienia <xref:System.Collections.ICollection> z <xref:System.Collections.ObjectModel.ObservableCollection%601>.
+   - Zastąp dwa wystąpienia elementu <xref:System.Collections.ICollection> <xref:System.Collections.ObjectModel.ObservableCollection%601> .
 
    - Zastąp pierwsze wystąpienie <xref:System.Collections.Generic.HashSet%601> z <xref:System.Collections.ObjectModel.ObservableCollection%601> wokół wiersza 51. Nie zamieniaj drugiego wystąpienia elementu HashSet —
 
-   - Zamień tylko wystąpienie <xref:System.Collections.Generic> (wokół wiersza 334) z <xref:System.Collections.ObjectModel>.
+   - Zamień tylko wystąpienie <xref:System.Collections.Generic> (wokół wiersza 334) na <xref:System.Collections.ObjectModel> .
 
 7. Naciśnij **kombinację klawiszy Ctrl + Shift + B** , aby skompilować projekt. Po zakończeniu kompilacji klasy modelu są widoczne dla Kreatora źródeł danych.
 
@@ -83,7 +83,7 @@ W tym walkthough pokazano, jak utworzyć podstawową aplikację "Formularze dany
 ## <a name="databind-the-model-to-the-xaml-page"></a>Wywołaniu modelu na stronie XAML
  Istnieje możliwość napisania własnego kodu wiązania, ale znacznie łatwiej jest pozwolić programowi Visual Studio.
 
-1. Z menu głównego wybierz polecenie **projekt &#124; Dodaj nowe źródło danych** , aby wyświetlić **Kreatora konfiguracji źródła danych**. Wybierz **obiekt** , ponieważ są wiązanie z klasami modelu, a nie z bazą danych:
+1. Z menu głównego wybierz kolejno opcje **projekt &#124; Dodaj nowe źródło danych** , aby wyświetlić **Kreatora konfiguracji źródła danych**. Wybierz **obiekt** , ponieważ są wiązanie z klasami modelu, a nie z bazą danych:
 
      ![Kreator konfiguracji źródła danych z obiektem źródłowym](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png "Kreator konfiguracji źródła danych raddata z obiektem źródłowym")
 
@@ -91,7 +91,7 @@ W tym walkthough pokazano, jak utworzyć podstawową aplikację "Formularze dany
 
      ![Dodawanie klas jednostek jako źródeł danych](../data-tools/media/raddata-add-entity-classes-as-data-sources.png "raddata Dodaj klasy jednostek jako źródła danych")
 
-3. Kliknij przycisk **Zakończ** .
+3. Kliknij przycisk **Zakończ**
 
 4. Przejdź do MainWindow. XAML w widoku kodu. Będziemy bardzo prostować kod XAML na potrzeby tego przykładu. Zmień tytuł MainWindow na coś bardziej opisowego i zwiększ jego wysokość i szerokość do 600 x 800. Zawsze możesz ją później zmienić. Teraz Dodaj te trzy definicje wierszy do siatki głównej, jeden wiersz dla przycisków nawigacji, jeden dla szczegółów klienta, jeden dla siatki, który pokazuje ich zamówienia:
 
@@ -103,11 +103,11 @@ W tym walkthough pokazano, jak utworzyć podstawową aplikację "Formularze dany
            </Grid.RowDefinitions>
     ```
 
-5. Teraz otwórz plik MainWindow. XAML, aby wyświetlić go w projektancie. Spowoduje to wyświetlenie okna źródła danych jako opcji w marginesie okna programu Visual Studio obok przybornika. Kliknij kartę, aby otworzyć okno, lub naciśnij klawisze **Shift + Alt + D** lub przycisk **Przeglądaj &#124; inne źródła danych systemu &#124; Windows**. Będziemy wyświetlać każdą właściwość w klasie Customers we własnym polu tekstowym. Najpierw kliknij strzałkę w polu kombi klienci i wybierz pozycję **szczegóły**. Następnie przeciągnij węzeł do środkowej części powierzchni projektowej, aby Projektant wiedział, że chce go umieścić w środkowym wierszu.  Jeśli go umieścisz, możesz określić wiersz ręcznie później w kodzie XAML. Domyślnie formanty są umieszczane w pionie w elemencie siatki, ale w tym momencie można je rozmieścić w formularzu.  Na przykład może być zrozumiałe umieszczenie pola tekstowego nazwa na górze, nad adresem. Przykładowa aplikacja w tym artykule zmienia kolejność pól i rozmieszcza je w dwóch kolumnach.
+5. Teraz otwórz plik MainWindow. XAML, aby wyświetlić go w projektancie. Spowoduje to wyświetlenie okna źródła danych jako opcji w marginesie okna programu Visual Studio obok przybornika. Kliknij kartę, aby otworzyć okno, lub naciśnij klawisze **Shift + Alt + D** lub wybierz opcję **Wyświetl &#124; innych źródeł danych Windows &#124;**. Będziemy wyświetlać każdą właściwość w klasie Customers we własnym polu tekstowym. Najpierw kliknij strzałkę w polu kombi klienci i wybierz pozycję **szczegóły**. Następnie przeciągnij węzeł do środkowej części powierzchni projektowej, aby Projektant wiedział, że chce go umieścić w środkowym wierszu.  Jeśli go umieścisz, możesz określić wiersz ręcznie później w kodzie XAML. Domyślnie formanty są umieszczane w pionie w elemencie siatki, ale w tym momencie można je rozmieścić w formularzu.  Na przykład może być zrozumiałe umieszczenie pola tekstowego nazwa na górze, nad adresem. Przykładowa aplikacja w tym artykule zmienia kolejność pól i rozmieszcza je w dwóch kolumnach.
 
      ![Powiązanie źródła danych klientów z indywidualnymi kontrolkami](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png "powiązanie źródła danych klientów raddata z indywidualnymi kontrolkami")
 
-     W widoku Kod można teraz zobaczyć nowy element `Grid` w wierszu 1 (środkowym wierszu) siatki nadrzędnej. Siatka nadrzędna ma atrybut `DataContext`, który odwołuje się do CollectionViewSource, który został dodany do elementu `Windows.Resources`. Uwzględniając ten kontekst danych, gdy pierwsze pole tekstowe, na przykład tworzy powiązanie z "Address", nazwa jest zamapowana na Właściwość `Address` w bieżącym obiekcie `Customer` w CollectionViewSource.
+     W widoku Kod można teraz zobaczyć nowy `Grid` element w wierszu 1 (środkowym wierszu) siatki nadrzędnej. Siatka nadrzędna ma `DataContext` atrybut odwołujący się do CollectionViewSource, który został dodany do `Windows.Resources` elementu. Uwzględniając ten kontekst danych, gdy pierwsze pole tekstowe, na przykład, wiąże się z "Address", nazwa jest zamapowana na `Address` Właściwość w bieżącym `Customer` obiekcie w CollectionViewSource.
 
     ```xaml
     <Grid DataContext="{StaticResource customerViewSource}">
@@ -142,13 +142,13 @@ W tym walkthough pokazano, jak utworzyć podstawową aplikację "Formularze dany
            }
     ```
 
-     Dodaj dyrektywę `using` dla elementu System. Data. Entity, aby przenieść metodę rozszerzenia Load do zakresu:
+     Dodaj `using` dyrektywę dla elementu System. Data. Entity, aby przenieść metodę rozszerzenia Load do zakresu:
 
     ```csharp
     using System.Data.Entity;
     ```
 
-     Teraz przewiń w dół i Znajdź procedurę obsługi zdarzeń Window_Loaded. Zwróć uwagę, że program Visual Studio dodał do nas obiekt CollectionViewSource. Reprezentuje obiekt NorthwindEntities, który został wybrany podczas tworzenia modelu. Dodajmy kod do Window_loaded, dzięki czemu cała Metoda będzie wyglądać następująco:
+     Teraz przewiń w dół i Znajdź Window_Loaded obsługi zdarzeń. Zwróć uwagę, że program Visual Studio dodał do nas obiekt CollectionViewSource. Reprezentuje obiekt NorthwindEntities, który został wybrany podczas tworzenia modelu. Dodajmy kod do Window_loaded, dzięki czemu cała Metoda będzie wyglądać następująco:
 
     ```csharp
     private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -170,7 +170,7 @@ W tym walkthough pokazano, jak utworzyć podstawową aplikację "Formularze dany
 8. Naciśnij klawisz **F5**. Należy zobaczyć szczegóły pierwszego klienta, który został pobrany do CollectionViewSource i ich zamówienia w siatce danych. Formatowanie nie jest doskonałe, dlatego należy rozwiązać ten problem. i podsumuje sposób wyświetlania innych rekordów i wykonywać podstawowe operacje CRUD.
 
 ## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>Dostosuj projekt strony i Dodaj siatki dla nowych klientów i zamówień
- Domyślne rozmieszczenie utworzone przez program Visual Studio nie jest idealne dla naszej aplikacji, więc wprowadzimy pewne zmiany ręcznie w kodzie XAML. Potrzebujemy również niektórych "formularzy" (które są w rzeczywistości siatkami), aby umożliwić użytkownikowi dodanie nowego klienta lub nowej kolejności.    Aby można było dodać nowego klienta i zamówienie, potrzebny jest oddzielny zestaw pól tekstowych, które nie są powiązane z `CollectionViewSource`. Będziemy kontrolować, którą siatkę widzi użytkownik w dowolnym momencie, ustawiając właściwość Visible w metodach obsługi.
+ Domyślne rozmieszczenie utworzone przez program Visual Studio nie jest idealne dla naszej aplikacji, więc wprowadzimy pewne zmiany ręcznie w kodzie XAML. Potrzebujemy również niektórych "formularzy" (które są w rzeczywistości siatkami), aby umożliwić użytkownikowi dodanie nowego klienta lub nowej kolejności.    Aby można było dodać nowego klienta i zamówienie, potrzebny jest oddzielny zestaw pól tekstowych, które nie są powiązane z danymi `CollectionViewSource` . Będziemy kontrolować, którą siatkę widzi użytkownik w dowolnym momencie, ustawiając właściwość Visible w metodach obsługi.
 
  Na koniec dodamy przycisk usuwania do każdego wiersza w siatce Orders, aby umożliwić użytkownikowi usunięcie poszczególnych zamówień.
 

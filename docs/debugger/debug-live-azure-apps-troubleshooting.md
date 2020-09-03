@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84182875"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Rozwiązywanie problemów i znane problemy dotyczące debugowania migawek w programie Visual Studio
@@ -37,7 +37,7 @@ Wykonaj następujące kroki:
 * Upewnij się, że konto personalizacji programu Visual Studio ma uprawnienia do subskrypcji i zasobu platformy Azure, do którego dołączasz. Aby szybko ustalić, czy zasób jest dostępny w oknie dialogowym z **Debug**  >  **dołączania debugowania Snapshot Debugger...**  >  **Zasób**  >  platformy Azure **Wybierz pozycję istniejący**lub w Eksploratorze chmury.
 * Jeśli ten błąd będzie nadal występował, użyj jednego z kanałów opinii opisanych na początku tego artykułu.
 
-Jeśli włączono uwierzytelnianie/autoryzację (EasyAuth) na App Service, w komunikacie o błędzie stosu wywołań może wystąpić błąd 401 z LaunchAgentAsync. Upewnij się, że **Jeśli żądanie nie zostało uwierzytelnione** , jest ustawione tak, aby **zezwalać na żądania anonimowe (bez akcji)** w Azure Portal i zamiast tego podać plik Authorization. JSON w D:\Home\sites\wwwroot z następującą zawartością. 
+Jeśli włączono uwierzytelnianie/autoryzację (EasyAuth) na App Service, w komunikacie o błędzie stosu wywołań może wystąpić błąd 401 z LaunchAgentAsync. Upewnij się, że **Jeśli żądanie nie zostało uwierzytelnione** , jest ustawione tak, aby **zezwalać na żądania anonimowe (bez akcji)** w Azure Portal i zamiast tego podać authorization.jsw D:\Home\sites\wwwroot z następującą zawartością. 
 
 ```
 {
@@ -59,7 +59,7 @@ Jeśli włączono uwierzytelnianie/autoryzację (EasyAuth) na App Service, w kom
 }
 ```
 
-Pierwsza droga efektywnie zabezpiecza domenę aplikacji podobną do **zalogowania się za pomocą programu [IdentityProvider]**. Druga trasa udostępnia punkt końcowy debugera migawek AgentLaunch poza uwierzytelnianiem, który wykonuje wstępnie zdefiniowaną akcję uruchamiania agenta diagnostyki debugera migawek tylko wtedy, *gdy* dla usługi App Service jest włączone rozszerzenie preinstalowanej lokacji debugera migawek. Aby uzyskać szczegółowe informacje na temat konfiguracji pliku Authorization. JSON, zobacz [reguły autoryzacji adresów URL](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html).
+Pierwsza droga efektywnie zabezpiecza domenę aplikacji podobną do **zalogowania się za pomocą programu [IdentityProvider]**. Druga trasa udostępnia punkt końcowy debugera migawek AgentLaunch poza uwierzytelnianiem, który wykonuje wstępnie zdefiniowaną akcję uruchamiania agenta diagnostyki debugera migawek tylko wtedy, *gdy* dla usługi App Service jest włączone rozszerzenie preinstalowanej lokacji debugera migawek. Aby uzyskać więcej informacji na authorization.jskonfiguracji, zobacz [reguły autoryzacji adresów URL](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html).
 
 ### <a name="403-forbidden"></a>(403) zabronione
 
@@ -214,7 +214,7 @@ Dzienniki agentów można znaleźć w następujących lokalizacjach:
 Dzienniki Instrumentacji można znaleźć w następujących lokalizacjach:
 
 - App Services:
-  - Rejestrowanie błędów jest wysyłane automatycznie do D:\Home\LogFiles\eventlog.xml, zdarzenia są oznaczane za pomocą `<Provider Name="Instrumentation Engine" />` lub "punktami przerwania produkcyjnego"
+  - Rejestrowanie błędów jest automatycznie wysyłane do D:\Home\LogFiles\eventlog.xml, zdarzenia są oznaczane za pomocą `<Provider Name="Instrumentation Engine" />` lub "punktami przerwania produkcyjnego"
 - MASZYNA WIRTUALNA/VMSS:
   - Zaloguj się do maszyny wirtualnej i Otwórz Podgląd zdarzeń.
   - Otwórz następujący widok: *Dzienniki systemu Windows>aplikacji*.
@@ -237,12 +237,12 @@ Debugowanie migawek i Application Insights zależą od ICorProfiler, które są 
 
 - Utwórz [miejsce wdrożenia](/azure/app-service/web-sites-staged-publishing) w ramach App Service i Wdróż swoją lokację w gnieździe.
 - Zamień miejsce na środowisko produkcyjne z programu Cloud Explorer w programie Visual Studio lub z Azure Portal.
-- Zatrzymaj lokację miejsca. To potrwa kilka sekund, aby skasować proces W3wp. exe lokacji ze wszystkich wystąpień.
+- Zatrzymaj lokację miejsca. To potrwa kilka sekund, aby wycofać proces w3wp.exe lokacji ze wszystkich wystąpień.
 - Uaktualnij rozszerzenie witryny miejsca z witryny kudu lub Azure Portal (*App Service bloku > narzędzia deweloperskie > rozszerzenia > Update*).
 - Rozpocznij pracę z miejscem. Zalecamy odwiedzanie witryny w celu jej ponownego rozgrzania.
 - Zamień miejsce na środowisko produkcyjne.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Debuguj aplikacje Live ASP.NET przy użyciu Snapshot Debugger](../debugger/debug-live-azure-applications.md)

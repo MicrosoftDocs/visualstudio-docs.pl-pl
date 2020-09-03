@@ -18,10 +18,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 6453c263cb970ae3fff2c134f1ae570bca730b93
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183239"
 ---
 # <a name="visual-studio-images-on-azure"></a><a id="top"> </a> Obrazy programu Visual Studio na platformie Azure

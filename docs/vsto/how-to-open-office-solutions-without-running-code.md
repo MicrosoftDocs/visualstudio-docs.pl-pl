@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d84515c2c3159b61b96f77555b23eef0df0ae961
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543484"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Instrukcje: otwieranie rozwiązań pakietu Office bez uruchamiania kodu

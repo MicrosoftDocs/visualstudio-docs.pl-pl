@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 16f312f9b9d15cbdacbb1fa3e0628903254aeaea
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543146"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>Na komputerze nie zainstalowano Microsoft Office
@@ -26,6 +26,6 @@ ms.locfileid: "85543146"
 
 1. Zainstaluj aplikację Microsoft Office skojarzoną z typem projektu, w tym podstawowe zestawy międzyoperacyjności. Aby uzyskać więcej informacji o obsługiwanych wersjach Microsoft Office, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 - [Instrukcje: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)

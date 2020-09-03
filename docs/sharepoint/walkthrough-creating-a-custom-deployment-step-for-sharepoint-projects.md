@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 56fac2be1e73de5df9da8aa13e6631c4cc9d1022
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015897"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint
@@ -79,7 +80,7 @@ ms.locfileid: "86015897"
 
 5. Wybierz szablon **projektu VSIX** , nazwij projekt **UpgradeDeploymentStep**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **UpgradeDeploymentStep** do **Eksplorator rozwiązań**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **UpgradeDeploymentStep** do **Eksplorator rozwiązań**.
 
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia
 
@@ -91,7 +92,7 @@ ms.locfileid: "86015897"
 
 4. Wybierz szablon projektu **Biblioteka klas** , nazwij projekt **DeploymentStepExtension**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **DeploymentStepExtension** do rozwiązania i otwiera domyślny plik kodu Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **DeploymentStepExtension** do rozwiązania i otwiera domyślny plik kodu Class1.
 
 5. Usuń plik kodu Class1 z projektu.
 
@@ -265,7 +266,7 @@ ms.locfileid: "86015897"
 
 7. Wybierz przycisk **Zakończ** .
 
-    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]tworzy projekt EmployeesListDefinition.
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tworzy projekt EmployeesListDefinition.
 
 8. Otwórz menu skrótów dla projektu EmployeesListDefinition, wybierz **Dodaj**, a następnie wybierz **nowy element**.
 
@@ -283,7 +284,7 @@ ms.locfileid: "86015897"
 
     3. **Wartość domyślna (pusta)** jest wybierana na liście **Utwórz listę dostosowywalną opartą na:** .
 
-       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]tworzy element listy pracownicy z kolumną title i jednym pustym wystąpieniem i otwiera projektanta list.
+       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tworzy element listy pracownicy z kolumną title i jednym pustym wystąpieniem i otwiera projektanta list.
 
 12. W projektancie list na karcie **kolumny** wybierz wiersz **Nazwa nowej lub istniejącej kolumny** , a następnie Dodaj następujące kolumny do listy **Nazwa wyświetlana kolumny** :
 
@@ -482,5 +483,5 @@ ms.locfileid: "86015897"
 
 4. Zamknij oba wystąpienia programu Visual Studio (wystąpienie eksperymentalne i wystąpienie programu Visual Studio, w którym jest otwarte rozwiązanie UpgradeDeploymentStep).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozszerzona pakowanie i wdrażanie programu SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

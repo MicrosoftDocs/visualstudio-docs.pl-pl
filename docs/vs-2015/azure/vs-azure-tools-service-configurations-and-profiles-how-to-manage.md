@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 008dd927f38c7fd79996bde39531e256314f2e24
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917357"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Jak zarządzać profilami i konfiguracjami usług
@@ -70,7 +70,7 @@ Po pierwszym uruchomieniu kreatora zostanie utworzony profil domyślny. Program 
 2. Obok listy **profil docelowy** wybierz przycisk **Zapisz profil** , jak pokazano na poniższej ilustracji. Spowoduje to utworzenie profilu.
    
     ![Utwórz nowy profil](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/create-new-profile.png)
-3. Po utworzeniu profilu wybierz pozycję **< Zarządzaj... >** na liście **profil docelowy** .
+3. Po utworzeniu profilu wybierz pozycję **<Zarządzaj... >** na liście **profil docelowy** .
    
     Zostanie wyświetlone okno dialogowe **Zarządzaj profilami** , jak pokazano na poniższej ilustracji.
    
@@ -88,7 +88,7 @@ Po pierwszym uruchomieniu kreatora zostanie utworzony profil domyślny. Program 
 2. Na liście **profil docelowy** wybierz pozycję **Zarządzaj**.
 3. W oknie dialogowym **Zarządzanie profilami** wybierz profil, który chcesz usunąć, a następnie wybierz pozycję **Usuń**.
 4. W wyświetlonym oknie dialogowym potwierdzenia wybierz pozycję **OK**.
-5. Wybierz opcję **Zamknij**.
+5. Wybierz pozycję **Zamknij**.
 
 ### <a name="to-change-a-profile"></a>Aby zmienić profil
 1. Otwórz menu skrótów dla projektu platformy Azure, a następnie wybierz pozycję **Publikuj**.

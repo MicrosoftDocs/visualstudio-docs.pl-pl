@@ -1,5 +1,5 @@
 ---
-title: GetFileHash Zadanie | Dokumenty firmy Microsoft
+title: GetFileHash — zadanie | Microsoft Docs
 ms.date: 01/28/2019
 ms.topic: reference
 dev_langs:
@@ -16,34 +16,34 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8f3de9a4f2fe848e1cbd41e14e82498845ca2cf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77578653"
 ---
-# <a name="getfilehash-task"></a>GetFileHash zadanie
+# <a name="getfilehash-task"></a>GetFileHash, zadanie
 
 Oblicza sumy kontrolne zawartości pliku lub zestawu plików.
 
-To zadanie zostało dodane w wersji 15.8, ale wymaga [obejścia](https://github.com/Microsoft/msbuild/pull/3999#issuecomment-458193272) problemu w wersjach MSBuild poniżej 16.0.
+To zadanie zostało dodane w 15,8, ale wymaga [obejścia](https://github.com/Microsoft/msbuild/pull/3999#issuecomment-458193272) do użycia z wersjami MSBuild poniżej 16,0.
 
 ## <a name="task-parameters"></a>Parametry zadania
 
- W poniższej tabeli `GetFileHash` opisano parametry zadania.
+ W poniższej tabeli opisano parametry `GetFileHash` zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`Files`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br />Pliki, które mają być haszowane.|
-|`Items`|<xref:Microsoft.Build.Framework.ITaskItem>`[]`parametru wyjściowego.<br /><br />Dane `Files` wejściowe z dodatkowymi metadanymi ustawionymi na skrót pliku.|
-|`Hash`|`String`parametru wyjściowego.<br /><br />Skrót pliku. To dane wyjściowe jest ustawiona tylko wtedy, gdy było dokładnie jeden element przekazany w.|
-|`Algorithm`|Parametr `String` opcjonalny.<br /><br />Algorytm. Dozwolone wartości: `SHA256` `SHA384`, `SHA512`, . Domyślnie `SHA256`= .|
-|`MetadataName`|Parametr `String` opcjonalny.<br /><br />Nazwa metadanych, w której skrót jest przechowywany w każdym elemencie. Wartość domyślna to `FileHash`.|
-|`HashEncoding`|Parametr `String` opcjonalny.<br /><br />Kodowanie do użycia dla wygenerowanych skrótów. Wartość domyślna to `hex`. Dozwolone wartości `hex`= `base64`, .|
+|`Files`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br />Pliki do przetworzenia skrótów.|
+|`Items`|<xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br />`Files`Dane wejściowe z dodatkowymi metadanymi ustawionymi na wartość skrótu pliku.|
+|`Hash`|`String` parametr wyjściowy.<br /><br />Skrót pliku. Te dane wyjściowe są ustawiane tylko wtedy, gdy przekazano dokładnie jeden element.|
+|`Algorithm`|Opcjonalny `String` parametr.<br /><br />Algorytm. Dozwolone wartości: `SHA256` , `SHA384` , `SHA512` . Wartość domyślna = `SHA256` .|
+|`MetadataName`|Opcjonalny `String` parametr.<br /><br />Nazwa metadanych, w której skrót jest przechowywany w każdym elemencie. Wartość domyślna to `FileHash` .|
+|`HashEncoding`|Opcjonalny `String` parametr.<br /><br />Kodowanie, które ma być używane dla wygenerowanych skrótów. Wartość domyślna to `hex` . Dozwolone wartości = `hex` , `base64` .|
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie `GetFileHash` użyto zadania do określenia `FilesToHash` i wydrukowania sumy kontrolnej elementów.
+Poniższy przykład używa zadania, `GetFileHash` Aby określić i wydrukować sumę kontrolną `FilesToHash` elementów.
 
 ```xml
 <Project>
@@ -67,4 +67,4 @@ W poniższym przykładzie `GetFileHash` użyto zadania do określenia `FilesToHa
 
 - [Zadania](../msbuild/msbuild-tasks.md)
 
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

@@ -14,13 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7abca9e9141fdc8d4540e8a38e9579862fc540f1
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015292"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Instrukcje: Importowanie strony wzorcowej lub motywu
-  Możesz nadać stronom w witrynie programu SharePoint spójny wygląd, tworząc i używając stron wzorcowych i motywów. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]nie udostępnia szablonów dla tych elementów, ale można je utworzyć w programie SharePoint Designer, a następnie zaimportować je do programu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Aby uzyskać więcej informacji, zobacz [Budowanie bloków: strony i interfejs użytkownika](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) w witrynie sieci Web firmy Microsoft.
+  Możesz nadać stronom w witrynie programu SharePoint spójny wygląd, tworząc i używając stron wzorcowych i motywów. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie udostępnia szablonów dla tych elementów, ale można je utworzyć w programie SharePoint Designer, a następnie zaimportować je do programu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Aby uzyskać więcej informacji, zobacz [Budowanie bloków: strony i interfejs użytkownika](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) w witrynie sieci Web firmy Microsoft.
 
 ### <a name="to-import-a-master-page-or-theme"></a>Aby zaimportować stronę wzorcową lub motyw
 
@@ -88,7 +89,7 @@ ms.locfileid: "86015292"
 
      Zostanie wyświetlona lista stron wzorcowych lub motywów, które zawierają zarówno stronę wzorcową, jak i zaimportowaną kompozycję.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Strony wzorcowe](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
 - [Importowanie elementów z istniejącej witryny programu SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Tworzenie stron dla programu SharePoint](../sharepoint/creating-pages-for-sharepoint.md)

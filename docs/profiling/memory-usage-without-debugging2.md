@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fe336962a9d631a01438fdd4620fd27e2affc44
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543354"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analizowanie użycia pamięci bez debugera
@@ -56,7 +56,7 @@ Aplikacja używa dużej liczby obiektów i może chcieć skupić analizę w jedn
 
 Aby zebrać migawki, wybierz pozycję **zrób migawkę** , jeśli chcesz przechwytywać dane pamięci.
 
-### <a name="close-the-diagnostic-session"></a><a name="BKMK_Close_a_monitoring_session"></a>Zamknij sesję diagnostyczną
+### <a name="close-the-diagnostic-session"></a><a name="BKMK_Close_a_monitoring_session"></a> Zamknij sesję diagnostyczną
 
 Aby zatrzymać sesję monitorowania bez tworzenia raportu, po prostu Zamknij okno diagnostyki. Aby wygenerować raport po zakończeniu zbierania lub tworzenia migawek, wybierz pozycję **Zatrzymaj zbieranie**.
 
@@ -68,7 +68,7 @@ Po zatrzymaniu zbierania danych narzędzie **użycie pamięci** zatrzyma aplikac
 
 ![Strona przegląd użycia pamięci](../profiling/media/memuse__reportoverview1.png "Strona przegląd użycia pamięci")
 
-### <a name="memory-usage-snapshots"></a><a name="BKMK_Memory_Usage_snapshot_views"></a>Migawki użycia pamięci
+### <a name="memory-usage-snapshots"></a><a name="BKMK_Memory_Usage_snapshot_views"></a> Migawki użycia pamięci
 
 Liczby w okienkach **migawek** pokazują bajty i obiekty w pamięci, gdy każda migawka została wykonana, i różnicę między migawką a poprzednią.
 
@@ -76,7 +76,7 @@ Liczby to linki, które otwierają szczegółowe widoki raportów **użycia pami
 
   ![Linki widoku migawek](../profiling/media/memuse__snapshotview_numbered.png "Linki widoku migawek")
 
-|Image (Obraz)|Opis|
+|Obraz|Opis|
 |-|-|
 |![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Całkowita liczba bajtów w pamięci podczas tworzenia migawki.<br /><br /> Wybierz ten link, aby wyświetlić raport szczegółów migawek posortowany według łącznego rozmiaru wystąpień typu.|
 |![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|Całkowita liczba obiektów w pamięci podczas tworzenia migawki.<br /><br /> Wybierz ten link, aby wyświetlić raport szczegółów migawek posortowany według liczby wystąpień typów.|
@@ -85,7 +85,7 @@ Liczby to linki, które otwierają szczegółowe widoki raportów **użycia pami
 
 ## <a name="memory-usage-snapshot-reports"></a>Raporty dotyczące migawek użycia pamięci
 
-<a name="BKMK_Snapshot_report_trees"></a>Po wybraniu jednego z linków migawek na stronie Przegląd **użycia pamięci** zostanie otwarty raport migawki na nowej stronie.
+<a name="BKMK_Snapshot_report_trees"></a> Po wybraniu jednego z linków migawek na stronie Przegląd **użycia pamięci** zostanie otwarty raport migawki na nowej stronie.
 
 ![Raport migawek użycia pamięci](../profiling/media/memuse_snapshotreport_all.png "Raport migawek użycia pamięci")
 
@@ -103,17 +103,17 @@ W raporcie migawki:
 
 - **Przywoływane typy** lub drzewa **obiektów, do** których istnieją odwołania, są wyświetlane obiekty, do których odwołuje się wybrany typ lub wystąpienie.
 
-### <a name="report-tree-filters"></a><a name="BKMK_Report_tree_filters_"></a>Filtry drzewa raportów
+### <a name="report-tree-filters"></a><a name="BKMK_Report_tree_filters_"></a> Filtry drzewa raportów
 
 Wiele typów w aplikacjach nie jest bardzo interesujące dla deweloperów aplikacji. Filtry migawek można ukryć większość z tych typów w **zarządzanym stosie** i **ścieżkach do drzew głównych** .
 
 ![Opcje sortowania i filtrowania](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")
 
-- <a name="BKMK_Filter"></a>Aby odfiltrować drzewo według nazwy typu, wprowadź nazwę w polu **Filtr** . W filtrze nie ma wielkości liter i rozpoznaje określony ciąg w dowolnej części nazwy typu.
+- <a name="BKMK_Filter"></a> Aby odfiltrować drzewo według nazwy typu, wprowadź nazwę w polu **Filtr** . W filtrze nie ma wielkości liter i rozpoznaje określony ciąg w dowolnej części nazwy typu.
 
-- <a name="BKMK_Collapse_Small_Objects"></a>Wybierz pozycję **Zwiń małe obiekty** na liście rozwijanej **Filtr** , aby ukryć typy, których **rozmiar (w bajtach)** jest mniejszy niż 0,5 procent całkowitej ilości pamięci.
+- <a name="BKMK_Collapse_Small_Objects"></a> Wybierz pozycję **Zwiń małe obiekty** na liście rozwijanej **Filtr** , aby ukryć typy, których **rozmiar (w bajtach)** jest mniejszy niż 0,5 procent całkowitej ilości pamięci.
 
-- <a name="BKMK_Just_My_Code"></a>Wybierz pozycję **tylko mój kod** na liście rozwijanej **Filtr** , aby ukryć większość wystąpień generowanych przez kod zewnętrzny. Typy zewnętrzne należą do systemu operacyjnego lub składników struktury lub są generowane przez kompilator.
+- <a name="BKMK_Just_My_Code"></a> Wybierz pozycję **tylko mój kod** na liście rozwijanej **Filtr** , aby ukryć większość wystąpień generowanych przez kod zewnętrzny. Typy zewnętrzne należą do systemu operacyjnego lub składników struktury lub są generowane przez kompilator.
 
 ## <a name="snapshot-details-reports"></a>Raporty szczegółów migawek
 
@@ -123,7 +123,7 @@ Wiele typów w aplikacjach nie jest bardzo interesujące dla deweloperów aplika
 
 Oba linki otwierają ten sam raport. Jedyną różnicą jest początkowa kolejność sortowania drzewa **sterty zarządzanej** . Link size sortuje raport według kolumny **size (bajty)** . Link obiekty sortuje raport według kolumny **Count** . Można zmienić kolumnę sortowania lub kolejność po otwarciu raportu.
 
-### <a name="managed-heap-tree-snapshot-details-reports"></a><a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a>Zarządzane drzewo sterty (raporty szczegółów migawek)
+### <a name="managed-heap-tree-snapshot-details-reports"></a><a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Zarządzane drzewo sterty (raporty szczegółów migawek)
  W drzewie **zarządzanym sterty** są wyświetlane typy obiektów, które są przechowywane w pamięci. Rozwiń nazwę typu, aby wyświetlić dziesięć największych wystąpień typu, posortowane według rozmiaru. Wybierz typ lub wystąpienie, aby wyświetlić **ścieżki do katalogu głównego** i **przywoływanych obiektów** drzewa dla wybranego elementu.
 
  ![Zarządzane drzewo sterty](../profiling/media/memuse__snapshotdetails_managedheaptree.png "Zarządzane drzewo sterty")
@@ -133,19 +133,19 @@ Oba linki otwierają ten sam raport. Jedyną różnicą jest początkowa kolejno
 |Nazwa|Opis|
 |-|-|
 |**Typ obiektu**|Nazwa typu lub wystąpienia obiektu.|
-|**Liczbą**|Liczba wystąpień obiektów typu. **Liczba** jest zawsze 1 dla wystąpienia.|
+|**Liczbą**|Liczba wystąpień obiektów typu. **Liczba**  jest zawsze 1 dla wystąpienia.|
 |**Rozmiar (w bajtach)**|Dla typu, rozmiar wszystkich wystąpień typu w migawce, mniejszy rozmiar obiektów zawartych w wystąpieniach.<br /><br /> Dla wystąpienia, rozmiar obiektu, mniejszy od rozmiaru obiektów zawartych w wystąpieniu. |
 |**Rozmiar włącznie (w bajtach)**|Rozmiar wystąpień typu lub rozmiar pojedynczego wystąpienia, łącznie z rozmiarem zawartych obiektów.|
 |**Moduł**|Moduł, który zawiera obiekt.|
 
-### <a name="paths-to-root-tree-snapshot-details-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a>Ścieżki do drzewa głównego (raporty ze szczegółowymi informacjami o migawce)
+### <a name="paths-to-root-tree-snapshot-details-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Ścieżki do drzewa głównego (raporty ze szczegółowymi informacjami o migawce)
 **Ścieżka do drzewa głównego** pokazuje łańcuch obiektów, które odwołują się do typu lub wystąpienia. Moduł wyrzucania elementów bezużytecznych platformy .NET czyści pamięć dla obiektu tylko wtedy, gdy wszystkie odwołania do niego zostały wydane.
 
 Dla typu w drzewie **ścieżki do katalogu głównego** liczba obiektów, które zawierają odwołania do tego typu, pojawia się w kolumnie **liczba odwołań** .
 
 ![Ścieżki do drzewa głównego dla typów](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Ścieżki do drzewa głównego dla typów")
 
-### <a name="referenced-types-or-referenced-objects-tree-snapshot-details-reports"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a>Przywoływane typy lub drzewo przywoływanych obiektów (raporty szczegółów migawek)
+### <a name="referenced-types-or-referenced-objects-tree-snapshot-details-reports"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Przywoływane typy lub drzewo przywoływanych obiektów (raporty szczegółów migawek)
 **Przywoływane typy** lub drzewa **obiektów, do** których istnieją odwołania, są wyświetlane obiekty, do których odwołuje się wybrany typ lub wystąpienie.
 
 ![Drzewo przywoływanych obiektów dla wystąpień](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Drzewo przywoływanych obiektów dla wystąpień")
@@ -168,7 +168,7 @@ Oba linki otwierają ten sam raport. Jedyną różnicą jest początkowa kolejno
 
  ![Łącze do raportu różnic w okienku migawki](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Łącze do raportu różnic w okienku migawki")
 
-### <a name="managed-heap-tree-snapshot-diff-reports"></a><a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a>Zarządzane drzewo sterty (raporty różnic migawek)
+### <a name="managed-heap-tree-snapshot-diff-reports"></a><a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Zarządzane drzewo sterty (raporty różnic migawek)
 
  W drzewie **zarządzanym sterty** są wyświetlane typy obiektów, które są przechowywane w pamięci. Można rozwinąć nazwę typu, aby wyświetlić dziesięć największych wystąpień typu, posortowane według rozmiaru. Wybierz typ lub wystąpienie, aby wyświetlić **ścieżki do katalogu głównego** i **przywoływanych obiektów** drzewa dla wybranego elementu.
 
@@ -187,7 +187,7 @@ Oba linki otwierają ten sam raport. Jedyną różnicą jest początkowa kolejno
 |**Różnica w rozmiarze włącznie (w bajtach)**|Dla typu, różnica w rozmiarze wszystkich wystąpień typu między migawką podstawową i poprzednią migawką, włącznie z rozmiarem obiektów w obiektach. Pole jest puste dla wystąpienia.|
 |**Moduł**|Moduł, który zawiera obiekt.|
 
-### <a name="paths-to-root-tree-snapshot-diff-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a>Ścieżki do drzewa głównego (raporty różnic migawek)
+### <a name="paths-to-root-tree-snapshot-diff-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Ścieżki do drzewa głównego (raporty różnic migawek)
 
 **Ścieżka do drzewa głównego** pokazuje łańcuch obiektów, które odwołują się do typu lub wystąpienia. Moduł wyrzucania elementów bezużytecznych platformy .NET czyści pamięć dla obiektu tylko wtedy, gdy wszystkie odwołania do niego zostały wydane.
 
@@ -195,7 +195,7 @@ Dla typu w drzewie **ścieżki do katalogu głównego** liczba obiektów, które
 
  ![Ścieżki do drzewa głównego w raporcie różnicowym](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Ścieżki do drzewa głównego w raporcie różnicowym")
 
-### <a name="referenced-types-or-referenced-objects-tree-snapshot-diff-reports"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a>Przywoływane typy lub drzewo przywoływanych obiektów (raporty różnic migawek)
+### <a name="referenced-types-or-referenced-objects-tree-snapshot-diff-reports"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Przywoływane typy lub drzewo przywoływanych obiektów (raporty różnic migawek)
 
 **Przywoływane typy** lub drzewa **obiektów, do** których istnieją odwołania, są wyświetlane obiekty, do których odwołuje się wybrany typ lub wystąpienie.
 

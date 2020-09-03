@@ -10,29 +10,29 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 1ecc66cb58ad11bd431acb341dae0493ce8192da
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77515303"
 ---
 # <a name="make-member-static"></a>Ustawianie elementu członkowskiego jako statycznego
 
-Ten refaktoryzator ma zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
-**Co:** Zrób element członkowski jako statyczny.
+**Co:** Ustaw element członkowski jako statyczny.
 
 **Kiedy:** Chcesz, aby element członkowski niestatyczny był statyczny.
 
-**Dlaczego?** Statyczne elementy członkowskie poprawić czytelność: wiedząc, że określony kod jest izolowany ułatwia zrozumienie, ponowne czytanie i ponowne użycie. 
+**Dlaczego:** Statyczne składowe zwiększają czytelność: wiedzą, że konkretny kod jest izolowany, ułatwia zrozumienie, ponowne odczytywanie i używanie. 
 
 ## <a name="how-to"></a>Porady
 
-1. Umieść swoją cieszę na nazwie członka.
+1. Umieść karetkę na nazwie elementu członkowskiego.
 
-2. Naciśnij **klawisze Ctrl**+**.** (kropka), aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
+2. Naciśnij klawisz **Ctrl** + **.** (okres), aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
 
    ![Ustawianie elementu członkowskiego jako statycznego](media/make-member-static.png)
 

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7dc2ba585c500fe045d143a2b8baa2d193466fdf
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917784"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
@@ -44,15 +44,15 @@ Jeśli masz wiele kont Microsoft i/lub kont służbowych, możesz dodać je wszy
 
 ### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Uzyskiwanie dostępu do konta platformy Azure za pomocą okna dialogowego Dodawanie połączonej usługi
 
-1. Utwórz projekt aplikacji uniwersalnej w C#programie.
+1. Utwórz projekt aplikacji uniwersalnej w języku C#.
 
 2. Kliknij prawym przyciskiem myszy węzeł projektu w Eksplorator rozwiązań i wybierz polecenie **dodaj > połączoną usługę**. Zostanie wyświetlony Kreator dodawania usługi połączonej z listą usług na koncie platformy Azure skojarzonym z IDENTYFIKATORem logowania programu Visual Studio. Pamiętaj, że nie musisz logować się oddzielnie na platformie Azure. Należy jednak zalogować się do innych kont przy pierwszej próbie uzyskania dostępu do zasobów z danego komputera.
 
     > [!WARNING]
-    > Jeśli tworzysz aplikację ze sklepu w programie Visual Studio 2015 na określonym komputerze po raz pierwszy, zostanie wyświetlony monit o włączenie tego urządzenia do trybu deweloperskiego, przechodząc do **ustawień &#124; . Aktualizacje i zabezpieczenia &#124; dla deweloperów** na komputerze. Aby uzyskać więcej informacji, zobacz [Włączanie urządzenia na potrzeby programowania](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).
+    > Jeśli tworzysz aplikację ze sklepu w programie Visual Studio 2015 na określonym komputerze po raz pierwszy, zostanie wyświetlony monit o włączenie tego urządzenia do trybu deweloperskiego, przechodząc do **ustawień &#124;. Aktualizacje i &#124; zabezpieczeń dla deweloperów** na komputerze. Aby uzyskać więcej informacji, zobacz [Włączanie urządzenia na potrzeby programowania](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).
 
-### <a name="access_azure"></a>Dostęp do Azure Active Directory w projekcie sieci Web
- Usługa Azure AD umożliwia obsługę logowania jednokrotnego dla użytkowników końcowych w aplikacjach sieci Web ASP.NET MVC lub uwierzytelnianie usługi AD w usługach interfejsu API sieci Web. Uwierzytelnianie domeny różni się od uwierzytelniania poszczególnych kont użytkowników. Użytkownicy mający dostęp do domeny Active Directory mogą korzystać z istniejących kont usługi Azure AD w celu łączenia się z aplikacjami sieci Web. Aplikacje pakietu Office 365 mogą również korzystać z uwierzytelniania domeny. Aby wyświetlić tę akcję, Utwórz aplikację sieci Web (**plik > nowym projekcie > C# > aplikacji sieci web w chmurze > ASP.NET**). W oknie dialogowym Nowy projekt ASP.NET wybierz pozycję **Zmień uwierzytelnianie**. Zostanie wyświetlony Kreator uwierzytelniania i pozwala wybrać rodzaj uwierzytelniania, który ma być używany w aplikacji.
+### <a name="access-azure-active-directory-in-a-web-project"></a><a name="access_azure"></a> Dostęp do Azure Active Directory w projekcie sieci Web
+ Usługa Azure AD umożliwia obsługę logowania jednokrotnego dla użytkowników końcowych w aplikacjach sieci Web ASP.NET MVC lub uwierzytelnianie usługi AD w usługach interfejsu API sieci Web. Uwierzytelnianie domeny różni się od uwierzytelniania poszczególnych kont użytkowników. Użytkownicy mający dostęp do domeny Active Directory mogą korzystać z istniejących kont usługi Azure AD w celu łączenia się z aplikacjami sieci Web. Aplikacje pakietu Office 365 mogą również korzystać z uwierzytelniania domeny. Aby wyświetlić tę akcję, Utwórz aplikację sieci Web (**plik > nowym projekcie > C# > chmurze > aplikacji sieci web ASP.NET**). W oknie dialogowym Nowy projekt ASP.NET wybierz pozycję **Zmień uwierzytelnianie**. Zostanie wyświetlony Kreator uwierzytelniania i pozwala wybrać rodzaj uwierzytelniania, który ma być używany w aplikacji.
 
  ![Okno dialogowe Zmienianie uwierzytelniania dla ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
 

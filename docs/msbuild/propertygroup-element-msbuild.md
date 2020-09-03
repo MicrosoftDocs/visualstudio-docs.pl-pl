@@ -1,5 +1,5 @@
 ---
-title: PropertyGroup Element (MSBuild) | Dokumenty firmy Microsoft
+title: Property — element (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b94cf266be81b81aca9c83fe8d29b9777ee9114b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632930"
 ---
-# <a name="propertygroup-element-msbuild"></a>PropertyGroup element (MSBuild)
+# <a name="propertygroup-element-msbuild"></a>Property — element (MSBuild)
 
-Zawiera zestaw elementów [właściwości](../msbuild/property-element-msbuild.md) zdefiniowanych przez użytkownika. Każdy `Property` element używany w projekcie MSBuild musi `PropertyGroup` być elementem podrzędnym elementu.
+Zawiera zestaw elementów [Właściwości](../msbuild/property-element-msbuild.md) zdefiniowanych przez użytkownika. Każdy `Property` element użyty w projekcie programu MSBuild musi być elementem podrzędnym `PropertyGroup` elementu.
 
- \<> \<> PropertyGroup projektu
+ \<Project> \<PropertyGroup>
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,13 +48,13 @@ Zawiera zestaw elementów [właściwości](../msbuild/property-element-msbuild.m
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Warunek|Atrybut opcjonalny.<br /><br /> Warunek do oceny. Aby uzyskać więcej informacji, zobacz [Warunki](../msbuild/msbuild-conditions.md).|
+|Warunek|Atrybut opcjonalny.<br /><br /> Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Właściwość](../msbuild/property-element-msbuild.md)|Element opcjonalny.<br /><br /> Nazwa właściwości zdefiniowanej przez użytkownika, która zawiera wartość właściwości. Może istnieć zero *Property* lub więcej `PropertyGroup` Property elementów w elemencie.|
+|[Właściwość](../msbuild/property-element-msbuild.md)|Element opcjonalny.<br /><br /> Nazwa właściwości zdefiniowanej przez użytkownika, która zawiera wartość właściwości. Element może mieć zero lub więcej elementów *Właściwości* `PropertyGroup` .|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
@@ -64,7 +64,7 @@ Zawiera zestaw elementów [właściwości](../msbuild/property-element-msbuild.m
 
 ## <a name="example"></a>Przykład
 
- Poniższy przykład kodu pokazuje, jak ustawić właściwości na podstawie warunku. W tym przykładzie, jeśli `CompileConfig` wartość `DEBUG`właściwości `Optimization` `Obfuscate`jest `OutputPath` , , i `PropertyGroup` właściwości wewnątrz elementu są ustawione.
+ Poniższy przykład kodu pokazuje, jak ustawić właściwości na podstawie warunku. W tym przykładzie, jeśli wartość `CompileConfig` Właściwości to `DEBUG` , `Optimization` `Obfuscate` właściwości, i `OutputPath` wewnątrz `PropertyGroup` elementu są ustawione.
 
 ```xml
 <PropertyGroup Condition="'$(CompileConfig)' == 'DEBUG'" >
@@ -77,4 +77,4 @@ Zawiera zestaw elementów [właściwości](../msbuild/property-element-msbuild.m
 ## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
-- [Właściwości MSBuild](../msbuild/msbuild-properties.md)
+- [właściwości programu MSBuild](../msbuild/msbuild-properties.md)

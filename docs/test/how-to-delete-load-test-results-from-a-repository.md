@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd196076fb769f80c36ab8630eebf1e8a0f8b234
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287782"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Instrukcje: usuwanie wyników testu obciążenia z repozytorium

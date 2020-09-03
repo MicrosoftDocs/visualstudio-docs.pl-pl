@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4f4f34a8ed848d548b2e23d3f9a3cf3c603c7cad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541365"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Instrukcje: programowe Wyświetlanie listy niedawno używanych plików skoroszytu
@@ -34,7 +34,7 @@ ms.locfileid: "85541365"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#9)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pracuj ze skoroszytami](../vsto/working-with-workbooks.md)
 - [NamedRange — formant](../vsto/namedrange-control.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)
