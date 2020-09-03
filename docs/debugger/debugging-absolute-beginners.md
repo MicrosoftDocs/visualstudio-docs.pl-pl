@@ -1,6 +1,6 @@
 ---
-title: Debugowanie kodu dla początkujących
-description: Jeśli debugujesz po raz pierwszy, poznaj kilka zasad ułatwiających uruchamianie aplikacji w trybie debugowania w programie Visual Studio
+title: Debugowanie kodu dla bezwzględnych początkujących
+description: Jeśli debugujesz po raz pierwszy, zapoznaj się z kilkoma zasadami ułatwiającymi uruchomienie aplikacji w trybie debugowania w programie Visual Studio
 ms.date: 02/14/2020
 ms.topic: tutorial
 helpviewer_keywords:
@@ -11,91 +11,91 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c3cf9d5e4d72ed316344d1bda930d0416e9efe5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77416400"
 ---
-# <a name="how-to-debug-for-absolute-beginners"></a>Jak debugować dla początkujących
+# <a name="how-to-debug-for-absolute-beginners"></a>Jak debugować dla bezwzględnych początkujących
 
-Bez wątpienia kod, który piszemy jako programiści, nie zawsze robi to, czego oczekiwaliśmy. Czasami robi coś zupełnie innego! Gdy tak się stanie, następnym zadaniem jest dowiedzieć się, dlaczego i chociaż możemy być kuszeni, aby po prostu zachować patrząc na nasz kod godzinami, jest o wiele łatwiejsze i wydajne w użyciu narzędzia do debugowania lub debugera.
+Bez błędów kod napisany jako deweloperzy oprogramowania nie zawsze wykonuje oczekiwane czynności. Czasami robi się coś całkowicie inaczej! Gdy tak się stanie, następnym zadaniem jest ustalenie przyczyny, a mimo to, że firma Microsoft może być skłonna do pogodzenia się w naszym kodzie, co znacznie ułatwia i wydajniej korzystać z narzędzia debugowania lub debugera.
 
-Debuger, niestety, nie jest czymś, co może magicznie ujawnić wszystkie problemy lub "błędy" w naszym kodzie. *Debugowanie* oznacza, aby uruchomić kod krok po kroku w narzędziu debugowania, takich jak Visual Studio, aby znaleźć dokładny punkt, w którym popełnisz błąd programowania. Następnie można zrozumieć, jakie poprawki należy wprowadzić w kodzie i narzędzia debugowania często pozwalają na wprowadzenie tymczasowych zmian, dzięki czemu można kontynuować uruchamianie programu.
+Debuger, niestety, nie jest coś, które może w sposób magiczny ujawniać wszystkie problemy lub "usterki" w naszym kodzie. *Debugowanie* oznacza uruchamianie kodu krok po kroku w narzędziu do debugowania, takim jak Visual Studio, aby znaleźć dokładny punkt, w którym popełniono błąd programistyczny. Następnie można zrozumieć, jakie korekty należy wprowadzić w kodzie, a narzędzia debugowania często umożliwiają wprowadzanie tymczasowych zmian, aby można było kontynuować uruchamianie programu.
 
-Korzystanie debuger skutecznie jest również umiejętnością, która wymaga czasu i praktyki, aby dowiedzieć się, ale ostatecznie jest podstawowym zadaniem dla każdego programisty. W tym artykule, a następnie wprowadzamy podstawowe zasady debugowania i zawierają wskazówki, aby rozpocząć.
+Efektywne korzystanie z debugera jest również umiejętnością, która wymaga czasu i ma na celu naukę, ale jest to ostatecznie podstawowe zadanie dla każdego dewelopera oprogramowania. W tym artykule wprowadzamy podstawowe zasady debugowania i podano porady ułatwiające rozpoczęcie pracy.
 
-## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>Wyjaśnij problem, zadając sobie właściwe pytania
+## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>Wyjaśnij problem, pytając o odpowiednie pytania
 
-Pomaga wyjaśnić problem, na który wpadłeś, zanim spróbujesz go rozwiązać. Spodziewamy się, że już wpadł na problem w kodzie, w przeciwnym razie nie byłoby tutaj próbuje dowiedzieć się, jak go debugować! Dlatego przed rozpoczęciem debugowania upewnij się, że zidentyfikowałeś problem, który próbujesz rozwiązać:
+Pomaga w wyjaśnieniu problemu, który został uruchomiony, przed podjęciem próby jego rozwiązania. Oczekujemy, że już wystąpił problem w kodzie. w przeciwnym razie nie będziesz próbować ustalić, jak debugować! Dlatego przed rozpoczęciem debugowania upewnij się, że został zidentyfikowany problem, który próbujesz rozwiązać:
 
-* Czego oczekiwałeś od kodu?
+* Jak oczekujesz, że Twój kod?
 
-* Co się stało zamiast tego?
+* Co się stało?
 
-    Jeśli napotkałeś błąd (wyjątek) podczas uruchamiania aplikacji, może to być dobra rzecz! Wyjątek jest nieoczekiwane zdarzenie napotkane podczas uruchamiania kodu, zazwyczaj błąd pewnego rodzaju. Narzędzie do debugowania można zabrać do dokładnego miejsca w kodzie, gdzie wystąpił wyjątek i może pomóc w zbadaniu możliwych poprawek.
+    Jeśli wystąpi błąd (wyjątek) podczas uruchamiania aplikacji, może to być dobry efekt. Wyjątek to nieoczekiwane zdarzenie napotkane podczas uruchamiania kodu, zazwyczaj jest to błąd pewnego rodzaju. Narzędzie debugowania może przechodzenie do dokładnego miejsca w kodzie, w którym wystąpił wyjątek, i może pomóc w zbadaniu możliwych poprawek.
 
-    Jeśli stało się coś innego, jaki jest objaw problemu? Czy podejrzewasz już, gdzie ten problem wystąpił w kodzie? Na przykład jeśli kod wyświetla jakiś tekst, ale tekst jest niepoprawny, wiesz, że dane są złe lub kod, który ustawia tekst wyświetlany ma jakiś błąd. Przechodząc przez kod w debugerze, można zbadać każdą zmianę zmiennych, aby dokładnie odnajdywać, kiedy i jak są przypisywane niepoprawne wartości.
+    Jeśli coś innego się stało, jaki jest objaw problemu? Czy już podejrzewasz, że ten problem wystąpił w kodzie? Na przykład jeśli kod wyświetla jakiś tekst, ale tekst jest niepoprawny, wiadomo, że dane są nieprawidłowe lub kod, który ustawia wyświetlany tekst, ma jakiś błąd. Poprzez przechodzenie przez kod w debugerze można sprawdzić każdą zmianę w zmiennych, aby dokładnie odkryć, kiedy i jak są przypisywane nieprawidłowe wartości.
 
-## <a name="examine-your-assumptions"></a>Sprawdź swoje założenia
+## <a name="examine-your-assumptions"></a>Badanie założeń
 
-Zanim zbadasz błąd lub błąd, pomyśl o założeniach, które sprawiły, że spodziewasz się pewnego wyniku. Ukryte lub nieznane założenia mogą przeszkadzać w identyfikowaniu problemu, nawet jeśli patrzysz bezpośrednio na przyczynę problemu w debugerze. Możesz mieć długą listę możliwych założeń! Oto kilka pytań, które należy zadać sobie, aby zakwestionować swoje założenia.
+Przed zbadaniem usterki lub błędu, należy wziąć pod uwagę założenia, które wydają oczekiwany wynik. Ukryte lub nieznane założenia mogą pomóc w zidentyfikowaniu problemu nawet w przypadku poprawnego działania w debugerze. Być może masz długą listę możliwych założeń. Poniżej przedstawiono kilka pytań, które należy zadać sobie, aby zażądać założeń.
 
-* Czy używasz odpowiedniego interfejsu API (czyli odpowiedniego obiektu, funkcji, metody lub właściwości)? Interfejs API, którego używasz, może nie wykonywać tego, co uważasz za robi. (Po zbadaniu wywołania interfejsu API w debugerze, naprawienie go może wymagać podróży do dokumentacji w celu zidentyfikowania poprawnego interfejsu API).
+* Czy używasz prawego interfejsu API (czyli odpowiedniego obiektu, funkcji, metody lub właściwości)? Używany interfejs API może nie zrobić tego, co Twoim zdaniem. (Po sprawdzeniu wywołania interfejsu API w debugerze, jego naprawienie może wymagać przeprowadzenia podróży do dokumentacji, aby ułatwić identyfikację poprawnego interfejsu API).
 
-* Czy używasz interfejsu API poprawnie? Być może użyłeś odpowiedniego interfejsu API, ale nie użyłeś go we właściwy sposób.
+* Czy używasz interfejsu API poprawnie? Być może korzystasz z odpowiedniego interfejsu API, ale nie korzystasz z niego w odpowiedni sposób.
 
-* Czy kod zawiera literówki? Niektóre literówki, takie jak prosta pisownia nazwy zmiennej, mogą być trudne do zobaczenia, szczególnie podczas pracy z językami, które nie wymagają deklarowania zmiennych przed ich użyciem.
+* Czy Twój kod zawiera jakiekolwiek literówki? Niektóre literówki, takie jak proste błędy pisowni nazwy zmiennej, mogą być trudne do sprawdzenia, szczególnie podczas pracy z językami, które nie wymagają zadeklarować zmiennych przed ich użyciem.
 
-* Czy wwzmek do kodu i założyć, że nie ma związku z problemem, który widzisz?
+* Czy wprowadzono zmianę w kodzie i założono, że nie jest on związany z problemem, który widzisz?
 
-* Czy spodziewałeś się, że obiekt lub zmienna będzie zawierać określoną wartość (lub określony typ wartości), która różni się od tego, co naprawdę się wydarzyło?
+* Czy oczekujesz, że obiekt lub zmienna zawierają określoną wartość (lub określony typ wartości), która różni się od tego, co naprawdę się stało?
 
-* Czy znasz intencję kodu? Często trudniej jest debugować cudzy kod. Jeśli nie jest to kod, jest możliwe, że może być konieczne poświęcanie czasu na uczenie się dokładnie, co robi kod, zanim będzie można debugować go skutecznie.
+* Czy znasz zamiar kodu? Często trudno jest debugować kod innej osoby. Jeśli nie jest to Twój kod, możliwe, że konieczne będzie poświęcenie czasu na dokładne zapoznanie się z kodem, aby można było efektywnie debugować.
 
     > [!TIP]
-    > Podczas pisania kodu, rozpocząć małe i rozpocząć od kodu, który działa! (Dobry przykładowy kod jest pomocny tutaj.) Czasami łatwiej jest naprawić duży lub skomplikowany zestaw kodu, zaczynając od małego fragmentu kodu, który pokazuje podstawowe zadanie, które próbujesz osiągnąć. Następnie można modyfikować lub dodawać kod przyrostowo, testując w każdym punkcie pod kątem błędów.
+    > Podczas pisania kodu, Rozpocznij mały i zacznij od kodu, który działa! (Dobry przykładowy kod jest przydatny w tym miejscu). Czasami łatwiej jest poprawić duży lub skomplikowany zestaw kodu, rozpoczynając od małego fragmentu kodu, który demonstruje podstawowe zadanie, które chcesz osiągnąć. Następnie można zmodyfikować lub dodać kod przyrostowo, test w każdym punkcie w poszukiwaniu błędów.
 
-Kwestionując swoje założenia, można skrócić czas potrzebny do znalezienia problemu w kodzie. Można również skrócić czas potrzebny do rozwiązania problemu.
+Na podstawie założeń możesz skrócić czas potrzebny na znalezienie problemu w kodzie. Możesz również skrócić czas potrzebny na rozwiązanie problemu.
 
-## <a name="step-through-your-code-in-debugging-mode-to-find-where-the-problem-occurred"></a>Krok po kroku przez kod w trybie debugowania, aby dowiedzieć się, gdzie wystąpił problem
+## <a name="step-through-your-code-in-debugging-mode-to-find-where-the-problem-occurred"></a>Przechodzenie przez kod w trybie debugowania w celu znalezienia miejsca wystąpienia problemu
 
-Po normalnym uruchomieniu aplikacji, widać błędy i niepoprawne wyniki tylko po uruchomieniu kodu. Program może również zakończyć się nieoczekiwanie, nie informując o tym, dlaczego.
+Gdy normalnie uruchamiasz aplikację, zobaczysz błędy i nieprawidłowe wyniki tylko wtedy, gdy kod został uruchomiony. Program może również zakończyć się nieoczekiwanie, nie informując o tym, dlaczego.
 
-Uruchamianie aplikacji w debugerze, nazywanym również *trybem debugowania,* oznacza, że debuger aktywnie monitoruje wszystko, co dzieje się podczas uruchamiania programu. Umożliwia również wstrzymanie aplikacji w dowolnym momencie, aby sprawdzić jej stan, a następnie krok po wierszu kodu, aby obserwować każdy szczegół, jak to się dzieje.
+Uruchamianie aplikacji w debugerze, nazywanej również *trybem debugowania*, oznacza, że debuger aktywnie monitoruje wszystko, co dzieje się w trakcie działania programu. Umożliwia ona również Wstrzymywanie aplikacji w dowolnym momencie w celu sprawdzenia jej stanu, a następnie przechodzenie do kolejnych kroków w wierszu kodu, aby obejrzeć wszystkie szczegóły w miarę ich działania.
 
-W programie Visual Studio należy wprowadzić tryb debugowania przy użyciu **polecenia F5** (lub polecenia menu **Debugowania** > **Start debugowania** lub **przycisku Rozpocznij debugowanie** Start ![Debugowania](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi debugowania). Jeśli wystąpią wyjątki, Pomocnik wyjątków programu Visual Studio przeniesie Cię do dokładnego punktu, w którym wystąpił wyjątek i zawiera inne przydatne informacje. Aby uzyskać więcej informacji na temat obsługi wyjątków w kodzie, zobacz [Techniki debugowania i narzędzia](../debugger/write-better-code-with-visual-studio.md).
+W programie Visual Studio można przejść do trybu debugowania za pomocą klawisza **F5** (lub **debugowania**  >  **Rozpocznij debugowanie** menu lub przycisk **Rozpocznij debugowanie** ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi debugowania). W przypadku wystąpienia dowolnego wyjątku pomocnik wyjątków programu Visual Studio przeprowadzi Cię do dokładnego punktu, w którym wystąpił wyjątek i udostępnia inne przydatne informacje. Aby uzyskać więcej informacji na temat obsługi wyjątków w kodzie, zobacz [techniki debugowania i narzędzia](../debugger/write-better-code-with-visual-studio.md).
 
-Jeśli nie otrzymasz wyjątku, prawdopodobnie masz dobry pomysł, gdzie szukać problemu w kodzie. Jest to, gdzie można użyć *punktów przerwania* z debugerem, aby dać sobie szansę, aby zbadać kod dokładniej. Punkty przerwania są najbardziej podstawową i istotną cechą niezawodnego debugowania. Punkt przerwania wskazuje, gdzie visual studio należy wstrzymać uruchomiony kod, dzięki czemu można spojrzeć na wartości zmiennych lub zachowanie pamięci lub sekwencji, w której uruchamia się kod.
+Jeśli nie otrzymano wyjątku, prawdopodobnie masz dobry pomysł na to, gdzie szukać problemu w kodzie. Jest to miejsce, w którym można używać *punktów przerwania* z debugerem, aby dać sobie możliwość dokładnego badania kodu. Punkty przerwania są najbardziej podstawową i istotną funkcją niezawodnego debugowania. Punkt przerwania wskazuje, gdzie program Visual Studio ma wstrzymywać uruchomiony kod, aby można było przyjrzeć się wartościom zmiennych lub obsłużyć pamięć lub sekwencję, w której uruchamiany jest kod.
 
-W programie Visual Studio można szybko ustawić punkt przerwania, klikając lewy margines obok wiersza kodu. Lub umieść kursor na linii i naciśnij **klawisz F9**.
+W programie Visual Studio można szybko ustawić punkt przerwania, klikając na lewym marginesie obok wiersza kodu. Lub umieść kursor w wierszu i naciśnij klawisz **F9**.
 
-Aby pomóc zilustrować te pojęcia, przebierzemy Cię przez przykładowy kod, który ma już kilka błędów. Używamy języka C#, ale funkcje debugowania dotyczą języka Visual Basic, C++, JavaScript, Python i innych obsługiwanych języków.
+Aby ułatwić zilustrowanie tych koncepcji, przeprowadzimy Cię przez przykładowy kod, który ma już kilka błędów. Korzystamy z języka C#, ale funkcje debugowania mają zastosowanie do Visual Basic, C++, JavaScript, Python i innych obsługiwanych języków.
 
-### <a name="create-a-sample-app-with-some-bugs"></a>Tworzenie przykładowej aplikacji (z niektórymi błędami)
+### <a name="create-a-sample-app-with-some-bugs"></a>Tworzenie przykładowej aplikacji (z niektórymi usterkami)
 
-Następnie utworzymy aplikację, która ma kilka błędów.
+Następnie utworzymy aplikację, która zawiera kilka błędów.
 
-1. W zależności od typu aplikacji, który ma zostać utworzony, należy zainstalować program Visual Studio i obciążenie **programistyczne pulpitu platformy .NET** lub obciążenie **programistyczne .NET Core** na wielu platformach.
+1. W zależności od typu aplikacji, który chcesz utworzyć, musisz mieć zainstalowany program Visual **.NET Core cross platform development** Studio i obciążenie **Programowanie aplikacji klasycznych platformy .NET** .
 
-    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony pobierania programu Visual [Studio,](https://visualstudio.microsoft.com/downloads/)aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/),   Aby zainstalować ją bezpłatnie.
 
-    Jeśli chcesz zainstalować obciążenie, ale masz już program Visual Studio, kliknij pozycję **Narzędzia** > **Pobierz narzędzia i funkcje**. Uruchamia instalator programu Visual Studio. Wybierz obciążenie **programistyczne dla komputerów .NET** (lub program **.NET Core cross platform development),** a następnie wybierz pozycję **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, kliknij przycisk **Narzędzia**  >  **Pobierz narzędzia i funkcje**. Zostanie uruchomiona Instalator programu Visual Studio. Wybierz obciążenie programu **.NET Desktop Development** (lub **Programowanie dla wielu platform w środowisku .NET Core**), a następnie wybierz polecenie **Modyfikuj**.
 
 1. Otwórz program Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    W oknie początkowym wybierz pozycję **Utwórz nowy projekt**. Wpisz **konsolę** w polu wyszukiwania, a następnie wybierz **aplikację konsoli (.NET Core)** lub aplikację konsoli **(.NET Framework).** Wybierz pozycję **Dalej**. Wpisz nazwę projektu, taką jak **ConsoleApp-FirstApp,** a następnie kliknij przycisk **Utwórz**.
+    W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**. Wpisz w polu wyszukiwania **konsolę** , a następnie wybierz pozycję **Aplikacja konsolowa (.NET Core)** lub **Aplikacja konsolowa (.NET Framework)**. Wybierz pozycję **Next** (Dalej). Wpisz nazwę projektu, na przykład **ConsoleApp-FirstApp** , a następnie kliknij przycisk **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na górnym pasku menu wybierz pozycję **Plik** > **nowego** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual C#** wybierz pozycję **Aplikacja konsoli**, a następnie w środkowym okienku wybierz aplikację **konsoli (.NET Framework)** lub **aplikację konsoli (.NET Core).** Wpisz nazwę, taką jak **ConsoleApp-FirstApp** i kliknij **przycisk OK**.
+    Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual C#** wybierz pozycję **Aplikacja konsolowa**, a następnie w środkowym okienku wybierz pozycję **Aplikacja konsolowa (.NET Framework)** lub **Aplikacja konsolowa (.NET Core)**. Wpisz nazwę, taką jak **ConsoleApp-FirstApp** , i kliknij przycisk **OK**.
     ::: moniker-end
 
-    Jeśli nie widzisz szablonu projektu **aplikacji konsoli (.NET Framework)** lub **aplikacji konsoli (net core),** przejdź do **pozycji Narzędzia** > **Pobierz narzędzia i funkcje**, który otwiera Instalator programu Visual Studio. Wybierz opcję **programowy platformy .NET Core dla różnych platform** lub obciążenia **programistycznego .NET dla komputerów stacjonarnych,** a następnie wybierz pozycję **Modyfikuj**.
+    Jeśli nie widzisz szablonu projektu **aplikacja konsoli (.NET Framework)** lub **Aplikacja konsolowa (.NET Core)** , przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz opcję **Programowanie dla wielu platform w środowisku .NET Core** lub **środowisko programistyczne programu .NET Desktop** , a następnie wybierz polecenie **Modyfikuj**.
 
-    Visual Studio tworzy projekt konsoli, który pojawia się w Eksploratorze rozwiązań w prawym okienku.
+    Program Visual Studio tworzy projekt konsoli, który pojawia się w Eksplorator rozwiązań w okienku po prawej stronie.
 
-1. W *Program.cs*zastąp cały domyślny kod następującym kodem:
+1. W *program.cs*Zastąp cały kod domyślny następującym kodem:
 
     ```csharp
     using System;
@@ -176,15 +176,15 @@ Następnie utworzymy aplikację, która ma kilka błędów.
     }
     ```
 
-    Naszym zamiarem jest wyświetlenie nazwy galaktyki, odległości od galaktyki i typu galaktyki na liście. Do debugowania, ważne jest, aby zrozumieć intencji kodu. Oto format jednego wiersza z listy, który chcemy pokazać na wyjściu:
+    Naszym celem tego kodu jest wyświetlenie nazwy programu Galaxy, odległości od programu Galaxy i typu "wszystkie" na liście. Aby debugować, ważne jest zrozumienie intencji kodu. Oto format jednego wiersza z listy, który ma być wyświetlany w danych wyjściowych:
 
-    *nazwa galaktyki*, *odległość*, *typ galaktyki*.
+    *Nazwa programu Galaxy*, *odległość*, *Typ Galaxy*.
 
-### <a name="run-the-app"></a>Uruchomienie aplikacji
+### <a name="run-the-app"></a>Uruchamianie aplikacji
 
-1. Naciśnij **klawisz F5** lub przycisk **Start Debugowania** ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi Debugowania, znajdującym się nad edytorem kodu.
+1. Naciśnij klawisz **F5** lub przycisk **Rozpocznij debugowanie** ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi debugowania znajdującym się powyżej edytora kodu.
 
-    Aplikacja uruchamia się i nie ma żadnych wyjątków wyświetlanych nam przez debugera. Jednak dane wyjściowe widoczne w oknie konsoli nie są zgodne z oczekiwaniami. Oto oczekiwane dane wyjściowe:
+    Aplikacja zostanie uruchomiona i nie ma żadnych wyjątków pokazywanych przez debuger. Jednak dane wyjściowe wyświetlane w oknie konsoli nie są oczekiwane. Oto oczekiwane dane wyjściowe:
 
     ```
     Tadpole  400,  Spiral
@@ -195,7 +195,7 @@ Następnie utworzymy aplikację, która ma kilka błędów.
     Maffei 1,  Elliptical
     ```
 
-    Ale widzimy to zamiast tego:
+    Jednak zamiast tego zobaczymy następujący:
 
     ```
     Tadpole  400,  ConsoleApp_FirstApp.GType
@@ -206,11 +206,11 @@ Następnie utworzymy aplikację, która ma kilka błędów.
     Maffei 1, 11,  ConsoleApp_FirstApp.GType
     ```
 
-    Patrząc na dane wyjściowe i nasz `GType` kod, wiemy, że jest to nazwa klasy, która przechowuje typ galaktyki. Staramy się pokazać rzeczywisty typ galaktyki (np.
+    Patrząc na dane wyjściowe i w naszym kodzie, wiemy, że `GType` jest nazwą klasy, w której jest przechowywany typ Galaxy. Próbujemy pokazać rzeczywisty typ Galaxy (na przykład "spirala"), a nie nazwę klasy!
 
 ### <a name="debug-the-app"></a>Debugowanie aplikacji
 
-1. Gdy aplikacja jest nadal uruchomiona, ustaw punkt przerwania, klikając `Console.WriteLine` lewy margines obok wywołania metody w tym wierszu kodu.
+1. Gdy aplikacja nadal działa, ustaw punkt przerwania, klikając na lewym marginesie obok `Console.WriteLine` wywołania metody w tym wierszu kodu.
 
     ```csharp
     foreach (Galaxy theGalaxy in theGalaxies)
@@ -219,49 +219,49 @@ Następnie utworzymy aplikację, która ma kilka błędów.
     }
     ```
 
-    Po ustawieniu punktu przerwania na lewym marginesie pojawi się czerwona kropka.
+    Po ustawieniu punktu przerwania na lewym marginesie pojawia się czerwona kropka.
 
-    Ponieważ widzimy problem w danych wyjściowych, rozpoczniemy debugowanie, patrząc na poprzedni kod, który ustawia dane wyjściowe w debugerze.
+    Ponieważ widzimy problem w danych wyjściowych, rozpocznie się debugowanie, sprawdzając poprzedni kod, który ustawia dane wyjściowe w debugerze.
 
-1. Kliknij przycisk **Uruchom ponownie** ![aplikację](../debugger/media/dbg-tour-restart.png "Uruchom aplikację RestartApp") na pasku narzędzi Debugowania **(Ctrl** + **Shift** + **F5**).
+1. Kliknij przycisk **Uruchom** ponownie ![Uruchom aplikację](../debugger/media/dbg-tour-restart.png "RestartApp") na pasku narzędzi debugowania (**Ctrl**  +  **SHIFT**  +  **F5**).
 
-    Aplikacja wstrzymuje się w punkcie przerwania, który można ustawić. Żółte podświetlenie wskazuje, gdzie debuger jest wstrzymany (żółta linia kodu nie została jeszcze wykonana).
+    Aplikacja wstrzymuje się w ustawionym punkcie przerwania. Żółte wyróżnienie wskazuje, gdzie debuger jest wstrzymany (żółty wiersz kodu nie został jeszcze wykonany).
 
-1. Umieść wskaźnik `GalaxyType` myszy na zmiennej po prawej stronie, a następnie `theGalaxy.GalaxyType`po lewej stronie ikony klucza rozwiń węzeł . Zostanie wyświetlony, `GalaxyType` że `MyGType`zawiera właściwość , `Spiral`a wartość właściwości jest ustawiona na .
+1. Umieść kursor nad `GalaxyType` zmienną po prawej stronie, a następnie po lewej stronie ikony klucz rozwiń węzeł `theGalaxy.GalaxyType` . Zobaczysz, że `GalaxyType` zawiera właściwość `MyGType` , a wartość właściwości jest ustawiona na `Spiral` .
 
-    ![Sprawdzanie zmiennej](../debugger/media/beginners-inspect-variable.png)
+    ![Inspekcja zmiennej](../debugger/media/beginners-inspect-variable.png)
 
-    "Spirala" jest rzeczywiście prawidłową wartością, którą spodziewałeś się wydrukować na konsoli! Dlatego jest to dobry początek, że można uzyskać dostęp do tej wartości w tym kodzie podczas uruchamiania aplikacji. W tym scenariuszu używamy niepoprawnego interfejsu API. Zobaczymy, czy możemy to naprawić podczas uruchamiania kodu w debugerze.
+    "Spirala" jest w rzeczywistości poprawną wartością, którą spodziewasz się wydrukować w konsoli. Dlatego warto uzyskać dostęp do tej wartości w tym kodzie podczas uruchamiania aplikacji. W tym scenariuszu używamy nieprawidłowego interfejsu API. Zobaczymy, czy możemy rozwiązać ten problem podczas uruchamiania kodu w debugerze.
 
-1. W tym samym kodzie, podczas gdy nadal debugowania, `theGalaxy.GalaxyType` umieścić kursor na końcu i zmienić go na `theGalaxy.GalaxyType.MyGType`. Chociaż można wprowadzić tę zmianę, edytor kodu pokazuje błąd wskazujący, że nie można skompilować tego kodu.
+1. W tym samym kodzie, podczas gdy nadal trwa debugowanie, umieść kursor na końcu `theGalaxy.GalaxyType` i zmień go na `theGalaxy.GalaxyType.MyGType` . Chociaż można wprowadzić tę zmianę, w edytorze kodu zostanie wyświetlony komunikat o błędzie informujący o tym, że nie można skompilować tego kodu.
 
-    ![Błąd składni](../debugger/media/beginners-edit.png)
+    ![Błąd składniowy](../debugger/media/beginners-edit.png)
 
-1. Kliknij **pozycję Edytuj** w polu komunikatu Edytuj i **Kontynuuj.** Komunikat o błędzie jest teraz wyświetlany w oknie **Lista błędów.** Błąd wskazuje, że `'object'` nie zawiera definicji `MyGType`dla .
+1. Kliknij przycisk **Edytuj** w oknie wiadomości **Edytuj i Kontynuuj** . W oknie **Lista błędów** zostanie wyświetlony komunikat o błędzie. Błąd wskazuje, że `'object'` nie zawiera definicji dla elementu `MyGType` .
 
-    ![Błąd składni](../debugger/media/beginners-no-definition.png)
+    ![Błąd składniowy](../debugger/media/beginners-no-definition.png)
 
-    Mimo że każdą galaktykę ustawiamy `GType` za pomocą `MyGType` obiektu typu (który ma `theGalaxy` właściwość), debuger nie rozpoznaje obiektu jako obiektu typu. `GType` Co się dzieje? Chcesz przeglądać dowolny kod, który ustawia typ galaktyki. Kiedy to zrobisz, widzisz, `GType` że klasa na `MyGType`pewno ma właściwość , ale coś jest nie tak. Komunikat o `object` błędzie okazuje się być wskazówką; do interpretera języka, typ wydaje się być `object` obiektem typu zamiast `GType`obiektu typu .
+    Mimo że ustawimy każdy element Galaxy przy użyciu obiektu typu `GType` (który ma `MyGType` Właściwość), debuger nie rozpoznaje `theGalaxy` obiektu jako obiektu typu `GType` . Co się dzieje? Chcesz sprawdzić kod, który ustawia typ Galaxy. Gdy to zrobisz, zobaczysz, że `GType` Klasa ma właściwość `MyGType` , ale coś nie jest właściwe. Komunikat o błędzie informujący o tym, że `object` jest to wskazówki; w interpreterze języka typ wydaje się być obiektem typu, `object` a nie obiektem typu `GType` .
 
-1. Przeglądając kod związany z ustawieniem typu `GalaxyType` galaktyki, `Galaxy` można znaleźć `object` właściwość `GType`klasy jest określona jako zamiast .
+1. Przeglądając kod związany z ustawieniem typu Galaxy, znajdziesz `GalaxyType` Właściwość `Galaxy` klasy jako `object` zamiast `GType` .
 
     ```csharp
     public object GalaxyType { get; set; }
     ```
 
-1. Zmień poprzedni kod na ten:
+1. Zmień poprzedni kod na następujący:
 
     ```csharp
     public GType GalaxyType { get; set; }
     ```
 
-1. Kliknij przycisk **Uruchom ponownie** ![aplikację](../debugger/media/dbg-tour-restart.png "Uruchom aplikację RestartApp") na pasku narzędzi Debugowania **(Ctrl** + **Shift** + **F5),** aby ponownie skompilować kod i ponownie uruchomić komputer.
+1. Kliknij przycisk **Uruchom** ponownie ![Uruchom aplikację](../debugger/media/dbg-tour-restart.png "RestartApp") na pasku narzędzi debugowania (**Ctrl**  +  **SHIFT**  +  **F5**), aby ponownie skompilować kod i przeprowadzić ponowne uruchomienie.
 
-    Teraz, gdy debuger wstrzymuje się na `Console.WriteLine`, można najechać kursorem `theGalaxy.GalaxyType.MyGType`na , i zobaczyć, że wartość jest prawidłowo ustawiona.
+    Teraz, gdy debuger zatrzymuje się w programie `Console.WriteLine` , można umieścić wskaźnik myszy nad `theGalaxy.GalaxyType.MyGType` i zobaczyć, że wartość jest prawidłowo ustawiona.
 
-1. Usuń punkt przerwania, klikając okrąg punktu przerwania na lewym marginesie (lub kliknij prawym przyciskiem myszy i wybierz polecenie **Punkt przerwania** > **Usuń punkt przerwania),** a następnie naciśnij **klawisz F5,** aby kontynuować.
+1. Usuń punkt przerwania, klikając okrąg punktu przerwania na lewym marginesie (lub kliknij prawym przyciskiem myszy i wybierz polecenie **punkt**przerwania  >  **Usuń punkt przerwania**), a następnie naciśnij klawisz **F5** , aby kontynuować.
 
-    Aplikacja uruchamia i wyświetla dane wyjściowe. Wygląda to całkiem nieźle teraz, ale można zauważyć jedną rzecz; spodziewałeś się, że galaktyka Small Magellanic Cloud pojawi się jako galaktyka nieregularna w wyjściu konsoli, ale nie pokazuje żadnego typu galaktyki.
+    Aplikacja zostanie uruchomiona i wyświetli dane wyjściowe. Jest to bardzo dobre teraz, ale należy zauważyć, że jest to konieczne. oczekiwano, że mały Magellanic Cloud Galaxy będzie widoczny jako nieregularne oprogramowanie Galaxy w danych wyjściowych w konsoli, ale w ogóle nie pokazuje typu Galaxy.
 
     ```
     Tadpole  400,  Spiral
@@ -278,55 +278,55 @@ Następnie utworzymy aplikację, która ma kilka błędów.
     public GType(char type)
     ```
 
-    Ten kod jest tam, gdzie jest ustawiony typ galaktyki, więc chcemy przyjrzeć się mu bliżej.
+    Ten kod wskazuje, że typ Galaxy jest ustawiony, więc chcemy dokładniej zapoznać się z nim.
 
-1. Kliknij przycisk **Uruchom ponownie** ![aplikację](../debugger/media/dbg-tour-restart.png "Uruchom aplikację RestartApp") na pasku narzędzi Debugowania **(Ctrl** + **Shift** + **F5),** aby ponownie uruchomić komputer.
+1. Kliknij przycisk **Uruchom** ponownie ![aplikację Uruchom ponownie](../debugger/media/dbg-tour-restart.png "RestartApp") na pasku narzędzi debugowania (**Ctrl**  +  **SHIFT**  +  **F5**), aby uruchomić ponownie.
 
-    Debuger wstrzymuje w wierszu kodu, w którym można ustawić punkt przerwania.
+    Debuger wstrzymuje się w wierszu kodu, w którym jest ustawiony punkt przerwania.
 
-1. Umieść wskaźnik `type` myszy na zmiennej. Zobaczysz wartość `S` (po kodzie znaku). Jesteś zainteresowany wartością `I`, ponieważ wiesz, że jest nieregularny typ galaktyki.
+1. Umieść kursor nad `type` zmienną. Zobaczysz wartość `S` (po kodzie znaku). Interesuje Cię wartość `I` , ponieważ wiadomo, że jest to nieregularnego typu Galaxy.
 
-1. Naciśnij **klawisz F5** `type` i ponownie najedź kursorem na zmienną. Powtarzaj ten krok, aż `I` zobaczysz `type` wartość zmiennej.
+1. Naciśnij klawisz **F5** i ponownie umieść wskaźnik myszy na `type` zmiennej. Powtórz ten krok, dopóki nie zostanie wyświetlona wartość `I` `type` zmiennej.
 
-    ![Sprawdzanie zmiennej](../debugger/media/beginners-inspecting-data.png)
+    ![Inspekcja zmiennej](../debugger/media/beginners-inspecting-data.png)
 
-1. Teraz naciśnij **klawisz F11** **(Debug** > **Step Into** lub Step **Into** button na pasku narzędzi Debugowania).
+1. Teraz naciśnij klawisz **F11** (**Debuguj**  >  **krok do** lub przycisk **Wkrocz** na pasku narzędzi debugowania).
 
-    **F11** zaliczki debugera (i wykonuje kod) jedną instrukcję naraz. **F10** (**Step Over**) jest podobne polecenie, i oba są bardzo przydatne podczas nauki korzystania z debugera.
+    **F11** przesuwa debuger (i wykonuje kod) jedną instrukcję w danym momencie. **F10** (**Step over**) jest podobnym poleceniem i obie są niezwykle przydatne podczas uczenia się, jak korzystać z debugera.
 
-1. Naciskaj **klawisz F11,** aż zatrzymasz się w wierszu `switch` kodu w instrukcji dla wartości "I". Tutaj widzisz wyraźny problem wynikający z literówki. Oczekuje się, że kod, `MyGType` aby przejść do miejsca, w którym ustawia jako nieregularny typ galaktyki, ale debuger zamiast tego pomija ten kod całkowicie i wstrzymuje w `default` sekcji `switch` instrukcji.
+1. Naciśnij klawisz **F11** do momentu zatrzymania wiersza kodu w `switch` instrukcji dla wartości "I". Tutaj zobaczysz wyraźny problem wynikający z błędów. Oczekiwano kodu, do którego jest ustawiony `MyGType` jako nieregularnego typu Galaxy, ale debuger zamiast tego całkowicie pomija ten kod i wstrzymuje się do `default` sekcji `switch` instrukcji.
 
-    ![Znajdź literówkę](../debugger/media/beginners-typo.png)
+    ![Znajdź literówki](../debugger/media/beginners-typo.png)
 
-    Patrząc na kod, widzisz literówkę `case 'l'` w instrukcji. należy zastąpić wartością `case 'I'`.
+    Patrząc na kod, zobaczysz literówkę w `case 'l'` instrukcji. Powinna ona mieć wartość `case 'I'`.
 
-1. Kliknij kod i `case 'l'` zastąp `case 'I'`go .
+1. Kliknij kod dla `case 'l'` i zastąp go znakiem `case 'I'` .
 
-1. Usuń punkt przerwania, a następnie kliknij przycisk **Uruchom ponownie,** aby ponownie uruchomić aplikację.
+1. Usuń punkt przerwania, a następnie kliknij przycisk **Uruchom ponownie** , aby ponownie uruchomić aplikację.
 
-    Błędy zostały naprawione teraz i widzisz wyjście, którego oczekujesz!
+    Usterki zostały rozwiązane teraz i zobaczysz dane wyjściowe, których oczekujesz!
 
     Naciśnij dowolny klawisz, aby zakończyć aplikację.
 
 ## <a name="summary"></a>Podsumowanie
 
-Po wyświetleniu problemu użyj debugera i [poleceń kroku,](../debugger/navigating-through-code-with-the-debugger.md) takich jak **F10** i **F11,** aby znaleźć region kodu z problemem.
+Gdy zobaczysz problem, Użyj poleceń debugera i [kroku](../debugger/navigating-through-code-with-the-debugger.md) , takich jak **F10** i **F11** , aby znaleźć region kodu z problemem.
 
 > [!NOTE]
-> Jeśli jest trudne do zidentyfikowania regionu kodu, w którym występuje problem, należy ustawić punkt przerwania w kodzie, który jest uruchamiany przed wystąpieniem problemu, a następnie użyć poleceń kroku, dopóki nie pojawi się manifest problemu. Można również użyć punktów śledzenia do rejestrowania [komunikatów](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints) do okna **Dane wyjściowe.** Patrząc na rejestrowane wiadomości (i zauważając, które wiadomości nie zostały jeszcze zarejestrowane!), często można wyizolować region kodu z problemem. Może być konieczne powtórzenie tego procesu kilka razy, aby go zawęzić.
+> Jeśli jest trudne do zidentyfikowania regionu kodu, w którym występuje problem, ustaw punkt przerwania w kodzie, który jest uruchamiany przed wystąpieniem problemu, a następnie Użyj poleceń Step do momentu wyświetlenia manifestu problemu. Możesz również użyć [punkty śledzenia](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints) do rejestrowania komunikatów w oknie **danych wyjściowych** . Przeglądając zarejestrowane komunikaty (i obserwowanie, które wiadomości nie zostały jeszcze zarejestrowane), możesz często izolować region kodu z powodu problemu. Może być konieczne powtórzenie tego procesu kilka razy, aby zawęzić go.
 
-Po znalezieniu regionu kodu z problemem, użyj debugera do zbadania. Aby znaleźć przyczynę problemu, sprawdź kod problemu podczas uruchamiania aplikacji w debugerze:
+Po znalezieniu regionu kodu z problemem Użyj debugera, aby zbadać. Aby znaleźć przyczynę problemu, sprawdź kod problemu podczas uruchamiania aplikacji w debugerze:
 
-* [Sprawdź zmienne](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) i sprawdź, czy zawierają one typ wartości, które powinny zawierać. Jeśli znajdziesz złą wartość, dowiedz się, gdzie ustawiono złą wartość (aby dowiedzieć się, gdzie ustawiono wartość, może być konieczne ponowne uruchomienie debugera, przyjrzenie się [stosowi wywołań](../debugger/how-to-use-the-call-stack-window.md)lub obu).
+* [Zbadaj zmienne](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) i sprawdź, czy zawierają one typ wartości, które powinny zawierać. Jeśli znajdziesz nieprawidłową wartość, Dowiedz się, gdzie została ustawiona zła wartość (aby znaleźć miejsce ustawienia wartości, może być konieczne ponowne uruchomienie debugera, przyjrzyj się [stosowi wywołań](../debugger/how-to-use-the-call-stack-window.md)lub obu).
 
-* Sprawdź, czy aplikacja wykonuje kod, którego oczekujesz. (Na przykład w przykładowej aplikacji spodziewaliśmy się, że kod instrukcji switch ustawi typ galaktyki na Nieregularny, ale aplikacja pominąła kod z powodu literówki).
+* Sprawdź, czy aplikacja wykonuje oczekiwany kod. (Na przykład w przykładowej aplikacji oczekujemy, że kod instrukcji switch, aby ustawić typ Galaxy na nieregularne, ale aplikacja pominął kod z powodu literówki).
 
 > [!TIP]
-> Używasz debugera, aby pomóc Ci znaleźć błędy. Narzędzie do debugowania można znaleźć błędy *dla Ciebie* tylko wtedy, gdy zna intencji kodu. Narzędzie może znać intencji kodu tylko wtedy, gdy, deweloper, wyrazić tę intencję. Pisanie [testów jednostkowych](../test/improve-code-quality.md) jest jak to zrobić.
+> Za pomocą debugera można znaleźć błędy. Narzędzie debugowania może *znaleźć błędy tylko wtedy,* gdy znają zamiar Twojego kodu. Narzędzie może znać tylko zamiar Twojego kodu, jeśli jesteś deweloperem. W tym celu należy napisać [testy jednostkowe](../test/improve-code-quality.md) .
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym artykule poznaliśmy kilka ogólnych pojęć debugowania. Następnie można rozpocząć dowiedzieć się więcej na temat debugera.
+W tym artykule przedstawiono kilka ogólnych pojęć dotyczących debugowania. Następnie możesz zacząć dowiedzieć się więcej o debugerze.
 
 > [!div class="nextstepaction"]
 > [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

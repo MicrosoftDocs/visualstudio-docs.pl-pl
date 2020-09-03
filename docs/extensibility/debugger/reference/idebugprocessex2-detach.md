@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Detach | Dokumenty firmy Microsoft
+title: IDebugProcessEx2::D etach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7379436ae0da57d7f8c47ce8484c810a53a0a453
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723360"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
-Ta metoda informuje proces, że sesja nie jest już debugowanie procesu.
+Ta metoda informuje proces, że sesja nie jest już debugowana w procesie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,13 +41,13 @@ int Detach(
 
 ## <a name="parameters"></a>Parametry
 `pSession`\
-[w] Wartość, która jednoznacznie identyfikuje sesji, aby odłączyć ten proces.
+podczas Wartość, która jednoznacznie identyfikuje sesję, z której ma zostać odłączony ten proces.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Interfejs przekazany `pSession` w ma być traktowany tylko jako plik cookie, wartość, która jednoznacznie identyfikuje menedżera debugowania sesji, który pierwotnie dołączony do tego procesu; żadna z metod na dostarczonym interfejsie nie jest funkcjonalna.
+ Przekazany Interfejs `pSession` ma być traktowany tylko jako plik cookie, czyli wartość, która jednoznacznie identyfikuje Menedżera debugowania sesji, który został pierwotnie dołączony do tego procesu; żadna z metod interfejsu nie jest funkcjonalna.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

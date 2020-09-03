@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Dołącz | Dokumenty firmy Microsoft
+title: 'IDebugProgram2:: Attach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7d0b182ba7a873816e3a7aa32d39beb2c63cc5ce
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723139"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
-Dołącza się do programu.
+Dołącza do programu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,19 +41,19 @@ int Attach( 
 
 ## <a name="parameters"></a>Parametry
 `pCallback`\
-[w] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) obiekt do użycia do powiadamiania o zdarzeniach debugowania.
+podczas Obiekt [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , który ma być używany do powiadamiania o zdarzeniach debugowania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono niektóre możliwe kody błędów.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono niektóre możliwe kody błędów.
 
 |Wartość|Opis|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Określony program jest już dołączony do debugera.|
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Podczas procedury dołączania wystąpiło naruszenie zabezpieczeń.|
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Do debugera nie można dołączyć programu klasycznego.|
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Podczas procedury Attach wystąpiło naruszenie zabezpieczeń.|
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Nie można dołączyć programu klasycznego do debugera.|
 
 ## <a name="remarks"></a>Uwagi
- Aparat debugowania (DE) nigdy nie wywołuje tej metody, aby dołączyć do programu. Jeśli DE działa w przestrzeni adresowej programu, [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) metoda jest wywoływana. Jeśli DE działa w przestrzeni adresowej menedżera debugowania sesji (SDM), [dołącz](../../../extensibility/debugger/reference/idebugengine2-attach.md) metodę jest wywoływana.
+ Aparat debugowania (DE) nigdy nie wywołuje tej metody w celu dołączenia do programu. Jeśli nie działa w przestrzeni adresowej programu, wywoływana jest metoda [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) . Jeśli nie działa w przestrzeni adresowej Menedżera debugowania sesji (SDM), wywoływana jest metoda [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

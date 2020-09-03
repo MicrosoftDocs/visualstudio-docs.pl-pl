@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: adad9ec70290f426ce7c3c59ad13ff8636a69463
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541326"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Instrukcje: odczytywanie i zapisywanie właściwości dokumentu
@@ -78,7 +78,7 @@ ms.locfileid: "85541326"
 
  Chociaż pracujesz z programami Word i Excel i ich obiektami, Microsoft Office dostarcza listę dostępnych wbudowanych właściwości dokumentu. Próba uzyskania dostępu do niezdefiniowanej właściwości wywołuje wyjątek.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
 - [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)
 - [Instrukcje: Tworzenie i modyfikowanie właściwości dokumentu niestandardowego](../vsto/how-to-create-and-modify-custom-document-properties.md)

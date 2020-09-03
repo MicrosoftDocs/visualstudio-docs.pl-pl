@@ -1,5 +1,5 @@
 ---
-title: Podtypy projektu | Dokumenty firmy Microsoft
+title: Podtypy projektu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,60 +12,60 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 71dab4767c806b44cbd1f9638738b4a13d6b2bcb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706411"
 ---
 # <a name="project-subtypes"></a>Podtypy projektów
-Podtypy projektu umożliwiają dostosowanie lub smak zachowania systemów [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]projektu . Dostosowania obejmują zapisywanie dodatkowych danych w pliku projektu, dodawanie lub filtrowanie elementów w oknie dialogowym **Dodawanie nowego elementu,** kontrolowanie sposobu debugowania i wdrażania zestawów oraz rozszerzanie okna dialogowego **Strony właściwości** projektu. VSPackages implementują podtypy projektu przy użyciu agregacji COM.
+Podtypy projektu pozwalają dostosować lub określić zachowanie systemów projektowych programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Dostosowania obejmują zapisywanie dodatkowych danych w pliku projektu, Dodawanie lub Filtrowanie elementów w oknie dialogowym **Dodaj nowy element** , kontrolowanie sposobu debugowania i wdrażania zestawów oraz rozszerzanie okna dialogowego **strony właściwości** projektu. Pakietów VSPackage Implementuj podtypy projektu przy użyciu agregacji COM.
 
 > [!NOTE]
-> System projektu Visual C++ nie obsługuje podtypów projektu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]sama używa podtypów projektu do implementowania projektów programu SQL Server i smart device.
+> System projektu Visual C++ nie obsługuje podtypów projektu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sam używa podtypów projektu do implementowania SQL Server i inteligentnych projektów urządzeń.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Projektowanie podtypów projektów](../../extensibility/internals/project-subtypes-design.md)
 
- Opisuje pojęcie podtypów projektu.
+ Opisuje koncepcję podtypów projektu.
 
 - [Sekwencja inicjowania podtypów projektów](../../extensibility/internals/initialization-sequence-of-project-subtypes.md)
 
- Opisuje sekwencję inicjowania podtypu projektu programowego według [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska.
+ Opisuje sekwencję inicjowania podtypu projektu programistycznego według [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska.
 
 - [Właściwości i metody rozszerzane przez podtypy projektów](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
 
- Zawiera szczegółowe opisy funkcji i metod najczęściej rozszerzane przy użyciu podtypów projektu.
+ Zawiera szczegółowe opisy funkcji i metod, które są najczęściej rozszerzane przy użyciu podtypów projektu.
 
 - [Utrwalanie danych w pliku projektu programu MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
 
- W tym artykule opisano sposób utrwalania <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> danych w pliku projektu i sposobu używania do obsługi danych w pliku projektu na poziomach agregacji podtypu projektu.
+ Opisuje, jak utrwalać dane w pliku projektu i jak używać <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> do przechowywania danych w pliku projektu na poziomach agregacji podtypów projektu.
 
 - [Interfejs użytkownika właściwości projektu](../../extensibility/internals/project-property-user-interface.md)
 
- W tym artykule opisano, jak podtypy projektu mogą modyfikować okno dialogowe **Strony właściwości** projektu.
+ Opisuje, w jaki sposób podtypy projektu mogą modyfikować okno dialogowe **strony właściwości** projektu.
 
 - [Rozszerzanie modelu obiektu projektu podstawowego](../../extensibility/internals/extending-the-object-model-of-the-base-project.md)
 
- Zawiera informacje o tym, jak podtypy projektu można użyć rozszerzenia automatyzacji, aby rozszerzyć model obiektów automatyzacji.
+ Zawiera informacje dotyczące sposobu, w jaki podtypy projektu mogą używać rozszerzeń automatyzacji do rozbudowania modelu obiektów automatyzacji.
 
 - [Dodawanie elementów do okna dialogowego Dodawanie nowego elementu](../../extensibility/internals/contributing-to-the-add-new-item-dialog-box.md)
 
- W tym artykule opisano sposób dodawania elementów do okna dialogowego **Dodawanie nowego elementu.**
+ Opisuje sposób dodawania elementów do okna dialogowego **Dodaj nowy element** .
 
 - [Zapisywanie danych w plikach projektu](../../extensibility/saving-data-in-project-files.md)
 
- W tym artykule wyjaśniono, jak podtyp projektu może zapisywać i pobierać dane specyficzne dla podtypu w pliku projektu przy użyciu struktury pakietu zarządzanego (MPF).
+ Wyjaśnia, w jaki sposób podtyp projektu może zapisywać i pobierać dane specyficzne dla określonego typu w pliku projektu przy użyciu struktury pakietu zarządzanego (MPF).
 
 - [Obsługa wdrożeń specjalistycznych](../../extensibility/internals/handling-specialized-deployment.md)
 
- W tym artykule wyjaśniono, jak podtypy projektu mogą dostarczać zachowania wdrożenia specjalistycznego, <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> implementując interfejs.
+ Wyjaśnia, w jaki sposób podtypy projektu mogą dostarczać wyspecjalizowane zachowanie wdrażania przez implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfejsu.
 
 - [Dodawanie i usuwanie stron właściwości](../../extensibility/adding-and-removing-property-pages.md)
 
- Opisuje dodawanie i usuwanie stron właściwości w projektancie projektu.
+ Opisuje Dodawanie i usuwanie stron właściwości w projektancie projektu.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
-- [Project Types (Typy projektów)](../../extensibility/internals/project-types.md)
+- [Typy projektów](../../extensibility/internals/project-types.md)
 
- Zawiera łącza do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tematów przedstawiających szczegółowe informacje o projektach.
+ Zawiera łącza do tematów zawierających szczegółowe informacje o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektach.

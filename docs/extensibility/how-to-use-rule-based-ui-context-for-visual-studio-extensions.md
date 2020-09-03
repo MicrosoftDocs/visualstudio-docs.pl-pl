@@ -8,10 +8,10 @@ ms.author: anthc
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4ee29937b11110ee6aae65628b81ea49588fdd22
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86972312"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Instrukcje: używanie kontekstu interfejsu użytkownika opartego na regułach dla rozszerzeń programu Visual Studio
@@ -129,7 +129,7 @@ Kontekst interfejsu użytkownika oparty na regułach może być używany na ró�
 
 Poniżej przedstawiono różne typy warunków, które są obsługiwane:
 
-|Termin|Opis|
+|Okres|Opis|
 |-|-|
 |{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|Identyfikator GUID odwołuje się do kontekstu interfejsu użytkownika. Termin będzie prawdziwy, gdy kontekst interfejsu użytkownika jest aktywny i w przeciwnym razie ma wartość false.|
 |HierSingleSelectionName:\<pattern>|Termin będzie prawdziwy, gdy wybór w aktywnej hierarchii jest pojedynczym elementem, a nazwa wybranego elementu jest zgodna z wyrażeniem regularnym programu .NET podanym przez "wzorzec".|

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2 | Dokumenty firmy Microsoft
+title: IDebugProcessEx2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 743dd1aa72d9b8db6b848618c8a2ad6c8c8ecaaf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723328"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
-Ten interfejs umożliwia menedżera debugowania sesji (SDM) powiadamiać proces, który jest dołączanie do lub odłączanie od procesu.
+Ten interfejs umożliwia menedżerowi debugowania sesji powiadamianie procesu, który jest dołączany lub odłączany od procesu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,34 +29,34 @@ IDebugProcessEx2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Dostawca portu niestandardowego implementuje ten interfejs na tym samym obiekcie co interfejs [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) w celu:
+ Niestandardowy dostawca portu implementuje ten interfejs na tym samym obiekcie co Interfejs [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) , aby:
 
 - Obsługa śledzenia sesji połączonych z procesem
 
-- Obsługa automatycznego dołączania w wielu aparatach debugowania
+- Obsługa automatyczne dołączanie wielu aparatów debugowania
 
-  Dostawca portu niestandardowego można zaimplementować ten interfejs, jeśli wybierze.
+  Dostawca portu niestandardowego może zaimplementować ten interfejs, jeśli zostanie wybrany.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
 
-- SDM wywołuje [QueryInterface](/cpp/atl/queryinterface) `IDebugProcess2` na interfejsie w celu uzyskania tego interfejsu.
+- Model SDM wywołuje metodę [QueryInterface](/cpp/atl/queryinterface) w `IDebugProcess2` interfejsie, aby uzyskać ten interfejs.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- W poniższej tabeli `IDebugProcessEx2`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ W poniższej tabeli przedstawiono metody `IDebugProcessEx2` .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[Dołącz](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informuje proces, że sesja jest teraz debugowania procesu.|
-|[Odłącz](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informuje proces, że sesja nie jest już debugowanie procesu.|
-|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Dodaje węzły programu dla listy aparatów debugowania.|
+|[Dołącz](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informuje proces, że sesja teraz debuguje proces.|
+|[Odłącz](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informuje proces, że sesja nie jest już debugowana.|
+|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Dodaje węzły programu do listy aparatów debugowania.|
 
 ## <a name="remarks"></a>Uwagi
- Ten interfejs jest prywatny między modułem SDM a procesem.
+ Ten interfejs jest prywatny między modelem SDM a procesem.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: Portpriv.h
+ Nagłówek: Portpriv. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

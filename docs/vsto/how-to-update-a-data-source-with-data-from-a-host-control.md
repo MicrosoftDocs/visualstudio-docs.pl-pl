@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541248"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Instrukcje: aktualizowanie źródła danych przy użyciu danych z kontrolki hosta
@@ -90,7 +90,7 @@ ms.locfileid: "85541248"
 6. Zamknij okno dialogowe **Formatowanie i powiązanie zaawansowane** .
 
 ## <a name="update-the-database"></a>Aktualizowanie bazy danych
- Jeśli źródło danych znajdujące się w pamięci jest skojarzone z bazą danych, należy zaktualizować bazę danych ze zmianami w źródle danych. Aby uzyskać więcej informacji o aktualizowaniu bazy danych, zobacz [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md) i [Aktualizowanie danych przy użyciu TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .
+ Jeśli źródło danych znajdujące się w pamięci jest skojarzone z bazą danych, należy zaktualizować bazę danych ze zmianami w źródle danych. Aby uzyskać więcej informacji o aktualizowaniu bazy danych, zobacz [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)  i [Aktualizowanie danych przy użyciu TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .
 
 ### <a name="to-update-the-database"></a>Aby zaktualizować bazę danych
 
@@ -112,7 +112,7 @@ ms.locfileid: "85541248"
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
 - [Aktualizowanie danych za pomocą adaptera TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)

@@ -1,5 +1,5 @@
 ---
-title: Właściwości IDebugProcessQueryProperties::QueryProperty | Dokumenty firmy Microsoft
+title: 'IDebugProcessQueryProperties:: QueryProperty | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b190d7ed1d3690be898334270bbd1d16584b81a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723298"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
-Ta metoda kwerendy dla określonej wartości właściwości procesu debugowania.
+Ta metoda wykonuje zapytanie dotyczące określonej wartości właściwości procesu debugowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -39,7 +39,7 @@ int QueryProperty(
 
 ## <a name="parameters"></a>Parametry
 `dwPropType`\
-[w] Definicja właściwości, o które pytasz. Potrzebne wartości:
+podczas Definicja właściwości, której dotyczy kwerenda. Potrzebne wartości:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -48,10 +48,10 @@ int QueryProperty(
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
 `pvarPropValue`\
-[na zewnątrz] Wartość właściwości.
+określoną Wartość właściwości.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
  Ta metoda jest rzadko używana.

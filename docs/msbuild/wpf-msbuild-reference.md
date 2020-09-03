@@ -1,5 +1,5 @@
 ---
-title: WPF WPF MSBuild Reference | Dokumenty firmy Microsoft
+title: Informacje o programie MSBuild WPF | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,21 +17,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b3f47f41466d8eb7ddf0a4700428b6e28500b61
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596310"
 ---
 # <a name="wpf-msbuild-reference"></a>Odwołanie do WPF MSBuild
 
-Windows Presentation Foundation (WPF) rozszerza aparat kompilacji firmy Microsoft (MSBuild) o dodatkową obsługę kompilacji, która jest udokumentowana w tej sekcji.
+Windows Presentation Foundation (WPF) rozszerza program Microsoft Build Engine (MSBuild) o dodatkową obsługę kompilacji, która jest udokumentowana w tej sekcji.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
-[Pliki WPF .targets](../msbuild/wpf-dot-targets-files.md)
+[WPF — pliki targets](../msbuild/wpf-dot-targets-files.md)
 
-W tym artykule opisano pliki WPF .targets.
+Opisuje pliki WPF. targets.
 
 [Odwołanie do zadania WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)
 
@@ -43,20 +43,20 @@ Zestaw zadań kompilacji.
 
 <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper>
 
-Zestaw bootstrapper wdrażania zadania kompilacji.
+Zestaw inicjujący wdrożenie zadania kompilacji.
 
 <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>
 
-Zestaw narzędzi narzędzia narzędzia rozmieszczenia zadań kompilacji.
+Zestaw narzędzi manifestu wdrożenia zadania kompilacji.
 
 <xref:Microsoft.Build.Tasks.Hosting>
 
-Zestaw hostingu zadań kompilacji.
+Zestaw hostujący zadanie kompilacji.
 
 <xref:Microsoft.Build.Tasks.Windows>
 
-Zestaw okien zadań kompilacji.
+Zestaw systemu Windows zadania kompilacji.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Msbuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CanDetach | Dokumenty firmy Microsoft
+title: 'IDebugProgram2:: Odłączanie | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3d03d942bbc052a7ac6bebc6a89c55ec21a1b4c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723122"
 ---
 # <a name="idebugprogram2candetach"></a>IDebugProgram2::CanDetach
-Określa, czy aparat debugowania (DE) może odłączyć się od programu.
+Określa, czy aparat debugowania (DE) może odłączać od programu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -38,7 +38,7 @@ int CanDetach();
 ```
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli można odłączyć, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `S_FALSE` wartość, jeśli de nie może odłączyć się od programu.
+ Jeśli może odłączać, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwraca `S_FALSE` czy nie można odłączyć z programu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

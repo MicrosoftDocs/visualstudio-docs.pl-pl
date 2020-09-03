@@ -1,5 +1,5 @@
 ---
-title: Właściwości IDebugProcessQueryProperties::Właściwości queryproperties | Dokumenty firmy Microsoft
+title: 'IDebugProcessQueryProperties:: QueryProperties | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4daac369485febe38e3366d413985bda90b30f05
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723314"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
-Ta metoda kwerendy dla określonych wartości właściwości procesu debugowania.
+Ta metoda wykonuje zapytanie dotyczące określonych wartości właściwości procesu debugowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,10 +41,10 @@ int QueryProperties(
 
 ## <a name="parameters"></a>Parametry
 `celt`\
-[w] Rozmiar tablic zawierających definicje właściwości i wartości właściwości.
+podczas Rozmiar tablic zawierających definicje właściwości i wartości właściwości.
 
 `dwPropType`\
-[w] Tablica zawierająca definicje poszukiwanych właściwości. Możliwe wartości są następujące:
+podczas Tablica zawierająca definicje właściwości zapytań. Możliwe wartości są następujące:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -53,10 +53,10 @@ int QueryProperties(
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
 `pvarPropValue`\
-[na zewnątrz] Tablica zawierająca wartości właściwości.
+określoną Tablica zawierająca wartości właściwości.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
  Ta metoda jest rzadko używana.

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessSecurity::QueryCanSafelyAttach | Dokumenty firmy Microsoft
+title: 'IDebugProcessSecurity:: QueryCanSafelyAttach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e03ccbb7761802401239768c54f4ea5b36ab86bf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723200"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
-Ta metoda umożliwia dostawcy portu wyświetlanie ostrzeżenia, zanim użytkownik dołączy do niebezpiecznego procesu.
+Ta metoda umożliwia dostawcom portu wyświetlanie ostrzeżenia przed dołączeniem użytkownika do niebezpiecznego procesu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,11 +36,11 @@ int QueryCanSafelyAttach();
 ## <a name="return-value"></a>Wartość zwracana
  Zwracane wartości są następujące:
 
-- `S_OK`: Dołączanie do procesu jest bezpieczne i nie jest wyświetlane żadne okno dialogowe z ostrzeżeniem.
+- `S_OK`: Dołączanie do procesu jest bezpieczne i nie jest wyświetlane okno dialogowe ostrzeżenia.
 
-- `S_FALSE`: Dołączanie może być problemem bezpieczeństwa i wyświetlane jest okno dialogowe z ostrzeżeniem.
+- `S_FALSE`: Dołączanie może stanowić problem z zabezpieczeniami i wyświetlane jest okno dialogowe z ostrzeżeniem.
 
-- `FAILURE`: Podłączenie do procesu kończy się niepowodzeniem.
+- `FAILURE`: Dołączanie do procesu nie powiodło się.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 783f7fad05cad18efea2f83b6d76c4c9e644f119
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548385"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: Oznacz logiczne argumenty P/Invoke za pomocą MarshalAs
@@ -36,7 +36,7 @@ ms.locfileid: "85548385"
  Deklaracja metody wywołania platformy zawiera <xref:System.Boolean?displayProperty=fullName> parametr lub wartość zwracaną, ale <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> atrybut nie jest stosowany do parametru lub wartości zwracanej.
 
 ## <a name="rule-description"></a>Opis reguły
- Metoda Invoke platformy uzyskuje dostęp do kodu niezarządzanego i jest definiowana za pomocą `Declare` słowa kluczowego w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] lub <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> . <xref:System.Runtime.InteropServices.MarshalAsAttribute>Określa zachowanie organizowania, które służy do konwertowania typów danych między zarządzanym i niezarządzanym kodem. Wiele prostych typów danych, takich jak <xref:System.Byte?displayProperty=fullName> i <xref:System.Int32?displayProperty=fullName> , mają pojedynczą reprezentację w kodzie niezarządzanym i nie wymaga specyfikacji ich zachowania Marshaling. środowisko uruchomieniowe języka wspólnego automatycznie dostarcza poprawne zachowanie.
+ Metoda Invoke platformy uzyskuje dostęp do kodu niezarządzanego i jest definiowana za pomocą `Declare` słowa kluczowego w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] lub <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> . <xref:System.Runtime.InteropServices.MarshalAsAttribute> Określa zachowanie organizowania, które służy do konwertowania typów danych między zarządzanym i niezarządzanym kodem. Wiele prostych typów danych, takich jak <xref:System.Byte?displayProperty=fullName> i <xref:System.Int32?displayProperty=fullName> , mają pojedynczą reprezentację w kodzie niezarządzanym i nie wymaga specyfikacji ich zachowania Marshaling. środowisko uruchomieniowe języka wspólnego automatycznie dostarcza poprawne zachowanie.
 
  <xref:System.Boolean>Typ danych ma wiele reprezentacji w kodzie niezarządzanym. Gdy <xref:System.Runtime.InteropServices.MarshalAsAttribute> nie jest określony, domyślnym zachowaniem organizowania dla tego <xref:System.Boolean> typu danych jest <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> . Jest to 32-bitowa liczba całkowita, która nie jest odpowiednia w żadnym przypadku. Reprezentacja logiczna wymagana przez metodę niezarządzaną powinna być określona i zgodna z odpowiednią <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> . UnmanagedType. bool jest typem BOOL Win32, który ma zawsze 4 bajty. Nie można używać elementu UnmanagedType. U1 dla języków C++ `bool` i innych typów 1-bajtowych. Aby uzyskać więcej informacji, zobacz [domyślne kierowanie dla typów logicznych](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).
 

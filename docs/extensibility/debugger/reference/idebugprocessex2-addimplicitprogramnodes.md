@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::AddImplicitProgramNodes | Dokumenty firmy Microsoft
+title: 'IDebugProcessEx2:: AddImplicitProgramNodes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 113c81e95e7384be04b7e02a5c58cd2cad7c9c6b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723396"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
-Ta metoda dodaje węzeł programu dla każdego aparatu debugowania (DE) określony.
+Ta metoda dodaje węzeł programu dla każdego określonego aparatu debugowania (DE).
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,19 +45,19 @@ int AddImplicitProgramNodes(
 
 ## <a name="parameters"></a>Parametry
 `guidLaunchingEngine`\
-[w] De, `GUID` który ma być używany do uruchamiania programów (i zakłada się, aby dodać własne węzły programu).
+podczas `GUID` Z de, która ma być używana do uruchamiania programów (i przyjęto dodanie własnych węzłów programu).
 
 `rgguidSpecificEngines`\
-[w] Tablica `GUID`s DEs, dla których zostaną dodane węzły programu.
+podczas Tablica `GUID` s of des, dla której zostaną dodane węzły programu.
 
 `celtSpecificEngines`\
-[w] Liczba `GUID`s w `rgguidSpecificEngines` tablicy.
+podczas Liczba `GUID` s w `rgguidSpecificEngines` tablicy.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-- [Węzły programu](../../../extensibility/debugger/program-nodes.md) zostaną dodane dla `rgguidSpecificEngines`każdego DE wymienione w —z `guidLaunchingEngine`wyłączeniem silnika uruchamiania (jak podano w ), który zakłada się, aby dodać własny węzeł programu po uruchomieniu programu.
+- [Węzły programu](../../../extensibility/debugger/program-nodes.md) zostaną dodane do każdego elementu poza wymienionym na liście w programie `rgguidSpecificEngines` — z wyłączeniem aparatu uruchamiania (zgodnie z opisem w temacie `guidLaunchingEngine` ), który jest założono, że zostanie dodany własny węzeł programu podczas uruchamiania programu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)
