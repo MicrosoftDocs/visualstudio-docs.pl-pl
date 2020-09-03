@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricFile | Dokumenty firmy Microsoft
+title: 'IDebugSettingsCallback2:: GetEEMetricFile | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2aafda1563d2f948ea0871f920faa8bbbef766f7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720044"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
-Pobiera plik metryki oceniającego wyrażenie, podana nazwa lub metryka.
+Pobiera plik metryki ewaluatora wyrażeń, używając nazwy lub metryki.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,19 +45,19 @@ private int GetEEMetricFile(
 
 ## <a name="parameters"></a>Parametry
 `guidLang`\
-[w] Unikatowy identyfikator języka programowania.
+podczas Unikatowy identyfikator języka programowania.
 
 `guidVendor`\
-[w] Unikatowy identyfikator dostawcy.
+podczas Unikatowy identyfikator dostawcy.
 
 `pszMetric`\
-[w] Nazwa metryki.
+podczas Nazwa metryki.
 
 `pbstrValue`\
-[na zewnątrz] Zwraca zawartość pliku metryk jako ciąg.
+określoną Zwraca zawartość pliku metryki jako ciąg.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

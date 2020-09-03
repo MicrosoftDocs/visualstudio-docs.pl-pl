@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: caf145213c41215d518cf42d0a69975c8580e817
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330016"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
@@ -33,7 +33,7 @@ VSPerfCmd [/U] [/options]
 
 |Opcja|Opis|
 |------------|-----------------|
-|**'T**|Przekierowane dane wyjściowe konsoli są zapisywane w formacie Unicode. Musi być pierwszą określoną opcją.|
+|**U**|Przekierowane dane wyjściowe konsoli są zapisywane w formacie Unicode. Musi być pierwszą określoną opcją.|
 |[Rozpocznij](../profiling/start.md) **:**`mode`|Uruchamia usługę profilowania w określonym trybie.|
 |[Dane wyjściowe](../profiling/output.md) **:**`filename`|Określa nazwę pliku wyjściowego. Użyj tylko z **menu Start**.|
 |[CrossSession&#124;CS](../profiling/crosssession.md)|Włącza profilowanie między sesjami systemu Windows. Używać tylko z poleceniem **Start**, **Attach** **lub Launch**.|
@@ -82,7 +82,7 @@ VSPerfCmd [/U] [/options]
 
 |Opcja|Opis|
 |------------|-----------------|
-|**Administrator: zabezpieczenia**, \<**ALLOW&#124;DENY**> , *prawa*[ *prawo*],\<*User*&#124;*Group*>|Zezwala lub nie ma dostępu do usługi profilowania określonemu użytkownikowi lub grupie.<br /><br /> `Right`może to być:<br /><br /> CrossSession — umożliwia użytkownikowi dostęp do usługi w celu przeprowadzenia profilowania między sesjami.<br /><br /> SampleProfiling — umożliwia użytkownikowi uzyskiwanie dostępu do sterownika w celu włączenia profilowania próbkowania. Używane również do uzyskiwania dostępu do informacji o przejściach jądra podczas profilowania śledzenia.<br /><br /> FullAccess — umożliwia użytkownikowi CrossSession i SampleProfiling dostęp.|
+|**Administrator: zabezpieczenia**, \<**ALLOW&#124;DENY**> , *prawa*[ *prawo*], \<*User*&#124;*Group*>|Zezwala lub nie ma dostępu do usługi profilowania określonemu użytkownikowi lub grupie.<br /><br /> `Right` może to być:<br /><br /> CrossSession — umożliwia użytkownikowi dostęp do usługi w celu przeprowadzenia profilowania między sesjami.<br /><br /> SampleProfiling — umożliwia użytkownikowi uzyskiwanie dostępu do sterownika w celu włączenia profilowania próbkowania. Używane również do uzyskiwania dostępu do informacji o przejściach jądra podczas profilowania śledzenia.<br /><br /> FullAccess — umożliwia użytkownikowi CrossSession i SampleProfiling dostęp.|
 |**Administrator: zabezpieczenia, lista**|Wyświetla bieżący stan usług profilowania i wyświetla listę uprawnień użytkownika.|
 |**Administrator:**\<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Uruchamia, kończy, instaluje lub Odinstalowuje składnik usługi profilowania (usługa) lub sterownik urządzenia trybu jądra (sterownika).|
 |**Administrator:** \<*Service*&#124;*Driver*> **Autostart**\<**ON**&#124;**OFF**>|Włącza lub wyłącza automatyczne uruchamianie usługi profilowania (usługi) lub sterownika urządzenia trybu jądra (sterownika) po ponownym uruchomieniu.|

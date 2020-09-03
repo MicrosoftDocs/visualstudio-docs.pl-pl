@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4dccd82ea260c6d113ffaf077922c5e22946bbbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651885"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Porady: znajdowanie tematów w Spisie treści
@@ -32,7 +32,7 @@ Na karcie **zawartość** można znaleźć informacje za pomocą spisu treści (
 > Zakres tematów dostępnych w spisie treści zależy od wybranego filtru.
 
 ## <a name="filter-the-toc"></a>Filtrowanie spisu treści
- Możesz filtrować Spis treści, aby zawęzić zakres tematów, które pojawiają się na karcie **zawartość** . tytuły pojawiają się na liście tylko wtedy, gdy zawierają główny termin określony przez użytkownika. Na przykład, jeśli określisz "Rozwiązywanie problemów" jako filtr, pojawią się tylko tytuły zawierające "Rozwiązywanie problemów" lub "Rozwiązywanie problemów". Węzły, których tytuły nie zawierają terminu, są zwijane do jednego węzła z wielokropkiem (...).
+ Można filtrować Spis treści, aby zawęzić zakres tematów, które pojawiają się na karcie **zawartość** . Tytuły pojawiają się na liście tylko wtedy, gdy zawierają korzeń określonego terminu. Na przykład, jeśli określisz "Rozwiązywanie problemów" jako filtr, pojawią się tylko tytuły zawierające "Rozwiązywanie problemów" lub "Rozwiązywanie problemów". Węzły, których tytuły nie zawierają terminu, są zwijane do jednego węzła z wielokropkiem (...).
 
 #### <a name="to-filter-the-toc"></a>Aby odfiltrować Spis treści
 
@@ -41,7 +41,7 @@ Na karcie **zawartość** można znaleźć informacje za pomocą spisu treści (
 2. W polu tekstowym **zawartość filtru** wprowadź termin.
 
 > [!NOTE]
-> Jeśli filtr trwa długi czas, możesz szybciej wyświetlić wyniki przy użyciu operatora wyszukiwania zaawansowanego `title:`.
+> Jeśli filtr trwa długi czas, możesz szybciej wyświetlić wyniki przy użyciu `title:` operatora wyszukiwania zaawansowanego.
 
 ## <a name="synchronize-a-topic-with-the-toc"></a>Synchronizowanie tematu ze spisem treści
  Jeśli temat został otwarty przy użyciu indeksu lub funkcji wyszukiwania pełnotekstowego, można określić, gdzie ten temat znajduje się w spisie treści, synchronizując Spis treści z oknem tematu.

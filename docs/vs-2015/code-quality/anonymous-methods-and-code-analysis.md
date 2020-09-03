@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 49da7d5e7f6a7731a708accb3d52fb6383ff1017
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652224"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Metody anonimowe i analiza kodu
@@ -67,7 +67,7 @@ class Class
 ```
 
 ## <a name="inline-anonymous-methods"></a>Wbudowane metody anonimowe
- Ostrzeżenia i metryki metody anonimowej zadeklarowanej jako przypisanie wbudowane do pola są skojarzone z konstruktorem. Jeśli pole jest zadeklarowane jako `static` (`Shared` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), ostrzeżenia i metryki są skojarzone z konstruktorem klasy; w przeciwnym razie są one skojarzone z konstruktorem wystąpień.
+ Ostrzeżenia i metryki metody anonimowej zadeklarowanej jako przypisanie wbudowane do pola są skojarzone z konstruktorem. Jeśli pole jest zadeklarowane jako `static` ( `Shared` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ), ostrzeżenia i metryki są skojarzone z konstruktorem klasy; w przeciwnym razie są skojarzone z konstruktorem wystąpień.
 
  Na przykład w poniższej klasie wszystkie ostrzeżenia, które znajdują się w deklaracji **anonymousMethod1** , zostaną wywołane względem niejawnie wygenerowanego domyślnego konstruktora **klasy**. Natomiast te, które znajdują się w **anonymousMethod2** , zostaną zastosowane do niejawnie wygenerowanego konstruktora klasy.
 
@@ -108,7 +108,7 @@ class Class
 
  Klasa może zawierać wbudowaną metodę anonimową, która przypisuje wartość do pola, które ma wiele konstruktorów. W takim przypadku ostrzeżenia i metryki są kojarzone ze wszystkimi konstruktorami, chyba że ten Konstruktor łańcucha do innego konstruktora w tej samej klasie.
 
- Na przykład w poniższej klasie wszystkie ostrzeżenia, które znajdują się w deklaracji **anonymousMethod** powinny być wywoływane względem **klasy (int)** i **klasy (String)** , ale nie do **klasy ()** .
+ Na przykład w poniższej klasie wszystkie ostrzeżenia, które znajdują się w deklaracji **anonymousMethod** powinny być wywoływane względem **klasy (int)** i **klasy (String)** , ale nie do **klasy ()**.
 
 ```vb
 

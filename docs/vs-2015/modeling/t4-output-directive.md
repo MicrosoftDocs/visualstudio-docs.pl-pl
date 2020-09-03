@@ -10,24 +10,24 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 149370bfee1b142876dff881625d08083afadea4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652312"
 ---
 # <a name="t4-output-directive"></a>Dyrektywa T4 Output
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W szablonach tekstu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dyrektywa `output` służy do definiowania rozszerzenia nazwy pliku i kodowania przekształconego pliku.
+W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablonach tekstowych `output` dyrektywa służy do definiowania rozszerzenia nazwy pliku i kodowania przekształconego pliku.
 
- Na przykład, jeśli projekt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zawiera plik szablonu o nazwie **MyTemplate.tt** , który zawiera następującą dyrektywę:
+ Na przykład, jeśli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projekt zawiera plik szablonu o nazwie **MyTemplate.tt** , który zawiera następującą dyrektywę:
 
  `<#@output extension=".cs"#>`
 
- następnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje plik o nazwie **MyTemplate.cs**
+ następnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wygeneruje plik o nazwie **MyTemplate.cs**
 
- Dyrektywa `output` nie jest wymagana w szablonie tekstowym czasu wykonywania (wstępnie przetworzonym). Zamiast tego aplikacja uzyskuje wygenerowany ciąg, wywołując `TextTransform()`. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ `output`Dyrektywa nie jest wymagana w szablonie tekstowym czasu wykonywania (wstępnie przetworzonym). Zamiast tego aplikacja uzyskuje wygenerowany ciąg przez wywołanie metody `TextTransform()` . Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="using-the-output-directive"></a>Używanie dyrektywy Output
 
@@ -35,14 +35,14 @@ W szablonach tekstu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dyrektywa `outp
 <#@ output extension=".fileNameExtension" [encoding="encoding"] #>
 ```
 
- Każdy szablon tekstowy nie powinien zawierać więcej niż jednej dyrektywy `output`.
+ W każdym szablonie tekstowym nie powinna istnieć więcej niż jedna `output` dyrektywa.
 
 ## <a name="extension-attribute"></a>Atrybut rozszerzenia
  Określa rozszerzenie nazwy pliku dla wygenerowanego pliku wyjściowego tekstu.
 
  Wartość domyślna to **. cs**
 
- Przykłady: `<#@ output extension=".txt" #>`
+ Pokazują `<#@ output extension=".txt" #>`
 
  `<#@ output extension=".htm" #>`
 
@@ -71,6 +71,6 @@ W szablonach tekstu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dyrektywa `outp
 
  `utf-32`
 
- `0` (system domyślny)
+ `0` (System domyślny)
 
- Ogólnie rzecz biorąc, można użyć ciągu WebName lub numeru strony kodowej dowolnego kodowania zwracanego przez <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.
+ Ogólnie rzecz biorąc, można użyć ciągu WebName lub numeru strony kodowej dowolnego kodowania zwracanego przez <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName> .

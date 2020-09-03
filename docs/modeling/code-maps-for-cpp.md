@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie zależności między C++ plikami źródłowymi i plikami nagłówkowymi
+title: Zobacz zależności między plikami źródłowymi C++ a plikami nagłówkowymi
 ms.date: 05/16/2018
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -8,19 +8,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a17015c7efbb51027450e06bd1fb571ef9820d48
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597246"
 ---
-# <a name="code-maps-for-c-projects"></a>Mapy kodu dla C++ projektów
+# <a name="code-maps-for-c-projects"></a>Mapy kodu dla projektów C++
 
-Jeśli chcesz utworzyć dokładniejsze mapy dla C++ projektów, ustaw dla tych projektów opcję **/fr**(przeglądanie informacji kompilatora). W przeciwnym razie pojawi się komunikat i monit o ustawienie tej opcji. Jeśli wybierzesz **OK**, spowoduje to ustawienie opcji tylko dla bieżącej mapy. Możesz wybrać opcję ukrycia komunikatu dla wszystkich późniejszych map.
+Jeśli chcesz utworzyć dokładniejsze mapy dla projektów języka C++, ustaw dla tych projektów opcję **/fr**(przeglądanie informacji kompilatora). W przeciwnym razie pojawi się komunikat i monit o ustawienie tej opcji. Jeśli wybierzesz **OK**, spowoduje to ustawienie opcji tylko dla bieżącej mapy. Możesz wybrać opcję ukrycia komunikatu dla wszystkich późniejszych map.
 
-Po otwarciu rozwiązania, które zawiera projekty Visual C++, aktualizacja bazy danych w technologii IntelliSense może zająć trochę czasu. W tym czasie może nie być możliwe utworzenie map kodu dla plików nagłówkowych ( *. h* lub `#include`), dopóki nie zakończy się aktualizowanie bazy danych IntelliSense. Można monitorować postęp uaktualnienia na pasku stanu programu Visual Studio.
+Po otwarciu rozwiązania, które zawiera projekty Visual C++, aktualizacja bazy danych w technologii IntelliSense może zająć trochę czasu. W tym czasie może nie być możliwe utworzenie map kodu dla plików nagłówkowych (*. h* lub `#include` ), dopóki nie zakończy się aktualizowanie bazy danych IntelliSense. Można monitorować postęp uaktualnienia na pasku stanu programu Visual Studio.
 
-- Aby wyświetlić zależności między wszystkimi plikami źródłowymi i plikami nagłówkowymi w rozwiązaniu, wybierz pozycję **architektura** > **Generuj Graf plików dołączanych**.
+- Aby wyświetlić zależności między wszystkimi plikami źródłowymi i plikami nagłówkowymi w rozwiązaniu, wybierz pozycję **Architektura**  >  **generowanie grafu plików dołączanych**.
 
    ![Wykres zależności dla kodu natywnego](../modeling/media/dependencygraphgeneral_nativecode.png)
 
@@ -28,15 +28,15 @@ Po otwarciu rozwiązania, które zawiera projekty Visual C++, aktualizacja bazy 
 
    ![Wykres zależności pierwszego poziomu dla pliku h](../modeling/media/dependencygraph_native_firstlevel.png)
 
-## <a name="troubleshoot-code-maps-for-c-and-c-code"></a>Rozwiązywanie problemów z mapami kodu C++ dla języka C i kodu
+## <a name="troubleshoot-code-maps-for-c-and-c-code"></a>Rozwiązywanie problemów z mapami kodu dla kodu C i C++
 
-Te elementy nie są obsługiwane w języku C++ C i kodzie:
+Te elementy nie są obsługiwane dla kodu C i C++:
 
 - Typy podstawowe nie są wyświetlane na mapach, które zawierają hierarchię nadrzędną.
 
-- Większość elementów menu **Pokaż** nie jest dostępnych dla języków C++ C i Code.
+- Większość elementów menu **Pokaż** jest niedostępna dla kodu C i C++.
 
-Te problemy mogą wystąpić podczas tworzenia map kodu dla języka C i C++ kodu:
+Te problemy mogą wystąpić podczas tworzenia map kodu dla kodu C i C++:
 
 |**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|
 |-|-|-|
@@ -47,8 +47,8 @@ Te problemy mogą wystąpić podczas tworzenia map kodu dla języka C i C++ kodu
 ||Plik bazy danych programu (.pdb) może nie być skompilowany.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Włącz opcję **/Debug** w konsolidatorze.|
 ||Nie można otworzyć lub znaleźć pliku .pdb w oczekiwanych lokalizacjach.|Upewnij się, że plik .pdb istnieje w oczekiwanych lokalizacjach.|
 ||Informacje o debugowaniu pochodzą z pliku .pdb.|Jeśli w konsolidatorze użyto opcji **/PDBSTRIPPED** , Dołącz do niej kompletny plik. pdb.|
-||Obiekt wywołujący nie jest funkcją i jest albo osadzony w pliku binarnym, albo stanowi wskaźnik w sekcji danych.|Gdy obiekt wywołujący jest thunk, spróbuj użyć `_declspec(dllimport)`, aby uniknąć thunk.|
+||Obiekt wywołujący nie jest funkcją i jest albo osadzony w pliku binarnym, albo stanowi wskaźnik w sekcji danych.|Gdy obiekt wywołujący jest thunk, spróbuj użyć, `_declspec(dllimport)` Aby uniknąć thunk.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Mapowanie zależności za pomocą map kodu](../modeling/map-dependencies-across-your-solutions.md)

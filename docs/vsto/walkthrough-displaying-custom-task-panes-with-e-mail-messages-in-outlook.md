@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9e94bedf95b58d9876d37eb496ede0c5ec9a8531
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985453"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Przewodnik: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook
@@ -55,10 +55,10 @@ ms.locfileid: "72985453"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] lub Microsoft Outlook 2010.
+- Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] Outlook 2010.
 
-## <a name="create-the-project"></a>Utwórz projekt
- Niestandardowe okienka zadań są implementowane w dodatkach programu VSTO. Zacznij od utworzenia projektu dodatku VSTO dla programu Outlook.
+## <a name="create-the-project"></a>Tworzenie projektu
+ Niestandardowe okienka zadań są implementowane w dodatkach narzędzi VSTO. Zacznij od utworzenia projektu dodatku VSTO dla programu Outlook.
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
@@ -67,7 +67,7 @@ ms.locfileid: "72985453"
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] otwiera plik kodu *ThisAddIn.cs* lub *ThisAddIn. vb* i dodaje projekt **OutlookMailItemTaskPane** do **Eksplorator rozwiązań**.
 
 ## <a name="design-the-user-interface-of-the-custom-task-pane"></a>Projektowanie interfejsu użytkownika niestandardowego okienka zadań
- Nie istnieje projektant wizualny dla niestandardowych okienek zadań, ale można zaprojektować kontrolkę użytkownika z żądanym INTERFEJSem użytkownika. Niestandardowe okienko zadań w tym dodatku VSTO ma prosty interfejs użytkownika, który zawiera kontrolkę <xref:System.Windows.Forms.TextBox>. W dalszej części tego instruktażu dodasz kontrolkę użytkownika do niestandardowego okienka zadań.
+ Nie istnieje projektant wizualny dla niestandardowych okienek zadań, ale można zaprojektować kontrolkę użytkownika z żądanym INTERFEJSem użytkownika. Niestandardowe okienko zadań w tym dodatku narzędzi VSTO ma prosty interfejs użytkownika, który zawiera <xref:System.Windows.Forms.TextBox> kontrolkę. W dalszej części tego instruktażu dodasz kontrolkę użytkownika do niestandardowego okienka zadań.
 
 ### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>Aby zaprojektować interfejs użytkownika niestandardowego okienka zadań
 
@@ -88,7 +88,7 @@ ms.locfileid: "72985453"
 
 1. W menu **projekt** kliknij polecenie **Dodaj nowy element**.
 
-2. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **wstążka (projektant wizualny)** .
+2. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **wstążka (projektant wizualny)**.
 
 3. Zmień nazwę nowej wstążki na **ManageTaskPaneRibbon**, a następnie kliknij przycisk **Dodaj**.
 
@@ -122,7 +122,7 @@ ms.locfileid: "72985453"
 
 - Gdy użytkownik kliknie przycisk przełączania na Wstążce. W takim przypadku dodatek VSTO musi ukryć lub wyświetlić odpowiednie okienko zadań.
 
-  Aby włączyć dodatek VSTO do śledzenia, które niestandardowe okienko zadań jest skojarzone z każdą otwartą wiadomością e-mail, należy utworzyć klasę niestandardową, która otacza pary <xref:Microsoft.Office.Interop.Outlook.Inspector> i <xref:Microsoft.Office.Tools.CustomTaskPane> obiektów. Ta klasa tworzy nowy obiekt niestandardowego okienka zadań dla każdej wiadomości e-mail i usuwa niestandardowe okienko zadań po zamknięciu odpowiedniej wiadomości e-mail.
+  Aby włączyć dodatek narzędzi VSTO do śledzenia, które niestandardowe okienko zadań jest skojarzone z każdą otwartą wiadomością e-mail, Utwórz klasę niestandardową, która zawija pary <xref:Microsoft.Office.Interop.Outlook.Inspector> obiektów i <xref:Microsoft.Office.Tools.CustomTaskPane> . Ta klasa tworzy nowy obiekt niestandardowego okienka zadań dla każdej wiadomości e-mail i usuwa niestandardowe okienko zadań po zamknięciu odpowiedniej wiadomości e-mail.
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Aby utworzyć klasę do zarządzania oknami inspektorów i niestandardowymi okienkami zadań
 
@@ -133,22 +133,22 @@ ms.locfileid: "72985453"
      [!code-csharp[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#2)]
      [!code-vb[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#2)]
 
-3. Dodaj następujący kod do pliku *ThisAddIn.cs* lub *ThisAddIn. vb* , poza klasą `ThisAddIn` (dla wizualizacji C#Dodaj ten kod wewnątrz`OutlookMailItemTaskPane`przestrzeni nazw). Klasa `InspectorWrapper` zarządza parą obiektów <xref:Microsoft.Office.Interop.Outlook.Inspector> i <xref:Microsoft.Office.Tools.CustomTaskPane>. Definicja tej klasy zostanie ukończona w poniższych krokach.
+3. Dodaj następujący kod do pliku *ThisAddIn.cs* lub *ThisAddIn. vb* poza `ThisAddIn` klasą (w przypadku języka Visual C# Dodaj ten kod wewnątrz `OutlookMailItemTaskPane` przestrzeni nazw). `InspectorWrapper`Klasa zarządza parą <xref:Microsoft.Office.Interop.Outlook.Inspector> <xref:Microsoft.Office.Tools.CustomTaskPane> obiektów i. Definicja tej klasy zostanie ukończona w poniższych krokach.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#3)]
      [!code-vb[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#3)]
 
-4. Dodaj następujący Konstruktor po kodzie dodanym w poprzednim kroku. Ten konstruktor tworzy i Inicjuje nowe niestandardowe okienko zadań, które jest skojarzone z przekazaną <xref:Microsoft.Office.Interop.Outlook.Inspector> obiektem. W C#programie Konstruktor dołącza także programy obsługi zdarzeń do zdarzenia<xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close>obiektu<xref:Microsoft.Office.Interop.Outlook.Inspector>i zdarzenia<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>obiektu<xref:Microsoft.Office.Tools.CustomTaskPane>.
+4. Dodaj następujący Konstruktor po kodzie dodanym w poprzednim kroku. Ten konstruktor tworzy i Inicjuje nowe niestandardowe okienko zadań, które jest skojarzone z <xref:Microsoft.Office.Interop.Outlook.Inspector> obiektem, który został przesłany. W języku C#, Konstruktor dołącza także programy obsługi zdarzeń do <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> zdarzenia <xref:Microsoft.Office.Interop.Outlook.Inspector> obiektu i do <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> zdarzenia <xref:Microsoft.Office.Tools.CustomTaskPane> obiektu.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#4)]
      [!code-vb[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#4)]
 
-5. Dodaj następującą metodę po kodzie dodanym w poprzednim kroku. Ta metoda jest programem obsługi zdarzeń dla zdarzenia <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> obiektu <xref:Microsoft.Office.Tools.CustomTaskPane>, który znajduje się w klasie `InspectorWrapper`. Ten kod aktualizuje stan przycisku przełączania za każdym razem, gdy użytkownik otworzy lub zamknie niestandardowe okienko zadań.
+5. Dodaj następującą metodę po kodzie dodanym w poprzednim kroku. Ta metoda jest obsługą zdarzeń dla <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> zdarzenia <xref:Microsoft.Office.Tools.CustomTaskPane> obiektu, który jest zawarty w `InspectorWrapper` klasie. Ten kod aktualizuje stan przycisku przełączania za każdym razem, gdy użytkownik otworzy lub zamknie niestandardowe okienko zadań.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#5)]
      [!code-vb[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#5)]
 
-6. Dodaj następującą metodę po kodzie dodanym w poprzednim kroku. Ta metoda jest programem obsługi zdarzeń dla zdarzenia <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> obiektu <xref:Microsoft.Office.Interop.Outlook.Inspector> zawierającego bieżącą wiadomość e-mail. Program obsługi zdarzeń zwalnia zasoby po zamknięciu wiadomości e-mail. Program obsługi zdarzeń usuwa również bieżące niestandardowe okienko zadań z kolekcji `CustomTaskPanes`. Pozwala to zapobiec wielu wystąpieniu niestandardowego okienka zadań po otwarciu następnej wiadomości e-mail.
+6. Dodaj następującą metodę po kodzie dodanym w poprzednim kroku. Ta metoda jest obsługą zdarzeń dla <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> zdarzenia <xref:Microsoft.Office.Interop.Outlook.Inspector> obiektu zawierającego bieżącą wiadomość e-mail. Program obsługi zdarzeń zwalnia zasoby po zamknięciu wiadomości e-mail. Program obsługi zdarzeń usuwa również bieżące niestandardowe okienko zadań z `CustomTaskPanes` kolekcji. Pozwala to zapobiec wielu wystąpieniu niestandardowego okienka zadań po otwarciu następnej wiadomości e-mail.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#6)]
      [!code-vb[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#6)]
@@ -159,42 +159,42 @@ ms.locfileid: "72985453"
      [!code-vb[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#7)]
 
 ## <a name="initialize-and-clean-up-resources-used-by-the-add-in"></a>Inicjowanie i czyszczenie zasobów używanych przez dodatek
- Dodaj kod do klasy `ThisAddIn`, aby zainicjować dodatek narzędzi VSTO podczas ładowania, i wyczyścić zasoby używane przez dodatek VSTO po jego zwolnieniu. Dodatek VSTO można zainicjować przez skonfigurowanie programu obsługi zdarzeń dla zdarzenia <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> i przekazanie wszystkich istniejących wiadomości e-mail do tego programu obsługi zdarzeń. Gdy dodatek narzędzi VSTO zostanie zwolniony, odłącz procedurę obsługi zdarzeń i oczyść obiekty używane przez dodatek VSTO.
+ Dodaj kod do `ThisAddIn` klasy, aby zainicjować dodatek narzędzi VSTO podczas ładowania, i wyczyścić zasoby używane przez dodatek VSTO po jego odładowaniu. Dodatek VSTO można zainicjować przez skonfigurowanie programu obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzenia i przekazanie wszystkich istniejących wiadomości e-mail do tego programu obsługi zdarzeń. Gdy dodatek narzędzi VSTO zostanie zwolniony, odłącz procedurę obsługi zdarzeń i oczyść obiekty używane przez dodatek VSTO.
 
 ### <a name="to-initialize-and-clean-up-resources-used-by-the-vsto-add-in"></a>Aby zainicjować i oczyścić zasoby używane przez dodatek VSTO
 
-1. W pliku *ThisAddIn.cs* lub *ThisAddIn. vb* Znajdź definicję klasy `ThisAddIn`.
+1. W pliku *ThisAddIn.cs* lub *ThisAddIn. vb* Znajdź definicję `ThisAddIn` klasy.
 
-2. Dodaj następujące deklaracje do klasy `ThisAddIn`:
+2. Dodaj następujące deklaracje do `ThisAddIn` klasy:
 
-   - Pole `inspectorWrappersValue` zawiera wszystkie obiekty <xref:Microsoft.Office.Interop.Outlook.Inspector> i `InspectorWrapper`, które są zarządzane przez dodatek VSTO.
+   - `inspectorWrappersValue`Pole zawiera wszystkie <xref:Microsoft.Office.Interop.Outlook.Inspector> `InspectorWrapper` obiekty i, które są zarządzane przez dodatek narzędzi VSTO.
 
-   - Pole `inspectors` przechowuje odwołanie do kolekcji okien inspektorów w bieżącym wystąpieniu programu Outlook. To odwołanie zapobiega zwalnianiu pamięci przez moduł wyrzucania elementów bezużytecznych, która zawiera program obsługi zdarzeń dla zdarzenia <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>, który zostanie zadeklarowany w następnym kroku.
+   - `inspectors`Pole utrzymuje odwołanie do kolekcji okien inspektorów w bieżącym wystąpieniu programu Outlook. To odwołanie zapobiega zwalnianiu pamięci przez moduł wyrzucania elementów bezużytecznych, która zawiera program obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzenia, który zostanie zadeklarowany w następnym kroku.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#8)]
      [!code-vb[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#8)]
 
-3. Zastąp metodę `ThisAddIn_Startup` poniższym kodem. Ten kod dołącza procedurę obsługi zdarzeń do zdarzenia <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> i przekazuje każdy istniejący obiekt <xref:Microsoft.Office.Interop.Outlook.Inspector> do programu obsługi zdarzeń. Jeśli użytkownik załaduje dodatek VSTO po uruchomieniu programu Outlook, dodatek VSTO używa tych informacji do tworzenia niestandardowych okienek zadań dla wszystkich wiadomości e-mail, które są już otwarte.
+3. Zastąp metodę `ThisAddIn_Startup` następującym kodem. Ten kod dołącza procedurę obsługi zdarzeń do <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzenia i przekazuje każdy istniejący <xref:Microsoft.Office.Interop.Outlook.Inspector> obiekt do programu obsługi zdarzeń. Jeśli użytkownik załaduje dodatek VSTO po uruchomieniu programu Outlook, dodatek VSTO używa tych informacji do tworzenia niestandardowych okienek zadań dla wszystkich wiadomości e-mail, które są już otwarte.
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]
     [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]
 
-4. Zastąp metodę `ThisAddIn_ShutDown` poniższym kodem. Ten kod odłącza procedurę obsługi zdarzeń <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> i czyści obiekty używane przez dodatek narzędzi VSTO.
+4. Zastąp metodę `ThisAddIn_ShutDown` następującym kodem. Ten kod odłącza <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> procedurę obsługi zdarzeń i czyści obiekty używane przez dodatek narzędzi VSTO.
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
     [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]
 
-5. Dodaj do klasy `ThisAddIn` następującą procedurę obsługi zdarzeń <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>. Jeśli nowy <xref:Microsoft.Office.Interop.Outlook.Inspector> zawiera wiadomość e-mail, metoda tworzy wystąpienie nowego obiektu `InspectorWrapper` do zarządzania relacjami między wiadomością e-mail i odpowiednim okienkiem zadania.
+5. Dodaj <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> do klasy następujący program obsługi zdarzeń `ThisAddIn` . Jeśli nowa <xref:Microsoft.Office.Interop.Outlook.Inspector> zawiera wiadomość e-mail, metoda tworzy wystąpienie nowego `InspectorWrapper` obiektu, aby zarządzać relacją między wiadomością e-mail i odpowiednim okienkiem zadania.
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
     [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]
 
-6. Dodaj następującą właściwość do klasy `ThisAddIn`. Ta właściwość uwidacznia pole `inspectorWrappersValue` prywatnego do kodu poza klasą `ThisAddIn`.
+6. Dodaj następującą właściwość do `ThisAddIn` klasy. Ta właściwość uwidacznia pole prywatne `inspectorWrappersValue` do kodu poza `ThisAddIn` klasą.
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#12)]
     [!code-vb[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#12)]
 
-## <a name="checkpoint"></a>Elementu
+## <a name="checkpoint"></a>Punkt kontrolny
  Skompiluj projekt, aby upewnić się, że kompiluje się bez błędów.
 
 ### <a name="to-build-your-project"></a>Aby skompilować projekt
@@ -202,20 +202,20 @@ ms.locfileid: "72985453"
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **OutlookMailItemTaskPane** , a następnie kliknij pozycję **Kompiluj**. Upewnij się, że projekt kompiluje się bez błędów.
 
 ## <a name="synchronize-the-ribbon-toggle-button-with-the-custom-task-pane"></a>Synchronizuj przycisk przełączania wstążki z okienkiem zadania niestandardowego
- Przycisk przełączania zostanie naciśnięty, gdy okienko zadań będzie widoczne i pojawi się, gdy okienko zadań jest ukryte. Aby zsynchronizować stan przycisku przy użyciu niestandardowego okienka zadań, należy zmodyfikować procedurę obsługi zdarzeń <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> przycisku przełączania.
+ Przycisk przełączania zostanie naciśnięty, gdy okienko zadań będzie widoczne i pojawi się, gdy okienko zadań jest ukryte. Aby zsynchronizować stan przycisku przy użyciu niestandardowego okienka zadań, należy zmodyfikować <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> procedurę obsługi zdarzeń przycisku przełączania.
 
 ### <a name="to-synchronize-the-custom-task-pane-with-the-toggle-button"></a>Aby zsynchronizować niestandardowe okienko zadań z przyciskiem przełączania
 
 1. W Projektancie wstążki kliknij dwukrotnie przycisk Przełącz **okienko zadań** .
 
-     Program Visual Studio automatycznie generuje procedurę obsługi zdarzeń o nazwie `toggleButton1_Click`, która obsługuje zdarzenie <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> przycisku przełączania. Program Visual Studio otwiera także plik *ManageTaskPaneRibbon.cs* lub *ManageTaskPaneRibbon. vb* w edytorze kodu.
+     Program Visual Studio automatycznie generuje procedurę obsługi zdarzeń o nazwie `toggleButton1_Click` , która obsługuje <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> zdarzenie przycisku przełącznika. Program Visual Studio otwiera także plik *ManageTaskPaneRibbon.cs* lub *ManageTaskPaneRibbon. vb* w edytorze kodu.
 
 2. Dodaj następujące instrukcje na początku pliku *ManageTaskPaneRibbon.cs* lub *ManageTaskPaneRibbon. vb* .
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#14)]
      [!code-vb[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#14)]
 
-3. Zastąp procedurę obsługi zdarzeń `toggleButton1_Click` poniższym kodem. Gdy użytkownik kliknie przycisk przełączania, ta metoda ukrywa lub wyświetla niestandardowe okienko zadań skojarzone z bieżącym oknem inspektora.
+3. Zastąp `toggleButton1_Click` procedurę obsługi zdarzeń poniższym kodem. Gdy użytkownik kliknie przycisk przełączania, ta metoda ukrywa lub wyświetla niestandardowe okienko zadań skojarzone z bieżącym oknem inspektora.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#15)]
      [!code-vb[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#15)]
@@ -266,7 +266,7 @@ ms.locfileid: "72985453"
 
 - Utwórz przycisk wstążki w programie Excel, którego można użyć do ukrycia lub wyświetlenia niestandardowego okienka zadań. Aby uzyskać więcej informacji, zobacz [Przewodnik: synchronizowanie niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Niestandardowe okienka zadań](../vsto/custom-task-panes.md)
 - [Instrukcje: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [Przewodnik: Automatyzowanie aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985470"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Przewodnik: Projektowanie regionu formularza programu Outlook
@@ -53,7 +53,7 @@ ms.locfileid: "72985470"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Aby utworzyć nowy projekt dodatku VSTO dla programu Outlook
 
-1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Utwórz projekt dodatku VSTO programu Outlook o nazwie **MapItAddIn**.
+1. W programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Utwórz projekt dodatku VSTO programu Outlook o nazwie **MapItAddIn**.
 
 2. W oknie dialogowym **Nowy projekt** wybierz pozycję **Utwórz katalog dla rozwiązania**.
 
@@ -122,16 +122,16 @@ ms.locfileid: "72985470"
 
     Klasa fabryki regionów formularza o nazwie `MapItFactory` jest udostępniona.
 
-3. Dodaj następujący kod do programu obsługi zdarzeń `MapItFactory_FormRegionInitializing`. Ta procedura obsługi zdarzeń jest wywoływana, gdy użytkownik otworzy element Contact. Poniższy kod określa, czy element Contact zawiera adres. Jeśli element Contact nie zawiera adresu, ten kod ustawia właściwość <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> klasy <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> na **true** , a region formularza nie jest wyświetlany. W przeciwnym razie dodatek VSTO wywołuje zdarzenie <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> i wyświetla region formularza.
+3. Dodaj następujący kod do `MapItFactory_FormRegionInitializing` programu obsługi zdarzeń. Ta procedura obsługi zdarzeń jest wywoływana, gdy użytkownik otworzy element Contact. Poniższy kod określa, czy element Contact zawiera adres. Jeśli element Contact nie zawiera adresu, ten kod ustawia <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> Właściwość <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> klasy na **true** , a region formularza nie jest wyświetlany. W przeciwnym razie dodatek VSTO wywołuje <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> zdarzenie i wyświetla region formularza.
 
     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
 
-4. Dodaj następujący kod do programu obsługi zdarzeń <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>. Kod będzie wykonywał następujące zadania:
+4. Dodaj następujący kod do <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> programu obsługi zdarzeń. Ten kod wykonuje następujące zadania:
 
    - Łączy każdy adres w elemencie Contact i tworzy ciąg adresu URL.
 
-   - Wywołuje metodę <xref:System.Windows.Forms.WebBrowser.Navigate%2A> obiektu <xref:System.Windows.Forms.WebBrowser> i przekazuje ciąg adresu URL jako parametr.
+   - Wywołuje <xref:System.Windows.Forms.WebBrowser.Navigate%2A> metodę <xref:System.Windows.Forms.WebBrowser> obiektu i przekazuje ciąg adresu URL jako parametr.
 
      Lokalna witryna sieci Web wyszukiwania zostanie wyświetlona w regionie formularza Mapa IT i przedstawia każdy adres w konsoli.
 
@@ -151,10 +151,10 @@ ms.locfileid: "72985470"
 
 3. W formularzu Contact wpisz **Ann Beebe** jako nazwę kontaktu, a następnie określ następujące trzy adresy.
 
-    |Typ adresu|Ulica|
+    |Typ adresu|Adres|
     |------------------|-------------|
-    |**Gospodarcz**|**4567 Main St. Buffalo, NY**|
-    |**Mowa**|**1234 północny St. Buffalo, NY**|
+    |**Firmowe**|**4567 Main St. Buffalo, NY**|
+    |**Strona główna**|**1234 północny St. Buffalo, NY**|
     |**Inne**|**3456 Main St. Seattle, WA**|
 
 4. Zapisz i Zamknij element Contact.
@@ -172,7 +172,7 @@ ms.locfileid: "72985470"
 
 - Aby dowiedzieć się, jak dostosować Wstążkę elementu programu Outlook, zobacz [Dostosowywanie wstążki dla programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dostęp do regionu formularza w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
 - [Wytyczne dotyczące tworzenia regionów formularzy programu Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)

@@ -1,5 +1,5 @@
 ---
-title: Widok rdzeni — narzędzie do powiększania | Dokumentacja firmy Microsoft
+title: Narzędzie do powiększenia widoku rdzeni | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,22 +14,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 28e307bd91d468e0efff840d2b6f469b000f243f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183780"
 ---
 # <a name="cores-view-zoom-tool"></a>Narzędzie do powiększania widoku rdzeni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Kontrolka powiększenia jest suwaka, w którym można powiększać i pomniejszać na osi czasu, dzięki czemu możesz skupić się na obszarach szczególne znaczenie w odniesieniu. Ten formant powiększa się w Centrum bieżący widok, więc dostosowanie widoku przed powiększania.  
+Kontrolka powiększenia jest suwakiem, który umożliwia powiększanie i pomniejszanie na osi czasu, dzięki czemu można skupić się na obszarach określonych zainteresowań. Ta kontrolka powiększa się do środka bieżącego widoku, dlatego Dostosuj widok przed powiększaniem.  
   
-## <a name="other-ways-to-zoom"></a>Inne sposoby, aby powiększyć  
+## <a name="other-ways-to-zoom"></a>Inne sposoby powiększania  
   
-- Powiększanie: Przeciągnij, aby wybrać obszar w widoku osi czasu. Po zwolnieniu przycisku myszy widok osi czasu powiększa wybranego zakresu.  
+- Powiększanie: przeciągnij, aby wybrać obszar w widoku oś czasu. Po zwolnieniu przycisku myszy widok oś czasu zostanie powiększony na zaznaczony zakres.  
   
-- Powiększanie i zmniejszanie: Umieść kursor nad osi czasu, a następnie naciśnij klawisz CTRL, gdy przeniesiesz kółka myszy.  
+- Powiększanie i pomniejszanie: Umieść kursor na osi czasu, a następnie naciśnij klawisz CTRL podczas przesuwania kółka myszy.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok rdzeni](../profiling/cores-view.md)

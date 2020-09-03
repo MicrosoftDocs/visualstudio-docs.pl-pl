@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4bf604e747158c651f284c6463c2c2f65ae3c47a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651804"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Porady: ręczne tworzenie szablonów sieci Web
@@ -27,7 +27,7 @@ ms.locfileid: "72651804"
 Tworzenie szablonu sieci Web różni się od tworzenia innych rodzajów szablonów. Ponieważ szablony projektu sieci Web pojawiają się w oknie dialogowym **Dodaj nową witrynę sieci Web** , a elementy projektu sieci Web są klasyfikowane według języka programowania, plik. vstemplate musi określać szablon jako szablon sieci Web i identyfikować język programowania.
 
 > [!NOTE]
-> Szablony sieci Web muszą zawierać pusty plik. webproj, który jest określony przy użyciu atrybutu `File` elementu `Project`. Chociaż projekty sieci Web nie wymagają plików projektu, ten plik jest wymagany w celu poprawnego działania szablonu sieci Web.
+> Szablony sieci Web muszą zawierać pusty plik webproj, który jest określony przy użyciu `File` atrybutu `Project` elementu. Chociaż projekty sieci Web nie wymagają plików projektu, ten plik jest wymagany w celu poprawnego działania szablonu sieci Web.
 
 ### <a name="to-manually-create-a-web-template"></a>Aby ręcznie utworzyć szablon sieci Web
 
@@ -35,13 +35,13 @@ Tworzenie szablonu sieci Web różni się od tworzenia innych rodzajów szablon�
 
 2. Zmodyfikuj lub Usuń pliki w projekcie lub Dodaj nowe pliki do projektu.
 
-3. Utwórz plik XML i Zapisz go przy użyciu rozszerzenia nazwy pliku. vstemplate w tym samym katalogu, w którym znajduje się projekt. Nie należy dodawać go do projektu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+3. Utwórz plik XML i Zapisz go przy użyciu rozszerzenia nazwy pliku. vstemplate w tym samym katalogu, w którym znajduje się projekt. Nie należy dodawać go do projektu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 4. Utwórz plik XML. vstemplate, aby dostarczyć metadane szablonu projektu. Aby uzyskać więcej informacji, zapoznaj się z przykładem w następnej sekcji.
 
-5. Znajdź `ProjectType` element w pliku. vstemplate i ustaw wartość tekstową na `Web`.
+5. Znajdź `ProjectType` element w pliku. vstemplate i ustaw wartość tekstową na `Web` .
 
-6. Po elemencie `ProjectType` Dodaj element `ProjectSubType` i ustaw wartość tekstową na język programowania szablonu. Język programowania może być jedną z następujących wartości:
+6. Po `ProjectType` elemencie Dodaj `ProjectSubType` element i ustaw wartość tekstową na język programowania szablonu. Język programowania może być jedną z następujących wartości:
 
    - CSharp
 
@@ -58,9 +58,9 @@ Tworzenie szablonu sieci Web różni się od tworzenia innych rodzajów szablon�
    </TemplateData>
    ```
 
-7. Wybierz pliki z szablonu (w tym plik. vstemplate), kliknij prawym przyciskiem myszy zaznaczenie, kliknij polecenie **Wyślij do**, a następnie kliknij **folder skompresowany (zip)** . Pliki są kompresowane do pliku zip.
+7. Wybierz pliki z szablonu (w tym plik. vstemplate), kliknij prawym przyciskiem myszy zaznaczenie, kliknij polecenie **Wyślij do**, a następnie kliknij **folder skompresowany (zip)**. Pliki są kompresowane do pliku zip.
 
-8. Umieść plik. zip szablonu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] katalogu szablonów projektu. Domyślnie ten katalog to \Moje Documents\Visual Studio *wersja*\Moje wyeksportowane szablony \\.
+8. Umieść plik. zip szablonu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] katalogu szablonów projektu. Domyślnie ten katalog to \Moje Documents\Visual Studio w *wersji*\Moje wyeksportowane szablony \\ .
 
 ## <a name="example"></a>Przykład
  Poniższy przykład przedstawia podstawowy plik. vstemplate szablonu projektu sieci Web.

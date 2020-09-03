@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bcfb150cc0b97b72fd0f6eac02f59ae1db3e9ca6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985403"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Przewodnik: proste powiązanie danych w projekcie dodatku VSTO
@@ -31,7 +31,7 @@ W instruktażu przedstawiono następujące zagadnienia:
 
 - Dodawanie <xref:Microsoft.Office.Tools.Word.ContentControl> do dokumentu w czasie wykonywania.
 
-- Tworzenie <xref:System.Windows.Forms.BindingSource>, który łączy formant z wystąpieniem zestawu danych.
+- Tworzenie <xref:System.Windows.Forms.BindingSource> , które łączy formant z wystąpieniem zestawu danych.
 
 - Umożliwienie użytkownikowi przewijania rekordów i wyświetlania ich w kontrolce.
 
@@ -45,7 +45,7 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-- Dostęp do uruchomionego wystąpienia programu SQL Server 2005 lub SQL Server 2005 Express z dołączoną przykładową bazą danych `AdventureWorksLT`. Bazę danych `AdventureWorksLT` można pobrać z [repozytorium SQL Server przykłady](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)w witrynie GitHub. Aby uzyskać więcej informacji na temat dołączania bazy danych, zobacz następujące tematy:
+- Dostęp do uruchomionego wystąpienia programu SQL Server 2005 lub SQL Server 2005 Express, do którego jest `AdventureWorksLT` Dołączona przykładowa baza danych. Bazę danych można pobrać `AdventureWorksLT` z repozytorium w witrynie [GitHub SQL Server Samples](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). Aby uzyskać więcej informacji na temat dołączania bazy danych, zobacz następujące tematy:
 
   - Aby dołączyć bazę danych za pomocą SQL Server Management Studio lub SQL Server Management Studio Express, zobacz [How to: dołączanie bazy danych (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
@@ -57,13 +57,13 @@ Pierwszym krokiem jest utworzenie projektu dodatku VSTO dla programu Word.
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-1. Utwórz projekt dodatku VSTO programu Word z nazwą **zapełniania dokumentów z bazy danych**przy użyciu Visual Basic lub C#.
+1. Utwórz projekt dodatku VSTO programu Word z nazwą **wypełniania dokumentów z bazy danych**przy użyciu Visual Basic lub C#.
 
      Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Program Visual Studio otwiera plik *ThisAddIn. vb* lub *ThisAddIn.cs* i dodaje do **Eksplorator rozwiązań** **dokumenty wypełniania z projektu bazy danych** .
 
-2. Jeśli projekt jest przeznaczony dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], Dodaj odwołanie do zestawu *Microsoft. Office. Tools. Word. v 4.0. Utilities. dll* . Ta dokumentacja jest wymagana do programowego dodawania formantów Windows Forms do dokumentu w dalszej części tego przewodnika.
+2. Jeśli projekt jest obiektem docelowym [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , Dodaj odwołanie do zestawu *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* . Ta dokumentacja jest wymagana do programowego dodawania formantów Windows Forms do dokumentu w dalszej części tego przewodnika.
 
 ## <a name="create-a-data-source"></a>Tworzenie źródła danych
 
@@ -71,49 +71,49 @@ Użyj okna **źródła danych** , aby dodać do projektu typ zestawu danych.
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Aby dodać typ DataSet do projektu
 
-1. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je przez, na pasku menu, wybierając opcję **Wyświetl** > inne **źródła danych** > **systemu Windows** .
+1. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
 
 2. Wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
 
 3. Kliknij pozycję **baza danych**, a następnie kliknij przycisk **dalej**.
 
-4. Jeśli masz istniejące połączenie z bazą danych `AdventureWorksLT`, wybierz to połączenie i kliknij przycisk **dalej**.
+4. Jeśli masz istniejące połączenie z `AdventureWorksLT` bazą danych, wybierz to połączenie i kliknij przycisk **dalej**.
 
     W przeciwnym razie kliknij pozycję **nowe połączenie**, a następnie użyj okna dialogowego **Dodawanie połączenia** , aby utworzyć nowe połączenie. Aby uzyskać więcej informacji, zobacz [Dodawanie nowych połączeń](../data-tools/add-new-connections.md).
 
 5. Na stronie **Zapisz parametry połączenia do pliku konfiguracji aplikacji** kliknij przycisk **dalej**.
 
-6. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** i wybierz pozycję **klient (tabeli SalesLT)** .
+6. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** i wybierz pozycję **klient (tabeli SalesLT)**.
 
 7. Kliknij przycisk **Zakończ**.
 
     Plik *AdventureWorksLTDataSet. xsd* zostanie dodany do **Eksplorator rozwiązań**. Ten plik definiuje następujące elementy:
 
-   - Typ zestawu danych o nazwie `AdventureWorksLTDataSet`. Ten zestaw danych reprezentuje zawartość tabeli **Customer (tabeli SalesLT)** w bazie danych AdventureWorksLT.
+   - Określony zestaw danych o nazwie `AdventureWorksLTDataSet` . Ten zestaw danych reprezentuje zawartość tabeli **Customer (tabeli SalesLT)** w bazie danych AdventureWorksLT.
 
-   - TableAdapter o nazwie `CustomerTableAdapter`. Ten TableAdapter może służyć do odczytywania i zapisywania danych w `AdventureWorksLTDataSet`. Aby uzyskać więcej informacji, zobacz [TableAdapter Overview (przegląd](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)).
+   - TableAdapter o nazwie `CustomerTableAdapter` . Ten TableAdapter może służyć do odczytywania i zapisywania danych w `AdventureWorksLTDataSet` . Aby uzyskać więcej informacji, zobacz [TableAdapter Overview (przegląd](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)).
 
      Oba te obiekty będą używane w dalszej części tego przewodnika.
 
 ## <a name="create-controls-and-binding-controls-to-data"></a>Tworzenie kontrolek i kontrolowanie powiązań z danymi
 
-Interfejs do wyświetlania rekordów bazy danych w tym instruktażu jest podstawowy i jest tworzony bezpośrednio wewnątrz dokumentu. Jeden <xref:Microsoft.Office.Tools.Word.ContentControl> wyświetla pojedynczy rekord bazy danych w danym momencie, a dwie kontrolki <xref:Microsoft.Office.Tools.Word.Controls.Button> umożliwiają przewijanie rekordów. Kontrolka zawartości używa <xref:System.Windows.Forms.BindingSource>, aby nawiązać połączenie z bazą danych.
+Interfejs do wyświetlania rekordów bazy danych w tym instruktażu jest podstawowy i jest tworzony bezpośrednio wewnątrz dokumentu. Jeden <xref:Microsoft.Office.Tools.Word.ContentControl> wyświetla rekord pojedynczej bazy danych w danym momencie, a dwa <xref:Microsoft.Office.Tools.Word.Controls.Button> kontrolki umożliwiają przewijanie rekordów. Kontrolka zawartości używa <xref:System.Windows.Forms.BindingSource> do nawiązywania połączenia z bazą danych.
 
 Aby uzyskać więcej informacji o kontrolkach powiązań z danymi, zobacz temat [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).
 
 ### <a name="to-create-the-interface-in-the-document"></a>Aby utworzyć interfejs w dokumencie
 
-1. W klasie `ThisAddIn` deklaruj następujące kontrolki, aby wyświetlić i przewinąć tabelę `Customer` bazy danych `AdventureWorksLTDataSet`.
+1. W `ThisAddIn` klasie należy zadeklarować następujące kontrolki do wyświetlania i przewijania `Customer` tabeli `AdventureWorksLTDataSet` bazy danych.
 
      [!code-vb[Trin_WordAddInDatabase#1](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDatabase#1](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#1)]
 
-2. W metodzie `ThisAddIn_Startup` Dodaj następujący kod, aby zainicjować zestaw danych, Wypełnij zestaw danych informacjami z bazy danych `AdventureWorksLTDataSet`.
+2. W `ThisAddIn_Startup` metodzie Dodaj następujący kod, aby zainicjować zestaw danych, Wypełnij zestaw danych informacjami z `AdventureWorksLTDataSet` bazy danych.
 
      [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]
 
-3. Dodaj następujący kod do metody `ThisAddIn_Startup`. Spowoduje to wygenerowanie elementu hosta, który rozszerza dokument. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzając dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+3. Dodaj następujący kod do metody `ThisAddIn_Startup`: Spowoduje to wygenerowanie elementu hosta, który rozszerza dokument. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzając dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
      [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]
@@ -128,7 +128,7 @@ Aby uzyskać więcej informacji o kontrolkach powiązań z danymi, zobacz temat 
      [!code-vb[Trin_WordAddInDatabase#5](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDatabase#5](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#5)]
 
-6. Powiąż kontrolkę zawartości z `AdventureWorksLTDataSet` przy użyciu <xref:System.Windows.Forms.BindingSource>. Dla C# deweloperów Dodaj dwa programy obsługi zdarzeń dla kontrolek<xref:Microsoft.Office.Tools.Word.Controls.Button>.
+6. Powiąż kontrolkę zawartości z przy `AdventureWorksLTDataSet` użyciu <xref:System.Windows.Forms.BindingSource> . W przypadku deweloperów języka C# Dodaj dwa programy obsługi zdarzeń dla <xref:Microsoft.Office.Tools.Word.Controls.Button> kontrolek.
 
      [!code-vb[Trin_WordAddInDatabase#6](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#6)]
      [!code-csharp[Trin_WordAddInDatabase#6](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#6)]
@@ -146,11 +146,11 @@ Po otwarciu programu Word kontrolka zawartości wyświetla dane z `AdventureWork
 
 1. Naciśnij klawisz **F5**.
 
-     Kontrolka zawartości o nazwie `customerContentControl` jest tworzona i wypełniana danymi. W tym samym czasie obiekt zestawu danych o nazwie `adventureWorksLTDataSet` i <xref:System.Windows.Forms.BindingSource> o nazwie `customerBindingSource` są dodawane do projektu. <xref:Microsoft.Office.Tools.Word.ContentControl> jest powiązany z <xref:System.Windows.Forms.BindingSource>, co z kolei jest powiązane z obiektem DataSet.
+     Formant zawartości o nazwie `customerContentControl` jest tworzony i wypełniany danymi. W tym samym czasie obiekt zestawu danych o nazwie `adventureWorksLTDataSet` i <xref:System.Windows.Forms.BindingSource> nazwie `customerBindingSource` zostanie dodany do projektu. <xref:Microsoft.Office.Tools.Word.ContentControl>Jest powiązany z <xref:System.Windows.Forms.BindingSource> , który z kolei jest powiązany z obiektem DataSet.
 
 2. Kliknij przyciski **dalej** i **Wstecz** , aby przewijać rekordy bazy danych.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)
 - [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)

@@ -10,25 +10,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 90794b658204fb955e6dfaebed0377f91d9792ba
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672529"
 ---
 # <a name="primitives-activity-designers"></a>Projektanci działań Primitives
-Projektanci działań podstawowych służą do tworzenia i konfigurowania różnych działań w przestrzeni nazw <xref:System.Activities.Statements>, takich jak przypisanie i opóźnienie. Tematy zawarte w tej sekcji zawierają wskazówki dotyczące korzystania z [!INCLUDE[wfd2](../includes/wfd2-md.md)] działań i projektantów szablonów.
+Projektanci działań podstawowych służą do tworzenia i konfigurowania różnych działań w <xref:System.Activities.Statements> przestrzeni nazw, takich jak Przypisywanie i opóźnienie. Tematy zawarte w tej sekcji zawierają wskazówki dotyczące używania [!INCLUDE[wfd2](../includes/wfd2-md.md)] projektantów działań i szablonów.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Przypisz](../workflow-designer/assign-activity-designer.md) Służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.Assign>.
+ [Przypisz](../workflow-designer/assign-activity-designer.md) Służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Assign> działania.
 
- [Opóźnienie](../workflow-designer/delay-activity-designer.md) Służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.Delay>.
+ [Opóźnienie](../workflow-designer/delay-activity-designer.md) Służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Delay> działania.
 
- [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md) Służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.InvokeMethod>.
+ [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md) Służy do tworzenia i konfigurowania <xref:System.Activities.Statements.InvokeMethod> działania.
 
- [WriteLine](../workflow-designer/writeline-activity-designer.md) Służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.WriteLine>.
+ [WriteLine](../workflow-designer/writeline-activity-designer.md) Służy do tworzenia i konfigurowania <xref:System.Activities.Statements.WriteLine> działania.
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
 
 ## <a name="related-sections"></a>Sekcje pokrewne
  [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)
@@ -47,4 +47,4 @@ Projektanci działań podstawowych służą do tworzenia i konfigurowania różn
 
 ## <a name="see-also"></a>Zobacz też
 
--[przy użyciu projektantów działań](../workflow-designer/using-the-activity-designers.md)
+-[Korzystanie z projektantów działań](../workflow-designer/using-the-activity-designers.md)

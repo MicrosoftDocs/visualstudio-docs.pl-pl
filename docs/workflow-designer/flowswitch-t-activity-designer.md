@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6637682bd6ba649f27c1a53f3b1448629f03736
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711576"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T>, projektant działań
@@ -46,7 +46,7 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.FlowSwitch%
 |<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|Fałsz|Określa unikatowe mapowanie z możliwych wyników uzyskanych na podstawie oceny <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> do zestawu <xref:System.Activities.Statements.FlowNode> obiektów.|
 |<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|Prawda|Określa mapowanie, gdy oszacowanie <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> nie pasuje do jednej z wartości zawartych w <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> obiekcie.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Schemat blokowy](../workflow-designer/flowchart-activity-designers.md)
 - [Schemat blokowy](../workflow-designer/flowchart-activity-designer.md)

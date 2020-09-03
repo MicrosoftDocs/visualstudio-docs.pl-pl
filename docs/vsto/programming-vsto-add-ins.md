@@ -33,10 +33,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 240995eb744f8107503c108cbcdbbb8522748b79
-ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87115326"
 ---
 # <a name="program-vsto-add-ins"></a>Dodatki narzędzi VSTO programu
@@ -105,7 +105,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
 - [Model obiektów programu Visio — Omówienie](../vsto/visio-object-model-overview.md)
 
-### <a name="access-a-document-when-the-office-application-starts"></a><a name="AccessingDocuments"></a>Uzyskaj dostęp do dokumentu podczas uruchamiania aplikacji pakietu Office
+### <a name="access-a-document-when-the-office-application-starts"></a><a name="AccessingDocuments"></a> Uzyskaj dostęp do dokumentu podczas uruchamiania aplikacji pakietu Office
  Nie wszystkie [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplikacje automatycznie otwierają dokument po ich uruchomieniu i żadna z [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplikacji nie otwiera dokumentu po jego uruchomieniu. W związku z tym nie należy dodawać kodu w programie `ThisAdd-In_Startup` obsługi zdarzeń, jeśli kod wymaga otwarcia dokumentu. Zamiast tego należy dodać ten kod do zdarzenia, które aplikacja pakietu Office zgłasza, gdy użytkownik tworzy lub otwiera dokument. Dzięki temu można zagwarantować, że dokument jest otwarty przed wykonaniem przez kod operacji na nim.
 
  Poniższy przykład kodu działa z dokumentem w programie Word tylko wtedy, gdy użytkownik tworzy dokument lub otwiera istniejący dokument.

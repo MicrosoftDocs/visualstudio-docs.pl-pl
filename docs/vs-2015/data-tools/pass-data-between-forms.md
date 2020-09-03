@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e14165ba2111f40898c00b3d01950425c042070
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652912"
 ---
 # <a name="pass-data-between-forms"></a>Przekazywanie danych między formularzami
@@ -62,7 +62,7 @@ Ten Instruktaż zawiera instrukcje krok po kroku dotyczące przekazywania danych
 
 1. Z menu **plik** Utwórz nowy projekt.
 
-2. Nadaj nazwę projektowi `PassingDataBetweenForms`.
+2. Nadaj nazwę projektowi `PassingDataBetweenForms` .
 
 3. Wybierz pozycję **aplikacja Windows Forms**i kliknij przycisk **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).
 
@@ -97,13 +97,13 @@ Ten Instruktaż zawiera instrukcje krok po kroku dotyczące przekazywania danych
      **NorthwindDataSet** jest dodawany do projektu, a tabele **Customers** i **Orders** są wyświetlane w oknie **źródła danych** .
 
 ## <a name="create-the-first-form-form1"></a>Utwórz pierwszy formularz (Form1)
- Można utworzyć siatkę powiązaną z danymi (formant <xref:System.Windows.Forms.DataGridView>), przeciągając węzeł **Customers** z okna **źródła danych** na formularz.
+ Można utworzyć siatkę powiązaną z danymi ( <xref:System.Windows.Forms.DataGridView> formant), przeciągając węzeł **Customers** z okna **źródła danych** na formularz.
 
 #### <a name="to-create-a-data-bound-grid-on-the-form"></a>Aby utworzyć siatkę powiązaną z danymi w formularzu
 
 - Przeciągnij główny węzeł **Customers** z okna **źródła danych** na **formularz Form1**.
 
-     @No__t_0 i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach pojawia się na **formularzu Form1**. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+     <xref:System.Windows.Forms.DataGridView>A i pasek narzędzi ( <xref:System.Windows.Forms.BindingNavigator> ) do nawigowania po rekordach pojawia się na **formularzu Form1**. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
 
 ## <a name="create-the-second-form-form2"></a>Utwórz drugi formularz (Form2)
 
@@ -115,7 +115,7 @@ Ten Instruktaż zawiera instrukcje krok po kroku dotyczące przekazywania danych
 
 3. Przeciągnij główny węzeł **zamówień** z okna **źródła danych** na **Form2**.
 
-     @No__t_0 i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach pojawia się na **Form2**. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+     <xref:System.Windows.Forms.DataGridView>A i pasek narzędzi ( <xref:System.Windows.Forms.BindingNavigator> ) dla nawigowania po rekordach pojawia się na **Form2**. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
 
 4. Usuń **OrdersBindingNavigator** z paska składnika.
 
@@ -133,7 +133,7 @@ Ten Instruktaż zawiera instrukcje krok po kroku dotyczące przekazywania danych
 
 4. Pozostaw domyślną opcję Select, **która zwraca wiersze**, a następnie kliknij przycisk **dalej**.
 
-5. Dodaj klauzulę WHERE do zapytania, aby zwrócić `Orders` w oparciu o `CustomerID`. Zapytanie powinno być podobne do następujących:
+5. Dodaj klauzulę WHERE do zapytania, aby zwrócić ją na `Orders` podstawie `CustomerID` . Zapytanie powinno być podobne do następujących:
 
     ```
     SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
@@ -142,11 +142,11 @@ Ten Instruktaż zawiera instrukcje krok po kroku dotyczące przekazywania danych
     ```
 
     > [!NOTE]
-    > Sprawdź poprawność składni parametrów dla bazy danych. Na przykład w programie Microsoft Access klauzula WHERE będzie wyglądać następująco: `WHERE CustomerID = ?`.
+    > Sprawdź poprawność składni parametrów dla bazy danych. Na przykład w programie Microsoft Access klauzula WHERE będzie wyglądać następująco: `WHERE CustomerID = ?` .
 
 6. Kliknij przycisk **Dalej**.
 
-7. Dla pola **Wypełnij nazwę DataTableMethod**wpisz `FillByCustomerID`.
+7. Dla pola **Wypełnij wpisz nazwę DataTableMethod** `FillByCustomerID` .
 
 8. Usuń zaznaczenie opcji **Zwróć element DataTable** , a następnie kliknij przycisk **dalej**.
 
@@ -158,7 +158,7 @@ Ten Instruktaż zawiera instrukcje krok po kroku dotyczące przekazywania danych
 
 1. Kliknij prawym przyciskiem myszy pozycję **Form2**, a następnie wybierz pozycję **Wyświetl kod** , aby otworzyć **Form2** w **edytorze kodu**.
 
-2. Dodaj następujący kod do **Form2** po metodzie `Form2_Load`:
+2. Dodaj następujący kod do **Form2** po `Form2_Load` metodzie:
 
      [!code-csharp[VbRaddataDisplaying#1](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form2.cs#1)]
      [!code-vb[VbRaddataDisplaying#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form2.vb#1)]

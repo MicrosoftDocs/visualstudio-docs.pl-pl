@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234695"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office
@@ -40,7 +40,7 @@ ms.locfileid: "87234695"
 
 - [Debuguj projekty](#debugging)
 
-## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a>Twórz, uaktualniaj i otwieraj projekty
+## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a> Twórz, uaktualniaj i otwieraj projekty
  Podczas tworzenia lub otwierania projektów pakietu Office mogą wystąpić następujące błędy.
 
 ### <a name="the-project-cannot-be-created"></a>Nie można utworzyć projektu
@@ -84,7 +84,7 @@ ms.locfileid: "87234695"
 
  Po zakończeniu uaktualniania projektu można odinstalować program Visual Studio 2005 Tools for Office Second Edition Runtime z komputera deweloperskiego, jeśli nie jest on używany przez inne rozwiązania pakietu Office.
 
-## <a name="use-the-designers"></a><a name="designers"></a>Korzystanie z projektantów
+## <a name="use-the-designers"></a><a name="designers"></a> Korzystanie z projektantów
  Podczas pracy z dokumentem, skoroszytem lub projektantem arkusza w projektach na poziomie dokumentu mogą wystąpić następujące błędy.
 
 ### <a name="designer-failed-to-load-correctly"></a>Nie można poprawnie załadować projektanta
@@ -105,7 +105,7 @@ ms.locfileid: "87234695"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Polecenie Wstaw clipart nie wykonuje żadnych operacji w projektancie programu Visual Studio
  Gdy program Excel lub Word jest otwarty w projektancie programu Visual Studio, kliknięcie przycisku **Przytnij clipart** na karcie **ilustracje** na Wstążce nie powoduje otworzenia **okienka zadań Clipart** . Aby dodać clipart, należy otworzyć kopię skoroszytu lub dokumentu znajdującego się w głównym folderze projektu (a nie kopię znajdującą się w folderze *\Bin* ) poza programem Visual Studio, dodać obiekt clipart, a następnie zapisać skoroszyt lub dokument.
 
-## <a name="write-code"></a><a name="code"></a>Napisz kod
+## <a name="write-code"></a><a name="code"></a> Napisz kod
  Podczas pisania kodu w projektach pakietu Office mogą wystąpić następujące błędy.
 
 ### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Niektóre zdarzenia obiektów pakietu Office są niedostępne przy użyciu języka C\#
@@ -123,7 +123,7 @@ ms.locfileid: "87234695"
 
  Aby uzyskać więcej informacji na temat interfejsów zdarzeń w usłudze Office zestawów Pia, zobacz [Omówienie klas i interfejsów w podstawowych zestawach międzyoperacyjnych pakietu Office](/previous-versions/office/office-12//ms247299(v=office.12)).
 
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Nie można odwołać się do klas PIA pakietu Office w projektach przeznaczonych dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Nie można odwołać się do klas PIA pakietu Office w projektach przeznaczonych dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
  W projektach przeznaczonych dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , kod, który odwołuje się do klasy, która jest zdefiniowana w Piau pakietu Office nie zostanie domyślnie skompilowana. Klasy w zestawów Pia używają klasy *NazwaObiektu*konwencji nazewnictwa, takiej jak <xref:Microsoft.Office.Interop.Word.DocumentClass> i <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Na przykład następujący kod z projektu dodatku VSTO programu Word nie zostanie skompilowany.
 
 ```vb
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Mimo że zaimportowano obszar nazw programu Word lub Excel i masz dostęp do wszystkich klas wewnątrz niego, musisz w pełni zakwalifikować wszystkie typy z programem Word lub Excel, aby usunąć niejednoznaczność przestrzeni nazw.
 
-## <a name="build-projects"></a><a name="building"></a>Kompiluj projekty
+## <a name="build-projects"></a><a name="building"></a> Kompiluj projekty
  Podczas kompilowania projektów pakietu Office mogą wystąpić następujące błędy.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Nie można skompilować projektu na poziomie dokumentu opartego na dokumencie z ograniczonymi uprawnieniami
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Błędy kompilatora występują po usunięciu formantu NamedRange
  Jeśli usuniesz <xref:Microsoft.Office.Tools.Excel.NamedRange> formant z arkusza, który nie jest aktywnym arkuszem w projektancie, kod wygenerowany automatycznie może nie zostać usunięty z projektu i mogą wystąpić błędy kompilatora. Aby upewnić się, że kod został usunięty, należy zawsze zaznaczyć arkusz, który zawiera <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę, aby uczynić go aktywnym arkuszem przed usunięciem formantu. Jeśli automatycznie wygenerowany kod nie jest usuwany po usunięciu kontrolki, można spowodować, że projektant usunie ten kod, aktywując arkusz i wprowadzając zmianę, tak aby arkusz został oznaczony jako zmodyfikowany. Po odbudowaniu projektu kod jest usuwany.
 
-## <a name="debug-projects"></a><a name="debugging"></a>Debuguj projekty
+## <a name="debug-projects"></a><a name="debugging"></a> Debuguj projekty
  Podczas debugowania projektów pakietu Office mogą wystąpić następujące błędy.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Monit o odinstalowanie jest wyświetlany podczas publikowania i instalowania rozwiązania na komputerze deweloperskim
@@ -213,7 +213,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Niezależnie od tego, czy w oknie dialogowym klikniesz przycisk **tak** , czy **nie** , program Visual Studio kończy proces programu Excel lub Word i zatrzymuje debuger. Aby zatrzymać debugowanie projektu bez wyświetlania tego okna dialogowego, należy natychmiast zamknąć program Excel lub Word, zamiast zatrzymywać debuger w programie Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozwiązywanie problemów z rozwiązaniami pakietu Office](../vsto/troubleshooting-office-solutions.md)
 - [Rozwiązywanie problemów z zabezpieczeniami rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-security.md)
 - [Rozwiązywanie problemów z wdrażaniem rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-deployment.md)

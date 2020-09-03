@@ -1,5 +1,5 @@
 ---
-title: Co&#39;nowego w funkcjach wizualizacji i modelowania SDK | Microsoft Docs
+title: Co&#39;s w wizualizacji i modelu modelowania SDK | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,11 +12,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d517818d2ebbefcdcf91a707fbe5e5aeb117e2d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654230"
 ---
-# <a name="what39s-new-in-visualization-and-modeling-sdk"></a>Co&#39;nowego w wizualizacji i SDK modelowania
+# <a name="what39s-new-in-visualization-and-modeling-sdk"></a>Co&#39;s w wizualizacji i modelu modelowania SDK
 ## <a name="new-features-in-dsl-tools-for-visual-studio-2011"></a>Nowe funkcje narzędzi DSL Tools for Visual Studio 2011

@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineName | Dokumentacja firmy Microsoft
+title: 'IDebugCoreServer2:: GetMachineName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0be8ffadec79906ecc27e797627cfbcb2a8782d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182931"
 ---
 # <a name="idebugcoreserver2getmachinename"></a>IDebugCoreServer2::GetMachineName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera nazwę maszyny, która jest systemem core server.  
+Pobiera nazwę komputera, na którym jest uruchomiony serwer podstawowy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,10 +40,10 @@ int GetName( 
   
 #### <a name="parameters"></a>Parametry  
  `pbstrName`  
- [out] Zwraca ciąg zawierający nazwę komputera.  
+ określoną Zwraca ciąg zawierający nazwę komputera.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

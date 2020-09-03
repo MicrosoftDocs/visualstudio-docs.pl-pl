@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 9533a597a33deaed17ff2a73d56ef306ea7b5613
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546344"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Nie zgłaszaj wyjątków o zastrzeżonych typach
@@ -66,19 +66,19 @@ ms.locfileid: "85546344"
 
 |Opis parametru|Wyjątek|
 |---------------------------|---------------|
-|`null`odwoła|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|`null` odwoła|<xref:System.ArgumentNullException?displayProperty=fullName>|
 |Poza dozwolonym zakresem wartości (takich jak indeks kolekcji lub listy)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
 |Nieprawidłowa `enum` wartość|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
 |Zawiera format, który nie spełnia specyfikacji parametrów metody (na przykład ciąg formatu dla `ToString(String)` )|<xref:System.FormatException?displayProperty=fullName>|
 |W przeciwnym razie nieprawidłowe|<xref:System.ArgumentException?displayProperty=fullName>|
 
- Gdy operacja jest nieprawidłowa dla bieżącego stanu rzutowania obiektu<xref:System.InvalidOperationException?displayProperty=fullName>
+ Gdy operacja jest nieprawidłowa dla bieżącego stanu rzutowania obiektu <xref:System.InvalidOperationException?displayProperty=fullName>
 
- Gdy operacja jest wykonywana na obiekcie, który został usunięty, zgłoś<xref:System.ObjectDisposedException?displayProperty=fullName>
+ Gdy operacja jest wykonywana na obiekcie, który został usunięty, zgłoś <xref:System.ObjectDisposedException?displayProperty=fullName>
 
- Gdy operacja nie jest obsługiwana (na przykład w przesłoniętym **strumieniu** ), zgłoś w strumieniu otwartym do odczytu<xref:System.NotSupportedException?displayProperty=fullName>
+ Gdy operacja nie jest obsługiwana (na przykład w przesłoniętym **strumieniu** ), zgłoś w strumieniu otwartym do odczytu <xref:System.NotSupportedException?displayProperty=fullName>
 
- Gdy konwersja spowoduje przepełnienie (na przykład w jawnym przeciążeniu operatora rzutowania)<xref:System.OverflowException?displayProperty=fullName>
+ Gdy konwersja spowoduje przepełnienie (na przykład w jawnym przeciążeniu operatora rzutowania) <xref:System.OverflowException?displayProperty=fullName>
 
  We wszystkich innych sytuacjach należy rozważyć utworzenie własnego typu, który pochodzi z <xref:System.Exception> i throw.
 

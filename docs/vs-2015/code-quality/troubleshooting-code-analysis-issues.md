@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6fd2735b7e601afb5a80dd027a8ae107cab58e4a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672423"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Rozwiązywanie problemów związanych z analizą kodu
@@ -23,10 +23,10 @@ Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących n
 
 - [Zmiany w zestawie reguł programu Visual Studio 2010 nie są odzwierciedlone w poprzednich wersjach programu Visual Studio](#ChildRuleSetChangesInPreviousVersions)
 
-## <a name="ChildRuleSetChangesInPreviousVersions"></a>Zmiany w zestawie reguł programu Visual Studio 2010 nie są odzwierciedlone w poprzednich wersjach programu Visual Studio
- Podczas tworzenia zestawu reguł w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], który zawiera podrzędny zestaw reguł, zmiana podrzędnego zestawu reguł może nie zostać zastosowana w przypadku uruchamiania analizy kodu na komputerach korzystających ze starszej wersji programu Visual Studio. Aby rozwiązać ten problem, należy wymusić ponowne zapisywanie zestawu reguł nadrzędnych, który jest zestawem reguł zawierającym podrzędny zestaw reguł.
+## <a name="changes-in-a-visual-studio-2010-rule-set-are-not-reflected-in-previous-visual-studio-versions"></a><a name="ChildRuleSetChangesInPreviousVersions"></a> Zmiany w zestawie reguł programu Visual Studio 2010 nie są odzwierciedlone w poprzednich wersjach programu Visual Studio
+ Podczas tworzenia zestawu reguł w programie [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] , który zawiera podrzędny zestaw reguł, zmiana podrzędnego zestawu reguł może nie zostać zastosowana w przypadku uruchamiania analizy kodu na komputerach używających wcześniejszej wersji programu Visual Studio. Aby rozwiązać ten problem, należy wymusić ponowne zapisywanie zestawu reguł nadrzędnych, który jest zestawem reguł zawierającym podrzędny zestaw reguł.
 
-1. Otwórz zestaw reguł nadrzędnych w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].
+1. Otwórz zestaw reguł nadrzędnych w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] .
 
 2. Wprowadź zmiany, takie jak dodawanie lub usuwanie reguły, a następnie zapisywanie zestawu reguł.
 

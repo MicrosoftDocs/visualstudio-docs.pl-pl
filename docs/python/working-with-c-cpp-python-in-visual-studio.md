@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d79c9d0d1b9c62d5afd78696ee2654c4eecdbe57
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86972364"
 ---
 # <a name="create-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
@@ -131,7 +131,7 @@ Postępuj zgodnie z instrukcjami w tej sekcji, aby utworzyć dwa identyczne proj
     | **Konsolidator**  >  **Ogólne** | **Dodatkowe katalogi biblioteki** | Dodaj folder *libs* języka Python zawierający pliki *lib* , które są odpowiednie dla danej instalacji, na przykład `c:\Python36\libs` . (Należy wskazać folder *libs* zawierający pliki *. lib* , a *nie* folder *lib* zawierający pliki *. PR* ). |
 
     > [!Tip]
-    > Jeśli nie widzisz karty C/C++ we właściwościach projektu, jest to spowodowane tym, że projekt nie zawiera żadnych plików identyfikowanych jako pliki źródłowe C/C++. Ten stan może wystąpić w przypadku utworzenia pliku źródłowego bez rozszerzenia *c* lub *CPP* . Jeśli na przykład przypadkowo wprowadzisz `module.coo` zamiast `module.cpp` w oknie dialogowym Nowy element, program Visual Studio utworzy plik, ale nie ustawi typu pliku na "C/C + Code", co oznacza, że aktywuje kartę właściwości C/C++. Taka niepodzielna identyfikacja pozostaje w przypadku, nawet jeśli zmieniono nazwę pliku na `.cpp` . Aby prawidłowo ustawić typ pliku, kliknij prawym przyciskiem myszy plik w **Eksplorator rozwiązań**, wybierz polecenie **Właściwości**, a następnie ustaw **Typ pliku** na **kod C/C++**.
+    > Jeśli nie widzisz karty C/C++ we właściwościach projektu, jest to spowodowane tym, że projekt nie zawiera żadnych plików identyfikowanych jako pliki źródłowe C/C++. Ten stan może wystąpić w przypadku utworzenia pliku źródłowego bez rozszerzenia *c* lub *CPP* . Jeśli na przykład przypadkowo wprowadzisz `module.coo` zamiast `module.cpp` w oknie dialogowym Nowy element, program Visual Studio utworzy plik, ale nie ustawi typu pliku na "C/C + Code", co oznacza, że aktywuje kartę właściwości C/C++. Taka niepodzielna identyfikacja pozostaje w przypadku, nawet jeśli zmieniono nazwę pliku na `.cpp` . Aby prawidłowo ustawić typ pliku, kliknij prawym przyciskiem myszy plik w **Eksplorator rozwiązań**, wybierz polecenie **Właściwości**, a następnie ustaw  **Typ pliku** na **kod C/C++**.
 
     > [!Warning]
     > Zawsze ustawiaj **C/C++**  >  **Code Generation**  >  opcję**Biblioteka środowiska uruchomieniowego** generowania kodu C/C++ na **wielowątkową bibliotekę DLL (/MD)**, nawet w przypadku konfiguracji debugowania, ponieważ to ustawienie określa, które pliki binarne języka Python nie są debugowane. W przypadku korzystania z CPython, jeśli chcesz ustawić opcję **/MDD (wielowątkowe debugowanie biblioteki dll)** , utworzenie konfiguracji **debugowania** powoduje błąd **C1189: Py_LIMITED_API jest niezgodna z Py_DEBUG, Py_TRACE_REFS i Py_REF_DEBUG**. Ponadto jeśli usuniesz `Py_LIMITED_API` (który jest wymagany z CPython, ale nie PyBind11), aby uniknąć błędu kompilacji, podczas próby zaimportowania modułu środowisko Python ulega awarii. (Awaria występuje w ramach wywołania biblioteki DLL w `PyModule_Create` sposób opisany w dalszej części, z komunikatem wyjściowym **krytycznego błędu Python: PyThreadState_Get: Brak bieżącego wątku**).
@@ -410,6 +410,6 @@ Istnieją różne metody tworzenia rozszerzeń języka Python zgodnie z opisem w
 | cffi | 2013 | [Kryptografia](https://cryptography.io/en/latest/), [PyPy](https://pypy.org/) | Łatwość integracji i zgodność PyPy. | Nowsze, mniej dojrzałe. |
 | [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Podobne do cffi przy użyciu języka C++. | Nowszy może mieć pewne problemy z programem VS 2017. |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 Ukończony przykład z tego przewodnika można znaleźć w języku [Python-Samples-vs-CPP-Extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub).

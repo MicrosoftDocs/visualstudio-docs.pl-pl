@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetEELocalObject | Dokumenty firmy Microsoft
+title: 'IDebugSettingsCallback2:: GetEELocalObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fc205392f325a014bfe07b02b64cd8b0050ce079
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720070"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
-Pobiera obiekt lokalny oceniający wyrażenie, podana nazwą metryki.
+Pobiera obiekt lokalny ewaluatora wyrażeń, używając nazwy metryki.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,19 +45,19 @@ private int GetEELocalObject(
 
 ## <a name="parameters"></a>Parametry
 `guidLang`\
-[w] Unikatowy identyfikator języka programowania.
+podczas Unikatowy identyfikator języka programowania.
 
 `guidVendor`\
-[w] Unikatowy identyfikator dostawcy.
+podczas Unikatowy identyfikator dostawcy.
 
 `pszMetric`\
-[w] Nazwa metryki.
+podczas Nazwa metryki.
 
 `ppUnk`\
-[na zewnątrz] Zwraca obiekt lokalny oceniającego wyrażenie.
+określoną Zwraca obiekt lokalny ewaluatora wyrażeń.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

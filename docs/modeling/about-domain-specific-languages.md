@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597272"
 ---
 # <a name="about-domain-specific-languages"></a>Języki specyficzne dla domeny — informacje
 
-W przeciwieństwie do języka ogólnego przeznaczenia, takiego C# jak lub UML, język specyficzny dla domeny (DSL) jest przeznaczony do ekspresowych instrukcji w konkretnym obszarze problemu lub w domenie.
+W przeciwieństwie do języka ogólnego przeznaczenia, takiego jak C# lub UML, język specyficzny dla domeny (DSL) jest przeznaczony do ekspresowych instrukcji w konkretnym obszarze problemu lub w domenie.
 
 Dobrze znane językami DSL obejmują wyrażenia regularne i SQL. Każdy DSL jest znacznie lepszy niż język ogólnego przeznaczenia do opisywania operacji na ciągach tekstowych lub w bazie danych, ale znacznie gorszy dla opisywania pomysłów, które są poza własnym zakresem. Poszczególne branże mają także własne językami DSL. Na przykład w branży telekomunikacyjnej Języki opisu wywołań są szeroko używane do określenia sekwencji stanów w wywołaniu telefonicznym, a w branży podróży samolotem standardowa linia DSL jest używana do opisywania ksiąg lotów.
 
@@ -52,7 +52,7 @@ Można także definiować polecenia menu i inne narzędzia, które ułatwiają u
 
 Zazwyczaj język specyficzny dla domeny jest tworzony, gdy zespół programistyczny ma pisać podobny kod dla kilku produktów. Na przykład firma wyspecjalizowana w systemach obsługi bagażu może zdefiniować Śledzenie bagażu DSL, z którego mogą generować kod dla każdej instalacji. Korzyści wynikające z używania DSL są zrozumiałe dla klientów, że kod wygenerowany z niego jest niezawodny i że system może być szybko aktualizowany w przypadku zmiany wymagań klientów.
 
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] pozwala utworzyć język specyficzny dla domeny, który ma własny projektant graficzny i swój własny zapis do diagramu, a następnie użyć języka do wygenerowania odpowiedniego kodu źródłowego dla każdego projektu.
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] umożliwia utworzenie języka specyficznego dla domeny z własnym projektantem graficznym i własną notacją diagramu, a następnie użycie tego języka do wygenerowania odpowiedniego kodu źródłowego dla każdego projektu.
 
 ## <a name="domain-specific-development"></a>Programowanie specyficzne dla domeny
 
@@ -74,23 +74,23 @@ Graficzny język specyficzny dla domeny musi zawierać następujące funkcje:
 
 ### <a name="notation"></a>Notacja
 
-Język specyficzny dla domeny musi mieć dostatecznie mały zestaw elementów, który można łatwo definiować i rozszerzać w celu reprezentowania konstrukcji specyficznych dla domeny. Notacja składa się z kształtów, które reprezentują elementy i łączniki, które reprezentują relacje między elementami na graficznym diagramie. W [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]kształty mogą być rozszerzane i udoskonalane, aby reprezentować elementy języka specyficznego dla domeny.
+Język specyficzny dla domeny musi mieć dostatecznie mały zestaw elementów, który można łatwo definiować i rozszerzać w celu reprezentowania konstrukcji specyficznych dla domeny. Notacja składa się z kształtów, które reprezentują elementy i łączniki, które reprezentują relacje między elementami na graficznym diagramie. W programie [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] kształty mogą być rozszerzane i udoskonalane, aby reprezentować elementy języka specyficznego dla domeny.
 
-### <a name="domain-model"></a>Domain Model
+### <a name="domain-model"></a>Model domeny
 
 Język specyficzny dla domeny musi łączyć zestaw elementów i relacje między nimi w spójną gramatykę. Należy również określić, czy kombinacje elementów i relacji są prawidłowe. Na przykład języki programowania zazwyczaj uniemożliwiają Dziedziczenie cykliczne, w którym jedna klasa jest pochodną drugiej klasy, a druga Klasa pochodzi od pierwszej klasy. Ograniczenia mogą również służyć do wyrażenia logiki biznesowej, na przykład jedna osoba nie może być zależna od siebie. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] używa ograniczeń do wyrażania rodzajów ograniczeń, których wymagają większość języków specyficznych dla domeny.
 
 ### <a name="artifact-generation"></a>Generowanie artefaktu
 
-Jednym z głównych zastosowań języka specyficznego dla domeny jest generowanie artefaktu, na przykład kod źródłowy, plik XML lub inne użyteczne dane. Zwykle zmiana w modelu oznacza zmianę w artefaktie. Za pomocą [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] można generować artefakty i generować je ponownie po zmianie modelu.
+Jednym z głównych zastosowań języka specyficznego dla domeny jest generowanie artefaktu, na przykład kod źródłowy, plik XML lub inne użyteczne dane. Zwykle zmiana w modelu oznacza zmianę w artefaktie. Za pomocą [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] programu można generować artefakty i generować je ponownie po zmianie modelu.
 
 ### <a name="serialization"></a>Serializacja
 
-Język specyficzny dla domeny musi zostać utrwalony w niektórych formularzach, które można edytować, zapisać, zamknąć i ponownie załadować. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] korzysta z formatu XML, który pozwala definiować i dostosowywać sposób serializacji lub utrwalania języka specyficznego dla domeny.
+Język specyficzny dla domeny musi zostać utrwalony w niektórych formularzach, które można edytować, zapisać, zamknąć i ponownie załadować. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Program korzysta z formatu XML, który pozwala definiować i dostosowywać sposób serializacji lub utrwalania języka specyficznego dla domeny.
 
 ### <a name="integration-with-visual-studio"></a>Integracja z programem Visual Studio
 
-Ponieważ [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] jest hostowana w programie Visual Studio, rozszerza wiele okien i kontrolek programu Visual Studio. Umożliwia również dostosowanie zachowania poleceń menu, elementów przybornika i innych elementów interfejsu użytkownika.
+Ponieważ usługa [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] jest hostowana w programie Visual Studio, rozszerza wiele okien i kontrolek programu Visual Studio. Umożliwia również dostosowanie zachowania poleceń menu, elementów przybornika i innych elementów interfejsu użytkownika.
 
 Możesz również utworzyć modelową kartę magistrali dla języka specyficznego dla domeny. Ta karta umożliwia odwołuje się do modelu i elementów w ramach modelu i pozwala napisać kod, który może uzyskać dostęp do wystąpienia DSL i zaktualizować go. Korzystając z zaawansowanego mechanizmu magistrali modelu, można napisać rozszerzenia programu Visual Studio, które działają z wieloma modelami. Możesz również pisać aplikacje autonomiczne, które pracują z modelami. Aby uzyskać więcej informacji, zobacz [integrowanie modeli za pomocą programu Visual Studio ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 

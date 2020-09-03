@@ -1,5 +1,5 @@
 ---
-title: Zadanie błędu | Dokumenty firmy Microsoft
+title: Błąd — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,38 +19,38 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd5dd3214c9575a34e9265c33061b024648a221c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634230"
 ---
 # <a name="error-task"></a>Error — Zadanie
 
-Zatrzymuje kompilacji i rejestruje błąd na podstawie ocenione instrukcji warunkowej.
+Kończy kompilację i rejestruje błąd na podstawie ocenianej instrukcji warunkowej.
 
 ## <a name="parameters"></a>Parametry
 
-W poniższej tabeli `Error` opisano parametry zadania.
+W poniższej tabeli opisano parametry `Error` zadania.
 
 | Parametr | Opis |
 |---------------| - |
-| `Code` | Parametr `String` opcjonalny.<br /><br /> Kod błędu do skojarzenia z błędem. |
-| `File` | Parametr `String` opcjonalny.<br /><br /> Nazwa pliku zawierającego błąd. Jeśli nie podano nazwy pliku, zostanie użyty plik zawierający zadanie Error. |
-| `HelpKeyword` | Parametr `String` opcjonalny.<br /><br /> Słowo kluczowe Pomoc, aby skojarzyć z błędem. |
-| `Text` | Parametr `String` opcjonalny.<br /><br /> Tekst błędu, który MSBuild `Condition` rejestruje, jeśli `true`parametr jest oceniany na . |
+| `Code` | Opcjonalny `String` parametr.<br /><br /> Kod błędu, który ma zostać skojarzony z błędem. |
+| `File` | Opcjonalny `String` parametr.<br /><br /> Nazwa pliku, który zawiera błąd. Jeśli nie podano nazwy pliku, zostanie użyty plik zawierający zadanie błędu. |
+| `HelpKeyword` | Opcjonalny `String` parametr.<br /><br /> Słowo kluczowe pomocy do skojarzenia z błędem. |
+| `Text` | Opcjonalny `String` parametr.<br /><br /> Tekst błędu, który program MSBuild rejestruje, jeśli `Condition` parametr ma wartość `true` . |
 
 ## <a name="remarks"></a>Uwagi
 
-Zadanie `Error` umożliwia msbuild projektów do wystawiania tekstu błędu do rejestratorów i zatrzymać wykonanie kompilacji.
+`Error`Zadanie pozwala projektom MSBuild na wystawianie tekstu błędów w rejestratory i zatrzymanie wykonywania kompilacji.
 
-Jeśli `Condition` parametr ocenia `true`, kompilacja jest zatrzymana i rejestrowany jest błąd. Jeśli `Condition` parametr nie istnieje, błąd jest rejestrowany i zatrzymuje wykonywanie kompilacji. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).
+Jeśli `Condition` parametr ma wartość `true` , kompilacja zostaje zatrzymana i zostanie zarejestrowany błąd. Jeśli `Condition` parametr nie istnieje, ten błąd jest rejestrowany i wykonywanie kompilacji zostanie zatrzymane. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).
 
-Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
+Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład kodu sprawdza, czy wszystkie wymagane właściwości są ustawione. Jeśli nie są ustawione, projekt wywołuje zdarzenie błędu i rejestruje `Text` wartość parametru `Error` zadania.
+Poniższy przykład kodu sprawdza, czy są ustawione wszystkie wymagane właściwości. Jeśli nie są ustawione, projekt zgłasza zdarzenie błędu i rejestruje wartość `Text` parametru `Error` zadania.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -68,5 +68,5 @@ Poniższy przykład kodu sprawdza, czy wszystkie wymagane właściwości są ust
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)
 - [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)

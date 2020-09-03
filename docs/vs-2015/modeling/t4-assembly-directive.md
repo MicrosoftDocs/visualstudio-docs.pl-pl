@@ -10,21 +10,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bc0e6e7e1530abb63beabc6fa4aedd4a0fa985af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672340"
 ---
 # <a name="t4-assembly-directive"></a>Dyrektywa T4 dotycząca zestawu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablonu tekstu czasu projektowania dyrektywa `assembly` ładuje zestaw, aby kod szablonu mógł używać jego typów. Efekt jest podobny do dodawania odwołania do zestawu w projekcie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablonie tekstu czasu projektowania `assembly` dyrektywa ładuje zestaw, aby kod szablonu mógł używać jego typów. Efekt jest podobny do dodawania odwołania do zestawu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projekcie.
 
  Ogólne omówienie pisania szablonów tekstowych można znaleźć w artykule [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
-> Dyrektywa `assembly` nie jest potrzebna w szablonie tekstowym czasu wykonywania (wstępnie przetworzonym). Zamiast tego należy dodać niezbędne zestawy do **odwołań** projektu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+> Dyrektywa nie jest potrzebna `assembly` w szablonie tekstowym czasu wykonywania (wstępnie przetworzonym). Zamiast tego należy dodać niezbędne zestawy do **odwołań** do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu.
 
 ## <a name="using-the-assembly-directive"></a>Używanie dyrektywy Assembly
  Składnia tej dyrektywy jest następująca:
@@ -35,17 +35,17 @@ W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablonu tekstu czasu projektowan
 
  Nazwa zestawu powinna być jedną z następujących:
 
-- Silna nazwa zestawu w GAC, taka jak `System.Xml.dll`. Możesz również użyć długiej formy, takiej jak `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Aby uzyskać więcej informacji, zobacz <xref:System.Reflection.AssemblyName>.
+- Silna nazwa zestawu w globalnej pamięci podręcznej, na przykład `System.Xml.dll` . Możesz również użyć długiej formy, takiej jak `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"` . Aby uzyskać więcej informacji, zobacz <xref:System.Reflection.AssemblyName>.
 
 - Bezwzględna ścieżka zestawu
 
-  Składni `$(variableName)` można użyć do odwoływania się do zmiennych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], takich jak `$(SolutionDir)`, i `%VariableName%` do zmiennych środowiskowych odniesienia. Na przykład:
+  Możesz użyć `$(variableName)` składni, aby odwołać się do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zmiennych `$(SolutionDir)` środowiskowych, takich jak, i `%VariableName%` odwołań do zmiennych środowiska. Na przykład:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- Dyrektywa zestawu nie ma wpływu na przetworzony wstępnie szablon tekstowy. Zamiast tego należy uwzględnić wymagane odwołania w sekcji **References** projektu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Dyrektywa zestawu nie ma wpływu na przetworzony wstępnie szablon tekstowy. Zamiast tego należy uwzględnić wymagane odwołania w sekcji **odwołania** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Standardowe zestawy
  Następujące zestawy są ładowane automatycznie, aby nie trzeba było pisać dla nich dyrektyw zestawu:
@@ -66,10 +66,10 @@ W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablonu tekstu czasu projektowan
 
 - Zestaw zawierający DSL.
 
-## <a name="msbuild"></a>Korzystanie z właściwości projektu w MSBuild i Visual Studio
+## <a name="using-project-properties-in-both-msbuild-and-visual-studio"></a><a name="msbuild"></a> Korzystanie z właściwości projektu w MSBuild i Visual Studio
  Makra Visual Studio, takie jak $(SolutionDir), nie działają w MSBuild. Aby przekształcić szablony w komputerze kompilacji, musisz użyć właściwości projektu.
 
- Wyedytuj plik .csproj lub .vbproj, aby zdefiniować właściwość projektu. Ten przykład definiuje właściwość o nazwie `myLibFolder`:
+ Wyedytuj plik .csproj lub .vbproj, aby zdefiniować właściwość projektu. Ten przykład definiuje właściwość o nazwie `myLibFolder` :
 
 ```xml
 <!-- Define a project property, myLibFolder: -->

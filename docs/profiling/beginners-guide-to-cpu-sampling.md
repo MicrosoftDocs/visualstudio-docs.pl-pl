@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a58803747e0da411012226325c390352edf4e919
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330589"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Przewodnik po próbkowaniu procesora CPU
@@ -126,7 +126,7 @@ Za pomocą narzędzi profilowania programu Visual Studio można analizować prob
 
 ## <a name="see-also"></a>Zobacz też
 - [Eksplorator wydajności](../profiling/performance-explorer.md)
-- [Pierwsze kroki](../profiling/getting-started-with-performance-tools.md)
+- [Rozpoczęcie pracy](../profiling/getting-started-with-performance-tools.md)
 - [Omówienia](../profiling/overviews-performance-tools.md)
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)
 - [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

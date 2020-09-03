@@ -14,81 +14,81 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597311"
 ---
-# <a name="toolbox-components-tab"></a>Przybornik, karta Składniki
+# <a name="toolbox-components-tab"></a>Przybornik, karta składniki
 
-Wyświetla składniki, które można dodać do projektantów języka Visual Basic i C# dla formularzy systemu Windows. Oprócz składników platformy .NET, które są dołączone do <xref:System.Messaging.MessageQueue> programu <xref:System.Diagnostics.EventLog> Visual Studio, takich jak składniki i składniki, można dodać własne lub innych firm składników do tej karty.
+Wyświetla składniki, które można dodać do Visual Basic i projektantów C# dla Windows Forms. Oprócz składników .NET, które są dołączone do programu Visual Studio, takich jak <xref:System.Messaging.MessageQueue> <xref:System.Diagnostics.EventLog> składniki i, można dodać własne składniki programu lub innych firm do tej karty.
 
-Aby wyświetlić tę kartę, otwórz projektanta formularzy systemu Windows. Wybierz **pozycję Wyświetl** > **przybornik**. W **przyborniku**wybierz kartę **Składniki.**
+Aby wyświetlić tę kartę, Otwórz projektanta Windows Forms. Wybierz pozycję **Widok**  >  **Przybornik**. W **przyborniku**wybierz kartę **składniki** .
 
 ## <a name="components"></a>Składniki
 
-**Backgroundworker**
+**BackgroundWorker**
 
-Tworzy <xref:System.ComponentModel.BackgroundWorker> wystąpienie składnika, które można uruchomić operację na oddzielnym, dedykowanym wątku. Aby uzyskać więcej informacji, zobacz [BackgroundWorker składnik](/dotnet/framework/winforms/controls/backgroundworker-component).
+Tworzy <xref:System.ComponentModel.BackgroundWorker> wystąpienie składnika, które może uruchamiać operację w oddzielnym, dedykowanym wątku. Aby uzyskać więcej informacji, zobacz [składnik BackgroundWorker](/dotnet/framework/winforms/controls/backgroundworker-component).
 
-**Directoryentry**
+**Elementu**
 
-Tworzy <xref:System.DirectoryServices.DirectoryEntry> wystąpienie składnika, które hermetyzuje węzeł lub obiekt w hierarchii usługi Active Directory i może być używane do interakcji z dostawcami usług Usługi Active Directory.
+Tworzy <xref:System.DirectoryServices.DirectoryEntry> wystąpienie składnika, które hermetyzuje węzeł lub obiekt w hierarchii Active Directory i może służyć do współpracy z Active Directory dostawcami usług.
 
-**Directorysearcher**
+**DirectorySearcher**
 
-Tworzy <xref:System.DirectoryServices.DirectorySearcher> wystąpienie składnika, którego można używać do wykonywania kwerend względem usługi Active Directory.
+Tworzy <xref:System.DirectoryServices.DirectorySearcher> wystąpienie składnika, za pomocą którego można wykonywać zapytania dotyczące Active Directory.
 
-**Errorprovider**
+**ErrorProvider**
 
-Tworzy <xref:System.Windows.Forms.ErrorProvider> wystąpienie składnika, które wskazuje użytkownikowi końcowemu, że formant w formularzu ma błąd skojarzony z nim. Aby uzyskać więcej informacji, zobacz [ErrorProvider component](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
+Tworzy <xref:System.Windows.Forms.ErrorProvider> wystąpienie składnika, które wskazuje użytkownikowi końcowemu, że formant w formularzu ma związany z nim błąd. Aby uzyskać więcej informacji, zobacz [składnik ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
 
-**Eventlog**
+**Elemencie**
 
-Tworzy <xref:System.Diagnostics.EventLog> wystąpienie składnika, którego można używać do interakcji z systemowymi i niestandardowymi dziennikami zdarzeń, w tym zapisywania zdarzeń w dzienniku i odczytywania danych dziennika.
+Tworzy <xref:System.Diagnostics.EventLog> wystąpienie składnika, którego można użyć do współpracy z systemem i dziennikami zdarzeń niestandardowych, w tym zapisywania zdarzeń w dzienniku i odczytywania danych dziennika.
 
-**Filesystemwatcher**
+**FileSystemWatcher**
 
-Tworzy <xref:System.IO.FileSystemWatcher> wystąpienie składnika, za pomocą którego można monitorować zmiany w dowolnym katalogu lub pliku, do którego masz dostęp.
+Tworzy <xref:System.IO.FileSystemWatcher> wystąpienie składnika, którego można użyć do monitorowania zmian w dowolnym katalogu lub pliku, do którego masz dostęp.
 
-**Helpprovider**
+**HelpProvider —**
 
-Tworzy <xref:System.Windows.Forms.HelpProvider> wystąpienie składnika, które zapewnia wyskakujące okienka lub pomoc online dla formantów. Aby uzyskać więcej informacji, zobacz [Składnik HelpProvider](/dotnet/framework/winforms/controls/helpprovider-component-windows-forms).
+Tworzy <xref:System.Windows.Forms.HelpProvider> wystąpienie składnika, które zapewnia podręczną lub pomoc online dla kontrolek. Aby uzyskać więcej informacji, zobacz [składnik HelpProvider —](/dotnet/framework/winforms/controls/helpprovider-component-windows-forms).
 
-**Imagelist**
+**Obrazów**
 
-Tworzy <xref:System.Windows.Forms.ImageList> wystąpienie składnika, który udostępnia <xref:System.Drawing.Image> metody zarządzania kolekcją obiektów. Aby uzyskać więcej informacji, zobacz [ImageList składnik](/dotnet/framework/winforms/controls/imagelist-component-windows-forms).
+Tworzy <xref:System.Windows.Forms.ImageList> wystąpienie składnika, które dostarcza metody do zarządzania kolekcją <xref:System.Drawing.Image> obiektów. Aby uzyskać więcej informacji, zobacz [składnik ImageList](/dotnet/framework/winforms/controls/imagelist-component-windows-forms).
 
-**Messagequeue**
+**MessageQueue**
 
-Tworzy <xref:System.Messaging.MessageQueue> wystąpienie składnika, którego można używać do interakcji z kolejkami komunikatów, w tym do odczytywania wiadomości i zapisywania wiadomości do kolejek, przetwarzania transakcji i wykonywania zadań administracyjnych kolejek.
+Tworzy <xref:System.Messaging.MessageQueue> wystąpienie składnika, którego można użyć do współdziałania z kolejkami komunikatów, w tym odczytywanie komunikatów z i zapisywanie komunikatów w kolejkach, przetwarzanie transakcji i wykonywanie zadań administracyjnych kolejki.
 
-**Performancecounter**
+**PerformanceCounter**
 
-Tworzy <xref:System.Diagnostics.PerformanceCounter> wystąpienie składnika, którego można używać do interakcji z licznikami wydajności systemu Windows, w tym tworzenia nowych kategorii i wystąpień, odczytywania wartości z liczników i wykonywania obliczeń na danych liczników.
+Tworzy <xref:System.Diagnostics.PerformanceCounter> wystąpienie składnika, którego można użyć do współdziałania z licznikami wydajności systemu Windows, w tym tworzenie nowych kategorii i wystąpień, odczytywanie wartości z liczników i wykonywanie obliczeń na danych licznika.
 
 **Proces**
 
-Tworzy <xref:System.Diagnostics.Process> wystąpienie składnika, za pomocą którego można zatrzymać, uruchomić i manipulować danymi skojarzonymi z procesami w systemie.
+Tworzy <xref:System.Diagnostics.Process> wystąpienie składnika, którego można użyć do zatrzymywania, uruchamiania i manipulowania danymi związanymi z procesami w systemie.
 
-**Serialport**
+**Klasy SerialPort**
 
-Tworzy <xref:System.IO.Ports.SerialPort> wystąpienie składnika, które zapewnia synchroniczne i oparte na zdarzeniach we/wy, dostęp do stanów przypięcia i przerwania oraz dostęp do właściwości sterownika szeregowego.
+Tworzy <xref:System.IO.Ports.SerialPort> wystąpienie składnika, które zapewnia synchroniczną i sterowaną zdarzeniami we/wy dostęp do Stanów PIN i przerwania oraz dostęp do właściwości sterownika szeregowego.
 
-**Servicecontroller**
+**ServiceController**
 
-Tworzy <xref:System.ServiceProcess.ServiceController> wystąpienie składnika, którego można używać do manipulowania istniejącymi usługami, w tym uruchamiania i zatrzymywania usług oraz wysyłania do nich poleceń.
+Tworzy <xref:System.ServiceProcess.ServiceController> wystąpienie składnika, którego można użyć do manipulowania istniejącymi usługami, w tym uruchamiania i zatrzymywania usług i wysyłania do nich poleceń.
 
 **Czasomierz**
 
-Tworzy <xref:System.Windows.Forms.Timer> wystąpienie składnika, za pomocą którego można dodać funkcje oparte na czasie do aplikacji opartych na systemie Windows. Aby uzyskać więcej informacji, zobacz [Składnik timera](/dotnet/framework/winforms/controls/timer-component-windows-forms).
+Tworzy <xref:System.Windows.Forms.Timer> wystąpienie składnika, którego można użyć w celu dodania funkcji opartych na czasie do aplikacji opartych na systemie Windows. Aby uzyskać więcej informacji, zobacz temat [składnik czasomierza](/dotnet/framework/winforms/controls/timer-component-windows-forms).
 
 > [!NOTE]
-> Istnieje również system oparty <xref:System.Timers.Timer> na tym, który można dodać do **przybornika** To <xref:System.Timers.Timer> <xref:System.Windows.Forms.Timer> jest zoptymalizowane pod kątem aplikacji serwerowych, a formularze systemu Windows najlepiej nadają się do użycia w formularzach systemu Windows.
+> Istnieje również system <xref:System.Timers.Timer> , który można dodać do **przybornika** <xref:System.Timers.Timer> , który jest zoptymalizowany pod kątem aplikacji serwera, a Windows Forms <xref:System.Windows.Forms.Timer> jest najlepiej dostosowany do korzystania z Windows Forms.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Formanty używane w formularzach systemu Windows](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
-- [Wybieranie elementów przybornika, składników WPF](choose-toolbox-items-wpf-components.md)
+- [Kontrolki do użycia na Windows Forms](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
+- [Wybieranie elementów przybornika, składniki WPF](choose-toolbox-items-wpf-components.md)
 - [Przybornik](../../ide/reference/toolbox.md)
