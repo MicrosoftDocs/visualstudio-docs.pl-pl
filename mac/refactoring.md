@@ -1,17 +1,17 @@
 ---
 title: Refaktoryzacja kodu
 description: Poprawiaj kod przy użyciu Visual Studio dla komputerów Mac i szybkie akcje.
-author: cobey
-ms.author: cobey
-ms.date: 03/29/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 07/03/2020
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3892117e5c84a71f258d4e019105fca0a8cf9c5b
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "67691297"
+ms.locfileid: "89402595"
 ---
 # <a name="refactoring"></a>Refaktoryzacja
 
@@ -31,9 +31,9 @@ Podświetla symbol i wszystkie odwołania do niego. Po rozpoczęciu wpisywania n
 
 ![Zmiana nazwy i identyfikator](media/refactoring-renaming2.png)
 
-## <a name="quick-actions"></a>Szybkie akcje
+## <a name="quick-actions-and-refactorings"></a>Szybkie akcje i operacje refaktoryzacji
 
-Szybkie akcje umożliwiają łatwe refaktoryzację, generowanie lub modyfikowanie kodu przy użyciu jednej akcji.
+Szybkie akcje i refaktoryzacje umożliwiają łatwe refaktoryzację, generowanie lub modyfikowanie kodu przy użyciu jednej akcji.
 
 Szybkie akcje mogą służyć do:
 
@@ -55,7 +55,7 @@ Ikona wyświetlana, gdy szybka akcja jest dostępna, zawiera wskazanie typu popr
 
    ![Żarówka z przesuwaniem myszy](media/refactoring-lightbulb-hover.png)
 
-- Żarówki i śrubokręty są wyświetlane na lewym marginesie edytora po przesunięciu karetki do wiersza kodu, dla którego jest dostępna szybka akcja.
+- Żarówki i śrubokręty są wyświetlane na lewym marginesie edytora po przesunięciu karetki do wiersza kodu, dla którego jest dostępna szybka akcja lub Refaktoryzacja.
 
 - Naciśnij pozycję **Option (⌥)** + **Enter** w dowolnym miejscu w wierszu, aby wyświetlić listę dostępnych szybkich akcji i refaktoryzacji.
 

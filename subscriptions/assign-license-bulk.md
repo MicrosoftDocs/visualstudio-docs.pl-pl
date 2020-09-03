@@ -8,10 +8,10 @@ ms.date: 05/10/2020
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do wielu subskrybentów za pomocą funkcji zbiorczego dodawania lub grup Microsoft Azure Active Directory
 ms.openlocfilehash: da7ce369e1d9aaa13b0c346005914b7f64ceb780
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249616"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Przypisywanie subskrypcji wielu użytkownikom
@@ -26,7 +26,7 @@ Aby dodać dużych grup użytkowników, możesz użyć funkcji dodawania zbiorcz
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>Używanie dodatków zbiorczych do przypisywania subskrypcji
 1. Zaloguj się do portalu administracyjnego subskrypcji programu Visual Studio pod adresem <https://manage.visualstudio.com> .
 
-1. Aby jednocześnie dodać wielu subskrybentów, przejdź do karty **Zarządzanie subskrybentami** . Wybierz kartę **Dodaj** , a następnie na liście rozwijanej wybierz pozycję **Dodaj zbiorczo** .  
+1. Aby jednocześnie dodać wielu subskrybentów, przejdź do karty **Zarządzanie subskrybentami** . Wybierz kartę **Dodaj** , a następnie wybierz pozycję **Dodaj zbiorczo** na liście rozwijanej.  
 
 1. Dodawanie zbiorcze używa szablonu programu Microsoft Excel do przekazywania informacji o subskrybencie. W oknie dialogowym przekazywanie wielu subskrybentów wybierz pozycję **Pobierz** , aby pobrać szablon.
    > [!div class="mx-imgBorder"]
@@ -67,7 +67,7 @@ Aby dodać dużych grup użytkowników, możesz użyć funkcji dodawania zbiorcz
    0. Wróć do portalu Adminstration i wybierz pozycję **Dodaj**.
    0. Wybierz pozycję **Dodaj zbiorczo**.
    0. Ponieważ plik programu Excel został już zapisany, nie musisz pobierać szablonu.  Wybierz pozycję **Przeglądaj**, Znajdź zapisany plik, a następnie wybierz pozycję **Otwórz**.
-   0. Wybierz przycisk **OK**.
+   0. Wybierz pozycję **OK**.
 
 
     Po pomyślnym przekazaniu zostanie wyświetlona lista subskrybentów i komunikat z potwierdzeniem.

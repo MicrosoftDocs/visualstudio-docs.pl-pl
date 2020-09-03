@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
 ms.topic: how-to
 ms.openlocfilehash: f8452094f0059a1ffa4421d1ccd02ee244559c72
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950343"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Odinstalowywanie programu Visual Studio dla komputerów Mac
@@ -196,10 +196,10 @@ sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstal
 
 W przypadku starszych wersji należy ręcznie usunąć następujące artefakty:
 
-* Usuń aplikację skoroszyty pod adresem`"/Applications/Xamarin Workbooks.app"`
-* Usuń aplikację inspektora pod adresem`"Applications/Xamarin Inspector.app"`
-* Usuń dodatki: `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` i`"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
-* Usuń inspektora i pliki pomocnicze tutaj: `/Library/Frameworks/Xamarin.Interactive.framework` i`/Library/Frameworks/Xamarin.Inspector.framework`
+* Usuń aplikację skoroszyty pod adresem `"/Applications/Xamarin Workbooks.app"`
+* Usuń aplikację inspektora pod adresem `"Applications/Xamarin Inspector.app"`
+* Usuń dodatki: `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` i `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
+* Usuń inspektora i pliki pomocnicze tutaj: `/Library/Frameworks/Xamarin.Interactive.framework` i `/Library/Frameworks/Xamarin.Inspector.framework`
 
 ## <a name="uninstall-the-xamarin-profiler"></a>Odinstaluj Xamarin Profiler
 
@@ -220,6 +220,6 @@ rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Odinstalowywanie programu Visual Studio (w systemie Windows)](/visualstudio/install/uninstall-visual-studio)

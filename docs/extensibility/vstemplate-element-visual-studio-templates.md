@@ -1,5 +1,5 @@
 ---
-title: Element VSTemplate (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: VSTemplate, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 651e8b6dbbe11c450b105f3185e7e987bb30da9b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697865"
 ---
-# <a name="vstemplate-element-visual-studio-templates"></a>Element VSTemplate (szablony programu Visual Studio)
-Zawiera wszystkie metadane dotyczące szablonu projektu, szablonu elementu lub zestawu startowego.
+# <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate, element (szablony Visual Studio)
+Zawiera wszystkie metadane szablonu projektu, szablonu elementu lub zestawu startowego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,14 +40,14 @@ Zawiera wszystkie metadane dotyczące szablonu projektu, szablonu elementu lub z
 
 | Atrybut | Opis |
 |-----------| - |
-| `Type` | Identyfikuje szablon jako szablon projektu lub szablon elementu. Ten atrybut może mieć `Project` wartość `Item`lub . |
-| `Version` | Określa numer wersji szablonu. Szablony [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] i [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] mają `Version` wartość atrybutu `3.0.0`. |
+| `Type` | Identyfikuje szablon jako szablon projektu lub szablon elementu. Ten atrybut może mieć wartość `Project` lub `Item` . |
+| `Version` | Określa numer wersji szablonu. Szablony w [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] i [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] mają `Version` wartość atrybutu `3.0.0` . |
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Określa dane, które kategoryzują szablon i definiuje sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Określa dane, które klasyfikują szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Określa zawartość szablonu.|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Element opcjonalny.|
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|Element opcjonalny.|
@@ -56,7 +56,7 @@ Zawiera wszystkie metadane dotyczące szablonu projektu, szablonu elementu lub z
  Brak.
 
 ## <a name="remarks"></a>Uwagi
- Element `VSTemplate` jest głównym elementem plików *.vstemplate.*
+ `VSTemplate`Element jest elementem głównym plików *. vstemplate* .
 
 ## <a name="example"></a>Przykład
  W poniższym przykładzie przedstawiono metadane dla szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.

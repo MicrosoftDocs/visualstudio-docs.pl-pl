@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
 ms.openlocfilehash: fa77993892c79cf29d268aa942b8c77ccb7a2139
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183963"
 ---
 # <a name="create-a-new-project"></a>Utwórz nowy projekt
@@ -51,6 +51,6 @@ Dodanie nowego projektu przeprowadzi Cię przez proces tworzenia projektu, jak p
 
 Wybranie opcji dodania istniejącego projektu umożliwi przejrzenie istniejącego projektu na komputerze i dodanie go do rozwiązania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie rozwiązań i projektów (Visual Studio w systemie Windows)](/visualstudio/ide/creating-solutions-and-projects)

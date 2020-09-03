@@ -24,13 +24,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 701d156d5fdc23a5e98ac1de43c1882f3065171e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72728333"
 ---
-# <a name="walkthrough-debugging-a-windows-form"></a>Wskazówki: Debugowanie formatu Windows
+# <a name="walkthrough-debugging-a-windows-form"></a>Przewodnik: Debugowanie formularza Windows Forms
 Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarządzanych. Formularz systemu Windows tworzy standardową aplikację systemu Windows. Można wykonać instrukcje z tego przewodnika przy użyciu języka Visual Basic, C# lub C++.
 
  Po pierwsze, należy zamknąć wszystkie otwarte rozwiązania.
@@ -46,13 +46,13 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
 
 1. W menu **plik** wybierz polecenie **Nowy** , a następnie kliknij pozycję **projekt**.
 
-     Pojawi się okno dialogowe **Nowy projekt** .
+     Zostanie wyświetlone okno dialogowe **Nowy projekt**.
 
-2. W okienku typy projektów Otwórz **Visual Basic**, **C#wizualizację**lub węzeł **wizualny C++**  , a następnie
+2. W okienku typy projektów Otwórz węzeł **Visual Basic**, **Visual C#** lub **Visual C++** , a następnie
 
-    1. W przypadku Visual Basic lub C#wizualizacji wybierz pozycję **Windows Desktop**  > **aplikacja Windows form**.
+    1. W przypadku Visual Basic lub Visual C# wybierz pozycję **Windows Desktop**Windows  >  **form aplikacja**.
 
-    2. Dla wizualizacji C++wybierz pozycję **aplikacja klasyczna systemu Windows**.
+    2. W obszarze Visual C++ wybierz pozycję **aplikacja klasyczna systemu Windows**.
 
 3. W polu **Nazwa** Nadaj projektowi unikatową nazwę (na przykład Walkthrough_SimpleDebug).
 
@@ -124,7 +124,7 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
 
 4. W menu **Debuguj** wybierz pozycję **Windows**, następnie **Obejrzyj**i kliknij pozycję **Watch1**.
 
-5. W oknie **Watch1** kliknij pusty wiersz. W kolumnie **Nazwa** wpisz `textBox1.Text` (jeśli używasz Visual Basic lub Visual C#) lub `textBox1->Text` (Jeśli używasz C++), a następnie naciśnij klawisz ENTER.
+5. W oknie **Watch1** kliknij pusty wiersz. W kolumnie **Nazwa** wpisz `textBox1.Text` (jeśli używasz programu Visual Basic lub Visual C#) lub `textBox1->Text` (Jeśli używasz języka C++), naciśnij klawisz ENTER.
 
      W oknie **Watch1** jest wyświetlana wartość tej zmiennej w cudzysłowie:
 
@@ -175,7 +175,7 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
 
      Zostanie wyświetlone okno dialogowe **Dołącz do procesu** .
 
-4. W okienku **dostępne procesy** Znajdź nazwę procesu (Walkthrough_SimpleDebug. exe) w kolumnie **proces** i kliknij ją.
+4. W okienku **dostępne procesy** Znajdź nazwę procesu (Walkthrough_SimpleDebug.exe) w kolumnie **proces** i kliknij ją.
 
 5. Kliknij przycisk **Dołącz** .
 
@@ -183,6 +183,6 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
 
      Debuger przerywa wykonywanie formularza systemu Windows w punkcie przerwania.
 
-## <a name="see-also"></a>Zobacz także
-- [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
+## <a name="see-also"></a>Zobacz też
+- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)

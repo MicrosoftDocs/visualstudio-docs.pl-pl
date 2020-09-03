@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: f2621ab30099baae5521c8b2226f288ec1a2531b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938857"
+ms.locfileid: "89402629"
 ---
 # <a name="introduction-to-azure-functions"></a>Wprowadzenie do usługi Azure Functions
 
@@ -161,4 +161,4 @@ Jednym z ważnych ustawień może być konieczne ustawienie wartości `FUNCTIONS
 
 - Wskaźnik **rozmiaru obrazu** — ta funkcja tworzy obrazy o zmienionym rozmiarze za każdym razem, gdy obiekt BLOB zostanie dodany do kontenera. Szablon przyjmuje ścieżkę i parametry połączenia dla wyzwalacza, niewielką wartość wyjściową obrazu oraz średnią wartość wyjściową obrazu.
 
-- **Token sygnatury dostępu współdzielonego** — ta funkcja generuje token sygnatury dostępu współdzielonego dla danego kontenera usługi Azure Storage i nazwy obiektu BLOB. Oprócz nazwy funkcji ten szablon przyjmuje również właściwość Path i Connection. Właściwość Path jest ścieżką w ramach konta magazynu, który będzie monitorowany przez wyzwalacz. Konto połączenia to nazwa ustawienia aplikacji zawierającego parametry połączenia konta magazynu. Należy również ustawić **prawa dostępu** . Poziom autoryzacji kontroluje, czy funkcja wymaga klucza interfejsu API i klucza, który ma być używany; Funkcja używa klucza funkcji; Administrator używa klucza głównego. Aby uzyskać więcej informacji, zobacz [Funkcja platformy Azure w języku C# służąca do generowania przykładu tokenów SAS](https://github.com/Azure-Samples/functions-dotnet-sas-token/) .
+- **Token sygnatury dostępu współdzielonego** — ta funkcja generuje token sygnatury dostępu współdzielonego dla danego kontenera usługi Azure Storage i nazwy obiektu BLOB. Oprócz nazwy funkcji ten szablon przyjmuje również właściwość Path i Connection. Właściwość Path jest ścieżką w ramach konta magazynu, który będzie monitorowany przez wyzwalacz. Konto połączenia to nazwa ustawienia aplikacji zawierającego parametry połączenia konta magazynu. Należy również ustawić **prawa dostępu** . Poziom autoryzacji kontroluje, czy funkcja wymaga klucza interfejsu API i klucza, który ma być używany; Funkcja używa klucza funkcji; Administrator używa klucza dostępu do konta. Aby uzyskać więcej informacji, zobacz [Funkcja platformy Azure w języku C# służąca do generowania przykładu tokenów SAS](https://github.com/Azure-Samples/functions-dotnet-sas-token/) .

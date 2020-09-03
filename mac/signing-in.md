@@ -7,10 +7,10 @@ ms.date: 01/21/2020
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.topic: how-to
 ms.openlocfilehash: 86d701e50b4d9f5b8e4c9af0c736c117cd2e91be
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950532"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Zaloguj się do Visual Studio dla komputerów Mac
@@ -62,7 +62,7 @@ Aby dodać dodatkowe konta użytkowników, wybierz **konto programu Visual Studi
 
 3. Gdy skończysz, wybierz pozycję **Zapisz zmiany**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Logowanie do programu Visual Studio (w systemie Windows)](/visualstudio/ide/signing-in-to-visual-studio)
 - [Współpraca z wieloma kontami użytkowników (Visual Studio w systemie Windows)](/visualstudio/ide/work-with-multiple-user-accounts)

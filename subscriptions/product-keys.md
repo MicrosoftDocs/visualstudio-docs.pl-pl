@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dowiedz się, jak uzyskiwać klucze produktów i zarządzać nimi w subskrypcjach programu Visual Studio.
 ms.openlocfilehash: 10b09275dc1ba3d20e47c097888677e733e21ced
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183928"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Korzystanie z kluczy produktów w subskrypcjach programu Visual Studio
@@ -79,7 +79,7 @@ W zależności od produktu dostępne są różne typy kluczy.
 
 Klucz można przejąć ze strony pobierania produktu lub można wyszukać wymagany klucz na stronie [klucze produktu](https://my.visualstudio.com/productkeys) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)

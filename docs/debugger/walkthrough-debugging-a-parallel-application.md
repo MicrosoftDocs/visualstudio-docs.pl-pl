@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 84d43ede5fcca1ae76d155cb8799a61900926d7b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183850"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Przewodnik: debugowanie aplikacji równoległej w programie Visual Studio (C#, Visual Basic, C++)
@@ -104,7 +104,7 @@ W tym instruktażu pokazano, jak używać równoległych **zadań** i **równole
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-1. W menu **plik** kliknij polecenie **Zapisz wszystko**.
+1. W menu **File** kliknij pozycję **Save All**.
 
 1. W menu **kompilacja** kliknij polecenie **Kompiluj ponownie rozwiązanie**.
 
@@ -323,7 +323,7 @@ W tym instruktażu pokazano, jak używać równoległych **zadań** i **równole
 ## <a name="summary"></a>Podsumowanie
  W tym instruktażu przedstawiono okna debugera **zadań równoległych** i **stosów równoległych** . Użyj tych okien dla rzeczywistych projektów, które używają kodu wielowątkowego. Można przeanalizować kod równoległy pisany w języku C++, C# lub Visual Basic.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)

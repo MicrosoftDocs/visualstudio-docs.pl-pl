@@ -1,5 +1,5 @@
 ---
-title: Wariant kompresji tekstury BC | Dokumentacja firmy Microsoft
+title: Wariant kompresji tekstury BC | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,40 +10,40 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161699"
 ---
 # <a name="bc-texture-compression-variant"></a>Wariant kompresji tekstury BC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Umożliwia zablokowanie kompresji tekstury, które mają format pikseli, który jest odmianą B8G8R8X8, B8G8R8A8 lub R8G8B8A8.  
+Włącza kompresję blokową dla tekstury, które mają format pikseli, który jest odmianą B8G8R8X8, B8G8R8A8 lub R8G8B8A8.  
   
 ## <a name="interpretation"></a>Interpretacja  
- Formatów kompresji opartej na blokach, takich jak BC1, BC2, i BC3 zajmować znacznie mniej pamięci niż nieskompresowany formatów obrazów i w związku z tym zużywać znacznie mniej przepustowości pamięci. W porównaniu do nieskompresowanych formatu, który używa 32 bity na piksel (wcześniej znane jako DXT1) BC1 osiąga kompresji 8:1 i BC3 (wcześniej znane jako DXT5) zwiększona 4:1. Różnica między BC1 i BC3 jest BC1 nie obsługuje kanał alfa, natomiast BC3 obsługuje skompresowanego bloku kanału alfa. Pomimo współczynniki wysoką kompresję istnieje tylko drobne obniżenie jakości obrazu dla typowych tekstury. Jednak block kompresji niektórych rodzajów tekstury — na przykład tych, które mają znaczący kolor zmienność mały obszar — może mieć można zaakceptować wyniki.  
+ Formaty kompresji oparte na blokach, takie jak BC1, BC2 i BC3 zajmują znacznie mniej pamięci niż nieskompresowane formaty obrazów i w związku z tym zużywają znacznie mniejszą przepustowość pamięci. W porównaniu z nieskompresowanym formatem, który używa 32 bitów na piksel, BC1 (dawniej znany jako DXT1) osiąga 8:1 kompresji i BC3 (dawniej znany jako DXT5) osiąga 4:1. Różnica między BC1 i BC3 polega na tym, że BC1 nie obsługuje kanału alfa, podczas gdy BC3 obsługuje kanał alfa skompresowany blokowo. Pomimo wysokiego współczynnika kompresji istnieje tylko niewielkie zmniejszenie jakości obrazu dla typowych tekstur. Należy jednak zablokować kompresję niektórych rodzajów tekstur — na przykład te, które mają znaczącą odmianę koloru w niewielkim obszarze — mogą mieć nieakceptowalne wyniki.  
   
- Jeśli Twoje tekstury są odpowiednie na potrzeby kompresji opartej na blokach i nie potrzebujesz doskonała koloru, należy wziąć pod uwagę przy użyciu formatu skompresowanego bloku zmniejszenie zużycia pamięci i używanie mniejszej przepustowości.  
+ Jeśli tekstury są odpowiednie dla kompresji opartej na blokach i nie potrzebują doskonałej wierności kolorów, rozważ użycie formatu skompresowanego bloku w celu zmniejszenia użycia pamięci i zużywania mniejszej przepustowości.  
   
 ## <a name="remarks"></a>Uwagi  
- Można kompresować tekstury, używając formatu kompresji opartej na blokach na każde wywołanie `ID3DDevice::CreateTexture2D` tworząca źródłową teksturę. W szczególności tekstury są kompresowane, gdy:  
+ Tekstury są kompresowane przy użyciu formatu kompresji opartego na blokach dla każdego wywołania `ID3DDevice::CreateTexture2D` , które tworzy teksturę źródłową. W szczególnych przypadkach tekstury są kompresowane, gdy:  
   
-- `D3D11_TEXTURE2D_DESC` Obiekt przekazany w `pDesc` opisuje niezmiennych zasób programu do cieniowania; będącego:  
+- `D3D11_TEXTURE2D_DESC`Obiekt przeszedł w programie `pDesc` opisuje zmianę zasobu programu do cieniowania, czyli:  
   
-  - Element członkowski BindFlags ma tylko D3D11_BIND_SHADER_RESOURCE ustawiona jest flaga.  
+  - Element członkowski BindFlags ma tylko ustawioną flagę D3D11_BIND_SHADER_RESOURCE.  
   
-  - Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT lub D3D11_USAGE_IMMUTABLE.  
+  - Element członkowski użycia ma ustawioną wartość D3D11_USAGE_DEFAULT lub D3D11_USAGE_IMMUTABLE.  
   
-  - Element członkowski CPUAccessFlags jest równa 0 (Brak dostępu Procesora).  
+  - Element członkowski CPUAccessFlags ma wartość 0 (brak dostępu procesora).  
   
-  - Element członkowski SamplerDesc ma członków liczba równa 1 (nie próbkowanie Wygładzanie (MSAA)).  
+  - Element członkowski SamplerDesc ma ustawioną wartość 1 (bez wygładzania).  
   
-- Początkowe dane są dostarczane do wywołania `CreateTexture2D`.  
+- Początkowe dane są dostarczane do wywołania `CreateTexture2D` .  
   
-  Poniżej przedstawiono formaty obsługiwanego źródła i ich formatów skompresowanego bloku.  
+  Oto obsługiwane formaty źródłowe i ich formaty skompresowane w bloku.  
   
-|Oryginalnym formacie (od)|Format skompresowany (do)|  
+|Oryginalny format (od)|Format skompresowany (do)|  
 |------------------------------|------------------------------|  
 |`DXGI_FORMAT_B8G8R8X8_UNORM`|BC1 (dawniej DXT1)|  
 |`DXGI_FORMAT_B8G8R8X8_UNORM_SRGB`|BC1|  
@@ -55,13 +55,13 @@ Umożliwia zablokowanie kompresji tekstury, które mają format pikseli, który 
 |`DXGI_FORMAT_R8G8B8A8_UNORM_SRGB`|BC3|  
 |`DXGI_FORMAT_R8G8B8A8_TYPELESS`|BC3|  
   
- Jeśli Twoje tekstury formatu, który nie ma na liście, Tekstura nie jest modyfikowany.  
+ Jeśli tekstura ma format, którego nie ma na liście, tekstura nie jest modyfikowana.  
   
 ## <a name="restrictions-and-limitations"></a>Ograniczenia i ograniczenia  
- Czasami tekstury, które zostały utworzone z odmianą formatów obrazów B8G8R8A8 lub R8G8B8A8 faktycznie nie używaj kanał alfa, ale nie ma możliwości dla wariantu dowiedzieć się, czy jest używana w czy nie. Aby zapewnić poprawność, w przypadku, gdy jest używany kanał alfa, wariant zawsze koduje te formaty w mniej efektywnego format BC3. Możesz pomóc lepiej zrozumieć aplikacji granicę potencjalnej wydajności renderowania z wariantu przy użyciu odmianą B8G8R8X8 format obrazu, jeśli nie używasz kanał alfa, dzięki czemu wariant można użyć bardziej wydajne formatu BC1 analiza klatek grafiki.  
+ Czasami tekstury, które są tworzone z odmianą formatu obrazu B8G8R8A8 lub R8G8B8A8, nie używają kanału alfa, ale nie ma żadnego sposobu, aby określić, czy jest on używany, czy nie. Aby zachować poprawność na wypadek użycia kanału alfa, wariant zawsze koduje te formaty w formacie mniej wydajnym BC3. Możesz pomóc analiza klatek grafiki lepiej zrozumieć potencjalną wydajność renderowania aplikacji za pomocą tego wariantu przy użyciu odmiany formatu obrazu B8G8R8X8, gdy nie używasz kanału alfa, aby wariant mógł używać bardziej wydajnego formatu BC1.  
   
 ## <a name="example"></a>Przykład  
- Ten wariant bloku kompresuje tekstury w czasie wykonywania, przed wywołaniem do `CreateTexture2D`. Zalecamy takie podejście dla kodu produkcyjnego, ponieważ bez kompresji tekstury zużywać więcej miejsca na dysku i dodatkowego kroku może znacznie zwiększyć czas ładowania w swojej aplikacji, ponieważ kompresji opartej na blokach wymaga znaczących zasoby obliczeniowe do zakodowania. Zamiast tego zaleca się, można kompresować tekstury w trybie offline przy użyciu edytora obrazów lub procesor obrazów, który jest częścią potoku kompilacji. Te metody zmniejszyć wymagania dotyczące miejsca na dysku, wyeliminować środowiska wykonawczego obciążenie w swojej aplikacji i dają więcej czasu na przetwarzanie tak, aby zachować najlepszej jakości obrazu.  
+ Ten blok wariantu — kompresuje tekstury w czasie wykonywania przed wywołaniem do `CreateTexture2D` . Zalecamy stosowanie tego podejścia do kodu produkcyjnego, ponieważ nieskompresowane tekstury zużywają więcej miejsca na dysku, ponieważ dodatkowy krok może znacząco zwiększyć czas ładowania w aplikacji, ponieważ kompresja oparta na blokach wymaga znaczących zasobów obliczeniowych. Zamiast tego zalecamy kompresję tekstury w trybie offline przy użyciu edytora obrazu lub procesora obrazu, który jest częścią potoku kompilacji. Metody te zmniejszają wymagania dotyczące miejsca na dysku, eliminują obciążenia w czasie wykonywania w aplikacji i zapewniają większy czas przetwarzania, aby zachować najlepszą jakość obrazu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wariant wymiarów jednej ósmej tekstury](../debugger/half-quarter-texture-dimensions-variant.md)
+ [Wariant wymiarów tekstury połówkowej/Kwartałowej](../debugger/half-quarter-texture-dimensions-variant.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c55ce57adb5b86941b5953732d57a642eb4f943
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350839"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Platforma docelowa programu MSBuild
@@ -72,13 +72,13 @@ Struktura docelowa jest określona we `TargetFrameworkVersion` właściwości w 
 
 ## <a name="target-platform"></a>Platforma docelowa
 
- *Platformą* jest kombinacja sprzętu i oprogramowania, która definiuje określone środowisko uruchomieniowe. Na przykład
+ *Platformą* jest kombinacja sprzętu i oprogramowania, która definiuje określone środowisko uruchomieniowe. Przykład:
 
-- `x86`Określa 32-bitowy system operacyjny Windows, który działa na procesorze Intel 80x86 lub jego odpowiedniku.
+- `x86` Określa 32-bitowy system operacyjny Windows, który działa na procesorze Intel 80x86 lub jego odpowiedniku.
 
-- `x64`Określa 64-bitowy system operacyjny Windows, który działa na procesorze Intel x64 lub jest równoważny.
+- `x64` Określa 64-bitowy system operacyjny Windows, który działa na procesorze Intel x64 lub jest równoważny.
 
-- `Xbox`wyznacza platformę Microsoft Xbox 360.
+- `Xbox` wyznacza platformę Microsoft Xbox 360.
 
 *Platforma docelowa* to określona platforma, na której ma być uruchamiany projekt. Platforma docelowa jest określona we `PlatformTarget` Właściwości kompilacja w pliku projektu. Możesz zmienić platformę docelową, korzystając ze stron właściwości projektu lub **Configuration Manager** w IDE.
 
@@ -101,4 +101,4 @@ Struktura docelowa jest określona we `TargetFrameworkVersion` właściwości w 
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Wielowersyjność kodu](../msbuild/msbuild-multitargeting-overview.md)
+- [Wielowersyjności kodu](../msbuild/msbuild-multitargeting-overview.md)

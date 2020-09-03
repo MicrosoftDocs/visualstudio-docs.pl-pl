@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 463e73a989deecf90e6bbfb7e8b92409b15695a5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545733"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Tworzenie diagramów zależności z kodu
@@ -29,7 +29,7 @@ Diagram zależności umożliwia organizowanie elementów rozwiązania programu V
 
 [Wideo: Weryfikuj zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
-## <a name="create-a-dependency-diagram"></a><a name="CreateDiagram"></a>Tworzenie diagramu zależności
+## <a name="create-a-dependency-diagram"></a><a name="CreateDiagram"></a> Tworzenie diagramu zależności
 
 Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projekt modelowania.
 
@@ -78,14 +78,14 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 
 ![Diagram zależności wygenerowany na podstawie mapy kodu](media/dependency-validation-01.png)
 
-## <a name="create-layers-from-artifacts"></a><a name="CreateLayers"></a>Tworzenie warstw na podstawie artefaktów
+## <a name="create-layers-from-artifacts"></a><a name="CreateLayers"></a> Tworzenie warstw na podstawie artefaktów
  Warstwy możesz tworzyć z elementów rozwiązania Visual Studio, takich jak projekty, pliki kodu, przestrzenie nazw, klasy i metody. Powoduje to automatyczne tworzenie łączy między warstwami i elementami, uwzględniając je w procesie walidacji warstwy.
 
  Możesz również połączyć warstwy z elementami, które nie obsługują walidacji, takimi jak dokumenty programu Word lub prezentacji programu PowerPoint, tak aby można było skojarzyć warstwy ze specyfikacjami lub planami. Możesz również połączyć warstwy z plikami projektów współużytkowanymi przez wiele aplikacji, ale proces walidacji nie uwzględni warstw wyświetlanych z nazwami rodzajowymi, takimi jak „Warstwa 1” i „Warstwa 2”.
 
  Aby sprawdzić, czy połączony element obsługuje walidację, Otwórz **Eksploratora warstw** i sprawdź Właściwość **obsługuje walidację** elementu. Zobacz [Zarządzanie łączami do artefaktów](#Managing).
 
-|**Do**|**Wykonaj następujące kroki**|
+|**Działanie**|**Wykonaj następujące kroki**|
 |-|-|
 |Utworzyć warstwę dla pojedynczego artefakt|<ol><li>Przeciągnij element na diagram zależności z następujących źródeł:<br /><br /> <ul><li>**Eksplorator rozwiązań**<br /><br />         Możesz na przykład przeciągać pliki lub projekty.</li><li>Mapy kodu<br /><br />         Zapoznaj się z [zależnościami mapy w swoich rozwiązaniach](../modeling/map-dependencies-across-your-solutions.md) i [korzystaj z map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Widok klasy** lub **Przeglądarka obiektów**</li></ul><br />     Warstwy jest wyświetlana na diagramie i jest połączona z artefaktem.</li><li>Zmień nazwę warstwy, aby odzwierciedlała obowiązki skojarzonego kodu lub artefaktów.</li></ol> **Ważne:**  Przeciąganie plików binarnych do diagramu zależności nie powoduje automatycznego dodania odwołań do projektu modelowania. Musisz ręcznie dodać do projektu modelowania pliki binarne, które chcesz walidować. **Aby dodać pliki binarne do projektu modelowania** <ol><li>W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu modelowania, a następnie wybierz **Dodaj istniejący element**.</li><li>W oknie dialogowym **Dodaj istniejący element** przejdź do plików binarnych, zaznacz je, a następnie wybierz **przycisk OK**.     Pliki binarne pojawią się w projekcie modelowania.</li><li>W **Eksplorator rozwiązań**wybierz plik binarny, który został dodany, a następnie naciśnij klawisz **F4** , aby otworzyć okno **Właściwości** .</li><li>Dla każdego pliku binarnego ustaw właściwość **Akcja kompilacji** na **Sprawdź poprawność**.</li></ol>|
 |Utwórz jedną warstwę dla wszystkich zaznaczonych artefaktów|Przeciągnij wszystkie artefakty do diagramu zależności w tym samym czasie.<br /><br /> Warstw pojawi się na diagramie i będzie połączona z artefaktami.|
@@ -107,7 +107,7 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 
 - Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.
 
-## <a name="manage-links-between-layers-and-artifacts"></a><a name="Managing"></a>Zarządzanie łączami między warstwami i artefaktami
+## <a name="manage-links-between-layers-and-artifacts"></a><a name="Managing"></a> Zarządzanie łączami między warstwami i artefaktami
 
 1. Na diagramie zależności Otwórz menu skrótów dla warstwy, a następnie wybierz polecenie **Wyświetl linki**.
 
@@ -115,7 +115,7 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 
 2. Wykonaj następujące zadania, aby zarządzać tymi łączami:
 
-|**Do**|**W Eksploratorze warstwy**|
+|**Działanie**|**W Eksploratorze warstwy**|
 |-|-|
 |Usuwanie łącza między warstwą i artefaktem|Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz polecenie **Usuń**.|
 |Przenoszenie łącza z jednej warstwy na drugą|Przeciągnij łącze artefaktu do istniejącej warstwy na diagramie.<br /><br /> — lub —<br /><br /> 1. Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz polecenie **Wytnij**.<br />2. na diagramie zależności Otwórz menu skrótów dla warstwy, a następnie wybierz **Wklej**.|
@@ -123,7 +123,7 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 |Tworzenie nowej warstwy z istniejącego łącza artefaktu|Przeciągnij łącze artefaktu do pustego obszaru na diagramie.|
 |Sprawdź, czy połączony artefakt obsługuje walidację względem diagramu zależności.|Przyjrzyj się kolumnie **obsługuje walidację** dla linku artefaktu.|
 
-## <a name="reverse-engineer-existing-dependencies"></a><a name="Discovering"></a>Odtwarzanie istniejących zależności
+## <a name="reverse-engineer-existing-dependencies"></a><a name="Discovering"></a> Odtwarzanie istniejących zależności
  Zależność istnieje wszędzie tam, gdzie artefakt, który jest skojarzony z jedną warstwą zawiera odwołanie do artefaktu skojarzonego z inną warstwą. Na przykład klasa w jednej warstwie deklaruje zmienną, która zawiera klasę w innej warstwie. Możesz odtwarzać istniejące zależności dla artefaktów, które są połączone z warstwami na diagramie.
 
 > [!NOTE]
@@ -133,10 +133,10 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 
   Zazwyczaj zobaczysz niektóre zależności, które nie powinny istnieć. Możesz edytować te zależności, aby dopasować je do zamierzonego projektu.
 
-## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a>Edycja warstw i zależności w celu pokazania zamierzonego projektu
+## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a> Edycja warstw i zależności w celu pokazania zamierzonego projektu
  Aby opisać zmiany, które planujesz wprowadzić do systemu lub zamierzonej architektury, Edytuj diagram zależności:
 
-|**Do**|**Wykonaj następujące kroki**|
+|**Działanie**|**Wykonaj następujące kroki**|
 |-|-|
 |Zmień lub ogranicz kierunek zależności|Ustaw jej właściwość **Direction** .|
 |Tworzenie nowych zależności|Użyj **zależności** i **dwukierunkowych narzędzi zależności** .<br /><br /> Aby narysować wiele zależności, kliknij dwukrotnie narzędzie. Gdy skończysz, wybierz narzędzie **wskaźnik** lub naciśnij klawisz **ESC** .|
@@ -144,10 +144,10 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 |Określanie, że artefakty skojarzone z warstwą nie mogą należeć do określonych przestrzeni nazw|Wpisz przestrzenie nazw w właściwości **zabronione przestrzenie nazw** warstwy. Użyj średnika (**;**), aby oddzielić przestrzenie nazw.|
 |Określanie, że artefakty skojarzone z warstwą muszą należeć do jednej z określonych przestrzeni nazw|Wpisz przestrzeń nazw we właściwości **wymagane przestrzenie nazw** warstwy. Użyj średnika (**;**), aby oddzielić przestrzenie nazw.|
 
-## <a name="change-how-elements-appear-on-the-diagram"></a><a name="EditLayout"></a>Zmień sposób wyświetlania elementów na diagramie
+## <a name="change-how-elements-appear-on-the-diagram"></a><a name="EditLayout"></a> Zmień sposób wyświetlania elementów na diagramie
  Możesz zmieniać rozmiar, kształt, kolor i położenie warstw lub kolor zależności, edytując ich właściwości.
 
-## <a name="discover-patterns-and-dependencies-on-a-code-map"></a><a name="Codemaps"></a>Odnajdywanie wzorców i zależności na mapie kodu
+## <a name="discover-patterns-and-dependencies-on-a-code-map"></a><a name="Codemaps"></a> Odnajdywanie wzorców i zależności na mapie kodu
  Podczas tworzenia diagramów zależności można także tworzyć **mapy kodu**. Te diagramy mogą pomóc w znalezieniu wzorców i zależności podczas eksplorowania kodu. Użyj Eksplorator rozwiązań, Widok klasy lub Przeglądarka obiektów do eksplorowania zestawów, przestrzeni nazw i klas, które często są dobrze zgodne z istniejącymi warstwami. Aby uzyskać więcej informacji na temat map kodu, zobacz:
 
 - [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
@@ -156,7 +156,7 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 
 - [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Obsługa wersji dla architektury i narzędzi modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Wideo: Weryfikuj zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

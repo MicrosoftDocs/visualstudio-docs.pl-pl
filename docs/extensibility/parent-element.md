@@ -1,5 +1,5 @@
 ---
-title: Element nadrzędny | Dokumenty firmy Microsoft
+title: Element nadrzędny | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8c018505ba06762bf8426f266b24ee1835313c29
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702218"
 ---
 # <a name="parent-element"></a>Element nadrzędny
-Elementem nadrzędnym przycisku lub pola kombi może być tylko grupa. Nadrzędnym menu lub grupy może być inne menu lub grupa. W [komenda Element](../extensibility/commandplacement-element.md), ten element jest wymagany; we wszystkich innych przypadkach jest to opcjonalne. Jeśli ten element zostanie pominięty, element nadrzędny `Group_Undefined:0` zostanie dorozumiany.
+Element nadrzędny przycisku lub pola kombi może być tylko grupą. Element nadrzędny menu lub grupy może być dowolnym innym menu lub grupą. W [elemencie CommandPlacement](../extensibility/commandplacement-element.md), ten element jest wymagany; we wszystkich innych przypadkach jest to opcjonalne. Jeśli ten element zostanie pominięty, `Group_Undefined:0` zostanie implikowany element nadrzędny elementu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,8 +34,8 @@ Elementem nadrzędnym przycisku lub pola kombi może być tylko grupa. Nadrzędn
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Identyfikator GUID|Wymagany. Identyfikator GUID identyfikatora polecenia GUID/ID.|
-|id|Wymagany. Identyfikator polecenia GUID/ID.|
+|guid|Wymagany. Identyfikator GUID identyfikatora polecenia GUID/ID.|
+|identyfikator|Wymagany. Identyfikator identyfikatora polecenia GUID/ID.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak
@@ -44,10 +44,10 @@ Elementem nadrzędnym przycisku lub pola kombi może być tylko grupa. Nadrzędn
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element CommandTable](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia, które VSPackage zapewnia zintegrowanemu środowisku programistycznemu (IDE). Na przykład elementy menu, menu, paski narzędzi i pola kombi.|
-|[Element przycisków](../extensibility/buttons-element.md)|Elementy [elementu przycisku](../extensibility/button-element.md) grupy.|
-|[Element Menu](../extensibility/menus-element.md)|Definiuje wszystkie menu, które implementuje VSPackage.|
-|[Element Grupy](../extensibility/groups-element.md)|Zawiera wpisy definiujące grupy poleceń programu VSPackage.|
+|[Element polecenia](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia, które pakietu VSPackage zapewnia zintegrowane środowisko programistyczne (IDE). Na przykład elementy menu, menu, paski narzędzi i pola kombi.|
+|[Element Buttons](../extensibility/buttons-element.md)|Grupuje elementy [elementu Button](../extensibility/button-element.md) .|
+|[Element menu](../extensibility/menus-element.md)|Definiuje wszystkie menu, które implementuje pakietu VSPackage.|
+|[Groups, element](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy poleceń elementu pakietu VSPackage.|
 
 ## <a name="see-also"></a>Zobacz też
-- [Pliki tabeli poleceń programu Visual Studio (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

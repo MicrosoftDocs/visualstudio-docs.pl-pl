@@ -1,5 +1,5 @@
 ---
-title: Atrybuty warunkowe schematu VSCT XML | Dokumenty firmy Microsoft
+title: Atrybuty warunkowe schematu XML VSCT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,30 +12,30 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f2b1fb3ee1b2cd396f25ec5591a585f8d87648d0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697947"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Atrybuty warunkowe schematu XML VSCT
-Atrybuty warunkowe można zastosować do wszystkich list i elementów. Operatory logiczne i wyrażenia rozszerzające symbol oceniają wartość true lub false. Jeśli true, skojarzonej listy lub elementu jest uwzględniony w wynikowywyjąć.
+Można zastosować atrybuty warunkowe do wszystkich list i elementów. Operatory logiczne i wyrażenia rozszerzania symboli mają wartość PRAWDA lub FAŁSZ. W przypadku wartości true skojarzona lista lub element zostanie uwzględniony w wynikowym wyjściu.
 
- Można przetestować rozszerzenia tokenu względem innych rozszerzeń tokenu lub stałych. Funkcja `Defined()` sprawdza, czy określona nazwa została zdefiniowana, nawet jeśli nie ma wartości.
+ Można testować rozszerzenia tokenów względem innych rozszerzeń lub stałych tokenów. Funkcja `Defined()` sprawdza, czy określona nazwa została zdefiniowana, nawet jeśli nie ma wartości.
 
- Gdy Condition atrybut jest stosowany do listy, warunek jest stosowany do każdego elementu podrzędnego na liście. Jeśli element podrzędny sam zawiera Condition atrybut, a następnie jego warunek jest łączony z wyrażeniem nadrzędnym przez operację AND.
+ Gdy atrybut Condition jest stosowany do listy, warunek jest stosowany do każdego elementu podrzędnego na liście. Jeśli element podrzędny zawiera atrybut Condition, jego warunek jest połączony z wyrażeniem nadrzędnym przez operację i.
 
- Wartości 1, "1" i "true" są oceniane jako prawdziwe, a 0, "0" i "false" są oceniane jako false.
+ Wartości 1, "1" i "true" są oceniane jako prawdziwe, a 0, "0" i "false" są oceniane jako FAŁSZ.
 
 ## <a name="operators"></a>Operatory
- Następujące operatory służy do oceny wyrażeń warunkowych.
+ Aby obliczyć wyrażenia warunkowe, użyj następujących operatorów.
 
 |Operator|Definicja|
 |--------------|----------------|
 |(,)|Grupowanie|
 |!|Logiczne NOT|
-|\<, >, \<=, >=, ==, !=|Relacja i równość|
-|i|Wartość logiczna|
+|\<, >, \<=, >=, ==, !=|Relacyjne i równość|
+|oraz|Wartość logiczna|
 |lub|Wartość logiczna|
 
 ## <a name="examples"></a>Przykłady
@@ -70,4 +70,4 @@ and !Defined(DEBUG)">
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Tabela poleceń programu Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Tabela poleceń programu Visual Studio (. Vsct) — pliki](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,5 +1,5 @@
 ---
-title: Wybierz punkty przerwania, okno dialogowe | Dokumentacja firmy Microsoft
+title: Okno dialogowe Wybieranie punktów przerwania | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,25 +26,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5977eb6bad9063e1ef08502cac53159a37c27151
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161625"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Wybierz punkty przerwania — okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Wybierz punkty przerwania** zostanie otwarte okno dialogowe, gdy użytkownik próbuje ustawić punkt przerwania z niejednoznaczne wejścia w **nowego punktu przerwania** okno dialogowe. Typowym przykładem niejednoznacznego wejścia jest nazwa funkcji przeładowanej.  
+Okno dialogowe **Wybieranie punktów przerwania** zostanie otwarte podczas próby ustawienia punktu przerwania z niejednoznacznych danych wejściowych w oknie dialogowym **nowy punkt przerwania** . Typowym przykładem niejednoznacznych danych wejściowych jest przeciążona nazwa funkcji.  
   
  **Punkty przerwania**  
- Wskazuje możliwe punkty przerwania, które mogą być ustawione na podstawie niejednoznaczne dane wejściowe. Można wybrać jeden lub więcej punktów przerwania do ustawienia.  
+ Wyświetla listę możliwych punktów przerwania, które można ustawić w oparciu o niejednoznaczne dane wejściowe. Można wybrać co najmniej jeden punkt przerwania do ustawienia.  
   
- **Wszystkie**  
- Zaznacza wszystkie punkty przerwania, wymienione w **punktów przerwania** pole.  
+ **Wszystko**  
+ Wybiera wszystkie punkty przerwania wymienione w polu **punkty przerwania** .  
   
  **Brak**  
- Czyści wszystkie punkty przerwania, wymienione w **punktów przerwania** pole.  
+ Czyści wszystkie punkty przerwania wymienione w polu **punkty przerwania** .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie punktów przerwania](../debugger/using-breakpoints.md)

@@ -1,18 +1,18 @@
 ---
 title: Wprowadzenie do usługi Azure Functions
 description: Korzystanie z usługi Azure Functions w Visual Studio dla komputerów Mac.
-author: sayedihashimi
-ms.author: sayedha
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 600c4a21b6c9db8a6adb14e8fc96092f1782339f
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 586d03e88ba3a2523dde00a6826980830ad54fbc
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938654"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402320"
 ---
 # <a name="introduction-to-azure-functions"></a>Wprowadzenie do usługi Azure Functions
 
@@ -95,10 +95,10 @@ Korzystając z powyższej procedury, można dodać więcej funkcji do projektu a
 
 ## <a name="publish-to-azure"></a>Publikowanie na platformie Azure
 
-1. Kliknij prawym przyciskiem myszy nazwę projektu i wybierz opcję **publikuj > publikowanie na platformie Azure**: ![ Publikowanie w usłudze Azure — opcja menu](media/azure-functions-image5.png)
+1. Kliknij prawym przyciskiem myszy nazwę projektu i wybierz opcję **publikuj > publikowanie na platformie Azure**:  ![ Publikowanie w usłudze Azure — opcja menu](media/azure-functions-image5.png)
 2. Jeśli masz już połączenie z kontem platformy Azure w celu Visual Studio dla komputerów Mac zostanie wyświetlona lista dostępnych usług App Services. Jeśli użytkownik nie zalogował się, zostanie wyświetlony odpowiedni monit.
 3. W oknie dialogowym **Publikowanie w Azure App Service** możesz wybrać istniejącą usługę App Service lub utworzyć nową, klikając przycisk **Nowy**.
-4. W oknie dialogowym **Tworzenie nowego App Service** wprowadź ustawienia: ![ Publikowanie w usłudze Azure — opcja menu](media/azure-functions-image7.png)
+4. W oknie dialogowym **Tworzenie nowego App Service** wprowadź ustawienia:  ![ Publikowanie w usłudze Azure — opcja menu](media/azure-functions-image7.png)
 
     |Ustawienie  |Opis  |
     |---------|---------|
@@ -159,4 +159,4 @@ Jednym z ważnych ustawień może być konieczne ustawienie wartości `FUNCTIONS
 
 - Wskaźnik **rozmiaru obrazu** — ta funkcja tworzy obrazy o zmienionym rozmiarze za każdym razem, gdy obiekt BLOB zostanie dodany do kontenera. Szablon przyjmuje ścieżkę i parametry połączenia dla wyzwalacza, niewielką wartość wyjściową obrazu oraz średnią wartość wyjściową obrazu.
 
-- **Token sygnatury dostępu współdzielonego** — ta funkcja generuje token sygnatury dostępu współdzielonego dla danego kontenera usługi Azure Storage i nazwy obiektu BLOB. Oprócz nazwy funkcji ten szablon przyjmuje również właściwość Path i Connection. Właściwość Path jest ścieżką w ramach konta magazynu, który będzie monitorowany przez wyzwalacz. Konto połączenia to nazwa ustawienia aplikacji zawierającego parametry połączenia konta magazynu. Należy również ustawić **prawa dostępu** . Poziom autoryzacji kontroluje, czy funkcja wymaga klucza interfejsu API i klucza, który ma być używany; Funkcja używa klucza funkcji; Administrator używa klucza głównego. Aby uzyskać więcej informacji, zobacz [Funkcja platformy Azure w języku C# służąca do generowania przykładu tokenów SAS](https://github.com/Azure-Samples/functions-dotnet-sas-token/) .
+- **Token sygnatury dostępu współdzielonego** — ta funkcja generuje token sygnatury dostępu współdzielonego dla danego kontenera usługi Azure Storage i nazwy obiektu BLOB. Oprócz nazwy funkcji ten szablon przyjmuje również właściwość Path i Connection. Właściwość Path jest ścieżką w ramach konta magazynu, który będzie monitorowany przez wyzwalacz. Konto połączenia to nazwa ustawienia aplikacji zawierającego parametry połączenia konta magazynu. Należy również ustawić **prawa dostępu** . Poziom autoryzacji kontroluje, czy funkcja wymaga klucza interfejsu API i klucza, który ma być używany; Funkcja używa klucza funkcji; Administrator używa klucza dostępu do konta. Aby uzyskać więcej informacji, zobacz [Funkcja platformy Azure w języku C# służąca do generowania przykładu tokenów SAS](https://github.com/Azure-Samples/functions-dotnet-sas-token/) .

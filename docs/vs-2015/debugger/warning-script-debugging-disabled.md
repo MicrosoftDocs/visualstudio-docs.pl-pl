@@ -1,5 +1,5 @@
 ---
-title: 'Ostrzeżenie: Debugowanie skryptu wyłączone | Dokumentacja firmy Microsoft'
+title: 'Ostrzeżenie: debugowanie skryptu wyłączone | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,34 +17,34 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 36065120dc636f0004f0e00d8b17a0059a680723
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161373"
 ---
-# <a name="warning-script-debugging-disabled"></a>Ostrzeżenie: Debugowanie skryptów wyłączone
+# <a name="warning-script-debugging-disabled"></a>Ostrzeżenie: debugowanie skryptu wyłączone
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Debugowanie skryptów jest obecnie wyłączone w programie Internet Explorer  
   
- Ostrzeżenie to pojawia się podczas próby debugowania skryptu bez włączania debugowania skryptu w programie Internet Explorer. Ze względów bezpieczeństwa program Internet Explorer wyłącza debugowanie skryptu domyślnie.  
+ To ostrzeżenie występuje podczas próby debugowania skryptu bez włączania debugowania skryptów w programie Internet Explorer. Ze względów bezpieczeństwa program Internet Explorer domyślnie wyłącza debugowanie skryptów.  
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Aby włączyć debugowanie skryptów w programie Internet Explorer  
   
-1. W programie Internet Explorer **narzędzia** menu, wybierz **Opcje internetowe**.  
+1. W menu **Narzędzia** programu Internet Explorer wybierz pozycję **Opcje internetowe**.  
   
 2. W oknie dialogowym **Opcje internetowe** kliknij kartę **Zaawansowane** .  
   
-3. Na **zaawansowane** kartę, Szukaj w **ustawienia** polu **przeglądania** kategorii.  
+3. Na karcie **Zaawansowane** poszukaj w oknie **Ustawienia** , **przeglądanie** kategorii.  
   
-4. Wyczyść **Wyłącz debugowanie skryptu (Internet Explorer)** .  
+4. Wyczyść pole **Wyłącz debugowanie skryptów (Internet Explorer)**.  
   
 5. Kliknij przycisk **OK**.  
   
-6. Zamknij i ponownie uruchom program Internet Explorer.  
+6. Zamknij i uruchom ponownie program Internet Explorer.  
   
-     Teraz będzie obowiązywać do nowych ustawień.  
+     Nowe ustawienia będą obowiązywać.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Dołączanie do skryptu](../debugger/how-to-attach-to-script.md)
+ [Instrukcje: dołączanie do skryptu](../debugger/how-to-attach-to-script.md)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1f5aaa106e00f9b10eb88892bcc978b92a01c79
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545694"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Porady: ograniczenie bieżącego wyboru i uzyskiwanie dostępu do niego
@@ -36,10 +36,10 @@ W zależności od polecenia program obsługi poleceń może potrzebować wyboru 
     |Metoda <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>|Zwraca `true` Jeśli diagram został wybrany w projektancie modeli; w przeciwnym razie `false` .|
     |Metoda <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A>|Zwraca `true` w przypadku wybrania dokładnie jednego elementu w projektancie modeli; w przeciwnym razie `false` .|
     |Metoda <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>|Zwraca `true` w przypadku wybrania dokładnie jednego elementu w aktywnym oknie; w przeciwnym razie `false` .|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>wartość|Pobiera kolekcję tylko do odczytu elementów wybranych w projektancie modeli.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>wartość|Pobiera kolekcję tylko do odczytu elementów wybranych w aktywnym oknie.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>wartość|Pobiera element podstawowy zaznaczenia w projektancie modeli.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>wartość|Pobiera element podstawowy zaznaczenia w aktywnym oknie.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> wartość|Pobiera kolekcję tylko do odczytu elementów wybranych w projektancie modeli.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> wartość|Pobiera kolekcję tylko do odczytu elementów wybranych w aktywnym oknie.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> wartość|Pobiera element podstawowy zaznaczenia w projektancie modeli.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> wartość|Pobiera element podstawowy zaznaczenia w aktywnym oknie.|
 
 2. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A>Właściwość <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> klasy zapewnia dostęp do <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> obiektu, który reprezentuje okno projektanta modelu i zapewnia dodatkowy dostęp do wybranych elementów w projektancie modeli.
 
@@ -209,7 +209,7 @@ namespace CompanyName.ProductName.GroupingDsl
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>
 - <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage>

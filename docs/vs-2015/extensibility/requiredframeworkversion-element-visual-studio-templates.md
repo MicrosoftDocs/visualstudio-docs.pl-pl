@@ -1,5 +1,5 @@
 ---
-title: RequiredFrameworkVersion, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: RequiredFrameworkVersion, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,20 +12,20 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ce312d7951f4c1be720604c006f9afcd63f364d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163656"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Określa minimalną wersję systemu .NET Framework, wymagane przez szablon. Hierarchia schematu.  
+Określa minimalną wersję .NET Framework wymaganą przez szablon. Hierarchia schematu.  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<RequiredFrameworkVersion >  
+ \<RequiredFrameworkVersion>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,17 +46,17 @@ Określa minimalną wersję systemu .NET Framework, wymagane przez szablon. Hier
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób jego wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- Tekst musi być minimalny numer wersji systemu .NET Framework, która jest wymagana dla szablonu.  
+ Tekst musi być minimalnym numerem wersji .NET Framework, który jest wymagany dla szablonu.  
   
 ## <a name="remarks"></a>Uwagi  
- `RequiredFrameworkVersion` element jest opcjonalny. Użyj tego elementu, jeśli szablon obsługuje tylko określoną wersję minimalną i nowsze wersje ewentualnej programu .NET Framework.  
+ `RequiredFrameworkVersion` jest elementem opcjonalnym. Użyj tego elementu, jeśli szablon obsługuje tylko określoną wersję minimalną i nowsze wersje, jeśli istnieją, .NET Framework.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Określanie konkretnej wersji programu .NET Framework jako docelowej](../ide/targeting-a-specific-dotnet-framework-version.md)
+ [Tworzenie zawartości dla określonej wersji programu .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)

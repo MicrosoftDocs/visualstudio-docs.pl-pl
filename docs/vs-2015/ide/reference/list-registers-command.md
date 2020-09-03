@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3476244d3044eb80dbfce3559479421b012cc5fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659498"
 ---
 # <a name="list-registers-command"></a>Lista rejestrów — Polecenie
@@ -36,7 +36,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ```
 
 ## <a name="switches"></a>Przełączniki
- /Display [{`register`&#124; `registerGroup`}...] Wyświetla wartości określonego `register` lub `registerGroup`. Jeśli nie określono `register` lub `registerGroup`, zostanie wyświetlona domyślna lista rejestrów. Jeśli nie określono przełącznika, zachowanie jest takie samo. Na przykład:
+ /Display [{ `register`&#124;`registerGroup` }...] Wyświetla wartości określonego `register` lub `registerGroup` . Jeśli nie `register` `registerGroup` jest określona, zostanie wyświetlona domyślna lista rejestrów. Jeśli nie określono przełącznika, zachowanie jest takie samo. Na przykład:
 
  `Debug.ListRegisters /Display eax`
 
@@ -46,15 +46,15 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
  /List Wyświetla wszystkie grupy rejestrów na liście.
 
- /Watch [{`register`&#124; `registerGroup`}...] Dodaje do listy co najmniej jedną wartość `register` lub `registerGroup`.
+ /Watch [{ `register`&#124;`registerGroup` }...] Dodaje co najmniej jedną `register` `registerGroup` wartość do listy.
 
- /Unwatch [{`register`&#124; `registerGroup`}...] Usuwa co najmniej jedną `register` lub `registerGroup` wartości z listy.
+ /Unwatch [{ `register`&#124;`registerGroup` }...] Usuwa co najmniej jedną `register` `registerGroup` z wartości z listy.
 
 ## <a name="remarks"></a>Uwagi
- Alias `r` może być używany zamiast `Debug.ListRegisters`.
+ Alias `r` może być używany zamiast `Debug.ListRegisters` .
 
 ## <a name="example"></a>Przykład
- Ten przykład używa `r` aliasu `Debug.ListRegisters`, aby wyświetlić wartości `Flags` grupy rejestru.
+ Ten przykład używa `Debug.ListRegisters` aliasu, `r` Aby wyświetlić wartości grupy rejestru `Flags` .
 
 ```
 r /Display Flags

@@ -1,5 +1,5 @@
 ---
-title: Debugowanie przykładowego kodu HTML, CSS i JavaScript | Dokumentacja firmy Microsoft
+title: Debugowanie przykładowego kodu HTML, CSS i JavaScript | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,21 +15,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 134b4e3c5195e9008d951062ec813a939d0d4fe6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161470"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>Debugowanie przykładowego kodu HTML, CSS i JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Dotyczy systemów Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Kod w tym temacie jest przykładowy plik dla [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md). Błędy obecny zgodnie z projektem w przewodniku Szybki Start zostały rozwiązane w tej wersji kodu.  
+ Kod w tym temacie to przykładowy plik do [szybkiego startu: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md). Błędy występujące w projekcie w szybkim samouczku są rozwiązane w tej wersji kodu.  
   
 ## <a name="sample-code"></a>Przykładowy kod  
- Poniższy kod HTML jest używany w \<treści > tag w przypadku tego przewodnika Szybki Start.  
+ Następujący kod HTML jest używany w \<body> tagu w przewodniku Szybki Start.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -43,7 +43,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 </div>  
 ```  
   
- Następujące arkusze CSS pokazuje dodatki do default.css.  
+ Poniższy kod CSS pokazuje Dodatki wprowadzone do default. css.  
   
 ```css  
 #fView {  
@@ -53,7 +53,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 }  
 ```  
   
- Poniższy przykład kodu pokazuje kompletny kod JavaScript w pliku default.js. Odwołania do przestrzeni nazw WinJS, dla tego kodu znajdują się w pliku default.html szablonu.  
+ Poniższy przykład kodu pokazuje kompletny kod JavaScript w default.js. Odwołania do przestrzeni nazw WinJS dla tego kodu znajdują się w pliku default.html szablonu.  
   
 ```javascript  
 (function () {  
@@ -105,4 +105,4 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Szybki start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)

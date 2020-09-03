@@ -12,10 +12,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d495d0bf12c900d34a04a84e950b002494b7b5c3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660393"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Przykładowy projekt dotyczący tworzenia testów jednostkowych
@@ -27,10 +27,10 @@ Ten przykładowy kod jest przeznaczony do użycia w następujących przewodnikac
 
 - [Przewodnik: uruchamianie testów i wyświetlanie pokrycia kodu](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). W tym instruktażu przedstawiono sposób wyświetlania danych pokrycia kodu, które pokazują udział testowanego kodu projektu.
 
-- [Przewodnik: Używanie narzędzia testowego wiersza polecenia](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867). W tym instruktażu użyjesz narzędzia wiersza polecenia MSTest. exe, aby uruchomić testy i wyświetlić wyniki.
+- [Przewodnik: Używanie narzędzia testowego wiersza polecenia](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867). W tym instruktażu użyjesz narzędzia wiersza polecenia MSTest.exe, aby uruchamiać testy i wyświetlać wyniki.
 
 ## <a name="sample-code"></a>Przykładowy kod
- Jedynym zamierzonym błędem w tym przykładzie jest to, że w metodzie Debet "m_balance + = kwota" powinna być znak minus nie jest znakiem plus przed znakiem równości.
+ Jedyny zamierzony błąd w tym przykładzie polega na tym, że metoda debetu "m_balance + = kwota" powinna mieć znak minus nie jest znakiem plus przed znakiem równości.
 
 ```
 using System;
@@ -129,7 +129,7 @@ namespace BankAccountNS
  /* Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia opisane w niniejszym dokumencie są fikcyjne.  Żadne powiązania z rzeczywistymi firmami, organizacjami, produktami, nazwami domen, adresami e-mail, logo, osobami, miejscami lub zdarzeniami nie są zamierzone ani wywnioskowane. \*/
 
 ## <a name="working-with-the-code"></a>Praca z kodem
- Aby można było korzystać z tego kodu, należy najpierw utworzyć projekt dla niego w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Wykonaj kroki opisane w sekcji "Przygotowanie przewodnika" w [przewodniku: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+ Aby można było korzystać z tego kodu, należy najpierw utworzyć projekt dla niego w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Wykonaj kroki opisane w sekcji "Przygotowanie przewodnika" w [przewodniku: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="see-also"></a>Zobacz też
  [Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla przewodnika po kodzie zarządzanym](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) [: uruchamianie testów i wyświetlanie](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8) przewodnika dotyczącego pokrycia kodu [: korzystanie z narzędzia testowego wiersza polecenia](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)

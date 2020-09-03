@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z adnotacji SAL w celuC++ zmniejszenia wad kodu C | Microsoft Docs
+title: Korzystanie z adnotacji SAL w celu zmniejszenia wad kodu C-C + + | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -14,10 +14,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 66da17a31f6287bea810fc29fdb9c12d95cc94b2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77275415"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Korzystanie z adnotacji SAL w celu redukowanie defektów kodu C/C++
@@ -27,7 +27,7 @@ SAL to język adnotacji kodu źródłowego firmy Microsoft. Przy użyciu adnotac
   
  Artykuły w tej sekcji dokumentacji omawiają aspekty SAL, zawierają odwołania do składni SAL i dają przykłady użycia.  
   
-- [Informacje o języku SAL](../code-quality/understanding-sal.md)  
+- [Poznanie SAL](../code-quality/understanding-sal.md)  
   
      Zawiera informacje i przykłady pokazujące podstawowe adnotacje SAL.  
   
@@ -39,7 +39,7 @@ SAL to język adnotacji kodu źródłowego firmy Microsoft. Przy użyciu adnotac
   
      Wyświetla adnotacje SAL dla funkcji i zachowania funkcji.  
   
-- [Dodawanie adnotacji do struktur i klas](../code-quality/annotating-structs-and-classes.md)  
+- [Dodawanie adnotacji struktur i klas](../code-quality/annotating-structs-and-classes.md)  
   
      Wyświetla listę adnotacji SAL dla struktur i klas.  
   

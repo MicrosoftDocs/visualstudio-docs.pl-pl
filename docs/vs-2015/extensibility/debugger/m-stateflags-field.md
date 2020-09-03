@@ -1,5 +1,5 @@
 ---
-title: Pole m_stateFlags | Dokumentacja firmy Microsoft
+title: m_stateFlags pole | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 794ab8baac441fc14d41c2d30b9db4b0894e88e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149082"
 ---
-# <a name="mstateflags-field"></a>m_stateFlags, pole
+# <a name="m_stateflags-field"></a>m_stateFlags, pole
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Przechowuje informacje o bieżącym stanie <xref:System.Threading.Tasks.Task> obiektu.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Zestaw:** mscorlib (w mscorlib.dll)  
   
- Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,7 +35,7 @@ Przechowuje informacje o bieżącym stanie <xref:System.Threading.Tasks.Task> ob
 ```  
   
 ## <a name="remarks"></a>Uwagi  
- Zazwyczaj używa się <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> właściwości dostępu do tej wartości.  
+ Zazwyczaj używasz właściwości, <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> Aby uzyskać dostęp do tej wartości.  
   
  Ten element członkowski może być dowolną kombinacją następujących wartości:  
   

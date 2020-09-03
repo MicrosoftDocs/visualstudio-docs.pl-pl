@@ -1,5 +1,5 @@
 ---
-title: marker_series, klasa | Dokumentacja firmy Microsoft
+title: Klasa marker_series | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb199d74ade593d0bc8318c27bc96ffbf70e4dcf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194932"
 ---
-# <a name="markerseries-class"></a>marker_series — Klasa
+# <a name="marker_series-class"></a>marker_series — Klasa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Reprezentuje serial kanał zdarzeń generowanych przez jednego dostawcę.  
+Reprezentuje kanał szeregowy zdarzeń generowanych przez jednego dostawcę.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,25 +37,25 @@ class marker_series;
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[Konstruktor marker_series::marker_series](../profiling/marker-series-marker-series-constructor.md)|Inicjuje nowe wystąpienie klasy `marker_series` klasy.|  
-|[Destruktor marker_series::~marker_series](../profiling/marker-series-tilde-marker-series-destructor.md)|Niszczy obiekt marker_series i zwalnia wszystkie zasoby przydzielone.|  
+|[marker_series::marker_series — Konstruktor](../profiling/marker-series-marker-series-constructor.md)|Inicjuje nowe wystąpienie klasy `marker_series`.|  
+|[marker_series::~marker_series — Destruktor](../profiling/marker-series-tilde-marker-series-destructor.md)|Niszczy obiekt marker_series i zwalnia wszystkie przydzieloną zasoby.|  
   
 ### <a name="public-methods"></a>Metody publiczne  
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[Metoda marker_series::is_enabled](../profiling/marker-series-is-enabled-method.md)|Określa, czy dowolnej sesji ma włączone dostawcy.|  
-|[Metoda marker_series::write_alert](../profiling/marker-series-write-alert-method.md)|Zapisuje plik śledzenia Concurrency Visualizer alertu.|  
-|[Metoda marker_series::write_flag](../profiling/marker-series-write-flag-method.md)|Zapisuje plik śledzenia Concurrency Visualizer flagę.|  
-|[Metoda marker_series::write_message](../profiling/marker-series-write-message-method.md)|Zapisuje komunikat do pliku śledzenia w Wizualizatorze współbieżności.|  
+|[marker_series::is_enabled — Metoda](../profiling/marker-series-is-enabled-method.md)|Określa, czy dowolna sesja włączyła dostawcę.|  
+|[marker_series::write_alert — Metoda](../profiling/marker-series-write-alert-method.md)|Zapisuje alert do pliku śledzenia Concurrency Visualizer.|  
+|[marker_series::write_flag — Metoda](../profiling/marker-series-write-flag-method.md)|Zapisuje flagę w pliku śledzenia Concurrency Visualizer.|  
+|[marker_series::write_message — Metoda](../profiling/marker-series-write-message-method.md)|Zapisuje komunikat do pliku śledzenia Concurrency Visualizer.|  
   
 ## <a name="inheritance-hierarchy"></a>Hierarchia dziedziczenia  
  `marker_series`  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkersobj.h  
+ **Nagłówek:** cvmarkersobj. h  
   
- **Namespace:** CONCURRENCY::Diagnostic —  
+ **Przestrzeń nazw:** Współbieżność::d przesła  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przestrzeń nazw diagnostic](../profiling/diagnostic-namespace.md)
+ [Przestrzeń nazw diagnostyki](../profiling/diagnostic-namespace.md)

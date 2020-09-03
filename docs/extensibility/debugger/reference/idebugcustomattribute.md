@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute | Dokumenty firmy Microsoft
+title: IDebugCustomAttribute | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a31133139d0104cd29f5d0d0e760bd78ec5783fd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732677"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
-Ten interfejs reprezentuje atrybut niestandardowy i może podać nazwę, element nadrzędny i typ klasy atrybutu.
+Ten interfejs reprezentuje atrybut niestandardowy i może podawać nazwę, element nadrzędny i typ klasy atrybutu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,28 +29,28 @@ IDebugCustomAttribute : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Dostawca symbolu implementuje ten interfejs w celu obsługi atrybutów niestandardowych skojarzonych z symbolem. Zazwyczaj jest implementowany na własny obiekt.
+ Dostawca symboli implementuje ten interfejs, aby obsługiwał atrybuty niestandardowe skojarzone z symbolem. Zwykle jest ona zaimplementowana dla własnego obiektu.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Wywołanie [next](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) zwraca ten interfejs. Wywołanie [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) metoda zwraca [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) interfejsu.
+ Wywołanie [Next](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) zwraca ten interfejs. Wywołanie metody [EnumCustomAttributes —](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) zwraca interfejs [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) .
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- W poniższej tabeli `IDebugCustomAttribute`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ W poniższej tabeli przedstawiono metody `IDebugCustomAttribute` .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetParentField](../../../extensibility/debugger/reference/idebugcustomattribute-getparentfield.md)|Pobiera pole, do którego dołączony jest bieżący atrybut.|
+|[GetParentField](../../../extensibility/debugger/reference/idebugcustomattribute-getparentfield.md)|Pobiera pole, do którego jest dołączony bieżący atrybut.|
 |[GetAttributeTypeField](../../../extensibility/debugger/reference/idebugcustomattribute-getattributetypefield.md)|Pobiera typ klasy atrybutu niestandardowego.|
 |[GetName](../../../extensibility/debugger/reference/idebugcustomattribute-getname.md)|Pobiera nazwę atrybutu niestandardowego.|
-|[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|Pobiera informacje o atrybutach jako obiekt blob bajtów.|
+|[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|Pobiera informacje o atrybucie jako obiekt BLOB bajtów.|
 
 ## <a name="remarks"></a>Uwagi
- Atrybut niestandardowy jest strukturą języka C#, która dostarcza niestandardowych metadanych skojarzonych z określoną klasą lub metodą.
+ Atrybut niestandardowy to struktura języka C#, która dostarcza niestandardowe metadane skojarzone z konkretną klasą lub metodą.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: sh.h
+ Nagłówek: sh. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

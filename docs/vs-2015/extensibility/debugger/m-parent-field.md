@@ -1,5 +1,5 @@
 ---
-title: Pole m_parent | Dokumentacja firmy Microsoft
+title: m_parent pole | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e371056f367588005001b4d77b8e80a2e9cb67d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149080"
 ---
-# <a name="mparent-field"></a>m_parent, pole
+# <a name="m_parent-field"></a>m_parent, pole
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pole zapasowe dla zadania nadrzędnego <xref:System.Threading.Tasks.Task>.
+Pole zapasowe dla elementu nadrzędnego zadania <xref:System.Threading.Tasks.Task> .
 
-**Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+**Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
 **Zestaw:** mscorlib (w mscorlib.dll)
 
-Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).
+Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,6 +34,6 @@ Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu
 .field private initonly class System.Threading.Tasks.Task m_parent
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Task, klasa](../../extensibility/debugger/task-class-internal-members.md)

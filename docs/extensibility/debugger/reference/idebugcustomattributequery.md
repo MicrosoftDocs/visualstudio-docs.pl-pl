@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery | Dokumenty firmy Microsoft
+title: IDebugCustomAttributeQuery | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 598db5ad711c8b61339e188311c1a437a24d013c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732612"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
-Reprezentuje kwerendę dla atrybutów niestandardowych w metodzie lub typie.
+Reprezentuje zapytanie dla atrybutów niestandardowych metody lub typu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,12 +31,12 @@ IDebugCustomAttributeQuery : IUnknown
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|Pobiera atrybut niestandardowy, podana jego nazwa.|
-|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|Określa w określonym atrybucie niestandardowym jest zdefiniowany.|
+|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|Pobiera niestandardowy atrybut o nazwie.|
+|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|Określa, że określony atrybut niestandardowy jest zdefiniowany.|
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: Sh.h
+ Nagłówek: sh. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll

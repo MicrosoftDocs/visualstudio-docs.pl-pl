@@ -1,5 +1,5 @@
 ---
-title: Idiaenumframedata::Item — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumFrameData:: Item | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d0db365738e7c41c4a4e9f36b1942c5a64dedada
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161261"
 ---
 # <a name="idiaenumframedataitem"></a>IDiaEnumFrameData::Item
@@ -35,15 +35,15 @@ HRESULT Item ( 
 ```  
   
 #### <a name="parameters"></a>Parametry  
- indeks  
- [in] Indeks elementu [idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) obiektu do pobrania. Indeks znajduje się w zakresie od 0 do `count`-1, gdzie `count` jest zwracany przez [idiaenumframedata::get_count —](../../debugger/debug-interface-access/idiaenumframedata-get-count.md) metody.  
+ index  
+ podczas Indeks obiektu [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) do pobrania. Indeks znajduje się w zakresie od 0 do `count` -1, gdzie `count` jest zwracany przez metodę [IDiaEnumFrameData:: get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md) .  
   
- sekcja  
- [out] Zwraca [idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) obiekt reprezentujący element danych żądanego ramki.  
+ section  
+ określoną Zwraca obiekt [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) reprezentujący żądany element danych ramek.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiaenumframedata —](../../debugger/debug-interface-access/idiaenumframedata.md)   
+ [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

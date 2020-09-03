@@ -1,5 +1,5 @@
 ---
-title: Gdy punkt przerwania powiązanie lub cofnięcie | Dokumentacja firmy Microsoft
+title: Gdy punkt przerwania tworzy powiązanie lub zostaje niepowiązany | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,29 +12,29 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f1425edc2c8fc3fe8c38c133388f90b18b516b09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162163"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Powiązanie lub cofnięcie powiązania punktu przerwania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gdy nie można powiązać punkt przerwania w czasie, połączenie jest nawiązywane w przypadku [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) metody, powiązanie czas i utworzyć punkt przerwania są różne.  
+Gdy punkt przerwania nie może być powiązany w momencie wywołania metody [IDebugPendingBreakpoint2:: NOBIND](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) , czas powiązania i czas utworzenia punktu przerwania są różne.  
   
-## <a name="methods-called"></a>Metody o nazwie  
- Menedżer debugowania sesji (SDM) wywołuje następujących metod:  
+## <a name="methods-called"></a>Metody wywoływane  
+ Menedżer debugowania sesji (SDM) wywołuje następujące metody:  
   
-1. [IDebugEngine2::CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md). Zwraca DE [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md).  
+1. [IDebugEngine2:: CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md). Funkcja DE zwraca element [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md).  
   
-2. [IDebugPendingBreakpoint2::Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md).  
+2. [IDebugPendingBreakpoint2:: Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md).  
   
-3. [IDebugPendingBreakpoint2::Virtualize](../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md).  
+3. [IDebugPendingBreakpoint2:: Wirtualizacja](../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md).  
   
-4. [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) metodę i zwraca wartość S_OK. Wysyła DE [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) lub [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md).  
+4. Metoda [IDebugPendingBreakpoint2:: bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) i zwraca S_OK. Po wysłaniu elementu [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) lub [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md).  
   
-5. [IDebugBreakpointBoundEvent2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) i [IDebugBreakpointBoundEvent2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) metody, aby sprawdzić i aby uzyskać powiązane punkty przerwania.  
+5. [IDebugBreakpointBoundEvent2:: GetPendingBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) i [IDebugBreakpointBoundEvent2:: EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) metody do weryfikacji i uzyskiwania powiązanych punktów przerwania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)

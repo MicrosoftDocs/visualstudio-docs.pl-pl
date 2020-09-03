@@ -1,5 +1,5 @@
 ---
-title: CaptureCurrentFrame | Dokumentacja firmy Microsoft
+title: CaptureCurrentFrame | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2718e800e2a31eb66319259ed1e43f2ab8b084c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161630"
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rejestruje pozostałą część bieżącej ramki w pliku dziennika grafiki.  
+Przechwytuje resztę bieżącej ramki do pliku dziennika grafiki.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -28,9 +28,9 @@ void CaptureCurrentFrame();
 ```  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli inny przechwytywania jest obecnie w toku — takich jak przechwytywanie, które zostało uruchomione przez `BeginCapture` funkcji — tego przechwytywania jest zakończone i rejestrowane w dzienniku grafiki jako odrębne ramki. Natychmiast po tym dniu diagnostyki grafiki rozpoczyna się, przechwytywania w pozostałej części bieżącej ramki, który jest zarejestrowany jako odrębne ramki. Koniec bieżącej ramki jest oznaczona przez wywołanie do przedstawienia.  
+ Jeśli trwa wykonywanie innego przechwytywania, takiego jak przechwytywanie, które zostało uruchomione przez `BeginCapture` funkcję — to przechwycenie zostanie zakończone i zarejestrowane w dzienniku grafiki jako odrębna ramka. Natychmiast po wykonaniu tej czynności Diagnostyka grafiki rozpocznie przechwytywanie reszty bieżącej ramki, która jest również rejestrowana jako odrębna ramka. Zakończenie bieżącej ramki jest oznaczone przez wywołanie do prezentacji.  
   
- Aby przechwycić ramki, należy przygotować aplikacji umożliwia przechwytywanie i rejestrowanie informacji graficznych — oznacza to, musi być wywołana [Init](../debugger/init.md) za pośrednictwem wystąpienia `VsgDbg` klasy przed wywołaniem `CaptureCurrentFrame`.  
+ Aby przechwycić ramkę, należy przygotować aplikację do przechwytywania i rejestrowania informacji graficznych — to znaczy, że przed wywołaniem należy wywołać [init](../debugger/init.md) za pomocą wystąpienia `VsgDbg` klasy `CaptureCurrentFrame` .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Init](../debugger/init.md)   
