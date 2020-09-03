@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetSourceRange | Dokumenty firmy Microsoft
+title: 'IDebugDocumentContext2:: GetSourceRange — | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 782cf230c38af77da09b49f69c093e2e95bf7199
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731800"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
@@ -43,18 +43,18 @@ int GetSourceRange( 
 
 ## <a name="parameters"></a>Parametry
 `pBegPosition`\
-[w, na zewnątrz] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) wypełniona pozycją początkową. Ustaw ten argument na wartość null, jeśli te informacje nie są potrzebne.
+[in. out] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , która jest wypełniana początkową pozycją. Jeśli te informacje nie są konieczne, należy ustawić wartość null dla tego argumentu.
 
 `pEndPosition`\
-[w, na zewnątrz] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) wypełniona pozycją końcową. Ustaw ten argument na wartość null, jeśli te informacje nie są potrzebne.
+[in. out] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , która jest wypełniana pozycją końcową. Jeśli te informacje nie są konieczne, należy ustawić wartość null dla tego argumentu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Zakres źródłowy jest cały zakres kodu źródłowego, od bieżącej instrukcji z powrotem do tuż po poprzedniej instrukcji, które przyczyniły się do kodu. Zakres źródłowy jest zwykle używany do mieszania instrukcji źródłowych, w tym komentarzy, z kodem w oknie demontażu.
+ Zakres źródłowy to cały zakres kodu źródłowego od bieżącej instrukcji z powrotem do tuż po poprzedniej instrukcji, która przyczynia się do wykonania kodu. Zakres źródłowy jest zazwyczaj używany do mieszania instrukcji źródłowych, w tym komentarzy, z kodem w oknie demontażu.
 
- Aby uzyskać zakres tylko dla instrukcji kodu zawartych w tym kontekście dokumentu, wywołać [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) metody.
+ Aby uzyskać zakres dla tylko instrukcji kodu zawartych w tym kontekście dokumentu, wywołaj metodę [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7dc591451b314d5ebac10d30cc89d9498d70f96b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659266"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Wskazówki: debugowanie szablonu tekstowego uzyskującego dostęp do modelu
@@ -46,7 +46,7 @@ W przypadku modyfikowania lub dodawania szablonów tekstowych w rozwiązaniu ję
 
 2. Dodaj plik tekstowy o nazwie `DebugTest.tt` do projektu debugowania.
 
-3. Upewnij się, że właściwość **niestandardowego narzędzia** DebugTest.TT ma wartość `TextTemplatingFileGenerator`.
+3. Upewnij się, że właściwość **narzędzia niestandardowe** DebugTest.tt jest ustawiona na wartość `TextTemplatingFileGenerator` .
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Dyrektywy debugowania, które uzyskują dostęp do modelu z szablonu tekstu
  Aby można było uzyskać dostęp do modelu z instrukcji i wyrażeń w szablonie tekstowym, należy najpierw wywołać wygenerowany procesor dyrektywy. Wywołanie wygenerowanego procesora dyrektywy sprawia, że klasy w modelu są dostępne dla kodu szablonu tekstu jako właściwości. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dostępu do modeli z szablonów tekstowych](../modeling/accessing-models-from-text-templates.md).
@@ -97,11 +97,11 @@ W przypadku modyfikowania lub dodawania szablonów tekstowych w rozwiązaniu ję
 
      **Procesor o nazwie "DebuggingTestLanguageDirectiveProcessor" nie obsługuje dyrektywy o nazwie "modelRoot". Transformacja nie zostanie uruchomiona.**
 
-     W takim przypadku wywołanie dyrektywy zawiera niepoprawną nazwę dyrektywy. Określono `modelRoot` jako nazwę dyrektywy, ale poprawna nazwa dyrektywy to `DebuggingTestLanguage`.
+     W takim przypadku wywołanie dyrektywy zawiera niepoprawną nazwę dyrektywy. Określono `modelRoot` jako nazwę dyrektywy, ale poprawna nazwa dyrektywy to `DebuggingTestLanguage` .
 
 3. Kliknij dwukrotnie błąd w oknie **Lista błędów** , aby przejść do kodu.
 
-4. Aby poprawić kod, Zmień nazwę dyrektywy na `DebuggingTestLanguage`.
+4. Aby poprawić kod, Zmień nazwę dyrektywy na `DebuggingTestLanguage` .
 
      Zmiana zostanie wyróżniona.
 
@@ -161,13 +161,13 @@ W przypadku modyfikowania lub dodawania szablonów tekstowych w rozwiązaniu ję
 
      (C#)
 
-     **Kompilowanie transformacji: Microsoft. VisualStudio. TextTemplating \<GUID >. GeneratedTextTransformation "nie zawiera definicji dla elementu" ExampleModel "**
+     **Kompilowanie transformacji: Microsoft. VisualStudio. TextTemplating \<GUID> . GeneratedTextTransformation "nie zawiera definicji dla elementu" ExampleModel "**
 
      (Visual Basic)
 
-     **Kompilowanie transformacji: element "ExampleModel" nie jest członkiem elementu "Microsoft. VisualStudio. TextTemplating \<GUID >. GeneratedTextTransformation'.**
+     **Kompilowanie transformacji: element "ExampleModel" nie jest członkiem elementu "Microsoft. VisualStudio. TextTemplating \<GUID> . GeneratedTextTransformation'.**
 
-     W takim przypadku kod szablonu tekstu zawiera niepoprawną nazwę właściwości. Określono `ExampleModel` jako nazwę właściwości, ale poprawna nazwa właściwości jest `LibraryModel`. Poprawna nazwa właściwości znajduje się w parametrze dostarcza, jak pokazano w poniższym kodzie:
+     W takim przypadku kod szablonu tekstu zawiera niepoprawną nazwę właściwości. Określono `ExampleModel` jako nazwę właściwości, ale poprawna nazwa właściwości to `LibraryModel` . Poprawna nazwa właściwości znajduje się w parametrze dostarcza, jak pokazano w poniższym kodzie:
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
@@ -175,7 +175,7 @@ W przypadku modyfikowania lub dodawania szablonów tekstowych w rozwiązaniu ję
 
 3. Kliknij dwukrotnie błąd w oknie Lista błędów, aby przejść do kodu.
 
-4. Aby poprawić kod, Zmień nazwę właściwości na `LibraryModel` w kodzie szablonu tekstu.
+4. Aby poprawić kod, Zmień nazwę właściwości na `LibraryModel` wartość w kodzie szablonu tekstu.
 
      Zmiany są wyróżnione.
 

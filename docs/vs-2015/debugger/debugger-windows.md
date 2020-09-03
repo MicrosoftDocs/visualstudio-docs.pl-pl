@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1395aba0ea2f40e0df95435a340f4104c9f25d03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545629"
 ---
 # <a name="debugger-windows"></a>Okna debugera
@@ -44,7 +44,7 @@ Większość okien debugera można otworzyć podczas debugowania programu. Aby w
 |Wątki|CTRL + ALT + H|[Instrukcje: korzystanie z okna wątków](../debugger/how-to-use-the-threads-window.md)|  
 |Moduły|CTRL + ALT + U|[Instrukcje: korzystanie z okna modułów](../debugger/how-to-use-the-modules-window.md)|  
 |Procesy|CTRL + ALT + Z|[Debugowanie wątków i procesów](../debugger/debug-threads-and-processes.md)|  
-|Memory (Pamięć)|CTRL + ALT + M, (1, 2, 3, 4)|[Okno pamięci](../debugger/memory-windows.md)|  
+|Pamięć|CTRL + ALT + M, (1, 2, 3, 4)|[Okno pamięci](../debugger/memory-windows.md)|  
 |Dezasemblacji|CTRL + ALT + D|[Porady: korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md)|  
 |Liczby|CTRL + ALT + G|[Porady: korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)|  
   

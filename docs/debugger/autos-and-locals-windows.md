@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ae67fadf5d9710f2088f47617b74eeeb8212826
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350748"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspekcja zmiennych w oknach autouzupełniania i lokalnych
@@ -97,7 +97,7 @@ Ustaw punkt przerwania i Rozpocznij debugowanie. Po trafieniu punktu przerwania 
 
 ![Lokalizacja debugowania, pasek narzędzi](../debugger/media/debuglocationtoolbar.png "Lokalizacja debugowania, pasek narzędzi")
 
-## <a name="variables-in-the-autos-window-c-c-visual-basic-python"></a><a name="bkmk_whatvariables"></a>Zmienne w oknie samochody (C#, C++, Visual Basic, Python)
+## <a name="variables-in-the-autos-window-c-c-visual-basic-python"></a><a name="bkmk_whatvariables"></a> Zmienne w oknie samochody (C#, C++, Visual Basic, Python)
 
 Różne języki kodu wyświetlają różne zmienne w oknie **samochody** .
 
@@ -140,7 +140,7 @@ Różne języki kodu wyświetlają różne zmienne w oknie **samochody** .
 
     Zmienna `e` nie została zainicjowana, ponieważ wiersz `e = 5` nie został jeszcze wykonany.
 
-## <a name="view-return-values-of-method-calls"></a><a name="bkmk_returnValue"></a>Wyświetl wartości zwracane wywołań metod
+## <a name="view-return-values-of-method-calls"></a><a name="bkmk_returnValue"></a> Wyświetl wartości zwracane wywołań metod
  W kodzie .NET i C++ można sprawdzić wartości zwracane w oknie **samochody** , gdy przekroczy lub wywołaj metodę. Wyświetlanie wartości zwracanych przez wywołanie metody może być przydatne, gdy nie są one przechowywane w zmiennych lokalnych. Metoda może być używana jako parametr lub jako wartość zwracana przez inną metodę.
 
  Na przykład poniższy kod w języku C# dodaje wartości zwracane przez dwie funkcje:

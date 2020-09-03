@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c1574704f8848c16f4740189688cb1719f19623
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183720"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Zmiana wyglądu polecenia
@@ -84,7 +84,7 @@ Aby zmienić wygląd polecenia, wykonaj jedną z następujących czynności:
 
 8. W menu **Narzędzia** powinien pojawić się **Nowy tekst**. Kliknij przycisk **Nowy tekst**. Polecenie powinno teraz być wyszarzone.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183564"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Debugowanie w czasie projektowania w programie Visual Studio (C#, C++/CLI, Visual Basic, F #)
@@ -83,13 +83,13 @@ Poniższy przykład znajduje się w Visual Basic. Możesz również użyć okna 
 
 1. Otwórz stronę XAML zawierającą kontrolkę niestandardową, którą chcesz debugować.
 
-   W przypadku projektów platformy UWP przeznaczonych dla kompilacji systemu Windows 16299 lub nowszego ten krok spowoduje uruchomienie procesu *UwpSurface. exe* . W przypadku projektów WPF przeznaczonych dla systemu Windows Build 16299 lub nowszego ten krok spowoduje uruchomienie procesu *WpfSurface. exe* . W przypadku wersji WPF lub platformy UWP starszych niż kompilacja systemu Windows 16299 w tym kroku zostanie uruchomiony proces *XDesProc. exe* . 
+   W przypadku projektów platformy UWP przeznaczonych dla kompilacji systemu Windows 16299 lub nowszego ten krok uruchomi proces *UwpSurface.exe* . W przypadku projektów WPF przeznaczonych dla systemu Windows Build 16299 lub nowszego ten krok uruchomi proces *WpfSurface.exe* . W przypadku wersji WPF lub platformy UWP starszych niż kompilacja systemu Windows 16299 ten krok uruchomi proces *XDesProc.exe* . 
 
 1. Otwórz drugie wystąpienie programu Visual Studio. Nie otwieraj rozwiązania lub projektu w drugim wystąpieniu.
 
 1. W drugim wystąpieniu programu Visual Studio Otwórz menu **Debuguj** i wybierz polecenie **Dołącz do procesu...**.
 
-1. W zależności od typu projektu (zobacz poprzednie kroki), wybierz proces *UwpSurface. exe*, *WpfSurface. exe*lub *XDesProc. exe* z listy dostępnych procesów.
+1. W zależności od typu projektu (zobacz poprzednie kroki) wybierz z listy dostępnych procesów *UwpSurface.exe*, *WpfSurface.exe*lub proces *XDesProc.exe* .
 
 1. W polu **Dołącz do** w oknie dialogowym **Dołącz do procesu** wybierz odpowiedni typ kodu dla kontrolki niestandardowej, która ma być debugowana.
 
@@ -107,6 +107,6 @@ Poniższy przykład znajduje się w Visual Basic. Możesz również użyć okna 
 
 1. Debuguj kod w drugim wystąpieniu programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)

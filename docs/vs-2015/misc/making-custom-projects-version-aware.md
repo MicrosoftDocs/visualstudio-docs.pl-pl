@@ -1,5 +1,5 @@
 ---
-title: Tworzenie niestandardowych projektów rozpoznający wersje | Dokumentacja firmy Microsoft
+title: Tworzenie niestandardowych projektów z obsługą wersji | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -8,59 +8,59 @@ ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
 ms.openlocfilehash: 0b29728cffc962b5d09a5adc45f8cac2093b020a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825687"
 ---
-# <a name="making-custom-projects-version-aware"></a>Tworzenie niestandardowych projektów rozpoznający wersje
-W systemie niestandardowego projektu można zezwolić projektów tego typu są ładowane w wielu wersjach programu Visual Studio. Projekty tego typu mogą również uniemożliwić ładowanie we wcześniejszej wersji programu Visual Studio. Można również włączyć tego projektu w celu zidentyfikowania się względem nowszej wersji. w przypadku, gdy projekt wymaga naprawy, konwersji i wycofywania.  
+# <a name="making-custom-projects-version-aware"></a>Tworzenie niestandardowych projektów z obsługą wersji
+W niestandardowym systemie projektu można zezwolić na załadowanie projektów tego typu w wielu wersjach programu Visual Studio. Można również uniemożliwić ładowanie projektów tego typu we wcześniejszej wersji programu Visual Studio. Możesz również włączyć ten projekt, aby identyfikować go do nowszej wersji w przypadku, gdy projekt wymaga naprawy, konwersji lub wycofania.  
   
-## <a name="allowing-projects-to-load-in-multiple-versions"></a>Zezwolenie na obciążenia projektów w różnych wersjach  
- Można modyfikować większość projektów, które zostały utworzone w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] z dodatkiem SP1 lub nowszej, aby pracować w wielu wersji.  
+## <a name="allowing-projects-to-load-in-multiple-versions"></a>Zezwalanie na ładowanie projektów w wielu wersjach  
+ Większość projektów, które zostały utworzone w programie [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] z dodatkiem SP1 lub nowszym, można modyfikować w wielu wersjach.  
   
- Przed załadowaniem projektu programu Visual Studio wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly%2A> metodę pozwala ustalić, czy projekt może zostać uaktualniony. Jeśli projekt może zostać uaktualniony, `UpgradeProject_CheckOnly` metoda ustawia flagę powodującą nowszych wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> metodę, aby uaktualnić projekt. Ponieważ nie można uaktualnić niezgodne projektów, `UpgradeProject_CheckOnly` musisz najpierw sprawdzić zgodność projektu, zgodnie z opisem we wcześniejszej sekcji.  
+ Przed załadowaniem projektu program Visual Studio wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly%2A> metodę w celu ustalenia, czy projekt może zostać uaktualniony. Jeśli projekt można uaktualnić, `UpgradeProject_CheckOnly` Metoda ustawia flagę, która powoduje późniejsze wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> metody w celu uaktualnienia projektu. Ponieważ nie można uaktualnić niezgodnych projektów, `UpgradeProject_CheckOnly` należy najpierw sprawdzić zgodność projektu, zgodnie z opisem w poprzedniej sekcji.  
   
- Autor system projektu, implementowania `UpgradeProject_CheckOnly` (z `IVsProjectUpgradeViaFactory4` interfejsu) umożliwiają zapewnienie użytkownikom systemu projektu sprawdzenie uaktualnienia. Po otwarciu projektu, ta metoda jest wywoływana w celu ustalenia, czy projekt musi zostać naprawiony, przed ich załadowaniem. Możliwe wymagania dotyczące uaktualnienia znajduje się w `VSPUVF_REPAIRFLAGS`, i obejmują one następujące możliwości:  
+ Jesteś autorem systemu projektu, zaimplementuj `UpgradeProject_CheckOnly` (z `IVsProjectUpgradeViaFactory4` interfejsu), aby zapewnić użytkownikom systemu projektu kontrolę uaktualnienia. Gdy użytkownicy otwierają projekt, ta metoda jest wywoływana w celu ustalenia, czy projekt musi zostać naprawione przed załadowaniem. Możliwe wymagania dotyczące uaktualniania są wyliczane w programie `VSPUVF_REPAIRFLAGS` i obejmują następujące możliwości:  
   
-1. `SPUVF_PROJECT_NOREPAIR`: Wymaga nie naprawy.  
+1. `SPUVF_PROJECT_NOREPAIR`: Nie wymaga naprawy.  
   
-2. `VSPUVF_PROJECT_SAFEREPAIR`: Sprawia, że projekt niezgodny z wcześniejszej wersji bez problemów, które mogą wystąpić natrafić, za pomocą poprzedniej wersji produktu.  
+2. `VSPUVF_PROJECT_SAFEREPAIR`: Sprawia, że projekt jest zgodny ze starszą wersją bez problemów, które mogą wystąpić w poprzednich wersjach produktu.  
   
-3. `VSPUVF_PROJECT_UNSAFEREPAIR`: Sprawia, że projekt wstecznie zgodny, ale z pewne ryzyko problemów, które można spotkać w poprzednich wersjach produktu. Na przykład projektu nie będą zgodne, jeśli zależy od różnych wersji zestawu SDK.  
+3. `VSPUVF_PROJECT_UNSAFEREPAIR`: Powoduje, że projekt jest zgodny z poprzednimi wersjami, ale z pewnym ryzykiem problemów, które mogły wystąpić w poprzednich wersjach produktu. Na przykład projekt nie będzie zgodny, jeśli zależy od różnych wersji zestawu SDK.  
   
-4. `VSPUVF_PROJECT_ONEWAYUPGRADE`: Sprawia, że projekt niezgodny z wcześniejszą wersją.  
+4. `VSPUVF_PROJECT_ONEWAYUPGRADE`: Sprawia, że projekt jest niezgodny ze starszą wersją.  
   
 5. `VSPUVF_PROJECT_INCOMPATIBLE`: Wskazuje, że bieżąca wersja nie obsługuje tego projektu.  
   
-6. `VSPUVF_PROJECT_DEPRECATED`: Wskazuje, że ten projekt nie jest już obsługiwana.  
+6. `VSPUVF_PROJECT_DEPRECATED`: Wskazuje, że ten projekt nie jest już obsługiwany.  
   
 > [!NOTE]
-> Aby uniknąć nieporozumień, nie łączyć flagi uaktualniania po ich wprowadzeniu. Na przykład nie należy tworzyć niejednoznaczne stan uaktualnienia takich jak `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
+> Aby uniknąć nieporozumień, nie łącz flag uaktualniania po ich ustawieniu. Na przykład nie należy tworzyć niejednoznacznego stanu uaktualnienia, takiego jak `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED` .  
   
- Podtypy projektów może wdrożyć funkcję `UpgradeProjectFlavor_CheckOnly` z `IVsProjectFlavorUpgradeViaFactory2` interfejsu. Aby ta funkcja działa, `IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly` implementacji, o których wspomniano wcześniej, należy wywołać go. To wywołanie jest już zaimplementowany w systemie projektu podstawowego języka Visual Basic lub C#. Wpływ ta funkcja umożliwia podtypy projektów można również określić wymagania dotyczące uaktualnienia projektu, oprócz systemu podstawowego projektu, co stwierdził. Okno dialogowe zgodności zawiera najpoważniejsze z poniższych wymagań.  
+ Typy projektu mogą implementować funkcję `UpgradeProjectFlavor_CheckOnly` z `IVsProjectFlavorUpgradeViaFactory2` interfejsu. Aby ta funkcja działała, `IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly` implementacja wymieniona wcześniej musi ją wywołać. To wywołanie jest już zaimplementowane w podstawowym systemie projektu Visual Basic lub C#. Efekt tej funkcji umożliwia określenie wersji projektu, aby określić wymagania dotyczące uaktualniania projektu, a także to, co ustalił system projektu podstawowego. Okno dialogowe zgodność zawiera najważniejsze dwa wymagania.  
   
- Gdy program Visual Studio wykona sprawdzenie uaktualnienia, zapewnia rejestratora zamiast wartości NULL, tak jak w poprzednich wersjach programu Visual Studio. Rejestrator umożliwia systemy projektu i wersjach w odpowiedzi zawierają dodatkowe informacje, które mogą ułatwić zrozumienie natury zmiany, które są niezbędne do swoich projektów starsze ładują się prawidłowo. Zalecamy użycie rejestratora zawierać dodatkowe informacje, zamiast korzystać z okien dialogowych. Aby uzyskać więcej informacji, zobacz [rejestratora uaktualnienia](../misc/making-custom-projects-version-aware.md#BKMK_UpgradeLogger) w dalszej części tego tematu.  
+ Gdy program Visual Studio wykonuje sprawdzanie uaktualnienia, zamiast wartości NULL, tak jak w poprzednich wersjach programu Visual Studio, zapewnia rejestratora. Rejestrator włącza systemy i wersje projektu, aby zapewnić dodatkowe informacje, które mogą pomóc w zrozumieniu natury zmian, które są potrzebne do poprawnego załadowania starszych projektów. Zalecamy używanie rejestratora, aby uzyskać więcej informacji zamiast korzystać z okien dialogowych. Więcej informacji można znaleźć w dalszej [części tego tematu](../misc/making-custom-projects-version-aware.md#BKMK_UpgradeLogger) .  
   
- Dla implementacji zarządzane interfejsy uaktualnienia projektu są dostępne w Microsoft.VisualStudio.Shell.Interop.11.0.dll zestawu międzyoperacyjnego.  
+ W przypadku implementacji zarządzanych interfejsy uaktualniania projektu są dostępne w zestawie Microsoft.VisualStudio.Shell.Interop.11.0.dll międzyoperacyjnych.  
   
- `UpgradeProject` Metoda można określić, czy zmiany to sprawia, że może uniemożliwić projektu ładowania w poprzedniej wersji programu Visual Studio. Jeśli tak, metoda oznacza projekt jako niezgodne. Aby dowiedzieć się, jak projekt jest oznaczona jako niezgodna, zobacz [oznaczanie projektu jako niezgodny](../misc/making-custom-projects-version-aware.md#BKMK_Incompat) we wcześniejszej części tego tematu. Zaleca się, że po wyświetleniu tego okna dialogowego, oznaczasz projektu jako niezgodne przez wywołanie metody `IVsAppCompat.BreakAssetCompatibility` bezpośrednio, bez wywoływania pierwszy `IVsAppCompat.AskForUserConsentToBreakAssetCompat` metody ponieważ okno dialogowe nie musi ono być widoczne dwa razy.  
+ `UpgradeProject`Metoda może określić, czy wprowadzone zmiany uniemożliwiają załadowanie projektu w poprzedniej wersji programu Visual Studio. Jeśli tak, metoda oznacza projekt jako niezgodny. Aby zrozumieć, jak projekt jest oznaczony jako niezgodny, zobacz [oznaczanie projektu jako niezgodnego](../misc/making-custom-projects-version-aware.md#BKMK_Incompat) wcześniej w tym temacie. Zaleca się, aby po wyświetleniu tego okna dialogowego oznaczyć projekt jako niezgodny przez wywołanie metody `IVsAppCompat.BreakAssetCompatibility` bezpośrednio, zamiast wywołania metody, `IVsAppCompat.AskForUserConsentToBreakAssetCompat` ponieważ okno dialogowe nie musi być dwa razy.  
   
- Oto przykład ułatwiające podsumowanie zgodności środowisko użytkownika. Jeżeli projekt został utworzony we wcześniejszej wersji, a bieżąca wersja Określa, że wymagane jest uaktualnienie, Visual Studio Wyświetla okno dialogowe, aby poprosić użytkownika o zgodę wprowadzić zmiany. Za zgodą użytkownika, projekt jest zmodyfikowany i następnie ładowany. Jeśli rozwiązanie jest następnie zamknięty i ponownie otworzyć w starszej wersji, uaktualnić way jeden projekt będzie niezgodne i nie załadowany. W razie projekt miał tylko naprawy (a nie uaktualnienie) naprawionych projektu nadal otworzy się w obu wersjach.  
+ Oto przykład, aby ułatwić podsumowanie środowiska użytkownika dotyczącego zgodności. Jeśli projekt został utworzony we wcześniejszej wersji, a bieżąca wersja ustali, że wymagane jest uaktualnienie, program Visual Studio wyświetli okno dialogowe z poproszeniem użytkownika o zgodę na wprowadzenie zmian. Jeśli użytkownik wyrazi zgodę, projekt zostanie zmodyfikowany, a następnie załadowany. Jeśli rozwiązanie zostanie zamknięte i ponownie otwarte w starszej wersji, projekt jednokierunkowy nie będzie zgodny i nie został załadowany. Jeśli projekt wymagał tylko naprawy (zamiast uaktualnienia), naprawiony projekt nadal zostanie otwarty w obu wersjach.  
   
-## <a name="BKMK_Incompat"></a> Oznaczanie projektu jako niezgodne  
- Możesz oznaczyć projektu jako niezgodne z wcześniejszymi wersjami programu Visual Studio.  Na przykład załóżmy, że utworzono projekt, który używa funkcji .NET Framework 4.5. Ponieważ ten projekt nie może być wbudowane [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], oznacz ją jako niezgodne, aby zapobiec próby załadowania go w tej wersji.  
+## <a name="marking-a-project-as-incompatible"></a><a name="BKMK_Incompat"></a> Oznaczanie projektu jako niezgodnego  
+ Można oznaczyć projekt jako niezgodny ze starszymi wersjami programu Visual Studio.  Załóżmy na przykład, że tworzysz projekt, który używa funkcji .NET Framework 4,5. Ponieważ tego projektu nie można skompilować [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] , można oznaczyć go jako niezgodny, aby zapobiec próbie załadowania tej wersji.  
   
- Składnik, który dodaje funkcję niezgodne jest odpowiedzialny za oznaczenie projektu jako niezgodne. Składnik musi mieć dostęp do <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfejs, który reprezentuje projektów będących przedmiotem zainteresowania.  
+ Składnik, który dodaje niezgodną funkcję, jest odpowiedzialny za oznaczenie projektu jako niezgodnego. Składnik musi mieć dostęp do <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfejsu, który reprezentuje interesujące projekty.  
   
-#### <a name="to-mark-a-project-as-incompatible"></a>Aby oznaczyć projektu jako niezgodne  
+#### <a name="to-mark-a-project-as-incompatible"></a>Aby oznaczyć projekt jako niezgodny  
   
-1. W składniku `IVsAppCompat` interfejsu usługi globalne SVsSolution.  
+1. W składniku Pobierz `IVsAppCompat` interfejs z globalnej usługi SVsSolution.  
   
      Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>.  
   
-2. W składniku, należy wywołać `IVsAppCompat.AskForUserConsentToBreakAssetCompat`i przekaż go tablicę `IVsHierarchy` interfejsy, które reprezentują projektów będących przedmiotem zainteresowania.  
+2. W składniku Wywołaj `IVsAppCompat.AskForUserConsentToBreakAssetCompat` i przekaż go do tablicy `IVsHierarchy` interfejsów, które reprezentują projekty zainteresowania.  
   
      Ta metoda ma następujący podpis:  
   
@@ -69,14 +69,14 @@ W systemie niestandardowego projektu można zezwolić projektów tego typu są �
   
     ```  
   
-     W przypadku zastosowania tego kodu, pojawi się okno dialogowe zgodność projektu. Zostanie okno dialogowe prosi użytkownika o zezwolenie na oznaczenie wszystkich określonych projektów jako niezgodne. Za zgodą użytkownika, `AskForUserConsentToBreakAssetCompat` zwraca `S_OK`; w przeciwnym razie `AskForUserConsentToBreakAssetCompat` zwraca `OLE_E_PROMPTSAVECANCELLED`.  
+     W przypadku zaimplementowania tego kodu zostanie wyświetlone okno dialogowe zgodność projektu. W oknie dialogowym zostanie wyświetlony monit z pytaniem o zezwolenie użytkownikowi na oznaczenie wszystkich określonych projektów jako niezgodnych. Jeśli użytkownik wyrazi zgodę, `AskForUserConsentToBreakAssetCompat` zwraca `S_OK` ; w przeciwnym razie `AskForUserConsentToBreakAssetCompat` zwraca `OLE_E_PROMPTSAVECANCELLED` .  
   
     > [!WARNING]
-    > W najbardziej typowych scenariuszy `IVsHierarchy` tablicy będzie zawierać tylko jeden element.  
+    > W większości typowych scenariuszy `IVsHierarchy` Tablica będzie zawierać tylko jeden element.  
   
-3. Jeśli `AskForUserConsentToBreakAssetCompat` zwraca `S_OK`, składnik sprawia, że lub akceptuje zmiany naruszające zgodności.  
+3. Jeśli `AskForUserConsentToBreakAssetCompat` zwraca `S_OK` , składnik powoduje lub akceptuje zmiany, które przerywają zgodność.  
   
-4. W składniku, należy wywołać `IVsAppCompat.BreakAssetCompatibility` metodę dla każdego projektu, który ma zostać oznaczone jako niezgodne. Ten składnik można ustawić wartości parametru `lpszMinimumVersion` do określonej minimalnej wersji zamiast programu Visual Studio, Wyszukaj bieżący ciąg wersji w rejestrze. To podejście minimalizuje ryzyko przypadkowo ustawienie wyższej wartości w przyszłości na podstawie co znajduje się w rejestrze w tym czasie składnika. Jeśli ustawiono tej wartości wyższej, Visual Studio nie można otworzyć projektu.  
+4. W składniku Wywołaj `IVsAppCompat.BreakAssetCompatibility` metodę dla każdego projektu, który ma zostać oznaczony jako niezgodny. Składnik może ustawić wartość parametru `lpszMinimumVersion` na określoną minimalną wersję, a nie z programu Visual Studio wyszukać bieżący ciąg wersji w rejestrze. Takie podejście minimalizuje ryzyko naruszenia przez składnik wyższej wartości w przyszłości, w zależności od tego, co znajduje się w rejestrze w tym czasie. Jeśli ta wyższa wartość została ustawiona, program Visual Studio nie może otworzyć projektu.  
   
      Ta metoda ma następujący podpis:  
   
@@ -85,7 +85,7 @@ W systemie niestandardowego projektu można zezwolić projektów tego typu są �
   
     ```  
   
-     Jeśli składnik ustawia `lpszMinimumVersion` na wartość NULL, `BreakAssetCompatibility` wywołania metody `IVsAppCompat.GetCurrentDesignTimeCompatVersion` metodę, aby uzyskać ciąg reprezentujący bieżącą wersję programu Visual Studio.  
+     Jeśli składnik `lpszMinimumVersion` ma wartość null, `BreakAssetCompatibility` Metoda wywołuje `IVsAppCompat.GetCurrentDesignTimeCompatVersion` metodę w celu uzyskania ciągu reprezentującego bieżącą wersję programu Visual Studio.  
   
      Ta metoda ma następujący podpis:  
   
@@ -93,19 +93,19 @@ W systemie niestandardowego projektu można zezwolić projektów tego typu są �
     HRESULT GetCurrentDesignTimeCompatVersion([out] BSTR * pbstrCurrentDesignTimeCompatVersion)  
     ```  
   
-     Następnie wywołuje metodę BreakAssetCompatibility `IVsHierarchy.SetProperty` metodę, aby ustawić katalogu głównego `VSHPROPID_MinimumDesignTimeCompatVersion` właściwości do wartości ciągu wersji, uzyskanych w poprzednim kroku.  
+     Metoda BreakAssetCompatibility następnie wywołuje metodę, `IVsHierarchy.SetProperty` Aby ustawić `VSHPROPID_MinimumDesignTimeCompatVersion` Właściwość root na wartość ciągu wersji uzyskanego w poprzednim kroku.  
   
      Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>.  
   
 > [!IMPORTANT]
-> Musisz zaimplementować `VSHPROPID_MinimumDesignTimeCompatVersion` właściwości, aby oznaczyć projektu jako zgodne lub niezgodne. Na przykład, jeśli system projektu używa pliku projektu programu MSBuild, Dodaj do pliku projektu `<MinimumVisualStudioVersion>` kompilacji właściwość, która ma wartość równą do odpowiednich `VSHPROPID_MinimumDesignTimeCompatVersion` wartości właściwości.  
+> Musisz zaimplementować właściwość, `VSHPROPID_MinimumDesignTimeCompatVersion` Aby oznaczyć projekt jako zgodny lub niezgodny. Na przykład jeśli system projektu używa pliku projektu MSBuild, należy dodać do pliku projektu `<MinimumVisualStudioVersion>` Właściwość kompilacji, która ma wartość równą odpowiadającej `VSHPROPID_MinimumDesignTimeCompatVersion` wartości właściwości.  
   
-## <a name="detecting-whether-a-project-is-incompatible"></a>Wykrywanie czy projekt jest niezgodny  
- Projekt, który jest niezgodny z bieżącą wersją programu Visual Studio muszą być przechowywane z ładowania. Ponadto projekt, który jest niezgodny nie można uaktualnić lub naprawy. W związku z tym, projekt musi być zaznaczone dla zgodności dwa razy: pierwszy, gdy jest rozważane dla uaktualnienie lub naprawy, a drugie, przed jego załadowaniu.  
+## <a name="detecting-whether-a-project-is-incompatible"></a>Wykrywanie, czy projekt jest niezgodny  
+ Nie można załadować projektu, który jest niezgodny z bieżącą wersją programu Visual Studio. Ponadto nie można uaktualnić ani naprawić projektu, który jest niezgodny. W związku z tym projekt musi być sprawdzony pod kątem zgodności dwa razy: najpierw, gdy jest brany pod uwagę w celu uaktualnienia lub naprawy, a drugi przed załadowaniem.  
   
- Aby włączyć wykrywanie niezgodności projektu, należy zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> metody. Jeśli projekt jest niezgodny, `UpgradeProject_CheckOnly` musi zwracać kod powodzenia `VS_S_INCOMPATIBLEPROJECT`, i `CreateProject` musi zwracać kod błędu: `VS_E_INCOMPATIBLEPROJECT`. Dla odmian projektów, należy zaimplementować `IVsProjectFlavorUpgradeViaFactory2.UpgradeProjectFlavor_CheckOnly` zamiast `IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly`.  
+ Aby włączyć wykrywanie niezgodności projektu, należy zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> metody i. Jeśli projekt jest niezgodny, `UpgradeProject_CheckOnly` musi zwrócić kod sukcesu `VS_S_INCOMPATIBLEPROJECT` i `CreateProject` musi zwrócić kod błędu `VS_E_INCOMPATIBLEPROJECT` . W przypadku projektów z niektórymi wersjami należy zaimplementować `IVsProjectFlavorUpgradeViaFactory2.UpgradeProjectFlavor_CheckOnly` zamiast `IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly` .  
   
- System projektu jest określany do jako flavored, jeśli ma on sieci web, pakietu Office (VSTO), Silverlight lub innych typów projektów, zbudowany na podstawie jej. Starsze systemy projektu, które zawierają już implementację `IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly` i składni systemy projektu, które zawierają już implementację `IVsProjectFlavorUpgradeViaFactory.UpgradeProjectFlavor_CheckOnly` nadal są obsługiwane. Starszą wersję `IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly` ma następujący podpis implementacji:  
+ System projektu jest określany jako zaprojektowany w przypadku, gdy ma oparty na nim element Web, pakiet Office (VSTO), program Silverlight lub inny typ projektu. Starsze systemy projektu, które już implementują `IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly` i są obsługiwane systemy projektów, które już implementują `IVsProjectFlavorUpgradeViaFactory.UpgradeProjectFlavor_CheckOnly` . Starsza wersja programu `IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly` ma następującą sygnaturę implementacji:  
   
 ```  
 IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(  
@@ -118,36 +118,36 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
 )  
 ```  
   
- Jeśli ta metoda ustawia `pUpgradeRequired` PRAWDA i zwraca `S_OK`, wynik jest traktowana jako "Uaktualnianie" i tak, jakby metody uaktualniania flagę ustawić na wartość `VSPUVF_PROJECT_ONEWAYUPGRADE`, który jest opisany w dalszej części tego tematu. Następujące zwracają wartości są obsługiwane przy użyciu tego starsza metoda, ale tylko wtedy, gdy `pUpgradeRequired` jest ustawiona na wartość TRUE:  
+ Jeśli ta metoda `pUpgradeRequired` jest ustawiona na wartość true i Returns `S_OK` , wynik jest traktowany jako "upgrade" i tak, jakby Metoda ustawił flagę uaktualnienia na wartość `VSPUVF_PROJECT_ONEWAYUPGRADE` , która jest opisana w dalszej części tego tematu. Następujące zwracane wartości są obsługiwane za pomocą tej starszej metody, ale tylko wtedy `pUpgradeRequired` , gdy jest ustawiona na true:  
   
-1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Tłumaczy to wartość zwracana `pUpgradeRequired` wartość true jako odpowiednik `VSPUVF_PROJECT_SAFEREPAIR`, który jest opisany w dalszej części tego tematu.  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Ta wartość zwracana tłumaczy `pUpgradeRequired` wartość na true jako odpowiednik `VSPUVF_PROJECT_SAFEREPAIR` , który jest opisany w dalszej części tego tematu.  
   
-2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Tłumaczy to wartość zwracana `pUpgradeRequired` wartość true jako odpowiednik `VSPUVF_PROJECT_UNSAFEREPAIR`, który jest opisany w dalszej części tego tematu  
+2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Ta wartość zwracana tłumaczy `pUpgradeRequired` wartość na true jako odpowiednik `VSPUVF_PROJECT_UNSAFEREPAIR` , który jest opisany w dalszej części tego tematu.  
   
-3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Tłumaczy to wartość zwracana `pUpgradeRequired` wartość true jako odpowiednik `VSPUVF_PROJECT_ONEWAYUPGRADE`, który jest opisany w dalszej części tego tematu.  
+3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Ta wartość zwracana tłumaczy `pUpgradeRequired` wartość na true jako odpowiednik `VSPUVF_PROJECT_ONEWAYUPGRADE` , który jest opisany w dalszej części tego tematu.  
   
-   Nowe implementacje w `IVsProjectUpgradeViaFactory4` i `IVsProjectFlavorUpgradeViaFactory2` umożliwić bardziej precyzyjne określanie typu migracji.  
+   Nowe implementacje w systemach `IVsProjectUpgradeViaFactory4` i `IVsProjectFlavorUpgradeViaFactory2` umożliwiają określanie typu migracji dokładniej.  
   
 > [!NOTE]
-> Może buforować wynik sprawdzania zgodności przez `UpgradeProject_CheckOnly` metodę, tak że można również przez kolejne wywołanie `CreateProject`.  
+> Można przechować wynik kontroli zgodności przez `UpgradeProject_CheckOnly` metodę, aby można było go również użyć w przypadku kolejnego wywołania do `CreateProject` .  
   
- Na przykład jeśli `UpgradeProject_CheckOnly` i `CreateProject` metody, które zostały napisane dla [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] z dodatkiem SP1, system projektu badania pliku projektu i okazać, że `<MinimumVisualStudioVersion>` właściwość kompilacji "11.0", nie można załadować projektu programu Visual Studio 2010 z dodatkiem SP1. Ponadto **Nawigator rozwiązania** wskazują, że projekt jest "niezgodne" i nie można go załadować.  
+ Na przykład, jeśli `UpgradeProject_CheckOnly` metody i `CreateProject` , które są zapisywana dla [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] systemu projektu z dodatkiem SP1, przeanalizują plik projektu i stwierdzą, że `<MinimumVisualStudioVersion>` właściwość kompilacja to "11,0", program Visual Studio 2010 z dodatkiem SP1 nie będzie ładować projektu. Ponadto **Nawigator rozwiązań** wskaże, że projekt jest "niezgodny" i nie ładuje go.  
   
-## <a name="BKMK_UpgradeLogger"></a> Uaktualnianie rejestratora  
- Wywołanie `IVsProjectUpgradeViaFactory::UpgradeProject` zawiera `IVsUpgradeLogger` rejestratora, które systemy projektu i odmian należy używać zapewnienie szczegółowe śledzenie uaktualnienia do rozwiązywania problemów. Jeśli ostrzeżenia lub komunikat o błędzie jest rejestrowany, Visual Studio wyświetla raport o uaktualnieniu.  
+## <a name="the-upgrade-logger"></a><a name="BKMK_UpgradeLogger"></a> Rejestrator uaktualnienia  
+ Wywołanie `IVsProjectUpgradeViaFactory::UpgradeProject` zawiera `IVsUpgradeLogger` rejestratora, którego systemy i typy projektów powinny być używane do zapewnienia szczegółowego śledzenia uaktualniania na potrzeby rozwiązywania problemów. Jeśli zostanie zarejestrowane ostrzeżenie lub błąd, program Visual Studio wyświetli raport dotyczący uaktualniania.  
   
- Podczas próby uaktualnienia rejestratora zapisu, należy wziąć pod uwagę następujące wytyczne:  
+ Podczas zapisywania do rejestratora uaktualniania należy wziąć pod uwagę następujące wytyczne:  
   
-- Program Visual Studio będzie wywoływać opróżniania po wszystkie projekty została zakończona, uaktualnianie. Nie wywołuj go w systemie projektu.  
+- Program Visual Studio wywoła opróżnianie po zakończeniu uaktualniania wszystkich projektów. Nie wywołuj go w systemie projektu.  
   
-- Logmessage — funkcja ma następujące ErrorLevels:  
+- Funkcja LogMessage ma następujące ErrorLevel:  
   
-  - Usługa 0 jest wszelkie informacje, które chcesz śledzić.  
+  - 0 dotyczy wszystkich informacji, które mają być śledzone.  
 
-  - 1 jest ostrzeżenie.  
+  - 1 to ostrzeżenie.  
 
-  - 2 dotyczy błąd  
+  - 2 dotyczy błędu  
 
-  - dla elementu formatującego raportu jest 3. Po uaktualnieniu projektu dziennika słowo "Konwertowane" raz, a nie zlokalizujesz wyraz.  
+  - 3 jest przeznaczony dla programu formatującego raportu. Po uaktualnieniu projektu należy ponownie zarejestrować słowo "skonwertowane" i nie lokalizować tego słowa.  
   
-- Jeśli projekt nie wymaga żadnych naprawy lub uaktualnienia, program Visual Studio wygeneruje plik dziennika tylko wtedy, gdy system projektu ma zarejestrowane ostrzeżenie lub błąd podczas UpgradeProject_CheckOnly lub UpgradeProjectFlavor_CheckOnly metod.
+- Jeśli projekt nie wymaga naprawy ani uaktualnienia, program Visual Studio wygeneruje plik dziennika tylko wtedy, gdy system projektu zarejestrował ostrzeżenie lub wystąpił błąd podczas UpgradeProject_CheckOnly lub UpgradeProjectFlavor_CheckOnly metod.

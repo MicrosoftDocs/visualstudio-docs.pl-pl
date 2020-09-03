@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wyświetlanie właściwości komunikatu | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Wyświetlanie właściwości komunikatów | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,21 +12,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b440d2883a06b41b751b6ae84e41b118e864cfec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205375"
 ---
-# <a name="how-to-display-message-properties"></a>Instrukcje: Wyświetlanie właściwości komunikatu
+# <a name="how-to-display-message-properties"></a>Porady: wyświetlanie właściwości komunikatów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby dowiedzieć się więcej na temat wiadomości na liście [widoku komunikatów](../debugger/messages-view.md), użyj [okno dialogowe Właściwości komunikatu](../debugger/message-properties-dialog-box.md).  
+Aby dowiedzieć się więcej o komunikacie wymienionym w [widoku komunikatów](../debugger/messages-view.md), użyj [okna dialogowego Właściwości komunikatu](../debugger/message-properties-dialog-box.md).  
   
 ### <a name="to-open-a-message-properties-dialog-box"></a>Aby otworzyć okno dialogowe Właściwości komunikatu  
   
-1. Zaznacz wiadomość z drzewa wyświetlany w widoku komunikatów.  
+1. Wybierz komunikat z drzewa wyświetlanego w widoku komunikaty.  
   
-2. Z **widoku** menu, wybierz **właściwości**.  
+2. Z menu **Widok** wybierz polecenie **Właściwości**.  
   
-   Okno dialogowe właściwości nie są modalne, dzięki czemu możesz kliknąć inny element w oknie Widok i zostanie wyświetlone okno dialogowe informacje wybranego elementu.
+   Okna dialogowe właściwości nie są modalne, więc można kliknąć inny element w oknie widok, a w oknie dialogowym zostaną wyświetlone informacje o wybranym elemencie.

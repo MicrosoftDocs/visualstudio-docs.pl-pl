@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aed37ee9cdd8c221fcfb114db426a6286ee8ad6f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673120"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Dodawanie kodu do zestawów danych w aplikacjach n-warstwowych
@@ -28,10 +28,10 @@ Można zwiększyć funkcjonalność zestawu danych, tworząc plik klasy części
 
 Kod definiujący zestaw danych jest generowany każdorazowo po wprowadzeniu zmian w definicji zestawu danych. Ten kod jest również generowany, gdy wprowadzasz zmiany w trakcie działania kreatora, który modyfikuje konfigurację zestawu danych. Aby zapobiec usunięciu kodu podczas ponownej generacji zestawu danych, Dodaj kod do pliku klasy częściowej zestawu danych.
 
-Domyślnie po rozdzieleniu zestawu danych i kodu `TableAdapter` wynik jest dyskretnym plikiem klasy w każdym projekcie. Oryginalny projekt ma nazwę pliku *DataSetName*. Designer. vb (lub *DataSetName*. Designer.cs), który zawiera kod `TableAdapter`. Projekt, który jest wskazany we właściwości **projektu DataSet** , ma plik o nazwie *DataSetName*. DataSet. Designer. vb (lub *DataSetName*. DataSet.Designer.cs). Ten plik zawiera kod zestawu danych.
+Domyślnie po oddzieleniu zestawu danych i `TableAdapter` kodu wynik jest dyskretnym plikiem klasy w każdym projekcie. Oryginalny projekt ma nazwę pliku *DataSetName*. Designer. vb (lub *DataSetName*. Designer.cs), który zawiera `TableAdapter` kod. Projekt, który jest wskazany we właściwości **projektu DataSet** , ma plik o nazwie *DataSetName*. DataSet. Designer. vb (lub *DataSetName*. DataSet.Designer.cs). Ten plik zawiera kod zestawu danych.
 
 > [!NOTE]
-> W przypadku rozdzielania zestawów danych i `TableAdapter`s (przez ustawienie właściwości **projektu DataSet** ) istniejące częściowe klasy zestawu danych w projekcie nie będą automatycznie przenoszone. Istniejące klasy częściowe zestawu danych muszą być przenoszone ręcznie do projektu DataSet.
+> W przypadku rozdzielania zestawów danych i `TableAdapter` s (przez ustawienie właściwości **projektu DataSet** ) istniejące częściowe klasy zestawu danych w projekcie nie będą automatycznie przenoszone. Istniejące klasy częściowe zestawu danych muszą być przenoszone ręcznie do projektu DataSet.
 
 > [!NOTE]
 > Gdy należy dodać kod sprawdzania poprawności, Projektant zestawu danych udostępnia funkcje do generowania <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.RowChanging> obsługi zdarzeń. Aby uzyskać więcej informacji, zobacz [Dodawanie walidacji do wielowarstwowego zestawu danych](../data-tools/add-validation-to-an-n-tier-dataset.md).
@@ -65,7 +65,7 @@ Domyślnie po rozdzieleniu zestawu danych i kodu `TableAdapter` wynik jest dyskr
     }
     ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [N-warstwowe aplikacje do obsługi danych — omówienie](../data-tools/n-tier-data-applications-overview.md)
 - [Dodawanie kodu do adapterów TableAdapter w aplikacjach n-warstwowych](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)

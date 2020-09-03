@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 418cc9f75842cb4f3e9d8c0c0753084e2f0633c2
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350813"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Rozwiązywanie problemów z instalacją i uaktualnieniem programu Visual Studio
@@ -122,7 +122,7 @@ Poniżej przedstawiono tabelę znanych problemów i niektórych obejść, które
 
 | Problem       | Element                   | Rozwiązanie |
 | ----------- | ---------------------- | -------- |
-| Użytkownicy nie mają dostępu do plików. | uprawnienia (ACL) | Upewnij się, że dostosowujesz uprawnienia (ACL), aby umożliwić im dostęp do odczytu do innych użytkowników *przed* udostępnieniem instalacji w trybie offline. |
+| Użytkownicy nie mają dostępu do plików. | uprawnienia (ACL) | Upewnij się, że dostosowujesz uprawnienia (ACL), aby umożliwić im dostęp do odczytu do innych użytkowników  *przed* udostępnieniem instalacji w trybie offline. |
 | Nie można zainstalować nowych obciążeń, składników lub języków.  | `--layout`  | Upewnij się, że masz dostęp do Internetu, jeśli zainstalujesz program z układu częściowego i wybierzesz obciążenia, składniki lub Języki, które nie zostały pobrane wcześniej w tym układzie częściowym. |
 
 Aby uzyskać więcej informacji na temat rozwiązywania problemów z [instalacją sieciową](create-a-network-installation-of-visual-studio.md), zobacz [Rozwiązywanie problemów związanych z siecią podczas instalowania programu Visual Studio lub korzystania](troubleshooting-network-related-errors-in-visual-studio.md)z niego.

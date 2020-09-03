@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586929"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Konfiguruj odwołanie do usługi — Okno dialogowe
@@ -71,11 +71,11 @@ Określa, czy typy kontraktów komunikatów są generowane dla klienta WCF. Aby 
 
 **Typ kolekcji**
 
-Określa typ kolekcji listy dla klienta WCF. Domyślny typ to <xref:System.Array>.
+Określa typ kolekcji listy dla klienta WCF. Domyślnym typem jest <xref:System.Array> .
 
 **Typ kolekcji słownika**
 
-Określa typ kolekcji słownika dla klienta WCF. Domyślny typ to <xref:System.Collections.Generic.Dictionary%602>.
+Określa typ kolekcji słownika dla klienta WCF. Domyślnym typem jest <xref:System.Collections.Generic.Dictionary%602> .
 
 **Ponowne używanie typów w przywoływanych zestawach**
 
@@ -103,7 +103,7 @@ Wyświetla okno dialogowe **Dodawanie odwołania sieci Web** .
 > [!NOTE]
 > Przycisk **Dodaj odwołanie sieci Web** jest dostępny tylko wtedy, gdy w oknie **dialogowym Dodaj odwołanie do usługi**zostanie wyświetlone okno dialogowe **Konfigurowanie odwołania do usługi** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Dodawanie odwołania do usługi sieci Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Usługi Windows Communication Foundation i usługi danych programu WCF](../data-tools/configure-service-reference-dialog-box.md)

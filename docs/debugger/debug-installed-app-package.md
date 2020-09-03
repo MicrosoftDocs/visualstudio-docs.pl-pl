@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: eabc694665bede7d193a360a01c42366568e33c5
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350735"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Debugowanie zainstalowanego pakietu aplikacji platformy UWP w programie Visual Studio
@@ -54,7 +54,7 @@ Aby uzyskać więcej informacji na temat debugowania aplikacji platformy UWP, za
 > [!NOTE]
 > Możesz również dołączyć do dowolnego działającego platformy UWP lub innego procesu aplikacji, wybierając pozycję **Debuguj**  >  **Dołącz do procesu** w programie Visual Studio. Oryginalny projekt programu Visual Studio nie jest potrzebny do dołączenia do uruchomionego procesu, ale załadowanie symboli aplikacji pomoże znacząco podczas debugowania procesu, w którym nie jest używany oryginalny kod. Zobacz [Określanie symboli i plików źródłowych w debugerze](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="debug-an-installed-uwp-app-on-a-remote-computer-or-device"></a><a name="remote"></a>Debugowanie zainstalowanej aplikacji platformy UWP na komputerze zdalnym lub urządzeniu
+## <a name="debug-an-installed-uwp-app-on-a-remote-computer-or-device"></a><a name="remote"></a> Debugowanie zainstalowanej aplikacji platformy UWP na komputerze zdalnym lub urządzeniu
 
 Gdy program Visual Studio po raz pierwszy debuguje zainstalowaną aplikację platformy UWP na urządzeniu z systemem Windows 10 lub zdalnym komputerze z systemem Windows 10 z aktualizacją dla twórców po stronie użytkownika, instaluje narzędzia zdalnego debugowania na urządzeniu docelowym.
 

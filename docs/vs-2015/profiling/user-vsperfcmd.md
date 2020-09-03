@@ -1,5 +1,5 @@
 ---
-title: Użytkownik (VSPerfCmd) | Dokumentacja firmy Microsoft
+title: Użytkownik (VSPerfCmd) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,18 +10,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 311d02ad3e15f184f8b7e21b5794d73c41a8d4fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145387"
 ---
 # <a name="user-vsperfcmd"></a>Użytkownik (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Użytkownika** opcja określa nazwę domeny i użytkownika konta, które jest właścicielem PROFILOWANEGO procesu. Ta opcja jest wymagana tylko wtedy, gdy proces działa jako użytkownik inny niż zalogowany użytkownik. Właściciel procesu jest wymieniony w kolumnie Nazwa użytkownika na karcie Procesy Menedżera zadań Windows.  
+Opcja **użytkownik** określa domenę i nazwę użytkownika konta, które jest właścicielem profilowanego procesu. Ta opcja jest wymagana tylko wtedy, gdy proces działa jako użytkownik inny niż zalogowany użytkownik. Właściciel procesu jest wymieniony w kolumnie Nazwa użytkownika na karcie procesy w Menedżerze zadań systemu Windows.  
   
- **Użytkownika** opcji można określić tylko w wierszu polecenia, który zawiera także **Start** opcji opcji.  
+ Opcję **użytkownika** można określić tylko w wierszu polecenia, który zawiera również opcję **uruchamiania** .  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,13 +37,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]
  Nazwa użytkownika.  
   
 ## <a name="required-options"></a>Wymagane opcje  
- **Użytkownika** opcja może być używana tylko z **Start** opcji.  
+ Opcji **użytkownika** można używać tylko z opcją **Start** .  
   
- **Początek:** `Method`  
- Inicjuje profiler do określonej metody profilowania.  
+ **Rozpocznij:**`Method`  
+ Inicjuje Profiler do określonej metody profilowania.  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie pokazano użycie **użytkownika** opcji.  
+ Poniższy przykład demonstruje użycie opcji **użytkownika** .  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /User:SYSTEM  
@@ -51,6 +51,6 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /User:SYSTEM
   
 ## <a name="see-also"></a>Zobacz też  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilowanie aplikacji sieci Web platformy ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilowania aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

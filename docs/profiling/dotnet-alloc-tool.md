@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 81c15753b083256b97c9f67219b64565a8db8736
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247802"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analizowanie użycia pamięci za pomocą narzędzia alokacji obiektów platformy .NET
@@ -22,7 +22,7 @@ Możesz sprawdzić ilość pamięci używanej przez aplikację i informacje o ś
 
 Po uruchomieniu narzędzia można zobaczyć ścieżki wykonywania funkcji, w których są przyliczane obiekty. Następnie można śledzić z powrotem do poziomu głównego drzewa wywołań, który zajmuje najwięcej pamięci.
 
-## <a name="setup"></a>Konfigurowanie
+## <a name="setup"></a>Konfiguracja
 
 1. Wybierz **kombinację klawiszy Alt + F2** , aby otworzyć Profiler wydajności w programie Visual Studio.
 
@@ -36,7 +36,7 @@ Po uruchomieniu narzędzia można zobaczyć ścieżki wykonywania funkcji, w kt�
 
    ![Okno pokazujące Zatrzymaj zbieranie](../profiling/media/stopcollectionlighttheme.png "Okno pokazujące Zatrzymaj zbieranie")
 
-1. Wybierz kartę **alokacja** . zostanie wyświetlona zawartość okna podobna do poniższego zrzutu ekranu.
+1. Wybierz kartę **alokacja** . Zostanie wyświetlona zawartość okna podobna do poniższego zrzutu ekranu.
 
    ![Karta alokacja](../profiling/media/allocationview.png "Karta alokacja")
 
@@ -109,7 +109,7 @@ Widok **drzewa wywołań**   przedstawia ścieżki wykonywania funkcji, które
 - Przycisk **Rozwiń ścieżkę gorącą** powoduje wyróżnienie ścieżki wykonywania funkcji, która zawiera wiele obiektów przydzielających pamięć. Algorytm jest uruchamiany w węźle, który wybierzesz i podświetla ścieżkę najbardziej przydziałów.
 - Przycisk **Pokaż ścieżkę gorącą** pokazuje lub ukrywa symbole płomienia wskazujące, które węzły są częścią ścieżki aktywnej.
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>Funkcje
 
 ![Widok funkcji](../profiling/media/functionslight.png "Widok funkcji")
 

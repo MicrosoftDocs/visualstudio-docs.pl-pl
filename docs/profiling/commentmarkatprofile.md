@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ee9eb5353109bcf5df6903e7e607a11b8bfd0536
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545616"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
@@ -71,8 +71,8 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 |Element|Wartość|
 |-|-|
 |**Nagłówki**|Uwzględnij *VSPerf. h*|
-|**Biblioteka**|Użyj *VSPerf. lib*|
-|**Unicode**|Zaimplementowane jako CommentMarkAtProfileW (Unicode) i CommentMarkAtProfileA (ANSI).|
+|**Biblioteki**|Użyj *VSPerf. lib*|
+|**Kod Unicode**|Zaimplementowane jako CommentMarkAtProfileW (Unicode) i CommentMarkAtProfileA (ANSI).|
 
 ## <a name="example"></a>Przykład
  Poniższy kod ilustruje użycie wywołania funkcji ogólnej CommentMarkAtProfile. W przykładzie założono użycie makr ciągu Win32 i ustawień kompilatora dla ANSI, aby określić, czy kod wywołuje funkcję z obsługą ANSI.
@@ -115,5 +115,5 @@ void ExerciseCommentMarkAtProfile(void)
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)

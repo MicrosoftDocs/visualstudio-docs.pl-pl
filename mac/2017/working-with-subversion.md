@@ -5,16 +5,16 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: e5a9dd8120dd312bfc3e1c8905a725a58cca0e92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd46a9eba7770b73425f1461fab6cb8443ace26c
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "74983525"
+ms.locfileid: "89402273"
 ---
 # <a name="working-with-subversion"></a>Praca z podwersją
 
-Subversion to scentralizowany system kontroli wersji, który umożliwia wyewidencjonowanie pojedynczej kopii głównej scentralizowanych danych. W przeciwieństwie do usługi git, wyewidencjonowanie repozytorium podwersji nie powoduje klonowania całego repozytorium, w tym momencie wykonuje jedynie migawkę.
+Subversion to scentralizowany system kontroli wersji, który umożliwia wyewidencjonowanie jednej głównej kopii scentralizowanych danych. W przeciwieństwie do usługi git, wyewidencjonowanie repozytorium podwersji nie powoduje klonowania całego repozytorium, w tym momencie wykonuje jedynie migawkę.
 
 Funkcja Subversion korzysta z modelu Copy-Modify-Merge, aby umożliwić użytkownikom jednoczesne działanie tego samego repozytorium. Oznacza to, że każdy użytkownik tworzy lokalną lub działającą kopię scentralizowanych danych, które działają niezależnie od siebie. Zmiany w kopiach roboczych użytkowników są scalane w sposób chronologiczny.
 
