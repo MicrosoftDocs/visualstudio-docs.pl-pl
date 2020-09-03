@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284415"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Instrukcje: Tworzenie szablonów wieloprojektowych
@@ -46,14 +46,14 @@ Na przykład plik template *. zip* szablonu z dwoma projektami może mieć nast�
 
 Główny plik *vstemplate* dla szablonu wieloprojektowego różni się od szablonu pojedynczego projektu w następujący sposób:
 
-- Atrybut **Type** elementu **vstemplate** ma wartość **projectmanager** zamiast **Project**. Przykład:
+- Atrybut **Type** elementu **vstemplate** ma wartość **projectmanager** zamiast **Project**. Na przykład:
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- Element **TemplateContent** zawiera element **ProjectCollection** , który ma jeden lub więcej elementów **ProjectTemplateLink** , które definiują ścieżki do plików *vstemplate* dołączonych projektów. Przykład:
+- Element **TemplateContent** zawiera element **ProjectCollection** , który ma jeden lub więcej elementów **ProjectTemplateLink** , które definiują ścieżki do plików *vstemplate* dołączonych projektów. Na przykład:
 
     ```xml
     <TemplateContent>
@@ -69,7 +69,7 @@ Główny plik *vstemplate* dla szablonu wieloprojektowego różni się od szablo
     ```
 
 > [!TIP]
-> Jeśli chcesz, aby szablon wieloprojektowy był wyświetlany w oknie dialogowym Nowy projekt, a nie w poszczególnych projektach, Oznacz szablony wewnętrzne jako [ukryte](../extensibility/hidden-element-visual-studio-templates.md). Przykład:
+> Jeśli chcesz, aby szablon wieloprojektowy był wyświetlany w oknie dialogowym Nowy projekt, a nie w poszczególnych projektach, Oznacz szablony wewnętrzne jako [ukryte](../extensibility/hidden-element-visual-studio-templates.md). Na przykład:
 >
 > ```xml
 > <VSTemplate Type="Project" ... >

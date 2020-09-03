@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
 ms.topic: tutorial
 ms.openlocfilehash: 99373d7da8c7f83c8703b237ff83c63f9d1b6a53
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85939089"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Samouczek: wprowadzenie do Azure Functions
@@ -69,7 +69,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie Azure Functions przy 
 
     ![Szczegóły nowego konta magazynu](media/azure-functions-lab-image6.png)
 
-1. Kliknij pozycję **Utwórz**. Utworzenie konta magazynu może potrwać kilka minut. Po pomyślnym utworzeniu zostanie wyświetlone powiadomienie.
+1. Kliknij przycisk **Utwórz**. Utworzenie konta magazynu może potrwać kilka minut. Po pomyślnym utworzeniu zostanie wyświetlone powiadomienie.
 
     ![pomyślne powiadomienie dotyczące wdrożenia](media/azure-functions-lab-image7.png)
 

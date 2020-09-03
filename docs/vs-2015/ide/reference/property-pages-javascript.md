@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9fa22a4ed52c3e0a1afdda0105716c0de9b3316
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851812"
 ---
 # <a name="property-pages-javascript"></a>Strony właściwości, JavaScript
@@ -40,7 +40,7 @@ ms.locfileid: "75851812"
 
  **Konfiguracja** Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia to **debugowanie** (domyślne), **wydanie**, **wszystkie konfiguracje**lub Konfiguracja zdefiniowana przez użytkownika. Aby uzyskać więcej informacji, zobacz [debugowanie i wydanie konfiguracji projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
- **Platforma** Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienia to **dowolny procesor** (domyślny dla aplikacji [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]), **x64**, **ARM**, **x86**lub platformy zdefiniowanej przez użytkownika. Aby uzyskać więcej informacji, zobacz [debugowanie i wydanie konfiguracji projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
+ **Platforma** Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienia to **każdy procesor CPU** (domyślny dla [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji), **x64**, **ARM**, **x86**lub platformy zdefiniowanej przez użytkownika. Aby uzyskać więcej informacji, zobacz [debugowanie i wydanie konfiguracji projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
 ## <a name="general-page"></a>Strona ogólna
  Użyj następujących opcji, aby ustawić ogólne właściwości projektu.
@@ -50,7 +50,7 @@ ms.locfileid: "75851812"
 
  **Ścieżka wyjściowa** Określa lokalizację plików wyjściowych dla konfiguracji projektu. Ścieżka jest względna; Jeśli wprowadzisz ścieżkę bezwzględną, ścieżka bezwzględna zostanie zapisana w projekcie. Ścieżka domyślna to bin\Debug.
 
- W przypadku korzystania z uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. Gdy klikniesz pozycję **Debuguj**, **Rozpocznij debugowanie** (lub naciśnij klawisz F5), kompilacja jest umieszczana w lokalizacji debugowania niezależnie od określonej **ścieżki wyjściowej** . Jednak polecenie **Kompiluj rozwiązanie** w menu **kompilacja** umieszcza je w określonej lokalizacji. Aby włączyć zaawansowane konfiguracje kompilacji, na pasku menu wybierz **Narzędzia**, **Opcje**. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, wybierz pozycję **Ogólne**, a następnie wyczyść pole wyboru **Pokaż zaawansowane konfiguracje kompilacji** . Zapewnia to ręczną kontrolę nad wszystkimi wartościami konfiguracji oraz o tym, czy została skompilowana wersja Debug lub Release. Aby uzyskać więcej informacji, zobacz [NIB: ogólne, projekty i rozwiązania, okno dialogowe Opcje](https://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).
+ W przypadku korzystania z uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. Gdy klikniesz pozycję  **Debuguj**, **Rozpocznij debugowanie** (lub naciśnij klawisz F5), kompilacja jest umieszczana w lokalizacji debugowania niezależnie od określonej **ścieżki wyjściowej** . Jednak polecenie **Kompiluj rozwiązanie** w menu **kompilacja** umieszcza je w określonej lokalizacji. Aby włączyć zaawansowane konfiguracje kompilacji, na pasku menu wybierz **Narzędzia**, **Opcje**. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, wybierz pozycję **Ogólne**, a następnie wyczyść pole wyboru **Pokaż zaawansowane konfiguracje kompilacji** . Zapewnia to ręczną kontrolę nad wszystkimi wartościami konfiguracji oraz o tym, czy została skompilowana wersja Debug lub Release. Aby uzyskać więcej informacji, zobacz [NIB: ogólne, projekty i rozwiązania, okno dialogowe Opcje](https://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).
 
  **Język domyślny** Określa język domyślny dla projektu. Opcja język wybrana w polu **zegar, język i region** w panelu sterowania Określa preferowany język użytkownika. Określając język domyślny dla projektu, należy upewnić się, że określone domyślne zasoby językowe są używane, jeśli preferowany język użytkownika nie jest zgodny z zasobami języka udostępnianymi w aplikacji.
 
@@ -70,7 +70,7 @@ ms.locfileid: "75851812"
 
   **Uruchom aplikację** Określa, czy uruchomić aplikację po naciśnięciu klawisza F5 lub kliknięciu przycisku **Debuguj**, **Rozpocznij debugowanie**. Wybierz pozycję **tak** , aby uruchomić aplikację. w przeciwnym razie wybierz pozycję **nie**. Jeśli wybierzesz opcję **nie**, nadal możesz debugować aplikację, jeśli używasz innej metody do jej uruchamiania.
 
-  **Typ debugera** Określa typy kodu do debugowania. Wybierz opcję **tylko skrypt** , aby debugować kod JavaScript. Wybierz pozycję **zarządzane tylko** , aby debugować kod, który jest zarządzany przez środowisko uruchomieniowe języka wspólnego. Wybierz **tylko natywny** do C++ debugowania kodu. Wybierz opcję **natywny ze skryptem** , aby debugować C++ i JavaScript. Wybierz opcję **mieszany (zarządzany i natywny)** , aby debugować C++ kod zarządzany i.
+  **Typ debugera** Określa typy kodu do debugowania. Wybierz opcję **tylko skrypt** , aby debugować kod JavaScript. Wybierz pozycję **zarządzane tylko** , aby debugować kod, który jest zarządzany przez środowisko uruchomieniowe języka wspólnego. Wybierz **tylko natywny** , aby debugować kod w języku C++. Wybierz opcję **natywny ze skryptem** , aby debugować C++ i JavaScript. Wybierz opcję **mieszany (zarządzany i natywny)** , aby debugować zarówno kod zarządzany, jak i C++.
 
   **Zezwalaj na sprzężenie zwrotne sieci lokalnej** Określa, czy dostęp do adresu IP sprzężenia zwrotnego jest dozwolony dla testowania aplikacji. Wybierz opcję **tak** , aby zezwolić na użycie adresu sprzężenia zwrotnego, jeśli aplikacja kliencka znajduje się na tym samym komputerze, na którym działa aplikacja serwera. w przeciwnym razie wybierz pozycję **nie**. Ta właściwość jest dostępna tylko wtedy, gdy właściwość **debuger do uruchomienia** jest ustawiona na **komputer zdalny**.
 

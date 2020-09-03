@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::GetReason | Dokumenty firmy Microsoft
+title: 'IDebugCanStopEvent2:: getpowód | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 59e611c3ed69528f92a6085cf74aa44efed09144
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734522"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
-Pobiera powód, dla którego aparat debugowania (DE) chce zatrzymać.
+Pobiera przyczynę zatrzymania aparatu debugowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,15 +41,15 @@ int GetReason( 
 
 ## <a name="parameters"></a>Parametry
 `pcr`\
-[na zewnątrz] Zwraca wartość z wyliczenia [CANSTOP_REASON,](../../../extensibility/debugger/reference/canstop-reason.md) który opisuje przyczynę tego zdarzenia.
+określoną Zwraca wartość z wyliczenia [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) opisującą przyczynę tego zdarzenia.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest zazwyczaj wywoływana przed [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) metody, więc wywołujący`TRUE`można określić, czy przekazać non-zero ( ) do `IDebugCanStopEvent2::CanStop` metody.
+ Ta metoda jest zazwyczaj wywoływana przed wywołaniem [metody,](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) aby obiekt wywołujący mógł określić, czy przekazywać wartość różną od zera ( `TRUE` ) do `IDebugCanStopEvent2::CanStop` metody.
 
- Powodem zatrzymania może być `CANSTOP_ENTRYPOINT`albo , co oznacza, że `CANSTOP_STEPIN`DE osiągnęła punkt wejścia, lub , co oznacza, że DE wszedł do funkcji.
+ Powodem zatrzymywania może być albo `CANSTOP_ENTRYPOINT` , co oznacza, że de osiągnął punkt wejścia, lub `CANSTOP_STEPIN` , co oznacza, że de został przeciągnięty do funkcji.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)

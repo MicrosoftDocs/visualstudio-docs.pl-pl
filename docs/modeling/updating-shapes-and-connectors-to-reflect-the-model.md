@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115027"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Aktualizowanie kształtów i łączników, aby odzwierciedlały model
 
 W języku specyficznym dla domeny w programie Visual Studio, można sprawić, aby wygląd kształtu odzwierciedlał stan modelu bazowego.
 
-Przykłady kodu w tym temacie należy dodać do pliku `.cs` w `Dsl` projekcie. W każdym pliku są wymagane następujące dyrektywy:
+Przykłady kodu w tym temacie należy dodać do `.cs` pliku w `Dsl` projekcie. W każdym pliku są wymagane następujące dyrektywy:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -37,14 +37,14 @@ Kształt ma teraz właściwość domeny, którą można ustawić w kodzie progra
 
 `shape.FillColor = System.Drawing.Color.Red;`
 
-Jeśli chcesz uczynić zmienną właściwości tylko pod kontrolą programu, a nie przez użytkownika, wybierz nową właściwość domeny, taką jak **kolor wypełnienia** na DIAGRAMIE definicji DSL. Następnie w okno Właściwości ustawić wartość **umożliwia przeglądania** na `false` lub Set **jest interfejsem użytkownika ReadOnly** do `true`.
+Jeśli chcesz uczynić zmienną właściwości tylko pod kontrolą programu, a nie przez użytkownika, wybierz nową właściwość domeny, taką jak **kolor wypełnienia** na DIAGRAMIE definicji DSL. Następnie w okno Właściwości ustawić wartość " **umożliwia przeglądania** " lub "ustawiono jako `false` **interfejs użytkownika tylko do odczytu** `true` .
 
 ## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Definiowanie reguł zmiany w celu uzyskania koloru, stylu lub lokalizacji zależy od właściwości elementu modelu
  Można zdefiniować reguły, które aktualizują wygląd kształtu zależnego od innych części modelu. Na przykład można zdefiniować regułę zmiany dla elementu modelu, który aktualizuje kolor kształtu zależnie od właściwości elementu modelu. Aby uzyskać więcej informacji na temat reguł zmiany, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
  Reguł należy używać tylko do aktualizowania właściwości, które są przechowywane w magazynie, ponieważ reguły nie są wywoływane po wykonaniu polecenia Cofnij. Nie obejmuje to niektórych funkcji graficznych, takich jak rozmiar i widoczność kształtu. Aby zaktualizować te funkcje kształtu, zobacz [aktualizowanie funkcji graficznych](#OnAssociatedProperty)nienależących do magazynu.
 
- W poniższym przykładzie założono, że masz uwidocznioną `FillColor` jako właściwość domeny, zgodnie z opisem w poprzedniej sekcji.
+ W poniższym przykładzie przyjęto założenie, że użytkownik jest narażony `FillColor` jako właściwość domeny, zgodnie z opisem w poprzedniej sekcji.
 
 ```csharp
 [RuleOn(typeof(ExampleElement))]
@@ -84,7 +84,7 @@ Jeśli chcesz uczynić zmienną właściwości tylko pod kontrolą programu, a n
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Użyj OnChildConfigured, aby zainicjować właściwości kształtu
 
-Aby ustawić właściwości kształtu podczas jego pierwszego tworzenia, przesłonięcie `OnChildConfigured()` w częściowej definicji klasy diagramu. Klasa diagram jest określona w definicji DSL, a wygenerowany kod znajduje się w **Dsl\Generated Code\Diagram.cs**. Na przykład:
+Aby ustawić właściwości kształtu podczas jego pierwszego tworzenia, przesłonięcie `OnChildConfigured()` w definicji częściowej klasy diagramu. Klasa diagram jest określona w definicji DSL, a wygenerowany kod znajduje się w **Dsl\Generated Code\Diagram.cs**. Na przykład:
 
 ```csharp
 partial class MyLanguageDiagram
@@ -108,11 +108,11 @@ partial class MyLanguageDiagram
 
 Tej metody można używać zarówno w przypadku właściwości domeny, jak i funkcji niezwiązanych z magazynem, takich jak rozmiar kształtu.
 
-## <a name="OnAssociatedProperty"></a>Używanie AssociateValueWith () do aktualizowania innych funkcji kształtu
+## <a name="use-associatevaluewith-to-update-other-features-of-a-shape"></a><a name="OnAssociatedProperty"></a> Używanie AssociateValueWith () do aktualizowania innych funkcji kształtu
 
 W przypadku niektórych funkcji kształtu, takich jak to, czy ma on cień, czy styl strzałki łącznika, nie ma wbudowanej metody ujawniania funkcji jako właściwości domeny.  Zmiany w tych funkcjach nie podlegają kontroli systemu transakcji. W związku z tym nie trzeba aktualizować ich przy użyciu reguł, ponieważ reguły nie są wywoływane, gdy użytkownik wykonuje polecenie Cofnij.
 
-Zamiast tego można zaktualizować takie funkcje przy użyciu <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. W poniższym przykładzie styl strzałki łącznika jest kontrolowany przez wartość właściwości domeny w relacji, która jest wyświetlana przez łącznik:
+Zamiast tego można zaktualizować takie funkcje przy użyciu programu <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A> . W poniższym przykładzie styl strzałki łącznika jest kontrolowany przez wartość właściwości domeny w relacji, która jest wyświetlana przez łącznik:
 
 ```csharp
 public partial class ArrowConnector // My connector class.
@@ -153,6 +153,6 @@ public partial class ArrowConnector // My connector class.
 }
 ```
 
-`AssociateValueWith()` należy wywoływać jednokrotnie dla każdej właściwości domeny, która ma zostać zarejestrowana. Po jego wywołaniu wszelkie zmiany określonej właściwości będą wywoływać `OnAssociatedPropertyChanged()` w dowolnych kształtach, które zawierają element modelu właściwości.
+`AssociateValueWith()` należy wywołać jednokrotnie dla każdej właściwości domeny, która ma zostać zarejestrowana. Po jego wywołaniu wszelkie zmiany wprowadzonej właściwości będą wywoływane `OnAssociatedPropertyChanged()` we wszystkich kształtach, które zawierają element modelu właściwości.
 
 Nie jest konieczne wywoływanie `AssociateValueWith()` dla każdego wystąpienia. Chociaż InitializeResources jest metodą wystąpienia, jest wywoływana tylko raz dla każdej klasy kształtu.

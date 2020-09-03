@@ -14,10 +14,10 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 3fa32e6155959df6e665a807af3b364923ba3f54
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533461"
 ---
 # <a name="language-conventions"></a>Konwencje języka
@@ -138,7 +138,7 @@ dotnet_style_qualification_for_event = false:suggestion
 | **Nazwa reguły** | dotnet_style_qualification_for_field |
 | **Identyfikator zasady** | IDE0003 i IDE0009 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`— Preferuj pola, które mają być poprzedzone `this.` w języku C# lub `Me.` w Visual Basic<br /><br />`false`— Preferuj pola, do których _nie_ ma być poprzedzone `this.` lub`Me.` |
+| **Wartości** | `true` — Preferuj pola, które mają być poprzedzone `this.` w języku C# lub `Me.` w Visual Basic<br /><br />`false` — Preferuj pola, do których _nie_ ma być poprzedzone `this.` lub `Me.` |
 | **Domyślne dla programu Visual Studio** | `false:silent` |
 
 Przykłady kodu:
@@ -166,7 +166,7 @@ capacity = 0
 | **Nazwa reguły** | dotnet_style_qualification_for_property |
 | **Identyfikator zasady** | IDE0003 i IDE0009 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`— Preferuj właściwości, które mają być poprzedzone `this.` w języku C# lub `Me.` w Visual Basic<br /><br />`false`— Preferuj właściwości, dla których _nie_ ma być poprzedzone `this.` lub`Me.` |
+| **Wartości** | `true` — Preferuj właściwości, które mają być poprzedzone `this.` w języku C# lub `Me.` w Visual Basic<br /><br />`false` — Preferuj właściwości, dla których _nie_ ma być poprzedzone `this.` lub `Me.` |
 | **Domyślne dla programu Visual Studio** | `false:silent` |
 
 Przykłady kodu:
@@ -194,7 +194,7 @@ ID = 0
 | **Nazwa reguły** | dotnet_style_qualification_for_method |
 | **Identyfikator zasady** | IDE0003 i IDE0009 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`-Preferuj metody, które mają być poprzedzone `this.` w języku C# lub `Me.` w Visual Basic.<br /><br />`false`-Preferuj metody, które _nie_ powinny być poprzedzone `this.` lub `Me.` . |
+| **Wartości** | `true` -Preferuj metody, które mają być poprzedzone `this.` w języku C# lub `Me.` w Visual Basic.<br /><br />`false` -Preferuj metody, które _nie_ powinny być poprzedzone `this.` lub `Me.` . |
 | **Domyślne dla programu Visual Studio** | `false:silent` |
 
 Przykłady kodu:
@@ -222,7 +222,7 @@ Display()
 | **Nazwa reguły** | dotnet_style_qualification_for_event |
 | **Identyfikator zasady** | IDE0003 i IDE0009 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`— Preferuj zdarzenia, które mają być poprzedzone `this.` w języku C# lub `Me.` w Visual Basic.<br /><br />`false`-Preferuj zdarzenia, które _nie_ powinny być poprzedzone `this.` lub `Me.` . |
+| **Wartości** | `true` — Preferuj zdarzenia, które mają być poprzedzone `this.` w języku C# lub `Me.` w Visual Basic.<br /><br />`false` -Preferuj zdarzenia, które _nie_ powinny być poprzedzone `this.` lub `Me.` . |
 | **Domyślne dla programu Visual Studio** | `false:silent` |
 
 Przykłady kodu:
@@ -263,7 +263,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 | **Nazwa reguły** | dotnet_style_predefined_type_for_locals_parameters_members |
 | **Identyfikator zasady** | IDE0012 i IDE0014 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`-Preferuj słowo kluczowe Language dla zmiennych lokalnych, parametrów metod i składowych klasy, a nie nazwy typu, dla typów, które mają słowo kluczowe do reprezentowania<br /><br />`false`-Preferuj nazwę typu dla zmiennych lokalnych, parametrów metod i składowych klasy, zamiast słowa kluczowego language |
+| **Wartości** | `true` -Preferuj słowo kluczowe Language dla zmiennych lokalnych, parametrów metod i składowych klasy, a nie nazwy typu, dla typów, które mają słowo kluczowe do reprezentowania<br /><br />`false` -Preferuj nazwę typu dla zmiennych lokalnych, parametrów metod i składowych klasy, zamiast słowa kluczowego language |
 | **Domyślne dla programu Visual Studio** | `true:silent` |
 
 Przykłady kodu:
@@ -291,7 +291,7 @@ Private _member As Int32
 | **Nazwa reguły** | dotnet_style_predefined_type_for_member_access |
 | **Identyfikator zasady** | IDE0013 i IDE0015 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`-Preferuj słowo kluczowe Language dla wyrażeń dostępu do składowych, zamiast nazwy typu, dla typów, które mają słowo kluczowe do reprezentowania<br /><br />`false`-Preferuj nazwę typu dla wyrażeń dostępu do składowych zamiast słowa kluczowego language |
+| **Wartości** | `true` -Preferuj słowo kluczowe Language dla wyrażeń dostępu do składowych, zamiast nazwy typu, dla typów, które mają słowo kluczowe do reprezentowania<br /><br />`false` -Preferuj nazwę typu dla wyrażeń dostępu do składowych zamiast słowa kluczowego language |
 | **Domyślne dla programu Visual Studio** | `true:silent` |
 
 Przykłady kodu:
@@ -340,7 +340,7 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 | **Nazwa reguły** | dotnet_style_require_accessibility_modifiers |
 | **Identyfikator zasady** | IDE0040 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `always`-Preferuj Modyfikatory dostępności do określenia.<br /><br />`for_non_interface_members`-Preferuj Modyfikatory dostępności, które mają być zadeklarowane z wyjątkiem publicznych elementów członkowskich interfejsu. (Jest to taka sama jak **zawsze** i została dodana do przyszłego sprawdzenia, jeśli C# dodaje domyślne metody interfejsu).<br /><br />`never`-Nie Preferuj modyfikatorów dostępności, które mają być określone.<br /><br />`omit_if_default`-Preferuj Modyfikatory dostępności, chyba że są modyfikatorem domyślnym. |
+| **Wartości** | `always` -Preferuj Modyfikatory dostępności do określenia.<br /><br />`for_non_interface_members` -Preferuj Modyfikatory dostępności, które mają być zadeklarowane z wyjątkiem publicznych elementów członkowskich interfejsu. (Jest to taka sama jak **zawsze** i została dodana do przyszłego sprawdzenia, jeśli C# dodaje domyślne metody interfejsu).<br /><br />`never` -Nie Preferuj modyfikatorów dostępności, które mają być określone.<br /><br />`omit_if_default` -Preferuj Modyfikatory dostępności, chyba że są modyfikatorem domyślnym. |
 | **Domyślne dla programu Visual Studio** | `for_non_interface_members:silent` |
 | **Wprowadzona wersja** | Visual Studio 2017, wersja 15.5 |
 
@@ -368,7 +368,7 @@ class MyClass
 | **Nazwa reguły** | csharp_preferred_modifier_order |
 | **Identyfikator zasady** | IDE0036 |
 | **Odpowiednie języki** | C# |
-| **Wartości** | Co najmniej jeden modyfikator języka C#, taki jak `public` , `private` , i`protected` |
+| **Wartości** | Co najmniej jeden modyfikator języka C#, taki jak `public` , `private` , i `protected` |
 | **Domyślne dla programu Visual Studio** | `public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:silent` |
 | **Wprowadzona wersja** | Visual Studio 2017, wersja 15.5 |
 
@@ -392,7 +392,7 @@ class MyClass
 | **Nazwa reguły** | visual_basic_preferred_modifier_order |
 | **Identyfikator zasady** | IDE0036 |
 | **Odpowiednie języki** | Visual Basic |
-| **Wartości** | Co najmniej jeden modyfikator Visual Basic, taki jak `Partial` , `Private` , i`Public` |
+| **Wartości** | Co najmniej jeden modyfikator Visual Basic, taki jak `Partial` , `Private` , i `Public` |
 | **Domyślne dla programu Visual Studio** | `Partial, Default, Private, Protected, Public, Friend, NotOverridable, Overridable, MustOverride, Overloads, Overrides, MustInherit, NotInheritable, Static, Shared, Shadows, ReadOnly, WriteOnly, Dim, Const,WithEvents, Widening, Narrowing, Custom, Async:silent` |
 | **Wprowadzona wersja** | Visual Studio 2017, wersja 15.5 |
 
@@ -452,7 +452,7 @@ Dim x = 1;
 | **Nazwa reguły** | dotnet_style_readonly_field |
 | **Identyfikator zasady** | IDE0044 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`-Preferuj pola, które powinny być oznaczone przy użyciu `readonly` (C#) lub `ReadOnly` (Visual Basic), jeśli są tylko kiedykolwiek przypisywać wbudowane lub wewnątrz konstruktora<br /><br />`false`-Określ brak preferencji dla pól, które powinny być oznaczone przy użyciu `readonly` (C#) lub `ReadOnly` (Visual Basic) |
+| **Wartości** | `true` -Preferuj pola, które powinny być oznaczone przy użyciu `readonly` (C#) lub `ReadOnly` (Visual Basic), jeśli są tylko kiedykolwiek przypisywać wbudowane lub wewnątrz konstruktora<br /><br />`false` -Określ brak preferencji dla pól, które powinny być oznaczone przy użyciu `readonly` (C#) lub `ReadOnly` (Visual Basic) |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 | **Wprowadzona wersja** | Visual Studio 2017 w wersji 15.7 |
 
@@ -495,7 +495,7 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 | **Nazwa reguły** | dotnet_style_parentheses_in_arithmetic_binary_operators |
 | **Identyfikator zasady** | IDE0047 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `always_for_clarity`— Preferuj nawiasy, aby wyjaśnić `*` `/` `%` `+` `-` `<<` `>>` `&` `^` `|` pierwszeństwo operatorów arytmetycznych (,,,,,,,,)<br /><br />`never_if_unnecessary`-Preferuj nie zawierać nawiasów, gdy pierwszeństwo operatorów arytmetycznych (,,,,,,,, `*` `/` `%` `+` `-` `<<` `>>` `&` `^` `|` ) jest oczywiste |
+| **Wartości** | `always_for_clarity` — Preferuj nawiasy, aby wyjaśnić `*` `/` `%` `+` `-` `<<` `>>` `&` `^` `|` pierwszeństwo operatorów arytmetycznych (,,,,,,,,)<br /><br />`never_if_unnecessary` -Preferuj nie zawierać nawiasów, gdy pierwszeństwo operatorów arytmetycznych (,,,,,,,, `*` `/` `%` `+` `-` `<<` `>>` `&` `^` `|` ) jest oczywiste |
 | **Domyślne dla programu Visual Studio** | `always_for_clarity:silent` |
 | **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,8 |
 
@@ -524,7 +524,7 @@ Dim v = a + b * c
 | **Nazwa reguły** | dotnet_style_parentheses_in_relational_binary_operators |
 | **Identyfikator zasady** | IDE0047 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `always_for_clarity`— Preferuj nawiasy, aby wyjaśnić `>` `<` `<=` `>=` `is` `as` `==` `!=` pierwszeństwo operatorów relacyjnych (,,,,,,)<br /><br />`never_if_unnecessary`-Preferuj nie zawierać nawiasów, gdy pierwszeństwo operatorów relacyjnych (,,,,,, `>` `<` `<=` `>=` `is` `as` `==` `!=` ) jest oczywiste |
+| **Wartości** | `always_for_clarity` — Preferuj nawiasy, aby wyjaśnić `>` `<` `<=` `>=` `is` `as` `==` `!=` pierwszeństwo operatorów relacyjnych (,,,,,,)<br /><br />`never_if_unnecessary` -Preferuj nie zawierać nawiasów, gdy pierwszeństwo operatorów relacyjnych (,,,,,, `>` `<` `<=` `>=` `is` `as` `==` `!=` ) jest oczywiste |
 | **Domyślne dla programu Visual Studio** | `always_for_clarity:silent` |
 | **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,8 |
 
@@ -553,7 +553,7 @@ Dim v = a < b = c > d
 | **Nazwa reguły** | dotnet_style_parentheses_in_other_binary_operators |
 | **Identyfikator zasady** | IDE0047 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `always_for_clarity`-Preferuj nawiasy, aby wyjaśnić inny priorytet binarny ( `&&` , `||` , `??` )<br /><br />`never_if_unnecessary`-Preferuj nie zawierać nawiasów, gdy pierwszeństwo operatora binarnego ( `&&` , `||` , `??` ) jest oczywiste |
+| **Wartości** | `always_for_clarity` -Preferuj nawiasy, aby wyjaśnić inny priorytet binarny ( `&&` , `||` , `??` )<br /><br />`never_if_unnecessary` -Preferuj nie zawierać nawiasów, gdy pierwszeństwo operatora binarnego ( `&&` , `||` , `??` ) jest oczywiste |
 | **Domyślne dla programu Visual Studio** | `always_for_clarity:silent` |
 | **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,8 |
 
@@ -582,7 +582,7 @@ Dim v = a OrElse b AndAlso c
 | **Nazwa reguły** | dotnet_style_parentheses_in_other_operators |
 | **Identyfikator zasady** | IDE0047 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `always_for_clarity`-Preferuj nawiasy, aby wyjaśnić pierwszeństwo operatorów<br /><br />`never_if_unnecessary`-Preferuj nie zawierać nawiasów, gdy pierwszeństwo operatora jest oczywiste |
+| **Wartości** | `always_for_clarity` -Preferuj nawiasy, aby wyjaśnić pierwszeństwo operatorów<br /><br />`never_if_unnecessary` -Preferuj nie zawierać nawiasów, gdy pierwszeństwo operatora jest oczywiste |
 | **Domyślne dla programu Visual Studio** | `never_if_unnecessary:silent` |
 | **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,8 |
 
@@ -631,7 +631,7 @@ dotnet_style_prefer_compound_assignment = true:suggestion
 | **Nazwa reguły** | dotnet_style_object_initializer |
 | **Identyfikator zasady** | IDE0017 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`-Preferuj obiekty do zainicjowania przy użyciu inicjatorów obiektów, gdy jest to możliwe<br /><br />`false`-Preferuj obiekty, które *nie* mogą być inicjowane przy użyciu inicjatorów obiektów |
+| **Wartości** | `true` -Preferuj obiekty do zainicjowania przy użyciu inicjatorów obiektów, gdy jest to możliwe<br /><br />`false` -Preferuj obiekty, które *nie* mogą być inicjowane przy użyciu inicjatorów obiektów |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -661,7 +661,7 @@ c.Age = 21
 | **Nazwa reguły** | dotnet_style_collection_initializer |
 | **Identyfikator zasady** | IDE0028 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`-Preferuj kolekcje do zainicjowania przy użyciu inicjatorów kolekcji, gdy jest to możliwe<br /><br />`false`-Preferuj kolekcje, których *nie* można zainicjować przy użyciu inicjatorów kolekcji |
+| **Wartości** | `true` -Preferuj kolekcje do zainicjowania przy użyciu inicjatorów kolekcji, gdy jest to możliwe<br /><br />`false` -Preferuj kolekcje, których *nie* można zainicjować przy użyciu inicjatorów kolekcji |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -695,7 +695,7 @@ list.Add(3)
 | **Nazwa reguły** | dotnet_style_explicit_tuple_names |
 | **Identyfikator zasady** | IDE0033 |
 | **Odpowiednie języki** | C# 7.0 + i Visual Basic 15 + |
-| **Wartości** | `true`-Preferuj nazwy krotek do ItemX właściwości<br /><br />`false`-Preferuj właściwości ItemX do nazw krotek |
+| **Wartości** | `true` -Preferuj nazwy krotek do ItemX właściwości<br /><br />`false` -Preferuj właściwości ItemX do nazw krotek |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -727,7 +727,7 @@ Dim name = customer.Item1
 | **Nazwa reguły** | dotnet_style_prefer_inferred_tuple_names |
 | **Identyfikator zasady** | IDE0037 |
 | **Odpowiednie języki** | C# 7.1 + i Visual Basic 15 + |
-| **Wartości** | `true`-Preferuj wywnioskowane nazwy elementów krotki<br /><br />`false`-Preferuj jawne nazwy elementów krotki |
+| **Wartości** | `true` -Preferuj wywnioskowane nazwy elementów krotki<br /><br />`false` -Preferuj jawne nazwy elementów krotki |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 | **Wprowadzona wersja** | Visual Studio 2017, wersja 15.6 |
 
@@ -756,7 +756,7 @@ Dim tuple = (name:=name, age:=age)
 | **Nazwa reguły** | dotnet_style_prefer_inferred_anonymous_type_member_names |
 | **Identyfikator zasady** | IDE0037 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`-Preferuj wywnioskowane nazwy anonimowych elementów członkowskich typu<br /><br />`false`-Preferuj jawne nazwy anonimowych elementów członkowskich typu |
+| **Wartości** | `true` -Preferuj wywnioskowane nazwy anonimowych elementów członkowskich typu<br /><br />`false` -Preferuj jawne nazwy anonimowych elementów członkowskich typu |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 | **Wprowadzona wersja** | Visual Studio 2017, wersja 15.6 |
 
@@ -785,7 +785,7 @@ Dim anon = New With {.name = name, .age = age}
 | **Nazwa reguły** | dotnet_style_prefer_auto_properties |
 | **Identyfikator zasady** | IDE0032 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`-Preferuj właściwości autoproperties względem właściwości z prywatnymi polami zapasowymi<br /><br />`false`-Preferuj właściwości z prywatnymi polami zapasowymi przy użyciu właściwości autoproperties |
+| **Wartości** | `true` -Preferuj właściwości autoproperties względem właściwości z prywatnymi polami zapasowymi<br /><br />`false` -Preferuj właściwości z prywatnymi polami zapasowymi przy użyciu właściwości autoproperties |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 | **Wprowadzona wersja** | Visual Studio 2017 w wersji 15.7 |
 
@@ -828,7 +828,7 @@ End Property
 | **Nazwa reguły** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
 | **Identyfikator zasady** | IDE0041 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`-Preferuj przy użyciu sprawdzenia wartości null z dopasowaniem do wzorca`object.ReferenceEquals`<br /><br />`false`-Preferuj `object.ReferenceEquals` w przypadku sprawdzenia wartości null z dopasowaniem do wzorca |
+| **Wartości** | `true` -Preferuj przy użyciu sprawdzenia wartości null z dopasowaniem do wzorca `object.ReferenceEquals`<br /><br />`false` -Preferuj `object.ReferenceEquals` w przypadku sprawdzenia wartości null z dopasowaniem do wzorca |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 | **Wprowadzona wersja** | Visual Studio 2017 w wersji 15.7 |
 
@@ -863,7 +863,7 @@ End If
 | **Nazwa reguły** | dotnet_style_prefer_conditional_expression_over_assignment |
 | **Identyfikator zasady** | IDE0045 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`-Preferuj przypisania za pomocą elementu Trzyelementowy w instrukcji if-else<br /><br />`false`-Preferuj przypisania z instrukcją if-else w przypadku elementu "Trzyelementowy" |
+| **Wartości** | `true` -Preferuj przypisania za pomocą elementu Trzyelementowy w instrukcji if-else<br /><br />`false` -Preferuj przypisania z instrukcją if-else w przypadku elementu "Trzyelementowy" |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 | **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,8 |
 
@@ -905,7 +905,7 @@ End If
 | **Nazwa reguły** | dotnet_style_prefer_conditional_expression_over_return |
 | **Identyfikator zasady** | IDE0046 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`-Preferuj instrukcje Return, aby używać elementu Trzyelementowy w instrukcji if-else<br /><br />`false`-Preferuj instrukcje Return, aby użyć instrukcji if-else w przypadku elementu "Trzyelementowy" |
+| **Wartości** | `true` -Preferuj instrukcje Return, aby używać elementu Trzyelementowy w instrukcji if-else<br /><br />`false` -Preferuj instrukcje Return, aby użyć instrukcji if-else w przypadku elementu "Trzyelementowy" |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 | **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,8 |
 
@@ -945,7 +945,7 @@ End If
 | **Nazwa reguły** | dotnet_style_prefer_compound_assignment |
 | **Identyfikator zasady** | IDE0054 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`-Preferuj wyrażenia [złożonego przypisania](/dotnet/csharp/language-reference/operators/assignment-operator#compound-assignment)<br /><br />`false`-Nie Preferuj wyrażeń przypisania złożonego |
+| **Wartości** | `true`-Preferuj wyrażenia [złożonego przypisania](/dotnet/csharp/language-reference/operators/assignment-operator#compound-assignment)<br /><br />`false` -Nie Preferuj wyrażeń przypisania złożonego |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -987,7 +987,7 @@ dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
 | **Nazwa reguły** | dotnet_style_coalesce_expression |
 | **Identyfikator zasady** | IDE0029 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`-Preferuj wyrażenia łączenia wartości null do sprawdzania operatora Trzyelementowy<br /><br />`false`-Preferuj sprawdzanie łączenia operatora Trzyelementowy z wyrażeniami łączącymi wartości null |
+| **Wartości** | `true` -Preferuj wyrażenia łączenia wartości null do sprawdzania operatora Trzyelementowy<br /><br />`false` -Preferuj sprawdzanie łączenia operatora Trzyelementowy z wyrażeniami łączącymi wartości null |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -1017,7 +1017,7 @@ Dim v = If(x IsNot Nothing, x, y)
 | **Nazwa reguły** | dotnet_style_null_propagation |
 | **Identyfikator zasady** | IDE0031 |
 | **Odpowiednie języki** | C# 6.0 + i Visual Basic 14 + |
-| **Wartości** | `true`-Preferuj użycie operatora warunkowego null, gdy jest to możliwe<br /><br />`false`-Woli użyć sprawdzania wartości null w przypadku, gdy jest to możliwe |
+| **Wartości** | `true` -Preferuj użycie operatora warunkowego null, gdy jest to możliwe<br /><br />`false` -Woli użyć sprawdzania wartości null w przypadku, gdy jest to możliwe |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -1047,7 +1047,7 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 | **Nazwa reguły** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
 | **Identyfikator zasady** | IDE0041 |
 | **Odpowiednie języki** | C# 6.0 + i Visual Basic 14 + |
-| **Wartości** | `true`-Preferuj jest sprawdzenie wartości null względem metody równości odwołań<br /><br />`false`-Preferuj metodę równości odwołań w przypadku sprawdzenia wartości null |
+| **Wartości** | `true` -Preferuj jest sprawdzenie wartości null względem metody równości odwołań<br /><br />`false` -Preferuj metodę równości odwołań w przypadku sprawdzenia wartości null |
 | **Domyślne dla programu Visual Studio** | `true:silent` |
 
 ## <a name="net-code-quality-settings"></a>Ustawienia jakości kodu platformy .NET
@@ -1076,7 +1076,7 @@ dotnet_code_quality_unused_parameters = all:suggestion
 | **Nazwa reguły** | dotnet_code_quality_unused_parameters |
 | **Identyfikator zasady** | IDE0060 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `all`-Oflaguj metody z dowolnym ułatwieniami dostępu, które zawierają nieużywane parametry<br /><br />`non_public`-Oflaguj tylko metody niepubliczne, które zawierają nieużywane parametry |
+| **Wartości** | `all` -Oflaguj metody z dowolnym ułatwieniami dostępu, które zawierają nieużywane parametry<br /><br />`non_public` -Oflaguj tylko metody niepubliczne, które zawierają nieużywane parametry |
 | **Domyślne dla programu Visual Studio** | `all:suggestion` |
 
 Przykłady kodu:
@@ -1167,7 +1167,7 @@ csharp_style_var_elsewhere = true:suggestion
 | **Nazwa reguły** | csharp_style_var_for_built_in_types |
 | **Identyfikator zasady** | IDE0007 i IDE0008 |
 | **Odpowiednie języki** | C#  |
-| **Wartości** | `true`-Preferuj służy `var` do deklarowania zmiennych przy użyciu wbudowanych typów systemu, takich jak`int`<br /><br />`false`-Preferuj jawny typ `var` do deklarowania zmiennych przy użyciu wbudowanych typów systemu, takich jak`int` |
+| **Wartości** | `true` -Preferuj służy `var` do deklarowania zmiennych przy użyciu wbudowanych typów systemu, takich jak `int`<br /><br />`false` -Preferuj jawny typ `var` do deklarowania zmiennych przy użyciu wbudowanych typów systemu, takich jak `int` |
 | **Domyślne dla programu Visual Studio** | `true:silent` |
 
 Przykłady kodu:
@@ -1187,7 +1187,7 @@ int x = 5;
 | **Nazwa reguły** | csharp_style_var_when_type_is_apparent |
 | **Identyfikator zasady** | IDE0007 i IDE0008 |
 | **Odpowiednie języki** | C#  |
-| **Wartości** | `true`-Preferuj `var` , gdy typ jest już wymieniony po prawej stronie wyrażenia deklaracji<br /><br />`false`-Preferuj jawny typ w `var` przypadku, gdy typ jest już wymieniony po prawej stronie wyrażenia deklaracji |
+| **Wartości** | `true` -Preferuj `var` , gdy typ jest już wymieniony po prawej stronie wyrażenia deklaracji<br /><br />`false` -Preferuj jawny typ w `var` przypadku, gdy typ jest już wymieniony po prawej stronie wyrażenia deklaracji |
 | **Domyślne dla programu Visual Studio** | `true:silent` |
 
 Przykłady kodu:
@@ -1207,7 +1207,7 @@ Customer obj = new Customer();
 | **Nazwa reguły** | csharp_style_var_elsewhere |
 | **Identyfikator zasady** | IDE0007 i IDE0008 |
 | **Odpowiednie języki** | C#  |
-| **Wartości** | `true`— Preferuj `var` przez jawne typy we wszystkich przypadkach, chyba że zostaną zastąpione przez inną regułę w stylu kodu<br /><br />`false`-Preferuj jawny typ `var` we wszystkich przypadkach, chyba że jest zastępowany przez inną regułę w stylu kodu |
+| **Wartości** | `true` — Preferuj `var` przez jawne typy we wszystkich przypadkach, chyba że zostaną zastąpione przez inną regułę w stylu kodu<br /><br />`false` -Preferuj jawny typ `var` we wszystkich przypadkach, chyba że jest zastępowany przez inną regułę w stylu kodu |
 | **Domyślne dla programu Visual Studio** | `true:silent` |
 
 Przykłady kodu:
@@ -1246,7 +1246,7 @@ csharp_style_expression_bodied_local_functions = false:silent
 | **Nazwa reguły** | csharp_style_expression_bodied_methods |
 | **Identyfikator zasady** | IDE0022 |
 | **Odpowiednie języki** | C# 6.0 +  |
-| **Wartości** | `true`-Preferuj treści wyrażenia dla metod<br /><br />`when_on_single_line`-Preferuj treści wyrażenia dla metod, gdy będą one pojedynczym wierszem<br /><br />`false`-Preferuj treści bloku dla metod |
+| **Wartości** | `true` -Preferuj treści wyrażenia dla metod<br /><br />`when_on_single_line` -Preferuj treści wyrażenia dla metod, gdy będą one pojedynczym wierszem<br /><br />`false` -Preferuj treści bloku dla metod |
 | **Domyślne dla programu Visual Studio** | `false:silent` |
 
 Przykłady kodu:
@@ -1266,7 +1266,7 @@ public int GetAge() { return this.Age; }
 | **Nazwa reguły** | csharp_style_expression_bodied_constructors |
 | **Identyfikator zasady** | IDE0021 |
 | **Odpowiednie języki** | C# 7.0 + |
-| **Wartości** | `true`-Preferuj treści wyrażenia dla konstruktorów<br /><br />`when_on_single_line`-Preferuj treści wyrażeń dla konstruktorów, gdy będą one jednym wierszem<br /><br />`false`-Preferuj treści bloku dla konstruktorów |
+| **Wartości** | `true` -Preferuj treści wyrażenia dla konstruktorów<br /><br />`when_on_single_line` -Preferuj treści wyrażeń dla konstruktorów, gdy będą one jednym wierszem<br /><br />`false` -Preferuj treści bloku dla konstruktorów |
 | **Domyślne dla programu Visual Studio** | `false:silent` |
 
 Przykłady kodu:
@@ -1286,7 +1286,7 @@ public Customer(int age) { Age = age; }
 | **Nazwa reguły** | csharp_style_expression_bodied_operators |
 | **Identyfikator zasady** | IDE0023 i IDE0024 |
 | **Odpowiednie języki** | C# 7.0 + |
-| **Wartości** | `true`-Preferuj treści wyrażenia dla operatorów<br /><br />`when_on_single_line`-Preferowane treści wyrażenia dla operatorów, gdy będą one pojedynczym wierszem<br /><br />`false`-Preferuj treści bloku dla operatorów |
+| **Wartości** | `true` -Preferuj treści wyrażenia dla operatorów<br /><br />`when_on_single_line` -Preferowane treści wyrażenia dla operatorów, gdy będą one pojedynczym wierszem<br /><br />`false` -Preferuj treści bloku dla operatorów |
 | **Domyślne dla programu Visual Studio** | `false:silent` |
 
 Przykłady kodu:
@@ -1308,7 +1308,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 | **Nazwa reguły** | csharp_style_expression_bodied_properties |
 | **Identyfikator zasady** | IDE0025 |
 | **Odpowiednie języki** | C# 7.0 + |
-| **Wartości** | `true`-Preferuj treści wyrażenia dla właściwości<br /><br />`when_on_single_line`— Preferuj treści wyrażenia dla właściwości, gdy będą one pojedynczym wierszem<br /><br />`false`-Preferuj treści bloku dla właściwości |
+| **Wartości** | `true` -Preferuj treści wyrażenia dla właściwości<br /><br />`when_on_single_line` — Preferuj treści wyrażenia dla właściwości, gdy będą one pojedynczym wierszem<br /><br />`false` -Preferuj treści bloku dla właściwości |
 | **Domyślne dla programu Visual Studio** | `true:silent` |
 
 Przykłady kodu:
@@ -1328,7 +1328,7 @@ public int Age { get { return _age; }}
 | **Nazwa reguły** | csharp_style_expression_bodied_indexers |
 | **Identyfikator zasady** | IDE0026 |
 | **Odpowiednie języki** | C# 7.0 + |
-| **Wartości** | `true`-Preferuj treści wyrażeń dla indeksatorów<br /><br />`when_on_single_line`-Preferuj treści wyrażeń dla indeksatorów, gdy będą one jednym wierszem<br /><br />`false`-Preferuj treści bloku dla indeksatorów |
+| **Wartości** | `true` -Preferuj treści wyrażeń dla indeksatorów<br /><br />`when_on_single_line` -Preferuj treści wyrażeń dla indeksatorów, gdy będą one jednym wierszem<br /><br />`false` -Preferuj treści bloku dla indeksatorów |
 | **Domyślne dla programu Visual Studio** | `true:silent` |
 
 Przykłady kodu:
@@ -1348,7 +1348,7 @@ public T this[int i] { get { return _values[i]; } }
 | **Nazwa reguły** | csharp_style_expression_bodied_accessors |
 | **Identyfikator zasady** | IDE0027 |
 | **Odpowiednie języki** | C# 7.0 + |
-| **Wartości** | `true`-Preferuj treści wyrażenia dla metod dostępu<br /><br />`when_on_single_line`-Preferuj treści wyrażenia dla metod dostępu, gdy będą one pojedynczym wierszem<br /><br />`false`-Preferuj treści bloku dla metod dostępu |
+| **Wartości** | `true` -Preferuj treści wyrażenia dla metod dostępu<br /><br />`when_on_single_line` -Preferuj treści wyrażenia dla metod dostępu, gdy będą one pojedynczym wierszem<br /><br />`false` -Preferuj treści bloku dla metod dostępu |
 | **Domyślne dla programu Visual Studio** | `true:silent` |
 
 Przykłady kodu:
@@ -1367,7 +1367,7 @@ public int Age { get { return _age; } set { _age = value; } }
 |-|-|
 | **Nazwa reguły** | csharp_style_expression_bodied_lambdas |
 | **Identyfikator zasady** | IDE0053 |
-| **Wartości** | `true`-Preferuj treści wyrażeń dla wyrażeń lambda<br /><br />`when_on_single_line`-Preferuj treści wyrażeń dla wyrażeń lambda, gdy będą one pojedynczym wierszem<br /><br />`false`-Preferuj treści bloku dla wyrażeń lambda |
+| **Wartości** | `true` -Preferuj treści wyrażeń dla wyrażeń lambda<br /><br />`when_on_single_line` -Preferuj treści wyrażeń dla wyrażeń lambda, gdy będą one pojedynczym wierszem<br /><br />`false` -Preferuj treści bloku dla wyrażeń lambda |
 | **Domyślne dla programu Visual Studio** | `true:silent` |
 
 Przykłady kodu:
@@ -1389,7 +1389,7 @@ Począwszy od języka C# 7,0, C# obsługuje [funkcje lokalne](/dotnet/csharp/pro
 | **Nazwa reguły** | csharp_style_expression_bodied_local_functions |
 | **Identyfikator zasady** | IDE0061 |
 | **Odpowiednie języki** | C# 7.0 + |
-| **Wartości** | `true`-Preferuj treści wyrażeń dla funkcji lokalnych<br /><br />`when_on_single_line`-Preferuj treści wyrażeń dla funkcji lokalnych, gdy będą one jednym wierszem<br /><br />`false`-Preferuj treści bloku dla funkcji lokalnych |
+| **Wartości** | `true` -Preferuj treści wyrażeń dla funkcji lokalnych<br /><br />`when_on_single_line` -Preferuj treści wyrażeń dla funkcji lokalnych, gdy będą one jednym wierszem<br /><br />`false` -Preferuj treści bloku dla funkcji lokalnych |
 | **Domyślne dla programu Visual Studio** | `false:silent` |
 
 Przykłady kodu:
@@ -1433,7 +1433,7 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 | **Nazwa reguły** | csharp_style_pattern_matching_over_is_with_cast_check |
 | **Identyfikator zasady** | IDE0020 |
 | **Odpowiednie języki** | C# 7.0 + |
-| **Wartości** | `true`-Preferuj Dopasowywanie wzorców zamiast `is` wyrażeń z rzutowania typu<br /><br />`false`-Preferuj `is` wyrażenia z rzutowania typu zamiast dopasowania do wzorca |
+| **Wartości** | `true` -Preferuj Dopasowywanie wzorców zamiast `is` wyrażeń z rzutowania typu<br /><br />`false` -Preferuj `is` wyrażenia z rzutowania typu zamiast dopasowania do wzorca |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -1453,7 +1453,7 @@ if (o is int) {var i = (int)o; ... }
 | **Nazwa reguły** | csharp_style_pattern_matching_over_as_with_null_check |
 | **Identyfikator zasady** | IDE0019 |
 | **Odpowiednie języki** | C# 7.0 + |
-| **Wartości** | `true`-Preferuj Dopasowywanie wzorców zamiast `as` wyrażeń z sprawdzeniami null, aby określić, czy coś jest określonego typu<br /><br />`false`-Preferuj `as` wyrażenia z kontrolami null zamiast dopasowywania do wzorca, aby określić, czy coś jest określonego typu |
+| **Wartości** | `true` -Preferuj Dopasowywanie wzorców zamiast `as` wyrażeń z sprawdzeniami null, aby określić, czy coś jest określonego typu<br /><br />`false` -Preferuj `as` wyrażenia z kontrolami null zamiast dopasowywania do wzorca, aby określić, czy coś jest określonego typu |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -1478,7 +1478,7 @@ Ta zasada stylu ma wpływ na to `out` , czy zmienne są zadeklarowane wewnętrzn
 | **Nazwa reguły** | csharp_style_inlined_variable_declaration |
 | **Identyfikator zasady** | IDE0018 |
 | **Odpowiednie języki** | C# 7.0 + |
-| **Wartości** | `true`-Preferuj `out` zmienne, które mają być zadeklarowane jako wbudowane na liście argumentów wywołania metody, jeśli jest to możliwe<br /><br />`false`-Preferuj `out` zmienne, które mają być zadeklarowane przed wywołaniem metody |
+| **Wartości** | `true` -Preferuj `out` zmienne, które mają być zadeklarowane jako wbudowane na liście argumentów wywołania metody, jeśli jest to możliwe<br /><br />`false` -Preferuj `out` zmienne, które mają być zadeklarowane przed wywołaniem metody |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -1554,7 +1554,7 @@ csharp_style_conditional_delegate_call = false:suggestion
 | **Nazwa reguły** | csharp_style_throw_expression |
 | **Identyfikator zasady** | IDE0016 |
 | **Odpowiednie języki** | C# 7.0 + |
-| **Wartości** | `true`-Woli używać `throw` wyrażeń zamiast `throw` instrukcji<br /><br />`false`-Woli użyć `throw` instrukcji zamiast `throw` wyrażeń |
+| **Wartości** | `true` -Woli używać `throw` wyrażeń zamiast `throw` instrukcji<br /><br />`false` -Woli użyć `throw` instrukcji zamiast `throw` wyrażeń |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -1575,7 +1575,7 @@ this.s = s;
 | **Nazwa reguły** | csharp_style_conditional_delegate_call |
 | **Identyfikator zasady** | IDE0041 |
 | **Odpowiednie języki** | C# 6.0 +  |
-| **Wartości** | `true`-Odwołaj się do użycia operatora łączenia warunkowego ( `?.` ) podczas wywoływania wyrażenia lambda, zamiast przeprowadzania sprawdzenia wartości null<br /><br />`false`-Woli wykonać sprawdzenie wartości null przed wywołaniem wyrażenia lambda zamiast przy użyciu operatora łączenia warunkowego ( `?.` ) |
+| **Wartości** | `true` -Odwołaj się do użycia operatora łączenia warunkowego ( `?.` ) podczas wywoływania wyrażenia lambda, zamiast przeprowadzania sprawdzenia wartości null<br /><br />`false` -Woli wykonać sprawdzenie wartości null przed wywołaniem wyrażenia lambda zamiast przy użyciu operatora łączenia warunkowego ( `?.` ) |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -1607,7 +1607,7 @@ csharp_prefer_braces = true:silent
 | **Nazwa reguły** | csharp_prefer_braces |
 | **Identyfikator zasady** | IDE0011 |
 | **Odpowiednie języki** | C# |
-| **Wartości** | `true`-Preferuj nawiasy klamrowe nawet dla jednego wiersza kodu<br /><br />`false`-Preferuj brak nawiasów klamrowych, jeśli są dozwolone<br /><br />`when_multiline`-Preferuj nawiasy klamrowe w wielu wierszach |
+| **Wartości** | `true` -Preferuj nawiasy klamrowe nawet dla jednego wiersza kodu<br /><br />`false` -Preferuj brak nawiasów klamrowych, jeśli są dozwolone<br /><br />`when_multiline` -Preferuj nawiasy klamrowe w wielu wierszach |
 | **Domyślne dla programu Visual Studio** | `true:silent` |
 
 Przykłady kodu:
@@ -1640,7 +1640,7 @@ csharp_style_unused_value_assignment_preference = discard_variable:suggestion
 | **Nazwa reguły** | csharp_style_unused_value_expression_statement_preference |
 | **Identyfikator zasady** | IDE0058 |
 | **Odpowiednie języki** | C# |
-| **Wartości** | `discard_variable`-Preferuj, aby przypisać nieużywane wyrażenie do [odrzucenia](/dotnet/csharp/discards) <br /><br />`unused_local_variable`-Preferuj, aby przypisać nieużywane wyrażenie do zmiennej lokalnej |
+| **Wartości** | `discard_variable` -Preferuj, aby przypisać nieużywane wyrażenie do [odrzucenia](/dotnet/csharp/discards) <br /><br />`unused_local_variable` -Preferuj, aby przypisać nieużywane wyrażenie do zmiennej lokalnej |
 | **Domyślne dla programu Visual Studio** | `discard_variable:silent` |
 
 Przykłady kodu:
@@ -1665,7 +1665,7 @@ var unused = Convert.ToInt32("35");
 | **Nazwa reguły** | csharp_style_unused_value_assignment_preference |
 | **Identyfikator zasady** | IDE0059 |
 | **Odpowiednie języki** | C# |
-| **Wartości** | `discard_variable`-Preferuj użycie [odrzucenia](/dotnet/csharp/discards) podczas przypisywania wartości, która nie jest używana<br /><br />`unused_local_variable`-Woli użyć zmiennej lokalnej przy przypisywaniu wartości, która nie jest używana |
+| **Wartości** | `discard_variable` -Preferuj użycie [odrzucenia](/dotnet/csharp/discards) podczas przypisywania wartości, która nie jest używana<br /><br />`unused_local_variable` -Woli użyć zmiennej lokalnej przy przypisywaniu wartości, która nie jest używana |
 | **Domyślne dla programu Visual Studio** | `discard_variable:suggestion` |
 
 Przykłady kodu:
@@ -1706,7 +1706,7 @@ csharp_style_prefer_range_operator = true:suggestion
 | **Nazwa reguły** | csharp_style_prefer_index_operator |
 | **Identyfikator zasady** | IDE0056 |
 | **Odpowiednie języki** | C# 8.0 + |
-| **Wartości** | `true`-Woli użyć `^` operatora podczas obliczania indeksu na końcu kolekcji<br /><br />`false`-Nie woli używać `^` operatora podczas obliczania indeksu na końcu kolekcji |
+| **Wartości** | `true` -Woli użyć `^` operatora podczas obliczania indeksu na końcu kolekcji<br /><br />`false` -Nie woli używać `^` operatora podczas obliczania indeksu na końcu kolekcji |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -1728,7 +1728,7 @@ var index = names[names.Length - 1];
 | **Nazwa reguły** | csharp_style_prefer_range_operator |
 | **Identyfikator zasady** | IDE0057 |
 | **Odpowiednie języki** | C# 8.0 + |
-| **Wartości** | `true`-Woli użyć operatora zakresu `..` podczas wyodrębniania "wycinka" kolekcji<br /><br />`false`-Nie Preferuj do używania operatora zakresu `..` podczas wyodrębniania "wycinka" kolekcji |
+| **Wartości** | `true` -Woli użyć operatora zakresu `..` podczas wyodrębniania "wycinka" kolekcji<br /><br />`false` -Nie Preferuj do używania operatora zakresu `..` podczas wyodrębniania "wycinka" kolekcji |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -1767,7 +1767,7 @@ csharp_style_prefer_switch_expression = true:suggestion
 | **Nazwa reguły** | csharp_style_deconstructed_variable_declaration |
 | **Identyfikator zasady** | IDE0042 |
 | **Odpowiednie języki** | C# 7.0 + |
-| **Wartości** | `true`-Preferuj niekonstruowaną deklarację zmiennej<br /><br />`false`-Nie Preferuj dekonstrukcji w deklaracjach zmiennych |
+| **Wartości** | `true` -Preferuj niekonstruowaną deklarację zmiennej<br /><br />`false` -Nie Preferuj dekonstrukcji w deklaracjach zmiennych |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -1797,7 +1797,7 @@ Począwszy od języka C# 7,0, C# obsługuje [funkcje lokalne](/dotnet/csharp/pro
 | **Nazwa reguły** | csharp_style_pattern_local_over_anonymous_function |
 | **Identyfikator zasady** | IDE0039 |
 | **Odpowiednie języki** | C# 7.0 + |
-| **Wartości** | `true`-Preferuj funkcje lokalne w porównaniu z funkcjami anonimowymi<br /><br />`false`-Preferuj anonimowe funkcje w ramach funkcji lokalnych |
+| **Wartości** | `true` -Preferuj funkcje lokalne w porównaniu z funkcjami anonimowymi<br /><br />`false` -Preferuj anonimowe funkcje w ramach funkcji lokalnych |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -1824,7 +1824,7 @@ fibonacci = (int n) =>
 | **Nazwa reguły** | csharp_using_directive_placement |
 | **Identyfikator zasady** | IDE0065 |
 | **Odpowiednie języki** | C# |
-| **Wartości** | `outside_namespace`-Preferuj `using` dyrektywy, które mają być umieszczone poza przestrzenią nazw<br /><br />`inside_namespace`-Preferuj `using` dyrektywy do umieszczenia w przestrzeni nazw |
+| **Wartości** | `outside_namespace` -Preferuj `using` dyrektywy, które mają być umieszczone poza przestrzenią nazw<br /><br />`inside_namespace` -Preferuj `using` dyrektywy do umieszczenia w przestrzeni nazw |
 | **Domyślne dla programu Visual Studio** | `outside_namespace:silent` |
 
 Przykłady kodu:
@@ -1853,7 +1853,7 @@ namespace Conventions
 | **Nazwa reguły** | csharp_prefer_static_local_function |
 | **Identyfikator zasady** | IDE0062 |
 | **Odpowiednie języki** | C# 8.0 + |
-| **Wartości** | `true`-Preferuj funkcje lokalne do oznaczenia`static`<br /><br />`false`-Nie Preferuj funkcji lokalnych do oznaczenia`static` |
+| **Wartości** | `true` -Preferuj funkcje lokalne do oznaczenia `static`<br /><br />`false` -Nie Preferuj funkcji lokalnych do oznaczenia `static` |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -1887,7 +1887,7 @@ void M()
 | **Nazwa reguły** | csharp_prefer_simple_using_statement |
 | **Identyfikator zasady** | IDE0063 |
 | **Odpowiednie języki** | C# 8.0 + |
-| **Wartości** | `true`-Woli użyć *prostej* `using` instrukcji<br /><br />`false`-Nie wolisz używać *prostej* `using` instrukcji |
+| **Wartości** | `true` -Woli użyć *prostej* `using` instrukcji<br /><br />`false` -Nie wolisz używać *prostej* `using` instrukcji |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -1907,7 +1907,7 @@ using (var a = b) { }
 | **Nazwa reguły** | csharp_style_prefer_switch_expression |
 | **Identyfikator zasady** | IDE0066 |
 | **Odpowiednie języki** | C# 8.0 + |
-| **Wartości** | `true`-Woli użyć `switch` wyrażenia (wprowadzonego w języku C# 8,0)<br /><br />`false`-Woli użyć [instrukcji switch](/dotnet/csharp/language-reference/keywords/switch) |
+| **Wartości** | `true` -Woli użyć `switch` wyrażenia (wprowadzonego w języku C# 8,0)<br /><br />`false` -Woli użyć [instrukcji switch](/dotnet/csharp/language-reference/keywords/switch) |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 | **Wprowadzona wersja** |  Program Visual Studio 2019 w wersji 16.2  |
 
@@ -1934,7 +1934,7 @@ switch (x)
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Konwencje formatowania](editorconfig-formatting-conventions.md)
 - [Konwencje nazewnictwa](editorconfig-naming-conventions.md)

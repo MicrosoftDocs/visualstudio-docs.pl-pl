@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d3ea3086931ab655209a5ca26d4d1527462fb205
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476795"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
@@ -50,11 +50,11 @@ int SetSymbolPath(
 |`szSymbolCachePath`|podczas Ciąg zawierający ścieżkę lokalną, w której symbole mogą być buforowane. Nie może mieć wartości null.|  
 |`Flags`|podczas Nieużywane; zawsze ustawione na 0.|  
   
-## <a name="return-value"></a>Wartość zwrócona  
+## <a name="return-value"></a>Wartość zwracana  
  Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ciąg `szSymbolSearchPath` jest listą co najmniej jednej ścieżki rozdzieloną średnikami, aby wyszukać symbole. Ścieżki te mogą być ścieżką lokalną, ścieżką w stylu UNC lub adresem URL. Te ścieżki mogą być również kombinacją różnych typów. Jeśli ścieżka jest ścieżką UNC (na przykład \\\Symserver\Symbols), aparat debugowania powinien określić, czy ścieżka należy do serwera symboli, i powinno być możliwe załadowanie symboli z tego serwera, buforowanie ich w ścieżce określonej przez `szSymbolCachePath`.  
+ Ten ciąg `szSymbolSearchPath` jest listą co najmniej jednej ścieżki rozdzieloną średnikami, aby wyszukać symbole. Ścieżki te mogą być ścieżką lokalną, ścieżką w stylu UNC lub adresem URL. Te ścieżki mogą być również kombinacją różnych typów. Jeśli ścieżka jest ścieżką UNC (na przykład \\ \Symserver\Symbols), aparat debugowania powinien określić, czy ścieżka należy do serwera symboli, i powinno być możliwe załadowanie symboli z tego serwera, buforowanie ich w ścieżce określonej przez `szSymbolCachePath` .  
   
  Ścieżka symboli może również zawierać jedną lub więcej lokalizacji pamięci podręcznej. Pamięć podręczna jest wyświetlana w kolejności priorytetu, z najwyższym priorytetem pamięci podręcznej i oddzielona przez * symbole. Na przykład:  
   

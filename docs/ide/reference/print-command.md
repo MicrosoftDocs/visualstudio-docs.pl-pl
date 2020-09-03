@@ -1,5 +1,5 @@
 ---
-title: Debug.Drukuj
+title: Debuguj. Print
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567843"
 ---
 # <a name="print-command"></a>Print — Polecenie
 
-Oblicza wyrażenie lub wyświetla określony tekst.
+Oblicza wyrażenie lub Wyświetla określony tekst.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,23 +35,23 @@ Oblicza wyrażenie lub wyświetla określony tekst.
 
 `text`
 
-Wymagany. Wyrażenie do oceny lub tekst do wyświetlenia.
+Wymagany. Wyrażenie, które ma zostać obliczone lub tekst do wyświetlenia.
 
 ## <a name="remarks"></a>Uwagi
 
-Jako alias tego polecenia można użyć znaku zapytania (?). Tak więc, na przykład, polecenie
+Możesz użyć znaku zapytania (?) jako aliasu dla tego polecenia. Tak więc, na przykład, polecenie
 
 ```cmd
 >Debug.Print expA
 ```
 
-można również zapisać jako
+można również napisać jako
 
 ```cmd
 ? expA
 ```
 
-Obie wersje tego polecenia zwracają bieżącą `expA`wartość wyrażenia .
+Obie wersje tego polecenia zwracają bieżącą wartość wyrażenia `expA` .
 
 ## <a name="example"></a>Przykład
 
@@ -61,8 +61,8 @@ Obie wersje tego polecenia zwracają bieżącą `expA`wartość wyrażenia .
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Polecenie Oceń instrukcję](../../ide/reference/evaluate-statement-command.md)
-- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Polecenie szacowania instrukcji](../../ide/reference/evaluate-statement-command.md)
+- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)
-- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
+- [Znajdź/pole polecenia](../../ide/find-command-box.md)
 - [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

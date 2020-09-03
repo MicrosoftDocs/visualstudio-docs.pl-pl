@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f87e3a3adda270f6b78b9134c7535bda6c73d952
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533149"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Porady: tworzenie typów za pomocą Projektanta klas
@@ -36,7 +36,7 @@ Aby zaprojektować nowe typy dla projektów Visual C# .NET i Visual Basic .NET, 
 
 - [Zastosuj atrybut niestandardowy do elementu członkowskiego typu](#CustAttributeMember)
 
-## <a name="create-a-new-type"></a><a name="CreateType"></a>Utwórz nowy typ
+## <a name="create-a-new-type"></a><a name="CreateType"></a> Utwórz nowy typ
 
 1. W przyborniku, w obszarze Projektanta klas przeciągnij jeden z nich do diagramu klasy:
 
@@ -74,7 +74,7 @@ Aby zaprojektować nowe typy dla projektów Visual C# .NET i Visual Basic .NET, 
 
      Zobacz [Tworzenie elementów członkowskich](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).
 
-## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a>Zastosuj atrybut niestandardowy do typu
+## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a> Zastosuj atrybut niestandardowy do typu
 
 1. Kliknij typ kształtu na diagramie klasy.
 
@@ -84,7 +84,7 @@ Aby zaprojektować nowe typy dla projektów Visual C# .NET i Visual Basic .NET, 
 
      Kiedy skończysz, atrybuty niestandardowe są stosowane do typu.
 
-## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>Zastosuj atrybut niestandardowy do elementu członkowskiego typu
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a> Zastosuj atrybut niestandardowy do elementu członkowskiego typu
 
 1. Kliknij nazwę składowej w jej kształcie typu na diagramie klasy lub kliknij jej wiersz w oknie Szczegóły klasy.
 

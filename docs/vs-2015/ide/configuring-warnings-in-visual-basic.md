@@ -14,18 +14,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d09a251dc5f98080b317e1560423dcb7c8bf0805
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619310"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurowanie ostrzeżeń w Visual Basic:
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Kompilator [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] zawiera zestaw ostrzeżeń dotyczących kodu, który może spowodować błędy w czasie wykonywania. Te informacje służą do pisania oczyszczarki, szybszego i lepszego kodu z mniejszą liczbą błędów. Na przykład kompilator generuje ostrzeżenie, gdy użytkownik próbuje wywołać element członkowski zmiennej nieprzypisanego obiektu, zwrócić z funkcji bez ustawienia wartości zwracanej lub wykonać blok `Try` z błędami w logice, aby przechwytywać wyjątki.
+[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]Kompilator zawiera zestaw ostrzeżeń dotyczących kodu, który może spowodować błędy w czasie wykonywania. Te informacje służą do pisania oczyszczarki, szybszego i lepszego kodu z mniejszą liczbą błędów. Na przykład kompilator generuje ostrzeżenie, gdy użytkownik próbuje wywołać element członkowski zmiennej nieprzypisanego obiektu, zwrócić z funkcji bez ustawienia wartości zwracanej lub wykonać `Try` blok z błędami w logice, aby przechwytywać wyjątki.
 
- Czasami kompilator oferuje dodatkową logikę w imieniu użytkownika, dzięki czemu użytkownik może skupić się na zadaniu w stanie, a nie na przewidywaniu ewentualnych błędów. W poprzednich wersjach [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] `Option Strict` został użyty do ograniczenia dodatkowej logiki zapewnianej przez kompilator [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Skonfigurowanie ostrzeżeń pozwala ograniczyć tę logikę w bardziej szczegółowy sposób, na poziomie poszczególnych ostrzeżeń.
+ Czasami kompilator oferuje dodatkową logikę w imieniu użytkownika, dzięki czemu użytkownik może skupić się na zadaniu w stanie, a nie na przewidywaniu ewentualnych błędów. W poprzednich wersjach programu [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] `Option Strict` został użyty do ograniczenia dodatkowej logiki [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] zapewnianej przez kompilator. Skonfigurowanie ostrzeżeń pozwala ograniczyć tę logikę w bardziej szczegółowy sposób, na poziomie poszczególnych ostrzeżeń.
 
  Możesz chcieć dostosować projekt i wyłączyć niektóre ostrzeżenia, które nie są związane z aplikacją, przy jednoczesnym wyłączaniu innych ostrzeżeń do błędów. Na tej stronie wyjaśniono, jak włączyć i wyłączyć poszczególne ostrzeżenia.
 
@@ -34,15 +34,15 @@ Kompilator [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] zawiera zestaw ostrzeże
 
  Karta **kompilacja** na stronie **Projektant projektu** umożliwia włączanie i wyłączanie ostrzeżeń. Zaznacz pole wyboru **Wyłącz wszystkie ostrzeżenia** , aby wyłączyć wszystkie ostrzeżenia; Wybierz pozycję **Traktuj wszystkie ostrzeżenia jako błędy** , aby traktować wszystkie ostrzeżenia jako błędy. Niektóre poszczególne ostrzeżenia mogą być przełączane jako błąd lub ostrzeżenie zgodnie z potrzebami w wyświetlonej tabeli.
 
- Jeśli **opcja Strict** jest ustawiona na **off**, nie można niezależnie traktować **opcji Option Strict** pokrewnych ostrzeżeń. Gdy **opcja Strict** jest ustawiona na wartość **on**, skojarzone ostrzeżenia są traktowane jako błędy, niezależnie od ich stanu. Jeśli **opcja Strict** jest ustawiona na wartość **Custom** przez określenie `/optionstrict:custom` w kompilatorze wiersza polecenia, **opcja rygorystyczne** ostrzeżenia może być włączana lub wyłączana niezależnie.
+ Jeśli **opcja Strict** jest ustawiona na **off**, nie można niezależnie traktować **opcji Option Strict** pokrewnych ostrzeżeń. Gdy **opcja Strict** jest ustawiona na wartość **on**, skojarzone ostrzeżenia są traktowane jako błędy, niezależnie od ich stanu. Jeśli **opcja Strict** jest ustawiona na wartość **Custom** przez określenie `/optionstrict:custom` w kompilatorze wiersza polecenia, **Opcje rygorystyczne** ostrzeżenia mogą być włączane lub wyłączane niezależnie.
 
  Opcja wiersza polecenia **/warnaserror** kompilatora może również służyć do określenia, czy ostrzeżenia są traktowane jako błędy. Można dodać listę rozdzielaną przecinkami do tej opcji, aby określić, które ostrzeżenia mają być traktowane jako błędy lub ostrzeżenia przy użyciu + lub-. Poniższa tabela zawiera szczegółowe informacje o możliwych opcjach.
 
 |Opcja wiersza polecenia|Określa|
 |--------------------------|---------------|
 |`/warnaserror+`|Traktuj wszystkie ostrzeżenia jako błędy|
-|`/warnsaserror`-|Nie Traktuj jako ostrzeżeń jako błędy. Domyślnie włączone.|
-|`/warnaserror+:<warning list``>`|Traktuj określone ostrzeżenia jako błędy, wymienione przez ich numer identyfikatora błędu na liście rozdzielanej przecinkami.|
+|`/warnsaserror`-|Nie Traktuj jako ostrzeżeń jako błędy. Jest to opcja domyślna.|
+|`/warnaserror+:<warning list` `>`|Traktuj określone ostrzeżenia jako błędy, wymienione przez ich numer identyfikatora błędu na liście rozdzielanej przecinkami.|
 |`/warnaserror-:<warning list>`|Nie Traktuj określonych ostrzeżeń jako błędów, które są wyświetlane na podstawie ich identyfikatora błędu na liście rozdzielanej przecinkami.|
 |`/nowarn`|Nie zgłaszaj ostrzeżeń.|
 |`/nowarn:<warning list>`|Nie zgłaszaj określonych ostrzeżeń, które są wyświetlane w postaci listy rozdzielanej przecinkami.|
@@ -65,7 +65,7 @@ Kompilator [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] zawiera zestaw ostrzeże
  Poniżej znajduje się lista ostrzeżeń, które warto traktować jako błędy.
 
 ### <a name="implicit-conversion-warning"></a>Ostrzeżenie o niejawnej konwersji
- Generowane dla wystąpień niejawnej konwersji. Nie zawierają one niejawnych konwersji z wewnętrznego typu liczbowego na ciąg, gdy jest używany operator `&`. Wartość domyślna dla nowych projektów jest wyłączona.
+ Generowane dla wystąpień niejawnej konwersji. Nie zawierają one niejawnych konwersji z wewnętrznego typu liczbowego do ciągu podczas korzystania z `&` operatora. Wartość domyślna dla nowych projektów jest wyłączona.
 
  IDENTYFIKATOR: 42016
 
@@ -75,12 +75,12 @@ Kompilator [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] zawiera zestaw ostrzeże
  IDENTYFIKATOR: 42017
 
 ### <a name="operands-of-type-object-warnings"></a>Operandy typu ostrzeżenia obiektu
- Generowane w przypadku wystąpienia operandów typu `Object`, które spowodują utworzenie błędu z `Option Strict On`. Wartość domyślna dla nowych projektów jest włączona.
+ Generowane, gdy wystąpią operandy typu `Object` , które spowodują utworzenie błędu z `Option Strict On` . Wartość domyślna dla nowych projektów jest włączona.
 
  ID: 42018 i 42019
 
 ### <a name="declarations-require-as-clause-warnings"></a>Deklaracje wymagają ostrzeżeń klauzuli "As"
- Generowane, gdy w deklaracji zmiennej, funkcji lub właściwości brakuje klauzuli `As` Wystąpił błąd z `Option Strict On`. Przyjmuje się, że zmienne, które nie mają przypisanego typu, są typu `Object`. Wartość domyślna dla nowych projektów jest włączona.
+ Generowane, gdy w deklaracji zmiennej, funkcji lub właściwości brakuje klauzuli, `As` Wystąpił błąd w `Option Strict On` . Przyjmuje się, że zmienne, które nie mają przypisanego typu, są typu `Object` . Wartość domyślna dla nowych projektów jest włączona.
 
  ID: 42020 (Deklaracja zmiennej), 42021 (deklaracja funkcji) i 42022 (Deklaracja właściwości).
 
@@ -105,17 +105,17 @@ Kompilator [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] zawiera zestaw ostrzeże
  ID: 42004 (operator), 42026 (Właściwość)
 
 ### <a name="function-or-operator-without-return-value-warning"></a>Ostrzeżenie funkcji lub operatora bez wartości zwracanej
- Generowane, gdy funkcja lub operator nie ma określonej wartości zwracanej. Obejmuje to pominięcie `Set` do niejawnej zmiennej lokalnej o takiej samej nazwie jak funkcja. Wartość domyślna dla nowych projektów jest włączona.
+ Generowane, gdy funkcja lub operator nie ma określonej wartości zwracanej. Obejmuje pomijanie `Set` do niejawnej zmiennej lokalnej o takiej samej nazwie jak funkcja. Wartość domyślna dla nowych projektów jest włączona.
 
  ID: 42105 (funkcja), 42016 (operator)
 
 ### <a name="overloads-modifier-used-in-a-module-warning"></a>Modyfikator przeciążenia użyty w ostrzeżeniu modułu
- Generowane, gdy `Overloads` jest używany w `Module`. Wartość domyślna dla nowych projektów jest włączona.
+ Generowane `Overloads` , gdy jest używany w `Module` . Wartość domyślna dla nowych projektów jest włączona.
 
  IDENTYFIKATOR: 42028
 
 ### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>Zduplikowane lub nakładające się ostrzeżenia dotyczące bloków catch
- Generowane, gdy blok `Catch` nie został nigdy osiągnięty ze względu na jego relację z innymi zdefiniowanymi blokami `Catch`. Wartość domyślna dla nowych projektów jest włączona.
+ Generowane, gdy `Catch` blok nigdy nie został osiągnięty ze względu na jego relację z innymi `Catch` zdefiniowanymi blokami. Wartość domyślna dla nowych projektów jest włączona.
 
  IDENTYFIKATOR: 42029, 42031
 

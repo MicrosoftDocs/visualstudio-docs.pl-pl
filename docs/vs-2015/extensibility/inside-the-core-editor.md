@@ -1,5 +1,5 @@
 ---
-title: W edytorze podstawowych | Dokumentacja firmy Microsoft
+title: Wewnątrz edytora podstawowego | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,71 +11,71 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203952"
 ---
 # <a name="inside-the-core-editor"></a>Wewnątrz edytora podstawowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Edytorze podstawowych funkcji to zbiór kilka składników, które pozwalają na modyfikowanie i wykonywania zapytań względem informacji tekstowych. Jeśli dostosowano podstawowy edytor przy użyciu starszej wersji interfejsu API, można nadal używać tych dostosowania, które będą kierowane za pośrednictwem karty edytora. Jest to zalecane, jednak dostosować własne dostosowania do edytora nowego interfejsu API.  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Podstawowy edytor to zestaw kilku składników, które umożliwiają modyfikowanie i wykonywanie zapytań dotyczących danych tekstowych. Jeśli Edytor podstawowy został dostosowany przy użyciu starszego interfejsu API, można nadal używać tych dostosowań, które będą kierowane za pośrednictwem adapterów edytora. Zaleca się jednak dostosowanie dostosowań do nowego interfejsu API edytora.  
   
- Niektórych ważnych aspektów podstawowy edytor kwestie:  
+ Następujące obszary są istotnymi aspektami edytora podstawowego:  
   
-- Bufor tekstowy  
+- Bufor tekstu  
   
 - Widok tekstu  
   
-- W oknie kodu  
+- Okno kodu  
   
 - Znaczniki tekstu  
   
 - Menedżer tekstu  
   
-- Integracja z usługami języka  
+- Integracja z usługami językowymi  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Tworzenie wystąpienia edytora podstawowego przy użyciu starszej wersji interfejsu API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
- Instrukcje krok po kroku dotyczące sposobu korzystania <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> do utworzenia wystąpienia podstawowego edytora.  
+ Zawiera instrukcje krok po kroku dotyczące <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> tworzenia wystąpienia podstawowego edytora.  
   
  [Uzyskiwanie dostępu do buforu tekstowego przy użyciu starszego interfejsu API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)  
- W tym artykule omówiono rolę buforu tekstu w edytorze podstawowych, wyjaśnia skojarzone systemów, które umożliwiają dostęp do buforu i zawiera listę interfejsów implementowanych przez obiekt buforu tekstu, <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>.  
+ Omawia rolę bufora tekstu w edytorze Core, objaśnia skojarzone systemy, które są używane w celu uzyskania dostępu do buforu i zawiera listę interfejsów implementowanych przez obiekt buforu tekstu <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> .  
   
  [Zdarzenia buforu tekstowego w starszym interfejsie API](../extensibility/text-buffer-events-in-the-legacy-api.md)  
- Zawiera listę interfejsów, które są używane dla powiadomień o zdarzeniach buforu tekstu.  
+ Zawiera listę interfejsów, które są używane do powiadamiania o zdarzeniach buforu tekstu.  
   
  [Instrukcje: rejestrowanie w zdarzeniach buforu tekstowego przy użyciu starszego interfejsu API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
- Opisuje sposób poinformowania zdarzenia buforu tekstu.  
+ Opisuje sposób doradzania zdarzeń buforu tekstu.  
   
  [Używanie menedżera tekstu do monitorowania ustawień globalnych](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
- W tym artykule omówiono sposób Menedżer tekstu jest używany do udostępniania informacji preferencji globalnych podstawowe składniki edytora i jak otrzymywać powiadomienia o zdarzeniach Menedżer tekstu.  
+ W tym artykule omówiono sposób używania Menedżera tekstów do udostępniania globalnych informacji o preferencjach za pomocą podstawowych składników edytora oraz sposobu otrzymywania powiadomień o zdarzeniach Menedżera tekstu.  
   
  [Uzyskiwanie dostępu do widoku tekstowego przy użyciu starszego interfejsu API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
- W tym artykule opisano rolę widoku tekstu w edytorze podstawowych i wyświetla interfejsy implementowane przez <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> obiektu.  
+ Opisuje rolę widoku tekstu w edytorze podstawowym i wyświetla listę interfejsów implementowanych przez <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> obiekt.  
   
  [Dostosowywanie okien kodu za pomocą starszego interfejsu API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)  
- Zawiera informacje dotyczące sposobu okna kodu jest używane, aby ująć widoku tekstu, w tym artykule omówiono, jak Menedżer okien kod służy do zapewnienia dekoracje do okna kodu i zapewnia powiadomienia o nowych widoków.  
+ Zawiera informacje o tym, w jaki sposób okno kodu jest używane do otaczania widoku tekstu, w tym artykule omówiono sposób, w jaki Menedżer okien kodu służy do dostarczania dekoracji do okna kodu i zapewnia powiadomienia o nowych widokach.  
   
  [Zmienianie ustawień widoku za pomocą starszego interfejsu API](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
- Instrukcje krok po kroku dotyczące wymusić ustawienia wyświetlania i usuwania ustawień wymuszone.  
+ Zawiera instrukcje krok po kroku dotyczące wymuszania ustawień widoku oraz sposobu usuwania ustawień wymuszonych.  
   
  [Usługi językowe oraz edytor podstawowy](../extensibility/language-services-and-the-core-editor.md)  
- W tym artykule opisano tworzenie wystąpienia usługi języka w celu kontroli kodu dekoracje.  
+ Opisuje tworzenie wystąpienia usługi językowej w celu kontrolowania dekoracji kodu.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Przewodnik: tworzenie edytora podstawowego i rejestrowanie typu pliku edytora](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
- Instrukcje krok po kroku dotyczące uruchamiania podstawowy edytor z kodu zarządzanego.  
+ Zawiera instrukcje krok po kroku dotyczące sposobu uruchamiania edytora podstawowego z kodu zarządzanego.  
   
  [Pasek list rozwijanych](../extensibility/drop-down-bar.md)  
- W tym artykule omówiono sposób pasek listy rozwijanej jest używana w oknie kodu i opisano interfejsy, które są używane podczas implementowania pasek listy rozwijanej.  
+ Omawia, w jaki sposób pasek rozwijany jest używany w oknie kodu i opisuje interfejsy, które są używane podczas implementowania paska listy rozwijanej.  
   
  [Korzystanie ze znaczników tekstu ze starszym interfejsem API](../extensibility/using-text-markers-with-the-legacy-api.md)  
- Wyjaśnia pojęcie znaczników tekstu i jak są one używane w edytorze podstawowych i wyświetla listę interfejsów, które są używane do dostępu i zarządzania znaczników tekstu.  
+ Wyjaśnia koncepcję znaczników tekstu i sposobu ich używania w edytorze podstawowym, a także Wyświetla interfejsy, które są używane do uzyskiwania dostępu do znaczników tekstu i zarządzania nimi.  
   
  [Instrukcje: dodawanie standardowych znaczników tekstu](../extensibility/how-to-add-standard-text-markers.md)  
- Instrukcje krok po kroku dotyczące tworzenia znacznika tekstu i Dodaj polecenie niestandardowe do menu skrótów.  
+ Zawiera instrukcje krok po kroku dotyczące sposobu tworzenia znacznika tekstu i sposobu dodawania niestandardowego polecenia do menu skrótów.  
   
  [Instrukcje: tworzenie niestandardowych znaczników tekstu](../extensibility/how-to-create-custom-text-markers.md)  
- Instrukcje krok po kroku dotyczące tworzenia znacznika niestandardowego tekstu i podać typ znacznika jako usługa.
+ Zawiera instrukcje krok po kroku dotyczące sposobu tworzenia niestandardowego znacznika tekstu oraz sposobu dostarczania typu znacznika jako usługi.

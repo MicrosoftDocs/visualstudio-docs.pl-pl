@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af4123b24ab9286e306a1034de4416a31ae76f2b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533071"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definiowanie procedury obsługi gestów na diagramie modelowania
@@ -74,7 +74,7 @@ W programie Visual Studio można definiować polecenia, które są wykonywane, g
 
     `System.Windows.Forms`
 
-    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer`— Jest to konieczne tylko wtedy, gdy rozszerzasz diagramy warstwowe. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzając diagramy warstwowe](../modeling/extend-layer-diagrams.md).
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` — Jest to konieczne tylko wtedy, gdy rozszerzasz diagramy warstwowe. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzając diagramy warstwowe](../modeling/extend-layer-diagrams.md).
 
 3. Dodaj plik klasy do projektu i ustaw jego zawartość na następujący kod.
 
@@ -230,7 +230,7 @@ W programie Visual Studio można definiować polecenia, które są wykonywane, g
 
          **Projekt**  =  *Projekt biblioteki klas*
 
-## <a name="executing-the-gesture-handler"></a><a name="Executing"></a>Wykonywanie procedury obsługi gestu
+## <a name="executing-the-gesture-handler"></a><a name="Executing"></a> Wykonywanie procedury obsługi gestu
  W celach testowych wykonaj procedurę obsługi gestu w trybie debugowania.
 
 #### <a name="to-test-the-gesture-handler"></a>Aby przetestować procedurę obsługi gestu
@@ -265,7 +265,7 @@ W programie Visual Studio można definiować polecenia, które są wykonywane, g
 
 - Brak wbudowanej funkcji zdefiniowanej już dla tego typu elementu docelowego i opuszczonego.
 
-## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a>Implementowanie obsługi gestu
+## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a> Implementowanie obsługi gestu
 
 ### <a name="the-gesture-handler-methods"></a>Metody obsługi gestu
  Klasa procedury obsługi gestu implementuje i eksportuje <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension> . Metody, które należy zdefiniować, są następujące:
@@ -274,7 +274,7 @@ W programie Visual Studio można definiować polecenia, które są wykonywane, g
 |-|-|
 |`bool CanDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Wróć `true` , aby zezwolić elementowi źródłowym, do którego istnieje odwołanie w `dragEvent` tym miejscu docelowym.<br /><br /> Ta metoda nie powinna wprowadzać zmian w modelu. Powinna ona być szybka, ponieważ jest używana do określenia stanu strzałki, gdy użytkownik przesunie mysz.|
 |`void OnDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Zaktualizuj model na podstawie obiektu źródłowego, do którego odwołuje się `dragEvent` element, i elementu docelowego.<br /><br /> Wywoływana, gdy użytkownik zwolni mysz po przeciągnięciu.|
-|`void OnDoubleClick (ShapeElement target, DiagramPointEventArgs pointEvent)`|`target`to kształt kliknięty dwukrotnie przez użytkownika.|
+|`void OnDoubleClick (ShapeElement target, DiagramPointEventArgs pointEvent)`|`target` to kształt kliknięty dwukrotnie przez użytkownika.|
 
  Programy obsługi można pisać, które mogą akceptować nie tylko UML, ale również różne inne elementy, takie jak pliki, węzły w widoku klasy .NET i tak dalej. Użytkownik może przeciągnąć dowolny z tych elementów na diagram UML, pod warunkiem, że napiszesz `OnDragDrop` metodę, która może zdekodować serializowaną postać elementów. Metody dekodowania różnią się od jednego typu elementu do drugiego.
 
@@ -282,7 +282,7 @@ W programie Visual Studio można definiować polecenia, które są wykonywane, g
 
 - `ShapeElement target`. Kształt lub diagram, na którym użytkownik przełączył coś.
 
-    `ShapeElement`jest klasą w implementacji, która opiera się na narzędziach modelowania UML. Aby zmniejszyć ryzyko umieszczenia modelu UML i diagramów w niespójnym stanie, zalecamy, aby nie używać metod tej klasy bezpośrednio. Zamiast tego zawiń element w `IShape` , a następnie użyj metod opisanych w temacie [Wyświetlanie modelu UML na diagramach](../modeling/display-a-uml-model-on-diagrams.md).
+    `ShapeElement` jest klasą w implementacji, która opiera się na narzędziach modelowania UML. Aby zmniejszyć ryzyko umieszczenia modelu UML i diagramów w niespójnym stanie, zalecamy, aby nie używać metod tej klasy bezpośrednio. Zamiast tego zawiń element w `IShape` , a następnie użyj metod opisanych w temacie [Wyświetlanie modelu UML na diagramach](../modeling/display-a-uml-model-on-diagrams.md).
 
   - Aby uzyskać `IShape` :
 
@@ -348,7 +348,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
  Aby uzyskać więcej informacji, zobacz [nawigowanie po modelu UML](../modeling/navigate-the-uml-model.md).
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Instalowanie i odinstalowywanie rozszerzenia
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Instalowanie i odinstalowywanie rozszerzenia
  Rozszerzenie można zainstalować [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] zarówno na swoim komputerze, jak i na innych komputerach.
 
 #### <a name="to-install-an-extension"></a>Aby zainstalować rozszerzenie
@@ -381,7 +381,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [wersja] \Extensions**
 
-## <a name="example"></a><a name="DragExample"></a>Przyklad
+## <a name="example"></a><a name="DragExample"></a> Przyklad
  Poniższy przykład pokazuje, jak utworzyć linie życia w diagramie sekwencji na podstawie części i portów składnika przeciąganych z diagramu składników.
 
  Aby go przetestować, naciśnij klawisz F5. Zostanie otwarte doświadczalne wystąpienie programu Visual Studio. W tym przypadku należy otworzyć model UML i utworzyć składnik na diagramie składników. Dodaj do tego składnika niektóre interfejsy i wewnętrzne części składników. Wybierz interfejsy i części. Następnie przeciągnij interfejsy i części na diagram sekwencji. (Przeciągnij ze diagramu składnika do karty dla diagramu sekwencji, a następnie w dół do diagramu sekwencji). Linia życia będzie wyświetlana dla każdego interfejsu i części.

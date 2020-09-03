@@ -15,17 +15,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eaba2f099f2a4d04574acd5bcdd2ba8f8f44b4ce
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852363"
 ---
-# <a name="da0006-override-equals-for-value-types"></a>DA0006: Przesłoń metodę equals typami wartości
+# <a name="da0006-override-equals-for-value-types"></a>DA0006: Przesłoń metodę Equals() dla typów wartości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Identyfikator reguły | DA0006 |  
-|Category|.NET Framework Usage|  
+| Kategoria |. Użycie platformy NET Framework |  
 | Metody Profiiling | Próbkowanie |  
 | Komunikat | Przesłoń operator równości i równości dla typów wartości. |  
 | Typ messge | Ostrzeżenie |  
@@ -34,7 +34,7 @@ Identyfikator reguły | DA0006 |
  Wywołania metody Equals lub operatory równości typu wartości publicznej są znaczną częścią danych profilowania. Rozważ zaimplementowanie bardziej wydajnej metody.  
   
 ## <a name="rule-description"></a>Opis reguły  
- W przypadku typów wartości dziedziczone implementacje Equals używa biblioteki <xref:System.Reflection> i porównuje zawartość wszystkich pól w typie. Odbicie jest obliczeniowo kosztowne, a porównanie równości każdego pola może być niepotrzebne. Jeśli oczekujesz, że użytkownicy porównują lub sortują wystąpienia lub używają ich jako kluczy tabeli skrótów, typ wartości powinien implementować równą się. Jeśli język programowania obsługuje przeciążanie operatora, należy również podać implementację operatorów równości i nierówności.  
+ W przypadku typów wartości dziedziczone implementacje Equals używa <xref:System.Reflection> biblioteki i porównuje zawartość wszystkich pól w typie. Odbicie jest obliczeniowo kosztowne, a porównanie równości każdego pola może być niepotrzebne. Jeśli oczekujesz, że użytkownicy porównują lub sortują wystąpienia lub używają ich jako kluczy tabeli skrótów, typ wartości powinien implementować równą się. Jeśli język programowania obsługuje przeciążanie operatora, należy również podać implementację operatorów równości i nierówności.  
   
  Aby uzyskać więcej informacji o sposobie przesłonięcia równości i operatory równości, zobacz [wytyczne dotyczące implementowania równości i operatora równości (= =)](https://msdn.microsoft.com/library/7h9bszxx.aspx).  
   

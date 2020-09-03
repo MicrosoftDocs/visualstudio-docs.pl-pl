@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d1fba3b956a492740171bf2ad747e980b41df29
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851978"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Tworzenie i stosowanie zasobów
@@ -24,7 +24,7 @@ ms.locfileid: "75851978"
 
 Style i szablony dla elementów w projektant XAML są przechowywane w jednostkach wielokrotnego użytku o nazwie Resources. Style umożliwiają ustawianie właściwości elementów i ponowne używanie tych ustawień w celu zapewnienia spójnego wyglądu w wielu elementach. [ControlTemplate](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) definiuje wygląd kontrolki i można go również zastosować jako zasób. Aby uzyskać więcej informacji, zobacz [Szybki Start: kontrolki stylów](https://msdn.microsoft.com/library/windows/apps/xaml/hh465381.aspx) i [Szybki Start: sterowanie szablonami](https://msdn.microsoft.com/library/windows/apps/xaml/hh465374.aspx).
 
- Za każdym razem, gdy tworzysz nowy zasób z istniejącej właściwości, [stylu](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx)lub `ControlTemplate`, okno dialogowe **Tworzenie zasobu** umożliwia definiowanie zasobów na poziomie aplikacji, na poziomie dokumentu lub na poziomie elementu. Te poziomy określają, gdzie można użyć zasobu. Na przykład, jeśli zdefiniujesz zasób na poziomie elementu, zasób może być stosowany tylko do elementu, w którym został utworzony. Istnieje również możliwość przechowywania zasobu w słowniku zasobów, oddzielnym pliku, który można użyć ponownie w innym projekcie.
+ Za każdym razem, gdy tworzysz nowy zasób z istniejącej właściwości, [stylu](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx)lub `ControlTemplate` , okno dialogowe **Tworzenie zasobu** pozwala na definiowanie zasobów na poziomie aplikacji, na poziomie dokumentu lub na poziomie elementu. Te poziomy określają, gdzie można użyć zasobu. Na przykład, jeśli zdefiniujesz zasób na poziomie elementu, zasób może być stosowany tylko do elementu, w którym został utworzony. Istnieje również możliwość przechowywania zasobu w słowniku zasobów, oddzielnym pliku, który można użyć ponownie w innym projekcie.
 
 ### <a name="to-create-a-new-resource"></a>Aby utworzyć nowy zasób
 
@@ -65,7 +65,7 @@ Style i szablony dla elementów w projektant XAML są przechowywane w jednostkac
      > [!NOTE]
      > **Edytowanie szablonu** służy do stosowania szablonów kontrolek. **Edycja dodatkowych szablonów** służy do stosowania innych typów szablonów.
 
-     Zasoby mogą być stosowane wszędzie tam, gdzie są zgodne. Na przykład można zastosować zasób pędzla do właściwości **pierwszego planu** kontrolki <xref:Windows.UI.Xaml.Controls.TextBox>.
+     Zasoby mogą być stosowane wszędzie tam, gdzie są zgodne. Na przykład można zastosować zasób pędzla do właściwości **pierwszego planu** <xref:Windows.UI.Xaml.Controls.TextBox> formantu.
 
 ### <a name="to-edit-a-resource"></a>Aby edytować zasób
 

@@ -11,13 +11,13 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2f4926a503304491164635b983353ba7f3bb0f6
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915981"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Instrukcje: migrowanie projektów rozszerzalności do programu Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Oto jak uaktualnić rozszerzenie.  
@@ -29,15 +29,15 @@ Oto jak uaktualnić rozszerzenie.
   
 1. Za pomocą kopii, którą chcesz uaktualnić, otwórz ją w nowej wersji. Zaleca się, aby uaktualnienie nie było odwracalne.  
   
-2. Po zakończeniu uaktualniania zmień ścieżkę programu zewnętrznego na nową wersję programu devenv. exe. Kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań**, a następnie wybierz polecenie **Właściwości**. Na karcie **debugowanie** Znajdź pole tekstowe przez **uruchomienie programu zewnętrznego** i zmień ścieżkę devenv. exe na ścieżkę programu Visual Studio 2015, która powinna wyglądać następująco:  
+2. Po zakończeniu uaktualniania zmień ścieżkę programu zewnętrznego na nową wersję devenv.exe. Kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań**, a następnie wybierz polecenie **Właściwości**. Na karcie **debugowanie** Znajdź pole tekstowe przez **uruchomienie programu zewnętrznego** i zmień ścieżkę devenv.exe do ścieżki programu Visual Studio 2015, która powinna wyglądać następująco:  
   
-     **%ProgramFiles%\Microsoft Visual Studio 14.0 \ Common7\IDE\devenv.exe**  
+     **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe**  
   
-3. Dodaj odwołanie do pliku Microsoft. VisualStudio. Shell. 14.0. dll. (Kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** a następnie wybierz polecenie **Dodaj/odwołanie**. Wybierz kartę **rozszerzenia** , a następnie sprawdź **Microsoft. VisualStudio. Shell. 14.0**.)  
+3. Dodaj odwołanie do Microsoft.VisualStudio.Shell.14.0.dll. (Kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** a następnie wybierz polecenie **Dodaj/odwołanie**. Wybierz kartę **rozszerzenia** , a następnie sprawdź **Microsoft. VisualStudio. Shell. 14.0**.)  
   
 4. Skompiluj rozwiązanie. Skompilowane pliki są wdrażane w:  
   
-     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< autora\>\\< Project name\>\\< wersja projektu\>\\** .  
+     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions \\<nazwę autora \> \\<nazwa projektu \> \\<\> \\ wersji projektu**.  
   
 #### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>Aby zaktualizować projekt rozszerzalności do zestawów referencyjnych NuGet VS SDK  
   
@@ -45,7 +45,7 @@ Oto jak uaktualnić rozszerzenie.
   
 2. Usuń zestawy odwołań programu VS SDK z projektu, zaznaczając je, prawym przyciskiem myszy i **Usuń**.  
   
-3. Dodaj wersje NuGet zestawów odwołań programu VS SDK.  Gdy nadal znajduje się w węźle **Eksplorator rozwiązań References** , Otwórz **pakiety NuGet...** okno dialogowe.  Jeśli chcesz dowiedzieć się więcej na temat tego okna dialogowego, zobacz [Zarządzanie pakietami NuGet przy użyciu okna dialogowego](/nuget/consume-packages/install-use-packages-visual-studio). Zestawy odwołań programu VS SDK są publikowane w witrynie [NuGet.org](https://www.nuget.org/) przez [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility).  
+3. Dodaj wersje NuGet zestawów odwołań programu VS SDK.  Gdy nadal znajduje się w węźle **Eksplorator rozwiązań References** , Otwórz **pakiety NuGet...** oknie dialogowym.  Jeśli chcesz dowiedzieć się więcej na temat tego okna dialogowego, zobacz [Zarządzanie pakietami NuGet przy użyciu okna dialogowego](/nuget/consume-packages/install-use-packages-visual-studio). Zestawy odwołań programu VS SDK są publikowane w witrynie [NuGet.org](https://www.nuget.org/) przez [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility).  
   
 4. Używając **NuGet.org** jako **źródła pakietu**, wyszukaj nazwę pakietu NuGet zgodną z żądanym zestawem odwołania (na przykład: Microsoft. VisualStudio. Shell. 14.0) i zainstaluj go w projekcie.  Pakiet NuGet może dodać wiele zestawów referencyjnych w celu spełnienia zależności zestawu początkowego.  
   

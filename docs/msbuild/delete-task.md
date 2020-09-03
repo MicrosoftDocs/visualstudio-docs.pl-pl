@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eddb9804378a4c32de9d1b68f952bc715f32ffd6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288913"
 ---
 # <a name="delete-task"></a>Delete — Zadanie
@@ -101,6 +101,6 @@ Ogólnie rzecz biorąc, podczas pisania skryptów kompilacji, należy rozważyć
 
 ## <a name="see-also"></a>Zobacz też
 
-- [RemoveDir —, zadanie](removedir-task.md)
+- [RemoveDir — zadanie](removedir-task.md)
 - [Zadania](../msbuild/msbuild-tasks.md)
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

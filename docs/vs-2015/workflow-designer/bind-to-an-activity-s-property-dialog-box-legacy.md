@@ -1,5 +1,5 @@
 ---
-title: Powiąż z oknem&#39;dialogowym właściwości działania (starsza wersja) | Microsoft Docs
+title: Powiąż z oknem dialogowym właściwości działania&#39;s (starsza wersja) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f88d7ebe714fcdc9bf404e1cf58c4c86cf37047d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851468"
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Powiąż z oknem&#39;dialogowym właściwości działania (starsza wersja)
-W tym temacie opisano sposób użycia okna dialogowego **Powiązywanie z właściwością działania** w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Powiąż z oknem dialogowym właściwości działania&#39;s (starsza wersja)
+W tym temacie opisano sposób użycia okna dialogowego **Powiązywanie z właściwością działania** w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Użyj starszej wersji, [!INCLUDE[wfd2](../includes/wfd2-md.md)] gdy musisz być celem [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
  Typ wystąpienia właściwości zależności można powiązać z publiczną właściwością lub zdarzeniem innego działania. Aby uzyskać więcej informacji na temat powiązania działań, zobacz [Używanie właściwości zależności](https://msdn2.microsoft.com/library/bb675255.aspx).
 

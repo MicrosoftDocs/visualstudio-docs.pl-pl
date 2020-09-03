@@ -14,10 +14,10 @@ dev_langs:
 - csharp
 - vb
 ms.openlocfilehash: 0eb70e5d39708ffd532fe39d6d597043621158d5
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904832"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Przewodnik: wyświetlanie etykietek narzędzi sekcji szybkich informacji

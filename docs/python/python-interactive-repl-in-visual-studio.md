@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 9608f273683865be767a44dd8f1d66106b97b7e0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533552"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Współpraca z oknem interaktywnym języka Python
@@ -27,7 +27,7 @@ Program Visual Studio ma wiele trybów REPL języka Python do wyboru:
 
 | REPL | Opis | Edytowanie | Debugowanie | Obrazy |
 | --- | --- | --- | --- | --- |
-| Standardowa (Standard) | REPL domyślne, rozmowy bezpośrednio do języka Python | Standardowe edytowanie (wielowierszowe itp.). | Tak, za pomocą`$attach` | Nie |
+| Standard | REPL domyślne, rozmowy bezpośrednio do języka Python | Standardowe edytowanie (wielowierszowe itp.). | Tak, za pomocą `$attach` | Nie |
 | Debugowanie | REPL domyślne, rozmowy z debugowanym procesem języka Python | Edycja standardowa | Tylko debugowanie | Nie |
 | IPython | REPLe rozmowy z zapleczem IPython | Polecenia IPython, wygody Pylab | Nie | Tak, wbudowane w REPL |
 | IPython w/o Pylab | REPLe rozmowy z zapleczem IPython | Standardowa IPython | Nie | Tak, oddziel okno |
@@ -71,7 +71,7 @@ Wyjątek polega na tym, że dodatkowe wiersze kodu są konieczne do wykonania ko
 > [!Tip]
 > Okno **interaktywne** ulepsza normalne środowisko wiersza polecenia w języku Python REPL przez automatyczne tworzenie wcięć instrukcji należących do otaczającego zakresu. Jego historia (jest wywoływana z strzałką w górę) zawiera również elementy wielowierszowe, natomiast wiersz polecenia REPL zawiera tylko pojedyncze wiersze.
 
-<a name="meta-commands"></a>Okno **interaktywne** obsługuje również kilka meta poleceń. Wszystkie meta-polecenia zaczynają się od `$` i można wpisać polecenie, `$help` Aby wyświetlić listę meta poleceń i `$help <command>` uzyskać szczegóły użycia określonego polecenia.
+<a name="meta-commands"></a> Okno **interaktywne** obsługuje również kilka meta poleceń. Wszystkie meta-polecenia zaczynają się od `$` i można wpisać polecenie, `$help` Aby wyświetlić listę meta poleceń i `$help <command>` uzyskać szczegóły użycia określonego polecenia.
 
 | Meta-polecenie | Opis |
 | --- | --- |

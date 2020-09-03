@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 960ebb94cf03ef293011645e732a0f0379d0fd47
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852245"
 ---
 # <a name="setenv-task"></a>SetEnv — Zadanie
@@ -39,8 +39,8 @@ Ustawia lub usuwa wartość określonej zmiennej środowiskowej.
 |---------------|-----------------|  
 |**Nazwa**|Wymagany parametr **ciągu** .<br /><br /> Nazwa zmiennej środowiskowej.|  
 |**OutputEnvironmentVariable**|Opcjonalny parametr wyjściowy **ciągu** .<br /><br /> Zawiera wartość, która jest przypisana do zmiennej środowiskowej, która jest określona przez parametr **name** .|  
-|**Prefiks**|Obowiązkowy parametr `Boolean`.<br /><br /> Jeśli `true`, łączy wartość parametru **Value** przed wartością zmiennej środowiskowej, która jest określona przez parametr **name** , a następnie przypisuje wynik do zmiennej środowiskowej. Jeśli `false`, przypisuje tylko wartość parametru **Value** do zmiennej środowiskowej.|  
-|**Cel**|Opcjonalny parametr **ciągu** .<br /><br /> Określa lokalizację, w której jest przechowywana zmienna środowiskowa. Określ wartość "`User`" lub "`Machine`".<br /><br /> Aby uzyskać więcej informacji, zobacz "Wyliczenie EnvironmentVariableTarget" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.|  
+|**Prefiks**|Obowiązkowy `Boolean` parametr.<br /><br /> Jeśli `true` , łączy wartość parametru **Value** przed wartością zmiennej środowiskowej, która jest określona przez parametr **name** , a następnie przypisuje wynik do zmiennej środowiskowej. Jeśli `false` , przypisuje tylko wartość parametru **Value** do zmiennej środowiskowej.|  
+|**Obiektów**|Opcjonalny parametr **ciągu** .<br /><br /> Określa lokalizację, w której jest przechowywana zmienna środowiskowa. Określ " `User` " lub " `Machine` ".<br /><br /> Aby uzyskać więcej informacji, zobacz "Wyliczenie EnvironmentVariableTarget" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.|  
 |**Wartość**|Opcjonalny parametr **ciągu** .<br /><br /> Wartość przypisana do zmiennej środowiskowej, która jest określona przez parametr **name** . Jeśli **wartość** jest pusta, a zmienna istnieje, zmienna jest usuwana. Jeśli zmienna nie istnieje, żaden błąd nie występuje, mimo że nie można wykonać operacji.<br /><br /> Aby uzyskać więcej informacji, zobacz "Environment:: SetEnvironmentVariable nie zawiera Method" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.|  
   
 ## <a name="remarks"></a>Uwagi  

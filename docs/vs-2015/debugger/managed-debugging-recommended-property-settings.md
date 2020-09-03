@@ -1,5 +1,5 @@
 ---
-title: 'Zarządzanie debugowaniem: Zalecane ustawienia właściwości | Dokumentacja firmy Microsoft'
+title: 'Debugowanie zarządzane: zalecane ustawienia właściwości | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,40 +18,40 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f63e1382d242a679ed4fac09bfb3040200fed551
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203591"
 ---
-# <a name="managed-debugging-recommended-property-settings"></a>Zarządzanie debugowaniem: Zalecane ustawienia właściwości
+# <a name="managed-debugging-recommended-property-settings"></a>Zarządzanie debugowaniem: zalecane ustawienia właściwości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Taki sam sposób dla wszystkich zarządzanych scenariuszy debugowania można ustawić niektórych właściwości.  
+Niektóre właściwości powinny być ustawiane w taki sam sposób dla wszystkich zarządzanych scenariuszy debugowania.  
   
- Poniższe tabele zawierają zalecane ustawienia właściwości.  
+ W poniższych tabelach są wyświetlane zalecane ustawienia właściwości.  
   
- Ustawienia niewymienione w tym miejscu mogą się różnić między różnymi typami projektów zarządzanych. Na przykład **Akcja uruchamiania** zostanie ustawione inaczej w projekcie programu Windows Forms niż w [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] projektu.  
+ Ustawienia niewymienione w tym miejscu mogą się różnić między różnymi typami projektów zarządzanych. Na przykład **Akcja uruchamiania** zostanie ustawiona inaczej w projekcie Windows Forms niż w [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] projekcie.  
   
-### <a name="configuration-properties-on-the-build-c-or-compile-visual-basic-tab"></a>Właściwości konfiguracji na karcie kompilacja (C#) lub Kompiluj (Visual Basic)  
+### <a name="configuration-properties-on-the-build-c-or-compile-visual-basic-tab"></a>Właściwości konfiguracji na karcie kompilacja (C#) lub kompilacja (Visual Basic)  
   
 |**Nazwa właściwości**|**Ustawienie**|  
 |-----------------------|-----------------|  
-|**Zdefiniuj stałą DEBUG**|C#i F#: Ustaw pole wyboru, aby sprawdzić. Dzięki temu aplikacja korzysta z klasy Debug.|  
-|**Zdefiniuj stałą TRACE**|C#i F#: Ustaw pole wyboru, aby sprawdzić. Dzięki temu aplikacja korzysta z klasy Trace.|  
-|**Optymalizuj kod**|C#, F#i Visual Basic: Ustawienie wartości false. Zoptymalizowany kod jest trudniejszy do debugowania, ponieważ wygenerowane instrukcje nie odpowiadają bezpośrednio kodowi źródłowemu. Jeśli okaże się, że program ma błąd, który pojawia się tylko w zoptymalizowanym kodzie, można włączyć to ustawienie, ale należy pamiętać, że kod w **dezasemblacji** okna jest generowany na podstawie zoptymalizowane źródła, które mogą być niezgodne zobaczyć w kodzie Edytor. Aby debugować zoptymalizowany kod, należy wyłączyć funkcję [tylko mój kod](just-my-code.md).<br /><br /> Aby uzyskać więcej informacji, zobacz [ustawienia projektu dla języka C# Debuguj konfiguracje](../debugger/project-settings-for-csharp-debug-configurations.md) lub [ustawienia projektu dla konfiguracji debugowania języka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|  
-|**Ścieżka wyjściowa**|Ustaw bin\Debug\\.|  
-|**Zaawansowane opcje kompilacji**|Tylko Visual Basic. Kliknij przycisk **zaawansowane** Aby ustawić zaawansowane właściwości, które są opisane w poniższej tabeli.|  
+|**Zdefiniuj stałą DEBUG**|C# i F #: Ustaw pole wyboru zaznaczone. Dzięki temu aplikacja może używać klasy Debug.|  
+|**Zdefiniuj stałą TRACE**|C# i F #: Ustaw pole wyboru zaznaczone. Dzięki temu aplikacja może używać klasy śledzenia.|  
+|**Optymalizuj kod**|C#, F # i Visual Basic: Ustaw wartość false. Zoptymalizowany kod jest trudniejszy do debugowania, ponieważ wygenerowane instrukcje nie odpowiadają bezpośrednio na kod źródłowy. Jeśli okaże się, że program ma usterkę, która pojawia się tylko w zoptymalizowanym kodzie, można włączyć to ustawienie, ale pamiętaj, że kod wyświetlany w oknie **demontażu** jest generowany na podstawie zoptymalizowanego źródła, które może nie odpowiadać temu, co widzisz w edytorze kodu. Aby debugować zoptymalizowany kod, należy wyłączyć [tylko mój kod](just-my-code.md).<br /><br /> Aby uzyskać więcej informacji, zobacz [Ustawienia projektu dla konfiguracji debugowania w języku C#](../debugger/project-settings-for-csharp-debug-configurations.md) lub [Ustawienia projektu dla konfiguracji debugowania Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|  
+|**Ścieżka wyjściowa**|Ustaw wartość bin\Debug \\ .|  
+|**Zaawansowane opcje kompilacji**|Tylko Visual Basic. Kliknij przycisk **Zaawansowane** , aby ustawić zaawansowane właściwości, które są opisane w poniższej tabeli.|  
   
 ### <a name="advanced-compiler-settings-dialog-box"></a>Zaawansowane ustawienia kompilatora — Okno dialogowe  
   
 |**Nazwa właściwości**|**Ustawienie**|  
 |-----------------------|-----------------|  
-|**Włącz optymalizacje**|Ustaw wartość false dla przyczyn wymienionych w **Optymalizuj kod** opcji w powyższej tabeli.|  
-|**Generuj informacje debugowania**|Zaznacz to pole wyboru, aby spowodować, że można ustawić podczas kompilowania kodu, flagi/Debug, która spowoduje wygenerowanie informacji potrzebnych do ułatwienia debugowania.|  
-|**Zdefiniuj stałą DEBUG**|Zaznacz to pole wyboru, aby zdefiniować `DEBUG` stałą, która pozwala aplikacji używać <xref:System.Diagnostics.Debug> klasy.|  
-|**Zdefiniuj stałą TRACE**|Zaznacz to pole wyboru, aby zdefiniować `TRACE` stałą, która pozwala aplikacji używać <xref:System.Diagnostics.Trace> klasy.|  
+|**Włącz optymalizacje**|Ustaw wartość false dla powodów określonych w opcji **Optymalizuj kod** w powyższej tabeli.|  
+|**Generuj informacje o debugowaniu**|Zaznacz to pole wyboru, aby spowodować, że flaga/DEBUG ma być ustawiana podczas kompilacji, co spowoduje wygenerowanie informacji niezbędnych do ułatwienia debugowania.|  
+|**Zdefiniuj stałą DEBUG**|Zaznacz to pole wyboru, aby zdefiniować `DEBUG` stałą, która umożliwia aplikacji korzystanie z <xref:System.Diagnostics.Debug> klasy.|  
+|**Zdefiniuj stałą TRACE**|Zaznacz to pole wyboru, aby zdefiniować `TRACE` stałą, która umożliwia aplikacji korzystanie z <xref:System.Diagnostics.Trace> klasy.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
+ [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)   
  [Typy projektów C#, F# i Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetSymUnmanagedReader | Dokumenty firmy Microsoft
+title: 'IDebugComPlusSymbolProvider:: GetSymUnmanagedReader | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9b17479868b3f394c4e55aa9d04d92fd87e59aa3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733751"
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
@@ -44,19 +44,19 @@ int GetSymUnmanagedReader(
 
 ## <a name="parameters"></a>Parametry
 `ulAppDomainID`\
-[w] Identyfikator domeny aplikacji.
+podczas Identyfikator domeny aplikacji.
 
 `guidModule`\
-[w] Unikatowy identyfikator modułu.
+podczas Unikatowy identyfikator modułu.
 
 `ppSymUnmanagedReader`\
-[na zewnątrz] Zwraca obiekt reprezentujący czytnik symboli.
+określoną Zwraca obiekt, który reprezentuje czytnik symboli.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CDebugSymbolProvider,** który udostępnia interfejs [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CDebugSymbolProvider** , który uwidacznia Interfejs [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetSymUnmanagedReader(

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c52c6b584db94ff3cbe8dc041c00ebe969c9faf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288939"
 ---
 # <a name="customize-your-build"></a>Dostosowywanie kompilacji
@@ -111,7 +111,7 @@ Podsumowanie ogólnego podejścia programu MSBuild jest następujące:
 - W przypadku dowolnego projektu MSBuild znajduje pierwszy *katalog. Build. props* w górę struktury rozwiązania, Scala go z wartościami domyślnymi i kończy skanowanie w celu uzyskania większej liczby
 - Jeśli chcesz, aby można było znaleźć i scalić wiele poziomów, wówczas [`<Import...>`](../msbuild/property-functions.md#msbuild-getpathoffileabove) (pokazany powyżej) plik "zewnętrzny" z pliku "wewnętrzny"
 - Jeśli plik "zewnętrzny" nie jest również zaimportowany powyżej, a następnie trwa skanowanie
-- Aby kontrolować proces skanowania/scalania, użyj `$(DirectoryBuildPropsPath)` i`$(ImportDirectoryBuildProps)`
+- Aby kontrolować proces skanowania/scalania, użyj `$(DirectoryBuildPropsPath)` i `$(ImportDirectoryBuildProps)`
 
 Lub po prostu: pierwszy *katalog. Build. props* , który nie importuje wszystkiego, jest zatrzymywany przez MSBuild.
 

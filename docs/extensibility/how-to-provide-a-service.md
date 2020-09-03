@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 30bfdd49d871919503be767ea930b3d5f2f0fd95
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905768"
 ---
 # <a name="how-to-provide-a-service"></a>Instrukcje: dostarczanie usługi
 Pakietu VSPackage może zapewnić usługi, których mogą używać inne pakietów VSPackage. Aby zapewnić usługę, pakietu VSPackage musi zarejestrować usługę w programie Visual Studio i dodać usługę.
 
- <xref:Microsoft.VisualStudio.Shell.Package>Klasa implementuje obie <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> i <xref:System.ComponentModel.Design.IServiceContainer> . <xref:System.ComponentModel.Design.IServiceContainer>zawiera metody wywołania zwrotnego, które udostępniają usługi na żądanie.
+ <xref:Microsoft.VisualStudio.Shell.Package>Klasa implementuje obie <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> i <xref:System.ComponentModel.Design.IServiceContainer> . <xref:System.ComponentModel.Design.IServiceContainer> zawiera metody wywołania zwrotnego, które udostępniają usługi na żądanie.
 
  Aby uzyskać więcej informacji na temat usług, zobacz temat [Service Essentials](../extensibility/internals/service-essentials.md) .
 
