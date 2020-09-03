@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 377bf06ceffe9f4f3004be665dec1c5d3629202a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532967"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Wskazówki: łączenie hosta z generowanym procesorem dyrektywy
@@ -227,7 +227,7 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
             }
     ```
 
-7. W menu **plik** kliknij polecenie **Zapisz wszystko**.
+7. W menu **File** kliknij pozycję **Save All**.
 
 8. W menu **Kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 

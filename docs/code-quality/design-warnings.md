@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a585aa64fec565a58a3af245ff3d3beaa9dc8af3
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173931"
 ---
 # <a name="design-warnings"></a>Ostrzeżenia dotyczące projektu
@@ -93,6 +93,6 @@ Obsługa ostrzeżeń dotyczących projektowania przystąpienie do [.NET Framewor
 | [CA1066: Zaimplementuj interfejs IEquatable przy przesłanianiu metody Equals](../code-quality/ca1066.md) | Typ wartości przesłania <xref:System.Object.Equals%2A> metodę, ale nie implementuje <xref:System.IEquatable%601> . |
 | [CA1067: Przesłoń metodę Equals podczas implementowania interfejsu IEquatable](../code-quality/ca1067.md) | Typ implementuje <xref:System.IEquatable%601> , ale nie przesłania <xref:System.Object.Equals%2A> metody. |
 | [CA1068: Parametry CancellationToken muszą występować na końcu](../code-quality/ca1068.md) | Metoda ma parametr CancellationToken, który nie jest ostatnim parametrem. |
-| [CA1069: wyliczenia nie powinny mieć zduplikowanych wartości](../code-quality/ca1069.md) | Wyliczenie ma wiele elementów członkowskich, do których jawnie przypisano tę samą stałą wartość. |
+| [CA1069: Wyliczenia nie powinny mieć zduplikowanych wartości](../code-quality/ca1069.md) | Wyliczenie ma wiele elementów członkowskich, do których jawnie przypisano tę samą stałą wartość. |
 | [CA1070: Nie deklaruj pól zdarzeń jako wirtualnych](../code-quality/ca1070.md) | [Zdarzenie podobne do pola](/dotnet/csharp/language-reference/language-specification/classes#field-like-events) zostało zadeklarowane jako wirtualne. |
 | [CA2210: Zestawy powinny mieć prawidłowe silne nazwy](../code-quality/ca2210.md) | Silna nazwa chroni klientów przed nieświadomym ładowaniem zestawu, który został zmieniony. Zestawy bez silnej nazwy nie powinny być wdrażane poza bardzo ograniczonymi scenariuszami. Jeśli użytkownik udostępnia lub dystrybuuje zestawy, które nie są poprawnie podpisane, zestaw może zostać zmieniony, środowisko uruchomieniowe języka wspólnego może nie załadować zestawu lub użytkownik będzie musiał wyłączyć weryfikację na swoim komputerze. |

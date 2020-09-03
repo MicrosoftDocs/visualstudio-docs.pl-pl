@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f235108c63eb063f0ddcd495385bd3325581332
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289017"
 ---
 # <a name="item-element-msbuild"></a>Item — element (MSBuild)
@@ -95,7 +95,7 @@ Teraz można jednak przekazać `Version` metadane jako atrybut, na przykład w n
 
 ## <a name="remarks"></a>Uwagi
 
-`Item`elementy definiują dane wejściowe w systemie kompilacji i są pogrupowane w kolekcje elementów na podstawie ich nazw kolekcji zdefiniowanych przez użytkownika. Te kolekcje elementów mogą służyć jako parametry [zadań](../msbuild/msbuild-tasks.md), które używają poszczególnych elementów w kolekcjach do wykonywania kroków procesu kompilacji. Aby uzyskać więcej informacji, zobacz [Items](../msbuild/msbuild-items.md).
+`Item` elementy definiują dane wejściowe w systemie kompilacji i są pogrupowane w kolekcje elementów na podstawie ich nazw kolekcji zdefiniowanych przez użytkownika. Te kolekcje elementów mogą służyć jako parametry [zadań](../msbuild/msbuild-tasks.md), które używają poszczególnych elementów w kolekcjach do wykonywania kroków procesu kompilacji. Aby uzyskać więcej informacji, zobacz [Items](../msbuild/msbuild-items.md).
 
 Użycie notacji @ ( \<myType> ) umożliwia rozwinięcie kolekcji elementów typu do \<myType> listy ciągów rozdzielanych średnikami i przekazanie do parametru. Jeśli parametr jest typu `string` , wartość parametru jest listą elementów rozdzielonych średnikami. Jeśli parametr jest tablicą ciągów ( `string[]` ), każdy element zostanie wstawiony do tablicy na podstawie lokalizacji średników. Jeśli parametr zadania jest typu <xref:Microsoft.Build.Framework.ITaskItem> `[]` , wartość jest zawartość kolekcji elementów wraz z dowolnymi dołączonymi metadanymi. Aby rozdzielić każdy element przy użyciu znaku innego niż średnik, użyj składni @ ( \<myType> , " \<separator> ").
 
@@ -126,7 +126,7 @@ Poniższy przykład kodu pokazuje, jak używać `Update` atrybutu do modyfikowan
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Items (Elementy)](../msbuild/msbuild-items.md)
-- [Wspólne elementy projektu MSBuild](../msbuild/common-msbuild-project-items.md)
-- [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)
+- [Elementy](../msbuild/msbuild-items.md)
+- [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)
+- [właściwości programu MSBuild](../msbuild/msbuild-properties.md)
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)

@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 754c88bd6dbe76736148718d2f1ad32888623c34
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288380"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Instrukcje: Dodawanie liczników do zestawów liczników przy użyciu Edytor testu obciążeniowego
@@ -53,7 +53,7 @@ Zarządzasz licznikami w **Edytor testu obciążeniowego**. Zestawy liczników, 
 
 6. Wybierz licznik i wystąpienie, które mają zostać dodane do niestandardowego zestawu liczników.
 
-     \-oraz
+     \- oraz
 
      Wybierz przycisk radiowy **wszystkie liczniki** , aby wybrać wszystkie dostępne liczniki.
 

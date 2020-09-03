@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 31e33b562a5a11ff77c1d610fbce9e90506b036d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290573"
 ---
 # <a name="generate-comparison-operators-for-types-that-implement-icomparable"></a>Generuj operatory porównania dla typów, które implementują interfejs IComparable
@@ -36,7 +36,7 @@ Ta generacja kodu ma zastosowanie do:
 
    - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
 
-   - Kliknij kartę ![śrubokręt](../media/screwdriver-icon.png) ikona wyświetlana na lewym marginesie.
+   - Kliknij pozycję ![śrubokręt](../media/screwdriver-icon.png) ikona wyświetlana na lewym marginesie.
 
    ![Generowanie operatorów porównania](media/generate-comparison-operators.png)
 

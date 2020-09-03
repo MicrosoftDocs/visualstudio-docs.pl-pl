@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916800"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Porady: rozszerzanie projektanta języka specyficznego dla domeny
@@ -26,11 +26,11 @@ Aby edytować definicje DSL, można tworzyć rozszerzenia projektanta. Typy rozs
 
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>Aby utworzyć rozwiązanie rozszerzenia projektant DSL
 
-1. Utwórz nowy projekt przy użyciu szablonu projektu biblioteki klas. W oknie dialogowym **Nowy projekt** kliknij pozycję **Wizualizacja C#**  , a następnie w środkowym oknie kliknij pozycję **Biblioteka klas**.
+1. Utwórz nowy projekt przy użyciu szablonu projektu biblioteki klas. W oknie dialogowym **Nowy projekt** kliknij pozycję **Visual C#** , a następnie w środkowym oknie kliknij pozycję **Biblioteka klas**.
 
      Ten projekt będzie zawierać kod rozszerzeń.
 
-2. Utwórz nowy projekt przy użyciu szablonu projektu VSIX. W oknie dialogowym **Nowy projekt** rozwiń pozycję **Wizualizacja C#** , kliknij pozycję **rozszerzalność**, a następnie w środkowym oknie wybierz pozycję **Projekt VSIX**.
+2. Utwórz nowy projekt przy użyciu szablonu projektu VSIX. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual C#**, kliknij pozycję **rozszerzalność**, a następnie w środkowym oknie wybierz pozycję **Projekt VSIX**.
 
      Wybierz pozycję **Dodaj do rozwiązania**.
 
@@ -46,45 +46,45 @@ Aby edytować definicje DSL, można tworzyć rozszerzenia projektanta. Typy rozs
 
 7. W projekcie biblioteki klas Dodaj odwołania do następujących zestawów:
 
-     Microsoft.VisualStudio.CoreUtility
+     Microsoft. VisualStudio. CoreUtility
 
-     Microsoft.VisualStudio.Modeling.Sdk.11.0
+     Microsoft. VisualStudio. Modeling. Sdk. 11.0
 
-     Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+     Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0
 
-     Microsoft.VisualStudio.Modeling.Sdk.DslDefinition.11.0
+     Microsoft. VisualStudio. Modeling. Sdk. DslDefinition. 11.0
 
-     Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0
+     Microsoft. VisualStudio. Modeling. Sdk. Integration. 11.0
 
-     System.ComponentModel.Composition
+     System. ComponentModel. kompozycji
 
-     System.Drawing
+     System. Drawing
 
-     System.Drawing.Design
+     System. Drawing. Design
 
-     System.Windows.Forms
+     System. Windows. Forms
 
 ## <a name="testing-and-deployment"></a>Testowanie i wdrażanie
- Aby przetestować dowolne rozszerzenia w tym temacie, skompiluj i uruchom rozwiązanie. Zostanie otwarte doświadczalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. W tym przypadku należy otworzyć rozwiązanie DSL. Edytuj diagram DslDefinition. Można zobaczyć zachowanie rozszerzenia.
+ Aby przetestować dowolne rozszerzenia w tym temacie, skompiluj i uruchom rozwiązanie. Doświadczalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zostanie otwarte. W tym przypadku należy otworzyć rozwiązanie DSL. Edytuj diagram DslDefinition. Można zobaczyć zachowanie rozszerzenia.
 
- Aby wdrożyć rozszerzenia w głównej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]i na innych komputerach, wykonaj następujące kroki:
+ Aby wdrożyć rozszerzenia na głównych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i innych komputerach, wykonaj następujące kroki:
 
-1. Znajdź plik VSIX instalacji w projekcie VSIX bin\\*\*\\\*.vsix
+1. Znajdź plik instalacji VSIX w projekcie VSIX w pliku bin \\ * \\ \* . vsix
 
 2. Skopiuj ten plik na komputer docelowy, a następnie kliknij go dwukrotnie w Eksploratorze Windows (lub Eksploratorze plików).
 
-    Zostanie otwarty Menedżer rozszerzeń [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], aby upewnić się, że rozszerzenie zostało zainstalowane.
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Zostanie otwarty Menedżer rozszerzeń, aby upewnić się, że rozszerzenie zostało zainstalowane.
 
    Aby odinstalować rozszerzenie, wykonaj następujące kroki:
 
-3. w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]w menu **Narzędzia** kliknij pozycję **Menedżer rozszerzeń**.
+3. w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , w menu **Narzędzia** , kliknij **Menedżer rozszerzeń**.
 
 4. Wybierz rozszerzenie i usuń je.
 
 ## <a name="adding-a-shortcut-menu-command"></a>Dodawanie polecenia menu skrótów
  Aby polecenie menu skrótów było wyświetlane na powierzchni projektant DSL lub w oknie Eksplorator DSL, napisz klasę podobną do następującej.
 
- Klasa musi implementować `ICommandExtension` i musi mieć atrybut `DslDefinitionModelCommandExtension`.
+ Klasa musi implementować `ICommandExtension` i musi mieć atrybut `DslDefinitionModelCommandExtension` .
 
 ```
 using System.Collections.Generic;

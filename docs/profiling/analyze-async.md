@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 49091ba472637d480c04c39f0170c2aee00595d2
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290669"
 ---
 # <a name="analyze-performance-of-net-asynchronous-code"></a>Analizowanie wydajności kodu asynchronicznego .NET
@@ -23,7 +23,7 @@ Użyj narzędzia asynchronicznego platformy .NET do analizowania wydajności kod
 > [!NOTE]
 > Narzędzie asynchroniczne platformy .NET wymaga programu Visual Studio 2019 w wersji 16,7 lub nowszej oraz projektu .NET, który używa **Async** i **await**.
 
-## <a name="setup"></a>Konfigurowanie
+## <a name="setup"></a>Konfiguracja
 
 1. Wybierz **kombinację klawiszy Alt + F2** , aby otworzyć Profiler wydajności w programie Visual Studio.
 

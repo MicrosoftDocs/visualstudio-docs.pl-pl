@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7ba4da072a586bdc09993b77200a769be3940ab
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536308"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks — &gt; element (program inicjujący)
@@ -82,9 +82,9 @@ ms.locfileid: "85536308"
 |`ProcessorArchitecture`|Opcjonalny. Procesor komputera przeznaczony dla tej instalacji. Wartość domyślna to `msil`.|
 
 ## <a name="externalcheck"></a>ExternalCheck
- Ten element jest opcjonalnym elementem podrzędnym `InstallChecks` . Dla każdego wystąpienia `ExternalCheck` program inicjujący wykona nazwany program zewnętrzny w oddzielnym procesie i zapisze jego kod zakończenia we właściwości wskazanej przez `Property` . `ExternalCheck`jest przydatne do implementowania złożonych kontroli zależności lub gdy jedynym sposobem sprawdzenia istnienia składnika jest utworzenie jego wystąpienia.
+ Ten element jest opcjonalnym elementem podrzędnym `InstallChecks` . Dla każdego wystąpienia `ExternalCheck` program inicjujący wykona nazwany program zewnętrzny w oddzielnym procesie i zapisze jego kod zakończenia we właściwości wskazanej przez `Property` . `ExternalCheck` jest przydatne do implementowania złożonych kontroli zależności lub gdy jedynym sposobem sprawdzenia istnienia składnika jest utworzenie jego wystąpienia.
 
- `ExternalCheck`nie zawiera żadnych elementów i ma następujące atrybuty.
+ `ExternalCheck` nie zawiera żadnych elementów i ma następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
@@ -95,7 +95,7 @@ ms.locfileid: "85536308"
 ## <a name="filecheck"></a>FileCheck
  Ten element jest opcjonalnym elementem podrzędnym `InstallChecks` . Dla każdego wystąpienia programu `FileCheck` program inicjujący określi, czy nazwany plik istnieje, i zwraca numer wersji pliku. Jeśli plik nie ma numeru wersji, program inicjujący ustawia właściwość o nazwie `Property` na 0. Jeśli plik nie istnieje, `Property` nie jest ustawiony na żadnej wartości.
 
- `FileCheck`nie zawiera żadnych elementów i ma następujące atrybuty.
+ `FileCheck` nie zawiera żadnych elementów i ma następujące atrybuty.
 
 | Atrybut | Opis |
 |-----------------| - |
@@ -108,7 +108,7 @@ ms.locfileid: "85536308"
 ## <a name="msiproductcheck"></a>MsiProductCheck
  Ten element jest opcjonalnym elementem podrzędnym `InstallChecks` . Dla każdego wystąpienia `MsiProductCheck` program inicjujący sprawdza, czy określona instalacja programu Microsoft Instalator Windows została uruchomiona, dopóki nie zostanie ukończona. Wartość właściwości jest ustawiana w zależności od stanu zainstalowanego produktu. Wartość dodatnia oznacza, że produkt jest zainstalowany, 0 lub-1 oznacza, że nie jest zainstalowany. (Aby uzyskać więcej informacji Instalator Windows, zobacz MsiQueryFeatureState zestawu SDK. . Jeśli Instalator Windows nie jest zainstalowana na komputerze, `Property` nie jest ustawiona.
 
- `MsiProductCheck`nie zawiera żadnych elementów i ma następujące atrybuty.
+ `MsiProductCheck` nie zawiera żadnych elementów i ma następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
@@ -119,24 +119,24 @@ ms.locfileid: "85536308"
 ## <a name="registrycheck"></a>RegistryCheck
  Ten element jest opcjonalnym elementem podrzędnym `InstallChecks` . Dla każdego wystąpienia programu `RegistryCheck` program inicjujący sprawdza, czy określony klucz rejestru istnieje lub czy ma określoną wartość.
 
- `RegistryCheck`nie zawiera żadnych elementów i ma następujące atrybuty.
+ `RegistryCheck` nie zawiera żadnych elementów i ma następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
 |`Property`|Wymagany. Nazwa właściwości do przechowywania wyniku. Do tej właściwości można odwoływać się z testu poniżej `InstallConditions` elementu, który jest elementem podrzędnym `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md).|
 |`Key`|Wymagany. Nazwa klucza rejestru.|
-|`Value`|Opcjonalny. Nazwa wartości rejestru do pobrania. Wartością domyślną jest zwrócenie tekstu wartości domyślnej. `Value`musi być ciągiem lub DWORD.|
+|`Value`|Opcjonalny. Nazwa wartości rejestru do pobrania. Wartością domyślną jest zwrócenie tekstu wartości domyślnej. `Value` musi być ciągiem lub DWORD.|
 
 ## <a name="registryfilecheck"></a>RegistryFileCheck
  Ten element jest opcjonalnym elementem podrzędnym `InstallChecks` . Dla każdego wystąpienia `RegistryFileCheck` program inicjujący Pobiera wersję określonego pliku, a najpierw próbuje pobrać ścieżkę do pliku z określonego klucza rejestru. Jest to szczególnie przydatne, jeśli chcesz wyszukać plik w katalogu określonym jako wartość rejestru.
 
- `RegistryFileCheck`nie zawiera żadnych elementów i ma następujące atrybuty.
+ `RegistryFileCheck` nie zawiera żadnych elementów i ma następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
 |`Property`|Wymagany. Nazwa właściwości do przechowywania wyniku. Do tej właściwości można odwoływać się z testu poniżej `InstallConditions` elementu, który jest elementem podrzędnym `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md).|
 |`Key`|Wymagany. Nazwa klucza rejestru. Jego wartość jest interpretowana jako ścieżka do pliku, chyba że `File` atrybut jest ustawiony. Jeśli ten klucz nie istnieje, `Property` nie jest ustawiony.|
-|`Value`|Opcjonalny. Nazwa wartości rejestru do pobrania. Wartością domyślną jest zwrócenie tekstu wartości domyślnej. `Value`musi być ciągiem.|
+|`Value`|Opcjonalny. Nazwa wartości rejestru do pobrania. Wartością domyślną jest zwrócenie tekstu wartości domyślnej. `Value` musi być ciągiem.|
 |`FileName`|Opcjonalny. Nazwa pliku. Jeśli jest określony, zakłada się, że wartość uzyskana z klucza rejestru jest ścieżką katalogu, a ta nazwa jest dołączana do niej. Jeśli nie zostanie określony, przyjmuje się, że wartość zwracana z rejestru jest pełną ścieżką do pliku.|
 |`SearchDepth`|Opcjonalny. Głębokość przeszukiwania podfolderów dla nazwanego pliku. Wyszukiwanie jest głębokością — najpierw. Wartością domyślną jest 0, która ogranicza wyszukiwanie do folderu najwyższego poziomu określonego przez wartość klucza rejestru.|
 
@@ -180,5 +180,5 @@ ms.locfileid: "85536308"
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [\<Commands>postaci](../deployment/commands-element-bootstrapper.md)
+- [\<Commands> postaci](../deployment/commands-element-bootstrapper.md)
 - [Dokumentacja schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)

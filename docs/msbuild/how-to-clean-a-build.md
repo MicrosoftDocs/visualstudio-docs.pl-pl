@@ -1,5 +1,5 @@
 ---
-title: 'Jak: Czyszczenie kompilacji | Dokumenty firmy Microsoft'
+title: 'Instrukcje: czyszczenie kompilacji | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,52 +14,52 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633918"
 ---
-# <a name="how-to-clean-a-build"></a>Jak: Czyszczenie kompilacji
+# <a name="how-to-clean-a-build"></a>Instrukcje: czyszczenie kompilacji
 
-Podczas czyszczenia kompilacji wszystkie pliki pośrednie i wyjściowe są usuwane, pozostawiając tylko pliki projektu i składnika. Z plików projektu i składników można następnie zbudować nowe wystąpienia plików pośrednich i wyjściowych. 
+Gdy czyścisz kompilację, wszystkie pliki pośrednie i wyjściowe zostaną usunięte, pozostawiając tylko pliki projektu i składnika. Z plików projektu i składników można następnie skompilować nowe wystąpienia plików pośrednich i wyjściowych. 
 
 ## <a name="create-a-directory-for-output-items"></a>Tworzenie katalogu dla elementów wyjściowych
 
- Domyślnie plik *exe* tworzony podczas kompilowania projektu jest umieszczany w tym samym katalogu co pliki projektu i źródła. Zazwyczaj jednak elementy wyjściowe są tworzone w osobnym katalogu.
+ Domyślnie plik *. exe* , który jest tworzony podczas kompilowania projektu, jest umieszczany w tym samym katalogu, w którym znajdują się pliki projektu i plików źródłowych. Zwykle jednak elementy wyjściowe są tworzone w osobnym katalogu.
 
 ### <a name="to-create-a-directory-for-output-items"></a>Aby utworzyć katalog dla elementów wyjściowych
 
-1. Użyj `Property` elementu, aby zdefiniować lokalizację i nazwę katalogu. Na przykład utwórz katalog o nazwie *BuiltApp* w katalogu zawierającym pliki projektu i źródła:
+1. Użyj `Property` elementu, aby zdefiniować lokalizację i nazwę katalogu. Na przykład Utwórz katalog o nazwie *BuiltApp* w katalogu zawierającym pliki projektu i źródła:
 
      `<builtdir>BuiltApp</builtdir>`
 
-2. Użyj zadania [MakeDir,](../msbuild/makedir-task.md) aby utworzyć katalog, jeśli katalog nie istnieje. Przykład:
+2. Użyj zadania [MakeDir](../msbuild/makedir-task.md) , aby utworzyć katalog, jeśli katalog nie istnieje. Na przykład:
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
       Condition = "!Exists('$(builtdir)')" />
      ```
 
-## <a name="remove-the-output-items"></a>Usuwanie elementów wyjściowych
+## <a name="remove-the-output-items"></a>Usuń elementy wyjściowe
 
- Przed utworzeniem nowych wystąpień plików pośrednich i wyjściowych można wyczyścić wszystkie poprzednie wystąpienia plików pośrednich i wyjściowych. Użyj zadania [Usuńj,](../msbuild/removedir-task.md) aby usunąć katalog oraz wszystkie pliki i katalogi, które zawiera z dysku.
+ Przed utworzeniem nowych wystąpień plików pośrednich i wyjściowych warto wyczyścić wszystkie poprzednie wystąpienia plików pośrednich i wyjściowych. Użyj zadania [RemoveDir —](../msbuild/removedir-task.md) , aby usunąć katalog i wszystkie pliki i katalogi, które zawiera z dysku.
 
-#### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Aby usunąć katalog i wszystkie pliki zawarte w katalogu
+#### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Aby usunąć katalog i wszystkie pliki znajdujące się w katalogu
 
-- Użyj `RemoveDir` zadania, aby usunąć katalog. Przykład:
+- Użyj `RemoveDir` zadania, aby usunąć katalog. Na przykład:
 
      `<RemoveDir Directories="$(builtdir)" />`
 
 ## <a name="example"></a>Przykład
 
- Poniższy przykładowy projekt kodu `Clean`zawiera nowy obiekt `RemoveDir` docelowy, który używa zadania do usunięcia katalogu i wszystkich plików i katalogów, które zawiera. Również w tym `Compile` przykładzie obiekt docelowy tworzy oddzielny katalog dla elementów wyjściowych, które są usuwane, gdy kompilacja jest czyszczona.
+ Następujący przykładowy kod projektu zawiera nowy obiekt docelowy, `Clean` który używa `RemoveDir` zadania do usuwania katalogu i wszystkich plików i katalogów, które zawiera. Ponadto w tym przykładzie `Compile` obiekt docelowy tworzy oddzielny katalog dla elementów wyjściowych, które są usuwane podczas czyszczenia kompilacji.
 
- `Compile`jest zdefiniowany jako domyślny cel i dlatego jest używany automatycznie, chyba że określisz inny cel lub cele. Przełącznik wiersza polecenia **-target** służy do określania innego obiektu docelowego. Przykład:
+ `Compile` jest zdefiniowany jako domyślny element docelowy i dlatego jest używany automatycznie, o ile nie zostanie określony inny element docelowy lub docelowy. **Aby określić inny element docelowy,** należy użyć przełącznika wiersza polecenia. Na przykład:
 
  `msbuild <file name>.proj -target:Clean`
 
- Przełącznik **-target** można skrócić do **-t** i można określić więcej niż jeden cel. Na przykład, aby `Clean` użyć obiektu `Compile`docelowego, a następnie cel , wpisz:
+ Przełącznik **-Target** może być skrócony do **-t** i może określać więcej niż jeden obiekt docelowy. Na przykład, aby użyć obiektu docelowego `Clean` `Compile` , należy wpisać:
 
  `msbuild <file name>.proj -t:Clean;Compile`
 
@@ -105,7 +105,7 @@ Podczas czyszczenia kompilacji wszystkie pliki pośrednie i wyjściowe są usuwa
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Zadanie MakeDir](../msbuild/makedir-task.md)
-- [RemoveDir zadanie](../msbuild/removedir-task.md)
-- [Zadanie csc](../msbuild/csc-task.md)
-- [Cele](../msbuild/msbuild-targets.md)
+- [MakeDir — zadanie](../msbuild/makedir-task.md)
+- [RemoveDir — zadanie](../msbuild/removedir-task.md)
+- [Csc — Zadanie](../msbuild/csc-task.md)
+- [Targets (Obiekty docelowe)](../msbuild/msbuild-targets.md)

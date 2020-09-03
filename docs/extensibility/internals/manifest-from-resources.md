@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6ea5931c77e267bc6065693be1ae144c250ce6df
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536231"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
@@ -31,7 +31,7 @@ Narzędzie Manifest from Resources to Aplikacja konsolowa, która pobiera listę
 |/Assembly|Nazwa zarządzanego zestawu (bez rozszerzenia) lub ścieżka środowiska uruchomieniowego zestawu natywnego, który hostuje zasoby (względem lokalizacji środowiska uruchomieniowego manifestu).|Wymagane|
 |/manifest|Nazwa, która ma zostać nadana wygenerowanemu plikowi. imagemanifest. Może również zawierać ścieżkę bezwzględną lub względną, aby utworzyć plik w innej lokalizacji. Nazwa domyślna jest zgodna z nazwą zestawu.<br /><br /> Wartość domyślna: \<Current Directory> \\<Assembly \> . imagemanifest|Opcjonalne|
 |/guidName|Nazwa, która ma zostać nadana symbolowi GUID dla wszystkich obrazów w wygenerowanym manifeście.<br /><br /> Wartość domyślna: AssetsGuid|Opcjonalne|
-|/rootPath|Ścieżka katalogu głównego, która musi zostać usunięta przed utworzeniem zarządzanych identyfikatorów URI zasobów. (Ta flaga ma pomóc w przypadkach, w których narzędzie pobiera względną ścieżkę identyfikatora URI, powodując niepowodzenie ładowania zasobów).<br /><br /> Wartooć\<Current Directory>|Opcjonalne|
+|/rootPath|Ścieżka katalogu głównego, która musi zostać usunięta przed utworzeniem zarządzanych identyfikatorów URI zasobów. (Ta flaga ma pomóc w przypadkach, w których narzędzie pobiera względną ścieżkę identyfikatora URI, powodując niepowodzenie ładowania zasobów).<br /><br /> Wartooć \<Current Directory>|Opcjonalne|
 |/recursive|Ustawienie tej flagi nakazuje narzędziu cykliczne przeszukiwanie wszelkich katalogów w argumencie/Resources. Pominięcie tej flagi spowoduje przeszukanie katalogów tylko na najwyższym poziomie.|Opcjonalne|
 |/isNative|Ustaw tę flagę, gdy argument zestawu jest ścieżką dla natywnego zestawu. Pomiń tę flagę, gdy argument zestawu jest nazwą zarządzanego zestawu. (Zobacz sekcję Uwagi, aby uzyskać dodatkowe informacje na temat tej flagi).|Opcjonalne|
 |/newGuids|Ustawienie tej flagi nakazuje narzędziu utworzenie nowej wartości symbolu GUID obrazów zamiast scalanie jednego z istniejących manifestów.|Opcjonalne|

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ed93d852e385a6130cd37b0f66c99b4f0ab467bc
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586802"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Concurrency Visualizer SDK
@@ -50,7 +50,7 @@ W języku C#, Visual Basic i innym zarządzanym kodzie Użyj domyślnego dostawc
     ```
 
 ### <a name="c"></a>C++
- W języku C++ Utwórz obiekt [klasy marker_series](../profiling/marker-series-class.md) i użyj go do wywołania funkcji.  `marker_series` Klasa uwidacznia trzy funkcje do generowania znaczników, metody [marker_series:: write_flag](../profiling/marker-series-write-flag-method.md), [marker_series:: write_message](../profiling/marker-series-write-message-method.md)i [marker_series:: write_alert metody](../profiling/marker-series-write-alert-method.md).
+ W języku C++ Utwórz obiekt [klasy marker_series](../profiling/marker-series-class.md) i użyj go do wywołania funkcji.  `marker_series`Klasa uwidacznia trzy funkcje do generowania znaczników, metody [marker_series:: write_flag](../profiling/marker-series-write-flag-method.md), [marker_series:: write_message](../profiling/marker-series-write-message-method.md)i [marker_series:: write_alert metody](../profiling/marker-series-write-alert-method.md).
 
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>Aby dodać obsługę zestawu SDK do projektu C++ lub C
 
@@ -58,7 +58,7 @@ W języku C#, Visual Basic i innym zarządzanym kodzie Użyj domyślnego dostawc
 
 2. Wybierz projekt, do którego chcesz uzyskać dostęp do zestawu SDK, a następnie wybierz przycisk **Dodaj zestaw SDK do wybranego projektu** .
 
-3. W przypadku języka C++ `cvmarkersobj.h`Uwzględnij. Dla języka C należy `cvmarkers.h`uwzględnić.
+3. W przypadku języka C++ Uwzględnij `cvmarkersobj.h` . Dla języka C należy uwzględnić `cvmarkers.h` .
 
 4. Dodaj instrukcję using do kodu.
 
@@ -84,7 +84,7 @@ W języku C#, Visual Basic i innym zarządzanym kodzie Użyj domyślnego dostawc
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Aby użyć nowego dostawcy znaczników w projekcie C++ lub C
 
-1. Użyj funkcji `CvInitProvider` , aby zainicjować PCV_PROVIDER. Konstruktor przyjmuje identyfikatory GUID * i PCV_PROVIDER\*.
+1. Użyj `CvInitProvider` funkcji, aby zainicjować PCV_PROVIDER. Konstruktor przyjmuje identyfikatory GUID * i PCV_PROVIDER \* .
 
 2. Aby zarejestrować dostawcę, Otwórz okno dialogowe [Ustawienia zaawansowane](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) . Wybierz kartę **znaczniki** , a następnie wybierz przycisk **Dodaj nowy dostawca** . W tym oknie dialogowym wprowadź identyfikator GUID, który został użyty do utworzenia dostawcy i opis dostawcy.
 
@@ -113,7 +113,7 @@ W języku C#, Visual Basic i innym zarządzanym kodzie Użyj domyślnego dostawc
 
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Aby użyć serii znaczników w projekcie C
 
-1. Użyj funkcji `CvCreateMarkerSeries` , aby utworzyć PCV_MARKERSERIES.
+1. Użyj `CvCreateMarkerSeries` funkcji, aby utworzyć PCV_MARKERSERIES.
 
     ```cpp
     PCV_MARKERSERIES series;

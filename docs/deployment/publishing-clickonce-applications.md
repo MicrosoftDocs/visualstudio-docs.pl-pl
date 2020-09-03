@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 41cd62e8831ac4edd5b37337c1e72dd0b2e662e4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536295"
 ---
 # <a name="publish-clickonce-applications"></a>Publikowanie aplikacji ClickOnce
@@ -100,6 +100,6 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 |[Przewodnik: Tworzenie niestandardowego Instalatora dla aplikacji ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Wyjaśnia, jak utworzyć instalatora niestandardowego w celu zainstalowania aplikacji ClickOnce.|
 |[Instrukcje: publikowanie aplikacji WPF z włączonymi stylami wizualizacji](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Zawiera instrukcje krok po kroku dotyczące rozwiązywania błędu, który pojawia się podczas próby opublikowania aplikacji WPF z włączonymi stylami wizualizacji.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia i wdrażanie technologii ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Dokumentacja technologii ClickOnce](../deployment/clickonce-reference.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d7c72d1da270220144cd5e6167ebecb66462ba9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289277"
 ---
 # <a name="msbuild-batching"></a>Przetwarzanie wsadowe w programie MSBuild
@@ -113,7 +113,7 @@ W przypadku tworzenia wsadowych grup docelowych i wsadowych zadań partie mogą 
   </Target>
 ```
 
-Dane wyjściowe wyglądają następująco:
+Dane wyjściowe są następujące:
 
 ```output
 Target DemoIndependentBatches:
@@ -163,7 +163,7 @@ Teraz spójrzmy na dane wyjściowe tych dwóch podobnych projektów.
     </Target>
 ```
 
-Dane wyjściowe wyglądają następująco:
+Dane wyjściowe są następujące:
 
 ```output
 Test1:
@@ -191,7 +191,7 @@ Teraz Usuń `Outputs` atrybut, który określa docelowe przetwarzanie wsadowe.
     </Target>
 ```
 
-Dane wyjściowe wyglądają następująco:
+Dane wyjściowe są następujące:
 
 ```output
 Test1:
@@ -205,13 +205,13 @@ Przyczyną jest to, że w przypadku korzystania z wsadowego określania wartośc
 
 ## <a name="property-functions-using-metadata"></a>Funkcje właściwości korzystające z metadanych
 
-Przetwarzanie wsadowe może być kontrolowane przez funkcje właściwości, które obejmują metadane. Na przykład
+Przetwarzanie wsadowe może być kontrolowane przez funkcje właściwości, które obejmują metadane. Przykład:
 
 `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`
 
 używa <xref:System.IO.Path.Combine%2A> do łączenia ścieżki folderu głównego z ścieżką elementu kompilacji.
 
-Funkcje właściwości mogą nie występować w obrębie wartości metadanych. Na przykład
+Funkcje właściwości mogą nie występować w obrębie wartości metadanych. Przykład:
 
 `%(Compile.FullPath.Substring(0,3))`
 

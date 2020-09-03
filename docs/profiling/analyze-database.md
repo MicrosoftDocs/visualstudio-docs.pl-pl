@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: b369fe6998cd7ef134af765d6d849f41bc93527c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290668"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Analizowanie wydajności bazy danych przy użyciu narzędzia bazy danych
@@ -23,7 +23,7 @@ Użyj narzędzia Database, aby zarejestrować zapytania bazy danych, które apli
 > [!NOTE]
 > Narzędzie Database wymaga programu Visual Studio 2019 w wersji 16,3 lub nowszej oraz projektu .NET Core w systemie Windows przy użyciu [ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) lub [Entity Framework Core](https://docs.microsoft.com/ef/core/).
 
-## <a name="setup"></a>Konfigurowanie
+## <a name="setup"></a>Konfiguracja
 
 1. Wybierz **kombinację klawiszy Alt + F2** , aby otworzyć Profiler wydajności w programie Visual Studio.
 

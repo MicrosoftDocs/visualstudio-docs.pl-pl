@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 15f2817b6fd0aee312ff41af218d01ad80bc785e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620559"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Kompilowanie oraz oczyszczanie projektów i rozwiązań w programie Visual Studio
@@ -71,19 +71,19 @@ Korzystając z procedur opisanych w tym temacie, można tworzyć, odbudować lub
 
     Zostanie otwarte okno dialogowe **kompilacja i uruchomienie, projekty i rozwiązania, opcje** .
 
-3. Zaznacz pole wyboru **Kompiluj tylko projekty startowe i zależności przy uruchamianiu** .
+3. Zaznacz pole wyboru  **Kompiluj tylko projekty startowe i zależności przy uruchamianiu** .
 
     Gdy to pole wyboru jest zaznaczone, tylko bieżący projekt startowy i jego zależności są kompilowane podczas wykonywania jednego z następujących kroków:
 
-   - Na pasku menu wybierz **debuguj**  > **Rozpocznij debugowanie** (F5).
+   - Na pasku menu wybierz **Debuguj**  >  **Rozpocznij debugowanie** (F5).
 
-   - Na pasku menu wybierz **kompiluj**  > **Kompiluj rozwiązanie** (Ctrl + Shift + B).
+   - Na pasku menu wybierz kolejno opcje **Kompiluj**kompilacje  >  **rozwiązanie** (Ctrl + Shift + B).
 
      Gdy to pole wyboru jest wyczyszczone, wszystkie projekty, ich zależności i pliki rozwiązań są kompilowane po uruchomieniu jednego z powyższych poleceń. To pole wyboru jest domyślnie wyczyszczone.
 
-## <a name="to-build-only-the-selected-visual-c-project"></a>Aby skompilować tylko wybrany projekt wizualizacji C++
+## <a name="to-build-only-the-selected-visual-c-project"></a>Aby skompilować tylko wybrany projekt Visual C++
 
-1. Wybierz projekt [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], a następnie na pasku menu wybierz **kompilacja**, **tylko projekt**i jedno z następujących poleceń:
+1. Wybierz [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projekt, a następnie na pasku menu wybierz **kompilacja**, **tylko projekt**i jedno z następujących poleceń:
 
    - **Tylko kompilacja** *ProjectName*
 
@@ -93,9 +93,9 @@ Korzystając z procedur opisanych w tym temacie, można tworzyć, odbudować lub
 
    - **Tylko link** *ProjectName*
 
-     Te polecenia mają zastosowanie tylko do wybranego projektu [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], bez kompilowania, ponownego kompilowania, czyszczenia lub łączenia jakichkolwiek zależności projektu lub plików rozwiązań. W zależności od używanej wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **tylko projekt** podmenu może zawierać więcej poleceń.
+     Te polecenia mają zastosowanie tylko do [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] wybranego projektu, bez kompilowania, ponownego kompilowania, czyszczenia lub łączenia jakichkolwiek zależności projektu lub plików rozwiązania. W zależności od używanej wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , podmenu **tylko projekt** może zawierać więcej poleceń.
 
-## <a name="to-compile-multiple-c-project-items"></a>Aby skompilować wiele C++ elementów projektu
+## <a name="to-compile-multiple-c-project-items"></a>Aby skompilować wiele elementów projektu C++
 
 1. W **Eksplorator rozwiązań**wybierz wiele plików, które mogą być skompilowanymi akcjami, otwórz menu skrótów dla jednego z tych plików, a następnie wybierz polecenie **Kompiluj**.
 
@@ -109,5 +109,5 @@ Korzystając z procedur opisanych w tym temacie, można tworzyć, odbudować lub
 
     - Naciśnij klawisze Ctrl + Break.
 
-## <a name="see-also"></a>Zobacz także
- [Instrukcje: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md) [pobieranie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md) [Kompilowanie i kompilowanie](../ide/compiling-and-building-in-visual-studio.md) konfiguracji [kompilacji](../ide/understanding-build-configurations.md) [debugowanie i wydanie projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [informacje C/kompilacjaC++ ](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv przełącza](../ide/reference/devenv-command-line-switches.md) [rozwiązania i projekty z](../ide/solutions-and-projects-in-visual-studio.md) wiersza polecenia
+## <a name="see-also"></a>Zobacz też
+ [Instrukcje: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md) pobieranie [dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md) [Kompilowanie i kompilowanie konfiguracji](../ide/compiling-and-building-in-visual-studio.md) [kompilacji](../ide/understanding-build-configurations.md) [debugowanie i wydanie Konfiguracja projektu w](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [języku C/C++ dokumentacja](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [devenv przełączniki wiersza polecenia](../ide/reference/devenv-command-line-switches.md) [i projekty](../ide/solutions-and-projects-in-visual-studio.md)

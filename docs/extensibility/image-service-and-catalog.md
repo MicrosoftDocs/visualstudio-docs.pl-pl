@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7df93a801b5ec34a433849baa41f2fd255790c86
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536334"
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i wykaz
@@ -128,7 +128,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 |System|Folder *Windows\System32*|
 |WinDir|Wartość zmiennej środowiskowej% WinDir%|
 
- **Image (Obraz)**
+ **Obraz**
 
  \<Image>Element definiuje obraz, do którego może odwoływać się moniker. Identyfikatory GUID i ID razem tworzą moniker obrazu. Moniker obrazu musi być unikatowy w całej bibliotece obrazów. Jeśli więcej niż jeden obraz ma daną moniker, pierwszy napotkany podczas kompilowania biblioteki jest zachowywany.
 
@@ -164,7 +164,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 
 \<Source>Element może mieć dokładnie jeden z następujących opcjonalnych podelementów:
 
-|**Postaci**|**Atrybuty (wszystkie wymagane)**|**Definicja**|
+|**Element**|**Atrybuty (wszystkie wymagane)**|**Definicja**|
 |-|-|-|
 |\<Size>|Wartość|Źródło będzie używane dla obrazów o danym rozmiarze (w jednostkach urządzeń). Obraz będzie kwadratowy.|
 |\<SizeRange>|MinSize, brak|Źródło będzie używane dla obrazów z MinSize do rozmiaru całkowitego (w jednostkach urządzeń) włącznie. Obraz będzie kwadratowy.|
@@ -640,7 +640,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - Zamień identyfikator GUID każdego z **ContainedImage**na $ (ImageCatalogGuid), Zastąp każdy identyfikator **ContainedImage**z $ ( \<moniker> ) i Dodaj atrybut External = "true" do każdego **ContainedImage**
 
-       - \<moniker>należy zastąpić **KnownMoniker** , który pasuje do obrazu, ale z "KnownMonikers". usunięte z nazwy.
+       - \<moniker> należy zastąpić **KnownMoniker** , który pasuje do obrazu, ale z "KnownMonikers". usunięte z nazwy.
 
    - Dodaj <zaimportować manifest = "$ (ManifestFolder) \\<względna ścieżka katalogu instalacyjnego do * \> \Microsoft.VisualStudio.ImageCatalog.imagemanifest"/ \*> na początku \<Symbols> sekcji.
 
@@ -714,7 +714,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="testing-your-images"></a>Testowanie obrazów
  Możesz użyć narzędzia Podgląd biblioteki obrazów do testowania manifestów obrazów, aby upewnić się, że wszystko jest poprawnie utworzone. Narzędzie można znaleźć w [zestawie SDK programu Visual Studio 2015](visual-studio-sdk.md). Dokumentacja tego narzędzia i innych można znaleźć [tutaj](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015).
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+## <a name="additional-resources"></a>Zasoby dodatkowe
 
 ### <a name="samples"></a>Samples
  Niektóre przykłady programu Visual Studio w witrynie GitHub zostały zaktualizowane, aby pokazać, jak korzystać z usługi Image Service jako części różnych punktów rozszerzalności programu Visual Studio.
@@ -736,7 +736,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  Narzędzie do przeglądania bibliotek obrazów może ładować manifesty obrazów i umożliwia użytkownikowi manipulowanie nimi w taki sam sposób, w jaki program Visual Studio może upewnić się, że manifest został poprawnie utworzony. Użytkownik może zmienić ustawienia tła, rozmiarów, ustawienia DPI, duży kontrast i innych ustawień. Wyświetla również informacje o ładowaniu, aby znaleźć błędy w manifestach i wyświetlić informacje źródłowe dla każdego obrazu w manifeście.
 
-## <a name="faq"></a>Często zadawane pytania
+## <a name="faq"></a>Najczęściej zadawane pytania
 
 - Czy istnieją zależności, które należy uwzględnić podczas ładowania \<Reference Include="Microsoft.VisualStudio.*.Interop.14.0.DesignTime" /> ?
 
@@ -1009,7 +1009,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|
     |GlyphGroupError||StatusError|
     |GlyphBscFile||ClassFile|
-    |GlyphAssembly||Dokumentacja|
+    |GlyphAssembly||Tematy pomocy|
     |GlyphLibrary||Biblioteka|
     |GlyphVBProject||VBProjectNode|
     |GlyphCoolProject||CSProjectNode|

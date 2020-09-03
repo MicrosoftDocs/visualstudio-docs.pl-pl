@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: a292b37a50bbf667fa5b23f18879cd79c3f76805
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85292172"
 ---
 Web Deploy 3,6 dla serwerów hostingu oferuje dodatkowe funkcje konfiguracji, które umożliwiają tworzenie pliku ustawień publikowania w interfejsie użytkownika.
@@ -24,7 +24,7 @@ Web Deploy 3,6 dla serwerów hostingu oferuje dodatkowe funkcje konfiguracji, kt
 
     Do włączenia generowania pliku ustawień publikowania wymagane są skrypty i narzędzia.
 
-4. Obowiązkowe Sprawdź, czy Web Deploy działa prawidłowo, otwierając **Panel sterowania > system i zabezpieczenia > narzędzia administracyjne > usługi**, a następnie upewnij się, że:
+4. Obowiązkowe Sprawdź, czy Web Deploy działa prawidłowo, otwierając  **Panel sterowania > system i zabezpieczenia > narzędzia administracyjne > usługi**, a następnie upewnij się, że:
 
     * **Usługa Deployment Agent sieci Web** jest uruchomiona (nazwa usługi jest inna w starszych wersjach).
 
@@ -32,4 +32,4 @@ Web Deploy 3,6 dla serwerów hostingu oferuje dodatkowe funkcje konfiguracji, kt
 
     Jeśli jedna z usług agenta nie jest uruchomiona, uruchom ponownie **usługę Deployment Agent sieci Web**.
 
-    Jeśli usługa Deployment Agent sieci Web nie istnieje, przejdź do pozycji **Panel sterowania > programy > Odinstaluj program**, Znajdź pozycję **Microsoft Web Deploy \<version> **. Wybierz opcję **zmiany** instalacji i upewnij się, że wybrana opcja **zostanie zainstalowana na lokalnym dysku twardym** dla składników Web Deploy. Wykonaj kroki instalacji zmian.
+    Jeśli usługa Deployment Agent sieci Web nie istnieje, przejdź do pozycji **Panel sterowania > programy > Odinstaluj program**, Znajdź pozycję **Microsoft Web Deploy \<version> **. Wybierz opcję **zmiany** instalacji i upewnij się, że wybrana opcja  **zostanie zainstalowana na lokalnym dysku twardym** dla składników Web Deploy. Wykonaj kroki instalacji zmian.

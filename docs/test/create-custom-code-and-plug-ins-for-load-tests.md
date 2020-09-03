@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3c060dc9bd50c6dc49777e9114eadae4d6267d92
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288679"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych
@@ -33,7 +33,7 @@ Niestandardowa Wtyczka używa kodu, który można napisać i dołączyć do test
 |**Dodaj funkcje interfejsu użytkownika do przeglądarki wyniki testów wydajności sieci Web:** Możesz dodać więcej funkcji interfejsu użytkownika do przeglądarki Wyniki testów wydajności sieci Web przy użyciu dodatku programu Visual Studio.|-   [Instrukcje: Tworzenie dodatku programu Visual Studio dla przeglądarki wyników testów wydajności sieci Web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
 |**Utwórz niestandardowy Edytor treści http:** Można utworzyć niestandardowy Edytor, aby edytować dane binarne lub ciągi XML http z usługi sieci Web.|-   [Instrukcje: Tworzenie niestandardowego edytora treści HTTP dla edytora testów wydajności sieci Web](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>
 

@@ -1,5 +1,5 @@
 ---
-title: Element OnError (MSBuild) | Dokumenty firmy Microsoft
+title: OnError — element (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -19,17 +19,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18edfe06a4f2cb98fcb41e93c920b03c53daea8c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633086"
 ---
-# <a name="onerror-element-msbuild"></a>Element OnError (MSBuild)
+# <a name="onerror-element-msbuild"></a>OnError — element (MSBuild)
 
-Powoduje, że jeden lub więcej `ContinueOnError` obiektów `false` docelowych do wykonania, jeśli atrybut jest dla zadania nie powiodło się.
+Powoduje, że co najmniej jeden obiekt docelowy jest wykonywany, jeśli `ContinueOnError` atrybut dotyczy `false` zadania zakończonego niepowodzeniem.
 
- \<> \<docelowe>> projektu \<OnError
+ \<Project> \<Target>
+ \<OnError>
 
 ## <a name="syntax"></a>Składnia
 
@@ -46,8 +47,8 @@ Powoduje, że jeden lub więcej `ContinueOnError` obiektów `false` docelowych d
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do oceny. Aby uzyskać więcej informacji, zobacz [Warunki](../msbuild/msbuild-conditions.md).|
-|`ExecuteTargets`|Atrybut wymagany.<br /><br /> Obiekty docelowe do wykonania w przypadku niepowodzenia zadania. Oddziel wiele celów średnikami. Wiele obiektów docelowych są wykonywane w określonej kolejności.|
+|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
+|`ExecuteTargets`|Atrybut wymagany.<br /><br /> Elementy docelowe do wykonania, jeśli zadanie zakończy się niepowodzeniem. Rozdziel wiele obiektów docelowych średnikami. Wiele obiektów docelowych jest wykonywanych w określonej kolejności.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
@@ -57,17 +58,17 @@ Powoduje, że jeden lub więcej `ContinueOnError` obiektów `false` docelowych d
 
 | Element | Opis |
 | - | - |
-| [Obiekt docelowy](../msbuild/target-element-msbuild.md) | Element kontenera dla zadań MSBuild. |
+| [Obiektów](../msbuild/target-element-msbuild.md) | Element kontenera zadań programu MSBuild. |
 
 ## <a name="remarks"></a>Uwagi
 
- MSBuild wykonuje `OnError` element, jeśli `Target` jedno z zadań elementu `ContinueOnError` kończy się `ErrorAndStop` niepowodzeniem z atrybutem ustawionym na (lub `false`). Gdy zadanie zakończy się niepowodzeniem, obiekty docelowe określone w atrybucie `ExecuteTargets` są wykonywane. Jeśli istnieje więcej `OnError` niż jeden element `OnError` w docelowych, elementy są wykonywane sekwencyjnie, gdy zadanie nie powiedzie się.
+ MSBuild wykonuje `OnError` element, jeśli jeden z `Target` zadań elementu nie powiedzie się z `ContinueOnError` atrybutem ustawionym na `ErrorAndStop` (lub `false` ). Gdy zadanie nie powiedzie się, obiekty docelowe określone w `ExecuteTargets` atrybucie są wykonywane. Jeśli obiekt docelowy zawiera więcej niż jeden `OnError` element, `OnError` elementy są wykonywane sekwencyjnie, gdy zadanie zakończy się niepowodzeniem.
 
- Aby uzyskać `ContinueOnError` informacje o tym atrybucie, zobacz [Task element (MSBuild)](../msbuild/task-element-msbuild.md). Aby uzyskać informacje o celach, zobacz [Cele](../msbuild/msbuild-targets.md).
+ Aby uzyskać informacje na temat `ContinueOnError` atrybutu, zobacz [element Task (MSBuild)](../msbuild/task-element-msbuild.md). Aby uzyskać informacje o celach, zobacz [targets](../msbuild/msbuild-targets.md).
 
 ## <a name="example"></a>Przykład
 
- Poniższy kod wykonuje `TaskOne` `TaskTwo` i zadania. Jeśli `TaskOne` nie powiedzie się, `OnError` MSBuild `OtherTarget` ocenia element i wykonuje obiekt docelowy.
+ Poniższy kod wykonuje `TaskOne` `TaskTwo` zadania i. W przypadku `TaskOne` niepowodzenia program MSBuild ocenia `OnError` element i wykonuje element `OtherTarget` docelowy.
 
 ```xml
 <Target Name="ThisTarget">
@@ -82,4 +83,4 @@ Powoduje, że jeden lub więcej `ContinueOnError` obiektów `false` docelowych d
 ## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
-- [Cele](../msbuild/msbuild-targets.md)
+- [Targets (Obiekty docelowe)](../msbuild/msbuild-targets.md)

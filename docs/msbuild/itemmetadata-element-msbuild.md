@@ -1,5 +1,5 @@
 ---
-title: ItemMetadata Element (MSBuild) | Dokumenty firmy Microsoft
+title: ItemMetadata — — element (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -17,17 +17,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633619"
 ---
-# <a name="itemmetadata-element-msbuild"></a>ItemMetadata element (MSBuild)
+# <a name="itemmetadata-element-msbuild"></a>ItemMetadata —, element (MSBuild)
 
-Zawiera klucz metadanych elementu zdefiniowanego przez użytkownika, który zawiera wartość metadanych elementu. Element może mieć dowolną liczbę par klucza metadanych wartości.
+Zawiera klucz metadanych elementu zdefiniowanego przez użytkownika, który zawiera wartość metadanych elementu. Element może mieć dowolną liczbę par klucz-wartość metadanych.
 
- \<> \<> \<element> projektu
+ \<Project> \<ItemGroup>
+ \<Item>
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,7 +44,7 @@ Zawiera klucz metadanych elementu zdefiniowanego przez użytkownika, który zawi
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do oceny. Aby uzyskać więcej informacji, zobacz [Warunki](../msbuild/msbuild-conditions.md).|
+|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
@@ -59,11 +60,11 @@ Zawiera klucz metadanych elementu zdefiniowanego przez użytkownika, który zawi
 
  Wartość tekstowa jest opcjonalna.
 
- Ten tekst określa wartość metadanych elementu, która może być tekstem lub plikiem XML.
+ Ten tekst Określa wartość metadanych elementu, która może być tekstem lub XML.
 
 ## <a name="example"></a>Przykład
 
- W poniższym przykładzie `Culture` kodu pokazano, `fr` jak dodać `CSFile`metadane z wartością do elementu .
+ Poniższy przykład kodu pokazuje, jak dodać `Culture` metadane z wartością `fr` do elementu `CSFile` .
 
 ```xml
 <ItemGroup>
@@ -76,4 +77,4 @@ Zawiera klucz metadanych elementu zdefiniowanego przez użytkownika, który zawi
 ## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
-- [Items](../msbuild/msbuild-items.md)
+- [Elementy](../msbuild/msbuild-items.md)

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0778df98ff5f9665da7220fe40972c9a8f8d8e1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536087"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu
@@ -100,7 +100,7 @@ partition.SetLocks(Locks.Delete);
 - Dodaj tę klasę do usług, które są dostępne za pomocą DocData DSL.
 
 ### <a name="to-define-a-locking-policy"></a>Aby zdefiniować zasady blokowania
- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>ma następującą definicję:
+ <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> ma następującą definicję:
 
 ```csharp
 public interface ILockingPolicy
@@ -113,7 +113,7 @@ public interface ILockingPolicy
 
  Metody te są wywoływane w przypadku wywołania `SetLocks()` w sklepie, partycji lub ModelElement. W każdej metodzie są udostępniane proponowane zestawy blokad. Można zwrócić proponowany zestaw lub można dodać i odjąć blokady.
 
- Przykład:
+ Na przykład:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -142,7 +142,7 @@ namespace Company.YourDsl.DslPackage // Change
     }
 ```
 
- Aby upewnić się, że użytkownicy mogą zawsze usuwać elementy, nawet jeśli inne wywołania kodu`SetLocks(Lock.Delete):`
+ Aby upewnić się, że użytkownicy mogą zawsze usuwać elementy, nawet jeśli inne wywołania kodu `SetLocks(Lock.Delete):`
 
  `return proposedLocks & (Locks.All ^ Locks.Delete);`
 

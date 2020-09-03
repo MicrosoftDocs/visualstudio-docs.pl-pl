@@ -1,5 +1,5 @@
 ---
-title: Element Grupy Importu | Dokumenty firmy Microsoft
+title: Zaimportuj element | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -17,16 +17,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76dadd1a064a64884e3ff1cd1f2431bc1b94c3c4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633736"
 ---
 # <a name="importgroup-element"></a>ImportGroup, element
 
   
-Zawiera kolekcję `Import` elementów, które są zgrupowane w warunkach opcjonalnych. Aby uzyskać więcej informacji, zobacz [Importuj element (MSBuild)](../msbuild/import-element-msbuild.md).
+Zawiera kolekcję `Import` elementów, które są zgrupowane w warunku opcjonalnym. Aby uzyskać więcej informacji, zobacz [import elementu (MSBuild)](../msbuild/import-element-msbuild.md).
 
 ```xml
 <Project>
@@ -50,13 +50,13 @@ Zawiera kolekcję `Import` elementów, które są zgrupowane w warunkach opcjona
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać oceniony. Aby uzyskać więcej informacji, zobacz [Warunki](../msbuild/msbuild-conditions.md).|
+|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczony. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Import](../msbuild/import-element-msbuild.md)|Importuje zawartość jednego pliku projektu do innego pliku projektu.|
+|[Importuj](../msbuild/import-element-msbuild.md)|Importuje zawartość jednego pliku projektu do innego pliku projektu.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
@@ -66,7 +66,7 @@ Zawiera kolekcję `Import` elementów, które są zgrupowane w warunkach opcjona
 
 ## <a name="example"></a>Przykład
 
- Poniższy przykład kodu `ImportGroup` pokazuje element.
+ Poniższy przykład kodu pokazuje `ImportGroup` element.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -81,4 +81,4 @@ Zawiera kolekcję `Import` elementów, które są zgrupowane w warunkach opcjona
 ## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
-- [Items](../msbuild/msbuild-items.md)
+- [Elementy](../msbuild/msbuild-items.md)

@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 56d3267e0c96747a9534f390191e9f8a84effdb8
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289290"
 ---
-# <a name="msbuild-advanced-concepts"></a>Koncepcje zaawansowane programu MSBuild
+# <a name="msbuild-advanced-concepts"></a>Pojęcia zaawansowane dotyczące programu MSBuild
 
 W tych sekcjach opisano sposób używania zaawansowanych technik w celu ulepszania kompilacji uruchamianych przy użyciu programu MSBuild.
 
@@ -27,10 +27,10 @@ W tych sekcjach opisano sposób używania zaawansowanych technik w celu ulepszan
 |-----------|-----------------|
 |[Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)|Opisuje sposób tworzenia wsadowych elementów docelowych kompilacji i zadań opartych na metadanych elementu.|
 |[Przekształcenia](../msbuild/msbuild-transforms.md)|Wyjaśnia, jak używać transformacji w celu włączenia analizy zależności.|
-|[Integracja z programem Visual Studio](../msbuild/visual-studio-integration-msbuild.md)|Omawia, w jaki sposób używać plików projektu MSBuild podczas kompilowania kodu z programu Visual Studio IDE.|
+|[integracja z programem Visual Studio](../msbuild/visual-studio-integration-msbuild.md)|Omawia, w jaki sposób używać plików projektu MSBuild podczas kompilowania kodu z programu Visual Studio IDE.|
 |[Równoległe kompilowanie wielu projektów](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)|Opisuje sposób szybszego kompilowania wielu projektów na komputerach z wieloma procesorami lub procesorami wielordzeniowymi.|
 |[Wielowersyjności kodu](../msbuild/msbuild-multitargeting-overview.md)|Opisuje sposób kompilowania aplikacji do uruchamiania na jednej z kilku różnych wersji .NET Framework.|
-|[Najlepsze rozwiązania](../msbuild/msbuild-best-practices.md)|Zalecane są najlepsze rozwiązania dotyczące pisania skryptów programu MSBuild.|
+|[Najlepsze praktyki](../msbuild/msbuild-best-practices.md)|Zalecane są najlepsze rozwiązania dotyczące pisania skryptów programu MSBuild.|
 
 ## <a name="see-also"></a>Zobacz też
 

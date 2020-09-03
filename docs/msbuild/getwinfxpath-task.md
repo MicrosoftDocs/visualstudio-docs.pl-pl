@@ -1,5 +1,5 @@
 ---
-title: Zadanie GetWinFXPath | Dokumenty firmy Microsoft
+title: GetWinFXPath — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -19,31 +19,31 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab8e15cef722e935dde322072f6834ba00be8bc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633970"
 ---
-# <a name="getwinfxpath-task"></a>Zadanie GetWinFXPath
+# <a name="getwinfxpath-task"></a>GetWinFXPath, zadanie
 
-Zadanie <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> zwraca katalog bieżącego środowiska uruchomieniowego .NET.
+<xref:Microsoft.Build.Tasks.Windows.GetWinFXPath>Zadanie zwraca katalog bieżącego środowiska uruchomieniowego .NET.
 
 ## <a name="task-parameters"></a>Parametry zadania
 
 | Parametr | Opis |
 |-------------------| - |
-| `WinFXPath` | Opcjonalny parametr wyjścia **ciągu.**<br /><br /> Określa rzeczywistą ścieżkę do środowiska uruchomieniowego platformy .NET. |
-| `WinFXNativePath` | Wymagany parametr **String.**<br /><br /> Określa ścieżkę do macierzystego środowiska uruchomieniowego platformy .NET. |
-| `WinFXWowPath` | Wymagany parametr **String.**<br /><br /> Określa ścieżkę do zestawów .NET w 32-bitowym module **Windows w** systemie Windows w systemach 64-bitowych. |
+| `WinFXPath` | Opcjonalny parametr wyjściowy **ciągu** .<br /><br /> Określa rzeczywistą ścieżkę do środowiska uruchomieniowego .NET. |
+| `WinFXNativePath` | Wymagany parametr **ciągu** .<br /><br /> Określa ścieżkę do natywnego środowiska uruchomieniowego .NET. |
+| `WinFXWowPath` | Wymagany parametr **ciągu** .<br /><br /> Określa ścieżkę do zestawów .NET w 32-bitowym **systemie Windows w module systemu Windows** w systemach 64-bitowych. |
 
 ## <a name="remarks"></a>Uwagi
 
- Jeśli <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> zadanie jest wykonywane na procesorze 64-bitowym, parametr **WinFXPath** jest ustawiony na ścieżkę przechowywaną w parametrze **WinFXWowPath;** w przeciwnym razie **winFXPath** parametr jest ustawiony na ścieżkę, która jest przechowywana w **WinFXNativePath** parametru.
+ Jeśli <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> zadanie jest wykonywane na procesorze 64-bitowym, parametr **WinFXPath** jest ustawiany na ścieżkę, która jest przechowywana w parametrze **WinFXWowPath** . w przeciwnym razie parametr **WinFXPath** jest ustawiony na ścieżkę, która jest przechowywana w parametrze **WinFXNativePath** .
 
 ## <a name="example"></a>Przykład
 
- W poniższym przykładzie pokazano, jak użyć zadania **GetWinFXPath** do wykrywania ścieżki macierzystej do środowiska uruchomieniowego .NET.
+ Poniższy przykład pokazuje, jak używać zadania **GetWinFXPath —** do wykrywania ścieżki natywnej do środowiska uruchomieniowego .NET.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -62,7 +62,7 @@ Zadanie <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> zwraca katalog bieżą
 ## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
-- [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)
-- [Odwołanie do budynku MSBuild](../msbuild/msbuild-reference.md)
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/wpf-msbuild-task-reference.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)
 - [Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

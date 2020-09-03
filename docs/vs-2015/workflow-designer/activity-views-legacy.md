@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7546f752ef7ee1053d1b0b785334a8da814720c6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851481"
 ---
 # <a name="activity-views-legacy"></a>Widoki działania (starsza wersja)
-Wiele działań zapewnianych przez [!INCLUDE[wf](../includes/wf-md.md)], z których składają się przepływy pracy, ma kilka widoków projektu dostępnych w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Gdy przeciągniesz projektanta aktywności z **przybornika** na powierzchnię projektu, a następnie za każdym razem, gdy wybierzesz działanie, możesz przełączać się między różnymi widokami projektu za pomocą menu **przepływ pracy** lub klikając prawym przyciskiem myszy wybrane działanie. Ponadto, gdy przesuwasz wskaźnik myszy nad nazwą wybranego działania, zostanie wyświetlona lista rozwijana z kartami, za pomocą której można przełączać się między różnymi widokami.
+Wiele działań zapewnianych przez [!INCLUDE[wf](../includes/wf-md.md)] , z których składają się przepływy pracy, ma kilka widoków projektu dostępnych w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Gdy przeciągniesz projektanta aktywności z **przybornika** na powierzchnię projektu, a następnie za każdym razem, gdy wybierzesz działanie, możesz przełączać się między różnymi widokami projektu za pomocą menu **przepływ pracy** lub klikając prawym przyciskiem myszy wybrane działanie. Ponadto, gdy przesuwasz wskaźnik myszy nad nazwą wybranego działania, zostanie wyświetlona lista rozwijana z kartami, za pomocą której można przełączać się między różnymi widokami.
 
  Każde działanie ma co najmniej jeden widok; jest to domyślny widok pokazywany po przeciągnięciu projektanta działań z **przybornika** na powierzchnię projektu. Ten domyślny widok działania jest dostępny jako opcja **Widok [Activity type]** w menu i karcie, na przykład, **Widok Parallel**. Większość działań ma dodatkowe widoki i różne działania mogą mieć różne widoki. Na przykład działanie [TransactionScopes](https://msdn2.microsoft.com/library/system.workflow.componentmodel.transactionscopeactivity.aspx) ma widok kompensacja, a działanie [EventHandlingScopeActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlingscopeactivity.aspx) ma widok zdarzeń. Wiele działań, które są dołączone Windows Workflow Foundation ma **program obsługi anulowania wyświetlania** i **Widok projektu błędów** , umożliwia wyświetlenie [działania CancellationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.cancellationhandleractivity.aspx) i skojarzonych z nimi [FaultHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.faulthandlersactivity.aspx) .
 

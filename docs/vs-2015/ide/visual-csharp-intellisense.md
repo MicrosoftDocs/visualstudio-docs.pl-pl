@@ -14,19 +14,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 36803dfbba7ea6d6d2a869fb94c05105ed4af15d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72643333"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wizualna C# technologia IntelliSense jest dostępna podczas kodowania w edytorze oraz podczas debugowania w oknie poleceń [trybu natychmiastowego](../ide/reference/immediate-window.md) .
+Funkcja IntelliSense języka Visual C# jest dostępna podczas kodowania w edytorze oraz podczas debugowania w oknie poleceń [trybu natychmiastowego](../ide/reference/immediate-window.md) .
 
 ## <a name="completion-lists"></a>Listy uzupełniania
- Listy uzupełniania IntelliSense w wizualizacji C# zawierają tokeny z listy członków, kompletnego wyrazu i innych. Zapewnia szybki dostęp do:
+ Listy uzupełniania IntelliSense w Visual C# zawierają tokeny z listy członków, kompletnych wyrazów i innych. Zapewnia szybki dostęp do:
 
 - Elementy członkowskie typu lub przestrzeni nazw,
 
@@ -36,44 +36,44 @@ Wizualna C# technologia IntelliSense jest dostępna podczas kodowania w edytorze
 
 - [Słowa kluczowe języka](#Keywords),
 
-- [Metody rozszerzeń](#ExtensionMethods)
+- [Metody rozszerzania](#ExtensionMethods)
 
-  Lista uzupełniania w C# programie jest również odpowiednio inteligentna, aby odfiltrować nieistotne tokeny i wstępnie wybrać token oparty na kontekście. Aby uzyskać więcej informacji, zobacz [filtrowane listy uzupełniania C# w](../misc/filtered-completion-lists-in-csharp.md) i [wstępnie wybranych elementach listy C#uzupełniania w programie ](../misc/pre-selected-completion-list-items-in-csharp.md).
+  Lista uzupełniania w języku C# jest również odpowiednio inteligentna, aby odfiltrować nieistotne tokeny i wstępnie wybierać token oparty na kontekście. Aby uzyskać więcej informacji, zobacz [filtrowane listy uzupełniania w c#](../misc/filtered-completion-lists-in-csharp.md) i [wstępnie wybranych elementach listy uzupełniania w języku c#](../misc/pre-selected-completion-list-items-in-csharp.md).
 
-### <a name="CodeSnippets"></a>Fragmenty kodu na listach uzupełniania
- W wizualizacji C#lista uzupełniania zawiera fragmenty kodu, które ułatwiają łatwe Wstawianie wstępnie zdefiniowanych treści kodu do programu. Fragmenty kodu są wyświetlane na liście uzupełniania jako [element skrótu fragmentu (fragmenty kodu IntelliSense)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Aby uzyskać więcej informacji na temat fragmentów kodu, które są C# domyślnie dostępne w wizualizacji, zobacz [fragmenty kodu wizualnego C# ](../ide/visual-csharp-code-snippets.md).
+### <a name="code-snippets-in-completion-lists"></a><a name="CodeSnippets"></a> Fragmenty kodu na listach uzupełniania
+ W języku Visual C# lista uzupełniania zawiera fragmenty kodu, które ułatwiają łatwe Wstawianie wstępnie zdefiniowanych treści kodu do programu. Fragmenty kodu są wyświetlane na liście uzupełniania jako [element skrótu fragmentu (fragmenty kodu IntelliSense)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Aby uzyskać więcej informacji na temat fragmentów kodu, które są domyślnie dostępne w Visual C#, zobacz [fragmenty kodu Visual c#](../ide/visual-csharp-code-snippets.md).
 
-### <a name="Keywords"></a>Słowa kluczowe języka na listach uzupełniania
- W wizualizacji C#lista uzupełniania zawiera również słowa kluczowe języka. Aby uzyskać więcej informacji C# na temat słów kluczowych języka, zobacz [ C# słowa kluczowe](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).
+### <a name="language-keywords-in-completion-lists"></a><a name="Keywords"></a> Słowa kluczowe języka na listach uzupełniania
+ W języku Visual C# lista uzupełniania zawiera również słowa kluczowe języka. Aby uzyskać więcej informacji na temat słów kluczowych języka C#, zobacz [słowa kluczowe](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad)w języku c#.
 
-### <a name="ExtensionMethods"></a>Metody rozszerzające na listach uzupełniania
- W wizualizacji C#lista uzupełniania zawiera metody rozszerzające, które znajdują się w zakresie.
+### <a name="extension-methods-in-completion-lists"></a><a name="ExtensionMethods"></a> Metody rozszerzające na listach uzupełniania
+ W języku Visual C# lista uzupełniania zawiera metody rozszerzające, które znajdują się w zakresie.
 
 > [!NOTE]
-> Na liście uzupełniania nie są wyświetlane wszystkie metody rozszerzające obiektów <xref:System.String>.
+> Na liście uzupełniania nie są wyświetlane wszystkie metody rozszerzające dla <xref:System.String> obiektów.
 
  Metody rozszerzające używają innej ikony niż metody instancji. Aby zapoznać się z listą ikon list, zobacz [Widok klasy i Przeglądarka obiektów ikon](../ide/class-view-and-object-browser-icons.md). Gdy metoda wystąpienia i Metoda rozszerzająca o tej samej nazwie znajdują się zarówno w zakresie, na liście uzupełniania jest wyświetlana ikona metody rozszerzenia.
 
 ### <a name="filtered-completion-lists"></a>Filtrowane listy uzupełniania
  Technologia IntelliSense usuwa zbędnych członków z listy uzupełniania, używając filtrów.
 
- Wizualizacja C# filtruje listy uzupełniania, które są wyświetlane dla następujących elementów:
+ Visual C# filtruje listy uzupełniania, które są wyświetlane dla następujących elementów:
 
-- **Interfejsy i klasy bazowe.** Funkcja IntelliSense automatycznie usuwa elementy z list interfejsów i uzupełniania klas bazowych, zarówno na liście podstawowej deklaracji klasy, jak i na listach ograniczeń. Na przykład wyliczenia nie są wyświetlane na liście uzupełniania dla klas bazowych, ponieważ wyliczenia nie mogą być używane dla klas bazowych. Lista uzupełniania klas bazowych zawiera tylko interfejsy i przestrzenie nazw. Jeśli wybierzesz element na liście, a następnie wpisz przecinek, IntelliSense usunie klasy bazowe z listy uzupełniania, ponieważ Wizualizacja C# nie obsługuje wielokrotnego dziedziczenia. Takie samo zachowanie występuje w przypadku klauzul ograniczenia.
+- **Interfejsy i klasy bazowe.** Funkcja IntelliSense automatycznie usuwa elementy z list interfejsów i uzupełniania klas bazowych, zarówno na liście podstawowej deklaracji klasy, jak i na listach ograniczeń. Na przykład wyliczenia nie są wyświetlane na liście uzupełniania dla klas bazowych, ponieważ wyliczenia nie mogą być używane dla klas bazowych. Lista uzupełniania klas bazowych zawiera tylko interfejsy i przestrzenie nazw. Jeśli wybierzesz element na liście, a następnie wpisz przecinek, IntelliSense usunie klasy bazowe z listy uzupełniania, ponieważ Visual C# nie obsługuje dziedziczenia wielokrotnego. Takie samo zachowanie występuje w przypadku klauzul ograniczenia.
 
-- **Atrybuty**: w przypadku zastosowania atrybutu do typu Lista uzupełniania jest filtrowana, aby lista zawierała tylko te typy, które są podrzędne od przestrzeni nazw, które zawierają te typy, takie jak <xref:System.Attribute>.
+- **Atrybuty**: w przypadku zastosowania atrybutu do typu Lista uzupełniania jest filtrowana, tak aby lista zawierała tylko te typy, które są podrzędne od przestrzeni nazw, które zawierają te typy, takich jak <xref:System.Attribute> .
 
-- Operatory `as` i `is`.
+- `as``is`Operatory i.
 
 - **Klauzule catch.**
 
 - **Inicjatory obiektów:** Na liście uzupełniania będą wyświetlane tylko elementy członkowskie, które mogą zostać zainicjowane.
 
-- **New — słowo kluczowe**: po wpisaniu `new` a następnie naciśnięciu klawisza spacji zostanie wyświetlona lista uzupełniania. Element jest automatycznie wybierany na liście na podstawie kontekstu w kodzie. Na przykład elementy są automatycznie wybierane na liście uzupełniania dla deklaracji i instrukcji return w metodach.
+- **New — słowo kluczowe**: po wpisaniu `new` i naciśnięciu klawisza spacji zostanie wyświetlona lista uzupełniania. Element jest automatycznie wybierany na liście na podstawie kontekstu w kodzie. Na przykład elementy są automatycznie wybierane na liście uzupełniania dla deklaracji i instrukcji return w metodach.
 
-- **Operatory AS i is:** Filtrowana lista uzupełniania jest wyświetlana automatycznie po naciśnięciu klawisza spacji po wpisaniu słowa kluczowego `as` lub `is`.
+- **Operatory AS i is:** Filtrowana lista uzupełniania jest wyświetlana automatycznie po naciśnięciu klawisza spacji po wpisaniu `as` `is` słowa kluczowego or.
 
-- Zdarzenia: po wpisaniu słowa kluczowego `event`, lista uzupełniania zawiera tylko typy delegatów.
+- Zdarzenia: po wpisaniu słowa kluczowego `event` Lista uzupełniania zawiera tylko typy delegatów.
 
 - Pomoc parametru automatycznie sortuje do pierwszego przeciążenia metody, które jest zgodne z parametrami wprowadzonymi przez użytkownika. Jeśli dostępne są wiele przeciążeń metod, można użyć strzałek w górę i w dół, aby przejść do następnego możliwego przeciążenia na liście.
 
@@ -81,14 +81,14 @@ Wizualna C# technologia IntelliSense jest dostępna podczas kodowania w edytorze
  Technologia IntelliSense zapamiętuje członków, którzy zostali ostatnio wybrani w polu [Członkowie listy](../ide/using-intellisense.md) podręcznej, aby automatycznie uzupełniać nazwy obiektów. Przy następnym użyciu listy składowych, ostatnio używane elementy członkowskie są wyświetlane u góry. Historia ostatnio używanych elementów członkowskich jest czyszczona między poszczególnymi sesjami w IDE.
 
 ## <a name="override"></a>override
- Po wpisaniu [przesłonięcia](https://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) , a następnie naciśnięciu klawisza spacji, IntelliSense wyświetla wszystkie prawidłowe elementy członkowskie klasy bazowej, które można przesłonić w oknie listy rozwijanej. Wpisanie zwracanego typu metody po `override` będzie monitować funkcję IntelliSense, aby pokazywała tylko metody, które zwracają ten sam typ. Gdy technologia IntelliSense nie może znaleźć dopasowań, będzie wyświetlała wszystkie elementy członkowskie klasy bazowej.
+ Po wpisaniu [przesłonięcia](https://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) , a następnie naciśnięciu klawisza spacji, IntelliSense wyświetla wszystkie prawidłowe elementy członkowskie klasy bazowej, które można przesłonić w oknie listy rozwijanej. Wpisanie zwracanego typu metody po wyświetleniu `override` monitu IntelliSense, aby wyświetlić tylko metody, które zwracają ten sam typ. Gdy technologia IntelliSense nie może znaleźć dopasowań, będzie wyświetlała wszystkie elementy członkowskie klasy bazowej.
 
 ## <a name="automatic-code-generation"></a>Automatyczne generowanie kodu
 
 ### <a name="add-using"></a>Dodawanie using
  Operacja Dodaj przy użyciu funkcji IntelliSense umożliwia utrzymywanie fokusu w kodzie, który jest pisany, a nie wymaga przesunięcia fokusu do innej części kodu.
 
- Aby zainicjować operację Dodaj przy użyciu, umieść kursor w odniesieniu do typu, którego nie można rozpoznać. Na przykład podczas tworzenia aplikacji konsolowej, a następnie dodawania `XmlTextReader` do treści metody `Main`, tag inteligentny zostanie wyświetlony pod skrajnym prawej stronie znaku `XmlTextReader`, ponieważ pojawia się jako odwołanie do typu, którego nie można rozpoznać.
+ Aby zainicjować operację Dodaj przy użyciu, umieść kursor w odniesieniu do typu, którego nie można rozpoznać. Na przykład po utworzeniu aplikacji konsolowej, a następnie dodaniu jej `XmlTextReader` do treści `Main` metody, tag inteligentny pojawi się poniżej znaku po prawej stronie `XmlTextReader` , ponieważ pojawia się jako odwołanie do typu, którego nie można rozpoznać.
 
  ![Dodaj przy użyciu obrazu taga inteligentnego](../ide/media/addusesmart.gif "AddUseSmart")
 
@@ -97,9 +97,9 @@ Wizualna C# technologia IntelliSense jest dostępna podczas kodowania w edytorze
  ![Dodaj przy użyciu, rozwinięty obraz tagów inteligentnych](../ide/media/addusesmartexp.gif "AddUseSmartExp")
 
 ### <a name="organize-usings"></a>Organizuj użycia
- Opcje **Organizuj przy użyciu** sortują i usuwają `using` i `extern` deklaracji bez zmiany zachowania kodu źródłowego. W miarę upływu czasu pliki źródłowe mogą stać się bloated i trudne do odczytania ze względu na niepotrzebne i niezorganizowane dyrektywy `using`. Opcja **Organizuj używa** kompaktowania kodu źródłowego przez usunięcie nieużywanych dyrektyw `using` i zwiększa czytelności przez ich sortowanie.
+ Opcje **Organizuj przy użyciu** sortują i usuwają `using` `extern` deklaracje bez zmiany zachowania kodu źródłowego. W miarę upływu czasu pliki źródłowe mogą stać się bloated i trudne do odczytania ze względu na niepotrzebne i niezorganizowane `using` dyrektywy. Opcje **Organizuj przy użyciu** kompaktowego kodu źródłowego przez usunięcie nieużywanych `using` dyrektyw i zwiększa czytelności przez ich sortowanie.
 
- Aby wyświetlić dostępne opcje w środowisku IDE programu Visual Studio, w menu **Edycja** wskaż polecenie **IntelliSense**, a następnie wskaż polecenie **Organizuj przy użyciu**. Środowisko IDE zapewnia następujące opcje organizowania i usuwania dyrektyw `usings`:
+ Aby wyświetlić dostępne opcje w środowisku IDE programu Visual Studio, w menu **Edycja** wskaż polecenie **IntelliSense**, a następnie wskaż polecenie **Organizuj przy użyciu**. Środowisko IDE zapewnia następujące opcje organizowania i usuwania `usings` dyrektyw:
 
 ### <a name="implement-interface"></a>Implementowanie interfejsu
  Funkcja IntelliSense udostępnia opcję ułatwiającą implementowanie [interfejsu](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) podczas pracy w edytorze kodu. Zwykle w celu prawidłowego zaimplementowania interfejsu należy utworzyć deklarację metody dla każdego elementu członkowskiego interfejsu w klasie. Przy użyciu funkcji IntelliSense po wpisaniu nazwy interfejsu w deklaracji klasy zostanie wyświetlony tag inteligentny. Tag inteligentny umożliwia automatyczne zaimplementowanie interfejsu przy użyciu jawnego lub niejawnego nazewnictwa. W przypadku jawnego nazewnictwa deklaracje metody zawierają nazwę interfejsu; w przypadku niejawnego nazewnictwa deklaracje metody nie wskazują interfejsu, do którego należą. Dostęp do metody jawnie nazwanego interfejsu można uzyskać tylko za pomocą wystąpienia interfejsu, a nie za pomocą wystąpienia klasy. Aby uzyskać więcej informacji, zobacz [jawną implementację interfejsu](https://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).
@@ -139,7 +139,7 @@ Wizualna C# technologia IntelliSense jest dostępna podczas kodowania w edytorze
 ## <a name="generate-event-handlers"></a>Generuj programy obsługi zdarzeń
  W edytorze kodu technologia IntelliSense może pomóc w podłączaniu metod (obsługi zdarzeń) do pól zdarzeń.
 
- Po wpisaniu `+=` operatora po polu zdarzenia w pliku CS funkcja IntelliSense poprosi o wybranie klawisza TAB. Spowoduje to wstawienie nowego wystąpienia delegata wskazującego metodę obsługi zdarzenia.
+ Po wpisaniu `+=` operatora po polu zdarzenia w pliku CS funkcja IntelliSense poprosi o wybranie klawisza Tab. Spowoduje to wstawienie nowego wystąpienia delegata wskazującego metodę obsługi zdarzenia.
 
  ![Autohak przycisku](../ide/media/vxautohookup.gif "vxAutoHookUp")
 
@@ -155,7 +155,7 @@ Wizualna C# technologia IntelliSense jest dostępna podczas kodowania w edytorze
 > [!NOTE]
 > Użyj polecenia **Nawiguj wstecz** w menu **Widok** (Ctrl +-), aby wrócić do instrukcji Event podłączenie.
 
- Poniższe zadanie pokazuje, w jaki sposób technologia IntelliSense automatycznie łączy procedurę obsługi zdarzeń o nazwie `button1_Click` do pola zdarzenia o nazwie `button1.Click`.
+ Poniższe zadanie pokazuje, jak technologia IntelliSense automatycznie łączy procedurę obsługi zdarzeń o nazwie `button1_Click` do pola zdarzenia o nazwie `button1.Click` .
 
 ## <a name="see-also"></a>Zobacz też
  [Visual Studio IDE](../ide/visual-studio-ide.md)

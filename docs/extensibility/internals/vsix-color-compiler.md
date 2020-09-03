@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5059a15c483f648c2248321c7ba8271a634d0c69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536100"
 ---
 # <a name="vsix-color-compiler"></a>Kompilator kolorów VSIX
@@ -61,7 +61,7 @@ Visual Studio Extension Color Tool narzędzie kompilatora to Aplikacja konsolowa
 |-|-|
 |Jasny|{de3dbbcd-f642-433c-8353-8f1df4370aba}|
 |Ciemny|{1ded0138-47ce-435e-84ef-9ec1f439b749}|
-|Niebieski|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|
+|Blue (Niebieski)|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|
 |duży kontrast|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|
 
  **Kategoria**

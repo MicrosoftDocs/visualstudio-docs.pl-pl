@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3c1cdc4738f60301435932b3700f14377f12172
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290686"
 ---
 # <a name="how-msbuild-builds-projects"></a>Jak program MSBuild kompiluje projekty
@@ -99,7 +99,7 @@ W tej fazie wszystkie struktury obiektów docelowych są tworzone w pamięci w p
 
 W fazie wykonywania cele są uporządkowane i uruchamiane, a wszystkie zadania są wykonywane. Jednak najpierw właściwości i elementy, które są zdefiniowane w obiektach docelowych są oceniane razem w jednej fazie w kolejności, w jakiej są wyświetlane. Kolejność przetwarzania jest szczególnie różna od sposobu przetwarzania właściwości i elementów, które nie znajdują się w obiekcie docelowym: wszystkie właściwości najpierw, a następnie wszystkie elementy, w osobnych przebiegach. Zmiany właściwości i elementów w elemencie docelowym można zaobserwować po elemencie docelowym, gdzie zostały zmienione.
 
-### <a name="target-build-order"></a>Docelowy porządek kompilacji
+### <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 
 W pojedynczym projekcie cele są wykonywane sekwencyjnie. Centralny problem polega na określeniu kolejności, w której należy utworzyć wszystko, w której zależności są używane do kompilowania obiektów docelowych w odpowiedniej kolejności.  
 
@@ -113,7 +113,7 @@ Istnieją dwie ścieżki kodu, które może wykonać MSBuild, normalne, opisane 
 
 Poszczególne projekty określają ich zależność od innych projektów za poorednictwem `ProjectReference` elementów. Gdy projekt w górnej części stosu zaczyna kompilować, dociera do punktu, w którym jest `ResolveProjectReferences` wykonywane miejsce docelowe, standardowego elementu docelowego zdefiniowanego we wspólnych plikach docelowych.
 
-`ResolveProjectReferences`wywołuje zadanie MSBuild z danymi wejściowymi `ProjectReference` elementów w celu pobrania danych wyjściowych. `ProjectReference`Elementy są przekształcane do elementów lokalnych, takich jak `Reference` . Faza wykonywania programu MSBuild dla bieżącego projektu jest wstrzymywana, gdy faza wykonywania zacznie przetwarzać przywoływany projekt (faza oceny jest wykonywana najpierw w razie potrzeby). Projekt, do którego się odwoływano, jest tworzony tylko po rozpoczęciu kompilowania projektu zależnego i dlatego tworzy drzewo projektów kompilowających.
+`ResolveProjectReferences` wywołuje zadanie MSBuild z danymi wejściowymi `ProjectReference` elementów w celu pobrania danych wyjściowych. `ProjectReference`Elementy są przekształcane do elementów lokalnych, takich jak `Reference` . Faza wykonywania programu MSBuild dla bieżącego projektu jest wstrzymywana, gdy faza wykonywania zacznie przetwarzać przywoływany projekt (faza oceny jest wykonywana najpierw w razie potrzeby). Projekt, do którego się odwoływano, jest tworzony tylko po rozpoczęciu kompilowania projektu zależnego i dlatego tworzy drzewo projektów kompilowających.
 
 Program Visual Studio umożliwia tworzenie zależności projektu w plikach rozwiązania (. sln). Zależności są określone w pliku rozwiązania i są przestrzegane tylko w przypadku kompilowania rozwiązania lub kompilowania w programie Visual Studio. W przypadku budowania pojedynczego projektu, ten typ zależności jest ignorowany. Odwołania do rozwiązania są przekształcane przez program MSBuild w `ProjectReference` elementy, a następnie są traktowane w taki sam sposób.
 
@@ -155,7 +155,7 @@ W implementacji, *Microsoft. Common. targets* to cienka otoka, która importuje 
       Returns="@(TargetPathWithTargetPlatformMoniker)" />
 ```
 
-`BeforeBuild`i `AfterBuild` są punktami rozszerzenia. Są one puste w pliku *Microsoft. Common. CurrentVersion. targets* , ale projekty mogą zapewnić własne `BeforeBuild` i `AfterBuild` cele z zadaniami, które należy wykonać przed lub po głównym procesie kompilacji. `AfterBuild`jest uruchamiany przed elementem docelowym No-op, `Build` ponieważ występuje `AfterBuild` w atrybucie w elemencie `DependsOn` `Build` docelowym, ale występuje po `CoreBuild` .
+`BeforeBuild` i `AfterBuild` są punktami rozszerzenia. Są one puste w pliku *Microsoft. Common. CurrentVersion. targets* , ale projekty mogą zapewnić własne `BeforeBuild` i `AfterBuild` cele z zadaniami, które należy wykonać przed lub po głównym procesie kompilacji. `AfterBuild` jest uruchamiany przed elementem docelowym No-op, `Build` ponieważ występuje `AfterBuild` w atrybucie w elemencie `DependsOn` `Build` docelowym, ale występuje po `CoreBuild` .
 
 `CoreBuild`Element docelowy zawiera wywołania narzędzi do kompilacji w następujący sposób:
 
@@ -193,7 +193,7 @@ W implementacji, *Microsoft. Common. targets* to cienka otoka, która importuje 
 
 W poniższej tabeli opisano te elementy docelowe; Niektóre elementy docelowe mają zastosowanie tylko do niektórych typów projektów.
 
-| Środowisko docelowe | Opis |
+| Cel | Opis |
 |--------|-------------|
 | BuildOnlySettings | Ustawienia tylko dla prawdziwych kompilacji, nie dla gdy MSBuild jest wywoływany podczas ładowania projektu przez program Visual Studio. |
 | PrepareForBuild | Przygotowywanie wymagań wstępnych do kompilowania |

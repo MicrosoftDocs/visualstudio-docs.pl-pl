@@ -30,10 +30,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a095cd909dcd4d378fddc91c9151cf28e34a8ee5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852209"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Dodatkowe informacje na temat błędów w Projektancie klas
@@ -43,7 +43,7 @@ Projektant klas nie śledzi lokalizacji plików źródłowych, dlatego zmodyfiko
 
  Pomoc dotyczącą innych błędów i ostrzeżeń można znaleźć w następujących zasobach:
 
- [Praca z kodem C++ wizualizacji (Projektant klas)](../ide/working-with-visual-cpp-code-class-designer.md) zawiera informacje dotyczące rozwiązywania problemów z wyświetlaniem C++ na diagramie klas.
+ [Praca z kodem Visual C++ (Projektant klas)](../ide/working-with-visual-cpp-code-class-designer.md) Zawiera informacje dotyczące rozwiązywania problemów z wyświetlaniem języka C++ w diagramie klas.
 
  [Forum Projektant klas programu Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1) Zawiera forum z pytaniami dotyczącymi Projektant klas.
 

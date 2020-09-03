@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb75d6fc02f2841383127482503799b2c78512cf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289186"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Konfiguracje standardowego i niestandardowego zestawu narzędzi
@@ -29,9 +29,9 @@ Zestaw narzędzi programu MSBuild zawiera odwołania do zadań, obiektów docelo
 
 |ToolsVersion|Ścieżka zestawu narzędzi (zgodnie z definicją we właściwości kompilacji MSBuildToolsPath lub MSBuildBinPath)|
 |------------------| - |
-|2.0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
+|2,0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
 |3,5|*\<Windows installation path>\Microsoft.NET\Framework\v3.5\\*|
-|4.0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
+|4,0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
 |Current|*\<Visual Studio installation path>\MSBuild\Current\bin*|
 
  `ToolsVersion`Wartość określa, który zestaw narzędzi jest używany przez projekt generowany przez program Visual Studio. W programie Visual Studio 2019 wartość domyślna to "Current" (niezależnie od wersji określonej w pliku projektu), ale można przesłonić ten atrybut przy użyciu przełącznika **/ToolsVersion** w wierszu polecenia. Aby uzyskać informacje o tym atrybucie i innych sposobach określania `ToolsVersion` , zobacz [przesłanianie ustawień ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
@@ -43,9 +43,9 @@ Zestaw narzędzi programu MSBuild zawiera odwołania do zadań, obiektów docelo
 
 |ToolsVersion|Ścieżka zestawu narzędzi (zgodnie z definicją we właściwości kompilacji MSBuildToolsPath lub MSBuildBinPath)|
 |------------------| - |
-|2.0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
+|2,0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
 |3,5|*\<Windows installation path>\Microsoft.NET\Framework\v3.5\\*|
-|4.0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
+|4,0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
 |15,0|*\<Visual Studio installation path>Katalogu \msbuild\15.0\bin*|
 
  `ToolsVersion`Wartość określa, który zestaw narzędzi jest używany przez projekt generowany przez program Visual Studio. W programie Visual Studio 2017 wartość domyślna to "15,0" (niezależnie od wersji określonej w pliku projektu), ale można przesłonić ten atrybut przy użyciu przełącznika **/ToolsVersion** w wierszu polecenia. Aby uzyskać informacje o tym atrybucie i innych sposobach określania `ToolsVersion` , zobacz [przesłanianie ustawień ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
@@ -87,7 +87,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie używają klucza rejestru dl
 </msbuildToolsets>
 ```
 
- `<msbuildToolsets>`muszą być również zdefiniowane w pliku konfiguracji w następujący sposób.
+ `<msbuildToolsets>` muszą być również zdefiniowane w pliku konfiguracji w następujący sposób.
 
 ```xml
 <configSections>
@@ -102,13 +102,13 @@ Program Visual Studio 2017 i jego nowsze wersje nie używają klucza rejestru dl
 > [!NOTE]
 > Aby można było poprawnie odczytać, `<configSections>` musi to być pierwsza podsekcja w `<configuration>` sekcji.
 
- `ToolsetConfigurationSection`to sekcja konfiguracji niestandardowej, która może być używana przez dowolnego hosta programu MSBuild do konfiguracji niestandardowej. W przypadku korzystania z niestandardowego zestawu narzędzi host nie musi wykonywać żadnych czynności w celu zainicjowania aparatu kompilacji, z wyjątkiem podania wpisów w pliku konfiguracji.
+ `ToolsetConfigurationSection` to sekcja konfiguracji niestandardowej, która może być używana przez dowolnego hosta programu MSBuild do konfiguracji niestandardowej. W przypadku korzystania z niestandardowego zestawu narzędzi host nie musi wykonywać żadnych czynności w celu zainicjowania aparatu kompilacji, z wyjątkiem podania wpisów w pliku konfiguracji.
 
  Następujące właściwości są specyficzne dla wartości `ToolsVersion` , która jest używana w projektach:
 
 - **$ (MSBuildBinPath)** jest ustawiona na `ToolsPath` wartość określoną w rejestrze lub w pliku konfiguracyjnym, w którym `ToolsVersion` jest zdefiniowany. `$(MSBuildToolsPath)`Ustawienie w rejestrze lub pliku konfiguracji określa lokalizację podstawowych zadań i elementów docelowych. W pliku projektu, jest mapowany do właściwości $ (MSBuildBinPath), a także do właściwości $ (MSBuildToolsPath).
 
-- `$(MSBuildToolsPath)`jest właściwością zastrzeżoną, która jest dostarczana przez właściwość MSBuildToolsPath, która jest określona w pliku konfiguracji. (Ta właściwość zastępuje `$(MSBuildBinPath)` . Jednak `$(MSBuildBinPath)` jest on przenoszony pod kątem zgodności). Niestandardowy zestaw narzędzi musi definiować jeden `$(MSBuildToolsPath)` lub `$(MSBuildBinPath)` , ale nie oba, chyba że obie te wartości mają tę samą wartość.
+- `$(MSBuildToolsPath)` jest właściwością zastrzeżoną, która jest dostarczana przez właściwość MSBuildToolsPath, która jest określona w pliku konfiguracji. (Ta właściwość zastępuje `$(MSBuildBinPath)` . Jednak `$(MSBuildBinPath)` jest on przenoszony pod kątem zgodności). Niestandardowy zestaw narzędzi musi definiować jeden `$(MSBuildToolsPath)` lub `$(MSBuildBinPath)` , ale nie oba, chyba że obie te wartości mają tę samą wartość.
 
   Możesz również dodać niestandardowe właściwości specyficzne dla ToolsVersion do pliku konfiguracji, używając tej samej składni, która jest używana do dodawania właściwości MSBuildToolsPath. Aby udostępnić te właściwości niestandardowe dla pliku projektu, należy użyć tej samej nazwy co nazwa wartości, która jest określona w pliku konfiguracji. Można definiować zestawy narzędzi, ale nie podzestawy narzędzi w pliku konfiguracji.
 

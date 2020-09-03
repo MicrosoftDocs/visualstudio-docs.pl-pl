@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c84105387c708fa16e0b1d5c3294ef909466524
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72631202"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Tworzenie i konfigurowanie zestawów danych w programie Visual Studio
@@ -29,7 +29,7 @@ ms.locfileid: "72631202"
 
 Zestaw *danych* to zbiór obiektów, które przechowują dane z bazy danych w pamięci i obsługują śledzenie zmian, aby umożliwić wykonywanie operacji tworzenia, odczytu, aktualizacji i usuwania (CRUD) na tych danych bez konieczności ciągłego połączenia z bazą danych. Zestawy danych zostały zaprojektowane na potrzeby prostych *formularzy* dla aplikacji firmowych. W przypadku nowych aplikacji należy rozważyć użycie Entity Framework do przechowywania i modelowania danych w pamięci. Aby można było korzystać z zestawów danych, należy uzyskać podstawową wiedzę na temat pojęć związanych z bazami informacji.
 
- Można utworzyć wpisaną klasę <xref:System.Data.DataSet> w programie Visual Studio w czasie projektowania przy użyciu **Kreatora konfiguracji źródła danych**. Aby uzyskać informacje na temat tworzenia zestawów danych programowo, zobacz [Creating a DataSet](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc).
+ Podczas projektowania w programie Visual Studio tworzysz klasę o określonym typie przy <xref:System.Data.DataSet> użyciu **Kreatora konfiguracji źródła danych**. Aby uzyskać informacje na temat tworzenia zestawów danych programowo, zobacz [Creating a DataSet](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc).
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Tworzenie nowego zestawu danych za pomocą Kreatora konfiguracji źródła danych
 
@@ -88,8 +88,8 @@ Zestaw *danych* to zbiór obiektów, które przechowują dane z bazy danych w pa
 
 1. Otwórz zestaw danych w **Projektant obiektów DataSet**.
 
-2. Przeciągnij klasę <xref:System.Data.DataTable> z karty **zestaw danych** **przybornika** na **Projektant obiektów DataSet**.
+2. Przeciągnij <xref:System.Data.DataTable> klasę z karty **zestaw danych** **przybornika** na **Projektant obiektów DataSet**.
 
 3. Dodaj kolumny, aby zdefiniować tabelę danych. Aby uzyskać więcej informacji, zobacz [jak to zrobić: Dodawanie kolumn do tabeli DataTable](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
 
-4. Tabele autonomiczne muszą implementować logikę `Fill` w tabelach autonomicznych, dzięki czemu można wypełniać je danymi. Aby uzyskać informacje na temat wypełniania tabel danych autonomicznych, zobacz [zapełnianie zestawu danych z elementu DataAdapter](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).
+4. Tabele autonomiczne muszą implementować `Fill` logikę w tabelach autonomicznych, dzięki czemu można wypełniać je danymi. Aby uzyskać informacje na temat wypełniania tabel danych autonomicznych, zobacz [zapełnianie zestawu danych z elementu DataAdapter](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).

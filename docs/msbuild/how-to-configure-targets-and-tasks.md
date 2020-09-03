@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ccb29f0ea6322a3f6bbfac5c3c0817892f74644
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288900"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Instrukcje: Konfigurowanie obiektów docelowych i zadań
@@ -105,7 +105,7 @@ Podobnie jak w przypadku innych parametrów zadania `MSBuildRuntime` i `MSBuildA
 W przeciwieństwie do innych parametrów zadania `MSBuildRuntime` i `MSBuildArchitecture` nie są widoczne dla samego zadania. Aby napisać zadanie, które jest świadome kontekstu, w którym działa, należy przetestować kontekst przez wywołanie .NET Framework lub użyć właściwości kompilacji, aby przekazać informacje kontekstowe za pomocą innych parametrów zadań.
 
 > [!NOTE]
-> `UsingTask`atrybuty można ustawić na podstawie właściwości zestawu narzędzi i środowiska.
+> `UsingTask` atrybuty można ustawić na podstawie właściwości zestawu narzędzi i środowiska.
 
 `MSBuildRuntime`Parametry i `MSBuildArchitecture` zapewniają największą elastyczność sposobu ustawiania kontekstu docelowego, ale również z największą ograniczoną zakresem. Z jednej strony, ponieważ są one ustawiane w wystąpieniu zadania i nie są oceniane do momentu uruchomienia zadania, mogą uzyskać wartość z pełnego zakresu właściwości dostępnych zarówno w czasie oceny, jak i w czasie kompilacji. Z drugiej strony te parametry dotyczą tylko określonego wystąpienia zadania w konkretnym miejscu docelowym.
 

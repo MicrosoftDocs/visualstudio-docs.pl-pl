@@ -1,5 +1,5 @@
 ---
-title: Dodawanie szablonów elementów projektu i projektu | Dokumenty firmy Microsoft
+title: Dodawanie projektów i szablonów elementów projektu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,65 +12,65 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 14eb1a9e2e63fa6e63d3ba2efa4426421e6b5593
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710208"
 ---
-# <a name="add-project-and-project-item-templates"></a>Dodawanie szablonów elementów projektu i projektu
-Podczas tworzenia własnych typów projektów, należy zapewnić obsługę dodawania nowych projektów [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i elementów projektu przy użyciu standardowych okien dialogowych zintegrowanego środowiska programistycznego (IDE). W poniższych tematach omówiono różne techniki dodawania projektów i elementów projektu.
+# <a name="add-project-and-project-item-templates"></a>Dodaj projekty i szablony elementów projektu
+Podczas tworzenia własnych typów projektów należy zapewnić obsługę dodawania nowych projektów i elementów projektu przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] okien dialogowych standardowego zintegrowanego środowiska programistycznego (IDE). W poniższych tematach omówiono różne techniki dodawania projektów i elementów projektu.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Kontekst projektu](../../extensibility/internals/project-context.md)
 
- Wyjaśnia, że projekt zawiera większość informacji kontekstowych dla tego, co dzieje się w środowisku.
+ Wyjaśniono, że projekt zawiera większość informacji kontekstowych transpires w środowisku.
 
 - [Priorytet projektu](../../extensibility/internals/project-priority.md)
 
- Wyjaśnia, że element projektu jest zwykle członkiem jednego projektu, aby uniknąć niejednoznaczności, który projekt jest używany do otwierania elementu.
+ W tym artykule wyjaśniono, że element projektu jest zwykle członkiem jednego projektu, aby uniknąć niejednoznaczności dotyczącej tego, który projekt jest używany do otwierania elementu.
 
-- [Projekt Różne pliki](../../extensibility/internals/miscellaneous-files-project.md)
+- [Projekt różnych plików](../../extensibility/internals/miscellaneous-files-project.md)
 
- Zawiera informacje o dwóch typach edytorów, które mogą być używane do otwierania plików w projekcie i roli, jaką odgrywa projekt w określaniu edytora, który ma być używany podczas otwierania elementu projektu.
+ Zawiera informacje o dwóch typach edytorów, których można użyć do otwierania plików w projekcie i roli, w której jest tworzony projekt w celu określenia edytora, który ma być używany podczas otwierania elementu projektu.
 
-- [Rejestrowanie szablonów projektów i towarów](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Rejestruj szablony projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md)
 
- Wyjaśnia, co [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] występuje podczas tworzenia projektu.
+ Wyjaśnia, co się dzieje po [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utworzeniu projektu.
 
-- [Dodawanie elementów do okna dialogowego Dodawanie nowego elementu](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [Dodaj elementy do okna dialogowego Dodaj nowy element](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 
- W tym artykule wyjaśniono proces dodawania elementów do okna dialogowego **Dodawanie nowego elementu.**
+ Wyjaśnia proces dodawania elementów do okna dialogowego **Dodaj nowy element** .
 
 - [Dodawanie katalogów do okna dialogowego Nowy projekt](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
 
- Zawiera przykład rejestrowania nowego katalogu, który zawiera szablony niestandardowe udostępnione przez VSPackage.
+ Zawiera przykład rejestrowania nowego katalogu zawierającego szablony niestandardowe udostępniane przez pakietu VSPackage.
 
-- [Dodawanie katalogów do okna dialogowego Dodawanie nowego elementu](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+- [Dodawanie katalogów do okna dialogowego Dodaj nowy element](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
 
- Zawiera przykład rejestrowania nowego zestawu katalogów dla okna dialogowego **Dodawanie nowego elementu.**
+ Zawiera przykład rejestrowania nowego zestawu katalogów w oknie dialogowym **Dodaj nowy element** .
 
-- [Polecenia zdefiniowane przez IDE do rozszerzania systemów projektowych](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [Polecenia zdefiniowane w środowisku IDE służące do rozszerzania systemów projektów](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
 
- Wyświetla listę różnych typów elementów poleceń używanych do rozszerzania systemów projektu.
+ Wyświetla listę różnych typów elementów poleceń używanych do rozszerzania systemów projektów.
 
-- [Catidy dla obiektów, które są zwykle używane do rozszerzania projektów](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+- [CATID dla obiektów, które są zwykle używane do rozszerania projektów](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
 
- Wyświetla listę identyfikatorów CATID dla [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]obiektów, [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] które są używane do rozszerzania , i systemów projektu.
+ Wyświetla listę CATID dla obiektów, które są używane do rozbudowania [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] , [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] systemu projektu.
 
-## <a name="related-sections"></a>Powiązane sekcje
-- [Jak: Otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md)
+## <a name="related-sections"></a>Sekcje pokrewne
+- [Instrukcje: otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md)
 
- Zawiera instrukcje krok po kroku dotyczące otwierania elementu wewnętrznie powiązanego z określonym edytorem dla projektu.
+ Zawiera instrukcje krok po kroku dotyczące otwierania elementu w sposób wewnętrzny do określonego edytora dla projektu.
 
-- [Jak: Otwórz edytory standardowe](../../extensibility/how-to-open-standard-editors.md)
+- [Instrukcje: otwieranie edytorów standardowych](../../extensibility/how-to-open-standard-editors.md)
 
- Zawiera instrukcje krok po kroku dotyczące otwierania standardowego edytora.
+ Zawiera instrukcje krok po kroku dotyczące otwierania edytora standardowego.
 
 - [Podtypy projektu](../../extensibility/internals/project-subtypes.md)
 
- Zawiera łącza do tematów koncepcyjnych podtypu projektu. Podtypy projektu [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] rozszerzają istniejące i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projekty.
+ Zawiera łącza do tematów pojęciowych podtypów projektu. Podtypy projektu poszerzają istniejące [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projekty.
 
 - [Typy projektów](../../extensibility/internals/project-types.md)
 
- Zawiera łącza do dodatkowych tematów, które oferują informacje dotyczące sposobu projektowania nowych typów projektów.
+ Zawiera łącza do dodatkowych tematów, które zawierają informacje o sposobach projektowania nowych typów projektów.

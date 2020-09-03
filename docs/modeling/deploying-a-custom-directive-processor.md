@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536022"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Wdrażanie niestandardowego procesora dyrektywy
@@ -62,7 +62,7 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 
     1. Utwórz plik tekstowy i nadaj mu nazwę \<*assemblyName*> pkgdef.
 
-         \<*assemblyName*>jest zwykle taka sama jak nazwa projektu.
+         \<*assemblyName*> jest zwykle taka sama jak nazwa projektu.
 
     2. Wybierz go w oknie Eksploratora rozwiązań i ustaw jego właściwości w następujący sposób:
 
@@ -196,6 +196,6 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 |Klasa|REG_SZ|\<**Your Fully Qualified Class Name**>|
 |Zestaw|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie niestandardowych procesorów dyrektywy T4 dotyczącej szablonu tekstowego](../modeling/creating-custom-t4-text-template-directive-processors.md)

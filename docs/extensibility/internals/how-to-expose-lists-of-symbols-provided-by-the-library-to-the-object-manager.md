@@ -1,5 +1,5 @@
 ---
-title: Udostępnianie list symboli dostarczonych Menedżerowi obiektów | Dokumenty firmy Microsoft
+title: Uwidacznianie list symboli dostarczonych do Menedżera obiektów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,25 +15,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb15b7d9b29c578a0acf43fd1aa9cfdea88e23ae
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708088"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Jak: Uwidacznianie list symboli dostarczonych przez bibliotekę do menedżera obiektów
-Narzędzia do przeglądania symboli, **Widok klasy,** **Przeglądarka obiektów,** **Przeglądarka połączeń** i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Znajdź wyniki **symboli**, przekazują żądania nowych danych do menedżera obiektów. Menedżer obiektów znajduje odpowiednie biblioteki i żąda nowych list symboli. Biblioteki odpowiadają, dostarczając żądane [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dane do <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> menedżera obiektów za pośrednictwem interfejsu. Menedżer [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obiektów wywołuje metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> w interfejsie w celu uzyskania danych i używa ich do wypełniania lub aktualizowania widoków narzędzi do przeglądania symboli.
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Instrukcje: Uwidacznianie list symboli dostarczonych przez bibliotekę do Menedżera obiektów
+Narzędzia do przeglądania symboli, **Widok klasy**, **Przeglądarka obiektów**, **przeglądarka wywołań** i **Znajdź wyniki symboli**, przekazują żądania dotyczące nowych danych do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów. Menedżer obiektów znajduje odpowiednie biblioteki i żąda nowych list symboli. Biblioteki reagują przez dostarczenie żądanych danych do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Menedżer obiektów wywołuje metody w <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsie, aby uzyskać dane i używa ich do wypełniania lub aktualizowania widoków narzędzi do przeglądania symboli.
 
- Biblioteka może otrzymywać żądania danych, gdy narzędzie jest wywoływane, węzeł jest rozwinięty lub widok jest odświeżany. Gdy narzędzie do przeglądania symboli jest wywoływane po raz pierwszy, menedżer obiektów żąda biblioteki, aby udostępnić listę najwyższego poziomu. Gdy użytkownik rozwija węzeł listy, biblioteka udostępnia listę obrażeń podrzędnych w tym węźle. Każde zapytanie menedżera obiektów zawiera indeks elementu zainteresowania. Aby wyświetlić nową listę, menedżer obiektów musi określić, ile elementów znajduje się na liście, typ elementów, ich nazwy, ułatwienia dostępu i inne właściwości.
+ Biblioteka może otrzymywać żądania dotyczące danych, gdy narzędzie jest wywoływane, węzeł jest rozwinięty lub widok jest odświeżany. Gdy narzędzie do przeglądania symboli jest wywoływane po raz pierwszy, Menedżer obiektów żąda biblioteki, aby zapewnić listę najwyższego poziomu. Gdy użytkownik rozszerza węzeł listy, biblioteka zawiera listę elementów podrzędnych w tym węźle. Każde zapytanie Menedżera obiektów zawiera indeks elementu zainteresowania. Aby wyświetlić nową listę, Menedżer obiektów musi określić, ile elementów znajduje się na liście, typ elementów, ich nazwy, dostępność i inne właściwości.
 
 > [!NOTE]
-> Poniższe przykłady kodu zarządzanego pokazują, jak zapewnić <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> listy symboli za pośrednictwem implementacji interfejsu. Menedżer obiektów wywołuje metody w tym interfejsie i używa uzyskanych danych do wypełniania lub aktualizowania narzędzi do przeglądania symboli.
+> Poniższe przykłady kodu zarządzanego przedstawiają sposób udostępniania list symboli poprzez implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsu. Menedżer obiektów wywołuje metody w tym interfejsie i używa uzyskanych danych do wypełniania lub aktualizowania narzędzi do przeglądania symboli.
 >
-> W przypadku implementacji dostawcy <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> symbolu kodu macierzystego użyj interfejsu.
+> W przypadku implementacji dostawcy symboli natywnego kodu Użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfejsu.
 
-## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Aby udostępnić listę symboli menedżerowi obiektów
+## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Aby zapewnić listę symboli do Menedżera obiektów
 
-1. Pobierz liczbę elementów na liście symboli, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> implementując metodę. W poniższym przykładzie pokazano, jak menedżer obiektów uzyskuje informacje na temat liczby elementów na liście.
+1. Pobierz liczbę elementów na liście symboli, implementując <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> metodę. W poniższym przykładzie pokazano, jak Menedżer obiektów uzyskuje informacje o liczbie elementów na liście.
 
     ```vb
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()
@@ -55,7 +55,7 @@ Narzędzia do przeglądania symboli, **Widok klasy,** **Przeglądarka obiektów,
 
     ```
 
-2. Uzyskaj informacje o kategoriach i atrybutach danego elementu <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> listy, implementując metodę. Kategorie elementów są określone <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> w wyliczeniu. W poniższym przykładzie pokazano, jak menedżer obiektów uzyskuje atrybuty elementów dla danej kategorii.
+2. Pobierz informacje o kategoriach i atrybutach danego elementu listy, implementując <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> metodę. Kategorie elementów są określone w <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> wyliczeniu. W poniższym przykładzie pokazano, jak Menedżer obiektów uzyskuje atrybuty elementów dla danej kategorii.
 
     ```vb
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer
@@ -150,7 +150,7 @@ Narzędzia do przeglądania symboli, **Widok klasy,** **Przeglądarka obiektów,
 
     ```
 
-3. Pobierz reprezentację tekstową danego elementu listy, implementując <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> metodę. W poniższym przykładzie pokazano, jak uzyskać pełną nazwę danego elementu.
+3. Pobierz tekstową reprezentację danego elementu listy przez implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> metody. Poniższy przykład ilustruje, jak uzyskać pełną nazwę danego elementu.
 
     ```vb
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer
@@ -168,7 +168,7 @@ Narzędzia do przeglądania symboli, **Widok klasy,** **Przeglądarka obiektów,
 
     ```
 
-4. Pobierz informacje o ikonie dla danego <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> elementu listy, implementując metodę. Ikona reprezentuje typ (klasa, metoda i tak dalej) i dostępność (prywatne, publiczne i tak dalej) elementu listy. W poniższym przykładzie pokazano, jak uzyskać informacje o ikonie na podstawie atrybutów danego elementu.
+4. Pobierz informacje o ikonie dla danego elementu listy, implementując <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> metodę. Ikona reprezentuje typ (Klasa, Metoda i tak dalej) oraz dostępność (prywatna, publiczna i tak dalej) elementu listy. Poniższy przykład demonstruje, jak uzyskać informacje o ikonie na podstawie podanych atrybutów elementu.
 
     ```vb
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer
@@ -250,7 +250,7 @@ Narzędzia do przeglądania symboli, **Widok klasy,** **Przeglądarka obiektów,
 
     ```
 
-5. Uzyskaj informacje o tym, czy dany element <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> listy można rozwinąć, implementując metodę. W poniższym przykładzie pokazano, jak uzyskać informacje o tym, czy dany element można rozwinąć.
+5. Uzyskaj informacje na temat tego, czy dany element listy jest rozszerzalny przez implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> metody. Poniższy przykład ilustruje, jak uzyskać informacje o tym, czy dany element może być rozwinięty.
 
     ```vb
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer
@@ -277,7 +277,7 @@ Narzędzia do przeglądania symboli, **Widok klasy,** **Przeglądarka obiektów,
 
     ```
 
-6. Pobierz podrzędną listę symboli danego elementu listy, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> implementując metodę. W poniższym przykładzie pokazano, jak uzyskać listę podrzędną symboli danego elementu dla **wykresów połączeń** lub **rozmówców.**
+6. Pobierz podrzędną listę symboli danego elementu listy, implementując <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> metodę. W poniższym przykładzie pokazano, jak uzyskać podrzędną listę symboli danego elementu dla wykresów **wywołań** lub **wywołujących** .
 
     ```vb
     ' Call graph list.
@@ -466,6 +466,6 @@ Narzędzia do przeglądania symboli, **Widok klasy,** **Przeglądarka obiektów,
 
 ## <a name="see-also"></a>Zobacz też
 - [Obsługa narzędzi do przeglądania symboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)
-- [Jak: Zarejestruj bibliotekę w menedżerze obiektów](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
-- [Jak: identyfikowanie symboli w bibliotece](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
-- [Rozszerzalność usługi języka starszego](../../extensibility/internals/legacy-language-service-extensibility.md)
+- [Instrukcje: rejestrowanie biblioteki przy użyciu Menedżera obiektów](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
+- [Instrukcje: Identyfikowanie symboli w bibliotece](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+- [Rozszerzalność starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-extensibility.md)

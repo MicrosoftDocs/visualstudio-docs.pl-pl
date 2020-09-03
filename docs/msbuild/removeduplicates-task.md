@@ -1,5 +1,5 @@
 ---
-title: RemoveDuplicates Zadanie | Dokumenty firmy Microsoft
+title: RemoveDuplicates — — zadanie | Microsoft Docs
 ms.date: 03/01/2018
 ms.topic: reference
 f1_keywords:
@@ -19,34 +19,34 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90366bab14eefd1be4edac81d6b09b3f57aa3332
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632787"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates — zadanie
 
-Usuwa zduplikowane elementy z określonej kolekcji towarów.
+Usuwa zduplikowane elementy z określonej kolekcji elementów.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli `RemoveDuplicates` opisano parametry zadania.
+ W poniższej tabeli opisano parametry `RemoveDuplicates` zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`Filtered`|Opcjonalny parametr wyjściowy. <xref:Microsoft.Build.Framework.ITaskItem> `[]`<br /><br /> Zawiera kolekcję elementów z usuniętymi wszystkimi zduplikowanymi elementami. Kolejność elementów wejściowych jest zachowywana, zachowując pierwsze wystąpienie każdego zduplikowanego elementu.|
-|`Inputs`|Parametr <xref:Microsoft.Build.Framework.ITaskItem> `[]` opcjonalny.<br /><br /> Kolekcja towarów, z którego można usunąć zduplikowane elementy.|
+|`Filtered`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera kolekcję elementów z usuniętymi wszystkimi zduplikowanymi elementami. Kolejność elementów wejściowych jest zachowywana, zachowując pierwsze wystąpienie każdego zduplikowanego elementu.|
+|`Inputs`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Kolekcja elementów, z której mają zostać usunięte zduplikowane elementy.|
 
 ## <a name="remarks"></a>Uwagi
 
- To zadanie jest niewrażliwe na wielkości i nie porównuje metadanych elementu podczas określania duplikatów.
+ To zadanie uwzględnia wielkość liter i nie porównuje metadanych elementów podczas określania duplikatów.
 
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 
- W poniższym przykładzie `RemoveDuplicates` użyto zadania, `MyItems` aby usunąć zduplikowane elementy z kolekcji towarów. Po zakończeniu zadania kolekcja `FilteredItems` elementów zawiera jeden element.
+ W poniższym przykładzie użyto `RemoveDuplicates` zadania, aby usunąć zduplikowane elementy z `MyItems` kolekcji elementów. Po zakończeniu zadania `FilteredItems` Kolekcja elementów zawiera jeden element.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -70,7 +70,7 @@ Usuwa zduplikowane elementy z określonej kolekcji towarów.
 </Project>
 ```
 
- Poniższy przykład pokazuje, że `RemoveDuplicates` zadanie zachowuje jego kolejność wprowadzania. Po zakończeniu zadania kolekcja `FilteredItems` zapasów zawiera elementy *MyFile2.cs ,* *MyFile1.cs*i *MyFile3.cs* w tej kolejności.
+ Poniższy przykład pokazuje, że `RemoveDuplicates` zadanie zachowuje swoją kolejność wprowadzania danych. Po zakończeniu zadania `FilteredItems` Kolekcja elementów zawiera elementy *MyFile2.cs*, *MyFile1.cs*i *MyFile3.cs* w tej kolejności.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -95,6 +95,6 @@ Usuwa zduplikowane elementy z określonej kolekcji towarów.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
-- [Koncepcje MSBuild](../msbuild/msbuild-concepts.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)
+- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
 - [Zadania](../msbuild/msbuild-tasks.md)

@@ -14,28 +14,28 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 92533b90e6a2da9f29a67d13c6e0eee2c31dbcfe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620237"
 ---
 # <a name="code-snippet-functions"></a>Funkcje wstawek kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dostępne są trzy funkcje do użycia z fragmentami kodu [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Funkcje są określone w elemencie [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) fragmentu kodu. Aby uzyskać informacje na temat tworzenia fragmentów kodu, zobacz [fragmenty kodu](../ide/code-snippets.md).
+Dostępne są trzy funkcje do użycia z [!INCLUDE[csprcs](../includes/csprcs-md.md)] fragmentami kodu. Funkcje są określone w elemencie [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) fragmentu kodu. Aby uzyskać informacje na temat tworzenia fragmentów kodu, zobacz [fragmenty kodu](../ide/code-snippets.md).
 
 ## <a name="functions"></a>Funkcje
- W poniższej tabeli opisano funkcje dostępne do użycia z elementem `Function` w fragmentach kodu.
+ W poniższej tabeli opisano funkcje dostępne do użycia z `Function` elementem w fragmentach kodu.
 
 |Funkcja|Opis|Język|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Generuje instrukcję Switch i zestaw instrukcji case dla elementów członkowskich wyliczenia określonego przez parametr `EnumerationLiteral`. Parametr `EnumerationLiteral` musi być odwołaniem do literału wyliczenia lub typem wyliczenia.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Generuje instrukcję Switch i zestaw instrukcji case dla elementów członkowskich wyliczenia określonego przez `EnumerationLiteral` parametr. `EnumerationLiteral`Parametr musi być odwołaniem do literału wyliczenia lub typem wyliczenia.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 |`ClassName()`|Zwraca nazwę klasy zawierającej wstawiony fragment kodu.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 |`SimpleTypeName(` `TypeName` `)`|Zmniejsza parametr *TypeName* do najprostszej postaci w kontekście, w którym został wywołany fragment kodu.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje, jak używać funkcji `GenerateSwitchCases`. Gdy ten fragment kodu zostanie wstawiony, a Wyliczenie zostanie wprowadzone do literału `$switch_on$`, literał `$cases$` generuje instrukcję `case` dla każdej wartości w wyliczeniu.
+ Poniższy przykład pokazuje, jak używać `GenerateSwitchCases` funkcji. Gdy ten fragment kodu zostanie wstawiony, a Wyliczenie jest wprowadzane do `$switch_on$` literału, `$cases$` literał generuje `case` instrukcję dla każdej wartości w wyliczeniu.
 
 ```
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -76,7 +76,7 @@ Dostępne są trzy funkcje do użycia z fragmentami kodu [!INCLUDE[csprcs](../in
 ```
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje, jak używać funkcji `ClassName`. Po wstawieniu tego fragmentu kodu literał `$classname$` jest zastępowany nazwą klasy otaczającej w tej lokalizacji w pliku kodu.
+ Poniższy przykład pokazuje, jak używać `ClassName` funkcji. Po wstawieniu tego fragmentu `$classname$` literał zostanie zastąpiony nazwą otaczającej klasy w tej lokalizacji w pliku kodu.
 
 ```
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -122,7 +122,7 @@ Dostępne są trzy funkcje do użycia z fragmentami kodu [!INCLUDE[csprcs](../in
 ```
 
 ## <a name="example"></a>Przykład
- Ten przykład pokazuje, jak używać funkcji `SimpleTypeName`. Po wstawieniu tego fragmentu kodu do pliku w postaci literału `$SystemConsole$` zostanie zastąpiony najprostszą formą typu <xref:System.Console> w kontekście, w którym został wywołany fragment kodu.
+ Ten przykład pokazuje, jak używać `SimpleTypeName` funkcji. Gdy ten fragment kodu zostanie wstawiony do pliku z kodem, `$SystemConsole$` literał zostanie zastąpiony najprostszą formą <xref:System.Console> typu w kontekście, w którym został wywołany fragment kodu.
 
 ```
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">

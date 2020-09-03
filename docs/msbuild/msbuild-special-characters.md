@@ -1,5 +1,5 @@
 ---
-title: Znaki specjalne MSBuild | Dokumenty firmy Microsoft
+title: Znaki specjalne MSBuild | Microsoft Docs
 ms.date: 06/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,33 +13,33 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fdc9024db06fe27fab5dfdf9589300a6eb671368
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633216"
 ---
-# <a name="msbuild-special-characters"></a>Znaki specjalne MSBuild
+# <a name="msbuild-special-characters"></a>Znaki specjalne w programie MSBuild
 
-MSBuild zastrzega niektóre znaki do specjalnego użycia w określonych kontekstach. Musisz uciec od takich znaków tylko wtedy, gdy chcesz ich używać dosłownie w kontekście, w którym są zarezerwowane. Na przykład gwiazdka ma specjalne znaczenie `Include` tylko `Exclude` w i atrybuty definicji `CreateItem`elementu i wywołania . Jeśli gwiazdka ma być wyświetlana jako gwiazdka w jednym z tych kontekstów, należy jej uniknąć. W każdym innym kontekście po prostu wpisz gwiazdkę, w której ma się pojawić.
+Program MSBuild rezerwuje kilka znaków do użytku specjalnego w określonych kontekstach. Musisz tylko wypróbować takie znaki, jeśli chcesz ich używać dosłownie w kontekście, w którym są zarezerwowane. Na przykład gwiazdka ma specjalne znaczenie tylko w `Include` `Exclude` atrybutach i definicji elementu oraz w wywołaniach do `CreateItem` . Jeśli chcesz, aby gwiazdka była wyświetlana jako gwiazdka w jednym z tych kontekstów, musisz ją wypróbować. W każdym innym kontekście wystarczy wpisać gwiazdkę, w której ma się pojawić.
 
- Aby uniknąć znaku specjalnego, należy użyć\<składni % xx \<>, gdzie xx> reprezentuje ascii szesnastkową wartość znaku. Aby uzyskać więcej informacji, zobacz [Jak: Ucieczka znaków specjalnych w MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).
+ Aby wprowadzić znak specjalny, użyj składni% \<xx> , gdzie \<xx> reprezentuje wartość szesnastkową ASCII znaku. Aby uzyskać więcej informacji, zobacz [jak: znaki specjalne ucieczki w MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
 ## <a name="special-characters"></a>Znaki specjalne
 
  W poniższej tabeli wymieniono znaki specjalne MSBuild:
 
-|**Znak**|**Ascii**|**Zarezerwowane użycie**|
+|**Opis**|**ASCII**|**Użycie zarezerwowane**|
 |-------------------|---------------|------------------------|
-|%|%25|Odwoływanie się do metadanych|
-|$|%24|Odwoływanie się do właściwości|
-|@|%40|Odwoływanie się do list elementów|
+|%|%25|Odwołania do metadanych|
+|$|%24|Właściwości odwołania|
+|@|%40|Odwołania do list elementów|
 |'|%27|Warunki i inne wyrażenia|
-|;|%3B|Separator listy|
-|?|%3F|Symbol wieloznaczny dla `Include` `Exclude` nazw plików i atrybutów|
-|*|%2A|Symbol wieloznaczny do użycia `Include` `Exclude` w nazwach plików i atrybutach|
+|;|% 3B|Separator listy|
+|?|% 3F|Symbol wieloznaczny dla nazw plików w `Include` `Exclude` atrybutach i|
+|*|%2A|Symbol wieloznaczny do użycia w nazwach plików w `Include` `Exclude` atrybutach i|
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)
-- [Items](../msbuild/msbuild-items.md)
+- [Elementy](../msbuild/msbuild-items.md)

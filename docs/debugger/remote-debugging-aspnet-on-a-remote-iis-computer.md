@@ -11,10 +11,10 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 4d2f2e2a698063dfb5ac6261d8a9b01a073d112e
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173894"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Zdalne debugowanie ASP.NET Core na zdalnym komputerze IIS w programie Visual Studio
@@ -64,7 +64,7 @@ Ten artykuł zawiera instrukcje dotyczące konfigurowania podstawowej konfigurac
 
 4. Otwórz plik About.cshtml.cs i ustaw punkt przerwania w `OnGet` metodzie (w starszych szablonach otwórz HomeController.cs i ustaw punkt przerwania w `About()` metodzie).
 
-## <a name="install-and-configure-iis-on-windows-server"></a><a name="bkmk_configureIIS"></a>Instalowanie i Konfigurowanie usług IIS w systemie Windows Server
+## <a name="install-and-configure-iis-on-windows-server"></a><a name="bkmk_configureIIS"></a> Instalowanie i Konfigurowanie usług IIS w systemie Windows Server
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
@@ -129,7 +129,7 @@ Po pomyślnym wdrożeniu aplikacji należy uruchomić ją automatycznie. Jeśli 
 1. W oknie dialogowym **Ustawienia** Włącz debugowanie, klikając przycisk **dalej**, wybierz konfigurację **debugowania** , a następnie wybierz pozycję **Usuń dodatkowe pliki w miejscu docelowym** w obszarze Opcje **publikowania plików** .
 
     > [!IMPORTANT]
-    > W przypadku wybrania konfiguracji wydania podczas publikowania należy wyłączyć debugowanie w pliku *Web. config* .
+    > W przypadku wybrania konfiguracji wydania można wyłączyć debugowanie w pliku *web.config* podczas publikowania.
 
 1. Kliknij przycisk **Zapisz** , a następnie ponownie Opublikuj aplikację.
 
@@ -137,7 +137,7 @@ Po pomyślnym wdrożeniu aplikacji należy uruchomić ją automatycznie. Jeśli 
 
 Za pomocą tej opcji można wdrożyć aplikację, jeśli chcesz skopiować aplikację do usług IIS przy użyciu programu PowerShell, RoboCopy lub ręcznie skopiować pliki.
 
-### <a name="configure-the-aspnet-core-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a>Konfigurowanie witryny sieci Web ASP.NET Core na komputerze z systemem Windows Server
+### <a name="configure-the-aspnet-core-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a> Konfigurowanie witryny sieci Web ASP.NET Core na komputerze z systemem Windows Server
 
 1. Otwórz Eksploratora Windows i Utwórz nowy folder **C:\Publish**, w którym później zostanie wdrożony projekt ASP.NET Core.
 
@@ -163,13 +163,13 @@ Możesz również opublikować i wdrożyć aplikację za pomocą systemu plików
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a>Pobieranie i Instalowanie narzędzi zdalnych w systemie Windows Server
+## <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a> Pobieranie i Instalowanie narzędzi zdalnych w systemie Windows Server
 
 Pobierz wersję narzędzi zdalnych, która pasuje do używanej wersji programu Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-## <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a>Konfigurowanie zdalnego debugera w systemie Windows Server
+## <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a> Konfigurowanie zdalnego debugera w systemie Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -178,7 +178,7 @@ Pobierz wersję narzędzi zdalnych, która pasuje do używanej wersji programu V
 
 Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zobacz [Uruchamianie zdalnego debugera jako usługi](../debugger/remote-debugging.md#bkmk_configureService).
 
-## <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a>Dołączanie do aplikacji ASP.NET z komputera z programu Visual Studio
+## <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a> Dołączanie do aplikacji ASP.NET z komputera z programu Visual Studio
 
 1. Na komputerze z Visual Studio Otwórz rozwiązanie, które próbujesz debugować (**MyASPApp** , jeśli wykonano wszystkie kroki opisane w tym artykule).
 2. W programie Visual Studio kliknij pozycję **debuguj > Dołącz do procesu** (Ctrl + Alt + P).
@@ -205,15 +205,15 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 
     Jeśli chcesz użyć przycisku **Znajdź** , może być konieczne [otwarcie portu UDP 3702](#bkmk_openports) na serwerze.
 
-5. Zaznacz opcję **Pokaż procesy wszystkich użytkowników**.
+5. Zaznacz opcję  **Pokaż procesy wszystkich użytkowników**.
 
 6. Wpisz pierwszą literę nazwy procesu, aby szybko znaleźć aplikację.
 
-    * Jeśli używasz [modelu hostingu w procesie](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) dla usług IIS, wybierz właściwy proces **w3wp. exe** . Począwszy od platformy .NET Core 3, jest to ustawienie domyślne.
+    * Jeśli używasz [modelu hostingu w procesie](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) na serwerze IIS, wybierz właściwy proces **w3wp.exe** . Począwszy od platformy .NET Core 3, jest to ustawienie domyślne.
 
-    * W przeciwnym razie wybierz proces **dotnet. exe** . (Jest to model hostingu poza procesem).
+    * W przeciwnym razie wybierz proces **dotnet.exe** . (Jest to model hostingu poza procesem).
 
-    Jeśli masz wiele procesów pokazujących *w3wp. exe* lub *dotnet. exe*, Sprawdź kolumnę **Nazwa użytkownika** . W niektórych scenariuszach kolumna **Nazwa użytkownika** zawiera nazwę puli aplikacji, na przykład **APPPOOL\DefaultAppPool IIS**. Jeśli zobaczysz pulę aplikacji, ale nie jest ona unikatowa, Utwórz nową nazwę puli aplikacji dla wystąpienia aplikacji, które chcesz debugować, a następnie możesz ją łatwo znaleźć w kolumnie **Nazwa użytkownika** .
+    Jeśli masz wiele procesów pokazujących *w3wp.exe* lub *dotnet.exe*, Sprawdź kolumnę **Nazwa użytkownika** . W niektórych scenariuszach kolumna **Nazwa użytkownika** zawiera nazwę puli aplikacji, na przykład **APPPOOL\DefaultAppPool IIS**. Jeśli zobaczysz pulę aplikacji, ale nie jest ona unikatowa, Utwórz nową nazwę puli aplikacji dla wystąpienia aplikacji, które chcesz debugować, a następnie możesz ją łatwo znaleźć w kolumnie **Nazwa użytkownika** .
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -232,7 +232,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 
     Punkt przerwania powinien zostać trafiony w programie Visual Studio.
 
-## <a name="troubleshooting-open-required-ports-on-windows-server"></a><a name="bkmk_openports"></a>Rozwiązywanie problemów: otwieranie wymaganych portów w systemie Windows Server
+## <a name="troubleshooting-open-required-ports-on-windows-server"></a><a name="bkmk_openports"></a> Rozwiązywanie problemów: otwieranie wymaganych portów w systemie Windows Server
 
 W większości instalacji wymagane porty są otwierane przez instalację ASP.NET i zdalnego debugera. Może jednak być konieczne zweryfikowanie, czy porty są otwarte.
 

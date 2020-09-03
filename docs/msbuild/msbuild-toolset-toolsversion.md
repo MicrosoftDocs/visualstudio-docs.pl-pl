@@ -1,5 +1,5 @@
 ---
-title: MSBuild Toolset (ToolsVersion) | Dokumenty firmy Microsoft
+title: Zestaw narzędzi MSBuild (ToolsVersion) | Microsoft Docs
 ms.date: 01/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,20 +14,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6aaa6309e04f5143b70ff233c0b621ab2350b9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633125"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Zestaw narzędzi MSBuild (ToolsVersion)
 
-MSBuild używa zestawu narzędzi zadań, obiektów docelowych i narzędzi do tworzenia aplikacji. Zazwyczaj zestaw narzędzi MSBuild Zawiera plik *microsoft.common.tasks,* plik *microsoft.common.targets* i kompilatory, takie jak *csc.exe* i *vbc.exe*. Większość zestawów narzędzi może służyć do kompilowania aplikacji do więcej niż jednej wersji programu .NET Framework i więcej niż jednej platformy systemowej. Jednak zestaw narzędzi MSBuild 2.0 może służyć tylko do kierowania tylko .NET Framework 2.0.
+Program MSBuild korzysta z zestawu narzędzi do tworzenia aplikacji, obiektów docelowych i narzędzia. Zazwyczaj zestaw narzędzi programu MSBuild zawiera plik *Microsoft. Common. Tasks* , plik *Microsoft. Common. targets* oraz kompilatory, takie jak *csc.exe* i *vbc.exe*. Większość zestawów narzędzi może służyć do kompilowania aplikacji do więcej niż jednej wersji .NET Framework i więcej niż jednej platformy systemowej. Jednak zestaw narzędzi MSBuild 2,0 może służyć do określania tylko .NET Framework 2,0.
 
-## <a name="toolsversion-attribute"></a>Atrybut ToolsVersion
+## <a name="toolsversion-attribute"></a>ToolsVersion — atrybut
 
 ::: moniker range=">=vs-2019"
- Określ zestaw narzędzi `ToolsVersion` w atrybucie [elementu Projekt](../msbuild/project-element-msbuild.md) w pliku projektu. Poniższy przykład określa, że projekt powinien być zbudowany przy użyciu zestawu narzędzi MSBuild "Current".
+ Określ zestaw narzędzi w `ToolsVersion` atrybucie elementu [projektu](../msbuild/project-element-msbuild.md) w pliku projektu. W poniższym przykładzie określono, że projekt powinien zostać skompilowany przy użyciu zestawu narzędzi MSBuild "Current".
 
 ```xml
 <Project ToolsVersion="Current" ... </Project>
@@ -36,7 +36,7 @@ MSBuild używa zestawu narzędzi zadań, obiektów docelowych i narzędzi do two
 ::: moniker-end
 
 ::: moniker range="vs-2017"
- Określ zestaw narzędzi `ToolsVersion` w atrybucie [elementu Projekt](../msbuild/project-element-msbuild.md) w pliku projektu. Poniższy przykład określa, że projekt powinien być zbudowany przy użyciu zestawu narzędzi MSBuild 15.0.
+ Określ zestaw narzędzi w `ToolsVersion` atrybucie elementu [projektu](../msbuild/project-element-msbuild.md) w pliku projektu. Poniższy przykład określa, że projekt powinien zostać skompilowany przy użyciu zestawu narzędzi MSBuild 15,0.
 
 ```xml
 <Project ToolsVersion="15.0" ... </Project>
@@ -45,94 +45,94 @@ MSBuild używa zestawu narzędzi zadań, obiektów docelowych i narzędzi do two
 ::: moniker-end
 
 > [!NOTE]
-> Niektóre typy `sdk` projektów używają atrybutu `ToolsVersion`zamiast . Aby uzyskać więcej informacji, zobacz [Pakiety, metadane i struktury](/dotnet/core/packages) oraz [Dodatki do formatu csproj dla .NET Core](/dotnet/core/tools/csproj).
+> Niektóre typy projektów używają `sdk` atrybutu zamiast `ToolsVersion` . Aby uzyskać więcej informacji, zobacz [pakiety, metadane i struktury](/dotnet/core/packages) i [Dodatki do formatu csproj dla platformy .NET Core](/dotnet/core/tools/csproj).
 
 ## <a name="how-the-toolsversion-attribute-works"></a>Jak działa atrybut ToolsVersion
 
- Podczas tworzenia projektu w programie Visual Studio lub uaktualnienia `ToolsVersion` istniejącego projektu, atrybut o nazwie jest automatycznie uwzględniany w pliku projektu, a jego wartość odpowiada wersji programu MSBuild, która jest uwzględniona w wersji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [omówienie kierowania na ramy](../ide/visual-studio-multi-targeting-overview.md).
+ Gdy tworzysz projekt w programie Visual Studio lub uaktualniasz istniejący projekt, atrybut o nazwie `ToolsVersion` jest automatycznie dołączany do pliku projektu, a jego wartość odnosi się do wersji programu MSBuild, która jest dołączona do programu Visual Studio Edition. Aby uzyskać więcej informacji, zobacz temat [Omówienie funkcji określania wartości docelowej](../ide/visual-studio-multi-targeting-overview.md).
 
- Gdy `ToolsVersion` wartość jest zdefiniowana w pliku projektu, MSBuild używa tej wartości do określenia wartości właściwości zestawu narzędzi, które są dostępne dla projektu. Jedna właściwość `$(MSBuildToolsPath)`zestawu narzędzi jest , która określa ścieżkę narzędzi .NET Framework. Wymagana jest tylko właściwość zestawu toolset (lub). `$(MSBuildBinPath)`
+ Gdy `ToolsVersion` wartość jest zdefiniowana w pliku projektu, MSBuild używa tej wartości do określenia wartości właściwości zestawu narzędzi, które są dostępne dla projektu. Jedna Właściwość zestawu narzędzi to `$(MSBuildToolsPath)` , która określa ścieżkę .NET Framework narzędzi. Wymagana jest tylko ta właściwość zestawu narzędzi (lub `$(MSBuildBinPath)` ).
 
- Począwszy od programu Visual Studio 2013 wersja zestawu narzędzi MSBuild jest taka sama jak numer wersji programu Visual Studio. MSBuild domyślnie ten zestaw narzędzi w programie Visual Studio i w wierszu polecenia, niezależnie od wersji zestawu narzędzi określonej w pliku projektu.  To zachowanie można zastąpić przy użyciu -ToolsVersion flagi. Aby uzyskać więcej informacji, zobacz [Zastępowanie ustawień narzędzi.](../msbuild/overriding-toolsversion-settings.md)
+ Począwszy od Visual Studio 2013, wersja zestawu narzędzi MSBuild jest taka sama jak numer wersji programu Visual Studio. Program MSBuild domyślnie ustawia ten zestaw narzędzi w programie Visual Studio i w wierszu polecenia, niezależnie od wersji zestawu narzędzi określonego w pliku projektu.  To zachowanie można zastąpić przy użyciu flagi-ToolsVersion. Aby uzyskać więcej informacji, zobacz [zastąpienie ustawień ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
 
- W poniższym przykładzie MSBuild znajduje plik *Microsoft.CSharp.targets* przy użyciu właściwości zastrzeżonej. `MSBuildToolsPath`
+ W poniższym przykładzie MSBuild znajduje plik *Microsoft. CSharp. targets* przy użyciu `MSBuildToolsPath` zastrzeżonej właściwości.
 
 ```xml
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
- Wartość można zmodyfikować, `MSBuildToolsPath` definiując niestandardowy zestaw narzędzi. Aby uzyskać więcej informacji, zobacz [Standardowe i niestandardowe konfiguracje zestawu narzędzi](../msbuild/standard-and-custom-toolset-configurations.md).
+ Możesz zmodyfikować wartość `MSBuildToolsPath` przez zdefiniowanie niestandardowego zestawu narzędzi. Aby uzyskać więcej informacji, zobacz [konfiguracje zestawu narzędzi standardowych i niestandardowych](../msbuild/standard-and-custom-toolset-configurations.md).
 
- Podczas tworzenia rozwiązania w wierszu polecenia `ToolsVersion` i określić dla *msbuild.exe*, wszystkie projekty i ich `ToolsVersion`zależności projektu do projektu są budowane zgodnie z tym, nawet jeśli każdy projekt w rozwiązaniu określa swój własny `ToolsVersion`. Aby zdefiniować `ToolsVersion` wartość dla na podstawie projektu, zobacz [Zastępowanie ustawień narzędziaswersja](../msbuild/overriding-toolsversion-settings.md).
+ Gdy tworzysz rozwiązanie w wierszu polecenia i określisz `ToolsVersion` dla *msbuild.exe*, wszystkie projekty i zależności między projektami są tworzone w zależności od tego `ToolsVersion` , nawet jeśli każdy projekt w rozwiązaniu określa własny `ToolsVersion` . Aby zdefiniować `ToolsVersion` wartość dla poszczególnych projektów, zobacz [przesłanianie ustawień ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
 
- Atrybut `ToolsVersion` jest również używany do migracji projektu. Na przykład po otwarciu projektu programu Visual Studio 2008 w programie Visual Studio 2010, plik projektu jest aktualizowany w celu uwzględnienia ToolsVersion ="4.0". Jeśli następnie spróbujesz otworzyć ten projekt w programie Visual Studio 2008, nie rozpoznaje uaktualniony `ToolsVersion` i w związku z tym tworzy projekt tak, jakby atrybut był nadal ustawiony na 3.5.
+ Ten `ToolsVersion` atrybut jest również używany do migracji projektu. Na przykład po otwarciu projektu programu Visual Studio 2008 w programie Visual Studio 2010 plik projektu zostanie zaktualizowany tak, aby zawierał ToolsVersion = "4.0". Jeśli następnie spróbujesz otworzyć ten projekt w programie Visual Studio 2008, nie rozpoznaje uaktualnionego `ToolsVersion` i dlatego kompiluje projekt, tak jakby atrybut był nadal ustawiony na 3,5.
 
- Visual Studio 2010 i Visual Studio 2012 używają ToolsVersion 4.0. Visual Studio 2013 używa ToolsVersion 12.0. Visual Studio 2015 używa ToolsVersion 14.0, a Visual Studio 2017 używa ToolsVersion 15.0. W wielu przypadkach można otworzyć projekt w wielu wersjach programu Visual Studio bez modyfikacji. Visual Studio zawsze używa poprawnego zestawu narzędzi, ale zostaniesz powiadomiony, jeśli używana wersja nie pasuje do wersji w pliku projektu. W prawie wszystkich przypadkach to ostrzeżenie jest łagodne, ponieważ zestawy narzędzi są zgodne w większości przypadków.
+ Visual Studio 2010 i Visual Studio 2012 używają ToolsVersion 4,0. Visual Studio 2013 używa ToolsVersion 12,0. Program Visual Studio 2015 używa ToolsVersion 14,0, a program Visual Studio 2017 używa ToolsVersion 15,0. W wielu przypadkach można otworzyć projekt w wielu wersjach programu Visual Studio bez modyfikacji. Program Visual Studio zawsze korzysta z poprawnego zestawu narzędzi, ale użytkownik zostanie powiadomiony, jeśli używana wersja nie jest zgodna z wersją w pliku projektu. W prawie wszystkich przypadkach to ostrzeżenie jest niegroźne, ponieważ zestawy narzędzi są zgodne w większości przypadków.
 
- Zestawy narzędzi podrzędnych, które są opisane w dalszej części tego tematu, umożliwiają MSBuild automatycznie przełączać zestaw narzędzi do użycia na podstawie kontekstu, w którym jest uruchamiana kompilacja. Na przykład MSBuild używa nowszego zestawu narzędzi, gdy jest uruchamiany w programie Visual Studio 2012 niż podczas uruchamiania w programie Visual Studio 2010, bez konieczności jawnej zmiany pliku projektu.
+ Podzestawy podrzędne, które są opisane w dalszej części tego tematu, umożliwiają programowi MSBuild automatyczne przełączać zestaw narzędzi do użycia na podstawie kontekstu, w którym jest uruchamiana kompilacja. Na przykład w programie MSBuild jest używany nowszy zestaw narzędzi, które są uruchamiane w programie Visual Studio 2012 niż w przypadku uruchamiania w programie Visual Studio 2010, bez konieczności jawnego zmieniania pliku projektu.
 
 ## <a name="toolset-implementation"></a>Implementacja zestawu narzędzi
 
- Zaimplementuj zestaw narzędzi, wybierając ścieżki różnych narzędzi, obiektów docelowych i zadań, które składają się na zestaw narzędzi. Narzędzia w zestawie narzędzi zdefiniowane przez MSBuild pochodzą z następujących źródeł:
+ Zaimplementuj zestaw narzędzi, wybierając ścieżki różnych elementów, obiektów docelowych i zadań, które tworzą zestaw narzędzi. Narzędzia w zestawie narzędzi, które program MSBuild definiuje, pochodzą z następujących źródeł:
 
 - Folder .NET Framework.
 
 - Dodatkowe narzędzia zarządzane.
 
-  Zarządzane narzędzia obejmują *ResGen.exe* i *TlbImp.exe*.
+  Narzędzia zarządzane obejmują *ResGen.exe* i *TlbImp.exe*.
 
-MSBuild udostępnia dwa sposoby dostępu do zestawu narzędzi:
+Program MSBuild oferuje dwa sposoby dostępu do zestawu narzędzi:
 
-- Za pomocą właściwości zestawu narzędzi
+- Przy użyciu właściwości zestawu narzędzi
 
-- Za <xref:Microsoft.Build.Utilities.ToolLocationHelper> pomocą metod
+- Przy użyciu <xref:Microsoft.Build.Utilities.ToolLocationHelper> metod
 
-Właściwości zestawu narzędzi określają ścieżki narzędzi. Począwszy od programu Visual Studio 2017, MSBuild nie ma już stałej lokalizacji. Domyślnie znajduje się w folderze *MSBuild\15.0\Bin* względem lokalizacji instalacji programu Visual Studio. We wcześniejszych wersjach MSBuild używa `ToolsVersion` wartości atrybutu w pliku projektu, aby zlokalizować odpowiedni klucz rejestru, a następnie używa informacji w kluczu rejestru, aby ustawić właściwości zestawu narzędzi. Na przykład, `ToolsVersion` jeśli `12.0`ma wartość, następnie MSBuild ustawia właściwości zestawu narzędzi zgodnie z tym kluczem rejestru: **HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0**.
+Właściwości zestawu narzędzi określają ścieżki narzędzia. Począwszy od programu Visual Studio 2017, program MSBuild nie ma już stałej lokalizacji. Domyślnie znajduje się on w folderze *MSBuild\15.0\bin* względem lokalizacji instalacji programu Visual Studio. We wcześniejszych wersjach MSBuild używa wartości `ToolsVersion` atrybutu w pliku projektu, aby zlokalizować odpowiedni klucz rejestru, a następnie używa informacji w kluczu rejestru, aby ustawić właściwości zestawu narzędzi. Na przykład jeśli `ToolsVersion` ma wartość `12.0` , MSBuild ustawia właściwości zestawu narzędzi zgodnie z tym kluczem rejestru: **HKLM\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0**.
 
  Są to właściwości zestawu narzędzi:
 
-- `MSBuildToolsPath`określa ścieżkę plików binarnych MSBuild.
+- `MSBuildToolsPath` Określa ścieżkę plików binarnych programu MSBuild.
 
-- `SDK40ToolsPath`określa ścieżkę dodatkowych narzędzi zarządzanych dla MSBuild 4.x (która może być 4.0 lub 4.5).
+- `SDK40ToolsPath` Określa ścieżkę dodatkowych narzędzi zarządzanych dla programu MSBuild 4. x (może to być 4,0 lub 4,5).
 
-- `SDK35ToolsPath`określa ścieżkę dodatkowych narzędzi zarządzanych dla MSBuild 3.5.
+- `SDK35ToolsPath` Określa ścieżkę dodatkowych narzędzi zarządzanych dla programu MSBuild 3,5.
 
-Alternatywnie można określić Toolset programowo wywołując metody <xref:Microsoft.Build.Utilities.ToolLocationHelper> klasy. Klasa zawiera następujące metody:
+Alternatywnie można programowo określić zestaw narzędzi, wywołując metody <xref:Microsoft.Build.Utilities.ToolLocationHelper> klasy. Klasa obejmuje następujące metody:
 
-- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A>zwraca ścieżkę folderu .NET Framework.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> zwraca ścieżkę do folderu .NET Framework.
 
-- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A>zwraca ścieżkę pliku w folderze .NET Framework.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> zwraca ścieżkę pliku w folderze .NET Framework.
 
-- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A>zwraca ścieżkę folderu narzędzi zarządzanych.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> zwraca ścieżkę folderu Managed Tools.
 
-- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A>zwraca ścieżkę pliku, która zazwyczaj znajduje się w folderze narzędzi zarządzanych.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> zwraca ścieżkę pliku, który zazwyczaj znajduje się w folderze Managed Tools.
 
-- [GetPathToBuildTools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121)) zwraca ścieżkę narzędzi kompilacji.
+- [GetPathToBuildTools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121)) zwraca ścieżkę narzędzi do kompilacji.
 
-### <a name="sub-toolsets"></a>Zestawy narzędzi podrzędnych
+### <a name="sub-toolsets"></a>Podzestawy narzędzi
 
- W przypadku wersji MSBuild przed 15.0, MSBuild używa klucza rejestru, aby określić ścieżkę podstawowych narzędzi. Jeśli klucz ma podklucz, MSBuild używa go do określenia ścieżki poddostawki, która zawiera dodatkowe narzędzia. W takim przypadku Zestaw narzędzi jest zdefiniowany przez połączenie definicji właściwości, które są zdefiniowane w obu kluczach.
+ W przypadku wersji programu MSBuild wcześniejszych niż 15,0 program MSBuild używa klucza rejestru w celu określenia ścieżki podstawowych narzędzi. Jeśli klucz ma podklucz, MSBuild używa go do określenia ścieżki podzestawu narzędzi zawierającego dodatkowe narzędzia. W takim przypadku zestaw narzędzi jest definiowany przez połączenie definicji właściwości, które są zdefiniowane w obu kluczach.
 
 > [!NOTE]
-> Jeśli nazwy właściwości zestawu narzędzi toolset zderzają się, wartość zdefiniowana dla ścieżki podklucza zastępuje wartość zdefiniowaną dla ścieżki klucza głównego.
+> W przypadku kolizji nazw właściwości zestawu narzędzi wartość zdefiniowana dla ścieżki podklucza zastępuje wartość, która jest zdefiniowana dla ścieżki klucza głównego.
 
- Zestawy narzędzi podrzędnych stają się `VisualStudioVersion` aktywne w obecności właściwości kompilacji. Ta właściwość może mieć jedną z następujących wartości:
+ Podzestawy narzędzi stają się aktywne w obecności `VisualStudioVersion` Właściwości kompilacja. Ta właściwość może przyjmować jedną z następujących wartości:
 
-- "10.0" określa poddomiat .NET Framework 4
+- "10,0" określa podzestaw .NET Framework 4
 
-- "11.0" określa poddosystem .NET Framework 4.5
+- "11,0" określa podzestaw narzędzi .NET Framework 4,5
 
-- "12.0" określa poddostawę .NET Framework 4.5.1
+- "12,0" określa podzestaw .NET Framework 4.5.1
 
-Zestawy narzędzi podrzędnych 10,0 i 11,0 powinny być używane z ToolsVersion 4.0. W nowszych wersjach poddostosowania i ToolsVersion powinny być zgodne.
+Podzestawów 10,0 i 11,0 należy używać z ToolsVersion 4,0. W nowszych wersjach wersja zestawu narzędzi sub i ToolsVersion powinna być zgodna.
 
-Podczas kompilacji MSBuild automatycznie określa i ustawia wartość `VisualStudioVersion` domyślną dla właściwości, jeśli nie jest jeszcze zdefiniowana.
+Podczas kompilacji program MSBuild automatycznie określa i ustawia wartość domyślną dla `VisualStudioVersion` właściwości, jeśli nie została jeszcze zdefiniowana.
 
-MSBuild zapewnia przeciążenia `ToolLocationHelper` dla metod, które dodają wyliczoną `VisualStudioVersion` wartość jako parametr
+Program MSBuild oferuje przeciążenia dla `ToolLocationHelper` metod, które dodają `VisualStudioVersion` wartość wyliczaną jako parametr
 
-Zestawy narzędzi podrzędnych zostały wprowadzone w .NET Framework 4.5.
+Podzestawy narzędzi zostały wprowadzone w .NET Framework 4,5.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Standardowe i niestandardowe konfiguracje zestawu narzędzi](../msbuild/standard-and-custom-toolset-configurations.md)
-- [Wielotargowe](../msbuild/msbuild-multitargeting-overview.md)
+- [Konfiguracje standardowego i niestandardowego zestawu narzędzi](../msbuild/standard-and-custom-toolset-configurations.md)
+- [Wielowersyjności kodu](../msbuild/msbuild-multitargeting-overview.md)

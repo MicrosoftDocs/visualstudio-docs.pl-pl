@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 74da305b69a9561573466d385c5d7b686da3693f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620322"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Najlepsze praktyki dotyczące korzystania z wstawek kodu
@@ -25,16 +25,16 @@ ms.locfileid: "72620322"
 Kod w fragmencie kodu przedstawia tylko najbardziej podstawowy sposób wykonania czegoś. W przypadku większości aplikacji należy zmodyfikować kod w celu dostosowania go do aplikacji.
 
 ## <a name="handling-exceptions"></a>Obsługa wyjątków
- Zazwyczaj fragment kodu spróbuje... Bloki catch przechwytują i ponownie generują wszystkie wyjątki. To może nie być właściwy wybór dla projektu. Dla każdego wyjątku istnieje kilka sposobów odpowiedzi. Aby zapoznać się z przykładami, zobacz [How to: obsługa wyjątku przy użyciuC# instrukcji try/catch (Przewodnik programowania)](https://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) i [try... Catch... Finally — instrukcja](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).
+ Zazwyczaj fragment kodu spróbuje... Bloki catch przechwytują i ponownie generują wszystkie wyjątki. To może nie być właściwy wybór dla projektu. Dla każdego wyjątku istnieje kilka sposobów odpowiedzi. Aby zapoznać się z przykładami, zobacz [How to: obsługa wyjątku przy użyciu instrukcji try/catch (Przewodnik programowania w języku C#)](https://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) i [try... Catch... Finally — instrukcja](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).
 
 ## <a name="file-locations"></a>Lokalizacje plików
  W przypadku adaptacji lokalizacji plików do aplikacji należy wziąć pod uwagę następujące kwestie:
 
 - Znajdowanie dostępnej lokalizacji. Użytkownicy mogą nie mieć dostępu do folderu Program Files komputera, dlatego przechowywanie plików z plikami aplikacji może nie zadziałało.
 
-- Znajdowanie bezpiecznej lokalizacji. Przechowywanie plików w folderze głównym (C: \\) nie jest bezpieczne. W przypadku danych aplikacji zaleca się folder \Dane danych. W przypadku poszczególnych danych użytkownika aplikacja może utworzyć plik dla każdego użytkownika w folderze \Moje dokumenty.
+- Znajdowanie bezpiecznej lokalizacji. Przechowywanie plików w folderze głównym (C: \\ ) nie jest bezpieczne. W przypadku danych aplikacji zaleca się folder \Dane danych. W przypadku poszczególnych danych użytkownika aplikacja może utworzyć plik dla każdego użytkownika w folderze \Moje dokumenty.
 
-- Przy użyciu prawidłowej nazwy pliku. Możesz użyć formantów <xref:System.Windows.Forms.OpenFileDialog> i <xref:System.Windows.Forms.SaveFileDialog>, aby zmniejszyć prawdopodobieństwo nieprawidłowych nazw plików. Należy pamiętać, że od momentu, gdy użytkownik wybierze plik i gdy kod manipuluje plikiem, plik może zostać usunięty. Ponadto użytkownik może nie mieć uprawnień do zapisu w pliku.
+- Przy użyciu prawidłowej nazwy pliku. Możesz użyć <xref:System.Windows.Forms.OpenFileDialog> formantów i, <xref:System.Windows.Forms.SaveFileDialog> Aby zmniejszyć prawdopodobieństwo wystąpienia nieprawidłowych nazw plików. Należy pamiętać, że od momentu, gdy użytkownik wybierze plik i gdy kod manipuluje plikiem, plik może zostać usunięty. Ponadto użytkownik może nie mieć uprawnień do zapisu w pliku.
 
 ## <a name="security"></a>Zabezpieczenia
  Jak bezpieczny fragment kodu jest zależny od tego, gdzie jest używany w kodzie źródłowym i jak jest modyfikowany, gdy jest on w kodzie. Poniższa lista zawiera kilka obszarów, które należy wziąć pod uwagę.

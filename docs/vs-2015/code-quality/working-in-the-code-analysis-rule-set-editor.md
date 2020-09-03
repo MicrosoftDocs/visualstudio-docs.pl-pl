@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f25cc5a5f56c20f6a1696baa5aa3e9ee5ebdf2fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621508"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Praca w edytorze zestawu reguł analizy kodu
@@ -25,9 +25,9 @@ Edytor zestawu reguł analizy kodu umożliwia określenie reguł uwzględnionych
 
 |Akcja|Opis|
 |------------|-----------------|
-|**Wyświetlania**|Generuje ostrzeżenie w oknie **Lista błędów** .|
+|**Ostrzeżenie**|Generuje ostrzeżenie w oknie **Lista błędów** .|
 |**Błąd**|Generuje błąd w oknie **Lista błędów** .|
-|**Dawaj**|Wyłącza regułę.|
+|**Brak**|Wyłącza regułę.|
 
  Edytor wyświetla reguły w strukturze drzewa, które grupuje reguły według określonego pola zestawu reguł. Aby dodać lub usunąć reguły z zestawu reguł, wykonaj co najmniej jedną z następujących czynności:
 
@@ -46,7 +46,7 @@ Edytor zestawu reguł analizy kodu umożliwia określenie reguł uwzględnionych
 |---------------------|-----------------|
 |**Rozwiń wszystko**|Pokazuje reguły we wszystkich grupach.|
 |**Zwiń wszystko**|Ukrywa reguły we wszystkich grupach.|
-|**Grupuj według**|Określa pole, według którego są grupowane reguły. Kliknij **\<None >** , aby wyświetlić reguły bez grup.|
+|**Grupuj według**|Określa pole, według którego są grupowane reguły. Kliknij, **\<None>** Aby wyświetlić reguły bez grup.|
 |**Opcje kolumn**|Określa pola reguły do wyświetlenia.|
 |**Ukryj reguły, które nie mają zastosowania do bieżącego rozwiązania**|Pokazuje lub ukrywa reguły, które nie są tego samego typu docelowego co rozwiązanie.|
 |**Pokaż reguły, które mogą generować błędy analizy kodu**|Pokazuje lub ukrywa reguły, do których przypisano akcję błędu.|
@@ -62,12 +62,12 @@ Edytor zestawu reguł analizy kodu umożliwia określenie reguł uwzględnionych
 
 |Pole|Opis|
 |-----------|-----------------|
-|**#C1**|Identyfikator reguły.|
-|**Kategorii**|Oprócz ich przynależności do zestawów reguł reguły analizy kodu są również pogrupowane według kategorii. Aby uzyskać więcej informacji, zobacz [Analiza kodu dla ostrzeżeń związanych z kodem zarządzanym](../code-quality/code-analysis-for-managed-code-warnings.md).|
+|**ID**|Identyfikator reguły.|
+|**Kategoria**|Oprócz ich przynależności do zestawów reguł reguły analizy kodu są również pogrupowane według kategorii. Aby uzyskać więcej informacji, zobacz [Analiza kodu dla ostrzeżeń związanych z kodem zarządzanym](../code-quality/code-analysis-for-managed-code-warnings.md).|
 |**Nazwa**|Tytuł reguły.|
-|**Obszaru**|Przestrzeń nazw reguły.|
+|**Przestrzeń nazw**|Przestrzeń nazw reguły.|
 |**Typ docelowy**|Wskazuje, czy reguła dotyczy kodu natywnego, zarządzanego lub bazy danych.|
-|**Transakcji**|Akcja podejmowana, gdy reguła jest naruszana w przebiegu analizy kodu.<br /><br /> **Ostrzeżenie** — generuje ostrzeżenie.<br /><br /> **Błąd** — generuje błąd.<br /><br /> **Brak** — wyłącza regułę.<br /><br /> Można edytować pole akcji. Ustawienie wartości none jest takie samo jak czyszczenie pola wyboru dla reguły.|
+|**Akcja**|Akcja podejmowana, gdy reguła jest naruszana w przebiegu analizy kodu.<br /><br /> **Ostrzeżenie** — generuje ostrzeżenie.<br /><br /> **Błąd** — generuje błąd.<br /><br /> **Brak** — wyłącza regułę.<br /><br /> Można edytować pole akcji. Ustawienie wartości none jest takie samo jak czyszczenie pola wyboru dla reguły.|
 |**Źródłowe zestawy reguł**|Zestaw reguł, który zawiera regułę.|
 
 ## <a name="sorting-and-filtering-rule-sets"></a>Sortowanie i filtrowanie zestawów reguł

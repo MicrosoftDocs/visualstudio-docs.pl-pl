@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b95ed9b6473c156d1bdf8a20eb927ee044aa47cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621105"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Ułatwienia dostępu w Podglądzie Pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Firma Microsoft dokłada starań, aby ułatwić wszystkim korzystanie z jej produktów i usług. Ten temat zawiera informacje o funkcjach, produktach i usługach, które ułatwiają Podgląd Pomocy firmy Microsoft 2,2 dla osób o szerokim zakresie możliwości.
+Firma Microsoft dokłada wszelkich starań, aby jej produkty i usługi były coraz łatwiejsze w użytkowaniu. Ten temat zawiera informacje o funkcjach, produktach i usługach, które ułatwiają Podgląd Pomocy firmy Microsoft 2,2 dla osób o szerokim zakresie możliwości.
 
 ## <a name="keyboard-access"></a>Dostęp za pomocą klawiatury
  Dostęp do wszystkich funkcji podglądu pomocy można uzyskać przy użyciu klawiatury. Aby uzyskać więcej informacji, zobacz [klawisze skrótów (Podgląd pomocy)](../ide/shortcut-keys-help-viewer.md).

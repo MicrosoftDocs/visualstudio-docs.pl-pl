@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 83c8d8e7a1afe0946c1b1f5eb25c8650e2b512f5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917311"
 ---
 # <a name="structure-your-modeling-solution"></a>Tworzenie struktury rozwiązania modelowania
@@ -24,7 +24,7 @@ Aby efektywnie korzystać z modeli w projekcie deweloperskim, członkowie zespo�
 
 Aby szybko rozpocząć pracę nad projektem lub podprojektem, warto mieć szablon projektu, który następuje po wybranej strukturze projektu. W tym temacie opisano sposób tworzenia i używania takiego szablonu.
 
-W tym temacie założono, że pracujesz nad projektem, który jest wystarczająco duży, aby wymagać kilku członków zespołu, a może mieć kilka zespołów. Kod i modele projektu są przechowywane w systemie kontroli źródła, takim jak [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]. Co najmniej niektórzy członkowie zespołu używają programu Visual Studio do tworzenia modeli, a inni członkowie zespołu mogą wyświetlać modele przy użyciu innych wersji programu Visual Studio.
+W tym temacie założono, że pracujesz nad projektem, który jest wystarczająco duży, aby wymagać kilku członków zespołu, a może mieć kilka zespołów. Kod i modele projektu są przechowywane w systemie kontroli źródła, takich jak [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] . Co najmniej niektórzy członkowie zespołu używają programu Visual Studio do tworzenia modeli, a inni członkowie zespołu mogą wyświetlać modele przy użyciu innych wersji programu Visual Studio.
 
 Aby sprawdzić, które wersje programu Visual Studio obsługują poszczególne narzędzia i funkcje modelowania, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -36,7 +36,7 @@ W średnim lub dużym projekcie struktura zespołu opiera się na strukturze apl
 
 1. Podstawowe struktury rozwiązań na podstawie struktury aplikacji, takiej jak aplikacja sieci Web, aplikacja usługi lub aplikacja klasyczna. Wiele typowych architektur omówiono w temacie [Application Archetypes w przewodniku po architekturze aplikacji firmy Microsoft](/previous-versions/msp-n-p/ee658107(v=pandp.10)).
 
-2. Utwórz rozwiązanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], które wywoła rozwiązanie architektury. To rozwiązanie zostanie użyte do utworzenia ogólnego projektu systemu. Będzie zawierać modele, ale nie kod.
+2. Utwórz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązanie, które wywoła rozwiązanie architektury. To rozwiązanie zostanie użyte do utworzenia ogólnego projektu systemu. Będzie zawierać modele, ale nie kod.
 
     Dodaj diagram warstwowy do tego rozwiązania. Na diagramie warstwy narysuj architekturę wybraną dla aplikacji. Na przykład diagram może pokazać te warstwy i zależności między nimi: Prezentacja; Logika biznesowa; i dane.
 
@@ -109,7 +109,7 @@ Jeśli na przykład często używasz rozwiązań z warstwami prezentacji, firmow
 4. Postępując zgodnie z instrukcjami wyświetlanymi w kreatorze, wybierz projekty, które chcesz uwzględnić w szablonie, podaj nazwę i opis szablonu, a następnie określ lokalizację wyjściową.
 
 > [!NOTE]
-> Materiał przedstawiony w tym temacie jest abstrakcyjny i paraphrased ze wskazówkami dotyczącymi narzędzi architektury programu Visual Studio, które są napisywane przez zakresy ALM programu Visual Studio, które są współdziałaniem między profesjonalistami (MVP), usługami firmy Microsoft i programem Visual Studio zespół produktu i autorzy. [Kliknij tutaj, aby pobrać kompletny pakiet wskazówek.](https://archive.codeplex.com/?p=vsarchitectureguide)
+> Materiał przedstawiony w tym temacie jest abstrakcyjny i paraphrased ze wskazówkami dotyczącymi narzędzi architektury programu Visual Studio, które są napisywane przez zakresy programu Visual Studio ALM, które są współdziałaniem między specjalistami o najwyższej wartości (MVP), usługami firmy Microsoft i członkami zespołu i autorów produktów programu Visual Studio. [Kliknij tutaj, aby pobrać kompletny pakiet wskazówek.](https://archive.codeplex.com/?p=vsarchitectureguide)
 
 ## <a name="related-materials"></a>Powiązane materiały
 
@@ -119,5 +119,5 @@ Organizowanie modeli — wideo według Clint Edmondson [i zarządzanie nimi](htt
 
 ## <a name="see-also"></a>Zobacz też
 
-[Zarządzanie modelami i diagramami w ramach kontroli wersji](../modeling/manage-models-and-diagrams-under-version-control.md)
-[używać modeli w procesie programistycznym](../modeling/use-models-in-your-development-process.md)
+[Zarządzanie modelami i diagramami w ramach kontroli wersji](../modeling/manage-models-and-diagrams-under-version-control.md) 
+ [Używanie modeli w procesie tworzenia oprogramowania](../modeling/use-models-in-your-development-process.md)

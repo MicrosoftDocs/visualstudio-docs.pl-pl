@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20f9328b7e048eaf68184925fa1b7ac7a56540af
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533643"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w programie Visual Studio
@@ -47,7 +47,7 @@ Aby uzyskać więcej informacji na temat ułatwień dostępu w programie Visual 
 - [Menu kontekstowe Widok klasy](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)
 - [Pomoc](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)
 - [Eksplorator rozwiązań](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)
-- [Widok](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
+- [Wyświetlanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
 - [Debugowanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)
 - [Test obciążenia](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)
 - [Zespół](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)
@@ -62,20 +62,20 @@ Aby uzyskać więcej informacji na temat ułatwień dostępu w programie Visual 
 
 Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowolne okno programu Visual Studio ma fokus.
 
-### <a name="analyze"></a><a name="bkmk_analyze"></a>Analiza
+### <a name="analyze"></a><a name="bkmk_analyze"></a> Analiza
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |Analyze.NavigateBackward|**Shift+Alt+3**|
 |Analyze.NavigateForward|**Shift+Alt+4**|
 
-### <a name="architecture"></a><a name="bkmk_architecture"></a>Będąc
+### <a name="architecture"></a><a name="bkmk_architecture"></a> Będąc
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |Architecture.NewDiagram|**Ctrl + \\ , CTRL + N**|
 
-### <a name="build"></a><a name="bkmk_build"></a>Utworzenia
+### <a name="build"></a><a name="bkmk_build"></a> Utworzenia
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -85,13 +85,13 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Build.Compile|**Ctrl+F7**|
 |Build.RunCodeAnalysisonSolution|**Alt+F11**|
 
-### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a>Menu kontekstowe Widok klasy
+### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a> Menu kontekstowe Widok klasy
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**Alt+Enter**|
 
-### <a name="debug"></a><a name="bkmk_debug"></a>Rozpocząć
+### <a name="debug"></a><a name="bkmk_debug"></a> Rozpocząć
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -136,7 +136,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Debug.Restart|**Ctrl+Shift+F5**|
 |Debug.RunToCursor|**Ctrl+F10**|
 |Debug.SetNextStatement|**Ctrl+Shift+F10**|
-|Debug.ShowCallStackonCodeMap|**Ctrl+Shift+`**|
+|Debug.ShowCallStackonCodeMap|**Ctrl + Shift + '**|
 |Debug.ShowNextStatement|**Alt + NUM** *|
 |Debug.Start|**F5**|
 |Debug.StartWindowsPhoneApplicationAnalysis|**Alt+F1**|
@@ -160,7 +160,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Debug.Watch3|**Ctrl + Alt + W, 3**|
 |Debug.Watch4|**Ctrl + Alt + W, 4**|
 
-### <a name="debugger-context-menus"></a><a name="bkmk_debugger"></a>Menu kontekstowe debugera
+### <a name="debugger-context-menus"></a><a name="bkmk_debugger"></a> Menu kontekstowe debugera
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -168,20 +168,20 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**Alt+F9, A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**Alt+F9, S**|
 
-### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a>Centrum diagnostyki
+### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a> Centrum diagnostyki
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |DiagnosticsHub.StopCollection|**Ctrl+Alt+F2**|
 
-### <a name="edit"></a><a name="bkmk_edit"></a>Edytowania
+### <a name="edit"></a><a name="bkmk_edit"></a> Edytowania
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|-|
 |Edit.Copy|**Ctrl+C**<br /><br /> lub<br /><br /> **Ctrl+Ins**|
-|Edit.Cut|**Ctrl + X**<br /><br /> lub<br /><br /> **Shift+Delete**|
+|Edit.Cut|**Ctrl+X**<br /><br /> lub<br /><br /> **Shift+Delete**|
 |Edit.CycleClipboardRing|**Ctrl+Shift+V**<br /><br /> lub<br /><br /> **Ctrl+Shift+Ins**|
-|Edit.Delete|**Usuwanie**|
+|Edit.Delete|**Usuń**|
 |Edytuj. Duplikuj|**Ctrl + D**|
 |Edit.Find|**Ctrl+F**|
 |Edit.FindAllReferences|**Shift+F12**|
@@ -234,7 +234,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Edit.SurroundWith|**Ctrl+K, Ctrl+S**|
 |Edit.Undo|**Ctrl + Z**<br /><br /> lub<br /><br /> **Alt+Backspace**|
 
-### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a>Menu kontekstowe edytora
+### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a> Menu kontekstowe edytora
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -245,7 +245,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**Ctrl + K, Ctrl + o** (litera "O")|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**Ctrl+K, Ctrl+T**<br /><br /> lub<br /><br /> **Ctrl+K, T**|
 
-### <a name="file"></a><a name="bkmk_file"></a>Rozszerzeniem
+### <a name="file"></a><a name="bkmk_file"></a> Rozszerzeniem
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -261,7 +261,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |File.SaveSelectedItems|**Ctrl+S**|
 |File.ViewinBrowser|**Ctrl+Shift+W**|
 
-### <a name="help"></a><a name="bkmk_help"></a>Pomoc
+### <a name="help"></a><a name="bkmk_help"></a> Pomoc
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -270,13 +270,13 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Help.ViewHelp|**Ctrl+F1**|
 |Help.WindowHelp|**Shift+F1**|
 
-### <a name="load-test"></a><a name="bkmk_loadtest"></a>Test obciążenia
+### <a name="load-test"></a><a name="bkmk_loadtest"></a> Test obciążenia
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |LoadTest.JumpToCounterPane|**Ctrl+R, Q**|
 
-### <a name="other-context-menus"></a><a name="bkmk_otherContext"></a>Inne menu kontekstowe
+### <a name="other-context-menus"></a><a name="bkmk_otherContext"></a> Inne menu kontekstowe
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
@@ -294,14 +294,14 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Project.Publishselectedfiles|**Alt +;** następnie **Alt + P**|
 |Project.Replaceselectedfilesfromserver|**Alt +;** następnie **ALT + R**|
 
-### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a>Menu kontekstowe projektu i rozwiązania
+### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a> Menu kontekstowe projektu i rozwiązania
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**Alt+Strzałka w dół**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**Alt+Strzałka w górę**|
 
-### <a name="refactor"></a><a name="bkmk_refactor"></a>Refaktoryzuj
+### <a name="refactor"></a><a name="bkmk_refactor"></a> Refaktoryzuj
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -312,7 +312,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Refactor.Rename|**Ctrl+R, Ctrl+R**|
 |Refactor.ReorderParameters|**Ctrl + R, Ctrl + O** (litera "O")|
 
-### <a name="solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a>Eksplorator rozwiązań
+### <a name="solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a> Eksplorator rozwiązań
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -320,7 +320,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |SolutionExplorer.PendingChangesFilter|**Ctrl + [**, **P**<br /><br /> lub<br /><br /> **Ctrl + [**, **Ctrl + P**|
 |SolutionExplorer.SyncWithActiveDocument|**Ctrl + [**, **S**<br /><br /> lub<br /><br /> **Ctrl + [**, **Ctrl + S**|
 
-### <a name="team"></a><a name="bkmk_team"></a>Dział
+### <a name="team"></a><a name="bkmk_team"></a> Dział
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -329,7 +329,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Team.Git.GoToGitCommits|**Ctrl + 0** (zero), **Ctrl + O** (litera "O")<br /><br /> lub<br /><br /> **Ctrl+0, O**|
 |Team.TeamExplorerSearch|**CTRL + '**|
 
-### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a>Menu kontekstowe Team Foundation
+### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a> Menu kontekstowe Team Foundation
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -344,7 +344,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl + 0** (zero), **Ctrl + A**<br /><br /> lub<br /><br /> **Ctrl+0, A**|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl + 0** (zero), **Ctrl + W**<br /><br /> lub<br /><br /> **Ctrl+0, W**|
 
-### <a name="test"></a><a name="bkmk_test"></a>Badan
+### <a name="test"></a><a name="bkmk_test"></a> Badan
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -365,7 +365,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |LiveUnitTesting.OpenTab|**Ctrl + E, L**|
 |Test. CodeCoverageResults|**Ctrl+E, C**|
 
-### <a name="tools"></a><a name="bkmk_tools"></a>Narzędzi
+### <a name="tools"></a><a name="bkmk_tools"></a> Narzędzi
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -373,7 +373,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Tools.CodeSnippetsManager|**Ctrl+K, Ctrl+B**|
 |Tools.ForceGC|**Ctrl+Shift+Alt+F12, Ctrl+Shift+Alt+F12**|
 
-### <a name="view"></a><a name="bkmk_view"></a>Widokiem
+### <a name="view"></a><a name="bkmk_view"></a> Widokiem
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -394,7 +394,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |View.ErrorList|**Ctrl + \\ , E**<br /><br /> lub<br /><br /> **Ctrl + \\ , Ctrl + E**|
 |View.F#Interactive|**Ctrl+Alt+F**|
 |View.FindSymbolResults|**Ctrl+Alt+F12**|
-|View.Forward|**Alt + Strzałka w prawo** (działa inaczej w programie View. NavigateForward w edytorze tekstu)|
+|View.Forward|**Alt + Strzałka w prawo**  (działa inaczej w programie View. NavigateForward w edytorze tekstu)|
 |View.ForwardBrowseContext|**Ctrl+Shift+7**|
 |View.FullScreen|**Shift+Alt+Enter**|
 |View.NavigateBackward|**Ctrl +-**|
@@ -423,7 +423,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |View.ZoomOut|**Ctrl + Shift +,**|
 |TestExplorer.ShowTestExplorer|**Ctrl + E, T**|
 
-### <a name="window"></a><a name="bkmk_window"></a>Dział
+### <a name="window"></a><a name="bkmk_window"></a> Dział
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -454,7 +454,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Window.SolutionExplorerSearch|**Ctrl +;**|
 |Window.WindowSearch|**Alt + '**|
 
-### <a name="azure"></a><a name="bkmk_windowsazure"></a>Azure
+### <a name="azure"></a><a name="bkmk_windowsazure"></a> Azure
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -485,7 +485,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Edit.Delete|**Ctrl+Del**|
 |Edit.ExpandCollapseBaseTypeList|**Shift+Alt+B**|
 |Edit.NavigateToLollipop|**Shift+Alt+L**|
-|Edit.RemovefromDiagram|**Usuwanie**|
+|Edit.RemovefromDiagram|**Usuń**|
 |View.ViewCode|**Wejść**|
 
 ## <a name="coded-ui-test-editor"></a>Edytor kodowanego testu interfejsu użytkownika
@@ -495,7 +495,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard|**Ctrl+C**|
 |OtherContextMenus.UITestEditorContextMenu.InsertDelayBefore|**Ctrl+Alt+D**|
 |OtherContextMenus.UITestEditorContextMenu.LocateAll|**Shift+Alt+L**|
-|OtherContextMenus.UITestEditorContextMenu.LocatetheUIControl|**CTRL + SHIFT + L**|
+|OtherContextMenus.UITestEditorContextMenu.LocatetheUIControl|**Ctrl+Shift+L**|
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**Ctrl+Alt+C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**Ctrl+Shift+T**|
 
@@ -542,10 +542,10 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |--------------| - |
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**Insert**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**Mam**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**Wyjścia**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**Ctrl+Shift+K**<br /><br /> lub<br /><br /> **Ctrl+E, C**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Usuwanie**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Usuń**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
 ## <a name="graphics-diagnostics"></a>Diagnostyka grafiki
@@ -576,7 +576,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Edit.MoveControlUp|**Ctrl+Strzałka w górę**|
 |Format.Bold|**Ctrl+B**|
 |Format.ConverttoHyperlink|**Ctrl+L**|
-|Format.InsertBookmark|**CTRL + SHIFT + L**|
+|Format.InsertBookmark|**Ctrl+Shift+L**|
 |Format.Italic|**CTRL + I**|
 |Format.Underline|**Ctrl+U**|
 |Project.AddContentPage|**Ctrl+M, Ctrl+C**|
@@ -612,7 +612,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |Edit.EditCell|**F2**|
-|Edit.Remove|**Usuwanie**|
+|Edit.Remove|**Usuń**|
 |Edit.RemoveRow|**Ctrl+Delete**|
 |Edit.SelectionCancel|**Escape**|
 |Resources.Audio|**Ctrl+4**|
@@ -637,7 +637,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |SQL.SSDTSchemaCompareCompare|**Shift+Alt+C**|
 |SQL.SSDTSchemaCompareGenerateScript|**Shift+Alt+G**|
 |SQL.SSDTSchemaCompareNextChange|**Shift + Alt +.**|
-|SQL.SSDTSchemaComparePreviousChange|**Shift+Alt+,**|
+|SQL.SSDTSchemaComparePreviousChange|**Shift + Alt +,**|
 |SQL.SSDTSchemaCompareStop|**Alt+Break**|
 |SQL.SSDTSchemaCompareWriteUpdates|**Shift+Alt+U**|
 
@@ -767,7 +767,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
-|Edit.Delete|**Usuwanie**|
+|Edit.Delete|**Usuń**|
 |File.Rename|**F2**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**Alt+Home**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**Alt+Strzałka w dół**|
@@ -840,7 +840,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 | Edytuj. InsertNextMatchingCaret | **Shift + Alt +.** |
 | Edit.InsertTab | **Tabulator** |
 | Edit.LineCut | **Ctrl+L** |
-| Edit.LineDelete | **CTRL + SHIFT + L** |
+| Edit.LineDelete | **Ctrl+Shift+L** |
 | Edit.LineDown | **Strzałka w dół** |
 | Edit.LineDownExtend | **Shift+Strzałka w dół** |
 | Edit.LineDownExtendColumn | **Shift+Alt+Strzałka w dół** |
@@ -1149,7 +1149,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Oś czasu. Hide (tylko Blend)|**CTRL + H**|
 |Oś czasu. Lock (tylko Blend)|**Ctrl+L**|
 |Oś czasu. Show (tylko Blend)|**Ctrl+Shift+H**|
-|Oś czasu. Odblokuj (tylko Blend)|**CTRL + SHIFT + L**|
+|Oś czasu. Odblokuj (tylko Blend)|**Ctrl+Shift+L**|
 |View.EdgeLeftMoveLeft|**Ctrl + Shift +,**|
 |View.EdgeLeftMoveRight|**Ctrl + Shift +.**|
 |View.EdgeRightMoveLeft|**Ctrl+Shift+Alt+,**|
@@ -1171,11 +1171,11 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |GraphView.LefttoRight|**Alt+Strzałka w prawo**|
 |GraphView.RighttoLeft|**Alt+Strzałka w lewo**|
 |GraphView.ToptoBottom|**Alt+Strzałka w dół**|
-|OtherContextMenus.GraphView.RemovefromWorkspace|**Usuwanie**|
+|OtherContextMenus.GraphView.RemovefromWorkspace|**Usuń**|
 |XsdDesigner.ShowContentModelView|**Ctrl + 2**|
 |XsdDesigner.ShowGraphView|**Ctrl + 3**|
 |XsdDesigner.ShowStartView|**Ctrl + 1**|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Visual Studio — Polecenia](reference/visual-studio-commands.md)

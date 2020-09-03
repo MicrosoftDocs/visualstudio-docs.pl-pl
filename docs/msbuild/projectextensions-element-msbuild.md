@@ -1,5 +1,5 @@
 ---
-title: Element wyeksbuzji projektu (MSBuild) | Dokumenty firmy Microsoft
+title: ProjectExtensions — — element (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94f2d88aa19bf01ebe6f25c7d80772c812abcc59
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632969"
 ---
-# <a name="projectextensions-element-msbuild"></a>Element ProjectExtensions (MSBuild)
+# <a name="projectextensions-element-msbuild"></a>ProjectExtensions —, element (MSBuild)
 
-Umożliwia msbuild plików projektu zawierają informacje inne niż MSBuild. Wszystko wewnątrz `ProjectExtensions` elementu zostaną zignorowane przez MSBuild.
+Zezwala na pliki projektu MSBuild zawierające informacje inne niż MSBuild. Wszystkie elementy wewnątrz `ProjectExtensions` elementu zostaną zignorowane przez MSBuild.
 
- \<> \<> projektu> projectextensions
+ \<Project> \<ProjectExtensions>
 
 ## <a name="syntax"></a>Składnia
 
@@ -59,11 +59,11 @@ Umożliwia msbuild plików projektu zawierają informacje inne niż MSBuild. Wsz
 
 ## <a name="remarks"></a>Uwagi
 
- Tylko `ProjectExtensions` jeden element może być używany w projekcie MSBuild.
+ `ProjectExtensions`W projekcie MSBuild może być użyty tylko jeden element.
 
 ## <a name="example"></a>Przykład
 
- Poniższy przykład kodu pokazuje informacje ze zintegrowanego `ProjectExtensions` środowiska programistycznego przechowywane w elemencie.
+ Poniższy przykład kodu przedstawia informacje z zintegrowanego środowiska programistycznego, które są przechowywane w `ProjectExtensions` elemencie.
 
 ```xml
 <ProjectExtensions>
@@ -80,4 +80,4 @@ Umożliwia msbuild plików projektu zawierają informacje inne niż MSBuild. Wsz
 ## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
-- [Msbuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)

@@ -12,7 +12,7 @@
   items:
     - name: Pierwsze spojrzenie na debugera
       href: debugger-feature-tour.md
-    - name: 'Debugowanie aplikacji w języku C# lub Visual Basic'
+    - name: Debugowanie aplikacji w języku C# lub Visual Basic
       href: quickstart-debug-with-managed.md
     - name: Debugowanie aplikacji w języku C++
       href: quickstart-debug-with-cplusplus.md
@@ -30,7 +30,7 @@
       href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
     - name: Debugowanie działającej aplikacji platformy Azure
       href: debug-live-azure-applications.md
-    - name: 'Debugowanie kodu w językach C# i C++'
+    - name: Debugowanie kodu w językach C# i C++
       href: how-to-debug-managed-and-native-code.md
     - name: Sprawdzanie poprzednich stanów aplikacji
       href: view-historical-application-state.md
@@ -46,7 +46,7 @@
           href: using-breakpoints.md
         - name: Rozwiązywanie problemów z punktami przerwania
           href: troubleshooting-breakpoints.md
-        - name: 'Rozwiązywanie problemów z punktami przerwania danych C#'
+        - name: Rozwiązywanie problemów z punktami przerwania danych C#
           href: troubleshoot-data-breakpoint-errors.md
     - name: Inspekcja danych
       items:
@@ -68,7 +68,7 @@
                   href: format-specifiers-in-cpp.md
                 - name: Operator kontekstu (C++)
                   href: context-operator-cpp.md
-                - name: 'Specyfikatory formatu w języku C#'
+                - name: Specyfikatory formatu w języku C#
                   href: format-specifiers-in-csharp.md
                 - name: Pseudozmienne
                   href: pseudovariables.md
@@ -118,9 +118,9 @@
               href: edit-and-continue-visual-cpp.md
             - name: Obsługiwane zmiany kodu (C++)
               href: supported-code-changes-cpp.md
-        - name: 'Edytuj i kontynuuj (Visual C#)'
+        - name: Edytuj i kontynuuj (Visual C#)
           items:
-            - name: 'Funkcja Edytuj i kontynuuj dla języka C#'
+            - name: Funkcja Edytuj i kontynuuj dla języka C#
               href: edit-and-continue-visual-csharp.md
             - name: 'Korzystanie z funkcji Edytuj i kontynuuj [C#]'
               href: how-to-use-edit-and-continue-csharp.md
@@ -138,7 +138,7 @@
               href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: Rozwiązywanie problemów z ponownym ładowaniem przy aktywnym kodzie XAML
               href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
-        - name: 'Funkcja Edytuj i kontynuuj nieobsługiwana w przypadku języka F#'
+        - name: Funkcja Edytuj i kontynuuj nieobsługiwana w przypadku języka F#
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Rejestrowanie w oknie danych wyjściowych
       href: using-tracepoints.md
@@ -210,7 +210,7 @@
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Ustawienia stron właściwości dla projektów internetowych
                   href: property-pages-settings-for-web-projects.md
-                - name: 'Ustawienia projektu dla konfiguracji debugowania w języku C#'
+                - name: Ustawienia projektu dla konfiguracji debugowania w języku C#
                   href: project-settings-for-csharp-debug-configurations.md
                 - name: Ustawienia projektu dla konfiguracji debugowania w języku Visual Basic
                   href: project-settings-for-a-visual-basic-debug-configuration.md
@@ -282,7 +282,7 @@
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
         - name: Platforma ASP.NET Core debugowania zdalnego na platformie Azure
           href: remote-debugging-azure.md
-        - name: 'Zdalne debugowanie projektu w języku C# lub Visual Basic'
+        - name: Zdalne debugowanie projektu w języku C# lub Visual Basic
           href: remote-debugging-csharp.md
         - name: Debugowanie zdalne projektu C++
           href: remote-debugging-cpp.md
@@ -512,7 +512,7 @@
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: Wyświetlanie informacji o śledzeniu platformy WPF
                   href: how-to-display-wpf-trace-information.md
-            - name: 'Debugowanie języka F#'
+            - name: Debugowanie języka F#
               href: debugging-f-hash.md
         - name: Kod C/C++
           items:

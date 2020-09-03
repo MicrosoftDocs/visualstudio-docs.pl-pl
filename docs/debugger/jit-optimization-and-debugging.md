@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae11860aaa64448cd4d23b5602cf4c2da1575ce3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916220"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optymalizacja i debugowanie JIT
@@ -30,14 +30,14 @@ Jeśli próbujesz debugować kod, łatwiej jest, gdy ten kod **nie** jest zoptym
 > Aby uzyskać więcej informacji na temat debugowania JIT (just in Time), zapoznaj się z [tą dokumentacją](../debugger/debug-using-the-just-in-time-debugger.md).
 
 ## <a name="how-optimizations-work-in-net"></a>Jak działa Optymalizacja w środowisku .NET 
-Zwykle konfiguracja kompilacji wydania tworzy zoptymalizowany kod, a konfiguracja kompilacji debugowania nie. Właściwość programu MSBuild `Optimize` określa, czy kompilator ma być powiadamiany o optymalizacji kodu.
+Zwykle konfiguracja kompilacji wydania tworzy zoptymalizowany kod, a konfiguracja kompilacji debugowania nie. `Optimize`Właściwość programu MSBuild określa, czy kompilator ma być powiadamiany o optymalizacji kodu.
 
-W ekosystemie .NET kod jest przełączany ze źródła do instrukcji procesora w procesie dwuetapowym: najpierw C# kompilator konwertuje wpisany tekst na pośredni formularz binarny o nazwie MSIL i zapisuje pliki MSIL do. dll. Później środowisko uruchomieniowe platformy .NET konwertuje te MSIL na instrukcje procesora CPU. Obie kroki można zoptymalizować do pewnego stopnia, ale drugi krok wykonywany przez środowisko uruchomieniowe platformy .NET wykonuje bardziej znaczące optymalizacje.
+W ekosystemie .NET kod jest przełączany ze źródła do instrukcji procesora w procesie dwuetapowym: najpierw kompilator języka C# konwertuje wpisany tekst na pośredni formularz binarny o nazwie MSIL i zapisuje pliki MSIL do. dll. Później środowisko uruchomieniowe platformy .NET konwertuje te MSIL na instrukcje procesora CPU. Obie kroki można zoptymalizować do pewnego stopnia, ale drugi krok wykonywany przez środowisko uruchomieniowe platformy .NET wykonuje bardziej znaczące optymalizacje.
 
 ## <a name="the-suppress-jit-optimization-on-module-load-managed-only-option"></a>Opcja "Pomiń optymalizację JIT podczas ładowania modułu (tylko zarządzany)"
 Debuger uwidacznia opcję, która ma wpływ na to, co się dzieje, gdy biblioteka DLL, która jest kompilowana z włączonymi optymalizacjami, jest ładowana w procesie docelowym. Jeśli ta opcja nie jest zaznaczona (stan domyślny), gdy środowisko uruchomieniowe platformy .NET kompiluje kod MSIL w kodzie procesora, pozostawia optymalizacje włączone. Jeśli opcja jest zaznaczona, debuger żąda wyłączenia optymalizacji.
 
-Aby znaleźć opcję **Pomiń optymalizację JIT podczas ładowania modułu (tylko zarządzany)** , wybierz pozycję **Narzędzia** > **Opcje**, a następnie wybierz stronę **Ogólne** w węźle **debugowanie** .
+Aby znaleźć opcję **Pomiń optymalizację JIT podczas ładowania modułu (tylko zarządzany)** , wybierz pozycję **Narzędzia**  >  **Opcje**, a następnie wybierz stronę **Ogólne** w węźle **debugowanie** .
 
 ![Pomiń optymalizację JIT](../debugger/media/suppress-jit-tool-options.png "Pomiń optymalizację JIT")
 
@@ -53,7 +53,7 @@ Jeśli interesuje Cię tylko Debugowanie kodu, który tworzysz lokalnie, najleps
 Istnieją dwie sytuacje, w których ta opcja **nie** będzie działała:
 
 1. W sytuacjach, gdy dołączysz debuger do już uruchomionego procesu, ta opcja nie będzie miała wpływu na moduły, które zostały już załadowane w momencie dołączenia debugera.
-2. Ta opcja nie ma wpływu na biblioteki DLL, które zostały wstępnie skompilowane (a. k. a ngen'ed) do kodu natywnego. Można jednak wyłączyć użycie wstępnie skompilowanego kodu, uruchamiając proces ze zmienną środowiskową **"COMPlus_ReadyToRun"** ustawioną na **wartość "0"** . Poinformuje środowisko uruchomieniowe platformy .NET Core, aby wyłączyć korzystanie z wstępnie skompilowanych obrazów, wymuszając środowisko uruchomieniowe do kompilowania kodu struktury. 
+2. Ta opcja nie ma wpływu na biblioteki DLL, które zostały wstępnie skompilowane (a. k. a ngen'ed) do kodu natywnego. Można jednak wyłączyć użycie wstępnie skompilowanego kodu, uruchamiając proces ze zmienną środowiskową **"COMPlus_ReadyToRun"** ustawioną na **wartość "0"**. Poinformuje środowisko uruchomieniowe platformy .NET Core, aby wyłączyć korzystanie z wstępnie skompilowanych obrazów, wymuszając środowisko uruchomieniowe do kompilowania kodu struktury. 
 
     > [!IMPORTANT]
     > Jeśli celem jest .NET Framework lub starsza wersja programu .NET Core (2. x lub niższa), należy również dodać zmienną środowiskową "COMPlus_ZapDisable" i ustawić ją na wartość "1".
@@ -65,9 +65,9 @@ Istnieją dwie sytuacje, w których ta opcja **nie** będzie działała:
 
     ![Ustaw zmienną środowiskową COMPlus_ReadyToRun](../debugger/media/environment-variables-debug-menu.png "Ustaw zmienną środowiskową COMPlus_ReadyToRun")
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Jak debugować Źródło struktury dotnet](../debugger/how-to-debug-dotnet-framework-source.md)
-- [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
+- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
 - [Nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md)
-- [Dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-- [Proces zarządzanego wykonania](/dotnet/standard/managed-execution-process)
+- [Dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Zarządzany proces wykonywania](/dotnet/standard/managed-execution-process)

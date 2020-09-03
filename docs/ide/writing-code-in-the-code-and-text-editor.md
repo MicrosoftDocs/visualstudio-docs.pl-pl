@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cf1cdbebab5d59091454e340b567eef7430efd3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532629"
 ---
 # <a name="features-of-the-code-editor"></a>Funkcje edytora kodu
@@ -32,7 +32,7 @@ Różne języki programu Visual Studio oferują różne zestawy funkcji, a w nie
 
 ## <a name="editor-features"></a>Funkcje edytora
 
-|Cecha|Opis|
+|Cechy|Opis|
 |-|-|
 |Kolorowanie składni|Niektóre elementy składni plików Code i Markup są różne w różny sposób, aby je odróżnić. Na przykład słowa kluczowe (na przykład `using` w języku C# i `Imports` w Visual Basic) są jednym kolorem, ale typy (takie jak `Console` i `Uri` ) są kolejnymi kolorami. Inne elementy składni są również kolorowe, takie jak literały ciągów i komentarze. C++ używa koloru do rozróżniania typów, wyliczeń i makr, między innymi tokenami.<br /><br /> Możesz zobaczyć domyślny kolor dla każdego typu i zmienić kolor dla każdego określonego elementu składni w oknie [dialogowym czcionki i kolory, środowisko, opcje](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), które można otworzyć z menu **Narzędzia** .|
 |Znaczniki błędów i ostrzeżeń|Podczas dodawania kodu i kompilowania rozwiązania, mogą pojawić się (a) różne kolorowe faliste podkreślenia (znane jako zygzaki) lub (b) żarówki pojawiające się w kodzie. W kolorze czerwonym są błędy składniowe, niebieskie oznacza błędy kompilatora, czerwone uwagi, a purpurowe oznaczają inne typy błędów. [Szybkie akcje](../ide/quick-actions.md) sugerują poprawki dotyczące problemów i ułatwiają stosowanie poprawki.<br /><br /> Dla każdego błędu i ostrzeżenia można zobaczyć kolor domyślny w oknie **Tools**  >  dialogowym**Opcje**narzędzi  >  **Environment**  >  **czcionki i kolory** środowiska. Poszukaj **błędu składniowy**, **błędu kompilatora**, **ostrzeżenia**i **innego błędu**.|
@@ -50,7 +50,7 @@ Różne języki programu Visual Studio oferują różne zestawy funkcji, a w nie
 
 Kilka zaawansowanych funkcji można znaleźć w menu **Edytuj**  >  **Zaawansowane** na pasku narzędzi. Nie wszystkie te funkcje są dostępne dla wszystkich typów plików kodu.
 
-|Cecha|Opis|
+|Cechy|Opis|
 |-|-|
 |Formatuj dokument|Ustawia właściwe wcięcia linii kodu i przenosi nawiasy klamrowe w celu oddzielenia wierszy w dokumencie.|
 |Formatowanie zaznaczenia|Ustawia właściwe wcięcia linii kodu i przenosi nawiasy klamrowe w celu oddzielenia wierszy w zaznaczeniu.|

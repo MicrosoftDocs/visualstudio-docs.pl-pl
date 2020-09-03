@@ -22,37 +22,37 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916450"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Błędy i ostrzeżenia debugowania — Okna dialogowe
 Poniżej znajdują się okna dialogowe błędy i ostrzeżenia, które mogą wystąpić podczas debugowania aplikacji.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Błąd potwierdzenia, okno dialogowe](../debugger/assertion-failed-dialog-box.md)
+ [Błędy potwierdzenia — Okno dialogowe](../debugger/assertion-failed-dialog-box.md)
 
- [Nie można zmienić wartości, okno dialogowe](../debugger/cannot-change-value-dialog-box.md)
+ [Nie można zmienić wartości — okno dialogowe](../debugger/cannot-change-value-dialog-box.md)
 
  [Debuger nie może wyświetlić kodu źródłowego lub dezasemblacji](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
  
- [Za mało pamięci dla usług debugera](../debugger/error-debugger-services-no-memory.md)
+ [Za mało pamięci w usługach debugera](../debugger/error-debugger-services-no-memory.md)
 
- [Plik wykonywalny sesji debugowania, okno dialogowe](../debugger/executable-for-debugging-session-dialog-box.md)
+ [Wykonywalny dla sesji debugowania — Okno dialogowe](../debugger/executable-for-debugging-session-dialog-box.md)
 
  [Nie można zastosować zmiany kodu — okno dialogowe](../debugger/edit-and-continue-dialog-box-cpp.md)
 
- [Debuger programu Microsoft Visual Studio (zgłoszenie wyjątku), okno dialogowe](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)
+ [Microsoft Visual Studio Debugger (wystąpienie wyjątku) ― okno dialogowe](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)
 
  [Brak dostępnego kodu źródłowego dla bieżącej lokalizacji — okno dialogowe](../debugger/no-source-available.md)
 
  [Okno dialogowe bez informacji symbolicznych](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)
 
- [Rozstrzyganie niejednoznaczności, okno dialogowe](../debugger/resolve-ambiguity-dialog-box.md)
+ [Rozwiązywania niejednoznaczności — Okno dialogowe](../debugger/resolve-ambiguity-dialog-box.md)
 
- [Ostrzeżenie o nieodświeżonym kodzie, okno dialogowe](../debugger/stale-code-warning-dialog-box.md)
+ [Ostrzeżenie o kodzie nieodświeżonym — Okno dialogowe](../debugger/stale-code-warning-dialog-box.md)
 
  [Nie można nawiązać połączenia z maszyną](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 
@@ -67,6 +67,6 @@ Poniżej znajdują się okna dialogowe błędy i ostrzeżenia, które mogą wyst
 
  [Rozwiązywanie problemów z konfiguracją debugowania SQL](/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
- [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)
+ [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)
 
  [Zabezpieczenia debugera](../debugger/debugger-security.md)
