@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dcdaf083462b75485449cae05894681e2bb5c900
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738378"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Narzędzia do debugowania wątków i procesów w programie Visual Studio
@@ -35,16 +35,16 @@ ms.locfileid: "72738378"
 
  Doskonałe przetwarzanie równoległe nie zawsze jest możliwe. Wątki czasami muszą być zsynchronizowane. Jeden wątek może być oczekiwał na wynik z innego wątku lub jeden wątek może potrzebować wyłącznego dostępu do zasobu, który jest używany przez inny wątek. Problemy z synchronizacją to typowa przyczyna błędów w aplikacjach wielowątkowych. Czasami wątki mogą kończyć się w trakcie oczekiwania na zasoby, które nigdy nie staną się dostępne. W wyniku tego powstaje warunek o nazwie *zakleszczenie*.
 
- Debuger [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zapewnia zaawansowane, ale łatwe w użyciu narzędzia do debugowania wątków i procesów.
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Debuger zapewnia zaawansowane, ale łatwe w użyciu narzędzia do debugowania wątków i procesów.
 
 ## <a name="tools-and-features"></a>Narzędzia i funkcje
-Narzędzia potrzebne do użycia w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zależą od typu kodu, który próbujesz debugować:
+Narzędzia, których należy użyć w programie, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zależą od typu kodu, który próbujesz debugować:
 
 - W przypadku procesów podstawowe narzędzia to okno dialogowe **Dołącz do procesu** , okno **procesy** i pasek narzędzi **Lokalizacja debugowania** .
 
 - W przypadku wątków podstawowe narzędzia do debugowania wątków to okno **wątki** , znaczniki wątków w oknach źródłowych, okno **stosów równoległych** , okno **równoległego czujki** i pasek narzędzi **Lokalizacja debugowania** .
 
-- W przypadku kodu, który używa <xref:System.Threading.Tasks.Task> w [bibliotece zadań równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl), [środowisko uruchomieniowe współbieżności](/cpp/parallel/concrt/concurrency-runtime/) (kod natywny), podstawowe narzędzia do debugowania aplikacji wielowątkowych są oknem **stosów równoległych** , **równoległe czujka** okno i **zadania** (okno **zadania** obsługuje również obiekt Promise języka JavaScript).
+- W przypadku kodu, który używa <xref:System.Threading.Tasks.Task> [biblioteki w bibliotece zadań równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl), [środowisko uruchomieniowe współbieżności](/cpp/parallel/concrt/concurrency-runtime/) (kod natywny), podstawowe narzędzia do debugowania aplikacji wielowątkowych są oknem **stosów równoległych** , oknem **czujki równoległej** i oknem **zadania** (okno **zadania** obsługuje również obiekt Promise języka JavaScript).
 
 - W przypadku debugowania wątków w procesorze GPU narzędzie podstawowe jest **wątkiem GPU** w systemie Windows.
 
@@ -59,11 +59,11 @@ Narzędzia potrzebne do użycia w [!INCLUDE[vsprvs](../code-quality/includes/vsp
 |Pasek narzędzi **lokalizacji debugowania**|— Bieżący proces<br />-Wstrzymywanie aplikacji<br />-Wznów działanie aplikacji<br />— Wstrzymywanie i zamykanie aplikacji<br />-Bieżący wątek<br />-Przełącz bieżący stan flagi wątku<br />-Pokaż tylko Oflagowane wątki<br />-Pokaż tylko bieżący proces<br />— Bieżąca Ramka stosu|-Przełącz do innego procesu<br />-Wstrzymywanie, wznawianie lub zamykanie aplikacji<br />-Przełącz do innego wątku w bieżącym procesie<br />-Przełącz do innej ramki stosu w bieżącym wątku<br />-Oflaguj lub Usuń flagę bieżących wątków<br />-Pokaż tylko Oflagowane wątki<br />-Pokaż tylko bieżący proces|
 |Okno **stosów równoległych**|-Stosy wywołań dla wielu wątków w jednym oknie.<br />— Aktywna Ramka stosu dla każdego wątku.<br />-Wywołania i wywoływane dla dowolnej metody.|-Filtruj określone wątki<br />-Przełącz do widoku zadań<br />-Flagowanie lub usuwanie flagi wątku<br />-Zoom|
 |Okno **czujki równoległej**|— Kolumna flagi, w której można oznaczyć wątek, do którego chcemy zwrócić szczególną uwagę.<br />— Kolumna Frame, w której Strzałka wskazuje wybraną ramkę.<br />-Konfigurowalna kolumna, która może wyświetlać maszynę, proces, kafelek, zadanie i wątek.|-Flagowanie lub usuwanie flagi wątku<br />-Wyświetla tylko Oflagowane wątki<br />-Przełącz ramki<br />-Sortuj kolumnę<br />-Grupuj wątki<br />-Zamrażanie lub odblokowywanie wątków<br />— Wyeksportuj dane w okno wyrażeń kontrolnych równoległym|
-|Okno **zadań**|— Wyświetl informacje o <xref:System.Threading.Tasks.Task> obiektów, w tym o IDENTYFIKATORze zadania, stanie zadania (zaplanowane, uruchomione, oczekujące, zakleszczenie) i który wątek jest przypisany do zadania.<br />— Bieżąca lokalizacja w stosie wywołań.<br />-Delegat przeszedł do zadania w czasie tworzenia|-Przełącz do bieżącego zadania<br />-Oflaguj lub Usuń flagę zadania<br />-Blokowanie lub odblokowywanie zadania|
+|Okno **zadań**|— Umożliwia wyświetlenie informacji o <xref:System.Threading.Tasks.Task> obiektach, w tym o identyfikatorze zadania, stanie zadania (zaplanowane, uruchomione, oczekujące, zakleszczenie) i który wątek jest przypisany do zadania.<br />— Bieżąca lokalizacja w stosie wywołań.<br />-Delegat przeszedł do zadania w czasie tworzenia|-Przełącz do bieżącego zadania<br />-Oflaguj lub Usuń flagę zadania<br />-Blokowanie lub odblokowywanie zadania|
 |Okno **wątków GPU**|— Kolumna flagi, w której można oznaczyć wątek, do którego chcemy zwrócić szczególną uwagę.<br />— Bieżąca kolumna wątku, w której żółta strzałka wskazuje bieżący wątek.<br />— Kolumna **Liczba wątków** , która wyświetla liczbę wątków w tej samej lokalizacji.<br />— Kolumna **wiersz** , która wyświetla wiersz kodu, w którym znajduje się każda grupa wątków.<br />— Kolumna **Address** , w której jest wyświetlany adres instrukcji, w której znajduje się każda grupa wątków.<br />— Kolumna **Location** , która jest lokalizacją w kodzie adresu.<br />— Kolumna **stan** , która pokazuje, czy wątek jest aktywny, czy zablokowany.<br />-Kolumna **kafelka** , która pokazuje indeks kafelków dla wątków w wierszu.|-Zmień na inny wątek<br />-Wyświetlanie określonego kafelka i wątku<br />-Wyświetlanie lub ukrywanie kolumny<br />-Sortuj według kolumny<br />-Grupuj wątki<br />-Zamrażanie lub odblokowywanie wątków<br />-Flagowanie lub usuwanie flagi wątku<br />-Wyświetla tylko Oflagowane wątki|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Debuguj wielowątkowe aplikacje](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Debugowanie kodu GPU](../debugger/debugging-gpu-code.md)

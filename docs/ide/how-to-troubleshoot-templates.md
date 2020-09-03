@@ -8,21 +8,21 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591388"
 ---
-# <a name="how-to-troubleshoot-templates"></a>Jak: Rozwiązywanie problemów z szablonami
+# <a name="how-to-troubleshoot-templates"></a>Instrukcje: Rozwiązywanie problemów z szablonami
 
-Jeśli szablon nie można załadować w środowisku programistycznym, istnieje kilka sposobów, aby zlokalizować problem.
+Jeśli szablon nie zostanie załadowany w środowisku deweloperskim, istnieje kilka sposobów zlokalizowania problemu.
 
-## <a name="validate-the-vstemplate-file"></a>Sprawdzanie poprawności pliku vstemplate
+## <a name="validate-the-vstemplate-file"></a>Sprawdź poprawność pliku vstemplate
 
 ::: moniker range="vs-2017"
 
-Jeśli plik *vstemplate* w szablonie nie jest zgodny ze schematem szablonu programu Visual Studio, szablon może nie być wyświetlany w oknie dialogowym **Nowy projekt.**
+Jeśli plik *vstemplate* w szablonie nie jest zgodny ze schematem szablonu programu Visual Studio, szablon może nie pojawić się w oknie dialogowym **Nowy projekt** .
 
 ::: moniker-end
 
@@ -34,34 +34,34 @@ Jeśli plik *vstemplate* w szablonie nie jest zgodny ze schematem szablonu progr
 
 ### <a name="to-validate-the-vstemplate-file"></a>Aby sprawdzić poprawność pliku vstemplate
 
-1. Znajdź plik *zip* zawierający szablon.
+1. Znajdź plik *zip* , który zawiera szablon.
 
-1. Wyodrębnij plik *.zip.*
+1. Wyodrębnij plik *zip* .
 
-1. W menu **Plik** w programie Visual Studio wybierz polecenie **Otwórz** > **plik**.
+1. W menu **plik** w programie Visual Studio wybierz polecenie **Otwórz**  >  **plik**.
 
-1. Wybierz plik *vstemplate* dla szablonu i wybierz pozycję **Otwórz**.
+1. Wybierz plik *vstemplate* szablonu i wybierz polecenie **Otwórz**.
 
-1. Sprawdź, czy kod XML pliku *vstemplate* jest zgodny ze schematem szablonu. Aby uzyskać więcej informacji na temat schematu *vstemplate,* zobacz [Odwołanie do schematu szablonu](../extensibility/visual-studio-template-schema-reference.md).
+1. Sprawdź, czy plik XML pliku *vstemplate* jest zgodny ze schematem szablonu. Aby uzyskać więcej informacji na temat schematu *vstemplate* , zobacz [Dokumentacja schematu szablonu](../extensibility/visual-studio-template-schema-reference.md).
 
     > [!NOTE]
-    > Aby uzyskać obsługę technologii IntelliSense podczas tworzenia pliku *vstemplate,* dodaj `xmlns` atrybut do `VSTemplate` elementu i przypisz mu wartość `http://schemas.microsoft.com/developer/vstemplate/2005`.
+    > Aby uzyskać pomoc techniczną IntelliSense podczas tworzenia pliku *vstemplate* , Dodaj `xmlns` atrybut do `VSTemplate` elementu i przypisz mu wartość `http://schemas.microsoft.com/developer/vstemplate/2005` .
 
-1. Zapisz i zamknij plik *vstemplate.*
+1. Zapisz i zamknij plik *vstemplate* .
 
-1. Wybierz pliki zawarte w szablonie, kliknij prawym przyciskiem myszy i wybierz polecenie **Wyślij do** > **folderu Skompresowanego (spakowane).** Wybrane pliki zostaną skompresowane do pliku *zip.*
+1. Wybierz pliki dołączone do szablonu, kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Wyślij do**  >  **folderu skompresowanego (spakowanego)**. Wybrane pliki są kompresowane do pliku *zip* .
 
-1. Umieść nowy plik *zip* w tym samym katalogu co stary plik *zip.*
+1. Umieść nowy plik *zip* w tym samym katalogu, w którym znajduje się stary plik *. zip* .
 
-1. Usuń wyodrębnione pliki szablonów i stary plik *.zip* szablonu.
+1. Usuń wyodrębnione pliki szablonów i stary plik template *. zip* .
 
 ## <a name="enable-diagnostic-logging"></a>Włączanie rejestrowania diagnostycznego
 
-Rejestrowanie diagnostyczne do odnajdowania szablonów można włączyć, wykonując czynności opisane w programie [Rozwiązywanie problemów z odnajdowaniem szablonów (rozszerzalność).](../extensibility/troubleshooting-template-discovery.md)
+Rejestrowanie diagnostyczne można włączyć dla odnajdywania szablonów, wykonując czynności opisane w temacie [Rozwiązywanie problemów z odnajdywaniem szablonów (rozszerzalnością)](../extensibility/troubleshooting-template-discovery.md).
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Rozwiązywanie problemów z odnajdywaniam szablonów (rozszerzalność)](../extensibility/troubleshooting-template-discovery.md)
+- [Rozwiązywanie problemów z odnajdywaniem szablonów (rozszerzalność)](../extensibility/troubleshooting-template-discovery.md)
 - [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Odwołanie do schematu szablonu](../extensibility/visual-studio-template-schema-reference.md)
+- [Dokumentacja schematu szablonu](../extensibility/visual-studio-template-schema-reference.md)

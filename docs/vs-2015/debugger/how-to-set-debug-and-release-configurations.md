@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Ustaw wartość Debug i Release konfiguracje | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Ustawianie konfiguracji debugowania i wydania | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -36,39 +36,39 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4984355c12a92529a943fe6778740ac2d7f522f8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703636"
 ---
-# <a name="how-to-set-debug-and-release-configurations"></a>Instrukcje: Ustaw wartość Debug i Release konfiguracji
+# <a name="how-to-set-debug-and-release-configurations"></a>Porady: ustawienia konfiguracji Debug i Release
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Projektów programu Visual Studio mają oddzielnych wersji i konfiguracji programu do debugowania. Jak sugerują nazwy kompilujesz wersję debugera do debugowania i wersję zwolnienia do ostatecznej dystrybucji zwolnienia.  
+Projekty programu Visual Studio mają osobne konfiguracje wersji i debugowania dla Twojego programu. Jak nazywają się nazwami, można skompilować wersję debugowania do debugowania i wersję wydania dla ostatecznej dystrybucji wersji.  
   
- Konfiguracja debugowania programu została skompilowana z informacji pełnego symbolicznego debugowania i bez optymalizacji. Optymalizacja komplikuje debugowanie, ponieważ relacja między kodem źródłowym i wygenerowanymi instrukcjami jest bardziej złożona.  
+ Konfiguracja debugowania programu jest skompilowana z pełnymi symbolicznymi informacjami o debugowaniu i bez optymalizacji. Optymalizacja komplikuje debugowanie, ponieważ relacja między kodem źródłowym i wygenerowanymi instrukcjami jest bardziej skomplikowana.  
   
- Konfiguracja wydania programu nie zawiera żadnych informacji symbolicznego debugowania i jest w pełni zoptymalizowana. Debugowanie informacje mogą być generowane w plikach PDB, w zależności od opcji kompilatora, które są używane. Tworzenie plików PDB może być bardzo przydatne, jeśli później trzeba debugować swoje wersje.  
+ Konfiguracja wydania programu nie zawiera żadnych symbolicznych informacji o debugowaniu i jest w pełni zoptymalizowana. Informacje debugowania można generować w plikach PDB, w zależności od używanych opcji kompilatora. Tworzenie plików PDB może być bardzo przydatne w przypadku późniejszej debugowania wersji wydania.  
   
- Aby uzyskać więcej informacji o konfiguracjach kompilacji, zobacz [ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md).  
+ Aby uzyskać więcej informacji o konfiguracjach kompilacji, zobacz [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md).  
   
- Możesz zmienić konfigurację kompilacji z **kompilacji** menu na pasku narzędzi lub na stronach właściwości projektu. Strony właściwości projektu są specyficzne dla języka. Poniższa procedura pokazuje, jak zmienić konfigurację kompilacji w menu i paska narzędzi. Aby uzyskać więcej informacji o tym, jak zmienić konfigurację kompilacji w projektach w różnych językach, zobacz sekcję Tematy pokrewne poniżej.  
+ Konfigurację kompilacji można zmienić z menu **kompilacja** , na pasku narzędzi lub na stronach właściwości projektu. Strony właściwości projektu są specyficzne dla języka. W poniższej procedurze pokazano, jak zmienić konfigurację kompilacji z menu i paska narzędzi. Aby uzyskać więcej informacji na temat zmiany konfiguracji kompilacji w projektach w różnych językach, zobacz sekcję Tematy pokrewne poniżej.  
   
 ### <a name="to-change-the-build-configuration"></a>Aby zmienić konfigurację kompilacji  
   
-1. W menu kompilacja: kliknij **kompilacji / programu Configuration Manager**, a następnie wybierz **debugowania** lub **wersji**.  
+1. W menu Kompilacja kliknij pozycję **kompilacja/Configuration Manager**, a następnie wybierz pozycję **Debuguj** lub **Zwolnij**.  
   
-2. Na pasku narzędzi wybierz **debugowania** lub **wersji** z **konfiguracje rozwiązania** pola listy.  
+2. Na pasku narzędzi wybierz opcję **Debuguj** lub **Zwolnij** w polu listy **konfiguracje rozwiązań** .  
   
-     ![Konfiguracja kompilacji narzędzi](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
+     ![Konfiguracja kompilacji paska narzędzi](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   
-     Ten pasek narzędzi nie jest dostępny w wersji Express. Możesz użyć **Kompiluj rozwiązanie F6** i **Rozpocznij debugowanie F5** elementy menu, aby wybrać konfigurację.  
+     Ten pasek narzędzi nie jest dostępny w wersjach Express. Można użyć elementów menu **Kompiluj rozwiązanie F6** i **Rozpocznij debugowanie F5** , aby wybrać konfigurację.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
  [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Ustawienia projektu dla języka C# konfiguracji debugowania](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Ustawienia projektu dla języka Visual Basic konfiguracji debugowania](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Ustawienia projektu dla konfiguracji debugowania w języku C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Ustawienia projektu dla konfiguracji debugowania Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Instrukcje: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md)   
- [Konfiguracji Debug i Release projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)
+ [Debugowanie i wydanie konfiguracji projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)

@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback | Dokumentacja firmy Microsoft
+title: 'IDebugExpressionEvaluator2:: setcallback | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8d6f715bb33afe051cdccffbf3219e062b606f57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179926"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Umożliwia Ewaluator wyrażeń (EE) określić interfejs wywołania zwrotnego, który aparat debugera (DE) będzie używany do odczytu ustawienia metryki.  
+Umożliwia programowi Expression ewaluatora (EE) określenie interfejsu wywołania zwrotnego, który będzie używany przez aparat debugera (DE) do odczytu ustawień metryki.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,16 +39,16 @@ int SetCallback (
   
 #### <a name="parameters"></a>Parametry  
  `pCallback`  
- [in] Interfejs na potrzeby wywołania zwrotnego ustawienia.  
+ podczas Interfejs do użycia dla wywołania zwrotnego ustawień.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zapewnia interfejs do menedżera sesji debugowania, używanego przez ewaluatora wyrażeń odczytać ustawienia metryki. Jest to przydatne podczas debugowania zdalnego odczytać metryki na [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] komputera.  
+ Ta metoda zapewnia interfejs do Menedżera debugowania sesji, którego ewaluatora wyrażeń można używać do odczytywania ustawień metryki. Jest to przydatne w przypadku zdalnego debugowania do odczytywania metryk na [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] komputerze.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CEE** obiekt ujawniający [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interfejsu.  
+ W poniższych przykładach pokazano, jak zaimplementować tę metodę dla obiektu **CEE** , który uwidacznia Interfejs [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) .  
   
 ```cpp#  
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)  

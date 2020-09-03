@@ -1,5 +1,5 @@
 ---
-title: XmlPoke zadanie | Dokumenty firmy Microsoft
+title: XmlPoke — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,30 +17,30 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b69afc20d15802ad79b201ca38e2d69f1d473b1e
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82072510"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke — zadanie
 
-Ustawia wartości określone przez kwerendę XPath w pliku XML.
+Ustawia wartości określone przez zapytanie XPath w pliku XML.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli `XmlPoke` opisano parametry zadania.
+ W poniższej tabeli opisano parametry `XmlPoke` zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`Namespaces`|Parametr `String` opcjonalny.<br /><br /> Określa przestrzenie nazw prefiksów kwerend XPath. `Namespaces`jest fragmentem kodu XML `Namespace` składającym `Prefix` się `Uri`z elementów z atrybutami i . Atrybut `Prefix` określa prefiks do skojarzenia z obszarem nazw określonym w `Uri` atrybucie. Nie używaj `Prefix`pustego pliku .|
-|`Query`|Parametr `String` opcjonalny.<br /><br /> Określa kwerendę XPath.|
+|`Namespaces`|Opcjonalny `String` parametr.<br /><br /> Określa przestrzenie nazw dla prefiksów zapytania XPath. `Namespaces` jest fragmentem kodu XML składającym się z `Namespace` elementów z atrybutami `Prefix` i `Uri` . Atrybut `Prefix` Określa prefiks do skojarzenia z przestrzenią nazw określoną w `Uri` atrybucie. Nie należy używać pustego elementu `Prefix` .|
+|`Query`|Opcjonalny `String` parametr.<br /><br /> Określa zapytanie XPath.|
 |`Value`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa wartość, która ma zostać wstawiona do określonej ścieżki.|
-|`XmlInputPath`|Parametr <xref:Microsoft.Build.Framework.ITaskItem> opcjonalny.<br /><br /> Określa dane wejściowe XML jako ścieżkę pliku.|
+|`XmlInputPath`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Określa dane wejściowe w formacie XML jako ścieżkę pliku.|
 
 ## <a name="remarks"></a>Uwagi
 
- Oprócz parametrów, które są wymienione w tabeli, to <xref:Microsoft.Build.Tasks.TaskExtension> zadanie dziedziczy parametry z <xref:Microsoft.Build.Utilities.Task> klasy, która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 
@@ -55,7 +55,7 @@ Oto sample.xml do zmodyfikowania:
 </Package>
 ```
 
-W tym przykładzie, jeśli `/Package/mp:PhoneIdentity/PhoneProductId`chcesz zmodyfikować, użyj
+W tym przykładzie, jeśli chcesz zmodyfikować `/Package/mp:PhoneIdentity/PhoneProductId` , użyj
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -77,9 +77,9 @@ W tym przykładzie, jeśli `/Package/mp:PhoneIdentity/PhoneProductId`chcesz zmod
 </Project>
 ```
 
-`dn`jest tutaj używany jako prefiks sztucznej przestrzeni nazw dla domyślnej przestrzeni nazw.
+`dn` jest używany jako prefiks sztucznej przestrzeni nazw dla domyślnej przestrzeni nazw.
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Zadania](../msbuild/msbuild-tasks.md)
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

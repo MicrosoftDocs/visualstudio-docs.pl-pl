@@ -1,5 +1,5 @@
 ---
-title: Reguły zagnieżdżania plików dla Eksploratora rozwiązań
+title: Reguły zagnieżdżania plików dla Eksplorator rozwiązań
 ms.date: 05/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,107 +9,107 @@ author: angelosp
 ms.author: angelpe
 manager: jillfra
 ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67587024"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Zagnieżdżanie plików w Eksploratorze rozwiązań
 
-**Eksplorator rozwiązań** zagnieżdża powiązane pliki, aby ułatwić ich organizację i ułatwić ich lokalizowanie. Na przykład po dodaniu formularza Formularze systemu Windows do projektu plik kodu formularza jest zagnieżdżony poniżej formularza w **Eksploratorze rozwiązań**. W projektach ASP.NET Core zagnieżdżanie plików można zrobić o krok dalej. Można wybrać między ustawieniami predefiniowania zagnieżdżania plików **Wyłączone,** **Domyślne**i **Sieć Web**. Można również [dostosować sposób zagnieżdżania plików](#customize-file-nesting) lub utworzyć ustawienia specyficzne dla rozwiązania i specyficzne dla [projektu](#create-project-specific-settings).
+**Eksplorator rozwiązań** zagnieżdża powiązane pliki, aby ułatwić ich organizowanie i ułatwić ich lokalizowanie. Na przykład jeśli dodasz formularz Windows Forms do projektu, plik kodu dla formularza zostanie zagnieżdżony poniżej formularza w **Eksplorator rozwiązań**. W projektach ASP.NET Core zagnieżdżenia plików można wykonać krokowo. Można wybrać między ustawieniami zagnieżdżenia plików **wyłączonymi**, **domyślnymi**i **sieci Web**. Można również [dostosować sposób zagnieżdżania plików](#customize-file-nesting) lub tworzyć ustawienia specyficzne dla konkretnego [rozwiązania i projektu](#create-project-specific-settings).
 
 > [!NOTE]
-> Funkcja jest obecnie obsługiwana tylko dla projektów ASP.NET Core.
+> Ta funkcja jest obecnie obsługiwana tylko w projektach ASP.NET Core.
 
 ## <a name="file-nesting-options"></a>Opcje zagnieżdżania plików
 
-![Przycisk włączania/wyłączania zagnieżdżania plików](media/filenesting_onoff.png)
+![Przycisk służący do włączania/wyłączania zagnieżdżania plików](media/filenesting_onoff.png)
 
-Dostępne opcje nieprzystosowania zagnieżdżania plików to:
+Dostępne opcje zagnieżdżania plików są następujące:
 
-* **Wył.:** Ta opcja umożliwia wyświetlanie płaskiej listy plików bez zagnieżdżania.
+* **Wyłączone**: Ta opcja zapewnia płaską listę plików bez zagnieżdżenia.
 
-* **Domyślnie**: Ta opcja zapewnia domyślne zachowanie zagnieżdżania plików w **Eksploratorze rozwiązań**. Jeśli nie istnieją żadne ustawienia dla danego typu projektu, żadne pliki w projekcie nie są zagnieżdżone. Jeśli istnieją ustawienia, na przykład dla projektu sieci web, zagnieżdżanie jest stosowane.
+* **Wartość domyślna**: Ta opcja zapewnia domyślne zachowanie zagnieżdżania plików w **Eksplorator rozwiązań**. Jeśli nie istnieją żadne ustawienia dla danego typu projektu, nie są zagnieżdżane żadne pliki w projekcie. Jeśli istnieją ustawienia, na przykład dla projektu sieci Web, jest stosowane zagnieżdżanie.
 
-* **Sieć Web**: Ta opcja stosuje zachowanie zagnieżdżania plików **sieci Web** do wszystkich projektów w bieżącym rozwiązaniu. Ma wiele zasad, a my zachęcamy, aby to sprawdzić i powiedzieć nam, co myślisz. Poniższy zrzut ekranu przedstawia tylko kilka przykładów zachowania zagnieżdżania plików, które można uzyskać za pomocą tej opcji:
+* **Sieć Web**: Ta opcja stosuje zachowanie zagnieżdżania plików **sieci Web** do wszystkich projektów w bieżącym rozwiązaniu. Ma wiele reguł i zachęca Cię do wyewidencjonowania go i poinformowania nas o tym, co myślisz. Poniższy zrzut ekranu przedstawia zaledwie kilka przykładów zachowań zagnieżdżania plików, które można uzyskać przy użyciu tej opcji:
 
    ![Zagnieżdżanie plików w Eksploratorze rozwiązań](media/filenesting.png)
 
 ## <a name="customize-file-nesting"></a>Dostosowywanie zagnieżdżania plików
 
-Jeśli nie podoba Ci się to, co ci się nie ma, możesz utworzyć własne, niestandardowe ustawienia zagnieżdżania plików, które poinstruują **Eksploratora rozwiązań,** jak zagnieżdżać pliki. Można dodać dowolną liczbę niestandardowych ustawień zagnieżdżania plików i przełączać się między nimi zgodnie z potrzebami. Aby utworzyć nowe ustawienie niestandardowe, można rozpocząć od pustego pliku lub użyć ustawień **sieci Web** jako punktu wyjścia:
+Jeśli nie chcesz, aby to zrobić, możesz utworzyć własne, niestandardowe ustawienia zagnieżdżania plików, które poinstruują **Eksplorator rozwiązań** jak zagnieżdżać pliki. Możesz dodać dowolną liczbę niestandardowych ustawień zagnieżdżania plików i można przełączać się między nimi. Aby utworzyć nowe ustawienie niestandardowe, możesz rozpocząć od pustego pliku lub użyć ustawień **sieci Web** jako punktu początkowego:
 
 ![Dodawanie niestandardowych reguł zagnieżdżania plików](media/filenesting_addcustom.png)
 
-Zaleca się używanie ustawień **sieci Web** jako punktu wyjścia, ponieważ łatwiej jest pracować z czymś, co już działa. Jeśli jako punkt wyjścia są używane ustawienia **sieci Web,** plik *filenesting.json* wygląda podobnie do następującego pliku:
+Zalecamy korzystanie z ustawień **sieci Web** jako punktu początkowego, ponieważ ułatwia to pracę z coś, co już działa. Jeśli używasz ustawień **sieci Web** jako punktu początkowego, *.filenesting.js* pliku wygląda podobnie do następującego pliku:
 
-![Używanie istniejących reguł zagnieżdżania plików jako podstawy ustawień niestandardowych](media/filenesting_editcustom.png)
+![Użyj istniejących reguł zagnieżdżania plików jako podstawy dla ustawień niestandardowych](media/filenesting_editcustom.png)
 
-Skupmy się na **węzła zależneFileProviders** i jego węzłów podrzędnych. Każdy węzeł podrzędny jest typem reguły, której program Visual Studio może używać do zagnieżdżania plików. Na przykład **o tej samej nazwy pliku, ale inne rozszerzenie** jest jeden typ reguły. Dostępne zasady to:
+Skupmy się na węźle **dependentFileProviders** i jego węzłach podrzędnych. Każdy węzeł podrzędny jest typem reguły, która może być używana przez program Visual Studio do zagnieżdżania plików. Na przykład ma taką **samą nazwę pliku, ale inne rozszerzenie** jest jednym typem reguły. Dostępne są następujące reguły:
 
-* **extensionToExtension**: Użyj tego typu reguły, aby zagnieżdżać *plik.js* w pliku *file.ts*
+* **extensionToExtension**: Użyj tego typu reguły, aby zagnieździć *file.js* w *pliku. TS*
 
-* **fileSuffixToExtension**: Użyj tego typu reguły, aby zagnieżdżać *plik vsdoc.js* w pliku *file.js*
+* **fileSuffixToExtension**: Użyj tego typu reguły, aby zagnieździć *file-vsdoc.js* w *file.js*
 
-* **addedExtension**: Użyj tego typu reguły, aby zagnieżdżać *plik.html.css* pod *plikiem file.html*
+* **addedExtension**: Użyj tego typu reguły, aby zagnieździć *file.html. css* w obszarze *file.html*
 
-* **pathSegment**: Użyj tego typu reguły, aby zagnieżdżać *jquery.min.js* pod *jquery.js*
+* **pathSegment**: Użyj tego typu reguły, aby zagnieździć *jquery.min.js* w *jquery.js*
 
-* **allExtensions**: Użyj tego typu reguły, aby zagnieżdżać *plik.* * pod *plikiem file.js*
+* **allExtensions**: Użyj tego typu reguły, aby zagnieździć *plik.* * w obszarze *file.js*
 
-* **fileToFile**: Użyj tego typu reguły, aby zagnieżdżać *bower.json* pod *.bowerrc*
+* **fileToFile**: Użyj tego typu reguły, aby zagnieździć *bower.jsw* obszarze *. bowerrc*
 
-### <a name="the-extensiontoextension-provider"></a>Dostawca rozszerzeniaToExtension
+### <a name="the-extensiontoextension-provider"></a>Dostawca extensionToExtension
 
-Ten dostawca umożliwia definiowanie reguł zagnieżdżania plików przy użyciu określonych rozszerzeń plików. Rozważmy następujący przykład:
+Ten dostawca umożliwia definiowanie reguł zagnieżdżania plików przy użyciu określonych rozszerzeń plików. Rozpatrzmy następujący przykład:
 
-![reguły przykładowe extentionToExtension](media/filenesting_extensiontoextension.png) ![extentionToExtension przykładowy efekt](media/filenesting_extensiontoextension_effect.png)
+![extentionToExtension przykładowe reguły](media/filenesting_extensiontoextension.png) ![Przykładowy efekt extentionToExtension](media/filenesting_extensiontoextension_effect.png)
 
-* *cart.js* jest zagnieżdżony pod *cart.ts* ze względu na pierwszą regułę **extensionToExtension**
+* *cart.js* jest zagnieżdżona w obszarze *koszyka. TS* z powodu pierwszej reguły **extensionToExtension**
 
-* *cart.js* nie jest zagnieżdżony pod *cart.tsx* ponieważ **.ts** jest przed **.tsx** w zasadach, a może być tylko jeden rodzic
+* *cart.js* nie jest zagnieżdżona w obszarze *Cart. TSX* , ponieważ **. TS** znajduje się przed **. TSX** w regułach, a może istnieć tylko jeden element nadrzędny
 
-* *light.css* jest zagnieżdżony pod *light.sass* ze względu na drugie **extensionToExtension reguły**
+* *Light. css* jest zagnieżdżony pod właściwością *Light. Sass* ze względu na drugą regułę **extensionToExtension**
 
-* *home.html* jest zagnieżdżony pod *home.md* z powodu trzeciej reguły **extensionToExtension**
+* *home.html* jest zagnieżdżona w obszarze *Home.MD* z powodu trzeciej reguły **extensionToExtension**
 
 ### <a name="the-filesuffixtoextension-provider"></a>Dostawca fileSuffixToExtension
 
-Ten dostawca działa podobnie jak **rozszerzenieDostyczność** dostawcy, z tą tylko różnicą jest to, że reguła patrzy na sufiks pliku, a nie tylko rozszerzenie. Rozważmy następujący przykład:
+Ten dostawca działa podobnie jak w przypadku dostawcy **extensionToExtension** . jedyną różnicą jest to, że reguła przegląda sufiks pliku, a nie tylko rozszerzenie. Rozpatrzmy następujący przykład:
 
-![fileSuffixToExtension przykładowe reguły](media/filenesting_filesuffixtoextension.png) ![fileSuffixToExtension przykładowy efekt](media/filenesting_filesuffixtoextension_effect.png)
+![fileSuffixToExtension przykładowe reguły](media/filenesting_filesuffixtoextension.png) ![Przykładowy efekt fileSuffixToExtension](media/filenesting_filesuffixtoextension_effect.png)
 
-* *portal-vsdoc.js* jest zagnieżdżony w witrynie *portal.js* z powodu reguły **fileSuffixToExtension**
+* *portal-vsdoc.js* jest zagnieżdżona w *portal.js* ze względu na regułę **fileSuffixToExtension**
 
-* każdy inny aspekt reguły działa tak samo jak **extensionToExtension**
+* Każdy inny aspekt reguły działa tak samo jak **extensionToExtension**
 
 ### <a name="the-addedextension-provider"></a>Dostawca addedExtension
 
-Ten dostawca zagnieżdża pliki z dodatkowym rozszerzeniem pod plikiem bez dodatkowego rozszerzenia. Dodatkowe rozszerzenie może pojawić się tylko na końcu pełnej nazwy pliku.
+Ten dostawca zagnieżdża pliki z dodatkowym rozszerzeniem w pliku bez dodatkowego rozszerzenia. Dodatkowe rozszerzenie może pojawić się tylko na końcu pełnej nazwy pliku.
 
-Rozważmy następujący przykład:
+Rozpatrzmy następujący przykład:
 
-![addedExtension przykładowe reguły](media/filenesting_addedextension.png) ![addedWydaj przykładowy efekt wyeksji](media/filenesting_addedextension_effect.png)
+![addedExtension przykładowe reguły](media/filenesting_addedextension.png) ![Przykładowy efekt addedExtension](media/filenesting_addedextension_effect.png)
 
-* *plik.html.css* jest zagnieżdżony pod *plikiem file.html* z powodu reguły **addedExtension**
-
-> [!NOTE]
-> Nie określasz żadnych rozszerzeń `addedExtension` plików dla reguły; automatycznie stosuje się do wszystkich rozszerzeń plików. Oznacza to, że każdy plik o tej samej nazwie i rozszerzeniu co inny plik oraz dodatkowe rozszerzenie na końcu są zagnieżdżone pod drugim plikiem. Nie można ograniczyć efektu tego dostawcy tylko do określonych rozszerzeń plików.
-
-### <a name="the-pathsegment-provider"></a>ŚcieżkaSegment dostawca
-
-Ten dostawca zagnieżdża pliki z dodatkowym rozszerzeniem pod plikiem bez dodatkowego rozszerzenia. Dodatkowe rozszerzenie może pojawić się tylko na środku pełnej nazwy pliku.
-
-Rozważmy następujący przykład:
-
-![pathSegment przykładowe reguły](media/filenesting_pathsegment.png) ![pathSegment przykładowy efekt](media/filenesting_pathsegment_effect.png)
-
-* *jquery.min.js* jest zagnieżdżony pod *jquery.js* ze względu na **pathSegment reguły**
+* *file.html. css* jest zagnieżdżony w *file.html* z powodu reguły **addedExtension**
 
 > [!NOTE]
-> - Jeśli nie określisz żadnych konkretnych rozszerzeń plików dla `pathSegment` reguły, dotyczy ona wszystkich rozszerzeń plików. Oznacza to, że każdy plik o tej samej nazwie i rozszerzeniu co inny plik oraz dodatkowe rozszerzenie w środku jest zagnieżdżony pod drugim plikiem.
-> - Efekt reguły `pathSegment` można ograniczyć do określonych rozszerzeń plików, określając je w następujący sposób:
+> Nie określono żadnych rozszerzeń plików dla `addedExtension` reguły; automatycznie stosuje się do wszystkich rozszerzeń plików. Oznacza to, że każdy plik o takiej samej nazwie i rozszerzeniu, co inny plik oraz dodatkowe rozszerzenie na końcu, jest zagnieżdżony w innym pliku. Nie można ograniczyć efektu tego dostawcy tylko do określonych rozszerzeń plików.
+
+### <a name="the-pathsegment-provider"></a>Dostawca pathSegment
+
+Ten dostawca zagnieżdża pliki z dodatkowym rozszerzeniem w pliku bez dodatkowego rozszerzenia. Dodatkowe rozszerzenie może pojawić się tylko w środku pełnej nazwy pliku.
+
+Rozpatrzmy następujący przykład:
+
+![pathSegment przykładowe reguły](media/filenesting_pathsegment.png) ![Przykładowy efekt pathSegment](media/filenesting_pathsegment_effect.png)
+
+* *jquery.min.js* jest zagnieżdżona w *jquery.js* ze względu na regułę **pathSegment**
+
+> [!NOTE]
+> - Jeśli nie określisz żadnych określonych rozszerzeń plików dla `pathSegment` reguły, dotyczy to wszystkich rozszerzeń plików. Oznacza to, że każdy plik o takiej samej nazwie i rozszerzeniu, co inny plik oraz dodatkowe rozszerzenie w środku, jest zagnieżdżony w innym pliku.
+> - Można ograniczyć efekt `pathSegment` reguły do określonych rozszerzeń plików, określając je w następujący sposób:
 >
 >    ```json
 >    "pathSegment": {
@@ -124,51 +124,51 @@ Rozważmy następujący przykład:
 >    }
 >    ```
 
-### <a name="the-allextensions-provider"></a>Dostawca wszystkichWysokień
+### <a name="the-allextensions-provider"></a>Dostawca allExtensions
 
-Ten dostawca umożliwia definiowanie reguł zagnieżdżania plików dla plików z dowolnym rozszerzeniem, ale o tej samej nazwie pliku podstawowego. Rozważmy następujący przykład:
+Ten dostawca umożliwia zdefiniowanie reguł zagnieżdżania plików dla plików z dowolnym rozszerzeniem, ale z tą samą nazwą pliku podstawowego. Rozpatrzmy następujący przykład:
 
-![allExtensions przykładowe reguły](media/filenesting_allextensions.png) ![allWydaje przykładowy efekt](media/filenesting_allextensions_effect.png)
+![allExtensions przykładowe reguły](media/filenesting_allextensions.png) ![Przykładowy efekt allExtensions](media/filenesting_allextensions_effect.png)
 
-* *template.cs* i *template.doc* są zagnieżdżone w *obszarze template.tt* ze względu na **regułę allExtensions.**
+* *Template.cs* i *template.doc* są zagnieżdżone w obszarze *Template.tt* ze względu na regułę **allExtensions** .
 
 ### <a name="the-filetofile-provider"></a>Dostawca fileToFile
 
-Ten dostawca umożliwia definiowanie reguł zagnieżdżania plików na podstawie całych nazwach plików. Rozważmy następujący przykład:
+Ten dostawca umożliwia zdefiniowanie reguł zagnieżdżania plików na podstawie całych nazw plików. Rozpatrzmy następujący przykład:
 
-![reguły przykładowe fileToFile](media/filenesting_filetofile.png) ![Efekt przykładu fileToFile](media/filenesting_filetofile_effect.png)
+![fileToFile przykładowe reguły](media/filenesting_filetofile.png) ![Przykładowy efekt fileToFile](media/filenesting_filetofile_effect.png)
 
-* *.bowerrc* jest zagnieżdżony pod *bower.json* ze względu na regułę **fileToFile**
+* *. bowerrc* jest zagnieżdżona w obszarze *bower.jsna* skutek reguły **fileToFile**
 
 ### <a name="rule-order"></a>Kolejność reguł
 
-Zamawianie jest ważne w każdej części pliku ustawień niestandardowych. Można zmienić kolejność wykonywania reguł, przenosząc je w górę lub w dół wewnątrz **węzła zależnegoFileProvider.** Na przykład, jeśli masz jedną regułę, która sprawia, że **file.js nadrzędny** **file.ts** i inna reguła, która sprawia, że **file.coffee** jest nadrzędnym **file.ts,** kolejność, w jakiej pojawiają się w pliku, decyduje o zachowaniu zagnieżdżania, gdy wszystkie trzy pliki są obecne. Ponieważ **plik.ts** może mieć tylko jeden element nadrzędny, w zależności od reguły wykonuje pierwsze wygrane.
+Kolejność jest ważna w każdej części pliku ustawień niestandardowych. Można zmienić kolejność, w której reguły są wykonywane, przenosząc je w górę lub w dół w węźle **dependentFileProvider** . Na przykład, jeśli masz jedną regułę, która wprowadza **file.js** elementu nadrzędnego **pliku. TS** i inną regułę, która tworzy **plik. kawy** nadrzędny **pliku. TS**, kolejność, w jakiej są wyświetlane w pliku, określa zachowanie zagnieżdżenia, gdy wszystkie trzy pliki są obecne. Ponieważ **plik. TS** może mieć tylko jeden element nadrzędny, niezależnie od reguły jest przeprowadzana pierwsza usługa WINS.
 
-Zamawianie jest również ważne dla samych sekcji reguł, a nie tylko dla plików w sekcji. Gdy tylko para plików zostanie dopasowana do reguły zagnieżdżania plików, inne reguły znajdujące się w pliku są ignorowane, a następna para plików jest przetwarzana.
+Kolejność jest również ważna dla samych sekcji reguł, a nie tylko dla plików znajdujących się w sekcji. Po dopasowaniu pary plików z regułą zagnieżdżania plików inne reguły w pliku są ignorowane, a następna para plików jest przetwarzana.
 
-### <a name="file-nesting-button"></a>Przycisk zagnieżdżanie plików
+### <a name="file-nesting-button"></a>Przycisk zagnieżdżania plików
 
-Możesz zarządzać wszystkimi ustawieniami, w tym własnymi ustawieniami niestandardowymi, za pomocą tego samego przycisku w **Eksploratorze rozwiązań:**
+Można zarządzać wszystkimi ustawieniami, w tym własnymi ustawieniami niestandardowymi, za pomocą tego samego przycisku w **Eksplorator rozwiązań**:
 
-![Aktywowanie niestandardowych reguł zagnieżdżania plików](media/filenesting_activatecustom.png)
+![Aktywuj niestandardowe reguły zagnieżdżania plików](media/filenesting_activatecustom.png)
 
 ## <a name="create-project-specific-settings"></a>Tworzenie ustawień specyficznych dla projektu
 
-Ustawienia specyficzne dla rozwiązania i specyficzne dla projektu można tworzyć za pomocą menu (menu kontekstowego) każdego rozwiązania i projektu, które umożliwia kliknięcie prawym przyciskiem myszy:
+Ustawienia specyficzne dla rozwiązania i projektu można utworzyć za pomocą menu rozwijanego prawym przyciskiem myszy (menu kontekstowe) każdego rozwiązania i projektu:
 
-![Reguły zagnieżdżania rozwiązania i specyficzne dla projektu](media/filenesting_solutionprojectspecific.png)
+![Rozwiązania i reguły zagnieżdżania specyficzne dla projektu](media/filenesting_solutionprojectspecific.png)
 
-Ustawienia specyficzne dla rozwiązania i specyficzne dla projektu są łączone z aktywnymi ustawieniami programu Visual Studio. Na przykład może być pusty plik ustawień specyficznych dla projektu, ale **Eksplorator rozwiązań** nadal zagnieżdża pliki. Zachowanie zagnieżdżania pochodzi z ustawień specyficznych dla rozwiązania lub ustawień programu Visual Studio. Pierwszeństwo scalania ustawień zagnieżdżania plików ma: Visual Studio > Solution > Project.
+Ustawienia specyficzne dla rozwiązania i projektu są łączone z aktywnymi ustawieniami programu Visual Studio. Na przykład może istnieć pusty plik ustawień specyficznych dla projektu, ale **Eksplorator rozwiązań** nadal zagnieżdża pliki. Zachowanie zagnieżdżania pochodzi z ustawień specyficznych dla rozwiązania lub ustawień programu Visual Studio. Pierwszeństwo scalania ustawień zagnieżdżania plików: Visual Studio > rozwiązanie > Project.
 
-Program Visual Studio może zignorować ustawienia specyficzne dla rozwiązania i specyficzne dla projektu, nawet jeśli pliki istnieją na dysku, włączając opcję **Ignoruj ustawienia rozwiązania i projektu** w obszarze**Opcje** >  **narzędzi** > ASP.NET**Zagnieżdżanie plików****podstawowych** > .
+Można poinformować program Visual Studio, aby ignorował ustawienia specyficzne dla rozwiązania i projektu, nawet jeśli pliki znajdują się na dysku, włączając opcję **Ignoruj ustawienia rozwiązania i projektu** w obszarze **Narzędzia**  >  **Opcje**  >  **ASP.NET Core**  >  **zagnieżdżanie plików**.
 
-Można zrobić odwrotnie i powiedzieć visual studio, aby używał *tylko* ustawień specyficznych dla rozwiązania lub specyficznego dla projektu, ustawiając węzeł **główny** na **true**. Visual Studio zatrzymuje scalanie plików na tym poziomie i nie łączy go z plikami wyżej w hierarchii.
+Można to zrobić odwrotnie i powiadom program Visual Studio, aby używał *tylko* określonych rozwiązań lub ustawień specyficznych dla projektu, ustawiając dla węzła **głównego** **wartość true**. Program Visual Studio przestaje scalać pliki na tym poziomie i nie łączy go z plikami w górę hierarchii.
 
-Ustawienia specyficzne dla rozwiązania i specyficzne dla projektu można sprawdzić w kontroli źródła, a cały zespół, który działa w bazie kodu może je udostępnić.
+Ustawienia specyficzne dla rozwiązania i projektu można sprawdzić w kontroli źródła, a cały zespół, który działa w bazie kodu, może je udostępnić.
 
-## <a name="disable-file-nesting-rules-for-a-project"></a>Wyłączanie reguł zagnieżdżania plików dla projektu
+## <a name="disable-file-nesting-rules-for-a-project"></a>Wyłącz reguły zagnieżdżania plików dla projektu
 
-Istniejące globalne reguły zagnieżdżania plików dla określonych rozwiązań lub projektów można wyłączyć za pomocą akcji **usuwania** dla dostawcy zamiast **dodawania**. Na przykład jeśli dodasz następujący kod ustawień do projektu, wszystkie **reguły pathSegment,** które mogą istnieć globalnie dla tego konkretnego projektu, zostaną wyłączone:
+Istniejące globalne reguły zagnieżdżania plików można wyłączyć dla konkretnych rozwiązań lub projektów za pomocą akcji **usuwania** dla dostawcy zamiast polecenia **Dodaj**. Na przykład jeśli dodasz następujący kod ustawień do projektu, wszystkie reguły **pathSegment** , które mogą istnieć globalnie dla tego konkretnego projektu, są wyłączone:
 
 ```json
 "dependentFileProviders": {
@@ -180,5 +180,5 @@ Istniejące globalne reguły zagnieżdżania plików dla określonych rozwiąza�
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Personalizowanie ide](../ide/personalizing-the-visual-studio-ide.md)
+- [Personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Rozwiązania i projekty w programie Visual Studio](solutions-and-projects-in-visual-studio.md)

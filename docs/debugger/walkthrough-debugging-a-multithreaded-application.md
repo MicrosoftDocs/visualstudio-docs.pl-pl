@@ -1,5 +1,5 @@
 ---
-title: Wyświetl wątki w debugerze | Dokumentacja firmy Microsoft
+title: Wyświetlanie wątków w debugerze | Microsoft Docs
 ms.date: 10/29/2018
 ms.topic: conceptual
 f1_keywords:
@@ -24,149 +24,149 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821588"
 ---
-# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Wyświetl wątki w debugerze programu Visual Studio za pomocą okna wątki (C#, Visual Basic, C++)
-W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, który debugujesz. Aby uzyskać szczegółowe instrukcje dotyczące sposobu używania **wątków** okna, zobacz [instruktażu: Debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md).
+# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Wyświetlanie wątków w debugerze programu Visual Studio przy użyciu okna wątków (C#, Visual Basic, C++)
+W oknie **wątki** można analizować i współpracować z wątkami w debugowanej aplikacji. Aby uzyskać wskazówki krok po kroku dotyczące korzystania z okna **wątków** , zobacz [Przewodnik: debugowanie przy użyciu okna wątki](../debugger/how-to-use-the-threads-window.md).
 
 ## <a name="use-the-threads-window"></a>Korzystanie z okna wątków
- **Wątków** okno zawiera tabelę, w którym każdy wiersz w tym artykule opisano oddzielnego wątku w aplikacji. Domyślnie w tabeli wymieniono wszystkie wątki w swojej aplikacji, ale można filtrować listę, aby wyświetlić wątki, które Cię interesują. Każda kolumna zawiera opis innego typu informacji. Można także ukryć niektóre kolumny. Jeśli wyświetlane są wszystkie kolumny, następujące kolumny są wyświetlane, od lewej do prawej:
+ Okno **wątki** zawiera tabelę, w której każdy wiersz zawiera opis oddzielnego wątku w aplikacji. Domyślnie w tabeli znajduje się lista wszystkich wątków w aplikacji, ale można filtrować listę, aby pokazać tylko te wątki, które Cię interesują. Każda kolumna zawiera informacje o różnych typach. Możesz również ukryć niektóre kolumny. Jeśli zostaną wyświetlone wszystkie kolumny, wyświetlane są następujące kolumny od lewej do prawej:
 
-- **Flaga**: W tej kolumnie bez etykiety można oznaczyć wątek, do którego chcesz zwrócić szczególną uwagę. Aby uzyskać informacje o sposobie Flagowanie wątku, zobacz [jak: Oflagowanie i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md).
+- **Flaga**: w tej kolumnie bez etykiet można oznaczyć wątek, do którego chcemy zwrócić szczególną uwagę. Aby uzyskać informacje o sposobie oflagowania wątku, zobacz [How to: flag i unflaging](../debugger/how-to-flag-and-unflag-threads.md)Threads.
 
-- **Bieżący wątek**: W tej kolumnie bez etykiety żółta strzałka wskazuje bieżący wątek. Konspekt Strzałka wskazuje bieżący kontekst debugera dla wątku innej niż bieżąca.
+- **Bieżący wątek**: w tej kolumnie bez etykiety, żółta strzałka wskazuje bieżący wątek. Konspekt strzałki wskazuje bieżący kontekst debugera dla wątku niebieżącego.
 
-- **ID**: Wyświetla numer identyfikacyjny dla każdego wątku.
+- **Identyfikator**: Wyświetla numer identyfikacyjny dla każdego wątku.
 
-- **Zarządzany identyfikator**: Wyświetla numery identyfikacyjne zarządzanych dla wątków zarządzanych.
+- **Identyfikator zarządzany**: wyświetla zarządzane numery identyfikacyjne dla zarządzanych wątków.
 
-- **Kategoria**: Wyświetla kategorii wątki wątki interfejsu użytkownika, obsługa wywołania procedury zdalnej lub wątków roboczych. Kategoria specjalne identyfikuje wątku głównego aplikacji.
+- **Kategoria**: wyświetla kategorię wątków jako wątki interfejsu użytkownika, procedury obsługi zdalnego wywoływania procedur lub wątki robocze. Specjalna kategoria identyfikuje główny wątek aplikacji.
 
-- **Nazwa**: Identyfikuje każdy wątek przy użyciu nazwy, jeśli taki istnieje, lub jako \<Brak nazwy >.
+- **Nazwa**: identyfikuje każdy wątek według nazwy, jeśli ma jeden, lub jako \<No Name> .
 
-- **Lokalizacja**: Pokazuje, gdzie wątek jest uruchomiony. Można rozwinąć tej lokalizacji, aby wyświetlić pełny stos wywołania dla wątku.
+- **Lokalizacja**: pokazuje, gdzie działa wątek. Można rozwinąć tę lokalizację, aby pokazać pełny stos wywołań wątku.
 
-- **Priorytet**: Zaawansowane (domyślnie ukryte) wyświetlana kolumna priorytet lub pierwszeństwo przypisana przez system do każdego wątku.
+- **Priorytet**: kolumna zaawansowana (domyślnie ukryta), która wyświetla priorytet lub pierwszeństwo przypisany system do każdego wątku.
 
-- **Maska koligacji**: Zaawansowane kolumnę (domyślnie ukryte) przedstawiającą Maska koligacji procesorów dla każdego wątku. W systemie wieloprocesorowym Maska koligacji Określa, które procesory, na których można uruchomić wątku.
+- **Maska koligacji**: kolumna zaawansowana (domyślnie ukryta), która pokazuje maskę koligacji procesora dla każdego wątku. W systemie wieloprocesorowym maska koligacji określa procesory, w których można uruchomić wątek.
 
-- **Zawieszone liczba**: Zaawansowane (domyślnie ukryte) wyświetlana kolumna licznik wstrzymany. Liczba ta określa, czy można uruchomić wątku. Aby uzyskać więcej informacji na temat liczby wstrzymania zobacz [Zablokuj i Odblokuj wątki](#freeze-and-thaw-threads).
+- **Liczba wstrzymanych**: kolumna zaawansowana (domyślnie ukryta), która wyświetla liczbę wstrzymanych. Ta liczba określa, czy można uruchomić wątek. Aby uzyskać więcej informacji o wstrzymanych licznikach, zobacz [blokowanie i odblokowywanie wątków](#freeze-and-thaw-threads).
 
-- **Nazwa procesu**: Zaawansowane kolumny (domyślnie ukryte), który wyświetla ten proces, do której należy każdego wątku. Dane w tej kolumnie może być przydatne podczas debugowania wielu procesów.
+- **Nazwa procesu**: kolumna zaawansowana (domyślnie ukryta), która wyświetla proces, do którego należy każdy wątek. Dane w tej kolumnie mogą być przydatne podczas debugowania wielu procesów.
 
-- **Identyfikator procesu**: Zaawansowane kolumny (domyślnie ukryte), który wyświetla identyfikator procesu, do której należy każdego wątku.
+- **Identyfikator procesu**: kolumna zaawansowana (domyślnie ukryta), która wyświetla identyfikator procesu, do którego należy każdy wątek.
 
-- **Kwalifikator transportu**: Zaawansowane kolumny (domyślnie ukryte) który jednoznacznie identyfikuje maszyny, do którego jest podłączony debugera.
+- **Kwalifikator transportu**: Zaawansowana kolumna (domyślnie ukryta), która jednoznacznie identyfikuje maszynę, do której jest podłączony debuger.
 
-### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>Aby wyświetlić okno wątków w trybie przerwania lub w trybie uruchamiania
+### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>Aby wyświetlić okno wątki w trybie przerwania lub w trybie uruchamiania
 
-- Visual Studio jest w trybie debugowania, wybierz **debugowania** menu wskaż **Windows**, a następnie wybierz pozycję **wątków**.
+- Gdy program Visual Studio jest w trybie debugowania, wybierz menu **Debuguj** , wskaż pozycję **Windows**, a następnie wybierz pozycję **wątki**.
 
-### <a name="to-display-or-hide-a-column"></a>Aby wyświetlić lub ukryć kolumny
+### <a name="to-display-or-hide-a-column"></a>Aby wyświetlić lub ukryć kolumnę
 
-- Na pasku narzędzi u góry **wątków** wybierz **kolumn**. Następnie zaznacz lub wyczyść nazwę kolumny, który chcesz wyświetlić lub ukryć.
+- Na pasku narzędzi u góry okna **wątki** wybierz pozycję **kolumny**. Następnie wybierz lub wyczyść nazwę kolumny, która ma być wyświetlana lub ukryta.
 
-## <a name="display-flagged-threads"></a>Wyświetlanie oflagowane wątki
- Można flagę wątku, który chcesz poświęcić szczególną uwagę, oznaczając je za pomocą ikony w **wątków** okna. Aby uzyskać więcej informacji, zobacz [jak: Oflagowanie i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md). W **wątków** oknie, użytkownik może wyświetlić wszystkie wątki lub tylko oflagowane wątki.
+## <a name="display-flagged-threads"></a>Wyświetl oflagowane wątki
+ Można oflagować wątek, który ma dawać szczególną uwagę, poprzez oznaczenie go ikoną w oknie **wątki** . Aby uzyskać więcej informacji, zobacz [How to: flag i unflaging Threads](../debugger/how-to-flag-and-unflag-threads.md). W oknie **wątki** można wyświetlić wszystkie wątki lub tylko Oflagowane wątki.
 
-### <a name="to-display-only-flagged-threads"></a>Aby wyświetlić tylko oflagowane wątki
+### <a name="to-display-only-flagged-threads"></a>Aby wyświetlić tylko Oflagowane wątki
 
-- Wybierz **Pokaż wątki tylko oflagowane** na pasku narzędzi u góry **wątków** okna. (Jeśli go jest nieaktywne, musisz najpierw oflagowania wątków.)
+- Wybierz pozycję **Pokaż wątki oflagowane tylko** na pasku narzędzi u góry okna **wątki** . (Jeśli jest wygaszony, należy najpierw oflagować niektóre wątki).
 
-## <a name="freeze-and-thaw-threads"></a>Zablokuj i Odblokuj wątki
- Zablokowanie wątku systemu nie uruchamia wykonywanie wątku, nawet jeśli zasoby są dostępne.
+## <a name="freeze-and-thaw-threads"></a>Zamrażanie i odblokowywanie wątków
+ W przypadku zablokowania wątku system nie rozpoczyna wykonywania wątku, nawet jeśli dostępne są zasoby.
 
- W kodzie natywnym można wstrzymać lub wznowić wątków przez wywołanie funkcji Windows `SuspendThread` i `ResumeThread`. Lub wywoływać funkcje MFC [CWinThread::SuspendThread](/cpp/mfc/reference/CWinThread-class#suspendthread) i [CWinThread::ResumeThread](/cpp/mfc/reference/CWinThread-class#resumethread). Jeśli wywołasz `SuspendThread` lub `ResumeThread`, *zawieszone liczba* objętego **wątków** okno zostanie zmieniona. Liczba wstrzymanych nie powoduje zmiany blokowanie lub odblokowywanie wątków natywnych. Wątek nie można wykonać w kodzie natywnym, chyba że jest rozmrożone i został wstrzymany liczbę zero.
+ W kodzie natywnym można wstrzymywać lub wznawiać wątki przez wywoływanie funkcji systemu Windows `SuspendThread` i `ResumeThread` . Lub wywołaj funkcje MFC [CWinThread:: SuspendThread](/cpp/mfc/reference/CWinThread-class#suspendthread) i [CWinThread:: ResumeThread](/cpp/mfc/reference/CWinThread-class#resumethread). W przypadku wywołania `SuspendThread` lub zostanie `ResumeThread` zmieniona *Liczba wstrzymań* wyświetlana w oknie **wątki** . Liczba wstrzymanych nie zmienia się w przypadku zablokowania lub odblokowania wątku natywnego. Wątek nie może zostać wykonany w kodzie natywnym, chyba że jest odmrożony i ma wstrzymaną liczbę zero.
 
- W kodzie zarządzanym licznik wstrzymany ulega zmianie po użytkownik blokowanie lub odblokowywanie wątków. Jeśli w kodzie zarządzanym można zablokować wątek, jego licznik wstrzymany to 1. Po zablokowaniu wątków w kodzie macierzystym jego licznik wstrzymany ma wartość 0, o ile nie użyto `SuspendThread` wywołania.
+ W kodzie zarządzanym Liczba wstrzymanych zmian w przypadku zablokowania lub odblokowania wątku. W przypadku zablokowania wątku w kodzie zarządzanym jego liczba wstrzymań wynosi 1. W przypadku zablokowania wątku w kodzie natywnym jego wstrzymana liczba jest równa 0, chyba że użyto `SuspendThread` wywołania.
 
 > [!NOTE]
-> Podczas debugowania wywołań z kodu natywnego do zarządzanego kodu, kod zarządzany działa w tym samym wątku fizycznym jako kodu natywnego, która nazwała go. Zawieszanie lub zawiesza się Wątek macierzysty również zawiesza się kod zarządzany.
+> Podczas debugowania wywołania z kodu natywnego do kodu zarządzanego, kod zarządzany jest uruchamiany w tym samym wątku fizycznym co kod natywny, który go wywołał. Zawieszanie lub zamrażanie wątku natywnego blokuje również kod zarządzany.
 
-### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Na blokowanie lub odblokowywanie wykonanie wątku
+### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Aby zablokować lub odblokować wykonywanie wątku
 
-- Na pasku narzędzi u góry **wątków** wybierz **Zablokuj wątki** lub **Odblokuj wątki**.
+- Na pasku narzędzi u góry okna **wątki** wybierz opcję **Zablokuj wątki** lub **rozmrażaj wątki**.
 
-     Ta akcja dotyczy tylko wątki, które są wybrane w **wątków** okna.
+     Ta akcja ma wpływ tylko na wątki, które są wybrane w oknie **wątki** .
 
-### <a name="switch-to-another-thread"></a>Przełączanie na inny wątek
+### <a name="switch-to-another-thread"></a>Przełącz do innego wątku
 
-Żółta strzałka wskazuje bieżący wątek (i lokalizacja wskaźnik wykonania). Zielona strzałka z zakręconym ogonkiem wskazuje, że innym niż bieżący wątek jest bieżący kontekst debugera.
+Żółta strzałka wskazuje bieżący wątek (i lokalizację wskaźnika wykonywania). Zielona strzałka z ogonem klamrowym wskazuje, że wątek inny niż bieżący ma bieżący kontekst debugera.
 
 #### <a name="to-switch-to-another-thread"></a>Aby przełączyć się do innego wątku
 
 - Wykonaj jedną z następujących czynności:
 
-  - Kliknij dwukrotnie wątek.
+  - Kliknij dwukrotnie dowolny wątek.
 
-  - Kliknij prawym przyciskiem myszy wątku, a następnie wybierz pozycję **Przełącz do wątku**.
+  - Kliknij prawym przyciskiem myszy wątek i wybierz polecenie **Przełącz do wątku**.
 
-## <a name="group-and-sort-threads"></a>Grupowanie i sortowanie wątków
- Grupowanie wątków nagłówek pojawia się w tabeli dla każdej grupy. Nagłówek zawiera opis grupy, takie jak **wątku roboczego** lub **wątki bez flagi**, a kontrolka drzewa. Wątki elementu członkowskiego każdej grupy pojawiają się pod nagłówkiem grupy. Jeśli chcesz ukryć wątków członka grupy, formant drzewa Aby zwinąć grupy.
+## <a name="group-and-sort-threads"></a>Grupuj i Sortuj wątki
+ Gdy grupujesz wątki, w tabeli dla każdej grupy pojawi się nagłówek. Nagłówek zawiera opis grupy, taki jak **wątek roboczy** lub **wątki nieoflagowane**oraz formant drzewa. Wątki elementów członkowskich każdej grupy są wyświetlane pod nagłówkiem grupy. Aby ukryć wątki elementów członkowskich dla grupy, należy zwinąć grupę przy użyciu kontrolki drzewa.
 
- Grupowanie ma pierwszeństwo przed sortowania, można Grupuj wątki według kategorii, na przykład i sortować je według Identyfikatora w ramach każdej kategorii.
+ Ponieważ grupowanie ma pierwszeństwo przed sortowaniem, można grupować wątki według kategorii, na przykład, a następnie sortować je według identyfikatora w każdej kategorii.
 
-### <a name="to-sort-threads"></a>Aby posortować wątków
+### <a name="to-sort-threads"></a>Aby posortować wątki
 
-1. Na pasku narzędzi u góry **wątków** okna, wybierz przycisk u góry dowolnej kolumny.
+1. Na pasku narzędzi u góry okna **wątki** wybierz przycisk w górnej części dowolnej kolumny.
 
-     Wątki, teraz są sortowane według wartości w tej kolumnie.
+     Wątki są teraz sortowane według wartości w tej kolumnie.
 
-2. Jeśli chcesz odwrócić porządek sortowania, wybierz ten sam przycisk ponownie.
+2. Jeśli chcesz odwrócić porządek sortowania, zaznacz ten sam przycisk ponownie.
 
-     Wątki, które znajdowały się u góry listy teraz pojawiają się na dole.
+     Wątki, które pojawiły się w górnej części listy, teraz pojawiają się u dołu.
 
-### <a name="to-group-threads"></a>Grupa wątków
+### <a name="to-group-threads"></a>Do grup wątków
 
-- W **wątków** pasek narzędzi okna, wybierz opcję **Grupuj według** , a następnie wybierz kryteria, których chcesz grupowanie wątków przez.
+- Na pasku narzędzi okna **wątki** wybierz listę **Grupuj według** , a następnie wybierz kryteria, według których chcesz grupować wątki.
 
-### <a name="to-sort-threads-within-groups"></a>Aby posortować wątków w grupach
+### <a name="to-sort-threads-within-groups"></a>Aby posortować wątki w grupach
 
-1. Na pasku narzędzi u góry **wątków** wybierz **Grupuj według** , a następnie wybierz kryteria, których chcesz grupowanie wątków przez.
+1. Na pasku narzędzi u góry okna **wątki** wybierz listę **Grupuj według** , a następnie wybierz kryteria, według których chcesz grupować wątki.
 
-2. W **wątków** okna, wybierz przycisk u góry dowolnej kolumny.
+2. W oknie **wątki** wybierz przycisk w górnej części dowolnej kolumny.
 
-     Wątki, teraz są sortowane według wartości w tej kolumnie.
+     Wątki są teraz sortowane według wartości w tej kolumnie.
 
-### <a name="to-expand-or-collapse-all-groups"></a>Rozwiń lub Zwiń wszystkie grupy
+### <a name="to-expand-or-collapse-all-groups"></a>Aby rozwinąć lub zwinąć wszystkie grupy
 
-- Na pasku narzędzi u góry **wątków** wybierz **Rozwiń grupy** lub **Zwiń grupy**.
+- Na pasku narzędzi u góry okna **wątki** wybierz **Rozwiń grupy** lub **Zwiń grupy**.
 
 ## <a name="search-for-specific-threads"></a>Wyszukaj określone wątki
- Możesz wyszukać wątki, które odpowiadają określony ciąg w **wątków** okna. Podczas wyszukiwania dla wątków, w oknie zostaną wyświetlone wszystkie wątki dopasowywania ciągu wyszukiwania w dowolnej kolumnie. Informacje te obejmują lokalizacji wątku, który pojawia się w górnej części stosu wywołań w **lokalizacji** kolumny. Domyślnie przeszukiwane nie jest pełny stos wywołania.
+ W oknie **wątki** można wyszukać wątki pasujące do określonego ciągu. Podczas wyszukiwania wątków w oknie są wyświetlane wszystkie wątki pasujące do ciągu wyszukiwania w dowolnej kolumnie. Te informacje obejmują lokalizację wątku wyświetlaną w górnej części stosu wywołań w kolumnie **Lokalizacja** . Domyślnie cały stos wywołań nie jest przeszukiwany.
 
 ### <a name="to-search-for-specific-threads"></a>Aby wyszukać określone wątki
 
-1. Na pasku narzędzi u góry **wątków** okna, przejdź do **wyszukiwania** pole, a następnie:
+1. Na pasku narzędzi u góry okna **wątki** przejdź do pola **wyszukiwania** , a następnie:
 
-     - Wprowadź wyszukiwany ciąg, a następnie naciśnij klawisz **Enter**.
+     - Wprowadź ciąg wyszukiwania, a następnie naciśnij klawisz **Enter**.
 
-     \- lub —
+     \- oraz
 
-     - Wybierz z listy rozwijanej obok pozycji **wyszukiwania** polu, a następnie wybierz wyszukiwany ciąg z poprzedniego wyszukiwania.
+     - Wybierz listę rozwijaną obok pola **wyszukiwania** i wybierz ciąg wyszukiwania z poprzedniego wyszukiwania.
 
-2. (Opcjonalnie) Aby dołączyć pełny stos wywołań wyszukiwania, wybierz **stos wywołań wyszukiwania**.
+2. Obowiązkowe Aby dołączyć pełny stos wywołań w wyszukiwaniu, wybierz pozycję **Wyszukaj stos wywołań**.
 
-## <a name="display-thread-call-stacks-and-switch-between-frames"></a>Wyświetlić stosy wywołań wątku i przełączać się między ramki
-W programie wielowątkowym każdy wątek ma swój własny stos wywołań. **Wątków** okna zapewnia wygodny sposób, aby wyświetlić te stosów.
+## <a name="display-thread-call-stacks-and-switch-between-frames"></a>Wyświetlaj stosy wywołań wątku i przełączaj między ramkami
+W programie wielowątkowym każdy wątek ma własny stos wywołań. Okno **wątki** zapewnia wygodny sposób wyświetlania tych stosów.
 
 > [!TIP]
-> Wizualna reprezentacja stos wywołań dla każdego wątku, można użyć [stosów równoległych](../debugger/get-started-debugging-multithreaded-apps.md) okna.
+> Aby uzyskać wizualną reprezentację stosu wywołań dla każdego wątku, użyj okna [stosów równoległych](../debugger/get-started-debugging-multithreaded-apps.md) .
 
 ### <a name="to-view-the-call-stack-of-a-thread"></a>Aby wyświetlić stos wywołań wątku
 
-- W **lokalizacji** kolumny, zaznacz odwróconą trójkąta obok lokalizacji wątku.
+- W kolumnie **Lokalizacja** zaznacz odwrócony trójkąt obok lokalizacji wątku.
 
-     Lokalizacja rozwija Pokaż stos wywołań dla wątku.
+     Lokalizacja rozszerza się, aby pokazać stos wywołań wątku.
 
-### <a name="to-view-or-collapse-the-call-stacks-of-all-threads"></a>Aby wyświetlić lub Zwiń stosy wywołań wszystkich wątków
+### <a name="to-view-or-collapse-the-call-stacks-of-all-threads"></a>Aby wyświetlić lub zwinąć stosy wywołań wszystkich wątków
 
-- Na pasku narzędzi u góry **wątków** wybierz **rozwiń stosy wywołań** lub **Zwiń stosy wywołań**.
+- Na pasku narzędzi u góry okna **wątki** wybierz opcję **Rozwiń stosy wywołań** lub **Zwiń stosy wywołań**.
 
-## <a name="see-also"></a>Zobacz także
-- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+## <a name="see-also"></a>Zobacz też
+- [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Rozpoczynanie debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md)

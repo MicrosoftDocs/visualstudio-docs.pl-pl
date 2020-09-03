@@ -1,5 +1,5 @@
 ---
-title: 'Przygotowanie debugowania: Aplikacje sieci Web programu ASP.NET | Dokumentacja firmy Microsoft'
+title: 'Przygotowanie debugowania: ASP.NET aplikacje sieci Web | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,52 +20,52 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7a80587062442688551d07128a2cec49a712adf6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691461"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Przygotowanie debugowania: Aplikacje internetowe ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Szablon witryny sieci Web tworzy aplikację formularza sieci Web. Po utworzeniu witryny sieci Web przy użyciu tego szablonu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tworzy ustawienia domyślne dla debugowania. W **właściwości projektu** okno dialogowe, można określić czy ma być stronie startowej strony sieci Web. Po rozpoczęciu debugowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]witryny sieci Web przy użyciu tych ustawień domyślnych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uruchamia program Internet Explorer i dołącza debuger [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] proces roboczy (aspnet_wp.exe lub w3wp.exe). Aby uzyskać więcej informacji, zobacz [wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md).  
+[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Szablon witryny sieci Web tworzy aplikację formularza sieci Web. Podczas tworzenia witryny sieci Web przy użyciu tego szablonu program [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tworzy domyślne ustawienia dla debugowania. W oknie dialogowym **właściwości projektu** można określić, czy strona sieci Web ma być stroną startową. Po rozpoczęciu debugowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] witryny sieci Web przy użyciu tych ustawień domyślnych program [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Internet Explorer i dołącza debuger do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu roboczego (aspnet_wp.exe lub w3wp.exe). Aby uzyskać więcej informacji, zobacz [Wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md).  
   
 ### <a name="to-create-a-web-forms-application"></a>Aby utworzyć aplikację formularzy sieci Web  
   
-1. Na **pliku** menu, wybierz **nową witrynę sieci Web**.  
+1. W menu **plik** wybierz polecenie **Nowa witryna sieci Web**.  
   
-2. W **nową witrynę sieci Web** okno dialogowe, wybierz opcję [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] **witryny sieci Web**.  
+2. W oknie dialogowym **Nowa witryna sieci Web** wybierz pozycję [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] **Witryna sieci Web**.  
   
 3. Kliknij przycisk **OK**.  
   
 ### <a name="to-debug-your-web-form"></a>Aby debugować formularz sieci Web  
   
-1. Ustaw co najmniej jednego punktu przerwania w funkcji i procedury obsługi zdarzeń.  
+1. Ustaw co najmniej jeden punkt przerwania w funkcjach i obsłudze zdarzeń.  
   
-     Aby uzyskać więcej informacji, zobacz [punkty przerwania i śledzenia](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
+     Aby uzyskać więcej informacji, zobacz [punkty przerwania i punkty śledzenia](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
-2. Po osiągnięciu punktu przerwania przejść przez kod wewnątrz funkcji. Obserwuj wykonywanie kodu, dopóki nie można ustalić przyczynę problemu.  
+2. Po trafieniu punktu przerwania przejdź do kodu wewnątrz funkcji. Obserwuj wykonywanie kodu do momentu odizolowania problemu.  
   
-     Aby uzyskać więcej informacji, zobacz [przechodzenie krok po kroku](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) i [debugowanie aplikacji sieci Web i skryptu](../debugger/debugging-web-applications-and-script.md).  
+     Aby uzyskać więcej informacji, zobacz [krokowe](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) i [debugowanie aplikacji sieci Web i skryptów](../debugger/debugging-web-applications-and-script.md).  
   
-## <a name="changing-default-configurations"></a>Zmiana konfiguracji domyślnych  
- Jeśli chcesz zmienić domyślne debugowania i zwalniania konfiguracji utworzone przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], możesz to zrobić. Aby uzyskać więcej informacji, zobacz [jak: Ustaw wartość Debug i Release konfiguracje](../debugger/how-to-set-debug-and-release-configurations.md).  
+## <a name="changing-default-configurations"></a>Zmienianie konfiguracji domyślnych  
+ Jeśli chcesz zmienić domyślne konfiguracje debugowania i wydania utworzone przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] program, możesz to zrobić. Aby uzyskać więcej informacji, zobacz [How to: Set Debug and Release Configurations](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 #### <a name="to-change-the-default-debug-configuration"></a>Aby zmienić domyślną konfigurację debugowania  
   
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy witrynę sieci Web i wybierz **stron właściwości** otworzyć **stron właściwości** okno dialogowe.  
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy witrynę sieci Web i wybierz polecenie **strony właściwości** , aby otworzyć okno dialogowe **strony właściwości** .  
   
-2. Kliknij przycisk **opcje uruchamiania**.  
+2. Kliknij przycisk **Start Opcje**.  
   
-3. Ustaw **Akcja uruchamiania** do strony sieci Web, które powinny być wyświetlane jako pierwsze.  
+3. Ustaw **akcję uruchamiania** na stronę sieci Web, która powinna być wyświetlana jako pierwsza.  
   
-4. W obszarze **debugery**, upewnij się, że **debugowanie ASP.NET** jest zaznaczone.  
+4. W obszarze **debugery**upewnij się, że jest zaznaczone polecenie **Debuguj ASP.NET** .  
   
-     Aby uzyskać więcej informacji, zobacz [ustawienia stron właściwości dla projektów sieci Web](../debugger/property-pages-settings-for-web-projects.md).  
+     Aby uzyskać więcej informacji, zobacz [Ustawienia stron właściwości dla projektów sieci Web](../debugger/property-pages-settings-for-web-projects.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
+ [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)

@@ -127,10 +127,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 71854388f3fb1c5eaea7d40ed2757af9cecacf1a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543809"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Dodawanie adnotacji do parametrów funkcji i zwracanych wartości
@@ -187,7 +187,7 @@ W tym artykule opisano typowe zastosowania adnotacji dla prostych parametrów fu
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     W tym przykładzie obiekt wywołujący udostępnia bufor `size` elementów dla `p1` .  `MyStringCopy`sprawia, że niektóre z tych elementów są prawidłowe. Co ważniejsze, `_Null_terminated_` Adnotacja na `PWSTR` oznacza, że `p1` jest zakończona wartością null w stanie post.  W ten sposób liczba prawidłowych elementów jest nadal zdefiniowana, ale określona liczba elementów nie jest wymagana.  
+     W tym przykładzie obiekt wywołujący udostępnia bufor `size` elementów dla `p1` .  `MyStringCopy` sprawia, że niektóre z tych elementów są prawidłowe. Co ważniejsze, `_Null_terminated_` Adnotacja na `PWSTR` oznacza, że `p1` jest zakończona wartością null w stanie post.  W ten sposób liczba prawidłowych elementów jest nadal zdefiniowana, ale określona liczba elementów nie jest wymagana.  
   
      `_bytes_`Wariant zawiera rozmiar w bajtach, a nie elementy. Użyj tego tylko, jeśli rozmiar nie może być wyrażony jako element.  Na przykład `char` ciągi używają `_bytes_` wariantu tylko wtedy, gdy Podobna funkcja, która używa tej funkcji `wchar_t` .  
   
@@ -219,7 +219,7 @@ W tym artykule opisano typowe zastosowania adnotacji dla prostych parametrów fu
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     Innymi słowy, każdy element, który istnieje w buforze aż do `s` stanu sprzed, jest prawidłowy w stanie post.  Przykład:  
+     Innymi słowy, każdy element, który istnieje w buforze aż do `s` stanu sprzed, jest prawidłowy w stanie post.  Na przykład:  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -247,7 +247,7 @@ W tym artykule opisano typowe zastosowania adnotacji dla prostych parametrów fu
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     Innymi słowy, każdy element, który istnieje w buforze aż do `s` stanu sprzed, jest prawidłowy w stanie post.  Przykład:  
+     Innymi słowy, każdy element, który istnieje w buforze aż do `s` stanu sprzed, jest prawidłowy w stanie post.  Na przykład:  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -480,7 +480,7 @@ W tym artykule opisano typowe zastosowania adnotacji dla prostych parametrów fu
   
 - `_Struct_size_bytes_(size)`  
   
-     Dotyczy deklaracji klasy lub struktury.  Wskazuje, że prawidłowy obiekt tego typu może być większy niż zadeklarowany typ, z liczbą bajtów podawaną przez `size` .  Przykład:  
+     Dotyczy deklaracji klasy lub struktury.  Wskazuje, że prawidłowy obiekt tego typu może być większy niż zadeklarowany typ, z liczbą bajtów podawaną przez `size` .  Na przykład:  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   

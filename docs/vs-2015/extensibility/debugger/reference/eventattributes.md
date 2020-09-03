@@ -1,5 +1,5 @@
 ---
-title: EVENTATTRIBUTES | Dokumentacja firmy Microsoft
+title: EVENTATTRIBUTES | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3026845be9aa6623d6c5cd42406385e8c5c2a11e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149373"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa atrybuty zdarzeń.  
+Określa atrybuty zdarzenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -53,39 +53,39 @@ public enum enum_EVENTATTRIBUTES { 
   
 ## <a name="members"></a>Elementy członkowskie  
  EVENT_ASYNCHRONOUS  
- Wskazuje, że zdarzenie jest asynchroniczna, jak i braku odpowiedzi na zdarzenia jest wymagana.  
+ Wskazuje, że zdarzenie jest asynchroniczne i nie są konieczne żadne odpowiedzi na zdarzenie.  
   
  EVENT_SYNCHRONOUS  
- Wskazuje, że zdarzenie jest synchroniczne; Odpowiedz przez [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).  
+ Wskazuje, że zdarzenie jest synchroniczne; Odpowiedz przy użyciu metody [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).  
   
  EVENT_STOPPING  
- Wskazuje, że jest to zdarzenie zatrzymywania. Musi być połączona z jedną `EVENT_ASYNCHRONOUS` lub `EVENT_SYNCHRONOUS`.  
+ Wskazuje, że jest to zdarzenie zatrzymywania. Musi być połączony z albo `EVENT_ASYNCHRONOUS` `EVENT_SYNCHRONOUS` .  
   
  EVENT_ASYNC_STOP  
- Wskazuje zdarzenie asynchroniczne zatrzymywania. Obecnie nie ma żadnego takiego zdarzenia. Ta flaga jest tylko symbol zastępczy.  
+ Wskazuje asynchroniczne zdarzenie zatrzymywania. Obecnie nie ma takiego zdarzenia. Ta flaga jest tylko symbolem zastępczym.  
   
  EVENT_SYNC_STOP  
- Wskazuje zdarzenia synchroniczne zatrzymywanie (kombinację `EVENT_SYNCHRONOUS` i `EVENT_STOPPING`). Ta wartość jest używana przez aparat debugowania (DE) podczas wysyłania zdarzeń zatrzymywania. Udzielona przez wywołanie [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [kroku](../../../extensibility/debugger/reference/idebugprogram2-step.md), lub [Kontynuuj](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
+ Wskazuje synchroniczne zdarzenie zatrzymania (kombinację `EVENT_SYNCHRONOUS` i `EVENT_STOPPING` ). Ta wartość jest używana przez aparat debugowania (DE), gdy wysyła zdarzenie zatrzymania. Odpowiedź jest podejmowana przez wywołanie do [wykonania](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [krok](../../../extensibility/debugger/reference/idebugprogram2-step.md)lub [kontynuacja](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
   
  EVENT_IMMEDIATE  
- Określa zdarzenie, które są wysyłane do IDE natychmiast. Ta flaga jest w połączeniu z inne flagi, takich jak `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, lub `EVENT_SYNC_STOP` aby wskazać typ zdarzenia oraz fakt, że mechanizm odpowiedzi (jeśli istnieje) jest znany.  
+ Wskazuje zdarzenie, które jest wysyłane natychmiast i synchronicznie do IDE. Ta flaga jest połączona z innymi flagami, takimi jak `EVENT_ASYNCHRONOUS` , `EVENT_SYNCHRONOUS` , lub `EVENT_SYNC_STOP` wskazują typ zdarzenia i fakt, że mechanizm odpowiedzi (jeśli istnieje) jest znany.  
   
  EVENT_EXPRESSION_EVALUATION  
  Zdarzenie jest wynikiem obliczenia wyrażenia.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wartości są przekazywane w `dwAttrib` parametru [zdarzeń](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) metody.  
+ Te wartości są przesyłane w `dwAttrib` parametrze metody [zdarzenia](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) .  
   
- Te wartości mogą być łączone przy użyciu bitowego operatora `OR`.  
+ Te wartości mogą być połączone z bitową `OR` .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)   
- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [Zdarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

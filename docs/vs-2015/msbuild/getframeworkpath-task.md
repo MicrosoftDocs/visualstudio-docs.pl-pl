@@ -1,5 +1,5 @@
 ---
-title: Getframeworkpath — zadanie | Dokumentacja firmy Microsoft
+title: GetFrameworkPath — — zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2b528d0a4971d1d070c69d12cdb9a693d9a30f20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149487"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath — Zadanie
@@ -36,20 +36,20 @@ Pobiera ścieżkę do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] zes
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`FrameworkVersion11Path`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów framework w wersji 1.1, jeśli jest obecny. W przeciwnym razie zwraca `null`.|  
-|`FrameworkVersion20Path`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów framework w wersji 2.0, jeśli jest obecny. W przeciwnym razie zwraca `null`.|  
-|`FrameworkVersion30Path`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów framework w wersji 3.0 lub nowszej, jeśli jest obecny. W przeciwnym razie zwraca `null`.|  
-|`FrameworkVersion35Path`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów w wersji 3.5 framework, jeśli jest obecny. W przeciwnym razie zwraca `null`.|  
-|`FrameworkVersion40Path`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów framework w wersji 4.0 lub nowszej, jeśli jest obecny. W przeciwnym razie zwraca `null`.|  
-|`Path`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do najnowszych zestawów framework, jeśli są dostępne. W przeciwnym razie zwraca `null`.|  
+|`FrameworkVersion11Path`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów programu Framework w wersji 1,1, jeśli istnieją. W przeciwnym razie zwraca `null` .|  
+|`FrameworkVersion20Path`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów programu Framework w wersji 2,0, jeśli istnieją. W przeciwnym razie zwraca `null` .|  
+|`FrameworkVersion30Path`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów programu Framework w wersji 3,0, jeśli istnieją. W przeciwnym razie zwraca `null` .|  
+|`FrameworkVersion35Path`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów programu Framework w wersji 3,5, jeśli istnieją. W przeciwnym razie zwraca `null` .|  
+|`FrameworkVersion40Path`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów programu Framework w wersji 4,0, jeśli istnieją. W przeciwnym razie zwraca `null` .|  
+|`Path`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do najnowszych zestawów struktury, jeśli są dostępne. W przeciwnym razie zwraca `null` .|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli różne wersje programu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] są zainstalowane, to zadanie zwraca informacje o wersji, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] jest przeznaczony do działania.  
+ W przypadku zainstalowania kilku wersji programu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] zadanie to zwraca wersję, która [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] została zaprojektowana do uruchamiania programu.  
   
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie użyto `GetFrameworkPath` zadania do ścieżki do przechowywania [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] w `FrameworkPath` właściwości.  
+ Poniższy przykład używa `GetFrameworkPath` zadania do przechowywania ścieżki do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] `FrameworkPath` właściwości.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -64,5 +64,5 @@ Pobiera ścieżkę do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] zes
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zadania](../msbuild/msbuild-tasks.md)   
+ [Widoku](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

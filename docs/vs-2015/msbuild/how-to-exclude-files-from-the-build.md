@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wykluczanie plików z kompilacji | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: wykluczanie plików z kompilacji | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,19 +14,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d7aac21e1ee4d77453808090fc37a3fccaf77e1d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821613"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Instrukcje: Wykluczanie plików z kompilacji
+# <a name="how-to-exclude-files-from-the-build"></a>Porady: wykluczanie plików z kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżone zestawu katalogów jako dane wejściowe dla kompilacji. Jednak może być jeden plik w katalogu lub w katalogu w zestawie zagnieżdżonych katalogów, których nie chcesz dodać jako dane wejściowe dla kompilacji. Można jawnie wykluczone tego pliku lub katalogu, z listy danych wejściowych. W projekcie, który chcesz uwzględnić w pewnych okolicznościach również może być plikiem. Można jawnie zadeklarować warunków, w których plik jest uwzględniony w kompilacji.  
+W pliku projektu można użyć symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżony zestaw katalogów jako dane wejściowe dla kompilacji. Jednak może istnieć jeden plik w katalogu lub jeden katalog w zagnieżdżonym zestawie katalogów, które nie mają być uwzględniane jako dane wejściowe dla kompilacji. Można jawnie wykluczyć ten plik lub katalog z listy danych wejściowych. Może to być również plik w projekcie, który ma być uwzględniony tylko w określonych warunkach. Można jawnie zadeklarować warunki, w których plik jest uwzględniony w kompilacji.  
   
-## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>Wykluczanie pliku lub katalogu dane wejściowe dla kompilacji  
- Element listy są pliki wejściowe dla kompilacji. Elementy, które mają zostać uwzględnione są deklarowane, oddzielnie lub jako grupę za pomocą `Include` atrybutu. Przykład:  
+## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>Wykluczanie pliku lub katalogu z danych wejściowych dla kompilacji  
+ Listy elementów są plikami wejściowymi dla kompilacji. Elementy, które mają zostać uwzględnione, są deklarowane osobno lub jako Grupa przy użyciu `Include` atrybutu. Na przykład:  
   
 ```  
 <CSFile Include="Form1.cs"/>  
@@ -35,39 +35,39 @@ W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszyst
 <JPGFile Include="Images\**\*.jpg"/>  
 ```  
   
- Jeśli używano symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżone zestawu katalogów jako dane wejściowe dla kompilacji, może być jeden lub więcej plików w katalogu lub jednego katalogu w zagnieżdżonych zestawu katalogów, których nie chcesz dołączyć. Aby wyłączyć element z listy elementów, należy użyć `Exclude` atrybutu.  
+ Jeśli użyto symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżony zestaw katalogów jako dane wejściowe dla kompilacji, może istnieć co najmniej jeden plik w katalogu lub jeden katalog w zagnieżdżonym zestawie katalogów, które nie mają być uwzględniane. Aby wykluczyć element z listy elementów, użyj `Exclude` atrybutu.  
   
-#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Aby włączyć wszystkie pliki CS lub .vb, z wyjątkiem formularz2  
+#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Uwzględnienie wszystkich plików cs lub VB z wyjątkiem Form2  
   
-- Użyj jednej z następujących `Include` i `Exclude` atrybuty:  
+- Użyj jednego z następujących `Include` `Exclude` atrybutów:  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
     ```  
   
-     \- lub —  
+     \- oraz  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb"/>  
     ```  
   
-#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Aby włączyć wszystkie pliki CS lub .vb, z wyjątkiem Formularz2 i Form3  
+#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Uwzględnienie wszystkich plików cs lub VB z wyjątkiem Form2 i Form3  
   
-- Użyj jednej z następujących `Include` i `Exclude` atrybuty:  
+- Użyj jednego z następujących `Include` `Exclude` atrybutów:  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
     ```  
   
-     \- lub —  
+     \- oraz  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>  
     ```  
   
-#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Aby włączyć wszystkie pliki jpg podkatalogi katalogu obrazów, z wyjątkiem tych, które w katalogu Version2  
+#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>W celu uwzględnienia wszystkich plików jpg w podkatalogach katalogu obrazów, z wyjątkiem tych znajdujących się w katalogu Version2  
   
-- Należy użyć następującego `Include` i `Exclude` atrybuty:  
+- Użyj następujących `Include` atrybutów i `Exclude` :  
   
     ```  
     <JPGFile  
@@ -76,14 +76,14 @@ W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszyst
     ```  
   
     > [!NOTE]
-    > Należy określić ścieżkę dla obu atrybutów. Jeśli używasz ścieżki bezwzględnej do określenia lokalizacji plików w `Include` atrybutu, należy również użyć ścieżką bezwzględną `Exclude` atrybutu; Jeśli używasz ścieżki względnej `Include` atrybutu, należy również użyć ścieżki względnej w `Exclude`atrybutu.  
+    > Należy określić ścieżkę dla obu atrybutów. Jeśli ścieżka bezwzględna jest używana do określania lokalizacji plików w `Include` atrybucie, należy również użyć ścieżki absolutnej w atrybucie `Exclude` . Jeśli używasz ścieżki względnej w `Include` atrybucie, należy również użyć ścieżki względnej w `Exclude` atrybucie.  
   
-## <a name="using-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Za pomocą warunków do wykluczenia pliku lub katalogu z danych wejściowych dla kompilacji  
- W przypadku elementów, które mają zostać uwzględnione na przykład, w kompilacji debugowania, ale nie kompilację wydania, można użyć `Condition` atrybutu, aby określić warunki, w którym należy dołączyć element.  
+## <a name="using-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Używanie warunków do wykluczenia pliku lub katalogu z danych wejściowych dla kompilacji  
+ Jeśli istnieją elementy, które mają zostać uwzględnione, na przykład w kompilacji debugowania, ale nie na kompilacji, można użyć `Condition` atrybutu, aby określić warunki, w których ma zostać uwzględniony element.  
   
-#### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Aby dołączyć plik Formula.vb tylko w kompilacjach wydania  
+#### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Aby dołączyć plik Formula. vb tylko w kompilacjach wydania  
   
-- Użyj `Condition` atrybut podobny do następującego:  
+- Użyj `Condition` atrybutu podobnego do poniższego:  
   
     ```  
     <Compile  
@@ -92,7 +92,7 @@ W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszyst
     ```  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu tworzy projekt ze wszystkimi plikami .cs w katalogu, z wyjątkiem Form2.cs.  
+ Poniższy przykład kodu kompiluje projekt ze wszystkimi plikami cs w katalogu, z wyjątkiem Form2.cs.  
   
 ```  
 <Project DefaultTargets="Compile"  
@@ -126,5 +126,5 @@ W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszyst
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Elementy](../msbuild/msbuild-items.md)   
- [Program MSBuild](msbuild.md) [jak: wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md)
+ [Produktów](../msbuild/msbuild-items.md)   
+ [MSBuild](msbuild.md) [: Wybieranie plików do skompilowania](../msbuild/how-to-select-the-files-to-build.md)

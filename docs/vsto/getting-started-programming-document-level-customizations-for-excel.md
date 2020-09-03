@@ -1,5 +1,5 @@
 ---
-title: 'Excel: Wprowadzenie do programowania dostosowań na poziomie dokumentu'
+title: 'Excel: wprowadzenie Programowanie dostosowań na poziomie dokumentu'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,60 +14,60 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2c1ff264eb1a4ca7afdc424cef7edf15bae06554
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/30/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66402157"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Excel
-  Jeśli możesz po prostu zaczynasz, tworzenia dostosowań poziomie dokumentu dla programu Microsoft Office Excel przy użyciu programu Visual Studio, Oto, co musisz wiedzieć.
+  Jeśli dopiero zaczynasz tworzyć dostosowania na poziomie dokumentu dla programu Microsoft Office Excel przy użyciu programu Visual Studio, Oto co należy wiedzieć.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
-## <a name="understand-how-document-level-customizations-for-excel-work"></a>Zrozumienie dostosowań na poziomie dokumentów dla pracy w programie Excel
- Dostosowania poziomu dokumentu dla programu Excel opiera się wokół pojedynczego skoroszytu. Aby rozpocząć korzystanie z dostosowywania, użytkownik końcowy otwiera skoroszyt lub tworzy skoroszytu na podstawie szablonu programu Excel. Zdarzenia w skoroszycie, na przykład wpisywanie w komórkach lub klikając przyciski i menu, można wywołać metody obsługi zdarzeń w zestawie. Po zamknięciu skoroszytu funkcji oferowanych przez dostosowanie nie są już dostępne w programie Excel, tylko w dokumencie, który je zawiera.
+## <a name="understand-how-document-level-customizations-for-excel-work"></a>Dowiedz się, jak dostosowania na poziomie dokumentu dla programu Excel
+ Dostosowanie na poziomie dokumentu dla programu Excel jest oparte na jednym skoroszycie. Aby rozpocząć korzystanie z dostosowania, użytkownik końcowy otwiera skoroszyt lub tworzy skoroszyt z szablonu programu Excel. Zdarzenia w skoroszycie, na przykład wpisywanie w komórkach lub klikanie przycisków i elementów menu, mogą wywołać metody obsługi zdarzeń w zestawie. Gdy skoroszyt zostanie zamknięty, funkcje udostępniane przez dostosowanie nie będą już dostępne w programie Excel, tylko w dokumencie, który je zawiera.
 
  Aby uzyskać więcej informacji, zobacz [Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md).
 
 ## <a name="create-document-level-projects-for-excel"></a>Tworzenie projektów na poziomie dokumentu dla programu Excel
- Aby utworzyć dostosowywania poziomie dokumentu dla programu Excel, należy użyć szablonu projektu skoroszyt programu Excel lub szablon programu Excel w **nowy projekt** okno dialogowe. Te szablony zawierają odwołania do zestawów wymagane, a pliki projektu.
+ Aby utworzyć dostosowanie na poziomie dokumentu dla programu Excel, użyj szablonu skoroszyt programu Excel lub szablon projektu programu Excel w oknie dialogowym **Nowy projekt** . Szablony te zawierają wymagane odwołania do zestawów i pliki projektu.
 
- Aby uzyskać więcej informacji o sposobie tworzenia projektu na poziomie dokumentu dla programu Excel, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Aby uzyskać więcej informacji na temat szablonów projektu, zobacz [Przegląd szablony projektu pakietu Office](../vsto/office-project-templates-overview.md).
+ Aby uzyskać więcej informacji na temat tworzenia projektu na poziomie dokumentu dla programu Excel, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Aby uzyskać więcej informacji o szablonach projektów, zobacz [Office Project Templates Overview](../vsto/office-project-templates-overview.md).
 
-## <a name="program-excel-workbooks-by-using-host-items-and-host-controls"></a>Program skoroszytów programu Excel przy użyciu elementów hosta i kontrolek hosta
- *Hostowanie elementów* i *hostowania kontrolek* są klasami, które zapewniają model programowania dostosowywania poziomie dokumentu, utworzony przy użyciu programu Visual Studio.
+## <a name="program-excel-workbooks-by-using-host-items-and-host-controls"></a>Programowe skoroszyty programu Excel przy użyciu elementów hosta i kontrolek hosta
+ *Elementy hosta* i *formanty hosta* są klasami, które udostępniają model programowania dla dostosowań na poziomie dokumentu utworzonych przy użyciu programu Visual Studio.
 
- Obiekty hosta zapewnia punkt wejścia dla kodu i mogą również działać jako kontenery dla formantów hosta i kontrolek formularzy Windows Forms. W projektach na poziomie dokumentu dla programu Excel tych elementów hosta są reprezentowane przez `ThisWorkbook`, `Sheet1`, `Sheet2`, i `Sheet3` klasy.
+ Elementy hosta zapewniają punkt wejścia dla kodu i mogą działać jako kontenery dla formantów hosta i formantów Windows Forms. W projektach na poziomie dokumentu dla programu Excel te elementy hosta są reprezentowane przez `ThisWorkbook` klasy, `Sheet1` , `Sheet2` i `Sheet3` .
 
- Formanty hosta są oparte na natywnych obiektów programu Excel, takich jak lista obiektów i zakresów. Formanty hosta zapewnia funkcje podobne do natywnych obiektów programu Excel, ale mają również nowe zdarzenia, wsparcie oraz możliwość powiązania danych. Pojawiają się jako obiekty najwyższej jakości kodu projektu i technologii IntelliSense, która sprawia, że łatwiej odwoływać się do konkretnych obiektów bezpośrednio w kodzie, bez konieczności przechodzenia z modelu obiektów programu Excel.
+ Formanty hosta są oparte na natywnych obiektach programu Excel, takich jak obiekty list i zakresy. Formanty hosta zapewniają podobną funkcjonalność do natywnych obiektów programu Excel, ale mają także nowe zdarzenia, obsługę projektanta i możliwość tworzenia powiązań danych. Są one wyświetlane jako obiekty pierwszej klasy w kodzie projektu i w technologii IntelliSense, które ułatwiają odwoływanie się do określonych obiektów bezpośrednio w kodzie bez konieczności nawigowania po modelu obiektów programu Excel.
 
- Więcej informacji znajduje się w następujących tematach:
+ Aby uzyskać więcej informacji, zobacz następujące tematy:
 
-- [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)
+- [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)
 
 - [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)
 
-- [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)
+- [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-excel"></a>Dostosowywanie interfejsu użytkownika programu Excel
- Większość rozwiązań programu Microsoft Office zmodyfikować interfejsu użytkownika (UI) w aplikacji pakietu Office, aby niektóre umożliwiają użytkownikom na interakcję z rozwiązaniem. Istnieje wiele sposobów, w których można zmodyfikować interfejsu użytkownika programu Microsoft Excel za pomocą dostosowania poziomu dokumentu. Na przykład można dodać formanty do Wstążki lub można wyświetlić w okienku Akcje. Aby uzyskać więcej informacji, zobacz [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).
+ Większość Microsoft Officeych rozwiązań modyfikuje interfejs użytkownika aplikacji pakietu Office, aby zapewnić użytkownikom możliwość współdziałania z rozwiązaniem. Istnieje wiele sposobów modyfikowania interfejsu użytkownika programu Excel przy użyciu dostosowania na poziomie dokumentu. Na przykład można dodać kontrolki do wstążki lub wyświetlić okienko akcji. Aby uzyskać więcej informacji, zobacz temat [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).
 
- Możesz również otworzyć skoroszytu, który jest skojarzony z projektem bezpośrednio w programie Visual Studio. Jeśli skoroszyt jest otwarty w programie Visual Studio, można zmodyfikować skoroszytu przy użyciu interfejsu użytkownika programu Excel. Umożliwia także skoroszytu jako powierzchni projektowej, co pozwala na przeciągnij formanty na arkuszy. Aby uzyskać więcej informacji, zobacz [projekty pakietu Office w środowisku Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).
+ Możesz również otworzyć skoroszyt skojarzony z projektem bezpośrednio w programie Visual Studio. Gdy skoroszyt jest otwarty w programie Visual Studio, można zmodyfikować skoroszyt za pomocą interfejsu użytkownika programu Excel. Możesz również użyć skoroszytu jako powierzchni projektowej, co umożliwia przeciąganie kontrolek do arkuszy. Aby uzyskać więcej informacji, zobacz [projekty pakietu Office w środowisku programu Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).
 
-## <a name="use-data-binding"></a>Użyj powiązania danych
- Formanty hosta są również na liście elementów sterujących, które można przeciągać z **źródeł danych** okna. Dodawanie kontrolki hosta w tym sposób automatycznie wiąże ich źródła danych, które można skonfigurować przy użyciu okna. Bez pisania żadnego kodu, możesz wyświetlić dane z bazy danych, usług sieci web i business obiektów. Aby uzyskać więcej informacji, zobacz [wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).
+## <a name="use-data-binding"></a>Używanie powiązania danych
+ Formanty hosta znajdują się również na liście kontrolek, którą można przeciągnąć z okna **źródła danych** . Dodanie kontrolek hosta w ten sposób powoduje automatyczne powiązanie ich ze źródłem danych, które zostało skonfigurowane przy użyciu okna. Bez pisania kodu, można wyświetlać dane z baz danych, usług sieci Web i obiektów firmowych. Aby uzyskać więcej informacji, zobacz temat [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).
 
 ## <a name="next-steps"></a>Następne kroki
- Aby dowiedzieć się, jak utworzyć dostosowywania poziomie dokumentu dla programu Excel, zobacz [instruktażu: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md). Ten przewodnik stanowi wprowadzenie do narzędzi programistycznych pakietu Office w Visual Studio i modelu programowania dostosowań na poziomie dokumentu programu Excel.
+ Aby dowiedzieć się, jak utworzyć dostosowanie na poziomie dokumentu dla programu Excel, zobacz [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md). W tym instruktażu przedstawiono narzędzia programistyczne pakietu Office w programie Visual Studio oraz model programowania dla dostosowań na poziomie dokumentu programu Excel.
 
- Aby uzyskać listę tematów, które prowadzą użytkownika przez niektóre typowe zadania w projektach programu Excel, zobacz [typowe zadania w programowaniu Office](../vsto/common-tasks-in-office-programming.md).
+ Aby zapoznać się z listą tematów, które przeprowadzą Cię przez niektóre typowe zadania w projektach programu Excel, zobacz [typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)
+- [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)
 - [Rozwiązania programu Excel](../vsto/excel-solutions.md)
 - [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
-- [Wskazówki dotyczące za pomocą programu Excel](../vsto/walkthroughs-using-excel.md)
-- [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md)
+- [Wskazówki dotyczące korzystania z programu Excel](../vsto/walkthroughs-using-excel.md)
+- [Model obiektów programu Excel — Omówienie](../vsto/excel-object-model-overview.md)
 - [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)

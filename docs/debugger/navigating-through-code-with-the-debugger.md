@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5d6b9bb2eb6169de2bbbf41b6d4e96a5960e40fe
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348252"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Nawigowanie po kodzie za pomocą debugera programu Visual Studio
@@ -49,7 +49,7 @@ Większość okien debugera, takich jak **moduły** i okna **czujki** , jest dos
 
 Polecenia kroku debugera ułatwiają sprawdzenie stanu aplikacji lub Dowiedz się więcej na temat jego przepływu wykonania.
 
-### <a name="step-into-code-line-by-line"></a><a name="BKMK_Step_into__over__or_out_of_the_code"></a>Wkrocz do wiersza kodu według wiersza
+### <a name="step-into-code-line-by-line"></a><a name="BKMK_Step_into__over__or_out_of_the_code"></a> Wkrocz do wiersza kodu według wiersza
 
 Aby zatrzymać każdą instrukcję podczas debugowania, użyj kroku **Debuguj**  >  **do**lub naciśnij klawisz **F11**.
 
@@ -74,7 +74,7 @@ W przypadku wywołania funkcji zagnieżdżonej **Przejdź** do kroków do najbar
 >[!TIP]
 >Gdy wykonujesz każdy wiersz kodu, możesz umieścić wskaźnik myszy nad zmiennymi, aby zobaczyć ich wartości, lub użyć okien [lokalnych](autos-and-locals-windows.md) i [czujki](watch-and-quickwatch-windows.md) , aby obejrzeć zmiany wartości. Możesz również wizualnie śledzić [stos wywołań](how-to-use-the-call-stack-window.md) podczas przechodzenia do funkcji. (Aby uzyskać tylko Visual Studio Enterprise, zobacz [metody mapowania na stosie wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)).
 
-### <a name="step-through-code-and-skip-some-functions"></a><a name="BKMK_Step_over_Step_out"></a>Przechodzenie przez kod i pomijanie niektórych funkcji
+### <a name="step-through-code-and-skip-some-functions"></a><a name="BKMK_Step_over_Step_out"></a> Przechodzenie przez kod i pomijanie niektórych funkcji
 
 Podczas debugowania nie można zadbać o to, czy wiadomo, że działa, jak również kod biblioteki, który został przetestowany. Poniższe polecenia służą do pomijania kodu podczas wykonywania kodu. Funkcje są nadal wykonywane, ale debuger pominie je.
 
@@ -83,7 +83,7 @@ Podczas debugowania nie można zadbać o to, czy wiadomo, że działa, jak równ
 |**F10**|**Przekrocz nad**|Jeśli bieżący wiersz zawiera wywołanie funkcji, **krok powyżej** uruchamia kod, a następnie wstrzymuje wykonywanie w pierwszym wierszu kodu po wywołaniu wywołanej funkcji.|
 |**SHIFT** + Klawisz **F11**|**Wyjdź**|**Krok** Wyjdź kontynuuje uruchamianie kodu i wstrzymuje wykonywanie, gdy bieżąca funkcja zwraca wartość. Debuger pomija bieżącą funkcję.|
 
-## <a name="run-to-a-specific-location-or-function"></a><a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a>Uruchom do określonej lokalizacji lub funkcji
+## <a name="run-to-a-specific-location-or-function"></a><a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Uruchom do określonej lokalizacji lub funkcji
 
 Być może wolisz pracować bezpośrednio z określoną lokalizacją lub funkcją, gdy dokładnie wiesz, jaki kod chcesz sprawdzić, lub wiesz, gdzie chcesz rozpocząć debugowanie.
 
@@ -138,7 +138,7 @@ W debugerze można umieścić wskaźnik myszy nad instrukcją w kodzie źródło
 
 Aby przerwać w następnym dostępnym wierszu kodu w działającej aplikacji, wybierz kolejno opcje **Debuguj**  >  **Przerwij wszystkie**lub naciśnij **klawisze CTRL** + **Alt** + **Break**.
 
-## <a name="move-the-pointer-to-change-the-execution-flow"></a><a name="BKMK_Set_the_next_statement_to_execute"></a>Przesuń wskaźnik, aby zmienić przepływ wykonywania
+## <a name="move-the-pointer-to-change-the-execution-flow"></a><a name="BKMK_Set_the_next_statement_to_execute"></a> Przesuń wskaźnik, aby zmienić przepływ wykonywania
 
 Gdy debuger jest wstrzymany, żółta strzałka na marginesie kodu źródłowego lub okna **demontażu** oznacza lokalizację następnej instrukcji do wykonania. Możesz zmienić następną instrukcję, aby wykonać, przenosząc tę grot strzałki. Możesz pominąć część kodu lub powrócić do poprzedniego wiersza. Przesuwanie wskaźnika jest przydatne w przypadku sytuacji, takich jak pomijanie sekcji kodu zawierającej znaną usterkę.
 
@@ -180,7 +180,7 @@ Aby załadować symbole firmy Microsoft, zobacz [Konfigurowanie lokalizacji symb
 
 1. W oknie **moduły** można określić, które moduły mają symbole załadowane w kolumnie **stan symbolu** . Kliknij prawym przyciskiem myszy moduł, dla którego chcesz załadować symbole, a następnie wybierz pozycję **Załaduj symbole**.
 
-## <a name="step-into-properties-and-operators-in-managed-code"></a><a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a>Wkrocz do właściwości i operatorów w kodzie zarządzanym
+## <a name="step-into-properties-and-operators-in-managed-code"></a><a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Wkrocz do właściwości i operatorów w kodzie zarządzanym
  Debuger domyślnie krokowo przekracza właściwości i operatory w kodzie zarządzanym. W większości przypadków zapewnia to lepsze środowisko debugowania. Aby włączyć krokowe przechodzenie do właściwości lub operatorów **Debug**, wybierz  >  **Opcje**debugowania. Na stronie **Debugging**  >  **Ogólne** debugowanie wyczyść pole wyboru **Przekrocz nad właściwościami i operatorami (tylko zarządzane)** .
 
 ## <a name="see-also"></a>Zobacz też

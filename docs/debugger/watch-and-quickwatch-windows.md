@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ab66089de25b7648b13e1ba05f88ab55b7868df
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348031"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Obejrzyj zmienne z oknami Watch i QuickWatch
@@ -68,7 +68,7 @@ int main()
 
 1. W oknie **czujka** zaznacz pusty wiersz i wpisz zmienna `a` . Wykonaj te same czynności dla `b` i `c` .
 
-   ![Wyrażenia kontrolne zmiennych](../debugger/media/watchvariables.png "WatchVariables")
+   ![Obserwowanie zmiennych](../debugger/media/watchvariables.png "WatchVariables")
 
 1. Kontynuuj debugowanie, wybierając pozycję **Debuguj**do  >  **kroku** lub naciskając klawisz **F11** w razie potrzeby. Wartości zmiennych w oknie **czujki** zmieniają się podczas iteracji `for` pętli.
 
@@ -116,7 +116,7 @@ Można również przełączać nazwy właściwości i odfiltrować przypięte w�
 
 ::: moniker-end
 
-### <a name="refresh-watch-values"></a><a name="bkmk_refreshWatch"></a>Odśwież wartości czujki
+### <a name="refresh-watch-values"></a><a name="bkmk_refreshWatch"></a> Odśwież wartości czujki
 
 Ikona odświeżania (strzałka okrągła) może pojawić się w oknie **czujki** , gdy wyrażenie jest oceniane. Ikona odświeżania wskazuje błąd lub wartość, która jest nieaktualna.
 
@@ -147,13 +147,13 @@ Aby zademonstrować przy użyciu ikony odświeżania:
    }
    ```
 
-1. Rozpocznij debugowanie. Okno **czujki** pokazuje podobny komunikat:
+1. Uruchom debugowanie. Okno **czujki** pokazuje podobny komunikat:
 
    ![Odśwież czujkę](../debugger/media/refreshwatch.png "Odśwież czujkę")
 
 1. Aby odświeżyć wartość, wybierz ikonę odświeżania lub naciśnij klawisz spacji. Debuger przeszacuje wyrażenie.
 
-### <a name="expression-side-effects"></a><a name="bkmk_sideEffects"></a>Efekty uboczne wyrażenia
+### <a name="expression-side-effects"></a><a name="bkmk_sideEffects"></a> Efekty uboczne wyrażenia
 
 Obliczenie niektórych wyrażeń może zmienić wartość zmiennej lub w inny sposób wpłynąć na stan aplikacji. Na przykład Ocena następującego wyrażenia zmienia wartość `var1` :
 
@@ -169,7 +169,7 @@ Jednym ze sposobów zapobiegania wyznaczeniu efektów ubocznych jest wyłączeni
 
 Tylko w przypadku języka C#, gdy Ocena właściwości lub niejawne wywołania funkcji jest wyłączona, można wymusić Obliczanie przez dodanie modyfikatora w formacie **AC** do **nazwy** zmiennej w oknie **czujka** . Zobacz [specyfikatory formatu w języku C#](../debugger/format-specifiers-in-csharp.md).
 
-## <a name="use-object-ids-in-the-watch-window-c-and-visual-basic"></a><a name="bkmk_objectIds"></a>Używanie identyfikatorów obiektów w okno wyrażeń kontrolnych (C# i Visual Basic)
+## <a name="use-object-ids-in-the-watch-window-c-and-visual-basic"></a><a name="bkmk_objectIds"></a> Używanie identyfikatorów obiektów w okno wyrażeń kontrolnych (C# i Visual Basic)
 
 Czasami chcesz obserwować zachowanie określonego obiektu. Na przykład możesz chcieć śledzić obiekt, do którego odwołuje się zmienna lokalna po zakończeniu tej zmiennej. W językach C# i Visual Basic można tworzyć identyfikatory obiektów dla określonych wystąpień typów referencyjnych i używać ich w oknie **czujki** i w warunkach punktu przerwania. Identyfikator obiektu jest generowany przez usługi debugowania środowiska uruchomieniowego języka wspólnego (CLR) i skojarzone z obiektem.
 
@@ -215,7 +215,7 @@ Aby sprawdzić nazwę `Person` w `DoSomething()` metodzie, można dodać odwoła
 
 1. Ustaw punkt przerwania w kodzie po `Person` utworzeniu obiektu.
 
-1. Rozpocznij debugowanie.
+1. Uruchom debugowanie.
 
 1. Po wstrzymaniu wykonywania w punkcie przerwania Otwórz okno zmienne **lokalne** , wybierając pozycję **Debuguj**  >  **Windows**  >  **Ustawienia regionalne**systemu Windows.
 
@@ -242,8 +242,8 @@ Aby odświeżyć **dynamiczne wartości widoku** , wybierz [ikonę odświeżania
 
 Aby wyświetlić tylko **Widok dynamiczny** dla obiektu, należy dodać specyfikator formatu **dynamicznego** po nazwie obiektu dynamicznego w oknie **czujka** :
 
-- Dla języka C#:`ObjectName, dynamic`
-- Dla Visual Basic:`$dynamic, ObjectName`
+- Dla języka C#: `ObjectName, dynamic`
+- Dla Visual Basic: `$dynamic, ObjectName`
 
 >[!NOTE]
 >- Debuger C# nie oblicza automatycznie wartości w **widoku dynamicznym** po przekroczeniu następnego wiersza kodu.
@@ -282,7 +282,7 @@ Aby obserwować `a` zmienną,
 
 1. Ustaw punkt przerwania w `a = a + b;` wierszu.
 
-1. Rozpocznij debugowanie. Wykonywanie jest wstrzymywane w punkcie przerwania.
+1. Uruchom debugowanie. Wykonywanie jest wstrzymywane w punkcie przerwania.
 
 1. Wybierz zmienną `a` w kodzie.
 

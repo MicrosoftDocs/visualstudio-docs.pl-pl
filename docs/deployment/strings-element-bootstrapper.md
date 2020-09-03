@@ -1,5 +1,5 @@
 ---
-title: '&lt;Ciągi&gt; — Element (program inicjujący) | Dokumentacja firmy Microsoft'
+title: '&lt;Strings — &gt; element (program inicjujący) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,14 +19,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747412"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Ciągi&gt; — element (program inicjujący)
-Definiuje zlokalizowane ciągi dla nazwy produktu, nazwy pakietów i komunikaty o błędach instalacji.
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Strings — &gt; element (program inicjujący)
+Definiuje zlokalizowane ciągi dla nazw produktów, nazw pakietów i komunikatów o błędach instalacji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -39,20 +39,20 @@ Definiuje zlokalizowane ciągi dla nazwy produktu, nazwy pakietów i komunikaty 
 </Strings>
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `Strings` Element jest elementem podrzędnym `Package` elementu. Go nie ma żadnych atrybutów.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `Strings`Element jest elementem podrzędnym `Package` elementu. Nie ma atrybutów.
 
 ## <a name="string"></a>String
- `String` Element jest elementem podrzędnym `Strings` elementu. A `Strings` element może mieć co najmniej jeden `String` elementów.
+ `String`Element jest elementem podrzędnym `Strings` elementu. `Strings`Element może mieć jeden lub więcej `String` elementów.
 
  `String` ma następujący atrybut.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Name`|Wymagana. Nazwa ciągu.|
+|`Name`|Wymagany. Nazwa ciągu.|
 
 ## <a name="example"></a>Przykład
- Poniższy przykład kodu określa wszystkie ciągi w języku polskim dla Instalatora programu .NET Framework.
+ Poniższy przykład kodu określa wszystkie ciągi angielskie dla Instalatora .NET Framework.
 
 ```xml
 <Strings>
@@ -73,5 +73,5 @@ Definiuje zlokalizowane ciągi dla nazwy produktu, nazwy pakietów i komunikaty 
 </Strings>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [\<Pakiet > element](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>Zobacz też
+- [\<Package> postaci](../deployment/package-element-bootstrapper.md)

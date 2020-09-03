@@ -1,5 +1,5 @@
 ---
-title: Regionów formularzy programu Outlook aktualizacji w projektach migracji do platformy .NET Framework 4, 4.5
+title: Aktualizowanie regionów formularzy programu Outlook w projektach migrowanych do .NET Framework 4, 4,5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,27 +13,27 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e7e300cd9f6f7d631a029310b01fbfdad7cb4686
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66836046"
 ---
-# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizowanie regionów formularzy w projektach programu Outlook, są migrowane do programu .NET Framework 4 lub .NET Framework 4.5
-  Zmiana platformy docelowej projektu dodatku narzędzi VSTO dla programu Outlook z regionu formularza na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później, należy wprowadzić pewne zmiany do kodu regionu generowanym formularzu i wszelki kod, który tworzy wystąpienie niektórych klas regionu formularza w czasie wykonywania.
+# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizowanie regionów formularzy w projektach programu Outlook migrowanych do .NET Framework 4 lub .NET Framework 4,5
+  Jeśli platforma docelowa projektu dodatku VSTO programu Outlook z regionem formularza zostanie zmieniona na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później, należy wprowadzić pewne zmiany w kodzie regionu formularza i w dowolnym kodzie, który tworzy wystąpienia niektórych klas regionów formularzy w czasie wykonywania.
 
-## <a name="update-the-generated-form-region-code"></a>Zaktualizuj kod regionu generowanym formularzu
- Jeśli platforma docelowa projektu zostanie zmieniony na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej, musisz zmienić kod regionu generowanym formularzu. Wprowadzone zmiany są różne dla regionów formularza, które skonstruowane w programie Visual Studio i formularz regionach, zaimportowane z programu Outlook. Aby uzyskać więcej informacji na temat różnic między tymi typami regionów formularzy zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).
+## <a name="update-the-generated-form-region-code"></a>Zaktualizuj wygenerowany kod regionu formularza
+ Jeśli docelowa platforma projektu została zmieniona na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później, należy zmienić wygenerowany kod regionu formularza. Wprowadzane zmiany są różne dla regionów formularzy zaprojektowanych w programie Visual Studio i regionach formularzy zaimportowanych z programu Outlook. Aby uzyskać więcej informacji na temat różnic między tymi typami regionów formularzy, zobacz [Tworzenie regionów formularzy w programie Outlook](../vsto/creating-outlook-form-regions.md).
 
-### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>Aby zaktualizować kod generowany dla regionu formularza zaprojektowanego w programie Visual Studio
+### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>Aby zaktualizować wygenerowany kod dla regionu formularza zaprojektowanego w programie Visual Studio
 
-1. Otwórz plik CodeBehind regionu formularza w edytorze kodu. Ten plik ma nazwę *YourFormRegion*. Designer.cs narzędzie lub *YourFormRegion*. Designer.VB. Aby wyświetlić ten plik w projektach języka Visual Basic, kliknij **Pokaż wszystkie pliki** znajdujący się w **Eksploratora rozwiązań**.
+1. Otwórz plik z kodem regionu formularza w edytorze kodu. Ten plik ma nazwę *YourFormRegion*. Designer.cs lub *YourFormRegion*. Designer. vb. Aby wyświetlić ten plik w projektach Visual Basic, kliknij przycisk **Pokaż wszystkie pliki** w **Eksplorator rozwiązań**.
 
-2. Zmodyfikuj deklarację klasy regionu formularza, tak, aby pochodzi od klasy <xref:Microsoft.Office.Tools.Outlook.FormRegionBase> zamiast `Microsoft.Office.Tools.Outlook.FormRegionControl`.
+2. Zmodyfikuj deklarację klasy region formularza, aby dziedziczyć ją od <xref:Microsoft.Office.Tools.Outlook.FormRegionBase> zamiast `Microsoft.Office.Tools.Outlook.FormRegionControl` .
 
-3. Zmodyfikuj konstruktora klasy regionu formularza, jak pokazano w poniższych przykładach kodu.
+3. Zmodyfikuj konstruktora klasy region formularza, jak pokazano w poniższym przykładzie kodu.
 
-     Poniższy przykład kodu pokazuje konstruktora klasy regionu formularza w projekcie, przeznaczonego programu .NET Framework 3.5.
+     Poniższy przykład kodu pokazuje konstruktora klasy regionu formularza w projekcie, który jest przeznaczony dla .NET Framework 3,5.
 
     ```vb
     Public Sub New(ByVal formRegion As Microsoft.Office.Interop.Outlook.FormRegion)
@@ -50,7 +50,7 @@ ms.locfileid: "66836046"
     }
     ```
 
-     Poniższy przykład kodu pokazuje konstruktora klasy regionu formularza w projekcie przeznaczonego [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].
+     Poniższy przykład kodu pokazuje konstruktora klasy regionu formularza w projekcie, który jest przeznaczony dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] .
 
     ```vb
     Public Sub New(ByVal formRegion As Microsoft.Office.Interop.Outlook.FormRegion)
@@ -67,9 +67,9 @@ ms.locfileid: "66836046"
     }
     ```
 
-4. Zmodyfikuj podpis metody `InitializeManifest` metody, jak pokazano poniżej. Upewnij się, że nie należy modyfikować kod w metodzie; Ten kod reprezentuje ustawienia regionu formularza, które zostały zastosowane w projektancie. W elemencie wizualnym C# projektów, należy rozwinąć region, który nosi nazwę `Form Region Designer generated code` Aby wyświetlić tę metodę.
+4. Zmodyfikuj podpis `InitializeManifest` metody, jak pokazano poniżej. Upewnij się, że nie modyfikujesz kodu w metodzie; Ten kod reprezentuje ustawienia regionu formularza, które zostały zastosowane do projektanta. W projektach Visual C#, należy rozwinąć region o nazwie, `Form Region Designer generated code` Aby zobaczyć tę metodę.
 
-     Poniższy przykład kodu pokazuje podpis `InitializeManifest` metody w projekcie, który jest przeznaczony dla .NET Framework 3.5.
+     Poniższy przykład kodu przedstawia sygnaturę `InitializeManifest` metody w projekcie, która jest przeznaczona dla .NET Framework 3,5.
 
     ```vb
     Private Shared Sub InitializeManifest(ByVal manifest As Microsoft.Office.Tools.Outlook.FormRegionManifest)
@@ -85,7 +85,7 @@ ms.locfileid: "66836046"
     }
     ```
 
-     Poniższy przykład kodu pokazuje podpis `InitializeManifest` metody w projekcie, który jest przeznaczony dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].
+     Poniższy przykład kodu przedstawia `InitializeManifest` metodę podpisu w projekcie, który jest przeznaczony dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] .
 
     ```vb
     Private Shared Sub InitializeManifest(ByVal manifest As Microsoft.Office.Tools.Outlook.FormRegionManifest,
@@ -103,23 +103,23 @@ ms.locfileid: "66836046"
     }
     ```
 
-5. Dodaj nowy element Region formularza programu Outlook do projektu. Otwórz plik związany z kodem, aby uzyskać nowy region formularza, odszukaj *YourNewFormRegion* `Factory` i `WindowFormRegionCollection` klasy w pliku, a następnie skopiuj te klasy do Schowka.
+5. Dodaj nowy element regionu formularza programu Outlook do projektu. Otwórz plik związany z kodem dla nowego regionu formularza, zlokalizuj *YourNewFormRegion* `Factory` i `WindowFormRegionCollection` klasy w pliku i skopiuj te klasy do Schowka.
 
 6. Usuń nowy region formularza, który został dodany do projektu.
 
-7. W pliku związanym z kodem regionu formularza, która jest aktualizowana do pracy w projekcie zmienianą zlokalizuj *YourOriginalFormRegion* `Factory` i `WindowFormRegionCollection` klasy i zastąpić je z kodem, który został skopiowany z Nowy region formularza.
+7. W pliku związanym z kodem w regionie formularza, który aktualizujesz, aby działał w projekcie przekierowaniu, Znajdź *YourOriginalFormRegion* `Factory` i `WindowFormRegionCollection` klasy i zastąp je kodem skopiowanym z nowego regionu formularza.
 
-8. W *YourNewFormRegion* `Factory` i `WindowFormRegionCollection` wyszukiwanie wszystkich odwołań do klas, *YourNewFormRegion* klasy i zmienić każde odwołanie do  *YourOriginalFormRegion* klasy zamiast tego. Na przykład, jeśli aktualizujesz region formularza jest o nazwie `SalesDataFormRegion` i nosi nazwę nowy region formularza zostanie utworzony w kroku 5 `FormRegion1`, zmienić wszystkie odwołania z `FormRegion1` do `SalesDataFormRegion`.
+8. W *YourNewFormRegion* `Factory` i `WindowFormRegionCollection` Klasa Wyszukaj wszystkie odwołania do klasy *YourNewFormRegion* i Zmień każde odwołanie do klasy *YourOriginalFormRegion* . Na przykład jeśli aktualizowany region formularza ma nazwę, `SalesDataFormRegion` a nowy region formularza utworzony w kroku 5 ma nazwę `FormRegion1` , Zmień wszystkie odwołania `FormRegion1` do `SalesDataFormRegion` .
 
-#### <a name="to-update-the-generated-code-for-a-form-region-that-you-imported-from-outlook"></a>Aby zaktualizować kod generowany dla regionu formularza, który został zaimportowany z programu Outlook
+#### <a name="to-update-the-generated-code-for-a-form-region-that-you-imported-from-outlook"></a>Aby zaktualizować wygenerowany kod dla regionu formularza zaimportowanego z programu Outlook
 
-1. Otwórz plik CodeBehind regionu formularza w edytorze kodu. Ten plik ma nazwę *YourFormRegion*. Designer.cs narzędzie lub *YourFormRegion*. Designer.VB. Aby wyświetlić ten plik w projektach języka Visual Basic, kliknij **Pokaż wszystkie pliki** znajdujący się w **Eksploratora rozwiązań**.
+1. Otwórz plik z kodem regionu formularza w edytorze kodu. Ten plik ma nazwę *YourFormRegion*. Designer.cs lub *YourFormRegion*. Designer. vb. Aby wyświetlić ten plik w projektach Visual Basic, kliknij przycisk **Pokaż wszystkie pliki** w **Eksplorator rozwiązań**.
 
-2. Zmodyfikuj deklarację klasy regionu formularza, tak, aby pochodzi od klasy <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase> zamiast `Microsoft.Office.Tools.Outlook.ImportedFormRegion`.
+2. Zmodyfikuj deklarację klasy region formularza, aby dziedziczyć ją od <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase> zamiast `Microsoft.Office.Tools.Outlook.ImportedFormRegion` .
 
-3. Zmodyfikuj konstruktora klasy regionu formularza, jak pokazano w poniższych przykładach kodu.
+3. Zmodyfikuj konstruktora klasy region formularza, jak pokazano w poniższym przykładzie kodu.
 
-     Poniższy przykład kodu pokazuje konstruktora klasy regionu formularza w projekcie, przeznaczonego programu .NET Framework 3.5.
+     Poniższy przykład kodu pokazuje konstruktora klasy regionu formularza w projekcie, który jest przeznaczony dla .NET Framework 3,5.
 
     ```vb
     Public Sub New(ByVal formRegion As Microsoft.Office.Interop.Outlook.FormRegion)
@@ -136,7 +136,7 @@ ms.locfileid: "66836046"
     }
     ```
 
-     Poniższy przykład kodu pokazuje podpis konstruktora klasy regionu formularza w projekcie przeznaczonego [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].
+     Poniższy przykład kodu przedstawia sygnaturę konstruktora klasy regionu formularza w projekcie, który odwołuje się do [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] .
 
     ```vb
     Public Sub New(ByVal formRegion As Microsoft.Office.Interop.Outlook.FormRegion)
@@ -153,9 +153,9 @@ ms.locfileid: "66836046"
     }
     ```
 
-4. Dla każdego wiersza kodu w `InitializeControls` metodę, która inicjuje kontrolkę w klasie regionu formularza, należy zmodyfikować kod, jak pokazano poniżej.
+4. Dla każdego wiersza kodu w `InitializeControls` metodzie, która inicjuje formant w klasie region formularza, zmodyfikuj kod, jak pokazano poniżej.
 
-     W poniższym przykładzie kodu pokazano, jak zainicjować formantu w projekcie przeznaczonego programu .NET Framework 3.5. W tym kodzie `GetFormRegionControl` metoda ma parametr typu, który określa typ kontrolki, która jest zwracana.
+     Poniższy przykład kodu pokazuje, jak zainicjować kontrolkę w projekcie, który jest przeznaczony dla .NET Framework 3,5. W tym kodzie `GetFormRegionControl` Metoda ma parametr typu, który określa typ zwracanej kontrolki.
 
     ```vb
     Me.olkTextBox1 = Me.GetFormRegionControl(Of Microsoft.Office.Interop.Outlook.OlkTextBox)("OlkTextBox1")
@@ -165,7 +165,7 @@ ms.locfileid: "66836046"
     this.olkTextBox1 = this.GetFormRegionControl<Microsoft.Office.Interop.Outlook.OlkTextBox>("OlkTextBox1");
     ```
 
-     Poniższy przykład kodu pokazuje, jak zainicjować kontrolkę, która w projektach przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. W tym kodzie <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase.GetFormRegionControl%2A> metoda nie ma parametru typu. Należy rzutować wartości zwróconej na typ kontrolki, które są inicjowanie.
+     Poniższy przykład kodu pokazuje, jak zainicjować kontrolkę w projekcie, który jest przeznaczony dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . W tym kodzie Metoda nie <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase.GetFormRegionControl%2A> ma parametru typu. Wartość zwracana należy rzutować na typ inicjowanej kontrolki.
 
     ```vb
     Me.olkTextBox1 = CType(GetFormRegionControl("OlkTextBox1"), Microsoft.Office.Interop.Outlook.OlkTextBox)
@@ -175,20 +175,20 @@ ms.locfileid: "66836046"
     this.olkTextBox1 = (Microsoft.Office.Interop.Outlook.OlkTextBox)GetFormRegionControl("OlkTextBox1");
     ```
 
-5. Dodaj nowy element Region formularza programu Outlook do projektu. Otwórz plik związany z kodem, aby uzyskać nowy region formularza, odszukaj *YourNewFormRegion* `Factory` i `WindowFormRegionCollection` klasy w pliku, a następnie skopiuj te klasy do Schowka.
+5. Dodaj nowy element regionu formularza programu Outlook do projektu. Otwórz plik związany z kodem dla nowego regionu formularza, zlokalizuj *YourNewFormRegion* `Factory` i `WindowFormRegionCollection` klasy w pliku i skopiuj te klasy do Schowka.
 
 6. Usuń nowy region formularza, który został dodany do projektu.
 
-7. W pliku związanym z kodem regionu formularza, która jest aktualizowana do pracy w projekcie zmienianą zlokalizuj *YourOriginalFormRegion* `Factory` i `WindowFormRegionCollection` klasy i zastąpić je z kodem, który został skopiowany z Nowy region formularza.
+7. W pliku związanym z kodem w regionie formularza, który aktualizujesz, aby działał w projekcie przekierowaniu, Znajdź *YourOriginalFormRegion* `Factory` i `WindowFormRegionCollection` klasy i zastąp je kodem skopiowanym z nowego regionu formularza.
 
-8. W *YourNewFormRegion* `Factory` i `WindowFormRegionCollection` wyszukiwanie wszystkich odwołań do klas, *YourNewFormRegion* klasy i zmienić każde odwołanie do  *YourOriginalFormRegion* klasy zamiast tego. Na przykład, jeśli aktualizujesz region formularza jest o nazwie `SalesDataFormRegion` i nosi nazwę nowy region formularza zostanie utworzony w kroku 5 `FormRegion1`, zmienić wszystkie odwołania z `FormRegion1` do `SalesDataFormRegion`.
+8. W *YourNewFormRegion* `Factory` i `WindowFormRegionCollection` Klasa Wyszukaj wszystkie odwołania do klasy *YourNewFormRegion* i Zmień każde odwołanie do klasy *YourOriginalFormRegion* . Na przykład jeśli aktualizowany region formularza ma nazwę, `SalesDataFormRegion` a nowy region formularza utworzony w kroku 5 ma nazwę `FormRegion1` , Zmień wszystkie odwołania `FormRegion1` do `SalesDataFormRegion` .
 
-## <a name="instantiate-form-region-classes"></a>Utwórz wystąpienie klasy regionu formularza
- Należy zmodyfikować każdy kod, który dynamicznie tworzy niektórych klas regionu formularza. W projektach przeznaczonych dla programu .NET Framework 3.5, można utworzyć wystąpienie klasy regionu formularza takich jak `Microsoft.Office.Tools.Outlook.FormRegionManifest` bezpośrednio. W przypadku projektów, których platformą docelową [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym, te klasy są interfejsy, które nie są bezpośrednio wystąpienia.
+## <a name="instantiate-form-region-classes"></a>Tworzenie wystąpienia klas regionów formularza
+ Należy zmodyfikować każdy kod, który dynamicznie tworzy wystąpienia niektórych klas regionów formularza. W projektach przeznaczonych dla .NET Framework 3,5 można utworzyć wystąpienia klas regionów formularza, takich jak `Microsoft.Office.Tools.Outlook.FormRegionManifest` bezpośrednio. W projektach przeznaczonych dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszych, te klasy są interfejsami, których nie można utworzyć bezpośrednio.
 
- Jeśli platforma docelowa projektu zostanie zmieniony na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej, trzeba utworzyć przy użyciu metod, które są dostarczane przez interfejsy `Globals.Factory` właściwości. Aby uzyskać więcej informacji na temat `Globals.Factory` właściwości, zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).
+ Jeśli docelowa platforma projektu została zmieniona na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później, należy utworzyć wystąpienie interfejsów przy użyciu metod dostarczonych przez `Globals.Factory` Właściwość. Aby uzyskać więcej informacji na temat `Globals.Factory` właściwości, zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).
 
- Poniższa tabela zawiera listę typów regionu formularza i metody służące do utworzenia wystąpienia typów projektów, których celem [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej.
+ W poniższej tabeli przedstawiono typy regionów formularzy i metodę, która ma zostać użyta do utworzenia wystąpienia typów w projektach przeznaczonych dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub w późniejszym czasie.
 
 |Typ|Metoda fabryki do użycia|
 |----------|---------------------------|
@@ -196,6 +196,6 @@ ms.locfileid: "66836046"
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionInitializingEventArgs%2A>|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionManifest%2A>|
 
-## <a name="see-also"></a>Zobacz także
-- [Migrowanie rozwiązań pakietu Office do wersji programu .NET Framework 4 lub nowszej](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
+## <a name="see-also"></a>Zobacz też
+- [Migrowanie rozwiązań pakietu Office do .NET Framework 4 lub nowszego](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)

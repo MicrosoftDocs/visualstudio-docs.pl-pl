@@ -1,5 +1,5 @@
 ---
-title: 'Przygotowanie debugowania: Usługi Windows | Dokumentacja firmy Microsoft'
+title: 'Przygotowanie debugowania: usługi systemu Windows | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,20 +20,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2e68792b62e3e5538476063b5298579ecc58e4db
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691306"
 ---
-# <a name="debugging-preparation-windows-services"></a>Przygotowanie debugowania: Usługi systemu Windows
+# <a name="debugging-preparation-windows-services"></a>Przygotowanie debugowania: usługi systemu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Usługa Windows to program, który działa w tle w ramach programu Microsoft Windows. Przykłady obejmują usługi Telnet i usługi Czas Windows, która aktualizuje widoczne zegar komputera. Usługa Windows nie można uruchamiać z poziomu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]; musi być uruchamiane w kontekście Menedżera sterowania usługami. Aby uzyskać więcej informacji, zobacz [tworzenia usług Windows](https://msdn.microsoft.com/library/0f5e2cbb-d95d-477c-b2b5-4b990e6b86ff), [debugowanie aplikacji usług Windows](https://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2), i [aplikacji usług Windows](https://msdn.microsoft.com/library/ba72d648-9553-4849-b829-069ad5ea014b).  
+Usługa systemu Windows to program uruchomiony w tle w systemie Microsoft Windows. Przykładami mogą być usługa Telnet i usługa czas systemu Windows, która aktualizuje zegar widoczny dla komputera. Nie można uruchomić usługi systemu Windows z poziomu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ; musi ona działać w kontekście menedżera kontroli usług. Aby uzyskać więcej informacji, zobacz [Tworzenie usług systemu Windows](https://msdn.microsoft.com/library/0f5e2cbb-d95d-477c-b2b5-4b990e6b86ff), [debugowanie aplikacji usług systemu Windows](https://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)i [aplikacji usług systemu Windows](https://msdn.microsoft.com/library/ba72d648-9553-4849-b829-069ad5ea014b).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
- [C#, F#i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Ustawienia projektu dla języka C# konfiguracji debugowania](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Ustawienia projektu dla języka Visual Basic konfiguracji debugowania](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Instrukcje: Debugowanie metody OnStart](../debugger/how-to-debug-the-onstart-method.md)
+ [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)   
+ [Typy projektów C#, F # i Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Ustawienia projektu dla konfiguracji debugowania w języku C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Ustawienia projektu dla konfiguracji debugowania Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Porady: debugowanie metody OnStart](../debugger/how-to-debug-the-onstart-method.md)

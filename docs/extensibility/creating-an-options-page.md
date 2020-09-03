@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: be826b73e28a73216ea88ceba8e23eb1e9ea457b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903818"
 ---
 # <a name="create-an-options-page"></a>Utwórz stronę opcji
@@ -245,7 +245,7 @@ W tym instruktażu utworzono prostą stronę narzędzi/opcji, która używa siat
 
     ```
 
-     Ten kod wywołuje, <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> Aby utworzyć lub pobrać `OptionPageGrid` wystąpienie. `OptionPageGrid`wywołania <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> do załadowania swoich opcji, które są właściwościami publicznymi.
+     Ten kod wywołuje, <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> Aby utworzyć lub pobrać `OptionPageGrid` wystąpienie. `OptionPageGrid` wywołania <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> do załadowania swoich opcji, które są właściwościami publicznymi.
 
 2. Teraz Dodaj niestandardowy szablon elementu polecenia o nazwie **MyToolsOptionsCommand** , aby wyświetlić tę wartość. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >  **Extensibility** i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *MyToolsOptionsCommand.cs*.
 
