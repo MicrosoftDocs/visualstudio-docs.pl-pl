@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1ecf86bdc7516f05935bd944f23633b3baad2c7c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663522"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser — Polecenie
@@ -33,7 +33,7 @@ View.ShowWebBrowser URL [/new][/ext]
 ```
 
 ## <a name="arguments"></a>Argumenty
- Wymagane `URL`. Adres URL (Uniform Resource Locator) witryny sieci Web.
+ `URL` Wymagane. Adres URL (Uniform Resource Locator) witryny sieci Web.
 
 ## <a name="switches"></a>Przełączniki
  /New opcjonalne. Określa, że strona pojawia się w nowym wystąpieniu przeglądarki sieci Web.

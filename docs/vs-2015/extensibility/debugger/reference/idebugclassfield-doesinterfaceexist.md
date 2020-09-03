@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::DoesInterfaceExist | Dokumentacja firmy Microsoft
+title: IDebugClassField::D oesInterfaceExist | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9f71346c1b69729ae54ef0d33be4149e7000316c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191127"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa, jeśli określony interfejs jest zdefiniowana w klasie.  
+Określa, czy określony interfejs jest zdefiniowany w klasie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,13 +40,13 @@ int DoesInterfaceExist(
   
 #### <a name="parameters"></a>Parametry  
  `pszInterfaceName`  
- [in] Ciąg zawierający nazwę interfejsu do wyszukania.  
+ podczas Ciąg zawierający nazwę interfejsu do wyszukania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK, zwraca wartość S_FALSE, jeśli nie ma interfejsu; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca S_OK, zwraca S_FALSE, jeśli interfejs nie istnieje; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda obowiązuje pobiera wyliczenie wszystkich interfejsów i wyszukuje listę zgodnych interfejsu.  
+ Ta metoda w efekcie Pobiera wyliczenie wszystkich interfejsów i przeszukuje listę pod kątem zgodnego interfejsu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

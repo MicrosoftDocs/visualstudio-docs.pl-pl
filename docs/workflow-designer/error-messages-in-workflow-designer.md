@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 72592d21fdaba1ef47a15a113c820dffe0ba71eb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597051"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Komunikaty o błędach w Projektancie przepływu pracy
@@ -35,7 +35,7 @@ Błędy w Projektant przepływu pracy odbywają się w następujących sytuacjac
 
 4. W pliku XAML występują błędy, które powodują niepowodzenie ładowania przepływu pracy.
 
-Nieprawidłowe wyrażenia i niespełnione ograniczenia sprawdzania poprawności nie powodują skompilowania przepływu pracy. Kompilowanie przepływu pracy powiedzie się, ale w czasie wykonywania zostanie zgłoszone <xref:System.Activities.InvalidWorkflowException>. W przypadku wystąpienia błędów w pliku XAML kompilacja zakończy się niepowodzeniem.
+Nieprawidłowe wyrażenia i niespełnione ograniczenia sprawdzania poprawności nie powodują skompilowania przepływu pracy. Kompilowanie przepływu pracy zakończy się pomyślnie, ale <xref:System.Activities.InvalidWorkflowException> jest zgłaszane w czasie wykonywania. W przypadku wystąpienia błędów w pliku XAML kompilacja zakończy się niepowodzeniem.
 
 W programie Visual Studio, gdy przepływ pracy jest ładowany, jego błędy są wyświetlane w **Lista błędów**. Aby przejść do działania, które jest źródłem błędu, kliknij dwukrotnie błąd w **Lista błędów**.
 

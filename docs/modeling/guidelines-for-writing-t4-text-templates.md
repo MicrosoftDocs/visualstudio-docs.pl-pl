@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596544"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Zalecenia dotyczące pisania szablonów tekstowych T4
@@ -46,25 +46,25 @@ W niektórych przypadkach ogólne testy mogą być wykonywane bezpośrednio na m
 
 Zezwalaj na kod niestandardowy: Generuj klasy częściowe.
 
-Zezwalaj na kod, który można napisać ręcznie, oprócz wygenerowanego kodu. Schemat generowania kodu jest nietypowy, aby można było uwzględnić wszystkie możliwe zmiany, które mogą wystąpić. W związku z tym należy oczekiwać, aby dodać lub zastąpić część wygenerowanego kodu. W przypadku, gdy wygenerowany materiał znajduje się w języku .NET C# , takim jak lub Visual Basic, są szczególnie przydatne dwie strategie:
+Zezwalaj na kod, który można napisać ręcznie, oprócz wygenerowanego kodu. Schemat generowania kodu jest nietypowy, aby można było uwzględnić wszystkie możliwe zmiany, które mogą wystąpić. W związku z tym należy oczekiwać, aby dodać lub zastąpić część wygenerowanego kodu. W przypadku, gdy wygenerowany materiał jest w języku .NET, takim jak C# lub Visual Basic, są szczególnie przydatne dwie strategie:
 
 - Wygenerowane klasy powinny być częściowe. Pozwala to na dodawanie zawartości do wygenerowanego kodu.
 
 - Klasy powinny być generowane w parach, po jednym dziedziczeniu. Klasa bazowa powinna zawierać wszystkie wygenerowane metody i właściwości, a Klasa pochodna powinna zawierać tylko konstruktory. Pozwala to na ręczne pisanie kodu w celu przesłonięcia dowolnej z wygenerowanych metod.
 
-W innych wygenerowanych językach, takich jak XML, użyj dyrektywy `<#@include#>`, aby tworzyć proste kombinacje zawartości z ręcznym i wygenerowanym. W bardziej złożonych przypadkach może być konieczne napisanie kroku przetwarzania końcowego, który łączy wygenerowany plik z dowolnymi plikami ręcznymi.
+W innych wygenerowanych językach, takich jak XML, użyj `<#@include#>` dyrektywy, aby utworzyć proste kombinacje zawartości z ręcznym i wygenerowanym. W bardziej złożonych przypadkach może być konieczne napisanie kroku przetwarzania końcowego, który łączy wygenerowany plik z dowolnymi plikami ręcznymi.
 
 Przenieś wspólny materiał do plików dołączanych lub szablonów czasu wykonywania.
 
-Aby uniknąć powtarzania podobnych bloków tekstu i kodu w wielu szablonach, użyj dyrektywy `<#@ include #>`. Aby uzyskać więcej informacji, zobacz [T4 include dyrektywy](../modeling/t4-include-directive.md).
+Aby uniknąć powtarzania podobnych bloków tekstu i kodu w wielu szablonach, należy użyć `<#@ include #>` dyrektywy. Aby uzyskać więcej informacji, zobacz [T4 include dyrektywy](../modeling/t4-include-directive.md).
 
-Możesz również utworzyć szablony tekstu w czasie wykonywania w osobnym projekcie, a następnie wywołać je z szablonu czasu projektowania. Aby to zrobić, użyj dyrektywy `<#@ assembly #>` w celu uzyskania dostępu do oddzielnego projektu.
+Możesz również utworzyć szablony tekstu w czasie wykonywania w osobnym projekcie, a następnie wywołać je z szablonu czasu projektowania. Aby to zrobić, użyj `<#@ assembly #>` dyrektywy w celu uzyskania dostępu do oddzielnego projektu.
 
 Rozważ przeniesienie dużych bloków kodu do oddzielnego zestawu.
 
-Jeśli masz duże bloki kodu i bloki funkcji klasy, warto przenieść część tego kodu do metod kompilowanych w osobnym projekcie. Aby uzyskać dostęp do kodu w szablonie, można użyć dyrektywy `<#@ assembly #>`. Aby uzyskać więcej informacji, zobacz [Dyrektywa zestawu T4](../modeling/t4-assembly-directive.md).
+Jeśli masz duże bloki kodu i bloki funkcji klasy, warto przenieść część tego kodu do metod kompilowanych w osobnym projekcie. Możesz użyć dyrektywy, `<#@ assembly #>` Aby uzyskać dostęp do kodu w szablonie. Aby uzyskać więcej informacji, zobacz [Dyrektywa zestawu T4](../modeling/t4-assembly-directive.md).
 
-Metody można umieścić w klasie abstrakcyjnej, którą szablon może dziedziczyć. Klasa abstrakcyjna musi dziedziczyć po <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Aby uzyskać więcej informacji, zobacz [dyrektywa dotycząca szablonu T4](../modeling/t4-template-directive.md).
+Metody można umieścić w klasie abstrakcyjnej, którą szablon może dziedziczyć. Klasa abstrakcyjna musi dziedziczyć po elemencie <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> . Aby uzyskać więcej informacji, zobacz [dyrektywa dotycząca szablonu T4](../modeling/t4-template-directive.md).
 
 Generuj kod, a nie pliki konfiguracji.
 
@@ -115,7 +115,7 @@ W **MyReportText-Methods.cs**:
 
 Zezwalaj na kod niestandardowy: Podaj punkty rozszerzenia.
 
-Należy rozważyć generowanie metod wirtualnych w \<# + bloki funkcji klasy # >. Pozwala to na użycie jednego szablonu w wielu kontekstach bez modyfikacji. Zamiast modyfikować szablon, można utworzyć klasę pochodną, która dostarcza minimalną dodatkową logikę. Klasa pochodna może być zwykłym kodem lub szablonem czasu wykonywania.
+Rozważ wygenerowanie metod wirtualnych w \<#+ class feature blocks #> . Pozwala to na użycie jednego szablonu w wielu kontekstach bez modyfikacji. Zamiast modyfikować szablon, można utworzyć klasę pochodną, która dostarcza minimalną dodatkową logikę. Klasa pochodna może być zwykłym kodem lub szablonem czasu wykonywania.
 
 Na przykład w MyStandardRunTimeTemplate.tt:
 
@@ -139,11 +139,11 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 Oddzielne zbieranie danych z generacji tekstu.
 
-Staraj się unikać mieszania obliczeń i bloków tekstowych. W każdym szablonie tekstu użyj pierwszej \<# # Code # >, aby ustawić zmienne i wykonywać złożone obliczenia. Od pierwszego bloku tekstu do końca szablonu lub pierwszej \<# + blok funkcji klasy # >, unikania długich wyrażeń i unikania pętli i warunkowych, chyba że zawierają bloki tekstu. To rozwiązanie ułatwia odczytywanie i konserwowanie szablonu.
+Staraj się unikać mieszania obliczeń i bloków tekstowych. W każdym szablonie tekstu użyj pierwszej, \<# code block #> Aby ustawić zmienne i wykonywać złożone obliczenia. Od pierwszego bloku tekstu do końca szablonu lub pierwszego \<#+ class feature block #> , unikaj długich wyrażeń i unikaj pętli i warunkowych, chyba że zawierają bloki tekstu. To rozwiązanie ułatwia odczytywanie i konserwowanie szablonu.
 
-Nie używaj `.tt` w przypadku plików dołączanych.
+Nie używaj `.tt` dla plików dołączanych.
 
-Użyj innego rozszerzenia nazwy pliku, takiego jak `.ttinclude` dla plików dołączanych. Używaj `.tt` tylko dla plików, które mają być przetwarzane jako szablony tekstu w czasie wykonywania lub w czasie projektowania. W niektórych przypadkach program Visual Studio rozpoznaje pliki `.tt` i automatycznie ustawia ich właściwości do przetwarzania.
+Użyj innego rozszerzenia nazwy pliku, takiego jak `.ttinclude` w przypadku plików dołączanych. Służy `.tt` tylko do plików, które mają być przetwarzane jako szablony tekstu w czasie wykonywania lub w czasie projektowania. W niektórych przypadkach program Visual Studio rozpoznaje `.tt` pliki i automatycznie ustawia ich właściwości do przetwarzania.
 
 Uruchom każdy szablon jako stały prototyp.
 
@@ -169,7 +169,7 @@ Jednakże w przypadku niektórych rodzajów wymagań firmy ważne jest, aby wyja
 
 Możesz również projektować własny typ diagramu jako język specyficzny dla domeny (DSL). Kod można generować z poziomu języka UML i językami DSL. Aby uzyskać więcej informacji, zobacz [analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md)

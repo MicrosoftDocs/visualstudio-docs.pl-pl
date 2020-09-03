@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7cac308de96c3edc2dfe5c7577b0bee8077bf9e7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548442"
 ---
 # <a name="nameprofile"></a>NameProfile
@@ -94,8 +94,8 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |Element|Opis|  
 |-|-|  
 |**Nagłówki**|Uwzględnij VSPerf. h|  
-|**Biblioteka**|Użyj VSPerf. lib|  
-|**Unicode**|Zaimplementowane jako `NameProfileW` (Unicode) i `NameProfileA` (ANSI).|  
+|**Biblioteki**|Użyj VSPerf. lib|  
+|**Kod Unicode**|Zaimplementowane jako `NameProfileW` (Unicode) i `NameProfileA` (ANSI).|  
   
 ## <a name="example"></a>Przykład  
  Poniższy kod ilustruje wywołanie funkcji NameProfile. W przykładzie założono użycie makr ciągu Win32 i ustawień kompilatora dla ANSI, aby określić, czy kod wywołuje funkcję z obsługą ANSI.  

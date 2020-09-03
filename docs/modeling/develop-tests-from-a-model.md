@@ -10,14 +10,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2981d510b5f56b89a2cb68d1a6bee93222d71b3b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596661"
 ---
 # <a name="develop-tests-from-a-model"></a>Opracowywanie testów na podstawie modelu
-Aby ułatwić organizowanie testów systemu i jego składników, można użyć wymagań i modeli architektonicznych. Dzięki temu można sprawdzić wymagania, które są ważne dla użytkowników i innych uczestników projektu, oraz ułatwić szybkie aktualizowanie testów w przypadku zmiany wymagań. Jeśli używasz [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], możesz również zachować linki między modelami i testami.
+Aby ułatwić organizowanie testów systemu i jego składników, można użyć wymagań i modeli architektonicznych. Dzięki temu można sprawdzić wymagania, które są ważne dla użytkowników i innych uczestników projektu, oraz ułatwić szybkie aktualizowanie testów w przypadku zmiany wymagań. W przypadku korzystania z [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] programu można również zachować linki między modelami i testami.
 
  Aby sprawdzić, które wersje programu Visual Studio obsługują te funkcje, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -36,7 +36,7 @@ Aby ułatwić organizowanie testów systemu i jego składników, można użyć w
  Można tworzyć i obsługiwać relacje między testami systemowymi i modelem wymagań. Aby ustanowić tę relację, należy napisać testy, które odpowiadają głównym elementom modelu wymagań. Program Visual Studio pomaga zachować tę relację, umożliwiając tworzenie linków między testami i częściami modelu. Aby uzyskać więcej informacji na temat modeli wymagań, zobacz [wymagania dotyczące modelu użytkownika](../modeling/model-user-requirements.md).
 
 ### <a name="write-tests-for-each-use-case"></a>Testy zapisu dla każdego przypadku użycia
- Jeśli używasz [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], możesz utworzyć grupę testów dla każdego przypadku użycia zdefiniowanego w modelu wymagań. Na przykład jeśli masz posiłek na przypadek użycia, który obejmuje tworzenie zamówienia i Dodawanie elementu do zamówienia, możesz utworzyć testy dla całości i bardziej szczegółowych informacji o tych przypadkach użycia.
+ W przypadku użycia programu [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] można utworzyć grupę testów dla każdego przypadku użycia zdefiniowanego w modelu wymagań. Na przykład jeśli masz posiłek na przypadek użycia, który obejmuje tworzenie zamówienia i Dodawanie elementu do zamówienia, możesz utworzyć testy dla całości i bardziej szczegółowych informacji o tych przypadkach użycia.
 
  Te wskazówki mogą być przydatne:
 
@@ -53,13 +53,13 @@ Aby ułatwić organizowanie testów systemu i jego składników, można użyć w
 - Podczas projektowania testów należy oddzielić wybór danych testowych od kodu lub skryptu, który określa, czy błąd warunku końcowego został osiągnięty. Przykładowo można testować prostą funkcję arytmetyczną: dane wejściowe 4; Sprawdź, czy dane wyjściowe to 2. Zamiast tego Zaprojektuj skrypt jako: Wybierz dane wejściowe; Pomnóż dane wyjściowe przez siebie i sprawdź, czy wynik jest oryginalnymi danymi wejściowymi. Ten styl umożliwia różnicowanie danych wejściowych testów bez zmiany głównej treści testu.
 
 #### <a name="linking-tests-to-use-cases"></a>Łączenie testów z przypadkami użycia
- Jeśli używasz [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] do projektowania i uruchamiania testów, możesz organizować testy w obszarze wymagania, przypadek użycia lub elementy robocze scenariusza użytkownika. Można połączyć te elementy robocze z przypadkami użycia w modelu. Dzięki temu można szybko śledzić wymagania zmian w testach i pomóc śledzić postęp każdego przypadku użycia.
+ Jeśli używasz [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] do projektowania i uruchamiania testów, możesz zorganizować testy w obszarze wymagania, przypadek użycia lub elementy robocze scenariusza użytkownika. Można połączyć te elementy robocze z przypadkami użycia w modelu. Dzięki temu można szybko śledzić wymagania zmian w testach i pomóc śledzić postęp każdego przypadku użycia.
 
 ###### <a name="to-link-tests-to-a-use-case"></a>Aby połączyć testy z przypadkiem użycia
 
-1. W [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]Utwórz wymaganie i podstawowy zestaw testów.
+1. W programie [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] Utwórz wymaganie i podstawowy zestaw testów.
 
-    To wymaganie tworzone jest elementem roboczym w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Może to być scenariusz użytkownika, wymaganie lub element roboczy przypadku użycia, w zależności od szablonu procesu używanego przez projekt z programem Team Foundation. Aby uzyskać więcej informacji, zobacz [Informacje o narzędziach Agile i zarządzaniu projektami Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    To wymaganie tworzone jest elementem roboczym w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] . Może to być scenariusz użytkownika, wymaganie lub element roboczy przypadku użycia, w zależności od szablonu procesu używanego przez projekt z programem Team Foundation. Aby uzyskać więcej informacji, zobacz [Informacje o narzędziach Agile i zarządzaniu projektami Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
 2. Połącz element roboczy wymaganie z co najmniej jednym przypadkiem użycia w modelu.
 
@@ -128,8 +128,8 @@ Assert (countAfter == countBefore = 1);
 
  Z punktu widzenia testowania model wymagań może być traktowany jako skrót dla testów. W związku z tym ważne jest, aby zachować relacje między testami i modelem w całym projekcie.
 
-## <a name="Attaching"></a>Dołączanie przypadków testowych do elementów modelu
- Jeśli projekt używa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], można połączyć testy z elementami w modelu. Dzięki temu można szybko znaleźć testy, których dotyczy zmiana w wymaganiach, i pomóc w śledzeniu zakresu, w jakim zostały zrealizowane wymagania.
+## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Dołączanie przypadków testowych do elementów modelu
+ Jeśli Twój projekt [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] jest używany, możesz połączyć testy z elementami w modelu. Dzięki temu można szybko znaleźć testy, których dotyczy zmiana w wymaganiach, i pomóc w śledzeniu zakresu, w jakim zostały zrealizowane wymagania.
 
  Można połączyć testy z wszystkimi rodzajami elementów. Oto kilka przykładów:
 
@@ -145,9 +145,9 @@ Assert (countAfter == countBefore = 1);
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Aby połączyć testy z elementem modelu lub relacją
 
-1. W [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]Utwórz wymaganie i podstawowy zestaw testów.
+1. W programie [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] Utwórz wymaganie i podstawowy zestaw testów.
 
-    To wymaganie tworzone jest elementem roboczym w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Może to być scenariusz użytkownika, wymaganie lub element roboczy przypadku użycia, w zależności od szablonu procesu używanego przez projekt z programem Team Foundation. Aby uzyskać więcej informacji, zobacz [Informacje o narzędziach Agile i zarządzaniu projektami Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    To wymaganie tworzone jest elementem roboczym w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] . Może to być scenariusz użytkownika, wymaganie lub element roboczy przypadku użycia, w zależności od szablonu procesu używanego przez projekt z programem Team Foundation. Aby uzyskać więcej informacji, zobacz [Informacje o narzędziach Agile i zarządzaniu projektami Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
 2. Połącz element roboczy wymaganie z co najmniej jednym elementem w modelu.
 
@@ -155,7 +155,7 @@ Assert (countAfter == countBefore = 1);
 
 3. Dodaj do zestawu testów, przypadków testowych, które weryfikują wymóg wyrażony w elemencie modelu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)
 - [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)

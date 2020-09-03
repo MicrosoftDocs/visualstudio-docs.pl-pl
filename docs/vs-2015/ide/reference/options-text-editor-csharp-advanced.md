@@ -21,16 +21,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4f2d11e78c2402a6541bc87748ed6ba348ba80fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662320"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opcje, edytor tekstu, C#, zaawansowane
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-To okno dialogowe służy do modyfikowania ustawień formatowania edytora, refaktoryzacji kodu i komentarzy dokumentacji XML dla wizualizacji C#. Aby uzyskać dostęp do tego okna dialogowego, kliknij opcję **Opcje** w menu **Narzędzia** , rozwiń folder **Edytor tekstu** , **C#** rozwiń, a następnie kliknij przycisk **Zaawansowane**.
+To okno dialogowe służy do modyfikowania ustawień formatowania edytora, refaktoryzacji kodu i komentarzy dokumentacji XML dla języka Visual C#. Aby uzyskać dostęp do tego okna dialogowego, kliknij opcję **Opcje** w menu **Narzędzia** , rozwiń folder **Edytor tekstu** , rozwiń węzeł **C#**, a następnie kliknij pozycję **Zaawansowane**.
 
 > [!NOTE]
 > Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -61,13 +61,13 @@ To okno dialogowe służy do modyfikowania ustawień formatowania edytora, refak
  Ostrzegaj w przypadku elementów członkowskich z odwołaniami wygenerowanymi przez kompilator wyświetla okno dialogowe ostrzeżenia podczas próby refaktoryzacji elementu członkowskiego, który ma taką samą nazwę jak odwołanie wygenerowane przez kompilator.
 
 ## <a name="xml-documentation-comments"></a>Komentarze dokumentacji XML
- Generuj komentarze dokumentacji XML dla///gdy zaznaczone, wstawia \<summary > automatyczne i końcowe Tagi dla komentarzy dokumentacji XML po wpisaniu wprowadzania///wprowadzenia komentarza. Aby uzyskać więcej informacji na temat dokumentacji XML, zobacz [Komentarze dokumentacji XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).
+ Generuj komentarze dokumentacji XML dla///po zaznaczeniu wstawiaj \<summary> automatycznie Tagi początkowe i końcowe dla komentarzy dokumentacji XML po wpisaniu wprowadzania///wprowadzenia komentarza. Aby uzyskać więcej informacji na temat dokumentacji XML, zobacz [Komentarze dokumentacji XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).
 
 ## <a name="implement-interface"></a>Implementowanie interfejsu
- Pozostały wygenerowany kod z #region wstawia #region \<*nazwy interfejsu*> składową wokół metod, gdy jest używany interfejs implementujący interfejs lub implementowany jawnie.
+ Przestrzenny wygenerowany kod z #region wstawia \<*interface name*> element członkowski #region wokół metod, gdy jest używany interfejs implementujący interfejs lub implementowany jest jawnie.
 
 ## <a name="organize-usings"></a>Organizuj użycia
- Umieść dyrektywy "system" jako pierwsze podczas sortowania przy użyciu po zaznaczeniu, `System` dyrektywy using są wyświetlane przed innymi dyrektywami using. Aby uzyskać więcej informacji, zobacz [Sortowanie using](../../misc/sort-usings.md).
+ Umieść dyrektywy "system" jako pierwsze podczas sortowania przy użyciu, gdy `System` są zaznaczone, dyrektywy using są wyświetlane przed innymi dyrektywami using. Aby uzyskać więcej informacji, zobacz [Sortowanie using](../../misc/sort-usings.md).
 
 ## <a name="see-also"></a>Zobacz też
- [Komentarze dokumentacji XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199) [ustawiania opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md) [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+ [Komentarze dokumentacji XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199) [Ustawianie opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md) [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md)

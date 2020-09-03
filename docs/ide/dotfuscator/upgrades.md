@@ -3,7 +3,7 @@ title: Uaktualnianie programu Dotfuscator Community
 ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
-keywords: Dotfuscator, Dotfuscator Community, Dotfuscator CE, Preemptive, Preemptive Solutions, PreEmptive Protection, protection, community edition, zaciemnienie, .NET, wolny, Visual Studio 2019, Visual Studio 2017, Visual Studio, uaktualnienie, wiersz polecenia
+keywords: Dotfuscator, Dotfuscator Community, Dotfuscator CE, zastępujące rozwiązania, ochrona przed przetworami, ochrona, Edycja, wersja Community, zaciemnianie, .NET, bezpłatnie, Visual Studio 2019, Visual Studio 2017, Visual Studio, upgrade, wiersz polecenia
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
@@ -19,55 +19,55 @@ helpviewer_keywords:
 - registering Dotfuscator
 - Dotfuscator command line
 - Dotfuscator Professional
-description: Dowiedz się, jak uaktualnić bezpłatną kopię społeczności dotfuscator zawartej w programie Visual Studio.
+description: Dowiedz się, jak uaktualnić bezpłatną kopię społeczności Dotfuscator w programie Visual Studio.
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 08492340022f772beadca8061a216de69fafc8af
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596804"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Uaktualnianie programu Dotfuscator Community
 
-Dotfuscator Wspólnoty oferuje wiele funkcji ochrony aplikacji i hartowania natychmiast do wszystkich deweloperów korzystających z programu Microsoft Visual Studio.
-Jednakże, istnieje więcej funkcji dostępnych dla użytkowników, którzy uaktualnić swoją wersję Dotfuscator.
+Dotfuscator Community oferuje wiele funkcji ochrony aplikacji i ograniczania funkcjonalności natychmiast do wszystkich deweloperów korzystających z Microsoft Visual Studio.
+Dostępne są jednak więcej funkcji dla użytkowników, którzy uaktualniają swoją wersję Dotfuscator.
 
-## <a name="registering-dotfuscator-community"></a>Rejestracja Społeczności Dotfuscator
+## <a name="registering-dotfuscator-community"></a>Rejestrowanie społeczności Dotfuscator
 
-Zarejestrowani użytkownicy Społeczności Dotfuscator uzyskują dostęp do dodatkowych funkcji, takich jak [obsługa wiersza polecenia,][cli]co ułatwia integrację społeczności Dotfuscator z procesem automatycznego budowania. Rejestracja zapewnia również dostęp do wbudowanego narzędzia używanego do [dekodowania zaciemnionych śladów stosu.][decode-obfuscated]
+Zarejestrowani Użytkownicy Dotfuscator społeczność uzyskują dostęp do dodatkowych funkcji, takich jak [Obsługa wiersza polecenia][cli], dzięki czemu można łatwo zintegrować społeczność Dotfuscator z zautomatyzowanym procesem kompilacji. Rejestracja uprawnia również do korzystania z wbudowanego narzędzia służącego do [dekodowania śladów stosu][decode-obfuscated].
 
 Rejestracja jest szybka, prosta i bezpłatna.
-Aby zarejestrować społeczność dotfuscator, zapoznaj [się z instrukcjami zawartymi w pełnym podręczniku użytkownika społeczności Dotfuscator][register-ce].
+Aby zarejestrować społeczność Dotfuscator, zapoznaj się z [instrukcjami zawartymi w podręczniku użytkownika w pełni Dotfuscator][register-ce].
 
-## <a name="dotfuscator-professional"></a>Dotfuscator Profesjonalny
+## <a name="dotfuscator-professional"></a>Dotfuscator Professional
 
-Podczas gdy Dotfuscator Community zapewnia podstawowy poziom ochrony, ***ochrona wyprzedzająca - Dotfuscator Professional*** obejmuje ulepszone transformacje zaciemniania i możliwości ochrony, takie jak:
+Mimo że społeczność Dotfuscator zapewnia podstawowy poziom ochrony, ochrona przed zaawansowaną ***— Dotfuscator Professional*** obejmuje ulepszone przekształcenia zaciemniania i funkcje ochrony, takie jak:
 
 * *Ochrona własności intelektualnej*
-  * Dodatkowe opcje zmiany nazwy, w tym ulepszona indukcja przeciążenia™ i losowy wybór identyfikatora.
-  * Dostęp do przekształceń zaciemniania na poziomie przedsiębiorstwa, w tym [przekształceń ukierunkowanych na pokonanie automatycznej dekompilacji kodu.][control-flow]
-  * Możliwość [zasłaniania poufnych ciągów,][string-encryption]co uniemożliwia proste wyszukiwanie dekompilowanego kodu.
-  * Możliwość [dyskretnego osadzania ciągów własności i dystrybucji w zestawach,][watermarking]co pozwala określić źródło nieautoryzowanych wycieków oprogramowania.
-  * Możliwość [łączenia wielu zestawów w jeden][linking], co jeszcze trudniejsze dla atakujących do określenia ról elementów kodu, jak separacja problemów została wyeliminowana.
-  * Możliwość [automatycznego usuwania nieużytego kodu z aplikacji][pruning], zmniejszając ilość kodu poufnego, który jest wysyłany.
+  * Dodatkowe opcje zmiany nazwy, w tym ulepszone™ Przeciążenie i losowe Wybieranie identyfikatora.
+  * Dostęp do transformacji zaciemniania na poziomie przedsiębiorstwa, w tym [transformacji przeznaczonych do pokonania zautomatyzowanej dekompilacji kodu][control-flow].
+  * Możliwość [przesłaniania poufnych ciągów][string-encryption], co sprawia, że proste wyszukiwanie nieskompilowanego kodu jest niemożliwe.
+  * Możliwość [niejawnego osadzania własności i parametrów dystrybucji w zestawach][watermarking], co pozwala określić źródło przecieków nieautoryzowanego oprogramowania.
+  * Możliwość [łączenia wielu zestawów w jeden][linking], co utrudnia osobom atakującym określenie ról elementów kodu, ponieważ rozdzielenie problemów zostało wyeliminowane.
+  * Możliwość [automatycznego usuwania nieużywanego kodu z aplikacji][pruning]przez zmniejszenie ilości kodu, który jest dostarczany.
 * *Ochrona integralności aplikacji*
-  * Dodatkowe [zachowania obrony aplikacji][check-actions].
-  * Możliwość podania okresu ostrzeżenia przed upływem terminu składania wniosków.
-  * Możliwość powiadamiania kodu aplikacji w okresie ostrzeżenia o zakończeniu eksploatacji lub po upływie terminu.
+  * Dodatkowe [zachowania obronne aplikacji][check-actions].
+  * Możliwość podania okresu ostrzegawczego przed upływem ostatecznego terminu użytkowania aplikacji.
+  * Możliwość powiadamiania kodu aplikacji w okresie ostrzegania o upływie okresu ważności lub po upływie terminu ostatecznego.
 
-Dotfuscator Professional jest standardem branżowym [.NET Obfuscator][net-obfuscator] i jest odpowiedni dla deweloperów korporacyjnych wymagających ciągłego wsparcia, konserwacji i aktualizacji produktów.
-Ponadto Dotfuscator Professional oferuje ściślejszą integrację z programem Visual Studio i jest licencjonowany do użytku komercyjnego.
+Dotfuscator Professional jest branżowym standardem [platformy .NET][net-obfuscator] , który jest przeznaczony dla deweloperów w przedsiębiorstwach, które wymagają ciągłego wsparcia, konserwacji i aktualizacji produktów.
+Ponadto program Dotfuscator Professional oferuje ściślejszą integrację z programem Visual Studio i ma licencję na korzystanie z użytku komercyjnego.
 
-Aby uzyskać więcej informacji na temat zaawansowanych funkcji ochrony aplikacji Dotfuscator Professional, odwiedź [stronę Dotfuscator Overview][product-about] Firmy PreEmptive Solutions i [porównaj ją ze społecznością Dotfuscator.][product-compare]
-[W pełni obsługiwane wersje próbne są dostępne w preemptive.com.][eval]
+Aby uzyskać więcej informacji na temat zaawansowanych funkcji ochrony aplikacji w programie Dotfuscator Professional, odwiedź [stronę omówienia Dotfuscator][product-about] rozwiązań z rozwiązaniami do zaawansowania i [porównaj ją z społecznością Dotfuscator][product-compare].
+[W pełni obsługiwane wersje próbne są dostępne pod adresem PreEmptive.com][eval].
 
 ## <a name="see-also"></a>Zobacz też
 
-[Ten artykuł w pełnym Podręczniku użytkownika społeczności Dotfuscator][full]
+[Ten artykuł znajduje się w pełnym podręczniku użytkownika Dotfuscator Community][full]
 
 <!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 

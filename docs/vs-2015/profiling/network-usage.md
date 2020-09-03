@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 20f7003bbcd319a6a8487d496697d3dcd0b7a18a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548424"
 ---
 # <a name="network-usage"></a>Użycie sieci
@@ -59,7 +59,7 @@ Narzędzie Diagnostyka **sieci** programu Visual Studio zbiera dane dotyczące o
 |**Nagłówki**|Informacje o nagłówkach żądań zdarzenia.|  
 |**Treść**|Dane ładunku żądania i odpowiedzi.|  
 |**Parametry**|Nazwy i wartości parametrów ciągu zapytania.|  
-|**Plik cookie**|Odpowiedź i żądanie danych plików cookie.|  
+|**Cookie**|Odpowiedź i żądanie danych plików cookie.|  
 |**Chronometraż**|Wykres etapów pobierania wybranych zasobów.|  
   
  Na pasku **podsumowania** sieci jest wyświetlana liczba operacji w sieci, które są wyświetlane w danym momencie, ilość transferowanych danych, czas ich pobrania oraz liczba błędów (żądań z odpowiedziami 4xx lub 5xx).  
