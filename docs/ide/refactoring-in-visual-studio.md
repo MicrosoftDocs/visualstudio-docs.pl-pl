@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 02c4b00ce4ebdfc253735783d20fb90c62bae49b
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87507927"
 ---
 # <a name="refactor-code"></a>Refaktoryzacja kodu
@@ -32,7 +32,7 @@ Różne operacje refaktoryzacji są dostępne dla różnych języków programowa
 - Aby uzyskać informacje na temat refaktoryzacji kodu C++, zobacz [pisanie i Refaktoryzacja kodu (C++)](/cpp/ide/writing-and-refactoring-code-cpp).
 - Obsługa refaktoryzacji dla języka F # jest zapewniana przez [Visual F# narzędzia do zarządzania](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools), rozszerzeniem programu Visual Studio innej firmy.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Szybkie akcje](../ide/quick-actions.md)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)

@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c57fab57b4f9baf24212e2806d6d4acd913dff91
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586739"
 ---
 # <a name="debugging-gpu-code"></a>Debugowanie kodu GPU
@@ -27,7 +27,7 @@ ms.locfileid: "82586739"
 Można debugować kod języka C++, który jest uruchomiony w procesorze GPU. Obsługa debugowania GPU w programie Visual Studio obejmuje wykrywanie wyścigu, uruchamianie procesów i ich dołączanie oraz integrację z oknami debugowania.  
   
 ## <a name="supported-platforms"></a>Obsługiwane platformy  
- Debugowanie jest obsługiwane w [!INCLUDE[win7](../includes/win7-md.md)]systemach [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)], i [!INCLUDE[winserver8](../includes/winserver8-md.md)]. Na potrzeby debugowania na emulatorze [!INCLUDE[win8](../includes/win8-md.md)]oprogramowania, lub [!INCLUDE[winserver8](../includes/winserver8-md.md)] jest wymagane. Na potrzeby debugowania sprzętu należy zainstalować sterowniki karty graficznej. Nie wszyscy dostawcy sprzętu implementują wszystkie funkcje debugera. Zapoznaj się z dokumentacją dostawcy, aby uzyskać ograniczenia.  
+ Debugowanie jest obsługiwane w systemach [!INCLUDE[win7](../includes/win7-md.md)] ,, [!INCLUDE[win8](../includes/win8-md.md)] [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)] i [!INCLUDE[winserver8](../includes/winserver8-md.md)] . Na potrzeby debugowania na emulatorze oprogramowania, [!INCLUDE[win8](../includes/win8-md.md)] lub [!INCLUDE[winserver8](../includes/winserver8-md.md)] jest wymagane. Na potrzeby debugowania sprzętu należy zainstalować sterowniki karty graficznej. Nie wszyscy dostawcy sprzętu implementują wszystkie funkcje debugera. Zapoznaj się z dokumentacją dostawcy, aby uzyskać ograniczenia.  
   
 > [!NOTE]
 > Niezależni dostawcy sprzętu, którzy chcą obsługiwać debugowanie procesora GPU w programie Visual Studio, muszą utworzyć bibliotekę DLL, która implementuje interfejs VSD3DDebug i jest przeznaczony dla własnych sterowników.  

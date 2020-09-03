@@ -9,10 +9,10 @@ caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 900a241549cd499437ee25d8f57ed66c0c958a17
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586906"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika
@@ -49,11 +49,11 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
 9. W sekcji **wszystkie kontrolki WPF** przeciągnij **przycisk**, **pole wyboru** i formant **ProgressBar** na MainWindow na powierzchni projektowej.
 
-10. Zaznacz formant przycisku. W okno Właściwości zmień wartość właściwości **Nazwa** z \<Brak nazwy> na Button1. Następnie zmień wartość właściwości **zawartość** z przycisku na Rozpocznij.
+10. Zaznacz formant przycisku. W okno Właściwości zmień wartość właściwości **Nazwa** z \<No Name> na Button1. Następnie zmień wartość właściwości **zawartość** z przycisku na Rozpocznij.
 
-11. Zaznacz formant paska postępu. W okno Właściwości zmień wartość właściwości **Nazwa** z \<Brak nazwy> na ProgressBar1. Następnie zmień wartość właściwości **Maximum** z **100** na **10000**.
+11. Zaznacz formant paska postępu. W okno Właściwości zmień wartość właściwości **Nazwa** z \<No Name> na ProgressBar1. Następnie zmień wartość właściwości **Maximum** z **100** na **10000**.
 
-12. Zaznacz formant pola wyboru. W okno Właściwości zmień wartość właściwości **Nazwa** z \<Brak nazwy> na checkBox1 i wyczyść Właściwość **IsEnabled** .
+12. Zaznacz formant pola wyboru. W okno Właściwości zmień wartość właściwości **Nazwa** z \<No Name> na checkBox1 i wyczyść Właściwość **IsEnabled** .
 
      ![Prosta aplikacja WPF](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
 
@@ -118,9 +118,9 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
 ### <a name="create-and-run-a-coded-ui-test-for-simplewpfapp"></a>Tworzenie i uruchamianie kodowanego testu interfejsu użytkownika dla aplikacji SimpleWPFApp
 
-1. Znajdź utworzoną wcześniej aplikację SimpleWPFApp. Domyślnie aplikacja zostanie umieszczona w witrynie C:\Users\\<username\>\Documents\Visual Studio \<w wersji> \Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
+1. Znajdź utworzoną wcześniej aplikację SimpleWPFApp. Domyślnie aplikacja zostanie umieszczona w witrynie C:\Users \\<username \> \Documents\Visual Studio \<version>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
 
-2. Utwórz na pulpicie skrót do aplikacji SimpleWPFApp. Kliknij prawym przyciskiem myszy plik SimpleWPFApp. exe i wybierz polecenie **Kopiuj**. Na pulpicie kliknij prawym przyciskiem myszy i wybierz polecenie **Wklej skrót**.
+2. Utwórz na pulpicie skrót do aplikacji SimpleWPFApp. Kliknij prawym przyciskiem myszy SimpleWPFApp.exe i wybierz polecenie **Kopiuj**. Na pulpicie kliknij prawym przyciskiem myszy i wybierz polecenie **Wklej skrót**.
 
     > [!TIP]
     > Skrót do aplikacji ułatwia dodawanie lub modyfikowanie kodowanych testów interfejsu użytkownika dla aplikacji, ponieważ pozwala to na szybkie uruchamianie aplikacji.
@@ -200,7 +200,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
     uICheckBoxCheckBox.Checked = this.SimpleAppTestParams.UICheckBoxCheckBoxChecked;
     ```
 
-3. Aby rozwiązać ten problem, można wykonać kodowane testy interfejsu użytkownika, aby zaczekać, aż formant CheckBox zostanie włączony przed kontynuowaniem do tego wiersza przy `WaitForControlEnabled()` użyciu metody.
+3. Aby rozwiązać ten problem, można wykonać kodowane testy interfejsu użytkownika, aby zaczekać, aż formant CheckBox zostanie włączony przed kontynuowaniem do tego wiersza przy użyciu `WaitForControlEnabled()` metody.
 
     > [!WARNING]
     > Nie należy modyfikować pliku UIMap.Designer.cs. Wszelkie zmiany kodu wprowadzone w pliku UIMapDesigner.cs zostaną każdorazowo zastąpione przy generowaniu kodu za pomocą UIMap — Konstruktora kodowanego testu interfejsu użytkownika. Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku UIMap.cs i zmienić jej nazwę. Plik UIMap.cs może służyć do zastępowania metod i właściwości w pliku UIMapDesigner.cs. Musisz usunąć odwołanie do oryginalnej metody w pliku Coded UITest.cs, a następnie zastąpić je zmienioną nazwą metody.
@@ -226,7 +226,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
     > [!CAUTION]
     > Po przeniesieniu metody nie będzie można edytować jej za pomocą Edytora kodowanego testu interfejsu użytkownika. Należy dodać niestandardowy kod i obsługiwać go za pomocą Edytora kodu.
 
-10. Zmień nazwę metody z `SimpleAppTest()` na`ModifiedSimpleAppTest()`
+10. Zmień nazwę metody z `SimpleAppTest()` na `ModifiedSimpleAppTest()`
 
 11. Dodaj następującą instrukcję using do pliku:
 
@@ -289,7 +289,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
     Mouse.Click(uIStartButton, new Point(27, 10));
     ```
 
-     Należy zauważyć, że wiersz kodu we wcześniejszej części tej procedury `UiStartButton`jest używany, który jest nazwą UIMap przed jej przekazaniem.
+     Należy zauważyć, że wiersz kodu we wcześniejszej części tej procedury jest używany `UiStartButton` , który jest nazwą UIMap przed jej przekazaniem.
 
      Aby rozwiązać ten problem, można dodać wycofany formant do UIMap za pomocą Konstruktora kodowanego testu interfejsu użytkownika. Można zaktualizować kod testu do użycia kodu, jak przedstawiono w następnej procedurze.
 
@@ -325,7 +325,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
 10. W Eksploratorze rozwiązań otwórz plik UIMap.Designer.cs.
 
-11. W pliku UIMap.Designer.cs Znajdź Właściwość UIStartButton1. Zauważ, `SearchProperties` że ustawiono `"buttonA"`:
+11. W pliku UIMap.Designer.cs Znajdź Właściwość UIStartButton1. Zauważ, że `SearchProperties` ustawiono `"buttonA"` :
 
     ```csharp
 
@@ -349,7 +349,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
      Teraz można zmodyfikować kodowany test interfejsu użytkownika do korzystania z ostatnio mapowanego formantu. Jak wskazano w poprzedniej procedurze, aby zastąpić jakąkolwiek metodę lub właściwości w kodowanym teście interfejsu użytkownika, należy to zrobić w pliku UIMap.cs.
 
-12. W pliku UIMap.cs Dodaj konstruktora i określ `SearchProperties` Właściwość `UIStartButton` właściwości, aby użyć `AutomationID` właściwości z wartością`"buttonA":`
+12. W pliku UIMap.cs Dodaj konstruktora i określ `SearchProperties` Właściwość `UIStartButton` właściwości, aby użyć `AutomationID` właściwości z wartością `"buttonA":`
 
     ```csharp
 

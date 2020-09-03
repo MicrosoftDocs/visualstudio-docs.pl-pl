@@ -1,5 +1,5 @@
 ---
-title: KeyBinding, Element | Dokumentacja firmy Microsoft
+title: Powiązanie klawiszy — element | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,18 +12,18 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180327"
 ---
 # <a name="keybinding-element"></a>KeyBinding, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-KeyBinding, element określa skróty klawiaturowe dla poleceń.  
+Element powiązanie klawiszy określa skróty klawiaturowe dla poleceń.  
   
- Polecenia może mieć zarówno pojedynczych, jak i podwójną klawiszy skojarzonych z nimi. Przykładem pojedynczego powiązania kluczy jest CTRL + S, aby uzyskać **Zapisz** polecenia. Podwójna klawiszy wymaga dwóch kolejnych kombinacje klawiszy, aby wyzwolić poleceniu. Przykład podwójnego powiązanie klucza jest CTRL + K, CTRL + K, aby ustawić zakładki.  
+ Polecenia mogą zawierać skojarzone z nimi powiązania z pojedynczym i podwójnym kluczem. Przykładem pojedynczego powiązania klucza jest CTRL + S dla polecenia **Zapisz** . Podwójne powiązania klawiszy wymagają dwóch kolejnych kombinacji klawiszy, aby wyzwolić polecenie. Przykładem podwójnego powiązania klawiszy jest CTRL + K, CTRL + K, aby ustawić zakładkę.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,14 +38,14 @@ KeyBinding, element określa skróty klawiaturowe dla poleceń.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagana.|  
+|guid|Wymagany.|  
 |identyfikator|Wymagany.|  
-|edytor|Wymagane. Identyfikator GUID edytora wskazuje Kontekst edycyjny, dla którego ten skrót klawiaturowy zostanie uaktywniona. Wartość zakresu globalnego powiązania jest "guidVSStd97".|  
-|klucz1|Wymagane. Prawidłowe wartości to wszystkie typable znaków alfanumerycznych, a także dwucyfrowych wartości szesnastkowych, poprzedzony 0 x i VK_constants.|  
-|mod1|Opcjonalny. Dowolna kombinacja CTRL, ALT i SHIFT, rozdzielone spacjami.|  
-|key2|Opcjonalny. Prawidłowe wartości to wszystkie typable znaków alfanumerycznych, a także dwucyfrowych wartości szesnastkowych, poprzedzony 0 x i VK_constants.|  
-|mod2|Opcjonalna. Dowolna kombinacja CTRL, ALT i SHIFT, rozdzielone spacjami.|  
-|Emulator|Opcjonalna.|  
+|edytor|Wymagany. Identyfikator GUID edytora wskazuje kontekst edycji, dla którego będzie aktywny ten skrót klawiaturowy. Globalna wartość zakresu powiązania to "guidVSStd97".|  
+|key1|Wymagany. Prawidłowe wartości to wszystkie typable alfanumeryczne, a także dwucyfrowe wartości szesnastkowe poprzedzone 0x i VK_constants.|  
+|mod1|Opcjonalny. Dowolna kombinacja kombinacji klawiszy CTRL, ALT i SHIFT oddzielona spacją.|  
+|key2|Opcjonalny. Prawidłowe wartości to wszystkie typable alfanumeryczne, a także dwucyfrowe wartości szesnastkowe poprzedzone 0x i VK_constants.|  
+|mod2|Opcjonalny. Dowolna kombinacja kombinacji klawiszy CTRL, ALT i SHIFT oddzielona spacją.|  
+|emulator|Opcjonalny.|  
 |Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
@@ -59,7 +59,7 @@ KeyBinding, element określa skróty klawiaturowe dla poleceń.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[KeyBindings, element](../extensibility/keybindings-element.md)|Grupuje elementy powiązanie klawiszy i inne grupy powiązań klawiszy.|  
+|[KeyBindings, element](../extensibility/keybindings-element.md)|Grupuje elementy powiązanie klawiszy i inne grupowania powiązań klawiszy.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -73,5 +73,5 @@ KeyBinding, element określa skróty klawiaturowe dla poleceń.
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [KeyBindings, Element](../extensibility/keybindings-element.md)   
+ [Element powiązań klawiszy](../extensibility/keybindings-element.md)   
  [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

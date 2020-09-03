@@ -16,31 +16,31 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 39cf3e8d59a2ced26f878da979fa87fc663b5bab
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71253591"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Wprowadzenie do programowania dodatków narzędzi VSTO
-  Dodatków VSTO można używać do automatyzowania Microsoft Office aplikacji, rozszerzenia funkcji aplikacji i dostosowywania interfejsu użytkownika aplikacji. Aby uzyskać informacje na temat sposobu, w jaki Dodatki VSTO są porównywane z innymi typami rozwiązań biurowych, które można utworzyć przy użyciu programu Visual Studio, zobacz temat [programowanie rozwiązań pakietu Office — omówienie &#40;&#41;](../vsto/office-solutions-development-overview-vsto.md).
+  Dodatków VSTO można używać do automatyzowania Microsoft Office aplikacji, rozszerzenia funkcji aplikacji i dostosowywania interfejsu użytkownika aplikacji. Aby uzyskać informacje na temat sposobu, w jaki Dodatki VSTO są porównywane z innymi typami rozwiązań pakietu Office, które można utworzyć przy użyciu programu Visual Studio, zobacz [Omówienie rozwiązań programistycznych dla pakietu office &#40;narzędzi VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
 
 ## <a name="create-vsto-add-in-projects"></a>Tworzenie projektów dodatków VSTO
  Utwórz projekty dodatków VSTO przy użyciu jednego z szablonów projektów dodatku VSTO w oknie dialogowym **Nowy projekt** . Szablony te zawierają wymagane odwołania do zestawów i pliki projektu. Program Visual Studio zawiera szablony projektów dodatku VSTO dla większości aplikacji w pakiecie Office.
 
- Aby uzyskać więcej informacji na temat sposobu tworzenia projektu dodatku VSTO, zobacz [How to: Utwórz projekty pakietu Office w programie](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio. Aby uzyskać więcej informacji o szablonach projektów, zobacz [Office Project Templates Overview](../vsto/office-project-templates-overview.md).
+ Aby uzyskać więcej informacji na temat sposobu tworzenia projektu dodatku VSTO, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Aby uzyskać więcej informacji o szablonach projektów, zobacz [Office Project Templates Overview](../vsto/office-project-templates-overview.md).
 
 ## <a name="develop-vsto-add-in-projects"></a>Opracowywanie projektów dodatków VSTO
- Podczas tworzenia projektu dodatku VSTO program Visual Studio automatycznie tworzy plik kodu *ThisAddIn. vb* (in [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) lub *ThisAddIn.cs* (in C#). Ten plik zawiera `ThisAddIn` klasę, która stanowi podstawę dla dodatku VSTO. Elementy członkowskie tej klasy mogą być używane do uruchamiania kodu podczas ładowania lub zwalniania dodatku VSTO, uzyskiwania dostępu do modelu obiektów aplikacji hosta oraz do rozszerzeń funkcji aplikacji. Aby uzyskać więcej informacji, zobacz [dodatki narzędzi VSTO dla programu](../vsto/programming-vsto-add-ins.md).
+ Podczas tworzenia projektu dodatku programu VSTO program Visual Studio automatycznie tworzy plik kodu *ThisAddIn. vb* (in [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ) lub *ThisAddIn.cs* (w języku C#). Ten plik zawiera `ThisAddIn` klasę, która stanowi podstawę dla dodatku VSTO. Elementy członkowskie tej klasy mogą być używane do uruchamiania kodu podczas ładowania lub zwalniania dodatku VSTO, uzyskiwania dostępu do modelu obiektów aplikacji hosta oraz do rozszerzeń funkcji aplikacji. Aby uzyskać więcej informacji, zobacz [dodatki narzędzi VSTO dla programu](../vsto/programming-vsto-add-ins.md).
 
 ## <a name="automate-applications-by-using-the-object-models"></a>Automatyzowanie aplikacji przy użyciu modeli obiektów
  Modele obiektów Microsoft Office aplikacji uwidaczniają wiele typów, które można programować w ramach dodatku VSTO. Można używać tych typów do automatyzowania aplikacji. Na przykład możesz programowo utworzyć i wysłać wiadomość e-mail w programie Outlook lub otworzyć dokument i dodać zawartość w programie Word. Aby uzyskać więcej informacji na temat uzyskiwania dostępu do modelu obiektów aplikacji hosta w kodzie, zobacz [dodatki narzędzi VSTO](../vsto/programming-vsto-add-ins.md).
 
  Aby uzyskać więcej informacji na temat modeli obiektów określonych Microsoft Office aplikacji, zobacz następujące tematy:
 
-- [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md)
+- [Model obiektów programu Excel — Omówienie](../vsto/excel-object-model-overview.md)
 
 - [Model obiektów programu Word — omówienie](../vsto/word-object-model-overview.md)
 
@@ -86,9 +86,9 @@ ms.locfileid: "71253591"
 
   Aby zapoznać się z listą tematów, które przeprowadzą Cię przez niektóre typowe zadania w projektach pakietu Office, zobacz [typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md).
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Tworzenie projektów pakietu Office w programie Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Wprowadzenie &#40;do programowania pakietu Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+## <a name="see-also"></a>Zobacz też
+- [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)
 - [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)

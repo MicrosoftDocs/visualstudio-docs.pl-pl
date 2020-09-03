@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::GetRange | Dokumenty firmy Microsoft
+title: 'IDebugDocumentPosition2:: GetRange | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a923691afdfe145931ab31d0e9bbc6142e7c8d1c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731664"
 ---
 # <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
-Pobiera zakres dla tej pozycji dokumentu.
+Pobiera zakres dla tego położenia dokumentu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,23 +43,23 @@ int GetRange( 
 
 ## <a name="parameters"></a>Parametry
 `pBegPosition`\
-[w, na zewnątrz] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) wypełniona pozycją początkową. Ustaw ten argument na wartość null, jeśli te informacje nie są potrzebne.
+[in. out] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , która jest wypełniana początkową pozycją. Jeśli te informacje nie są konieczne, należy ustawić wartość null dla tego argumentu.
 
 `pEndPosition`\
-[w, na zewnątrz] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) wypełniona pozycją końcową. Ustaw ten argument na wartość null, jeśli te informacje nie są potrzebne.
+[in. out] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , która jest wypełniana pozycją końcową. Jeśli te informacje nie są konieczne, należy ustawić wartość null dla tego argumentu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Zakres określony w pozycji dokumentu dla punktu przerwania lokalizacji jest używany przez aparat debugowania (DE) do wyszukiwania z wyprzedzeniem instrukcji, która faktycznie przyczynia się do kodu. Rozważmy na przykład następujący kod:
+ Zakres określony w położeniu dokumentu dla punktu przerwania lokalizacji jest używany przez aparat debugowania (DE) do wyszukania instrukcji, która faktycznie współużytkuje kod. Rozważmy na przykład następujący kod:
 
 ```
 Line 5: // comment
 Line 6: x = 1;
 ```
 
- Wiersz 5 nie przyczynia się do kodu do programu jest debugowany. Jeśli debuger, który ustawia punkt przerwania w wierszu 5 chce DE do wyszukiwania do przodu pewną kwotę dla pierwszego wiersza, który przyczynia się do kodu, debuger określi zakres, który zawiera dodatkowe wiersze kandydata, gdzie punkt przerwania może być prawidłowo umieszczony. DE będzie następnie przeszukiwać te wiersze, dopóki nie znajdzie wiersza, który może zaakceptować punkt przerwania.
+ Wiersz nr 5 przyczynia się do debugowania kodu programu. Jeśli debuger ustawiający punkt przerwania w wierszu 5 chce, aby wyszukiwać do przodu określoną ilość dla pierwszego wiersza, który współużytkuje kod, debuger określi zakres, który zawiera dodatkowe wiersze kandydatów, w których punkt przerwania może być prawidłowo umieszczony. A następnie wyszukuje przechodzenie do przodu w tych wierszach do momentu znalezienia wiersza, który może akceptować punkt przerwania.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

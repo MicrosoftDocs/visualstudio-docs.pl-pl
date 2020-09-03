@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23aa4eff3339ad3cd3ab7d4106745dc6fa83df34
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662427"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Strona opcji, czcionki i kolory — Właściwości węzła
@@ -29,18 +29,18 @@ W tym dokumencie opisano właściwości czcionki i koloru okna narzędzia, któr
 ## <a name="text-editor-or-printer-or-dialogs-and-tool-windows"></a>Edytor tekstu lub drukarka, okna dialogowe i narzędzia
  `DTE.Properties("FontsAndColors", "TextEditor")`
 
- —lub—
+ -lub-
 
  `DTE.Properties("FontsAndColors", "Printer")`
 
- —lub—
+ -lub-
 
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
 |------------------------|-----------|-----------------|
 |FontFamily|Get/set (ciąg)|Nazwa czcionki do użycia, taka jak "Courier New".|
-|FontCharacterSet|Pobierz/ustaw (<xref:EnvDTE.vsFontCharSet>)|Wartość <xref:EnvDTE.vsFontCharSet>, określająca typ zestawu znaków, który ma być używany, na przykład hebrajski lub rosyjski.|
+|FontCharacterSet|Get/set ( <xref:EnvDTE.vsFontCharSet> )|<xref:EnvDTE.vsFontCharSet>Wartość określająca typ zestawu znaków, który ma być używany, taki jak hebrajski lub rosyjski.|
 |FontSize|Pobierz/ustaw (krótki)|Rozmiar czcionki do użycia w punktach. Na przykład 10 lub 12.|
 
 ## <a name="see-also"></a>Zobacz też

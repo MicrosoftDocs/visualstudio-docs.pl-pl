@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3f6299a8be52aef068746ca33e48341da55f778
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586880"
 ---
 # <a name="item-functions"></a>Funkcje elementów
@@ -58,10 +58,10 @@ W poniższej tabeli wymieniono funkcje wewnętrzne dostępne dla elementów.
 |--------------|-------------|-----------------|
 |`Count`|`@(MyItem->Count())`|Zwraca liczbę elementów.|
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Zwraca odpowiednik `Path.DirectoryName` dla każdego elementu.|
-|`Distinct`|`@(MyItem->Distinct())`|Zwraca elementy, które mają `Include` różne wartości. Metadane zostały zignorowane. W porównaniu jest rozróżniana wielkość liter.|
-|`DistinctWithCase`|`@(MyItem->DistinctWithCase())`|Zwraca elementy, które mają `itemspec` różne wartości. Metadane zostały zignorowane. W porównaniu z rozróżnianiem wielkości liter.|
+|`Distinct`|`@(MyItem->Distinct())`|Zwraca elementy, które mają różne `Include` wartości. Metadane zostały zignorowane. W porównaniu jest rozróżniana wielkość liter.|
+|`DistinctWithCase`|`@(MyItem->DistinctWithCase())`|Zwraca elementy, które mają różne `itemspec` wartości. Metadane zostały zignorowane. W porównaniu z rozróżnianiem wielkości liter.|
 |`Reverse`|`@(MyItem->Reverse())`|Zwraca elementy w kolejności odwrotnej.|
-|`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Zwraca wartość `boolean` , aby wskazać, czy dowolny element ma daną nazwę metadanych, i jego wartości. W porównaniu jest rozróżniana wielkość liter.|
+|`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Zwraca wartość, `boolean` Aby wskazać, czy dowolny element ma daną nazwę metadanych, i jego wartości. W porównaniu jest rozróżniana wielkość liter.|
 |`ClearMetadata`|`@(MyItem->ClearMetadata())`|Zwraca elementy z wyczyszczonymi metadanymi. Tylko `itemspec` jest zachowywane.|
 |`HasMetadata`|`@(MyItem->HasMetadata("MetadataName"))`|Zwraca elementy, które mają daną nazwę metadanych. W porównaniu jest rozróżniana wielkość liter.|
 |`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Zwraca wartości metadanych, które mają nazwę metadanych.|
@@ -106,6 +106,6 @@ Poniższy przykład pokazuje, jak używać funkcji elementu wewnętrznego.
 
 Funkcje `Exists` i `HasTrailingSlash` nie są funkcjami elementu. Są one dostępne do użycia z `Condition` atrybutem. Zobacz [warunki programu MSBuild](msbuild-conditions.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Items](../msbuild/msbuild-items.md)
+- [Elementy](../msbuild/msbuild-items.md)

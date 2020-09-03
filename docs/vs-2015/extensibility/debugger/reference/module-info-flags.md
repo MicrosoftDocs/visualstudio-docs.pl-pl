@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FLAGS | Dokumentacja firmy Microsoft
+title: MODULE_INFO_FLAGS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,13 +13,13 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 14c9f36c82445f5279615591d38b110163a0829d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181131"
 ---
-# <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
+# <a name="module_info_flags"></a>MODULE_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Określa stan symboli dla modułu.  
@@ -41,15 +41,15 @@ public enum enum_MODULE_INFO_FLAGS {
   
 ## <a name="members"></a>Elementy członkowskie  
  MIF_SYMBOLS_LOADED  
- Co najmniej jeden zestaw symboli został załadowany przez moduł (w przeciwnym razie symboli nie zostały załadowane).  
+ Moduł załadował co najmniej jeden zestaw symboli (w przeciwnym razie nie zostały załadowane żadne symbole).  
   
 ## <a name="remarks"></a>Uwagi  
- Ta wartość jest zwracana przez [getsymbolsearchinfo —](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) metody.  
+ Ta wartość jest zwracana przez metodę [GetSymbolSearchInfo —](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

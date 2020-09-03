@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745546"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Debugowanie przykładowego kodu HTML i CSS
@@ -26,7 +26,7 @@ ms.locfileid: "72745546"
 Kod w tym temacie to przykładowy plik do [szybkiego startu: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md). Błędy występujące w projekcie w szybkim samouczku są rozwiązane w tej wersji kodu.
 
 ## <a name="sample-code"></a>Przykładowy kod
-Następujący kod HTML jest używany w tagu \<body > w przewodniku Szybki Start.
+Następujący kod HTML jest używany w \<body> tagu w przewodniku Szybki Start.
 
 ```html
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"
@@ -50,7 +50,7 @@ Poniższy kod CSS pokazuje Dodatki wprowadzone do default. css.
 }
 ```
 
-Poniższy przykład kodu pokazuje kompletny kod JavaScript w default. js. Odwołania do przestrzeni nazw WinJS dla tego kodu znajdują się w pliku default. html szablonu.
+Poniższy przykład kodu pokazuje kompletny kod JavaScript w default.js. Odwołania do przestrzeni nazw WinJS dla tego kodu znajdują się w pliku default.html szablonu.
 
 ```javascript
 (function () {
@@ -101,5 +101,5 @@ Poniższy przykład kodu pokazuje kompletny kod JavaScript w default. js. Odwoł
 })();
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Szybki start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)

@@ -1,5 +1,5 @@
 ---
-title: Nie można utworzyć skojarzenia &lt;association nazwa &gt;-Właściwość wyświetlana dwukrotnie | Microsoft Docs
+title: Nie można utworzyć &lt; nazwy skojarzenia skojarzenia &gt; — Właściwość wyświetlana dwukrotnie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e4a1d20b5c341c1643836ae30e5de6243f35454
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662558"
 ---
-# <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Nie można utworzyć skojarzenia &lt;association nazwa &gt;-Właściwość wyświetlana dwukrotnie
+# <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Nie można utworzyć &lt; nazwy skojarzenia skojarzenia &gt; — Właściwość wymieniona dwukrotnie.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nie można utworzyć > \<association nazwy skojarzenia. Ta sama właściwość jest wymieniona więcej niż raz: Nazwa \<property >.
+Nie można utworzyć skojarzenia \<association name> . Ta sama właściwość jest wymieniona więcej niż raz: \<property name> .
 
  Skojarzenia są definiowane przez wybrane **właściwości skojarzenia** w oknie dialogowym **Edytor skojarzeń** . Właściwości mogą być wyświetlane tylko raz dla każdej klasy w skojarzeniu.
 

@@ -9,10 +9,10 @@ caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5234dddad13ccb52cc653a68ad1c35370a4eae18
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586333"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Korzystanie z różnych przeglądarek sieci Web do przeprowadzania kodowanych testów interfejsu użytkownika
@@ -71,7 +71,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
 
 1. W menu **Narzędzia** wybierz pozycję **rozszerzenia i aktualizacje**.
 
-2. W oknie dialogowym rozszerzenia i aktualizacje Wyszukaj ciąg `Selenium components for Cross Browser Testing`.
+2. W oknie dialogowym rozszerzenia i aktualizacje Wyszukaj ciąg `Selenium components for Cross Browser Testing` .
 
 3. Zaznacz rozszerzenie i wybierz pozycję **Pobierz**.
 
@@ -117,7 +117,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
 
    Ustaw następujące wartości:
 
-  - `EqtTraceLevel`w `system.diagnostics` sekcji.
+  - `EqtTraceLevel` w `system.diagnostics` sekcji.
 
   - `<add name="EqtTraceLevel" value="4" />`
 

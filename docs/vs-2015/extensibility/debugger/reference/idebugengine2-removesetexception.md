@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::RemoveSetException | Dokumentacja firmy Microsoft
+title: 'IDebugEngine2:: RemoveSetException | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 53ba8c9c1934ee1c036e14fb51abd5babcf7e4c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195965"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Usuwa określony wyjątek, więc nie jest już obsługiwane przez aparat debugowania.  
+Usuwa określony wyjątek, dlatego nie jest już obsługiwany przez aparat debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,15 +40,15 @@ int RemoveSetException( 
   
 #### <a name="parameters"></a>Parametry  
  `pException`  
- [in] [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) struktury, który opisuje wyjątek, który ma zostać usunięty.  
+ podczas Struktura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) , która opisuje wyjątek, który ma zostać usunięty.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wyjątek usuwany musi zostały ustawione wcześniej przez wcześniejsze wywołanie [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) metody.  
+ Usuwany wyjątek musi być wcześniej ustawiony przez wcześniejsze wywołanie metody [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) .  
   
- Aby usunąć wszystkie wyjątki zestawu tylko raz, należy wywołać [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) metody.  
+ Aby usunąć wszystkie wyjątki jednocześnie, wywołaj metodę [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) .  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

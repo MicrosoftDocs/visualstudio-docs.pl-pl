@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::CanSetObjectForVisualizer | Dokumentacja firmy Microsoft
+title: 'IEEVisualizerDataProvider:: CanSetObjectForVisualizer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: af1569e315b2010ad734c8776bd8436110365c40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196166"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta metoda określa, czy wizualizatora może mieć obiektu danych, który reprezentuje zaktualizowany.  
+Ta metoda określa, czy wizualizator może mieć obiekt danych, który reprezentuje.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,13 +40,13 @@ int CanSetObjectForVisualizer(
   
 #### <a name="parameters"></a>Parametry  
  `b`  
- [out] Wartość różną od zera (`TRUE`) można zaktualizować obiektu w wizualizatora, wartość zero (`FALSE`) Jeśli jest ona nieosiągalna.  
+ określoną Różna od zera ( `TRUE` ), jeśli obiekt w wizualizatorze można zaktualizować, zero ( `FALSE` ), jeśli nie.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Obiekt nie może być zmieniane, jeśli jest powiązany z pamięci tylko do odczytu, na przykład.  
+ Obiekt może nie być zmieniany, jeśli jest powiązany z pamięcią tylko do odczytu, na przykład.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

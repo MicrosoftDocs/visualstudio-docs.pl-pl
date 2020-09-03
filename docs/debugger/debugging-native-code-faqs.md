@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 15a94d20ade7bfe3e5aaac2c90bb3ba452ef4330
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738173"
 ---
 # <a name="debugging-native-code-faqs"></a>Debugowanie kodu natywnego — Często zadawane pytania
@@ -36,18 +36,18 @@ Poniższe tematy zawierają odpowiedzi na kilka często zadawanych pytań:
 
 - [Jak mogę sprawdzić, czy moje wskaźniki mają uszkodzony adres pamięci?](../debugger/how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q.md)
 
-- [Jak sprawdzić, kto przekazuje błędną wartość parametru?](../debugger/how-can-i-find-out-who-is-passing-a-wrong-parameter-value-q.md)
+- [Jak można sprawdzić, kto przekazuje błędną wartość parametru?](../debugger/how-can-i-find-out-who-is-passing-a-wrong-parameter-value-q.md)
 
 - [Wywołanie funkcji nie powiodło się, gdy jest wywoływana funkcja setek razy?](../debugger/when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed-q.md)
 
 - [Gdzie można sprawdzić kody błędów Win32?](../debugger/where-can-i-look-up-win32-error-codes-q.md)
 
-- [Jak utrzymać fokus podczas krokowego wykonywania programu?](../debugger/how-can-i-keep-focus-when-stepping-through-my-program-q.md)
+- [Jak utrzymać fokus przy przechodzeniu przez program?](../debugger/how-can-i-keep-focus-when-stepping-through-my-program-q.md)
 
-- [Jak można używać okien debugera przy debugowaniu programu pierwszoplanowego?](../debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md)
+- [Jak można używać okien debugera przy debugowaniu programu pierwszego planu?](../debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md)
 
 - [Jeśli zostało zatrzymane w MFC, jak mogę wrócić do funkcji o nazwie MFC?](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

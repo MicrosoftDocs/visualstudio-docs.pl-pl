@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 389328e97f29d97962353e86f73c39c7c5459bfc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592415"
 ---
 # <a name="xml-document-validation"></a>Walidacja dokumentów XML
@@ -25,7 +25,7 @@ Schematy używane w walidacji są dostępne przez dopasowanie `targetNamespace` 
 
 - Osadzony schemat lub DTD.
 
-- Zewnętrzna definicja DTD lub `xsd:schemaLocation` i atrybut `xsd:noNamespaceSchemaLocation`
+- Zewnętrzna definicja DTD lub `xsd:schemaLocation` atrybut i `xsd:noNamespaceSchemaLocation`
 
 - Identyfikator URI przestrzeni nazw schematu XDR "x-Schema".
 
@@ -43,6 +43,6 @@ Podczas edytowania pliku XSLT plik *XSLT. xsd* znajdujący się w pamięci podr�
 ## <a name="xml-schema-xsd-files"></a>Pliki schematu XML (XSD)
 Podczas edytowania pliku schematu XML plik *XSDSchema. xsd* znajdujący się w pamięci podręcznej schematu jest używany do walidacji. Błędy walidacji są wyświetlane jako niebieskie faliste podkreślenia. Wszystkie błędy kompilacji są również wyświetlane z czerwonymi falistymi podkreśleniami.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Edytor XML](../xml-tools/xml-editor.md)

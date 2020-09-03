@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::GetNewObjectForVisualizer | Dokumentacja firmy Microsoft
+title: 'IEEVisualizerDataProvider:: GetNewObjectForVisualizer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dfd7045ebe846d79d51c0351a3e8d53b7a7128bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196159"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta metoda pobiera nowego obiektu dla wizualizatora. Ta metoda zawsze spowoduje utworzenie nowego obiektu z istniejących obiektów.  
+Ta metoda pobiera nowy obiekt wizualizatora. Ta metoda zawsze utworzy nowy obiekt z istniejącego obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,13 +40,13 @@ int GetNewObjectForVisualizer(
   
 #### <a name="parameters"></a>Parametry  
  `ppObject`  
- [out] Nowy obiekt.  
+ określoną Nowy obiekt.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- `This method` ponownie oblicza obiektu obecnie reprezentuje i zwraca wynik w postaci nowego obiektu. Istniejący obiekt zostanie zaktualizowany w wyniku oceny.  
+ `This method` ponownie szacuje obiekt, który obecnie reprezentuje, i zwraca wynik jako nowy obiekt. Istniejący obiekt zostanie zaktualizowany w wyniku obliczania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   

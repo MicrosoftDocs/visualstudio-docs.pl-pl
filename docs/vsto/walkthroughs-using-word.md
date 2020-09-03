@@ -14,44 +14,44 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c6d3b4ece92bf278ef8d43dca7e449272982381c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254994"
 ---
 # <a name="walkthroughs-using-word"></a>Wskazówki dotyczące korzystania z programu Word
   W poniższych przewodnikach przedstawiono sposoby używania dostosowań na poziomie dokumentu i dodatków narzędzi VSTO do automatyzowania Microsoft Office Word i dostosowywania interfejsu użytkownika.
 
 ## <a name="document-level-walkthroughs"></a>Instruktaże na poziomie dokumentu
-- [Przewodnik: Utwórz pierwsze dostosowanie na poziomie dokumentu dla programu Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md) pokazuje, jak utworzyć podstawowe dostosowanie na poziomie dokumentu dla programu Word.
+- [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md) Pokazuje, jak utworzyć podstawowe dostosowanie na poziomie dokumentu dla programu Word.
 
-- [Przewodnik: Wstawianie tekstu do dokumentu z okienka](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md) akcji pokazuje, jak dodać tekst do dokumentu programu Word, gdy użytkownicy wprowadzają tekst w kontrolkach w okienku Akcje.
+- [Przewodnik: wstawianie tekstu do dokumentu z okienka akcji](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md) Pokazuje, jak dodać tekst do dokumentu programu Word, gdy użytkownicy wprowadzają tekst w kontrolkach w okienku Akcje.
 
-- [Przewodnik: Powiąż dane z kontrolkami w okienku](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md) akcje programu Word pokazuje, jak powiązać dane z kontrolkami w okienku akcji. Kontrolki ilustrują relację wzorzec/szczegóły między tabelami w bazie danych SQL Server.
+- [Przewodnik: powiązywanie danych z kontrolkami w okienku akcji programu Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md) Pokazuje, jak powiązać dane z kontrolkami w okienku Akcje. Kontrolki ilustrują relację wzorzec/szczegóły między tabelami w bazie danych SQL Server.
 
-- [Przewodnik: Zmiana formatowania dokumentu za pomocą kontrolek](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md) CheckBox pokazuje, jak używać pól wyboru w dokumencie programu Word, aby zmienić formatowanie.
+- [Przewodnik: zmienianie formatowania dokumentu przy użyciu kontrolek CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md) Pokazuje, jak używać pól wyboru w dokumencie programu Word, aby zmienić formatowanie.
 
-- [Przewodnik: Wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md) pokazuje, jak używać przycisków i pól tekstowych w dokumentach programu Word.
+- [Przewodnik: wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md) Pokazuje, jak używać przycisków i pól tekstowych w dokumentach programu Word.
 
-- [Przewodnik: Aktualizacja wykresu w dokumencie za pomocą przycisków](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md) radiowych pokazuje, jak zmienić style wykresu w dokumencie programu Word przy użyciu przycisków opcji w dostosowaniu na poziomie dokumentu.
+- [Przewodnik: aktualizowanie wykresu w dokumencie za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md) Demonstruje sposób zmiany stylów wykresu w dokumencie programu Word przy użyciu przycisków opcji w dostosowywaniu na poziomie dokumentu.
 
-- [Przewodnik: Utwórz menu skrótów dla zakładek](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md) pokazuje, jak utworzyć menu skrótów, które może służyć do formatowania tekstu w zakładce.
+- [Przewodnik: Tworzenie menu skrótów dla zakładek](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md) Pokazuje, jak utworzyć menu skrótów, które może służyć do formatowania tekstu w zakładce.
 
-- [Przewodnik: Wywoływanie kodu z VBA w projekcie](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md) Visual Basic pokazuje, jak wywołać kod w zestawie dostosowania z kodu VBA w dokumencie.
+- [Przewodnik: wywoływanie kodu z VBA w projekcie Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md) Pokazuje, jak wywołać kod w zestawie dostosowań z kodu VBA w dokumencie.
 
-- [Przewodnik: Tworzenie szablonu za pomocą kontrolek](../vsto/walkthrough-creating-a-template-by-using-content-controls.md) zawartości pokazuje, jak używać kontrolek zawartości do tworzenia zawartości strukturalnej i wielokrotnego użytku w szablonie programu Word.
+- [Przewodnik: Tworzenie szablonu za pomocą kontrolek zawartości](../vsto/walkthrough-creating-a-template-by-using-content-controls.md) Pokazuje, jak używać kontrolek zawartości do tworzenia zawartości strukturalnej i wielokrotnego użytku w szablonie programu Word.
 
-- [Przewodnik: Formanty zawartości powiązane z niestandardowymi](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md) częściami XML pokazują, jak powiązać kontrolki zawartości w dokumencie programu Word z danymi XML przechowywanymi w dokumencie.
+- Wskazówki [: powiązywanie kontrolek zawartości z niestandardowymi częściami XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md) Pokazuje, jak powiązać kontrolki zawartości w dokumencie programu Word z danymi XML przechowywanymi w dokumencie.
 
 ## <a name="application-level-walkthroughs"></a>Wskazówki dotyczące poziomu aplikacji
-- [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md) pokazuje, jak utworzyć podstawowy dodatek narzędzi VSTO dla programu Word.
+- [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md) Pokazuje, jak utworzyć podstawowy dodatek narzędzi VSTO dla programu Word.
 
-- [Przewodnik: Dodawanie formantów do dokumentu w czasie wykonywania w dodatku](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md) VSTO pokazuje, jak dodać kontrolki do dokumentu przy użyciu dodatku VSTO.
+- [Przewodnik: Dodawanie kontrolek do dokumentu w czasie wykonywania w dodatku narzędzi VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md) Pokazuje, jak dodać kontrolki do dokumentu przy użyciu dodatku VSTO.
 
-- [Przewodnik: Utwórz kartę niestandardową za pomocą kodu](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md) XML wstążki pokazuje, jak utworzyć niestandardową kartę wstążki przy użyciu pliku deskryptora XML w dodatku VSTO.
+- [Przewodnik: Tworzenie niestandardowej karty przy użyciu języka XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md) Pokazuje, jak utworzyć niestandardową kartę wstążki przy użyciu pliku deskryptora XML w dodatku VSTO.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wskazówki dotyczące korzystania z programu Excel](../vsto/walkthroughs-using-excel.md)
 - [Dane w przewodnikach rozwiązań pakietu Office](../vsto/data-in-office-solutions-walkthroughs.md)
 - [Wskazówki dotyczące dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization-walkthroughs.md)

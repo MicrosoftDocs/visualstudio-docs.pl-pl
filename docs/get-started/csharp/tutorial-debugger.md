@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d6e9ee79602f3a0db8f68d701120c450bfee721
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82153072"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Samouczek: informacje na temat debugowania kodu w języku C# przy użyciu programu Visual Studio
@@ -28,7 +28,7 @@ W tym artykule wprowadzono funkcje debugera programu Visual Studio w przewodniku
 
 Mimo że aplikacja demonstracyjna to C#, większość funkcji ma zastosowanie do języków C++, Visual Basic, F #, Python, JavaScript i innych obsługiwanych przez program Visual Studio (F # nie obsługuje funkcji Edit-and-Continue. Języka F # i języka JavaScript nie obsługują okna **autostarts** ). Zrzuty ekranu znajdują się w języku C#.
 
-W tym samouczku zostaną wykonane następujące czynności:
+W tym samouczku wykonasz następujące czynności:
 
 > [!div class="checklist"]
 > * Uruchom Debuger i naciśnij punkty przerwania.
@@ -61,7 +61,7 @@ Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do stro
 
 ::: moniker-end
 
-Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **Narzędzia** > **Pobierz narzędzia i funkcje..**., co spowoduje otwarcie Instalator programu Visual Studio. Zostanie uruchomiona Instalator programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
+Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje..**., co spowoduje otwarcie Instalator programu Visual Studio. Zostanie uruchomiona Instalator programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
@@ -153,7 +153,7 @@ Najpierw utworzysz projekt aplikacji konsolowej .NET Core. Typ projektu jest dos
 
      W tym samouczku przejdziemy bliżej tej aplikacji przy użyciu debugera i zapoznajesz się z funkcjami debugera.
 
-2. Zatrzymaj debuger, naciskając czerwony przycisk Zatrzymaj ![debugowanie](../../debugger/media/dbg-tour-stop-debugging.png "Zatrzymaj debugowanie") (**SHIFT** + **F5**).
+2. Zatrzymaj debuger, naciskając czerwony przycisk Zatrzymaj ![debugowanie](../../debugger/media/dbg-tour-stop-debugging.png "Zatrzymaj debugowanie") (**SHIFT**  +  **F5**).
 
 3. W oknie konsoli naciśnij klawisz, aby zamknąć okno konsoli.
 
@@ -181,7 +181,7 @@ Najpierw utworzysz projekt aplikacji konsolowej .NET Core. Typ projektu jest dos
 
 W większości przypadków używamy skrótów klawiaturowych w tym miejscu, ponieważ jest dobrym sposobem na szybkie wykonywanie aplikacji w debugerze (równoważne polecenia, takie jak polecenia menu, są wyświetlane w nawiasach).
 
-1. Po wstrzymaniu w `name += letters[i]` instrukcji Umieść wskaźnik myszy nad `letters` zmienną i zobaczysz jej wartość domyślną, wartość pierwszego elementu w tablicy. `char[10]`
+1. Po wstrzymaniu w `name += letters[i]` instrukcji Umieść wskaźnik myszy nad `letters` zmienną i zobaczysz jej wartość domyślną, wartość pierwszego elementu w tablicy `char[10]` .
 
      Funkcje, które umożliwiają inspekcję zmiennych, są jedną z najbardziej przydatnych funkcji debugera i istnieją różne sposoby ich wykonania. Często podczas próby debugowania problemu próbujesz dowiedzieć się, czy zmienne przechowują wartości oczekiwane w określonym czasie.
 
@@ -191,19 +191,19 @@ W większości przypadków używamy skrótów klawiaturowych w tym miejscu, poni
 
 1. Następnie umieść wskaźnik myszy nad `name` zmienną i zobaczysz jej bieżącą wartość, pusty ciąg.
 
-1. Naciśnij klawisz **F10** (lub wybierz polecenie **Debuguj >** przekroczenie) dwukrotnie, `SendMessage` aby przejść do wywołania metody, a następnie naciśnij klawisz **F10** jeszcze raz.
+1. Naciśnij klawisz **F10** (lub wybierz polecenie **Debuguj >** przekroczenie) dwukrotnie, aby przejść do `SendMessage` wywołania metody, a następnie naciśnij klawisz **F10** jeszcze raz.
 
-     F10 przesuwa debuger do następnej instrukcji bez przechodzenia do funkcji lub metod w kodzie aplikacji (kod nadal jest wykonywany). Naciskając klawisz F10 w wywołaniu `SendMessage` metody, pominął kod implementacji dla `SendMessage` (co może nie interesuje Cię teraz).
+     F10 przesuwa debuger do następnej instrukcji bez przechodzenia do funkcji lub metod w kodzie aplikacji (kod nadal jest wykonywany). Naciskając klawisz F10 w `SendMessage` wywołaniu metody, pominął kod implementacji dla `SendMessage` (co może nie interesuje Cię teraz).
 
-1. Naciśnij klawisz **F10** (lub **Debuguj** > **krokowo**) kilka razy, aby wielokrotnie wykonać iterację `for` w pętli, zatrzymując ponownie w punkcie przerwania i umieścić wskaźnik myszy `name` nad zmienną za każdym razem, aby sprawdzić jej wartość.
+1. Naciśnij klawisz **F10** (lub **Debuguj**  >  **krokowo**) kilka razy, aby wielokrotnie wykonać iterację w `for` pętli, zatrzymując ponownie w punkcie przerwania i umieścić wskaźnik myszy nad `name` zmienną za każdym razem, aby sprawdzić jej wartość.
 
      ![Wyświetlanie etykietki danych](../csharp/media/get-started-data-tip.gif "Wyświetlanie etykietki danych")
 
-     Wartość zmiennej zmienia się z każdą `for` iteracją pętli, wyświetlając wartości `f`, then `fr` `fre`, i tak dalej. Aby szybciej korzystać z debugera przez pętlę w tym scenariuszu, możesz nacisnąć klawisz **F5** (lub wybrać polecenie **Debuguj** > **dalej**), co spowoduje przejście do punktu przerwania zamiast następnej instrukcji.
+     Wartość zmiennej zmienia się z każdą iteracją `for` pętli, wyświetlając wartości `f` , then, `fr` `fre` i tak dalej. Aby szybciej korzystać z debugera przez pętlę w tym scenariuszu, możesz nacisnąć klawisz **F5** (lub wybrać polecenie **Debuguj**  >  **dalej**), co spowoduje przejście do punktu przerwania zamiast następnej instrukcji.
 
      Często podczas debugowania chcesz szybko sprawdzić wartości właściwości w zmiennych, aby sprawdzić, czy przechowują wartości, które oczekują na przechowywanie, a porady dotyczące danych to dobry sposób na to.
 
-1. `for` Mimo że wstrzymano w pętli w `Main` metodzie, naciśnij klawisz **F11** (lub wybierz polecenie **Debuguj > Wkrocz**) do momentu wstrzymania `SendMessage` w wywołaniu metody.
+1. Mimo że wstrzymano w `for` pętli w `Main` metodzie, naciśnij klawisz **F11** (lub wybierz polecenie **Debuguj > Wkrocz**) do momentu wstrzymania w `SendMessage` wywołaniu metody.
 
      Należy mieć następujący wiersz kodu:
 
@@ -219,22 +219,22 @@ W większości przypadków używamy skrótów klawiaturowych w tym miejscu, poni
 
      Załóżmy, że skończysz badanie `SendMessage` metody i chcesz uzyskać dostęp do metody, ale pozostać w debugerze. Można to zrobić przy użyciu polecenia **krok po kroku** .
 
-1. Naciśnij klawisz **SHIFT** + **F11** (lub **Debuguj > krok wychodzący**).
+1. Naciśnij klawisz **SHIFT**  +  **F11** (lub **Debuguj > krok wychodzący**).
 
      To polecenie wznawia wykonywanie aplikacji (i zwiększa debuger) do momentu, gdy bieżąca metoda lub funkcja zwróci wynik.
 
-     Należy wrócić do `for` pętli w `Main` metodzie, wstrzymane przy wywołaniu `SendMessage` metody. Aby uzyskać więcej informacji na temat różnych sposobów poruszania się po kodzie, zobacz [nawigowanie po kodzie w debugerze](../../debugger/navigating-through-code-with-the-debugger.md).
+     Należy wrócić do `for` pętli w `Main` metodzie, wstrzymane przy `SendMessage` wywołaniu metody. Aby uzyskać więcej informacji na temat różnych sposobów poruszania się po kodzie, zobacz [nawigowanie po kodzie w debugerze](../../debugger/navigating-through-code-with-the-debugger.md).
 
 ## <a name="navigate-code-using-run-to-click"></a>Nawigowanie po kodzie za pomocą polecenia Uruchom do kliknięcia
 
 1. Naciśnij klawisz **F5** , aby ponownie przejść do punktu przerwania.
 
-1. W edytorze kodu przewiń w dół i `Console.WriteLine` Umieść kursor nad metodą w `SendMessage` metodzie do momentu, gdy zielony przycisk **Uruchom** do kliknięcia zostanie wyświetlony po lewej stronie. ![Run to Click](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") Etykietka narzędzia dla przycisku pokazuje "uruchom wykonywanie do tego miejsca".
+1. W edytorze kodu przewiń w dół i umieść kursor nad `Console.WriteLine` metodą w `SendMessage` metodzie do momentu, **Run to Click** gdy zielony przycisk Uruchom ![do kliknięcia](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") zostanie wyświetlony po lewej stronie. Etykietka narzędzia dla przycisku pokazuje "uruchom wykonywanie do tego miejsca".
 
      ![Korzystanie z funkcji uruchamiania do kliknięcia](../csharp/media/get-started-run-to-click.png "Uruchom do kliknięcia")
 
    > [!NOTE]
-   > Przycisk **Uruchom do kliknięcia** jest nowy w [!include[vs_dev15](../../misc/includes/vs_dev15_md.md)]. (Jeśli nie widzisz przycisku Zielona strzałka, użyj klawisza **F11** w tym przykładzie zamiast, aby przejść do odpowiedniego miejsca w debugerze).
+   > Przycisk **Uruchom do kliknięcia** jest nowy w [!include[vs_dev15](../../misc/includes/vs_dev15_md.md)] . (Jeśli nie widzisz przycisku Zielona strzałka, użyj klawisza **F11** w tym przykładzie zamiast, aby przejść do odpowiedniego miejsca w debugerze).
 
 2. Kliknij przycisk **Uruchom, aby kliknąć** polecenie ![Uruchom, aby kliknąć](../../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
@@ -244,17 +244,17 @@ W większości przypadków używamy skrótów klawiaturowych w tym miejscu, poni
 
 ## <a name="restart-your-app-quickly"></a>Szybkie ponowne uruchamianie aplikacji
 
-Kliknij przycisk **Uruchom** ponownie ![Uruchom aplikację](../../debugger/media/dbg-tour-restart.png "RestartApp") na pasku narzędzi debugowania (**Ctrl** + **SHIFT** + **F5**).
+Kliknij przycisk **Uruchom** ponownie ![Uruchom aplikację](../../debugger/media/dbg-tour-restart.png "RestartApp") na pasku narzędzi debugowania (**Ctrl**  +  **SHIFT**  +  **F5**).
 
 Po naciśnięciu przycisku **Uruchom ponownie**program zapisze czas w przeciwieństwie do zatrzymywania aplikacji i ponownego uruchomienia debugera. Debuger zatrzymuje się w pierwszym punkcie przerwania, który jest wywoływany przez wykonanie kodu.
 
-Debuger zatrzyma się ponownie w punkcie przerwania, który został `for` wcześniej ustawiony wewnątrz pętli.
+Debuger zatrzyma się ponownie w punkcie przerwania, który został wcześniej ustawiony wewnątrz `for` pętli.
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Inspekcja zmiennych przy użyciu okienek Autostart i locale
 
 1. Zapoznaj się z oknem **Autokorekty** u dołu edytora kodu.
 
-    Jeśli jest zamknięte, otwórz je podczas wstrzymania w debugerze, wybierając pozycję **Debuguj** > **okna** > **autostartowe**.
+    Jeśli jest zamknięte, otwórz je podczas wstrzymania w debugerze, wybierając pozycję **Debuguj**  >  **okna**  >  **autostartowe**.
 
     W oknie **Autokorekty** widoczne są zmienne i ich bieżąca wartość. W oknie **samochody** są wyświetlane wszystkie zmienne używane w bieżącym wierszu lub poprzednim wierszu (Sprawdź dokumentację zachowania specyficzną dla języka).
 
@@ -278,9 +278,9 @@ Debuger zatrzyma się ponownie w punkcie przerwania, który został `for` wcześ
 
 1. Po wstrzymaniu w `for` pętli kliknij okno **stos wywołań** , które jest domyślnie otwarte w prawym dolnym okienku.
 
-    Jeśli jest zamknięte, otwórz je w debugerze, wybierając pozycję **Debuguj** > **stos wywołań****systemu Windows** > .
+    Jeśli jest zamknięte, otwórz je w debugerze, wybierając pozycję **Debuguj**  >  **Windows**  >  **stos wywołań**systemu Windows.
 
-2. Klikaj polecenie **F11** kilka razy, aż zobaczysz debuger pauzy `SendMessage` w metodzie. Sprawdź okno **stosu wywołań** .
+2. Klikaj polecenie **F11** kilka razy, aż zobaczysz debuger pauzy w `SendMessage` metodzie. Sprawdź okno **stosu wywołań** .
 
     ![Badanie stosu wywołań](../csharp/media/get-started-call-stack.png "ExamineCallStack")
 
@@ -297,13 +297,13 @@ Debuger zatrzyma się ponownie w punkcie przerwania, który został `for` wcześ
 
 ## <a name="change-the-execution-flow"></a>Zmień przepływ wykonywania
 
-1. Naciśnij dwukrotnie klawisz **F11** , aby `Console.WriteLine` uruchomić metodę.
+1. Naciśnij dwukrotnie klawisz **F11** , aby uruchomić `Console.WriteLine` metodę.
 
-1. Po wstrzymaniu debugera w wywołaniu `SendMessage` metody Użyj myszy, aby uzyskać żółtą strzałkę (wskaźnik wykonywania) po lewej stronie, a następnie przesuń żółtą strzałkę w górę o jeden wiersz, z powrotem `Console.WriteLine`do.
+1. Po wstrzymaniu debugera w `SendMessage` wywołaniu metody Użyj myszy, aby uzyskać żółtą strzałkę (wskaźnik wykonywania) po lewej stronie, a następnie przesuń żółtą strzałkę w górę o jeden wiersz, z powrotem do `Console.WriteLine` .
 
 1. Naciśnij klawisz **F11**.
 
-    Debuger ponownie uruchamia `Console.WriteLine` metodę (zobaczysz to w danych wyjściowych okna konsoli).
+    Debuger ponownie `Console.WriteLine` uruchamia metodę (zobaczysz to w danych wyjściowych okna konsoli).
 
     Zmieniając przepływ wykonywania, można wykonywać operacje, takie jak testowanie różnych ścieżek wykonywania kodu lub ponowne uruchamianie kodu bez ponownego uruchamiania debugera.
 

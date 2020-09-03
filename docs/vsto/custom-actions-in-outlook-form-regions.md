@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 817cf9fe8698c2908e873246a8971f90fe72b460
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254443"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Niestandardowe akcje w regionach formularzy programu Outlook
@@ -28,7 +28,7 @@ ms.locfileid: "71254443"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>Dodawanie akcji niestandardowych do regionu formularza
- Aby dodać akcję niestandardową do regionu formularza, użyj okna dialogowego **Akcje niestandardowe** . Możesz otworzyć okno dialogowe **Akcje niestandardowe** , wybierając region formularza w **Eksplorator rozwiązań**, rozwijając węzeł **manifestu** w **oknie właściwości**, wybierając Właściwość **CustomActions** , a następnie klikając przycisk przycisk wielokropka (![ASP.net Mobile Designer elipsa](../sharepoint/media/mwellipsis.gif "ASP.net Mobile Designer Elipsa")).
+ Aby dodać akcję niestandardową do regionu formularza, użyj okna dialogowego **Akcje niestandardowe** . Możesz otworzyć okno dialogowe **Akcje niestandardowe** , wybierając region formularza w **Eksplorator rozwiązań**, rozszerzając węzeł **manifestu** w **oknie właściwości**, wybierając Właściwość **CustomActions** , a następnie klikając przycisk wielokropka (![ASP.net Mobile Designer](../sharepoint/media/mwellipsis.gif "Wielokropek projektanta ASP.NET Mobile")).
 
  Możesz użyć okna dialogowego **Akcje niestandardowe** , aby określić *formularz docelowy*. Formularz docelowy jest formularz, który pojawia się, gdy użytkownik wykonuje akcję niestandardową.
 
@@ -39,9 +39,9 @@ ms.locfileid: "71254443"
 |Właściwość|Opis|
 |--------------|-----------------|
 |**AddressLike**|Określa sposób, w jaki zostanie rozkierowany formularz docelowy.|
-|**Body**|Określa sposób, w jaki treść oryginalnego elementu jest dołączana do formularza docelowego.|
-|**Dostępny**|Wskazuje, czy akcja niestandardowa jest włączona. Jeśli ta właściwość ma wartość **Fałsz**, Akcja niestandardowa zostanie wyłączona.|
-|**— Metoda**|Określa typ odpowiedzi dostępnej podczas wykonywania akcji niestandardowej. Akcja niestandardowa umożliwia wysłanie formularza, otwarcie formularza lub wyświetlenie monitu o potwierdzenie lub otwarcie formularza.|
+|**Treść**|Określa sposób, w jaki treść oryginalnego elementu jest dołączana do formularza docelowego.|
+|**Włączone**|Wskazuje, czy akcja niestandardowa jest włączona. Jeśli ta właściwość ma wartość **Fałsz**, Akcja niestandardowa zostanie wyłączona.|
+|**Metoda**|Określa typ odpowiedzi dostępnej podczas wykonywania akcji niestandardowej. Akcja niestandardowa umożliwia wysłanie formularza, otwarcie formularza lub wyświetlenie monitu o potwierdzenie lub otwarcie formularza.|
 |**Nazwa**|Określa nazwę wewnętrzną, która może być używana do odwoływania się do tej akcji niestandardowej w kodzie.|
 |**ShowOnRibbon**|Wskazuje, czy akcja niestandardowa ma być wyświetlana na Wstążce oryginalnego elementu.|
 |**SubjectPrefix**|Określa tekst wstawiany na początku wiersza tematu formularza docelowego.|
@@ -51,7 +51,7 @@ ms.locfileid: "71254443"
 ## <a name="customize-a-custom-action-at-run-time"></a>Dostosuj akcję niestandardową w czasie wykonywania
  Możesz również dodać zachowanie do akcji niestandardowej przy użyciu kodu. Można na przykład dodać kod, który przyjmuje nazwy adresatów poczty e-mail i dodaje te nazwy jako uczestników w nowym elemencie terminu. [W tym](/office/vba/api/Outlook.MailItem.CustomAction) celu należy obsłużyć zdarzenie " [MailItem" obiektu](/office/vba/api/Outlook.MailItem).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
 - [Przewodnik: Projektowanie regionu formularza programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)

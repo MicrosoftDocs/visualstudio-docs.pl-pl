@@ -21,23 +21,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d403315a2320589f69174109d55c8726ffd5f673
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149393"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Gdzie można sprawdzić kody błędów Win32?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-POWIODŁO SIĘ. H w katalogu plików DOŁĄCZONYCH instalacji systemu domyślnego zawiera definicje kodu błędu dla funkcji Win32 API.  
+WINERROR. H w katalogu dołączania domyślnej instalacji systemu zawiera definicje kodu błędów dla funkcji Win32 API.  
   
- Kod błędu można wyszukać, wpisując kod w **Obejrzyj** okna lub **QuickWatch** okno dialogowe. Przykład:  
+ Kod błędu można wyszukać, wpisując kod w oknie **czujka** lub oknie dialogowym **QuickWatch** . Na przykład:  
   
 ```  
 0x80000004,hr  
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)   
+ [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)   
  [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

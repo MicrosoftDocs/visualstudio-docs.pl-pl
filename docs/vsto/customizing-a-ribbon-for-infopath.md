@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255507"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Dostosowywanie wstążki dla programu InfoPath
-  Po dostosowaniu wstążki w Microsoft Office InfoPath należy rozważyć, gdzie wstążka niestandardowa będzie wyświetlana w aplikacji. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]można wyświetlić Wstążkę w następujących trzech typach okien aplikacji programu InfoPath:
+  Po dostosowaniu wstążki w Microsoft Office InfoPath należy rozważyć, gdzie wstążka niestandardowa będzie wyświetlana w aplikacji. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] można wyświetlić Wstążkę w następujących trzech typach okien aplikacji programu InfoPath:
 
 - System Windows, który wyświetla szablon formularza otwarty w trybie projektowania.
 
@@ -45,24 +45,24 @@ ms.locfileid: "71255507"
 
 |Identyfikator wstążki|Okno, w którym wstążka będzie wyświetlana podczas uruchamiania projektu|
 |---------------|---------------------------------------------------------------------|
-|**Microsoft.InfoPath.Designer**|System Windows, który wyświetla szablon formularza otwarty w trybie projektowania.|
-|**Microsoft.InfoPath.Editor**|System Windows, który wyświetla formularz oparty na szablonie formularza.|
-|**Microsoft.InfoPath.PrintPreview**|Okno podglądu wydruku.|
+|**Microsoft. InfoPath. Designer**|System Windows, który wyświetla szablon formularza otwarty w trybie projektowania.|
+|**Microsoft. InfoPath. Editor**|System Windows, który wyświetla formularz oparty na szablonie formularza.|
+|**Microsoft. InfoPath. PrintPreview**|Okno podglądu wydruku.|
 
- Do projektu można dodać więcej niż jedną Wstążkę. Jeśli więcej niż jedna wstążka korzysta z identyfikatora wstążki, Zastąp `CreateRibbonExtensibilityObject` metodę `ThisAddin` w klasie projektu, aby określić, która wstążka ma być wyświetlana w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [Omówienie wstążki](../vsto/ribbon-overview.md).
+ Do projektu można dodać więcej niż jedną Wstążkę. Jeśli więcej niż jedna wstążka korzysta z identyfikatora wstążki, Zastąp `CreateRibbonExtensibilityObject` metodę w `ThisAddin` klasie projektu, aby określić, która wstążka ma być wyświetlana w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [Omówienie wstążki](../vsto/ribbon-overview.md).
 
 ## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Określ typ wstążki przy użyciu kodu XML wstążki
- Jeśli używasz elementu **wstążki (XML)** , sprawdź wartość <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> parametru *ribbonID* w metodzie i zwróć odpowiednią Wstążkę.
+ Jeśli używasz elementu **wstążki (XML)** , sprawdź wartość parametru *ribbonID* w <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> metodzie i zwróć odpowiednią Wstążkę.
 
- <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> Metoda jest generowana automatycznie przez program Visual Studio w pliku kodu wstążki. Parametr *ribbonID* jest ciągiem, który identyfikuje typ okna programu InfoPath, które jest otwierane.
+ <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>Metoda jest generowana automatycznie przez program Visual Studio w pliku kodu wstążki. Parametr *ribbonID* jest ciągiem, który identyfikuje typ okna programu InfoPath, które jest otwierane.
 
  Poniższy przykład kodu demonstruje, jak wyświetlić Wstążkę niestandardową tylko w oknie, w którym jest wyświetlany szablon formularza w trybie projektowania. Wstążka do wyświetlenia jest określona w `GetResourceText()` metodzie, która jest generowana w klasie wstążki. Aby uzyskać więcej informacji na temat klasy wstążki, zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
 
  [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)]
  [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
-- [Wstążka — omówienie](../vsto/ribbon-overview.md)
+- [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
 - [XML — wstążka](../vsto/ribbon-xml.md)

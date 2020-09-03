@@ -1,5 +1,5 @@
 ---
-title: KeyBindings, Element | Dokumentacja firmy Microsoft
+title: Element powiązania klawiszy | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2649dee6bbf87b43caee260ddb2b6bbd217c7ae7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180309"
 ---
 # <a name="keybindings-element"></a>KeyBindings, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-KeyBindings, element grupy elementów powiązanie klawiszy i inne grupy powiązań klawiszy.  
+Element powiązania klawiszy Grupuje elementy powiązanie klawiszy i inne grupowania powiązań klawiszy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,13 +48,13 @@ KeyBindings, element grupy elementów powiązanie klawiszy i inne grupy powiąza
 |Element|Opis|  
 |-------------|-----------------|  
 |[KeyBinding, element](../extensibility/keybinding-element.md)|Określa skróty klawiaturowe dla poleceń.|  
-|[Powiązania klawiszy](../extensibility/keybindings-element.md)|Grupuje elementy powiązanie klawiszy i inne grupy powiązań klawiszy.|  
+|[Powiązania klawiszy](../extensibility/keybindings-element.md)|Grupuje elementy powiązanie klawiszy i inne grupowania powiązań klawiszy.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują poleceń.|  
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -68,5 +68,5 @@ KeyBindings, element grupy elementów powiązanie klawiszy i inne grupy powiąza
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [KeyBinding, Element](../extensibility/keybinding-element.md)   
+ [Powiązanie klawiszy, element](../extensibility/keybinding-element.md)   
  [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

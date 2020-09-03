@@ -1,5 +1,5 @@
 ---
-title: MsBuild Pliki odpowiedzi | Dokumenty firmy Microsoft
+title: Pliki odpowiedzi MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -19,25 +19,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44d6e3c77fee53b15ec8d18cb74fd7355ee101a8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302897"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315151"
 ---
 # <a name="msbuild-response-files"></a>Pliki odpowiedzi MSBuild
 
-Pliki odpowiedzi (*.rsp*) to pliki tekstowe zawierające przełączniki wiersza polecenia *MSBuild.exe.* Każdy przełącznik może znajdować się na osobnej linii lub wszystkie przełączniki mogą być w jednej linii. Wiersze komentarza są poprzedzone **#** symbolem. Przełącznik **@** służy do przekazywania innego pliku odpowiedzi do *pliku MSBuild.exe*.
+Pliki odpowiedzi (*. rsp*) to pliki tekstowe, które zawierają *MSBuild.exe* przełączniki wiersza polecenia. Każdy przełącznik może znajdować się w osobnym wierszu lub wszystkie przełączniki mogą znajdować się w jednym wierszu. Wiersze komentarzy są poprzedzone **#** symbolem. **@** Przełącznik służy do przekazywania innego pliku odpowiedzi do *MSBuild.exe*.
 
-## <a name="msbuildrsp"></a>MSBuild.rsp
+## <a name="msbuildrsp"></a>MSBuild. rsp
 
-Plik autoresponse to specjalny plik *rsp,* którego *program MSBuild.exe* jest automatycznie używany podczas tworzenia projektu. Ten *plik, MSBuild.rsp*, musi znajdować się w tym samym katalogu co *MSBuild.exe*, w przeciwnym razie nie zostanie znaleziony. Można edytować ten plik, aby określić domyślne przełączniki wiersza polecenia na *msBuild.exe*. Na przykład jeśli używasz tego samego rejestratora przy każdym tworzeniu projektu, można dodać przełącznik **-logger** do *MSBuild.rsp*, a *MSBuild.exe użyje rejestratora* za każdym razem, gdy projekt jest zbudowany.
+Plik autoresponse jest specjalnym plikiem *RSP* , który *MSBuild.exe* automatycznie używa podczas kompilowania projektu. Ten plik, *MSBuild. rsp*, musi znajdować się w tym samym katalogu co *MSBuild.exe*, w przeciwnym razie nie zostanie znaleziony. Można edytować ten plik, aby określić domyślne przełączniki wiersza polecenia do *MSBuild.exe*. Na przykład jeśli używasz tego samego rejestratora za każdym razem, gdy kompilujesz projekt, możesz dodać przełącznik **-Rejestrator** do programu *MSBuild. rsp*, a *MSBuild.exe* będzie używać rejestratora za każdym razem, gdy projekt zostanie skompilowany.
 
-## <a name="directorybuildrsp"></a>Katalog.Build.rsp
+## <a name="directorybuildrsp"></a>Katalog. Build. rsp
 
-W wersji 15.6 i wyższej MSBuild przeszukuje katalogi nadrzędne projektu dla pliku o nazwie *Directory.Build.rsp*.  Może to być przydatne w repozytorium kodu źródłowego, aby zapewnić domyślne argumenty podczas kompilacji wiersza polecenia.  Może również służyć do określania argumentów wiersza polecenia hostowanych kompilacji.
+W wersji 15,6 i nowszych program MSBuild przeszuka katalogi nadrzędne projektu dla pliku o nazwie *Directory. Build. rsp*.  Może to być przydatne w repozytorium kodu źródłowego do dostarczania argumentów domyślnych podczas kompilacji w wierszu polecenia.  Można go również użyć do określenia argumentów wiersza polecenia dla kompilacji hostowanych.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Odwołanie do budynku MSBuild](../msbuild/msbuild-reference.md)
-- [Odwołanie do wiersza polecenia](../msbuild/msbuild-command-line-reference.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
+- [Dokumentacja wiersza polecenia](../msbuild/msbuild-command-line-reference.md)

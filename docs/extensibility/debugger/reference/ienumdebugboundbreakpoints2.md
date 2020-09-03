@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugBoundBreakpoints2 | Dokumenty firmy Microsoft
+title: IEnumDebugBoundBreakpoints2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 421d46efbef189fd6ffc86812d2bfdd28f5da5ff
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717444"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
-Ten interfejs wylicza powiązane punkty przerwania skojarzone z oczekującym zdarzeniem związanym z punktem przerwania lub punktem przerwania.
+Ten interfejs wylicza powiązane punkty przerwania skojarzone z oczekującym zdarzeniem punktu przerwania lub przerwaniem.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,35 +29,35 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Aparat debugowania (DE) implementuje ten interfejs jako część jego obsługi punktów przerwania. Ten interfejs musi być zaimplementowany, jeśli punkty przerwania są obsługiwane.
+ Aparat debugowania (DE) implementuje ten interfejs w ramach obsługi punktów przerwania. Ten interfejs musi być zaimplementowany, jeśli są obsługiwane punkty przerwania.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
  Wywołania programu Visual Studio:
 
-- [EnumBreakpoints,](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) aby uzyskać ten interfejs reprezentujący listę wszystkich punktów przerwania, które zostały wyzwolone.
+- [EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) , aby uzyskać ten interfejs reprezentujący listę wszystkich wyzwolonych punktów przerwania.
 
-- [EnumBoundBreakpoints,](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) aby uzyskać ten interfejs reprezentujący listę wszystkich punktów przerwania, które były powiązane.
+- [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) , aby uzyskać ten interfejs reprezentujący listę wszystkich punktów przerwania, które zostały powiązane.
 
-- [EnumBoundBreakpoints,](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) aby uzyskać ten interfejs reprezentujący listę wszystkich punktów przerwania powiązanych z tym oczekującym punktem przerwania.
+- [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) , aby uzyskać ten interfejs reprezentujący listę wszystkich punktów przerwania powiązanych z tym oczekującym punktem przerwania.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- W poniższej tabeli `IEnumDebugBoundBreakpoints2`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ W poniższej tabeli przedstawiono metody `IEnumDebugBoundBreakpoints2` .
 
 |Metoda|Opis|
 |------------|-----------------|
 |[Dalej](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|Pobiera określoną liczbę powiązanych punktów przerwania w sekwencji wyliczenia.|
-|[Pominąć](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|Pomija określoną liczbę powiązanych punktów przerwania w sekwencji wyliczenia.|
-|[Resetuj](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-reset.md)|Resetuje sekwencję wyliczenia do początku.|
-|[Klonowanie](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|Tworzy wyliczenia, który zawiera ten sam stan wyliczenia jako bieżącego wylicznika.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-getcount.md)|Pobiera liczbę powiązanych punktów przerwania w wyliczacza.|
+|[Pomiń](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|Pomija określoną liczbę powiązanych punktów przerwania w sekwencji wyliczenia.|
+|[Reset](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-reset.md)|Resetuje sekwencję wyliczenia na początek.|
+|[Klonowanie](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-getcount.md)|Pobiera liczbę powiązanych punktów przerwania w module wyliczającym.|
 
 ## <a name="remarks"></a>Uwagi
- Visual Studio używa powiązanych punktów przerwania reprezentowanych przez ten interfejs, aby zaktualizować wyświetlanie punktów przerwania w IDE.
+ Program Visual Studio używa powiązanych punktów przerwania reprezentowanych przez ten interfejs do aktualizowania wyświetlania punktów przerwania w IDE.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

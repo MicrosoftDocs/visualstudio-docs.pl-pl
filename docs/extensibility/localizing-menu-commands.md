@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c1c158fd689cbcae18fec5d3306e6d6fadb169f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904552"
 ---
 # <a name="localize-menu-commands"></a>Lokalizowanie poleceń menu
@@ -147,7 +147,7 @@ Należy zmodyfikować plik *AssemblyInfo.cs* i plik projektu, aby uwzględnić z
     </EmbeddedResource>
     ```
 
-8. Dla każdego zlokalizowanego języka Skopiuj `EmbeddedResource` element dla `VsPackage.en-US` i ustaw atrybut **include** i **LogicalName** elementu kopii na wartość ustawienia regionalne docelowej.
+8. Dla każdego zlokalizowanego języka Skopiuj  `EmbeddedResource` element dla `VsPackage.en-US` i ustaw atrybut **include** i **LogicalName** elementu kopii na wartość ustawienia regionalne docelowej.
 
 9. Do każdego zlokalizowanego `VSCTCompile` elementu Dodaj element wskazujący `ResourceName` `Menus.ctmenu` , jak pokazano w następującym przykładzie:
 

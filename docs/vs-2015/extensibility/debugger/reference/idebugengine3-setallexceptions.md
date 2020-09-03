@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetAllExceptions | Dokumentacja firmy Microsoft
+title: 'IDebugEngine3:: SetAllExceptions | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 48abbfb47e346ad9acbfac7b92642e6638f67df3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195892"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta metoda ustawia stan wszystkich oczekujących wyjątków.  
+Ta metoda ustawia stan wszystkich zaległych wyjątków.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,10 +40,10 @@ int SetAllExceptions(
   
 #### <a name="parameters"></a>Parametry  
  `dwState`  
- [in] Jedną z [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) wartości.  
+ podczas Jedna z wartości [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   
