@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Kompilacja tych samych plików źródłowych przy użyciu różnych opcji | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: kompilowanie tych samych plików źródłowych przy użyciu różnych opcji | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -15,25 +15,25 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8bf76967363f4c0d97d93c895fbeb6209c8503f0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821682"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Instrukcje: Kompilacja tych samych plików źródłowych przy użyciu różnych opcji
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Porady: kompilacja tych samych plików źródłowych przy użyciu różnych opcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas kompilowania projektów kompilacji są często te same składniki z opcjami różne kompilacje. Na przykład można utworzyć kompilacji debugowania przy użyciu informacji o symbolach lub kompilację wydania z nie informacji o symbolach, ale z włączonymi optymalizacjami. Możesz też skompilować projektu do uruchamiania na danej platformie, takich jak x86 lub [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]. W takich przypadkach większości opcji kompilacji pozostają takie same; tylko kilka opcji zostały zmienione, aby kontrolować konfigurację kompilacji. Za pomocą [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], użyj właściwości i warunki do tworzenia innych konfiguracji kompilacji.  
+Podczas kompilowania projektów często kompilujesz te same składniki z różnymi opcjami kompilacji. Na przykład możesz utworzyć kompilację debugowania z informacjami o symbolach lub kompilacją wydania bez informacji o symbolach, ale z włączonymi optymalizacjami. Lub można skompilować projekt do uruchamiania na określonej platformie, takiej jak x86 lub [!INCLUDE[vcprx64](../includes/vcprx64-md.md)] . We wszystkich tych przypadkach większość opcji kompilacji pozostaje taka sama; tylko kilka opcji jest zmienianych w celu sterowania konfiguracją kompilacji. W programie należy [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] używać właściwości i warunków do tworzenia różnych konfiguracji kompilacji.  
   
-## <a name="using-properties-to-modify-projects"></a>Aby zmodyfikować projektów za pomocą właściwości  
- `Property` Element definiuje zmienną, która odwołuje się do pliku projektu, takie jak lokalizacja katalogu tymczasowego, lub do ustawiania wartości właściwości, które są używane w kompilacji, kilka konfiguracji, takie jak kompilacja do debugowania i wydania. Aby uzyskać więcej informacji o właściwościach, zobacz [właściwości programu MSBuild](msbuild-properties1.md).  
+## <a name="using-properties-to-modify-projects"></a>Modyfikowanie projektów przy użyciu właściwości  
+ `Property`Element definiuje zmienną, do której odwołuje się kilka razy w pliku projektu, takich jak lokalizacja katalogu tymczasowego lub ustawienie wartości właściwości, które są używane w kilku konfiguracjach, takich jak Kompilacja debugowania i kompilacja wydania. Aby uzyskać więcej informacji na temat właściwości, zobacz [Właściwości programu MSBuild](msbuild-properties1.md).  
   
- Aby zmienić konfigurację kompilacji, bez konieczności zmiany w pliku projektu, można użyć właściwości. `Condition` Atrybutu `Property` elementu i `PropertyGroup` elementu pozwala na zmianę wartości właściwości. Aby uzyskać więcej informacji na temat [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] warunkach, zobacz [warunki](../msbuild/msbuild-conditions.md).  
+ Właściwości można użyć do zmiany konfiguracji kompilacji bez konieczności zmiany pliku projektu. `Condition`Atrybut `Property` elementu i `PropertyGroup` elementu umożliwia zmianę wartości właściwości. Aby uzyskać więcej informacji o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] warunkach, zobacz [warunki](../msbuild/msbuild-conditions.md).  
   
-#### <a name="to-set-a-group-of-properties-based-on-another-property"></a>Aby ustawić grupę na podstawie właściwości innej właściwości  
+#### <a name="to-set-a-group-of-properties-based-on-another-property"></a>Aby ustawić grupę właściwości na podstawie innej właściwości  
   
-- Użyj `Condition` atrybutu w `PropertyGroup` podobny do następującego elementu:  
+- Użyj `Condition` atrybutu w `PropertyGroup` elemencie podobnym do poniższego:  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -42,61 +42,61 @@ Podczas kompilowania projektów kompilacji są często te same składniki z opcj
     </PropertyGroup>  
     ```  
   
-#### <a name="to-define-a-property-based-on-another-property"></a>Aby zdefiniować właściwość, na podstawie innej właściwości  
+#### <a name="to-define-a-property-based-on-another-property"></a>Aby zdefiniować właściwość w oparciu o inną właściwość  
   
-- Użyj `Condition` atrybutu w `Property` podobny do następującego elementu:  
+- Użyj `Condition` atrybutu w `Property` elemencie podobnym do poniższego:  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
     ```  
   
 ## <a name="specifying-properties-on-the-command-line"></a>Określanie właściwości w wierszu polecenia  
- Napisana pliku projektu, aby akceptował wiele konfiguracji musisz mieć możliwość zmiany te konfiguracje przy każdej kompilacji projektu. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zapewnia tę możliwość, umożliwiając właściwości można określić w wierszu polecenia za pomocą **/property** lub **/p** przełącznika.  
+ Po zapisaniu pliku projektu w celu zaakceptowania wielu konfiguracji należy mieć możliwość zmiany tych konfiguracji przy każdym kompilowaniu projektu. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zapewnia tę możliwość, umożliwiając określenie właściwości w wierszu polecenia przy użyciu przełącznika **/Property** lub **/p** .  
   
-#### <a name="to-set-a-project-property-at-the-command-line"></a>Aby ustawić właściwości projektu w wierszu polecenia  
+#### <a name="to-set-a-project-property-at-the-command-line"></a>Aby ustawić właściwość projektu w wierszu polecenia  
   
-- Użyj **/property** przełącznik z właściwości i wartości właściwości. Przykład:  
+- Użyj przełącznika **/Property** z wartością właściwości i właściwości. Na przykład:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     \- lub —  
+     \- oraz  
   
     ```  
     Msbuild file.proj /p:Flavor=Debug  
     ```  
   
-#### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Aby określić więcej niż jednej właściwości projektu w wierszu polecenia  
+#### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Aby określić więcej niż jedną właściwość projektu w wierszu polecenia  
   
-- Użyj **/property** lub **/p** przełącznika wiele razy przy użyciu właściwości i wartości właściwości lub użyć jednego **/property** lub **/p** przełącznika i wiele właściwości należy oddzielić średnikami (;). Na przykład:  
+- Użyj przełącznika **/Property** lub **/p** wiele razy z wartościami właściwości i właściwości albo użyj jednego **/Property** lub **/p** Switch i Oddziel wiele właściwości średnikami (;). Na przykład:  
   
   ```  
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
   ```  
   
-   \- lub —  
+   \- oraz  
   
   ```  
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
   ```  
   
-  Zmienne środowiskowe są także traktowane jako właściwości i są automatycznie włączone przez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Aby uzyskać więcej informacji na temat używania zmiennych środowiskowych, zobacz [jak: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Zmienne środowiskowe są również traktowane jako właściwości i automatycznie włączane przez program [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] . Aby uzyskać więcej informacji o używaniu zmiennych środowiskowych, zobacz [How to: use Environment w Build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
-  Wartość właściwości, która jest określona w wierszu polecenia mają pierwszeństwo przed wszystkie wartości, który jest skonfigurowany dla tej samej właściwości w pliku projektu, a wartość w pliku projektu mają pierwszeństwo przed wartość w zmiennej środowiskowej.  
+  Wartość właściwości określona w wierszu polecenia ma pierwszeństwo przed każdą wartością ustawioną dla tej samej właściwości w pliku projektu, a ta wartość w pliku projektu ma pierwszeństwo przed wartością w zmiennej środowiskowej.  
   
-  To zachowanie można zmienić za pomocą `TreatAsLocalProperty` atrybutów w znaczniku projektu. Dla nazwy właściwości, które są wyświetlane z tego atrybutu wartość właściwości, która jest określona w wierszu polecenia nie pierwszeństwo przed wartością w pliku projektu. Przykład można znaleźć w dalszej części tego tematu.  
+  Można zmienić to zachowanie przy użyciu `TreatAsLocalProperty` atrybutu w tagu projektu. W przypadku nazw właściwości, które są wyświetlane na liście z tym atrybutem wartość właściwości określona w wierszu polecenia nie ma pierwszeństwa przed wartością w pliku projektu. Przykład można znaleźć w dalszej części tego tematu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu, projekt "Hello World" zawiera dwie nowe grupy właściwości, które mogą służyć do tworzenia kompilacji debugowania i kompilacji wydania.  
+ Poniższy przykład kodu, projekt "Hello world", zawiera dwie nowe grupy właściwości, których można użyć do utworzenia kompilacji debugowania i kompilacji wydania.  
   
- Tworzenie wersji debugowania tego projektu, należy wpisać:  
+ Aby skompilować wersję do debugowania tego projektu, wpisz:  
   
 ```  
 msbuild consolehwcs1.proj /p:flavor=debug  
 ```  
   
- Aby skompilować wersji detalicznej tego projektu, należy wpisać:  
+ Aby skompilować wersję handlową tego projektu, wpisz:  
   
 ```  
 msbuild consolehwcs1.proj /p:flavor=retail  
@@ -155,7 +155,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
 ```  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład ilustruje sposób używania `TreatAsLocalProperty` atrybutu. `Color` Właściwość ma wartość `Blue` w pliku projektu i `Green` w wierszu polecenia. Za pomocą `TreatAsLocalProperty="Color"` w znaczniku projektu, a właściwość wiersza polecenia (`Green`) nie zastępuje właściwość, która jest zdefiniowana w pliku projektu (`Blue`).  
+ Poniższy przykład ilustruje sposób użycia `TreatAsLocalProperty` atrybutu. `Color`Właściwość ma wartość `Blue` w pliku projektu i `Green` w wierszu polecenia. `TreatAsLocalProperty="Color"`W tagu projektu właściwość wiersza polecenia ( `Green` ) nie przesłania właściwości zdefiniowanej w pliku projektu ( `Blue` ).  
   
  Aby skompilować projekt, wprowadź następujące polecenie:  
   
@@ -188,5 +188,5 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 ## <a name="see-also"></a>Zobacz też  
 [MSBuild](msbuild.md)  
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)   
- [Project, element (MSBuild)](../msbuild/project-element-msbuild.md)
+ [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)   
+ [Project — Element (MSBuild)](../msbuild/project-element-msbuild.md)

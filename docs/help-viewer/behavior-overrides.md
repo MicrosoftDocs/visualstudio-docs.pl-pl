@@ -1,5 +1,5 @@
 ---
-title: Przesłonięcia menedżera zawartości pomocy
+title: Przesłonięcia Menedżera zawartości pomocy
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
@@ -9,38 +9,38 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c03d631be1bc4a38e514e1019fa230775427a53
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825093"
 ---
-# <a name="help-content-manager-overrides"></a>Przesłonięcia menedżera zawartości pomocy
+# <a name="help-content-manager-overrides"></a>Przesłonięcia Menedżera zawartości pomocy
 
-Można zmienić domyślne zachowanie w Podglądzie pomocy i pomocy funkcjach dostępnych w środowisku IDE programu Visual Studio. Niektóre opcje są określone przez utworzenie [.pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/) pliku można ustawić różne wartości klucza rejestru. Inne są ustawiane bezpośrednio w rejestrze.
+Można zmienić domyślne zachowanie podglądu pomocy i funkcji związanych z pomocą w środowisku IDE programu Visual Studio. Niektóre opcje są określone przez utworzenie pliku [. pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/) w celu ustawienia różnych wartości kluczy rejestru. Inne są ustawiane bezpośrednio w rejestrze.
 
-## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>Jak kontrolować zachowanie podglądu pomocy przy użyciu pliku pkgdef
+## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>Jak kontrolować zachowanie podglądu pomocy przy użyciu pliku. pkgdef
 
-1. Tworzenie *.pkgdef* plik z pierwszego wiersza jako `[$RootKey$\Help]`.
+1. Utwórz plik *. pkgdef* z pierwszym wierszem jako `[$RootKey$\Help]` .
 
-2. Dodaj wybrane lub wszystkie wartości klucza rejestru opisanego w poniższej tabeli opisano w osobnych wierszach, na przykład `"UseOnlineHelp"=dword:00000001`.
+2. Dodaj wszystkie lub wszystkie wartości klucza rejestru opisane w poniższej tabeli w oddzielnych wierszach, na przykład `"UseOnlineHelp"=dword:00000001` .
 
-3. Skopiuj plik do *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\< wersja\>\Common7\IDE\CommonExtensions*.
+3. Skopiuj plik do pliku *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017 \\<Edition \> \Common7\IDE\CommonExtensions*.
 
-4. Uruchom `devenv /updateconfiguration` w wierszu polecenia dla deweloperów.
+4. Uruchom `devenv /updateconfiguration` w wierszu polecenia dewelopera.
 
-### <a name="registry-key-values"></a>Wartości kluczy rejestru
+### <a name="registry-key-values"></a>Wartości klucza rejestru
 
 |Wartość klucza rejestru|Typ|Dane|Opis|
 |------------------|----|----|-----------|
-|NewContentAndUpdateService|string|\<adres URL HTTP dla punktu końcowego usługi\>|Definiowanie punktu końcowego, unikatowa usługa|
-|UseOnlineHelp|dword|`0` Aby określić pomocy lokalnej `1` do określenia Pomoc online|Zdefiniować domyślne pomocy online lub offline|
-|OnlineBaseUrl|string|\<adres URL HTTP dla punktu końcowego usługi\>|Zdefiniuj unikatowe końcowy F1|
-|OnlineHelpPreferenceDisabled|dword|`0` Aby włączyć lub `1` wyłączyć opcja preferencji Pomoc online|Wyłącz opcja preferencji Pomoc online|
-|DisableManageContent|dword|`0` Aby włączyć lub `1` wyłączyć **zarządzanie zawartością** karty w Podglądzie pomocy|Wyłącz **zarządzanie zawartością** kartę|
-|DisableFirstRunHelpSelection|dword|`0` Aby włączyć lub `1` można wyłączyć funkcji pomocy, które są skonfigurowane przy pierwszym uruchomieniu programu Visual Studio|Wyłączyć możliwość instalacji zawartości podczas pierwszego uruchomienia programu Visual Studio|
+|NewContentAndUpdateService|ciąg|\<http URL for service endpoint\>|Zdefiniuj unikatowy punkt końcowy usługi|
+|UseOnlineHelp|Ostatnie|`0` Aby określić pomoc lokalną, `1` Aby określić pomoc online|Zdefiniuj domyślną pomoc w trybie online lub offline|
+|OnlineBaseUrl|ciąg|\<http URL for service endpoint\>|Zdefiniuj unikatowy punkt końcowy F1|
+|OnlineHelpPreferenceDisabled|Ostatnie|`0` Aby włączyć lub `1` wyłączyć opcję preferencji pomoc online|Wyłącz opcję preferencji pomoc online|
+|DisableManageContent|Ostatnie|`0` Aby włączyć lub `1` wyłączyć kartę **Zarządzaj zawartością** w podglądzie pomocy|Wyłącz kartę **Zarządzaj zawartością**|
+|DisableFirstRunHelpSelection|Ostatnie|`0` Aby włączyć lub `1` wyłączyć funkcje pomocy, które są konfigurowane podczas pierwszego uruchomienia programu Visual Studio|Wyłącz instalację zawartości przy pierwszym uruchomieniu programu Visual Studio|
 
-### <a name="example-pkgdef-file-contents"></a>Zawartość pliku .pkgdef przykład
+### <a name="example-pkgdef-file-contents"></a>Przykład zawartość pliku pkgdef
 
 ```pkgdef
 [$RootKey$\Help]
@@ -52,17 +52,17 @@ Można zmienić domyślne zachowanie w Podglądzie pomocy i pomocy funkcjach dos
 "DisableFirstRunHelpSelection"=dword:00000001
 ```
 
-## <a name="use-registry-editor-to-change-help-viewer-behavior"></a>Użyj Edytora rejestru, aby zmienić zachowanie podglądu pomocy
+## <a name="use-registry-editor-to-change-help-viewer-behavior"></a>Użyj edytora rejestru, aby zmienić zachowanie podglądu pomocy
 
-Następujące dwa zachowania mogą być kontrolowane przez ustawienie wartości klucza rejestru w Edytorze rejestru.
+Poniższe dwa zachowania można kontrolować przez ustawienie wartości klucza rejestru w Edytorze rejestru.
 
 |Zadanie|Klucz rejestru|Wartość|Dane|
 |----------|-----|------|----|
-|Zastąp priorytet zadania usługi BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (na klawiaturze machine)\Microsoft\Help\v2.3 64-bitowych|BITSPriority|**pierwszy plan**, **wysokiej**, **normalne**, lub **niski**|
-|Wskaż magazynu zawartości lokalnej w udziale sieciowym|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
+|Zastąp priorytet zadania usługi BITS|HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node (na komputerze 64-bitowym) \Microsoft\Help\v2.3|BITSPriority|**pierwszy plan**, **wysoki**, **normalny**lub **niski**|
+|Wskaż lokalny magazyn zawartości w udziale sieciowym|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Help\ v 2.3 \ Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Podręcznik administratora programu Podgląd pomocy](../help-viewer/administrator-guide.md)
-- [Argumenty wiersza polecenia dla menedżera zawartości pomocy](../help-viewer/command-line-arguments.md)
+- [Podręcznik administratora podglądu pomocy](../help-viewer/administrator-guide.md)
+- [Argumenty wiersza polecenia dla Menedżera zawartości pomocy](../help-viewer/command-line-arguments.md)
 - [Podgląd Pomocy firmy Microsoft](../help-viewer/overview.md)

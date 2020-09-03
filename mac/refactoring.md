@@ -1,99 +1,99 @@
 ---
 title: Refaktoryzacja kodu
-description: Udoskonalanie kodu przy użyciu programu Visual Studio dla komputerów Mac i szybkich akcji.
+description: Poprawiaj kod przy użyciu Visual Studio dla komputerów Mac i szybkie akcje.
 author: cobey
 ms.author: cobey
 ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67691297"
 ---
 # <a name="refactoring"></a>Refaktoryzacja
 
-Refaktoryzacja kodu jest sposobem, aby zmienić rozmieszczenie, restrukturyzacji i wyjaśnienia istniejącego kodu, zapewniając jednocześnie, że ogólne zachowanie kodu nie zmienia.
+Refaktoryzacja kodu jest sposobem na ponowne rozmieszczenie, restrukturyzację i wyjaśnienie istniejącego kodu przy zapewnieniu, że ogólne zachowanie kodu nie ulegnie zmianie.
 
-Refaktoryzowanie tworzy zdrowszą bazę kodu, dzięki czemu jest bardziej użyteczny, czytelny i owalny dla Ciebie lub innego dewelopera lub użytkownika, który może odnosić się do kodu.
+Refaktoryzacja generuje bazę kodu dotyczący, dzięki czemu jest bardziej użyteczny, czytelny i konserwowany dla Ciebie lub dowolnego innego dewelopera lub użytkownika, który może odwoływać się do kodu.
 
-Integracja programu Visual Studio for Mac z Roslyn, platformą kompilatora .NET typu open source firmy Microsoft, umożliwia więcej operacji refaktoryzacji.
+Integracja Visual Studio dla komputerów Mac z usługą Roslyn — platforma kompilatora .NET Open Source firmy Microsoft umożliwia wykonywanie dodatkowych operacji refaktoryzacji.
 
-## <a name="renaming"></a>Zmienianie nazw
+## <a name="renaming"></a>Zmiana nazwy
 
-Polecenie *Zmień nazwę* refaktoryzacji może służyć do dowolnego identyfikatora kodu (na przykład nazwa klasy, nazwa właściwości itp.), aby znaleźć wszystkie wystąpienia tego identyfikatora i zmienić je. Aby zmienić nazwę symbolu, kliknij na niego prawym przyciskiem myszy i wybierz **polecenie Zmień nazwę...** lub użyj powiązania **klawiszy Cmd (♡) + R:**
+Polecenia *zmiany nazwy* można użyć dla dowolnego identyfikatora kodu (na przykład nazwy klasy, nazwy właściwości itp.), aby znaleźć wszystkie wystąpienia tego identyfikatora i je zmienić. Aby zmienić nazwę symbolu, kliknij go prawym przyciskiem myszy i wybierz polecenie **Zmień nazwę...** lub Użyj **polecenia CMD (⌘) + R** Key Binding:
 
-![Zmienianie nazwy elementu menu](media/refactoring-renaming1.png)
+![Zmień nazwę elementu menu](media/refactoring-renaming1.png)
 
-To wyróżnia symbol i wszelkie odniesienia do niego. Po rozpoczęciu wpisywania nowej nazwy automatycznie zmienia wszystkie odwołania w kodzie i można zatwierdzić zmiany, naciskając **klawisz Enter:**
+Podświetla symbol i wszystkie odwołania do niego. Po rozpoczęciu wpisywania nowej nazwy automatycznie zmienia wszystkie odwołania w kodzie i można zatwierdzić zmiany, naciskając klawisz **Enter**:
 
 ![Zmiana nazwy i identyfikator](media/refactoring-renaming2.png)
 
 ## <a name="quick-actions"></a>Szybkie akcje
 
-Szybkie akcje umożliwiają łatwe refaktoryzowanie, generowanie lub modyfikowanie kodu za pomocą jednej akcji.
+Szybkie akcje umożliwiają łatwe refaktoryzację, generowanie lub modyfikowanie kodu przy użyciu jednej akcji.
 
-Szybkie akcje mogą być używane do:
+Szybkie akcje mogą służyć do:
 
-* Stosowanie poprawki kodu w przypadku naruszenia reguły analizatora kodu
+* Zastosuj poprawkę kodu dla naruszenia reguły analizatora kodu
 * Pomijanie naruszenia reguły analizatora kodu
-* Stosowanie refaktoryzacji (na przykład zmiennej tymczasowej wbudowanej)
-* Generowanie kodu (na przykład wprowadzenie zmiennej lokalnej)
+* Zastosuj refaktoryzację (na przykład w wbudowanej zmiennej tymczasowej)
+* Generuj kod (na przykład wprowadź zmienną lokalną)
 
-Szybkie akcje można zastosować za pomocą ![ikony](media/quick-actions-light-bulb-icon.png) żarówki ![żarówki lub](media/quick-actions-screwdriver-icon.png) ikony śrubokręta lub naciskając **option (♠)**+**Wprowadź,** gdy kursor znajduje się w wierszu kodu, dla którego dostępna jest akcja. Zostanie wyświetlony błąd żarówki ![błąd żarówki ikony](media/quick-actions-error-light-bulb-icon.png) żarówki, jeśli istnieje czerwony squiggle wskazujący błąd i Visual Studio ma poprawkę dostępną dla tego błędu.
+Szybkie akcje można stosować przy użyciu ikon żarówki żarówki ![ ](media/quick-actions-light-bulb-icon.png) lub ![ śrubokrętów ](media/quick-actions-screwdriver-icon.png) , lub naciskając przycisk **opcji (⌥)** + **Enter** , gdy kursor znajduje się w wierszu kodu, dla którego akcja jest dostępna. Zobaczysz ikonę żarówki błędów żarówki z błędem ![ ](media/quick-actions-error-light-bulb-icon.png) , jeśli istnieje czerwona zygzakowata wskazująca na błąd, a dla tego błędu jest dostępna poprawka.
 
-W dowolnym języku strony trzecie mogą zapewnić niestandardowe diagnostyki i sugestie, na przykład jako część SDK i visual studio żarówki zapalają się na podstawie tych reguł.
+W przypadku dowolnego języka osoby trzecie mogą zapewnić niestandardową diagnostykę i sugestie, na przykład w ramach zestawu SDK, a żarówki programu Visual Studio w oparciu o te reguły.
 
 ### <a name="quick-action-icons"></a>Ikony szybkiej akcji
-Ikona, która pojawia się, gdy dostępna jest szybka akcja, wskazuje typ dostępnej poprawki lub refaktoryzacji. Ikona ![śrubokręta wskazuje tylko, że istnieją działania dostępne do zmiany kodu, ale nie należy ich używać. *screwdriver* ](media/quick-actions-screwdriver-icon.png) ](media/quick-actions-light-bulb-icon.png) *Ikona ikony żółtej żarówki* ![wskazuje, że są dostępne działania, które *należy* wykonać, aby poprawić swój kod. Ikona ikony błędu](media/quick-actions-error-light-bulb-icon.png) *żarówki błędu żarówki* ![wskazuje, że jest dostępna akcja, która rozwiązuje błąd w kodzie.
+Ikona wyświetlana, gdy szybka akcja jest dostępna, zawiera wskazanie typu poprawki lub refaktoryzacji, która jest dostępna. *screwdriver* ![ Ikona ikony śrubokrętu śrubokręta ](media/quick-actions-screwdriver-icon.png) wskazuje, że dostępne są akcje umożliwiające zmianę kodu, ale nie należy ich używać. Ikona *żółtej* żarówki żarówki ![ ](media/quick-actions-light-bulb-icon.png) wskazującej, że istnieją dostępne akcje, które *należy* wykonać, aby poprawić kod. Ikona *żarówki błędu* żarówki błędów ![ wskazuje, ](media/quick-actions-error-light-bulb-icon.png) że jest dostępna akcja, która naprawia błąd w kodzie.
 
 ### <a name="to-see-a-light-bulb-or-screwdriver"></a>Aby zobaczyć żarówkę lub śrubokręt
 
-- Jeśli poprawka jest dostępna, żarówki pojawiają się spontanicznie po najechaniu myszą w miejscu błędu.
+- Jeśli poprawka jest dostępna, żarówki są spontanicznie wyświetlane po umieszczeniu wskaźnika myszy w lokalizacji błędu.
 
-   ![Żarówka z unoszącą się myszą](media/refactoring-lightbulb-hover.png)
+   ![Żarówka z przesuwaniem myszy](media/refactoring-lightbulb-hover.png)
 
-- Żarówki i śrubokręty pojawiają się na lewym marginesie edytora po przeniesieniu daszka do linii kodu, dla której dostępna jest szybka akcja.
+- Żarówki i śrubokręty są wyświetlane na lewym marginesie edytora po przesunięciu karetki do wiersza kodu, dla którego jest dostępna szybka akcja.
 
-- Naciśnij **opcję (♠)**+**Wprowadź** w dowolnym miejscu w wierszu, aby wyświetlić listę dostępnych szybkich akcji i refaktoryzacji.
+- Naciśnij pozycję **Option (⌥)** + **Enter** w dowolnym miejscu w wierszu, aby wyświetlić listę dostępnych szybkich akcji i refaktoryzacji.
 
-![Wyświetlanie elementów kontekstu](media/refactoring-context-action.png)
+![Wyświetl elementy kontekstu](media/refactoring-context-action.png)
 
-Najechanie kursorem na dowolną z akcji kontekstu zapewnia podgląd tego, co zostanie dodane lub usunięte z kodu.
+Umieszczenie kursora na dowolnym z akcji kontekstowych zapewnia podgląd elementów, które zostaną dodane lub usunięte z kodu.
 
-![Opcja Wprowadź elementy kontekstu](media/refactoring-image2a.png)
+![Opcja wprowadzania elementów kontekstu](media/refactoring-image2a.png)
 
-Aby włączyć te opcje, należy wybrać *włącz analizę źródła otwartych plików* w opcjach Visual Studio > **Preferencje > Edytor tekstu > analiza źródła:**
+Aby włączyć te opcje, należy wybrać opcję *Włącz analizę źródła otwartych plików* w opcjach, **Visual Studio dla komputerów Mac > preferencji > Edytor tekstu > analiza źródła**:
 
 ![Włączanie analizy źródła](media/refactoring-options.png)
 
-Istnieje ponad 100 możliwych akcji, które można zasugerować, które są włączone lub wyłączone, przeglądając **program Visual Studio > Preferencje > analiza źródła > akcje kodu > C#** i zaznaczając lub odznaczając pole obok akcji:
+Istnieje ponad 100 możliwych akcji, które można zasugerować, które są włączane lub wyłączane, przechodząc do **Visual Studio dla komputerów Mac preferencji > > analiza źródła > C# > akcji kodu** i zaznaczając lub usuwając zaznaczenie pola obok akcji:
 
-![Akcje analizy źródła w języku C#](media/refactoring-image3a.png)
+![Akcje analizy źródła języka C#](media/refactoring-image3a.png)
 
 ### <a name="common-quick-actions"></a>Typowe szybkie akcje
 
-Więcej informacji na temat typowych szybkich akcji można dowiedzieć się w artykule [Typowe szybkie akcje.](/visualstudio/ide/common-quick-actions)
+Możesz dowiedzieć się więcej o typowych szybkich akcjach w artykule [typowe szybkie akcje](/visualstudio/ide/common-quick-actions) .
 
 ## <a name="source-analysis"></a>Analiza źródła
 
-Analiza źródła analizuje kod na bieżąco, podkreślając potencjalne błędy i naruszenia stylu i zapewniając automatyczne poprawki jako akcje kontekstu.
+Analiza źródła analizuje kod na bieżąco przez podkreślanie potencjalnych błędów i naruszeń stylu oraz dostarczanie autopoprawek jako akcji kontekstowych.
 
-Wszystkie wyniki analizy źródłowej dla dowolnego pliku można wyświetlić w dowolnym momencie, przeglądając pasek przewijania po prawej stronie edytora tekstu:
+W dowolnym momencie możesz wyświetlić wszystkie wyniki analizy źródłowej dowolnego pliku, wyświetlając pasek przewijania po prawej stronie edytora tekstu:
 
 ![Pasek boczny analizy źródła](media/refactoring-image4a.png)
 
-Jeśli klikniesz na okrąg u góry, możesz iterować za pomocą każdej sugestii, z najwyższymi problemami z ważnością wyświetlanymi jako pierwsze. Najechanie kursorem na pojedynczy wynik lub linię powoduje wyświetlenie problemu, który można rozwiązać za pomocą akcji kontekstowych:
+Po kliknięciu kółka u góry można wykonać iterację poszczególnych sugestii z najwyższymi problemami dotyczącymi ważności, które są wyświetlane jako pierwsze. Umieszczenie wskaźnika myszy na pojedynczym wyniku lub w wierszu powoduje wyświetlenie problemu, który można naprawić za pomocą akcji kontekstu:
 
 ![Element analizy źródła](media/refactoring-image5.png)
 
-## <a name="related-video"></a>Podobne wideo
+## <a name="related-video"></a>Pokrewne wideo
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Szybkie akcje (Visual Studio w systemie Windows)](/visualstudio/ide/quick-actions)
-- [Kod refaktoryzatora (Visual Studio w systemie Windows)](/visualstudio/ide/refactoring-in-visual-studio)
+- [Kod refaktoryzacji (Visual Studio w systemie Windows)](/visualstudio/ide/refactoring-in-visual-studio)

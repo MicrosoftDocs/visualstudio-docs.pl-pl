@@ -1,5 +1,5 @@
 ---
-title: Co&#39;nowego w projektowaniu
+title: Jakie&#39;s nowe dla projektu
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -14,68 +14,68 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302372"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315333"
 ---
-# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Co nowego w projekcie w programie Visual Studio w programie Visual Studio 2015
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Co nowego w projektowaniu w programie Visual Studio w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Ta wersja programu Visual Studio zawiera następujące ulepszenia, które ułatwią lepsze zrozumienie i zaprojektowanie kodu.
+W tej wersji programu Visual Studio wprowadzono następujące ulepszenia, które ułatwiają lepsze zrozumienie i projektowanie kodu.
 
  **Mapy kodu i wykresy zależności**
 
- W programie Visual Studio Enterprise, jeśli chcesz zrozumieć określone zależności w kodzie, wizualizuj je, tworząc mapy kodu. Następnie można nawigować po tych relacjach za pomocą mapy, która pojawia się obok kodu. Mapy kodu może również pomóc śledzić swoje miejsce w kodzie podczas pracy lub debugowania kodu, dzięki czemu będziesz czytać mniej kodu, podczas gdy dowiesz się więcej o projekcie kodu.
+ W Visual Studio Enterprise, gdy chcesz zrozumieć konkretne zależności w kodzie, wizualizuj je przez tworzenie map kodu. Następnie można przejść do tych relacji przy użyciu mapy, która pojawia się obok kodu. Mapy kodu mogą również pomóc w śledzeniu miejsca w kodzie podczas pracy lub debugowania kodu, dzięki czemu można czytać mniej kodu, a dowiedzieć się więcej o projekcie kodu.
 
- W ostatecznej wersji (RTM) znacznie ułatwiliśmy korzystanie z menu skrótów dla elementów kodu i łączy, grupując polecenia w sekcje związane z wybieraniem, edytowaniem, zarządzaniem grupami i zmienianiem układu zawartości grupy. Należy również zauważyć, że projekty testowe są wyświetlane w innym stylu niż inne projekty i że zaktualizowaliśmy ikony elementów na mapie do bardziej odpowiednich wersji.
+ W wersji ostatecznej (RTM) wprowadziliśmy menu skrótów dla elementów kodu i linków znacznie łatwiejszych do użycia przez grupowanie poleceń w sekcje związane z zaznaczaniem, edytowaniem i zarządzaniem grupami oraz zmiana układu zawartości grupy. Zwróć również uwagę, że projekty testowe są wyświetlane w innym stylu niż inne projekty i że zaktualizowaliśmy ikony dla elementów na mapie, aby uzyskać bardziej odpowiednie wersje.
 
- ![Pokazywale wybranych elementów na nowej mapie kodu](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNowamapa")
+ ![Pokaż zaznaczone elementy na nowej mapie kodu](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
 
  Inne ulepszenia obejmują:
 
-- **Ulepszone diagramy odgórne**. W przypadku średnich i dużych rozwiązań programu Visual Studio można teraz użyć uproszczonego menu architektury, aby uzyskać bardziej przydatne mapy kodu dla rozwiązania. Zestawy rozwiązania są pogrupowane według folderów rozwiązania, dzięki czemu można je zobaczyć w kontekście i wykorzystać wysiłek, który został wprowadzony w strukturyzację rozwiązania. Natychmiast zobaczysz odwołania do projektu i zestawu, a następnie pojawią się typy łączy. Ponadto zestawy zewnętrzne do rozwiązania są pogrupowane w bardziej kompaktowy sposób.
+- **Udoskonalone diagramy górne**. W przypadku średnich i dużych rozwiązań programu Visual Studio możesz teraz użyć uproszczonego menu architektura, aby uzyskać bardziej przydatne mapy kodu dla rozwiązania. Zestawy rozwiązań są pogrupowane według folderów rozwiązania, dzięki czemu można je zobaczyć w kontekście i wykorzystać nakład pracy, który został umieszczony w tworzeniu struktury rozwiązania. Natychmiast zobaczysz odwołania projektu i zestawu, a następnie pojawią się typy łączy. Ponadto zestawy zewnętrzne są pogrupowane w bardziej zwarty sposób.
 
-- **Projekty testowe są inaczej stylizowane i mogą być filtrowane**. Teraz można łatwiej i szybciej identyfikować projekty testowe na mapie, ponieważ są one inaczej stylizowane. Można je również odfiltrować, dzięki czemu można skupić się na kodzie roboczym aplikacji.
+- **Projekty testowe mają różne style i można je filtrować**. Teraz można łatwiej i szybko identyfikować projekty testowe na mapie, ponieważ różnią się one stylami. Można je również odfiltrować, aby skoncentrować się na kodzie roboczym aplikacji.
 
-- **Uproszczone łącza zależności zewnętrznych**. Łącza zależności nie reprezentują już dziedziczenia z system.Object, System.ValueType, System.Enum i System.Delegate, co ułatwia wyświetlanie zależności zewnętrznych na mapie kodu.
+- **Uproszczone zewnętrzne linki zależności**. Linki zależności nie przedstawiają już dziedziczenia z elementów System. Object, system. ValueType, system. Enum i system. Delegate, co ułatwia przeglądanie zewnętrznych zależności na mapie kodu.
 
-- **"Przechodzenie do łączy zależności" uwzględnia filtry**. Otrzymasz przydatny, przejrzysty diagram podczas rozwijania go, aby zrozumieć wkład do łącza zależności. Diagram jest mniej zaśmiecony i uwzględnia wybrane opcje filtrowania łączy.
+- **"Przechodzenie do szczegółów w łączach zależności" obejmuje filtry**. Uzyskujesz przydatny, przejrzysty diagram podczas jego rozszerzania, aby zrozumieć wkłady do linku zależności. Diagram jest mniej czytelny i uwzględnia wybrane opcje filtrowania linków.
 
-- **Elementy kodu są dodawane do mapy kodu z ich kontekstem**. Ponieważ diagramy są teraz wyświetlane z ich kontekstem (do folderu zestawu i rozwiązania, który można odfiltrować w razie potrzeby), można uzyskać bardziej przydatne diagramy podczas przeciągania i upuszczania elementów kodu z Eksploratora rozwiązań, widoku klasy, przeglądarki obiektów; lub podczas wybierania elementów w Eksploratorze rozwiązań i wybierania opcji Pokaż na mapie kodu.
+- **Elementy kodu są dodawane do mapy kodu z ich kontekstami**. Ponieważ diagramy są teraz wyświetlane wraz z ich kontekstami (do zestawu i folderu rozwiązania, które można odfiltrować w razie potrzeby), są dostępne bardziej użyteczne diagramy podczas przeciągania i upuszczania elementów kodu z Eksplorator rozwiązań, Widok klasy, Przeglądarka obiektów; lub po wybraniu elementów w Eksplorator rozwiązań i wybraniu pozycji Pokaż na mapie kodu.
 
-- **Szybciej pobierz reaktywne mapy kodu**. Operacje przeciągania i upuszczania dają natychmiastowy wynik, a łącza między węzłami są tworzone znacznie szybciej, bez wpływu na kolejne operacje inicjowane przez użytkownika, takie jak rozwijanie węzła lub żądanie większej liczby węzłów. Podczas tworzenia map kodu bez tworzenia rozwiązania wszystkie przypadki narożne — na przykład gdy zestawy nie są budowane — są teraz przetwarzane.
+- Szybsze **pobieranie map kodu**. Operacje przeciągania i upuszczania dają bezpośredni wynik, a linki między węzłami są tworzone znacznie szybciej, bez wywierania wpływu na kolejne operacje inicjowane przez użytkownika, takie jak rozszerzanie węzła lub żądanie większej liczby węzłów. Po utworzeniu map kodu bez kompilowania rozwiązania wszystkie przypadki narożne — takie jak zestawy nie są kompilowane — są teraz przetwarzane.
 
-- **Pomiń przebudowę rozwiązania.** Zapewnia lepszą wydajność podczas tworzenia i edytowania diagramów.
+- **Pomiń ponowne kompilowanie rozwiązania.** Zapewnia lepszą wydajność podczas tworzenia i edytowania diagramów.
 
-- **Filtruj węzły i grupy elementów kodu**. Można szybko uporządkować mapy, wyświetlając lub ukrywając elementy kodu na podstawie ich kategorii, a także grupując elementy kodu według folderów rozwiązania, zestawów, obszarów nazw, folderów projektu i typów.
+- **Filtrowanie węzłów i grup elementów kodu**. Mapy można szybko odkodować, pokazując lub ukrywając elementy kodu na podstawie ich kategorii, a także Grupując elementy kodu według folderów rozwiązania, zestawów, przestrzeni nazw, folderów projektu i typów.
 
-- **Filtruj relacje, aby ułatwić czytanie diagramów**. Filtrowanie łączy ma teraz zastosowanie również do łączy między grupami, co sprawia, że praca z oknem filtru jest mniej inwazyjna niż w poprzednich wersjach.
+- **Odfiltruj relacje, aby ułatwić odczytywanie diagramów**. Filtrowanie linków teraz dotyczy również linków między grupami, dzięki czemu praca z oknem filtru jest mniej niepożądane niż w poprzednich wersjach.
 
-- **Tworzenie diagramów z widoku klasy i przeglądarki obiektów**. Przeciągnij i upuść pliki i złożenia do nowej lub istniejącej mapy z okien widok klasy i przeglądarka obiektów.
+- **Utwórz diagramy na podstawie widok klasy i Przeglądarka obiektów**. Przeciągnij i upuść pliki i zestawy do nowej lub istniejącej mapy z Widok klasy i Przeglądarka obiektów Windows.
 
-  Zobacz [Zależności mapowe między rozwiązaniami](../modeling/map-dependencies-across-your-solutions.md).
+  Zobacz [zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).
 
-  **Inne zmiany w projekcie i modelowaniu w tej wersji:**
+  **Inne zmiany dotyczące projektowania i modelowania w tej wersji:**
 
-- **Diagramy warstwowe**. Zaktualizuj te diagramy przy użyciu widoku klasy i przeglądarki obiektów. Aby spełnić wymagania dotyczące projektowania oprogramowania, użyj diagramów warstw, aby opisać żądane zależności dla oprogramowania. Zachowaj kod zgodny z tym projektem, znajdując kod, który nie spełnia tych ograniczeń, i sprawdzając poprawność przyszłego kodu za pomocą tej linii bazowej.
+- **Diagramy warstwowe**. Zaktualizuj te diagramy przy użyciu Widok klasy i Przeglądarka obiektów. Aby spełnić wymagania dotyczące projektu oprogramowania, należy użyć diagramów warstw do opisania żądanych zależności oprogramowania. Zachowaj spójność kodu z tym projektem, wyszukując kod, który nie spełnia tych ograniczeń, i sprawdzając przyszły kod w tym punkcie odniesienia.
 
-- **diagramy UML**. Diagramy klas UML i diagramy sekwencji nie można już tworzyć na podstawie kodu. Ale nadal tworzyć te diagramy przy użyciu nowych elementów UML.
+- **Diagramy UML**. Nie można już tworzyć diagramów klas UML i diagramów sekwencyjnych na podstawie kodu. Jednak nadal można tworzyć te diagramy za pomocą nowych elementów UML.
 
-- **Eksplorator architektury**. Nie można już używać Eksploratora architektury do tworzenia diagramów. Ale nadal można korzystać z Eksploratora rozwiązań.
+- **Eksplorator architektury**. Nie można już korzystać z Eksploratora architektury do tworzenia diagramów. Można jednak nadal używać Eksplorator rozwiązań.
 
-## <a name="edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport"></a>Obsługa edycji dla architektury i narzędzi do modelowania
+## <a name="edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport"></a> Obsługa wersji dla architektury i narzędzi modelowania
 
-Visual Studio 2015 jest dostępny w kilku wersjach. Nie wszystkie z nich zapewniają obsługę architektury i narzędzi modelowania. W poniższej tabeli przedstawiono dostępność każdego narzędzia.
+Program Visual Studio 2015 jest dostępny w kilku wersjach. Nie wszystkie z nich zapewniają obsługę architektury i narzędzi modelowania. W poniższej tabeli przedstawiono dostępność każdego narzędzia.
 
 |**Funkcja**|**Przedsiębiorstwo**|**Professional Edition**|**Społeczność**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Mapy kodu**|Tak|Obsługuje tylko odczytywanie i filtrowanie map kodu, dodawanie nowych węzłów ogólnych i tworzenie nowego wykresu kierowanego z zaznaczenia.|-|-|
+|**Mapy kodu**|Tak|Obsługuje tylko odczytywanie i filtrowanie map kodu, dodawanie nowych węzłów ogólnych i tworzenie nowego ukierunkowanego wykresu na podstawie zaznaczenia.|-|-|
 |**Diagramy klas UML**|Tak|-|-|-|
 |**Diagramy sekwencji UML**|Tak|-|-|-|
 |**Diagramy przypadków użycia UML**|Tak|-|-|-|
 |**Diagramy aktywności UML**|Tak|-|-|-|
 |**Diagramy składników UML**|Tak|-|-|-|
 |**Diagramy warstw**|Tak|-|-|-|
-|**Wykresy skierowane (diagramy** DGML)|Tak|Tak|-|-|
-|**Klon kodu**|Tak|-|-|-|
+|**Wykresy ukierunkowane** (diagramy dgml)|Tak|Tak|-|-|
+|**Klonowanie kodu**|Tak|-|-|-|

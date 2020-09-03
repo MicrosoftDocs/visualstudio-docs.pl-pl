@@ -1,5 +1,5 @@
 ---
-title: Operatory logiczne/Zaawansowane w wyrażeniach wyszukiwania (Podgląd pomocy)
+title: Operatory logiczne/zaawansowane w wyrażeniach wyszukiwania (Podgląd pomocy)
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -12,49 +12,49 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e241df6c32fc1b0a8e88942fe5d0d178c37b9bf
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67824897"
 ---
-# <a name="logical-and-advanced-operators-in-search-expressions"></a>Operatory logiczne i Zaawansowane w wyrażeniach wyszukiwania
+# <a name="logical-and-advanced-operators-in-search-expressions"></a>Operatory logiczne i zaawansowane w wyrażeniach wyszukiwania
 
-Można użyć operatorów logicznych i operatory wyszukiwania zaawansowanego, aby uściślić wyszukiwanie zawartości pomocy w **podglądu pomocy**.
+Możesz użyć operatorów logicznych i operatorów wyszukiwania zaawansowanego, aby uściślić Wyszukiwanie zawartości pomocy w **podglądzie pomocy**.
 
 ## <a name="logical-operators"></a>Operatory logiczne
 
-Operatory logiczne Określanie wielu warunków wyszukiwania powinny być one łączone w zapytaniu wyszukiwania. W poniższej tabeli nie zawiera operatorów logicznych AND, OR i w pobliżu.
+Operatory logiczne określają, jak wiele terminów wyszukiwania ma być połączonych w zapytaniu wyszukiwania. W poniższej tabeli przedstawiono operatory logiczne oraz, lub, nie i blisko.
 
 |Aby wyszukać|Zastosowanie|Przykład|Wynik|
 |-------------------|---------|-------------|------------|
-|Oba warianty pojęć, w tym samym artykule|AND|dib i palety|Tematy, które zawierają "dib" i "palety".|
-|Albo termin w artykule|LUB|rastrowych wektor OR|Tematy, które zawierają "rastrowych" lub "vector".|
-|Pierwszy okres bez drugi warunek, w tym samym artykule|NIE|"system operacyjny" nie DOS|Tematy, które zawierają "system operacyjny", ale nie "DOS".|
-|Oba warianty pojęć blisko siebie w artykule|W POBLIŻU|użytkownik w pobliżu jądra|Tematy zawierające "user" w pobliżu "jądra".|
+|Oba warunki w tym samym artykule|AND|DIB i paleta|Tematy zawierające obie wersje "DIB" i "paleta".|
+|Dowolny termin w artykule|LUB|Raster lub Vector|Tematy zawierające "rastrowe" lub "Vector".|
+|Pierwszy termin bez drugiego terminu w tym samym artykule|NOT|"system operacyjny" nie jest DOS|Tematy zawierające "system operacyjny", ale nie "DOS".|
+|Oba terminy, blisko siebie w artykule|POBLIŻU|Użytkownik blisko jądra|Tematy zawierające "użytkownika" w bliskim sąsiedztwie "jądra".|
 
 > [!IMPORTANT]
-> Operatory logiczne należy wprowadzić wielkimi literami dla aparatu wyszukiwania, rozpoznawał.
+> Należy wprowadzić operatory logiczne we wszystkich wielkich literach, aby aparat wyszukiwania mógł je rozpoznać.
 
-## <a name="advanced-operators"></a>Operatorzy zaawansowani
+## <a name="advanced-operators"></a>Operatory zaawansowane
 
-Operatory wyszukiwania zaawansowanego Uściślij kryteria wyszukiwania dla zawartości, przez określenie miejsca w artykule, aby wyszukać termin wyszukiwania. W poniższej tabeli opisano cztery operatory wyszukiwania zaawansowanego dostępne.
+Zaawansowane Operatory wyszukiwania uściśliją Wyszukiwanie zawartości, określając miejsce w artykule, w którym ma zostać wyszukany termin wyszukiwania. W poniższej tabeli opisano cztery dostępne Operatory wyszukiwania zaawansowanego.
 
 |Aby wyszukać|Zastosowanie|Przykład|Wynik|
 |-------------------|---------|-------------|------------|
-|Termin w tytuł artykułu|`title:`|`title:binaryreader`|Tematy, które zawierają "binaryreader" w tytułach.|
-|Termin w przykładzie kodu|`code:`|`code:readdouble`|Tematy, które zawierają "readdouble" w przykładzie kodu.|
-|Termin w przykładzie określonego języka programowania|`code:vb:`|`code:vb:string`|Tematy, które zawierają "string", w przykładzie kodu języka Visual Basic.|
-|Artykułu, który jest skojarzony z określonym indeksem słowem kluczowym|`keyword:`|`keyword:readbyte`|Tematy, które są skojarzone ze słowem kluczowym "readbyte" indeksu.|
+|Termin w tytule artykułu|`title:`|`title:binaryreader`|Tematy zawierające "BinaryReader" w ich tytułach.|
+|Termin w przykładowym kodzie|`code:`|`code:readdouble`|Tematy zawierające "readDouble" w przykładowym kodzie.|
+|Termin z przykładu określonego języka programowania|`code:vb:`|`code:vb:string`|Tematy zawierające ciąg "String" w przykładowym kodzie Visual Basic.|
+|Artykuł, który jest skojarzony z określonym indeksem słowa kluczowego|`keyword:`|`keyword:readbyte`|Tematy, które są skojarzone ze słowem kluczowym "ReadByte".|
 
 > [!IMPORTANT]
-> Należy wprowadzić operatory wyszukiwania zaawansowanego z dwukropkiem ostateczne i nie pośredniczące odstęp przed dwukropkiem dla aparatów wyszukiwania można je rozpoznać.
+> Należy wprowadzić zaawansowane Operatory wyszukiwania z końcowym dwukropkiem i bez odstępu przed dwukropkiem, aby aparat wyszukiwania mógł je rozpoznać.
 
-### <a name="programming-languages-for-code-examples"></a>Języki programowania, przykłady kodu
+### <a name="programming-languages-for-code-examples"></a>Języki programowania dla przykładów kodu
 
-Możesz użyć `code:` operatora, aby znaleźć zawartość informacji na temat kilku języków programowania. Aby zwrócić przykłady dla określonego języka programowania, użyj jednej z następujących wartości język programowania:
+Możesz użyć operatora, `code:` Aby znaleźć zawartość dla dowolnego z kilku języków programowania. Aby zwrócić przykłady dla określonego języka programowania, użyj jednej z następujących wartości języka programowania:
 
-|Język programowania|Składnia poleceń wyszukiwania — operator|
+|Język programowania|Składnia operatora wyszukiwania|
 | - |---------|
 |Visual Basic|`code:vb`<br/>`code:visualbasic`|
 |C#|`code:c#`<br/>`code:csharp`|
@@ -64,9 +64,9 @@ Możesz użyć `code:` operatora, aby znaleźć zawartość informacji na temat 
 |XAML|`code:xaml`|
 
 > [!NOTE]
-> `code:` Operatora tylko znajdzie zawartości oznaczonej etykietą programowania języka, w przeciwieństwie do zawartości, ogólną oznaczony jako kod.
+> `code:`Operator odnajduje tylko zawartość, która jest oznaczona za pomocą etykiety języka programowania, w przeciwieństwie do zawartości, która jest ogólnie oznaczona jako kod.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Instrukcje: Wyszukaj tematy](../help-viewer/find-topics.md)
+- [Instrukcje: wyszukiwanie tematów](../help-viewer/find-topics.md)
 - [Podgląd Pomocy firmy Microsoft](../help-viewer/overview.md)

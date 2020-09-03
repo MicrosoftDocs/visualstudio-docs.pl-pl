@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed7a36ad561daf87ec65db0f6c51c9dd7833eb9e
-ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82255566"
 ---
 # <a name="devenv-command-line-switches"></a>Przełączniki wiersza polecenia Devenv
@@ -31,13 +31,13 @@ Aby uzyskać informacje na temat przełączników związanych z programowaniem p
 
 ## <a name="devenv-switch-syntax"></a>Składnia przełącznika Devenv
 
-Polecenia, które `devenv` zaczynają się od są `devenv.com` obsługiwane przez narzędzie, które dostarcza dane wyjściowe przez standardowe strumienie `stdout` systemowe `stderr`, takie jak i. Narzędzie określa odpowiednie przekierowania we/wy podczas przechwytywania danych wyjściowych, na przykład do pliku txt.
+Polecenia, które zaczynają się od `devenv` są obsługiwane przez `devenv.com` narzędzie, które dostarcza dane wyjściowe przez standardowe strumienie systemowe, takie jak `stdout` i `stderr` . Narzędzie określa odpowiednie przekierowania we/wy podczas przechwytywania danych wyjściowych, na przykład do pliku txt.
 
-Alternatywnie polecenia, które zaczynają `devenv.exe` się od mogą korzystać z tych samych przełączników, ale `devenv.com` narzędzie jest pomijane. Używanie `devenv.exe` bezpośrednio uniemożliwia wyświetlanie danych wyjściowych w konsoli programu.
+Alternatywnie polecenia, które zaczynają się od `devenv.exe` mogą korzystać z tych samych przełączników, ale `devenv.com` Narzędzie jest pomijane. Używanie `devenv.exe` bezpośrednio uniemożliwia wyświetlanie danych wyjściowych w konsoli programu.
 
 Reguły składni dla `devenv` przełączników przypominają reguły dla innych narzędzi wiersza polecenia systemu DOS. Następujące reguły składni mają zastosowanie do wszystkich `devenv` przełączników i ich argumentów:
 
-- Polecenia zaczynają `devenv`się od.
+- Polecenia zaczynają się od `devenv` .
 
 - W przełącznikach nie jest rozróżniana wielkość liter.
 
@@ -47,16 +47,16 @@ Reguły składni dla `devenv` przełączników przypominają reguły dla innych 
 
 - Jeśli pierwszy argument to plik, który nie jest rozwiązaniem lub projektem, ten plik zostanie otwarty w odpowiednim edytorze w nowym wystąpieniu IDE.
 
-- W przypadku podania nazwy pliku projektu zamiast nazwy pliku rozwiązania `devenv` polecenie przeszukuje folder nadrzędny pliku projektu dla pliku rozwiązania o tej samej nazwie. Na przykład polecenie `devenv myproject1.vbproj /build` przeszukuje folder nadrzędny dla pliku rozwiązania o nazwie `myproject1.sln`.
+- W przypadku podania nazwy pliku projektu zamiast nazwy pliku rozwiązania `devenv` polecenie przeszukuje folder nadrzędny pliku projektu dla pliku rozwiązania o tej samej nazwie. Na przykład polecenie `devenv myproject1.vbproj /build` przeszukuje folder nadrzędny dla pliku rozwiązania o nazwie `myproject1.sln` .
 
   > [!NOTE]
   > Jeden i tylko jeden plik rozwiązania odwołujący się do tego projektu powinien znajdować się w folderze nadrzędnym. Jeśli folder nadrzędny nie zawiera pliku rozwiązania, który odwołuje się do tego projektu, lub jeśli folder nadrzędny zawiera dwa lub więcej plików rozwiązania, które odwołują się do niego, zostanie utworzony tymczasowy plik rozwiązania.
 
 - Gdy ścieżki plików i nazwy plików zawierają spacje, należy je ująć w znaki cudzysłowu (""). Na przykład `"c:\project a\"`.
 
-- Wstaw jeden znak spacji między przełącznikami i argumentami w tym samym wierszu. Na przykład polecenie `devenv /log output.txt` otwiera środowisko IDE i wyprowadza wszystkie informacje dziennika dla tej sesji do danych wyjściowych. txt.
+- Wstaw jeden znak spacji między przełącznikami i argumentami w tym samym wierszu. Na przykład polecenie `devenv /log output.txt` otwiera środowisko IDE i wyprowadza wszystkie informacje dziennika dla tej sesji do output.txt.
 
-- W `devenv` poleceniach nie można używać składni dopasowania wzorców.
+- W poleceniach nie można używać składni dopasowania wzorców `devenv` .
 
 ## <a name="devenv-switches"></a>Przełączniki devenv
 
@@ -87,12 +87,12 @@ Poniższe przełączniki wiersza polecenia nie wyświetlają środowiska IDE.
 |[/Clean](clean-devenv-exe.md)|Usuwa wszystkie pliki utworzone przez polecenie kompilacji bez wpływu na pliki źródłowe.<br /><br /> `devenv mysln.sln /clean`|
 |[/Deploy](deploy-devenv-exe.md)|Kompiluje rozwiązanie wraz z plikami wymaganymi do wdrożenia zgodnie z konfiguracją rozwiązania.<br /><br /> `devenv mysln.sln /deploy`|
 |[/Out](out-devenv-exe.md)|Umożliwia określenie pliku do otrzymywania błędów podczas kompilowania.<br /><br /> `devenv mysln.sln /build Debug /out log.txt`|
-|[/Project](project-devenv-exe.md)|Projekt do skompilowania, oczyszczenia lub wdrożenia. Tego przełącznika można `/Build`używać tylko wtedy, gdy podano również przełącznik, `/Rebuild`, `/Clean`, lub `/Deploy` .<br /><br /> `devenv mysln.sln /build Debug /project proj1`|
+|[/Project](project-devenv-exe.md)|Projekt do skompilowania, oczyszczenia lub wdrożenia. Tego przełącznika można używać tylko wtedy, gdy podano również `/Build` przełącznik, `/Rebuild` , `/Clean` , lub `/Deploy` .<br /><br /> `devenv mysln.sln /build Debug /project proj1`|
 |[/ProjectConfig](projectconfig-devenv-exe.md)|Określa konfigurację projektu do skompilowania lub wdrożenia. Tego przełącznika można używać tylko wtedy, gdy został również dostarczony `/Project` przełącznik.<br /><br /> `devenv mysln.sln /build Release /project proj1 /projectconfig Release`|
 |[/Rebuild](rebuild-devenv-exe.md)|Czyści, a następnie kompiluje określone rozwiązanie lub projekt zgodnie z konfiguracją określonego rozwiązania.<br /><br /> `devenv mysln.sln /rebuild`|
 |[/Upgrade](upgrade-devenv-exe.md)|Uaktualnia określony plik rozwiązania oraz wszystkie jego pliki projektu lub określony plik projektu do bieżących formatów programu Visual Studio dla tych plików.<br /><br /> `devenv mysln.sln /upgrade`|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Ogólne, środowisko, opcje — Okno dialogowe](general-environment-options-dialog-box.md)
 - [Devenv przełączniki wiersza polecenia pakietu VSPackage Development](../../extensibility/devenv-command-line-switches-for-vspackage-development.md)

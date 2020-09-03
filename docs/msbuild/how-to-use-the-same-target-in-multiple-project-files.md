@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
-ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82255573"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Instrukcje: użycie tego samego elementu docelowego w wielu plikach projektu
@@ -24,13 +24,13 @@ Jeśli użytkownik utworzył kilka plików projektu MSBuild, może wykryć, że 
 
 ## <a name="use-the-import-element"></a>Użyj elementu import
 
-`Import` Element jest używany do wstawiania jednego pliku projektu do innego pliku projektu. Importowany plik projektu musi być prawidłowym plikiem projektu programu MSBuild i zawierać poprawnie sformułowany kod XML. Ten `Project` atrybut określa ścieżkę do zaimportowanego pliku projektu. Aby uzyskać więcej informacji na `Import` temat elementu, zobacz [import elementu (MSBuild)](../msbuild/import-element-msbuild.md).
+`Import`Element jest używany do wstawiania jednego pliku projektu do innego pliku projektu. Importowany plik projektu musi być prawidłowym plikiem projektu programu MSBuild i zawierać poprawnie sformułowany kod XML. Ten `Project` atrybut określa ścieżkę do zaimportowanego pliku projektu. Aby uzyskać więcej informacji na temat `Import` elementu, zobacz [import elementu (MSBuild)](../msbuild/import-element-msbuild.md).
 
 #### <a name="to-import-a-project"></a>Aby zaimportować projekt
 
 1. Zdefiniuj w pliku projektu importowania wszystkie właściwości i elementy, które są używane jako parametry właściwości i elementów w zaimportowanym projekcie.
 
-2. Użyj elementu `Import` , aby zaimportować projekt. Przykład:
+2. Użyj `Import` elementu, aby zaimportować projekt. Na przykład:
 
      `<Import Project="MyCommon.targets"/>`
 
@@ -116,7 +116,7 @@ Jeśli użytkownik utworzył kilka plików projektu MSBuild, może wykryć, że 
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Import — element (MSBuild)](../msbuild/import-element-msbuild.md)
-- [Celach](../msbuild/msbuild-targets.md)
+- [Targets (Obiekty docelowe)](../msbuild/msbuild-targets.md)

@@ -1,5 +1,5 @@
 ---
-title: Obsługiwane zmiany kodu (C#) | Dokumentacja firmy Microsoft
+title: Obsługiwane zmiany kodu (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,74 +17,74 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67823536"
 ---
 # <a name="supported-code-changes-c"></a>Obsługiwane zmiany kodu (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Edytuj i Kontynuuj obsługuje większość typów zmian kodu w treści metod. Większość zmian poza treści metod i drobne zmiany w treści metod, nie można zastosować podczas debugowania, jednak. Aby zastosować te nieobsługiwane zmiany, należy zatrzymać debugowanie i ponownie uruchom za pomocą nowej wersji kodu.  
+Edytuj i Kontynuuj obsługuje większość typów zmian kodu w treści metody. Większość zmian poza treściami metod oraz kilka zmian w obrębie treści metody nie można zastosować podczas debugowania. Aby zastosować te nieobsługiwane zmiany, należy zatrzymać debugowanie i ponownie uruchomić za pomocą nowej wersji kodu.  
   
- Następujące zmiany nie można zastosować do kodu w języku C# w podczas sesji debugowania:  
+ Następujące zmiany nie mogą zostać zastosowane do kodu w języku C# podczas sesji debugowania:  
   
-- Zmiany bieżącej instrukcji lub aktywnej instrukcji.  
+- Zmiany bieżącej instrukcji lub dowolnej innej aktywnej instrukcji.  
   
-     Aktywne instrukcje obejmują dowolnej instrukcji w funkcjach w stosie wywołań, które zostały wywołane do bieżącej instrukcji.  
+     Aktywne instrukcje obejmują wszystkie instrukcje w funkcjach w stosie wywołań, które zostały wywołane w celu uzyskania bieżącej instrukcji.  
   
-     Bieżąca instrukcja jest oznaczony za żółtym tłem w oknie źródła. Inne aktywne instrukcje są oznaczane przez cieniowanego tła i są przeznaczone tylko do odczytu. Te kolory domyślne można zmienić w programie **opcje** okno dialogowe.  
+     Bieżąca instrukcja jest oznaczona za pomocą żółtego tła w oknie źródło. Inne aktywne instrukcje są oznaczone cieniowanym tłem i są tylko do odczytu. Te domyślne kolory można zmienić w oknie dialogowym **Opcje** .  
   
-- Zmienianie podpisu typu.  
+- Zmiana sygnatury typu.  
   
-- Dodawanie metody anonimowej, które przechwytuje zmienną, która nie została przechwycona wcześniej.  
+- Dodawanie anonimowej metody, która przechwytuje zmienną, która nie została wcześniej przechwycona.  
   
 - Dodawanie, usuwanie lub zmiana atrybutów.  
   
-- Dodawanie, usuwanie i zmienianie `using` dyrektywy.  
+- Dodawanie, usuwanie lub zmiana `using` dyrektyw.  
   
-- Dodawanie `foreach`, `using`, lub `lock` aktywnej instrukcji.  
+- Dodawanie `foreach` , `using` , lub `lock` dookoła aktywnej instrukcji.  
   
-## <a name="unsafe-code"></a>Niebezpieczny kod  
- Zmiany w niebezpieczny kod mają te same ograniczenia co wprowadzenia zmian w kodzie bezpiecznym, za pomocą jednego dodatkowych ograniczeń: Edytuj i Kontynuuj nie obsługuje zmiany niebezpieczny kod, który istnieje w metodzie, która zawiera `stackalloc` operatora.  
+## <a name="unsafe-code"></a>Kod niebezpieczny  
+ Zmiany w niebezpiecznym kodzie mają takie same ograniczenia jak zmiany w bezpiecznym kodzie, z jednym dodatkowym ograniczeniem: polecenie Edytuj i Kontynuuj nie obsługuje zmian w niebezpiecznym kodzie, który opuszcza metodę, która zawiera `stackalloc` operator.  
   
 ## <a name="exceptions"></a>Wyjątki  
- Edytuj i Kontynuuj obsługuje zmiany `catch` i `finally` blokuje, z tą różnicą, że dodanie `catch` lub `finally` bloku aktywnej instrukcji jest niedozwolone.  
+ Polecenie Edytuj i Kontynuuj obsługuje zmiany `catch` w `finally` blokach i, z tą różnicą, że dodanie `catch` `finally` bloku or wokół aktywnej instrukcji jest niedozwolone.  
   
 ## <a name="unsupported-scenarios"></a>Nieobsługiwane scenariusze  
- Edytuj i Kontynuuj nie jest dostępna w następujących scenariuszach debugowania:  
+ Edytuj i Kontynuuj nie są dostępne w następujących scenariuszach debugowania:  
   
-- Debugowanie kodu LINQ w pewnych okolicznościach. Aby uzyskać więcej informacji, zobacz [debugowania LINQ](../debugger/debugging-linq.md).  
+- Debugowanie kodu LINQ w pewnych okolicznościach. Aby uzyskać więcej informacji, zobacz [debugowanie LINQ](../debugger/debugging-linq.md).  
   
-  - Przechwytuje zmienną, która nie została przechwycona wcześniej.  
+  - Przechwytywanie zmiennej, która nie została wcześniej przechwycona.  
 
-  - Zmiana typu wyrażenia zapytania (np. Wybierz = > Wybierz nowy {A =};)  
+  - Zmiana typu wyrażenia zapytania (np., wybierz a => wybrać nowy {A = a};)  
 
-  - Usuwanie `where` zawierający aktywnej instrukcji.  
+  - Usuwanie elementu zawierającego `where` aktywną instrukcję.  
 
-  - Usuwanie `let` zawierający aktywnej instrukcji.  
+  - Usuwanie elementu zawierającego `let` aktywną instrukcję.  
 
-  - Usuwanie `join` zawierający aktywnej instrukcji.  
+  - Usuwanie elementu zawierającego `join` aktywną instrukcję.  
 
-  - Usuwanie `orderby` zawierający aktywnej instrukcji.  
+  - Usuwanie elementu zawierającego `orderby` aktywną instrukcję.  
   
-- Debugowanie trybu mieszanego (natywnego/zarządzanego).  
+- Debugowanie w trybie mieszanym (natywnym/zarządzanym).  
   
 - Debugowanie SQL.  
   
-- Debugowanie odzyskiwania po awarii. Zrzut programu Watson.  
+- Debugowanie zrzutu Dr. Watson.  
   
-- Edytowanie kodu po wystąpieniu nieobsługiwanego wyjątku podczas "**Unwind na stosie wywołań dotycząca nieobsłużonych wyjątków**" opcja nie jest zaznaczona.  
+- Edytowanie kodu po nieobsługiwanym wyjątku, gdy opcja "**odwinięcie stosu wywołań w przypadku nieobsługiwanych wyjątków**" nie jest zaznaczona.  
   
-- Debugowanie aplikacji osadzonego środowiska uruchomieniowego.  
+- Debugowanie osadzonej aplikacji środowiska uruchomieniowego.  
   
-- Debugowanie aplikacji, która ma **dołączyć do** zamiast uruchamiać aplikację, wybierając **Start** z **debugowania** menu.  
+- Debugowanie aplikacji, która została **dołączona do** programu zamiast uruchamiania aplikacji, wybierając pozycję **Rozpocznij** z menu **Debuguj** .  
   
 - Debugowanie zoptymalizowanego kodu.  
   
-- Debugowanie starą wersję kodu po nowej wersji nie powiodło się skompilowanie z powodu błędów kompilacji.  
+- Debugowanie starej wersji kodu od momentu kompilacji nowej wersji nie powiodło się z powodu błędów kompilacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytuj i Kontynuuj (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Instrukcje: Korzystanie z funkcji Edytuj i kontynuuj (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+ [Instrukcje: używanie funkcji Edytuj i kontynuuj (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

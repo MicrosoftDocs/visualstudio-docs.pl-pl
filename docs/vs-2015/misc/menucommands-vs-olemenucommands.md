@@ -1,5 +1,5 @@
 ---
-title: MenuCommands Vs. OleMenuCommands | Dokumentacja firmy Microsoft
+title: MenuCommands a OleMenuCommands | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,35 +12,35 @@ ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
 ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/08/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67624457"
 ---
-# <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
-Można utworzyć polecenia menu pochodząca z <xref:System.ComponentModel.Design.MenuCommand> lub <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> object i Implementowanie obsługi zdarzeń odpowiednie. W większości przypadków można użyć <xref:System.ComponentModel.Design.MenuCommand>, zgodnie z szablonu projektu pakietu VSPackage, ale może od czasu do czasu może być konieczne użycie <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
+# <a name="menucommands-vs-olemenucommands"></a>MenuCommands a OleMenuCommands
+Polecenia menu można tworzyć poprzez wyprowadzanie z <xref:System.ComponentModel.Design.MenuCommand> lub z <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiektu oraz implementowanie odpowiednich programów obsługi zdarzeń. W większości przypadków, których można użyć <xref:System.ComponentModel.Design.MenuCommand> , jako szablonu projektu pakietu VSPackage, ale czasami może być konieczne użycie <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> .  
   
- Można ich używać poleceń, że udostępnia pakietu VSPackage środowiska IDE programu musi być widoczne i włączone przed użytkownikiem. Po utworzeniu polecenia w pliku vsct za pomocą szablonu projektu pakietu Visual Studio są widoczne i włączone domyślnie. Ustawienie niektórych flag poleceń, takich jak `DynamicItemStart`, można zmienić domyślne zachowanie. Widoczność, włączony stan i inne właściwości polecenia można także zmienić w kodzie w czasie wykonywania, uzyskując dostęp do <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiekt, który jest skojarzony z poleceniem.  
+ Polecenia, które pakietu VSPackage udostępnia IDE, muszą być widoczne i włączone, zanim użytkownik będzie mógł z nich korzystać. Gdy polecenia są tworzone w pliku. vsct za pomocą szablonu projektu pakietu programu Visual Studio, są one widoczne i domyślnie włączone. Ustawienie niektórych flag poleceń, takich jak `DynamicItemStart` , może zmienić zachowanie domyślne. Widoczność, stan włączony i inne właściwości polecenia można także zmienić w kodzie w czasie wykonywania, uzyskując dostęp do <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiektu, który jest skojarzony z poleceniem.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+ Aby wykonać czynności opisane w tym przewodniku, należy zainstalować Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="template-locations-for-the-visual-studio-package-template"></a>Lokalizacje szablonów dla szablonu pakietu programu Visual Studio  
- Można znaleźć szablonu pakiet rozszerzeń Visual Studio w **nowy projekt** , okno dialogowe **języka Visual Basic / rozszerzalności**, **C# / rozszerzalności**, lub **innych Typy projektów / rozszerzalności**.  
+ Szablon pakietu programu Visual Studio można znaleźć w oknie dialogowym **Nowy projekt** w obszarze **Visual Basic/rozszerzalność**, **C#/rozszerzalność**lub **Inne typy projektów/rozszerzalność**.  
   
 ## <a name="creating-a-command"></a>Tworzenie polecenia  
- Wszystkie polecenia, grup poleceń, menu, paski narzędzi i okien narzędzi są definiowane w pliku vsct. Aby uzyskać więcej informacji, zobacz [tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+ Wszystkie polecenia, grupy poleceń, menu, paski narzędzi i okna narzędzi są zdefiniowane w pliku vsct. Aby uzyskać więcej informacji, zobacz [tabela poleceń programu Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
- W przypadku tworzenia za pomocą szablonu pakietu VSPackage, wybierz **polecenia Menu** Tworzenie pliku vsct i definiowanie polecenia menu domyślne. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+ Jeśli tworzysz pakietu VSPackage za pomocą szablonu pakietu, wybierz **polecenie menu** , aby utworzyć plik. vsct i zdefiniować domyślne polecenie menu. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
 #### <a name="to-add-a-command-to-the-ide"></a>Aby dodać polecenie do środowiska IDE  
   
-1. Otwórz plik vsct.  
+1. Otwórz plik. vsct.  
   
-2. W `Symbols` sekcji, Znajdź [GuidSymbol](../extensibility/guidsymbol-element.md) element, który zawiera grupy i polecenia.  
+2. W `Symbols` sekcji Znajdź element [GuidSymbol](../extensibility/guidsymbol-element.md) , który zawiera grupy i polecenia.  
   
-3. Tworzenie [IDSymbol](../extensibility/idsymbol-element.md) elementu dla każdego menu, grupy lub polecenia, którą chcesz dodać, jak pokazano w poniższym przykładzie.  
+3. Utwórz element [IDSymbol](../extensibility/idsymbol-element.md) dla każdego menu, grupy lub polecenia, które chcesz dodać, jak pokazano w poniższym przykładzie.  
   
    ```xml
    <GuidSymbol name="guidButtonGroupCmdSet" value="{f69209e9-975a-4543-821d-1f4a2c52d737}">
@@ -49,9 +49,9 @@ Można utworzyć polecenia menu pochodząca z <xref:System.ComponentModel.Design
    </GuidSymbol>
    ```
       
-    `name` Atrybuty `GuidSymbol` i `IDSymbol` elementy Podaj pary GUID:ID dla każdego nowego menu, grupy lub polecenia. `guid` Reprezentuje zestaw poleceń, która jest zdefiniowana dla Twojego pakietu VSPackage. Można zdefiniować wiele zestawów polecenia. Każda para GUID:ID musi być unikatowa.  
+    `name`Atrybuty `GuidSymbol` `IDSymbol` elementów i zapewniają pary GUID: ID dla każdego nowego menu, grupy lub polecenia. `guid`Reprezentuje zestaw poleceń, który jest zdefiniowany dla pakietu VSPackage. Można zdefiniować wiele zestawów poleceń. Każdy identyfikator GUID: para musi być unikatowy.  
   
-4. W [przyciski](../extensibility/buttons-element.md) sekcji, Utwórz [przycisk](../extensibility/button-element.md) elementu, aby zdefiniować polecenia, jak pokazano w poniższym przykładzie.  
+4. W sekcji [przyciski](../extensibility/buttons-element.md) Utwórz element [Button](../extensibility/button-element.md) , aby zdefiniować polecenie, jak pokazano w poniższym przykładzie.  
   
    ```xml
    <Button guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
@@ -64,35 +64,35 @@ Można utworzyć polecenia menu pochodząca z <xref:System.ComponentModel.Design
    </Button>
    ``` 
      
-   1. Ustaw `guid` i `id` pól do dopasowania GUID:ID nowego polecenia.  
+   1. Ustaw `guid` pola i tak, `id` aby odpowiadały identyfikatorowi GUID: Identyfikator nowego polecenia.  
   
-   2. Ustaw `priority` atrybutu.  
+   2. Ustaw `priority` atrybut.  
   
-        `priority` Atrybut jest używany przez vsct do określenia lokalizacji przycisku, między innymi obiektami w jego grupie nadrzędnej.  
+        Ten `priority` atrybut jest używany przez. vsct do określenia lokalizacji przycisku wśród innych obiektów w jego grupie nadrzędnej.  
   
-        Polecenia, które mają niższe wartości priorytetu są wyświetlane powyżej lub po lewej stronie, polecenia, które mają wyższe wartości priorytetu. Priorytet zduplikowane wartości są dozwolone, ale względne położenie poleceń, które mają taki sam priorytet, jest określana przez kolejność, w którym pakietów VSPackage są przetwarzane w czasie wykonywania, a tej kolejności nie może być wcześniej.  
+        Polecenia o niższych wartościach priorytetów są wyświetlane powyżej lub z lewej strony poleceń, które mają wyższe wartości priorytetu. Wartości zduplikowanych priorytetów są dozwolone, ale względne położenie poleceń o równym priorytecie jest określane przez kolejność, w jakiej pakietów VSPackage są przetwarzane w czasie wykonywania, i nie można wstępnie określić kolejności.  
   
-        Pominięcie `priority` atrybut ustawia dla niej wartość 0.  
+        Pominięcie `priority` atrybutu ustawia jego wartość na 0.  
   
-   3. Ustaw `type` atrybutu. W większości przypadków, jego wartość będzie `"Button"`. Opisy innych typach przycisków prawidłowe można znaleźć [Button Element](../extensibility/button-element.md).  
+   3. Ustaw `type` atrybut. W większości przypadków jego wartość to `"Button"` . Aby uzyskać opisy innych prawidłowych typów przycisków, zobacz [element Button](../extensibility/button-element.md).  
   
-5. W definicji przycisku Utwórz [ciągi](../extensibility/strings-element.md) element, który zawiera [ButtonText](../extensibility/buttontext-element.md) element, aby zawierały nazwę menu, która jest wyświetlana w IDE, a [CommandName](../extensibility/commandname-element.md) element, aby zawierały nazwę polecenia, który umożliwia dostęp do menu w **polecenia** okna.  
+5. W definicji przycisku Utwórz element [Strings](../extensibility/strings-element.md) , który zawiera element [ButtonText](../extensibility/buttontext-element.md) , który zawiera nazwę menu, jak pojawia się w IDE, a element [CommandName](../extensibility/commandname-element.md) , aby zawierał nazwę polecenia, które jest używane do uzyskiwania dostępu do menu w oknie **poleceń** .  
   
-    Jeśli ciąg tekstowy przycisk zawiera znak "&", użytkownik może otworzyć menu, naciskając klawisze ALT plus oznacza bezpośrednio następuje znak "&".  
+    Jeśli ciąg tekstowy przycisku zawiera znak "&", użytkownik może otworzyć menu przez naciśnięcie klawisza ALT i znaku, który bezpośrednio następuje po "&".  
   
-    Dodawanie `Tooltip` spowoduje, że element zawarty tekst do są wyświetlane, gdy użytkownik zatrzyma wskaźnik przycisku.  
+    Dodanie `Tooltip` elementu spowoduje, że zawarty tekst będzie wyświetlany, gdy użytkownik umieści wskaźnik myszy nad przyciskiem.  
   
-6. Dodaj [ikonę](../extensibility/icon-element.md) elementu, aby wybrać ikonę, która, jeśli mają być wyświetlane za pomocą polecenia. Ikony są wymagane dla przycisków na paskach narzędzi, ale nie dla elementów menu. `guid` i `id` z `Icon` element musi być zgodne z nazwami [mapy bitowej](../extensibility/bitmap-element.md) elementu zdefiniowanego w `Bitmaps` sekcji.  
+6. Dodaj element [Icon](../extensibility/icon-element.md) , aby określić ikonę, jeśli ma być wyświetlana za pomocą polecenia. Ikony są wymagane dla przycisków na paskach narzędzi, ale nie dla elementów menu. `guid`I `id` `Icon` elementu muszą być zgodne z elementami [mapy bitowej](../extensibility/bitmap-element.md) zdefiniowanymi w `Bitmaps` sekcji.  
   
-7. Dodaj polecenie flagi, zgodnie z potrzebami zmienić wygląd i zachowanie przycisku. Aby to zrobić, Dodaj [CommandFlag](../extensibility/command-flag-element.md) elementu w definicji menu.  
+7. Dodaj flagi poleceń stosownie do potrzeb, aby zmienić wygląd i zachowanie przycisku. Aby to zrobić, Dodaj element [CommandFlag](../extensibility/command-flag-element.md) w definicji menu.  
   
-8. Ustaw grupę nadrzędną polecenia. Grupa nadrzędna może być grupy, którą tworzysz, grupy z innym pakietem lub grupą z poziomu środowiska IDE. Na przykład, aby dodać polecenie do paska narzędzi edycji programu Visual Studio obok **komentarz** i **Usuń komentarz** przyciski, ustaw guidStdEditor:IDG_VS_EDITTOOLBAR_COMMENT obiektu nadrzędnego. Jeśli element nadrzędny jest grupą zdefiniowanych przez użytkownika, należy elementem podrzędnym elementu menu, pasek narzędzi lub okna narzędzi, który pojawia się w środowisku IDE.  
+8. Ustaw grupę nadrzędną polecenia. Grupa nadrzędna może być grupą, którą tworzysz, grupą z innego pakietu lub grupą ze środowiska IDE. Na przykład, aby dodać polecenie do paska narzędzi do edycji programu Visual Studio, obok przycisków **komentarz** i **Usuń komentarz** Ustaw element nadrzędny na guidStdEditor: IDG_VS_EDITTOOLBAR_COMMENT. Jeśli nadrzędny jest grupą zdefiniowaną przez użytkownika, musi być elementem podrzędnym menu, paska narzędzi lub okna narzędzi, które pojawia się w IDE.  
   
-    To zrobić na dwa sposoby, w zależności od projektu:  
+    Można to zrobić na jeden z dwóch sposobów, w zależności od projektu:  
   
-   - W `Button` elementu, Utwórz [nadrzędnego](../extensibility/parent-element.md) element i ustaw jego `guid` i `id` pola Identyfikator Guid i identyfikator grupy, która będzie obsługiwać polecenia, znany także jako *głównej grupy*.  
+   - W `Button` elemencie, Utwórz element [nadrzędny](../extensibility/parent-element.md) i ustaw jego `guid` `id` pola oraz identyfikator GUID i ID grupy, która będzie hostować polecenie, nazywane również *podstawową grupą nadrzędną*.  
   
-        W poniższym przykładzie zdefiniowano polecenia, która będzie wyświetlana w menu zdefiniowanych przez użytkownika.  
+        W poniższym przykładzie zdefiniowano polecenie, które zostanie wyświetlone w menu zdefiniowanym przez użytkownika.  
   
        ```xml
        <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
@@ -105,7 +105,7 @@ Można utworzyć polecenia menu pochodząca z <xref:System.ComponentModel.Design
        </Button>
        ```
       
-   - Możesz pominąć `Parent` elementu, jeśli polecenie ma znajdować się za pomocą polecenia umieszczania. Tworzenie [CommandPlacements](../extensibility/commandplacements-element.md) przed elementem `Symbols` sekcji i Dodaj [CommandPlacement](../extensibility/commandplacement-element.md) element, który ma `guid` i `id` polecenia `priority`i element nadrzędny, jak pokazano w poniższym przykładzie.  
+   - Możesz pominąć element, `Parent` Jeśli polecenie ma zostać umieszczone przy użyciu polecenia umieszczania. Utwórz element [CommandPlacements](../extensibility/commandplacements-element.md) przed `Symbols` sekcją i Dodaj element [CommandPlacement](../extensibility/commandplacement-element.md) , który ma `guid` i `id` polecenia, a `priority` i elementu nadrzędnego, jak pokazano w poniższym przykładzie.  
   
    ```xml
    <CommandPlacements>
@@ -115,40 +115,40 @@ Można utworzyć polecenia menu pochodząca z <xref:System.ComponentModel.Design
    </CommandPlacements>
    ```
       
-      Tworzenie wielu angażowania polecenia tego samego GUID:ID, które mają różne elementy nadrzędne powoduje, że menu pojawią się w wielu lokalizacjach. Aby uzyskać więcej informacji, zobacz [CommandPlacements](../extensibility/commandplacements-element.md) elementu.  
+      Tworzenie wielu miejsc poleceń, które mają ten sam identyfikator GUID: ID i różne elementy nadrzędne powodują, że menu pojawia się w wielu lokalizacjach. Aby uzyskać więcej informacji, zobacz [CommandPlacements](../extensibility/commandplacements-element.md) element.  
   
-    Aby uzyskać więcej informacji na temat grup poleceń i element nadrzędny, zobacz [tworzenia wielokrotnego użytku, do grup przycisków](../extensibility/creating-reusable-groups-of-buttons.md).  
+    Aby uzyskać więcej informacji na temat grup poleceń i elementów nadrzędnych, zobacz [Tworzenie grup przycisków do wielokrotnego użytku](../extensibility/creating-reusable-groups-of-buttons.md).  
   
-   W tym momencie polecenia będą widoczne w IDE, ale będzie miał żadne funkcje. Jeśli polecenie została utworzona przez szablon pakietu, będzie miał kliknij program obsługi, który zostanie wyświetlony komunikat domyślny.  
+   W tym momencie polecenie będzie widoczne w środowisku IDE, ale nie będzie działać. Jeśli polecenie zostało utworzone przy użyciu szablonu pakietu, domyślnie będzie miało obsługę kliknięcia, która wyświetla komunikat.  
   
 ## <a name="handling-the-new-command"></a>Obsługa nowego polecenia  
- Większość używanych poleceń w kodzie zarządzanym może zostać obsłużony przez Framework zarządzane pakietu (MPF) przez kojarzenie polecenia za pomocą <xref:System.ComponentModel.Design.MenuCommand> obiektu lub <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiektu i wdrażanie jej procedury obsługi zdarzeń.  
+ Większość poleceń w kodzie zarządzanym można obsłużyć przez strukturę zarządzanego pakietu (MPF), kojarząc polecenie z <xref:System.ComponentModel.Design.MenuCommand> obiektem lub <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiektem i implementując jego obsługę zdarzeń.  
   
- Dla kodu, który używa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs bezpośrednio do obsługi poleceń, musisz zaimplementować <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu i jej metody. Dwie najważniejsze metody są <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>.  
+ W przypadku kodu, który korzysta z <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu bezpośrednio dla obsługi poleceń, należy zaimplementować <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs i jego metody. Dwie najważniejsze metody to <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> .  
   
-1. Pobierz <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> wystąpienia, jak pokazano w poniższym przykładzie.  
+1. Pobierz <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> wystąpienie, jak pokazano w poniższym przykładzie.  
   
      [!code-csharp[ButtonGroup#21](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#21)]  
   
-2. Utwórz <xref:System.ComponentModel.Design.CommandID> obiekt, który ma parametrów, identyfikator GUID i identyfikator polecenia do obsługi, jak pokazano w poniższym przykładzie.  
+2. Utwórz <xref:System.ComponentModel.Design.CommandID> obiekt, który ma jako parametry identyfikator GUID i identyfikator polecenia do obsłużenia, jak pokazano w poniższym przykładzie.  
   
      [!code-csharp[ButtonGroup#22](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#22)]  
   
-     Szablon pakiet rozszerzeń Visual Studio zawiera dwie kolekcje `GuidList` i `PkgCmdIDList`, do przechowywania identyfikatorów GUID i identyfikatory poleceń. Te są wypełniane automatycznie dla poleceń, które są dodawane przez szablon, ale dla poleceń, które możesz dodać ręcznie, musisz również dodać wpis identyfikator, aby `PkgCmdIdList` klasy.  
+     Szablon pakietu programu Visual Studio zawiera dwie kolekcje `GuidList` i `PkgCmdIDList` , w celu przechowywania identyfikatorów GUID i identyfikatory poleceń. Są one wypełniane automatycznie dla poleceń, które są dodawane przez szablon, ale dla poleceń dodawanych ręcznie, należy również dodać wpis identyfikatora do `PkgCmdIdList` klasy.  
   
-     Alternatywnie możesz wypełnić <xref:System.ComponentModel.Design.CommandID> obiektu za pomocą wartość nieprzetworzonego ciągu identyfikatora GUID i wartość całkowitą identyfikatora.  
+     Alternatywnie można wypełnić <xref:System.ComponentModel.Design.CommandID> Obiekt przy użyciu nieprzetworzonej wartości ciągu identyfikatora GUID i wartości całkowitej identyfikatora.  
   
-3. Utwórz wystąpienie albo <xref:System.ComponentModel.Design.MenuCommand> lub <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiekt, który określa metodę, która obsługuje polecenie, łącznie z <xref:System.ComponentModel.Design.CommandID>, jak pokazano w poniższym przykładzie.  
+3. Utwórz wystąpienie <xref:System.ComponentModel.Design.MenuCommand> obiektu lub, <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> który określa metodę, która obsługuje polecenie razem z <xref:System.ComponentModel.Design.CommandID> , jak pokazano w poniższym przykładzie.  
   
      [!code-csharp[ButtonGroup#23](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#23)]  
   
-     <xref:System.ComponentModel.Design.MenuCommand> Jest odpowiednia dla statycznych poleceń. Wyświetla element menu dynamiczne wymagają QueryStatus obsługi zdarzeń. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Dodaje <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> zdarzenie, które występuje, gdy menu hosta polecenia jest otwarty i niektóre inne właściwości, takie jak <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.  
+     <xref:System.ComponentModel.Design.MenuCommand>Jest to odpowiednie dla poleceń statycznych. Dynamiczny element menu zawiera wymagania obsługi zdarzeń QueryStatus. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>Dodaje <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> zdarzenie, które występuje po otwarciu menu hosta polecenia i innych właściwości, takich jak <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> .  
   
-     Polecenia utworzone przez szablon pakietu są przekazywane, aby domyślnie <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiektu `Initialize()` metody klasy pakietu.  
+     Polecenia utworzone przez szablon pakietu są domyślnie przesyłane do <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiektu w `Initialize()` metodzie klasy pakietu.  
   
-4. <xref:System.ComponentModel.Design.MenuCommand> Jest odpowiednia dla statycznych poleceń. Wyświetla element menu dynamiczne wymagają QueryStatus obsługi zdarzeń. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Dodaje <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> zdarzenie, które występuje, gdy menu hosta polecenia jest otwarty i niektóre inne właściwości, takie jak <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.  
+4. <xref:System.ComponentModel.Design.MenuCommand>Jest to odpowiednie dla poleceń statycznych. Dynamiczny element menu zawiera wymagania obsługi zdarzeń QueryStatus. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>Dodaje <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> zdarzenie, które występuje po otwarciu menu hosta polecenia i innych właściwości, takich jak <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> .  
   
-     Polecenia utworzone przez szablon pakietu są przekazywane, aby domyślnie <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiektu `Initialize()` metody klasy pakietu. Kreator programu Visual Studio implementuje `Initialize` metody, używając `MenuCommand`. Do wyświetlania elementu menu dynamiczne, musisz zmienić tę wartość do `OleMenuCommand`, jak pokazano w następnym kroku. Co więcej Aby zmienić tekst elementu menu, należy dodać TextChanges flagę polecenia do menu przycisku polecenia w pliku vsct jak pokazano w poniższym przykładzie  
+     Polecenia utworzone przez szablon pakietu są domyślnie przesyłane do <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiektu w `Initialize()` metodzie klasy pakietu. Kreator programu Visual Studio implementuje `Initialize` metodę za pomocą polecenia `MenuCommand` . W przypadku wyświetlania dynamicznego elementu menu należy zmienić to `OleMenuCommand` , tak jak pokazano w następnym kroku. Ponadto aby zmienić tekst elementu menu, należy dodać flagę polecenia textchangs do przycisku polecenia menu w pliku vsct, jak pokazano w poniższym przykładzie.  
   
     ```xml
     <Button guid="guidMenuTextCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
@@ -162,24 +162,24 @@ Można utworzyć polecenia menu pochodząca z <xref:System.ComponentModel.Design
     </Button>
     ```
       
-5. Nowe polecenie menu, aby przekazać <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> method in Class metoda <xref:System.ComponentModel.Design.IMenuCommandService> interfejsu. Jest to osiągane przez domyślny dla polecenia utworzone przez szablon pakietu, jak pokazano w poniższym przykładzie  
+5. Przekaż nowe polecenie menu do <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> metody w <xref:System.ComponentModel.Design.IMenuCommandService> interfejsie. Jest to realizowane domyślnie dla poleceń tworzonych przez szablon pakietu, jak pokazano w poniższym przykładzie.  
   
      [!code-csharp[ButtonGroup#24](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#24)]  
   
-6. Implementuje metody, która obsługuje polecenie.  
+6. Zaimplementuj metodę, która obsługuje polecenie.  
   
 #### <a name="to-implement-querystatus"></a>Aby zaimplementować QueryStatus  
   
-1. Zdarzenie QueryStatus występuje przed wyświetleniem polecenia. Dzięki temu właściwości tego polecenia można ustawić w zdarzeniu programu obsługi przed osiągnięciem przez nią użytkownika. Tylko polecenia, które są dodawane jako <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiekty mogą uzyskiwać dostęp do tej metody.  
+1. Zdarzenie QueryStatus występuje przed wyświetleniem polecenia. Umożliwia to ustawienie właściwości tego polecenia w programie obsługi zdarzeń przed jego przekazaniem do użytkownika. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>Do tej metody można uzyskać dostęp tylko do poleceń, które są dodawane jako obiekty.  
   
-    Dodaj `EventHandler` obiekt <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> zdarzenia w <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiekt, który jest tworzony do obsługi polecenia, jak pokazano w poniższym przykładzie (`menuItem` jest <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> wystąpienie).  
+    Dodaj `EventHandler` obiekt do <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> zdarzenia w <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiekcie, który został utworzony, aby obsłużyć polecenie, jak pokazano w poniższym przykładzie ( `menuItem` to jest <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> wystąpienie).  
   
     [!code-csharp[MenuText#14](../snippets/csharp/VS_Snippets_VSSDK/menutext/cs/menutextpackage.cs#14)]
     [!code-vb[MenuText#14](../snippets/visualbasic/VS_Snippets_VSSDK/menutext/vb/menutextpackage.vb#14)]  
   
-    `EventHandler` Obiekt otrzymuje nazwę metody, która jest wywoływana, gdy stan to polecenie jest wykonywane zapytanie.  
+    `EventHandler`Obiekt otrzymuje nazwę metody, która jest wywoływana, gdy zostanie wysłane zapytanie o stan polecenia menu.  
   
-2. Implementuje metody obsługi stanu zapytania dla polecenia. `object` `sender` Parametru może być rzutowany <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiektu, który służy do ustawiania różne atrybuty polecenia menu, w tym tekście. W poniższej tabeli przedstawiono właściwości na <xref:System.ComponentModel.Design.MenuCommand> klasy (które klasy MPF <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> pochodzi od klasy) odpowiadające <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> flag.  
+2. Zaimplementuj metodę procedury obsługi stanu zapytania dla polecenia. `object` `sender` Parametr może być rzutowany do <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiektu, który jest używany do ustawiania różnych atrybutów polecenia menu, łącznie z tekstem. W poniższej tabeli przedstawiono właściwości <xref:System.ComponentModel.Design.MenuCommand> klasy (której klasa MPF <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> dziedziczy z), które odpowiadają <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> flagom.  
   
    |Właściwość MenuCommand|Flaga OLECMDF|  
    |--------------------------|------------------|  
@@ -187,70 +187,70 @@ Można utworzyć polecenia menu pochodząca z <xref:System.ComponentModel.Design
    |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
    |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
   
-    Aby zmienić tekst polecenia menu, użyj <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> właściwość <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiektu, jak pokazano w poniższym przykładzie.  
+    Aby zmienić tekst polecenia menu, użyj <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> właściwości <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiektu, jak pokazano w poniższym przykładzie.  
   
     [!code-csharp[MenuText#11](../snippets/csharp/VS_Snippets_VSSDK/menutext/cs/menutextpackage.cs#11)]
     [!code-vb[MenuText#11](../snippets/visualbasic/VS_Snippets_VSSDK/menutext/vb/menutextpackage.vb#11)]  
   
-   MPF automatycznie obsługuje przypadek grupy Nieobsługiwana lub nieznana. O ile nie została dodana do polecenia <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> przy użyciu <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> metoda, polecenie nie jest obsługiwana.  
+   MPF automatycznie obsługuje przypadek dla nieobsługiwanych lub nieznanych grup. Jeśli polecenie nie zostało dodane do programu <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> przy użyciu <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> metody, polecenie nie jest obsługiwane.  
   
-### <a name="handling-commands-by-using-the-iolecommandtarget-interface"></a>Obsługa poleceń przy użyciu iolecommandtarget — interfejs  
- Dla kodu, który używa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs bezpośrednio, pakietu VSPackage należy zaimplementować obu <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu. Jeśli pakietu VSPackage implementuje hierarchii projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfejsu powinny być zrealizowane w zamian.  
+### <a name="handling-commands-by-using-the-iolecommandtarget-interface"></a>Obsługa poleceń przy użyciu interfejsu IOleCommandTarget  
+ W przypadku kodu, który używa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu bezpośrednio, pakietu VSPackage musi implementować obie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu. Jeśli pakietu VSPackage implementuje hierarchię projektu, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> zamiast tego należy zaimplementować metody i interfejsu.  
   
- Zarówno <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody zostały zaprojektowane do odbierania zestawu pojedynczego polecenia `GUID` oraz tablicę identyfikatorów poleceń jako dane wejściowe. Zaleca się, że pakietów VSPackage w pełni obsługuje tę koncepcję wiele identyfikatorów w jednym wywołaniu. Jednak tak długo, jak pakietu VSPackage nie jest wywoływany z innych pakietów VSPackage, można założyć tablicy polecenia zawiera tylko jeden identyfikator polecenia, ponieważ <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody są wykonywane w dobrze zdefiniowanej kolejności. Aby uzyskać więcej informacji na temat routingu, zobacz [Routing poleceń w pakietach VSPackage](../extensibility/internals/command-routing-in-vspackages.md).  
+ Obie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> są przeznaczone do odbierania jednego zestawu poleceń `GUID` i tablicy identyfikatorów poleceń jako dane wejściowe. Zalecamy, aby pakietów VSPackage w pełni obsługiwać te koncepcje wielu identyfikatorów w jednym wywołaniu. Jednak tak długo, jak pakietu VSPackage nie jest wywoływana z innych pakietów VSPackage, można założyć, że tablica poleceń zawiera tylko jeden identyfikator polecenia, ponieważ <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody i są wykonywane w dobrze zdefiniowanej kolejności. Aby uzyskać więcej informacji na temat routingu, zobacz [routing poleceń w pakietów VSPackage](../extensibility/internals/command-routing-in-vspackages.md).  
   
- Dla kodu, który używa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs bezpośrednio do obsługi poleceń, musisz zaimplementować <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody w VSPackage w następujący sposób w celu obsługi poleceń.  
+ W przypadku kodu, który korzysta z <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu bezpośrednio dla obsługi poleceń, należy zaimplementować <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodę w pakietu VSPackage w następujący sposób, aby obsługiwać polecenia.  
   
-##### <a name="to-implement-the-querystatus-method"></a>Aby wdrożyć metodę QueryStatus  
+##### <a name="to-implement-the-querystatus-method"></a>Aby zaimplementować metodę QueryStatus  
   
 1. Zwróć <xref:Microsoft.VisualStudio.VSConstants.S_OK> dla prawidłowych poleceń.  
   
-2. Ustaw `cmdf` elementu `prgCmds` parametru.  
+2. Ustaw `cmdf` element `prgCmds` parametru.  
   
-    Wartość `cmdf` element jest połączeniem logicznym wartości z <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> wyliczenia, połączone za pomocą operatora logicznego OR (`|`) — operator.  
+    Wartość `cmdf` elementu jest logicznym związkiem wartości z <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> wyliczenia, połączone za pomocą operatora logicznego OR ( `|` ).  
   
-    Użyj odpowiedniego wyliczenia, na podstawie stanu polecenia:  
+    Użyj odpowiedniego wyliczenia na podstawie stanu polecenia:  
   
    - Jeśli polecenie jest obsługiwane:  
   
       `prgCmds[0].cmdf = OLECMDF_SUPPORTED;`  
   
-   - Jeśli polecenie ma być niewidoczna w tej chwili:  
+   - Jeśli polecenie powinno być niewidoczne w tej chwili:  
   
       `prgCmds[0].cmdf |= OLECMDF_INVISIBLE;`  
   
-   - Jeśli polecenie jest przełączona w i prawdopodobnie została kliknięta:  
+   - Jeśli polecenie jest włączone i pojawia się, gdy kliknięto:  
   
       `prgCmds[0].cmdf |= OLECMDF_LATCHED;`  
   
-      W przypadku przetwarzania poleceń, które znajdują się w menu typu `MenuControllerLatched`, pierwsze polecenie, która jest oznaczona za `OLECMDF_LATCHED` flaga jest domyślnego polecenia, która jest wyświetlana w menu rozruchu. Aby uzyskać więcej informacji na temat `MenuController` menu, zobacz [Menu Element](../extensibility/menu-element.md).  
+      W przypadku poleceń przetwarzania, które są hostowane w menu typu `MenuControllerLatched` , pierwsze polecenie oznaczone przez `OLECMDF_LATCHED` flagę jest domyślnym poleceniem wyświetlanym w menu podczas uruchamiania. Aby uzyskać więcej informacji na temat `MenuController` typów menu, zobacz [element menu](../extensibility/menu-element.md).  
   
-   - Jeśli polecenie jest obecnie włączona:  
+   - Jeśli polecenie jest obecnie włączone:  
   
       `prgCmds[0].cmdf |= OLECMDF_ENABLED;`  
   
-   - Jeśli polecenie jest częścią menu skrótów i jest domyślnie ukryty:  
+   - Jeśli polecenie jest częścią menu skrótów i jest domyślnie ukryte:  
   
       `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
   
-   - Jeśli polecenie używa `TEXTCHANGES` Flaga, ustaw `rgwz` elementu `pCmdText` parametru na nowy tekst polecenia i zestawu `cwActual` elementu `pCmdText` parametru, aby rozmiar ciągu polecenia.  
+   - Jeśli polecenie używa `TEXTCHANGES` flagi, należy ustawić `rgwz` element `pCmdText` parametru na nowy tekst polecenia i ustawić `cwActual` element `pCmdText` parametru na rozmiar ciągu polecenia programu.  
   
-     Dla warunków błędu <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody musi obsługiwać następujące przypadki błędów:  
+     W przypadku warunków błędów <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Metoda musi obsłużyć następujące przypadki błędów:  
   
-   - Jeśli identyfikator GUID jest nieznany lub nie jest obsługiwany, zwrócony `OLECMDERR_E_UNKNOWNGROUP`.  
+   - Jeśli identyfikator GUID jest nieznany lub nie jest obsługiwany, Return `OLECMDERR_E_UNKNOWNGROUP` .  
   
-   - Jeśli jest znany identyfikator GUID, ale identyfikator polecenia jest nieznany lub nie jest obsługiwany, zwrócony `OLECMDERR_E_NOTSUPPORTED`.  
+   - Jeśli identyfikator GUID jest znany, ale identyfikator polecenia jest nieznany lub nie jest obsługiwany, Return `OLECMDERR_E_NOTSUPPORTED` .  
   
-   Implementacja pakietu VSPackage <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody musi także zwracać konkretnych kodach błędów, w zależności od tego, czy polecenie jest obsługiwane i tego, czy polecenie zostało obsłużone pomyślnie.  
+   Implementacja pakietu VSPackage <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody musi również zwracać określone kody błędów w zależności od tego, czy polecenie jest obsługiwane i czy polecenie zostało obsłużone pomyślnie.  
   
-##### <a name="to-implement-the-exec-method"></a>Aby zaimplementować Exec — metoda  
+##### <a name="to-implement-the-exec-method"></a>Aby zaimplementować metodę exec  
   
-- Jeśli polecenie `GUID` jest nieznany, zwracają `OLECMDERR_E_UNKNOWNGROUP`.  
+- Jeśli polecenie `GUID` jest nieznane, zwraca `OLECMDERR_E_UNKNOWNGROUP` .  
   
-- Jeśli `GUID` jest znane, ale polecenie identyfikator jest nieznany, zwróć `OLECMDERR_E_NOTSUPPORTED`.  
+- Jeśli `GUID` jest znany, ale identyfikator polecenia jest nieznany, Return `OLECMDERR_E_NOTSUPPORTED` .  
   
-- Jeśli `GUID` i polecenia identyfikator zgodny z pary GUID:ID, który jest używany przez polecenia w pliku vsct, należy wykonać kod, który jest skojarzony z polecenia i zwrócenia <xref:Microsoft.VisualStudio.VSConstants.S_OK>.  
+- Jeśli `GUID` identyfikatory poleceń i pasują do pary GUID: ID, która jest używana przez polecenie w pliku. vsct, wykonaj kod skojarzony z poleceniem i Return <xref:Microsoft.VisualStudio.VSConstants.S_OK> .  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu VSCT XML](../extensibility/vsct-xml-schema-reference.md)   
+ [Dokumentacja schematu XML VSCT](../extensibility/vsct-xml-schema-reference.md)   
  [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)
