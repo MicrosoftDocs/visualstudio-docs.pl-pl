@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetAttributeTypeField | Dokumenty firmy Microsoft
+title: 'IDebugCustomAttribute:: GetAttributeTypeField | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 51341b3c9b351307d2662538cc3a6797c58b62f9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732782"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
@@ -41,13 +41,13 @@ int GetAttributeTypeField(
 
 ## <a name="parameters"></a>Parametry
 `ppCAType`\
-[na zewnątrz] Zwraca obiekt [IDebugClassField,](../../../extensibility/debugger/reference/idebugclassfield.md) który reprezentuje klasę, której atrybutem niestandardowym jest wystąpienie.
+określoną Zwraca obiekt [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) , który reprezentuje klasę, której wystąpienie jest atrybutem niestandardowym.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Atrybut niestandardowy jest zawsze klasą. Ta metoda zapewnia dostęp do [obiektu IDebugClassField,](../../../extensibility/debugger/reference/idebugclassfield.md) który opisuje tę klasę.
+ Atrybut niestandardowy jest zawsze klasą. Ta metoda zapewnia dostęp do obiektu [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) , który opisuje tę klasę.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

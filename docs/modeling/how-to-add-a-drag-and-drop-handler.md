@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9272a530eaa15f902a2e295aeaa6d8b34c4eccdd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545668"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Porady: dodawanie obsługi przeciągania i upuszczania
@@ -50,7 +50,7 @@ W nowym pliku Zdefiniuj klasę częściową klasy kształtu lub diagramu, która
         }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>— Ta metoda jest wywoływana, gdy użytkownik zwolni przycisk myszy, podczas gdy wskaźnik myszy znajduje się nad tym kształtem lub diagramem, jeśli `OnDragOver(DiagramDragEventArgs e)` wcześniej ustawił `e.Effect` wartość inną niż `None` .
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> — Ta metoda jest wywoływana, gdy użytkownik zwolni przycisk myszy, podczas gdy wskaźnik myszy znajduje się nad tym kształtem lub diagramem, jeśli `OnDragOver(DiagramDragEventArgs e)` wcześniej ustawił `e.Effect` wartość inną niż `None` .
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -66,7 +66,7 @@ W nowym pliku Zdefiniuj klasę częściową klasy kształtu lub diagramu, która
     }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>— Ta metoda jest wywoływana po dwukrotnym kliknięciu kształtu lub diagramu przez użytkownika.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> — Ta metoda jest wywoływana po dwukrotnym kliknięciu kształtu lub diagramu przez użytkownika.
 
      Aby uzyskać więcej informacji, zobacz [How to: przechwycenie kliknięcia kształtu lub dekoratora](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
@@ -124,11 +124,11 @@ Gdy użytkownik przeciągnie element na diagram lub z jednej części diagramu d
 
 Aby poznać formaty, w których dostępne są informacje źródłowe przeciągania, uruchom kod w trybie debugowania, ustawiając punkt przerwania w pozycji do `OnDragOver()` lub `CanDragDrop()` . Sprawdź wartości `DiagramDragEventArgs` parametru. Informacje są dostępne w dwóch formach:
 
-- <xref:System.Windows.Forms.IDataObject>  `Data`-Ta właściwość przenosi serializowane wersje obiektów źródłowych, zwykle w więcej niż jednym formacie. Najbardziej przydatne funkcje to:
+- <xref:System.Windows.Forms.IDataObject>  `Data` -Ta właściwość przenosi serializowane wersje obiektów źródłowych, zwykle w więcej niż jednym formacie. Najbardziej przydatne funkcje to:
 
   - diagramEventArgs. Data. GetDataFormats () — wyświetla listę formatów, w których można zdekodować przeciągany obiekt. Na przykład, jeśli użytkownik przeciągnie plik z pulpitu, dostępne formaty obejmują nazwę pliku (" `FileNameW` ").
 
-  - `diagramEventArgs.Data.GetData(format)`— Dekoduje przeciągany obiekt w określonym formacie. Rzutowanie obiektu na odpowiedni typ. Przykład:
+  - `diagramEventArgs.Data.GetData(format)` — Dekoduje przeciągany obiekt w określonym formacie. Rzutowanie obiektu na odpowiedni typ. Na przykład:
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -148,7 +148,7 @@ Aby poznać formaty, w których dostępne są informacje źródłowe przeciągan
 
      Aby zaakceptować kształty UML, ustal identyfikatory GUID klas kształtu UML przez eksperyment. Należy pamiętać, że na dowolnym diagramie jest zwykle więcej niż jeden typ elementu. Pamiętaj również, że obiekt przeciągany z diagramu DSL lub UML jest kształtem, a nie elementem modelu.
 
-`DiagramDragEventArgs`ma także właściwości wskazujące bieżącą pozycję wskaźnika myszy i czy naciśnięcie klawisza CTRL, ALT lub SHIFT.
+`DiagramDragEventArgs` ma także właściwości wskazujące bieżącą pozycję wskaźnika myszy i czy naciśnięcie klawisza CTRL, ALT lub SHIFT.
 
 ## <a name="how-to-get-the-original-of-a-dragged-element"></a>Jak uzyskać oryginalny element przeciągany
 
@@ -569,7 +569,7 @@ namespace Company.CompartmentDrag  // EDIT.
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md)
 - [Wdrażanie rozwiązań dla języka specyficznego dla domeny](msi-and-vsix-deployment-of-a-dsl.md)

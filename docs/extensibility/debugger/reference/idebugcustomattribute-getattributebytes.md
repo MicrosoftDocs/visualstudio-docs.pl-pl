@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetAttributeBytes | Dokumenty firmy Microsoft
+title: 'IDebugCustomAttribute:: GetAttributeBytes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 621ebf3949a273e06053ced67209aa052c25bce0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732794"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
-Pobiera informacje o atrybutach jako obiekt blob bajtów.
+Pobiera informacje o atrybucie jako obiekt BLOB bajtów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,18 +43,18 @@ int GetAttributeBytes(
 
 ## <a name="parameters"></a>Parametry
 `ppBlob`\
-[w, na zewnątrz] Tablica wypełniona bajtami atrybutów.
+[in. out] Tablica, która jest wypełniana przy użyciu atrybutu bajtów.
 
 `pdwLen`\
-[w, na zewnątrz] Określa maksymalną liczbę bajtów do `ppBlob` zwrócenia w tablicy i zwraca liczbę bajtów faktycznie zapisanych do tablicy.
+[in. out] Określa maksymalną liczbę bajtów zwracanych w `ppBlob` tablicy i zwraca liczbę bajtów rzeczywiście zapisaną do tablicy.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ustaw `ppBlob` parametr na wartość null, aby zwrócić liczbę dostępnych bajtów atrybutów. Następnie przydzielić tablicę i przekazać `ppBlob` tę tablicę dla parametru.
+ Ustaw `ppBlob` parametr na wartość null, aby zwrócić liczbę dostępnych bajtów atrybutów. Następnie przydziel tablicę i przekaż tę tablicę do `ppBlob` parametru.
 
- Bajty atrybutu reprezentują nieprzetworzone dane atrybutu niestandardowego.
+ Atrybut bajty reprezentuje pierwotne dane atrybutu niestandardowego.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

@@ -1,5 +1,5 @@
 ---
-title: Nieobsługiwane edycje w języku Visual Basic, Edytuj i Kontynuuj | Dokumentacja firmy Microsoft
+title: Nieobsługiwane edycje w Visual Basic Edytuj i Kontynuuj | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,205 +18,205 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94a151a7adab5c8246cec38c2e62d76788beb6e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155434"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Nieobsługiwane edycje funkcji Edytuj i kontynuuj programu Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Edytuj i Kontynuuj les zatrzymują wykonywanie programu w trybie przerwania, wprowadzić zmiany na wykonywanie kodu i wznowić wykonywanie programu przy użyciu nowo zarejestrowanych zmian. Kod deklaratywny zmian w strukturze publiczne klasy zwykle są niedozwolone, ale wiele zmian, które można wprowadzać do metody, właściwości treści lub prywatnej deklaracje w obrębie klasy są dozwolone.  
+Edytuj i Kontynuuj, aby zatrzymać wykonywanie programu w trybie przerwania, wprowadzić zmiany w kodzie wykonywanym i wznowić wykonywanie programu przy użyciu nowo wprowadzonych zmian. Deklaratywne edycje kodu, które mają wpływ na strukturę publiczną klasy, są ogólnie zabronione, ale wiele zmian, które mogą być wprowadzane do metody, treści właściwości lub prywatnych deklaracji w klasie, są dozwolone.  
   
- Jeśli potrzebujesz wprowadzić zmianę, która nie jest obsługiwana, musi zatrzymać debugowanie, wprowadzić zmiany i rozpocznij nową sesję debugowania.  
+ Jeśli trzeba wprowadzić zmianę, która nie jest obsługiwana, należy zatrzymać debugowanie, wprowadzić zmiany i rozpocząć nową sesję debugowania.  
   
-### <a name="BKMK_MethodandPropertyBodyEdits"></a> Metody i właściwości treści edycji  
- **Nieobsługiwane zmiany statyczne zmienne lokalne**: Dodawanie lub aktualizowanie zmiennej lokalnej lub usuwanie zmiennej lokalnej statycznej, jeśli to spowoduje, że błąd kompilacji.  
+### <a name="method-and-property-body-edits"></a><a name="BKMK_MethodandPropertyBodyEdits"></a> Edycja metod i treści właściwości  
+ **Nieobsługiwane zmiany statycznych zmiennych lokalnych**: Dodawanie lub aktualizowanie zmiennej lokalnej lub usuwanie statycznej zmiennej lokalnej, jeśli spowoduje to błąd kompilacji.  
   
- **Nieobsługiwane zmiany do typów ogólnych**: Zmiany metody rodzajowej, samego lub treści metody ogólne nie są obsługiwane. Podczas tworzenia wystąpienia typu ogólnego lub połączeń do istniejących metod ogólnych mogą być dodane, usunięte lub zmienione.  
+ **Nieobsługiwane zmiany w typach ogólnych**: zmiany metody ogólnej sama lub treści metody ogólnej nie są obsługiwane. Utworzenie wystąpienia typu ogólnego lub wywołania istniejących metod ogólnych można dodać, usunąć lub zmienić.  
   
  **Inne nieobsługiwane zmiany**  
   
-- Zmiana instrukcji wywołania metody, która znajduje się w stosie wywołań.  
+- Zmiana instrukcji wywołania metody, która znajduje się na stosie wywołań.  
   
-- Dodawanie `Try...Catch` bloku, gdy wskaźnik instrukcji kończy się w `Catch` bloku lub `Finally` bloku.  
+- Dodawanie `Try...Catch` bloku, gdy wskaźnik instrukcji zostanie zakończony w `Catch` bloku lub `Finally` bloku.  
   
-- Usuwanie `Try...Catch` bloku, gdy wskaźnik instrukcji jest w `Catch`bloku lub `Finally` bloku.  
+- Usuwanie `Try...Catch` bloku, gdy wskaźnik instrukcji znajduje się w `Catch` bloku lub `Finally` bloku.  
   
-- Dodawanie `Using` bloku wokół bieżący wskaźnik instrukcji.  
+- Dodawanie `Using` bloku wokół bieżącego wskaźnika instrukcji.  
   
-- Dodawanie `SynchLock` bloku wokół bieżący wskaźnik instrukcji.  
+- Dodawanie `SynchLock` bloku wokół bieżącego wskaźnika instrukcji.  
   
-### <a name="BKMK_AttributeEdits"></a> Zmiany atrybutów  
- Edytuj i Kontynuuj nie obsługuje modyfikowania atrybutów. Ściślej mówiąc, Edytuj i Kontynuuj nie obsługuje następujące zmiany:  
+### <a name="attribute-edits"></a><a name="BKMK_AttributeEdits"></a> Edycje atrybutów  
+ Edytuj i Kontynuuj nie obsługuje modyfikowania atrybutów. W przeciwnym razie polecenie Edytuj i Kontynuuj nie obsługuje następujących zmian:  
   
-- Definiowanie, edytowanie lub usuwanie tworzy się klasę atrybutów.  
+- Definiowanie, edytowanie lub usuwanie klasy atrybutów.  
   
 - Dodawanie atrybutu.  
   
 - Edytowanie lub usuwanie istniejącego atrybutu.  
   
-### <a name="BKMK_ClassDeclarationEdits"></a> Edycje deklaracji klasy  
- Większość zmian deklaracje klas nie są dozwolone przez Edytuj i Kontynuuj w trybie przerwania. Ściślej mówiąc, Edytuj i Kontynuuj nie obsługuje następujące zmiany:  
+### <a name="class-declaration-edits"></a><a name="BKMK_ClassDeclarationEdits"></a> Edycje deklaracji klasy  
+ Większość zmian deklaracji klasy nie jest dozwolona przez edytowanie i kontynuowanie w trybie przerwania. W przeciwnym razie polecenie Edytuj i Kontynuuj nie obsługuje następujących zmian:  
   
-- Zmiana nazwy, usuwanie lub zmiana dziedziczenia istniejącej klasy.  
+- Zmiana nazwy, usunięcie lub zmiana dziedziczenia istniejącej klasy.  
   
-- Implementowanie nowy interfejs lub usuwanie implementacji interfejsu.  
+- Implementowanie nowego interfejsu lub usuwanie implementacji interfejsu.  
   
-- Zmiana modyfikatorów klasy.  
+- Zmienianie modyfikatorów w klasie.  
   
 - Dodawanie, zmienianie lub usuwanie `ComClass` stanu.  
   
-- Edytowanie żadnych deklaracji klasy ogólnej.  
+- Edytowanie dowolnej ogólnej deklaracji klasy.  
   
-### <a name="BKMK_ClassMemberDeclarationEdits"></a> Edycje deklaracji elementu członkowskiego klasy  
- Zmiany w deklaracji elementu członkowskiego są niedozwolone w większości Edytuj i Kontynuuj przypadków. Na przykład nie można zmienić podpis lub poziom dostępu członka, a nie można całkowicie usunąć członków, jeśli spowodowałoby błąd kompilacji. Ściślej mówiąc, Edytuj i Kontynuuj nie obsługuje następujące zmiany:  
+### <a name="class-member-declaration-edits"></a><a name="BKMK_ClassMemberDeclarationEdits"></a> Edytowanie deklaracji składowej klasy  
+ Zmiany w deklaracjach składowych są zabronione w większości przypadków Edytuj i Kontynuuj. Na przykład nie można zmienić poziomu podpisu ani dostępu elementu członkowskiego i nie można całkowicie usunąć członków, jeśli spowodowałoby to błąd kompilacji. W przeciwnym razie polecenie Edytuj i Kontynuuj nie obsługuje następujących zmian:  
   
-- Przesłanianie istniejącą zmienną elementu członkowskiego przez zadeklarowanie globalna lub zmiennej składowej o takiej samej nazwie w bloku zawierającego.  
+- Obserwowanie istniejącej zmiennej składowej przez zadeklarowanie globalnej lub zmiennej składowej o tej samej nazwie w bloku zawierającym.  
   
-- Przesłanianie zmiennej lokalnej statycznej przez zadeklarowanie nowego wystąpienia wewnątrz bloku.  
+- Obserwowanie statycznej zmiennej lokalnej przez zadeklarowanie nowego wystąpienia wewnątrz bloku.  
   
-- Usuwanie programów obsługi zdarzeń. Dodawanie obsługi zdarzeń jest dozwolone.  
+- Usuwanie programów obsługi dla zdarzenia. Dodawanie programu obsługi zdarzeń jest dozwolone.  
   
-- Dodawanie nowej przeciążania operacji właściwości lub metody, chyba że właściwość lub metoda jest `Private` i nie ma żadnych wystąpień z nazwą w żadnej aktywnej instrukcji.  
+- Dodawanie nowej właściwości lub metody przeciążania, chyba że właściwość lub metoda ma `Private` i nie ma wystąpień nazwy w żadnej aktywnej instrukcji.  
   
 - Dodawanie lub usuwanie `WithEvents` klauzuli w zmiennej składowej.  
   
-- Usuwanie członka.  
+- Usuwanie elementu członkowskiego.  
   
-- Zmiana właściwości lub metody deklaracji można zatrzymać Implementowanie interfejsu.  
+- Zmiana właściwości lub deklaracji metody, aby zatrzymać implementację interfejsu.  
   
-- Edytowanie dowolną metodę, która używa typów ogólnych.  
+- Edytowanie dowolnej metody, która używa typów ogólnych.  
   
-- Zmienianie podpisu lub zwracany typ nieprywatny właściwości lub metody.  
+- Zmiana sygnatury lub zwracanego typu nieprywatnej właściwości lub metody.  
   
-- Zastępowanie i przesłanianie składowej w klasie bazowej.  
+- Zastępowanie lub obserwowanie elementu członkowskiego w klasie bazowej.  
   
-- Dodawanie nowego pola w dowolnej klasy oznaczone `SequentialLayout` lub `ExplicitLayout`.  
+- Dodawanie nowego pola w dowolnej klasie oznaczonej przy użyciu `SequentialLayout` lub `ExplicitLayout` .  
   
-- Zmiana `MustInherit` lub `NotOverridable` stan metody.  
+- Zmiana `MustInherit` stanu lub `NotOverridable` metody.  
   
-- Zmiana modyfikatory dostępu do właściwości lub metody.  
+- Zmiana modyfikatorów dostępu dla właściwości lub metody.  
   
-- Zmiana typu lub stanu pola tylko do odczytu.  
+- Zmiana typu lub stanu tylko do odczytu pola.  
   
-- Zmienianie pola publiczne.  
+- Zmiana pola publicznego.  
   
-### <a name="BKMK_CompilerOptionEdits"></a> Edycje — opcja kompilatora  
- Podczas korzystania z Edytuj i Kontynuuj w trybie przerwania, nie można zmienić, Dodaj lub usuń następujące opcje kompilatora:  
+### <a name="compiler-option-edits"></a><a name="BKMK_CompilerOptionEdits"></a> Edycja opcji kompilatora  
+ Korzystając z funkcji Edytuj i Kontynuuj w trybie przerwania, nie można zmieniać, dodawać ani usuwać następujących opcji kompilatora:  
   
 - **Option Strict**  
   
-- **Option Explicit**  
+- **Opcja Explicit**  
   
-- **Option Compare**  
+- **Opcja Porównaj**  
   
-### <a name="BKMK_ConstantsEdits"></a> Edycje — stałe  
- Zmiany do stałych w trybie Edytuj i Kontynuuj są bardzo ograniczona. Ściślej mówiąc, Edytuj i Kontynuuj nie obsługuje następujące zmiany:  
+### <a name="constants-edits"></a><a name="BKMK_ConstantsEdits"></a> Stałe modyfikacje  
+ Zmiany w stałych w trybie Edytuj i Kontynuuj są bardzo ograniczone. W przeciwnym razie polecenie Edytuj i Kontynuuj nie obsługuje następujących zmian:  
   
 - Dodawanie lub aktualizowanie zmiennej stałej.  
   
 - Zmiana typu lub wartości stałej.  
   
-- Usuwanie stałą.  
+- Usuwanie stałej.  
   
-### <a name="BKMK_DelegateandEventDeclarationEdits"></a> Delegat, edycje deklaracja zdarzenia  
- Niektóre zmiany delegaci i zdarzenia nie są dozwolone w trybie Break, Edytuj i Kontynuuj. Ściślej mówiąc, Edytuj i Kontynuuj nie obsługuje następujące zmiany:  
+### <a name="delegate-and-event-declaration-edits"></a><a name="BKMK_DelegateandEventDeclarationEdits"></a> Operacje delegowania i deklaracji zdarzeń  
+ Niektóre zmiany delegatów i zdarzeń nie są dozwolone przez edytowanie i kontynuowanie w trybie przerwania. W przeciwnym razie polecenie Edytuj i Kontynuuj nie obsługuje następujących zmian:  
   
 - Zmienianie lub usuwanie definicji delegata.  
   
-- Usuwanie zdarzenie.  
+- Usuwanie zdarzenia.  
   
-### <a name="BKMK_EnumerationEdits"></a> Wyliczenie edycji  
- Zmiany wyliczenia (`Enums`), Edytuj i Kontynuuj nie są dozwolone w trybie przerwania. Ściślej mówiąc, Edytuj i Kontynuuj nie obsługuje następujące zmiany:  
+### <a name="enumeration-edits"></a><a name="BKMK_EnumerationEdits"></a> Edycje wyliczenia  
+ Zmiany w wyliczeniach ( `Enums` ) nie są dozwolone przez edytowanie i kontynuowanie w trybie przerwania. W przeciwnym razie polecenie Edytuj i Kontynuuj nie obsługuje następujących zmian:  
   
-- Modyfikowanie bazowego typu `Enum`.  
+- Modyfikowanie typu podstawowego `Enum` .  
   
 - Dodawanie, zmienianie lub usuwanie `Enum` elementu członkowskiego.  
   
-- Zmiana modyfikator dostępu elementu `Enum`.  
+- Zmiana modyfikatora dostępu `Enum` .  
   
-### <a name="BKMK_ExternalDeclarationsEdits"></a> Deklaracje zewnętrzne zmiany  
- Ogólnie rzecz biorąc nie można zmienić deklaracje zewnętrzne metody podczas operacji Edytuj i Kontynuuj. Ściślej mówiąc, Edytuj i Kontynuuj nie obsługuje następujące zmiany:  
+### <a name="external-declarations-edits"></a><a name="BKMK_ExternalDeclarationsEdits"></a> Edycje deklaracji zewnętrznych  
+ Ogólnie rzecz biorąc nie można zmienić deklaracji metod zewnętrznych podczas Edytuj i Kontynuuj. W przeciwnym razie polecenie Edytuj i Kontynuuj nie obsługuje następujących zmian:  
   
-- Dodawanie lub usuwanie deklaracji zewnętrznych.  
+- Dodawanie lub usuwanie deklaracji zewnętrznej.  
   
-- Zmiana podpisu lub organizowanie atrybuty deklaracji zewnętrznych.  
+- Zmienianie podpisu lub organizowanie atrybutów zewnętrznej deklaracji.  
   
-### <a name="BKMK_ImportsEdits"></a> Import zmian  
- Edytuj i Kontynuuj nie zezwala na dodawanie, zmienianie lub usuwanie `Imports` instrukcji w trybie przerwania.  
+### <a name="imports-edits"></a><a name="BKMK_ImportsEdits"></a> Importuje edycje  
+ Polecenie Edytuj i Kontynuuj nie umożliwia dodawania, zmieniania ani usuwania `Imports` instrukcji w trybie przerwania.  
   
-### <a name="BKMK_InterfaceDefinitionEdits"></a> Zmiany definicji interfejsu  
- Chociaż często możesz wprowadzić zmiany do elementów członkowskich, które implementują interfejsy, zmiany definicji interfejsu rzeczywiste zwykle nie są dozwolone przez Edytuj i Kontynuuj. Ściślej mówiąc, Edytuj i Kontynuuj nie obsługuje następujące zmiany:  
+### <a name="interface-definition-edits"></a><a name="BKMK_InterfaceDefinitionEdits"></a> Edytowanie definicji interfejsu  
+ Chociaż często można wprowadzać zmiany do elementów członkowskich, które implementują interfejsy, zmiany w rzeczywistych definicjach interfejsów zazwyczaj nie są dozwolone przez polecenie Edytuj i Kontynuuj. W przeciwnym razie polecenie Edytuj i Kontynuuj nie obsługuje następujących zmian:  
   
-- Dodawanie, zmienianie lub usuwanie członków interfejsu.  
+- Dodawanie, zmienianie lub usuwanie elementów członkowskich interfejsu.  
   
 - Usuwanie istniejącego interfejsu.  
   
-- Zmiana modyfikator dostępu interfejsu.  
+- Zmiana modyfikatora dostępu interfejsu.  
   
 - Zmiana hierarchii dziedziczenia interfejsu.  
   
-### <a name="BKMK_ModuleDeclarationEdits"></a> Edycje deklaracja modułu  
- Większość zmian deklaracje modułów nie są dozwolone przez Edytuj i Kontynuuj w trybie przerwania. Ściślej mówiąc, Edytuj i Kontynuuj nie obsługuje następujące zmiany:  
+### <a name="module-declaration-edits"></a><a name="BKMK_ModuleDeclarationEdits"></a> Edycje deklaracji modułu  
+ Większość zmian deklaracji modułów nie jest dozwolona przez edytowanie i kontynuowanie w trybie przerwania. W przeciwnym razie polecenie Edytuj i Kontynuuj nie obsługuje następujących zmian:  
   
 - Tworzenie nowego modułu.  
   
-- Zmiana nazwy lub usuwanie istniejącego modułu.  
+- Zmiana nazwy lub usunięcie istniejącego modułu.  
   
-- Zmiana modyfikator dostępu dla modułu.  
+- Zmiana modyfikatora dostępu dla modułu.  
   
-### <a name="BKMK_ModuleMemberDeclarationEdits"></a> Edycje deklaracji elementu członkowskiego modułu  
- Za pomocą Edytuj i Kontynuuj, możesz wprowadzić szereg zmian członków modułu, takie jak właściwości, metod i pól w trybie przerwania. Niektóre zmiany, jednak nie są obsługiwane. W szczególności Edytuj i Kontynuuj nie obsługuje dodawanie, usuwanie lub zmiana typu lub podpis żadnych elementów członkowskich.  
+### <a name="module-member-declaration-edits"></a><a name="BKMK_ModuleMemberDeclarationEdits"></a> Edycja deklaracji elementu członkowskiego modułu  
+ Za pomocą funkcji Edytuj i Kontynuuj można wprowadzać różne zmiany w elementach członkowskich modułu, takich jak właściwości, metody i pola, w trybie przerwania. Niektóre zmiany nie są jednak obsługiwane. W szczególności, polecenie Edytuj i Kontynuuj nie obsługuje dodawania, usuwania ani zmieniania typu lub podpisu żadnych elementów członkowskich.  
   
- Ściślej mówiąc, Edytuj i Kontynuuj nie obsługuje następujące zmiany:  
+ W przeciwnym razie polecenie Edytuj i Kontynuuj nie obsługuje następujących zmian:  
   
-- Dodawanie nowego elementu członkowskiego, jeśli nie istnieją żadne wystąpienia o nazwie w żadnej aktywnej instrukcji.  
+- Dodawanie nowego elementu członkowskiego, jeśli nie ma żadnych wystąpień nazwy w żadnej aktywnej instrukcji.  
   
 - Usuwanie właściwości lub metody.  
   
-- Zmienianie podpisu właściwości lub metody.  
+- Zmiana sygnatury właściwości lub metody.  
   
-- Dodawanie, zmienianie nazwy, przenoszenia lub usunięcie pola.  
+- Dodawanie, zmiana nazwy, przechodzenie lub usuwanie pola.  
   
-- Edytowanie dowolną metodę, która używa typów ogólnych.  
+- Edytowanie dowolnej metody, która używa typów ogólnych.  
   
-- Zmiana modyfikatory dostępu do właściwości lub metody, na przykład zmiana `Public` do `Private`.  
+- Zmiana modyfikatorów dostępu dla właściwości lub metody, na przykład zmiana `Public` na `Private` .  
   
 - Usuwanie lub zmiana typu istniejącego pola.  
   
-### <a name="BKMK_NestedTypeDeclarationEdits"></a> Edycje deklaracji typu zagnieżdżonego  
- Edytuj i Kontynuuj nie obsługuje przenoszenie typ zagnieżdżony do innej przestrzeni nazw lub typu.  
+### <a name="nested-type-declaration-edits"></a><a name="BKMK_NestedTypeDeclarationEdits"></a> Edycje deklaracji typu zagnieżdżonego  
+ Edytuj i Kontynuuj nie obsługuje przeniesienia typu zagnieżdżonego do innej przestrzeni nazw lub typu.  
   
-### <a name="BKMK_StructureDeclarationEdits"></a> Edycje deklaracji struktury  
- Większość zmian wprowadzonych do deklaracji struktury nie są dozwolone przez Edytuj i Kontynuuj podczas w **Przerwij** trybu. Ściślej mówiąc, Edytuj i Kontynuuj nie obsługuje następujące zmiany:  
+### <a name="structure-declaration-edits"></a><a name="BKMK_StructureDeclarationEdits"></a> Edycje deklaracji struktury  
+ Większość zmian w deklaracjach struktury nie jest dozwolona przez edytowanie i kontynuowanie w trybie **przerwania** . W przeciwnym razie polecenie Edytuj i Kontynuuj nie obsługuje następujących zmian:  
   
 - Zmiana nazwy lub usunięcie istniejącej struktury.  
   
-- Implementowanie nowy interfejs lub usuwanie implementacji interfejsu.  
+- Implementowanie nowego interfejsu lub usuwanie implementacji interfejsu.  
   
-- Zmiana modyfikator dostępu dla struktury.  
+- Zmiana modyfikatora dostępu dla struktury.  
   
-### <a name="BKMK_StructureMemberDeclarationEdits"></a> Edycje deklaracji elementu członkowskiego struktury  
- Za pomocą Edytuj i Kontynuuj, możesz wprowadzić szereg zmian elementy członkowskie struktury (właściwości, metod i pól) podczas w trybie przerwania. Niektóre zmiany, jednak nie są obsługiwane, zwłaszcza w przypadku zmiany, które wpływają na deklarację elementy członkowskie struktury. Ściślej mówiąc, Edytuj i Kontynuuj nie obsługuje następujące zmiany:  
+### <a name="structure-member-declaration-edits"></a><a name="BKMK_StructureMemberDeclarationEdits"></a> Edytowanie deklaracji składowej struktury  
+ Za pomocą funkcji Edytuj i Kontynuuj można wprowadzać różne zmiany w elementach członkowskich struktury (właściwości, metody i pola) w trybie przerwania. Niektóre zmiany nie są jednak obsługiwane, w szczególności zmiany, które wpływają na deklarację elementów członkowskich struktury. W przeciwnym razie polecenie Edytuj i Kontynuuj nie obsługuje następujących zmian:  
   
 - Usuwanie właściwości lub metody.  
   
 - Dodawanie lub usuwanie pola.  
   
-- Zmienianie podpisu właściwości lub metody.  
+- Zmiana sygnatury właściwości lub metody.  
   
-- Edytowanie dowolną metodę, która używa typów ogólnych.  
+- Edytowanie dowolnej metody, która używa typów ogólnych.  
   
-- Zmiana, czy deklaracja właściwość lub metoda implementuje interfejs.  
+- Zmiana, czy Deklaracja właściwości lub metody implementuje interfejs.  
   
-- Zmiana modyfikatory dostępu właściwości lub metody (na przykład zmiana `Public` do **prywatnej**).  
+- Zmiana modyfikatorów dostępu właściwości lub metody (na przykład zmiana `Public` na **prywatną**).  
   
-- Usunięcie pola.  
+- Usuwanie pola.  
   
 - Zmiana typu pola.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Zastosowanie zmian w trybie przerwania za pomocą Edytuj i Kontynuuj](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
+ [Instrukcje: stosowanie edycji w trybie przerwania za pomocą Edytuj i Kontynuuj](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
  [Edytuj i kontynuuj (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9a19ebab7b0c820e336965b4020eff2c2f9726cd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659354"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Sprawdzanie poprawności w języku specyficznym dla domeny
@@ -62,7 +62,7 @@ Jako autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczen
 
    2. W Eksploratorze DSL rozwiń węzeł **Edytor** i wybierz pozycję **Walidacja**.
 
-   3. W okno Właściwości ustaw właściwości **Użyj** , aby `true`. Najlepiej ustawić wszystkie te właściwości.
+   3. W okno Właściwości ustaw wartość właściwości przy **użyciu** `true` . Najlepiej ustawić wszystkie te właściwości.
 
    4. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań.
 
@@ -74,11 +74,11 @@ Jako autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczen
    [ValidationState(ValidationState.Enabled)]
    ```
 
-   - Domyślnie ten atrybut również włącza walidację dla klas pochodnych. Jeśli chcesz wyłączyć weryfikację dla określonej klasy pochodnej, możesz użyć `ValidationState.Disabled`.
+   - Domyślnie ten atrybut również włącza walidację dla klas pochodnych. Jeśli chcesz wyłączyć walidację określonej klasy pochodnej, możesz użyć `ValidationState.Disabled` .
 
-4. Dodaj metody walidacji do klas. Każda metoda sprawdzania poprawności może mieć dowolną nazwę, ale ma jeden parametr typu <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.
+4. Dodaj metody walidacji do klas. Każda metoda sprawdzania poprawności może mieć dowolną nazwę, ale ma jeden parametr typu <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext> .
 
-    Musi być poprzedzony prefiksem co najmniej jednego `ValidationMethod` atrybutów:
+    Musi być poprzedzony prefiksem co najmniej jednego `ValidationMethod` atrybutu:
 
    ```csharp
    [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]
@@ -129,13 +129,13 @@ public partial class ParentsHaveChildren
 
  Zwróć uwagę na następujące kwestie dotyczące tego kodu:
 
-- Metody sprawdzania poprawności można dodać do klas domen lub relacji domeny. Kod dla tych typów znajduje się w **Dsl\Generated Code\Domain \*. cs**.
+- Metody sprawdzania poprawności można dodać do klas domen lub relacji domeny. Kod dla tych typów znajduje się w **Dsl\Generated Code\Domain \* . cs**.
 
 - Każda metoda sprawdzania poprawności jest stosowana do każdego wystąpienia klasy i jego podklas. W przypadku relacji domeny każde wystąpienie jest łączem między dwoma elementami modelu.
 
 - Metody walidacji nie są stosowane w żadnej określonej kolejności, a każda metoda nie jest stosowana do wystąpień jej klasy w żadnej przewidywalnej kolejności.
 
-- Zwykle jest to niewłaściwe rozwiązanie do aktualizowania zawartości magazynu przez metodę walidacji, ponieważ spowodowałoby to powstanie niespójnych wyników. Zamiast tego Metoda powinna zgłosić dowolny błąd przez wywołanie `context.LogError`, `LogWarning` lub `LogInfo`.
+- Zwykle jest to niewłaściwe rozwiązanie do aktualizowania zawartości magazynu przez metodę walidacji, ponieważ spowodowałoby to powstanie niespójnych wyników. Zamiast tego Metoda powinna zgłosić dowolny błąd przez wywołanie `context.LogError` `LogWarning` lub `LogInfo` .
 
 - W wywołaniu LogError można podać listę elementów modelu lub linków relacji, które zostaną wybrane, gdy użytkownik kliknie dwukrotnie komunikat o błędzie.
 
@@ -143,10 +143,10 @@ public partial class ParentsHaveChildren
 
   Przykład dotyczy poniższego modelu domeny. Relacja ParentsHaveChildren ma role, które mają nazwy podrzędne i nadrzędne.
 
-  ![Model drzewa rodziny &#45; diagramów definicji DSL](../modeling/media/familyt-person.png "FamilyT_Person")
+  ![Diagram definicji DSL &#45; Model drzewa genealogicznego](../modeling/media/familyt-person.png "FamilyT_Person")
 
 ## <a name="validation-categories"></a>Kategorie walidacji
- W atrybucie <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> należy określić, kiedy ma być wykonywana metoda walidacji.
+ W <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> atrybucie należy określić, kiedy ma być wykonywana metoda walidacji.
 
 |Kategoria|Wykonanie|
 |--------------|---------------|
@@ -180,7 +180,7 @@ public partial class Person
 
  **Agregowanie ograniczeń walidacji.** Aby zastosować weryfikację w przewidywalną kolejności, należy zdefiniować pojedynczą metodę sprawdzania poprawności klasy Owner, na przykład element główny modelu. Ta technika umożliwia również agregowanie wielu raportów o błędach do jednej wiadomości.
 
- Wadą jest to, że połączona Metoda jest mniej łatwa w zarządzaniu i że ograniczenia muszą mieć ten sam `ValidationCategories`. Dlatego zalecamy zachowanie każdego ograniczenia w oddzielnym metodzie, jeśli jest to możliwe.
+ Wadą jest to, że połączona Metoda jest mniej łatwa w zarządzaniu i że ograniczenia muszą mieć taki sam sposób `ValidationCategories` . Dlatego zalecamy zachowanie każdego ograniczenia w oddzielnym metodzie, jeśli jest to możliwe.
 
  **Przekazywanie wartości w pamięci podręcznej kontekstu.** Parametr kontekstowy ma słownik, w którym można umieścić dowolne wartości. Słownik zachowuje się w okresie istnienia przebiegu walidacji. Dana metoda sprawdzania poprawności może na przykład zachować liczbę błędów w kontekście i użyć jej w celu uniknięcia zapełnienia okna błędów powtarzanymi komunikatami. Na przykład:
 
@@ -199,10 +199,10 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  Jeśli ustawisz liczebność roli relacji domeny na 1.. * lub 1.. 1, ale użytkownik nie utworzy linku do tej relacji, zostanie wyświetlony komunikat o błędzie walidacji.
 
- Jeśli na przykład DSL ma klasy Person i miasto, a relacja PersonLivesInTown z relacją **1.. \\** * w roli miasto, a następnie dla każdej osoby, która nie ma miejscowości, zostanie wyświetlony komunikat o błędzie.
+ Jeśli na przykład DSL ma klasy Person i miasto, a relacja PersonLivesInTown z relacją **1.. \\ ** * w roli miasto, a następnie dla każdej osoby, która nie ma miejscowości, zostanie wyświetlony komunikat o błędzie.
 
 ## <a name="running-validation-from-program-code"></a>Uruchamianie walidacji z kodu programu
- Można uruchomić walidację, uzyskując dostęp do lub tworząc ValidationController. Jeśli chcesz, aby błędy były wyświetlane użytkownikowi w oknie błędu, użyj ValidationController, który jest dołączony do DocData diagramu. Na przykład, jeśli piszesz polecenie menu, `CurrentDocData.ValidationController` jest dostępny w klasie zestawu poleceń:
+ Można uruchomić walidację, uzyskując dostęp do lub tworząc ValidationController. Jeśli chcesz, aby błędy były wyświetlane użytkownikowi w oknie błędu, użyj ValidationController, który jest dołączony do DocData diagramu. Na przykład, jeśli piszesz polecenie menu, `CurrentDocData.ValidationController` jest dostępne w klasie zestawu poleceń:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -241,7 +241,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>Uruchamianie walidacji po wystąpieniu zmiany
  Jeśli chcesz mieć pewność, że użytkownik jest ostrzegany natychmiast, jeśli model stanie się nieprawidłowy, możesz zdefiniować zdarzenie magazynu, które uruchamia walidację. Aby uzyskać więcej informacji na temat zdarzeń ze sklepu, zobacz [programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
- Oprócz kodu sprawdzania poprawności Dodaj niestandardowy plik kodu do projektu **DslPackage** , z zawartością podobną do poniższego przykładu. Ten kod używa `ValidationController` dołączonego do dokumentu. Ten kontroler wyświetla błędy walidacji na liście błędów [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Oprócz kodu sprawdzania poprawności Dodaj niestandardowy plik kodu do projektu **DslPackage** , z zawartością podobną do poniższego przykładu. Ten kod używa programu `ValidationController` , który jest dołączony do dokumentu. Ten kontroler wyświetla błędy walidacji na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] liście błędów.
 
 ```csharp
 using System;
@@ -304,7 +304,7 @@ namespace Company.FamilyTree
 
  Procedury obsługi są również wywoływane po wykonaniu operacji Cofnij lub wykonaj ponownie, które mają wpływ na linki lub elementy.
 
-## <a name="custom"></a>Niestandardowe kategorie walidacji
+## <a name="custom-validation-categories"></a><a name="custom"></a> Niestandardowe kategorie walidacji
  Oprócz standardowych kategorii walidacji, takich jak menu i otwarte, można definiować własne kategorie. Można wywołać te kategorie z kodu programu. Użytkownik nie może wywoływać ich bezpośrednio.
 
  Typowym zastosowaniem kategorii niestandardowych jest definiowanie kategorii, która sprawdza, czy model spełnia warunki wstępne określonego narzędzia.
@@ -320,7 +320,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```
 
 > [!NOTE]
-> Można utworzyć prefiks metody z dowolną liczbą atrybutów `[ValidationMethod()]`. Można dodać metodę do kategorii niestandardowych i standardowych.
+> Można utworzyć prefiks metody z dowolną liczbą `[ValidationMethod()]` atrybutów. Można dodać metodę do kategorii niestandardowych i standardowych.
 
  Aby wywołać niestandardowe sprawdzanie poprawności:
 
@@ -332,14 +332,14 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");
 ```
 
-## <a name="alternatives"></a>Alternatywy do walidacji
+## <a name="alternatives-to-validation"></a><a name="alternatives"></a> Alternatywy do walidacji
  Ograniczenia walidacji raportują błędy, ale nie zmieniają modelu. Jeśli zamiast tego chcesz zapobiec nieprawidłowemu modelowi, możesz użyć innych technik.
 
  Jednak te techniki nie są zalecane. Zwykle lepszym rozwiązaniem jest poinformowanie użytkownika o sposobie poprawienia nieprawidłowego modelu.
 
  **Dostosuj zmianę, aby przywrócić prawidłowość modelu.** Na przykład jeśli użytkownik ustawi właściwość powyżej dozwolone maksimum, można zresetować właściwość do wartości maksymalnej. Aby to zrobić, zdefiniuj regułę. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
- **Wycofaj transakcję, Jeśli podjęto próbę nieprawidłowej zmiany.** Dla tego celu można również zdefiniować regułę, ale w niektórych przypadkach można przesłonić procedurę obsługi właściwości **OnValueChanging ()** lub zastąpić metodę, taką jak `OnDeleted().`, aby wycofać transakcję, użyj `this.Store.TransactionManager.CurrentTransaction.Rollback().`, aby uzyskać więcej informacji, zobacz [właściwość domeny Obsługa zmian wartości](../modeling/domain-property-value-change-handlers.md).
+ **Wycofaj transakcję, Jeśli podjęto próbę nieprawidłowej zmiany.** Dla tego celu można również zdefiniować regułę, ale w niektórych przypadkach można przesłonić procedurę obsługi właściwości **OnValueChanging ()** lub zastąpić metodę, na przykład `OnDeleted().` Aby wycofać transakcję, użyj `this.Store.TransactionManager.CurrentTransaction.Rollback().` Aby uzyskać więcej informacji, zobacz [Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md).
 
 > [!WARNING]
 > Upewnij się, że użytkownik wie, że zmiana została skorygowana lub wycofana. Na przykład użyj `System.Windows.Forms.MessageBox.Show("message").`

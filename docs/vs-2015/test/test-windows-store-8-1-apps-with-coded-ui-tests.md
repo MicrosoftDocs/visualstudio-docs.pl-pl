@@ -9,10 +9,10 @@ caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce4c6ceec9489abcd3573c126aefe98a268187c3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660443"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Testowanie aplikacji platformy UWP i 8.1 Store systemu Windows za pomocą kodowanych testów interfejsu użytkownika
@@ -30,9 +30,9 @@ Ten przewodnik służy do tworzenia testów interfejsu użytkownika dla aplikacj
 
      ![Opcje różne XAML](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")
 
-2. Utwórz nowy projekt dla pustej aplikacji ze sklepu Windows w języku XAML przy użyciu C# szablonu Visual lub Visual Basic.
+2. Utwórz nowy projekt dla pustej aplikacji ze sklepu Windows w języku XAML przy użyciu szablonu Visual C# lub Visual Basic.
 
-     ![Utwórz kod XAML pustej aplikacji &#40;w Sklepie Windows&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")
+     ![Tworzenie pustej aplikacji do sklepu Windows &#40;XAML&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")
 
 3. W Eksplorator rozwiązań otwórz MainPage. XAML. Z przybornika przeciągnij kontrolkę Button i kontrolkę TextBox do powierzchni projektowej.
 
@@ -66,7 +66,7 @@ Ten przewodnik służy do tworzenia testów interfejsu użytkownika dla aplikacj
 
 1. Utwórz nowy projekt kodowanego testu interfejsu użytkownika dla aplikacji ze sklepu Windows.
 
-    ![Nowy kodowany interfejs użytkownika TET &#40;aplikacje ze sklepu Windows&#41;](../test/media/cuit-windowsstore-newproject.png "CUIT_WindowsStore_NewProject")
+    ![Nowy zakodowany interfejs użytkownika TET projekt &#40;aplikacji ze sklepu Windows&#41;](../test/media/cuit-windowsstore-newproject.png "CUIT_WindowsStore_NewProject")
 
 2. Wybierz, aby edytować mapę interfejsu użytkownika za pomocą narzędzia krzyżyk.
 
@@ -94,19 +94,19 @@ Ten przewodnik służy do tworzenia testów interfejsu użytkownika dla aplikacj
 
 8. Dodaj potwierdzenie. Zostanie ona użyta w teście, aby sprawdzić, czy wartość jest poprawna.
 
-    ![Wybierz testbox z krzyżykiem&#45;i Dodaj potwierdzenie](../test/media/cuit-windowsstoreapp-textbox-addassertion.png "CUIT_WindowsStoreApp_Textbox_AddAssertion")
+    ![Wybieranie testbox z krzyżykiem i dodawaniem&#45;](../test/media/cuit-windowsstoreapp-textbox-addassertion.png "CUIT_WindowsStoreApp_Textbox_AddAssertion")
 
 9. Dodaj i Wygeneruj kod dla potwierdzenia.
 
      ![Generuj kod dla potwierdzenia TextBox](../test/media/cuit-windowsstoreapp-textbox-generate-assertion.png "CUIT_WindowsStoreApp_Textbox_Generate_Assertion")
 
-10. **Visual C#**
+10. **Visual C #**
 
      W Eksplorator rozwiązań otwórz plik UIMap.Designer.cs, aby wyświetlić dodany kod dla metody Assert i kontrolek.
 
      **Visual Basic**
 
-     W Eksplorator rozwiązań otwórz plik CodedUITest1. vb, a następnie w kodzie metody testowej okno CodedUITestMethod1 () kliknij prawym przyciskiem myszy wywołanie metody assertion, która została automatycznie dodana `Me.UIMap.AssertMethod1()` i wybierz **Przejdź do definicji**. Spowoduje to otwarcie pliku UIMap. Designer. vb w edytorze kodu, dzięki czemu można wyświetlić widok dodany kod dla metody Assert i kontrolek.
+     W Eksplorator rozwiązań otwórz plik CodedUITest1. vb, a następnie w kodzie metody testowej okno CodedUITestMethod1 () kliknij prawym przyciskiem myszy wywołanie metody assertion, która została automatycznie dodana, `Me.UIMap.AssertMethod1()` i wybierz polecenie **Przejdź do definicji**. Spowoduje to otwarcie pliku UIMap. Designer. vb w edytorze kodu, dzięki czemu można wyświetlić widok dodany kod dla metody Assert i kontrolek.
 
     > [!WARNING]
     > Nie należy modyfikować pliku UIMap.designer.cs ani UIMap. Designer. vb bezpośrednio. W takim przypadku zmiany wprowadzone w pliku zostaną nadpisywane przy każdym wygenerowaniu testu.
@@ -134,7 +134,7 @@ Ten przewodnik służy do tworzenia testów interfejsu użytkownika dla aplikacj
     End Sub
     ```
 
-     **Kontrolki**
+     **Formanty**
 
     ```csharp
     #region Properties
@@ -292,7 +292,7 @@ Ten przewodnik służy do tworzenia testów interfejsu użytkownika dla aplikacj
 
      ![Testy zakończone w Eksploratorze testów](../test/media/cuit-windowsstorapp-passedtest.png "CUIT_WindowsStorApp_PassedTest")
 
-## <a name="q--a"></a>p & A
+## <a name="q--a"></a>Pytania i odpowiedzi
 
 - **P: Dlaczego nie widzę opcji rejestrowania kodowanego testu interfejsu użytkownika w oknie dialogowym generowanie kodu dla kodowanego testu interfejsu użytkownika?**
 

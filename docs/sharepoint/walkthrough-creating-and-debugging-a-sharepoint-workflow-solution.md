@@ -17,9 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 65af3cbfc799a90d640579f8eed0e051fd5888f0
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014623"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Przewodnik: Tworzenie i debugowanie rozwiązania przepływu pracy programu SharePoint
@@ -43,7 +44,7 @@ ms.locfileid: "86014623"
 
 - Obsługiwane wersje systemu Microsoft Windows i programu SharePoint.
 
-- Program Visual Studio.
+- Programu Visual Studio.
 
 ## <a name="add-properties-to-the-sharepoint-shared-documents-library"></a>Dodawanie właściwości do biblioteki dokumentów udostępnionych programu SharePoint
  Aby śledzić stan przeglądu dokumentów w bibliotece **dokumenty udostępnione** , utworzysz trzy nowe właściwości dokumentów udostępnionych w naszej witrynie programu SharePoint: `Status` , `Assignee` , i `Review Comments` . Te właściwości są zdefiniowane w bibliotece **dokumenty udostępnione** .
@@ -286,7 +287,7 @@ ms.locfileid: "86014623"
 
 - Aby dowiedzieć się więcej na temat Windows Workflow Foundation działań, zobacz [przestrzeń nazw System. Workflow. Activities](/dotnet/api/system.windows.media.color).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie rozwiązań przepływu pracy programu SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Projekty programu SharePoint i szablony elementów projektu](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

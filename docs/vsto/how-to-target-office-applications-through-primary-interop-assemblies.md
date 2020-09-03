@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 60e351a15af4994d2bf64a800e3019501cf0571d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545772"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Jak: docelowa aplikacja pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych
@@ -51,7 +51,7 @@ ms.locfileid: "85545772"
 
      Nazwa zestawu pojawia się w folderze **References** elementu **Eksplorator rozwiązań**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Podstawowe zestawy międzyoperacyjności pakietu Office](../vsto/office-primary-interop-assemblies.md)
 - [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)
 - [Opracowywanie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)

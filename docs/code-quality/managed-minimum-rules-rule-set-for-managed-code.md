@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 95264aafd2467065ee2bc36d463369f19714dd68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587358"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>Zarządzany minimalny zestaw reguł dla kodu zarządzanego
@@ -24,4 +24,4 @@ Zarządzane reguły minimalne koncentrują się na najważniejszych problemach w
 |[CA1001](../code-quality/ca1001.md)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
 |[CA1821](../code-quality/ca1821.md)|Usuwaj puste finalizatory|
 |[CA2213](../code-quality/ca2213.md)|Pola możliwe do likwidacji należy likwidować|
-|[CA2231](../code-quality/ca2231.md)|Operator przeciążenia jest równy na przesłanianiu `ValueType.Equals`|
+|[CA2231](../code-quality/ca2231.md)|Operator przeciążenia jest równy przy zastępowaniu `ValueType.Equals`|

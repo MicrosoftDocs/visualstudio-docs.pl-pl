@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage::GetData | Dokumentacja firmy Microsoft
+title: 'IEEDataStorage:: GetData | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a58f644a71601b16317c4fe63271f4f816da77d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149297"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
@@ -44,19 +44,19 @@ int GetData(
   
 #### <a name="parameters"></a>Parametry  
  `dataSize`  
- [in] Liczba bajtów do pobrania ( `data` tablicy musi posiadać co najmniej tej liczby bajtów).  
+ podczas Liczba bajtów do pobrania ( `data` Tablica musi zawierać co najmniej następującą liczbę bajtów).  
   
  `sizeGotten`  
- [out] Zwraca liczbę bajtów, które rzeczywiście zostały pobrane.  
+ określoną Zwraca liczbę bajtów pobieranych w rzeczywistości.  
   
  `data`  
- [out w] Tablica do wypełniona żądanych danych.  
+ [in. out] Tablica, która ma zostać wypełniona dla żądanych danych.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Zalecane użycie tej metody jest do pobrania wszystkich bajtów danych do lokalnej tablicy, ponieważ nie istnieje żaden sposób na pominięcie nad bajtów w procesie pobierania. W tym przypadku parametr `dataSize` powinien mieć wartość zwracana przez [getsize —](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) metody.  
+ Zalecanym zastosowaniem tej metody jest pobranie wszystkich bajtów danych do tablicy lokalnej, ponieważ nie ma możliwości pomijania bajtów w procesie pobierania. W tym przypadku parametr `dataSize` powinien być wartością zwracaną przez metodę [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) .  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   

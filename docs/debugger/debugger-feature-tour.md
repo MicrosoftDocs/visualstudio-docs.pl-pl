@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffaeff850c739cd81569a88ae980acf837c413c1
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184214"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Najpierw Spójrz na debuger programu Visual Studio
@@ -37,7 +37,7 @@ Naciśnij klawisz **F5** (**Debuguj > Rozpocznij debugowanie**) lub przycisk **R
 
 Punkty przerwania są przydatną funkcją, gdy znasz wiersz kodu lub sekcję kodu, który chcesz szczegółowo sprawdzić.
 
-## <a name="navigate-code-in-the-debugger-using-step-commands"></a><a name="navigate"></a>Nawigowanie po kodzie w debugerze przy użyciu poleceń kroków
+## <a name="navigate-code-in-the-debugger-using-step-commands"></a><a name="navigate"></a> Nawigowanie po kodzie w debugerze przy użyciu poleceń kroków
 
 Udostępniamy skróty klawiaturowe dla większości poleceń, ponieważ umożliwiają one Szybkie nawigowanie po kodzie aplikacji. (Równoważne polecenia, takie jak polecenia menu, są wyświetlane w nawiasach).
 
@@ -183,7 +183,7 @@ Możesz kliknąć dwukrotnie wiersz kodu, aby przejść do tego kodu źródłowe
 
 Możesz również użyć menu dostępnych po kliknięciu prawym przyciskiem myszy w oknie **stos wywołań** , aby wykonać inne czynności. Na przykład można wstawić punkty przerwania do określonych funkcji, ponownie uruchomić aplikację przy użyciu polecenia **Uruchom do kursora**, a następnie przejrzeć kod źródłowy. Zobacz [jak: badanie stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).
 
-## <a name="examine-an-exception"></a><a name="exception"></a>Badanie wyjątku
+## <a name="examine-an-exception"></a><a name="exception"></a> Badanie wyjątku
 
 Gdy aplikacja zgłosi wyjątek, debuger przeprowadzi Cię do wiersza kodu, który wywołał wyjątek.
 

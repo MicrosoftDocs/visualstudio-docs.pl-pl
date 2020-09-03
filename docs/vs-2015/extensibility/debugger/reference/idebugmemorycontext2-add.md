@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Add | Dokumentacja firmy Microsoft
+title: 'IDebugMemoryContext2:: Add | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,10 +14,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2b1b4b236b438d5ff94120c00952d5cd3adfd590
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164085"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
@@ -43,18 +43,18 @@ int Add(
   
 #### <a name="parameters"></a>Parametry  
  `dwCount`  
- [in] Wartość do dodania do bieżącego kontekstu.  
+ podczas Wartość, która ma zostać dodana do bieżącego kontekstu.  
   
  `ppMemCxt`  
- [out] Zwraca nowy [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiektu.  
+ określoną Zwraca nowy obiekt [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Kontekst pamięci nie jest adresem, dlatego dodanie wartości do adresu tworzy nowy adres, który wymaga nowy interfejs kontekstu.  
+ Kontekst pamięci jest adresem, więc dodanie wartości do adresu powoduje utworzenie nowego adresu, który wymaga nowego interfejsu kontekstu.  
   
- Ta metoda zawsze musi mieć nowy kontekst, nawet jeśli otrzymany adres znajduje się poza obszar pamięci skojarzone z tym kontekstem. Jedynym wyjątkiem jest, jeśli nie pamięć może być przydzielenia w nowym kontekście lub `ppMemCxt` jest wartością null (jest to błąd).  
+ Ta metoda musi zawsze generować nowy kontekst, nawet jeśli otrzymany adres znajduje się poza przestrzenią pamięci skojarzoną z tym kontekstem. Jedynym wyjątkiem jest to, że nie można przydzielić pamięci dla nowego kontekstu lub jeśli `ppMemCxt` jest wartością null (która jest błędem).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

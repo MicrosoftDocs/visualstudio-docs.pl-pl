@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7ede1cb4faa437d9cff8bd1239f9c271112ccf72
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381707"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Instrukcje: używanie technologii ClickOnce do wdrażania aplikacji, które mogą być uruchamiane na wielu wersjach programu .NET Framework
@@ -61,7 +61,7 @@ Aplikację, która jest przeznaczona dla wielu wersji .NET Framework, można wdr
     |4 pełne|\<framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />|
     |Klient 3,5|\<framework targetVersion="3.5" profile="Client" supportedRuntime="2.0.50727" />|
     |3,5 pełne|\<framework targetVersion="3.5" profile="Full" supportedRuntime="2.0.50727" />|
-    |3.0|\<framework targetVersion="3.0" supportedRuntime="2.0.50727" />|
+    |3,0|\<framework targetVersion="3.0" supportedRuntime="2.0.50727" />|
 
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Aby zmienić plik app.config, aby wyświetlić listę zgodnych wersji środowiska uruchomieniowego .NET Framework
 
@@ -104,7 +104,7 @@ Aplikację, która jest przeznaczona dla wielu wersji .NET Framework, można wdr
 
 ## <a name="see-also"></a>Zobacz też
 - [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [\<compatibleFrameworks>postaci](../deployment/compatibleframeworks-element-clickonce-deployment.md)
-- [\<dependency>postaci](../deployment/dependency-element-clickonce-application.md)
+- [\<compatibleFrameworks> postaci](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<dependency> postaci](../deployment/dependency-element-clickonce-application.md)
 - [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Schemat pliku konfiguracji](/dotnet/framework/configure-apps/file-schema/index)

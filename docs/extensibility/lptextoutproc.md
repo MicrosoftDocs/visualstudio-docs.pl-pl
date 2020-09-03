@@ -1,5 +1,5 @@
 ---
-title: LPTEXTOUTPROC | Dokumenty firmy Microsoft
+title: LPTEXTOUTPROC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,19 +17,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 38c3e8263b9a30058c2de019e5e92160b716aa71
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702790"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
-Gdy użytkownik wykonuje operację kontroli źródła z wewnątrz zintegrowanego środowiska programistycznego (IDE), wtyczka kontroli źródła może chcieć przekazać komunikaty o błędzie lub stanie związane z operacją. W tym celu wtyczka może wyświetlać własne pola komunikatów. Jednak dla bardziej bezproblemowej integracji, dodatek można przekazać ciągi do IDE, który następnie wyświetla je w jego macierzysty sposób wyświetlania informacji o stanie. Mechanizm do tego `LPTEXTOUTPROC` jest wskaźnik funkcji. IDE implementuje tę funkcję (opisaną bardziej szczegółowo poniżej) do wyświetlania błędów i stanu.
+Gdy użytkownik wykonuje operację kontroli źródła z wewnątrz zintegrowanego środowiska programistycznego (IDE), wtyczka do kontroli źródła może chcieć przekazać komunikaty o błędach lub stanie dotyczące operacji. Wtyczka może wyświetlać własne okna komunikatów do tego celu. Jednak w celu zapewnienia bardziej bezproblemowej integracji wtyczka może przekazywać ciągi do środowiska IDE, a następnie wyświetlać je w natywnym sposobie wyświetlania informacji o stanie. Mechanizmem tego jest `LPTEXTOUTPROC` wskaźnik funkcji. IDE implementuje tę funkcję (szczegółowo opisano poniżej) w celu wyświetlenia błędu i stanu.
 
-IDE przekazuje do wtyczki kontroli źródła wskaźnik funkcji do `lpTextOutProc` tej funkcji, jako parametr, podczas wywoływania [SccOpenProject](../extensibility/sccopenproject-function.md). Podczas operacji SCC, na przykład w środku wywołania [SccGet](../extensibility/sccget-function.md) obejmujące wiele plików, wtyczka może wywołać `LPTEXTOUTPROC` funkcję, okresowo przekazując ciągi do wyświetlenia. IDE może wyświetlać te ciągi na pasku stanu, w oknie danych wyjściowych lub w osobnym oknie komunikatu, odpowiednio. Opcjonalnie IDE może być w stanie wyświetlić niektóre komunikaty za pomocą przycisku **Anuluj.** Dzięki temu użytkownik może anulować operację i daje IDE możliwość przekazania tych informacji z powrotem do dodatku plug-in.
+IDE przechodzi do wtyczki kontroli źródła, która jest wskaźnikiem funkcji do tej funkcji, jako `lpTextOutProc` parametr podczas wywoływania [SccOpenProject](../extensibility/sccopenproject-function.md). Podczas operacji SCC, na przykład w trakcie wywołania [SccGet](../extensibility/sccget-function.md) obejmującego wiele plików, wtyczka może wywołać `LPTEXTOUTPROC` funkcję, okresowo przekazując ciągi do wyświetlenia. IDE może wyświetlać te ciągi na pasku stanu, w oknie danych wyjściowych lub w osobnym oknie komunikatu, zgodnie z potrzebami. Opcjonalnie IDE może być w stanie wyświetlić pewne komunikaty z przyciskiem **Anuluj** . Dzięki temu użytkownik może anulować operację i zapewnia IDE możliwość przekazania tych informacji z powrotem do wtyczki.
 
-## <a name="signature"></a>Sygnatura
+## <a name="signature"></a>Podpis
  Funkcja wyjściowa IDE ma następujący podpis:
 
 ```cpp
@@ -43,37 +43,37 @@ typedef LONG (*LPTEXTOUTPROC) (
 
 display_string
 
-Ciąg tekstowy do wyświetlenia. Ten ciąg nie powinien być zakończony z powrotem karetki lub posuwu wiersza.
+Ciąg tekstowy do wyświetlenia. Ten ciąg nie powinien kończyć się znakiem powrotu karetki ani znakiem wysuwu wiersza.
 
 mesg_type
 
-Typ wiadomości. W poniższej tabeli wymieniono obsługiwane wartości tego parametru.
+Typ komunikatu. Poniższa tabela zawiera listę obsługiwanych wartości tego parametru.
 
 |Wartość|Opis|
 |-----------|-----------------|
-|`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|Komunikat jest uważany za informacje, ostrzeżenie lub błąd.|
-|`SCC_MSG_STATUS`|Komunikat pokazuje stan i może być wyświetlany na pasku stanu.|
-|`SCC_MSG_DOCANCEL`|Wysyłane bez ciągu wiadomości.|
-|`SCC_MSG_STARTCANCEL`|Rozpoczyna wyświetlanie przycisku **Anuluj.**|
-|`SCC_MSG_STOPCANCEL`|Zatrzymuje wyświetlanie przycisku **Anuluj.**|
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Pyta IDE, czy operacja w tle ma `SCC_MSG_RTN_CANCEL` zostać anulowana: IDE zwraca, jeśli operacja została anulowana; w przeciwnym `SCC_MSG_RTN_OK`razie zwraca plik . Parametr `display_string` jest rzutowany jako [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) struktury, która jest dostarczana przez wtyczkę kontroli źródła.|
-|`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Informuje IDE o pliku, zanim zostanie pobrany z kontroli wersji. Parametr `display_string` jest rzutowy jako [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) struktury, który jest dostarczany przez wtyczkę kontroli źródła.|
-|`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Informuje IDE o pliku po pobraniu z kontroli wersji. Parametr `display_string` jest rzutowy jako [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) struktury, który jest dostarczany przez wtyczkę kontroli źródła.|
-|`SCC_MSG_BACKGROUND_ON_MESSAGE`|Informuje IDE o bieżącym stanie operacji w tle. Parametr `display_string` jest rzutowy jako struktura [SccMsgDataOnMessage,](#LinkSccMsgDataOnMessage) która jest dostarczana przez wtyczkę formantu źródła.|
+|`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|Komunikat jest traktowany jako informacja, ostrzeżenie lub błąd.|
+|`SCC_MSG_STATUS`|Komunikat przedstawia stan i może być wyświetlany na pasku stanu.|
+|`SCC_MSG_DOCANCEL`|Wysyłany bez ciągu komunikatu.|
+|`SCC_MSG_STARTCANCEL`|Zaczyna wyświetlać przycisk **Anuluj** .|
+|`SCC_MSG_STOPCANCEL`|Kończy wyświetlanie przycisku **Anuluj** .|
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Pyta o środowisko IDE w przypadku anulowania operacji w tle: IDE zwraca `SCC_MSG_RTN_CANCEL` Jeśli operacja została anulowana; w przeciwnym razie zwraca wartość `SCC_MSG_RTN_OK` . `display_string`Parametr jest rzutowany jako struktura [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) , która jest dostarczana przez wtyczkę kontroli źródła.|
+|`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Informuje środowisko IDE o pliku przed jego pobraniem z kontroli wersji. `display_string`Parametr jest rzutowany jako struktura [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) , która jest dostarczana przez wtyczkę kontroli źródła.|
+|`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Informuje środowisko IDE o pliku po jego pobraniu z kontroli wersji. `display_string`Parametr jest rzutowany jako struktura [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) , która jest dostarczana przez wtyczkę kontroli źródła.|
+|`SCC_MSG_BACKGROUND_ON_MESSAGE`|Informuje IDE o bieżącym stanie operacji w tle. `display_string`Parametr jest rzutowany jako struktura [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) , która jest dostarczana przez wtyczkę kontroli źródła.|
 
 ## <a name="return-value"></a>Wartość zwracana
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_MSG_RTN_OK|Ciąg został wyświetlony lub operacja została ukończona pomyślnie.|
+|SCC_MSG_RTN_OK|Ten ciąg został wyświetlony lub operacja została ukończona pomyślnie.|
 |SCC_MSG_RTN_CANCEL|Użytkownik chce anulować operację.|
 
 ## <a name="example"></a>Przykład
- Załóżmy, że IDE wywołuje [SccGet](../extensibility/sccget-function.md) z dwudziestu nazw plików. Wtyczka kontroli źródła chce zapobiec anulowaniu operacji w środku pliku. Po otrzymaniu każdego pliku `lpTextOutProc`wywołuje , przekazując go informacje o `SCC_MSG_DOCANCEL` stanie każdego pliku i wysyła wiadomość, jeśli nie ma stanu do raportu. Jeśli w dowolnym momencie dodatek otrzyma `SCC_MSG_RTN_CANCEL` wartość zwracaną z IDE, natychmiast anuluje operację get, dzięki czemu nie są pobierane żadne pliki.
+ Załóżmy, że IDE wywołuje [SccGet](../extensibility/sccget-function.md) z dwudziestu nazw plików. Wtyczka do kontroli źródła chce uniemożliwić anulowanie operacji w trakcie pobierania pliku. Gdy pobierany jest każdy plik, wywołuje `lpTextOutProc` on informacje o stanie każdego pliku i wysyła komunikat, jeśli nie `SCC_MSG_DOCANCEL` ma stanu do raportowania. Jeśli w dowolnym momencie wtyczka otrzymuje wartość zwracaną z `SCC_MSG_RTN_CANCEL` IDE, natychmiast Anuluje operację pobierania, aby nie pobrano więcej plików.
 
 ## <a name="structures"></a>Struktury
 
-### <a name="sccmsgdataiscancelled"></a><a name="LinkSccMsgDataIsCancelled"></a>SccMsgDataIsCancelled
+### <a name="sccmsgdataiscancelled"></a><a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled
 
 ```cpp
 typedef struct {
@@ -81,9 +81,9 @@ typedef struct {
 } SccMsgDataIsCancelled;
 ```
 
- Ta struktura jest `SCC_MSG_BACKGROUND_IS_CANCELLED` wysyłana z wiadomością. Służy do przekazywania identyfikator operacji w tle, który został anulowany.
+ Ta struktura jest wysyłana wraz z `SCC_MSG_BACKGROUND_IS_CANCELLED` wiadomością. Służy do przekazywania informacji o IDENTYFIKATORze operacji w tle, która została anulowana.
 
-### <a name="sccmsgdataonbeforegetfile"></a><a name="LinkSccMsgDataOnBeforeGetFile"></a>SccMsgDataOnBeforeGetFile
+### <a name="sccmsgdataonbeforegetfile"></a><a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile
 
 ```cpp
 typedef struct {
@@ -92,9 +92,9 @@ typedef struct {
 } SccMsgDataOnBeforeGetFile;
 ```
 
- Ta struktura jest `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` wysyłana z wiadomością. Służy do przekazywania nazwy pliku, który ma zostać pobrany, oraz identyfikator operacji w tle, która wykonuje pobieranie.
+ Ta struktura jest wysyłana wraz z `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` wiadomością. Służy do przekazywania nazwy pliku do pobrania i identyfikatora operacji w tle, która wykonuje pobieranie.
 
-### <a name="sccmsgdataonaftergetfile"></a><a name="LinkSccMsgDataOnAfterGetFile"></a>SccMsgDataOnAfterGetFile
+### <a name="sccmsgdataonaftergetfile"></a><a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile
 
 ```cpp
 typedef struct {
@@ -104,9 +104,9 @@ typedef struct {
 } SccMsgDataOnAfterGetFile;
 ```
 
- Ta struktura jest `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` wysyłana z wiadomością. Służy do komunikowania wynik pobierania określonego pliku, jak również identyfikator operacji w tle, który nie pobierania. Zobacz zwracane wartości [dla SccGet](../extensibility/sccget-function.md) dla tego, co można podać w wyniku.
+ Ta struktura jest wysyłana wraz z `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` wiadomością. Służy do przekazywania wyniku pobrania określonego pliku, a także identyfikatora operacji w tle, która wykonała pobieranie. Zobacz wartości zwracane dla [SccGet](../extensibility/sccget-function.md) , co może być wyrażone jako wynik.
 
-### <a name="sccmsgdataonmessage"></a><a name="LinkSccMsgDataOnMessage"></a>SccMsgDataOnMessage
+### <a name="sccmsgdataonmessage"></a><a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage
 
 ```cpp
 typedef struct {
@@ -116,10 +116,10 @@ typedef struct {
 } SccMsgDataOnMessage;
 ```
 
- Ta struktura jest `SCC_MSG_BACKGROUND_ON_MESSAGE` wysyłana z wiadomością. Służy do komunikowania bieżącego stanu operacji w tle. Stan jest wyrażony jako ciąg, który ma być `bIsError` wyświetlany przez IDE i`TRUE` wskazuje ważność wiadomości ( dla komunikatu o błędzie; `FALSE` ostrzeżenia lub komunikatu informacyjnego). Podano również identyfikator operacji w tle wysyłającej stan.
+ Ta struktura jest wysyłana wraz z `SCC_MSG_BACKGROUND_ON_MESSAGE` wiadomością. Służy do przekazywania bieżącego stanu operacji w tle. Stan jest wyrażony jako ciąg, który ma być wyświetlany przez IDE, i `bIsError` wskazuje ważność komunikatu ( `TRUE` dla komunikatu o błędzie; `FALSE` ostrzeżenie lub komunikat informacyjny). Zostanie również określony identyfikator operacji w tle wysyłającej stan.
 
 ## <a name="code-example"></a>Przykładowy kod
- Oto krótki przykład wywołania, `LPTEXTOUTPROC` `SCC_MSG_BACKGROUND_ON_MESSAGE` aby wysłać wiadomość, pokazując, jak oddać strukturę dla połączenia.
+ Oto krótki przykład wywołania metody `LPTEXTOUTPROC` wysyłania `SCC_MSG_BACKGROUND_ON_MESSAGE` komunikatu, pokazujący, jak rzutować strukturę dla wywołania.
 
 ```cpp
 LONG SendStatusMessage(

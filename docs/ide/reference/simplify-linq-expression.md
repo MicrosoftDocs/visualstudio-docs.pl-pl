@@ -1,5 +1,5 @@
 ---
-title: Uprość wyrażenie LINQ
+title: Upraszczanie wyrażenia LINQ
 ms.date: 08/12/2020
 ms.topic: reference
 author: m-redding
@@ -10,13 +10,13 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 04485d6ce67c822fd0620bd63f3557851db6dbb9
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88251319"
 ---
-# <a name="simplify-linq-expression"></a>Uprość wyrażenie LINQ
+# <a name="simplify-linq-expression"></a>Upraszczanie wyrażenia LINQ
 
 To Refaktoryzacja dotyczy:
 
@@ -34,7 +34,7 @@ To Refaktoryzacja dotyczy:
 2. Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
 3. Wybierz polecenie **Uprość wyrażenie LINQ**
 
-   ![Konwertuj typeof na nameof](media/simplify-linq-expression.png)
+   ![Konwertuj element typeof na element nameof](media/simplify-linq-expression.png)
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Tworzenie niestandardowego edytora | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Tworzenie edytora niestandardowego | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,42 +11,42 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4b1b4e59e43a4a5aeb129464a34b96ef3f665e72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148872"
 ---
-# <a name="walkthrough-creating-a-custom-editor"></a>Przewodnik: Tworzenie edytora niestandardowego
+# <a name="walkthrough-creating-a-custom-editor"></a>Przewodnik: tworzenie edytora niestandardowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Szablon projektu pakietu VSPackage można utworzyć proste edytora niestandardowego w języku C++.  Szablon projektu pakietu VSPackage już nie obsługuje projektów C# lub Visual Basic. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+Szablon projektu pakietu VSPackage może utworzyć prosty edytor niestandardowy w języku C++.  Szablon projektu pakietu VSPackage nie obsługuje już projektów C# ani Visual Basic. Aby uzyskać więcej informacji, zobacz [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Aby wykonać czynności opisane w tym przewodniku, należy zainstalować Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="the-visual-studio-package-project-template"></a>Szablon projektu pakietu Visual Studio  
- Szablon projektu pakietu Visual Studio można znaleźć w **nowy projekt** okna dialogowego z folderu rozszerzeń języka C++  
+## <a name="the-visual-studio-package-project-template"></a>Szablon projektu pakietu programu Visual Studio  
+ Szablon projektu pakietu programu Visual Studio można znaleźć w oknie dialogowym **Nowy projekt** w folderze rozszerzalności C++  
   
-### <a name="to-create-a-vspackage-using-the-visual-studio-package-template"></a>Do utworzenia pakietu VSPackage przy użyciu szablonu pakiet rozszerzeń Visual Studio  
+### <a name="to-create-a-vspackage-using-the-visual-studio-package-template"></a>Aby utworzyć pakietu VSPackage przy użyciu szablonu pakietu programu Visual Studio  
   
-1. Utwórz projekt za pomocą szablonu pakietu Visual Studio.  
+1. Utwórz projekt z szablonem pakietu programu Visual Studio.  
   
-2. Wybierz **edytora niestandardowego** opcji, a następnie kliknij przycisk **dalej**. **Opcji edytora** zostanie wyświetlona strona.  
+2. Wybierz opcję **Edytor niestandardowy** , a następnie kliknij przycisk **dalej**. Zostanie wyświetlona strona **Opcje edytora** .  
   
-3. Wpisz nazwę w edytorze **nazwa edytora** pole. Wpisz rozszerzenie pliku, który ma zostać skojarzony z edytora w **rozszerzenie pliku** pole. Edytor jest dostępna dla plików za pomocą tego rozszerzenia. Rozszerzenie pliku jest zarejestrowane dla programu Visual Studio, nie dla Windows. Wpisz nazwę pliku domyślne dla nowych dokumentów utworzonych za pomocą edytora w **domyślnej nazwy pliku** pole.  
+3. W polu **Nazwa edytora** wpisz nazwę edytora. Wpisz rozszerzenie pliku, które ma być skojarzone z edytorem w polu **rozszerzenie pliku** . Edytor jest dostępny dla plików z tym rozszerzeniem. Rozszerzenie pliku jest zarejestrowane wyłącznie dla programu Visual Studio, a nie dla systemu Windows. W polu **Domyślna nazwa pliku** wpisz domyślną nazwę pliku dla nowych dokumentów utworzonych za pomocą edytora.  
   
-4. Kliknij przycisk **Zakończ** do utworzenia Twojego pakietu VSPackage w podanym folderze.  
+4. Kliknij przycisk **Zakończ** , aby utworzyć pakietu VSPackage w określonym folderze.  
   
-### <a name="to-test-your-custom-editor"></a>Aby przetestować niestandardowego edytora  
+### <a name="to-test-your-custom-editor"></a>Aby przetestować Edytor niestandardowy  
   
-1. Na **pliku** menu wskaż **New** a następnie kliknij przycisk **pliku**.  
+1. W menu **plik** wskaż polecenie **Nowy** , a następnie kliknij polecenie **plik**.  
   
-2. W **zainstalowane szablony** okienku **nowy plik** okno dialogowe, wybierz szablon pliku, a następnie plik typ właśnie zostało zarejestrowane.  
+2. W okienku **zainstalowane szablony** okna dialogowego **nowy plik** wybierz szablon pliku, a następnie typ pliku, który właśnie zarejestrowano.  
   
-3. Kliknij przycisk **Otwórz** do wyświetlania i edytowania dokumentu.  
+3. Kliknij przycisk **Otwórz** , aby wyświetlić i edytować dokument.  
   
-     Edytor obsługuje operacje kopiowania i wklejania, Znajdź i Zamień i open i obciążenia.  
+     Edytor obsługuje operacje wycinania i wklejania, znajdowania i zastępowania oraz otwierania i ładowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Pakiety VSPackage](../extensibility/internals/vspackages.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c272906aa402c124b98e6b9f5556d8c825ee963
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660483"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
@@ -28,7 +28,7 @@ Sztuczne firmy Microsoft ułatwiają odizolowanie testowanego kodu przez zastąp
 
   ![Elementy sztuczne zastępują inne składniki](../test/media/fakes-2.png "Elementy sztuczne — 2")
 
-  **Requirements**
+  **Wymagania**
 
 - Visual Studio Enterprise
 
@@ -43,7 +43,7 @@ Sztuczne firmy Microsoft ułatwiają odizolowanie testowanego kodu przez zastąp
 
  **Metody statyczne, typy zapieczętowane.** Możesz używać wycinków tylko do implementacji interfejsów. Tym samym typy wycinka nie mogą być stosowane dla metod statycznych, metod niewirtualnych, zaplombowanych metod wirtualnych, metod w zaplombowanych typach itd.
 
- **Typy wewnętrzne.** Zarówno elementy pośredniczące, jak i podkładki mogą być używane z wewnętrznymi typami, które są dostępne przy użyciu atrybutu zestawu <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>.
+ **Typy wewnętrzne.** Zarówno elementy zastępcze, jak i podkładki mogą być używane z wewnętrznymi typami, które są dostępne za pomocą atrybutu Assembly <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> .
 
  **Metody prywatne.** Podkładki zastępują wywołania metod prywatnych, jeśli widoczne są wszystkie typy podpisów metody. Wycinki kodu mogą zastąpić jedynie metody widoczne.
 
@@ -51,7 +51,7 @@ Sztuczne firmy Microsoft ułatwiają odizolowanie testowanego kodu przez zastąp
 
  Zasadniczo zaleca się używanie typów wycinków w celu odseparowania od zależności w ramach własnej bazy kodów. Można to zrobić, ukrywając składniki za interfejsami. Typy podkładek można wykorzystywać do izolowania od składników innych firm, które nie mają sprawdzalnego API.
 
-## <a name="stubs"></a>Wprowadzenie do wycinków
+## <a name="getting-started-with-stubs"></a><a name="stubs"></a> Wprowadzenie do wycinków
  Aby uzyskać bardziej szczegółowy opis, zobacz [Używanie wycinków do izolowania części aplikacji od siebie do testowania jednostkowego](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
 1. **Wsuń interfejsy**
@@ -141,14 +141,14 @@ Sztuczne firmy Microsoft ułatwiają odizolowanie testowanego kodu przez zastąp
 
     ```
 
-     Szczególna część Magic jest klasą `StubIStockFeed`. Dla każdego interfejsu w zestawie, do którego istnieje odwołanie, mechanizm Microsoft Fakes generuje klasę zastępczą. Nazwa klasy zastępczej jest pochodną nazwy interfejsu, z "`Fakes.Stub`" jako prefiksem i dołączonymi nazwami typu parametru.
+     Specjalna część Magic jest klasą `StubIStockFeed` . Dla każdego interfejsu w zestawie, do którego istnieje odwołanie, mechanizm Microsoft Fakes generuje klasę zastępczą. Nazwa klasy zastępczej pochodzi od nazwy interfejsu, z " `Fakes.Stub` " jako prefiksem i dołączonymi nazwami typu parametru.
 
      Wycinki kodu są generowane także dla metod pobierających i ustawiających właściwości, dla zdarzeń i metod ogólnych. Aby uzyskać więcej informacji, zobacz [Używanie wycinków do izolowania części aplikacji od siebie do testowania jednostkowego](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
-## <a name="shims"></a>Wprowadzenie do podkładki
+## <a name="getting-started-with-shims"></a><a name="shims"></a> Wprowadzenie do podkładki
  (Aby uzyskać bardziej szczegółowy opis, zobacz [Używanie podkładki do izolowania aplikacji od innych zestawów do testowania jednostek](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)).
 
- Załóżmy, że składnik zawiera wywołania do `DateTime.Now`:
+ Załóżmy, że składnik zawiera wywołania `DateTime.Now` :
 
 ```csharp
 // Code under test:
@@ -159,13 +159,13 @@ Sztuczne firmy Microsoft ułatwiają odizolowanie testowanego kodu przez zastąp
 
 ```
 
- Podczas testowania chcesz zmienić podkładkę dla właściwości `Now`, ponieważ rzeczywista wersja niewygodnie zwraca inną wartość w każdym wywołaniu.
+ Podczas testowania chcesz zmienić podkładkę na `Now` Właściwość, ponieważ rzeczywista wersja niewygodnie zwraca inną wartość przy każdym wywołaniu.
 
  Aby użyć podkładek, nie trzeba modyfikować kodu aplikacji ani pisać go w określony sposób.
 
 1. **Dodaj zestaw elementów sztucznych**
 
-    W oknie Eksplorator rozwiązań otwórz odniesienia projektu testu jednostkowego i wybierz odwołanie do zestawu zawierającego metodę, którą chcesz substytuować. W tym przykładzie Klasa `DateTime` jest w **pliku System. dll**.  Aby wyświetlić odwołania w projekcie Visual Basic, wybierz **Pokaż wszystkie pliki**.
+    W oknie Eksplorator rozwiązań otwórz odniesienia projektu testu jednostkowego i wybierz odwołanie do zestawu zawierającego metodę, którą chcesz substytuować. W tym przykładzie `DateTime` Klasa jest w **System.dll**.  Aby wyświetlić odwołania w projekcie Visual Basic, wybierz **Pokaż wszystkie pliki**.
 
     Wybierz pozycję **Dodaj zestaw**elementów sztucznych.
 
@@ -230,9 +230,9 @@ Sztuczne firmy Microsoft ułatwiają odizolowanie testowanego kodu przez zastąp
    End Class
    ```
 
-    Nazwy klas podkładek są tworzone przez dodanie prefiksu `Fakes.Shim` do oryginalnej nazwy typu. Nazwy parametrów są dołączane do nazwy metody. (Nie trzeba dodawać żadnego odwołania do zestawu do System. resztuczne).
+    Nazwy klas podkładków składają się z prefiksu `Fakes.Shim` do oryginalnej nazwy typu. Nazwy parametrów są dołączane do nazwy metody. (Nie trzeba dodawać żadnego odwołania do zestawu do System. resztuczne).
 
-   W poprzednim przykładzie podkładka jest wykorzystana do metody statycznej. Aby użyć podkładki dla metody wystąpienia, należy napisać `AllInstances` między nazwą typu a nazwą metody:
+   W poprzednim przykładzie podkładka jest wykorzystana do metody statycznej. Aby użyć podkładki dla metody wystąpienia, napisz `AllInstances` między nazwą typu a nazwą metody:
 
 ```
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...

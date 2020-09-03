@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomViewer::DisplayValue | Dokumenty firmy Microsoft
+title: IDebugCustomViewer::D isplayValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 32e444d0d6a30484f708d3001b95e7a71856edd5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732440"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
@@ -47,24 +47,24 @@ int DisplayValue(
 
 ## <a name="parameters"></a>Parametry
 `hwnd`\
-[w] Okno nadrzędne
+podczas Okno nadrzędne
 
 `dwID`\
-[w] Identyfikator dla niestandardowych widzów obsługujących więcej niż jeden typ.
+podczas Identyfikator dla podglądów niestandardowych, które obsługują więcej niż jeden typ.
 
 `pHostServices`\
-[w] Zastrzeżone. Zawsze ustawiona na wartość null.
+podczas Rezerwacj. Zawsze ustawiono wartość null.
 
 `pDebugProperty`\
-[w] Interfejs, który może służyć do pobierania wartości, które mają być wyświetlane.
+podczas Interfejs, którego można użyć do pobrania wartości do wyświetlenia.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli to się powiedzie, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wyświetlacz jest "modalny", ponieważ ta metoda utworzy niezbędne okno, wyświetli wartość, czeka na dane wejściowe i zamknie okno, a wszystko to przed powrotem do wywołującego. Oznacza to, że metoda musi obsługiwać wszystkie aspekty wyświetlania wartości właściwości, od tworzenia okna dla danych wyjściowych, do oczekiwania na dane wejściowe użytkownika, do zniszczenia okna.
+ Wyświetlanie jest "modalne" w tej metodzie, która spowoduje utworzenie niezbędnego okna, wyświetlenie wartości, oczekiwanie na dane wejściowe i zamknięcie okna, przed powrotem do obiektu wywołującego. Oznacza to, że metoda musi obsługiwać wszystkie aspekty wyświetlania wartości właściwości, od tworzenia okna dla danych wyjściowych, aby oczekiwać na dane wejściowe użytkownika w celu zniszczenia okna.
 
- Aby obsługiwać zmianę wartości na danym obiekcie [IDebugProperty3,](../../../extensibility/debugger/reference/idebugproperty3.md) można użyć [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) metody , jeśli wartość może być wyrażona jako ciąg. W przeciwnym razie konieczne jest utworzenie interfejsu niestandardowego — wyłącznego dla oceniającego wyrażenie implementującego tę `DisplayValue` metodę — na tym samym obiekcie, który implementuje `IDebugProperty3` interfejs. Ten interfejs niestandardowy dostarcza metod zmiany danych o dowolnym rozmiarze lub złożoności.
+ Aby zapewnić obsługę zmiany wartości w danym obiekcie [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) , można użyć metody [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) — Jeśli wartość może być wyrażona jako ciąg. W przeciwnym razie konieczne jest utworzenie niestandardowego interfejsu — wyłącznie dla ewaluatora wyrażeń implementujących tę `DisplayValue` metodę — w tym samym obiekcie, który implementuje `IDebugProperty3` interfejs. Ten niestandardowy interfejs udostępnia metody zmiany danych o dowolnym rozmiarze lub złożoności.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)

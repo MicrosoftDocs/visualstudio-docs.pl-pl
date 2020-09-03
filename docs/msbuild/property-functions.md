@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183655"
 ---
 # <a name="property-functions"></a>Funkcje właściwości
@@ -169,14 +169,14 @@ Poniżej znajduje się lista funkcji właściwości programu MSBuild:
 |int BitwiseAnd (int First, int Second)|Wykonaj bitowe `AND` od pierwszego i drugiego (pierwszy & sekundę).|
 |int BitwiseXor (int First, int Second)|Wykonaj bitowe `XOR` od pierwszego i drugiego (pierwszy ^ s).|
 |int BitwiseNot (najpierw int)|Wykonaj wartość bitową `NOT` (po pierwszej).|
-|bool IsOsPlatform (ciąg platformString)|Określ, czy bieżąca platforma systemu operacyjnego to `platformString` . `platformString`musi być członkiem <xref:System.Runtime.InteropServices.OSPlatform> .|
+|bool IsOsPlatform (ciąg platformString)|Określ, czy bieżąca platforma systemu operacyjnego to `platformString` . `platformString` musi być członkiem <xref:System.Runtime.InteropServices.OSPlatform> .|
 |bool IsOSUnixLike ()|Ma wartość true, jeśli bieżący system operacyjny jest systemem UNIX.|
 |String NormalizePath (ciąg parametrów [] ścieżka)|Pobiera kanoniczną pełną ścieżkę podanej ścieżki i zapewnia, że zawiera poprawne znaki separatora katalogów dla bieżącego systemu operacyjnego.|
 |String NormalizeDirectory (ciąg parametrów [] ścieżka)|Pobiera kanoniczną pełną ścieżkę do podanego katalogu i zapewnia, że zawiera poprawne znaki separatora katalogów dla bieżącego systemu operacyjnego, przy zapewnieniu, że ma końcowy ukośnik.|
 |ciąg EnsureTrailingSlash (ścieżka ciągu)|Jeśli dana ścieżka nie ma końcowego ukośnika, Dodaj ją. Jeśli ścieżka jest pustym ciągiem, nie modyfikuje go.|
 |ciąg GetPathOfFileAbove (plik String, ciąg startingDirectory)|Wyszukuje i zwraca pełną ścieżkę do pliku w strukturze katalogów powyżej bieżącej lokalizacji pliku kompilacji lub w zależności od tego `startingDirectory` , czy jest określony.|
 |GetDirectoryNameOfFileAbove (ciąg startingDirectory, ciąg fileName)|Znajdź i zwróć katalog pliku w określonym katalogu lub lokalizacji w strukturze katalogów powyżej tego katalogu.|
-|String MakeRelative (ciąg basePath, ścieżka ciągu)|Ustawia `path` względem `basePath` . `basePath`musi być katalogiem bezwzględnym. Jeśli `path` nie można nawiązać względem, zostanie zwrócony Verbatim. Podobnie jak w przypadku programu `Uri.MakeRelativeUri` .|
+|String MakeRelative (ciąg basePath, ścieżka ciągu)|Ustawia `path` względem `basePath` . `basePath` musi być katalogiem bezwzględnym. Jeśli `path` nie można nawiązać względem, zostanie zwrócony Verbatim. Podobnie jak w przypadku programu `Uri.MakeRelativeUri` .|
 |String ValueOrDefault (ciąg conditionValue, String DefaultValue)|Zwróć ciąg w parametrze "DefaultValue" tylko wtedy, gdy parametr "conditionValue" jest pusty, w przeciwnym razie Zwróć wartość conditionValue.|
 
 ## <a name="nested-property-functions"></a>Funkcje właściwości zagnieżdżonych
@@ -344,8 +344,8 @@ Output:
 
 Funkcje `Exists` i `HasTrailingSlash` nie są funkcjami właściwości. Są one dostępne do użycia z `Condition` atrybutem. Zobacz [warunki programu MSBuild](msbuild-conditions.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)
+- [właściwości programu MSBuild](../msbuild/msbuild-properties.md)
 
 - [Omówienie programu MSBuild](../msbuild/msbuild.md)

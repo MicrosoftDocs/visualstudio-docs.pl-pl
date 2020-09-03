@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
 ms.topic: how-to
 ms.openlocfilehash: 8c7d502924175632bdabddc234af6ea18d2352ac
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950232"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Kompilowanie i czyszczenie projektów i rozwiązań
@@ -45,6 +45,6 @@ Aby zatrzymać kompilację, naciśnij czerwony kwadrat w obszarze Stan:
 
 ![Naciśnij czerwony kwadrat, aby zatrzymać kompilację](media/compiling-and-building-image3.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Twórz i czyść projekty i rozwiązania (Visual Studio w systemie Windows)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

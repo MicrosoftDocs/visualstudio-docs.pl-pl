@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolSearchEvent2::GetSymbolSearchInfo | Dokumenty firmy Microsoft
+title: 'IDebugSymbolSearchEvent2:: GetSymbolSearchInfo — | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: be498154a8141c61f114682893d0aaf8b841cf95
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718889"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
-Wywoływany przez program obsługi zdarzeń, aby pobrać wyniki dotyczące procesu ładowania symbolu.
+Wywoływane przez procedurę obsługi zdarzeń w celu pobrania wyników procesu ładowania symboli.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,22 +45,22 @@ int GetSymbolSearchInfo(
 
 ## <a name="parameters"></a>Parametry
 `pModule`\
-[na zewnątrz] Obiekt IDebugModule3 reprezentujący moduł, dla którego zostały załadowane symbole.
+określoną Obiekt IDebugModule3 reprezentujący moduł, dla którego zostały załadowane symbole.
 
 `pbstrDebugMessage`\
-[w, na zewnątrz] Zwraca ciąg zawierający wszelkie komunikaty o błędach z modułu. Jeśli nie ma żadnego błędu, ten ciąg będzie zawierał tylko nazwę modułu, ale nigdy nie jest pusty.
+[in. out] Zwraca ciąg zawierający wszystkie komunikaty o błędach z modułu. Jeśli nie ma żadnych błędów, ten ciąg będzie zawierać nazwę modułu, ale nigdy nie jest pusty.
 
 > [!NOTE]
-> [C++] `pbstrDebugMessage` nie `NULL` może być i `SysFreeString`musi zostać uwolniony za pomocą .
+> [C++] `pbstrDebugMessage` nie może być `NULL` i musi być zwolniona z `SysFreeString` .
 
 `pdwModuleInfoFlags`\
-[na zewnątrz] Kombinacja flag z [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) wyliczenia wskazujące, czy zostały załadowane symbole.
+określoną Kombinacja flag z wyliczenia [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) wskazująca, czy zostały załadowane wszystkie symbole.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli to się powiedzie, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Gdy program obsługi odbiera [zdarzenie IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) po próbie załadowania symboli debugowania dla modułu, program obsługi można wywołać thismethod, aby określić wyniki tego obciążenia.
+ Gdy program obsługi odbiera zdarzenie [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) po wykonaniu próby załadowania symboli debugowania dla modułu, program obsługi może wywołać thismethod, aby określić wyniki tego obciążenia.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

@@ -1,5 +1,5 @@
 ---
-title: Dokumentacja interfejsu API rozszerzalności IntelliTrace | Dokumentacja firmy Microsoft
+title: Dokumentacja interfejsu API dla rozszerzalności IntelliTrace | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,25 +12,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e8cc2613a1fda470bd46951d0a4ffaf2d0eeedd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154236"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Odwołanie API rozszerzalności IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Korzystając z informacji w tej sekcji, można użyć rozszerzalności IntelliTrace interfejsów API do odczytywania i dekodować pliki .itrace w aplikacji.  
+Korzystając z informacji w tej sekcji, można użyć rozszerzalnych interfejsów API IntelliTrace do odczytu i dekodowania plików iTrace w aplikacji.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- Interfejsów API rozszerzania funkcji IntelliTrace są zawarte w jednej przestrzeni nazw  
+ Te interfejsy API rozszerzalności IntelliTrace są zawarte w jednej przestrzeni nazw  
   
 - <xref:Microsoft.VisualStudio.IntelliTrace>  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [IntelliTrace](../debugger/intellitrace.md)  
- Zawiera informacje o tym, jak można debugować za pomocą funkcji IntelliTrace.  
+ Zawiera informacje o sposobach debugowania w programie IntelliTrace.  
   
- [Galerii kodów MSDN](https://code.msdn.microsoft.com/)  
- Obsługuje aplikację przykładową, przedstawiający sposób użycia rozszerzalności funkcji IntelliTrace.
+ [Galeria kodu MSDN](https://code.msdn.microsoft.com/)  
+ Hostuje przykładową aplikację, która przedstawia sposób korzystania z rozszerzalności IntelliTrace.

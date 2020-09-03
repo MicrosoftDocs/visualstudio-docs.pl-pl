@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetLocalVariablelayout | Dokumentacja firmy Microsoft
+title: 'IDebugComPlusSymbolProvider:: GetLocalVariablelayout | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a39bd508c1c52cb24a18ba80d252798c6afee535
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194743"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera układ zmienne lokalne, aby uzyskać zestaw metod.  
+Pobiera układ zmiennych lokalnych dla zestawu metod.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,25 +47,25 @@ int GetLocalVariablelayout(
   
 #### <a name="parameters"></a>Parametry  
  `ulAppDomainID`  
- [in] Identyfikator domeny aplikacji.  
+ podczas Identyfikator domeny aplikacji.  
   
  `guidModule`  
- [in] Unikatowy identyfikator modułu.  
+ podczas Unikatowy identyfikator modułu.  
   
  `cMethods`  
- [in] Liczba metoda tokenów w `rgMethodTokens` tablicy.  
+ podczas Liczba tokenów metody w `rgMethodTokens` tablicy.  
   
  `rgMethodTokens`  
- [in] Tablica metody.  
+ podczas Tablica tokenów metody.  
   
  `pStreamLayout`  
- [out] Strumień tekst, który zawiera zmienną układu.  
+ określoną Strumień tekstowy zawierający układ zmiennej.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CDebugSymbolProvider** , który uwidacznia Interfejs [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetLocalVariablelayout(  

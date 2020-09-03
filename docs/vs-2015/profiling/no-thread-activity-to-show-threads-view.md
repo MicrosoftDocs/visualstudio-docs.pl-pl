@@ -1,5 +1,5 @@
 ---
-title: Żadnej aktywności wątku do pokazania (Widok wątków) | Dokumentacja firmy Microsoft
+title: Brak aktywności wątku do wyświetlenia (Widok wątków) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,26 +14,26 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 530123a7f9417ce9f12a0314a96eafad1c69cf7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205868"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Nie ma do pokazania żadnej aktywności wątku (Widok wątków)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ten obszar zawiera dane dotyczące odkrywanie wątków w aktualnie widocznym zakresie czasu.  
+Ten obszar pokazuje dane dotyczące nieukrytych wątków w aktualnie widocznym zakresie czasu.  
   
  Jeśli informacje nie są widoczne, sprawdź następujące ustawienia:  
   
-- Poziom powiększenia jest wysoka? Spróbuj powiększanie out lub przewijania, aby wyświetlić więcej aktywności wątku w zakresie.  
+- Czy poziom powiększenia jest wysoki? Spróbuj powiększyć lub przewinięcie, aby zwiększyć liczbę działań wątku w zakresie.  
   
-- Zbyt wiele wątków jest ukryty? Jeśli tak, spróbuj, przedstawiający wszystkie wątki  
+- Czy zbyt wiele wątków jest ukrytych? Jeśli tak, spróbuj pokazać wszystkie wątki  
   
-- Jeśli **tylko mój kod** jest wybrana, można przeglądać tylko dane o swoim kodzie. Spróbuj wyczyścić to ustawienie, aby ustalić, czy występuje aktywność wątek systemu.  
+- W przypadku wybrania **tylko mój kod** można wyświetlać tylko dane o kodzie. Spróbuj wyczyścić to ustawienie, aby upewnić się, czy jest jakieś działanie wątku systemowego.  
   
-- Upewnij się, że redukcja szumów jest ustawiona na progu dolnego.  
+- Upewnij się, że redukcja szumu jest ustawiona na niski próg.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

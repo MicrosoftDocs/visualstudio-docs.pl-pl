@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie skojarzeniami plików side-by-side | Dokumenty firmy Microsoft
+title: Zarządzanie skojarzeniami plików Side-by-Side | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,81 +11,81 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6c284fe7ef4c2d07051a8524860583cb634e13bf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702762"
 ---
-# <a name="manage-side-by-side-file-associations"></a>Zarządzanie skojarzeniami plików obok siebie
+# <a name="manage-side-by-side-file-associations"></a>Zarządzaj skojarzeniami plików obok siebie
 
-Jeśli vspackage udostępnia skojarzenia plików, należy zdecydować, jak obsługiwać instalacje side-by-side, w którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] określona wersja powinna być wywoływana, aby otworzyć plik. Niezgodne formaty plików potęgują problem.
+Jeśli pakietu VSPackage udostępnia skojarzenia plików, należy zdecydować, jak obsługiwać instalacje równoległe, w których konkretna wersja [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] powinna zostać wywołana, aby otworzyć plik. Niezgodne formaty plików pozostały problem.
 
-Użytkownicy oczekują, że nowa wersja produktu będzie zgodna z wcześniejszymi wersjami, dzięki czemu istniejące pliki mogą być ładowane w nowej wersji bez utraty danych. W idealnym przypadku vsPackage można zarówno załadować i zapisać formaty plików z wcześniejszych wersji. Jeśli to nie prawda, należy zaoferować uaktualnienie formatu pliku do nowej wersji vsPackage. Wadą tego podejścia jest to, że uaktualniony plik nie może być otwarty we wcześniejszej wersji.
+Użytkownicy oczekują, że nowa wersja produktu będzie zgodna ze starszymi wersjami, dzięki czemu istniejące pliki mogą zostać załadowane do nowej wersji bez utraty danych. W idealnym przypadku pakietu VSPackage może ładować i zapisywać formaty plików z wcześniejszych wersji. Jeśli to nie jest prawda, należy zastanowić się, aby uaktualnić format pliku do nowej wersji pakietu VSPackage. Minusem do tego podejścia polega na tym, że uaktualniony plik nie może zostać otwarty w starszej wersji.
 
-Aby uniknąć tego problemu, można zmienić rozszerzenia, gdy formaty plików staną się niezgodne. Na przykład w wersji 1 programu VSPackage można użyć rozszerzenia, *.mypkg10*, a wersja 2 może użyć rozszerzenia. *.mypkg20*. Ta różnica identyfikuje VSPackage, który otwiera określonego pliku. Jeśli dodasz nowsze pakiety VSPackages do listy programów skojarzonych ze starym rozszerzeniem, użytkownicy mogą kliknąć plik prawym przyciskiem myszy i wybrać jego otwarcie w nowszym programie VSPackage. W tym momencie vsPackage może zaoferować uaktualnienie pliku do nowego formatu lub otworzyć plik i zachować zgodność z wcześniejszymi wersjami VSPackage.
+Aby uniknąć tego problemu, można zmienić rozszerzenia, gdy formaty plików staną się niezgodne. Na przykład, wersja 1 pakietu VSPackage może używać rozszerzenia, *. mypkg10*, a wersja 2 może korzystać z rozszerzenia, *. mypkg20*. Ta różnica wskazuje pakietu VSPackage, który otwiera określony plik. Jeśli dodasz nowsze pakietów VSPackage do listy programów skojarzonych ze starym rozszerzeniem, użytkownicy będą mogli kliknąć plik prawym przyciskiem myszy, a następnie otworzyć go w nowszej pakietu VSPackage. W tym momencie pakietu VSPackage może oferować uaktualnienie pliku do nowego formatu lub otworzyć plik i zachować zgodność z wcześniejszymi wersjami pakietu VSPackage.
 
 > [!NOTE]
-> Można połączyć te podejścia. Na przykład można zaoferować zgodność z powrotem, ładując starszy plik i oferują uaktualnienie formatu pliku, gdy użytkownik go zapisze.
+> Te podejścia można połączyć. Można na przykład zaoferować zgodność z poprzednimi wersjami przez załadowanie starszego pliku i oferowanie uaktualnienia formatu pliku, gdy użytkownik go zapisuje.
 
-## <a name="face-the-problem"></a>Zmierz się z problemem
+## <a name="face-the-problem"></a>Zaczołowie problemu
 
-Jeśli chcesz, aby wiele pakietów VSPackages obok siebie używało tego [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] samego rozszerzenia, musisz wybrać wersję, która jest skojarzona z rozszerzeniem. Oto dwie alternatywy:
+Jeśli chcesz, aby wiele równoległych pakietów VSPackage używać tego samego rozszerzenia, musisz wybrać wersję [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , która jest skojarzona z rozszerzeniem. Poniżej przedstawiono dwie alternatywy:
 
-- Otwórz plik w najnowszej [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wersji zainstalowanej na komputerze użytkownika.
+- Otwórz plik w najnowszej wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zainstalowanej na komputerze użytkownika.
 
-   W tym podejściu instalator jest odpowiedzialny za określenie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] najnowszej wersji i w tym, że we wpisie rejestru napisanym dla skojarzenia plików. W pakiecie Instalatora Windows można dołączyć akcje niestandardowe, aby ustawić [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]właściwość wskazującą najnowszą wersję programu .
+   W tym podejściu Instalator jest odpowiedzialny za określenie najnowszej wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i dołączenie go do wpisu rejestru zarejestrowanego dla skojarzenia pliku. W pakiecie Instalator Windows można uwzględnić niestandardowe akcje, aby ustawić właściwość, która wskazuje najnowszą wersję programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
   > [!NOTE]
-  > W tym kontekście "najnowsza" oznacza "najnowszą obsługiwana wersja". Te wpisy instalatora nie będą automatycznie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]wykrywać kolejnej wersji programu . Wpisy w [wykrywaniu wymagań systemowych](../extensibility/internals/detecting-system-requirements.md) i [w poleceniach, które muszą być uruchamiane po instalacji,](../extensibility/internals/commands-that-must-be-run-after-installation.md) są podobne do tych przedstawionych tutaj i są wymagane do obsługi dodatkowych wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+  > W tym kontekście "Najnowsza" oznacza "Najnowsza obsługiwana wersja". Te wpisy Instalatora nie będą automatycznie wykrywać kolejnej wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Wpisy [wykrywające wymagania systemowe](../extensibility/internals/detecting-system-requirements.md) i w [poleceniach, które muszą zostać uruchomione po instalacji](../extensibility/internals/commands-that-must-be-run-after-installation.md) , są podobne do przedstawionych tutaj i są wymagane do obsługi dodatkowych wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-   Następujące wiersze w tabeli CustomAction ustawiają właściwość DEVENV_EXE_LATEST jako właściwość ustawioną przez tabele AppSearch i RegLocator omówione w [poleceniach, które muszą być uruchamiane po instalacji](../extensibility/internals/commands-that-must-be-run-after-installation.md). Wiersze w tabeli InstallExecuteSequence zaplanować akcje niestandardowe na początku sekwencji wykonywania. Wartości w kolumnie Condition sprawiają, że logika działa:
+   Następujące wiersze w tabeli "AppSearch" mają ustawioną właściwość DEVENV_EXE_LATEST tak, aby była właściwością ustawioną przez RegLocatore tabele, które są opisane w [poleceniach, które muszą zostać uruchomione po instalacji](../extensibility/internals/commands-that-must-be-run-after-installation.md). Wiersze w tabeli InstallExecuteSequence Zaplanuj akcje niestandardowe wcześniej w sekwencji wykonywania. Wartości w kolumnie warunek sprawiają, że działanie logiki:
 
-  - Visual Studio .NET 2002 jest najnowszą wersją, jeśli jest to jedyna obecna wersja.
+  - Program Visual Studio .NET 2002 to Najnowsza wersja, jeśli jest to jedyna aktualna wersja.
 
-  - Visual Studio .NET 2003 jest najnowszą wersją tylko wtedy, gdy jest obecny i [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie jest obecny.
+  - Program Visual Studio .NET 2003 to Najnowsza wersja, która jest obecna i [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie jest obecna.
 
-  - [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]jest najnowszą wersją, jeśli jest to jedyna obecna wersja.
+  - [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest to Najnowsza wersja, jeśli jest jedyną obecną wersją.
 
-    Wynik netto jest taki, że DEVENV_EXE_LATEST zawiera ścieżkę najnowszej wersji devenv.exe.
+    Wynikiem jest to, że DEVENV_EXE_LATEST zawiera ścieżkę do najnowszej wersji devenv.exe.
 
-  **Wiersze tabeli CustomAction określające najnowszą wersję programu Visual Studio**
+  **Wiersze tabeli kodu, które określają najnowszą wersję programu Visual Studio**
 
-  |Akcja|Typ|Element źródłowy|Środowisko docelowe|
+  |Akcja|Typ|Element źródłowy|Cel|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
   |CA_SetDevenvLatest_2005|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2005]|
 
-  **Instalowanie wierszy tabeli sekwencjonowania, które określają najnowszą wersję programu Visual Studio**
+  **InstallExecuteSequence wiersze tabeli, które określają najnowszą wersję programu Visual Studio**
 
   |Akcja|Warunek|Sequence|
   |------------|---------------|--------------|
-  |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 I NIE (DEVENV_EXE_2003 LUB DEVENV_EXE_2005)|410|
-  |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 a nie DEVENV_EXE_2005|420|
+  |CA_SetDevenvLatest_2002|DEVENV_EXE_2002, A NIE (DEVENV_EXE_2003 LUB DEVENV_EXE_2005)|410|
+  |CA_SetDevenvLatest_2003|DEVENV_EXE_2003, A NIE DEVENV_EXE_2005|420|
   |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|
 
-   Właściwości DEVENV_EXE_LATEST w tabeli Rejestru pakietu Instalatora Windows można zapisać wartość domyślną **klucza HKEY_CLASSES_ROOT*ProgId*ShellOpenCommand** ,[DEVENV_EXE_LATEST] "%1"
+   Możesz użyć właściwości DEVENV_EXE_LATEST w tabeli rejestru pakietu Instalator Windows, aby zapisać wartość domyślną klucza **HKEY_CLASSES_ROOT*ProgID*ShellOpenCommand** , [DEVENV_EXE_LATEST] "%1"
 
-- Uruchom program współdzielonego uruchamiania, który może dokonać najlepszego wyboru z dostępnych wersji VSPackage.
+- Uruchom współużytkowany program do uruchamiania, który może wybrać najlepszy wybór spośród dostępnych wersji pakietu VSPackage.
 
-   Twórcy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wybrali to podejście do obsługi złożonych wymagań wielu formatów rozwiązań i [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]projektów, które wynikają z wielu wersji . W tym podejściu można zarejestrować program uruchamiania jako program obsługi rozszerzenia. Launcher sprawdza plik i decyduje, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] która wersja i VSPackage może obsłużyć tego konkretnego pliku. Na przykład jeśli użytkownik otworzy plik, który został ostatnio zapisany przez określoną wersję vsPackage, launcher może [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]uruchomić, że VSPackage w pasującej wersji programu . Ponadto użytkownik może skonfigurować program uruchamiający, aby zawsze uruchamiał najnowszą wersję. Program uruchamiający może również monitować użytkownika o uaktualnienie formatu pliku. Jeśli format pliku zawiera numer wersji, program uruchamiający może poinformować użytkownika, jeśli format pliku pochodzi z wersji późniejszej niż jeden lub więcej zainstalowanych pakietów VSPackages.
+   Deweloperzy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wybierają takie podejście, aby obsłużyć złożone wymagania wielu formatów rozwiązań i projektów, które wynikają z wielu wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . W ramach tego podejścia należy zarejestrować program do uruchamiania jako procedurę obsługi rozszerzenia. Usługa uruchamiania analizuje plik i decyduje, która wersja programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i pakietu VSPackage może obsłużyć ten konkretny plik. Na przykład, jeśli użytkownik otworzy plik, który był ostatnio zapisywany przez określoną wersję pakietu VSPackage, uruchomienie tego programu może spowodować, że pakietu VSPackage w zgodnej wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Ponadto użytkownik może skonfigurować program uruchamiający, aby zawsze uruchomił najnowszą wersję. Moduł uruchamiający może również monitować użytkownika o uaktualnienie formatu pliku. Jeśli format pliku zawiera numer wersji, program uruchamiający może poinformować użytkownika, jeśli format pliku pochodzi z wersji nowszej niż co najmniej jeden z zainstalowanych pakietów VSPackage.
 
-   Program uruchamiający powinien znajdować się w składniku Instalatora Windows, który jest współużytkował wszystkie wersje programu VSPackage. Ten proces zapewnia, że najnowsza wersja jest zawsze zainstalowana i nie jest usuwana, dopóki nie zostaną odinstalowane wszystkie wersje programu VSPackage. W ten sposób skojarzenia plików i inne wpisy rejestru składnika launcher są zachowywane, nawet jeśli jedna wersja vspackage jest odinstalowany.
+   Program uruchamiający powinien znajdować się w składniku Instalator Windows, który jest współużytkowany ze wszystkimi wersjami pakietu VSPackage. Ten proces zapewnia, że Najnowsza wersja jest zawsze zainstalowana i nie jest usuwana do momentu odinstalowania wszystkich wersji pakietu VSPackage. W ten sposób skojarzenia plików i inne wpisy rejestru składnika uruchamiania są zachowywane nawet wtedy, gdy jedna wersja pakietu VSPackage zostanie odinstalowana.
 
 ## <a name="uninstall-and-file-associations"></a>Odinstalowywanie i skojarzenia plików
 
-Odinstalowanie pakietu VSPackage, który zapisuje wpisy rejestru dla skojarzeń plików, powoduje usunięcie skojarzeń plików. W związku z tym rozszerzenie nie ma skojarzonych programów. Instalator Windows nie "odzyskuje" wpisów rejestru, które zostały dodane po zainstalowaniu programu VSPackage. Oto kilka sposobów na naprawienie skojarzeń plików użytkownika:
+Dezinstalacja pakietu VSPackage, która zapisuje wpisy rejestru dla skojarzeń plików, usuwa skojarzenia plików. W związku z tym rozszerzenie nie ma skojarzonych programów. Instalator Windows nie "Odzyskaj" wpisów rejestru, które zostały dodane podczas instalacji pakietu VSPackage. Oto kilka sposobów, aby naprawić skojarzenia plików użytkownika:
 
-- Użyj składnika udostępnionego uruchamiania, jak opisano wcześniej.
+- Użyj współużytkowanego składnika uruchamiania, jak opisano wcześniej.
 
-- Poinstruuj użytkownika, aby uruchomić naprawę wersji VSPackage, że użytkownik chce być właścicielem skojarzenia plików.
+- Poinstruuj użytkownika, aby uruchomił naprawę wersji pakietu VSPackage, którą użytkownik chce skojarzyć z skojarzeniem pliku.
 
-- Podaj oddzielny program wykonywalny, który przepisuje odpowiednie wpisy rejestru.
+- Podaj oddzielny program wykonywalny, który ponownie zapisuje odpowiednie wpisy rejestru.
 
-- Podaj stronę opcji konfiguracji lub okno dialogowe, które pozwala użytkownikom wybrać skojarzenia plików i odzyskać utracone skojarzenia. Poinstruuj użytkowników, aby uruchamiali go po dezinstalacji.
+- Podaj stronę opcji konfiguracji lub okno dialogowe, które umożliwia użytkownikom wybieranie skojarzeń plików i odzyskiwanie utraconych skojarzeń. Poinstruuj użytkowników, aby uruchomili ją po odinstalowaniu.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Rejestrowanie rozszerzeń nazw plików dla wdrożeń side-by-side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
-- [Rejestrowanie zleceń dla rozszerzeń nazw plików](../extensibility/registering-verbs-for-file-name-extensions.md)
+- [Rejestrowanie rozszerzeń nazw plików dla wdrożeń równoległych](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
+- [Rejestrowanie czasowników dla rozszerzeń nazw plików](../extensibility/registering-verbs-for-file-name-extensions.md)

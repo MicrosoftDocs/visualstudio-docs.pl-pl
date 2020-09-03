@@ -1,5 +1,5 @@
 ---
-title: Opcje, Edytor tekstu, Wszystkie języki, Paski przewijania
+title: Opcje, Edytor tekstu, wszystkie języki, paski przewijania
 ms.date: 10/25/2018
 ms.topic: reference
 f1_keywords:
@@ -33,59 +33,59 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75588801"
 ---
-# <a name="options-text-editor-all-languages-scroll-bars"></a>Opcje, Edytor tekstu, Wszystkie języki, Paski przewijania
-To okno dialogowe umożliwia zmianę domyślnego zachowania paska przewijania edytora kodu. Aby wyświetlić te opcje, wybierz **polecenie Opcje** z menu **Narzędzia.** W folderze **Edytor tekstu** rozwiń podfolder **Wszystkie języki,** a następnie wybierz polecenie **Paski przewijania**.
+# <a name="options-text-editor-all-languages-scroll-bars"></a>Opcje, Edytor tekstu, wszystkie języki, paski przewijania
+To okno dialogowe umożliwia zmianę domyślnego zachowania paska przewijania edytora kodu. Aby wyświetlić te opcje, wybierz opcję **Opcje** z menu **Narzędzia** . W folderze **Edytor tekstu** rozwiń podfolder **wszystkie języki** , a następnie wybierz **paski przewijania**.
 
 > [!CAUTION]
-> Ta strona ustawia domyślne opcje dla wszystkich języków programowania. Zresetowanie opcji w tym oknie dialogowym spowoduje zresetowanie opcji Pasków przewijania we wszystkich językach do wyboru, niezależnie od wybranych w tym miejscu opcji. Aby zmienić opcje edytora tekstu tylko dla jednego języka, rozwiń podfolder dla tego języka i wybierz jego strony opcji.
+> Ta strona służy do ustawiania opcji domyślnych dla wszystkich języków deweloperskich. Resetowanie opcji w tym oknie dialogowym spowoduje zresetowanie opcji pasków przewijania we wszystkich językach do wybranych opcji. Aby zmienić opcje edytora tekstu dla tylko jednego języka, rozwiń podfolder dla tego języka i wybierz jego strony opcji.
 
 ## <a name="show-horizontal-scroll-bar"></a>Pokaż poziomy pasek przewijania
 
-Gdy ta opcja jest zaznaczona, wyświetla poziomy pasek przewijania, który umożliwia przewijanie z boku na bok, aby wyświetlić elementy, które mieszczą się poza obszarem wyświetlania edytora. Jeśli poziome paski przewijania są niedostępne, można przewijać za pomocą klawiszy kursora.
+Po wybraniu Wyświetla poziomy pasek przewijania, który umożliwia przewijanie z boku do widoku elementów, które znajdują się poza obszarem wyświetlania edytora. Jeśli poziome paski przewijania są niedostępne, możesz użyć klawiszy kursora do przewinięcia.
 
 ## <a name="show-vertical-scroll-bar"></a>Pokaż pionowy pasek przewijania
 
-Gdy ta opcja jest zaznaczona, wyświetla pionowy pasek przewijania, który umożliwia przewijanie w górę i w dół, aby wyświetlić elementy, które mieszczą się poza obszarem wyświetlania edytora. Jeśli pionowe paski przewijania nie są dostępne, można przewijać za pomocą klawiszy Page Up, Page Down i cursor.
+Po wybraniu Wyświetla pionowy pasek przewijania, który umożliwia przewijanie w górę i w dół w celu wyświetlenia elementów, które znajdują się poza obszarem wyświetlania edytora. Jeśli pionowe paski przewijania nie są dostępne, można użyć klawiszy Page Up, Page Down i Cursor do przewinięcia.
 
-## <a name="display"></a>Monitor
+## <a name="display"></a>Wyświetlanie
 
-### <a name="show-annotations-over-vertical-scroll-bar"></a>Wyświetlanie adnotacji na pionowym pasku przewijania
+### <a name="show-annotations-over-vertical-scroll-bar"></a>Pokaż adnotacje na pionowym pasku przewijania
 
-Wybierz, czy na pionowym pasku przewijania są wyświetlane następujące adnotacje:
+Wybierz, czy pionowy pasek przewijania zawiera następujące adnotacje:
 
 - zmiany
 - znaki
 - błędy
-- pozycja cieczy
+- położenie karetki
 
 > [!TIP]
 > Opcja **Pokaż znaczniki** zawiera punkty przerwania i zakładki.
 
-Wypróbuj, otwierając duży plik kodu i zastępując tekst, który występuje w kilku miejscach w pliku. Pasek przewijania pokazuje efekt zamienników, dzięki czemu możesz wycofać zmiany, jeśli zastąpiono coś, czego nie powinieneś mieć.
+Wypróbuj ją, otwierając plik dużego kodu i zastępując jakiś tekst występujący w kilku miejscach w pliku. Pasek przewijania pokazuje efekt zamian, dzięki czemu można cofnąć zmiany, jeśli zamienisz coś, czego nie trzeba.
 
-Zobacz post w blogu [rozszerzonego paska przewijania,](https://blogs.msdn.microsoft.com/cdnstudents/2014/01/21/visual-studio-tips-and-tricks-enhanced-scroll-bar/) co oznaczają różne kolory i symbole podczas edytowania kodu.
+Zapoznaj się z wpisem w blogu [Ulepszony pasek przewijania](https://blogs.msdn.microsoft.com/cdnstudents/2014/01/21/visual-studio-tips-and-tricks-enhanced-scroll-bar/) , który oznacza różne kolory i symbole podczas edycji kodu.
 
 ## <a name="behavior"></a>Zachowanie
 
-Pasek przewijania ma dwa tryby: tryb paskowy i tryb mapy.
+Pasek przewijania ma dwa tryby: tryb paskowy i tryb mapowania.
 
-### <a name="use-bar-mode-for-vertical-scroll-bar"></a>Używanie trybu paska dla pionowego paska przewijania
+### <a name="use-bar-mode-for-vertical-scroll-bar"></a>Użyj trybu paska dla pionowego paska przewijania
 
-*Tryb paska* wyświetla wskaźniki adnotacji na pasku przewijania. Kliknięcie paska przewijania powoduje przewijanie strony w górę lub w dół, ale nie powoduje przeskakiwania do tej lokalizacji w pliku.
+W *trybie paska* są wyświetlane wskaźniki adnotacji na pasku przewijania. Kliknięcie paska przewijania Przewija stronę w górę lub w dół, ale nie przechodzi do tej lokalizacji w pliku.
 
-### <a name="use-map-mode-for-vertical-scroll-bar"></a>Korzystanie z trybu mapy dla pionowego paska przewijania
+### <a name="use-map-mode-for-vertical-scroll-bar"></a>Użyj trybu mapy dla pionowego paska przewijania
 
-W *trybie mapy*po kliknięciu lokalizacji na pasku przewijania kursor przeskakuje do tej lokalizacji w pliku, a nie tylko przewijanie strony w górę lub w dół. Linie kodu są wyświetlane w miniaturze na pasku przewijania. Możesz wybrać, jak szeroka jest kolumna mapy, wybierając wartość w **przeglądzie źródła**. Aby włączyć większy podgląd kodu podczas umieszczenia wskaźnika na mapie, wybierz opcję **Pokaż podgląd etykietki narzędzia.** Zwinięte regiony są inaczej zacieniowane i rozszerzane po dwukrotnym kliknięciu.
+W *trybie mapy*, gdy klikniesz lokalizację na pasku przewijania, kursor przejdzie do tej lokalizacji w pliku, a nie tylko przewijanie w górę lub w dół strony. Wiersze kodu są wyświetlane na pasku przewijania w miniaturach. Możesz wybrać szerokość kolumny mapy, wybierając wartość w **przeglądzie źródła**. Aby włączyć większą wersję zapoznawczą kodu po umieszczeniu wskaźnika na mapie, wybierz opcję **Pokaż podgląd etykietki narzędzia** . Zwinięte regiony są zacienione inaczej i rozszerzane po dwukrotnym kliknięciu.
 
 > [!TIP]
-> Miniaturowy widok kodu można wyłączyć w trybie mapy, ustawiając **podgląd źródła** na **Wyłączone**. Jeśli zaznaczona jest **etykietka narzędzia Pokaż podgląd,** po kliknięciu wskaźnika na pasku przewijania nadal jest wyświetlany podgląd kodu w tej lokalizacji, a kursor nadal przechodzi do tej lokalizacji w pliku.
+> Miniaturowy widok kodu można wyłączyć w trybie mapy, ustawiając opcję **Źródło przegląd** na **off**. Jeśli zaznaczona jest **etykietka narzędzia Pokaż podgląd** , nadal zobaczysz Podgląd kodu w tej lokalizacji po umieszczeniu wskaźnika na pasku przewijania, a kursor nadal przeskakuje do tej lokalizacji w pliku po kliknięciu.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Jak: Dostosowywanie paska przewijania](../how-to-track-your-code-by-customizing-the-scrollbar.md)
+- [Instrukcje: Dostosowywanie paska przewijania](../how-to-track-your-code-by-customizing-the-scrollbar.md)
