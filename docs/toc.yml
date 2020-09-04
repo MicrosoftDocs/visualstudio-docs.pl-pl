@@ -1411,6 +1411,8 @@
       href: ide/whats-new-visual-studio-2019.md
     - name: Co nowego w dokumentach programu Visual Studio
       href: ide/whats-new-visual-studio-docs.md
+    - name: Historia nowości w dokumentacji programu Visual Studio
+      href: ide/whats-new-visual-studio-docs-history.md
     - name: Informacje o wersji i wymagania systemowe
       items:
         - name: Rytm wydawania
