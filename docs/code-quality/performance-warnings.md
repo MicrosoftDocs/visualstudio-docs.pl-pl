@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 974b98408d7c88bd437439d10c2cf3b1711a339c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13cb3e83b06b3533d1feb1e683fb246f238da732
+ms.sourcegitcommit: 6a43ace7b84c401ebd03f65abc17ae1d2a21a130
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219638"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89471482"
 ---
 # <a name="performance-warnings"></a>Wydajność — Ostrzeżenia
 Ostrzeżenia dotyczące wydajności obsługują biblioteki i aplikacje o wysokiej wydajności.
@@ -58,6 +58,7 @@ Ostrzeżenia dotyczące wydajności obsługują biblioteki i aplikacje o wysokie
 | [CA1831: Użyj metody AsSpan zamiast indeksatorów opartych na zakresie dla ciągów, gdy ma to zastosowanie](../code-quality/ca1831.md) | W przypadku korzystania z indeksatora zakresu w ciągu i niejawnego przypisywania wartości do &lt; typu char ReadOnlySpan &gt; , Metoda <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> zostanie użyta zamiast <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , która tworzy kopię żądanego fragmentu ciągu. |
 | [CA1832: Użyj metody AsSpan lub AsMemory zamiast indeksatorów opartych na zakresie do pobierania części ReadOnlySpan lub ReadOnlyMemory dla tablicy](../code-quality/ca1832.md) | W przypadku korzystania z indeksatora zakresu w tablicy i niejawnego przypisywania wartości <xref:System.ReadOnlySpan%601> do <xref:System.ReadOnlyMemory%601> typu lub, Metoda <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> zostanie użyta zamiast <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , która tworzy kopię żądanego fragmentu tablicy. |
 | [CA1833: Użyj metody AsSpan lub AsMemory zamiast indeksatorów opartych na zakresie do pobierania części Memory dla tablicy](../code-quality/ca1833.md) | W przypadku korzystania z indeksatora zakresu w tablicy i niejawnego przypisywania wartości <xref:System.Span%601> do <xref:System.Memory%601> typu lub, Metoda <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> zostanie użyta zamiast <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , która tworzy kopię żądanego fragmentu tablicy. |
+| [CA1834: Użyj StringBuilder. Append (Char) dla ciągów z pojedynczym znakiem](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> ma `Append` Przeciążenie, które przyjmuje `char` jako argument. Preferuj wywołania `char` przeciążenia w celu zwiększenia wydajności. |
 | [CA1835: Preferuj przeciążenia oparte na Memory' dla elementu "ReadAsync" i "WriteAsync"](../code-quality/ca1835.md) | Element "Stream" ma Przeciążenie "ReadAsync", które przyjmuje &lt; &gt; jako pierwszy argument "bajt pamięci", i Przeciążenie "WriteAsync", które pobiera "ReadOnlyMemory &lt; Byte &gt; " jako pierwszy argument. Preferuj wywoływanie przeciążeń opartych na pamięci, co jest bardziej wydajne. |
 | [CA1836: Preferuj `IsEmpty` , `Count` Jeśli są dostępne](../code-quality/ca1836.md) | Preferuj `IsEmpty` Właściwość, która jest bardziej wydajna niż `Count` , `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> lub, <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> Aby określić, czy obiekt zawiera elementy, czy nie. |
 | [CA1837: Użyj `Environment.ProcessId` zamiast `Process.GetCurrentProcess().Id`](../code-quality/ca1837.md) | `Environment.ProcessId` jest prostsze i szybsze niż `Process.GetCurrentProcess().Id` . |
