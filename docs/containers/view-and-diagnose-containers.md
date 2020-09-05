@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: c870378cf277a6008f17ec42d960e07e18a53e86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45ef2d8f68ac951cc58040abb72e136b42f3b49c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283128"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490303"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Jak wyświetlać i diagnozować kontenery oraz obrazy w programie Visual Studio
 
@@ -108,8 +108,8 @@ Aby usunąć obraz, kliknij prawym przyciskiem myszy obraz w widoku drzewa, a na
 
 Dowiedz się więcej o narzędziach kontenera dostępnych w programie Visual Studio, odczytując informacje o narzędziach [kontenerów](overview.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-[Programowanie kontenerów w programie Visual Studio](/visualstudio/containers)
+[Programowanie kontenerów w programie Visual Studio](./index.yml)
 
 [Witryna Marketplace dla rozszerzeń dla programu Visual Studio](https://marketplace.visualstudio.com/)

@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: d5bd7a2d79bf6da710fd0f5803c2415781160143
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46f91b3bf163f3847492a7727fa72a39908d441c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178436"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485538"
 ---
 # <a name="share-your-app"></a>Udostępnianie aplikacji
 
@@ -63,6 +63,8 @@ Jeśli zobaczysz po prawej stronie strony, zobaczysz sekcję o nazwie **Docker C
     ```bash
     docker push <username>/getting-started
     ```
+
+    Zamiast wiersza polecenia, można również kliknąć prawym przyciskiem myszy tag obrazu w sekcji **obrazy** w widoku platformy Docker, a następnie wybrać polecenie **wypchnięcie...**, a następnie wybrać polecenie **Połącz rejestr...** , a następnie pozycję **Docker Hub**.
 
 ## <a name="run-the-image-on-a-new-instance"></a>Uruchamianie obrazu na nowym wystąpieniu
 

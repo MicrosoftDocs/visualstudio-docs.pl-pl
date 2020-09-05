@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: b8470c8d7708bc51916a6f57f5aa135c3267e355
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb92f5aae84a7c164f04145abe24eb32d7792056
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178432"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485444"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Kompiluj i uruchamiaj przykładową aplikację do zrobienia
 
@@ -55,6 +55,8 @@ W celu skompilowania aplikacji należy użyć `Dockerfile` . Pliku dockerfile to
     ```bash
     docker build -t getting-started .
     ```
+
+    Alternatywnie można również kliknąć prawym przyciskiem myszy pliku dockerfile i wybrać polecenie **Kompiluj obraz...** , a następnie określić tag w wierszu polecenia.
 
     To polecenie użyło pliku dockerfile do skompilowania nowego obrazu kontenera. Być może zauważono, że pobrano wiele "warstw". Dzieje się tak dlatego, że wyinstruujesz konstruktora, który miał zostać uruchomiony z `node:12-alpine` obrazu. Ale ponieważ nie masz go na swojej maszynie, ten obraz musi zostać pobrany.
 

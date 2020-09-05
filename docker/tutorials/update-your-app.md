@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 4a1cba71481608803522336ad5c0f6b6354bca32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8f17047902ccf6c7fad164e788e64fe0b17cf14
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178440"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485431"
 ---
 # <a name="update-the-app"></a>Aktualizowanie aplikacji
 
@@ -82,7 +82,7 @@ Aby usunąć kontener, najpierw należy go zatrzymać. Po jego zatrzymaniu możn
 > [!TIP]
 > Można zatrzymać i usunąć kontener w pojedynczym poleceniu, dodając do polecenia flagę "Force" `docker rm` . Na przykład: `docker rm -f <the-container-id>`
 
-### <a name="remove-a-container-using-the-docker-dashboard"></a>Usuwanie kontenera przy użyciu pulpitu nawigacyjnego platformy Docker
+### <a name="remove-a-container-using-the-docker-view"></a>Usuwanie kontenera przy użyciu widoku platformy Docker
 
 Jeśli otworzysz rozszerzenie VS Code, możesz usunąć kontener z dwoma kliknięciami. Znacznie łatwiej jest wyszukać identyfikator kontenera i usunąć go.
 
@@ -92,7 +92,7 @@ Jeśli otworzysz rozszerzenie VS Code, możesz usunąć kontener z dwoma klikni�
 
 1. Potwierdź usunięcie i wszystko gotowe!
 
-![Pulpit nawigacyjny platformy Docker — usuwanie kontenera](media/vs-removing-container.png)
+![Widok platformy Docker — usuwanie kontenera](media/vs-removing-container.png)
 
 ### <a name="start-the-updated-app-container"></a>Uruchom zaktualizowany kontener aplikacji
 

@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 34b3cb9465c1efb946260917d755729e25c4e259
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a4eb5062f8f1b01e8ad5e5165d7ec9ede636124
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178292"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485589"
 ---
 # <a name="persist-your-data"></a>Utrwalanie danych
 
@@ -86,7 +86,7 @@ Jak wspomniano, zamierzasz użyć **nazwanego woluminu**. Należy traktować naz
     docker volume create todo-db
     ```
 
-1. Zatrzymaj ponownie kontener aplikacji do zrobienia na pulpicie nawigacyjnym (lub w programie `docker rm -f <id>` ), ponieważ nadal działa bez użycia woluminu trwałego.
+1. Zatrzymaj ponownie kontener aplikacji do zrobienia w widoku platformy Docker (lub w programie `docker rm -f <id>` ), ponieważ nadal działa bez użycia woluminu trwałego.
 
 1. Uruchom kontener aplikacji do zrobienia, ale Dodaj `-v` flagę, aby określić instalację woluminu. użyjesz nazwanego woluminu i zainstalujesz go w programie `/etc/todos` , co spowoduje przechwycenie wszystkich plików utworzonych w ścieżce.
 
@@ -98,7 +98,7 @@ Jak wspomniano, zamierzasz użyć **nazwanego woluminu**. Należy traktować naz
 
     ![Elementy dodane do listy zadań do wykonania](media/items-added.png)
 
-1. Usuń kontener dla aplikacji do zrobienia. Użyj pulpitu nawigacyjnego lub, `docker ps` Aby uzyskać identyfikator, a następnie `docker rm -f <id>` go usunąć.
+1. Usuń kontener dla aplikacji do zrobienia. Użyj widoku platformy Docker lub, `docker ps` Aby uzyskać identyfikator, a następnie `docker rm -f <id>` go usunąć.
 
 1. Uruchom nowy kontener przy użyciu tego samego polecenia z powyższych.
 
