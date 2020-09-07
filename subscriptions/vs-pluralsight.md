@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 08/04/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat subskrypcji szkoleniowej Pluralsight dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: 85001d4473e504bd149a1cd1402a9f4dd01f2a13
-ms.sourcegitcommit: 1d74273a50ede5a90d9d64372d93aad357daef42
+ms.openlocfilehash: 87cc42e2a0d4c8c95c771a88413b4a8af70bdc14
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89365901"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509760"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści z szkolenia Pluralsight w subskrypcjach programu Visual Studio
 
@@ -27,6 +27,7 @@ W poniższej tabeli szczegółowo opisano, jakie korzyści z subskrypcji Plurals
    > [!div class="mx-imgBorder"]
    > ![Kafelek korzyści Pluralsight](_img/vs-pluralsight/vs-pluralsight-tile.png "Kliknij pozycję Aktywuj, aby zgłosić korzyść")
 
+(Powyższy kafelek to przykład, który będzie widoczny dla subskrybenta Visual Studio Enterprise.  Jeśli używasz innej subskrypcji programu Visual Studio, okres korzystania z usługi Pluralsight będzie różny.  Aby uzyskać szczegółowe informacje, zobacz tabelę kwalifikowania).
 1. Nastąpi przekierowanie do strony Pluralsight, która jest dostępna w ramach subskrypcji programu Visual Studio.
    - Podaj informacje kontaktowe wymagane w formularzu
    - Kliknij pole wyboru, aby zaakceptować warunki użytkowania
@@ -109,7 +110,7 @@ Odp.: na koniec bezpłatnej subskrypcji usługi Pluralsight możesz zakupić sub
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)

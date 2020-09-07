@@ -7,12 +7,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 610f3d92d86e227973be9c481adaf830d3d16737
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77279312"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509890"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurowanie projektu w języku C++ pod kątem funkcji IntelliSense
 
@@ -118,8 +118,8 @@ Visual Studio to investigate.
 
 W przypadku ustawienia zmiennej środowiskowej środowiskową TRACEDESIGNTIME na true i ponownego uruchomienia programu Visual Studio w katalogu% TEMP% zostanie wyświetlony plik dziennika, który może pomóc zdiagnozować błąd kompilacji.
 
-Aby dowiedzieć się więcej na temat zmiennej środowiskowej środowiskową TRACEDESIGNTIME, zobacz [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) i [Common Project System](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). Informacje zawarte w tych artykułach dotyczą projektów języka C++.
+Aby dowiedzieć się więcej na temat zmiennej środowiskowej środowiskową TRACEDESIGNTIME, zobacz [Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Diagnosing-Project-System-Build-Errors.md) i [Common Project System](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). Informacje zawarte w tych artykułach dotyczą projektów języka C++.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual C++ IntelliSense](visual-cpp-intellisense.md)

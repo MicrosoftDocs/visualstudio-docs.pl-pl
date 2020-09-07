@@ -5,12 +5,12 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 50d1ed4edd2e1fa52661995f4d72466646dfd879
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9fc83ac1be1a6c1db7b46845c74a4b0e7bf6017f
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250509"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509929"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Jak zwiększyć szanse na rozwiązywanie problemów z wydajnością
 
@@ -171,7 +171,7 @@ Nie dołączaj bezpośrednio śladów wydajności do istniejących elementów op
 
 **Zaawansowane dane śledzenia wydajności**
 
-Możliwości zbierania danych śledzenia w przypadku większości scenariuszy są wystarczające w odniesieniu do narzędzia raport-a-problem. Ale istnieją przypadki, w których wymagana jest większa kontrola nad zbieraniem danych śledzenia (na przykład śledzenie o większym rozmiarze buforu), w którym to przypadku narzędzia PerfView jest doskonałym narzędziem do użycia. Procedurę ręcznego rejestrowania śledzenia wydajności za pomocą narzędzia Narzędzia PerfView można znaleźć na stronie [rejestrowanie śladów wydajności ze narzędzia PerfView](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView) .
+Możliwości zbierania danych śledzenia w przypadku większości scenariuszy są wystarczające w odniesieniu do narzędzia raport-a-problem. Ale istnieją przypadki, w których wymagana jest większa kontrola nad zbieraniem danych śledzenia (na przykład śledzenie o większym rozmiarze buforu), w którym to przypadku narzędzia PerfView jest doskonałym narzędziem do użycia. Procedurę ręcznego rejestrowania śledzenia wydajności za pomocą narzędzia Narzędzia PerfView można znaleźć na stronie [rejestrowanie śladów wydajności ze narzędzia PerfView](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Recording-performance-traces-with-PerfView.md) .
 
 ## <a name="out-of-process-issues"></a>Problemy pozaprocesowe
 
@@ -190,7 +190,7 @@ Co sprawia, że te typy problemów są najbardziej funkcjonalne, należy dostarc
 2. Pobierz [Narzędzie do](https://www.microsoft.com/download/details.aspx?id=12493)zbierania dzienników Microsoft Visual Studio i .NET Framework.
 3. Uruchom narzędzie. Spowoduje to wyjście z pliku zip do **% temp%/vslogs.zip**. Dołącz ten plik do swojej opinii.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Opcje opinii programu Visual Studio](../ide/feedback-options.md)
 * [Zgłoś problem z Visual Studio dla komputerów Mac](/visualstudio/mac/report-a-problem)

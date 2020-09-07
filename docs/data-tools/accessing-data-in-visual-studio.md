@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7c7aa1544f998a88424c0087fadceab63757d23b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36fc3d3fd0b002c110e9184a6d7b15c9fa367c48
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77272090"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509838"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Praca z danymi w programie Visual Studio
 
@@ -89,7 +89,7 @@ Wszystkie funkcje dostępu do danych platformy .NET, w tym na platformie .NET Co
 
 Aby uzyskać dokumentację dostępu do danych powiązaną z ASP.NET, zobacz [Praca z danymi](https://www.asp.net/web-forms/overview/presenting-and-managing-data) w witrynie ASP.NET. Aby zapoznać się z samouczkiem dotyczącym używania Entity Framework z ASP.NET MVC, zobacz [wprowadzenie z Entity Framework 6 Code First przy użyciu MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
-Aplikacje platforma uniwersalna systemu Windows (platformy UWP) w języku C# lub Visual Basic mogą używać Zestaw Microsoft Azure SDK dla platformy .NET do uzyskiwania dostępu do usługi Azure Storage i innych usług platformy Azure. Klasa Windows. Web. HttpClient umożliwia komunikację z dowolną usługą RESTful. Aby uzyskać więcej informacji, zobacz [jak nawiązać połączenie z serwerem HTTP przy użyciu systemu Windows. Web. http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
+Aplikacje platforma uniwersalna systemu Windows (platformy UWP) w języku C# lub Visual Basic mogą używać Zestaw Microsoft Azure SDK dla platformy .NET do uzyskiwania dostępu do usługi Azure Storage i innych usług platformy Azure. Klasa Windows. Web. HttpClient umożliwia komunikację z dowolną usługą RESTful. Aby uzyskać więcej informacji, zobacz [jak nawiązać połączenie z serwerem HTTP przy użyciu systemu Windows. Web. http](/previous-versions/windows/apps/dn469430(v=win.10)).
 
 W przypadku przechowywania danych na komputerze lokalnym zalecanym rozwiązaniem jest użycie oprogramowania SQLite, które jest uruchamiane w tym samym procesie co aplikacja. Jeśli wymagana jest warstwa mapowania obiektów relacyjnych (ORM), można użyć Entity Framework. Aby uzyskać więcej informacji, zobacz [dostęp do danych](/windows/uwp/data-access/index) w centrum deweloperów systemu Windows.
 

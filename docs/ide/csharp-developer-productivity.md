@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567505"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509942"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Przewodnik dotyczący wydajności programu Visual Studio dla deweloperów języka C#
 
@@ -52,7 +52,7 @@ Poniżej przedstawiono popularne skróty programu Visual Studio:
 | **Ctrl** + **D** | Duplikuj wiersz | Duplikuje wiersz kodu, w którym znajduje się kursor (dostępny w programie **Visual Studio 2017 w wersji 15,6** lub nowszej) |
 | **SHIFT** + **Alt**+**+**/**-** | Rozwiń/Zwiń zaznaczenie | Rozwija lub kontraktuje bieżące zaznaczenie w edytorze (dostępne w programie **Visual Studio 2017 w wersji 15,5** i nowszych) |
 | **SHIFT**  +  **Alt**  +  **.** | Wstaw następny pasujący karetkę | Dodaje zaznaczenie i karetkę w następnej lokalizacji pasującej do bieżącego zaznaczenia (dostępne w programie **Visual Studio 2017 w wersji 15,8** i nowszych) |
-| **Ctrl** + **P** | Wyszukiwanie | Przeszukaj wszystkie ustawienia programu Visual Studio |
+| **Ctrl** + **P** | Wyszukaj | Przeszukaj wszystkie ustawienia programu Visual Studio |
 | **F5** | Rozpocznij debugowanie | Rozpocznij debugowanie aplikacji |
 | **Ctrl** + **F5** | Uruchom bez debugowania | Uruchamianie aplikacji lokalnie bez debugowania |
 | **Ctrl** + **K**,**d** (profil domyślny) lub **Ctrl** + **E**,**d** (profil C#) | Formatuj dokument | Czyści naruszenia formatowania pliku na podstawie nowego wiersza, odstępów i ustawień wcięć |
@@ -139,7 +139,7 @@ Popularne szybkie poprawki i refaktoryzacje obejmują:
 
 Aby uzyskać więcej informacji, zobacz [funkcje generowania kodu](code-generation-in-visual-studio.md).
 
-[Analizatory FxCop można zainstalować](../code-quality/install-fxcop-analyzers.md) , aby oflagować problemy związane z kodem. Lub napisz własną poprawkę refaktoryzacji lub kodu za pomocą [analizatorów Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
+[Analizatory FxCop można zainstalować](../code-quality/install-fxcop-analyzers.md) , aby oflagować problemy związane z kodem. Lub napisz własną poprawkę refaktoryzacji lub kodu za pomocą [analizatorów Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix.md).
 
 Kilku członków społeczności dodała bezpłatne rozszerzenia, które dodają dodatkowe inspekcje kodu:
 
@@ -154,7 +154,7 @@ Kilku członków społeczności dodała bezpłatne rozszerzenia, które dodają 
 
 Program Visual Studio ma wiele funkcji ułatwiających wyszukiwanie i [nawigowanie po kodzie](../ide/navigating-code.md).
 
-| Cechy | Skrót | Szczegóły/ulepszenia |
+| Cecha | Skrót | Szczegóły/ulepszenia |
 |- | - | -|
 | Znajdź wszystkie odwołania | **SHIFT** + **F12**| Wyniki są kolorowe i mogą być pogrupowane według projektu, definicji i typu referencyjnego, takich jak Odczyt lub zapis. Możesz również "zablokować" wyniki. |
 | Przejdź do implementacji | **Ctrl** + **F12** | Możesz użyć przejdź do definicji `override` słowa kluczowego, aby przejść do przesłoniętego elementu członkowskiego |
@@ -226,7 +226,7 @@ Za pomocą narzędzia Git lub TFVC można przechowywać i aktualizować kod w pr
 
 Poniżej znajduje się lista funkcji edytora i produktywności, które umożliwiają efektywniejsze pisanie kodu. Może być konieczne włączenie niektórych funkcji, ponieważ są one domyślnie wyłączone (mogą być indeksowane na komputerze, są kontrowersyjnye lub są obecnie eksperymentalne).
 
-| Cechy | Szczegóły | Jak włączyć |
+| Cecha | Szczegóły | Jak włączyć |
 |-|-|-|
 | Zlokalizuj plik w Eksplorator rozwiązań | Podświetla aktywny plik w **Eksplorator rozwiązań** | **Narzędzia**  >  **Opcje**  >  **Projekty i rozwiązania**  >  **Śledź aktywny element w Eksplorator rozwiązań** |
 | Dodaj using dla typów w zestawach odwołań i pakietach NuGet | Pokazuje żarówkę błędu z poprawkami kodu, aby zainstalować pakiet NuGet dla typu niereferencyjnego | **Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  Język **C#**  >  **Zaawansowane**  >  **Sugeruj użycie dla typów w zestawach odwołań** i **Sugeruj użycie dla typów w pakietach NuGet** |

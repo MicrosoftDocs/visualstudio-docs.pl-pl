@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 03bd4d286ab0bcba37c9c1761c0331ce1347f313
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2af6126c751d03968dc7ecd87693e3546376c12a
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219676"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509864"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Zestaw reguł globalizacji dla zarządzanego kodu
 
@@ -21,13 +21,9 @@ Zestaw reguł globalizacji firmy Microsoft umożliwia skoncentrowanie się na pr
 
 |Reguła|Opis|
 |----------|-----------------|
-|[CA1300](../code-quality/ca1300.md)|Określ argument MessageBoxOptions|
-|[CA1301](../code-quality/ca1301.md)|Unikaj duplikowania akceleratorów|
-|[CA1302](../code-quality/ca1302.md)|Nie umieszczajj ciągów specyficznych dla ustawień regionalnych|
 |[CA1303](../code-quality/ca1303.md)|Nie przekazuj literałów jako zlokalizowanych parametrów|
 |[CA1304](../code-quality/ca1304.md)|Określ argument CultureInfo|
 |[CA1305](../code-quality/ca1305.md)|Określ argument IFormatProvider|
-|[CA1306](../code-quality/ca1306.md)|Ustaw ustawienia regionalne dla typów danych|
 |[CA1307](../code-quality/ca1307.md)|Określ StringComparison dla jasności|
 |[CA1308](../code-quality/ca1308.md)|Normalizuj ciągi do postaci zapisanej wielkimi literami|
 |[CA1309](../code-quality/ca1309.md)|Użyj porządkowego ustawienia właściwości StringComparison|
