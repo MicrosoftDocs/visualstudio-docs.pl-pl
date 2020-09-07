@@ -250,7 +250,7 @@
               href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
             - name: Tworzenie n-warstwowej aplikacji do obsługi danych
               href: walkthrough-creating-an-n-tier-data-application.md
-            - name: Aplikacje warstwowe — Przegląd
+            - name: N-warstwowe aplikacje do obsługi danych — omówienie
               href: n-tier-data-applications-overview.md
         - name: Dodatkowe zasoby dla rozwiązywania problemów z błędami dostępu do danych
           href: additional-resources-for-troubleshooting-data-access-errors.md
