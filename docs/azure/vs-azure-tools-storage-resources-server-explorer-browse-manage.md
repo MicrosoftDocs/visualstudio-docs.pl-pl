@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 1a36dc743108d2cfbf9e5405af727b79aeda4808
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8702b9814214a902a644cc5854250b600c301caa
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800479"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508447"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Przeglądanie zasobów magazynu i zarządzanie nimi za pomocą Eksploratora serwera
 
@@ -126,7 +126,7 @@ Można wybrać co najmniej jeden plik do przekazania i można przekazać pliki d
 
 Jeśli używasz Diagnostyka Azure do rejestrowania danych z aplikacji platformy Azure i przeniesionosz dzienniki do konta magazynu, zobaczysz kontenery utworzone przez platformę Azure dla tych dzienników. Wyświetlanie tych dzienników w Eksplorator serwera to prosty sposób na zidentyfikowanie problemów z aplikacją, szczególnie w przypadku, gdy została ona wdrożona na platformie Azure.
 
-Aby uzyskać więcej informacji na temat Diagnostyka Azure, zobacz [zbieranie danych rejestrowania przy użyciu Diagnostyka Azure](https://msdn.microsoft.com/library/azure/gg433048.aspx).
+Aby uzyskać więcej informacji na temat Diagnostyka Azure, zobacz [zbieranie danych rejestrowania przy użyciu Diagnostyka Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="to-get-the-url-for-a-blob"></a>Aby uzyskać adres URL dla obiektu BLOB
 
@@ -275,7 +275,7 @@ Nowe konto magazynu zostanie wyświetlone na liście **Magazyn** w Eksplorator r
 
    * Nazwa istniejącego konta magazynu, które chcesz dołączyć.
    * Klucz dla wybranego konta magazynu. Ta wartość jest zazwyczaj podawana po wybraniu konta magazynu. Jeśli chcesz, aby program Visual Studio zapamiętał klucz konta magazynu, zaznacz pole wyboru **Pamiętaj klucz konta** .
-   * Protokół, który ma być używany do nawiązywania połączenia z kontem magazynu, na przykład HTTP, HTTPS lub niestandardowy punkt końcowy. Aby uzyskać więcej informacji na temat niestandardowych punktów końcowych, zobacz [jak skonfigurować parametry połączenia](https://msdn.microsoft.com/library/azure/ee758697.aspx).
+   * Protokół, który ma być używany do nawiązywania połączenia z kontem magazynu, na przykład HTTP, HTTPS lub niestandardowy punkt końcowy. Aby uzyskać więcej informacji na temat niestandardowych punktów końcowych, zobacz [jak skonfigurować parametry połączenia](/azure/storage/common/storage-configure-connection-string).
 
 ### <a name="to-view-the-secondary-endpoints"></a>Aby wyświetlić pomocnicze punkty końcowe
 

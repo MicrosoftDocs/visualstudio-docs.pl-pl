@@ -15,12 +15,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a72512eef8490f18f1179ae149b9a39c2ddaad4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8238de0760f300b6fa418a5e3eb47eac3db77272
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89285713"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509019"
 ---
 # <a name="net-code-analysis-rules"></a>Reguły analizy kodu platformy .NET
 Narzędzie do analizy kodu zarządzanego zawiera ostrzeżenia wskazujące naruszenia reguł w zarządzanych bibliotekach kodu. Ostrzeżenia są zorganizowane w obszary reguły, takie jak projektowanie, lokalizacja, wydajność i zabezpieczenia. Każde ostrzeżenie oznacza naruszenie reguły analizy kodu zarządzanego. Ta sekcja zawiera szczegółowe omówienie i przykłady dla każdego ostrzeżenia analizy kodu zarządzanego.
@@ -44,18 +44,15 @@ Narzędzie do analizy kodu zarządzanego zawiera ostrzeżenia wskazujące narusz
 
 |Kategoria|Opis|
 |-|-|
-|[Ostrzeżenia według CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Wyświetla wszystkie ostrzeżenia według CheckId|
-|[Ostrzeżenia kryptografii](../code-quality/cryptography-warnings.md)|Ostrzeżenia, które obsługują bezpieczniejsze biblioteki i aplikacje poprzez poprawne użycie kryptografii.|
-|[Ostrzeżenia projektu](../code-quality/design-warnings.md)|Ostrzeżenia, które obsługują prawidłowy projekt biblioteki, zgodnie z zaleceniami dotyczącymi projektowania platformy .NET.|
-|[Ostrzeżenia dotyczące dokumentacji](../code-quality/documentation-warnings.md)|Ostrzeżenia, które obsługują dobrze udokumentowane Projektowanie biblioteki przez poprawne użycie komentarzy dokumentacji XML.|
-|[Ostrzeżenia globalizacji](../code-quality/globalization-warnings.md)|Ostrzeżenia, które obsługują biblioteki i aplikacje gotowe do używania na całym świecie.|
-|[Ostrzeżenia dotyczące współdziałania](../code-quality/interoperability-warnings.md)|Ostrzeżenia, które obsługują interakcję z klientami COM.|
-|[Ostrzeżenia dotyczące utrzymania](../code-quality/maintainability-warnings.md)|Ostrzeżenia, które obsługują konserwację biblioteki i aplikacji.|
-|[Ostrzeżenia dotyczące mobilności](../code-quality/mobility-warnings.md)|Ostrzeżenia, które obsługują wydajne zużycie mocy.|
-|[Ostrzeżenia dotyczące nazewnictwa](../code-quality/naming-warnings.md)|Ostrzeżenia, które wspierają przestrzeganie konwencji nazewnictwa w wytycznych dotyczących projektowania platformy .NET.|
-|[Ostrzeżenia dotyczące wydajności](../code-quality/performance-warnings.md)|Ostrzeżenia, które obsługują biblioteki i aplikacje o wysokiej wydajności.|
-|[Ostrzeżenia dotyczące przenośności](../code-quality/portability-warnings.md)|Ostrzeżenia, które obsługują przenośność na różnych platformach.|
-|[Ostrzeżenia o niezawodności](../code-quality/reliability-warnings.md)|Ostrzeżenia, które obsługują niezawodność biblioteki i aplikacji, takie jak poprawne użycie pamięci i wątku.|
-|[Ostrzeżenia dotyczące zabezpieczeń](../code-quality/security-warnings.md)|Ostrzeżenia, które obsługują bezpieczniejsze biblioteki i aplikacje.|
-|[Ostrzeżenia dotyczące użycia](../code-quality/usage-warnings.md)|Ostrzeżenia, które obsługują odpowiednie użycie platformy .NET.|
-|[Błędy zasad analizy kodu](../code-quality/code-analysis-policy-errors.md)|Błędy, które występują, jeśli zasady analizy kodu nie są spełnione podczas ewidencjonowania.|
+|[Reguły według identyfikatora](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Wyświetla wszystkie reguły według RuleID|
+|[Reguły projektowania](../code-quality/design-warnings.md)|Reguły, które obsługują prawidłowy projekt biblioteki, zgodnie z zaleceniami dotyczącymi projektowania platformy .NET.|
+|[Reguły dokumentacji](../code-quality/documentation-warnings.md)|Reguły, które obsługują dobrze udokumentowane Projektowanie biblioteki przez poprawne użycie komentarzy dokumentacji XML.|
+|[Reguły globalizacji](../code-quality/globalization-warnings.md)|Reguły obsługujące gotowe do używania biblioteki i aplikacje.|
+|[Reguły utrzymania](../code-quality/maintainability-warnings.md)|Reguły obsługujące konserwację biblioteki i aplikacji.|
+|[Reguły nazewnictwa](../code-quality/naming-warnings.md)|Reguły, które obsługują przestrzeganie konwencji nazewnictwa w wytycznych dotyczących projektowania platformy .NET.|
+|[Reguły wydajności](../code-quality/performance-warnings.md)|Reguły obsługujące biblioteki i aplikacje o wysokiej wydajności.|
+|[Przenośność i reguły współdziałania](../code-quality/interoperability-warnings.md)|Reguły obsługujące przenośność na różnych platformach i interakcje z klientami COM.|
+|[Publikowanie reguł](../code-quality/publish-warnings.md)|Reguły obsługujące odpowiednie publikowanie aplikacji platformy .NET.|
+|[Reguły niezawodności](../code-quality/reliability-warnings.md)|Reguły, które obsługują niezawodność biblioteki i aplikacji, takie jak poprawne użycie pamięci i wątku.|
+|[Reguły zabezpieczeń](../code-quality/security-warnings.md)|Reguły obsługujące bezpieczniejsze biblioteki i aplikacje.|
+|[Reguły użycia](../code-quality/usage-warnings.md)|Reguły obsługujące odpowiednie użycie platformy .NET.|

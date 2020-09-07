@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b9c80ba76ba2da978c9cb475299ba0fc9e614120
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1dddc235131322a61cdb0106d866b138040d8c18
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72655152"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508239"
 ---
 # <a name="automatic-feature-suspension"></a>Automatyczne wstrzymanie funkcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Jeśli ilość dostępnej pamięci systemowej spadnie do 200 MB lub mniejszej, p
 - Pamięci podręczne programu Visual Studio są opróżniane.
 
 ## <a name="improve-visual-studio-performance"></a>Poprawianie wydajności programu Visual Studio
- Porady i wskazówki dotyczące poprawy wydajności programu Visual Studio w przypadku dużych rozwiązań lub warunków braku pamięci można znaleźć w temacie [zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+ Porady i wskazówki dotyczące poprawy wydajności programu Visual Studio w przypadku dużych rozwiązań lub warunków braku pamięci można znaleźć w temacie [zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md).
 
 ## <a name="full-solution-analysis-suspended"></a>Zawieszono pełną analizę rozwiązania
  Domyślnie Pełna analiza rozwiązań jest włączona dla Visual Basic i wyłączone dla języka Visual C#. Jednak w przypadku braku pamięci Pełna analiza rozwiązań jest automatycznie wyłączona dla Visual Basic i Visual C#, niezależnie od ich ustawień w oknie dialogowym Opcje. Można jednak ponownie włączyć pełną analizę rozwiązania, wybierając przycisk **ponownie włącz** na pasku informacyjnym, gdy zostanie wyświetlony, zaznaczając pole wyboru **Włącz pełną analizę rozwiązań** w oknie dialogowym Opcje lub przez ponowne uruchomienie programu Visual Studio. W oknie dialogowym Opcje zawsze są wyświetlane bieżące pełne ustawienia analizy rozwiązania. Aby uzyskać więcej informacji, zobacz [jak: Włączanie i wyłączanie pełnej analizy rozwiązania](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
@@ -59,8 +59,8 @@ Ponadto pamięci podręczne używane na potrzeby wewnętrznych operacji programu
 > [!NOTE]
 > Ostrzeżenie o zawieszeniu funkcji automatycznych występuje tylko raz dla poszczególnych rozwiązań, a nie dla poszczególnych sesji. Oznacza to, że w przypadku przełączenia z Visual Basic do Visual C# (lub odwrotnie) i uruchomienia do innego stanu niskiej ilości pamięci można prawdopodobnie uzyskać kolejne ostrzeżenie o zawieszeniu funkcji automatycznej.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: Włączanie i wyłączanie pełnej analizy rozwiązania](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [Podstawy dotyczące odzyskiwania pamięci](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
-- [Zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [Zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)

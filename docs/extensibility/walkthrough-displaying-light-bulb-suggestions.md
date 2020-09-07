@@ -8,21 +8,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 153eda065b9a6e845a39c35aaae34bbe1745f7a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905004"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508954"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Przewodnik: wyświetlanie sugestii żarówki
 Żarówki są ikonami w edytorze programu Visual Studio, które rozszerzają się, aby wyświetlić zestaw akcji, na przykład poprawki dotyczące problemów zidentyfikowanych przez wbudowane analizatory kodu lub refaktoryzacji kodu.
 
  W edytorach Visual C# i Visual Basic można także użyć .NET Compiler Platform ("Roslyn"), aby napisać i spakować własne analizatory kodu z akcjami, które automatycznie wyświetlają żarówki. Aby uzyskać więcej informacji, zobacz:
 
-- [Instrukcje: pisanie diagnostyki i naprawa kodu w języku C#](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)
+- [Instrukcje: pisanie diagnostyki i naprawa kodu w języku C#](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 
-- [Instrukcje: pisanie Visual Basic diagnostyki i poprawiania kodu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)
+- [Instrukcje: pisanie Visual Basic diagnostyki i poprawiania kodu](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix.md)
 
   Inne języki, takie jak C++, udostępniają również żarówki dla niektórych szybkich akcji, takich jak, sugestii do tworzenia implementacji zastępczej tej funkcji.
 

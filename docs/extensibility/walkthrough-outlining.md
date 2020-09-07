@@ -10,12 +10,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb338803d50b2ecc9af8c8db6a6b6dc2f3631161
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+dev_langs:
+- csharp
+- vb
+ms.openlocfilehash: 6e3e60fe873d7bcb512e56c844e76fcbef037d42
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906176"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508928"
 ---
 # <a name="walkthrough-outlining"></a>Przewodnik: tworzenie konspektu
 Skonfiguruj funkcje oparte na języku, takie jak konspekt, definiując rodzaje regionów tekstu, które chcesz rozwinąć lub zwinąć. Można zdefiniować regiony w kontekście usługi językowej lub zdefiniować własne rozszerzenie nazwy pliku i typ zawartości oraz zastosować definicję regionu tylko do tego typu lub zastosować definicje regionów do istniejącego typu zawartości (na przykład "tekst"). W tym instruktażu pokazano, jak definiować i wyświetlać regiony konspektu.
@@ -131,5 +134,5 @@ Skonfiguruj funkcje oparte na języku, takie jak konspekt, definiując rodzaje r
 
 4. Powinien istnieć region konspektu, który zawiera oba nawiasy. Aby zwinąć region tworzenia konspektu, powinno być możliwe kliknięcie znaku minus z lewej strony otwierającego nawiasu klamrowego. Gdy region jest zwinięty, symbol wielokropka (*...*) powinien pojawić się po lewej stronie zwiniętego regionu, a po umieszczeniu wskaźnika na wielokropku powinien pojawić się okno podręczne zawierające **tekst** umieszczania tekstu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

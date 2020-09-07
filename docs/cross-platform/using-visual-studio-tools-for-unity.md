@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f65945f28a577201c1308694bb7196d464330dc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a0db05788682bf08f9899cebb517370a1627b6
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815165"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508967"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Korzystanie z narzędzi Visual Studio Tools for Unity
 
@@ -181,7 +181,7 @@ Należy zauważyć, że w opisany tutaj scenariuszu założono, że masz kod źr
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Aby debugować zarządzany projekt DLL używany w projekcie aparatu Unity
 
-1. Dodaj istniejący projekt DLL do rozwiązania programu Visual Studio wygenerowanego przez Visual Studio Tools for Unity. Rzadziej, możesz rozpocząć pracę z nowym zarządzanym projektem DLL, aby zawierał składniki kodu w projekcie Unity; w takim przypadku można zamiast tego dodać nowy zarządzany projekt do rozwiązania Visual Studio. Aby uzyskać więcej informacji na temat dodawania nowego lub istniejącego projektu do rozwiązania, zobacz [jak: Dodawanie projektów do rozwiązania](https://msdn.microsoft.com/library/ff460187.aspx).
+1. Dodaj istniejący projekt DLL do rozwiązania programu Visual Studio wygenerowanego przez Visual Studio Tools for Unity. Rzadziej, możesz rozpocząć pracę z nowym zarządzanym projektem DLL, aby zawierał składniki kodu w projekcie Unity; w takim przypadku można zamiast tego dodać nowy zarządzany projekt do rozwiązania Visual Studio.
 
    ![Dodaj istniejący projekt DLL do rozwiązania.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 

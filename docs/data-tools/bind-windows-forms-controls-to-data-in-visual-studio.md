@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b6a1d240c865ecc6abddd399c94122a757ee0983
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9af6c503b34d00ea88e74b8af40cd9e7ded643ff
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283011"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508551"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio
 
@@ -53,7 +53,7 @@ Aby uzyskać więcej informacji na temat <xref:System.Windows.Forms.BindingSourc
 
 ## <a name="bind-to-data-in-a-datagridview-control"></a>Powiąż z danymi w formancie DataGridView
 
-W przypadku [kontrolki DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)cała tabela jest powiązana z tą samą kontrolką. Po przeciągnięciu **formantu DataGridView** do formularza pojawia się również pasek narzędzi dla nawigowania po rekordach ( <xref:System.Windows.Forms.BindingNavigator> ). [Zestaw danych](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawia się na pasku składnika. Na poniższej ilustracji jest również dodawana [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) , ponieważ tabela Customers zawiera relację z tabelą Orders. Te zmienne są zadeklarowane w automatycznie generowanym kodzie jako prywatne elementy członkowskie w klasie Form. Wygenerowany automatycznie kod służący do wypełniania **formantu DataGridView** znajduje się w `Form_Load` procedurze obsługi zdarzeń. Kod służący do zapisywania danych w celu zaktualizowania bazy danych znajduje się w `Save` procedurze obsługi zdarzeń dla elementu **BindingNavigator**. Ten kod można przenieść lub zmodyfikować zgodnie z wymaganiami.
+W przypadku [kontrolki DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)cała tabela jest powiązana z tą samą kontrolką. Po przeciągnięciu **formantu DataGridView** do formularza pojawia się również pasek narzędzi dla nawigowania po rekordach ( <xref:System.Windows.Forms.BindingNavigator> ). [Zestaw danych](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawia się na pasku składnika. Na poniższej ilustracji jest również dodawana [TableAdapterManager](/previous-versions/bb384426(v=vs.140)) , ponieważ tabela Customers zawiera relację z tabelą Orders. Te zmienne są zadeklarowane w automatycznie generowanym kodzie jako prywatne elementy członkowskie w klasie Form. Wygenerowany automatycznie kod służący do wypełniania **formantu DataGridView** znajduje się w `Form_Load` procedurze obsługi zdarzeń. Kod służący do zapisywania danych w celu zaktualizowania bazy danych znajduje się w `Save` procedurze obsługi zdarzeń dla elementu **BindingNavigator**. Ten kod można przenieść lub zmodyfikować zgodnie z wymaganiami.
 
 ![GridView z parametrem BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 
@@ -80,7 +80,7 @@ Na poniższej ilustracji przedstawiono domyślne kontrolki powiązane z danymi, 
 
 Należy zauważyć, że każda kontrolka ma tag inteligentny. Ten tag włącza dostosowania, które mają zastosowanie tylko do tej kontrolki.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Powiązanie danych w Windows Forms (.NET Framework)](/dotnet/framework/winforms/windows-forms-data-binding)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 2312c636f465bd39cdcbc4ca0ab63c107151c5be
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 9912a7fa0e83c5433e0eba1c7ffa23763331af6b
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426736"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508499"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Konfigurowanie diagnostyki dla usług w chmurze i maszyn wirtualnych platformy Azure
 W przypadku konieczności rozwiązywania problemów z usługą w chmurze lub maszyną wirtualną platformy Azure można użyć programu Visual Studio, aby łatwiej skonfigurować Diagnostyka Azure. Diagnostyka przechwytuje dane systemowe i rejestruje dane na maszynach wirtualnych i wystąpieniach maszyn wirtualnych, na których działa usługa w chmurze. Dane diagnostyczne są przesyłane do wybranego konta magazynu. Aby uzyskać więcej informacji na temat rejestrowania diagnostycznego na platformie Azure, zobacz [Włączanie rejestrowania diagnostyki dla Web Apps w Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -156,18 +156,18 @@ Jeśli korzystasz z zestawu Azure SDK 2,5 i chcesz określić niestandardowe źr
 ```
 
 ### <a name="performance-counters"></a>Liczniki wydajności
-Informacje o liczniku wydajności mogą pomóc w znalezieniu wąskich gardeł systemu i dostosowaniu wydajności systemu i aplikacji. Aby uzyskać więcej informacji, zobacz [Tworzenie i używanie liczników wydajności w aplikacji platformy Azure](https://msdn.microsoft.com/library/azure/hh411542.aspx). Aby przechwytywać liczniki wydajności, zaznacz pole wyboru **Włącz transfer liczników wydajności** . Aby zwiększyć lub zmniejszyć interwał między transferem dzienników zdarzeń do konta magazynu, należy zmienić wartość **okres transferu (min)** . Zaznacz pola wyboru dla liczników wydajności, które mają być śledzone.
+Informacje o liczniku wydajności mogą pomóc w znalezieniu wąskich gardeł systemu i dostosowaniu wydajności systemu i aplikacji. Aby uzyskać więcej informacji, zobacz [Tworzenie i używanie liczników wydajności w aplikacji platformy Azure](/azure/cloud-services/diagnostics-performance-counters). Aby przechwytywać liczniki wydajności, zaznacz pole wyboru **Włącz transfer liczników wydajności** . Aby zwiększyć lub zmniejszyć interwał między transferem dzienników zdarzeń do konta magazynu, należy zmienić wartość **okres transferu (min)** . Zaznacz pola wyboru dla liczników wydajności, które mają być śledzone.
 
 ![Liczniki wydajności](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
-Aby śledzić licznik wydajności, który nie znajduje się na liście, wprowadź licznik wydajności przy użyciu sugerowanej składni. a następnie wybierz pozycję **Dodaj**. System operacyjny na maszynie wirtualnej określa, które liczniki wydajności można śledzić. Aby uzyskać więcej informacji na temat składni, zobacz [Określanie ścieżki licznika](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx).
+Aby śledzić licznik wydajności, który nie znajduje się na liście, wprowadź licznik wydajności przy użyciu sugerowanej składni. a następnie wybierz pozycję **Dodaj**. System operacyjny na maszynie wirtualnej określa, które liczniki wydajności można śledzić. Aby uzyskać więcej informacji na temat składni, zobacz [Określanie ścieżki licznika](/windows/win32/perfctrs/specifying-a-counter-path).
 
 ### <a name="infrastructure-logs"></a>Dzienniki infrastruktury
 Dzienniki infrastruktury zawierają informacje o infrastrukturze diagnostyki platformy Azure, module RemoteAccess i module RemoteForwarder. Aby zebrać informacje o dziennikach infrastruktury, zaznacz pole wyboru **Włącz transfer dzienników infrastruktury** . Aby zwiększyć lub zmniejszyć interwał między transferem dzienników infrastruktury do konta magazynu, należy zmienić wartość **okres transferu (min)** .
 
 ![Dzienniki infrastruktury diagnostyki](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
-Aby uzyskać więcej informacji, zobacz [zbieranie danych rejestrowania przy użyciu Diagnostyka Azure](https://msdn.microsoft.com/library/azure/gg433048.aspx).
+Aby uzyskać więcej informacji, zobacz [zbieranie danych rejestrowania przy użyciu Diagnostyka Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="log-directories"></a>Katalogi dzienników
 Katalogi dzienników mają zebrane dane z katalogów dzienników dla żądań Internet Information Services (IIS), żądań zakończonych niepowodzeniem lub wybranych folderów. Aby przechwycić katalogi dzienników, zaznacz pole wyboru **Włącz transfer katalogów dzienników** . Aby zwiększyć lub zmniejszyć interwał między transferem dzienników do konta magazynu, należy zmienić wartość **okresu transferu (min)** .
@@ -185,7 +185,7 @@ Zdarzenia są przechwytywane z określonych źródeł zdarzeń i manifestów zda
 
 ![Dzienniki ETW](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766025.png)
 
-Platforma ETW jest obsługiwana w ASP.NET za pomocą klas w przestrzeni nazw [System. Diagnostics. aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) . Przestrzeń nazw Microsoft. WindowsAzure. Diagnostics, która dziedziczy z i rozszerza standardowe klasy [System. Diagnostics. aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) , umożliwia korzystanie z programu [System. Diagnostics. aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) jako struktury rejestrowania w środowisku platformy Azure. Aby uzyskać więcej informacji, zobacz [przejmowanie kontroli nad rejestrowaniem i śledzeniem w Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) i [Włączanie diagnostyki na platformie Azure Cloud Services i maszynach wirtualnych](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Platforma ETW jest obsługiwana w ASP.NET za pomocą klas w przestrzeni nazw [System. Diagnostics. aspx](/dotnet/api/system.diagnostics) . Przestrzeń nazw Microsoft. WindowsAzure. Diagnostics, która dziedziczy z i rozszerza standardowe klasy [System. Diagnostics. aspx](/dotnet/api/system.diagnostics) , umożliwia korzystanie z programu [System. Diagnostics. aspx](/dotnet/api/system.diagnostics) jako struktury rejestrowania w środowisku platformy Azure. Aby uzyskać więcej informacji, zobacz [przejmowanie kontroli nad rejestrowaniem i śledzeniem w Microsoft Azure](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure) i [Włączanie diagnostyki na platformie Azure Cloud Services i maszynach wirtualnych](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="crash-dumps"></a>Zrzuty awaryjne
 Aby przechwytywać informacje o tym, kiedy wystąpienie roli ulega awarii, zaznacz pole wyboru **Włącz transfer zrzutów awaryjnych** . (Ponieważ ASP.NET obsługuje większość wyjątków, jest to zazwyczaj przydatne tylko w przypadku ról procesów roboczych). Aby zwiększyć lub zmniejszyć wartość procentową miejsca do magazynowania na Zrzuty awaryjne, należy zmienić wartość **przydziału katalogu (%)** . Można zmienić kontener magazynu, w którym są przechowywane Zrzuty awaryjne, a także określić, czy ma być przechwytywany **pełny** czy **minipasek** .
@@ -194,7 +194,7 @@ Aktualnie śledzone procesy są wymienione na następnym zrzucie ekranu. Zaznacz
 
 ![Zrzuty awaryjne](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-Aby uzyskać więcej informacji, zobacz [przejmowanie kontroli nad rejestrowaniem i śledzeniem w Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) i [Diagnostyka Microsoft Azure część 4: niestandardowe składniki rejestrowania i zmiany Diagnostyka Azure 1,3](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
+Aby uzyskać więcej informacji, zobacz [przejmowanie kontroli nad rejestrowaniem i śledzeniem w Microsoft Azure](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure) i [Diagnostyka Microsoft Azure część 4: niestandardowe składniki rejestrowania i zmiany Diagnostyka Azure 1,3](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
 
 ## <a name="view-the-diagnostics-data"></a>Wyświetlanie danych diagnostycznych
 Po zebraniu danych diagnostycznych dla usługi w chmurze lub maszyny wirtualnej można ją wyświetlić.
@@ -256,7 +256,7 @@ Jeśli badasz problem z usługą w chmurze, która jest już uruchomiona, możes
     W przypadku zmiany zbierania danych w Eksplorator serwera zmiany będą obowiązywać do momentu całkowitego wdrożenia usługi w chmurze. Jeśli używasz domyślnych ustawień publikowania, zmiany nie są zastępowane. Domyślnym ustawieniem publikowania jest Aktualizowanie istniejącego wdrożenia, a nie wykonanie pełnego ponownego wdrożenia. Aby upewnić się, że ustawienia są jasne w czasie wdrażania, przejdź do karty **Ustawienia zaawansowane** w Kreatorze publikacji, a następnie wyczyść pole wyboru **Aktualizacja wdrożenia** . Po ponownym wdrożeniu za pomocą tego pola wyboru ustawienia są przywracane do tych w pliku. wadcfgx (lub. wadcfg), jak określono za pomocą edytora **Właściwości** dla roli. Jeśli zaktualizujesz wdrożenie, platforma Azure zachowuje wcześniejsze ustawienia.
 
 ## <a name="troubleshoot-azure-cloud-service-issues"></a>Rozwiązywanie problemów z usługą w chmurze platformy Azure
-Jeśli wystąpią problemy z projektami usług w chmurze, takimi jak rola, która jest zablokowana w stanie "zajęty", wielokrotnie odtwarza lub zgłasza wewnętrzny błąd serwera, istnieją narzędzia i techniki, których można użyć do diagnozowania i rozwiązywania problemu. Aby zapoznać się z konkretnymi przykładami typowych problemów i rozwiązań oraz zapoznać się z omówieniem pojęć i narzędzi, których można użyć do diagnozowania i rozwiązywania tych błędów, zobacz [dane diagnostyczne usługi Azure PaaS COMPUTE](https://blogs.msdn.microsoft.com/kwill/2013/08/09/windows-azure-paas-compute-diagnostics-data/).
+Jeśli wystąpią problemy z projektami usług w chmurze, takimi jak rola, która jest zablokowana w stanie "zajęty", wielokrotnie odtwarza lub zgłasza wewnętrzny błąd serwera, istnieją narzędzia i techniki, których można użyć do diagnozowania i rozwiązywania problemu. Aby zapoznać się z konkretnymi przykładami typowych problemów i rozwiązań oraz zapoznać się z omówieniem pojęć i narzędzi, których można użyć do diagnozowania i rozwiązywania tych błędów, zobacz [dane diagnostyczne usługi Azure PaaS COMPUTE](/archive/blogs/kwill/windows-azure-paas-compute-diagnostics-data).
 
 ## <a name="q--a"></a>Pytania i odpowiedzi
 **Jaki jest rozmiar buforu i jak jest on duży?**

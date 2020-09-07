@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 68b64b3097d2b26d30593ac63de5e531d6cc7736
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b6d001a8764d3519f0584de88a55a000447054
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800492"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508486"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debugowanie usługi w chmurze lub maszyny wirtualnej platformy Azure w programie Visual Studio
 
@@ -75,7 +75,7 @@ Włączenie debugowania zdalnego dla usługi w chmurze nie powoduje obniżenia w
 
     ![Dołącz debuger](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746719.gif)
 
-3. Po dołączeniu debugera do wystąpienia Debuguj je w zwykły sposób. Debuger automatycznie dołącza do odpowiedniego procesu hosta dla Twojej roli. W zależności od roli programu debuger dołącza do w3wp.exe, WaWorkerHost.exe lub WaIISHost.exe. Aby sprawdzić proces, do którego jest podłączony debuger, rozwiń węzeł wystąpienia w Eksplorator serwera. Aby uzyskać więcej informacji na temat procesów platformy Azure, zobacz [Architektura roli platformy Azure](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/) .
+3. Po dołączeniu debugera do wystąpienia Debuguj je w zwykły sposób. Debuger automatycznie dołącza do odpowiedniego procesu hosta dla Twojej roli. W zależności od roli programu debuger dołącza do w3wp.exe, WaWorkerHost.exe lub WaIISHost.exe. Aby sprawdzić proces, do którego jest podłączony debuger, rozwiń węzeł wystąpienia w Eksplorator serwera. Aby uzyskać więcej informacji na temat procesów platformy Azure, zobacz [Architektura roli platformy Azure](/archive/blogs/kwill/windows-azure-role-architecture) .
 
     ![Okno dialogowe Wybieranie typu kodu](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
@@ -128,7 +128,7 @@ Programy uruchamiane na maszynach wirtualnych platformy Azure można debugować 
 
     ![Okno dialogowe Wybieranie typu kodu](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-5. Wybierz procesy, które mają być debugowane na maszynie wirtualnej, a następnie wybierz pozycję **Dołącz**. Na przykład możesz wybrać proces w3wp.exe, jeśli chcesz debugować aplikację sieci Web na maszynie wirtualnej. Aby uzyskać więcej informacji, zobacz [debugowanie co najmniej jednego procesu w programie Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) i [architekturze roli platformy Azure](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/) .
+5. Wybierz procesy, które mają być debugowane na maszynie wirtualnej, a następnie wybierz pozycję **Dołącz**. Na przykład możesz wybrać proces w3wp.exe, jeśli chcesz debugować aplikację sieci Web na maszynie wirtualnej. Aby uzyskać więcej informacji, zobacz [debugowanie co najmniej jednego procesu w programie Visual Studio](../debugger/debug-multiple-processes.md) i [architekturze roli platformy Azure](/archive/blogs/kwill/windows-azure-role-architecture) .
 
 ## <a name="create-a-web-project-and-a-virtual-machine-for-debugging"></a>Tworzenie projektu sieci Web i maszyny wirtualnej na potrzeby debugowania
 
@@ -167,7 +167,7 @@ Projekty programu Visual Studio ASP.NET oferują opcję tworzenia przydatnej mas
 
     ![Dziennik aktywności platformy Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. Opublikuj projekt zgodnie z opisem w temacie [jak: wdrażanie projektu sieci Web za pomocą jednego kliknięcia przycisku Publikuj w programie Visual Studio](https://msdn.microsoft.com/library/dd465337.aspx). Ponieważ chcesz debugować maszynę wirtualną, na stronie **Ustawienia** kreatora **publikacji w sieci Web** wybierz opcję **Debuguj** jako konfigurację. Daje to pewność, że symbole kodu są dostępne podczas debugowania.
+6. Opublikuj projekt zgodnie z opisem w temacie [jak: wdrażanie projektu sieci Web za pomocą jednego kliknięcia przycisku Publikuj w programie Visual Studio](/previous-versions/aspnet/dd465337(v=vs.110)). Ponieważ chcesz debugować maszynę wirtualną, na stronie **Ustawienia** kreatora **publikacji w sieci Web** wybierz opcję **Debuguj** jako konfigurację. Daje to pewność, że symbole kodu są dostępne podczas debugowania.
 
     ![Ustawienia publikowania](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
@@ -183,7 +183,7 @@ Projekty programu Visual Studio ASP.NET oferują opcję tworzenia przydatnej mas
 
     ![Okno dialogowe Wybieranie typu kodu](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-10. Wybierz procesy, które mają być debugowane na maszynie wirtualnej, a następnie wybierz pozycję **Dołącz**. Na przykład możesz wybrać proces w3wp.exe, jeśli chcesz debugować aplikację sieci Web na maszynie wirtualnej. Aby uzyskać więcej informacji [, zobacz Debugowanie co najmniej jednego procesu w programie Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) .
+10. Wybierz procesy, które mają być debugowane na maszynie wirtualnej, a następnie wybierz pozycję **Dołącz**. Na przykład możesz wybrać proces w3wp.exe, jeśli chcesz debugować aplikację sieci Web na maszynie wirtualnej. Aby uzyskać więcej informacji [, zobacz Debugowanie co najmniej jednego procesu w programie Visual Studio](../debugger/debug-multiple-processes.md) .
 
 ## <a name="next-steps"></a>Następne kroki
 

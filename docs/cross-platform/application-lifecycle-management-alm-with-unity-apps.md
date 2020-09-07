@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 17bdd86829da199e01a527aa382b8ed3bdfade17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be42bf1498746ce57f662f43c12ece80ac6ca9be
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232944"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509045"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps z aplikacjami Unity
 
@@ -30,7 +30,7 @@ Link odwołania: [Informacje o narzędziach Agile i zarządzaniu projektami Agil
 
 Komentarz ogólny: wszystkie funkcje planowania i śledzenia są niezależne od typu projektu i języków kodowania.
 
-|Cechy|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
+|Cecha|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
 |Zarządzanie zaległościami i przebiegami|Tak||
 |Śledzenie pracy|Tak||
@@ -44,7 +44,7 @@ Link odwołania: ** [Analiza i architektura modelu](../modeling/analyze-and-mode
 
 Uwaga ogólna: Chociaż te funkcje projektowania są niezależne od języka kodowania lub pracują z językami .NET, takimi jak C#, działają na tradycyjnym modelu aplikacji z hierarchiami obiektów i relacjami klas. Projektowanie gier w środowisku Unity obejmuje zupełnie inny model, czyli relacje obiektów graficznych, dźwięków, programów do cieniowania, skryptów i tak dalej. Z tego powodu narzędzia diagramu modelowania programu Visual Studio nie są szczególnie istotne dla całego projektu środowiska Unity. Mogą one być używane do zarządzania relacjami w skryptach C#, ale tylko jedną częścią całości.
 
-|Cechy|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
+|Cecha|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
 |Diagramy sekwencji|Nie||
 |Wykresy zależności|Nie||
@@ -57,7 +57,7 @@ Uwaga ogólna: Chociaż te funkcje projektowania są niezależne od języka kodo
 
 ## <a name="code"></a>Kod
 
-|Cechy|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
+|Cecha|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
 |[Użyj Kontrola wersji serwera Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) lub Azure Repos|Tak|Projekty Unity to po prostu Kolekcja plików, które mogą być umieszczane w systemach kontroli wersji, takich jak każdy inny projekt, ale istnieje kilka specjalnych zagadnień opisanych poniżej tej tabeli.|
 |[Wprowadzenie do usługi Git w Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Tak|Zobacz uwagi po tabeli.|
@@ -77,7 +77,7 @@ Specjalne zagadnienia dotyczące kontroli wersji z użyciem aparatu Unity:
 
 Link odwołania: ** [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
-|Cechy|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
+|Cecha|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
 |Team Foundation Server lokalnego (TFS)|Najmniejszy|Projekty Unity są kompilowane za pomocą środowiska Unity, a nie za pomocą systemu kompilacji programu Visual Studio (Kompilowanie w ramach Visual Studio Tools for Unity spowoduje skompilowanie skryptów, ale nie powoduje utworzenia pliku wykonywalnego). Można [tworzyć projekty Unity z poziomu wiersza polecenia](https://docs.unity3d.com/Manual/CommandLineArguments.html) (dokumentacja aparatu Unity), dzięki czemu można skonfigurować proces programu MSBuild na serwerze TFS do wykonywania odpowiednich poleceń aparatu Unity, pod warunkiem, że na tym komputerze jest zainstalowany sam aparat Unity.<br /><br /> Aparat Unity oferuje także [kompilację w chmurze środowiska Unity](https://build.cloud.unity3d.com/landing/), która monitoruje repozytorium Git lub SVN i uruchamia okresowe kompilacje. W tej chwili nie działa z TFVC lub Azure DevOps Services.|
 |Lokalny serwer kompilacji połączony z Azure DevOps Services|Najmniejszy|W oparciu o te same warunki, jak powyżej, możliwe jest dalsze kierowanie kompilacji wyzwalanych za pośrednictwem Azure DevOps Services do korzystania z lokalnego komputera TFS. Instrukcje można znaleźć w temacie [build and Release Agents](/azure/devops/pipelines/agents/agents?view=vsts) .|
@@ -87,7 +87,7 @@ Link odwołania: ** [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
 ## <a name="test"></a>Testowanie
 
-|Cechy|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
+|Cecha|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
 |Planowanie testów, tworzenie przypadków testowych i organizowanie zestawów testów|Tak||
 |Testowanie ręczne|Tak||
@@ -100,19 +100,19 @@ Link odwołania: ** [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
 Link odwołania: ** [poprawianie jakości kodu](../test/improve-code-quality.md)**
 
-|Cechy|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
+|Cecha|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
 |[Analizowanie jakości kodu zarządzanego](../code-quality/code-analysis-for-managed-code-overview.md)|Tak|Program może analizować kod skryptu C# w programie Visual Studio.|
-|[Znajdź zduplikowany kod przy użyciu funkcji wykrywania klonowania kodu](https://msdn.microsoft.com/library/hh205279.aspx)|Tak|Program może analizować kod skryptu C# w programie Visual Studio.|
+|[Znajdź zduplikowany kod przy użyciu funkcji wykrywania klonowania kodu](/previous-versions/hh205279(v=vs.140))|Tak|Program może analizować kod skryptu C# w programie Visual Studio.|
 |[Mierzenie złożoności i łatwość utrzymania kodu zarządzanego](../code-quality/code-metrics-values.md)|Tak|Program może analizować kod skryptu C# w programie Visual Studio.|
 |[Narzędzia wydajności](../profiling/performance-explorer.md)|Nie|Użyj [profilera Unity](https://docs.unity3d.com/Manual/Profiler.html) (witryna sieci Web Unity).|
-|[Analiza problemów pamięci .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|Nie|Narzędzia Visual Studio Tools nie mają punktów zaczepienia do struktury mono (używanej przez aparat Unity) do profilowania. Użyj [profilera Unity](http://docs.unity3d.com/Manual/Profiler.html) (dokumentacja aparatu Unity).|
+|[Analiza problemów pamięci .NET Framework](../vs-2015/misc/analyze-dotnet-framework-memory-issues.md)|Nie|Narzędzia Visual Studio Tools nie mają punktów zaczepienia do struktury mono (używanej przez aparat Unity) do profilowania. Użyj [profilera Unity](http://docs.unity3d.com/Manual/Profiler.html) (dokumentacja aparatu Unity).|
 
 ## <a name="release-management"></a>Release Management
 
 Link odwołania: [kompilacja i wydanie w Azure Pipelines i TFS](/azure/devops/pipelines/overview?view=vsts)
 
-|Cechy|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
+|Cecha|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
 |Zarządzanie procesami wydania|Tak||
 |Wdrażanie na serwerach do ładowania bezpośredniego za pośrednictwem skryptów|Tak||
@@ -122,6 +122,6 @@ Link odwołania: [kompilacja i wydanie w Azure Pipelines i TFS](/azure/devops/pi
 
 Link odwołania: ** [monitor z HockeyApp](https://www.hockeyapp.net/features/)**
 
-|Cechy|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
+|Cecha|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
 |Rozkład awarii, dane telemetryczne i dystrybucja wersji beta|Tak|HockeyApp jest szczególnie przydatna do obsługi dystrybucji beta i uzyskiwania raportów o awariach.<br /><br /> W przypadku danych telemetrycznych ze skryptów języka C# można korzystać z dowolnej platformy analitycznej, pod warunkiem, że jest ona uruchamiana w wersji platformy .NET używanej przez środowisko Unity. Umożliwia to jednak analizę tylko w skryptach gier i nie jest to bardziej głęboko w aparacie aparatu Unity. Obecnie nie istnieje wtyczka dla Application Insights, ale wtyczki są dostępne dla innych rozwiązań analitycznych, takich jak [Analiza aparatu Unity](https://assetstore.unity.com/packages/add-ons/services/analytics/unity-analytics-28120) i [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). Usługi, takie jak analiza aparatu Unity, które wiedzą, że projekt środowiska Unity, oczywiście zapewniają znacznie bardziej zrozumiałą analizę niż ogólne struktury.|

@@ -9,17 +9,17 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: 179737f7a4a55fd6111338363ad6668a43689205
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ed5e9635cbe088773336a29bc9a8853d7e0a5db
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280768"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508473"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>Tworzenie projektów platformy Azure z poziomu wiersza polecenia
 Korzystając z Microsoft Build Engine (MSBuild), można tworzyć produkty w środowiskach kompilacji, w których nie zainstalowano programu Visual Studio. MSBuild używa formatu XML dla plików projektu, które są rozszerzalne i w pełni obsługiwane przez firmę Microsoft. Korzystając z formatu pliku MSBuild, można opisać, jakie elementy muszą zostać skompilowane dla jednej lub kilku platform i konfiguracji.
 
-Program MSBuild można również uruchomić w wierszu polecenia, a w tym temacie opisano to podejście. Ustawiając właściwości w wierszu polecenia, można utworzyć określone konfiguracje projektu. Analogicznie można także zdefiniować cele kompilacji MSBuild. Aby uzyskać więcej informacji na temat parametrów wiersza polecenia i programu MSBuild, zobacz [Dokumentacja wiersza polecenia programu MSBuild](https://msdn.microsoft.com/library/ms164311.aspx).
+Program MSBuild można również uruchomić w wierszu polecenia, a w tym temacie opisano to podejście. Ustawiając właściwości w wierszu polecenia, można utworzyć określone konfiguracje projektu. Analogicznie można także zdefiniować cele kompilacji MSBuild. Aby uzyskać więcej informacji na temat parametrów wiersza polecenia i programu MSBuild, zobacz [Dokumentacja wiersza polecenia programu MSBuild](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="msbuild-parameters"></a>Parametry programu MSBuild
 Najprostszym sposobem utworzenia pakietu jest uruchomienie programu MSBuild z `/t:Publish` opcją. Domyślnie to polecenie tworzy katalog w odniesieniu do folderu głównego projektu, na przykład `<ProjectDirectory>\bin\Configuration\app.publish\` . Podczas kompilowania projektu platformy Azure generowane są dwa pliki: sam plik pakietu i towarzyszący plik konfiguracji:

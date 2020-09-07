@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 6f05f97155427d75b88bb509a6bfb09644d8c686
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 960bd86a1e0993e4d2c57514a29ceecca34cca3d
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250849"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508512"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurowanie ról usług w chmurze platformy Azure przy użyciu programu Visual Studio
 Usługa w chmurze platformy Azure może mieć co najmniej jedną rolę procesu roboczego lub sieci Web. Dla każdej roli należy zdefiniować sposób konfigurowania tej roli, a także skonfigurować sposób jej uruchamiania. Aby dowiedzieć się więcej o rolach w usługach w chmurze, zobacz [wprowadzenie do usługi Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -140,7 +140,7 @@ W poniższych krokach pokazano, jak programowo uzyskać dostęp do parametrów p
     ```
 
 ## <a name="add-custom-settings-to-use-in-your-azure-cloud-service"></a>Dodawanie niestandardowych ustawień do użycia w usłudze w chmurze platformy Azure
-Ustawienia niestandardowe w pliku konfiguracji usługi pozwalają dodać nazwę i wartość ciągu dla określonej konfiguracji usługi. Możesz użyć tego ustawienia, aby skonfigurować funkcję w usłudze w chmurze, odczytując wartość ustawienia i korzystając z tej wartości w celu kontrolowania logiki w kodzie. Te wartości konfiguracji usługi można zmienić bez konieczności ponownego kompilowania pakietu usługi lub korzystania z usługi w chmurze. Kod może sprawdzać powiadomienia o zmianie ustawień. Zobacz [RoleEnvironment. zmiana zdarzenia](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.changing.aspx).
+Ustawienia niestandardowe w pliku konfiguracji usługi pozwalają dodać nazwę i wartość ciągu dla określonej konfiguracji usługi. Możesz użyć tego ustawienia, aby skonfigurować funkcję w usłudze w chmurze, odczytując wartość ustawienia i korzystając z tej wartości w celu kontrolowania logiki w kodzie. Te wartości konfiguracji usługi można zmienić bez konieczności ponownego kompilowania pakietu usługi lub korzystania z usługi w chmurze. Kod może sprawdzać powiadomienia o zmianie ustawień. Zobacz [RoleEnvironment. zmiana zdarzenia](/previous-versions/azure/reference/ee758134(v=azure.100)).
 
 Możesz dodawać, usuwać lub modyfikować niestandardowe ustawienia konfiguracji usługi. Mogą być potrzebne różne wartości dla tych ciągów dla różnych konfiguracji usługi.
 
@@ -269,4 +269,4 @@ Aby wyświetlić plik utworzony przez kod w poprzedniej sekcji, wykonaj następu
 1. Po otwarciu okna Eksploratora Windows wprowadź "MyLocalStorageTest.txt" "w polu tekstowym **Wyszukaj** , a następnie wybierz **klawisz ENTER** , aby rozpocząć wyszukiwanie.
 
 ## <a name="next-steps"></a>Następne kroki
-Dowiedz się więcej o projektach platformy Azure w programie Visual Studio, odczytując [konfigurację projektu platformy Azure](vs-azure-tools-configuring-an-azure-project.md). Dowiedz się więcej o schemacie usługi w chmurze, odczytując [Informacje o schemacie](https://msdn.microsoft.com/library/azure/dd179398).
+Dowiedz się więcej o projektach platformy Azure w programie Visual Studio, odczytując [konfigurację projektu platformy Azure](vs-azure-tools-configuring-an-azure-project.md). Dowiedz się więcej o schemacie usługi w chmurze, odczytując [Informacje o schemacie](/previous-versions/azure/dd179398(v=azure.100)).

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 04e3ee89498447f7743fc1b5119e129f046b4fcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c92a2bb2349f1b5543672d7ecd944e3d82bb500
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911780"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508434"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testowanie wydajności usługi w chmurze
 ## <a name="overview"></a>Omówienie
@@ -54,7 +54,7 @@ Zazwyczaj symulowane jest obciążenie w celu przetestowania usług w chmurze w 
 ## <a name="profiling-a-cloud-service-in-azure"></a>Profilowanie usługi w chmurze na platformie Azure
 Po opublikowaniu usługi w chmurze w programie Visual Studio można profilować usługę i określić ustawienia profilowania, które udostępniają odpowiednie informacje. Sesja profilowania jest uruchamiana dla każdego wystąpienia roli. Aby uzyskać więcej informacji o sposobach publikowania usługi w programie Visual Studio, zobacz [Publikowanie w usłudze Azure Cloud Service w programie Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
-Aby dowiedzieć się więcej na temat profilowania wydajności w programie Visual Studio, zobacz [początkując Przewodnik dotyczący profilowania wydajności](https://msdn.microsoft.com/library/azure/ms182372.aspx) i [analizowania wydajności aplikacji przy użyciu narzędzia profilowania](https://msdn.microsoft.com/library/azure/z9z62c29.aspx).
+Aby dowiedzieć się więcej na temat profilowania wydajności w programie Visual Studio, zobacz [początkując Przewodnik dotyczący profilowania wydajności](../profiling/beginners-guide-to-performance-profiling.md) i [analizowania wydajności aplikacji przy użyciu narzędzia profilowania](../profiling/performance-explorer.md).
 
 > [!NOTE]
 > Podczas publikowania usługi w chmurze można włączyć opcję IntelliTrace lub profilowania. Nie można włączyć obu tych wartości.
@@ -68,7 +68,7 @@ Możesz użyć różnych metod zbierania na potrzeby profilowania na podstawie p
 * **Instrumentacja** — ta metoda umożliwia zbieranie szczegółowych danych o chronometrażu, które są przydatne w przypadku analizy ukierunkowanej i analizowania problemów z wydajnością danych wejściowych/wyjściowych. Metoda Instrumentacji rejestruje każde wejście, wyjście i wywołanie funkcji funkcji w module podczas przebiegu profilowania. Ta metoda jest przydatna do zbierania szczegółowych informacji o chronometrażu w sekcji kodu oraz do poznania wpływu operacji wejścia i wyjścia na wydajność aplikacji. Ta metoda jest wyłączona dla komputera z 32-bitowym systemem operacyjnym. Ta opcja jest dostępna tylko wtedy, gdy uruchamiasz usługę w chmurze na platformie Azure, a nie lokalnie w emulatorze obliczeniowym.
 * **Alokacja pamięci platformy .NET** — ta metoda zbiera dane alokacji pamięci .NET Framework przy użyciu metody profilowania próbkowania. Zebrane dane obejmują liczbę i rozmiar przyznanych obiektów.
 * **Współbieżność** — ta metoda zbiera dane rywalizacji o zasoby oraz dane dotyczące procesu i wykonywania wątku, które są przydatne podczas analizowania aplikacji wielowątkowych i wieloprocesowych. Metoda współbieżności zbiera dane dla każdego zdarzenia, które blokuje wykonywanie kodu, na przykład gdy wątek oczekuje na zwolnienie zablokowanego dostępu do zasobu aplikacji. Ta metoda jest przydatna do analizowania aplikacji wielowątkowych.
-* Można również włączyć **profilowanie interakcji między warstwami**, co zapewnia dodatkowe informacje o czasach wykonywania synchronicznych wywołań ADO.NET w funkcjach wielowarstwowych aplikacji, które komunikują się z co najmniej jedną bazą danych. Dane interakcji warstwy można zbierać przy użyciu dowolnej metody profilowania. Aby uzyskać więcej informacji na temat profilowania interakcji między warstwami, zobacz [Widok interakcji między warstwami](https://msdn.microsoft.com/library/azure/dd557764.aspx).
+* Można również włączyć **profilowanie interakcji między warstwami**, co zapewnia dodatkowe informacje o czasach wykonywania synchronicznych wywołań ADO.NET w funkcjach wielowarstwowych aplikacji, które komunikują się z co najmniej jedną bazą danych. Dane interakcji warstwy można zbierać przy użyciu dowolnej metody profilowania. Aby uzyskać więcej informacji na temat profilowania interakcji między warstwami, zobacz [Widok interakcji między warstwami](../profiling/tier-interactions-view.md).
 
 ## <a name="configuring-profiling-settings"></a>Konfigurowanie ustawień profilowania
 Na poniższej ilustracji przedstawiono sposób konfigurowania ustawień profilowania przy użyciu okna dialogowego publikowanie aplikacji platformy Azure.
@@ -102,7 +102,7 @@ Dla każdego wystąpienia roli w usłudze w chmurze zostanie utworzona sesja pro
 3. Aby wyświetlić raporty profilowania dla wystąpienia, wybierz rolę w usłudze, otwórz menu skrótów dla określonego wystąpienia, a następnie wybierz polecenie **Wyświetl raport profilowania**.
 
     Raport, plik. vsp, jest teraz pobierany z platformy Azure, a w dzienniku aktywności platformy Azure zostanie wyświetlony stan pobierania. Po zakończeniu pobierania raport profilowania zostanie wyświetlony na karcie w edytorze dla programu Visual Studio o nazwie <nazwa roli \> *<numerem \> wystąpienia*<identyfikator \> . vsp. Dane podsumowujące raportu są wyświetlane.
-4. Aby wyświetlić różne widoki raportu, na liście bieżący widok wybierz odpowiedni typ widoku. Aby uzyskać więcej informacji, zobacz [narzędzia profilowania widoków raportów](https://msdn.microsoft.com/library/azure/bb385755.aspx).
+4. Aby wyświetlić różne widoki raportu, na liście bieżący widok wybierz odpowiedni typ widoku. Aby uzyskać więcej informacji, zobacz [narzędzia profilowania widoków raportów](../profiling/performance-report-views.md).
 
 ## <a name="next-steps"></a>Następne kroki
 [Debugowanie Cloud Services](vs-azure-tools-debug-cloud-services-virtual-machines.md)

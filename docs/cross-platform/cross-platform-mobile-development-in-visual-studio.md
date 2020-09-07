@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e0f589ae3c6daa48a9bea6d8a0b561d7b8de337
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 19e1a968af60b76d07e24af1d86c74e427a3cd52
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801597"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509058"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Programowanie aplikacji mobilnych na wiele platform w programie Visual Studio
 
@@ -82,7 +82,6 @@ Za pomocą Visual Studio Tools dla platformy Xamarin można docelowo dla system�
 |[Wprowadzenie do platforma uniwersalna systemu Windows](/windows/uwp/get-started/universal-application-platform-guide)|
 |[Tworzenie pierwszej aplikacji](/windows/uwp/get-started/your-first-app)|
 |[Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
-|[Migracja aplikacji na platformę uniwersalną systemu Windows](https://msdn.microsoft.com/library/mt148501.aspx)|
 
 ::: moniker range="vs-2017"
 
@@ -166,7 +165,7 @@ Za pomocą Visual Studio Tools dla platformy Xamarin można docelowo dla system�
 |[Obejrzyj film wideo z wprowadzeniem do wersji Zapoznawczej Visual Studio Tools for Unity 2,0](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (wideo)|
 |[Dowiedz się więcej na temat aparatu Unity](https://unity.com/) (witryna sieci Web Unity)|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dodawanie Microsoft 365 interfejsów API do projektu programu Visual Studio](/office/developer-program/office-365-developer-program)
 - [App Services platformy Azure — Mobile Apps](https://azure.microsoft.com/services/app-service/mobile/)

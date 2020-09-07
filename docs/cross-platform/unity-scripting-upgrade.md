@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: e824951556124f080f14cdd9f440037decf5146f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a53db2d7cb73fbbb8ea694386dbada3186957ee
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815139"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508980"
 ---
 # <a name="using-net-4x-in-unity"></a>Używanie platformy .NET 4.x w aparacie Unity
 
@@ -233,7 +233,7 @@ Te porady ułatwiają rozpoczęcie pracy z programem TAP w środowisku Unity:
 * Funkcje asynchroniczne, które zwracają zadanie, powinny mieć sufiks **"Async"** dołączony do ich nazw. Sufiks "Async" pomaga wskazać, że funkcja powinna zawsze oczekiwać.
 * Należy używać tylko `async void` zwracanego typu dla funkcji, które wyłączają funkcje asynchroniczne z tradycyjnego kodu synchronicznego. Takie funkcje nie mogą być oczekiwane i nie powinny mieć sufiksu "Async" w swoich nazwach.
 * Środowisko Unity korzysta z UnitySynchronizationContext w celu zapewnienia domyślnego uruchamiania funkcji asynchronicznych w wątku głównym. Interfejs API Unity nie jest dostępny poza głównym wątkiem.
-* Można uruchamiać zadania w wątkach w tle przy użyciu metod takich jak [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) i [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx) . Ta technika jest przydatna do odciążania kosztownych operacji z wątku głównego w celu zwiększenia wydajności. Korzystanie z wątków w tle może jednak prowadzić do problemów, które są trudne do debugowania, takich jak sytuacje [wyścigu](https://wikipedia.org/wiki/Race_condition).
+* Można uruchamiać zadania w wątkach w tle przy użyciu metod takich jak [`Task.Run`](/dotnet/api/system.threading.tasks.task.run) i [`Task.ConfigureAwait(false)`](/dotnet/api/system.threading.tasks.task.configureawait) . Ta technika jest przydatna do odciążania kosztownych operacji z wątku głównego w celu zwiększenia wydajności. Korzystanie z wątków w tle może jednak prowadzić do problemów, które są trudne do debugowania, takich jak sytuacje [wyścigu](https://wikipedia.org/wiki/Race_condition).
 * Interfejs API Unity nie jest dostępny poza głównym wątkiem.
 * Zadania korzystające z wątków nie są obsługiwane w kompilacjach WebGL środowiska Unity.
 
@@ -341,7 +341,7 @@ Ponadto, jak wspomniano w powyższym przykładzie Json.NET, aparat Unity podejmi
 
 Przykład zawiera przykłady kilku funkcji platformy .NET 4. x. Możesz pobrać projekt lub wyświetlić kod źródłowy w serwisie [GitHub](https://github.com/Microsoft/unity-scripting-upgrade).
 
-## <a name="additional-resources"></a>Zasoby dodatkowe
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 * [Blog aparatu Unity — ulepszenia środowiska uruchomieniowego skryptów w środowisku Unity 2018,2](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)
 * [Historia języka C #](/dotnet/csharp/whats-new/csharp-version-history)

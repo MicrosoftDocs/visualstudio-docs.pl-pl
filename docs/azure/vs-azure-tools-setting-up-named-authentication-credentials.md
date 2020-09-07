@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 57841baaf147c2aae02ac89a8401c46d3bd64ca3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42d1f394cb4e65a3794e3e869f182ba81237eeef
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911679"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508395"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Konfigurowanie nazwanych poświadczeń uwierzytelniania
 
@@ -33,7 +33,7 @@ W Eksplorator serwera kliknij prawym przyciskiem myszy węzeł **platformy Azure
 - Wybierz aktywną subskrypcję i wybierz pozycję **Edytuj**, aby otworzyć okno dialogowe, w którym można edytować istniejącą subskrypcję do użycia w ramach uwierzytelniania.
 - Wybierz pozycję **Nowy** , aby otworzyć okno dialogowe **Nowa subskrypcja** i podać wymagane szczegóły. Aby przekazać certyfikat do usługi w chmurze w oknie dialogowym, zaloguj się do Azure Portal, przejdź do usługi w chmurze, wybierz pozycję **ustawienia > certyfikaty zarządzania**, wybierz pozycję **Przekaż**, a następnie określ ścieżkę do `.cer` pliku.
 
-Jeśli chcesz samodzielnie utworzyć certyfikat, możesz zapoznać się z instrukcjami w temacie [Tworzenie i przekazywanie certyfikatu zarządzania dla platformy Azure](https://msdn.microsoft.com/library/windowsazure/gg551722.aspx) , a następnie ręczne przekazywanie certyfikatu do [Azure Portal](https://portal.azure.com/).
+Jeśli chcesz samodzielnie utworzyć certyfikat, możesz zapoznać się z instrukcjami w temacie [Tworzenie i przekazywanie certyfikatu zarządzania dla platformy Azure](/azure/cloud-services/cloud-services-certs-create) , a następnie ręczne przekazywanie certyfikatu do [Azure Portal](https://portal.azure.com/).
 
 ## <a name="next-steps"></a>Następne kroki
 

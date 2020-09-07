@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 236a95cd8d4af8da91199bf79e7c9fe3aa0d49af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 976e676cda09d50e34acb88a12551b1531595888
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769485"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508382"
 ---
 # <a name="automatic-feature-suspension"></a>Automatyczne wstrzymanie funkcji
 
@@ -40,7 +40,7 @@ W przypadku niedostatecznej ilości pamięci wykonywane są następujące akcje:
 
 ## <a name="improve-visual-studio-performance"></a>Poprawianie wydajności programu Visual Studio
 
-Porady i wskazówki dotyczące poprawy wydajności programu Visual Studio w przypadku dużych rozwiązań lub warunków braku pamięci można znaleźć w temacie [zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Porady i wskazówki dotyczące poprawy wydajności programu Visual Studio w przypadku dużych rozwiązań lub warunków braku pamięci można znaleźć w temacie [zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md).
 
 ## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>Analiza kodu na żywo jest ograniczona do minimalnego zakresu
 
@@ -65,8 +65,8 @@ Ponadto pamięci podręczne używane na potrzeby wewnętrznych operacji programu
 > [!NOTE]
 > Ostrzeżenie o zawieszeniu funkcji automatycznych występuje tylko raz dla poszczególnych rozwiązań, a nie dla poszczególnych sesji. Oznacza to, że w przypadku przełączenia z Visual Basic do Visual C# (lub odwrotnie) i uruchomienia do innego stanu niskiej ilości pamięci można prawdopodobnie uzyskać kolejne ostrzeżenie o zawieszeniu funkcji automatycznej.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: Konfigurowanie zakresu analizy kodu na żywo dla kodu zarządzanego](./configure-live-code-analysis-scope-managed-code.md)
 - [Podstawy dotyczące odzyskiwania pamięci](/dotnet/standard/garbage-collection/fundamentals)
-- [Zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [Zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)

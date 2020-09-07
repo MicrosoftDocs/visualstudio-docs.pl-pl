@@ -21,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28fd0033f5ef6f83ca29432f95d6b635fcd36116
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c298658c7e9f385e5140ea46f8069512c0bf278
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634373"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508044"
 ---
 # <a name="copy-task"></a>Copy — Zadanie
 
@@ -42,7 +42,7 @@ W poniższej tabeli opisano parametry `Copy` zadania.
 |`DestinationFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Określa listę plików, do których należy skopiować pliki źródłowe. Ta lista powinna być zmapowana jeden-do-jednego na listę określoną w parametrze `SourceFiles`. Oznacza to, że pierwszy plik określony w parametrze `SourceFiles` będzie kopiowany do pierwszej lokalizacji określonej w parametrze `DestinationFiles` itd.|
 |`DestinationFolder`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Określa katalog, do którego pliki mają zostać skopiowane. Musi to być katalog, a nie plik. Jeśli katalog nie istnieje, zostanie utworzony automatycznie.|
 |`OverwriteReadOnlyFiles`|Opcjonalny `Boolean` parametr.<br /><br /> Zastępowanie plików następuje nawet wtedy, gdy są oznaczone jako tylko do odczytu.|
-|`Retries`|Opcjonalny `Int32` parametr.<br /><br /> Określa, ile razy należy podjąć próbę kopiowania, jeśli wszystkie poprzednie próby się nie powiodły. Domyślnie przyjmuje wartość zero.<br /><br /> **Uwaga:** Użycie ponownych prób może maskować problem z synchronizacją w procesie kompilacji.|
+|`Retries`|Opcjonalny `Int32` parametr.<br /><br /> Określa, ile razy należy podjąć próbę kopiowania, jeśli wszystkie poprzednie próby się nie powiodły. Domyślnie przyjmuje wartość zero.<br /><br /> **Przestroga:** Użycie ponownych prób może maskować problem z synchronizacją w procesie kompilacji.<br /><br /> **Uwaga:** Gdy domyślne *zadanie* to zero ponownych prób, użycie zadania często przebiega, `$(CopyRetryCount)` co jest domyślnie niezerowe.|
 |`RetryDelayMilliseconds`|Opcjonalny `Int32` parametr.<br /><br /> Określa opóźnienie między kolejnymi niezbędnymi ponownymi próbami. Wartością domyślną jest wartość argumentu RetryDelayMillisecondsDefault, który jest przekazywany do konstruktora CopyTask.|
 |`SkipUnchangedFiles`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli ma wartość `true`, następuje pomijanie kopiowania plików, które są niezmienione między lokalizacjami źródłowymi i docelowymi. Zadanie `Copy` uznaje pliki za niezmienione, jeśli mają taki sam rozmiar i taki sam czas ostatniej modyfikacji. <br /><br /> **Uwaga:**  Jeśli ustawisz ten parametr na `true` , nie należy używać analizy zależności na elemencie docelowym zawierającym, ponieważ to zadanie działa tylko wtedy, gdy czas ostatniej modyfikacji plików źródłowych jest nowszy niż czas ostatniej modyfikacji plików docelowych.|
 |`SourceFiles`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa pliki do skopiowania.|
@@ -116,7 +116,7 @@ Poniższy przykład ilustruje, jak wykonać kopiowanie cykliczne. Ten projekt ko
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)
