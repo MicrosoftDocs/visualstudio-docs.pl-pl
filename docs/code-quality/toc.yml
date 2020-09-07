@@ -567,6 +567,8 @@
                   href: ca1832.md
                 - name: 'CA1833: Użyj metody AsSpan lub AsMemory zamiast indeksatorów opartych na zakresie do pobierania części Memory dla tablicy'
                   href: ca1833.md
+                - name: 'CA1834: Użyj StringBuilder.Append(char) dla ciągów z pojedynczym znakiem'
+                  href: ca1834.md
                 - name: 'CA1835: Preferuj przeciążenia dotyczące pamięci dla metod strumienia ReadAsync/WriteAsync'
                   href: ca1835.md
                 - name: 'CA1836: Preferuj metodę IsEmpty względem metody Count, jeśli jest dostępna'
