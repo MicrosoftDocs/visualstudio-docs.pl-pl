@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d74006051fd39043de75cec81fdad3f1083adef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
+ms.lasthandoff: 09/07/2020
 ms.locfileid: "64834924"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Przewodnik: brak obiektów spowodowany błędnie skonfigurowanym potokiem
