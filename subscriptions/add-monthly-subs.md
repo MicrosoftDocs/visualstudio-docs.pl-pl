@@ -1,5 +1,5 @@
 ---
-title: Dodawanie nowych miesięcznych subskrypcji programu Visual Studio do portalu administracyjnego subskrypcji | Microsoft Docs
+title: Dodaj nowe subskrypcje miesięczne do portalu administracyjnego subskrypcji | Microsoft Docs
 author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: Dowiedz się, jak nowo zakupione miesięczne subskrypcje programu Visual Studio w portalu administracyjnym subskrypcji
-ms.openlocfilehash: 209484968e85613da7cf38af3dce6944413c678a
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: d765e03d2c499c8e96bb97fc532596b7cfd0b903
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426836"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561406"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Dodawanie nowych miesięcznych subskrypcji programu Visual Studio do portalu administracyjnego subskrypcji
 Gdy kupisz nowe miesięczne subskrypcje programu Visual Studio przy użyciu subskrypcji platformy Azure, możesz dodać je do portalu administracyjnego subskrypcji, aby przypisać je do użytkowników.  
@@ -28,14 +28,14 @@ Kroki umożliwiające dodanie subskrypcji miesięcznych zależą od tego, jakieg
 1. Na karcie **Zarządzanie subskrybentami** wybierz listę rozwijaną **Dodaj umowę** . 
 1. Wybierz pozycję **nowe subskrypcje miesięczne** na liście rozwijanej
    > [!div class="mx-imgBorder"]
-   > ![Lista rozwijana Dodaj nowe subskrypcje miesięczne](_img/add-monthly-subs/add-subs-drop-down.png)
+   > ![Lista rozwijana Dodaj nowe subskrypcje miesięczne](_img/add-monthly-subs/add-subs-drop-down.png "Wybierz pozycję Dodaj umowę, a następnie pozycję "nowe subskrypcje miesięczne".")
 1. System będzie wyszukiwać dowolne subskrypcje platformy Azure, na których masz uprawnienia administratora dostępu użytkownika i zaimportowali wszystkie subskrypcje programu Visual Studio zakupione w ramach tych subskrypcji platformy Azure.
 1. Jeśli nie znaleziono żadnych subskrypcji platformy Azure, na których masz uprawnienia administratora dostępu użytkowników, lub jeśli nie znaleziono żadnych subskrypcji programu Visual Studio, zostanie wyświetlony następujący komunikat:
    > [!div class="mx-imgBorder"]
-   > ![Nie znaleziono nowych subskrypcji miesięcznych](_img/add-monthly-subs/no-subs-found.png)
+   > ![Nie znaleziono nowych subskrypcji miesięcznych](_img/add-monthly-subs/no-subs-found.png "Komunikat o błędzie informujący o braku dostępności subskrypcji platformy Azure lub subskrypcji programu Visual Studio.")
 1. Jeśli zostaną znalezione nowe subskrypcje miesięczne, zostanie wyświetlony komunikat z potwierdzeniem
    > [!div class="mx-imgBorder"]
-   > ![Komunikat potwierdzający dodanie subskrypcji](_img/add-monthly-subs/subs-added-confirmation.png)
+   > ![Komunikat potwierdzający dodanie subskrypcji](_img/add-monthly-subs/subs-added-confirmation.png "Zostanie wyświetlony komunikat potwierdzający, że dodano subskrypcje.")
 
 ## <a name="things-to-keep-in-mind"></a>Rzeczy, o których należy pamiętać
 - Opcja dodawania nowych subskrypcji miesięcznych będzie dostępna tylko podczas pierwszego zakupu.  Po dodaniu comiesięcznych subskrypcji sprawdzimy nowe subskrypcje za każdym razem, gdy zalogujesz się do portalu. 

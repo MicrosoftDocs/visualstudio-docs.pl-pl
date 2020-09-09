@@ -1,18 +1,18 @@
 ---
-title: Subskrypcje programu Visual Studio dostępne do zakupu w Microsoft Store | Microsoft Docs
+title: Subskrypcje programu Visual Studio dostępne w Microsoft Store | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 04/13/2020
 ms.topic: how-to
 description: Dowiedz się, jak kupić subskrypcje programu Visual Studio w Microsoft Store i aktywować je w portalu subskrypcji programu Visual Studio.
-ms.openlocfilehash: f6fdb8dcc8b0e3eaa5e67692e7c3dd92f1467c5a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9eb4812d22096e9d36089e464dc9a37478480458
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247490"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561578"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Subskrypcje programu Visual Studio są dostępne za pomocą Microsoft Store
 Subskrypcje programu Visual Studio są dostępne za pomocą różnych kanałów, takich jak [Licencjonowanie zbiorowe](https://www.microsoft.com/licensing/default), dostawcy rozwiązań w chmurze, [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)i Microsoft Store.  W tym artykule przedstawiono zakup i aktywowanie subskrypcji za pomocą [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
@@ -55,5 +55,5 @@ Jeśli masz pytania dotyczące kupowania za pomocą Microsoft Store, dostępna j
 
 ## <a name="next-steps"></a>Następne kroki
 Po aktywowaniu subskrypcji odwiedź stronę [korzyści](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) , aby wyświetlić wszystkie narzędzia, usługi, szkolenia i pomoc techniczną zawarte w subskrypcji.  Zalecamy skonfigurowanie tych korzyści, aby rozpocząć:
-- [Program Visual Studio](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

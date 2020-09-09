@@ -1,18 +1,18 @@
 ---
-title: Zarządzaj subskrypcjami programu Visual Studio oferowanymi za pomocą Microsoft Partner Network (MPN) | Microsoft Docs
+title: Zarządzanie subskrypcjami programu Visual Studio z poziomu Microsoft Partner Network | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
-ms.date: 03/09/2020
+ms.date: 09/08/2020
 ms.topic: how-to
 description: Jak przypisać subskrypcje programu Visual Studio do użytkowników końcowych w przypadku partnerów MPN.
-ms.openlocfilehash: e6e15ed5893ce15d162d69b3bff4471c01633065
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecd85967c0d58166da17025bc7b2246b335a5736
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250716"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561380"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Zarządzaj subskrypcjami programu Visual Studio oferowanymi za pomocą Microsoft Partner Network (MPN)
 Partnerzy, którzy uzyskają kompetencje lub kupują Action Pack w MPN, mogą korzystać z subskrypcji programu Visual Studio. Te subskrypcje są licencjonowane dla poszczególnych użytkowników i są prawidłowe tylko wtedy, gdy są przypisane do określonego użytkownika nazwanego, który działa dla firmy partnerskiej.

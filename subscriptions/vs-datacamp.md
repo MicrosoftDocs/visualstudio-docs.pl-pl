@@ -1,18 +1,18 @@
 ---
-title: Jeszcze dziś zwiększ swoje umiejętności nauki dotyczące danych dzięki korzyściom z używania datacamp w wybranych subskrypcjach programu Visual Studio. | Microsoft Docs
+title: Rozwijaj umiejętności naukowe dotyczące danych w ramach subskrypcji programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Dowiedz się więcej o subskrypcji szkoleniowej usługi datacamp dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: 49370b4b3425effc4b8eeef704684420edfd3d41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b164dc4be4a06151b970ecd5522b82bde9aaeec7
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904517"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561497"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyść szkoleniowa datacamp w subskrypcjach programu Visual Studio
 Kwalifikujące się subskrypcje programu Visual Studio obejmują subskrypcje do datacamp.  W przypadku usługi datacamp możesz poznać wszystkie potrzebne umiejętności analizy danych. Możesz wybrać, kiedy i w jaki sposób uczysz. W przypadku braku oprogramowania do zainstalowania i braku specjalnych wymagań sprzętowych nauka uczenia danych jest łatwiejsze niż kiedykolwiek.
@@ -29,7 +29,7 @@ Kwalifikujące się subskrypcje programu Visual Studio obejmują subskrypcje do 
    > [!NOTE]
    > Po rozpoczęciu tworzenia konta może zostać wyświetlony następujący komunikat o błędzie: "Niestety!  Kod promocyjny jest nieprawidłowy lub wygasł.  Dzieje się tak, ponieważ podczas tworzenia kodu promocyjnego wygasa on po kilku minutach.  Jeśli zostanie wyświetlony ten komunikat, po prostu Wróć do strony [korzyści](https://my.visualstudio.com/benefits) i kliknij link **Aktywuj** na kafelku korzyści datacamp.
 
-4. Po utworzeniu konta możesz wybrać ścieżkę szkoleniową.  Dostępne opcje:
+4. Po utworzeniu konta możesz wybrać ścieżkę szkoleniową.  Dostępne są następujące opcje:
     - Uczenie języka R na potrzeby nauki o danych
     - Rozpocznij naukę języka Python w celu nauki o danych
     - Opracowywanie analizy danych zestawu umiejętności
@@ -65,8 +65,8 @@ Możesz zatrzymać w dowolnym momencie i wznowić szkolenia w następnej sesji. 
 | Visual Studio Professional z usługą GitHub Enterprise| Licencja | 3 miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | 3 miesiące                                             |  Nie.  Dostępne tylko dla nowych subskrybentów           |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | 3 miesiące                                              |  Nie.  Dostępne tylko dla nowych subskrybentów           |
-| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Brak |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |
+| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Nie dotyczy |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), ekwiwalentu, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Microsoft Partner Network (MPN), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark, Wyobraź sobie*
 

@@ -1,18 +1,18 @@
 ---
-title: Korzyść pulpitu wirtualnego systemu Microsoft Windows w subskrypcjach programu Visual Studio | Microsoft Docs
+title: Microsoft Windows Virtual Desktop w subskrypcjach programu Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/20/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: Dowiedz się, jak korzystać z pulpitu wirtualnego systemu Microsoft Windows za pośrednictwem subskrypcji programu Visual Studio
-ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f598aca8d277ca443b10dac289fae756ccd95432
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800609"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561367"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Dostęp do pulpitu wirtualnego systemu Windows w subskrypcjach 
 Subskrybenci programu Visual Studio mogą teraz korzystać z indywidualnych środków na korzystanie z platformy Azure do tworzenia i testowania usług pulpitu wirtualnego systemu Microsoft Windows.  
@@ -52,8 +52,8 @@ Gdy zostaną spełnione wszystkie wymagania wstępne, należy wykonać kilka czy
 | Visual Studio Professional z usługą GitHub Enterprise | Licencja                                       | Dostępne                                        |  Tak           |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Dostępne|  Tak          |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Dostępne                                         |  Tak          |
-| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Brak |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |
+| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Nie dotyczy |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), ekwiwalentu, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Microsoft Partner Network (MPN), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark, Wyobraź sobie*
 

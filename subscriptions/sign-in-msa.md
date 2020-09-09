@@ -1,18 +1,18 @@
 ---
-title: Logowanie się do subskrypcji programu Visual Studio za pomocą konta Microsoft (MSA) | Microsoft Docs
+title: Zaloguj się do subskrypcji programu Visual Studio za pomocą konta Microsoft | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
-ms.date: 03/11/2020
+ms.date: 09/08/2020
 ms.topic: how-to
 description: Jak zalogować się do Visual Studio Subscription za pomocą konta Microsoft (MSA)
-ms.openlocfilehash: 566829318404b4231b37e53ae7ec34500a3a7838
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0193c3731840d694bc13764542b1df31c808027
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906145"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561445"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Logowanie się do subskrypcji programu Visual Studio za pomocą konta Microsoft (MSA)
 
@@ -28,7 +28,7 @@ W tym artykule przedstawiono kroki logowania za pomocą konta Microsoft (MSA).
    > Ten adres jest również identyfikowany w powitalnej wiadomości e-mail otrzymanej po zakupie subskrypcji lub zarejestrowaniu się w celu Visual Studio Dev Essentials. Sprawdź foldery wiadomości-śmieci, jeśli masz problemy z lokalizowaniem powitalnej wiadomości e-mail.
 
 3. Wprowadź hasło.
-4. Kliknij pozycję **Zaloguj się**.
+4. Kliknij przycisk **Zaloguj**.
 5. Na tym etapie powinna zostać wyświetlona strona "korzyści".
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania

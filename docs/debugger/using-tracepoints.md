@@ -1,7 +1,7 @@
 ---
 title: Rejestruj informacje za pomocą punkty śledzenia | Microsoft Docs
 ms.date: 10/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - tracepoints, about tracepoints
 author: Sagar-S-S
@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: fcc9f01315d3783af1a1f124785cd74fafb215bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187300"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561341"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Rejestruj informacje w oknie danych wyjściowych za pomocą punkty śledzenia w programie Visual Studio
 

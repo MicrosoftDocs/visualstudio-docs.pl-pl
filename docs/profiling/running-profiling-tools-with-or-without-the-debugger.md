@@ -8,16 +8,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d50f8fcad0294adec032322229e9dd6cedac2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 147a7dbc029ae894a0054837e92feb0108dc19b4
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88508083"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561591"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 
-Program Visual Studio oferuje wybór narzędzi do pomiaru wydajności i profilowania. Niektóre narzędzia, takie jak użycie procesora CPU i użycie pamięci, można uruchomić z debugerem lub bez niego, a także w konfiguracjach kompilacji wersji lub debugowania. Narzędzia profilera wydajności, takie jak Oś czasu aplikacji, można uruchamiać w ramach kompilacji debugowania lub wydań. Narzędzia zintegrowane z debugerem, takie jak karta okna narzędzia diagnostyczne i zdarzenia, są uruchamiane tylko podczas debugowania sesji.
+Program Visual Studio oferuje wybór narzędzi do pomiaru wydajności i profilowania. Niektóre narzędzia, takie jak użycie procesora CPU i użycie pamięci, można uruchomić z debugerem lub bez niego, a także w konfiguracjach kompilacji wersji lub debugowania. Narzędzia, które pojawiają się w [oknie narzędzia diagnostyczne](../profiling/profiling-feature-tour.md#view-performance-while-debugging) , są uruchamiane tylko podczas sesji debugowania. Narzędzia, które pojawiają się w [profilerze wydajności](../profiling/profiling-feature-tour.md#post_mortem) , są uruchamiane bez debugera i analizują wyniki po zaznaczeniu, aby zatrzymać i zbierać dane (na potrzeby analizy końcowej).
 
 >[!NOTE]
 >Możesz użyć narzędzi do oceny wydajności bez debugera w systemie Windows 7 i nowszych. Do uruchomienia narzędzi profilowania zintegrowanych ze debugerem wymagany jest system Windows 8 lub nowszy.
@@ -46,6 +46,11 @@ Po rozpoczęciu debugowania w programie Visual Studio, wybierając **Debuguj**  
 - Jeśli używasz Visual Studio Enterprise, możesz włączyć lub wyłączyć IntelliTrace, przechodząc do opcji **Narzędzia**  >  **Options**  >  **IntelliTrace**.
 
 Sesja diagnostyczna zostanie zakończona po zatrzymaniu debugowania.
+
+Aby uzyskać więcej informacji, zobacz:
+
+- [Mierzenie wydajności aplikacji przez analizowanie użycia procesora CPU](../profiling/beginners-guide-to-performance-profiling.md)
+- [Mierzenie użycia pamięci w programie Visual Studio](../profiling/memory-usage.md)
 
 ### <a name="the-events-tab"></a>Karta zdarzenia
 
@@ -86,6 +91,15 @@ Aby zbierać dane dotyczące wydajności bez debugowania, można uruchomić narz
 Raporty można zapisać i otworzyć z listy **ostatnio otwierane sesje** na stronie uruchamiania narzędzia diagnostyczne.
 
 ![Zrzut narzędzia diagnostyczne ekranu przedstawiający listę ostatnio otwieranych sesji](../profiling/media/diaghubopenexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
+
+Aby uzyskać więcej informacji, zobacz:
+
+- [Analizowanie użycia procesora CPU](../profiling/cpu-usage.md)
+- [Analizowanie użycia pamięci dla kodu platformy .NET](../profiling/dotnet-alloc-tool.md)
+- [Analizowanie użycia pamięci](../profiling/analyze-memory-usage.md)
+- [Analizowanie wydajności kodu asynchronicznego .NET](../profiling/analyze-async.md)
+- [Analizowanie wydajności bazy danych](../profiling/analyze-database.md)
+- [Analizowanie użycia procesora GPU](../profiling/gpu-usage.md)
 
 ## <a name="collect-profiling-data-from-the-command-line"></a>Zbieranie danych profilowania z wiersza polecenia
 

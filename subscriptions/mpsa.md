@@ -1,18 +1,18 @@
 ---
-title: Subskrypcje programu Visual Studio w ramach umowy dotyczącej produktów i usług firmy Microsoft (MPSA) | Microsoft Docs
+title: Subskrypcje programu Visual Studio w programie MPSA | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 09/03/2020
 ms.topic: conceptual
-description: Subskrypcje programu Visual Studio w ramach umowy dotyczącej produktów i usług firmy Microsoft (MPSA)
-ms.openlocfilehash: c5ba75038c1e87415eecdcb669698cfe5bbcacd2
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+description: Więcej informacji na temat zarządzania subskrypcjami programu Visual Studio w ramach umowy dotyczącej produktów i usług firmy Microsoft (MPSA)
+ms.openlocfilehash: 9d26bccebb11a59933c37ec0f29a9b6e30e86c5b
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426749"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561393"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Subskrypcje programu Visual Studio w ramach umowy dotyczącej produktów i usług firmy Microsoft (MPSA)
 Jeśli masz zakupione subskrypcje programu Visual Studio w programie MPSA, musisz znać kilka kwestii, aby móc stać się administratorem subskrypcji programu Visual Studio i przypisać subskrypcje użytkownikom. Jeśli użytkownik został już skonfigurowany jako administrator, możesz przejść bezpośrednio do [portalu administracyjnego](https://manage.visualstudio.com/)subskrypcji programu Visual Studio.
