@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 83b4bea32f642cbf48acb01831bd4bccc2bb15a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e401dd55588228a98242e08d16e227b10b162418
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348941"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600157"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Jak wyzwolić wstrzymanie, wznowienie i zdarzenia w tle podczas debugowania aplikacji platformy UWP w programie Visual Studio
 
@@ -48,7 +48,7 @@ Aby uzyskać więcej informacji o zarządzaniu okresem istnienia procesu i zadan
      **Zawieszenie i zakończenie** powoduje zamknięcie aplikacji i zakończenie sesji debugowania.
 
 ## <a name="trigger-background-tasks"></a><a name="BKMK_Trigger_background_tasks"></a> Wyzwalanie zadań w tle
- Każda aplikacja może zarejestrować zadanie w tle w celu reagowania na określone zdarzenia systemowe nawet wtedy, gdy aplikacja nie jest uruchomiona. Zadania w tle nie mogą uruchamiać kodu, który bezpośrednio aktualizuje interfejs użytkownika; Zamiast tego wyświetlają informacje dla użytkownika z aktualizacjami kafelków, aktualizacjami znaczków i wyskakującymi powiadomieniami. Aby uzyskać więcej informacji, zobacz [Obsługa aplikacji za pomocą zadań w tle](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e).
+ Każda aplikacja może zarejestrować zadanie w tle w celu reagowania na określone zdarzenia systemowe nawet wtedy, gdy aplikacja nie jest uruchomiona. Zadania w tle nie mogą uruchamiać kodu, który bezpośrednio aktualizuje interfejs użytkownika; Zamiast tego wyświetlają informacje dla użytkownika z aktualizacjami kafelków, aktualizacjami znaczków i wyskakującymi powiadomieniami. Aby uzyskać więcej informacji, zobacz [Obsługa aplikacji za pomocą zadań w tle](/previous-versions/windows/apps/hh977046(v=win.10)).
 
  Możesz wyzwolić zdarzenia, które uruchamiają zadania w tle dla aplikacji z debugera.
 
@@ -110,7 +110,7 @@ Aby uzyskać więcej informacji o zarządzaniu okresem istnienia procesu i zadan
 4. Wybierz dziennik **diagnostyczny** .
 
 ## <a name="see-also"></a>Zobacz też
-- [Testowanie aplikacji platformy UWP za pomocą programu Visual Studio](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)
+- [Testowanie aplikacji platformy UWP za pomocą programu Visual Studio](../test/unit-test-your-code.md)
 - [Debugowanie aplikacji w programie Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Cykl życia aplikacji](/windows/uwp/launch-resume/app-lifecycle)
 - [Uruchamianie, wznawianie i wielozadania](/windows/uwp/launch-resume/index)

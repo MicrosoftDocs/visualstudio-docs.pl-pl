@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c208e435e63891c71fe47ebd64c5fe1307e0c82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b46abc4d22ddfdc551669d3bcd4cba5acf7cce4
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348144"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599520"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Uruchamianie aplikacji platformy UWP w symulatorze
 
@@ -115,7 +115,7 @@ Przycisk **Obróć emulacji dotykowej** ustawia tryb interakcji, aby obracał ge
 
 ## <a name="simulate-network-connection-properties"></a><a name="BKMK_Simulate_network_connection_properties"></a> Symulowanie właściwości połączenia sieciowego
 
-Aby ułatwić użytkownikom aplikacji Zarządzanie kosztami taryfowych połączeń sieciowych, należy utrzymać świadomość kosztu połączenia sieciowego lub zmian stanu planu danych oraz umożliwić aplikacji korzystanie z tych informacji w celu uniknięcia ponoszenia dodatkowych kosztów dla roamingu lub przekroczenia określonego limitu transferu danych. Interfejsy API [Windows. Networking. Connectivity](/uwp/api/windows.networking.connectivity) umożliwiają reagowanie na zdarzenia [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) i [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) , które są podpisywany. Zobacz [Szybki Start: Zarządzanie naliczanymi ograniczeniami kosztów sieci](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
+Aby ułatwić użytkownikom aplikacji Zarządzanie kosztami taryfowych połączeń sieciowych, należy utrzymać świadomość kosztu połączenia sieciowego lub zmian stanu planu danych oraz umożliwić aplikacji korzystanie z tych informacji w celu uniknięcia ponoszenia dodatkowych kosztów dla roamingu lub przekroczenia określonego limitu transferu danych. Interfejsy API [Windows. Networking. Connectivity](/uwp/api/windows.networking.connectivity) umożliwiają reagowanie na zdarzenia [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) i [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) , które są podpisywany. Zobacz [Szybki Start: Zarządzanie naliczanymi ograniczeniami kosztów sieci](/previous-versions/windows/apps/hh750310(v=win.10)).
 
 Aby debugować lub testować kod obsługujący koszt sieci, symulator może naśladować właściwości sieci, które są udostępniane za pomocą obiektu [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) zwróconego przez [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
 
@@ -139,7 +139,7 @@ Aby zasymulować właściwości sieci:
 
 Aby uzyskać więcej informacji na temat zarządzania połączeniami sieciowymi, zobacz:
 
-[Szybki Start: zarządzanie ograniczeniami kosztami sieci mierzonymi](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+[Szybki Start: zarządzanie ograniczeniami kosztami sieci mierzonymi](/previous-versions/windows/apps/hh750310(v=win.10))
 
 [Przykład informacji o sieci](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 

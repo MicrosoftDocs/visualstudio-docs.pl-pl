@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: beeba55c873e008b3e096da66f888695d719c882
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916450"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599936"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Błędy i ostrzeżenia debugowania — Okna dialogowe
 Poniżej znajdują się okna dialogowe błędy i ostrzeżenia, które mogą wystąpić podczas debugowania aplikacji.
@@ -48,7 +48,7 @@ Poniżej znajdują się okna dialogowe błędy i ostrzeżenia, które mogą wyst
 
  [Brak dostępnego kodu źródłowego dla bieżącej lokalizacji — okno dialogowe](../debugger/no-source-available.md)
 
- [Okno dialogowe bez informacji symbolicznych](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)
+ [Okno dialogowe bez informacji symbolicznych](/previous-versions/d493t3ew(v=vs.100))
 
  [Rozwiązywania niejednoznaczności — Okno dialogowe](../debugger/resolve-ambiguity-dialog-box.md)
 

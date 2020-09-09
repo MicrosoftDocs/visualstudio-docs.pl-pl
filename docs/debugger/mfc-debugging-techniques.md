@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4a481a8d4f283204b99cfef4a07106d3e479cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06b42dbf31a8b5f4cb66de047bc1e08a4f840353
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731279"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600239"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniki testowania MFC
 W przypadku debugowania programu MFC te techniki debugowania mogą być przydatne.
@@ -80,7 +80,7 @@ Pamiętaj, aby usunąć `AfxDebugBreak` instrukcje, gdy tworzysz kompilację wyd
 [W tym temacie](#BKMK_In_this_topic)
 
 ## <a name="the-trace-macro"></a><a name="BKMK_The_TRACE_macro"></a> Makro śledzenia
-Aby wyświetlić komunikaty z programu w [oknie danych wyjściowych](../ide/reference/output-window.md)debugera, można użyć makra [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) lub makro [śledzenia](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) MFC. Podobnie jak [potwierdzenia](../debugger/c-cpp-assertions.md), makra śledzenia są aktywne tylko w wersji debugowanej programu i znikają po skompilowaniu w wersji wydania.
+Aby wyświetlić komunikaty z programu w [oknie danych wyjściowych](../ide/reference/output-window.md)debugera, można użyć makra [ATLTRACE](/previous-versions/6xkxyz08(v=vs.140)) lub makro [śledzenia](/previous-versions/6w95a4ha(v=vs.140)) MFC. Podobnie jak [potwierdzenia](../debugger/c-cpp-assertions.md), makra śledzenia są aktywne tylko w wersji debugowanej programu i znikają po skompilowaniu w wersji wydania.
 
 W poniższych przykładach pokazano, jak można użyć makra **śledzenia** . `printf`Na przykład makro **śledzenia** może obsłużyć wiele argumentów.
 
@@ -115,7 +115,7 @@ Aby uzyskać więcej informacji na temat makra **śledzenia** , zobacz [usługi 
 MFC udostępnia klasy i funkcje do wykrywania pamięci, która jest przydzielna, ale nigdy nie została cofnięta.
 
 ### <a name="tracking-memory-allocations"></a><a name="BKMK_Tracking_memory_allocations"></a> Śledzenie alokacji pamięci
-W MFC można użyć makra [DEBUG_NEW](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) zamiast operatora **New** , aby ułatwić lokalizowanie przecieków pamięci. W wersji debugowej programu Program `DEBUG_NEW` śledzi nazwę pliku i numer wiersza dla każdego przydzielonego obiektu. Podczas kompilowania wersji programu Program `DEBUG_NEW` rozwiązuje prostą **nową** operację bez informacji o nazwie pliku i numerze wiersza. W ten sposób płatność nie jest kara w wydanej wersji programu.
+W MFC można użyć makra [DEBUG_NEW](/previous-versions/tz7sxz99(v=vs.140)) zamiast operatora **New** , aby ułatwić lokalizowanie przecieków pamięci. W wersji debugowej programu Program `DEBUG_NEW` śledzi nazwę pliku i numer wiersza dla każdego przydzielonego obiektu. Podczas kompilowania wersji programu Program `DEBUG_NEW` rozwiązuje prostą **nową** operację bez informacji o nazwie pliku i numerze wiersza. W ten sposób płatność nie jest kara w wydanej wersji programu.
 
 Jeśli nie chcesz ponownie pisać całego programu w celu użycia zamiast `DEBUG_NEW` **nowego**, możesz zdefiniować to makro w plikach źródłowych:
 
@@ -134,11 +134,11 @@ Aby można było korzystać z funkcji diagnostyki pamięci, należy włączyć �
 
 **Aby włączyć lub wyłączyć diagnostykę pamięci**
 
-- Wywołaj funkcję globalną [AfxEnableMemoryTracking](https://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) , aby włączyć lub wyłączyć Alokator pamięci diagnostyki. Ponieważ Diagnostyka pamięci jest domyślnie włączona w bibliotece debugowania, zazwyczaj ta funkcja jest używana do tymczasowego ich wyłączenia, co zwiększa szybkość wykonywania programu i zmniejsza liczbę danych wyjściowych diagnostycznych.
+- Wywołaj funkcję globalną [AfxEnableMemoryTracking](/previous-versions/hzsxb6e8(v=vs.140)) , aby włączyć lub wyłączyć Alokator pamięci diagnostyki. Ponieważ Diagnostyka pamięci jest domyślnie włączona w bibliotece debugowania, zazwyczaj ta funkcja jest używana do tymczasowego ich wyłączenia, co zwiększa szybkość wykonywania programu i zmniejsza liczbę danych wyjściowych diagnostycznych.
 
   **Aby wybrać określone funkcje diagnostyki pamięci z afxMemDF**
 
-- Jeśli potrzebujesz bardziej precyzyjnej kontroli nad funkcjami diagnostyki pamięci, możesz wybiórczo włączać i wyłączać poszczególne funkcje diagnostyki pamięci przez ustawienie wartości zmiennej globalnej MFC [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). Ta zmienna może mieć następujące wartości określone przez Wyliczenie typu **afxMemDF**.
+- Jeśli potrzebujesz bardziej precyzyjnej kontroli nad funkcjami diagnostyki pamięci, możesz wybiórczo włączać i wyłączać poszczególne funkcje diagnostyki pamięci przez ustawienie wartości zmiennej globalnej MFC [afxMemDF](/previous-versions/ahe4a83t(v=vs.140)). Ta zmienna może mieć następujące wartości określone przez Wyliczenie typu **afxMemDF**.
 
   |Wartość|Opis|
   |-----------|-----------------|

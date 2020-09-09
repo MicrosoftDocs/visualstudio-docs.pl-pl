@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1208db68f2ae65775c6e0a5b6cf4bda0fb35d8
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: a40273c3230854e4b1d1a11a3fd02de54d5df745
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509461"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599965"
 ---
 # <a name="security-warnings"></a>Ostrzeżenia dotyczące zabezpieczeń
 
@@ -33,7 +33,7 @@ Ostrzeżenia o zabezpieczeniach obsługują bezpieczniejsze biblioteki i aplikac
 |[CA2100: Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach](../code-quality/ca2100.md)|Metoda ustawia właściwość System.Data.IDbCommand.CommandText przez użycie ciągu, który jest zbudowany z argumentem ciągu do metody. Zasada ta zakłada, że argument ciągu zawiera dane wejściowe użytkownika. Ciąg polecenia SQL zbudowany z danych wejściowych użytkownika jest narażony na ataki przez wstrzyknięcie kodu SQL.|
 |[CA2109: Przejrzyj widoczne procedury obsługi zdarzeń](../code-quality/ca2109.md)|Wykryto publiczną lub chronioną metodę obsługi zdarzeń. Metody obsługi zdarzeń nie powinny być udostępnione, chyba że jest to absolutnie konieczne.|
 |[CA2119: Pieczętuj metody, które spełniają wymagania interfejsów prywatnych](../code-quality/ca2119.md)|Dziedziczony typ publiczny zapewnia implementację metody wewnętrznej (zaprzyjaźnionej w Visual Basic). Aby naprawić naruszenie tej zasady, należy zapobiegać zastąpieniu metody poza zestawem.|
-|[CA2153: Unikaj obsługiwania wyjątków stanu uszkodzenia](../code-quality/ca2153.md)|[Wyjątki uszkodzonych Stanów (rozszerzenie klienta)](https://msdn.microsoft.com/magazine/dd419661.aspx) wskazują, że uszkodzenie pamięci istnieje w procesie. Ich przechwycenie zamiast zezwalania na awarię procesu może prowadzić do luk w zabezpieczeniach, jeśli osoba atakująca może wykorzystać lukę w uszkodzonym regionie pamięci.|
+|[CA2153: Unikaj obsługiwania wyjątków stanu uszkodzenia](../code-quality/ca2153.md)|[Wyjątki uszkodzonych Stanów (rozszerzenie klienta)](/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions) wskazują, że uszkodzenie pamięci istnieje w procesie. Ich przechwycenie zamiast zezwalania na awarię procesu może prowadzić do luk w zabezpieczeniach, jeśli osoba atakująca może wykorzystać lukę w uszkodzonym regionie pamięci.|
 |[CA2300: Nie używaj niezabezpieczonego deserializatora BinaryFormatter](../code-quality/ca2300.md)|Niezabezpieczone deserializatory są narażone na deserializacja niezaufanych danych. Osoba atakująca może zmodyfikować serializowane dane w celu uwzględnienia nieoczekiwanych typów, aby wstrzyknąć obiekty ze złośliwymi efektami ubocznymi.|
 |[CA2301: Nie wywołuj metody BinaryFormatter.Deserialize bez uprzedniego ustawienia właściwości BinaryFormatter.Binder](../code-quality/ca2301.md)|Niezabezpieczone deserializatory są narażone na deserializacja niezaufanych danych. Osoba atakująca może zmodyfikować serializowane dane w celu uwzględnienia nieoczekiwanych typów, aby wstrzyknąć obiekty ze złośliwymi efektami ubocznymi.|
 |[CA2302: Upewnij się, że właściwość BinaryFormatter.Binder jest ustawiona przed wywołaniem metody BinaryFormatter.Deserialize](../code-quality/ca2302.md)|Niezabezpieczone deserializatory są narażone na deserializacja niezaufanych danych. Osoba atakująca może zmodyfikować serializowane dane w celu uwzględnienia nieoczekiwanych typów, aby wstrzyknąć obiekty ze złośliwymi efektami ubocznymi.|

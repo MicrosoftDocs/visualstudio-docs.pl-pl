@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841b73bbb0c1f226e4a31a812bf8745bda1f118c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 796d8aa15aa3612b140917ccfa9db7663c0b0ad3
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507875"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599463"
 ---
 # <a name="code-metrics-values"></a>Wartości metryk kodu
 
@@ -34,13 +34,13 @@ Aby uzyskać informacje o sposobach generowania danych metryk kodu w programie V
 
 Na poniższej liście przedstawiono wyniki metryki kodu, które program Visual Studio oblicza:
 
-- **Indeks utrzymania** — oblicza wartość indeksu z przedziału od 0 do 100, która reprezentuje względną łatwość utrzymywania kodu. Wysoka wartość to lepsza łatwość utrzymania. Klasyfikacje kodowane kolorami mogą szybko identyfikować problemy w kodzie. Zielona Ocena wynosi od 20 do 100 i wskazuje, że kod ma dobrą łatwość utrzymania. Żółta Klasyfikacja ma wartość z zakresu od 10 do 19 i wskazuje, że kod jest umiarkowanie konserwowany. Czerwona Ocena jest klasyfikacją od 0 do 9 i wskazuje na niską łatwość utrzymania. Aby uzyskać więcej informacji, zobacz wpis w blogu [zakres i znaczenie indeksu łatwość utrzymania](https://blogs.msdn.microsoft.com/codeanalysis/2007/11/20/maintainability-index-range-and-meaning/) .
+- **Indeks utrzymania** — oblicza wartość indeksu z przedziału od 0 do 100, która reprezentuje względną łatwość utrzymywania kodu. Wysoka wartość to lepsza łatwość utrzymania. Klasyfikacje kodowane kolorami mogą szybko identyfikować problemy w kodzie. Zielona Ocena wynosi od 20 do 100 i wskazuje, że kod ma dobrą łatwość utrzymania. Żółta Klasyfikacja ma wartość z zakresu od 10 do 19 i wskazuje, że kod jest umiarkowanie konserwowany. Czerwona Ocena jest klasyfikacją od 0 do 9 i wskazuje na niską łatwość utrzymania. Aby uzyskać więcej informacji, zobacz wpis w blogu [zakres i znaczenie indeksu łatwość utrzymania](/archive/blogs/codeanalysis/maintainability-index-range-and-meaning) .
 
 - **Złożoność cyklomatyczna** — mierzy strukturalną złożoność kodu. Jest on tworzony przez obliczenie liczby różnych ścieżek kodu w przepływie programu. Program, który ma złożony przepływ sterowania, wymaga więcej testów do osiągnięcia dobrego pokrycia kodu i jest mniej utrzymany. Aby uzyskać więcej informacji, zobacz [wpis Wikipedia dotyczący złożoności cyklomatyczna](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
 - **Głębokość dziedziczenia** — wskazuje liczbę różnych klas, które dziedziczą od siebie nawzajem, z powrotem do klasy bazowej. Głębokość dziedziczenia jest podobna do sprzęgu klasy w przypadku, gdy zmiana klasy bazowej może mieć wpływ na wszystkie klasy dziedziczone. Im wyższy numer, tym lepiej dziedziczą i wyższy potencjał dla modyfikacji klasy podstawowej, aby spowodować powstanie istotnej zmiany. Aby uzyskać głębokość dziedziczenia, niska wartość jest dobra, a wysoka wartość jest zła.
 
-- **Sprzęganie klas** — mierzy sprzężenie do unikatowych klas za pomocą parametrów, zmiennych lokalnych, typów zwracanych, wywołań metod, wystąpień ogólnych lub szablonów, klas bazowych, implementacji interfejsu, pól zdefiniowanych w typach zewnętrznych i dekoracji atrybutu. Dobre projektowanie oprogramowania oznacza, że typy i metody powinny mieć wysoką spójność i niskie sprzężenie. Duże sprzężenie wskazuje, że projekt jest trudno używany i konserwowany ze względu na wiele współzależności z innymi typami. Aby uzyskać więcej informacji, zobacz wpis na blogu dotyczący [sprzęgania klas](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) .
+- **Sprzęganie klas** — mierzy sprzężenie do unikatowych klas za pomocą parametrów, zmiennych lokalnych, typów zwracanych, wywołań metod, wystąpień ogólnych lub szablonów, klas bazowych, implementacji interfejsu, pól zdefiniowanych w typach zewnętrznych i dekoracji atrybutu. Dobre projektowanie oprogramowania oznacza, że typy i metody powinny mieć wysoką spójność i niskie sprzężenie. Duże sprzężenie wskazuje, że projekt jest trudno używany i konserwowany ze względu na wiele współzależności z innymi typami. Aby uzyskać więcej informacji, zobacz wpis na blogu dotyczący [sprzęgania klas](/archive/blogs/zainnab/code-metrics-class-coupling) .
 
 ::: moniker range=">=vs-2019"
 

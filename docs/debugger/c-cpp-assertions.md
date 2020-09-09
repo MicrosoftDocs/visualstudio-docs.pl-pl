@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7ac27b46252582b3982082a2a9a90a09223574f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abea0f45609c74e02cd95d6c21bbe8879d46eea1
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911606"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600208"
 ---
 # <a name="cc-assertions"></a>Potwierdzenia C/C++
 Instrukcja Assert określa warunek, który powinien być prawdziwy w punkcie w programie. Jeśli ten warunek nie ma wartości true, potwierdzenie nie powiedzie się, wykonywanie programu zostanie przerwane i zostanie wyświetlone okno [dialogowe potwierdzenie nie powiodło](../debugger/assertion-failed-dialog-box.md) się.
@@ -156,7 +156,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 [W tym temacie](#BKMK_In_this_topic)
 
 ## <a name="mfc-assertions"></a><a name="BKMK_MFC_assertions"></a> Potwierdzenia MFC
-MFC definiuje makro [potwierdzenia](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) do sprawdzenia potwierdzenia. Definiuje również `MFC ASSERT_VALID` `CObject::AssertValid` metody i do sprawdzania stanu wewnętrznego `CObject` obiektu pochodnego.
+MFC definiuje makro [potwierdzenia](/previous-versions/ew16s3zc(v=vs.140)) do sprawdzenia potwierdzenia. Definiuje również `MFC ASSERT_VALID` `CObject::AssertValid` metody i do sprawdzania stanu wewnętrznego `CObject` obiektu pochodnego.
 
 Jeśli argument makra MFC ma wartość `ASSERT` zero lub false, makro zatrzymuje wykonywanie programu i ostrzega użytkownika; w przeciwnym razie wykonywanie jest kontynuowane.
 
@@ -175,7 +175,7 @@ Można użyć potwierdzeń z funkcją [IsKindOf](/cpp/mfc/reference/cobject-clas
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 ```
 
-`ASSERT`Makro nie daje kodu w wersji wydania. Jeśli chcesz oszacować wyrażenie w wersji wydania, użyj makra [verify](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify) zamiast Assert.
+`ASSERT`Makro nie daje kodu w wersji wydania. Jeśli chcesz oszacować wyrażenie w wersji wydania, użyj makra [verify](/cpp/mfc/reference/diagnostic-services#verify) zamiast Assert.
 
 ### <a name="mfc-assert_valid-and-cobjectassertvalid"></a><a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID i CObject:: AssertValid
 [CObject:: AssertValid](/cpp/mfc/reference/cobject-class#assertvalid) Metoda zapewnia sprawdzenie stanu wewnętrznego obiektu w czasie wykonywania. Chociaż nie jest wymagane przesłonięcie w `AssertValid` przypadku wyprowadzania klasy z `CObject` , można zwiększyć niezawodność klasy. `AssertValid` należy wykonać potwierdzenia wszystkich zmiennych składowych obiektu, aby sprawdzić, czy zawierają one prawidłowe wartości. Na przykład należy sprawdzić, czy zmienne elementu członkowskiego wskaźnika nie są puste.

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a06222c86ece31b18749394cf4590eedc4822f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f110af9aab6ae2ea01137043c834d38b29c4d1f9
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536412"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600008"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Korzystanie z Microsoft Monitoring Agent (C#, Visual Basic)
 
@@ -74,10 +74,10 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
 
      **PS C: >Import-Module "C:\Program Files\Microsoft monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**
 
-3. [Odwiedź witrynę TechNet](https://technet.microsoft.com/systemcenter/default) , aby uzyskać najnowszą zawartość pomocy.
+3. [Odwiedź witrynę TechNet](/previous-versions/system-center/developer/cc817313(v=msdn.10)) , aby uzyskać najnowszą zawartość pomocy.
 
 #### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a> P: Jak mogę skonfigurować uprawnienia dla puli aplikacji?
- Odp **.:** Użyj polecenia **icacls** systemu Windows lub Eksploratora Windows (lub Eksploratora plików). Na przykład:
+ Odp **.:** Użyj polecenia **icacls** systemu Windows lub Eksploratora Windows (lub Eksploratora plików). Przykład:
 
 - Aby skonfigurować uprawnienia za pomocą polecenia **icacls** systemu Windows:
 
@@ -108,7 +108,7 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   7. Upewnij się, że Pula aplikacji ma uprawnienia do **wykonywania &** .
 
 ## <a name="step-2-start-monitoring-your-app"></a><a name="MonitorEvents"></a> Krok 2. rozpoczęcie monitorowania aplikacji
- Aby rozpocząć monitorowanie aplikacji, użyj polecenia [Start-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472749(v=sc.20)) środowiska Windows PowerShell. W przypadku korzystania z programu System Center 2012 zobacz [monitorowanie aplikacji sieci Web za pomocą Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).
+ Aby rozpocząć monitorowanie aplikacji, użyj polecenia [Start-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472749(v=sc.20)) środowiska Windows PowerShell. W przypadku korzystania z programu System Center 2012 zobacz [monitorowanie aplikacji sieci Web za pomocą Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465157(v=sc.12)).
 
 1. Na serwerze sieci Web otwórz okno **programu Windows PowerShell** lub **Windows PowerShell ISE** oknie wiersza polecenia jako administrator.
 
@@ -134,7 +134,7 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
 
     |Nazwa|Opis|
     |-|-|
-    |*"\<appName>"*|Określ ścieżkę do witryny sieci Web i nazwy aplikacji sieci Web w usługach IIS. Jeśli wolisz, możesz również uwzględnić ścieżkę IIS.<br /><br /> *" \<IISWebsiteName> \\<IISWebAppName \> "*<br /><br /> -lub-<br /><br /> **"IIS: \ sites** * \\<IISWebsiteName \> \\<IISWebAppName \> "*<br /><br /> Tę ścieżkę można znaleźć w Menedżerze usług IIS. Na przykład:<br /><br /> ![Ścieżka do witryny sieci Web i aplikacji sieci Web usług IIS](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Możesz również użyć poleceń [Get-Web](https://technet.microsoft.com/library/ee807832.aspx) i [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|
+    |*"\<appName>"*|Określ ścieżkę do witryny sieci Web i nazwy aplikacji sieci Web w usługach IIS. Jeśli wolisz, możesz również uwzględnić ścieżkę IIS.<br /><br /> *" \<IISWebsiteName> \\<IISWebAppName \> "*<br /><br /> -lub-<br /><br /> **"IIS: \ sites** * \\<IISWebsiteName \> \\<IISWebAppName \> "*<br /><br /> Tę ścieżkę można znaleźć w Menedżerze usług IIS. Przykład:<br /><br /> ![Ścieżka do witryny sieci Web i aplikacji sieci Web usług IIS](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Możesz również użyć poleceń [Get-Web](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee807832(v=technet.10)) i [Get WebApplication](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee790554(v=technet.10)) .|
     |*\<monitoringMode>*|Określ tryb monitorowania:<br /><br /> <ul><li>**Monitoruj**: rejestruje minimalne szczegóły dotyczące zdarzeń wyjątków i zdarzeń wydajności. Ten tryb używa domyślnego planu kolekcji.</li><li>**Śledzenie**: rejestrowanie szczegółów poziomu funkcji lub monitorowanie aplikacji SharePoint 2010 i SharePoint 2013 przy użyciu określonego planu kolekcji. Ten tryb może sprawiać, że aplikacja będzie działać wolniej.<br /><br /> <ul><li>[P: Jak mogę skonfigurować uprawnienia dla puli aplikacji?](#FullPermissionsITLog)</li><li>[P: Jak mogę uzyskać najwięcej danych bez spowalniania mojej aplikacji?](#Minimizing)</li></ul><br />     Ten przykład rejestruje zdarzenia dla aplikacji programu SharePoint hostowanej w witrynie programu SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp", śledzenie "C:\Program Files\Microsoft monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Niestandardowe**: rejestruje szczegóły niestandardowe przy użyciu określonego niestandardowego planu kolekcji. Należy ponownie uruchomić monitorowanie, jeśli po zakończeniu monitorowania już zostanie przeprowadzone Edytowanie planu zbierania danych.</li></ul>|
     |*"\<outputPath>"*|Określ pełną ścieżkę katalogu do przechowywania dzienników IntelliTrace. Przed rozpoczęciem monitorowania upewnij się, że ten katalog został utworzony.|
     |*\<UInt32>*|Określ maksymalny rozmiar dziennika IntelliTrace. Domyślny maksymalny rozmiar dziennika IntelliTrace to 250 MB.<br /><br /> Gdy dziennik osiągnie ten limit, Agent zastępuje najwcześniejsze wpisy, aby miejsce na więcej wpisów. Aby zmienić ten limit, użyj opcji **-wartość właściwości maximumfilesizeinmegabytes** lub Edytuj `MaximumLogFileSize` atrybut w planie kolekcji.|
@@ -159,7 +159,7 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
 
    Jeśli `enabled` atrybut nie istnieje, zdarzenie jest włączone.
 
-   Na przykład:
+   Przykład:
 
   - Wyłącz zdarzenia Windows Workflow dla aplikacji, które nie używają przepływu pracy systemu Windows.
 
@@ -229,7 +229,7 @@ Załóżmy na przykład, `AlterEmployee` że masz sygnaturę metody akceptując�
 Agent rejestruje wartości dla `id` , `Employee.Id` `Employee.Name` i `Employee` obiekt zwrócony z `AlterEmployee` metody. Jednak Agent nie rejestruje informacji o `Address` obiekcie innym niż to, czy ma on wartość null, czy nie. Agent nie rejestruje również danych o zmiennych lokalnych w `AlterEmployee` metodzie, chyba że inne metody używają tych zmiennych lokalnych jako parametrów, w których są one rejestrowane jako parametry metody.
 
 ## <a name="step-3-save-recorded-events"></a><a name="SaveEvents"></a> Krok 3. zapisywanie zarejestrowanych zdarzeń
- Po znalezieniu błędu lub problemu z wydajnością Zapisz zarejestrowane zdarzenia w dzienniku IntelliTrace. Agent tworzy dziennik tylko wtedy, gdy zarejestrował zdarzenia. W przypadku korzystania z programu System Center 2012 zobacz [monitorowanie aplikacji sieci Web za pomocą Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).
+ Po znalezieniu błędu lub problemu z wydajnością Zapisz zarejestrowane zdarzenia w dzienniku IntelliTrace. Agent tworzy dziennik tylko wtedy, gdy zarejestrował zdarzenia. W przypadku korzystania z programu System Center 2012 zobacz [monitorowanie aplikacji sieci Web za pomocą Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465157(v=sc.12)).
 
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Zapisuj zarejestrowane zdarzenia, ale Kontynuuj monitorowanie
  Wykonaj następujące kroki, aby utworzyć dziennik IntelliTrace, ale nie chcesz ponownie uruchamiać aplikacji ani zatrzymać monitorowania. Agent kontynuuje monitorowanie nawet w przypadku ponownego uruchomienia serwera lub aplikacji.
@@ -244,7 +244,7 @@ Agent rejestruje wartości dla `id` , `Employee.Id` `Employee.Name` i `Employee`
 
     **Checkpoint-WebApplicationMonitoring "IIS: \ sites** * \\<IISWebsiteName \> \\<IISWebAppName \> "*
 
-    Na przykład:
+    Przykład:
 
     **PS C: \\>Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**
 
@@ -278,7 +278,7 @@ Agent rejestruje wartości dla `id` , `Employee.Id` `Employee.Name` i `Employee`
 
     **Stop-WebApplicationMonitoring — wszystko**
 
-    Na przykład:
+    Przykład:
 
     **PS C: \\>Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**
 

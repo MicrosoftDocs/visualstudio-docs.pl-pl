@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a89e60a47e5bab6580c78275357234bb9d3f1c56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8b7ac2aed43bcb39b4bb5924ad6f1cf2c438b64
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80527926"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600083"
 ---
 # <a name="debugger-security"></a>Zabezpieczenia debugera
 Możliwość debugowania innego procesu daje użytkownikowi wyjątkowo szerokie uprawnienia, zwłaszcza w przypadku zdalnego debugowania. Złośliwy debuger może spowodować rozległe uszkodzenie na debugowanym komputerze.
@@ -57,7 +57,7 @@ Możliwość debugowania innego procesu daje użytkownikowi wyjątkowo szerokie 
  Aby uzyskać informacje na temat konfigurowania msvsmon, zobacz [Konfigurowanie zdalnego debugera](../debugger/remote-debugging.md#bkmk_setup).
 
 ### <a name="web-services-debugging-security"></a>Zabezpieczenia debugowania usług sieci Web
- Istnieje bezpieczniejsze debugowanie lokalne, ale ponieważ prawdopodobnie nie zostały [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zainstalowane na serwerze sieci Web, debugowanie lokalne może nie być praktyczne. Ogólnie rzecz biorąc, debugowanie usług sieci Web odbywa się zdalnie, z wyjątkiem sytuacji, w której zalecenia dotyczące zdalnego debugowania zabezpieczeń mają zastosowanie również do debugowania usług sieci Web. Poniżej przedstawiono kilka dodatkowych najlepszych rozwiązań. Aby uzyskać więcej informacji, zobacz [debugowanie usług sieci Web XML](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).
+ Istnieje bezpieczniejsze debugowanie lokalne, ale ponieważ prawdopodobnie nie zostały [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zainstalowane na serwerze sieci Web, debugowanie lokalne może nie być praktyczne. Ogólnie rzecz biorąc, debugowanie usług sieci Web odbywa się zdalnie, z wyjątkiem sytuacji, w której zalecenia dotyczące zdalnego debugowania zabezpieczeń mają zastosowanie również do debugowania usług sieci Web. Poniżej przedstawiono kilka dodatkowych najlepszych rozwiązań. Aby uzyskać więcej informacji, zobacz [debugowanie usług sieci Web XML](/previous-versions/ms241873(v=vs.100)).
 
 - Nie należy włączać debugowania na serwerze sieci Web, którego zabezpieczenia zostały naruszone.
 

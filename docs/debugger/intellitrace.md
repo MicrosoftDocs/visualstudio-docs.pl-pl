@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cbe14e1bf8c3a5e010e3c9e887a208b7e045b4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 878c2481164bc87d4af5e79a0a978e822e7baafe
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536516"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600253"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace for Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -39,7 +39,7 @@ Możesz użyć IntelliTrace w wersji Visual Studio Enterprise (ale nie wersji Pr
 
 ## <a name="what-do-you-want-to-do"></a>Co chcesz zrobić?
 
-|Scenariusz|Tytuł|
+|Scenariusz|Title (Tytuł)|
 |-|-|
 |**Debuguj moją aplikację przy użyciu IntelliTrace:**<br /><br /> -Pokaż poprzednie zdarzenia.<br />-Wyświetla informacje o wywołaniu dla przeszłych zdarzeń.<br />-Zapisz moją sesję IntelliTrace.<br />— Kontroluj dane zbierane przez IntelliTrace.|- [Zbadaj poprzednie Stany aplikacji przy użyciu IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Przewodnik: używanie IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funkcje IntelliTrace](../debugger/intellitrace-features.md)<br />- [Debugowanie historyczne](../debugger/historical-debugging.md)|
 |**Zbieraj dane IntelliTrace z wdrożonych aplikacji**|- [Korzystanie z autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
@@ -68,7 +68,7 @@ Możesz zapisywać dane IntelliTrace z następujących źródeł:
 
 - Sesja IntelliTrace w programie Visual Studio 2015 Enterprise lub jego nowszych wersjach lub wcześniejszych wersjach Visual Studio Ultimate.
 
-- Aplikacje internetowe ASP.NET hostowane w usłudze IIS lub aplikacje SharePoint 2010 i SharePoint 2013 działające we wdrożeniu, gdy używasz programu Microsoft Monitoring Agent samodzielnie lub w połączeniu z programem System Center 2012. Zobacz [Korzystanie z IntelliTrace autonomicznego modułu zbierającego](../debugger/using-the-intellitrace-stand-alone-collector.md) i [monitorowanie za pomocą Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).
+- Aplikacje internetowe ASP.NET hostowane w usłudze IIS lub aplikacje SharePoint 2010 i SharePoint 2013 działające we wdrożeniu, gdy używasz programu Microsoft Monitoring Agent samodzielnie lub w połączeniu z programem System Center 2012. Zobacz [Korzystanie z IntelliTrace autonomicznego modułu zbierającego](../debugger/using-the-intellitrace-stand-alone-collector.md) i [monitorowanie za pomocą Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12)).
 
 Oto kilka przykładów, jak IntelliTrace może pomóc w debugowaniu:
 

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d00327315b98c4b55797187c59db3a81ee351fb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bd6aaa912a384acbb41c42bfa4785eda52ae78a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350345"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599872"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Jak można sprawdzić, kto przekazuje błędną wartość parametru?
 ## <a name="problem-description"></a>Opis problemu
@@ -53,5 +53,5 @@ ms.locfileid: "85350345"
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie kodu natywnego — Często zadawane pytania](../debugger/debugging-native-code-faqs.md)
-- [Punkty przerwania](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)
+- [Punkty przerwania](/previous-versions/ktf38f66(v=vs.100))
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

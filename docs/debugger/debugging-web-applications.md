@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a7727f93e3f4fe279bb9cc009e61a3fdd70a15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2f54e80059896345abb00e955a827a00b5a35a5
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73714451"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600123"
 ---
 # <a name="debugging-web-applications"></a>Debugowanie aplikacji internetowych
 
@@ -42,7 +42,7 @@ Ten artykuł zawiera linki ułatwiające debugowanie różnych typów aplikacji 
 
 - Debugowanie aplikacji skryptów AJAX
 
-  Aplikacje sieci Web obsługujące technologię AJAX wykorzystują duże wykorzystanie kodu skryptu i stanowią specjalne wyzwania dotyczące debugowania. Aby uzyskać informacje na temat technik debugowania AJAX, zobacz [debugowanie i śledzenie aplikacji Ajax — Omówienie](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).
+  Aplikacje sieci Web obsługujące technologię AJAX wykorzystują duże wykorzystanie kodu skryptu i stanowią specjalne wyzwania dotyczące debugowania. Aby uzyskać informacje na temat technik debugowania AJAX, zobacz [debugowanie i śledzenie aplikacji Ajax — Omówienie](/previous-versions/bb398817(v=vs.140)).
 
 ## <a name="see-also"></a>Zobacz też
 

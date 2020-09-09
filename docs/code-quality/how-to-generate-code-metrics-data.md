@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 145525dc12070d98dae83d592ae86a675bb605d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b254cb2077b748f34958e33dbc456f17df530ce
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893414"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600228"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Instrukcje: generowanie danych metryk kodu
 
@@ -32,7 +32,7 @@ Dane metryk kodu można generować na trzy sposoby:
 
 [Analizatory](roslyn-analyzers-overview.md) jakości kodu platformy .NET zawierają kilka reguł analizy metryk kodu:
 
-- [CA1501](ca1501-avoid-excessive-inheritance.md)
+- [CA1501](./ca1501.md)
 - [CA1502](ca1502.md)
 - [CA1505](ca1505.md)
 - [CA1506](ca1506.md)
@@ -62,7 +62,7 @@ Można skonfigurować progi, w których będą wyzwalane reguły metryki kodu.
 
    W tym przykładzie reguła [CA1502](ca1502.md) jest skonfigurowana do uruchamiania, gdy Złożoność cyklomatyczna metody jest większa niż 10.
 
-3. W oknie **Właściwości** programu Visual Studio lub w pliku projektu Oznacz akcję kompilacja pliku konfiguracji jako [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Na przykład:
+3. W oknie **Właściwości** programu Visual Studio lub w pliku projektu Oznacz akcję kompilacja pliku konfiguracji jako [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Przykład:
 
    ```xml
    <ItemGroup>
@@ -111,7 +111,7 @@ Można generować dane metryk kodu z wiersza polecenia dla projektów C# i Visua
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Pakiet NuGet Microsoft. CodeAnalysis. Metrics
 
-Najprostszym sposobem generowania danych metryk kodu z wiersza polecenia jest zainstalowanie pakietu NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Po zainstalowaniu pakietu Uruchom polecenie `msbuild /t:Metrics` z katalogu, który zawiera plik projektu. Na przykład:
+Najprostszym sposobem generowania danych metryk kodu z wiersza polecenia jest zainstalowanie pakietu NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Po zainstalowaniu pakietu Uruchom polecenie `msbuild /t:Metrics` z katalogu, który zawiera plik projektu. Przykład:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-Można zastąpić nazwę pliku wyjściowego, określając `/p:MetricsOutputFile=<filename>` . Możesz również uzyskać dane metryk kodu w [starszej wersji](#previous-versions) , określając `/p:LEGACY_CODE_METRICS_MODE=true` . Na przykład:
+Można zastąpić nazwę pliku wyjściowego, określając `/p:MetricsOutputFile=<filename>` . Możesz również uzyskać dane metryk kodu w [starszej wersji](#previous-versions) , określając `/p:LEGACY_CODE_METRICS_MODE=true` . Przykład:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -293,7 +293,7 @@ Jeśli nie chcesz instalować pakietu NuGet, możesz bezpośrednio wygenerować 
 
 #### <a name="metricsexe-usage"></a>Użycie Metrics.exe
 
-Aby uruchomić *Metrics.exe*, podaj projekt lub rozwiązanie oraz wyjściowy plik XML jako argumenty. Na przykład:
+Aby uruchomić *Metrics.exe*, podaj projekt lub rozwiązanie oraz wyjściowy plik XML jako argumenty. Przykład:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml

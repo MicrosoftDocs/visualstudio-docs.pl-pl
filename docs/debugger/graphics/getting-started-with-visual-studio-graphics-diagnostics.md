@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68cbd19b65eb25405dc994100baf4fddeef9479d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00a802c0083a9e67a145077ff8ec5842b30eb607
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350462"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600100"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Wprowadzenie do diagnostyki grafiki w programie Visual Studio
 W tej sekcji utworzysz Diagnostyka grafiki po raz pierwszy, następnie przechwytuje ramki z aplikacji Direct3D i przeanalizuje je w analizatorze grafiki.
@@ -56,7 +56,7 @@ W tej sekcji utworzysz Diagnostyka grafiki po raz pierwszy, następnie przechwyt
 Jeśli masz już swoją aplikację Direct3D do eksplorowania Diagnostyka grafiki za pomocą programu, świetnie! W przeciwnym razie użyj jednego z następujących elementów:
 
 ::: moniker range=">=vs-2019"
-Pobierz przykład z [przykładu gry Direct3D](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/simple3dgamedx/).
+Pobierz przykład z [przykładu gry Direct3D](/samples/microsoft/windows-universal-samples/simple3dgamedx/).
 ::: moniker-end
 ::: moniker range="vs-2017"
 - Szablony projektów **aplikacji DirectX 11 (uniwersalnego systemu Windows)** lub **DirectX 12** dla systemu Windows 10.

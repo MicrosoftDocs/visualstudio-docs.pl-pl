@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceffab5b8c179734b1abb5f1005c240912115f1
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183820"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599584"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Określanie symboli (. pdb) i plików źródłowych w debugerze programu Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -46,7 +46,7 @@ Szczegółowe wyjaśnienie plików symboli można znaleźć w następujących te
 
 - [Omówienie plików symboli i ustawień symboli programu Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-- [Dlaczego program Visual Studio wymaga, aby pliki symboli debugera były dokładnie zgodne z plikami binarnymi, z których zostały skompilowane?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+- [Dlaczego program Visual Studio wymaga, aby pliki symboli debugera były dokładnie zgodne z plikami binarnymi, z których zostały skompilowane?](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)
 
 ## <a name="how-symbol-files-work"></a>Jak działają pliki symboli
 
@@ -57,7 +57,7 @@ Plik *. pdb* przechowuje informacje o debugowaniu i stanie projektu, które umo�
 
 Pliki symboli zawierają również lokalizację plików źródłowych i opcjonalnie serwer, z którego można je pobrać.
 
-Debuger *ładuje tylko pliki. pdb* , które dokładnie pasują do plików *. pdb* utworzonych podczas kompilowania aplikacji (czyli oryginalnych plików *. pdb* lub kopii). To [dokładne duplikowanie](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/) jest konieczne, ponieważ układ aplikacji może się zmieniać, nawet jeśli sam kod nie został zmieniony.
+Debuger *ładuje tylko pliki. pdb* , które dokładnie pasują do plików *. pdb* utworzonych podczas kompilowania aplikacji (czyli oryginalnych plików *. pdb* lub kopii). To [dokładne duplikowanie](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with) jest konieczne, ponieważ układ aplikacji może się zmieniać, nawet jeśli sam kod nie został zmieniony.
 
 > [!TIP]
 > Aby debugować kod poza kodem źródłowym projektu, taki jak kod systemu Windows lub kod innej firmy, należy określić lokalizację plików *. pdb* kodu zewnętrznego (i opcjonalnie pliki źródłowe), które muszą być dokładnie zgodne z kompilacjami w aplikacji.

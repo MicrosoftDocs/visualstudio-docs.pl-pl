@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d054c60c45980b3d08b09987229febb99593090
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4790fa8c6fd0bba5b513fd2ce3d203b552b6c63b
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72728047"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599988"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Skąd wiadomo, gdy funkcja jest wywoływana setki razy, które wywołanie nie powiodło się?
 ## <a name="problem-description"></a>Opis problemu
@@ -50,5 +50,5 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie kodu natywnego — Często zadawane pytania](../debugger/debugging-native-code-faqs.md)
-- [Ustawianie punktów przerwania](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)
+- [Ustawianie punktów przerwania](/previous-versions/ktf38f66(v=vs.100))
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: b7d9ed2f2ceeae21b85fdb8227e65715cb07bc8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87f8fbec389e3735b6f1c39cdd671a391c7334d7
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350566"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600114"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Generuj kod źródłowy z zestawów .NET podczas debugowania
 
@@ -27,7 +27,7 @@ Podczas debugowania aplikacji .NET może się okazać, że chcesz wyświetlić k
 > [!NOTE]
 > * Generowanie kodu źródłowego (dekompilacja) jest dostępne tylko dla aplikacji .NET i opiera się na projekcie [ILSpy](https://github.com/icsharpcode/ILSpy) Open Source.
 > * Dekompilacja jest dostępna tylko w programie Visual Studio 2019 16,5 i nowszych.
-> * Zastosowanie atrybutu [SuppressIldasmAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) do zestawu lub modułu uniemożliwia programowi Visual Studio podjęcie próby dekompilacji.
+> * Zastosowanie atrybutu [SuppressIldasmAttribute](/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) do zestawu lub modułu uniemożliwia programowi Visual Studio podjęcie próby dekompilacji.
 
 ## <a name="generate-source-code"></a>Generuj kod źródłowy
 
@@ -99,7 +99,7 @@ Więcej szczegółów można znaleźć w temacie problem z usługą plików [PDB
 
 ### <a name="just-my-code"></a>Tylko mój kod
 
-Ustawienia [tylko mój kod (JMC)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) pozwalają programowi Visual Studio na przechodzenie przez system, strukturę, bibliotekę i inne wywołania niebędące użytkownikami. Podczas sesji debugowania w oknie **moduły** są wyświetlane moduły kodu, które debuger jest traktowany jako mój kod (kod użytkownika).
+Ustawienia [tylko mój kod (JMC)](./just-my-code.md) pozwalają programowi Visual Studio na przechodzenie przez system, strukturę, bibliotekę i inne wywołania niebędące użytkownikami. Podczas sesji debugowania w oknie **moduły** są wyświetlane moduły kodu, które debuger jest traktowany jako mój kod (kod użytkownika).
 
 Dekompilacja modułów zoptymalizowanych lub wydań generuje kod niebędący użytkownikiem. Jeśli debuger przerwie w nieskompilowanym kodzie nieużywanym przez użytkownika, na przykład okno **nie** zostanie wyświetlone. Aby wyłączyć tylko mój kod, przejdź do **Tools**  >  **opcji** narzędzia (lub **Debug**  >  **Opcje**debugowania) > **debugowania**  >  **Ogólne**, a następnie usuń zaznaczenie opcji **Włącz tylko mój kod**.
 

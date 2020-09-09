@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4ae5e4f6f21208f02cbfd6513b3c5eb28124a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 659167b02703cd3a51751fbe90fbd9408b5e623d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350592"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599565"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnozowanie problemów po wdrożeniu za pomocą IntelliTrace (C#, Visual Basic)
 
@@ -153,7 +153,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
  **/p: BuildSymbolStorePath =**\<*path to symbols*>
 
 ## <a name="step-2-release-your-app"></a><a name="DeployRelease"></a> Krok 2. wydawanie aplikacji
- Jeśli używasz [pakietu Web. deploy](https://msdn.microsoft.com/library/dd394698.aspx) , który został utworzony przez proces kompilacji do wdrożenia aplikacji, zostanie automatycznie zmieniona nazwa manifestu kompilacji z "*ProjectName*.BuildInfo.config" na "BuildInfo.config" i zostanie umieszczony w tym samym folderze, w którym znajduje się plik Web.config aplikacji na serwerze sieci Web.
+ Jeśli używasz [pakietu Web. deploy](/previous-versions/aspnet/dd394698(v=vs.110)) , który został utworzony przez proces kompilacji do wdrożenia aplikacji, zostanie automatycznie zmieniona nazwa manifestu kompilacji z "*ProjectName*.BuildInfo.config" na "BuildInfo.config" i zostanie umieszczony w tym samym folderze, w którym znajduje się plik Web.config aplikacji na serwerze sieci Web.
 
  Jeśli używasz innych metod do wdrożenia aplikacji, upewnij się, że nazwa manifestu kompilacji została zmieniona z "*ProjectName*.BuildInfo.config" na "BuildInfo.config" i umieszczona w tym samym folderze, w którym znajduje się plik Web.config aplikacji na serwerze sieci Web.
 
@@ -263,7 +263,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
 
 - **ProjectName**
 
-   Nazwa projektu w programie Visual Studio. Na przykład:
+   Nazwa projektu w programie Visual Studio. Przykład:
 
   ```xml
   <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
@@ -281,7 +281,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
 
     - **ProjectVersionSpec**: wersja projektu
 
-      Na przykład:
+      Przykład:
 
     ```xml
     <SourceControl type="TFS">
@@ -293,7 +293,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
     </SourceControl>
     ```
 
-  - **Git**
+  - **Narzędzia**
 
     - **GitSourceControl**: Lokalizacja schematu **GitSourceControl**
 
@@ -303,7 +303,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
 
     - **CommitId**: Identyfikator zatwierdzenia
 
-      Na przykład:
+      Przykład:
 
     ```xml
     <SourceControl type="Git">
@@ -329,7 +329,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
 
   - **BuiltSolution**: ścieżka do pliku rozwiązania używanego przez program Visual Studio do znajdowania i otwierania pasującego rozwiązania. Jest to zawartość właściwości programu MsBuild **SolutionPath** .
 
-    Na przykład:
+    Przykład:
 
   - **TFS**
 
@@ -345,7 +345,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
     </Build>
     ```
 
-  - **Git**
+  - **Narzędzia**
 
     ```xml
     <Build type="MSBuild">

@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 458e6cb4ebf882d2d9e331823cc4955143e7d5b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e85f7c67f8dc25bb69f7de07a19286b5c63e938a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349162"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599901"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Ustawianie konfiguracji debugowania i wersji w programie Visual Studio
 
@@ -67,7 +67,7 @@ lub
 Można wybrać opcję generowania plików symboli (. pdb) i informacji debugowania do uwzględnienia. W przypadku większości typów projektów kompilator generuje pliki symboli domyślnie dla kompilacji debugowania i wydania, podczas gdy inne ustawienia domyślne różnią się w zależności od typu projektu i wersji programu Visual Studio.
 
 > [!IMPORTANT]
-> Debuger będzie ładował tylko plik .pdb dla pliku wykonywalnego, który dokładnie pasuje do pliku .pdb, który z kolei został utworzony podczas kompilowania pliku wykonywalnego (czyli .pdb musi być plikiem oryginalnym lub kopią oryginalnego pliku .pdb). Aby uzyskać więcej informacji, zobacz [Dlaczego program Visual Studio wymaga, aby pliki symboli debugera były dokładnie zgodne z plikami binarnymi, z których zostały skompilowane?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/).
+> Debuger będzie ładował tylko plik .pdb dla pliku wykonywalnego, który dokładnie pasuje do pliku .pdb, który z kolei został utworzony podczas kompilowania pliku wykonywalnego (czyli .pdb musi być plikiem oryginalnym lub kopią oryginalnego pliku .pdb). Aby uzyskać więcej informacji, zobacz [Dlaczego program Visual Studio wymaga, aby pliki symboli debugera były dokładnie zgodne z plikami binarnymi, z których zostały skompilowane?](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with).
 
 Każdy typ projektu może mieć inny sposób ustawiania tych opcji.
 

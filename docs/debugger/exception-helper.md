@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d044ed5ddaf4b7eb7a66bc09c8b3de3502a50f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e2157b55915f82e79dfdac5d300046850a93879
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350501"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600305"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>Inspekcja wyjątku przy użyciu pomocnika wyjątków 
 
@@ -50,7 +50,7 @@ Począwszy od programu Visual Studio 2017, dla kodu .NET i C/C++, gdy trafisz `N
 Można skonfigurować debuger, aby przerwać, gdy zostanie zgłoszony wyjątek bieżącego typu z sekcji **Ustawienia wyjątku** pomocnika wyjątków. Jeśli debuger jest wstrzymany w przypadku zgłoszonego wyjątku, można użyć pola wyboru, aby wyłączyć podział na ten typ wyjątku, gdy zostanie zgłoszony w przyszłości. Jeśli nie chcesz przerwać tego konkretnego wyjątku w przypadku zgłoszenia w tym konkretnym module, zaznacz pole wyboru według nazwy modułu w obszarze **except, gdy zostanie zgłoszony z:** w oknie **Ustawienia wyjątku** . 
 
 ## <a name="inspect-inner-exceptions"></a>Inspekcja wyjątków wewnętrznych 
-Jeśli wyjątek ma wyjątki wewnętrzne ([InnerException](https://docs.microsoft.com/dotnet/api/system.exception.innerexception), można je wyświetlić w Pomocniku wyjątków. Jeśli istnieje wiele wyjątków, można przechodzić między nimi za pomocą strzałek w lewo i w prawo widocznych powyżej stosu wywołań.
+Jeśli wyjątek ma wyjątki wewnętrzne ([InnerException](/dotnet/api/system.exception.innerexception), można je wyświetlić w Pomocniku wyjątków. Jeśli istnieje wiele wyjątków, można przechodzić między nimi za pomocą strzałek w lewo i w prawo widocznych powyżej stosu wywołań.
 
 ![Pomocnik wyjątków z wyjątkiem wewnętrznym](media/debugger-exception-helper-innerexception.png)
 
@@ -60,4 +60,4 @@ W przypadkach, gdy wyjątek był `thrown` pomocnika wyjątków wyświetla stos w
 ![Pomocnik wyjątków z ponownie zgłoszonymi wyjątkami](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="share-a-debug-session-with-live-share"></a>Udostępnianie sesji debugowania za pomocą Live Share
-Z pomocnika wyjątków można uruchomić sesję [Live Share](https://docs.microsoft.com/visualstudio/liveshare/) przy użyciu linku **Rozpocznij Live Share sesji..**.. Każda osoba łącząca się z sesją Live Share może zobaczyć pomocnika wyjątków wraz z innymi informacjami o debugowaniu.
+Z pomocnika wyjątków można uruchomić sesję [Live Share](/visualstudio/liveshare/) przy użyciu linku **Rozpocznij Live Share sesji..**.. Każda osoba łącząca się z sesją Live Share może zobaczyć pomocnika wyjątków wraz z innymi informacjami o debugowaniu.

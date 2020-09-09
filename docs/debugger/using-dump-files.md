@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db6d4e8bc5b2f09194e03bbadc8f49b773d24f1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386956"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599492"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Zrzuć pliki w debugerze programu Visual Studio
 
@@ -74,13 +74,13 @@ Dzięki włączeniu [debugowania just in Time](../debugger/just-in-time-debuggin
 1. Przejdź do ścieżki i wybierz nazwę pliku zrzutu, a następnie wybierz pozycję **Zapisz**.
 
 >[!NOTE]
->Można tworzyć pliki zrzutu za pomocą dowolnego programu, który obsługuje format minizrzutu systemu Windows. Na przykład narzędzie wiersza polecenia **ProcDump** z [Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) może tworzyć pliki zrzutu awaryjnego procesów na podstawie wyzwalaczy lub na żądanie. Zapoznaj się z [wymaganiami i ograniczeniami](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) dotyczącymi korzystania z innych narzędzi do tworzenia plików zrzutu.
+>Można tworzyć pliki zrzutu za pomocą dowolnego programu, który obsługuje format minizrzutu systemu Windows. Na przykład narzędzie wiersza polecenia **ProcDump** z [Windows Sysinternals](/sysinternals/) może tworzyć pliki zrzutu awaryjnego procesów na podstawie wyzwalaczy lub na żądanie. Zapoznaj się z [wymaganiami i ograniczeniami](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) dotyczącymi korzystania z innych narzędzi do tworzenia plików zrzutu.
 
 ## <a name="open-a-dump-file"></a><a name="BKMK_Open_a_dump_file"></a> Otwórz plik zrzutu
 
 1. W programie Visual Studio wybierz pozycję **plik**  >  **Otwórz**  >  **plik**.
 
-1. W oknie dialogowym **Otwórz plik** zlokalizuj i wybierz plik zrzutu. Zazwyczaj ma rozszerzenie *. dmp* . Wybierz przycisk **OK**.
+1. W oknie dialogowym **Otwórz plik** zlokalizuj i wybierz plik zrzutu. Zazwyczaj ma rozszerzenie *. dmp* . Wybierz pozycję **OK**.
 
    Okno **podsumowania pliku minizrzutu** zawiera podsumowanie i informacje o module dla pliku zrzutu oraz akcje, które można wykonać.
 

@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a86cb62fe0ae0db971a417ef923f45eedbefe0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94fd7ba7b742c2615dc8f161c5ea156b4fd0a7f4
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649294"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600023"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Zestaw reguł macierzystych reguł zalecanych
 
@@ -22,224 +22,224 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 
 |Reguła|Opis|
 |----------|-----------------|
-|[C6001](../code-quality/c6001.md)|Używanie niezainicjowanej pamięci|
-|[C6011](../code-quality/c6011.md)|Wyłuskanie wskaźnika o wartości null|
-|[C6029](../code-quality/c6029.md)|Użycie niesprawdzonej wartości|
-|[C6031](../code-quality/c6031.md)|Wartość zwracana została zignorowana|
-|[C6053](../code-quality/c6053.md)|Zakończenie zerowe od wywołania|
-|[C6054](../code-quality/c6054.md)|Brak zakończenia zerowej|
-|[C6059](../code-quality/c6059.md)|Złe łączenie|
-|[C6063](../code-quality/c6063.md)|Brak argumentu ciągu do funkcji formatowania|
-|[C6064](../code-quality/c6064.md)|Brak argumentu typu Integer dla funkcji formatowania|
-|[C6066](../code-quality/c6066.md)|Brak argumentu wskaźnika dla funkcji formatowania|
-|[C6067](../code-quality/c6067.md)|Brak argumentu wskaźnika ciągu do funkcji formatowania|
-|[C6101](../code-quality/c6101.md)|Zwracanie niezainicjowanej pamięci|
-|[C6200](../code-quality/c6200.md)|Indeks przekracza maksymalny rozmiar buforu|
-|[C6201](../code-quality/c6201.md)|Indeks przekracza maksymalną wartość buforu stosu|
-|[C6214](../code-quality/c6214.md)|Nieprawidłowe rzutowanie HRESULT do wartości LOGICZNEj|
-|[C6215](../code-quality/c6215.md)|Nieprawidłowa wartość logiczna rzutowania do HRESULT|
-|[C6216](../code-quality/c6216.md)|Nieprawidłowa wartość logiczna rzutowania wstawionego przez kompilator do HRESULT|
-|[C6217](../code-quality/c6217.md)|Nieprawidłowy test HRESULT z|
-|[C6220](../code-quality/c6220.md)|Nieprawidłowe porównanie HRESULT z-1|
-|[C6226](../code-quality/c6226.md)|Nieprawidłowe przypisanie HRESULT do-1|
-|[C6230](../code-quality/c6230.md)|Nieprawidłowe użycie HRESULT jako wartości logicznej|
-|[C6235](../code-quality/c6235.md)|Stała niezerowa z wartością logiczną lub|
-|[C6236](../code-quality/c6236.md)|Logiczna — lub z niezerową stałą|
-|[C6237](../code-quality/c6237.md)|Zero ze koniunkcją logiczną i powoduje utratę efektów ubocznych|
-|[C6242](../code-quality/c6242.md)|Wymuszone lokalne rozwinięcie|
-|[C6248](../code-quality/c6248.md)|Tworzenie listy DACL o wartości null|
-|[C6250](../code-quality/c6250.md)|Niezwolnione deskryptory adresów|
-|[C6255](../code-quality/c6255.md)|Niechronione użycie alloca|
-|[C6258](../code-quality/c6258.md)|Korzystanie z wątku przerywania|
-|[C6259](../code-quality/c6259.md)|Martwy kod w przełączniku bitowym lub ograniczonym|
-|[C6260](../code-quality/c6260.md)|Użycie arytmetyki bajtowej|
-|[C6262](../code-quality/c6262.md)|Nadmierne użycie stosu|
-|[C6263](../code-quality/c6263.md)|Korzystanie z usługi alloca w pętli|
-|[C6268](../code-quality/c6268.md)|Brak nawiasów w rzutowaniu|
-|[C6269](../code-quality/c6269.md)|Zignorowano odwołanie do wskaźnika|
-|[C6270](../code-quality/c6270.md)|Brak argumentu zmiennoprzecinkowego do funkcji formatowania|
-|[C6271](../code-quality/c6271.md)|Dodatkowy argument funkcji formatowania|
-|[C6272](../code-quality/c6272.md)|Argument inny niż zmiennoprzecinkowy do formatowania funkcji|
-|[C6273](../code-quality/c6273.md)|Argument niebędący liczbą całkowitą do sformatowania funkcji|
-|[C6274](../code-quality/c6274.md)|Argument niebędący znakiem do funkcji formatowania|
-|[C6276](../code-quality/c6276.md)|Nieprawidłowe rzutowanie ciągu|
-|[C6277](../code-quality/c6277.md)|Nieprawidłowe wywołanie metody CreateProcess|
-|[C6278](../code-quality/c6278.md)|Niezgodność Array-New skalarna Delete|
-|[C6279](../code-quality/c6279.md)|Skalarna — niezgodność z nową tablicą|
-|[C6280](../code-quality/c6280.md)|Niezgodność alokacji pamięci|
-|[C6281](../code-quality/c6281.md)|Pierwszeństwo relacji bitowej|
-|[C6282](../code-quality/c6282.md)|Przypisanie zastępuje test|
-|[C6283](../code-quality/c6283.md)|Niezgodność z tablicą pierwotną — Nowa funkcja skalarna usuwania|
-|[C6284](../code-quality/c6284.md)|Nieprawidłowy argument obiektu dla funkcji formatowania|
-|[C6285](../code-quality/c6285.md)|Logiczne-lub stałe|
-|[C6286](../code-quality/c6286.md)|Niezerowe logiczne lub utrata efektów ubocznych|
-|[C6287](../code-quality/c6287.md)|Test nadmiarowy|
-|[C6288](../code-quality/c6288.md)|Wzajemne włączenie przy użyciu operatora logicznego i ma wartość false|
-|[C6289](../code-quality/c6289.md)|Wzajemne wykluczenie z użyciem operatora logicznego OR jest prawdziwe|
-|[C6290](../code-quality/c6290.md)|Niestandardowa koniunkcja logiczna|
-|[C6291](../code-quality/c6291.md)|Niestandardowa koniunkcja logiczna|
-|[C6292](../code-quality/c6292.md)|Pętla zlicza w górę od maksimum|
-|[C6293](../code-quality/c6293.md)|Pętla liczy w dół od minimum|
-|[C6294](../code-quality/c6294.md)|Treść pętli nigdy nie została wykonana|
-|[C6295](../code-quality/c6295.md)|Nieskończona pętla|
-|[C6296](../code-quality/c6296.md)|Pętla zostanie wykonana tylko raz|
-|[C6297](../code-quality/c6297.md)|Wynik rzutowania przesunięcia na większy rozmiar|
-|[C6299](../code-quality/c6299.md)|Porównanie pole bitowe z wartością logiczną|
-|[C6302](../code-quality/c6302.md)|Nieprawidłowy argument ciągu znaków dla funkcji formatowania|
-|[C6303](../code-quality/c6303.md)|Nieprawidłowy argument ciągu znaków dwubajtowych do funkcji formatowania|
-|[C6305](../code-quality/c6305.md)|Użycie niedopasowanego rozmiaru i liczby|
-|[C6306](../code-quality/c6306.md)|Nieprawidłowe wywołanie funkcji zmiennej argumentu|
-|[C6308](../code-quality/c6308.md)|Przeciek realloc|
-|[C6310](../code-quality/c6310.md)|Niedozwolona stała filtru wyjątków|
-|[C6312](../code-quality/c6312.md)|Pętla kontynuacji wykonywania wyjątków|
-|[C6314](../code-quality/c6314.md)|Pierwszeństwo bitowe|
-|[C6317](../code-quality/c6317.md)|Nie uzupełniaj|
-|[C6318](../code-quality/c6318.md)|Wyjątek — Kontynuuj wyszukiwanie|
-|[C6319](../code-quality/c6319.md)|Zignorowane przez przecinek|
-|[C6324](../code-quality/c6324.md)|Kopiowanie ciągu zamiast porównywania ciągów|
-|[C6328](../code-quality/c6328.md)|Niezgodność typu argumentu potencjalnego|
-|[C6331](../code-quality/c6331.md)|VirtualFree nieprawidłowe flagi|
-|[C6332](../code-quality/c6332.md)|VirtualFree nieprawidłowy parametr|
-|[C6333](../code-quality/c6333.md)|Nieprawidłowy rozmiar VirtualFree|
-|[C6335](../code-quality/c6335.md)|Przeciek uchwytu procesu|
-|[C6381](../code-quality/c6381.md)|Brak informacji o zamknięciu|
-|[C6383](../code-quality/c6383.md)|Przepełnienie buforu liczby elementów-count|
-|[C6384](../code-quality/c6384.md)|Dzielenie rozmiaru wskaźnika|
-|[C6385](../code-quality/c6385.md)|Przepełnienie odczytu|
-|[C6386](../code-quality/c6386.md)|Przepełnienie zapisu|
-|[C6387](../code-quality/c6387.md)|Nieprawidłowa wartość parametru|
-|[C6388](../code-quality/c6388.md)|Nieprawidłowa wartość parametru|
-|[C6500](../code-quality/c6500.md)|Nieprawidłowa właściwość atrybutu|
-|[C6501](../code-quality/c6501.md)|Sprzeczne wartości właściwości atrybutów|
-|[C6503](../code-quality/c6503.md)|Odwołania nie mogą być puste|
-|[C6504](../code-quality/c6504.md)|Wartość zerowa przy niewskaźniku|
-|[C6505](../code-quality/c6505.md)|MustCheck na void|
-|[C6506](../code-quality/c6506.md)|Rozmiar buforu dla elementu nie będącego wskaźnikiem lub tablicą|
-|[C6508](../code-quality/c6508.md)|Dostęp do zapisu dla stałej|
-|[C6509](../code-quality/c6509.md)|Return użyty w warunku wstępnym|
-|[C6510](../code-quality/c6510.md)|Przerwano wartość null dla niebędącego wskaźnikiem|
-|[C6511](../code-quality/c6511.md)|MustCheck musi mieć wartość yes lub No|
-|[C6513](../code-quality/c6513.md)|Rozmiar elementu bez rozmiaru buforu|
-|[C6514](../code-quality/c6514.md)|Rozmiar buforu przekracza rozmiar tablicy|
-|[C6515](../code-quality/c6515.md)|Rozmiar buforu dla elementu nie będącego wskaźnikiem|
-|[C6516](../code-quality/c6516.md)|Brak właściwości dla atrybutu|
-|[C6517](../code-quality/c6517.md)|Prawidłowy rozmiar dla bufora bez możliwości odczytu|
-|[C6518](../code-quality/c6518.md)|Rozmiar zapisywalny bufora bez możliwości zapisu|
-|[C6522](../code-quality/c6522.md)|Nieprawidłowy typ ciągu rozmiaru|
-|[C6525](../code-quality/c6525.md)|Nieprawidłowy ciąg rozmiaru nieosiągalnej lokalizacji|
-|[C6527](../code-quality/c6527.md)|Nieprawidłowa Adnotacja: Właściwość "NeedsRelease" nie może być użyta dla wartości typu void|
-|[C6530](../code-quality/c6530.md)|Nierozpoznany styl ciągu formatu|
-|[C6540](../code-quality/c6540.md)|Użycie adnotacji atrybutów dla tej funkcji spowoduje unieważnienie wszystkich istniejących adnotacji __declspec|
-|[C6551](../code-quality/c6551.md)|Nieprawidłowa specyfikacja rozmiaru: nie przeanalizować wyrażenia|
-|[C6552](../code-quality/c6552.md)|Nieprawidłowe DEREF = lub Notref =: nie możliwy do przeanalizowania wyrażenia|
-|[C6701](../code-quality/c6701.md)|Wartość nie jest prawidłową wartością tak/nie/może|
-|[C6702](../code-quality/c6702.md)|Wartość nie jest wartością ciągu.|
-|[C6703](../code-quality/c6703.md)|Wartość nie jest liczbą|
-|[C6704](../code-quality/c6704.md)|Nieoczekiwany błąd wyrażenia adnotacji|
-|[C6705](../code-quality/c6705.md)|Oczekiwana liczba argumentów adnotacji jest niezgodna z rzeczywistą liczbą argumentów dla adnotacji|
-|[C6706](../code-quality/c6706.md)|Nieoczekiwany błąd adnotacji dla adnotacji|
-|[C6995](../code-quality/c6995.md)|Nie można zapisać pliku dziennika XML|
-|[C26100](../code-quality/c26100.md)|Sytuacja wyścigu|
-|[C26101](../code-quality/c26101.md)|Nie można prawidłowo użyć operacji zablokowanej|
-|[C26110](../code-quality/c26110.md)|Wystąpił błąd blokady wywołującej|
-|[C26111](../code-quality/c26111.md)|Obiekt wywołujący nie może zwolnić blokady|
-|[C26112](../code-quality/c26112.md)|Obiekt wywołujący nie może blokować żadnej blokady|
-|[C26115](../code-quality/c26115.md)|Niepowodzenie zwolnienia blokady|
-|[C26116](../code-quality/c26116.md)|Nie można uzyskać lub wstrzymać blokady|
-|[C26117](../code-quality/c26117.md)|Zwalnianie niezautrzymywanej blokady|
-|[C26140](../code-quality/c26140.md)|Błąd adnotacji dotyczącej współbieżności SAL|
-|[C26441](../code-quality/c26441.md)|NO_UNNAMED_GUARDS|
-|[C26444](../code-quality/c26444.md)|NO_UNNAMED_RAII_OBJECTS|
-|[C26498](../code-quality/c26498.md)|USE_CONSTEXPR_FOR_FUNCTIONCALL|
-|[C28020](../code-quality/c28020.md)|Wyrażenie nie jest prawdziwe w tym wywołaniu|
-|[C28021](../code-quality/c28021.md)|Parametr, którego typem jest adnotacja, musi być wskaźnikiem|
-|[C28022](../code-quality/c28022.md)|Klasy funkcji w tej funkcji nie są zgodne z klasami funkcji dla elementu typedef użytego do jego zdefiniowania.|
-|[C28023](../code-quality/c28023.md)|Przypisana lub przenoszona funkcja powinna mieć \_ \_ \_ adnotację klasy funkcji dla co najmniej jednej z klas (ES)|
-|[C28024](../code-quality/c28024.md)|Wskaźnik funkcji, do której jest przypisany, ma adnotację z klasą funkcji, która nie znajduje się na liście klas funkcji.|
-|[C28039](../code-quality/c28039.md)|Typ rzeczywistego parametru powinien dokładnie pasować do typu|
-|[C28112](../code-quality/c28112.md)|Do zmiennej, do której uzyskuje się dostęp za pośrednictwem funkcji zablokowaniej, zawsze należy uzyskać dostęp za pośrednictwem funkcji Zablokowani.|
-|[C28113](../code-quality/c28113.md)|Uzyskiwanie dostępu do zmiennej lokalnej przez zablokowaną funkcję|
-|[C28125](../code-quality/c28125.md)|Funkcja musi być wywołana z poziomu bloku try/except|
-|[C28137](../code-quality/c28137.md)|Zmienna argument powinien zamiast niego być (literałem)|
-|[C28138](../code-quality/c28138.md)|Argument stałej powinien zamiast tego mieć wartość zmienna|
-|[C28159](../code-quality/c28159.md)|Zamiast tego Rozważ użycie innej funkcji.|
-|[C28160](../code-quality/c28160.md)|Błąd adnotacji|
-|[C28163](../code-quality/c28163.md)|Funkcja nigdy nie powinna być wywoływana z wewnątrz bloku try/except|
-|[C28164](../code-quality/c28164.md)|Argument jest przesyłany do funkcji, która oczekuje wskaźnika do obiektu (nie wskaźnika do wskaźnika)|
-|[C28182](../code-quality/c28182.md)|Wyłuskanie wskaźnika o wartości NULL. Wskaźnik zawiera taką samą wartość NULL jak inny wskaźnik.|
-|[C28183](../code-quality/c28183.md)|Argument może być jedną wartością i jest kopią wartości znalezionej we wskaźniku|
-|[C28193](../code-quality/c28193.md)|Zmienna przechowuje wartość, która musi być zbadana|
-|[C28196](../code-quality/c28196.md)|Wymaganie nie jest spełnione. (Wyrażenie nie jest szacowane na wartość true).|
-|[C28202](../code-quality/c28202.md)|Niedozwolone odwołanie do niestatycznej składowej|
-|[C28203](../code-quality/c28203.md)|Niejednoznaczne odwołanie do składowej klasy.|
-|[C28205](../code-quality/c28205.md)|\_Powodzenie \_ lub \_ w \_ przypadku niepowodzenia \_ używane w niedozwolonym kontekście|
-|[C28206](../code-quality/c28206.md)|Lewy argument operacji wskazuje na strukturę, użyj "->"|
-|[C28207](../code-quality/c28207.md)|Lewy argument operacji jest strukturą, użyj "."|
-|[C28209](../code-quality/c28209.md)|Deklaracja symbolu ma sprzeczną deklarację|
-|[C28210](../code-quality/c28210.md)|Adnotacje dla kontekstu __on_failure nie mogą być w jawnym kontekście wstępnym|
-|[C28211](../code-quality/c28211.md)|Oczekiwano nazwy kontekstu statycznego dla SAL_context|
-|[C28212](../code-quality/c28212.md)|Oczekiwano wyrażenia wskaźnika dla adnotacji|
-|[C28213](../code-quality/c28213.md)|\_ \_ Adnotacja use decl adnotacji \_ \_ musi być używana do odwoływania się, bez modyfikacji, wcześniejszej deklaracji.|
-|[C28214](../code-quality/c28214.md)|Nazwy parametrów atrybutu muszą być P1... P9|
-|[C28215](../code-quality/c28215.md)|Nie można zastosować typefix do parametru, który ma już typefix|
-|[C28216](../code-quality/c28216.md)|Adnotacja Checkreturn dotyczy ma zastosowanie tylko do warunki końcowe dla określonego parametru funkcji.|
-|[C28217](../code-quality/c28217.md)|W przypadku funkcji liczba parametrów do adnotacji jest niezgodna z znalezionymi w pliku|
-|[C28218](../code-quality/c28218.md)|Dla parametru funkcji parametr adnotacji nie jest zgodny z znalezionym w pliku|
-|[C28219](../code-quality/c28219.md)|Oczekiwano składowej wyliczenia dla adnotacji, parametr w adnotacji|
-|[C28220](../code-quality/c28220.md)|Oczekiwano wyrażenia liczby całkowitej dla adnotacji, parametr w adnotacji|
-|[C28221](../code-quality/c28221.md)|Oczekiwano wyrażenia ciągu dla parametru w adnotacji|
-|[C28222](../code-quality/c28222.md)|\_oczekiwano __yes, _NO lub \_ _maybe dla adnotacji|
-|[C28223](../code-quality/c28223.md)|Nie znaleziono oczekiwanego tokenu/identyfikatora dla adnotacji, parametr|
-|[C28224](../code-quality/c28224.md)|Adnotacja wymaga parametrów|
-|[C28225](../code-quality/c28225.md)|Nie znaleziono poprawnej liczby wymaganych parametrów w adnotacji|
-|[C28226](../code-quality/c28226.md)|Adnotacja nie może być PrimOp (w bieżącej deklaracji)|
-|[C28227](../code-quality/c28227.md)|Adnotacja nie może być PrimOp (patrz wcześniejsza deklaracja)|
-|[C28228](../code-quality/c28228.md)|Parametr adnotacji: nie można użyć typu w adnotacjach|
-|[C28229](../code-quality/c28229.md)|Adnotacja nie obsługuje parametrów|
-|[C28230](../code-quality/c28230.md)|Typ parametru nie ma składowej.|
-|[C28231](../code-quality/c28231.md)|Adnotacja jest prawidłowa tylko na tablicy|
-|[C28232](../code-quality/c28232.md)|pre, post lub DEREF nie zostały zastosowane do żadnej adnotacji|
-|[C28233](../code-quality/c28233.md)|pre, post lub DEREF zastosowany do bloku|
-|[C28234](../code-quality/c28234.md)|wyrażenie __at nie ma zastosowania do bieżącej funkcji|
-|[C28235](../code-quality/c28235.md)|Funkcja nie może być autonomiczna jako adnotacja|
-|[C28236](../code-quality/c28236.md)|Nie można użyć adnotacji w wyrażeniu|
-|[C28237](../code-quality/c28237.md)|Adnotacja w parametrze nie jest już obsługiwana|
-|[C28238](../code-quality/c28238.md)|Adnotacja dla parametru ma więcej niż jedną wartość, stringValue i longValue. Użyj paramn = XXX|
-|[C28239](../code-quality/c28239.md)|Adnotacja dla parametru ma wartość Value, stringValue lub longValue; i paramn = xxx. Używaj tylko paramn = XXX|
-|[C28240](../code-quality/c28240.md)|Adnotacja dla parametru ma Param2, ale nie param1|
-|[C28241](../code-quality/c28241.md)|Nie rozpoznano adnotacji dla funkcji w parametrze|
-|[C28243](../code-quality/c28243.md)|Adnotacja dla funkcji dla parametru wymaga większej liczby odniesień, niż pozwala na to rzeczywisty typ z adnotacją|
-|[C28244](../code-quality/c28244.md)|Adnotacja dla funkcji ma niemożliwy do przeanalizowania parametr/zewnętrzną adnotację|
-|[C28245](../code-quality/c28245.md)|Adnotacja dla funkcji zawiera adnotacje "This" dla funkcji nie będącej składową|
-|[C28246](../code-quality/c28246.md)|Adnotacja parametru funkcji jest niezgodna z typem parametru|
-|[C28250](../code-quality/c28250.md)|Niespójna adnotacja dla funkcji: poprzednie wystąpienie zawiera błąd.|
-|[C28251](../code-quality/c28251.md)|Niespójna adnotacja dla funkcji: to wystąpienie zawiera błąd.|
-|[C28252](../code-quality/c28252.md)|Niespójna adnotacja dla funkcji: parametr ma inne adnotacje w tym wystąpieniu.|
-|[C28253](../code-quality/c28253.md)|Niespójna adnotacja dla funkcji: parametr ma inne adnotacje w tym wystąpieniu.|
-|[C28254](../code-quality/c28254.md)|dynamic_cast<> () nie jest obsługiwane w adnotacjach|
-|[C28262](../code-quality/c28262.md)|Znaleziono błąd składniowy w adnotacji w funkcji dla adnotacji|
-|[C28263](../code-quality/c28263.md)|Znaleziono błąd składni w adnotacji warunkowej dla wewnętrznej adnotacji|
-|[C28267](../code-quality/c28267.md)|W adnotacji znaleziono błąd składni w funkcji.|
-|[C28272](../code-quality/c28272.md)|Adnotacja dla funkcji, parametr podczas badania, jest niespójna z deklaracją funkcji|
-|[C28273](../code-quality/c28273.md)|W przypadku funkcji wskazówki są niespójne z deklaracją funkcji|
-|[C28275](../code-quality/c28275.md)|Parametr do \_ wartości makra \_ \_ ma wartość null.|
-|[C28279](../code-quality/c28279.md)|Dla symbolu znaleziono "BEGIN" bez odpowiadającego mu "End"|
-|[C28280](../code-quality/c28280.md)|Dla symbolu znaleziono element "End" bez odpowiadającego mu elementu "BEGIN|
-|[C28282](../code-quality/c28282.md)|Ciągi formatu muszą znajdować się w warunkach wstępnych|
-|[C28285](../code-quality/c28285.md)|Dla funkcji, błąd składni w parametrze|
-|[C28286](../code-quality/c28286.md)|Dla funkcji, błąd składniowy blisko końca|
-|[C28287](../code-quality/c28287.md)|Dla funkcji, błąd składni w \_ elemencie \_ adnotacji at () (Nierozpoznana Nazwa parametru)|
-|[C28288](../code-quality/c28288.md)|Dla funkcji, błąd składni w \_ elemencie \_ Annotation () (Nieprawidłowa nazwa parametru)|
-|[C28289](../code-quality/c28289.md)|Dla funkcji: ReadableTo lub WritableTo nie ma specyfikacji limitu jako parametru|
-|[C28290](../code-quality/c28290.md)|Adnotacja dla funkcji zawiera więcej elementów zewnętrznych niż rzeczywista liczba parametrów|
-|[C28291](../code-quality/c28291.md)|wpis o wartości null/notnull na poziomie DEREF 0 jest bezużyteczne dla funkcji.|
-|[C28300](../code-quality/c28300.md)|Operandy wyrażenia niezgodnych typów dla operatora|
-|[C28301](../code-quality/c28301.md)|Brak adnotacji dla pierwszej deklaracji funkcji.|
-|[C28302](../code-quality/c28302.md)|Znaleziono dodatkowy \_ \_ operator DEREF w adnotacji.|
-|[C28303](../code-quality/c28303.md)|\_Znaleziono niejednoznaczny \_ operator DEREF w adnotacji.|
-|[C28304](../code-quality/c28304.md)|Znaleziono niepoprawnie umieszczony \_ operator Notref \_ został zastosowany do tokenu.|
-|[C28305](../code-quality/c28305.md)|Wykryto błąd podczas analizowania tokenu.|
-|[C28306](../code-quality/c28306.md)|Adnotacja dla parametru jest przestarzała|
-|[C28307](../code-quality/c28307.md)|Adnotacja dla parametru jest przestarzała|
-|[C28350](../code-quality/c28350.md)|Adnotacja zawiera opis sytuacji, która nie jest stosowana warunkowo.|
+|[C6001](/cpp/code-quality/c6001)|Używanie niezainicjowanej pamięci|
+|[C6011](/cpp/code-quality/c6011)|Wyłuskanie wskaźnika o wartości null|
+|[C6029](/cpp/code-quality/c6029)|Użycie niesprawdzonej wartości|
+|[C6031](/cpp/code-quality/c6031)|Wartość zwracana została zignorowana|
+|[C6053](/cpp/code-quality/c6053)|Zakończenie zerowe od wywołania|
+|[C6054](/cpp/code-quality/c6054)|Brak zakończenia zerowej|
+|[C6059](/cpp/code-quality/c6059)|Złe łączenie|
+|[C6063](/cpp/code-quality/c6063)|Brak argumentu ciągu do funkcji formatowania|
+|[C6064](/cpp/code-quality/c6064)|Brak argumentu typu Integer dla funkcji formatowania|
+|[C6066](/cpp/code-quality/c6066)|Brak argumentu wskaźnika dla funkcji formatowania|
+|[C6067](/cpp/code-quality/c6067)|Brak argumentu wskaźnika ciągu do funkcji formatowania|
+|[C6101](/cpp/code-quality/c6101)|Zwracanie niezainicjowanej pamięci|
+|[C6200](/cpp/code-quality/c6200)|Indeks przekracza maksymalny rozmiar buforu|
+|[C6201](/cpp/code-quality/c6201)|Indeks przekracza maksymalną wartość buforu stosu|
+|[C6214](/cpp/code-quality/c6214)|Nieprawidłowe rzutowanie HRESULT do wartości LOGICZNEj|
+|[C6215](/cpp/code-quality/c6215)|Nieprawidłowa wartość logiczna rzutowania do HRESULT|
+|[C6216](/cpp/code-quality/c6216)|Nieprawidłowa wartość logiczna rzutowania wstawionego przez kompilator do HRESULT|
+|[C6217](/cpp/code-quality/c6217)|Nieprawidłowy test HRESULT z|
+|[C6220](/cpp/code-quality/c6220)|Nieprawidłowe porównanie HRESULT z-1|
+|[C6226](/cpp/code-quality/c6226)|Nieprawidłowe przypisanie HRESULT do-1|
+|[C6230](/cpp/code-quality/c6230)|Nieprawidłowe użycie HRESULT jako wartości logicznej|
+|[C6235](/cpp/code-quality/c6235)|Stała niezerowa z wartością logiczną lub|
+|[C6236](/cpp/code-quality/c6236)|Logiczna — lub z niezerową stałą|
+|[C6237](/cpp/code-quality/c6237)|Zero ze koniunkcją logiczną i powoduje utratę efektów ubocznych|
+|[C6242](/cpp/code-quality/c6242)|Wymuszone lokalne rozwinięcie|
+|[C6248](/cpp/code-quality/c6248)|Tworzenie listy DACL o wartości null|
+|[C6250](/cpp/code-quality/c6250)|Niezwolnione deskryptory adresów|
+|[C6255](/cpp/code-quality/c6255)|Niechronione użycie alloca|
+|[C6258](/cpp/code-quality/c6258)|Korzystanie z wątku przerywania|
+|[C6259](/cpp/code-quality/c6259)|Martwy kod w przełączniku bitowym lub ograniczonym|
+|[C6260](/cpp/code-quality/c6260)|Użycie arytmetyki bajtowej|
+|[C6262](/cpp/code-quality/c6262)|Nadmierne użycie stosu|
+|[C6263](/cpp/code-quality/c6263)|Korzystanie z usługi alloca w pętli|
+|[C6268](/cpp/code-quality/c6268)|Brak nawiasów w rzutowaniu|
+|[C6269](/cpp/code-quality/c6269)|Zignorowano odwołanie do wskaźnika|
+|[C6270](/cpp/code-quality/c6270)|Brak argumentu zmiennoprzecinkowego do funkcji formatowania|
+|[C6271](/cpp/code-quality/c6271)|Dodatkowy argument funkcji formatowania|
+|[C6272](/cpp/code-quality/c6272)|Argument inny niż zmiennoprzecinkowy do formatowania funkcji|
+|[C6273](/cpp/code-quality/c6273)|Argument niebędący liczbą całkowitą do sformatowania funkcji|
+|[C6274](/cpp/code-quality/c6274)|Argument niebędący znakiem do funkcji formatowania|
+|[C6276](/cpp/code-quality/c6276)|Nieprawidłowe rzutowanie ciągu|
+|[C6277](/cpp/code-quality/c6277)|Nieprawidłowe wywołanie metody CreateProcess|
+|[C6278](/cpp/code-quality/c6278)|Niezgodność Array-New skalarna Delete|
+|[C6279](/cpp/code-quality/c6279)|Skalarna — niezgodność z nową tablicą|
+|[C6280](/cpp/code-quality/c6280)|Niezgodność alokacji pamięci|
+|[C6281](/cpp/code-quality/c6281)|Pierwszeństwo relacji bitowej|
+|[C6282](/cpp/code-quality/c6282)|Przypisanie zastępuje test|
+|[C6283](/cpp/code-quality/c6283)|Niezgodność z tablicą pierwotną — Nowa funkcja skalarna usuwania|
+|[C6284](/cpp/code-quality/c6284)|Nieprawidłowy argument obiektu dla funkcji formatowania|
+|[C6285](/cpp/code-quality/c6285)|Logiczne-lub stałe|
+|[C6286](/cpp/code-quality/c6286)|Niezerowe logiczne lub utrata efektów ubocznych|
+|[C6287](/cpp/code-quality/c6287)|Test nadmiarowy|
+|[C6288](/cpp/code-quality/c6288)|Wzajemne włączenie przy użyciu operatora logicznego i ma wartość false|
+|[C6289](/cpp/code-quality/c6289)|Wzajemne wykluczenie z użyciem operatora logicznego OR jest prawdziwe|
+|[C6290](/cpp/code-quality/c6290)|Niestandardowa koniunkcja logiczna|
+|[C6291](/cpp/code-quality/c6291)|Niestandardowa koniunkcja logiczna|
+|[C6292](/cpp/code-quality/c6292)|Pętla zlicza w górę od maksimum|
+|[C6293](/cpp/code-quality/c6293)|Pętla liczy w dół od minimum|
+|[C6294](/cpp/code-quality/c6294)|Treść pętli nigdy nie została wykonana|
+|[C6295](/cpp/code-quality/c6295)|Nieskończona pętla|
+|[C6296](/cpp/code-quality/c6296)|Pętla zostanie wykonana tylko raz|
+|[C6297](/cpp/code-quality/c6297)|Wynik rzutowania przesunięcia na większy rozmiar|
+|[C6299](/cpp/code-quality/c6299)|Porównanie pole bitowe z wartością logiczną|
+|[C6302](/cpp/code-quality/c6302)|Nieprawidłowy argument ciągu znaków dla funkcji formatowania|
+|[C6303](/cpp/code-quality/c6303)|Nieprawidłowy argument ciągu znaków dwubajtowych do funkcji formatowania|
+|[C6305](/cpp/code-quality/c6305)|Użycie niedopasowanego rozmiaru i liczby|
+|[C6306](/cpp/code-quality/c6306)|Nieprawidłowe wywołanie funkcji zmiennej argumentu|
+|[C6308](/cpp/code-quality/c6308)|Przeciek realloc|
+|[C6310](/cpp/code-quality/c6310)|Niedozwolona stała filtru wyjątków|
+|[C6312](/cpp/code-quality/c6312)|Pętla kontynuacji wykonywania wyjątków|
+|[C6314](/cpp/code-quality/c6314)|Pierwszeństwo bitowe|
+|[C6317](/cpp/code-quality/c6317)|Nie uzupełniaj|
+|[C6318](/cpp/code-quality/c6318)|Wyjątek — Kontynuuj wyszukiwanie|
+|[C6319](/cpp/code-quality/c6319)|Zignorowane przez przecinek|
+|[C6324](/cpp/code-quality/c6324)|Kopiowanie ciągu zamiast porównywania ciągów|
+|[C6328](/cpp/code-quality/c6328)|Niezgodność typu argumentu potencjalnego|
+|[C6331](/cpp/code-quality/c6331)|VirtualFree nieprawidłowe flagi|
+|[C6332](/cpp/code-quality/c6332)|VirtualFree nieprawidłowy parametr|
+|[C6333](/cpp/code-quality/c6333)|Nieprawidłowy rozmiar VirtualFree|
+|[C6335](/cpp/code-quality/c6335)|Przeciek uchwytu procesu|
+|[C6381](/cpp/code-quality/c6381)|Brak informacji o zamknięciu|
+|[C6383](/cpp/code-quality/c6383)|Przepełnienie buforu liczby elementów-count|
+|[C6384](/cpp/code-quality/c6384)|Dzielenie rozmiaru wskaźnika|
+|[C6385](/cpp/code-quality/c6385)|Przepełnienie odczytu|
+|[C6386](/cpp/code-quality/c6386)|Przepełnienie zapisu|
+|[C6387](/cpp/code-quality/c6387)|Nieprawidłowa wartość parametru|
+|[C6388](/cpp/code-quality/c6388)|Nieprawidłowa wartość parametru|
+|[C6500](/cpp/code-quality/c6500)|Nieprawidłowa właściwość atrybutu|
+|[C6501](/cpp/code-quality/c6501)|Sprzeczne wartości właściwości atrybutów|
+|[C6503](/cpp/code-quality/c6503)|Odwołania nie mogą być puste|
+|[C6504](/cpp/code-quality/c6504)|Wartość zerowa przy niewskaźniku|
+|[C6505](/cpp/code-quality/c6505)|MustCheck na void|
+|[C6506](/cpp/code-quality/c6506)|Rozmiar buforu dla elementu nie będącego wskaźnikiem lub tablicą|
+|[C6508](/cpp/code-quality/c6508)|Dostęp do zapisu dla stałej|
+|[C6509](/cpp/code-quality/c6509)|Return użyty w warunku wstępnym|
+|[C6510](/cpp/code-quality/c6510)|Przerwano wartość null dla niebędącego wskaźnikiem|
+|[C6511](/cpp/code-quality/c6511)|MustCheck musi mieć wartość yes lub No|
+|[C6513](/cpp/code-quality/c6513)|Rozmiar elementu bez rozmiaru buforu|
+|[C6514](/cpp/code-quality/c6514)|Rozmiar buforu przekracza rozmiar tablicy|
+|[C6515](/cpp/code-quality/c6515)|Rozmiar buforu dla elementu nie będącego wskaźnikiem|
+|[C6516](/cpp/code-quality/c6516)|Brak właściwości dla atrybutu|
+|[C6517](/cpp/code-quality/c6517)|Prawidłowy rozmiar dla bufora bez możliwości odczytu|
+|[C6518](/cpp/code-quality/c6518)|Rozmiar zapisywalny bufora bez możliwości zapisu|
+|[C6522](/cpp/code-quality/c6522)|Nieprawidłowy typ ciągu rozmiaru|
+|[C6525](/cpp/code-quality/c6525)|Nieprawidłowy ciąg rozmiaru nieosiągalnej lokalizacji|
+|[C6527](/cpp/code-quality/c6527)|Nieprawidłowa Adnotacja: Właściwość "NeedsRelease" nie może być użyta dla wartości typu void|
+|[C6530](/cpp/code-quality/c6530)|Nierozpoznany styl ciągu formatu|
+|[C6540](/cpp/code-quality/c6540)|Użycie adnotacji atrybutów dla tej funkcji spowoduje unieważnienie wszystkich istniejących adnotacji __declspec|
+|[C6551](/cpp/code-quality/c6551)|Nieprawidłowa specyfikacja rozmiaru: nie przeanalizować wyrażenia|
+|[C6552](/cpp/code-quality/c6552)|Nieprawidłowe DEREF = lub Notref =: nie możliwy do przeanalizowania wyrażenia|
+|[C6701](/cpp/code-quality/c6701)|Wartość nie jest prawidłową wartością tak/nie/może|
+|[C6702](/cpp/code-quality/c6702)|Wartość nie jest wartością ciągu.|
+|[C6703](/cpp/code-quality/c6703)|Wartość nie jest liczbą|
+|[C6704](/cpp/code-quality/c6704)|Nieoczekiwany błąd wyrażenia adnotacji|
+|[C6705](/cpp/code-quality/c6705)|Oczekiwana liczba argumentów adnotacji jest niezgodna z rzeczywistą liczbą argumentów dla adnotacji|
+|[C6706](/cpp/code-quality/c6706)|Nieoczekiwany błąd adnotacji dla adnotacji|
+|[C6995](/cpp/code-quality/c6995)|Nie można zapisać pliku dziennika XML|
+|[C26100](/cpp/code-quality/c26100)|Sytuacja wyścigu|
+|[C26101](/cpp/code-quality/c26101)|Nie można prawidłowo użyć operacji zablokowanej|
+|[C26110](/cpp/code-quality/c26110)|Wystąpił błąd blokady wywołującej|
+|[C26111](/cpp/code-quality/c26111)|Obiekt wywołujący nie może zwolnić blokady|
+|[C26112](/cpp/code-quality/c26112)|Obiekt wywołujący nie może blokować żadnej blokady|
+|[C26115](/cpp/code-quality/c26115)|Niepowodzenie zwolnienia blokady|
+|[C26116](/cpp/code-quality/c26116)|Nie można uzyskać lub wstrzymać blokady|
+|[C26117](/cpp/code-quality/c26117)|Zwalnianie niezautrzymywanej blokady|
+|[C26140](/cpp/code-quality/c26140)|Błąd adnotacji dotyczącej współbieżności SAL|
+|[C26441](/cpp/code-quality/C26441)|NO_UNNAMED_GUARDS|
+|[C26444](/cpp/code-quality/c26444)|NO_UNNAMED_RAII_OBJECTS|
+|[C26498](/cpp/code-quality/C26498)|USE_CONSTEXPR_FOR_FUNCTIONCALL|
+|[C28020](/cpp/code-quality/c28020)|Wyrażenie nie jest prawdziwe w tym wywołaniu|
+|[C28021](/cpp/code-quality/c28021)|Parametr, którego typem jest adnotacja, musi być wskaźnikiem|
+|[C28022](/cpp/code-quality/c28022)|Klasy funkcji w tej funkcji nie są zgodne z klasami funkcji dla elementu typedef użytego do jego zdefiniowania.|
+|[C28023](/cpp/code-quality/c28023)|Przypisana lub przenoszona funkcja powinna mieć \_ \_ \_ adnotację klasy funkcji dla co najmniej jednej z klas (ES)|
+|[C28024](/cpp/code-quality/c28024)|Wskaźnik funkcji, do której jest przypisany, ma adnotację z klasą funkcji, która nie znajduje się na liście klas funkcji.|
+|[C28039](/cpp/code-quality/c28039)|Typ rzeczywistego parametru powinien dokładnie pasować do typu|
+|[C28112](/cpp/code-quality/c28112)|Do zmiennej, do której uzyskuje się dostęp za pośrednictwem funkcji zablokowaniej, zawsze należy uzyskać dostęp za pośrednictwem funkcji Zablokowani.|
+|[C28113](/cpp/code-quality/c28113)|Uzyskiwanie dostępu do zmiennej lokalnej przez zablokowaną funkcję|
+|[C28125](/cpp/code-quality/c28125)|Funkcja musi być wywołana z poziomu bloku try/except|
+|[C28137](/cpp/code-quality/c28137)|Zmienna argument powinien zamiast niego być (literałem)|
+|[C28138](/cpp/code-quality/c28138)|Argument stałej powinien zamiast tego mieć wartość zmienna|
+|[C28159](/cpp/code-quality/c28159)|Zamiast tego Rozważ użycie innej funkcji.|
+|[C28160](/cpp/code-quality/c28160)|Błąd adnotacji|
+|[C28163](/cpp/code-quality/c28163)|Funkcja nigdy nie powinna być wywoływana z wewnątrz bloku try/except|
+|[C28164](/cpp/code-quality/c28164)|Argument jest przesyłany do funkcji, która oczekuje wskaźnika do obiektu (nie wskaźnika do wskaźnika)|
+|[C28182](/cpp/code-quality/c28182)|Wyłuskanie wskaźnika o wartości NULL. Wskaźnik zawiera taką samą wartość NULL jak inny wskaźnik.|
+|[C28183](/cpp/code-quality/c28183)|Argument może być jedną wartością i jest kopią wartości znalezionej we wskaźniku|
+|[C28193](/cpp/code-quality/c28193)|Zmienna przechowuje wartość, która musi być zbadana|
+|[C28196](/cpp/code-quality/c28196)|Wymaganie nie jest spełnione. (Wyrażenie nie jest szacowane na wartość true).|
+|[C28202](/cpp/code-quality/c28202)|Niedozwolone odwołanie do niestatycznej składowej|
+|[C28203](/cpp/code-quality/c28203)|Niejednoznaczne odwołanie do składowej klasy.|
+|[C28205](/cpp/code-quality/c28205)|\_Powodzenie \_ lub \_ w \_ przypadku niepowodzenia \_ używane w niedozwolonym kontekście|
+|[C28206](/cpp/code-quality/c28206)|Lewy argument operacji wskazuje na strukturę, użyj "->"|
+|[C28207](/cpp/code-quality/c28207)|Lewy argument operacji jest strukturą, użyj "."|
+|[C28209](/cpp/code-quality/c28209)|Deklaracja symbolu ma sprzeczną deklarację|
+|[C28210](/cpp/code-quality/c28210)|Adnotacje dla kontekstu __on_failure nie mogą być w jawnym kontekście wstępnym|
+|[C28211](/cpp/code-quality/c28211)|Oczekiwano nazwy kontekstu statycznego dla SAL_context|
+|[C28212](/cpp/code-quality/c28212)|Oczekiwano wyrażenia wskaźnika dla adnotacji|
+|[C28213](/cpp/code-quality/c28213)|\_ \_ Adnotacja use decl adnotacji \_ \_ musi być używana do odwoływania się, bez modyfikacji, wcześniejszej deklaracji.|
+|[C28214](/cpp/code-quality/c28214)|Nazwy parametrów atrybutu muszą być P1... P9|
+|[C28215](/cpp/code-quality/c28215)|Nie można zastosować typefix do parametru, który ma już typefix|
+|[C28216](/cpp/code-quality/c28216)|Adnotacja Checkreturn dotyczy ma zastosowanie tylko do warunki końcowe dla określonego parametru funkcji.|
+|[C28217](/cpp/code-quality/c28217)|W przypadku funkcji liczba parametrów do adnotacji jest niezgodna z znalezionymi w pliku|
+|[C28218](/cpp/code-quality/c28218)|Dla parametru funkcji parametr adnotacji nie jest zgodny z znalezionym w pliku|
+|[C28219](/cpp/code-quality/c28219)|Oczekiwano składowej wyliczenia dla adnotacji, parametr w adnotacji|
+|[C28220](/cpp/code-quality/c28220)|Oczekiwano wyrażenia liczby całkowitej dla adnotacji, parametr w adnotacji|
+|[C28221](/cpp/code-quality/c28221)|Oczekiwano wyrażenia ciągu dla parametru w adnotacji|
+|[C28222](/cpp/code-quality/c28222)|\_oczekiwano __yes, _NO lub \_ _maybe dla adnotacji|
+|[C28223](/cpp/code-quality/c28223)|Nie znaleziono oczekiwanego tokenu/identyfikatora dla adnotacji, parametr|
+|[C28224](/cpp/code-quality/c28224)|Adnotacja wymaga parametrów|
+|[C28225](/cpp/code-quality/c28225)|Nie znaleziono poprawnej liczby wymaganych parametrów w adnotacji|
+|[C28226](/cpp/code-quality/c28226)|Adnotacja nie może być PrimOp (w bieżącej deklaracji)|
+|[C28227](/cpp/code-quality/c28227)|Adnotacja nie może być PrimOp (patrz wcześniejsza deklaracja)|
+|[C28228](/cpp/code-quality/c28228)|Parametr adnotacji: nie można użyć typu w adnotacjach|
+|[C28229](/cpp/code-quality/c28229)|Adnotacja nie obsługuje parametrów|
+|[C28230](/cpp/code-quality/c28230)|Typ parametru nie ma składowej.|
+|[C28231](/cpp/code-quality/c28231)|Adnotacja jest prawidłowa tylko na tablicy|
+|[C28232](/cpp/code-quality/c28232)|pre, post lub DEREF nie zostały zastosowane do żadnej adnotacji|
+|[C28233](/cpp/code-quality/c28233)|pre, post lub DEREF zastosowany do bloku|
+|[C28234](/cpp/code-quality/c28234)|wyrażenie __at nie ma zastosowania do bieżącej funkcji|
+|[C28235](/cpp/code-quality/c28235)|Funkcja nie może być autonomiczna jako adnotacja|
+|[C28236](/cpp/code-quality/c28236)|Nie można użyć adnotacji w wyrażeniu|
+|[C28237](/cpp/code-quality/c28237)|Adnotacja w parametrze nie jest już obsługiwana|
+|[C28238](/cpp/code-quality/c28238)|Adnotacja dla parametru ma więcej niż jedną wartość, stringValue i longValue. Użyj paramn = XXX|
+|[C28239](/cpp/code-quality/c28239)|Adnotacja dla parametru ma wartość Value, stringValue lub longValue; i paramn = xxx. Używaj tylko paramn = XXX|
+|[C28240](/cpp/code-quality/c28240)|Adnotacja dla parametru ma Param2, ale nie param1|
+|[C28241](/cpp/code-quality/c28241)|Nie rozpoznano adnotacji dla funkcji w parametrze|
+|[C28243](/cpp/code-quality/c28243)|Adnotacja dla funkcji dla parametru wymaga większej liczby odniesień, niż pozwala na to rzeczywisty typ z adnotacją|
+|[C28244](/cpp/code-quality/c28244)|Adnotacja dla funkcji ma niemożliwy do przeanalizowania parametr/zewnętrzną adnotację|
+|[C28245](/cpp/code-quality/c28245)|Adnotacja dla funkcji zawiera adnotacje "This" dla funkcji nie będącej składową|
+|[C28246](/cpp/code-quality/c28246)|Adnotacja parametru funkcji jest niezgodna z typem parametru|
+|[C28250](/cpp/code-quality/c28250)|Niespójna adnotacja dla funkcji: poprzednie wystąpienie zawiera błąd.|
+|[C28251](/cpp/code-quality/c28251)|Niespójna adnotacja dla funkcji: to wystąpienie zawiera błąd.|
+|[C28252](/cpp/code-quality/c28252)|Niespójna adnotacja dla funkcji: parametr ma inne adnotacje w tym wystąpieniu.|
+|[C28253](/cpp/code-quality/c28253)|Niespójna adnotacja dla funkcji: parametr ma inne adnotacje w tym wystąpieniu.|
+|[C28254](/cpp/code-quality/c28254)|dynamic_cast<> () nie jest obsługiwane w adnotacjach|
+|[C28262](/cpp/code-quality/c28262)|Znaleziono błąd składniowy w adnotacji w funkcji dla adnotacji|
+|[C28263](/cpp/code-quality/c28263)|Znaleziono błąd składni w adnotacji warunkowej dla wewnętrznej adnotacji|
+|[C28267](/cpp/code-quality/c28267)|W adnotacji znaleziono błąd składni w funkcji.|
+|[C28272](/cpp/code-quality/c28272)|Adnotacja dla funkcji, parametr podczas badania, jest niespójna z deklaracją funkcji|
+|[C28273](/cpp/code-quality/c28273)|W przypadku funkcji wskazówki są niespójne z deklaracją funkcji|
+|[C28275](/cpp/code-quality/c28275)|Parametr do \_ wartości makra \_ \_ ma wartość null.|
+|[C28279](/cpp/code-quality/c28279)|Dla symbolu znaleziono "BEGIN" bez odpowiadającego mu "End"|
+|[C28280](/cpp/code-quality/c28280)|Dla symbolu znaleziono element "End" bez odpowiadającego mu elementu "BEGIN|
+|[C28282](/cpp/code-quality/c28282)|Ciągi formatu muszą znajdować się w warunkach wstępnych|
+|[C28285](/cpp/code-quality/c28285)|Dla funkcji, błąd składni w parametrze|
+|[C28286](/cpp/code-quality/c28286)|Dla funkcji, błąd składniowy blisko końca|
+|[C28287](/cpp/code-quality/c28287)|Dla funkcji, błąd składni w \_ elemencie \_ adnotacji at () (Nierozpoznana Nazwa parametru)|
+|[C28288](/cpp/code-quality/c28288)|Dla funkcji, błąd składni w \_ elemencie \_ Annotation () (Nieprawidłowa nazwa parametru)|
+|[C28289](/cpp/code-quality/c28289)|Dla funkcji: ReadableTo lub WritableTo nie ma specyfikacji limitu jako parametru|
+|[C28290](/cpp/code-quality/c28290)|Adnotacja dla funkcji zawiera więcej elementów zewnętrznych niż rzeczywista liczba parametrów|
+|[C28291](/cpp/code-quality/c28291)|wpis o wartości null/notnull na poziomie DEREF 0 jest bezużyteczne dla funkcji.|
+|[C28300](/cpp/code-quality/c28300)|Operandy wyrażenia niezgodnych typów dla operatora|
+|[C28301](/cpp/code-quality/c28301)|Brak adnotacji dla pierwszej deklaracji funkcji.|
+|[C28302](/cpp/code-quality/c28302)|Znaleziono dodatkowy \_ \_ operator DEREF w adnotacji.|
+|[C28303](/cpp/code-quality/c28303)|\_Znaleziono niejednoznaczny \_ operator DEREF w adnotacji.|
+|[C28304](/cpp/code-quality/c28304)|Znaleziono niepoprawnie umieszczony \_ operator Notref \_ został zastosowany do tokenu.|
+|[C28305](/cpp/code-quality/c28305)|Wykryto błąd podczas analizowania tokenu.|
+|[C28306](/cpp/code-quality/c28306)|Adnotacja dla parametru jest przestarzała|
+|[C28307](/cpp/code-quality/c28307)|Adnotacja dla parametru jest przestarzała|
+|[C28350](/cpp/code-quality/c28350)|Adnotacja zawiera opis sytuacji, która nie jest stosowana warunkowo.|
 |[C28351](/cpp/code-quality/c28351)|Adnotacja opisuje, gdzie w warunku nie można używać wartości dynamicznej (zmiennej).|

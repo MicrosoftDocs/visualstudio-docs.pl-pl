@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2accfed995415a508a47e492837ded7acea150d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d3da21a833764745a7b6fc7dd001eeb4995f44d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72737893"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599644"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Edytuj kod i Kontynuuj debugowanie w programie Visual Studio (C#, VB, C++)
 Edytuj i Kontynuuj to funkcja, która umożliwia wprowadzanie zmian w kodzie źródłowym, gdy program jest w trybie przerwania. Po wznowieniu wykonywania programu przez wybranie polecenia wykonywania, takiego jak **Kontynuuj** lub **krok**, polecenie Edytuj i Kontynuuj automatycznie stosuje zmiany kodu z pewnymi ograniczeniami. Pozwala to na wprowadzanie zmian w kodzie podczas sesji debugowania, a nie konieczności zatrzymywania, ponownego kompilowania całego programu, a następnie ponowne uruchomienie sesji debugowania.
@@ -47,5 +47,4 @@ Edytuj i Kontynuuj to funkcja, która umożliwia wprowadzanie zmian w kodzie źr
 
 ## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
-- [Edytuj i Kontynuuj, debugowanie, Opcje — okno dialogowe](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

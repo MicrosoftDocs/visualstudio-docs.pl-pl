@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa2632e7d9b8103b5a89c49e5f44464a658fadc3
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901639"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599491"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Przewodnik: Debugowanie formularza internetowego
 Kroki opisane w tym instruktażu pokazują, jak debugować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikację sieci Web, znaną również jako formularz sieci Web. Pokazuje, jak uruchomić i zatrzymać wykonywanie, ustawić punkty przerwania i przeanalizować zmienne w oknie **czujki** .
@@ -52,7 +52,7 @@ Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w pomocy,
 
 5. Na liście **Język** kliknij **Visual C#** lub **Visual Basic**.
 
-6. Kliknij przycisk **OK**.
+6. Kliknij pozycję **OK**.
 
     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Tworzy nowy projekt i wyświetla domyślny kod źródłowy HTML. Powoduje także utworzenie nowego katalogu wirtualnego o nazwie **Witryna** sieci **Web w obszarze Domyślna witryna internetowa** w usługach IIS.
 
@@ -98,7 +98,7 @@ Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w pomocy,
    textBox1.Text = "Button was clicked!";
    ```
 
-    Pojawi się czerwona kropka i tekst w wierszu zostanie wyróżniony czerwonym kolorem. Czerwona kropka reprezentuje punkt przerwania. Po uruchomieniu aplikacji w trybie debugowania, debuger zlokalizuje miejsce trafienia kodu i przerwie tam wykonywanie. Można wówczas wyświetlić stan aplikacji i zdebugować ją. Aby uzyskać więcej informacji, zobacz [punkty przerwania](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).
+    Pojawi się czerwona kropka i tekst w wierszu zostanie wyróżniony czerwonym kolorem. Czerwona kropka reprezentuje punkt przerwania. Po uruchomieniu aplikacji w trybie debugowania, debuger zlokalizuje miejsce trafienia kodu i przerwie tam wykonywanie. Można wówczas wyświetlić stan aplikacji i zdebugować ją. Aby uzyskać więcej informacji, zobacz [punkty przerwania](/previous-versions/ktf38f66(v=vs.100)).
 
 2. W menu **Debugowanie** kliknij polecenie **Rozpocznij debugowanie**.
 

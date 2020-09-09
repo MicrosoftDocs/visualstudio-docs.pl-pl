@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4deaf03013b6e28ea02e6ec7412bd23a05f1b87e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10b370b653590dd5061dc98d31d74d3351180dc6
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738249"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600323"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Informacje o oknie rejestrów w programie Visual Studio (C#, C++, Visual Basic, F #)
 
 Okno **rejestry** jest dostępne tylko wtedy, gdy w oknie dialogowym **Opcje** jest **włączone debugowanie na** poziomie adresu.
 
- Rejestry są specjalnymi lokalizacjami w ramach procesora (CPU), które są używane do przechowywania małych fragmentów danych, nad którymi pracuje procesor. Kompilowanie lub interpretowanie kodu źródłowego generuje instrukcje, które przenoszą dane z pamięci do rejestrów i ponownie z powrotem, zgodnie z wymaganiami. Uzyskiwanie dostępu do danych w rejestrach jest bardzo szybkie w porównaniu z dostępem do danych w pamięci, więc kod, który umożliwia procesorowi utrzymywanie danych w rejestrze i dostęp do nich wielokrotnie, jest wykonywany szybciej niż kod, który wymaga, aby procesor stale ładował i zwalnia rejestry. Aby ułatwić kompilatorowi przechowywanie danych w rejestrach i wykonywanie innych optymalizacji, należy unikać używania zmiennych globalnych i polegać na zmiennych lokalnych, jak to możliwe. Kod zapisany w ten sposób ma dobry charakter referencyjny. W niektórych językach, takich jak C/C++, programista może zadeklarować zmienną rejestru, która informuje kompilator, aby wypróbować zmienną w rejestrze przez cały czas. Aby uzyskać więcej informacji, zobacz [Rejestrowanie słowa kluczowego](https://msdn.microsoft.com/library/5b66905a-2f7f-4918-bb55-5e66d4bc50f9).
+ Rejestry są specjalnymi lokalizacjami w ramach procesora (CPU), które są używane do przechowywania małych fragmentów danych, nad którymi pracuje procesor. Kompilowanie lub interpretowanie kodu źródłowego generuje instrukcje, które przenoszą dane z pamięci do rejestrów i ponownie z powrotem, zgodnie z wymaganiami. Uzyskiwanie dostępu do danych w rejestrach jest bardzo szybkie w porównaniu z dostępem do danych w pamięci, więc kod, który umożliwia procesorowi utrzymywanie danych w rejestrze i dostęp do nich wielokrotnie, jest wykonywany szybciej niż kod, który wymaga, aby procesor stale ładował i zwalnia rejestry. Aby ułatwić kompilatorowi przechowywanie danych w rejestrach i wykonywanie innych optymalizacji, należy unikać używania zmiennych globalnych i polegać na zmiennych lokalnych, jak to możliwe. Kod zapisany w ten sposób ma dobry charakter referencyjny. W niektórych językach, takich jak C/C++, programista może zadeklarować zmienną rejestru, która informuje kompilator, aby wypróbować zmienną w rejestrze przez cały czas. Aby uzyskać więcej informacji, zobacz [Rejestrowanie słowa kluczowego](/previous-versions/482s4fy9(v=vs.140)).
 
  Rejestry mogą być podzielone na dwa typy: ogólnego przeznaczenia i specjalnego przeznaczenia. Rejestry ogólnego przeznaczenia przechowują dane na potrzeby operacji ogólnych, takich jak dodawanie dwóch liczb lub odwoływanie się do elementu w tablicy. Rejestry specjalnego przeznaczenia mają określone cele i wyspecjalizowane znaczenie. Dobrym przykładem jest rejestr wskaźników stosu, który jest używany przez procesor do śledzenia stosu wywołań programu. Jako programista prawdopodobnie nie będzie można bezpośrednio manipulować wskaźnikiem stosu. Niemniej jednak jest istotne dla prawidłowego funkcjonowania programu, ponieważ bez wskaźnika stosu, procesor nie wie, gdzie należy powrócić na końcu wywołania funkcji.
 
