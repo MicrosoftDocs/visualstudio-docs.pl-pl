@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4beefddd429384fadda71d9742e8c0fac606c38e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b76804eb8c06acbcdeac017108773056ee38338
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900505"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641490"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Wdrażanie technologii ClickOnce w systemie Windows Vista
 
@@ -52,6 +52,6 @@ Program Visual Studio udostępnia następujące opcje generowania manifestu:
 
 ## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia i wdrażanie technologii ClickOnce](../deployment/clickonce-security-and-deployment.md)
-- [Uprawnienia użytkownika i program Visual Studio](https://msdn.microsoft.com/library/d5c55084-1e7b-4b61-b478-137db01c0fc0)
+- [Uprawnienia użytkownika i program Visual Studio](/previous-versions/ms165100(v=vs.100))
 - [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)
 - [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)

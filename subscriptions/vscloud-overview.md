@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: Wynajęcie Visual Studio Professional lub Visual Studio Enterprise w ciągu miesiąca do miesiąca lub rocznego, bez długoterminowej umowy.
-ms.openlocfilehash: 5f289c5eb51ccaf95c88bc7e2d66a4be5e904e03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ea727572fc5c6aeb09f23594de54a08adbacc90
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248336"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641571"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Kupowanie subskrypcji Visual Studio Professional i Visual Studio Enterprise w chmurze
 Możesz kupić [Visual Studio Professional i Visual Studio Enterprise subskrypcje](https://visualstudio.microsoft.com/subscriptions/) w [Visual Studio Marketplace](https://marketplace.visualstudio.com). Są one nazywane **"subskrypcjami w chmurze"**.
@@ -26,7 +26,7 @@ Możesz kupić [Visual Studio Professional i Visual Studio Enterprise subskrypcj
 Do rozliczania zakupów potrzebna jest [subskrypcja platformy Azure](https://azure.microsoft.com/pricing/purchase-options/). Możesz [zarejestrować się](https://portal.azure.com) przed pierwszym zakupem lub podczas pierwszego zakupu w Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Kto może kupować subskrypcje programu Visual Studio w chmurze?
-Każda osoba mająca [właściciela](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [administratora usługi lub współadministratorom](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-subscription-administrator) dostęp do subskrypcji platformy Azure może zakupić subskrypcje w chmurze.
+Musisz być współautorem lub wyższym dla subskrypcji platformy Azure, która została utworzona dla subskrypcji EA, aby zakupić subskrypcje w chmurze.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Jak kupić subskrypcje chmury
 

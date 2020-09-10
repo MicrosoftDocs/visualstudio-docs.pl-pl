@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3fa32e6155959df6e665a807af3b364923ba3f54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9c7da96df8c68de0b9f6ba3e341d93596200934
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533461"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641474"
 ---
 # <a name="language-conventions"></a>Konwencje języka
 
@@ -1050,6 +1050,30 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 | **Wartości** | `true` -Preferuj jest sprawdzenie wartości null względem metody równości odwołań<br /><br />`false` -Preferuj metodę równości odwołań w przypadku sprawdzenia wartości null |
 | **Domyślne dla programu Visual Studio** | `true:silent` |
 
+Przykłady kodu:
+
+```csharp
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+if (value is null)
+    return;
+
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+if (object.ReferenceEquals(value, null))
+    return;
+```
+
+```vb
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+If value Is Nothing
+    Return
+End If
+
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+If Object.ReferenceEquals(value, Nothing)
+    Return
+End If
+```
+
 ## <a name="net-code-quality-settings"></a>Ustawienia jakości kodu platformy .NET
 
 Reguły jakości w tej sekcji dotyczą zarówno kodu w języku C#, jak i Visual Basic. Są one używane do konfigurowania analizatorów kodu wbudowanych w zintegrowane środowisko programistyczne (IDE) programu Visual Studio. Informacje o konfigurowaniu analizatorów FxCop za pomocą pliku EditorConfig można znaleźć w temacie [Configure FxCop analizators](../code-quality/configure-fxcop-analyzers.md).
@@ -1118,7 +1142,7 @@ Reguły stylu w tej sekcji mają zastosowanie tylko do języka C#.
   - \_ \_ bodied_accessors wyrażenie stylu \_ CSharp
   - \_ \_ bodied_lambdas wyrażenie stylu \_ CSharp
   - \_ \_ \_ local_functions zabudowane wyrażenie stylu CSharp \_
-- [Dopasowanie do wzorca](#pattern-matching)
+- [Dopasowanie wzorca](#pattern-matching)
   - \_ \_ Dopasowywanie wzorca stylu csharp \_ \_ \_ \_ do \_ cast_check
   - \_dopasowanie wzorca stylu CSharp w \_ \_ \_ porównaniu \_ \_ z \_ null_check
 - [Wbudowane deklaracje zmiennych](#inlined-variable-declarations)

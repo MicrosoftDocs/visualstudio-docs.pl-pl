@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f84f91ebedd47df8c0804adee35dcbec18d8551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17ac6fdb6b2eaf80d927407e717954842f6e6b1b
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89314865"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641658"
 ---
 # <a name="create-bootstrapper-packages"></a>Tworzenie niestandardowych pakietów programu inicjującego
 Program instalacyjny jest instalatorem ogólnym, który można skonfigurować w celu wykrywania i instalowania składników redystrybucyjnych, takich jak pliki Instalator Windows (*MSI*) i programy wykonywalne. Instalator jest również znany jako program inicjujący. Jest on zaprogramowany przez zestaw manifestów XML, które określają metadane do zarządzania instalacją składnika.  Każdy składnik redystrybucyjny lub warunek wstępny, który jest wyświetlany w oknie dialogowym **wymagania wstępne** dla technologii ClickOnce, jest pakietem programu inicjującego. Pakiet programu inicjującego to grupa katalogów i plików, które zawierają pliki manifestu opisujące, jak należy zainstalować wymaganie wstępne.
@@ -122,4 +122,4 @@ Lista redystrybucyjna to plik XML, który należy nazwać, używając następuj�
 - [Instrukcje: instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Wymagania wstępne — okno dialogowe](../ide/reference/prerequisites-dialog-box.md)
 - [Dokumentacja schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)
-- [Aby rozpocząć instalację, użyj programu inicjującego Visual Studio 2005](https://msdn.microsoft.com/magazine/cc163899.aspx)
+- [Aby rozpocząć instalację, użyj programu inicjującego Visual Studio 2005](/archive/msdn-magazine/2004/october/visual-studio-2005-bootstrapper-start-kick-your-installation)

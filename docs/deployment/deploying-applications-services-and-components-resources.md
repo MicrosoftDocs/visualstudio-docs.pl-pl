@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7125be46a894072f034bf1fce3060d2bda564aff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20524a02cf6ff38e8336ae715162f9f197d46590
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800839"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641644"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Wdrażanie aplikacji w folderze, usługach IIS, na platformie Azure lub w innym miejscu docelowym
 
@@ -84,7 +84,7 @@ Aby uzyskać więcej informacji o publikowaniu do App Service, zobacz:
 
 Skalowanie aplikacji hostowanej na maszynach wirtualnych obejmuje rozmieszczenie dodatkowych maszyn wirtualnych zgodnie z zapotrzebowaniem, a następnie wdrożenie niezbędnego oprogramowania. Ten dodatkowy poziom kontroli umożliwia skalowanie w różny sposób w różnych regionach globalnych. Na przykład jeśli aplikacja obsługuje pracowników w różnych biurach regionalnych, można skalować maszyny wirtualne zgodnie z liczbą pracowników w tych regionach, co może powodować obniżenie kosztów.
 
-Dodatkowe informacje znajdują się w [szczegółowym porównaniu](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) między Azure App Service, Azure Virtual Machines i innymi usługami platformy Azure, których można użyć jako celu wdrożenia przy użyciu opcji niestandardowej w programie Visual Studio.
+Dodatkowe informacje znajdują się w [szczegółowym porównaniu](/azure/architecture/guide/technology-choices/compute-decision-tree) między Azure App Service, Azure Virtual Machines i innymi usługami platformy Azure, których można użyć jako celu wdrożenia przy użyciu opcji niestandardowej w programie Visual Studio.
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>Kiedy należy wybrać platformę Azure Virtual Machines
 

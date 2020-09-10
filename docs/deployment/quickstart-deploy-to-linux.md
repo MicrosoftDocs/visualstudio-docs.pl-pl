@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 5b0b45d586fb6eb89eb458329f611d980d9415e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c58e1400c043cf3d15bf204fc8648ab32b33f706
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285479"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641547"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publikowanie aplikacji ASP.NET Core App Service w systemie Linux przy użyciu programu Visual Studio
 
 Począwszy od programu Visual Studio 2017 w wersji 15,7, można publikować ASP.NET Core aplikacje do Azure App Service Linux (przy użyciu kontenerów) przy użyciu jednej z poniższych metod.
 
-* Aby ciągłe (lub zautomatyzowane) wdrażanie aplikacji, użyj platformy Azure DevOps z [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+* Aby ciągłe (lub zautomatyzowane) wdrażanie aplikacji, użyj platformy Azure DevOps z [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
 * W przypadku wdrożenia aplikacji jednorazowego (lub ręcznego) Użyj narzędzia do **publikowania** w programie Visual Studio, aby opublikować ASP.NET Core aplikacje do App Service dla systemu Linux (przy użyciu kontenerów).
 
@@ -54,7 +54,7 @@ W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na p
 
     ![Wybierz Azure App Service](../deployment/media/quickstart-publish-linux-select-instance.png)
 
-1. Wybierz pozycję **Opublikuj**. Program Visual Studio wdraża aplikację w Azure App Service, a aplikacja sieci Web ładuje się w przeglądarce. W okienku **Publikowanie** właściwości projektu wyświetlany jest adres URL witryny i inne szczegóły.
+1. Kliknij pozycję **Opublikuj**. Program Visual Studio wdraża aplikację w Azure App Service, a aplikacja sieci Web ładuje się w przeglądarce. W okienku **Publikowanie** właściwości projektu wyświetlany jest adres URL witryny i inne szczegóły.
 
     ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-linux-summary-page.png)
 

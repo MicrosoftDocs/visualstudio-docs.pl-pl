@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0e177f1d41655ffa6fb6b6bbfa52cfc29d15fd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc94691eda319607510619dbb37e24265bcae522
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382188"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641597"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Instrukcje: pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie online
 *Ciąg zapytania* jest częścią adresu URL zaczynającą się od znaku zapytania (?), który zawiera dowolne informacje w postaci *nazwa = wartość*. Załóżmy, że masz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację `WindowsApp1` , która jest hostem `servername` , i chcesz przekazać wartość zmiennej `username` podczas uruchamiania aplikacji. Twój adres URL może wyglądać następująco:
@@ -76,7 +76,7 @@ ms.locfileid: "85382188"
  Jeśli aplikacja działa tylko w trybie online, będzie zawsze aktywowana za pomocą adresu URL. Nawet w takim przypadku aplikacja musi być poprawnie zapisywana, aby działała prawidłowo, jeśli brakuje parametrów ciągu zapytania lub są one uszkodzone.
 
 ## <a name="net-framework-security"></a>zabezpieczenia .NET Framework
- Zezwalaj na przekazywanie parametrów adresu URL do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji tylko wtedy, gdy planujesz oczyścić dane wejściowe ze wszystkich złośliwych znaków przed użyciem. Ciąg osadzony z cudzysłowami, ukośnikami lub średnikami może wykonywać dowolne operacje na danych, jeśli użyto niefiltrowanych w zapytaniu SQL z bazą danych. Aby uzyskać więcej informacji na temat zabezpieczeń ciągów zapytań, zobacz [Omówienie luk](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)w zabezpieczeniach.
+ Zezwalaj na przekazywanie parametrów adresu URL do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji tylko wtedy, gdy planujesz oczyścić dane wejściowe ze wszystkich złośliwych znaków przed użyciem. Ciąg osadzony z cudzysłowami, ukośnikami lub średnikami może wykonywać dowolne operacje na danych, jeśli użyto niefiltrowanych w zapytaniu SQL z bazą danych. Aby uzyskać więcej informacji na temat zabezpieczeń ciągów zapytań, zobacz [Omówienie luk](/previous-versions/w1sw53ds(v=vs.140))w zabezpieczeniach.
 
 ## <a name="see-also"></a>Zobacz też
 - [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)

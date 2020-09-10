@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Pytania dotyczące rozliczeń dla subskrypcji chmury.
-ms.openlocfilehash: 8ef98fc3c6e81071984cdc0fb8ef6f6dab626b48
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 987dddcf54f218d63580995b363ad838f2de83b4
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561328"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641443"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Subskrypcje dotyczące rozliczeń w ramach subskrypcji programu Visual Studio Cloud
 [PORÓWNAJ korzyści z subskrypcji chmury i ceny](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać zalety każdej subskrypcji programu Visual Studio, z porównaniami między subskrypcjami w chmurze i standardami programu Visual Studio, szczegółowymi dotyczącymi korzyści dla subskrybentów i innymi.
@@ -31,7 +31,7 @@ Odp.: nie. Jeśli chcesz kupić subskrypcje programu Visual Studio w chmurze tyl
 
 ## <a name="enterprise-agreement-ea-customers"></a>Klienci korzystający z Umowa Enterprise (EA)
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>P: Czy można używać Umowa Enterprise do kupowania subskrypcji programu Visual Studio w chmurze?
-Odp.: tak, możesz. Musisz być właścicielem lub współautorem subskrypcji platformy Azure, która została utworzona dla umowy EA. Upewnij się, że zakupy dla subskrypcji programu Visual Studio Cloud są wprowadzane bezpośrednio w Visual Studio Marketplace. Nie można kupić subskrypcji programu Visual Studio w chmurze przy użyciu zamówienia zakupu.
+Odp.: tak, możesz. Musisz być współautorem lub wyższą rolą dla subskrypcji platformy Azure, która została utworzona dla umowy EA. Upewnij się, że zakupy dla subskrypcji programu Visual Studio Cloud są wprowadzane bezpośrednio w Visual Studio Marketplace. Nie można kupić subskrypcji programu Visual Studio w chmurze przy użyciu zamówienia zakupu.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>P: Jak mogę sprawdzić, czy mam wymagane uprawnienia do kupowania usług w Visual Studio Marketplace za pomocą Umowa Enterprise organizacji?
 Odp.: najprostszym podejściem do ustalenia, czy masz odpowiednie uprawnienia, jest wybranie przycisku **Kup** dla usługi oferowanej w Visual Studio Marketplace.
