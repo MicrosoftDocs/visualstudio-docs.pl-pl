@@ -1,5 +1,5 @@
 ---
-title: Rozwiń właściwości, Lista zadań, dane wyjściowe, Opcje systemu Windows
+title: Rozszerzone właściwości, Lista zadań, dane wyjściowe, Opcje systemu Windows
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db14068c97ff6868f5fb73c9ddd790020e99e7c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3059dbe1c28f0fd598e1a711952fa0bce8c4edde
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711638"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743351"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Rozwiń okna właściwości, Lista zadań, dane wyjściowe i opcje
 Możesz uzyskać dostęp do dowolnego okna narzędzi w programie Visual Studio. W tym instruktażu pokazano, jak zintegrować informacje o oknie narzędzia z nową stroną **opcji** oraz nowe ustawienie na stronie **Właściwości** , a także jak zapisywać w oknach **Lista zadań** i **wyjściowych** .
@@ -478,7 +478,7 @@ Możesz uzyskać dostęp do dowolnego okna narzędzi w programie Visual Studio. 
     }
     ```
 
-## <a name="try-it-out"></a>Czas to wypróbować
+## <a name="try-it-out"></a>Wypróbowywanie działania
 
 1. Skompiluj projekt i Rozpocznij debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.
 

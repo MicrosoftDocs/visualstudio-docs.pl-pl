@@ -1,5 +1,6 @@
 ---
-title: Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów
+title: Błąd użycia oddzielnych projektów
+description: Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 504e2411d20a85c85047e4827d613bf4f48034e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e54a28a7d5c5dc9ae8353266f49234ef8468410
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281555"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743106"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów
 Wpisane zestawy danych zostały ulepszone, aby klasy [TableAdapters](create-and-configure-tableadapters.md) i DataSet mogły być generowane w oddzielnych projektach. Dzięki temu można szybko oddzielić warstwy aplikacji i generować wielowarstwowe aplikacje do obsługi danych.
@@ -57,7 +58,7 @@ Domyślnie po oddzieleniu zestawu danych i kodu TableAdapter wynik jest dyskretn
 > [!NOTE]
 > Aby wyświetlić wygenerowany plik klasy, wybierz projekt zestawu danych lub TableAdapter. Następnie w obszarze **Eksplorator rozwiązań**wybierz pozycję **Pokaż wszystkie pliki**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [N-warstwowe aplikacje dotyczące danych — omówienie](../data-tools/n-tier-data-applications-overview.md)
 - [Przewodnik: Tworzenie wielowarstwowej aplikacji danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

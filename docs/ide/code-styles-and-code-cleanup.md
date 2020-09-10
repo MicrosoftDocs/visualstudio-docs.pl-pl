@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4faeff1e60fa77e3bf9e995c61c841f626468a1b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312590"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743333"
 ---
 # <a name="code-style-preferences"></a>Preferencje stylu kodu
 
@@ -60,6 +60,14 @@ Opcje ustawione w tym oknie dotyczą konta personalizacji programu Visual Studio
 
 Dla każdego ustawienia stylu kodu na tej stronie można ustawić wartości **preferencji** i **ważności** przy użyciu list rozwijanych w każdym wierszu. Ważność można ustawić tylko do **refaktoryzacji**, **sugestii**, **ostrzeżenia**lub **błędu**. Jeśli chcesz włączyć [szybkie akcje](../ide/quick-actions.md) dla stylu kodu, upewnij się, że ustawienie **ważności** ma wartość inne niż **tylko Refaktoryzacja**. Żarówka żarówki z **szybką akcją** , lampka błędu żarówki z błędami ![ ](media/light-bulb-dropdown.png) ![ ](media/error-bulb.png) lub ![ ikona śrubokrętu śrubokrętu ](media/screwdriver.png) pojawia się, gdy używany jest styl niepreferowany, i można wybrać opcję na liście **szybkie akcje** , aby automatycznie napisać kod do preferowanego stylu.
 
+::: moniker range=">=vs-2019"
+
+## <a name="enforce-code-styles-on-build"></a>Wymuś style kodu podczas kompilacji
+
+Począwszy od programu Visual Studio 2019 w wersji 16,8, który zawiera zestaw SDK dla programu .NET 5,0 RC2, można [wymusić stosowanie konwencji kodowania .NET na potrzeby kompilacji](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) dla wszystkich projektów .NET. W czasie kompilacji naruszenia stylu kodu platformy .NET będą wyświetlane jako ostrzeżenia lub błędy z prefiksem "IDE". Pozwala to na ścisłe wymuszanie spójnych stylów kodu w bazie kodu.
+
+::: moniker-end
+
 ## <a name="apply-code-styles"></a>Zastosuj style kodu
 
 ::: moniker range="vs-2017"
@@ -101,7 +109,7 @@ Jeśli chcesz, aby ustawienia stylu kodu były stosowane za każdym razem, gdy z
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Szybkie akcje](../ide/quick-actions.md)
 - [Ustawienia konwencji kodowania .NET dla EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

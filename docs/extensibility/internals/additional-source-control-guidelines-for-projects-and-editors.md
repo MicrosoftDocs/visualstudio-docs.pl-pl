@@ -1,5 +1,5 @@
 ---
-title: Dodatkowe wskazówki dotyczące kontroli źródła dla projektów i edytorów | Microsoft Docs
+title: Wskazówki dotyczące kontroli źródła dla projektów i edytorów
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181f6c10ff7ce95cd3a37151f117353d1bb47d41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b783fdf7231bd3f440686a1bef2a038d9b32f2e4
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710109"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743394"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Dodatkowe wskazówki dotyczące kontroli źródła dla projektów i edytorów
 Istnieje kilka wytycznych, które są zgodne z projektami i edytorami w celu zapewnienia obsługi kontroli źródła.
@@ -23,7 +23,7 @@ Istnieje kilka wytycznych, które są zgodne z projektami i edytorami w celu zap
 ## <a name="guidelines"></a>Wytyczne
  Aby umożliwić obsługę kontroli źródła, projekt lub Edytor powinien również wykonać następujące czynności:
 
-|Obszar|Projekt|Edytor|Szczegóły|
+|Obszar|Project|Edytor|Szczegóły|
 |----------|-------------|------------|-------------|
 |Prywatne kopie plików|X||Środowisko obsługuje prywatne kopie plików. Oznacza to, że każda osoba zarejestrowana w projekcie ma swoją prywatną kopię plików w tym projekcie.|
 |Trwałość ANSI/Unicode|X|X|Jeśli zapiszesz kod trwałości, Utrwalaj pliki w postaci ANSI, ponieważ większość programów kontroli źródła nie obsługuje obecnie standardu Unicode.|
@@ -33,5 +33,5 @@ Istnieje kilka wytycznych, które są zgodne z projektami i edytorami w celu zap
 |Utrwalanie obiektów i właściwości w kolejności przewidywalnej|X|X|Utrwalaj pliki w przewidywalnej kolejności, takiej jak kolejność alfabetyczna, aby ułatwić scalanie.|
 |Załaduj ponownie|X|X|Gdy plik jest zmieniany na dysku, Edytor musi mieć możliwość jego ponownego załadowania. Gdy użytkownik uczestniczy w kontroli źródła, środowisko będzie ponownie ładować dane przez wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementacji. Najbardziej trudnym przypadkiem ponownego załadowania jest to, że wyewidencjonowanie odbywa się po wywołaniu IVsQueryEditQuerySave:: <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> i przetwarza informacje. Jednak kod ponownego załadowania musi być w stanie działać w tej sytuacji.<br /><br /> Środowisko automatycznie ponownie ładuje pliki projektu. Jednak projekt musi implementować, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> Jeśli ma zagnieżdżone hierarchie w celu obsługi ponownego ładowania zagnieżdżonych plików projektu.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Obsługa kontroli źródła](../../extensibility/internals/supporting-source-control.md)

@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4aa978098c459d9e55ef0dc1423080357e067a5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 078b3eedc9971dfc444e86b9f8d7ce770fcdb966
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282764"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743386"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Tworzenie prostej aplikacji do obsługi danych za pomocą platform WPF i Entity Framework 6
 
@@ -427,7 +427,7 @@ Dodaj te metody obsługi do klasy MainWindow w *MainWindow.XAML.cs*. Jeśli Coll
 
 Aby rozpocząć debugowanie, naciśnij klawisz **F5**. Powinny pojawić się dane klienta i zamówienia wypełnione w siatce, a przyciski nawigacji powinny funkcjonować zgodnie z oczekiwaniami. Kliknij przycisk **Zatwierdź** , aby dodać nowego klienta lub zamówienie do modelu po wprowadzeniu danych. Kliknij przycisk **Anuluj** , aby wycofać się z nowego klienta lub formularza nowego zamówienia bez zapisywania danych. Można wprowadzać zmiany w istniejących klientach i zamówieniach bezpośrednio w polach tekstowych i są one automatycznie zapisywane w modelu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Dokumentacja Entity Framework](/ef/)

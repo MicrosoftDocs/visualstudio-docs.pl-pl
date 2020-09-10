@@ -1,5 +1,6 @@
 ---
 title: Zarządzanie konfiguracjami kompilacji z ustawieniami dewelopera języka Visual Basic
+titleSuffix: ''
 ms.date: 11/21/2018
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8593f32b31dc70be08c777e86ae404da0578c48d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3feaf36cb250339bd94e0d80a152a8104e75680
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284233"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743234"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Instrukcje: Zarządzanie konfiguracjami kompilacji z zastosowaniem ustawień dewelopera Visual Basic
 
@@ -38,11 +39,11 @@ Domyślnie ustawienia dewelopera Visual Basic ukrywają opcję, aby otworzyć ok
 
 3. Kliknij pozycję **Pokaż zaawansowane konfiguracje kompilacji**.
 
-4. Kliknij przycisk **OK**.
+4. Kliknij pozycję **OK**.
 
      **Configuration Manager** jest teraz dostępna w menu **kompilacja** , a listy **konfiguracji** i **platformy** są widoczne w **projektancie projektu**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md)
 - [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)

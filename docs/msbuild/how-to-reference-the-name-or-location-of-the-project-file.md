@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: odwoływanie się do nazwy lub lokalizacji pliku projektu | Microsoft Docs'
+title: Odwołanie do nazwy lub lokalizacji pliku projektu
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b54a63b135f844ff20b45ffac430662c4df1f19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44168acda7becee1dc071b4cc94237a4f1ff2c72
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633840"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743411"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Instrukcje: odwoływanie się do nazwy lub lokalizacji pliku projektu
 
@@ -93,7 +93,7 @@ Możesz użyć nazwy lub lokalizacji projektu w samym pliku projektu bez koniecz
 
 W przykładzie użyto składni [funkcji właściwości](property-functions.md) do wywołania metody statycznej .NET Framework <xref:System.IO.Path.Combine*?displayProperty=fullName> .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [MSBuild](../msbuild/msbuild.md)
 - [Zarezerwowane i dobrze znane właściwości programu MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

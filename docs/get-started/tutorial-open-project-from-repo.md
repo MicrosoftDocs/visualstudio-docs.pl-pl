@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3af54d663cee1ad2b2dd4e8241678b88c635d376
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad609e9cf6a00a1b966e5d63589592239f215b01
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70180437"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743034"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Samouczek: Otwieranie projektu z repozytorium
 
@@ -180,10 +180,10 @@ Jeśli wszystko jest gotowe do kodu w programie Visual Studio, szczegółowe do 
 - [Samouczki programu Visual Studio | Język **C#**](./csharp/index.yml)
 - [Samouczki programu Visual Studio | **Visual Basic**](./visual-basic/index.yml)
 - [Samouczki programu Visual Studio | Język **C++**](/cpp/get-started/tutorial-console-cpp)
-- [Samouczki programu Visual Studio | Język **Python**](/visualstudio/python/)
-- [Samouczki programu Visual Studio | **JavaScript**, **TypeScript**i **Node.js**](/visualstudio/javascript/)
+- [Samouczki programu Visual Studio | Język **Python**](../python/index.yml)
+- [Samouczki programu Visual Studio | **JavaScript**, **TypeScript**i **Node.js**](../javascript/index.yml)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Azure DevOps Services: wprowadzenie do Azure Repos i programu Visual Studio](/azure/devops/repos/git/gitquickstart/)
 - [Microsoft Learn: Rozpoczynanie pracy z usługą Azure DevOps](/learn/modules/get-started-with-devops/)

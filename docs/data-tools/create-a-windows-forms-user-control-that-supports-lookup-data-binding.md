@@ -1,5 +1,5 @@
 ---
-title: Używanie tabel odnośników w formantach powiązania danych — Windows Forms | Microsoft Docs
+title: Używanie tabel odnośników w powiązaniu danych — Windows Forms
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5d6309818c251b9101b1345450ef66f3fc8f1f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a68121cc98a1bdbc1f7f1bfa69ce8ee0d1d797bb
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586799"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743363"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującej powiązanie danych wyszukiwania
 
@@ -155,7 +155,7 @@ W oknie **źródła danych** można ustawić kontrolkę, która ma zostać utwor
 
 6. Wybierz **LookupBox** z listy **skojarzonych kontrolek** w oknie dialogowym **Opcje dostosowywania interfejsu użytkownika danych** .
 
-7. Kliknij przycisk **OK**.
+7. Kliknij pozycję **OK**.
 
 8. Kliknij strzałkę listy rozwijanej w kolumnie **IDKlienta** i wybierz pozycję **LookupBox**.
 
@@ -177,6 +177,6 @@ Spowoduje to skonfigurowanie powiązania danych w celu wyświetlenia `CompanyNam
 
 - Nawiguj po kilku rekordach i sprawdź, czy `CompanyName` pojawia się w `LookupBox` kontrolce.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

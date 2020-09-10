@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: tworzenie środowiska kompilowania na wielu komputerach'
+title: tworzenie środowiska kompilowania na wielu komputerach
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bec0ada652da4ac02c457cdc280778487e4b27a1
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68461536"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743125"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Przewodnik: tworzenie środowiska kompilowania na wielu komputerach
 
@@ -406,7 +406,7 @@ Można utworzyć środowisko kompilacji, które można wdrożyć na różnych ko
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przygotowanie maszyny testowej do uruchomienia debugowania pliku wykonywalnego](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [Dokumentacja wiersza polecenia](../msbuild/msbuild-command-line-reference.md)
