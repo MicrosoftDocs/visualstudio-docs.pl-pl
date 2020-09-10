@@ -1,5 +1,5 @@
 ---
-title: Klasy LINQ to SQL z dziedziczeniem pojedynczej tabeli (Projektant O-R)
+title: Klasy LINQ to SQL z dziedziczeniem pojedynczej tabeli
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: afe4063f2d96b2ae46664ec6642ec1a4e98ab892
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c76818f7cd70077996370cf5ffe930ef78f9acb
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535268"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741833"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Przewodnik: tworzenie klas LINQ to SQL przy użyciu dziedziczenia pojedynczej tabeli (Projektant O/R)
 [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługują dziedziczenie pojedynczej tabeli, ponieważ są one zazwyczaj zaimplementowane w systemach relacyjnych. W tym instruktażu rozwijane są ogólne kroki opisane w temacie [How to: Configure dziedziczenie przy użyciu projektanta o/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) i zawiera pewne prawdziwe dane umożliwiające zaprezentowanie użycia dziedziczenia w programie [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
@@ -51,7 +51,7 @@ Aby zobaczyć, jak działa dziedziczenie, należy utworzyć małą `Person` tabe
 
     |Nazwa kolumny|Typ danych|Zezwalaj na wartości null|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**False**|
+    |**ID (Identyfikator)**|**int**|**False**|
     |**Typ**|**int**|**True**|
     |**FirstName (Imię)**|**nvarchar (200)**|**False**|
     |**LastName (Nazwisko)**|**nvarchar (200)**|**False**|
@@ -70,7 +70,7 @@ Aby można było sprawdzić, czy dziedziczenie jest prawidłowo skonfigurowane, 
 
 2. Skopiuj następujące dane do tabeli. (Można go skopiować, a następnie wkleić do tabeli, zaznaczając cały wiersz w okienku **wyników** ).
 
-    |**ID**|**Typ**|**FirstName (Imię)**|**LastName (Nazwisko)**|**Manager**|
+    |**ID (Identyfikator)**|**Typ**|**FirstName (Imię)**|**LastName (Nazwisko)**|**Manager**|
     |-|-|-|-|-|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
@@ -184,10 +184,10 @@ Uruchom aplikację i sprawdź, czy rekordy wyświetlane w polu listy to wszyscy 
 
 3. Zamknij formularz. (W menu **debugowanie** kliknij polecenie **Zatrzymaj debugowanie**).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Przewodnik: tworzenie klas LINQ to SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Instrukcje: przypisywanie procedur składowanych na potrzeby wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
-- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
+- [LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Instrukcje: Generowanie modelu obiektów w Visual Basic lub C #](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

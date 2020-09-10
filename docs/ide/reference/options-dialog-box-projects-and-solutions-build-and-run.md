@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe Opcje, Projekty i rozwiązania, Kompilowanie i uruchamianie
+title: Okno dialogowe Opcje, projekty i rozwiązania, kompilacja i uruchomienie
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b4bcc033ba80778f3446b3089972c63006508ca
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68461391"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742753"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Opcje — okno dialogowe: projekty i rozwiązania \> kompilowania i uruchamiania
 
@@ -60,7 +60,7 @@ Określa, ile informacji z procesu kompilacji jest wyświetlanych w oknie **dany
 
 Określa, ile informacji jest zapisywana w pliku dziennika kompilacji, który znajduje się w * \\ \<ProjectName> \\ \<ProjectName> dzienniku \debug.. log*.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Kompilowanie i tworzenie](../../ide/compiling-and-building-in-visual-studio.md)
 - [Okno dialogowe Opcje, projekty i rozwiązania](projects-and-solutions-options-dialog-box.md)

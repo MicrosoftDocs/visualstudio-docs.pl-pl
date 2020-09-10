@@ -1,5 +1,5 @@
 ---
-title: Najlepsze rozwiązania dotyczące implementowania wtyczki kontroli źródła | Microsoft Docs
+title: Implementowanie wtyczki kontroli źródła — najlepsze rozwiązania
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68491f22d63ae3ebb664b7c22188a661dccbf39a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1576717ceda110820b487a324f56f18486c5d95a
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740054"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739161"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Najlepsze rozwiązania dotyczące implementowania wtyczki kontroli źródła
 Poniższe szczegóły techniczne mogą pomóc w niezawodnym wdrożeniu wtyczki kontroli źródła w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -57,6 +57,6 @@ Poniższe szczegóły techniczne mogą pomóc w niezawodnym wdrożeniu wtyczki k
 
  Większość konfigurowalnych opcji ustawień użytkownika nie jest zdefiniowana w ten sposób, ponieważ różnią się one między wtyczkami kontroli źródła. W związku z tym zalecanym mechanizmem jest przycisk **Zaawansowane** . Na przykład w oknie dialogowym **pobieranie** środowisko IDE wyświetla tylko informacje, które rozumie, ale również wyświetla przycisk **Zaawansowane** , jeśli wtyczka zawiera opcje dla tego polecenia. Gdy użytkownik kliknie przycisk **Zaawansowane** , IDE wywołuje [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) , aby włączyć wtyczkę kontroli źródła w celu wyświetlenia monitu o podanie informacji, takich jak bitflags lub Data/godzina. Wtyczka zwraca te informacje w strukturze, która jest przenoszona z powrotem podczas wykonywania `SccGet` polecenia.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)
 - [Tworzenie wtyczki kontroli źródła](../extensibility/internals/creating-a-source-control-plug-in.md)

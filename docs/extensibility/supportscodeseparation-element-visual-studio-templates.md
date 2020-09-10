@@ -1,5 +1,6 @@
 ---
-title: SupportsCodeSeparation —, element (szablony Visual Studio) | Microsoft Docs
+title: SupportsCodeSeparation — Element (szablony Visual Studio)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd52ae47f47f3ca1fce23f7cf8d37260ec86fb0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b5e03e7ea01b6e6f75c18da44c0233660c17f8e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699498"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741762"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation — Element (szablony Visual Studio)
 Określa, czy pole wyboru **Umieść kod w osobnym pliku** jest włączone w oknie dialogowym **Dodaj nowy element** .
@@ -85,6 +86,6 @@ Określa, czy pole wyboru **Umieść kod w osobnym pliku** jest włączone w okn
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

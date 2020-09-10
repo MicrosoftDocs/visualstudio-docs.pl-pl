@@ -1,5 +1,5 @@
 ---
-title: Relacje między klasami LINQ to SQL (Projektant O/R)
+title: Relacje między klasami LINQ to SQL
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b081e989932ea03a3aaf3203bdc7383f90b9b7ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a45b93ffe1621b5cd56578fc4969a4f14b28355
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282153"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742937"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Instrukcje: Tworzenie skojarzenia między klasami LINQ to SQL (Projektant O/R)
 Skojarzenia między klasami jednostek w programie [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] są analogiczne do relacji między tabelami w bazie danych. Skojarzenia klas jednostek można utworzyć przy użyciu okna dialogowego **Edytor skojarzeń** .
@@ -46,10 +46,10 @@ Po utworzeniu skojarzenia, gdy wybierzesz skojarzenie w **Projektancie O/R**, w 
 
 5. Kliknij przycisk **OK** , aby utworzyć skojarzenie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Przewodnik: tworzenie klas LINQ to SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
+- [LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Metody DataContext (Projektant O/R)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Jak reprezentować klucze podstawowe](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)

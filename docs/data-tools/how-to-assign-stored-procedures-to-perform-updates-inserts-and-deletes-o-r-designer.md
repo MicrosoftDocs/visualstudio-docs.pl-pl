@@ -1,5 +1,5 @@
 ---
-title: Użyj procedur składowanych w LINQ to SQL, aby zaktualizować dane (Projektant O/R)
+title: Użyj procedur składowanych w LINQ to SQL, aby zaktualizować dane
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e657de71fbf1e7c29074a09f5c51211be7b4395f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba6ee706a7c18545a17683233e30283559542890
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282322"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743010"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Instrukcje: przypisywanie procedur składowanych na potrzeby wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)
 
@@ -63,7 +63,7 @@ Domyślnie logika do aktualizowania bazy danych (wstawia, aktualizuje i usuwa) z
 
 Aby przywrócić użycie domyślnej logiki środowiska uruchomieniowego dla aktualizacji, kliknij przycisk wielokropka obok polecenia **Wstaw**, **zaktualizuj**lub **Usuń** w oknie **Właściwości** , a następnie wybierz pozycję **Użyj środowiska uruchomieniowego** w oknie dialogowym **Konfigurowanie zachowania** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Metody DataContext](../data-tools/datacontext-methods-o-r-designer.md)

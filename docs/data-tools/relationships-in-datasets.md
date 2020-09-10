@@ -1,5 +1,5 @@
 ---
-title: Używanie relacji datarelationship do tworzenia relacji między zestawami danych
+title: Tworzenie relacji między zestawami danych
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 95476e56ceecfca84251c1b43cf0bb9ddf84f8b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6c30fb068a9a25c3cd8a6b6237aefbccc666e49e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281763"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739228"
 ---
 # <a name="create-relationships-between-datasets"></a>Tworzenie relacji między zestawami danych
 Zestawy danych, które zawierają tabele powiązane z danymi, używają <xref:System.Data.DataRelation> obiektów do reprezentowania relacji nadrzędny/podrzędny między tabelami i zwracania powiązanych rekordów ze sobą. Dodawanie powiązanych tabel do zestawów danych za pomocą **Kreatora konfiguracji źródła danych**lub **Projektant obiektów DataSet**, tworzy i konfiguruje <xref:System.Data.DataRelation> obiekt.
@@ -104,6 +104,6 @@ Relacje między tabelami danych są wyświetlane jako wiersze w **Projektant obi
 
 2. Z menu **dane** wybierz polecenie **Pokaż etykiety relacji** , aby wyświetlić nazwę relacji. Wyczyść to polecenie, aby ukryć nazwę relacji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie i konfigurowanie zestawów danych w programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)

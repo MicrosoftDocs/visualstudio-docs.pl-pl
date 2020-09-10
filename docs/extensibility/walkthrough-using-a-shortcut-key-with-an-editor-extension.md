@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: używanie klawisza skrótu z rozszerzeniem edytora | Microsoft Docs'
+title: Używanie klawisza skrótu z rozszerzeniem edytora
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 094cb590d5b2a3bf062916985bfc61b1cf76d365
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dcbf5c22af9cabeca0b89ffa98d4ddf86173a4a
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904404"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89735143"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Przewodnik: używanie klawisza skrótu z rozszerzeniem edytora
 Możesz odpowiedzieć na skróty klawiaturowe w rozszerzeniu edytora. W poniższym przewodniku przedstawiono sposób dodawania zakończenia wyświetlania widoku do widoku tekstu przy użyciu klawisza skrótu. Ten przewodnik jest oparty na szablonie edytora autodefiniowania okienka ekranu, który umożliwia dodanie definiowania układu przy użyciu znaku +.

@@ -1,5 +1,5 @@
 ---
-title: Publish-WebApplicationWebSite (skrypt programu Windows PowerShell) | Microsoft Docs
+title: Publikowanie aplikacji sieci Web przy użyciu skryptu programu PowerShell
 description: Dowiedz się, jak opublikować projekt sieci Web w witrynie sieci Web platformy Azure. Ten skrypt tworzy wymagane zasoby w subskrypcji platformy Azure, jeśli nie istnieją.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: c5eff35247c85783659f66b13d03c3a5f781df07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d8a6a73f50c331c516f1e433d7d9b1104731380
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911769"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739886"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (skrypt programu Windows PowerShell)
 ## <a name="syntax"></a>Składnia

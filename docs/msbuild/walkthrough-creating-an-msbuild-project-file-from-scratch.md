@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Tworzenie pliku projektu MSBuild od podstaw | Microsoft Docs'
+title: Tworzenie pliku projektu MSBuild od podstaw
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20ec2a10210517f291a3bb21db9e1689942786c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edd5f3a01cc96a80403d1b030541e08e19d51eef
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184279"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741725"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Przewodnik: Tworzenie pliku projektu MSBuild od podstaw
 
@@ -470,7 +470,7 @@ W poniższym przykładzie przedstawiono plik projektu, który kompiluje Visual B
 
  Program Visual Studio może automatycznie wykonywać większość pracy, która jest wyświetlana w tym instruktażu. Aby dowiedzieć się, jak używać programu Visual Studio do tworzenia, edytowania, kompilowania i testowania plików projektów programu MSBuild, zobacz [Przewodnik: korzystanie z MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Omówienie programu MSBuild](../msbuild/msbuild.md)
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

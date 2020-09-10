@@ -1,5 +1,5 @@
 ---
-title: Migrowanie & publikowanie aplikacji sieci Web w usłudze w chmurze platformy Azure
+title: Migrowanie i publikowanie aplikacji sieci Web w usłudze w chmurze
 description: Dowiedz się, jak przeprowadzić migrację i publikowanie aplikacji sieci Web w usłudze w chmurze platformy Azure przy użyciu programu Visual Studio
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: c95c96815872c259cab761d8b4af36141f866dbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06b283e7382fc135e3cd327db0200622de4f5228
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280560"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739985"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Instrukcje: Migrowanie i publikowanie aplikacji sieci Web w usłudze w chmurze platformy Azure z poziomu programu Visual Studio
 
@@ -109,14 +109,14 @@ Aplikacje, które mogą zostać zmigrowane i opublikowane w usługach w chmurze,
 
 | Grupa szablonów | Szablon projektu |
 | --- | --- |
-| Sieć Web | Aplikacja sieci Web ASP.NET (.NET Framework) |
-| Sieć Web | ASP.NET aplikacji sieci Web MVC 2 |
-| Sieć Web | Aplikacja sieci Web ASP.NET MVC 3 |
-| Sieć Web | Aplikacja sieci Web ASP.NET MVC4 |
-| Sieć Web | ASP.NET pustą aplikację sieci Web (lub lokację) |
-| Sieć Web | ASP.NETą pustą aplikację sieci Web MVC 2 |
-| Sieć Web | Aplikacja sieci Web ASP.NET dynamiczne jednostki danych |
-| Sieć Web | ASP.NET dynamiczne dane LINQ do aplikacji sieci Web SQL |
+| Internet | Aplikacja sieci Web ASP.NET (.NET Framework) |
+| Internet | ASP.NET aplikacji sieci Web MVC 2 |
+| Internet | Aplikacja sieci Web ASP.NET MVC 3 |
+| Internet | Aplikacja sieci Web ASP.NET MVC4 |
+| Internet | ASP.NET pustą aplikację sieci Web (lub lokację) |
+| Internet | ASP.NETą pustą aplikację sieci Web MVC 2 |
+| Internet | Aplikacja sieci Web ASP.NET dynamiczne jednostki danych |
+| Internet | ASP.NET dynamiczne dane LINQ do aplikacji sieci Web SQL |
 | WCF | Aplikacja usługi WCF |
 | WCF | Aplikacja usługi przepływu pracy WCF |
 | Przepływ pracy | Aplikacja usługi przepływu pracy WCF |

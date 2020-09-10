@@ -1,5 +1,5 @@
 ---
-title: Co &apos; nowego w interfejsie API dodatku plug-in kontroli źródła w wersji 1,2 | Microsoft Docs
+title: Co &apos; nowego w interfejsie API wtyczki kontroli źródła 1,2
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 913fec8b820b5f32f564c84aba52a78df82efac1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29a3d81c3a03f4a8dcb8236057e931993f06f6ec
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711758"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741550"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Co&#39;s w interfejsie API dodatku plug-in kontroli źródła w wersji 1,2
 W tej sekcji przedstawiono zaawansowane funkcje kontroli kodu źródłowego w interfejsie API dodatku plug-in kontroli źródła w wersji 1,2. Poniżej wymieniono nowe funkcje w wersji 1,2:
@@ -32,5 +32,5 @@ W tej sekcji przedstawiono zaawansowane funkcje kontroli kodu źródłowego w in
 
 - [Usuwanie informacji o kontroli źródła z. Proj i. Pliki sln](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md) wyjaśniają, w jaki sposób interfejs API wtyczki kontroli źródła w wersji 1,2 przechowuje informacje o projektach i rozwiązaniach.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wprowadzenie](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

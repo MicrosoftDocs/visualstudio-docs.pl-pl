@@ -2,6 +2,7 @@
 title: 'Przewodnik: korzystanie z programu MSBuild | Microsoft Docs'
 ms.date: 03/20/2019
 ms.topic: conceptual
+ms.custom: contperfq1
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
@@ -10,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310fa3b6795a5e340dcd9c7fa40cb27807c132ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c04344e361bea15c39b092c59e76d1853e3969e2
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82072544"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89738317"
 ---
 # <a name="walkthrough-use-msbuild"></a>Przewodnik: korzystanie z programu MSBuild
 
@@ -611,7 +612,7 @@ Zwróć uwagę, że metadane wyrażone w tej składni nie powodują przetwarzani
 
  Aby dowiedzieć się, jak utworzyć prosty plik projektu w jednym kroku, wypróbuj [Przewodnik: Tworzenie pliku projektu MSBuild od podstaw](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Omówienie programu MSBuild](../msbuild/msbuild.md)
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

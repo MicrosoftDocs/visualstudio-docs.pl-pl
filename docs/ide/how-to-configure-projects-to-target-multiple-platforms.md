@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Konfigurowanie projektów pod kątem wielu platform docelowych'
+title: Konfigurowanie projektów pod kątem wielu platform docelowych
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0618d571258817b5e9653a38a7801c2e4d14e687
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb94043d238cba706ad1b1d712b244da4e245c24
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284571"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741468"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Instrukcje: Konfigurowanie projektów pod kątem wielu platform docelowych
 
@@ -61,7 +61,7 @@ Ponieważ można zmienić ustawienia na podstawie kombinacji ustawień konfigura
 
    Istnieje możliwość, że platforma na poziomie rozwiązania ma ustawioną wartość, na przykład, [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] i nie ma żadnych projektów w ramach tego rozwiązania przeznaczonych dla tej samej platformy. Istnieje również możliwość, że w rozwiązaniu istnieje wiele projektów, z których każdy jest przeznaczony dla różnych platform. Zaleca się, aby w przypadku jednej z tych sytuacji utworzyć nową konfigurację z opisową nazwą, aby uniknąć nieporozumień.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md)
 - [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md)

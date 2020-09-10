@@ -1,5 +1,5 @@
 ---
-title: Obsługa okna autoodtwarzania w starszej wersji usługi językowej | Microsoft Docs
+title: Obsługa okna autoodtwarzania w starszej wersji usługi językowej
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75f8c761721dde5dad4bb75b8675f71f678b06df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3567739dabe68bc028a1bb935337c149637cfd20
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704882"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741461"
 ---
-# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Obsługa okna zmiennych automatycznych w starszej wersji usługi językowej
+# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Obsługa okna autoodtwarzania w starszej wersji usługi językowej
+
 W oknie **samochody** są wyświetlane wyrażenia, takie jak zmienne i parametry, które są w zakresie, gdy debugowany program jest wstrzymany (z powodu punktu przerwania lub wyjątku). Wyrażenia mogą zawierać zmienne, lokalne lub globalne oraz parametry, które zostały zmienione w zakresie lokalnym. Okno **autouzupełniania** może również zawierać wystąpienia klasy, struktury lub innego typu. Wszystkie elementy, które może oszacować ewaluatora wyrażeń, mogą być wyświetlane w oknie **Autokorekty** .
 
  Struktura pakietu zarządzanego (MPF) nie zapewnia bezpośredniej pomocy technicznej **dla okna.** Jednak w przypadku zastąpienia <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> metody można zwrócić listę wyrażeń, które mają być prezentowane w oknie **Automatyczne** .
 
 ## <a name="implementing-support-for-the-autos-window"></a>Implementowanie obsługi okna Autokorekty
+
  Wszystko, co musisz zrobić, aby obsłużyć okno **autostarts** , zaimplementuj <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> metodę w <xref:Microsoft.VisualStudio.Package.LanguageService> klasie. Twoja implementacja musi podejmować decyzje dotyczące lokalizacji w pliku źródłowym, które powinny być wyświetlane w oknie **Autokorekty** . Metoda zwraca listę ciągów, w których każdy ciąg reprezentuje pojedyncze wyrażenie. Zwracana wartość wskazuje, <xref:Microsoft.VisualStudio.VSConstants.S_OK> że lista zawiera wyrażenia, natomiast <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> wskazuje, że nie ma żadnych wyrażeń do wyświetlenia.
 
  Zwracane wyrażenia są nazwami zmiennych lub parametrów, które pojawiają się w tej lokalizacji w kodzie. Te nazwy są przenoszone do ewaluatora wyrażeń w celu uzyskania wartości i typów, które są następnie wyświetlane **w oknie zmiennych** .

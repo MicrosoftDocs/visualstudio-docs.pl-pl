@@ -1,5 +1,5 @@
 ---
-title: 'Porady: dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF'
+title: Dodawanie, aktualizowanie lub usuwanie odwołania usługi danych programu WCF
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5f5a1e14a6eab7537c8ce64636f0f34378ad7f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c09b2d487e58e6da2b4aaf62179784d96bdfe783
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282374"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741384"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Instrukcje: Dodawanie, aktualizowanie lub usuwanie odwołania usługi danych programu WCF
 
@@ -156,6 +156,6 @@ Jeśli odwołanie do usługi nie jest już używane, można je usunąć z rozwi�
     > [!NOTE]
     > Każdy kod, który odwołuje się do odwołania do usługi, musi zostać usunięty ręcznie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Usługi Windows Communication Foundation i usługi danych programu WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

@@ -1,17 +1,18 @@
 ---
 title: Narzędzia kontenera programu Visual Studio z ASP.NET Core i React.js
+titleSuffix: ''
 author: ghogen
 description: Dowiedz się, jak używać narzędzi kontenera programu Visual Studio i Docker for Windows
 ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: d92d3a22570fb21381f18f2ce353dbc2d999893b
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 2ac295982bb6ac0f6eaf6408106e3d95024af14d
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485401"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741890"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Szybki Start: korzystanie z platformy Docker z aplikacją jednostronicową do reagowania w programie Visual Studio
 
@@ -231,7 +232,7 @@ Po zakończeniu cyklu opracowywania i debugowania aplikacji można utworzyć obr
     | **Prefiks DNS** | Nazwa unikatowa w skali globalnej | Nazwa, która jednoznacznie identyfikuje rejestr kontenerów. |
     | **Subskrypcja** | Wybierz subskrypcję | Subskrypcja platformy Azure, która ma być używana. |
     | **[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nazwa grupy zasobów, w której ma zostać utworzony rejestr kontenerów. Wybierz pozycję **Nowa**, aby utworzyć nową grupę zasobów.|
-    | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | Warstwa usług w rejestrze kontenerów  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Standardowa | Warstwa usług w rejestrze kontenerów  |
     | **Lokalizacja rejestru** | Lokalizacja blisko Ciebie | Wybierz lokalizację w [regionie](https://azure.microsoft.com/regions/) blisko siebie lub w najbliższej innej usłudze, która będzie korzystać z rejestru kontenerów. |
 
     ![Okno dialogowe tworzenia Azure Container Registry programu Visual Studio][0]
@@ -244,7 +245,7 @@ Po zakończeniu cyklu opracowywania i debugowania aplikacji można utworzyć obr
 
 Teraz można ściągnąć kontener z rejestru do dowolnego hosta, który może uruchamiać obrazy platformy Docker, na przykład [Azure Container Instances](/azure/container-instances/container-instances-tutorial-deploy-app).
 
-## <a name="additional-resources"></a>Zasoby dodatkowe
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 * [Opracowywanie kontenerów w programie Visual Studio](./index.yml)
 * [Rozwiązywanie problemów związanych z opracowywaniem zwartości w programie Visual Studio przy użyciu platformy Docker](troubleshooting-docker-errors.md)

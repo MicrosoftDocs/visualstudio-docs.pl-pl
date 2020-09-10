@@ -1,5 +1,5 @@
 ---
-title: Niestandardowe właściwości dokumentu w starszej wersji usługi językowej | Microsoft Docs
+title: Niestandardowe właściwości dokumentu w starszych usługach językowych
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b3db7f4cfa45ea96e3da3056f39c2a5c78a25ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3605658dc7baa45579cc47ccfbf824c3099aa63
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708971"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741805"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Niestandardowe właściwości dokumentu w starszej wersji usługi językowej
 Właściwości dokumentu można wyświetlić w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oknie **Właściwości** . Języki programowania zazwyczaj nie mają właściwości skojarzonych z poszczególnymi plikami źródłowymi. Plik XML obsługuje jednak właściwości dokumentu, które mają wpływ na kodowanie, schemat i arkusz stylów.
@@ -397,5 +397,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Funkcje starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-features1.md)

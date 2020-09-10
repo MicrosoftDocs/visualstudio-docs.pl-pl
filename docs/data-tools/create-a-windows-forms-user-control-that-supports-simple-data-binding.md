@@ -1,5 +1,5 @@
 ---
-title: Tworzenie kontrolki użytkownika obsługującej proste powiązanie danych
+title: Tworzenie kontrolek użytkownika, które obsługują proste powiązanie danych
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ace5f9dd2781697525e7041be6cbd8df050bca97
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b1e8540a33dc5ddbead5debcbfb2cd4ddc8d9de
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586827"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742821"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującej proste powiązanie danych
 
@@ -180,7 +180,7 @@ W zależności od wymagań aplikacji istnieje kilka kroków, które można wykon
 
 - Tworzenie formantów, które obsługują bardziej złożone scenariusze powiązań danych. Aby uzyskać więcej informacji, zobacz [Tworzenie kontrolki użytkownika Windows Forms obsługującej złożone powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) i [Tworzenie Windows Forms kontrolki użytkownika, która obsługuje powiązanie danych wyszukiwania](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

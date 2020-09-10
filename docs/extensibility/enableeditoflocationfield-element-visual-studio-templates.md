@@ -1,5 +1,6 @@
 ---
-title: EnableEditOfLocationField, element (szablony Visual Studio) | Microsoft Docs
+title: EnableEditOfLocationField — Element (szablony Visual Studio)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e15e2f5c070b8a8c565497c6ba3fc6490b87591
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9baee9e7497f5b65022b8a0b938f4a8a63140ab2
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711993"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741722"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField, element (szablony Visual Studio)
 Określa, czy użytkownik może edytować pole lokalizacji.
@@ -84,6 +85,6 @@ Określa, czy użytkownik może edytować pole lokalizacji.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

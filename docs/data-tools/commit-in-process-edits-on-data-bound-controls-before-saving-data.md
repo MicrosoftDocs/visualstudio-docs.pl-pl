@@ -1,5 +1,6 @@
 ---
-title: Zatwierdź edycję w procesie w formantach powiązanych z danymi przed zapisaniem
+title: Niezatwierdzone zmiany
+description: Zatwierdź edycję w procesie w formantach powiązanych z danymi przed zapisaniem
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f0369f4410c1eaf5a168a5291feebf64dbc9ee65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: accf31187318c70ded0cc347763664b8fd51d479
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282712"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739266"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Zatwierdzanie edycji wewnątrzprocesowych w ramach kontrolek powiązanych z danymi przed zapisaniem danych
 
@@ -50,7 +51,7 @@ Poniższy kod używa zapytania [LINQ (Language-Integrated Query)](/dotnet/csharp
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)

@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie projektu platformy Azure z wieloma konfiguracjami usługi
+title: Konfigurowanie usługi w chmurze z wieloma konfiguracjami
 description: Dowiedz się, jak skonfigurować projekt usługi w chmurze platformy Azure, zmieniając pliki ServiceDefinition. csdef, ServiceConfiguration. local. cscfg i ServiceConfiguration. Cloud. cscfg.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 8c9f65291d43a55ee75840591698c26fdde6e967
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790d0090bd5f4c24303afbb72082a05702064071
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280547"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739955"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurowanie projektu platformy Azure w programie Visual Studio w celu używania wielu konfiguracji usługi
 

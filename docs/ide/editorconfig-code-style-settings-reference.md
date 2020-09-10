@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f383b173e012a7836d67a916ad9c16132e984602
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 62709c496b9eec631a42c0e227210d3b57ecb5ef
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402286"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741774"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Ustawienia konwencji kodowania .NET dla EditorConfig
 
@@ -43,6 +43,14 @@ Istnieją trzy obsługiwane kategorie konwencji kodowania .NET:
 - [Konwencje nazewnictwa](../ide/editorconfig-naming-conventions.md)
 
    Reguły dotyczące nazewnictwa elementów kodu. Na przykład można określić, że `async` metody muszą kończyć się "Async".
+
+::: moniker range=">=vs-2019"
+
+## <a name="enforce-coding-conventions-on-build"></a>Wymuś konwencje kodowania w kompilacji
+
+Począwszy od programu Visual Studio 2019 w wersji 16,8, który zawiera zestaw SDK dla programu .NET 5,0 RC2, można [wymusić stosowanie konwencji kodowania .NET na potrzeby kompilacji](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) dla wszystkich projektów .NET. W czasie kompilacji naruszenia stylu kodu platformy .NET będą wyświetlane jako ostrzeżenia lub błędy z prefiksem "IDE". Pozwala to na ścisłe wymuszanie spójnych stylów kodu w bazie kodu.
+
+::: moniker-end
 
 ## <a name="example-editorconfig-file"></a>Przykładowy plik EditorConfig
 
@@ -261,7 +269,7 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case
 > [!NOTE]
 > Aby uzyskać więcej informacji na temat obsługiwanych kategorii konwencji kodowania .NET, zobacz [konwencje języka](../ide/editorconfig-language-conventions.md), [konwencje formatowania](../ide/editorconfig-formatting-conventions.md)i strony [konwencji nazewnictwa](../ide/editorconfig-naming-conventions.md) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Szybkie akcje](../ide/quick-actions.md)
 - [Tworzenie przenośnych opcji edytora niestandardowego](../ide/create-portable-custom-editor-options.md)

@@ -1,5 +1,6 @@
 ---
-title: LocationField —, element (szablony projektów Visual Studio) | Microsoft Docs
+title: LocationField — Element (Szablony projektu Visual Studio)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a5f2f47eef9c3cb047b5550e466585ef70e8f4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9aafe51669bcc95d6024b5a3fd749ba70ea8ddc7
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770019"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739133"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField —, element (szablony projektów Visual Studio)
 Określa, czy pole tekstowe **lokalizacji** w oknie dialogowym **Nowy projekt** jest włączone, wyłączone czy ukryte dla szablonu projektu.
@@ -93,6 +94,6 @@ Określa, czy pole tekstowe **lokalizacji** w oknie dialogowym **Nowy projekt** 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: Obsługa paska nawigacyjnego w starszej wersji usługi językowej | Microsoft Docs
+title: Obsługa paska nawigacyjnego w starszej wersji usługi językowej
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f86dabb0594b1e33c45808efb387fcbe313e3de3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f22aaf552cc69074c500508621ab4d9e288ef449
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704863"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741905"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Obsługa paska nawigacyjnego w starszej wersji usługi językowej
 Pasek nawigacyjny w górnej części widoku edytora wyświetla typy i elementy członkowskie w pliku. Typy są wyświetlane na liście rozwijanej po lewej stronie, a elementy członkowskie są wyświetlane na liście rozwijanej po prawej stronie. Gdy użytkownik wybierze typ, karetka zostanie umieszczona w pierwszym wierszu typu. Gdy użytkownik wybierze element członkowski, karetka zostanie umieszczona na definicji elementu członkowskiego. Pola rozwijane są aktualizowane w celu odzwierciedlenia bieżącej lokalizacji karetki.

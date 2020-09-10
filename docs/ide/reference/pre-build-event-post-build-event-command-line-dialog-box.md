@@ -1,5 +1,5 @@
 ---
-title: Wiersz polecenia zdarzenia sprzed kompilacji/zdarzenia po kompilacji, okno dialogowe
+title: Okno dialogowe wiersza polecenia zdarzenia sprzed kompilacji
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -34,12 +34,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594d885228de68ecf34e0644cbbe6c6899397fad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a2c2b191c4c50fd89936a798a704844b20aa0d3
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419201"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741512"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Zdarzenie przed kompilacją/wiersz polecenia zdarzenia po kompilacji
 
@@ -95,7 +95,7 @@ Możesz użyć dowolnego z tych makr, aby określić lokalizacje plików lub uzy
 |`$(TargetFileName)`|Nazwa pliku podstawowego pliku wyjściowego dla kompilacji (zdefiniowana jako nazwa podstawowa i rozszerzenie pliku).|
 |`$(TargetExt)`|Rozszerzenie pliku podstawowego pliku wyjściowego dla kompilacji. Zawiera "." przed rozszerzeniem pliku.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Określanie niestandardowych zdarzeń kompilacji w programie Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [Strona Zdarzenia kompilacji, Projektant projektu (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)

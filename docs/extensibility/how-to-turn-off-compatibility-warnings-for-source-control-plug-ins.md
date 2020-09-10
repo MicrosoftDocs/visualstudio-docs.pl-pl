@@ -1,5 +1,5 @@
 ---
-title: Wyłącz ostrzeżenia dotyczące zgodności dla wtyczek kontroli źródła | Microsoft Docs
+title: Wyłącz ostrzeżenia dla wtyczek kontroli źródła
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22dd3821426aa1dae6265c520ddac60dd93e1c5e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33cf57aa86608cca96924faa2caeb9eec7fbdc0e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710724"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742776"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Instrukcje: wyłączanie ostrzeżeń dotyczących zgodności dla wtyczek kontroli źródła
+
 Podczas stosowania kontroli źródła w programie użytkownik może zobaczyć kilka ostrzeżeń dotyczących zgodności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Przedstawione ostrzeżenia zależą od możliwości wtyczki kontroli źródła i można je wyłączyć zgodnie z opisem w tym miejscu.
 
 ### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>Aby wyłączyć Ostrzeżenie: "aby zapewnić optymalną integrację kontroli źródła z programem Visual Studio"
@@ -41,5 +42,6 @@ Podczas stosowania kontroli źródła w programie użytkownik może zobaczyć ki
 
      Najlepiej jest obsługiwać współużytkowania wątkowości ( `SCC_CAP_REENTRANT` możliwości). spowoduje to usunięcie tego ostrzeżenia. Jeśli jednak ta obsługa nie jest możliwa, można ustawić te wpisy rejestru.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
+
 - [Flagi możliwości](../extensibility/capability-flags.md)

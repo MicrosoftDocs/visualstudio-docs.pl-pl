@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Konfigurowanie dziedziczenia przy użyciu projektanta O-R'
+title: Konfigurowanie dziedziczenia przy użyciu projektanta O-R
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e31e5e78d5c72167f9d1c1eaab974155a4c369f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f9ae6d1bd7048ad9e6dc974bca67e6de15ba5fa
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282244"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742957"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Instrukcje: konfigurowanie dziedziczenia za pomocą narzędzia Object Relational Designer
 **Object Relational Designer** (**Projektant O/R**) wspiera koncepcję dziedziczenia pojedynczej tabeli, ponieważ jest ona często zaimplementowana w systemach relacyjnych. W przypadku dziedziczenia z jedną tabelą istnieje pojedyncza tabela bazy danych zawierająca pola dla informacji nadrzędnych i podrzędnych. W przypadku danych relacyjnych kolumna rozróżniacza zawiera wartość określającą, do której klasy należy każdy rekord.
@@ -50,12 +50,12 @@ Tworzenie modelu obiektów, który używa dziedziczenia (i odpowiada danych rela
 
 10. Opcjonalnie można również ustawić **domyślną właściwość dziedziczenia** , aby wyznaczyć typ w hierarchii dziedziczenia, który jest używany podczas ładowania wierszy, które nie pasują do żadnego zdefiniowanego kodu dziedziczenia. Innymi słowy, jeśli rekord ma wartość w swojej kolumnie rozróżniacza, która nie pasuje do wartości w **klasie pochodnej wartości rozróżniacza** lub właściwości **wartości rozróżniacza klasy bazowej** , rekord jest ładowany do typu wyznaczonego jako **domyślne dziedziczenie**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Przewodnik: tworzenie klas LINQ to SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
+- [LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Przewodnik: tworzenie klas LINQ to SQL przy użyciu dziedziczenia pojedynczej tabeli (Projektant O/R)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
 - [Podstawowe informacje o dziedziczeniu (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
 - [Dziedziczenie](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)

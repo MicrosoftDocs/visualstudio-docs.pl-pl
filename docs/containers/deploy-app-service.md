@@ -1,6 +1,6 @@
 ---
-title: Wdróż kontener Docker ASP.NET Core, aby Azure App Service | Microsoft Docs
-description: Dowiedz się, jak używać narzędzi kontenerów programu Visual Studio do wdrażania aplikacji internetowej ASP.NET Core w Azure App Service
+title: Wdróż kontener ASP.NET Core do Azure App Service
+description: Dowiedz się, jak używać narzędzi kontenera programu Visual Studio do wdrażania aplikacji internetowej ASP.NET Core w kontenerze Docker w celu Azure App Service
 author: ghogen
 manager: jillfra
 ms.technology: vs-azure
@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 43bd06fba795c09bfa341ce7b61a3ced0fe15214
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3a0742daa1f5e6e6510f5fa5d7f56d76c1eb4da
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86454166"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741879"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Wdrażanie kontenera ASP.NET Core do Azure App Service przy użyciu programu Visual Studio
 
@@ -143,6 +143,6 @@ W Azure Portal wybierz pozycję **grupy zasobów**, a następnie wybierz grupę 
 
 Dowiedz się więcej o [Azure App Service](/azure/app-service/overview).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Wdrażanie w rejestrze kontenerów platformy Azure](hosting-web-apps-in-docker.md)

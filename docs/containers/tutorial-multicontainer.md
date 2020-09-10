@@ -1,17 +1,17 @@
 ---
-title: Samouczek wielokontenerowy korzystający z Docker Compose & ASP.NET Core
+title: Pracuj z wieloma kontenerami przy użyciu Docker Compose
 author: ghogen
 description: Dowiedz się, jak używać wielu kontenerów z Docker Compose
 ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 5cdb8fa2f2a2c3a6a41cab4218b06ce4786d33b4
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 9fc2ed06e5429f8c05ef560bf0af7a44e8d189ad
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490316"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742969"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Samouczek: Tworzenie aplikacji z obsługą kontenera przy użyciu Docker Compose
 

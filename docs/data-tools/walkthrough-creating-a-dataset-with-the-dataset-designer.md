@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: tworzenie zestawu danych za pomocą narzędzia Projektant obiektów Dataset'
+title: Tworzenie zestawu danych z Projektant obiektów Dataset
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8c525d55de16e859005b9746eb52e5516928b9e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07d61ec32d48e5cb9b5421e397d743cd8c95b523
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586032"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742931"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Przewodnik: Tworzenie zestawu danych za pomocą Projektant obiektów Dataset
 
@@ -108,7 +108,7 @@ W tej sekcji wyjaśniono, jak dodać tabele do zestawu danych.
 
 - Dodaj logikę walidacji do zdarzeń <xref:System.Data.DataTable.ColumnChanging> lub <xref:System.Data.DataTable.RowChanging> tabel danych w zestawie danych. Aby uzyskać więcej informacji, zobacz [Weryfikowanie danych w zestawach DataSet](../data-tools/validate-data-in-datasets.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie i konfigurowanie zestawów danych w programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

@@ -1,5 +1,6 @@
 ---
-title: Struktura AsyncTaskMethodBuilder — wewnętrzne elementy członkowskie | Microsoft Docs
+title: AsyncTaskMethodBuilder, struktura — składowe wewnętrzne
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c918890551515ab9fadbf329d4c3ee96621c7aae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 032bac9fc4eabccc2368d0b0403ce97a43b7966c
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739376"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741623"
 ---
 # <a name="asynctaskmethodbuilder-structure---internal-members"></a>Struktura AsyncTaskMethodBuilder — wewnętrzne elementy członkowskie
 W tym temacie opisano wewnętrzne elementy członkowskie <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> klasy. Aby uzyskać ogólne informacje na temat tej klasy, zobacz temat informacje o <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> odwołaniach.
@@ -42,6 +43,6 @@ W tym temacie opisano wewnętrzne elementy członkowskie <xref:System.Runtime.Co
 |[Właściwość ObjectIdForDebugger](../../extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property.md)|Pobiera obiekt, który może być używany do jednoznacznego identyfikowania tego konstruktora w debugerze.|
 |[pole m_builder](../../extensibility/debugger/asynctaskmethodbuilder-m-builder-field.md)|Reprezentuje obiekt konstruktora generycznego, do którego to wystąpienie nieogólne.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>
 - [Wewnętrzne rozszerzenia równoległe dla .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

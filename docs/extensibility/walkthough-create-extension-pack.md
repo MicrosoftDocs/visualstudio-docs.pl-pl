@@ -1,5 +1,6 @@
 ---
-title: Utwórz pakiet rozszerzeń z szablonem elementu pakietu rozszerzenia | Microsoft Docs
+title: Tworzenie pakietu rozszerzeń
+description: Dowiedz się, jak utworzyć pakiet rozszerzeń z szablonem elementu pakietu rozszerzenia
 ms.date: 07/27/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa1c141e18a3870eaad4b155d816e30ee207f45d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5a0021061aefceafc2b048a3e231d9c0300db7b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697747"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742913"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Przewodnik: tworzenie pakietu rozszerzeń
 
@@ -31,7 +32,7 @@ Funkcja pakietu rozszerzeń jest dostępna od wersji Visual Studio 15,8 Preview 
 
 Szablon elementu pakietu rozszerzenia tworzy pakiet rozszerzeń z zestawem rozszerzeń, które mogą być instalowane razem.
 
-1. W oknie dialogowym **Nowy projekt** Wyszukaj ciąg "VSIX" i wybierz pozycję **Projekt VSIX**. W obszarze **Nazwa projektu**wpisz "test Pack pakiet". Wybierz przycisk **Utwórz**.
+1. W oknie dialogowym **Nowy projekt** Wyszukaj ciąg "VSIX" i wybierz pozycję **Projekt VSIX**. W obszarze **Nazwa projektu**wpisz "test Pack pakiet". Wybierz pozycję **Utwórz**.
 
 2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. Przejdź do węzła **rozszerzalności** Visual C# i wybierz pozycję **pakiet rozszerzeń**. Pozostaw domyślną nazwę pliku (ExtensionPack1.cs).
 

@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Używanie polecenia powłoki z rozszerzeniem edytora | Microsoft Docs'
+title: Używanie polecenia powłoki z rozszerzeniem edytora
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e9f7de69cfd969db8ae905ea65bbf868cf2c88a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ebec1b2c58f5a2ae79e6f361d74e57cd935c177
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904458"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742026"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Przewodnik: Używanie polecenia powłoki z rozszerzeniem edytora
 Z pakietu VSPackage można dodać do edytora funkcje, takie jak polecenia menu. W tym instruktażu przedstawiono sposób dodawania definiowania układu do widoku tekstu w edytorze przez wywoływanie polecenia menu.
@@ -691,5 +691,5 @@ Z pakietu VSPackage można dodać do edytora funkcje, takie jak polecenia menu. 
 
      Fourscore...
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

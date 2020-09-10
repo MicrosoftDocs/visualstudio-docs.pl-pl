@@ -1,5 +1,5 @@
 ---
-title: Ciągi używane jako klucze do znajdowania wtyczki kontroli źródła | Microsoft Docs
+title: Ciągi używane jako klucze do znajdowania wtyczki kontroli źródła
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f9333ff1b6742ca14dc5541bd15e92b2eb39085
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 038441f7bcea9fa1dafdd61505d4150ecf28a966
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699712"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741776"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Ciągi używane jako klucze do znajdowania wtyczki kontroli źródła
 Następujące ciągi są kluczami służącymi do uzyskiwania dostępu do rejestru w celu znalezienia informacji o wtyczce kontroli źródła.
@@ -46,7 +46,7 @@ Następujące ciągi są kluczami służącymi do uzyskiwania dostępu do rejest
 |`STR_UI_LANGUAGE`|UILanguage|
 |`STR_SRCSAFE_ROOT_KEY`|Software\Microsoft\SourceSafe|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)
 - [Instrukcje: instalowanie wtyczki kontroli kodu źródłowego](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [Plik MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

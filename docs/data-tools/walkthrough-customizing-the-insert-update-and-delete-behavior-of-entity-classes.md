@@ -1,5 +1,5 @@
 ---
-title: Dostosuj zachowanie funkcji Insert/Update/Delete dla klas jednostek
+title: Dostosuj zachowanie wstawiania/aktualizowania/usuwania
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 105519153e92e3944971f60ae2ff6151fa6a3fdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01fe4cf160ed3a7548fd8b8bed003838abee3d04
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585954"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741825"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Przewodnik: Dostosowywanie zachowania INSERT, Update i DELETE klas jednostek
 
@@ -229,7 +229,7 @@ Domyślnie przycisk Zapisz nie jest włączony i funkcja zapisywania nie jest za
 
 18. Mapuj argument **Original_CustomerID** metody na właściwość klasy **CustomerID (oryginalna)** .
 
-19. Kliknij przycisk **OK**.
+19. Kliknij pozycję **OK**.
 
 > [!NOTE]
 > Chociaż nie jest to problem związany z tym konkretnym instruktażem, warto zauważyć, że LINQ to SQL automatycznie obsługuje wartości generowane przez bazę danych dla tożsamości (Automatyczne zwiększenie), ROWGUIDCOL (GUID wygenerowanej przez bazę danych) i kolumn sygnatur czasowych podczas operacji INSERT i Update. Wartości wygenerowane przez bazę danych w innych typach kolumn nieoczekiwanie spowodują wartość null. Aby zwrócić wartości generowane przez bazę danych, należy ręcznie ustawić wartość <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> `true` i <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> na jedną z następujących opcji: [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)lub [AutoSync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
@@ -269,10 +269,10 @@ W zależności od wymagań aplikacji istnieje kilka kroków, które można wykon
 
 - Dodaj zapytania LINQ do filtrowania danych. Aby uzyskać więcej informacji, zobacz [wprowadzenie do zapytań LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Metody DataContext](../data-tools/datacontext-methods-o-r-designer.md)
 - [Instrukcje: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawianych i usuwanych](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
-- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
+- [LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Zapytania LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)

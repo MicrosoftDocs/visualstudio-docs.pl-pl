@@ -1,5 +1,5 @@
 ---
-title: Co &apos; nowego w interfejsie API dodatku plug-in kontroli źródła w wersji 1,3 | Microsoft Docs
+title: Co &apos; nowego w interfejsie API wtyczki kontroli źródła 1,3
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec24e9ee3079d3b02ac13759b6ab5bdee8c07a84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0eb580d018bbb858cd0214970bdba3d4ab4f391c
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88706454"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741532"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Co&#39;s w interfejsie API dodatku plug-in kontroli źródła w wersji 1,3
 Interfejs API wtyczki kontroli źródła w wersji 1,3 wprowadza następujące nowe funkcje, aby zapewnić bardziej zaawansowaną kontrolę.
@@ -34,6 +34,6 @@ Interfejs API wtyczki kontroli źródła w wersji 1,3 wprowadza następujące no
 |[SccBackgroundGet](../../extensibility/sccbackgroundget-function.md)|Wykonuje ciche "Pobieranie" określonych plików (nie jest wyświetlany żaden interfejs użytkownika)|
 |[SccGetUserOption](../../extensibility/sccgetuseroption-function.md)|Zezwala na dostęp do opcji specyficznych dla użytkownika|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wprowadzenie](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
 - [Nowości dotyczące wtyczki kontroli kodu źródłowego w interfejsie API w wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

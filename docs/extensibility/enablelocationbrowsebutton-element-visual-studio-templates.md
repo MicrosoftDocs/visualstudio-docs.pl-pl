@@ -1,5 +1,6 @@
 ---
-title: EnableLocationBrowseButton, element (szablony Visual Studio) | Microsoft Docs
+title: EnableLocationBrowseButton — Element (szablony Visual Studio)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 263157d5c6fefc208f28caa55475ba329a0d230f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b04152864b77c33e3821e4e1ba415cc4fa9f502
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711988"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742998"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton, element (szablony Visual Studio)
 Określa, czy przycisk **Przeglądaj** jest dostępny w oknie dialogowym **Nowy projekt** , dzięki czemu użytkownicy mogą łatwo modyfikować domyślny katalog, w którym zapisano nowy projekt.
@@ -28,7 +29,7 @@ Określa, czy przycisk **Przeglądaj** jest dostępny w oknie dialogowym **Nowy 
 
 ## <a name="syntax"></a>Składnia
 
-```
+```xml
 <EnableLocationBrowseButton> true/false </EnableLocationBrowseButton>
 ```
 
@@ -60,7 +61,7 @@ Określa, czy przycisk **Przeglądaj** jest dostępny w oknie dialogowym **Nowy 
 ## <a name="example"></a>Przykład
  Poniższy przykład ilustruje metadane dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji systemu Windows.
 
-```
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,6 +86,6 @@ Określa, czy przycisk **Przeglądaj** jest dostępny w oknie dialogowym **Nowy 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

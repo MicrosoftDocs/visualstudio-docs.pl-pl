@@ -1,5 +1,5 @@
 ---
-title: Dzienniki kontenerów platformy Docker, zmienne środowiskowe i dostęp do systemu plików
+title: Wyświetlanie i diagnozowanie kontenerów i obrazów platformy Docker
 description: Opisuje sposób ulepszania możliwości debugowania i diagnozowania aplikacji opartych na kontenerach w programie Visual Studio przy użyciu okna narzędzi, aby zobaczyć, co się dzieje w kontenerach, które obsługują aplikację.
 author: ghogen
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 45ef2d8f68ac951cc58040abb72e136b42f3b49c
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 626666fc912fcff85fcfcc49425d59018778d1f6
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490303"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742788"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Jak wyświetlać i diagnozować kontenery oraz obrazy w programie Visual Studio
 
