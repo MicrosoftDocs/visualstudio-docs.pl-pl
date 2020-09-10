@@ -21,11 +21,11 @@
 - name: Samouczki
   items:
     - name: 'Dowiedz się, jak debugować w języku C#'
-      href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      href: ../get-started/csharp/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - name: 'Dowiedz się, jak debugować w języku C++'
       href: getting-started-with-the-debugger-cpp.md
     - name: 'Dowiedz się, jak debugować w języku Visual Basic'
-      href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      href: ../get-started/visual-basic/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - name: Uruchamianie kodu w języku Python w debugerze...
       href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
     - name: Debugowanie działającej aplikacji platformy Azure
@@ -313,7 +313,7 @@
             - name: 'Upewnij się, że system DNS jest prawidłowo skonfigurowany na komputerze docelowym'
               href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
             - name: Monitor zdalnego debugowania programu Microsoft Visual Studio (MSVSMON.EXE) prawdopodobnie nie jest uruchomiony na komputerze zdalnym.
-              href: /visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running
+              href: ./error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running.md
             - name: Nie można połączyć z monitorem zdalnego debugowania programu Microsoft Visual Studio
               href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
             - name: Nie można zainicjować komunikacji DCOM
@@ -445,7 +445,7 @@
             - name: Debugowanie zainstalowanego pakietu aplikacji
               href: debug-installed-app-package.md
             - name: Sprawdzanie właściwości XAML podczas debugowania
-              href: inspect-xaml-properties-while-debugging.md
+              href: ../xaml-tools/inspect-xaml-properties-while-debugging.md
             - name: Pisanie i debugowanie uruchomionego kodu XAML
               href: ../xaml-tools/xaml-hot-reload.md
             - name: Debugowanie XAML w Blend
@@ -505,7 +505,7 @@
                 - name: Debugowanie platformy WPF
                   href: debugging-wpf.md
                 - name: Sprawdzanie właściwości XAML podczas debugowania
-                  href: inspect-xaml-properties-while-debugging.md
+                  href: ../xaml-tools/inspect-xaml-properties-while-debugging.md
                 - name: Pisanie i debugowanie uruchomionego kodu XAML
                   href: ../xaml-tools/xaml-hot-reload.md
                 - name: Korzystanie z wizualizatora drzewa platformy WPF
