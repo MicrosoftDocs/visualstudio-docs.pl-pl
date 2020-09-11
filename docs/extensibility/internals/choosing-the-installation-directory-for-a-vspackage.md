@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8391cbdd3a857ea4ebaf3a36655520935f1a128
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ead19e9f50201ab795e3c3f68b661037d309d98d
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709758"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011908"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Wybierz katalog instalacji dla elementu pakietu VSPackage
 Pakietu VSPackage i jego pliki pomocnicze muszą znajdować się w systemie plików użytkownika. Lokalizacja zależy od tego, czy pakietu VSPackage jest zarządzany, czy niezarządzany, schemat obsługi wersji równoległej i wybór użytkownika.
@@ -59,7 +59,7 @@ Pakietu VSPackage i jego pliki pomocnicze muszą znajdować się w systemie plik
 
 Jeśli biblioteka DLL pakietu VSPackage zawiera zasoby i wskazuje na nią wpis rejestru **SatelliteDll\DllName** , program [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podejmie próbę załadowania ich w powyższej kolejności.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wybierz między udostępnionym i z wersją pakietów VSPackage](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [Zarządzanie pakietami VSPackage](../../extensibility/managing-vspackages.md)
-- [Zarządzanie rejestracją pakietów](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+- [Zarządzanie rejestracją pakietów](/previous-versions/bb166783(v=vs.100))

@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6673ad8f26c94165635b5f1bc652b91dcbbfd24f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d1a8c83ef9794479c35cd36609d77ef94621732
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709310"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012454"
 ---
 # <a name="context-parameters"></a>Parametry kontekstu
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE) można dodać kreatorów do okna dialogowego **Nowy projekt**, **Dodaj nowy element**lub **Dodaj projekt podrzędny** . Dodano kreatory dostępne w menu **plik** lub klikając prawym przyciskiem myszy projekt w **Eksplorator rozwiązań**. IDE przekazuje parametry kontekstu do implementacji kreatora. Parametry kontekstu definiują stan projektu, gdy IDE wywołuje kreatora.
@@ -58,10 +58,10 @@ W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym śr
 | `InstallationDirectory` | Ścieżka katalogu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] instalacji. |
 | `Silent` | Wartość logiczna wskazująca, czy Kreator powinien działać w trybie dyskretnym, tak **jakby zostało** kliknięte ( `TRUE` ). |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>
 - [Parametry niestandardowe](../../extensibility/internals/custom-parameters.md)
 - [Kreatory](../../extensibility/internals/wizards.md)
 - [Plik kreatora (. vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
-- [Parametry kontekstu do uruchamiania kreatorów](https://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)
+- [Parametry kontekstu do uruchamiania kreatorów](/previous-versions/tz690efs(v=vs.140))

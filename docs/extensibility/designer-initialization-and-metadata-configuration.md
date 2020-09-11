@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e876dd9e6fa95bbe180d1737bc8c4911f16e1e9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f48d8ebb285bdc8211f590f49e615042b7029d70
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712214"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011712"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inicjowanie projektanta i konfiguracja metadanych
 
@@ -97,9 +97,9 @@ Jeśli Flaga globalna została ustawiona na `false` , wówczas zmiana metadanych
 > [!NOTE]
 > Powierzchnia projektowa obsługuje tylko Tworzenie składników, a w związku z tym tylko składniki mogą mieć lokalne metadane. W powyższym przykładzie podjęto próbę zmodyfikowania właściwości, takiej jak `Color` właściwość obiektu. Jeśli `false` została przeniesiona do flagi globalnej, `CustomBrowser` nigdy nie zostanie wyświetlona, ponieważ Projektant nigdy nie tworzy wystąpienia `Color` . Ustawienie flagi globalnej na `false` jest przydatne w przypadku składników, takich jak kontrolki, czasomierze i okna dialogowe.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>
 - <xref:System.ComponentModel.ToolboxItemFilterType>
-- [Zwiększ obsługę czasu projektowania](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+- [Zwiększ obsługę czasu projektowania](/previous-versions/37899azc(v=vs.140))

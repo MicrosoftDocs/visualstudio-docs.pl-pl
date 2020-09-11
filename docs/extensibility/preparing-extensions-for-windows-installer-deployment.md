@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74cfdcaf5b9f9babe9eefed59f1ea62478434e66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0084cfc6c08db1c1d15013362a186fec175b4ee4
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906153"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012220"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Przygotuj rozszerzenia dla wdrożenia Instalator Windows
 Nie można użyć pakietu Instalator Windows (MSI) do wdrożenia pakietu VSIX. Można jednak wyodrębnić zawartość pakietu VSIX dla wdrożenia MSI. W tym dokumencie przedstawiono sposób przygotowania projektu, którego domyślne dane wyjściowe są pakietem VSIX do uwzględnienia w projekcie instalacji.
@@ -54,6 +54,6 @@ Nie można użyć pakietu Instalator Windows (MSI) do wdrożenia pakietu VSIX. M
 
 5. Dodaj pozostałe pliki do projektu Instalatora.
 
-## <a name="see-also"></a>Zobacz też
-- [Wdrożenie Instalatora programu Visual Studio](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)
+## <a name="see-also"></a>Zobacz także
+- [Wdrożenie Instalatora programu Visual Studio](/previous-versions/2kt85ked(v=vs.120))
 - [Przewodnik: Tworzenie akcji niestandardowej](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

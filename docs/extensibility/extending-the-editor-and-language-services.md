@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 239c638ec32cc0dc2b2e275a5dbe0c4213a3423e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2520eb4d1fe9480f1421016883d65c9bde9b422
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711711"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012324"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Poszerzanie edytora i usług językowych
 Funkcje usługi językowej (na przykład IntelliSense) można dodać do własnego edytora i rozłożyć większość funkcji edytora kodu programu Visual Studio.  Aby uzyskać pełną listę elementów, które można rozszerzać, zobacz [punkty rozszerzenia usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md).
@@ -36,7 +36,7 @@ Funkcje usługi językowej (na przykład IntelliSense) można dodać do własneg
 |[Punkty rozszerzenia usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)|Wyświetla listę punktów rozszerzenia edytora. Punkty rozszerzenia reprezentują funkcje edytora, które można rozszerzyć.|
 |[Przewodnik: Tworzenie zakończenia, poleceń i ustawień widoku (prowadnice kolumn)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Instruktaże i objaśniające tworzenie zakończenia tworzenia widoku, który rysuje linie prowadnic kolumn, aby pomóc w zachowaniu kodu do określonej szerokości wyświetlania.  Pokazuje również ustawienia odczytu i zapisu, a także deklarując i implementując polecenia, które można wywołać z okna poleceń.|
 |[Importy edytora](../extensibility/editor-imports.md)|Wyświetla listę usług, które mogą importować rozszerzenia.|
-|[Dostosowanie starszego kodu do edytora](/visualstudio/extensibility/adapting-legacy-code-to-the-editor?view=vs-2015)|Wyjaśnia różne sposoby adaptacji starszego kodu (wersja wstępna programu Visual Studio 2010) w celu rozbudowania edytora.|
+|[Dostosowanie starszego kodu do edytora](../vs-2015/extensibility/adapting-legacy-code-to-the-editor.md?view=vs-2015)|Wyjaśnia różne sposoby adaptacji starszego kodu (wersja wstępna programu Visual Studio 2010) w celu rozbudowania edytora.|
 |[Migrowanie starszej wersji usługi językowej](../extensibility/internals/migrating-a-legacy-language-service.md)|Wyjaśnia, w jaki sposób przeprowadzić migrację usługi językowej opartej na pakietu VSPackage.|
 |[Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Pokazuje, jak połączyć typ zawartości z rozszerzeniem nazwy pliku.|
 |[Przewodnik: Tworzenie symbolu marginesu](../extensibility/walkthrough-creating-a-margin-glyph.md)|Pokazuje, jak dodać ikonę do marginesu.|

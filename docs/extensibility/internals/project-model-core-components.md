@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f65973f0f3edc1dd6264c32d165503dca78681
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e29a9d40531b32f127054fe02f61c72738e508e
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706538"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012415"
 ---
 # <a name="project-model-core-components"></a>Podstawowe składniki modelu projektu
 Poniższe tabele rozszerzają model projektu. Tabele przedstawiają krótkie opisy interfejsów i usług identyfikowanych w modelu oraz interfejsy i usługi skojarzone z określonymi obiektami. Ponadto w tabelach szczegółowo opisano inne interfejsy, które są opcjonalne podczas tworzenia i konserwacji projektu, w zależności od wymagań określonego typu projektu.
@@ -99,9 +99,9 @@ Poniższe tabele rozszerzają model projektu. Tabele przedstawiają krótkie opi
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|Używane do implementowania modelu automatyzacji. W modelu projektu zwrócisz obiekt właściwości, który umożliwia utworzenie wystąpienia tego obiektu.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Służy do implementowania zdarzeń Schowka w obiekcie projektu w hierarchii. `SVsUIHierWinClipboardHelper` umożliwia prawidłowe obsłudze operacji wycinania, kopiowania i wklejania.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [Nie w kompilacji: używanie klas projektu HierUtil7 do implementowania typu projektu (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [Nie w kompilacji: używanie klas projektu HierUtil7 do implementowania typu projektu (C++)](/previous-versions/bb166212(v=vs.100))
 - [Obsługa narzędzi do przeglądania symboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [Elementy modelu projektu](../../extensibility/internals/elements-of-a-project-model.md)

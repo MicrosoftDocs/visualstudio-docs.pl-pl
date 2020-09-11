@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ba3664ee9ea3e349aa4e5e9c01eed04ecddb45
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8acd7d52478574e8c37474426d27bc5c6a8b7efe
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173568"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012363"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Zestaw Visual Studio SDK ułatwia poszerzanie funkcji programu Visual Studio lub integrowanie nowych funkcji w programie Visual Studio. Rozszerzenia można dystrybuować do innych użytkowników, a także do Visual Studio Marketplace. Poniżej przedstawiono kilka sposobów, w których można rozciągnąć program Visual Studio:
@@ -65,7 +65,7 @@ Zestaw Visual Studio SDK ułatwia poszerzanie funkcji programu Visual Studio lub
 ## <a name="other-visual-studio-sdk-resources"></a>Inne zasoby programu Visual Studio SDK
  Jeśli masz pytania dotyczące VSSDK lub chcesz udostępnić swoje środowiska opracowywania rozszerzeń, możesz użyć [forum rozszerzeń programu Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) lub [ExtendVS warunkom chatroom](https://gitter.im/Microsoft/extendvs).
 
- Więcej informacji można znaleźć w [blogu VSX Arcana](https://blogs.msdn.microsoft.com/vsx/) i wielu blogach pisanych przez firmę Microsoft MVP:
+ Więcej informacji można znaleźć w [blogu VSX Arcana](/archive/blogs/vsx/) i wielu blogach pisanych przez firmę Microsoft MVP:
 
 - [Ulubione rozszerzenia programu Visual Studio](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
@@ -73,11 +73,11 @@ Zestaw Visual Studio SDK ułatwia poszerzanie funkcji programu Visual Studio lub
 
 - [Rozszerzanie programu Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [Często zadawane pytania: konwertowanie dodatków na rozszerzenia pakietu VSPackage](/visualstudio/extensibility/faq-converting-add-ins-to-vspackage-extensions?view=vs-2015)
+- [Często zadawane pytania: konwertowanie dodatków na rozszerzenia pakietu VSPackage](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015)
 - [Zarządzanie wieloma wątkami w kodzie zarządzanym](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Poszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)
 - [Dodawanie poleceń do pasków narzędzi](../extensibility/adding-commands-to-toolbars.md)

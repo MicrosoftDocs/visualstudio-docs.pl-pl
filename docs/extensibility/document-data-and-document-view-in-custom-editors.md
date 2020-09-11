@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04e89194ff09bc273294246cc25718c999daf70f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 608396c79816606b855d49776390b0b1bf9044d7
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712145"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012467"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dane dokumentu i widok dokumentu w edytorach niestandardowych
 Edytor niestandardowy składa się z dwóch części: obiektu danych dokumentu i obiektu widoku dokumentu. Jak nazwy sugerują, obiekt danych dokumentu reprezentuje dane tekstowe do wyświetlenia. Analogicznie, obiekt widoku dokumentu (lub "widok") reprezentuje jedno lub więcej okien, w których ma zostać wyświetlony obiekt danych dokumentu.
@@ -34,9 +34,9 @@ Edytor niestandardowy składa się z dwóch części: obiektu danych dokumentu i
 
  IDE powiadamia widoki o zdarzeniach (na przykład gdy rozwiązanie zawierające dokument jest zamknięte) przez dopasowanie identyfikatora elementu (ItemID) dla każdego wpisu w uruchomionej tabeli dokumentów. Aby uzyskać więcej informacji na ten temat, zobacz [Uruchamianie tabeli dokumentów](../extensibility/internals/running-document-table.md).
 
- Dostępne są dwie opcje tworzenia widoku dla niestandardowego edytora. Jednym z nich jest model aktywacji w miejscu, w którym widok jest hostowany w oknie przy użyciu kontrolki ActiveX lub obiektu danych dokumentu. Drugim jest uproszczony model osadzania, w którym widok jest hostowany [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> jest zaimplementowany do obsługi poleceń okna. Aby uzyskać informacje o modelu aktywacji w miejscu, zobacz [Aktywacja w miejscu](/visualstudio/misc/in-place-activation?view=vs-2015). Aby uzyskać informacje o uproszczonym modelu osadzania, zobacz [uproszczone osadzanie](../extensibility/simplified-embedding.md).
+ Dostępne są dwie opcje tworzenia widoku dla niestandardowego edytora. Jednym z nich jest model aktywacji w miejscu, w którym widok jest hostowany w oknie przy użyciu kontrolki ActiveX lub obiektu danych dokumentu. Drugim jest uproszczony model osadzania, w którym widok jest hostowany [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> jest zaimplementowany do obsługi poleceń okna. Aby uzyskać informacje o modelu aktywacji w miejscu, zobacz [Aktywacja w miejscu](../vs-2015/misc/in-place-activation.md?view=vs-2015). Aby uzyskać informacje o uproszczonym modelu osadzania, zobacz [uproszczone osadzanie](../extensibility/simplified-embedding.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Obsługa widoków wielu dokumentów](../extensibility/supporting-multiple-document-views.md)
 - [Uproszczone osadzanie](../extensibility/simplified-embedding.md)

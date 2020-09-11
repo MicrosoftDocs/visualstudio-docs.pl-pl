@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b70e0f9091d40ed6b5fc44934606f42ccd84b21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86aacb096001bdf634fe019ae9a28f01745c3ce0
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713070"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011895"
 ---
 # <a name="sample-implementation-of-locals"></a>Przykładowa implementacja elementów lokalnych
 > [!IMPORTANT]
@@ -58,7 +58,7 @@ ms.locfileid: "80713070"
 ## <a name="related-sections"></a>Sekcje pokrewne
  [Kontekst oceny](../../extensibility/debugger/evaluation-context.md) Dostarcza argumenty, które są przesyłane, gdy wywołują ewaluatora wyrażeń.
 
- [Przykład mycee](https://msdn.microsoft.com/library/624a018b-9179-402f-9d48-3aec87b48f4f) Przedstawia jedno podejście implementacji do tworzenia ewaluatora wyrażeń dla języka MyC.
+ [Przykład mycee](/previous-versions/) Przedstawia jedno podejście implementacji do tworzenia ewaluatora wyrażeń dla języka MyC.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyświetlanie ustawień lokalnych](../../extensibility/debugger/displaying-locals.md)

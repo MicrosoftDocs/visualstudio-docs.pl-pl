@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8000c6cc067f61a64c71b8c8ac4f5c0176504cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d093ecc8afd9fe822c19c2c1f2ceb5765208865
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903382"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011999"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Dodawanie kontrolki użytkownika do strony początkowej
 
@@ -189,7 +189,7 @@ Aby udostępnić tę kontrolkę projektowi strony początkowej, w pliku projektu
 
     Powinna zostać wyświetlona niestandardowa strona startowa. Jeśli chcesz zmienić dowolne pliki, musisz zamknąć wystąpienie eksperymentalne, wprowadzić zmiany, skopiować i wkleić zmienione pliki, a następnie ponownie otworzyć doświadczalne wystąpienie, aby wyświetlić zmiany.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Formanty kontenera WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [Formanty kontenera WPF](/previous-versions/bb675291(v=vs.110))
 - [Przewodnik: Dodawanie niestandardowego kodu XAML do strony początkowej](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

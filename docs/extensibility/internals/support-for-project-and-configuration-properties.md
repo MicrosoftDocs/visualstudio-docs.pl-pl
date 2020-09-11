@@ -11,17 +11,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c21d552e26add3a5159febd666c1f60573697535
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be9d9a6e0976ab1ff336fc6754fa44d26c031378
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704899"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012025"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Pomoc techniczna dotycząca właściwości projektu i konfiguracji
 W oknie **Właściwości** w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE) można wyświetlić właściwości projektu i konfiguracji. Możesz podać stronę właściwości dla własnego typu projektu, aby użytkownik mógł ustawić właściwości aplikacji.
 
- Wybierając węzeł projektu w **Eksplorator rozwiązań** a następnie klikając pozycję **Właściwości** w menu **projekt** , można otworzyć okno dialogowe, w którym znajdują się właściwości projektu i konfiguracji. W programie [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] i typów projektów pochodnych od tych języków to okno dialogowe jest wyświetlane jako strona z kartami w [oknie dialogowym ogólne, środowisko, opcje](../../ide/reference/general-environment-options-dialog-box.md). Aby uzyskać więcej informacji, zobacz [nie w kompilacji: Przewodnik: udostępnianie właściwości projektu i konfiguracji (C#)](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).
+ Wybierając węzeł projektu w **Eksplorator rozwiązań** a następnie klikając pozycję **Właściwości** w menu **projekt** , można otworzyć okno dialogowe, w którym znajdują się właściwości projektu i konfiguracji. W programie [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] i typów projektów pochodnych od tych języków to okno dialogowe jest wyświetlane jako strona z kartami w [oknie dialogowym ogólne, środowisko, opcje](../../ide/reference/general-environment-options-dialog-box.md). Aby uzyskać więcej informacji, zobacz [nie w kompilacji: Przewodnik: udostępnianie właściwości projektu i konfiguracji (C#)](/previous-versions/bb166517(v=vs.100)).
 
  Struktura pakietów zarządzanych dla projektów (MPFProj) zapewnia klasy pomocników do tworzenia nowego systemu projektu i zarządzania nim. Kod źródłowy i instrukcje kompilacji można znaleźć pod adresem [MPF for projects — Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).
 
@@ -90,7 +90,7 @@ W oknie **Właściwości** w [!INCLUDE[vsprvs](../../code-quality/includes/vsprv
 
  `MyConfigProp`Właściwość konfiguracja jest wyświetlana na stronie właściwości konfiguracja jako **Właściwość moja konfiguracja** w kategorii. **My Category** Jeśli opcja jest zaznaczona, opis, **mój opis**, pojawia się w panelu opisu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dodawanie i usuwanie stron właściwości](../../extensibility/adding-and-removing-property-pages.md)
 - [Projekty](../../extensibility/internals/projects.md)
 - [Opis katalogu szablonu (pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

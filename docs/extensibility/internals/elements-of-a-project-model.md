@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf847e35878dc84bb32fe81053c01c23e565fc4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5cafc167eac28b7560287c6de88ee8c490196007
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708523"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011778"
 ---
 # <a name="elements-of-a-project-model"></a>Elementy modelu projektu
 Interfejsy i implementacje wszystkich projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępniają podstawową strukturę: model projektu dla typu projektu. W modelu projektu, który jest pakietu VSPackage, tworzysz obiekty, które są zgodne z decyzjami projektowymi i pracują z funkcjami globalnymi dostępnymi przez IDE. Chociaż kontrolujesz sposób utrwalania elementu projektu, na przykład nie kontrolujesz powiadomienia, że plik musi być utrwalony. Gdy użytkownik umieści fokus w otwartym elemencie projektu i wybierze pozycję **Zapisz** w menu **plik** na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pasku menu, kod typu projektu musi przechwycić polecenie z IDE, zachować plik i wysłać powiadomienie z powrotem do IDE, że plik nie jest już zmieniany.
@@ -32,7 +32,7 @@ Interfejsy i implementacje wszystkich projektów w [!INCLUDE[vsprvs](../../code-
 
 - Każdy projekt musi mieć plik lub Kreator szablonu, aby zainicjować nowy plik projektu, gdy użytkownik tworzy nowy projekt za pomocą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika. Na przykład [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Szablony inicjują, co ostatecznie staną się plikami VCPROJ.
 
-  Na poniższej ilustracji przedstawiono podstawowe interfejsy, usługi i obiekty tworzące typową implementację projektu. Możesz użyć pomocnika aplikacji, `HierUtil7` Aby utworzyć obiekty bazowe i inne typowe programowanie. Aby uzyskać więcej informacji na temat `HierUtil7` pomocnika aplikacji, zobacz [Korzystanie z klas projektów HierUtil7 do implementowania typu projektu (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).
+  Na poniższej ilustracji przedstawiono podstawowe interfejsy, usługi i obiekty tworzące typową implementację projektu. Możesz użyć pomocnika aplikacji, `HierUtil7` Aby utworzyć obiekty bazowe i inne typowe programowanie. Aby uzyskać więcej informacji na temat `HierUtil7` pomocnika aplikacji, zobacz [Korzystanie z klas projektów HierUtil7 do implementowania typu projektu (C++)](/previous-versions/bb166212(v=vs.100)).
 
   ![Grafika modelu projektu programu Visual Studio](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel") Model projektu
 
@@ -40,9 +40,9 @@ Interfejsy i implementacje wszystkich projektów w [!INCLUDE[vsprvs](../../code-
 
   Projekty mogą obsługiwać polecenia i w związku z tym muszą implementować <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs, aby uczestniczyć w kierowaniu poleceń przez identyfikatory GUID kontekstu poleceń.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Lista kontrolna: tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [Korzystanie z klas projektów HierUtil7 do implementowania typu projektu (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [Korzystanie z klas projektów HierUtil7 do implementowania typu projektu (C++)](/previous-versions/bb166212(v=vs.100))
 - [Podstawowe składniki modelu projektu](../../extensibility/internals/project-model-core-components.md)
 - [Tworzenie wystąpień projektu przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
 - [Instrukcje: Uzyskiwanie usługi](../../extensibility/how-to-get-a-service.md)

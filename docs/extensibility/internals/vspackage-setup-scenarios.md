@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01279666642adb729d4350b8a497c42d78159120
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2095087451ded8858382323aabc4048582a6db43
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703971"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012116"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scenariusze instalacji pakietu VSPackage
 
@@ -74,9 +74,9 @@ W takim przypadku pakietu VSPackage jest zarządzanym pakietu vspackagem zainsta
 
 ![Instalator aktualizacji pakietu programu vs Side-by-Side](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Aby uzyskać więcej informacji na temat wdrażania zestawów równoległych, zobacz [uproszczenie wdrażania i rozwiązywanie problemów z biblioteką DLL Hell przy użyciu .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
+Aby uzyskać więcej informacji na temat wdrażania zestawów równoległych, zobacz [uproszczenie wdrażania i rozwiązywanie problemów z biblioteką DLL Hell przy użyciu .NET Framework](/previous-versions/dotnet/articles/ms973843(v=msdn.10)).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instalator Windows](/windows/desktop/Msi/windows-installer-portal)
 - [Obsługiwanie wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

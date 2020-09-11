@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b3a04c925ef897171de51c73c90973a12c3b17d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d872003b319773401ef4da72c1fac8dc177ecbdb
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739972"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011791"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Zmiany w rozszerzalności programu Visual Studio 2017
 
@@ -97,7 +97,7 @@ Większość zestawów podstawowych programu Visual Studio nie jest już zainsta
 
 ### <a name="global-com-registration"></a>Globalna Rejestracja modelu COM
 
-* Wcześniej program Visual Studio zainstalował wiele kluczy rejestru w HKEY_CLASSES_ROOT i HKEY_LOCAL_MACHINE Hive w celu obsługi rejestracji natywnego modelu COM. Aby wyeliminować ten wpływ, program Visual Studio używa teraz [aktywacji bezpłatnej do rejestracji składników modelu COM](https://msdn.microsoft.com/library/ms973913.aspx).
+* Wcześniej program Visual Studio zainstalował wiele kluczy rejestru w HKEY_CLASSES_ROOT i HKEY_LOCAL_MACHINE Hive w celu obsługi rejestracji natywnego modelu COM. Aby wyeliminować ten wpływ, program Visual Studio używa teraz [aktywacji bezpłatnej do rejestracji składników modelu COM](/previous-versions/dotnet/articles/ms973913(v=msdn.10)).
 * W związku z tym większość plików TLB/OLB/DLL w folderze% ProgramFiles (x86)% \ Common Files\Microsoft Shared\MSEnv nie jest już instalowana domyślnie przez program Visual Studio. Te pliki są teraz zainstalowane w obszarze [INSTALLDIR] z odpowiednimi manifestami COM bez rejestracji używanymi przez proces hosta programu Visual Studio.
 * W rezultacie kod zewnętrzny, który opiera się na globalnej rejestracji modelu COM dla interfejsów COM programu Visual Studio, nie będzie już znajdować tych rejestracji. Kod uruchomiony w procesie programu Visual Studio nie będzie widział różnic.
 

@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44da532207668d9526aec0ccdcab027b94184e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7634802899d72eb6abcb0aa837b8fb6a532b966
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706386"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012064"
 ---
 # <a name="project-type-essentials"></a>Podstawowe informacje o typach projektów
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zawiera kilka typów projektów dla języków takich jak [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pozwala również tworzyć własne typy projektów.
@@ -52,7 +52,7 @@ ms.locfileid: "80706386"
 
 - Typy projektów to obiekty w pakietu VSPackage, które implementują zestaw interfejsów [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Jeśli używasz języka C# do tworzenia typu projektu, klasy projektu struktury pakietów zarządzanych implementują niezbędne interfejsy i umożliwiają dziedziczenie tej implementacji. Aby uzyskać więcej informacji, zobacz [Używanie struktury pakietu zarządzanego do implementowania typu projektu (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).
 
-- W przypadku deweloperów języka C++ klasy w bibliotece HierUtil działają w podobny sposób. Aby uzyskać więcej informacji, zobacz [nie w kompilacji: używanie klas projektu HierUtil7 do implementowania typu projektu (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).
+- W przypadku deweloperów języka C++ klasy w bibliotece HierUtil działają w podobny sposób. Aby uzyskać więcej informacji, zobacz [nie w kompilacji: używanie klas projektu HierUtil7 do implementowania typu projektu (C++)](/previous-versions/bb166212(v=vs.100)).
 
 - Typy projektów mogą obsługiwać dane inne niż typowe pliki kodu źródłowego, które kompilują do zestawu. exe lub. dll. Na przykład [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projekty bazy danych zawierają odwołania do plików skryptów i zapytań przechowywanych na dysku i Dodaj polecenia do **Eksplorator rozwiązań** , aby wykonać skrypty i zapytania względem bazy danych, ale projekty nie obsługują zachowania kompilacji. Aby uzyskać więcej informacji, zobacz [otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md).
 
@@ -64,5 +64,5 @@ ms.locfileid: "80706386"
 
 - Typy projektów mogą obsługiwać wiele konfiguracji, takich jak debugowanie i wydanie. Użytkownicy mogą zmieniać różne konfiguracje projektu przy użyciu stron właściwości, które dostarczasz. Aby uzyskać więcej informacji, zobacz [Zarządzanie opcjami konfiguracji](../../extensibility/internals/managing-configuration-options.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wdrażanie typów projektów](../../extensibility/internals/deploying-project-types.md)

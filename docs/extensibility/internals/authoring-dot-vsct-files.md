@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f02c7ec0e453f0758ba2ab13145fcdff11b442a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4a3dba370594397d2f247de90063f69c4195cb6
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173606"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012155"
 ---
 # <a name="author-vsct-files"></a>Author. vsct — pliki
 W tym dokumencie przedstawiono sposób tworzenia pliku *. vsct* w celu dodania elementów menu, pasków narzędzi i innych elementów interfejsu użytkownika do zintegrowanego środowiska programistycznego (IDE) programu Visual Studio. Poniższe kroki umożliwiają dodanie elementów interfejsu użytkownika do pakietu programu Visual Studio (pakietu VSPackage), który nie ma jeszcze pliku *. vsct* .
@@ -108,7 +108,7 @@ W tym dokumencie przedstawiono sposób tworzenia pliku *. vsct* w celu dodania e
        > [!NOTE]
        > Przyciski paska narzędzi muszą mieć ikony.
 
-   Aby uzyskać więcej informacji, zobacz [MenuCommands vs. OleMenuCommands](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015).
+   Aby uzyskać więcej informacji, zobacz [MenuCommands vs. OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
 
 4. Jeśli którekolwiek z poleceń wymagają ikon, Dodaj element [bitmaps](../../extensibility/bitmaps-element.md) do `Commands` elementu. Następnie dla każdej ikony Dodaj element [bitmapy](../../extensibility/bitmap-element.md) do `Bitmaps` elementu. Jest to miejsce, w którym można określić lokalizację zasobu mapy bitowej. Aby uzyskać więcej informacji, zobacz [Dodawanie ikon do poleceń menu](../../extensibility/adding-icons-to-menu-commands.md).
 
@@ -233,7 +233,7 @@ W tym dokumencie przedstawiono sposób tworzenia pliku *. vsct* w celu dodania e
 
    - Kontroler menu: kontroler menu jest przyciskiem, który ma strzałkę obok niej. Kliknięcie strzałki spowoduje otwarcie listy. Aby dodać kontroler menu do interfejsu użytkownika, Utwórz `Menu` element i ustaw jego `type` atrybut na lub, w zależności od żądanego `MenuController` `MenuControllerLatched` zachowania. Aby wypełnić kontroler menu, ustaw go jako element nadrzędny `Group` elementu. Kontroler menu będzie wyświetlał wszystkie elementy podrzędne tej grupy na liście rozwijanej.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Poszerzanie menu i poleceń](../../extensibility/extending-menus-and-commands.md)
 - [Pliki tabeli poleceń programu Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Dokumentacja schematu XML VSCT](../../extensibility/vsct-xml-schema-reference.md)

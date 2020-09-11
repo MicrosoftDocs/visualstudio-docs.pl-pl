@@ -8,16 +8,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6894bcfe3bfab3b0246d716b0bd85152ad17e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83e3b07bc3373070953709ffe913f37529e74bc7
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81744937"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012311"
 ---
 # <a name="manage-universal-windows-projects"></a>Zarządzanie projektami uniwersalnymi systemu Windows
 
-Aplikacje uniwersalne systemu Windows to aplikacje przeznaczone zarówno dla Windows 8.1, jak i Windows Phone 8,1, dzięki czemu deweloperzy mogą korzystać z kodu i innych zasobów na obu platformach. Udostępniony kod i zasoby są przechowywane w projekcie udostępnionym, podczas gdy kod i zasoby specyficzne dla platformy są przechowywane w oddzielnych projektach, jeden dla systemu Windows, a drugi dla Windows Phone. Aby uzyskać więcej informacji na temat uniwersalnych aplikacji systemu Windows, zobacz [aplikacje uniwersalne systemu Windows](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Rozszerzenia programu Visual Studio, które zarządzają projektami, powinny mieć świadomość, że projekty aplikacji uniwersalnych systemu Windows mają strukturę, która różni się od aplikacji jednoplatformowych. W tym instruktażu pokazano, jak nawigować po projekcie udostępnionym i zarządzać elementami udostępnionymi.
+Aplikacje uniwersalne systemu Windows to aplikacje przeznaczone zarówno dla Windows 8.1, jak i Windows Phone 8,1, dzięki czemu deweloperzy mogą korzystać z kodu i innych zasobów na obu platformach. Udostępniony kod i zasoby są przechowywane w projekcie udostępnionym, podczas gdy kod i zasoby specyficzne dla platformy są przechowywane w oddzielnych projektach, jeden dla systemu Windows, a drugi dla Windows Phone. Aby uzyskać więcej informacji na temat uniwersalnych aplikacji systemu Windows, zobacz [aplikacje uniwersalne systemu Windows](/windows/uwp/get-started/create-uwp-apps). Rozszerzenia programu Visual Studio, które zarządzają projektami, powinny mieć świadomość, że projekty aplikacji uniwersalnych systemu Windows mają strukturę, która różni się od aplikacji jednoplatformowych. W tym instruktażu pokazano, jak nawigować po projekcie udostępnionym i zarządzać elementami udostępnionymi.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 

@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9372762f713b6a5ec78a92eeb96e8a616101b5bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f166e0b3280783dac891b3b582acd7822a3974c0
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183395"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011921"
 ---
 # <a name="checklist-create-new-project-types"></a>Lista kontrolna: tworzenie nowych typów projektów
 Aby utworzyć nowy typ projektu, należy wykonać kilka zadań. Poniższa lista kontrolna zawiera Przewodnik po tych zadaniach:
@@ -33,7 +33,7 @@ Aby utworzyć nowy typ projektu, należy wykonać kilka zadań. Poniższa lista 
 
     - Fabryka projektów do zarządzania tworzeniem nowych projektów i otwierania istniejących projektów. Aby uzyskać więcej informacji, zobacz [Tworzenie wystąpień projektu przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).
 
-    - Obsługa poleceń i hierarchii projektu. Aby uzyskać więcej informacji, zobacz [Korzystanie z klas projektów HierUtil7 do implementowania typu projektu (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346), [elementów modelu projektu](../../extensibility/internals/elements-of-a-project-model.md), [składników podstawowych modelu projektu](../../extensibility/internals/project-model-core-components.md)i [MenuCommands a OleMenuCommands](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015).
+    - Obsługa poleceń i hierarchii projektu. Aby uzyskać więcej informacji, zobacz [Korzystanie z klas projektów HierUtil7 do implementowania typu projektu (C++)](/previous-versions/bb166212(v=vs.100)), [elementów modelu projektu](../../extensibility/internals/elements-of-a-project-model.md), [składników podstawowych modelu projektu](../../extensibility/internals/project-model-core-components.md)i [MenuCommands a OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
 
     - Zarządzanie elementami projektu, w tym dodawanie projektu do okna dialogowego **Nowy projekt** . Aby uzyskać więcej informacji, zobacz [Dodawanie szablonów projektu i elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md) oraz [Rejestrowanie szablonów projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md).
 
@@ -57,7 +57,7 @@ Aby utworzyć nowy typ projektu, należy wykonać kilka zadań. Poniższa lista 
 
 8. Utwórz plik Instalatora Microsoft (*MSI*) na potrzeby instalacji pakietów VSPackage. Aby uzyskać więcej informacji, zobacz [Install pakietów VSPackage with Instalator Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [register the Project Type](../../extensibility/internals/registering-a-project-type.md)and [pakietów VSPackage](../../extensibility/internals/vspackages.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Hierarchie w programie Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [Kiedy tworzyć typy projektów](../../extensibility/internals/when-to-create-project-types.md)
 - [Tworzenie typów projektów](../../extensibility/internals/creating-project-types.md)

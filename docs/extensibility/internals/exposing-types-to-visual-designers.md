@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9067f88b4bf1334e23a548bc6a2cbeb3eac6ad33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48aa8a729b5cc38d3cee08a7f5ec143d5e84931a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708440"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012533"
 ---
 # <a name="expose-types-to-visual-designers"></a>Uwidacznianie typów projektantom wizualizacji
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Aby można było wyświetlić projektanta wizualnego, musi mieć dostęp do definicji klas i typów w czasie projektowania. Klasy są ładowane ze wstępnie zdefiniowanego zestawu zestawów, który obejmuje kompletny zestaw zależności bieżącego projektu (odwołania i ich zależności). Może być również konieczne, aby projektanci wizualizacji mogli uzyskiwać dostęp do klas i typów, które są zdefiniowane w plikach generowanych przez narzędzia niestandardowe.
@@ -43,7 +43,7 @@ ms.locfileid: "80708440"
 
      Po skompilowaniu tymczasowego środowiska PE jedynym plikiem źródłowym dostarczonym do kompilatora jest dane wyjściowe niestandardowego narzędzia. W związku z tym narzędzie niestandardowe, które używa tymczasowego środowiska PE, musi generować pliki wyjściowe, które mogą być kompilowane niezależnie od innych plików w projekcie.
 
-## <a name="see-also"></a>Zobacz też
-- [Wprowadzenie do obiektu BuildManager](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+## <a name="see-also"></a>Zobacz także
+- [Wprowadzenie do obiektu BuildManager](/previous-versions/8f9kffa8(v=vs.140))
 - [Implementowanie generatorów pojedynczego pliku](../../extensibility/internals/implementing-single-file-generators.md)
 - [Rejestrowanie generatorów pojedynczych plików](../../extensibility/internals/registering-single-file-generators.md)

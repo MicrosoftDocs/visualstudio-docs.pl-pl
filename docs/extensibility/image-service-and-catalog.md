@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7df93a801b5ec34a433849baa41f2fd255790c86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26d8a3c4f3458c3659ccdd3a4cde802293342e5c
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536334"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011960"
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i wykaz
 Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania usługi obrazów programu Visual Studio i katalogu obrazów wprowadzonego w programie Visual Studio 2015.
@@ -103,10 +103,10 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 
 |**Podelementu**|**Definicja**|
 |-|-|
-|Importuj|Importuje symbole danego pliku manifestu do użycia w bieżącym manifeście|
+|Import|Importuje symbole danego pliku manifestu do użycia w bieżącym manifeście|
 |Guid (identyfikator GUID)|Symbol reprezentuje identyfikator GUID i musi pasować do formatowania identyfikatora GUID|
-|ID|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą|
-|String|Symbol reprezentuje arbitralną wartość ciągu|
+|ID (Identyfikator)|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą|
+|Ciąg|Symbol reprezentuje arbitralną wartość ciągu|
 
  W symbolach jest rozróżniana wielkość liter i istnieje odwołanie do niej przy użyciu składni $ (symbol-nazwa):
 
@@ -144,7 +144,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 |**Atrybut**|**Definicja**|
 |-|-|
 |Guid (identyfikator GUID)|Potrzeb Część identyfikatora GUID obrazu monikera|
-|ID|Potrzeb Część identyfikatora monikera obrazu|
+|ID (Identyfikator)|Potrzeb Część identyfikatora monikera obrazu|
 |AllowColorInversion|[Opcjonalne, wartość domyślna true] Wskazuje, czy obraz może być programowo odwrócony, gdy jest używany na ciemnym tle.|
 
  **Element źródłowy**
@@ -160,11 +160,11 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 |**Atrybut**|**Definicja**|
 |-|-|
 |Adresu|Potrzeb Identyfikator URI, który definiuje miejsce, z którego można załadować obraz. Może być jedną z następujących czynności:<br /><br /> - [Identyfikator URI pakietu](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) przy użyciu urzędu Application:///<br />-Bezwzględne odwołanie do zasobu składnika<br />-Ścieżka do pliku zawierającego zasób natywny|
-|Tło|Obowiązkowe Wskazuje, jaki rodzaj tła ma być używany.<br /><br /> Może być jedną z następujących czynności:<br /><br /> *Jasne:* Źródło może być używane na jasnym tle.<br /><br /> *Ciemny:* Źródło może być używane w ciemnym tle.<br /><br /> *HighContrast:* Źródło może być używane na dowolnym tle w trybie duży kontrast.<br /><br /> *HighContrastLight:* Źródło może być używane na jasnym tle w trybie duży kontrast.<br /><br /> *HighContrastDark:* Źródło może być używane na ciemnym tle w trybie duży kontrast.<br /><br /> Jeśli atrybut Background zostanie pominięty, źródło może być używane w dowolnym tle.<br /><br /> Jeśli tło jest *jasne*, *ciemne*, *HighContrastLight*lub *HighContrastDark*, kolory źródła nigdy nie są odwracane. Jeśli tło zostanie pominięte lub ustawiona na *HighContrast*, inwersja kolorów źródła jest kontrolowana przez atrybut **AllowColorInversion** obrazu.|
+|Informacje dodatkowe|Obowiązkowe Wskazuje, jaki rodzaj tła ma być używany.<br /><br /> Może być jedną z następujących czynności:<br /><br /> *Jasne:* Źródło może być używane na jasnym tle.<br /><br /> *Ciemny:* Źródło może być używane w ciemnym tle.<br /><br /> *HighContrast:* Źródło może być używane na dowolnym tle w trybie duży kontrast.<br /><br /> *HighContrastLight:* Źródło może być używane na jasnym tle w trybie duży kontrast.<br /><br /> *HighContrastDark:* Źródło może być używane na ciemnym tle w trybie duży kontrast.<br /><br /> Jeśli atrybut Background zostanie pominięty, źródło może być używane w dowolnym tle.<br /><br /> Jeśli tło jest *jasne*, *ciemne*, *HighContrastLight*lub *HighContrastDark*, kolory źródła nigdy nie są odwracane. Jeśli tło zostanie pominięte lub ustawiona na *HighContrast*, inwersja kolorów źródła jest kontrolowana przez atrybut **AllowColorInversion** obrazu.|
 
 \<Source>Element może mieć dokładnie jeden z następujących opcjonalnych podelementów:
 
-|**Element**|**Atrybuty (wszystkie wymagane)**|**Definicja**|
+|**Postaci**|**Atrybuty (wszystkie wymagane)**|**Definicja**|
 |-|-|-|
 |\<Size>|Wartość|Źródło będzie używane dla obrazów o danym rozmiarze (w jednostkach urządzeń). Obraz będzie kwadratowy.|
 |\<SizeRange>|MinSize, brak|Źródło będzie używane dla obrazów z MinSize do rozmiaru całkowitego (w jednostkach urządzeń) włącznie. Obraz będzie kwadratowy.|
@@ -180,7 +180,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 |**Atrybut**|**Definicja**|
 |-|-|
 |Typ|Potrzeb Typ zasobu natywnego, XAML lub PNG|
-|ID|Potrzeb Część identyfikatora całkowitego zasobu natywnego|
+|ID (Identyfikator)|Potrzeb Część identyfikatora całkowitego zasobu natywnego|
 
  **Obrazów**
 
@@ -196,7 +196,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 |**Atrybut**|**Definicja**|
 |-|-|
 |Guid (identyfikator GUID)|Potrzeb Część identyfikatora GUID obrazu monikera|
-|ID|Potrzeb Część identyfikatora monikera obrazu|
+|ID (Identyfikator)|Potrzeb Część identyfikatora monikera obrazu|
 |Zewnętrzna|[Opcjonalne, wartość domyślna to false] Wskazuje, czy moniker obrazu odwołuje się do obrazu w bieżącym manifeście.|
 
  Moniker zawartego obrazu nie musi odwoływać się do obrazu zdefiniowanego w bieżącym manifeście. Jeśli w bibliotece obrazów nie można znaleźć zawartego obrazu, w jego miejscu zostanie użyty pusty obraz zastępczy.
@@ -712,9 +712,9 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Zaktualizuj swój kod, aby użyć usługi Image Service do żądania monikery za pośrednictwem zaktualizowanego mapowania. (Może to oznaczać, że aktualizacja **CrispImages** dla kodu zarządzanego lub żądanie HBITMAPs lub HICONs z usługi obrazów i przekazanie ich na kod natywny).
 
 ## <a name="testing-your-images"></a>Testowanie obrazów
- Możesz użyć narzędzia Podgląd biblioteki obrazów do testowania manifestów obrazów, aby upewnić się, że wszystko jest poprawnie utworzone. Narzędzie można znaleźć w [zestawie SDK programu Visual Studio 2015](visual-studio-sdk.md). Dokumentacja tego narzędzia i innych można znaleźć [tutaj](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015).
+ Możesz użyć narzędzia Podgląd biblioteki obrazów do testowania manifestów obrazów, aby upewnić się, że wszystko jest poprawnie utworzone. Narzędzie można znaleźć w [zestawie SDK programu Visual Studio 2015](visual-studio-sdk.md). Dokumentacja tego narzędzia i innych można znaleźć [tutaj](./internals/vssdk-utilities.md?view=vs-2015).
 
-## <a name="additional-resources"></a>Zasoby dodatkowe
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 ### <a name="samples"></a>Samples
  Niektóre przykłady programu Visual Studio w witrynie GitHub zostały zaktualizowane, aby pokazać, jak korzystać z usługi Image Service jako części różnych punktów rozszerzalności programu Visual Studio.
@@ -736,7 +736,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  Narzędzie do przeglądania bibliotek obrazów może ładować manifesty obrazów i umożliwia użytkownikowi manipulowanie nimi w taki sam sposób, w jaki program Visual Studio może upewnić się, że manifest został poprawnie utworzony. Użytkownik może zmienić ustawienia tła, rozmiarów, ustawienia DPI, duży kontrast i innych ustawień. Wyświetla również informacje o ładowaniu, aby znaleźć błędy w manifestach i wyświetlić informacje źródłowe dla każdego obrazu w manifeście.
 
-## <a name="faq"></a>Najczęściej zadawane pytania
+## <a name="faq"></a>Często zadawane pytania
 
 - Czy istnieją zależności, które należy uwzględnić podczas ładowania \<Reference Include="Microsoft.VisualStudio.*.Interop.14.0.DesignTime" /> ?
 
@@ -1009,7 +1009,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|
     |GlyphGroupError||StatusError|
     |GlyphBscFile||ClassFile|
-    |GlyphAssembly||Tematy pomocy|
+    |GlyphAssembly||Dokumentacja|
     |GlyphLibrary||Biblioteka|
     |GlyphVBProject||VBProjectNode|
     |GlyphCoolProject||CSProjectNode|

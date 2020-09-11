@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6296c8451684a121ac42dbde6619c0ebbb421908
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4f6214aa67040a4eb7a4b781cf1612762c87b2e
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699338"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012428"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Kolorowanie składni w edytorach niestandardowych
 Edytory SDK środowiska programu Visual Studio, w tym podstawowy edytor, wykorzystują usługi językowe do identyfikowania określonych elementów składniowych i wyświetlania ich z określonymi kolorami dla danego widoku dokumentu.
@@ -52,9 +52,9 @@ Edytory SDK środowiska programu Visual Studio, w tym podstawowy edytor, wykorzy
 3. Użyj informacji o kolorach zwróconych przez program, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Aby odświeżyć i wyświetlić jego tekst.
 
 > [!NOTE]
-> Oprócz używania Kolorka usługi językowej pakietu VSPackage może zdecydować się na użycie mechanizmu kolorowania tekstu zestawu SDK środowiska programu Visual Studio ogólnego przeznaczenia. Aby uzyskać więcej informacji na temat tego mechanizmu, zobacz [using Fonts and Colors](/visualstudio/extensibility/using-fonts-and-colors?view=vs-2015).
+> Oprócz używania Kolorka usługi językowej pakietu VSPackage może zdecydować się na użycie mechanizmu kolorowania tekstu zestawu SDK środowiska programu Visual Studio ogólnego przeznaczenia. Aby uzyskać więcej informacji na temat tego mechanizmu, zobacz [using Fonts and Colors](../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Kolorowanie składni w starszej wersji usługi językowej](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [Implementowanie kolorowania składni](../extensibility/internals/implementing-syntax-coloring.md)

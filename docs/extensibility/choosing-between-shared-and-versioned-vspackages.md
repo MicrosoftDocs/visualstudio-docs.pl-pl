@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21fefb776fceeeef4db6997a5bd12a8b987af7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96386c2d3b7d1e822fdd1dd6632d754740f86301
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739885"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011934"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Wybierz między udostępnionym i z wersją pakietów VSPackage
 Różne wersje programu Visual Studio mogą współistnieć na tym samym komputerze. Pakietów VSPackage może obsługiwać dowolne różne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wersje.
@@ -35,7 +35,7 @@ Różne wersje programu Visual Studio mogą współistnieć na tym samym kompute
 
   - Program pakietu VSPackage może dostosowywać do wersji, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] w której jest uruchomiona. Następnie, jeśli zapytania dotyczące nowszych usług zakończą się niepowodzeniem, pakietu VSPackage może oferować inne usługi, które są obsługiwane we wcześniejszych wersjach programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-- Odpowiednio Zarejestruj pakietu VSPackage. Aby uzyskać więcej informacji, zobacz Rejestrowanie [pakietu VSPackage](../extensibility/internals/vspackage-registration.md) i [zarządzana Rejestracja pakietu VSPackage](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).
+- Odpowiednio Zarejestruj pakietu VSPackage. Aby uzyskać więcej informacji, zobacz Rejestrowanie [pakietu VSPackage](../extensibility/internals/vspackage-registration.md) i [zarządzana Rejestracja pakietu VSPackage](/previous-versions/bb166783(v=vs.100)).
 
 - Odpowiednio Zarejestruj rozszerzenia plików. Aby uzyskać więcej informacji, zobacz [Rejestrowanie rozszerzeń nazw plików dla wdrożeń równoległych](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
 
@@ -61,6 +61,6 @@ Różne wersje programu Visual Studio mogą współistnieć na tym samym kompute
 
   Oprócz planowania zgodności binarnej plików binarnych pakietu VSPackage należy również rozważyć formaty plików rozwiązania i projektu. Jeśli pakietu VSPackage tworzy nowy typ projektu, należy zdecydować, czy może być uruchamiany tylko w jednej wersji, czy w wielu wersjach programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Aby uzyskać więcej informacji, zobacz [uaktualnianie projektów niestandardowych](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instalowanie pakietów VSPackage z Instalator Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md)
 - [Zarządzanie składnikami](../extensibility/internals/component-management.md)
