@@ -1,34 +1,34 @@
 ---
-title: Skonfiguruj zakres analizy kodu na żywo dla kodu zarządzanego
-ms.date: 03/23/2018
+title: Konfigurowanie zakresu analizy kodu na żywo dla platformy .NET
+ms.date: 09/01/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
 - background analysis
 - analysis scope
 - full solution analysis
-author: Mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57ff963de193360712e92b76f3cafd7a75ee6b89
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249186"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035420"
 ---
-# <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>Instrukcje: Konfigurowanie zakresu analizy kodu na żywo dla kodu zarządzanego
+# <a name="configure-live-code-analysis-for-net"></a>Konfigurowanie analizy kodu na żywo dla platformy .NET
 
-## <a name="what-is-live-code-analysis-for-managed-code"></a>Co to jest "Analiza kodu na żywo" dla kodu zarządzanego?
 Program Visual Studio wykonuje wiele analiz kodu na żywo, nazywanych również *analizą w tle*, podczas edytowania plików źródłowych w edytorze. Niektóre z nich są wymagane do minimalnej analizy dla akceptowalnego środowiska edytowania środowiska IDE programu Visual Studio. Niektóre z nich mają na celu zwiększenie czasu odpowiedzi dla funkcji środowiska IDE. Niektóre z nich umożliwiają włączenie dodatkowych funkcji środowiska IDE, takich jak diagnostyka i poprawki kodu z analizatorów Roslyn. W oparciu o funkcje te analizy można grupować w następujący sposób:
 
 - **Obliczanie danych diagnostycznych w tle**: Analiza błędów, ostrzeżeń i sugestii w plikach źródłowych. Te diagnostyki są wyświetlane jako wpisy na liście błędów i w edytorze. Mogą być klasyfikowane do dwóch kategorii:
   - Diagnostyka kompilatora C# i Visual Basic
   - Diagnostyka analizatora Roslyn, która obejmuje:
 
-    - Wbudowane analizatory środowiska IDE do sugestii w stylu kodu i
+    - Wbudowane analizatory środowiska IDE na potrzeby sugestii dotyczących stylu kodu
+    - Wbudowane analizatory urzędów certyfikacji dla sugestii dotyczących jakości kodu
     - Pakiety analizatora innych firm [zainstalowane](./install-roslyn-analyzers.md) dla projektów w bieżącym rozwiązaniu.
 
 - **Inne analizy w tle**: Analiza w celu poprawy czasu reakcji i interakcji z programu Visual Studio na potrzeby funkcji środowiska IDE. Przykłady takich analiz są następujące:
@@ -74,7 +74,7 @@ Jeśli program Visual Studio wykryje, że dostępna jest 200 MB lub mniej pamię
 
 ![Zakres analizy minimalizowania tekstu alertu](./media/fsa_alert.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Automatyczne wstrzymanie funkcji](./automatic-feature-suspension.md)
 - [Żądanie funkcji trybu oszczędzania w trybie oszczędzania](https://github.com/dotnet/roslyn/issues/38429)

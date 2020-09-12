@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: deef5aeaa802d5f5b46ba81f711173dc81a32357
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60b3d471191f58a5eb612d9942b72c9d5e90e8af
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800310"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036421"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publish a Web app to Azure App Service using Visual Studio (Publikowanie aplikacji internetowej w usłudze Azure App Service przy użyciu programu Visual Studio)
 
@@ -23,7 +23,7 @@ W przypadku aplikacji ASP.NET, ASP.NET Core, Node.js i .NET Core można publikow
 
 * Aby ciągłe (lub zautomatyzowane) wdrażanie aplikacji, użyj platformy Azure DevOps z [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
-* W przypadku wdrożenia aplikacji jednorazowego (lub ręcznego) Użyj narzędzia do **publikowania** w programie Visual Studio, aby wdrożyć aplikacje ASP.NET, ASP.NET Core, Node.js i .NET Core do Azure App Service lub App Service dla systemu Linux (przy użyciu kontenerów). W przypadku aplikacji języka Python postępuj zgodnie z instrukcjami w sekcji [Python-Publish, aby Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+* W przypadku wdrożenia aplikacji jednorazowego (lub ręcznego) Użyj narzędzia do **publikowania** w programie Visual Studio, aby wdrożyć aplikacje ASP.NET, ASP.NET Core, Node.js i .NET Core do Azure App Service lub [App Service dla systemu Linux](../deployment/quickstart-deploy-to-linux.md) (przy użyciu kontenerów). W przypadku aplikacji języka Python postępuj zgodnie z instrukcjami w sekcji [Python-Publish, aby Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na potrzeby wdrożenia jednorazowego.
 
@@ -35,7 +35,9 @@ W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na p
 
     ![Polecenie Publikuj w menu kontekstowym projektu w Eksplorator rozwiązań](../deployment/media/quickstart-publish.png "Wybierz pozycję Publikuj")
 
-1. W oknie dialogowym **Publikowanie** wybierz pozycję **Azure**.
+1. Jeśli wszystkie profile publikowania zostały wcześniej skonfigurowane, zostanie wyświetlone okno **Publikowanie** . Wybierz pozycję **Nowy**.
+
+1. W oknie **Publikowanie** wybierz pozycję **Azure**.
 
     ![Wybieranie elementu docelowego publikowania](../deployment/media/quickstart-publish-azure-new.png)
 
@@ -55,7 +57,7 @@ W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na p
 
     ![Wybierz Azure App Service](../deployment/media/quickstart-publish-windows-select-instance.png)
 
-1. Wybierz pozycję **Opublikuj**. Program Visual Studio wdraża aplikację w Azure App Service, a aplikacja sieci Web ładuje się w przeglądarce. W okienku **Publikowanie** właściwości projektu wyświetlany jest adres URL witryny i inne szczegóły.
+1. Kliknij pozycję **Opublikuj**. Program Visual Studio wdraża aplikację w Azure App Service, a aplikacja sieci Web ładuje się w przeglądarce. W okienku **Publikowanie** właściwości projektu wyświetlany jest adres URL witryny i inne szczegóły.
 
     ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-windows-summary-page.png)
 

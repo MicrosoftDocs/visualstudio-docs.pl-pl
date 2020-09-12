@@ -1,5 +1,6 @@
 ---
 title: Zmień zwracany typ metody DataContext
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b40851323efdf3c2cbf0900ae323f3c9c0a1ec17
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: da1dc0437ccd4a7fad2a24b40542a58d8310bf17
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89737036"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036668"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Instrukcje: zmienianie zwracanego typu metody DataContext (O/R Designer)
 Zwracany typ <xref:System.Data.Linq.DataContext> metody (utworzony w oparciu o procedurę składowaną lub funkcję) różni się w zależności od tego, gdzie porzucasz procedurę składowaną lub funkcję w **Projektancie O/R**. W przypadku porzucenia elementu bezpośrednio do istniejącej klasy jednostki <xref:System.Data.Linq.DataContext> zostanie utworzona Metoda, która ma zwracany typ klasy jednostki (Jeśli schemat danych zwróconych przez procedurę składowaną lub funkcję dopasowuje kształt klasy jednostki). Jeśli powrócisz element do pustego obszaru **projektanta o/R**, <xref:System.Data.Linq.DataContext> zostanie utworzona Metoda zwracająca automatycznie wygenerowany typ. Można zmienić zwracany typ <xref:System.Data.Linq.DataContext> metody po dodaniu jej do okienka metod. Aby sprawdzić lub zmienić zwracany typ <xref:System.Data.Linq.DataContext> metody, zaznacz ją i kliknij właściwość **Typ zwracany** w oknie **Właściwości** .

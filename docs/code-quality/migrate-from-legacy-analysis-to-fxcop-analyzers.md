@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9157d47278f835232308dc497965afebb294f8fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f8da407c0917a3f974a55fd02a1227db5b5d63
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78937582"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036577"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>Migrowanie ze starszej wersji analizy (FxCop) do analizy źródłowej (analizatory FxCop)
 
@@ -27,11 +27,11 @@ Wiele reguł starszej analizy (FxCop) zostało już ponownie napisano dla analiz
 
 Aby uzyskać więcej informacji na temat różnic między starszą analizą i analizą źródła, zobacz następujące tematy:
 
-- [Analiza kodu źródłowego w porównaniu do starszej analizy](../code-quality/roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)
+- [Analiza kodu źródłowego w porównaniu do starszej analizy](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers)
 
 - [Często zadawane pytania dotyczące analizatorów FxCop](../code-quality/fxcop-analyzers-faq.md)
 
-Aby przeprowadzić migrację do analizy źródłowej, [Zainstaluj analizatory FxCop](../code-quality/install-fxcop-analyzers.md). Podobnie jak w przypadku starszych naruszeń reguł analizy, naruszenia analizy kodu źródłowego są wyświetlane w oknie Lista błędów w programie Visual Studio. Ponadto naruszenia analizy kodu *źródłowego są również* wyświetlane w edytorze kodu jako zygzaky w kodzie błędu. Kolor zygzaka zależy od [Ustawienia ważności](../code-quality/use-roslyn-analyzers.md#rule-severity) reguły. Aby wyświetlić stan reguł do nowych analizatorów FxCop, zobacz [porty i reguły nieportowe](../code-quality/fxcop-rule-port-status.md).
+Aby przeprowadzić migrację do analizy źródłowej, [Zainstaluj analizatory FxCop](../code-quality/install-fxcop-analyzers.md). Podobnie jak w przypadku starszych naruszeń reguł analizy, naruszenia analizy kodu źródłowego są wyświetlane w oknie Lista błędów w programie Visual Studio. Ponadto naruszenia analizy kodu *źródłowego są również* wyświetlane w edytorze kodu jako zygzaky w kodzie błędu. Kolor zygzaka zależy od [Ustawienia ważności](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) reguły. Aby wyświetlić stan reguł do nowych analizatorów FxCop, zobacz [porty i reguły nieportowe](../code-quality/fxcop-rule-port-status.md).
 
 Aby dowiedzieć się więcej o konfigurowaniu analizatorów FxCop:
 

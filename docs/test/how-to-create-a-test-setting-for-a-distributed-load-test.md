@@ -8,12 +8,12 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 625f4720e94f6ec0b3b9751c28ad18e0a9f38bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4c33072c1b42d76f1f6ea26222c4674f9e6ff77
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288012"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036096"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Instrukcje: Tworzenie pliku ustawień testu dla testu obciążenia rozłożonego
 
@@ -120,7 +120,7 @@ Wykonaj następujące kroki, aby utworzyć i usunąć ustawienia testu w rozwią
     |**ASP.NET serwer proxy klienta dla IntelliTrace i wpływu na testowanie:** Ten serwer proxy umożliwia zbieranie informacji o wywołaniach http z klienta do serwera sieci Web dla IntelliTrace i adapterów danych diagnostycznych dotyczących wpływu testów.|![Ikona informacji](../test/media/vc364f4.gif)<br /><br /> Jeśli nie ma potrzeby zbierania informacji o systemie dla maszyn agenta testowego, nie należy uwzględniać tej karty. **Przestroga:**  Nie zaleca się używania karty IntelliTrace w testach obciążenia z powodu problemów występujących ze względu na dużą ilość zbieranych danych. <br /><br /> Dane o wpływie na testy nie są zbierane za pomocą testów obciążenia.||
     |**IntelliTrace:** Można skonfigurować określone informacje śledzenia diagnostycznego, które są przechowywane w pliku dziennika. Plik dziennika ma rozszerzenie *. tdlog*. Gdy uruchamiasz test, a krok testu zakończy się niepowodzeniem, możesz utworzyć błąd. Plik dziennika zawierający ślad diagnostyczny jest automatycznie dołączany do tego błędu. Dane zbierane w pliku dziennika zwiększają produktywność debugowania, skracając czas wymagany do odtworzenia i zdiagnozowania błędu w kodzie. Z tego pliku dziennika sesja lokalna można utworzyć ponownie na innym komputerze. Zmniejsza to ryzyko, że nie można odtworzyć usterki.<br /><br /> Aby uzyskać więcej informacji, zobacz [zbieranie danych IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Ikona ważnej informacji](../test/media/vc364f3.gif)<br /><br /> Nie zaleca się używania karty IntelliTrace w testach obciążenia z powodu problemów, które występują z powodu dużej ilości zbieranych i rejestrowanych danych. Należy próbować użyć karty IntelliTrace tylko w testach obciążenia, które nie działają długo i nie używają wielu agentów testowych.|[Instrukcje: zbieranie danych IntelliTrace w celu ułatwienia debugowania trudnych problemów](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |**Profiler ASP.NET:** Można utworzyć ustawienie testu, które obejmuje profilowanie ASP.NET, które zbiera dane dotyczące wydajności w aplikacjach sieci Web ASP.NET.|Karta danych diagnostycznych programu ASP.NET Profiler przetwarza proces Internet Information Services (IIS), więc nie będzie działała na deweloperskim serwerze sieci Web. Aby profilować witrynę sieci Web w teście obciążenia, należy zainstalować agenta testowego na komputerze, na którym są uruchomione usługi IIS. Agent testowy nie będzie generować obciążenia, ale będzie tylko agentem kolekcji. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).|[Instrukcje: Konfigurowanie profilera ASP.NET dla testów obciążenia przy użyciu ustawień testu](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
-    |**Dziennik zdarzeń:** Można skonfigurować ustawienie testu, aby uwzględnić zbieranie dzienników zdarzeń, które zostaną uwzględnione w wynikach testu.||[Instrukcje: Konfigurowanie zbierania dzienników zdarzeń przy użyciu ustawień testu](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
+    |**Dziennik zdarzeń:** Można skonfigurować ustawienie testu, aby uwzględnić zbieranie dzienników zdarzeń, które zostaną uwzględnione w wynikach testu.||[Instrukcje: Konfigurowanie zbierania dzienników zdarzeń przy użyciu ustawień testu](/previous-versions/dd504816(v=vs.110))|
     |**Emulacja sieci:** Możesz określić, że chcesz umieścić sztuczne obciążenie sieciowe w teście przy użyciu ustawienia testu. Emulacja sieci wpływa na komunikację z maszyną i z niej przez emulowanie określonej szybkości połączenia sieciowego, takiej jak połączenie telefoniczne. **Uwaga:**  Emulacji sieci nie można użyć do zwiększenia szybkości połączenia sieciowego.|Karta emulacji sieci jest ignorowana przez testy obciążenia. Zamiast tego testy obciążenia używają ustawień, które są określone w mieszaninie sieci w scenariuszu testu obciążenia.<br /><br /> Aby uzyskać więcej informacji, zobacz [Określanie typów sieci wirtualnych](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
     |**Informacje o systemie:** Ustawienie testu można skonfigurować w taki sposób, aby obejmowało informacje o systemie maszyn, na których uruchomiono diagnostykę informacji o systemie i moduł zbierający dane. Informacje o systemie są określone w wynikach testu przy użyciu ustawienia testu.|![Ikona informacji](../test/media/vc364f4.gif)<br /><br /> Można zbierać informacje o systemie zarówno z agentów obciążenia, jak i z testowanego systemu.|Do zebrania tych informacji nie jest wymagana żadna konfiguracja.|
     |**Wpływ na test:** Można zbierać informacje o tym, które metody kodu aplikacji były używane po uruchomieniu przypadku testowego. Ta wartość może być używana razem ze zmianami w kodzie aplikacji, które są tworzone przez deweloperów, aby określić, które testy miały wpływ na te zmiany.|Dane o wpływie na testy nie są zbierane z testami obciążenia.||
@@ -180,7 +180,7 @@ W folderze **elementy rozwiązania** w **Eksplorator rozwiązań**kliknij prawym
 
 Plik ustawień testu zostanie usunięty z rozwiązania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
 - [Zbieranie informacji diagnostycznych za pomocą ustawień testu](../test/collect-diagnostic-information-using-test-settings.md)

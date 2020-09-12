@@ -1,18 +1,19 @@
 ---
 title: Narzędzia kontenera programu Visual Studio z ASP.NET Core i React.js
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 author: ghogen
 description: Dowiedz się, jak używać narzędzi kontenera programu Visual Studio i Docker for Windows
 ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 2ac295982bb6ac0f6eaf6408106e3d95024af14d
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 45dc1f16f1655c5c738804a1c4e0093dd9c8b1f8
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741890"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036330"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Szybki Start: korzystanie z platformy Docker z aplikacją jednostronicową do reagowania w programie Visual Studio
 
@@ -245,7 +246,7 @@ Po zakończeniu cyklu opracowywania i debugowania aplikacji można utworzyć obr
 
 Teraz można ściągnąć kontener z rejestru do dowolnego hosta, który może uruchamiać obrazy platformy Docker, na przykład [Azure Container Instances](/azure/container-instances/container-instances-tutorial-deploy-app).
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+## <a name="additional-resources"></a>Zasoby dodatkowe
 
 * [Opracowywanie kontenerów w programie Visual Studio](./index.yml)
 * [Rozwiązywanie problemów związanych z opracowywaniem zwartości w programie Visual Studio przy użyciu platformy Docker](troubleshooting-docker-errors.md)

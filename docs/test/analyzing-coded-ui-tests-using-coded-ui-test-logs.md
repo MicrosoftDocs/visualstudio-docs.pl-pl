@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ec1025eaa53861fae2cf92395d8842854649fa8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bbb3e6599ef4ae26740eed0eb79047c49356374
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591219"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036148"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analizowanie kodowanych testów interfejsu użytkownika za pomocą dzienników kodowanych testów interfejsu użytkownika
 
@@ -87,7 +87,7 @@ Po uruchomieniu kodowanego testu interfejsu użytkownika przy użyciu modyfikacj
 
      ![Plik dziennika kodowanego testu interfejsu użytkownika](../test/media/cuit_htmlactionlog3.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
-- [Instrukcje: uruchamianie testów z Microsoft Visual Studio](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+- [Instrukcje: uruchamianie testów z Microsoft Visual Studio](/previous-versions/ms182470(v=vs.140))

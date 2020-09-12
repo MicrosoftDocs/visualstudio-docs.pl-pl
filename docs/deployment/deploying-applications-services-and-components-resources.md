@@ -14,39 +14,67 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20524a02cf6ff38e8336ae715162f9f197d46590
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: cccba4c299d5b12bdc00666a0b00f073fba12278
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641644"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036699"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Wdrażanie aplikacji w folderze, usługach IIS, na platformie Azure lub w innym miejscu docelowym
 
 Wdrażanie aplikacji, usług i składników to rozpowszechnianie ich w celu instalacji na innych komputerach, urządzeniach, serwerach lub w chmurze. W programie Visual Studio możesz wybrać odpowiednią metodę w zależności od typu wdrożenia, jakiego potrzebujesz.
 
-W przypadku wielu typowych typów aplikacji można wdrożyć aplikację bezpośrednio z poziomu Eksplorator rozwiązań w programie Visual Studio. Aby zapoznać się z szybkim samouczkiem dotyczącym tej funkcji, zobacz [pierwsze spojrzenie na wdrażanie](../deployment/deploying-applications-services-and-components.md).
+Uzyskaj pomoc dotyczącą zadania wdrożenia:
 
-![Wybierz opcję publikowania](../deployment/media/quickstart-publish-dialog.png)
+- Nie masz pewności co do wyboru opcji wdrażania? Zobacz, [jakie opcje publikowania są odpowiednie dla mnie?](#what-publishing-options-are-right-for-me)
+- Aby uzyskać pomoc dotyczącą problemów z wdrażaniem Azure App Service lub IIS, zobacz [Rozwiązywanie problemów ASP.NET Core na Azure App Service i usługach IIS](/aspnet/core/test/troubleshoot-azure-iis).
+- Aby uzyskać pomoc dotyczącą konfigurowania ustawień wdrożenia platformy .NET, zobacz [Konfigurowanie ustawień wdrożenia platformy .NET](#configure-net-deployment-settings).
+- Aby wdrożyć w nowym miejscu docelowym, jeśli wcześniej utworzono profil publikowania, wybierz opcję **Nowy** z okna **publikowania** dla skonfigurowanego profilu.
+
+   ![Utwórz nowy profil publikowania](../deployment/media/create-a-new-publish-profile.png)
+
+   Następnie wybierz opcję wdrożenia w oknie publikowanie. Aby uzyskać informacje na temat opcji publikowania, zobacz następujące sekcje.
 
 ## <a name="what-publishing-options-are-right-for-me"></a>Jakie opcje publikowania są odpowiednie dla mnie?
 
 W programie Visual Studio aplikacje można publikować bezpośrednio w następujących celach:
 
+::: moniker range=">=vs-2019"
 - [Azure](#azure)
 - [Container Registry platformy Docker](#docker-container-registry)
 - [Folder](#folder)
 - [Serwer FTP/FTPS](#ftpftps-server)
 - [Serwer sieci Web (IIS)](#web-server-iis)
 - [Importuj profil](#import-profile)
+::: moniker-end
+::: moniker range="vs-2017"
+- [App Service](#azure-app-service)
+- [App Service dla systemu Linux](#azure-app-service)
+- [Usługi IIS (Wybierz usługi IIS, FTP itp.)](#web-server-iis)
+- [FTP/FTPS (Wybierz usługi IIS, FTP itp.)](#ftpftps-server)
+- [Folder](#folder)
+- [Importuj profil](#import-profile)
+::: moniker-end
+
+Powyższe opcje są wyświetlane jak pokazano na poniższej ilustracji podczas tworzenia nowego profilu publikowania.
+
+::: moniker range=">=vs-2019"
+![Wybierz opcję publikowania](../deployment/media/quickstart-publish-dialog.png)
+::: moniker-end
+::: moniker range="vs-2017"
+![Wybierz opcję publikowania](../deployment/media/quickstart-publish-dialog-vs-2017.png)
+::: moniker-end
+
+Aby zapoznać się z bardziej ogólnymi opcjami wdrażania aplikacji, zobacz [pierwsze spojrzenie na wdrożenie](../deployment/deploying-applications-services-and-components.md).
 
 ## <a name="azure"></a>Azure 
 
 Po wybraniu platformy Azure Możesz wybrać jedną z opcji:
 
-- Azure App Service uruchomiony w systemie Windows, Linux lub w postaci obrazu platformy Docker
-- Obraz platformy Docker wdrożony w Azure Container Registry
-- Maszyna wirtualna platformy Azure
+- [Azure App Service](#azure-app-service) uruchomiony w systemie Windows, Linux lub w postaci obrazu platformy Docker
+- Obraz platformy Docker wdrożony w [Azure Container Registry](#azure-container-registry)
+- [Maszyna wirtualna platformy Azure](#azure-virtual-machine)
 
 ![Wybierz usługę platformy Azure](../deployment/media/quickstart-choose-azure-service.png)
 
@@ -66,7 +94,9 @@ Należy określić, ile mocy obliczeniowej ma App Service, wybierając [warstwę
 > Jeśli chcesz używać Azure App Service we własnym centrum danych lub na innych komputerach lokalnych, możesz to zrobić przy użyciu [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
 Aby uzyskać więcej informacji o publikowaniu do App Service, zobacz:
-- [Szybki Start — publikowanie w usłudze Azure App Service](quickstart-deploy-to-azure.md) i [szybki start — publikowanie ASP.NET Core w systemie Linux](quickstart-deploy-to-linux.md).
+- [Szybki Start — publikowanie do Azure App Service](quickstart-deploy-to-azure.md)
+- [Szybki Start — publikowanie ASP.NET Core w systemie Linux](quickstart-deploy-to-linux.md).
+- [Publikowanie aplikacji ASP.NET Core w Azure App Service](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
 - [Rozwiązywanie problemów ASP.NET Core na Azure App Service i usługach IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ### <a name="azure-container-registry"></a>Azure Container Registry
@@ -78,7 +108,11 @@ Aby uzyskać więcej informacji o publikowaniu do App Service, zobacz:
 - Gdy masz istniejący potok platformy Docker do tworzenia i wdrażania kontenerów.
 - Gdy chcesz tworzyć obrazy kontenerów platformy Docker na platformie Azure.
 
-### <a name="azure-virtual-machines"></a>Azure Virtual Machines
+Więcej informacji:
+
+- [Wdrażanie kontenera ASP.NET do rejestru kontenerów](../containers/hosting-web-apps-in-docker.md)
+
+### <a name="azure-virtual-machine"></a>Maszyna wirtualna platformy Azure
 
 [Usługa Azure Virtual Machines (maszyny wirtualne)](https://azure.microsoft.com/documentation/services/virtual-machines/) umożliwia tworzenie dowolnej liczby zasobów obliczeniowych w chmurze i zarządzanie nią. Przy założeniu, że odpowiedzialność za wszystkie oprogramowanie i aktualizacje na maszynach wirtualnych, można dostosować je tak długo, jak jest to wymagane przez aplikację. Dostęp do maszyn wirtualnych można uzyskać bezpośrednio za pomocą Pulpit zdalny, a każda z nich będzie obsługiwać przypisany adres IP, tak długo, jak to konieczne.
 
@@ -95,13 +129,18 @@ Dodatkowe informacje znajdują się w [szczegółowym porównaniu](/azure/archit
 
 > Jeśli chcesz korzystać z usługi Azure Virtual Machines we własnym centrum danych lub na innych komputerach lokalnych, możesz to zrobić przy użyciu [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
-## <a name="docker-container-registry"></a>Container Registry platformy Docker
+## <a name="docker-container-registry"></a>Rejestr kontenerów platformy Docker
 
-Jeśli aplikacja korzysta z platformy Docker, można opublikować aplikację z kontenerem w Container Registry Docker.
+Jeśli aplikacja korzysta z platformy Docker, można opublikować aplikację z kontenerów w rejestrze kontenerów platformy Docker.
 
 ### <a name="when-to-choose-docker-container-registry"></a>Kiedy należy wybrać Container Registry platformy Docker
 
 - Chcesz wdrożyć aplikację mającą kontener
+
+Aby uzyskać więcej informacji, zobacz następujące tematy:
+
+- [Wdrażanie kontenera ASP.NET do rejestru kontenerów](../containers/hosting-web-apps-in-docker.md)
+- [Wdrażanie w usłudze Docker Hub](../containers/deploy-docker-hub.md)
 
 ## <a name="folder"></a>Folder
 
@@ -117,7 +156,13 @@ Należy pamiętać, że jeśli z jakiegokolwiek powodu (na przykład dostęp do 
 - Wymagane jest tylko lokalne wdrożenie testowe.
 - Chcesz przeanalizować i potencjalnie zmodyfikować pliki aplikacji niezależnie przed ich wysłaniem do innego celu wdrożenia.
 
-Aby uzyskać więcej informacji, zobacz [Przewodnik Szybki Start — wdrażanie do folderu lokalnego](quickstart-deploy-to-local-folder.md) .
+Aby uzyskać więcej informacji, zobacz [Szybki Start-Deploy do folderu lokalnego](quickstart-deploy-to-local-folder.md).
+
+Aby uzyskać dodatkową pomoc dotyczącą wybierania ustawień, zobacz następujące tematy:
+
+- [Wdrażanie zależne od platformy a wdrożenie samodzielne](/dotnet/core/deploying/)
+- [Docelowe identyfikatory środowiska uruchomieniowego (Portable RID, et al)](/dotnet/core/rid-catalog)
+- [Konfiguracje debugowania i wydania](../ide/understanding-build-configurations.md)
 
 ## <a name="ftpftps-server"></a>Serwer FTP/FTPS
 
@@ -157,7 +202,9 @@ W programie Visual Studio można utworzyć dowolną liczbę profilów wdrażania
 - Chcesz wdrożyć przy użyciu poświadczeń innych niż te, które są używane w programie Visual Studio, lub powiązane bezpośrednio z kontami platformy Azure.
 - Chcesz usunąć pliki z obiektu docelowego przy każdym wdrożeniu.
 
-Aby uzyskać więcej informacji, zobacz [Przewodnik Szybki Start — wdrażanie w witrynie sieci Web](quickstart-deploy-to-a-web-site.md). Aby uzyskać pomoc w rozwiązywaniu problemów ASP.NET Core w usługach IIS, zobacz [Rozwiązywanie problemów ASP.NET Core na Azure App Service i usługach IIS](/aspnet/core/test/troubleshoot-azure-iis).
+Aby uzyskać więcej informacji, zobacz [Przewodnik Szybki Start — wdrażanie w witrynie sieci Web](quickstart-deploy-to-a-web-site.md).
+
+Aby uzyskać pomoc w rozwiązywaniu problemów ASP.NET Core w usługach IIS, zobacz [Rozwiązywanie problemów ASP.NET Core na Azure App Service i usługach IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ## <a name="import-profile"></a>Importuj profil
 
@@ -174,6 +221,14 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 
 - [Importowanie ustawień publikowania i wdrażanie w usługach IIS](tutorial-import-publish-settings-iis.md)
 - [Importowanie ustawień publikowania i wdrażanie na platformie Azure](tutorial-import-publish-settings-azure.md)
+
+## <a name="configure-net-deployment-settings"></a>Konfigurowanie ustawień wdrożenia platformy .NET
+
+Aby uzyskać dodatkową pomoc dotyczącą wybierania ustawień, zobacz następujące tematy:
+
+- [Wdrażanie zależne od platformy a wdrożenie samodzielne](/dotnet/core/deploying/)
+- [Docelowe identyfikatory środowiska uruchomieniowego (Portable RID, et al)](/dotnet/core/rid-catalog)
+- [Konfiguracje debugowania i wydania](../ide/understanding-build-configurations.md)
 
 ## <a name="next-steps"></a>Następne kroki
 

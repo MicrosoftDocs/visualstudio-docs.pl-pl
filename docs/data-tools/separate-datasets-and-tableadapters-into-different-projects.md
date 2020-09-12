@@ -3,6 +3,7 @@ title: Błąd użycia oddzielnych projektów
 description: Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów
 ms.date: 11/04/2016
 ms.topic: how-to
+ms.custom: SEO-VS-2020
 helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, separating Datasets and TableAdapters
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0e54a28a7d5c5dc9ae8353266f49234ef8468410
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 4ed815b73cade73c38b52528d918b4af4de2a618
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743106"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036278"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów
 Wpisane zestawy danych zostały ulepszone, aby klasy [TableAdapters](create-and-configure-tableadapters.md) i DataSet mogły być generowane w oddzielnych projektach. Dzięki temu można szybko oddzielić warstwy aplikacji i generować wielowarstwowe aplikacje do obsługi danych.

@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c17c27c8827c8612f08298667f09eda89f90f8d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb1834bf395d3a9c5d4f516a9fec1693d40ff378
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544680"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035693"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Duża częstotliwość odzyskiwania pamięci 2. generacji
 
@@ -27,7 +27,7 @@ ms.locfileid: "85544680"
 |Identyfikator reguły|DA0022|
 |Kategoria|Użycie .NET Framework|
 |Metoda profilowania|Wszystko|
-|Komunikat|Występuje dość duża liczba wyrzucania elementów bezużytecznych generacji 2. W przypadku, gdy konstrukcja większość struktur danych programu jest alokowana i utrwalana przez dłuższy czas, nie jest to problem. Jeśli jednak takie zachowanie jest niezamierzone, aplikacja może przypinać obiekty. Jeśli nie masz pewności, możesz zebrać dane alokacji pamięci .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci używanej przez aplikację.|
+|Wiadomość|Występuje dość duża liczba wyrzucania elementów bezużytecznych generacji 2. W przypadku, gdy konstrukcja większość struktur danych programu jest alokowana i utrwalana przez dłuższy czas, nie jest to problem. Jeśli jednak takie zachowanie jest niezamierzone, aplikacja może przypinać obiekty. Jeśli nie masz pewności, możesz zebrać dane alokacji pamięci .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci używanej przez aplikację.|
 |Typ reguły|Ostrzeżenie|
 
  Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
@@ -51,4 +51,4 @@ ms.locfileid: "85544680"
 
  Aby zrozumieć wzorzec zastosowania pamięci zarządzanej, należy go ponownie uruchomić przy użyciu profilu alokacji pamięci a.NET i wybrać opcję profilowania okresu istnienia obiektu.
 
- Aby uzyskać informacje na temat zwiększania wydajności odzyskiwania pamięci, zobacz [podstawy modułu zbierającego elementy bezużyteczne i wskazówki dotyczące wydajności](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) w witrynie sieci Web firmy Microsoft. Aby uzyskać informacje o obciążeniu automatycznego odzyskiwania pamięci, zapoznaj się z [pokrytym stertą dużego obiektu](https://msdn.microsoft.com/magazine/cc534993.aspx).
+ Aby uzyskać informacje na temat zwiększania wydajności odzyskiwania pamięci, zobacz [podstawy modułu zbierającego elementy bezużyteczne i wskazówki dotyczące wydajności](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) w witrynie sieci Web firmy Microsoft. Aby uzyskać informacje o obciążeniu automatycznego odzyskiwania pamięci, zapoznaj się z [pokrytym stertą dużego obiektu](/archive/msdn-magazine/2008/june/clr-inside-out-large-object-heap-uncovered).

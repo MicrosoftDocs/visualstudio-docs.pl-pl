@@ -1,6 +1,7 @@
 ---
-title: Prześlij zadanie do uczenia modelu w Azure Batch AI
-description: uczenie modelu w chmurze
+title: Prześlij zadanie, aby nauczyć model
+description: Prześlij zadanie, aby nauczyć model przy użyciu Azure Batch AI
+ms.custom: SEO-VS-2020
 keywords: AI, Visual Studio, model uczenia, Chmura
 author: jillre
 ms.author: jillfra
@@ -10,12 +11,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 4d705cbff1ce4e25892dfc5df896418e6d58b632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 110468de264370b22d64dae40cf55e9766804c31
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371654"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036616"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Uczenie modeli AI w Azure Batch AI
 

@@ -15,17 +15,17 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8238de0760f300b6fa418a5e3eb47eac3db77272
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 77428bfc815a963e8fae4ddae5e5e7a7b7d991fe
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509019"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034107"
 ---
 # <a name="net-code-analysis-rules"></a>Reguły analizy kodu platformy .NET
-Narzędzie do analizy kodu zarządzanego zawiera ostrzeżenia wskazujące naruszenia reguł w zarządzanych bibliotekach kodu. Ostrzeżenia są zorganizowane w obszary reguły, takie jak projektowanie, lokalizacja, wydajność i zabezpieczenia. Każde ostrzeżenie oznacza naruszenie reguły analizy kodu zarządzanego. Ta sekcja zawiera szczegółowe omówienie i przykłady dla każdego ostrzeżenia analizy kodu zarządzanego.
+Analiza kodu platformy .NET zawiera reguły wskazujące naruszenia jakości kodu lub sugestie dotyczące poprawy jakości kodu. Reguły są zorganizowane w obszary reguły, takie jak projektowanie, lokalizacja, wydajność i zabezpieczenia. Niektóre reguły są specyficzne dla użycia interfejsu API platformy .NET, a pozostałe reguły dotyczą jakości kodu ogólnego. Ta sekcja zawiera szczegółowe omówienie i przykłady dla każdej reguły.
 
- W poniższej tabeli przedstawiono typ informacji, które są dostępne dla każdego ostrzeżenia.
+ W poniższej tabeli przedstawiono typ informacji, które są dostępne dla każdej diagnostyki.
 
 |Element|Opis|
 |----------|-----------------|

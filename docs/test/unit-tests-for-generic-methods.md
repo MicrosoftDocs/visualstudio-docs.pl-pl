@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2158c889aefc85c908aa9ee42d45858fd11d557e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40255c4ab86d407da4e851bd84cb65e5b4a0f8c9
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590816"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035680"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testy jednostkowe metod ogólnych
 
@@ -115,7 +115,7 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
-> Po każdym uruchomieniu testu SizeOfLinkedListTest jego Metoda TestHelper jest wywoływana dwa razy. Instrukcja Assert musi być szacowana na wartość true za każdym razem, gdy test zostanie przekazany. Jeśli test nie powiedzie się, może nie być jasne, czy wywołanie określone `<int>` lub wywołanie, które zostało określone, `<char>` spowodowało niepowodzenie. Aby znaleźć odpowiedź, można sprawdzić stos wywołań lub ustawić punkty przerwania w metodzie testowej, a następnie debugować podczas wykonywania testu. Aby uzyskać więcej informacji, zobacz [How to: Debug in Test in the ASP.NET Solution](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> Po każdym uruchomieniu testu SizeOfLinkedListTest jego Metoda TestHelper jest wywoływana dwa razy. Instrukcja Assert musi być szacowana na wartość true za każdym razem, gdy test zostanie przekazany. Jeśli test nie powiedzie się, może nie być jasne, czy wywołanie określone `<int>` lub wywołanie, które zostało określone, `<char>` spowodowało niepowodzenie. Aby znaleźć odpowiedź, można sprawdzić stos wywołań lub ustawić punkty przerwania w metodzie testowej, a następnie debugować podczas wykonywania testu. Aby uzyskać więcej informacji, zobacz [How to: Debug in Test in the ASP.NET Solution](/previous-versions/ms243172(v=vs.140)).
 
 ### <a name="example-2-using-a-type-constraint"></a><a name="TypeConstraintNotSatisfied"></a> Przykład 2: użycie ograniczenia typu
 Ten przykład pokazuje test jednostkowy dla metody ogólnej, która używa ograniczenia typu, który nie jest spełniony. W pierwszej sekcji jest wyświetlany kod z projektu kodu testowego. Zostanie wyróżnione ograniczenie typu.
@@ -194,6 +194,6 @@ namespace TestProject1
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)

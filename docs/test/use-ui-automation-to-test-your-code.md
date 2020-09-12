@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f333cc3409056739cef7c378d9815f10439ab37e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d18282cf0fbd8782eb7abce05794e0b2eb1c5c1
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80880367"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035745"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Używanie kodowanego testu interfejsu użytkownika do testowania kodu
 
@@ -446,7 +446,7 @@ Kodowane testy interfejsu użytkownika można analizować za pomocą dzienników
 
 - [Uruchom testy w procesie kompilacji](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Instrukcje: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Instrukcje: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](/previous-versions/ee291332(v=vs.140))
 
 **Dodawanie obsługi niestandardowych formantów:**  Struktura testowania kodowanego interfejsu użytkownika nie obsługuje wszystkich możliwych interfejsów użytkownika i może nie obsługiwać interfejsu użytkownika, który ma zostać przetestowany. Na przykład nie można natychmiast utworzyć kodowanego testu interfejsu użytkownika dla programu Microsoft Excel. Można jednak utworzyć rozszerzenie dla kodowanego środowiska testowania interfejsu użytkownika, które obsługuje kontrolkę niestandardową.
 
@@ -456,7 +456,7 @@ Kodowane testy interfejsu użytkownika można analizować za pomocą dzienników
 
 Kodowane testy interfejsu użytkownika są często używane do automatyzowania ręcznych testów. Aby uzyskać więcej informacji o zautomatyzowanych testach, zobacz [narzędzia testowe w programie Visual Studio](../test/improve-code-quality.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Rejestrowanie i odtwarzanie testów ręcznych](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
 - [Xamarin. UITest](/appcenter/test-cloud/uitest/)

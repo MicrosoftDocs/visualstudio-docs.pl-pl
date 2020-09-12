@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: b9c7da96df8c68de0b9f6ba3e341d93596200934
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: cbe2b18b9edd6f2d4634ede41d676519f1b80ad3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641474"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035723"
 ---
 # <a name="language-conventions"></a>Konwencje języka
 
@@ -76,7 +76,7 @@ Aby zmienić Konwencję stylu kodu:
 
    Program Visual Studio dodaje lub modyfikuje ustawienia konfiguracji w pliku EditorConfig, jak pokazano w polu podglądu.
 
-Aby zmienić ważność naruszenia stylu kodu, wykonaj te same czynności, ale wybierz pozycję **Konfiguruj \<rule ID> ważność** zamiast **skonfigurować \<rule ID> styl kodu**. Aby uzyskać więcej informacji, zobacz [Automatyczne konfigurowanie ważności reguły](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
+Aby zmienić ważność naruszenia stylu kodu, wykonaj te same czynności, ale wybierz pozycję **Konfiguruj \<rule ID> ważność** zamiast **skonfigurować \<rule ID> styl kodu**. Aby uzyskać więcej informacji, zobacz [Automatyczne konfigurowanie ważności reguły](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
 
 ::: moniker-end
 
@@ -1142,7 +1142,7 @@ Reguły stylu w tej sekcji mają zastosowanie tylko do języka C#.
   - \_ \_ bodied_accessors wyrażenie stylu \_ CSharp
   - \_ \_ bodied_lambdas wyrażenie stylu \_ CSharp
   - \_ \_ \_ local_functions zabudowane wyrażenie stylu CSharp \_
-- [Dopasowanie wzorca](#pattern-matching)
+- [Dopasowanie do wzorca](#pattern-matching)
   - \_ \_ Dopasowywanie wzorca stylu csharp \_ \_ \_ \_ do \_ cast_check
   - \_dopasowanie wzorca stylu CSharp w \_ \_ \_ porównaniu \_ \_ z \_ null_check
 - [Wbudowane deklaracje zmiennych](#inlined-variable-declarations)
@@ -1958,7 +1958,7 @@ switch (x)
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Konwencje formatowania](editorconfig-formatting-conventions.md)
 - [Konwencje nazewnictwa](editorconfig-naming-conventions.md)
