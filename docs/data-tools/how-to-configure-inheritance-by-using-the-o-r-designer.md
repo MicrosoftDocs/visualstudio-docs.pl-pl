@@ -1,5 +1,6 @@
 ---
 title: Konfigurowanie dziedziczenia przy użyciu projektanta O-R
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f9ae6d1bd7048ad9e6dc974bca67e6de15ba5fa
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: a0f56d7b123571e9a65d5bb2baa99a8d7dac2461
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742957"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037058"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Instrukcje: konfigurowanie dziedziczenia za pomocą narzędzia Object Relational Designer
 **Object Relational Designer** (**Projektant O/R**) wspiera koncepcję dziedziczenia pojedynczej tabeli, ponieważ jest ona często zaimplementowana w systemach relacyjnych. W przypadku dziedziczenia z jedną tabelą istnieje pojedyncza tabela bazy danych zawierająca pola dla informacji nadrzędnych i podrzędnych. W przypadku danych relacyjnych kolumna rozróżniacza zawiera wartość określającą, do której klasy należy każdy rekord.

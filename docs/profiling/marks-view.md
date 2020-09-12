@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9a0537e146ead1c163941a0f552bdea7a28b89c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d7483f309a3d7edb92d25c34e9665a6212c8038
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773971"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037520"
 ---
 # <a name="marks-view"></a>Widok znaczników
 Widok znaczniki wyświetla próbki i zdarzenia ETW, które zostały wstawione do aplikacji.
@@ -40,7 +40,7 @@ Widok znaczniki wyświetla próbki i zdarzenia ETW, które zostały wstawione do
 
  Dane licznika wydajności systemu Windows podczas zbierania danych licznika wydajności systemu Windows wartości są wyświetlane w kolumnie, która ma nazwę licznika.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Przegląd raportu wydajności](../profiling/performance-report-overview.md)
 - [Instrukcje: zbieranie danych licznika systemu Windows](../profiling/how-to-collect-windows-counter-data.md)
-- [ Okno kontrolki zbierania danych&#91;NIB&#93;](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+- [ Okno kontrolki zbierania danych&#91;NIB&#93;](/previous-versions/bb385767(v=vs.110))

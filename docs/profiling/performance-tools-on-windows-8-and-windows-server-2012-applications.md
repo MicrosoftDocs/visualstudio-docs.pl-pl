@@ -8,12 +8,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c5897f4cbf06ad7c9dc7541a032f5b86e45d4c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778430"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038611"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Narzędzia do oceny wydajności w aplikacjach Windows 8 i Windows Server 2012
 
@@ -42,9 +42,9 @@ Aby uzyskać więcej informacji na temat profilowania aplikacji platformy UWP, z
 - [Uruchamianie aplikacji platformy UWP na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [Pierwsze spojrzenie na narzędzia profilowania](profiling-feature-tour.md)
 - [Pamięć JavaScript](../profiling/javascript-memory.md)
-- [Profile Visual C++, Visual C# i Visual Basic Code w aplikacjach platformy UWP na komputerze lokalnym](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)
-- [Profile Visual C++, Visual C# i Visual Basic kod w aplikacjach platformy UWP na urządzeniu zdalnym](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)
-- [Analizowanie danych wydajności dla Visual C++, Visual C# i kodu Visual Basic w aplikacjach platformy UWP](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)
+- [Profile Visual C++, Visual C# i Visual Basic Code w aplikacjach platformy UWP na komputerze lokalnym](/previous-versions/hh696631(v=vs.140))
+- [Profile Visual C++, Visual C# i Visual Basic kod w aplikacjach platformy UWP na urządzeniu zdalnym](/previous-versions/hh972878(v=vs.140))
+- [Analizowanie danych wydajności dla Visual C++, Visual C# i kodu Visual Basic w aplikacjach platformy UWP](/previous-versions/hh780914(v=vs.140))
 
 ## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a>Zbierz dane dotyczące aplikacji uruchomionych na komputerze stacjonarnym z systemem Windows 8 lub Windows Server 2012 z programu Visual Studio IDE
 
@@ -118,7 +118,7 @@ Aby zebrać dane profilowania, można użyć [VSPerfCmd](../profiling/vsperfcmd.
 
 Dane interakcji warstwy można wyświetlać tylko w Visual Studio Enterprise. Raporty interakcji z warstwą opartą na plikach za pośrednictwem [VSPerfReport](../profiling/vsperfreport.md) są niedostępne.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Eksplorator wydajności](../profiling/performance-explorer.md) 
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5974bc962faf439af8de5d50bf51bad3d824647
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
+ms.lasthandoff: 09/11/2020
 ms.locfileid: "64827356"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Porady: wyszukiwanie wątku w widoku wątków
@@ -40,6 +40,6 @@ Konkretny wątek można wyszukać w widoku wątki przy użyciu identyfikatora w�
   
 5. Wybierz pozycję w **górę** lub **w dół** , aby określić początkowy kierunek wyszukiwania.  
   
-6. Kliknij przycisk **OK**.  
+6. Kliknij pozycję **OK**.  
   
    Jeśli zostanie znaleziony pasujący wątek, zostanie on wyróżniony w oknie Widok wątków.

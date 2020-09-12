@@ -1,5 +1,6 @@
 ---
 title: Implementowanie wtyczki kontroli źródła — najlepsze rozwiązania
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1576717ceda110820b487a324f56f18486c5d95a
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 399afaff75b2456e668aaa9862fb7aa5439cc39f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739161"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038455"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Najlepsze rozwiązania dotyczące implementowania wtyczki kontroli źródła
 Poniższe szczegóły techniczne mogą pomóc w niezawodnym wdrożeniu wtyczki kontroli źródła w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .

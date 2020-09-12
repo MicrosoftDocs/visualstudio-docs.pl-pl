@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7ef6975fe5d9d19ebd2cbb0ed10951ca6f3219
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1762f12d791f220161867af73a823f88b9f86ec0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778443"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037331"
 ---
 # <a name="performance-rules-by-id"></a>Reguły wydajności według identyfikatora
 
@@ -28,7 +28,7 @@ ms.locfileid: "74778443"
 | [DA0006: Przesłoń metodę Equals() dla typów wartości](../profiling/da0006-override-equals-parens-for-value-types.md) | Wywołania metody Equals lub operatory równości typu wartości publicznej są znaczną częścią danych profilowania. Rozważ zaimplementowanie bardziej wydajnej metody. |
 | [DA0007: Unikaj używania wyjątków w przepływie sterowania](../profiling/da0007-avoid-using-exceptions-for-control-flow.md) | W danych profilowania wywołano wysoką częstotliwość obsługi wyjątków .NET Framework. Rozważ użycie innej logiki przepływu sterowania, aby zmniejszyć liczbę zgłaszanych wyjątków. |
 | [DA0008: Zebrano kilka próbek](../profiling/da0008-few-samples-collected.md) | Tylko kilka przykładów zostało zebranych w przebiegu profilowania. Należy rozważyć dłuższy przebieg lub szybszy współczynnik próbkowania, aby uzyskać bardziej znaczące wyniki. |
-| [DA0009: wysoka godzina (%) w JIT](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd) | Znaczący procent czasu wykonania aplikacji był poświęcony na kompilator just in Time (JIT). |
+| [DA0009: wysoka godzina (%) w JIT](/previous-versions/dd264972(v=vs.100)) | Znaczący procent czasu wykonania aplikacji był poświęcony na kompilator just in Time (JIT). |
 | [DA0010: Kosztowna funkcja GetHashCode](../profiling/da0010-expensive-gethashcode.md) | Wywołania metody GetHashCode typu są znaczną częścią danych profilowania lub metoda przydziela pamięć. |
 | [DA0011: Kosztowna funkcja CompareTo](../profiling/da0011-expensive-compareto.md) | Metoda CompareTo typu jest kosztowna lub przydziela pamięć. |
 | [DA0012: Znaczne odbicie](../profiling/da0012-significant-amount-of-reflection.md) | Wywołania metody System. odbicia, takie jak InvokeMember i GetMember albo metody Type, takie jak MemberInvoke, są znaczną częścią danych profilowania. W razie potrzeby Rozważ zastąpienie tych metod wczesnym wiązaniem do metod zestawów zależnych. |

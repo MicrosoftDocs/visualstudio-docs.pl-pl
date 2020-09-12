@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a70e77b63aa923aa51188c3db8cb0feaaf6daf0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62788904"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038507"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych
 
@@ -30,7 +30,7 @@ Czasami równoległe aplikacje stubbornly nadal są wykonywane szeregowo nawet w
 
 Jak pokazano na poniższej ilustracji, Wizualizator współbieżności może również uwidocznić ten objaw w widoku wykorzystania procesora CPU, gdzie mimo obecności wielu wątków aplikacja korzysta tylko z jednego rdzenia logicznego.
 
-Aby uzyskać więcej informacji, zobacz sekcję "Rozpoczynanie pracy z sekcją problemu" w artykule dotyczącym wątków w witrynie MSDN Magazine [— profilowanie współbieżności rywalizacji o zasoby w programie Visual Studio 2010](https://msdn.microsoft.com/magazine/ff714587.aspx).
+Aby uzyskać więcej informacji, zobacz sekcję "Rozpoczynanie pracy z sekcją problemu" w artykule dotyczącym wątków w witrynie MSDN Magazine [— profilowanie współbieżności rywalizacji o zasoby w programie Visual Studio 2010](/archive/msdn-magazine/2010/june/msdn-magazine-thread-performance-resource-contention-concurrency-profiling-in-visual-studio-2010).
 
 ![Zablokuj rywalizację](../profiling/media/lockcontention_2.png "LockContention_2")
 
@@ -68,6 +68,6 @@ Nadmierne lub nieprawidłowe użycie operacji we/wy jest typową przyczyną niee
 
 Zablokuj convoys występuje, gdy aplikacja uzyskuje blokady w pierwszej, obsługiwanej kolejności, a szybkość przybycia dla blokady jest wyższa niż szybkość pozyskiwania. Kombinacja tych dwóch warunków powoduje, że żądania zablokowania zaczynają tworzyć kopie zapasowe. Jednym ze sposobów zwalczenia tego problemu jest użycie blokad nieuczciwych lub blokad, które zapewniają dostęp do pierwszego wątku, aby znaleźć je w Stanach odblokowane. Na poprzedniej ilustracji przedstawiono zachowanie konwoju. Aby rozwiązać ten problem, spróbuj zmniejszyć rywalizację dla obiektów synchronizacji i spróbuj użyć nieuczciwych blokad.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Widok wątków](../profiling/threads-view-parallel-performance.md)

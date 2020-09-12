@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e45df63f36947b5f6f0aad77bb8eebcab4aca731
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d68e26e8503fb450d6b163ecec31c0cb6485f6c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585564"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038624"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Używanie struktury MSTest w testach jednostkowych
 
@@ -43,7 +43,7 @@ Aby skonfigurować testy jednostkowe oparte na danych, należy użyć następuj�
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Atrybuty używane do ustanowienia kolejności wywoływania
 
-Element kodu z jednym z następujących atrybutów jest wywoływany w określonym momencie. Aby uzyskać więcej informacji, zobacz [Anatomia testu jednostkowego](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Element kodu z jednym z następujących atrybutów jest wywoływany w określonym momencie. Aby uzyskać więcej informacji, zobacz [Anatomia testu jednostkowego](/previous-versions/ms182517(v=vs.110)).
 
 ### <a name="attributes-for-assemblies"></a>Atrybuty dla zestawów
 
@@ -69,7 +69,7 @@ ClassInitialize i ClassCleanup są wywoływane bezpośrednio po załadowaniu kla
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atrybuty używane do identyfikowania klas i metod testowych
 
-Każda Klasa testowa musi mieć `TestClass` atrybut, a każda metoda testowa musi mieć `TestMethod` atrybut. Aby uzyskać więcej informacji, zobacz [Anatomia testu jednostkowego](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Każda Klasa testowa musi mieć `TestClass` atrybut, a każda metoda testowa musi mieć `TestMethod` atrybut. Aby uzyskać więcej informacji, zobacz [Anatomia testu jednostkowego](/previous-versions/ms182517(v=vs.110)).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -133,6 +133,6 @@ Można wygenerować test jednostkowy dla metody prywatnej. Ta generacja powoduje
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType>
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Dokumentacja referencyjna

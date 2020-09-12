@@ -1,5 +1,6 @@
 ---
 title: Zarządzanie galerią prywatną przy użyciu ustawień rejestru
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 989426feaab04c62c31bf09ddb0431f18222e115
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 2dcbacbe415eac6829dc51e95442905bba932d6a
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742867"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038546"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Instrukcje: Zarządzanie galerią prywatną przy użyciu ustawień rejestru
 Jeśli jesteś administratorem lub deweloperem rozszerzenia izolowanej powłoki, możesz kontrolować dostęp do kontrolek, szablonów i narzędzi w galerii programu Visual Studio, galerii przykładów lub w galeriach prywatnych. Aby udostępnić galerię lub niedostępny, Utwórz plik *. pkgdef* , który opisuje zmodyfikowane klucze rejestru i ich wartości.

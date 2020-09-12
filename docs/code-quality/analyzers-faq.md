@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6109c1becfae51ebf3824b5683bc66a5d89b74a0
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 9408e8615e2a3591a5e93f569546b6161fe40e4c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599610"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037253"
 ---
 # <a name="code-analysis-faq"></a>Analiza kodu — często zadawane pytania
 
@@ -61,7 +61,7 @@ Odp **.: środowisko IDE programu Visual**Studio zawiera wbudowane analizatory, 
 
 **P**: Jaka jest różnica między starszą analizą a analizą kodu opartą na .NET compiler platform?
 
-Odp **.: Analiza kodu oparta na .NET compiler platform**analizuje kod źródłowy w czasie rzeczywistym i podczas kompilacji, natomiast Starsza analiza analizuje pliki binarne po zakończeniu kompilacji. Aby uzyskać więcej informacji, zobacz [Analiza na podstawie .NET compiler platform a Starsza analiza](roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis) i [FxCop — często zadawane pytania](fxcop-analyzers-faq.md).
+Odp **.: Analiza kodu oparta na .NET compiler platform**analizuje kod źródłowy w czasie rzeczywistym i podczas kompilacji, natomiast Starsza analiza analizuje pliki binarne po zakończeniu kompilacji. Aby uzyskać więcej informacji, zobacz [Analiza oparta na .NET compiler platformach i analiza starszej wersji](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers).
 
 ## <a name="treat-warnings-as-errors"></a>Traktuj ostrzeżenia jako błędy
 
@@ -94,7 +94,7 @@ Odp **.: aby**zapobiec potraktowaniu ostrzeżeń analizy kodu jako błędów, wy
 
 Odp **.: Strona**właściwości Analiza kodu na poziomie rozwiązania została usunięta na korzyść grupy wspólnych właściwości. Aby zarządzać analizą kodu na poziomie projektu, Strona właściwości Analiza kodu jest nadal dostępna. (W przypadku projektów zarządzanych zalecamy także Migrowanie z zestawów reguł do EditorConfig dla konfiguracji reguł).  W celu udostępniania zestawów reguł w wielu/wszystkich projektach w rozwiązaniu lub repozytorium zaleca się zdefiniowanie grupy właściwości z właściwością CodeAnalysisRuleSet w udostępnionym pliku props/targets lub katalogu. props/Directory. targets. Jeśli nie masz żadnych takich wspólnych właściwości lub obiektów docelowych, które zostały zaimportowane przez wszystkie projekty, rozważ [dodanie takiej grupy właściwości do katalogu. props lub Directory. targets w katalogu rozwiązania najwyższego poziomu, który jest automatycznie importowany we wszystkich plikach projektu zdefiniowanych w katalogu lub jego podkatalogach](../msbuild/customize-your-build.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przegląd analizatorów](roslyn-analyzers-overview.md)
 - [Ustawienia konwencji kodowania .NET dla EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

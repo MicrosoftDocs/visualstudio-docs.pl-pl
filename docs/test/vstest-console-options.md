@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8264aebcbced16f95c177d255e226cfffdbee0ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 875af363cbd85f8667d56a33cf7646ac2a9da429
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86869597"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037019"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opcje wiersza poleceń narzędzia VSTest.Console.exe
 
@@ -43,7 +43,7 @@ W poniższej tabeli wymieniono wszystkie opcje *VSTest.Console.exe* i krótkie o
 |**/UseVsixExtensions**|Ta opcja powoduje, że proces *vstest.console.exe* używa lub pomija zainstalowane rozszerzenia VSIX (jeśli istnieją) w przebiegu testu.<br />Ta opcja jest przestarzały. Począwszy od następnej wersji głównej programu Visual Studio, ta opcja może zostać usunięta. Przenieś do pakietu, który jest używany jako pakiet NuGet.<br />Przykład: `/UseVsixExtensions:true`|
 |**/TestAdapterPath: [*ścieżka*]**|Wymusza, aby proces *vstest.console.exe* używać niestandardowych adapterów testowych z określonej ścieżki (jeśli istnieje) w przebiegu testu.<br />Przykład: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform: [*Typ platformy*]**|Docelowa architektura platformy, która ma być używana na potrzeby wykonywania testów.<br />Prawidłowe wartości to x86, x64 i ARM.|
-|**/Framework: [*wersja platformy*]**|Docelowa wersja platformy .NET, która ma zostać użyta do wykonania testu.<br />Przykładowe wartości to `Framework35` , `Framework40` , `Framework45` , `FrameworkUap10` , `.NETCoreApp,Version=v1.1` .<br />TargetFrameworkAttribute jest używany do automatycznego wykrywania tej opcji z zestawu i domyślnie, `Framework40` gdy atrybut nie jest obecny. Tę opcję należy określić jawnie po usunięciu [TargetFrameworkAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.versioning.targetframeworkattribute) z zestawów .NET Core.<br />Jeśli struktura docelowa jest określona jako **Framework35**, testy są uruchamiane w trybie zgodności środowiska CLR 4,0.<br />Przykład: `/Framework:framework40`|
+|**/Framework: [*wersja platformy*]**|Docelowa wersja platformy .NET, która ma zostać użyta do wykonania testu.<br />Przykładowe wartości to `Framework35` , `Framework40` , `Framework45` , `FrameworkUap10` , `.NETCoreApp,Version=v1.1` .<br />TargetFrameworkAttribute jest używany do automatycznego wykrywania tej opcji z zestawu i domyślnie, `Framework40` gdy atrybut nie jest obecny. Tę opcję należy określić jawnie po usunięciu [TargetFrameworkAttribute](/dotnet/api/system.runtime.versioning.targetframeworkattribute) z zestawów .NET Core.<br />Jeśli struktura docelowa jest określona jako **Framework35**, testy są uruchamiane w trybie zgodności środowiska CLR 4,0.<br />Przykład: `/Framework:framework40`|
 |**/TestCaseFilter: [*wyrażenie*]**|Uruchom testy zgodne z podanym wyrażeniem.<br />Wyrażenie <\> ma format <Property \> =<Value \> [ \| wyrażenie<\> ].<br />Przykład: `/TestCaseFilter:"Priority=1"`<br />Przykład: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Opcji wiersza polecenia **/TestCaseFilter** nie można używać z opcją wiersza polecenia **/Tests** . <br />Aby uzyskać informacje na temat tworzenia i używania wyrażeń, zobacz [Filtr przypadku testowego](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Wyświetla informacje o użyciu.|
 |**/Logger: [*URI/FriendlyName*]**|Określ Rejestrator dla wyników testu. Określ parametr wiele razy, aby włączyć obsługę wielu rejestratorów.<br />Przykład: Aby rejestrować wyniki do pliku Wyniki testów programu Visual Studio (TRX), użyj<br />**/Logger: TRX**<br />**[; Plik_dziennikaname = \<Defaults to unique file name> ]**|

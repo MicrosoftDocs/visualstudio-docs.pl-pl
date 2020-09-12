@@ -1,6 +1,6 @@
 ---
 title: Omówienie reguł jakości kodu
-ms.date: 08/27/2020
+ms.date: 09/01/2020
 ms.topic: reference
 f1_keywords:
 - CA1000
@@ -253,16 +253,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e4b728fab6eb47501bb0d1bb752d22c0c29a8b4
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: a298ab142ae6a44c1fb24b2cb1b752f6beb4a68e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509448"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037240"
 ---
-# <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Ostrzeżenia analizy kodu dla kodu zarządzanego według CheckId
+# <a name="code-quality-analysis-rules-by-rule-id"></a>Reguły analizy jakości kodu według identyfikatora reguły
 
-Poniższa tabela zawiera ostrzeżenia analizy kodu dla kodu zarządzanego przez identyfikator CheckId ostrzeżenia.
+W poniższej tabeli przedstawiono reguły analizy jakości kodu według identyfikatora reguły.
 
 | CheckId | Ostrzeżenie | Opis |
 |---------| - | - |
@@ -466,7 +466,7 @@ Poniższa tabela zawiera ostrzeżenia analizy kodu dla kodu zarządzanego przez 
 | CA5358 | [CA5358: Nie używaj niebezpiecznych trybów szyfrowania](../code-quality/ca5358.md) | Nie używaj niebezpiecznych trybów szyfrowania |
 | CA5359 | [CA5359 nie wyłączaj weryfikacji certyfikatu](../code-quality/ca5359.md) | Certyfikat może pomóc uwierzytelnić tożsamość serwera programu. Klienci powinni sprawdzić poprawność certyfikatu serwera, aby upewnić się, że żądania są wysyłane do zamierzonego serwera. Jeśli ServerCertificateValidationCallback zawsze zwróci `true` , każdy certyfikat przejdzie pomyślnie weryfikację. |
 | CA5360 | [CA5360 nie wywoływać niebezpiecznych metod w deserializacji](../code-quality/ca5360.md) | Niezabezpieczona deserializacja jest luką w zabezpieczeniach, która występuje, gdy niezaufane dane są używane do nadużycia logiki aplikacji, wynoszą atak typu "odmowa usługi" (DoS), a nawet wykonują dowolny kod podczas deserializacji. Często Złośliwi użytkownicy mogą nadużyć tych funkcji deserializacji, gdy aplikacja deserializacji dane niezaufane, które są pod kontrolą. W celu wywołaj metody niebezpieczne w procesie deserializacji. Pomyślne niezabezpieczone ataki deserializacji mogą pozwolić atakującemu na przeprowadzanie ataków, takich jak ataki systemu DoS, obejścia uwierzytelniania i zdalne wykonywanie kodu. |
-| CA5361 | [CA5361: Nie wyłączaj użycia silnej kryptografii w pakiecie SChannel](../code-quality/ca5361.md) | Ustawienie `Switch.System.Net.DontEnableSchUseStrongCrypto` `true` obniżania poziomu kryptografii używanej w połączeniach wychodzących Transport Layer Security (TLS). Słabsze Kryptografia może naruszać poufność komunikacji między aplikacją a serwerem, ułatwiając atakującym eavesdrop poufnych danych. |
+| CA5361 | [CA5361: nie należy wyłączać użycia silnej kryptografii Schannel](../code-quality/ca5361.md) | Ustawienie `Switch.System.Net.DontEnableSchUseStrongCrypto` `true` obniżania poziomu kryptografii używanej w połączeniach wychodzących Transport Layer Security (TLS). Słabsze Kryptografia może naruszać poufność komunikacji między aplikacją a serwerem, ułatwiając atakującym eavesdrop poufnych danych. |
 | CA5362 | [CA5362 potencjalny cykl odwołań w grafie obiektu deserializowanego](../code-quality/ca5362.md) | W przypadku deserializacji niezaufanych danych, każdy kod przetwarzania deserializowanego grafu obiektów musi obsługiwać cykle odwołań bez przechodzenia do nieskończonych pętli. Obejmuje to zarówno kod, który jest częścią wywołania zwrotnego deserializacji i kod, który przetwarza Graf obiektu po zakończeniu deserializacji. W przeciwnym razie atakujący może przeprowadzić atak typu "odmowa usługi" ze złośliwymi danymi zawierającymi cykl referencyjny. |
 | CA5363 | [CA5363: Nie wyłączaj weryfikacji żądań](../code-quality/ca5363.md) | Sprawdzanie poprawności żądań jest funkcją w ASP.NET, która sprawdza żądania HTTP i określa, czy zawierają potencjalnie niebezpieczną zawartość, która może prowadzić do ataków iniekcji, w tym skryptów między lokacjami. |
 | CA5364 | [CA5364: Nie używaj przestarzałych protokołów zabezpieczeń](../code-quality/ca5364.md) | Transport Layer Security (TLS) zabezpiecza komunikację między komputerami, najczęściej przy użyciu protokołu Hypertext Transfer Protocol Secure (HTTPS). Starsze wersje protokołu TLS są mniej bezpieczne niż TLS 1,2 i TLS 1,3 i coraz bardziej mogą mieć nowe luki w zabezpieczeniach. Unikaj stosowania starszych wersji protokołów, aby zminimalizować ryzyko. |

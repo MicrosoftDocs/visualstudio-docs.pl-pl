@@ -1,5 +1,6 @@
 ---
 title: CATID dla obiektów zwykle używanych do rozszerania projektów
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf67b12288408feebebff2c33f525713416d4990
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: f69a2de627a0200f7b4eb2185e68d4de5ef2cf08
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742836"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037123"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATID dla obiektów, które są zwykle używane do rozszerania projektów
 Poniższa tabela zawiera listę CATID, które służą do rozbudowywania `Project` i `ProjectItem` automatyzacji obiektów dla [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] , [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] i [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] . Te CATID są zdefiniowane w *VSLangProj. olb*.

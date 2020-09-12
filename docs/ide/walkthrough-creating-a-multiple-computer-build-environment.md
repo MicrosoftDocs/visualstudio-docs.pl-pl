@@ -1,5 +1,6 @@
 ---
 title: tworzenie środowiska kompilowania na wielu komputerach
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bec0ada652da4ac02c457cdc280778487e4b27a1
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 595317be1c3f24c9759bc5bb574a758795066659
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743125"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038429"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Przewodnik: tworzenie środowiska kompilowania na wielu komputerach
 

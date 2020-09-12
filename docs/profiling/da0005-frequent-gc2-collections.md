@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 28969dd6f5adf1d0f32fe419a17f14ac4069a298
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4afddf8c0b25d262161df991f1a2a9d447a9a655
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85539922"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037201"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: Częste odzyskiwanie pamięci GC2
 
@@ -28,7 +28,7 @@ ms.locfileid: "85539922"
 |RuleId|DA0005|
 |Kategoria|Użycie .NET Framework|
 |Metoda profilowania|Pamięć platformy .NET|
-|Komunikat|Wiele obiektów jest zbieranych w wyrzucaniu elementów bezużytecznych generacji 2.|
+|Wiadomość|Wiele obiektów jest zbieranych w wyrzucaniu elementów bezużytecznych generacji 2.|
 |Typ wiadomości|Ostrzeżenie|
 
 ## <a name="cause"></a>Przyczyna
@@ -39,9 +39,9 @@ ms.locfileid: "85539922"
 
  Obiekty w generacji 0 są zbierane często i zwykle bardzo wydajnie. Obiekty w generacji 1 są zbierane rzadziej i mniej wydajne. Na koniec obiekty długotrwałe w generacji 2 powinny być zbierane nawet rzadziej. Kolekcja 2 generacji, która jest pełnym przebiegiem odzyskiwania pamięci, jest również najtańszą operacją.
 
- Ta reguła jest wyzwalana, gdy wystąpiło zbyt wiele kolekcji elementów bezużytecznych generacji 2. Jeśli zbyt wiele stosunkowo krótkotrwałych obiektów przeżyje kolekcję 1, ale można je zebrać w pełnej kolekcji generacji 2, koszty zarządzania pamięcią mogą być łatwo nadmierne. Aby uzyskać więcej informacji, zapoznaj się z wpisem [kryzysowym](https://blogs.msdn.microsoft.com/ricom/2003/12/04/mid-life-crisis/) w systemie Mariani w witrynie MSDN w sieci Web.
+ Ta reguła jest wyzwalana, gdy wystąpiło zbyt wiele kolekcji elementów bezużytecznych generacji 2. Jeśli zbyt wiele stosunkowo krótkotrwałych obiektów przeżyje kolekcję 1, ale można je zebrać w pełnej kolekcji generacji 2, koszty zarządzania pamięcią mogą być łatwo nadmierne. Aby uzyskać więcej informacji, zapoznaj się z wpisem [kryzysowym](/archive/blogs/ricom/mid-life-crisis) w systemie Mariani w witrynie MSDN w sieci Web.
 
 ## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie
  Przejrzyj raporty dotyczące [widoków danych pamięci .NET](../profiling/dotnet-memory-data-views.md) , aby zrozumieć wzorzec alokacji pamięci aplikacji. [Widok okres istnienia obiektu](../profiling/object-lifetime-view.md) służy do określania, które obiekty danych programu są przejmowane do generacji 2, a następnie odzyskiwane z tego miejsca. [Widok alokacje](../profiling/dotnet-memory-allocations-view.md) służy do określania ścieżki wykonywania, która spowodowała te przydziały.
 
- Aby uzyskać informacje na temat zwiększania wydajności odzyskiwania pamięci, zobacz [podstawy modułu zbierającego elementy bezużyteczne i wskazówki dotyczące wydajności](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) w witrynie sieci Web firmy Microsoft. Aby uzyskać informacje o obciążeniu automatycznego odzyskiwania pamięci, zapoznaj się z [pokrytym stertą dużego obiektu](https://msdn.microsoft.com/magazine/cc534993.aspx).
+ Aby uzyskać informacje na temat zwiększania wydajności odzyskiwania pamięci, zobacz [podstawy modułu zbierającego elementy bezużyteczne i wskazówki dotyczące wydajności](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) w witrynie sieci Web firmy Microsoft. Aby uzyskać informacje o obciążeniu automatycznego odzyskiwania pamięci, zapoznaj się z [pokrytym stertą dużego obiektu](/archive/msdn-magazine/2008/june/clr-inside-out-large-object-heap-uncovered).

@@ -1,6 +1,7 @@
 ---
 title: Rozszerzone właściwości, Lista zadań, dane wyjściowe, Opcje systemu Windows
 ms.date: 11/04/2016
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3059dbe1c28f0fd598e1a711952fa0bce8c4edde
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: c968544c6bf52a901052fc7aedbbee66dcc10e62
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743351"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038481"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Rozwiń okna właściwości, Lista zadań, dane wyjściowe i opcje
 Możesz uzyskać dostęp do dowolnego okna narzędzi w programie Visual Studio. W tym instruktażu pokazano, jak zintegrować informacje o oknie narzędzia z nową stroną **opcji** oraz nowe ustawienie na stronie **Właściwości** , a także jak zapisywać w oknach **Lista zadań** i **wyjściowych** .

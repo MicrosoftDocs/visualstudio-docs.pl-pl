@@ -9,21 +9,21 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: b369fe6998cd7ef134af765d6d849f41bc93527c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290668"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037533"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Analizowanie wydajności bazy danych przy użyciu narzędzia bazy danych
 
 Użyj narzędzia Database, aby zarejestrować zapytania bazy danych, które aplikacja wykonuje podczas sesji diagnostycznej. Następnie można analizować informacje o poszczególnych zapytaniach w celu znalezienia miejsc, aby zwiększyć wydajność aplikacji.
 
 > [!NOTE]
-> Narzędzie Database wymaga programu Visual Studio 2019 w wersji 16,3 lub nowszej oraz projektu .NET Core w systemie Windows przy użyciu [ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) lub [Entity Framework Core](https://docs.microsoft.com/ef/core/).
+> Narzędzie Database wymaga programu Visual Studio 2019 w wersji 16,3 lub nowszej oraz projektu .NET Core w systemie Windows przy użyciu [ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) lub [Entity Framework Core](/ef/core/).
 
-## <a name="setup"></a>Konfiguracja
+## <a name="setup"></a>Konfigurowanie
 
 1. Wybierz **kombinację klawiszy Alt + F2** , aby otworzyć Profiler wydajności w programie Visual Studio.
 
@@ -50,8 +50,8 @@ Po znalezieniu zapytania, które chcesz zbadać, kliknij prawym przyciskiem mysz
 
 ![Wybierz wybrany plik źródłowy](./media/db-gotosource.png "Wybierz wybrany plik źródłowy")
 
-Jeśli wybierzesz zakres czasu na wykresie, w tabeli zapytania są wyświetlane tylko zapytania, które wystąpiły w tym zakresie czasu. To zachowanie jest szczególnie przydatne, gdy uruchamiasz również [Narzędzie użycie procesora CPU](https://docs.microsoft.com/visualstudio/profiling/cpu-usage?view=vs-2019).
+Jeśli wybierzesz zakres czasu na wykresie, w tabeli zapytania są wyświetlane tylko zapytania, które wystąpiły w tym zakresie czasu. To zachowanie jest szczególnie przydatne, gdy uruchamiasz również [Narzędzie użycie procesora CPU](./cpu-usage.md?view=vs-2019).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Optymalizowanie ustawień profilera](../profiling/optimize-profiler-settings.md)

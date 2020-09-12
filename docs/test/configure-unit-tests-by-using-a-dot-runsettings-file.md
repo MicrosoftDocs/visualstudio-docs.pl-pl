@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f638d60b7bd4416bb7a19cc960cac1159c755ab3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38e542fed0f26422a88644577ec864ef006855c5
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972299"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038442"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *. runsettings*
 
@@ -107,7 +107,7 @@ Dodaj właściwość Build do projektu za pomocą pliku projektu lub pliku Direc
 
 - Ustawienia uruchomieniowe na poziomie projektu są obecnie obsługiwane w projektach C#, VB, C++ i F #.
 - Plik określony dla projektu zastępuje wszystkie inne pliki parametrów uruchomieniowych określone w rozwiązaniu.
-- [Te właściwości programu MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019) mogą służyć do określania ścieżki do pliku runsettings. 
+- [Te właściwości programu MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md) mogą służyć do określania ścieżki do pliku runsettings. 
 
 Przykład określenia pliku *. runsettings* dla projektu:
     
@@ -177,7 +177,7 @@ Każdy element konfiguracji jest opcjonalny, ponieważ ma wartość domyślną.
 
 Element **RunConfiguration** może zawierać następujące elementy:
 
-|Węzeł|Domyślne|Wartości|
+|Węzeł|Domyślny|Wartości|
 |-|-|-|
 |**MaxCpuCount**|1|To ustawienie określa stopień równoległego wykonywania testów podczas uruchamiania testów jednostkowych przy użyciu dostępnych rdzeni na komputerze. Aparat wykonywania testu jest uruchamiany jako proces odrębny dla każdego dostępnego rdzenia i zapewnia każdy rdzeń kontenera z testami do uruchomienia. Kontener może być zestawem, biblioteką DLL lub odpowiednim artefaktem. Kontener testowy jest jednostką planowania. W każdym kontenerze testy są uruchamiane zgodnie z platformą testową. Jeśli istnieje wiele kontenerów, a następnie procesy ukończyą wykonywanie testów w kontenerze, otrzymają następny dostępny kontener.<br /><br />MaxCpuCount może:<br /><br />n, gdzie 1 <= n <= liczba rdzeni: uruchomiono do n procesów<br /><br />n, gdzie n = jakakolwiek inna wartość: liczba uruchomionych procesów może być równa liczbie dostępnych rdzeni. Na przykład ustaw n = 0, aby umożliwić platformie automatyczne decydowanie o optymalnej liczbie procesów do uruchomienia w oparciu o środowisko.|
 |**ResultsDirectory**||Katalog, w którym są umieszczane wyniki testów. Ścieżka jest określana względem katalogu, który zawiera plik. runsettings.|
@@ -304,10 +304,10 @@ Te ustawienia są specyficzne dla adaptera testowego, który uruchamia metody te
 </MSTest>
 ```
 
-|Konfiguracja|Domyślne|Wartości|
+|Konfigurowanie|Domyślny|Wartości|
 |-|-|-|
 |**ForcedLegacyMode**|fałsz|W programie Visual Studio 2012 karta MSTest została zoptymalizowana tak, aby była szybsza i bardziej skalowalna. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość na **true** , aby użyć starszego adaptera testowego.<br /><br />Można na przykład użyć tego ustawienia, jeśli istnieje plik *app.config* określony dla testu jednostkowego.<br /><br />Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|
-|**IgnoreTestImpact**|fałsz|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w MSTest lub z Microsoft Test Manager (przestarzałe w programie Visual Studio 2017). To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz, [które testy należy uruchomić od poprzedniej kompilacji](https://msdn.microsoft.com/library/dd286589).|
+|**IgnoreTestImpact**|fałsz|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w MSTest lub z Microsoft Test Manager (przestarzałe w programie Visual Studio 2017). To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz, [które testy należy uruchomić od poprzedniej kompilacji](/previous-versions/dd286589(v=vs.140)).|
 |**SettingsFile**||W tym miejscu możesz określić plik ustawień testu, który ma być używany z kartą MSTest. Możesz również określić plik ustawień testu [w menu Ustawienia](#specify-a-run-settings-file-in-the-ide).<br /><br />Jeśli określisz tę wartość, musisz także ustawić **ForcedlegacyMode** na **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|fałsz|Po zakończeniu przebiegu testu MSTest jest zamykany. Każdy proces, który jest uruchamiany jako część testu, również zostanie zamknięty. Jeśli chcesz zatrzymać program wykonujący testy, ustaw wartość na **true**. Można na przykład użyć tego ustawienia, aby zachować działanie przeglądarki między kodowanymi testami interfejsu użytkownika.|
 |**DeploymentEnabled**|true|W przypadku ustawienia wartości **false**elementy wdrożenia określone w metodzie testowej nie są kopiowane do katalogu wdrożenia.|
@@ -458,9 +458,8 @@ Węzeł **RunConfiguration** powinien zawierać węzeł **EnvironmentVariables**
 > [!NOTE]
 > Ponieważ te zmienne środowiskowe zawsze powinny być ustawiane podczas uruchamiania hosta testowego, testy powinny być zawsze uruchamiane w osobnym procesie. Dla tej flagi flaga */inisolation.* zostanie ustawiona, gdy istnieją zmienne środowiskowe, aby Host testowy był zawsze wywoływany.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Konfigurowanie przebiegu testowego](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)
 - [Zadanie testowe programu Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
-

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0bb76de0d62ab504090d9ac1864ba7ee5627f69d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d7f3d943d621708efab8df1e2f69402a0c5f26c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537283"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038351"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizowanie użycia zasobów i działania wątku interfejsu użytkownika (XAML)
 
@@ -123,9 +123,9 @@ Pasek narzędzi **szczegóły osi czasu** umożliwia sortowanie, filtrowanie i o
 |![Filtruj listę szczegółów osi czasu](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtruje listę według wybranych kategorii i długości zdarzeń.|
 |![Dostosuj informacje szczegółowe dotyczące osi czasu](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Umożliwia określenie adnotacji do zdarzeń.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Blog zespołu WPF: nowe narzędzie do analizy wydajności interfejsu użytkownika dla aplikacji WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
+- [Blog zespołu WPF: nowe narzędzie do analizy wydajności interfejsu użytkownika dla aplikacji WPF](/archive/blogs/wpf/new-ui-performance-analysis-tool-for-wpf-applications)
 - [Najlepsze rozwiązania w zakresie wydajności dla aplikacji platformy UWP przy użyciu języków C++, C# i Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Optymalizowanie wydajności aplikacji WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)

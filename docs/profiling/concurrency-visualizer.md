@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b4e151db08ad5490ed6238223d553f9e76aa0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a955304e1a0939bbe7398b48a5e9ff30461d8745
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77192406"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037344"
 ---
 # <a name="concurrency-visualizer"></a>Concurrency Visualizer
 
@@ -49,12 +49,12 @@ Wizualizator współbieżności korzysta z funkcji [śledzenia zdarzeń dla syst
 |[Widok wątków](../profiling/threads-view-parallel-performance.md)|Opisuje sposób analizowania interakcji między wątkami w programie.|
 |[Widok rdzeni](../profiling/cores-view.md)|Opisuje sposób analizowania migracji wątków między rdzeniami.|
 |[Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Opisuje kilka typowych wzorców i pokazuje, jak pojawiają się one w wizualizatorze współbieżności.|
-|[Programowanie równoległe w blogu programu Visual Studio](https://blogs.msdn.microsoft.com/visualizeparallel/)|Zawiera wskazówki i najlepsze rozwiązania dotyczące wizualizatora współbieżności.|
+|[Programowanie równoległe w blogu programu Visual Studio](/archive/blogs/visualizeparallel/)|Zawiera wskazówki i najlepsze rozwiązania dotyczące wizualizatora współbieżności.|
 |[Widoki raportu wydajności](../profiling/performance-report-views.md)|Zawiera informacje referencyjne dotyczące raportów i widoków narzędzia profilowania programu Visual Studio.|
 |[Concurrency Visualizer SDK](../profiling/concurrency-visualizer-sdk.md)|Opisuje sposób Instrumentacji kodu źródłowego do wyświetlania dodatkowych informacji w wizualizatorze współbieżności.|
 |[Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Opisuje, jak używać narzędzia wiersza polecenia Concurrency Visualizer (CVCollectionCmd.exe) do zbierania i przetwarzania śladów na maszynach, które nie mają programu Visual Studio.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)
 - [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

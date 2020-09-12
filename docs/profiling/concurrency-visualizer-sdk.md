@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb48733f84dcf484d2c2d7ffb18e838faae07ab0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1732d62fa20e170825cba5e133a9a44f11a59a34
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911195"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037357"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Concurrency Visualizer SDK
-Możesz instrumentować kod źródłowy przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić dodatkowe informacje w wizualizatorze współbieżności. Możesz skojarzyć dodatkowe dane z fazami i zdarzeniami w kodzie. Te dodatkowe wizualizacje są znane jako *znaczniki*.  Aby zapoznać się z przewodnikiem wprowadzającym, zobacz [wprowadzenie do zestawu SDK wizualizatora współbieżności](https://blogs.msdn.microsoft.com/visualizeparallel/2011/10/17/introducing-the-concurrency-visualizer-sdk/).
+Możesz instrumentować kod źródłowy przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić dodatkowe informacje w wizualizatorze współbieżności. Możesz skojarzyć dodatkowe dane z fazami i zdarzeniami w kodzie. Te dodatkowe wizualizacje są znane jako *znaczniki*.  Aby zapoznać się z przewodnikiem wprowadzającym, zobacz [wprowadzenie do zestawu SDK wizualizatora współbieżności](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk).
 
 ## <a name="properties"></a>Właściwości
  Flagi, zakresy i komunikaty mają dwie właściwości: Category i ważności. W oknie dialogowym [Ustawienia zaawansowane](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) można użyć tych właściwości do filtrowania zestawu znaczników, które są wyświetlane. Ponadto te właściwości wpływają na wizualną reprezentację znaczników. Na przykład rozmiar flag jest używany do reprezentowania znaczenia. Dodatkowo kolor jest używany do wskazania kategorii.
@@ -119,7 +119,7 @@ Możesz instrumentować kod źródłowy przy użyciu zestawu SDK wizualizatora w
     CvWriteFlag(series, _T("Writing a flag"));
     ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 |Tytuł|Opis|
 |-----------|-----------------|

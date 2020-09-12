@@ -1,8 +1,8 @@
 ---
-title: 'Tworzenie aplikacji platforma uniwersalna systemu Windows (platformy UWP) za pomocą programów Visual Studio i C #'
+title: 'Tworzenie aplikacji platformy UWP za pomocą programów Visual Studio i C #'
 description: 'Tworzenie aplikacji platformy UWP w programie Visual Studio za pomocą języków XAML i C #'
 titleSuffix: ''
-ms.custom: seodec18, get-started
+ms.custom: seodec18, get-started, SEO-VS-2020
 ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1f541c94804f8f5f454f6299a116a8bd1386e7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249254"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037279"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Samouczek: Tworzenie pierwszej aplikacji platforma uniwersalna systemu Windows w programie Visual Studio za pomocą języków XAML i C&#35;
 
@@ -114,7 +114,7 @@ Rozpoczęcie tworzenia aplikacji jest czasochłonne. Dodasz kontrolkę Button, d
 
    Jeśli zobaczysz kod w **Edytorze XAML**, zobaczysz, że przycisk został już dodany.
 
-   ![Kliknij kontrolkę przycisk i przeciągnij ją na kanwę projektu](media/uwp-xaml-control-code-window.png)
+   ![Pokaż przycisk w edytorze XAML](media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Dodawanie etykiety do przycisku
 
@@ -209,7 +209,7 @@ Gratulujemy ukończenia tego samouczka. Mamy nadzieję, że znasz kilka podstawo
 > [!div class="nextstepaction"]
 > [Tworzenie interfejsu użytkownika](/windows/uwp/design/basics/xaml-basics-ui)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [PLATFORMY UWP — Omówienie](/windows/uwp/get-started/universal-application-platform-guide)
+- [Omówienie platformy UWP](/windows/uwp/get-started/universal-application-platform-guide)
 - [Pobierz przykłady aplikacji platformy UWP](/windows/uwp/get-started/get-uwp-app-samples)

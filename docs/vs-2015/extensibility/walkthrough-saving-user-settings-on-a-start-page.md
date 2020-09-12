@@ -9,10 +9,10 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8976d329f6303d60cc00609bc9ed9471456c1b63
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
+ms.lasthandoff: 09/11/2020
 ms.locfileid: "64837692"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Przewodnik: zapisywanie ustawień użytkownika na stronie początkowej
@@ -174,7 +174,7 @@ Ustawienia użytkownika można zachować na stronie początkowej. Postępując z
   
 3. W węźle **środowisko** kliknij pozycję **Uruchamianie**, a następnie na liście **Dostosuj stronę początkową** wybierz pozycję **[zainstalowane rozszerzenie] Zapisz stronę początkową moje ustawienia**.  
   
-     Kliknij przycisk **OK**.  
+     Kliknij pozycję **OK**.  
   
 4. Zamknij stronę początkową, jeśli jest otwarta, a następnie w menu **Widok** kliknij pozycję **Strona początkowa**.  
   

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9b4b412d2e9456142c1be1af388e2803634d15c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
+ms.lasthandoff: 09/11/2020
 ms.locfileid: "64834312"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Przewodnik: Tworzenie menu skrótów dla zakładek
@@ -192,7 +192,7 @@ ms.locfileid: "64834312"
 
 - Użyj pola wyboru, aby zmienić formatowanie w zakładce. Aby uzyskać więcej informacji, zobacz [Przewodnik: zmienianie formatowania dokumentu przy użyciu kontrolek CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wskazówki dotyczące korzystania z programu Word](../vsto/walkthroughs-using-word.md)
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)

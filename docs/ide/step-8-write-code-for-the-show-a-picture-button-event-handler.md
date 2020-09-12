@@ -1,6 +1,8 @@
 ---
-title: Krok 8. Pisanie kodu dla programu obsługi zdarzeń przycisku Pokaż obraz
+title: Napisz kod dla programu obsługi zdarzeń przycisku Pokaż obraz
+description: Napisz kod dla programu obsługi zdarzeń przycisku Pokaż obraz w samouczku Tworzenie obrazu przeglądarki.
 ms.date: 08/30/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d74c9ecda0e3ab23c1f2ab1cb2180a60701c069a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5718bd976952557d9ff5f92a0522a672757a54e8
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579808"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038663"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8. Pisanie kodu dla programu obsługi zdarzeń przycisku Pokaż obraz
 
@@ -105,7 +107,7 @@ Następnie użyj funkcji IntelliSense, aby wprowadzić więcej kodu, aby otworzy
 
 * Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 7. Dodawanie składników okna dialogowego do formularza](../ide/step-7-add-dialog-components-to-your-form.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](tutorial-2-create-a-timed-math-quiz.md)
 * [Samouczek 3: Tworzenie gry w dopasowywanie](tutorial-3-create-a-matching-game.md)

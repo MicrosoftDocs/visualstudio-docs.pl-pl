@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c1cdbea77f8a14e8f4cedcd53b54e2eac65cf75
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88144691"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037227"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Używanie środowiska laboratoryjnego do DevOps
 
@@ -129,23 +129,23 @@ Poniżej przedstawiono kilka dodatkowych koncepcji, z którymi należy się zapo
 
 Aby uzyskać więcej informacji na temat programu Lab Management, zobacz:
 
-* [Planowanie laboratorium](https://msdn.microsoft.com/library/ff756575%28v=vs.140%29.aspx)
-* [Administrowanie laboratorium](https://msdn.microsoft.com/library/dd936084%28v=vs.140%29.aspx)
-* [Konfiguracja dla środowisk SCVMM](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx)
-* [Zarządzanie uprawnieniami](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
-* [Zmień konfigurację](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)
-* [Rozwiązywanie problemów](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
+* [Planowanie laboratorium](/previous-versions/ff756575(v=vs.140))
+* [Administrowanie laboratorium](/previous-versions/dd936084(v=vs.140))
+* [Konfiguracja dla środowisk SCVMM](/previous-versions/dd380687(v=vs.140))
+* [Zarządzanie uprawnieniami](/previous-versions/dd380760(v=vs.140))
+* [Zmień konfigurację](/previous-versions/ee704508(v=vs.140))
+* [Rozwiązywanie problemów](/previous-versions/ee853230(v=vs.140))
 
 Aby uzyskać informacje o konfigurowaniu środowisk, zobacz:
 
 * [Tworzenie i wydawanie środowisk w chmurze](use-build-or-rm-instead-of-lab-management.md)
-* [Standardowe środowiska laboratoryjne](https://msdn.microsoft.com/library/ee390842.aspx)
-* [Środowiska SCVMM (wirtualne)](https://msdn.microsoft.com/library/ee943322.aspx)
-* [Tworzenie środowiska izolowanego od sieci i korzystanie z niego](https://msdn.microsoft.com/library/ee518924.aspx)
+* [Standardowe środowiska laboratoryjne](/previous-versions/ee390842(v=vs.140))
+* [Środowiska SCVMM (wirtualne)](/previous-versions/ee943322(v=vs.140))
+* [Tworzenie środowiska izolowanego od sieci i korzystanie z niego](/previous-versions/ee518924(v=vs.140))
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Instalowanie i konfigurowanie agentów testowych](../../test/lab-management/install-configure-test-agents.md)
-* [Przewodnik Visual Studio Lab Management](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)
+* [Przewodnik Visual Studio Lab Management](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions)
 * [Blog usługi Microsoft DevOps](https://devblogs.microsoft.com/devops/)

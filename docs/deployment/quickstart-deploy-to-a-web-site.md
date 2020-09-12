@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec5ea0b52c5d0708630a30b7d2b80be2275f3a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89d8acfa4bf0f5dd9f1f387389b9f7f523c153a7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173701"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036408"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Publikowanie aplikacji sieci Web w witrynie sieci Web przy użyciu programu Visual Studio
 
@@ -32,9 +32,9 @@ Za pomocą narzędzia do **publikowania** można publikować aplikacje ASP.NET, 
 
     ![Polecenie Publikuj w menu kontekstowym projektu w Eksplorator rozwiązań](../deployment/media/quickstart-publish.png "Wybierz pozycję Publikuj")
 
-1. Jeśli wszystkie profile publikowania zostały wcześniej skonfigurowane, zostanie wyświetlone okienko **Publikowanie** . Wybierz pozycję **Utwórz nowy profil**.
+1. Jeśli wszystkie profile publikowania zostały wcześniej skonfigurowane, zostanie wyświetlone okienko **Publikowanie** . Wybierz pozycję **Nowy**.
 
-1. W oknie dialogowym **Publikowanie** wybierz opcję **serwer sieci Web (IIS)**.
+1. W oknie **Publikowanie** wybierz opcję **serwer sieci Web (IIS)**.
 
     ![Wybieranie elementu docelowego publikowania](../deployment/media/quickstart-publish-iis.png "Wybierz usługi IIS, FTP itp.")
 
@@ -47,6 +47,8 @@ Za pomocą narzędzia do **publikowania** można publikować aplikacje ASP.NET, 
     ![Szczegóły połączenia Web Deploy](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
 1. Aby przeprowadzić publikowanie, wybierz pozycję **Publikuj** na stronie Podsumowanie. Okno dane wyjściowe pokazuje postęp wdrażania i wyniki.
+
+   Jeśli potrzebujesz pomocy w rozwiązywaniu problemów ASP.NET Core w usługach IIS, zobacz [Rozwiązywanie problemów ASP.NET Core na Azure App Service i usługach IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ## <a name="next-steps"></a>Następne kroki
 

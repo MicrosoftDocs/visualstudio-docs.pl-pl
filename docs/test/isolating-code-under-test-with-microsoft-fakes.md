@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 49330132321c389fc5b6a4842972769896c72637
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f92fe91c31f2b352d9d47a2d908a25f7bfdf2a7c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286963"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038416"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
 
@@ -33,7 +33,7 @@ Podróbki występują w dwóch wersjach:
 
 - Visual Studio Enterprise
 - Projekt .NET Framework
-- Obsługa projektu w stylu .NET Core i zestawu SDK jest obecnie w wersji zapoznawczej. [Przeczytaj więcej](https://docs.microsoft.com/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
+- Obsługa projektu w stylu .NET Core i zestawu SDK jest obecnie w wersji zapoznawczej. [Przeczytaj więcej](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
 
 > [!NOTE]
 > - Projekty .NET Standard nie są obsługiwane.

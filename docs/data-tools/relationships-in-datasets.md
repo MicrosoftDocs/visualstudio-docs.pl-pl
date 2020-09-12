@@ -1,5 +1,6 @@
 ---
 title: Tworzenie relacji między zestawami danych
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6c30fb068a9a25c3cd8a6b6237aefbccc666e49e
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 93575cb299513dbb0616f3c7ed6f1c7db6d65bb5
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739228"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037689"
 ---
 # <a name="create-relationships-between-datasets"></a>Tworzenie relacji między zestawami danych
 Zestawy danych, które zawierają tabele powiązane z danymi, używają <xref:System.Data.DataRelation> obiektów do reprezentowania relacji nadrzędny/podrzędny między tabelami i zwracania powiązanych rekordów ze sobą. Dodawanie powiązanych tabel do zestawów danych za pomocą **Kreatora konfiguracji źródła danych**lub **Projektant obiektów DataSet**, tworzy i konfiguruje <xref:System.Data.DataRelation> obiekt.
