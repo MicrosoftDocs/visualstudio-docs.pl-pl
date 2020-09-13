@@ -1,6 +1,8 @@
 ---
-title: Krok 11. Uruchamianie aplikacji Przeglądarka obrazów i wypróbuj inne funkcje
+title: Uruchom aplikację przeglądarka obrazów i wypróbuj inne funkcje
+description: Uruchom aplikację przeglądarka obrazów i wypróbuj inne funkcje w samouczku Tworzenie obrazu przeglądarki.
 ms.date: 09/11/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 865064bd85d45ccb24129d289b48143321486ca1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47a2efac2e317fc8e3d168f4b8b19bfb10014cf2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579904"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036941"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Krok 11. Uruchamianie aplikacji Przeglądarka obrazów i wypróbuj inne funkcje
 
@@ -56,7 +58,7 @@ Aby dowiedzieć się więcej, przejdź do następującego samouczka:
 
 Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 10. Pisanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Więcej samouczków dotyczących języka C#](/visualstudio/get-started/csharp/)
 * [Więcej samouczków Visual Basic](/visualstudio/get-started/visual-basic/)

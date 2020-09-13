@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3636f87db5c395f1660d9271d0eed5cacec99161
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75845811"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036902"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrań akcji
 
@@ -59,17 +59,17 @@ Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkow
 | Windows Forms 2.0 i nowsze wersje | W pełni obsługiwane. **Uwaga:**  Formanty NetFx są w pełni obsługiwane, ale nie wszystkie formanty innych firm są obsługiwane. |
 | WPF 3.5 i nowsze wersje | W pełni obsługiwane.<br /><br /> **Uwaga** Formanty NetFx są w pełni obsługiwane, ale nie wszystkie formanty innych firm są obsługiwane. |
 | Windows Win32 | Może pracować z niektórymi znanymi problemami, ale nie jest oficjalnie obsługiwany. |
-| MFC | Obsługiwane częściowo. Zobacz [UITest Framework](https://blogs.msdn.microsoft.com/vstsqualitytools/2010/04/15/uitest-framework-mfc-support-in-vs-2010/) , aby uzyskać szczegółowe informacje o obsługiwanych funkcjach. |
-| SharePoint | W pełni obsługiwane. |
+| MFC | Obsługiwane częściowo. Zobacz [UITest Framework](/archive/blogs/vstsqualitytools/uitest-framework-mfc-support-in-vs-2010) , aby uzyskać szczegółowe informacje o obsługiwanych funkcjach. |
+| Sharepoint | W pełni obsługiwane. |
 | Aplikacje klienckie pakietu Office | Nieobsługiwane. |
 | Klient sieci web Dynamics CRM | W pełni obsługiwane. |
-| Klient Dynamics (Ax) 2012 | Akcje odtwarzania i nagrywania są obsługiwane częściowo. Aby uzyskać szczegółowe informacje, zobacz Program [Visual Studio 10 kodowanego interfejsu użytkownika i obsługi nagrań akcji dla systemu Microsoft Dynamics](https://blogs.msdn.microsoft.com/dave_froslie/2011/09/01/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012/) . |
+| Klient Dynamics (Ax) 2012 | Akcje odtwarzania i nagrywania są obsługiwane częściowo. Aby uzyskać szczegółowe informacje, zobacz Program [Visual Studio 10 kodowanego interfejsu użytkownika i obsługi nagrań akcji dla systemu Microsoft Dynamics](/archive/blogs/dave_froslie/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012) . |
 | SAP | Nieobsługiwane. |
 | Citrix/usługi terminalowe | Nie zalecamy rejestrowania akcji na serwerze terminali. Rejestrator nie obsługuje jednoczesnego uruchamiania wielu wystąpień. |
 | PowerBuilder | Obsługiwane częściowo.<br /><br /> Obsługa zakresu ułatwień dostępu jest włączona dla formantów PowerBuilder. |
 
 Aby uzyskać informacje na temat sposobu tworzenia rozszerzeń do obsługi innych platform, zobacz [Włączanie testowania kodowanego interfejsu użytkownika dla kontrolek](../test/enable-coded-ui-testing-of-your-controls.md) i [rozszerzanie KODOWANYCH testów interfejsu użytkownika i nagrań akcji](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)

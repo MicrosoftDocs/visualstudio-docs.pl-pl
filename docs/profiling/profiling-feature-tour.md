@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 268273b39db83a831a65805a8cc1cafc28a103ec
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507992"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036928"
 ---
 # <a name="first-look-at-profiling-tools"></a>Pierwsze spojrzenie na narzędzia profilowania
 
@@ -135,7 +135,7 @@ W przypadku aplikacji .NET Core, które używają ADO.NET lub Entity Framework C
 
 Narzędzie wyświetla każde zapytanie w widoku listy. Można wyświetlić informacje takie jak godzina rozpoczęcia zapytania i czas trwania.
 
-![Dział](./media/db-gotosource.png "Alokacja")
+![Alokacja](./media/db-gotosource.png "Alokacja")
 
 ::: moniker-end
 
@@ -147,7 +147,7 @@ W aplikacjach platformy UWP można włączyć **analizę interfejsu użytkownika
 
 ## <a name="analyze-gpu-usage-direct3d"></a>Analizowanie użycia procesora GPU (Direct3D)
 
-W aplikacjach Direct3D (składniki Direct3D muszą znajdować się w języku C++) można sprawdzić aktywność procesora GPU i analizować problemy z wydajnością. Aby uzyskać więcej informacji, zobacz [użycie procesora GPU](/visualstudio/debugger/graphics/gpu-usage). Aby użyć narzędzia, wybierz pozycję **użycie procesora GPU** w profilerze wydajności, a następnie wybierz polecenie **Uruchom**. W aplikacji przejdź do scenariusza, który Cię interesuje, a następnie wybierz pozycję **Zatrzymaj zbieranie** , aby wygenerować raport.
+W aplikacjach Direct3D (składniki Direct3D muszą znajdować się w języku C++) można sprawdzić aktywność procesora GPU i analizować problemy z wydajnością. Aby uzyskać więcej informacji, zobacz [użycie procesora GPU](./gpu-usage.md). Aby użyć narzędzia, wybierz pozycję **użycie procesora GPU** w profilerze wydajności, a następnie wybierz polecenie **Uruchom**. W aplikacji przejdź do scenariusza, który Cię interesuje, a następnie wybierz pozycję **Zatrzymaj zbieranie** , aby wygenerować raport.
 
 Po wybraniu przedziału czasowego na wykresach i wybraniu opcji **Wyświetl szczegóły**w dolnym okienku pojawi się widok szczegółowy. W widoku szczegółowym można sprawdzić, jaka część działania odbywa się na każdym procesorze CPU i procesorze GPU. Wybierz pozycję zdarzenia w dolnym okienku, aby wyświetlić okna podręczne na osi czasu. Na przykład wybierz **istniejące** zdarzenie, aby wyświetlić **wyświetlane** okna podręczne wywołań. (Jasne szare linie pionie mogą służyć jako odwołanie, aby zrozumieć, czy niektóre **obecne** wywołania zostały pominięte pionie. Aby aplikacja mogła stale osiągnąć 60 FPS, musi istnieć jedno **istniejące** wywołanie między wszystkimi dwoma Vsyncs.
 
@@ -203,10 +203,10 @@ Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanyc
 |Narzędzie wydajności|Pulpit systemu Windows|Platforma UWP|ASP.NET/ASP.NET rdzeń|
 |----------------------|---------------------|-------------|-------------|
 |[Wskazówki dotyczące wydajności](../profiling/perftips.md)|tak|tak|tak|
-|[Użycie procesora](../profiling/cpu-usage.md)|tak|tak|tak|
+|[Użycie procesora CPU](../profiling/cpu-usage.md)|tak|tak|tak|
 |[Użycie pamięci](../profiling/memory-usage.md)|tak|tak|tak|
 |[Alokacja obiektu platformy .NET](../profiling/dotnet-alloc-tool.md)|tak (tylko platforma .NET)|tak|tak|
-|[Użycie procesora GPU](/visualstudio/debugger/graphics/gpu-usage)|tak|tak|nie|
+|[Użycie procesora GPU](./gpu-usage.md)|tak|tak|nie|
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|tak|tak|nie|
 |[Podgląd zdarzeń](../profiling/events-viewer.md)|tak|tak|tak|
 |[.NET Async](../profiling/analyze-async.md)|tak (tylko platforma .NET)|tak|tak|
@@ -218,9 +218,9 @@ Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanyc
 ::: moniker range="vs-2017"
 |Narzędzie wydajności|Pulpit systemu Windows|Platforma UWP|ASP.NET/ASP.NET rdzeń|
 |----------------------|---------------------|-------------|-------------|
-|[Użycie procesora](../profiling/cpu-usage.md)|tak|tak|tak|
+|[Użycie procesora CPU](../profiling/cpu-usage.md)|tak|tak|tak|
 |[Użycie pamięci](../profiling/memory-usage.md)|tak|tak|tak|
-|[Użycie procesora GPU](/visualstudio/debugger/graphics/gpu-usage)|tak|tak|nie|
+|[Użycie procesora GPU](./gpu-usage.md)|tak|tak|nie|
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|tak|tak|nie|
 |[Wskazówki dotyczące wydajności](../profiling/perftips.md)|tak|tak dla języka XAML, nie dla HTML|tak|
 |[Eksplorator wydajności](../profiling/performance-explorer.md)|tak|nie|tak|
@@ -231,5 +231,5 @@ Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanyc
 ::: moniker-end
 
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie w Visual Studio](../debugger/debugger-feature-tour.md)

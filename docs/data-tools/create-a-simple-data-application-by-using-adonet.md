@@ -1,5 +1,6 @@
 ---
 title: Tworzenie prostej aplikacji do obsługi danych za pomocą pakietu ADO.NET
+ms.custom: SEO-VS-2020
 ms.date: 08/23/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c7db4d0072f217604e7ca163e581cc8fe138ffdb
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586877"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037435"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji do obsługi danych za pomocą pakietu ADO.NET
 
@@ -233,6 +234,6 @@ Aby ukończyć logikę formularza FillOrCancel, wykonaj następujące kroki.
 
 Wybierz klawisz **F5** , aby skompilować i przetestować aplikację po wprowadzeniu kodu dla każdej procedury obsługi zdarzeń, a następnie po zakończeniu kodowania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

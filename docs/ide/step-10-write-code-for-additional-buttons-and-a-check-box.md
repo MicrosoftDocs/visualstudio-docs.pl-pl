@@ -1,6 +1,8 @@
 ---
-title: Krok 10. Pisanie kodu dla dodatkowych przycisków i pola wyboru
+title: Pisanie kodu dla dodatkowych przycisków i pola wyboru
+description: Dowiedz się, jak napisać kod dla dodatkowych przycisków i pola cheeck w samouczku Tworzenie przeglądarki obrazów.
 ms.date: 08/30/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 185cf370-ab39-4ac0-b6bc-601d5b95a4a2
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0dc7281b51d0efe0d19020df6a154e332ad9bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d66f7705821025bd5e30ea0d0c7f2dd57d540e4
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579439"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036915"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Krok 10. Pisanie kodu dla dodatkowych przycisków i pola wyboru
 
@@ -48,7 +50,7 @@ Dodaj następujący kod do pliku kodu **Form1** (*Form1.cs* lub *Form1. vb*).
 
 * Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 9: przeglądanie, komentowanie i testowanie kodu](../ide/step-9-review-comment-and-test-your-code.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](tutorial-2-create-a-timed-math-quiz.md)
 * [Samouczek 3: Tworzenie gry w dopasowywanie](tutorial-3-create-a-matching-game.md)

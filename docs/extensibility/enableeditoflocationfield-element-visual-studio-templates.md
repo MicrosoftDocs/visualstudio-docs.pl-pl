@@ -1,6 +1,7 @@
 ---
 title: EnableEditOfLocationField — Element (szablony Visual Studio)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9baee9e7497f5b65022b8a0b938f4a8a63140ab2
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 0fdc6398a5130c2f537c2f1ad6b12f484add42b3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741722"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037409"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField, element (szablony Visual Studio)
 Określa, czy użytkownik może edytować pole lokalizacji.
