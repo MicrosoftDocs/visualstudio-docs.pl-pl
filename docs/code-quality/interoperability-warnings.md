@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 306c2477e6e5f731ed6dbf20b2cf4d03d4556467
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 9f09ccafb79a87dff5c18bb4af11a12e1b1729a4
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509916"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100503"
 ---
 # <a name="portability-and-interoperability-warnings"></a>Ostrzeżenia dotyczące przenośności i współdziałania
 
@@ -33,4 +33,5 @@ Ostrzeżenia dotyczące przenośności obsługują przenośność na różnych p
 | Reguła | Opis |
 | - | - |
 | [CA1401: P/Invoke nie powinna być widoczna](../code-quality/ca1401.md) | Metoda publiczna lub chroniona w typie publicznym ma atrybut System.Runtime.InteropServices.DllImportAttribute (również zaimplementowany przez słowo kluczowe Declare w Visual Basic). Takie metody nie powinny być udostępniane. |
+| [CA1416: Weryfikuj zgodność platformy](../code-quality/ca1416.md) | Korzystanie z interfejsów API zależnych od platformy w składniku sprawia, że kod przestaje działać na wszystkich platformach. |
 | [CA1417: nie należy używać `OutAttribute` w parametrach ciągu dla elementu P/Invoke](../code-quality/ca1417.md) | Parametry ciągu przesyłane przez wartość z `OutAttribute` mogą destabilizację środowiska uruchomieniowego, jeśli ciąg jest ciągiem z stażystami. |

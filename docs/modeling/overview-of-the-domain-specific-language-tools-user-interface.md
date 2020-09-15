@@ -1,5 +1,6 @@
 ---
-title: Omówienie interfejsu użytkownika narzędzi językowych właściwych dla domeny
+title: Przegląd interfejsu użytkownika narzędzia języka specyficznego dla domeny
+description: Zawiera omówienie interfejsu użytkownika rozwiązania narzędzi języka specyficznego dla domeny w programie Visual Studio.
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -9,14 +10,15 @@ helpviewer_keywords:
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: af28ca94639b1c6a800c0c43e41d3ccabb74d9bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 549726d16a5fc1129f8c773ef143267e4c9bc31e
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532408"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100725"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Omówienie interfejsu użytkownika narzędzi językowych właściwych dla domeny
 Po pierwszym otwarciu rozwiązania narzędzia języka specyficznego dla domeny (narzędzia DSL) w programie Visual Studio interfejs użytkownika będzie wyglądał na poniższym obrazie.
@@ -25,7 +27,7 @@ Po pierwszym otwarciu rozwiązania narzędzia języka specyficznego dla domeny (
 
  W poniższej tabeli opisano, jak są używane części interfejsu użytkownika.
 
-|**Element**|**Definicja**|
+|**Postaci**|**Definicja**|
 |-|-|
 |Diagram|Na diagramie zostanie wyświetlony model domeny.<br /><br /> Diagram ma dwie strony. Jedna strona definiuje typy elementów w modelach. Druga strona definiuje sposób wyświetlania modeli na ekranie.|
 |Przybornik|Przeciągnij narzędzia z przybornika, aby dodać klasy domeny i typy kształtów do diagramu. Aby dodać relacje, łączniki i mapy kształtów, kliknij narzędzie, a następnie kliknij węzeł źródłowy na diagramie, a następnie węzeł docelowy.|
@@ -46,7 +48,7 @@ Po pierwszym otwarciu rozwiązania narzędzia języka specyficznego dla domeny (
 |Kształty i łączniki|Kształty określają sposób wyświetlania elementów modelu na diagramie DSL. łączniki określają linie na diagramie DSL, których można użyć do wyświetlania relacji.<br /><br /> Aby utworzyć kształt lub łącznik, przeciągnij narzędzie do strony **elementy diagramu** na diagramie.|
 |Mapy kształtów|Mapa kształtów jest wyświetlana jako linia na diagramie modelu domeny, łącząca kształt z klasą domeny, która jest wyświetlana, lub łącznikiem z wyświetlaną relacją domeny.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przegląd narzędzi języka specyficznego dla domeny](../modeling/overview-of-domain-specific-language-tools.md)
 - [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

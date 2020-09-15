@@ -1,21 +1,21 @@
 ---
-title: Zarządzanie zależnościami pakietów za pomocą pliku requirements.txt
+title: Zarządzanie zależnościami pakietów za pomocą requirements.txt
 description: Plik requirements.txt opisuje zależności projektu. Jeśli zostanie wyświetlony projekt zawierający plik requirements.txt, można łatwo zainstalować te zależności w jednym kroku.
 ms.date: 03/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9179ca2b77e7a6d3ae5b5dffded06524114a0f8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b65072e7a9ffa5d3767a5ff66fda25b231c622ef
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544121"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100542"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Zarządzaj wymaganymi pakietami za pomocą requirements.txt
 
@@ -66,7 +66,7 @@ Cleaning up...
     Removing temporary dir C:\Project\env\build...
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie środowiskami języka Python w programie Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Wybieranie interpretera dla projektu](selecting-a-python-environment-for-a-project.md)

@@ -1,18 +1,20 @@
 ---
-title: Tworzenie języka specyficznego dla domeny opartego na formularzach systemu Windows
+title: Tworzenie języka specyficznego dla domeny opartego na modelu Windows Forms
+description: Zawiera informacje dotyczące sposobu używania Windows Forms do wyświetlania stanu modelu języka specyficznego dla domeny.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e4c712eed732830da4bc1b158c8ad53a65a45d8
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238364"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100456"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na Windows Forms
 
@@ -67,9 +69,9 @@ Po zaktualizowaniu pliku definicji DSL w celu zdefiniowania własnego modemu DSL
 
 ## <a name="update-the-dsl-definition"></a>Aktualizowanie definicji DSL
 
-W tym instruktażu zostanie użyta następująca Definicja DSL.
+Poniższy obraz to Definicja DSL użyta w tym instruktażu.
 
-![Język DSL&#45;WPF&#45;1](../modeling/media/dsl-wpf-1.png)
+![Definicja DSL](../modeling/media/dsl-wpf-1.png)
 
 1. Otwórz DslDefinition. DSL w projektancie DSL.
 
@@ -127,7 +129,7 @@ Teraz można utworzyć nową kontrolkę użytkownika, która będzie wyświetla�
 
      Właściwości i relacje klasy modelu są wyświetlane w oknie źródła danych.
 
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
+     ![Okno źródeł danych](../modeling/media/dslwpf-3.png)
 
 ### <a name="connect-your-model-to-a-form"></a>Łączenie modelu z formularzem
 
@@ -172,7 +174,9 @@ Teraz można utworzyć nową kontrolkę użytkownika, która będzie wyświetla�
 
 - Gwarantuje to, że gdy użytkownik wybierze wiersz, okno Właściwości wyświetla właściwości odpowiedniego elementu modelu, a nie wiersz siatki danych.
 
-  ![DslWpf4 ](../modeling/media/dslwpf4.png) schemat linków między źródłami danych i widokami.
+  ![Schemat powiązania DSL](../modeling/media/dslwpf4.png)
+  
+  Schemat linków między źródłami danych i widokami.
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>Ukończ powiązania z DSL
 
@@ -298,7 +302,7 @@ Rozwiązanie DSL może teraz kompilować i uruchamiać, chociaż warto później
 
     Powinno być możliwe edytowanie nazwy elementu w widoku siatki danych. Możesz również z niej usunąć.
 
-   ![DSL&#45;WPF&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![Widok siatki przykładowych danych](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Informacje o kodzie umożliwiającym dodanie elementu
 
@@ -319,7 +323,7 @@ Jednak ten kod nie ustawia domyślnej nazwy dla nowego elementu. Nie jest wykony
 
 Dlatego zalecamy użycie <xref:Microsoft.VisualStudio.Modeling.ElementOperations> programu w celu utworzenia nowych elementów. Aby uzyskać więcej informacji, zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
 - [Napisz kod, aby dostosować język specyficzny dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)

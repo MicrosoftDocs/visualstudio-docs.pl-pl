@@ -1,21 +1,21 @@
 ---
-title: Szybki Start — Tworzenie projektu w języku Python za pomocą Cookiecutter
+title: Szybki Start — tworzenie projektów języka Python za pomocą Cookiecutter
 description: W tym przewodniku szybki start utworzysz projekt programu Visual Studio dla języka Python przy użyciu szablonu Cookiecutter.
 ms.date: 02/25/2019
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3f3e7f56f4a36a7958cba9bd7092f38d735123d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6868b4c581674c8015d30bf81f64f2ab24ea2ee0
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62954512"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100738"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Szybki Start: Tworzenie projektu na podstawie szablonu Cookiecutter
 
@@ -46,7 +46,7 @@ Po [zainstalowaniu obsługi języka Python w programie Visual Studio](installing
 > [!div class="nextstepaction"]
 > [Samouczek: współpraca z językiem Python w programie Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Użyj rozszerzenia Cookiecutter](using-python-cookiecutter-templates.md)
 - [Ręcznie Zidentyfikuj istniejący interpreter języka Python](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

@@ -1,5 +1,5 @@
 ---
-title: Mierzenie wydajności za pomocą narzędzi profilowania
+title: Wprowadzenie do narzędzi profilowania
 description: Zapoznaj się z różnymi narzędziami diagnostycznymi dostępnymi w programie Visual Studio.
 ms.custom: ''
 ms.date: 09/08/2020
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ebc2a2e7c4b10d835a20abcdd8392fb1851596a
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 28f382e8d20f3aa623ea241702e4795854e12f9a
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074926"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100777"
 ---
 # <a name="first-look-at-profiling-tools"></a>Pierwsze spojrzenie na narzędzia profilowania
 
@@ -57,7 +57,7 @@ Otwórz Profiler wydajności, wybierając pozycję **Debuguj**  >  **Profiler wy
 
 ![Profiler wydajności](../profiling/media/prof-tour-performance-profiler.png "Profiler wydajności")
 
-W niektórych scenariuszach okno umożliwia wybranie [wielu narzędzi profilowania](../profiling/use-multiple-profiler-tools-simultaneously.md). Narzędzia takie jak użycie procesora CPU mogą zapewnić uzupełniające dane, których można użyć do analizy. Możesz również użyć [profilera wiersza polecenia](../profiling/profile-apps-from-command-line.md) , aby włączyć scenariusze obejmujące wiele narzędzi profilowania.
+Aby uzyskać więcej informacji na temat użycia procesora CPU lub narzędzia użycie pamięci w profilerze wydajności a narzędzia zintegrowane z debugerem, zobacz [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md). 
 
 Narzędzia dostępne w profilerze wydajności obejmują:
 
@@ -70,7 +70,7 @@ Narzędzia dostępne w profilerze wydajności obejmują:
 
 Aby wyświetlić obsługę narzędzia profilowania dla różnych typów aplikacji, zobacz [narzędzie, którego należy użyć?](#which-tool-should-i-use)
 
-Aby uzyskać więcej informacji na temat użycia procesora CPU lub narzędzia użycie pamięci w profilerze wydajności a narzędzia zintegrowane z debugerem, zobacz [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md). 
+W niektórych scenariuszach okno umożliwia wybranie [wielu narzędzi profilowania](../profiling/use-multiple-profiler-tools-simultaneously.md). Narzędzia takie jak użycie procesora CPU mogą zapewnić uzupełniające dane, których można użyć do analizy. Możesz również użyć [profilera wiersza polecenia](../profiling/profile-apps-from-command-line.md) , aby włączyć scenariusze obejmujące wiele narzędzi profilowania.
 
 ## <a name="examine-performance-using-perftips"></a>Sprawdzanie wydajności przy użyciu funkcja PerfTip
 

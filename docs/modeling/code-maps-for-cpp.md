@@ -1,18 +1,20 @@
 ---
-title: Zobacz zależności między plikami źródłowymi C++ a plikami nagłówkowymi
+title: Wyświetlanie zależności między plikami źródłowymi i nagłówkami C++
+description: Zawiera informacje na temat map kodu dla projektów języka C++.
 ms.date: 05/16/2018
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
+ms.custom: SEO-VS-2020
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a17015c7efbb51027450e06bd1fb571ef9820d48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b33e9400926dd7d1f7a2dc5a66a33ec2fb244b1b
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597246"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100443"
 ---
 # <a name="code-maps-for-c-projects"></a>Mapy kodu dla projektów C++
 
@@ -38,7 +40,7 @@ Te elementy nie są obsługiwane dla kodu C i C++:
 
 Te problemy mogą wystąpić podczas tworzenia map kodu dla kodu C i C++:
 
-|**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|
+|**Problem**|**Możliwa przyczyna**|**Rozwiązanie**|
 |-|-|-|
 |Nie można wygenerować mapy kodu.|Żadne projekty w rozwiązaniu nie zostały pomyślnie skompilowane.|Napraw błędy kompilacji, które wystąpiły, a następnie ponownie Wygeneruj mapę.|
 |Program Visual Studio przestaje odpowiadać przy próbie wygenerowania mapy kodu z menu **architektury** .|Plik bazy danych programu (.pdb) może być uszkodzony.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Kompiluj rozwiązanie ponownie, a następnie spróbuj jeszcze raz.|
@@ -49,6 +51,6 @@ Te problemy mogą wystąpić podczas tworzenia map kodu dla kodu C i C++:
 ||Informacje o debugowaniu pochodzą z pliku .pdb.|Jeśli w konsolidatorze użyto opcji **/PDBSTRIPPED** , Dołącz do niej kompletny plik. pdb.|
 ||Obiekt wywołujący nie jest funkcją i jest albo osadzony w pliku binarnym, albo stanowi wskaźnik w sekcji danych.|Gdy obiekt wywołujący jest thunk, spróbuj użyć, `_declspec(dllimport)` Aby uniknąć thunk.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Mapowanie zależności za pomocą map kodu](../modeling/map-dependencies-across-your-solutions.md)

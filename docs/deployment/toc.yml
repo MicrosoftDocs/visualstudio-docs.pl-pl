@@ -14,7 +14,7 @@
       href: quickstart-deploy-to-linux.md
     - name: Wdrażanie w witrynie internetowej
       href: quickstart-deploy-to-a-web-site.md
-    - name: Wdrażanie w folderze lokalnym
+    - name: Wdrażanie w folderze
       href: quickstart-deploy-to-local-folder.md
 - name: Samouczki
   items:

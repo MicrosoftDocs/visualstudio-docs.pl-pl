@@ -1,5 +1,6 @@
 ---
-title: Generowanie szablonów z szablonów przy użyciu sekwencji unikowych
+title: Generowanie szablonu tekstu na podstawie szablonu tekstowego
+description: Zawiera informacje o sposobach generowania szablonu tekstu z innego szablonu tekstu przy użyciu sekwencji unikowych.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,14 +8,15 @@ helpviewer_keywords:
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 1460b03a027a2b33844edc7d617f8b5f21208772
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7ef983525842023247433e7a3c2b51e206a1cee
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594646"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100764"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Porady: generowanie szablonów z szablonów przy użyciu sekwencji unikowych
 Można utworzyć szablon tekstu, który tworzy inny szablon tekstowy jako wygenerowany tekst wyjściowy. W tym celu należy użyć sekwencji unikowych, aby odróżnić Tagi szablonu tekstu. Jeśli nie używasz sekwencji unikowych, wygenerowany szablon tekstu będzie miał wstępnie zdefiniowane znaczenie. Aby uzyskać więcej informacji o używaniu sekwencji ucieczki w szablonach tekstowych, zobacz [Używanie sekwencji unikowych w szablonach tekstowych](../modeling/using-escape-sequences-in-text-templates.md).
