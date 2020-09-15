@@ -1,5 +1,5 @@
 ---
-title: Analiza jakości kodu
+title: Konfiguracja analizatora
 ms.date: 09/02/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cbe22571a2485d163960cc7af58975f0a299bf9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
+ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036376"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90560752"
 ---
-# <a name="configure-code-quality-analysis"></a>Konfigurowanie analizy jakości kodu
+# <a name="overview"></a>Omówienie
 
-Począwszy od platformy .NET 5,0, analizatory jakości kodu są dołączone do zestawu .NET SDK. (Wcześniej te analizatory zostały zainstalowane jako pakiet NuGet). Analiza kodu jest domyślnie włączona dla projektów przeznaczonych dla platformy .NET 5,0 lub nowszej. Możesz włączyć analizę kodu dla projektów przeznaczonych dla wcześniejszych wersji .NET, ustawiając właściwość [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) na `true` . Możesz również wyłączyć analizę kodu dla projektu, ustawiając wartość `EnableNETAnalyzers` na `false` .
-
-Każda *Diagnostyka* lub reguła analizatora jakości kodu ma domyślną ważność i stan pomijania, które mogą zostać nadpisywane i dostosowane do projektu. W tym artykule opisano ustawianie odpadków i pomijanie naruszeń analizatora jakości kodu.
+Każda *Diagnostyka* lub reguła analizatora Roslyn ma domyślną ważność i stan pomijania, które mogą zostać nadpisywane i dostosowane do projektu. W tym artykule omówiono Ustawianie i pomijanie wypadków analizatora.
 
 ## <a name="configure-severity-levels"></a>Konfigurowanie poziomów ważności
 

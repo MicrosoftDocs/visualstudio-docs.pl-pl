@@ -16,9 +16,9 @@
       href: quickstart-cpu-usage-aspnet.md
 - name: Samouczki
   items:
-    - name: Wydajność aplikacji profilującej w programie Visual Studio
+    - name: Mierzenie wydajności aplikacji w programie Visual Studio
       href: beginners-guide-to-performance-profiling.md
-    - name: Użycie pamięci profilu w programie Visual Studio
+    - name: Mierzenie użycia pamięci w programie Visual Studio
       href: memory-usage.md
 - name: Pojęcia
   items:

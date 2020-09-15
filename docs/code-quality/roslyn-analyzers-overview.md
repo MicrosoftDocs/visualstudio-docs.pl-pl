@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d61ebaa191e94439629d7ac5f85a6921163ed08b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d0489950b9132a36aef8ecb3d8374c02d1a1aee2
+ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036600"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90560739"
 ---
 # <a name="overview-of-source-code-analysis"></a>Przegląd analizy kodu źródłowego
 
@@ -25,9 +25,9 @@ Analizatory .NET Compiler Platform (Roslyn) sprawdzają kod C# lub Visual Basic 
 
 Analizatory mogą być podzielone na następujące grupy:
 
-- Analizatory [stylów kodu](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019#convention-categories) są wbudowane w program Visual Studio. Identyfikator diagnostyki lub kod dla tych analizatorów ma format IDExxxx, na przykład IDE0067. Preferencje można skonfigurować na [stronie Opcje edytora tekstu](../ide/code-styles-and-code-cleanup.md) lub w [pliku EditorConfig](../ide/editorconfig-code-style-settings-reference.md). Począwszy od platformy .NET 5,0, analizatory [stylów kodu](https://docs.microsoft.com/dotnet/fundamentals/productivity/code-analysis) są dołączone do zestawu .NET SDK.
+- Analizatory [stylów kodu](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019#convention-categories) są wbudowane w program Visual Studio. Identyfikator diagnostyki lub kod dla tych analizatorów ma format IDExxxx, na przykład IDE0067. Preferencje można skonfigurować na [stronie Opcje edytora tekstu](../ide/code-styles-and-code-cleanup.md) lub w [pliku EditorConfig](../ide/editorconfig-code-style-settings-reference.md). Począwszy od platformy .NET 5,0, analizatory stylów kodu są dołączone do zestawu .NET SDK i mogą być ściśle wymuszane jako ostrzeżenia lub błędy kompilacji. Aby uzyskać więcej informacji, zobacz [tutaj](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
-- Analizatory [jakości kodu](/code-analysis-warnings-for-managed-code-by-checkid.md) są teraz dołączone do zestawu SDK programu .NET 5 i domyślnie włączone. Identyfikator diagnostyki lub kod dla tych analizatorów ma format CAxxxx, na przykład CA1822. Aby uzyskać więcej informacji, zobacz [Omówienie analizy kodu źródłowego platformy .NET](/dotnet/fundamentals/productivity/code-analysis).
+- Analizatory [jakości kodu](code-analysis-warnings-for-managed-code-by-checkid.md) są teraz dołączone do zestawu SDK programu .NET 5 i domyślnie włączone. Identyfikator diagnostyki lub kod dla tych analizatorów ma format CAxxxx, na przykład CA1822. Aby uzyskać więcej informacji, zobacz [Omówienie analizy jakości kodu platformy .NET](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 
 - Analizatory stron trzecich można instalować jako pakiet NuGet lub rozszerzenie programu Visual Studio. [Analizatory](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)stron trzecich, takie jak [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), analizatorze [XUnit](https://www.nuget.org/packages/xunit.analyzers/)i sonar.
 
@@ -77,7 +77,7 @@ Jeśli instalujesz analizatory jako rozszerzenie programu Visual Studio, są one
 
 Aby reguły były wymuszane w czasie kompilacji, w tym za pośrednictwem wiersza polecenia lub jako część kompilacji ciągłej integracji (CI), można wybrać jedną z następujących opcji:
 
-- Utwórz projekt platformy .NET 5,0 zawierający domyślnie analizatory w zestawie SDK platformy .NET. Analiza kodu jest domyślnie włączona dla projektów przeznaczonych dla platformy .NET 5,0 lub nowszej. Można włączyć analizę kodu dla projektów przeznaczonych dla wcześniejszych wersji .NET przez ustawienie właściwości [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) na true.
+- Utwórz projekt platformy .NET 5,0 zawierający domyślnie analizatory w zestawie SDK platformy .NET. Analiza kodu jest domyślnie włączona dla projektów przeznaczonych dla platformy .NET 5.0 lub nowszej. Można włączyć analizę kodu dla projektów przeznaczonych dla wcześniejszych wersji .NET przez ustawienie właściwości [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) na true.
 
 - Zainstaluj analizatory jako pakiet NuGet. Ostrzeżenia i błędy analizatora nie są wyświetlane w raporcie kompilacji, jeśli analizatory są instalowane jako rozszerzenie.
 

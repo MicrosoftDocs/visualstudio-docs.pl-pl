@@ -580,6 +580,8 @@
                       href: interoperability-warnings.md
                     - name: 'CA1401: Elementy P-Invoke nie powinny być widoczne'
                       href: ca1401.md
+                    - name: 'CA1416: Weryfikowanie zgodności platformy'
+                      href: ca1416.md
                     - name: 'CA1417: Nie używaj elementu OutAttribute w przypadku parametrów ciągu dla elementów P/Invoke'
                       href: ca1417.md
                 - name: Ostrzeżenia dotyczące dostępności

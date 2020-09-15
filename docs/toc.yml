@@ -509,6 +509,8 @@
             - name: Korzystanie z plików EditorConfig na potrzeby stylu kodu
               displayName: Configure code style analyzers
               href: ide/create-portable-custom-editor-options.md
+            - name: Konwencje formatowania języka C++ w narzędziu EditorConfig
+              href: ide/cpp-editorconfig-properties.md
             - name: .NET — konwencje kodowania
               items:
                 - name: Omówienie
