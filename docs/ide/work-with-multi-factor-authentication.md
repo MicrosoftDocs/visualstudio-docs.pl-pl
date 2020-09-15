@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 914acae2f5fbb9bd3f47669eea699935fcfa5e4d
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ebacdd78cbb72bbd1cb90a0b5c719d0c753a95ca
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038390"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90093354"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>Jak używać programu Visual Studio z kontami, które wymagają uwierzytelniania wieloskładnikowego
 
@@ -50,10 +50,11 @@ Po włączeniu przepływu pracy przeglądarki sieci Web systemu można zalogowa�
 
 Ta akcja spowoduje otwarcie domyślnej przeglądarki sieci Web systemu, poproszenie Cię o zalogowanie się do konta i zweryfikowanie wymaganych zasad MFA.
 
-Na podstawie działań programistycznych i konfiguracji zasobów może zostać wyświetlony monit o ponowne wprowadzenie poświadczeń podczas sesji. Taka sytuacja może wystąpić, gdy dodasz nowy zasób lub spróbujesz uzyskać dostęp do zasobu bez wcześniejszego spełnienia wymagań związanych z autoryzacją urzędu certyfikacji/MFA.
+W trakcie procesu logowania może zostać wyświetlony dodatkowy monit z prośbą o pozostawanie zalogowania. Ten monit będzie prawdopodobnie wyświetlany podczas drugiego logowania do konta. Aby zminimalizować konieczność ponownego wprowadzania poświadczeń, zalecamy wybranie **opcji tak**, ponieważ dzięki temu poświadczenia są zachowywane w sesjach przeglądarki.
 
-> [!NOTE] 
-> W celu uzyskania najlepszego środowiska przeglądarka zostanie otwarta, dopóki wszystkie zasady urzędu certyfikacji/MFA nie zostaną zweryfikowane dla Twoich zasobów. Zamknięcie przeglądarki może spowodować utratę poprzednio skompilowanego stanu usługi MFA i może monitować o dodatkowe monity o autoryzację.
+:::image type="content" source="media/kmsi.png" alt-text="Pozostać zalogowanym?":::
+
+W oparciu o działania deweloperskie i konfigurację zasobów nadal może zostać wyświetlony monit o ponowne wprowadzenie poświadczeń podczas sesji. Taka sytuacja może wystąpić, gdy dodasz nowy zasób lub spróbujesz uzyskać dostęp do zasobu bez wcześniejszego spełnienia wymagań związanych z autoryzacją urzędu certyfikacji/MFA.
 
 ## <a name="reauthenticating-an-account"></a>Reuwierzytelnianie konta  
 Jeśli wystąpi problem z Twoim kontem, program Visual Studio może poprosił o ponownie wprowadzenie poświadczeń konta.  
