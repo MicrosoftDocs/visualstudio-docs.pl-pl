@@ -9,35 +9,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0d97b1e2b2e27ebc8ddb898795c1767155c1cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e1e6951aebac63494aada4e64c5c072eb79c6a9
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80256195"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074985"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Mierzenie użycia pamięci w programie Visual Studio
 
-Znajdowanie przecieków pamięci i niewydajnej pamięci podczas debugowania za pomocą narzędzia diagnostycznego **dotyczącego użycia pamięci** zintegrowanej z debugerem. Narzędzie użycie pamięci pozwala wykonać jedną lub więcej *migawek* sterty pamięci zarządzanej i natywnej, aby ułatwić zrozumienie wpływu użycia pamięci przez typy obiektów. Można zbierać migawki aplikacji platformy .NET, natywnych lub mieszanych (.NET i Native).
-
-Na poniższej ilustracji przedstawiono okno **Narzędzia diagnostyczne** (dostępne w programie Visual Studio 2015 Update 1 i jego nowszych wersjach):
-
-![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools — Update1")
+Znajdowanie przecieków pamięci i niewydajnej pamięci podczas debugowania za pomocą narzędzia diagnostycznego **dotyczącego użycia pamięci** zintegrowanej z debugerem. Narzędzie użycie pamięci pozwala wykonać jedną lub więcej *migawek* sterty pamięci zarządzanej i natywnej, aby ułatwić zrozumienie wpływu użycia pamięci przez typy obiektów. Możesz również analizować użycie pamięci bez debugera lub przeznaczoną dla działającej aplikacji. Aby uzyskać więcej informacji, zobacz [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 Chociaż w dowolnym momencie można zbierać migawki pamięci w narzędziu **użycie pamięci** , można użyć debugera programu Visual Studio, aby kontrolować sposób wykonywania aplikacji podczas badania problemów z wydajnością. Ustawianie punktów przerwania, krokowe, przerwanie i inne akcje debugera mogą pomóc skupić się na dochodzeniu do wydajności na najbardziej istotnych ścieżkach kodu. Wykonywanie tych akcji, gdy aplikacja jest uruchomiona, może wyeliminować szum z kodu, który nie jest interesujący, i może znacznie skrócić czas, w którym można zdiagnozować problem.
 
-Możesz również użyć narzędzia pamięci poza debugerem. Zobacz [użycie pamięci bez debugowania](../profiling/memory-usage-without-debugging2.md). Możesz użyć narzędzi profilowania bez debugera dołączonego do systemu Windows 7 lub nowszego. System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania przy użyciu debugera (okno**Narzędzia diagnostyczne** ).
-
-> [!NOTE]
-> **Obsługa alokatora niestandardowego** Profiler pamięci natywnej działa przez zbieranie danych zdarzeń [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) alokacji emitowanych w czasie wykonywania.  Przydziały w CRT i Windows SDK zostały opatrzone adnotacją na poziomie źródła, aby można było przechwytywać ich dane alokacji. W przypadku pisania własnych przydziałów, wszystkie funkcje, które zwracają wskaźnik do nowo przydzieloną pamięci sterty, mogą mieć [__declspec](/cpp/cpp/declspec)(Alokator), jak pokazano w tym przykładzie dla elementu malloc:
->
-> `__declspec(allocator) void* myMalloc(size_t size)`
+> [!Important]
+> Narzędzia diagnostyczne zintegrowane z debugerem są obsługiwane przez Programowanie dla platformy .NET w programie Visual Studio, w tym ASP.NET, ASP.NET Core, programowanie natywne/C++ oraz aplikacje trybu mieszanego (.NET i Native). System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania przy użyciu debugera (okno**Narzędzia diagnostyczne** ).
 
 W tym samouczku wykonasz następujące czynności:
 
 > [!div class="checklist"]
 > * Wykonaj migawki pamięci
 > * Analizowanie danych użycia pamięci
+
+Jeśli **użycie pamięci** nie daje potrzebnych danych, inne narzędzia profilowania w [profilerze wydajności](../profiling/profiling-feature-tour.md#post_mortem) zapewniają różne rodzaje informacji, które mogą być przydatne dla użytkownika. W wielu przypadkach wąskie gardła wydajności aplikacji może być spowodowane przez coś innego niż pamięć, takich jak procesor CPU, interfejs użytkownika renderowania lub czas żądania sieci.
+
+> [!NOTE]
+> **Obsługa alokatora niestandardowego** Profiler pamięci natywnej działa przez zbieranie danych zdarzeń [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) alokacji emitowanych w czasie wykonywania.  Przydziały w CRT i Windows SDK zostały opatrzone adnotacją na poziomie źródła, aby można było przechwytywać ich dane alokacji. W przypadku pisania własnych przydziałów, wszystkie funkcje, które zwracają wskaźnik do nowo przydzieloną pamięci sterty, mogą mieć [__declspec](/cpp/cpp/declspec)(Alokator), jak pokazano w tym przykładzie dla elementu malloc:
+>
+> `__declspec(allocator) void* myMalloc(size_t size)`
 
 ## <a name="collect-memory-usage-data"></a>Zbieranie danych użycia pamięci
 

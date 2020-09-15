@@ -17,33 +17,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3a7c5eb8aa489da9ced0803e0f83855734825ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: caac02510d2fce95fa67340d2061341ed77ac13e
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537374"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075434"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Mierzenie wydajności aplikacji przez analizowanie użycia procesora CPU
 
-Za pomocą narzędzi profilowania programu Visual Studio można analizować problemy z wydajnością w aplikacji. W tym artykule przedstawiono sposób korzystania z karty **użycie procesora CPU** narzędzi diagnostycznych w celu uzyskania danych wydajności dla aplikacji.
+Wykorzystaj problemy z wydajnością podczas debugowania za pomocą narzędzia diagnostycznego **użycie procesora CPU** zintegrowanego z debugerem.  Możesz również analizować użycie procesora bez dołączania debugera lub jako docelowej działającej aplikacji. Aby uzyskać więcej informacji, zobacz [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-Po wstrzymaniu debugera narzędzie **użycie procesora CPU** zbiera informacje o funkcjach, które są wykonywane w aplikacji. Narzędzie wyświetla listę funkcji, które zostały wykonane i zawiera wykres osi czasu, którego można użyć do skoncentrowania się na określonych segmentach sesji próbkowania.
-
-Centrum diagnostyki oferuje wiele innych opcji umożliwiających uruchomienie sesji diagnostycznej i zarządzanie nią. Jeśli **użycie procesora CPU** nie zapewnia potrzebnych danych, [inne narzędzia profilowania](../profiling/profiling-feature-tour.md) zapewniają różne rodzaje informacji, które mogą być pomocne dla użytkownika. W wielu przypadkach wąskie gardła wydajności aplikacji może być spowodowane przez coś innego niż procesor CPU, takich jak pamięć, interfejs użytkownika renderowania lub czas żądania sieci. Centrum diagnostyki oferuje wiele innych opcji rejestrowania i analizowania tego rodzaju danych.
+Po wstrzymaniu debugera narzędzie **użycie procesora CPU** w oknie narzędzia diagnostyczne zbiera informacje o funkcjach, które są wykonywane w aplikacji. Narzędzie wyświetla listę funkcji, które zostały wykonane i zawiera wykres osi czasu, którego można użyć do skoncentrowania się na określonych segmentach sesji próbkowania.
 
 > [!Important]
-> Narzędzia diagnostyczne obsługują Programowanie dla platformy .NET w programie Visual Studio, w tym ASP.NET, oraz na potrzeby programowania natywnego/C++.
-
-W tym artykule omówiono Analizowanie użycia procesora CPU w normalnym przepływie debugowania. Możesz również analizować użycie procesora bez dołączania debugera lub jako docelowej działającej aplikacji. Aby uzyskać więcej informacji, zobacz [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Możesz również użyć innego narzędzia profilowania, [Funkcja PerfTip](../profiling/perftips.md), aby przejść przez kod i określić, jak długo trwa wykonywanie określonych funkcji lub bloków kodu.
-
-Narzędzi profilowania można używać bez debugera z systemem Windows 7 i nowszymi wersjami. System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania przy użyciu debugera (okno**Narzędzia diagnostyczne** ).
+> Narzędzia diagnostyczne zintegrowane z debugerem są obsługiwane przez Programowanie dla platformy .NET w programie Visual Studio, w tym ASP.NET, ASP.NET Core i na potrzeby programowania natywnego/C++. System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania przy użyciu debugera (okno**Narzędzia diagnostyczne** ).
 
 W tym samouczku wykonasz następujące czynności:
 
 > [!div class="checklist"]
 > * Zbieranie danych użycia procesora CPU
 > * Analizowanie danych użycia procesora CPU
+
+Jeśli **użycie procesora CPU** nie zapewnia potrzebnych danych, inne narzędzia profilowania w [profilerze wydajności](../profiling/profiling-feature-tour.md#post_mortem) zapewniają różne rodzaje informacji, które mogą być przydatne dla użytkownika. W wielu przypadkach wąskie gardła wydajności aplikacji może być spowodowane przez coś innego niż procesor CPU, takich jak pamięć, interfejs użytkownika renderowania lub czas żądania sieci.
 
 ## <a name="step-1-collect-profiling-data"></a>Krok 1. zbieranie danych profilowania
 

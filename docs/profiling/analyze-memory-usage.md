@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c3a072408fd8f166475919d988766fb42fa7c54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f77fa9087673ff8e9a429caa27318a60f21d4a60
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285949"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075447"
 ---
 # <a name="analyze-memory-usage"></a>Analizowanie użycia pamięci
 
@@ -33,8 +33,8 @@ Narzędzi profilowania można używać bez debugera z systemem Windows 7 i nowsz
 
 [Blog Visual C++: Profilowanie pamięci w Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
+- [Analizowanie użycia pamięci bez debugera](../profiling/memory-usage-without-debugging2.md)
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)
 - [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)
-- [Analizowanie użycia pamięci bez debugera](../profiling/memory-usage-without-debugging2.md)

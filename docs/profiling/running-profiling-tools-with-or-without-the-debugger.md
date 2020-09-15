@@ -8,30 +8,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 147a7dbc029ae894a0054837e92feb0108dc19b4
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 7db7e704eab7f5d00b20051811c503b143608e2f
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561591"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074959"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 
-Program Visual Studio oferuje wybór narzędzi do pomiaru wydajności i profilowania. Niektóre narzędzia, takie jak użycie procesora CPU i użycie pamięci, można uruchomić z debugerem lub bez niego, a także w konfiguracjach kompilacji wersji lub debugowania. Narzędzia, które pojawiają się w [oknie narzędzia diagnostyczne](../profiling/profiling-feature-tour.md#view-performance-while-debugging) , są uruchamiane tylko podczas sesji debugowania. Narzędzia, które pojawiają się w [profilerze wydajności](../profiling/profiling-feature-tour.md#post_mortem) , są uruchamiane bez debugera i analizują wyniki po zaznaczeniu, aby zatrzymać i zbierać dane (na potrzeby analizy końcowej).
+Program Visual Studio oferuje wybór narzędzi do pomiaru wydajności i profilowania. Niektóre narzędzia, takie jak użycie procesora CPU i użycie pamięci, można uruchomić z debugerem lub bez niego, a także w konfiguracjach kompilacji wersji lub debugowania. Narzędzia, które pojawiają się w [oknie narzędzia diagnostyczne](../profiling/profiling-feature-tour.md#measure-performance-while-debugging) , są uruchamiane tylko podczas sesji debugowania. Narzędzia, które pojawiają się w [profilerze wydajności](../profiling/profiling-feature-tour.md#post_mortem) , są uruchamiane bez debugera i analizują wyniki po zaznaczeniu, aby zatrzymać i zbierać dane (na potrzeby analizy końcowej).
 
 >[!NOTE]
 >Możesz użyć narzędzi do oceny wydajności bez debugera w systemie Windows 7 i nowszych. Do uruchomienia narzędzi profilowania zintegrowanych ze debugerem wymagany jest system Windows 8 lub nowszy.
 
-Profiler wydajności bez debugera i zintegrowany z debugerem narzędzia diagnostyczne udostępniają różne informacje i środowiska. Narzędzia zintegrowane z debugerem pokazują punkty przerwania i wartości zmiennych. Narzędzia, które nie są debugerem, dają wyniki bliżej środowiska użytkownika końcowego.
+Profiler wydajności bez debugera i zintegrowany z debugerem narzędzia diagnostyczne udostępniają różne informacje i środowiska. Narzędzia zintegrowane z debugerem pokazują wartości zmiennych i umożliwiają używanie punktów przerwania. Narzędzia, które nie są debugerem, dają wyniki bliżej środowiska użytkownika końcowego.
 
 Aby pomóc w wyborze narzędzi i wyników do użycia, należy wziąć pod uwagę następujące kwestie:
 
-- Zewnętrzne problemy z wydajnością, takie jak pliki we/wy lub problemy z odpowiedzią w sieci, nie wyglądają inaczej w debugerze lub narzędziach innych niż debuger.
-- W przypadku problemów spowodowanych przez wywołania intensywnie korzystające z procesora CPU mogą występować znaczne różnice wydajności między kompilacjami wydań i debugowania. Sprawdź, czy problem występuje w kompilacjach wydania.
-- Jeśli problem występuje tylko podczas kompilacji debugowania, prawdopodobnie nie trzeba uruchamiać narzędzi niebędących debugerem. W przypadku problemów z kompilacją wersji należy zdecydować, czy narzędzia debugera pomogą Ci w dalszej analizie.
-- Kompilacje wydań zapewniają optymalizacje, takie jak wywołania funkcji defragmentowania i stałe, oczyszczanie nieużywanych ścieżek kodu i przechowywanie zmiennych w sposób, który nie może być używany przez debuger. Numery wydajności w narzędziach zintegrowanych z debugerem są mniej dokładne, ponieważ kompilacje debugowania nie mają tych optymalizacji.
-- Debuger zmienia czasy wydajności, ponieważ wymaga operacji debugera, takich jak przechwycenie zdarzeń ładowania wyjątków i modułów.
-- Numery wydajności kompilacji wersji w narzędziach profilera wydajności są najbardziej precyzyjne i dokładne. Debuger — wyniki narzędzia zintegrowanego są najbardziej przydatne do porównania z innymi pomiarami związanymi z debugowaniem.
+- Narzędzie zintegrowane z debugerem a narzędziem niebędącym debugerem
+  - Zewnętrzne problemy z wydajnością, takie jak pliki we/wy lub problemy z odpowiedzią w sieci, nie wyglądają inaczej w debugerze lub narzędziach innych niż debuger.
+  - Debuger zmienia czasy wydajności, ponieważ wymaga operacji debugera, takich jak przechwycenie zdarzeń ładowania wyjątków i modułów.
+  - Numery wydajności kompilacji wersji w narzędziach profilera wydajności są najbardziej precyzyjne i dokładne. Narzędzia zintegrowane z debugerem są najbardziej przydatne do porównywania z innymi pomiarami związanymi z debugowaniem lub do korzystania z funkcji debugera.
+- Debugowanie a kompilacja wydania
+  - W przypadku problemów spowodowanych przez wywołania intensywnie korzystające z procesora CPU mogą występować znaczne różnice wydajności między kompilacjami wydań i debugowania. Sprawdź, czy problem występuje w kompilacjach wydania.
+  - Jeśli problem występuje tylko podczas kompilacji debugowania, prawdopodobnie nie trzeba uruchamiać narzędzi niebędących debugerem. W przypadku problemów z kompilacją wersji należy zdecydować, czy funkcje zapewniane przez narzędzia zintegrowane z debugerem pomogą zidentyfikować problem.
+  - Kompilacje wydań zapewniają optymalizacje, takie jak wywołania funkcji defragmentowania i stałe, oczyszczanie nieużywanych ścieżek kodu i przechowywanie zmiennych w sposób, który nie może być używany przez debuger. Liczby wydajności w kompilacjach debugowania są mniej dokładne, ponieważ kompilacje debugowania nie mają tych optymalizacji.
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Zbieraj dane profilowania podczas debugowania
 
@@ -82,7 +84,7 @@ Aby zbierać dane dotyczące wydajności bez debugowania, można uruchomić narz
 
    Gdy sesja jest uruchomiona, niektóre narzędzia pokazują wykresy danych w czasie rzeczywistym na stronie narzędzia diagnostyczne, a także kontrolki do wstrzymywania i wznawiania zbierania danych.
 
-    ![Zrzut ekranu przedstawiający zbieranie danych w centrum wydajności i diagnostyki](../profiling/media/diaghubcollectdata.png "Zbieranie danych przez centrum")
+    ![Zrzut ekranu przedstawiający zbieranie danych w profilerze wydajności](../profiling/media/diaghubcollectdata.png "Zbieranie danych przez centrum")
 
 1. Aby zakończyć sesję diagnostyczną, wybierz pozycję **Zatrzymaj zbieranie**.
 

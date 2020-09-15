@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c15753b083256b97c9f67219b64565a8db8736
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247802"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075421"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analizowanie użycia pamięci za pomocą narzędzia alokacji obiektów platformy .NET
 
@@ -22,7 +22,7 @@ Możesz sprawdzić ilość pamięci używanej przez aplikację i informacje o ś
 
 Po uruchomieniu narzędzia można zobaczyć ścieżki wykonywania funkcji, w których są przyliczane obiekty. Następnie można śledzić z powrotem do poziomu głównego drzewa wywołań, który zajmuje najwięcej pamięci.
 
-## <a name="setup"></a>Konfiguracja
+## <a name="setup"></a>Konfigurowanie
 
 1. Wybierz **kombinację klawiszy Alt + F2** , aby otworzyć Profiler wydajności w programie Visual Studio.
 

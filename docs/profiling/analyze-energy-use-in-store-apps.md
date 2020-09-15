@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 524eb76696414cbbdba72266cc732ccb7e089f86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2945ef9879e83567f37ebe410ba9f265bfd64760
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537244"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075460"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizowanie zużycia energii w aplikacjach platformy UWP
 
@@ -91,7 +91,7 @@ if (performance && performance.mark) {
 
 1. W menu **debugowanie** wybierz polecenie **Uruchom diagnostykę bez debugowania**.
 
-     ![Wybieranie zużycia energii w centrum diagnostyki](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
+     ![Wybieranie zużycia energii w profilerze wydajności](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
 2. Wybierz pozycję **zużycie energii** , a następnie wybierz polecenie **Uruchom**.
 
@@ -113,7 +113,7 @@ if (performance && performance.mark) {
 
 2. Z listy **Wybierz zainstalowany pakiet aplikacji** wybierz element docelowy.
 
-3. Wybierz pozycję **zużycie energii** na stronie centrum diagnostyki.
+3. Wybierz pozycję **zużycie energii** na stronie profilera wydajności.
 
 4. Wybierz pozycję **Rozpocznij** , aby rozpocząć profilowanie.
 
@@ -156,7 +156,7 @@ if (performance && performance.mark) {
 
 - Narzędzia **użycia procesora CPU** mogą pomóc w zmniejszeniu obciążenia procesora, gdy jest ono spowodowane przez funkcje niewydajne. Zobacz [Analizowanie użycia procesora CPU](../profiling/beginners-guide-to-performance-profiling.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)
 - [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

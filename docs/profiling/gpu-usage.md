@@ -7,16 +7,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aa4cce032a5eb80a11568a83c1166b5690bd688
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a738490933c6f2d1cdf89e7e974a268540af991
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85279886"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074972"
 ---
 # <a name="gpu-usage"></a>Użycie procesora GPU
 
-Użyj narzędzia użycie procesora GPU w centrum wydajności i diagnostyki programu Visual Studio, aby lepiej zrozumieć użycie sprzętu przez aplikację Direct3D na wysokim poziomie. Pomaga sprawdzić, czy wydajność aplikacji jest związana z procesorem CPU lub procesorem GPU, oraz uzyskać wgląd w to, jak wydajniej korzystać z sprzętu platformy. Użycie procesora GPU obsługuje aplikacje korzystające z funkcji Direct3D 12, Direct3D 11 i Direct3D 10. Nie obsługuje innych graficznych interfejsów API, takich jak Direct2D lub OpenGL.
+Użyj narzędzia użycie procesora GPU w profilerze wydajności, aby lepiej zrozumieć użycie sprzętu przez aplikację Direct3D na wysokim poziomie. Pomaga sprawdzić, czy wydajność aplikacji jest związana z procesorem CPU lub procesorem GPU, oraz uzyskać wgląd w to, jak wydajniej korzystać z sprzętu platformy. Użycie procesora GPU obsługuje aplikacje korzystające z funkcji Direct3D 12, Direct3D 11 i Direct3D 10. Nie obsługuje innych graficznych interfejsów API, takich jak Direct2D lub OpenGL.
 
 Oto jak wygląda okno **raport użycia procesora GPU** :
 
@@ -43,7 +43,7 @@ Aby uruchomić narzędzie użycie procesora GPU:
 
 2. W centrum **wydajności i diagnostyki** zaznacz pole wyboru obok opcji **użycie procesora GPU**. Opcjonalnie zaznacz pola obok innych interesujących Cię narzędzi. Jednocześnie można uruchomić kilka narzędzi do oceny wydajności i diagnostyki, aby uzyskać pełniejszy obraz wydajności aplikacji.
 
-    ![Zrzut ekranu przedstawiający Centrum wydajności i diagnostyki z wybranym użyciem procesora GPU](media/gpuusageselected.png "Wybrane użycie procesora GPU")
+    ![Zrzut ekranu przedstawiający narzędzie Performance profiler z wybranym użyciem procesora GPU](media/gpuusageselected.png "Wybrane użycie procesora GPU")
 
    > [!NOTE]
    > Nie wszystkie narzędzia do oceny wydajności i diagnostyki mogą być używane jednocześnie.
