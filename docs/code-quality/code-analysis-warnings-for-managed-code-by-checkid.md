@@ -62,6 +62,7 @@ f1_keywords:
 - CA1309
 - CA1310
 - CA1401
+- CA1416
 - CA1417
 - CA1501
 - CA1502
@@ -253,18 +254,18 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a298ab142ae6a44c1fb24b2cb1b752f6beb4a68e
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 24f7dbcdd324620f2076f5fab8247c9ba99a72cb
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037240"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90094229"
 ---
 # <a name="code-quality-analysis-rules-by-rule-id"></a>Reguły analizy jakości kodu według identyfikatora reguły
 
 W poniższej tabeli przedstawiono reguły analizy jakości kodu według identyfikatora reguły.
 
-| CheckId | Ostrzeżenie | Opis |
+| RuleId | Ostrzeżenie | Opis |
 |---------| - | - |
 | CA1000 | [CA1000: Nie deklaruj statycznych składowych na typach ogólnych](../code-quality/ca1000.md) | Po wywołaniu statycznego elementu członkowskiego typu ogólnego dla typu trzeba określić argument typu. Po wywołaniu wystąpienia ogólnego elementu członkowskiego, które nie obsługuje wnioskowania, dla elementu członkowskiego musi zostać określony argument typu. W tych dwóch przypadkach składnia określająca argument typu jest różna i łatwo o pomyłkę. |
 | CA1001 | [CA1001: Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji](../code-quality/ca1001.md) | Klasa deklaruje i implementuje pole wystąpienia typu System.IDisposable, ale nie implementuje interfejsu IDisposable. Klasa, która deklaruje pole IDisposable, pośrednio posiada niezarządzany zasób i powinna implementować interfejs IDisposable. |
@@ -324,6 +325,7 @@ W poniższej tabeli przedstawiono reguły analizy jakości kodu według identyfi
 | CA1309 | [CA1309: Użyj porządkowego ustawienia właściwości StringComparison](../code-quality/ca1309.md) | Operacja porównania ciągu, która jest nielingwistyczna, nie ustawia parametru StringComparison na Ordinal lub OrdinalIgnoreCase. Poprzez jawne ustawienie parametru na StringComparison.Ordinal lub StringComparison.OrdinalIgnoreCase kod często zaczyna działać szybciej, staje się bardziej poprawny i niezawodny. |
 | CA1310 | [CA1310: Określ parametr StringComparison w celu zapewnienia poprawności](../code-quality/ca1310.md) | Operacja porównywania ciągów używa przeciążenia metody, które nie ustawia parametru StringComparison i domyślnie używa porównania ciągów specyficznych dla kultury. |
 | CA1401 | [CA1401: P/Invoke nie powinna być widoczna](../code-quality/ca1401.md) | Metoda publiczna lub chroniona w typie publicznym ma atrybut System.Runtime.InteropServices.DllImportAttribute (również zaimplementowany przez słowo kluczowe Declare w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ). Takie metody nie powinny być udostępniane. |
+| CA1416 | [CA1416: Weryfikuj zgodność platformy](../code-quality/ca1416.md) | Korzystanie z interfejsów API zależnych od platformy w składniku sprawia, że kod przestaje działać na wszystkich platformach. |
 | CA1417 | [CA1417: nie należy używać `OutAttribute` w parametrach ciągu dla elementu P/Invoke](../code-quality/ca1417.md) | Parametry ciągu przesyłane przez wartość z `OutAttribute` mogą destabilizację środowiska uruchomieniowego, jeśli ciąg jest ciągiem z stażystami. |
 | CA1501 | [CA1501: Unikaj nadmiernego dziedziczenia](../code-quality/ca1501.md) | Typ jest głęboki na więcej niż cztery poziomy w hierarchii dziedziczenia. Hierarchie typów głęboko zagnieżdżonych mogą być trudne do śledzenia, zrozumienia i utrzymania. |
 | CA1502 | [CA1502: Unikaj nadmiernej złożoności](../code-quality/ca1502.md) | Ta reguła mierzy liczbę liniowo niezależnych ścieżek za pośrednictwem metody, która jest określona przez liczbę i złożoność rozgałęzień warunkowych. |

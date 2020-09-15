@@ -15,12 +15,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77428bfc815a963e8fae4ddae5e5e7a7b7d991fe
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 566b9827f42f646cd9350cfc015a460485212a09
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034107"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90094333"
 ---
 # <a name="net-code-analysis-rules"></a>Reguły analizy kodu platformy .NET
 Analiza kodu platformy .NET zawiera reguły wskazujące naruszenia jakości kodu lub sugestie dotyczące poprawy jakości kodu. Reguły są zorganizowane w obszary reguły, takie jak projektowanie, lokalizacja, wydajność i zabezpieczenia. Niektóre reguły są specyficzne dla użycia interfejsu API platformy .NET, a pozostałe reguły dotyczą jakości kodu ogólnego. Ta sekcja zawiera szczegółowe omówienie i przykłady dla każdej reguły.
@@ -30,7 +30,7 @@ Analiza kodu platformy .NET zawiera reguły wskazujące naruszenia jakości kodu
 |Element|Opis|
 |----------|-----------------|
 |Typ|Nazwa typu dla reguły.|
-|CheckId|Unikatowy identyfikator reguły. CheckId i Category są używane do pomijania w źródle ostrzeżenia.|
+|RuleId|Unikatowy identyfikator reguły. RuleId i Category są używane do pomijania w źródle ostrzeżenia.|
 |Kategoria|Kategoria ostrzeżenia.|
 |Zmiana podziału|Czy poprawka dla naruszenia reguły jest istotną zmianą. Istotna zmiana oznacza, że zestaw, który ma zależność od obiektu docelowego, który spowodował naruszenie, nie zostanie ponownie skompilowany przy użyciu nowej stałej wersji lub może zakończyć się niepowodzeniem w czasie wykonywania ze względu na zmianę. Jeśli jest dostępnych wiele poprawek, a co najmniej jedna poprawka jest istotną zmianą, a jedna poprawka nie jest, określono zarówno element "", jak i "bez przerywania".|
 |Przyczyna|Określony kod zarządzany, który powoduje wygenerowanie ostrzeżenia przez regułę.|
