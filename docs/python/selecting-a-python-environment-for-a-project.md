@@ -1,21 +1,21 @@
 ---
-title: Wybierz interpreter języka Python i środowisko dla projektu
+title: Wybierz środowisko Python dla projektu
 description: W szczególności można wybrać środowisko Python, w tym Anaconda i środowiska wirtualne, aby zastosować je do określonego projektu.
 ms.date: 03/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 11808eeabee4d45d1d3d3b1b5cd5d6636249e7cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46b0a8005ea76445a1d6205c8635963dbaedd0d4
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801207"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90097037"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Jak wybrać środowisko Python dla projektu
 
@@ -171,7 +171,7 @@ Należy również zauważyć, że program Visual Studio nie obsługuje obecnie k
 > [!Tip]
 > Typowa sytuacja, w której nie można zainstalować pakietu przez program PIP, ma miejsce, gdy pakiet zawiera kod źródłowy dla składników natywnych w plikach * \* . PYD* . Bez zainstalowanej wymaganej wersji programu Visual Studio program PIP nie może skompilować tych składników. Komunikat o błędzie wyświetlany w tej sytuacji jest **następujący: nie można odnaleźć vcvarsall.bat**. `easy_install` Program często może pobrać wstępnie skompilowane pliki binarne i pobrać odpowiedni kompilator dla starszych wersji języka Python z programu [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) . Aby uzyskać więcej informacji, zobacz [temat jak radzić sobie z "znalezieniem vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) w blogu zespołu narzędzi Python.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie środowiskami języka Python w programie Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Użyj requirements.txt dla zależności](managing-required-packages-with-requirements-txt.md)
