@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 62709c496b9eec631a42c0e227210d3b57ecb5ef
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 67a9a6f7ec63686003f6e6535b213e9c6fa606f0
+ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741774"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90682651"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Ustawienia konwencji kodowania .NET dla EditorConfig
 
@@ -48,7 +48,7 @@ Istnieją trzy obsługiwane kategorie konwencji kodowania .NET:
 
 ## <a name="enforce-coding-conventions-on-build"></a>Wymuś konwencje kodowania w kompilacji
 
-Począwszy od programu Visual Studio 2019 w wersji 16,8, który zawiera zestaw SDK dla programu .NET 5,0 RC2, można [wymusić stosowanie konwencji kodowania .NET na potrzeby kompilacji](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) dla wszystkich projektów .NET. W czasie kompilacji naruszenia stylu kodu platformy .NET będą wyświetlane jako ostrzeżenia lub błędy z prefiksem "IDE". Pozwala to na ścisłe wymuszanie spójnych stylów kodu w bazie kodu.
+Począwszy od programu Visual Studio 2019 w wersji 16,8, który zawiera zestaw SDK dla programu .NET 5,0 RC2, można [wymusić stosowanie konwencji kodowania .NET na potrzeby kompilacji](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis) dla wszystkich projektów .NET. W czasie kompilacji naruszenia stylu kodu platformy .NET będą wyświetlane jako ostrzeżenia lub błędy z prefiksem "IDE". Pozwala to na ścisłe wymuszanie spójnych stylów kodu w bazie kodu.
 
 ::: moniker-end
 

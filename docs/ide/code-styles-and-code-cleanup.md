@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faeff1e60fa77e3bf9e995c61c841f626468a1b
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 75b301f66f597f8b53a2561ffbbe05dfb8a4cb1c
+ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743333"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90682683"
 ---
 # <a name="code-style-preferences"></a>Preferencje stylu kodu
 
@@ -64,7 +64,7 @@ Dla każdego ustawienia stylu kodu na tej stronie można ustawić wartości **pr
 
 ## <a name="enforce-code-styles-on-build"></a>Wymuś style kodu podczas kompilacji
 
-Począwszy od programu Visual Studio 2019 w wersji 16,8, który zawiera zestaw SDK dla programu .NET 5,0 RC2, można [wymusić stosowanie konwencji kodowania .NET na potrzeby kompilacji](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) dla wszystkich projektów .NET. W czasie kompilacji naruszenia stylu kodu platformy .NET będą wyświetlane jako ostrzeżenia lub błędy z prefiksem "IDE". Pozwala to na ścisłe wymuszanie spójnych stylów kodu w bazie kodu.
+Począwszy od programu Visual Studio 2019 w wersji 16,8, który zawiera zestaw SDK dla programu .NET 5,0 RC2, można [wymusić stosowanie konwencji kodowania .NET na potrzeby kompilacji](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis) dla wszystkich projektów .NET. W czasie kompilacji naruszenia stylu kodu platformy .NET będą wyświetlane jako ostrzeżenia lub błędy z prefiksem "IDE". Pozwala to na ścisłe wymuszanie spójnych stylów kodu w bazie kodu.
 
 ::: moniker-end
 
