@@ -10,12 +10,10 @@
         - name: Konfigurowanie
           expanded: true
           items:
+            - name: Omówienie
+              href: use-roslyn-analyzers.md
             - name: Jakość kodu
-              items:
-                - name: Omówienie
-                  href: use-roslyn-analyzers.md
-                - name: Konfigurowanie analizy jakości kodu za pomocą narzędzia EditorConfig
-                  href: configure-fxcop-analyzers.md
+              href: configure-fxcop-analyzers.md
             - name: Konfigurowanie analizy kodu na żywo
               href: configure-live-code-analysis-scope-managed-code.md
             - name: Ręczne przeprowadzanie analizy kodu
