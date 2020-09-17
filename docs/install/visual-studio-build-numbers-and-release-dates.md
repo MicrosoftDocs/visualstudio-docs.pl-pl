@@ -5,19 +5,19 @@ description: Lista wydanych wersji i numery kompilacji dla programu Visual Studi
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 09/08/2020
+ms.date: 09/14/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: a0d77b4a1a926376857886b9430c4d9fdcdb3a39
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 9c3fda67d55d6e6192da209d129582b34d420fa8
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600053"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713454"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -29,9 +29,10 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.7.3 | Release | 8 września 2020 | 16.7.30503.244 |
-| 16.4.13 | Release | 8 września 2020 | 16.4.30427.197 |
-| 16.0.18 | Release | 8 września 2020 | 16.0.28803.826 |
+| 16.8.0 | Wersja zapoznawcza 3 | 14 września 2020 | 16.8.30509.190 |
+| 16.7.3 | Release | 8 września 2020 r. | 16.7.30503.244 |
+| 16.4.13 | Release | 8 września 2020 r. | 16.4.30427.197 |
+| 16.0.18 | Release | 8 września 2020 r. | 16.0.28803.826 |
 | 16.8.0 | Wersja zapoznawcza 2,1 | 31 sierpnia 2020 | 16.8.30428.66 |
 | 16.8.0 | Preview 2 | 25 sierpnia 2020 | 16.8.30420.98 |
 | 16.7.2 | Release | 18 sierpnia 2020 r. | 16.7.30413.136 |
@@ -175,7 +176,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.9.27 | Release | 8 września 2020 | 15.9.28307.1259 |
+| 15.9.27 | Release | 8 września 2020 r. | 15.9.28307.1259 |
 | 15.9.26 | Release | 11 sierpnia 2020 r. | 15.9.28307.1234 |
 | 15.9.25 | Release | 14 lipca 2020 r. | 15.9.28307.1216 |
 | 15.9.24 | Release | 9 czerwca 2020 r. | 15.9.28307.1177 |

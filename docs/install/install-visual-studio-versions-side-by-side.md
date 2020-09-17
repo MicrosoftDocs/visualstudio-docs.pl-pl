@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 717a9cd3f4157c276ce7d0dd5c41cac625581ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0e5a2d09cad35266bacc73580b2284f66bd32f5
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250247"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713467"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalowanie obok siebie różnych wersji programu Visual Studio
 
@@ -50,7 +50,7 @@ Przed zainstalowaniem wersji obok siebie zapoznaj się z następującymi warunka
 
 W przypadku uaktualniania z jednej pomocniczej wersji programu Visual Studio do następnej Instalator programu Visual Studio zaktualizuje bieżącą instalację do następnej wersji w tym kanale domyślnie. Na przykład podczas instalowania wersji zapoznawczej usługi 16.6.4 Instalator spróbuje zastąpić bieżącą instalację wersji zapoznawczej programu 16.6.3, ponieważ obie wersje znajdują się w kanale w wersji zapoznawczej 16,6. Pozwala to zagwarantować, że starsze wersje programu Visual Studio nie zajmują miejsca na maszynie. W niektórych określonych przypadkach może być przydatne zainstalowanie mniejszych wersji obok siebie. W naszym przykładzie będzie to oznaczało, że zarówno 16.6.3, jak i 16.6.4 na tym samym komputerze.
 
-1. Pobierz [plik inicjujący programu Visual Studio](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) dla wersji pomocniczej, który chcesz zainstalować obok istniejących wersji programu Visual Studio.
+1. Pobierz [plik inicjujący programu Visual Studio](/visualstudio/releases/2019/history#installing-an-earlier-release) dla wersji pomocniczej, który chcesz zainstalować obok istniejących wersji programu Visual Studio.
 2. Otwórz wiersz polecenia w trybie administratora. W tym celu otwórz menu Start systemu Windows, wpisz "cmd", kliknij prawym przyciskiem myszy wyniki wyszukiwania w wierszu polecenia, a następnie wybierz polecenie **Uruchom jako administrator**. W wierszu polecenia Zmień katalog na folder, w którym znajduje się plik programu inicjującego programu Visual Studio.
 3. Uruchom poniższe polecenie, określając nową ścieżkę folderu dla lokalizacji instalacji i zastępując nazwę pliku exe odpowiednią nazwą programu inicjującego dla używanej wersji programu Visual Studio. Nazwa pliku. exe powinna być taka sama lub podobna do jednego z następujących plików:
    * vs_community.exe dla programu Visual Studio Community

@@ -16,17 +16,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 02ce09aebae0d6e5225ba1cdfa7484aa887135fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56a6142d7217d6afa7d48ea708c642a32d8cb3c8
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247645"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713441"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Podręcznik użytkowania programu Visual Studio w przedsiębiorstwie
 Jeśli chcesz zaoszczędzić czas podczas korzystania z firmy w programie Visual Studio, Zacznij tutaj. Ten przewodnik po przedsiębiorstwie zawiera wskazówki, które mogą pomóc w instalacji i aktualizacji programu Visual Studio w typowych scenariuszach dla przedsiębiorstw, uzyskać odblokowywanie w przypadku wystąpienia problemów i dowiedzieć się, jak zgłosić problem, jeśli potrzebujesz więcej pomocy. 
 
-## <a name="get-started"></a>Rozpoczęcie pracy 
+## <a name="get-started"></a>Wprowadzenie 
 Dowiedz się, jak wdrożyć program Visual Studio w przedsiębiorstwie w środowiskach sieciowych i w trybie offline. 
 
 - Informacje **o opcjach wdrażania w przedsiębiorstwie w środowiskach sieciowych**. [Przewodnik administratora programu Visual Studio](visual-studio-administrator-guide.md) zawiera wskazówki oparte na scenariuszu dla administratorów systemu. 
@@ -63,7 +63,7 @@ Dowiedz się, jak pomyślnie zaktualizować program Visual Studio i rozwiązać 
 
 - ** [Napraw program Visual Studio](repair-visual-studio.md) , aby rozwiązać problemy z aktualizacją**. Czasami instalacja programu Visual Studio przestała być uszkodzona lub uszkodzona. Naprawa jest przydatna w przypadku rozwiązywania problemów dotyczących czasu instalacji we wszystkich operacjach instalacji, w tym aktualizacji. 
 
-- **Obserwuj [linie bazowe zabezpieczeń systemu Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)**. Firma Microsoft jest przeznaczona dla klientów z bezpiecznymi systemami operacyjnymi, takimi jak Windows 10 i Windows Server, oraz zabezpieczonymi aplikacjami, takimi jak Microsoft Edge. Oprócz zapewnienia bezpieczeństwa swoich produktów firma Microsoft umożliwia również precyzyjne sterowanie środowiskami, zapewniając różne możliwości konfiguracji. 
+- **Obserwuj [linie bazowe zabezpieczeń systemu Windows](/windows/security/threat-protection/windows-security-baselines)**. Firma Microsoft jest przeznaczona dla klientów z bezpiecznymi systemami operacyjnymi, takimi jak Windows 10 i Windows Server, oraz zabezpieczonymi aplikacjami, takimi jak Microsoft Edge. Oprócz zapewnienia bezpieczeństwa swoich produktów firma Microsoft umożliwia również precyzyjne sterowanie środowiskami, zapewniając różne możliwości konfiguracji. 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
