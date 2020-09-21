@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7bf5492d7da845b65904959cb57737fd438c28b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6d2d3d747c128cfa2afbb63ae43289e0b50519b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532278"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810070"
 ---
 # <a name="properties-of-connectors"></a>Właściwości łączników
 Łączniki reprezentują relacje domeny w wygenerowanym projektancie.
@@ -23,15 +23,15 @@ ms.locfileid: "85532278"
 
  Łączniki mają właściwości, które są wymienione w poniższej tabeli.
 
-|Właściwość|Opis|Domyślne|
+|Właściwość|Opis|Domyślny|
 |-|-|-|
-|Kolor|Kolor tego łącznika.|Czarnoskórzy|
+|Color (Kolor)|Kolor tego łącznika.|Czarnoskórzy|
 |Styl kreskowania|Styl kreskowania dla linii dla tego łącznika (Solid, kreska, kropka, DashDot, DashDotDot lub Custom).|Ciągła|
 |Styl końcowy źródła|Styl końcowy dla tego łącznika (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond lub None).|Brak|
 |Styl końca elementu docelowego|Styl końca elementu docelowego dla tego łącznika (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond lub None).|Brak|
 |Kolor tekstu|Kolor używany dla dekoratory tekstu, które są skojarzone z tym łącznikiem.|Czarnoskórzy|
 |Grubość|Grubość linii dla tego łącznika (w calach).|0,03125|
-|Modyfikator dostępu|Poziom dostępu klasy ( `public` lub `internal` ).|Publiczne|
+|Modyfikator dostępu|Poziom dostępu klasy ( `public` lub `internal` ).|Public|
 |Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu źródłowego wygenerowanej na podstawie tego łącznika.|\<none>|
 |Generuje podwójny pochodny|Jeśli `True` , zostanie wygenerowany zarówno klasę bazową, jak i Klasa częściowa (do obsługi dostosowywania za pomocą przesłonięć). Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
 |Ma Konstruktor niestandardowy|Jeśli `True` w kodzie źródłowym zostanie podany Konstruktor niestandardowy. Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
@@ -50,4 +50,4 @@ ms.locfileid: "85532278"
 
 ## <a name="see-also"></a>Zobacz też
 
-- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](/previous-versions/bb126564(v=vs.100))

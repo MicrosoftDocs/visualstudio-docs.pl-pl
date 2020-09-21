@@ -1,30 +1,30 @@
 ---
-title: Ostrzeżenia o zabezpieczeniach
+title: Reguły zabezpieczeń
 ms.date: 10/02/2019
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.securityrules
 helpviewer_keywords:
 - security [Visual Studio ALM], Enterprise Templates
-- security warnings
-- managed code analysis warnings, security warnings
-- warnings, security
+- security rules
+- managed code analysis rules, security rules
+- rules, security
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a40273c3230854e4b1d1a11a3fd02de54d5df745
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 2eb2356628099246aa010c0332f473955a3e976d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599965"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807927"
 ---
-# <a name="security-warnings"></a>Ostrzeżenia dotyczące zabezpieczeń
+# <a name="security-rules"></a>Reguły zabezpieczeń
 
-Ostrzeżenia o zabezpieczeniach obsługują bezpieczniejsze biblioteki i aplikacje. Ostrzeżenia te pomagają zapobiec usterkom w zabezpieczeniach w programie. Przyczynę wyłączenia któregokolwiek z tych ostrzeżeń należy wyraźnie oznaczyć w kodzie i poinformować o tym osobę odpowiedzialną za bezpieczeństwo w projekcie.
+Reguły zabezpieczeń obsługują bezpieczniejsze biblioteki i aplikacje. Te reguły pomagają zapobiegać błędom zabezpieczeń w programie. Jeśli wyłączysz każdą z tych reguł, należy wyraźnie oznaczyć przyczynę kodu, a także poinformować wyznaczeniego oficera zabezpieczeń dla projektu deweloperskiego.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
@@ -79,7 +79,7 @@ Ostrzeżenia o zabezpieczeniach obsługują bezpieczniejsze biblioteki i aplikac
 |[CA5358: Nie używaj niebezpiecznych trybów szyfrowania](../code-quality/ca5358.md)|Nie używaj niebezpiecznych trybów szyfrowania|
 |[CA5359: Nie wyłączaj walidacji certyfikatów](../code-quality/ca5359.md)|Certyfikat może pomóc uwierzytelnić tożsamość serwera programu. Klienci powinni sprawdzić poprawność certyfikatu serwera, aby upewnić się, że żądania są wysyłane do zamierzonego serwera. Jeśli ServerCertificateValidationCallback zawsze zwróci `true` , każdy certyfikat przejdzie pomyślnie weryfikację.|
 |[CA5360: Nie wywołuj niebezpiecznych metod w deserializacji](../code-quality/ca5360.md)|Niezabezpieczona deserializacja jest luką w zabezpieczeniach, która występuje, gdy niezaufane dane są używane do nadużycia logiki aplikacji, wynoszą atak typu "odmowa usługi" (DoS), a nawet wykonują dowolny kod podczas deserializacji. Często Złośliwi użytkownicy mogą nadużyć tych funkcji deserializacji, gdy aplikacja deserializacji dane niezaufane, które są pod kontrolą. W celu wywołaj metody niebezpieczne w procesie deserializacji. Pomyślne niezabezpieczone ataki deserializacji mogą pozwolić atakującemu na przeprowadzanie ataków, takich jak ataki systemu DoS, obejścia uwierzytelniania i zdalne wykonywanie kodu.|
-|[CA5361: Nie wyłączaj użycia silnej kryptografii w pakiecie SChannel](../code-quality/ca5361.md)|Ustawienie `Switch.System.Net.DontEnableSchUseStrongCrypto` `true` obniżania poziomu kryptografii używanej w połączeniach wychodzących Transport Layer Security (TLS). Słabsze Kryptografia może naruszać poufność komunikacji między aplikacją a serwerem, ułatwiając atakującym eavesdrop poufnych danych.|
+|[CA5361: nie należy wyłączać użycia silnej kryptografii SChannel](../code-quality/ca5361.md)|Ustawienie `Switch.System.Net.DontEnableSchUseStrongCrypto` `true` obniżania poziomu kryptografii używanej w połączeniach wychodzących Transport Layer Security (TLS). Słabsze Kryptografia może naruszać poufność komunikacji między aplikacją a serwerem, ułatwiając atakującym eavesdrop poufnych danych.|
 |[CA5362: Potencjalny cykl odwołań w grafie obiektu deserializowanego](../code-quality/ca5362.md)|W przypadku deserializacji niezaufanych danych, każdy kod przetwarzania deserializowanego grafu obiektów musi obsługiwać cykle odwołań bez przechodzenia do nieskończonych pętli. Obejmuje to zarówno kod, który jest częścią wywołania zwrotnego deserializacji i kod, który przetwarza Graf obiektu po zakończeniu deserializacji. W przeciwnym razie atakujący może przeprowadzić atak typu "odmowa usługi" ze złośliwymi danymi zawierającymi cykl referencyjny.|
 |[CA5363: Nie wyłączaj weryfikacji żądań](../code-quality/ca5363.md)|Sprawdzanie poprawności żądań jest funkcją w ASP.NET, która sprawdza żądania HTTP i określa, czy zawierają potencjalnie niebezpieczną zawartość, która może prowadzić do ataków iniekcji, w tym skryptów między lokacjami.|
 |[CA5364: Nie używaj przestarzałych protokołów zabezpieczeń](../code-quality/ca5364.md)|Transport Layer Security (TLS) zabezpiecza komunikację między komputerami, najczęściej przy użyciu protokołu Hypertext Transfer Protocol Secure (HTTPS). Starsze wersje protokołu TLS są mniej bezpieczne niż TLS 1,2 i TLS 1,3 i coraz bardziej mogą mieć nowe luki w zabezpieczeniach. Unikaj stosowania starszych wersji protokołów, aby zminimalizować ryzyko.|

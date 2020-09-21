@@ -1,18 +1,18 @@
 ---
 title: Korzystanie z funkcji maksymalnego użycia w portalu administracyjnym
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 04/07/2020
+ms.date: 09/16/2020
 ms.topic: conceptual
 description: Dowiedz się, jak wyświetlić maksymalną liczbę przypisanych subskrypcji w portalu administracyjnym
-ms.openlocfilehash: 0fe9dbe494867c99ba62bcb5f56c372da7ac50aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60f9961d400e8ce675e6cfb228f9f7bee36c74a0
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80808353"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807940"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Śledzenie liczby przypisanych subskrypcji przy użyciu funkcji maksymalnego użycia
 Nowa funkcja portalu administracyjnego subskrypcji programu Visual Studio pomaga śledzić liczbę subskrybowanych i przypisanych subskrypcji oraz określać szczytową liczbę subskrypcji każdego przypisanego poziomu, zarówno w ciągu ostatniego roku, jak i przez cały czas trwania umów. 
@@ -24,15 +24,17 @@ Nowa funkcja portalu administracyjnego subskrypcji programu Visual Studio pomaga
 Aby wyświetlić szczytową liczbę subskrypcji przypisanych do dowolnej umowy i poziomu subskrypcji:
 1. Wybierz umowę do wyświetlenia na liście rozwijanej w lewym górnym rogu portalu. (Jeśli masz tylko jedną umowę, zostanie ona już zaznaczona).
 2. Kliknij ikonę **maksymalnego użycia** , która jest trzecią ikoną od góry po lewej stronie siatki subskrybenta.  
+
     > [!div class="mx-imgBorder"]
-    > ![Menu użycie maksymalne](_img/maximum-usage/maximum-usage-menu.png)
+    > ![Wypływanie maksymalnego użycia](_img/maximum-usage/maximum-usage-menu.png "Kliknij przycisk maksymalne użycie, aby zobaczyć maksymalną liczbę przypisanych do siebie typów subskrypcji.")
+
 3. Zostanie wyświetlone okno "maksymalne użycie w 12 miesiącach" i zostanie wyświetlona Maksymalna liczba subskrypcji przypisanych w ciągu ostatniego roku dla każdego poziomu oraz miesiąc, w którym został osiągnięty ten szczyt.    
 
 ## <a name="view-your-assignment-history"></a>Wyświetl historię przypisania
 Oprócz wyświetlania szczytowych przydziałów dla poszczególnych poziomów subskrypcji można zobaczyć uruchomione konto działania na umowie, w tym zakupów i przydziałów, klikając przycisk **Eksportuj pełny raport** .  (Może być konieczne przewinięcie w dół w celu wyświetlenia przycisku).  
 
 > [!div class="mx-imgBorder"]
-> ![Pełny raport o maksymalnym użyciu](_img/maximum-usage/maximum-usage-full-report.png)
+> ![Pełny raport o maksymalnym użyciu](_img/maximum-usage/maximum-usage-full-report.png "Pełny raport zawiera rekord wszystkich zakupów i przydziałów subskrypcji.")
 
 W przypadku każdego poziomu subskrypcji raport przedstawia datę osiągnięcia nowego maksymalnego poziomu przydziału oraz liczbę subskrypcji zakupionych w ramach tego dnia, co pozwala na łatwe przeglądanie dowolnych dat, w których wystąpiły nadmierne alokacje.  
 

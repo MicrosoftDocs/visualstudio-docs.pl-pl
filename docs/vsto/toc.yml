@@ -51,7 +51,7 @@
                 - name: Aktualizowanie projektów związanych z programami Excel i Word
                   href: updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
                 - name: Aktualizowanie dostosowań wstążki w projektach związanych z pakietem Office
-                  href: /visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5
+                  href: ./update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5.md
                 - name: Aktualizowanie regionów formularzy w projektach związanych z programem Outlook
                   href: updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
         - name: Architektura rozwiązań pakietu Office w Visual Studio

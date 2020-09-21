@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 619e64dc09858b7d29e05804e3c3c353882f90ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd1b3b90cf4e284e558be02608cac953dc71584b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62561767"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811009"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Uaktualnianie projektu, Opcje — okno dialogowe
   Na stronie **uaktualnienie projektu** można określić, czy program Visual Studio ma automatycznie zmieniać projekty dodatku VSTO dla wersji pakietu Office zainstalowanej na komputerze deweloperskim.
@@ -33,4 +33,4 @@ ms.locfileid: "62561767"
 
 ## <a name="see-also"></a>Zobacz też
 - [Uaktualnianie i migrowanie rozwiązań pakietu Office](../vsto/upgrading-and-migrating-office-solutions.md)
-- [Instrukcje: Uaktualnianie rozwiązań pakietu Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)
+- [Instrukcje: Uaktualnianie rozwiązań pakietu Office](/previous-versions/4bez6837(v=vs.140))

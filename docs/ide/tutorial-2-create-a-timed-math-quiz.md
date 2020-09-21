@@ -9,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1f3620ef462228ff6a3461f44019e9c515a1c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 738d32186a0bb0f1d4655f9afea3d236bf53ad4c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579303"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810851"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu
 
@@ -58,6 +58,6 @@ Aby rozpocząć pracę z samouczkiem, Zacznij od **[kroku 1: Tworzenie projektu 
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Więcej samouczków dotyczących języka C#](/visualstudio/get-started/csharp/)
-* [Samouczki Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Więcej samouczków dotyczących języka C#](../get-started/csharp/index.yml)
+* [Samouczki Visual Basic](../get-started/visual-basic/index.yml)
 * [Samouczki języka C++](/cpp/get-started/tutorial-console-cpp)

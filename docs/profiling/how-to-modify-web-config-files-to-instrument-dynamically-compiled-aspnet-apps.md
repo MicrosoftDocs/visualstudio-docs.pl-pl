@@ -1,5 +1,6 @@
 ---
-title: Web.Config Instrumentacja plików & profil dynamicznej skompilowanej aplikacji sieci Web ASP.NET
+title: Web.Config pliku & profilu aplikacji dynamicznej ASP.NET
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8ed2d8e8cc62d26f9d63a8a675301c78fc35c51a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9682fe820e34e8e30a3c57670f5e5fbc7eae2153
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331511"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809599"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Instrukcje: Modyfikowanie plików web.config w celu instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci Web ASP.NET
 Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody instrumentacji narzędzia profilowania można zbierać szczegółowe dane o chronometrażu, dane przydziału pamięci platformy .NET i dane okresu istnienia obiektu platformy .NET z dynamicznie skompilowanych [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web.

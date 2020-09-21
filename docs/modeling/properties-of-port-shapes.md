@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e5ed5703d67e4c10bd7a9e4fe2ab234c5577f65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58f0b35b54ddb383111ee060225528d5942b1058
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520863"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811152"
 ---
 # <a name="properties-of-port-shapes"></a>Właściwości kształtów portu
 Za pomocą kształtów portów można reprezentować klasy domeny w wygenerowanym projektancie.
@@ -25,7 +25,7 @@ Za pomocą kształtów portów można reprezentować klasy domeny w wygenerowany
 
  Kształty portów mają właściwości, które są wymienione w poniższej tabeli.
 
-|Właściwość|Opis|Domyślne|
+|Właściwość|Opis|Domyślny|
 |-|-|-|
 |Kolor wypełnienia|Kolor wypełnienia tego kształtu.|Biały|
 |Tryb gradientu wypełnienia|Tryb gradientu wypełnienia tego kształtu.|Pozioma|
@@ -35,7 +35,7 @@ Za pomocą kształtów portów można reprezentować klasy domeny w wygenerowany
 |Styl kreskowania konturu|Styl kreskowania konturu tego kształtu (pełny, kreska, kropka, DashDot, DashDotDot lub niestandardowy).|Ciągła|
 |Grubość konturu|Grubość konturu tego kształtu.|0,03125|
 |Kolor tekstu|Kolor używany dla dekoratory tekstu, które są skojarzone z tym kształtem.|Czarnoskórzy|
-|Modyfikator dostępu|Poziom dostępu klasy ( `public` lub `internal` ).|Publiczne|
+|Modyfikator dostępu|Poziom dostępu klasy ( `public` lub `internal` ).|Public|
 |Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu źródłowego, która jest generowana z tego kształtu.|\<none>|
 |Generuje podwójny pochodny|Jeśli `True` , zostanie wygenerowany zarówno klasę bazową, jak i Klasa częściowa (do obsługi dostosowywania za pomocą przesłonięć). Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md)|Fałsz|
 |Ma Konstruktor niestandardowy|Jeśli `True` w kodzie źródłowym zostanie podany Konstruktor niestandardowy. Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
@@ -55,4 +55,4 @@ Za pomocą kształtów portów można reprezentować klasy domeny w wygenerowany
 
 ## <a name="see-also"></a>Zobacz też
 
-- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](/previous-versions/bb126564(v=vs.100))

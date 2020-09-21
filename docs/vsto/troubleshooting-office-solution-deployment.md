@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc8f336c3d43fb1f896d9e5e6b4d4d12c13d4064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c7db4a699fcc8b28e4f2f423f612738de6a6836
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234981"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90806736"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Rozwiązywanie problemów z wdrażaniem rozwiązań pakietu Office
   Ten temat zawiera informacje o sposobach rozwiązywania typowych problemów, które mogą wystąpić podczas wdrażania rozwiązań pakietu Office.
@@ -121,7 +121,7 @@ ms.locfileid: "87234981"
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>Nie można zainstalować rozwiązania ClickOnce, otwierając manifest wdrożenia z sieci Web
  Użytkownicy mogą instalować rozwiązania pakietu Office, otwierając manifest wdrożenia z sieci Web. Jednak niektóre instalacje programu Internet Information Services (IIS) blokują rozszerzenie nazwy pliku *. VSTO* . Należy zdefiniować typ MIME w usługach IIS przed użyciem go do wdrożenia rozwiązania biurowego.
 
- Informacje o sposobie definiowania typu MIME w usługach IIS 7 można znaleźć w temacie [Add a MIME Type (IIS7)](https://technet.microsoft.com/library/cc725608(WS.10).aspx).
+ Informacje o sposobie definiowania typu MIME w usługach IIS 7 można znaleźć w temacie [Add a MIME Type (IIS7)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725608(v=ws.10)).
 
  Dla rozszerzenia **VSTO** i typu MIME ustaw wartość **Application/x-MS-VSTO**.
 

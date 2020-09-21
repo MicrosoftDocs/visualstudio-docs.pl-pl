@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 86d575b254209b547504ea6d746d03853990bfb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dfa575bea4e629c7521cc7f4c5a79707462714c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67329003"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810996"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Strona publikowania, Projektant projektu (Office Development w Visual Studio)
   Strona **Publikowanie** **projektanta projektu** służy do konfigurowania właściwości wdrożenia.
@@ -29,7 +29,7 @@ ms.locfileid: "67329003"
  Aby uzyskać dostęp do tej strony, zaznacz projekt w **Eksplorator rozwiązań**, a następnie w menu **projekt** wybierz polecenie właściwości *ProjectName* **Properties**. Jeśli strona **Publikowanie** nie jest wyświetlana, wybierz kartę **Publikowanie** .
 
 > [!NOTE]
-> Możesz również ustawić lokalizację publikacji w **Kreatorze publikacji**. Aby uzyskać więcej informacji, zobacz [jak: publikowanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
+> Możesz również ustawić lokalizację publikacji w **Kreatorze publikacji**. Aby uzyskać więcej informacji, zobacz [jak: publikowanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](/previous-versions/bb386095(v=vs.110)).
 
 ## <a name="uielement-list"></a>Lista elementów UIElement
  **Lokalizacja folderu publikowania (witryna sieci Web, serwer FTP lub ścieżka pliku)** Wymagane.
@@ -50,7 +50,7 @@ ms.locfileid: "67329003"
 
  Jeśli pliki instalacyjne znajdują się w lokalizacji względem dokumentu lub Instalatora programu, na przykład z opcją CD, pozostaw to pole puste.
 
- Tę wartość można przypisać później przez administratora. Aby uzyskać więcej informacji, zobacz [How to: zmiana ścieżki instalacji rozwiązania pakietu Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
+ Tę wartość można przypisać później przez administratora. Aby uzyskać więcej informacji, zobacz [How to: zmiana ścieżki instalacji rozwiązania pakietu Office](/previous-versions/bb608626(v=vs.110)).
 
  **Wymagania wstępne** Wymagania wstępne można dołączać do programu instalacyjnego lub pobrać na żądanie podczas instalacji.
 
@@ -102,4 +102,4 @@ ms.locfileid: "67329003"
 
 - [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)
 - [Wdrażanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Wymagania wstępne dotyczące wdrażania pakietu Office](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)
+- [Wymagania wstępne dotyczące wdrażania pakietu Office](/previous-versions/bb608617(v=vs.110))

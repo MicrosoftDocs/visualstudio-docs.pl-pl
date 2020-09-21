@@ -1,5 +1,6 @@
 ---
-title: Wymagania dla kontrolera testów i agentów testowych niezbędnych do testów obciążenia
+title: Wymagania dotyczące kontrolera testów/agenta testowego (testowanie obciążenia)
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 39b174b0b134fdfdf26570565aa6aa756ba43c92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5d4e0562ed15aa44beba858f46870bf672d46ba
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588645"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810552"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Wymagania dotyczące kontrolera testów i agentów testowych do testowania obciążenia
 

@@ -1,5 +1,6 @@
 ---
-title: Pobierz dane pamięci .NET Framework przy użyciu wiersza polecenia profilera
+title: Wiersz polecenia profilera — uzyskiwanie danych pamięci .NET
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 7bce69e2-407c-4342-8516-641586968928
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62a55c36cd634b9451ad3796e5866d1e3a89b6a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d8c6b588552c2a4b4a93c2dbdbeb998eb94d7af
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331726"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810747"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Zbieranie danych pamięci .NET Framework przy użyciu wiersza polecenia profilera
 
@@ -49,5 +50,5 @@ W tej sekcji opisano procedury i opcje zbierania danych alokacji pamięci i okre
 ### <a name="analyze-net-memory-data-views-and-reports"></a>Analizowanie widoków i raportów danych pamięci .NET
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Odwołanie
 - [Narzędzia profilowania wiersza polecenia — dokumentacja](../profiling/command-line-profiling-tools-reference.md)

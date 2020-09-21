@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 56fac2be1e73de5df9da8aa13e6631c4cc9d1022
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b739db2755336958492a0aa67c9d5f0809f74bb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015897"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740022"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint
   Podczas wdrażania projektu programu SharePoint, program Visual Studio wykonuje serię kroków wdrożenia w określonej kolejności. Program Visual Studio zawiera wiele wbudowanych kroków wdrażania, ale można również utworzyć własne.
@@ -190,7 +190,7 @@ ms.locfileid: "86015897"
 
 1. W **Eksplorator rozwiązań**, w ramach projektu **UpgradeDeploymentStep** , otwórz menu skrótów dla pliku **source. Extension. vsixmanifest** , a następnie wybierz polecenie **Otwórz**.
 
-     Program Visual Studio otwiera plik w edytorze manifestu. Plik source. Extension. vsixmanifest jest podstawą dla pliku Extension. vsixmanifest, który wymaga wszystkich pakietów VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [Dokumentacja schematu rozszerzenia VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Program Visual Studio otwiera plik w edytorze manifestu. Plik source. Extension. vsixmanifest jest podstawą dla pliku Extension. vsixmanifest, który wymaga wszystkich pakietów VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [Dokumentacja schematu rozszerzenia VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. W polu **Nazwa produktu** wprowadź **krok Uaktualnij uaktualnienie dla projektów programu SharePoint**.
 
@@ -218,7 +218,7 @@ ms.locfileid: "86015897"
 10. Na liście **Typ** wprowadź wartość **SharePoint. Commands. v4**.
 
     > [!NOTE]
-    > Ten element określa niestandardowe rozszerzenie, które ma zostać dołączone do rozszerzenia programu Visual Studio. Aby uzyskać więcej informacji, zobacz [element zawartości (schemat VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Ten element określa niestandardowe rozszerzenie, które ma zostać dołączone do rozszerzenia programu Visual Studio. Aby uzyskać więcej informacji, zobacz [element zawartości (schemat VSX)](/previous-versions/dd393737(v=vs.110)).
 
 11. Z listy **Źródło** wybierz **projekt w bieżącym rozwiązaniu**.
 

@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44c3b64d9fb8944a578d054b7d98d4bf39bde3bc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801324"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810379"
 ---
 # <a name="add-file-header"></a>Dodawanie nagłówka pliku
 
@@ -22,7 +22,7 @@ Ta generacja kodu ma zastosowanie do:
 
 - Visual Basic
 
-**Co:** Dodaj nagłówki plików do istniejących plików, projektów i rozwiązań przy użyciu [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project).
+**Co:** Dodaj nagłówki plików do istniejących plików, projektów i rozwiązań przy użyciu [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
 **Kiedy:** Chcesz łatwo dodać nagłówek pliku do plików, projektów i rozwiązań.
 
@@ -30,7 +30,7 @@ Ta generacja kodu ma zastosowanie do:
 
 ## <a name="how-to"></a>Porady
 
-1. Dodaj [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project) do projektu lub rozwiązania, jeśli jeszcze go nie masz.
+1. Dodaj [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project) do projektu lub rozwiązania, jeśli jeszcze go nie masz.
 
 2. Dodaj następującą regułę do pliku EditorConfig: *file_header_template*.
 

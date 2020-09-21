@@ -1,5 +1,6 @@
 ---
-title: Pobieranie danych pamięci aplikacji sieci Web ASP.NET przy użyciu wiersza polecenia profilera
+title: Wiersz polecenia profilera — pobieranie danych pamięci aplikacji sieci Web ASP.NET
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 646445613aa9d03d2134094ebf0f694cef2f91ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 690b3cd03d245281b488f2bb2b77ebdebedd00c2
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331698"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809417"
 ---
 # <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Zbieranie danych pamięci z aplikacji sieci Web ASP.NET przy użyciu wiersza polecenia profilera
 W tej sekcji opisano procedury i opcje zbierania danych alokacji pamięci i okresu istnienia obiektów dla aplikacji sieci Web ASP.NET za pomocą narzędzia wiersza polecenia **VSPerfCmd** .
@@ -53,5 +54,5 @@ W tej sekcji opisano procedury i opcje zbierania danych alokacji pamięci i okre
 ### <a name="analyze-net-memory-data-views-and-reports"></a>Analizowanie widoków i raportów danych pamięci .NET
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
 - [Narzędzia profilowania wiersza polecenia — dokumentacja](../profiling/command-line-profiling-tools-reference.md)

@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccac40e2ff11b4da67c95fba307de97e4f72a101
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 680d64e2d2bdf02c6a1c8b8b25bdfb64cde2db8f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238247"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810825"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Dodawanie właściwości śledzenia do definicji języka specyficznego dla domeny
 
@@ -26,7 +26,7 @@ Właściwość *domeny śledzenia* jest właściwością, która może zostać z
 
 Na przykład w narzędzia języka specyficznego dla domeny (narzędzia DSL) Właściwość Nazwa wyświetlana klasy domeny ma wartość domyślną, która jest obliczana przy użyciu nazwy klasy domeny, ale użytkownik może zmienić wartość w czasie projektowania lub zresetować ją do obliczonej wartości.
 
-W tym instruktażu utworzysz język specyficzny dla domeny (DSL), który ma właściwość śledzenia przestrzeni nazw, która ma wartość domyślną na podstawie domyślnej właściwości przestrzeni nazw modelu. Aby uzyskać więcej informacji o właściwościach śledzenia, zobacz [Definiowanie właściwości śledzenia](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
+W tym instruktażu utworzysz język specyficzny dla domeny (DSL), który ma właściwość śledzenia przestrzeni nazw, która ma wartość domyślną na podstawie domyślnej właściwości przestrzeni nazw modelu. Aby uzyskać więcej informacji o właściwościach śledzenia, zobacz [Definiowanie właściwości śledzenia](/previous-versions/cc825929(v=vs.100)).
 
 - Narzędzia DSL obsługują śledzenie deskryptorów właściwości. Jednak Projektant DSL nie może być używany do dodawania właściwości śledzenia do języka. W związku z tym należy dodać kod niestandardowy w celu zdefiniowania i zaimplementowania właściwości śledzenia.
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31db7813521632539827f404c05625ff4b6121ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d88d936a4b470f891f3b2bf2c353f4ef4e595c57
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801571"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811048"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Krok 3. Korzystanie z okna interaktywnego REPL
 
@@ -25,7 +25,7 @@ ms.locfileid: "88801571"
 Okno **interaktywne** programu Visual Studio dla języka Python zawiera bogate środowisko REPL (Read-oszacować-Print-pętle), które znacznie skraca typowy cykl Edit-Build-Debug. Okno **interaktywne** zapewnia wszystkie możliwości środowiska REPL w wierszu polecenia języka Python. Ułatwia ona również wymianę kodu z plikami źródłowymi w edytorze programu Visual Studio, które w przeciwnym razie są kłopotliwe w wierszu polecenia.
 
 > [!NOTE]
-> W przypadku problemów z programem REPL upewnij się, `ipython` że `ipykernel` zainstalowano pakiety i aby uzyskać pomoc dotyczącą instalowania pakietów, zobacz [kartę pakiety środowiska Python](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
+> W przypadku problemów z programem REPL upewnij się, `ipython` że `ipykernel` zainstalowano pakiety i aby uzyskać pomoc dotyczącą instalowania pakietów, zobacz [kartę pakiety środowiska Python](./python-environments-window-tab-reference.md#packages-tab).
 
 1. Otwórz okno **interaktywne** , klikając prawym przyciskiem myszy środowisko Python projektu w **Eksplorator rozwiązań** (na przykład **Python 3,6 (32-bit)** , jak pokazano na poprzedniej ilustracji, a następnie wybierając polecenie **Otwórz okno interaktywne**. Możesz wybrać opcję **Wyświetl**  >  **inne**  >  **interaktywne** okna środowiska Windows Python z głównego menu programu Visual Studio.
 

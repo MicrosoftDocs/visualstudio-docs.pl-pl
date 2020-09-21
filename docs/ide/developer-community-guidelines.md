@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87972476"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810122"
 ---
 # <a name="developer-community-guidelines"></a>Wytyczne od społeczności deweloperów
 
@@ -57,7 +57,7 @@ Nawet w przypadku problemów, które zawierają szczegółowe informacje, firma 
 
 Segregowania problemu to wieloetapowy proces, który jest wspólnie wykonywany w ramach zespołu funkcji. Segregowania zazwyczaj trwa jeden tydzień, ale może trwać dłużej. Celem segregowania jest umożliwienie dokładnego poznania informacji o tym, co się stanie z problemem. Na przykład po Klasyfikacja się, że planujemy rozwiązać problem, lub zaczekaj na dalszą opinię społecznościową.
 
-Po zgłoszeniu problemu Stany wskazują, gdzie Twoje zgłoszenia są w cyklu życia. Ponieważ zespoły produktów Visual Studio przeglądają swoją opinię, ustawiają ją z odpowiednim stanem. Śledź postępy raportów o problemach, odwołując się do [stanów problemów i często ZAdawanych pytań](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
+Po zgłoszeniu problemu Stany wskazują, gdzie Twoje zgłoszenia są w cyklu życia. Ponieważ zespoły produktów Visual Studio przeglądają swoją opinię, ustawiają ją z odpowiednim stanem. Śledź postępy raportów o problemach, odwołując się do [stanów problemów i często ZAdawanych pytań](./report-a-problem.md).
 
 Gdy w przypadku problemu brakuje ważnych informacji, przypiszemy stan _więcej informacji_ . Prosimy o problem z konkretnymi informacjami, których potrzebujemy, i otrzymasz powiadomienie e-mail. Jeśli nie otrzymasz informacji w ciągu siedmiu dni, wyślemy Ci przypomnienie. Po tym czasie będziemy zamykać bilet po 14 dniach braku aktywności.
 
@@ -78,8 +78,8 @@ Gdy tak się stanie, zamknie problem i poprosił Cię o otwarcie go przy użyciu
 
 #### <a name="additional-information"></a>Dodatkowe informacje
 
-- [Jak zwiększyć szanse na rozwiązywanie problemów z wydajnością](https://docs.microsoft.com/visualstudio/ide/how-to-increase-chances-of-performance-issue-being-fixed)
-- [Rozwiązywanie problemów i Tworzenie dzienników dla programu MSBuild](https://docs.microsoft.com/visualstudio/ide/msbuild-logs)
+- [Jak zwiększyć szanse na rozwiązywanie problemów z wydajnością](./how-to-increase-chances-of-performance-issue-being-fixed.md)
+- [Rozwiązywanie problemów i Tworzenie dzienników dla programu MSBuild](./msbuild-logs.md)
 
 ## <a name="managing-feature-suggestions"></a>Zarządzanie sugestiami funkcji
 
@@ -91,7 +91,7 @@ W naszym procesie podejmowania decyzji Przyjrzyjmy się następującej charakter
 
 - Czy jest ono zgodne z naszym ogólnym kierownictwem produktu?
 - Czy możemy stworzyć i obsługiwać ją?
-- Czy jest ono zgodne z naszą ogólną strategią [planu](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap) ?
+- Czy jest ono zgodne z naszą ogólną strategią [planu](/visualstudio/productinfo/vs-roadmap) ?
 - Czy dział IT ma pomoc techniczną, jak wskazuje głosy i Komentarze?
 - Podoba nam się to, nawet w przypadku niskich wsparcia dla społeczności?
 
@@ -99,7 +99,7 @@ Jeśli nie możemy odpowiedzieć na żadne z tych pytań, zostanie ono zamknięt
 
 Jeśli sugestia nie jest zgodna z naszym ogólnym kierunkiem produktu, zostanie ona ZAMKNIĘTA *poza zakresem*. Na przykład firma Microsoft może mieć podobne inwestycje w innych członków rodziny produktów Visual Studio. Lub Sugerowana funkcja może być przeznaczona tylko dla kilku osób, dzięki czemu rozszerzenie jest lepiej dopasowane do jego udostępniania.
 
-Śledź postęp swojej sugestii dotyczących funkcji, odwołując się do [Stanów sugestii i często ZAdawanych pytań](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
+Śledź postęp swojej sugestii dotyczących funkcji, odwołując się do [Stanów sugestii i często ZAdawanych pytań](./report-a-problem.md).
 
 ## <a name="discussion-etiquette"></a>Zaleceniami dotyczącymi tworzenia dyskusji
 
@@ -111,7 +111,7 @@ Wszelkie naruszenia zaleceniami dotyczącymi tworzenia dyskusji mogą prowadzić
 
 ## <a name="data-privacy"></a>Prywatność danych
 
-Komentarze i odpowiedzi są publicznie widoczne, ale wszystkie dołączone pliki są udostępniane prywatnie tylko z firmą Microsoft. Ta widoczność jest korzystna, ponieważ umożliwia całej społeczności przeglądanie problemów i rozwiązań znalezionych przez innych użytkowników. Jeśli obawiasz się o prywatność Twoich danych lub tożsamości, możesz korzystać z opcji. Przeczytaj więcej o [ochronie prywatności danych społeczności deweloperów](https://docs.microsoft.com/visualstudio/ide/developer-community-privacy).
+Komentarze i odpowiedzi są publicznie widoczne, ale wszystkie dołączone pliki są udostępniane prywatnie tylko z firmą Microsoft. Ta widoczność jest korzystna, ponieważ umożliwia całej społeczności przeglądanie problemów i rozwiązań znalezionych przez innych użytkowników. Jeśli obawiasz się o prywatność Twoich danych lub tożsamości, możesz korzystać z opcji. Przeczytaj więcej o [ochronie prywatności danych społeczności deweloperów](./developer-community-privacy.md).
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -1,5 +1,6 @@
 ---
-title: 'Przewodnik: ręczne wdrażanie aplikacji ClickOnce | Microsoft Docs'
+title: Ręczne wdrażanie aplikacji ClickOnce
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aad87832a5bdae0d28d461d4cc289551eee7fee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16f01b87a9d90f285ebefd70956ae3c6ccffedf5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249981"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809482"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Przewodnik: Ręczne wdrażanie aplikacji ClickOnce
 Jeśli nie możesz użyć programu Visual Studio do wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji lub musisz użyć zaawansowanych funkcji wdrażania, takich jak wdrożenie zaufanej aplikacji, użyj narzędzia wiersza polecenia *Mage.exe* , aby utworzyć [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty. W tym przewodniku opisano sposób tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia przy użyciu wersji wiersza polecenia (*Mage.exe*) lub wersji graficznej (*MageUI.exe*) narzędzie tworzenia i edycji manifestów.

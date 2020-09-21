@@ -21,12 +21,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 452832785db879e75825b1c862e8e9b1b6e69f1d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590530"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810812"
 ---
 # <a name="create-models-for-your-app"></a>Tworzenie modeli aplikacji
 
@@ -44,13 +44,13 @@ Aby wizualizować architekturę systemu lub istniejącego kodu, Utwórz następu
 
 ## <a name="related-tasks"></a>Powiązane zadania
 
-|**Rozdziału**|**Zadanie**|
+|**Temat**|**Zadanie**|
 |-|-|
 |[Tworzenie wizualizacji kodu](../modeling/visualize-code.md)|Twórz mapy kodu i diagramy zależności, aby lepiej zrozumieć nieznany kod.|
 |[Wymagania modelu użytkownika](../modeling/model-user-requirements.md)|Używaj modeli, aby wyjaśnić potrzeby użytkowników.|
 |[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|Używaj modeli, aby opisać ogólną strukturę i zachowanie systemu oraz upewnić się, że spełnia on potrzeby użytkowników.|
 |[Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)|Upewnij się, że oprogramowanie pozostaje spójne z potrzebami użytkowników i ogólną architekturą systemu.|
-|[Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)<br /><br /> [Używanie modeli w programowaniu Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Używaj modeli, aby pomóc w zrozumieniu i zmianie systemu podczas jego tworzenia.|
+|[Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)<br /><br /> [Używanie modeli w programowaniu Agile](/previous-versions/ff398061(v=vs.140))|Używaj modeli, aby pomóc w zrozumieniu i zmianie systemu podczas jego tworzenia.|
 |[Tworzenie struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)|Organizuj modele w dużym lub średnim projekcie.|
 
 ## <a name="resources"></a>Zasoby

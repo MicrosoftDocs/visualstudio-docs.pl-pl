@@ -1,7 +1,7 @@
 ---
-title: Debugowanie czasu podróży Live ASP.NET Azure Virtual Machines
+title: Czas debugowania podróży na żywo ASP.NET na maszynie wirtualnej platformy Azure
 description: Dowiedz się, jak rejestrować i powtarzać aplikacje ASP.NET na żywo na maszynach wirtualnych platformy Azure przy użyciu Snapshot Debugger.
-ms.custom: ''
+ms.custom: SEO-VS-2020
 ms.date: 04/11/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: a44ecd7faeb3ec4cea7665678050580d7e4063a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb0db0bab5295925f71a81645e64fdeb5f2077df
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350631"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809573"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>Rejestruj i Odtwarzaj na żywo aplikacje ASP.NET na maszynach wirtualnych platformy Azure przy użyciu Snapshot Debugger
 

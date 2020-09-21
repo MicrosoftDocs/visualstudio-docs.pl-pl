@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 611df048d4ce569c10ae933be9053acf1174c06f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db49bfd1672866a755cce6780527520da2cad420
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290585"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810392"
 ---
 # <a name="add-debuggerdisplay-attribute"></a>Dodawanie atrybutu DebuggerDisplay
 
@@ -20,9 +20,9 @@ Ta generacja kodu ma zastosowanie do:
 
 - C#
 
-**Co:** [Atrybut DebuggerDisplay](https://docs.microsoft.com/visualstudio/debugger/using-the-debuggerdisplay-attribute) kontroluje sposób wyświetlania obiektu, właściwości lub pola w oknach zmiennych debugera.
+**Co:** [Atrybut DebuggerDisplay](../../debugger/using-the-debuggerdisplay-attribute.md) kontroluje sposób wyświetlania obiektu, właściwości lub pola w oknach zmiennych debugera.
 
-**Kiedy:** Chcesz [przypiąć właściwości](https://docs.microsoft.com/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor#pin-properties-in-datatips) w debugerze programowo w kodzie.
+**Kiedy:** Chcesz [przypiąć właściwości](../../debugger/view-data-values-in-data-tips-in-the-code-editor.md#pin-properties-in-datatips) w debugerze programowo w kodzie.
 
 **Dlaczego:** Przypinanie właściwości pozwala na szybkie inspekcje obiektów według ich właściwości poprzez propagację tej właściwości na górę listy właściwości obiektu w debugerze. 
 

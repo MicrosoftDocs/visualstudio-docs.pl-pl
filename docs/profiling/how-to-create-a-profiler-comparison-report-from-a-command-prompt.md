@@ -1,5 +1,6 @@
 ---
-title: Jak utworzyć raport porównawczy profilera z wiersza polecenia | Microsoft Docs
+title: Tworzenie raportu porównawczego profilera (wiersz polecenia)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 00548d16-eb5b-46f7-8a65-862f98a43831
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f9679a99ee23886f660914d8914001e395ff797
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d370a7465428da4f2582f4f765c1d81ae017af48
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328648"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809391"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Instrukcje: Tworzenie raportu porównania profilera z wiersza polecenia
 Można wygenerować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] raport narzędzia profilowania, który porównuje dane wydajności dwóch danych profilowania (.* /or VSP* . *vsps*) plikach. Raport przedstawia różnice, regresje wydajności i ulepszenia, które wystąpiły w jednej sesji profilowania. Wartości w raporcie przedstawiają różnice lub zmieniają się od linii bazowej pierwszego określonego pliku. Ta różnica jest obliczana przez określenie różnicy między starą wartością, czyli wartością bazową, a wartością wyniku z nowej analizy. Porównania danych profilera mogą opierać się na funkcjach w kodzie, modułach w aplikacji, wierszach, wskaźnikach instrukcji (IP) i typach.

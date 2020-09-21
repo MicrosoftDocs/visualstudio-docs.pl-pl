@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: a9c71837b83aa31b56ba1bd8ccb3384e4552d1be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b50ec910c6d5880ead2df48db2ef763753379bb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769993"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807888"
 ---
 # <a name="visual-studio-feedback-options"></a>Opcje opinii programu Visual Studio
 
@@ -71,7 +71,7 @@ Następnie w programie Visual Studio zostanie otwarta strona [społeczność dew
 Istnieją dwa sposoby, aby pomóc nam ulepszyć dokumentację:
 
 * Użyj narzędzia **czy ta strona jest pomocna?** w prawym górnym rogu dowolnej strony dokumentacji.
-* Użyj swojego konta w usłudze GitHub, aby przekazać opinię na temat dowolnej strony programu Visual Studio w witrynie [docs.Microsoft.com](/visualstudio/). Aby to zrobić, wybierz przycisk **Wyślij opinię na temat**  >  **tej strony** w dolnej części każdej strony dokumentacji.
+* Użyj swojego konta w usłudze GitHub, aby przekazać opinię na temat dowolnej strony programu Visual Studio w witrynie [docs.Microsoft.com](../index.yml). Aby to zrobić, wybierz przycisk **Wyślij opinię na temat**  >  **tej strony** w dolnej części każdej strony dokumentacji.
 
 ## <a name="contact-microsoft-support"></a>Kontaktowanie się z pomocą techniczną firmy Microsoft
 

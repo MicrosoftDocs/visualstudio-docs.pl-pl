@@ -1,5 +1,6 @@
 ---
-title: Analizowanie wyników testów obciążenia w widoku wykresy analizatora testu obciążenia
+title: Analizowanie wyników testów obciążenia — widok wykresów (Analizator testu obciążenia)
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dac639b8513e8ef675c6246476791b9351241130
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b48162da7a753516ce0c1ae0dba4cfe1f94387e4
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591271"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810656"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizowanie wyników testów obciążenia w widoku wykresy analizatora testu obciążenia
 
@@ -67,12 +68,12 @@ Legenda zawiera następujące kolumny:
 |Wystąpienie|Nazwa wystąpienia licznika.|
 |Kategoria|Nazwa kategorii licznika.|
 |Computer (Komputer)|Nazwa komputera, do którego zostanie zebrany licznik.|
-|Kolor|Kolor linii w grafie.|
+|Color (Kolor)|Kolor linii w grafie.|
 |Zakres|Wskazuje liczbę, która jest reprezentowana przez 100 na wykresie dla tego licznika. Na przykład dla zakresu, którego górną wartością jest 10 000, etykieta 100 w górnej części wykresu reprezentuje 10 000.|
 |Min.|Określa minimalną wartość licznika w milisekundach.|
 |Maks.|Wskazuje maksymalną wartość licznika w milisekundach.|
 |Śr.|Wskazuje średnią wartość licznika w milisekundach.|
-|Last|Pokazuje wartość licznika podczas ostatniego interwału próbkowania w milisekundach.|
+|Ostatnie|Pokazuje wartość licznika podczas ostatniego interwału próbkowania w milisekundach.|
 
 ## <a name="tasks"></a>Zadania
 

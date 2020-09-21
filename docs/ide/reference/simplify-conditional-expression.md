@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0571c01217441d4a39fbfe6fb58ccfe95fd0c5a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0242c8c89848e3e76673ddfbca8a27c20605048d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290620"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810353"
 ---
 # <a name="simplify-conditional-expression-refactoring"></a>Uprość refaktoryzację wyrażenia warunkowego
 
@@ -22,7 +22,7 @@ To Refaktoryzacja dotyczy:
 
 - C#
 
-**Co:** Umożliwia uproszczenie [wyrażenia warunkowego](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator).
+**Co:** Umożliwia uproszczenie [wyrażenia warunkowego](/dotnet/csharp/language-reference/operators/conditional-operator).
 
 **Kiedy:** Chcesz usunąć niezbędny kod, aby zapewnić większą przejrzystość.
 

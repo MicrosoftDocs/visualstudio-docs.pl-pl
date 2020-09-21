@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 58603db021d7aeebe3272711e5ba92d96eb22075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d70f1e95ce2dd5163eb017684620c403a77f74a
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250180"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740035"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Kompiluj kod języka TypeScript (Node.js)
 
@@ -27,7 +27,7 @@ W przypadku projektów ASP.NET Core zaleca się używanie [pakietu NuGet](../jav
 
 [Pakiet TypeScript npm](https://www.npmjs.com/package/typescript) dodaje obsługę języka TypeScript. Gdy pakiet npm dla języka TypeScript 2,1 lub nowszego jest instalowany w projekcie, odpowiednia wersja usługi języka TypeScript zostanie załadowana w edytorze.
 
-1. [Postępuj zgodnie z instrukcjami](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json) , aby zainstalować Node.js obciążenie programowaniem i Node.js środowiska uruchomieniowego.
+1. [Postępuj zgodnie z instrukcjami](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json) , aby zainstalować Node.js obciążenie programowaniem i Node.js środowiska uruchomieniowego.
 
    Dla najprostszej integracji z programem Visual Studio Utwórz projekt przy użyciu jednego z Node.js szablonów języka TypeScript, takich jak szablon Node.js aplikacji sieci Web. W przeciwnym razie użyj szablonu JavaScript Node.js dołączonego do programu Visual Studio i postępuj zgodnie z instrukcjami w tym miejscu lub Użyj projektu [otwartego folderu](../javascript/develop-javascript-code-without-solutions-projects.md) .
 
