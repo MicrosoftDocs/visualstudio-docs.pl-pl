@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7af49e94045e519e32aacd12ec33a4a31a4c905
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590738"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808132"
 ---
 # <a name="c-classes-in-class-designer"></a>Klasy C++ w Projektant klas
 
@@ -54,7 +54,7 @@ Kliknięcie prawym przyciskiem myszy kształtu klasy, a następnie kliknięcie p
 > [!NOTE]
 > Polecenie **Pokaż klasy pochodne** nie jest obsługiwane dla kodu C++. Klasy pochodne można wyświetlić, przechodząc do **Widok klasy**, rozszerzając węzeł typu, rozwijając podfolder **Typy pochodne** , a następnie przeciągając te typy na Diagram klas.
 
-Aby uzyskać więcej informacji na temat dziedziczenia z wieloma klasami, zobacz [wielokrotne dziedziczenie](https://msdn.microsoft.com/library/6td5yws2.aspx) i [wiele klas podstawowych](/cpp/cpp/multiple-base-classes).
+Aby uzyskać więcej informacji na temat dziedziczenia z wieloma klasami, zobacz [wielokrotne dziedziczenie](/previous-versions/6td5yws2(v=vs.140)) i [wiele klas podstawowych](/cpp/cpp/multiple-base-classes).
 
 ## <a name="abstract-classes"></a>Klasy abstrakcyjne
 
@@ -177,6 +177,6 @@ W poniższej tabeli przedstawiono kilka przykładów kanonicznych, wyspecjalizow
 - [Praca z kodem C++](working-with-visual-cpp-code.md)
 - [Klasy i struktury](/cpp/cpp/classes-and-structs-cpp)
 - [Anonimowe typy klas](/cpp/cpp/anonymous-class-types)
-- [Dziedziczenie wielokrotne](https://msdn.microsoft.com/library/6td5yws2.aspx)
+- [Dziedziczenie wielokrotne](/previous-versions/6td5yws2(v=vs.140))
 - [Wiele klas podstawowych](/cpp/cpp/multiple-base-classes)
 - [Szablony](/cpp/cpp/templates-cpp)

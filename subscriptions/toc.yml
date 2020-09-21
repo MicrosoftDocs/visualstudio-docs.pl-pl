@@ -1,12 +1,12 @@
 - name: Subskrypcje programu Visual Studio
   href: index.yml
-- name: Nowości
+- name: Co nowego
   href: whats-new-in-subscriptions.md
 - name: Subskrypcje
   items:
     - name: Kupowanie subskrypcji
       items:
-        - name: Retail
+        - name: Sprzedaż detaliczna
           href: buy-activate-retail.md
         - name: Chmura
           items:
@@ -141,7 +141,7 @@
         - name: Partnerzy zarządzający w imieniu klientów
           href: open-migration.md
         - name: 'Samouczek wideo: Uzyskiwanie dostępu do portalu administracyjnego'
-          href: 'https://youtu.be/plSu6fpi7UI'
+          href: 'https://www.microsoft.com/videoplayer/embed/RE4th6L'
     - name: Korzystanie z portalu administracyjnego
       items:
         - name: Superadministratorzy i administratorzy

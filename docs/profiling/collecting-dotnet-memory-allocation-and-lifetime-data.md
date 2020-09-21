@@ -1,5 +1,6 @@
 ---
-title: Zbieranie danych alokacji pamięci .NET i okresu istnienia | Microsoft Docs
+title: Zbierz dane dotyczące okresu istnienia przydziału pamięci platformy .NET &
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,16 +12,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1c256fcedf3ea1733f620a18528704fe455d1131
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1354fb95b543e73a67d19204871f3b79aec9ece9
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331712"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809430"
 ---
-# <a name="collect-net-memory-allocation-and-lifetime-data"></a>Zbieranie danych alokacji pamięci .NET i okresu istnienia
+# <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>Zbierz .NET Framework alokacji pamięci i danych o okresie istnienia
 
-Program Visual Studio narzędzia profilowania obsługuje zbieranie danych alokacji pamięci .NET i okresu istnienia obiektów, co pomaga wykrywać problemy z wydajnością związane z pamięcią w aplikacji.
+Program Visual Studio narzędzia profilowania obsługuje zbieranie .NET Framework alokacji pamięci i danych o okresie istnienia obiektów, co pomaga wykrywać problemy z wydajnością związane z pamięcią w aplikacji.
 
 - Dane dotyczące alokacji pamięci .NET obejmują rozmiar i liczbę przydzielonych .NET Framework obiektów pamięci.
 

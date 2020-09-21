@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5df10e2da9e6b4c31894dce0669e9aa0e580b92f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015071"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739931"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Przewodnik: Tworzenie rozszerzenia projektu SharePoint
   W tym instruktażu pokazano, jak utworzyć rozszerzenie dla projektów programu SharePoint. Możesz użyć rozszerzenia projektu, aby odpowiedzieć na zdarzenia na poziomie projektu, takie jak w przypadku dodania, usunięcia lub zmiany nazwy projektu. Możesz również dodać właściwości niestandardowe lub odpowiedzieć, gdy zmieni się wartość właściwości. W przeciwieństwie do rozszerzeń elementu projektu, rozszerzenia projektu nie mogą być skojarzone z konkretnym typem projektu programu SharePoint. Podczas tworzenia rozszerzenia projektu rozszerzenie jest ładowane, gdy dowolny rodzaj projektu programu SharePoint jest otwarty w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -128,7 +128,7 @@ ms.locfileid: "86015071"
 
 1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla pliku source. Extension. vsixmanifest, a następnie wybierz przycisk **Otwórz** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] otwiera plik w Projektancie manifestów. Informacje wyświetlane na karcie **metadane** są również wyświetlane w obszarze **rozszerzenia i aktualizacje**. Wszystkie pakiety VSIX wymagają pliku Extension. vsixmanifest. Aby uzyskać więcej informacji na temat tego pliku, zobacz [Dokumentacja schematu rozszerzenia VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] otwiera plik w Projektancie manifestów. Informacje wyświetlane na karcie **metadane** są również wyświetlane w obszarze **rozszerzenia i aktualizacje**. Wszystkie pakiety VSIX wymagają pliku Extension. vsixmanifest. Aby uzyskać więcej informacji na temat tego pliku, zobacz [Dokumentacja schematu rozszerzenia VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. W polu **Nazwa produktu** wprowadź **niestandardową właściwość projektu**.
 

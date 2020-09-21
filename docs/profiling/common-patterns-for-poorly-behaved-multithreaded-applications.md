@@ -1,5 +1,6 @@
 ---
-title: Typowe wzorce dla źle działających aplikacji wielowątkowych | Microsoft Docs
+title: Typowe wzorce dla źle działających aplikacji wielowątkowych
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a70e77b63aa923aa51188c3db8cb0feaaf6daf0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0f45c22684ef737de7235caebd4ad0b1b4189155
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038507"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808945"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych
 
@@ -68,6 +69,6 @@ Nadmierne lub nieprawidłowe użycie operacji we/wy jest typową przyczyną niee
 
 Zablokuj convoys występuje, gdy aplikacja uzyskuje blokady w pierwszej, obsługiwanej kolejności, a szybkość przybycia dla blokady jest wyższa niż szybkość pozyskiwania. Kombinacja tych dwóch warunków powoduje, że żądania zablokowania zaczynają tworzyć kopie zapasowe. Jednym ze sposobów zwalczenia tego problemu jest użycie blokad nieuczciwych lub blokad, które zapewniają dostęp do pierwszego wątku, aby znaleźć je w Stanach odblokowane. Na poprzedniej ilustracji przedstawiono zachowanie konwoju. Aby rozwiązać ten problem, spróbuj zmniejszyć rywalizację dla obiektów synchronizacji i spróbuj użyć nieuczciwych blokad.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Widok wątków](../profiling/threads-view-parallel-performance.md)

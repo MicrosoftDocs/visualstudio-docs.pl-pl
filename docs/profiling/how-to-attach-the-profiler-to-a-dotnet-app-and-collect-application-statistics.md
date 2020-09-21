@@ -1,6 +1,6 @@
 ---
-title: Dołącz profiler do .NET Framework autonomicznej aplikacji; Pobierz statystyki aplikacji
-ms.custom: seodec18
+title: Dołączanie profilera do aplikacji autonomicznej platformy .NET; Pobierz statystyki aplikacji
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: b62fcbc1-791f-474e-890a-a6c332e0c9ea
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 68450129d9bb3e9e67793c0a4155e953abbccc3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89c7f4141459f612f55a2253e37a6e56349fcb6a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531810"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808054"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Instrukcje: dołączanie profilera do aplikacji autonomicznej .NET Framework i zbieranie statystyk aplikacji przy użyciu wiersza polecenia
 W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania do dołączania profilera do uruchomionej .NET Framework aplikacji autonomicznej (klient) i zbierania statystyk wydajności przy użyciu metody próbkowania.

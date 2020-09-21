@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3374c07cac01104354b2ce41abddbeabbec0a373
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14965f829530ba5a2f6a7797291e9d1cfab0ae2d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566140"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810057"
 ---
 # <a name="properties-of-decorators"></a>Właściwości elementów Decorator
 Dekoratory to ikony, tekst lub Rozwijanie/zwijanie pagons, które mogą być wyświetlane na kształtach lub łącznikach na diagramie. W poniższych tabelach przedstawiono właściwości trzech rodzajów dekoratora. Niektóre właściwości są wyświetlane tylko na dekoratory kształtu lub tylko w łączniku dekoratory.
@@ -23,7 +23,7 @@ Dekoratory to ikony, tekst lub Rozwijanie/zwijanie pagons, które mogą być wy�
 
 ## <a name="expandcollapse-decorator"></a>Rozwiń/Zwiń Dekoratora
 
-|Właściwość|Opis|Domyślne|
+|Właściwość|Opis|Domyślny|
 |-|-|-|
 |Nazwa wyświetlana|Nazwa dekoratora, która będzie wyświetlana w wygenerowanym projektancie.|Rozwiń pozycję Zwiń Dekoratora|
 |Nazwa|Nazwa dekoratora.|ExpandCollapseDecorator|
@@ -36,7 +36,7 @@ Dekoratory to ikony, tekst lub Rozwijanie/zwijanie pagons, które mogą być wy�
 
 ## <a name="icon-decorator"></a>Ikona Dekoratora
 
-|Właściwość|Opis|Domyślne|
+|Właściwość|Opis|Domyślny|
 |-|-|-|
 |DefaultIcon|Ścieżka pliku ikony lub obrazu, który ma być wyświetlany.|\<none>|
 |Nazwa wyświetlana|Nazwa dekoratora, która ma być wyświetlana w wygenerowanym projektancie.|Ikona Dekoratora|
@@ -50,7 +50,7 @@ Dekoratory to ikony, tekst lub Rozwijanie/zwijanie pagons, które mogą być wy�
 
 ## <a name="textdecorator"></a>TextDecorator
 
-|Właściwość|Opis|Domyślne|
+|Właściwość|Opis|Domyślny|
 |-|-|-|
 |DefaultText|Domyślny tekst, który ma być wyświetlany.|Etykieta|
 |Nazwa wyświetlana|Nazwa dekoratora, która ma być wyświetlana w wygenerowanym projektancie.|Etykieta|
@@ -66,4 +66,4 @@ Dekoratory to ikony, tekst lub Rozwijanie/zwijanie pagons, które mogą być wy�
 
 ## <a name="see-also"></a>Zobacz też
 
-- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](/previous-versions/bb126564(v=vs.100))

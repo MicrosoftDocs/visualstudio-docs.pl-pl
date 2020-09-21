@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1222e6603ea45e1a4172af84b9062c17a407c28c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e8cd25b8c4c70067641468dd6fa321e9e4fbe39
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986161"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809365"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Tworzenie dodatków narzędzi VSTO dla pakietu Office w programie Visual Studio
   Za pomocą narzędzi deweloperskich Microsoft Office w programie Visual Studio można tworzyć aplikacje .NET Framework, które poszerzają pakiet Office. Te aplikacje są również nazywane *rozwiązaniami pakietu Office*.
@@ -116,6 +116,6 @@ ms.locfileid: "72986161"
 
 - [Sekcja opracowywania Microsoft Office w bibliotece MSDN](/previous-versions/office/office-12/bb726434(v=office.12)) Obszar biblioteki MSDN, w którym można znaleźć artykuły i dokumentację referencyjną dotyczącą opracowywania rozwiązań dla kilku wersji pakietu Office (niespecyficznych dla rozwoju pakietu Office przy użyciu programu Visual Studio).
 
-- [Opracowywanie aplikacji w programie Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) Zawiera łącza do tematów, które wyjaśniają, jak można używać programu Visual Studio do projektowania, programowania, debugowania i wdrażania aplikacji sieci Web, usług XML sieci Web i tradycyjnych aplikacji klienckich.
+- [Opracowywanie aplikacji w programie Visual Studio](/previous-versions/h8w79z10(v=vs.140)) Zawiera łącza do tematów, które wyjaśniają, jak można używać programu Visual Studio do projektowania, programowania, debugowania i wdrażania aplikacji sieci Web, usług XML sieci Web i tradycyjnych aplikacji klienckich.
 
 - [Programowanie .NET Framework w programie Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Omawia Programowanie aplikacji za pomocą .NET Framework w Visual Basic i Visual C#.

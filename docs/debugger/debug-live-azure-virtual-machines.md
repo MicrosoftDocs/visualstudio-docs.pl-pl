@@ -1,7 +1,7 @@
 ---
-title: Debuguj usługi Azure Virtual Machines i zestawy skalowania na żywo ASP.NET
+title: Debugowanie maszyn wirtualnych i zestawów skalowania na żywo usługi Live ASP.NET
 description: Dowiedz się, jak ustawić punkty przyciągania i wyświetlić migawki przy użyciu Snapshot Debugger.
-ms.custom: ''
+ms.custom: SEO-VS-2020
 ms.date: 02/06/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: d1e9248d3e70c885fa072e3bd4682a24f0bcfdd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 040fdee43262279a834978a4619b62fb62b10345
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350618"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809560"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Debuguj aplikacje Live ASP.NET na maszynach wirtualnych platformy Azure i w zestawach skalowania maszyn wirtualnych platformy Azure przy użyciu Snapshot Debugger
 

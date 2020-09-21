@@ -11,19 +11,19 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cceeacab44f17eb30184c90f1128b8d2c3528bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ec27b9b4f90b1f3ec75edef6dca01b1ed7b8adf
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115369"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807849"
 ---
 # <a name="properties-of-swimlanes"></a>Właściwości torów
 Można dodać tory do diagramu. Tory dzielą diagram na obszary pionowe lub poziome. Można definiować inne kształty, które będą wyświetlane wewnątrz torów. Aby uzyskać więcej informacji, zobacz [jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji o sposobach korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
  Tory mają właściwości, które są wymienione w poniższej tabeli.
 
-|Właściwość|Opis|Domyślne|
+|Właściwość|Opis|Domyślny|
 |-|-|-|
 |Kolor wypełnienia treści|Kolor wypełnienia dla treści toru.|Biały|
 |Kolor wypełnienia nagłówka|Kolor wypełnienia nagłówka toru.|DarkGray|
@@ -31,7 +31,7 @@ Można dodać tory do diagramu. Tory dzielą diagram na obszary pionowe lub pozi
 |Styl linii separatora|Styl linii separatora ( `Solid` ,,, `Dash` , `Dot` `DashDot` `DashDotDot` lub `Custom` ).|`Dash`|
 |Grubość separatora|Grubość linii separatora w calach.|0,03125|
 |Kolor tekstu|Kolor używany dla dekoratory tekstu, które są skojarzone z tym torem.|Czarnoskórzy|
-|Modyfikator dostępu|Poziom dostępu klasy ( `public` lub `internal` ).|Publiczne|
+|Modyfikator dostępu|Poziom dostępu klasy ( `public` lub `internal` ).|Public|
 |Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu, która jest generowana z tego toru.|\<none>|
 |Generuje podwójny pochodny|Jeśli `True` , zostanie wygenerowany zarówno klasę bazową, jak i Klasa częściowa (do obsługi dostosowywania za pomocą przesłonięć). Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
 |Ma Konstruktor niestandardowy|Jeśli `True` w kodzie źródłowym zostanie podany Konstruktor niestandardowy. Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
@@ -52,4 +52,4 @@ Można dodać tory do diagramu. Tory dzielą diagram na obszary pionowe lub pozi
 
 ## <a name="see-also"></a>Zobacz też
 
-- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](/previous-versions/bb126564(v=vs.100))

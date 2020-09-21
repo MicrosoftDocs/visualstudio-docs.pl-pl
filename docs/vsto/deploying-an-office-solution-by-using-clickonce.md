@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4adbd08d13d26c717beeb454bd323185bb88640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb495b30950105d1ff19a1f4fb13da1ee624b228
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416565"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809352"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Wdrażanie rozwiązania pakietu Office przy użyciu technologii ClickOnce
   Jeśli używasz technologii ClickOnce, możesz wdrożyć rozwiązanie pakietu Office w mniejszej liczbie kroków. Podczas publikowania aktualizacji rozwiązanie automatycznie je wykryje i zainstaluje. Niedogodność polega na tym, że w technologii ClickOnce rozwiązanie trzeba zainstalować osobno dla każdego użytkownika komputera. W związku z tym należy rozważyć użycie Instalator Windows (*. msi*), jeśli na tym samym komputerze zostanie uruchomione rozwiązanie na jednym z nich.
@@ -358,7 +358,7 @@ ms.locfileid: "79416565"
 |Kod błędu|Definicja|
 |----------------|----------------|
 |0|Rozwiązanie zostało pomyślnie zainstalowane lub odinstalowane albo została wyświetlona Pomoc narzędzia VSTOInstaller.|
-|-100|Co najmniej jedna opcja wiersza polecenia jest nieprawidłowa lub została ustawiona więcej niż raz. Aby uzyskać więcej informacji, wpisz "vstoinstaller/?". lub zobacz [Tworzenie niestandardowego Instalatora dla rozwiązania pakietu Office ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
+|-100|Co najmniej jedna opcja wiersza polecenia jest nieprawidłowa lub została ustawiona więcej niż raz. Aby uzyskać więcej informacji, wpisz "vstoinstaller/?". lub zobacz [Tworzenie niestandardowego Instalatora dla rozwiązania pakietu Office ClickOnce](/previous-versions/bb772078(v=vs.110)).|
 |-101|Co najmniej jedna opcja wiersza polecenia jest nieprawidłowa. Aby uzyskać więcej informacji, wpisz „vstoinstaller /?”.|
 |-200|Identyfikator URI manifestu wdrożenia jest nieprawidłowy. Aby uzyskać więcej informacji, wpisz „vstoinstaller /?”.|
 |-201|Nie można zainstalować rozwiązania, ponieważ manifest wdrożenia jest nieprawidłowy. Zobacz [manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md).|
@@ -460,7 +460,7 @@ ms.locfileid: "79416565"
 
 - [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)
 - [Publikowanie rozwiązań pakietu Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Instrukcje: publikowanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Instrukcje: Instalowanie rozwiązania Office ClickOnce](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)
-- [Instrukcje: publikowanie rozwiązania pakietu Office na poziomie dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)
-- [Tworzenie niestandardowego Instalatora dla rozwiązania Office ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)
+- [Instrukcje: publikowanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](/previous-versions/bb386095(v=vs.110))
+- [Instrukcje: Instalowanie rozwiązania Office ClickOnce](/previous-versions/bb608592(v=vs.110))
+- [Instrukcje: publikowanie rozwiązania pakietu Office na poziomie dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](/previous-versions/bb608595(v=vs.110))
+- [Tworzenie niestandardowego Instalatora dla rozwiązania Office ClickOnce](/previous-versions/bb772078(v=vs.110))

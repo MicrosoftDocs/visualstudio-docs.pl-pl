@@ -9,17 +9,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2865e6a6d410d661bc628fd9c7f1947516485018
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b3ff1ece9e57239b49c5dcbef5091a14d8b0fa5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544186"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810031"
 ---
 # <a name="properties-of-domain-classes"></a>Właściwości klas domeny
 Klasy domeny mają właściwości w poniższej tabeli. Aby uzyskać informacje o klasach domen, zobacz [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md). Aby uzyskać więcej informacji o sposobach korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Właściwość|Opis|Domyślne|
+|Właściwość|Opis|Domyślny|
 |-|-|-|
 |Modyfikator dostępu|Poziom dostępu do klasy domeny ( `public` lub `internal` ).|`public`|
 |Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu źródłowego, która jest generowana z tej klasy domeny.|\<none>|
@@ -36,4 +36,4 @@ Klasy domeny mają właściwości w poniższej tabeli. Aby uzyskać informacje o
 
 ## <a name="see-also"></a>Zobacz też
 
-- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](/previous-versions/bb126564(v=vs.100))

@@ -505,7 +505,7 @@
         - name: Styl kodu
           items:
             - name: Preferencje stylu kodu
-              href: /visualstudio/ide/code-styles-and-code-cleanup
+              href: ./ide/code-styles-and-code-cleanup.md
             - name: Korzystanie z plików EditorConfig na potrzeby stylu kodu
               displayName: Configure code style analyzers
               href: ide/create-portable-custom-editor-options.md

@@ -1,18 +1,18 @@
 ---
 title: Korzystanie z kluczy produktów | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 03/09/2020
+ms.date: 09/18/2020
 ms.topic: conceptual
 description: Dowiedz się, jak uzyskiwać klucze produktów i zarządzać nimi w subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 10b09275dc1ba3d20e47c097888677e733e21ced
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a7a2551b98672332af88210a0347c9ee3faf2cc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183928"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809162"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Korzystanie z kluczy produktów w subskrypcjach programu Visual Studio
 
@@ -52,12 +52,12 @@ Musisz się zalogować do subskrypcji programu Visual Studio, aby wyświetlić k
 Niektóre produkty łączą wiele wersji produktu w jeden plik do pobrania. W takich przypadkach wprowadzony klucz produktu określa, która wersja produktu jest zainstalowana.
 Niektóre klucze są udostępniane automatycznie, takie jak klucze "static", których można użyć dowolną liczbę razy, ponieważ aktywacja nie jest wymagana. Inne klucze muszą zostać przejęte przez wybranie linku **Pobierz klucz** dla produktu.
 > [!div class="mx-imgBorder"]
-> ![Pobierz klucz ze strony plików do pobrania](_img/product-keys/download-get-key.png)
+> ![Pobierz klucz ze strony plików do pobrania](_img/product-keys/download-get-key.png "Kliknij pozycję Pobierz klucz, aby zatwierdzić klucz pobieranego produktu.")
 
 Wszystkie klucze są również dostępne w agregacji na stronie [klucze produktów](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) . Na tej stronie można znaleźć klucze statyczne, które działają dla wszystkich użytkowników produktu, uzyskać klucze niestandardowe tylko do użytku, sprawdzić stan limitów roszczeń i wyeksportować wszystkie klucze produktów. 
 
 > [!div class="mx-imgBorder"]
-> ![Strona klucze produktu](_img/product-keys/product-keys-page.png)
+> ![Strona klucze produktu](_img/product-keys/product-keys-page.png "Strona klucze produktu zawiera pełne informacje o kluczu produktu dla konkretnej subskrypcji.")
 
 W zależności od produktu dostępne są różne typy kluczy.
 
@@ -66,7 +66,7 @@ W zależności od produktu dostępne są różne typy kluczy.
 |    Typ klucza           |    Opis                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Nie dotyczy                    |    Do zainstalowania tego produktu nie jest wymagany żaden klucz.                                                       |
-|    Retail                     |    Klucze detaliczne umożliwiają używanie wielu aktywacji i są używane na potrzeby kompilacji detalicznej produktu. W wielu przypadkach dozwolone są 10 aktywacji na klucz, chociaż często są dozwolone na tym samym komputerze.                                                       |
+|    Sprzedaż detaliczna                     |    Klucze detaliczne umożliwiają używanie wielu aktywacji i są używane na potrzeby kompilacji detalicznej produktu. W wielu przypadkach dozwolone są 10 aktywacji na klucz, chociaż często są dozwolone na tym samym komputerze.                                                       |
 |    Aktywacja wielokrotna        |    Klucz aktywacji wielokrotnej (MAK) umożliwia aktywację wielu instalacji produktu z tym samym kluczem. Wartości MAKs są zwykle używane z wersjami produktów licencjonowania zbiorowego. Zazwyczaj dla każdej subskrypcji jest dostarczany tylko jeden klucz MAK.    |
 |    Statyczny klucz aktywacji    |    Klucze aktywacji statycznej są udostępniane dla produktów, które nie wymagają aktywacji. Mogą one być używane dla dowolnej liczby instalacji.                                                                                                                  |
 |    Klucz niestandardowy                 |    Klucze niestandardowe udostępniają specjalne akcje lub informacje umożliwiające aktywację lub instalację produktu.                                                                                                                                                                |

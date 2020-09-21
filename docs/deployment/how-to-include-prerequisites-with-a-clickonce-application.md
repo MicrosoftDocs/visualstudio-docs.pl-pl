@@ -1,5 +1,6 @@
 ---
-title: Jak uwzględnić wymagania wstępne z aplikacją ClickOnce | Microsoft Docs
+title: Uwzględnij wymagania wstępne (Aplikacja ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 957b375a3f3a00e653118b59c48b7233197c30ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29ba5cbef127be2c67c078a62574ade22295433c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382396"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809136"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Instrukcje: uwzględnianie wymagań wstępnych z aplikacją ClickOnce
 Przed dystrybucją wstępnie wymaganego oprogramowania do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji należy najpierw pobrać pakiety Instalatora dla tych wymagań wstępnych na komputer deweloperski. Gdy publikujesz aplikację i wybierzesz opcję **Pobierz wstępnie wymagane składniki z tej samej lokalizacji co moja aplikacja**, wystąpi błąd, jeśli pakiety Instalatora nie znajdują się w folderze **Packages** .

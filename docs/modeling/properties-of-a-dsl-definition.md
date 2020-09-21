@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee23e15e6cc389ea5a8bdcdd793648365d08c30d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 650e4db75b3896a04b2dd4ef9056191d4a83d46a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532305"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810096"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Właściwości definicji DSL
 Właściwości DslDefinition definiują *specyficzne dla domeny* właściwości definicji języka, takie jak numer wersji. Właściwości DslDefinition są wyświetlane w oknie **Właściwości** po kliknięciu otwartego obszaru diagramu w *Projektant języka specyficznego dla domeny*.
@@ -23,7 +23,7 @@ Właściwości DslDefinition definiują *specyficzne dla domeny* właściwości 
 
  DslDefinition ma właściwości w poniższej tabeli:
 
-|Właściwość|Opis|Domyślne|
+|Właściwość|Opis|Domyślny|
 |-|-|-|
 |Modyfikator dostępu|Określa, czy modyfikator dostępu dla klasy domeny jest publiczny, czy wewnętrzny.|public|
 |Atrybuty niestandardowe|Niestandardowe atrybuty zdefiniowane dla klasy domeny.<br /><br /> **Uwaga** Użyj przycisku Przeglądaj, aby dodać atrybut.|\<none>|
@@ -44,4 +44,4 @@ Właściwości DslDefinition definiują *specyficzne dla domeny* właściwości 
 
 ## <a name="see-also"></a>Zobacz też
 
-- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](/previous-versions/bb126564(v=vs.100))

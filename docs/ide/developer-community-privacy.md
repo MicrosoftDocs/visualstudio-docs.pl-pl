@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f5b8e2d65454d75c08d3efc26af2fd93b22153b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6055592896779640e50b4bfaf28d951aa3309433
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284805"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739970"
 ---
 # <a name="developer-community-data-privacy"></a>Prywatność danych w społeczności deweloperów
 
@@ -68,6 +68,8 @@ Jeśli **Zgłoś problem** w programie Visual Studio, zbieramy co najmniej jeden
 - Dzienniki centrum usług i dzienniki błędów MEF, jeśli istnieją
 
 - Dzienniki języka Python, jeśli istnieją
+
+- Dzienniki edytora LSP (Razor), jeśli istnieją
 
 - Dzienniki Windows Forms, jeśli istnieją
 

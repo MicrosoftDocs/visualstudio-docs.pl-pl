@@ -1,5 +1,5 @@
 ---
-title: Narzędzie profilera wiersz polecenia — składnik .NET klienta programu, pobieranie danych pamięci
+title: Narzędzie profilera wiersz polecenia — składnik platformy .NET, pobieranie danych pamięci
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d09cc46a-70f5-48f9-aa24-89913e67b359
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 29406d72fc54e15499a0936a78ebf693f8eca0b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57ee3a8d3c94fcd5f3c4b77bddc2fab9710a3caa
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332064"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809625"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Instrukcje: instrumentowanie składnika autonomicznego .NET Framework i zbieranie danych pamięci za pomocą wiersza polecenia profilera
 W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania do instrumentowania .NET Framework składnika aplikacji autonomicznej, takiej jak plik exe lub dll, i zbierania informacji o pamięci za pomocą profilera.

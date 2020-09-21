@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 287ef3ccfd344786bd98098c5f28d0a2bd6573f6
+ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62896623"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90832323"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu dla języka C++ w debugerze programu Visual Studio
 Można zmienić format, w którym wartość jest wyświetlana w oknach **czujka**, **autostarty**i **lokalne** przy użyciu specyfikatorów formatu.
@@ -78,7 +78,7 @@ W poniższych tabelach opisano specyfikatory formatu, których można użyć w p
 |bb|Liczba całkowita binarna bez znaku (bez wiodących 0b)|25|00000000000000000000000000011001|
 |e|zapis naukowy|25000000|2.500000 e + 07|
 |g|krótsze lub zmiennoprzecinkowe|25000000|2.5 e + 07|
-|c|pojedynczy znak|0x0065, c|101 ' e '|
+|c|pojedynczy znak|0x0065|101 ' e '|
 |s|ciąg const char * (ze znakami cudzysłowu)|\<location> "Hello World"|"Hello World"|
 |**SB**|ciąg const char * (bez cudzysłowów)|\<location> "Hello World"|Cześć ludzie|
 |s8|Ciąg UTF-8|\<location> "To jest ̃ kawy w formacie UTF-8"|"To jest ☕ kawy w formacie UTF-8"|
@@ -89,7 +89,7 @@ W poniższych tabelach opisano specyfikatory formatu, których można użyć w p
 |kopert|Blok środowiska (ciąg zakończenia o wartości null)|\<location>L "=:: =:: \\ \\ "|L "=:: =:: \\ \\ \\ 0 = c: = c: \\ \\ Windows \\ \\ system32 \\ 0ALLUSERSPROFILE =...|
 |**s32**|Ciąg UTF-32 (ze znakami cudzysłowu)|\<location> U "Hello World"|U "Hello World"|
 |**s32b**|Ciąg UTF-32 (bez cudzysłowów)|\<location> U "Hello World"|Cześć ludzie|
-|**półpauzy**|enum|Sobota (6)|Sobota|
+|**en**|enum|Sobota (6)|Sobota|
 |**HV**|Typ wskaźnika — wskazuje, że testowana wartość wskaźnika jest wynikiem alokacji sterty tablicy, na przykład `new int[3]` .|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
 |**potrącon**|Pomija adres pamięci wskaźnika do obiektu.|\<location>, {member = Value...}|{member = wartość...}|
 |**ND**|Wyświetla tylko informacje o klasie bazowej, ignorując klasy pochodne|`(Shape*) square` zawiera klasę bazową i informacje o klasie pochodnej|Wyświetla tylko informacje o klasie bazowej|
@@ -121,7 +121,7 @@ W poniższych tabelach opisano specyfikatory formatu, których można użyć w p
 |kopert|Blok środowiska (ciąg zakończenia o wartości null)|\<location>L "=:: =:: \\ \\ "|L "=:: =:: \\ \\ \\ 0 = c: = c: \\ \\ Windows \\ \\ system32 \\ 0ALLUSERSPROFILE =...|
 |**s32**|Ciąg UTF-32 (ze znakami cudzysłowu)|\<location> U "Hello World"|U "Hello World"|
 |**s32b**|Ciąg UTF-32 (bez cudzysłowów)|\<location> U "Hello World"|Cześć ludzie|
-|**półpauzy**|enum|Sobota (6)|Sobota|
+|**en**|enum|Sobota (6)|Sobota|
 |**HV**|Typ wskaźnika — wskazuje, że testowana wartość wskaźnika jest wynikiem alokacji sterty tablicy, na przykład `new int[3]` .|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
 |**potrącon**|Pomija adres pamięci wskaźnika do obiektu.|\<location>, {member = Value...}|{member = wartość...}|
 |**ND**|Wyświetla tylko informacje o klasie bazowej, ignorując klasy pochodne|`(Shape*) square` zawiera klasę bazową i informacje o klasie pochodnej|Wyświetla tylko informacje o klasie bazowej|

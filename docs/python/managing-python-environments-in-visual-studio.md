@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1b6782a95793f222ba15fe8f928ecd9d7337c90f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9416862ad18bc297696e765d6664a4d08f2cc8dc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87913310"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809914"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak tworzyć środowiska Python i zarządzać nimi w programie Visual Studio
 
@@ -124,7 +124,7 @@ Z tego powodu deweloperzy często tworzą *środowisko wirtualne* dla projektu. 
 
 Program Visual Studio zapewnia bezpośrednią pomoc techniczną dla tworzenia środowiska wirtualnego dla projektu. Na przykład w przypadku otwarcia projektu zawierającego *requirements.txt*lub utworzenia projektu na podstawie szablonu zawierającego ten plik program Visual Studio poprosi o automatyczne utworzenie środowiska wirtualnego i zainstalowanie tych zależności.
 
-W dowolnym momencie w otwartym projekcie można utworzyć nowe środowisko wirtualne. W **Eksplorator rozwiązań**rozwiń węzeł projektu, kliknij prawym przyciskiem myszy **środowisko Python**i wybierz polecenie "Dodaj środowisko wirtualne". Aby uzyskać więcej informacji, zobacz [Tworzenie środowiska wirtualnego](/visualstudio/python/selecting-a-python-environment-for-a-project?view=vs-2019#create-a-virtual-environment-1).
+W dowolnym momencie w otwartym projekcie można utworzyć nowe środowisko wirtualne. W **Eksplorator rozwiązań**rozwiń węzeł projektu, kliknij prawym przyciskiem myszy **środowisko Python**i wybierz polecenie "Dodaj środowisko wirtualne". Aby uzyskać więcej informacji, zobacz [Tworzenie środowiska wirtualnego](./selecting-a-python-environment-for-a-project.md?view=vs-2019#create-a-virtual-environment-1).
 
 Program Visual Studio udostępnia również polecenie generowania pliku *requirements.txt* ze środowiska wirtualnego, co ułatwia ponowne tworzenie środowiska na innych komputerach. Aby uzyskać więcej informacji, zobacz [Korzystanie z środowisk wirtualnych](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 

@@ -12,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a9fc3c2d9c7f3f30f035eed036d2a9fb63d667
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d05b82a74fba4273838d378bc52822653bb6bfa
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520852"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811178"
 ---
 # <a name="properties-of-image-shapes"></a>Właściwości kształtów obrazu
 
@@ -43,7 +43,7 @@ Aby uzyskać więcej informacji, zobacz [jak zdefiniować język specyficzny dla
 
 Kształty obrazów mają właściwości, które są wymienione w poniższej tabeli.
 
-|Właściwość|Opis|Domyślne|
+|Właściwość|Opis|Domyślny|
 |-|-|-|
 |Kolor wypełnienia|Kolor wypełnienia tego kształtu.|Biały|
 |Tryb gradientu wypełnienia|Tryb gradientu wypełnienia tego kształtu.|Pozioma|
@@ -52,7 +52,7 @@ Kształty obrazów mają właściwości, które są wymienione w poniższej tabe
 |Styl kreskowania konturu|Styl kreskowania konturu tego kształtu (pełny, kreska, kropka, DashDot, DashDotDot lub niestandardowy).|Ciągła|
 |Grubość konturu|Grubość konturu tego kształtu.|0,03125|
 |Kolor tekstu|Kolor używany dla dekoratory tekstu, które są skojarzone z tym kształtem.|Czarnoskórzy|
-|Modyfikator dostępu|Modyfikator dostępu kształtu geometrycznego (publiczny lub wewnętrzny).|Publiczne|
+|Modyfikator dostępu|Modyfikator dostępu kształtu geometrycznego (publiczny lub wewnętrzny).|Public|
 |Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu źródłowego, która jest generowana z tego kształtu.|\<none>|
 |Generuje podwójny pochodny|Jeśli `True` , zostanie wygenerowany zarówno klasę bazową, jak i Klasa częściowa (do obsługi dostosowywania za pomocą przesłonięć). Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
 |Ma Konstruktor niestandardowy|Jeśli `True` w kodzie źródłowym zostanie podany Konstruktor niestandardowy. Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
@@ -73,4 +73,4 @@ Kształty obrazów mają właściwości, które są wymienione w poniższej tabe
 
 ## <a name="see-also"></a>Zobacz też
 
-- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](/previous-versions/bb126564(v=vs.100))

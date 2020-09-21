@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e421d6e4ee94d9974c0a0583db1fb495c72593e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13cbf08e5767ec548b9fdba9bd0892e0cf50a63d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416539"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808792"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Uaktualnianie i migrowanie rozwiązań pakietu Office
   Jeśli masz projekt Microsoft Office, który został utworzony we wcześniejszej wersji programu Visual Studio, musisz uaktualnić projekt, aby używać go w bieżących wersjach programu Visual Studio. Aby uaktualnić projekt Microsoft Office, otwórz go w wersji programu Visual Studio, która zawiera Microsoft Office narzędzia deweloperskie. Aby uzyskać więcej informacji na temat wersji programu Visual Studio, które obejmują narzędzia deweloperskie Microsoft Office, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
@@ -84,6 +84,6 @@ ms.locfileid: "79416539"
  Jeśli chcesz użyć technologii ClickOnce do wdrożenia dodatku VSTO, możesz całkowicie usunąć projekt Setup lub InstallShield Limited Edition. Aby uzyskać więcej informacji o wdrażaniu dodatków VSTO przy użyciu technologii ClickOnce, zobacz [wdrażanie rozwiązania pakietu Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Zobacz też
-- [Instrukcje: Uaktualnianie rozwiązań pakietu Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)
+- [Instrukcje: Uaktualnianie rozwiązań pakietu Office](/previous-versions/4bez6837(v=vs.140))
 - [Migrowanie rozwiązań pakietu Office do .NET Framework 4 lub nowszego](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Uaktualnianie projektu, Opcje — okno dialogowe](../vsto/project-upgrade-options-dialog-box.md)

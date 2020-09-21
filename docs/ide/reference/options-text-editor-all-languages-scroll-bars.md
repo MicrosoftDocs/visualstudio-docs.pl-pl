@@ -32,12 +32,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c89be8a79aad9a2e3e0cdbc8601a08a99c1ad1aa
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588801"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808093"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opcje, Edytor tekstu, wszystkie języki, paski przewijania
 To okno dialogowe umożliwia zmianę domyślnego zachowania paska przewijania edytora kodu. Aby wyświetlić te opcje, wybierz opcję **Opcje** z menu **Narzędzia** . W folderze **Edytor tekstu** rozwiń podfolder **wszystkie języki** , a następnie wybierz **paski przewijania**.
@@ -69,7 +69,7 @@ Wybierz, czy pionowy pasek przewijania zawiera następujące adnotacje:
 
 Wypróbuj ją, otwierając plik dużego kodu i zastępując jakiś tekst występujący w kilku miejscach w pliku. Pasek przewijania pokazuje efekt zamian, dzięki czemu można cofnąć zmiany, jeśli zamienisz coś, czego nie trzeba.
 
-Zapoznaj się z wpisem w blogu [Ulepszony pasek przewijania](https://blogs.msdn.microsoft.com/cdnstudents/2014/01/21/visual-studio-tips-and-tricks-enhanced-scroll-bar/) , który oznacza różne kolory i symbole podczas edycji kodu.
+Zapoznaj się z wpisem w blogu [Ulepszony pasek przewijania](/archive/blogs/cdnstudents/visual-studio-tips-and-tricks-enhanced-scroll-bar) , który oznacza różne kolory i symbole podczas edycji kodu.
 
 ## <a name="behavior"></a>Zachowanie
 

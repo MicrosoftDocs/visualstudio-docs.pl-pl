@@ -12,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a2efac2e317fc8e3d168f4b8b19bfb10014cf2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f7ac5967d13aa6572b36989150561363555a9705
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036941"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809201"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Krok 11. Uruchamianie aplikacji Przeglądarka obrazów i wypróbuj inne funkcje
 
@@ -58,8 +58,8 @@ Aby dowiedzieć się więcej, przejdź do następującego samouczka:
 
 Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 10. Pisanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-* [Więcej samouczków dotyczących języka C#](/visualstudio/get-started/csharp/)
-* [Więcej samouczków Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Więcej samouczków dotyczących języka C#](../get-started/csharp/index.yml)
+* [Więcej samouczków Visual Basic](../get-started/visual-basic/index.yml)
 * [Samouczek języka C++](/cpp/get-started/tutorial-console-cpp)

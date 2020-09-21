@@ -10,12 +10,12 @@ f1_keywords:
 manager: jillfra
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 726d0daed76212e9bda498a5afca0c84cd84281e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a26e102ad71025edf92a499a1439022d9735eab
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88802267"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808249"
 ---
 # <a name="f1-help-for-the-text-editor"></a>F1 — Pomoc dla edytora tekstu
 
@@ -37,7 +37,7 @@ Jeśli szukasz pomocy F1 dla słowa kluczowego lub nazwy interfejsu API, pamięt
 ## <a name="search-for-help-on-a-keyword-or-api-name"></a>Wyszukaj pomoc dotyczącą słowa kluczowego lub nazwy interfejsu API
 
 Jeśli szukasz pomocy F1 dla słowa kluczowego lub nazwy interfejsu API:
-- Spróbuj wyszukać w witrynie [docs.Microsoft.com](https://docs.microsoft.com)
+- Spróbuj wyszukać w witrynie [docs.Microsoft.com](/)
 - Spróbuj wyszukać przy użyciu wyszukiwarki.
 - Wyszukaj dokumentację referencyjną w [przeglądarce interfejsów API platformy .NET](/dotnet/api/).
 

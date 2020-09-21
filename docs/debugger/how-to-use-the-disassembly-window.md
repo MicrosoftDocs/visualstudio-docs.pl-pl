@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0570aec5e8571e75cf64418a2c8c7c95cf507d31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23f297aa3fc549714a9b6327232a8a0b69c6138f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348707"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808171"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Wyświetlanie kodu demontażu w debugerze programu Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -58,7 +58,7 @@ Aby wyświetlić instrukcje dotyczące kodu maszynowego w pierwotnej formie licz
 
 ## <a name="use-the-disassembly-window"></a>Korzystanie z okna demontażu
 
-Aby włączyć okno **demontaż** , w obszarze **Narzędzia**  >  **Opcje** (lub **Tools**  >  **Opcje**narzędzi) > **debugowanie**wybierz pozycję **Włącz debugowanie na poziomie adresu**.
+Aby włączyć okno **demontaż** , w obszarze **Narzędzia**  >  **Opcje**  >  **debugowania**wybierz pozycję **Włącz debugowanie na poziomie adresu**.
 
 Aby otworzyć okno **demontaż** podczas debugowania, wybierz pozycję **Windows**  >  **demontaż** systemu Windows lub naciśnij klawisz **Alt** + **8**.
 

@@ -7,12 +7,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa4a768f8ebd8b39918fa3ba51d4eb9b3f773151
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a10b1f9b3dd6dda643a2775cf7b89221fba71d8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219767"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808145"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Przewodnik dotyczący produktywności dla programu Visual Studio
 
@@ -20,7 +20,7 @@ Jeśli chcesz zaoszczędzić czas podczas pisania kodu, jesteś w odpowiednim mi
 
 Aby uzyskać informacje na temat przydatnych skrótów klawiaturowych, zobacz [Skróty dotyczące produktywności](../ide/productivity-shortcuts.md). Aby uzyskać pełną listę skrótów poleceń, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-## <a name="get-started"></a>Rozpoczęcie pracy
+## <a name="get-started"></a>Wprowadzenie
 
 Oszczędź czas przeszukiwanie stosów za pomocą menu, szybko wyszukując potrzebne elementy, w tym polecenia, ustawienia, dokumentację i opcje instalacji. Zobacz skróty klawiaturowe dla poleceń znajdujących się w wynikach wyszukiwania w programie Visual Studio, dzięki czemu można je łatwo znają. 
 
@@ -32,9 +32,9 @@ Oszczędź czas przeszukiwanie stosów za pomocą menu, szybko wyszukując potrz
 
 - **Zwiększ dostępność programu Visual Studio**. Program Visual Studio ma wbudowane funkcje ułatwień dostępu, które są zgodne z czytnikami ekranu i innymi technologiami pomocniczymi. Zobacz [porady dotyczące ułatwień dostępu i wskazówki dla programu Visual Studio](../ide/reference/accessibility-tips-and-tricks.md) , aby zapoznać się z pełną listą dostępnych funkcji. 
 
-- **Zapoznaj się z cyklem życia produktu i obsługą programu Visual Studio**. Aby uzyskać informacje na temat pobierania aktualizacji dla programu Visual Studio, opcji pomocy technicznej dla klientów korporacyjnych i profesjonalnych, obsługi starszych wersji programu Visual Studio i składników, które nie są objęte obsługą programu Visual Studio, zobacz [cykl życia produktu Visual Studio i obsługa](https://docs.microsoft.com/visualstudio/releases/2019/servicing). 
+- **Zapoznaj się z cyklem życia produktu i obsługą programu Visual Studio**. Aby uzyskać informacje na temat pobierania aktualizacji dla programu Visual Studio, opcji pomocy technicznej dla klientów korporacyjnych i profesjonalnych, obsługi starszych wersji programu Visual Studio i składników, które nie są objęte obsługą programu Visual Studio, zobacz [cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing). 
 
-- **Instalowanie pakietów NuGet i zarządzanie nimi w programie Visual Studio**. Interfejs użytkownika Menedżera pakietów NuGet w programie Visual Studio w systemie Windows umożliwia łatwe instalowanie, Odinstalowywanie i aktualizowanie pakietów NuGet w projektach i rozwiązaniach. Aby uzyskać więcej informacji, zobacz [Instalowanie pakietów i zarządzanie nimi w programie Visual Studio przy użyciu Menedżera pakietów NuGet](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio).
+- **Instalowanie pakietów NuGet i zarządzanie nimi w programie Visual Studio**. Interfejs użytkownika Menedżera pakietów NuGet w programie Visual Studio w systemie Windows umożliwia łatwe instalowanie, Odinstalowywanie i aktualizowanie pakietów NuGet w projektach i rozwiązaniach. Aby uzyskać więcej informacji, zobacz [Instalowanie pakietów i zarządzanie nimi w programie Visual Studio przy użyciu Menedżera pakietów NuGet](/nuget/consume-packages/install-use-packages-visual-studio).
 
 ## <a name="write-code"></a>Pisanie kodu
 
@@ -60,7 +60,7 @@ Szybsze pisanie kodu przy użyciu następujących funkcji.
 
 - **Korzystaj z przykładowych aplikacji**. Można przyspieszyć tworzenie aplikacji, pobierając i instalując przykładowe aplikacje z [sieci Microsoft Developer Network](https://code.msdn.microsoft.com/). Możesz również poznać konkretną technikę lub koncepcję programowania, pobierając i eksplorowanie przykładowego pakietu dla tego obszaru.
 
-- **Zmień formatowanie nawiasów klamrowych z formatowaniem/nowym wierszem**. Strona Opcje **formatowania**  służy do ustawiania opcji formatowania kodu w edytorze kodu, w tym nowych wierszy. Aby uzyskać więcej informacji na temat używania tego ustawienia w języku C#, zobacz [Opcje okno dialogowe: Edytor tekstu > C# > stylu kodu > formatowanie](../ide/reference/options-text-editor-csharp-formatting.md). W przypadku języka C++ zapoznaj się z tematem [Ustawianie preferencji kodowania języka C++ w programie Visual Studio](https://docs.microsoft.com/cpp/ide/how-to-set-preferences). W przypadku języka Python zobacz [Formatowanie kodu](../python/formatting-python-code.md)w języku Python.
+- **Zmień formatowanie nawiasów klamrowych z formatowaniem/nowym wierszem**. Strona Opcje **formatowania**  służy do ustawiania opcji formatowania kodu w edytorze kodu, w tym nowych wierszy. Aby uzyskać więcej informacji na temat używania tego ustawienia w języku C#, zobacz [Opcje okno dialogowe: Edytor tekstu > C# > stylu kodu > formatowanie](../ide/reference/options-text-editor-csharp-formatting.md). W przypadku języka C++ zapoznaj się z tematem [Ustawianie preferencji kodowania języka C++ w programie Visual Studio](/cpp/ide/how-to-set-preferences). W przypadku języka Python zobacz [Formatowanie kodu](../python/formatting-python-code.md)w języku Python.
 
 - **Zmień wcięcie przy użyciu kart**. Użyj niestandardowych ustawień edytora, które są dostosowane do poszczególnych baz kodu, aby wymusić spójne style kodowania dla wielu deweloperów pracujących nad tym samym projektem w różnych edytorach i środowisk IDE. Upewnij się, że cały zespół jest zgodny z tymi samymi konwencjami językowymi, konwencjami nazewnictwa i regułami formatowania. Ponieważ te ustawienia niestandardowe są przenośne i podróżują z kodem, można wymusić style kodowania nawet poza programem Visual Studio. Aby uzyskać więcej informacji, zobacz [Opcje, Edytor tekstu, wszystkie języki, karty](../ide/reference/options-text-editor-all-languages-tabs.md#tabs).
 
@@ -118,7 +118,7 @@ Debugowanie może zużywać dużo czasu, ale poniższe porady mogą pomóc przys
 
 - **Użyj narzędzi debugera programu Visual Studio**. W kontekście programu Visual Studio, gdy *debugujesz aplikację*, zazwyczaj oznacza to, że aplikacja jest uruchamiana w trybie debugera. Debuger zapewnia wiele sposobów, aby sprawdzić, co Twój kod działa podczas jego działania. Aby zapoznać się z przewodnikiem Rozpoczynanie pracy [, zobacz najpierw debuger programu Visual Studio](../debugger/debugger-feature-tour.md) . 
 
-- **Przetestuj tę samą stronę, aplikację lub witrynę w różnych przeglądarkach**. Podczas debugowania kodu można łatwo przełączać się między zainstalowanymi przeglądarkami sieci Web, w tym [inspektorem stron (Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209)bez konieczności otwierania okna dialogowego **przeglądanie za pomocą** . Możesz użyć listy **obiektów docelowych debugowania** , która znajduje się na **standardowym** pasku narzędzi obok przycisku **Rozpocznij debugowanie** , aby szybko sprawdzić, która przeglądarka jest używana podczas debugowania lub wyświetlania stron.
+- **Przetestuj tę samą stronę, aplikację lub witrynę w różnych przeglądarkach**. Podczas debugowania kodu można łatwo przełączać się między zainstalowanymi przeglądarkami sieci Web, w tym [inspektorem stron (Visual Studio)](/previous-versions/hh974728(v=vs.140))bez konieczności otwierania okna dialogowego **przeglądanie za pomocą** . Możesz użyć listy **obiektów docelowych debugowania** , która znajduje się na **standardowym** pasku narzędzi obok przycisku **Rozpocznij debugowanie** , aby szybko sprawdzić, która przeglądarka jest używana podczas debugowania lub wyświetlania stron.
 
     ![Wybierz opcje debugowania przeglądarki sieci Web](../ide/media/webbrowserdropdowntoolbar.png)
 
@@ -140,7 +140,7 @@ Debugowanie może zużywać dużo czasu, ale poniższe porady mogą pomóc przys
 
 - **[Znajdź zmiany w kodzie i inne historyczne z CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)**. Usługa CodeLens umożliwia skoncentrowanie się na pracy w czasie, gdy dowiesz się, co się stało z kodem &mdash; bez opuszczania edytora. Można znaleźć odwołania do fragmentu kodu, zmiany w kodzie, połączone błędy, elementy robocze, przeglądy kodu i testy jednostkowe.
 
-- **Użyj Live Share do debugowania w czasie rzeczywistym z innymi osobami**. Rozszerzenie Live Share umożliwia wspólne edytowanie i debugowanie z innymi osobami w czasie rzeczywistym, niezależnie od używanych języków programowania lub typów tworzonych aplikacji. Aby uzyskać więcej informacji, zobacz [co to jest Visual Studio Live Share?](https://docs.microsoft.com/visualstudio/liveshare/)
+- **Użyj Live Share do debugowania w czasie rzeczywistym z innymi osobami**. Rozszerzenie Live Share umożliwia wspólne edytowanie i debugowanie z innymi osobami w czasie rzeczywistym, niezależnie od używanych języków programowania lub typów tworzonych aplikacji. Aby uzyskać więcej informacji, zobacz [co to jest Visual Studio Live Share?](/visualstudio/liveshare/)
 
 - **Użyj okna interaktywnego, aby napisać i przetestować mały kod**. Program Visual Studio udostępnia interaktywne okno odczytu-Szacuj-Print-Loop (REPL), które umożliwia wprowadzanie dowolnego kodu i wyświetlanie wyników natychmiastowych. Ten sposób kodowania pomaga uczyć się i eksperymentować z interfejsami API i bibliotekami oraz interaktywnie opracowywać kod roboczy do uwzględnienia w projektach. W przypadku języka Python zobacz [Working with Interactive Window języka Python](../python/python-interactive-repl-in-visual-studio.md). Funkcja interaktywnego okna jest również dostępna dla języka C#. 
 

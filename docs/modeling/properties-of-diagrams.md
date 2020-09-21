@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 762c2acb6774d7eb4949087fdd91e85c86acd6bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fd1ab781fd838c8e5379e38fdcb3a6fddd65230
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595426"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810044"
 ---
 # <a name="properties-of-diagrams"></a>Właściwości diagramów
 Można ustawić właściwości określające sposób wyświetlania diagramów w wygenerowanym projektancie. Na przykład można określić domyślny kolor tekstu na diagramie.
@@ -25,11 +25,11 @@ Można ustawić właściwości określające sposób wyświetlania diagramów w 
 
  Poniższa tabela zawiera listę właściwości diagramów.
 
-|Właściwość|Opis|Domyślne|
+|Właściwość|Opis|Domyślny|
 |-|-|-|
 |Kolor wypełnienia|Kolor wypełnienia dla diagramu.|Biały|
 |Kolor tekstu|Kolor tekstu, który jest wyświetlany na diagramie.|Czarnoskórzy|
-|Modyfikator dostępu|Modyfikator dostępu klasy (Public lub internal).|Publiczne|
+|Modyfikator dostępu|Modyfikator dostępu klasy (Public lub internal).|Public|
 |Atrybuty niestandardowe|Służy do dodawania atrybutów do wygenerowanej klasy kodu.|\<none>|
 |Generuje podwójny pochodny|Jeśli `True` , zostanie wygenerowany zarówno klasę bazową, jak i Klasa częściowa (do obsługi dostosowywania za pomocą przesłonięć). Aby uzyskać więcej informacji, zobacz [Przesłoń i rozwiń wygenerowane klasy](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
 |Ma Konstruktor niestandardowy|Jeśli `True` w kodzie źródłowym zostanie podany Konstruktor niestandardowy. Aby uzyskać więcej informacji, zobacz [Przesłoń i rozwiń wygenerowane klasy](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
@@ -47,4 +47,4 @@ Można ustawić właściwości określające sposób wyświetlania diagramów w 
 
 ## <a name="see-also"></a>Zobacz też
 
-[Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+[Słownik narzędzi języka specyficznego dla domeny](/previous-versions/bb126564(v=vs.100))

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fea425da8a6e49643997151c6273fbbffc7033db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceaa4db4bb31870ee66fbffae8882fc93d9abbb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016509"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739918"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Przewodnik: Tworzenie elementu projektu kolumny witryny z szablonem projektu, część 1
   Projekty programu SharePoint są kontenerami dla co najmniej jednego elementu projektu programu SharePoint. System projektu programu SharePoint w programie Visual Studio można rozłożyć przez utworzenie własnych typów elementów projektu programu SharePoint, a następnie skojarzenie ich z szablonem projektu. W tym instruktażu zdefiniujesz typ elementu projektu do tworzenia kolumny witryny, a następnie utworzysz szablon projektu, którego można użyć do utworzenia nowego projektu zawierającego element projektu kolumny witryny.
@@ -639,7 +639,7 @@ ms.locfileid: "86016509"
 
 1. W **Eksplorator rozwiązań**, w projekcie **SiteColumnProjectItem** , Otwórz plik source. Extension. vsixmanifest w edytorze manifestu.
 
-     Plik source. Extension. vsixmanifest jest podstawą dla pliku Extension. vsixmanifest, który wymaga wszystkich pakietów VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [Dokumentacja schematu rozszerzenia VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Plik source. Extension. vsixmanifest jest podstawą dla pliku Extension. vsixmanifest, który wymaga wszystkich pakietów VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [Dokumentacja schematu rozszerzenia VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. W polu **Nazwa produktu** wprowadź wartość **kolumny witryna**.
 

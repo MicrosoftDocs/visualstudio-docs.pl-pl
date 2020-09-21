@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef80ac1c7e64eb3591e2e6b09de97c77a26e46f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d9f2446aa793fcd80c3c6786bf1b2002a7ccbc0
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532370"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808080"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Przegląd narzędzi językowych właściwych dla domeny
 Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowane w programie Visual Studio, umożliwiają projektowanie języka specyficznego dla domeny, a następnie generowanie wszystkich elementów, które muszą być potrzebne użytkownikom do tworzenia modeli opartych na języku.
@@ -77,4 +77,4 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
 ## <a name="see-also"></a>Zobacz też
 
 - [Wystąpienie eksperymentalne](../extensibility/the-experimental-instance.md)
-- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](/previous-versions/bb126564(v=vs.100))

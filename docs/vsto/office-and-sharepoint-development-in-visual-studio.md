@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc1241a39707eedc4b34e0ef3531ab65e49b8238
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800947"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811035"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Programowanie dla pakietu Office i programu SharePoint w programie Visual Studio
   Możesz rozciągnąć Microsoft Office i SharePoint, tworząc lekkie aplikacje lub dodatki pobierane przez użytkowników ze [sklepu Office](https://store.office.com/) lub wykazu organizacji lub tworząc rozwiązanie oparte na .NET Framework, które użytkownicy instalują na komputerze.
@@ -62,7 +62,7 @@ ms.locfileid: "88800947"
 |Działanie|Zobacz|
 |--------|---------|
 |Dowiedz się więcej na temat dodatków pakietu Office, a następnie Skompiluj ją.|[Dodatki pakietu Office](/office/dev/add-ins/publish/publish)|
-|Porównaj różne sposoby, w których można zwiększyć pakiet Office i zdecydować, czy należy użyć aplikacji, czy dodatku pakietu Office.|[Plan dla dodatków pakietu Office, narzędzi VSTO i VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|Porównaj różne sposoby, w których można zwiększyć pakiet Office i zdecydować, czy należy użyć aplikacji, czy dodatku pakietu Office.|[Plan dla dodatków pakietu Office, narzędzi VSTO i VBA](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 
 ### <a name="build-a-sharepoint-add-in"></a>Tworzenie dodatku programu SharePoint
  Aby zwiększyć SharePoint dla użytkowników, należy utworzyć dodatek programu SharePoint. Zasadniczo jest to niewielka, łatwa w użyciu, samodzielna aplikacja, która rozwiązuje potrzeby dla użytkowników lub firmy.
@@ -92,7 +92,7 @@ ms.locfileid: "88800947"
 
 |Działanie|Odczyt|
 |--------|----------|
-|Porównaj różne sposoby, w których można zwiększyć pakiet Office i zdecydować, czy należy użyć dodatku VSTO lub dodatku dla pakietu Office.|[Plan dla dodatków pakietu Office, narzędzi VSTO i VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|Porównaj różne sposoby, w których można zwiększyć pakiet Office i zdecydować, czy należy użyć dodatku VSTO lub dodatku dla pakietu Office.|[Plan dla dodatków pakietu Office, narzędzi VSTO i VBA](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 |Utwórz dodatek narzędzi VSTO.|[Kompilacja dodatków VSTO przy użyciu programu Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
 
 ## <a name="create-a-sharepoint-solution"></a><a name="Solutions"></a> Utwórz rozwiązanie SharePoint

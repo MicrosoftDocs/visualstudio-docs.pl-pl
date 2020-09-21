@@ -1,5 +1,6 @@
 ---
-title: Ustaw niestandardową lokalizację pliku dziennika dla błędów wdrażania ClickOnce
+title: Ustawianie niestandardowej lokalizacji pliku dziennika (błędy wdrażania ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05ffd1cf32f8c7ea93e63232f7026c6c926f9308
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5b5cf73a685eb68e389e6531022200acbefbfd2
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382175"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809745"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Instrukcje: ustawienie niestandardowej lokalizacji pliku dziennika dla błędów wdrażania ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] przechowuje pliki dziennika aktywacji dla wszystkich wdrożeń. Rejestruje wszystkie błędy związane z instalacją i inicjalizacją [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia. Domyślnie program [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tworzy jeden plik dziennika dla każdej aktywacji wdrożenia. Te pliki dzienników są przechowywane w folderze tymczasowych plików internetowych. Plik dziennika wdrożenia jest wyświetlany użytkownikowi, gdy wystąpi awaria aktywacji, a użytkownik klika **szczegóły** w oknie dialogowym błędu.

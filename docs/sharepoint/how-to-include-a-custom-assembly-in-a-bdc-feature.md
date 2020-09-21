@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 772cdbaca67cc82fc6b7eb2c5ef5adb6508df34a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79336e241b822e5fa9f84dbb771aa4187ea5eadb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015254"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740074"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Instrukcje: uwzględnianie niestandardowego zestawu w funkcji BDC
   Projekt może odwoływać się do zestawów z innych projektów w tym samym rozwiązaniu. Należy jednak dodać te zestawy do pliku funkcji projektu za pomocą okna dialogowego **Przypisz przywoływane zestawy do LobSystems** .
@@ -40,7 +40,7 @@ ms.locfileid: "86015254"
 4. Z listy **Wybierz zestaw** wybierz zestaw niestandardowy.
 
     > [!NOTE]
-    > Zestawy pojawiają się tylko w oknie dialogowym **przypisywanie przywoływanych zestawów do LobSystems** , jeśli dodano odwołanie do projektu, który zawiera zestaw. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodawanie odwołania](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+    > Zestawy pojawiają się tylko w oknie dialogowym **przypisywanie przywoływanych zestawów do LobSystems** , jeśli dodano odwołanie do projektu, który zawiera zestaw. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodawanie odwołania](/previous-versions/wkze6zky(v=vs.140)).
 
 5. W grupie **właściwości odwołania** Otwórz listę, która pojawia się dla właściwości **Zakres klasy LobSystem** , wybierz System LOB metod, które używają zestawu niestandardowego, a następnie wybierz przycisk **OK** .
 

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49963df35aa5bebd126aa241fca6cb1712a0b111
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70107839"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808997"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Zasoby do projektowania dostępnych aplikacji
 
@@ -48,9 +48,9 @@ Dowiedz się więcej o technologiach, które obsługują dostęp do dostępnego 
 
 ## <a name="websites"></a>Witryny internetowe
 
-- [Przewodnik: wskazówki dotyczące ułatwień dostępu dotyczące używania kontrolek obrazu, kontrolek menu i Autoogłaszania zwrotnego](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Ten artykuł zawiera instrukcje krok po kroku dotyczące sposobu dołączania dostępnych formantów na przykładowej stronie sieci Web. Zapewnia również pewne wskazówki dotyczące projektowania dostępności dla sieci Web.
+- [Przewodnik: wskazówki dotyczące ułatwień dostępu dotyczące używania kontrolek obrazu, kontrolek menu i Autoogłaszania zwrotnego](/previous-versions/3has1x30(v=vs.140)) Ten artykuł zawiera instrukcje krok po kroku dotyczące sposobu dołączania dostępnych formantów na przykładowej stronie sieci Web. Zapewnia również pewne wskazówki dotyczące projektowania dostępności dla sieci Web.
 
-- **Tworzenie dostępnych stron sieci Web za pomocą języka DHTML** Ten artykuł techniczny zawiera listę elementów HTML 4,0, które są dostępne, a także dostępne porady dotyczące projektowania sieci Web. Aby uzyskać więcej informacji, zobacz [Tworzenie dostępnych stron sieci Web za pomocą języka DHTML](https://msdn.microsoft.com/library/ms528445.aspx).
+- **Tworzenie dostępnych stron sieci Web za pomocą języka DHTML** Ten artykuł techniczny zawiera listę elementów HTML 4,0, które są dostępne, a także dostępne porady dotyczące projektowania sieci Web. Aby uzyskać więcej informacji, zobacz [Tworzenie dostępnych stron sieci Web za pomocą języka DHTML](/previous-versions//ms528445(v=vs.85)).
 
 ### <a name="third-party-resources"></a>Zasoby innych firm
 

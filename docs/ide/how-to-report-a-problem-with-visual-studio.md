@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e5f64ebdf93384b7def728ac5d01bcbaf6b0271
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2deb3f8ff19c2d7805031c0c3ba02bc82b8a3e7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88584578"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810877"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Jak zgłosić problem z programem Visual Studio lub Instalator programu Visual Studio
 
@@ -87,7 +87,7 @@ Jeśli nie masz problemu z raportowaniem, ale chcesz zasugerować funkcję, istn
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Wskazówki dotyczące społeczności deweloperów](https://docs.microsoft.com/visualstudio/ide/developer-community-guidelines)
+* [Wskazówki dotyczące społeczności deweloperów](./developer-community-guidelines.md)
 * [Opcje opinii programu Visual Studio](../ide/feedback-options.md)
 * [Zgłoś problem z Visual Studio dla komputerów Mac](/visualstudio/mac/report-a-problem)
 * [Zgłoś problem w języku C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
