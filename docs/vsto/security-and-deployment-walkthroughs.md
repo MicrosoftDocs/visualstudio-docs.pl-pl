@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c1325ebb49e500c3afa40ee074be1f9b859100e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 014b59efb945f6390877a2e9764e24b6c4cd639b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978435"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810944"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Przewodniki dotyczące zabezpieczeń i wdrażania
   W poniższych tematach opisano, jak można ustawić zasady zabezpieczeń, aby umożliwić działanie Twojego rozwiązania oraz jak można wdrożyć rozwiązanie pakietu Office.
@@ -31,19 +31,19 @@ ms.locfileid: "62978435"
 - [Instrukcje: Konfigurowanie zabezpieczeń listy dołączania](../vsto/how-to-configure-inclusion-list-security.md) Wyjaśniono, jak skonfigurować [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] monit zaufania, aby kontrolować, czy użytkownicy końcowi mają opcję instalacji rozwiązań pakietu Office.
 
 ## <a name="deployment-topics"></a>Tematy dotyczące wdrażania
-- [Instrukcje: publikowanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8) Zawiera informacje o sposobach publikowania rozwiązań pakietu Office przy użyciu **Kreatora publikacji** lub strony **publikowania** projektanta projektu.
+- [Instrukcje: publikowanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](/previous-versions/bb386095(v=vs.110)) Zawiera informacje o sposobach publikowania rozwiązań pakietu Office przy użyciu **Kreatora publikacji** lub strony **publikowania** projektanta projektu.
 
-- [Instrukcje: publikowanie rozwiązania pakietu Office na poziomie dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58) Opisuje kroki wdrażania na serwerze programu SharePoint.
+- [Instrukcje: publikowanie rozwiązania pakietu Office na poziomie dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](/previous-versions/bb608595(v=vs.110)) Opisuje kroki wdrażania na serwerze programu SharePoint.
 
-- [Instrukcje: Instalowanie rozwiązania Office ClickOnce](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065) Zawiera instrukcje dotyczące instalowania rozwiązań pakietu Office przez uruchomienie programu instalacyjnego, który jest generowany podczas procesu publikowania; otwieranie pliku manifestu wdrożenia; lub otwarcie niestandardowego dokumentu lub skoroszytu.
+- [Instrukcje: Instalowanie rozwiązania Office ClickOnce](/previous-versions/bb608592(v=vs.110)) Zawiera instrukcje dotyczące instalowania rozwiązań pakietu Office przez uruchomienie programu instalacyjnego, który jest generowany podczas procesu publikowania; otwieranie pliku manifestu wdrożenia; lub otwarcie niestandardowego dokumentu lub skoroszytu.
 
-- [Instrukcje: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych w celu uruchamiania rozwiązań pakietu Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98) Opisuje, jak można utworzyć program instalacyjny, który sprawdza wymagania wstępne przed zainstalowaniem składników rozwiązania.
+- [Instrukcje: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych w celu uruchamiania rozwiązań pakietu Office](/previous-versions/bb608608(v=vs.110)) Opisuje, jak można utworzyć program instalacyjny, który sprawdza wymagania wstępne przed zainstalowaniem składników rozwiązania.
 
-- [Instrukcje: przygotowanie usług IIS do wdrożenia rozwiązań pakietu Office](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4) Opisuje sposób konfigurowania typu MIME w programie Microsoft Internet Information Services (IIS) dla manifestu wdrożenia.
+- [Instrukcje: przygotowanie usług IIS do wdrożenia rozwiązań pakietu Office](/previous-versions/bb608629(v=vs.110)) Opisuje sposób konfigurowania typu MIME w programie Microsoft Internet Information Services (IIS) dla manifestu wdrożenia.
 
-- [Instrukcje: aktualizowanie wdrożonych rozwiązań pakietu Office](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13) Zawiera informacje o sposobach aktualizowania rozwiązania pakietu Office przy użyciu **Kreatora publikacji**.
+- [Instrukcje: aktualizowanie wdrożonych rozwiązań pakietu Office](/previous-versions/bb157871(v=vs.110)) Zawiera informacje o sposobach aktualizowania rozwiązania pakietu Office przy użyciu **Kreatora publikacji**.
 
-- [Instrukcje: Zmienianie ścieżki instalacji rozwiązania pakietu Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd) Zawiera informacje o sposobie zmiany ścieżki instalacji rozwiązania pakietu Office.
+- [Instrukcje: Zmienianie ścieżki instalacji rozwiązania pakietu Office](/previous-versions/bb608626(v=vs.110)) Zawiera informacje o sposobie zmiany ścieżki instalacji rozwiązania pakietu Office.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 - Wskazówki dotyczące [korzystania z programu Word](../vsto/walkthroughs-using-word.md) Zawiera instrukcje krok po kroku, które zawierają wprowadzenie do rozwiązań pakietu Office w programie Visual Studio i ułatwiają tworzenie aplikacji, które korzystają z programu Word.

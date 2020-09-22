@@ -1,5 +1,5 @@
 ---
-title: Błąd — serwer sieci Web został zablokowany i blokuje zlecenie debugowania | Microsoft Docs
+title: Serwer sieci Web został zablokowany i blokuje czasownik debugowania | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abef1edefad63e340170e7934f4ad87cce268e46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75ebf2d134c1c0e33b6f787e03c1ea56b0650ee0
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460367"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851557"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Błąd: serwer sieci Web został zablokowany i blokuje zlecenie DEBUG
 Przechodzenie do aplikacji sieci Web lub usługi sieci Web XML nie powiodło się, ponieważ uruchomiono narzędzie blokowania usług IIS, a program URLScan został zainstalowany i aktywowany. Ten warunek blokuje otrzymywanie zlecenia DEBUG przez usługi IIS.
@@ -48,6 +48,6 @@ Przechodzenie do aplikacji sieci Web lub usługi sieci Web XML nie powiodło si�
 
 7. Uruchom ponownie serwer lub Uruchom ponownie usługi IIS.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Błąd: Serwer internetowy nie mógł znaleźć żądanego zasobu](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

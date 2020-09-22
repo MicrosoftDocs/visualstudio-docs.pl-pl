@@ -1,5 +1,5 @@
 ---
-title: Jak określić polecenia przed i po Instrumentacji | Microsoft Docs
+title: Określ polecenia przed i po Instrumentacji | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ba91e04342b9b78e3c6acae5296857a6f00f2aba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 904a5086af4fbbd9c1ef174cae63013cb8c96ad9
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329001"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851804"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Instrukcje: określanie poleceń przed i po instrumentacji
 
@@ -70,6 +70,6 @@ Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki
 
      Aby wyłączyć uruchamianie polecenia bez usuwania, zaznacz pole wyboru **Wyklucz z Instrumentacji** . Aby zmodyfikować ustawienia kompilatora lub konsolidatora, użyj stron właściwości projektu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)

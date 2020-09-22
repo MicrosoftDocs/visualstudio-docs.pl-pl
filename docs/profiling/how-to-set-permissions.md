@@ -1,5 +1,5 @@
 ---
-title: Jak ustawić uprawnienia | Microsoft Docs
+title: Ustaw uprawnienia | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 03f508bd2ff904898d77cd5ac07c30992da63b46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0a55e5e18829856b913ad01df6f831a2df42863
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328941"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851830"
 ---
 # <a name="how-to-set-permissions"></a>Instrukcje: Ustawianie uprawnień
 
@@ -120,7 +120,7 @@ Członkowie grupy Użytkownicy mogą uruchamiać narzędzia profilowania, jeśli
 
    Określeni użytkownicy po zalogowaniu się będą mogli korzystać z narzędzi profilowania bez uprawnień administratora.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 
  [VSPerfCmd](../profiling/vsperfcmd.md) 

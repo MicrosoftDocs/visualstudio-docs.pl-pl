@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85592076b99cf54991d21e1249cf30c609413733
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596505"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808681"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>Opcje — okno dialogowe: środowisko \> przeglądarki sieci Web
 
@@ -52,7 +52,7 @@ Ustawia Edytor używany do otwierania strony sieci Web w przypadku wybrania opcj
 
 - **Edytor źródła** Wybierz, aby wyświetlić źródło w [Edytorze](../../ide/writing-code-in-the-code-and-text-editor.md).
 
-- **Edytor HTML** Wybierz, aby wyświetlić źródło w [projektancie HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Zaznacz to pole wyboru, aby edytować stronę sieci Web w jednym z dwóch widoków: widok Projekt lub standardowego widoku źródła na podstawie tekstu.
+- **Edytor HTML** Wybierz, aby wyświetlić źródło w [projektancie HTML](/previous-versions/ex0hkwbx(v=vs.140)). Zaznacz to pole wyboru, aby edytować stronę sieci Web w jednym z dwóch widoków: widok Projekt lub standardowego widoku źródła na podstawie tekstu.
 
 - **Edytor zewnętrzny** Wybierz, aby wyświetlić źródło w innym edytorze. Określ ścieżkę dowolnie wybranego edytora, na przykład Notepad.exe.
 
@@ -66,4 +66,4 @@ Kliknij, aby zmienić opcje programu Internet Explorer w oknie dialogowym **Wła
 ## <a name="see-also"></a>Zobacz też
 
 - [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
-- [HTML Designer](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
+- [HTML Designer](/previous-versions/ex0hkwbx(v=vs.140))

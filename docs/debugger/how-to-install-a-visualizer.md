@@ -1,5 +1,5 @@
 ---
-title: Jak zainstalować wizualizatora | Microsoft Docs
+title: Instalowanie wizualizatora | Microsoft Docs
 ms.date: 06/10/2020
 ms.topic: how-to
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b070eb361bcc3fbe4f72adfff10b5e7d19649087
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cce59dfb39da71b8ff87efd49de9e2e0f6cdbd0
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349565"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851414"
 ---
 # <a name="how-to-install-a-visualizer"></a>Porady: instalacja programu Visualizer
 Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostępny w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Instalowanie wizualizatora jest prostym procesem.
@@ -84,6 +84,6 @@ Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostęp
 > Jeśli chcesz użyć zarządzanego wizualizatora na potrzeby debugowania zdalnego, Skopiuj bibliotekę DLL do tej samej ścieżki na komputerze zdalnym.
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
 - [Porady: pisanie wizualizatora](create-custom-visualizers-of-data.md)

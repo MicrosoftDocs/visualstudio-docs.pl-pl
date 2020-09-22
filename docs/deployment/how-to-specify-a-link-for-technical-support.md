@@ -1,5 +1,5 @@
 ---
-title: Jak określić link do pomocy technicznej | Microsoft Docs
+title: Określ link do pomocy technicznej | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e64ef97b8b51f8a943e216bad67ec300026d5654
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4474845d4a3f13a404773a6c8b572ff5194e033
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382058"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851752"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Instrukcje: Określanie linku do pomocy technicznej
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji Właściwość **adres URL pomocy technicznej** identyfikuje stronę sieci Web lub udział plików, w którym użytkownicy mogą uzyskać informacje o aplikacji. Ta właściwość jest opcjonalna. Jeśli jest podany, adres URL będzie wyświetlany w oknie dialogowym **Dodaj lub usuń programy** w pozycji aplikacji.
@@ -44,6 +44,6 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
 5. W polu **adres URL pomocy technicznej** wprowadź w pełni kwalifikowaną ścieżkę do witryny sieci Web, strony sieci Web lub udziału UNC.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

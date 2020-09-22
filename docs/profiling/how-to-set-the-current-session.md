@@ -1,5 +1,5 @@
 ---
-title: Jak ustawić bieżącą sesję | Microsoft Docs
+title: Ustaw bieżącą sesję | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eb60a431ae1fd1f6d44b8aa1477d74705eb532d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c729a9e8de7a27da5f5c81260c505bc654c33344
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328355"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851739"
 ---
 # <a name="how-to-set-the-current-session"></a>Instrukcje: ustawienie bieżącej sesji
 
@@ -35,7 +35,7 @@ Po ustawieniu sesji jako bieżącej sesji, kliknięcie pozycji **Uruchom** na pa
 
      Nazwa sesji pojawia się pogrubioną czcionką.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 
  [Okno Eksplorator wydajności](../profiling/performance-explorer-window.md) 

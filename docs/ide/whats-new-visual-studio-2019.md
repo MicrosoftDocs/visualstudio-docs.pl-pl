@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 389315d7ec48c85fbab96b5270cbcef54faf7e8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e99dc9e6a4e555d586c5007fd603350c9fa4e7c
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801064"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850985"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -214,11 +214,11 @@ Często aktualizujemy program Visual Studio 2019 dzięki nowym funkcjom, które 
 
 W tym miejscu poniżej przedstawiono kilka nowych funkcji dostępnych obecnie w programie Works.
 
-- **Visual Studio 2019 support for Visual Studio Codespaces (wersja zapoznawcza)**
+- **Obsługa programu Visual Studio 2019 dla usługi GitHub Codespaces (wersja zapoznawcza)**
 
-  Teraz więcej niż kiedykolwiek wcześniej deweloperzy są Juggling wiele projektów w pracy i w domu. Nowe funkcje, poprawki błędów, przeglądy żądań ściągnięcia, &amp; prototypy wszystkich konkurowania na czas i wymagają stałego przełączania kontekstu. [Program Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/) może pomóc. W ciągu kilku sekund możesz tworzyć w chmurze dedykowane, niestandardowe środowiska dla każdego projektu. Za pomocą programu Visual Studio 2019 można nawiązać połączenie z usługą codespace i działać tak samo jak lokalnie.
+  Teraz więcej niż kiedykolwiek wcześniej deweloperzy są Juggling wiele projektów w pracy i w domu. Nowe funkcje, poprawki błędów, przeglądy żądań ściągnięcia, &amp; prototypy wszystkich konkurowania na czas i wymagają stałego przełączania kontekstu. [Codespaces GitHub](https://github.com/features/codespaces) może pomóc. W ciągu kilku sekund możesz tworzyć w chmurze dedykowane, niestandardowe środowiska dla każdego projektu. Za pomocą programu Visual Studio 2019 można nawiązać połączenie z usługą codespace i działać tak samo jak lokalnie.
 
-  Aby uzyskać więcej informacji, zobacz stronę [co to jest program Visual Studio Codespaces](/visualstudio/codespaces/overview/what-is-vsonline/) .
+  Aby uzyskać więcej informacji, zobacz stronę [co to jest strona usługi GitHub Codespaces](codespaces/codespaces-overview.md) .
 
 - **Ulepszone środowisko Git w programie Visual Studio 2019 (wersja zapoznawcza)**
 
@@ -236,7 +236,7 @@ Dlaczego warto wysłać opinię do zespołu programu Visual Studio? Ze względu 
 
 * Jeśli wystąpi problem polegający na tym, że program Visual Studio przestaje odpowiadać, ulegnie awarii lub inny problem z wydajnością, można łatwo udostępnić Odtwórz kroki i pliki pomocnicze za pomocą narzędzia [Zgłoś problem](how-to-report-a-problem-with-visual-studio.md) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Informacje o wersji programu Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Informacje o wersji programu Visual Studio 2019 dla komputerów Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)

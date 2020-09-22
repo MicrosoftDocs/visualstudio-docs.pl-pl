@@ -1,5 +1,5 @@
 ---
-title: Jak ograniczyć instrumentację do określonych bibliotek DLL | Microsoft Docs
+title: Ograniczanie instrumentacji do określonych bibliotek DLL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 391aeb0b1686d58116d6aaa52ad0a3defe15fb00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3584498854e7518e93c4ba00dc019d804b0e8d8
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327799"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851024"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Instrukcje: ograniczanie instrumentacji do określonych bibliotek DLL
 
@@ -68,7 +68,7 @@ Korzystając z metody profilowania instrumentacji, można ograniczyć zbieranie 
     > [!NOTE]
     > Nie określaj pliku wykonywalnego (.* exe*), który wykonuje pliki dll.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 Zbieranie danych sterujących [Control data collection](../profiling/controlling-data-collection.md) 
  [Instrukcje: ograniczanie instrumentacji do określonych funkcji](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

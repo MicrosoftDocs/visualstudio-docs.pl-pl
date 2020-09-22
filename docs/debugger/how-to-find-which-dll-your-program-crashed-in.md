@@ -1,5 +1,5 @@
 ---
-title: Jak znaleźć bibliotekę DLL, w której nastąpiła awaria programu | Microsoft Docs
+title: Znajdź bibliotekę DLL, w której nastąpiła awaria programu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 155fd74dc6e01f88bf04fe21b77ebdae6b04437f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4432378e10590c2ba930edf0920b9146e450f96
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349539"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852077"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Instrukcje: Znajdowanie biblioteki DLL, w której nastąpiła awaria programu (C#, C++, Visual Basic, F #)
 
@@ -49,6 +49,6 @@ ms.locfileid: "85349539"
 
 6. Przejrzyj kolumny **Nazwa** i **ścieżka** , aby wyświetlić nazwę i ścieżkę biblioteki DLL.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie projektów DLL](../debugger/debugging-dll-projects.md)
 - [Instrukcje: korzystanie z okna modułów](../debugger/how-to-use-the-modules-window.md)

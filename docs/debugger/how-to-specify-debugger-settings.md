@@ -1,5 +1,5 @@
 ---
-title: Jak określić ustawienia debugera | Microsoft Docs
+title: Określ ustawienia debugera | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa88d941950cdabe0da873f9184b420c81d5a348
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: b831ae0329adc218ba76fc27206e1f47d0ac8f9c
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599866"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851947"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Porady: Określanie ustawień debugera
 W programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można określić różne ustawienia dla zachowania debugera, w tym sposób wyświetlania zmiennych, informacje o tym, czy są wyświetlane określone ostrzeżenia, jak są ustawiane punkty przerwania oraz jak przerywanie wpływa na uruchamianie programów. Ustawienia debugera należy określić w oknie dialogowym **Opcje** .
@@ -41,7 +41,7 @@ W programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można okr
 
 4. Zaznacz lub usuń zaznaczenie żądanej opcji lub opcji. Naciśnij klawisz F1, aby uzyskać pomoc dotyczącą opcji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Ogólne, debugowanie, okno dialogowe Opcje](../debugger/general-debugging-options-dialog-box.md)
 - [Edytuj i Kontynuuj, debugowanie, Opcje — okno dialogowe](./edit-and-continue.md)
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

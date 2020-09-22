@@ -1,5 +1,5 @@
 ---
-title: Jak zbierać dane dotyczące wydajności witryny sieci Web | Microsoft Docs
+title: Zbieranie danych wydajności dla witryny sieci Web | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c2f8169716bda09e3c4d89ce06dc907c726adee2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ea4e3309fc003a4fc4fc73377e8b2bbe12cd567
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330961"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851479"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Instrukcje: zbieranie danych wydajności dla witryny sieci Web
 
@@ -100,7 +100,7 @@ Za pomocą **Kreatora wydajności** można zbierać dane dotyczące wydajności 
 
      Profiler generuje plik danych i wyświetla widok podsumowania danych w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oknie głównym.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Omówienia](../profiling/overviews-performance-tools.md) 
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 

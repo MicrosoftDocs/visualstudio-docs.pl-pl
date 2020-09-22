@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b5f00b3e71f0deb15d6266640db39751f2ae22f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c55f229550dfe74606f4dfb0880b4e91d689d5ad
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76269100"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809036"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Kompilowanie i kompilowanie w programie Visual Studio
 
@@ -55,6 +55,6 @@ Z tego miejsca możesz poznać różne inne zadania:
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Kompilowanie (Kompilowanie) projektów witryny sieci Web](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
+- [Kompilowanie (Kompilowanie) projektów witryny sieci Web](/previous-versions/hwxa5aha(v=vs.140))
 - [Kompiluj i Kompiluj (Visual Studio dla komputerów Mac)](/visualstudio/mac/compiling-and-building)
 - [CMake projekty w programie Visual Studio](/cpp/build/cmake-projects-in-visual-studio)

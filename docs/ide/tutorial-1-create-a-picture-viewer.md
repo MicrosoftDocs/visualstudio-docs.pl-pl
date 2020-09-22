@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1431d56516c749004cef1b35ada482a6c53446
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44fe22aa1d4549d1daba4324349160afcd3133ba
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579724"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811217"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Samouczek 1: Tworzenie przeglądarki obrazów
 
@@ -68,6 +68,6 @@ Aby rozpocząć pracę z samouczkiem, Zacznij od **[kroku 1: Tworzenie projektu 
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Więcej samouczków dotyczących języka C#](/visualstudio/get-started/csharp/)
-* [Samouczki Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Więcej samouczków dotyczących języka C#](../get-started/csharp/index.yml)
+* [Samouczki Visual Basic](../get-started/visual-basic/index.yml)
 * [Samouczki języka C++](/cpp/get-started/tutorial-console-cpp)

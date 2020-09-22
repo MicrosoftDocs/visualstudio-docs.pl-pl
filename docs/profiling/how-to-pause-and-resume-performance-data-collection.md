@@ -1,5 +1,5 @@
 ---
-title: Jak wstrzymywać i wznawiać zbieranie danych wydajności | Microsoft Docs
+title: Wstrzymywanie i wznawianie zbierania danych wydajności | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee17d8fa40be710fd18026a66e0a74680c5da087
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5abdd7f8324e76f452d5e090aba861f8e7cf8301
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331463"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851388"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Instrukcje: wstrzymywanie i wznawianie zbierania danych o wydajności
 W oknie strony profilowania sesji można kontrolować zbieranie danych profilowania interaktywnie.
@@ -38,6 +38,6 @@ W oknie strony profilowania sesji można kontrolować zbieranie danych profilowa
 
   - Wybierz pozycję **Zatrzymaj profilowanie** , aby zakończyć sesję profilowania i wygenerować raporty.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)
 - [Instrukcje: uruchamianie i kończenie zbierania danych wydajności](../profiling/how-to-start-and-end-performance-data-collection.md)

@@ -1,5 +1,5 @@
 ---
-title: Jak opublikować projekt, który ma określone ustawienia regionalne | Microsoft Docs
+title: Publikowanie projektu, który ma określone ustawienia regionalne
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3b3aa7c2c56b1175c2f280a96ade78ea17ee55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38be27ca9873d662fd4839590f50c9788b5ae7ea
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382227"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851700"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Instrukcje: publikowanie projektu, który ma określone ustawienia regionalne
 Aplikacja zawiera składniki, które mają różne ustawienia regionalne. W tym scenariuszu należy utworzyć rozwiązanie, które ma kilka projektów, a następnie opublikować oddzielne projekty dla każdego ustawienia regionalnego. Ta procedura pokazuje, jak użyć makra do opublikowania pierwszego projektu w rozwiązaniu przy użyciu ustawień regionalnych "en". Jeśli chcesz wypróbować tę procedurę przy użyciu ustawień regionalnych innych niż "en", upewnij się, że ustawienie `localeString` w makrze jest zgodne z ustawieniami regionalnymi, które są używane (na przykład "de" lub "de-de").
@@ -161,7 +161,7 @@ Aplikacja zawiera składniki, które mają różne ustawienia regionalne. W tym 
 
 7. Szukaj w *C:\Inetpub\wwwroot\PublishLocales\en*. Oprócz zlokalizowanej biblioteki DLL zasobów powinny zostać wyświetlone zainstalowane pliki, takie jak manifesty, *setup.exe*i plik publikowania strony sieci Web. (Domyślnie Technologia ClickOnce dołącza rozszerzenie *. deploy* do exe i bibliotek dll; to rozszerzenie można usunąć po wdrożeniu).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Środowisko deweloperskie makr](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))
 - [Okno Eksploratora makr](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))

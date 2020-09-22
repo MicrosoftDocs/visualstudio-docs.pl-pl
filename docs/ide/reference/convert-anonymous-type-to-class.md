@@ -10,12 +10,13 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2379ce588eeb4773e562f630ade37e28d7f17315
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+monikerRange: '>= vs-2019'
+ms.openlocfilehash: 251a011695f6f5056e1fdf8e1a6be36b898b66f5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094288"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809214"
 ---
 # <a name="convert-anonymous-type-to-class"></a>Konwertowanie typu anonimowego na klasę
 

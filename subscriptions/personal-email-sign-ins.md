@@ -1,18 +1,18 @@
 ---
 title: Osobiste wiadomości e-mail wyświetlane w VLSC
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 04/10/2020
+ms.date: 09/17/2020
 ms.topic: conceptual
 description: Subskrypcje programu Visual Studio — Dlaczego widzę adresy Hotmail i Gmail dla subskrybentów?
-ms.openlocfilehash: 44b18bd46d55349fae5a3ece03cee9fe93240148
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95f5d849a1f661ab6a65a34890faf8f812c7007d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81223687"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810500"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Subskrypcje programu Visual Studio — Dlaczego widzę konta osobiste dla moich subskrybentów?
 Po przeprowadzeniu migracji z witryny Volume Licensing Service Center (VLSC) do nowego [portalu administratora subskrypcji](https://manage.visualstudio.com)programu Visual Studio Administratorzy mogli znaleźć, że adres e-mail logowania dla niektórych subskrybentów pokazuje osobisty adres e-mail, taki jak Hotmail lub Outlook.  
@@ -34,17 +34,17 @@ Podczas procesu aktywacji subskrybenta: konto Microsoft (MSA) było wymagane do 
 Aby rozwiązać ten problem, po prostu wybierz przycisk **Połącz wiadomości e-mail** , a system podejmie próbę dopasowania kont z kont MSA do istniejących użytkowników w organizacji Azure Active Directory (Azure AD) w oparciu o pasujące imię i nazwisko. Jeśli wystąpi błąd, możesz usunąć dowolne dopasowanie, klikając **znak X** z prawej strony dopasowania.  
 
 > [!div class="mx-imgBorder"]
-> ![Przycisk Połącz wiadomości E-mail](_img/connect-emails/connect-emails-button.png)
+> ![Przycisk Połącz wiadomości E-mail](_img/connect-emails/connect-emails-button.png "Kliknij pozycję Połącz wiadomości E-mail, aby dopasować użytkowników z kontami Microsoft do Azure Active Directory")
 
 Możesz również użyć **katalogu wyszukiwania** , aby naprawić błędy lub uzupełnić brakujące informacje z usługi Azure AD. Jeśli wszystkie dopasowania wyglądają prawidłowo, możesz wybrać opcję "Wybierz wszystkich pasujących subskrybentów" zamiast wybierać je pojedynczo.  
 
 > [!div class="mx-imgBorder"]
-> ![Nawiązywanie połączenia z wiadomościami E-mail](_img/connect-emails/connect-emails-flyout.png)
+> ![Nawiązywanie połączenia z wiadomościami E-mail](_img/connect-emails/connect-emails-flyout.png "Wybierz subskrybentów, którzy mają być zgodni z tożsamościami usługi Azure AD, a następnie kliknij przycisk Kontynuuj.")
 
-Następnie kliknij pozycję "Kontynuuj", co spowoduje przejście do ekranu, który wprowadza zmiany, które mają zostać wykonane. Jeśli zgadzasz się, kliknij przycisk "Zapisz", a zmiany zostaną wprowadzone. Subskrybent otrzyma również komunikat z informacją o zmianie przy następnym logowaniu do swojej subskrypcji.   
+Następnie kliknij pozycję "Kontynuuj", aby przejść do listy zmian, które mają zostać wykonane. Jeśli zgadzasz się, kliknij przycisk "Zapisz", a zmiany zostaną wprowadzone. Subskrybent otrzyma również komunikat z informacją o zmianie przy następnym logowaniu do swojej subskrypcji.   
 
 > [!div class="mx-imgBorder"]
-> ![Potwierdzenie łączenia wiadomości E-mail](_img/connect-emails/connect-emails-confirm.png) 
+> ![Potwierdzenie łączenia wiadomości E-mail](_img/connect-emails/connect-emails-confirm.png "Kliknij przycisk Kontynuuj, aby zaimplementować proponowane zmiany, a następnie kliknij przycisk Zapisz.") 
 
 > [!NOTE]
 > Podczas edytowania adresu e-mail należy tylko zaktualizować wiadomość e-mail używaną przez subskrybenta, aby zalogować się do swojej subskrypcji https://my.visualstudio.com . Jeśli subskrybent ma już aktywowane korzyści, takie jak Azure lub Pluralsight przy użyciu innego adresu e-mail, będzie musiał nadal korzystać z tych adresów e-mail w celu uzyskania dostępu do nich. W przypadku nowych korzyści, do których mają dostęp, powinny być używane nowe adresy e-mail. 

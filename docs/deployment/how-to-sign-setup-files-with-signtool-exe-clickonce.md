@@ -1,5 +1,6 @@
 ---
-title: Jak podpisać pliki instalacyjne przy użyciu SignTool.exe (ClickOnce) | Microsoft Docs
+title: Podpisywanie plików instalacyjnych przy użyciu narzędzia SignTool.exe (ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9e1911b6e86058b7f078f40fa10ca5e0e4e53c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 138e84637acb123c445839dc4810547ed8bc2ed3
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382071"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809508"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Instrukcje: podpisywanie plików instalacyjnych za pomocą SignTool.exe (ClickOnce)
 Za pomocą *SignTool.exe* można podpisać program instalacyjny (*setup.exe*). Ten proces zapewnia, że naruszone pliki nie są zainstalowane na komputerach użytkowników końcowych.

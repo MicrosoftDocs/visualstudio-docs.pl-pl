@@ -11,12 +11,12 @@ ms.author: mikejo
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 7f7ab0c257bfed4521e95d9da12eaa0b9e25a71e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc6a7a25ebd2f7d07dcb887952b82bda34aaad35
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114272"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851466"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Co nowego w programie Live Unit Testing for Visual Studio 2017
 
@@ -26,7 +26,7 @@ W tym temacie wymieniono nowe funkcje, które zostały dodane do Live Unit Testi
 
 Począwszy od programu Visual Studio 2017 w wersji 15,4, Live Unit Testing zawiera ulepszenia i ulepszenia w wielu obszarach:
 
-- **Ulepszona możliwość odnajdywania**. W przypadku użytkowników, którzy nie wiedzą, że funkcja Live Unit Testing istnieje, środowisko IDE programu Visual Studio Wyświetla złoty pasek wskazujący Live Unit Testing za każdym razem, gdy użytkownik otworzy rozwiązanie, które zawiera testy jednostkowe, ale Live Unit Testing nie jest włączona. Informacje przedstawione na złotym pasku pozwalają użytkownikowi dowiedzieć się więcej na temat Live Unit Testing i włączyć go. Złoty pasek wyświetla również informacje, gdy Live Unit Testing wymagania wstępne nie są spełnione. Należą do nich następujące elementy:
+- **Ulepszona możliwość odnajdywania**. W przypadku użytkowników, którzy nie wiedzą, że funkcja Live Unit Testing istnieje, środowisko IDE programu Visual Studio Wyświetla złoty pasek wskazujący Live Unit Testing za każdym razem, gdy użytkownik otworzy rozwiązanie, które zawiera testy jednostkowe, ale Live Unit Testing nie jest włączona. Informacje przedstawione na złotym pasku pozwalają użytkownikowi dowiedzieć się więcej na temat Live Unit Testing i włączyć go. Złoty pasek wyświetla również informacje, gdy Live Unit Testing wymagania wstępne nie są spełnione. Należą do nich:
 
   - Brak adapterów testowych.
   - Istnieją starsze wersje adapterów testowych.
@@ -64,7 +64,7 @@ Oprócz tych głównych dodatków, Live Unit Testing obejmuje następujące udos
   - Dla NUnit: `[Category("SkipWhenLiveUnitTesting")]`
   - Dla MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wprowadzenie do funkcji Live Unit Testing](live-unit-testing-intro.md)
 - [Live Unit Testing z programem Visual Studio](live-unit-testing.md)

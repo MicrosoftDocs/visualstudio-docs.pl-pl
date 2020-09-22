@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4aefa741352e80f4a20a51fa1ab36e617403c9c
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: a5531a85bcdff90db816e942d196e0bab3b66139
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89427005"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810327"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Porady i wskazówki dotyczące wydajności programu Visual Studio
 
@@ -63,7 +63,7 @@ Jeśli zwykle zaczyna brakować wolnej pamięci podczas debugowania sesji, możn
 
     Ustaw dla opcji **tylko określone moduły** , a nie **wszystkie moduły** , a następnie określ moduły, które chcesz załadować. Podczas debugowania można również kliknąć prawym przyciskiem myszy określone moduły w oknie **moduły** , aby jawnie dołączyć moduł do ładowania symboli. (Aby otworzyć okno podczas debugowania, wybierz **Debuguj**  >  **System Windows**  >  **Moduły**).
 
-    Aby uzyskać więcej informacji, zobacz [Opis plików symboli](/visualstudio/ide/visual-studio-performance-tips-and-tricks?view=vs-2019).
+    Aby uzyskać więcej informacji, zobacz [Opis plików symboli](?view=vs-2019).
 
 - **Wyłącz narzędzia diagnostyczne**
 
