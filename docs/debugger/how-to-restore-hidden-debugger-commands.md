@@ -72,6 +72,6 @@ Podczas konfigurowania programu Visual Studio zostanie wyświetlony monit o wybr
 
 9. Kliknij przycisk **Zamknij**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
