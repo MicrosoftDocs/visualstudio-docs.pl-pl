@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Pytania dotyczące rozliczeń dla subskrypcji chmury.
-ms.openlocfilehash: 987dddcf54f218d63580995b363ad838f2de83b4
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: ae99e6e843636efc6d81a0c4feebfd3e306f6319
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641443"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006007"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Subskrypcje dotyczące rozliczeń w ramach subskrypcji programu Visual Studio Cloud
 [PORÓWNAJ korzyści z subskrypcji chmury i ceny](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać zalety każdej subskrypcji programu Visual Studio, z porównaniami między subskrypcjami w chmurze i standardami programu Visual Studio, szczegółowymi dotyczącymi korzyści dla subskrybentów i innymi.
@@ -97,10 +97,10 @@ Odp.: tak, możesz, jeśli odsprzedawca uczestniczy w programie w programie Clou
 - [Kupowanie subskrypcji w chmurze programu Visual Studio dla dostawców CSP](vscloud-csp.md)
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Kup teraz subskrypcje chmury

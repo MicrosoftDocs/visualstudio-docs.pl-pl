@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 09/03/2020
 ms.topic: overview
 description: Dowiedz się, jak zacząć zarządzać subskrypcjami programu Visual Studio w organizacji za pomocą portalu administratora subskrypcji.
-ms.openlocfilehash: d857d4a1c9bb5568a6e4330851e0cc8a21988146
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 78c66b8db569ce71588a2dba43b3ffb08d6a7d80
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426879"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005228"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Omówienie portalu administratora subskrypcji programu Visual Studio
 
@@ -60,10 +60,10 @@ Aby uzyskać więcej informacji na temat umowy, którą przeglądasz, wybierz dr
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Dowiedz się więcej o odpowiedzialności dla administratorów:
@@ -72,4 +72,3 @@ Dowiedz się więcej o odpowiedzialności dla administratorów:
 - [Zarządzanie dużymi zespołami i zleceniobiorcami zewnętrznymi](manage-teams.md)
 - [Śledzenie przypisań użytkowników i przetwarzanie zamówień](assignments-orders.md)
 - Używanie [maksymalnego użycia](maximum-usage.md) do śledzenia zobowiązań zakupu
-

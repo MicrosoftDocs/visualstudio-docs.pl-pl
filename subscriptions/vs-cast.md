@@ -7,12 +7,12 @@ ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
 ms.date: 03/02/2020
 ms.topic: how-to
 description: Poznaj korzyści wynikające z wyróżniania RZUTowania dostępne w wybranych subskrypcjach programu Visual Studio
-ms.openlocfilehash: 565dd9326447757cd2af23e83dfcf7f2d4553054
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3273ffb718249a0503531d20b882334cb76f9428
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906061"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005953"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Korzyść wyróżniania RZUTowania w subskrypcjach programu Visual Studio
 Deweloperzy potrzebują ważnych szczegółowych informacji na temat oprogramowania podczas migracji do chmury. Dzięki wykreśleniu RZUTcy Subskrybenci programu Visual Studio mogą szybko skanować swój kod źródłowy aplikacji, aby identyfikować gotowość do użycia w chmurze do migracji na platformę Azure i monitorować postęp swojej aplikacji zarówno podczas migracji, jak i po niej.
@@ -102,10 +102,10 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Jeśli nie aktywowano jeszcze korzyści z korzystania z usługi Azure DevTest, która jest oferowana w ramach Twojej subskrypcji, odwiedź witrynę [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) Azure Portal i kliknij ją w obszarze Kategoria narzędzia, aby skonfigurować subskrypcję platformy Azure i wypróbować indywidualne środki na korzystanie z platformy Azure DevTest.

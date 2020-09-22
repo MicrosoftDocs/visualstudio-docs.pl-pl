@@ -2,18 +2,18 @@
 title: Nowe środowisko Git w programie Visual Studio (wersja zapoznawcza)
 titleSuffix: ''
 description: Dowiedz się więcej na temat nowego zintegrowanego środowiska Git w programie Visual Studio 2019
-ms.date: 09/21/2020
+ms.date: 09/22/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: c42571f58e6e5f531d87b26f44fc86b87913497d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e8bc35a6434ab619e7232b5351ba95aae68db2cd
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862181"
+ms.locfileid: "91005156"
 ---
 # <a name="new-git-experience-in-visual-studio-preview"></a>Nowe środowisko Git w programie Visual Studio (wersja zapoznawcza)
 
@@ -188,7 +188,7 @@ Bądź na bieżąco; Ta strona zostanie zaktualizowana, ponieważ będziemy nada
 > [!IMPORTANT]
 > Jeśli masz sugestię, daj nam znać! Doceniamy okazję do skontaktowania się z informacjami na temat decyzji projektowych za pośrednictwem portalu [**społeczności deweloperów**](https://aka.ms/vs-suggest) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Nowe wideo dotyczące środowiska git](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) w witrynie Channel 9 i [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
 - [Atrakcyjne nowe aktualizacje środowiska Git w blogu programu Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)

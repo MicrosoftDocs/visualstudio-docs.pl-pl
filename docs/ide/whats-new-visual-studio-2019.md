@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e99dc9e6a4e555d586c5007fd603350c9fa4e7c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ff0188a93b8c7b6470aeaeced7e3f48dbad0f28b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "90850985"
+ms.locfileid: "91005372"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -224,7 +224,7 @@ W tym miejscu poniżej przedstawiono kilka nowych funkcji dostępnych obecnie w 
 
    Kontynuujemy iterację w środowisku odnowionych git, aby zwiększyć produktywność podczas pracy z kodem w witrynie GitHub, Azure Repos i innych zdalnych usługach hostingu. Możesz inicjować i wypchnąć z programu Visual Studio 2019 przy użyciu jednej akcji (lub kliknięcia). Można również tworzyć nowe gałęzie, zarządzać bieżącymi gałęziami i rozwiązywać konflikty scalania.
 
-   Aby uzyskać więcej informacji, zobacz artykuł [atrakcyjne nowe aktualizacje środowiska Git w blogu programu Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/) .
+   Aby uzyskać więcej informacji, zobacz [nowe środowisko Git na stronie programu Visual Studio](git-with-visual-studio.md) .
 
 Aby uzyskać więcej informacji na temat wersji zapoznawczej &mdash; i linku pobierania, jeśli chcesz ją wypróbować, &mdash; Zobacz stronę **[wersji zapoznawczej programu Visual Studio](https://visualstudio.microsoft.com/vs/preview/)** .
 
@@ -236,7 +236,7 @@ Dlaczego warto wysłać opinię do zespołu programu Visual Studio? Ze względu 
 
 * Jeśli wystąpi problem polegający na tym, że program Visual Studio przestaje odpowiadać, ulegnie awarii lub inny problem z wydajnością, można łatwo udostępnić Odtwórz kroki i pliki pomocnicze za pomocą narzędzia [Zgłoś problem](how-to-report-a-problem-with-visual-studio.md) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Informacje o wersji programu Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Informacje o wersji programu Visual Studio 2019 dla komputerów Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)

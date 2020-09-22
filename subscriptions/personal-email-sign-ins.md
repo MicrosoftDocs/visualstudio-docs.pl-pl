@@ -7,12 +7,12 @@ ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
 ms.date: 09/17/2020
 ms.topic: conceptual
 description: Subskrypcje programu Visual Studio — Dlaczego widzę adresy Hotmail i Gmail dla subskrybentów?
-ms.openlocfilehash: 95f5d849a1f661ab6a65a34890faf8f812c7007d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c7a5546a99ed73175ab0f4af2c22b3cbf20c0bdd
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810500"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006075"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Subskrypcje programu Visual Studio — Dlaczego widzę konta osobiste dla moich subskrybentów?
 Po przeprowadzeniu migracji z witryny Volume Licensing Service Center (VLSC) do nowego [portalu administratora subskrypcji](https://manage.visualstudio.com)programu Visual Studio Administratorzy mogli znaleźć, że adres e-mail logowania dla niektórych subskrybentów pokazuje osobisty adres e-mail, taki jak Hotmail lub Outlook.  
@@ -50,11 +50,11 @@ Następnie kliknij pozycję "Kontynuuj", aby przejść do listy zmian, które ma
 > Podczas edytowania adresu e-mail należy tylko zaktualizować wiadomość e-mail używaną przez subskrybenta, aby zalogować się do swojej subskrypcji https://my.visualstudio.com . Jeśli subskrybent ma już aktywowane korzyści, takie jak Azure lub Pluralsight przy użyciu innego adresu e-mail, będzie musiał nadal korzystać z tych adresów e-mail w celu uzyskania dostępu do nich. W przypadku nowych korzyści, do których mają dostęp, powinny być używane nowe adresy e-mail. 
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ##  <a name="next-steps"></a>Następne kroki
 - Jeśli Zaktualizowano adresy e-mail subskrybentów, można powiadomić ich, że informacje logowania zostały zmienione.  Otrzymają także wiadomość e-mail z zaktualizowanymi informacjami.
-- Przydatne może być [odfiltrowanie listy subskrybentów](search-license.md) w organizacji, aby wyszukać wszelkie adresy e-mail logowania, które mogą wymagać zmiany.  
+- Przydatne może być [odfiltrowanie listy subskrybentów](search-license.md) w organizacji, aby wyszukać wszelkie adresy e-mail logowania, które mogą wymagać zmiany.

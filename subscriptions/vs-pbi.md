@@ -7,12 +7,12 @@ ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
 ms.date: 03/26/2020
 ms.topic: how-to
 description: Dowiedz się więcej o subskrypcji Power BI Pro dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: 9a16e827c45e600ff3b5edc8579b5941aa80ca90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82325c090087aea81f43472ebb41a385af51c19d
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801688"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005029"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro w subskrypcjach programu Visual Studio
 
@@ -114,11 +114,11 @@ Odp.: nie.  Korzyści Power BI Pro nie można dodać do dzierżawców instytucji
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 - Aby aktywować korzyść Power BI Pro, odwiedź stronę [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .
-- Skorzystaj z własnej piaskownicy programistycznej, aktywując swoje środki na korzystanie z [platformy Azure DevTest](vs-azure.md). 
+- Skorzystaj z własnej piaskownicy programistycznej, aktywując swoje środki na korzystanie z [platformy Azure DevTest](vs-azure.md).

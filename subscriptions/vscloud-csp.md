@@ -7,12 +7,12 @@ ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Informacje dla dostawców rozwiązań w chmurze dotyczące zakupu subskrypcji programu Visual Studio Cloud i zarządzania nimi dla klientów.
-ms.openlocfilehash: 76c56759fdc07104290c45d1c4fc345bf0bad8b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c263486259529e7eb4e19ea4cc3f8ad8520b039
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80273871"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006231"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kup subskrypcje w chmurze programu Visual Studio dla klientów i zarządzaj nimi
 Partnerzy w programie [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) mogą kupować Visual Studio Enterprise i Visual Studio Professional subskrypcje w chmurze dla swoich klientów.
@@ -71,7 +71,7 @@ Oto jak interpretować zawartość wyświetlaną w tym arkuszu kalkulacyjnym:
 
 | Kategoria miernika    |   Nazwa                 |  Lekcji                                |           Co to jest                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
-| Visual Studio     | Enterprise             |  Subskrypcja                         | Visual Studio Enterprise Subskrypcja miesięczna   |
+| Visual Studio     | Przedsiębiorstwa             |  Subskrypcja                         | Visual Studio Enterprise Subskrypcja miesięczna   |
 | Visual Studio     | Professional Edition           |  Subskrypcja                         | Visual Studio Professional Subskrypcja miesięczna |
 
 Oferujemy 5% rabatu na szóstą jednostkę, którą kupujesz (dla danego klienta) co miesiąc każdej subskrypcji programu Visual Studio. Dlatego widzisz dwa wiersze dla każdej opcji subskrypcji. Jeden wiersz zawiera "wartość minimalną" równą 0, która powinna być interpretowana jako podstawowa cena jednostek 1 – 5. W drugim wierszu jest wyświetlana wartość minimalna równa 5, więc jest to 5% cena rabatu odnosząca się do jednostek 6 i nowszych.
@@ -107,10 +107,10 @@ Odp.: nie, ceny za subskrypcje programu Visual Studio są płaskie. Ta sama cena
 Odp.: w tej chwili nie. Klienci mogą korzystać z cen na potrzeby tworzenia [i testowania platformy Azure](https://azure.microsoft.com/pricing/dev-test/), ale nie mamy żadnych szczególnych rozwiązań dla dostawców usług.
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
-Zobacz [często zadawane pytania dotyczące rozliczeń w chmurze](vscloud-billing-faq.md) dotyczące odpowiedzi na często zadawane pytania dotyczące rozliczeń.  
+Zobacz [często zadawane pytania dotyczące rozliczeń w chmurze](vscloud-billing-faq.md) dotyczące odpowiedzi na często zadawane pytania dotyczące rozliczeń.

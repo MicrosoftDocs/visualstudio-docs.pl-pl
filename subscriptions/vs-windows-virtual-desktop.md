@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Dowiedz się, jak korzystać z pulpitu wirtualnego systemu Microsoft Windows za pośrednictwem subskrypcji programu Visual Studio
-ms.openlocfilehash: f598aca8d277ca443b10dac289fae756ccd95432
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 4e619b9c1140611be5236edfff70e8b0aa560b23
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561367"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005049"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Dostęp do pulpitu wirtualnego systemu Windows w subskrypcjach 
 Subskrybenci programu Visual Studio mogą teraz korzystać z indywidualnych środków na korzystanie z platformy Azure do tworzenia i testowania usług pulpitu wirtualnego systemu Microsoft Windows.  
@@ -23,7 +23,7 @@ Oto co można zrobić w przypadku uruchamiania pulpitu wirtualnego systemu Windo
 - Udostępnianie pulpitów wirtualnych systemu Windows 7 z bezpłatnymi rozszerzonymi aktualizacjami zabezpieczeń
 - Przenoszenie istniejących Usługi pulpitu zdalnego (RDS) i komputerów stacjonarnych i aplikacji z systemem Windows Server do dowolnego komputera
 - Wirtualizacja zarówno komputerów stacjonarnych, jak i aplikacji
-- Zarządzanie komputerami stacjonarnymi i aplikacjami z systemem Windows 10, Windows Server i Windows 7 za pomocą ujednoliconego środowiska zarządzania, aby uzyskać więcej informacji na temat tego, co można zrobić z pulpitem wirtualnym systemu Windows, Obejrzyj wprowadzenie [wideo](https://docs.microsoft.com/azure/virtual-desktop/overview).
+- Zarządzanie komputerami stacjonarnymi i aplikacjami z systemem Windows 10, Windows Server i Windows 7 za pomocą ujednoliconego środowiska zarządzania, aby uzyskać więcej informacji na temat tego, co można zrobić z pulpitem wirtualnym systemu Windows, Obejrzyj wprowadzenie [wideo](/azure/virtual-desktop/overview).
 
 ## <a name="use-windows-virtual-desktop-with-azure"></a>Korzystanie z pulpitu wirtualnego systemu Windows z platformą Azure 
 Subskrybenci programu Visual Studio mają teraz kilka sposobów na korzystanie z subskrypcji platformy Azure w celu płacenia za usługi pulpitu wirtualnego systemu Windows:
@@ -35,13 +35,13 @@ Subskrybenci programu Visual Studio mają teraz kilka sposobów na korzystanie z
 Pulpit wirtualny systemu Windows wymaga Azure Active Directory (Azure AD), do którego zostaną dołączone maszyny wirtualne.  Użytkownicy muszą należeć do tej usługi Azure AD.  Dostępne są dwie opcje wdrożenia usługi Azure AD:
 - Usługi katalogowe usługi Azure AD.  W przypadku większości użytkowników jest to prostsze rozwiązanie do implementowania.
 - Maszyna wirtualna z uruchomioną funkcją awansowania kontrolera domeny.  Ta opcja wymaga większego nakładu pracy w konfiguracji, ale oferuje większości użytkownikom niższy koszt działania.
-Aby zapoznać się z pełną listą wymagań wstępnych dotyczących korzystania z pulpitu wirtualnego systemu Windows, odwiedź [stronę Omówienie](https://docs.microsoft.com/azure/virtual-desktop/overview#requirements)pulpitu wirtualnego systemu Windows. 
+Aby zapoznać się z pełną listą wymagań wstępnych dotyczących korzystania z pulpitu wirtualnego systemu Windows, odwiedź [stronę Omówienie](/azure/virtual-desktop/overview#requirements)pulpitu wirtualnego systemu Windows. 
 
-## <a name="get-started"></a>Rozpoczęcie pracy 
+## <a name="get-started"></a>Wprowadzenie 
 Gdy zostaną spełnione wszystkie wymagania wstępne, należy wykonać kilka czynności w celu wprowadzenia implementacji.  Zapoznaj się z tymi samouczkami, aby rozpocząć pracę:
-- [Tworzenie dzierżawy pulpitu wirtualnego systemu Windows](https://docs.microsoft.com/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
-- [Tworzenie puli hostów](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-azure-marketplace) przy użyciu Azure Portal
-- [Zarządzanie grupami aplikacji](https://docs.microsoft.com/azure/virtual-desktop/manage-app-groups) dla pulpitu wirtualnego systemu Windows
+- [Tworzenie dzierżawy pulpitu wirtualnego systemu Windows](/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
+- [Tworzenie puli hostów](/azure/virtual-desktop/create-host-pools-azure-marketplace) przy użyciu Azure Portal
+- [Zarządzanie grupami aplikacji](/azure/virtual-desktop/manage-app-groups) dla pulpitu wirtualnego systemu Windows
 
 ## <a name="eligibility"></a>Kryteria
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
@@ -52,8 +52,8 @@ Gdy zostaną spełnione wszystkie wymagania wstępne, należy wykonać kilka czy
 | Visual Studio Professional z usługą GitHub Enterprise | Licencja                                       | Dostępne                                        |  Tak           |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Dostępne|  Tak          |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Dostępne                                         |  Tak          |
-| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Nie dotyczy |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
+| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Brak |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), ekwiwalentu, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Microsoft Partner Network (MPN), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark, Wyobraź sobie*
 
@@ -63,11 +63,11 @@ Gdy zostaną spełnione wszystkie wymagania wstępne, należy wykonać kilka czy
 Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja usługi Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja usługi Windows Virtual Desktop](/azure/virtual-desktop/)
 
 ## <a name="next-steps"></a>Następne kroki
 -   Jeśli musisz kupić subskrypcje programu Visual Studio, zapoznaj się z tematem:
      - [Cennik zakupów detalicznych](https://visualstudio.microsoft.com/vs/pricing/) za pomocą Microsoft Store
      - [Programy licencjonowania zbiorowego](https://www.microsoft.com/licensing/default)
--   Więcej informacji na temat [pulpitu wirtualnego systemu Windows](https://docs.microsoft.com/azure/virtual-desktop/overview) 
+-   Więcej informacji na temat [pulpitu wirtualnego systemu Windows](/azure/virtual-desktop/overview)

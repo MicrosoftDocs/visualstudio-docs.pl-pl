@@ -7,12 +7,12 @@ ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Szczegóły dotyczące subskrypcji są oferowane za pomocą programu Microsoft for Startups.
-ms.openlocfilehash: 600f2e92843ee734766ea5e2d797620cd622892b
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 8e46924d0980eed4eca27eef7766e12c8733d851
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561458"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005823"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Subskrypcje programu Visual Studio oferowane do uruchamiania
 Kwalifikowane uruchomienia, które dołączają do programu Microsoft for Startups, mogą zdobywać 5 Visual Studio Enterprise [comiesięcznych subskrypcji w chmurze](https://visualstudio.microsoft.com/vs/pricing/). 
@@ -41,10 +41,10 @@ W przypadku comiesięcznych subskrypcji w chmurze, anulowania zaczynają obowią
 W przypadku rocznych subskrypcji w chmurze, anulowania zaczną obowiązywać pierwszego dnia miesiąca po 12 miesiącach od oryginalnego zakupu lub 12 miesięcy od ostatniej rocznej opłaty za odnowienie. Jeśli na przykład kupiono roczną subskrypcję programu Visual Studio Professional w chmurze 3 stycznia 2018 roku, będzie ona aktywna do 1 lutego 2019 roku i wtedy zostanie automatycznie odnowiona na kolejny rok. Jeśli anulujesz ją pomiędzy tą datą a 1 lutego 2020 roku, ta subskrypcja wygaśnie 1 lutego 2020 r. Nie ma rabatu za anulowanie rocznych subskrypcji w chmurze przed upływem roku.
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 [Dowiedz się więcej o firmie Microsoft dla programów do uruchamiania](https://startups.microsoft.com)

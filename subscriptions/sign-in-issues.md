@@ -7,12 +7,12 @@ ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Informacje o problemach, które mogą wystąpić podczas logowania do subskrypcji programu Visual Studio
-ms.openlocfilehash: 5d8a71115cd1a1aa7d850945806c22a64e7721cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05d610a9dbfb3ac8afe3d49cecde37320c2c250f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801883"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005280"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemy z logowaniem do subskrypcji programu Visual Studio
 Aby korzystać z subskrypcji programu Visual Studio, musisz najpierw się zalogować.  W zależności od subskrypcji można skonfigurować ją za pomocą tożsamości usługi konto Microsoft (MSA) lub Azure Active Directory (AAD).  W tym artykule omówiono niektóre problemy, które można napotkać podczas logowania się do subskrypcji.
@@ -21,7 +21,7 @@ Aby korzystać z subskrypcji programu Visual Studio, musisz najpierw się zalogo
 Możliwość utworzenia nowego osobistego konta Microsoft (MSA) przy użyciu służbowego adresu e-mail nie jest już dozwolona, jeśli domena poczty e-mail jest skonfigurowana w usłudze Azure AD. Co to oznacza? Jeśli Twoja organizacja używa Microsoft 365 lub innych usług firmy Microsoft, które korzystają z usługi Azure AD, a jeśli dodaliśmy nazwę domeny do dzierżawy usługi Azure AD, użytkownicy nie będą już mogli tworzyć nowych konto Microsoft osobistych przy użyciu adresu e-mail w domenie.
 
 ### <a name="why-was-this-change-made"></a>Dlaczego ta zmiana została wprowadzona?
-Korzystanie z osobistego konta Microsoft z adresem służbowym jako nazwa użytkownika jest fraught z problemami dotyczącymi użytkowników końcowych i działów IT. Na przykład:
+Korzystanie z osobistego konta Microsoft z adresem służbowym jako nazwa użytkownika jest fraught z problemami dotyczącymi użytkowników końcowych i działów IT. Przykład:
 - Użytkownicy mogą myśleć, że ich osobiste konto Microsoft są zgodne z firmą i są zgodne, gdy zapisują Dokument biznesowy w usłudze OneDrive
 - Użytkownicy, którzy opuszczają organizację, zazwyczaj utracą dostęp do służbowego adresu e-mail. Gdy to zrobią, mogą nie być w stanie wrócić do swoich osobistych konto Microsoft w przypadku zapomnienia hasła. Przerzucanie to, że dział IT może zresetować swoje hasło i uzyskać dostęp do konta osobistego byłych pracowników.
 - Działy IT mają fałszywe znaczenie dla własności konta i bezpieczeństwa. Jednak użytkownicy muszą tylko raz roundtrip kod do służbowego adresu e-mail, a w przyszłości mogą zmienić nazwę swojego konta.
@@ -64,10 +64,10 @@ Aliasowanie może wystąpić, gdy firma ma usługę online firmy Microsoft dotyc
 Z perspektywy subskrybenta ważne jest, aby najpierw skontaktować się z administratorem, aby poznać konfigurację tożsamości firmy. W razie potrzeby administrator może potrzebować aktualizacji ustawień konta z poziomu portalu administracyjnego lub utworzyć konto Microsoft (MSA) przy użyciu firmowej adresu e-mail. Przed wykonaniem kroków związanych z tworzeniem konta MSA skontaktuj się z administratorem w sprawie wszelkich zasad lub problemów związanych z wykonaniem tej akcji. 
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 - Dowiedz się [, jak połączyć konta usługi MSA i AAD](/azure/active-directory/b2b/add-users-administrator) w usłudze AAD.

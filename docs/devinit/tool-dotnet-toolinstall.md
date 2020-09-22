@@ -3,7 +3,7 @@ title: dotnet-toolinstall
 description: Narzędzie devinit dotnet-toolinstall.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: afc200bca49617dff40697210ac783d18ff5f532
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: cb19cab0c03b87894029a18f682f05def6a2197c
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810145"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005546"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
@@ -29,7 +29,7 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 | Nazwa                                             | Typ   | Wymagane | Wartość                                                                 |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------|
 | **komentarz**                                     | ciąg | Nie       | Opcjonalna Właściwość komentarzy. Nie używany.                                 |
-| [**klawiatur**](#input)                              | ciąg | Yes      | Narzędzie .NET Core do zainstalowania. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) . |
+| [**klawiatur**](#input)                              | ciąg | Tak      | Narzędzie .NET Core do zainstalowania. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) . |
 | [**additionalOptions**](#additional-options)     | ciąg | Nie       | Aby uzyskać szczegółowe informacje, zobacz [dodatkowe opcje](#additional-options) poniżej.      |
 
 ### <a name="input"></a>Dane wejściowe

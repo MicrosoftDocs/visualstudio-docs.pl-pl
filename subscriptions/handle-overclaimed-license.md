@@ -7,12 +7,12 @@ ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą rozwiązywać nadmiernie przydzieloną subskrypcje
-ms.openlocfilehash: b518dc9300862e7c39af0489734734668097ef9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d34f80e4d206e13219d5b9e33f72caddfeffb1b6
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453718"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004749"
 ---
 # <a name="over-allocated-subscriptions"></a>Nadmiernie przydzieloną subskrypcje
 Czasami zamówienia są zmieniane po dodaniu subskrybentów, co może spowodować, że masz więcej przypisanych subskrypcji niż licencje należące do firmy. Jest to nazywane "nadwyżką alokacji".  
@@ -42,10 +42,10 @@ Jeśli Twoja organizacja ma Umowa Enterprise (EA), Administratorzy mogą przypis
 > Klient jest odpowiedzialny za zagwarantowanie, że dla każdej przypisanej subskrypcji usługi GitHub istnieje odpowiedni program Visual Studio z subskrypcją usługi GitHub przypisany w portalu zarządzania w celu zachowania zgodności z wymaganiami dotyczącymi licencjonowania dla tej subskrypcji.
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 - Dowiedz się więcej o zarządzaniu [subskrypcjami programu Visual Studio za pomocą usługi GitHub Enterprise](assign-github.md).

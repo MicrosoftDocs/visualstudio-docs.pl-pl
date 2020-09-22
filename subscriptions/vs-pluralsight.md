@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 08/04/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat subskrypcji szkoleniowej Pluralsight dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: 87cc42e2a0d4c8c95c771a88413b4a8af70bdc14
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509760"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005345"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści z szkolenia Pluralsight w subskrypcjach programu Visual Studio
 
@@ -110,13 +110,13 @@ Odp.: na koniec bezpłatnej subskrypcji usługi Pluralsight możesz zakupić sub
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Zobacz także
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Po utworzeniu konta możesz zacząć uczenie się.  Odwiedź [https://www.pluralsight.com](https://www.pluralsight.com) i naciśnij pozycję **Zaloguj** się w prawym górnym rogu strony, aby rozpocząć nowy kurs, lub Wróć do kursu, który jest już w toku.
 
-Skorzystaj z własnej piaskownicy programistycznej, aktywując swoje środki na korzystanie z [platformy Azure DevTest](vs-azure.md). 
+Skorzystaj z własnej piaskownicy programistycznej, aktywując swoje środki na korzystanie z [platformy Azure DevTest](vs-azure.md).

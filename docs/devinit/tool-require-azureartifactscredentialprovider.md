@@ -1,9 +1,9 @@
 ---
-title: Wymagaj — azureartifactscredentialprovider
+title: require-azureartifactscredentialprovider
 description: Narzędzie devinit wymaga-azureartifactscredentialprovider.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 74e8775fb9dc864e8026f73e3bc75604dbf32e10
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c4109ad5fcd0e77947552608ceab7b456a3ac1a6
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810913"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005065"
 ---
-# <a name="require-azureartifactscredentialprovider"></a>Wymagaj — azureartifactscredentialprovider
+# <a name="require-azureartifactscredentialprovider"></a>require-azureartifactscredentialprovider
 
 `require-azureartifactscredentialprovider`Narzędzie instaluje Azure Artifacts dostawcy poświadczeń. Dostawca poświadczeń Azure Artifacts automatyzuje pozyskiwanie poświadczeń wymaganych do przywrócenia pakietów NuGet w ramach przepływu pracy deweloperskiej platformy .NET. Więcej informacji na temat Azure Artifacts dostawcy poświadczeń można znaleźć [tutaj](https://github.com/microsoft/artifacts-credprovider/blob/master/README.md).
 

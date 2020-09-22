@@ -7,12 +7,12 @@ ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
 ms.topic: how-to
 description: Konfigurowanie administratorów dla miesięcznych subskrypcji
-ms.openlocfilehash: 7a0d28e4cd75749db430353234060f72a8f86485
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbb8d1f7a1519950e84c6f6fe726dd8f52ff29c5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87434308"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006114"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Konfigurowanie administratorów dla miesięcznych subskrypcji programu Visual Studio
 
@@ -60,10 +60,10 @@ Nowy administrator może teraz zalogować się do [portalu administracyjnego](ht
 Informacje o subskrypcjach miesięcznych programu Visual Studio można znaleźć w sekcji [Omówienie](vscloud-overview.md) kupowania subskrypcji. Aby kupić miesięczne subskrypcje programu Visual Studio, odwiedź Visual Studio Marketplace pod adresem [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription) .
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Dowiedz się więcej o zarządzaniu subskrypcjami programu Visual Studio.
@@ -71,6 +71,3 @@ Dowiedz się więcej o zarządzaniu subskrypcjami programu Visual Studio.
 - [Przypisywanie wielu subskrypcji](assign-license-bulk.md)
 - [Edytowanie subskrypcji](edit-license.md)
 - [Określanie maksymalnego użycia](maximum-usage.md)
-
-
-

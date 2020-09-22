@@ -1,9 +1,9 @@
 ---
-title: WindowsFeature — wyłączanie
+title: windowsfeature-disable
 description: devinit narzędzie WindowsFeature-Wyłącz.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: bae1dffee275b1ae7f05daf411814d2d288fc086
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8a649cec23a8f0090500a493fe577b3ba41788f9
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810408"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005982"
 ---
-# <a name="windowsfeature-disable"></a>WindowsFeature — wyłączanie
+# <a name="windowsfeature-disable"></a>windowsfeature-disable
 
 To `windowsfeature-disable` Narzędzie służy do uzyskiwania funkcji systemu Windows.
 
@@ -27,7 +27,7 @@ To `windowsfeature-disable` Narzędzie służy do uzyskiwania funkcji systemu Wi
 | Nazwa                                             | Typ   | Wymagane | Wartość                                                                  |
 |--------------------------------------------------|--------|----------|------------------------------------------------------------------------|
 | **komentarz**                                     | ciąg | Nie       | Opcjonalna Właściwość komentarzy. Nie używany.                                  |
-| [**klawiatur**](#input)                              | ciąg | Yes      | Funkcja systemu Windows do zainstalowania. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) . |
+| [**klawiatur**](#input)                              | ciąg | Tak      | Funkcja systemu Windows do zainstalowania. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) . |
 | [**additionalOptions**](#additional-options)     | ciąg | Nie       | Aby uzyskać szczegółowe informacje, zobacz [dodatkowe opcje](#additional-options) poniżej.       |
 
 ### <a name="input"></a>Dane wejściowe

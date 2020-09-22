@@ -7,12 +7,12 @@ ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Logowanie może zakończyć się niepowodzeniem w przypadku używania aliasów lub przyjaznych nazw
-ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234643"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006218"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Logowanie się do subskrypcji programu Visual Studio może zakończyć się niepowodzeniem podczas korzystania z aliasów
 W zależności od typu konta użytego do zalogowania się dostępne subskrypcje mogą nie być poprawnie wyświetlane podczas logowania do programu [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) . Jedną z potencjalnych przyczyn jest użycie "aliasów" lub "przyjaznych nazw" zamiast tożsamości logowania, do której przypisano subskrypcję. Jest to nazywane "aliasem".
@@ -86,16 +86,16 @@ Obie te opcje są konfigurowane w portalu administracyjnym, wykonując następuj
 
 0. Jeśli zmieniasz pojedynczego użytkownika, wybierz tego użytkownika z tabeli i kliknij prawym przyciskiem myszy, aby edytować. Spowoduje to otwarcie panelu, w którym można zmodyfikować adres e-mail logowania. Wprowadź wymagane aktualizacje w polu adres e-mail logowania. Kliknij przycisk Zapisz, aby zmiany zaczęły obowiązywać.  
 
-0. Jeśli musisz wprowadzić te zmiany do dużej liczby użytkowników, możesz skorzystać z funkcji Edytuj zbiorczo. Aby uzyskać więcej informacji, przeczytaj artykuł [Edycja wielu subskrybentów korzystających z edycji zbiorczej](https://docs.microsoft.com/visualstudio/subscriptions/edit-license#edit-multiple-subscribers-using-bulk-edit) .
+0. Jeśli musisz wprowadzić te zmiany do dużej liczby użytkowników, możesz skorzystać z funkcji Edytuj zbiorczo. Aby uzyskać więcej informacji, przeczytaj artykuł [Edycja wielu subskrybentów korzystających z edycji zbiorczej](./edit-license.md#edit-multiple-subscribers-using-bulk-edit) .
 
 > [!NOTE]
 > W przypadku zmian indywidualnych i zbiorczych subskrybenci otrzymają wiadomość e-mail z instrukcjami, że ich adresy e-mail logowania zostały zmienione i będą musieli zalogować się przy użyciu zaktualizowanego adresu e-mail. Należy również pamiętać, że jeśli Subskrybenci wcześniej aktywowali korzyści pod innym adresem logowania, muszą nadal korzystać z innego adresu logowania, aby uzyskać do nich dostęp.  
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Następne kroki
@@ -104,5 +104,3 @@ Dowiedz się więcej o zarządzaniu subskrypcjami programu Visual Studio.
 - [Przypisywanie wielu subskrypcji](assign-license-bulk.md)
 - [Edytowanie subskrypcji](edit-license.md)
 - [Określanie maksymalnego użycia](maximum-usage.md)
-
-

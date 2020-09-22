@@ -3,7 +3,7 @@ title: Często zadawane pytania
 description: Często zadawane pytania dotyczące narzędzia devinit.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: d926a51ecfa68f6a5caea0bcf84bcafaffddc0a7
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2b482de4dd6c72aa744ef92563b8c1f23febbdd1
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852477"
+ms.locfileid: "91005005"
 ---
 # <a name="frequently-asked-questions-for-devinit"></a>Często zadawane pytania dotyczące devinit
 

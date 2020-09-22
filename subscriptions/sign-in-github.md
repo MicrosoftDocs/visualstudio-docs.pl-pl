@@ -7,12 +7,12 @@ ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dowiedz się, jak zalogować się do subskrypcji programu Visual Studio za pomocą konta usługi GitHub.
-ms.openlocfilehash: 722eeae315a8b4a6bd93fb1048846b147b294afa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dcbe5a908a2d149de7c254ec6ac6f3ec1eb6e72
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233232"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005267"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Logowanie do subskrypcji programu Visual Studio za pomocą konta usługi GitHub 
 
@@ -65,10 +65,10 @@ Odp.: Przejdź do [karty zabezpieczenia](https://account.microsoft.com/security)
 Odp.: Jeśli masz Azure Active Directory adres e-mail na koncie usługi GitHub, oznacza to, że masz już tożsamość firmy Microsoft, która może uzyskiwać dostęp do platformy Azure i uruchamiać potoki CI przy użyciu kodu usługi GitHub. Użycie tego konta zapewnia, że Twoje zasoby platformy Azure i potoki kompilacji pozostaną w granicach organizacyjnych. Jeśli jednak wykonujesz osobistą służbę, zalecamy umieszczenie osobistego adresu e-mail na Twoim koncie usługi GitHub, aby zawsze miał dostęp do niego. Po wykonaniu tej czynności spróbuj zalogować się ponownie i wybierz opcję **Użyj innego adresu e-mail** , gdy zostanie wyświetlony monit o zalogowanie się do konta służbowego. Pozwoli to utworzyć nowe konto Microsoft przy użyciu tego osobistego adresu e-mail.
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
-Po pomyślnym zalogowaniu się do portalu subskrypcji zalecamy odwiedzenie strony korzyści w witrynie https://my.visualstudio.com/benefits i eksplorowanie doskonałych narzędzi, usług i ofert dostępnych dla Ciebie.  
+Po pomyślnym zalogowaniu się do portalu subskrypcji zalecamy odwiedzenie strony korzyści w witrynie https://my.visualstudio.com/benefits i eksplorowanie doskonałych narzędzi, usług i ofert dostępnych dla Ciebie.

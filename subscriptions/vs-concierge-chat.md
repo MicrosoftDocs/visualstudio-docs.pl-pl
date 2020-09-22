@@ -7,12 +7,12 @@ ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
 ms.date: 03/25/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat korzyści z rozmowy Concierge zawartej w subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 8c945a71d41a1545a4dc6155bbd63d3ddc78053c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7ed217e551057ff12ed4abecedf717c9f3f6ced
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906054"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006322"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge rozmowę w subskrypcjach programu Visual Studio
 Usługa czatu Concierge zapewnia pomoc w zakresie znajdowania informacji o produktach i dokumentacji technicznej, a także pomoc przy korzystaniu z korzyści z subskrypcji programu Visual Studio.
@@ -62,10 +62,10 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Aby uzyskać więcej informacji na temat narzędzi i usług firmy Microsoft, zapoznaj się z dokumentacją dotyczącą:

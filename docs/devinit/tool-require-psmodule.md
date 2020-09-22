@@ -1,9 +1,9 @@
 ---
-title: Wymagaj — psmodule
+title: require-psmodule
 description: Narzędzie devinit wymaga-psmodule.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: f52483065c73f9d0e31f089f3d44aca74588d72f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 03ebd885f1fae1e7e12d76bb78e03bca0553bab8
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809673"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006023"
 ---
-# <a name="require-psmodule"></a>Wymagaj — psmodule
+# <a name="require-psmodule"></a>require-psmodule
 
 `require-psmodule`Narzędzie służy do instalowania [modułu programu PowerShell](https://docs.microsoft.com/powershell/scripting/developer/module/understanding-a-windows-powershell-module?view=powershell-7&preserve-view=true) z [Galeria programu PowerShell](https://www.powershellgallery.com/) za pośrednictwem programu [install-module] ( https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true , aby można go było używać w skryptach programu PowerShell.
 
@@ -33,7 +33,7 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 | Nazwa                                             | Typ   | Wymagane | Wartość                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
 | **komentarz**                                     | ciąg | Nie       | Opcjonalna Właściwość komentarzy. Nie używany.                                                   |
-| [**klawiatur**](#input)                              | ciąg | Yes      | Pakiety do zainstalowania. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) .                       |
+| [**klawiatur**](#input)                              | ciąg | Tak      | Pakiety do zainstalowania. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) .                       |
 | [**additionalOptions**](#additional-options)     | ciąg | Nie       | Nie używany. Aby uzyskać szczegółowe informacje, zobacz [dodatkowe opcje](#additional-options) poniżej.              |
 
 ### <a name="input"></a>Dane wejściowe

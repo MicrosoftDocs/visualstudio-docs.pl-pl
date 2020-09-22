@@ -7,12 +7,12 @@ ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
 ms.date: 08/10/2020
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą lokalizować poszczególnych subskrybentów lub grupy w portalu administracyjnym.
-ms.openlocfilehash: aea4e0d05eb01a5ec3fcf1da97d34e069aeb964d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 29354348b423b539b79c36c78f213f7a20d60eb3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810708"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005306"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Wyszukiwanie i filtrowanie subskrybentów w subskrypcjach programu Visual Studio
 Portal administrowania subskrypcjami programu Visual Studio umożliwia znalezienie określonego podzestawu subskrybentów na podstawie różnych kryteriów. Listę subskrybentów można filtrować według nazwy, adresu e-mail, poziomu subskrypcji i innych informacji.
@@ -38,14 +38,12 @@ Portal administrowania subskrypcjami programu Visual Studio umożliwia znalezien
 
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Następne kroki
 - Teraz, gdy wiesz już, jak znaleźć abonenta, Dowiedz się, jak [edytować](edit-license.md) swoją subskrypcję.
 - Potrzebujesz pomocy przy użyciu portalu administracyjnego?  Skontaktuj się z [pomocą techniczną programu Visual Studio Administration i subscriptions](https://visualstudio.microsoft.com/support/support-overview-vs).
-
-

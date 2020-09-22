@@ -1,9 +1,9 @@
 ---
-title: zestaw-ENV
+title: set-env
 description: Narzędzie devinit wymaga-set-env.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e7c327fb3f8492af8c1c740044f852d826fffad0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2f4ec5489f22e94ad8f57f22ddc7742dc0ae3ade
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810422"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005996"
 ---
-# <a name="set-env"></a>zestaw-ENV
+# <a name="set-env"></a>set-env
 
 `set-env`Narzędzie może służyć do ustawiania zmiennych środowiskowych do użycia w bieżącym procesie. Zmienne środowiskowe są ustawiane tylko w bieżącym procesie i będą używane przez inne `devinit` Narzędzia, jeśli są uruchamiane w ramach tego procesu.
 
@@ -48,6 +48,10 @@ To narzędzie korzysta z interfejsu API programu .NET Core `Environment.SetEnvir
 ### <a name="additional-options"></a>Opcje dodatkowe
 
 Nie używany.
+
+## <a name="usage-in-a-codespace"></a>Użycie w codespace
+
+Jeśli używasz codespace, możesz ustawić zmienne środowiskowe używane w codespace przez customizating `remoteEnv` Właściwość w [`.devcontainer.json`](https://docs.microsoft.com/visualstudio/codespaces/reference/configuring) pliku.
 
 ## <a name="example-usage"></a>Przykład użycia
 

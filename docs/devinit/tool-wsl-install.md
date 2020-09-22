@@ -1,9 +1,9 @@
 ---
-title: WSL — Zainstaluj
+title: wsl-install
 description: devinit narzędzie WSL — Zainstaluj.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: d0b70c05fd4b8b3681274838d6ae8df67f68dbca
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a52027c060917e8c5f692f472427ba5d980b3bb
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811226"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005058"
 ---
-# <a name="wsl-install"></a>WSL — Zainstaluj
+# <a name="wsl-install"></a>wsl-install
 
 `wsl-install`Narzędzie to służy do instalowania dystrybucje systemu Linux dla [podsystemu Windows w systemie Linux](https://docs.microsoft.com/windows/wsl/) (WSL).
 
@@ -31,7 +31,7 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 | Nazwa                                             | Typ   | Wymagane | Wartość                                                             |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------|
 | **komentarz**                                     | ciąg | Nie       | Opcjonalna Właściwość komentarzy. Nie używany.                             |
-| [**klawiatur**](#input)                              | ciąg | Yes      | Dystrybucji do zainstalowania. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) .     |
+| [**klawiatur**](#input)                              | ciąg | Tak      | Dystrybucji do zainstalowania. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) .     |
 | [**additionalOptions**](#additional-options)     | ciąg | Nie       | Aby uzyskać szczegółowe informacje, zobacz [dodatkowe opcje](#additional-options) poniżej.  |
 
 ### <a name="input"></a>Dane wejściowe

@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: how-to
 description: Dowiedz się, jak aktywować usługę Azure DevTest z korzyściami z tytułu skorzystania z subskrypcji programu Visual Studio.
-ms.openlocfilehash: 276475393de374970685202079831bb06bedea6f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41d85c939c05a9d29c80c15d1702258ff5b7d5e5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247323"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91003849"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Używanie Microsoft Azure w subskrypcjach programu Visual Studio
 Jako subskrybent programu Visual Studio możesz używać Microsoft Azure bez dodatkowych opłat.  W przypadku comiesięcznych środków na korzystanie z [platformy Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), platforma Azure jest osobistą piaskownicą na potrzeby tworzenia i testowania.  Możesz udostępniać maszyny wirtualne, usługi w chmurze i inne zasoby platformy Azure.  Kwoty kredytowe różnią się w zależności od poziomu subskrypcji.
@@ -48,21 +48,21 @@ Jeśli Twoja subskrypcja programu Visual Studio wygasła lub została usunięta,
 > [!IMPORTANT]
 > Aby można było wyłączyć bieżącą subskrypcję platformy Azure lub utracić dostęp do danych, musisz przenieść swoje zasoby do innej subskrypcji platformy Azure.  
 
-Istnieje kilka sposobów na kontynuowanie korzystania z miesięcznych środków na korzystanie z platformy Azure.  Aby zapisać zasoby platformy Azure, musisz [przenieść swoje zasoby](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) do innej subskrypcji platformy Azure, niezależnie od akcji wybranej poniżej. 
+Istnieje kilka sposobów na kontynuowanie korzystania z miesięcznych środków na korzystanie z platformy Azure.  Aby zapisać zasoby platformy Azure, musisz [przenieść swoje zasoby](/azure/azure-resource-manager/management/move-resource-group-and-subscription) do innej subskrypcji platformy Azure, niezależnie od akcji wybranej poniżej. 
 
 - **Jeśli masz bezpośrednio zakupić swoją subskrypcję programu Visual Studio**, Kup nową subskrypcję lub Odnów subskrypcję za pomocą Microsoft Store.  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **Jeśli ktoś w organizacji kupuje subskrypcje organizacji**, [skontaktuj się z administratorem subskrypcji programu Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin) i poproś o subskrypcję, która zapewnia miesięczny kredyt, którego potrzebujesz.  
-- **Jeśli masz inną aktywną subskrypcję programu Visual Studio** na tym samym poziomie subskrypcji, która jest skojarzona z innym konto Microsoft, możesz przenieść korzyść platformy Azure do innej aktywnej subskrypcji programu Visual Studio, [dodając alternatywne konto](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile) w [portalu subskrypcji](https://my.visualstudio.com/subscriptions)programu Visual Studio.  
+- **Jeśli ktoś w organizacji kupuje subskrypcje organizacji**, [skontaktuj się z administratorem subskrypcji programu Visual Studio](./contact-my-admin.md) i poproś o subskrypcję, która zapewnia miesięczny kredyt, którego potrzebujesz.  
+- **Jeśli masz inną aktywną subskrypcję programu Visual Studio** na tym samym poziomie subskrypcji, która jest skojarzona z innym konto Microsoft, możesz przenieść korzyść platformy Azure do innej aktywnej subskrypcji programu Visual Studio, [dodając alternatywne konto](./manage-vs-subscriptions.md#managing-my-profile) w [portalu subskrypcji](https://my.visualstudio.com/subscriptions)programu Visual Studio.  
 
 Skorzystaj z poniższej tabeli kwalifikowania, aby określić, ile kredytów jest dołączonych do poszczególnych typów subskrypcji.  
 
 
 ## <a name="convert-your-azure-subscription-to-pay-as-you-go"></a>Konwertuj subskrypcję platformy Azure na płatność zgodnie z rzeczywistym użyciem
 
-Jeśli nie potrzebujesz już subskrypcji lub kredytu programu Visual Studio, ale chcesz nadal korzystać z zasobów platformy Azure, [Przenieś swoje zasoby](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) do innej subskrypcji platformy Azure lub Przekształć subskrypcję platformy Azure w Cennik z opcją płatność zgodnie z rzeczywistym użyciem, [usuwając limit wydatków](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal). 
+Jeśli nie potrzebujesz już subskrypcji lub kredytu programu Visual Studio, ale chcesz nadal korzystać z zasobów platformy Azure, [Przenieś swoje zasoby](/azure/azure-resource-manager/management/move-resource-group-and-subscription) do innej subskrypcji platformy Azure lub Przekształć subskrypcję platformy Azure w Cennik z opcją płatność zgodnie z rzeczywistym użyciem, [usuwając limit wydatków](/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal). 
 
 Jeśli nie wykonasz żadnej z tych akcji, Twoja subskrypcja platformy Azure zostanie wyłączona i usunięta po upływie 30 dni od otrzymania powiadomienia e-mail.  
 
@@ -117,10 +117,10 @@ Odp.: własność intelektualna utworzona przez pracownika utworzonego w ramach 
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Aby uzyskać więcej informacji na temat narzędzi i usług firmy Microsoft, zapoznaj się z dokumentacją dotyczącą:

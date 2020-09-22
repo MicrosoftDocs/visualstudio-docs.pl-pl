@@ -7,12 +7,12 @@ ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
 ms.date: 02/23/2020
 ms.topic: how-to
 description: Dowiedz się, jak korzystać z specjalnych cen usługi Azure DevTest dostępnych dla klientów z umowami Enterprise Agreement
-ms.openlocfilehash: 6d7ad872568ead5c7c53dcd8d0429f2ff0444095
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70f7b9877dcc973d2f649eb0cad53599ff6023f3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903143"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005743"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Oferta usługi Azure Umowa Enterprise DevTest
 
@@ -42,10 +42,10 @@ Każdy subskrybent na koncie może utworzyć subskrypcję, wykonując następuj�
 0. Kliknij pozycję **Kup**.  (W przypadku tej oferty nie masz faktycznie kupowanych elementów).
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Dowiedz się więcej o zarządzaniu subskrypcjami programu Visual Studio.
@@ -54,6 +54,3 @@ Dowiedz się więcej o zarządzaniu subskrypcjami programu Visual Studio.
 - [Edytowanie subskrypcji](edit-license.md)
 - [Usuwanie subskrypcji](delete-license.md)
 - [Określanie maksymalnego użycia](maximum-usage.md)
-
-
-

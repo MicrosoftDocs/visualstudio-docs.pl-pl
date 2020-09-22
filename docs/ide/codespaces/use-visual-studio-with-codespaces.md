@@ -11,16 +11,16 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: c6eef7a63ea69611c6df1f6d2b425ed56437f68c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c3a2e14236c2d24bc9650fab81150cc295826844
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862253"
+ms.locfileid: "91006257"
 ---
 # <a name="how-to-use-visual-studio-with-a-codespace-preview"></a>Jak używać programu Visual Studio z codespace (wersja zapoznawcza)
 
-Program Visual Studio ma doskonałą obsługę tworzenia aplikacji w witrynie GitHub Codespaces. Możesz tworzyć i łączyć się z codespace oraz korzystać z pełnych możliwości programu Visual Studio do pracy nad projektami w zdalnym, hostowanym środowisku. Mimo że Twój kod źródłowy i narzędzia znajdują się w codespace, a Twoje kompilacje i debugowanie są wykonywane w chmurze, środowisko programistyczne będzie działać tak szybko i bez problemów jak w przypadku pracy lokalnie. Możesz korzystać z codespace z poziomu wersji zapoznawczej programu Visual Studio 2019 ([Utwórz konto w celu uzyskania ograniczonej publicznej wersji beta](https://github.com/features/codespaces/signup)).
+Program Visual Studio ma doskonałą obsługę tworzenia aplikacji w witrynie GitHub Codespaces. Możesz tworzyć i łączyć się z codespace oraz korzystać z pełnych możliwości programu Visual Studio do pracy nad projektami w zdalnym, hostowanym środowisku. Mimo że Twój kod źródłowy i narzędzia znajdują się w codespace, a Twoje kompilacje i debugowanie są wykonywane w chmurze, środowisko programistyczne będzie działać tak szybko i bez problemów jak w przypadku pracy lokalnie. Możesz korzystać z codespace z poziomu wersji zapoznawczej programu Visual Studio 2019 ([Utwórz konto w celu uzyskania ograniczonej publicznej wersji beta](https://github.com/features/codespaces/signup-vs)).
 
 > [!NOTE]
 > W tym artykule opisano sposób korzystania z programu Visual Studio w celu nawiązania połączenia z usługą GitHub Codespaces. Możesz dowiedzieć się więcej o łączeniu się z codespace innymi klientami w dokumentacji [Visual Studio Code](https://docs.github.com/github/developing-online-with-codespaces/connecting-to-your-codespace-from-visual-studio-code) lub [GitHub](https://docs.github.com/github/developing-online-with-codespaces/developing-in-a-codespace) .
@@ -115,7 +115,7 @@ Po utworzeniu codespace możesz otworzyć swój codespace bezpośrednio z progra
 
 <!-- TBD ## Disconnect from a codespace -->
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Co to jest GitHub Codespaces?](codespaces-overview.md)
 * [Jak dostosować codespace](customize-codespaces.md)

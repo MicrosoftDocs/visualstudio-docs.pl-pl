@@ -7,12 +7,12 @@ ms.assetid: e5768153-2758-46d3-a323-3272def213ee
 ms.date: 03/25/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat korzyści z usługi CODE Magazine dostępnych w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: c7b56074ea9a48f4d94af5c7d79cd93dc2c4a3b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30bc728db5aea53d442552ed9b79f506b0f6b6d7
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387177"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005914"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Magazyn kodu uwzględniony w subskrypcjach programu Visual Studio
 
@@ -77,10 +77,10 @@ Odp.: Magazyn kodu zbiera swój adres, bez względu na to, czy subskrypcja dotyc
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Zapoznaj się z pozostałymi korzyściami z subskrypcji. Odwiedź stronę [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .

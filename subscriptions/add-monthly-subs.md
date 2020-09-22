@@ -7,12 +7,12 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: Dowiedz się, jak nowo zakupione miesięczne subskrypcje programu Visual Studio w portalu administracyjnym subskrypcji
-ms.openlocfilehash: d765e03d2c499c8e96bb97fc532596b7cfd0b903
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 56f4b4f765edec5b624db786795c84969872978a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561406"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005102"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Dodawanie nowych miesięcznych subskrypcji programu Visual Studio do portalu administracyjnego subskrypcji
 Gdy kupisz nowe miesięczne subskrypcje programu Visual Studio przy użyciu subskrypcji platformy Azure, możesz dodać je do portalu administracyjnego subskrypcji, aby przypisać je do użytkowników.  
@@ -48,7 +48,7 @@ Po dodaniu subskrypcji możesz przystąpić do ich przypisywania do użytkownik�
 - [Przypisywanie określonych subskrypcji do określonych użytkowników](assign-guid.md)
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)

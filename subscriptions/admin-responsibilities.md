@@ -7,12 +7,12 @@ ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
 ms.date: 09/03/2019
 ms.topic: conceptual
 description: Dowiedz się więcej na temat obowiązków administratorów subskrypcji.
-ms.openlocfilehash: 242fe28346b1264833939202936fa46a47d4f4d3
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: c0c30eb8bc5b63720bd2377990a390df8a173035
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426892"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006140"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Przegląd obowiązków administracyjnych
 Jako administrator możesz zarządzać subskrypcjami dla swojej organizacji.  Rola administratora przenosi również obowiązki, aby upewnić się, że subskrypcje są zarządzane zgodnie z postanowieniami licencyjnymi. W tym artykule opisano obowiązki, korzyści i ograniczenia roli administratora.
@@ -37,10 +37,10 @@ Subskrypcje programu Visual Studio umożliwiają programistom Instalowanie i uż
 | Wyjątek dla użytkowników końcowych                  | Na końcu projektu tworzenia oprogramowania użytkownicy końcowi zwykle przeglądają aplikację i określają, czy spełnia ona niezbędne kryteria wydania. Ten proces jest nazywany testowaniem akceptacji przez użytkownika (przeprowadzających). Członkowie zespołu, tacy jak sponsor biznesowy lub Menedżer produktu, mogą działać jako serwery proxy dla użytkowników końcowych. Użytkownicy końcowi, którzy nie mają subskrypcji programu Visual Studio, mogą uzyskać dostęp do oprogramowania dla programu przeprowadzających, jeśli w przeciwnym razie używanie oprogramowania jest zgodne ze wszystkimi postanowieniami licencyjnymi programu Visual Studio. Jest to rzadki, że ktoś, którego podstawową rolą jest projektowanie, opracowywanie lub testowanie oprogramowania, będzie również kwalifikować się jako "użytkownik końcowy". |
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Dowiedz się więcej o odpowiedzialności dla administratorów:

@@ -7,12 +7,12 @@ ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Dowiedz się, jak używać kluczy produktów do obsługi pokazów internetowych za pośrednictwem usług terminalowych i włączania dostępu RDS
-ms.openlocfilehash: 35cda937aac7282756a1d6397b914c03e16b14fe
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 428ccdb86ca93bbafa07dcf847e017b88183928f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561315"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005332"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Pokazy internetowe za pośrednictwem usług terminalowych
 Za pomocą subskrypcji programu Visual Studio możesz zapewnić użytkownikom końcowym dostęp do pokazów internetowych programów za pośrednictwem usług terminalowych (Windows Server 2003 lub Windows Server 2008) lub Usługi pulpitu zdalnego (system Windows Server 2008 R2 i nowsze). Do 200 anonimowych użytkowników może jednocześnie uzyskać dostęp do demonstracji w ten sposób. Demonstracja nie może korzystać z danych produkcyjnych. Subskrybenci programu Visual Studio mają licencję na prezentowanie aplikacji użytkownikom końcowym. Ta prezentacja internetowa korzystająca z usług terminalowych lub Usługi pulpitu zdalnego (RDS) to jedyny scenariusz, w którym użytkownicy końcowi bez subskrypcji programu Visual Studio mogą korzystać z aplikacji demonstracyjnej, gdy oprogramowanie jest licencjonowane za pośrednictwem subskrypcji programu Visual Studio.
@@ -36,11 +36,11 @@ Użytkownicy końcowi mogą łączyć się z dostępem do aplikacji za pośredni
 - Klucze produktów umożliwiające nawiązywanie połączeń użytkowników muszą zostać uzyskane przez subskrybenta programu Visual Studio.
 
 ## <a name="see-also"></a>Zobacz też
-- [Zawiera systemu Windows Server](https://docs.microsoft.com/windows-server/)
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Zawiera systemu Windows Server](/windows-server/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Jeśli potrzebujesz wskazówek dotyczących wdrażania usług pulpitu zdalnego, zapoznaj się z wieloczęściową serią w blogu dotyczącą **wdrożenia sesji programu usługi pulpitu zdalnego (RDS) 2012** na stronie https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf . 

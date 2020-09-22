@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do subskrybentów
-ms.openlocfilehash: aa3c219a605b552ea1c4b785ff8fb1f92edf04ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f458e12cd27688f910917842de89e6377675fb69
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249476"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006205"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Przypisywanie licencji w portalu administratora subskrypcji programu Visual Studio
 Jako administrator subskrypcji programu Visual Studio można używać portalu administracyjnego do przypisywania subskrypcji do poszczególnych użytkowników i grup użytkowników.
@@ -20,7 +20,7 @@ Jako administrator subskrypcji programu Visual Studio można używać portalu ad
 W przypadku grup użytkowników można wybrać sposób przypisywania subskrypcji.  
 - Subskrypcje można przypisywać pojedynczo.
 - Możesz również szybko i łatwo przekazywać listy subskrybentów i ich informacje o subskrypcji za pomocą funkcji [zbiorczego dodawania](assign-license-bulk.md) .
-- Jeśli Twoja organizacja korzysta z usługi Microsoft Azure Active Directory (Azure AD), możesz [użyć grup usługi Azure AD do przypisywania subskrypcji](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) do grup użytkowników.  
+- Jeśli Twoja organizacja korzysta z usługi Microsoft Azure Active Directory (Azure AD), możesz [użyć grup usługi Azure AD do przypisywania subskrypcji](./assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) do grup użytkowników.  
 
 
 ## <a name="add-a-single-subscriber"></a>Dodaj pojedynczego abonenta
@@ -59,14 +59,12 @@ Poniżej przedstawiono sposób przypisywania subskrypcji programu Visual Studio 
 Po dodaniu subskrybenta wiadomość e-mail z przypisaniem zostanie automatycznie wysłana do nowego subskrybenta z dodatkowymi instrukcjami. W dowolnym momencie możesz wysłać wiadomość e-mail z przypisaniem, wybierając subskrybenta, a następnie wybierając przycisk **Wyślij ponownie** w górnym menu.  Aby ponownie wysyłać wiadomości e-mail do wielu użytkowników, przytrzymaj wciśnięty klawisz **Ctrl** podczas wybierania subskrybentów.  Po wybraniu przycisku **Wyślij ponownie** zobaczysz okno dialogowe z prośbą o potwierdzenie, że chcesz ponownie wysłać do tych subskrybentów.  
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Następne kroki
 - Masz dużo użytkowników do dodania?  Dowiedz się, jak przypisać subskrypcje do [wielu subskrybentów](assign-license-bulk.md).
 - Potrzebujesz pomocy?  Skontaktuj się z [pomocą techniczną programu Visual Studio Administration i subscriptions](https://visualstudio.microsoft.com/support/support-overview-vs).
-
-

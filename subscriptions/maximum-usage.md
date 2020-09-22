@@ -7,12 +7,12 @@ ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
 ms.date: 09/16/2020
 ms.topic: conceptual
 description: Dowiedz się, jak wyświetlić maksymalną liczbę przypisanych subskrypcji w portalu administracyjnym
-ms.openlocfilehash: 60f9961d400e8ce675e6cfb228f9f7bee36c74a0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f13fc75d2c359b05f74d781a3d6a8d0de99d39ff
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807940"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005875"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Śledzenie liczby przypisanych subskrypcji przy użyciu funkcji maksymalnego użycia
 Nowa funkcja portalu administracyjnego subskrypcji programu Visual Studio pomaga śledzić liczbę subskrybowanych i przypisanych subskrypcji oraz określać szczytową liczbę subskrypcji każdego przypisanego poziomu, zarówno w ciągu ostatniego roku, jak i przez cały czas trwania umów. 
@@ -48,12 +48,11 @@ Odp.: informacje w omówieniu przedstawiają *bieżące* przypisania i dostępne
 - [Postanowienia dotyczące licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 - Jeśli masz jakieś pytania dotyczące przypisań subskrypcji lub innych aspektów portalu administracyjnego, skontaktuj się z https://visualstudio.microsoft.com/subscriptions/support/ pomocą techniczną. 
 - Dowiedz się więcej o tym, co należy zrobić, Jeśli przypiszesz więcej zakupionych subskrypcji, nazywanych [nadmiernymi alokacjami](handle-overclaimed-license.md).
-

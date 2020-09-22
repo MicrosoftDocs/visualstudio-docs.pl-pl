@@ -3,7 +3,7 @@ title: Polecenia devinit
 description: Szczegółowe informacje na temat sposobu instalowania składników przy użyciu poleceń devinit.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 545f7ec80b528b759db8ccfde21a18a46959913a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a0bd657d9612bde05a820a591c2ab2c1cfdaad3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809708"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005532"
 ---
 # <a name="devinit-commands"></a>polecenia devinit
 
 ## <a name="init"></a>Init
 
-```batch
+```console
 > devinit init
 ```
 
@@ -41,7 +41,7 @@ Opcjonalne opcje dla `devinit init` polecenia.
 
 ## <a name="run"></a>Uruchom
 
-```batch
+```console
 > devinit run -t <toolname>
 ```
 
@@ -53,7 +53,7 @@ Opcje `devinit run` polecenia.
 
 | Argument                                  | Wymagane | Opis                                                                          |
 |-------------------------------------------|----------|--------------------------------------------------------------------------------------|
-| -t,--narzędzie                                 | Yes      | Wymagany. Nazwa narzędzia.                                                             |
+| -t,--narzędzie                                 | Tak      | Wymagany. Nazwa narzędzia.                                                             |
 | -i,--dane wejściowe                                | Nie       | Wartość wejściowa narzędzia. Na przykład nazwa pliku, pakietu lub nazwy.                           |
 | --błąd-akcja                            | Nie       | Określa sposób obsługi błędów narzędzia: Stop, Ignoruj, Kontynuuj. Wartość domyślna to Zatrzymaj. |
 | -v,--verbose                              | Nie       | Emituj pełne dane wyjściowe.                                                                 |
@@ -91,19 +91,19 @@ Emituj pełne dane wyjściowe do danych wyjściowych Standard. Jeśli narzędzie
 
 Użycie `<arg>` , które zawiera spację w jej wartości, musi zawierać dodatkową parę cudzysłowów ucieczkowych.
 
-```batch
+```console
 > devinit run -t <toolname> -<somearg> "<some value>"
 ```
 
 Aby zainstalować dotnet w określonym katalogu `C:\Program Files\dotnet` :
 
-```batch
+```console
 > devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
 ```
 
 ## <a name="list"></a>Lista
 
-```batch
+```console
 > devinit list
 ```
 
@@ -111,19 +111,19 @@ Drukuje listę wszystkich dostępnych narzędzi.
 
 ## <a name="show"></a>Pokaż
 
-```batch
+```console
 > devinit show -t <toolname>
 ```
 
 | Argument       | Wymagane | Opis                                                                          |
 |----------------|----------|--------------------------------------------------------------------------------------|
-| -t,--narzędzie      | Yes      | Wymagany. Nazwa narzędzia.                                                             |
+| -t,--narzędzie      | Tak      | Wymagany. Nazwa narzędzia.                                                             |
 
 Drukuje informacje pomocy dla danego narzędzia.
 
 ## <a name="version"></a>Wersja
 
-```batch
+```console
 > devinit version
 ```
 
@@ -131,7 +131,7 @@ Drukuje informacje o bieżącej wersji devinit.
 
 ## <a name="help"></a>Pomoc
 
-```batch
+```console
 > devinit help
 > devinit help list
 ```

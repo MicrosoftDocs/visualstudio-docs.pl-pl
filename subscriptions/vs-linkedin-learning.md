@@ -7,12 +7,12 @@ ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat korzyści z uczenia serwisu LinkedIn dostępnych w ramach subskrypcji usługi LinkedIn Premium zawartej w wybranych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 580b565ad2eeecc0c5923963243ee63c1069b86f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f0f500d092bb17e1bb81f0d35f2b12dc5c18183
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387138"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006296"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Korzyść szkoleniowa serwisu LinkedIn w ramach subskrypcji programu Visual Studio
 
@@ -98,10 +98,10 @@ Odp.: nie, oferta szkoleniowa serwisu LinkedIn jest dostępna tylko dla nowych s
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Zapoznaj się z pozostałymi korzyściami z subskrypcji. Odwiedź stronę [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .

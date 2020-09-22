@@ -7,12 +7,12 @@ ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 07/30/2020
 ms.topic: conceptual
 description: Dowiedz się, jak znaleźć, zatwierdzić i wyeksportować klucze produktów w subskrypcjach programu Visual Studio
-ms.openlocfilehash: e9be61db1f72684dcff12d015ec5180607b41977
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a246f66e429b78647f217468c7c19b703b419062
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250734"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004970"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Znajdowanie i pojmowanie kluczy produktów w subskrypcjach programu Visual Studio
 W tym artykule opisano sposób lokalizowania, zgłaszania i eksportowania kluczy produktów z programu https://my.visualstudio.com/productkeys .  Aby uzyskać więcej informacji na temat aktywowania produktu przy użyciu klucza, wersji programu Key i licencji zbiorczych oraz dziennych limitów roszczeń dotyczących klucza produktu, przejdź do [omówienia kluczy produktów](product-keys.md).
@@ -67,10 +67,10 @@ Można wyeksportować listę wszystkich przejętych kluczy, a także duży wybó
 Aby wyeksportować klucze, po prostu wybierz link **Eksportuj wszystkie klucze** z prawej strony na stronie klucze produktów.  Zostanie utworzony plik XML zatytułowany KeysExport.xml i będzie można otworzyć lub zapisać plik.  Otwarcie tego pliku jest możliwe przy użyciu aplikacji obsługującej pliki XML.  Na przykład możesz otworzyć ten plik jako skoroszyt tylko do odczytu w programie Excel.
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Gdy wszystko jest gotowe do pobrania oprogramowania i używania klawiszy, odwiedź stronę https://my.visualstudio.com/downloads .  Aby uzyskać więcej informacji o pobieraniu oprogramowania, zobacz [Omówienie pobierania](download-software.md).

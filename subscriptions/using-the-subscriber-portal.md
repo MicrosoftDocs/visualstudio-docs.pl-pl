@@ -7,25 +7,25 @@ ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 07/19/2019
 ms.topic: overview
 description: Poznaj pełen zakres korzyści dostępnych dla Ciebie w portalu subskrypcji programu Visual Studio
-ms.openlocfilehash: b2ace2416950336e7c4a872e378684d8160e2897
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2b79a1f4bedb9c6e04e7f764befd478e37222e3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85902884"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005202"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Korzystanie z portalu subskrybenta — my.visualstudio.com
 
 Portal subskrypcje programu Visual Studio, [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) , jest zasobem, aby skorzystać z pełnego zakresu korzyści oferowanych w ramach subskrypcji programu Visual Studio.
 
-Korzystanie z portalu wymaga zalogowania się za pomocą tożsamości skojarzonej z Twoją subskrypcją.  Może to być konto Microsoft (MSA) lub adres e-mail podany przez organizację, np. pracodawca lub szkoła.  Dowiedz się więcej o [logowaniu](signing-in.md).
+Korzystanie z portalu wymaga zalogowania się za pomocą tożsamości skojarzonej z Twoją subskrypcją.  Może to być konto Microsoft (MSA) lub adres e-mail podany przez organizację, np. pracodawca lub szkoła.  Dowiedz się więcej o [logowaniu](./index.yml).
 
 Portal jest zorganizowany na sześć stron.  Każda Strona zapewnia dostęp do różnych produktów lub usług dostępnych w ramach subskrypcji.  Sześć stron to korzyści, pliki do pobrania, klucze produktów, subskrypcje, pomoc techniczna i Portal Marketplace.
 
 ## <a name="benefits"></a>[Korzyści](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 Narzędzia i usługi dołączone do subskrypcji są wyświetlane jako "kafelki" na stronie korzyści.  Wszystkie korzyści nie są dostępne we wszystkich subskrypcjach. Kafelki są pogrupowane w trzy kategorie: narzędzia, programowanie profesjonalne i pomoc techniczna.  
 
-### <a name="tools"></a>narzędzia
+### <a name="tools"></a>Narzędzia
 Kategoria Tools to miejsce, w którym znajdziesz podstawowe narzędzia programistyczne, takie jak środowisko IDE programu Visual Studio, usługa Azure DevOps, a także narzędzia udostępniane przez naszych partnerów.  Zobaczysz również usługi, takie jak Azure i Visual Studio App Center.
 
 ### <a name="professional-development"></a>Profesjonalne programowanie
@@ -54,10 +54,10 @@ Oprócz indywidualnych korzyści, które można znaleźć w kategorii pomoc tech
 Chcesz odnowić subskrypcję programu Visual Studio Cloud?  Czy chcesz pobrać najnowsze rozszerzenia rodziny produktów Visual Studio?  Witryna Marketplace ułatwia użytkownikom znalezienie rozszerzeń, narzędzi i usług, dzięki którym DevOps platformy Azure, Azure DevOps Server i Visual Studio Code jeszcze lepsze. Możesz nawet zostać wydawcą i opublikować własne rozszerzenia w portalu Marketplace.
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
-Zaloguj się do portalu [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) i zapoznaj się z korzyściami.  Możesz również dowiedzieć się więcej o logowaniu się do portalu przy użyciu [konta Microsoft](sign-in-msa.md) (MSA), [konta służbowego](sign-in-work.md), a nawet konta w serwisie [GitHub](sign-in-github.md). 
+Zaloguj się do portalu [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) i zapoznaj się z korzyściami.  Możesz również dowiedzieć się więcej o logowaniu się do portalu przy użyciu [konta Microsoft](sign-in-msa.md) (MSA), [konta służbowego](sign-in-work.md), a nawet konta w serwisie [GitHub](sign-in-github.md).

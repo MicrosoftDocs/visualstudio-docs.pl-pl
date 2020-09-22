@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat i zainstaluj Microsoft 365 aplikacje dla przedsiębiorstw
-ms.openlocfilehash: 0249f2c97ba93c49985629143dabb842447c196f
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 88570806d90ff022ede6f39c16325d8696ef0f9e
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561255"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006127"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365 aplikacje dla przedsiębiorstw w subskrypcjach programu Visual Studio
 W wybranych subskrypcjach programu Visual Studio jest dostępna Microsoft 365 aplikacje dla przedsiębiorstw (dawniej Office 365 Pro Plus). 
@@ -57,12 +57,12 @@ Proces aktywowania aplikacji Microsoft 365 dla subskrypcji przedsiębiorstwa jes
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna| Dostępne       |  Tak          |
 | Visual Studio Enterprise z usługą GitHub Enterprise  | Licencja | Dostępne       |  Tak          |
-| Visual Studio Enterprise (standardowa)   | NFR<sup>1</sup> | Niedostępne       |  Nie dotyczy          |
-| Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Niedostępne                                                            |  Nie dotyczy          |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja | Niedostępne         |  Nie dotyczy          |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                             |  Nie dotyczy          |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Nie dotyczy          |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
+| Visual Studio Enterprise (standardowa)   | NFR<sup>1</sup> | Niedostępne       |  Brak          |
+| Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Niedostępne                                                            |  Brak          |
+| Visual Studio Professional z usługą GitHub Enterprise | Licencja | Niedostępne         |  Brak          |
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                             |  Brak          |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Brak          |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |
 |  |
 
 <sup>1</sup>  *obejmuje: nie dotyczy odsprzedaży (NFR), programu Visual Studio Industry partner (VSIP), Microsoft Partner Network (MPN), pełnego, MCT Software & Services Developer, BizSpark, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), MCT Software & Services, wyobraź sobie, Microsoft Partner Network.*
@@ -78,13 +78,13 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, platformy Azure DevOps lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- Kredyty na korzystanie z [usługi Azure DevTest](vs-azure.md) Jeśli planujesz opracowywać aplikacje dla pakietu Office, chcesz aktywować [subskrypcję dewelopera pakietu Office](vs-office-dev.md)
+- Kredyty na korzystanie z [usługi Azure DevTest](vs-azure.md) Jeśli planujesz opracowywać aplikacje dla pakietu Office, chcesz aktywować [subskrypcję dewelopera pakietu Office](./vs-m365.md)

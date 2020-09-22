@@ -7,12 +7,12 @@ ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Dowiedz się, jak zalogować się do subskrypcji programu Visual Studio przy użyciu konta służbowego.
-ms.openlocfilehash: 50cb122f1df5b9e6f87d53d3170d59c8f4d4b306
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 96b111c47e753b343d59c89e65f71eaa90132f6f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561432"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005810"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Logowanie do subskrypcji programu Visual Studio przy użyciu konta służbowego 
 
@@ -72,10 +72,10 @@ Odp.: wielu użytkowników ma więcej niż jedną subskrypcję.  Jeśli możesz 
 Jeśli nadal masz problemy, możesz skontaktować się z naszym zespołem [pomocy technicznej](https://visualstudio.microsoft.com/subscriptions/support/) , aby uzyskać pomoc.  
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
-Po pomyślnym zalogowaniu się do portalu subskrypcji zalecamy odwiedzenie strony korzyści w witrynie https://my.visualstudio.com/benefits i eksplorowanie doskonałych narzędzi, usług i ofert dostępnych dla Ciebie.  
+Po pomyślnym zalogowaniu się do portalu subskrypcji zalecamy odwiedzenie strony korzyści w witrynie https://my.visualstudio.com/benefits i eksplorowanie doskonałych narzędzi, usług i ofert dostępnych dla Ciebie.

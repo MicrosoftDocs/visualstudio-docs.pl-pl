@@ -3,7 +3,7 @@ title: OpenCV
 description: Przykładowe dostosowanie przy użyciu devinit dla repozytorium OpenCV/OpenCV.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: dd8a17635b70d0f9f49852d09d8f1b9a6864e26e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a1c7f2c78fdae9c70785727cb03c7f8cb1e08cef
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809098"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005639"
 ---
 # <a name="opencv"></a>OpenCV
 
 Ten przykład ilustruje modyfikacje, które muszą być obsługiwane przez program [OpenCV](https://github.com/opencv/opencv) w celu automatycznego aprowizacji z [GitHub Codespaces] https://github.com/features/codespaces) .
 
-## <a name="devinitjson"></a>.devinit.jsna
+## <a name="devinitjson"></a>.devinit.json
 
 Zawartość [_.devinit.js_](devinit-json.md) pliku. Ten plik musi znajdować się w tym samym folderze co _.devcontainer.js_.
 

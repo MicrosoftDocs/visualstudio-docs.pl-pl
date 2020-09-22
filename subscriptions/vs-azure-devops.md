@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Dowiedz się, jak korzystać z usługi Azure DevOps jako subskrybenta programu Visual Studio.
-ms.openlocfilehash: 9f715cf5b9bd0278073b4a5f19a0f0a4f6a7a423
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f449d39866cb5891f2b378acffdd84b38b6408c7
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801077"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005089"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Korzyści z platformy Azure DevOps dla subskrybentów programu Visual Studio
 Jako aktywną subskrypcję programu Visual Studio możesz korzystać z szeregu funkcji platformy Azure DevOps, które są dostępne w ramach subskrypcji jako korzyści. Będzie można korzystać z tych samych funkcji w każdej organizacji usługi Azure DevOps, w której jesteś członkiem, niezależnie od tego, czy została utworzona organizacja, czy dodana przez kogoś innego.
@@ -30,17 +30,17 @@ Gdy zalogujesz się do usługi Azure DevOps przy użyciu tożsamości użytej do
 ## <a name="eligibility"></a>Kryteria
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa, miesięczna chmura)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup>  | Azure Boards & repozytoria (podstawowe<sup>2</sup>), Azure test Plans, własne zadania równoległe [Dowiedz się więcej](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)     |  Tak          |
-| Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja| Azure Boards & repozytoria (podstawowe<sup>2</sup>), Azure test Plans, własne zadania równoległe [Dowiedz się więcej](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops) |  Tak          |
-| Visual Studio Professional (standardowa, miesięczna chmura) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                        | Repozytoria & Azure Boards (podstawowa<sup>2</sup>) [Dowiedz się więcej](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Tak          |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja| Repozytoria & Azure Boards (podstawowa<sup>2</sup>)  [Dowiedz się więcej](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Tak          |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Azure Boards & repozytoriów (podstawowa<sup>2</sup>), Azure test Plans [Dowiedz się więcej](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Tak          |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Azure Boards & repozytoriów (podstawowa<sup>2</sup>), Azure test Plans [Dowiedz się więcej](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Tak          |
+| Visual Studio Enterprise (standardowa, miesięczna chmura)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup>  | Azure Boards & repozytoria (podstawowe<sup>2</sup>), Azure test Plans, własne zadania równoległe [Dowiedz się więcej](/azure/devops/organizations/security/access-levels?view=azure-devops)     |  Tak          |
+| Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja| Azure Boards & repozytoria (podstawowe<sup>2</sup>), Azure test Plans, własne zadania równoległe [Dowiedz się więcej](/azure/devops/organizations/security/access-levels?view=azure-devops) |  Tak          |
+| Visual Studio Professional (standardowa, miesięczna chmura) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                        | Repozytoria & Azure Boards (podstawowa<sup>2</sup>) [Dowiedz się więcej](/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Tak          |
+| Visual Studio Professional z usługą GitHub Enterprise | Licencja| Repozytoria & Azure Boards (podstawowa<sup>2</sup>)  [Dowiedz się więcej](/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Tak          |
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Azure Boards & repozytoriów (podstawowa<sup>2</sup>), Azure test Plans [Dowiedz się więcej](/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Tak          |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Azure Boards & repozytoriów (podstawowa<sup>2</sup>), Azure test Plans [Dowiedz się więcej](/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Tak          |
 ||
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Visual Studio Industry partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer, równoważnik. Wyklucza: MCT oprogramowania & Services, Wyobraź sobie.*
 
-<sup>2</sup> *Plan podstawowy obejmuje definiowanie potoków wydań i potoków ciągłego wdrażania z obsługą Wieloetapową oraz używanie zatwierdzeń i bram do kontrolowania wdrożeń. po włączeniu opcji Bezpłatna dostęp do wersji zapoznawczej dla potoku uczestnicy projektu mogą uzyskać dostęp do wszystkich funkcji Azure Pipelines. Aby uzyskać więcej informacji na temat funkcji dostępnych w planach, odwiedź [stronę dotyczącą poziomów dostępu](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)na platformie Azure.*
+<sup>2</sup> *Plan podstawowy obejmuje definiowanie potoków wydań i potoków ciągłego wdrażania z obsługą Wieloetapową oraz używanie zatwierdzeń i bram do kontrolowania wdrożeń. po włączeniu opcji Bezpłatna dostęp do wersji zapoznawczej dla potoku uczestnicy projektu mogą uzyskać dostęp do wszystkich funkcji Azure Pipelines. Aby uzyskać więcej informacji na temat funkcji dostępnych w planach, odwiedź [stronę dotyczącą poziomów dostępu](/azure/devops/organizations/security/access-levels?view=azure-devops)na platformie Azure.*
 
 > [!NOTE]
 > Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) przeglądania różnych opcji zakupu programu Visual Studio.
@@ -58,10 +58,10 @@ Odp.: tak. Subskrybenci Visual Studio Enterprise mogą uzyskać jedno zadanie r�
 - [Dokumentacja usługi Azure DevOps](/azure/devops/).
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Dowiedz się więcej o funkcjach usługi Azure DevOps:

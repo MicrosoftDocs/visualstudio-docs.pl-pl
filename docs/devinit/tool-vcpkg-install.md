@@ -1,9 +1,9 @@
 ---
-title: vcpkg — Zainstaluj
+title: vcpkg-install
 description: devinit narzędzie vcpkg — Zainstaluj.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 2e6dcad778e89b112a8c851f2f27ac46330466af
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7c974b5747c38231ff4115aba17a8e3728672851
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810415"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005989"
 ---
-# <a name="vcpkg-install"></a>vcpkg — Zainstaluj
+# <a name="vcpkg-install"></a>vcpkg-install
 
 To `vcpkg-install` Narzędzie służy do pozyskiwania bibliotek C/C++ (nazywanych portami) za pomocą [vcpkg](https://github.com/microsoft/vcpkg).
 
@@ -29,7 +29,7 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 | Nazwa                                             | Typ   | Wymagane | Wartość                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
 | **komentarz**                                     | ciąg | Nie       | Opcjonalna Właściwość komentarzy. Nie używany.                                                   |
-| [**klawiatur**](#input)                              | ciąg | Yes      | Pakiety do zainstalowania. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) .                       |
+| [**klawiatur**](#input)                              | ciąg | Tak      | Pakiety do zainstalowania. Aby uzyskać szczegółowe informacje, zobacz poniższe [dane wejściowe](#input) .                       |
 | [**additionalOptions**](#additional-options)     | ciąg | Nie       | Aby uzyskać szczegółowe informacje, zobacz [dodatkowe opcje](#additional-options) poniżej.                        |
 
 ### <a name="input"></a>Dane wejściowe

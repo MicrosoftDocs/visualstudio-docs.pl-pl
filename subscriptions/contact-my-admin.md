@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Dowiedz się, jak skontaktować się z administratorem subskrypcji, aby uzyskać pomoc dotyczącą pytań lub problemów.
-ms.openlocfilehash: 43a0c4ac090331bb9e9c65c232f5277aaee890a7
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561419"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005691"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Uzyskaj pomoc od administratora subskrypcji
 Jeśli Twoja subskrypcja programu Visual Studio jest świadczona przez służbowe lub szkolne, prawdopodobnie została przypisana do Ciebie przez administratora subskrypcji lub administratora.  Administratorzy mogą przypisywać lub usuwać subskrypcje, zmieniać adresy e-mail logowania, określać, czy użytkownik ma możliwość pobrania oprogramowania i wykonywania innych funkcji związanych z subskrypcją.
@@ -36,10 +36,10 @@ Mając na uwadze rozmiar i złożoność wielu organizacji, użytkownik może ni
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Jeśli jeszcze tego nie zrobiono, Zalecamy aktywowanie tych korzyści, aby maksymalnie wykorzystać subskrypcję programu Visual Studio:
@@ -48,4 +48,3 @@ Jeśli jeszcze tego nie zrobiono, Zalecamy aktywowanie tych korzyści, aby maksy
 - [Azure DevOps](vs-azure-devops.md)
 
 Te korzyści i więcej można znaleźć pod adresem https://my.visualstudio.com/benefits .
-

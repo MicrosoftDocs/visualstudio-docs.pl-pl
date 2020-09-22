@@ -1,9 +1,9 @@
 ---
-title: Wymagaj — azurecli
+title: require-azurecli
 description: Narzędzie devinit wymaga-azurecli.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e730807cd4658a23c4e39e06ed837f622e0f0e39
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ad76f82a69356f4bbd40d189fb2d8e77a839b31f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810893"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005799"
 ---
-# <a name="require-azurecli"></a>Wymagaj — azurecli
+# <a name="require-azurecli"></a>require-azurecli
 
 `require-azurecli`Narzędzie służy do instalowania [interfejsu wiersza polecenia platformy Azure](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest&preserve-view=true) za pomocą interfejsu wiersza polecenia platformy Azure.
 

@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: Zarządzanie subskrypcjami w ofercie programu Visual Studio i usługi GitHub Enterprise
-ms.openlocfilehash: 01b043698aaeb23151357595d5c39cd117fd47c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4206332890b8be9483a0211c4b465103b1565cd0
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249840"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006179"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Zarządzanie subskrypcjami programu Visual Studio za pomocą usługi GitHub Enterprise
 Klienci, którzy mają umowę Enterprise Agreement (EA) z firmą Microsoft, mogą zakupić nową ofertę subskrypcji, która wiąże się z subskrypcjami programu Visual Studio w wersji Standard i usługi GitHub. Jest to prosty i ekonomiczny sposób, w jaki Subskrybenci programu Visual Studio mogą uzyskać przedsiębiorstwo w serwisie GitHub. 
@@ -75,10 +75,10 @@ Pomoc usługi GitHub zawiera wiele przewodników administratorów, które mogą 
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -1,9 +1,9 @@
 ---
-title: azurecli — logowanie
+title: azurecli-login
 description: devinit narzędzia azurecli — logowanie.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e95bc70540ae73c73a17a94b4cadfc399c8557e5
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 74c8144d9442c786bddeae78024fc4cf0d1e0d4a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810173"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006044"
 ---
-# <a name="azurecli-login"></a>azurecli — logowanie
+# <a name="azurecli-login"></a>azurecli-login
 
 `azurecli-login`Narzędzie służy do logowania się do Azure Active Directory za pomocą [interfejsu wiersza polecenia platformy Azure](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest&preserve-view=true). To narzędzie korzysta z wiersza polecenia platformy Azure: `az login --use-device-code` Aby ukończyć logowanie, należy postępować zgodnie z instrukcjami wydrukowanymi w konsoli programu.
 

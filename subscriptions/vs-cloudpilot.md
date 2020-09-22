@@ -7,12 +7,12 @@ ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Poznaj korzyści CloudPilot dostępne w wybranych subskrypcjach programu Visual Studio
-ms.openlocfilehash: bebffb505f5c2b0fff7167ed2cccf629be1e7543
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 642a5b35f41676c76d9eb4e5f1319fbbf57c55df
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80274040"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005927"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Korzyść CloudPilot w subskrypcjach programu Visual Studio
 Przenieś swoje aplikacje do Microsoft Azure w kilku prostych krokach. W ciągu kilku minut Sprawdź, czy wszystkie wymagane kody zostały zmienione w dół do wiersza kodu w celu pomyślnej migracji: kontenery, maszyny wirtualne, App Services, SQL Azure i/lub SQL MI. Następnie należy przeprowadzić migrację aplikacji na platformę Azure przy użyciu kreatorów korzystających z funkcji ASR, DMA i DMS.
@@ -85,10 +85,10 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Jeśli nie aktywowano jeszcze korzyści z korzystania z usługi Azure DevTest, która jest oferowana w ramach Twojej subskrypcji, odwiedź witrynę [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) Azure Portal i kliknij ją w obszarze Kategoria narzędzia, aby skonfigurować subskrypcję platformy Azure i wypróbować indywidualne środki na korzystanie z platformy Azure DevTest.

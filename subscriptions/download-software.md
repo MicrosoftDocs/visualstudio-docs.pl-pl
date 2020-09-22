@@ -7,12 +7,12 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 07/29/2020
 ms.topic: conceptual
 description: Dowiedz się, jak lokalizować i pobierać tytuły oprogramowania firmy Microsoft w subskrypcjach programu Visual Studio
-ms.openlocfilehash: d1d885bbe9322f6d15cecff7e44d879aceb63d4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a267db59f1efc4912748846e61774966f0f6abe
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801831"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005603"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Pobieranie tytułów oprogramowania w subskrypcjach programu Visual Studio
 W zależności od posiadanej subskrypcji programu Visual Studio może być dostępna szeroka gama tytułów oprogramowania firmy Microsoft.  W tym artykule przedstawiono sposób lokalizowania i pobierania oprogramowania potrzebnego do maksymalnego wykorzystania subskrypcji. 
@@ -53,10 +53,10 @@ Aby uzyskać klucz produktu do pobrania, możesz wybrać niebieski klucz z etyki
 > ![Klucze produktów roszczeń programu Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png "Wybierz klucz roszczeń, aby przejąć pozostałe klucze.")
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Aby dowiedzieć się więcej na temat lokalizowania, zgłaszania i eksportowania kluczy produktów, zapoznaj się z dokumentacją dotyczącą kluczy produktów:

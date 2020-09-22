@@ -1,9 +1,9 @@
 ---
-title: NuGet — przywracanie
+title: nuget-restore
 description: Narzędzie devinit narzędzia NuGet — przywracanie.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 446498f77d7f9a26c9876f6a163d819a97df1ff9
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7671d336e3c4f86cae8b6bba7fe1b35443aa0632
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810920"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005118"
 ---
-# <a name="nuget-restore"></a>NuGet — przywracanie
+# <a name="nuget-restore"></a>nuget-restore
 
 `nuget-restore`Narzędzia przywracania zależności i narzędzi specyficznych dla projektu, które są określone w pliku projektu. Więcej informacji na temat przywracania NuGet można znaleźć [tutaj](https://docs.microsoft.com/nuget/reference/cli-reference/cli-ref-restore).
 

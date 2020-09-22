@@ -7,12 +7,12 @@ ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
 ms.date: 09/18/2020
 ms.topic: conceptual
 description: Dowiedz się, jak uzyskiwać klucze produktów i zarządzać nimi w subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 8a7a2551b98672332af88210a0347c9ee3faf2cc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809162"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005849"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Korzystanie z kluczy produktów w subskrypcjach programu Visual Studio
 
@@ -66,7 +66,7 @@ W zależności od produktu dostępne są różne typy kluczy.
 |    Typ klucza           |    Opis                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Nie dotyczy                    |    Do zainstalowania tego produktu nie jest wymagany żaden klucz.                                                       |
-|    Sprzedaż detaliczna                     |    Klucze detaliczne umożliwiają używanie wielu aktywacji i są używane na potrzeby kompilacji detalicznej produktu. W wielu przypadkach dozwolone są 10 aktywacji na klucz, chociaż często są dozwolone na tym samym komputerze.                                                       |
+|    Retail                     |    Klucze detaliczne umożliwiają używanie wielu aktywacji i są używane na potrzeby kompilacji detalicznej produktu. W wielu przypadkach dozwolone są 10 aktywacji na klucz, chociaż często są dozwolone na tym samym komputerze.                                                       |
 |    Aktywacja wielokrotna        |    Klucz aktywacji wielokrotnej (MAK) umożliwia aktywację wielu instalacji produktu z tym samym kluczem. Wartości MAKs są zwykle używane z wersjami produktów licencjonowania zbiorowego. Zazwyczaj dla każdej subskrypcji jest dostarczany tylko jeden klucz MAK.    |
 |    Statyczny klucz aktywacji    |    Klucze aktywacji statycznej są udostępniane dla produktów, które nie wymagają aktywacji. Mogą one być używane dla dowolnej liczby instalacji.                                                                                                                  |
 |    Klucz niestandardowy                 |    Klucze niestandardowe udostępniają specjalne akcje lub informacje umożliwiające aktywację lub instalację produktu.                                                                                                                                                                |
@@ -80,10 +80,10 @@ W zależności od produktu dostępne są różne typy kluczy.
 Klucz można przejąć ze strony pobierania produktu lub można wyszukać wymagany klucz na stronie [klucze produktu](https://my.visualstudio.com/productkeys) .
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Aby zgłosić klucze, odwiedź stronę https://my.visualstudio.com/productkeys .  

@@ -7,12 +7,12 @@ ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 04/15/2020
 ms.topic: how-to
 description: Dowiedz się, jak skonfigurować konto usługi Azure — płatność zgodnie z rzeczywistym użyciem.
-ms.openlocfilehash: 057230d4b3b54e1d514a06f6db2de7412eb2c995
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 111733fb6950e602528fac9ae5b39bba04870d01
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85902892"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005076"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Subskrypcje usługi Azure DevTest — płatność zgodnie z rzeczywistym użyciem
 Współpracuj z zespołem w chmurze.  Twórz wiele funkcji tworzenia i testowania subskrypcji z płatność zgodnie z rzeczywistym użyciem, umożliwiając współpracę z innymi subskrybentami, a jednocześnie zapewniając izolację między zespołami i środowiskami.  W przypadku Oprogramowania subskrypcyjnego na platformie Azure otrzymujesz stawki godzinowe z obniżonymi rabatami na potrzeby tworzenia i testowania oraz praw do używania w chmurze.
@@ -45,13 +45,12 @@ Odp.: aby wprowadzić zmiany w ramach subskrypcji platformy Azure:
 4. Teraz możesz zarządzać subskrypcją lub anulować ją, zmienić jej nazwę, zmienić katalog lub przenieść własność rozliczeń.
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Wiele subskrypcji obejmuje dodatkowe korzyści związane z platformą Azure, takie jak Azure DevOps i Azure DevTest.  Aby uzyskać więcej informacji na temat tych korzyści, zobacz:
 - [Azure DevOps](vs-azure-devops.md)
 - [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)
-
