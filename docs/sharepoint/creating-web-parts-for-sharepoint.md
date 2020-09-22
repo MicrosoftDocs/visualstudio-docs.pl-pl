@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4824c358f81f2cf757f037611ed70ba9b8935130
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015049"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740160"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Tworzenie składników Web Part dla programu SharePoint
   Za pomocą części sieci Web, można modyfikować zawartość, wygląd i zachowanie stron witryny programu SharePoint za pomocą przeglądarki. Części sieci Web to kontrolki po stronie serwera, które są uruchamiane wewnątrz strony składnika Web Part: są to bloki konstrukcyjne stron, które są wyświetlane w witrynie programu SharePoint. Zobacz [blok konstrukcyjny: składniki Web Part](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
@@ -85,7 +85,7 @@ ms.locfileid: "86015049"
 
 - Wizualne składniki Web Part nie obsługują bezpośrednio tokenów serwera programu SharePoint, takich jak $SPUrl. Aby uzyskać więcej informacji, zobacz "ograniczenia tokenu w składniki Web Part wizualizacji w trybie piaskownicy" w temacie [Rozwiązywanie problemów z rozwiązaniami programu SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
 
-- Wizualne części sieci Web w rozwiązaniu w trybie piaskownicy czasami pobierają błąd "żądanie wykonania kodu w trybie piaskownicy zostało odrzucone, ponieważ usługa hosta kodu w trybie piaskownicy była zbyt zajęta, aby obsłużyć żądanie". Aby uzyskać więcej informacji na temat tego błędu, zobacz ten wpis w [blogu zespołu deweloperów programu SharePoint](https://blogs.msdn.microsoft.com/sharepointdev/2011/02/08/error-the-sandboxed-code-execution-request-was-refused-because-the-sandboxed-code-host-service-was-too-busy-to-handle-the-request-ricky-kirkham/#10149157).
+- Wizualne części sieci Web w rozwiązaniu w trybie piaskownicy czasami pobierają błąd "żądanie wykonania kodu w trybie piaskownicy zostało odrzucone, ponieważ usługa hosta kodu w trybie piaskownicy była zbyt zajęta, aby obsłużyć żądanie". Aby uzyskać więcej informacji na temat tego błędu, zobacz ten wpis w [blogu zespołu deweloperów programu SharePoint](/archive/blogs/sharepointdev/error-the-sandboxed-code-execution-request-was-refused-because-the-sandboxed-code-host-service-was-too-busy-to-handle-the-request-ricky-kirkham#10149157).
 
 - Debugowanie kodu JavaScript po stronie serwera nie jest obsługiwane w programie Visual Studio, ale Debugowanie kodu JavaScript po stronie klienta jest obsługiwane.
 

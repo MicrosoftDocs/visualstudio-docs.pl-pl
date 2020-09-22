@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64cd7db0131843ab48410b6676551c8563b8ffbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf10a1f4474c2916cd63402eac487af7545b0f8f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531784"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810669"
 ---
 # <a name="profile-python-code"></a>Kod języka Python
 
@@ -40,4 +40,4 @@ Ponieważ IronPython nie jest interpreterem opartym na CPython, funkcja profilow
 
 Zamiast tego należy użyć programu Visual Studio .NET Profiler, uruchamiając *ipy.exe* bezpośrednio jako aplikację docelową, używając odpowiednich argumentów do uruchomienia skryptu uruchomieniowego. Uwzględnij `-X:Debug` w wierszu polecenia, aby upewnić się, że cały kod w języku Python może być debugowany i profilowany. Ten argument generuje raport dotyczący wydajności, w tym czas spędzony zarówno w środowisku uruchomieniowym IronPython, jak i kodzie. Kod jest identyfikowany przy użyciu nazw zniekształcona.
 
-Alternatywnie, IronPython ma własne wbudowane profilowanie, ale obecnie nie istnieje dobry wizualizator. Zobacz [IronPython Profiler](https://blogs.msdn.microsoft.com/curth/2009/03/30/an-ironpython-profiler/) (blogi MSDN), aby uzyskać dostęp do dostępnych elementów.
+Alternatywnie, IronPython ma własne wbudowane profilowanie, ale obecnie nie istnieje dobry wizualizator. Zobacz [IronPython Profiler](/archive/blogs/curth/an-ironpython-profiler) (blogi MSDN), aby uzyskać dostęp do dostępnych elementów.

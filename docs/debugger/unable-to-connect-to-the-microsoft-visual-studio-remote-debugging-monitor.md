@@ -1,5 +1,6 @@
 ---
 title: Nie można połączyć się z Monitorem debugera zdalnego programu Microsoft Visual Studio
+titleSuffix: ''
 ms.date: 04/14/2020
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63bd6fba7305c8dd266ecc935ea00d04633c6aec
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1863caeaa3d3b0457d89913186337fa74ad5d8de
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809339"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852247"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Nie można połączyć się z Monitorem debugera zdalnego programu Microsoft Visual Studio
 Ten komunikat może wystąpić, ponieważ Monitor zdalnego debugowania nie jest prawidłowo skonfigurowany na maszynie zdalnej lub maszyna zdalna jest niedostępna z powodu problemów z siecią lub obecności zapory.
@@ -179,5 +180,5 @@ Można to rozwiązać w jeden z następujących sposobów:
 ## <a name="more-help"></a>Więcej pomocy
  Aby uzyskać więcej pomocy dotyczącej zdalnego debugera, Otwórz stronę pomocy zdalnego debugera (**pomoc > użyciu** w debugerze zdalnym).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

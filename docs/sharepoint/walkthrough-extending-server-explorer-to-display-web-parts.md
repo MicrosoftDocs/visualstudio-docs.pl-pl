@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e5221d1cce065a352051ca700cf0fc5ef4ae843
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 915a1762782b2bf7177b87a3a5f4cdc6e08c6405
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015632"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739996"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Przewodnik: rozszerzona Eksplorator serwera do wyświetlania składników Web Part
   W programie Visual Studio można użyć węzła **połączenia SharePoint** **Eksplorator serwera** , aby wyświetlić składniki w witrynach programu SharePoint. Jednak **Eksplorator serwera** domyślnie nie wyświetla niektórych składników. W tym instruktażu zostanie rozbudowana **Eksplorator serwera** tak, aby była wyświetlana Galeria składników Web Part w każdej połączonej witrynie programu SharePoint.
@@ -275,7 +275,7 @@ ms.locfileid: "86015632"
 
 1. W **Eksplorator rozwiązań**w projekcie WebPartNode Otwórz plik **source. Extension. vsixmanifest** w edytorze manifestu.
 
-     Plik source. Extension. vsixmanifest jest podstawą dla pliku Extension. vsixmanifest, który wymaga wszystkich pakietów VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [Dokumentacja schematu rozszerzenia VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Plik source. Extension. vsixmanifest jest podstawą dla pliku Extension. vsixmanifest, który wymaga wszystkich pakietów VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [Dokumentacja schematu rozszerzenia VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. W polu **Nazwa produktu** wprowadź **węzeł Galerii składników Web Part dla Eksplorator serwera**.
 
@@ -303,7 +303,7 @@ ms.locfileid: "86015632"
 10. W polu **Typ** wprowadź wartość **SharePoint. Commands. v4**.
 
     > [!NOTE]
-    > Ten element określa niestandardowe rozszerzenie, które ma zostać dołączone do rozszerzenia programu Visual Studio. Aby uzyskać więcej informacji, zobacz [element zawartości (schemat VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Ten element określa niestandardowe rozszerzenie, które ma zostać dołączone do rozszerzenia programu Visual Studio. Aby uzyskać więcej informacji, zobacz [element zawartości (schemat VSX)](/previous-versions/dd393737(v=vs.110)).
 
 11. Z listy **Źródło** wybierz **projekt w bieżącym** elemencie listy rozwiązania.
 

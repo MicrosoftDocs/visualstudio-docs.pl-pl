@@ -1,5 +1,5 @@
 ---
-title: Jak debugować zoptymalizowany kod | Microsoft Docs
+title: Debuguj zoptymalizowany kod | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c08ce9605560173d6f29817372dee4af8d622e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da0a9c40a2c4887b2798e908ad0c12d6c9a85b32
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349981"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852390"
 ---
 # <a name="how-to-debug-optimized-code"></a>Porady: debugowanie zoptymalizowanego kodu
 
@@ -89,7 +89,7 @@ for (x=0; x<10; x++)
 
  Załóżmy, że ustawisz punkt przerwania w tym wierszu. Może oczekiwać, że punkt przerwania zostanie osiągnięty 10 razy, ale jeśli kod jest zoptymalizowany, punkt przerwania zostanie trafiony tylko raz. Oznacza to, że pierwsza instrukcja ustawia wartość `x` na 0. Kompilator rozpoznaje, że tylko raz i przenosi go z pętli. Punkt przerwania jest przenoszony razem z nim. Instrukcje, które porównują i zwiększają, `x` pozostają wewnątrz pętli. Po wyświetleniu okna **demontażu** [Jednostka kroku](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100)) jest automatycznie ustawiana na instrukcje w celu uzyskania większej kontroli, co jest przydatne w przypadku przechodzenia przez zoptymalizowany kod.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

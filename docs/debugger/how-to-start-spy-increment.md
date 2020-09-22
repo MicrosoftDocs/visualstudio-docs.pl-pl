@@ -1,5 +1,5 @@
 ---
-title: Jak uruchomić Spy + + | Microsoft Docs
+title: Uruchom Spy + + | Microsoft Docs
 ms.date: 12/16/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b659350adc39fd1088964976b8bcdef629bad44b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7743d36671e1c651b9bcfa89b315399c0696e26d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349007"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851908"
 ---
 # <a name="how-to-start-spy"></a>Porady: korzystanie z programu Spy++
 
@@ -50,7 +50,7 @@ Ponieważ program Spy + + działa niezależnie, po jego uruchomieniu można zamk
 
 2. Wprowadź **spyxx.exe**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)
 - [Spy++ — Widoki](../debugger/spy-increment-views.md)
 - [Spy++ — Odwołanie](../debugger/spy-increment-reference.md)

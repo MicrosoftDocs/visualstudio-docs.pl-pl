@@ -1,5 +1,6 @@
 ---
-title: Tworzenie raportów profilera z wiersza polecenia | Microsoft Docs
+title: Profilowanie wiersza polecenia — tworzenie raportów
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c886f8af-2014-4fec-9b24-d98b68ecafb7
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 475c8da2d10dea4953486fc9c564c5bde7fb0887
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5eb0f1fa0f9bbe760b1ea89074d02044cf26ab7d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329074"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808828"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>Tworzenie raportów profilera z poziomu wiersza polecenia
 Narzędzie wiersza polecenia **VSPerfReport** umożliwia tworzenie. wartość w *formacie XML* lub przecinkiem (.* CSV*) raporty z profilowania danych (.* VSP*). Typy raportów VSPerfReport ściśle pasują do widoków opartych na tabelach interfejsu dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Raport można filtrować, aby wyświetlić tylko kod i wyświetlić tylko segment pliku danych profilowania. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).

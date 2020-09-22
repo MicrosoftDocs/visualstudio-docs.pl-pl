@@ -13,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 79fb60f05d12b1105febc12a218b1f36ee498deb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a06a6885c3d0858f60c8de48dd61054534aad40f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248728"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809049"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Tworzenie aplikacji Windows Forms w programie Visual Studio przy użyciu języka C\#
 
@@ -164,6 +164,6 @@ Aby dowiedzieć się więcej, przejdź do następującego samouczka:
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Więcej samouczków dotyczących języka C#](/visualstudio/get-started/csharp/)
-* [Samouczki Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Więcej samouczków dotyczących języka C#](../get-started/csharp/index.yml)
+* [Samouczki Visual Basic](../get-started/visual-basic/index.yml)
 * [Samouczki języka C++](/cpp/get-started/tutorial-console-cpp)

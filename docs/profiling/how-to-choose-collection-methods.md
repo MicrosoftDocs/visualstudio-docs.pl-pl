@@ -1,5 +1,5 @@
 ---
-title: Jak wybrać metody kolekcji | Microsoft Docs
+title: Wybierz metody kolekcji | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dbc54fc394f75778f74d9b6b02e93882129cdb9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b66df2f302790f579891c337b217e76202e79ac
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329270"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851310"
 ---
 # <a name="how-to-choose-collection-methods"></a>Instrukcje: wybieranie metod zbierania
 
@@ -90,7 +90,7 @@ Aby określić najbardziej odpowiednią metodę kolekcji dla aplikacji, można u
 
 3. Kliknij pozycję **współbieżność**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 
  [Omówienie wartości](../profiling/understanding-sampling-data-values.md) 

@@ -1,5 +1,6 @@
 ---
-title: Migrowanie ze starszej wersji analizy (FxCop) do analizy źródłowej (analizatory FxCop)
+title: Migrowanie z FxCop do analizy źródłowej (analizatory FxCop)
+ms.custom: SEO-VS-2020
 description: Dowiedz się, jak analizować kod po raz pierwszy lub jak migrować z analizy binarnej (FxCop) do nowego sposobu analizowania kodu zarządzanego przy użyciu analizy źródłowej (analizatory FxCop).
 ms.date: 03/06/2020
 ms.topic: conceptual
@@ -12,12 +13,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76f8da407c0917a3f974a55fd02a1227db5b5d63
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2109d7cbcaaf56600812e27c3055fb3198848228
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036577"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810210"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>Migrowanie ze starszej wersji analizy (FxCop) do analizy źródłowej (analizatory FxCop)
 

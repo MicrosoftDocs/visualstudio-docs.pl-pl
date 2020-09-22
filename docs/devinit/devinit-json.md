@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3d7df98dc6ebfb59aa78e6f0c546632bf84596f5
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5ba7299f90ce5f3f253a7210456053faa6bd22c0
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809701"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852203"
 ---
 # <a name="devinit-configuration-file"></a>plik konfiguracji devinit
 
@@ -58,17 +58,17 @@ _.devinit.jsw_ pliku można również jawnie określić za pomocą `--file` / `-
 | Nazwa         | Typ   | Wymagane | Wartość                              |
 |--------------|--------|----------|------------------------------------|
 | **komentarz** | ciąg | Nie       | Komentarze do pliku.             |
-| **wykonane**      | array  | Yes      | [Obiekt RunTool](#run-tool-object) |
+| **wykonane**      | array  | Tak      | [Obiekt RunTool](#run-tool-object) |
 
 #### <a name="run-tool-object"></a>Uruchom obiekt narzędzia
 
 | Nazwa                  | Typ   | Wymagane | Wartość                                                                                                      |
 |-----------------------|--------|----------|------------------------------------------------------------------------------------------------------------|
 | **komentarz**          | ciąg | Nie       | Komentarze dotyczące wpisu narzędzia.                                                                               |
-| **narzędziem**              | ciąg | Yes      | Nazwa narzędzia. Zobacz `devinit list` polecenie, aby uzyskać listę dostępnych narzędzi.                            |
+| **narzędziem**              | ciąg | Tak      | Nazwa narzędzia. Zobacz `devinit list` polecenie, aby uzyskać listę dostępnych narzędzi.                            |
 | **klawiatur**             | ciąg | Nie       | Dane wejściowe narzędzia. Różni się według narzędzia. Na przykład wymagana wersja, identyfikator pakietu, nazwa pliku lub folder.|
 | **additionalOptions** | ciąg | Nie       | Dodatkowe argumenty wiersza polecenia, które mają zostać przekazane do narzędzia.                                                |
 
 ## <a name="examples"></a>Przykłady
 
-Aby uzyskać więcej przykładów użycia devinit, zobacz [sekcję Samples (przykłady](/samples)).
+Aby uzyskać więcej przykładów użycia devinit, zobacz [sekcję Samples (przykłady](sample-readme.md)).

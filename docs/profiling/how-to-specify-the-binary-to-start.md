@@ -1,5 +1,5 @@
 ---
-title: Jak określić plik binarny do uruchomienia | Microsoft Docs
+title: Określ plik binarny do uruchomienia | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f7cfd0d7a578d2ddaff28e9821f1d190bb2e10d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b3aec9448c6493350683dc9f0bec0cc2d60fa82
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331455"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851336"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Instrukcje: Określanie pliku binarnego do uruchomienia
 
@@ -39,6 +39,6 @@ Aby profilować pliki binarne, takie jak biblioteki DLL, należy wprowadzić inf
 
 7. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)

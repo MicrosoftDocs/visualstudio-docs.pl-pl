@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c8c76a789ac4a50e1128dc0897b9a08a185117a
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 2a221eea7314ad79020437208bdba4fcb6b6972e
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641611"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851687"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Instrukcje: ponowne podpisywanie aplikacji i manifestów wdrożenia
 Po wprowadzeniu zmian we właściwościach wdrożenia w manifeście aplikacji dla aplikacji Windows Forms, aplikacji Windows Presentation Foundation (XBAP) lub rozwiązań pakietu Office należy jeszcze raz podpisać aplikacje i manifesty wdrożenia przy użyciu certyfikatu. Ten proces zapewnia, że naruszone pliki nie są zainstalowane na komputerach użytkowników końcowych.
@@ -112,7 +112,7 @@ Po wprowadzeniu zmian we właściwościach wdrożenia w manifeście aplikacji dl
 
 7. Opcjonalnie Skopiuj manifest wdrożenia głównego (*Publish \\ \<appname> . Application*) do katalogu wdrożenia wersji (*pliki publish\Application \\ \<appname> _ \<version> *).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce i podpis Authenticode](../deployment/clickonce-and-authenticode.md)

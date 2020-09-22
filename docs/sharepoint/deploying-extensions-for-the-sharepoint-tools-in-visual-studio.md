@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53e36d993e72da759c87e7d2d2f908818b3d9024
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e7bcb4c03a274c958b097ab7869cb58120b0ee7
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62580647"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740147"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Wdróż rozszerzenia dla narzędzi programu SharePoint w programie Visual Studio
 
@@ -234,11 +234,11 @@ Jeśli chcesz ręcznie utworzyć pakiet VSIX dla rozszerzenia narzędzi programu
 
     - Dodaj `Microsoft.VisualStudio.MefComponent` element poniżej `Assets` elementu, a następnie ustaw wartość nowego elementu na ścieżkę względną zestawu, który implementuje rozszerzenie w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MefComponent element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-    - Jeśli rozszerzenie zawiera polecenie programu SharePoint, które wywołuje do modelu obiektów serwera dla programu SharePoint, Dodaj `Microsoft.VisualStudio.Assembly` element w obszarze `Assets` elementu. Ustaw wartość nowego elementu na ścieżkę względną zestawu, który implementuje polecenie programu SharePoint w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [element zawartości (schemat VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    - Jeśli rozszerzenie zawiera polecenie programu SharePoint, które wywołuje do modelu obiektów serwera dla programu SharePoint, Dodaj `Microsoft.VisualStudio.Assembly` element w obszarze `Assets` elementu. Ustaw wartość nowego elementu na ścieżkę względną zestawu, który implementuje polecenie programu SharePoint w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [element zawartości (schemat VSX)](/previous-versions/dd393737(v=vs.110)).
 
     - Jeśli rozszerzenie zawiera szablon projektu lub szablon elementu, Dodaj `ProjectTemplate` `ItemTemplate` element lub w obszarze `Assets` elementu. Ustaw wartość nowego elementu na ścieżkę względną folderu zawierającego szablon w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [element ProjectTemplate (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) i [element ITEMTEMPLATE (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
-    - Jeśli rozszerzenie zawiera kreatora niestandardowego szablonu lub szablonu elementu, Dodaj `Assembly` element w obszarze `Assets` elementu. Ustaw wartość nowego elementu na ścieżkę względną zestawu w pakiecie VSIX, a następnie ustaw `AssemblyName` atrybut na pełną nazwę zestawu (w tym wersję, kulturę i token klucza publicznego). Aby uzyskać więcej informacji, zobacz [element zależności (schemat VSX)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
+    - Jeśli rozszerzenie zawiera kreatora niestandardowego szablonu lub szablonu elementu, Dodaj `Assembly` element w obszarze `Assets` elementu. Ustaw wartość nowego elementu na ścieżkę względną zestawu w pakiecie VSIX, a następnie ustaw `AssemblyName` atrybut na pełną nazwę zestawu (w tym wersję, kulturę i token klucza publicznego). Aby uzyskać więcej informacji, zobacz [element zależności (schemat VSX)](/previous-versions/dd393682(v=vs.110)).
 
 ### <a name="example"></a>Przykład
 

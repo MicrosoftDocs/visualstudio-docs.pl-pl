@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8afc67b92a943dd571847bb1a00fb7e4db4514b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911404"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851102"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Często zadawane pytania dotyczące debugowania migawek w programie Visual Studio
 
@@ -103,7 +103,7 @@ W przypadku maszyn wirtualnych i zestawów skalowania maszyn wirtualnych Usuń r
 
 2. Usuń certyfikaty i Magazyn kluczy platformy Azure
 
-   Podczas instalowania rozszerzenia debugera zdalnego dla maszyny wirtualnej lub zestawu skalowania maszyn wirtualnych można utworzyć zarówno certyfikaty klienta, jak i serwera, aby uwierzytelniać klienta programu VS przy użyciu zasobów maszyn wirtualnych platformy Azure/zestawów skalowania maszyn wirtualnych.
+   Podczas instalowania rozszerzenia debugera zdalnego dla maszyny wirtualnej lub zestawu skalowania maszyn wirtualnych można utworzyć zarówno certyfikaty klienta, jak i serwera, aby uwierzytelniać klienta programu Visual Studio za pomocą zasobów maszyn wirtualnych platformy Azure/zestawów skalowania maszyn wirtualnych.
 
    - Certyfikat klienta
 
@@ -124,7 +124,7 @@ W przypadku maszyn wirtualnych i zestawów skalowania maszyn wirtualnych Usuń r
       ```
 
    - Certyfikat serwera
-      - Odpowiedni odcisk palca certyfikatu serwera jest wdrażany jako klucz tajny magazynu kluczy platformy Azure. Program VS podejmie próbę znalezienia lub utworzenia magazynu kluczy z prefiksem MSVSAZ * w regionie odpowiadającym zasobie maszyny wirtualnej lub zestawu skalowania maszyn wirtualnych. Wszystkie zasoby maszyn wirtualnych i zestawów skalowania maszyn wirtualnych wdrożone w tym regionie będą współużytkować ten sam magazyn kluczy.
+      - Odpowiedni odcisk palca certyfikatu serwera jest wdrażany jako klucz tajny magazynu kluczy platformy Azure. Program Visual Studio podejmie próbę znalezienia lub utworzenia magazynu kluczy z prefiksem MSVSAZ * w regionie odpowiadającym maszynie wirtualnej lub zasobie zestawu skalowania maszyn wirtualnych. Wszystkie zasoby maszyn wirtualnych i zestawów skalowania maszyn wirtualnych wdrożone w tym regionie będą współużytkować ten sam magazyn kluczy.
       - Aby usunąć wpis tajny odcisku palca certyfikatu serwera, przejdź do Azure Portal i Znajdź Magazyn kluczy MSVSAZ * w tym samym regionie, w którym znajduje się zasób. Usuń klucz tajny, który powinien być oznaczony etykietą `remotedebugcert<<ResourceName>>`
       - Należy również usunąć klucz tajny serwera z zasobu za pośrednictwem programu PowerShell.
 
@@ -196,7 +196,7 @@ Istnieje kilka sposobów wyłączenia Snapshot Debugger:
       Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
    ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Debuguj aplikacje Live ASP.NET przy użyciu Snapshot Debugger](../debugger/debug-live-azure-applications.md)

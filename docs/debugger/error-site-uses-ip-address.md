@@ -1,5 +1,5 @@
 ---
-title: Błąd — witryna używa adresu IP | Microsoft Docs
+title: Witryna używa adresu IP | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58db12ba9dbbc9526ac86262a6be5b2c0a7f765e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b869a536ca3445069d9caf84eb862e407dfbe6dc
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460549"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852540"
 ---
 # <a name="error-site-uses-ip-address"></a>Błąd: witryna korzysta z adresu IP
 Ten błąd występuje, gdy debuger próbuje automatycznie dołączyć do aplikacji sieci Web, która korzysta z adresu IP. Dzieje się tak, jeśli zmienisz **tożsamość witryny sieci Web** tak, aby **używała określonego adresu IP** w usługach IIS.
@@ -36,5 +36,5 @@ Ten błąd występuje, gdy debuger próbuje automatycznie dołączyć do aplikac
 
 2. Zmień ustawienie **identyfikacji witryny sieci Web usług IIS** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -1,5 +1,5 @@
 ---
-title: Błąd — Monitor zdalnego debugowania Microsoft Visual Studio na komputerze zdalnym działa jako inny użytkownik
+title: Monitor zdalnego debugowania programu Microsoft Visual Studio na komputerze zdalnym jest uruchomiony przy użyciu konta innego użytkownika
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a69745a051af0ec44eb813054e40fb9f6c6a0aa6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5acf69b980221c0d953e22e66502672477656dbc
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460406"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851765"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>Błąd: Monitor debugera zdalnego Microsoft Visual (MSVSMON.EXE) na komputerze zdalnym pracuje jako inny użytkownik
 Podczas próby debugowania zdalnego może zostać wyświetlony następujący komunikat o błędzie:
@@ -42,6 +42,6 @@ Podczas próby debugowania zdalnego może zostać wyświetlony następujący kom
 > [!CAUTION]
 > Przyznanie innym użytkownikom uprawnień do nawiązania połączenia pozwala na przypadkowe połączenie się z nieprawidłową sesją zdalnego debugowania. Debugowanie w trybie **bez uwierzytelniania** nigdy nie jest bezpieczne i powinno być używane z zachowaniem ostrożności.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Debugowanie zdalne](../debugger/remote-debugging.md)
