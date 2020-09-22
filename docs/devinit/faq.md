@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: dd2da52a84d972e47b0e63905f0c4b6d4f7af9f3
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d926a51ecfa68f6a5caea0bcf84bcafaffddc0a7
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809321"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852477"
 ---
 # <a name="frequently-asked-questions-for-devinit"></a>Często zadawane pytania dotyczące devinit
 
@@ -64,4 +64,4 @@ Jeśli wszystkie elementy instalowane przez program devinit wymagają ponownego 
 
 devinit wszystko o umożliwieniu korzystania z całego ekosystemu, w którym można wdrażać i konfigurować zależności aplikacji. Mimo że devinit ma opinię na temat tego, co dostarcza, devinit jest przede wszystkim na umożliwienie wykonywania innych narzędzi z deklaracyjnego pliku JSON.
 
-Już dziś devinit jest wprowadzenie i nasza [Lista narzędzi](/devinit-tool-list.md) jest tylko na początku.
+Już dziś devinit jest wprowadzenie i nasza [Lista narzędzi](devinit-tool-list.md) jest tylko na początku.

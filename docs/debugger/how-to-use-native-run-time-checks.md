@@ -1,5 +1,5 @@
 ---
-title: Jak używać natywnych testów w czasie wykonywania | Microsoft Docs
+title: Użyj natywnych testów w czasie wykonywania | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -37,12 +37,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5fccf510719aa5e960c12fdc807d6375ee31d3d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 586f43f14a8638ab9c3c67f8ffef52ef52a70c53
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348850"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852670"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Porady: Korzystanie z macierzystego sprawdzania w trakcie wykonywania
 W projekcie Visual Studio C++ można użyć natywnego [runtime_checks](/cpp/preprocessor/runtime-checks) do przechwytywania typowych błędów czasu wykonywania, takich jak:
@@ -77,7 +77,7 @@ W projekcie Visual Studio C++ można użyć natywnego [runtime_checks](/cpp/prep
 
 - Użyj `runtime_checks` dyrektywy pragma.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)

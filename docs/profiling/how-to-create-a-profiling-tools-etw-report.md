@@ -1,5 +1,5 @@
 ---
-title: Jak utworzyć raport funkcji ETW narzędzia profilowania | Microsoft Docs
+title: Tworzenie raportu ETW narzędzia profilowania | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: bf5547b3-f6c7-4989-9d47-2fe4f1261444
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe610ea87c492e0bf562fe00145c3abaf76b8ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13de203a6a9082b33f5d68f8b4e2fbdc6f0e14b3
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520630"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851193"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Instrukcje: Tworzenie raportu ETW narzędzi profilowania
 Raport śledzenie zdarzeń systemu Windows (ETW) zawiera listę zdarzeń ETW, które są rejestrowane w sesji wydajności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania. Dane ETW są zbierane w postaci binarnej (.* ETL*). Aby uzyskać więcej informacji na temat tego raportu, zobacz [raport śledzenia zdarzeń dla systemu Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).

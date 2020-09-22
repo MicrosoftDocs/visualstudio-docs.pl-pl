@@ -1,5 +1,5 @@
 ---
-title: Jak debugować metodę OnStart | Microsoft Docs
+title: Debuguj metodę OnStart | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7392b4185def34f38f0e183f2626bd648bb4b4ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d695e4d22c728eb256aeb0e1350819ba23b93385
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350020"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852377"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Porady: debugowanie metody OnStart
 Można debugować usługę systemu Windows, uruchamiając usługę i dołączając debuger do procesu usługi. Aby uzyskać więcej informacji, zobacz [How to: Debug Windows Service Applications](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Jednak aby debugować <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> metodę usługi systemu Windows, należy uruchomić debuger z wewnątrz metody.
@@ -52,6 +52,6 @@ Można debugować usługę systemu Windows, uruchamiając usługę i dołączaj�
 
 5. Zostanie uruchomione nowe wystąpienie programu Visual Studio, a wykonywanie zostało zatrzymane w tej `Debugger.Launch()` metodzie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)

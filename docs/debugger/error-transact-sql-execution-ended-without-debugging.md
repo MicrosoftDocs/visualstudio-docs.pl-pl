@@ -1,5 +1,5 @@
 ---
-title: Błąd — wykonywanie kodu Transact-SQL zakończyło się bez debugowania | Microsoft Docs
+title: Wykonanie języka Transact-SQL zakończyło się bez debugowania | Microsoft Docs
 ms.date: 11/08/2018
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3aa2de2f9e1bc0c5f92d13b159bfc268a25b059
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 66a1f60673d1bdfb58b1a101bd1571637c41f556
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599927"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851531"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Błąd: Wykonanie Transact-SQL zakończyło się bez debugowania
 
@@ -46,7 +46,7 @@ Istnieją dwa konta:
 
   - Skontaktuj się z administratorem sieci lub bazy danych.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Konfigurowanie debugowania SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
 - [Instrukcje: Ustawianie uprawnień SQL Server na potrzeby debugowania](/previous-versions/w1bhybwz(v=vs.100))

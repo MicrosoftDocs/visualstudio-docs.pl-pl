@@ -1,5 +1,5 @@
 ---
-title: Błąd — debugowanie nie powiodło się, ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone | Microsoft Docs
+title: Debugowanie nie powiodło się, ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2ac131599d6d94a2a64945e62da93bacd5e12a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 35c602b2754e4361b4e41e2b4d4d5cdcc09381c5
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599627"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852787"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Błąd: debugowanie nie powiodło się ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone
 Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który zażądał debugowania. Taka sytuacja może wystąpić podczas próby przekroczenia kroku do aplikacji sieci Web lub usługi sieci Web XML. Jedną z przyczyn tego błędu jest to, że zintegrowane uwierzytelnianie systemu Windows nie jest włączone. Aby je włączyć, wykonaj kroki opisane w sekcji "aby włączyć zintegrowane uwierzytelnianie systemu Windows".
@@ -113,7 +113,7 @@ Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który za�
 
 10. Zamknij okno **menedżera Internet Information Services (IIS)** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Uwierzytelnianie Microsoft Digest](/windows/win32/secauthn/microsoft-digest-authentication)
 - [Uruchamianie aplikacji sieci Web w systemie Windows Vista przy użyciu usług IIS 7,0 i programu Visual Studio](/previous-versions/aa964620(v=vs.140))

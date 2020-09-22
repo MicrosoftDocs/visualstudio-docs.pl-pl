@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 081e897b0ff76dd97d2c174bf8c6fbfa2334f8ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1102eb61f6cfda42f6e4e879f5c592c0c064ce0
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350124"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852142"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Instrukcje: debugowanie z projektu DLL w programie Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -49,7 +49,7 @@ Natywne i zarządzane projekty DLL mają różne ustawienia, aby określić apli
 
 1. Dodaj wszelkie niezbędne argumenty programu do pola **argumenty polecenia** .
 
-1. Wybierz pozycję **OK**.
+1. Wybierz przycisk **OK**.
 
 ## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>Określanie aplikacji wywołującej w zarządzanym projekcie DLL
 
@@ -81,7 +81,7 @@ Natywne i zarządzane projekty DLL mają różne ustawienia, aby określić apli
 
 Jeśli debugowanie nie trafi w punkty przerwania, upewnij się, że dane wyjściowe biblioteki DLL (domyślnie folder * \<project> \debug.* ) są lokalizacją, którą wywołuje aplikacja wywołująca.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie projektów DLL](../debugger/debugging-dll-projects.md)
 - [Ustawienia projektu dla konfiguracji debugowania w języku C#](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Ustawienia projektu dla konfiguracji debugowania Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)

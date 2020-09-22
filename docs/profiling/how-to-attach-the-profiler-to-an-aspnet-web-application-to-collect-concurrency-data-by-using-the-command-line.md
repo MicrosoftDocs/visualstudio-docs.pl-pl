@@ -1,6 +1,6 @@
 ---
-title: Dołącz profiler do aplikacji ASP.NET, aby zbierać dane współbieżności
-ms.custom: seodec18
+title: Dołącz profiler do ASP.NET w celu zbierania danych współbieżności
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0e215fdd-55f8-43ef-9534-06542eefe223
@@ -10,14 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: d7e9f2e7fe68dc7bc9d7ceec9e677ab98d4ee1d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939cf4eb16ff685b8ba8dc19064f497f3f7c6464
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329358"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807992"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: dołączanie profilera do aplikacji sieci Web ASP.NET w celu zbierania danych współbieżności przy użyciu wiersza polecenia
+
 W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania do dołączania profilera do aplikacji ASP.NET i zbierania danych współbieżności procesu i wątku.
 
 Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowych są dostępne zarówno 64-bitowe, jak i 32-bitowe wersje narzędzi. Aby użyć narzędzi wiersza polecenia profilera, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do samego polecenia.

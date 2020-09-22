@@ -1,5 +1,5 @@
 ---
-title: Błąd — proces roboczy witryny sieci Web został zakończony przez usługi IIS | Microsoft Docs
+title: Proces roboczy witryny sieci Web został zakończony przez usługi IIS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d61f124d906137557b17b81122eba34e471a1a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5991bf0b14cf4952303dba599ad47e4c8fd27a9
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460003"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852416"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Błąd: proces roboczy witryny sieci Web został zakończony przez usługę IIS
 Debuger zatrzymał wykonywanie kodu w witrynie sieci Web. Spowodowało to założenie, że proces roboczy przestanie odpowiadać na Internet Information Services (IIS). W związku z tym usługi IIS zakończyły proces roboczy.
@@ -56,5 +56,5 @@ Debuger zatrzymał wykonywanie kodu w witrynie sieci Web. Spowodowało to zało�
 
 8. Zamknij Menedżera usług IIS i okno **Narzędzia administracyjne** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)

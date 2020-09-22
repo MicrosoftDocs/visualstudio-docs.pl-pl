@@ -1,5 +1,5 @@
 ---
-title: Jak porównać pliki danych wydajności | Microsoft Docs
+title: Porównywanie plików danych wydajności | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fdb8057823732503a215fb4f2c12ebee33b34c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f42ceaa251b59eae426bfbe52c29b21ae5075077
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330810"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851245"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Instrukcje: porównywanie plików danych dotyczących wydajności
 Można porównać wyniki dwóch różnych plików danych profilera (.* VSP* lub. *vsps*) przez utworzenie porównania ("diff") raportu lub widoku. Porównanie pokazuje różnice, regresje wydajności i ulepszenia, które wystąpiły w jednej sesji profilowania.
@@ -48,7 +48,7 @@ Można porównać wyniki dwóch różnych plików danych profilera (.* VSP* lub.
 
 4. obowiązkowe Wpisz wartość **progu**.
 
-5. Kliknij przycisk **Zastosuj**.
+5. Kliknij pozycję **Zastosuj**.
 
 ### <a name="to-compare-report-files"></a>Aby porównać pliki raportów
 

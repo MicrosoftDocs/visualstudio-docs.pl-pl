@@ -1,5 +1,5 @@
 ---
-title: Jak używać narzędzia wyszukiwania | Microsoft Docs
+title: Korzystanie z narzędzia wyszukiwania | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7833502c1f36adb654ecc4cc4d3b4dfb742a85b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e92223359c6bc78b2a98c234c03ee139c052f86
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348733"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851843"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Porady: korzystanie z narzędzia wyszukiwania
 Możesz użyć narzędzia wyszukiwania w oknie dialogowym **Znajdowanie okna** do wyświetlania właściwości okna lub komunikatów. Narzędzie wyszukiwania może również lokalizować wyłączone okna podrzędne i rozpoznać, które okno ma zostać wyróżnione, jeśli wyłączone okna podrzędne nakładają się na siebie.
@@ -49,7 +49,7 @@ Możesz użyć narzędzia wyszukiwania w oknie dialogowym **Znajdowanie okna** d
 
     W przypadku wybrania **Właściwości**zostanie otwarte okno [dialogowe Właściwości okna](../debugger/window-properties-dialog-box.md) . W przypadku wybrania **wiadomości**zostanie otwarte okno [Widok komunikatów](../debugger/messages-view.md) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Spy++ — Widoki](../debugger/spy-increment-views.md)
 - [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)
 - [Spy++ — Odwołanie](../debugger/spy-increment-reference.md)

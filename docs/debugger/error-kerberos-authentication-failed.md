@@ -1,5 +1,5 @@
 ---
-title: Błąd — uwierzytelnianie Kerberos nie powiodło się | Microsoft Docs
+title: Uwierzytelnianie Kerberos nie powiodło się | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afa4aca82a83f5b7ba64ad0e9958710582a6a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae81d7503ef325da24db7d553a98837f97a96168
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460680"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852696"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Błąd: Uwierzytelnianie Kerberos nie powiodło się
 Podczas próby wykonania zdalnego debugowania może zostać wyświetlony następujący komunikat o błędzie:
@@ -58,6 +58,6 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 5. Porównaj wartości adresów IP.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

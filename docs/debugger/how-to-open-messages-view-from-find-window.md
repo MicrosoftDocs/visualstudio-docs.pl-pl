@@ -1,5 +1,5 @@
 ---
-title: Jak otworzyć widok komunikatów z okna Znajdź | Microsoft Docs
+title: Otwórz widok komunikatów z okna wyszukiwania | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3258e45e47c263912957ff5066ea9d02ad03e57e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b6240807eb82313182278251b353894545b957d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349487"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852273"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Porady: otwieranie widoku komunikatów w Znajdź okno
 Może się okazać, że można użyć okna dialogowego **Znajdowanie okna** , aby wybrać okno docelowe, a następnie otworzyć widok komunikatów tego okna.

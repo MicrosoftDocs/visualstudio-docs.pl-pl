@@ -1,5 +1,5 @@
 ---
-title: Błąd — sprawdzenie zabezpieczeń nie powiodło się, ponieważ usługa administratora usług IIS nie odpowiada | Microsoft Docs
+title: Sprawdzenie zabezpieczeń nie powiodło się, ponieważ usługa administratora usług IIS nie odpowiadała | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9620edf10d2d3cab8da8231e561fc77d7e6af5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 015a159f8d4910a2cc9bfbd97a50ebe01253d011
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460881"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852813"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Błąd: Sprawdzanie zabezpieczeń nie powiodło się ponieważ usługa administratora nie odpowiada
 Ten błąd występuje, gdy usługa administratora usług IIS nie odpowiada. Zazwyczaj oznacza to, że występuje problem z instalacją usług IIS. Najpierw sprawdź, czy usługa jest uruchomiona przy użyciu narzędzia **usług** z **narzędzi administracyjnych**.
@@ -44,5 +44,5 @@ Ten błąd występuje, gdy usługa administratora usług IIS nie odpowiada. Zazw
 
      Dodatkowe informacje znajdują się w dokumentacji usług IIS.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

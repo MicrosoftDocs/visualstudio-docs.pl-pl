@@ -1,5 +1,5 @@
 ---
-title: Jak utworzyć zlokalizowany pakiet programu inicjującego | Microsoft Docs
+title: Tworzenie zlokalizowanego pakietu programu inicjującego | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26858dce9c6484c1b7acb94ad2a7f38fd20447a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c673c6488b93802877ef088d9d9a1a4793cf50b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382565"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852488"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Instrukcje: tworzenie zlokalizowanego pakietu programu inicjującego
 Po utworzeniu pakietu programu inicjującego można utworzyć zlokalizowane wersje pakietu programu inicjującego, tworząc dwa więcej plików dla każdej z ustawień regionalnych: plik warunków licencji oprogramowania (na przykład *EULA. rtf*) i manifest pakietu (*package.xml*).
@@ -51,8 +51,8 @@ Po utworzeniu pakietu programu inicjującego można utworzyć zlokalizowane wers
     |Chiński (tradycyjny)|zh-Hant|
     |Czeski|Rejestr|
     |Niemiecki|de|
-    |Angielski|pl|
-    |Hiszpański|Tak|
+    |Angielski|en|
+    |Hiszpański|es|
     |Francuski|fr|
     |Włoski|it|
     |Koreański|Ko|
@@ -90,7 +90,7 @@ Po utworzeniu pakietu programu inicjującego można utworzyć zlokalizowane wers
 
 6. Zapisz plik *package.xml* .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tworzenie niestandardowych pakietów programu inicjującego](../deployment/creating-bootstrapper-packages.md)
 - [Wstępnie wymagane składniki wdrażania aplikacji](../deployment/application-deployment-prerequisites.md)
 - [Instrukcje: tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md)

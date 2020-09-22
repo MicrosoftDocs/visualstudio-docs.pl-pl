@@ -1,5 +1,5 @@
 ---
-title: Jak skonfigurować zachowanie monitowania zaufania ClickOnce | Microsoft Docs
+title: Skonfiguruj zachowanie monitu zaufania ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7417f9cdce21dc09aeaf306b55834ad7d3a125a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f4becc0244f42507b581029b2dfe21c71570db6
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382552"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852234"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Instrukcje: Konfigurowanie zachowania monitowania zaufania ClickOnce
 Można skonfigurować monit zaufania ClickOnce, aby określić, czy użytkownicy końcowi mogą instalować aplikacje ClickOnce, takie jak aplikacje Windows Forms, aplikacje Windows Presentation Foundation, aplikacje konsolowe, aplikacje przeglądarki WPF i rozwiązania pakietu Office. Aby skonfigurować monit zaufania, należy ustawić klucze rejestru na komputerze użytkownika końcowego.
@@ -222,7 +222,7 @@ Można skonfigurować monit zaufania ClickOnce, aby określić, czy użytkownicy
 
 3. Skompiluj i uruchom aplikację.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce i podpis Authenticode](../deployment/clickonce-and-authenticode.md)

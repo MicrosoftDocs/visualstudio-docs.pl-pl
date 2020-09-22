@@ -1,5 +1,5 @@
 ---
-title: Błąd — serwer sieci Web nie może znaleźć żądanego zasobu | Microsoft Docs
+title: Serwer sieci Web nie może znaleźć żądanego zasobu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cce9afe8f27b25a01c0f6276164522a78a2ed9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3eaa6b3e0cc609c382e8f94383a6bdb6041a2288
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460354"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850959"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Błąd: serwer sieci Web nie mógł znaleźć żądanego zasobu
 Ze względu na zabezpieczenia usługi IIS zwróciły błąd ogólny.
@@ -32,5 +32,5 @@ Istnieje wiele dodatkowych możliwych przyczyn tego błędu. Niektóre z najczę
 
  Aby uzyskać więcej informacji na temat rozwiązywania problemów z usługami IIS, zobacz [Zarządzanie usługami IIS i administrowanie](/iis/manage/provisioning-and-managing-iis/iis-management-and-administration)nimi.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Błąd: serwer sieci Web został zablokowany i blokuje czasownik debugowania](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

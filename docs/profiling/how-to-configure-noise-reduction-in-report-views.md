@@ -1,5 +1,5 @@
 ---
-title: Jak skonfigurować redukcję szumu w widokach raportu | Microsoft Docs
+title: Konfigurowanie redukcji szumu w widokach raportu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2920d2d7f6a77fe8fdbd62a0788f570818390eea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71065ac66fff972e5b6e9cf2c397a75b97e4d02f
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330808"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851232"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Instrukcje: Konfigurowanie redukcji szumu w widokach raportu
 Raporty wydajności można skonfigurować pod kątem obniżenia poziomu hałasu przez ograniczenie ilości danych prezentowanych w widoku drzewa wywołań i widoku alokacji. Dzięki zmniejszeniu szumu problemy z wydajnością są bardziej widoczne. Jest to przydatne podczas analizowania raportów wydajności.
@@ -77,7 +77,7 @@ Raporty wydajności można skonfigurować pod kątem obniżenia poziomu hałasu 
 
 4. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dostosowywanie widoków raportów narzędzi wydajności](../profiling/customizing-performance-tools-report-views.md)
 - [Instrukcje: wykluczanie lub uwzględnianie krótkich funkcji z Instrumentacji](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
 - [Widok drzewa wywołań](../profiling/call-tree-view.md)

@@ -1,5 +1,5 @@
 ---
-title: Jak debugować wyjątki ASP.NET | Microsoft Docs
+title: Debuguj wyjątki ASP.NET | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a6808bff0a38b6ebaa3049f1655e781439f3f735
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 011094eed88245e3cd83b092a3f1b2e47bc77ae8
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350137"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852155"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Porady: debugowanie wyjątków ASP.NET
 Debugowanie wyjątków jest ważną częścią opracowywania niezawodnej [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji. Ogólne informacje o sposobie debugowania wyjątków polegają na [zarządzaniu wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md).
@@ -47,5 +47,5 @@ Debugowanie wyjątków jest ważną częścią opracowywania niezawodnej [!INCLU
 
 - Umieść `try ... catch` bloki wokół kodu, który może generować wyjątki, które można przewidywanie i wiedzieć, jak obsłużyć. Na przykład jeśli aplikacja przeprowadza wywołania do usługi sieci Web XML lub bezpośrednio do SQL Server, ten kod powinien znajdować się w **try... bloki catch** , ponieważ mogą wystąpić liczne wyjątki.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debuguj aplikacje ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

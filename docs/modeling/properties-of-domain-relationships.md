@@ -9,17 +9,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de06e33b26f7af66dc0670193561758c5fa5896
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e432e9738009c84b6930b0363ae4048c925d0a6
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544160"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810005"
 ---
 # <a name="properties-of-domain-relationships"></a>Właściwości relacji domeny
 Właściwości w poniższej tabeli są skojarzone z relacją domeny. Aby uzyskać informacje na temat relacji domeny, zobacz [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md). Aby uzyskać więcej informacji o sposobach korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Właściwość|Opis|Domyślne|
+|Właściwość|Opis|Domyślny|
 |-|-|-|
 |Modyfikator dostępu|Poziom dostępu do relacji domeny ( `public` lub `internal` ).|`public`|
 |Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu źródłowego, która jest generowana z relacji domeny.|\<none>|
@@ -38,4 +38,4 @@ Właściwości w poniższej tabeli są skojarzone z relacją domeny. Aby uzyska�
 
 ## <a name="see-also"></a>Zobacz też
 
-- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](/previous-versions/bb126564(v=vs.100))

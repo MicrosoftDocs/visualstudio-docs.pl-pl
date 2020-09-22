@@ -1,5 +1,5 @@
 ---
-title: Jak debugować źródło .NET Framework | Microsoft Docs
+title: Debuguj .NET Framework Źródło | Microsoft Docs
 ms.date: 11/19/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f043aae44231608fb514e87a05717f4aeb924bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f054564ff36c538b18525ec9d8adf9b6f3d060b9
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350098"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852129"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Instrukcje: debugowanie źródła .NET Framework
 
@@ -31,9 +31,9 @@ Aby debugować źródło .NET Framework, musisz:
 
 1. W obszarze **Narzędzia** (lub **Debuguj**) > **Opcje**  >  **debugowania**  >  **Ogólne**wybierz pozycję **Włącz .NET Framework Źródło**.
 
-   - Jeśli Tylko mój kod włączone, okno dialogowe ostrzeżenia informuje, że Tylko mój kod jest teraz wyłączone. Wybierz pozycję **OK**.
+   - Jeśli Tylko mój kod włączone, okno dialogowe ostrzeżenia informuje, że Tylko mój kod jest teraz wyłączone. Wybierz przycisk **OK**.
 
-   - Jeśli nie masz ustawionej lokalnej pamięci podręcznej symboli, okno dialogowe ostrzeżenia informuje, że ustawiono domyślną pamięć podręczną symboli. Wybierz pozycję **OK**.
+   - Jeśli nie masz ustawionej lokalnej pamięci podręcznej symboli, okno dialogowe ostrzeżenia informuje, że ustawiono domyślną pamięć podręczną symboli. Wybierz przycisk **OK**.
 
 1. Wybierz **przycisk OK** , aby zamknąć okno dialogowe **Opcje** .
 
@@ -63,6 +63,6 @@ Aby debugować źródło .NET Framework, musisz:
 
    - Wybierz pozycję **Ustawienia symboli** , aby otworzyć stronę **symbole** . Na stronie **symbole** w obszarze **lokalizacje pliku symboli (. pdb)** wybierz pozycję **serwery symboli firmy Microsoft** , aby uzyskać dostęp do symboli z publicznych serwerów symboli firmy Microsoft. Wybierz przyciski paska narzędzi, aby dodać inne lokalizacje symboli i zmienić kolejność ładowania. Wybierz **przycisk OK** , aby zamknąć okno dialogowe.
 
-### <a name="see-also"></a>Zobacz też
+### <a name="see-also"></a>Zobacz także
 - [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
 - [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53a40c4dc615b5e1b6a3caef3a99be5ab0b56327
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb563b260175d3385288c4cb6f046af8526069cf
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350111"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852116"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Instrukcje: debugowanie w trybie mieszanym (C#, C++, Visual Basic)
 
@@ -47,7 +47,7 @@ Jeśli nie masz dostępu do projektu aplikacji wywołującej, możesz debugować
 
 1. Ustaw **Typ debugera** na **mieszany** lub **Auto**Auto.
 
-1. Wybierz pozycję **OK**.
+1. Wybierz przycisk **OK**.
 
    ![Włącz debugowanie w trybie mieszanym](../debugger/media/dbg-mixed-mode-from-native.png "Włącz debugowanie w trybie mieszanym")
 
@@ -64,6 +64,6 @@ Jeśli nie masz dostępu do projektu aplikacji wywołującej, możesz debugować
 > [!NOTE]
 > W większości wersji programu Visual Studio, począwszy od programu Visual Studio 2017, należy użyć *launchSettings.jsw* pliku zamiast właściwości projektu, aby włączyć debugowanie w trybie mieszanym dla kodu natywnego w aplikacji .NET Core. Aby uzyskać szczegółowe informacje, zobacz [Debugowanie kodu zarządzanego i natywnego](../debugger/how-to-debug-managed-and-native-code.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: debugowanie z projektu DLL](../debugger/how-to-debug-from-a-dll-project.md)

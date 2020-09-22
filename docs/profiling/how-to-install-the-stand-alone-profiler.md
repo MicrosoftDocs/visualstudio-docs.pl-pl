@@ -1,5 +1,5 @@
 ---
-title: Jak zainstalować autonomiczny program profilujący | Microsoft Docs
+title: Instalowanie autonomicznego profilera | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 950927510d4c7acd77db22e80dff59946c0d6c20
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4005a7af5af1582f31b6c706be150a504355f3d2
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330144"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851154"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Instrukcje: Instalowanie autonomicznego profilera
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] udostępnia oparty na wiersz polecenia Profiler autonomiczny, który można uruchomić bez instalowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] środowiska IDE. Taka sytuacja występuje, gdy komputer nie ma zainstalowanego środowiska deweloperskiego. Na przykład nie należy instalować środowiska deweloperskiego na produkcyjnym serwerze sieci Web.
@@ -52,7 +52,7 @@ ms.locfileid: "85330144"
 
 6. Użyj narzędzia [VSPerfReport](../profiling/vsperfreport.md) , aby serializować symbole do pliku danych profilowania (. vsp). Użyj **VSPerfReport/Summary: wszystkie przełączniki/PACKSYMBOLS** . Jeśli nie masz symboli wstawionych do pliku danych, upewnij się, że masz ustawioną zmienną środowiskową _NT_SYMBOL_PATH.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Profil z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)
 - [Przewodnik: profilowanie wiersza polecenia przy użyciu metody instrumentacji](command-line-profiling-of-stand-alone-applications.md)
 - [Instrukcje: odwołania do informacji o symbolach w systemie Windows](../profiling/how-to-reference-windows-symbol-information.md)

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 018b9a6707ea46a9b1c46f820faf7bd47dac1ff9
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315307"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809901"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Samouczek: Rozpoczynanie pracy z platformą sieci Web w programie Visual Studio
 
@@ -106,7 +106,7 @@ Ponieważ wybrano opcję **Utwórz nowe repozytorium git** w oknie dialogowym **
 
 Odpowiedź: pierwszy z, przy użyciu kontroli źródła od początku, szczególnie jeśli korzystasz również z repozytorium zdalnego, zapewnia regularne kopie zapasowe projektu. W przeciwieństwie do konserwowania projektu tylko w lokalnym systemie plików kontrola źródła zapewnia również kompletną historię zmian oraz łatwą możliwość przywrócenia pojedynczego pliku lub całego projektu do poprzedniego stanu. Historia zmian pomaga określić przyczynę regresji (niepowodzenia testów). Ponadto kontrola źródła jest niezwykle ważna, jeśli wiele osób pracuje nad projektem, ponieważ zarządza zastępowaniem i zapewnia Rozwiązywanie konfliktów. Na koniec kontrola źródła, która jest zasadniczo formą automatyzacji, pozwala dobrze zautomatyzować kompilacje, testowanie i zarządzanie wydaniami. Jest to naprawdę pierwszy krok przy użyciu DevOps dla projektu i ponieważ przeszkody do wprowadzenia są tak niskie, dlatego nie ma powodów, aby nie używać kontroli źródła od początku.
 
-Aby uzyskać dodatkową dyskusję na temat kontroli źródła jako Automatyzacja, zobacz [Źródło prawdy: rola repozytoriów w DevOps](https://msdn.microsoft.com/magazine/mt763232), artykuł w witrynie MSDN Magazine przeznaczony dla aplikacji mobilnych, które dotyczą również usługi Web Apps.
+Aby uzyskać dodatkową dyskusję na temat kontroli źródła jako Automatyzacja, zobacz [Źródło prawdy: rola repozytoriów w DevOps](/archive/msdn-magazine/2016/september/mobile-devops-the-source-of-truth-the-role-of-repositories-in-devops), artykuł w witrynie MSDN Magazine przeznaczony dla aplikacji mobilnych, które dotyczą również usługi Web Apps.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Pytanie: czy program Visual Studio może uniemożliwić autozatwierdzanie nowego projektu?
 

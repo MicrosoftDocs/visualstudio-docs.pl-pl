@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 72739cd1063298a2dafc71976fd45360bc2d6ec2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2037842e57b6152990144d9ea652936e65517e13
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189201"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739957"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profilowanie wydajności aplikacji programu SharePoint
 
@@ -55,7 +55,7 @@ Testy wydajności sieci Web symulują sposób, w jaki użytkownik końcowy może
 
 ## <a name="test-user-interfaces"></a>Testowanie interfejsów użytkownika
 
-Kodowane testy interfejsu użytkownika automatycznie przełączają aplikację programu SharePoint przy użyciu interfejsu użytkownika. Te testy obejmują kontrolki interfejsu użytkownika, takie jak przyciski i menu, aby sprawdzić, czy działają poprawnie. Ten rodzaj testów jest szczególnie przydatny, jeśli Walidacja lub inna logika jest wykonywana w interfejsie użytkownika, na przykład na stronie sieci Web. Możesz również użyć kodowanych testów interfejsu użytkownika, aby zautomatyzować testy ręczne. Można tworzyć kodowane testy interfejsu użytkownika dla aplikacji programu SharePoint w taki sam sposób, jak w przypadku tworzenia testów dla innych typów aplikacji. Aby uzyskać więcej informacji, zobacz [testowanie aplikacji programu SharePoint 2010 przy użyciu kodowanych testów interfejsu użytkownika](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015).
+Kodowane testy interfejsu użytkownika automatycznie przełączają aplikację programu SharePoint przy użyciu interfejsu użytkownika. Te testy obejmują kontrolki interfejsu użytkownika, takie jak przyciski i menu, aby sprawdzić, czy działają poprawnie. Ten rodzaj testów jest szczególnie przydatny, jeśli Walidacja lub inna logika jest wykonywana w interfejsie użytkownika, na przykład na stronie sieci Web. Możesz również użyć kodowanych testów interfejsu użytkownika, aby zautomatyzować testy ręczne. Można tworzyć kodowane testy interfejsu użytkownika dla aplikacji programu SharePoint w taki sam sposób, jak w przypadku tworzenia testów dla innych typów aplikacji. Aby uzyskać więcej informacji, zobacz [testowanie aplikacji programu SharePoint 2010 przy użyciu kodowanych testów interfejsu użytkownika](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015).
 
 ## <a name="related-topics"></a>Powiązane tematy
 
@@ -64,7 +64,7 @@ Kodowane testy interfejsu użytkownika automatycznie przełączają aplikację p
 |[Przewodnik: Profilowanie aplikacji SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Pokazuje, jak przeprowadzić analizę profilu próbkowania w aplikacji SharePoint.|
 |[Przetestuj wydajność aplikacji przed wydaniem](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|Opisuje sposób tworzenia testów obciążenia, które ułatwiają przetestowanie aplikacji programu SharePoint.|
 |[Testowanie jednostek kodu](../test/unit-test-your-code.md)|Opisuje, jak znaleźć błędy logiki w kodzie przy użyciu testów jednostkowych.|
-|[Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)|Opisuje sposób testowania interfejsu użytkownika aplikacji programu SharePoint.|
+|[Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015)|Opisuje sposób testowania interfejsu użytkownika aplikacji programu SharePoint.|
 
 ## <a name="see-also"></a>Zobacz też
 

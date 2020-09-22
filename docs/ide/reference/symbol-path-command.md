@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed8ec8e7f990a4a2c5d943a15a105faa5ab23572
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83acc551c778fdb245b3bacec164a7544253d55f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589386"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808694"
 ---
 # <a name="symbol-path-command"></a>Ścieżka symboli — Polecenie
 Ustawia listę katalogów dla debugera do wyszukiwania symboli.
@@ -38,14 +38,14 @@ Opcjonalny. Rozdzielana średnikami lista ścieżek dla debugera do wyszukiwania
 ## <a name="remarks"></a>Uwagi
 Jeśli wartość nie `pathname` jest określona, polecenie wyświetla listę bieżących ścieżek symboli.
 
-## <a name="example"></a>Przykład
+## <a name="example-1"></a>Przykład 1
 Ten przykład dodaje dwie ścieżki do listy katalogów symboli.
 
 ```
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-2"></a>Przykład 2
 Ten przykład wyświetla listę rozdzielonych średnikami dla bieżących ścieżek symboli.
 
 ```

@@ -1,5 +1,5 @@
 ---
-title: Błąd — nie można nawiązać połączenia z &lt; nazwą komputera &gt; . Nie można odnaleźć maszyny w sieci. | Microsoft Docs
+title: Nie można nawiązać połączenia z &lt; nazwą komputera &gt; . Nie można odnaleźć maszyny w sieci. | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8618a15ab4dcd6c9bbc0d9d8ab9bf347552883b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1ab43773b4aa9d2535eb6ac157ec39333907731
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460146"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852514"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Błąd: nie można nawiązać połączenia z &lt; nazwą komputera &gt; . Nie można odnaleźć maszyny w sieci.
 Takie zachowanie występuje, gdy spełniony jest jeden z następujących warunków:
@@ -44,6 +44,6 @@ Takie zachowanie występuje, gdy spełniony jest jeden z następujących warunk�
 
 - Upewnij się, że hasło używane do nawiązania połączenia z komputerem zdalnym jest prawidłowe i nie wygasło.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie zdalne](../debugger/remote-debugging.md)
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

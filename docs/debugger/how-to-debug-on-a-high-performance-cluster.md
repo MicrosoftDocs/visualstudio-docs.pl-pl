@@ -1,5 +1,5 @@
 ---
-title: Jak debugować klaster o wysokiej wydajności | Microsoft Docs
+title: Debugowanie w klastrze o wysokiej wydajności | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 905a196b0872ac0d8665293200837861adf49795
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f33fe5fd556830d0276f3e7cbfef3731dfe7db
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350072"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852455"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Instrukcje: debugowanie w klastrze o wysokiej wydajności (C#, Visual Basic, C++)
 
@@ -96,7 +96,7 @@ Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajn
 
 `(MachineName = marvin) & (ThreadName = fourier1)`
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debuguj wielowątkowe aplikacje](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Debugowanie zdalne](../debugger/remote-debugging.md)
 - [Instrukcje: korzystanie z okna procesy](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))

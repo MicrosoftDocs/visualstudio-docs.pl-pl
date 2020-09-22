@@ -1,5 +1,5 @@
 ---
-title: Jak odświeżyć widok | Microsoft Docs
+title: Odśwież widok | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c42da3994d75329ced1eaa5b89c7aa6de360c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d964f0a33b1944255fee2f9fdb7658b04aaedebb
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349396"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852038"
 ---
 # <a name="how-to-refresh-the-view"></a>Porady: Odświeżanie widoku
 Spy + + przyjmuje "migawkę" tabel systemowych i odświeża widok na podstawie tych informacji. Ważne jest, aby okresowo odświeżyć widoki systemowe. Jeśli masz otwarty widok Spy + + i nie odświeżysz widoku, nie będą widoczne te procesy, wątki i okna, które zostały następnie utworzone. Ponadto mogą pojawić się elementy, które już nie istnieją. Polecenie **Refresh** jest dostępne dla wszystkich widoków poza widokiem komunikatów.
@@ -24,7 +24,7 @@ Spy + + przyjmuje "migawkę" tabel systemowych i odświeża widok na podstawie t
 
 - Wybierz **Odśwież** z menu **okno** lub kliknij przycisk **Odśwież** na pasku narzędzi.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)
 - [Widoki SSpy + +](../debugger/spy-increment-views.md)
 - [Spy++ — Odwołanie](../debugger/spy-increment-reference.md)

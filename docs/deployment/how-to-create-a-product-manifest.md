@@ -1,5 +1,5 @@
 ---
-title: Jak utworzyć manifest produktu | Microsoft Docs
+title: Tworzenie manifestu produktu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f4302756b089376eca8926453399768faaf58f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97ec49438ce2382336b1b8a6f8355bd092486c2d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382513"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852221"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Instrukcje: tworzenie manifestu produktu
 Aby wdrożyć wymagania wstępne dla aplikacji, można utworzyć pakiet programu inicjującego. Pakiet programu inicjującego zawiera jeden plik manifestu produktu, ale manifest pakietu dla każdego ustawienia regionalnego. Manifest pakietu zawiera aspekty dotyczące lokalizacji pakietu. Dotyczy to również ciągów, umów licencyjnych użytkowników końcowych i pakietów językowych.
@@ -158,5 +158,5 @@ Aby wdrożyć wymagania wstępne dla aplikacji, można utworzyć pakiet programu
 </Product>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)

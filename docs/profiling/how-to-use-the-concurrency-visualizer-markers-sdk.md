@@ -1,5 +1,5 @@
 ---
-title: Jak używać zestawu znaczniki wizualizatora współbieżności | Microsoft Docs
+title: Korzystanie z zestawu znaczniki wizualizatora współbieżności | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0782744236777fb84a6d87f93f59697275df1c11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9cf33ad094716ee0f8f4c8cc4bb06220db1237e5
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331383"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851583"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Instrukcje: korzystanie z zestawu SDK znaczników Concurrency Visualizer
 W tym temacie pokazano, jak używać zestawu SDK wizualizatora współbieżności do tworzenia zakresów i flag zapisu, komunikatów i alertów.
@@ -166,5 +166,5 @@ W tym temacie pokazano, jak używać zestawu SDK wizualizatora współbieżnośc
 
      ![Wizualizator współbieżności z 3 seriami niestandardowych znaczników](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Concurrency Visualizer SDK](../profiling/concurrency-visualizer-sdk.md)
