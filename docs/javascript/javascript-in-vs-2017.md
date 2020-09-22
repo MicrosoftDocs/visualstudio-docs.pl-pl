@@ -12,12 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdb59c51fe38e3d2e3f2f1fd0b00db285b0de7f1
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649630"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739892"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Język JavaScript w programie Visual Studio 2017
 
@@ -116,7 +116,7 @@ exports.default = Subscription_1.Subscription;
 
 ## <a name="better-intellisense"></a>Lepsza technologia IntelliSense
 
-Funkcja IntelliSense języka JavaScript w [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] systemie będzie teraz wyświetlała więcej informacji na temat parametrów i list elementów członkowskich. Nowe informacje są dostarczane przez usługę języka TypeScript, która używa analizy statycznej w tle, aby lepiej zrozumieć swój kod. Więcej informacji na temat nowego środowiska IntelliSense i sposobu jego działania można znaleźć w [tym miejscu](/visualstudio/ide/javascript-intellisense/).
+Funkcja IntelliSense języka JavaScript w [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] systemie będzie teraz wyświetlała więcej informacji na temat parametrów i list elementów członkowskich. Nowe informacje są dostarczane przez usługę języka TypeScript, która używa analizy statycznej w tle, aby lepiej zrozumieć swój kod. Więcej informacji na temat nowego środowiska IntelliSense i sposobu jego działania można znaleźć w [tym miejscu](../ide/javascript-intellisense.md).
 
 ## <a name="jsx-syntax-support"></a><a name="JSX"></a> Obsługa składni JSX
 
@@ -241,7 +241,7 @@ Najbardziej istotnymi zmianami są zastąpienie VSDoc z JSDoc, usuwanie `.intell
 
 Wcześniej było to dość skomplikowane, aby zrozumieć w dowolnym momencie, które pliki znajdowały się w zakresie funkcji IntelliSense. Czasami było wskazane, aby wszystkie pliki były w określonym zakresie, a inne nie były, a to doprowadziło do złożonych konfiguracji obejmujących ręczne Zarządzanie odwołaniami. W przód nie trzeba już myśleć o zarządzaniu odwołaniami, więc nie potrzebujesz potrójnych odwołań do komentarzy ani `_references.js` plików.
 
-Więcej informacji na temat działania technologii IntelliSense można znaleźć na stronie [JavaScript IntelliSense](/visualstudio/ide/javascript-intellisense/) .
+Więcej informacji na temat działania technologii IntelliSense można znaleźć na stronie [JavaScript IntelliSense](../ide/javascript-intellisense.md) .
 
 ### <a name="vsdoc"></a>VSDoc
 
@@ -250,7 +250,7 @@ VSDoc nie jest już obsługiwana na korzyść [JSDoc](https://jsdoc.app/about-ge
 
 ### <a name="intellisensejs-extensions"></a>`.intellisense.js` rozszerzenia
 
-Wcześniej można było tworzyć [rozszerzenia IntelliSense](https://msdn.microsoft.com/library/hh874692.aspx) , które umożliwiają dodawanie niestandardowych wyników uzupełniania dla bibliotek innych firm.
+Wcześniej można było tworzyć [rozszerzenia IntelliSense](../vs-2015/ide/extending-javascript-intellisense.md) , które umożliwiają dodawanie niestandardowych wyników uzupełniania dla bibliotek innych firm.
 Te rozszerzenia były dość trudne do pisania i instalowania i odwoływania się do nich są trudne, więc przekazanie nowej usługi językowej nie będzie obsługiwać tych plików.
 Dzięki łatwiejszej alternatywie można napisać plik definicji TypeScript, aby zapewnić te same korzyści funkcji IntelliSense co stare `.intellisense.js` rozszerzenia.
 Więcej informacji na temat tworzenia pliku deklaracji () można znaleźć `.d.ts` [tutaj](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html).

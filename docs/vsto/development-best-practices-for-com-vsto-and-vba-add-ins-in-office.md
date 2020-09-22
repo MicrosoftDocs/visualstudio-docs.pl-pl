@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d5dd8864484e2b41a1146f1da495251663afdb6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be48e7ce721c84656362a019e0cc5eec1ae2ee17
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801506"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808210"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Najlepsze rozwiązania w zakresie programowania dla dodatków COM, VSTO i VBA w pakiecie Office
   Jeśli tworzysz Dodatki COM, VSTO lub VBA dla pakietu Office, postępuj zgodnie z najlepszymi rozwiązaniami programistycznymi opisanymi w tym artykule.   Dzięki temu:
@@ -31,7 +31,7 @@ ms.locfileid: "88801506"
  Nie zalecamy, aby dodatek wykrył, czy pakiet Office został zainstalowany podczas procesu instalacji dodatku. Jeśli pakiet Office nie jest zainstalowany, można zainstalować dodatek, a użytkownik będzie mógł uzyskać do niego dostęp po zainstalowaniu pakietu Office.
 
 ## <a name="use-embedded-interop-types-nopia"></a>Użyj osadzonych typów międzyoperacyjnych (NoPIA)
-Jeśli rozwiązanie używa programu .NET 4,0 lub nowszego, użyj osadzonych typów międzyoperacyjnych (NoPIA), a nie w zależności od pakietu redystrybucyjnego podstawowych elementów międzyoperacyjnych (PIA). Użycie osadzania typów zmniejsza rozmiar instalacji rozwiązania i zapewnia przyszłą zgodność. Pakiet Office 2010 to Ostatnia wersja pakietu Office, która dostarczyła pakiet redystrybucyjny PIA. Aby uzyskać więcej informacji, zobacz [Przewodnik: osadzanie informacji o typie z zestawów Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) i [równoważność typów i osadzonych typów międzyoperacyjnych](/windows/uwp/porting/desktop-to-uwp-root).
+Jeśli rozwiązanie używa programu .NET 4,0 lub nowszego, użyj osadzonych typów międzyoperacyjnych (NoPIA), a nie w zależności od pakietu redystrybucyjnego podstawowych elementów międzyoperacyjnych (PIA). Użycie osadzania typów zmniejsza rozmiar instalacji rozwiązania i zapewnia przyszłą zgodność. Pakiet Office 2010 to Ostatnia wersja pakietu Office, która dostarczyła pakiet redystrybucyjny PIA. Aby uzyskać więcej informacji, zobacz [Przewodnik: osadzanie informacji o typie z zestawów Microsoft Office](/previous-versions/ee317478(v=vs.140)) i [równoważność typów i osadzonych typów międzyoperacyjnych](/windows/uwp/porting/desktop-to-uwp-root).
 
 Jeśli Twoje rozwiązanie korzysta ze starszej wersji programu .NET, Zalecamy zaktualizowanie rozwiązania do korzystania z programu .NET 4,0 lub nowszego. Program .NET 4,0 lub nowszy zmniejsza wymagania wstępne środowiska uruchomieniowego w nowszych wersjach systemu Windows.
 
