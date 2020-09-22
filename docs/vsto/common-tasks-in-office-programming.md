@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b0856d3832d31dd7027b2f264dd0a9cd1d657ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c82b4dec0c92f19933b045040ed0f1fcecb5b10b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63007330"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809862"
 ---
 # <a name="common-tasks-in-office-programming"></a>Typowe zadania w programowaniu pakietu Office
   Ten temat ma pomóc w znalezieniu odpowiedzi na następujące kategorie typowych pytań dotyczących programowania rozwiązań pakietu Office przy użyciu programu Visual Studio.
@@ -44,7 +44,7 @@ ms.locfileid: "63007330"
 
 - [Instrukcje: Tworzenie projektów pakietu Office w programie Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-- [Instrukcje: Uaktualnianie rozwiązań pakietu Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e).
+- [Instrukcje: Uaktualnianie rozwiązań pakietu Office](/previous-versions/4bez6837(v=vs.140)).
 
 - [Instrukcje: Instalowanie podstawowych zestawów międzyoperacyjnych pakietu Office](../vsto/how-to-install-office-primary-interop-assemblies.md).
 
@@ -216,19 +216,19 @@ ms.locfileid: "63007330"
 
 ## <a name="deployment-tasks"></a><a name="deployment"></a> Zadania wdrażania
 
-- [Instrukcje: publikowanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
+- [Instrukcje: publikowanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](/previous-versions/bb386095(v=vs.110)).
 
-- [Instrukcje: publikowanie rozwiązania Office na poziomie dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
+- [Instrukcje: publikowanie rozwiązania Office na poziomie dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](/previous-versions/bb608595(v=vs.110)).
 
-- [Instrukcje: Instalowanie rozwiązania Office ClickOnce](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065).
+- [Instrukcje: Instalowanie rozwiązania Office ClickOnce](/previous-versions/bb608592(v=vs.110)).
 
-- [Instrukcje: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych w celu uruchamiania rozwiązań pakietu Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
+- [Instrukcje: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych w celu uruchamiania rozwiązań pakietu Office](/previous-versions/bb608608(v=vs.110)).
 
-- [Instrukcje: przygotowanie usług IIS do wdrożenia rozwiązań pakietu Office](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).
+- [Instrukcje: przygotowanie usług IIS do wdrożenia rozwiązań pakietu Office](/previous-versions/bb608629(v=vs.110)).
 
-- [Instrukcje: aktualizowanie wdrożonych rozwiązań pakietu Office](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13).
+- [Instrukcje: aktualizowanie wdrożonych rozwiązań pakietu Office](/previous-versions/bb157871(v=vs.110)).
 
-- [Instrukcje: zmiana ścieżki instalacji rozwiązania pakietu Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
+- [Instrukcje: zmiana ścieżki instalacji rozwiązania pakietu Office](/previous-versions/bb608626(v=vs.110)).
 
 ## <a name="see-also"></a>Zobacz też
 - [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

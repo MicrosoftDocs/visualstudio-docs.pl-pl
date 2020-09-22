@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 89effbfd31e0194a88067a340c9332d888ef23df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65c7c3e34778a1bad3eb833c073c530db72b7a36
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81224553"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809062"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Tworzenie aplikacji Windows Forms w programie Visual Studio z Visual Basic
 
@@ -164,6 +164,6 @@ Aby dowiedzieć się więcej, przejdź do następującego samouczka:
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Więcej samouczków Visual Basic](/visualstudio/get-started/visual-basic/)
-* [Samouczki języka C#](/visualstudio/get-started/csharp/)
+* [Więcej samouczków Visual Basic](../get-started/visual-basic/index.yml)
+* [Samouczki języka C#](../get-started/csharp/index.yml)
 * [Samouczki języka C++](/cpp/get-started/tutorial-console-cpp)
