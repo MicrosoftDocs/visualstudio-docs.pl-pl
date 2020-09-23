@@ -149,11 +149,11 @@ Konflikty mogą wystąpić podczas scalania, jeśli dwaj deweloperzy modyfikują
 
 Program Visual Studio ułatwia identyfikowanie i rozwiązywanie konfliktów scalania. Pierwsze okno **repozytorium git** zawiera złoty pasek informacyjny w górnej części okna.
 
-:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Zrzut ekranu przedstawiający komunikat "scalanie ukończone z konfliktami" w programie Visual Studio ":::
+:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Zrzut ekranu przedstawiający komunikat scalanie ukończone z konfliktami w programie Visual Studio ":::
 
 W oknie zmiany w usłudze **git** zostanie również wyświetlony komunikat "*scalanie w toku z konfliktami*" z niescalonymi plikami w oddzielnej sekcji poniżej.
 
-:::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Zrzut ekranu przedstawiający komunikat "scalanie w toku ze konfliktami" w programie Visual Studio ":::
+:::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Zrzut ekranu przedstawiający komunikat scalanie w toku ze konfliktami w programie Visual Studio ":::
 
 Jeśli jednak żadne z tych okien nie jest otwarte, a zamiast tego przejdziesz do pliku, który ma konflikty scalania, nie będzie konieczne wyszukiwanie następującego tekstu:
 
@@ -165,7 +165,7 @@ Jeśli jednak żadne z tych okien nie jest otwarte, a zamiast tego przejdziesz d
 
 Zamiast tego program Visual Studio Wyświetla złoty pasek informacyjny u góry strony, który wskazuje, że otwarty plik ma konflikty. Następnie możesz kliknąć link, aby otworzyć **Edytor scalania**.
 
-:::image type="content" source="media/git-merge-conflict-gold-info-bar.png" alt-text="Zrzut ekranu przedstawiający komunikat "plik zawiera konflikty scalania" w programie Visual Studio ":::
+:::image type="content" source="media/git-merge-conflict-gold-info-bar.png" alt-text="Zrzut ekranu przedstawiający komunikat plik zawiera konflikty scalania w programie Visual Studio ":::
 
 ### <a name="the-merge-editor"></a>Edytor scalania
 
