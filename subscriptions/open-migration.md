@@ -59,7 +59,7 @@ Kroki dla partnerów, aby dodać nową licencję:
 > Klient otrzyma wiadomość e-mail z powiadomieniem informującą o tym, że partner został dodany do licencji Open. Mogą oni wybrać opcję usunięcia dostępu partnera.
 
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 - [Oficjalny dokument dotyczący licencjonowania programu Visual Studio](https://aka.ms/vslicensing)
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Postanowienia dotyczące licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)

@@ -17,7 +17,7 @@ ms.locfileid: "91005927"
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Korzyść CloudPilot w subskrypcjach programu Visual Studio
 Przenieś swoje aplikacje do Microsoft Azure w kilku prostych krokach. W ciągu kilku minut Sprawdź, czy wszystkie wymagane kody zostały zmienione w dół do wiersza kodu w celu pomyślnej migracji: kontenery, maszyny wirtualne, App Services, SQL Azure i/lub SQL MI. Następnie należy przeprowadzić migrację aplikacji na platformę Azure przy użyciu kreatorów korzystających z funkcji ASR, DMA i DMS.
 
-## <a name="overview"></a>Omówienie
+## <a name="overview"></a>Przegląd
 CloudPilot, według UnifyCloud, zaprojektowano w celu ułatwienia deweloperom szybkiego i łatwego przenoszenia aplikacji na platformę Azure.  W części czasu można przeprowadzić ręczną ocenę, CloudPilot precyzyjnie określa koszty migracji usługi Azure PaaS & IaaS i zawiera szczegółowe zalecenia, w dół do wiersza kodu, na temat tego, jakie zmiany w kodzie muszą zostać wprowadzone w celu uruchomienia aplikacji w chmurze. CloudPilot pomaga w wstępnej ocenie nakładu migracji w chmurze i planowaniu rozwoju w procesie ponownego refaktoryzacji przez oferowanie szczegółowych zmian na poziomie kodu dla chmury oraz w końcowym testowaniu z kontrolkami i zasadami technologii korporacyjnej.
 
 ## <a name="activation-steps"></a>Kroki aktywacji
