@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 09/17/2020
+ms.date: 09/22/2020
 ms.topic: conceptual
 description: Subskrypcje programu Visual Studio — Dlaczego widzę adresy Hotmail i Gmail dla subskrybentów?
-ms.openlocfilehash: c7a5546a99ed73175ab0f4af2c22b3cbf20c0bdd
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: dc2de6c852f39f789fb07358384ad490d13f137c
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006075"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022668"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Subskrypcje programu Visual Studio — Dlaczego widzę konta osobiste dla moich subskrybentów?
 Po przeprowadzeniu migracji z witryny Volume Licensing Service Center (VLSC) do nowego [portalu administratora subskrypcji](https://manage.visualstudio.com)programu Visual Studio Administratorzy mogli znaleźć, że adres e-mail logowania dla niektórych subskrybentów pokazuje osobisty adres e-mail, taki jak Hotmail lub Outlook.  
@@ -28,20 +28,21 @@ Podczas procesu aktywacji subskrybenta: konto Microsoft (MSA) było wymagane do 
 > Nowoczesne środowisko subskrybenta w systemie [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) obsługuje typy tożsamości zarówno służbowe, jak i konto Microsoft (MSA).
 
 ## <a name="solution"></a>Rozwiązanie
+Aby rozwiązać ten problem, po prostu wybierz przycisk **Połącz wiadomości e-mail** , a system podejmie próbę dopasowania kont z kont MSA do istniejących użytkowników w organizacji Azure Active Directory (Azure AD) w oparciu o pasujące imię i nazwisko. Jeśli wystąpi błąd, możesz usunąć dowolne dopasowanie, klikając **znak X** z prawej strony dopasowania.  
+
+Obejrzyj ten film wideo lub zapoznaj się z nim, aby dowiedzieć się, jak rozwiązać ten problem. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6B]
-
-Aby rozwiązać ten problem, po prostu wybierz przycisk **Połącz wiadomości e-mail** , a system podejmie próbę dopasowania kont z kont MSA do istniejących użytkowników w organizacji Azure Active Directory (Azure AD) w oparciu o pasujące imię i nazwisko. Jeśli wystąpi błąd, możesz usunąć dowolne dopasowanie, klikając **znak X** z prawej strony dopasowania.  
 
 > [!div class="mx-imgBorder"]
 > ![Przycisk Połącz wiadomości E-mail](_img/connect-emails/connect-emails-button.png "Kliknij pozycję Połącz wiadomości E-mail, aby dopasować użytkowników z kontami Microsoft do Azure Active Directory")
 
-Możesz również użyć **katalogu wyszukiwania** , aby naprawić błędy lub uzupełnić brakujące informacje z usługi Azure AD. Jeśli wszystkie dopasowania wyglądają prawidłowo, możesz wybrać opcję "Wybierz wszystkich pasujących subskrybentów" zamiast wybierać je pojedynczo.  
+Możesz również użyć **katalogu wyszukiwania** , aby naprawić błędy lub uzupełnić brakujące informacje z usługi Azure AD. Jeśli wszystkie dopasowania wyglądają prawidłowo, możesz wybrać przycisk **Bieżąca tożsamość** , aby wybrać wszystkie dopasowane wpisy zamiast wybierać je pojedynczo.  
 
 > [!div class="mx-imgBorder"]
 > ![Nawiązywanie połączenia z wiadomościami E-mail](_img/connect-emails/connect-emails-flyout.png "Wybierz subskrybentów, którzy mają być zgodni z tożsamościami usługi Azure AD, a następnie kliknij przycisk Kontynuuj.")
 
-Następnie kliknij pozycję "Kontynuuj", aby przejść do listy zmian, które mają zostać wykonane. Jeśli zgadzasz się, kliknij przycisk "Zapisz", a zmiany zostaną wprowadzone. Subskrybent otrzyma również komunikat z informacją o zmianie przy następnym logowaniu do swojej subskrypcji.   
+Kliknij przycisk Dalej **, aby przejść do** listy zmian, które mają zostać wykonane. Jeśli zgadzasz się, kliknij przycisk **Zapisz** , a zmiany zostaną wprowadzone. Subskrybent otrzyma również komunikat z informacją o zmianie przy następnym logowaniu do swojej subskrypcji.  Należy zauważyć, że na tej liście są wyświetlane tylko dwa Subskrybenci, które zostały dopasowane do Azure Active Directory.  W naszym przykładzie, ponieważ Frederick nie miał odpowiedniego adresu w usłudze Azure AD, jego konto Microsoft (MSA) nie został dopasowany do konta służbowego. 
 
 > [!div class="mx-imgBorder"]
 > ![Potwierdzenie łączenia wiadomości E-mail](_img/connect-emails/connect-emails-confirm.png "Kliknij przycisk Kontynuuj, aby zaimplementować proponowane zmiany, a następnie kliknij przycisk Zapisz.") 

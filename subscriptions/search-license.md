@@ -1,18 +1,18 @@
 ---
 title: Wyszukiwanie i filtrowanie | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
-ms.date: 08/10/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą lokalizować poszczególnych subskrybentów lub grupy w portalu administracyjnym.
-ms.openlocfilehash: 29354348b423b539b79c36c78f213f7a20d60eb3
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 341f8e9739b629330775ff8688c5fdf872165e3a
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005306"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022242"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Wyszukiwanie i filtrowanie subskrybentów w subskrypcjach programu Visual Studio
 Portal administrowania subskrypcjami programu Visual Studio umożliwia znalezienie określonego podzestawu subskrybentów na podstawie różnych kryteriów. Listę subskrybentów można filtrować według nazwy, adresu e-mail, poziomu subskrypcji i innych informacji.
@@ -30,7 +30,7 @@ Portal administrowania subskrypcjami programu Visual Studio umożliwia znalezien
    > [!NOTE]
    > **Nazwa** pola jest sortowana według imienia i nazwiska.
 
-   Zauważ, że ikona **filtru** jest wyróżniona, co oznacza, że filtr jest stosowany.  Widoczny jest również wybór opcji **Wyczyść filtr** . 
+   Zauważ, że ikona **filtru** jest wyróżniona, co oznacza, że filtr jest stosowany.  Widoczny jest również wybór opcji **Wyczyść filtr** . W tym przykładzie przeprowadzono filtr naszych list subskrybentów, aby znaleźć te, które mają @outlook.com adresy e-mail. 
 
 3. Aby wyczyścić filtr i przywrócić niefiltrowany list, kliknij kartę **Wyczyść filtr** w prawym górnym rogu. 
    > [!div class="mx-imgBorder"]

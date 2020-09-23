@@ -1,21 +1,23 @@
 ---
 title: Przypisywanie określonych identyfikatorów GUID do subskrybentów programu Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
-ms.date: 04/20/2020
+ms.author: v-evwin
+manager: cabuschl
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą uzyskać określony identyfikator GUID subskrypcji dla subskrybentów
-ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31544718683b10a186d4c38486bf0cd7923cd4cf
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235189"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022487"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Przypisywanie określonych subskrypcji w portalu administratora subskrypcji programu Visual Studio
 
 Administratorzy mogą teraz używać portalu administracyjnego subskrypcji programu Visual Studio do przypisywania określonych subskrypcji do poszczególnych subskrybentów.  Może to być przydatne w sytuacjach, w których organizacja ma tymczasowego pracownika lub dostawców, którzy potrzebują dostępu do subskrypcji przez krótki okres.  Administratorzy mogą przypisywać subskrypcję, która została już częściowo użyta, pozostawiając ich nowe subskrypcje do dłuższego użycia.  
+
+Obejrzyj wideo lub przeczytaj, aby dowiedzieć się, jak przypisać do użytkowników identyfikatory GUID określonych subskrypcji. 
 
 <br>
 
@@ -57,7 +59,7 @@ Ostatnim krokiem jest pobranie **zbiorczego szablonu Dodaj** , wypełnienie wyma
 > - Identyfikator GUID nie jest już przypisany do innego użytkownika na wyeksportowanej liście. 
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
-### <a name="qhow-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>Q:How zmienić, która subskrypcja jest obecnie przypisana do pojedynczego użytkownika?
+### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>P: Jak mogę zmienić, która subskrypcja jest obecnie przypisana do pojedynczego użytkownika?
 Odp.: Jeśli chcesz zmienić identyfikator GUID przypisany do użytkownika, musisz najpierw usunąć subskrypcję dla tego użytkownika.  Aby uzyskać więcej informacji, zobacz artykuł [usuwanie subskrypcji](delete-license.md) , aby uzyskać więcej informacji.  Po usunięciu subskrypcji dla tego użytkownika należy użyć podanego powyżej procesu, aby wyeksportować listę i przekazać nowe informacje o subskrypcji.  
 
 ## <a name="see-also"></a>Zobacz też

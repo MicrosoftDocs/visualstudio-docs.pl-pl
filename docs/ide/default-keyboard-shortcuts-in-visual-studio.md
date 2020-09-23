@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20f9328b7e048eaf68184925fa1b7ac7a56540af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eab8798dfb5c1666ef2829361adb8c48202c3981
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533643"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022220"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w programie Visual Studio
 
@@ -35,7 +35,7 @@ Aby uzyskać więcej informacji na temat ułatwień dostępu w programie Visual 
 - [Analiza](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [Edytuj](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
 - [Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)
-- [Badan](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+- [Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)
 - [Architektura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
 - [Menu kontekstowe edytora](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
 - [Menu kontekstowe projektu i rozwiązania](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
@@ -49,7 +49,7 @@ Aby uzyskać więcej informacji na temat ułatwień dostępu w programie Visual 
 - [Eksplorator rozwiązań](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)
 - [Wyświetlanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
 - [Debugowanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)
-- [Test obciążenia](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)
+- [Test obciążeniowy](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)
 - [Zespół](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)
 - [Okno](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)
 - [Menu kontekstowe debugera](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)
@@ -181,7 +181,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Edit.Copy|**Ctrl+C**<br /><br /> lub<br /><br /> **Ctrl+Ins**|
 |Edit.Cut|**Ctrl+X**<br /><br /> lub<br /><br /> **Shift+Delete**|
 |Edit.CycleClipboardRing|**Ctrl+Shift+V**<br /><br /> lub<br /><br /> **Ctrl+Shift+Ins**|
-|Edit.Delete|**Usuń**|
+|Edit.Delete|**Usuwanie**|
 |Edytuj. Duplikuj|**Ctrl + D**|
 |Edit.Find|**Ctrl+F**|
 |Edit.FindAllReferences|**Shift+F12**|
@@ -485,7 +485,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Edit.Delete|**Ctrl+Del**|
 |Edit.ExpandCollapseBaseTypeList|**Shift+Alt+B**|
 |Edit.NavigateToLollipop|**Shift+Alt+L**|
-|Edit.RemovefromDiagram|**Usuń**|
+|Edit.RemovefromDiagram|**Usuwanie**|
 |View.ViewCode|**Wejść**|
 
 ## <a name="coded-ui-test-editor"></a>Edytor kodowanego testu interfejsu użytkownika
@@ -545,7 +545,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**Ctrl+Shift+K**<br /><br /> lub<br /><br /> **Ctrl+E, C**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Usuń**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Usuwanie**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
 ## <a name="graphics-diagnostics"></a>Diagnostyka grafiki
@@ -612,7 +612,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |Edit.EditCell|**F2**|
-|Edit.Remove|**Usuń**|
+|Edit.Remove|**Usuwanie**|
 |Edit.RemoveRow|**Ctrl+Delete**|
 |Edit.SelectionCancel|**Escape**|
 |Resources.Audio|**Ctrl+4**|
@@ -767,7 +767,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
-|Edit.Delete|**Usuń**|
+|Edit.Delete|**Usuwanie**|
 |File.Rename|**F2**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**Alt+Home**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**Alt+Strzałka w dół**|
@@ -849,7 +849,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 | Edit.LineEndExtendColumn | **Shift+Alt+End** |
 | Edit.LineOpenAbove | **Ctrl+Enter** |
 | Edit.LineOpenBelow | **Ctrl+Shift+Enter** |
-| Edit.LineStart | **Strona główna** |
+| Edit.LineStart | **Ekran główny** |
 | Edit.LineStartExtend | **Shift+Home** |
 | Edit.LineStartExtendColumn | **Shift+Alt+Home** |
 | Edit.LineTranspose | **Shift+Alt+T** |
@@ -1056,7 +1056,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |Edit.CharRightExtend|**Shift+Strzałka w prawo**|
 |Edit.DocumentEnd|**Punktów**|
 |Edit.DocumentEndExtend|**Shift+End**|
-|Edit.DocumentStart|**Strona główna**|
+|Edit.DocumentStart|**Ekran główny**|
 |Edit.DocumentStartExtend|**Shift+Home**|
 |Edit.InsertTab|**Tabulator**|
 |Edit.LineDown|**Strzałka w dół**|
@@ -1171,7 +1171,7 @@ Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowo
 |GraphView.LefttoRight|**Alt+Strzałka w prawo**|
 |GraphView.RighttoLeft|**Alt+Strzałka w lewo**|
 |GraphView.ToptoBottom|**Alt+Strzałka w dół**|
-|OtherContextMenus.GraphView.RemovefromWorkspace|**Usuń**|
+|OtherContextMenus.GraphView.RemovefromWorkspace|**Usuwanie**|
 |XsdDesigner.ShowContentModelView|**Ctrl + 2**|
 |XsdDesigner.ShowGraphView|**Ctrl + 3**|
 |XsdDesigner.ShowStartView|**Ctrl + 1**|

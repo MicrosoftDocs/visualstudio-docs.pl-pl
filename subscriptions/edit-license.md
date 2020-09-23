@@ -1,18 +1,18 @@
 ---
 title: Edytuj subskrypcje w portalu administracyjnym | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 07/30/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą edytować przypisania subskrypcji.
-ms.openlocfilehash: 3d96610c940dc8e4404212a6f3a3dbaa7fe3ef51
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 060ae7c7679eb1bf9dc4da99ea9a1bf952ebc58b
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005590"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022557"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Edytuj przypisania subskrypcji programu Visual Studio
 Administrator subskrypcji może wprowadzać zmiany w subskrypcjach przypisanych do osób w organizacji.  W tym artykule omówiono typy zmian, które można wprowadzić, i przedstawiono niezbędne kroki.
@@ -34,6 +34,7 @@ Możesz zaktualizować imię i nazwisko subskrybenta, nazwisko, poziom subskrypc
 
 Jednocześnie można edytować wielu subskrybentów przy użyciu procesu edycji zbiorczej. Ta funkcja jest używana głównie w przypadku organizacji, które przechodzą przez firmowe adresy e-mail, lub jeśli organizacja zdecydowała się ograniczyć dostęp do plików do pobrania.
 
+Obejrzyj ten film wideo lub przeczytaj, aby dowiedzieć się, jak edytować wielu subskrybentów za pomocą edycji zbiorczej. 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]

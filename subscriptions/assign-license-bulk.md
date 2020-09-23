@@ -1,23 +1,23 @@
 ---
 title: Przypisywanie licencji do grup użytkowników dla subskrypcji programu Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 05/10/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do wielu subskrybentów za pomocą funkcji zbiorczego dodawania lub grup Microsoft Azure Active Directory
-ms.openlocfilehash: cbcdab00568e375633ddd9d6d350978d6ec56d2a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005769"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022442"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Przypisywanie subskrypcji wielu użytkownikom
 Portal administrowania subskrypcjami pozwala dodawać użytkowników jeden w czasie lub w dużych grupach.  Aby dodać poszczególnych użytkowników, zobacz [Dodawanie pojedynczych użytkowników](assign-license.md).
 
-Aby dodać dużych grup użytkowników, możesz użyć funkcji dodawania zbiorczego lub jeśli Twoja organizacja korzysta z usługi Microsoft Azure Active Directory (Azure AD), możesz użyć grup usługi Azure AD. W tym artykule opisano proces dla obu tych opcji. 
+Aby dodać dużych grup użytkowników, możesz użyć funkcji dodawania zbiorczego lub jeśli Twoja organizacja korzysta z usługi Microsoft Azure Active Directory (Azure AD), możesz użyć grup usługi Azure AD. W tym artykule opisano proces dla obu tych opcji.  Obejrzyj ten film wideo lub przeczytaj, aby dowiedzieć się więcej o funkcji dodawania zbiorczego. 
 
 <br>
 
@@ -64,7 +64,8 @@ Aby dodać dużych grup użytkowników, możesz użyć funkcji dodawania zbiorcz
 
    Jeśli wystąpi błąd, wykonaj następujące kroki:
    1. Otwórz utworzony plik programu Excel, Usuń problemy i Zapisz plik.
-   0. Wróć do portalu Adminstration i wybierz pozycję **Dodaj**.
+   0. Wróć do portalu administracyjnego i Odrzuć komunikat o błędzie.
+   0. Wybierz pozycję **Dodaj**.
    0. Wybierz pozycję **Dodaj zbiorczo**.
    0. Ponieważ plik programu Excel został już zapisany, nie musisz pobierać szablonu.  Wybierz pozycję **Przeglądaj**, Znajdź zapisany plik, a następnie wybierz pozycję **Otwórz**.
    0. Wybierz przycisk **OK**.
@@ -81,7 +82,7 @@ Korzystanie z tej funkcji ułatwia pozostawanie na swoich przypisaniach subskryp
 > [!IMPORTANT]
 >
 > Następujące ograniczenia dotyczą korzystania z grup usługi Azure AD na potrzeby dodawania subskrybentów:
-> - Przed dodaniem grupy do portalu Adminstration administrator musi być członkiem dzierżawy usługi AAD.  Po dodaniu grupy zmiany członkostwa w grupach nie wymagają zaangażowania administratora. 
+> - Przed dodaniem grupy do portalu administracyjnego administrator musi być członkiem dzierżawy usługi AAD.  Po dodaniu grupy zmiany członkostwa w grupach nie wymagają zaangażowania administratora. 
 > - Grupy muszą zawierać co najmniej jednego członka.  Puste grupy nie są obsługiwane.
 > - Grupy muszą mieć mniej niż 1 000 użytkowników. 
 > - Wszyscy użytkownicy muszą znajdować się na najwyższym poziomie grupy.  Zagnieżdżone grupy nie są obsługiwane.
@@ -89,6 +90,7 @@ Korzystanie z tej funkcji ułatwia pozostawanie na swoich przypisaniach subskryp
 > - Wszyscy członkowie grupy muszą mieć adres e-mail skojarzony z kontem usługi Azure AD.
 > - Oddzielne adresy e-mail dla powiadomień nie są obsługiwane w przypadku subskrypcji dodanych za pomocą grup usługi Azure AD.  
 
+Obejrzyj ten film wideo lub przeczytaj, aby dowiedzieć się więcej na temat dodawania subskrybentów za pomocą funkcji grupy Azure Active Directory. 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
