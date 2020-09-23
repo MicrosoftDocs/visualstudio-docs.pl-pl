@@ -260,9 +260,21 @@
         - name: Dostosowywanie zadań kompilacji i debugowania
           displayName: makefile tasks.vs.json
           href: ide/customize-build-and-debug-tasks-in-visual-studio.md
+    - name: Programowanie z zastosowaniem usługi Codespaces (wersja zapoznawcza)
+      items:
+        - name: Omówienie
+          href: ide/codespaces/codespaces-overview.md
+        - name: Korzystanie z programu Visual Studio ze środowiskiem codespace
+          href: ide/codespaces/use-visual-studio-with-codespaces.md
+        - name: Dostosowywanie środowiska codespace
+          href: ide/codespaces/customize-codespaces.md
+        - name: Obsługiwane funkcje programu Visual Studio
+          href: ide/codespaces/supported-features-codespaces.md
     - name: Łączenie z projektem lub repozytorium
       displayName: Azure DevOps VSTS GitHub
       href: ide/connect-team-project.md
+    - name: Nowe środowisko Git w programie Visual Studio (wersja zapoznawcza)
+      href: ide/git-with-visual-studio.md
     - name: Edytor
       items:
         - name: Używanie edytora

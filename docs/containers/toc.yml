@@ -48,9 +48,9 @@
   items:
     - name: Platforma Kubernetes w programie Visual Studio
       href: tutorial-kubernetes-tools.md
-    - name: Proces lokalny z platformą Kubernetes (wersja zapoznawcza)
-      href: local-process-kubernetes.md
-    - name: Jak działa proces lokalny z platformą Kubernetes (wersja zapoznawcza)
-      href: overview-local-process-kubernetes.md
-    - name: Konfigurowanie procesu lokalnego z platformą Kubernetes
-      href: configure-local-process-with-kubernetes.md
+    - name: Mostek na platformę Kubernetes
+      href: bridge-to-kubernetes.md
+    - name: Jak działa Mostek na platformę Kubernetes
+      href: overview-bridge-to-kubernetes.md
+    - name: Konfigurowanie Mostka na platformę Kubernetes
+      href: configure-bridge-to-kubernetes.md
