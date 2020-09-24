@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 875608fbaa2e5c7532371fd95858fe87cdc81ca1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b40da28cce9d2189b2f30ff6ea958926f3041836
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815893"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135082"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Pisanie i debugowanie uruchomionego kodu XAML przy użyciu gorącego ponownego ładowania XAML w programie Visual Studio
 
@@ -55,7 +55,7 @@ Poniżej przedstawiono znane ograniczenia dotyczące gorącego ładowania kodu X
 |Zarządzanie pakietami NuGet (Dodawanie/usuwanie/aktualizowanie pakietów)|Nieobsługiwane|Nieobsługiwane|Brak|
 |Zmiana powiązania danych korzystającego z rozszerzenia znacznika {x:Bind}|Brak|Obsługiwane począwszy od programu Visual Studio 2019|Wymaga to systemu Windows 10 w wersji 1809 (Kompilacja 10.0.17763). Nieobsługiwane w programie Visual Studio 2017 lub starszych wersjach.|
 |Zmiana dyrektyw X:UID — nie jest obsługiwana|Brak|Nieobsługiwane|Brak|
-|Wiele procesów | Nieobsługiwane | Nieobsługiwane | Ładuj ponownie można używać tylko w przypadku jednego procesu naraz. |
+|Wiele procesów | Obsługiwane | Obsługiwane | Obsługiwane w programie Visual Studio 2019 w [wersji 16,6](/visualstudio/releases/2019/release-notes-v16.6) lub nowszej |
 
 ## <a name="error-messages"></a>Komunikaty o błędach
 
@@ -66,7 +66,7 @@ Podczas korzystania ze gorącego ładowania kodu XAML mogą występować następ
 |Sprawdź, czy zdarzenie nie powiodło się|Błąd oznacza, że próbujesz obsłużyć zdarzenie do jednej z kontrolek, co nie jest obsługiwane, gdy aplikacja jest uruchomiona.|
 |Ta zmiana nie jest obsługiwana przez kod XAML gorącego ładowania i nie zostanie zastosowana podczas sesji debugowania.|Błąd oznacza, że próba zmiany nie jest obsługiwana przez kod XAML. Zatrzymaj sesję debugowania, wprowadź zmianę, a następnie ponownie uruchom sesję debugowania. Jeśli znajdziesz nieobsługiwany scenariusz, który chcesz zobaczyć, użyj nowej opcji "Sugeruj funkcję" w [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html). |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Rozwiązywanie problemów z ponownym ładowaniem przy aktywnym kodzie XAML](xaml-hot-reload-troubleshooting.md)
 * [Przeładowywanie kodu XAML na gorąco dla zestawu narzędzi Xamarin.Forms](/xamarin/xamarin-forms/xaml/hot-reload)

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c864a10af9ad15d47e2342bb148af464b8f2a0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bad4e0b7db883a7604d674b854a9c3f794715d8d
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591505"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135108"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Opcje — okno dialogowe (Visual Studio)
 
@@ -39,10 +39,6 @@ Opcje funkcji IDE nie są wyświetlane w okienku nawigacji, dopóki funkcja nie 
 
 Kliknięcie przycisku OK w oknie dialogowym **Opcje** umożliwia zapisanie wszystkich ustawień na wszystkich stronach. Kliknięcie przycisku Anuluj na dowolnej stronie anuluje wszystkie żądania zmiany, w tym wszystkie utworzone na innych stronach **opcji** . Niektóre zmiany ustawień opcji, na przykład dotyczące [czcionek i kolorów, środowiska, okna dialogowego Opcje](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md), zostaną zastosowane po zamknięciu i ponownym otwarciu programu Visual Studio.
 
-### <a name="show-all-settings"></a>Pokaż wszystkie ustawienia
-
-Wybranie lub zaznaczenie pola wyboru **Pokaż wszystkie ustawienia** powoduje zastosowanie wszystkich zmian wprowadzonych w oknie dialogowym **Opcje** , mimo że jeszcze nie kliknięto **OK**.
-
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dopasowywanie edytora](../how-to-change-text-case-in-the-editor.md)

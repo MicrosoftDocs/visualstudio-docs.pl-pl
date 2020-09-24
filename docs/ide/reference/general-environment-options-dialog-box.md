@@ -20,16 +20,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfd1b876e58c05c668fd74087d5131bb1e9fcd40
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569442"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135095"
 ---
 # <a name="options-dialog-box-environment--general"></a>Opcje — okno dialogowe: \> Ogólne środowisko
 
-Ta strona służy do zmiany motywów kolorów, ustawień paska stanu i skojarzeń rozszerzeń plików między innymi opcjami dla zintegrowanego środowiska programistycznego (IDE). Dostęp do okna dialogowego **Opcje** można uzyskać, otwierając menu **Narzędzia** , wybierając **Opcje**, otwierając folder **środowiska** , a następnie wybierając stronę **Ogólne** . Jeśli ta strona nie jest wyświetlana na liście, zaznacz pole wyboru **Pokaż wszystkie ustawienia** w oknie dialogowym **Opcje** .
+Ta strona służy do zmiany motywów kolorów, ustawień paska stanu i skojarzeń rozszerzeń plików między innymi opcjami dla zintegrowanego środowiska programistycznego (IDE). Dostęp do okna dialogowego **Opcje** można uzyskać, otwierając menu **Narzędzia** , wybierając **Opcje**, otwierając folder **środowiska** , a następnie wybierając stronę **Ogólne** .
 
 ## <a name="visual-experience"></a>Środowisko wizualne
 
@@ -96,6 +96,6 @@ Określa, że po kliknięciu przycisku **Zamknij** tylko okno narzędzia z fokus
 
 Określa, że po kliknięciu przycisku **Autoukrywanie** tylko okno narzędzia z fokusem jest ukryte automatycznie i nie wszystkie okna narzędzi w zestawie zadokowanym. Domyślnie ta opcja nie jest zaznaczona.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md)

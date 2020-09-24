@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c84978501e5c5bc6f21e8005023c3ae2fe931cce
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ee729a0dfe27bf54a64b42ff64b23bf851c14d06
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038572"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135121"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Instrukcje: Zarządzanie konfiguracjami kompilacji z zastosowaniem ustawień dewelopera Visual Basic
 
@@ -34,9 +34,6 @@ Domyślnie ustawienia dewelopera Visual Basic ukrywają opcję, aby otworzyć ok
 1. W menu **Tools** (Narzędzia) kliknij pozycję **Options** (Opcje).
 
 2. Rozwiń węzeł **projekty i rozwiązania**, a następnie kliknij pozycję **Ogólne**.
-
-    > [!NOTE]
-    > Węzeł **Ogólne** jest widoczny, nawet jeśli opcja **Pokaż wszystkie ustawienia** nie jest zaznaczona. Jeśli chcesz zobaczyć wszystkie dostępne opcje, kliknij przycisk **Pokaż wszystkie ustawienia**.
 
 3. Kliknij pozycję **Pokaż zaawansowane konfiguracje kompilacji**.
 

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0e127006976c484d1e4fc2fe011af979af7eb7a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0abe51b9f01d0c1f380c4762a7d0d4f457964aa7
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114987"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135134"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Rozwiązywanie problemów związanych z siecią podczas instalowania programu Visual Studio lub korzystania z niego
 
@@ -92,6 +92,22 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
 
 ::: moniker-end
 
+## <a name="error-disconnected-from-visual-studio-when-attempting-to-report-a-problem"></a>Błąd: "odłączono od programu Visual Studio" podczas próby zgłoszenia problemu
+
+Ten błąd występuje zazwyczaj, gdy użytkownik jest połączony z Internetem za pomocą serwera proxy, a serwer proxy blokuje wywołania, które program Visual Studio wprowadza do niektórych zasobów sieciowych.
+
+### <a name="to-fix-this-proxy-error"></a>Aby naprawić ten błąd serwera proxy
+
+1. Znajdź **feedback.exe.config** (plik konfiguracyjny feedback.exe) w folderze **% ProgramFiles (x86)% \ Microsoft Visual Studio\Installer** lub **%ProgramFiles%\Microsoft Visual Studio\Installer**.
+
+2. W pliku konfiguracji Sprawdź, czy znajduje się w nim następujący kod; Jeśli kod nie istnieje, należy go dodać przed ostatnim `</configuration>` wierszem.
+
+   ```xml
+   <system.net>
+       <defaultProxy useDefaultCredentials="true" />
+   </system.net>
+   ```
+
 ## <a name="error-the-underlying-connection-was-closed"></a>Błąd: "Połączenie podstawowe zostało zamknięte"
 
 Jeśli używasz programu Visual Studio w sieci prywatnej, która ma zaporę, program Visual Studio może nie być w stanie połączyć się z niektórymi zasobami sieciowymi. Te zasoby mogą obejmować Azure DevOps Services logowania i licencjonowania, NuGet i usług platformy Azure. Jeśli program Visual Studio nie może nawiązać połączenia z jednym z tych zasobów, może zostać wyświetlony następujący komunikat o błędzie:
@@ -148,7 +164,7 @@ Możesz użyć `net use` polecenia lub zmienić ustawienie zasady grupy kontroli
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Instalowanie i używanie programu Visual Studio za zaporą lub serwerem proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
