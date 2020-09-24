@@ -14,16 +14,16 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: b30b59b95b09cac8308474b2b2963f9b96d58146
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 301461caa15321b5a77f42872c93f52f3ec2c9c1
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731694"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211277"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Polecenia konsoli języka JavaScript w programie Visual Studio
 
-Polecenia służą do wysyłania komunikatów i wykonywania innych zadań w oknie konsoli JavaScript programu Visual Studio. Aby zapoznać się z przykładami pokazującymi, jak korzystać z tego okna, zobacz [Szybki Start: debugowanie JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Informacje przedstawione w tym temacie dotyczą Node.js aplikacji, aplikacji platformy UWP i aplikacji utworzonych przy użyciu Visual Studio Tools dla Apache Cordova.
+Polecenia służą do wysyłania komunikatów i wykonywania innych zadań w oknie konsoli JavaScript programu Visual Studio. Aby zapoznać się z przykładami pokazującymi, jak korzystać z tego okna, zobacz [Szybki Start: debugowanie JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true). Informacje przedstawione w tym temacie dotyczą Node.js aplikacji, aplikacji platformy UWP i aplikacji utworzonych przy użyciu Visual Studio Tools dla Apache Cordova.
 
 Jeśli okno konsoli JavaScript jest zamknięte, można je otworzyć podczas debugowania w programie Visual Studio, wybierając **Debuguj**  >  **Windows**  >  **konsolę JavaScript**systemu Windows.
 
@@ -127,5 +127,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Szybki start: debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
-- [Szybki start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Szybki start: debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true)
+- [Szybki start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017&preserve-view=true)

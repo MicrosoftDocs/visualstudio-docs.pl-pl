@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2deb3f8ff19c2d7805031c0c3ba02bc82b8a3e7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810877"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211178"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Jak zgłosić problem z programem Visual Studio lub Instalator programu Visual Studio
 
@@ -51,11 +51,11 @@ Możesz zgłosić problem z programu Visual Studio lub jego Instalatora. Wbudowa
 
     Możesz nawet przyciąć zrzut ekranu bezpośrednio w przeglądarce, aby usunąć wszelkie poufne lub niepowiązane części.
 
-4. Najlepszym sposobem, aby pomóc zespołowi inżynieryjnemu programu Visual Studio rozwiązać ten problem, jest udostępnienie śledzenia i plików zrzutu sterty do przeszukania. Można to łatwo zrobić, rejestrując kroki, które spowodowały błąd. 
+4. Najlepszym sposobem, aby pomóc zespołowi inżynieryjnemu programu Visual Studio rozwiązać ten problem, jest udostępnienie śledzenia i plików zrzutu sterty do przeszukania. Można to łatwo zrobić, rejestrując kroki, które spowodowały błąd.
 
     ![Rejestrowanie akcji ](../ide/media/feedback-recording.png) *tylko inżynierowie firmy Microsoft mogą zobaczyć nagranie*
 
-5. Przejrzyj dołączone pliki i przekaż dodatkowe pliki, jeśli uważasz, że pomoże to zdiagnozować problem.   
+5. Przejrzyj dołączone pliki i przekaż dodatkowe pliki, jeśli uważasz, że pomoże to zdiagnozować problem.
 
     ![Dołączone pliki ](../ide/media/feedback-attachments.png) *tylko inżynierowie firmy Microsoft mogą zobaczyć dołączone pliki*
 

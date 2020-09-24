@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bad4e0b7db883a7604d674b854a9c3f794715d8d
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: 068c80221a572747ab99e41e78945fe55c57c451
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 09/24/2020
-ms.locfileid: "91135108"
+ms.locfileid: "91211264"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Opcje — okno dialogowe (Visual Studio)
 
@@ -33,12 +33,12 @@ Okno dialogowe **Opcje** jest podzielone na dwie części: okienko nawigacji po 
 Opcje funkcji IDE nie są wyświetlane w okienku nawigacji, dopóki funkcja nie zostanie załadowana do pamięci. W związku z tym te same opcje mogą nie być wyświetlane po rozpoczęciu nowej sesji, która była wyświetlana w trakcie ostatniego zakończenia. Podczas tworzenia projektu lub uruchamiania polecenia korzystającego z określonej aplikacji węzły odpowiednich opcji są dodawane do okna dialogowego Opcje. Te dodane opcje będą nadal dostępne, o ile funkcja IDE pozostanie w pamięci.
 
 > [!NOTE]
-> Niektóre kolekcje ustawień mają zakres liczby stron, które pojawiają się w okienku nawigacji okna dialogowego Opcje. Możesz wyświetlić wszystkie możliwe strony, wybierając opcję **Pokaż wszystkie ustawienia**.
+> Niektóre kolekcje ustawień mają zakres liczby stron, które pojawiają się w okienku nawigacji okna dialogowego Opcje.
 
 ## <a name="how-options-are-applied"></a>Jak są stosowane opcje
 
 Kliknięcie przycisku OK w oknie dialogowym **Opcje** umożliwia zapisanie wszystkich ustawień na wszystkich stronach. Kliknięcie przycisku Anuluj na dowolnej stronie anuluje wszystkie żądania zmiany, w tym wszystkie utworzone na innych stronach **opcji** . Niektóre zmiany ustawień opcji, na przykład dotyczące [czcionek i kolorów, środowiska, okna dialogowego Opcje](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md), zostaną zastosowane po zamknięciu i ponownym otwarciu programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dopasowywanie edytora](../how-to-change-text-case-in-the-editor.md)

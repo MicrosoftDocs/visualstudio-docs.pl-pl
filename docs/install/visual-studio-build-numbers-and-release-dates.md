@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 6e7298a920a970205d336e1db792c7becbf89aec
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: cee62e02aa5b35108eec5024edf8eebb3848513f
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005254"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211303"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -30,7 +30,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 | **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 16.8.0 | Wersja zapoznawcza 3,1 | 22 września, 2020 | 16.8.30516.212 |
-| 16.7.4 | Release | 21 września 2020 | 16.7.30517.126 |
+| 16.7.4 | Release | 21 września 2020 r. | 16.7.30517.126 |
 | 16.8.0 | Wersja zapoznawcza 3 | 14 września 2020 | 16.8.30509.190 |
 | 16.7.3 | Release | 8 września 2020 r. | 16.7.30503.244 |
 | 16.4.13 | Release | 8 września 2020 r. | 16.4.30427.197 |
@@ -166,7 +166,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 | 16.0.0 | Wersja zapoznawcza 1 | 4 grudnia 2018 r. | 16.0.28329.73 |
 
 > [!NOTE]
-> Aby uzyskać listę numerów kompilacji i daty wydania dla poprzedniej wersji, zobacz [Visual Studio 2017 Build Numbers and Data Release](visual-studio-build-numbers-and-release-dates.md?view=vs-2017)
+> Aby uzyskać listę numerów kompilacji i daty wydania dla poprzedniej wersji, zobacz [Visual Studio 2017 Build Numbers and Data Release](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true)
 
 ::: moniker-end
 

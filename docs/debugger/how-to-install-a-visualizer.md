@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cce59dfb39da71b8ff87efd49de9e2e0f6cdbd0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6410e9ba1250da5a0a247c786e4aada310186c4a
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851414"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211368"
 ---
 # <a name="how-to-install-a-visualizer"></a>Porady: instalacja programu Visualizer
 Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostępny w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Instalowanie wizualizatora jest prostym procesem.
@@ -32,7 +32,7 @@ Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostęp
 
 ::: moniker range=">=vs-2019"
 ### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Aby zainstalować wizualizator dla programu Visual Studio 2019
-  
+
 1. Znajdź bibliotekę DLL, która zawiera skompilowany wizualizator.
 
    Zazwyczaj najlepiej, jeśli zarówno Biblioteka DLL po stronie debugera, jak i Biblioteka DLL debugowanego obiektu określają **dowolny procesor** jako platformę docelową. Biblioteka DLL po stronie debugera musi być **dowolnym procesorem** lub **32-bitowym**. Platforma docelowa dla biblioteki DLL debugowanego obiektu powinna odpowiadać procesowi debugee.
@@ -42,7 +42,7 @@ Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostęp
     - *VisualStudioInstallPath*`\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\`*VisualStudioVersion*`\Visualizers`
-    
+
 3. Skopiuj bibliotekę DLL [po stronie debugowanego obiektu](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) do jednej z następujących lokalizacji:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Struktura*
@@ -61,7 +61,7 @@ Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostęp
 4. Uruchom ponownie sesję debugowania.
 
 > [!NOTE]
-> Procedura różni się w programie Visual Studio 2017 i starszych. Zobacz [poprzednią wersję](how-to-install-a-visualizer.md?view=vs-2017) tego artykułu.
+> Procedura różni się w programie Visual Studio 2017 i starszych. Zobacz [poprzednią wersję](how-to-install-a-visualizer.md?view=vs-2017&preserve-view=true) tego artykułu.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
@@ -84,6 +84,6 @@ Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostęp
 > Jeśli chcesz użyć zarządzanego wizualizatora na potrzeby debugowania zdalnego, Skopiuj bibliotekę DLL do tej samej ścieżki na komputerze zdalnym.
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
 - [Porady: pisanie wizualizatora](create-custom-visualizers-of-data.md)

@@ -17,12 +17,12 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: e5a4cca61b32772f47c5fa350123bc45c8f8d671
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a64eee360c6039350683bb4add5be7126a4d444
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87805803"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211251"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Identyfikatory obciążeń i składników programu Visual Studio
 
@@ -32,7 +32,7 @@ Kliknij nazwy wersji w poniższej tabeli, aby wyświetlić dostępne obciążeni
 
 **Zaktualizowano w [wersji 15,9](/visualstudio/releasenotes/vs2017-relnotes/)**
 
-| **Wersja** | **ID** | **Opis** |
+| **Wersja** | **#C1** | **Opis** |
 | ----------- | ------ | --------------- |
 | [Visual &nbsp; Studio Enterprise &nbsp; 2017](workload-component-id-vs-enterprise.md?vs-2017) | Microsoft. VisualStudio. Product. Enterprise | Rozwiązanie Microsoft DevOpse w zakresie produktywności i koordynacji w zespołach dowolnego rozmiaru |
 | [Visual &nbsp; Studio Professional &nbsp; 2017](workload-component-id-vs-professional.md?vs-2017) | Microsoft. VisualStudio. Product. Professional | Profesjonalne narzędzia i usługi dla małych zespołów |
@@ -45,7 +45,7 @@ Kliknij nazwy wersji w poniższej tabeli, aby wyświetlić dostępne obciążeni
 | [Visual &nbsp; Studio Test &nbsp; Professional &nbsp; 2017](workload-component-id-vs-test-professional.md?vs-2017) | Microsoft. VisualStudio. Product. TestProfessional | Visual Studio Test Professional 2017 |
 | [&nbsp;Klient opinii programu Visual Studio &nbsp; &nbsp; 2017](workload-component-id-vs-feedback-client.md?vs-2017) | Microsoft. VisualStudio. Product. FeedbackClient | Visual Studio Feedback Client 2017 |
 
-Aby uzyskać więcej informacji o sposobach korzystania z tych list, zobacz temat [Używanie parametrów wiersza polecenia do instalowania programu Visual studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) i [instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017) .
+Aby uzyskać więcej informacji o sposobach korzystania z tych list, zobacz temat [Używanie parametrów wiersza polecenia do instalowania programu Visual studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017&preserve-view=true) i [instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017&preserve-view=true) .
 
 ::: moniker-end
 
@@ -53,7 +53,7 @@ Aby uzyskać więcej informacji o sposobach korzystania z tych list, zobacz tema
 
 **Zaktualizowano w [wersji 16,7](/visualstudio/releases/2019/release-notes/)**
 
-| **Wersja** | **ID** | **Opis** |
+| **Wersja** | **#C1** | **Opis** |
 | ----------- | ------ | --------------- |
 | [Visual &nbsp; Studio Enterprise &nbsp; 2019](workload-component-id-vs-enterprise.md?vs-2019) | Microsoft. VisualStudio. Product. Enterprise | Rozwiązanie Microsoft DevOpse w zakresie produktywności i koordynacji w zespołach dowolnego rozmiaru |
 | [Visual &nbsp; Studio Professional &nbsp; 2019](workload-component-id-vs-professional.md?vs-2019) | Microsoft. VisualStudio. Product. Professional | Profesjonalne narzędzia i usługi dla małych zespołów |
@@ -66,7 +66,7 @@ Aby uzyskać więcej informacji o sposobach korzystania z tych list, zobacz tema
 Aby uzyskać więcej informacji o sposobach korzystania z tych list, zobacz stronę [Używanie parametrów wiersza polecenia do instalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) i [instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019) .
 
 > [!NOTE]
-> Aby uzyskać listę identyfikatorów obciążeń i składników dla poprzedniej wersji, zobacz artykuł dotyczący [obciążeń i składników programu Visual Studio 2017](workload-and-component-ids.md?view=vs-2017)
+> Aby uzyskać listę identyfikatorów obciążeń i składników dla poprzedniej wersji, zobacz artykuł dotyczący [obciążeń i składników programu Visual Studio 2017](workload-and-component-ids.md?view=vs-2017&preserve-view=true)
 
 ::: moniker-end
 

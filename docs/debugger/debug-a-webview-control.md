@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a96e4db66ec26870ac92c52209d7aa6f22225b21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0cab4a77c601414e766851aaf048fb3c32f6458
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350644"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211118"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Debugowanie kontrolki WebView w aplikacji platformy UWP
 
@@ -27,7 +27,7 @@ ms.locfileid: "85350644"
 
 - Otwórz [dom Explorer](../debugger/quickstart-debug-html-and-css.md) `WebView` wystąpienia i sprawdź elementy dom, zbadaj problemy z stylem CSS i przetestuj dynamicznie renderowane zmiany stylów.
 
-- Wybierz stronę sieci Web lub `iFrame` wyświetloną w `WebView` wystąpieniu jako element docelowy w oknie [konsoli JavaScript](../debugger/javascript-console-commands.md?view=vs-2017) , a następnie posługując się z tą stroną przy użyciu poleceń konsoli. Konsola zapewnia dostęp do bieżącego kontekstu wykonywania skryptu.
+- Wybierz stronę sieci Web lub `iFrame` wyświetloną w `WebView` wystąpieniu jako element docelowy w oknie [konsoli JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) , a następnie posługując się z tą stroną przy użyciu poleceń konsoli. Konsola zapewnia dostęp do bieżącego kontekstu wykonywania skryptu.
 
 ### <a name="attach-the-debugger-c-visual-basic-c"></a>Dołącz debuger (C#, Visual Basic, C++)
 
@@ -81,7 +81,7 @@ ms.locfileid: "85350644"
     > [!NOTE]
     > Za pomocą konsoli programu można `WebView` w danym momencie korzystać z pojedynczego, `iFrame` , udostępnić umowę lub proces roboczy sieci Web. Każdy element wymaga oddzielnego wystąpienia hosta platformy sieci Web (WWAHost.exe). Można korzystać z jednego hosta naraz.
 
-6. Wyświetlaj i Modyfikuj zmienne w aplikacji lub korzystaj z poleceń konsoli, zgodnie z opisem w [przewodniku szybki start: debugowanie](../debugger/quickstart-debug-javascript-using-the-console.md) [poleceń konsoli](../debugger/javascript-console-commands.md?view=vs-2017)JavaScript i JavaScript.
+6. Wyświetlaj i Modyfikuj zmienne w aplikacji lub korzystaj z poleceń konsoli, zgodnie z opisem w [przewodniku szybki start: debugowanie](../debugger/quickstart-debug-javascript-using-the-console.md) [poleceń konsoli](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)JavaScript i JavaScript.
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -16,16 +16,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e56350c2fd0583d3fef4e77e559a4df1fd894663
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348109"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211079"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Debugowanie kodu JavaScript przy użyciu konsoli programu Visual Studio
 
-Można użyć okna konsoli języka JavaScript do korzystania z i debugowania aplikacji platformy UWP utworzonych przy użyciu języka JavaScript. Te funkcje są obsługiwane w przypadku aplikacji i aplikacji platformy UWP utworzonych przy użyciu Visual Studio Tools Apache Cordova. Aby uzyskać informacje dotyczące poleceń konsoli, zobacz [JavaScript konsoli poleceń](../debugger/javascript-console-commands.md?view=vs-2017).
+Można użyć okna konsoli języka JavaScript do korzystania z i debugowania aplikacji platformy UWP utworzonych przy użyciu języka JavaScript. Te funkcje są obsługiwane w przypadku aplikacji i aplikacji platformy UWP utworzonych przy użyciu Visual Studio Tools Apache Cordova. Aby uzyskać informacje dotyczące poleceń konsoli, zobacz [JavaScript konsoli poleceń](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true).
 
 Okno konsoli JavaScript umożliwia:
 
@@ -39,7 +39,7 @@ Okno konsoli JavaScript umożliwia:
 
 - Wyświetlaj błędy i wyjątki języka JavaScript, a także wyjątki Document Object Model (DOM) i środowisko wykonawcze systemu Windows.
 
-- Wykonaj inne zadania, takie jak czyszczenie ekranu. Aby uzyskać pełną listę poleceń, zobacz [polecenia konsoli JavaScript](../debugger/javascript-console-commands.md?view=vs-2017) .
+- Wykonaj inne zadania, takie jak czyszczenie ekranu. Aby uzyskać pełną listę poleceń, zobacz [polecenia konsoli JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) .
 
 > [!TIP]
 > Jeśli okno konsoli JavaScript jest zamknięte, wybierz polecenie **Debuguj** >  **Windows**  >  **konsolę JavaScript** systemu Windows, aby je ponownie otworzyć. Okno jest wyświetlane tylko podczas sesji debugowania skryptu.
@@ -251,9 +251,9 @@ Możesz również przełączyć kontekst wykonywania za pomocą `cd` polecenia, 
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie aplikacji w programie Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
-- [Polecenia konsoli JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
+- [Polecenia konsoli JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [Odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md)
-- [Skróty klawiaturowe](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
+- [Skróty klawiaturowe](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017&preserve-view=true)
 - [Debugowanie przykładowego kodu HTML, CSS i JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [Szybki start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)
 - [Debugowanie kontrolki WebView](../debugger/debug-a-webview-control.md)

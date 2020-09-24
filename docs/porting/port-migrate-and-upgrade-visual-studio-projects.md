@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 9c16f16a8c44b50fd7c637dbd921fd8cd3779dc4
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: d4ed87e082e5c4fa2722a44fbbfe1dcef803f247
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713978"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211329"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Dokumentacja migracji i uaktualniania projektu dla programu Visual Studio
 
@@ -56,7 +56,7 @@ Jeśli nie widzisz w tym miejscu projektu lub typu pliku, który powinien być w
 | LightSwitch | LightSwitch nie jest już obsługiwany w programie Visual Studio 2017. Projekty utworzone za pomocą programu Visual Studio 2012 i wcześniejszych wersji otwartych w Visual Studio 2013 lub Visual Studio 2015 są uaktualnione i mogą być otwierane tylko w Visual Studio 2013 lub Visual Studio 2015. |
 | Narzędzia Microsoft Azure Tools for Visual Studio | Aby otworzyć te typy projektów, najpierw zainstaluj [zestaw Azure SDK dla platformy .NET](https://azure.microsoft.com/downloads/), a następnie otwórz projekt. W razie potrzeby projekt zostanie zaktualizowany. |
 | Model-View-Controller Framework (ASP.NET MVC) | Obsługa wersji MVC i programu Visual Studio:<ul><li>Program Visual Studio 2010 z dodatkiem SP1 obsługuje MVC 2 i MVC 3; Obsługa MVC 4 jest dodawana przez [ASP.NET 4 MVC 4 dla programu Visual Studio 2010 z dodatkiem SP1](https://www.microsoft.com/download/details.aspx?id=30683)</li><li>Program Visual Studio 2012 obsługuje tylko MVC 3 i MVC 4</li><li>Visual Studio 2013 obsługuje tylko MVC 4 i MVC 5</li><li>Visual Studio 2017 i Visual Studio 2015 obsługują MVC 4 (można otworzyć istniejące projekty, ale nie tworzyć nowych) i MVC 5</li></ul><br/>Uaktualnianie wersji MVC:<ul><li>Informacje o automatycznym uaktualnianiu z MVC 2 do MVC 3 można znaleźć w temacie [ASP.NET MVC 3 Application upgradeer](https://archive.codeplex.com/?p=aspnet).</li><li>Aby uzyskać informacje na temat ręcznego uaktualniania z MVC 2 do MVC 3, zobacz [uaktualnianie projektu ASP.NET MVC 2 do ASP.NET aktualizacji narzędzi MVC 3](https://archive.codeplex.com/?p=aspnet).</li><li>Aby uzyskać informacje na temat ręcznego uaktualniania z programu MVC3 do MVC 4, zobacz [uaktualnianie projektu ASP.NET MVC 3 do ASP.NET MVC 4](/aspnet/whitepapers/mvc4-release-notes). Jeśli projekt jest przeznaczony .NET Framework 3,5 z dodatkiem SP1, należy go przekierować do .NET Framework 4.</li><li>Aby uzyskać informacje o tym, jak ręcznie uaktualnić z MVC 4 do MVC 5, zobacz [jak uaktualnić projekt ASP.NET MVC 4 i internetowy interfejs API do ASP.NET MVC 5 i Web API 2](https://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2).</li></ul> |
-| Modelowanie | Jeśli zezwolisz programowi Visual Studio na automatyczne aktualizowanie projektu, możesz go otworzyć w programie Visual Studio 2015, Visual Studio 2013 lub Visual Studio 2012.<br/><br/>Format projektu modelowania nie został zmieniony między programem Visual Studio 2015 i Visual Studio 2017, a projekt można otworzyć i zmodyfikować w dowolnej wersji. Istnieją jednak różnice w działaniu w programie Visual Studio 2017:<ul><li>Projekty modelowania są teraz określane jako projekty "Walidacja zależności" w menu i szablonach.</li><li>Diagramy UML nie są już obsługiwane w programie Visual Studio 2017. Pliki UML są wymienione w Eksplorator rozwiązań jak wcześniej, ale są otwierane jako pliki XML. Użyj programu Visual Studio 2015 do wyświetlania, tworzenia i edytowania diagramów UML.</li><li>W programie Visual Studio 2017 Walidacja zależności architektury nie jest już wykonywana po skompilowaniu projektu modelowania. Zamiast tego, sprawdzanie poprawności jest wykonywane, ponieważ każdy projekt kodu jest skompilowany. Ta zmiana nie ma wpływu na projekt modelowania, ale wymaga wprowadzenia zmian w projektach kodu, które są weryfikowane. Program Visual Studio 2017 może automatycznie wprowadzić niezbędne zmiany w projektach kodu ([więcej informacji](../modeling/validate-code-with-layer-diagrams.md?view=vs-2017#live-dependency-validation)).</li></ul> |
+| Modelowanie | Jeśli zezwolisz programowi Visual Studio na automatyczne aktualizowanie projektu, możesz go otworzyć w programie Visual Studio 2015, Visual Studio 2013 lub Visual Studio 2012.<br/><br/>Format projektu modelowania nie został zmieniony między programem Visual Studio 2015 i Visual Studio 2017, a projekt można otworzyć i zmodyfikować w dowolnej wersji. Istnieją jednak różnice w działaniu w programie Visual Studio 2017:<ul><li>Projekty modelowania są teraz określane jako projekty "Walidacja zależności" w menu i szablonach.</li><li>Diagramy UML nie są już obsługiwane w programie Visual Studio 2017. Pliki UML są wymienione w Eksplorator rozwiązań jak wcześniej, ale są otwierane jako pliki XML. Użyj programu Visual Studio 2015 do wyświetlania, tworzenia i edytowania diagramów UML.</li><li>W programie Visual Studio 2017 Walidacja zależności architektury nie jest już wykonywana po skompilowaniu projektu modelowania. Zamiast tego, sprawdzanie poprawności jest wykonywane, ponieważ każdy projekt kodu jest skompilowany. Ta zmiana nie ma wpływu na projekt modelowania, ale wymaga wprowadzenia zmian w projektach kodu, które są weryfikowane. Program Visual Studio 2017 może automatycznie wprowadzić niezbędne zmiany w projektach kodu ([więcej informacji](../modeling/validate-code-with-layer-diagrams.md?view=vs-2017&preserve-view=true#live-dependency-validation)).</li></ul> |
 | Instalator MSI (VDPROJ) | Zobacz projekty InstallShield. |
 | Office 2007 VSTO | Wymaga jednokierunkowego uaktualnienia dla programu Visual Studio 2017. |
 | Pakiet VSTO pakietu Office 2010 | Jeśli projekt jest przeznaczony dla .NET Framework 4, można go otworzyć w programie Visual Studio 2010 z dodatkiem SP1 lub nowszym. Wszystkie inne projekty wymagają jednokierunkowego uaktualnienia. |
@@ -127,7 +127,7 @@ Staramy się zachować zgodność z poprzednimi wersjami, takich jak Visual Stud
 
 Poniższa lista zawiera opis obsługi projektów, które zostały utworzone we wcześniejszych wersjach programu Visual Studio 2019.
 
-Jeśli nie widzisz tutaj projektu lub typu pliku, który powinien być wymieniony w tym artykule, zapoznaj się z [wersją tego artykułu programu Visual Studio 2017](?view=vs-2017). Możesz również użyć przycisku **Wyślij opinię na temat**  >  **tej strony** w dolnej części tej strony, aby uzyskać szczegółowe informacje o projekcie. (W przypadku korzystania z anonimowego "czy ta strona jest przydatna?") nie możemy odpowiedzieć na Twoją opinię.
+Jeśli nie widzisz tutaj projektu lub typu pliku, który powinien być wymieniony w tym artykule, zapoznaj się z [wersją tego artykułu programu Visual Studio 2017](?view=vs-2017&preserve-view=true). Możesz również użyć przycisku **Wyślij opinię na temat**  >  **tej strony** w dolnej części tej strony, aby uzyskać szczegółowe informacje o projekcie. (W przypadku korzystania z anonimowego "czy ta strona jest przydatna?") nie możemy odpowiedzieć na Twoją opinię.
 
 | Typ projektu | Pomoc techniczna |
 | --- | --- |
@@ -200,7 +200,7 @@ Więcej informacji można znaleźć w następujących artykułach:
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Dokumentacja migracji i uaktualniania projektu dla programu Visual Studio 2017](?view=vs-2017)
+- [Dokumentacja migracji i uaktualniania projektu dla programu Visual Studio 2017](?view=vs-2017&preserve-view=true)
 - [Cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end
