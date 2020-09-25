@@ -46,8 +46,6 @@
           href: container-launch-settings.md
 - name: Tworzenie przy użyciu platformy Kubernetes
   items:
-    - name: Platforma Kubernetes w programie Visual Studio
-      href: tutorial-kubernetes-tools.md
     - name: Mostek na platformę Kubernetes
       href: bridge-to-kubernetes.md
     - name: Jak działa Mostek na platformę Kubernetes
