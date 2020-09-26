@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1a0bd657d9612bde05a820a591c2ab2c1cfdaad3
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a22e0f5a20050e62aa9978c40f2189c82ca3071c
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005532"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352328"
 ---
 # <a name="devinit-commands"></a>polecenia devinit
 
@@ -67,7 +67,7 @@ Określa ścieżkę do _devinit.jspliku. Jeśli plik nie zostanie określony, sz
 * {Current-Directory} \\.devinit.jsna
 * {Current-Directory} \\ . devinit \\.devinit.jsna
 
-Uwaga: ścieżki, które nie są `.` zależne od samego katalogu lub nazwy pliku, również będą zgodne.
+Ścieżki bez interlinii `.` lub nazwy pliku również będą zgodne.
 
 #### <a name="--error-action-argument"></a>--Error-Action — argument
 
@@ -87,7 +87,7 @@ Polecenia narzędzia echo, które zostałyby uruchomione, ale nie wykonują żad
 
 Emituj pełne dane wyjściowe do danych wyjściowych Standard. Jeśli narzędzie, które ma zostać wykonane, obsługuje opcję verbose, Propaguj pełny przełącznik do narzędzia.
 
-#### <a name="note-on-additional-command-line-arguments"></a>Uwaga dotycząca dodatkowych argumentów wiersza polecenia
+#### <a name="additional-command-line-arguments"></a>Dodatkowe argumenty wiersza polecenia
 
 Użycie `<arg>` , które zawiera spację w jej wartości, musi zawierać dodatkową parę cudzysłowów ucieczkowych.
 

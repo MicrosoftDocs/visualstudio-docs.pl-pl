@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 18e373dd8218c9019c2a5ec8a923fdbb2c24cf99
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: db777df991b48d1b6e26d40426d32c07a495efb1
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809521"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352180"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Co nowego w programie Visual Studio 2017
 
@@ -104,7 +104,7 @@ Aby wyświetlić listę rozszerzeń w programie Visual Studio, kliknij pozycję 
 
 Menedżer rozszerzenia roamingu śledzi wszystkie instalowane rozszerzenia, ale możesz wybrać, które z nich mają zostać dodane do listy roamingu.
 
-![Visual Studio 2017 — okno dialogowe rozszerzenia i aktualizacje](media/vs2017ide-RoamingExtensionManager.png)
+![Visual Studio 2017 — Menedżer rozszerzeń mobilnych](media/vs2017ide-RoamingExtensionManager.png)
 
 W przypadku korzystania z Menedżera rozszerzenia roamingu na liście istnieją trzy typy ikon:
 
@@ -222,7 +222,7 @@ Aby uzyskać więcej informacji, zobacz wpis w blogu [Korzystanie z nowego pomoc
 
 Możesz nawigować i przeglądać migawki przy użyciu przycisków **krok wstecz** i **dalej** na pasku narzędzi **debugowania** . Te przyciski służą do przechodzenia do zdarzeń, które pojawiają się na karcie **zdarzenia** w oknie **Narzędzia diagnostyczne** . Przechodzenie do tyłu lub w przód do zdarzenia automatycznie aktywuje debugowanie historyczne na wybranym zdarzeniu.
 
-![Okno dialogowe nowego pomocnika wyjątków w programie Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Przyciski do tyłu i do przodu")
+![Przykład kroku IntelliTrace w programie Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Przyciski do tyłu i do przodu")
 
 Aby uzyskać więcej informacji, zobacz stronę [Wyświetlanie migawek przy użyciu IntelliTrace kroku-back](../debugger/view-historical-application-state.md) .
 

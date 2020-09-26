@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 52faf3f8b736be9791f1738662aef1bd1b65939c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 9212add38f877e76aa3eaaa98c3d0d863c97d62e
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038559"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352286"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017
 
@@ -181,7 +181,7 @@ Debuger | Debuger just in Time | Microsoft. VisualStudio. Component. Debugger. J
 
 ## <a name="find-component-ids"></a>Znajdowanie identyfikatorów składników
 
-Lista składników posortowanych przez program Visual Studio jest w [obciążeniu i identyfikatorach składników programu Visual studio 2017](../install/workload-and-component-ids.md?view=vs-2019). Użyj tych identyfikatorów składników dla identyfikatorów wymagań wstępnych w manifeście.
+Lista składników posortowanych przez program Visual Studio jest w [obciążeniu i identyfikatorach składników programu Visual studio 2017](../install/workload-and-component-ids.md?view=vs-2019&preserve-view=true). Użyj tych identyfikatorów składników dla identyfikatorów wymagań wstępnych w manifeście.
 
 Jeśli nie masz pewności, który składnik zawiera określony plik binarny, Pobierz [Arkusz danych mapowania binarnego składnika >](https://aka.ms/vs2017componentid-binaries).
 

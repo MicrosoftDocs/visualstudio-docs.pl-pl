@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: cee62e02aa5b35108eec5024edf8eebb3848513f
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 9008c859c1bbf0a211e14ff5e777bea6cb3b5819
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211303"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352260"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -350,7 +350,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 | 15.0.0 | Release | 7 marca 2017 r. | 15.0.26228.4 |
 
 > [!NOTE]
-> Aby uzyskać więcej informacji o numerach kompilacji i datach wydania dla kolejnej wersji programu Visual Studio, zapoznaj się z informacjami na stronie [numery kompilacji i daty wydania programu Visual studio 2019](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019) .
+> Aby uzyskać więcej informacji o numerach kompilacji i datach wydania dla kolejnej wersji programu Visual Studio, zapoznaj się z informacjami na stronie [numery kompilacji i daty wydania programu Visual studio 2019](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019&preserve-view=true) .
 
 ::: moniker-end
 

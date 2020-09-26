@@ -11,20 +11,19 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 03ebd885f1fae1e7e12d76bb78e03bca0553bab8
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 4e30a333812e2c313f9e35934643bcea03cf054c
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006023"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352236"
 ---
 # <a name="require-psmodule"></a>require-psmodule
 
-`require-psmodule`Narzędzie służy do instalowania [modułu programu PowerShell](https://docs.microsoft.com/powershell/scripting/developer/module/understanding-a-windows-powershell-module?view=powershell-7&preserve-view=true) z [Galeria programu PowerShell](https://www.powershellgallery.com/) za pośrednictwem programu [install-module] ( https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true , aby można go było używać w skryptach programu PowerShell.
+`require-psmodule`Narzędzie to służy do instalowania [modułu programu PowerShell](https://docs.microsoft.com/powershell/scripting/developer/module/understanding-a-windows-powershell-module?view=powershell-7&preserve-view=true) z [Galeria programu PowerShell](https://www.powershellgallery.com/) za pomocą polecenia [Install-module](https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true), dzięki czemu można go używać w skryptach programu PowerShell.
 
->
->! Porada po zainstalowaniu modułu nadal trzeba go zaimportować do skryptu za pomocą polecenia [Import-Module](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/import-module?view=powershell-7&preserve-view=true).
->
+> [!TIP] 
+> Po zainstalowaniu modułu nadal trzeba go zaimportować do skryptu za pomocą polecenia [Import-Module](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/import-module?view=powershell-7&preserve-view=true).
 
 ## <a name="usage"></a>Użycie
 

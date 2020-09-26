@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9416862ad18bc297696e765d6664a4d08f2cc8dc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f331c794c50d6b6573ad9708da6d153c77f4d77c
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809914"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352352"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak tworzyć środowiska Python i zarządzać nimi w programie Visual Studio
 
@@ -124,7 +124,7 @@ Z tego powodu deweloperzy często tworzą *środowisko wirtualne* dla projektu. 
 
 Program Visual Studio zapewnia bezpośrednią pomoc techniczną dla tworzenia środowiska wirtualnego dla projektu. Na przykład w przypadku otwarcia projektu zawierającego *requirements.txt*lub utworzenia projektu na podstawie szablonu zawierającego ten plik program Visual Studio poprosi o automatyczne utworzenie środowiska wirtualnego i zainstalowanie tych zależności.
 
-W dowolnym momencie w otwartym projekcie można utworzyć nowe środowisko wirtualne. W **Eksplorator rozwiązań**rozwiń węzeł projektu, kliknij prawym przyciskiem myszy **środowisko Python**i wybierz polecenie "Dodaj środowisko wirtualne". Aby uzyskać więcej informacji, zobacz [Tworzenie środowiska wirtualnego](./selecting-a-python-environment-for-a-project.md?view=vs-2019#create-a-virtual-environment-1).
+W dowolnym momencie w otwartym projekcie można utworzyć nowe środowisko wirtualne. W **Eksplorator rozwiązań**rozwiń węzeł projektu, kliknij prawym przyciskiem myszy **środowisko Python**i wybierz polecenie "Dodaj środowisko wirtualne". Aby uzyskać więcej informacji, zobacz [Tworzenie środowiska wirtualnego](./selecting-a-python-environment-for-a-project.md?view=vs-2019&preserve-view=true#create-a-virtual-environment-1).
 
 Program Visual Studio udostępnia również polecenie generowania pliku *requirements.txt* ze środowiska wirtualnego, co ułatwia ponowne tworzenie środowiska na innych komputerach. Aby uzyskać więcej informacji, zobacz [Korzystanie z środowisk wirtualnych](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
@@ -159,7 +159,7 @@ Program Visual Studio udostępnia również polecenie generowania pliku *require
 
     | Pole | Opis |
     | --- | --- |
-    | Projekt | Projekt, w którym ma zostać utworzone środowisko (Jeśli masz wiele projektów w tym samym rozwiązaniu programu Visual Studio). |
+    | Project | Projekt, w którym ma zostać utworzone środowisko (Jeśli masz wiele projektów w tym samym rozwiązaniu programu Visual Studio). |
     | Nazwa | Nazwa środowiska Conda. |
     | Dodaj pakiety z | Wybierz **plik środowiska** , jeśli masz plik *Environment. yml* opisujący zależności lub wybierz co najmniej **jedną nazwę pakietu Anaconda** i Wyświetl co najmniej jeden pakiet w języku Python lub wersję języka Python w polu poniżej. Lista pakietów instruuje Conda o utworzeniu środowiska języka Python. Aby zainstalować najnowszą wersję środowiska Python, użyj programu `python` ; Aby zainstalować określoną wersję, użyj `python=,major>.<minor>` programu jako wersji `python=3.7` . Możesz również użyć przycisku pakiet, aby wybrać wersje środowiska Python i wspólne pakiety z serii menu. |
     | Ustaw jako bieżące środowisko | Aktywuje nowe środowisko w wybranym projekcie po utworzeniu środowiska. |
@@ -239,7 +239,7 @@ Wykonaj następujące kroki, aby zidentyfikować środowisko zainstalowane w lok
 
     ![Opcja środowiska niestandardowego w oknie dialogowym Dodawanie środowiska](media/environments/environments-custom-2-2019.png)
 
-1. W podanych polach w oknie dialogowym wpisz lub Przeglądaj (przy użyciu **...**) do ścieżki interpretera pod **ścieżką prefiksu**, która wypełnia większość innych pól. Po przejrzeniu tych wartości i zmodyfikowaniu w razie potrzeby wybierz pozycję **Dodaj**. 
+1. W podanych polach w oknie dialogowym wpisz lub Przeglądaj (przy użyciu **...**) do ścieżki interpretera pod **ścieżką prefiksu**, która wypełnia większość innych pól. Po przejrzeniu tych wartości i zmodyfikowaniu w razie potrzeby wybierz pozycję **Dodaj**.
 
     ![Pola, aby określić szczegóły dla opcji środowiska niestandardowego w oknie dialogowym Dodawanie środowiska](media/environments/environments-custom-3-2019.png)
 
@@ -271,7 +271,7 @@ Aby poprawić środowisko, w którym nie jest dostępna opcja naprawy lub aby us
     - Jeśli środowisko nadal istnieje na komputerze, Zmień wartość **ścieżka pliku wykonywalnego** na poprawną lokalizację. W razie potrzeby skoryguj również wartości **(domyślne)** i **WindowedExecutablePath** .
     - Jeśli środowisko nie istnieje już na komputerze i chcesz je usunąć z okna **środowiska języka Python** , Usuń węzeł nadrzędny **InstallPath**, taki jak **3,6** na powyższym obrazie.
     - Nieprawidłowe ustawienia w **HKEY_CURRENT_USER \software\python** zastąpić ustawienia w **HKEY_LOCAL_MACHINE \software\python**
-    
+
 ## <a name="see-also"></a>Zobacz też
 
 - [Instalowanie interpreterów języka Python](installing-python-interpreters.md)

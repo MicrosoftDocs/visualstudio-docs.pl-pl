@@ -12,20 +12,20 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0489950b9132a36aef8ecb3d8374c02d1a1aee2
-ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
+ms.openlocfilehash: d3fa48a7f571680cb9d26257fe4aa288aba15dbc
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90560739"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352206"
 ---
 # <a name="overview-of-source-code-analysis"></a>Przegląd analizy kodu źródłowego
 
-Analizatory .NET Compiler Platform (Roslyn) sprawdzają kod C# lub Visual Basic w celu uzyskania stylu, jakości, utrzymania, projektowania i innych problemów. Ta Inspekcja lub Analiza odbywa się w czasie projektowania we wszystkich otwartych plikach. 
+Analizatory .NET Compiler Platform (Roslyn) sprawdzają kod C# lub Visual Basic w celu uzyskania stylu, jakości, utrzymania, projektowania i innych problemów. Ta Inspekcja lub Analiza odbywa się w czasie projektowania we wszystkich otwartych plikach.
 
 Analizatory mogą być podzielone na następujące grupy:
 
-- Analizatory [stylów kodu](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019#convention-categories) są wbudowane w program Visual Studio. Identyfikator diagnostyki lub kod dla tych analizatorów ma format IDExxxx, na przykład IDE0067. Preferencje można skonfigurować na [stronie Opcje edytora tekstu](../ide/code-styles-and-code-cleanup.md) lub w [pliku EditorConfig](../ide/editorconfig-code-style-settings-reference.md). Począwszy od platformy .NET 5,0, analizatory stylów kodu są dołączone do zestawu .NET SDK i mogą być ściśle wymuszane jako ostrzeżenia lub błędy kompilacji. Aby uzyskać więcej informacji, zobacz [tutaj](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
+- Analizatory [stylów kodu](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) są wbudowane w program Visual Studio. Identyfikator diagnostyki lub kod dla tych analizatorów ma format IDExxxx, na przykład IDE0067. Preferencje można skonfigurować na [stronie Opcje edytora tekstu](../ide/code-styles-and-code-cleanup.md) lub w [pliku EditorConfig](../ide/editorconfig-code-style-settings-reference.md). Począwszy od platformy .NET 5,0, analizatory stylów kodu są dołączone do zestawu .NET SDK i mogą być ściśle wymuszane jako ostrzeżenia lub błędy kompilacji. Aby uzyskać więcej informacji, zobacz [tutaj](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
 - Analizatory [jakości kodu](code-analysis-warnings-for-managed-code-by-checkid.md) są teraz dołączone do zestawu SDK programu .NET 5 i domyślnie włączone. Identyfikator diagnostyki lub kod dla tych analizatorów ma format CAxxxx, na przykład CA1822. Aby uzyskać więcej informacji, zobacz [Omówienie analizy jakości kodu platformy .NET](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 
@@ -37,7 +37,7 @@ Każdy Analizator ma jeden z następujących poziomów ważności:
 
 | Ważność (Eksplorator rozwiązań) | Ważność (plik EditorConfig) | Zachowanie w czasie kompilacji | Zachowanie edytora |
 |-|-|-|
-| Błąd | `error` | Naruszenia są wyświetlane jako *Błędy* w Lista błędów i w danych wyjściowych kompilacji w wierszu polecenia i powodują niepowodzenie kompilacji.| Kod powodujący problemy jest podkreślony czerwoną czerwoną ramką na pasku przewijania. |
+| Error | `error` | Naruszenia są wyświetlane jako *Błędy* w Lista błędów i w danych wyjściowych kompilacji w wierszu polecenia i powodują niepowodzenie kompilacji.| Kod powodujący problemy jest podkreślony czerwoną czerwoną ramką na pasku przewijania. |
 | Ostrzeżenie | `warning` | Naruszenia są wyświetlane jako *ostrzeżenia* w Lista błędów i w danych wyjściowych kompilacji wiersza polecenia, ale nie powodują awarii kompilacji. | Kod powodujący problemy jest podkreślony zieloną, zieloną ramką na pasku przewijania. |
 | Info | `suggestion` | Naruszenia są wyświetlane jako *komunikaty* w Lista błędów, a nie w danych wyjściowych kompilacji wiersza polecenia. | Kod powodujący problemy jest podkreślony szarym i oznaczonym przez małe szare pole na pasku przewijania. |
 | Ukryty | `silent` | Niewidoczny dla użytkownika. | Niewidoczny dla użytkownika. Diagnostyka jest jednak raportowana w aparacie diagnostyki IDE. |
@@ -58,7 +58,7 @@ Wiele reguł analizatorów lub *diagnostyki*ma jedną lub więcej skojarzonych *
 
 ## <a name="configure-analyzer-severity-levels"></a>Konfigurowanie poziomów ważności analizatora
 
-Można skonfigurować ważność reguł analizatora lub *diagnostyki*, w [pliku EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) lub w [menu żarówki](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu). 
+Można skonfigurować ważność reguł analizatora lub *diagnostyki*, w [pliku EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) lub w [menu żarówki](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
 
 Analizatory można również skonfigurować w taki sposób, aby badali kod w czasie kompilacji i na żywo podczas pisania. Można skonfigurować zakres analizy kodu na żywo do wykonania tylko dla bieżącego dokumentu, wszystkie otwarte dokumenty lub całe rozwiązanie. Zobacz [jak to zrobić: Konfigurowanie zakresu analizy kodu na żywo](./configure-live-code-analysis-scope-managed-code.md).
 
@@ -97,7 +97,7 @@ Nie można skonfigurować ważności reguł z analizatorów, które zostały zai
 > [!div class="nextstepaction"]
 > [Korzystanie z analizatorów kodu w programie Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Analizatory — często zadawane pytania](analyzers-faq.md)
 - [Napisz własny analizator kodu](../extensibility/getting-started-with-roslyn-analyzers.md)

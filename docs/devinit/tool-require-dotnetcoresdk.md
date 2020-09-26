@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 201ee0a7384b5dce502151fc9d34d73bc19424a5
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c632378ff15e9b52e7145821f2e16d782b0326ac
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005785"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352295"
 ---
 # <a name="require-dotnetcoresdk"></a>require-dotnetcoresdk
 
@@ -40,7 +40,8 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 
 Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOptions` . Te argumenty są bezpośrednim przekazywaniem do argumentów używanych w skrypcie [instalacji dotnet](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) . Więcej informacji o dostępnych parametrach można znaleźć w [dokumentacji](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) skryptu [dotnet-Install](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) . W przypadku korzystania z programu upewnij się `additionalOptions` , że używasz nazw i formatów argumentów programu PowerShell.
 
-Uwaga: wszelkie dodatkowe wartości argumentu, który zawiera spację, muszą zawierać dodatkową parę cudzysłowów ucieczki (przy użyciu ukośnika odwrotnego). Przykład można zobaczyć w [przykładzie użycia](#example-usage) przy użyciu `-InstallDir` .
+> [!NOTE]
+> Każda dodatkowa wartość argumentu, który zawiera spację, musi zawierać dodatkową parę cudzysłowów ucieczki (przy użyciu ukośnika odwrotnego). Przykład można zobaczyć w [przykładzie użycia](#example-usage) przy użyciu `-InstallDir` .
 
 ### <a name="default-behavior"></a>Zachowanie domyślne
 

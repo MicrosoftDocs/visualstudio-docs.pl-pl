@@ -9,12 +9,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0aeb2341d905be8f34d47c477f35861b8575dc69
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037533"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352319"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Analizowanie wydajności bazy danych przy użyciu narzędzia bazy danych
 
@@ -50,8 +50,8 @@ Po znalezieniu zapytania, które chcesz zbadać, kliknij prawym przyciskiem mysz
 
 ![Wybierz wybrany plik źródłowy](./media/db-gotosource.png "Wybierz wybrany plik źródłowy")
 
-Jeśli wybierzesz zakres czasu na wykresie, w tabeli zapytania są wyświetlane tylko zapytania, które wystąpiły w tym zakresie czasu. To zachowanie jest szczególnie przydatne, gdy uruchamiasz również [Narzędzie użycie procesora CPU](./cpu-usage.md?view=vs-2019).
+Jeśli wybierzesz zakres czasu na wykresie, w tabeli zapytania są wyświetlane tylko zapytania, które wystąpiły w tym zakresie czasu. To zachowanie jest szczególnie przydatne, gdy uruchamiasz również [Narzędzie użycie procesora CPU](./cpu-usage.md?view=vs-2019&preserve-view=true).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Optymalizowanie ustawień profilera](../profiling/optimize-profiler-settings.md)
