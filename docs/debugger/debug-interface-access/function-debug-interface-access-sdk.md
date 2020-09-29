@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5438e68f7c46b870d6e259e038703c7f01f7cd9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c35ce4a58978cd14e274dd2b49c2bbc1bab4844
+ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468624"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91421786"
 ---
 # <a name="function-debug-interface-access-sdk"></a>Funkcja (Zestaw SDK dostępu do interfejsu debugowania)
 Każda funkcja jest identyfikowana przez `SymTagFunction` symbol.
@@ -25,7 +25,7 @@ Każda funkcja jest identyfikowana przez `SymTagFunction` symbol.
 ## <a name="properties"></a>Właściwości
  W poniższej tabeli przedstawiono właściwości, które są prawidłowe dla tego typu symbolu.
 
-|Właściwość|`Data type`|Opis|
+|Właściwość|Typ danych|Opis|
 |--------------|-----------------|-----------------|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Jedna z wartości [wyliczenia CV_access_e](../../debugger/debug-interface-access/cv-access-e.md), jeśli funkcja jest funkcją członkowską.|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Przesunięta część lokalizacji; Aby uzyskać szczegółowe informacje, zobacz [Wyliczenie LocationType](../../debugger/debug-interface-access/locationtype.md).|
@@ -73,7 +73,7 @@ Każda funkcja jest identyfikowana przez `SymTagFunction` symbol.
 |[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|Jeśli funkcja wirtualna, przesunięcie w tabeli funkcji wirtualnych.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Jeśli funkcja jest oznaczona jako nietrwała.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [CV_access_e, wyliczenie](../../debugger/debug-interface-access/cv-access-e.md)
 - [Hierarchia leksykalna typów symboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [LocationType, wyliczenie](../../debugger/debug-interface-access/locationtype.md)
