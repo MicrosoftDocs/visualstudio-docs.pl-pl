@@ -6,12 +6,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: 5444cdf8c82486f3669e82f7bb333607da2afc48
-ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
+ms.openlocfilehash: 08eb15914ad381fd81a838f5e09a1350bedff4fd
+ms.sourcegitcommit: 31f216b5f7491d5558de5b7ea4ebb0eb1faa3b9d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91421797"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91493312"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Wyłączanie rozpoznawania DPI w programie Visual Studio
 
@@ -45,7 +45,7 @@ Istnieją trzy opcje rozwiązania problemu z wyświetlaniem:
 - [Ustaw ustawienie skalowania ekranu na 100%](#set-your-display-scaling-setting-to-100)
 
 > [!TIP]
-> Jeśli wolisz zarządzać ustawieniami z poziomu wiersza polecenia, [`devenv.exe`](../ide/reference/devenv-command-line-switches.md)  przyjmuje `/noscale` jako parametr wiersza polecenia do uruchomienia w trybie skalowania 100%.
+> Jeśli wolisz zarządzać ustawieniami z poziomu wiersza polecenia, [`devenv.exe`](../ide/reference/devenv-command-line-switches.md) przyjmuje `/noscale` jako parametr wiersza polecenia do uruchomienia w trybie skalowania 100%.
 
 ### <a name="restart-visual-studio-as-a-dpi-unaware-process"></a>Uruchom ponownie program Visual Studio jako proces obsługujący rozdzielczość DPI
 
@@ -98,6 +98,6 @@ Jeśli chcesz później ponownie włączyć powiadomienia dotyczące skalowania,
 
 Jeśli przejście rozpoznawania DPI nie działa w oczekiwany sposób w programie Visual Studio, sprawdź, czy w `dpiAwareness` Edytorze rejestru znajduje się wartość w **HKEY_LOCAL_MACHINE \Software\microsoft\windows NT\CurrentVersion\Image wykonywanie pliku Options\devenv.exe** . Usuń wartość, jeśli jest obecna.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Automatyczne skalowanie w Windows Forms](/dotnet/framework/winforms/automatic-scaling-in-windows-forms)
