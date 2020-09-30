@@ -5,19 +5,19 @@ description: Lista wydanych wersji i numery kompilacji dla programu Visual Studi
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 09/22/2020
+ms.date: 09/29/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 9008c859c1bbf0a211e14ff5e777bea6cb3b5819
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: c00c37cc685cf6f0bd48ddf481a7c79d8ddcf77b
+ms.sourcegitcommit: 76845bf28da6d994666d5cdddfc5a2711d9a448d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352260"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91544803"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -29,6 +29,8 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.8.0 | Wersja zapoznawcza 3,2 | 29 września, 2020 | 16.8.30524.135 |
+| 16.7.5 | Release | 29 września, 2020 |  16.7.30523.141 |
 | 16.8.0 | Wersja zapoznawcza 3,1 | 22 września, 2020 | 16.8.30516.212 |
 | 16.7.4 | Release | 21 września 2020 r. | 16.7.30517.126 |
 | 16.8.0 | Wersja zapoznawcza 3 | 14 września 2020 | 16.8.30509.190 |
