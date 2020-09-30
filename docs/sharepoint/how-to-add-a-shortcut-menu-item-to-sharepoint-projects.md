@@ -1,5 +1,6 @@
 ---
 title: 'Instrukcje: Dodawanie elementu menu skrótów do projektów programu SharePoint | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e43d8d7717302eb8ab250935188bc2db3bdd66a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea862eb21aaee75499f3b1bac7007063227150e2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014847"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585852"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Instrukcje: Dodawanie elementu menu skrótów do projektów programu SharePoint
   Możesz dodać element menu skrótów do dowolnego projektu programu SharePoint. Element menu jest wyświetlany, gdy użytkownik kliknie prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań**.

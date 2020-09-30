@@ -1,5 +1,6 @@
 ---
 title: 'Instrukcje: Tworzenie odbiorcy zdarzeń dla określonego wystąpienia listy | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54c384742afba3d5af7f08ee62a9ec56c7f1438c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c37da8b798c3b6a0fdc093d5c443584f68b4b5cc
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016961"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585839"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Instrukcje: Tworzenie odbiorcy zdarzeń dla określonego wystąpienia listy
   Odbiorca zdarzenia wystąpienia listy odpowiada na zdarzenia występujące w dowolnym wystąpieniu definicji listy. Mimo że szablon odbiorcy zdarzeń nie umożliwia określania wartości docelowej określonego wystąpienia listy, można zmodyfikować odbiorcę zdarzeń, który jest objęty zakresem definicji listy w celu reagowania na zdarzenia w określonym wystąpieniu listy.

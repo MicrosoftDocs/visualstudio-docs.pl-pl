@@ -1,5 +1,6 @@
 ---
-title: 'Rozwiązania programu SharePoint: Tworzenie funkcji niestandardowej, reguły sprawdzania poprawności pakietów'
+title: Tworzenie funkcji walidacji pakietu dla rozwiązań SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f731b6af2ada8caddb84be5561d7f6dc304e7bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ac718d16383448ea13f01ad367d97f917bb42ed
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016911"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585826"
 ---
-# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Instrukcje: Tworzenie niestandardowych reguł walidacji pakietu dla rozwiązań SharePoint
+# <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>Tworzenie funkcji walidacji pakietu dla rozwiązań SharePoint
+
   Można utworzyć niestandardowe reguły walidacji w celu zweryfikowania pakietu rozwiązania wygenerowanego przez program Visual Studio. Można przeprowadzić pełną weryfikację całej funkcji lub pakietu, wybierając pozycję **Weryfikuj** z menu kontekstowego pakietu lub funkcji w **PackagingExplorer**. Częściowe sprawdzanie poprawności jest wykonywane po dodaniu nowych elementów projektu programu SharePoint lub funkcji do projektu w celu ustalenia, czy pakiet lub funkcja byłyby w prawidłowym stanie.
 
 ### <a name="to-create-a-custom-package-validation-rule"></a>Aby utworzyć niestandardową regułę walidacji pakietu
