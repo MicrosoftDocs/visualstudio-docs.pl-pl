@@ -7,12 +7,12 @@ helpviewer_keywords:
 - unit tests [Visual Studio for Mac]
 ms.author: jomatthi
 author: jmatthiesen
-ms.openlocfilehash: acf34677e8d9b477512763be3c43bb9df0c53c46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 758bdcb0d854247847e4d0d56152840643402bf4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88200999"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91580964"
 ---
 # <a name="testing-tools-in-visual-studio-for-mac"></a>Narzędzia do testowania w Visual Studio dla komputerów Mac
 
@@ -24,7 +24,7 @@ Aby rozpocząć testowanie, możesz utworzyć nowy projekt testowy w rozwiązani
 ![Okno dialogowe Nowy projekt z zaznaczoną sekcją testów > sieci Web i konsoli, pokazująca projekty xUnit, MSTest i NUnit](media/create-new-test-project.PNG)
 
 > [!NOTE]
-> Aby uzyskać więcej informacji na temat testowania jednostkowego aplikacji platformy .NET Core i wybierania platform testów jednostkowych, zobacz [testy jednostkowe w programie .NET Core i w .NET Standard](https://docs.microsoft.com/dotnet/core/testing/?pivots=xunit) dokumentacji.
+> Aby uzyskać więcej informacji na temat testowania jednostkowego aplikacji platformy .NET Core i wybierania platform testów jednostkowych, zobacz [testy jednostkowe w programie .NET Core i w .NET Standard](/dotnet/core/testing/?pivots=xunit) dokumentacji.
 
 ## <a name="running-tests"></a>Uruchamianie testów
 Okno **testy jednostkowe** służy do uruchamiania testów jednostkowych i jest otwierane za pomocą menu **Widok > konsole > testy jednostkowe** . Testy jednostkowe w rozwiązaniu są automatycznie wykrywane i wyświetlane w tym oknie, w którym można uruchomić wszystkie testy lub zestaw testów, które zostały wybrane.

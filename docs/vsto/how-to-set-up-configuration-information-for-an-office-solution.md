@@ -1,5 +1,6 @@
 ---
 title: Konfigurowanie informacji o konfiguracji dla rozwiązania pakietu Office
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8a0868019247e20b9154690469d4c291f1f8e0d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e47ad00e3f9e90913784196894d514a755699864
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545811"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91581042"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Instrukcje: Konfigurowanie informacji o konfiguracji dla rozwiązania pakietu Office
   Za pomocą plików konfiguracji można skonfigurować ustawienia specyficzne dla rozwiązań pakietu Office. Można określić ustawienia, takie jak zasady powiązań zestawu, obiekty zdalne, debugowanie i ustawienia śledzenia.

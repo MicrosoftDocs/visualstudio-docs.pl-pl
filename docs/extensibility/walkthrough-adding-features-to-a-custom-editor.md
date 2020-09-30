@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dc781160b5cc9cb60da12d063f5b6d11844f3ac
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: e0340b89ed87872833f554fb00e24aca2f4759f3
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012090"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583596"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Przewodnik: Dodawanie funkcji do edytora niestandardowego
 Po utworzeniu edytora niestandardowego można dodać do niego więcej funkcji.
@@ -34,11 +34,11 @@ Po utworzeniu edytora niestandardowego można dodać do niego więcej funkcji.
 
 3. Zaimplementuj fabrykę edytora przez skonfigurowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfejsu.
 
-     Aby uzyskać więcej informacji, zobacz [fabryki edytora](../vs-2015/extensibility/editor-factories.md?view=vs-2015).
+     Aby uzyskać więcej informacji, zobacz [fabryki edytora](../vs-2015/extensibility/editor-factories.md?view=vs-2015&preserve-view=true).
 
 4. Zdecyduj, czy edytor ma używać aktywacji w miejscu czy uproszczonego osadzania, aby zarządzać oknem obiektu widoku dokumentu.
 
-     Uproszczone okno edytora osadzania zawiera standardowy widok dokumentu, podczas gdy okno edytora aktywacji w miejscu obsługuje formant ActiveX lub inny aktywny obiekt jako widok dokumentu. Aby uzyskać więcej informacji, zobacz [uproszczone osadzanie](../extensibility/simplified-embedding.md) i [Aktywacja w miejscu](../vs-2015/misc/in-place-activation.md?view=vs-2015).
+     Uproszczone okno edytora osadzania zawiera standardowy widok dokumentu, podczas gdy okno edytora aktywacji w miejscu obsługuje formant ActiveX lub inny aktywny obiekt jako widok dokumentu. Aby uzyskać więcej informacji, zobacz [uproszczone osadzanie](../extensibility/simplified-embedding.md) i [Aktywacja w miejscu](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true).
 
 5. Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu w celu obsługi poleceń.
 
@@ -115,7 +115,7 @@ Po utworzeniu edytora niestandardowego można dodać do niego więcej funkcji.
 
 12. Zaimplementuj obsługę pomocy kontekstowej.
 
-     Ten krok pozwala udostępnić Pomoc F1 i dynamiczną obsługę okna pomocy dla elementów w edytorze. Aby uzyskać więcej informacji, zobacz [How to: zapewnianie kontekstu dla edytorów](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015).
+     Ten krok pozwala udostępnić Pomoc F1 i dynamiczną obsługę okna pomocy dla elementów w edytorze. Aby uzyskać więcej informacji, zobacz [How to: zapewnianie kontekstu dla edytorów](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015&preserve-view=true).
 
 13. Udostępnienie modelu obiektów automatyzacji z edytora przez implementację `IDispatch` interfejsu.
 
@@ -152,6 +152,6 @@ Po utworzeniu edytora niestandardowego można dodać do niego więcej funkcji.
 
   - `Window.Object`
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Współtworzenie modelu automatyzacji](../extensibility/internals/contributing-to-the-automation-model.md)

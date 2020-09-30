@@ -13,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea97c8784402c55947c108f42f2f3153f322d9c
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 9668336c565b4a3be332509d1c960b067a486785
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012389"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583635"
 ---
 # <a name="vscodewindowmanager-object"></a>Obiekt VSCodeWindowManager
 
-Usługa językowa implementuje Menedżera okien kodu i jest odpowiedzialna za zarządzanie zakończeniami (na przykład pasek listy rozwijanej). Aby uzyskać więcej informacji, zobacz [Dostosowywanie kodu w systemie Windows przy użyciu starszego interfejsu API](../vs-2015/extensibility/customizing-code-windows-by-using-the-legacy-api.md?view=vs-2015).
+Usługa językowa implementuje Menedżera okien kodu i jest odpowiedzialna za zarządzanie zakończeniami (na przykład pasek listy rozwijanej). Aby uzyskać więcej informacji, zobacz [Dostosowywanie kodu w systemie Windows przy użyciu starszego interfejsu API](../vs-2015/extensibility/customizing-code-windows-by-using-the-legacy-api.md?view=vs-2015&preserve-view=true).
 
 W poniższej tabeli przedstawiono interfejsy w `VSCodeWindowManager` obiekcie.
 

@@ -1,5 +1,6 @@
 ---
 title: 'Instrukcje: ochrona części dokumentów za pomocą kontrolek zawartości'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 813bb829e3be243a9812a8856bf4fcfa6de2fd22
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541352"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91581081"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Instrukcje: ochrona części dokumentów za pomocą kontrolek zawartości
   Ochrona części dokumentu uniemożliwia użytkownikom zmianę lub usunięcie zawartości w tej części dokumentu. Istnieje kilka sposobów ochrony części dokumentu programu Microsoft Office Word przy użyciu kontrolek zawartości:
