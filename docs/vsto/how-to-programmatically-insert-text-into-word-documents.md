@@ -1,5 +1,6 @@
 ---
 title: 'Instrukcje: Programowane wstawianie tekstu do dokumentów programu Word'
+titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aef597099964333771fd488e0541b4ea4daf4553
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbd73a60b05d48eea0252cec9881d6eefca6cdd2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541508"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585187"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Instrukcje: Programowane wstawianie tekstu do dokumentów programu Word
   Istnieją trzy podstawowe sposoby wstawiania tekstu do Microsoft Office dokumentów programu Word:

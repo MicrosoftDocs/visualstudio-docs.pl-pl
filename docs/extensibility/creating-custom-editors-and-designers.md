@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64edfe1088e7fb8888933d85eeef096bd8c2006a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fcc047794cc79ad2909bfaa1d9866fc0a2c0dc1e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012272"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584732"
 ---
 # <a name="create-custom-editors-and-designers"></a>Tworzenie niestandardowych edytorów i projektantów
 
@@ -59,7 +59,7 @@ Aby uzyskać informacje na temat edytora podstawowego programu Visual Studio, zo
 
 - Czy Edytor musi hostować kontrolki ActiveX?
 
-   Jeśli Edytor obsługuje kontrolki ActiveX, zaimplementuj Edytor aktywacji w miejscu, jak opisano w [aktywacji w miejscu](../vs-2015/misc/in-place-activation.md?view=vs-2015). Jeśli nie hostuje formantów ActiveX, użyj uproszczonego edytora osadzania lub Dostosuj [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Edytor domyślny.
+   Jeśli Edytor obsługuje kontrolki ActiveX, zaimplementuj Edytor aktywacji w miejscu, jak opisano w [aktywacji w miejscu](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true). Jeśli nie hostuje formantów ActiveX, użyj uproszczonego edytora osadzania lub Dostosuj [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Edytor domyślny.
 
 - Czy Edytor będzie obsługiwał wiele widoków? Jeśli chcesz, aby widoki edytora były widoczne w tym samym czasie co domyślny edytor, musisz obsługiwać wiele widoków.
 
@@ -93,7 +93,7 @@ Wyjaśnia, jak zaimplementować dane dokumentu i widoki dokumentów w edytorach 
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
-[Starsze interfejsy w edytorze](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015)\
+[Starsze interfejsy w edytorze](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015&preserve-view=true)\
 Wyjaśnia, jak uzyskać dostęp do podstawowego edytora za pomocą starszego interfejsu API.
 
 [Opracowywanie starszej wersji usługi językowej](../extensibility/internals/developing-a-legacy-language-service.md)\
@@ -102,6 +102,6 @@ Wyjaśnia sposób implementacji usługi językowej.
 [Rozszerzając inne części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
 Wyjaśnia, jak utworzyć elementy interfejsu użytkownika, które pasują do pozostałej części [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

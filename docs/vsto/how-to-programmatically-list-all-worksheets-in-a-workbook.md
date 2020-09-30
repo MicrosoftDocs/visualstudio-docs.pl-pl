@@ -1,5 +1,6 @@
 ---
 title: 'Instrukcje: programowe Wyświetlanie listy wszystkich arkuszy w skoroszycie'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 700aca059c6ef18f0c8e43aa127c99eaeee4fa2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b3132ee83d4752c0bc2f053e7c65e3c7b84831b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541456"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585174"
 ---
 # <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Instrukcje: programowe Wyświetlanie listy wszystkich arkuszy w skoroszycie
   <xref:Microsoft.Office.Interop.Excel.Workbook>Klasa udostępnia <xref:Microsoft.Office.Interop.Excel.Worksheets> obiekt. Ten obiekt zawiera kolekcję wszystkich <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektów w skoroszycie.

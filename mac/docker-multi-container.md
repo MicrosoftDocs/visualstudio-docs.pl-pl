@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 07/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: e46a66ab9ec05f8e7ad13091fdced01bffbd93b5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b883979921b3fa1493188a8d0fe75a1c493d5d97
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038676"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583999"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Tworzenie aplikacji z wieloma kontenerami przy użyciu narzędzia Docker Compose
 
@@ -84,7 +84,7 @@ Mamy teraz dwa projekty ASP.NET w naszym rozwiązaniu, a oba są skonfigurowane 
    ```
    
     > [!NOTE]
-    > W kodzie produkcyjnym nie należy zbyć się `HttpClient` po każdym żądaniu. Aby uzyskać najlepsze rozwiązania, zobacz [Używanie HttpClientFactory do implementowania odpornych żądań HTTP](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
+    > W kodzie produkcyjnym nie należy zbyć się `HttpClient` po każdym żądaniu. Aby uzyskać najlepsze rozwiązania, zobacz [Używanie HttpClientFactory do implementowania odpornych żądań HTTP](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
 
 1. W pliku *index. cshtml* Dodaj wiersz do wyświetlenia, aby `ViewData["Message"]` plik wyglądał jak poniższy kod:
 
@@ -102,7 +102,7 @@ Mamy teraz dwa projekty ASP.NET w naszym rozwiązaniu, a oba są skonfigurowane 
       </div>
       ```
   
-1. W projektach frontonu i interfejsu API sieci Web Dodaj komentarz do wywołania [Microsoft. AspNetCore. Builder. HttpsPolicyBuilderExtensions. UseHttpsRedirection](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) w `Configure` metodzie w *Startup.cs*, ponieważ ten przykładowy kod używa protokołu HTTP, a nie https, aby wywołać internetowy interfejs API.
+1. W projektach frontonu i interfejsu API sieci Web Dodaj komentarz do wywołania [Microsoft. AspNetCore. Builder. HttpsPolicyBuilderExtensions. UseHttpsRedirection](/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) w `Configure` metodzie w *Startup.cs*, ponieważ ten przykładowy kod używa protokołu HTTP, a nie https, aby wywołać internetowy interfejs API.
 
       ```csharp
                   //app.UseHttpsRedirection();

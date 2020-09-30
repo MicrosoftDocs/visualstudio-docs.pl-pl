@@ -1,5 +1,6 @@
 ---
 title: 'Przewodnik: zmiana danych buforowanych w skoroszycie na serwerze'
+titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a88fef7afe198dd15716570b1875ea257d19be8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16d3d69482476149b9a340cabe81e957f39ef6f8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985520"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584337"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Przewodnik: zmiana danych buforowanych w skoroszycie na serwerze
   W tym instruktażu przedstawiono sposób modyfikowania zestawu danych, który jest buforowany w Microsoft Office skoroszycie programu Excel bez uruchamiania programu Excel przy użyciu <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy.

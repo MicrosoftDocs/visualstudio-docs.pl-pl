@@ -1,5 +1,6 @@
 ---
 title: 'Przewodnik: powiązywanie danych z kontrolkami w okienku akcji programu Excel'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1543f872961d556674dd5ad6b3f5b8071d2d404b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3801aff53a5bf9a9a8d77263ab74127c1b2a9846
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253882"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585057"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Przewodnik: powiązywanie danych z kontrolkami w okienku akcji programu Excel
   W tym instruktażu przedstawiono powiązanie danych z kontrolkami w okienku Akcje w programie Microsoft Office Excel. Kontrolki ilustrują relację wzorzec/szczegóły między tabelami w bazie danych SQL Server.

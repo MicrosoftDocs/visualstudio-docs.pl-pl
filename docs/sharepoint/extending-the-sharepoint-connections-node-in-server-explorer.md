@@ -1,5 +1,6 @@
 ---
 title: Rozszerzanie węzła połączenia programu SharePoint w Eksplorator serwera | Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6615e02d84e1f252800597cb37666557e3c3fee6
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967360"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584610"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Rozwiń węzeł połączenia programu SharePoint w Eksplorator serwera
   W programie Visual Studio można nawiązać połączenie z lokalnymi witrynami programu SharePoint na komputerze deweloperskim przy użyciu węzła **połączenia programu SharePoint** w oknie **Eksplorator serwera** . Ten węzeł wyświetla wiele składników lokalnych witryn programu SharePoint w hierarchicznym widoku drzewa. Na przykład można wyświetlić listy, biblioteki dokumentów i typy zawartości w lokacjach lokalnych. Aby uzyskać więcej informacji na temat używania **Eksplorator serwera** do nawiązywania połączenia z lokalnymi witrynami programu SharePoint, zobacz [przeglądanie połączeń SharePoint przy użyciu Eksplorator serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).

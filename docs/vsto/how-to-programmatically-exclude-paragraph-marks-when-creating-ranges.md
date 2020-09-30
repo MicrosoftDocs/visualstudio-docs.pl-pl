@@ -1,5 +1,6 @@
 ---
 title: Wyklucz znaczniki akapitu w przypadku programistycznego tworzenia zakresów
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20d91aff6b09e659375494c387eea94ef05cc682
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa4686acb6a806fd97a78064214c6805a4b354e9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547436"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585200"
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Instrukcje: Programowane wykluczanie znaczników akapitu podczas tworzenia zakresów
   Za każdym razem, gdy tworzysz <xref:Microsoft.Office.Interop.Word.Range> obiekt na podstawie akapitu, wszystkie znaki niedrukowalne, takie jak znaczniki akapitu, są uwzględniane w zakresie. Możesz chcieć wstawić tekst z akapitu źródłowego do akapitu docelowego. Jeśli nie chcesz podzielić akapitu docelowego na oddzielne akapity, należy najpierw usunąć znacznik akapitu z akapitu źródłowego. Ponadto, ponieważ informacje o formatowaniu akapitu są przechowywane w znaczniku akapitu, nie należy uwzględniać tego, gdy wstawisz zakres do istniejącego akapitu.

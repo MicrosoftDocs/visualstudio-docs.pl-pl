@@ -1,5 +1,6 @@
 ---
 title: 'Przewodnik: proste powiązanie danych w projekcie na poziomie dokumentu'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981065"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584927"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Przewodnik: proste powiązanie danych w projekcie na poziomie dokumentu
   W tym instruktażu przedstawiono podstawowe informacje o powiązaniu danych w projekcie na poziomie dokumentu. Pojedyncze pole danych w bazie danych SQL Server jest powiązane z nazwanym zakresem w programie Microsoft Office Excel. W tym przewodniku pokazano również, jak dodać kontrolki, które umożliwiają przewijanie wszystkich rekordów w tabeli.

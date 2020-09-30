@@ -1,5 +1,6 @@
 ---
 title: Wdrażanie, publikowanie, & uaktualnianie pakietów rozwiązania SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8e55b01173e749395f60d189366a08907bdaccd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 574712b870256fa7422e64a3c29ae8733f4c2251
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444973"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583882"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Wdrażanie, publikowanie i uaktualnianie pakietów rozwiązania SharePoint
   Po opracowaniu rozwiązania SharePoint w programie Visual Studio można wdrożyć jego plik pakietu (wsp) na lokalnym serwerze programu SharePoint lub opublikować go na zdalnym lub lokalnym serwerze programu SharePoint. W przypadku wdrażania plików można dostosować sposób wdrażania plików pakietu (wsp).
@@ -46,7 +47,7 @@ ms.locfileid: "81444973"
 
 |Konfiguracja wdrożenia|Opis|
 |------------------------------|-----------------|
-|Domyślne|Domyślna konfiguracja wdrożenia. Wykonywane są następujące kroki wdrażania:<br /><br /> 1. Uruchom polecenie przed wdrożeniem.<br />2. Odtwórz pulę aplikacji usług IIS.<br />3. wycofywanie rozwiązania.<br />4. Dodaj rozwiązanie.<br />5. Aktywuj funkcje.<br />6. Uruchom polecenie po wdrożeniu.<br /><br /> Po odinstalowaniu pakietu są wykonywane następujące czynności wycofywania.<br /><br /> 1. Odtwórz pulę aplikacji usług IIS.<br />2. wycofywanie rozwiązania.|
+|Domyślny|Domyślna konfiguracja wdrożenia. Wykonywane są następujące kroki wdrażania:<br /><br /> 1. Uruchom polecenie przed wdrożeniem.<br />2. Odtwórz pulę aplikacji usług IIS.<br />3. wycofywanie rozwiązania.<br />4. Dodaj rozwiązanie.<br />5. Aktywuj funkcje.<br />6. Uruchom polecenie po wdrożeniu.<br /><br /> Po odinstalowaniu pakietu są wykonywane następujące czynności wycofywania.<br /><br /> 1. Odtwórz pulę aplikacji usług IIS.<br />2. wycofywanie rozwiązania.|
 |Brak aktywacji|Ta konfiguracja wdrożenia uruchamia te same kroki jak konfiguracja domyślna, ale pomija krok aktywacji.|
 
  Możesz utworzyć własne konfiguracje wdrożenia, aby ukończyć pojedynczy krok lub zmienić kolejność kroków w procesie wdrażania. Aby uzyskać więcej informacji, zobacz [How to: Edit a SharePoint Deployment Configuration](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).

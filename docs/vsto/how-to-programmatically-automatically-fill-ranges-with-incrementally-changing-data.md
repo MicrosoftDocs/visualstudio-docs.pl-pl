@@ -1,5 +1,6 @@
 ---
 title: Programistyczne wprowadzanie przyrostowo zakresów danych
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 076381c93d11c2d13bdd89ea5c36c0039e15ef71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1cdcc02fa3c33945ffc4824310f0957bdbdd2dd
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547475"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585317"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Instrukcje: Programowane automatyczne wypełnianie zakresów przyrostowo zmieniającymi się danymi
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>Metoda <xref:Microsoft.Office.Interop.Excel.Range> obiektu umożliwia wypełnienie zakresu w arkuszu z wartościami automatycznie. Najczęściej <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Metoda jest używana do przechowywania przyrostowo rosnących lub malejących wartości w zakresie. Możesz określić zachowanie, dostarczając opcjonalną stałą z <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> wyliczenia.

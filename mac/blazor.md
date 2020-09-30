@@ -10,18 +10,18 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 0dcc254366e0d652ab7a8442a4d0c526fd72c403
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 3280e63ae92a99cfa076b79e499a7b18952285c4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402544"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584038"
 ---
 # <a name="create-no-locblazor-web-apps"></a>Tworzenie Blazor aplikacji sieci Web
 
 Ten przewodnik zawiera wprowadzenie do tworzenia pierwszej Blazor aplikacji sieci Web. Aby uzyskać bardziej szczegółowe wskazówki, zobacz [wprowadzenie do ASP.NET Core Blazor ](/aspnet/core/blazor/index).
 
-ASP.NET Core Blazor obsługuje dwie różne opcje hostingu: Blazor WebAssembly (WASM) lub Blazor serwer. Visual Studio dla komputerów Mac obsługuje oba modele hostingu. Visual Studio dla komputerów Mac 8.4 + obsługuje Blazor serwer i Visual Studio dla komputerów Mac 8.6 +. Aby uzyskać więcej informacji na temat Blazor modeli hostingu, zobacz [ASP.NET Core Blazor modele hostingu ](https://docs.microsoft.com/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). Obsługa debugowania Blazor WebAssembly projektów w Visual Studio dla komputerów Mac jest dostępna w wersji zapoznawczej programu v 8.8 (dostępnej za pośrednictwem kanału aktualizacji w wersji zapoznawczej w programie **Visual Studio > Sprawdź dostępność aktualizacji...** menu).
+ASP.NET Core Blazor obsługuje dwie różne opcje hostingu: Blazor WebAssembly (WASM) lub Blazor serwer. Visual Studio dla komputerów Mac obsługuje oba modele hostingu. Visual Studio dla komputerów Mac 8.4 + obsługuje Blazor serwer i Visual Studio dla komputerów Mac 8.6 +. Aby uzyskać więcej informacji na temat Blazor modeli hostingu, zobacz [ASP.NET Core Blazor modele hostingu ](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). Obsługa debugowania Blazor WebAssembly projektów w Visual Studio dla komputerów Mac jest dostępna w wersji zapoznawczej programu v 8.8 (dostępnej za pośrednictwem kanału aktualizacji w wersji zapoznawczej w programie **Visual Studio > Sprawdź dostępność aktualizacji...** menu).
 
 Co to jest Blazor ? Blazor to platforma służąca do tworzenia interakcyjnego interfejsu użytkownika sieci Web po stronie klienta w programie .NET, który oferuje następujące korzyści dla deweloperów sieci Web:
 

@@ -1,5 +1,6 @@
 ---
 title: 'Przewodnik: Automatyzowanie aplikacji z niestandardowego okienka zadań'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5135e96125192d7ed125287aa47c839031824fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52474aeebfbc03fba2a2e119e1b3366c30cf6959
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68871939"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585083"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Przewodnik: Automatyzowanie aplikacji z niestandardowego okienka zadań
   W tym instruktażu przedstawiono sposób tworzenia niestandardowego okienka zadań, które automatyzuje program PowerPoint. Niestandardowe okienko zadań wstawia daty do slajdu, gdy użytkownik kliknie <xref:System.Windows.Forms.MonthCalendar> formant, który znajduje się w okienku zadania niestandardowego.
@@ -87,7 +88,7 @@ ms.locfileid: "68871939"
      [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]
      [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]
 
-3. Dodaj następujący kod do `MyUserControl` klasy. Ten kod deklaruje obiekt [Shape](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) jako element członkowski `MyUserControl` . W poniższym kroku użyjesz tego [kształtu](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) , aby dodać pole tekstowe do slajdu w aktywnej prezentacji.
+3. Dodaj poniższy kod do klasy `MyUserControl`. Ten kod deklaruje obiekt [Shape](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) jako element członkowski `MyUserControl` . W poniższym kroku użyjesz tego [kształtu](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) , aby dodać pole tekstowe do slajdu w aktywnej prezentacji.
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]
      [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]
@@ -108,7 +109,7 @@ ms.locfileid: "68871939"
 
 2. Kliknij prawym przyciskiem myszy pozycję **ThisAddIn.cs** lub **ThisAddIn. vb** i kliknij polecenie **Wyświetl kod**.
 
-3. Dodaj następujący kod do `ThisAddIn` klasy. Ten kod deklaruje wystąpienia `MyUserControl` <xref:Microsoft.Office.Tools.CustomTaskPane> elementów i jako elementy członkowskie `ThisAddIn` klasy.
+3. Dodaj poniższy kod do klasy `ThisAddIn`. Ten kod deklaruje wystąpienia `MyUserControl` <xref:Microsoft.Office.Tools.CustomTaskPane> elementów i jako elementy członkowskie `ThisAddIn` klasy.
 
      [!code-vb[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#4)]
      [!code-csharp[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#4)]

@@ -1,5 +1,6 @@
 ---
 title: 'Przewodnik: proste powiązanie danych w projekcie dodatku VSTO'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcfb150cc0b97b72fd0f6eac02f59ae1db3e9ca6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67264800fd2baa1ca685bcc578fb4d400e6538dd
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985403"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584914"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Przewodnik: proste powiązanie danych w projekcie dodatku VSTO
 

@@ -1,5 +1,6 @@
 ---
 title: 'Przewodnik: powiązywanie danych z kontrolkami w okienku akcji programu Word'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ddeba1539cf68d53f4b9f931d2bcd18a159028fd
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 05df38bf6056b392c0b991617316ba2c1c657306
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "64802663"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585070"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Przewodnik: powiązywanie danych z kontrolkami w okienku akcji programu Word
   Ten Instruktaż przedstawia powiązanie danych z kontrolkami w okienku Akcje w programie Word. Kontrolki ilustrują relację wzorzec/szczegóły między tabelami w bazie danych SQL Server.
@@ -235,7 +236,7 @@ ms.locfileid: "64802663"
 
 - Wdrażanie projektu. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przegląd okienka Akcje](../vsto/actions-pane-overview.md)
 - [Instrukcje: Dodawanie okienka akcji do dokumentów programu Word lub skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)

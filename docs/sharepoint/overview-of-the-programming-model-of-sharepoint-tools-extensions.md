@@ -1,5 +1,6 @@
 ---
 title: Omówienie modelu programowania rozszerzeń narzędzi SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 160751e7f580ede458232f98dc753a1145094f57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2f7b56b372f1f083b441a5d3e6045ffc7aff7ed
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985145"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585735"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Omówienie modelu programowania rozszerzeń narzędzi SharePoint
   Po utworzeniu rozszerzenia dla narzędzi programu SharePoint w programie Visual Studio Zacznij od zaimplementowania jednego lub większej liczby interfejsów rozszerzalności, które są udostępniane przez narzędzia programu SharePoint. W większości przypadków do zaimplementowania funkcji w rozszerzeniu są również używane inne typy udostępniane przez narzędzia programu SharePoint. W niektórych scenariuszach można także używać typów w innych modelach obiektów udostępnianych przez program Visual Studio i program SharePoint. Musisz zrozumieć przeznaczenie każdego z tych modeli obiektów i wiedzieć, jak z nich korzystać, aby utworzyć rozszerzenia dla narzędzi programu SharePoint.

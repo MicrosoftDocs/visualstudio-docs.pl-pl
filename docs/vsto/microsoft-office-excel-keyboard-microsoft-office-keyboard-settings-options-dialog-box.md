@@ -1,5 +1,6 @@
 ---
-title: Office Excel — klawiatura, ustawienia klawiatury, Opcje — okno dialogowe
+title: Office Excel — klawiatura, ustawienia, Opcje — okno dialogowe
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 090e943df2b61352c2342218c3c71c8f0e60eaad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b590f82d5f28c3a71e86e18dfe16b1c3e6c4c5a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836036"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584519"
 ---
-# <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office klawiatura programu Excel, ustawienia klawiatury Microsoft Office, okno dialogowe Opcje
+# <a name="microsoft-office-excel-keyboard-settings-options-dialog-box"></a>Microsoft Office klawiatura, ustawienia, Opcje — okno dialogowe
   Microsoft Office program Excel i program Visual Studio obsługują klawisze skrótów. Ta sama kombinacja klawiszy skrótu może być podstawą dla różnych poleceń w programie Excel i w programie Visual Studio. Gdy program Excel jest otwarty w projekcie na poziomie dokumentu w programie Visual Studio, tylko jedna aplikacja jednocześnie otrzymuje polecenia klawiszy skrótu. Domyślnie program Visual Studio otrzymuje wszystkie polecenia klawiszy skrótów, ale można sprawić, aby program Excel otrzymywał je, gdy dokument ma fokus, wybierając **dynamiczny schemat klawiatury**.
 
  Jeśli używasz klawisza skrótu, który nie jest przypisany do polecenia w aplikacji, która aktualnie obsługuje klawisze skrótów, klawisz skrótu jest przenoszona do innej aplikacji.

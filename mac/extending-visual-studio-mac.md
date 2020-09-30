@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: dd4db2502c65e9330bde5f475fc97b2e86a49e4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10beb7e95807a098cbe6efa89d02fdfa866bc2b8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80544026"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583986"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Rozszerzanie programu Visual Studio dla komputerów Mac
 
@@ -161,7 +161,7 @@ Aby uzyskać informacje na temat zakresu obszarów, które są dostępne do opra
 
 ## <a name="extending-the-new-editor"></a>Rozszerzanie nowego edytora
 
-W Visual Studio dla komputerów Mac [wprowadzono nowy interfejs użytkownika natywnego edytora tekstu](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes) w formacie kakao utworzony na podstawie tych samych warstw edytora z programu Visual Studio w systemie Windows.
+W Visual Studio dla komputerów Mac [wprowadzono nowy interfejs użytkownika natywnego edytora tekstu](/visualstudio/releasenotes/vs2019-mac-relnotes) w formacie kakao utworzony na podstawie tych samych warstw edytora z programu Visual Studio w systemie Windows.
 
 Jedną z wielu zalet udostępniania edytora między programem Visual Studio i Visual Studio dla komputerów Mac jest ten, że kod przeznaczony dla edytora programu Visual Studio można dostosować do uruchamiania na Visual Studio dla komputerów Mac.
 

@@ -1,5 +1,6 @@
 ---
 title: Dostosowywanie funkcji interfejsu użytkownika przy użyciu interfejsów rozszerzalności
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d28c9456afdc60b1bddadf759ec3090ba37f2040
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07b62903388012dac3459c86011e349f8053762c
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64783489"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583843"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Dostosowywanie funkcji interfejsu użytkownika przy użyciu interfejsów rozszerzalności
   Narzędzia programistyczne pakietu Office w programie Visual Studio udostępniają klasy i projektanci, którzy obsługują wiele szczegółów implementacji, gdy są używane do tworzenia niestandardowych okienek zadań, dostosowań Wstążki i regionów formularzy programu Outlook w dodatku VSTO. Można jednak również zaimplementować *interfejs rozszerzalności* dla każdej funkcji, jeśli masz specjalne wymagania.

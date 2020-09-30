@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ac0125586210164555b335644ce3dcc8128df17
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: eda858cc10bd07b1516b805360b5d7eb5e361b95
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011804"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584077"
 ---
 # <a name="commands-menus-and-toolbars"></a>Polecenia, menu i paski narzędzi
 Menu i paski narzędzi to sposób, w jaki użytkownicy uzyskują dostęp do poleceń w pakietu VSPackage. Polecenia to funkcje wykonujące zadania, takie jak drukowanie dokumentu, odświeżanie widoku lub tworzenie nowego pliku. Menu i paski narzędzi są wygodnym sposobem na prezentowanie poleceń użytkownikom. Zazwyczaj powiązane polecenia są klastrowane w tym samym menu lub pasku narzędzi.
@@ -26,7 +26,7 @@ Menu i paski narzędzi to sposób, w jaki użytkownicy uzyskują dostęp do pole
 
 - Paski narzędzi zwykle są wierszami przycisków i innych kontrolek, takimi jak pola kombi, pola listy, pola tekstowe i kontrolery menu. Wszystkie kontrolki paska narzędzi są skojarzone z poleceniami. Po kliknięciu przycisku paska narzędzi jego skojarzone polecenie jest uaktywniane. Przyciski paska narzędzi mają zwykle ikony sugerujące podstawowe polecenia, takie jak drukarka dla polecenia Print. W kontrolce listy rozwijanej każdy element na liście jest skojarzony z innym poleceniem. Kontroler menu jest hybrydowy, w którym jedna strona kontrolki jest przyciskiem paska narzędzi, a druga strona jest strzałką w dół, która wyświetla dodatkowe polecenia po kliknięciu. Aby uzyskać więcej informacji, zobacz [Dodawanie kontrolera menu do paska narzędzi](../../extensibility/adding-a-menu-controller-to-a-toolbar.md).
 
-- Podczas tworzenia polecenia należy również utworzyć procedurę obsługi zdarzeń. Program obsługi zdarzeń określa, kiedy polecenie jest widoczne lub włączone, umożliwia zmodyfikowanie tekstu i gwarantuje, że polecenie będzie odpowiadać odpowiednio ("trasy") po aktywowaniu. W większości wystąpień IDE obsługuje polecenia przy użyciu <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu. Polecenia w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] trasie w sposób hierarchiczny, zaczynając od wewnętrznego kontekstu poleceń, na podstawie wyboru lokalnego i przechodząc do zewnętrznego kontekstu, oparte na globalnym wyborze. Polecenia dodane do menu głównego są natychmiast dostępne dla skryptów. Aby uzyskać więcej informacji, zobacz [MenuCommands a OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015) i [obiekty kontekstu wyboru](../../extensibility/internals/selection-context-objects.md).
+- Podczas tworzenia polecenia należy również utworzyć procedurę obsługi zdarzeń. Program obsługi zdarzeń określa, kiedy polecenie jest widoczne lub włączone, umożliwia zmodyfikowanie tekstu i gwarantuje, że polecenie będzie odpowiadać odpowiednio ("trasy") po aktywowaniu. W większości wystąpień IDE obsługuje polecenia przy użyciu <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu. Polecenia w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] trasie w sposób hierarchiczny, zaczynając od wewnętrznego kontekstu poleceń, na podstawie wyboru lokalnego i przechodząc do zewnętrznego kontekstu, oparte na globalnym wyborze. Polecenia dodane do menu głównego są natychmiast dostępne dla skryptów. Aby uzyskać więcej informacji, zobacz [MenuCommands a OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true) i [obiekty kontekstu wyboru](../../extensibility/internals/selection-context-objects.md).
 
   Aby zdefiniować nowe menu i paski narzędzi, należy je opisać w pliku tabeli poleceń programu Visual Studio (*. vsct*). Szablon pakietu programu Visual Studio tworzy ten plik wraz z niezbędnymi elementami do obsługi poleceń, pasków narzędzi i edytorów wybranych w szablonie. Alternatywnie można napisać własny plik *. vsct* , używając schematu XML opisanego tutaj: [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md).
 

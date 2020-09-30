@@ -1,88 +1,99 @@
 ---
-title: Oferta programu Visual Studio i usługi GitHub | Microsoft Docs
+title: Visual Studio z usługą GitHub Enterprise | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 02/17/2020
+ms.date: 09/28/2020
 ms.topic: conceptual
-description: Dowiedz się więcej na temat nowej oferty programu Visual Studio i usługi GitHub
-ms.openlocfilehash: 1cbc1822498dacf3b5e5c5292db28425ced16357
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+description: Dowiedz się więcej o uzyskiwaniu dostępu do przedsiębiorstwa GitHub w ramach subskrypcji programu Visual Studio
+ms.openlocfilehash: 4c3943c9a6229e865bf90a24d12ecbc8b91d2fd5
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006101"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584178"
 ---
-# <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Wprowadzenie do subskrypcji programu Visual Studio za pomocą usługi GitHub Enterprise  
+# <a name="visual-studio-with-github-enterprise-subscriptions"></a>Visual Studio z subskrypcjami w przedsiębiorstwie GitHub
 
 Klienci, którzy mają umowę Enterprise Agreement (EA) z firmą Microsoft, mogą zakupić nową ofertę subskrypcji, która wiąże się z subskrypcjami programu Visual Studio w wersji Standard i usługi GitHub. Jest to prosty i ekonomiczny sposób, w jaki Subskrybenci programu Visual Studio mogą uzyskać przedsiębiorstwo w serwisie GitHub. 
 
 - Wprowadzaj innowacje na dużą skalę za pomocą programu Visual Studio i usługi GitHub, bezpieczniej dostarczając kod źródłowy, społeczność i najlepsze praktyki do środowiska IDE i przepływów pracy.
-- Korzystaj z najlepszych w klasie narzędzia deweloperskie i usługi dla deweloperów z najbardziej kompleksowym zestawem zasobów do tworzenia, wdrażania i zarządzania świetnymi aplikacjami. 
+- Korzystaj z najlepszych w swojej klasie narzędzi programistycznych i usług dla deweloperów z najbardziej kompleksowym zestawem zasobów do tworzenia i wdrażania doskonałych aplikacji oraz zarządzania nimi. 
 - Współpracuj, Zarządzaj żądaniami ściągnięcia w usłudze GitHub Enterprise i Przejrzyj kod źródłowy, gdzie został zapisany w edytorze. 
 
 ## <a name="whats-available"></a>Co jest dostępne? 
 
-Jeśli organizacja wprowadza nową umowę EA lub odnawia istniejący, dostępne są następujące opcje:
+Dostępne są następujące opcje:
 
 - Visual Studio Enterprise z usługą GitHub Enterprise
 - Visual Studio Professional z usługą GitHub Enterprise
 
-Jeśli Twoja organizacja ma umowę EA, która nie jest jeszcze związana z odnowieniem, możesz zakupić jednostkę SKU "krok po kroku" w celu dodania przedsiębiorstwa usługi GitHub do istniejących Visual Studio Enterprise lub Visual Studio Professional subskrypcji. Następnie po odnowieniu umowy można zakupić ofertę.
+Visual Studio Enterprise, Visual Studio Professional i GitHub Enterprise będą również nadal dostępne osobno. 
 
-Istniejące jednostki SKU dla Visual Studio Enterprise, Visual Studio Professional i GitHub Enterprise również będą nadal dostępne osobno. 
+Aby dowiedzieć się więcej na temat korzyści i opcji, odwiedź stronę <https://visualstudio.microsoft.com/subscriptions/visual-studio-github> . 
 
-Aby dowiedzieć się więcej na temat korzyści i opcji, odwiedź stronę https://visualstudio.microsoft.com/subscriptions/visual-studio-github . 
+## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Co to jest proces konfiguracji programu Visual Studio z usługą GitHub Enterprise?
 
-## <a name="getting-your-subscriptions"></a>Pobieranie subskrypcji
-
-Subskrypcje programu Visual Studio + Enterprise w witrynie GitHub są przypisane do dwóch części:
+Program Visual Studio z subskrypcjami w przedsiębiorstwie GitHub jest zarządzany w dwóch częściach:
 1. Subskrypcja programu Visual Studio (Enterprise lub Professional)
-2. Subskrypcja usługi GitHub Enterprise
+2. GitHub Enterprise 
 
-Gdy organizacja kupuje subskrypcje, są oni przypisani przez administratorów. Subskrypcje programu Visual Studio i subskrypcje usługi GitHub Enterprise są przypisywane osobno.  
+Po przypisaniu programu Visual Studio z subskrypcją usługi GitHub otrzymasz wiadomość e-mail z informacją o tym, że administrator subskrypcji programu Visual Studio przypisał subskrypcję do Ciebie.  W tym momencie będzie można wyświetlić dostępne korzyści z subskrypcji <https://my.visualstudio.com/benefits> .  Obejmuje to korzyść dla przedsiębiorstw w serwisie GitHub, jak pokazano poniżej.
 
-Jeśli masz przypisaną subskrypcję programu Visual Studio i GitHub, otrzymasz wiadomość e-mail z informacją o tym, że administrator subskrypcji programu Visual Studio przypisał subskrypcję do Ciebie.  W tym momencie będzie można go zobaczyć pod adresem https://my.visualstudio.com/subscriptions .  
+   > [!div class="mx-imgBorder"]
+   > ![Oczekująca Konfiguracja konta przedsiębiorstwa w witrynie GitHub Enterprise](_img/access-github/pending-account-setup.png "Organizacja musi najpierw skonfigurować konto przedsiębiorstwa.")  
 
-Ze względu na to, że subskrypcje usługi GitHub Enterprise są przypisywane oddzielnie, w zależności od tego, jak Twoja firma zdecydowała się zorganizować subskrypcje, może zostać wyświetlone powiadomienie od innego administratora.  Może być również opóźnienie między przypisaniem subskrypcji programu Visual Studio i subskrypcją usługi GitHub Enterprise, dlatego nie należy jej uwzględnić, jeśli nie są one natychmiast dostępne.  Proces przypisywania subskrypcji usługi GitHub jest bardziej skomplikowany i może zająć kilka dni roboczych.  
+Organizacja GitHub Enterprise jest zarządzana przez administratora usługi GitHub niezależnie od subskrypcji programu Visual Studio.  Gdy firma skonfiguruje konto w usłudze GitHub Enterprise, otrzymasz wiadomość e-mail z usługi GitHub z powiadomieniem, że Twoja subskrypcja programu Visual Studio została połączona, a kafelek korzyści zostanie zaktualizowany jak pokazano poniżej.  Konfigurowanie tego konta może potrwać trochę czasu i zależy od tego, czy firma zakończy proces instalacji. Po otrzymaniu wiadomości e-mail można skontaktować się z odpowiednim administratorem organizacji usługi GitHub w celu zażądania zaproszenia do organizacji i/lub repozytorium.  
 
-## <a name="getting-started-with-github"></a>Wprowadzenie do korzystania z usługi GitHub
+   > [!div class="mx-imgBorder"]
+   > ![Zaproszenia do serwisu GitHub Enterprise oczekujące na zaproszenie](_img/access-github/pending-invite.png "Skontaktuj się z administratorem usługi GitHub, aby zażądać zaproszenia do organizacji usługi GitHub.")  
 
-Jeśli dopiero zaczynasz w serwisie GitHub, Oto kilka zasobów, które mogą być pomocne:
+Po wysłaniu zaproszenia przez administratora organizacji usługi GitHub otrzymasz wiadomość e-mail z witryny GitHub, a kafelek korzyści zostanie zaktualizowany ponownie:
+
+   > [!div class="mx-imgBorder"]
+   > ![Zatwierdzenie zaproszenia na platformie GitHub Enterprise](_img/access-github/pending-acceptance.png "Zaakceptuj zaproszenie otrzymane w wiadomości e-mail z usługi GitHub")  
+
+Po zaakceptowaniu zaproszenia do organizacji GitHub stan wyświetlany na kafelku zmieni się z "oczekiwanie" na "aktywowany".
+
+   > [!div class="mx-imgBorder"]
+   > ![Aktywowane przedsiębiorstwo w serwisie GitHub](_img/access-github/activated.png "Po zatwierdzeniu zaproszenia kafelek będzie wskazywał, że Twoja subskrypcja została aktywowana.")  
+
+## <a name="get-started-with-github"></a>Wprowadzenie do usługi GitHub
+
+Jeśli dopiero zaczynasz w serwisie GitHub, Oto kilka przydatnych zasobów:
 
 | Temat                                  | Temat pomocy usługi GitHub                                     |
 |------------------------------------------|-------------------------------------------------------|
-| Pytania ogólne/informacje          | [Pomoc usługi GitHub](https://help.github.com/en)             |
-| Co to jest GitHub?  Jak mogę dowiedzieć się więcej?  | [About GitHub (Informacje o usłudze GitHub)](https://help.github.com/en/categories/about-github)                                       |
-| Jak mogę rozpocząć korzystanie z usługi GitHub?     | [Bootcamp (Szkolenie typu bootcamp)](https://help.github.com/en/categories/bootcamp)                                              |
-| Jak mogę zarządzać kontem użytkownika i profilem?       | [Konfigurowanie konta użytkownika usługi GitHub i zarządzanie nim](https://help.github.com/en/categories/setting-up-and-managing-your-github-user-account)    |
-| Jak mogę zarządzać moim dostępem do usługi GitHub?   | [Uwierzytelnianie w usłudze GitHub](https://help.github.com/en/categories/authenticating-to-github)                           |
-| Jak usługa GitHub używa i chroni moje dane? | [Zrozumienie, w jaki sposób usługi GitHub wykorzystują i chronią Twoje dane](https://help.github.com/en/categories/understanding-how-github-uses-and-protects-your-data)|
+| Pytania ogólne/informacje          | [Pomoc usługi GitHub](https://help.github.com)             |
+| Co to jest GitHub?  Jak mogę dowiedzieć się więcej?  | [About GitHub (Informacje o usłudze GitHub)](https://help.github.com/categories/about-github)                                       |
+| Jak mogę rozpocząć korzystanie z usługi GitHub?     | [Bootcamp (Szkolenie typu bootcamp)](https://help.github.com/categories/bootcamp)                                              |
+| Jak mogę zarządzać kontem użytkownika i profilem?       | [Konfigurowanie konta użytkownika usługi GitHub i zarządzanie nim](https://help.github.com/categories/setting-up-and-managing-your-github-user-account)    |
+| Jak mogę zarządzać moim dostępem do usługi GitHub?   | [Uwierzytelnianie w usłudze GitHub](https://help.github.com/categories/authenticating-to-github)                           |
+| Jak usługa GitHub używa i chroni moje dane? | [Zrozumienie, w jaki sposób usługi GitHub wykorzystują i chronią Twoje dane](https://help.github.com/categories/understanding-how-github-uses-and-protects-your-data)|
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
 ### <a name="q--where-is-my-github-subscription"></a>P: gdzie jest moja subskrypcja usługi GitHub?
-Odp.: proces konfigurowania subskrypcji usługi GitHub może chwilę potrwać.  Jeśli oczekujesz, że wszystko jest oczekujące, możesz skontaktować się z administratorem usługi GitHub.  Istnieje możliwość, że administrator nadal pracuje nad nim lub nie przypisał do Ciebie subskrypcji usługi GitHub. 
+Odp.: proces konfigurowania konta przedsiębiorstwa w serwisie GitHub może chwilę potrwać.  Jeśli oczekujesz, że wszystko jest oczekujące, możesz skontaktować się z administratorem usługi GitHub.  Istnieje możliwość, że administrator nadal pracuje nad nim lub nie został wybrany do utworzenia konta w witrynie GitHub Enterprise. 
 
-### <a name="q--how-do-i-reach-my-github-administrator"></a>P: Jak mogę skontaktować się z administratorem usługi GitHub?
-Odp.: Jeśli korzystasz z programu GitHub Enterprise Server, możesz wybrać link **obsługi** widoczny u dołu klienta, aby połączyć się z administratorem.
-
-### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>P: Czy mogę uzyskać pełną subskrypcję programu Visual Studio (Professional lub Enterprise), czy mogę tylko pobrać środowisko IDE z tą ofertą?
-Odp.: wraz z subskrypcją usługi GitHub Enterprise otrzymujesz pełną subskrypcję programu Visual Studio.  Otrzymujesz wszystkie korzyści, takie jak pobieranie oprogramowania, usługi Cloud Services, pomoc techniczna i korzyści dla partnerów zawarte w tych subskrypcjach, podobnie jak w przypadku zakupu subskrypcji osobno.
+### <a name="q-do-i-get-the-full-visual-studio-subscription-benefits"></a>P: Czy mogę uzyskać pełną korzyści z subskrypcji programu Visual Studio?
+Odp.: wraz z usługą GitHub Enterprise otrzymujesz wszystkie zalety standardowej subskrypcji programu Visual Studio, w tym pobrania oprogramowania, usług Cloud Services, pomocy technicznej i korzyści dla partnerów, podobnie jak w przypadku zakupu subskrypcji osobno.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
-- Odpowiedzi na pytania dotyczące szerokiej gamy tematów w serwisie GitHub można znaleźć w [pomocy usługi GitHub](https://help.github.com/en).
+- Dowiedz się więcej o przypisaniu usługi GitHub w witrynie [GitHub](https://docs.github.com/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)
+- Znajdź odpowiedzi na pytania dotyczące szerokiej gamy tematów w witrynie GitHub w [pomocy usługi GitHub](https://help.github.com).
+- Potrzebujesz dodatkowej pomocy?  Skontaktuj się z [pomocą techniczną usługi GitHub](https://support.github.com/)
 - Uzyskaj pomoc od innych użytkowników usługi GitHub na [forum społeczności usługi GitHub](https://github.community/).
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji programu Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 - Uzyskaj [Pomoc techniczną](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) dla przedsiębiorstw w witrynie GitHub.   
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
-- [Dokumentacja platformy Azure](/azure/)
-- [Dokumentacja Microsoft 365](/microsoft-365/)
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Jeśli dopiero zaczynasz pracę z usługą GitHub, zapoznaj się z [laboratorium uczenia usługi GitHub](https://lab.github.com/), które przeprowadzi Cię przez serię ciekawych i praktycznych projektów, udostępniając przydatne opinie w sposób.

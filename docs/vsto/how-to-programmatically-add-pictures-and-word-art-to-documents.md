@@ -1,5 +1,6 @@
 ---
 title: Programistyczne Dodawanie zdjęć i obiektów WordArt do dokumentów
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 621051c827b08e66d68bc348401c2a939e279bcf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e73473229a35bebb99eac03963fb43f880a39903
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538089"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585395"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Instrukcje: programowe Dodawanie zdjęć i rysunków programu Word do dokumentów
   Możesz dodawać obrazy i obiekty rysunkowe do dokumentów w czasie projektowania lub w czasie wykonywania. Obiekt WordArt umożliwia dodawanie dekoracyjnego tekstu do Microsoft Office dokumentów programu Word. Te specjalne efekty tekstowe to obiekty rysunkowe, które można dostosować i wstawić do dokumentu.

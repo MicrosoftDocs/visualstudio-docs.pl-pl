@@ -1,5 +1,6 @@
 ---
 title: 'Instrukcje: Programowane Dołączanie plików do elementów poczty e-mail programu Outlook'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6cde83fa59f45cbc45e56738f09ccf3099f5c02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2427ffc634976462e27eb788259184ce69347769
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546136"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585330"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Instrukcje: Programowane Dołączanie plików do elementów poczty e-mail programu Outlook
   Ten przykład dołącza plik do nowego elementu poczty i wysyła go do Armando Pinto. W przykładzie założono, że osoba o nazwie Armando Pinto istnieje jako odbiorca.

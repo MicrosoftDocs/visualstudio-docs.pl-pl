@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Tools dla scenariuszy instalacji środowiska uruchomieniowego pakietu Office
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54ca03e0af1b492b09b4c06c2fe0fc0b7e107443
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 95d183d2b767738156fc63f95d2a83ed6a1e5714
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810931"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584376"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools dla scenariuszy instalacji środowiska uruchomieniowego pakietu Office
   Program Visual Studio 2010 Tools for Office Runtime można zainstalować na trzy sposoby:
@@ -37,10 +38,10 @@ ms.locfileid: "90810931"
 
 |Scenariusz instalacji środowiska uruchomieniowego|Moduł ładujący rozwiązanie pakietu Office|Rozszerzenia pakietu Office dla .NET Framework 3,5|Rozszerzenia pakietu Office dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]|Rozszerzenia pakietu Office dla [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]|
 |-----------------------------------|----------------------------|--------------------------------------------------| - |---------------------------------------------------------------------------|
-|Z [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] i nowszymi|Yes|Tak, jeśli .NET Framework 3,5 jest już zainstalowany.|Yes|Yes|
-|Się [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Yes|Tak, jeśli .NET Framework 3,5 jest już zainstalowany.|Nie|Nie|
-|Z pakietem Office 2010 z dodatkiem Service Pack 1 (SP1) lub nowszym|Yes|Tak, jeśli .NET Framework 3,5 jest już zainstalowany.|Tak, jeśli [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] jest już zainstalowany.|Nie|
-|Z pakietem redystrybucyjnym środowiska uruchomieniowego|Yes|Tak, jeśli .NET Framework 3,5 jest już zainstalowany|Tak, jeśli [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] jest już zainstalowany.|Tak, jeśli [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] jest już zainstalowany.|
+|Z [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] i nowszymi|Tak|Tak, jeśli .NET Framework 3,5 jest już zainstalowany.|Tak|Tak|
+|Się [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Tak|Tak, jeśli .NET Framework 3,5 jest już zainstalowany.|Nie|Nie|
+|Z pakietem Office 2010 z dodatkiem Service Pack 1 (SP1) lub nowszym|Tak|Tak, jeśli .NET Framework 3,5 jest już zainstalowany.|Tak, jeśli [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] jest już zainstalowany.|Nie|
+|Z pakietem redystrybucyjnym środowiska uruchomieniowego|Tak|Tak, jeśli .NET Framework 3,5 jest już zainstalowany|Tak, jeśli [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] jest już zainstalowany.|Tak, jeśli [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] jest już zainstalowany.|
 
 ### <a name="install-the-runtime-with-visual-studio-or-the-microsoft-office-developer-tools-for-visual-studio"></a>Zainstaluj środowisko uruchomieniowe w programie Visual Studio lub Microsoft Office Developer Tools for Visual Studio
  Po zainstalowaniu narzędzi programistycznych pakietu Office w programie Visual Studio rozszerzenia pakietu Office dla programu [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] i programu [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] są zawsze zainstalowane na komputerze deweloperskim. Rozszerzenia pakietu Office dla .NET Framework 3,5 są instalowane tylko wtedy, gdy .NET Framework 3,5 jest już obecny na komputerze deweloperskim. W przypadku zainstalowania .NET Framework 3,5 po zainstalowaniu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] programu środowisko uruchomieniowe automatycznie zainstaluje rozszerzenia pakietu Office dla .NET Framework 3,5 przy pierwszym utworzeniu projektu pakietu Office, który jest przeznaczony dla .NET Framework 3,5.

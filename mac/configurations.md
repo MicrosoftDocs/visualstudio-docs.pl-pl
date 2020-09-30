@@ -5,18 +5,18 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: d1511434a34017a7f0f7da65fe1ea6956d45d497
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 911d8d3a65c414bc3c98494bda75c46b778e5b2b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71128398"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584025"
 ---
 # <a name="understanding-build-configurations"></a>Ogólne informacje o konfiguracjach kompilacji
 
 Można przechowywać różne konfiguracje rozwiązań i właściwości projektu do użycia w różnych rodzajach kompilacji podczas procesu tworzenia. Projekty utworzone przez Visual Studio dla komputerów Mac przy użyciu szablonu zwykle obejmują konfiguracje debugowania i wydania, które obsługują debugowanie aplikacji i wdrożenia aplikacji. 
 
-Jeśli chcesz utworzyć niestandardowe konfiguracje, zobacz [Tworzenie i edytowanie konfiguracji kompilacji](/visualstudio/mac/create-and-edit-configurations).
+Jeśli chcesz utworzyć niestandardowe konfiguracje, zobacz [Tworzenie i edytowanie konfiguracji kompilacji](./create-and-edit-configurations.md).
 
 >[!NOTE]
 >Ten temat ma zastosowanie do Visual Studio dla komputerów Mac. W przypadku programu Visual Studio w systemie Windows Zobacz [Omówienie konfiguracji kompilacji](/visualstudio/ide/understanding-build-configurations).

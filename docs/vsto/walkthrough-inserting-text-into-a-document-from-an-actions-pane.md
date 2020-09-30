@@ -1,5 +1,6 @@
 ---
 title: 'Przewodnik: wstawianie tekstu do dokumentu z okienka akcji'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64836672"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584966"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Przewodnik: wstawianie tekstu do dokumentu z okienka akcji
   W tym instruktażu przedstawiono sposób tworzenia okienka akcji w dokumencie programu Microsoft Office Word. Okienko akcje zawiera dwie kontrolki, które zbierają dane wejściowe, a następnie wysyłają tekst do dokumentu.

@@ -1,5 +1,6 @@
 ---
 title: 'Przewodnik: Tworzenie szablonu za pomocą kontrolek zawartości'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ffb7d7f9ad5453d38709802bf5e004c07bb09622
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30f2443c724d547afe3c510e64f2c50fd9dd4db9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255591"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585031"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Przewodnik: Tworzenie szablonu za pomocą kontrolek zawartości
   W tym instruktażu pokazano, jak utworzyć dostosowanie na poziomie dokumentu, które używa formantów zawartości do tworzenia zawartości strukturalnej i wielokrotnego użytku w szablonie programu Microsoft Office Word.
@@ -139,7 +140,7 @@ ms.locfileid: "71255591"
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **ThisDocument.cs** lub **ThisDocument. vb**, a następnie kliknij polecenie **Wyświetl kod**.
 
-2. Dodaj następujący kod do `ThisDocument` klasy. Ten kod deklaruje kilka obiektów, które zostaną użyte w dalszej części tego przewodnika.
+2. Dodaj poniższy kod do klasy `ThisDocument`. Ten kod deklaruje kilka obiektów, które zostaną użyte w dalszej części tego przewodnika.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]
