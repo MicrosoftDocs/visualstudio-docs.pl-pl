@@ -1,8 +1,8 @@
 ---
-title: 'Dokumentacja programu Visual Studio: co nowego w sierpniu 2020 '
+title: 'Dokumentacja programu Visual Studio: co nowego we wrześniu 2020 '
 titleSuffix: ''
-description: Co nowego w dokumentacji programu Visual Studio dla sierpnia 2020.
-ms.date: 09/02/2020
+description: Co nowego w dokumentacji programu Visual Studio dla 2020 września.
+ms.date: 09/30/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,131 +15,92 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2411299fbab6dfba8ced0f689bd33825b62614af
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6abee067465a0595b75df42d05213f9694dd7ed4
+ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808984"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621740"
 ---
-# <a name="visual-studio-docs-whats-new-for-august-2020"></a>Dokumentacja programu Visual Studio: co nowego w sierpniu 2020
+# <a name="visual-studio-docs-whats-new-for-september-2020"></a>Dokumentacja programu Visual Studio: co nowego we wrześniu 2020
 
-Witamy w nowościach w dokumentacji programu Visual Studio dla sierpnia 2020. W tym artykule wymieniono niektóre istotne zmiany w dokumentach w tym okresie. Aby uzyskać informacje na temat Nowości w poprzednich miesiącach, zobacz temat [co to jest historia](whats-new-visual-studio-docs-history.md) nowości.
-
-## <a name="azure"></a>Azure
-
-**Nowe artykuły**
-
-- [Dodawanie Application Insights platformy Azure przy użyciu usług połączonych programu Visual Studio](../azure/azure-app-insights-add-connected-service.md) — usługi połączone dla programu VS 2019 16,7
-- [Dodawanie pamięci podręcznej platformy Azure dla Redis przy użyciu usług połączonych programu Visual Studio](../azure/azure-cache-for-redis-add-connected-service.md) — usługi połączone dla programu VS 2019 16,7
-- [Dodawanie Azure Cosmos DB do aplikacji przy użyciu usług połączonych programu Visual Studio](../azure/azure-cosmosdb-add-connected-service.md) — połączone usługi dla programu VS 2019 16,7
-- [Dodaj usługę Azure sygnalizacji przy użyciu usług połączonych programu Visual Studio](../azure/azure-signalr-add-connected-service.md) — połączone usługi dla programu VS 2019 16,7
-- [Dodaj połączenie z](../azure/azure-sql-database-add-connected-service.md) usługami połączonymi Azure SQL Database dla programu VS 2019 16,7
-
-**Zaktualizowane artykuły**
-
-- [Dodawanie usługi Azure Storage przy użyciu usług połączonych programu Visual Studio](../azure/vs-azure-tools-connected-services-storage.md)
-  - Usługi połączone dla programu VS 2019 16,7
-  - Artykuł usługi połączone z usługą Azure Storage: obsługiwane typy interfejsu użytkownika i projektu
+Witamy w nowościach w dokumentacji programu Visual Studio dla 2020 września. W tym artykule wymieniono niektóre istotne zmiany w dokumentach w tym okresie. Aby uzyskać informacje na temat Nowości w poprzednich miesiącach, zobacz temat [co to jest historia](whats-new-visual-studio-docs-history.md) nowości.
 
 ## <a name="code-quality"></a>Jakość kodu
 
 **Nowe artykuły**
 
-- [CA1310: Określ StringComparison do poprawnego](../code-quality/ca1310.md) — Dodaj dokumentację dla CA1310 i dokumentację aktualizacji dla CA1307
-- [CA1837: Użyj środowiska Environment. ProcessId zamiast procesu. GetCurrentProcess (). ID](../code-quality/ca1837.md) -docs dla CA1837
-- [CA1838: Unikaj `StringBuilder` parametrów dla P/Invoke](../code-quality/ca1838.md) -Dodaj dokumentację dla CA1838
-- [CA2008: nie twórz zadań bez przekazywania TaskScheduler](../code-quality/ca2008.md) — Dodawanie dokumentacji dla CA2008
-- [CA2249: Rozważ użycie ciągu. Contains zamiast String. IndexOf](../code-quality/ca2249.md) -docs dla CA2249
-- [CA2361: Upewnij się, że automatycznie wygenerowana Klasa zawierająca zestaw danych. ReadXml () nie jest używana z niezaufanymi danymi](../code-quality/ca2361.md) — więcej reguł zestawu danych/obiektów DataTable
-- [CA2362: niebezpieczny zestaw danych lub DataTable w wygenerowanym automatycznie typie możliwym do serializacji może być narażony na ataki zdalnego wykonywania kodu](../code-quality/ca2362.md) — więcej reguł zestawu danych/obiektów DataTable
-- [IL3000: Unikaj używania dostępu do ścieżki pliku zestawu podczas publikowania jako jednoplikowej](../code-quality/il3000.md) dokumentacji do IL3000
-- [IL3001: Unikaj uzyskiwania dostępu do ścieżki pliku zestawu podczas publikowania jako pojedynczy plik](../code-quality/il3001.md) — Dodaj dokumenty dla IL3001
+- [CA1416: sprawdzanie zgodności platformy](../code-quality/ca1416.md) — dokumentowanie CA1416 sprawdzanie zgodności platformy
+- [CA1834: Użyj StringBuilder. Append (Char) dla ciągów z pojedynczym znakiem](../code-quality/ca1834.md) — docs dla CA1834
 
 **Aktualny**
 
-- [CA1002: nie ujawniaj list ogólnych](../code-quality/ca1002.md) — Dodaj określając — sekcja powierzchni interfejsu API
-- [CA1046: nie należy przeciążać operatora Equals w typach referencyjnych](../code-quality/ca1046.md) — Dodaj określając — sekcja powierzchni
-- [CA1307: Określ StringComparison dla przejrzystości](../code-quality/ca1307.md) — Dodaj dokumentację dla CA1310 i dokumentację aktualizacji dla CA1307
-- [CA1700: nie należy określać wartości wyliczeniowych &#39;zastrzeżony&#39;](../code-quality/ca1700.md) — Dodaj określając — sekcja powierzchni
-- [CA1707: identyfikatory nie powinny zawierać podkreśleń](../code-quality/ca1707.md) — Dodawanie określającej sekcji powierzchni interfejsu API
-- [CA1822: Oznacz elementy członkowskie jako](../code-quality/ca1822.md) częściowe Dodawanie określając-interfejsu API
-- [CA2351: Upewnij się, że dane wejściowe DataSet. ReadXml () są](../code-quality/ca2351.md) regułami zaufania-więcej zestawów danych/obiektów DataTable
-- [Zainstaluj analizatory innych firm](../code-quality/install-roslyn-analyzers.md) — Zmieniono strukturę i tytuły dla dokumentacji analizy kodu
+- [Konfigurowanie analizatorów jakości kodu platformy .NET przy użyciu EditorConfig](../code-quality/configure-fxcop-analyzers.md)
+  - Kilka małych poprawek do refaktoryzacji dokumentów urzędu certyfikacji
+  - Aktualizacje analizy kodu dla refaktoryzacji platformy .NET
+- [Przegląd analizy kodu źródłowego](../code-quality/roslyn-analyzers-overview.md) — aktualizacje analizy kodu dla refaktoryzacji platformy .NET
+- [Konfiguruj analizę jakości kodu](../code-quality/use-roslyn-analyzers.md) — aktualizacje analizy kodu dla refaktoryzacji platformy .NET
 
 ## <a name="containers"></a>Kontenery
 
-**Zaktualizowane artykuły**
-
-- [Wdrażanie kontenera ASP.NET w rejestrze kontenerów za pomocą programu Visual Studio](../containers/hosting-web-apps-in-docker.md) — aktualizacje narzędzi do kontenerów dla programu visual Studio 16,7 — interfejs użytkownika publikacji
-- [Wprowadzenie do narzędzi Visual Studio Kubernetes Tools](../containers/tutorial-kubernetes-tools.md) — samouczek Kubernetes: Dodawanie kroków do usunięcia
-
-## <a name="deployment"></a>Wdrożenie
-
 **Nowe artykuły**
 
-- [Instalator programu Visual Studio rozszerzenia projektów i .NET Core 3,1](../deployment/installer-projects-net-core.md) — Tworzenie nowej strony pomocy dla funkcji projekty Instalatora platformy .net Core 3,1
+- [Korzystanie z programu Bridge do Kubernetes](../containers/bridge-to-kubernetes.md) — proces lokalny z oznaczeniem Kubernetes do mostka do Kubernetes
+- [Jak działa mostek Kubernetes](../containers/overview-bridge-to-kubernetes.md) — proces lokalny z oznaczeniem Kubernetes do mostka do Kubernetes
+
+## <a name="deployment"></a>Wdrożenie
 
 **Zaktualizowane artykuły**
 
 - [Wdrażanie aplikacji w folderze, usługach IIS, na platformie Azure lub w innych](../deployment/deploying-applications-services-and-components-resources.md) aktualizacjach wdrożenia docelowego
-- [Wdrożenie w programie Visual Studio](../deployment/index.yml) — aktualizacje wdrożenia
-
-## <a name="extensibility"></a>Rozszerzalność
-
-**Zaktualizowane artykuły**
-- [Podtypy projektu](../extensibility/internals/project-subtypes.md) — wcięcie elementów listy poprawek
-- [Odwołanie do wartości koloru dla programu Visual Studio](../extensibility/ux-guidelines/color-value-reference-for-visual-studio.md) -AB # 1759333 poprawka braku nagłówków kolumn
-
-## <a name="get-started"></a>Rozpoczęcie pracy
-
-**Zaktualizowane artykuły**
-
-- [Krok 5. wdrażanie aplikacji ASP.NET Core na platformie Azure](../get-started/csharp/tutorial-aspnet-core-ef-step-05.md) — aktualizacje samouczka wideo dla nowego interfejsu użytkownika połączonych usług
+- [Wdrażanie aplikacji w folderze przy użyciu programu Visual Studio](../deployment/quickstart-deploy-to-local-folder.md) — aktualizacje wdrożenia
 
 ## <a name="ide"></a>IDE
 
 **Nowe artykuły**
 
-- [Zmień klawisz pomocy F1 w programie Visual Studio](./not-in-toc/change-f1-help-key.md) — domyślna strona pomocy F1
-- [F1 Pomoc dla edytora tekstu](./not-in-toc/default-f1-text-editor.md) — Strona pomocy dla domyślnego klawisza F1
-- [Konwersja `typeof` na `nameof` ](./reference/convert-typeof-to-nameof.md) -Convert typeof do nameof refaktoryzacji
-- [Uprość wyrażenie LINQ](./reference/simplify-linq-expression.md) — Uprość refaktoryzację wyrażeń LINQ
+- [Nowe środowisko Git w programie Visual Studio (wersja zapoznawcza)](./git-with-visual-studio.md) — Dodawanie nowej zawartości środowiska git (wersja zapoznawcza)
+- [Konwencje formatowania języka C++ EditorConfig](./cpp-editorconfig-properties.md) — nowy artykuł
+- [Co to jest GitHub Codespaces? (Wersja zapoznawcza)](./codespaces/codespaces-overview.md) -Dodaj zawartość Codespaces (wersja zapoznawcza)
+- [Jak dostosować codespace (wersja zapoznawcza)](./codespaces/customize-codespaces.md) — Dodawanie zawartości Codespaces (wersja zapoznawcza)
+- [Obsługiwane funkcje programu Visual Studio (wersja zapoznawcza)](./codespaces/supported-features-codespaces.md) — Dodawanie zawartości Codespaces (wersja zapoznawcza)
+- [Jak używać programu Visual Studio z codespace (wersja zapoznawcza)](./codespaces/use-visual-studio-with-codespaces.md) — Dodawanie zawartości Codespaces (wersja zapoznawcza)
 
 **Zaktualizowane artykuły**
 
-- [Dostosowywanie układów okien w programie Visual Studio](./customizing-window-layouts-in-visual-studio.md) — Dodawanie monikerów z zakładkami dokumentu pionowych aby dostosować układ okna tematu
-- [Jak zgłosić problem z programem Visual Studio lub Instalator programu Visual Studio](./how-to-report-a-problem-with-visual-studio.md)
-  - Dodano więcej informacji do NMI
-  - Redid cały raport na stronie problemu
-- [F1](./not-in-toc/default.md) — domyślna strona pomocy dla F1
-- [Autoodzyskiwanie, środowisko, opcje](./reference/autorecover-environment-options-dialog-box.md) — okno dialogowe — Dodawanie informacji o zaktualizowanych lokalizacjach plików zapisywania automatycznego
-- [Opcje, Edytor tekstu, podstawowa (Visual Basic), zaawansowana](./reference/options-text-editor-basic-visual-basic.md) dokumentacja podstawowa dla wskazówek dotyczących nazw parametrów wbudowanych
-- [Opcje, Edytor tekstu, C#, zaawansowane](./reference/options-text-editor-csharp-advanced.md) — Dodano dokumentację podstawową dla wskazówek dotyczących nazw parametrów wbudowanych
-- [Porady i wskazówki dotyczące wydajności programu Visual Studio](./visual-studio-performance-tips-and-tricks.md) — Dodaj informacje "Wyłącz tryb mapowania" i "Wyłącz zawijanie wyrazów"
-- [Co nowego w programie Visual studio 2019](./whats-new-visual-studio-2019.md) — aktualizowanie nowości w programie visual Studio 2019 z 16,7 ga
+- [Ustawienia konwencji kodowania .NET dla EditorConfig](./editorconfig-code-style-settings-reference.md) — zaktualizowane EditorConfig
+- [Konwencje językowe](./editorconfig-language-conventions.md) — brakujące przykłady
 
-## <a name="rtvs"></a>RTVS
+## <a name="install"></a>Zainstaluj
+
+**Nowe artykuły**
+
+- [Program Visual Studio na urządzeniach opartych na architekturze ARM](../install/visual-studio-on-arm-devices.md) — Dodawanie doc dla programu vs na platformie ARM
+
+**Zaktualizowane artykuły**
+- [Rozwiązywanie problemów związanych z siecią podczas instalowania lub korzystania z programu Visual Studio](../install/troubleshooting-network-related-errors-in-visual-studio.md) — Dodaj obejście problemu z serwerem proxy uwierzytelniania w opinii
+
+## <a name="profiling"></a>Profilowanie
 
 **Zaktualizowane artykuły**
 
-- Pracuj z tabelami poprawionymi [SQL Server i R](../rtvs/integrating-sql-server-with-r.md) , aby uwzględnić nagłówki kolumn
+- [Pomiar użycia pamięci w programie Visual Studio](../profiling/memory-usage.md) — aktualizacje profilowania dotyczące funkcji
+- [Funkcja PerfTip](../profiling/perftips.md) — aktualizacje dotyczące profilowania funkcji
+- [Najpierw Zobacz profilowanie narzędzi](../profiling/profiling-feature-tour.md) — aktualizacje dotyczące funkcji profilowania
+- [Uruchamianie narzędzi profilowania z debugerem lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
+  - Aktualizacje profilowania funkcji
+  - Ulepszenia wydajności zawartości
 
 ## <a name="community-contributors"></a>Współautorzy społeczności
 
 Następujące osoby współczyniły się do dokumentacji programu Visual Studio w tym okresie. Dziękujemy! Dowiedz się, jak współtworzyć dokumentację programu Visual Studio, postępując zgodnie ze wskazówkami w [przewodniku współautora](/contribute/).
 
-- [AlexB-SheldonMFG](https://github.com/AlexB-SheldonMFG) -Alex Black (11)
-- [Youssef1313](https://github.com/Youssef1313) -Youssef Victor (8)
 - [hyoshioka0128](https://github.com/hyoshioka0128) -Hiroshi Yoshioka (3)
-- [AstroChoco](https://github.com/AstroChoco) -Qian lu (czekolada) (1)
-- [athyunnath](https://github.com/athyunnath) -athyunnath Eleti (1)
-- [Caro-Oviedo](https://github.com/caro-oviedo) -Caro Oviedo (1)
-- [Evangelink](https://github.com/Evangelink) -Amaury levé (1)
-- [jethas-bennettjones](https://github.com/jethas-bennettjones) -Shafiq Jetha (1)
-- [nebuk89](https://github.com/nebuk89) -Ben de St paer-Gotch (1)
-- [pcartwright81](https://github.com/pcartwright81) (1)
-- [pkulikov](https://github.com/pkulikov) -Petr Kulikov (1)
-- [riQQ](https://github.com/riQQ) (1)
-- [tcmetzger](https://github.com/tcmetzger) -Timor Cornelius Metzger (1)
-- [weitzhandler](https://github.com/weitzhandler) -Shimmy (1)
+- [gmsantos](https://github.com/gmsantos) -Gabriel Machado (1)
+- [itryny-Klass](https://github.com/ite-klass) -Jan Klass (1)
+- [johnallers](https://github.com/johnallers) — Jan Allers (1)
+- [mrlacey](https://github.com/mrlacey) -matowy Lacey (1)
+- [Remona-Minett](https://github.com/remona-minett) -REM (1)
+- [sguitardude](https://github.com/sguitardude) (1)
+- [sjrct](https://github.com/sjrct) -Krzysztof Harding (1)
+- [Youssef1313](https://github.com/Youssef1313) -Youssef Victor (1)
