@@ -1,5 +1,5 @@
 ---
-title: Pomiń naruszenia analizy kodu
+title: Pomijanie naruszeń analizy kodu
 ms.date: 08/27/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: aa650197f291c48c0c025563098181ea1cfa19a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adf8e969af4a903aa6ed55b1c92f4ddaffcf77e0
+ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091441"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91604637"
 ---
-# <a name="suppress-code-analysis-violations"></a>Pomiń naruszenia analizy kodu
+# <a name="suppress-code-analysis-violations"></a>Pomijanie naruszeń analizy kodu
 
 Często warto wskazać, że ostrzeżenie nie jest stosowane. Wskazuje to członkom zespołu, że kod został zrecenzowany, i że ostrzeżenie można pominąć. Pomijanie w źródle (ISS) używa atrybutu, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Aby pominąć ostrzeżenie. Ten atrybut może być umieszczony w pobliżu segmentu kodu, który wygenerował ostrzeżenie. Możesz dodać <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybut do pliku źródłowego, wpisując go w, lub możesz użyć menu skrótów na ostrzeżenie w **Lista błędów** , aby dodać je automatycznie.
 
@@ -183,12 +183,7 @@ Na przykład następujący atrybut w pliku projektu _GlobalSuppressions_ będzie
 
 Kompilatory kodu zarządzanego i narzędzia innych firm generują kod, aby ułatwić szybkie tworzenie kodu. Kod wygenerowany przez kompilator, który pojawia się w plikach źródłowych jest zwykle oznaczony przy użyciu `GeneratedCodeAttribute` atrybutu.
 
-W przypadku analizy kodu źródłowego można pominąć komunikaty w wygenerowanym kodzie przy użyciu pliku [. editorconfig](../code-quality/configure-fxcop-analyzers.md) w katalogu głównym projektu lub rozwiązania. Użyj wzorca pliku, aby dopasować wygenerowany kod. Na przykład, aby wykluczyć ostrzeżenia CS1591 w plikach **. Designer.cs* , użyj tego pliku konfiguracyjnego.
-
-``` cmd
-[*.designer.cs]
-dotnet_diagnostic.CS1591.severity = none
-```
+W przypadku analizy kodu źródłowego można pominąć komunikaty w wygenerowanym kodzie w `.editorconfig` pliku. Aby uzyskać więcej informacji, zobacz [wykluczanie wygenerowanego kodu](/dotnet/fundamentals/code-analysis/configuration-options#exclude-generated-code).
 
 W przypadku starszej analizy kodu można zdecydować, czy pomijać ostrzeżenia i błędy analizy kodu dla wygenerowanego kodu. Aby uzyskać informacje na temat sposobu pomijania takich ostrzeżeń i błędów, zobacz [How to: pomijanie ostrzeżeń dla wygenerowanego kodu](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
 
