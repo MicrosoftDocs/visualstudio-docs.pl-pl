@@ -185,7 +185,7 @@
         - name: Dziennik zmian
           href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
     - name: Aplikacje mobilne na platformie Xamarin
-      href: /visualstudio/mac/xamarin
+      href: ./xamarin.md
 - name: Ułatwienia dostępu
   items:
     - name: Omówienie

@@ -16,8 +16,6 @@
               href: vscloud-billing-faq.md
             - name: Zakupy dla dostawców rozwiązań w chmurze
               href: vscloud-csp.md
-        - name: Visual Studio z usługą GitHub Enterprise
-          href: access-github.md
         - name: Microsoft Partner Network
           items:
             - name: Subskrypcje dla partnerów
@@ -64,6 +62,8 @@
               href: vs-cast.md
             - name: CloudPilot
               href: vs-cloudpilot.md
+            - name: GitHub Enterprise
+              href: access-github.md
             - name: Aplikacje platformy Microsoft 365 dla przedsiębiorstw
               href: microsoft-365-apps-for-enterprise.md
             - name: Microsoft 365 Developer

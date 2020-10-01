@@ -524,15 +524,7 @@
             - name: Konwencje formatowania języka C++ w narzędziu EditorConfig
               href: ide/cpp-editorconfig-properties.md
             - name: .NET — konwencje kodowania
-              items:
-                - name: Omówienie
-                  href: ide/editorconfig-code-style-settings-reference.md
-                - name: Konwencje języka
-                  href: ide/editorconfig-language-conventions.md
-                - name: Konwencje formatowania
-                  href: ide/editorconfig-formatting-conventions.md
-                - name: Konwencje nazewnictwa
-                  href: ide/editorconfig-naming-conventions.md
+              href: /dotnet/fundamentals/code-analysis/code-style-rule-options
         - name: Dostosowywanie paska przewijania
           href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
         - name: Ustawianie zakładek w kodzie
