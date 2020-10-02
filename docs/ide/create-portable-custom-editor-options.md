@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 59e226fc0cc09b1eda5197d6accddfa9bd1a20ed
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 277e5cd03d4006ced0791356be73ca1fcbe5c217
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402260"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659254"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Tworzenie przenośnych, niestandardowych ustawień edytora za pomocą wtyczki EditorConfig
 
@@ -68,7 +68,7 @@ Edytor w programie Visual Studio obsługuje podstawowy zestaw [Właściwości Ed
 - Wstaw \_ final_newline
 - root
 
-Ustawienia edytora EditorConfig są obsługiwane we wszystkich językach obsługiwanych przez program Visual Studio, z wyjątkiem języka XML. Ponadto EditorConfig obsługuje konwencje [stylów kodu](../ide/editorconfig-code-style-settings-reference.md) , w tym [Język](../ide/editorconfig-language-conventions.md), [Formatowanie](../ide/editorconfig-formatting-conventions.md)i konwencje [nazewnictwa](../ide/editorconfig-naming-conventions.md) dla języków C# i Visual Basic.
+Ustawienia edytora EditorConfig są obsługiwane we wszystkich językach obsługiwanych przez program Visual Studio, z wyjątkiem języka XML. Ponadto EditorConfig obsługuje konwencje [stylów kodu](/dotnet/fundamentals/code-analysis/code-style-rule-options) , w tym [Język](/dotnet/fundamentals/code-analysis/style-rules/language-rules), [Formatowanie](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules)i konwencje [nazewnictwa](/dotnet/fundamentals/code-analysis/style-rules/naming-rules) dla języków C# i Visual Basic.
 
 ## <a name="add-and-remove-editorconfig-files"></a>Dodawanie i usuwanie plików EditorConfig
 
@@ -90,7 +90,7 @@ Jeśli usuniesz plik EditorConfig z projektu lub bazy kodu i chcesz, aby nowe wi
 
    ![Szablony elementów plików EditorConfig w programie Visual Studio](media/editorconfig-item-templates.png)
 
-1. Wybierz szablon **plik editorconfig (domyślny)** , aby dodać wstępnie wypełniony plik editorconfig z dwoma podstawowymi opcjami editorconfig dla stylu i rozmiaru wcięcia. Lub wybierz szablon **plik editorconfig (.NET)** , aby dodać wstępnie wypełniony plik editorconfig z domyślnym [stylem kodu platformy .NET, formatowaniem i konwencjami nazewnictwa](../ide/editorconfig-code-style-settings-reference.md).
+1. Wybierz szablon **plik editorconfig (domyślny)** , aby dodać wstępnie wypełniony plik editorconfig z dwoma podstawowymi opcjami editorconfig dla stylu i rozmiaru wcięcia. Lub wybierz szablon **plik editorconfig (.NET)** , aby dodać wstępnie wypełniony plik editorconfig z domyślnym [stylem kodu platformy .NET, formatowaniem i konwencjami nazewnictwa](/dotnet/fundamentals/code-analysis/code-style-rule-options).
 
    Plik *. editorconfig* pojawia się w Eksplorator rozwiązań i zostanie otwarty w edytorze.
 
@@ -180,7 +180,7 @@ Zakres Konwencji EditorConfig można kontrolować przez ustawienie ```root=true`
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Konwencje stylu kodu platformy .NET](../ide/editorconfig-code-style-settings-reference.md)
+- [Konwencje stylu kodu platformy .NET](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [Obsługa EditorConfig dla usługi językowej](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](https://editorconfig.org/)
 - [Funkcje edytora kodu](writing-code-in-the-code-and-text-editor.md)

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d0b60c548e4e5d42a10e82754d045073f016f8b
-ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+ms.openlocfilehash: b9aba6b9c4be882498535ab96020461f22722c10
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621753"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659306"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historia nowości w dokumentacji programu Visual Studio
 
@@ -47,25 +47,25 @@ Witamy w historii nowości w dokumentacji programu Visual Studio. Ten temat zawi
 
 **Nowe artykuły**
 
-- [CA1310: Określ StringComparison do poprawnego](../code-quality/ca1310.md) — Dodaj dokumentację dla CA1310 i dokumentację aktualizacji dla CA1307
-- [CA1837: Użyj środowiska Environment. ProcessId zamiast procesu. GetCurrentProcess (). ID](../code-quality/ca1837.md) -docs dla CA1837
-- [CA1838: Unikaj `StringBuilder` parametrów dla P/Invoke](../code-quality/ca1838.md) -Dodaj dokumentację dla CA1838
-- [CA2008: nie twórz zadań bez przekazywania TaskScheduler](../code-quality/ca2008.md) — Dodawanie dokumentacji dla CA2008
-- [CA2249: Rozważ użycie ciągu. Contains zamiast String. IndexOf](../code-quality/ca2249.md) -docs dla CA2249
-- [CA2361: Upewnij się, że automatycznie wygenerowana Klasa zawierająca zestaw danych. ReadXml () nie jest używana z niezaufanymi danymi](../code-quality/ca2361.md) — więcej reguł zestawu danych/obiektów DataTable
-- [CA2362: niebezpieczny zestaw danych lub DataTable w wygenerowanym automatycznie typie możliwym do serializacji może być narażony na ataki zdalnego wykonywania kodu](../code-quality/ca2362.md) — więcej reguł zestawu danych/obiektów DataTable
-- [IL3000: Unikaj używania dostępu do ścieżki pliku zestawu podczas publikowania jako jednoplikowej](../code-quality/il3000.md) dokumentacji do IL3000
-- [IL3001: Unikaj uzyskiwania dostępu do ścieżki pliku zestawu podczas publikowania jako pojedynczy plik](../code-quality/il3001.md) — Dodaj dokumenty dla IL3001
+- [CA1310: Określ StringComparison do poprawnego](/dotnet/fundamentals/code-analysis/quality-rules/ca1310) — Dodaj dokumentację dla CA1310 i dokumentację aktualizacji dla CA1307
+- [CA1837: Użyj środowiska Environment. ProcessId zamiast procesu. GetCurrentProcess (). ID](/dotnet/fundamentals/code-analysis/quality-rules/ca1837) -docs dla CA1837
+- [CA1838: Unikaj `StringBuilder` parametrów dla P/Invoke](/dotnet/fundamentals/code-analysis/quality-rules/ca1838) -Dodaj dokumentację dla CA1838
+- [CA2008: nie twórz zadań bez przekazywania TaskScheduler](/dotnet/fundamentals/code-analysis/quality-rules/ca2008) — Dodawanie dokumentacji dla CA2008
+- [CA2249: Rozważ użycie ciągu. Contains zamiast String. IndexOf](/dotnet/fundamentals/code-analysis/quality-rules/ca2249) -docs dla CA2249
+- [CA2361: Upewnij się, że automatycznie wygenerowana Klasa zawierająca zestaw danych. ReadXml () nie jest używana z niezaufanymi danymi](/dotnet/fundamentals/code-analysis/quality-rules/ca2361) — więcej reguł zestawu danych/obiektów DataTable
+- [CA2362: niebezpieczny zestaw danych lub DataTable w wygenerowanym automatycznie typie możliwym do serializacji może być narażony na ataki zdalnego wykonywania kodu](/dotnet/fundamentals/code-analysis/quality-rules/ca2362) — więcej reguł zestawu danych/obiektów DataTable
+- [IL3000: Unikaj używania dostępu do ścieżki pliku zestawu podczas publikowania jako jednoplikowej](/dotnet/fundamentals/code-analysis/quality-rules/il3000) dokumentacji do IL3000
+- [IL3001: Unikaj uzyskiwania dostępu do ścieżki pliku zestawu podczas publikowania jako pojedynczy plik](/dotnet/fundamentals/code-analysis/quality-rules/il3001) — Dodaj dokumenty dla IL3001
 
 **Aktualny**
 
-- [CA1002: nie ujawniaj list ogólnych](../code-quality/ca1002.md) — Dodaj określając — sekcja powierzchni interfejsu API
-- [CA1046: nie należy przeciążać operatora Equals w typach referencyjnych](../code-quality/ca1046.md) — Dodaj określając — sekcja powierzchni
-- [CA1307: Określ StringComparison dla przejrzystości](../code-quality/ca1307.md) — Dodaj dokumentację dla CA1310 i dokumentację aktualizacji dla CA1307
-- [CA1700: nie należy określać wartości wyliczeniowych &#39;zastrzeżony&#39;](../code-quality/ca1700.md) — Dodaj określając — sekcja powierzchni
-- [CA1707: identyfikatory nie powinny zawierać podkreśleń](../code-quality/ca1707.md) — Dodawanie określającej sekcji powierzchni interfejsu API
-- [CA1822: Oznacz elementy członkowskie jako](../code-quality/ca1822.md) częściowe Dodawanie określając-interfejsu API
-- [CA2351: Upewnij się, że dane wejściowe DataSet. ReadXml () są](../code-quality/ca2351.md) regułami zaufania-więcej zestawów danych/obiektów DataTable
+- [CA1002: nie ujawniaj list ogólnych](/dotnet/fundamentals/code-analysis/quality-rules/ca1002) — Dodaj określając — sekcja powierzchni interfejsu API
+- [CA1046: nie należy przeciążać operatora Equals w typach referencyjnych](/dotnet/fundamentals/code-analysis/quality-rules/ca1046) — Dodaj określając — sekcja powierzchni
+- [CA1307: Określ StringComparison dla przejrzystości](/dotnet/fundamentals/code-analysis/quality-rules/ca1307) — Dodaj dokumentację dla CA1310 i dokumentację aktualizacji dla CA1307
+- [CA1700: nie należy określać wartości wyliczeniowych &#39;zastrzeżony&#39;](/dotnet/fundamentals/code-analysis/quality-rules/ca1700) — Dodaj określając — sekcja powierzchni
+- [CA1707: identyfikatory nie powinny zawierać podkreśleń](/dotnet/fundamentals/code-analysis/quality-rules/ca1707) — Dodawanie określającej sekcji powierzchni interfejsu API
+- [CA1822: Oznacz elementy członkowskie jako](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) częściowe Dodawanie określając-interfejsu API
+- [CA2351: Upewnij się, że dane wejściowe DataSet. ReadXml () są](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) regułami zaufania-więcej zestawów danych/obiektów DataTable
 - [Zainstaluj analizatory innych firm](../code-quality/install-roslyn-analyzers.md) — Zmieniono strukturę i tytuły dla dokumentacji analizy kodu
 
 ### <a name="containers"></a>Kontenery
@@ -73,7 +73,7 @@ Witamy w historii nowości w dokumentacji programu Visual Studio. Ten temat zawi
 **Zaktualizowane artykuły**
 
 - [Wdrażanie kontenera ASP.NET w rejestrze kontenerów za pomocą programu Visual Studio](../containers/hosting-web-apps-in-docker.md) — aktualizacje narzędzi do kontenerów dla programu visual Studio 16,7 — interfejs użytkownika publikacji
-- [Wprowadzenie do narzędzi Visual Studio Kubernetes Tools](../containers/tutorial-kubernetes-tools.md) — samouczek Kubernetes: Dodawanie kroków do usunięcia
+- [Wprowadzenie do narzędzi Visual Studio Kubernetes Tools](../containers/bridge-to-kubernetes.md) — samouczek Kubernetes: Dodawanie kroków do usunięcia
 
 ### <a name="deployment"></a>Wdrożenie
 
@@ -131,25 +131,25 @@ Witamy w historii nowości w dokumentacji programu Visual Studio. Ten temat zawi
 
 **Nowe artykuły**
 
-- [CA1417: nie używaj `OutAttribute` w parametrach ciągu dla P/Invoke](../code-quality/ca1417.md) -Dodaj dokumentację dla CA1417
-- [CA1805: nie należy inicjować niepotrzebnie.](../code-quality/ca1805.md) -Dodaj dokumenty dla CA1805
-- [CA1836: Preferuj IsEmpty w liczbie, gdy jest dostępna](../code-quality/ca1836.md) — Dodaj dokumentację dla CA1836 (Preferuj IsEmpty w liczbie)
-- [CA2016: Przekaż parametr CancellationToken do metod, które pobierają jeden](../code-quality/ca2016.md) -dokument CA2016-przekazuj parametr CancellationToken do metod, które przyjmują jeden
-- [CA2350: Upewnij się, że dane wejściowe elementu DataTable. ReadXml () są zaufane](../code-quality/ca2350.md) -początkowe reguły deserializacji zestawu danych/DataTable
-- [CA2351: Upewnij się, że dane wejściowe DataSet. ReadXml () są zaufane](../code-quality/ca2351.md) -początkowe reguły deserializacji zestawu danych/DataTable
-- [CA2352: niebezpieczny zestaw danych lub DataTable w typie możliwym do serializacji może być narażony na ataki zdalnego wykonywania kodu](../code-quality/ca2352.md) — wstępna reguła deserializacji zestawu danych/elementu DataTable
-- [CA2353: niebezpieczny zestaw danych lub DataTable w obszarze możliwy do serializacji typ](../code-quality/ca2353.md) początkowy zestaw danych lub deserializacji elementu DataTable
-- [CA2354: niebezpieczny zestaw danych lub element DataTable w odszeregowanym grafie obiektów może być narażony na ataki zdalnego wykonywania kodu](../code-quality/ca2354.md) — początkowy zestaw danych/reguły deserializacji elementu DataTable
-- [CA2355: niebezpieczny zestaw danych lub tabela DataTable w odszeregowanym grafie obiektów](../code-quality/ca2355.md) — wstępne reguły deserializacji zestawu danych/DataTable
-- [CA2356: niebezpieczny zestaw danych lub typ DataTable w grafie serializowanych obiektów sieci Web](../code-quality/ca2356.md) — wstępne reguły deserializacji zestawu danych/elementu DataTable
+- [CA1417: nie używaj `OutAttribute` w parametrach ciągu dla P/Invoke](/dotnet/fundamentals/code-analysis/quality-rules/ca1417) -Dodaj dokumentację dla CA1417
+- [CA1805: nie należy inicjować niepotrzebnie.](/dotnet/fundamentals/code-analysis/quality-rules/ca1805) -Dodaj dokumenty dla CA1805
+- [CA1836: Preferuj IsEmpty w liczbie, gdy jest dostępna](/dotnet/fundamentals/code-analysis/quality-rules/ca1836) — Dodaj dokumentację dla CA1836 (Preferuj IsEmpty w liczbie)
+- [CA2016: Przekaż parametr CancellationToken do metod, które pobierają jeden](/dotnet/fundamentals/code-analysis/quality-rules/ca2016) -dokument CA2016-przekazuj parametr CancellationToken do metod, które przyjmują jeden
+- [CA2350: Upewnij się, że dane wejściowe elementu DataTable. ReadXml () są zaufane](/dotnet/fundamentals/code-analysis/quality-rules/ca2350) -początkowe reguły deserializacji zestawu danych/DataTable
+- [CA2351: Upewnij się, że dane wejściowe DataSet. ReadXml () są zaufane](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) -początkowe reguły deserializacji zestawu danych/DataTable
+- [CA2352: niebezpieczny zestaw danych lub DataTable w typie możliwym do serializacji może być narażony na ataki zdalnego wykonywania kodu](/dotnet/fundamentals/code-analysis/quality-rules/ca2352) — wstępna reguła deserializacji zestawu danych/elementu DataTable
+- [CA2353: niebezpieczny zestaw danych lub DataTable w obszarze możliwy do serializacji typ](/dotnet/fundamentals/code-analysis/quality-rules/ca2353) początkowy zestaw danych lub deserializacji elementu DataTable
+- [CA2354: niebezpieczny zestaw danych lub element DataTable w odszeregowanym grafie obiektów może być narażony na ataki zdalnego wykonywania kodu](/dotnet/fundamentals/code-analysis/quality-rules/ca2354) — początkowy zestaw danych/reguły deserializacji elementu DataTable
+- [CA2355: niebezpieczny zestaw danych lub tabela DataTable w odszeregowanym grafie obiektów](/dotnet/fundamentals/code-analysis/quality-rules/ca2355) — wstępne reguły deserializacji zestawu danych/DataTable
+- [CA2356: niebezpieczny zestaw danych lub typ DataTable w grafie serializowanych obiektów sieci Web](/dotnet/fundamentals/code-analysis/quality-rules/ca2356) — wstępne reguły deserializacji zestawu danych/elementu DataTable
 
 ### <a name="containers"></a>Kontenery
 
 **Nowe artykuły**
 
-- [Konfigurowanie procesu lokalnego przy użyciu procesu Kubernetes](../containers/configure-local-process-with-kubernetes.md) -Local przy użyciu konfiguracji Kubernetes: YAML
-- [Korzystanie z procesu lokalnego z Kubernetes (wersja zapoznawcza)](../containers/local-process-kubernetes.md) — migracja miejsc deweloperskich
-- [Jak działa proces lokalny z usługą Kubernetes](../containers/overview-local-process-kubernetes.md)
+- [Konfigurowanie procesu lokalnego przy użyciu procesu Kubernetes](../containers/configure-bridge-to-kubernetes.md) -Local przy użyciu konfiguracji Kubernetes: YAML
+- [Korzystanie z procesu lokalnego z Kubernetes (wersja zapoznawcza)](../containers/bridge-to-kubernetes.md) — migracja miejsc deweloperskich
+- [Jak działa proces lokalny z usługą Kubernetes](../containers/overview-bridge-to-kubernetes.md)
   - Proces lokalny dla Kubernetes: Dodaj sekcję routingu
   - Migracja miejsc deweloperskich
 

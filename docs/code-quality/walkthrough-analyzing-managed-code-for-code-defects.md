@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab1e0b890d6241742770ed38ff61fc1c2c0ed2f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab8a834de307cf7803b93f025a68b95defe12466
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72535702"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659195"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Wskazówki: aby znaleźć wady kodu, użyj statycznej analizy kodu
 
@@ -93,15 +93,15 @@ Ten artykuł przeprowadzi Cię przez proces korzystania z starszej analizy w cel
 
 1. Poniższe porady umożliwiają poprawienie ostrzeżeń:
 
-   [CA1014: Oznacz zestawy za pomocą CLSCompliantAttribute](../code-quality/ca1014.md): Dodaj kod `[assembly: CLSCompliant(true)]` na końcu pliku AssemblyInfo.cs.
+   [CA1014: Oznacz zestawy za pomocą CLSCompliantAttribute](/dotnet/fundamentals/code-analysis/quality-rules/ca1014): Dodaj kod `[assembly: CLSCompliant(true)]` na końcu pliku AssemblyInfo.cs.
 
-   [CA1032: Zaimplementuj standardowe konstruktory wyjątków](../code-quality/ca1032.md): Dodaj Konstruktor `public demo (String s) : base(s) { }` do klasy `demo` .
+   [CA1032: Zaimplementuj standardowe konstruktory wyjątków](/dotnet/fundamentals/code-analysis/quality-rules/ca1032): Dodaj Konstruktor `public demo (String s) : base(s) { }` do klasy `demo` .
 
-   [CA1032: Zaimplementuj standardowe konstruktory wyjątków](../code-quality/ca1032.md): Dodaj Konstruktor `public demo (String s, Exception e) : base(s, e) { }` do klasy `demo` .
+   [CA1032: Zaimplementuj standardowe konstruktory wyjątków](/dotnet/fundamentals/code-analysis/quality-rules/ca1032): Dodaj Konstruktor `public demo (String s, Exception e) : base(s, e) { }` do klasy `demo` .
 
-   [CA1032: Zaimplementuj standardowe konstruktory wyjątków](../code-quality/ca1032.md): Dodaj Konstruktor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` do demonstracyjnej klasy. Należy również dodać `using` instrukcję dla <xref:System.Runtime.Serialization?displayProperty=fullName> .
+   [CA1032: Zaimplementuj standardowe konstruktory wyjątków](/dotnet/fundamentals/code-analysis/quality-rules/ca1032): Dodaj Konstruktor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` do demonstracyjnej klasy. Należy również dodać `using` instrukcję dla <xref:System.Runtime.Serialization?displayProperty=fullName> .
 
-   [CA1032: Zaimplementuj standardowe konstruktory wyjątków](../code-quality/ca1032.md): Dodaj Konstruktor `public demo () : base() { }` do klasy `demo` .
+   [CA1032: Zaimplementuj standardowe konstruktory wyjątków](/dotnet/fundamentals/code-analysis/quality-rules/ca1032): Dodaj Konstruktor `public demo () : base() { }` do klasy `demo` .
 
    [CA1709: Identyfikatory powinny mieć poprawną wielkość liter](../code-quality/ca1709.md): Zmień wielkość liter w przestrzeni nazw `testCode` na `TestCode` .
 
@@ -109,9 +109,9 @@ Ten artykuł przeprowadzi Cię przez proces korzystania z starszej analizy w cel
 
    [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709.md): Zmień nazwę elementu członkowskiego na `Item` .
 
-   [CA1710: Identyfikatory powinny mieć poprawny sufiks](../code-quality/ca1710.md): Zmień nazwę klasy i jej konstruktorów na `DemoException` .
+   [CA1710: Identyfikatory powinny mieć poprawny sufiks](/dotnet/fundamentals/code-analysis/quality-rules/ca1710): Zmień nazwę klasy i jej konstruktorów na `DemoException` .
 
-   [CA2237: Oznacz typy ISerializable z SerializableAttribute](../code-quality/ca2237.md): Dodaj `[Serializable ()]` atrybut do klasy `demo` .
+   [CA2237: Oznacz typy ISerializable z SerializableAttribute](/dotnet/fundamentals/code-analysis/quality-rules/ca2237): Dodaj `[Serializable ()]` atrybut do klasy `demo` .
 
    [CA2210: zestawy powinny mieć prawidłowe silne nazwy](../code-quality/ca2210.md): Podpisz "CodeAnalysisManagedDemo" kluczem o silnej nazwie:
 

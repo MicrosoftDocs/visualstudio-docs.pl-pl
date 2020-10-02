@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca48d0cad8ad6e22aa2264390d230590438e8579
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47019ecd01a4ad432a853a7f1a4f7d7112be163c
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77506469"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659208"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Korzystanie z zestawów reguł do grupowania reguł analizy kodu
 
@@ -24,7 +24,7 @@ Podczas konfigurowania analizy kodu w programie Visual Studio można wybrać jed
 
 Zestaw reguł można dostosować, dodając lub usuwając reguły lub zmieniając jego wystąpienia tak, aby były wyświetlane jako ostrzeżenia lub błędy w **Lista błędów**. Dostosowane zestawy reguł mogą spełnić potrzeby konkretnego środowiska do tworzenia oprogramowania. Po dostosowaniu zestawu reguł Edytor zestawu reguł zawiera narzędzia do wyszukiwania i filtrowania, które ułatwiają proces.
 
-Zestawy reguł są dostępne na potrzeby [analizy kodu zarządzanego](analyzer-rule-sets.md), [starszej analizy kodu zarządzanego](how-to-configure-code-analysis-for-a-managed-code-project.md)i [analizy kodu w języku C++](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
+Zestawy reguł są dostępne na potrzeby [analizy kodu zarządzanego](/dotnet/fundamentals/code-analysis/code-quality-rule-options), [starszej analizy kodu zarządzanego](how-to-configure-code-analysis-for-a-managed-code-project.md)i [analizy kodu w języku C++](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
 
 ## <a name="rule-set-format"></a>Format zestawu reguł
 
@@ -58,7 +58,7 @@ Zawartość pliku. zestawu *reguł* wygląda podobnie do tego kodu XML:
 
 ## <a name="specify-a-rule-set-for-a-project"></a>Określanie zestawu reguł dla projektu
 
-Zestaw reguł dla projektu jest określany przez właściwość **CodeAnalysisRuleSet** w pliku projektu programu Visual Studio. Na przykład:
+Zestaw reguł dla projektu jest określany przez właściwość **CodeAnalysisRuleSet** w pliku projektu programu Visual Studio. Przykład:
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

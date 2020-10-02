@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d3fa48a7f571680cb9d26257fe4aa288aba15dbc
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352206"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658441"
 ---
 # <a name="overview-of-source-code-analysis"></a>Przegląd analizy kodu źródłowego
 
@@ -25,9 +25,9 @@ Analizatory .NET Compiler Platform (Roslyn) sprawdzają kod C# lub Visual Basic 
 
 Analizatory mogą być podzielone na następujące grupy:
 
-- Analizatory [stylów kodu](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) są wbudowane w program Visual Studio. Identyfikator diagnostyki lub kod dla tych analizatorów ma format IDExxxx, na przykład IDE0067. Preferencje można skonfigurować na [stronie Opcje edytora tekstu](../ide/code-styles-and-code-cleanup.md) lub w [pliku EditorConfig](../ide/editorconfig-code-style-settings-reference.md). Począwszy od platformy .NET 5,0, analizatory stylów kodu są dołączone do zestawu .NET SDK i mogą być ściśle wymuszane jako ostrzeżenia lub błędy kompilacji. Aby uzyskać więcej informacji, zobacz [tutaj](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
+- Analizatory [stylów kodu](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) są wbudowane w program Visual Studio. Identyfikator diagnostyki lub kod dla tych analizatorów ma format IDExxxx, na przykład IDE0067. Preferencje można skonfigurować na [stronie Opcje edytora tekstu](../ide/code-styles-and-code-cleanup.md) lub w [pliku EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options). Począwszy od platformy .NET 5,0, analizatory stylów kodu są dołączone do zestawu .NET SDK i mogą być ściśle wymuszane jako ostrzeżenia lub błędy kompilacji. Aby uzyskać więcej informacji, zobacz [tutaj](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
-- Analizatory [jakości kodu](code-analysis-warnings-for-managed-code-by-checkid.md) są teraz dołączone do zestawu SDK programu .NET 5 i domyślnie włączone. Identyfikator diagnostyki lub kod dla tych analizatorów ma format CAxxxx, na przykład CA1822. Aby uzyskać więcej informacji, zobacz [Omówienie analizy jakości kodu platformy .NET](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
+- Analizatory [jakości kodu](/dotnet/fundamentals/code-analysis/quality-rules/index) są teraz dołączone do zestawu SDK programu .NET 5 i domyślnie włączone. Identyfikator diagnostyki lub kod dla tych analizatorów ma format CAxxxx, na przykład CA1822. Aby uzyskać więcej informacji, zobacz [Omówienie analizy jakości kodu platformy .NET](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 
 - Analizatory stron trzecich można instalować jako pakiet NuGet lub rozszerzenie programu Visual Studio. [Analizatory](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)stron trzecich, takie jak [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), analizatorze [XUnit](https://www.nuget.org/packages/xunit.analyzers/)i sonar.
 
@@ -37,7 +37,7 @@ Każdy Analizator ma jeden z następujących poziomów ważności:
 
 | Ważność (Eksplorator rozwiązań) | Ważność (plik EditorConfig) | Zachowanie w czasie kompilacji | Zachowanie edytora |
 |-|-|-|
-| Error | `error` | Naruszenia są wyświetlane jako *Błędy* w Lista błędów i w danych wyjściowych kompilacji w wierszu polecenia i powodują niepowodzenie kompilacji.| Kod powodujący problemy jest podkreślony czerwoną czerwoną ramką na pasku przewijania. |
+| Błąd | `error` | Naruszenia są wyświetlane jako *Błędy* w Lista błędów i w danych wyjściowych kompilacji w wierszu polecenia i powodują niepowodzenie kompilacji.| Kod powodujący problemy jest podkreślony czerwoną czerwoną ramką na pasku przewijania. |
 | Ostrzeżenie | `warning` | Naruszenia są wyświetlane jako *ostrzeżenia* w Lista błędów i w danych wyjściowych kompilacji wiersza polecenia, ale nie powodują awarii kompilacji. | Kod powodujący problemy jest podkreślony zieloną, zieloną ramką na pasku przewijania. |
 | Info | `suggestion` | Naruszenia są wyświetlane jako *komunikaty* w Lista błędów, a nie w danych wyjściowych kompilacji wiersza polecenia. | Kod powodujący problemy jest podkreślony szarym i oznaczonym przez małe szare pole na pasku przewijania. |
 | Ukryty | `silent` | Niewidoczny dla użytkownika. | Niewidoczny dla użytkownika. Diagnostyka jest jednak raportowana w aparacie diagnostyki IDE. |

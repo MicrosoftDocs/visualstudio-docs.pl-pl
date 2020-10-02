@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c7ce330a8a2994f827234aae8b8db416da016b29
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 5f3205bf3c81bbb9dac19c810e3a89a5fcd2227b
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509877"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658402"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Zestaw reguł zabezpieczeń dla zarządzanego kodu
 
@@ -21,7 +21,7 @@ Użyj zestawu reguł zabezpieczeń firmy Microsoft dla starszej wersji analizy k
 
 |Reguła|Opis|
 |----------|-----------------|
-|[CA2100](../code-quality/ca2100.md)|Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach|
+|[CA2100](/dotnet/fundamentals/code-analysis/quality-rules/ca2100)|Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach|
 |[CA2102](../code-quality/ca2102.md)|Przechwytuj wyjątki bez atrybutu CLSCompliant w ogólnych procedurach obsługi|
 |[CA2103](../code-quality/ca2103.md)|Przejrzyj zabezpieczenia imperatywne|
 |[CA2104](../code-quality/ca2104.md)|Nie deklaruj modyfikowalnych typów referencyjnych tylko do odczytu|
@@ -29,7 +29,7 @@ Użyj zestawu reguł zabezpieczeń firmy Microsoft dla starszej wersji analizy k
 |[CA2106](../code-quality/ca2106.md)|Zabezpiecz asercje|
 |[CA2107](../code-quality/ca2107.md)|Przejrzyj przypadki użycia metod Deny i PermitOnly|
 |[CA2108](../code-quality/ca2108.md)|Przejrzyj zabezpieczenia deklaratywne dla typów wartości|
-|[CA2109](../code-quality/ca2109.md)|Przejrzyj widoczne procedury obsługi zdarzeń|
+|[CA2109](/dotnet/fundamentals/code-analysis/quality-rules/ca2109)|Przejrzyj widoczne procedury obsługi zdarzeń|
 |[CA2111](../code-quality/ca2111.md)|Wskaźniki nie powinny być widoczne|
 |[CA2112](../code-quality/ca2112.md)|Zabezpieczone typy nie powinny ujawniać pól|
 |[CA2114](../code-quality/ca2114.md)|Zabezpieczenie metody powinno być nadzbiorem typu|
@@ -37,7 +37,7 @@ Użyj zestawu reguł zabezpieczeń firmy Microsoft dla starszej wersji analizy k
 |[CA2116](../code-quality/ca2116.md)|Metody z atrybutem APTCA powinny wywoływać tylko metody z atrybutem APTCA|
 |[CA2117](../code-quality/ca2117.md)|Typy z atrybutem APTCA powinny rozszerzać tylko typy podstawowe z atrybutem APTCA|
 |[CA2118](../code-quality/ca2118.md)|Przejrzyj przypadki użycia atrybutu SuppressUnmanagedCodeSecurityAttribute|
-|[CA2119](../code-quality/ca2119.md)|Pieczętuj metody, które spełniają wymagania interfejsów prywatnych|
+|[CA2119](/dotnet/fundamentals/code-analysis/quality-rules/ca2119)|Pieczętuj metody, które spełniają wymagania interfejsów prywatnych|
 |[CA2120](../code-quality/ca2120.md)|Zabezpiecz konstruktory serializacji|
 |[CA2121](../code-quality/ca2121.md)|Konstruktory statyczne powinny być prywatne|
 |[CA2122](../code-quality/ca2122.md)|Nie ujawniaj pośrednio metod żądaniami LinkDemand|
@@ -64,27 +64,27 @@ Użyj zestawu reguł zabezpieczeń firmy Microsoft dla starszej wersji analizy k
 |[CA2147](../code-quality/ca2147.md)|Metody przezroczyste nie mogą używać asercji zabezpieczeń|
 |[CA2149](../code-quality/ca2149.md)|Metody przezroczyste nie mogą wywoływać kodu natywnego|
 |[CA2210](../code-quality/ca2210.md)|Zestawy powinny mieć prawidłowe silne nazwy|
-|[CA2300](ca2300.md)|Nie używaj niezabezpieczonego deserializatora BinaryFormatter|
-|[CA2301](ca2301.md)|Nie wywołuj metody BinaryFormatter.Deserialize bez uprzedniego ustawienia właściwości BinaryFormatter.Binder|
-|[CA2302](ca2302.md)|Upewnij się, że właściwość BinaryFormatter.Binder jest ustawiona przed wywołaniem metody BinaryFormatter.Deserialize|
-|[CA2305](ca2305.md)|Nie używaj niezabezpieczonego deserializatora LosFormatter|
-|[CA2310](ca2310.md)|Nie używaj niezabezpieczonego deserializatora NetDataContractSerializer|
-|[CA2311](ca2311.md)|Nie wykonuj deserializacji bez uprzedniego ustawienia właściwości NetDataContractSerializer.Binder|
-|[CA2312](ca2312.md)|Upewnij się, że właściwość NetDataContractSerializer.Binder jest ustawiona przed deserializacją|
-|[CA2315](ca2315.md)|Nie używaj niezabezpieczonego deserializatora ObjectStateFormatter|
-|[CA2321](ca2321.md)|Nie wykonuj deserializacji za pomocą obiektu JavaScriptSerializer zainicjowanego przy użyciu parametru SimpleTypeResolver|
-|[CA2322](ca2322.md)|Upewnij się, że obiekt JavaScriptSerializer nie został zainicjowany przy użyciu parametru SimpleTypeResolver przed deserializacją|
-|[CA3001](../code-quality/ca3001.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu SQL|
-|[CA3002](../code-quality/ca3002.md)|Przegląd kodu pod kątem luk umożliwiających działanie skryptów między witrynami|
-|[CA3003](../code-quality/ca3003.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie ścieżki pliku|
-|[CA3004](../code-quality/ca3004.md)|Przegląd kodu pod kątem luk umożliwiających ujawnienie informacji|
-|[CA3005](../code-quality/ca3005.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie protokołu LDAP|
-|[CA3006](../code-quality/ca3006.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie polecenia procesu|
-|[CA3007](../code-quality/ca3007.md)|Przegląd kodu pod kątem luk umożliwiających otwarcie przekierowania|
-|[CA3008](../code-quality/ca3008.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia XPath|
-|[CA3009](../code-quality/ca3009.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XML|
-|[CA3010](../code-quality/ca3010.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XAML|
-|[CA3011](../code-quality/ca3011.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie biblioteki DLL|
-|[CA3012](../code-quality/ca3012.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia regularnego|
-|[CA5358](../code-quality/ca5358.md)|Nie używaj niebezpiecznych trybów szyfrowania|
-|[CA5403](../code-quality/ca5403.md)|Nie zapisuj certyfikatu na stałe w kodzie|
+|[CA2300](/dotnet/fundamentals/code-analysis/quality-rules/ca2300)|Nie używaj niezabezpieczonego deserializatora BinaryFormatter|
+|[CA2301](/dotnet/fundamentals/code-analysis/quality-rules/ca2301)|Nie wywołuj metody BinaryFormatter.Deserialize bez uprzedniego ustawienia właściwości BinaryFormatter.Binder|
+|[CA2302](/dotnet/fundamentals/code-analysis/quality-rules/ca2302)|Upewnij się, że właściwość BinaryFormatter.Binder jest ustawiona przed wywołaniem metody BinaryFormatter.Deserialize|
+|[CA2305](/dotnet/fundamentals/code-analysis/quality-rules/ca2305)|Nie używaj niezabezpieczonego deserializatora LosFormatter|
+|[CA2310](/dotnet/fundamentals/code-analysis/quality-rules/ca2310)|Nie używaj niezabezpieczonego deserializatora NetDataContractSerializer|
+|[CA2311](/dotnet/fundamentals/code-analysis/quality-rules/ca2311)|Nie wykonuj deserializacji bez uprzedniego ustawienia właściwości NetDataContractSerializer.Binder|
+|[CA2312](/dotnet/fundamentals/code-analysis/quality-rules/ca2312)|Upewnij się, że właściwość NetDataContractSerializer.Binder jest ustawiona przed deserializacją|
+|[CA2315](/dotnet/fundamentals/code-analysis/quality-rules/ca2315)|Nie używaj niezabezpieczonego deserializatora ObjectStateFormatter|
+|[CA2321](/dotnet/fundamentals/code-analysis/quality-rules/ca2321)|Nie wykonuj deserializacji za pomocą obiektu JavaScriptSerializer zainicjowanego przy użyciu parametru SimpleTypeResolver|
+|[CA2322](/dotnet/fundamentals/code-analysis/quality-rules/ca2322)|Upewnij się, że obiekt JavaScriptSerializer nie został zainicjowany przy użyciu parametru SimpleTypeResolver przed deserializacją|
+|[CA3001](/dotnet/fundamentals/code-analysis/quality-rules/ca3001)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu SQL|
+|[CA3002](/dotnet/fundamentals/code-analysis/quality-rules/ca3002)|Przegląd kodu pod kątem luk umożliwiających działanie skryptów między witrynami|
+|[CA3003](/dotnet/fundamentals/code-analysis/quality-rules/ca3003)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie ścieżki pliku|
+|[CA3004](/dotnet/fundamentals/code-analysis/quality-rules/ca3004)|Przegląd kodu pod kątem luk umożliwiających ujawnienie informacji|
+|[CA3005](/dotnet/fundamentals/code-analysis/quality-rules/ca3005)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie protokołu LDAP|
+|[CA3006](/dotnet/fundamentals/code-analysis/quality-rules/ca3006)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie polecenia procesu|
+|[CA3007](/dotnet/fundamentals/code-analysis/quality-rules/ca3007)|Przegląd kodu pod kątem luk umożliwiających otwarcie przekierowania|
+|[CA3008](/dotnet/fundamentals/code-analysis/quality-rules/ca3008)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia XPath|
+|[CA3009](/dotnet/fundamentals/code-analysis/quality-rules/ca3009)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XML|
+|[CA3010](/dotnet/fundamentals/code-analysis/quality-rules/ca3010)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XAML|
+|[CA3011](/dotnet/fundamentals/code-analysis/quality-rules/ca3011)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie biblioteki DLL|
+|[CA3012](/dotnet/fundamentals/code-analysis/quality-rules/ca3012)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia regularnego|
+|[CA5358](/dotnet/fundamentals/code-analysis/quality-rules/ca5358)|Nie używaj niebezpiecznych trybów szyfrowania|
+|[CA5403](/dotnet/fundamentals/code-analysis/quality-rules/ca5403)|Nie zapisuj certyfikatu na stałe w kodzie|

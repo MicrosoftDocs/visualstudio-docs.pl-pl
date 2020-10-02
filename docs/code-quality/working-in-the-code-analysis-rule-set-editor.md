@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893310"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659182"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Korzystanie z edytora zestawu reguł analizy kodu
 
@@ -69,10 +69,10 @@ W poniższej tabeli opisano pola zestawu reguł:
 
 |Pole|Opis|
 |-----------|-----------------|
-|**ID**|Identyfikator reguły.|
-|**Kategoria**|Oprócz ich przynależności do zestawów reguł reguły analizy kodu są również pogrupowane według kategorii. Aby uzyskać więcej informacji, zobacz [ostrzeżenia analizy kodu](../code-quality/code-analysis-for-managed-code-warnings.md).|
+|**#C1**|Identyfikator reguły.|
+|**Kategoria**|Oprócz ich przynależności do zestawów reguł reguły analizy kodu są również pogrupowane według kategorii. Aby uzyskać więcej informacji, zobacz [ostrzeżenia analizy kodu](/dotnet/fundamentals/code-analysis/quality-rules/index).|
 |**Nazwa**|Tytuł reguły.|
-|**Przestrzeń nazw**|Przestrzeń nazw reguły.|
+|**Obszaru**|Przestrzeń nazw reguły.|
 |**Typ docelowy**|Wskazuje, czy reguła dotyczy kodu natywnego, zarządzanego lub bazy danych.|
 |**Akcja**|Akcja podejmowana, gdy reguła jest naruszana w przebiegu analizy kodu. Można edytować pole **akcji** .|
 |**Źródłowe zestawy reguł**|Zestaw reguł, który zawiera regułę.|

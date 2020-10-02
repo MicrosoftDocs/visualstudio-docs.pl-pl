@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2af6126c751d03968dc7ecd87693e3546376c12a
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 0c3b899ec8e19160d9ee4a307a86c576d217004c
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509864"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658545"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Zestaw reguł globalizacji dla zarządzanego kodu
 
@@ -21,11 +21,11 @@ Zestaw reguł globalizacji firmy Microsoft umożliwia skoncentrowanie się na pr
 
 |Reguła|Opis|
 |----------|-----------------|
-|[CA1303](../code-quality/ca1303.md)|Nie przekazuj literałów jako zlokalizowanych parametrów|
-|[CA1304](../code-quality/ca1304.md)|Określ argument CultureInfo|
-|[CA1305](../code-quality/ca1305.md)|Określ argument IFormatProvider|
-|[CA1307](../code-quality/ca1307.md)|Określ StringComparison dla jasności|
-|[CA1308](../code-quality/ca1308.md)|Normalizuj ciągi do postaci zapisanej wielkimi literami|
-|[CA1309](../code-quality/ca1309.md)|Użyj porządkowego ustawienia właściwości StringComparison|
-|[CA1310](../code-quality/ca1310.md)|Określ StringComparison dla poprawności|
-|[CA2101](../code-quality/ca2101.md)|Określ kierowanie dla argumentów ciągu P/Invoke|
+|[CA1303](/dotnet/fundamentals/code-analysis/quality-rules/ca1303)|Nie przekazuj literałów jako zlokalizowanych parametrów|
+|[CA1304](/dotnet/fundamentals/code-analysis/quality-rules/ca1304)|Określ argument CultureInfo|
+|[CA1305](/dotnet/fundamentals/code-analysis/quality-rules/ca1305)|Określ argument IFormatProvider|
+|[CA1307](/dotnet/fundamentals/code-analysis/quality-rules/ca1307)|Określ StringComparison dla jasności|
+|[CA1308](/dotnet/fundamentals/code-analysis/quality-rules/ca1308)|Normalizuj ciągi do postaci zapisanej wielkimi literami|
+|[CA1309](/dotnet/fundamentals/code-analysis/quality-rules/ca1309)|Użyj porządkowego ustawienia właściwości StringComparison|
+|[CA1310](/dotnet/fundamentals/code-analysis/quality-rules/ca1310)|Określ StringComparison dla poprawności|
+|[CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101)|Określ kierowanie dla argumentów ciągu P/Invoke|

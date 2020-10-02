@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e1b24cb8406ff29659eb79d1d9fa856db628b89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7abdebf36ab075dfd289069671cf3b6851a72b75
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094089"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659371"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refaktoryzacja do konwersji LINQ do instrukcji foreach
 
@@ -42,7 +42,7 @@ To Refaktoryzacja dotyczy:
 1. Wybierz pozycję **Konwertuj na element "foreach"**. Lub wybierz pozycję **Podgląd zmian** , aby otworzyć okno dialogowe [Podgląd zmian](../../ide/preview-changes.md) , a następnie wybierz pozycję **Zastosuj**.
 
 > [!NOTE]
-> W przypadku języka C# kod generowany przez te refaktoryzacji używa typu jawnego lub [var](/dotnet/csharp/language-reference/keywords/var) dla zmiennej iteracji `foreach` pętli. Typ w wygenerowanym kodzie, jawny lub niejawny, zależy od ustawień stylu kodu, które znajdują się w zakresie. Te ustawienia w stylu kodu są konfigurowane na poziomie komputera w obszarze **Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  **C#**  >  **styl kod w stylu**  >  **ogólny**  >  ** \' var "Preferences"** lub na poziomie rozwiązania w pliku [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) . Jeśli zmienisz ustawienie stylu kodu w **opcjach**, ponownie otwórz plik kodu, aby zmiany zaczęły obowiązywać.
+> W przypadku języka C# kod generowany przez te refaktoryzacji używa typu jawnego lub [var](/dotnet/csharp/language-reference/keywords/var) dla zmiennej iteracji `foreach` pętli. Typ w wygenerowanym kodzie, jawny lub niejawny, zależy od ustawień stylu kodu, które znajdują się w zakresie. Te ustawienia w stylu kodu są konfigurowane na poziomie komputera w obszarze **Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  **C#**  >  **styl kod w stylu**  >  **ogólny**  >  ** \' var "Preferences"** lub na poziomie rozwiązania w pliku [EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types) . Jeśli zmienisz ustawienie stylu kodu w **opcjach**, ponownie otwórz plik kodu, aby zmiany zaczęły obowiązywać.
 
 ## <a name="see-also"></a>Zobacz też
 

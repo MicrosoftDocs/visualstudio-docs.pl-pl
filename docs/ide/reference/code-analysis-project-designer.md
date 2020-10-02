@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b9b61d25d0a08763d55dcfb5d5ddb245471effc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 350c32ea0904913b20f346243de9cb464667289a
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76113777"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659358"
 ---
 # <a name="code-analysis-project-designer"></a>Analiza kodu, Projektant projektu
 
@@ -64,6 +64,6 @@ Włącza lub wyłącza reguły użycia. Możesz również rozwinąć ten wpis, a
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Analiza kodu dla ostrzeżeń związanych z kodem zarządzanym](../../code-quality/code-analysis-for-managed-code-warnings.md)
+- [Analiza kodu dla ostrzeżeń związanych z kodem zarządzanym](/dotnet/fundamentals/code-analysis/quality-rules/index)
 - [Analiza kodu zarządzanego — przegląd](../../code-quality/code-analysis-for-managed-code-overview.md)
 - [Wskazówki: analizowanie zarządzanego kodu pod względem wad kodu](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

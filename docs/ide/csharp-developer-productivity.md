@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 23b50221845cf2b02b963c98f912a218a60630c6
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509942"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658415"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Przewodnik dotyczący wydajności programu Visual Studio dla deweloperów języka C#
 
@@ -101,7 +101,7 @@ Można użyć pliku EditorConfig do codify konwencji kodowania i uzyskać do nic
 
    ![Skonfiguruj poziom ważności reguły w stylu kodu bezpośrednio w edytorze](../ide/media/configure-severity-level.png)
 
-Zapoznaj się z dokumentacją [opcji konwencji kodowania .NET](editorconfig-code-style-settings-reference.md) , która zawiera również przykład kompletnego pliku EditorConfig.
+Zapoznaj się z dokumentacją [opcji konwencji kodowania .NET](/dotnet/fundamentals/code-analysis/code-style-rule-options) , która zawiera również przykład kompletnego pliku EditorConfig.
 
 ::: moniker range=">=vs-2019"
 
@@ -154,7 +154,7 @@ Kilku członków społeczności dodała bezpłatne rozszerzenia, które dodają 
 
 Program Visual Studio ma wiele funkcji ułatwiających wyszukiwanie i [nawigowanie po kodzie](../ide/navigating-code.md).
 
-| Cecha | Skrót | Szczegóły/ulepszenia |
+| Cechy | Skrót | Szczegóły/ulepszenia |
 |- | - | -|
 | Znajdź wszystkie odwołania | **SHIFT** + **F12**| Wyniki są kolorowe i mogą być pogrupowane według projektu, definicji i typu referencyjnego, takich jak Odczyt lub zapis. Możesz również "zablokować" wyniki. |
 | Przejdź do implementacji | **Ctrl** + **F12** | Możesz użyć przejdź do definicji `override` słowa kluczowego, aby przejść do przesłoniętego elementu członkowskiego |
@@ -226,7 +226,7 @@ Za pomocą narzędzia Git lub TFVC można przechowywać i aktualizować kod w pr
 
 Poniżej znajduje się lista funkcji edytora i produktywności, które umożliwiają efektywniejsze pisanie kodu. Może być konieczne włączenie niektórych funkcji, ponieważ są one domyślnie wyłączone (mogą być indeksowane na komputerze, są kontrowersyjnye lub są obecnie eksperymentalne).
 
-| Cecha | Szczegóły | Jak włączyć |
+| Cechy | Szczegóły | Jak włączyć |
 |-|-|-|
 | Zlokalizuj plik w Eksplorator rozwiązań | Podświetla aktywny plik w **Eksplorator rozwiązań** | **Narzędzia**  >  **Opcje**  >  **Projekty i rozwiązania**  >  **Śledź aktywny element w Eksplorator rozwiązań** |
 | Dodaj using dla typów w zestawach odwołań i pakietach NuGet | Pokazuje żarówkę błędu z poprawkami kodu, aby zainstalować pakiet NuGet dla typu niereferencyjnego | **Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  Język **C#**  >  **Zaawansowane**  >  **Sugeruj użycie dla typów w zestawach odwołań** i **Sugeruj użycie dla typów w pakietach NuGet** |

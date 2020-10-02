@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b254cb2077b748f34958e33dbc456f17df530ce
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 25fc255d0e04dd45400fa5da2b81c2e050a2150f
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600228"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658532"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Instrukcje: generowanie danych metryk kodu
 
@@ -32,10 +32,10 @@ Dane metryk kodu można generować na trzy sposoby:
 
 [Analizatory](roslyn-analyzers-overview.md) jakości kodu platformy .NET zawierają kilka reguł analizy metryk kodu:
 
-- [CA1501](./ca1501.md)
-- [CA1502](ca1502.md)
-- [CA1505](ca1505.md)
-- [CA1506](ca1506.md)
+- [CA1501](/dotnet/fundamentals/code-analysis/quality-rules/ca1501)
+- [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502)
+- [CA1505](/dotnet/fundamentals/code-analysis/quality-rules/ca1505)
+- [CA1506](/dotnet/fundamentals/code-analysis/quality-rules/ca1506)
 
 Te reguły są domyślnie wyłączone, ale można je włączyć z poziomu [**Eksplorator rozwiązań**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) lub w pliku [zestawu reguł](using-rule-sets-to-group-code-analysis-rules.md) . Na przykład, aby włączyć CA1502 reguły jako ostrzeżenie, plik zestawu reguł będzie zawierać następujący wpis:
 
@@ -60,7 +60,7 @@ Można skonfigurować progi, w których będą wyzwalane reguły metryki kodu.
    CA1502: 10
    ```
 
-   W tym przykładzie reguła [CA1502](ca1502.md) jest skonfigurowana do uruchamiania, gdy Złożoność cyklomatyczna metody jest większa niż 10.
+   W tym przykładzie reguła [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502) jest skonfigurowana do uruchamiania, gdy Złożoność cyklomatyczna metody jest większa niż 10.
 
 3. W oknie **Właściwości** programu Visual Studio lub w pliku projektu Oznacz akcję kompilacja pliku konfiguracji jako [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Przykład:
 

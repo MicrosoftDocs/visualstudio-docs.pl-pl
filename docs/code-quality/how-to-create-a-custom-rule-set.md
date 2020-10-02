@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d498ee0acfdc87f340a3c5c8848680eaed6276d
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893271"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658558"
 ---
 # <a name="customize-a-rule-set"></a>Dostosowywanie zestawu reguł
 
@@ -51,7 +51,7 @@ Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw re
 4. Wybierz pozycję **Otwórz** , aby wyświetlić reguły w edytorze zestawu reguł.
 
 > [!NOTE]
-> Jeśli masz projekt .NET Core lub .NET Standard, proces jest nieco inny, ponieważ nie ma karty właściwości **analizy kodu** . Postępuj zgodnie z instrukcjami, aby [skopiować wstępnie zdefiniowany zestaw reguł do projektu i ustawić go jako aktywny zestaw reguł](analyzer-rule-sets.md). Po skopiowaniu zestawu reguł można [go edytować w edytorze zestawu reguł programu Visual Studio](working-in-the-code-analysis-rule-set-editor.md) , otwierając go z **Eksplorator rozwiązań**.
+> Jeśli masz projekt .NET Core lub .NET Standard, proces jest nieco inny, ponieważ nie ma karty właściwości **analizy kodu** . Postępuj zgodnie z instrukcjami, aby [skopiować wstępnie zdefiniowany zestaw reguł do projektu i ustawić go jako aktywny zestaw reguł](/dotnet/fundamentals/code-analysis/code-quality-rule-options). Po skopiowaniu zestawu reguł można [go edytować w edytorze zestawu reguł programu Visual Studio](working-in-the-code-analysis-rule-set-editor.md) , otwierając go z **Eksplorator rozwiązań**.
 
 ## <a name="create-a-new-rule-set"></a>Utwórz nowy zestaw reguł
 
@@ -61,7 +61,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
 2. W oknie dialogowym **nowy plik** wybierz kategorię **Ogólne** po lewej stronie, a następnie wybierz pozycję **zestaw reguł analizy kodu**.
 
-3. Wybierz pozycję **Open** (Otwórz).
+3. Wybierz pozycję **Otwórz**.
 
    *Nowy plik zestawu reguł zostanie* otwarty w edytorze zestawu reguł.
 
@@ -98,7 +98,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
 ## <a name="rule-precedence"></a>Pierwszeństwo reguł
 
-- Jeśli ta sama reguła zostanie wyświetlona co najmniej dwa razy w zestawie reguł z różnymi serwerami, kompilator generuje błąd. Na przykład:
+- Jeśli ta sama reguła zostanie wyświetlona co najmniej dwa razy w zestawie reguł z różnymi serwerami, kompilator generuje błąd. Przykład:
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -113,7 +113,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
    **CA0063: nie można załadować pliku zestawu reguł " \[ Twoje]. zestaw reguł" lub jeden z jego plików zależnych od tego zestawu. Plik jest niezgodny ze schematem zestawu reguł.**
 
-- Jeśli zestaw reguł zawiera regułę podrzędną ustawioną przy użyciu znacznika **include** , a reguła podrzędna i nadrzędna ustawiją tę samą regułę, ale z różnymi serwerami, pierwszeństwo ma ważność w zestawie reguł nadrzędnych. Na przykład:
+- Jeśli zestaw reguł zawiera regułę podrzędną ustawioną przy użyciu znacznika **include** , a reguła podrzędna i nadrzędna ustawiją tę samą regułę, ale z różnymi serwerami, pierwszeństwo ma ważność w zestawie reguł nadrzędnych. Przykład:
 
    ```xml
    <!-- Parent rule set -->

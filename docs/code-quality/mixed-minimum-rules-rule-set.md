@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d44b12815f24ea14d35df0e27e5b3f72c296e16
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: edacd898cc1deb0382dd8e8b4b048af895c3b579
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599578"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658467"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Zestaw reguł Mixed Minimum Rules
 
@@ -153,7 +153,7 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 |[C28305](/cpp/code-quality/c28305)|Wykryto błąd podczas analizowania tokenu.|
 |[C28350](/cpp/code-quality/c28350)|Adnotacja zawiera opis sytuacji, która nie jest stosowana warunkowo.|
 |[C28351](/cpp/code-quality/c28351)|Adnotacja opisuje, gdzie w warunku nie można używać wartości dynamicznej (zmiennej).|
-|[CA1001](../code-quality/ca1001.md)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
-|[CA1821](../code-quality/ca1821.md)|Usuwaj puste finalizatory|
-|[CA2213](../code-quality/ca2213.md)|Pola możliwe do likwidacji należy likwidować|
-|[CA2231](../code-quality/ca2231.md)|Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|Usuwaj puste finalizatory|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|Pola możliwe do likwidacji należy likwidować|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals|

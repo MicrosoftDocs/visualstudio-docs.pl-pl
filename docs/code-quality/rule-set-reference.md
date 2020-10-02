@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d380346b7e049a6ffc4e8d03a5be27983de10249
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b20974d2e44661ed7f4a0288ecb9eff82b2035a
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587241"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658428"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Odwołanie zestawu reguł analizy kodu
 
 Podczas konfigurowania starszej analizy dla projektów kodu zarządzanego w programie Visual Studio można wybrać jedną z listy wbudowanych *zestawów reguł*. Niektóre reguły są zawarte w więcej niż jednym z wbudowanych zestawów reguł, na przykład zestaw reguł prawidłowości podstawowych reguł poprawności zawiera reguły, które znajdują się w zestawie reguł zarządzanych zalecanych reguł.
 
 > [!NOTE]
-> Zestawy reguł w tej sekcji odnoszą się do starszej analizy. Aby uzyskać informacje o zestawach reguł dostępnych dla pakietów analizatora kodu, zobacz [Korzystanie z zestawów reguł z analizami kodu](analyzer-rule-sets.md).
+> Zestawy reguł w tej sekcji odnoszą się do starszej analizy. Aby uzyskać informacje o zestawach reguł dostępnych dla pakietów analizatora kodu, zobacz [Korzystanie z zestawów reguł z analizami kodu](/dotnet/fundamentals/code-analysis/code-quality-rule-options).
 
 Można użyć jednego z tych wbudowanych zestawów reguł lub [dostosować zestaw reguł](../code-quality/how-to-create-a-custom-rule-set.md) tak, aby odpowiadał wymaganiom projektu. W przypadku dołączania wielu zestawów reguł, które zawierają tę samą regułę w zestawie reguł niestandardowych, ta reguła występuje tylko raz w zestawie reguł niestandardowych.
 

@@ -11,12 +11,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
-ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
+ms.openlocfilehash: 08d033deb09f8b91cfc183e121bac7c3f2839d08
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90560752"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659221"
 ---
 # <a name="overview"></a>Omówienie
 
@@ -102,7 +102,7 @@ Jeśli masz wiele wpisów, które mają zastosowanie do określonego identyfikat
 - Wpis ważności dla pojedynczej reguły według identyfikatora ma pierwszeństwo przed wpisem o ważności dla kategorii.
 - Wpis ważności dla kategorii ma pierwszeństwo przed wpisem ważności dla wszystkich reguł analizatora.
 
-Rozważmy następujący przykład EditorConfig, gdzie [CA1822](./ca1822.md) ma kategorię "Performance":
+Rozważmy następujący przykład EditorConfig, gdzie [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) ma kategorię "Performance":
 
    ```ini
    [*.cs]
@@ -117,7 +117,7 @@ W poprzednim przykładzie wszystkie trzy wpisy mają zastosowanie do CA1822. Jed
 
 1. Jeśli nie masz jeszcze pliku EditorConfig dla projektu, [Dodaj go](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
-2. Dodaj wpis dla każdej reguły, która ma zostać skonfigurowana w ramach odpowiedniego rozszerzenia pliku. Na przykład, aby ustawić ważność [CA1822](ca1822.md) dla `error` plików języka C#, wpis wygląda następująco:
+2. Dodaj wpis dla każdej reguły, która ma zostać skonfigurowana w ramach odpowiedniego rozszerzenia pliku. Na przykład, aby ustawić ważność [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) dla `error` plików języka C#, wpis wygląda następująco:
 
    ```ini
    [*.cs]
@@ -125,7 +125,7 @@ W poprzednim przykładzie wszystkie trzy wpisy mają zastosowanie do CA1822. Jed
    ```
 
 > [!NOTE]
-> W przypadku analizatorów stylu kodu IDE można także skonfigurować je w pliku EditorConfig przy użyciu innej składni, na przykład `dotnet_style_qualification_for_field = false:suggestion` . Jednak ustawienie ważności przy użyciu `dotnet_diagnostic` składni ma pierwszeństwo. Aby uzyskać więcej informacji, zobacz [konwencje językowe dla EditorConfig](../ide/editorconfig-language-conventions.md).
+> W przypadku analizatorów stylu kodu IDE można także skonfigurować je w pliku EditorConfig przy użyciu innej składni, na przykład `dotnet_style_qualification_for_field = false:suggestion` . Jednak ustawienie ważności przy użyciu `dotnet_diagnostic` składni ma pierwszeństwo. Aby uzyskać więcej informacji, zobacz [konwencje językowe dla EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules).
 
 ### <a name="set-rule-severity-from-the-light-bulb-menu"></a>Ustaw ważność reguły z menu żarówki
 
@@ -409,7 +409,7 @@ W projekcie .NET Core, jeśli dodasz odwołanie do projektu, który ma analizato
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przegląd analizatorów kodu w programie Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Prześlij usterkę analizatora kodu](https://github.com/dotnet/roslyn-analyzers/issues)

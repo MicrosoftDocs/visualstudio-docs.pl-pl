@@ -2,20 +2,20 @@
 title: Opcje stylu kodu i czyszczenie kodu
 ms.date: 04/25/2019
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 75b301f66f597f8b53a2561ffbbe05dfb8a4cb1c
-ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
+ms.openlocfilehash: 82eec2a911ec113c42423fe14b06539e465e8bb3
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90682683"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658389"
 ---
 # <a name="code-style-preferences"></a>Preferencje stylu kodu
 
@@ -26,7 +26,7 @@ Można zdefiniować ustawienia stylu kodu dla każdego projektu przy użyciu [pl
 
 ## <a name="code-styles-in-editorconfig-files"></a>Style kodu w plikach EditorConfig
 
-[Ustawienia stylu kodu](../ide/editorconfig-code-style-settings-reference.md) dla platformy .NET można określić, dodając plik [EditorConfig](create-portable-custom-editor-options.md) do projektu. Pliki EditorConfig są skojarzone z bazą kodu, a nie kontem personalizacji programu Visual Studio. Ustawienia w pliku EditorConfig mają pierwszeństwo przed stylami kodu, które są określone w oknie dialogowym **Opcje** . Użyj pliku EditorConfig, jeśli chcesz wymusić style kodowania dla wszystkich współautorów w repozytorium lub projekcie.
+[Ustawienia stylu kodu](/dotnet/fundamentals/code-analysis/code-style-rule-options) dla platformy .NET można określić, dodając plik [EditorConfig](create-portable-custom-editor-options.md) do projektu. Pliki EditorConfig są skojarzone z bazą kodu, a nie kontem personalizacji programu Visual Studio. Ustawienia w pliku EditorConfig mają pierwszeństwo przed stylami kodu, które są określone w oknie dialogowym **Opcje** . Użyj pliku EditorConfig, jeśli chcesz wymusić style kodowania dla wszystkich współautorów w repozytorium lub projekcie.
 
 ::: moniker range=">=vs-2019"
 
@@ -109,8 +109,8 @@ Jeśli chcesz, aby ustawienia stylu kodu były stosowane za każdym razem, gdy z
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Szybkie akcje](../ide/quick-actions.md)
-- [Ustawienia konwencji kodowania .NET dla EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Ustawienia konwencji kodowania .NET dla EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [Zachowanie edytora (Visual Studio dla komputerów Mac)](/visualstudio/mac/editor-behavior)

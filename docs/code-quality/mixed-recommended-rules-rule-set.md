@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c29e27160b50a53995b7542680256bfd4e2d8f2
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 324595021a11fb533a1eeb1936df6f4894d4fbce
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600050"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658454"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Zestaw reguł Mixed Recommended Rules
 
@@ -240,29 +240,29 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 |[C28307](/cpp/code-quality/c28307)|Adnotacja dla parametru jest przestarzała|
 |[C28350](/cpp/code-quality/c28350)|Adnotacja zawiera opis sytuacji, która nie jest stosowana warunkowo.|
 |[C28351](/cpp/code-quality/c28351)|Adnotacja opisuje, gdzie w warunku nie można używać wartości dynamicznej (zmiennej).|
-|[CA1001](../code-quality/ca1001.md)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
 |[CA1009](../code-quality/ca1009.md)|Poprawnie deklaruj procedury obsługi zdarzeń|
-|[CA1016](../code-quality/ca1016.md)|Oznacz zestawy atrybutem AssemblyVersion|
-|[CA1033](../code-quality/ca1033.md)|Metody interfejsu powinny móc zostać wywołane przez typy podrzędne|
+|[CA1016](/dotnet/fundamentals/code-analysis/quality-rules/ca1016)|Oznacz zestawy atrybutem AssemblyVersion|
+|[CA1033](/dotnet/fundamentals/code-analysis/quality-rules/ca1033)|Metody interfejsu powinny móc zostać wywołane przez typy podrzędne|
 |[CA1049](../code-quality/ca1049.md)|Typy, do których należą natywne zasoby, powinny być możliwe do likwidacji|
-|[CA1060](../code-quality/ca1060.md)|Przenieś metody P/Invoke do klasy NativeMethods|
-|[CA1061](../code-quality/ca1061.md)|Nie ukrywaj metod klasy bazowej|
-|[CA1063](../code-quality/ca1063.md)|Poprawnie zaimplementuj interfejs IDisposable|
-|[CA1065](../code-quality/ca1065.md)|Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach|
+|[CA1060](/dotnet/fundamentals/code-analysis/quality-rules/ca1060)|Przenieś metody P/Invoke do klasy NativeMethods|
+|[CA1061](/dotnet/fundamentals/code-analysis/quality-rules/ca1061)|Nie ukrywaj metod klasy bazowej|
+|[CA1063](/dotnet/fundamentals/code-analysis/quality-rules/ca1063)|Poprawnie zaimplementuj interfejs IDisposable|
+|[CA1065](/dotnet/fundamentals/code-analysis/quality-rules/ca1065)|Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach|
 |[CA1301](../code-quality/ca1301.md)|Unikaj duplikowania akceleratorów|
 |[CA1400](../code-quality/ca1400.md)|Punkty wejścia P/Invoke powinny istnieć|
-|[CA1401](../code-quality/ca1401.md)|Elementy P/Invoke nie powinny być widoczne|
+|[CA1401](/dotnet/fundamentals/code-analysis/quality-rules/ca1401)|Elementy P/Invoke nie powinny być widoczne|
 |[CA1403](../code-quality/ca1403.md)|Typy z automatycznym układem nie powinny być widoczne dla modelu COM|
 |[CA1404](../code-quality/ca1404.md)|Wywołaj metodę GetLastError bezpośrednio po elemencie P/Invoke|
 |[CA1405](../code-quality/ca1405.md)|Typy podstawowe typów widocznych dla modelu COM powinny być widoczne dla modelu COM|
 |[CA1410](../code-quality/ca1410.md)|Metody rejestracji modelu COM powinny mieć swoje odpowiedniki|
 |[CA1415](../code-quality/ca1415.md)|Poprawnie zadeklaruj elementy P/Invoke|
-|[CA1821](../code-quality/ca1821.md)|Usuwaj puste finalizatory|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|Usuwaj puste finalizatory|
 |[CA1900](../code-quality/ca1900.md)|Pola typu wartości powinny być przenośne|
 |[CA1901](../code-quality/ca1901.md)|Deklaracje metody P/Invoke powinny być przenośne|
-|[CA2002](../code-quality/ca2002.md)|Nie blokuj obiektów o słabej tożsamości|
-|[CA2100](../code-quality/ca2100.md)|Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach|
-|[CA2101](../code-quality/ca2101.md)|Określ kierowanie dla argumentów ciągu P/Invoke|
+|[CA2002](/dotnet/fundamentals/code-analysis/quality-rules/ca2002)|Nie blokuj obiektów o słabej tożsamości|
+|[CA2100](/dotnet/fundamentals/code-analysis/quality-rules/ca2100)|Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach|
+|[CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101)|Określ kierowanie dla argumentów ciągu P/Invoke|
 |[CA2108](../code-quality/ca2108.md)|Przejrzyj zabezpieczenia deklaratywne dla typów wartości|
 |[CA2111](../code-quality/ca2111.md)|Wskaźniki nie powinny być widoczne|
 |[CA2112](../code-quality/ca2112.md)|Zabezpieczone typy nie powinny ujawniać pól|
@@ -284,21 +284,21 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 |[CA2146](../code-quality/ca2146.md)|Typy muszą być co najmniej tak krytyczne jak ich typy i interfejsy podstawowe|
 |[CA2147](../code-quality/ca2147.md)|Metody przezroczyste nie mogą używać asercji zabezpieczeń|
 |[CA2149](../code-quality/ca2149.md)|Metody przezroczyste nie mogą wywoływać kodu natywnego|
-|[CA2200](../code-quality/ca2200.md)|Ponowie zgłoś wyjątek, aby zachować szczegóły stosu|
+|[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200)|Ponowie zgłoś wyjątek, aby zachować szczegóły stosu|
 |[CA2202](../code-quality/ca2202.md)|Nie likwiduj obiektów wielokrotnie|
-|[CA2207](../code-quality/ca2207.md)|Pola statyczne typu wartości inicjuj bezpośrednio|
+|[CA2207](/dotnet/fundamentals/code-analysis/quality-rules/ca2207)|Pola statyczne typu wartości inicjuj bezpośrednio|
 |[CA2212](../code-quality/ca2212.md)|Nie oznaczaj składników usługi atrybutem WebMethod|
-|[CA2213](../code-quality/ca2213.md)|Pola możliwe do likwidacji należy likwidować|
-|[CA2214](../code-quality/ca2214.md)|Nie wywołuj w konstruktorach metod, które można przesłaniać|
-|[CA2216](../code-quality/ca2216.md)|Typy możliwe do likwidacji powinny deklarować finalizator|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|Pola możliwe do likwidacji należy likwidować|
+|[CA2214](/dotnet/fundamentals/code-analysis/quality-rules/ca2214)|Nie wywołuj w konstruktorach metod, które można przesłaniać|
+|[CA2216](/dotnet/fundamentals/code-analysis/quality-rules/ca2216)|Typy możliwe do likwidacji powinny deklarować finalizator|
 |[CA2220](../code-quality/ca2220.md)|Finalizatory powinny wywoływać finalizator klasy bazowej|
-|[CA2229](../code-quality/ca2229.md)|Zaimplementuj konstruktory serializacji|
-|[CA2231](../code-quality/ca2231.md)|Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals|
+|[CA2229](/dotnet/fundamentals/code-analysis/quality-rules/ca2229)|Zaimplementuj konstruktory serializacji|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals|
 |[CA2232](../code-quality/ca2232.md)|Oznacz punkty wejścia modelu Windows Forms atrybutem STAThread|
-|[CA2235](../code-quality/ca2235.md)|Oznacz wszystkie pola nieprzeznaczone do serializacji|
+|[CA2235](/dotnet/fundamentals/code-analysis/quality-rules/ca2235)|Oznacz wszystkie pola nieprzeznaczone do serializacji|
 |[CA2236](../code-quality/ca2236.md)|Wywołuj metody klasy bazowej dla typów ISerializable|
-|[CA2237](../code-quality/ca2237.md)|Oznacz typy ISerializable atrybutem SerializableAttribute|
+|[CA2237](/dotnet/fundamentals/code-analysis/quality-rules/ca2237)|Oznacz typy ISerializable atrybutem SerializableAttribute|
 |[CA2238](../code-quality/ca2238.md)|Poprawnie implementuj metody serializacji|
 |[CA2240](../code-quality/ca2240.md)|Poprawnie zaimplementuj interfejs ISerializable|
-|[CA2241](../code-quality/ca2241.md)|Podaj poprawne argumenty metod formatowania|
-|[CA2242](../code-quality/ca2242.md)|Poprawnie testuj nie-liczby (NaN)|
+|[CA2241](/dotnet/fundamentals/code-analysis/quality-rules/ca2241)|Podaj poprawne argumenty metod formatowania|
+|[CA2242](/dotnet/fundamentals/code-analysis/quality-rules/ca2242)|Poprawnie testuj nie-liczby (NaN)|

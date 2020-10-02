@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4309b1a38e99cda262bf7558f050754656419e88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba62555f786b2280de9a07c435a3e32d5cc3e7d9
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520825"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659293"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Przesłoń metodę Equals() dla typów wartości
 
@@ -28,7 +28,7 @@ ms.locfileid: "85520825"
 |Identyfikator reguły|DA0006|
 |Kategoria|Użycie .NET Framework|
 |Metody Profiiling|Próbkowanie|
-|Komunikat|Przesłoń równości i operator równości dla typów wartości.|
+|Wiadomość|Przesłoń równości i operator równości dla typów wartości.|
 |Typ messge|Ostrzeżenie|
 
 ## <a name="cause"></a>Przyczyna
@@ -40,4 +40,4 @@ ms.locfileid: "85520825"
  Aby uzyskać więcej informacji o sposobie przesłonięcia równości i operatory równości, zobacz [wytyczne dotyczące implementowania równości i operatora równości (= =)](/dotnet/standard/design-guidelines/equality-operators).
 
 ## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie
- Aby zapoznać się z przykładem implementowania operatorów równości i równości, zobacz reguła analizy kodu [CA1815: override Equals i operator Equals dla typów wartości](../code-quality/ca1815.md)
+ Aby zapoznać się z przykładem implementowania operatorów równości i równości, zobacz reguła analizy kodu [CA1815: override Equals i operator Equals dla typów wartości](/dotnet/fundamentals/code-analysis/quality-rules/ca1815)
