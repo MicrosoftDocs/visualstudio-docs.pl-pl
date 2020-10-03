@@ -1,5 +1,6 @@
 ---
 title: Diagnostyka grafiki | Microsoft Docs
+description: Wprowadzenie do programu Visual Studio Diagnostyka grafiki.
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,15 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e69d88bb5764836d82232cec26606009eaf694d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 829c51c0e2020a154dc485dbfc4db25e0b399e57
+ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187735"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91671382"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostyka grafiki w programie Visual Studio
-Visual Studio*Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następnie analizowania problemów z renderowaniem i wydajnością w aplikacjach Direct3D. Diagnostyka grafiki można używać w aplikacjach, które są uruchamiane lokalnie na komputerze z systemem Windows, w emulatorze urządzenia z systemem Windows lub na komputerze zdalnym lub urządzeniu.
+>[!NOTE]
+> Program Visual Studio zaleca platformy PIX w systemie Windows dla gier DirectX 12. [PIX w systemie Windows](https://aka.ms/PIXonWindows) to narzędzie do dostrajania i debugowania wydajności, które w pełni obsługuje program DirectX 12. [Więcej informacji znajdziesz](visual-studio-graphics-diagnostics-directx-12.md) [tutaj](https://aka.ms/downloadPIX).
+
+Visual Studio *Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następnie analizowania problemów z renderowaniem i wydajnością w aplikacjach Direct3D. Diagnostyka grafiki można używać w aplikacjach, które są uruchamiane lokalnie na komputerze z systemem Windows, w emulatorze urządzenia z systemem Windows lub na komputerze zdalnym lub urządzeniu.
 
  Przepływ pracy Diagnostyka grafiki rozpoczyna się od przechwytywania rekordu, w jaki sposób aplikacja korzysta z Direct3D — na żywo, tak jak jest uruchomiona, tak aby jej zachowanie można było przeanalizować natychmiast, udostępnić lub zapisać w przyszłości. Sesje przechwytywania można inicjować i kontrolować ręcznie z poziomu programu Visual Studio lub za pomocą narzędzia do przechwytywania wiersza polecenia **dxcap.exe**. Sesje przechwytywania można także inicjować i kontrolować programowo przy użyciu interfejsów API przechwytywania Diagnostyka grafiki.
 
@@ -68,3 +72,4 @@ Visual Studio*Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następn
 | - | - |
 | [Przewodnik po funkcjach debugera](../debugger-feature-tour.md) | Wprowadza funkcje debugowania w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . |
 | [Grafika i gry DirectX](/windows/win32/directx) | Zawiera artykuły, które omawiają technologie grafiki DirectX. |
+| [Obsługa DirectX 12 w programie Visual Studio](visual-studio-graphics-diagnostics-directx-12.md) | Dowiedz się więcej o obsłudze DirectX 12 w programie Visual Studio |
