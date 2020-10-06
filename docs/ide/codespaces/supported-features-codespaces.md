@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: c86fc99fe6bd2ae17b6ce222b04549db07d7687e
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: eee21ca84acdcf5bbf774232d8d23ceda954b730
+ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862274"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749508"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Obsługiwane funkcje programu Visual Studio (wersja zapoznawcza)
 
@@ -42,15 +42,15 @@ Podczas pobierania funkcji języka inteligentnego, takich jak IntelliSense, nawi
 * Podświetlanie składni
 * Szybkie informacje *
 * HTML, CSS, edytory Razor *-częściowa pomoc techniczna.
-* Edytor JavaScript * — obsługa częściowa.
+* Obsługa języka JavaScript i edytora TypeScript * — częściowa pomoc techniczna.
 
 Jeszcze niedostępne:
 
 * IntelliSense * — niektóre filtry autouzupełniania/listy składowych są niedostępne. Uzupełnianie dla nieimportowanych typów i IntelliSense w oknie czujki nie jest jeszcze dostępne.
-* Nawigacja po kodzie *-większość obsługiwanych poleceń, w szczególności przejdź do bazy i Znajdź w plikach ze specyfikacją ścieżki nie jest jeszcze obsługiwana.
+* Nawigacja po kodzie * — większość poleceń jest obsługiwanych. Przejdź do bazy i Znajdź w plikach ze specyfikacją ścieżki nie są jeszcze obsługiwane.
 * Szybkie informacje * — kolorowanie w szybkich informacjach nie jest obsługiwane.
 * HTML, CSS, edytory Razor * — Diagnostyka, uzupełnianie IntelliSense, szybkie informacje, inteligentne wcięcie. Obecnie nie jest obsługiwane kolorowanie semantyczne, polecenia nawigacji itp.
-* Edytor JavaScript *-bloki skryptu (na przykład zawartość JavaScript w plikach HTML i CSHTML) i wyróżnianie semantyczne nie są jeszcze obsługiwane. Znane problemy związane z funkcjami żarówki i zaznaczanie błędów.
+* Skrypty JavaScript i TypeScript Editor *-bloki skryptów (na przykład zawartość JavaScript w plikach HTML i CSHTML) i wyróżnianie semantyczne nie są jeszcze obsługiwane. Znane problemy związane z funkcjami żarówki i zaznaczanie błędów.
 * Widok elementów docelowych CMake
 * Edytor ustawień projektu CMake
 * Ctrl + F7 (Kompilowanie pliku)
@@ -72,7 +72,7 @@ Obsługiwane są większość typów aplikacji i konfiguracji projektu, ale koni
 
 Jeszcze niedostępne:
 
-* Projektanci interfejsu użytkownika — WinForms i projektanci WPF
+* Projektanci interfejsu użytkownika — WinForms, WPF i projektantów zasobów
 * Projekty Visual Basic i F #
 * .NET Framework projekty skierowane
 * Projekty Docker Compose
@@ -121,7 +121,7 @@ Jeszcze niedostępne:
 * Funkcje testowania dla przedsiębiorstw — Live Unit Testing, fałszywe firmy Microsoft, pokrycie kodu i IntelliTest nie są obsługiwane.
 * Zaawansowane scenariusze publikowania — publikowanie selektywne, publikowanie FTP, Podgląd zmian, pasek narzędzi szybkiej publikacji itp.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Co to jest GitHub Codespaces?](codespaces-overview.md)
 * [Jak używać programu Visual Studio z codespace](use-visual-studio-with-codespaces.md)
