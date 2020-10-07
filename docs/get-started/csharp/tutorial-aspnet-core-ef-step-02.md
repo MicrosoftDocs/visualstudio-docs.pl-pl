@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77580077"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780996"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Krok 2. Tworzenie pierwszej aplikacji sieci Web ASP.NET Core
 
@@ -33,7 +33,7 @@ _Obejrzyj ten film wideo i postępuj zgodnie z instrukcjami, aby utworzyć swoj�
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>Uruchom program Visual Studio 2019 i Utwórz nowy projekt
 
-Uruchom program Visual Studio 2019 i kliknij pozycję **Utwórz nowy projekt**. Wybierz **ASP.NET Core aplikacji sieci Web**. Wybierz szablon **aplikacja sieci Web** i Zachowaj domyślną nazwę projektu i lokalizację. Na liście rozwijanej z wersją ASP.NET Core wybierz **ASP.NET Core 2,1** lub **ASP.NET Core 2,2**. Kliknij przycisk **Utwórz**. Aby uzyskać bardziej szczegółowe instrukcje, zobacz [poprzednie wideo w tej serii samouczków](tutorial-aspnet-core-ef-step-01.md).
+Uruchom program Visual Studio 2019 i kliknij pozycję **Utwórz nowy projekt**. Wybierz **ASP.NET Core aplikacji sieci Web**. Wybierz szablon **aplikacja sieci Web** i Zachowaj domyślną nazwę projektu i lokalizację. Na liście rozwijanej z wersją ASP.NET Core wybierz **ASP.NET Core 2,1** lub **ASP.NET Core 2,2**. Kliknij pozycję **Utwórz**. Aby uzyskać bardziej szczegółowe instrukcje, zobacz [poprzednie wideo w tej serii samouczków](tutorial-aspnet-core-ef-step-01.md).
 
 ![Visual Studio 2019 wybierz opcje projektu ASP.NET Core](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
@@ -50,11 +50,11 @@ W oknie Eksploratora rozwiązań po prawej stronie można wyświetlić zawartoś
 
 Folder *wwwroot* zawiera pliki statyczne, które będą dostępne publicznie z aplikacji sieci Web. Zwykle zawiera arkusze stylów, pliki skryptów po stronie klienta i obrazy.
 
-### <a name="pages"></a>Pages
+### <a name="pages"></a>Strony
 
 Folder *strony* zawiera Razor Pages lokacji. Szablon domyślny zawiera kilka stron, w tym stronę *index. cshtml* , która jest stroną główną aplikacji, a także informacje o kontakcie i tak dalej.
 
-### <a name="appsettingsjson"></a>appsettings.jsna
+### <a name="appsettingsjson"></a>appsettings.json
 
 Ten plik zawiera ustawienia konfiguracji dla witryny w formacie JSON.
 
@@ -100,7 +100,7 @@ Uruchom ponownie aplikację. Powinna zostać wyświetlona strona, która wyświe
 
 Dodaj punkt przerwania do `OnGet` metody, do której przypiszemy wartość `Time` , a tym razem Rozpocznij debugowanie aplikacji.
 
-Wykonywanie jest zatrzymane w wierszu i widać, że `DateTime.Today` zawiera datę, ale czas jest zawsze północny, ponieważ nie obejmuje danych czasowych. 
+Wykonywanie jest zatrzymane w wierszu i widać, że `DateTime.Today` zawiera datę, ale czas jest zawsze północny, ponieważ nie obejmuje danych czasowych.
 
 ![Projekt programu Visual Studio 2019 ASP.NET Core w przeglądarce](media/vs-2019/vs2019-breakpoint.png)
 
@@ -128,4 +128,4 @@ W następnym filmie wideo dowiesz się, jak dodać obsługę danych do aplikacji
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Samouczek: Tworzenie aplikacji internetowej Razor Pages przy użyciu ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [Samouczek: Tworzenie aplikacji internetowej Razor Pages przy użyciu ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

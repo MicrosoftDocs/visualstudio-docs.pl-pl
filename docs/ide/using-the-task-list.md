@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abd6d73c7b312cf00062307370ba2f7aebe6694e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a3e1c43e9813bce664a63f3675b0fed6e14e3c7
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768620"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780998"
 ---
 # <a name="use-the-task-list"></a>Korzystanie z listy zadań
 
@@ -65,7 +65,7 @@ Komentarz w kodzie poprzedzony znacznikiem komentarza i wstępnie zdefiniowany t
 Ponieważ `TODO` jest wstępnie zdefiniowanym tokenem, ten komentarz jest wyświetlany jako `TODO` zadanie na liście.
 
 > [!NOTE]
-> Tokeny domyślne są dostępne tylko dla języków C/C++, C# i VB. W przypadku innych języków zapoznaj się z sekcją **tokeny niestandardowe** .
+> Tokeny domyślne są dostępne tylko dla języków C/C++, C# i VB.
 
 ### <a name="custom-tokens"></a>Tokeny niestandardowe
 

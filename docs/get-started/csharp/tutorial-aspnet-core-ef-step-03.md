@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 42bc0442dc5901f92fc8a83b7af41c1fc42f4be4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d01d991daf5c24c02b8cd4976663a9399b251cc
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250804"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780970"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Krok 3. Współpraca z danymi przy użyciu Entity Framework
 
@@ -79,7 +79,7 @@ services.AddDbContext<AppDbContext>(options =>
 
 Należy również znaleźć `AppDbContext` Parametry połączenia, które zostały dodane do *appsettings.jsprojektu na* pliku.
 
-Jeśli aplikacja zostanie uruchomiona teraz, może się nie powieść, ponieważ nie została jeszcze utworzona baza danych. W razie potrzeby można skonfigurować aplikację do automatycznego tworzenia bazy danych, [dodając kod do program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio#update-main):
+Jeśli aplikacja zostanie uruchomiona teraz, może się nie powieść, ponieważ nie została jeszcze utworzona baza danych. W razie potrzeby można skonfigurować aplikację do automatycznego tworzenia bazy danych, [dodając kod do program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true#update-main):
 
 ```csharp
 public static void Main(string[] args)
@@ -135,5 +135,5 @@ W następnym filmie wideo dowiesz się, jak dodać obsługę interfejsu API siec
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Razor Pages z Entity Framework Core w ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
-- [ASP.NET Core Razor Pages z EF Core](/aspnet/core/data/?view=aspnetcore-2.1)
+- [Razor Pages z Entity Framework Core w ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true)
+- [ASP.NET Core Razor Pages z EF Core](/aspnet/core/data/?view=aspnetcore-2.1&preserve-view=true)

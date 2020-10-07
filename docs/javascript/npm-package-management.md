@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1269049adad3fe2d26caa79721452f7f313e60d5
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: fed525f62466d096aa7868cc57c7fd7c75bf46f8
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739905"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781025"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Zarządzanie pakietami npm w programie Visual Studio
 
@@ -126,7 +126,7 @@ W przypadku projektów takich jak projekty ASP.NET Core można zintegrować obs�
 * [Zainstaluj pakiety przy użyciu package.jsna](#npmInstallPackage)
 
 >[!NOTE]
-> W przypadku projektów ASP.NET Core można także użyć [Menedżera bibliotek](/aspnet/core/client-side/libman/?view=aspnetcore-3.1) lub przędzy zamiast npm do instalowania plików JavaScript i CSS po stronie klienta.
+> W przypadku projektów ASP.NET Core można także użyć [Menedżera bibliotek](/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) lub przędzy zamiast npm do instalowania plików JavaScript i CSS po stronie klienta.
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a> Dodawanie obsługi npm do projektu (ASP.NET Core)
 
@@ -164,7 +164,7 @@ W przypadku projektów z dołączoną npm można skonfigurować pakiety npm przy
 
 Funkcja IntelliSense w *package.js* jest pomocna w przypadku wybrania konkretnej wersji pakietu npm.
 
-:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Wybierz wersję pakietu npm" border="true":::
+:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Zainstaluj nowy pakiet npm z Eksploratora rozwiązań" border="true":::
 
 Po zapisaniu pliku program Visual Studio dodaje pakiet w węźle **zależności/npm** w Eksplorator rozwiązań. Jeśli węzeł nie jest widoczny, kliknij prawym przyciskiem myszy pozycję **package.jsna** i wybierz polecenie **Przywróć pakiety**.
 

@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ef41e28d994f27f66f616623d1b2c9798b65ede4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6b089309ca7202c01028b3323ccabfd3668e909
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77580049"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780981"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Samouczek: wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio
 
@@ -139,7 +139,7 @@ Jeśli nie widzisz szablonu projektu **ASP.NET Core aplikacji sieci Web** , moż
 
 ### <a name="about-your-solution"></a>Informacje o rozwiązaniu
 
-To rozwiązanie jest zgodne ze wzorcem projektowania **strony Razor** . Jest to inny niż Wzorzec projektowy [modelu-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) , który jest zoptymalizowany do uwzględnienia kodu modelu i kontrolera na stronie Razor.
+To rozwiązanie jest zgodne ze wzorcem projektowania **strony Razor** . Jest to inny niż Wzorzec projektowy [modelu-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x&preserve-view=true) , który jest zoptymalizowany do uwzględnienia kodu modelu i kontrolera na stronie Razor.
 
 ::: moniker range="vs-2017"
 ## <a name="tour-your-solution"></a>Zapoznaj się z rozwiązaniem
@@ -366,7 +366,7 @@ Program Visual Studio to zintegrowany pakiet programistyczny narzędzi do tworze
 Gratulujemy ukończenia tego samouczka. Mamy nadzieję, że uczysz się nieco na temat języka C#, ASP.NET Core i środowiska IDE programu Visual Studio. Aby dowiedzieć się więcej na temat tworzenia aplikacji lub witryny sieci Web za pomocą języka C# i ASP.NET, przejdź do następujących samouczków:
 
 > [!div class="nextstepaction"]
-> [Tworzenie aplikacji sieci Web Razor Pages za pomocą ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+> [Tworzenie aplikacji sieci Web Razor Pages za pomocą ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)
 
 ## <a name="see-also"></a>Zobacz też
 

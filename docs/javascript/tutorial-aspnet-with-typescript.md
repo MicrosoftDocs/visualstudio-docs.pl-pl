@@ -11,16 +11,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8a12c16c4c53ab2d0850bf5b768488160fa729a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58e3557d260b821055c533fc703a1f47949c5bfb
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453696"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781056"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Samouczek: Tworzenie aplikacji ASP.NET Core przy użyciu języka TypeScript w programie Visual Studio
 
-W tym samouczku dla programu Visual Studio Development ASP.NET Core i języka TypeScript utworzysz prostą aplikację sieci Web, dodamy kod TypeScript, a następnie uruchomisz aplikację. 
+W tym samouczku dla programu Visual Studio Development ASP.NET Core i języka TypeScript utworzysz prostą aplikację sieci Web, dodamy kod TypeScript, a następnie uruchomisz aplikację.
 
 ::: moniker range="vs-2017"
 
@@ -219,7 +219,7 @@ W tym samouczku rozpocznie się Tworzenie prostego projektu zawierającego kod d
 1. Aby dodać plik do projektu, postępuj zgodnie z instrukcjami w temacie [Zarządzanie pakietami npm](../javascript/npm-package-management.md#aspnet-core-projects) `package.json` . Spowoduje to dodanie obsługi npm do projektu.
 
    >[!NOTE]
-   > W przypadku projektów ASP.NET Core można także użyć [Menedżera bibliotek](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) lub przędzy zamiast npm do instalowania plików JavaScript i CSS po stronie klienta.
+   > W przypadku projektów ASP.NET Core można także użyć [Menedżera bibliotek](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) lub przędzy zamiast npm do instalowania plików JavaScript i CSS po stronie klienta.
 
 1. W tym przykładzie Dodaj plik definicji TypeScript dla platformy jQuery do projektu. W *package.js* pliku należy uwzględnić następujące elementy.
 

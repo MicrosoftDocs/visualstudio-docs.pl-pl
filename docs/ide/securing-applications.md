@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e02900c96991a402d7ea7b789a47f8f2dea447c3
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595452"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781020"
 ---
 # <a name="secure-applications"></a>Zabezpieczanie aplikacji
 
@@ -43,6 +43,6 @@ Bezpieczeństwo jest również ważnym zagadnieniem w procesie kompilacji. Kilka
 - [Zabezpieczenia w .NET](/dotnet/standard/security/index)
 - [Zabezpieczenia platformy Azure](/azure/security/)
 - [Przewodnik po zabezpieczeniach systemu Windows 10 Mobile](/windows/security/threat-protection/windows-10-mobile-security-guide)
-- [Funkcje zabezpieczeń platformy Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)
-- [Zabezpieczenia ASP.NET Core](/aspnet/core/security/?view=aspnetcore-2.1)
+- [Funkcje zabezpieczeń platformy Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017&preserve-view=true)
+- [Zabezpieczenia ASP.NET Core](/aspnet/core/security/?view=aspnetcore-2.1&preserve-view=true)
 - [Zabezpieczenia Windows Forms](/dotnet/framework/winforms/windows-forms-security)
