@@ -14,7 +14,20 @@
             - name: Omówienie
               href: use-roslyn-analyzers.md
             - name: Jakość kodu
-              href: /dotnet/fundamentals/code-analysis/code-quality-rule-options
+              items:
+                - name: Opcje jakości kodu
+                  href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: Korzystanie z plików EditorConfig na potrzeby jakości kodu
+                  href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+            - name: Styl kodu
+              items:
+                - name: Preferencje stylu kodu
+                  href: ../ide/code-styles-and-code-cleanup.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: Korzystanie z plików EditorConfig na potrzeby stylu kodu
+                  displayName: Configure code style analyzers
+                  href: ../ide/create-portable-custom-editor-options.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: Opcje reguły
+                  href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
             - name: Konfigurowanie analizy kodu na żywo
               href: configure-live-code-analysis-scope-managed-code.md
             - name: Ręczne przeprowadzanie analizy kodu
@@ -434,3 +447,11 @@
           href: how-to-generate-code-metrics-data.md
         - name: Praca z danymi metryk kodu
           href: working-with-code-metrics-data.md
+- name: Analiza kodu C++
+  items:
+    - name: Analizowanie kodu języka C i C++
+      href: /cpp/code-quality/code-analysis-for-c-cpp-overview
+    - name: Konwencje formatowania w narzędziu EditorConfig
+      href: ../ide/cpp-editorconfig-properties.md
+    - name: Ostrzeżenia analizy kodu języka C++
+      href: /cpp/code-quality/code-analysis-for-c-cpp-warnings

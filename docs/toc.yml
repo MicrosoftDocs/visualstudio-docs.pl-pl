@@ -523,7 +523,7 @@
               href: ide/create-portable-custom-editor-options.md
             - name: Konwencje formatowania języka C++ w narzędziu EditorConfig
               href: ide/cpp-editorconfig-properties.md
-            - name: .NET — konwencje kodowania
+            - name: .NET — konwencje kodowania >>
               href: /dotnet/fundamentals/code-analysis/code-style-rule-options
         - name: Dostosowywanie paska przewijania
           href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
