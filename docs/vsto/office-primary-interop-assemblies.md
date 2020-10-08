@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4677cd2d178781d79b11ac3b1010a76fd6fcf00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25dad2d4601974e70e80377e634d05b60523318e
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985712"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830759"
 ---
 # <a name="office-primary-interop-assemblies"></a>podstawowe zestawy międzyoperacyjne pakietu Office
 
@@ -100,15 +100,15 @@ Poniższa tabela zawiera listę podstawowych zestawów międzyoperacyjnych, któ
 |-------------------------------------|-----------------------------------|
 |Biblioteka obiektów programu Microsoft Access 14,0<br /><br /> Biblioteka obiektów programu Microsoft Access 15,0|Microsoft.Office.Interop.Access.dll|
 |Biblioteka obiektów aparatu bazy danych programu Microsoft Office 14,0<br /><br /> Biblioteka obiektów aparatu bazy danych programu Microsoft Office 15,0|Microsoft.Office.Interop.Access.Dao.dll|
-|Biblioteka obiektów programu Microsoft Excel 14,0<br /><br /> Biblioteka obiektów programu Microsoft Excel 15,0|[Microsoft.Office.Interop.Excel.dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
+|Biblioteka obiektów programu Microsoft Excel 14,0<br /><br /> Biblioteka obiektów programu Microsoft Excel 15,0|[Microsoft.Office.Interop.Excel.dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia&preserve-view=true)|
 |Biblioteka obiektów Microsoft Graph 14,0 (używana przez program PowerPoint, dostęp i program Word dla wykresów)<br /><br /> Biblioteka obiektów Microsoft Graph 15,0|Microsoft.Office.Interop.Graph.dll|
-|Biblioteka typów programu Microsoft InfoPath 2,0 (tylko dla programu InfoPath 2007)|[Microsoft.Office.Interop.InfoPath.dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
+|Biblioteka typów programu Microsoft InfoPath 2,0 (tylko dla programu InfoPath 2007)|[Microsoft.Office.Interop.InfoPath.dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form&preserve-view=true)|
 |Zestaw międzyoperacyjny programu Microsoft InfoPath XML (tylko dla programu InfoPath 2007)|Microsoft.Office.Interop.InfoPath.Xml.dll|
 |Biblioteka obiektów Microsoft Office 14,0 (funkcja udostępniona przez pakiet Office)<br /><br /> Biblioteka obiektów Microsoft Office 15,0 (funkcja udostępniona przez pakiet Office)|office.dll|
 |Kontrolka widoku programu Outlook Microsoft Office (może być używana w stronach sieci Web i aplikacjach do uzyskiwania dostępu do Twojej skrzynki odbiorczej)|Microsoft.Office.Interop.OutlookViewCtl.dll|
-|Biblioteka obiektów programu Microsoft Outlook 14,0<br /><br /> Biblioteka obiektów programu Microsoft Outlook 15,0|[Microsoft.Office.Interop.Outlook.dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|
+|Biblioteka obiektów programu Microsoft Outlook 14,0<br /><br /> Biblioteka obiektów programu Microsoft Outlook 15,0|[Microsoft.Office.Interop.Outlook.dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia&preserve-view=true)|
 |Biblioteka obiektów programu Microsoft PowerPoint 14,0<br /><br /> Biblioteka obiektów programu Microsoft PowerPoint 15,0|Microsoft.Office.Interop.PowerPoint.dll|
-|Biblioteka obiektów programu Microsoft Project 14,0<br /><br /> Biblioteka obiektów programu Microsoft Project 15,0|[Microsoft.Office.Interop.MSProject.dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|
+|Biblioteka obiektów programu Microsoft Project 14,0<br /><br /> Biblioteka obiektów programu Microsoft Project 15,0|[Microsoft.Office.Interop.MSProject.dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server&preserve-view=true)|
 |Biblioteka obiektów programu Microsoft Publisher 14,0<br /><br /> Biblioteka obiektów programu Microsoft Publisher 15,0|Microsoft.Office.Interop.Publisher.dll|
 |Biblioteka odwołań obiektów sieci Web programu Microsoft SharePoint Designer 14,0|Microsoft.Office.Interop.SharePointDesigner.dll|
 |Biblioteka odwołań obiektów stron programu Microsoft SharePoint Designer 14,0|Microsoft.Office.Interop.SharePointDesignerPage.dll|
@@ -116,7 +116,7 @@ Poniższa tabela zawiera listę podstawowych zestawów międzyoperacyjnych, któ
 |Biblioteka typów programu Microsoft Visio 14,0<br /><br /> Biblioteka typów programu Microsoft Visio 15,0|Microsoft.Office.Interop.Visio.dll|
 |Microsoft Visio 14,0 Zapisz jako biblioteka typów sieci Web<br /><br /> Microsoft Visio 15,0 Zapisz jako biblioteka typów sieci Web|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
 |Biblioteka typów kontrolek rysowania programu Microsoft Visio 14,0<br /><br /> Biblioteka typów kontrolek rysowania programu Microsoft Visio 15,0|Microsoft.Office.Interop.VisOcx.dll|
-|Biblioteka obiektów programu Microsoft Word 14,0<br /><br /> Biblioteka obiektów programu Microsoft Word 15,0|[Microsoft.Office.Interop.Word.dll](/dotnet/api/microsoft.office.interop.word?view=word-pia)|
+|Biblioteka obiektów programu Microsoft Word 14,0<br /><br /> Biblioteka obiektów programu Microsoft Word 15,0|[Microsoft.Office.Interop.Word.dll](/dotnet/api/microsoft.office.interop.word?view=word-pia&preserve-view=true)|
 |Rozszerzalność Visual Basic for Applications firmy Microsoft 5,3|Microsoft.Vbe.Interop.dll|
 
 ### <a name="binding-redirect-assemblies"></a>Zestawy przekierowania powiązań

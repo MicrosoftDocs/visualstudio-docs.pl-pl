@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 2a6db2771525010d73fdeeea12ff4aebd99a1bd2
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 5bbdbffa9de9ac7789495249d3e7bfb0a8d65377
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485141"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829897"
 ---
 # <a name="deploy-to-docker-hub"></a>Wdrażanie w usłudze Docker Hub
 
@@ -40,7 +40,7 @@ Jeśli nie masz repozytorium centrum platformy Docker, utwórz je za pomocą nar
 
    ![Zrzut ekranu przedstawiający okno dialogowe centrum platformy Docker](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
-1. Jeśli łączysz się z własnym repozytorium (nie częścią organizacji), pozostaw zaznaczone pole wyboru **Publikuj w repozytorium osobistym** . Jeśli repozytorium należy do organizacji, wyczyść pole wyboru i wprowadź nazwę organizacji. Wprowadź nazwę użytkownika platformy Docker i hasło do konta platformy Docker, które ma uprawnienia dostępu do repozytorium, z którym nawiązujesz połączenie, a następnie wybierz pozycję **Zapisz**.  
+1. Jeśli łączysz się z własnym repozytorium (nie częścią organizacji), pozostaw zaznaczone pole wyboru **Publikuj w repozytorium osobistym** . Jeśli repozytorium należy do organizacji, wyczyść pole wyboru i wprowadź nazwę organizacji. Wprowadź nazwę użytkownika platformy Docker i hasło do konta platformy Docker, które ma uprawnienia dostępu do repozytorium, z którym nawiązujesz połączenie, a następnie wybierz pozycję **Zapisz**.
 
    Program Visual Studio podejmie próbę wdrożenia obrazu w usłudze Docker Hub.  Jeśli to się powiedzie, zostanie wyświetlony ekran **Publikowanie** z adresem URL obrazu repozytorium, tagiem obrazu, repozytorium i konfiguracją kompilacji (na przykład **Release**).
 
@@ -52,9 +52,9 @@ Jeśli nie masz repozytorium centrum platformy Docker, utwórz je za pomocą nar
 
 Opublikuj w [Azure Container Registry](/azure/container-registry/) , wykonując kroki opisane w sekcji [wdrażanie do Azure Container Registry](hosting-web-apps-in-docker.md).
 
-Skonfiguruj ciągłą integrację i dostarczanie (CI/CD) za pomocą [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops).
+Skonfiguruj ciągłą integrację i dostarczanie (CI/CD) za pomocą [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Wdróż do Azure App Service](deploy-app-service.md) 
  [Narzędzia kontenerów programu Visual Studio](./index.yml).

@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 34fd56b37113467b7cbb2dfb8ac6fdba01b79cc6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f96e9123f613cf50eebbedd393f5bce9cfa633d2
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543757"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830683"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Jak skonfigurować środowisko Python w Azure App Service (system Windows)
 
@@ -211,4 +211,4 @@ Zamiast korzystać z konsoli kudu za pośrednictwem Azure Portal, można uruchom
 
 Informacje o poleceniach i uwierzytelnianiu znajdują się w [dokumentacji kudu](https://github.com/projectkudu/kudu/wiki/REST-API).
 
-Poświadczenia można także wyświetlić za pomocą `az webapp deployment list-publishing-profiles` polecenia za pośrednictwem interfejsu użytkownika platformy Azure (zobacz [AZ webapp Deployment](/cli/azure/webapp/deployment?view=azure-cli-latest#az-webapp-deployment-list-publishing-profiles)). Biblioteka pomocnika do ogłaszania poleceń kudu jest dostępna w witrynie [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
+Poświadczenia można także wyświetlić za pomocą `az webapp deployment list-publishing-profiles` polecenia za pośrednictwem interfejsu użytkownika platformy Azure (zobacz [AZ webapp Deployment](/cli/azure/webapp/deployment?view=azure-cli-latest&preserve-view=true#az-webapp-deployment-list-publishing-profiles)). Biblioteka pomocnika do ogłaszania poleceń kudu jest dostępna w witrynie [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8eeb44d08f4b966bed4aef526c12263bdd1a2b77
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 3a8301fcca5fd915b130477600ed9fe0b5b90f46
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641664"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830777"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Pierwsze spojrzenie na wdrożenie w programie Visual Studio
 
@@ -50,7 +50,7 @@ Wdrożenie do folderu lokalnego jest zwykle używane do testowania lub do rozpoc
 
 - **ASP.NET**, **ASP.NET Core**, **Python**i **Node.js**: publikowanie w Azure App Service lub Azure App Service Linux (przy użyciu kontenerów) przy użyciu jednej z poniższych metod.
 
-  - Aby ciągłe (lub zautomatyzowane) wdrażanie aplikacji, użyj platformy Azure DevOps z [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
+  - Aby ciągłe (lub zautomatyzowane) wdrażanie aplikacji, użyj platformy Azure DevOps z [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true).
 
   - W przypadku wdrożenia aplikacji jednorazowego (lub ręcznego) Użyj narzędzia do **publikowania** w programie Visual Studio.
 
@@ -107,7 +107,7 @@ Jeśli potrzebujesz większej złożonej instalacji aplikacji klasycznej niż za
 
 - Pakiet Instalatora oparty na instalatorze MSI można utworzyć przy użyciu [rozszerzenia zestawu narzędzi WIX dla programu Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Jest to zestaw narzędzi wiersza polecenia.
 
-- Pakiet Instalatora MSI lub EXE można utworzyć przy użyciu narzędzia [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) z oprogramowania Flexera. Program InstallShield może być używany z programem Visual Studio 2017 i nowszymi wersjami (wersja Community nie jest obsługiwana). 
+- Pakiet Instalatora MSI lub EXE można utworzyć przy użyciu narzędzia [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) z oprogramowania Flexera. Program InstallShield może być używany z programem Visual Studio 2017 i nowszymi wersjami (wersja Community nie jest obsługiwana).
 
   > [!NOTE]
   > Program InstallShield Limited Edition nie jest już uwzględniony w programie Visual Studio i nie jest obsługiwany w programie Visual Studio 2017 i nowszych wersjach. Zapoznaj się z [oprogramowaniem Flexera](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) na temat przyszłej dostępności.
@@ -122,7 +122,7 @@ Możesz włączyć bardziej zaawansowane programowanie i testowanie, wdrażając
 
 ## <a name="continuous-deployment"></a>Ciągłe wdrażanie
 
-Za pomocą Azure Pipelines można włączyć ciągłe wdrażanie aplikacji. Aby uzyskać więcej informacji, zobacz [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) i [wdrażania na platformie Azure](/azure/devops/deploy-azure/index?view=vsts).
+Za pomocą Azure Pipelines można włączyć ciągłe wdrażanie aplikacji. Aby uzyskać więcej informacji, zobacz [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true) i [wdrażania na platformie Azure](/azure/devops/deploy-azure/index?view=vsts&preserve-view=true).
 
 ## <a name="deploy-a-sql-database"></a>Wdrażanie bazy danych SQL
 
@@ -136,7 +136,7 @@ Za pomocą Azure Pipelines można włączyć ciągłe wdrażanie aplikacji. Aby 
 
 ## <a name="deployment-for-other-app-types"></a>Wdrożenie dla innych typów aplikacji
 
-| Typ aplikacji | Scenariusz wdrażania | Link |
+| Typ aplikacji | Scenariusz wdrażania | Łącze |
 | --- | --- | --- |
 | **Aplikacja pakietu Office** | Dodatek dla pakietu Office można opublikować w programie Visual Studio. | [Wdrażanie i publikowanie dodatku dla pakietu Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Usługa WCF lub OData** | Inne aplikacje mogą używać usług WCF RIA wdrożonych na serwerze sieci Web. | [Opracowywanie i wdrażanie Usługi danych programu WCF](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
