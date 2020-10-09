@@ -86,7 +86,7 @@
         - name: Szablon usługi w chmurze platformy Azure
           href: python-azure-cloud-service-project-template.md
     - name: Zestaw Azure SDK dla języka Python
-      href: /python/azure/?view=azure-python
+      href: /python/azure/?view=azure-python&preserve-view=true
 - name: Przewodniki z instrukcjami
   items:
     - name: Zarządzanie środowiskami języka Python

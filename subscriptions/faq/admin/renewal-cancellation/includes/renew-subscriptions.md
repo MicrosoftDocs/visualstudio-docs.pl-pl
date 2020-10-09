@@ -7,12 +7,12 @@ ms.assetid: 754c7033-72db-49ea-b99b-cea892261834
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 2e0fb2462e392e2672ccf347103afe4a56b07abb
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 3707dc584eb9aa7c200526efbe7815d19b4d1451
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386552"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838375"
 ---
 ## <a name="how-do-i-renew-my-subscriptions"></a>Jak mogę odnawiać subskrypcje?
 
@@ -22,6 +22,6 @@ Sprzedaż detaliczna: W przypadku subskrypcji nabytych w sklepie Microsoft Store
 
 Subskrypcje w chmurze: Jeśli korzystasz z subskrypcji w chmurze, nie musisz ich odnawiać. Są one odnawiane automatycznie do momentu ich anulowania.
 
-Dowiedz się więcej na temat [kupowania subskrypcji w chmurze](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview).
+Dowiedz się więcej na temat [kupowania subskrypcji w chmurze](../../../../vscloud-overview.md).
 
 Licencjonowanie zbiorowe: Aby odnowić subskrypcje zakupione za pośrednictwem licencjonowania zbiorowego, skontaktuj się z odsprzedawcą. [Znajdź odsprzedawcę](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) w swoim regionie.

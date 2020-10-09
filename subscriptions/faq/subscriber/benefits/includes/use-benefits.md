@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 09/30/2020
 ms.faqid: q3_2
-ms.openlocfilehash: 8dc5e87e5299f735e8c7b21dab1bb7e3afdbc5a7
-ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+ms.openlocfilehash: 8c0bcb40d775be6184f420cdd79156645333d260
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91640817"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838416"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>Jak mogę użyć moich korzyści?
 
@@ -20,7 +20,7 @@ Różne typy korzyści mają różne metody aktywowania i używania. Na przykła
 
 Dla poszczególnych korzyści dostępnych w portalu dla subskrybentów udostępniamy artykuły zawierające różne informacje, na przykład, które subskrypcje je zawierają, a także instrukcje aktywowania tych korzyści.
 
-Zapoznaj się z naszą dokumentacją, aby [dowiedzieć się więcej](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions) (kliknij pozycję „Subskrypcje” w lewym okienku nawigacyjnym, a następnie wybierz pozycję „Korzyści”).
+Zapoznaj się z naszą dokumentacją, aby [dowiedzieć się więcej](../../../../whats-new-in-subscriptions.md) (kliknij pozycję „Subskrypcje” w lewym okienku nawigacyjnym, a następnie wybierz pozycję „Korzyści”).
 
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Jaki jest proces konfiguracji programu Visual Studio z usługą GitHub Enterprise? 
 
@@ -36,4 +36,4 @@ Gdy administrator organizacji w usłudze GitHub wyśle zaproszenie, otrzymasz wi
 
 Po zaakceptowaniu zaproszenia do organizacji w usłudze GitHub wygląd kafelka korzyści w witrynie <https://my.visualstudio.com/benefits> zmieni się z „Oczekująca” na „Aktywowano” i będzie można zacząć korzystać z usługi GitHub Enterprise. 
 
-[Poznaj więcej](https://docs.microsoft.com/visualstudio/subscriptions/access-github.md) szczegółów na temat procesu konfigurowania usługi GitHub Enterprise. 
+[Poznaj więcej](../../../../access-github.md) szczegółów na temat procesu konfigurowania usługi GitHub Enterprise. 
