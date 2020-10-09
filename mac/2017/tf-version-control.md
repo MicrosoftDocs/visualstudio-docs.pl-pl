@@ -7,17 +7,17 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: 33d00d853c7496e23cb5cd97a0b9abbe05e3accc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2ba7f5d044b82c44d719b251a7d803212cf7b07
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950582"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860564"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Nawiązywanie połączenia z Kontrola wersji serwera Team Foundation
 
 > [!NOTE]
-> Aby zapewnić najlepszą kontrolę wersji w systemie macOS, zalecamy korzystanie z narzędzia Git zamiast Kontrola wersji serwera Team Foundation (TFVC). Narzędzie git jest obsługiwane w Visual Studio dla komputerów Mac i jest opcją domyślną dla repozytoriów hostowanych w Team Foundation Server (TFS)/Azure DevOps. Aby dowiedzieć się więcej o korzystaniu z narzędzia Git z programem TFS/Azure DevOps, zobacz artykuł [Konfigurowanie repozytorium git](/visualstudio/mac/set-up-git-repository) .
+> Aby zapewnić najlepszą kontrolę wersji w systemie macOS, zalecamy korzystanie z narzędzia Git zamiast Kontrola wersji serwera Team Foundation (TFVC). Narzędzie git jest obsługiwane w Visual Studio dla komputerów Mac i jest opcją domyślną dla repozytoriów hostowanych w Team Foundation Server (TFS)/Azure DevOps. Aby dowiedzieć się więcej o korzystaniu z narzędzia Git z programem TFS/Azure DevOps, zobacz artykuł [Konfigurowanie repozytorium git](./set-up-git-repository.md) .
 >
 > Jeśli wcześniej była używana wersja zapoznawcza rozszerzenia TFVC dla Visual Studio dla komputerów Mac, nie jest już obsługiwana w przypadku uaktualniania do programu Visual Studio 2019 for Mac.
 
@@ -111,7 +111,7 @@ Aby dowiedzieć się więcej na temat poleceń wymienionych tutaj lub innych, mo
 ## <a name="connect-to-tfvc-using-the-team-foundation-version-control-extension"></a>Nawiązywanie połączenia z usługą TFVC przy użyciu rozszerzenia Kontrola wersji serwera Team Foundation
 
 > [!NOTE]
-> Aby zapewnić najlepszą kontrolę wersji w systemie macOS, zalecamy korzystanie z narzędzia Git zamiast Kontrola wersji serwera Team Foundation (TFVC). Narzędzie git jest obsługiwane w Visual Studio dla komputerów Mac i jest opcją domyślną dla repozytoriów hostowanych w Team Foundation Server (TFS)/Azure DevOps. Aby dowiedzieć się więcej o korzystaniu z narzędzia Git z programem TFS/Azure DevOps, zobacz artykuł [Konfigurowanie repozytorium git](/visualstudio/mac/set-up-git-repository) .
+> Aby zapewnić najlepszą kontrolę wersji w systemie macOS, zalecamy korzystanie z narzędzia Git zamiast Kontrola wersji serwera Team Foundation (TFVC). Narzędzie git jest obsługiwane w Visual Studio dla komputerów Mac i jest opcją domyślną dla repozytoriów hostowanych w Team Foundation Server (TFS)/Azure DevOps. Aby dowiedzieć się więcej o korzystaniu z narzędzia Git z programem TFS/Azure DevOps, zobacz artykuł [Konfigurowanie repozytorium git](./set-up-git-repository.md) .
 >
 > Jeśli wcześniej była używana wersja zapoznawcza rozszerzenia TFVC dla Visual Studio dla komputerów Mac, nie jest już obsługiwana w przypadku uaktualniania do programu Visual Studio 2019 for Mac.
 
@@ -238,7 +238,7 @@ Po skonfigurowaniu obszaru roboczego można go zmienić lub usunąć, klikając 
 Do uwierzytelniania za pomocą serwera można użyć następujących opcji:
 
 - Oauth
-- Podstawowe
+- Podstawowy
 - NTLM
 
 Aby korzystać z uwierzytelniania podstawowego, należy włączyć **alternatywne poświadczenia uwierzytelniania** w Azure DevOps Services, wykonując poniższe kroki:

@@ -14,12 +14,12 @@ ms.assetid: 1ca2079a-44dd-479f-a1e3-e04a14d0739e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a2a2b83b818e37c0b62e103fe284c5c4d110c6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31d1ebd30ba5e793a1c52c00d8b58603bdaa9a75
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815635"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862335"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>Oczekiwano znaku „]" w wyrażeniu regularnym (JavaScript)
 Podjęto próbę utworzenia klasy znaków dla dopasowania wyrażenia regularnego, ale nie zawiera ona prawego nawiasu. Poszczególne kombinacje znaków literału mogą być składane do klas znaków, umieszczając je w nawiasach kwadratowych. Klasa znaku dopasowuje dowolny znak, który zawiera. Na przykład/[abc]/dopasowuje jedną z liter "a", "b" lub "c".  
@@ -32,5 +32,5 @@ Podjęto próbę utworzenia klasy znaków dla dopasowania wyrażenia regularnego
     > Jeśli chcesz dopasować do pojedynczego nawiasu, należy to zrobić za pomocą ukośnika odwrotnego- \\ [-, tak aby nie był interpretowany jako znak specjalny przez [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] .  
   
 ## <a name="see-also"></a>Zobacz też  
- [Obiekt wyrażenia regularnego](../../javascript/reference/regular-expression-object-javascript.md)   
- [Składnia wyrażenia regularnego (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+ [Obiekt wyrażenia regularnego](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp)   
+ [Składnia wyrażenia regularnego (JavaScript)](/previous-versions/1400241x(v=vs.100))

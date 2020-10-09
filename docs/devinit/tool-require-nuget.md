@@ -11,16 +11,16 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ef5de2d8358dae0f5f29b815cfa2dca26a3f1cef
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 401a14930c5405ebb05827768a7571e7aee1181e
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005177"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860711"
 ---
 # <a name="require-nuget"></a>require-nuget
 
-`require-nuget`Narzędzie do pobierania interfejsu wiersza polecenia NuGet i dodaje do zmiennej PATH. Interfejs wiersza polecenia NuGet zapewnia pełen zakres funkcji NuGet do instalowania, tworzenia, publikowania i zarządzania pakietami bez wprowadzania żadnych zmian w plikach projektu. Więcej informacji o interfejsie wiersza polecenia NuGet można znaleźć [tutaj](https://docs.microsoft.com/nuget/reference/nuget-exe-cli-reference).
+`require-nuget`Narzędzie do pobierania interfejsu wiersza polecenia NuGet i dodaje do zmiennej PATH. Interfejs wiersza polecenia NuGet zapewnia pełen zakres funkcji NuGet do instalowania, tworzenia, publikowania i zarządzania pakietami bez wprowadzania żadnych zmian w plikach projektu. Więcej informacji o interfejsie wiersza polecenia NuGet można znaleźć [tutaj](/nuget/reference/nuget-exe-cli-reference).
 
 ## <a name="usage"></a>Użycie
 

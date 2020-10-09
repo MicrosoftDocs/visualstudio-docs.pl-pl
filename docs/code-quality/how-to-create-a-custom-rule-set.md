@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d498ee0acfdc87f340a3c5c8848680eaed6276d
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 8fe0d6ad545a197ca03c12acf68d779a42fd91ae
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658558"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860502"
 ---
 # <a name="customize-a-rule-set"></a>Dostosowywanie zestawu reguł
 
@@ -61,7 +61,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
 2. W oknie dialogowym **nowy plik** wybierz kategorię **Ogólne** po lewej stronie, a następnie wybierz pozycję **zestaw reguł analizy kodu**.
 
-3. Wybierz pozycję **Otwórz**.
+3. Wybierz pozycję **Open** (Otwórz).
 
    *Nowy plik zestawu reguł zostanie* otwarty w edytorze zestawu reguł.
 
@@ -98,7 +98,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
 ## <a name="rule-precedence"></a>Pierwszeństwo reguł
 
-- Jeśli ta sama reguła zostanie wyświetlona co najmniej dwa razy w zestawie reguł z różnymi serwerami, kompilator generuje błąd. Przykład:
+- Jeśli ta sama reguła zostanie wyświetlona co najmniej dwa razy w zestawie reguł z różnymi serwerami, kompilator generuje błąd. Na przykład:
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -113,7 +113,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
    **CA0063: nie można załadować pliku zestawu reguł " \[ Twoje]. zestaw reguł" lub jeden z jego plików zależnych od tego zestawu. Plik jest niezgodny ze schematem zestawu reguł.**
 
-- Jeśli zestaw reguł zawiera regułę podrzędną ustawioną przy użyciu znacznika **include** , a reguła podrzędna i nadrzędna ustawiją tę samą regułę, ale z różnymi serwerami, pierwszeństwo ma ważność w zestawie reguł nadrzędnych. Przykład:
+- Jeśli zestaw reguł zawiera regułę podrzędną ustawioną przy użyciu znacznika **include** , a reguła podrzędna i nadrzędna ustawiją tę samą regułę, ale z różnymi serwerami, pierwszeństwo ma ważność w zestawie reguł nadrzędnych. Na przykład:
 
    ```xml
    <!-- Parent rule set -->

@@ -11,16 +11,16 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 39324f3a14b631328f3f1189da7806e02fd1e076
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 2febd8a62e041384c8acf5b7b0b5e1c974597c0a
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006030"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862252"
 ---
 # <a name="dotnet-restore"></a>dotnet-restore
 
-`dotnet-restore`Narzędzia przywracania zależności i narzędzi specyficznych dla projektu, które są określone w pliku projektu. Przeczytaj więcej na temat dotnet restore [tym miejscu](https://docs.microsoft.com/dotnet/core/tools/dotnet-restore).
+`dotnet-restore`Narzędzia przywracania zależności i narzędzi specyficznych dla projektu, które są określone w pliku projektu. Przeczytaj więcej na temat dotnet restore [tym miejscu](/dotnet/core/tools/dotnet-restore).
 
 ## <a name="usage"></a>Użycie
 

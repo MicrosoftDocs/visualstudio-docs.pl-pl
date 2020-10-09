@@ -14,12 +14,12 @@ ms.assetid: b272f51a-97c2-4398-8b46-9cc49a5c0bd6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8148e18fba3fca24cc6615f4f345c4883306ca3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09a49fb0cbff746f11606e4cef7417a5c9a68d0b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816439"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862518"
 ---
 # <a name="number-expected"></a>Liczba oczekiwana
 Podjęto próbę wywołania metody **Number. prototype. ToString** lub **Number. prototype. valueOf** na obiekcie typu innego niż **Number**. Obiekt tego typu wywołania musi być typu **Number**.  
@@ -29,5 +29,5 @@ Podjęto próbę wywołania metody **Number. prototype. ToString** lub **Number.
 - Wywołaj metody **Number. prototype. ToString** lub **Number. prototype. valueOf** dla obiektów typu **Number**.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Number — Obiekt](../../javascript/reference/number-object-javascript.md)   
- [number, właściwość (Error)](../../javascript/reference/number-property-error-javascript.md)
+ [Number — Obiekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)   
+ [number, właściwość (Error)](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/Error.number)

@@ -11,16 +11,16 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: c632378ff15e9b52e7145821f2e16d782b0326ac
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 1a85268eb71ece1f06dc8d71d018d16206902130
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352295"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860830"
 ---
 # <a name="require-dotnetcoresdk"></a>require-dotnetcoresdk
 
-`require-dotnetcoresdk`Narzędzie służy do instalowania [zestaw .NET Core SDK](https://dotnet.microsoft.com/) i udostępnionego środowiska uruchomieniowego za pośrednictwem skryptu [dotnet-Install](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) .
+`require-dotnetcoresdk`Narzędzie służy do instalowania [zestaw .NET Core SDK](https://dotnet.microsoft.com/) i udostępnionego środowiska uruchomieniowego za pośrednictwem skryptu [dotnet-Install](/dotnet/core/tools/dotnet-install-script) .
 
 ## <a name="usage"></a>Użycie
 
@@ -38,14 +38,14 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 
 ### <a name="additional-options"></a>Opcje dodatkowe
 
-Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOptions` . Te argumenty są bezpośrednim przekazywaniem do argumentów używanych w skrypcie [instalacji dotnet](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) . Więcej informacji o dostępnych parametrach można znaleźć w [dokumentacji](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) skryptu [dotnet-Install](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) . W przypadku korzystania z programu upewnij się `additionalOptions` , że używasz nazw i formatów argumentów programu PowerShell.
+Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOptions` . Te argumenty są bezpośrednim przekazywaniem do argumentów używanych w skrypcie [instalacji dotnet](/dotnet/core/tools/dotnet-install-script) . Więcej informacji o dostępnych parametrach można znaleźć w [dokumentacji](/dotnet/core/tools/dotnet-install-script) skryptu [dotnet-Install](/dotnet/core/tools/dotnet-install-script) . W przypadku korzystania z programu upewnij się `additionalOptions` , że używasz nazw i formatów argumentów programu PowerShell.
 
 > [!NOTE]
 > Każda dodatkowa wartość argumentu, który zawiera spację, musi zawierać dodatkową parę cudzysłowów ucieczki (przy użyciu ukośnika odwrotnego). Przykład można zobaczyć w [przykładzie użycia](#example-usage) przy użyciu `-InstallDir` .
 
 ### <a name="default-behavior"></a>Zachowanie domyślne
 
-Domyślnym zachowaniem tego `require-dotnetcoresdk` narzędzia jest zainstalowanie wersji zestaw .NET Core SDK określonej w `global.json` pliku [(dokumentacji)](https://docs.microsoft.com/dotnet/core/tools/global-json?tabs=netcore3x) w bieżącym katalogu roboczym. Jeśli `global.json` plik nie zostanie znaleziony, `require-dotnetcoresdk` program zainstaluje najnowszą bieżącą wersję zestaw .NET Core SDK i udostępnionego środowiska uruchomieniowego.
+Domyślnym zachowaniem tego `require-dotnetcoresdk` narzędzia jest zainstalowanie wersji zestaw .NET Core SDK określonej w `global.json` pliku [(dokumentacji)](/dotnet/core/tools/global-json?tabs=netcore3x) w bieżącym katalogu roboczym. Jeśli `global.json` plik nie zostanie znaleziony, `require-dotnetcoresdk` program zainstaluje najnowszą bieżącą wersję zestaw .NET Core SDK i udostępnionego środowiska uruchomieniowego.
 
 ## <a name="example-usage"></a>Przykład użycia
 

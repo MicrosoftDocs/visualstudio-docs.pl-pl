@@ -14,12 +14,12 @@ ms.assetid: 3070cc6c-1138-4655-a7ac-723379f48f94
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 741f347a5b5d9f9268604d76afac2ace051faefa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2898a007e07dea326bbcd7b8d19f1a623941605d
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817388"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862411"
 ---
 # <a name="expected-"></a>Oczekiwano znaku „;"
 Podjęto próbę umieszczenia więcej niż jednej instrukcji w wierszu, ale nie rozdzielić ich średnikami. Średniki są używane do kończenia instrukcji. Chociaż można umieścić kilka instrukcji w jednym wierszu, każdy z nich musi być rozdzielony od następnego z średnikiem.  
@@ -33,4 +33,4 @@ Podjęto próbę umieszczenia więcej niż jednej instrukcji w wierszu, ale nie 
 - Upewnij się, że nie pamiętasz średników wewnątrz nagłówka pętli **for** .  
   
 ## <a name="see-also"></a>Zobacz też  
- [Pisanie kodu JavaScript](../../javascript/writing-javascript-code.md)
+ [Pisanie kodu JavaScript](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/JavaScript_basics)

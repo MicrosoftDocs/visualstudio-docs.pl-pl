@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: c00c37cc685cf6f0bd48ddf481a7c79d8ddcf77b
-ms.sourcegitcommit: 76845bf28da6d994666d5cdddfc5a2711d9a448d
+ms.openlocfilehash: 6ea81aab75b0499abb427d98e230b1f3909cef02
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91544803"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862258"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -29,8 +29,8 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.8.0 | Wersja zapoznawcza 3,2 | 29 września, 2020 | 16.8.30524.135 |
-| 16.7.5 | Release | 29 września, 2020 |  16.7.30523.141 |
+| 16.8.0 | Wersja zapoznawcza 3,2 | 29 września 2020 r. | 16.8.30524.135 |
+| 16.7.5 | Release | 29 września 2020 r. |  16.7.30523.141 |
 | 16.8.0 | Wersja zapoznawcza 3,1 | 22 września, 2020 | 16.8.30516.212 |
 | 16.7.4 | Release | 21 września 2020 r. | 16.7.30517.126 |
 | 16.8.0 | Wersja zapoznawcza 3 | 14 września 2020 | 16.8.30509.190 |
@@ -352,7 +352,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 | 15.0.0 | Release | 7 marca 2017 r. | 15.0.26228.4 |
 
 > [!NOTE]
-> Aby uzyskać więcej informacji o numerach kompilacji i datach wydania dla kolejnej wersji programu Visual Studio, zapoznaj się z informacjami na stronie [numery kompilacji i daty wydania programu Visual studio 2019](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019&preserve-view=true) .
+> Aby uzyskać więcej informacji o numerach kompilacji i datach wydania dla kolejnej wersji programu Visual Studio, zapoznaj się z informacjami na stronie [numery kompilacji i daty wydania programu Visual studio 2019](?preserve-view=true&view=vs-2019) .
 
 ::: moniker-end
 

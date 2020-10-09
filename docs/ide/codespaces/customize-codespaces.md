@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: f63dc4989a59256a0a3ad59491b2290912ffd2f8
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2223aecd66da721ff1afe9877853c8a00c837611
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862178"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862222"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>Jak dostosować codespace (wersja zapoznawcza)
 
@@ -57,7 +57,7 @@ Po utworzeniu codespace wszystkie zmiany w tym konkretnym codespace są utrwalan
 
 Po nawiązaniu połączenia z codespace za pomocą programu Visual Studio można użyć terminalu programu Visual Studio do uruchamiania narzędzi wiersza polecenia. Można użyć programu PowerShell lub wiersza polecenia systemu Windows z podwyższonym poziomem uprawnień w ramach konta administratora lokalnego. Aby dowiedzieć się więcej o terminalu programu Visual Studio, zapoznaj się z [blogiem dotyczącym anonsowania terminalu programu Visual Studio](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/).
 
-## <a name="customize-a-codespace"></a>Dostosuj codespace
+## <a name="customize-a-codespace"></a>Dostosowywanie środowiska codespace
 
 Rzeczywista wartość usługi GitHub Codespaces jest dostępna w przypadku tworzenia unikatowych, powtarzalnych środowisk programistycznych w chmurze dopasowanej do własnej pracy oraz Twojego zespołu. Kompilując przy użyciu domyślnego wystąpienia usługi GitHub Codespaces, możesz dostosować, co jest zainstalowane i skonfigurowane podczas tworzenia nowego codespace.
 
@@ -92,7 +92,7 @@ Po utworzeniu codespace usługi GitHub Codespaces wyszukuje [*devcontainers.jsw*
 
 Aby można było uruchomić `devinit` wiersz polecenia bezpośrednio, zalecamy utworzenie [*devinit.jsw*](../../devinit/devinit-json.md) plikach konfiguracji, które opisują zestaw `devinit` narzędzi do uruchomienia. 
 
-Na przykład, aby zainstalować [zestaw .NET Core SDK](https://docs.microsoft.com/dotnet/core/sdk), *.devinit.js* będzie wyglądać następująco:
+Na przykład, aby zainstalować [zestaw .NET Core SDK](/dotnet/core/sdk), *.devinit.js* będzie wyglądać następująco:
 
 ```json
 {
@@ -192,7 +192,7 @@ Jeśli używasz tożsamości Azure Active Directory do uwierzytelniania aplikacj
 
 Więcej informacji można znaleźć w `az login` [dokumentacji](/cli/azure/reference-index#az_login)interfejsu wiersza polecenia platformy Azure.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Co to jest GitHub Codespaces?](codespaces-overview.md)
 - [Jak używać programu Visual Studio z codespace](use-visual-studio-with-codespaces.md)

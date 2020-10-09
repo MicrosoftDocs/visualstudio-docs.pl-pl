@@ -14,12 +14,12 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 28eec125914f0207fbdf79a39ea2140dd74d6d0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a3b8510c92e15a5b1bf5e15bb774ba031f7181f
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816231"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862115"
 ---
 # <a name="object-expected"></a>Oczekiwany obiekt
 Podjęto próbę wywołania metody lub właściwości obiektu typu innego niż `Object` lub przekazano argument typu innego niż, `Object` gdy `Object` jest to wymagane.  
@@ -47,5 +47,5 @@ Podjęto próbę wywołania metody lub właściwości obiektu typu innego niż `
     ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Object — obiekt](../../javascript/reference/object-object-javascript.md)   
- [Obiekty i tablice](../../javascript/objects-and-arrays-javascript.md)
+ [Object — obiekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)   
+ [Obiekty i tablice](https://developer.mozilla.org/docs/Learn/JavaScript/Objects)

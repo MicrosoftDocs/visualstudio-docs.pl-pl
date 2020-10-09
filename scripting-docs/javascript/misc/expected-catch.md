@@ -14,12 +14,12 @@ ms.assetid: f1cd947f-eba2-411e-8e84-8ca86f608643
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d9950573e7bbeefe3594d77df2ae41c12f77ed3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47411a6376cd843b3a12cf74ed1800775b98cd83
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816687"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861953"
 ---
 # <a name="expected-catch"></a>Oczekiwano instrukcji „catch"
 Użyto bloku **try** obsługi wyjątków, ale nie zapisał skojarzonej instrukcji **catch** . Mechanizm obsługi wyjątków wymaga, aby kod, który może zakończyć się niepowodzeniem, wraz z kodem, który nie powinien zostać wykonany w przypadku wystąpienia wyjątku, być opakowany wewnątrz bloku **try** . Wyjątki są zgłaszane z wewnątrz bloku **try** przy użyciu instrukcji **throw** i przechwytywane poza blokiem **try** z co najmniej jedną instrukcją **catch** .  
@@ -31,5 +31,5 @@ Użyto bloku **try** obsługi wyjątków, ale nie zapisał skojarzonej instrukcj
 - Spróbuj użyć bloku **finally** zamiast bloku **catch** .  
   
 ## <a name="see-also"></a>Zobacz też  
- [Spróbuj... catch... finally — instrukcja](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
- [Error, obiekt](../../javascript/reference/error-object-javascript.md)
+ [Spróbuj... catch... finally — instrukcja](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/try...catch)   
+ [Error, obiekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error)

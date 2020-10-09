@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 804fbf7e6d9069f6d0fb406e2a5191dcbafbbcee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 361b04edf2b677c2842376bd9d8fee0d6f3bda12
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254395"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862355"
 ---
 # <a name="custom-task-panes"></a>Niestandardowe okienka zadań
   Okienka zadań to panele interfejsu użytkownika, które zwykle są zadokowane po jednej stronie okna w aplikacji Microsoft Office. Niestandardowe okienka zadań umożliwiają utworzenie własnego okienka zadań i udostępnienie użytkownikom znanego interfejsu umożliwiającego dostęp do funkcji rozwiązania. Na przykład interfejs może zawierać kontrolki, które uruchamiają kod, aby modyfikować dokumenty lub wyświetlać dane ze źródła danych.
@@ -122,7 +122,7 @@ ms.locfileid: "71254395"
 ## <a name="clean-up-resources-used-by-the-task-pane"></a>Czyszczenie zasobów używanych przez okienko zadań
  Po utworzeniu niestandardowego okienka zadań <xref:Microsoft.Office.Tools.CustomTaskPane> obiekt pozostaje w pamięci, dopóki dodatek VSTO jest uruchomiony. Obiekt pozostaje w pamięci nawet po kliknięciu przycisku **Zamknij** (X) w rogu okienka zadań.
 
- Aby wyczyścić zasoby używane przez okienko zadań, gdy dodatek VSTO nadal działa, użyj <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> metod lub. Te metody usuwają określony <xref:Microsoft.Office.Tools.CustomTaskPane> obiekt z `CustomTaskPanes` kolekcji i wywołują <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> metodę obiektu.
+ Aby wyczyścić zasoby używane przez okienko zadań, gdy dodatek VSTO nadal działa, użyj <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> metod lub. Te metody usuwają określony <xref:Microsoft.Office.Tools.CustomTaskPane> obiekt z `CustomTaskPanes` kolekcji i wywołują `Dispose` metodę obiektu.
 
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Automatycznie czyści zasoby używane przez niestandardowe okienko zadań, gdy dodatek narzędzi VSTO zostanie zwolniony. Nie wywołuj <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> metod lub w programie `ThisAddIn_Shutdown` obsługi zdarzeń w projekcie. Te metody spowodują zgłoszenie elementu <xref:System.ObjectDisposedException> , ponieważ [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] <xref:Microsoft.Office.Tools.CustomTaskPane> przed `ThisAddIn_Shutdown` wywołaniem zostanie wywołane czyszczenie zasobów używanych przez obiekt. Aby uzyskać więcej informacji na temat `ThisAddIn_Shutdown` , zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
@@ -203,17 +203,17 @@ ms.locfileid: "71254395"
 ### <a name="powerpoint-events"></a>Zdarzenia programu PowerPoint
  Aby monitorować stan okien dokumentów w programie PowerPoint, można obsłużyć następujące zdarzenia:
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)

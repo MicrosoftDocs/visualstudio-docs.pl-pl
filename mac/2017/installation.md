@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: decbdc244a7947b715b8ba5b27bda5aaf50d2266
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c494f8d8543e0aa51b0c2be0ee52c0cb80aba982
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950614"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862440"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Zainstaluj program Visual Studio 2017 dla komputerów Mac
 
@@ -68,7 +68,7 @@ Do pracy z systemem iOS w programie Visual Studio potrzebne są następujące el
       - W pełni Międzyplatformowe aplikacje Xamarin — wybierz platformy **Android**, **iOS**i **macOS** .
    * **Aplikacje .NET Core** — Wybierz platformę **.NET Core** .
    * **ASP.NET Core aplikacji sieci Web** — Wybierz platformę **.NET Core** .
-   * **Programowanie gier dla wielu platform** w środowisku Unity — nie trzeba instalować dodatkowych platform poza Visual Studio dla komputerów Mac. Aby uzyskać więcej informacji na temat instalowania rozszerzenia aparatu Unity, zapoznaj się z [przewodnikiem Instalatora aparatu Unity](/visualstudio/mac/setup-vsmac-tools-unity) .
+   * **Programowanie gier dla wielu platform** w środowisku Unity — nie trzeba instalować dodatkowych platform poza Visual Studio dla komputerów Mac. Aby uzyskać więcej informacji na temat instalowania rozszerzenia aparatu Unity, zapoznaj się z [przewodnikiem Instalatora aparatu Unity](./setup-vsmac-tools-unity.md) .
 
    Na tym ekranie instalacji zostanie wyświetlona wersja i rozmiar każdego pojedynczego składnika. Możesz kliknąć każdy składnik, aby wyświetlić listę zależności dla tego składnika (dla systemu Android), zapoznać się z dodatkowymi pakietami, które są pobierane (dla platformy .NET Core), lub wyświetlić dodatkowe wymagane aplikacje (dla systemów iOS i macOS):
 
@@ -120,7 +120,7 @@ Zainstalowanie Visual Studio dla komputerów Mac pozwala rozpocząć pisanie kod
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplikacje platformy .NET Core, ASP.NET Core aplikacje sieci Web, Programowanie gier w środowisku Unity
 
-W przypadku innych obciążeń zapoznaj się ze stroną [obciążenia](/visualstudio/mac/workloads) .
+W przypadku innych obciążeń zapoznaj się ze stroną [obciążenia](./workloads.md) .
 
 ## <a name="related-video"></a>Pokrewne wideo
 

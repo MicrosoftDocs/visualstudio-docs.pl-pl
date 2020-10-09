@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f382e8d20f3aa623ea241702e4795854e12f9a
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 511874b5dc7d7c45a1584e95e004a53088f8ea09
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100777"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861808"
 ---
 # <a name="first-look-at-profiling-tools"></a>Pierwsze spojrzenie na narzędzia profilowania
 
@@ -223,10 +223,10 @@ Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanyc
 |Narzędzie wydajności|Pulpit systemu Windows|Platforma UWP|ASP.NET/ASP.NET rdzeń|
 |----------------------|---------------------|-------------|-------------|
 |[Wskazówki dotyczące wydajności](../profiling/perftips.md)|tak|tak|tak|
-|[Użycie procesora CPU](../profiling/beginners-guide-to-performance-profiling.md)|tak|tak|tak|
+|[Użycie procesora](../profiling/beginners-guide-to-performance-profiling.md)|tak|tak|tak|
 |[Użycie pamięci](../profiling/memory-usage.md)|tak|tak|tak|
 |[Alokacja obiektu platformy .NET](../profiling/dotnet-alloc-tool.md)|tak (tylko platforma .NET)|tak|tak|
-|[Użycie procesora GPU](/visualstudio/debugger/graphics/gpu-usage)|tak|tak|nie|
+|[Użycie procesora GPU](./gpu-usage.md)|tak|tak|nie|
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|tak (XAML)|tak|nie|
 |[Podgląd zdarzeń](../profiling/events-viewer.md)|tak|tak|tak|
 |[.NET Async](../profiling/analyze-async.md)|tak (tylko platforma .NET)|tak|tak|
@@ -238,9 +238,9 @@ Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanyc
 ::: moniker range="vs-2017"
 |Narzędzie wydajności|Pulpit systemu Windows|Platforma UWP|ASP.NET/ASP.NET rdzeń|
 |----------------------|---------------------|-------------|-------------|
-|[Użycie procesora CPU](../profiling/beginners-guide-to-performance-profiling.md)|tak|tak|tak|
+|[Użycie procesora](../profiling/beginners-guide-to-performance-profiling.md)|tak|tak|tak|
 |[Użycie pamięci](../profiling/memory-usage.md)|tak|tak|tak|
-|[Użycie procesora GPU](/visualstudio/debugger/graphics/gpu-usage)|tak|tak|nie|
+|[Użycie procesora GPU](./gpu-usage.md)|tak|tak|nie|
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|tak (XAML)|tak|nie|
 |[Wskazówki dotyczące wydajności](../profiling/perftips.md)|tak|tak dla języka XAML, nie dla HTML|tak|
 |[Eksplorator wydajności](../profiling/performance-explorer.md)|tak|nie|tak|
@@ -251,5 +251,5 @@ Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanyc
 ::: moniker-end
 
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie w Visual Studio](../debugger/debugger-feature-tour.md)

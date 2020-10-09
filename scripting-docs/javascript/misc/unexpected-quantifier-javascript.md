@@ -14,12 +14,12 @@ ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da4ff08ae667b868670364c7ad6b9a6b69ae6ad3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f67f9a2fc81b0bd950e171e4274eb09eacd88bbc
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815334"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861856"
 ---
 # <a name="unexpected-quantifier-javascript"></a>Nieoczekiwany kwantyfikator (JavaScript)
 Podczas redagowania wzorca wyszukiwania wyrażeń regularnych został utworzony element wzorca z niedozwolonym czynnikiem powtarzania. Na przykład wzorzec  
@@ -48,5 +48,5 @@ Podczas redagowania wzorca wyszukiwania wyrażeń regularnych został utworzony 
 - Upewnij się, że element wzorca wyszukiwania zawiera tylko prawne czynniki powtarzania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Obiekt wyrażenia regularnego](../../javascript/reference/regular-expression-object-javascript.md)   
- [Składnia wyrażenia regularnego (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+ [Obiekt wyrażenia regularnego](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp)   
+ [Składnia wyrażenia regularnego (JavaScript)](/previous-versions/1400241x(v=vs.100))

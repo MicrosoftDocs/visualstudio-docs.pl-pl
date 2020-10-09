@@ -14,12 +14,12 @@ ms.assetid: 3af95632-80e1-47c4-8e4b-81c5f2be8017
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d83c6ce2c7173054aa6ea31681ad1baa6e0cbc70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 791395d1fff89708e96a6dbe61fd73d954faac3b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815594"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862076"
 ---
 # <a name="object-member-expected"></a>Oczekiwany element członkowski obiektu
 Podjęto próbę wykonania operacji na elemencie członkowskim danych obiektu, ale element członkowski nie istnieje.  
@@ -29,5 +29,5 @@ Podjęto próbę wykonania operacji na elemencie członkowskim danych obiektu, a
 - Upewnij się, że nazwa elementu członkowskiego danych została wpisana poprawnie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Object — obiekt](../../javascript/reference/object-object-javascript.md)   
- [Obiekty i tablice](../../javascript/objects-and-arrays-javascript.md)
+ [Object — obiekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)   
+ [Obiekty i tablice](https://developer.mozilla.org/docs/Learn/JavaScript/Objects)

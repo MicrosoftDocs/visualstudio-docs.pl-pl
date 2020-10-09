@@ -14,12 +14,12 @@ ms.assetid: 8a437ace-c73e-4340-885c-70ccb4bb2ee4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5ecc9f1129aff02c6c8e32e42f7e9babffab429
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64f03c48b2db8b91d368e5de6e8d24a2330ccf1b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817570"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861509"
 ---
 # <a name="expected-"></a>Oczekiwano znaku „]”
 Wykonano odwołanie do elementu tablicy, ale nie zawiera on prawego nawiasu. Każde wyrażenie odwołujące się do elementu tablicy musi zawierać nawiasy otwierające i zamykające.  
@@ -29,5 +29,5 @@ Wykonano odwołanie do elementu tablicy, ale nie zawiera on prawego nawiasu. Ka�
 - Dodaj prawy nawias do wyrażenia odwołującego się do elementu tablicy.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)   
- [Array, obiekt](../../javascript/reference/array-object-javascript.md)
+ [Używanie tablic](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)   
+ [Array, obiekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)

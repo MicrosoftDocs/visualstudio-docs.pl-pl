@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658441"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860498"
 ---
 # <a name="overview-of-source-code-analysis"></a>Przegląd analizy kodu źródłowego
 
@@ -42,7 +42,7 @@ Każdy Analizator ma jeden z następujących poziomów ważności:
 | Info | `suggestion` | Naruszenia są wyświetlane jako *komunikaty* w Lista błędów, a nie w danych wyjściowych kompilacji wiersza polecenia. | Kod powodujący problemy jest podkreślony szarym i oznaczonym przez małe szare pole na pasku przewijania. |
 | Ukryty | `silent` | Niewidoczny dla użytkownika. | Niewidoczny dla użytkownika. Diagnostyka jest jednak raportowana w aparacie diagnostyki IDE. |
 | Brak | `none` | Całkowicie pomijane. | Całkowicie pomijane. |
-| Domyślny | `default` | Odnosi się do domyślnej wagi reguły. Aby określić, jaka jest wartość domyślna dla reguły, należy poszukać w okno Właściwości. | Odnosi się do domyślnej wagi reguły. |
+| Domyślne | `default` | Odnosi się do domyślnej wagi reguły. Aby określić, jaka jest wartość domyślna dla reguły, należy poszukać w okno Właściwości. | Odnosi się do domyślnej wagi reguły. |
 
 Jeśli wykryto naruszenia reguł przez analizator, są one raportowane w edytorze kodu (jako *zygzak w kodzie* błędu) i w oknie Lista błędów.
 
@@ -77,7 +77,7 @@ Jeśli instalujesz analizatory jako rozszerzenie programu Visual Studio, są one
 
 Aby reguły były wymuszane w czasie kompilacji, w tym za pośrednictwem wiersza polecenia lub jako część kompilacji ciągłej integracji (CI), można wybrać jedną z następujących opcji:
 
-- Utwórz projekt platformy .NET 5,0 zawierający domyślnie analizatory w zestawie SDK platformy .NET. Analiza kodu jest domyślnie włączona dla projektów przeznaczonych dla platformy .NET 5.0 lub nowszej. Można włączyć analizę kodu dla projektów przeznaczonych dla wcześniejszych wersji .NET przez ustawienie właściwości [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) na true.
+- Utwórz projekt platformy .NET 5,0 zawierający domyślnie analizatory w zestawie SDK platformy .NET. Analiza kodu jest domyślnie włączona dla projektów przeznaczonych dla platformy .NET 5.0 lub nowszej. Można włączyć analizę kodu dla projektów przeznaczonych dla wcześniejszych wersji .NET przez ustawienie właściwości [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) na true.
 
 - Zainstaluj analizatory jako pakiet NuGet. Ostrzeżenia i błędy analizatora nie są wyświetlane w raporcie kompilacji, jeśli analizatory są instalowane jako rozszerzenie.
 
