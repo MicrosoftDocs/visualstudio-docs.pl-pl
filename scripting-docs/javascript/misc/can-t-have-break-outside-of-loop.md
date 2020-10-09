@@ -14,12 +14,12 @@ ms.assetid: 11d02172-2a78-4705-a730-d21111db5f42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0959bad452d3b24ca1475b66e37fbdab1e9c3e7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee177c8070fc5af8123d7fd78e69b1f767a5b700
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817661"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862803"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>Instrukcja „break" nie może występować poza pętlą
 Próbowano użyć słowa kluczowego **Break** poza pętlą. Słowo kluczowe **Break** służy do kończenia pętli lub `switch` instrukcji. Musi być osadzony w treści pętli lub `switch` instrukcji. Jednak **etykieta** może być zgodna ze słowem kluczowym Break.  
@@ -35,6 +35,6 @@ break labelname;
 - Upewnij się, że słowo kluczowe **Break** pojawia się wewnątrz otaczającej pętli lub instrukcji switch.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Break, instrukcja](../../javascript/reference/break-statement-javascript.md)   
- [Sterowanie przepływem programu](../../javascript/controlling-program-flow-javascript.md)   
- [Rozwiązywanie problemów ze skryptami](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
+ [Break, instrukcja](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/break)   
+ [Sterowanie przepływem programu](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)   
+ [Rozwiązywanie problemów ze skryptami](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/What_went_wrong)

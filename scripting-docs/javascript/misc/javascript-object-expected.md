@@ -14,12 +14,12 @@ ms.assetid: cc7cc32b-e444-4afa-9be1-802c83fdf5ae
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6151825391fb01a027f67cb66568eb6b2edfc44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 754285b22f0da6f45d63f86f774d24279aeb7f22
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816816"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862547"
 ---
 # <a name="javascript-object-expected"></a>JavaScript oczekiwany obiekt
 Próbowano przekazać obiekt niebędący [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] obiektem do wbudowanej funkcji, która oczekuje [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] obiektu. Różne funkcje wbudowane wymagają obiektów zdefiniowanych w (w [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] przeciwieństwie do obiektów zdefiniowanych przez hosta lub składnika zewnętrznego, takiego jak kontrolka).  
@@ -29,5 +29,5 @@ Próbowano przekazać obiekt niebędący [!INCLUDE[javascript](../../javascript/
 - Upewnij się, że obiekt, który jest przekazywany jako parametr, jest poprawnego typu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Obiekty i tablice](../../javascript/objects-and-arrays-javascript.md)   
- [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)
+ [Obiekty i tablice](https://developer.mozilla.org/docs/Learn/JavaScript/Objects)   
+ [Używanie tablic](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

@@ -11,16 +11,16 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1a52027c060917e8c5f692f472427ba5d980b3bb
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 950ca7f1e9c43123b206893dbc6a07da7c3743ec
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005058"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862856"
 ---
 # <a name="wsl-install"></a>wsl-install
 
-`wsl-install`Narzędzie to służy do instalowania dystrybucje systemu Linux dla [podsystemu Windows w systemie Linux](https://docs.microsoft.com/windows/wsl/) (WSL).
+`wsl-install`Narzędzie to służy do instalowania dystrybucje systemu Linux dla [podsystemu Windows w systemie Linux](/windows/wsl/) (WSL).
 
 `wsl-install`Narzędzie wymaga, aby WSL 2 było już włączone w systemie Windows. Jeśli z jakiegoś powodu WSL2 nie jest włączona, można włączyć WSL2 przy użyciu narzędzia [WindowsFeature-Enable](tool-windowsfeature-enable.md) i nazwy funkcji `Microsoft-Windows-Subsystem-Linux` .
 

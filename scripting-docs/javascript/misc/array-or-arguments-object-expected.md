@@ -14,12 +14,12 @@ ms.assetid: 22b83e2f-8916-46db-8d8c-50c8481b7c90
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 266eed585f1d45e15c084e424d441220f6e671ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e4b3eaee0a244f9d14d88d1393742ab6d31a509
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815776"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862667"
 ---
 # <a name="array-or-arguments-object-expected"></a>Oczekiwanie obiektu typu Tablica lub argumentów
 Nie podano tablicy jako argumentu. Ten błąd dotyczy tylko metody **Function. prototype. Apply** . Jeśli ta wartość jest określona, drugi argument tej funkcji musi być `Array` obiektem lub **argumentem** obiektu.  
@@ -29,6 +29,6 @@ Nie podano tablicy jako argumentu. Ten błąd dotyczy tylko metody **Function. p
 - Określ albo `Array` obiekt **arguments** jako drugi argument.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)   
- [Apply — metoda (funkcja)](../../javascript/reference/apply-method-function-javascript.md)   
- [Funkcje](../../javascript/functions-javascript.md)
+ [Używanie tablic](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)   
+ [Apply — metoda (funkcja)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)   
+ [Funkcje](https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Functions)

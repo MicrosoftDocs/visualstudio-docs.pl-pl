@@ -14,12 +14,12 @@ ms.assetid: dbe05d7d-fcf6-4823-9c61-4b814d1ad3c4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b0eb1d7a53614f48daaf6459aaadee594b6fa11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ede65345bdaab22b26274323ad08779313d186e
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816179"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862730"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>Liczba cyfr ułamkowych jest poza zakresem
 Podjęto próbę przekazania nieprawidłowego argumentu do **numeru funkcji. prototype. toExponential**. Argument funkcji **toExponential ()** musi zawierać się w przedziale od 0 do 20 (włącznie).  
@@ -29,4 +29,4 @@ Podjęto próbę przekazania nieprawidłowego argumentu do **numeru funkcji. pro
 - Upewnij się, że argument **toExponential ()** nie jest zbyt duży lub za mały.  
   
 ## <a name="see-also"></a>Zobacz też  
- [toExponential, metoda (Number)](../../javascript/reference/toexponential-method-number-javascript.md)
+ [toExponential, metoda (Number)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/toexponential)

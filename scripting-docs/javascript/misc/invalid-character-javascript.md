@@ -14,12 +14,12 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2dc3e733afdb4f3d25595e819163ff56e397c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4978e272017b990501a953062df3a77750f4a837
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816946"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862614"
 ---
 # <a name="invalid-character-javascript"></a>Nieprawidłowy znak (JavaScript)
 Identyfikator jest tworzony przy użyciu znaku (lub znaków), który nie jest rozpoznawany przez [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kompilator jako prawidłowy. Prawidłowe znaki są następujące:  
@@ -35,6 +35,6 @@ Identyfikator jest tworzony przy użyciu znaku (lub znaków), który nie jest ro
 - Unikaj używania znaków, które nie są częścią [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definicji języka.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Modyfikacj](../../javascript/variables-javascript.md)   
- [Znaki specjalne](../../javascript/advanced/special-characters-javascript.md)   
- [Typy danych](../../javascript/data-types-javascript.md)
+ [Modyfikacj](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Variables)   
+ [Znaki specjalne](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Grammar_and_types)   
+ [Typy danych](https://developer.mozilla.org/docs/Web/JavaScript/Data_structures)

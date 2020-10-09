@@ -14,12 +14,12 @@ ms.assetid: 5083809e-9828-4aea-b9b0-80f46d6f3812
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f59fd95b77ec6a3cd2486ff954002daeb0364321
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7555aa3413b2c3e5b384f92a0f2c295548d8930a
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815321"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862715"
 ---
 # <a name="unterminated-string-constant-javascript"></a>Niezakończona stała typu string (JavaScript)
 Nie końcowa stała ciągu z zamykającym znakiem cudzysłowu. Stałe ciągów muszą być ujęte w parę znaków cudzysłowu.  
@@ -32,5 +32,5 @@ Nie końcowa stała ciągu z zamykającym znakiem cudzysłowu. Stałe ciągów m
 - Dodaj cudzysłów zamykający do końca ciągu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Obiekt String](../../javascript/reference/string-object-javascript.md)   
- [toString, metoda (Object)](../../javascript/reference/tostring-method-object-javascript.md)
+ [Obiekt String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)   
+ [toString, metoda (Object)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/tostring)

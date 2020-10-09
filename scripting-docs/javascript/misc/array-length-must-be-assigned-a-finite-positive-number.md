@@ -14,12 +14,12 @@ ms.assetid: c51c66a4-a543-4e95-b18d-2cfbcb3d1fdd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30e02f4f90300e2c05076553419cda5f8c353ab0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e0016c7a0a6acb3f08121d8636ccdf848dcf201
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817687"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862816"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Długość tablicy musi być mieć przypisaną dodatnią liczbę całkowitą
 Podczas ustawiania właściwości **Length** istniejącego obiektu **Array** określono długość tablicy, która nie jest liczbą dodatnią ani zerem. Ten błąd występuje, gdy przypiszesz wartość do właściwości **Length** `Array` obiektu, który jest ujemny lub nie jest liczbą ( `NaN` ). Należy zauważyć, że [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] automatycznie konwertuje liczby ułamkowe na całkowite liczby całkowite.  
@@ -34,4 +34,4 @@ Podczas ustawiania właściwości **Length** istniejącego obiektu **Array** okr
     ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)
+ [Używanie tablic](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

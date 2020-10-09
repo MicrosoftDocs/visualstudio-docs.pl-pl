@@ -11,19 +11,19 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 4e30a333812e2c313f9e35934643bcea03cf054c
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 2fd629934355b2462ae9d397046ef8e063a62fc6
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352236"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862830"
 ---
 # <a name="require-psmodule"></a>require-psmodule
 
-`require-psmodule`Narzędzie to służy do instalowania [modułu programu PowerShell](https://docs.microsoft.com/powershell/scripting/developer/module/understanding-a-windows-powershell-module?view=powershell-7&preserve-view=true) z [Galeria programu PowerShell](https://www.powershellgallery.com/) za pomocą polecenia [Install-module](https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true), dzięki czemu można go używać w skryptach programu PowerShell.
+`require-psmodule`Narzędzie to służy do instalowania [modułu programu PowerShell](/powershell/scripting/developer/module/understanding-a-windows-powershell-module?preserve-view=true&view=powershell-7) z [Galeria programu PowerShell](https://www.powershellgallery.com/) za pomocą polecenia [Install-module](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7), dzięki czemu można go używać w skryptach programu PowerShell.
 
 > [!TIP] 
-> Po zainstalowaniu modułu nadal trzeba go zaimportować do skryptu za pomocą polecenia [Import-Module](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/import-module?view=powershell-7&preserve-view=true).
+> Po zainstalowaniu modułu nadal trzeba go zaimportować do skryptu za pomocą polecenia [Import-Module](/powershell/module/microsoft.powershell.core/import-module?preserve-view=true&view=powershell-7).
 
 ## <a name="usage"></a>Użycie
 
@@ -41,7 +41,7 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 
 ### <a name="additional-options"></a>Opcje dodatkowe
 
-Dodatkowe opcje są przesyłane bezpośrednio do polecenia [Install-module](https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true) i są udokumentowane w [Microsoft docs](https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true).
+Dodatkowe opcje są przesyłane bezpośrednio do polecenia [Install-module](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7) i są udokumentowane w [Microsoft docs](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7).
 
 ### <a name="default-behavior"></a>Zachowanie domyślne
 
@@ -49,11 +49,11 @@ Domyślne zachowanie `require-psmodule` narzędzia to błąd, zgodnie z `input` 
 
 ## <a name="builtin-options"></a>Wbudowane opcje
 
-`require-psmodule`Narzędzie ustawia szereg `Install-Module` argumentów wiersza polecenia, aby zapewnić `Install-Module` możliwość uruchamiania bezobsługowego. Te argumenty są wymienione poniżej, a dokumentacja na nich znajduje się w [module Install](https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true).
+`require-psmodule`Narzędzie ustawia szereg `Install-Module` argumentów wiersza polecenia, aby zapewnić `Install-Module` możliwość uruchamiania bezobsługowego. Te argumenty są wymienione poniżej, a dokumentacja na nich znajduje się w [module Install](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7).
 
 | Nazwa         | Opis                                                                                                                                                                                                                                                                                                                                                               |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **-Force**   | Instaluje moduł i przesłania komunikaty ostrzegawcze dotyczące konfliktów instalacji modułu. Jeśli moduł o tej samej nazwie już istnieje na komputerze, Wymuś zainstalowanie wielu wersji. Spowoduje zastąpienie modułu, jeśli istnieje istniejący moduł o tej samej nazwie i wersji. Wymuś i AllowClobber można używać razem w poleceniu Install-module. |
+| **-Force**   | Instaluje moduł i przesłania komunikaty ostrzegawcze dotyczące konfliktów instalacji modułu. Jeśli moduł o tej samej nazwie już istnieje na komputerze, Wymuś zainstalowanie wielu wersji. Spowoduje zastąpienie modułu, jeśli istnieje istniejący moduł o tej samej nazwie i wersji. Polecenia Force i AllowClobber mogą być używane razem w Install-Module polecenie. |
 | **-WhatIf**  | -WhatIf flaga jest dodawana, gdy przebiegu suchego jest przenoszona dla `devinit` polecenia.                                                                                                                                                                                                                                                                                                       |
 | **-Verbose** | -Pełna flaga jest dodawana, gdy pełny jest przesyłany do `devinit` polecenia.                                                                                                                                                                                                                                                                                                      |
 

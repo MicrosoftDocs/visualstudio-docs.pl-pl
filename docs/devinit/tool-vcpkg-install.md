@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7c974b5747c38231ff4115aba17a8e3728672851
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 21dd482d100ce87ce942650e27a5dc5a232ddbbb
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005989"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862837"
 ---
 # <a name="vcpkg-install"></a>vcpkg-install
 
@@ -38,7 +38,7 @@ Aby można było zainstalować `input` wiele pakietów, właściwość powinna b
 
 ### <a name="additional-options"></a>Opcje dodatkowe
 
-Dodatkowe opcje są przesyłane bezpośrednio do polecenia [vcpkg](https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true) i są udokumentowane w [repozytorium GitHub vcpkg](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md).
+Dodatkowe opcje są przesyłane bezpośrednio do polecenia [vcpkg](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7) i są udokumentowane w [repozytorium GitHub vcpkg](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md).
 
 ### <a name="default-behavior"></a>Zachowanie domyślne
 

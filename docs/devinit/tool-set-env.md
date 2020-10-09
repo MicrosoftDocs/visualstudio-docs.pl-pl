@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 2f4ec5489f22e94ad8f57f22ddc7742dc0ae3ade
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 19f635f0d22eacd64726368af89bbf5b7c4c9a11
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005996"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862845"
 ---
 # <a name="set-env"></a>set-env
 
 `set-env`Narzędzie może służyć do ustawiania zmiennych środowiskowych do użycia w bieżącym procesie. Zmienne środowiskowe są ustawiane tylko w bieżącym procesie i będą używane przez inne `devinit` Narzędzia, jeśli są uruchamiane w ramach tego procesu.
 
-To narzędzie korzysta z interfejsu API programu .NET Core `Environment.SetEnvironment` i ma takie same ograniczenia, jak ten interfejs API. Aby uzyskać więcej informacji, zapoznaj się z [dokumentacją](https://docs.microsoft.com/dotnet/api/system.environment.setenvironmentvariable?view=netcore-3.1&preserve-view=true) `Environment.SetEnvironment` .
+To narzędzie korzysta z interfejsu API programu .NET Core `Environment.SetEnvironment` i ma takie same ograniczenia, jak ten interfejs API. Aby uzyskać więcej informacji, zapoznaj się z [dokumentacją](/dotnet/api/system.environment.setenvironmentvariable?preserve-view=true&view=netcore-3.1) `Environment.SetEnvironment` .
 
 ## <a name="usage"></a>Użycie
 
@@ -51,7 +51,7 @@ Nie używany.
 
 ## <a name="usage-in-a-codespace"></a>Użycie w codespace
 
-Jeśli używasz codespace, możesz ustawić zmienne środowiskowe używane w codespace przez customizating `remoteEnv` Właściwość w [`.devcontainer.json`](https://docs.microsoft.com/visualstudio/codespaces/reference/configuring) pliku.
+Jeśli używasz codespace, możesz ustawić zmienne środowiskowe używane w codespace przez customizating `remoteEnv` Właściwość w [`.devcontainer.json`](/visualstudio/codespaces/reference/configuring) pliku.
 
 ## <a name="example-usage"></a>Przykład użycia
 

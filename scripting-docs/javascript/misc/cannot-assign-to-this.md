@@ -14,12 +14,12 @@ ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5c52153da64ff477d89b09d4af17169da18e4e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8985c7201a8e315353dd89ab5e1f5a3ad3b403ea
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817323"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862770"
 ---
 # <a name="cannot-assign-to-this"></a>Nie można przypisać do „tego"
 Podjęto próbę przypisania wartości do **tego**elementu. jest **to** [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] słowo kluczowe, które odwołuje się do:
@@ -41,5 +41,5 @@ Wewnątrz metody, można jej użyć do odwoływania **się do bieżącego** obie
 
 ## <a name="see-also"></a>Zobacz też
 
-- [this, instrukcja](../../javascript/reference/this-statement-javascript.md)
-- [Rozwiązywanie problemów ze skryptami](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
+- [this, instrukcja](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/this)
+- [Rozwiązywanie problemów ze skryptami](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/What_went_wrong)
