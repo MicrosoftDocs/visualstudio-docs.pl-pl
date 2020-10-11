@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ac917248915129b8d93dc776ac7d35a2ed227069
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16ff335fdf8ca76889562cfd94807ec1adc516d2
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87454604"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927929"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Kompiluj kod języka TypeScript (ASP.NET Core)
 
@@ -107,6 +107,10 @@ Jeśli program Visual Studio jest zainstalowany, node.exe powiązane z nim zosta
 Aby zapoznać się z przykładem użycia Gulp z modułem uruchamiającego zadań do kompilowania aplikacji, zobacz [ASP.NET Core i TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html).
 
 Jeśli występują problemy, w których program Visual Studio używa wersji Node.js lub narzędzia innej firmy, które różni się od oczekiwanej wersji, może być konieczne ustawienie ścieżki programu Visual Studio do użycia. Wybierz pozycję **Narzędzia**  >  **Opcje**. W obszarze **projekty i rozwiązania**wybierz pozycję **Sieć Web zarządzanie pakietami**  >  **zewnętrzne narzędzia sieci Web**.
+
+### <a name="run-the-application"></a>Uruchamianie aplikacji
+
+Aby uzyskać instrukcje dotyczące uruchamiania aplikacji po jej skompilowaniu, zobacz [Tworzenie pierwszej aplikacji Node.js](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application).
 
 ### <a name="nuget-package-structure-details"></a>Szczegóły struktury pakietu NuGet
 

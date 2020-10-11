@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bd2a6cc947c5f52212029bebe590d59906f5aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07338e83f0c58331345cd3f4c6eb61855a16fd4f
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591167"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928492"
 ---
 # <a name="codeindex-command"></a>CodeIndex — polecenie
 
@@ -25,7 +25,7 @@ Użyj polecenia **CodeIndex** , aby zarządzać indeksowanie kodu na Team Founda
 
 ## <a name="required-permissions"></a>Wymagane uprawnienia
 
-Aby użyć polecenia **CodeIndex** , musisz być członkiem grupy zabezpieczeń **Administratorzy Team Foundation** . Zobacz [uprawnienia i grupy zdefiniowane dla Azure DevOps Services i TFS](/azure/devops/organizations/security/permissions?view=vsts).
+Aby użyć polecenia **CodeIndex** , musisz być członkiem grupy zabezpieczeń **Administratorzy Team Foundation** . Zobacz [uprawnienia i grupy zdefiniowane dla Azure DevOps Services i TFS](/azure/devops/organizations/security/permissions?view=vsts&preserve-view=true).
 
 > [!NOTE]
 > Nawet jeśli użytkownik loguje się przy użyciu poświadczeń administracyjnych, należy otworzyć okno wiersza polecenia z podwyższonym poziomem uprawnień, aby uruchomić to polecenie. Należy również uruchomić to polecenie z poziomu aplikacji programu Team Foundation.

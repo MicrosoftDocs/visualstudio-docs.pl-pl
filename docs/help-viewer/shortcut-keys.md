@@ -1,5 +1,6 @@
 ---
 title: Klawisze skrótów (Podgląd pomocy)
+description: Zapoznaj się z listą klawiszy skrótów w Podgląd Pomocy firmy Microsoft. Używaj klawiszy skrótów do nawigacji, zarządzania oknem i zarządzania zawartością.
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -11,18 +12,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7c49eadcfa0b73997f9902bdde0b8a9c98065e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 264917d515e25823f8d6c2cb522e85dcc9c47d84
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533735"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878959"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Klawisze skrótów w podglądzie pomocy
 
 Możesz nawigować w **Podgląd pomocy firmy Microsoft** przy użyciu klawiszy skrótów w poniższej tabeli:
 
-|Obszar|Klawiszy|Akcja|
+|Warstwowy|Klawiszy|Akcja|
 |----------|---------------|------------|
 |Ogólnego zastosowania|**Odstęp**|Użyj **zamiast tego w dowolnym miejscu** , z wyjątkiem pól edycji.|
 |Ogólnego zastosowania|**F1**|Otwórz **Pomoc** dotyczącą bieżącego elementu interfejsu użytkownika.|
@@ -47,7 +48,7 @@ Możesz nawigować w **Podgląd pomocy firmy Microsoft** przy użyciu klawiszy s
 |Temat|**Strzałka w dół**|Przewiń w kierunku końca dokumentu o jeden wiersz w czasie.|
 |Temat|**Strona w górę**|Przewiń w kierunku początku dokumentu po jednym ekranie.|
 |Temat|**Strona w dół**|Przewiń w dół do końca dokumentu po jednym ekranie.|
-|Temat|**Strona główna**|Przenieś na początek dokumentu.|
+|Temat|**Ekran główny**|Przenieś na początek dokumentu.|
 |Temat|**Punktów**|Przenieś na koniec dokumentu.|
 |Temat|**Ctrl** + **F**|Znajdź tekst wyszukiwania na tej stronie.|
 |Temat|**F5**|Odśwież bieżącą stronę.|
@@ -74,7 +75,7 @@ Możesz nawigować w **Podgląd pomocy firmy Microsoft** przy użyciu klawiszy s
 |Zawartość & indeks & wyszukiwanie & ulubionych|**Ctrl** + **P**|Drukowanie określonego tematu.|
 |Zawartość & indeks & wyszukiwanie & ulubionych|**Ctrl** + **F2**|Wyświetl podgląd wydruku określonego tematu.|
 |Zawartość & indeks & wyszukiwanie & ulubionych|**Ctrl** + **Kliknij pozycję**|Otwórz temat na nowej karcie.|
-|Wyszukiwanie|**Esc**|Wyczyść pole tekstowe wyszukiwania.|
+|Wyszukaj|**Esc**|Wyczyść pole tekstowe wyszukiwania.|
 |Opcje aplikacji Viewer|**Alt** + **T**|Zmień fokus na listę **rozmiar tekstu** .|
 |Opcje aplikacji Viewer|**Alt** + **S**|Zmień fokus na listę **wyników wyszukiwania maksymalnego** .|
 |Opcje aplikacji Viewer|**Alt** + **H**|Zmień fokus na listę **zapisanych wpisów historii** .|

@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9859366f6e4b9a0d1c219adc2080e6415b1e44a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98bdbecb12897602a70c590b9cee64b992193b7d
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588658"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928505"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 
@@ -217,7 +217,7 @@ Możesz odnaleźć testy jednostkowe, które istnieją dla kodu w języku C# lub
 
 1. Przejdź do kodu aplikacji, który ma skojarzony [kod testu jednostkowego](../test/unit-test-your-code.md).
 
-2. Jeśli jeszcze tego nie zrobiono, skompiluj aplikację w celu załadowania wskaźników testu CodeLens. 
+2. Jeśli jeszcze tego nie zrobiono, skompiluj aplikację w celu załadowania wskaźników testu CodeLens.
 
 3. Przejrzyj testy dla kodu, naciskając klawisz **Alt** + **3**.
 
@@ -268,7 +268,7 @@ Odp **.:** CodeLens pojawia się w języku C# i Visual Basic kodzie na poziomie 
 
 - Jeśli kod jest przechowywany w programie TFS, upewnij się, że indeksowanie kodu jest włączone przy użyciu [polecenia CodeIndex](../ide/codeindex-command.md) z [poleceniem TFS config](/azure/devops/server/command-line/tfsconfig-cmd).
 
-- Wskaźniki powiązane z DevOps są wyświetlane tylko wtedy, gdy elementy robocze są połączone z kodem i gdy masz uprawnienia do otwierania połączonych elementów roboczych. Upewnij się, że masz [uprawnienia członka zespołu](/azure/devops/organizations/security/view-permissions?view=vsts).
+- Wskaźniki powiązane z DevOps są wyświetlane tylko wtedy, gdy elementy robocze są połączone z kodem i gdy masz uprawnienia do otwierania połączonych elementów roboczych. Upewnij się, że masz [uprawnienia członka zespołu](/azure/devops/organizations/security/view-permissions?view=vsts&preserve-view=true).
 
 - Wskaźniki testów jednostkowych nie są wyświetlane, gdy kod aplikacji nie ma testów jednostkowych. Wskaźniki stanu testu są automatycznie wyświetlane w projektach testów. Jeśli wiesz, że kod aplikacji ma testy jednostkowe, ale nie pojawiają się wskaźniki testów, spróbuj skompilować rozwiązanie (**Ctrl** + **SHIFT** + **B**).
 

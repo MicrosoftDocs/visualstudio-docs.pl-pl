@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0517d03db180ce76940723ca935be258d0cf1818
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d61ab4ec7647921a928841d2a9c89fb84becdf9
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80256234"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928072"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Pierwsze spojrzenie na narzędzia do testowania w programie Visual Studio
 
@@ -94,7 +94,7 @@ Bez względu na to, czy wybierasz najlepsze, kodowane testy interfejsu użytkown
 
 ## <a name="related-scenarios"></a>Scenariusze pokrewne
 
-* [Testowanie ręczne & badawcze (Azure Test Plans)](/azure/devops/test/index?view=vsts)
-* [Testowanie obciążenia (Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts)
-* [Testowanie ciągłe (Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+* [Testowanie ręczne & badawcze (Azure Test Plans)](/azure/devops/test/index?view=vsts&preserve-view=true)
+* [Testowanie obciążenia (Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)
+* [Testowanie ciągłe (Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)
 * [Narzędzia do analizy kodu](../code-quality/code-analysis-for-managed-code-overview.md)

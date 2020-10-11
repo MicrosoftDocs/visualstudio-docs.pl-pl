@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9938d017d683fd27a3f303824f9568a3876c2c4d
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312005"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928046"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Witamy w programie Visual Studio IDE | Visual Basic
 
@@ -42,7 +42,7 @@ Ten obraz przedstawia program Visual Studio z otwartym projektem i kilkoma oknam
 
 - W [oknie danych wyjściowych](../../ide/reference/output-window.md) (u dołu) jest miejsce, gdzie program Visual Studio wysyła powiadomienia, takie jak debugowanie i komunikaty o błędach, ostrzeżenia kompilatora, publikowanie komunikatów o stanie itd. Każde źródło wiadomości ma własną kartę.
 
-- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (prawy dolny) umożliwia śledzenie elementów roboczych i udostępnianie kodu innym osobom korzystającym z technologii kontroli wersji, takich jak [git](https://git-scm.com/) i [Kontrola wersji serwera Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
+- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts&preserve-view=true) (prawy dolny) umożliwia śledzenie elementów roboczych i udostępnianie kodu innym osobom korzystającym z technologii kontroli wersji, takich jak [git](https://git-scm.com/) i [Kontrola wersji serwera Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true).
 
 ## <a name="editions"></a>Wersje
 

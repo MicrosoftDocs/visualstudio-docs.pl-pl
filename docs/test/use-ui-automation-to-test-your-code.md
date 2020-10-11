@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d18282cf0fbd8782eb7abce05794e0b2eb1c5c1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eaa1e284394bda78c6892647ce9eca20d372a362
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90035745"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928098"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Używanie kodowanego testu interfejsu użytkownika do testowania kodu
 
@@ -444,7 +444,7 @@ Kodowane testy interfejsu użytkownika można analizować za pomocą dzienników
 
 - [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
 
-- [Uruchom testy w procesie kompilacji](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+- [Uruchom testy w procesie kompilacji](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)
 
 - [Instrukcje: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](/previous-versions/ee291332(v=vs.140))
 
@@ -456,9 +456,9 @@ Kodowane testy interfejsu użytkownika można analizować za pomocą dzienników
 
 Kodowane testy interfejsu użytkownika są często używane do automatyzowania ręcznych testów. Aby uzyskać więcej informacji o zautomatyzowanych testach, zobacz [narzędzia testowe w programie Visual Studio](../test/improve-code-quality.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Rejestrowanie i odtwarzanie testów ręcznych](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
+- [Rejestrowanie i odtwarzanie testów ręcznych](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts&preserve-view=true)
 - [Xamarin. UITest](/appcenter/test-cloud/uitest/)
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Przewodnik: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

@@ -1,6 +1,7 @@
 ---
 title: Zaawansowany przykład dla kontenerów
-description: ''
+description: Dowiedz się więcej na temat zaawansowanego przykładu kontenerów platformy Docker. W tym przykładzie pliku dockerfile używa określonego znacznika wersji obrazu Microsoft/dotnet-Framework.
+ms.custom: SEO-VS-2020
 ms.date: 03/25/2020
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
@@ -11,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4dd40d332f0f549ad1efbf0b328c68feb56819b8
-ms.sourcegitcommit: d9dd86c421532cfca6c0c5761d160f35829419c6
+ms.openlocfilehash: 5103d9a053a1a2a8bd3a672c33037695ee3d2836
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90025555"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928700"
 ---
 # <a name="advanced-example-for-containers"></a>Zaawansowany przykład dla kontenerów
 
@@ -216,7 +217,7 @@ Po zakończeniu ostatniego wiersza Otwórz pozycję "% TEMP% \vslogs.zip" na swo
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Instalowanie narzędzi do kompilacji w kontenerze](build-tools-container.md)
 * [Znane problemy z kontenerami](build-tools-container-issues.md)

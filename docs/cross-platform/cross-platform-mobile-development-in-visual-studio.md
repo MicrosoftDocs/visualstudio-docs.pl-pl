@@ -1,5 +1,6 @@
 ---
 title: Programowanie aplikacji mobilnych na wiele platform w programie Visual Studio | Microsoft Docs
+description: W tym artykule dowiesz się, jak tworzyć aplikacje dla urządzeń z systemami Android, iOS i Windows za pomocą programu Visual Studio.
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
@@ -11,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 12c0da32014581e6e9cc0ea22cb80414462f03bd
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0a612be5a74c4d0905e3fcef3adaeb180df61320
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037266"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878842"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Programowanie aplikacji mobilnych na wiele platform w programie Visual Studio
 
@@ -166,7 +167,7 @@ Za pomocą Visual Studio Tools dla platformy Xamarin można docelowo dla system�
 |[Obejrzyj film wideo z wprowadzeniem do wersji Zapoznawczej Visual Studio Tools for Unity 2,0](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (wideo)|
 |[Dowiedz się więcej na temat aparatu Unity](https://unity.com/) (witryna sieci Web Unity)|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dodawanie Microsoft 365 interfejsów API do projektu programu Visual Studio](/office/developer-program/office-365-developer-program)
 - [App Services platformy Azure — Mobile Apps](https://azure.microsoft.com/services/app-service/mobile/)

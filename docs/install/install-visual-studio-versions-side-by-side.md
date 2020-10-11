@@ -1,5 +1,7 @@
 ---
 title: Instalowanie obok siebie różnych wersji programu Visual Studio
+description: Dowiedz się, jak zainstalować program Visual Studio na komputerze, na którym jest już zainstalowana wcześniejsza lub nowsza wersja programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
@@ -11,12 +13,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 1a57d124029f5c654d41dcea621d6df95e29842f
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: ff62f07f3b1c5cc72488320b05d6ff9649fb5795
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211316"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928635"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalowanie obok siebie różnych wersji programu Visual Studio
 
@@ -52,7 +54,7 @@ W przypadku uaktualniania z jednej pomocniczej wersji programu Visual Studio do 
 
 1. Pobierz [plik inicjujący programu Visual Studio](/visualstudio/releases/2019/history#installing-an-earlier-release) dla wersji pomocniczej, który chcesz zainstalować obok istniejących wersji programu Visual Studio.
 2. Otwórz wiersz polecenia w trybie administratora. W tym celu otwórz menu Start systemu Windows, wpisz "cmd", kliknij prawym przyciskiem myszy wyniki wyszukiwania w wierszu polecenia, a następnie wybierz polecenie **Uruchom jako administrator**. W wierszu polecenia Zmień katalog na folder, w którym znajduje się plik programu inicjującego programu Visual Studio.
-3. Uruchom poniższe polecenie, określając nową ścieżkę folderu dla lokalizacji instalacji i zastępując nazwę pliku exe odpowiednią nazwą programu inicjującego dla używanej wersji programu Visual Studio. Nazwa pliku. exe powinna być taka sama lub podobna do jednego z następujących plików:
+3. Uruchom następujące polecenie, określając nową ścieżkę folderu dla lokalizacji instalacji i zastępując nazwę pliku exe odpowiednią nazwą programu inicjującego dla instalowanej wersji programu Visual Studio. Nazwa pliku. exe powinna być taka sama lub podobna do jednego z następujących plików:
    * vs_community.exe dla programu Visual Studio Community
    * vs_professional.exe Visual Studio Professional
    * vs_enterprise.exe Visual Studio Enterprise

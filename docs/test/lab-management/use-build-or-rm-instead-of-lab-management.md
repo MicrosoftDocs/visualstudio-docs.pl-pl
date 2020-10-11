@@ -9,16 +9,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 37455c05a010681eac343287abf25aad642328c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 052e2c794ba765573923fba89413e0192c582c15
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286846"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928596"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Użyj Azure Test Plans zamiast Lab Management do testowania automatycznego
 
-Jeśli używasz Microsoft Test Manager i Lab Management do testowania automatycznego lub dla automatyzacji Kompilacja-Wdrażanie-test, w tym temacie wyjaśniono, jak można osiągnąć te same cele przy użyciu funkcji [kompilowania i](/azure/devops/pipelines/index?view=vsts) wydawania w Azure Pipelines i Team Foundation Server (TFS).
+Jeśli używasz Microsoft Test Manager i Lab Management do testowania automatycznego lub dla automatyzacji Kompilacja-Wdrażanie-test, w tym temacie wyjaśniono, jak można osiągnąć te same cele przy użyciu funkcji [kompilowania i](/azure/devops/pipelines/index?view=vsts&preserve-view=true) wydawania w Azure Pipelines i Team Foundation Server (TFS).
 
 > [!NOTE]
 > Microsoft Test Manager jest przestarzała w programie Visual Studio 2017 i został usunięty w programie Visual Studio 2019.
@@ -31,7 +31,7 @@ Microsoft Test Manager i Lab Management polegają na definicji kompilacji XAML w
 |-------|----------------------|-----------------|
 | Zidentyfikuj maszyny, na których ma zostać wdrożona kompilacja, i uruchom testy. | Utwórz standardowe środowisko laboratoryjne w Microsoft Test Manager z tymi maszynami. | nie dotyczy |
 | Zidentyfikuj testy do uruchomienia. | Utwórz zestaw testów w Microsoft Test Manager, Utwórz przypadki testowe i skojarz automatyzację z każdym przypadkiem testowym. Utwórz ustawienia testu w Microsoft Test Manager identyfikowania roli maszyn w środowisku laboratoryjnym, w której powinny być uruchamiane testy. | Utwórz zautomatyzowany zestaw testów w Microsoft Test Manager w taki sam sposób, jeśli planujesz zarządzać testowaniem za pomocą planów testów. Alternatywnie możesz pominąć tę funkcję, jeśli chcesz uruchomić testy bezpośrednio z plików binarnych testów produkowanych w ramach kompilacji. Nie ma potrzeby tworzenia ustawień testu w obu przypadkach. |
-| Automatyzacja wdrażania i testowania. | Utwórz definicję kompilacji XAML przy użyciu LabDefaultTemplate. *. XAML. Określ środowisko kompilacji, zestawów testów i środowiska laboratoryjnego w definicji kompilacji. | Utwórz [potok kompilacji lub wersji](/azure/devops/pipelines/index?view=vsts) za pomocą jednego środowiska. Uruchom ten sam skrypt wdrażania (z definicji kompilacji XAML) przy użyciu zadania wiersza polecenia i uruchom testy automatyczne przy użyciu wdrożenia agenta testowego i Uruchom zadania testów funkcjonalnych. Określ listę maszyn i ich poświadczenia jako dane wejściowe tych zadań. |
+| Automatyzacja wdrażania i testowania. | Utwórz definicję kompilacji XAML przy użyciu LabDefaultTemplate. *. XAML. Określ środowisko kompilacji, zestawów testów i środowiska laboratoryjnego w definicji kompilacji. | Utwórz [potok kompilacji lub wersji](/azure/devops/pipelines/index?view=vsts&preserve-view=true) za pomocą jednego środowiska. Uruchom ten sam skrypt wdrażania (z definicji kompilacji XAML) przy użyciu zadania wiersza polecenia i uruchom testy automatyczne przy użyciu wdrożenia agenta testowego i Uruchom zadania testów funkcjonalnych. Określ listę maszyn i ich poświadczenia jako dane wejściowe tych zadań. |
 
 W tym scenariuszu niektóre korzyści wynikające z używania Azure Pipelines lub TFS są następujące:
 
@@ -46,7 +46,7 @@ W tym scenariuszu niektóre korzyści wynikające z używania Azure Pipelines lu
 
 ## <a name="self-service-management-of-scvmm-environments"></a>Samoobsługowe zarządzanie środowiskami SCVMM
 
-[Centrum testowe w Microsoft Test Manager](/azure/devops/test/mtm/guidance-mtm-usage?view=vsts) obsługuje możliwość zarządzania biblioteką szablonów środowiska oraz udostępniania środowisk na żądanie przy użyciu [serwera SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
+[Centrum testowe w Microsoft Test Manager](/azure/devops/test/mtm/guidance-mtm-usage?view=vsts&preserve-view=true) obsługuje możliwość zarządzania biblioteką szablonów środowiska oraz udostępniania środowisk na żądanie przy użyciu [serwera SCVMM](/system-center/vmm/overview?view=sc-vmm-1801&preserve-view=true).
 
 Funkcje samoobsługowego inicjowania obsługi programu Lab Center mają dwa różne cele:
 
@@ -76,4 +76,4 @@ Jednak Azure Pipelines i TFS, w połączeniu z zadaniami kompilowania i wdrażan
 * Uruchamianie i zatrzymywanie maszyn wirtualnych
 * Uruchamianie niestandardowych skryptów programu PowerShell dla programu SCVMM
 
-Aby uzyskać więcej informacji, zobacz [Tworzenie środowiska izolowanego sieci wirtualnej na potrzeby scenariuszy Kompilacja-Wdrażanie-test](/azure/devops/pipelines/targets/create-virtual-network?view=vsts).
+Aby uzyskać więcej informacji, zobacz [Tworzenie środowiska izolowanego sieci wirtualnej na potrzeby scenariuszy Kompilacja-Wdrażanie-test](/azure/devops/pipelines/targets/create-virtual-network?view=vsts&preserve-view=true).

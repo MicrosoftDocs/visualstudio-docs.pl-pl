@@ -1,5 +1,6 @@
 ---
 title: Argumenty wiersza polecenia dla Menedżera zawartości pomocy
+description: Użyj argumentów wiersza polecenia dla Menedżera zawartości pomocy (HlpCtntMgr.exe), aby określić sposób wdrażania lokalnej zawartości pomocy i zarządzania nią.
 ms.date: 11/01/2017
 ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bead01c6440d5232a91a5e8fe2007b3e30340c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24011c50cf6f8d2204abdaa8b6119f7873470bcf
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72631979"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879050"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumenty wiersza polecenia dla Menedżera zawartości pomocy
 
@@ -50,7 +51,7 @@ W poniższej tabeli zdefiniowano przełączniki i argumenty, których można uż
 |------------|---------------|---------------|
 |/operation|Tak|-   **Zainstaluj**— dodaje książki z określonego źródła instalacji do magazynu zawartości lokalnej.<br />     Ten przełącznik wymaga argumentu/booklist, argumentu/sourceURI lub obu tych wartości. Jeśli nie określisz argumentu/sourceURI, domyślny identyfikator URI programu Visual Studio jest używany jako źródło instalacji. Jeśli nie określisz argumentu/booklist, zostaną zainstalowane wszystkie książki na/sourceUri.<br />-   **Odinstaluj**— usuwa książki określone przez użytkownika z lokalnego magazynu zawartości.<br />     Ten przełącznik wymaga argumentu/booklist lub argumentu/sourceURI.  Jeśli określisz argument/sourceURI, wszystkie książki zostaną usunięte, a argument/booklist zostanie zignorowany.<br />-   **Move**--przenosi magazyn lokalny do określonej ścieżki. Domyślna ścieżka do lokalnego magazynu jest ustawiana jako katalog w obszarze *% ProgramData%*<br />     Ten przełącznik wymaga argumentów/locationPath i/catalogName. Komunikaty o błędach będą rejestrowane w dzienniku zdarzeń w przypadku określenia ścieżki, która jest nieprawidłowa lub jeśli dysk nie zawiera wystarczającej ilości wolnego miejsca do przechowywania zawartości.<br />-   **Odśwież**--aktualizuje tematy, które uległy zmianie od czasu ich instalacji lub niedawno zaktualizowane.<br />     Ten przełącznik wymaga argumentu/sourceURI.|
 |/catalogName|Tak|Określa nazwę wykazu zawartości. W przypadku programu Visual Studio 2017 i Visual Studio 2019 jest to VisualStudio15.|
-|wymaganego/locale.|Nie|Określa ustawienia regionalne produktu, które są używane do wyświetlania zawartości i zarządzania nią dla bieżącego wystąpienia podglądu pomocy. Na przykład należy określić `EN-US` dla Stany Zjednoczone w języku angielskim.<br /><br /> Jeśli nie określisz ustawień regionalnych, zostanie użyta wartość ustawienia regionalne systemu operacyjnego. Jeśli nie można określić tego ustawienia regionalnego, `EN-US` jest ono używane.<br /><br /> W przypadku określenia ustawień regionalnych, które nie są prawidłowe, komunikat o błędzie jest rejestrowany w dzienniku zdarzeń.|
+|wymaganego/locale.|Nie|Określa ustawienia regionalne produktu, które są używane do wyświetlania zawartości i zarządzania nią dla bieżącego wystąpienia podglądu pomocy. Można na przykład określić `EN-US` English-United Stany.<br /><br /> Jeśli nie określisz ustawień regionalnych, zostanie użyta wartość ustawienia regionalne systemu operacyjnego. Jeśli nie można określić tego ustawienia regionalnego, `EN-US` jest ono używane.<br /><br /> W przypadku określenia ustawień regionalnych, które nie są prawidłowe, komunikat o błędzie jest rejestrowany w dzienniku zdarzeń.|
 |/e|Nie|Podniesienie poziomu Menedżera zawartości pomocy do uprawnień administracyjnych, jeśli bieżący użytkownik ma poświadczenia administracyjne.|
 |/sourceURI|Nie|Określa adres URL, z którego zainstalowano zawartość (interfejs API usługi) lub ścieżkę do pliku instalacyjnego zawartości (*. msha*). Adres URL może wskazywać na grupę produktów (węzeł najwyższego poziomu) lub do książek produktu (węzeł poziomu liścia) w punkcie końcowym stylu programu Visual Studio 2010. Nie musisz zawierać ukośnika (/) na końcu adresu URL. Jeśli dołączysz końcowy ukośnik, będzie on odpowiednio obsługiwany.<br /><br /> Komunikat o błędzie jest rejestrowany w dzienniku zdarzeń, jeśli określisz plik, który nie został znaleziony, jest nieprawidłowy lub niedostępny lub jeśli połączenie z Internetem nie jest dostępne lub jest przerywane w trakcie zarządzania zawartością.|
 |/vendor|Nie|Określa dostawcę zawartości produktu, który zostanie usunięty (na przykład `Microsoft` ). Domyślnym argumentem tego przełącznika jest Microsoft.|

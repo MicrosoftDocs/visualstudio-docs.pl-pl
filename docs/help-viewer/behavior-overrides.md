@@ -1,5 +1,6 @@
 ---
 title: Przesłonięcia Menedżera zawartości pomocy
+description: Dowiedz się więcej na temat zastąpień Menedżera zawartości pomocy, które umożliwiają zmianę domyślnego zachowania podglądu pomocy i funkcji związanych z pomocą w środowisku IDE programu Visual Studio.
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c03d631be1bc4a38e514e1019fa230775427a53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60f4e46d8c43c90759c964dbf01145d876a9f413
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825093"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879063"
 ---
 # <a name="help-content-manager-overrides"></a>Przesłonięcia Menedżera zawartości pomocy
 
@@ -31,7 +32,7 @@ Można zmienić domyślne zachowanie podglądu pomocy i funkcji związanych z po
 
 ### <a name="registry-key-values"></a>Wartości klucza rejestru
 
-|Wartość klucza rejestru|Typ|Dane|Opis|
+|Wartość klucza rejestru|Type|Dane|Opis|
 |------------------|----|----|-----------|
 |NewContentAndUpdateService|ciąg|\<http URL for service endpoint\>|Zdefiniuj unikatowy punkt końcowy usługi|
 |UseOnlineHelp|Ostatnie|`0` Aby określić pomoc lokalną, `1` Aby określić pomoc online|Zdefiniuj domyślną pomoc w trybie online lub offline|
@@ -58,8 +59,8 @@ Poniższe dwa zachowania można kontrolować przez ustawienie wartości klucza r
 
 |Zadanie|Klucz rejestru|Wartość|Dane|
 |----------|-----|------|----|
-|Zastąp priorytet zadania usługi BITS|HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node (na komputerze 64-bitowym) \Microsoft\Help\v2.3|BITSPriority|**pierwszy plan**, **wysoki**, **normalny**lub **niski**|
-|Wskaż lokalny magazyn zawartości w udziale sieciowym|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Help\ v 2.3 \ Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
+|Zastąp priorytet zadania usługi BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (na komputerze 64-bitowym) \Microsoft\Help\v2.3|BITSPriority|**pierwszy plan**, **wysoki**, **normalny**lub **niski**|
+|Wskaż lokalny magazyn zawartości w udziale sieciowym|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v 2.3 \ Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
 
 ## <a name="see-also"></a>Zobacz też
 

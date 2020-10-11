@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d70f1e95ce2dd5163eb017684620c403a77f74a
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: bfd019848e62abf4e6f25913d29d26d1a1bde6a5
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740035"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927903"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Kompiluj kod języka TypeScript (Node.js)
 
@@ -112,6 +112,10 @@ W przypadku projektów ASP.NET Core zaleca się używanie [pakietu NuGet](../jav
    Jeśli zostały wygenerowane mapy źródeł, Otwórz folder określony w opcji *outDir* , a następnie Znajdź wygenerowany \* plik js wraz z wygenerowanymi \* plikami js. map.
 
    Pliki mapy źródłowej są wymagane do [debugowania](../javascript/debug-nodejs.md).
+
+### <a name="run-the-application"></a>Uruchamianie aplikacji
+
+Aby uzyskać instrukcje dotyczące uruchamiania aplikacji po jej skompilowaniu, zobacz [Tworzenie pierwszej aplikacji Node.js](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application).
 
 ## <a name="automate-build-tasks"></a>Automatyzowanie zadań kompilacji
 

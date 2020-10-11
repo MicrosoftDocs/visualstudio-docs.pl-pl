@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c374951b4d4875e4e754035ac52afb7f8fc5a2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b75ae05a65ae15e82c45ec0cf43935fb0809160
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286899"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928609"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalowanie agentów testowych i kontrolerów testów
 
@@ -83,7 +83,7 @@ W poniższej tabeli przedstawiono scenariusze obsługiwane przez agentów dla Vi
 
 | Scenariusze obsługiwane przez agentów dla Visual Studio 2013 | Alternatywa w programie TFS i Azure Test Plans |
 | - | - |
-| Przepływ pracy Kompilacja-Wdrażanie-test w programie Visual Studio | Użytkownicy mogą korzystać z [potoku kompilacji](/azure/devops/pipelines/index?view=vsts) (nie kompilacja XAML) dla scenariuszy kompilowania, wdrażania i testowania w programie TFS. |
+| Przepływ pracy Kompilacja-Wdrażanie-test w programie Visual Studio | Użytkownicy mogą korzystać z [potoku kompilacji](/azure/devops/pipelines/index?view=vsts&preserve-view=true) (nie kompilacja XAML) dla scenariuszy kompilowania, wdrażania i testowania w programie TFS. |
 | Testowanie obciążenia (testowanie wydajności) przy użyciu lokalnych maszyn zdalnych | Użyj Test Controller i przetestuj Agents 2013 Update 5, aby uruchomić testy obciążenia lokalnie. |
 | Zdalne wykonywanie testów automatycznych z Microsoft Test Manager (przestarzałe w programie Visual Studio 2017) przy użyciu środowiska laboratoryjnego | Obecnie nie ma żadnych alternatyw dla tego scenariusza. Zalecamy używanie zadania Uruchom testy funkcjonalne w definicjach kompilacji i wydania (nie w kompilacji XAML) do zdalnego wykonywania testów. |
 | Deweloperzy wykonujący testy zdalne w programie Visual Studio | Nie jest już obsługiwane. |

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c01543b290d991a189c0851c64526c9c513068ba
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587085"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927981"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Korzystanie z okna wyników metryk kodu
 
@@ -82,9 +82,9 @@ Można wybrać i skopiować wybrany wiersz danych metryki kodu do Schowka jako c
 
 ## <a name="create-a-work-item-based-on-code-metric-results"></a>Utwórz element roboczy na podstawie wyników metryki kodu
 
-Można utworzyć [Azure Boards](/azure/devops/boards/index?view=vsts) element roboczy, który jest oparty na wynikach w oknie **wyników metryki kodu** . Gdy element roboczy zostanie utworzony, program Visual Studio automatycznie wprowadza tytuł w polu **tytuł** i dane metryk kodu na karcie **historia** .
+Można utworzyć [Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true) element roboczy, który jest oparty na wynikach w oknie **wyników metryki kodu** . Gdy element roboczy zostanie utworzony, program Visual Studio automatycznie wprowadza tytuł w polu **tytuł** i dane metryk kodu na karcie **historia** .
 
-Aby uzyskać więcej informacji na temat Azure Boards elementów roboczych, zobacz [elementy robocze](/azure/devops/boards/work-items/index?view=vsts).
+Aby uzyskać więcej informacji na temat Azure Boards elementów roboczych, zobacz [elementy robocze](/azure/devops/boards/work-items/index?view=vsts&preserve-view=true).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Aby utworzyć element roboczy na podstawie wyniku
 

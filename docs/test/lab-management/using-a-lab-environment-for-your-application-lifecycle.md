@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4c1cdbea77f8a14e8f4cedcd53b54e2eac65cf75
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1a5958b03b9797882b3df37f4ba99c75ff832d22
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037227"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928111"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Używanie środowiska laboratoryjnego do DevOps
 
@@ -45,7 +45,7 @@ Poniżej przedstawiono przykłady typowych topologii środowiska laboratoryjnego
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Korzystanie z chmury z Azure Pipelines lub Team Foundation Server kompilowania i wydawania
 
-Można przeprowadzać zautomatyzowane testowanie i automatyzację Kompilacja-Wdrażanie-test przy użyciu funkcji [kompilowania i](/azure/devops/pipelines/index?view=vsts) wydawania w Team Foundation Server (TFS) i Azure test Plans. Oto niektóre z korzyści:
+Można przeprowadzać zautomatyzowane testowanie i automatyzację Kompilacja-Wdrażanie-test przy użyciu funkcji [kompilowania i](/azure/devops/pipelines/index?view=vsts&preserve-view=true) wydawania w Team Foundation Server (TFS) i Azure test Plans. Oto niektóre z korzyści:
 
 * Kontroler kompilacji lub kontroler testów nie jest potrzebny.
 * Agent testowy jest instalowany za pomocą zadania w ramach kompilacji lub wydania.
@@ -94,7 +94,7 @@ Istnieją dwa typy środowisk laboratoryjnych, które można utworzyć za pomoc�
 > [!NOTE]
 > Lab Management nie obsługuje SCVMM 2016.
 
-Aby uzyskać informacje o programie SCVMM, zobacz [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts).
+Aby uzyskać informacje o programie SCVMM, zobacz [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts&preserve-view=true).
 
 Środowiska standardowe i środowiska SCVMM obsługują wiele z tych samych funkcji. Należy jednak wziąć pod uwagę pewne istotne różnice. Poniższa tabela zawiera porównanie funkcji dostępnych w środowiskach standardowych i środowiskach SCVMM.
 
@@ -144,7 +144,7 @@ Aby uzyskać informacje o konfigurowaniu środowisk, zobacz:
 * [Tworzenie środowiska izolowanego od sieci i korzystanie z niego](/previous-versions/ee518924(v=vs.140))
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Instalowanie i konfigurowanie agentów testowych](../../test/lab-management/install-configure-test-agents.md)
 * [Przewodnik Visual Studio Lab Management](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions)

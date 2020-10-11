@@ -7,18 +7,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 38e542fed0f26422a88644577ec864ef006855c5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8998a9e761716b28bd2815120e350b98804a6395
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038442"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928674"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *. runsettings*
 
 Testy jednostkowe w programie Visual Studio można skonfigurować przy użyciu pliku *. runsettings* . Na przykład można zmienić wersję platformy .NET, w której testy są uruchamiane, katalog dla wyników testu lub dane, które są zbierane podczas przebiegu testowego. Typowym zastosowaniem pliku *. runsettings* jest dostosowanie [analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md).
 
-Pliki parametrów uruchomieniowych mogą służyć do konfigurowania testów uruchamianych z [wiersza polecenia](vstest-console-options.md), z IDE lub w [przepływie pracy kompilacji](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) przy użyciu Azure test PLANS lub Team Foundation Server (TFS).
+Pliki parametrów uruchomieniowych mogą służyć do konfigurowania testów uruchamianych z [wiersza polecenia](vstest-console-options.md), z IDE lub w [przepływie pracy kompilacji](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true) przy użyciu Azure test PLANS lub Team Foundation Server (TFS).
 
 Pliki parametrów uruchomieniowych są opcjonalne. Jeśli nie jest wymagana żadna specjalna konfiguracja, nie jest potrzebny plik *. runsettings* .
 
@@ -35,7 +35,7 @@ Pliki parametrów uruchomieniowych są opcjonalne. Jeśli nie jest wymagana żad
 
    - [Visual Studio IDE](#specify-a-run-settings-file-in-the-ide)
    - [Wiersz polecenia](#specify-a-run-settings-file-from-the-command-line)
-   - [Kompilowanie przepływu pracy](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) przy użyciu Azure Test Plans lub Team Foundation Server (TFS).
+   - [Kompilowanie przepływu pracy](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true) przy użyciu Azure Test Plans lub Team Foundation Server (TFS).
 
 4. Uruchom testy jednostkowe, aby użyć niestandardowych ustawień uruchomieniowych.
 
@@ -83,20 +83,20 @@ Istnieją trzy sposoby określania pliku parametrów uruchomieniowych w programi
 Aby automatycznie wykryć plik parametrów uruchomieniowych, umieść go w katalogu głównym rozwiązania.
 
 Jeśli jest włączone Autowykrywanie plików uruchomieniowych, ustawienia w tym pliku są stosowane do wszystkich przebiegów testów. Funkcję automatycznego wykrywania plików runsettings można włączyć przy użyciu dwóch metod:
-  
+
 - Wybierz **Tools** > **Opcje** narzędzi > **test** > **autowykrywania runsettings plików**
 
    ![Automatycznie Wykryj opcję pliku runsettings w programie Visual Studio 2019](media/vs-2019/auto-detect-runsettings-tools-window.png)
-      
+
 - Wybierz kolejno pozycje **Testuj** > **Skonfiguruj Parametry uruchomieniowe** > **Autowykrywanie plików runsettings**
-    
+
    ![Autowykrywanie menu plik runsettings w programie Visual Studio 2019](media/vs-2019/auto-detect-runsettings-menu.png)
 
 #### <a name="manually-select-the-run-settings-file"></a>Ręcznie wybierz plik parametrów uruchomieniowych
 
 W środowisku IDE wybierz kolejno opcje **Testuj** > **Skonfiguruj Parametry uruchomieniowe** > **Wybierz pozycję plik Wide runsettings**, a następnie wybierz plik *. runsettings* .
 
-   - Ten plik przesłania plik *. runsettings* w katalogu głównym rozwiązania, jeśli istnieje, i jest stosowany do wszystkich przebiegów testów.  
+   - Ten plik przesłania plik *. runsettings* w katalogu głównym rozwiązania, jeśli istnieje, i jest stosowany do wszystkich przebiegów testów.
    - Ten wybór pliku będzie trwały tylko lokalnie.
 
 ![Wybieranie rozwiązania testowego — menu plik runsettings w programie Visual Studio 2019](media/vs-2019/select-solution-settings-file.png)
@@ -107,10 +107,10 @@ Dodaj właściwość Build do projektu za pomocą pliku projektu lub pliku Direc
 
 - Ustawienia uruchomieniowe na poziomie projektu są obecnie obsługiwane w projektach C#, VB, C++ i F #.
 - Plik określony dla projektu zastępuje wszystkie inne pliki parametrów uruchomieniowych określone w rozwiązaniu.
-- [Te właściwości programu MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md) mogą służyć do określania ścieżki do pliku runsettings. 
+- [Te właściwości programu MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md) mogą służyć do określania ścieżki do pliku runsettings.
 
 Przykład określenia pliku *. runsettings* dla projektu:
-    
+
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
@@ -177,7 +177,7 @@ Każdy element konfiguracji jest opcjonalny, ponieważ ma wartość domyślną.
 
 Element **RunConfiguration** może zawierać następujące elementy:
 
-|Węzeł|Domyślny|Wartości|
+|Węzeł|Domyślne|Wartości|
 |-|-|-|
 |**MaxCpuCount**|1|To ustawienie określa stopień równoległego wykonywania testów podczas uruchamiania testów jednostkowych przy użyciu dostępnych rdzeni na komputerze. Aparat wykonywania testu jest uruchamiany jako proces odrębny dla każdego dostępnego rdzenia i zapewnia każdy rdzeń kontenera z testami do uruchomienia. Kontener może być zestawem, biblioteką DLL lub odpowiednim artefaktem. Kontener testowy jest jednostką planowania. W każdym kontenerze testy są uruchamiane zgodnie z platformą testową. Jeśli istnieje wiele kontenerów, a następnie procesy ukończyą wykonywanie testów w kontenerze, otrzymają następny dostępny kontener.<br /><br />MaxCpuCount może:<br /><br />n, gdzie 1 <= n <= liczba rdzeni: uruchomiono do n procesów<br /><br />n, gdzie n = jakakolwiek inna wartość: liczba uruchomionych procesów może być równa liczbie dostępnych rdzeni. Na przykład ustaw n = 0, aby umożliwić platformie automatyczne decydowanie o optymalnej liczbie procesów do uruchomienia w oparciu o środowisko.|
 |**ResultsDirectory**||Katalog, w którym są umieszczane wyniki testów. Ścieżka jest określana względem katalogu, który zawiera plik. runsettings.|
@@ -186,7 +186,7 @@ Element **RunConfiguration** może zawierać następujące elementy:
 |**TreatTestAdapterErrorsAsWarnings**|fałsz|fałsz, prawda|
 |**TestAdaptersPaths**||Co najmniej jedna ścieżka do katalogu, w którym znajduje się TestAdapters|
 |**TestSessionTimeout**||Umożliwia użytkownikom zakończenie sesji testowej, gdy przekroczy określony limit czasu. Ustawienie limitu czasu zapewnia, że zasoby są dobrze zużywane, a sesje testowe są ograniczone do określonego czasu. To ustawienie jest dostępne w programie **Visual Studio 2017 w wersji 15,5** lub nowszej.|
-|**DotnetHostPath**||Określ ścieżkę niestandardową do hosta dotnet, który jest używany do uruchamiania testhost. Jest to przydatne podczas tworzenia własnego dotnet, na przykład podczas kompilowania repozytorium dotnet/Runtime. Określenie tej opcji spowoduje pominięcie wyszukiwania testhost.exe i zawsze będzie korzystać z testhost.dll. 
+|**DotnetHostPath**||Określ ścieżkę niestandardową do hosta dotnet, który jest używany do uruchamiania testhost. Jest to przydatne podczas tworzenia własnego dotnet, na przykład podczas kompilowania repozytorium dotnet/Runtime. Określenie tej opcji spowoduje pominięcie wyszukiwania testhost.exe i zawsze będzie korzystać z testhost.dll.
 
 ## <a name="datacollectors-element-diagnostic-data-adapters"></a>Elementy datacollects (adaptery danych diagnostycznych)
 
@@ -231,7 +231,7 @@ Aby dostosować każdy inny typ adapterów danych diagnostycznych, należy uży�
 
 ### <a name="blame-data-collector"></a>Moduł zbierający dane polecenia Blame
 
-Ta opcja może pomóc wyizolować problematyczny test, który powoduje awarię hosta testowego. Uruchomienie modułu zbierającego tworzy plik wyjściowy (*Sequence.xml*) w *TestResults*, który przechwytuje kolejność wykonywania testu przed awarią. 
+Ta opcja może pomóc wyizolować problematyczny test, który powoduje awarię hosta testowego. Uruchomienie modułu zbierającego tworzy plik wyjściowy (*Sequence.xml*) w *TestResults*, który przechwytuje kolejność wykonywania testu przed awarią.
 
 ```xml
 <DataCollector friendlyName="blame" enabled="True">
@@ -268,7 +268,7 @@ Aby użyć parametrów przebiegu testowego, Dodaj <xref:Microsoft.VisualStudio.T
 
 ```xml
 <LoggerRunSettings>
-    <Loggers>        
+    <Loggers>
       <Logger friendlyName="console" enabled="True">
         <Configuration>
             <Verbosity>quiet</Verbosity>
@@ -304,7 +304,7 @@ Te ustawienia są specyficzne dla adaptera testowego, który uruchamia metody te
 </MSTest>
 ```
 
-|Konfigurowanie|Domyślny|Wartości|
+|Konfiguracja|Domyślne|Wartości|
 |-|-|-|
 |**ForcedLegacyMode**|fałsz|W programie Visual Studio 2012 karta MSTest została zoptymalizowana tak, aby była szybsza i bardziej skalowalna. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość na **true** , aby użyć starszego adaptera testowego.<br /><br />Można na przykład użyć tego ustawienia, jeśli istnieje plik *app.config* określony dla testu jednostkowego.<br /><br />Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|
 |**IgnoreTestImpact**|fałsz|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w MSTest lub z Microsoft Test Manager (przestarzałe w programie Visual Studio 2017). To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz, [które testy należy uruchomić od poprzedniej kompilacji](/previous-versions/dd286589(v=vs.140)).|
@@ -392,10 +392,10 @@ Każdy element pliku jest opcjonalny, ponieważ ma wartość domyślną.
     <Parameter name="webAppUserName" value="Admin" />
     <Parameter name="webAppPassword" value="Password" />
   </TestRunParameters>
-  
+
   <!-- Configuration for loggers -->
   <LoggerRunSettings>
-    <Loggers>      
+    <Loggers>
       <Logger friendlyName="console" enabled="True">
         <Configuration>
             <Verbosity>quiet</Verbosity>
@@ -458,8 +458,8 @@ Węzeł **RunConfiguration** powinien zawierać węzeł **EnvironmentVariables**
 > [!NOTE]
 > Ponieważ te zmienne środowiskowe zawsze powinny być ustawiane podczas uruchamiania hosta testowego, testy powinny być zawsze uruchamiane w osobnym procesie. Dla tej flagi flaga */inisolation.* zostanie ustawiona, gdy istnieją zmienne środowiskowe, aby Host testowy był zawsze wywoływany.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Konfigurowanie przebiegu testowego](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)
-- [Zadanie testowe programu Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
+- [Zadanie testowe programu Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts&preserve-view=true)

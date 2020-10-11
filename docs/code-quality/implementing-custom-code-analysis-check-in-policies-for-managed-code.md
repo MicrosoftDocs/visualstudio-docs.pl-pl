@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b9eec66ec24c30b6e0df835d16805ea00eb08ac2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1404386445d24284a2231ed557a65568fdb1ba2b
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371771"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928020"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementowanie niestandardowych zasad zaewidencjonowania analizy kodu dla kodu zarządzanego
 
@@ -58,7 +58,7 @@ Aby utworzyć niestandardowy zestaw reguł dla projektu usługi Azure DevOps, na
 
 1. W **Eksploator kontroli źródła**kliknij prawym przyciskiem myszy nowy folder, a następnie kliknij polecenie **Dodaj elementy do folderu**.
 
-     Aby uzyskać więcej informacji, zobacz [git i Azure Repos](/azure/devops/repos/git/overview?view=vsts).
+     Aby uzyskać więcej informacji, zobacz [git i Azure Repos](/azure/devops/repos/git/overview?view=vsts&preserve-view=true).
 
 2. Kliknij utworzony plik zestawu reguł, a następnie kliknij przycisk **Zakończ**.
 

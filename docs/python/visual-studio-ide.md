@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 943c0567e3726d014f7dae01915916864e09ed9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d744e7495323c6e0ce565f33e2cfca95feb0a51
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801649"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928687"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Witamy w programie Visual Studio IDE | Python
 
@@ -38,7 +38,7 @@ Ten obraz przedstawia program Visual Studio z otwartym projektem języka Python 
 - W [oknie danych wyjściowych](../ide/reference/output-window.md) (u dołu) jest miejsce, gdzie program Visual Studio wysyła powiadomienia, takie jak debugowanie i komunikaty o błędach, ostrzeżenia, publikowanie komunikatów o stanie itd. Każde źródło wiadomości ma własną kartę.
   - [Okno interaktywnej REPL](python-interactive-repl-in-visual-studio.md) w języku Python pojawia się w tym samym obszarze co okno dane wyjściowe.
 
-- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (prawy dolny) umożliwia śledzenie elementów roboczych i udostępnianie kodu innym osobom korzystającym z technologii kontroli wersji, takich jak [git](https://git-scm.com/) i [Kontrola wersji serwera Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
+- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts&preserve-view=true) (prawy dolny) umożliwia śledzenie elementów roboczych i udostępnianie kodu innym osobom korzystającym z technologii kontroli wersji, takich jak [git](https://git-scm.com/) i [Kontrola wersji serwera Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true).
 
 ## <a name="editions"></a>Wersje
 

@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa73894d713ded42696f5e47d40dffb2d2405b1a
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74538575"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928085"
 ---
 # <a name="team-explorer-reference"></a>Dokumentacja wtyczki Team Explorer
 
@@ -26,7 +26,7 @@ Po [nawiązaniu połączenia z projektem](../connect-team-project.md) w **Team E
 - [Portal sieci Web](/azure/devops/project/navigation/index)
 - [Tablica zadań](/azure/devops/boards/sprints/task-board)
 
-Strona **główna** ma różne funkcje w zależności od tego, czy masz połączenie z repozytorium [git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio) czy [Kontrola wersji serwera Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview) .
+Strona **główna** ma różne funkcje w zależności od tego, czy masz połączenie z repozytorium [git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true) czy [Kontrola wersji serwera Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview) .
 
 > [!TIP]
 > Aby porównać dwa systemy kontroli wersji, zobacz [Wybieranie odpowiedniej kontroli wersji dla projektu (Azure DevOps)](/azure/devops/repos/tfvc/comparison-git-tfvc).

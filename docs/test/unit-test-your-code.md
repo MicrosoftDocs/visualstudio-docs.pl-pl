@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ffe383d2195feb6689954a8ec858b196bae8c06a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7833d320ecbaefbd2290d0a65ec4b32f802e403
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565997"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927955"
 ---
 # <a name="unit-test-your-code"></a>Testowanie jednostkowe kodu
 
@@ -47,8 +47,8 @@ Skorzystaj z poniższych artykułów, aby zrozumieć i utworzyć testy jednostko
 |**Test jednostkowy kodu C++**|- [Zapisz testy jednostkowe dla C/C++](../test/writing-unit-tests-for-c-cpp.md)|
 |**Izolowanie testów jednostkowych**|- [Izolowanie testowanego kodu za pomocą elementów sztucznych firmy Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**Użyj pokrycia kodu, aby określić, jaka część kodu projektu jest testowana:** Dowiedz się więcej o funkcji pokrycia kodu narzędzi testowych programu Visual Studio.|- [Użyj pokrycia kodu, aby określić, jaka część kodu jest testowana](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Wykonaj analizę obciążeniową i wydajnością, używając testów obciążeniowych:** Dowiedz się, jak tworzyć testy obciążeniowe, aby ułatwić odizolowanie problemów z wydajnością i obciążeniem w aplikacji.|- [Szybki Start: Tworzenie projektu testu obciążenia](../test/quickstart-create-a-load-test-project.md)<br />- [Testowanie obciążenia (Azure Test Plans i TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**Ustawianie bram jakości:** Dowiedz się, jak utworzyć bramy jakości, aby wymusić, że testy są uruchamiane przed zaewidencjonowaćm lub scaleniem kodu.|- [Zasady ewidencjonowania (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**Wykonaj analizę obciążeniową i wydajnością, używając testów obciążeniowych:** Dowiedz się, jak tworzyć testy obciążeniowe, aby ułatwić odizolowanie problemów z wydajnością i obciążeniem w aplikacji.|- [Szybki Start: Tworzenie projektu testu obciążenia](../test/quickstart-create-a-load-test-project.md)<br />- [Testowanie obciążenia (Azure Test Plans i TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
+|**Ustawianie bram jakości:** Dowiedz się, jak utworzyć bramy jakości, aby wymusić, że testy są uruchamiane przed zaewidencjonowaćm lub scaleniem kodu.|- [Zasady ewidencjonowania (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts&preserve-view=true)|
 |**Ustawianie opcji testowania:** Dowiedz się, jak skonfigurować opcje testu, na przykład, gdzie są przechowywane wyniki testów.|[Konfigurowanie testów jednostkowych przy użyciu pliku runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Dokumentacja referencyjna interfejsu API

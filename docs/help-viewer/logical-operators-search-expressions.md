@@ -1,5 +1,6 @@
 ---
 title: Operatory logiczne w wyrażeniach wyszukiwania (Podgląd pomocy)
+description: Dowiedz się, jak używać operatorów logicznych i operatorów wyszukiwania zaawansowanego do uściślenia wyrażeń wyszukiwania w Podgląd Pomocy firmy Microsoft.
 ms.custom: SEO-VS-2020
 ms.date: 11/02/2017
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9daceca2540a2da61a46e12a458c012ce7851001
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2bfa869bed2bc4462c050ac77e08665958f60598
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038637"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878933"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Operatory logiczne i zaawansowane w wyrażeniach wyszukiwania
 
@@ -67,7 +68,7 @@ Możesz użyć operatora, `code:` Aby znaleźć zawartość dla dowolnego z kilk
 > [!NOTE]
 > `code:`Operator odnajduje tylko zawartość, która jest oznaczona za pomocą etykiety języka programowania, w przeciwieństwie do zawartości, która jest ogólnie oznaczona jako kod.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: wyszukiwanie tematów](../help-viewer/find-topics.md)
 - [Podgląd Pomocy firmy Microsoft](../help-viewer/overview.md)

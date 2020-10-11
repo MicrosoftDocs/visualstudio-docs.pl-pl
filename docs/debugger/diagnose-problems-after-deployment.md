@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 659167b02703cd3a51751fbe90fbd9408b5e623d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 97499a88a04b2ae7b61b847c4aec133d297e613a
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599565"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928059"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnozowanie problemów po wdrożeniu za pomocą IntelliTrace (C#, Visual Basic)
 
@@ -49,7 +49,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
 #### <a name="team-foundation-server-2013"></a><a name="TFS2013"></a> Team Foundation Server 2013
  Skonfiguruj potok kompilacji, aby dodać lokalizacje źródła, kompilacji i symboli do manifestu kompilacji (plik BuildInfo.config). Team Foundation Build automatycznie tworzy ten plik i umieszcza go w folderze wyjściowym projektu.
 
-1. [Edytuj potok kompilacji lub Utwórz nowy potok kompilacji.](/azure/devops/pipelines/get-started-designer?view=vsts)
+1. [Edytuj potok kompilacji lub Utwórz nowy potok kompilacji.](/azure/devops/pipelines/get-started-designer?view=vsts&preserve-view=true)
 
      ![Wyświetlanie potoku kompilacji na serwerze TFS 2013](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
 
@@ -63,7 +63,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
 
      ![Konfigurowanie ścieżki symboli w potoku kompilacji TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
-     Aby uzyskać więcej informacji na temat symboli, zobacz temat [Publikowanie danych symboli](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts).
+     Aby uzyskać więcej informacji na temat symboli, zobacz temat [Publikowanie danych symboli](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts&preserve-view=true).
 
 4. Dodaj ten argument MSBuild, aby uwzględnić lokalizacje TFS i symboli w pliku manifestu kompilacji:
 
@@ -263,7 +263,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
 
 - **ProjectName**
 
-   Nazwa projektu w programie Visual Studio. Przykład:
+   Nazwa projektu w programie Visual Studio. Na przykład:
 
   ```xml
   <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
@@ -281,7 +281,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
 
     - **ProjectVersionSpec**: wersja projektu
 
-      Przykład:
+      Na przykład:
 
     ```xml
     <SourceControl type="TFS">
@@ -293,7 +293,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
     </SourceControl>
     ```
 
-  - **Narzędzia**
+  - **Git**
 
     - **GitSourceControl**: Lokalizacja schematu **GitSourceControl**
 
@@ -303,7 +303,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
 
     - **CommitId**: Identyfikator zatwierdzenia
 
-      Przykład:
+      Na przykład:
 
     ```xml
     <SourceControl type="Git">
@@ -319,7 +319,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
 
    Informacje o systemie kompilacji, `"TeamBuild"` lub `"MSBuild"` i te wymagane właściwości:
 
-  - **BuildLabel** (dla TeamBuild): Nazwa i numer kompilacji. Ta etykieta jest również używana jako nazwa zdarzenia wdrożenia. Aby uzyskać więcej informacji na temat numerów kompilacji, zobacz [Używanie numerów kompilacji do nadawania znaczących nazw do ukończonych kompilacji](/azure/devops/pipelines/build/options?view=vsts).
+  - **BuildLabel** (dla TeamBuild): Nazwa i numer kompilacji. Ta etykieta jest również używana jako nazwa zdarzenia wdrożenia. Aby uzyskać więcej informacji na temat numerów kompilacji, zobacz [Używanie numerów kompilacji do nadawania znaczących nazw do ukończonych kompilacji](/azure/devops/pipelines/build/options?view=vsts&preserve-view=true).
 
   - **SymbolPath —** (zalecane): Lista identyfikatorów URI dla lokalizacji symboli (pliku PDB) rozdzielonych średnikami. Te identyfikatory URI mogą być adresami URL lub UNCs. Ułatwia to programowi Visual Studio znalezienie pasujących symboli, które ułatwiają debugowanie.
 
@@ -329,7 +329,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
 
   - **BuiltSolution**: ścieżka do pliku rozwiązania używanego przez program Visual Studio do znajdowania i otwierania pasującego rozwiązania. Jest to zawartość właściwości programu MsBuild **SolutionPath** .
 
-    Przykład:
+    Na przykład:
 
   - **TFS**
 
@@ -345,7 +345,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
     </Build>
     ```
 
-  - **Narzędzia**
+  - **Git**
 
     ```xml
     <Build type="MSBuild">
@@ -379,7 +379,7 @@ Program Visual Studio 2017 i jego nowsze wersje nie zawierają pliku *BuildInfo.
      ![Otwórz z kontroli źródła &#45; zmigrowane](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 #### <a name="q-whats-a-workspace"></a><a name="WhatWorkspace"></a> P: co to jest obszar roboczy?
- Odp **.:** [Obszar roboczy przechowuje kopię źródła](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) , dzięki czemu można go opracowywać i testować oddzielnie przed zaewidencjonowaniem pracy. Jeśli nie masz jeszcze obszaru roboczego, który jest specjalnie zmapowany na znalezione rozwiązania lub projekt, program Visual Studio wyświetli monit, aby wybrać dostępny obszar roboczy lub utworzyć nowy obszar roboczy z nazwą komputera jako domyślną nazwą obszaru roboczego.
+ Odp **.:** [Obszar roboczy przechowuje kopię źródła](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts&preserve-view=true) , dzięki czemu można go opracowywać i testować oddzielnie przed zaewidencjonowaniem pracy. Jeśli nie masz jeszcze obszaru roboczego, który jest specjalnie zmapowany na znalezione rozwiązania lub projekt, program Visual Studio wyświetli monit, aby wybrać dostępny obszar roboczy lub utworzyć nowy obszar roboczy z nazwą komputera jako domyślną nazwą obszaru roboczego.
 
 #### <a name="q-why-do-i-get-this-message-about-untrusted-symbols"></a><a name="UntrustedSymbols"></a> P: Dlaczego otrzymuję komunikat dotyczący niezaufanych symboli?
  ![Debuguj przy użyciu ścieżki niezaufanych symboli?](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")

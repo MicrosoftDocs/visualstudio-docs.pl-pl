@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: be42bf1498746ce57f662f43c12ece80ac6ca9be
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 7b4c4dfdb8e603d7dda2ebd55c4382e57414de25
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509045"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928033"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps z aplikacjami Unity
 
@@ -26,7 +26,7 @@ W poniższych tabelach opisano, jak funkcje DevOps w programie Visual Studio maj
 
 ## <a name="agile-tools"></a>Narzędzia Agile
 
-Link odwołania: [Informacje o narzędziach Agile i zarządzaniu projektami Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (przy użyciu Azure Boards lub TFS, w tym Team Explorer Everywhere)
+Link odwołania: [Informacje o narzędziach Agile i zarządzaniu projektami Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true) (przy użyciu Azure Boards lub TFS, w tym Team Explorer Everywhere)
 
 Komentarz ogólny: wszystkie funkcje planowania i śledzenia są niezależne od typu projektu i języków kodowania.
 
@@ -59,8 +59,8 @@ Uwaga ogólna: Chociaż te funkcje projektowania są niezależne od języka kodo
 
 |Cecha|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
-|[Użyj Kontrola wersji serwera Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) lub Azure Repos|Tak|Projekty Unity to po prostu Kolekcja plików, które mogą być umieszczane w systemach kontroli wersji, takich jak każdy inny projekt, ale istnieje kilka specjalnych zagadnień opisanych poniżej tej tabeli.|
-|[Wprowadzenie do usługi Git w Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Tak|Zobacz uwagi po tabeli.|
+|[Użyj Kontrola wersji serwera Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) lub Azure Repos|Tak|Projekty Unity to po prostu Kolekcja plików, które mogą być umieszczane w systemach kontroli wersji, takich jak każdy inny projekt, ale istnieje kilka specjalnych zagadnień opisanych poniżej tej tabeli.|
+|[Wprowadzenie do usługi Git w Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true)|Tak|Zobacz uwagi po tabeli.|
 |[Podnoszenie jakości kodu](../test/improve-code-quality.md)|Tak||
 |[Znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md)|Tak||
 |[Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)|Tak||
@@ -75,12 +75,12 @@ Specjalne zagadnienia dotyczące kontroli wersji z użyciem aparatu Unity:
 
 ## <a name="build"></a>Kompilacja
 
-Link odwołania: ** [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
+Link odwołania: ** [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)**
 
 |Cecha|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
 |Team Foundation Server lokalnego (TFS)|Najmniejszy|Projekty Unity są kompilowane za pomocą środowiska Unity, a nie za pomocą systemu kompilacji programu Visual Studio (Kompilowanie w ramach Visual Studio Tools for Unity spowoduje skompilowanie skryptów, ale nie powoduje utworzenia pliku wykonywalnego). Można [tworzyć projekty Unity z poziomu wiersza polecenia](https://docs.unity3d.com/Manual/CommandLineArguments.html) (dokumentacja aparatu Unity), dzięki czemu można skonfigurować proces programu MSBuild na serwerze TFS do wykonywania odpowiednich poleceń aparatu Unity, pod warunkiem, że na tym komputerze jest zainstalowany sam aparat Unity.<br /><br /> Aparat Unity oferuje także [kompilację w chmurze środowiska Unity](https://build.cloud.unity3d.com/landing/), która monitoruje repozytorium Git lub SVN i uruchamia okresowe kompilacje. W tej chwili nie działa z TFVC lub Azure DevOps Services.|
-|Lokalny serwer kompilacji połączony z Azure DevOps Services|Najmniejszy|W oparciu o te same warunki, jak powyżej, możliwe jest dalsze kierowanie kompilacji wyzwalanych za pośrednictwem Azure DevOps Services do korzystania z lokalnego komputera TFS. Instrukcje można znaleźć w temacie [build and Release Agents](/azure/devops/pipelines/agents/agents?view=vsts) .|
+|Lokalny serwer kompilacji połączony z Azure DevOps Services|Najmniejszy|W oparciu o te same warunki, jak powyżej, możliwe jest dalsze kierowanie kompilacji wyzwalanych za pośrednictwem Azure DevOps Services do korzystania z lokalnego komputera TFS. Instrukcje można znaleźć w temacie [build and Release Agents](/azure/devops/pipelines/agents/agents?view=vsts&preserve-view=true) .|
 |Usługa hostowanego kontrolera Azure DevOps Services|Nie|Kompilacje aparatu Unity nie są obecnie obsługiwane.|
 |Kompiluj definicje ze skryptami wstępnymi i po skrypcie|Tak|Niestandardowa definicja kompilacji, która korzysta z wiersza polecenia Unity do uruchomienia kompilacji, może być również skonfigurowana dla skryptów pre-i po kompilacji.|
 |Ciągła integracja obejmująca ewidencjonowanie warunkowe|Tak|Ewidencjonowanie warunkowe dla TFVC tylko jako git działa w modelu żądania ściągnięcia, a nie w przypadku zaewidencjonowania.|
@@ -110,7 +110,7 @@ Link odwołania: ** [poprawianie jakości kodu](../test/improve-code-quality.md)
 
 ## <a name="release-management"></a>Release Management
 
-Link odwołania: [kompilacja i wydanie w Azure Pipelines i TFS](/azure/devops/pipelines/overview?view=vsts)
+Link odwołania: [kompilacja i wydanie w Azure Pipelines i TFS](/azure/devops/pipelines/overview?view=vsts&preserve-view=true)
 
 |Cecha|Obsługiwane w środowisku Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|

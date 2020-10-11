@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f186e8c10d894b98e789480046d43fc957edd8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d883d531737caf32ec202955ff951382b5ff9009
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566413"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928583"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Szybki start: Tworzenie projektu testu obciążeniowego
 
@@ -78,7 +78,7 @@ W tej sekcji utworzymy projekt testu obciążenia języka C#. Możesz również 
 
    Zostanie otwarty **nowy Kreator testu obciążeniowego** .
 
-1. Wybierz opcję **lokalny test obciążenia** , a następnie wybierz przycisk **dalej**. Więcej informacji na temat testowania obciążenia opartego na chmurze można znaleźć [tutaj](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+1. Wybierz opcję **lokalny test obciążenia** , a następnie wybierz przycisk **dalej**. Więcej informacji na temat testowania obciążenia opartego na chmurze można znaleźć [tutaj](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts&preserve-view=true).
 
    ![Kreator nowego testu obciążenia — Pierwsza Strona](media/load-test-wizard-page-1.png)
 

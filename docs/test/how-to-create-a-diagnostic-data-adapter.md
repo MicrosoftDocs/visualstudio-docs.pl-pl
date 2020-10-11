@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 43519a96e0718a0864065864d9dd4fbd2ac16b23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd5d4d14267be51dfea20c43630ff9f31f6d13ac
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288081"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928622"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Instrukcje: Tworzenie adaptera danych diagnostycznych
 
@@ -245,7 +245,7 @@ Aby zapoznać się z kompletnym przykładowym projektem adaptera danych diagnost
     >
     > Istnieją inne przykłady plików konfiguracji w następującej ścieżce w oparciu o katalog instalacyjny: *Program Files\Microsoft Visual Studio 10.0 \ Common7\IDE\PrivateAssemblies\DataCollectors*.
 
-     Aby uzyskać więcej informacji na temat sposobu konfigurowania ustawień testu do korzystania ze środowiska podczas uruchamiania testów, zobacz [zbieranie danych diagnostycznych w testach ręcznych (Azure test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
+     Aby uzyskać więcej informacji na temat sposobu konfigurowania ustawień testu do korzystania ze środowiska podczas uruchamiania testów, zobacz [zbieranie danych diagnostycznych w testach ręcznych (Azure test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true).
 
      Aby uzyskać więcej informacji na temat instalowania pliku konfiguracji, zobacz [How to: Install a Custom Diagnostic Data adapter](../test/quickstart-create-a-load-test-project.md)
 
@@ -253,7 +253,7 @@ Aby zapoznać się z kompletnym przykładowym projektem adaptera danych diagnost
 
 13. Informacje o instalowaniu edytora niestandardowego można znaleźć w temacie [How to: Install a Custom Diagnostic Data adapter](../test/quickstart-create-a-load-test-project.md).
 
-14. Aby uzyskać więcej informacji na temat sposobu konfigurowania ustawień testu do korzystania ze środowiska podczas uruchamiania testów, zobacz [zbieranie danych diagnostycznych w testach ręcznych (Azure test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
+14. Aby uzyskać więcej informacji na temat sposobu konfigurowania ustawień testu do korzystania ze środowiska podczas uruchamiania testów, zobacz [zbieranie danych diagnostycznych w testach ręcznych (Azure test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true).
 
 15. Aby wybrać adapter danych diagnostycznych, należy najpierw wybrać istniejące ustawienia testu lub utworzyć nowe z programu Visual Studio lub Microsoft Test Manager (przestarzałe w programie Visual Studio 2017). Karta jest wyświetlana na karcie **dane i Diagnostyka** ustawień testu z przyjazną nazwą, która została przypisana do klasy.
 
@@ -273,6 +273,6 @@ Aby zapoznać się z kompletnym przykładowym projektem adaptera danych diagnost
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
 - [Zbieranie informacji diagnostycznych za pomocą ustawień testu](../test/collect-diagnostic-information-using-test-settings.md)
-- [Zbieranie danych diagnostycznych w testach ręcznych (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
-- [Zbieraj dane diagnostyczne podczas testowania (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [Zbieranie danych diagnostycznych w testach ręcznych (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
+- [Zbieraj dane diagnostyczne podczas testowania (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
 - [Instrukcje: Tworzenie niestandardowego edytora dla danych dla adaptera danych diagnostycznych](../test/quickstart-create-a-load-test-project.md)

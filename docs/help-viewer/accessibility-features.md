@@ -1,5 +1,6 @@
 ---
 title: Ułatwienia dostępu w podglądzie pomocy
+description: Zapoznaj się z listą funkcji ułatwień dostępu w Podgląd Pomocy firmy Microsoft, obejmujących dostęp do klawiatury, rozmiar czcionki, rozmiar okna i pozycję Podgląd pomocy.
 ms.date: 11/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34a5a2f07d17c2ebd607bfe102cc7e3db92d014a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 359a1c4c87a139c35bf38d36edc6a53b2147dd98
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825132"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879076"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funkcje ułatwień dostępu w podglądzie pomocy
 Firma Microsoft dokłada wszelkich starań, aby jej produkty i usługi były coraz łatwiejsze w użytkowaniu. Ten temat zawiera informacje o funkcjach, produktach i usługach, które ułatwiają Podgląd Pomocy firmy Microsoft dostępne dla osób mających szeroką gamę możliwości.
