@@ -1,5 +1,7 @@
 ---
 title: Właściwości pliku, JavaScript
+description: Dowiedz się, jak można użyć właściwości pliku, aby określić akcje, które system projektu powinien wykonać na plikach.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.technology: vs-javascript
 ms.topic: reference
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efe1486cf8ac2b64965ed157abbb47dc2d8c7b6c
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926235"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947794"
 ---
 # <a name="file-properties-javascript"></a>Właściwości pliku, JavaScript
 

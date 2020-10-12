@@ -1,5 +1,7 @@
 ---
 title: Opcje, edytor tekstu, JavaScript, IntelliSense
+description: Dowiedz się, jak używać strony IntelliSense okna dialogowego Opcje, aby modyfikować ustawienia wpływające na zachowanie funkcji IntelliSense dla języka JavaScript.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.technology: vs-javascript
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41256882433bc95db7af380d27cc8dc63fbcd387
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68605982"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947729"
 ---
 # <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Opcje — okno dialogowe: Edytor tekstu \> JavaScript \> IntelliSense
 
@@ -38,7 +40,7 @@ Możesz użyć tych opcji do zmiany zachowania dokańczania instrukcji IntelliSe
 
 Po zaznaczeniu tego pola wyboru Edytor kodu JavaScript dołącza instrukcje do elementów wybranych na liście uzupełniania tylko po wybraniu **karty** lub klawisza **Enter** . Po usunięciu zaznaczenia tego pola wyboru inne znaki — takie jak kropka, przecinek, dwukropek, nawias otwierający i otwierające nawiasy klamrowe ({) — mogą również dołączać instrukcje do wybranych elementów.
 
-## <a name="references"></a>Dokumentacja
+## <a name="references"></a>Odwołania
 
 Można używać tych opcji, aby określać typy plików .js IntelliSense, które znajdują się w zakresie dla różnych typów projektów JavaScript. Odwołania IntelliSense są zazwyczaj używane do obsługi technologii IntelliSense dla obiektów globalnych. Można również użyć tej strony, aby ustawić kolejność ładowania skryptów, które muszą być ładowane w czasie wykonywania, oraz aby dodawać pliki rozszerzeń IntelliSense.
 

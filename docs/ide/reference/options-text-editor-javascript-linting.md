@@ -1,5 +1,7 @@
 ---
 title: Opcje, Edytor tekstu, JavaScript, Zaznaczanie błędów
+description: Dowiedz się, jak za pomocą strony Zaznaczanie błędów okna dialogowego Opcje ustawić opcje analizy kodu w edytorze kodu.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-javascript
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f56586843bd95585581f29fd44af16c1ef2c892f
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68605969"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947716"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Opcje — okno dialogowe: Edytor tekstu \> JavaScript/TypeScript \> Zaznaczanie błędów
 
