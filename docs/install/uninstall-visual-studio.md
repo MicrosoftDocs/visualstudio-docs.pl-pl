@@ -2,7 +2,7 @@
 title: Odinstalowywanie programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak odinstalować program Visual Studio, krok po kroku.
-ms.date: 05/06/2020
+ms.date: 10/12/2020
 ms.custom: seodec18
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9d1412d6e015ec7d05e700370c7a379ada9a57b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e924ead1b8796089242ef20c7f5a3070833b68ba
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419097"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007145"
 ---
 # <a name="uninstall-visual-studio"></a>Odinstalowywanie programu Visual Studio
 
@@ -70,11 +70,11 @@ Aby całkowicie usunąć wszystkie instalacje programu Visual Studio 2017 i Inst
 
 ::: moniker range="vs-2019"
 
-1. Znajdź Instalator programu Visual Studio na komputerze.
+1. Znajdź **Instalator programu Visual Studio** na komputerze.
 
-     Na przykład na komputerze z systemem Windows 10 Wybierz pozycję **Start**, a następnie przewiń do litery **V**, gdzie jest ona wyświetlana jako **Instalator programu Visual Studio**.
+     W menu Start systemu Windows można wyszukać "Instalator".
 
-     ![Otwórz Instalator programu Visual Studio](media/vs-2019/vs-installer-windows-start.png "Otwórz Instalator programu Visual Studio")
+     ![Instalator programu Visual Studio](media/vs-2019/visual-studio-installer.png "Wyszukaj Instalator programu Visual Studio")
 
      > [!NOTE]
      > Instalator programu Visual Studio można również znaleźć w następującej lokalizacji:

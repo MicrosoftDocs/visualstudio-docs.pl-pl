@@ -1,5 +1,5 @@
 ---
-title: Analizuj użycie pamięci bez debugowania | Microsoft Docs
+title: Analizowanie użycia pamięci w profilerze wydajności
 ms.custom: ''
 ms.date: 04/02/2020
 ms.topic: how-to
@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe336962a9d631a01438fdd4620fd27e2affc44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4e99652e343510962959830b327237ee018c8fa
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543354"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007204"
 ---
-# <a name="analyze-memory-usage-without-the-debugger"></a>Analizowanie użycia pamięci bez debugera
+# <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>Analizowanie użycia pamięci bez debugowania w profilerze wydajności
 
-Narzędzie **użycie pamięci** monitoruje użycie pamięci przez aplikację. Za pomocą tego narzędzia można analizować efekty związane z pamięcią w czasie rzeczywistym scenariuszy, które aktywnie opracowujesz w programie Visual Studio. Można utworzyć szczegółowe migawki Stanów pamięci aplikacji i porównać migawki w celu znalezienia głównych przyczyn problemów z pamięcią.
+Narzędzie **użycie pamięci** monitoruje użycie pamięci przez aplikację. Za pomocą tego narzędzia można analizować efekty związane z pamięcią w czasie rzeczywistym scenariuszy, które aktywnie opracowujesz w programie Visual Studio. Można utworzyć szczegółowe migawki Stanów pamięci aplikacji i porównać migawki w celu znalezienia głównych przyczyn problemów z pamięcią. Narzędzie użycie pamięci jest obsługiwane w aplikacjach w trybie .NET, ASP.NET, C++ lub mieszanym (.NET i Native).
 
-Narzędzie **użycie pamięci** można uruchomić [z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md). W tym artykule pokazano, jak używać narzędzia **użycie pamięci** bez debugera w **profilerze wydajności**programu Visual Studio.
+Narzędzie użycie pamięci można uruchomić [z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md). W tym artykule pokazano, jak używać narzędzia użycie pamięci bez debugera w **profilerze wydajności**programu Visual Studio.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Sesje diagnostyczne dotyczące użycia pamięci
 
@@ -32,7 +32,7 @@ Narzędzie **użycie pamięci** można uruchomić [z debugerem lub bez niego](..
 
 1. Otwórz projekt w programie Visual Studio.
 
-   Narzędzie użycie pamięci obsługuje aplikacje platformy .NET, ASP.NET, native lub Mixed (.NET i Native).
+   Narzędzie użycie pamięci obsługuje aplikacje platformy .NET, ASP.NET, C++ lub mieszane (.NET i Native).
 
 1. W menu Debuguj Ustaw konfigurację rozwiązania na **Zwolnij** i wybierz pozycję **lokalny debuger systemu Windows** (lub **komputer lokalny**) jako cel wdrożenia.
 
@@ -76,7 +76,7 @@ Liczby to linki, które otwierają szczegółowe widoki raportów **użycia pami
 
   ![Linki widoku migawek](../profiling/media/memuse__snapshotview_numbered.png "Linki widoku migawek")
 
-|Obraz|Opis|
+|Image (Obraz)|Opis|
 |-|-|
 |![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Całkowita liczba bajtów w pamięci podczas tworzenia migawki.<br /><br /> Wybierz ten link, aby wyświetlić raport szczegółów migawek posortowany według łącznego rozmiaru wystąpień typu.|
 |![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|Całkowita liczba obiektów w pamięci podczas tworzenia migawki.<br /><br /> Wybierz ten link, aby wyświetlić raport szczegółów migawek posortowany według liczby wystąpień typów.|
@@ -133,7 +133,7 @@ Oba linki otwierają ten sam raport. Jedyną różnicą jest początkowa kolejno
 |Nazwa|Opis|
 |-|-|
 |**Typ obiektu**|Nazwa typu lub wystąpienia obiektu.|
-|**Liczbą**|Liczba wystąpień obiektów typu. **Liczba**  jest zawsze 1 dla wystąpienia.|
+|**Licznik**|Liczba wystąpień obiektów typu. **Liczba**  jest zawsze 1 dla wystąpienia.|
 |**Rozmiar (w bajtach)**|Dla typu, rozmiar wszystkich wystąpień typu w migawce, mniejszy rozmiar obiektów zawartych w wystąpieniach.<br /><br /> Dla wystąpienia, rozmiar obiektu, mniejszy od rozmiaru obiektów zawartych w wystąpieniu. |
 |**Rozmiar włącznie (w bajtach)**|Rozmiar wystąpień typu lub rozmiar pojedynczego wystąpienia, łącznie z rozmiarem zawartych obiektów.|
 |**Moduł**|Moduł, który zawiera obiekt.|
@@ -179,7 +179,7 @@ Oba linki otwierają ten sam raport. Jedyną różnicą jest początkowa kolejno
 |Nazwa|Opis|
 |-|-|
 |**Typ obiektu**|Nazwa typu lub wystąpienia obiektu.|
-|**Liczbą**|Liczba wystąpień typu w podstawowej migawce. **Liczba** jest zawsze 1 dla wystąpienia.|
+|**Licznik**|Liczba wystąpień typu w podstawowej migawce. **Liczba** jest zawsze 1 dla wystąpienia.|
 |**Różnica w liczbie**|Dla typu, różnica w liczbie wystąpień typu między migawką podstawową i poprzednią migawką. Pole jest puste dla wystąpienia.|
 |**Rozmiar (w bajtach)**|Rozmiar obiektów w podstawowej migawce, mniejszej niż rozmiar obiektów w obiektach. Dla typu, **rozmiar (w bajtach)** i **rozmiar włącznie (w bajtach)** są sumami rozmiarów wystąpień typu.|
 |**Różnica w łącznym rozmiarze (w bajtach)**|Dla typu, różnica w łącznym rozmiarze wystąpień typu między migawką podstawową i poprzednią, mniejszą od rozmiaru obiektów w wystąpieniach. Pole jest puste dla wystąpienia.|

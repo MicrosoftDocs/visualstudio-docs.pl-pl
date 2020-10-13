@@ -1,5 +1,6 @@
 ---
 title: Uruchamianie narzędzi profilowania z debugerem lub bez niego | Microsoft Docs
+description: Dowiedz się więcej o różnicach między różnymi trybami dostępnymi dla narzędzi profilowania
 ms.date: 5/26/2020
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7db7e704eab7f5d00b20051811c503b143608e2f
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 13fd616e9ec596bfcdeb3718a62dc1a3a1bc8137
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074959"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007165"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 
@@ -29,7 +30,7 @@ Aby pomóc w wyborze narzędzi i wyników do użycia, należy wziąć pod uwagę
 - Narzędzie zintegrowane z debugerem a narzędziem niebędącym debugerem
   - Zewnętrzne problemy z wydajnością, takie jak pliki we/wy lub problemy z odpowiedzią w sieci, nie wyglądają inaczej w debugerze lub narzędziach innych niż debuger.
   - Debuger zmienia czasy wydajności, ponieważ wymaga operacji debugera, takich jak przechwycenie zdarzeń ładowania wyjątków i modułów.
-  - Numery wydajności kompilacji wersji w narzędziach profilera wydajności są najbardziej precyzyjne i dokładne. Narzędzia zintegrowane z debugerem są najbardziej przydatne do porównywania z innymi pomiarami związanymi z debugowaniem lub do korzystania z funkcji debugera.
+  - Numery wydajności kompilacji wydania w profilerze wydajności są najbardziej precyzyjne i dokładne. Narzędzia zintegrowane z debugerem są najbardziej przydatne do porównywania z innymi pomiarami związanymi z debugowaniem lub do korzystania z funkcji debugera.
 - Debugowanie a kompilacja wydania
   - W przypadku problemów spowodowanych przez wywołania intensywnie korzystające z procesora CPU mogą występować znaczne różnice wydajności między kompilacjami wydań i debugowania. Sprawdź, czy problem występuje w kompilacjach wydania.
   - Jeśli problem występuje tylko podczas kompilacji debugowania, prawdopodobnie nie trzeba uruchamiać narzędzi niebędących debugerem. W przypadku problemów z kompilacją wersji należy zdecydować, czy funkcje zapewniane przez narzędzia zintegrowane z debugerem pomogą zidentyfikować problem.
@@ -98,7 +99,7 @@ Aby uzyskać więcej informacji, zobacz:
 
 - [Analizowanie użycia procesora CPU](../profiling/cpu-usage.md)
 - [Analizowanie użycia pamięci dla kodu platformy .NET](../profiling/dotnet-alloc-tool.md)
-- [Analizowanie użycia pamięci](../profiling/analyze-memory-usage.md)
+- [Analizowanie użycia pamięci](../profiling/memory-usage-without-debugging2.md)
 - [Analizowanie wydajności kodu asynchronicznego .NET](../profiling/analyze-async.md)
 - [Analizowanie wydajności bazy danych](../profiling/analyze-database.md)
 - [Analizowanie użycia procesora GPU](../profiling/gpu-usage.md)

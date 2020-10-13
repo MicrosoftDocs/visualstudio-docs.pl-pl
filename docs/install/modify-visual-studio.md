@@ -2,8 +2,9 @@
 title: Modyfikowanie programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak modyfikować program Visual Studio, krok po kroku.
-ms.date: 02/10/2019
+ms.date: 10/12/2020
 ms.topic: how-to
+ms.custom: contperfq1
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -17,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 75a9d9d95cf2aed0defb9f52179188c64f4de912
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: d4593ed516e308a5e55a93f83fd5345028dc95dc
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862281"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007139"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modyfikowanie programu Visual Studio przez dodawanie lub usuwanie obciążeń i składników
 
@@ -74,11 +75,11 @@ Oto jak to zrobić.
 
 ::: moniker range="vs-2019"
 
-1. Znajdź Instalator programu Visual Studio na komputerze.
+1. Znajdź **Instalator programu Visual Studio** na komputerze.
 
-     Na przykład na komputerze z systemem Windows 10 Wybierz pozycję **Start**, a następnie przewiń do litery **V**, gdzie jest ona wyświetlana jako **Instalator programu Visual Studio**.
+     W menu Start systemu Windows można wyszukać "Instalator".
 
-     ![Otwórz Instalator programu Visual Studio z systemu Windows](media/vs-2019/vs-installer-windows-start.png "Otwórz Instalator programu Visual Studio")
+     ![Instalator programu Visual Studio](media/vs-2019/visual-studio-installer.png "Wyszukaj Instalator programu Visual Studio")
 
      > [!NOTE]
      > Instalator programu Visual Studio można również znaleźć w następującej lokalizacji:
@@ -89,7 +90,7 @@ Oto jak to zrobić.
 
 1. W instalatorze zapoznaj się z zainstalowaną wersją programu Visual Studio, a następnie wybierz **Modyfikuj**.
 
-     ![Aktualizowanie lub modyfikowanie programu Visual Studio](media/vs-2019/vs-installer-modify.png "Aktualizowanie lub modyfikowanie programu Visual Studio 2019")
+     ![Wybierz program Visual Studio Edition, a następnie zmodyfikuj](media/vs-2019/vs-installer-modify.png "Wybierz wersję programu Visual Studio 2019, a następnie zmodyfikuj")
 
      > [!IMPORTANT]
      > Jeśli masz oczekujące aktualizacje, przycisk Modyfikuj znajduje się w innym miejscu. W ten sposób można zmodyfikować program Visual Studio bez aktualizowania go, jeśli chcesz. Wybierz pozycję **więcej**, a następnie wybierz polecenie **Modyfikuj**.

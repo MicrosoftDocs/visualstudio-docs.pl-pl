@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 511874b5dc7d7c45a1584e95e004a53088f8ea09
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: cb9de05b7e57e4ebc4e7ea76c688a7203774404a
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91861808"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007183"
 ---
 # <a name="first-look-at-profiling-tools"></a>Pierwsze spojrzenie na narzędzia profilowania
 
@@ -107,9 +107,9 @@ Kliknij dwukrotnie odpowiednią funkcję, a zobaczysz bardziej szczegółowy wid
 
 ## <a name="analyze-memory-usage"></a>Analizowanie użycia pamięci
 
-Okno **Narzędzia diagnostyczne** umożliwia również ocenę użycia pamięci w aplikacji za pomocą narzędzia **użycie pamięci** . Na przykład można przyjrzeć się liczbie i rozmiarze obiektów na stercie. [Narzędzie użycie pamięci zintegrowanej debugera](../profiling/memory-usage.md) lub narzędzie użycie pamięci można użyć w [profilerze wydajności](#post_mortem). Inne narzędzie do analizy pamięci, [Narzędzie alokacji obiektów platformy .NET](../profiling/dotnet-alloc-tool.md), pomaga identyfikować wzorce i anomalie alokacji w kodzie .NET.
+Okno **Narzędzia diagnostyczne** umożliwia również ocenę użycia pamięci w aplikacji za pomocą narzędzia **użycie pamięci** . Na przykład można przyjrzeć się liczbie i rozmiarze obiektów na stercie. [Narzędzie użycie pamięci zintegrowanej debugera](../profiling/memory-usage.md) lub [Narzędzie użycie](../profiling/memory-usage-without-debugging2.md) pamięci można użyć w profilerze wydajności. Inne narzędzie do analizy pamięci, [Narzędzie alokacji obiektów platformy .NET](../profiling/dotnet-alloc-tool.md), pomaga identyfikować wzorce i anomalie alokacji w kodzie .NET.
 
-Aby analizować użycie pamięci, należy wykonać co najmniej jedną migawkę pamięci. Często najlepszym sposobem analizowania pamięci jest wykonanie dwóch migawek: pierwszy z prawej strony przed problemem z pamięcią, a druga migawka jest bezpośrednio po wystąpieniu podejrzanej pamięci. Następnie można wyświetlić różnice między dwiema migawkami i zobaczyć dokładnie te zmiany. Na poniższej ilustracji przedstawiono tworzenie migawek przy użyciu narzędzia zintegrowanego z debugerem.
+Aby analizować użycie pamięci za pomocą narzędzia **użycie pamięci** , należy wykonać co najmniej jedną migawkę pamięci. Często najlepszym sposobem analizowania pamięci jest wykonanie dwóch migawek: pierwszy z prawej strony przed problemem z pamięcią, a druga migawka jest bezpośrednio po wystąpieniu podejrzanej pamięci. Następnie można wyświetlić różnice między dwiema migawkami i zobaczyć dokładnie te zmiany. Na poniższej ilustracji przedstawiono tworzenie migawek przy użyciu narzędzia zintegrowanego z debugerem.
 
 ![Zrób migawkę w narzędzia diagnostyczne](../profiling/media/prof-tour-take-snapshots.gif "narzędzia diagnostyczne wykonaj migawki")
 

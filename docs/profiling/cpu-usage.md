@@ -1,6 +1,5 @@
 ---
-title: Analizowanie użycia procesora | Microsoft Docs
-ms.custom: seodec18
+title: Analizowanie użycia procesora CPU w profilerze wydajności
 ms.date: 04/02/2020
 ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
@@ -9,24 +8,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 706ffa8d17974894403c22a559edad4c2e4b4ef8
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543393"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007103"
 ---
-# <a name="analyze-cpu-usage"></a>Analizowanie użycia procesora CPU
+# <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>Analizowanie użycia procesora bez debugowania w profilerze wydajności
 
 Dobrym sposobem na rozpoczęcie badania problemów z wydajnością w aplikacji jest zrozumienie użycia procesora CPU. Narzędzie wydajności **użycie procesora CPU** przedstawia czas procesora i procent poświęcany na wykonywanie kodu w języku C++, C#/Visual Basic i JavaScript.
 
-Narzędzie **użycie procesora CPU** można uruchomić w otwartym projekcie programu Visual Studio, w zainstalowanej aplikacji Microsoft Store lub dołączone do uruchomionej aplikacji lub procesu. Aby uzyskać więcej informacji, zobacz [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Narzędzie użycie procesora CPU można uruchomić w otwartym projekcie programu Visual Studio, w zainstalowanej aplikacji Microsoft Store lub dołączone do uruchomionej aplikacji lub procesu. Możesz uruchomić narzędzie użycie procesora CPU z debugowaniem lub bez niego. Aby uzyskać więcej informacji, zobacz [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-Możesz uruchomić narzędzie **użycie procesora CPU** z debugowaniem lub bez niego. W debugerze można włączać i wyłączać profilowanie procesora CPU oraz wyświetlać podział na funkcję użycia procesora CPU. Można wyświetlić wyniki użycia procesora CPU po wstrzymaniu wykonywania, na przykład w punkcie przerwania.
+W poniższych instrukcjach pokazano, jak używać narzędzia użycie procesora CPU bez debugera przy użyciu profilera wydajności programu Visual Studio. Przykłady wykorzystują kompilację wydania na komputerze lokalnym. Kompilacje wydań zapewniają najlepszy widok rzeczywistej wydajności aplikacji. Aby analizować użycie procesora z kompilacjami debugowania (dołączonym debugerem), zobacz [Przewodnik po systemie początkującym do profilowania wydajności](../profiling/beginners-guide-to-performance-profiling.md).
 
-W poniższych instrukcjach pokazano, jak używać narzędzia **użycie procesora CPU** bez debugera przy użyciu **profilera wydajności**programu Visual Studio. Przykłady wykorzystują kompilację wydania na komputerze lokalnym. Kompilacje wydań zapewniają najlepszy widok rzeczywistej wydajności aplikacji. Aby analizować użycie procesora przy użyciu kompilacji debugowania, zapoznaj [się z przewodnikiem dla początkujących do profilowania wydajności](../profiling/beginners-guide-to-performance-profiling.md).
-
-Zazwyczaj komputer lokalny najlepiej replikuje zainstalowaną realizację aplikacji. W przypadku aplikacji Windows Phone zbieranie danych bezpośrednio z urządzenia zapewnia najbardziej dokładne dane. Aby zebrać dane z urządzenia zdalnego, uruchom aplikację bezpośrednio na urządzeniu, a nie na Podłączanie pulpitu zdalnego.
+Zazwyczaj komputer lokalny najlepiej replikuje zainstalowaną realizację aplikacji. Aby zebrać dane z urządzenia zdalnego, uruchom aplikację bezpośrednio na urządzeniu, a nie na Podłączanie pulpitu zdalnego.
 
 >[!NOTE]
 >Do korzystania z [profilera wydajności](../profiling/profiling-feature-tour.md)jest wymagany system Windows 7 lub nowszy.
@@ -80,7 +77,7 @@ Aby wyświetlić drzewo wywołań, wybierz węzeł nadrzędny w raporcie. Na str
 ![Struktura drzewa wywołań](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Struktura drzewa wywołań")
 ::: moniker-end
 
-|Obraz|Opis|
+|Image (Obraz)|Opis|
 |-|-|
 |![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Węzeł najwyższego poziomu w drzewach wywołań użycia procesora CPU jest pseudo-węzłowym.|
 |![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|W większości aplikacji, gdy opcja **Pokaż zewnętrzny kod** jest wyłączona, węzeł drugiego poziomu jest węzłem **[kod zewnętrzny]** . Węzeł zawiera kod systemu i struktury, który rozpoczyna i kończy działanie aplikacji, rysuje interfejs użytkownika, kontroluje harmonogram wątków i udostępnia inne usługi niskiego poziomu aplikacji.|
