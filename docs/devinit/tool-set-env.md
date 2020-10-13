@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 19f635f0d22eacd64726368af89bbf5b7c4c9a11
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 7bb545a8e8713159d6833f0ed8d8c2b8784095e1
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862845"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959767"
 ---
 # <a name="set-env"></a>set-env
 
 `set-env`Narzędzie może służyć do ustawiania zmiennych środowiskowych do użycia w bieżącym procesie. Zmienne środowiskowe są ustawiane tylko w bieżącym procesie i będą używane przez inne `devinit` Narzędzia, jeśli są uruchamiane w ramach tego procesu.
 
-To narzędzie korzysta z interfejsu API programu .NET Core `Environment.SetEnvironment` i ma takie same ograniczenia, jak ten interfejs API. Aby uzyskać więcej informacji, zapoznaj się z [dokumentacją](/dotnet/api/system.environment.setenvironmentvariable?preserve-view=true&view=netcore-3.1) `Environment.SetEnvironment` .
+To narzędzie korzysta z interfejsu API programu .NET Core `Environment.SetEnvironment` i ma takie same ograniczenia, jak ten interfejs API. Aby uzyskać więcej informacji, zapoznaj się z [dokumentacją](/dotnet/api/system.environment.setenvironmentvariable?view=netcore-3.1&preserve-view=true) `Environment.SetEnvironment` .
 
 ## <a name="usage"></a>Użycie
 

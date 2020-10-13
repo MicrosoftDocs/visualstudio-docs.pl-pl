@@ -11,12 +11,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d1b51661d9fc9a5492d123bdacd6c49d241ed87
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585603"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959778"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 
@@ -272,7 +272,7 @@ Można wykonać większą kontrolę nad tym, które zestawy i elementy są wybra
 
 ## <a name="analyze-code-coverage-in-azure-pipelines"></a>Analizowanie pokrycia kodu w Azure Pipelines
 
-Podczas ewidencjonowania kodu testy są uruchamiane na serwerze kompilacji wraz z testami z innych członków zespołu. Warto analizować pokrycie kodu w Azure Pipelines, aby uzyskać najbardziej aktualne i kompleksowe zdjęcie pokrycia w całym projekcie. Zawiera również zautomatyzowane testy systemowe i inne kodowane testy, które zwykle nie są uruchamiane na maszynach deweloperskich. Aby uzyskać więcej informacji, zobacz [Uruchamianie testów jednostkowych wraz z kompilacjami](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts).
+Podczas ewidencjonowania kodu testy są uruchamiane na serwerze kompilacji wraz z testami z innych członków zespołu. Warto analizować pokrycie kodu w Azure Pipelines, aby uzyskać najbardziej aktualne i kompleksowe zdjęcie pokrycia w całym projekcie. Zawiera również zautomatyzowane testy systemowe i inne kodowane testy, które zwykle nie są uruchamiane na maszynach deweloperskich. Aby uzyskać więcej informacji, zobacz [Uruchamianie testów jednostkowych wraz z kompilacjami](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true).
 
 ## <a name="analyze-code-coverage-from-the-command-line"></a>Analizowanie pokrycia kodu z wiersza polecenia
 

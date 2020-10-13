@@ -11,16 +11,16 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 22029dc101cd73fee3933c5c63587f2f7222e640
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 3f9fbec93d9c27ae7bdcb6ea44f59debb2a03a14
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860847"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959814"
 ---
 # <a name="require-azurecli"></a>require-azurecli
 
-`require-azurecli`Narzędzie służy do instalowania [interfejsu wiersza polecenia platformy Azure](/cli/azure/?preserve-view=true&view=azure-cli-latest) za pomocą interfejsu wiersza polecenia platformy Azure.
+`require-azurecli`Narzędzie służy do instalowania [interfejsu wiersza polecenia platformy Azure](/cli/azure/?view=azure-cli-latest&preserve-view=true) za pomocą interfejsu wiersza polecenia platformy Azure.
 
 ## <a name="usage"></a>Użycie
 

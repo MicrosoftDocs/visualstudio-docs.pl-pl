@@ -1,6 +1,7 @@
 ---
 title: Korzystanie z listy zadań
-ms.date: 11/04/2016
+description: Dowiedz się, w jaki sposób Lista zadań w programie Visual Studio może pomóc w wydajniejszym śledzeniu i używaniu komentarzy do kodu.
+ms.date: 10/12/2020
 ms.topic: how-to
 f1_keywords:
 - TaskListWindow
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3e1c43e9813bce664a63f3675b0fed6e14e3c7
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 8d19794b4fce3e4a1388f864cecf408e0f7e9c53
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780998"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959805"
 ---
 # <a name="use-the-task-list"></a>Korzystanie z listy zadań
 
@@ -64,12 +65,12 @@ Komentarz w kodzie poprzedzony znacznikiem komentarza i wstępnie zdefiniowany t
 
 Ponieważ `TODO` jest wstępnie zdefiniowanym tokenem, ten komentarz jest wyświetlany jako `TODO` zadanie na liście.
 
-> [!NOTE]
-> Tokeny domyślne są dostępne tylko dla języków C/C++, C# i VB.
-
 ### <a name="custom-tokens"></a>Tokeny niestandardowe
 
 Domyślnie program Visual Studio zawiera następujące tokeny: `HACK` , `TODO` , `UNDONE` i `UnresolvedMergeConflict` . Wielkość liter nie jest w nich uwzględniana. Można również utworzyć własne niestandardowe tokeny.
+
+> [!NOTE]
+> Tokeny domyślne są dostępne tylko dla języków C/C++, C# i VB. Aby utworzyć własne tokeny dla innych języków programowania, wykonaj następujące czynności.
 
 Aby utworzyć token niestandardowy:
 
