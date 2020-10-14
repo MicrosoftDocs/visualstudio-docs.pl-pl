@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a22e0f5a20050e62aa9978c40f2189c82ca3071c
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 56a2da4e02f890e199a6ff69b5a61882d1dfa416
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352328"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039799"
 ---
 # <a name="devinit-commands"></a>polecenia devinit
 
@@ -34,10 +34,38 @@ Opcjonalne opcje dla `devinit init` polecenia.
 
 | Argument             | Wymagane | Opis                                                               |
 |----------------------|----------|---------------------------------------------------------------------------|
-| -plik,--           | Nie       | Ścieżka do _.devinit.js_ pliku.                                         |
+| -plik,--            | Nie       | Ścieżka do _.devinit.js_ pliku.                                         |
 | --błąd-akcja       | Nie       | Określa, jak obsługiwać błędy. Opcje: Stop, IGNORE, Continue (domyślnie).|
 | -v,--verbose         | Nie       | Emituj pełne dane wyjściowe.                                                      |
 | -n,--w trakcie działania suchego         | Nie       | Uruchomienie suche.                                                                  |
+
+#### <a name="--file-argument"></a>--argument pliku
+
+Określa ścieżkę do _devinit.js_ pliku. Jeśli nie określono parametru--File, szukamy pliku domyślnego w następujących lokalizacjach:
+
+* {Current-Directory} \\.devinit.jsna
+* {Current-Directory} \\devinit.jsna
+* {Current-Directory} \\ . devinit \\.devinit.jsna
+* {Current-Directory} \\ . devinit \\devinit.jsna
+* {Current-Directory} \\ devinit \\.devinit.jsna
+* {Current-Directory} \\ devinit \\devinit.jsna
+* {Current-Directory} \\ . devcontainer \\.devinit.jsna
+* {Current-Directory} \\ . devcontainer \\devinit.jsna
+
+> [!NOTE]
+> Jeśli zostanie znalezionych wiele plików domyślnych, devinit użyje pliku, który jest wyświetlany w pierwszej kolejności na powyższej liście.
+
+#### <a name="--error-action-argument"></a>--Error-Action — argument
+
+Zobacz [poniżej](#options-for-run).
+
+#### <a name="--verbose-switch"></a>--pełny przełącznik
+
+Zobacz [poniżej](#options-for-run).
+
+#### <a name="--dry-run-switch"></a>--Przełącznik suchy
+
+Zobacz [poniżej](#options-for-run).
 
 ## <a name="run"></a>Uruchom
 
@@ -51,23 +79,14 @@ Uruchamia określone narzędzie, parametry są wymienione poniżej. Zapoznaj si�
 
 Opcje `devinit run` polecenia.
 
-| Argument                                  | Wymagane | Opis                                                                          |
-|-------------------------------------------|----------|--------------------------------------------------------------------------------------|
-| -t,--narzędzie                                 | Tak      | Wymagany. Nazwa narzędzia.                                                             |
-| -i,--dane wejściowe                                | Nie       | Wartość wejściowa narzędzia. Na przykład nazwa pliku, pakietu lub nazwy.                           |
-| --błąd-akcja                            | Nie       | Określa sposób obsługi błędów narzędzia: Stop, Ignoruj, Kontynuuj. Wartość domyślna to Zatrzymaj. |
-| -v,--verbose                              | Nie       | Emituj pełne dane wyjściowe.                                                                 |
-| -n,--w trakcie działania suchego                              | Nie       | Uruchomienie suche.                                                                             |
-| --&lt;arg1 &gt; &lt; arg2 &gt; &lt; argN&gt;  | Nie       | Dodatkowe argumenty wiersza polecenia do narzędzia.                                       |
-
-#### <a name="--file-argument"></a>--argument pliku
-
-Określa ścieżkę do _devinit.jspliku. Jeśli plik nie zostanie określony, szukamy pliku domyślnego w następujących lokalizacjach:
-
-* {Current-Directory} \\.devinit.jsna
-* {Current-Directory} \\ . devinit \\.devinit.jsna
-
-Ścieżki bez interlinii `.` lub nazwy pliku również będą zgodne.
+| Argument                                      | Wymagane | Opis                                                                          |
+|-----------------------------------------------|----------|--------------------------------------------------------------------------------------|
+| -t,--narzędzie                                     | Yes      | Wymagane. Nazwa narzędzia.                                                             |
+| -i,--dane wejściowe                                    | Nie       | Wartość wejściowa narzędzia. Na przykład nazwa pliku, pakietu lub nazwy.                     |
+| --błąd-akcja                                | Nie       | Określa sposób obsługi błędów narzędzia: Stop, Ignoruj, Kontynuuj. Wartość domyślna to Zatrzymaj. |
+| -v,--verbose                                  | Nie       | Emituj pełne dane wyjściowe.                                                                 |
+| -n,--w trakcie działania suchego                                  | Nie       | Uruchomienie suche.                                                                             |
+| --&lt;arg1 &gt; &lt; arg2 &gt; ... &lt; argN&gt;  | Nie       | Dodatkowe argumenty wiersza polecenia do narzędzia.                                       |
 
 #### <a name="--error-action-argument"></a>--Error-Action — argument
 
@@ -79,13 +98,13 @@ Określa akcję, która ma zostać podjęta, jeśli narzędzie zwróci kod zako�
 | ignoruj   | Kontynuuj przetwarzanie innych narzędzi po wyemitowaniu ostrzeżenia do wyjścia standardowego. Kod zakończenia procesu DevInit powinien być zawsze równy zero (powodzenie). `ignore`Ustawienie ignoruje wszystkie błędy.                                                                                                      |
 | zatrzymanie     | Emituje błąd do standardowego błędu i kończy przetwarzanie narzędzi. Kod zakończenia devinit.exe jest różny od zera (niepowodzenie). Jest to podobne do akcji Kontynuuj, ale podczas pierwszego napotkanego błędu przetwarzanie jest zatrzymywane. `stop` to domyślny błąd-akcja dla wszystkich poleceń z wyjątkiem init. |
 
-#### <a name="--dry-run-switch"></a>--Przełącznik suchy
-
-Polecenia narzędzia echo, które zostałyby uruchomione, ale nie wykonują żadnych narzędzi. 
-
 #### <a name="--verbose-switch"></a>--pełny przełącznik
 
 Emituj pełne dane wyjściowe do danych wyjściowych Standard. Jeśli narzędzie, które ma zostać wykonane, obsługuje opcję verbose, Propaguj pełny przełącznik do narzędzia.
+
+#### <a name="--dry-run-switch"></a>--Przełącznik suchy
+
+Polecenia narzędzia echo, które zostałyby uruchomione, ale nie wykonują żadnych narzędzi.
 
 #### <a name="additional-command-line-arguments"></a>Dodatkowe argumenty wiersza polecenia
 
@@ -117,7 +136,7 @@ Drukuje listę wszystkich dostępnych narzędzi.
 
 | Argument       | Wymagane | Opis                                                                          |
 |----------------|----------|--------------------------------------------------------------------------------------|
-| -t,--narzędzie      | Tak      | Wymagany. Nazwa narzędzia.                                                             |
+| -t,--narzędzie      | Yes      | Wymagane. Nazwa narzędzia.                                                             |
 
 Drukuje informacje pomocy dla danego narzędzia.
 

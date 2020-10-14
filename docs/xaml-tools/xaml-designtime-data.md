@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 6957c1c7d64918e91a95bf569c210c146fec1339
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 9e6daa3e11bc96fe4d0b9499a6a1a7982432583d
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659426"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039914"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Używanie danych czasu projektowania z projektant XAML w programie Visual Studio
 
@@ -135,6 +135,43 @@ xmlns:models="clr-namespace:Cities.Models"
 [![Rzeczywisty model w danych czasu projektowania z ListView](media\xaml-design-time-listview-models.png "Rzeczywiste dane modelu czasu projektowania z ListView")](media\xaml-design-time-listview-models.png#lightbox)
 
 Korzyścią jest tutaj, że można powiązać kontrolki z wersją statyczną w czasie projektowania.
+
+## <a name="use-design-time-data-with-custom-types-and-properties"></a>Korzystanie z danych czasu projektowania z niestandardowymi typami i właściwościami
+
+Ta funkcja domyślnie działa tylko z kontrolkami i właściwościami platformy. W tej sekcji przejdziemy do kroków, które należy wykonać, aby umożliwić korzystanie z własnych niestandardowych kontrolek jako formantów czasu projektowania. Aby to umożliwić, należy wykonać trzy wymagania:
+
+- Niestandardowa przestrzeń nazw xmlns 
+
+    ```xml
+    xmlns:myControls="http://MyCustomControls"
+    ```
+
+- Wersja przestrzeni nazw czasu projektowania. Można to osiągnąć przez proste dołączenie/Design na końcu.
+
+     ```xml
+    xmlns:myDesignTimeControls="http://MyCustomControls/design"
+    ```
+
+- Dodawanie prefiksu czasu projektowania do MC: można zignorować
+
+    ```xml
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d myDesignTimeControls"
+    ```
+
+Po wykonaniu wszystkich tych kroków możesz użyć swojego `myDesignTimeControls` prefiksu, aby utworzyć kontrolki czasu projektowania.
+
+```xml
+<myDesignTimeControls:MyButton>I am a design time Button</myDesignTimeControls:MyButton>
+```
+
+### <a name="creating-a-custom-xmlns-namespace"></a>Tworzenie niestandardowej przestrzeni nazw xmlns
+
+Aby utworzyć niestandardową przestrzeń nazw xmlns w WPF .NET Core, należy zmapować niestandardową przestrzeń nazw XML do przestrzeni nazw CLR, w której znajdują się formanty. Możesz to zrobić, dodając `XmlnsDefinition` atrybut poziomu zestawu do `AssemblyInfo.cs` pliku. Plik znajduje się w głównej hierarchii projektu.
+
+   ```C#
+[assembly: XmlnsDefinition("http://MyCustomControls", "MyViews.MyButtons")]
+   ```
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 

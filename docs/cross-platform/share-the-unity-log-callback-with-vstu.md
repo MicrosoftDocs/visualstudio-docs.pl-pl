@@ -1,5 +1,6 @@
 ---
 title: Udostępnianie wywołania zwrotnego dziennika aparatu Unity za pomocą rozszerzenia VSTU | Microsoft Docs
+description: Udostępnij swoje wywołanie zwrotne dziennika aparatu Unity z tą, która jest zarejestrowana w Visual Studio Tools for Unity (rozszerzenia VSTU) w celu przesyłania strumieniowego swojej konsoli do programu Visual Studio.
 ms.custom: ''
 ms.date: 07/26/2018
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: dc54c51f078e5b800a9cc9f2de687db7b1fa0387
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88abc27ad757487ae8f65b8bbb66d4dfee9791cc
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815047"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039875"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>Udostępnianie wywołania zwrotnego dziennika aparatu Unity z rozszerzenia VSTU
 Visual Studio Tools for Unity rejestruje wywołanie zwrotne dziennika za pomocą aparatu Unity, aby móc przesyłać strumieniowo swoją konsolę do programu Visual Studio. Jeśli skrypty edytora rejestrują także wywołanie zwrotne dziennika za pomocą aparatu Unity, wywołanie zwrotne rozszerzenia VSTU może zakłócać wywołanie zwrotne. Aby zapobiec tej możliwości, użyj `VisualStudioIntegration.LogCallback` zdarzenia do współpracy z rozszerzenia VSTU.
@@ -48,5 +49,5 @@ public class LogCallbackHook
 #endif
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
  [Przykład: generowanie pliku projektu](../cross-platform/customize-project-files-created-by-vstu.md)

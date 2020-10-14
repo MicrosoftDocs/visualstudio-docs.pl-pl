@@ -1,5 +1,6 @@
 ---
 title: Dziennik zmian (Visual Studio Tools for Unity, Windows) | Microsoft Docs
+description: Wyświetl dziennik zmian dla Visual Studio Tools for Unity systemu Windows. Zobacz zmiany w wersji 1.0.0.0 przez 4.7.0.0 i poza nią.
 ms.custom: ''
 ms.date: 7/30/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 2a069753040be65f963c1047ef376bef653bfbc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f745cca14202c87386dc276b00e89fb70b399404
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87471522"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039441"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Dziennik zmian (Visual Studio Tools for Unity, Windows)
 
@@ -438,7 +439,7 @@ Wydanie 31 stycznia 2019
 
 - **Integration**
 
-  - Ulepszono środowisko użytkownika do wyświetlania wystąpień edytora i odtwarzacza Unity (system Windows jest teraz zmieniany, użyj jednolitych marginesów i Wyświetl uchwyt zmiany rozmiaru). Dodano informacje o identyfikatorze procesu dla edytorów aparatu Unity.
+  - Ulepszono środowisko użytkownika do wyświetlania wystąpień edytora i odtwarzacza Unity (system Windows jest teraz zmieniany, użyj jednolitych marginesów i Wyświetl uchwyt zmiany rozmiaru). Dodano Process-Id informacji dla edytorów aparatu Unity.
 
   - Zaktualizowano `MonoBehaviour` interfejs API.
 

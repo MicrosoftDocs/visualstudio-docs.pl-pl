@@ -1,5 +1,6 @@
 ---
 title: Używanie platformy .NET 4.x w aparacie Unity
+description: Dowiedz się, jak używać programu .NET 4. x w środowisku Unity. Włącz środowisko uruchomieniowe obsługi skryptów .NET 4. x. Skorzystaj z zalet zgodności z platformą .NET. Przejrzyj nowe funkcje składni i języka.
 author: therealjohn
 ms.author: johmil
 ms.date: 08/29/2018
@@ -8,12 +9,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 9a53db2d7cb73fbbb8ea694386dbada3186957ee
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 06efbe9d346cbbe8b9e81d95be257742b659cf8f
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508980"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039849"
 ---
 # <a name="using-net-4x-in-unity"></a>Używanie platformy .NET 4.x w aparacie Unity
 
