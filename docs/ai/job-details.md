@@ -1,5 +1,7 @@
 ---
 title: Wyświetl ostatnie zadania
+description: Informacje o tym, że po przesłaniu zadań można wyświetlić listę zadań, aby zobaczyć ich stan, czas trwania itd.
+ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jillfra
@@ -8,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e404d6a258ebb480b3eb02e615097872714db03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d67ee5810c1776176e1370839f0f7f43b9d0c55e
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371550"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099222"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Wyświetl ostatnią wydajność i szczegóły zadania
 

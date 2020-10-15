@@ -1,5 +1,7 @@
 ---
 title: Tworzenie projektu AI z istniejącego kodu
+description: Dowiedz się, jak za pomocą Visual Studio Tools for AI przenieść istniejący kod w języku Python do projektu programu Visual Studio.
+ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jillfra
@@ -8,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c0909259291bc5d2db2c4a9c8b87b1a0321d362
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef62b0a5f3fac00aba0648008a47d35e0adc89f4
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371719"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099261"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Tworzenie projektu AI z istniejącego kodu
 
@@ -41,6 +43,6 @@ Po [zainstalowaniu Visual Studio Tools for AI](installation.md)można łatwo prz
 > [!div class="nextstepaction"]
 > [Samouczek: Praca z językiem Python w programie Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Ręcznie Zidentyfikuj istniejące środowisko języka Python](../python/managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

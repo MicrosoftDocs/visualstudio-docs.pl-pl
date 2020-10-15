@@ -8,12 +8,12 @@ ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8002373b7ad34796df557686c1aff6a417d49ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a485b3648f69276c0d1cc472dda70524a00d9c1c
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288835"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099417"
 ---
 # <a name="configure-load-test-run-settings"></a>Skonfiguruj ustawienia przebiegu testu obciążenia
 
@@ -37,6 +37,6 @@ Początkowe ustawienie uruchomieniowe jest tworzone podczas tworzenia testu obci
 |**Określ liczbę iteracji testu w ustawieniach przebiegu testu obciążenia:** Można określić, ile razy mają być uruchamiane wszystkie testy wydajności sieci Web i testów jednostkowych we wszystkich scenariuszach testów obciążenia przez skonfigurowanie właściwości **iteracje testu** .|-   [Instrukcje: Określanie liczby iteracji testowych w ustawieniu uruchamiania](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**Określ częstotliwość próbkowania dla ustawienia przebiegu testu obciążenia:** Możesz określić częstotliwość, z jaką test obciążenia zbiera dane licznika wydajności, konfigurując Właściwość **częstotliwość próbkowania** .|-   [Instrukcje: Określanie częstotliwości próbkowania](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**Określ opcję przechowywania szczegółów czasu:** Można określić, jak mają być zapisywane szczegóły testu obciążenia przez skonfigurowanie właściwości **Magazyn informacji o chronometrażu** .|-   [Instrukcje: Określanie właściwości przechowywania informacji o chronometrażu](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
-|**Określ okres przechowywania zasobu testowego:** Aby przyspieszyć testowanie > poprawić > cykl przetestowania przez zatrzymywanie zasobów testowych przez określony czas, należy ustawić właściwość **czas przechowywania zasobów** .|-   [Zachowaj zasoby, aby przyspieszyć testowanie obciążenia](/azure/devops/test/load-test/getting-started-with-performance-testing?view=vsts)|
+|**Określ okres przechowywania zasobu testowego:** Aby przyspieszyć testowanie > poprawić > cykl przetestowania przez zatrzymywanie zasobów testowych przez określony czas, należy ustawić właściwość **czas przechowywania zasobów** .|-   [Zachowaj zasoby, aby przyspieszyć testowanie obciążenia](/azure/devops/test/load-test/getting-started-with-performance-testing?view=vsts&preserve-view=true)|
 |**Użyj parametrów kontekstu:** Do Sparametryzuj ciągu można użyć parametrów kontekstu. Na przykład jeśli test obciążenia zawiera test wydajności sieci Web, który używa sparametryzowanego serwera sieci Web, można dodać parametr kontekstowy do ustawień uruchomieniowych, które są mapowane na inny serwer.|-   [Instrukcje: Dodawanie parametrów kontekstu do ustawienia uruchomieniowego](../test/how-to-add-context-parameters-to-a-load-test-run-setting.md)|
 |**Konfigurowanie właściwości rejestrowania testów:** Można skonfigurować, jak często dane są zapisywane w dzienniku, który jest skojarzony z ustawieniami przebiegu testu obciążenia. Może to być ważne, gdy uruchamiasz duży lub złożony test obciążeniowy, ponieważ dziennik może mieć wielkość kilku gigabajtów.<br /><br /> Można także skonfigurować plik dziennika, aby automatycznie zapisywał informacje o testach obciążeniowych, które zakończyły się niepowodzeniem, aby pomóc w debugowaniu i analizowaniu aplikacji.|-   [Modyfikowanie ustawień rejestrowania testu obciążenia](../test/modify-load-test-logging-settings.md)|

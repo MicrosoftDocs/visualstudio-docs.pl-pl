@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731fe05e90e01c60f0a7ff3a14917d6d7625bc1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28576fab1ed4b39810b6f4cc32fb2955a7a44039
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570560"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099352"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Wybieranie elementów przybornika, składniki WPF
 
@@ -41,7 +41,7 @@ Wyświetla listę nazw formantów WPF, dla których wpisy istnieją w rejestrze 
 
 **Przestrzeń nazw**
 
-Wyświetla hierarchię przestrzeni nazw [interfejsu API platformy .NET](/dotnet/api/?view=netframework-4.7) , która definiuje strukturę składnika. Sortuj według tej kolumny, aby wyświetlić listę składników dostępnych w ramach każdej przestrzeni nazw platformy .NET zainstalowanej na komputerze.
+Wyświetla hierarchię przestrzeni nazw [interfejsu API platformy .NET](/dotnet/api/?view=netframework-4.7&preserve-view=true) , która definiuje strukturę składnika. Sortuj według tej kolumny, aby wyświetlić listę składników dostępnych w ramach każdej przestrzeni nazw platformy .NET zainstalowanej na komputerze.
 
 **Nazwa zestawu**
 
@@ -81,7 +81,7 @@ Ponadto, jeśli metadane czasu projektowania są stosowane do kontrolki niestand
 
 Możesz odwoływać się do kontrolek bezpośrednio w widoku XAML, mapując przestrzeń nazw i zestaw dla kontrolki.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przybornik](../../ide/reference/toolbox.md)
 - [Rozpoczynanie pracy z aparatem WPF](../../designers/getting-started-with-wpf.md)

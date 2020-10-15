@@ -1,5 +1,7 @@
 ---
 title: Klonowanie repozytorium
+description: Dowiedz się, jak używać Visual Studio Tools for AI do klonowania repozytorium kodu w języku Python i tworzenia projektu z niego.
+ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jillfra
@@ -8,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb3aa4a7aa9818f42f99860956e0e2ae73b2b7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58e6bdae7ef85545d0790782f5ad825b8f27659c
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371589"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099248"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Klonowanie repozytorium kodu w języku Python w programie Visual Studio
 

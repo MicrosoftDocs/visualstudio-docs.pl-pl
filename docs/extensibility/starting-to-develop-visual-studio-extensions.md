@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8745acd9af9009a7206eada7ffb64f95759e8399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812c5b2366e40226011a15acfc1cae2327e4b897
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286196"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099391"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Rozpoczynanie tworzenia rozszerzeń Visual Studio
 
@@ -91,9 +91,9 @@ W tej sprawie znaleźliśmy, że funkcje, które większość osób chce zwięks
 ## <a name="how-can-i-distribute-my-extension"></a>Jak mogę rozpowszechnić rozszerzenie?
  Możesz zainstalować rozszerzenie na innym komputerze lub wysłać je do znajomych jako plik. vsix, który instalujesz, klikając go dwukrotnie. Więcej informacji o pakietach VSIX można znaleźć podczas [wysyłania rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- Możesz również opublikować swoje rozszerzenie na Visual Studio Marketplace, co sprawia, że jest widoczne dla dużej liczby klientów programu Visual Studio. Przykład pakowania rozszerzenia do portalu Marketplace zawiera [Przewodnik: Publikowanie rozszerzenia programu Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Aby uzyskać więcej informacji o tym, co należy zrobić w celu opublikowania w portalu Marketplace, zobacz [produkty i rozszerzenia dla programu Visual Studio](/azure/devops/extend/overview?view=vsts).
+ Możesz również opublikować swoje rozszerzenie na Visual Studio Marketplace, co sprawia, że jest widoczne dla dużej liczby klientów programu Visual Studio. Przykład pakowania rozszerzenia do portalu Marketplace zawiera [Przewodnik: Publikowanie rozszerzenia programu Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Aby uzyskać więcej informacji o tym, co należy zrobić w celu opublikowania w portalu Marketplace, zobacz [produkty i rozszerzenia dla programu Visual Studio](/azure/devops/extend/overview?view=vsts&preserve-view=true).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Rozszerzenie programu Visual Studio dla komputerów Mac](/visualstudio/mac/extending-visual-studio-mac)
 - [Rozszerzanie Visual Studio Code](https://code.visualstudio.com/api)

@@ -9,12 +9,12 @@ ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a9b6880b2f71079b6b70eeb6c2e9f7b4e81fc19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65d311ec522e5ba5b5c92193a8af3e53a9e9eb35
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288744"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099326"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Tworzenie adaptera danych diagnostycznych w celu zbierania danych niestandardowych lub wpływania na maszynę testową
 
@@ -39,8 +39,8 @@ Użyj następujących tematów pomocnych przy tworzeniu Adapterów danych diagno
 |Zadania|Skojarzone tematy|
 |-|-----------------------|
 |**Tworzenie adaptera danych diagnostycznych:** Utworzenie adaptera danych diagnostycznych przez utworzenie biblioteki klas, a następnie użycie interfejsów API adaptera danych diagnostycznych do zbierania żądanych informacji lub wpływu na system testowy używany do uruchamiania testów.|-   [Instrukcje: Tworzenie adaptera danych diagnostycznych](../test/how-to-create-a-diagnostic-data-adapter.md)|
-|**Wybieranie niestandardowego adaptera danych diagnostycznych do użycia podczas uruchamiania testów:** Możesz wybrać, które karty danych diagnostycznych mają być używane dla ustawień testu, aby karta była używana podczas uruchamiania testów.|-   [Zbieraj dane diagnostyczne podczas testowania (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [Zbieranie danych diagnostycznych w testach ręcznych (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
+|**Wybieranie niestandardowego adaptera danych diagnostycznych do użycia podczas uruchamiania testów:** Możesz wybrać, które karty danych diagnostycznych mają być używane dla ustawień testu, aby karta była używana podczas uruchamiania testów.|-   [Zbieraj dane diagnostyczne podczas testowania (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)<br />-   [Zbieranie danych diagnostycznych w testach ręcznych (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zbieranie informacji diagnostycznych za pomocą ustawień testu](../test/collect-diagnostic-information-using-test-settings.md)

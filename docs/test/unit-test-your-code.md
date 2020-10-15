@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f7833d320ecbaefbd2290d0a65ec4b32f802e403
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: be0f8f7eeb116a251477ce57027a2176119c2d17
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927955"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099313"
 ---
 # <a name="unit-test-your-code"></a>Testowanie jednostkowe kodu
 
@@ -56,6 +56,6 @@ Skorzystaj z poniższych artykułów, aby zrozumieć i utworzyć testy jednostko
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Opisuje przestrzeń nazw UnitTesting, która udostępnia atrybuty, wyjątki, potwierdzenia i inne klasy, które obsługują testy jednostkowe.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> Opisuje przestrzeń nazw UnitTesting. Web, która rozszerza przestrzeń nazw UnitTesting przez zapewnienie wsparcia dla ASP.NET i testów jednostkowych usług sieci Web.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Poprawianie jakości kodu](../test/improve-code-quality.md)

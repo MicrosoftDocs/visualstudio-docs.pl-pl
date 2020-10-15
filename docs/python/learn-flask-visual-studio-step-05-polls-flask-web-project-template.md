@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9adda5eb9edba5e1ba62097d55c033be6c85d2e
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70154893"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099365"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5. użycie szablonu projektu sieci Web w kolbie sond
 
@@ -356,4 +356,4 @@ Uruchamianie aplikacji sieci Web na komputerze deweloperskim to tylko jeden krok
 
 - Dodaj implementację repozytorium, która używa innego magazynu danych na poziomie produkcyjnym, takiego jak PostgreSQL, MySQL i SQL Server (wszystkie mogą być hostowane na platformie Azure). Możesz również użyć [zestawu Azure SDK dla języka Python](/azure/python/) do pracy z usługami magazynu platformy Azure, takimi jak tabele i obiekty blob, a także Cosmos DB.
 
-- Skonfiguruj potok ciągłej integracji/ciągłego wdrażania w usłudze, takiej jak Azure DevOps. Oprócz pracy z kontrolą źródła (za pośrednictwem Azure Repos lub GitHub lub w innym miejscu) można skonfigurować projekt platformy Azure DevOps, aby automatycznie uruchamiał testy jednostkowe jako wstępnie wymagane dla wydania, a także skonfigurować potok do wdrożenia na serwerze przejściowym w celu przeprowadzenia dodatkowych testów przed wdrożeniem w środowisku produkcyjnym. Ponadto platforma Azure DevOps integruje się z rozwiązaniami do monitorowania, takimi jak App Insights i zamyka cały cykl dzięki narzędziom do planowania Agile. Aby uzyskać więcej informacji, zobacz Tworzenie potoku ciągłej integracji/ciągłego wdrażania [dla języka Python za pomocą Azure DevOps projects](/azure/devops-project/azure-devops-project-python?view=vsts) a także ogólnej [dokumentacji usługi Azure DevOps](/azure/devops/?view=vsts).
+- Skonfiguruj potok ciągłej integracji/ciągłego wdrażania w usłudze, takiej jak Azure DevOps. Oprócz pracy z kontrolą źródła (za pośrednictwem Azure Repos lub GitHub lub w innym miejscu) można skonfigurować projekt platformy Azure DevOps, aby automatycznie uruchamiał testy jednostkowe jako wstępnie wymagane dla wydania, a także skonfigurować potok do wdrożenia na serwerze przejściowym w celu przeprowadzenia dodatkowych testów przed wdrożeniem w środowisku produkcyjnym. Ponadto platforma Azure DevOps integruje się z rozwiązaniami do monitorowania, takimi jak App Insights i zamyka cały cykl dzięki narzędziom do planowania Agile. Aby uzyskać więcej informacji, zobacz Tworzenie potoku ciągłej integracji/ciągłego wdrażania [dla języka Python za pomocą Azure DevOps projects](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true) a także ogólnej [dokumentacji usługi Azure DevOps](/azure/devops/?view=vsts&preserve-view=true).

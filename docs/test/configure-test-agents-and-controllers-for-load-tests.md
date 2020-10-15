@@ -8,19 +8,19 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fe6811f4deaa5958b050a8f93f74e48e2dc73f38
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4e9aea22a63f2eee8f83ee597ed11c90df7f6b1a
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809292"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099404"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Przegląd agentów testowych i kontrolerów testów do uruchamiania testów obciążenia
 
 Program Visual Studio może generować symulowane obciążenie dla aplikacji za pomocą maszyn fizycznych lub wirtualnych. Te maszyny muszą być skonfigurowane jako jeden kontroler testów i co najmniej jednego agenta testowego. Można użyć kontrolera testów i agentów testowych do wygenerowania większej liczby obciążeń niż pojedynczy komputer może generować same.
 
 > [!NOTE]
-> Możesz również użyć testowania obciążenia opartego na chmurze, aby zapewnić maszynom wirtualnym, które generują obciążenie wielu użytkowników uzyskujących dostęp do witryny sieci Web w tym samym czasie. Jednak korzystanie z kontrolera testów/instalacji agenta testowego na maszynach wirtualnych hostowanych w chmurze nie jest obsługiwane. Dowiedz się więcej o testowaniu obciążenia w chmurze w [uruchamianiu testów obciążenia przy użyciu Azure test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+> Możesz również użyć testowania obciążenia opartego na chmurze, aby zapewnić maszynom wirtualnym, które generują obciążenie wielu użytkowników uzyskujących dostęp do witryny sieci Web w tym samym czasie. Jednak korzystanie z kontrolera testów/instalacji agenta testowego na maszynach wirtualnych hostowanych w chmurze nie jest obsługiwane. Dowiedz się więcej o testowaniu obciążenia w chmurze w [uruchamianiu testów obciążenia przy użyciu Azure test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts&preserve-view=true).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -38,7 +38,7 @@ Taka architektura ma szereg zalet:
 
 - Możliwość skalowania generowanego obciążenia przez dodawanie kolejnych agentów testowych do kontrolera testów.
 
-- Elastyczność instalowania oprogramowania klienta, kontrolera testów i agentów testowych na tym samym lub różnych komputerach. Przykład:
+- Elastyczność instalowania oprogramowania klienta, kontrolera testów i agentów testowych na tym samym lub różnych komputerach. Na przykład:
 
    **Konfiguracja lokalna:**
 
@@ -90,6 +90,6 @@ Aby uzyskać ważne informacje dotyczące wymagań sprzętowych i programowych d
 
 Po zainstalowaniu kontrolera testów i jednego lub więcej agentów testowych można w ustawieniu testów obciążeniowych określić, czy kontroler testów ma wykonywać testy zdalnie. Ponadto można wskazać dane i adaptery diagnostyczne, które mają być używane do roli powiązanej z agentami w ustawieniu testu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md)

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c1fe3db702508267e96dc79f2f789a17a7edf98b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f81c665bc742daf7e2b0e34a849aad566362a28
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75755575"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099339"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6. użycie szablonu projektu sieci Web Django sondy
 
@@ -376,4 +376,4 @@ Uruchamianie aplikacji sieci Web na komputerze deweloperskim to tylko jeden krok
 
 - Zmień aplikację z oprogramowania SQLite na magazyn danych na poziomie produkcyjnym, taki jak PostgreSQL, MySQL i SQL Server (wszystkie mogą być hostowane na platformie Azure). Zgodnie z opisem w [przypadku korzystania z oprogramowania SQLite](https://www.sqlite.org/whentouse.html) (SQLite.org), program SQLite działa prawidłowo w przypadku witryn o niskiej i średnim ruchu z mniej niż 100 000 trafień/dzień, ale nie jest to zalecane w przypadku wyższych woluminów. Jest on również ograniczony do jednego komputera, dlatego nie można go używać w żadnym scenariuszu obejmującym wiele serwerów, takim jak równoważenie obciążenia i replikacja geograficzna. Aby uzyskać informacje na temat pomocy technicznej Django dla innych baz danych, zobacz [Konfiguracja bazy danych](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Możesz również użyć [zestawu Azure SDK dla języka Python](/azure/python/) do pracy z usługami Azure Storage, takimi jak tabele i obiekty blob.
 
-- Skonfiguruj potok ciągłej integracji/ciągłego wdrażania w usłudze, takiej jak Azure DevOps. Oprócz pracy z kontrolą źródła (za pośrednictwem Azure Repos lub GitHub lub w innym miejscu) można skonfigurować projekt platformy Azure DevOps, aby automatycznie uruchamiał testy jednostkowe jako wstępnie wymagane dla wydania, a także skonfigurować potok do wdrożenia na serwerze przejściowym w celu przeprowadzenia dodatkowych testów przed wdrożeniem w środowisku produkcyjnym. Ponadto platforma Azure DevOps integruje się z rozwiązaniami do monitorowania, takimi jak App Insights i zamyka cały cykl dzięki narzędziom do planowania Agile. Aby uzyskać więcej informacji, zobacz Tworzenie potoku ciągłej integracji/ciągłego wdrażania [dla języka Python za pomocą projektu DevOps platformy Azure](/azure/devops-project/azure-devops-project-python?view=vsts) , a także ogólnej [dokumentacji usługi Azure DevOps](/azure/devops/?view=vsts).
+- Skonfiguruj potok ciągłej integracji/ciągłego wdrażania w usłudze, takiej jak Azure DevOps. Oprócz pracy z kontrolą źródła (za pośrednictwem Azure Repos lub GitHub lub w innym miejscu) można skonfigurować projekt platformy Azure DevOps, aby automatycznie uruchamiał testy jednostkowe jako wstępnie wymagane dla wydania, a także skonfigurować potok do wdrożenia na serwerze przejściowym w celu przeprowadzenia dodatkowych testów przed wdrożeniem w środowisku produkcyjnym. Ponadto platforma Azure DevOps integruje się z rozwiązaniami do monitorowania, takimi jak App Insights i zamyka cały cykl dzięki narzędziom do planowania Agile. Aby uzyskać więcej informacji, zobacz Tworzenie potoku ciągłej integracji/ciągłego wdrażania [dla języka Python za pomocą projektu DevOps platformy Azure](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true) , a także ogólnej [dokumentacji usługi Azure DevOps](/azure/devops/?view=vsts&preserve-view=true).

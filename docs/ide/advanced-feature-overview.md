@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0785686c9292e346c698c6f2b233cfe20edf796a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60f5a5545152b9bf262f652e2fce5ce04e7b71cb
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800765"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099430"
 ---
 # <a name="features-of-visual-studio"></a>Funkcje programu Visual Studio
 
@@ -124,7 +124,7 @@ Na poniższej ilustracji przedstawiono okno **Team Explorer** dla rozwiązania, 
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer_devops.png)
 
-Możesz również zautomatyzować proces kompilacji, aby skompilować kod, który deweloperzy w zespole zaewidencjonuje kontrolę wersji. Można na przykład skompilować jeden lub więcej projektów w nocy lub za każdym razem, kiedy kod jest zaewidencjonowany. Aby uzyskać więcej informacji, zobacz [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+Możesz również zautomatyzować proces kompilacji, aby skompilować kod, który deweloperzy w zespole zaewidencjonuje kontrolę wersji. Można na przykład skompilować jeden lub więcej projektów w nocy lub za każdym razem, kiedy kod jest zaewidencjonowany. Aby uzyskać więcej informacji, zobacz [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true).
 
 ## <a name="extend-visual-studio"></a>Rozszerzanie funkcjonalności programu Visual Studio
 
@@ -136,7 +136,7 @@ Znajdź [istniejące rozszerzenia](https://marketplace.visualstudio.com/vs) dla 
 
 Aby dowiedzieć się więcej na temat rozszerzania programu Visual Studio, zobacz [rozszerzanie środowiska IDE programu Visual Studio](https://visualstudio.microsoft.com/vs/extend/).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Środowisko IDE programu Visual Studio — omówienie](../get-started/visual-studio-ide.md)
 - [Co nowego w programie Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
