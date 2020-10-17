@@ -2,7 +2,7 @@
 title: Korzystanie z programu Visual Studio bez myszy
 titleSuffix: ''
 description: Dowiedz się, jak nawigować i pisać kod w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio, korzystając z klawiatury.
-ms.date: 05/10/2019
+ms.date: 10/16/2020
 ms.topic: how-to
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a8c14f59b87be1e59b5d115ea84b555677cda32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52d6bda98ee01dad4faf4a51412e810e1f5e4fa7
+ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770228"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92156564"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Korzystanie wyłącznie z klawiatury
 
@@ -37,13 +37,13 @@ Aby zapoznać się z pełną listą klawiszy skrótów poleceń w programie Visu
 ::: moniker-end
 
 > [!NOTE]
-> W zależności od ustawień lub używanej wersji programu Visual Studio okna dialogowe i polecenia menu mogą się różnić od tych opisanych w pomocy. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Resetowanie ustawień](../environment-settings.md#reset-settings).
+> W zależności od ustawień lub używanej wersji programu Visual Studio okna dialogowe i polecenia menu mogą się różnić od tych opisanych w pomocy. Aby zmienić ustawienia, wybierz pozycję **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Resetowanie ustawień](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Kontrolki przybornika
 
 Aby dodać kontrolkę w przyborniku do formularza lub projektanta bez użycia myszy:
 
-1. Na pasku menu wybierz **Widok**  >  **Przybornik**.
+1. Na pasku menu wybierz pozycję **Widok**  >  **Przybornik**.
 
 2. Użyj klawiszy **Ctrl +** + **Strzałka w górę** lub **Ctrl** + **w dół** , aby przejść między sekcjami na karcie **Przybornik** .
 
@@ -71,9 +71,9 @@ Aby poruszać się między opcjami w oknie dialogowym i zmieniać ustawienia opc
 
 ## <a name="navigate-between-windows-and-files"></a>Nawigowanie między oknami i plikami
 
-- Aby poruszać się między plikami w edytorze lub projektantem, wybierz skrót klawiaturowy z **klawiszem Ctrl**, + **Tab** aby wyświetlić wybrany Nawigator IDE z **aktywnymi plikami** . Wybierz klawisz **Enter** , aby przejść do wyróżnionego pliku.
+- Aby poruszać się między plikami w edytorze lub projektantem, użyj skrótu klawiaturowego z **klawiszem Ctrl**, + **Tab** aby wyświetlić wybrane okna Nawigator IDE z **aktywnymi plikami** . Wybierz klawisz **Enter** , aby przejść do wyróżnionego pliku.
 
-- Aby poruszać się między zadokowanymi oknami narzędzi **Alt**, wybierz + skrót klawiaturowy ALT**F7** , aby wyświetlić okno Nawigator IDE z **aktywnymi oknami narzędzi** . Wybierz klawisz **Enter** , aby przejść do wyróżnionego okna.
+- Aby poruszać się między zadokowanymi oknami narzędzi **Alt**, użyj + skrótu klawiaturowego Alt**F7** , aby wyświetlić okno Nawigator IDE z **aktywnymi oknami narzędzi** . Wybierz klawisz **Enter** , aby przejść do wyróżnionego okna.
 
 ## <a name="move-and-dock-tool-windows"></a>Przenieś i Zadokuj okna narzędzi
 

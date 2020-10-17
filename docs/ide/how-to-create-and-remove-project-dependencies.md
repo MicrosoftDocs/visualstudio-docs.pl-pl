@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Tworzenie i usuwanie zależności projektu'
+description: Dowiedz się, jak używać programu Visual Studio do tworzenia i usuwania zależności projektu względem kodu z innych projektów.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad21aeae2d348f56cb722365cd1e2ded249bbefe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b2a99e297b4ce7291c0dd94947155794cf8c3d4
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284467"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92137028"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Instrukcje: Tworzenie i usuwanie zależności projektu
 

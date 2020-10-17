@@ -1,5 +1,6 @@
 ---
 title: Pomijaj ostrzeżenia dla projektów i pakietów NuGet
+description: Dowiedz się, jak można użyć programu Visual Studio, aby wyrejestrować dziennik kompilacji, filtrując jeden lub więcej rodzajów ostrzeżeń kompilatora.
 ms.custom: SEO-VS-2020
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33abc359dea3e1c7982e5d1689debc1f8e881106
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a59f3706e2d33e87e760d2b88c4c7ba78eca4ef2
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038585"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136370"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Instrukcje: pomijanie ostrzeżeń kompilatora
 
@@ -131,7 +132,7 @@ W niektórych przypadkach może być konieczne pominięcie ostrzeżeń kompilato
 
    Ostrzeżenie znika z **Eksplorator rozwiązań** i **Lista błędów**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przewodnik: kompilowanie aplikacji](../ide/walkthrough-building-an-application.md)
 - [Instrukcje: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md)

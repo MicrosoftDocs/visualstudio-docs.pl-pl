@@ -1,5 +1,7 @@
 ---
 title: Opis konfiguracji kompilacji
+description: Dowiedz się, w jaki sposób konfiguracje kompilacji są potrzebne, gdy zachodzi potrzeba skompilowania projektów przy użyciu różnych ustawień w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/20/2020
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -26,12 +28,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a37d4fa5dc92253b94dc64590c9df5fec7703ceb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d8b61275e8197c90bfba85cb1b4be680f3c1f1a
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77904168"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136683"
 ---
 # <a name="understand-build-configurations"></a>Opis konfiguracji kompilacji
 

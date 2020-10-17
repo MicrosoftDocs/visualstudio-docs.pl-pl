@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c1cdc4738f60301435932b3700f14377f12172
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65e386b71c0b7ece3aee8185574d53955b7326a1
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290686"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136865"
 ---
 # <a name="how-msbuild-builds-projects"></a>Jak program MSBuild kompiluje projekty
 
@@ -50,7 +50,7 @@ Projekty .NET Core zaimportują odpowiednie dla nich wersje zestawu .NET SDK. Zo
 
 W tej sekcji omówiono, jak te pliki wejściowe są przetwarzane i analizowane w celu tworzenia obiektów w pamięci, które określają, co zostanie skompilowane.
 
-Celem fazy oceny jest utworzenie struktur obiektów w pamięci na podstawie wejściowych plików XML i środowiska lokalnego. Faza oceny składa się z pięciu przebiegów, które przetwarzają pliki wejściowe, takie jak pliki XML projektu lub, i zaimportowanych plików XML, ogólnie nazwane jako *. props* lub *. targets* , w zależności od tego, czy głównie ustawiają właściwości, czy definiują cele kompilacji. Każdy przebieg kompiluje część obiektów znajdujących się w pamięci, które są później używane w fazie wykonywania do kompilowania projektów, ale w fazie oceny nie występują rzeczywiste akcje kompilacji. W każdym przebiegu elementy są przetwarzane w kolejności, w jakiej są wyświetlane.
+Celem fazy oceny jest utworzenie struktur obiektów w pamięci na podstawie wejściowych plików XML i środowiska lokalnego. Faza oceny składa się z sześciu przebiegów, które przetwarzają pliki wejściowe, takie jak pliki XML projektu lub, i zaimportowanych plików XML, ogólnie nazwane jako *. props* lub *. targets* , w zależności od tego, czy głównie ustawiają właściwości, czy definiują cele kompilacji. Każdy przebieg kompiluje część obiektów znajdujących się w pamięci, które są później używane w fazie wykonywania do kompilowania projektów, ale w fazie oceny nie występują rzeczywiste akcje kompilacji. W każdym przebiegu elementy są przetwarzane w kolejności, w jakiej są wyświetlane.
 
 Przebiegi w fazie oceny są następujące:
 

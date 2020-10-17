@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5cf32bdf56f75ded7d193082f1072b79c3d16b3c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87425397"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136917"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
 
@@ -30,7 +30,7 @@ W programie MSBuild element jest nazwanym odwołaniem do co najmniej jednego pli
 
 Poniżej znajduje się lista wszystkich wspólnych elementów projektu.
 
-### <a name="reference"></a>Tematy pomocy
+### <a name="reference"></a>Dokumentacja
 
 Reprezentuje odwołanie zestawu (zarządzanego) w projekcie.
 
@@ -41,7 +41,7 @@ Reprezentuje odwołanie zestawu (zarządzanego) w projekcie.
 |FusionName|Opcjonalny ciąg. Określa prostą lub silną nazwę syntezy dla elementu.<br /><br /> Gdy ten atrybut jest obecny, może zaoszczędzić czas, ponieważ plik zestawu nie musi być otwarty w celu uzyskania nazwy Fusion.|
 |Ustawienie SpecificVersion|Opcjonalna wartość logiczna. Określa, czy należy odwoływać się tylko do wersji w nazwie Fusion.|
 |Aliasy|Opcjonalny ciąg. Wszelkie aliasy odwołania.|
-|Prywatne|Opcjonalna wartość logiczna. Określa, czy odwołanie ma być kopiowane do folderu wyjściowego. Ten atrybut jest zgodny z właściwością **copy lokalnego** odwołania, która znajduje się w środowisku IDE programu Visual Studio.|
+|Private|Opcjonalna wartość logiczna. Określa, czy odwołanie ma być kopiowane do folderu wyjściowego. Ten atrybut jest zgodny z właściwością **copy lokalnego** odwołania, która znajduje się w środowisku IDE programu Visual Studio.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -81,9 +81,15 @@ Reprezentuje odwołanie do innego projektu. `ProjectReference` elementy są prze
 |Nazwa metadanych elementu|Opis|
 |---------------|-----------------|
 |Nazwa|Opcjonalny ciąg. Nazwa wyświetlana odwołania.|
-|Projekt|Opcjonalny ciąg. Identyfikator GUID odwołania w formularzu {12345678-1234-1234-1234-1234567891234} .|
-|Pakiet|Opcjonalny ciąg. Ścieżka do pliku projektu, do którego istnieje odwołanie.|
+|GlobalPropertiesToRemove|Opcjonalne `string[]` . Nazwy właściwości do usunięcia podczas kompilowania przywoływanego projektu, na przykład `RuntimeIdentifier;PackOnBuild` . Wartość domyślna to Empty.|
+|Project|Opcjonalny ciąg. Identyfikator GUID odwołania w formularzu {12345678-1234-1234-1234-1234567891234} .|
+|OutputItemType|Opcjonalny ciąg. Typ elementu, do którego mają być emitowane docelowe dane wyjściowe. Wartość domyślna jest pusta. Jeśli metadane odwołania są ustawione na wartość "true" (domyślnie), docelowe dane wyjściowe staną się odwołaniami do kompilatora.|
 |ReferenceOutputAssembly|Opcjonalna wartość logiczna. Jeśli jest ustawiona na `false` , program nie uwzględnia danych wyjściowych przywoływanego projektu jako [odwołania](#reference) do tego projektu, ale nadal zapewnia, że inny projekt zostanie skompilowany przed tym. Wartość domyślna to `true` .|
+|SetConfiguration|Opcjonalny ciąg. Ustawia właściwość Global `Configuration` dla projektu, do którego istnieje odwołanie, na przykład `Configuration=Release` .|
+|Setplatform|Opcjonalny ciąg. Ustawia właściwość Global `Platform` dla projektu, do którego istnieje odwołanie, na przykład `Platform=AnyCPU` .|
+|SetTargetFramework|Opcjonalny ciąg. Ustawia właściwość Global `TargetFramework` dla projektu, do którego istnieje odwołanie, na przykład `TargetFramework=netstandard2.0` .|
+|SkipGetTargetFrameworkProperties|Opcjonalna wartość logiczna. Jeśli `true` , kompiluje przywoływany projekt bez negocjowania najbardziej zgodnej `TargetFramework` wartości. Wartość domyślna to `false` .|
+|Targets (Obiekty docelowe)|Opcjonalne `string[]` . Rozdzielana średnikami lista elementów docelowych w projektach, do których się odwołuje, które powinny zostać skompilowane. Wartość domyślna jest wartością `$(ProjectReferenceBuildTargets)` , która domyślnie jest pusta, co wskazuje na domyślne elementy docelowe.|
 
 ### <a name="compile"></a>Opracowania
 
@@ -93,7 +99,7 @@ Reprezentuje pliki źródłowe kompilatora.
 |-----------------------| - |
 | DependentUpon | Opcjonalny ciąg. Określa plik, od którego zależy plik, aby skompilować poprawnie. |
 | AutoGen | Opcjonalna wartość logiczna. Wskazuje, czy plik został wygenerowany dla projektu przez zintegrowane środowisko programistyczne (IDE) programu Visual Studio. |
-| Link | Opcjonalny ciąg. Ścieżka zapisu, która ma być wyświetlana, gdy plik jest fizycznie zlokalizowany poza wpływem pliku projektu. |
+| Łącze | Opcjonalny ciąg. Ścieżka zapisu, która ma być wyświetlana, gdy plik jest fizycznie zlokalizowany poza wpływem pliku projektu. |
 | Widoczne | Opcjonalna wartość logiczna. Wskazuje, czy plik ma być wyświetlany w **Eksplorator rozwiązań** w programie Visual Studio. |
 | CopyToOutputDirectory | Opcjonalny ciąg. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. nigdy nie<br />2. zawsze<br />3. PreserveNewest |
 
@@ -107,7 +113,7 @@ Reprezentuje zasoby do osadzenia w wygenerowanym zestawie.
 | Generator | Wymagany ciąg. Nazwa dowolnego generatora plików uruchamianego na tym elemencie. |
 | LastGenOutput | Wymagany ciąg. Nazwa pliku, który został utworzony przez dowolny Generator plików uruchomiony na tym elemencie. |
 | CustomToolNamespace | Wymagany ciąg. Przestrzeń nazw, w której każdy Generator plików uruchomiony na tym elemencie powinien utworzyć kod. |
-| Link | Opcjonalny ciąg. Ścieżka notacji jest wyświetlana, jeśli plik jest fizycznie zlokalizowany poza wpływem projektu. |
+| Łącze | Opcjonalny ciąg. Ścieżka notacji jest wyświetlana, jeśli plik jest fizycznie zlokalizowany poza wpływem projektu. |
 | Widoczne | Opcjonalna wartość logiczna. Wskazuje, czy plik ma być wyświetlany w **Eksplorator rozwiązań** w programie Visual Studio. |
 | CopyToOutputDirectory | Opcjonalny ciąg. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. nigdy nie<br />2. zawsze<br />3. PreserveNewest |
 | Logicznaname | Wymagany ciąg. Nazwa logiczna zasobu osadzonego. |
@@ -122,7 +128,7 @@ Reprezentuje pliki, które nie są kompilowane do projektu, ale mogą być osadz
 | Generator | Wymagany ciąg. Nazwa dowolnego generatora plików uruchamianego na tym elemencie. |
 | LastGenOutput | Wymagany ciąg. Nazwa pliku, który został utworzony przez dowolny Generator plików uruchomiony na tym elemencie. |
 | CustomToolNamespace | Wymagany ciąg. Przestrzeń nazw, w której każdy Generator plików uruchomiony na tym elemencie powinien utworzyć kod. |
-| Link | Opcjonalny ciąg. Ścieżka notacji, która ma być wyświetlana, jeśli plik jest fizycznie zlokalizowany poza wpływem projektu. |
+| Łącze | Opcjonalny ciąg. Ścieżka notacji, która ma być wyświetlana, jeśli plik jest fizycznie zlokalizowany poza wpływem projektu. |
 | PublishState | Wymagany ciąg. Stan publikowania zawartości:<br /><br /> -Domyślne<br />-Uwzględnione<br />-Wykluczone<br />-Plik<br />-Wymaganie wstępne |
 | IsAssembly | Opcjonalna wartość logiczna. Określa, czy plik jest zestawem. |
 | Widoczne | Opcjonalna wartość logiczna. Wskazuje, czy plik ma być wyświetlany w **Eksplorator rozwiązań** w programie Visual Studio. |
@@ -138,7 +144,7 @@ Reprezentuje pliki, które nie powinny mieć roli w procesie kompilacji.
 | Generator | Wymagany ciąg. Nazwa dowolnego generatora plików uruchamianego na tym elemencie. |
 | LastGenOutput | Wymagany ciąg. Nazwa pliku, który został utworzony przez dowolny Generator plików uruchomiony na tym elemencie. |
 | CustomToolNamespace | Wymagany ciąg. Przestrzeń nazw, w której każdy Generator plików uruchomiony na tym elemencie powinien utworzyć kod. |
-| Link | Opcjonalny ciąg. Ścieżka notacji, która ma być wyświetlana, jeśli plik jest fizycznie zlokalizowany poza wpływem projektu. |
+| Łącze | Opcjonalny ciąg. Ścieżka notacji, która ma być wyświetlana, jeśli plik jest fizycznie zlokalizowany poza wpływem projektu. |
 | Widoczne | Opcjonalna wartość logiczna. Wskazuje, czy plik ma być wyświetlany w **Eksplorator rozwiązań** w programie Visual Studio. |
 | CopyToOutputDirectory | Opcjonalny ciąg. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. nigdy nie<br />2. zawsze<br />3. PreserveNewest |
 

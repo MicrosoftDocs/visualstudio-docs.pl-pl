@@ -1,5 +1,7 @@
 ---
 title: Kompilowanie budynku
+description: Dowiedz się, w jaki sposób używać metody kompilacji środowiska IDE programu Visual Studio, metody tworzenia narzędzi wiersza polecenia MSBuild lub Azure Pipelines metody kompilacji do kompilowania aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2180d535dbdbdc88290a48cf166879525f10b4bb
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: ac65fa9eaaf8e318e99e134957b335141f07577c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928544"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136592"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Kompilowanie i kompilowanie w programie Visual Studio
 

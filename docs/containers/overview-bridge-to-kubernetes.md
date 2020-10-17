@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: a224135e366c7a266defa525772dadf445208f3b
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: afeb612e1d092ebc1f5c33394a62dd9cef6b6a1c
+ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829879"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116106"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Jak działa Mostek na platformę Kubernetes
 
@@ -112,6 +112,8 @@ Mostek do Kubernetes ma następujące ograniczenia:
 
 * Aby można było połączyć się z tą usługą, usługa musi być objęta usługą. Nie można nawiązać połączenia z usługą z wieloma zasobnikami, takimi jak usługa z replikami.
 * Może istnieć tylko jeden kontener uruchomiony w tym pod, aby most Kubernetes pomyślnie nawiązać połączenie. Mostek do Kubernetes nie może nawiązać połączenia z usługami za pomocą zasobników z dodatkowymi kontenerami, takimi jak kontenery przyczepek z systemem.
+* Obecnie mostek do Kubernetesy są kontenerami systemu Linux. Kontenery systemu Windows nie są obsługiwane.
+* Nie można używać izolacji z protokołem HTTPS.
 * Mostek do Kubernetes wymaga podniesionych uprawnień do uruchomienia na komputerze deweloperskim, aby można było edytować plik Hosts.
 * Nie można używać mostu do Kubernetes w przypadku klastrów z włączonym Azure Dev Spaces.
 

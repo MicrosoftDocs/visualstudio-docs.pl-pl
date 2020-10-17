@@ -1,5 +1,7 @@
 ---
 title: Strona kompilowania, Projektant projektu (Visual Basic)
+description: Dowiedz się, jak określić instrukcje kompilacji w programie Visual Studio. Na tej stronie można także określić zaawansowane opcje kompilatora oraz zdarzenia przed kompilacją lub po kompilacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9ffdfe4abbef5701cc060171ecbc379ae3a9215
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.openlocfilehash: 60172d9e308e38967f5ab5a8d882057e78f083c8
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89284320"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136631"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Strona kompilowania, Projektant projektu (Visual Basic)
 
@@ -190,5 +192,5 @@ Kliknij ten przycisk, aby uzyskać dostęp do okna dialogowego **Ustawienia Adva
 ## <a name="see-also"></a>Zobacz też
 
 - [Porady: określanie zdarzeń kompilacji (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Kompilator wiersza polecenia Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
+- [Kompilator Command-Line Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
 - [Porady: tworzenie i edycja konfiguracji](../../ide/how-to-create-and-edit-configurations.md)

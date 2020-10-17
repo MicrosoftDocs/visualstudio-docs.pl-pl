@@ -1,5 +1,7 @@
 ---
 title: Rozwiązywanie problemów i Tworzenie dzienników dla programu MSBuild
+description: Dowiedz się, jak można zdiagnozować problemy z kompilacją w projekcie programu Visual Studio i w razie potrzeby utworzyć dziennik do wysłania do firmy Microsoft w celu zbadania problemu.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2019
 ms.technology: vs-ide-compile
 ms.topic: troubleshooting
@@ -15,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: 24df9f7c44ea2dbb9e9899abf68823683422da71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6b08b243a5b4eec3119ceedbaf2177670aa3e83
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235072"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136579"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Rozwiązywanie problemów i Tworzenie dzienników dla programu MSBuild
 

@@ -1,5 +1,6 @@
 ---
 title: Konfigurowanie projektów pod kątem wielu platform docelowych
+description: Dowiedz się, w jaki sposób program Visual Studio umożliwia rozwiązanie ukierunkowane na kilka różnych architektur procesora CPU lub platform.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2643e7f413a68d820780db80c87818dd0b8b9c03
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ce4dfbf2808071d47e1f84eef660d936181227f3
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036512"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136709"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Instrukcje: Konfigurowanie projektów pod kątem wielu platform docelowych
 
@@ -62,7 +63,7 @@ Ponieważ można zmienić ustawienia na podstawie kombinacji ustawień konfigura
 
    Istnieje możliwość, że platforma na poziomie rozwiązania ma ustawioną wartość, na przykład, [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] i nie ma żadnych projektów w ramach tego rozwiązania przeznaczonych dla tej samej platformy. Istnieje również możliwość, że w rozwiązaniu istnieje wiele projektów, z których każdy jest przeznaczony dla różnych platform. Zaleca się, aby w przypadku jednej z tych sytuacji utworzyć nową konfigurację z opisową nazwą, aby uniknąć nieporozumień.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md)
 - [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md)

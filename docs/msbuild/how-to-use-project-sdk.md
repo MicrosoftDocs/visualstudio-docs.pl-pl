@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdcfc9daf2e1e64d61e2f699e0295826894b1920
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76826474"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136839"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Instrukcje: korzystanie z zestawów SDK projektu MSBuild
 
@@ -66,9 +66,6 @@ Istnieją trzy sposoby odwoływania się do zestawu SDK projektu:
     </Project>
     ```
 
-    > [!NOTE]
-    > Obecnie jedynym obsługiwanym sposobem odwoływania się do zestawu SDK projektu w Visual Studio dla komputerów Mac.
-
 - Użyj elementu najwyższego poziomu `<Sdk/>` :
 
     ```xml
@@ -107,7 +104,7 @@ Podczas oceny importu program MSBuild dynamicznie rozpoznaje ścieżkę do zesta
 
    Ten mechanizm rozwiązywania konfliktów jest aktywny tylko w przypadku wybrania wersji opcjonalnej. Może być używana dla dowolnego niestandardowego zestawu SDK projektu.
    
-- Program rozpoznawania interfejsu wiersza polecenia platformy .NET, który rozwiązuje zestawy SDK instalowane z [interfejsem wiersza polecenia platformy .NET](/dotnet/core/tools/).
+- Program rozpoznawania SDK platformy .NET, który rozwiązuje zestawy SDK programu MSBuild, które są instalowane z [zestawem SDK dla platformy .NET](/dotnet/core/sdk/).
 
    Ten program rozpoznawania nazw lokalizuje zestawy projektów, takie jak `Microsoft.NET.Sdk` i `Microsoft.NET.Sdk.Web` , które są częścią produktu.
    

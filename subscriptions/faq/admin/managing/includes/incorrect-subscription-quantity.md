@@ -1,18 +1,18 @@
 ---
 title: Dlaczego w portalu jest widoczna nieprawidłowa liczba subskrypcji programu Visual Studio w ramach mojej umowy?
 description: Jeśli nie widzisz prawidłowej liczby subskrypcji w ramach umowy, być może wybrano niewłaściwą umowę w...
-ms.faqid: group1_6
+ms.faqid: group1_7
 ms.topic: include
 ms.assetid: d97a767b-148d-488d-a860-778f406d8207
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 133185527db3c6894a64eba0874e7ea0e1b2a95c
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 06713ee3b98997d248bd62513130d8a1db5c016d
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86401670"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92157975"
 ---
 ## <a name="why-is-the-portal-not-showing-the-correct-number-of-visual-studio-subscriptions-for-my-agreement"></a>Dlaczego w portalu jest widoczna nieprawidłowa liczba subskrypcji programu Visual Studio w ramach mojej umowy?
 

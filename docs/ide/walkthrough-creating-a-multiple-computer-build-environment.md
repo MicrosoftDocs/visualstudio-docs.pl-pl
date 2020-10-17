@@ -1,5 +1,6 @@
 ---
 title: tworzenie środowiska kompilowania na wielu komputerach
+description: Utwórz środowisko kompilacji w organizacji, instalując program Visual Studio na komputerze hosta, a następnie kopiując różne pliki i ustawienia na inny komputer.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 595317be1c3f24c9759bc5bb574a758795066659
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1c8fa7756763a668f6e97d90d8a405c660519189
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038429"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136956"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Przewodnik: tworzenie środowiska kompilowania na wielu komputerach
 
@@ -55,7 +56,7 @@ Instalując program Visual Studio na komputerze hosta, należy utworzyć pliki i
 
 1. Na komputerze-hoście Zainstaluj program Visual Studio.
 
-2. Na komputerze kompilacji Zainstaluj .NET Framework 4,5 lub nowszy. Aby sprawdzić, czy jest on zainstalowany, sprawdź, czy wpis **wersji** w podkluczu rejestru **HKEY_LOCAL_MACHINE \software\microsoft\net Framework Setup\NDP\v4\Full** ma wartość **4,5** lub wyższą.
+2. Na komputerze kompilacji Zainstaluj .NET Framework 4,5 lub nowszy. Aby sprawdzić, czy jest on zainstalowany, sprawdź, czy wpis **wersji** w podkluczu rejestru **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** ma wartość **4,5** lub wyższą.
 
 ## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>Kopiuj pliki z komputera hosta do komputera kompilacji
 
@@ -193,7 +194,7 @@ Należy zauważyć, że nazwa folderu *Program Files* jest zależna od zainstalo
 
 Aby skonfigurować ustawienia dla programu MSBuild, należy utworzyć wpisy rejestru.
 
-1. Zidentyfikuj folder nadrzędny dla wpisów rejestru. Wszystkie wpisy rejestru są tworzone pod tym samym kluczem nadrzędnym. Na komputerze z procesorem x86 klucz nadrzędny jest **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft**. Na komputerze z procesorem x64 klucz nadrzędny jest **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft**. Niezależnie od architektury systemu, ten Instruktaż odwołuje się do klucza nadrzędnego jako% RegistryRoot%.
+1. Zidentyfikuj folder nadrzędny dla wpisów rejestru. Wszystkie wpisy rejestru są tworzone pod tym samym kluczem nadrzędnym. Na komputerze z procesorem x86 klucz nadrzędny jest **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. Na komputerze z procesorem x64 klucz nadrzędny jest **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**. Niezależnie od architektury systemu, ten Instruktaż odwołuje się do klucza nadrzędnego jako% RegistryRoot%.
 
     > [!NOTE]
     > Jeśli architektura komputera hosta różni się od wersji komputera kompilacji, upewnij się, że na każdym komputerze użyto odpowiedniego klucza nadrzędnego. Jest to szczególnie ważne w przypadku automatyzowania procesu eksportu.
@@ -407,7 +408,7 @@ Można utworzyć środowisko kompilacji, które można wdrożyć na różnych ko
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przygotowanie maszyny testowej do uruchomienia debugowania pliku wykonywalnego](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [Dokumentacja wiersza polecenia](../msbuild/msbuild-command-line-reference.md)

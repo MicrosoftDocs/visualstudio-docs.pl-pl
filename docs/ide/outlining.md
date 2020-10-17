@@ -1,6 +1,8 @@
 ---
 title: Zwijanie i rozwijanie regionów kodu
-ms.date: 11/04/2016
+description: Dowiedz się, jak używać poleceń rozwijania i zwijania do pracy w trybie konspektu w programie Visual Studio
+ms.custom: SEO-VS-2020
+ms.date: 10/15/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - outlining
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ad01726b57073cad3a5a2876a4b22667d3770a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e45d7192c35ed60442fadf1a3eb302997fbaf381
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545447"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136670"
 ---
 # <a name="outlining"></a>Tworzenie konspektu
 
@@ -36,14 +38,14 @@ Gdy Pracujesz w kodzie konspektu, możesz rozwinąć sekcje, nad którymi chcesz
 Polecenia **Cofnij** i **Wykonaj ponownie** w menu **Edycja** mają wpływ na te akcje. Operacje **kopiowania**, **wycinania**, **wklejania**oraz przeciągania i upuszczania zachowują informacje z konspektu, ale nie stan regionu zwijanego. Na przykład podczas kopiowania regionu, który jest zwinięty, operacja **wklejania** spowoduje wklejenie skopiowanego tekstu jako rozwiniętego regionu.
 
 > [!CAUTION]
-> Po zmianie regionu obramowania może dojść do utraty konspektu. Na przykład operacje usuwania lub znajdowania i zamieniania mogą wymazać koniec regionu.
+> Po zmianie regionu obramowania może dojść do utraty konspektu. Na przykład operacje usuwania lub **znajdowania i zamieniania** mogą wymazać koniec regionu.
 
 Poniższe polecenia można znaleźć w podmenu **Edytuj**  >  **Konspekt** .
 
 |Nazwa|Opis|
 |-|-|
 |Ukryj zaznaczenie|(**Ctrl** + **M**, **Ctrl** + **H**) — zwija wybrany blok kodu, który zwykle nie jest dostępny do tworzenia konspektu, na przykład `if` blok. Aby usunąć region niestandardowy, Użyj przycisk **Zatrzymaj ukrywanie bieżące** (lub **Ctrl** + **M**, **Ctrl** + **U**). Niedostępne w Visual Basic.|
-|Przełącz rozszerzanie konspektu|-Odwraca bieżący ukryty lub rozwinięty stan wewnętrznej sekcji tworzenia konspektu, gdy kursor znajduje się w zagnieżdżonej zwijanej sekcji.|
+|Przełącz rozszerzanie konspektu| (**Ctrl** + **M**, **Ctrl** + **m**) — odwraca bieżący ukryty lub rozwinięty stan wewnętrznej sekcji tworzenia konspektu, gdy kursor znajduje się w zagnieżdżonej zwijanej sekcji.|
 |Przełącz wszystkie konspekty|(**Ctrl** + **M**, **Ctrl** + **L**) — ustawia wszystkie regiony na ten sam stan zwinięte lub rozwinięte. Jeśli niektóre regiony są rozwinięte i zwinięte, zwijane regiony są rozwinięte.|
 |Zatrzymaj tworzenie konspektu|(**Ctrl** + **M**, **Ctrl** + **P**) — usuwa wszystkie informacje dotyczące tworzenia konspektu dla całego dokumentu.|
 |Przestań ukrywać bieżące|(**Ctrl** + **M**, **Ctrl** + **U**) — usuwa informacje z konspektu dla aktualnie wybranego regionu zdefiniowanego przez użytkownika. Niedostępne w Visual Basic.|

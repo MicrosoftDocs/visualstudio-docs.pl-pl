@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dfcdcfc309fb951b2f7e490f0d03dcfe9d381b83
+ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810122"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116153"
 ---
 # <a name="developer-community-guidelines"></a>Wytyczne od społeczności deweloperów
 
@@ -59,11 +59,13 @@ Segregowania problemu to wieloetapowy proces, który jest wspólnie wykonywany w
 
 Po zgłoszeniu problemu Stany wskazują, gdzie Twoje zgłoszenia są w cyklu życia. Ponieważ zespoły produktów Visual Studio przeglądają swoją opinię, ustawiają ją z odpowiednim stanem. Śledź postępy raportów o problemach, odwołując się do [stanów problemów i często ZAdawanych pytań](./report-a-problem.md).
 
+### <a name="prioritizing-which-issues-to-fix"></a>Określanie priorytetów problemów do naprawy
+
+Nie można rozwiązać całego zgłoszonego problemu. Niektóre są zbyt kosztowne do naprawienia, niektóre mogą odkładać inne obszary funkcji, a niektóre z nich mogą mieć zbyt niski wpływ. Zdajemy sobie sprawę z tego, że może to być Disappointing, jeśli czas wysłania do nas raportu o problemie został pobrany. Wszystkie te dane zostały tam utworzone, niezależnie od tego, czy w tym projekcie, czy w innych współautorach. Jeśli problem został zamknięty i uważasz, że powód nie jest zgodny, możesz wyjaśnić swój przypadek użycia i zażądać ponownego uaktywnienia problemu dla innego przebiegu. W tym momencie możemy zażądać dalszych informacji.
+
+### <a name="missing-important-information"></a>Brak ważnych informacji
+
 Gdy w przypadku problemu brakuje ważnych informacji, przypiszemy stan _więcej informacji_ . Prosimy o problem z konkretnymi informacjami, których potrzebujemy, i otrzymasz powiadomienie e-mail. Jeśli nie otrzymasz informacji w ciągu siedmiu dni, wyślemy Ci przypomnienie. Po tym czasie będziemy zamykać bilet po 14 dniach braku aktywności.
-
-### <a name="wont-fix-bugs"></a>Nie naprawianie usterek
-
-Niektóre usterki są zamykane w przypadku niekorzystnego zrównoważenia kosztów. Na przykład, Jeśli poprawka jest tak skomplikowana, ryzyko związane z ryzykiem IT dla wielu użytkowników, naprawianie może być nieuzasadnione. Po zamknięciu usterki w takiej sytuacji wyjaśnimy, dlaczego to zrobimy.
 
 ### <a name="other-product"></a>Inny produkt
 
