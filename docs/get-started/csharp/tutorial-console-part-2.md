@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 981f18857beb83ef2a4902f50985ca8e9f7ed901
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd0d2b3e112a4bf08481fa8f043f70121d827010
+ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88507959"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92197481"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Samouczek: zwiększanie prostej aplikacji konsolowej w języku C#
 
@@ -120,9 +120,10 @@ Kod w języku rzeczywistym obejmuje wiele projektów współpracujących w rozwi
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>Dokumentacja bibliotek platformy .NET: zapisywanie w dzienniku
 
-1. Załóżmy, że chcesz teraz dodać dziennik wszystkich operacji i zapisać go w pliku tekstowym. Klasa platformy .NET `Trace` udostępnia tę funkcję. (Przydatne jest również w przypadku podstawowych technik debugowania drukowania).  Klasa śledzenia znajduje się w System. Diagnostics, więc Zacznij od dodania dyrektywy using:
+1. Załóżmy, że chcesz teraz dodać dziennik wszystkich operacji i zapisać go w pliku tekstowym. Klasa platformy .NET `Trace` udostępnia tę funkcję. (Przydatne jest również w przypadku podstawowych technik debugowania drukowania).  Klasa śledzenia znajduje się w System. Diagnostics, a wymagane są klasy System.IO `StreamWriter` , więc Zacznij od dodania dyrektyw using:
 
    ```csharp
+   using System.IO;
    using System.Diagnostics;
    ```
 
@@ -217,7 +218,7 @@ Kod w języku rzeczywistym obejmuje wiele projektów współpracujących w rozwi
 
    Pakiet zostanie pobrany i dodany do projektu, a nowy wpis zostanie wyświetlony w węźle odwołania w **Eksplorator rozwiązań**.
 
-1. Dodaj dyrektywę using dla Newtonsoft.Jsw pakiecie na początku *CalculatorLibrary.cs*.
+1. Dodaj dyrektywę using dla System.IO i Newtonsoft.Jsw pakiecie na początku *CalculatorLibrary.cs*.
 
    ```csharp
    using Newtonsoft.Json;
@@ -307,7 +308,7 @@ Kod w języku rzeczywistym obejmuje wiele projektów współpracujących w rozwi
         }
    ```
 
-1. Skompiluj i uruchom aplikację, a po zakończeniu wprowadzania kilku operacji Zamknij aplikację prawidłowo, używając polecenia "n".  Teraz otwórz consolelog.jsw pliku i powinien wyglądać podobnie do poniższego:
+1. Skompiluj i uruchom aplikację, a po zakończeniu wprowadzania kilku operacji Zamknij aplikację prawidłowo, używając polecenia "n".  Teraz otwórz calculatorlog.jsw pliku i powinien wyglądać podobnie do poniższego:
 
    ```json
    {

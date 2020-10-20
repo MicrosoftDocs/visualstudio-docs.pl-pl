@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 1563efb15f98720352a25eec59c8eca045f77ddc
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 03e5f806b428b7ecf08038ef34d6b1dddcd92f9e
+ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91025331"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92210949"
 ---
 *Zintegrowane środowisko programistyczne* programu Visual Studio to twórczy pad do uruchamiania, który umożliwia edytowanie, debugowanie i kompilowanie kodu, a następnie publikowanie aplikacji. Zintegrowane środowisko programistyczne (IDE) to program bogaty w funkcje, który może być używany w wielu aspektach tworzenia oprogramowania. W porównaniu z standardowym edytorem i debugerem, który środowisk IDE zapewnia, program Visual Studio obejmuje kompilatory, narzędzia do uzupełniania kodu, graficzne projektanci i wiele innych funkcji, które ułatwiają proces tworzenia oprogramowania.
 
@@ -91,12 +91,9 @@ Niektóre popularne funkcje programu Visual Studio, które ułatwiają wydajniej
 
    ![Lista elementów członkowskich programu Visual Studio](../media/intellisense-list-members.png)
 
-- Pole wyszukiwania
+- [Wyszukiwanie w programie Visual Studio](../../ide/visual-studio-search.md)
 
-   Program Visual Studio może pozornie przeciążać, tak jak wiele menu, opcji i właściwości. Pole wyszukiwania to doskonały sposób na szybkie znajdowanie potrzebnych informacji w programie Visual Studio. Po rozpoczęciu wpisywania nazwy szukanego elementu program Visual Studio Wyświetla listę wyników, które dokładnie zapoznają się z tym, co należy zrobić. Aby dodać funkcję do programu Visual Studio, na przykład w celu dodania obsługi dodatkowego języka programowania, w polu wyszukiwania znajdują się wyniki otwierające Instalator programu Visual Studio w celu zainstalowania obciążenia lub pojedynczego składnika.
-
-   > [!TIP]
-   > Naciśnij klawisz **Ctrl** + **Q** jako skrót do pola wyszukiwania.
+   Program Visual Studio może pozornie przeciążać, tak jak wiele menu, opcji i właściwości. Visual Studio Search (**Ctrl** + **Q**) to doskonały sposób na szybkie znajdowanie funkcji i kodu środowiska IDE w jednym miejscu.
 
    ::: moniker range="vs-2017"
 
@@ -109,6 +106,8 @@ Niektóre popularne funkcje programu Visual Studio, które ułatwiają wydajniej
    ::: moniker range="vs-2019"
 
    ![Pole wyszukiwania w programie Visual Studio 2019](../media/vs-2019/quick-launch-nuget.png)
+
+    Aby uzyskać informacje i porady dotyczące produktywności, zobacz [jak używać programu Visual Studio Search](../../ide/visual-studio-search.md).
 
    ::: moniker-end
 
