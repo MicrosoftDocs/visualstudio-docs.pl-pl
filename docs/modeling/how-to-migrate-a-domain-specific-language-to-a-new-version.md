@@ -1,18 +1,20 @@
 ---
-title: 'Porady: migracja języka specyficznego dla domeny do nowej wersji'
+title: 'Instrukcje: Migrowanie projektu języka Domain-Specific'
+description: Zawiera informacje na temat sposobu migrowania projektu języka specyficznego dla domeny do nowszej wersji programu Visual Studio.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: f8bdaea1267d0bf69078aec5739291e72db8dfda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dacb13ef14768f4f59a414f6159bbea8d24c4de8
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532614"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "92298410"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Porady: migracja języka specyficznego dla domeny do nowej wersji
 Można migrować projekty, które definiują i używają języka specyficznego dla domeny, do [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] wersji programu [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , która została dystrybuowana z programem [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] .

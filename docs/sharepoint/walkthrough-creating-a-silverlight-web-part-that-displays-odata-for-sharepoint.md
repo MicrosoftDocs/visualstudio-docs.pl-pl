@@ -1,5 +1,6 @@
 ---
 title: Utwórz składnik Web Part Silverlight, który umożliwia wyświetlanie protokołu OData dla programu SharePoint
+titleSuffix: ''
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75653f0357bcc605e666ee271a527b616985b641
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017174"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298501"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Przewodnik: Tworzenie składnika Web Part programu Silverlight wyświetlającego Protokół OData dla programu SharePoint
   Program SharePoint 2010 udostępnia swoje dane listy za pomocą protokołu OData. W programie SharePoint usługa OData jest implementowana przez usługę RESTful Service ListData. svc. W tym instruktażu pokazano, jak utworzyć składnik Web Part programu SharePoint, który jest hostem aplikacji Silverlight. Aplikacja Silverlight wyświetla informacje o liście anonsów programu SharePoint za pomocą ListData. svc. Aby uzyskać więcej informacji, zobacz [Interfejs REST programu SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) i [Open Data Protocol](https://www.odata.org/).
@@ -68,7 +69,7 @@ ms.locfileid: "86017174"
 
 #### <a name="to-customize-the-silverlight-application"></a>Aby dostosować aplikację Silverlight
 
-1. Dodaj odwołanie do zestawu do elementu System. Windows. Data w aplikacji Silverlight. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodawanie odwołania](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+1. Dodaj odwołanie do zestawu do elementu System. Windows. Data w aplikacji Silverlight. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodawanie odwołania](/previous-versions/wkze6zky(v=vs.140)).
 
 2. W **Eksplorator rozwiązań**Otwórz menu skrótów dla **odwołań**, a następnie wybierz **Dodaj odwołanie do usługi**.
 

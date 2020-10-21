@@ -5,19 +5,19 @@ description: Lista wydanych wersji i numery kompilacji dla programu Visual Studi
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 10/13/2020
+ms.date: 10/20/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 3c012f8adddb4d9519d9541b26a24684c6f55341
-ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
+ms.openlocfilehash: 8bbaf2435202293d1580083d42a145f590c5e02d
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92039790"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298672"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -29,10 +29,11 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.7.6 | Release | 13 października 2020 | 16.7.30611.23 |
-| 16.8.0 | Wersja zapoznawcza 4 | 13 października 2020 | 16.8.30608.117 |
-| 16.0.19 | Release | 13 października 2020 | 16.0.28803.846 |
-| 16.4.14 | Release | 13 października 2020 | 16.4.30607.51 |
+| 16.8.0 | Wersja zapoznawcza 5 | 20 października 2020 | 16.8.30615.102 |
+| 16.7.6 | Release | 13 października 2020 r. | 16.7.30611.23 |
+| 16.8.0 | Wersja zapoznawcza 4 | 13 października 2020 r. | 16.8.30608.117 |
+| 16.0.19 | Release | 13 października 2020 r. | 16.0.28803.846 |
+| 16.4.14 | Release | 13 października 2020 r. | 16.4.30607.51 |
 | 16.8.0 | Wersja zapoznawcza 3,2 | 29 września 2020 r. | 16.8.30524.135 |
 | 16.7.5 | Release | 29 września 2020 r. |  16.7.30523.141 |
 | 16.8.0 | Wersja zapoznawcza 3,1 | 22 września, 2020 | 16.8.30516.212 |
@@ -78,7 +79,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 | 16.4.7 | Release | 14 kwietnia 2020 r. | 16.4.30011.19 |
 | 16.5.4 | Release | 14 kwietnia 2020 r. | 16.5.30011.22 |
 | 16.5.3 | Release | 7 kwietnia 2020 r. | 16.5.30002.166 |
-| 16.6.0 | Wersja zapoznawcza 2,1 | 2 kwietnia 2020 | 16.6.30001.183 |
+| 16.6.0 | Wersja zapoznawcza 2,1 | 2 kwietnia 2020 r. | 16.6.30001.183 |
 | 16.5.2 | Release | 31 marca 2020 r. | 16.5.29926.136 |
 | 16.6.0 | Preview 2 | 26 marca 2020 | 16.6.29924.181 |
 | 16.5.1 | Release | 24 marca 2020 r. | 16.5.29920.165 |
@@ -184,7 +185,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.9.28 | Release | 13 października 2020 | 15.9.28307.1274 |
+| 15.9.28 | Release | 13 października 2020 r. | 15.9.28307.1274 |
 | 15.9.27 | Release | 8 września 2020 r. | 15.9.28307.1259 |
 | 15.9.26 | Release | 11 sierpnia 2020 r. | 15.9.28307.1234 |
 | 15.9.25 | Release | 14 lipca 2020 r. | 15.9.28307.1216 |
@@ -219,13 +220,13 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 | 15.9.4 | Release | 11 grudnia 2018 | 15.9.28307.222 |
 | 15.0.20 | Release | 11 grudnia 2018 | 15.0.26228.64 |
 | 15.9.3 | Release | 28 listopada 2018 r. | 15.9.28307.145 |
-| 15.9.2 | Release | 19 listopada 2018 | 15.9.28307.108 |
+| 15.9.2 | Release | 19 listopada 2018 r. | 15.9.28307.108 |
 | 15.9.1 | Release | 15 listopada 2018 | 15.9.28307.105 |
 | 15.9.0 | Release | 13 listopada 2018 | 15.9.28307.53 |
 | 15.9.0 wersja zapoznawcza 6 | Wersja zapoznawcza | 13 listopada 2018 | 15.9.28307.53 |
 | 15.9.0 wersja zapoznawcza 5 | Wersja zapoznawcza | 6 listopada 2018 | 15.9.28302.56 |
 | 15.8.9 | Release | 2 listopada 2018 r. | 15.8.28010.2050 |
-| 15.8.8 | Release | 24 października 2018 | 15.8.28010.2048 |
+| 15.8.8 | Release | 24 października 2018 r. | 15.8.28010.2048 |
 | 15.9.0 (wersja zapoznawcza 4) | Wersja zapoznawcza | 23 października 2018 r. | 15.9.28219.56 |
 | 15.8.7 | Release | 10 października 2018 | 15.8.28010.2046 |
 | 15.0.19 | Release | 10 października 2018 | 15.0.26228.57 |
@@ -261,7 +262,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 | 15.7.0 wersja zapoznawcza 5 | Wersja zapoznawcza | 26 kwietnia 2018 | 15.7.27625.0 |
 | 15.6.7 | Release | 26 kwietnia 2018 | 15.6.27428.2043 |
 | 15.0.13 | Release | 26 kwietnia 2018 | 15.0.26228.31 |
-| 15.7.0 (wersja zapoznawcza 4) | Wersja zapoznawcza | 18 kwietnia 2018 | 15.7.27617.1 |
+| 15.7.0 (wersja zapoznawcza 4) | Wersja zapoznawcza | 18 kwietnia 2018 r. | 15.7.27617.1 |
 | 15.6.6 | Release | 10 kwietnia 2018 r. | 15.6.27428.2037 |
 | 15.0.12 | Release | 10 kwietnia 2018 r. | 15.0.26228.30 |
 | 15.7.0 (wersja zapoznawcza 3) | Wersja zapoznawcza | 9 kwietnia 2018 | 15.7.27604.0 |
@@ -315,7 +316,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 | 15.0.5 | Release | 18 września, 2017 | 15.0.26228.16 |
 | 15.3.4 | Release | 12 września 2017 | 15.0.26730.15 |
 | 15,4 wersja zapoznawcza 2 | Wersja zapoznawcza | 11 września 2017 r. | 15.0.26906.1 |
-| 15.3.3| Release | 29 sierpnia 2017 | 15.0.26730.12 |
+| 15.3.3| Release | 29 sierpnia 2017 r. | 15.0.26730.12 |
 | 15,4 wersja zapoznawcza 1 | Wersja zapoznawcza | 24 sierpnia 2017 | 15.0.26823.01 |
 | 15.3.2 | Release | 22 sierpnia 2017 | 15.0.26730.10 |
 | 15.3.1 | Release | 18 sierpnia 2017 | 15.0.26730.08 |

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 03/02/2020
+ms.date: 10/20/2020
 ms.topic: conceptual
 description: Logowanie może zakończyć się niepowodzeniem w przypadku używania aliasów lub przyjaznych nazw
-ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c5c211cd674e86edc4528e6e2c5e75bd5b02132d
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006218"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298182"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Logowanie się do subskrypcji programu Visual Studio może zakończyć się niepowodzeniem podczas korzystania z aliasów
 W zależności od typu konta użytego do zalogowania się dostępne subskrypcje mogą nie być poprawnie wyświetlane podczas logowania do programu [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) . Jedną z potencjalnych przyczyn jest użycie "aliasów" lub "przyjaznych nazw" zamiast tożsamości logowania, do której przypisano subskrypcję. Jest to nazywane "aliasem".
@@ -33,10 +33,10 @@ Można napotkać niezgodność nazw UPN, gdy firma ma Active Directory skonfigur
 
 1. Zaloguj się https://my.visualstudio.com/subscriptions przy użyciu adresu logowania wymienionego w wiadomości e-mail dotyczącej przypisania subskrypcji.
 
-2. Sprawdź, czy adres e-mail logowania wyświetlany w prawym górnym rogu strony jest zgodny z adresem użytym do zalogowania.  Jeśli tak nie jest, nazwa UPN jest niezgodna i nie będzie można wyświetlić subskrypcji. 
+2. Kliknij swoją nazwę w prawym górnym rogu strony.  Spowoduje to otwarcie Twojego profilu.  Sprawdź, czy adres e-mail logowania podany w profilu jest zgodny z adresem użytym do zalogowania.  Jeśli tak nie jest, nazwa UPN jest niezgodna i nie będzie można wyświetlić subskrypcji. 
 
 > [!div class="mx-imgBorder"]
-> ![Adres e-mail logowania](_img//aliasing/sign-in-email.png "Upewnij się, że adres e-mail wyświetlany w prawym górnym rogu jest zgodny z identyfikatorem używanym do logowania.")
+> ![Adres e-mail logowania](_img//aliasing/sign-in-email.png "Upewnij się, że adres e-mail wyświetlany w Twoim profilu jest zgodny z identyfikatorem używanym do logowania.")
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>Jak naprawić niezgodność nazw UPN
 

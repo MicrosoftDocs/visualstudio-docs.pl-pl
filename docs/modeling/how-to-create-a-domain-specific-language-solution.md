@@ -13,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c47b16bbb9fe5eb352171e6e1cf4c13890890265
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541794"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298658"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Porady: tworzenie rozwiązania języka właściwego dla domeny
 Język specyficzny dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowanego rozwiązania programu Visual Studio.
@@ -33,7 +33,7 @@ Przed rozpoczęciem tej procedury należy zainstalować następujące składniki
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="creating-a-domain-specific-language-solution"></a>Tworzenie rozwiązania dotyczącego języka specyficznego dla domeny
+## <a name="creating-a-domain-specific-language-solution"></a>Tworzenie rozwiązania języka Domain-Specific
 
 1. Uruchom Kreatora DSL, tworząc nowy projekt **Projektant języka specyficznego dla domeny** .
 
@@ -48,9 +48,9 @@ Przed rozpoczęciem tej procedury należy zainstalować następujące składniki
 
 2. Wybierz szablon DSL.
 
-    Na stronie **Wybieranie opcji języka specyficznego dla domeny** wybierz jeden z szablonów rozwiązań, takich jak **minimalny język**. Wybierz szablon, który jest podobny do DSL, które chcesz utworzyć.
+    Na stronie **Wybierz Opcje języka Domain-Specific** wybierz jeden z szablonów rozwiązań, takich jak **minimalny język**. Wybierz szablon, który jest podobny do DSL, które chcesz utworzyć.
 
-    Aby uzyskać więcej informacji na temat szablonów rozwiązań, zobacz [Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny](../modeling/choosing-a-domain-specific-language-solution-template.md).
+    Aby uzyskać więcej informacji na temat szablonów rozwiązań, zobacz [Wybieranie szablonu rozwiązania Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
 3. Wprowadź rozszerzenie nazwy pliku na stronie **rozszerzenia pliku** . Powinna być unikatowa w komputerze i na wszystkich komputerach, na których ma zostać zainstalowana linia DSL. Powinien zostać wyświetlony komunikat **Brak aplikacji lub edytorów programu Visual Studio korzystających z tego rozszerzenia**.
 
@@ -70,7 +70,7 @@ Przed rozpoczęciem tej procedury należy zainstalować następujące składniki
 
 ### <a name="solution-settings-page"></a>Strona Ustawienia rozwiązania
  **Który szablon ma być oparty na języku specyficznym dla domeny?**
-Wybierz szablon, który jest podobny do DSL, które chcesz utworzyć. Różne szablony zapewniają wygodne punkty startowe. Po wybraniu szablonu rozwiązania Kreator wyświetli opis. Aby uzyskać więcej informacji na temat szablonów rozwiązań, zobacz [Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny](../modeling/choosing-a-domain-specific-language-solution-template.md).
+Wybierz szablon, który jest podobny do DSL, które chcesz utworzyć. Różne szablony zapewniają wygodne punkty startowe. Po wybraniu szablonu rozwiązania Kreator wyświetli opis. Aby uzyskać więcej informacji na temat szablonów rozwiązań, zobacz [Wybieranie szablonu rozwiązania Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
  **Jak chcesz nazwać język specyficzny dla domeny?**
 Wartość domyślna to nazwa rozwiązania. Kod jest generowany na podstawie tej wartości. Musi być prawidłowy jako nazwa klasy C#.
@@ -114,9 +114,9 @@ Ta wartość domyślna to nazwa składająca się z nazwy firmy i produktów.
 
  **Użyj istniejącego klucza silnej nazwy** Użyj tej opcji, jeśli chcesz zintegrować DSL z innym zestawem.
 
- Aby uzyskać więcej informacji na temat silnego nazewnictwa, zobacz [Tworzenie i używanie zestawów o silnej nazwie](/dotnet/standard/assembly/create-use-strong-named).
+ Aby uzyskać więcej informacji na temat silnego nazewnictwa, zobacz [Tworzenie i używanie zestawów Strong-Named](/dotnet/standard/assembly/create-use-strong-named).
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
-- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](/previous-versions/bb126564(v=vs.100))

@@ -1,5 +1,6 @@
 ---
-title: 'Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania'
+title: Zmienianie projektu przy użyciu wizualizacji i modelowania
+description: Omówienie narzędzi do wizualizacji i modelowania w programie Visual Studio.
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -12,15 +13,16 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio ALM], modeling software
 author: JoshuaPartlow
 ms.author: joshuapa
+ms.custom: SEO-VS-2020
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db584adc01a3f0f161d451d73df6a8deab08b869
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6ad330c083a97e8a098f05a9e0398a806a9153b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238897"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "92298587"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania
 
@@ -81,7 +83,7 @@ W poniższej tabeli opisano role, które te narzędzia mogą odtwarzać na róż
 
 |Narzędzie/rola|Modelowanie wymagań użytkownika|Modelowanie procesów firmy|Projekt architektury systemowej &|Wizualizacja kodu & Eksploracja|Weryfikacja|
 |------|-|-|-|-|-|
-|Diagram języka specyficznego dla domeny (DSL)|Tak|Tak|Tak|||
+|Diagram języka Domain-Specific (DSL)|Tak|Tak|Tak|||
 |Diagram zależności, walidacja warstwy|||Tak|Tak|Tak|
 |Mapa kodu|||Tak|Tak|Tak|
 |Projektant klas (oparty na kodzie)||||Tak||
@@ -214,9 +216,9 @@ W miarę postępów prac zespoły aktualizują swoje elementy robocze, aby odzwi
 
 Zobacz:
 
-- [Informacje o narzędziach Agile i zarządzaniu projektami Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
+- [Informacje o narzędziach Agile i zarządzaniu projektami Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)
 
-- [Wykresy, pulpity nawigacyjne i widżety (Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts)
+- [Wykresy, pulpity nawigacyjne i widżety (Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts&preserve-view=true)
 
 - [Tworzenie zaległości i zadań przy użyciu projektu](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
@@ -236,13 +238,13 @@ Aby upewnić się, że kod jest zgodny z projektem, zespoły konfigurują kompil
 
 Zobacz:
 
-- [Testowanie aplikacji](/azure/devops/test/overview?view=vsts)
+- [Testowanie aplikacji](/azure/devops/test/overview?view=vsts&preserve-view=true)
 
 - [Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)
 
-- [Użyj kontroli wersji](/azure/devops/repos/tfvc/overview?view=azure-devops)
+- [Użyj kontroli wersji](/azure/devops/repos/tfvc/overview?view=azure-devops&preserve-view=true)
 
-- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)
+- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>Aktualizowanie systemu przy użyciu wizualizacji i modelowania
 
@@ -484,5 +486,5 @@ Diagramy zależności pomagają:
 
 - [Tworzenie wizualizacji kodu](../modeling/visualize-code.md)
 - [Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)
-- [Używanie modeli w programowaniu Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Używanie modeli w programowaniu Agile](/previous-versions/ff398061(v=vs.140))
 - [Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)

@@ -1,5 +1,6 @@
 ---
-title: 'Przewodnik: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do programu Visual Studio | Microsoft Docs'
+title: 'Przewodnik: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,14 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a589f14ea60d50c0062d85be81523f27c81b455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6680c6ff95808db56e5bb32e02e0775c935011
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015705"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298037"
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Przewodnik: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do programu Visual Studio
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Przewodnik: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer
+
   W tym instruktażu przedstawiono sposób importowania przepływu pracy wielokrotnego użytku utworzonego w programie SharePoint Designer 2010 do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu przepływu pracy programu SharePoint.
 
  Przepływy pracy utworzone w projektancie programu SharePoint lub *deklaracyjne przepływy pracy*składają się z [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instrukcji zamiast kodu. Program SharePoint Designer 2010 wprowadza *przepływy pracy wielokrotnego użytku*, które są przenośnymi, deklaratywnymi przepływami pracy, które mogą być używane przez różne listy w witrynach programu SharePoint.

@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 4d2f2e2a698063dfb5ac6261d8a9b01a073d112e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 389fe1491a92cacecd772244c2a0facd0d12c887
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173894"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "92298755"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Zdalne debugowanie ASP.NET Core na zdalnym komputerze IIS w programie Visual Studio
 
@@ -53,7 +53,7 @@ Ten artykuł zawiera instrukcje dotyczące konfigurowania podstawowej konfigurac
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Tworzenie aplikacji ASP.NET Core na komputerze z Visual Studio
 
-1. Utwórz nową aplikację sieci Web ASP.NET Core. 
+1. Utwórz nową aplikację sieci Web ASP.NET Core.
 
     ::: moniker range=">=vs-2019"
     W programie Visual Studio 2019 **naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz ASP.NET**, wybierz pozycję **Szablony**, a następnie wybierz pozycję **Utwórz nową ASP.NET Core aplikacji sieci Web**. W wyświetlonym oknie dialogowym wpisz nazwę projektu **MyASPApp**, a następnie wybierz pozycję **Utwórz**. Następnie wybierz pozycję **aplikacja sieci Web (Model-View-Controller)**, a następnie wybierz pozycję **Utwórz**.
@@ -209,7 +209,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 
 6. Wpisz pierwszą literę nazwy procesu, aby szybko znaleźć aplikację.
 
-    * Jeśli używasz [modelu hostingu w procesie](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) na serwerze IIS, wybierz właściwy proces **w3wp.exe** . Począwszy od platformy .NET Core 3, jest to ustawienie domyślne.
+    * Jeśli używasz [modelu hostingu w procesie](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models) na serwerze IIS, wybierz właściwy proces **w3wp.exe** . Począwszy od platformy .NET Core 3, jest to ustawienie domyślne.
 
     * W przeciwnym razie wybierz proces **dotnet.exe** . (Jest to model hostingu poza procesem).
 

@@ -1,5 +1,6 @@
 ---
-title: Aktualizowanie dostosowań wstążki w projektach pakietu Office migrowanych do .NET Framework 4, 4,5
+title: Aktualizowanie dostosowań Wstążki migrowanych do .NET Framework 4,5
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7d7ab5755f592e57e76dcd68f3dcb9dc2a7eab9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8024d6fba419dfe437ca8492010c7e4786861862
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254348"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298603"
 ---
-# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizowanie dostosowań wstążki w projektach pakietu Office migrowanych do .NET Framework 4 lub .NET Framework 4,5
+# <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>Aktualizowanie dostosowań Wstążki migrowanych do .NET Framework 4,5
+
   Jeśli projekt zawiera dostosowaną Wstążkę, która została utworzona przy użyciu elementu projektu **wstążka (projektant graficzny)** , należy wprowadzić następujące zmiany w kodzie projektu, jeśli struktura docelowa zostanie zmieniona na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później.
 
 - Zmodyfikuj wygenerowany kod wstążki.
@@ -148,7 +150,7 @@ ms.locfileid: "71254348"
 
  Poniższa tabela zawiera listę zdarzeń wstążki i delegatów skojarzonych z nimi w projektach przeznaczonych dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszych.
 
-|Wydarzenie|Delegat do użycia w [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] projektach i nowszych|
+|Zdarzenie|Delegat do użycia w [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] projektach i nowszych|
 |-----------| - |
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> zdarzenie w wygenerowanej klasie wstążki|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|

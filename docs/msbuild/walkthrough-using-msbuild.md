@@ -1,6 +1,7 @@
 ---
-title: 'Przewodnik: korzystanie z programu MSBuild | Microsoft Docs'
-ms.date: 03/20/2019
+title: Korzystanie z programu MSBuild
+description: Poznaj różne części pliku projektu programu MSBuild, w tym elementy, metadane elementów, właściwości, elementy docelowe i zadania.
+ms.date: 10/19/2020
 ms.topic: conceptual
 ms.custom: contperfq2
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f074e69f23e20ecb92d32efb69fe011c0dbf797
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: b26c13765daf5a82a9961e6509b36e24e18f4e0c
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91134821"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298546"
 ---
 # <a name="walkthrough-use-msbuild"></a>Przewodnik: korzystanie z programu MSBuild
 
@@ -29,6 +30,24 @@ MSBuild to platforma kompilacji dla programu Microsoft i programu Visual Studio.
 - Jak używać elementów kompilacji.
 
 Program MSBuild można uruchomić z programu Visual Studio lub z **okna poleceń**. W tym instruktażu utworzysz plik projektu MSBuild przy użyciu programu Visual Studio. Można edytować plik projektu w programie Visual Studio i użyć **okna polecenia** do skompilowania projektu i przeanalizowania wyników.
+
+## <a name="install-msbuild"></a>Instalowanie programu MSBuild
+
+::: moniker range="vs-2017"
+
+Jeśli masz program Visual Studio, masz już zainstalowany program MSBuild. Aby zainstalować program MSBuild 15 w systemie, który nie ma programu Visual Studio, przejdź do pozycji [Visual Studio starsze pliki do pobrania](https://visualstudio.microsoft.com/vs/older-downloads/), rozwiń **program Visual Studio 2017** i wybierz przycisk **Pobierz** . Jeśli masz subskrypcję programu Visual Studio, zaloguj się i Znajdź link, aby pobrać najnowszą wersję **narzędzi kompilacji dla programu Visual Studio 2017**. Jeśli nie masz subskrypcji programu Visual Studio, nadal możesz zainstalować najnowszą wersję narzędzi do kompilacji. Na tej stronie Użyj selektora wersji, aby przełączyć się na wersję 2019 strony i postępować zgodnie z instrukcjami instalacji.
+::: moniker-end
+
+::: moniker range="vs-2019"
+Jeśli masz program Visual Studio, masz już zainstalowany program MSBuild. Program Visual Studio 2019 jest instalowany w folderze instalacyjnym programu Visual Studio. W przypadku typowej instalacji domyślnej w systemie Windows 10 MSBuild.exe znajduje się w folderze instalacji programu *MSBuild\Current\Bin*.
+
+Aby zainstalować program MSBuild w systemie, który nie ma programu Visual Studio, przejdź do strony [pobieranie z programu Visual Studio](https://visualstudio.microsoft.com/downloads/) i przewiń w dół do pozycji **wszystkie pliki do pobrania**, a następnie rozwiń węzeł **narzędzia dla programu Visual Studio 2019**. Zainstaluj **narzędzia kompilacji dla programu Visual Studio 2019**, w tym MSBuild, lub zainstaluj [zestaw .NET Core SDK](/dotnet/core/sdk#acquiring-the-net-core-sdk).
+
+W instalatorze upewnij się, że są zaznaczone narzędzia MSBuild dla używanych obciążeń, a następnie wybierz pozycję **Zainstaluj**.
+
+![Instalowanie programu MSBuild](media/walkthrough-using-msbuild/installation-msbuild-tools.png)
+
+::: moniker-end
 
 ## <a name="create-an-msbuild-project"></a>Tworzenie projektu MSBuild
 
@@ -100,7 +119,7 @@ Domyślny element docelowy nie jest zdefiniowany w pliku projektu. Zamiast tego 
 
 Importowane pliki są efektywnie umieszczane w pliku projektu wszędzie tam, gdzie się znajdują.
 
-W projcts w stylu zestawu SDK nie widzisz tego elementu importowania, ponieważ atrybut SDK powoduje, że ten plik zostanie zaimportowany niejawnie.
+W projektach w stylu zestawu SDK nie widzisz tego elementu importowania, ponieważ atrybut SDK powoduje, że ten plik zostanie zaimportowany niejawnie.
 
 Program MSBuild śledzi elementy docelowe kompilacji i gwarantuje, że każdy element docelowy nie jest zbudowany więcej niż raz.
 
@@ -612,7 +631,7 @@ Zwróć uwagę, że metadane wyrażone w tej składni nie powodują przetwarzani
 
  Aby dowiedzieć się, jak utworzyć prosty plik projektu w jednym kroku, wypróbuj [Przewodnik: Tworzenie pliku projektu MSBuild od podstaw](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Omówienie programu MSBuild](../msbuild/msbuild.md)
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

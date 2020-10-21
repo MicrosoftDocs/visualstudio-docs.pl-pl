@@ -1,5 +1,6 @@
 ---
 title: Znajdowanie i zastępowanie tekstu oraz Zaznaczanie z obsługą wiele karetki
+description: Dowiedz się, jak używać funkcji Znajdź i Zamień w edytorze kodu programu Visual Studio.
 ms.date: 08/14/2018
 ms.topic: conceptual
 f1_keywords:
@@ -30,12 +31,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffc31a0d0e2b6878b5dd5173a35ce4f538e135be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81a74fa1328a3b0079eef6253fa32fc882876a71
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590348"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298569"
 ---
 # <a name="find-and-replace-text"></a>Znajdowanie i zastępowanie tekstu
 
@@ -130,7 +131,7 @@ Użyj następujących kluczy i akcji dla zachowań zaznaczania z zastosowaniem k
 
 Niektóre polecenia są również dostępne w menu **Edycja** w obszarze **wielu karetki**:
 
-![Menu rozwijane wielu karetki w programie Visual Studio](media/edit-menu-multiple-carets.png)
+:::image type="content" source="media/edit-menu-multiple-carets-find-replace.png" alt-text="Zrzut ekranu przedstawiający menu z wieloma karetkami w programie Visual Studio":::
 
 ## <a name="see-also"></a>Zobacz też
 

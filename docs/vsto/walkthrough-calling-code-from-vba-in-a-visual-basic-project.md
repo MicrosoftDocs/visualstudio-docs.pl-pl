@@ -1,5 +1,6 @@
 ---
 title: 'Przewodnik: wywoływanie kodu z VBA w projekcie Visual Basic'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46fa903b0025279fec3b33d3c14ce1661d076926
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad50ed0f55a148a05c0fedc6fe0ccb0dd5b890b9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64829455"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298258"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Przewodnik: wywoływanie kodu z VBA w projekcie Visual Basic
   W tym instruktażu pokazano, jak wywołać metodę w dostosowaniu na poziomie dokumentu dla Microsoft Office Word z kodu Visual Basic for Applications (VBA) w dokumencie. Procedura obejmuje trzy podstawowe kroki: Dodaj metodę do `ThisDocument` klasy Item hosta, Uwidocznij metodę w kodzie VBA, a następnie Wywołaj metodę z kodu VBA w dokumencie.
@@ -111,7 +112,7 @@ ms.locfileid: "64829455"
 
 8. Wybierz pozycję **Kopiuj istniejący dokument**, a następnie w polu **pełna ścieżka istniejącego dokumentu** Określ lokalizację utworzonego wcześniej pliku **DocumentWithVBA** . Jeśli używasz własnego dokumentu z obsługą makr, zamiast tego Określ lokalizację tego dokumentu.
 
-9. Kliknij przycisk **Zakończ**.
+9. Kliknij przycisk **Finish** (Zakończ).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] otwiera dokument **DocumentWithVBA** w Projektancie i dodaje projekt **CallingCodeFromVBA** do **Eksplorator rozwiązań**.
 

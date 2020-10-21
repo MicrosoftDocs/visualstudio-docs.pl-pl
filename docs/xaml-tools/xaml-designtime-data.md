@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 9e6daa3e11bc96fe4d0b9499a6a1a7982432583d
-ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
+ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92039914"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298477"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Używanie danych czasu projektowania z projektant XAML w programie Visual Studio
 
@@ -138,7 +138,7 @@ Korzyścią jest tutaj, że można powiązać kontrolki z wersją statyczną w c
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>Korzystanie z danych czasu projektowania z niestandardowymi typami i właściwościami
 
-Ta funkcja domyślnie działa tylko z kontrolkami i właściwościami platformy. W tej sekcji przejdziemy do kroków, które należy wykonać, aby umożliwić korzystanie z własnych niestandardowych kontrolek jako formantów czasu projektowania. Aby to umożliwić, należy wykonać trzy wymagania:
+Ta funkcja domyślnie działa tylko z kontrolkami i właściwościami platformy. W tej sekcji opisano kroki wymagane w celu umożliwienia korzystania z własnych kontrolek niestandardowych jako kontrolek czasu projektowania. Nowa funkcja jest dostępna dla klientów korzystających z programu Visual Studio 2019 w wersji zapoznawczej [16,8](/visualstudio/releases/2019/preview-notes) lub nowszej. Aby to umożliwić, należy wykonać trzy wymagania:
 
 - Niestandardowa przestrzeń nazw xmlns 
 

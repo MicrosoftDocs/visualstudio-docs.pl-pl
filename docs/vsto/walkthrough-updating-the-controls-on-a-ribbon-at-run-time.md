@@ -1,5 +1,6 @@
 ---
 title: 'Przewodnik: aktualizowanie kontrolek na Wstążce w czasie wykonywania'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 425918ea32c14e6ba905d6b32864a2844d2b5a90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c2e870f028b3337fd162adde881281d7050e142
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255337"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298049"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Przewodnik: aktualizowanie kontrolek na Wstążce w czasie wykonywania
 
@@ -51,7 +52,7 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- Program Microsoft Outlook
+- Microsoft Outlook
 
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Utwórz nowy projekt dodatku VSTO dla programu Outlook
 
@@ -157,7 +158,7 @@ Użyj okna **źródła danych** , aby dodać do projektu typ zestawu danych.
 
     4. **Produkty**
 
-9. Kliknij przycisk **Zakończ**.
+9. Kliknij przycisk **Finish** (Zakończ).
 
 ## <a name="update-controls-in-the-custom-group-at-run-time"></a>Aktualizuj kontrolki w grupie niestandardowej w czasie wykonywania
 
@@ -175,7 +176,7 @@ Użyj modelu obiektów wstążki, aby wykonać następujące zadania:
 
 2. W oknie dialogowym **Dodaj odwołanie** kliknij kartę **.NET** , wybierz zestaw **System. Data. LINQ** , a następnie kliknij przycisk **OK**.
 
-    Ten zestaw zawiera klasy służące do korzystania z zapytań zintegrowanych z językiem (LINQ). Program LINQ służy do wypełniania kontrolek w grupie niestandardowej danymi z bazy danych Northwind.
+    Ten zestaw zawiera klasy służące do korzystania z zapytań Language-Integrated (LINQ). Program LINQ służy do wypełniania kontrolek w grupie niestandardowej danymi z bazy danych Northwind.
 
 3. W **Eksplorator rozwiązań**kliknij pozycję **CustomerRibbon.cs** lub **CustomerRibbon. vb** , aby ją zaznaczyć.
 
@@ -207,7 +208,7 @@ Użyj modelu obiektów wstążki, aby wykonać następujące zadania:
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]
 
-9. Dodaj następujący kod do `CustomerRibbon` klasy. Ten kod używa zapytań LINQ do wykonywania następujących zadań:
+9. Dodaj poniższy kod do klasy `CustomerRibbon`. Ten kod używa zapytań LINQ do wykonywania następujących zadań:
 
    - Dodaje podmenu do menu **ProductsPurchased** dla każdego zamówienia sprzedaży powiązanego z wybranym klientem.
 
@@ -240,7 +241,7 @@ Użyj modelu obiektów wstążki, aby wykonać następujące zadania:
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]
 
-14. Dodaj następujący kod do `CustomerRibbon` klasy. Ten kod wykonuje następujące zadania:
+14. Dodaj poniższy kod do klasy `CustomerRibbon`. Ten kod wykonuje następujące zadania:
 
     - Wypełnia wiersz do nowej wiadomości e-mail przy użyciu adresu e-mail aktualnie wybranego klienta.
 

@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcb30056021a865d0b0e605de462ff72ced5a383
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79a08d3f8dbc4b579a52501afb08ffb7dca33f2
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73661886"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298396"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Rozwiązywanie problemów z rozwiązaniami programu SharePoint
-  Podczas debugowania rozwiązań programu SharePoint za pomocą debugera mogą wystąpić następujące problemy lub alerty [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Aby uzyskać więcej informacji, zobacz [Debugowanie rozwiązań przepływu pracy programu SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
+  Podczas debugowania rozwiązań programu SharePoint za pomocą debugera mogą wystąpić następujące problemy lub alerty [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Aby uzyskać więcej informacji, zobacz [Debugowanie rozwiązań przepływu pracy programu SharePoint 2007](/previous-versions/bb386166(v=vs.100)).
 
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Ograniczenia tokenu w wizualnych częściach sieci Web w trybie piaskownicy
  Wizualne składniki Web Part w rozwiązaniach w trybie piaskownicy nie mogą przetwarzać tokenów standardowych, takich jak $SPUrl, obsługiwane przez środowisko uruchomieniowe programu SharePoint. W związku z tym adres URL nie jest rozpoznawany i nie można wyświetlić podglądu zawartości widok Projekt w programie Visual Web Part Designer, jeśli odwołujesz się do niego bezpośrednio w elemencie skryptu, na przykład w poniższym przykładzie:

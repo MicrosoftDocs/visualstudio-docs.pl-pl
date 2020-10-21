@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46f88b47e135331e5f1dc010aa4a73abed520f51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64804149"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "92297945"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Przewodnik: wywoływanie kodu z VBA w projekcie Visual C#
   W tym instruktażu pokazano, jak wywołać metodę w dostosowaniu na poziomie dokumentu dla Microsoft Office Excel z kodu Visual Basic for Applications (VBA) w skoroszycie. Procedura obejmuje trzy podstawowe kroki: Dodaj metodę do `Sheet1` klasy Item hosta, Uwidocznij metodę w kodzie VBA w skoroszycie, a następnie Wywołaj metodę z kodu VBA w skoroszycie.
@@ -66,7 +66,7 @@ ms.locfileid: "64804149"
 
 1. Uruchom program Excel.
 
-2. Zapisz aktywny dokument jako **skoroszyt programu Excel z obsługą makr ( \* xlsm)** o nazwie **WorkbookWithVBA**. Zapisz go w dogodnej lokalizacji, na przykład na pulpicie.
+2. Zapisz aktywny dokument jako **skoroszyt programu Excel Macro-Enabled ( \* xlsm)** o nazwie **WorkbookWithVBA**. Zapisz go w dogodnej lokalizacji, na przykład na pulpicie.
 
 3. Na wstążce kliknij kartę **deweloper** .
 
@@ -113,7 +113,7 @@ ms.locfileid: "64804149"
 
 8. Wybierz pozycję **Kopiuj istniejący dokument**, a następnie w polu **pełna ścieżka istniejącego dokumentu** Określ lokalizację skoroszytu **WorkbookWithVBA** , który został utworzony wcześniej. Jeśli używasz własnego skoroszytu z obsługą makr, zamiast tego Określ lokalizację tego skoroszytu.
 
-9. Kliknij przycisk **Zakończ**.
+9. Kliknij przycisk **Finish** (Zakończ).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] otwiera skoroszyt **WorkbookWithVBA** w Projektancie i dodaje projekt **CallingCodeFromVBA** do **Eksplorator rozwiązań**.
 
@@ -157,11 +157,11 @@ ms.locfileid: "64804149"
 
      Plik **Sheet1.cs** zostanie otwarty w edytorze kodu.
 
-2. Dodaj następujący kod do `Sheet1` klasy. `CreateVstoNamedRange`Metoda tworzy nowy <xref:Microsoft.Office.Tools.Excel.NamedRange> obiekt w określonym zakresie. Ta metoda tworzy również procedurę obsługi zdarzeń dla <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected> zdarzenia <xref:Microsoft.Office.Tools.Excel.NamedRange> . W dalszej części tego instruktażu zostanie wywołana `CreateVstoNamedRange` Metoda z kodu VBA w dokumencie.
+2. Dodaj poniższy kod do klasy `Sheet1`. `CreateVstoNamedRange`Metoda tworzy nowy <xref:Microsoft.Office.Tools.Excel.NamedRange> obiekt w określonym zakresie. Ta metoda tworzy również procedurę obsługi zdarzeń dla <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected> zdarzenia <xref:Microsoft.Office.Tools.Excel.NamedRange> . W dalszej części tego instruktażu zostanie wywołana `CreateVstoNamedRange` Metoda z kodu VBA w dokumencie.
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
 
-3. Dodaj następującą metodę do `Sheet1` klasy. Ta metoda przesłania <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> metodę w celu zwrócenia bieżącego wystąpienia `Sheet1` klasy.
+3. Dodaj następującą metodę do `Sheet1` klasy. Ta metoda przesłania <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> metodę w celu zwrócenia bieżącego wystąpienia `Sheet1` klasy.
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
 
