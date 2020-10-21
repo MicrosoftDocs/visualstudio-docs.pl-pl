@@ -2,18 +2,18 @@
 title: Nowe środowisko Git w programie Visual Studio (wersja zapoznawcza)
 titleSuffix: ''
 description: Dowiedz się więcej na temat nowego zintegrowanego środowiska Git w programie Visual Studio 2019
-ms.date: 09/22/2020
+ms.date: 10/13/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1f9dc891219e5563ad6ea72085b0ad28469c7171
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92082060"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334210"
 ---
 # <a name="new-git-experience-in-visual-studio-preview"></a>Nowe środowisko Git w programie Visual Studio (wersja zapoznawcza)
 
@@ -98,7 +98,7 @@ Program Visual Studio ułatwia również przekazywanie i synchronizowanie za pom
 :::image type="content" source="media/git-file-version-compare.png" alt-text="Zrzut ekranu przedstawiający sekcję funkcje w wersji zapoznawczej okna dialogowego Opcje w programie Visual Studio ":::
 
 > [!TIP]
-> Możesz skojarzyć element roboczy usługi Azure DevOps z zatwierdzeniem przy użyciu znaku "#", jeśli masz połączenie z repozytorium usługi Azure DevOps. Repozytorium Azure DevOps można połączyć za pomocą Team Explorer > zarządzanie połączeniami
+> Możesz skojarzyć element roboczy usługi Azure DevOps z zatwierdzeniem, używając znaku "#", jeśli masz połączenie z repozytorium usługi Azure DevOps. Repozytorium usługi Azure DevOps można połączyć za pomocą **Team Explorer**  >  **zarządzania połączeniami**.
 
 ### <a name="select-an-existing-branch"></a>Wybierz istniejącą gałąź
 

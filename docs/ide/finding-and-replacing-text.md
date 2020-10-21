@@ -1,7 +1,6 @@
 ---
 title: Znajdowanie i zastępowanie tekstu oraz Zaznaczanie z obsługą wiele karetki
-description: Dowiedz się, jak używać funkcji Znajdź i Zamień w edytorze kodu programu Visual Studio.
-ms.date: 08/14/2018
+ms.date: 10/17/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -31,12 +30,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a74fa1328a3b0079eef6253fa32fc882876a71
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: b878ccbf6714987599d1585ca9c0dc3ceb759144
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298569"
+ms.locfileid: "92334197"
 ---
 # <a name="find-and-replace-text"></a>Znajdowanie i zastępowanie tekstu
 
@@ -123,9 +122,9 @@ Użyj następujących kluczy i akcji dla zachowań zaznaczania z zastosowaniem k
 |**Ctrl** + **Alt** + dwukrotnie kliknij|Dodaj dodatkowy wybór wyrazów|
 |**Ctrl** + **Alt** + kliknięcie + przeciągnij|Dodaj wybór pomocniczy|
 |**SHIFT** + **Alt** + **.**|Dodaj następny pasujący tekst jako zaznaczenie|
-|**Ctrl** + **SHIFT** + **Alt** + **,**|Dodaj cały pasujący tekst jako zaznaczenie|
+|**SHIFT** + **Alt** + **;**|Dodaj cały pasujący tekst jako zaznaczenie|
 |**SHIFT** + **Alt** + **,**|Usuń ostatnie wybrane wystąpienie|
-|**Ctrl** + **SHIFT** + **Alt** + **.**|Pomiń następne dopasowane wystąpienie|
+|**SHIFT** + **Alt**+**/**|Pomiń następne dopasowane wystąpienie|
 |**Alt** + kliknięcie|Dodaj zaznaczenie pola|
 |**ESC** lub kliknij|Wyczyść wszystkie zaznaczenia|
 
