@@ -178,6 +178,8 @@
       href: ide/index-writing-code.yml
     - name: Poruszanie się w środowisku IDE
       href: ide/how-to-move-around-in-the-visual-studio-ide.md
+    - name: Korzystanie z wyszukiwania w programie Visual Studio
+      href: ide/visual-studio-search.md
     - name: Rozwiązania i projekty
       items:
         - name: Praca z rozwiązaniami i projektami
@@ -964,7 +966,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Produkty i usługi firmy Microsoft związane z ułatwieniami dostępu
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Tematy pomocy
+- name: Dokumentacja
   items:
     - name: Skróty klawiaturowe
       items:
