@@ -8,10 +8,10 @@ ms.date: 09/21/2020
 ms.topic: conceptual
 description: Dowiedz się więcej o rolach administratora i administratora oraz o sposobach przypisywania administratorów.
 ms.openlocfilehash: fc44845ed403e9bf942761203b75c2277fd1aff2
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91022711"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Administratorzy i Administratorzy dla umów dotyczących subskrypcji programu Visual Studio

@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dowiedz się, jak maksymalnie wykorzystać subskrypcje programu Visual Studio
 ms.openlocfilehash: 59bfac51eb7888bbad4cc07bf2df25b8c35980fd
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005901"
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
@@ -60,7 +60,7 @@ Na stronie korzyści subskrypcja w użyciu będzie widoczna w kolorze niebieskim
 Jeśli subskrypcja została zakupiona w ramach licencjonowania zbiorowego firmy Microsoft i konieczne jest jej ponowne przypisanie do innej osoby w organizacji, administrator będzie musiał wykonać tę czynność.
 Subskrypcje detaliczne mogą być transferowane do innego użytkownika, kontaktując się z działem obsługi klienta. Nie można przenieść subskrypcji lub "nie do odsprzedaży".
 
-## <a name="managing-my-profile"></a>Zarządzanie moim profilem
+## <a name="managing-my-profile"></a>Zarządzanie własnym profilem
 
 Portal subskrypcje umożliwia tworzenie i Zarządzanie profilem, dzięki czemu zarządzanie subskrypcjami jest łatwe. Możesz wprowadzać zmiany w informacjach o tożsamości i można kojarzyć subskrypcje z innymi tożsamościami logowania z istniejących kont platformy Azure lub organizacji DevOps platformy Azure przy użyciu tożsamości alternatywnych.
 

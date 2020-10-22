@@ -8,10 +8,10 @@ ms.date: 07/29/2020
 ms.topic: conceptual
 description: Dowiedz się, jak lokalizować i pobierać tytuły oprogramowania firmy Microsoft w subskrypcjach programu Visual Studio
 ms.openlocfilehash: 4a267db59f1efc4912748846e61774966f0f6abe
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005603"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Pobieranie tytułów oprogramowania w subskrypcjach programu Visual Studio

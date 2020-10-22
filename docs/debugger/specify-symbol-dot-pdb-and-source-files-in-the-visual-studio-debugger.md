@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eceffab5b8c179734b1abb5f1005c240912115f1
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "89599584"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Określanie symboli (. pdb) i plików źródłowych w debugerze programu Visual Studio (C#, C++, Visual Basic, F #)
@@ -141,7 +141,7 @@ Na stronie **Tools**  >  **Opcje**narzędzi  >  **debugowania**  >  **symboli** 
 
    - Aby załadować tylko moduły określone z lokalizacji pliku symboli, wybierz opcję **Załaduj tylko określone moduły**. Wybierz pozycję **Określ uwzględnione moduły**, wybierz **+** ikonę, wpisz nazwy modułów do uwzględnienia, a następnie wybierz przycisk **OK**. Pliki symboli dla innych modułów nie są ładowane.
 
-5. Wybierz pozycję **OK**.
+5. Wybierz przycisk **OK**.
 
 ## <a name="other-symbol-options-for-debugging"></a>Inne opcje symboli na potrzeby debugowania
 
