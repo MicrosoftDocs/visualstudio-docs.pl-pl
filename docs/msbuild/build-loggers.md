@@ -1,5 +1,7 @@
 ---
 title: Rejestratory kompilacji | Microsoft Docs
+description: Rejestratory programu MSBuild umożliwiają zarządzanie danymi wyjściowymi kompilacji i wyświetlanie komunikatów, błędów lub ostrzeżeń w odpowiedzi na określone zdarzenia kompilacji i ich dostosowywanie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a00bbb8ce239275ff140dbedf2157e4cdc41d44c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c56de103fa116cbf77ec16dc0116a2897e6ccdce
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634529"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353203"
 ---
 # <a name="build-loggers"></a>Rejestratory kompilacji
 
@@ -64,7 +66,7 @@ Następujący wiersz polecenia kompiluje projekt z tym samym rejestratorem, ale 
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-1"></a>Przykład 1
 
 ### <a name="description"></a>Opis
 
@@ -74,7 +76,7 @@ Poniższy przykład zawiera kompletny kod rejestratora.
 
 [!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]
 
-## <a name="example"></a>Przykład
+## <a name="example-2"></a>Przykład 2
 
 ### <a name="description"></a>Opis
 

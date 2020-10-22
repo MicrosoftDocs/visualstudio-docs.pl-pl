@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 04/15/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Dowiedz się, jak skonfigurować konto usługi Azure — płatność zgodnie z rzeczywistym użyciem.
-ms.openlocfilehash: 111733fb6950e602528fac9ae5b39bba04870d01
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 4071b16c56e67bdd86ba95f2ff982758cd23e150
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005076"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353189"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Subskrypcje usługi Azure DevTest — płatność zgodnie z rzeczywistym użyciem
 Współpracuj z zespołem w chmurze.  Twórz wiele funkcji tworzenia i testowania subskrypcji z płatność zgodnie z rzeczywistym użyciem, umożliwiając współpracę z innymi subskrybentami, a jednocześnie zapewniając izolację między zespołami i środowiskami.  W przypadku Oprogramowania subskrypcyjnego na platformie Azure otrzymujesz stawki godzinowe z obniżonymi rabatami na potrzeby tworzenia i testowania oraz praw do używania w chmurze.
@@ -20,7 +20,7 @@ Współpracuj z zespołem w chmurze.  Twórz wiele funkcji tworzenia i testowani
 ## <a name="set-up-a-subscription"></a>Konfigurowanie subskrypcji
 1. Aby skorzystać z korzyści z subskrypcji opartej na systemie Azure — płatność zgodnie z rzeczywistym użyciem, zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i kliknij link **Aktywuj** w dolnej części kafelka korzyści.
    > [!div class="mx-imgBorder"]
-   > ![Kafelek Azure PAYG](_img/vs-azure-payg/vs-azure-payg-tile.png)
+   > ![Kafelek Azure PAYG](_img/vs-azure-payg/vs-azure-payg-tile.png "Kliknij pozycję "Aktywuj" na kafelku subskrypcji DevTest płatność zgodnie z rzeczywistym użyciem, aby rozpocząć pracę.")
 
 2. Jeśli konto platformy Azure zostało już aktywowane w ramach korzyści z subskrypcji (na przykład jeśli masz subskrypcję przedsiębiorstwa i aktywowano $150 miesięczne środki na korzystanie z usługi Azure DevTest), przejdź do kroku 5.
 

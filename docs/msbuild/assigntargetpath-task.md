@@ -1,5 +1,7 @@
 ---
 title: AssignTargetPath — Zadanie | Microsoft Docs
+description: Za pomocą zadania MSBuild AssignTargetPath Zaakceptuj listę plików i Dodaj atrybuty TargetPath, jeśli nie zostały one jeszcze określone.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2d825c0c08ffeba1449954ed310644dd4437840
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e56bb8817551e24d1b5aceef2f571e35f1db43e
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634542"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353333"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath, zadanie
 

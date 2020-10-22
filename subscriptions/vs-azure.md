@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/28/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Dowiedz się, jak aktywować usługę Azure DevTest z korzyściami z tytułu skorzystania z subskrypcji programu Visual Studio.
-ms.openlocfilehash: 41d85c939c05a9d29c80c15d1702258ff5b7d5e5
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: de1bfa9591a0dae409ec526429fa0496f3408703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91003849"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353099"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Używanie Microsoft Azure w subskrypcjach programu Visual Studio
 Jako subskrybent programu Visual Studio możesz używać Microsoft Azure bez dodatkowych opłat.  W przypadku comiesięcznych środków na korzystanie z [platformy Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), platforma Azure jest osobistą piaskownicą na potrzeby tworzenia i testowania.  Możesz udostępniać maszyny wirtualne, usługi w chmurze i inne zasoby platformy Azure.  Kwoty kredytowe różnią się w zależności od poziomu subskrypcji.
@@ -22,23 +22,23 @@ Jako subskrybent programu Visual Studio możesz używać Microsoft Azure bez dod
 
 2. Znajdź kafelek platformy Azure w sekcji Tools na stronie korzyści i wybierz pozycję **Aktywuj** link w dolnej części kafelka korzyści.
    > [!div class="mx-imgBorder"]
-   > ![Kafelek platformy Azure](_img/vs-azure/vs-azure-tile.png)
+   > ![Kafelek platformy Azure](_img/vs-azure/vs-azure-tile.png "Kliknij przycisk "Aktywuj" na kafelku platformy Azure, aby rozpocząć pracę.")
 
 3. Jeśli nie masz istniejącej subskrypcji platformy Azure, zostanie wyświetlony monit o wypełnienie wymaganych informacji w celu utworzenia subskrypcji platformy Azure.  Pierwszym krokiem jest podanie informacji osobistych, a następnie wybranie **przycisku Dalej**.
    > [!div class="mx-imgBorder"]
-   > ![Rejestracja na platformie Azure](_img/vs-azure/vs-azure-about-you.png)
+   > ![Rejestracja na platformie Azure](_img/vs-azure/vs-azure-about-you.png "Dodaj swoje osobiste informacje kontaktowe do subskrypcji platformy Azure.")
 
 4. Następnie musisz zweryfikować swoją tożsamość przy użyciu prostego kodu weryfikacyjnego. Podaj numer telefonu, a następnie wybierz, czy chcesz otrzymać kod za pomocą tekstu, czy telefonu.  Wprowadź otrzymany kod, a następnie wybierz pozycję **Weryfikuj kod**.   
    > [!div class="mx-imgBorder"]
-   > ![Trwa przygotowywanie platformy Azure](_img/vs-azure/vs-azure-identity.png)
+   > ![Trwa przygotowywanie platformy Azure](_img/vs-azure/vs-azure-identity.png "Poproś o kod weryfikacyjny, a następnie wprowadź go, aby przejść.")
 
 5. W przypadku kroku końcowego zaznacz pole wyboru, aby zaakceptować warunki, a następnie wybierz pozycję **Utwórz konto**.  To wszystko!
    > [!div class="mx-imgBorder"]
-   > ![Trwa przygotowywanie platformy Azure](_img/vs-azure/vs-azure-agreement.png)
+   > ![Rejestracja na platformie Azure](_img/vs-azure/vs-azure-agreement.png "Kliknij przycisk Utwórz konto, aby zakończyć tworzenie subskrypcji platformy Azure.")
 
 0. Zostanie załadowana centrum szybkiego startu pulpitu nawigacyjnego platformy Azure.  
    > [!div class="mx-imgBorder"]
-   > ![Pulpit nawigacyjny platformy Azure](_img/vs-azure/vs-azure-quick-start.png) 
+   > ![Pulpit nawigacyjny platformy Azure](_img/vs-azure/vs-azure-quick-start.png "Po utworzeniu subskrypcji platformy Azure nastąpi przekierowanie do Azure Portal.") 
 
 0. Tworzenie zakładek [Azure Portal](https://portal.azure.com) w celu łatwego dostępu w przyszłości.
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 09/08/2020
+ms.date: 10/21/2020
 ms.topic: conceptual
 description: Pytania dotyczące rozliczeń dla subskrypcji chmury.
-ms.openlocfilehash: ae99e6e843636efc6d81a0c4feebfd3e306f6319
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 0140a6250f2c04ad33fec962283e035393a03aae
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006007"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353424"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Subskrypcje dotyczące rozliczeń w ramach subskrypcji programu Visual Studio Cloud
 [PORÓWNAJ korzyści z subskrypcji chmury i ceny](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać zalety każdej subskrypcji programu Visual Studio, z porównaniami między subskrypcjami w chmurze i standardami programu Visual Studio, szczegółowymi dotyczącymi korzyści dla subskrybentów i innymi.
@@ -92,7 +92,7 @@ Odp.: tak. Po udostępnieniu nowych wersji można je pobrać i uruchomić. Ponad
 Odp.: tak, możesz, jeśli odsprzedawca uczestniczy w programie w programie Cloud Solution Provider (CSP). Po prostu zadawaj je.
 
 ## <a name="related-resources"></a>Powiązane zasoby
-- [Portal administracyjny subskrypcji programu Visual Studio](https://manage.visualstudio.com/)
+- [Portal administratora subskrypcji programu Visual Studio](https://manage.visualstudio.com/)
 - [Obsługa subskrypcji programu Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Kupowanie subskrypcji w chmurze programu Visual Studio dla dostawców CSP](vscloud-csp.md)
 

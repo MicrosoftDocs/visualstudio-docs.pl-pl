@@ -1,5 +1,5 @@
 ---
-title: Rozpoczynanie pracy z portalem administracyjnym subskrypcji | Visual Studio Marketplace
+title: Wprowadzenie do portalu administracyjnego subskrypcji | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,22 +7,22 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 09/03/2020
 ms.topic: overview
 description: Dowiedz się, jak zacząć zarządzać subskrypcjami programu Visual Studio w organizacji za pomocą portalu administratora subskrypcji.
-ms.openlocfilehash: 78c66b8db569ce71588a2dba43b3ffb08d6a7d80
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 8ed9a0b2ed7b9230a245493a2998fa1ca42cae53
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005228"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353307"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Omówienie portalu administratora subskrypcji programu Visual Studio
 
-Portal administrowania subskrypcjami programu Visual Studio udostępnia narzędzia do zarządzania subskrypcjami w jednym miejscu w organizacji. 
+Portal administratora subskrypcji programu Visual Studio udostępnia narzędzia do zarządzania subskrypcjami w jednym miejscu w organizacji. 
 
 Zapoznaj się z portalem.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
-## <a name="important-considerations"></a>Ważne zagadnienia
+## <a name="important-considerations"></a>Istotne zagadnienia
 W przypadku korzystania z portalu administratora subskrypcji programu Visual Studio należy pamiętać o następujących kwestiach:
 - **Subskrypcje programu Visual Studio są licencjonowane na użytkownika.** Każdy subskrybent może korzystać z oprogramowania na tyle, ile komputerów jest potrzebnych do tworzenia i testowania.
 - **Przypisz tylko jeden poziom subskrypcji dla każdego subskrybenta**, odpowiadający subskrypcji programu Visual Studio zakupionej przez Twoją organizację. Jeśli masz subskrybentów z przypisanym więcej niż jednym poziomem subskrypcji, Edytuj swoje ustawienia tak, aby zawierały tylko jeden z nich.
@@ -46,18 +46,18 @@ W lewym górnym rogu strony istnieje kilka ikon, które można wybrać, aby wyś
 
 Aby wyświetlić dodatkowe informacje o liczbie licencji subskrypcji zakupionych, przypisanych i nadal dostępnych w organizacji dla każdej umowy, kliknij górną ikonę, aby włączyć panel slajdu.
 > [!div class="mx-imgBorder"]
-> ![Strona subskrybentów portalu administracyjnego subskrypcji programu Visual Studio](_img/using-admin-portal/subscribers-page.png)
+> ![Strona subskrybentów portalu administracyjnego subskrypcji programu Visual Studio](_img/using-admin-portal/subscribers-page.png "Na stronie Subskrybenci są wyświetlane liczby subskrypcji według typu.")
 
 ## <a name="the-details-page"></a>Strona szczegółów
 Aby uzyskać więcej informacji na temat umowy, którą przeglądasz, wybierz drugą ikonę, aby wyświetlić kartę Szczegóły umowy. Panel rozwijany zawiera informacje o stanie umowy, koncie zakupu, szczegółach organizacji, administratorach i innych stosownych informacjach.
 > [!div class="mx-imgBorder"]
-> ![Strona szczegółów portalu administracyjnego subskrypcji programu Visual Studio](_img/using-admin-portal/details-page.png)
+> ![Strona szczegółów portalu administracyjnego subskrypcji programu Visual Studio](_img/using-admin-portal/details-page.png "Na stronie Szczegóły są wyświetlane informacje o Twojej umowie, w tym nazwy administratorów.")
 
 ## <a name="resources"></a>Zasoby
 - [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Porównanie opcji i cen subskrypcji](https://visualstudio.microsoft.com/vs/pricing)
 - [Porównanie funkcji programu Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare)
-- [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Pomoc techniczna dla administratorów i subskrypcji programu Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)

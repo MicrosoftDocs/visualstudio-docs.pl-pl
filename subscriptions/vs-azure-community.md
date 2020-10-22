@@ -7,12 +7,12 @@ ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Dowiedz się więcej na temat korzyści z pomocy technicznej dla społeczności platformy Azure zawartych w wybranych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 8c048103d3ecc2aa21f771e88fa8f9b75ad94b4c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 000732d2c46d777c68451153dc5965d45087abce
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006244"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353216"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum pomocy technicznej platformy Azure w ramach subskrypcji programu Visual Studio
 Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów pomocy technicznej za pośrednictwem społeczności platformy Azure.  Korzyść społeczność platformy Azure zapewnia dostęp do kolekcji forów skoncentrowanych na tematach związanych z platformą Azure.
@@ -22,11 +22,11 @@ Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów
 :::row:::
     :::column:::
         - [Azure Active Directory](https://social.msdn.microsoft.com/forums/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)  
-        - [Usługa Azure API Management](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)  
+        - [Azure API Management](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)  
         - [Azure App Service — Web Apps](https://social.msdn.microsoft.com/forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
         - [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)  
         - [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)  
-        - [Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/home?forum=hdinsight&filter=alltypes&sort=lastpostdesc)  
+        - [Usługa Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/home?forum=hdinsight&filter=alltypes&sort=lastpostdesc)  
         - [Portal zarządzania platformy Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)  
     :::column-end:::
     :::column:::
@@ -39,7 +39,7 @@ Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów
         - [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)  
     :::column-end:::
     :::column:::
-        - [Azure SQL Database](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)  
+        - [Baza danych SQL Azure](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)  
         - [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)  
         - [Azure Storage](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)  
         - [Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)  
@@ -49,21 +49,21 @@ Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów
     :::column-end:::
 :::row-end:::
 
-## <a name="get-started"></a>Wprowadzenie
+## <a name="get-started"></a>Rozpoczęcie pracy
 Wprowadzenie do społeczności platformy Azure jest proste.
 1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Znajdź kafelek społeczność platformy Azure w sekcji Pomoc techniczna i kliknij link **Uzyskaj pomoc** .
     > [!div class="mx-imgBorder"]
-    >![Kafelek społeczności platformy Azure](_img/vs-azure-community/vs-azure-community-tile.png)
+    >![Kafelek społeczności platformy Azure](_img/vs-azure-community/vs-azure-community-tile.png "Kliknij przycisk "Uzyskaj pomoc" na kafelku społeczności platformy Azure, aby rozpocząć pracę.")
 
 3. Zostanie wyświetlona lista dostępnych forów.  Po prostu kliknij wybrane forum.
     > [!div class="mx-imgBorder"]
-    > ![Fora społeczności platformy Azure](_img/vs-azure-community/vs-azure-community-forums.png)
+    > ![Fora społeczności platformy Azure](_img/vs-azure-community/vs-azure-community-forums.png "Na stronie Pomoc techniczna społeczności platformy Azure wybierz wybrane fora.")
 
 4. Na forum można wyświetlać tematy i odpowiedzi, wyszukiwać odpowiedzi na pytania lub publikować nowe pytanie.
     > [!div class="mx-imgBorder"]
-    > ![Przykład społeczności platformy Azure](_img/vs-azure-community/vs-azure-community-example.png)
+    > ![Przykład społeczności platformy Azure](_img/vs-azure-community/vs-azure-community-example.png "Na forum można wyświetlać tematy, wyszukiwać odpowiedzi lub publikować nowe pytania.")
 
 ## <a name="eligibility"></a>Kryteria
 Dostępność korzyści społeczności platformy Azure zależy od poziomu subskrypcji, jak pokazano poniżej:

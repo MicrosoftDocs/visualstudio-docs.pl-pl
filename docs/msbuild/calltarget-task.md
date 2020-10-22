@@ -1,5 +1,7 @@
 ---
 title: CallTarget — — zadanie | Microsoft Docs
+description: Dowiedz się, jak używać zadania MSBuild CallTarget — do wywoływania określonych elementów docelowych w pliku projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26d29c236b89172ab6dc456be97016b98f2cae19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efeca838050c9024ad3768b2ac7f73ce7dd06720
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094560"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353294"
 ---
 # <a name="calltarget-task"></a>CallTarget — zadanie
 

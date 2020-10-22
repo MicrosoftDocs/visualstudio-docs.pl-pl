@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
-ms.date: 03/24/2020
+ms.date: 10/21/2020
 ms.topic: conceptual
 description: Informacje dla dostawców rozwiązań w chmurze dotyczące zakupu subskrypcji programu Visual Studio Cloud i zarządzania nimi dla klientów.
-ms.openlocfilehash: 9c263486259529e7eb4e19ea4cc3f8ad8520b039
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 632e407aa4455b7c2a87299cc8811bc996c8d5b6
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006231"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353268"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kup subskrypcje w chmurze programu Visual Studio dla klientów i zarządzaj nimi
 Partnerzy w programie [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) mogą kupować Visual Studio Enterprise i Visual Studio Professional subskrypcje w chmurze dla swoich klientów.
@@ -47,7 +47,7 @@ Każda osoba z [dostępem właściciela lub współautora](https://na01.safelink
 >[!NOTE]
 > Należy wykonać te kroki za każdym razem, gdy kupisz subskrypcje programu Visual Studio jako dostawcę usług kryptograficznych. W tej chwili nie ma interfejsu API do automatyzacji zakupów.
 
-Po potwierdzeniu zakupu możesz wybrać pozycję **Zarządzaj** , aby przypisać subskrypcje użytkownikom końcowym klienta.  Możesz również uzyskać dostęp do portalu administracyjnego subskrypcji z Centrum partnerskiego, wybierając pozycję **Zarządzanie usługami**.  Poniżej znajdują się poniższe kroki lub wideo.
+Po potwierdzeniu zakupu możesz wybrać pozycję **Zarządzaj** , aby przypisać subskrypcje użytkownikom końcowym klienta.  Możesz również uzyskać dostęp do portalu administratora subskrypcji z Centrum partnerskiego, wybierając pozycję **Zarządzanie usługami**.  Poniżej znajdują się poniższe kroki lub wideo.
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>Jak zarządzać subskrypcjami w chmurze programu Visual Studio dla klienta
 
@@ -71,7 +71,7 @@ Oto jak interpretować zawartość wyświetlaną w tym arkuszu kalkulacyjnym:
 
 | Kategoria miernika    |   Nazwa                 |  Lekcji                                |           Co to jest                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
-| Visual Studio     | Przedsiębiorstwa             |  Subskrypcja                         | Visual Studio Enterprise Subskrypcja miesięczna   |
+| Visual Studio     | Enterprise             |  Subskrypcja                         | Visual Studio Enterprise Subskrypcja miesięczna   |
 | Visual Studio     | Professional Edition           |  Subskrypcja                         | Visual Studio Professional Subskrypcja miesięczna |
 
 Oferujemy 5% rabatu na szóstą jednostkę, którą kupujesz (dla danego klienta) co miesiąc każdej subskrypcji programu Visual Studio. Dlatego widzisz dwa wiersze dla każdej opcji subskrypcji. Jeden wiersz zawiera "wartość minimalną" równą 0, która powinna być interpretowana jako podstawowa cena jednostek 1 – 5. W drugim wierszu jest wyświetlana wartość minimalna równa 5, więc jest to 5% cena rabatu odnosząca się do jednostek 6 i nowszych.

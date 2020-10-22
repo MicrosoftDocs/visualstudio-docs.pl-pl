@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 03/25/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat korzyści z rozmowy Concierge zawartej w subskrypcjach programu Visual Studio.
-ms.openlocfilehash: d7ed217e551057ff12ed4abecedf717c9f3f6ced
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 0aab627d7c870720c0cc0d043ffb6ce556568703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006322"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353385"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge rozmowę w subskrypcjach programu Visual Studio
 Usługa czatu Concierge zapewnia pomoc w zakresie znajdowania informacji o produktach i dokumentacji technicznej, a także pomoc przy korzystaniu z korzyści z subskrypcji programu Visual Studio.
@@ -25,15 +25,15 @@ Uzyskiwanie pomocy za pośrednictwem usługi rozmów Concierge jest bardzo prost
 
 2. Znajdź kafelek rozmowa Concierge w sekcji Pomoc techniczna na stronie korzyści i kliknij pozycję **czat teraz**.
     > [!div class="mx-imgBorder"]
-    > ![Kafelek rozmowy Concierge](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+    > ![Kafelek rozmowy Concierge](_img/vs-concierge-chat/vs-concierge-chat-tile.png "Kliknij przycisk "Czat teraz", aby uruchomić nową sesję czatu.")
 
-3. Kliknij pozycję **Kontynuuj**.
+3. Kliknij przycisk **Kontynuuj**.
 
 4. Zostanie otwarte okno rozmowy i zostanie wyświetlony licznik pokazujący swoją pozycję w kolejce.
 
 5. Gdy Agent jest dostępny, rozpocznie się rozmowa.
     > [!div class="mx-imgBorder"]
-    > ![Sesja rozmowy Concierge](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > ![Sesja rozmowy Concierge](_img/vs-concierge-chat/vs-concierge-chat-session.png "Okno sesji rozmowy zostanie wyświetlone, gdy Agent przyłączy się do sesji.")
 
 ## <a name="eligibility"></a>Kryteria
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
@@ -44,7 +44,7 @@ Uzyskiwanie pomocy za pośrednictwem usługi rozmów Concierge jest bardzo prost
 | Visual Studio Professional z usługą GitHub Enterprise | Licencja | Dostępne                                                            |  Tak          |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Dostępne                                             |  Tak          |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Dostępne                                              |  Tak          |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark.  Wyklucza: równoważnik, najbardziej cenny specjalista (MVP), dyrektor regionalny (RD), Microsoft Partner Network (MPN), Wyobraź sobie.*
 

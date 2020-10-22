@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
-ms.date: 03/24/2020
+ms.date: 10/21/2020
 ms.topic: overview
 description: Wynajęcie Visual Studio Professional lub Visual Studio Enterprise w ciągu miesiąca do miesiąca lub rocznego, bez długoterminowej umowy.
-ms.openlocfilehash: d92d11321529e7ab8053ea657b2b5f4688c55aa0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 29dd6be56441fd833c56eaea89286bb3d418ec78
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005319"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353450"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Kupowanie subskrypcji Visual Studio Professional i Visual Studio Enterprise w chmurze
 Możesz kupić [Visual Studio Professional i Visual Studio Enterprise subskrypcje](https://visualstudio.microsoft.com/subscriptions/) w [Visual Studio Marketplace](https://marketplace.visualstudio.com). Są one nazywane **"subskrypcjami w chmurze"**.
@@ -36,7 +36,7 @@ Musisz być współautorem lub wyższym dla subskrypcji platformy Azure, która 
 
 3. Wybierz subskrypcję platformy Azure, która ma być używana na potrzeby rozliczeń. Jeśli go nie masz, możesz utworzyć nową subskrypcję platformy Azure.
     > [!div class="mx-imgBorder"]
-    > ![Wybierz subskrypcję platformy Azure na potrzeby rozliczeń](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
+    > ![Wybierz subskrypcję platformy Azure na potrzeby rozliczeń](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png "Wybierz subskrypcję platformy Azure, która ma zostać użyta do zakupu subskrypcji.")
 
 4. Wybierz liczbę subskrypcji do zakupu.
     > [!div class="mx-imgBorder"]
@@ -47,18 +47,21 @@ Musisz być współautorem lub wyższym dla subskrypcji platformy Azure, która 
 5. Potwierdź i Zakończ zakupy. Jeśli masz przypisaną subskrypcję do siebie, możesz odwiedzić [Portal subskrybenta programu Visual Studio](https://my.visualstudio.com) , aby rozpocząć pobieranie oprogramowania i korzystać z innych korzyści dla subskrybentów.
 
 > [!div class="mx-imgBorder"]
-> ![Zakończenie zakupu powiodło się](_img/buy-vs-subscriptions/buy-vs-sub-success.png)
+> ![Zakończenie zakupu powiodło się](_img/buy-vs-subscriptions/buy-vs-sub-success.png "Otrzymasz potwierdzenie pomyślnego zakupu.")
+
+0. Kliknij pozycję **Wyświetl moją subskrypcję** , aby otworzyć Portal subskrybenta i rozpocząć korzystanie z subskrypcji.
 
 > [!div class="mx-imgBorder"]
-> ![Przejdź do portalu subskrybentów programu Visual Studio](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png)
+> ![Przejdź do portalu subskrybentów programu Visual Studio](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png "W portalu subskrypcji programu Visual Studio możesz eksplorować swoją subskrypcję i korzystać z dostępnych korzyści.")
 
-Jeśli zakupiono więcej niż jedną subskrypcję, należy przejoć do [portalu administratora subskrypcji programu Visual Studio](https://manage.visualstudio.com) , aby przypisać subskrypcje do innych użytkowników.  Może być konieczne [dodanie nowych subskrypcji](add-monthly-subs.md) do portalu administracyjnego, jeśli został on kupiony po raz pierwszy.
-
-> [!div class="mx-imgBorder"]
-> ![Przypisywanie subskrypcji do innych użytkowników](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png)
+Jeśli zakupiono więcej niż jedną subskrypcję, należy przejoć do [portalu administratora subskrypcji programu Visual Studio](https://manage.visualstudio.com) , aby przypisać subskrypcje do innych osób.  Może być konieczne [dodanie nowych subskrypcji](add-monthly-subs.md) do portalu administracyjnego w przypadku jego pierwszego zakupu.
 
 > [!div class="mx-imgBorder"]
-> ![Wyświetl subskrypcje](_img/buy-vs-subscriptions/assign-subscriptions.png)
+> ![Przypisywanie subskrypcji do innych użytkowników](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png "Kliknij przycisk "Przypisz do użytkowników", aby udostępnić subskrypcje użytkownikom.")
+
+
+> [!div class="mx-imgBorder"]
+> ![Wyświetl subskrypcje](_img/buy-vs-subscriptions/assign-subscriptions.png "Kliknij przycisk "Dodaj", aby przypisać subskrypcje do użytkowników")
 
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>Anuluj odnowienia zakupionych subskrypcji w chmurze
 
@@ -121,7 +124,7 @@ Odp.: Administrator może nadal zmniejszyć liczbę subskrypcji, odwiedzając [h
 Odp.: Chociaż nie będą mogli kupić innej rocznej subskrypcji w chmurze, istnieje wiele opcji zakupu subskrypcji programu Visual Studio.  Dowiedz się więcej o [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) .
 
 ## <a name="related-resources"></a>Powiązane zasoby
-- [Portal administracyjny subskrypcji programu Visual Studio](https://manage.visualstudio.com/)
+- [Portal administratora subskrypcji programu Visual Studio](https://manage.visualstudio.com/)
 - [Obsługa subskrypcji programu Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Rozliczenia subskrypcji w chmurze programu Visual Studio — często zadawane pytania](vscloud-billing-faq.md)
 - [Kupowanie subskrypcji w chmurze programu Visual Studio dla dostawców CSP](vscloud-csp.md)
