@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 10/21/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do wielu subskrybentów za pomocą funkcji zbiorczego dodawania lub grup Microsoft Azure Active Directory
-ms.openlocfilehash: 1c3fba04ead841d4955d26865e6ff6b1d0632048
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 6cb3613d76faca2adc9c6e946f6a8ec2c73770f1
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435873"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467547"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Przypisywanie subskrypcji wielu użytkownikom
 Portal administrowania subskrypcjami pozwala dodawać użytkowników jeden w czasie lub w dużych grupach.  Aby dodać poszczególnych użytkowników, zobacz [Dodawanie pojedynczych użytkowników](assign-license.md).
@@ -82,7 +82,7 @@ Korzystanie z tej funkcji ułatwia pozostawanie na swoich przypisaniach subskryp
 > [!IMPORTANT]
 >
 > Następujące ograniczenia dotyczą korzystania z grup usługi Azure AD na potrzeby dodawania subskrybentów:
-> - Przed dodaniem grupy do portalu administracyjnego administrator musi być członkiem dzierżawy usługi AAD.  Po dodaniu grupy zmiany członkostwa w grupach nie wymagają zaangażowania administratora. 
+> - Administrator musi być członkiem dzierżawy usługi AAD podczas pierwszego dodawania grupy do portalu administracyjnego.  Po dodaniu grupy zmiany członkostwa w grupach nie wymagają zaangażowania administratora. 
 > - Grupy muszą zawierać co najmniej jednego członka.  Puste grupy nie są obsługiwane.
 > - Grupy muszą mieć mniej niż 1 000 użytkowników. 
 > - Wszyscy użytkownicy muszą znajdować się na najwyższym poziomie grupy.  Zagnieżdżone grupy nie są obsługiwane.

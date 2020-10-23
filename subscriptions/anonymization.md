@@ -2,17 +2,17 @@
 title: Zachowywanie anonimowości danych subskrybentów programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
 ms.date: 02/20/2020
 ms.topic: conceptual
 description: Dowiedz się, jak anonimowe dane subskrybenta, gdy dostęp do subskrypcji zostanie utracony.
-ms.openlocfilehash: 1b3cbd56123c80a96f36925ae98c171e84860798
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 34059c20a65c41f7998efe344e2d8d4ac63cf7af
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006192"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467495"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Zachowywanie anonimowości informacji o subskrybencie programu Visual Studio
 Gdy wystąpi zdarzenie, które blokuje użycie subskrypcji przez subskrybenta, takie jak wygaśnięcie subskrypcji lub usunięcie konta logowania subskrybenta, informacje osobiste użytkownika, takie jak nazwa i konto logowania, są zasadniczo szyfrowane w celu ich nieużycia.  Jest to gotowe do ochrony danych osobowych subskrybenta.
@@ -34,7 +34,7 @@ Zdarzenia, które renderują subskrypcję niezdatną do użycia przez subskryben
 ### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>P: czy zachowywanie anonimowości informacji osobistych subskrybenta powoduje utratę dostępu do subskrypcji?
 Odp.: nie.  Zachowywanie anonimowości jest w odpowiedzi na zdarzenie, które powoduje utratę dostępu do subskrypcji, ale nie powoduje braku dostępu.
 
-### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>P: jestem administratorem dla subskrypcji mojej organizacji.  Jeśli jedna z informacji na subskrybencie to anonimowe, czy można ponownie przypisać subskrypcję do innego użytkownika?
+### <a name="q--im-an-admin-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>P: jestem administratorem dla subskrypcji mojej organizacji.  Jeśli jedna z informacji na subskrybencie to anonimowe, czy można ponownie przypisać subskrypcję do innego użytkownika?
 Odp.: tak — o ile subskrypcja nie wygasła, może zostać ponownie przypisana do innego subskrybenta.
 
 ### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>P: Jak mogę zapobiec zachowywanie anonimowości spowodowane przez usunięcie adresu e-mail logowania?

@@ -3,15 +3,15 @@ title: Przypisywanie określonych identyfikatorów GUID do subskrybentów progra
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
-description: Dowiedz się, jak Administratorzy mogą uzyskać określony identyfikator GUID subskrypcji dla subskrybentów
-ms.openlocfilehash: 31544718683b10a186d4c38486bf0cd7923cd4cf
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+description: Dowiedz się, jak Administratorzy mogą określić identyfikator GUID subskrypcji dla subskrybentów
+ms.openlocfilehash: 1097743d1640fbadba550f3c2ee6908ac694436d
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022487"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467482"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Przypisywanie określonych subskrypcji w portalu administratora subskrypcji programu Visual Studio
 
@@ -26,7 +26,7 @@ Obejrzyj wideo lub przeczytaj, aby dowiedzieć się, jak przypisać do użytkown
 
 ## <a name="assign-specific-subscription-guids-to-users"></a>Przypisywanie określonych identyfikatorów GUID subskrypcji do użytkowników
 
-Proces przypisywania określonych subskrypcji do poszczególnych użytkowników polega na użyciu dwóch istniejących procesów administracyjnych w celu przypisania unikatowych identyfikatorów globalnych (GUID) w ramach subskrypcji indywidualnym użytkownikom.  Proces trójstanowy obejmuje wyeksportowanie listy bieżących subskrypcji i przypisań przy użyciu tej listy w celu zidentyfikowania określonych identyfikatorów GUID, które chcesz przypisać, a następnie użycie zbiorczego procesu dodawania do przekazywania nowych przypisań.
+Proces przypisywania określonych subskrypcji do poszczególnych użytkowników obejmuje wykorzystanie dwóch istniejących procesów administracyjnych do przypisywania określonych unikatowych identyfikatorów globalnych subskrypcji (GUID) do poszczególnych klientów.  Proces trójstanowy obejmuje wyeksportowanie listy bieżących subskrypcji i przypisań przy użyciu tej listy w celu zidentyfikowania określonych identyfikatorów GUID, które chcesz przypisać, a następnie użycie zbiorczego procesu dodawania do przekazywania nowych przypisań.
 
 ### <a name="export-your-subscriptions-information"></a>Eksportowanie informacji o subskrypcjach
 

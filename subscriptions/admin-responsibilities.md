@@ -1,20 +1,20 @@
 ---
-title: Obowiązki administratora | Visual Studio Marketplace
+title: Obowiązki administracyjne w subskrypcjach programu Visual Studio | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 09/03/2019
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Dowiedz się więcej na temat obowiązków administratorów subskrypcji.
-ms.openlocfilehash: c0c30eb8bc5b63720bd2377990a390df8a173035
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 183209e5e1fa873ae9af6ff2d9b32caf94c5461e
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006140"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467469"
 ---
-# <a name="overview-of-administrator-responsibilities"></a>Przegląd obowiązków administracyjnych
+# <a name="overview-of-admin-responsibilities"></a>Przegląd obowiązków administracyjnych
 Jako administrator możesz zarządzać subskrypcjami dla swojej organizacji.  Rola administratora przenosi również obowiązki, aby upewnić się, że subskrypcje są zarządzane zgodnie z postanowieniami licencyjnymi. W tym artykule opisano obowiązki, korzyści i ograniczenia roli administratora.
 
 ## <a name="roles--responsibilities"></a>Role & obowiązki
@@ -43,7 +43,7 @@ Subskrypcje programu Visual Studio umożliwiają programistom Instalowanie i uż
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
-Dowiedz się więcej o odpowiedzialności dla administratorów:
+Dowiedz się więcej na temat obowiązków dla administratorów:
 - [Spis środowiska przedprodukcyjnego](admin-inventory.md)
 - [Zarządzanie dużymi zespołami i zleceniobiorcami zewnętrznymi](manage-teams.md)
 - [Śledzenie przypisań użytkowników i przetwarzanie zamówień](assignments-orders.md)

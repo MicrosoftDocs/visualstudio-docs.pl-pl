@@ -1,5 +1,5 @@
 ---
-title: Przypisywanie licencji do subskrypcji programu Visual Studio | Microsoft Docs
+title: Przypisywanie subskrypcji programu Visual Studio użytkownikom | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 09/21/2020
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do subskrybentów
-ms.openlocfilehash: cd64aa058ab5c0518fc27bf1ee64acef3b5b79a2
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: 044cf4e9df3eb2ebf1d10aa8c08be804ca98f393
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022203"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467534"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Przypisywanie licencji w portalu administratora subskrypcji programu Visual Studio
 Jako administrator subskrypcji programu Visual Studio można używać portalu administracyjnego do przypisywania subskrypcji do poszczególnych użytkowników i grup użytkowników.
@@ -40,7 +40,7 @@ Obejrzyj wideo lub przeczytaj, aby dowiedzieć się, jak przypisać subskrypcję
    > ![Szczegóły subskrybenta](_img/assign-license-add/subscriber-details.png "Wprowadź nazwę abonenta i inne szczegóły lub wybierz spośród członków dzierżawy.")
 
     > [!NOTE]
-    > Aby elementy członkowskie dzierżawy Azure Active Directory były widoczne po wprowadzeniu nazwy subskrybenta, administrator musi być członkiem dzierżawy. 
+    > Aby elementy członkowskie dzierżawy Azure Active Directory były widoczne po wprowadzeniu nazwy abonenta, administrator musi być członkiem dzierżawy. 
 
 
     Jeśli chcesz, aby ten subskrybent miał dostęp do pobierania oprogramowania po zalogowaniu się do [portalu subskrypcji programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), upewnij się, że włączono przełącznik pobierania w sekcji **ustawienia pobierania** . Jeśli zdecydujesz się wyłączyć pobieranie, użytkownik nie będzie miał dostępu do pobierania oprogramowania.  Dostęp do kluczy produktów również zostanie wyłączony.  Subskrybenci nadal będą mieć dostęp do wszystkich innych korzyści uwzględnionych w subskrypcji.

@@ -7,12 +7,12 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: Dowiedz się, jak nowo zakupione miesięczne subskrypcje programu Visual Studio w portalu administracyjnym subskrypcji
-ms.openlocfilehash: 56f4b4f765edec5b624db786795c84969872978a
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: f6b835969fff3a8316a2b46c6e15217ebe3e33b1
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005102"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467599"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Dodawanie nowych miesięcznych subskrypcji programu Visual Studio do portalu administracyjnego subskrypcji
 Gdy kupisz nowe miesięczne subskrypcje programu Visual Studio przy użyciu subskrypcji platformy Azure, możesz dodać je do portalu administracyjnego subskrypcji, aby przypisać je do użytkowników.  
@@ -21,7 +21,7 @@ Gdy kupisz nowe miesięczne subskrypcje programu Visual Studio przy użyciu subs
 Kroki umożliwiające dodanie subskrypcji miesięcznych zależą od tego, jakiego rodzaju subskrypcje już posiadasz, i od tego, czy jesteś nowym administratorem.
 - Jeśli jesteś nowym administratorem, sprawdzimy subskrypcje platformy Azure, na których masz uprawnienia administratora dostępu użytkownika po pierwszym zalogowaniu się do portalu administratora subskrypcji.  Jeśli wyszukasz miesięczne subskrypcje, dodamy je automatycznie. 
 - Jeśli wcześniej dodano lub administrowano subskrypcje comiesięczne, Sprawdzamy nowe miesięczne subskrypcje przy każdym logowaniu. 
-- Jeśli jesteś już administratorem subskrypcji nabytych za pośrednictwem licencjonowania zbiorowego, ale nie dodano wcześniej ani nie zarządzasz subskrypcjami miesięcznymi, musisz dodać je, korzystając z poniższych kroków.
+- Jeśli jesteś już administratorem subskrypcji uzyskanymi za pośrednictwem licencjonowania zbiorowego, ale nie dodano wcześniej ani nie zarządzasz subskrypcjami miesięcznymi, musisz dodać je, korzystając z poniższych kroków.
 
 ## <a name="how-to-add-monthly-subscriptions"></a>Jak dodać subskrypcje miesięczne
 1. Zaloguj się do portalu administracyjnego subskrypcji na stronie <https://manage.visualstudio.com>
@@ -39,7 +39,7 @@ Kroki umożliwiające dodanie subskrypcji miesięcznych zależą od tego, jakieg
 
 ## <a name="things-to-keep-in-mind"></a>Rzeczy, o których należy pamiętać
 - Opcja dodawania nowych subskrypcji miesięcznych będzie dostępna tylko podczas pierwszego zakupu.  Po dodaniu comiesięcznych subskrypcji sprawdzimy nowe subskrypcje za każdym razem, gdy zalogujesz się do portalu. 
-- Gdy zostaną znalezione nowe subskrypcje, możesz zobaczyć, że są już przypisane do subskrybentów.  Wynika to z faktu, że istnieją inne administratorów z dostępem do subskrypcji platformy Azure, które mają już przypisane do użytkowników nowe subskrypcje programu Visual Studio.  Teraz, po dodaniu ich do portalu, można administrować tymi subskrypcjami. 
+- Gdy zostaną znalezione nowe subskrypcje, możesz zobaczyć, że są już przypisane do subskrybentów.  Wynika to z faktu, że istnieją inne Administratorzy z dostępem do subskrypcji platformy Azure, które mają już przypisane do użytkowników nowe subskrypcje programu Visual Studio.  Teraz, po dodaniu ich do portalu, można administrować tymi subskrypcjami. 
 
 ## <a name="next-steps"></a>Następne kroki
 Po dodaniu subskrypcji możesz przystąpić do ich przypisywania do użytkowników.  Można to zrobić na kilka sposobów:

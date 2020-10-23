@@ -1,31 +1,31 @@
 ---
-title: Role administratorów i administratorów w portalu administracyjnym
+title: Administratorzy i role administratora dla subskrypcji programu Visual Studio
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Dowiedz się więcej o rolach administratora i administratora oraz o sposobach przypisywania administratorów.
-ms.openlocfilehash: fc44845ed403e9bf942761203b75c2277fd1aff2
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 491a8de27477f68b4344ad17b860b80b4ca96aa9
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022711"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467378"
 ---
-# <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Administratorzy i Administratorzy dla umów dotyczących subskrypcji programu Visual Studio
+# <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Administratorzy i Administratorzy dla umów dotyczących subskrypcji programu Visual Studio
 
 W nowym portalu administratora subskrypcji programu Visual Studio dla klientów korzystających z licencjonowania zbiorowego istnieją dwie różne role. Role te są podobne do roli kontakt podstawowy/powiadomienie i rola Menedżera subskrypcji, która została użyta w VLSC.
 
-**Administratorzy:** Po wstępnym skonfigurowaniu organizacji główna lub informacja kontaktowa jest domyślnie administratora. Osoba kontaktowa podstawowa lub kontaktowa może wybrać opcję przypisania dodatkowych administratorów lub administratorów. Administrator może dodawać i usuwać innych administratorów oraz subskrybentów. Jeśli w systemie istnieje więcej niż dwóch administratorów, administrator może usunąć wszystkie z nich oprócz ostatnich dwóch z nich w celu zabezpieczenia.
+**Administratorzy:** Po wstępnym skonfigurowaniu organizacji główna lub informacja kontaktowa jest domyślnie administratora. Kontakt podstawowy lub osoba kontaktowa mogą wybrać opcję przypisania dodatkowych administratorów lub administratorów. Administrator może dodawać i usuwać innych administratorów oraz subskrybentów. Jeśli w systemie istnieje więcej niż dwóch administratorów, administrator może usunąć wszystkie z nich oprócz ostatnich dwóch z nich w celu zabezpieczenia.
 
 **Administratorzy:** Administrator może być przypisany tylko przez administratora. Administrator może zarządzać tylko subskrybentami w umowach, do których przypisuje administrator.
 
 Obejrzyj pokaz dotyczący zarządzania administratorami. 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6L]
 
-## <a name="assigning-administrators"></a>Przypisywanie administratorów
+## <a name="assigning-admins"></a>Przypisywanie administratorów
 Aby przypisać nowych administratorów (administratorów):
 1. Zaloguj się, aby https://manage.visualstudio.com korzystać z adresu e-mail, który został przypisany jako administrator z umową, w której zostały zakupione subskrypcje.
 2. Kliknij kartę z etykietą **Zarządzaj administratorami**.

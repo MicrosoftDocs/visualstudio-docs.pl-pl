@@ -8,18 +8,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cbfeef3352e4abd03e12cc6b228cea8a8c124a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5376c1edf2c87ece78d966bede05b60cc0b6bab
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184409"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467651"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Wzorce interakcji dla programu Visual Studio
 ## <a name="overview"></a>Omówienie
  Wzorzec projektowy, ogólnie rzecz biorąc, stanowi rdzeń projektu, który może być stosowany w określonych sytuacjach w celu rozwiązywania problemów z podobnymi zestawami ograniczeń. Projektanci funkcji i systemów używają tych wzorców projektowych jako punktów początkowych, które można następnie dostosować do ich konkretnej sytuacji.
 
- Program Visual Studio ma bibliotekę wspólnych wzorców interakcji, które należy wziąć pod uwagę podczas tworzenia nowych funkcji. Istnieją dwa podstawowe konteksty dla naszych wzorców projektowych: Visual Studio Client (devenv) i Visual Studio Codespaces (dawniej Visual Studio Online). W przypadku niektórych problemów z projektowaniem istnieje powszechny wzorzec, który działa dobrze we wszystkich sytuacjach. W wielu przypadkach rozwiązanie może być inne dla interfejsu użytkownika, który jest prezentowany w przeglądarce i który jest hostowany w aplikacji klienckiej.
+ Program Visual Studio ma bibliotekę wspólnych wzorców interakcji, które należy wziąć pod uwagę podczas tworzenia nowych funkcji. Istnieją dwa podstawowe konteksty dla naszych wzorców projektowych: Visual Studio Client (devenv) i GitHub Codespaces (dawniej Visual Studio Online). W przypadku niektórych problemów z projektowaniem istnieje powszechny wzorzec, który działa dobrze we wszystkich sytuacjach. W wielu przypadkach rozwiązanie może być inne dla interfejsu użytkownika, który jest prezentowany w przeglądarce i który jest hostowany w aplikacji klienckiej.
 
 ### <a name="visual-studio-client-pattern-types"></a>Typy wzorców klienta programu Visual Studio
 

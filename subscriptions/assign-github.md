@@ -1,18 +1,18 @@
 ---
 title: Oferta programu Visual Studio i usługi GitHub Enterprise | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 09/29/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Zarządzanie subskrypcjami w ofercie programu Visual Studio i usługi GitHub Enterprise
-ms.openlocfilehash: 79c1a2cfe8eaab9e275c6c53661f1667253ea4f5
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ef651a75a0daed1e5e975386a26d1bffcf9b4b82
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584129"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467586"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Zarządzanie subskrypcjami programu Visual Studio za pomocą usługi GitHub Enterprise
 Klienci, którzy mają umowę Enterprise Agreement (EA) z firmą Microsoft, mogą zakupić nową ofertę subskrypcji, która wiąże się z subskrypcjami programu Visual Studio w wersji Standard i usługi GitHub. Jest to prosty i ekonomiczny sposób, w jaki Subskrybenci programu Visual Studio mogą uzyskać przedsiębiorstwo w serwisie GitHub. 
@@ -32,10 +32,10 @@ Aby uzyskać więcej informacji na temat zarządzania subskrypcjami programu Vis
 > [!Important]
 > Jeśli subskrypcje programu Visual Studio z usługą GitHub Enterprise są przypisane przez administratorów subskrypcji programu Visual Studio bez konieczności uprzedniego zakupu, usługi GitHub nie będą powiadamiane o konieczności utworzenia konta w witrynie GitHub Enterprise.  **Zakup co najmniej jednego** Program Visual Studio z subskrypcją usługi GitHub Enterprise należy wprowadzić przed przypisaniem subskrypcji.
 
-## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Co to jest proces konfiguracji programu Visual Studio z usługą GitHub Enterprise?
-Firma GitHub Enterprise jest skonfigurowana i zarządzana niezależnie od subskrypcji programu Visual Studio. Po rozpoczęciu programu Visual Studio z zakupem w serwisie GitHub Enterprise proces instalacji konta przedsiębiorstwa w witrynie GitHub jest inicjowany równolegle z (ale oddzielony od), który ustanawia umowę w [manage.VisualStudio.com](https://manage.visualstudio.com). Ustanowienie tego konta przedsiębiorstwa w serwisie GitHub może zająć trochę czasu. 
+## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Jaki jest proces konfiguracji programu Visual Studio z usługą GitHub Enterprise?
+Usługa GitHub Enterprise jest konfigurowana i zarządzana niezależnie od subskrypcji programu Visual Studio. Po rozpoczęciu programu Visual Studio z zakupem w serwisie GitHub Enterprise proces instalacji konta przedsiębiorstwa w witrynie GitHub jest inicjowany równolegle z (ale oddzielony od), który ustanawia umowę w [manage.VisualStudio.com](https://manage.visualstudio.com). Ustanowienie tego konta usługi GitHub Enterprise może trochę potrwać. 
 
-Gdy firma skonfiguruje konto przedsiębiorstwa usługi GitHub, Subskrybenci, którym przypisano program Visual Studio z subskrypcjami w witrynie GitHub Enterprise, otrzymają wiadomość e-mail z powiadomieniem, że ich subskrypcje programu Visual Studio zostały połączone. Po otrzymaniu tej wiadomości e-mail Subskrybenci mogą skontaktować się z administratorem organizacji usługi GitHub w celu otrzymania zaproszenia do odpowiedniej organizacji.
+Gdy firma skonfiguruje konto usługi GitHub Enterprise, subskrybenci, którym przypisano subskrypcje programu Visual Studio z usługą GitHub Enterprise, otrzymają wiadomość e-mail od usługi GitHub z powiadomieniem o połączeniu ich subskrypcji programu Visual Studio. Po otrzymaniu tej wiadomości e-mail Subskrybenci mogą skontaktować się z administratorem organizacji usługi GitHub w celu otrzymania zaproszenia do odpowiedniej organizacji.
 
 Dodatkowe szczegóły dotyczące konfiguracji Enterprise w witrynie GitHub można znaleźć w [dokumentacji dotyczącej subskrybenta](access-github.md).   
 

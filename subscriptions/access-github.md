@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 09/28/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Dowiedz się więcej o uzyskiwaniu dostępu do przedsiębiorstwa GitHub w ramach subskrypcji programu Visual Studio
-ms.openlocfilehash: 4c3943c9a6229e865bf90a24d12ecbc8b91d2fd5
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fc4c36e72affb94f0707389d219284cc2a652bfd
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584178"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467521"
 ---
 # <a name="visual-studio-with-github-enterprise-subscriptions"></a>Visual Studio z subskrypcjami w przedsiębiorstwie GitHub
 
@@ -33,7 +33,7 @@ Visual Studio Enterprise, Visual Studio Professional i GitHub Enterprise będą 
 
 Aby dowiedzieć się więcej na temat korzyści i opcji, odwiedź stronę <https://visualstudio.microsoft.com/subscriptions/visual-studio-github> . 
 
-## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Co to jest proces konfiguracji programu Visual Studio z usługą GitHub Enterprise?
+## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Jaki jest proces konfiguracji programu Visual Studio z usługą GitHub Enterprise?
 
 Program Visual Studio z subskrypcjami w przedsiębiorstwie GitHub jest zarządzany w dwóch częściach:
 1. Subskrypcja programu Visual Studio (Enterprise lub Professional)
@@ -44,12 +44,12 @@ Po przypisaniu programu Visual Studio z subskrypcją usługi GitHub otrzymasz wi
    > [!div class="mx-imgBorder"]
    > ![Oczekująca Konfiguracja konta przedsiębiorstwa w witrynie GitHub Enterprise](_img/access-github/pending-account-setup.png "Organizacja musi najpierw skonfigurować konto przedsiębiorstwa.")  
 
-Organizacja GitHub Enterprise jest zarządzana przez administratora usługi GitHub niezależnie od subskrypcji programu Visual Studio.  Gdy firma skonfiguruje konto w usłudze GitHub Enterprise, otrzymasz wiadomość e-mail z usługi GitHub z powiadomieniem, że Twoja subskrypcja programu Visual Studio została połączona, a kafelek korzyści zostanie zaktualizowany jak pokazano poniżej.  Konfigurowanie tego konta może potrwać trochę czasu i zależy od tego, czy firma zakończy proces instalacji. Po otrzymaniu wiadomości e-mail można skontaktować się z odpowiednim administratorem organizacji usługi GitHub w celu zażądania zaproszenia do organizacji i/lub repozytorium.  
+Organizacja GitHub Enterprise jest zarządzana przez administratora usługi GitHub niezależnie od subskrypcji programu Visual Studio.  Gdy firma skonfiguruje konto w usłudze GitHub Enterprise, otrzymasz wiadomość e-mail z usługi GitHub z powiadomieniem, że Twoja subskrypcja programu Visual Studio została połączona, a kafelek korzyści zostanie zaktualizowany jak pokazano poniżej.  Skonfigurowanie tego konta może trochę potrwać i zależy od tego, czy firma ukończy proces konfiguracji. Po otrzymaniu wiadomości e-mail można skontaktować się z odpowiednim administratorem organizacji usługi GitHub w celu zażądania zaproszenia do organizacji i/lub repozytorium.  
 
    > [!div class="mx-imgBorder"]
    > ![Zaproszenia do serwisu GitHub Enterprise oczekujące na zaproszenie](_img/access-github/pending-invite.png "Skontaktuj się z administratorem usługi GitHub, aby zażądać zaproszenia do organizacji usługi GitHub.")  
 
-Po wysłaniu zaproszenia przez administratora organizacji usługi GitHub otrzymasz wiadomość e-mail z witryny GitHub, a kafelek korzyści zostanie zaktualizowany ponownie:
+Po wysłaniu zaproszenia przez administratora organizacji usługi GitHub otrzymasz wiadomość e-mail z witryny GitHub, a kafelek korzyści zostanie ponownie zaktualizowany:
 
    > [!div class="mx-imgBorder"]
    > ![Zatwierdzenie zaproszenia na platformie GitHub Enterprise](_img/access-github/pending-acceptance.png "Zaakceptuj zaproszenie otrzymane w wiadomości e-mail z usługi GitHub")  
@@ -75,7 +75,7 @@ Jeśli dopiero zaczynasz w serwisie GitHub, Oto kilka przydatnych zasobów:
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
 ### <a name="q--where-is-my-github-subscription"></a>P: gdzie jest moja subskrypcja usługi GitHub?
-Odp.: proces konfigurowania konta przedsiębiorstwa w serwisie GitHub może chwilę potrwać.  Jeśli oczekujesz, że wszystko jest oczekujące, możesz skontaktować się z administratorem usługi GitHub.  Istnieje możliwość, że administrator nadal pracuje nad nim lub nie został wybrany do utworzenia konta w witrynie GitHub Enterprise. 
+Odp.: proces konfigurowania konta przedsiębiorstwa w serwisie GitHub może chwilę potrwać.  Jeśli masz oczekujące i nie słyszę wszystkiego, możesz skontaktować się z administratorem usługi GitHub.  Istnieje możliwość, że administrator nadal pracuje nad nim lub nie utworzył konta w witrynie GitHub dla przedsiębiorstw. 
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-benefits"></a>P: Czy mogę uzyskać pełną korzyści z subskrypcji programu Visual Studio?
 Odp.: wraz z usługą GitHub Enterprise otrzymujesz wszystkie zalety standardowej subskrypcji programu Visual Studio, w tym pobrania oprogramowania, usług Cloud Services, pomocy technicznej i korzyści dla partnerów, podobnie jak w przypadku zakupu subskrypcji osobno.

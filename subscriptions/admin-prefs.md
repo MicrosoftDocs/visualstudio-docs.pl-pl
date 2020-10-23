@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Dowiedz się, jak ustawić preferencje dotyczące języka, kontaktów, poziomu subskrypcji i innych elementów w portalu administracyjnym
-ms.openlocfilehash: 58819995966f5cdf17335de474e83d2a77eccc37
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: e044db92a318114cd2f159b859843db354fac6c7
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022617"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467443"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Ustawianie preferencji dla umów w portalu administracyjnym
 Administratorzy mogą ustawić pewne preferencje w portalu administracyjnym (portalu administracyjnym), które będą stosowane globalnie dla każdej umowy.  Te preferencje automatycznie wypełniają szczegóły subskrypcji dla administratorów podczas dodawania subskrybentów i mogą być modyfikowane tylko przez administratorów.  
@@ -53,14 +53,14 @@ Możesz użyć tego ustawienia, aby określić, które z poziomów subskrypcji u
 Ustawienie domyślnego języka komunikacji i ustawień regionalnych może usprawnić proces przypisywania subskrypcji.  Na przykład jeśli zespół programistyczny jest oparty na innym kraju niż Twój zespół administracyjny, można ustawić preferencje najlepiej dopasowane do lokalizacji subskrybentów. Te ustawienia mogą być nadal zmieniane przez wszystkich administratorów dla poszczególnych subskrybentów. 
 
 ### <a name="default-external-subscribers-setting"></a>Domyślne ustawienie subskrybentów zewnętrznych
-To preferencja pozwala określić, czy Administratorzy mogą dodawać subskrybentów spoza dzierżawy/katalogu w organizacji.  Jeśli wyłączysz tę opcję, żaden subskrybent zewnętrzny nie będzie dozwolony.  Jeśli włączysz tę funkcję, a administrator podejmie próbę dodania subskrybenta zewnętrznego, zostanie poproszony o potwierdzenie wyboru i będzie można przypisać subskrypcję. Administratorzy nie mogą zastąpić tego ustawienia. 
+To preferencja pozwala zdecydować, czy Administratorzy mogą dodawać subskrybentów spoza dzierżawy/katalogu w organizacji.  Jeśli wyłączysz tę opcję, żaden subskrybent zewnętrzny nie będzie dozwolony.  Jeśli włączysz tę funkcję, a administrator podejmie próbę dodania subskrybenta zewnętrznego, zostanie poproszony o potwierdzenie wyboru i będzie można przypisać subskrypcję. Administratorzy nie mogą zastąpić tego ustawienia. 
 
 ### <a name="default-downloads-setting"></a>Domyślne ustawienie pobierania
 Włączenie tego ustawienia, które domyślnie jest włączone, spowoduje umożliwienie subskrybentom dostępu do plików do pobrania, gdy administratorzy tworzą nowe subskrypcje.  Administratorzy nadal mogą wyłączyć pliki do pobrania w poszczególnych subskrypcjach.  Wyłączenie dostępu do plików do pobrania powoduje także wyłączenie dostępu do kluczy produktów.  
 
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
-### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-administrators"></a>P: Czy można wyłączyć **kontaktowy adres e-mail** , aby Subskrybenci nie mogli skontaktować się z administratorami?
+### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-admins"></a>P: Czy można wyłączyć **kontaktowy adres e-mail** , dzięki czemu Subskrybenci nie mogą kontaktować się z administratorami?
 Odp.: nie — podczas określania, którzy Administratorzy są skontaktowani przy użyciu grupy zabezpieczeń, aliasu e-mail grupy lub indywidualnego adresu e-mail, nie można wyłączyć tej funkcji.
 
 ### <a name="q-if-i-answer-a-subscribers-email-will-they-have-my-email-address"></a>P: Jeśli odpowieem adres e-mail subskrybenta, czy ma mój adres e-mail?
