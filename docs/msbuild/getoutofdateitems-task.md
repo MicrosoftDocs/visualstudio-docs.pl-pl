@@ -1,5 +1,7 @@
 ---
 title: GetOutOfDateItems — zadanie | Microsoft Docs
+description: Za pomocą zadania pomocnika programu MSBuild GetOutOfDateItems można odczytywać i zapisywać dzienniki transakcji (TLOGs) oraz zwracać zestawy elementów, które nie są aktualne.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa60ff0f7e4060f5725fe54bd5950d858b86a22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cc80d4e1aa3580e0185460d19f78e9737b73220
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77272395"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436824"
 ---
 # <a name="getoutofdateitems-task"></a>GetOutOfDateItems, zadanie
 
@@ -40,7 +42,7 @@ W poniższej tabeli opisano parametry zadania **GetOutOfDateItems** .
 |**HasInterdependencies**|Opcjonalny parametr wyjściowy **bool** .|
 |**OutOfDateSources**|Opcjonalny parametr wyjściowy **ITaskItem []** .|
 |**OutputsMetadataName**|Wymagany parametr **ciągu** .|
-|**Źródła**|Opcjonalny parametr **ITaskItem []** .|
+|**Źródeł**|Opcjonalny parametr **ITaskItem []** .|
 |**TLogDirectory**|Wymagany parametr **ciągu** .|
 |**TLogNamePrefix**|Wymagany parametr **ciągu** .|
 

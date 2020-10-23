@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
-ms.date: 03/26/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Dowiedz się więcej o subskrypcji Power BI Pro dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: 82325c090087aea81f43472ebb41a385af51c19d
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: efc7aca0c5729a65a7f622721dbf25931eb89fb8
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005029"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435785"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro w subskrypcjach programu Visual Studio
 
@@ -27,33 +27,33 @@ Aby użyć Power BI Pro, musisz skonfigurować konto lub zalogować się przy u�
 
 2. Znajdź kafelek Power BI Pro w sekcji Tools na stronie korzyści. Kliknij link **Pobierz kod** w dolnej części kafelka korzyści.   Otrzymasz powiadomienie, że kod został pomyślnie pobrany.  Kliknij pozycję **Aktywuj**.
    > [!div class="mx-imgBorder"]
-   > ![Kafelek Power BI Pro korzyści](_img/vs-pbi/vs-pbi-tile.png)
+   > ![Kafelek Power BI Pro korzyści](_img/vs-pbi/vs-pbi-tile.png "Na kafelku Power BI Pro kliknij przycisk "Pobierz kod", a następnie pozycję "Aktywuj", aby rozpocząć pracę.")
 
 3. Być może masz już konto, jeśli aktywowano pewne korzyści z subskrypcji, takie jak Microsoft 365 subskrypcję deweloperów lub Enterprise Mobility + Security.  Jeśli zostanie znalezione istniejące konto, możesz dodać subskrypcję Power BI Pro do istniejącego konta lub utworzyć nowe konto.  Zdecydowanie zalecamy dodanie go do istniejącego konta, aby uzyskać dostęp do różnych korzyści przy użyciu jednego identyfikatora użytkownika.
    > [!div class="mx-imgBorder"]
-   > ![Korzystanie z Power BI Pro istniejącego konta](_img/vs-pbi/vs-pbi-existing-account.png)
+   > ![Korzystanie z Power BI Pro istniejącego konta](_img/vs-pbi/vs-pbi-existing-account.png "Dodaj Power BI Pro do istniejącego konta, jeśli go masz.")
 
 4. Aby utworzyć nowe konto, podaj informacje kontaktowe, a następnie kliknij przycisk **dalej**.
 
 5. Następnie Utwórz identyfikator użytkownika i hasło.  Jeśli masz już konto i tworzysz nowe, musisz podać inną nazwę firmy niż użyta na istniejącym koncie.  Kliknij pozycję **Utwórz moje konto**.
    > [!div class="mx-imgBorder"]
-   > ![Korzystanie z Power BI Pro tworzenia identyfikatora użytkownika](_img/vs-pbi/vs-pbi-create-user-id-cropped.png)
+   > ![Korzystanie z Power BI Pro tworzenia identyfikatora użytkownika](_img/vs-pbi/vs-pbi-create-user-id-cropped.png "W przypadku nowych kont wprowadź identyfikator użytkownika i hasło.")
 
 6. Aby upewnić się, że prawdziwa osoba tworzy konto, zostanie poproszony o podanie kodu potwierdzenia.  Podaj numer telefonu i zdecyduj, czy chcesz otrzymywać kod za pośrednictwem połączenia telefonicznego lub wiadomości tekstowej.  Kliknij przycisk **Monituj** lub **Zadzwoń do mnie**.
    > [!div class="mx-imgBorder"]
-   > ![Korzyść Power BI Pro nie jest robotem](_img/vs-pbi/vs-pbi-robot1-cropped.png)
+   > ![Korzyść Power BI Pro nie jest robotem](_img/vs-pbi/vs-pbi-robot1-cropped.png "Wybierz pozycję "text Me" lub "Zadzwoń do mnie", aby otrzymać kod potwierdzający.")
 
 7. Wprowadź otrzymany kod, a następnie kliknij przycisk **dalej**.
 
 8. Podaj informacje kontaktowe, a następnie kliknij przycisk **dalej**.
    > [!div class="mx-imgBorder"]
-   > ![Informacje kontaktowe dotyczące Power BI Pro korzyści](_img/vs-pbi/vs-pbi-contact-cropped.png)
+   > ![Informacje kontaktowe dotyczące Power BI Pro korzyści](_img/vs-pbi/vs-pbi-contact-cropped.png "Podaj swoje informacje kontaktowe dla Twojego konta.")
 
 9. Następna strona potwierdzi, że subskrypcja Power BI Pro Developer (MSDN) ma cenę $0,00.  Kliknij przycisk **Dalej**.
 
 10. Na koniec będziemy zbierać informacje o płatności.  Nie martw się — nie będą naliczone żadne opłaty.  Zwróć uwagę, że cena jest nadal $0,00.  Możesz wybrać kartę kredytową, konto bankowe lub fakturę jako formę płatności.  Jeśli wybierzesz pozycję **Faktura**, może pojawić się prośba o opinię na temat tego, dlaczego wolisz korzystać z tej metody płatności.  Podaj informacje wymagane dla preferowanej metody płatności, a następnie kliknij pozycję **Umieść zamówienie**.
     > [!div class="mx-imgBorder"]
-    > ![Informacje kontaktowe dotyczące Power BI Pro korzyści](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png)
+    > ![Power BI Pro korzyści paymant](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png "Wybierz metodę płatności.  Pamiętaj, że ta oferta nie zostanie obciążona.")
 
 11. Następna strona potwierdza, że wszystko jest ustawione, aby rozpocząć korzystanie z Power BI Pro.  Strona udostępni link do strony logowania.  Zalecamy nagranie linku do strony logowania, a także identyfikatora użytkownika.  (Otrzymasz również powitalną wiadomość e-mail pod adresem podanym podczas konfigurowania konta).  Zobaczysz również automatyczne okno asystenta Microsoft 365, którego możesz użyć, jeśli masz pytania.  Kliknij **przycisk Rozpocznij,** aby kontynuować.
 

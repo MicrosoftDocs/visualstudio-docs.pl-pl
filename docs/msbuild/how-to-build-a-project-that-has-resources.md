@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: kompilowanie projektu zawierającego zasoby | Microsoft Docs'
+description: Dowiedz się więcej na temat sposobu tworzenia projektu zawierającego zasoby oraz sposobu kompilowania zasobów przy użyciu programu MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a76246096eec8779ce331e93f01be5ab791d1cdb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a71a34b4ce208b093f7982ba3516b0229c8644
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633957"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436676"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Instrukcje: kompilowanie projektu zawierającego zasoby
 
@@ -38,7 +40,7 @@ Biblioteka typowych zadań, które są dostarczane z programem MSBuild, zawiera 
 
 4. Użyj elementu utworzonego na podstawie `Output` elementu jako dane wejściowe w innym zadaniu.
 
-## <a name="example"></a>Przykład
+## <a name="example-1"></a>Przykład 1
 
 Poniższy przykład kodu pokazuje `Output` , jak element określa, że `OutputResources` atrybut `GenerateResource` zadania będzie zawierać skompilowane pliki zasobów *Alpha. resources* i *beta. resources* oraz że te dwa pliki zostaną umieszczone wewnątrz `Resources` listy elementów. Identyfikując te pliki *. resources* jako kolekcję elementów o tej samej nazwie, można je łatwo wykorzystać jako dane wejściowe dla innego zadania, na przykład zadanie [CSC](../msbuild/csc-task.md) .
 
@@ -55,7 +57,7 @@ To zadanie jest równoważne użyciu przełącznika **/Compile** dla [Resgen.exe
 </GenerateResource>
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-2"></a>Przykład 2
 
 Następujący przykładowy projekt zawiera dwa zadania: `GenerateResource` zadanie do kompilowania zasobów i `Csc` zadania w celu skompilowania zarówno plików kodu źródłowego, jak i skompilowanych plików zasobów. Pliki zasobów skompilowane przez `GenerateResource` zadanie są przechowywane w `Resources` elemencie i przesyłane do `Csc` zadania.
 

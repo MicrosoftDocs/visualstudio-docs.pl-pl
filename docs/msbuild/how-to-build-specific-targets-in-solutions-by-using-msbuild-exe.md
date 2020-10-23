@@ -1,5 +1,7 @@
 ---
 title: Używanie MSBuild.exe do kompilowania określonych obiektów docelowych w rozwiązaniach
+description: Dowiedz się, jak używać wiersza polecenia MSBuild.exe, aby tworzyć konkretne cele konkretnych projektów w rozwiązaniach.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 178dfcaf0bdf8296fd271cb7c4e5dd0bbd251d7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a8d774ace7744c90d0cf092faa2786110ed7309
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633931"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436428"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Instrukcje: kompilowanie określonych obiektów docelowych w rozwiązaniach za pomocą MSBuild.exe
 

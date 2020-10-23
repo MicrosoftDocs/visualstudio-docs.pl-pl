@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 10/06/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat korzyści z uczenia serwisu LinkedIn dostępnych w ramach subskrypcji usługi LinkedIn Premium zawartej w wybranych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: f71510b7d77ce79c1697848d505623c8994d8301
-ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
+ms.openlocfilehash: 7a5e15ad5d1101123a03b98da30d48895410313b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805893"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435850"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Korzyść szkoleniowa serwisu LinkedIn w ramach subskrypcji programu Visual Studio
 
@@ -27,7 +27,7 @@ Aby aktywować subskrypcję serwisu LinkedIn Premium i korzyść uczenia serwisu
 
 2. Znajdź kafelek uczenie serwisu LinkedIn w kategorii Edukacja i kliknij link **Pobierz kod** .
    > [!div class="mx-imgBorder"]
-   > ![Kafelek korzyści szkoleniowych LinkedIn](_img/vs-linkedin/vs-linkedin-6-month-tile.png)
+   > ![Kafelek korzyści szkoleniowych LinkedIn](_img/vs-linkedin/vs-linkedin-6-month-tile.png "Kliknij przycisk "Pobierz kod", aby zgłosić swój kod i rozpocząć pracę.")
 
 3. Jeśli masz już konto w serwisie LinkedIn i użytkownik jest zalogowany automatycznie, natychmiast nastąpi przekierowanie do strony aktywacji do korzystania z serwisu LinkedIn.  Jeśli masz konto LinkedIn, ale nie zalogowano się automatycznie, po prostu wprowadź nazwę użytkownika i hasło, a następnie kliknij przycisk **Zaloguj**.  Przejdź do [tego kroku](#activate-your-offer) , aby aktywować ofertę.
 
@@ -57,15 +57,15 @@ Aby aktywować subskrypcję serwisu LinkedIn Premium i korzyść uczenia serwisu
 ### <a name="activate-your-offer"></a>Aktywuj ofertę
 15. Teraz, po zalogowaniu się do konta usługi LinkedIn lub utworzeniu nowego, możesz zacząć aktywować subskrypcję Premium i zacząć uczenie się w serwisie LinkedIn.  Kliknij pozycję **Aktywuj ofertę**.
    > [!div class="mx-imgBorder"]
-   > ![Aktywuj uczenie serwisu LinkedIn](_img/vs-linkedin/vs-linkedin-Activate1.png)
+   > ![Aktywuj uczenie serwisu LinkedIn](_img/vs-linkedin/vs-linkedin-Activate1.png "Kliknij pozycję "Aktywuj ofertę", aby rozpocząć uczenie się.")
 
 16. Możesz rozpocząć Eksplorowanie interesujących Cię umiejętności.  Wybierz z listy zaleceń, Wyszukaj inne umiejętności lub kliknij pozycję **Pomiń** , aby kontynuować bez wybierania umiejętności.
    > [!div class="mx-imgBorder"]
-   > ![Umiejętności uczenia serwisu LinkedIn](_img/vs-linkedin/vs-linkedin-skills.png)
+   > ![Umiejętności uczenia serwisu LinkedIn](_img/vs-linkedin/vs-linkedin-skills.png "Wybierz umiejętności, które chcesz poznać.")
 
 17. Pomyślnie aktywowano ofertę subskrypcji Premium i teraz możesz zacząć korzystać z uczenia serwisu LinkedIn i innych korzyści oferowanych przez usługę Premium!
    > [!div class="mx-imgBorder"]
-   > ![Strona główna uczenia LinkedIn](_img/vs-linkedin/vs-linkedin-learning-home.png)
+   > ![Strona główna uczenia LinkedIn](_img/vs-linkedin/vs-linkedin-learning-home.png "Witamy w serwisie LinkedIn Premium dzięki uczeniu serwisu LinkedIn!")
 
 ## <a name="eligibility"></a>Kryteria
 

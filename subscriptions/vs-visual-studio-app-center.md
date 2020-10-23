@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Dowiedz się więcej o korzyściach Visual Studio App Center uwzględnionych w subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 69d010afddca1f8fc51f77d806c75dc1b7b34256
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6b1fc94d596f3b771f8354c0857ef533c00e1449
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005730"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435728"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center w subskrypcjach programu Visual Studio
 
@@ -28,15 +28,15 @@ Wprowadzenie do Visual Studio App Center jest proste.
 
 2. Znajdź kafelek Visual Studio App Center i kliknij pozycję **Rozpocznij**.
     > [!div class="mx-imgBorder"]
-    > ![Kafelek App Center VS](_img/vs-app-center/vs-app-center-tile.png)
+    > ![Kafelek App Center VS](_img/vs-app-center/vs-app-center-tile.png "Kliknij przycisk "Rozpocznij" na kafelku Visual Studio App Center.")
 
 3. Następnie utwórz konto.  Możesz użyć istniejących kont dla usług Microsoft, Google, GitHub lub Facebook, aby się zalogować, lub utworzyć nowe konto, podając nazwę użytkownika, adres e-mail i hasło.  Kliknij przycisk **Utwórz konto** , aby kontynuować.
     > [!div class="mx-imgBorder"]
-    > ![A App Center Utwórz konto](_img/vs-app-center/vs-app-center-create-account.png)
+    > ![A App Center Utwórz konto](_img/vs-app-center/vs-app-center-create-account.png "Wybierz sposób logowania.")
 
 4. To już wszystko.  Po prostu kliknij pozycję **Dodaj nową organizację** lub **Dodaj nową aplikację** , aby rozpocząć pracę.
     > [!div class="mx-imgBorder"]
-    > ![Portal VS App Center](_img/vs-app-center/vs-app-center-portal.png)
+    > ![Portal VS App Center](_img/vs-app-center/vs-app-center-portal.png "Wszystko jest gotowe do użycia.  Kliknij pozycję "Dodaj nową organizację" lub Dodaj nową aplikację, aby rozpocząć.")
 
 ## <a name="eligibility"></a>Kryteria
 
@@ -82,6 +82,6 @@ Teraz powinno być możliwe uzyskanie dostępu do portalu App Center i utworzeni
 
 ## <a name="next-steps"></a>Następne kroki
 Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
-- [Visual Studio](vs-ide-benefit.md)
+- [Program Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)

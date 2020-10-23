@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: użycie zmiennych środowiskowych w kompilacji | Microsoft Docs'
+description: Dowiedz się, jak uzyskać dostęp do zmiennych środowiskowych w plikach projektów programu MSBuild, i użyć zmiennych środowiskowych, aby ustawić opcje kompilacji bez modyfikowania pliku projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afc679f9b782b8bc9ed3e04a2b8fb684cdbc1a20
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac100427c653a785d1e562b807f7bd4a001ae6ff
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633788"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436176"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Instrukcje: użycie zmiennych środowiskowych w kompilacji
 

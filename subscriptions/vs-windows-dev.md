@@ -2,17 +2,17 @@
 title: Korzyść konta dewelopera systemu Windows w subskrypcjach programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat konta dewelopera systemu Windows dołączonego do subskrypcji programu Visual Studio.
-ms.openlocfilehash: 2686034d95c8faf8caed25b6b2fb4cb7ad83d8fe
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 46cb22becd8a5ac852c7fddbd2cf8b473cef47bc
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005385"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435821"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Konto dewelopera systemu Windows w subskrypcjach programu Visual Studio
 Konto dewelopera systemu Windows, dołączone do wybranej subskrypcji programu Visual Studio, umożliwia przesyłanie bezpłatnych i płatnych aplikacji systemu Windows do sklepu Windows.
@@ -25,10 +25,10 @@ Zalecamy utworzenie "prywatnego" okna przeglądarki dla tego procesu.  Na przyk�
 1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Znajdź kafelek konto dewelopera systemu Windows w sekcji Narzędzia i kliknij link **uzyskaj kod** w dolnej części kafelka korzyści.  Skopiuj kod do schowka, a następnie kliknij przycisk **Aktywuj**.
    > [!div class="mx-imgBorder"]
-   > ![Kafelek korzyści dla deweloperów systemu Windows](_img/vs-windows-dev/vs-windows-dev-tile.png)
+   > ![Kafelek korzyści dla deweloperów systemu Windows](_img/vs-windows-dev/vs-windows-dev-tile.png "Kliknij przycisk "Pobierz kod" na kafelku konta dewelopera systemu Windows, a następnie kliknij przycisk "Aktywuj".")
 3. W [https://developer.microsoft.com/store/register/](https://developer.microsoft.com/store/register/) witrynie można rozpocząć proces rejestracji.  Kliknij przycisk **Utwórz konto** , aby kontynuować.
    > [!div class="mx-imgBorder"]
-   > ![Rejestracja korzyści dla deweloperów systemu Windows](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
+   > ![Rejestracja korzyści dla deweloperów systemu Windows](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png "Kliknij pozycję "Zarejestruj się", aby utworzyć konto.")
 4. Zaloguj się do subskrypcji.  Jeśli masz wiele kont, wybierz konto skojarzone z subskrypcją przedsiębiorstwa.
 0. Wprowadź swój adres e-mail, wybierz preferowany język i kliknij przycisk **Zapisz**.
 5. Na następnej stronie Wybierz kraj lub region, w którym mieszkasz lub w którym znajduje się Twoja firma, a następnie kliknij przycisk **dalej**.
@@ -73,6 +73,6 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="next-steps"></a>Następne kroki
 Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
-- [Visual Studio](vs-ide-benefit.md)
+- [Program Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)

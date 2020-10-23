@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
-ms.date: 09/21/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą usuwać przypisania subskrypcji w portalu administratora subskrypcji programu Visual Studio
-ms.openlocfilehash: 0ce0235d75946f46d39c78084121ce295067d74e
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: e1c5395bc2cd2002d8eed62d69697ec61d9c0829
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022268"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436934"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Usuwanie przypisań w subskrypcjach programu Visual Studio
 Gdy Subskrybenci nie wymagają już subskrypcji programu Visual Studio, na przykład gdy opuszczają firmę, ukończą projekt lub przełączają się do nowej roli zadania, można usunąć swoją subskrypcję i przypisać ją do innej osoby. Należy pamiętać, że po ponownym przypisaniu subskrypcji nie wszystkie korzyści dla subskrybenta zostaną zresetowane.  Nowy użytkownik będzie mógł przejąć wszystkie nieprzejęte klucze i wyświetlić poprzednio zażądane klucze, ale limity **nie** są resetowane.  W przypadku organizacji z umowami Enterprise Agreement (EA) wszystkie korzyści, które były używane przez oryginalnego użytkownika, takie jak szkolenia Pluralsight, zostaną zresetowane. 
@@ -29,7 +29,9 @@ Obejrzyj ten film wideo lub przeczytaj, aby dowiedzieć się, jak usunąć przyp
    > ![Usuwanie subskrybentów](_img/delete-license/delete-subscribers.png "Wybierz użytkowników, które chcesz usunąć, a następnie kliknij pozycję Usuń. Możesz użyć klawiszy CTRL i Shift, aby wybrać wielu subskrybentów.")
 
    > [!NOTE]
-   > Usuwanie zbiorcze przy użyciu szablonu jest niedostępne. W przypadku organizacji, które zarządzają przypisaniami subskrypcji za poorednictwem grup zabezpieczeń Azure Active Directory, zobacz [nasz artykuł](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) , aby uzyskać więcej informacji na temat sposobu usuwania.  
+   > Usuwanie zbiorcze przy użyciu szablonu jest niedostępne. 
+   >
+   > Jeśli dodano przypisania subskrypcji za pomocą Azure Active Directory grup zabezpieczeń, usunięcie aktualizacji w portalu administracyjnym może potrwać do 24 godzin.  Zapoznaj się z [naszym artykułem](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) , aby uzyskać więcej informacji na temat używania grup Azure Active Directory do zarządzania subskrypcjami. 
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)

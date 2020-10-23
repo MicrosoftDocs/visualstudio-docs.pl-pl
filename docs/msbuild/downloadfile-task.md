@@ -1,5 +1,7 @@
 ---
 title: DownloadFile — zadanie | Microsoft Docs
+description: Dowiedz się więcej na temat parametrów zadania DownloadFile programu MSBuild, które pobiera określone pliki przy użyciu protokołu HTTP.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a9c3b1c22277261276ced1940f1f2e83d11882
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fda3edcd1c8bf173e1b70d8bf2d76d58f6e10d8d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634256"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436657"
 ---
 # <a name="downloadfile-task"></a>DownloadFile, zadanie
 

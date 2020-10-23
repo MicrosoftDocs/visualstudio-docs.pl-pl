@@ -1,18 +1,18 @@
 ---
-title: Parasoft Wirtualizacja/SOAtest Professional Desktop | Microsoft Docs
+title: Parasoft wirtualizację/SOAtest Professional w subskrypcjach programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Dowiedz się, jak aktywować subskrypcję Test Professional wirtualizacji/SOA Parasoft w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: f5f32a15b0c2ab292f55c5ec5153161f03598ef4
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6209be915d3744e13aad674ea893e77e0b276044
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006270"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436031"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft wirtualizację/SOAtest Professional w subskrypcjach programu Visual Studio
 
@@ -24,11 +24,11 @@ Przetestuj się wcześniej i częściej.  Symuluj i Przetestuj zachowanie niedos
 
 2. Znajdź kafelek Parasoft w sekcji Tools (narzędzia) i kliknij link **Pobierz kod** w dolnej części kafelka korzyści.   Otrzymasz powiadomienie, że kod został pomyślnie pobrany.  Kliknij pozycję **Aktywuj**.
    > [!div class="mx-imgBorder"]
-   > ![Kafelek korzyści Parasoft](_img/vs-parasoft/vs-parasoft-tile.png)
+   > ![Kafelek korzyści Parasoft](_img/vs-parasoft/vs-parasoft-tile.png "Kliknij pozycję "Pobierz kod" na kafelku Parasoft, a następnie kliknij pozycję "Aktywuj", aby rozpocząć pracę.")
 
 3. Nastąpi przekierowanie do witryny sieci Web Parasoft, w której utworzysz konto.  Po prostu podaj swoje informacje kontaktowe i kliknij przycisk **Prześlij**.
    > [!div class="mx-imgBorder"]
-   > ![Parasoft korzyści tworzenia konta](_img/vs-parasoft/vs-parasoft-new-account.png)
+   > ![Parasoft korzyści tworzenia konta](_img/vs-parasoft/vs-parasoft-new-account.png "Podaj swoje informacje kontaktowe, a następnie kliknij przycisk Prześlij, aby utworzyć konto.")
 
    > [!Note]
    > Tabela na stronie zawiera ceny za pełny rok i rabat dla programu Visual Studio. Te ceny będą obowiązywać po użyciu subskrypcji z sześciu miesięcy.  
@@ -39,7 +39,7 @@ Przetestuj się wcześniej i częściej.  Symuluj i Przetestuj zachowanie niedos
 
 6. Kliknij link odpowiadający systemowi operacyjnemu.
    > [!div class="mx-imgBorder"]
-   > ![Powitalna wiadomość E-mail z Parasoft korzyść](_img/vs-parasoft/vs-parasoft-email.png)
+   > ![Powitalna wiadomość E-mail z Parasoft korzyść](_img/vs-parasoft/vs-parasoft-email.png "Wybierz link pobierania, który odpowiada systemowi operacyjnemu.")
 
 7. W zależności od używanej przeglądarki mogą pojawić się różne okna dialogowe z możliwością uruchomienia Instalatora.  Na przykład w programie Internet Explorer zostanie wyświetlona lista ostatnich pobrań z parasoft_soavirt_9.10.2_win32_x86_64.exe w górnej części strony. Kliknij przycisk **Uruchom** , aby uruchomić Instalatora.
 
@@ -49,7 +49,7 @@ Przetestuj się wcześniej i częściej.  Symuluj i Przetestuj zachowanie niedos
 
 10. Zostanie uruchomiony Kreator instalacji wirtualizacji Parasoft SOAtest &.  Kliknij przycisk **Dalej**.
     > [!div class="mx-imgBorder"]
-    > ![Rozpoczęcie instalacji korzyści Parasoft](_img/vs-parasoft/vs-parasoft-start-install.png)
+    > ![Rozpoczęcie instalacji korzyści Parasoft](_img/vs-parasoft/vs-parasoft-start-install.png "Kliknij przycisk "dalej", aby rozpocząć instalację programu Parasoft SOAtest & wirtualizacja.")
 
 11. Kliknij przycisk Akceptuję **umowę**, a następnie kliknij przycisk **dalej**.
 

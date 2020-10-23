@@ -1,5 +1,7 @@
 ---
 title: GenerateApplicationManifest — — zadanie | Microsoft Docs
+description: Użyj zadania MSBuild GenerateApplicationManifest — do wygenerowania manifestu aplikacji ClickOnce lub manifestu natywnego.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f77420c5ab269e1b0052ce6102c4e3196a3be52b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4752e4b736a6ba2f8b4a209824b22f94d8036c2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634100"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436557"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest — zadanie
 
@@ -84,7 +86,7 @@ Dane wejściowe dla zależności i plików mogą być dodatkowo uzupełnione o m
 |`TargetPath`|Określa sposób definiowania ścieżki w wygenerowanym manifeście. Ten atrybut jest prawidłowy dla wszystkich plików. Jeśli ten atrybut nie jest określony, Specyfikacja elementu jest używana. Ten atrybut jest prawidłowy dla wszystkich plików i zależności o `DependencyType` wartości `Install` .|
 |`IsDataFile`|`Boolean`Wartość metadanych, która wskazuje, czy plik jest plikiem danych. Plik danych jest specjalny w tym, że jest migrowany między aktualizacjami aplikacji. Te metadane są prawidłowe tylko dla plików. `False` jest wartością domyślną.|
 
-## <a name="example"></a>Przykład
+## <a name="example-1"></a>Przykład 1
 
 Ten przykład używa `GenerateApplicationManifest` zadania do wygenerowania manifestu aplikacji ClickOnce i `GenerateDeploymentManifest` zadania w celu wygenerowania manifestu wdrożenia dla aplikacji z pojedynczym zestawem. Następnie używa `SignFile` zadania do podpisania manifestów.
 
@@ -138,7 +140,7 @@ Ilustruje to najprostszy możliwy scenariusz generowania manifestu, w którym s�
 </Project>
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-2"></a>Przykład 2
 
 Ten przykład używa `GenerateApplicationManifest` i `GenerateDeploymentManifest` zadań do generowania aplikacji ClickOnce i manifestów wdrożenia dla aplikacji z pojedynczym zestawem, określając nazwę i tożsamość manifestów.
 
@@ -199,7 +201,7 @@ Ten przykład jest podobny do poprzedniego przykładu, z wyjątkiem tego, że na
 </Project>
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-3"></a>Przykład 3
 
 Ten przykład używa `GenerateApplicationManifest` i `GenerateDeploymentManifest` zadań do generowania aplikacji ClickOnce i manifestów wdrożenia dla aplikacji z wieloma plikami i zestawami.
 
@@ -318,7 +320,7 @@ Ten przykład używa `GenerateApplicationManifest` i `GenerateDeploymentManifest
 </Project>
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-4"></a>Przykład 4
 
 Ten przykład używa `GenerateApplicationManifest` zadania do wygenerowania natywnego manifestu dla *Test.exe*aplikacji, odwołującego się do natywnego *Alpha.dll* składnika i izolowanego składnika com *Bravo.dll*.
 

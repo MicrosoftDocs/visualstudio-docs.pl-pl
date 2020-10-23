@@ -1,5 +1,6 @@
 ---
 title: Odwołanie do nazwy lub lokalizacji pliku projektu
+description: Dowiedz się, jak używać zarezerwowanych właściwości programu MSBuild do odwoływania się do nazwy lub lokalizacji pliku projektu, bez konieczności tworzenia własnych właściwości.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29960de09b512a419a56a61f493702485c287475
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ccc356e1859f447db1ac18a437b8fc2317925b0f
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036460"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436343"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Instrukcje: odwoływanie się do nazwy lub lokalizacji pliku projektu
 
@@ -49,7 +50,7 @@ Możesz użyć nazwy lub lokalizacji projektu w samym pliku projektu bez koniecz
 > [!NOTE]
 > W pliku projektu nie można ponownie zdefiniować zarezerwowanych właściwości.
 
-## <a name="example"></a>Przykład
+## <a name="example-1"></a>Przykład 1
 
  Następujący przykładowy plik projektu odwołuje się do nazwy projektu jako zastrzeżonej właściwości, aby określić nazwę danych wyjściowych.
 
@@ -78,7 +79,7 @@ Możesz użyć nazwy lub lokalizacji projektu w samym pliku projektu bez koniecz
 </Project>
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-2"></a>Przykład 2
 
  Poniższy przykładowy plik projektu używa `MSBuildProjectDirectory` Właściwości zastrzeżonej do utworzenia pełnej ścieżki do pliku w lokalizacji pliku projektu.
 
@@ -94,7 +95,7 @@ Możesz użyć nazwy lub lokalizacji projektu w samym pliku projektu bez koniecz
 
 W przykładzie użyto składni [funkcji właściwości](property-functions.md) do wywołania metody statycznej .NET Framework <xref:System.IO.Path.Combine*?displayProperty=fullName> .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [MSBuild](../msbuild/msbuild.md)
 - [Zarezerwowane i dobrze znane właściwości programu MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

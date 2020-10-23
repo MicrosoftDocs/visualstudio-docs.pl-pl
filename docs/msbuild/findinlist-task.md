@@ -1,5 +1,7 @@
 ---
 title: FindInList — — zadanie | Microsoft Docs
+description: Dowiedz się, jak za pomocą zadania MSBuild FindInList — znaleźć element, który ma pasującą wartość specyfikacja_elementu na określonej liście.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915265a775f572467ad1296499bdd3201adc1f8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b4afc20b7845f3af71de1fbbb89f074801e08d1d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634152"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435699"
 ---
 # <a name="findinlist-task"></a>FindInList — zadanie
 
@@ -33,12 +35,12 @@ Na określonej liście znajduje się element, który ma pasującą specyfikacja_
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`CaseSensitive`|Opcjonalny `Boolean` parametr.<br /><br /> W przypadku `true` wyszukiwania rozróżniana jest wielkość liter; w przeciwnym razie nie jest. Wartość domyślna to `true` .|
-|`FindLastMatch`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , zwróć ostatni odpowiednik; w przeciwnym razie Zwróć pierwsze dopasowanie. Wartość domyślna to `false` .|
+|`CaseSensitive`|Opcjonalny `Boolean` parametr.<br /><br /> W przypadku `true` wyszukiwania rozróżniana jest wielkość liter; w przeciwnym razie nie jest. Wartość domyślna to `true`.|
+|`FindLastMatch`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , zwróć ostatni odpowiednik; w przeciwnym razie Zwróć pierwsze dopasowanie. Wartość domyślna to `false`.|
 |`ItemFound`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy tylko do odczytu.<br /><br /> Pierwszy pasujący element znajduje się na liście, jeśli istnieje.|
 |`ItemSpecToFind`|Wymagany parametr interfejsu `String`.<br /><br /> Specyfikacja_elementu do wyszukania.|
 |`List`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Lista, w której ma zostać wyszukana wartość specyfikacja_elementu.|
-|`MatchFileNameOnly`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` dopasowuje się tylko do części nazwy pliku specyfikacja_elementu; w przeciwnym razie dopasowuje się do całej klasy specyfikacja_elementu. Wartość domyślna to `true` .|
+|`MatchFileNameOnly`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` dopasowuje się tylko do części nazwy pliku specyfikacja_elementu; w przeciwnym razie dopasowuje się do całej klasy specyfikacja_elementu. Wartość domyślna to `true`.|
 
 ## <a name="remarks"></a>Uwagi
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 09/21/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do wielu subskrybentów za pomocą funkcji zbiorczego dodawania lub grup Microsoft Azure Active Directory
-ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 1c3fba04ead841d4955d26865e6ff6b1d0632048
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022442"
+ms.locfileid: "92435873"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Przypisywanie subskrypcji wielu użytkownikom
 Portal administrowania subskrypcjami pozwala dodawać użytkowników jeden w czasie lub w dużych grupach.  Aby dodać poszczególnych użytkowników, zobacz [Dodawanie pojedynczych użytkowników](assign-license.md).
@@ -119,6 +119,8 @@ Obejrzyj ten film wideo lub przeczytaj, aby dowiedzieć się więcej na temat do
 
 > [!NOTE]
 > Jeśli masz już przypisane subskrypcje do użytkowników, którzy zostali następnie dodani jako części grupy usługi Azure AD, zostaną one dodane jako część grupy i nie będą już wyświetlane indywidualnie. Jednak jeśli indywidualna subskrypcja dotyczy innego poziomu subskrypcji, będą oni mieć dwie subskrypcje.  Przykład: Jeśli użytkownik ma indywidualną subskrypcję Visual Studio Professional i jest członkiem grupy, do której przypiszesz subskrypcje Visual Studio Enterprise, będą one mieć oba te elementy.  
+>
+> W przypadku usunięcia abonenta z grupy Azure Active Directory, do której przypisano subskrypcje, może upłynąć nawet 24 godziny, aby aktualizacja została odzwierciedlona w portalu administracyjnym. 
 
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania

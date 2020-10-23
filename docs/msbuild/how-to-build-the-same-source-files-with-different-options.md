@@ -1,5 +1,6 @@
 ---
 title: Kompilacja tych samych plików źródłowych przy użyciu różnych opcji
+description: Dowiedz się, jak utworzyć różne konfiguracje kompilacji MSBuild, aby kompilować te same pliki źródłowe z innymi opcjami.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e76145df0fdf3f4cc3a3dfa8e14c6826b0dbdf
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a2c6a2b27aa08780d440c0e961c9a091c2b2fdb2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037598"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436910"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Instrukcje: kompilowanie tych samych plików źródłowych przy użyciu różnych opcji
 
@@ -88,7 +89,7 @@ Po zapisaniu pliku projektu w celu zaakceptowania wielu konfiguracji należy mie
 
   Można zmienić to zachowanie przy użyciu `TreatAsLocalProperty` atrybutu w tagu projektu. W przypadku nazw właściwości, które są wyświetlane na liście z tym atrybutem wartość właściwości określona w wierszu polecenia nie ma pierwszeństwa przed wartością w pliku projektu. Przykład można znaleźć w dalszej części tego tematu.
 
-## <a name="example"></a>Przykład
+## <a name="example-1"></a>Przykład 1
 
 Poniższy przykład kodu, projekt "Hello world", zawiera dwie nowe grupy właściwości, których można użyć do utworzenia kompilacji debugowania i kompilacji wydania.
 
@@ -156,7 +157,7 @@ msbuild consolehwcs1.proj -p:flavor=retail
 </Project>
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-2"></a>Przykład 2
 
 Poniższy przykład ilustruje sposób użycia `TreatAsLocalProperty` atrybutu. `Color`Właściwość ma wartość `Blue` w pliku projektu i `Green` w wierszu polecenia. `TreatAsLocalProperty="Color"`W tagu projektu właściwość wiersza polecenia ( `Green` ) nie przesłania właściwości zdefiniowanej w pliku projektu ( `Blue` ).
 
@@ -188,7 +189,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 -->
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [MSBuild](../msbuild/msbuild.md)
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)

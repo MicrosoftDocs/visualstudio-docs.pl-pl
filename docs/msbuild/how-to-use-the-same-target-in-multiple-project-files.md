@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: korzystanie z tego samego obiektu docelowego w wielu plikach projektu | Microsoft Docs'
+description: Dowiedz się, jak zapisać obiekt docelowy w pliku projektu programu MSBuild i zaimportować go do dowolnego innego projektu, który musi używać elementu docelowego.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d81328ecf17117500a5f686a45f934e451bb5809
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82255573"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436063"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Instrukcje: użycie tego samego elementu docelowego w wielu plikach projektu
 
@@ -83,7 +85,7 @@ Jeśli użytkownik utworzył kilka plików projektu MSBuild, może wykryć, że 
 
 3. Zdefiniuj w pliku projektu wszystkie właściwości i elementy, które muszą przesłaniać domyślne definicje właściwości i elementów w zaimportowanym projekcie.
 
-## <a name="example"></a>Przykład
+## <a name="example-1"></a>Przykład 1
 
  Poniższy przykład kodu pokazuje plik *webcommon. Target* , który został zaimportowany przez drugi przykład kodu. Plik *. targets* szacuje właściwości z projektu importowania, aby skonfigurować kompilację.
 
@@ -102,7 +104,7 @@ Jeśli użytkownik utworzył kilka plików projektu MSBuild, może wykryć, że 
 </Project>
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-2"></a>Przykład 2
 
  Poniższy przykład kodu importuje plik *webcommon. targets* .
 

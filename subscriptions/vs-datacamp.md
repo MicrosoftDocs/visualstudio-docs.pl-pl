@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 04/17/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Dowiedz się więcej o subskrypcji szkoleniowej usługi datacamp dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: 67fa9a68a22ee909c4c483246be7dc26c789c5f0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 54f2cf98d6e726e8abf8a0a863a54cc891c12523
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006335"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435894"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyść szkoleniowa datacamp w subskrypcjach programu Visual Studio
 Kwalifikujące się subskrypcje programu Visual Studio obejmują subskrypcje do datacamp.  W przypadku usługi datacamp możesz poznać wszystkie potrzebne umiejętności analizy danych. Możesz wybrać, kiedy i w jaki sposób uczysz. W przypadku braku oprogramowania do zainstalowania i braku specjalnych wymagań sprzętowych nauka uczenia danych jest łatwiejsze niż kiedykolwiek.
@@ -22,7 +22,7 @@ Kwalifikujące się subskrypcje programu Visual Studio obejmują subskrypcje do 
 
 2. Znajdź kafelek korzyści z korzystania z programu datacamp w kategorii "Programowanie profesjonalne" i kliknij pozycję **Aktywuj**.
    > [!div class="mx-imgBorder"]
-   > ![Kafelek korzyści z datacamp](_img/vs-datacamp/vs-datacamp-tile-2.png)
+   > ![Kafelek korzyści z datacamp](_img/vs-datacamp/vs-datacamp-tile-2.png "Kliknij pozycję "Aktywuj", aby rozpocząć pracę.")
 
 3. Na stronie datacamp można utworzyć nowe konto.  Możesz wprowadzić adres e-mail i hasło lub zalogować się przy użyciu istniejących kont w serwisie Facebook, LinkedIn lub Google.  Po udostępnieniu informacji dotyczących logowania kliknij pozycję **Rozpocznij**.
 
@@ -36,25 +36,25 @@ Kwalifikujące się subskrypcje programu Visual Studio obejmują subskrypcje do 
 
    Po prostu kliknij wybraną ścieżkę, aby rozpocząć pracę.
    > [!div class="mx-imgBorder"]
-   > ![Datacamp — wybór ścieżki](_img/vs-datacamp/vs-datacamp-choose-path.png)
+   > ![Datacamp — wybór ścieżki](_img/vs-datacamp/vs-datacamp-choose-path.png "Wybierz ścieżkę szkoleniową, która Cię interesuje.")
 
 5. Po wybraniu ścieżki możesz dokładniej udoskonalić ścieżkę szkoleniową, wybierając cel.  Na przykład w przypadku wybrania ścieżki "opracowywanie analizy danych zestawu umiejętności" zostaną wyświetlone następujące opcje. Wybierz opcję lub kliknij **nie mam pewności.  Pokaż wszystkie ścieżki kariery** , aby utworzyć szersze ścieżki.
    > [!div class="mx-imgBorder"]
-   > ![Zestawu umiejętności analizy danych datacamp](_img/vs-datacamp/vs-datacamp-datascience.png)
+   > ![Zestawu umiejętności analizy danych datacamp](_img/vs-datacamp/vs-datacamp-datascience.png "Kliknij przycisk "nie mam pewności".  Pokaż wszystkie ścieżki kariery, aby wyświetlić kompletną listę.")
 
 6. W zależności od wybranej ścieżki i opcji zobaczysz wybór ścieżek kariery.  Kliknij przycisk **zarejestruj** , aby wybrać wybraną ścieżkę.
    > [!div class="mx-imgBorder"]
-   > ![Śledzenie kariery w usłudze datacamp](_img/vs-datacamp/vs-datacamp-all-tracks.png)
+   > ![Śledzenie kariery w usłudze datacamp](_img/vs-datacamp/vs-datacamp-all-tracks.png "Kliknij przycisk "Zarejestruj" w wybranej ścieżce, aby rozpocząć pracę.")
 
 7. Po zarejestrowaniu się na ścieżce zostanie otwarty pierwszy kurs z tej ścieżki.  Zobaczysz samouczek wyjaśniający, jak korzystać z kursu, w tym nawigacją i wykonywaniem ćwiczeń kursowych.
 
    > [!div class="mx-imgBorder"]
-   > ![Wprowadzenie datacamp](_img/vs-datacamp/vs-datacamp-getting-started.png)
+   > ![Wprowadzenie datacamp](_img/vs-datacamp/vs-datacamp-getting-started.png "Obejrzyj samouczek, aby dowiedzieć się, jak przechodzić do kursów.")
 
 Możesz zatrzymać w dowolnym momencie i wznowić szkolenia w następnej sesji.  Po prostu odwiedź stronę [https://www.datacamp.com](https://www.datacamp.com) i zaloguj się.  Zobaczysz pulpit nawigacyjny i będzie można wznowić szkolenia w miejscu, w którym zostało wstrzymane. Po prostu kliknij pozycję **Kontynuuj śledzenie**.
 
 > [!div class="mx-imgBorder"]
-> ![Dalsze szkolenia dotyczące datacamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![Dalsze szkolenia dotyczące datacamp](_img/vs-datacamp/vs-datacamp-continue-training.png "Kliknij przycisk "Kontynuuj śledzenie", aby wznowić szkolenia w dowolnym momencie.")
 
 ## <a name="eligibility"></a>Kryteria
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
@@ -65,8 +65,8 @@ Możesz zatrzymać w dowolnym momencie i wznowić szkolenia w następnej sesji. 
 | Visual Studio Professional z usługą GitHub Enterprise| Licencja | 3 miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | 3 miesiące                                             |  Nie.  Dostępne tylko dla nowych subskrybentów           |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | 3 miesiące                                              |  Nie.  Dostępne tylko dla nowych subskrybentów           |
-| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Brak |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |
+| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Nie dotyczy |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), ekwiwalentu, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Microsoft Partner Network (MPN), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark, Wyobraź sobie*
 

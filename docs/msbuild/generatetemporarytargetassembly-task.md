@@ -1,5 +1,7 @@
 ---
 title: GenerateTemporaryTargetAssembly — — Zadanie | Microsoft Docs
+description: Użyj zadania MSBuild GenerateTemporaryTargetAssembly —, aby wygenerować zestaw, jeśli projekt odwołuje się do typu, który jest zadeklarowany lokalnie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69333b87720513244e90c131f052d11099b62e35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a100ad8a3be57288e49a858d6f87851269df303
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634048"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436758"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly, zadanie
 
