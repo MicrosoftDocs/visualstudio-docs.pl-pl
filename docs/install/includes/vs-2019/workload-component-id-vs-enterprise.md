@@ -10,12 +10,12 @@ ms.date: 08/05/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 204777b0209b2ca0b1c88717e9908828743087d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd31c04569b373591647cf3601d9afa4e63be882
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87805787"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92470715"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Visual Studio Core Editor (zawarty w Visual Studio Enterprise 2019)
 
@@ -117,7 +117,7 @@ Microsoft.Net. Component. 4.8. DeveloperTools | Narzędzia programistyczne .NET 
 Microsoft. VisualStudio. Component. Azure. Storage. AzCopy | AzCopy usługi Azure Storage | 16.0.28517.75 | Opcjonalne
 Microsoft. VisualStudio. Component. WCF. narzędzia | Windows Communication Foundation | 16.0.28625.61 | Opcjonalne
 
-## <a name="data-storage-and-processing"></a>Przechowywanie i przetwarzanie danych
+## <a name="data-storage-and-processing"></a>Magazynowanie i przetwarzanie danych
 
 **Identyfikator:** Microsoft. VisualStudio. obciążenie. Data
 
@@ -439,7 +439,7 @@ Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++
 Składnik. Android. NDK. R16B | Android NDK (R16B) | 16.7.30316.201 | Zalecane
 Składnik. ANT | Apache Ant (1.9.3) | 1.9.3.8 | Zalecane
 Składnik. MDD języka. Android | Narzędzia programistyczne w języku C++ dla systemu Android | 16.0.28517.75 | Zalecane
-Składnik. Android. NDK. R16B_3264 | Android NDK (R16B) (32-bitowe) | 16.7.30316.201 | Opcjonalne
+Component.Android.NDK.R16B_3264 | Android NDK (R16B) (32-bitowe) | 16.7.30316.201 | Opcjonalne
 Składnik. Google. Android. emulator. API25. Private | Google Emulator systemu Android (poziom interfejsu API 25) (Instalacja lokalna) | 16.1.28810.153 | Opcjonalne
 Component. HAXM. Private | Intel Hardware Accelerated Execution Manager (HAXM) (Instalacja lokalna) | 16.0.28528.71 | Opcjonalne
 Składnik. Incredibuild | IncrediBuild — przyspieszanie kompilacji | 16.5.29721.120 | Opcjonalne
@@ -640,7 +640,7 @@ Microsoft. VisualStudio. Component. IISDevelopment | Obsługa usług IIS w czasi
 
 **Identyfikator:** Microsoft. VisualStudio. obciążeni. Node
 
-**Opis:** Twórz skalowalne aplikacje sieciowe przy użyciu Node.js, asynchronicznego środowiska uruchomieniowego JavaScript opartego na zdarzeniach. 
+**Opis:** Twórz skalowalne aplikacje sieciowe przy użyciu Node.js, asynchronicznego środowiska uruchomieniowego JavaScript opartego na zdarzeniach.
 
 ### <a name="components-included-by-this-workload"></a>Składniki zawarte w tym obciążeniu
 
@@ -888,7 +888,7 @@ Microsoft. NET. Core. Component. SDK. 3.0 | Środowisko uruchomieniowe programu 
 Microsoft. rdzeń. Component. DevelopmentTools. 2.1 | Narzędzia programistyczne i .NET Core 2,1 | 16.3.29207.166
 Microsoft. WebCore. Component. Web. 2.1 | Narzędzia programistyczne dla sieci Web i .NET Core 2,1 | 16.3.29207.166
 Microsoft. VisualStudio. Component. AzureDevOps. OfficeIntegration | Integracja z usługą Azure DevOps Office | 16.0.28625.61
-Microsoft. VisualStudio. Component. Debugger. VSOnline | Debuger dla programu Visual Studio Codespaces | 16.7.30310.162
+Microsoft. VisualStudio. Component. Debugger. VSOnline | Debuger usługi GitHub Codespaces | 16.7.30310.162
 Microsoft. VisualStudio. Component. git | Git dla systemu Windows | 16.0.28625.61
 Microsoft. VisualStudio. Component. LinqToSql | LINQ to SQL Tools | 16.0.28625.61
 Microsoft. VisualStudio. Component. TestTools. zestaw SDK CodedUITest | Kodowany test interfejsu użytkownika | 16.0.28327.66
