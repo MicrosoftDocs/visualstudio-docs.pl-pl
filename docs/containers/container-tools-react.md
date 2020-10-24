@@ -8,12 +8,12 @@ ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 783d7a116dbdf530008c3271d38d15f7db3c3c98
-ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
+ms.openlocfilehash: 15c781be33343d2672396c44492d71f42cbb4eda
+ms.sourcegitcommit: 296ab61c40bf090c577ef20e84d581939bd1855b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91750761"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92502191"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Szybki Start: korzystanie z platformy Docker z aplikacją jednostronicową do reagowania w programie Visual Studio
 
@@ -112,7 +112,7 @@ COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
 ```
 
-Poprzedni *pliku dockerfile* opiera się na obrazie [Microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) i zawiera instrukcje dotyczące modyfikowania obrazu podstawowego przez skompilowanie projektu i dodanie go do kontenera.
+Poprzedni *pliku dockerfile* opiera się na obrazie [MCR.Microsoft.com/dotnet/Core/ASPNET](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) i zawiera instrukcje dotyczące modyfikowania obrazu podstawowego przez skompilowanie projektu i dodanie go do kontenera.
 
 Jeśli w oknie dialogowym nowego projektu zostanie zaznaczone pole wyboru **Konfiguruj dla protokołu HTTPS**, plik *Dockerfile* uwidacznia dwa porty. Jeden port jest używany na potrzeby ruchu HTTP, a drugi na potrzeby protokołu HTTPS. Jeśli to pole wyboru nie zostanie zaznaczone, dla ruchu HTTP zostanie uwidoczniony pojedynczy port (80).
 
@@ -166,19 +166,19 @@ Zaktualizuj pliku dockerfile przez dodanie następujących wierszy. Spowoduje to
       FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       WORKDIR /src
-      COPY ["WebApplication7/WebApplication37.csproj", "WebApplication37/"]
-      RUN dotnet restore "WebApplication7/WebApplication7.csproj"
+      COPY ["WebApplicationReact1/WebApplicationReact1.csproj", "WebApplicationReact1/"]
+      RUN dotnet restore "WebApplicationReact1/WebApplicationReact1.csproj"
       COPY . .
-      WORKDIR "/src/WebApplication37"
-      RUN dotnet build "WebApplication37.csproj" -c Release -o /app/build
+      WORKDIR "/src/WebApplicationReact1"
+      RUN dotnet build "WebApplicationReact1.csproj" -c Release -o /app/build
 
       FROM build AS publish
-      RUN dotnet publish "WebApplication37.csproj" -c Release -o /app/publish
+      RUN dotnet publish "WebApplicationReact1.csproj" -c Release -o /app/publish
 
       FROM base AS final
       WORKDIR /app
       COPY --from=publish /app/publish .
-      ENTRYPOINT ["dotnet", "WebApplication37.dll"]
+      ENTRYPOINT ["dotnet", "WebApplicationReact1.dll"]
       ```
 
    1. Zaktualizuj plik dockerignore przez usunięcie `**/bin` .
@@ -202,12 +202,12 @@ Przejdź do strony *licznika* i przetestuj kod po stronie klienta dla licznika, 
 
 Otwórz **konsolę Menedżera pakietów** (PMC) z menu **Narzędzia** ,> Menedżer pakietów NuGet, **konsola Menedżera pakietów**.
 
-Wynikowy obraz platformy Docker aplikacji jest oznaczony tagiem *dev*. Obraz jest oparty na tagu *2,2-aspnetcore-Runtime* obrazu podstawowego *Microsoft/dotnet* . Uruchom polecenie `docker images` w oknie **konsoli menedżera pakietów** (PMC). Na komputerze są wyświetlane następujące obrazy:
+Wynikowy obraz platformy Docker aplikacji jest oznaczony tagiem *dev*. Obraz jest oparty na tagu *3,1-nanoserver-1903* obrazu podstawowego *dotnet/Core/ASPNET* . Uruchom polecenie `docker images` w oknie **konsoli menedżera pakietów** (PMC). Na komputerze są wyświetlane następujące obrazy:
 
 ```console
-REPOSITORY        TAG                     IMAGE ID      CREATED         SIZE
-webapplication37  dev                     d72ce0f1dfe7  30 seconds ago  255MB
-microsoft/dotnet  2.2-aspnetcore-runtime  fcc3887985bb  6 days ago      255MB
+REPOSITORY                             TAG                 IMAGE ID            CREATED             SIZE
+webapplicationreact1                   dev                 09be6ec2405d        2 hours ago         352MB
+mcr.microsoft.com/dotnet/core/aspnet   3.1-buster-slim     e3559b2d50bb        10 days ago         207MB
 ```
 
 > [!NOTE]
@@ -216,8 +216,8 @@ microsoft/dotnet  2.2-aspnetcore-runtime  fcc3887985bb  6 days ago      255MB
 Uruchom polecenie `docker ps` w konsoli PMC. Zauważ, że aplikacja działa przy użyciu kontenera:
 
 ```console
-CONTAINER ID        IMAGE                  COMMAND               CREATED             STATUS              PORTS                                           NAMES
-cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
+CONTAINER ID        IMAGE                      COMMAND               CREATED             STATUS              PORTS                                           NAMES
+56d1b1008c89        webapplicationreact1:dev   "tail -f /dev/null"   2 hours ago         Up 2 hours          0.0.0.0:32771->80/tcp, 0.0.0.0:32770->443/tcp   WebApplication-React1
 ```
 
 ## <a name="publish-docker-images"></a>Publikowanie obrazów platformy Docker
@@ -237,7 +237,7 @@ Po zakończeniu cyklu opracowywania i debugowania aplikacji można utworzyć obr
     | **Prefiks DNS** | Nazwa unikatowa w skali globalnej | Nazwa, która jednoznacznie identyfikuje rejestr kontenerów. |
     | **Subskrypcja** | Wybierz subskrypcję | Subskrypcja platformy Azure, która ma być używana. |
     | **[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nazwa grupy zasobów, w której ma zostać utworzony rejestr kontenerów. Wybierz pozycję **Nowa**, aby utworzyć nową grupę zasobów.|
-    | **[SKU](/azure/container-registry/container-registry-skus)** | Standardowa | Warstwa usług w rejestrze kontenerów  |
+    | **[Jednostka SKU](/azure/container-registry/container-registry-skus)** | Standardowa | Warstwa usług w rejestrze kontenerów  |
     | **Lokalizacja rejestru** | Lokalizacja blisko Ciebie | Wybierz lokalizację w [regionie](https://azure.microsoft.com/regions/) blisko siebie lub w najbliższej innej usłudze, która będzie korzystać z rejestru kontenerów. |
 
     ![Okno dialogowe tworzenia Azure Container Registry programu Visual Studio](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
@@ -267,7 +267,7 @@ Po zakończeniu cyklu opracowywania i debugowania aplikacji można utworzyć obr
     | **Prefiks DNS** | Nazwa unikatowa w skali globalnej | Nazwa, która jednoznacznie identyfikuje rejestr kontenerów. |
     | **Subskrypcja** | Wybierz subskrypcję | Subskrypcja platformy Azure, która ma być używana. |
     | **[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nazwa grupy zasobów, w której ma zostać utworzony rejestr kontenerów. Wybierz pozycję **Nowa**, aby utworzyć nową grupę zasobów.|
-    | **[SKU](/azure/container-registry/container-registry-skus)** | Standardowa | Warstwa usług w rejestrze kontenerów  |
+    | **[Jednostka SKU](/azure/container-registry/container-registry-skus)** | Standardowa | Warstwa usług w rejestrze kontenerów  |
     | **Lokalizacja rejestru** | Lokalizacja blisko Ciebie | Wybierz lokalizację w [regionie](https://azure.microsoft.com/regions/) blisko siebie lub w najbliższej innej usłudze, która będzie korzystać z rejestru kontenerów. |
 
     ![Okno dialogowe tworzenia Azure Container Registry programu Visual Studio](media/container-tools-react/vs-2019/azure-container-registry-details.png)
@@ -287,7 +287,7 @@ Po zakończeniu cyklu opracowywania i debugowania aplikacji można utworzyć obr
 
 Teraz można ściągnąć kontener z rejestru do dowolnego hosta, który może uruchamiać obrazy platformy Docker, na przykład [Azure Container Instances](/azure/container-instances/container-instances-tutorial-deploy-app).
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+## <a name="additional-resources"></a>Zasoby dodatkowe
 
 * [Opracowywanie kontenerów w programie Visual Studio](./index.yml)
 * [Rozwiązywanie problemów związanych z opracowywaniem zwartości w programie Visual Studio przy użyciu platformy Docker](troubleshooting-docker-errors.md)
