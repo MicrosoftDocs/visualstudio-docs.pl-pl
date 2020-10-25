@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 10/13/2020
 ms.faqid: q3_2
-ms.openlocfilehash: ca1f71a16b0d597c3cd4606150bde9618cfbdca9
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 6533a68c334f52310c20a79cf1e6d93d0b967be0
+ms.sourcegitcommit: 296ab61c40bf090c577ef20e84d581939bd1855b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92157783"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92526123"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>Jak mogę użyć moich korzyści?
 
@@ -20,6 +20,18 @@ Różne typy korzyści mają różne metody aktywowania i używania. Na przykła
 
 Dla poszczególnych korzyści dostępnych w portalu dla subskrybentów udostępniamy artykuły zawierające różne informacje, na przykład, które subskrypcje je zawierają, a także instrukcje aktywowania tych korzyści.
 
-Zapoznaj się z naszą dokumentacją, aby [dowiedzieć się więcej](../../../../whats-new-in-subscriptions.md) (kliknij pozycję „Subskrypcje” w lewym okienku nawigacyjnym, a następnie wybierz pozycję „Korzyści”).
+Zapoznaj się z naszą dokumentacją, aby [dowiedzieć się więcej](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions) (kliknij pozycję „Subskrypcje” w lewym okienku nawigacyjnym, a następnie wybierz pozycję „Korzyści”).
 
+Subskrypcjami programu Visual Studio z usługą GitHub Enterprise zarządza się w dwóch częściach:  
+- Subskrypcja programu Visual Studio (Enterprise lub Professional)  
+- GitHub Enterprise  
 
+Po przypisaniu subskrypcji programu Visual Studio z usługą GitHub otrzymasz wiadomość e-mail z informacją o tym, że administrator subskrypcji programu Visual Studio przypisał Ci subskrypcję. Wtedy możesz wyświetlić dostępne korzyści subskrypcji w witrynie <https://my.visualstudio.com/benefits>. Obejmuje to korzyść usługi GitHub Enterprise. 
+
+Usługa GitHub Enterprise jest zarządzana przez administratora usługi GitHub niezależnie od subskrypcji programu Visual Studio. Gdy firma skonfiguruje konto w usłudze GitHub Enterprise, otrzymasz wiadomość e-mail od usługi GitHub z powiadomieniem, że Twoja subskrypcja programu Visual Studio została połączona, a kafelek korzyści zostanie zaktualizowany. Skonfigurowanie tego konta może trochę potrwać i zależy od tego, czy firma ukończy proces konfiguracji. Po otrzymaniu wiadomości e-mail możesz skontaktować się z odpowiednim administratorem organizacji w usłudze GitHub i poprosić o zaproszenie do jego organizacji i/lub repozytorium. 
+
+Gdy administrator organizacji w usłudze GitHub wyśle zaproszenie, otrzymasz wiadomość e-mail od usługi GitHub, a kafelek korzyści zostanie ponownie zaktualizowany. 
+
+Po zaakceptowaniu zaproszenia do organizacji w usłudze GitHub wygląd kafelka korzyści w witrynie <https://my.visualstudio.com/benefits> zmieni się z „Oczekująca” na „Aktywowano” i będzie można zacząć korzystać z usługi GitHub Enterprise. 
+
+[Poznaj więcej](https://docs.microsoft.com/visualstudio/subscriptions/access-github) szczegółów na temat procesu konfigurowania usługi GitHub Enterprise. 
