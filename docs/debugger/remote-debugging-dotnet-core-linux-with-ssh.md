@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bc0fa990a79b1855ec382f42248a0f847c3c9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d66181f5e6720348e18c34b735ef29e24c0111a
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78200924"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796306"
 ---
 # <a name="remote-debug-net-core-on-linux-using-ssh"></a>Zdalne debugowanie .NET Core w systemie Linux przy użyciu protokołu SSH
 
@@ -34,23 +34,23 @@ sudo apt-get install openssh-server unzip curl
 
 Aby przygotować aplikację do debugowania:
 
-- Podczas kompilowania aplikacji należy rozważyć użycie konfiguracji debugowania. Jest to znacznie trudniejsze do debugowania kodu skompilowanego w wersji detalicznej (Konfiguracja wydania) niż kod skompilowany przez program Debug. Jeśli konieczne jest użycie konfiguracji wydania, należy najpierw wyłączyć Tylko mój kod. Aby wyłączyć to ustawienie, wybierz **Narzędzia**  >  **Opcje**  >  **debugowanie**, a następnie usuń zaznaczenie opcji **Włącz tylko mój kod**.
+- Podczas kompilowania aplikacji należy rozważyć użycie konfiguracji debugowania. Jest to znacznie trudniejsze do debugowania kodu skompilowanego w wersji detalicznej (Konfiguracja wydania) niż kod skompilowany przez program Debug. Jeśli konieczne jest użycie konfiguracji wydania, należy najpierw wyłączyć Tylko mój kod. Aby wyłączyć to ustawienie, wybierz **Narzędzia**  >  **Opcje**  >  **debugowanie** , a następnie usuń zaznaczenie opcji **Włącz tylko mój kod** .
 
-- Upewnij się, że projekt jest skonfigurowany do tworzenia [przenośnych plików PDB](https://github.com/OmniSharp/omnisharp-vscode/wiki/Portable-PDBs) (jest to ustawienie domyślne) i upewnij się, że PBDs znajdują się w tej samej lokalizacji co Biblioteka DLL. Aby skonfigurować to w programie Visual Studio, kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**  >  **Kompiluj**  >  **Zaawansowane**  >  **Informacje o debugowaniu**.
+- Upewnij się, że projekt jest skonfigurowany do tworzenia [przenośnych plików PDB](https://github.com/OmniSharp/omnisharp-vscode/wiki/Portable-PDBs) (jest to ustawienie domyślne) i upewnij się, że PBDs znajdują się w tej samej lokalizacji co Biblioteka DLL. Aby skonfigurować to w programie Visual Studio, kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**  >  **Kompiluj**  >  **Zaawansowane**  >  **Informacje o debugowaniu** .
 
 Przed debugowaniem można użyć kilku metod. Możesz na przykład:
 
 - Skopiuj źródła na komputer docelowy i skompiluj je na komputerze z ```dotnet build``` systemem Linux.
 
-- Skompiluj aplikację w systemie Windows i Przenieś artefakty kompilacji na maszynę z systemem Linux. (Artefakty kompilacji składają się z samej aplikacji, wszystkich bibliotek środowiska uruchomieniowego, od których może zależeć, i *.deps.jsw* pliku).
+- Skompiluj aplikację w systemie Windows, a następnie przenieś artefakty kompilacji na maszynę z systemem Linux. (Artefakty kompilacji składają się z samej aplikacji, wszystkich bibliotek środowiska uruchomieniowego, od których może zależeć, i *.deps.jsw* pliku).
 
 ## <a name="attach-the-debugger"></a>Dołącz debuger
 
 Po skonfigurowaniu komputerów Uruchom aplikację na komputerze z systemem Linux, a następnie przystąpić do dołączenia debugera.
 
-1. W programie Visual Studio wybierz polecenie **Debuguj**  >  **Dołącz do procesu...**.
+1. W programie Visual Studio wybierz polecenie **Debuguj**  >  **Dołącz do procesu...** .
 
-1. Na liście **Typ połączenia** wybierz pozycję **SSH**.
+1. Na liście **Typ połączenia** wybierz pozycję **SSH** .
 
 1. Zmień **miejsce docelowe połączenia** na adres IP lub nazwę hosta komputera docelowego.
 
@@ -62,9 +62,9 @@ Po skonfigurowaniu komputerów Uruchom aplikację na komputerze z systemem Linux
 
    ![Dołącz do procesu systemu Linux](media/remote-debug-linux-over-ssh-attach.png)
 
-1. Wybierz **Dołącz**.
+1. Wybierz **Dołącz** .
 
-1. W wyświetlonym oknie dialogowym Wybierz typ kodu, który chcesz debugować. Wybierz pozycję **zarządzane (.NET Core dla systemu UNIX)**.
+1. W wyświetlonym oknie dialogowym Wybierz typ kodu, który chcesz debugować. Wybierz pozycję **zarządzane (.NET Core dla systemu UNIX)** .
 
 1. Debuguj aplikację przy użyciu funkcji debugowania programu Visual Studio.
 

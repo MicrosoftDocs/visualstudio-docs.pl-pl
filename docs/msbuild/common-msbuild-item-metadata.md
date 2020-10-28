@@ -1,5 +1,7 @@
 ---
 title: Typowe metadane elementu MSBuild | Microsoft Docs
+description: Dowiedz się więcej o opcjonalnych metadanych elementów mających znaczenie dla niektórych zestawów SDK lub obiektów docelowych programu MSBuild, ale nie są domyślnie ustawiane dla każdego elementu.
+ms.custom: SEO-VS-2020
 ms.date: 07/13/2020
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c715c16782733a08bb617a464c1aa9510d35b54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 152967fb99442b58d96016e10d8899b57ef35bf6
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87425958"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796593"
 ---
 # <a name="common-msbuild-item-metadata"></a>Wspólne metadane elementów programu MSBuild
 
@@ -28,10 +30,10 @@ W poniższej tabeli opisano opcjonalne metadane elementów, których znaczenie d
 
 | Metadane elementu | Zestawy SDK | Opis |
 |---------------| ------- | -------------|
-|% (Link)| Wszystko |System projektu programu Visual Studio używa `Link` metadanych (jeśli istnieją) w celu zmiany elementów wyświetlanych w drzewie projektu. plik można umieścić w innej logicznej strukturze folderów w **Eksplorator rozwiązań**.<br />Ponadto `AssignTargetPath` zadanie sprawdza, `Link` czy w katalogu wyjściowym skopiowano plik do, jeśli jest to jeden z elementów, które zostały skopiowane.|
+|% (Link)| Wszystko |System projektu programu Visual Studio używa `Link` metadanych (jeśli istnieją) w celu zmiany elementów wyświetlanych w drzewie projektu. plik można umieścić w innej logicznej strukturze folderów w **Eksplorator rozwiązań** .<br />Ponadto `AssignTargetPath` zadanie sprawdza, `Link` czy w katalogu wyjściowym skopiowano plik do, jeśli jest to jeden z elementów, które zostały skopiowane.|
 |% (Baza łączy)| Zestaw .NET Core SDK | Służy do ustawiania folderu, który ma być używany dla `Link` metadanych dla grup elementów. |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wspólne właściwości projektów MSBuild](../msbuild/common-msbuild-project-properties.md)
 - [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)

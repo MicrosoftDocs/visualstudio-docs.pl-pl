@@ -1,5 +1,7 @@
 ---
 title: CPPClean — — zadanie | Microsoft Docs
+description: W tym artykule opisano zadanie CPPClean —, które służy do usuwania plików tymczasowych tworzonych przez program MSBuild po skompilowaniu projektu języka C++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,16 +21,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 331a96c7cd67b933e521e3fe5f2d7a909ffa5d03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f59b66ab1fc117a29d7ed8db2d380b4b11b437
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634347"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796111"
 ---
 # <a name="cppclean-task"></a>CPPClean — Zadanie
 
-Usuwa pliki tymczasowe, które program MSBuild tworzy po skompilowaniu projektu języka C++. Proces usuwania plików kompilacji jest znany jako *czyszczenie*.
+Usuwa pliki tymczasowe, które program MSBuild tworzy po skompilowaniu projektu języka C++. Proces usuwania plików kompilacji jest znany jako *czyszczenie* .
 
 ## <a name="parameters"></a>Parametry
 
@@ -42,6 +44,6 @@ Usuwa pliki tymczasowe, które program MSBuild tworzy po skompilowaniu projektu 
 |**FilesExcludedFromClean**|Opcjonalny `String` parametr.<br /><br /> Określa rozdzielaną średnikami listę plików, które nie są czyste.|
 |**FoldersToClean**|Wymagany parametr interfejsu `String`.<br /><br /> Określa rozdzielaną średnikami listę katalogów do oczyszczenia. Można określić pełną lub względną ścieżkę, a ścieżka może zawierać symbol wieloznaczny (*).|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

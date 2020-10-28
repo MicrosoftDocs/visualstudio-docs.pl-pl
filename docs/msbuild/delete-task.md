@@ -1,5 +1,7 @@
 ---
 title: Usuń zadanie | Microsoft Docs
+description: Poznaj parametry i zagadnienia dotyczące korzystania z zadania usuwania programu MSBuild w celu usunięcia określonych plików.
+ms.custom: SEO-VS-2020
 ms.date: 06/11/2020
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eddb9804378a4c32de9d1b68f952bc715f32ffd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41d5312434f87d75db80095ff01734cd37894a94
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288913"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796488"
 ---
 # <a name="delete-task"></a>Delete — Zadanie
 
@@ -99,7 +101,7 @@ Zamiast bezpośrednio korzystać z symboli wieloznacznych w `Delete` zadaniu, Ut
 
 Ogólnie rzecz biorąc, podczas pisania skryptów kompilacji, należy rozważyć, czy usuwanie jest logicznie częścią `Clean` operacji. Jeśli konieczne jest ustawienie niektórych plików do oczyszczenia w ramach normalnej `Clean` operacji, można dodać je do `@(FileWrites)` listy, a następnie zostaną usunięte `Clean` . Jeśli potrzebujesz więcej przetwarzania niestandardowego, zdefiniuj element docelowy i określ go do uruchomienia przez ustawienie atrybutu `BeforeTargets="Clean"` lub `AfterTargets="Clean"` lub Zdefiniuj swoją niestandardową wersję `BeforeClean` `AfterClean` elementów docelowych lub. Zobacz [Dostosowywanie kompilacji](customize-your-build.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [RemoveDir — zadanie](removedir-task.md)
 - [Zadania](../msbuild/msbuild-tasks.md)

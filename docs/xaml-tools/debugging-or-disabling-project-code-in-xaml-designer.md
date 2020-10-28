@@ -1,17 +1,19 @@
 ---
 title: Debugowanie lub wyłączanie kodu projektu w projektancie XAML
+description: Dowiedz się, jak debugować lub wyłączać kod projektu w projektant XAML, w tym sposób debugowania uruchomionego kodu projektu w innym wystąpieniu programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: fba240c29cb8142a9ec4b4d28c71112c1974a5b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a5db556bfc9106bb18a6ef9d4d5e3e1aa893cc3
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331057"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796748"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Debugowanie lub wyłączanie kodu projektu w projektancie XAML
 
@@ -53,15 +55,15 @@ Gdy kod projektu jest wyłączony, Visual Studio Wyświetla symbole zastępcze. 
 
 5. Ustaw punkt przerwania w kodzie projektu.
 
-6. W nowym wystąpieniu programu Visual Studio na pasku menu wybierz polecenie **Debuguj**  >  **Dołącz do procesu**.
+6. W nowym wystąpieniu programu Visual Studio na pasku menu wybierz polecenie **Debuguj**  >  **Dołącz do procesu** .
 
-7. W oknie dialogowym **Dołącz do procesu** na liście **dostępne procesy** wybierz pozycję **XDesProc.exe**, a następnie wybierz przycisk **Dołącz** .
+7. W oknie dialogowym **Dołącz do procesu** na liście **dostępne procesy** wybierz pozycję **XDesProc.exe** , a następnie wybierz przycisk **Dołącz** .
 
      ![Proces projektanta XAML](media/xaml_attach.png)
 
      Jest to proces projektanta XAML w pierwszym wystąpieniu programu Visual Studio.
 
-8. W pierwszym wystąpieniu programu Visual Studio na pasku menu wybierz **Debuguj**  >  **Rozpocznij debugowanie**.
+8. W pierwszym wystąpieniu programu Visual Studio na pasku menu wybierz **Debuguj**  >  **Rozpocznij debugowanie** .
 
      Teraz możesz przejść do kodu działającego w projektancie.
 
@@ -69,7 +71,7 @@ Gdy kod projektu jest wyłączony, Visual Studio Wyświetla symbole zastępcze. 
 
 - W oknie dialogowym nieobsługiwany wyjątek wybierz **pozycję kliknij tutaj, aby wyłączyć uruchamianie kodu projektu i ponownie załaduj projektanta** .
 
-- Alternatywnie na pasku narzędzi w **projektancie XAML**wybierz przycisk **Wyłącz kod projektu** .
+- Alternatywnie na pasku narzędzi w **projektancie XAML** wybierz przycisk **Wyłącz kod projektu** .
 
      ![Przycisk Wyłącz kod projektu](media/xaml_disablecode.png)
 
@@ -90,12 +92,12 @@ Gdy kod projektu jest wyłączony, Visual Studio Wyświetla symbole zastępcze. 
 
 W projektancie XAML można zmienić opcje wyświetlania kontrolki tak, aby wyświetlały tylko kontrolki platformy z Windows SDK. Może to poprawić niezawodność projektanta XAML.
 
-Aby zmienić opcje wyświetlania kontroli, kliknij ikonę w lewym dolnym rogu okna projektanta, a następnie wybierz opcję w obszarze **Opcje wyświetlania kontrolki**:
+Aby zmienić opcje wyświetlania kontroli, kliknij ikonę w lewym dolnym rogu okna projektanta, a następnie wybierz opcję w obszarze **Opcje wyświetlania kontrolki** :
 
 ![Opcje wyświetlania kontrolki](media/control_display_options.png)
 
-W przypadku wybrania opcji **tylko wyświetlanie kontrolek platformy**wszystkie kontrolki niestandardowe pochodzące z zestawów SDK, kontrolki użytkownika klienta i inne nie zostaną całkowicie wyrenderowane. Zamiast tego są one zastępowane przez kontrolki rezerwowe w celu pokazania rozmiaru i położenia formantu.
+W przypadku wybrania opcji **tylko wyświetlanie kontrolek platformy** wszystkie kontrolki niestandardowe pochodzące z zestawów SDK, kontrolki użytkownika klienta i inne nie zostaną całkowicie wyrenderowane. Zamiast tego są one zastępowane przez kontrolki rezerwowe w celu pokazania rozmiaru i położenia formantu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Projektuj kod XAML w programie Visual Studio i Blend for Visual Studio](designing-xaml-in-visual-studio.md)

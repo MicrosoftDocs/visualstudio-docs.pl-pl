@@ -1,5 +1,7 @@
 ---
 title: Element zadania elementu | Microsoft Docs
+description: Aby wypełnić kolekcje elementów za pomocą elementów wejściowych, należy użyć zadania MSBuild elementu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4364e6c3f637fdf2c3e02a52d3163e5cdd8a5861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed964c618b59bf02086329715c5b0540039eb16a
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634334"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796761"
 ---
 # <a name="createitem-task"></a>CreateItem — zadanie
 
@@ -51,7 +53,7 @@ Wypełnia kolekcje elementów elementami wejściowymi. Umożliwia to skopiowanie
 
  Poniższy przykład kodu tworzy nową kolekcję elementów o nazwie `MySourceItemsWithMetadata` z kolekcji Item `MySourceItems` . `CreateItem`Zadanie wypełnia kolekcję nowych elementów elementami w `MySourceItems` elemencie. Następnie dodaje dodatkowy wpis metadanych o nazwie `MyMetadata` z wartością `Hello` do każdego elementu w nowej kolekcji.
 
- Po wykonaniu zadania `MySourceItemsWithMetadata` Kolekcja elementów zawiera elementy *plik1. resx* i *plik2. resx*z wpisami metadanych dla `MyMetadata` . `MySourceItems`Kolekcja elementów nie została zmieniona.
+ Po wykonaniu zadania `MySourceItemsWithMetadata` Kolekcja elementów zawiera elementy *plik1. resx* i *plik2. resx* z wpisami metadanych dla `MyMetadata` . `MySourceItems`Kolekcja elementów nie została zmieniona.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -80,7 +82,7 @@ Wypełnia kolekcje elementów elementami wejściowymi. Umożliwia to skopiowanie
 |---------------------|--------------|
 |`MySourceItemsWithMetadata`|*plik1. resx* ( `MyMetadata="Hello"` )<br /><br /> *plik2. resx* ( `MyMetadata="Hello"` )|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)
 - [Zadania](../msbuild/msbuild-tasks.md)

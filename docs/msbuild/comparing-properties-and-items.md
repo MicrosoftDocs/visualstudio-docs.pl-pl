@@ -1,5 +1,7 @@
 ---
 title: Porównywanie właściwości i elementów | Microsoft Docs
+description: Dowiedz się, jak właściwości i elementy programu MSBuild przekazują informacje do zadań, oceniania warunków i przechowywania wartości, do których plik projektu może odwoływać się.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f00de870986cf020e91ff992dabb2681469ae5b
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634412"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796774"
 ---
 # <a name="compare-properties-and-items"></a>Porównanie właściwości i elementów
 
@@ -27,7 +29,7 @@ Właściwości i elementy programu MSBuild służą do przekazywania informacji 
 
 ## <a name="scalars-and-vectors"></a>Wartości skalarne i wektory
 
-Ponieważ właściwości programu MSBuild to pary nazwa-wartość, które mają tylko jedną wartość ciągu, są one często opisane jako *skalarne*. Ponieważ typy elementów programu MSBuild to listy, często są one opisane jako *wektor*. Jednakże w przypadku właściwości mogą reprezentować wiele wartości, a typy elementów mogą mieć zero lub jeden element.
+Ponieważ właściwości programu MSBuild to pary nazwa-wartość, które mają tylko jedną wartość ciągu, są one często opisane jako *skalarne* . Ponieważ typy elementów programu MSBuild to listy, często są one opisane jako *wektor* . Jednakże w przypadku właściwości mogą reprezentować wiele wartości, a typy elementów mogą mieć zero lub jeden element.
 
 ### <a name="target-dependency-injection"></a>Docelowa iniekcja zależności
 
@@ -185,6 +187,6 @@ Wartość jest równa `KeyFileVersion` "1.0.0.3", a nie " \@ (KeyFile->"% (wersj
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)

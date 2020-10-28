@@ -1,18 +1,20 @@
 ---
 title: Projektuj kod XAML w programie Visual Studio i w Blend for Visual Studio
 titleSuffix: ''
+description: Dowiedz się więcej o możliwościach narzędzi do projektowania wizualnego w programie Visual Studio i Blend for Visual Studio tworzenia interfejsu użytkownika i środowiska w języku XAML.
+ms.custom: SEO-VS-2020
 ms.date: 02/28/2020
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: eb18a2face5d9f1831bec35379a423f272c3e6ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5be85715efa3086a5a225da45501697440053cc5
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649824"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796709"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Projektuj kod XAML w programie Visual Studio i Blend for Visual Studio
 
@@ -60,7 +62,7 @@ Aby zwiększyć produktywność, należy rozważyć użycie Blend for Visual Stu
 
 Aby uzyskać więcej informacji na temat zaawansowanego projektowania XAML, zobacz [Tworzenie interfejsu użytkownika przy użyciu Blend for Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przegląd XAML](xaml-overview.md)
 - [Przegląd Blend for Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md)

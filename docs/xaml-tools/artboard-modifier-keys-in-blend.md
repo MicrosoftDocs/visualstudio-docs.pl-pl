@@ -1,5 +1,7 @@
 ---
 title: Klawisze modyfikujące obszar kompozycji w programie Blend
+description: Dowiedz się więcej na temat skrótów klawiaturowych przy użyciu klawiszy modyfikujących w Blend for Visual Studio, aby modyfikować akcje w obszarze kompozycji, takie jak powiększanie, zmiana rozmiaru i panoramowanie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2659f8f4c90bb7476a5c3a51f8ecb9a2e207029
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4b801713e6fdccf65bb580b017f011e65e0b84e
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329586"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796283"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Klawisze modyfikujące obszar kompozycji w programie Blend
 Niektóre skróty klawiaturowe nie mają skojarzonych elementów menu, co oznacza, że nie można użyć [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] interfejsu użytkownika do ich odnalezienia. W poniższej tabeli wymieniono skróty, które modyfikują akcję, na przykład zmianę rozmiarów obiektu.
@@ -39,7 +41,7 @@ Niektóre skróty klawiaturowe nie mają skojarzonych elementów menu, co oznacz
 |Przełączanie między otwartymi dokumentami|Naciśnij klawisz **Ctrl** + **Tab**|
 |Otwórz panel **składniki**|Naciśnij klawisz **Ctrl** + **Period**|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Skróty klawiaturowe](../xaml-tools/keyboard-shortcuts-in-blend.md)
 - [Klawisze modyfikujące pióro](../xaml-tools/pen-tool-modifier-keys-in-blend.md)

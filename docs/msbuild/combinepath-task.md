@@ -1,5 +1,7 @@
 ---
 title: CombinePath — — zadanie | Microsoft Docs
+description: Dowiedz się więcej na temat używania zadania CombinePath — programu MSBuild do łączenia określonych ścieżek w jedną ścieżkę.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7e6a79198ad54d3432f30fe9b57b3133a94165e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc33c3a413d788bd9a5a30a7db69c4c7766a3392
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288965"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796618"
 ---
 # <a name="combinepath-task"></a>CombinePath — zadanie
 
@@ -62,12 +64,12 @@ ms.locfileid: "85288965"
   </Target>
 ```
 
-Jedyną właściwością, która może `CombinePath` być listą `Paths` , w tym przypadku dane wyjściowe są również listą. Tak więc, `$(PublishRoot)` Jeśli *jest \\ C:\Site1*, `$(ReleaseDirectory)` a *wersja \\ *to `@(LangDirectories)` *en-us \; fr- \\ fr*, to przykłady te tworzą foldery:
+Jedyną właściwością, która może `CombinePath` być listą `Paths` , w tym przypadku dane wyjściowe są również listą. Tak więc, `$(PublishRoot)` Jeśli *jest \\ C:\Site1* , `$(ReleaseDirectory)` a *wersja \\* to `@(LangDirectories)` *en-us \; fr- \\ fr* , to przykłady te tworzą foldery:
 
 - C:\Site1\Release\en-us\
 - C:\Site1\Release\fr-fr\
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

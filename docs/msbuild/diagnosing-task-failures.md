@@ -1,5 +1,7 @@
 ---
 title: Diagnozowanie błędów zadań | Microsoft Docs
+description: Dowiedz się, jak zdiagnozować błędy zadań programu MSBuild, identyfikując zadanie zakończone niepowodzeniem, nazwę narzędzia i inne informacje.
+ms.custom: SEO-VS-2020
 ms.date: 09/25/2019
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89dcb8bddf2c92406ad5eff952d1f4050d7f9262
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaf55cc529be8fc61e05d1a76096e26d965aa136
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593281"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796475"
 ---
 # <a name="diagnosing-task-failures"></a>Diagnozowanie błędów zadań
 

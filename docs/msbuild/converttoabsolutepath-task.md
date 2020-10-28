@@ -1,5 +1,7 @@
 ---
 title: ConvertToAbsolutePath — — zadanie | Microsoft Docs
+description: Za pomocą zadania MSBuild ConvertToAbsolutePath — można skonwertować ścieżkę względną lub odwołanie do ścieżki bezwzględnej.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ce6fcad3897443f178c45d84e16f4cff44ab03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecf9695b36f341fa350abf53062e70095c03c374
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634386"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796163"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath — zadanie
 
@@ -42,7 +44,7 @@ Konwertuje ścieżkę względną lub odwołanie do ścieżki bezwzględnej.
 
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

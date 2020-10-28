@@ -1,5 +1,7 @@
 ---
 title: Kopiuj zadanie | Microsoft Docs
+description: Dowiedz się, jak skopiować pliki do nowego pliku lub lokalizacji folderu w systemie plików przy użyciu zadania Copy programu MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c298658c7e9f385e5140ea46f8069512c0bf278
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 00544b6d1e797a1fd8a7a197197480cae5620f10
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508044"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796230"
 ---
 # <a name="copy-task"></a>Copy — Zadanie
 
@@ -74,9 +76,9 @@ Musi być określony parametr `DestinationFolder` lub `DestinationFiles`, ale ni
 
 Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Przykład
+## <a name="example-1"></a>Przykład 1
 
-Poniższy przykład kopiuje elementy z `MySourceFiles` kolekcji Item do folderu *c:\MyProject\Destination*.
+Poniższy przykład kopiuje elementy z `MySourceFiles` kolekcji Item do folderu *c:\MyProject\Destination* .
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -95,9 +97,9 @@ Poniższy przykład kopiuje elementy z `MySourceFiles` kolekcji Item do folderu 
 </Project>
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-2"></a>Przykład 2
 
-Poniższy przykład ilustruje, jak wykonać kopiowanie cykliczne. Ten projekt kopiuje wszystkie pliki cyklicznie z *c:\MySourceTree* do *c:\MyDestinationTree*przy zachowaniu struktury katalogów.
+Poniższy przykład ilustruje, jak wykonać kopiowanie cykliczne. Ten projekt kopiuje wszystkie pliki cyklicznie z *c:\MySourceTree* do *c:\MyDestinationTree* przy zachowaniu struktury katalogów.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

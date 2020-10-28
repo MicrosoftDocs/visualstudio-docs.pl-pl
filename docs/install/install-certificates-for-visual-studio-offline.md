@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fbc68d232816899d84cc2aead14208b009c933b2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ae91cc1982fa41022981c940df5436c5ea5e8e5b
+ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037305"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92750182"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Zainstaluj certyfikaty wymagane do instalacji w trybie offline programu Visual Studio
 
@@ -38,7 +38,7 @@ Istnieją trzy opcje instalowania lub aktualizowania certyfikatów w środowisku
 
 Podczas tworzenia układu sieciowego wymagane certyfikaty są pobierane do folderu Certificates. Następnie można ręcznie zainstalować certyfikaty, klikając dwukrotnie każdy plik certyfikatu, a następnie klikając kreatora Menedżera certyfikatów. Jeśli zostanie wyświetlony monit o podanie hasła, pozostaw to pole puste.
 
-**Aktualizacja**: dla programu Visual Studio 2017 w wersji 15,8 Preview 2 lub nowszej można ręcznie zainstalować certyfikaty, klikając prawym przyciskiem myszy poszczególne pliki certyfikatów, wybierając pozycję Zainstaluj certyfikat, a następnie klikając kreatora Menedżera certyfikatów.
+**Aktualizacja** : dla programu Visual Studio 2017 w wersji 15,8 Preview 2 lub nowszej można ręcznie zainstalować certyfikaty, klikając prawym przyciskiem myszy poszczególne pliki certyfikatów, wybierając pozycję Zainstaluj certyfikat, a następnie klikając kreatora Menedżera certyfikatów.
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ Jeśli tworzysz skryptowo wdrożenie programu Visual Studio w środowisku offlin
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
-   **Aktualizacja**: dla programu Visual Studio 2017 w wersji 15,8 Preview 2 lub nowszej Utwórz plik wsadowy za pomocą następujących poleceń:
+   **Aktualizacja** : dla programu Visual Studio 2017 w wersji 15,8 Preview 2 lub nowszej Utwórz plik wsadowy za pomocą następujących poleceń:
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -117,9 +117,9 @@ Jeśli tworzysz skryptowo wdrożenie programu Visual Studio w środowisku offlin
    Alternatywnie można utworzyć plik wsadowy, który używa certutil.exe, który jest dostarczany z systemem Windows, przy użyciu następujących poleceń:
    
       ```cmd
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
-   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
 
    certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
    ```
@@ -140,7 +140,7 @@ Trzy. Pliki P12 w tym folderze zawierają certyfikat pośredni i certyfikat gł�
   * Certyfikat główny: **główny urząd certyfikacji firmy Microsoft 2011**
     * Wymagane w systemach Windows 7 z dodatkiem Service Pack 1, które nie mają zainstalowanych najnowszych aktualizacji systemu Windows.
 * **ManifestCounterSignCertificates. p12** zawiera:
-  * Certyfikat pośredni: **sygnatura czasowa firmy Microsoft ppw 2010**
+  * Certyfikat pośredni: **Microsoft Time-Stamp ppw 2010**
     * Niewymagane. Zwiększa wydajność w niektórych scenariuszach, jeśli istnieją.
   * Certyfikat główny: **główny urząd certyfikacji firmy Microsoft 2010**
     * Wymagane w systemach Windows 7 z dodatkiem Service Pack 1, które nie mają zainstalowanych najnowszych aktualizacji systemu Windows.
@@ -148,9 +148,9 @@ Trzy. Pliki P12 w tym folderze zawierają certyfikat pośredni i certyfikat gł�
   * Certyfikat pośredni: **Asystent podpisywania kodu firmy Microsoft**
     * Wymagane przez wszystkie systemy. Należy zauważyć, że systemy ze wszystkimi aktualizacjami zastosowanymi z Windows Update mogą nie mieć tego certyfikatu.
   * Certyfikat główny: **urząd certyfikacji głównej firmy Microsoft**
-    * Wymagany. Ten certyfikat jest dostarczany z systemami z systemem Windows 7 lub nowszym.
+    * Wymagane. Ten certyfikat jest dostarczany z systemami z systemem Windows 7 lub nowszym.
 
-**Aktualizacja**: dla programu Visual Studio 2017 w wersji 15,8 Preview 2 lub nowszej Instalator programu Visual Studio wymaga zainstalowania tylko certyfikatów głównych w systemie. Te certyfikaty są przechowywane w plikach. cer zamiast. p12.
+**Aktualizacja** : dla programu Visual Studio 2017 w wersji 15,8 Preview 2 lub nowszej Instalator programu Visual Studio wymaga zainstalowania tylko certyfikatów głównych w systemie. Te certyfikaty są przechowywane w plikach. cer zamiast. p12.
 
 ::: moniker-end
 
@@ -164,7 +164,7 @@ Trzy. Pliki P12 w tym folderze zawierają certyfikat pośredni i certyfikat gł�
     * Wymagane w systemach Windows 7 z dodatkiem Service Pack 1, które nie mają zainstalowanych najnowszych aktualizacji systemu Windows.
 * **Vs_installer_opc. SignCertificates. cer** zawiera:
   * Certyfikat główny: **urząd certyfikacji głównej firmy Microsoft**
-    * Wymagany. Ten certyfikat jest dostarczany z systemami z systemem Windows 7 lub nowszym.
+    * Wymagane. Ten certyfikat jest dostarczany z systemami z systemem Windows 7 lub nowszym.
 
 Instalator programu Visual Studio wymaga zainstalowania tylko certyfikatów głównych w systemie.
 
@@ -178,21 +178,21 @@ W przypadku zweryfikowania podpisu w środowisku online interfejsy API systemu W
 
 Jednym ze sposobów sprawdzenia instalacji systemu jest wykonanie następujących czynności:
 
-1. Uruchom **mmc.exe**.<br/>
-  a. Kliknij pozycję **plik**, a następnie wybierz pozycję **Dodaj/Usuń przystawkę**.<br/>
-  b. Kliknij dwukrotnie pozycję **Certyfikaty**, wybierz pozycję **konto komputera**, a następnie kliknij przycisk **dalej**.<br/>
-  c. Wybierz pozycję **komputer lokalny**, kliknij przycisk **Zakończ**, a następnie kliknij przycisk **OK**.<br/>
-  d. Rozwiń węzeł **Certyfikaty (komputer lokalny)**.<br/>
-  e. Rozwiń węzeł **Zaufane główne**urzędy certyfikacji, a następnie wybierz pozycję **Certyfikaty**.<br/>
+1. Uruchom **mmc.exe** .<br/>
+  a. Kliknij pozycję **plik** , a następnie wybierz pozycję **Dodaj/Usuń przystawkę** .<br/>
+  b. Kliknij dwukrotnie pozycję **Certyfikaty** , wybierz pozycję **konto komputera** , a następnie kliknij przycisk **dalej** .<br/>
+  c. Wybierz pozycję **komputer lokalny** , kliknij przycisk **Zakończ** , a następnie kliknij przycisk **OK** .<br/>
+  d. Rozwiń węzeł **Certyfikaty (komputer lokalny)** .<br/>
+  e. Rozwiń węzeł **Zaufane główne** urzędy certyfikacji, a następnie wybierz pozycję **Certyfikaty** .<br/>
     * Sprawdź tę listę dla wymaganych certyfikatów głównych.<br/>
 
-   f. Rozwiń węzeł **urzędy certyfikacji pośrednich**, a następnie wybierz pozycję **Certyfikaty**.<br/>
+   f. Rozwiń węzeł **urzędy certyfikacji pośrednich** , a następnie wybierz pozycję **Certyfikaty** .<br/>
     * Sprawdź tę listę dla wymaganych certyfikatów pośrednich.<br/>
 
-2. Kliknij pozycję **plik**, a następnie wybierz pozycję **Dodaj/Usuń przystawkę**.<br/>
-  a. Kliknij dwukrotnie pozycję **Certyfikaty**, wybierz pozycję **Moje konto użytkownika**, kliknij przycisk **Zakończ**, a następnie kliknij przycisk **OK**.<br/>
-  b. Rozwiń węzeł **Certyfikaty — bieżący użytkownik**.<br/>
-  c. Rozwiń węzeł **urzędy certyfikacji pośrednich**, a następnie wybierz pozycję **Certyfikaty**.<br/>
+2. Kliknij pozycję **plik** , a następnie wybierz pozycję **Dodaj/Usuń przystawkę** .<br/>
+  a. Kliknij dwukrotnie pozycję **Certyfikaty** , wybierz pozycję **Moje konto użytkownika** , kliknij przycisk **Zakończ** , a następnie kliknij przycisk **OK** .<br/>
+  b. Rozwiń węzeł **Certyfikaty — bieżący użytkownik** .<br/>
+  c. Rozwiń węzeł **urzędy certyfikacji pośrednich** , a następnie wybierz pozycję **Certyfikaty** .<br/>
     * Sprawdź tę listę dla wymaganych certyfikatów pośrednich.<br/>
 
 Jeśli nazwy certyfikatów nie znajdują się w kolumnach **wystawiony dla** , muszą być zainstalowane.  Jeśli certyfikat pośredni był tylko w magazynie certyfikatów pośredniego **użytkownika** , jest dostępny tylko dla zalogowanego użytkownika. Może być konieczne zainstalowanie go dla innych użytkowników.

@@ -1,5 +1,7 @@
 ---
 title: CSC — zadanie | Microsoft Docs
+description: W tym artykule opisano zadanie programu MSBuild CSC, które otacza kompilator C#, csc.exe i tworzy pliki exe, DLL lub. module.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,16 +20,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f77a2ab5bfa137ffbab13f92b15707f73c7869e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16cf1c2505ad61a8c53d18d8981b8c08f9e6e02c
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82167426"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796566"
 ---
 # <a name="csc-task"></a>Csc — Zadanie
 
-Zawija *csc.exe*i tworzy pliki wykonywalne (*. exe* ), biblioteki dołączane dynamicznie (pliki *. dll* ) lub moduły kodu (pliki *. module* ). Aby uzyskać więcej informacji na temat *csc.exe*, zobacz [Opcje kompilatora języka C#](/dotnet/csharp/language-reference/compiler-options/index).
+Zawija *csc.exe* i tworzy pliki wykonywalne ( *. exe* ), biblioteki dołączane dynamicznie (pliki *. dll* ) lub moduły kodu (pliki *. module* ). Aby uzyskać więcej informacji na temat *csc.exe* , zobacz [Opcje kompilatora języka C#](/dotnet/csharp/language-reference/compiler-options/index).
 
 ## <a name="parameters"></a>Parametry
 
@@ -60,7 +62,7 @@ W poniższej tabeli opisano parametry `Csc` zadania.
 | `ModuleAssemblyName` | Opcjonalny `String` parametr.<br /><br /> Określa nazwę zestawu, którego częścią ma być ten moduł. |
 | `NoConfig` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , instruuje kompilator, aby nie kompilować z plikiem *CSC. rsp* . Aby uzyskać więcej informacji, zobacz [-noconfig (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option). |
 | `NoLogo` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , pomija wyświetlanie informacji transparentu kompilatora. Aby uzyskać więcej informacji, zobacz [-nologo (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/nologo-compiler-option). |
-| `NoStandardLib` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , program zapobiega importowaniu *mscorlib.dll*, który definiuje całą przestrzeń nazw System. Użyj tego parametru, jeśli chcesz zdefiniować lub utworzyć własną przestrzeń nazw systemu i obiekty. Aby uzyskać więcej informacji, zobacz [-nostdlib (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option). |
+| `NoStandardLib` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , program zapobiega importowaniu *mscorlib.dll* , który definiuje całą przestrzeń nazw System. Użyj tego parametru, jeśli chcesz zdefiniować lub utworzyć własną przestrzeń nazw systemu i obiekty. Aby uzyskać więcej informacji, zobacz [-nostdlib (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option). |
 | `NoWin32Manifest` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` nie, nie dołączaj domyślnego manifestu Win32. |
 | `Optimize` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , włącza optymalizacje. Jeśli `false` , wyłącza optymalizacje. Aby uzyskać więcej informacji, zobacz [-Optimize (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option). |
 | `OutputAssembly` | Opcjonalny `String` parametr wyjściowy.<br /><br /> Określa nazwę pliku wyjściowego. Aby uzyskać więcej informacji, zobacz [-out (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option). |
@@ -78,9 +80,9 @@ W poniższej tabeli opisano parametry `Csc` zadania.
 | `WarningLevel` | Opcjonalny `Int32` parametr.<br /><br /> Określa poziom ostrzeżeń dla kompilatora, który ma być wyświetlany. Aby uzyskać więcej informacji, zobacz [-warn (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option). |
 | `WarningsAsErrors` | Opcjonalny `String` parametr.<br /><br /> Określa listę ostrzeżeń, które mają być traktowane jako błędy. Aby uzyskać więcej informacji, zobacz [-warnaserror — (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Ten parametr zastępuje `TreatWarningsAsErrors` parametr. |
 | `WarningsNotAsErrors` | Opcjonalny `String` parametr.<br /><br /> Określa listę ostrzeżeń, które nie są traktowane jako błędy. Aby uzyskać więcej informacji, zobacz [-warnaserror — (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Ten parametr jest przydatny tylko wtedy, gdy `TreatWarningsAsErrors` parametr jest ustawiony na `true` . |
-| `Win32Icon` | Opcjonalny `String` parametr.<br /><br /> Wstawia plik *ICO* w zestawie, który zapewnia plikowi wyjściowemu żądany wygląd w **Eksploratorze plików**. Aby uzyskać więcej informacji, zobacz [-win32icon (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). |
+| `Win32Icon` | Opcjonalny `String` parametr.<br /><br /> Wstawia plik *ICO* w zestawie, który zapewnia plikowi wyjściowemu żądany wygląd w **Eksploratorze plików** . Aby uzyskać więcej informacji, zobacz [-win32icon (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). |
 | `Win32Manifest` | Opcjonalny `String` parametr.<br /><br /> Określa manifest Win32, który ma zostać uwzględniony. |
-| `Win32Resource` | Opcjonalny `String` parametr.<br /><br /> Wstawia plik zasobów Win32 (*. res*) do pliku wyjściowego. Aby uzyskać więcej informacji, zobacz [-win32res — (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
+| `Win32Resource` | Opcjonalny `String` parametr.<br /><br /> Wstawia plik zasobów Win32 ( *. res* ) do pliku wyjściowego. Aby uzyskać więcej informacji, zobacz [-win32res — (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
@@ -95,7 +97,7 @@ Poniższy przykład używa `Csc` zadania do kompilowania pliku wykonywalnego z p
     EmitDebugInformation="true" />
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)
 - [Zadania](../msbuild/msbuild-tasks.md)

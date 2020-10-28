@@ -1,5 +1,7 @@
 ---
 title: Wspólne elementy projektów MSBuild | Microsoft Docs
+description: Dowiedz się więcej na temat typowych elementów projektów programu MSBuild. Elementy są nazwanymi odwołaniami do jednego lub kilku plików i zawierają metadane, takie jak nazwy plików, ścieżki i numery wersji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,16 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf32bdf56f75ded7d193082f1072b79c3d16b3c
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: b42ba80365b8aedd9527490235efb1228bc2a61d
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136917"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796397"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
 
-W programie MSBuild element jest nazwanym odwołaniem do co najmniej jednego pliku. Elementy zawierają metadane, takie jak nazwy plików, ścieżki i numery wersji. Wszystkie typy projektów w programie Visual Studio mają kilka elementów wspólnych. Te elementy są zdefiniowane w pliku *Microsoft. Build. CommonTypes. xsd*.
+W programie MSBuild element jest nazwanym odwołaniem do co najmniej jednego pliku. Elementy zawierają metadane, takie jak nazwy plików, ścieżki i numery wersji. Wszystkie typy projektów w programie Visual Studio mają kilka elementów wspólnych. Te elementy są zdefiniowane w pliku *Microsoft. Build. CommonTypes. xsd* .
 
 ## <a name="common-items"></a>Elementy wspólne
 
@@ -41,7 +43,7 @@ Reprezentuje odwołanie zestawu (zarządzanego) w projekcie.
 |FusionName|Opcjonalny ciąg. Określa prostą lub silną nazwę syntezy dla elementu.<br /><br /> Gdy ten atrybut jest obecny, może zaoszczędzić czas, ponieważ plik zestawu nie musi być otwarty w celu uzyskania nazwy Fusion.|
 |Ustawienie SpecificVersion|Opcjonalna wartość logiczna. Określa, czy należy odwoływać się tylko do wersji w nazwie Fusion.|
 |Aliasy|Opcjonalny ciąg. Wszelkie aliasy odwołania.|
-|Private|Opcjonalna wartość logiczna. Określa, czy odwołanie ma być kopiowane do folderu wyjściowego. Ten atrybut jest zgodny z właściwością **copy lokalnego** odwołania, która znajduje się w środowisku IDE programu Visual Studio.|
+|Prywatny|Opcjonalna wartość logiczna. Określa, czy odwołanie ma być kopiowane do folderu wyjściowego. Ten atrybut jest zgodny z właściwością **copy lokalnego** odwołania, która znajduje się w środowisku IDE programu Visual Studio.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -172,7 +174,7 @@ Reprezentuje projekt FxCop do zaimportowania.
 
 Reprezentuje zestawy, których przestrzenie nazw powinny być importowane przez kompilator Visual Basic.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wspólne właściwości projektów MSBuild](../msbuild/common-msbuild-project-properties.md)
 - [Właściwości programu MSBuild dla projektów zestaw .NET Core SDK](/dotnet/core/project-sdk/msbuild-props)
