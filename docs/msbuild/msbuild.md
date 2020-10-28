@@ -1,5 +1,7 @@
 ---
 title: MSBuild | Microsoft Docs
+description: Dowiedz się, jak platforma Microsoft Build Engine (MSBuild) udostępnia plik projektu ze schematem XML, aby kontrolować kompilacje.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e9f4614967f1307bc1faaaaba12a2dde1e8cad0
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: d7e42452d8ee59142c4f906d928378d1fb44bf67
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099274"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904512"
 ---
 # <a name="msbuild"></a>MSBuild
 
 Microsoft Build Engine to platforma do kompilowania aplikacji. Ten aparat, który jest również znany jako MSBuild, zawiera schemat XML dla pliku projektu, który kontroluje, w jaki sposób platforma kompilacji przetwarza i tworzy oprogramowanie. Program Visual Studio używa programu MSBuild, ale MSBuild nie zależy od programu Visual Studio. Wywołując *msbuild.exe* w pliku projektu lub rozwiązania, można organizować i kompilować produkty w środowiskach, w których nie zainstalowano programu Visual Studio.
 
- Program Visual Studio używa programu MSBuild do ładowania i kompilowania projektów zarządzanych. Pliki projektu w programie Visual Studio (*. csproj*, *. vbproj*, *. vcxproj*i inne) zawierają kod XML programu MSBuild, który jest wykonywany podczas kompilowania projektu przy użyciu środowiska IDE. Projekty programu Visual Studio zaimportują wszystkie niezbędne ustawienia i procesy kompilacji, aby wykonywać typowe prace programistyczne, ale można je rozbudować lub zmodyfikować z poziomu programu Visual Studio lub za pomocą edytora XML.
+ Program Visual Studio używa programu MSBuild do ładowania i kompilowania projektów zarządzanych. Pliki projektu w programie Visual Studio ( *. csproj* , *. vbproj* , *. vcxproj* i inne) zawierają kod XML programu MSBuild, który jest wykonywany podczas kompilowania projektu przy użyciu środowiska IDE. Projekty programu Visual Studio zaimportują wszystkie niezbędne ustawienia i procesy kompilacji, aby wykonywać typowe prace programistyczne, ale można je rozbudować lub zmodyfikować z poziomu programu Visual Studio lub za pomocą edytora XML.
 
  Aby uzyskać informacje na temat programu MSBuild dla języka C++, zobacz [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
 
@@ -53,7 +55,7 @@ Ten artykuł zawiera omówienie programu MSBuild. Aby zapoznać się z samouczki
 
 ## <a name="use-msbuild-at-a-command-prompt"></a>Korzystanie z programu MSBuild w wierszu polecenia
 
- Aby uruchomić program MSBuild w wierszu polecenia, Przekaż plik projektu do *MSBuild.exe*, wraz z odpowiednimi opcjami wiersza polecenia. Opcje wiersza polecenia umożliwiają ustawianie właściwości, wykonywanie określonych elementów docelowych i ustawianie innych opcji kontrolujących proces kompilacji. Na przykład, można użyć następującej składni wiersza polecenia do skompilowania pliku *webproj. proj* z `Configuration` właściwością ustawioną na `Debug` .
+ Aby uruchomić program MSBuild w wierszu polecenia, Przekaż plik projektu do *MSBuild.exe* , wraz z odpowiednimi opcjami wiersza polecenia. Opcje wiersza polecenia umożliwiają ustawianie właściwości, wykonywanie określonych elementów docelowych i ustawianie innych opcji kontrolujących proces kompilacji. Na przykład, można użyć następującej składni wiersza polecenia do skompilowania pliku *webproj. proj* z `Configuration` właściwością ustawioną na `Debug` .
 
 ```cmd
 MSBuild.exe MyProj.proj -property:Configuration=Debug
@@ -168,7 +170,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 - Możesz określić platformę docelową inną niż .NET Framework, na przykład Silverlight.
 
-- Można wskazać *Profil platformy*, który jest wstępnie zdefiniowanym podzbiorem platformy docelowej.
+- Można wskazać *Profil platformy* , który jest wstępnie zdefiniowanym podzbiorem platformy docelowej.
 
 - Jeśli dodatek Service Pack dla bieżącej wersji .NET Framework jest wydawany, można go określić jako docelowy.
 

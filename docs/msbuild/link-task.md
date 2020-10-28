@@ -1,5 +1,7 @@
 ---
 title: Połącz zadanie | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa zadania link do zawijania narzędzia konsolidatora Microsoft C++, link.exe, który łączy pliki i biblioteki obiektów COFF.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -30,16 +32,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 160d4fa3a1058e0cb81e5d25720d9194d90fdc39
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78865352"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904066"
 ---
 # <a name="link-task"></a>Link — Zadanie
 
-Zawija narzędzie konsolidatora Microsoft C++, *link.exe*. Narzędzie konsolidatora łączy pliki i biblioteki obiektów Common Object Format (COFF), aby utworzyć plik wykonywalny (*exe*) lub bibliotekę dołączaną dynamicznie (dll). Aby uzyskać więcej informacji, zobacz [Opcje konsolidatora](/cpp/build/reference/linker-options) i [Użyj MSBuild z wiersza polecenia](/cpp/build/msbuild-visual-cpp) i [Użyj zestawu narzędzi Microsoft C++ w wierszu polecenia](/cpp/build/building-on-the-command-line).
+Zawija narzędzie konsolidatora Microsoft C++, *link.exe* . Narzędzie konsolidatora łączy pliki i biblioteki obiektów Common Object Format (COFF), aby utworzyć plik wykonywalny ( *exe* ) lub bibliotekę dołączaną dynamicznie (dll). Aby uzyskać więcej informacji, zobacz [Opcje konsolidatora](/cpp/build/reference/linker-options) i [Użyj MSBuild z wiersza polecenia](/cpp/build/msbuild-visual-cpp) i [Użyj zestawu narzędzi Microsoft C++ w wierszu polecenia](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>Parametry
 
@@ -341,7 +343,7 @@ Zawija narzędzie konsolidatora Microsoft C++, *link.exe*. Narzędzie konsolidat
 
   Opcjonalny parametr **logiczny** .
 
-  Jeśli `true` , tworzy *plik mapy*. Rozszerzenie nazwy pliku mapy to *. map*.
+  Jeśli `true` , tworzy *plik mapy* . Rozszerzenie nazwy pliku mapy to *. map* .
 
   Aby uzyskać więcej informacji, zobacz [/map (Generate Mapfile)](/cpp/build/reference/map-generate-mapfile).
 
@@ -605,7 +607,7 @@ Zawija narzędzie konsolidatora Microsoft C++, *link.exe*. Narzędzie konsolidat
 
   Opcjonalny parametr **logiczny** .
 
-  Jeśli `true` Funkcja Rejestruj dane wyjściowe jest włączona, wymusza przekierowanie zapisów rejestru do **HKEY_CLASSES_ROOT** do **HKEY_CURRENT_USER**.
+  Jeśli `true` Funkcja Rejestruj dane wyjściowe jest włączona, wymusza przekierowanie zapisów rejestru do **HKEY_CLASSES_ROOT** do **HKEY_CURRENT_USER** .
 
 - **PreprocessOutput**
 
@@ -699,7 +701,7 @@ Zawija narzędzie konsolidatora Microsoft C++, *link.exe*. Narzędzie konsolidat
 
   Aby uzyskać więcej informacji, zobacz [/verbose (drukowanie komunikatów o postępie)](/cpp/build/reference/verbose-print-progress-messages).
 
-- **Źródła**
+- **Źródeł**
 
   Wymagany parametr interfejsu `ITaskItem[]`.
 
@@ -925,6 +927,6 @@ Zawija narzędzie konsolidatora Microsoft C++, *link.exe*. Narzędzie konsolidat
 
   Aby uzyskać więcej informacji, zobacz [/Version (informacje o wersji)](/cpp/build/reference/version-version-information).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

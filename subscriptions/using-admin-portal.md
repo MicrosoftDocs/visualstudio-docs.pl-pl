@@ -1,18 +1,18 @@
 ---
-title: Wprowadzenie do portalu administracyjnego subskrypcji | Visual Studio Marketplace
+title: Wprowadzenie do portalu administratora subskrypcji programu Visual Studio | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
-ms.date: 09/03/2020
+ms.date: 10/28/2020
 ms.topic: overview
 description: Dowiedz się, jak zacząć zarządzać subskrypcjami programu Visual Studio w organizacji za pomocą portalu administratora subskrypcji.
-ms.openlocfilehash: 8ed9a0b2ed7b9230a245493a2998fa1ca42cae53
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a9e23208bea480167452711442b52fb84b2bd8ee
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353307"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904555"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Omówienie portalu administratora subskrypcji programu Visual Studio
 
@@ -25,7 +25,7 @@ Zapoznaj się z portalem.
 ## <a name="important-considerations"></a>Istotne zagadnienia
 W przypadku korzystania z portalu administratora subskrypcji programu Visual Studio należy pamiętać o następujących kwestiach:
 - **Subskrypcje programu Visual Studio są licencjonowane na użytkownika.** Każdy subskrybent może korzystać z oprogramowania na tyle, ile komputerów jest potrzebnych do tworzenia i testowania.
-- **Przypisz tylko jeden poziom subskrypcji dla każdego subskrybenta**, odpowiadający subskrypcji programu Visual Studio zakupionej przez Twoją organizację. Jeśli masz subskrybentów z przypisanym więcej niż jednym poziomem subskrypcji, Edytuj swoje ustawienia tak, aby zawierały tylko jeden z nich.
+- **Przypisz tylko jeden poziom subskrypcji dla każdego subskrybenta** , odpowiadający subskrypcji programu Visual Studio zakupionej przez Twoją organizację. Jeśli masz subskrybentów z przypisanym więcej niż jednym poziomem subskrypcji, Edytuj swoje ustawienia tak, aby zawierały tylko jeden z nich.
 - **Poziom subskrypcji subskrybenta będzie musiał zostać zaktualizowany** , gdy subskrypcja zostanie uaktualniona (po zakupie licencji "krok do końca") lub odnowienia na niższym poziomie.
 - **Nie udostępniaj subskrypcji między subskrybentami.** Subskrypcje muszą być przypisane do nazwanych osób.  Przypisanie subskrypcji do zespołów nie jest dozwolone.  Musisz przypisać subskrypcję do każdego, kto korzysta ze wszystkich lub części korzyści z subskrypcji (oprogramowanie do programowania i testowania, Microsoft Azure, uczenie elektroniczne itp.).
 
@@ -59,14 +59,14 @@ Aby uzyskać więcej informacji na temat umowy, którą przeglądasz, wybierz dr
 - [Porównanie funkcji programu Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare)
 - [Pomoc techniczna dla administratorów i subskrypcji programu Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
-Dowiedz się więcej o odpowiedzialności dla administratorów:
+Dowiedz się więcej na temat obowiązków dla administratorów:
 - [Przegląd obowiązków administracyjnych](admin-responsibilities.md)
 - [Spis środowiska przedprodukcyjnego](admin-inventory.md)
 - [Zarządzanie dużymi zespołami i zleceniobiorcami zewnętrznymi](manage-teams.md)

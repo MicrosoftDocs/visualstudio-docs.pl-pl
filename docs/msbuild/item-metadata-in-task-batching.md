@@ -1,5 +1,7 @@
 ---
 title: Metadane elementu w przetwarzaniu wsadowym zadań | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild korzysta z metadanych elementów w partiach zadań, aby podzielić listy elementów na różne kategorie lub partie, a następnie uruchamiać zadanie jednokrotnie przy każdej partii.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6152b0e64286c3cadedfcafb0ac530616c4012a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1d67f740857dc93b997e206c43dd52d9887f3e9
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288991"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903722"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadane elementu w przetwarzaniu wsadowym zadań
 
@@ -222,7 +224,7 @@ W oknie [komunikatu](../msbuild/message-task.md) są wyświetlane następujące 
 Items in ExampColl: Item2;Item5
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Metadane dobrze znanego elementu](../msbuild/msbuild-well-known-item-metadata.md)
 - [Item — element (MSBuild)](../msbuild/item-element-msbuild.md)

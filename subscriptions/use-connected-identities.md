@@ -1,19 +1,19 @@
 ---
-title: Jak używać połączonych konto Microsoft i Azure Active Directory tożsamości | Microsoft Docs
+title: Jak używać połączonych tożsamości w subskrypcjach programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
-ms.date: 03/11/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: Dowiedz się, jak korzystać z połączonych kont Microsoft i tożsamości Azure Active Directory
-ms.openlocfilehash: 6d67576ab715f3ff8a49287155423a3dd6c20867
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a4c7b72c91c4c1180a5fd888e3afd0a33fa2d81b
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005241"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904031"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Jak używać połączonych tożsamości w subskrypcjach programu Visual Studio
 Jeśli otrzymasz subskrypcję programu Visual Studio za pomocą swojej firmy lub szkoły i używasz konto Microsoft (MSA) do logowania się, administrator subskrypcji może połączyć Twoje konto MSA z Twoją tożsamością w Azure Active Directory organizacji (Azure AD).  Spowoduje to zmianę sposobu uzyskiwania dostępu do niektórych korzyści uwzględnionych w Twojej subskrypcji. 
@@ -37,12 +37,12 @@ Dodanie alternatywnego konta do subskrypcji programu Visual Studio pozwala uzysk
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="q-how-can-i-contact-my-admin-about-this"></a>P: Jak mogę skontaktować się z administratorem?
-Odp.: Aby uzyskać informacje na temat kontaktowania się z administratorem, zobacz nasz artykuł dotyczący [administratora subskrypcji](contact-my-admin.md) .  
+Odp.: Aby uzyskać informacje na temat kontaktowania się z administratorem, zobacz nasz artykuł dotyczący [Twojego](contact-my-admin.md) usługodawcy.  
 
 ### <a name="q-im-an-admin--how-do-i-use-this"></a>Pytanie: jestem administratorem.  Jak mogę to użyć?
 Odp.: implementowanie połączonych tożsamości jest proste.  Aby uzyskać więcej informacji, zapoznaj się z [tym artykułem](personal-email-sign-ins.md) . 
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)

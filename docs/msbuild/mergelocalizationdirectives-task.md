@@ -1,5 +1,7 @@
 ---
 title: MergeLocalizationDirectives — — zadanie | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa zadania MergeLocalizationDirectives — do scalania atrybutów lokalizacji i komentarzy plików binarnych XAML w jednym pliku.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c7699afeb09604a437aad091f9aaf9ce624d33e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97d04978a2809a4744f62f27c375efdec1e43dcc
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633502"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903874"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives, zadanie
 
@@ -38,7 +40,7 @@ ms.locfileid: "77633502"
 
 ## <a name="remarks"></a>Uwagi
 
-Możesz dodawać atrybuty lokalizacji i komentarze do zawartości XAML. Dzięki obsłudze lokalizacji Windows Presentation Foundation (WPF) można rozłożyć atrybuty lokalizacji i komentarze oraz umieścić je w pliku *. loc* , który jest oddzielony od wygenerowanego zestawu. Można to zrobić przy użyciu atrybutu **LocalizationPropertyStorage** . Aby uzyskać więcej informacji na temat atrybutów lokalizacji i komentarzy oraz **LocalizationPropertyStorage**, zobacz [atrybuty lokalizacji i komentarze](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
+Możesz dodawać atrybuty lokalizacji i komentarze do zawartości XAML. Dzięki obsłudze lokalizacji Windows Presentation Foundation (WPF) można rozłożyć atrybuty lokalizacji i komentarze oraz umieścić je w pliku *. loc* , który jest oddzielony od wygenerowanego zestawu. Można to zrobić przy użyciu atrybutu **LocalizationPropertyStorage** . Aby uzyskać więcej informacji na temat atrybutów lokalizacji i komentarzy oraz **LocalizationPropertyStorage** , zobacz [atrybuty lokalizacji i komentarze](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
 
 ## <a name="example"></a>Przykład
 
@@ -57,7 +59,7 @@ Poniższy przykład Scala Komentarze lokalizacyjne kilku plików w formacie bina
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
 - [Odwołanie do zadania WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)

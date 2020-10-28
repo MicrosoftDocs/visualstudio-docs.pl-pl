@@ -1,5 +1,7 @@
 ---
 title: Rejestrowanie w środowisku wieloprocesorowym | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild oferuje Rejestrator z obsługą wieloprocesorową i umożliwia tworzenie niestandardowych "rejestratorów przekazywania".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c332fb67e96bdfea0059de11441da7c32871633
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fe90440e9e9e40312eafef0bda951937ea27ad9
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633567"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904378"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Rejestrowanie w środowisku wieloprocesorowym
 
@@ -30,7 +32,7 @@ Aby zwiększyć efektywność rejestrowania jeszcze bardziej, można utworzyć n
 
 ### <a name="central-logging-model"></a>Centralny model rejestrowania
 
-W przypadku kompilacji z obsługą kilku procesorów MSBuild korzysta z "centralnego modelu rejestrowania". W centralnym modelu rejestrowania wystąpienie *MSBuild.exe* działa jako główny proces kompilacji lub "węzeł centralny". Dodatkowe wystąpienia *MSBuild.exe*lub "węzły pomocnicze" są dołączone do węzła centralnego. Wszystkie rejestratory oparte na ILogger dołączone do węzła centralnego są znane jako "rejestratory centralne" i rejestratory dołączone do węzłów pomocniczych są znane jako "rejestratory pomocnicze".
+W przypadku kompilacji z obsługą kilku procesorów MSBuild korzysta z "centralnego modelu rejestrowania". W centralnym modelu rejestrowania wystąpienie *MSBuild.exe* działa jako główny proces kompilacji lub "węzeł centralny". Dodatkowe wystąpienia *MSBuild.exe* lub "węzły pomocnicze" są dołączone do węzła centralnego. Wszystkie rejestratory oparte na ILogger dołączone do węzła centralnego są znane jako "rejestratory centralne" i rejestratory dołączone do węzłów pomocniczych są znane jako "rejestratory pomocnicze".
 
 Gdy wystąpi kompilacja, rejestratory pomocnicze kierują ruch zdarzenia do centralnych rejestratorów. Ponieważ zdarzenia pochodzą z kilku węzłów pomocniczych, dane docierają do centralnych węzłów jednocześnie, ale z przeplotem. Aby rozwiązać odwołania zdarzenia do projektu i zdarzenia do obiektu docelowego, argumenty zdarzeń zawierają dodatkowe informacje kontekstu zdarzenia kompilacji.
 
@@ -75,7 +77,7 @@ Culture=neutral
 
 Gwiazdka (*) oddziela dwie nazwy rejestratora w `-dl` przełączniku.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Rejestratory kompilacji](../msbuild/build-loggers.md)
 - [Utwórz rejestratory przekazywania](../msbuild/creating-forwarding-loggers.md)

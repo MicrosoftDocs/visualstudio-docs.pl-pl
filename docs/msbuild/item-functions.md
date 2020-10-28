@@ -1,5 +1,7 @@
 ---
 title: Funkcje elementów | Microsoft Docs
+description: Dowiedz się, w jaki sposób kod MSBuild w zadaniach i obiektach docelowych może wywoływać funkcje elementu, aby uzyskać informacje o elementach w projekcie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3f6299a8be52aef068746ca33e48341da55f778
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94b94ef7b17633ab78f7eb91f61dd67ea2c8021d
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82586880"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904630"
 ---
 # <a name="item-functions"></a>Funkcje elementów
 
@@ -106,6 +108,6 @@ Poniższy przykład pokazuje, jak używać funkcji elementu wewnętrznego.
 
 Funkcje `Exists` i `HasTrailingSlash` nie są funkcjami elementu. Są one dostępne do użycia z `Condition` atrybutem. Zobacz [warunki programu MSBuild](msbuild-conditions.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Elementy](../msbuild/msbuild-items.md)

@@ -1,18 +1,18 @@
 ---
-title: Korzystanie z kluczy produktów | Microsoft Docs
+title: Korzystanie z kluczy produktów w subskrypcjach programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 09/18/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Dowiedz się, jak uzyskiwać klucze produktów i zarządzać nimi w subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a5da818a059709d311b87572f71b78a51dbb7deb
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005849"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903994"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Korzystanie z kluczy produktów w subskrypcjach programu Visual Studio
 
@@ -23,7 +23,7 @@ Subskrypcje programu Visual Studio zwykle obejmują pięć kluczy produktów dla
 Większość kluczy produktów umożliwia również wielokrotne aktywację produktu dla każdego klucza.  Wiele produktów umożliwia również Instalowanie i używanie produktu przez 30 dni lub więcej bez aktywacji.  Większość subskrybentów zapewnia więcej niż wystarczającą liczbę aktywacji, aby sprostać potrzebom.  Jeśli jednak zostały wyczerpane dostępne aktywacje dla produktu, możesz przesłać żądanie dotyczące dodatkowych kluczy za pomocą [usługi Customer subskrypcje subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 
 > [!NOTE]
-> Jeśli Twoja subskrypcja jest świadczona przez służbowe usługi, administrator subskrypcji kontroluje, czy masz dostęp do pobierania oprogramowania.  Jeśli dostęp do plików do pobrania jest wyłączony dla Twojej subskrypcji, zostanie również wyłączony dostęp do kluczy produktów.  Jeśli potrzebujesz plików do pobrania i/lub kluczy produktów, [skontaktuj się z administratorem](contact-my-admin.md).
+> Jeśli Twoja subskrypcja jest świadczona przez Twoją służbę lub szkołę, administrator subskrypcji kontroluje, czy masz dostęp do pobierania oprogramowania.  Jeśli dostęp do plików do pobrania jest wyłączony dla Twojej subskrypcji, zostanie również wyłączony dostęp do kluczy produktów.  Jeśli potrzebujesz plików do pobrania i/lub kluczy produktów, [skontaktuj się z administratorem](contact-my-admin.md).
 
 ## <a name="activating-a-product"></a>Aktywowanie produktu
 W przypadku niektórych produktów wymagana jest aktywacja.  Ogólnie rzecz biorąc, w subskrypcjach programu Visual Studio jest to ograniczone do systemu Windows, Windows Server, Microsoft Office aplikacji klienckich i Expression Studio. Gdy aktywacja jest wymagana, wiele produktów — w tym Windows i Office — umożliwia instalowanie i używanie produktu bez aktywacji przez 30 dni lub dłużej. W przypadku ponownego obrazu komputerów często (co najmniej raz na 30 dni) nie należy rozważyć aktywowania produktu. Klucze produktów dostarczane jako część subskrypcji programu Visual Studio nie umożliwiają nieograniczonej aktywacji produktu.
@@ -79,7 +79,7 @@ W zależności od produktu dostępne są różne typy kluczy.
 
 Klucz można przejąć ze strony pobierania produktu lub można wyszukać wymagany klucz na stronie [klucze produktu](https://my.visualstudio.com/productkeys) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)

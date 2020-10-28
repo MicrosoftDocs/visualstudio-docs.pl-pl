@@ -1,18 +1,18 @@
 ---
-title: Eksportowanie informacji o subskrypcji | Microsoft Docs
+title: Eksportowanie informacji o subskrypcji w subskrypcjach programu Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
-ms.date: 03/03/2020
+ms.date: 10/26/2020
 ms.topic: conceptual
 description: Dowiedz się, jak wyeksportować listę subskrybentów i szczegółowe informacje o ich przypisaniach subskrypcji.
-ms.openlocfilehash: 65d78625c0536b21b764a595590c7c260aa3b0a8
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 33482dbe517fd34efb9a165bc5c868e20be0d1d7
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005577"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904143"
 ---
 # <a name="export-subscription-information"></a>Eksportowanie informacji o subskrypcji
 W [portalu administratora](https://manage.visualstudio.com)subskrypcji programu Visual Studio można wyeksportować listę subskrybentów oraz szczegóły dotyczące ich przypisań. Te informacje obejmują nazwę, adres e-mail, alternatywny adres e-mail, poziom subskrypcji, datę przypisania, stan aktywacji, datę wygaśnięcia, pole odwołania, czy pliki do pobrania są włączone, kraj, język, stan subskrypcji i identyfikator GUID subskrypcji.  Lista zostanie wyeksportowana jako plik CSV, który można łatwo otworzyć w programie Microsoft Excel, aby utworzyć wykresy, przestawianie i inne artefakty.
@@ -32,7 +32,7 @@ Aby przeprowadzić eksport:
 > [!div class="mx-imgBorder"]
 > ![Eksportowanie subskrybentów](_img/exporting-subscriptions/exporting-subscriptions.png "Kliknij przycisk Eksportuj, aby pobrać kompletną listę przypisanych subskrypcji.")
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)

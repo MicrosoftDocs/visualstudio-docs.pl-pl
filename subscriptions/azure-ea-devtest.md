@@ -1,18 +1,18 @@
 ---
 title: Oferta usługi Azure Umowa Enterprise DevTest
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
-ms.date: 02/23/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 description: Dowiedz się, jak korzystać z specjalnych cen usługi Azure DevTest dostępnych dla klientów z umowami Enterprise Agreement
-ms.openlocfilehash: 70f7b9877dcc973d2f649eb0cad53599ff6023f3
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a4da6356c250b3c07cb19fb8bf4c5e260e9d3e29
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005743"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904463"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Oferta usługi Azure Umowa Enterprise DevTest
 
@@ -32,16 +32,16 @@ Aby włączyć oferty:
 0. Umieść kursor na nazwie konta. 
 0. Kliknij ikonę **edycji** (ołówek) po prawej stronie. 
 0. Kliknij pole wyboru Tworzenie **/testowanie** .
-0. Kliknij pozycję **Zapisz**.
+0. Kliknij pozycję **Zapisz** .
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>Tworzenie indywidualnych subskrypcji w ramach konta
 Każdy subskrybent na koncie może utworzyć subskrypcję, wykonując następujące czynności:
 1. Zaloguj się do witryny [https://account.windowsazure.com/signup?showCatalogs=True](https://account.windowsazure.com/signup?showCatalogs=True).
 0. Wybierz ofertę **Enterprise — tworzenie i testowanie** .
 0. Kliknij pole wyboru, aby potwierdzić, że subskrypcja podlega Umowa Enterprise. 
-0. Kliknij pozycję **Kup**.  (W przypadku tej oferty nie masz faktycznie kupowanych elementów).
+0. Kliknij pozycję **Kup** .  (W przypadku tej oferty nie masz faktycznie kupowanych elementów).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)

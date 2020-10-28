@@ -1,5 +1,7 @@
 ---
 title: Metadane elementu w przetwarzaniu wsadowym Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa metadanych elementu w docelowej partii, aby przeprowadzić analizę zależności na danych wejściowych i wyjściowych dla elementu docelowego kompilacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5d0c9dec280633d0a39573581c083e6ddd4d8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0436402aa4000841a278497af697985c3a50c812
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633671"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904602"
 ---
 # <a name="item-metadata-in-target-batching"></a>Metadane elementu w przetwarzaniu wsadowym obiektów docelowych
 
@@ -67,7 +69,7 @@ Poniższy przykład zawiera listę elementów o nazwie `Res` , która jest podzi
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: kompilowanie przyrostowe](../msbuild/how-to-build-incrementally.md)
 - [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)

@@ -2,17 +2,17 @@
 title: Uzyskiwanie dostępu do portalu administracyjnego dla klientów licencji zbiorczej programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 10/21/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy licencji zbiorczych mogą uzyskać dostęp do portalu administratora subskrypcji programu Visual Studio
-ms.openlocfilehash: e5b95d2afcb9aec822b3a1ec63e76562c9d255e6
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 85e82eed6b8810e7e6a2f8622aead9d50323841d
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353437"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904215"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>Uzyskiwanie dostępu do portalu administracyjnego jako administrator w ramach umowy licencjonowania zbiorowego
 
@@ -28,7 +28,7 @@ Dotyczy to wszystkich typów umów licencjonowania zbiorowego, w tym m.in. umów
 ## <a name="resources"></a>Zasoby
 - [Pomoc techniczna dla administratorów i subskrypcji programu Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)

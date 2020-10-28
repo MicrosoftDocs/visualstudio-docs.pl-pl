@@ -7,15 +7,15 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: Więcej informacji na temat zarządzania subskrypcjami programu Visual Studio w ramach umowy dotyczącej produktów i usług firmy Microsoft (MPSA)
-ms.openlocfilehash: f0e894272f13b08af20f36579aea807cba7a882a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 388c847ce19ca7136efb7757fbc87bffdc35a673
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006088"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903806"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Subskrypcje programu Visual Studio w ramach umowy dotyczącej produktów i usług firmy Microsoft (MPSA)
-Jeśli masz zakupione subskrypcje programu Visual Studio w programie MPSA, musisz znać kilka kwestii, aby móc stać się administratorem subskrypcji programu Visual Studio i przypisać subskrypcje użytkownikom. Jeśli użytkownik został już skonfigurowany jako administrator, możesz przejść bezpośrednio do [portalu administracyjnego](https://manage.visualstudio.com/)subskrypcji programu Visual Studio.
+Jeśli masz zakupione subskrypcje programu Visual Studio w programie MPSA, musisz znać kilka kwestii, aby móc być administratorem subskrypcji programu Visual Studio i przypisać subskrypcje użytkownikom. Jeśli masz już skonfigurowaną rolę administratora, możesz przejść bezpośrednio do [portalu administracyjnego](https://manage.visualstudio.com/)subskrypcji programu Visual Studio.
 
 MPSA klienci mogą zarządzać zasobami zakupionymi za pomocą usługi MPSA w portalu nazywanym [centrum biznesowym](https://businessaccount.microsoft.com/Customer), który obsługuje funkcje podobne do centrum usługi licencjonowania zbiorowego (VLSC). Obejmują one Wyświetlanie podsumowania licencji, zamówień, plików do pobrania, kluczy, użytkowników itp. Jednak subskrypcje programu Visual Studio w programie MPSA działają podobnie jak Cloud Services. W centrum biznesowym są również wykorzystywane konta służbowe, a nie konta Microsoft (MSA). Jeśli Twoja organizacja korzysta z usług w chmurze, takich jak Office 365 lub Azure Active Directory, a Twoja poczta e-mail należy do jednej z tych dwóch usług, to już konto służbowe. Pozwoli to na zarejestrowanie się w usłudze Business Center przy użyciu istniejącego hasła. Jeśli Twoja organizacja nie korzysta z usług w chmurze, a Twoja poczta e-mail nie jest kontem służbowym, możesz użyć jej do zarejestrowania się w centrum biznesowym.
 
@@ -23,7 +23,7 @@ Ponadto w [portalu administracyjnym](https://manage.visualstudio.com/) subskrypc
 
 Należy pamiętać, że istnieją dwa typy dzierżawców zarządzanych przez dzierżawców i niezarządzanych dzierżawców. Zarządzana dzierżawa odnosi się do dzierżawy, która jest już zarządzana przez administratorów w organizacji.
 
-Niezarządzana dzierżawa jest dzierżawcą bez przypisanych administratorów i nie jest używana do usług online, takich jak Office 365. Dzierżawy niezarządzane również są tworzone podczas rejestrowania w usłudze Business Center za pomocą wiadomości e-mail, która nie jest kontem służbowym. Jeśli poprosisz o utworzenie hasła podczas rejestrowania w usłudze Business Center, oznacza to, że Twoja poczta e-mail nie jest kontem służbowym i utworzyła niezarządzaną dzierżawę.
+Niezarządzana dzierżawa jest dzierżawą bez przypisanych administratorów i nie jest używana do usług online, takich jak Office 365. Dzierżawy niezarządzane również są tworzone podczas rejestrowania w usłudze Business Center za pomocą wiadomości e-mail, która nie jest kontem służbowym. Jeśli poprosisz o utworzenie hasła podczas rejestrowania w usłudze Business Center, oznacza to, że Twoja poczta e-mail nie jest kontem służbowym i utworzyła niezarządzaną dzierżawę.
 
 Poniżej przedstawiono kilka wymagań/kroków, które należy wykonać, aby zostać administratorem subskrypcji programu Visual Studio przed ukończeniem skojarzenia dzierżawy.
 
@@ -35,16 +35,16 @@ Poniżej przedstawiono kilka wymagań/kroków, które należy wykonać, aby zost
 - Pole "kraj lub region" w profilu użytkownika (oraz każdy inny użytkownik) na [platformie Azure](https://portal.azure.com/) musi być odpowiednio wypełniane w zależności od regionu (tj. USA, urzędu certyfikacji itp.). 
 
 > [!NOTE]
-> Wszyscy użytkownicy, którym chcesz nawiązać administratorów subskrypcji programu Visual Studio, nie muszą być użytkownikami w centrum biznesowym, ponieważ muszą spełniać tylko kryteria 2 i 5.
+> Wszyscy użytkownicy, którzy chcą utworzyć administratorów subskrypcji programu Visual Studio, nie muszą być użytkownikami w centrum biznesowym, ponieważ potrzebują tylko kryteriów 2 i 5.
 
 Po spełnieniu powyższych kryteriów można utworzyć skojarzenie konta zakupu z dzierżawcą, wykonując poniższe kroki.
 1. Zaloguj się do programu [Business Center](https://businessaccount.microsoft.com/Customer).
-2. Kliknij kartę **konto** i wybierz pozycję **Skojarz domeny**.
+2. Kliknij kartę **konto** i wybierz pozycję **Skojarz domeny** .
 3. Wybierz **konto zakupu** (Jeśli masz więcej niż jeden).
 4. Wybierz **dzierżawę** (np. contoso.onmicrosoft.com).
-5. Kliknij pozycję **Skojarz domenę**.
+5. Kliknij pozycję **Skojarz domenę** .
 
-Po skojarzeniu wszyscy użytkownicy spełniający kryteria będą zazwyczaj udostępniać Administratorzy subskrypcji programu Visual Studio w ciągu kilku minut. Jednak czasami może to potrwać do 24 godzin. Po zainicjowaniu obsługi dzierżawy będzie można uzyskać dostęp do portalu administracyjnego subskrypcji programu Visual Studio. Jeśli trwa to dłużej niż 24 godziny, skontaktuj się z pomocą techniczną usługi MPSA, wykonując następujące czynności:
+Po skojarzeniu wszyscy użytkownicy spełniający kryteria będą zazwyczaj dostarczani jako administratorzy subskrypcji programu Visual Studio w ciągu kilku minut. Jednak czasami może to potrwać do 24 godzin. Po zainicjowaniu obsługi dzierżawy będzie można uzyskać dostęp do portalu administracyjnego subskrypcji programu Visual Studio. Jeśli trwa to dłużej niż 24 godziny, skontaktuj się z pomocą techniczną usługi MPSA, wykonując następujące czynności:
 1. Połącz z <https://www.microsoft.com/licensing/mpsa/default>
 2. Kliknij menu **więcej** w górnej części strony. 
 3. Wybierz **Pomoc techniczną**
@@ -52,7 +52,7 @@ Po skojarzeniu wszyscy użytkownicy spełniający kryteria będą zazwyczaj udos
 5. Wybierz opcję pomocy technicznej, która najlepiej odpowiada Twoim potrzebom. 
 
 > [!NOTE]
-> Jeśli istnieją nowi użytkownicy, którzy spełniają kryteria w krokach 2 i 5 (po skojarzeniu), musisz skontaktować się z pomocą techniczną MPSA. Pomoc techniczna MPSA zapewnia pomoc w zakresie udostępniania nowych administratorów subskrypcji programu Visual Studio.
+> Jeśli istnieją nowi użytkownicy, którzy spełniają kryteria w krokach 2 i 5 (po skojarzeniu), musisz skontaktować się z pomocą techniczną MPSA. Obsługa MPSA zapewnia pomoc w aprowizacji nowych administratorów subskrypcji programu Visual Studio.
 
 ## <a name="tenant-association-unmanaged"></a>Skojarzenie dzierżawy (niezarządzane)
 Jeśli zarejestrowano Cię w centrum biznesowym za pomocą wiadomości e-mail, która nie jest kontem służbowym (nie jest zarejestrowana w Azure Active Directory "Azure AD"), jak wyjaśniono powyżej, skojarzenie dzierżawy będzie nieco inne. Należy wykonać czynności, które są nazywane "przejmowaniem domeny". W trakcie tego procesu użytkownik zostanie samemu administratorem globalnym, który zmieni dzierżawę z niezarządzanej na zarządzane.
@@ -62,7 +62,7 @@ Aby uzyskać bardziej szczegółowy opis tego procesu, możesz użyć [przewodni
 > [!NOTE]
 > Po przeprowadzeniu procesu przejęcia domeny należy przestrzegać kryteriów z pięciu kroków w sekcji w przypadku skojarzenia predzierżawców (zarządzane). Po spełnieniu kryteriów będzie konieczne skontaktowanie się z pomocą techniczną MPSA w celu udostępnienia dodatkowych administratorów subskrypcji programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)

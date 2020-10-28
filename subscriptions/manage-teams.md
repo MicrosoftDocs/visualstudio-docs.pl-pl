@@ -1,21 +1,21 @@
 ---
-title: Zarządzanie dużymi zespołami i zewnętrznymi wykonawcami | Visual Studio Marketplace
+title: Zarządzanie dużymi zespołami i kontrahentami w subskrypcjach programu Visual Studio | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/09/2020
 ms.topic: conceptual
-description: Zapoznaj się z odpowiedzialnością administratorów, aby zarządzać subskrypcjami dla dużych zespołów, a także zewnętrznych wykonawców.
-ms.openlocfilehash: 86848fc7b5c9507c1e5df5bd043ee21217afe313
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+description: Informacje o odpowiedzialności administratorów dotyczące zarządzania subskrypcjami dla dużych zespołów oraz zewnętrznych wykonawców.
+ms.openlocfilehash: 55d2ac2eacaf523503c2593349abbcf561aed3b1
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005564"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904675"
 ---
 # <a name="large-teams-and-external-contractors"></a>Duże zespoły i zewnętrzni wykonawcy
-Administratorzy subskrypcji programu Visual Studio są odpowiedzialni za zapewnienie, że każdy użytkownik, który współdziała z programem Visual Studio — licencjonowanym oprogramowaniem, ma odpowiednie licencje z własną subskrypcją programu Visual Studio.
+Administratorzy subskrypcji programu Visual Studio są odpowiedzialni za zapewnienie, że każdy użytkownik, który współdziała z oprogramowaniem licencjonowanym przez program Visual Studio, ma odpowiednie licencje na własną subskrypcję programu Visual Studio.
 
 ## <a name="internal-teams"></a>Zespoły wewnętrzne
 Zwykle nowoczesne organizacje oprogramowania obejmują uczestników z kilku grup. Zidentyfikuj kontakty z każdej z grup, które mogą pomóc w śledzeniu spisu użytkowników i zmian.
@@ -34,14 +34,14 @@ Zewnętrzni wykonawcy mogą przystąpić licencje do środowiska z licencjonowan
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Postanowienia dotyczące licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
 - [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
-Dowiedz się więcej o odpowiedzialności dla administratorów:
+Dowiedz się więcej na temat obowiązków dla administratorów:
 - [Obowiązki administratora](admin-responsibilities.md)
 - [Spis środowiska przedprodukcyjnego](admin-inventory.md)
 - [Śledzenie przypisań użytkowników i przetwarzanie zamówień](assignments-orders.md)

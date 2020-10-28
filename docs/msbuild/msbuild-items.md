@@ -1,6 +1,6 @@
 ---
 title: Elementy MSBuild | Microsoft Docs
-description: Użyj atrybutu dołączania MSBuild elementu Item, aby określić pliki do uwzględnienia w kompilacji
+description: Dowiedz się, jak używać atrybutu include programu MSBuild w celu określenia plików do uwzględnienia w kompilacji.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 020983182706bd6d9382f4d0bd4885ffa0f86f52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a28823a1a492cb1e8d5f434f98248fecc5d84e47
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247584"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904503"
 ---
 # <a name="msbuild-items"></a>Elementy programu MSBuild
 
@@ -35,7 +35,7 @@ Elementy programu MSBuild są wejściami do systemu kompilacji i zazwyczaj repre
 </ItemGroup>
 ```
 
- Element *file2.cs* nie zastępuje elementu *file1.cs*; Zamiast tego nazwa pliku jest dołączana do listy wartości `Compile` typu elementu.
+ Element *file2.cs* nie zastępuje elementu *file1.cs* ; Zamiast tego nazwa pliku jest dołączana do listy wartości `Compile` typu elementu.
 
  Poniższy kod XML tworzy ten sam typ elementu przez zadeklarowanie obu plików w jednym `Include` atrybucie. Należy zauważyć, że nazwy plików są oddzielone średnikami.
 
@@ -97,7 +97,7 @@ Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [How to:
 </ItemGroup>
 ```
 
- Ten `Exclude` atrybut ma wpływ tylko na elementy, które są dodawane przez `Include` atrybut w elemencie elementu, który zawiera te wartości. W poniższym przykładzie nie można wykluczyć pliku *Form1.cs*, który został dodany w poprzednim elemencie elementu.
+ Ten `Exclude` atrybut ma wpływ tylko na elementy, które są dodawane przez `Include` atrybut w elemencie elementu, który zawiera te wartości. W poniższym przykładzie nie można wykluczyć pliku *Form1.cs* , który został dodany w poprzednim elemencie elementu.
 
 ```xml
 <Compile Include="*.cs" />
@@ -593,7 +593,7 @@ Item1: notebook
 -->
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Item — element (MSBuild)](../msbuild/item-element-msbuild.md)
 - [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)

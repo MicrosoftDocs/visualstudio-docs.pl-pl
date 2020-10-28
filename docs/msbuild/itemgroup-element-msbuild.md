@@ -1,5 +1,7 @@
 ---
 title: Item, element (MSBuild) | Microsoft Docs
+description: Dowiedz się więcej o elemencie elementu MSBuild Item, który zawiera zestaw elementów zdefiniowanych przez użytkownika. Każdy element musi być elementem podrzędnym elementu Item.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f4397415e684b9603dd662e409590e88e86034b
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288978"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903620"
 ---
 # <a name="itemgroup-element-msbuild"></a>Item, element (MSBuild)
 
@@ -93,7 +95,7 @@ ItemGroups mogą mieć warunki stosowane przy użyciu `Condition` atrybutu. W ta
 
 Ten `Label` atrybut jest używany w niektórych systemach kompilacji jako sposób sterowania zachowaniami kompilacji. Można jej używać tylko w deklaracjach jako sposobu tworzenia bardziej zrozumiałych skryptów programu MSBuild lub jako ustawienia kontroli, które ma wpływ na akcje kompilacji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementy](../msbuild/msbuild-items.md)

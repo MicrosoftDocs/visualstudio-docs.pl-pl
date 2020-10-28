@@ -1,5 +1,7 @@
 ---
 title: Logowanie w programie MSBuild | Microsoft Docs
+description: Dowiedz się, w jaki sposób rejestrowanie MSBuild umożliwia monitorowanie postępów kompilacji przez przechwytywanie zdarzeń kompilacji, komunikatów, ostrzeżeń i błędów w pliku dziennika.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9de830003571f1f648cf06be634d9a773b95269f
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633554"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904338"
 ---
 # <a name="logging-in-msbuild"></a>Logowanie w programie MSBuild
 
@@ -43,6 +45,6 @@ Rejestrowanie zapewnia sposób monitorowania postępu kompilacji. Rejestrowanie 
 
  Zawiera instrukcje tworzenia niestandardowych rejestratorów przesyłania dalej.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Równoległe kompilowanie wielu projektów](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) Opisuje sposób szybszego kompilowania wielu projektów przez uruchamianie ich równolegle.

@@ -1,5 +1,7 @@
 ---
 title: Definicje elementów | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa elementu Items i ItemDefinitionGroup do deklarowania metadanych dla elementów w plikach projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75c8947243545b57e0b8c4352784869f54efe565
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633710"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904662"
 ---
 # <a name="item-definitions"></a>Definicje elementów
 
@@ -258,6 +260,6 @@ Począwszy od programu MSBuild 3,5, ItemGroups może być również odwołujący
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)

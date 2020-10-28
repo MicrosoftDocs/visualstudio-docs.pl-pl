@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dowiedz się, jak maksymalnie wykorzystać subskrypcje programu Visual Studio
-ms.openlocfilehash: 59bfac51eb7888bbad4cc07bf2df25b8c35980fd
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a865bfa5cf7d55504e022efb1b134bddde7d231c
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005901"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904678"
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 
@@ -57,7 +57,7 @@ Na stronie korzyści subskrypcja w użyciu będzie widoczna w kolorze niebieskim
 
 ## <a name="transferring-subscriptions"></a>Transferowanie subskrypcji
 
-Jeśli subskrypcja została zakupiona w ramach licencjonowania zbiorowego firmy Microsoft i konieczne jest jej ponowne przypisanie do innej osoby w organizacji, administrator będzie musiał wykonać tę czynność.
+Jeśli subskrypcja została zakupiona w ramach licencjonowania zbiorowego firmy Microsoft i musisz ją ponownie przypisać do innej osoby w organizacji, administrator będzie musiał wykonać tę czynność.
 Subskrypcje detaliczne mogą być transferowane do innego użytkownika, kontaktując się z działem obsługi klienta. Nie można przenieść subskrypcji lub "nie do odsprzedaży".
 
 ## <a name="managing-my-profile"></a>Zarządzanie własnym profilem
@@ -71,7 +71,7 @@ Informacje o kontakcie i preferencje można łatwo zmienić w Twoim profilu.
 1. Wybierz swoją nazwę w prawym górnym rogu portalu subskrybenta.
 2. Wybierz przycisk **Edytuj profil** .
 3. Na karcie **informacje** można zmienić nazwę, adres e-mail, kraj/region, zdjęcie profilu i preferencje kontaktu. Na karcie **Preferencje** możesz wybrać preferowany język, wzorce daty i godziny, strefę czasową i motyw interfejsu użytkownika.
-4. Po sfinalizowaniu zmian wybierz pozycję **Zapisz**.
+4. Po sfinalizowaniu zmian wybierz pozycję **Zapisz** .
 5. Wybierz przycisk **Wstecz** w przeglądarce, aby powrócić do strony korzyści.
 
 ### <a name="setting-communications-preferences"></a>Ustawianie preferencji komunikacji
@@ -89,8 +89,8 @@ Aby dodać alternatywne konto:
 
 1. Zaloguj się do [portalu subskrybenta](https://my.visualstudio.com?wt.mc_id=o~msft~docs) przy użyciu konta Microsoft (MSA).
 2. Wybierz kartę **subskrypcje** .
-3. W obszarze **Linki pokrewne**wybierz pozycję **Dodaj alternatywne konto**.
-4. Wprowadź adres e-mail konta służbowego i wybierz pozycję **Dodaj**.
+3. W obszarze **Linki pokrewne** wybierz pozycję **Dodaj alternatywne konto** .
+4. Wprowadź adres e-mail konta służbowego i wybierz pozycję **Dodaj** .
 
 Po dodaniu alternatywnego konta możesz je zaktualizować lub usunąć w dowolnym momencie, wybierając kartę **subskrypcje** i wybierając odpowiednią opcję w sekcji **Linki pokrewne** .
 
@@ -113,7 +113,7 @@ Odp.: w zależności od kanału zakupu firma Microsoft zachowuje dane klienta pr
 > - Jeśli zdecydujesz się zamknąć konto Microsoft lub usługę Azure AD, Twoje dane osobowe będą anonimowe od razu.
 > - Nie będziemy w pełni usuwać wszystkich Twoich danych osobowych, jeśli masz aktywne subskrypcje.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)

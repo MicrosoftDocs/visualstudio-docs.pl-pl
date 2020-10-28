@@ -1,5 +1,5 @@
 ---
-title: Edytuj subskrypcje w portalu administracyjnym | Microsoft Docs
+title: Edytuj subskrypcje programu Visual Studio w portalu administracyjnym | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 09/21/2020
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą edytować przypisania subskrypcji.
-ms.openlocfilehash: 060ae7c7679eb1bf9dc4da99ea9a1bf952ebc58b
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: d10e9ee779c6fc37c886bb1b5e00e15913bab7e2
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022557"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904167"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Edytuj przypisania subskrypcji programu Visual Studio
 Administrator subskrypcji może wprowadzać zmiany w subskrypcjach przypisanych do osób w organizacji.  W tym artykule omówiono typy zmian, które można wprowadzić, i przedstawiono niezbędne kroki.
@@ -27,7 +27,7 @@ Aby edytować abonenta, wybierz wielokropek (...), który pojawia się obok adre
 > [!div class="mx-imgBorder"]
 > ![Wybierz subskrybenta do edycji](_img/edit-license/select-subscriber.png "Kliknij wielokropek i wybierz polecenie Edytuj.")
 
-Możesz zaktualizować imię i nazwisko subskrybenta, nazwisko, poziom subskrypcji, adres e-mail, kraj, język, pobrania i pole odwołania. Edytuj informacje o subskrybencie i kliknij przycisk **Zapisz**.
+Możesz zaktualizować imię i nazwisko subskrybenta, nazwisko, poziom subskrypcji, adres e-mail, kraj, język, pobrania i pole odwołania. Edytuj informacje o subskrybencie i kliknij przycisk **Zapisz** .
 
 ## <a name="edit-multiple-subscribers-using-bulk-edit"></a>Edytowanie wielu subskrybentów przy użyciu edycji zbiorczej
 
@@ -42,7 +42,7 @@ Obejrzyj ten film wideo lub przeczytaj, aby dowiedzieć się, jak edytować wiel
    > [!IMPORTANT]
    > Poziomów subskrypcji (tj. Enterprise, Professional itp.) i identyfikatorów GUID subskrypcji nie można zmienić za pomocą edycji zbiorczej.  Jeśli musisz przypisać określonych identyfikatorów GUID subskrypcji użytkownikom, Użyj procesu dodawania użytkowników, wybierając identyfikator subskrypcji. Jeśli próba przekazania z tymi elementami została zmieniona w szablonie edycji zbiorczej, przekazywanie zakończy się niepowodzeniem.
 
-1. Aby jednocześnie edytować wielu subskrybentów, przejdź do karty Subskrybenci. Na Wstążce u góry kliknij pozycję **Edytuj zbiorczo**.
+1. Aby jednocześnie edytować wielu subskrybentów, przejdź do karty Subskrybenci. Na Wstążce u góry kliknij pozycję **Edytuj zbiorczo** .
 
 2. Edycja zbiorcza używa szablonu programu Excel do wprowadzania zmian w informacjach o subskrybencie. W polu edycji zbiorczej kliknij pozycję **Eksportuj ten program Excel** , aby pobrać bieżącą listę subskrybentów, w tym wszystkie informacje.
    > [!div class="mx-imgBorder"]
@@ -50,13 +50,13 @@ Obejrzyj ten film wideo lub przeczytaj, aby dowiedzieć się, jak edytować wiel
 
 3. Następnie Zapisz plik lokalnie, aby można było go łatwo znaleźć i wprowadzić wszelkie niezbędne zmiany przed jego przekazaniem. Aby zapewnić pomyślne przekazywanie, **nie należy edytować poziomu subskrypcji lub identyfikatora GUID subskrypcji** w pliku edycji zbiorczej w taki sposób, że spowoduje to niepowodzenie przekazywania.
 
-4. Wróć do portalu administracyjnego subskrypcji programu Visual Studio i w oknie dialogowym Edycja zbiorcza kliknij przycisk **Przeglądaj**. Wybierz zapisany plik programu Excel, a następnie kliknij przycisk **OK**. Postęp przekazywania zostanie wyświetlony na ekranie.
+4. Wróć do portalu administracyjnego subskrypcji programu Visual Studio i w oknie dialogowym Edycja zbiorcza kliknij przycisk **Przeglądaj** . Wybierz zapisany plik programu Excel, a następnie kliknij przycisk **OK** . Postęp przekazywania zostanie wyświetlony na ekranie.
    > [!div class="mx-imgBorder"]
    > ![Edytowanie licencji — przekazywanie plików edycji zbiorczej](_img/edit-license/edit-license-bulk-file-upload1.png "Przejdź do lokalizacji ukończonego pliku programu Excel, wybierz go, a następnie kliknij przycisk OK.")
 
 5. Po przesłaniu pliku zobaczysz powiadomienie informujące o pomyślnym zapoznaniu się z nim. W tym momencie zmiany zostaną odzwierciedlone w informacjach o subskrybencie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)

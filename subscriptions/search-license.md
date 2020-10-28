@@ -7,12 +7,12 @@ ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
 ms.date: 09/21/2020
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą lokalizować poszczególnych subskrybentów lub grupy w portalu administracyjnym.
-ms.openlocfilehash: 341f8e9739b629330775ff8688c5fdf872165e3a
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: e1fd5ea959043cbea58d0eb9a14649044f5d556e
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022242"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904545"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Wyszukiwanie i filtrowanie subskrybentów w subskrypcjach programu Visual Studio
 Portal administrowania subskrypcjami programu Visual Studio umożliwia znalezienie określonego podzestawu subskrybentów na podstawie różnych kryteriów. Listę subskrybentów można filtrować według nazwy, adresu e-mail, poziomu subskrypcji i innych informacji.
@@ -37,7 +37,7 @@ Portal administrowania subskrypcjami programu Visual Studio umożliwia znalezien
    > ![Wyczyść filtr z listy subskrybentów](_img/search-filter/clear-filter.png "Kliknij przycisk Wyczyść filtr, aby usunąć filtr i wznowić wyświetlanie wszystkich przypisanych subskrypcji.")
 
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)

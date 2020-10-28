@@ -1,5 +1,7 @@
 ---
 title: Zaimportuj element | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa elementu, który zawiera kolekcję elementów importowanych, które są zgrupowane w warunku opcjonalnym.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76dadd1a064a64884e3ff1cd1f2431bc1b94c3c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 865ee2b319cc3cd26f6924110fa2976f526ac4f4
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633736"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903949"
 ---
 # <a name="importgroup-element"></a>ImportGroup, element
 
@@ -78,7 +80,7 @@ Zawiera kolekcję `Import` elementów, które są zgrupowane w warunku opcjonaln
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementy](../msbuild/msbuild-items.md)

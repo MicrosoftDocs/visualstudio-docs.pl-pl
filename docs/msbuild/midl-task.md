@@ -1,5 +1,7 @@
 ---
 title: MIDL — zadanie | Microsoft Docs
+description: Dowiedz się więcej o zadaniu MSBuild MIDL, które otacza narzędzie kompilatora Microsoft Interface Definition Language (MIDL), midl.exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,16 +28,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 884cecdcbdbef3320516dd67c43cedd72bc25076
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633476"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903847"
 ---
 # <a name="midl-task"></a>MIDL — Zadanie
 
-Zawija Microsoft Interface Definition Language narzędzia kompilatora (MIDL), *midl.exe*. Aby uzyskać więcej informacji, zobacz [MIDL — dokumentacja wiersza polecenia](/windows/desktop/Midl/midl-command-line-reference).
+Zawija Microsoft Interface Definition Language narzędzia kompilatora (MIDL), *midl.exe* . Aby uzyskać więcej informacji, zobacz [MIDL — dokumentacja wiersza polecenia](/windows/desktop/Midl/midl-command-line-reference).
 
 ## <a name="parameters"></a>Parametry
 
@@ -143,7 +145,7 @@ Zawija Microsoft Interface Definition Language narzędzia kompilatora (MIDL), *m
 
      Jeśli `true` , sprawdza, czy wartości wyliczeniowe znajdują się w dozwolonym zakresie.
 
-     Aby uzyskać więcej informacji, zobacz **/Error enum** w pomocy wiersza polecenia (**/?**) dla *midl.exe*.
+     Aby uzyskać więcej informacji, zobacz **/Error enum** w pomocy wiersza polecenia ( **/?** ) dla *midl.exe* .
 
 - **ErrorCheckRefPointers**
 
@@ -203,7 +205,7 @@ Zawija Microsoft Interface Definition Language narzędzia kompilatora (MIDL), *m
 
      Opcjonalny parametr **logiczny** .
 
-     Jeśli `true` plik biblioteki typów (*. tlb*) nie jest generowany.
+     Jeśli `true` plik biblioteki typów ( *. tlb* ) nie jest generowany.
 
      Aby uzyskać więcej informacji, zobacz **/notlb** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -259,7 +261,7 @@ Zawija Microsoft Interface Definition Language narzędzia kompilatora (MIDL), *m
 
      Opcjonalny parametr **String []** .
 
-     Określa co najmniej jedną *definicję*; oznacza to, że nazwa i wartość opcjonalna, które mają być przenoszone do preprocesora C, zgodnie z `#define` dyrektywą. Każdy z nich definiuje, *nazwa [= wartość]*.
+     Określa co najmniej jedną *definicję* ; oznacza to, że nazwa i wartość opcjonalna, które mają być przenoszone do preprocesora C, zgodnie z `#define` dyrektywą. Każdy z nich definiuje, *nazwa [= wartość]* .
 
      Aby uzyskać więcej informacji, zobacz **/d** opcja w [MIDL wiersza polecenia](/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **UndefinePreprocessorDefinitions** w tej tabeli.
 
@@ -297,7 +299,7 @@ Zawija Microsoft Interface Definition Language narzędzia kompilatora (MIDL), *m
 
      Opcjonalny parametr **ciągu** .
 
-     Określa wyrównanie (*poziom pakowania*) struktur w systemie docelowym.
+     Określa wyrównanie ( *poziom pakowania* ) struktur w systemie docelowym.
 
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
@@ -403,7 +405,7 @@ Zawija Microsoft Interface Definition Language narzędzia kompilatora (MIDL), *m
 
      Opcjonalny parametr **ciągu** .
 
-     Określa ważność (*poziom ostrzeżenia*) ostrzeżeń do emisji. Żadne ostrzeżenie nie jest emitowane dla wartości 0. W przeciwnym razie jest emitowane ostrzeżenie, jeśli jego poziom ostrzeżeń jest numerycznie mniejszy lub równy podanej wartości.
+     Określa ważność ( *poziom ostrzeżenia* ) ostrzeżeń do emisji. Żadne ostrzeżenie nie jest emitowane dla wartości 0. W przeciwnym razie jest emitowane ostrzeżenie, jeśli jego poziom ostrzeżeń jest numerycznie mniejszy lub równy podanej wartości.
 
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
@@ -417,6 +419,6 @@ Zawija Microsoft Interface Definition Language narzędzia kompilatora (MIDL), *m
 
      Aby uzyskać więcej informacji, zobacz opcja **/w** w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **warnaserror —** w tej tabeli.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)

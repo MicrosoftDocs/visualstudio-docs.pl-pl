@@ -1,18 +1,18 @@
 ---
-title: Subskrypcje programu Visual Studio oferowane do uruchamiania za pomocą programu Microsoft for Startups | Microsoft Docs
+title: Subskrypcje programu Visual Studio oferowane przez firmę Microsoft do uruchamiania | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
-ms.date: 03/09/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Szczegóły dotyczące subskrypcji są oferowane za pomocą programu Microsoft for Startups.
-ms.openlocfilehash: 8e46924d0980eed4eca27eef7766e12c8733d851
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: b1476faec2ea001423ebec139c9ccf4d4dbfa9b4
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005823"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903408"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Subskrypcje programu Visual Studio oferowane do uruchamiania
 Kwalifikowane uruchomienia, które dołączają do programu Microsoft for Startups, mogą zdobywać 5 Visual Studio Enterprise [comiesięcznych subskrypcji w chmurze](https://visualstudio.microsoft.com/vs/pricing/). 
@@ -40,7 +40,7 @@ W przypadku comiesięcznych subskrypcji w chmurze, anulowania zaczynają obowią
 
 W przypadku rocznych subskrypcji w chmurze, anulowania zaczną obowiązywać pierwszego dnia miesiąca po 12 miesiącach od oryginalnego zakupu lub 12 miesięcy od ostatniej rocznej opłaty za odnowienie. Jeśli na przykład kupiono roczną subskrypcję programu Visual Studio Professional w chmurze 3 stycznia 2018 roku, będzie ona aktywna do 1 lutego 2019 roku i wtedy zostanie automatycznie odnowiona na kolejny rok. Jeśli anulujesz ją pomiędzy tą datą a 1 lutego 2020 roku, ta subskrypcja wygaśnie 1 lutego 2020 r. Nie ma rabatu za anulowanie rocznych subskrypcji w chmurze przed upływem roku.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)

@@ -1,5 +1,7 @@
 ---
 title: MakeDir — zadanie | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa zadania MakeDir do tworzenia katalogów i, w razie potrzeby, wszystkich katalogów nadrzędnych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cc2e97a3024d768861a1967705137415a0d3aa2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 91be7dc2baf7df36d98cd725e8141cfa9cab773f
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633541"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904301"
 ---
 # <a name="makedir-task"></a>MakeDir — zadanie
 
@@ -61,7 +63,7 @@ Poniższy przykład kodu używa `MakeDir` zadania do utworzenia katalogu określ
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)
