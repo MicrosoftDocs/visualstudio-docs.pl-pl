@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4e99652e343510962959830b327237ee018c8fa
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: e6e1bd3d38e6303f11ec5da0e88816d56dd43d98
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007204"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918230"
 ---
 # <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>Analizowanie użycia pamięci bez debugowania w profilerze wydajności
 
 Narzędzie **użycie pamięci** monitoruje użycie pamięci przez aplikację. Za pomocą tego narzędzia można analizować efekty związane z pamięcią w czasie rzeczywistym scenariuszy, które aktywnie opracowujesz w programie Visual Studio. Można utworzyć szczegółowe migawki Stanów pamięci aplikacji i porównać migawki w celu znalezienia głównych przyczyn problemów z pamięcią. Narzędzie użycie pamięci jest obsługiwane w aplikacjach w trybie .NET, ASP.NET, C++ lub mieszanym (.NET i Native).
 
-Narzędzie użycie pamięci można uruchomić [z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md). W tym artykule pokazano, jak używać narzędzia użycie pamięci bez debugera w **profilerze wydajności**programu Visual Studio.
+Narzędzie użycie pamięci można uruchomić [z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md). W tym artykule pokazano, jak używać narzędzia użycie pamięci bez debugera w **profilerze wydajności** programu Visual Studio, który jest zalecany w przypadku kompilacji wydania.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Sesje diagnostyczne dotyczące użycia pamięci
 
@@ -34,11 +34,11 @@ Narzędzie użycie pamięci można uruchomić [z debugerem lub bez niego](../pro
 
    Narzędzie użycie pamięci obsługuje aplikacje platformy .NET, ASP.NET, C++ lub mieszane (.NET i Native).
 
-1. W menu Debuguj Ustaw konfigurację rozwiązania na **Zwolnij** i wybierz pozycję **lokalny debuger systemu Windows** (lub **komputer lokalny**) jako cel wdrożenia.
+1. W menu Debuguj Ustaw konfigurację rozwiązania na **Zwolnij** i wybierz pozycję **lokalny debuger systemu Windows** (lub **komputer lokalny** ) jako cel wdrożenia.
 
-1. Na pasku menu wybierz kolejno opcje **Debuguj program**  >  **Profiler wydajności**.
+1. Na pasku menu wybierz kolejno opcje **Debuguj program**  >  **Profiler wydajności** .
 
-1. W obszarze **dostępne narzędzia**wybierz pozycję **użycie pamięci**, a następnie wybierz pozycję **Uruchom**.
+1. W obszarze **dostępne narzędzia** wybierz pozycję **użycie pamięci** , a następnie wybierz pozycję **Uruchom** .
 
    ![Rozpocznij sesję diagnostyczną wykorzystania pamięci](../profiling/media/memuse_start_diagnosticssession.png "Rozpocznij sesję diagnostyczną wykorzystania pamięci")
 
@@ -58,7 +58,7 @@ Aby zebrać migawki, wybierz pozycję **zrób migawkę** , jeśli chcesz przechw
 
 ### <a name="close-the-diagnostic-session"></a><a name="BKMK_Close_a_monitoring_session"></a> Zamknij sesję diagnostyczną
 
-Aby zatrzymać sesję monitorowania bez tworzenia raportu, po prostu Zamknij okno diagnostyki. Aby wygenerować raport po zakończeniu zbierania lub tworzenia migawek, wybierz pozycję **Zatrzymaj zbieranie**.
+Aby zatrzymać sesję monitorowania bez tworzenia raportu, po prostu Zamknij okno diagnostyki. Aby wygenerować raport po zakończeniu zbierania lub tworzenia migawek, wybierz pozycję **Zatrzymaj zbieranie** .
 
 ![Zatrzymaj zbieranie](../profiling/media/memuse__stopcollection.png "Zatrzymaj zbieranie")
 
@@ -133,7 +133,7 @@ Oba linki otwierają ten sam raport. Jedyną różnicą jest początkowa kolejno
 |Nazwa|Opis|
 |-|-|
 |**Typ obiektu**|Nazwa typu lub wystąpienia obiektu.|
-|**Licznik**|Liczba wystąpień obiektów typu. **Liczba**  jest zawsze 1 dla wystąpienia.|
+|**Liczbą**|Liczba wystąpień obiektów typu. **Liczba**  jest zawsze 1 dla wystąpienia.|
 |**Rozmiar (w bajtach)**|Dla typu, rozmiar wszystkich wystąpień typu w migawce, mniejszy rozmiar obiektów zawartych w wystąpieniach.<br /><br /> Dla wystąpienia, rozmiar obiektu, mniejszy od rozmiaru obiektów zawartych w wystąpieniu. |
 |**Rozmiar włącznie (w bajtach)**|Rozmiar wystąpień typu lub rozmiar pojedynczego wystąpienia, łącznie z rozmiarem zawartych obiektów.|
 |**Moduł**|Moduł, który zawiera obiekt.|
@@ -179,7 +179,7 @@ Oba linki otwierają ten sam raport. Jedyną różnicą jest początkowa kolejno
 |Nazwa|Opis|
 |-|-|
 |**Typ obiektu**|Nazwa typu lub wystąpienia obiektu.|
-|**Licznik**|Liczba wystąpień typu w podstawowej migawce. **Liczba** jest zawsze 1 dla wystąpienia.|
+|**Liczbą**|Liczba wystąpień typu w podstawowej migawce. **Liczba** jest zawsze 1 dla wystąpienia.|
 |**Różnica w liczbie**|Dla typu, różnica w liczbie wystąpień typu między migawką podstawową i poprzednią migawką. Pole jest puste dla wystąpienia.|
 |**Rozmiar (w bajtach)**|Rozmiar obiektów w podstawowej migawce, mniejszej niż rozmiar obiektów w obiektach. Dla typu, **rozmiar (w bajtach)** i **rozmiar włącznie (w bajtach)** są sumami rozmiarów wystąpień typu.|
 |**Różnica w łącznym rozmiarze (w bajtach)**|Dla typu, różnica w łącznym rozmiarze wystąpień typu między migawką podstawową i poprzednią, mniejszą od rozmiaru obiektów w wystąpieniach. Pole jest puste dla wystąpienia.|
@@ -201,7 +201,7 @@ Dla typu w drzewie **ścieżki do katalogu głównego** liczba obiektów, które
 
 ![Przywoływane typy w raporcie różnicowym](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Przywoływane typy w raporcie różnicowym")
 
-Drzewo **typów, do których istnieją odwołania** w raporcie różnic migawek, zawiera następujące kolumny. Drzewo **przywoływanych obiektów** ma **wystąpienie**, **rozmiar (bajty)**, **rozmiar włącznie (w bajtach)** i kolumny **modułów** .
+Drzewo **typów, do których istnieją odwołania** w raporcie różnic migawek, zawiera następujące kolumny. Drzewo **przywoływanych obiektów** ma **wystąpienie** , **rozmiar (bajty)** , **rozmiar włącznie (w bajtach)** i kolumny **modułów** .
 
 |Nazwa|Opis|
 |-|-|
@@ -214,7 +214,7 @@ Drzewo **typów, do których istnieją odwołania** w raporcie różnic migawek,
 |**Różnica w rozmiarze włącznie (w bajtach)**|Dla typu, różnica w rozmiarze wszystkich wystąpień typu między migawką podstawową i poprzednią migawką, włącznie z rozmiarem obiektów w obiektach.|
 |**Moduł**|Moduł, który zawiera obiekt.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pamięć JavaScript](../profiling/javascript-memory.md)
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)
 - [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

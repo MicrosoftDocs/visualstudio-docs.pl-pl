@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13fd616e9ec596bfcdeb3718a62dc1a3a1bc8137
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 0bd8f90c586366a298ba96009dfe5d87a042141b
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007165"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918113"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 
@@ -31,6 +31,7 @@ Aby pomóc w wyborze narzędzi i wyników do użycia, należy wziąć pod uwagę
   - Zewnętrzne problemy z wydajnością, takie jak pliki we/wy lub problemy z odpowiedzią w sieci, nie wyglądają inaczej w debugerze lub narzędziach innych niż debuger.
   - Debuger zmienia czasy wydajności, ponieważ wymaga operacji debugera, takich jak przechwycenie zdarzeń ładowania wyjątków i modułów.
   - Numery wydajności kompilacji wydania w profilerze wydajności są najbardziej precyzyjne i dokładne. Narzędzia zintegrowane z debugerem są najbardziej przydatne do porównywania z innymi pomiarami związanymi z debugowaniem lub do korzystania z funkcji debugera.
+  - Niektóre narzędzia, takie jak narzędzie do alokacji obiektów platformy .NET, są dostępne tylko dla scenariuszy innych niż debuger.
 - Debugowanie a kompilacja wydania
   - W przypadku problemów spowodowanych przez wywołania intensywnie korzystające z procesora CPU mogą występować znaczne różnice wydajności między kompilacjami wydań i debugowania. Sprawdź, czy problem występuje w kompilacjach wydania.
   - Jeśli problem występuje tylko podczas kompilacji debugowania, prawdopodobnie nie trzeba uruchamiać narzędzi niebędących debugerem. W przypadku problemów z kompilacją wersji należy zdecydować, czy funkcje zapewniane przez narzędzia zintegrowane z debugerem pomogą zidentyfikować problem.
@@ -38,15 +39,15 @@ Aby pomóc w wyborze narzędzi i wyników do użycia, należy wziąć pod uwagę
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Zbieraj dane profilowania podczas debugowania
 
-Po rozpoczęciu debugowania w programie Visual Studio, wybierając **Debuguj**  >  **Rozpocznij debugowanie**lub naciskając klawisz **F5**, domyślnie zostanie wyświetlone okno **Narzędzia diagnostyczne** . Aby otworzyć go ręcznie, wybierz pozycję **Debuguj**  >  **okna**  >  **Pokaż narzędzia diagnostyczne**. Okno **Narzędzia diagnostyczne** zawiera informacje o zdarzeniach, pamięci procesu i użycia procesora CPU.
+Po rozpoczęciu debugowania w programie Visual Studio, wybierając **Debuguj**  >  **Rozpocznij debugowanie** lub naciskając klawisz **F5** , domyślnie zostanie wyświetlone okno **Narzędzia diagnostyczne** . Aby otworzyć go ręcznie, wybierz pozycję **Debuguj**  >  **okna**  >  **Pokaż narzędzia diagnostyczne** . Okno **Narzędzia diagnostyczne** zawiera informacje o zdarzeniach, pamięci procesu i użycia procesora CPU.
 
 ![Zrzut ekranu okna narzędzia diagnostyczne](../profiling/media/diagnostictoolswindow.png " Okno Narzędzia diagnostyczne")
 
-- Użyj ikony **ustawień** na pasku narzędzi, aby określić, czy ma być wyświetlane **użycie pamięci**, **Analiza interfejsu użytkownika**i **użycie procesora CPU**.
+- Użyj ikony **ustawień** na pasku narzędzi, aby określić, czy ma być wyświetlane **użycie pamięci** , **Analiza interfejsu użytkownika** i **użycie procesora CPU** .
 
 - Wybierz pozycję **Ustawienia** na liście rozwijanej **Ustawienia** , aby otworzyć **Narzędzia diagnostyczne strony właściwości** z więcej opcji.
 
-- Jeśli używasz Visual Studio Enterprise, możesz włączyć lub wyłączyć IntelliTrace, przechodząc do opcji **Narzędzia**  >  **Options**  >  **IntelliTrace**.
+- Jeśli używasz Visual Studio Enterprise, możesz włączyć lub wyłączyć IntelliTrace, przechodząc do opcji **Narzędzia**  >  **Options**  >  **IntelliTrace** .
 
 Sesja diagnostyczna zostanie zakończona po zatrzymaniu debugowania.
 
@@ -57,7 +58,7 @@ Aby uzyskać więcej informacji, zobacz:
 
 ### <a name="the-events-tab"></a>Karta zdarzenia
 
-Podczas sesji debugowania na karcie zdarzenia okna narzędzia diagnostyczne wyświetlane są zdarzenia diagnostyczne, które wystąpiły. Kategoria prefiksy *punktów przerwania*, *plik*i inne, umożliwia szybkie przeszukanie listy dla kategorii lub pominięcie kategorii, z którymi się nie interesują.
+Podczas sesji debugowania na karcie zdarzenia okna narzędzia diagnostyczne wyświetlane są zdarzenia diagnostyczne, które wystąpiły. Kategoria prefiksy *punktów przerwania* , *plik* i inne, umożliwia szybkie przeszukanie listy dla kategorii lub pominięcie kategorii, z którymi się nie interesują.
 
 Lista rozwijana **Filtr** służy do filtrowania zdarzeń w i poza widok, wybierając lub czyszcząc określone kategorie zdarzeń.
 
@@ -73,21 +74,21 @@ Aby uzyskać więcej informacji, zobacz [Wyszukiwanie i filtrowanie zdarzeń na 
 
 Aby zbierać dane dotyczące wydajności bez debugowania, można uruchomić narzędzia profilera wydajności.
 
-1. Po otwarciu projektu w programie Visual Studio Ustaw konfigurację rozwiązania na **Zwolnij**, a następnie wybierz pozycję **lokalny debuger systemu Windows**   (lub **komputer lokalny**) jako cel wdrożenia.
+1. Po otwarciu projektu w programie Visual Studio Ustaw konfigurację rozwiązania na **Zwolnij** , a następnie wybierz pozycję **lokalny debuger systemu Windows** (lub **komputer lokalny** ) jako cel wdrożenia.
 
-1. Wybierz pozycję **Debuguj**  >  **wydajność Profiler**lub naciśnij klawisz **Alt** + **F2**.
+1. Wybierz pozycję **Debuguj**  >  **wydajność Profiler** lub naciśnij klawisz **Alt** + **F2** .
 
 1. Na stronie uruchamiania narzędzi diagnostycznych wybierz co najmniej jedno narzędzie do uruchomienia. Wyświetlane są tylko narzędzia, które mają zastosowanie do typu projektu, systemu operacyjnego i języka programowania. Wybierz pozycję **Pokaż wszystkie narzędzia** , aby wyświetlić także narzędzia, które są wyłączone dla tej sesji diagnostycznej.
 
    ![Zrzut ekranu narzędzi diagnostycznych](../profiling/media/diaghubsummarypage.png "DIAG_SelectTool")
 
-1. Aby rozpocząć sesję diagnostyczną, wybierz pozycję **Uruchom**.
+1. Aby rozpocząć sesję diagnostyczną, wybierz pozycję **Uruchom** .
 
    Gdy sesja jest uruchomiona, niektóre narzędzia pokazują wykresy danych w czasie rzeczywistym na stronie narzędzia diagnostyczne, a także kontrolki do wstrzymywania i wznawiania zbierania danych.
 
     ![Zrzut ekranu przedstawiający zbieranie danych w profilerze wydajności](../profiling/media/diaghubcollectdata.png "Zbieranie danych przez centrum")
 
-1. Aby zakończyć sesję diagnostyczną, wybierz pozycję **Zatrzymaj zbieranie**.
+1. Aby zakończyć sesję diagnostyczną, wybierz pozycję **Zatrzymaj zbieranie** .
 
    Analizowane dane pojawiają się na stronie **raportu** .
 

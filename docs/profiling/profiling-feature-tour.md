@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9de05b7e57e4ebc4e7ea76c688a7203774404a
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 849b9d7bd6aca3fa56cb0106bea844ce1fa56b73
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007183"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918243"
 ---
 # <a name="first-look-at-profiling-tools"></a>Pierwsze spojrzenie na narzędzia profilowania
 
@@ -31,7 +31,7 @@ Aby wyświetlić obsługę narzędzia profilowania dla różnych typów aplikacj
 
 ## <a name="measure-performance-while-debugging"></a>Mierzenie wydajności podczas debugowania
 
-Narzędzia profilowania, do których można uzyskać dostęp podczas sesji debugowania, są dostępne w oknie narzędzia diagnostyczne. Okno narzędzia diagnostyczne jest automatycznie wyświetlane, chyba że zostało wyłączone. Aby wyświetlić okno, kliknij pozycję **Debuguj/Windows/pokaż narzędzia diagnostyczne**. Po otwarciu okna możesz wybrać narzędzia, dla których mają być zbierane dane.
+Narzędzia profilowania, do których można uzyskać dostęp podczas sesji debugowania, są dostępne w oknie narzędzia diagnostyczne. Okno narzędzia diagnostyczne jest automatycznie wyświetlane, chyba że zostało wyłączone. Aby wyświetlić okno, kliknij pozycję **Debuguj/Windows/pokaż narzędzia diagnostyczne** . Po otwarciu okna możesz wybrać narzędzia, dla których mają być zbierane dane.
 
 ![Okno narzędzia diagnostyczne](../profiling/media/prof-tour-diagnostic-tools.png "narzędzia diagnostyczne")
 
@@ -47,13 +47,13 @@ Narzędzia dostępne w oknie narzędzia diagnostyczne lub podczas sesji debugowa
 - [Wskazówki dotyczące wydajności](../profiling/perftips.md)
 
 > [!NOTE]
-> System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania przy użyciu debugera (okno**Narzędzia diagnostyczne** ). Można używać narzędzi [po](#post_mortem) stronie programu z systemem Windows 7 lub nowszym. 
+> System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania przy użyciu debugera (okno **Narzędzia diagnostyczne** ). Można używać narzędzi [po](#post_mortem) stronie programu z systemem Windows 7 lub nowszym. 
 
 ## <a name="measure-performance-in-release-builds"></a><a name="post_mortem"></a> Mierzenie wydajności w kompilacjach wydania
 
 Narzędzia w programie Performance Profiler mają na celu zapewnienie analizy dla kompilacji **wydań** . W profilerze wydajności można zbierać informacje diagnostyczne, gdy aplikacja jest uruchomiona, a następnie przeanalizować zebrane informacje po zatrzymaniu aplikacji (analiza po zakończeniu).
 
-Otwórz Profiler wydajności, wybierając pozycję **Debuguj**  >  **Profiler wydajności** (lub **ALT + F2**).
+Otwórz Profiler wydajności, wybierając pozycję **Debuguj**  >  **Profiler wydajności** (lub **ALT + F2** ).
 
 ![Profiler wydajności](../profiling/media/prof-tour-performance-profiler.png "Profiler wydajności")
 
@@ -62,8 +62,8 @@ Aby uzyskać więcej informacji na temat użycia procesora CPU lub narzędzia u�
 Narzędzia dostępne w profilerze wydajności obejmują:
 
 - [Użycie procesora CPU](../profiling/cpu-usage.md)
-- [Użycie pamięci dla kodu platformy .NET](../profiling/dotnet-alloc-tool.md)
-- [Użycie pamięci](#analyze-memory-usage)
+- [Alokacja obiektu platformy .NET](../profiling/dotnet-alloc-tool.md)
+- [Użycie pamięci](../profiling/memory-usage-without-debugging2.md)
 - [Narzędzie asynchroniczne .NET](../profiling/analyze-async.md)
 - [Narzędzie bazy danych](../profiling/analyze-database.md)
 - [Użycie procesora GPU](../profiling/gpu-usage.md)
@@ -91,7 +91,7 @@ Funkcja PerfTip Pokaż te same zdarzenia, które również są wyświetlane w wi
 
 Narzędzie użycie procesora CPU jest dobrym miejscem, aby rozpocząć analizowanie wydajności aplikacji. Poinformuje więcej o zasobach procesora CPU zużywanych przez aplikację. Możesz użyć [Narzędzia zintegrowanego do debugera procesora CPU](../profiling/beginners-guide-to-performance-profiling.md) lub narzędzia do [użycia procesora CPU](../profiling/cpu-usage.md).
 
-W przypadku korzystania z narzędzia do zintegrowanego użycia procesora CPU w debugerze Otwórz okno narzędzia diagnostyczne (jeśli zostało zamknięte, wybierz polecenie **Debuguj/Windows/pokaż narzędzia diagnostyczne**). Podczas debugowania Otwórz widok  **podsumowania** , a następnie wybierz pozycję **zarejestruj profil procesora**.
+W przypadku korzystania z narzędzia do zintegrowanego użycia procesora CPU w debugerze Otwórz okno narzędzia diagnostyczne (jeśli zostało zamknięte, wybierz polecenie **Debuguj/Windows/pokaż narzędzia diagnostyczne** ). Podczas debugowania Otwórz widok  **podsumowania** , a następnie wybierz pozycję **zarejestruj profil procesora** .
 
 ![Włącz użycie procesora CPU w narzędzia diagnostyczne](../profiling/media/prof-tour-enable-cpu-profiling.png "narzędzia diagnostyczne Włącz użycie procesora CPU")
 
@@ -107,7 +107,12 @@ Kliknij dwukrotnie odpowiednią funkcję, a zobaczysz bardziej szczegółowy wid
 
 ## <a name="analyze-memory-usage"></a>Analizowanie użycia pamięci
 
-Okno **Narzędzia diagnostyczne** umożliwia również ocenę użycia pamięci w aplikacji za pomocą narzędzia **użycie pamięci** . Na przykład można przyjrzeć się liczbie i rozmiarze obiektów na stercie. [Narzędzie użycie pamięci zintegrowanej debugera](../profiling/memory-usage.md) lub [Narzędzie użycie](../profiling/memory-usage-without-debugging2.md) pamięci można użyć w profilerze wydajności. Inne narzędzie do analizy pamięci, [Narzędzie alokacji obiektów platformy .NET](../profiling/dotnet-alloc-tool.md), pomaga identyfikować wzorce i anomalie alokacji w kodzie .NET.
+Okno **Narzędzia diagnostyczne** umożliwia również ocenę użycia pamięci w aplikacji za pomocą narzędzia **użycie pamięci** . Na przykład można przyjrzeć się liczbie i rozmiarze obiektów na stercie. [Narzędzie użycie pamięci zintegrowanej debugera](../profiling/memory-usage.md) lub [Narzędzie użycie](../profiling/memory-usage-without-debugging2.md) pamięci można użyć w profilerze wydajności.
+
+Deweloperzy platformy .NET mogą wybrać jedno z [narzędzi do alokacji obiektów .NET](../profiling/dotnet-alloc-tool.md) lub narzędzia [użycie pamięci](../profiling/memory-usage.md) .
+
+- Narzędzie **alokacji obiektów platformy .NET** pomaga identyfikować wzorce i anomalie alokacji w kodzie .NET oraz pomaga identyfikować typowe problemy związane z odzyskiwaniem pamięci. To narzędzie jest uruchamiane tylko jako narzędzie po zakończeniu. To narzędzie można uruchomić na komputerze lokalnym lub zdalnym.
+- Narzędzie **użycie pamięci** jest pomocne w identyfikowaniu przecieków pamięci, które zwykle nie są typowe w aplikacjach .NET. Jeśli musisz użyć funkcji debugera podczas sprawdzania pamięci, na przykład przechodzenie przez kod, zalecane jest narzędzie [użycie pamięci zintegrowanej z debugerem](../profiling/beginners-guide-to-performance-profiling.md) .
 
 Aby analizować użycie pamięci za pomocą narzędzia **użycie pamięci** , należy wykonać co najmniej jedną migawkę pamięci. Często najlepszym sposobem analizowania pamięci jest wykonanie dwóch migawek: pierwszy z prawej strony przed problemem z pamięcią, a druga migawka jest bezpośrednio po wystąpieniu podejrzanej pamięci. Następnie można wyświetlić różnice między dwiema migawkami i zobaczyć dokładnie te zmiany. Na poniższej ilustracji przedstawiono tworzenie migawek przy użyciu narzędzia zintegrowanego z debugerem.
 
@@ -121,7 +126,7 @@ Po kliknięciu linku po lewej stronie w widoku **użycie pamięci** widok sterty
 
 ## <a name="analyze-resource-consumption-xaml"></a>Analizowanie zużycia zasobów (XAML)
 
-W aplikacjach XAML, takich jak aplikacje WPF dla systemu Windows i aplikacje platformy UWP, można analizować użycie zasobów za pomocą narzędzia Oś czasu aplikacji. Na przykład można analizować czas spędzony przez aplikację do przygotowywania ramek interfejsu użytkownika (układu i renderowania), obsługi żądań sieci i dysku, a także w scenariuszach, takich jak uruchamianie aplikacji, ładowanie stron i zmiana rozmiaru okna. Aby użyć narzędzia, wybierz **oś czasu aplikacji** w profilerze wydajności, a następnie wybierz **Uruchom**. W aplikacji przejdź przez scenariusz do podejrzanego problemu dotyczącego użycia zasobów, a następnie wybierz polecenie **Zatrzymaj zbieranie danych** w celu wygenerowania raportu.
+W aplikacjach XAML, takich jak aplikacje WPF dla systemu Windows i aplikacje platformy UWP, można analizować użycie zasobów za pomocą narzędzia Oś czasu aplikacji. Na przykład można analizować czas spędzony przez aplikację do przygotowywania ramek interfejsu użytkownika (układu i renderowania), obsługi żądań sieci i dysku, a także w scenariuszach, takich jak uruchamianie aplikacji, ładowanie stron i zmiana rozmiaru okna. Aby użyć narzędzia, wybierz **oś czasu aplikacji** w profilerze wydajności, a następnie wybierz **Uruchom** . W aplikacji przejdź przez scenariusz do podejrzanego problemu dotyczącego użycia zasobów, a następnie wybierz polecenie **Zatrzymaj zbieranie danych** w celu wygenerowania raportu.
 
 Niska szybkość klatek w grafie **przepływności wizualnej** może odpowiadać problemom wizualnym widocznym podczas uruchamiania aplikacji. Podobnie duże liczby w grafie **wykorzystania wątków interfejsu użytkownika** mogą również odpowiadać problemom odpowiedzi interfejsu użytkownika. W raporcie można wybrać okres z podejrzanym problemem związanym z wydajnością, a następnie sprawdzić szczegółowe działania wątku interfejsu użytkownika w widoku szczegółów osi czasu (dolnym okienku).
 
@@ -135,7 +140,7 @@ Aby uzyskać więcej informacji, zobacz [oś czasu aplikacji](../profiling/appli
 
 ## <a name="examine-application-events"></a>Sprawdzanie zdarzeń aplikacji
 
-W [Podglądzie zdarzeń](../profiling/events-viewer.md) ogólnych można przeglądać aktywność aplikacji za pomocą listy zdarzeń, takich jak obciążenie modułu, uruchamianie wątków i konfiguracje systemu, aby lepiej zdiagnozować, jak aplikacja działa bezpośrednio w programie Visual Studio profiler. To narzędzie jest dostępne w profilerze wydajności. Otwórz Profiler wydajności, wybierając pozycję **Debuguj**  >  **Profiler wydajności** (lub **ALT + F2**).
+W [Podglądzie zdarzeń](../profiling/events-viewer.md) ogólnych można przeglądać aktywność aplikacji za pomocą listy zdarzeń, takich jak obciążenie modułu, uruchamianie wątków i konfiguracje systemu, aby lepiej zdiagnozować, jak aplikacja działa bezpośrednio w programie Visual Studio profiler. To narzędzie jest dostępne w profilerze wydajności. Otwórz Profiler wydajności, wybierając pozycję **Debuguj**  >  **Profiler wydajności** (lub **ALT + F2** ).
 
 Narzędzie pokazuje każde zdarzenie w widoku listy. Kolumny zawierają informacje dotyczące każdego zdarzenia, takie jak nazwa zdarzenia, sygnatura czasowa i identyfikator procesu.
 
@@ -143,7 +148,7 @@ Narzędzie pokazuje każde zdarzenie w widoku listy. Kolumny zawierają informac
 
 ## <a name="analyze-asynchronous-code-net"></a>Analizowanie kodu asynchronicznego (.NET)
 
-[Narzędzie asynchroniczne platformy .NET](../profiling/analyze-async.md) umożliwia analizowanie wydajności kodu asynchronicznego w aplikacji. To narzędzie jest dostępne w profilerze wydajności. Otwórz Profiler wydajności, wybierając pozycję **Debuguj**  >  **Profiler wydajności** (lub **ALT + F2**).
+[Narzędzie asynchroniczne platformy .NET](../profiling/analyze-async.md) umożliwia analizowanie wydajności kodu asynchronicznego w aplikacji. To narzędzie jest dostępne w profilerze wydajności. Otwórz Profiler wydajności, wybierając pozycję **Debuguj**  >  **Profiler wydajności** (lub **ALT + F2** ).
 
 Narzędzie wyświetli każdą operację asynchroniczną w widoku listy. Można wyświetlić informacje takie jak godzina rozpoczęcia, godzina zakończenia i łączny czas operacji asynchronicznej.
 
@@ -151,7 +156,7 @@ Narzędzie wyświetli każdą operację asynchroniczną w widoku listy. Można w
 
 ## <a name="analyze-database-performance-net-core"></a>Analizowanie wydajności bazy danych (.NET Core)
 
-W przypadku aplikacji .NET Core, które używają ADO.NET lub Entity Framework Core, [Narzędzie Database Tool](../profiling/analyze-database.md) pozwala rejestrować zapytania bazy danych, które aplikacja wykonuje podczas sesji diagnostycznej. Następnie można analizować informacje o poszczególnych zapytaniach w celu znalezienia miejsc, w których można ulepszyć wydajność aplikacji. To narzędzie jest dostępne w profilerze wydajności. Otwórz Profiler wydajności, wybierając pozycję **Debuguj**  >  **Profiler wydajności** (lub **ALT + F2**).
+W przypadku aplikacji .NET Core, które używają ADO.NET lub Entity Framework Core, [Narzędzie Database Tool](../profiling/analyze-database.md) pozwala rejestrować zapytania bazy danych, które aplikacja wykonuje podczas sesji diagnostycznej. Następnie można analizować informacje o poszczególnych zapytaniach w celu znalezienia miejsc, w których można ulepszyć wydajność aplikacji. To narzędzie jest dostępne w profilerze wydajności. Otwórz Profiler wydajności, wybierając pozycję **Debuguj**  >  **Profiler wydajności** (lub **ALT + F2** ).
 
 Narzędzie wyświetla każde zapytanie w widoku listy. Można wyświetlić informacje takie jak godzina rozpoczęcia zapytania i czas trwania.
 
@@ -167,9 +172,9 @@ W aplikacjach platformy UWP można włączyć **analizę interfejsu użytkownika
 
 ## <a name="analyze-gpu-usage-direct3d"></a>Analizowanie użycia procesora GPU (Direct3D)
 
-W aplikacjach Direct3D (składniki Direct3D muszą znajdować się w języku C++) można sprawdzić aktywność procesora GPU i analizować problemy z wydajnością. Aby uzyskać więcej informacji, zobacz [użycie procesora GPU](./gpu-usage.md). Aby użyć narzędzia, wybierz pozycję **użycie procesora GPU** w profilerze wydajności, a następnie wybierz polecenie **Uruchom**. W aplikacji przejdź do scenariusza, który Cię interesuje, a następnie wybierz pozycję **Zatrzymaj zbieranie** , aby wygenerować raport.
+W aplikacjach Direct3D (składniki Direct3D muszą znajdować się w języku C++) można sprawdzić aktywność procesora GPU i analizować problemy z wydajnością. Aby uzyskać więcej informacji, zobacz [użycie procesora GPU](./gpu-usage.md). Aby użyć narzędzia, wybierz pozycję **użycie procesora GPU** w profilerze wydajności, a następnie wybierz polecenie **Uruchom** . W aplikacji przejdź do scenariusza, który Cię interesuje, a następnie wybierz pozycję **Zatrzymaj zbieranie** , aby wygenerować raport.
 
-Po wybraniu przedziału czasowego na wykresach i wybraniu opcji **Wyświetl szczegóły**w dolnym okienku pojawi się widok szczegółowy. W widoku szczegółowym można sprawdzić, jaka część działania odbywa się na każdym procesorze CPU i procesorze GPU. Wybierz pozycję zdarzenia w dolnym okienku, aby wyświetlić okna podręczne na osi czasu. Na przykład wybierz **istniejące** zdarzenie, aby wyświetlić **wyświetlane** okna podręczne wywołań. (Jasne szare linie pionie mogą służyć jako odwołanie, aby zrozumieć, czy niektóre **obecne** wywołania zostały pominięte pionie. Aby aplikacja mogła stale osiągnąć 60 FPS, musi istnieć jedno **istniejące** wywołanie między wszystkimi dwoma Vsyncs.
+Po wybraniu przedziału czasowego na wykresach i wybraniu opcji **Wyświetl szczegóły** w dolnym okienku pojawi się widok szczegółowy. W widoku szczegółowym można sprawdzić, jaka część działania odbywa się na każdym procesorze CPU i procesorze GPU. Wybierz pozycję zdarzenia w dolnym okienku, aby wyświetlić okna podręczne na osi czasu. Na przykład wybierz **istniejące** zdarzenie, aby wyświetlić **wyświetlane** okna podręczne wywołań. (Jasne szare linie pionie mogą służyć jako odwołanie, aby zrozumieć, czy niektóre **obecne** wywołania zostały pominięte pionie. Aby aplikacja mogła stale osiągnąć 60 FPS, musi istnieć jedno **istniejące** wywołanie między wszystkimi dwoma VSyncs.
 
 ![Narzędzie profilowania użycia procesora GPU](../profiling/media/prof-tour-gpu-usage.png "Użycie procesora GPU")
 
@@ -192,7 +197,7 @@ Aby zdiagnozować czas odpowiedzi interfejsu użytkownika, powolne obciążenie 
 ::: moniker range="vs-2017"
 ## <a name="analyze-network-usage-uwp"></a>Analizowanie użycia sieci (platforma UWP)
 
-W aplikacjach platformy UWP można analizować operacje sieciowe wykonywane przy użyciu `Windows.Web.Http` interfejsu API. To narzędzie może pomóc w rozwiązywaniu problemów, takich jak problemy z dostępem i uwierzytelnianiem, niepoprawna pamięć podręczna oraz niska wydajność wyświetlania i pobierania. Aby użyć narzędzia, wybierz **Sieć** w profilerze wydajności, a następnie wybierz polecenie **Uruchom**. W aplikacji przejdź do scenariusza, który używa programu `Windows.Web.Http` , a następnie wybierz polecenie **Zatrzymaj zbieranie** w celu wygenerowania raportu.
+W aplikacjach platformy UWP można analizować operacje sieciowe wykonywane przy użyciu `Windows.Web.Http` interfejsu API. To narzędzie może pomóc w rozwiązywaniu problemów, takich jak problemy z dostępem i uwierzytelnianiem, niepoprawna pamięć podręczna oraz niska wydajność wyświetlania i pobierania. Aby użyć narzędzia, wybierz **Sieć** w profilerze wydajności, a następnie wybierz polecenie **Uruchom** . W aplikacji przejdź do scenariusza, który używa programu `Windows.Web.Http` , a następnie wybierz polecenie **Zatrzymaj zbieranie** w celu wygenerowania raportu.
 
 ![Narzędzie profilowania użycia sieci](../profiling/media/prof-tour-network-usage.png "Użycie sieci diag")
 
@@ -210,7 +215,7 @@ Jeśli potrzebujesz funkcji, takich jak Instrumentacja, która nie jest obecnie 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-W programie Visual Studio 2019 starsze Eksplorator wydajności i powiązane narzędzia profilowania, takie jak Kreator wydajności, zostały złożone do profilera wydajności, który można otworzyć za pomocą **Debug**  >  **profilera wydajności**debugowania. W profilerze wydajności dostępne narzędzia diagnostyczne zależą od wybranego elementu docelowego i bieżącego otwartego projektu startowego. Narzędzie użycie procesora CPU zapewnia funkcję próbkowania obsługiwaną wcześniej w Kreatorze wydajności. Narzędzie Instrumentacja udostępnia funkcję profilowania PROFILOWANEGO (dla precyzyjnej liczby wywołań i czasów trwania), która była w Kreatorze wydajności. Dodatkowe narzędzia pamięci są również wyświetlane w profilerze wydajności.
+W programie Visual Studio 2019 starsze Eksplorator wydajności i powiązane narzędzia profilowania, takie jak Kreator wydajności, zostały złożone do profilera wydajności, który można otworzyć za pomocą **Debug**  >  **profilera wydajności** debugowania. W profilerze wydajności dostępne narzędzia diagnostyczne zależą od wybranego elementu docelowego i bieżącego otwartego projektu startowego. Narzędzie użycie procesora CPU zapewnia funkcję próbkowania obsługiwaną wcześniej w Kreatorze wydajności. Narzędzie Instrumentacja udostępnia funkcję profilowania PROFILOWANEGO (dla precyzyjnej liczby wywołań i czasów trwania), która była w Kreatorze wydajności. Dodatkowe narzędzia pamięci są również wyświetlane w profilerze wydajności.
 ::: moniker-end
 
 ![Narzędzie Eksplorator wydajności](../profiling/media/prof-tour-performance-explorer.png "Eksplorator wydajności")
@@ -242,7 +247,7 @@ Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanyc
 |[Użycie pamięci](../profiling/memory-usage.md)|tak|tak|tak|
 |[Użycie procesora GPU](./gpu-usage.md)|tak|tak|nie|
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|tak (XAML)|tak|nie|
-|[Wskazówki dotyczące wydajności](../profiling/perftips.md)|tak|tak dla języka XAML, nie dla HTML|tak|
+|[Wskazówki dotyczące wydajności](../profiling/perftips.md)|yes|tak dla języka XAML, nie dla HTML|yes|
 |[Eksplorator wydajności](../profiling/performance-explorer.md)|tak|nie|tak|
 |[IntelliTrace](../debugger/intellitrace.md)|Tylko platforma .NET z Visual Studio Enterprise|Tylko platforma .NET z Visual Studio Enterprise|Tylko platforma .NET z Visual Studio Enterprise|
 |[Użycie sieci](../profiling/network-usage.md)|nie|tak|nie|
@@ -251,5 +256,5 @@ Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanyc
 ::: moniker-end
 
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie w Visual Studio](../debugger/debugger-feature-tour.md)

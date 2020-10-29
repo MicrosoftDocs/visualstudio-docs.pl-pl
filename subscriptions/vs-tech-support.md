@@ -1,18 +1,18 @@
 ---
-title: Korzyść pomocy technicznej
+title: Korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 09/02/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: Dowiedz się, jak aktywować korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: 6f22273d578c6e1bc30d588fff30c945846a5d8f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 30b47646c26e5bc9fbf9045e2acf59a670aa5e9d
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004549"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918126"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej i korzystaj z niej w subskrypcjach programu Visual Studio
 Korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio służy do rozwiązywania problemów z uszkodzeniem w **środowiskach nieprodukcyjnych** dla produktów, które są nadal w fazie wsparcia podstawowego dla [cyklu](https://support.microsoft.com/lifecycle/search)pomocy technicznej. Visual Studio Enterprise standardowa i roczna subskrypcja chmury otrzymuje cztery incydenty, podczas Visual Studio Professional standardowa i roczna subskrypcja chmury odbiera dwa zdarzenia, przez maksymalnie 1 rok od aktywacji korzyści. Aktywacja korzyści musi nastąpić, gdy subskrypcja jest aktualna.
@@ -30,7 +30,7 @@ Narzędzia deweloperskie, takie jak środowisko IDE programu Visual Studio i Azu
 
 Produkty niebędące deweloperami (takie jak SQL, Windows, SharePoint) pobrane z subskrypcji programu Visual Studio kwalifikują się tylko do wsparcia podstawowego. Te produkty są licencjonowane wyłącznie w środowiskach deweloperskich, które umożliwiają projektowanie, opracowywanie, testowanie i prezentowanie aplikacji. Te produkty nie są licencjonowane dla środowisk produkcyjnych.
 
-Opisy poziomów produktów: rozwiń węzeł **niedostępne plany pomocy technicznej**. Jeśli nie można **użyć planu pomocy technicznej w celu uzyskania pomocy technicznej dotyczącej określonego produktu (kod: 8)**, nie można użyć umowy serwisowej dla wybranej wersji produktu.
+Opisy poziomów produktów: rozwiń węzeł **niedostępne plany pomocy technicznej** . Jeśli nie można **użyć planu pomocy technicznej w celu uzyskania pomocy technicznej dotyczącej określonego produktu (kod: 8)** , nie można użyć umowy serwisowej dla wybranej wersji produktu.
 
 > [!IMPORTANT]
 > Podane zdarzenia pomocy technicznej są przeznaczone do obsługi poprawek przerwania.  Nie mogą być używane w celu uzyskania pomocy w przypadku problemów z kodowaniem/programowaniem obejmujących następujące produkty:
@@ -42,7 +42,7 @@ Opisy poziomów produktów: rozwiń węzeł **niedostępne plany pomocy technicz
 > - Microsoft Outlook
 
 ## <a name="how-to-activate-the-benefit"></a>Jak aktywować korzyść
-1. Przejdź do <https://my.visualstudio.com/Benefits> , przewiń w dół do sekcji Pomoc techniczna, a następnie na kafelku pomoc techniczna kliknij pozycję **rozmowa, aby aktywować**.
+1. Przejdź do <https://my.visualstudio.com/Benefits> , przewiń w dół do sekcji Pomoc techniczna, a następnie na kafelku pomoc techniczna kliknij pozycję **rozmowa, aby aktywować** .
     > [!div class="mx-imgBorder"]
     > ![Kafelek wsparcia technicznego](_img/vs-tech-support/vs-tech-support-tile.png)
 2. Spowoduje to zainicjowanie sesji rozmowy z przedstawicielem, który może utworzyć **identyfikator kontraktu** i **identyfikator dostępu** , i udostępnić je za pośrednictwem poczty e-mail, dzięki czemu będziesz mieć do nich dostęp.
@@ -77,27 +77,27 @@ Podczas przesyłania zdarzenia w trybie online najpierw zostanie wyświetlony mo
 #### <a name="submitting-an-incident-online"></a>Przesyłanie zdarzenia w trybie online
 Podczas przesyłania zdarzenia w trybie online najpierw zostanie wyświetlony monit o zalogowanie się. Za pomocą listy rozwijanej wybierz produkt, z którym chcesz uzyskać pomoc. Na przykład aby przesłać zdarzenie dla Visual Studio Enterprise 2019 Wybierz rodzinę **Narzędzia deweloperskie** , a następnie wybierz pozycję **Visual Studio 2019** jako produkt, a następnie wybierz **Visual Studio Enterprise 2019** jako wersję.
 
-1. Po wybraniu produktu, którego potrzebujesz obsłużyć, kliknij przycisk **dalej**.
+1. Po wybraniu produktu, którego potrzebujesz obsłużyć, kliknij przycisk **dalej** .
 
    > [!div class="mx-imgBorder"]
    > ![Żądanie pomocy technicznej dotyczącej wsparcia technicznego — krok 1 — produkt](_img/vs-tech-support/vs-tech-support-step1.png)
 
-2. Opisz swój problem, a następnie kliknij przycisk **dalej**.
+2. Opisz swój problem, a następnie kliknij przycisk **dalej** .
 
    > [!div class="mx-imgBorder"]
    > ![Żądanie pomocy technicznej dotyczącej wsparcia technicznego — krok 2 — problem](_img/vs-tech-support/vs-tech-support-step2.png)
 
-3. Na stronie "Plan pomocy technicznej" przewiń w dół, aby **dodać lub kupić plan pomocy technicznej**, rozwiń go przy użyciu strzałki po prawej stronie i kliknij pozycję **Dodaj kontrakt**.
+3. Na stronie "Plan pomocy technicznej" przewiń w dół, aby **dodać lub kupić plan pomocy technicznej** , rozwiń go przy użyciu strzałki po prawej stronie i kliknij pozycję **Dodaj kontrakt** .
 
    > [!div class="mx-imgBorder"]
    > ![Zgłoszenie do pomocy technicznej dotyczącej wsparcia technicznego — Dodawanie kontraktu](_img/vs-tech-support/vs-tech-support-add-contract.png)
 
-4. Wprowadź **identyfikator dostępu** i **identyfikator kontraktu**.  Kliknij pozycję **Dodaj**.
+4. Wprowadź **identyfikator dostępu** i **identyfikator kontraktu** .  Kliknij pozycję **Dodaj** .
 
    > [!div class="mx-imgBorder"]
    > ![Zgłoszenie do pomocy technicznej dotyczącej wsparcia technicznego — Dodawanie identyfikatora kontraktu](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
 
-5. Po dodaniu kontraktu zostanie on wyświetlony w obszarze **Wybierz plan pomocy technicznej** w górnej części. Twój plan będzie zawierać termin "MSDN" w tytule. Wybierz go, przewiń w dół i kliknij przycisk **dalej**.
+5. Po dodaniu kontraktu zostanie on wyświetlony w obszarze **Wybierz plan pomocy technicznej** w górnej części. Twój plan będzie zawierać termin "MSDN" w tytule. Wybierz go, przewiń w dół i kliknij przycisk **dalej** .
 
    > [!div class="mx-imgBorder"]
    > ![Przesyłanie incydentu dotyczącego pomocy technicznej — Wybieranie planu](_img/vs-tech-support/vs-tech-support-choose-plan.png)
@@ -136,7 +136,7 @@ Aby skorzystać z pomocy technicznej subskrypcji programu Visual Studio w przypa
 
 Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
@@ -144,6 +144,6 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="next-steps"></a>Następne kroki
 Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
-- [Visual Studio](vs-ide-benefit.md)
+- [Program Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)
