@@ -1,8 +1,0 @@
-- name: 'Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio'
-  items:
-    - name: 'Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio'
-      href: porting-migrating-and-upgrading-visual-studio-projects.md
-    - name: Uaktualnianie projektów programu Visual C++ do programu Visual Studio 2015
-      href: how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md
-    - name: Rozwiązywanie problemów z nieudanymi uaktualnieniami projektów programu Visual Studio
-      href: how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md
