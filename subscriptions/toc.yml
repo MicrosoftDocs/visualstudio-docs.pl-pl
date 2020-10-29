@@ -48,6 +48,8 @@
       href: contact-my-admin.md
     - name: Korzyści
       items:
+        - name: Informacje o korzyściach
+          href: about-benefits.md
         - name: narzędzia
           items:
             - name: Indywidualne środki na korzystanie z usługi Azure DevTest
