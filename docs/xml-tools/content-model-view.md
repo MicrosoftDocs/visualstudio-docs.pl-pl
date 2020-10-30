@@ -1,5 +1,7 @@
 ---
 title: Widok modelu zawartości projektanta schematu XML
+description: Dowiedz się więcej o widoku modelu zawartości w projektancie schematów XAML, który zapewnia graficzną reprezentację lokalnych i globalnych węzłów schematu oraz ich składników.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 830dbdda0027551a25747235e6ad9dffbbc11b23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a3aee0129516b6c7d377fcfff454f949e199eb5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592916"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049210"
 ---
 # <a name="content-model-view"></a>Widok modelu zawartości
 
@@ -35,7 +37,7 @@ Po wybraniu węzła w panelu **obszaru roboczego** jest on dodawany do powierzch
 
 Model zawartości węzła jest reprezentowany przez rozszerzalne drzewo graficzne z elementami i atrybutami wyświetlanymi jako węzły drzewa. Domyślnie tylko jeden poziom jest rozwinięty. Inne informacje, takie jak kompozytory, nazwy typów, grupy i inne kontenery, są umieszczane na pionowym pasku (po rozwinięciu) wraz z elementami i atrybutami, które są otaczające. Dwukrotne kliknięcie paska pionowego zmieni się w poziomy i drzewo zwinięte. Dwukrotne kliknięcie poziomego paska zmieni się w pionie, a drzewo rozwinięte. Wybranie pionowego paska powoduje zaznaczenie wszystkich węzłów w kontenerze. Elementy rozszerzające pojawiają się po prawej stronie węzła, jeśli element może być rozwinięty lub zwinięty.
 
-Jeśli powierzchnia projektowa jest pusta, Edytor XML, **Eksplorator schematu XML**i znak wodny są wyświetlane. *Znak wodny* jest listą linków do wszystkich widoków projektanta XSD. Jeśli zestaw schematu zawiera błędy, na końcu listy zostanie wyświetlony następujący tekst: "Użyj Lista błędów, aby wyświetlić i naprawić błędy w zestawie".
+Jeśli powierzchnia projektowa jest pusta, Edytor XML, **Eksplorator schematu XML** i znak wodny są wyświetlane. *Znak wodny* jest listą linków do wszystkich widoków projektanta XSD. Jeśli zestaw schematu zawiera błędy, na końcu listy zostanie wyświetlony następujący tekst: "Użyj Lista błędów, aby wyświetlić i naprawić błędy w zestawie".
 
 ## <a name="breadcrumb-bar"></a>Pasek nawigacyjny
 
@@ -81,9 +83,9 @@ Poniższe przyciski paska narzędzi projektanta XSD są włączone, gdy aktywny 
 
 |Opcja|Opis|
 |-|-----------------|
-|**Pokaż widok startowy**|Przełącza do [widoku Start](../xml-tools/start-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **1**.|
-|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **2**.|
-|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **3**.|
+|**Pokaż widok startowy**|Przełącza do [widoku Start](../xml-tools/start-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **1** .|
+|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **2** .|
+|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **3** .|
 |**Wyczyść obszar roboczy**|Czyści obszar roboczy i powierzchnię projektu.|
 |**Usuń z obszaru roboczego**|Usuwa wybrane węzły z obszaru roboczego i powierzchni projektowej.|
 |**Usuń wszystko oprócz zaznaczenia z obszaru roboczego**|Usuwa węzły, które nie są wybrane z obszaru roboczego i powierzchni projektowej.|

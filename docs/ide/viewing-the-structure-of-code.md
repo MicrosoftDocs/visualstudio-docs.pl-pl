@@ -1,5 +1,6 @@
 ---
-title: Widok klasy, hierarchia wywołań, Przeglądarka obiektów, okno definicji kodu
+title: Używanie okien narzędzi do wyświetlania struktury kodu
+ms.custom: SEO-VS-2020
 ms.date: 09/19/2019
 ms.topic: reference
 f1_keywords:
@@ -25,16 +26,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 210606af0f200d49b639d323456f85e0a7becd06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76e65dd22ccf1b47559238efcd2be18cf6b81fcb
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543679"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049288"
 ---
-# <a name="view-the-structure-of-code-using-different-tool-windows"></a>Wyświetlanie struktury kodu przy użyciu różnych okien narzędzi
+# <a name="view-the-structure-of-code-by-using-different-tool-windows"></a>Wyświetlanie struktury kodu przy użyciu różnych okien narzędzi
 
-Można badanie klas i ich członków w programie Visual Studio przy użyciu różnych okien narzędzi, w tym **Widok klasy**, **hierarchii wywołań**, **Przeglądarka obiektów**i **definicji kodu** (tylko C++). Te okna narzędzi mogą przeglądać kod w projektach programu Visual Studio, składnikach .NET, składnikach COM, bibliotekach dołączanych dynamicznie (DLL) i bibliotekach typów (TLB).
+Można badanie klas i ich członków w programie Visual Studio przy użyciu różnych okien narzędzi, w tym **Widok klasy** , **hierarchii wywołań** , **Przeglądarka obiektów** i **definicji kodu** (tylko C++). Te okna narzędzi mogą przeglądać kod w projektach programu Visual Studio, składnikach .NET, składnikach COM, bibliotekach dołączanych dynamicznie (DLL) i bibliotekach typów (TLB).
 
 Możesz również użyć **Eksplorator rozwiązań** do przeglądania typów i członków w projektach, wyszukiwania symboli, wyświetlania hierarchii wywołań metod, znajdowania odwołań do symboli i innych, bez konieczności przełączania się między wieloma oknami narzędzi.
 
@@ -44,11 +45,11 @@ Jeśli masz wersję Visual Studio Enterprise, możesz użyć *map kodu* do wizua
 
 **Widok klasy** jest pokazywany jako część **Eksplorator rozwiązań** i jako oddzielne okno. **Widok klasy** wyświetla elementy aplikacji. W górnym okienku są wyświetlane przestrzenie nazw, typy, interfejsy, wyliczenia i klasy, a w dolnym okienku są wyświetlane elementy członkowskie należące do typu wybranego w górnym okienku. Za pomocą tego okna można przenieść do definicji elementów członkowskich w kodzie źródłowym (lub w **Przeglądarka obiektów** , jeśli element jest zdefiniowany poza rozwiązaniem).
 
-Nie trzeba kompilować projektu, aby wyświetlić jego elementy **Widok klasy**. Okno jest odświeżane w miarę modyfikowania kodu w projekcie.
+Nie trzeba kompilować projektu, aby wyświetlić jego elementy **Widok klasy** . Okno jest odświeżane w miarę modyfikowania kodu w projekcie.
 
 Możesz dodać kod do projektu, wybierając węzeł projektu i wybierając przycisk **Dodaj** , aby otworzyć okno dialogowe **Dodaj nowy element** . Kod zostanie dodany w osobnym pliku.
 
-Jeśli projekt jest zaewidencjonowany do kontroli kodu źródłowego, każdy element **Widok klasy** wyświetli ikonę wskazującą stan kodu źródłowego pliku. Typowe polecenia kontroli kodu źródłowego, takie jak **wyewidencjonowywanie**, **ewidencjonowanie**i **pobieranie najnowszej wersji** są również dostępne w menu skrótów dla elementu.
+Jeśli projekt jest zaewidencjonowany do kontroli kodu źródłowego, każdy element **Widok klasy** wyświetli ikonę wskazującą stan kodu źródłowego pliku. Typowe polecenia kontroli kodu źródłowego, takie jak **wyewidencjonowywanie** , **ewidencjonowanie** i **pobieranie najnowszej wersji** są również dostępne w menu skrótów dla elementu.
 
 ### <a name="class-view-toolbar"></a>Widok klasy pasek narzędzi
 
@@ -56,10 +57,10 @@ Pasek narzędzi **Widok klasy** zawiera następujące polecenia:
 
 |Nazwa|Opis|
 |-|-|
-|**Nowy folder**|Tworzy folder wirtualny lub podfolder, w którym można organizować często używane elementy. Są one zapisywane w aktywnym pliku rozwiązania (*. suo*). Po zmianie nazwy lub usunięciu elementu w kodzie może on pojawić się w folderze wirtualnym jako węzeł błędu. Aby rozwiązać ten problem, Usuń węzeł błędu. Jeśli zmieniono nazwę elementu, można go przenieść z hierarchii projektu do folderu ponownie.|
+|**Nowy folder**|Tworzy folder wirtualny lub podfolder, w którym można organizować często używane elementy. Są one zapisywane w aktywnym pliku rozwiązania ( *. suo* ). Po zmianie nazwy lub usunięciu elementu w kodzie może on pojawić się w folderze wirtualnym jako węzeł błędu. Aby rozwiązać ten problem, Usuń węzeł błędu. Jeśli zmieniono nazwę elementu, można go przenieść z hierarchii projektu do folderu ponownie.|
 |**Wstecz**|Przechodzi do poprzednio wybranego elementu.|
 |**do przodu**|Przechodzi do następnego wybranego elementu.|
-|**Widok diagramu klas** (tylko projekty kodu zarządzanego)|Staną się dostępne po wybraniu przestrzeni nazw lub typu w **Widok klasy**. Po wybraniu przestrzeni nazw Diagram klas pokazuje wszystkie typy w nim. Po wybraniu typu Diagram klas pokazuje tylko ten typ.|
+|**Widok diagramu klas** (tylko projekty kodu zarządzanego)|Staną się dostępne po wybraniu przestrzeni nazw lub typu w **Widok klasy** . Po wybraniu przestrzeni nazw Diagram klas pokazuje wszystkie typy w nim. Po wybraniu typu Diagram klas pokazuje tylko ten typ.|
 
 ### <a name="class-view-settings"></a>Ustawienia Widok klasy
 
@@ -82,10 +83,10 @@ Menu skrótów (lub kliknij prawym przyciskiem myszy) w **Widok klasy** mogą za
 
 |Nazwa|Opis|
 |-|-|
-|**Przejdź do definicji**|Znajduje definicję elementu w kodzie źródłowym lub w **Przeglądarka obiektów**, jeśli element nie jest zdefiniowany w otwartym projekcie.|
-|**Przeglądaj definicję**|Wyświetla wybrany element w **Przeglądarka obiektów**.|
+|**Przejdź do definicji**|Znajduje definicję elementu w kodzie źródłowym lub w **Przeglądarka obiektów** , jeśli element nie jest zdefiniowany w otwartym projekcie.|
+|**Przeglądaj definicję**|Wyświetla wybrany element w **Przeglądarka obiektów** .|
 |**Znajdź wszystkie odwołania**|Znajduje aktualnie zaznaczony element obiektu i wyświetla wyniki w oknie **Wyszukiwanie wyników** .|
-|**Filtruj do typu** (tylko kod zarządzany)|Wyświetla tylko wybrany typ lub przestrzeń nazw. Filtr można usunąć, wybierając przycisk **Wyczyść wyszukiwanie** (**X**) obok pola **Znajdź** .|
+|**Filtruj do typu** (tylko kod zarządzany)|Wyświetla tylko wybrany typ lub przestrzeń nazw. Filtr można usunąć, wybierając przycisk **Wyczyść wyszukiwanie** ( **X** ) obok pola **Znajdź** .|
 |**Kopiuj**|Kopiuje w pełni kwalifikowaną nazwę elementu.|
 |**Sortuj alfabetycznie**|Wyświetla listę typów i składowych alfabetycznie według nazwy.|
 |**Sortuj według typu elementu członkowskiego**|Wyświetla listę typów i składowych w kolejności według typu (takie jak klasy poprzedzają interfejsy, interfejsy poprzedzają delegatów, a metody poprzedzają właściwości).|
@@ -129,19 +130,19 @@ Można filtrować składniki, które mają być wyświetlane, za pomocą listy r
 
 ::: moniker range="vs-2017"
 
-Ustawienia niestandardowe są zapisywane w katalogu aplikacji użytkownika programu Visual Studio, *%AppData%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+Ustawienia niestandardowe są zapisywane w katalogu aplikacji użytkownika programu Visual Studio, *%AppData%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat* .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Ustawienia niestandardowe są zapisywane w katalogu aplikacji użytkownika programu Visual Studio, *%AppData%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat*.
+Ustawienia niestandardowe są zapisywane w katalogu aplikacji użytkownika programu Visual Studio, *%AppData%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat* .
 
 ::: moniker-end
 
 W lewym okienku **Przeglądarka obiektów** są wyświetlane zestawy. Można rozwinąć zestawy, aby wyświetlić zawarte w nich przestrzenie nazw, a następnie rozwinąć przestrzenie nazw, aby wyświetlić zawarte w nich typy. Po wybraniu typu, jego elementy członkowskie (takie jak właściwości i metody) są wyświetlane w okienku po prawej stronie. W dolnym okienku po prawej stronie są wyświetlane szczegółowe informacje o wybranym elemencie.
 
-Konkretny element można wyszukać, korzystając z pola **wyszukiwania** w górnej części okna. W wyszukiwaniu nie jest rozróżniana wielkość liter. Wyniki wyszukiwania są wyświetlane w okienku po lewej stronie. Aby wyczyścić wyszukiwanie, wybierz przycisk **Wyczyść wyszukiwanie** (**X**) obok pola **wyszukiwania** .
+Konkretny element można wyszukać, korzystając z pola **wyszukiwania** w górnej części okna. W wyszukiwaniu nie jest rozróżniana wielkość liter. Wyniki wyszukiwania są wyświetlane w okienku po lewej stronie. Aby wyczyścić wyszukiwanie, wybierz przycisk **Wyczyść wyszukiwanie** ( **X** ) obok pola **wyszukiwania** .
 
 **Przeglądarka obiektów** śledzi dokonane wybory i można przechodzić między wybranymi elementami przy użyciu przycisków **do przodu** i do **tyłu** na pasku narzędzi.
 
@@ -213,7 +214,7 @@ Menu skrótów (lub kliknij prawym przyciskiem myszy) w oknie **definicji kodu**
 |**Punkt**|Wstawia punkt przerwania (lub punkt śledzenia).|
 |**Uruchom do kursora**|Uruchamia program w trybie debugowania do lokalizacji kursora.|
 |**Fragment kodu**||
-|**Wytnij**, **Kopiuj**, **Wklej**||
+|**Wytnij** , **Kopiuj** , **Wklej**||
 |**Adnotacja**||
 |**Tworzenie konspektu**|Standardowe polecenia tworzenia konspektu.|
 |**Skanuj ponownie**||

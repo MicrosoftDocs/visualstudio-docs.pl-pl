@@ -1,6 +1,8 @@
 ---
 title: Skróty klawiaturowe
 titleSuffix: Blend for Visual Studio
+description: Dowiedz się więcej o skrótach klawiaturowych w Blend for Visual Studio, które służą do pracy z projektami, dokumentami, obiektami, widokami i obszarami roboczymi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4d0d537dc93479cc791b2e1c3246e9bab74139f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3641edafeed9cf7b5e29f8a967f9dbf26cdd3e8c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332231"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049249"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Skróty klawiaturowe w Blend for Visual Studio
 
@@ -40,13 +42,13 @@ ms.locfileid: "85332231"
 |Zapisz wszystkie dokumenty|**Ctrl** + **SHIFT** + **S**|
 |Zamknij aktywny dokument|**Ctrl** + **W**|
 |Zamknij wszystkie otwarte dokumenty|**Ctrl** + **SHIFT** + **W**|
-|Cofnij ostatnią akcję|**Ctrl**+ Z|
-|Wykonaj ponownie ostatnią cofniętą akcję|**Ctrl**+ Y lub **Ctrl** + **SHIFT** + **Z**|
+|Cofnij ostatnią akcję|**Ctrl** + Z|
+|Wykonaj ponownie ostatnią cofniętą akcję|**Ctrl** + Y lub **Ctrl** + **SHIFT** + **Z**|
 |Tworzenie adnotacji w czasie projektowania|**Ctrl** + **SHIFT** + **T**|
 |Wytnij|**Ctrl** + **X**|
 |Kopiuj|**Ctrl** + **C**|
 |Wklej|**Ctrl** + **V**|
-|Usuń|**Usuń**|
+|Usuń|**Usuwanie**|
 |Znajdź tekst (tylko widok XAML lub Edytor JavaScript)|**Ctrl** + **F**|
 |Znajdź następne wystąpienie tekstu (tylko widok XAML lub Edytor JavaScript)|**F3** lub **Ctrl** + **H**|
 
@@ -57,7 +59,7 @@ ms.locfileid: "85332231"
 |Utwórz nowy element|**Ctrl** + **N**|
 |Duplikowanie obiektu|Przytrzymaj klawisz **Alt** i przeciągnij obiekt|
 |Zmień element nadrzędny obiektu|Przeciągnij obiekt na panel układu i naciśnij klawisz **Alt** .|
-|Edytowanie tekstu w kontrolce|**F2** (**ESC** , aby wyjść)|
+|Edytowanie tekstu w kontrolce|**F2** ( **ESC** , aby wyjść)|
 |Edytuj kontrolkę (WPF)|**Ctrl** + **E**|
 |Zmień szerokość wybranych obiektów|**Ctrl** + **SHIFT** + **1**|
 |Ustaw zaznaczone obiekty o tej samej wysokości|**Ctrl** + **SHIFT** + **2**|
@@ -95,7 +97,7 @@ ms.locfileid: "85332231"
 
 |Wymagana czynność|Zrób to|
 |----------------|-------------|
-|Przełączanie między widokami **projektu**, **kodu**i **dzielenia**|**F11**|
+|Przełączanie między widokami **projektu** , **kodu** i **dzielenia**|**F11**|
 |Powiększ w obszarze kompozycji|**Ctrl** + **Znak równości** ( **=** )|
 |Pomniejsz w obszarze kompozycji|**Ctrl** + Znak **minus** ( **-** )|
 |Powiększ lub Pomniejsz w obszarze kompozycji|Obróć kółko myszy|
@@ -105,7 +107,7 @@ ms.locfileid: "85332231"
 |Wyświetl obszar kompozycji w rzeczywistym rozmiarze|**Ctrl** + **1**|
 |Pokaż lub Ukryj uchwyty|**F9**|
 |Pokaż lub Ukryj granice obiektów|**Ctrl** + **SHIFT** + **H**|
-|Przełączanie między widokami **projektu**, **XAML**i **Split**|**F11**|
+|Przełączanie między widokami **projektu** , **XAML** i **Split**|**F11**|
 
 ## <a name="workspace-shortcuts"></a>Skróty obszaru roboczego
 

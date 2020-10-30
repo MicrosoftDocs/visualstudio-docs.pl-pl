@@ -1,5 +1,7 @@
 ---
 title: Błędy i ostrzeżenia XAML
+description: Informacje o błędach i ostrzeżeniach języka XAML w programie Visual Studio, w tym o sposobie kategoryzowania błędów, sposobach uzyskiwania informacji o błędach i sposobach ich rozwiązywania.
+ms.custom: SEO-VS-2020
 ms.date: 03/06/2018
 ms.topic: error-reference
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 968e4167da1f8fd9bce21784a011d970014e1b4e
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 83a68273f4fbb2f66986c18c692b91b6e1829a4c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467560"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049220"
 ---
 # <a name="xaml-errors-and-warnings"></a>Błędy i ostrzeżenia XAML
 
@@ -37,7 +39,7 @@ Aby uzyskać więcej informacji na temat ponownego znakowania edycji XAML & Kont
 
 ## <a name="suppress-xaml-designer-errors"></a>Pomijaj błędy projektant XAML
 
-Otwórz okno dialogowe **Opcje** , wybierając polecenie **Narzędzia > opcje**, a następnie wybierz pozycję **Edytor tekstu > XAML > różne**.
+Otwórz okno dialogowe **Opcje** , wybierając polecenie **Narzędzia > opcje** , a następnie wybierz pozycję **Edytor tekstu > XAML > różne** .
 
 Usuń zaznaczenie pola wyboru **Pokaż błędy wykryte przez PROJEKTANTA XAML** .
 
