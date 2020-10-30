@@ -1,5 +1,7 @@
 ---
 title: Klasa bazowa ToolTaskExtension | Microsoft Docs
+description: Dowiedz się więcej na temat parametrów, które Klasa bazowa Microsoft. Build. Tasks. ToolTaskExtension dodaje do zadań, które dziedziczą z tego elementu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aa052a0fd2216d5f3d85e99794d9ac883a09e2d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4b0148a7c42b359906cd316b45dfdf2898e6313
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631695"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047830"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension, klasa podstawowa
 

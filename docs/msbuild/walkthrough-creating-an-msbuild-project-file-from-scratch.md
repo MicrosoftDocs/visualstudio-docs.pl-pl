@@ -1,5 +1,6 @@
 ---
 title: Tworzenie pliku projektu MSBuild od podstaw
+description: Zapoznaj się z tematem Tworzenie pliku projektu MSBuild od podstaw, aby zrozumieć, jak zorganizowany jest kod XML i jak można go zmienić, aby kontrolować kompilację.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b05410c1a9ac36273a43481929a3be463d8af1
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3ebe3c60e4061a66bb77f41bf165fb16e0c427c2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136696"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046064"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Przewodnik: Tworzenie pliku projektu MSBuild od podstaw
 
@@ -50,15 +51,15 @@ Aby ukończyć przewodnik, musisz mieć zainstalowany program Visual Studio, pon
 
 ## <a name="extend-the-path"></a>Zwiększ ścieżkę
 
-Aby można było użyć programu MSBuild, należy zwiększyć zmienną środowiskową PATH, aby uwzględnić wszystkie wymagane narzędzia. Możesz użyć **wiersz polecenia dla deweloperów dla programu Visual Studio**. Wyszukaj je w systemie Windows 10 w polu wyszukiwania na pasku zadań systemu Windows. Aby skonfigurować środowisko w zwykłym wierszu polecenia lub w środowisku skryptów, uruchom *VSDevCmd.bat* w podfolderze *Common7/Tools* instalacji programu Visual Studio.
+Aby można było użyć programu MSBuild, należy zwiększyć zmienną środowiskową PATH, aby uwzględnić wszystkie wymagane narzędzia. Możesz użyć **wiersz polecenia dla deweloperów dla programu Visual Studio** . Wyszukaj je w systemie Windows 10 w polu wyszukiwania na pasku zadań systemu Windows. Aby skonfigurować środowisko w zwykłym wierszu polecenia lub w środowisku skryptów, uruchom *VSDevCmd.bat* w podfolderze *Common7/Tools* instalacji programu Visual Studio.
 
 ## <a name="create-a-minimal-application"></a>Tworzenie minimalnej aplikacji
 
  W tej sekcji pokazano, jak utworzyć minimalny plik źródłowy aplikacji C# przy użyciu edytora tekstu.
 
-1. W wierszu polecenia przejdź do folderu, w którym chcesz utworzyć aplikację, na przykład *\Moje Documents \\ * lub *\Desktop \\ *.
+1. W wierszu polecenia przejdź do folderu, w którym chcesz utworzyć aplikację, na przykład *\Moje Documents \\* lub *\Desktop \\* .
 
-2. Wpisz **MD HelloWorld** , aby utworzyć podfolder o nazwie *\HelloWorld \\ *.
+2. Wpisz **MD HelloWorld** , aby utworzyć podfolder o nazwie *\HelloWorld \\* .
 
 3. Wpisz **CD HelloWorld** , aby przejść do nowego folderu.
 
@@ -80,7 +81,7 @@ Aby można było użyć programu MSBuild, należy zwiększyć zmienną środowis
     }
     ```
 
-5. Zapisz ten plik kodu źródłowego i nadaj mu nazwę *HelloWorld.cs*.
+5. Zapisz ten plik kodu źródłowego i nadaj mu nazwę *HelloWorld.cs* .
 
 6. Skompiluj aplikację, wpisując **HelloWorld.cs CSC** w wierszu polecenia.
 
@@ -136,22 +137,22 @@ Aby można było użyć programu MSBuild, należy zwiększyć zmienną środowis
     <Csc Sources="@(Compile)"/>
     ```
 
-5. Zapisz ten plik projektu i nazwij go *HelloWorld. csproj*.
+5. Zapisz ten plik projektu i nazwij go *HelloWorld. csproj* .
 
 Minimalny plik projektu powinien wyglądać podobnie do następującego:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
-    <Csc Sources="@(Compile)"/>  
+    <Csc Sources="@(Compile)"/>  
   </Target>
 </Project>
 ```
 
-Zadania w miejscu docelowym kompilacji są wykonywane sekwencyjnie. W takim przypadku zadanie kompilatora Visual C# `Csc` jest jedynym zadaniem. Oczekuje ono listy plików źródłowych do skompilowania, a następnie jest określona przez wartość `Compile` elementu. `Compile`Element odwołuje się tylko do jednego pliku źródłowego, *HelloWorld.cs*.
+Zadania w miejscu docelowym kompilacji są wykonywane sekwencyjnie. W takim przypadku zadanie kompilatora Visual C# `Csc` jest jedynym zadaniem. Oczekuje ono listy plików źródłowych do skompilowania, a następnie jest określona przez wartość `Compile` elementu. `Compile`Element odwołuje się tylko do jednego pliku źródłowego, *HelloWorld.cs* .
 
 > [!NOTE]
 > W elemencie Item można użyć symbolu wieloznacznego gwiazdki (), \* Aby odwołać się do wszystkich plików mających rozszerzenie nazwy pliku *. cs* w następujący sposób:
@@ -164,11 +165,11 @@ Zadania w miejscu docelowym kompilacji są wykonywane sekwencyjnie. W takim przy
 
  Teraz, aby skompilować aplikację, należy użyć pliku projektu, który właśnie został utworzony.
 
-1. W wierszu polecenia wpisz **MSBuild HelloWorld. csproj-t:build**.
+1. W wierszu polecenia wpisz **MSBuild HelloWorld. csproj-t:build** .
 
      Powoduje to kompilację docelowej kompilacji pliku projektu HelloWorld przez wywołanie kompilatora Visual C# w celu utworzenia aplikacji HelloWorld.
 
-2. Przetestuj aplikację, wpisując polecenie **HelloWorld**.
+2. Przetestuj aplikację, wpisując polecenie **HelloWorld** .
 
      **Witaj, świecie!** powinien być wyświetlony komunikat.
 
@@ -225,7 +226,7 @@ Plik projektu powinien teraz wyglądać podobnie do następującego kodu:
     <OutputPath>Bin\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />
@@ -251,13 +252,13 @@ Plik projektu powinien teraz wyglądać podobnie do następującego kodu:
 
  Teraz można skompilować aplikację przy użyciu pliku projektu, w którym użyto właściwości kompilacji do określenia folderu wyjściowego i nazwy aplikacji.
 
-1. W wierszu polecenia wpisz **MSBuild HelloWorld. csproj-t:build**.
+1. W wierszu polecenia wpisz **MSBuild HelloWorld. csproj-t:build** .
 
-     Spowoduje to utworzenie *folderu \\ \Bin* , a następnie wywołanie kompilatora Visual C# w celu utworzenia aplikacji *aplikację MSBuildSample* i umieszczenie jej w folderze *\Bin \\ * .
+     Spowoduje to utworzenie *folderu \\ \Bin* , a następnie wywołanie kompilatora Visual C# w celu utworzenia aplikacji *aplikację MSBuildSample* i umieszczenie jej w folderze *\Bin \\* .
 
-2. Aby sprawdzić, czy *folder \\ \Bin* został utworzony, i czy zawiera aplikację *aplikację MSBuildSample* , wpisz **dir bin**.
+2. Aby sprawdzić, czy *folder \\ \Bin* został utworzony, i czy zawiera aplikację *aplikację MSBuildSample* , wpisz **dir bin** .
 
-3. Przetestuj aplikację, wpisując **Bin\MSBuildSample**.
+3. Przetestuj aplikację, wpisując **Bin\MSBuildSample** .
 
      **Witaj, świecie!** powinien być wyświetlony komunikat.
 
@@ -301,7 +302,7 @@ Plik projektu powinien teraz wyglądać podobnie do następującego kodu:
     <OutputPath>Bin\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />
@@ -328,31 +329,31 @@ Plik projektu powinien teraz wyglądać podobnie do następującego kodu:
 
 ### <a name="to-test-the-build-targets"></a>Aby przetestować cele kompilacji
 
-1. W wierszu polecenia wpisz **MSBuild HelloWorld. csproj-p:AssemblyName = Greetings**.
+1. W wierszu polecenia wpisz **MSBuild HelloWorld. csproj-p:AssemblyName = Greetings** .
 
-     Ze względu na to, że przełącznik **-t** nie został jawnie ustawiony dla obiektu docelowego, MSBuild uruchamia domyślny element docelowy kompilacji. Przełącznik **-p** przesłania `AssemblyName` Właściwość i przekazuje ją nowej wartości `Greetings` . Powoduje to utworzenie nowej aplikacji *Greetings.exe*w folderze *\Bin \\ * .
+     Ze względu na to, że przełącznik **-t** nie został jawnie ustawiony dla obiektu docelowego, MSBuild uruchamia domyślny element docelowy kompilacji. Przełącznik **-p** przesłania `AssemblyName` Właściwość i przekazuje ją nowej wartości `Greetings` . Powoduje to utworzenie nowej aplikacji *Greetings.exe* w folderze *\Bin \\* .
 
-2. Aby sprawdzić, czy *folder \\ \Bin* zawiera aplikację *aplikację MSBuildSample* oraz nowe aplikacje *Greetings* , wpisz **dir bin**.
+2. Aby sprawdzić, czy *folder \\ \Bin* zawiera aplikację *aplikację MSBuildSample* oraz nowe aplikacje *Greetings* , wpisz **dir bin** .
 
-3. Przetestuj aplikację Greetings, wpisując **Bin\Greetings**.
+3. Przetestuj aplikację Greetings, wpisując **Bin\Greetings** .
 
      **Witaj, świecie!** powinien być wyświetlony komunikat.
 
-4. Usuń aplikację aplikację MSBuildSample, wpisując **MSBuild HelloWorld. csproj-t:Clean**.
+4. Usuń aplikację aplikację MSBuildSample, wpisując **MSBuild HelloWorld. csproj-t:Clean** .
 
      Spowoduje to uruchomienie czystego zadania, aby usunąć aplikację, która ma domyślną `AssemblyName` wartość właściwości `MSBuildSample` .
 
-5. Usuń aplikację Greetings, wpisując **MSBuild HelloWorld. csproj-t:Clean-p:AssemblyName = Greetings**.
+5. Usuń aplikację Greetings, wpisując **MSBuild HelloWorld. csproj-t:Clean-p:AssemblyName = Greetings** .
 
      Spowoduje to uruchomienie czystego zadania w celu usunięcia aplikacji, która ma daną wartość właściwości **AssemblyName** `Greetings` .
 
-6. Aby sprawdzić, czy *folder \\ \Bin* jest teraz pusty, wpisz **dir bin**.
+6. Aby sprawdzić, czy *folder \\ \Bin* jest teraz pusty, wpisz **dir bin** .
 
-7. Wpisz **MSBuild**.
+7. Wpisz **MSBuild** .
 
-     Chociaż nie określono pliku projektu, MSBuild kompiluje plik *HelloWorld. csproj* , ponieważ w bieżącym folderze istnieje tylko jeden plik projektu. Powoduje to utworzenie aplikacji *aplikację MSBuildSample* w folderze *\Bin \\ * .
+     Chociaż nie określono pliku projektu, MSBuild kompiluje plik *HelloWorld. csproj* , ponieważ w bieżącym folderze istnieje tylko jeden plik projektu. Powoduje to utworzenie aplikacji *aplikację MSBuildSample* w folderze *\Bin \\* .
 
-     Aby sprawdzić, czy *folder \\ \Bin* zawiera aplikację *aplikację MSBuildSample* , wpisz **dir bin**.
+     Aby sprawdzić, czy *folder \\ \Bin* zawiera aplikację *aplikację MSBuildSample* , wpisz **dir bin** .
 
 ## <a name="build-incrementally"></a>Kompilacja przyrostowa
 

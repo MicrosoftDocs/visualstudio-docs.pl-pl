@@ -1,5 +1,7 @@
 ---
 title: StartTrackingContext | Microsoft Docs
+description: Informacje o parametrach, wymaganiach i wartości zwracanej dla programu MSBuild StartTrackingContext, który uruchamia kontekst śledzenia.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50f62704897d68b0e323b948b8f4ed7e96a10c9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13a22e3a20b69f62fe1e7d6c8e97eb80df6de1b6
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632111"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048158"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
 

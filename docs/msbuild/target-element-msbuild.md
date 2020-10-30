@@ -1,5 +1,7 @@
 ---
 title: Target — element (MSBuild) | Microsoft Docs
+description: Dowiedz się więcej o elemencie docelowym programu MSBuild, który zawiera zestaw zadań wykonywanych sekwencyjnie dla programu MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16b8533bed128199a4eb0b6e7171ed9c674d62f4
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80375552"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048044"
 ---
 # <a name="target-element-msbuild"></a>Target — element (MSBuild)
 

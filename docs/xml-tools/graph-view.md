@@ -1,5 +1,7 @@
 ---
 title: Widok wykresu projektanta schematu XML
+description: Dowiedz się więcej na temat widoku wykresu w projektancie schematu XML, który zapewnia graficzną reprezentację węzłów schematu globalnego i relacje między węzłami.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb71196dfbaf371e66131bf1e4b22584d3dbf0c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee6abff7accf5e1990792b52f1fdf6a013edd0f9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592870"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045998"
 ---
 # <a name="graph-view"></a>Widok wykresu
 
@@ -31,7 +33,7 @@ Dwukrotne kliknięcie węzła w widoku wykresu spowoduje wyświetlenie edytora X
 
 Aby usunąć wybrane węzły z obszaru roboczego, użyj paska narzędzi projektanta XSD lub klawisza **delete** .
 
-Jeśli powierzchnia projektowa jest pusta, Edytor XML, **Eksplorator schematu XML**i znak wodny są wyświetlane. *Znak wodny* jest listą linków do wszystkich widoków projektanta XSD.
+Jeśli powierzchnia projektowa jest pusta, Edytor XML, **Eksplorator schematu XML** i znak wodny są wyświetlane. *Znak wodny* jest listą linków do wszystkich widoków projektanta XSD.
 
 ![Projektant XSD; Widok wykresu](../xml-tools/media/xsdgraphviewwatermark.gif)
 
@@ -101,16 +103,16 @@ Następujące przyciski paska narzędzi XSD są włączone, gdy widok wykresu je
 
 |Opcja|Opis|
 |-|-----------------|
-|**Pokaż widok startowy**|Przełącza do [widoku Start](../xml-tools/start-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **1**.|
-|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **2**.|
-|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **3**.|
+|**Pokaż widok startowy**|Przełącza do [widoku Start](../xml-tools/start-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **1** .|
+|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **2** .|
+|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** + **3** .|
 |**Wyczyść obszar roboczy**|Czyści obszar roboczy i powierzchnię projektu.|
 |**Usuń z obszaru roboczego**|Usuwa wybrane węzły z obszaru roboczego i powierzchni projektowej.|
 |**Usuń wszystko oprócz zaznaczenia z obszaru roboczego**|Usuwa węzły, które nie są wybrane z obszaru roboczego i powierzchni projektowej. Ta opcja jest włączona w widoku modelu zawartości i w widoku wykresu.|
-|**Od lewej do prawej**|Zmienia układ w widoku wykresu na hierarchiczną reprezentację węzłów od lewej do prawej. Dostęp do tej opcji można uzyskać za pomocą skrótu klawiaturowego: **Alt** + **Strzałka w prawo**.|
-|**Od prawej do lewej**|Zmienia układ w widoku wykresu na hierarchiczną reprezentację węzłów w kierunku od prawej do lewej. Dostęp do tej opcji można uzyskać za pomocą skrótu klawiaturowego: **Alt** + **Strzałka w lewo**.|
-|**Od góry do dołu**|Zmienia układ w widoku wykresu na górną, hierarchiczną reprezentację węzłów. Dostęp do tej opcji można uzyskać za pomocą skrótu klawiaturowego: **Alt** + **Strzałka w dół**.|
-|**Od dołu do góry**|Zmienia układ w widoku wykresu na hierarchiczną reprezentację węzłów w dół do góry. Dostęp do tej opcji można uzyskać za pomocą skrótu klawiaturowego: **Alt** + **Strzałka w górę**.|
+|**Od lewej do prawej**|Zmienia układ w widoku wykresu na hierarchiczną reprezentację węzłów od lewej do prawej. Dostęp do tej opcji można uzyskać za pomocą skrótu klawiaturowego: **Alt** + **Strzałka w prawo** .|
+|**Od prawej do lewej**|Zmienia układ w widoku wykresu na hierarchiczną reprezentację węzłów w kierunku od prawej do lewej. Dostęp do tej opcji można uzyskać za pomocą skrótu klawiaturowego: **Alt** + **Strzałka w lewo** .|
+|**Od góry do dołu**|Zmienia układ w widoku wykresu na górną, hierarchiczną reprezentację węzłów. Dostęp do tej opcji można uzyskać za pomocą skrótu klawiaturowego: **Alt** + **Strzałka w dół** .|
+|**Od dołu do góry**|Zmienia układ w widoku wykresu na hierarchiczną reprezentację węzłów w dół do góry. Dostęp do tej opcji można uzyskać za pomocą skrótu klawiaturowego: **Alt** + **Strzałka w górę** .|
 
 ## <a name="panscroll"></a>Przesuń/Przewiń
 

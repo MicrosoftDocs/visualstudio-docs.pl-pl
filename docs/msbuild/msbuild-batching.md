@@ -1,5 +1,7 @@
 ---
 title: Tworzenie wsadowe MSBuild | Microsoft Docs
+description: Dowiedz się, w jaki sposób program MSBuild dzieli listy elementów na różne kategorie, lub partie, na podstawie metadanych elementów i uruchamia obiekt docelowy lub zadanie jednokrotnie przy każdej partii.
+ms.custom: SEO-VS-2020
 ms.date: 06/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d7c72d1da270220144cd5e6167ebecb66462ba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c4d91e95d080b93c8bcdc4486593b4c94bcb501
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289277"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047705"
 ---
 # <a name="msbuild-batching"></a>Przetwarzanie wsadowe w programie MSBuild
 

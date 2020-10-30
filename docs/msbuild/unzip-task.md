@@ -1,5 +1,7 @@
 ---
 title: Rozpakuj zadanie | Microsoft Docs
+description: Poznaj parametry i użycie zadania rozpakowania programu MSBuild, które rozpakuje archiwum. zip do określonej lokalizacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d701f70950bb5a5cb2338007db129ca15d194b77
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631513"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046902"
 ---
 # <a name="unzip-task"></a>Unzip, zadanie
 

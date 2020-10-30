@@ -1,5 +1,7 @@
 ---
 title: UidManager — zadanie | Microsoft Docs
+description: Dowiedz się, jak zadanie MSBuild UidManager sprawdza, aktualizuje lub usuwa unikatowe identyfikatory (UID), aby lokalizować wszystkie elementy XAML w źródłowych plikach XAML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37692c541fb2a6e9b2ccf61083dd383e56a79766
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 852b910de742676e1fe7dd0c85129640eb37a9ae
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631526"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046927"
 ---
 # <a name="uidmanager-task"></a>UidManager, zadanie
 
@@ -36,7 +38,7 @@ ms.locfileid: "77631526"
 |-------------------------| - |
 | `IntermediateDirectory` | Opcjonalny parametr **ciągu** .<br /><br /> Określa katalog, który jest używany do tworzenia kopii zapasowej źródłowych plików XAML, które są określone przez parametr **MarkupFiles** . |
 | `MarkupFiles` | Wymagany parametr **ITaskItem []** .<br /><br /> Określa pliki źródłowe XAML, które mają być używane do sprawdzania UID, aktualizowania lub usuwania. |
-| `Task` | Wymagany parametr **ciągu** .<br /><br /> Określa zadanie zarządzania UID, które ma zostać wykonane. Prawidłowe opcje to **check**, **Update**lub **Remove**. |
+| `Task` | Wymagany parametr **ciągu** .<br /><br /> Określa zadanie zarządzania UID, które ma zostać wykonane. Prawidłowe opcje to **check** , **Update** lub **Remove** . |
 
 ## <a name="example"></a>Przykład
 

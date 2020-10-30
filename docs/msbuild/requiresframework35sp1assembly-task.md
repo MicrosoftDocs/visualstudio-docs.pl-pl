@@ -1,5 +1,7 @@
 ---
 title: Requiresframework35sp1assembly — — zadanie | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa zadania Requiresframework35sp1assembly —, aby określić, czy aplikacja wymaga .NET Framework 3,5 z dodatkiem SP1.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caefe0887ca23cd4cee60c3a4ba2a6133e9893df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1819f72cc0eef389a3ef46148d4462fbd610e1a
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632774"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048691"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly — zadanie
 

@@ -1,5 +1,7 @@
 ---
 title: Menu kontekstowe w Eksploratorze schematu XML
+description: Poznaj menu kontekstowe w Eksploratorze schematu XML, które zawierają elementy służące do wykonywania wyszukiwania specyficznego dla schematu i innych operacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7224ca09588858398a0f45c35008ddd5ba0af71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c5d78196a64ca0ab2067d0df73410c41cbeca35
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592896"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049173"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menu kontekstowe (Eksplorator schematu XML)
 

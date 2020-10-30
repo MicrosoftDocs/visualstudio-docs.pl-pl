@@ -1,5 +1,7 @@
 ---
 title: Klasa VCToolTask | Microsoft Docs
+description: Dowiedz się więcej na temat kilku parametrów, które Klasa bazowa VCToolTask dodaje do zadań, które dziedziczą.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 dev_langs:
@@ -11,12 +13,12 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: df75bb998d2b8c6486e20c4c3ca0d80347c8f88a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2e45d7c672ebc2177c2bb197399133e7b077a5c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591674"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046733"
 ---
 # <a name="vctooltask-base-class"></a>VCToolTask, klasa podstawowa
 
@@ -35,7 +37,7 @@ W poniższej tabeli opisano parametry klasy bazowej **VCToolTask** .
 |**ErrorListRegex**|Opcjonalny parametr **ITaskItem []** .|
 |**ErrorListListExclusion**|Opcjonalny parametr **ITaskItem []** .|
 |**GenerateCommandLine**|Opcjonalny parametr **ciągu** .<br/><br/>Używa wartości **CommandLineFormat** *Format* CommandLineFormat [default = CommandLineFormat. ForBuildLog] i **EscapeFormat** *EscapeFormat* [default = EscapeFormat. default].|
-|**GenerateCommandLineExceptSwitches**|Opcjonalny parametr **ciągu** .<br/><br/>Używa **ciągu wartości []** *switchesToRemove*, **CommandLineFormat** *Format* [default = CommandLineFormat. ForBuildLog] i **EscapeFormat** *EscapeFormat* [default = EscapeFormat. default].|
+|**GenerateCommandLineExceptSwitches**|Opcjonalny parametr **ciągu** .<br/><br/>Używa **ciągu wartości []** *switchesToRemove* , **CommandLineFormat** *Format* [default = CommandLineFormat. ForBuildLog] i **EscapeFormat** *EscapeFormat* [default = EscapeFormat. default].|
 
 ## <a name="see-also"></a>Zobacz też
 

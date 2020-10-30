@@ -1,5 +1,7 @@
 ---
 title: Rozwiązywanie problemów dotyczących błędów .NET Framework Microsoft Docs
+description: Informacje o błędach programu MSBuild, które mogą wystąpić z powodu problemów z odwołaniami i sposobu ich rozwiązywania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1c496fd457e80220bb2ea4a2f032cef9508d9dcb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98c3ba64454ca25b62dc5dbe0964db64b010a7ec
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631604"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046985"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Rozwiązywanie problemów z błędami obiektów docelowych programu .NET Framework
 
@@ -36,7 +38,7 @@ W tym temacie opisano błędy programu MSBuild, które mogą wystąpić z powodu
 
  Jeśli zmienisz wersję docelową .NET Framework aplikacji, program Visual Studio zmieni niektóre odwołania, ale może być konieczne ręczne zaktualizowanie odwołań. Na przykład jeden z wymienionych wyżej błędów może wystąpić, jeśli zmienisz aplikację na docelową .NET Framework 3,5 z dodatkiem Service Pack 1, a ta aplikacja ma zasoby lub ustawienia zależne od profilu klienta dla .NET Framework 4.
 
- Aby obejść ustawienia aplikacji, Otwórz **Eksplorator rozwiązań**, wybierz opcję **Pokaż wszystkie pliki**, a następnie edytuj plik *app.config* w edytorze XML programu Visual Studio. Zmień wersję w ustawieniach, aby dopasować ją do odpowiedniej wersji .NET Framework. Na przykład można zmienić ustawienie wersji z 4.0.0.0 na 2.0.0.0. Podobnie w przypadku aplikacji, która dodała zasoby, Otwórz **Eksplorator rozwiązań**, wybierz przycisk **Pokaż wszystkie pliki** , rozwiń **mój projekt** (Visual Basic) lub **Właściwości** (C#), a następnie edytuj plik *resources. resx* w edytorze XML programu Visual Studio. Zmień ustawienie wersji z 4.0.0.0 na 2.0.0.0.
+ Aby obejść ustawienia aplikacji, Otwórz **Eksplorator rozwiązań** , wybierz opcję **Pokaż wszystkie pliki** , a następnie edytuj plik *app.config* w edytorze XML programu Visual Studio. Zmień wersję w ustawieniach, aby dopasować ją do odpowiedniej wersji .NET Framework. Na przykład można zmienić ustawienie wersji z 4.0.0.0 na 2.0.0.0. Podobnie w przypadku aplikacji, która dodała zasoby, Otwórz **Eksplorator rozwiązań** , wybierz przycisk **Pokaż wszystkie pliki** , rozwiń **mój projekt** (Visual Basic) lub **Właściwości** (C#), a następnie edytuj plik *resources. resx* w edytorze XML programu Visual Studio. Zmień ustawienie wersji z 4.0.0.0 na 2.0.0.0.
 
  Jeśli aplikacja zawiera zasoby, takie jak ikony lub mapy bitowe lub ustawienia, takie jak parametry połączenia danych, można również rozwiązać ten problem, usuwając wszystkie elementy na stronie **Ustawienia** **projektanta projektu** , a następnie ponownie dodając wymagane ustawienia.
 

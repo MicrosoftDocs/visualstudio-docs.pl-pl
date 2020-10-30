@@ -1,5 +1,7 @@
 ---
 title: Docelowy porządek kompilacji | Microsoft Docs
+description: Dowiedz się, jak określić kolejność, w której są uruchamiane elementy docelowe programu MSBuild, jeśli dane wejściowe do jednego obiektu docelowego są zależne od danych wyjściowych innego obiektu docelowego.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 955c8c496df45bbfce28bdac1571f84649621024
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585460"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048067"
 ---
 # <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 

@@ -1,5 +1,7 @@
 ---
 title: ResolveComReference — — zadanie | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa zadania ResolveComReference —, aby wykonać listę jednej lub więcej nazw bibliotek typów lub plików TLB i rozwiązać je do lokalizacji na dysku.
+ms.custom: SEO-VS-2020
 ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b99e743cf5bc9e3e634a8738e30d17c8e5517191
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e98d0d64a8df1dac29127ffcf76fe8b6cc39a43
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286183"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048623"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference, zadanie
 
@@ -48,7 +50,7 @@ Przyjmuje listę jednej lub więcej nazw bibliotek typów lub plików *TLB* i ro
 |`SdkToolsPath`|Opcjonalny <xref:System.String?displayProperty=fullName> parametr.<br /><br /> Jeśli `ExecuteAsTool` tak jest `true` , ten parametr musi być ustawiony na ścieżkę narzędzi zestawu SDK dla planowanej wersji platformy.|
 |`StateFile`|Opcjonalny `String` parametr.<br /><br /> Określa plik pamięci podręcznej dla sygnatur czasowych składnika modelu COM. Jeśli nie istnieje, każde uruchomienie spowoduje ponowne wygenerowanie wszystkich otok.|
 |`TargetFrameworkVersion`|Opcjonalny `String` parametr.<br /><br /> Określa wersję platformy docelowej projektu.<br /><br /> Wartość domyślna to `String.Empty`. oznacza to, że nie istnieje filtrowanie odwołań na podstawie platformy docelowej.|
-|`TargetProcessorArchitecture`|Opcjonalny `String` parametr.<br /><br /> Określa preferowaną docelową architekturę procesora. Przekazanie do flagi *tlbimp.exe*/Machine po przetłumaczeniu.<br /><br /> Wartość parametru powinna być elementem członkowskim <xref:Microsoft.Build.Utilities.ProcessorArchitecture> .|
+|`TargetProcessorArchitecture`|Opcjonalny `String` parametr.<br /><br /> Określa preferowaną docelową architekturę procesora. Przekazanie do flagi *tlbimp.exe* /Machine po przetłumaczeniu.<br /><br /> Wartość parametru powinna być elementem członkowskim <xref:Microsoft.Build.Utilities.ProcessorArchitecture> .|
 |`TypeLibFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Określa ścieżkę pliku biblioteki typów do odwołań COM. Elementy zawarte w tym parametrze mogą zawierać metadane elementu. Aby uzyskać więcej informacji, zobacz sekcję [TypeLibFiles Item Metadata](#typelibfiles-item-metadata) poniżej.|
 |`TypeLibNames`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Określa nazwy bibliotek typów do rozwiązania. Elementy zawarte w tym parametrze muszą zawierać metadane elementu. Aby uzyskać więcej informacji, zobacz sekcję [TypeLibNames Item Metadata](#typelibnames-item-metadata) poniżej.|
 |`WrapperOutputDirectory`|Opcjonalny `String` parametr.<br /><br /> Lokalizacja na dysku, na którym znajduje się wygenerowany zestaw międzyoperacyjny. Jeśli nie określono metadanych tego elementu, zadanie używa ścieżki bezwzględnej katalogu, w którym znajduje się plik projektu.|

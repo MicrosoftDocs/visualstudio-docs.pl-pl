@@ -1,5 +1,7 @@
 ---
 title: Zadanie MSBuild | Microsoft Docs
+description: Dowiedz się, w jaki sposób zadanie MSBuild używa tego samego procesu MSBuild do kompilowania projektów podrzędnych z innego projektu MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 07/30/2019
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab54c5c523c833be60ef4b5d5088b6217a3111a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4d1f9fe79ae5092992ff66ddaf5e10729e8b19a
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82072583"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049059"
 ---
 # <a name="msbuild-task"></a>zadanie MSBuild
 
@@ -37,7 +39,7 @@ Kompiluje projekty MSBuild z innego projektu MSBuild.
 |-----------------------------------| - |
 | `BuildInParallel` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` projekty określone w `Projects` parametrze są wbudowane równolegle, jeśli jest to możliwe. Wartość domyślna to `false`. |
 | `Projects` | Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa pliki projektu do skompilowania. |
-| `Properties` | Opcjonalny `String` parametr.<br /><br /> Rozdzielana średnikami lista par nazwa-wartość właściwości, które mają być stosowane jako właściwości globalne do projektu podrzędnego. Po określeniu tego parametru jest on funkcjonalnie równoważny z ustawieniem właściwości, które mają przełącznik **-Właściwość** podczas kompilowania przy użyciu [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Na przykład:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Po przejściu właściwości do projektu za pomocą `Properties` parametru MSBuild może utworzyć nowe wystąpienie projektu, nawet jeśli plik projektu został już załadowany. MSBuild tworzy wystąpienie pojedynczego projektu dla danej ścieżki projektu i unikatowy zestaw właściwości globalnych. Na przykład takie zachowanie umożliwia utworzenie wielu zadań programu MSBuild wywołujących obiekt *WebProject. proj*z opcją Configuration = Release i uzyskanie jednego wystąpienia elementu *WebProject. proj* (Jeśli w zadaniu nie określono żadnych unikatowych właściwości). Jeśli określisz właściwość, która nie była jeszcze widoczna w programie MSBuild, program MSBuild tworzy nowe wystąpienie projektu, które może być wbudowane równolegle z innymi wystąpieniami projektu. Na przykład konfiguracja wersji może być kompilowana w tym samym czasie co Konfiguracja debugowania.|
+| `Properties` | Opcjonalny `String` parametr.<br /><br /> Rozdzielana średnikami lista par nazwa-wartość właściwości, które mają być stosowane jako właściwości globalne do projektu podrzędnego. Po określeniu tego parametru jest on funkcjonalnie równoważny z ustawieniem właściwości, które mają przełącznik **-Właściwość** podczas kompilowania przy użyciu [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Przykład:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Po przejściu właściwości do projektu za pomocą `Properties` parametru MSBuild może utworzyć nowe wystąpienie projektu, nawet jeśli plik projektu został już załadowany. MSBuild tworzy wystąpienie pojedynczego projektu dla danej ścieżki projektu i unikatowy zestaw właściwości globalnych. Na przykład takie zachowanie umożliwia utworzenie wielu zadań programu MSBuild wywołujących obiekt *WebProject. proj* z opcją Configuration = Release i uzyskanie jednego wystąpienia elementu *WebProject. proj* (Jeśli w zadaniu nie określono żadnych unikatowych właściwości). Jeśli określisz właściwość, która nie była jeszcze widoczna w programie MSBuild, program MSBuild tworzy nowe wystąpienie projektu, które może być wbudowane równolegle z innymi wystąpieniami projektu. Na przykład konfiguracja wersji może być kompilowana w tym samym czasie co Konfiguracja debugowania.|
 | `RebaseOutputs` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli ścieżki `true` względne docelowych elementów wyjściowych z skompilowanych projektów są dostosowane do projektu wywołującego. Wartość domyślna to `false`. |
 | `RemoveProperties` | Opcjonalny `String` parametr.<br /><br /> Określa zestaw właściwości globalnych do usunięcia. |
 | `RunEachTargetSeparately` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , zadanie MSBuild wywołuje każdy element docelowy na liście przekazaną do programu MSBuild pojedynczo, a nie w tym samym czasie. Ustawienie tego parametru `true` gwarantuje, że kolejne elementy docelowe są wywoływane nawet wtedy, gdy wcześniej wywołane obiekty docelowe nie powiodły się. W przeciwnym razie błąd kompilacji spowoduje zatrzymanie wywołania wszystkich kolejnych elementów docelowych. Wartość domyślna to `false`. |
@@ -47,13 +49,13 @@ Kompiluje projekty MSBuild z innego projektu MSBuild.
 | `TargetAndPropertyListSeparators` | Opcjonalny `String[]` parametr.<br /><br /> Określa listę elementów docelowych i właściwości jako `Project` metadanych elementu. Separatory zostaną cofnięte przed przetworzeniem. np .% 3B (znak ucieczki ";") będzie traktowany jako ";", tak jakby był ";". |
 | `TargetOutputs` | Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy tylko do odczytu.<br /><br /> Zwraca dane wyjściowe z skompilowanych obiektów docelowych ze wszystkich plików projektu. Zwracane są tylko dane wyjściowe z określonych obiektów docelowych, nie wszystkie wyjścia, które mogą istnieć w przypadku elementów docelowych, od których zależą te elementy docelowe.<br /><br /> `TargetOutputs`Parametr zawiera również następujące metadane:<br /><br /> -   `MSBuildSourceProjectFile`: Plik projektu MSBuild, który zawiera obiekt docelowy, który ustawia dane wyjściowe.<br />-   `MSBuildSourceTargetName`: Obiekt docelowy, który ustawia dane wyjściowe. **Uwaga:**  Jeśli chcesz oddzielnie identyfikować dane wyjściowe z każdego pliku projektu lub celu, uruchom `MSBuild` zadanie osobno dla każdego pliku lub celu projektu. Jeśli uruchomisz `MSBuild` zadanie tylko raz, aby skompilować wszystkie pliki projektu, dane wyjściowe wszystkich obiektów docelowych zostaną zebrane w jednej tablicy. |
 | `Targets` | Opcjonalny `String` parametr.<br /><br /> Określa element docelowy lub cel do skompilowania w plikach projektu. Użyj średnika, aby oddzielić listę nazw docelowych. Jeśli w zadaniu nie określono żadnych elementów docelowych `MSBuild` , domyślne elementy docelowe określone w plikach projektu są kompilowane. **Uwaga:**  Elementy docelowe muszą wystąpić we wszystkich plikach projektu. Jeśli tak nie jest, wystąpi błąd kompilacji. |
-| `ToolsVersion` | Opcjonalny `String` parametr.<br /><br /> Określa, `ToolsVersion` który ma być używany podczas kompilowania projektów do tego zadania.<br /><br /> Umożliwia zadanie MSBuild Kompilowanie projektu, który jest przeznaczony dla innej wersji .NET Framework niż określony w projekcie. Prawidłowe wartości to `2.0` , `3.0` i `3.5` . Wartość domyślna to `3.5` . |
+| `ToolsVersion` | Opcjonalny `String` parametr.<br /><br /> Określa, `ToolsVersion` który ma być używany podczas kompilowania projektów do tego zadania.<br /><br /> Umożliwia zadanie MSBuild Kompilowanie projektu, który jest przeznaczony dla innej wersji .NET Framework niż określony w projekcie. Prawidłowe wartości to `2.0` , `3.0` i `3.5` . Wartość domyślna to `3.5`. |
 
 ## <a name="remarks"></a>Uwagi
 
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
- W przeciwieństwie do uruchamiania *MSBuild.exe*przy użyciu [zadania exec](../msbuild/exec-task.md) to zadanie używa tego samego procesu MSBuild do kompilowania projektów podrzędnych. Lista już skompilowanych obiektów docelowych, które mogą być pominięte, jest udostępniana między kompilacjami nadrzędnymi i podrzędnymi. To zadanie jest również szybsze, ponieważ nie jest tworzony żaden nowy proces programu MSBuild.
+ W przeciwieństwie do uruchamiania *MSBuild.exe* przy użyciu [zadania exec](../msbuild/exec-task.md) to zadanie używa tego samego procesu MSBuild do kompilowania projektów podrzędnych. Lista już skompilowanych obiektów docelowych, które mogą być pominięte, jest udostępniana między kompilacjami nadrzędnymi i podrzędnymi. To zadanie jest również szybsze, ponieważ nie jest tworzony żaden nowy proces programu MSBuild.
 
  To zadanie może przetwarzać nie tylko pliki projektu, ale również pliki rozwiązań.
 

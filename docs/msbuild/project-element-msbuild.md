@@ -1,5 +1,7 @@
 ---
 title: Project — element (MSBuild) | Microsoft Docs
+description: Dowiedz się więcej o elemencie projektu MSBuild, który jest wymaganym elementem głównym pliku projektu MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df9eff3e941cc21aaa71c2779a72084e12e8e590
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 223ccd9e823bef4ee458a7aa1ce2d785788c6238
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632982"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048852"
 ---
 # <a name="project-element-msbuild"></a>Project — element (MSBuild)
 
@@ -62,7 +64,7 @@ Wymagany element główny pliku projektu MSBuild.
 | `InitialTargets` | Atrybut opcjonalny.<br /><br /> Początkowe miejsce docelowe lub obiekty docelowe do uruchomienia przed obiektami docelowymi określonymi w `DefaultTargets` atrybucie lub w wierszu polecenia. Wiele obiektów docelowych jest rozdzielanych średnikami ( `;` ). W przypadku zdefiniowania wielu importowanych plików `InitialTargets` wszystkie wymienione obiekty docelowe zostaną uruchomione w kolejności, w której napotkane są Importy. |
 | `Sdk` | Atrybut opcjonalny. <br /><br /> Nazwa zestawu SDK i wersja opcjonalna do użycia w celu utworzenia niejawnych instrukcji importu, które są dodawane do pliku. proj. Jeśli żadna wersja nie zostanie określona, program MSBuild podejmie próbę rozpoznania wersji domyślnej.  Na przykład: `<Project Sdk="Microsoft.NET.Sdk" />` lub `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | Atrybut opcjonalny.<br /><br /> Wersja zestawu narzędzi MSBuild używa do określenia wartości dla $ (MSBuildBinPath) i $ (MSBuildToolsPath). |
-| `TreatAsLocalProperty` | Atrybut opcjonalny.<br /><br /> Nazwy właściwości, które nie będą uznawane za globalne. Ten atrybut uniemożliwia określone właściwości wiersza polecenia przed zastępowaniem wartości właściwości, które są ustawiane w pliku projektu lub obiektów docelowych oraz wszystkich kolejnych importach. Wiele właściwości jest średnikiem (;) Lista.<br /><br /> Zwykle właściwości globalne przesłaniają wartości właściwości, które są ustawiane w pliku projektu lub obiektów docelowych. Jeśli właściwość jest wymieniona w `TreatAsLocalProperty` wartości, wartość właściwości globalnej nie przesłania wartości właściwości, które są ustawione w tym pliku oraz wszelkich kolejnych importów. Aby uzyskać więcej informacji, zobacz [How to: build te same pliki źródłowe z innymi opcjami](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Uwaga:**  Właściwości globalne są ustawiane w wierszu polecenia za pomocą przełącznika **-Property** (lub **-p**). Można również ustawić lub zmodyfikować właściwości globalne dla projektów podrzędnych w kompilacji wieloprojektowej przy użyciu `Properties` atrybutu zadania programu MSBuild. Aby uzyskać więcej informacji, zobacz [zadanie MSBuild](../msbuild/msbuild-task.md). |
+| `TreatAsLocalProperty` | Atrybut opcjonalny.<br /><br /> Nazwy właściwości, które nie będą uznawane za globalne. Ten atrybut uniemożliwia określone właściwości wiersza polecenia przed zastępowaniem wartości właściwości, które są ustawiane w pliku projektu lub obiektów docelowych oraz wszystkich kolejnych importach. Wiele właściwości jest średnikiem (;) Lista.<br /><br /> Zwykle właściwości globalne przesłaniają wartości właściwości, które są ustawiane w pliku projektu lub obiektów docelowych. Jeśli właściwość jest wymieniona w `TreatAsLocalProperty` wartości, wartość właściwości globalnej nie przesłania wartości właściwości, które są ustawione w tym pliku oraz wszelkich kolejnych importów. Aby uzyskać więcej informacji, zobacz [How to: build te same pliki źródłowe z innymi opcjami](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Uwaga:**  Właściwości globalne są ustawiane w wierszu polecenia za pomocą przełącznika **-Property** (lub **-p** ). Można również ustawić lub zmodyfikować właściwości globalne dla projektów podrzędnych w kompilacji wieloprojektowej przy użyciu `Properties` atrybutu zadania programu MSBuild. Aby uzyskać więcej informacji, zobacz [zadanie MSBuild](../msbuild/msbuild-task.md). |
 | `xmlns` | Atrybut opcjonalny.<br /><br /> Gdy jest określony, `xmlns` atrybut musi mieć wartość `http://schemas.microsoft.com/developer/msbuild/2003` . |
 
 ### <a name="child-elements"></a>Elementy podrzędne

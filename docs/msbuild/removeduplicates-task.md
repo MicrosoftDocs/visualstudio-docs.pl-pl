@@ -1,5 +1,7 @@
 ---
 title: RemoveDuplicates — — zadanie | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa zadania RemoveDuplicates —, aby usunąć zduplikowane elementy z określonej kolekcji elementów.
+ms.custom: SEO-VS-2020
 ms.date: 03/01/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90366bab14eefd1be4edac81d6b09b3f57aa3332
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 269499153c4be228503d6bd5b22e91e63dd5b5dd
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632787"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048679"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates — zadanie
 
@@ -70,7 +72,7 @@ Usuwa zduplikowane elementy z określonej kolekcji elementów.
 </Project>
 ```
 
- Poniższy przykład pokazuje, że `RemoveDuplicates` zadanie zachowuje swoją kolejność wprowadzania danych. Po zakończeniu zadania `FilteredItems` Kolekcja elementów zawiera elementy *MyFile2.cs*, *MyFile1.cs*i *MyFile3.cs* w tej kolejności.
+ Poniższy przykład pokazuje, że `RemoveDuplicates` zadanie zachowuje swoją kolejność wprowadzania danych. Po zakończeniu zadania `FilteredItems` Kolekcja elementów zawiera elementy *MyFile2.cs* , *MyFile1.cs* i *MyFile3.cs* w tej kolejności.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

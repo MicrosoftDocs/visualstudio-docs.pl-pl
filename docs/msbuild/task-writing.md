@@ -1,5 +1,7 @@
 ---
 title: Pisanie zadania | Microsoft Docs
+description: Dowiedz się, jak tworzyć własne zadania w celu zapewnienia kodu, który jest uruchamiany podczas procesu kompilacji MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cbcf47ec83e1b900ba94ab3842c2cfa63fdcc5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b614fd1705491e676bb89a9527c75cf86bdd36c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631841"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047926"
 ---
 # <a name="task-writing"></a>Pisanie zadań
 
@@ -100,7 +102,7 @@ namespace MyTasks
  Plik MSBuild *Microsoft. Common. Tasks* to plik projektu, który zawiera listę `UsingTask` elementów, które rejestrują wszystkie zadania dostarczone z programem MSBuild. Ten plik jest automatycznie dołączany podczas kompilowania każdego projektu. Jeśli zadanie zarejestrowane w *programie Microsoft. Common. Tasks* jest również zarejestrowane w pliku bieżącego projektu, ma pierwszeństwo bieżący plik projektu. oznacza to, że można zastąpić zadanie domyślne przy użyciu własnego zadania o tej samej nazwie.
 
 > [!TIP]
-> Listę zadań, które są dostarczane z programem MSBuild, można zobaczyć, wyświetlając zawartość elementu *Microsoft. Common. Tasks*.
+> Listę zadań, które są dostarczane z programem MSBuild, można zobaczyć, wyświetlając zawartość elementu *Microsoft. Common. Tasks* .
 
 ## <a name="raise-events-from-a-task"></a>Wywoływanie zdarzeń z zadania
 
@@ -170,7 +172,7 @@ Zadanie nie powinno zależeć od żadnej względnej kolejności wywołania metod
 
 Program MSBuild natywnie obsługuje właściwości typu `string` , `bool` , `ITaskItem` i `ITaskItem[]` . Jeśli zadanie akceptuje parametr innego typu, program MSBuild wywołuje <xref:System.Convert.ChangeType%2A> konwersję z `string` (ze wszystkimi rozwiniętymi właściwościami i elementami) na typ docelowy. Jeśli konwersja nie powiedzie się dla żadnego parametru wejściowego, MSBuild emituje błąd i nie wywołuje metody zadania `Execute()` .
 
-## <a name="example"></a>Przykład
+## <a name="example-1"></a>Przykład 1
 
 ### <a name="description"></a>Opis
 
@@ -195,7 +197,7 @@ namespace SimpleTask1
 }
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-2"></a>Przykład 2
 
 ### <a name="description"></a>Opis
 
@@ -231,7 +233,7 @@ namespace SimpleTask2
 }
 ```
 
-## <a name="example"></a>Przykład
+## <a name="example-3"></a>Przykład 3
 
 ### <a name="description"></a>Opis
 
@@ -241,7 +243,7 @@ Ta klasa języka C# pokazuje zadanie, które pochodzi od <xref:Microsoft.Build.U
 
 [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
-## <a name="example"></a>Przykład
+## <a name="example-4"></a>Przykład 4
 
 ### <a name="description"></a>Opis
 

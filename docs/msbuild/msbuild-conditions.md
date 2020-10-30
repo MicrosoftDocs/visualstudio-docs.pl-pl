@@ -1,5 +1,7 @@
 ---
 title: Warunki MSBuild | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild obsługuje określony zestaw warunków, które mogą być stosowane wszędzie tam, gdzie atrybut Condition jest dozwolony.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5994e3f5b17f50d707c4c5a00666d60c2efd3184
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62031255daca971345b2dd3dbc7c37eb7f4003c9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711706"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046368"
 ---
 # <a name="msbuild-conditions"></a>Warunki programu MSBuild
 
@@ -31,11 +33,11 @@ Program MSBuild obsługuje określony zestaw warunków, które mogą być stosow
 
 |Warunek|Opis|
 |---------------|-----------------|
-|'`stringA`' == '`stringB`'|Zwraca wartość, `true` Jeśli `stringA` jest równa `stringB` .<br /><br /> Na przykład:<br /><br /> `Condition="'$(Configuration)'=='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy. W tym sprawdzaniu nie jest rozróżniana wielkość liter.|
-|'`stringA`' != '`stringB`'|Daje w `true` przypadku, gdy `stringA` nie jest równe `stringB` .<br /><br /> Na przykład:<br /><br /> `Condition="'$(Configuration)'!='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy. W tym sprawdzaniu nie jest rozróżniana wielkość liter.|
+|'`stringA`' == '`stringB`'|Zwraca wartość, `true` Jeśli `stringA` jest równa `stringB` .<br /><br /> Przykład:<br /><br /> `Condition="'$(Configuration)'=='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy. W tym sprawdzaniu nie jest rozróżniana wielkość liter.|
+|'`stringA`' != '`stringB`'|Daje w `true` przypadku, gdy `stringA` nie jest równe `stringB` .<br /><br /> Przykład:<br /><br /> `Condition="'$(Configuration)'!='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy. W tym sprawdzaniu nie jest rozróżniana wielkość liter.|
 |\<, >, \<=, >=|Oblicza wartości liczbowe argumentów operacji. Zwraca `true` czy wartość oceny relacyjnej to true. Operandy muszą mieć wartość dziesiętną lub szesnastkową. Liczby szesnastkowe muszą zaczynać się od ciągu "0x". **Uwaga:**  W formacie XML, znaki `<` i `>` muszą być zmienione. Symbol `<` jest reprezentowany jako `&lt;` . Symbol `>` jest reprezentowany jako `&gt;` .|
-|Istnieje (' `stringA` ')|Zwraca wartość, `true` Jeśli istnieje plik lub folder o nazwie `stringA` .<br /><br /> Na przykład:<br /><br /> `Condition="!Exists('$(Folder)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy.|
-|HasTrailingSlash (' `stringA` ')|Zwraca wartość `true` , jeśli określony ciąg zawiera znak ukośnika odwrotnego ( \\ ) lub ukośnika (/).<br /><br /> Na przykład:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy.|
+|Istnieje (' `stringA` ')|Zwraca wartość, `true` Jeśli istnieje plik lub folder o nazwie `stringA` .<br /><br /> Przykład:<br /><br /> `Condition="!Exists('$(Folder)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy.|
+|HasTrailingSlash (' `stringA` ')|Zwraca wartość `true` , jeśli określony ciąg zawiera znak ukośnika odwrotnego ( \\ ) lub ukośnika (/).<br /><br /> Przykład:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy.|
 |!|Daje w `true` przypadku, gdy operand zwraca wartość `false` .|
 |`And`|Zwraca wartość, `true` Jeśli oba operandy są oceniane do `true` .|
 |`Or`|Zwraca wartość, `true` Jeśli co najmniej jeden z operandów ma wartość `true` .|

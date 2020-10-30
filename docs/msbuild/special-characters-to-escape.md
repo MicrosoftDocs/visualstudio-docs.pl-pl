@@ -1,5 +1,7 @@
 ---
 title: Znaki specjalne do ucieczki | Microsoft Docs
+description: Dowiedz się więcej na temat znaków specjalnych, które należy zmienić tylko wtedy, gdy mają specjalne znaczenie w kontekście, w którym są używane.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c3a0feed4177bd41ee2b77edc49336bfda3171b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 433e762bf68b6a3956616e0ccccc229bca8f86b9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184045"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048271"
 ---
 # <a name="special-characters-to-escape"></a>Znaki specjalne, które należy poprzedzić znakiem ucieczki
 

@@ -1,5 +1,7 @@
 ---
 title: XmlPoke — — zadanie | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa zadania XmlPoke — do ustawiania wartości określonych przez zapytanie XPath do pliku XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b69afc20d15802ad79b201ca38e2d69f1d473b1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35e29004116807092452a08d3835ba3e5e1dabcd
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82072510"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047226"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke — zadanie
 

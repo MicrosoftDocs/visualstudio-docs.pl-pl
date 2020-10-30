@@ -1,5 +1,7 @@
 ---
 title: Zadania programu MSBuild | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa zadań lub jednostek kodu wykonywalnego, które wykonują niepodzielne operacje kompilacji podczas procesu kompilacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b065ea8cdaea2e2b39aa78a666ea0348f7b254ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76b359eebe0f4a22bef3ff6c6742a5134aa4520c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633138"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049048"
 ---
 # <a name="msbuild-tasks"></a>zadania programu MSBuild
 

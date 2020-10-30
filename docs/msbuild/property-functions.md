@@ -1,5 +1,7 @@
 ---
 title: Funkcje właściwości | Microsoft Docs
+description: Dowiedz się, jak używać funkcji właściwości, które są wywołaniami .NET Framework metod, które są wyświetlane w definicjach właściwości programu MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c1e7a90d5d037865d9942ea1b91f33d7724706f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183655"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048813"
 ---
 # <a name="property-functions"></a>Funkcje właściwości
 
@@ -248,9 +250,9 @@ $([MSBuild]::GetPathOfFileAbove(dir.props))
 W poniższych przykładach pokazano, jak ta funkcja jest używana:
 
 ```
-$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
+$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
-$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
+$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
 ```
 
 ## <a name="msbuild-getregistryvaluefromview"></a>GetRegistryValueFromView MSBuild
@@ -263,7 +265,7 @@ Składnia tej funkcji właściwości to:
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-System operacyjny Windows 64-bitowy HKEY_LOCAL_MACHINE obsługuje klucz rejestru **\software\wow6432node** , który przedstawia HKEY_LOCAL_MACHINE widok rejestru **\software** dla aplikacji 32-bitowych.
+System operacyjny Windows 64-bitowy zachowuje **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** klucz rejestru, który przedstawia **HKEY_LOCAL_MACHINE\SOFTWARE** widok rejestru dla aplikacji 32-bitowych.
 
 Domyślnie aplikacja 32-bitowa działająca w emulatorze WOW64 uzyskuje dostęp do widoku rejestru 32-bitowego, a aplikacja 64-bit uzyskuje dostęp do widoku rejestru 64-bitowego.
 

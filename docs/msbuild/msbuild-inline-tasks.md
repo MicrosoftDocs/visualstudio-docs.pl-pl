@@ -1,5 +1,7 @@
 ---
 title: Zadania wbudowane programu MSBuild | Microsoft Docs
+description: Dowiedz się, jak tworzyć wbudowane zadania programu MSBuild przez skompilowanie klasy implementującej interfejs Microsoft. Build. Framework. ITask.
+ms.custom: SEO-VS-2020
 ms.date: 09/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 848e9c8c4e3dcc7d364f2001393730fbcc56be7e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81638043"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046334"
 ---
 # <a name="msbuild-inline-tasks"></a>Zadania wbudowane programu MSBuild
 
@@ -117,7 +119,7 @@ Log.LogError("Hello, world!");
 </Project>
 ```
 
- Zadanie HelloWorld można zapisać w pliku o nazwie *HelloWorld. targets*, a następnie wywołać go z projektu w następujący sposób.
+ Zadanie HelloWorld można zapisać w pliku o nazwie *HelloWorld. targets* , a następnie wywołać go z projektu w następujący sposób.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

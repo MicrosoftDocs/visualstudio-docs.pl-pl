@@ -1,5 +1,7 @@
 ---
 title: Konfiguracje standardowego i niestandardowego zestawu narzędzi | Microsoft Docs
+description: Dowiedz się więcej o standardowych i niestandardowych zestawach narzędzi programu MSBuild, które zawierają odwołania do zadań, obiektów docelowych i narzędzi, których można użyć do kompilowania projektu aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 01/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb75d6fc02f2841383127482503799b2c78512cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b82eaf6ca52b04d39e9f776feca74f5bb223a0d5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289186"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048180"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Konfiguracje standardowego i niestandardowego zestawu narzędzi
 
@@ -55,15 +57,15 @@ Program Visual Studio 2017 i jego nowsze wersje nie używają klucza rejestru dl
 
 |Klucz rejestru|Nazwa klucza|Wartość klucza ciągu|
 |------------------|--------------|----------------------|
-|**\ HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\** |**MSBuildToolsPath**|**Ścieżka instalacji .NET Framework 2,0**|
-|**\ HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\** |**MSBuildToolsPath**|**Ścieżka instalacji .NET Framework 3,5**|
-|**\ HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\** |**MSBuildToolsPath**|**Ścieżka instalacji .NET Framework 4**|
+|**\ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\** |**MSBuildToolsPath**|**Ścieżka instalacji .NET Framework 2,0**|
+|**\ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\** |**MSBuildToolsPath**|**Ścieżka instalacji .NET Framework 3,5**|
+|**\ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\** |**MSBuildToolsPath**|**Ścieżka instalacji .NET Framework 4**|
 
 ### <a name="sub-toolsets"></a>Podzestawy narzędzi
 
  Jeśli klucz rejestru w poprzedniej tabeli ma podklucz, program MSBuild używa go do określenia ścieżki podzestawu narzędzi, który zastępuje ścieżkę w nadrzędnym zestawie narzędzi. Następujący podklucz jest przykładem:
 
- **\ HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0\12.0**
+ **\ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0\12.0**
 
  Jeśli wszystkie właściwości są zdefiniowane zarówno w podstawowym zestawie narzędzi, jak i w wybranym podzestawie, są używane definicje właściwości w podzestawie narzędzi. Na przykład zestaw narzędzi programu MSBuild 4,0 definiuje `SDK40ToolsPath` , aby wskazać wersję 7.0 a SDK, ale zestaw narzędzi MSBuild 4.0 \ 11.0 definiuje tę samą właściwość, aby wskazywała na 8.0 a SDK. Jeśli `VisualStudioVersion` to ustawienie ma wartość `SDK40ToolsPath` 7.0 a, ale jeśli `VisualStudioVersion` jest ustawiona na 11,0, właściwość będzie zamiast niego wskazywać 8.0 a.
 
@@ -74,9 +76,9 @@ Program Visual Studio 2017 i jego nowsze wersje nie używają klucza rejestru dl
 
 ## <a name="custom-toolset-definitions"></a>Niestandardowe definicje zestawu narzędzi
 
- Jeśli standardowy zestaw narzędzi nie spełnia wymagań kompilacji, można utworzyć niestandardowy zestaw narzędzi. Na przykład może istnieć scenariusz laboratorium kompilacji, w którym trzeba mieć oddzielny system do kompilowania projektów języka C++. Za pomocą niestandardowego zestawu narzędzi, można przypisać niestandardowe wartości do `ToolsVersion` atrybutu podczas tworzenia projektów lub uruchamiania *MSBuild.exe*. Dzięki temu można również użyć `$(MSBuildToolsPath)` właściwości do importowania plików *docelowych* z tego katalogu, a także do definiowania własnych niestandardowych właściwości zestawu narzędzi, które mogą być używane dla dowolnego projektu, który używa tego zestawu narzędzi.
+ Jeśli standardowy zestaw narzędzi nie spełnia wymagań kompilacji, można utworzyć niestandardowy zestaw narzędzi. Na przykład może istnieć scenariusz laboratorium kompilacji, w którym trzeba mieć oddzielny system do kompilowania projektów języka C++. Za pomocą niestandardowego zestawu narzędzi, można przypisać niestandardowe wartości do `ToolsVersion` atrybutu podczas tworzenia projektów lub uruchamiania *MSBuild.exe* . Dzięki temu można również użyć `$(MSBuildToolsPath)` właściwości do importowania plików *docelowych* z tego katalogu, a także do definiowania własnych niestandardowych właściwości zestawu narzędzi, które mogą być używane dla dowolnego projektu, który używa tego zestawu narzędzi.
 
- Określ niestandardowy zestaw narzędzi w pliku konfiguracyjnym dla *MSBuild.exe* (lub niestandardowego narzędzia, które hostuje aparat MSBuild, jeśli jest to dane, które są używane). Na przykład plik konfiguracyjny *MSBuild.exe* może zawierać następującą definicję zestawu narzędzi, jeśli chcesz zdefiniować zestaw narzędzi o nazwie *MyCustomToolset*.
+ Określ niestandardowy zestaw narzędzi w pliku konfiguracyjnym dla *MSBuild.exe* (lub niestandardowego narzędzia, które hostuje aparat MSBuild, jeśli jest to dane, które są używane). Na przykład plik konfiguracyjny *MSBuild.exe* może zawierać następującą definicję zestawu narzędzi, jeśli chcesz zdefiniować zestaw narzędzi o nazwie *MyCustomToolset* .
 
 ```xml
 <msbuildToolsets default="MyCustomToolset">

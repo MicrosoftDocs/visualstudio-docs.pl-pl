@@ -1,5 +1,7 @@
 ---
 title: Używanie wielu procesorów do kompilowania projektów | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild wykorzystuje systemy z wieloma procesorami lub rdzeniami, tworząc oddzielny proces kompilacji dla każdego dostępnego procesora.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dc62112324f7ad19c47b346ac8c1e3f86570b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6c523d21a194626805168d6fee3054e77586b19
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631305"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047582"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>Używanie wielu procesorów do kompilowania projektów
 
@@ -36,7 +38,7 @@ Program MSBuild potrafi optymalnie wykorzystywać komputery z wieloma procesoram
 
 ## <a name="c-project-vcxproj-and-solution-sln-files"></a>Pliki projektu C++ (. vcxproj) i rozwiązania (. sln)
 
- Do [zadania programu MSBuild](../msbuild/msbuild-task.md)można przesłać zarówno pliki projektów C++ (*. vcxproj*), jak i rozwiązania (*. sln*). W przypadku projektów C++ wywoływana jest VCWrapperProject, a następnie tworzony jest wewnętrzny projekt MSBuild. W przypadku rozwiązań C++ tworzony jest SolutionWrapperProject, a następnie tworzony jest wewnętrzny projekt MSBuild. W obu przypadkach projekt, który jest traktowany, jest traktowane tak samo jak każdy inny projekt MSBuild.
+ Do [zadania programu MSBuild](../msbuild/msbuild-task.md)można przesłać zarówno pliki projektów C++ ( *. vcxproj* ), jak i rozwiązania ( *. sln* ). W przypadku projektów C++ wywoływana jest VCWrapperProject, a następnie tworzony jest wewnętrzny projekt MSBuild. W przypadku rozwiązań C++ tworzony jest SolutionWrapperProject, a następnie tworzony jest wewnętrzny projekt MSBuild. W obu przypadkach projekt, który jest traktowany, jest traktowane tak samo jak każdy inny projekt MSBuild.
 
 ## <a name="multi-process-execution"></a>Wykonywanie przez wiele procesów
 

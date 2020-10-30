@@ -1,7 +1,8 @@
 ---
 title: Integracja z programem Visual Studio (MSBuild)
 titleSuffix: ''
-ms.custom: seodec18
+description: Dowiedz się, w jaki sposób program Visual Studio może hostować projekty w formacie MSBuild, nawet jeśli zostały one utworzone przez różne narzędzia i zostały dostosowane procesy kompilacji.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -20,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3468ab5a6a185a759ab43229758c0ff4e9d00e35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17cb665d1b5ae399647868652f2b1e73fcd4543e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631201"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046685"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja z programem Visual Studio (MSBuild)
 
@@ -37,7 +38,7 @@ Program Visual Studio obsługuje narzędzia MSBuild do ładowania i kompilowania
 
 ## <a name="project-file-name-extensions"></a>Rozszerzenia nazwy pliku projektu
 
- *MSBuild.exe* rozpoznaje wszystkie rozszerzenia nazw plików projektu pasujące do wzorca *. \* proj*. Jednak program Visual Studio rozpoznaje tylko podzestaw tych rozszerzeń nazw plików projektu, co określa system projektu specyficzny dla języka, który załaduje projekt. Program Visual Studio nie ma niezależnego od języka systemu projektu opartego na języku MSBuild.
+ *MSBuild.exe* rozpoznaje wszystkie rozszerzenia nazw plików projektu pasujące do wzorca *. \* proj* . Jednak program Visual Studio rozpoznaje tylko podzestaw tych rozszerzeń nazw plików projektu, co określa system projektu specyficzny dla języka, który załaduje projekt. Program Visual Studio nie ma niezależnego od języka systemu projektu opartego na języku MSBuild.
 
  Na przykład system projektu C# ładuje pliki *csproj* , ale program Visual Studio nie może załadować pliku *. xxproj* . Plik projektu dla plików źródłowych w dowolnym języku musi używać tego samego rozszerzenia co Visual Basic lub plików projektu C#, które mają być ładowane w programie Visual Studio.
 
@@ -51,7 +52,7 @@ Program Visual Studio obsługuje narzędzia MSBuild do ładowania i kompilowania
 
 ```xml
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "
-Condition=" '$(Configuration)' == 'Release' " 
+Condition=" '$(Configuration)' == 'Release' " 
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "
 ```
 
@@ -59,7 +60,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="additional-build-actions"></a>Dodatkowe akcje kompilacji
 
- Program Visual Studio umożliwia zmianę nazwy typu elementu w projekcie za pomocą właściwości **Akcja kompilacji** okna **właściwości pliku** . Nazwy typów elementów **Kompiluj**, **EmbeddedResource**, **Content**i **none** są zawsze wyświetlane w tym menu, wraz z innymi nazwami typów elementów, które znajdują się już w projekcie. Aby zapewnić, że wszystkie nazwy typów elementów niestandardowych są zawsze dostępne w tym menu, można dodać nazwy do typu elementu o nazwie `AvailableItemName` . Na przykład dodanie następującego elementu do pliku projektu spowoduje dodanie do tego menu typu niestandardowego **JScript** dla wszystkich projektów, które go zaimportują:
+ Program Visual Studio umożliwia zmianę nazwy typu elementu w projekcie za pomocą właściwości **Akcja kompilacji** okna **właściwości pliku** . Nazwy typów elementów **Kompiluj** , **EmbeddedResource** , **Content** i **none** są zawsze wyświetlane w tym menu, wraz z innymi nazwami typów elementów, które znajdują się już w projekcie. Aby zapewnić, że wszystkie nazwy typów elementów niestandardowych są zawsze dostępne w tym menu, można dodać nazwy do typu elementu o nazwie `AvailableItemName` . Na przykład dodanie następującego elementu do pliku projektu spowoduje dodanie do tego menu typu niestandardowego **JScript** dla wszystkich projektów, które go zaimportują:
 
 ```xml
 <ItemGroup>
@@ -92,13 +93,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="build-solutions"></a>Tworzenie rozwiązań
 
- W ramach programu Visual Studio, plik rozwiązania i kolejność kompilacji projektu są kontrolowane przez program Visual Studio. Podczas kompilowania rozwiązania z *msbuild.exe* w wierszu polecenia, MSBuild analizuje plik rozwiązania i porządkuje kompilacje projektu. W obu przypadkach projekty są kompilowane indywidualnie w kolejności zależności, a odwołania projektu do projektu nie są przenoszone. Natomiast w przypadku kompilowania poszczególnych projektów przy użyciu *msbuild.exe*są przenoszone odwołania projektu do projektu.
+ W ramach programu Visual Studio, plik rozwiązania i kolejność kompilacji projektu są kontrolowane przez program Visual Studio. Podczas kompilowania rozwiązania z *msbuild.exe* w wierszu polecenia, MSBuild analizuje plik rozwiązania i porządkuje kompilacje projektu. W obu przypadkach projekty są kompilowane indywidualnie w kolejności zależności, a odwołania projektu do projektu nie są przenoszone. Natomiast w przypadku kompilowania poszczególnych projektów przy użyciu *msbuild.exe* są przenoszone odwołania projektu do projektu.
 
  Podczas kompilowania w programie Visual Studio Właściwość `$(BuildingInsideVisualStudio)` jest ustawiona na `true` . Ta wartość może być używana w projekcie lub plików *targets* , aby spowodować, że kompilacja zadziała inaczej.
 
 ## <a name="display-properties-and-items"></a>Wyświetlanie właściwości i elementów
 
- Program Visual Studio rozpoznaje pewne nazwy i wartości właściwości. Na przykład następująca właściwość w projekcie spowoduje, że **aplikacja systemu Windows** będzie wyświetlana w polu **Typ aplikacji** w **projektancie projektu**.
+ Program Visual Studio rozpoznaje pewne nazwy i wartości właściwości. Na przykład następująca właściwość w projekcie spowoduje, że **aplikacja systemu Windows** będzie wyświetlana w polu **Typ aplikacji** w **projektancie projektu** .
 
 ```xml
 <OutputType>WinExe</OutputType>
@@ -110,7 +111,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  Właściwości z dowolnymi nazwami nie są wyświetlane w programie Visual Studio. Aby zmodyfikować dowolne właściwości w programie Visual Studio, należy otworzyć plik projektu w edytorze XML i ręcznie go edytować. Aby uzyskać więcej informacji, zobacz sekcję [Edycja plików projektu w programie Visual Studio](#edit-project-files-in-visual-studio) w dalszej części tego tematu.
 
- Elementy zdefiniowane w projekcie z dowolnymi nazwami typów elementów są domyślnie wyświetlane w **Eksplorator rozwiązań** w węźle projektu. Aby ukryć element z ekranu, ustaw `Visible` metadane na `false` . Na przykład następujący element będzie uczestniczyć w procesie kompilacji, ale nie będzie wyświetlany w **Eksplorator rozwiązań**.
+ Elementy zdefiniowane w projekcie z dowolnymi nazwami typów elementów są domyślnie wyświetlane w **Eksplorator rozwiązań** w węźle projektu. Aby ukryć element z ekranu, ustaw `Visible` metadane na `false` . Na przykład następujący element będzie uczestniczyć w procesie kompilacji, ale nie będzie wyświetlany w **Eksplorator rozwiązań** .
 
 ```xml
 <ItemGroup>
@@ -123,7 +124,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 > [!NOTE]
 > `Visible`Metadane są ignorowane przez **Eksplorator rozwiązań** dla projektów C++. Elementy będą zawsze wyświetlane nawet wtedy `Visible` , gdy jest ustawiony na wartość false.
 
- Elementy zadeklarowane w plikach zaimportowanych do projektu nie są wyświetlane domyślnie. Elementy utworzone w procesie kompilacji nigdy nie są wyświetlane w **Eksplorator rozwiązań**.
+ Elementy zadeklarowane w plikach zaimportowanych do projektu nie są wyświetlane domyślnie. Elementy utworzone w procesie kompilacji nigdy nie są wyświetlane w **Eksplorator rozwiązań** .
 
 ## <a name="conditions-on-items-and-properties"></a>Warunki dotyczące elementów i właściwości
 
@@ -131,7 +132,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  Podczas określania wartości właściwości do wyświetlenia, właściwości, które program Visual Studio traktuje zależne od konfiguracji, są oceniane inaczej niż właściwości, które uważają niezależne od konfiguracji. Dla właściwości, które uzna za zależne od konfiguracji, program Visual Studio ustawia `Configuration` `Platform` odpowiednio właściwości i i instruuje program MSBuild o ponownej ocenie projektu. Dla właściwości, które uzna za niezależne od konfiguracji, nie określono, jak zostaną ocenione warunki.
 
- Wyrażenia warunkowe dla elementów są zawsze ignorowane na potrzeby decydowania, czy element powinien być wyświetlany w **Eksplorator rozwiązań**.
+ Wyrażenia warunkowe dla elementów są zawsze ignorowane na potrzeby decydowania, czy element powinien być wyświetlany w **Eksplorator rozwiązań** .
 
 ## <a name="debugging"></a>Debugowanie
 
@@ -147,23 +148,23 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Aby rozładować i edytować plik projektu w programie Visual Studio
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Zwolnij projekt**.
+1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Zwolnij projekt** .
 
-     Projekt jest oznaczony **(niedostępny)**.
+     Projekt jest oznaczony **(niedostępny)** .
 
-2. W **Eksplorator rozwiązań**Otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz polecenie **Edytuj \<Project File> **.
+2. W **Eksplorator rozwiązań** Otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz polecenie **Edytuj \<Project File>** .
 
      Plik projektu zostanie otwarty w edytorze XML programu Visual Studio.
 
 3. Edytuj, Zapisz, a następnie zamknij plik projektu.
 
-4. W **Eksplorator rozwiązań**Otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz polecenie **Załaduj ponownie projekt**.
+4. W **Eksplorator rozwiązań** Otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz polecenie **Załaduj ponownie projekt** .
 
 ## <a name="intellisense-and-validation"></a>Technologia IntelliSense i walidacja
 
- W przypadku edytowania plików projektu przy użyciu edytora XML technologia IntelliSense i sprawdzanie poprawności są oparte na plikach schematu programu MSBuild. Są one instalowane w pamięci podręcznej schematów, które można znaleźć w * \<Visual Studio installation directory> \Xml\Schemas\1033\MSBuild*.
+ W przypadku edytowania plików projektu przy użyciu edytora XML technologia IntelliSense i sprawdzanie poprawności są oparte na plikach schematu programu MSBuild. Są one instalowane w pamięci podręcznej schematów, które można znaleźć w *\<Visual Studio installation directory> \Xml\Schemas\1033\MSBuild* .
 
- Podstawowe typy MSBuild są zdefiniowane w *Microsoft. Build. Core. xsd* i wspólne typy używane przez program Visual Studio są zdefiniowane w *Microsoft. Build. CommonTypes. xsd*. Aby dostosować schematy w taki sposób, aby była dostępna funkcja IntelliSense i sprawdzanie poprawności dla niestandardowych typów elementów, właściwości i zadań, można edytować *Microsoft. Build. xsd*lub utworzyć własny schemat zawierający schematy CommonTypes lub Core. Jeśli utworzysz własny schemat, musisz skierować Edytor XML, aby znaleźć go przy użyciu okna **Właściwości** .
+ Podstawowe typy MSBuild są zdefiniowane w *Microsoft. Build. Core. xsd* i wspólne typy używane przez program Visual Studio są zdefiniowane w *Microsoft. Build. CommonTypes. xsd* . Aby dostosować schematy w taki sposób, aby była dostępna funkcja IntelliSense i sprawdzanie poprawności dla niestandardowych typów elementów, właściwości i zadań, można edytować *Microsoft. Build. xsd* lub utworzyć własny schemat zawierający schematy CommonTypes lub Core. Jeśli utworzysz własny schemat, musisz skierować Edytor XML, aby znaleźć go przy użyciu okna **Właściwości** .
 
 ## <a name="edit-loaded-project-files"></a>Edytuj załadowane pliki projektu
 
@@ -197,7 +198,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="performance-shortcuts"></a>Skróty wydajności
 
- Jeśli używasz środowiska IDE programu Visual Studio, aby rozpocząć debugowanie (wybierając klawisz F5 lub wybierając **Debuguj**  >  **Rozpocznij debugowanie** na pasku menu) lub aby skompilować projekt (na przykład rozwiązanie **kompilacji kompilacji**  >  **Build Solution**), proces kompilacji używa szybkiej kontroli aktualizacji w celu zwiększenia wydajności. W niektórych przypadkach, gdy niestandardowe kompilacje tworzą pliki, które są zbudowane z kolei, sprawdzanie szybkiej aktualizacji nie identyfikuje poprawnie zmienionych plików. Projekty wymagające dokładniejszych testów aktualizacji mogą wyłączyć szybkie sprawdzanie przez ustawienie zmiennej środowiskowej `DISABLEFASTUPTODATECHECK=1` . Alternatywnie projekty można ustawić jako właściwość programu MSBuild w projekcie lub w pliku importowanym przez projekt.
+ Jeśli używasz środowiska IDE programu Visual Studio, aby rozpocząć debugowanie (wybierając klawisz F5 lub wybierając **Debuguj**  >  **Rozpocznij debugowanie** na pasku menu) lub aby skompilować projekt (na przykład rozwiązanie **kompilacji kompilacji**  >  **Build Solution** ), proces kompilacji używa szybkiej kontroli aktualizacji w celu zwiększenia wydajności. W niektórych przypadkach, gdy niestandardowe kompilacje tworzą pliki, które są zbudowane z kolei, sprawdzanie szybkiej aktualizacji nie identyfikuje poprawnie zmienionych plików. Projekty wymagające dokładniejszych testów aktualizacji mogą wyłączyć szybkie sprawdzanie przez ustawienie zmiennej środowiskowej `DISABLEFASTUPTODATECHECK=1` . Alternatywnie projekty można ustawić jako właściwość programu MSBuild w projekcie lub w pliku importowanym przez projekt.
 
  W przypadku regularnych kompilacji w programie Visual Studio sprawdzanie szybkiej aktualizacji nie ma zastosowania, a projekt zostanie skompilowany jako jeśli wywołano kompilację w wierszu polecenia.
 

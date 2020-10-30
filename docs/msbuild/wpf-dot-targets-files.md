@@ -1,5 +1,7 @@
 ---
 title: Kodow. Pliki docelowe | Microsoft Docs
+description: Dowiedz się, jak Windows Presentation Foundation (WPF) rozszerza MSBuild przez dodanie zestawu zadań specyficznych dla platformy WPF w specjalnym pliku. targets, Microsoft. WinFX. targets.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,16 +19,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3225777c020272a24ac124bf6d039c2154e2ff3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a81caf88798f1b02c212b6ee5a802e6ea824758
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630954"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047531"
 ---
 # <a name="wpf-targets-files"></a>WPF — pliki targets
 
-Windows Presentation Foundation (WPF) rozszerza MSBuild przez dodanie zestawu zadań specyficznych dla platformy WPF, które są połączone w specjalny plik *. targets* , *Microsoft. WinFX. targets*. Ten plik łączy zestaw zadań programu MSBuild, które są wymagane do skompilowania projektu MSBuild w WPF.
+Windows Presentation Foundation (WPF) rozszerza MSBuild przez dodanie zestawu zadań specyficznych dla platformy WPF, które są połączone w specjalny plik *. targets* , *Microsoft. WinFX. targets* . Ten plik łączy zestaw zadań programu MSBuild, które są wymagane do skompilowania projektu MSBuild w WPF.
 
 ## <a name="see-also"></a>Zobacz też
 

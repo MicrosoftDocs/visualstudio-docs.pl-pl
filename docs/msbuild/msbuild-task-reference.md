@@ -1,5 +1,7 @@
 ---
 title: Odwołanie do zadania programu MSBuild | Microsoft Docs
+description: Dowiedz się więcej o zadaniach, które są zawarte w programie MSBuild, które zapewniają kod, który jest uruchamiany podczas procesu kompilacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58e247dc242fcacd7ea94f9f078af05dd56299e0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78865326"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049079"
 ---
 # <a name="msbuild-task-reference"></a>Odwołanie do zadania programu MSBuild
 
@@ -31,7 +33,7 @@ Oprócz parametrów wymienionych w tematach w tej sekcji każde zadanie ma równ
 | Parametr | Opis |
 |-------------------| - |
 | `Condition` | Opcjonalny `String` parametr.<br /><br /> `Boolean`Wyrażenie używane przez aparat MSBuild do określenia, czy zadanie zostanie wykonane. Aby uzyskać informacje o warunkach, które są obsługiwane przez program MSBuild, zobacz [warunki](../msbuild/msbuild-conditions.md). |
-| `ContinueOnError` | Parametr opcjonalny. Może zawierać jedną z następujących wartości:<br /><br /> -   **WarnAndContinue** lub **true**. Gdy zadanie się nie powiedzie, kolejne zadania w elemencie [Target](../msbuild/target-element-msbuild.md) i Build są nadal wykonywane, a wszystkie błędy z zadania są traktowane jako ostrzeżenia.<br />-   **ErrorAndContinue**. Gdy zadanie nie powiedzie się, kolejne zadania w `Target` elemencie i kompilacja będą nadal wykonywane, a wszystkie błędy z zadania są traktowane jako błędy.<br />-   **ErrorAndStop** lub **false** (wartość domyślna). Jeśli zadanie nie powiedzie się, pozostałe zadania w `Target` elemencie i kompilacja nie są wykonywane, a cały `Target` element i kompilacja są uważane za zakończone niepowodzeniem.<br /><br /> Wersje .NET Framework przed 4,5 obsługiwane tylko `true` `false` wartości i.<br /><br /> Aby uzyskać więcej informacji, zobacz [How to: ignore Errors in Tasks](../msbuild/how-to-ignore-errors-in-tasks.md). |
+| `ContinueOnError` | Parametr opcjonalny. Może zawierać jedną z następujących wartości:<br /><br /> -   **WarnAndContinue** lub **true** . Gdy zadanie się nie powiedzie, kolejne zadania w elemencie [Target](../msbuild/target-element-msbuild.md) i Build są nadal wykonywane, a wszystkie błędy z zadania są traktowane jako ostrzeżenia.<br />-   **ErrorAndContinue** . Gdy zadanie nie powiedzie się, kolejne zadania w `Target` elemencie i kompilacja będą nadal wykonywane, a wszystkie błędy z zadania są traktowane jako błędy.<br />-   **ErrorAndStop** lub **false** (wartość domyślna). Jeśli zadanie nie powiedzie się, pozostałe zadania w `Target` elemencie i kompilacja nie są wykonywane, a cały `Target` element i kompilacja są uważane za zakończone niepowodzeniem.<br /><br /> Wersje .NET Framework przed 4,5 obsługiwane tylko `true` `false` wartości i.<br /><br /> Aby uzyskać więcej informacji, zobacz [How to: ignore Errors in Tasks](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ## <a name="in-this-section"></a>W tej sekcji
 
@@ -53,7 +55,7 @@ Oprócz parametrów wymienionych w tematach w tej sekcji każde zadanie ma równ
 
 - [AspNetCompiler — zadanie](../msbuild/aspnetcompiler-task.md)
 
- Zawija *aspnet_compiler.exe*, narzędzie do prekompilowania aplikacji ASP.NET.
+ Zawija *aspnet_compiler.exe* , narzędzie do prekompilowania aplikacji ASP.NET.
 
 - [AssignCulture — zadanie](../msbuild/assignculture-task.md)
 

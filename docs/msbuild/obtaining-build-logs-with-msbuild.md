@@ -1,5 +1,7 @@
 ---
 title: Uzyskiwanie dzienników kompilacji przy użyciu programu MSBuild | Microsoft Docs
+description: Dowiedz się, jak używać przełączników z programem MSBuild, aby określić, jak dużo danych kompilacji ma zostać przejrzane i czy dane kompilacji mają być zapisywane do co najmniej jednego pliku.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3dad3a9b157989ecf993cf951f91fc6296ecdf7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf13e23d69dfeba967e8e971ad2463cef4546567
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238611"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048960"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Uzyskiwanie dzienników kompilacji przy użyciu programu MSBuild
 
@@ -35,7 +37,7 @@ Korzystając z przełączników w programie MSBuild, można określić, ile dany
 
 - Podsumowanie kompilacji.
 
-Za pomocą przełącznika **-verbose** (**-v**) można kontrolować ilość danych wyświetlanych w dzienniku danych wyjściowych. W celu rozwiązywania problemów Użyj poziomu szczegółowości obu `detailed` ( `d` ) lub `diagnostic` ( `diag` ), który zapewnia najwięcej informacji.
+Za pomocą przełącznika **-verbose** ( **-v** ) można kontrolować ilość danych wyświetlanych w dzienniku danych wyjściowych. W celu rozwiązywania problemów Użyj poziomu szczegółowości obu `detailed` ( `d` ) lub `diagnostic` ( `diag` ), który zapewnia najwięcej informacji.
 
 Proces kompilacji może być wolniejszy, gdy ustawisz poziom **szczegółowości** na `detailed` , a nawet wolniej, gdy ustawisz poziom **szczegółowości** na `diagnostic` .
 
@@ -47,7 +49,7 @@ msbuild MyProject.proj -t:go -v:diag
 
 W poniższej tabeli przedstawiono, w jaki sposób poziom szczegółowości dziennika (wartości kolumn) ma wpływ na to, które typy komunikatów (wartości wierszy) są rejestrowane.
 
-| Typ komunikatu/poziom szczegółowości              | Quiet | Minimalny | Normalne | szczegółowo | Diagnostyka |
+| Typ komunikatu/poziom szczegółowości              | Quiet | Minimalny | Normalne | szczegółowo | Diagnostyczne |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
 | błędy                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | Ostrzeżenia                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
@@ -58,13 +60,13 @@ W poniższej tabeli przedstawiono, w jaki sposób poziom szczegółowości dzien
 
 ## <a name="save-the-build-log-to-a-file"></a>Zapisz dziennik kompilacji w pliku
 
-Aby zapisać dane kompilacji do pliku, można użyć przełącznika **-FileLogger** (**FL**). Poniższy przykład zapisuje dane kompilacji do pliku o nazwie *MSBuild. log*.
+Aby zapisać dane kompilacji do pliku, można użyć przełącznika **-FileLogger** ( **FL** ). Poniższy przykład zapisuje dane kompilacji do pliku o nazwie *MSBuild. log* .
 
 ```cmd
 msbuild MyProject.proj -t:go -fileLogger
 ```
 
- W poniższym przykładzie plik dziennika ma nazwę *MyProjectOutput. log*, a poziom szczegółowości danych wyjściowych dziennika jest ustawiony na `diagnostic` . Należy określić te dwa ustawienia za pomocą przełącznika **-fileLoggerParameters** ( `flp` ).
+ W poniższym przykładzie plik dziennika ma nazwę *MyProjectOutput. log* , a poziom szczegółowości danych wyjściowych dziennika jest ustawiony na `diagnostic` . Należy określić te dwa ustawienia za pomocą przełącznika **-fileLoggerParameters** ( `flp` ).
 
 ```cmd
 msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diagnostic
@@ -74,7 +76,7 @@ msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diag
 
 ## <a name="save-the-log-output-to-multiple-files"></a>Zapisz dane wyjściowe dziennika w wielu plikach
 
- Poniższy przykład zapisuje cały dziennik do *msbuild1. log*, tylko błędy do *JustErrors. log*i tylko ostrzeżenia do *JustWarnings. log*. W przykładzie są stosowane numery plików dla każdego z trzech plików. Numery plików są określane bezpośrednio po przełącznikach **-FL** i **-FLP** (na przykład `-fl1` i `-flp1` ).
+ Poniższy przykład zapisuje cały dziennik do *msbuild1. log* , tylko błędy do *JustErrors. log* i tylko ostrzeżenia do *JustWarnings. log* . W przykładzie są stosowane numery plików dla każdego z trzech plików. Numery plików są określane bezpośrednio po przełącznikach **-FL** i **-FLP** (na przykład `-fl1` i `-flp1` ).
 
  Przełączniki **-fileLoggerParameters** ( `flp` ) dla plików 2 i 3 określają, co należy nazwać każdy plik i co należy uwzględnić w każdym pliku. Nie określono nazwy dla pliku 1, więc jest używana domyślna nazwa *msbuild1. log* .
 
@@ -86,9 +88,9 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 
 ## <a name="save-a-binary-log"></a>Zapisz dziennik binarny
 
-Dziennik można zapisać w skompresowanym formacie binarnym przy użyciu przełącznika **-binaryLogger** (**BL**). Ten dziennik zawiera szczegółowy opis procesu kompilacji i może zostać odczytany przez niektóre narzędzia do analizy dzienników.
+Dziennik można zapisać w skompresowanym formacie binarnym przy użyciu przełącznika **-binaryLogger** ( **BL** ). Ten dziennik zawiera szczegółowy opis procesu kompilacji i może zostać odczytany przez niektóre narzędzia do analizy dzienników.
 
-W poniższym przykładzie jest tworzony binarny plik dziennika o nazwie *binarylogfilename*.
+W poniższym przykładzie jest tworzony binarny plik dziennika o nazwie *binarylogfilename* .
 
 ```cmd
 -bl:binarylogfilename.binlog

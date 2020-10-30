@@ -1,5 +1,7 @@
 ---
 title: Odwołanie do zadania WPF MSBuild | Microsoft Docs
+description: Zobacz odwołanie do zadania dla procesu kompilacji Windows Presentation Foundation (WPF), który rozszerza MSBuild z dodatkowymi zadaniami.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 395f50db4159e8ace1b317f5926ed676c7462fe3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630850"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047520"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Odwołanie do zadania WPF MSBuild
 
@@ -57,7 +59,7 @@ Proces kompilacji Windows Presentation Foundation (WPF) rozszerza program Micros
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Osadza jeden lub więcej zasobów (*. jpg*, *. ico*, *. bmp*, XAML w formacie binarnym i innych typów rozszerzenia) w pliku *resources* .
+ Osadza jeden lub więcej zasobów ( *. jpg* , *. ico* , *. bmp* , XAML w formacie binarnym i innych typów rozszerzenia) w pliku *resources* .
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -65,7 +67,7 @@ Proces kompilacji Windows Presentation Foundation (WPF) rozszerza program Micros
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Dodaje **\<hostInBrowser />** element do manifestu aplikacji (* \<projectname> . exe. manifest*) podczas kompilowania projektu aplikacji przeglądarki XAML (XBAP).
+ Dodaje **\<hostInBrowser />** element do manifestu aplikacji ( *\<projectname> . exe. manifest* ) podczas kompilowania projektu aplikacji przeglądarki XAML (XBAP).
 
 ## <a name="see-also"></a>Zobacz też
 

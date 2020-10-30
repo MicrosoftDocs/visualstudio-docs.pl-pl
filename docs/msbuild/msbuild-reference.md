@@ -1,5 +1,7 @@
 ---
 title: Odwołanie MSBuild | Microsoft Docs
+description: Uzyskaj dostęp do artykułów zawierających informacje referencyjne dotyczące programu MSBuild, system kompilacji dla programu Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b164d3d141c66817afd0eb88054fd9220656c0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5b7bb9287f26825ad1a90c3f339d7308fd6def1
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633268"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046573"
 ---
 # <a name="msbuild-reference"></a>Dokumentacja programu MSBuild
 

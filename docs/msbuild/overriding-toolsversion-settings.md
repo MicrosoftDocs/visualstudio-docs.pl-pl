@@ -1,5 +1,7 @@
 ---
 title: Zastępowanie ustawień ToolsVersion | Microsoft Docs
+description: Dowiedz się kilka sposobów, aby zmienić lub zastąpić wartość zestawu narzędzi MSBuild dla projektów i rozwiązań.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29fed063d4c223cf0b1862384612ea5aa84b52b0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633021"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048903"
 ---
 # <a name="override-toolsversion-settings"></a>Zastąp ustawienia ToolsVersion
 
@@ -30,7 +32,7 @@ Zestaw narzędzi dla projektów i rozwiązań można zmienić na jeden z trzech 
 
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Zastąp ustawienia ToolsVersion projektów i rozwiązań w kompilacjach w wierszu polecenia
 
- Mimo że projekty programu Visual Studio zwykle kompilują się z ToolsVersion określonym w pliku projektu, można użyć `-ToolsVersion` przełącznika (lub `-tv` ) w wierszu polecenia, aby przesłonić tę wartość i skompilować wszystkie projekty i współzależności między projektami a różnymi zestawami narzędzi. Na przykład:
+ Mimo że projekty programu Visual Studio zwykle kompilują się z ToolsVersion określonym w pliku projektu, można użyć `-ToolsVersion` przełącznika (lub `-tv` ) w wierszu polecenia, aby przesłonić tę wartość i skompilować wszystkie projekty i współzależności między projektami a różnymi zestawami narzędzi. Przykład:
 
 ```cmd
 msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
@@ -121,7 +123,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     1. Jeśli zmienna środowiskowa `MSBUILDDEFAULTTOOLSVERSION` ma ustawioną wartość `ToolsVersion` , należy ją użyć.
 
-    2. Jeśli `DefaultOverrideToolsVersion` jest ustawiona w *MSBuild.exe.config*, należy go użyć.
+    2. Jeśli `DefaultOverrideToolsVersion` jest ustawiona w *MSBuild.exe.config* , należy go użyć.
 
     3. Jeśli `DefaultOverrideToolsVersion` jest ustawiona w rejestrze, należy go użyć.
 

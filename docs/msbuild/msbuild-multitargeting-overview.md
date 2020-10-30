@@ -1,5 +1,7 @@
 ---
 title: Omówienie funkcji wieloadresowych programu MSBuild | Microsoft Docs
+description: Dowiedz się, jak używać programu MSBuild do kompilowania aplikacji do uruchamiania w jednej z kilku wersji .NET Framework oraz na jednej z kilku platform systemowych.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 609c764192673e4d3f9fbd99a1bc572e9d78db7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47b4ba2c27e130580af961216739289c6c7e9585
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183525"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046304"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Przegląd wielowersyjności kodu w programie MSBuild
 
@@ -28,7 +30,7 @@ Za pomocą programu MSBuild można skompilować aplikację do uruchamiania w jed
 
 - Można wskazać platformę inną niż .NET Framework, na przykład platformę Silverlight.
 
-- Można wskazać *Profil platformy*, który jest wstępnie zdefiniowanym podzbiorem platformy docelowej.
+- Można wskazać *Profil platformy* , który jest wstępnie zdefiniowanym podzbiorem platformy docelowej.
 
 - Jeśli dodatek Service Pack dla bieżącej wersji .NET Framework jest wydawany, można go wskazać.
 
@@ -36,11 +38,11 @@ Za pomocą programu MSBuild można skompilować aplikację do uruchamiania w jed
 
 ## <a name="target-framework-and-platform"></a>Struktura docelowa i platforma
 
- Platforma *docelowa* to wersja .NET Framework, do której projekt został skompilowany, a *platforma docelowa* to platforma systemowa, na której jest zbudowany projekt.  Na przykład możesz chcieć użyć aplikacji .NET Framework 2,0 na platformie 32-bitowej, która jest zgodna z rodziną procesorów 80x86 (x86). Kombinacja struktury docelowej i platformy docelowej jest znana jako *kontekst docelowy*. Aby uzyskać więcej informacji, zobacz [Target Framework i Target platform](../msbuild/msbuild-target-framework-and-target-platform.md).
+ Platforma *docelowa* to wersja .NET Framework, do której projekt został skompilowany, a *platforma docelowa* to platforma systemowa, na której jest zbudowany projekt.  Na przykład możesz chcieć użyć aplikacji .NET Framework 2,0 na platformie 32-bitowej, która jest zgodna z rodziną procesorów 80x86 (x86). Kombinacja struktury docelowej i platformy docelowej jest znana jako *kontekst docelowy* . Aby uzyskać więcej informacji, zobacz [Target Framework i Target platform](../msbuild/msbuild-target-framework-and-target-platform.md).
 
 ## <a name="toolset-toolsversion"></a>Zestaw narzędzi (ToolsVersion)
 
- Zestaw narzędzi zbiera narzędzia, zadania i elementy docelowe, które są używane do tworzenia aplikacji. Zestaw narzędzi zawiera kompilatory, takie jak *csc.exe* i *vbc.exe*, plik wspólnych obiektów docelowych (*Microsoft. Common. targets*) i plik wspólnych zadań (*Microsoft. Common. Tasks*). Zestaw narzędzi 4,5 może służyć do kierowania .NET Framework wersjami 2,0, 3,0, 3,5, 4 i 4,5. Jednak zestaw narzędzi 2,0 może być używany tylko do .NET Framework wersji 2,0. Aby uzyskać więcej informacji, zobacz zestaw [narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
+ Zestaw narzędzi zbiera narzędzia, zadania i elementy docelowe, które są używane do tworzenia aplikacji. Zestaw narzędzi zawiera kompilatory, takie jak *csc.exe* i *vbc.exe* , plik wspólnych obiektów docelowych ( *Microsoft. Common. targets* ) i plik wspólnych zadań ( *Microsoft. Common. Tasks* ). Zestaw narzędzi 4,5 może służyć do kierowania .NET Framework wersjami 2,0, 3,0, 3,5, 4 i 4,5. Jednak zestaw narzędzi 2,0 może być używany tylko do .NET Framework wersji 2,0. Aby uzyskać więcej informacji, zobacz zestaw [narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 ## <a name="reference-assemblies"></a>Odwoływanie się do zestawów
 

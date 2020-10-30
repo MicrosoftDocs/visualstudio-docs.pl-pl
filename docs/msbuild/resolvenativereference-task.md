@@ -1,5 +1,7 @@
 ---
 title: ResolveNativeReference — — zadanie | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa zadania ResolveNativeReference — do rozpoznawania natywnych odwołań przez implementację klasy Microsoft. Build. Tasks. ResolveNativeReference —.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b76b31e96947914c9a641ed4ceb23c7761eb85
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad9f5c85a3a295971a5f80fcb994c382346d9af3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632683"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048538"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference — zadanie
 

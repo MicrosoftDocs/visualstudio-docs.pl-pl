@@ -1,5 +1,7 @@
 ---
 title: Klasa bazowa zadania | Microsoft Docs
+description: Dowiedz się więcej na temat parametrów, które Klasa bazowa Microsoft. Build. Utilities. Task dodaje do zadań, które dziedziczą z niego.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7d6e0870f809a30bc3feb7ecb7a7302b7729124
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41557eb7df3da8a6322a3951520918ffb158b57a
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631955"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047999"
 ---
 # <a name="task-base-class"></a>Task, klasa podstawowa
 

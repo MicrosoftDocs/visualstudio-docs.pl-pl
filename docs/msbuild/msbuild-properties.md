@@ -1,5 +1,7 @@
 ---
 title: Właściwości programu MSBuild | Microsoft Docs
+description: Dowiedz się, jak pary właściwości nazwa-wartość programu MSBuild mogą przekazywać wartości do zadań, oceniać warunki i przechowywać wartości.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39f1f612244fedcc707475d067e67500dc76e1d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61cff0bfa1db43b196d7f6403b5140f9af2947ba
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633294"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046133"
 ---
 # <a name="msbuild-properties"></a>właściwości programu MSBuild
 
@@ -64,7 +66,7 @@ Właściwości to pary nazwa-wartość, których można używać do konfigurowan
 
 ## <a name="registry-properties"></a>Właściwości rejestru
 
- Wartości rejestru systemu można odczytać za pomocą następującej składni, gdzie `Hive` jest gałąź rejestru (na przykład **HKEY_LOCAL_MACHINE**), `MyKey` jest nazwą klucza, `MySubKey` jest nazwą podklucza i `Value` jest wartością podklucza.
+ Wartości rejestru systemu można odczytać za pomocą następującej składni, gdzie `Hive` jest gałąź rejestru (na przykład **HKEY_LOCAL_MACHINE** ), `MyKey` jest nazwą klucza, `MySubKey` jest nazwą podklucza i `Value` jest wartością podklucza.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
@@ -88,7 +90,7 @@ $(registry:Hive\MyKey\MySubKey)
 
 ## <a name="global-properties"></a>Właściwości globalne
 
- Program MSBuild umożliwia ustawianie właściwości w wierszu polecenia za pomocą przełącznika **-Property** (lub **-p**). Te globalne wartości właściwości zastępują wartości właściwości ustawione w pliku projektu. Dotyczy to również właściwości środowiska, natomiast nie obejmuje właściwości zastrzeżonych, ponieważ nie można ich modyfikować.
+ Program MSBuild umożliwia ustawianie właściwości w wierszu polecenia za pomocą przełącznika **-Property** (lub **-p** ). Te globalne wartości właściwości zastępują wartości właściwości ustawione w pliku projektu. Dotyczy to również właściwości środowiska, natomiast nie obejmuje właściwości zastrzeżonych, ponieważ nie można ich modyfikować.
 
  W przykładzie poniżej dla globalnej właściwości `Configuration` jest ustawiana wartość `DEBUG`.
 

@@ -1,5 +1,7 @@
 ---
 title: Przekształcenia programu MSBuild | Microsoft Docs
+description: Dowiedz się, w jaki sposób program MSBuild używa przekształceń, konwersji typu "jeden do jednego" z jednej listy elementów na inną, aby bardziej efektywnie tworzyć projekty.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34394ba35a349a1564f6c3fdd43052be3e1fdf03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4eb35554c61c532e0d004e5c974345564e17d4ae
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633112"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049005"
 ---
 # <a name="msbuild-transforms"></a>Przekształcenia w programie MSBuild
 
@@ -32,7 +34,7 @@ W poniższym przykładzie lista plików *resx* jest przekształcana na listę pl
 @(RESXFile->'%(filename).resources')
 ```
 
-Na przykład jeśli elementy na liście elementów @ (RESXFile) to *Form1. resx*, *Form2. resx*i *Form3. resx*, dane wyjściowe na liście przekształconej będą takie jak *Form1. resources*, *Form2. resources*i *Form3. resources*.
+Na przykład jeśli elementy na liście elementów @ (RESXFile) to *Form1. resx* , *Form2. resx* i *Form3. resx* , dane wyjściowe na liście przekształconej będą takie jak *Form1. resources* , *Form2. resources* i *Form3. resources* .
 
 > [!NOTE]
 > Możesz określić niestandardowy separator dla listy przekształconych elementów w ten sam sposób, w jaki określisz separator dla standardowej listy elementów. Na przykład aby oddzielić listę przekształconych elementów przy użyciu przecinka (,) zamiast domyślnego średnika (;), użyj następującego kodu XML: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
@@ -45,7 +47,7 @@ Na przykład jeśli elementy na liście elementów @ (RESXFile) to *Form1. resx*
 @(RESXFile->'Toolset\%(filename)%(extension)')
 ```
 
- Na przykład, jeśli elementy znajdujące się na `RESXFile` liście elementów to *Project1\Form1.resx*, *Project1\Form2.resx*i *Project1\Form3.Text*, dane wyjściowe na liście przekształconej będą *Toolset\Form1.resx*, *Toolset\Form2.resx*i *Toolset\Form3.Text*.
+ Na przykład, jeśli elementy znajdujące się na `RESXFile` liście elementów to *Project1\Form1.resx* , *Project1\Form2.resx* i *Project1\Form3.Text* , dane wyjściowe na liście przekształconej będą *Toolset\Form1.resx* , *Toolset\Form2.resx* i *Toolset\Form3.Text* .
 
 ## <a name="dependency-analysis"></a>Analiza zależności
 
@@ -69,7 +71,7 @@ Na przykład jeśli elementy na liście elementów @ (RESXFile) to *Form1. resx*
 
 ### <a name="description"></a>Opis
 
- Poniższy przykład pokazuje plik projektu MSBuild, który używa transformacji. W tym przykładzie przyjęto założenie, że w katalogu *c:\sub0\sub1\sub2\sub3* istnieje tylko jeden plik *XSD* , a katalog roboczy to *c:\sub0*.
+ Poniższy przykład pokazuje plik projektu MSBuild, który używa transformacji. W tym przykładzie przyjęto założenie, że w katalogu *c:\sub0\sub1\sub2\sub3* istnieje tylko jeden plik *XSD* , a katalog roboczy to *c:\sub0* .
 
 ### <a name="code"></a>Kod
 

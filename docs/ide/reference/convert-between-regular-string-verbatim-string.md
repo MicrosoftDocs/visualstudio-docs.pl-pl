@@ -1,5 +1,6 @@
 ---
-title: Konwertowanie między zwykłymi ciągami i dosłownymi literałami ciągu
+title: Konwertuj między zwykłymi i Verbatim literałami ciągu
+ms.custom: SEO-VS-2020
 ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
@@ -9,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e8e239f53f92727072a2fcd6573d6957b7cd3ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f411c0ac56adeb30370cbfc6f0f908ffd25bed05
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290572"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045906"
 ---
 # <a name="convert-between-regular-string-and-verbatim-string-literals-refactoring"></a>Konwersja między zwykłym ciągiem i Verbatim literałów ciągów
 
@@ -34,13 +35,13 @@ To Refaktoryzacja dotyczy:
 
 2. Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
 
-3. Wybierz jedną z następujących opcji: 
+3. Wybierz jedną z następujących opcji:
 
-    Wybierz pozycję **Konwertuj na zwykły ciąg**.
+    Wybierz pozycję **Konwertuj na zwykły ciąg** .
 
     ![Konwertuj na ciąg zwykły](media/convert-to-regular-string.png)
 
-    Wybierz pozycję **Konwertuj na ciąg dosłowny**.
+    Wybierz pozycję **Konwertuj na ciąg dosłowny** .
 
     ![Konwertuj na ciąg Verbatim](media/convert-to-verbatim-string.png)
 

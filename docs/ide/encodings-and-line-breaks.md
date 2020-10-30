@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6448b553c1da9e697bca3860cb8507727c99cc08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6634a0b2715fb83a397b5e8cd0c8c68274771e2a
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588593"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045590"
 ---
 # <a name="encodings-and-line-endings"></a>Kodowania i końce wierszy
 
@@ -44,14 +44,19 @@ Po otwarciu pliku, który ma różne znaki podziału wiersza, może pojawić si�
 
 ## <a name="advanced-save-options"></a>Zaawansowane opcje zapisywania
 
-Za pomocą **File**  >  okna dialogowego**Zaawansowane opcje zapisywania** w pliku można określić typ pożądanych znaków podziału wiersza. Możesz również zmienić kodowanie pliku przy użyciu tych samych ustawień.
+Za pomocą **File**  >  okna dialogowego **Zaawansowane opcje zapisywania** w pliku można określić typ pożądanych znaków podziału wiersza. Możesz również zmienić kodowanie pliku przy użyciu tych samych ustawień.
 
 ![Zaawansowane opcje zapisywania — okno dialogowe](media/line_endings.png)
 
 > [!NOTE]
-> Jeśli nie widzisz **opcji Zaawansowane zapisywanie** w menu **plik** , możesz je dodać. Wybierz **Narzędzia**, **Dostosuj**, a następnie wybierz kartę **polecenia** . Z listy rozwijanej **pasek menu** wybierz **plik**, a następnie wybierz przycisk **polecenie Dodaj** . W oknie dialogowym **Dodawanie polecenia** w obszarze **Kategorie**wybierz pozycję **plik**, a następnie na liście **polecenia** wybierz pozycję **Zaawansowane opcje zapisywania**. Wybierz **OK** , a następnie kliknij przycisk **Przenieś w dół** , aby przenieść polecenie do dowolnego miejsca w menu. Wybierz przycisk **Zamknij** , aby zamknąć okno dialogowe **Dostosowywanie** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie menu i pasków narzędzi](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+> Jeśli nie widzisz **opcji Zaawansowane zapisywanie** w menu **plik** , możesz je dodać. 
+> 1. Wybierz **Narzędzia** , **Dostosuj** , 
+> 1. Wybierz kartę **polecenia** , wybierz przycisk radiowy **pasek menu** i z odpowiedniej listy rozwijanej wybierz **plik** . Wybierz przycisk **polecenia Dodaj** . 
+> 1. W oknie dialogowym **Dodawanie polecenia** w obszarze **Kategorie** wybierz pozycję **plik** , a następnie na liście **polecenia** wybierz pozycję **Zaawansowane opcje zapisywania** . Wybierz przycisk **OK** .
+> 1. Użyj przycisków **Przenieś w górę** i **Przenieś w dół** , aby przenieść polecenie do dowolnego miejsca w menu. Wybierz przycisk **Zamknij** , aby zamknąć okno dialogowe **Dostosowywanie** . 
+> Aby uzyskać więcej informacji, zobacz [Dostosowywanie menu i pasków narzędzi](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> Alternatywnie możesz uzyskać dostęp do okna dialogowego **Zaawansowane opcje zapisywania** , wybierając pozycję **plik**  >  **Zapisz \<file\> jako**. W oknie dialogowym **Zapisz plik jako** wybierz Trójkąt listy rozwijanej obok przycisku **Zapisz** , a następnie wybierz pozycję **Zapisz z kodowaniem**.
+> Alternatywnie możesz uzyskać dostęp do okna dialogowego **Zaawansowane opcje zapisywania** , wybierając pozycję **plik**  >  **Zapisz \<file\> jako** . W oknie dialogowym **Zapisz plik jako** wybierz Trójkąt listy rozwijanej obok przycisku **Zapisz** , a następnie wybierz pozycję **Zapisz z kodowaniem** .
 
 ## <a name="see-also"></a>Zobacz też
 

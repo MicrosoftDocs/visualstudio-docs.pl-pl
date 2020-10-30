@@ -1,5 +1,7 @@
 ---
 title: Okna debugera XSLT
+description: Dowiedz się więcej na temat elementów interfejsu użytkownika debugera XSLT kontrolujących zachowanie debugowania specyficzne dla języka XSLT, w tym lokalne, wyjściowe, punkty przerwania, stos wywołań i okna Czujka.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 024a8659d95855c8154ed8d9bed231739648719e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592883"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045801"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfejs użytkownika debugera (XSLT)
 
@@ -56,7 +58,7 @@ W oknie dane wyjściowe są wyświetlane wszystkie komunikaty o błędach lub wy
 **Lista zadań** zawiera wszystkie błędy występujące w blokach skryptu w pliku XSLT.
 
 > [!NOTE]
-> Debuger XSLT nie ma ostrzeżeń, więc nigdy nie pojawiają się w **Lista zadań**.
+> Debuger XSLT nie ma ostrzeżeń, więc nigdy nie pojawiają się w **Lista zadań** .
 
 ## <a name="breakpoints-window"></a>Okno punktów przerwania
 

@@ -1,5 +1,7 @@
 ---
 title: VBC — zadanie | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa zadania VBC, aby zawijać vbc.exe, które tworzą pliki wykonywalne, biblioteki dołączane dynamicznie lub moduły kodu.
+ms.custom: SEO-VS-2020
 ms.date: 04/12/2018
 ms.topic: reference
 f1_keywords:
@@ -18,16 +20,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30f1a45c384495ccd02c624ea42f91a4379226df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0177467677c9aef1f41b006bb9b1ddfaed408e40
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82167456"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046767"
 ---
 # <a name="vbc-task"></a>Vbc — Zadanie
 
-Zawija *vbc.exe*, które tworzą pliki wykonywalne (*. exe*), biblioteki dołączane dynamicznie (*dll*) lub moduły kodu (*. module*). Aby uzyskać więcej informacji na *vbc.exe*, zobacz [Visual Basic kompilator wiersza polecenia](/dotnet/visual-basic/reference/command-line-compiler/index).
+Zawija *vbc.exe* , które tworzą pliki wykonywalne ( *. exe* ), biblioteki dołączane dynamicznie ( *dll* ) lub moduły kodu ( *. module* ). Aby uzyskać więcej informacji na *vbc.exe* , zobacz [Visual Basic kompilator wiersza polecenia](/dotnet/visual-basic/reference/command-line-compiler/index).
 
 ## <a name="parameters"></a>Parametry
 
@@ -59,7 +61,7 @@ Zawija *vbc.exe*, które tworzą pliki wykonywalne (*. exe*), biblioteki dołąc
 | `NoConfig` | Opcjonalny `Boolean` parametr.<br /><br /> Określa, że kompilator nie powinien używać pliku *VBC. rsp* . Ten parametr odnosi się do parametru [-noconfig](/dotnet/visual-basic/reference/command-line-compiler/noconfig) kompilatora *vbc.exe* . |
 | `NoLogo` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , pomija wyświetlanie informacji transparentu kompilatora. Ten parametr odnosi się do przełącznika [-nologo](/dotnet/visual-basic/reference/command-line-compiler/nologo) kompilatora *vbc.exe* . |
 | `NoStandardLib` | Opcjonalny `Boolean` parametr.<br /><br /> Powoduje, że kompilator nie odwołuje się do bibliotek standardowych. Ten parametr odnosi się do przełącznika [-nostdlib](/dotnet/visual-basic/reference/command-line-compiler/nostdlib) kompilatora *vbc.exe* . |
-| `NoVBRuntimeReference` | Opcjonalny `Boolean` parametr.<br /><br /> Tylko do użytku wewnętrznego. W przypadku wartości true program uniemożliwia automatyczne odwołanie do *Microsoft.VisualBasic.dll*. |
+| `NoVBRuntimeReference` | Opcjonalny `Boolean` parametr.<br /><br /> Tylko do użytku wewnętrznego. W przypadku wartości true program uniemożliwia automatyczne odwołanie do *Microsoft.VisualBasic.dll* . |
 | `NoWarnings` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , zadanie pomija wszystkie ostrzeżenia. Aby uzyskać więcej informacji, zobacz [-nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn). |
 | `Optimize` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , włącza optymalizacje kompilatora. Ten parametr odpowiada przełącznikowi [-Optimize](/dotnet/visual-basic/reference/command-line-compiler/optimize) kompilatora *vbc.exe* . |
 | `OptionCompare` | Opcjonalny `String` parametr.<br /><br /> Określa sposób, w jaki są wykonywane porównania ciągów. Ten parametr może mieć następujące wartości:<br /><br /> -   `binary`<br />-   `text`<br /><br /> Wartość `binary` określa, że zadanie używa porównywania ciągów binarnych. Wartość `text` określa, że zadanie używa porównania ciągów tekstowych. Wartość domyślna tego parametru to `binary` . Ten parametr odnosi się do przełącznika [-optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare) kompilatora *vbc.exe* . |
@@ -74,20 +76,20 @@ Zawija *vbc.exe*, które tworzą pliki wykonywalne (*. exe*), biblioteki dołąc
 | `Resources` | Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Osadza zasób .NET Framework w pliku wyjściowym. Ten parametr odnosi się do przełącznika [-Resource](/dotnet/visual-basic/reference/command-line-compiler/resource) kompilatora *vbc.exe* . |
 | `ResponseFiles` | Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Określa plik odpowiedzi zawierający polecenia dla tego zadania. Ten parametr odpowiada opcji [@ (Określ plik odpowiedzi)](/dotnet/visual-basic/reference/command-line-compiler/specify-response-file) kompilatora *vbc.exe* . |
 | `RootNamespace` | Opcjonalny `String` parametr.<br /><br /> Określa główną przestrzeń nazw dla wszystkich deklaracji typu. Ten parametr odnosi się do przełącznika [-RootNamespace](/dotnet/visual-basic/reference/command-line-compiler/rootnamespace) kompilatora *vbc.exe* . |
-| `SdkPath` | Opcjonalny `String` parametr.<br /><br /> Określa lokalizację *mscorlib.dll* i *microsoft.visualbasic.dll*. Ten parametr odnosi się do przełącznika [-SdkPath](/dotnet/visual-basic/reference/command-line-compiler/sdkpath) kompilatora *vbc.exe* . |
+| `SdkPath` | Opcjonalny `String` parametr.<br /><br /> Określa lokalizację *mscorlib.dll* i *microsoft.visualbasic.dll* . Ten parametr odnosi się do przełącznika [-SdkPath](/dotnet/visual-basic/reference/command-line-compiler/sdkpath) kompilatora *vbc.exe* . |
 | `Sources` | Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Określa co najmniej jeden Visual Basic pliki źródłowe. |
 | `TargetCompactFramework` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , zadanie jest przeznaczone dla .NET Compact Framework. Ten przełącznik odpowiada przełącznikowi [-netcf](/dotnet/visual-basic/reference/command-line-compiler/netcf) kompilatora *vbc.exe* . |
 | `TargetType` | Opcjonalny `String` parametr.<br /><br /> Określa format pliku wyjściowego. Ten parametr może mieć wartość `library` , która tworzy bibliotekę kodu, `exe` która tworzy aplikację konsolową, `module` która tworzy moduł lub `winexe` tworzy program systemu Windows. Wartość domyślna to `library`. Ten parametr odnosi się do przełącznika [-Target](/dotnet/visual-basic/reference/command-line-compiler/target) kompilatora *vbc.exe* . |
 | `Timeout` | Opcjonalny `Int32` parametr.<br /><br /> Określa ilość czasu (w milisekundach), po upływie którego plik wykonywalny zadania zostanie zakończony. Wartość domyślna to `Int.MaxValue` , co oznacza, że nie ma limitu czasu. |
-| `ToolPath` | Opcjonalny `String` parametr.<br /><br /> Określa lokalizację, z której zadanie będzie ładować podstawowy plik wykonywalny (*vbc.exe*). Jeśli ten parametr nie jest określony, zadanie używa ścieżki instalacji zestawu SDK odpowiadającej wersji platformy, w której działa program MSBuild. |
+| `ToolPath` | Opcjonalny `String` parametr.<br /><br /> Określa lokalizację, z której zadanie będzie ładować podstawowy plik wykonywalny ( *vbc.exe* ). Jeśli ten parametr nie jest określony, zadanie używa ścieżki instalacji zestawu SDK odpowiadającej wersji platformy, w której działa program MSBuild. |
 | `TreatWarningsAsErrors` | Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` wszystkie ostrzeżenia są traktowane jako błędy. Aby uzyskać więcej informacji, zobacz [-warnaserror — (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror). |
 | `UseHostCompilerIfAvailable` | Opcjonalny `Boolean` parametr.<br /><br /> Instruuje zadanie, aby używało obiektu kompilatora w procesie, jeśli jest dostępny. Używany tylko przez program Visual Studio. |
 | `Utf8Output` | Opcjonalny `Boolean` parametr.<br /><br /> Rejestruje dane wyjściowe kompilatora przy użyciu kodowania UTF-8. Ten parametr odnosi się do przełącznika [-utf8output —](/dotnet/visual-basic/reference/command-line-compiler/utf8output) kompilatora *vbc.exe* . |
 | `Verbosity` | Opcjonalny `String` parametr.<br /><br /> Określa poziom szczegółowości danych wyjściowych kompilatora. Poziom szczegółowości może być `Quiet` `Normal` (wartość domyślna), lub `Verbose` . |
 | `WarningsAsErrors` | Opcjonalny `String` parametr.<br /><br /> Określa listę ostrzeżeń, które mają być traktowane jako błędy. Aby uzyskać więcej informacji, zobacz [-warnaserror — (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror).<br /><br /> Ten parametr zastępuje `TreatWarningsAsErrors` parametr. |
 | `WarningsNotAsErrors` | Opcjonalny `String` parametr.<br /><br /> Określa listę ostrzeżeń, które nie są traktowane jako błędy. Aby uzyskać więcej informacji, zobacz [-warnaserror — (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror).<br /><br /> Ten parametr jest przydatny tylko wtedy, gdy `TreatWarningsAsErrors` parametr jest ustawiony na `true` . |
-| `Win32Icon` | Opcjonalny `String` parametr.<br /><br /> Wstawia plik *ICO* w zestawie, który zapewnia plikowi wyjściowemu żądany wygląd w **Eksploratorze plików**. Ten parametr odnosi się do przełącznika [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) kompilatora *vbc.exe* . |
-| `Win32Resources` | Opcjonalny `String` parametr.<br /><br /> Wstawia plik zasobów Win32 (*. res*) do pliku wyjściowego. Ten parametr odnosi się do przełącznika [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) kompilatora *vbc.exe* . |
+| `Win32Icon` | Opcjonalny `String` parametr.<br /><br /> Wstawia plik *ICO* w zestawie, który zapewnia plikowi wyjściowemu żądany wygląd w **Eksploratorze plików** . Ten parametr odnosi się do przełącznika [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) kompilatora *vbc.exe* . |
+| `Win32Resources` | Opcjonalny `String` parametr.<br /><br /> Wstawia plik zasobów Win32 ( *. res* ) do pliku wyjściowego. Ten parametr odnosi się do przełącznika [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) kompilatora *vbc.exe* . |
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 

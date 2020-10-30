@@ -1,5 +1,6 @@
 ---
-title: Rozwiązywanie problemów z ładowaniem szablonu projektu i szablonu elementu
+title: Rozwiązywanie problemów z szablonami projektów i szablonami elementów
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddb164dbd43d1d2276fce66641ba6e647b49143e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591388"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045714"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Instrukcje: Rozwiązywanie problemów z szablonami
 
@@ -38,9 +39,9 @@ Jeśli plik *vstemplate* w szablonie nie jest zgodny ze schematem szablonu progr
 
 1. Wyodrębnij plik *zip* .
 
-1. W menu **plik** w programie Visual Studio wybierz polecenie **Otwórz**  >  **plik**.
+1. W menu **plik** w programie Visual Studio wybierz polecenie **Otwórz**  >  **plik** .
 
-1. Wybierz plik *vstemplate* szablonu i wybierz polecenie **Otwórz**.
+1. Wybierz plik *vstemplate* szablonu i wybierz polecenie **Otwórz** .
 
 1. Sprawdź, czy plik XML pliku *vstemplate* jest zgodny ze schematem szablonu. Aby uzyskać więcej informacji na temat schematu *vstemplate* , zobacz [Dokumentacja schematu szablonu](../extensibility/visual-studio-template-schema-reference.md).
 
@@ -49,7 +50,7 @@ Jeśli plik *vstemplate* w szablonie nie jest zgodny ze schematem szablonu progr
 
 1. Zapisz i zamknij plik *vstemplate* .
 
-1. Wybierz pliki dołączone do szablonu, kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Wyślij do**  >  **folderu skompresowanego (spakowanego)**. Wybrane pliki są kompresowane do pliku *zip* .
+1. Wybierz pliki dołączone do szablonu, kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Wyślij do**  >  **folderu skompresowanego (spakowanego)** . Wybrane pliki są kompresowane do pliku *zip* .
 
 1. Umieść nowy plik *zip* w tym samym katalogu, w którym znajduje się stary plik *. zip* .
 

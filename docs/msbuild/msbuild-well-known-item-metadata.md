@@ -1,5 +1,7 @@
 ---
 title: Metadane dobrze znanego elementu MSBuild | Microsoft Docs
+description: Dowiedz się więcej na temat metadanych programu MSBuild przypisanych do każdego elementu podczas tworzenia i pewnych opcjonalnych metadanych programu MSBuild, które można zdefiniować, aby kontrolować zachowanie kompilacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c810e166ef6f04befdbf7a5d18fe20bb65b8a299
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 047fe5ef6edc57681b8382a9f2a1069991e0f513
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87425384"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049012"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Dobrze znane metadane elementów programu MSBuild
 
@@ -37,16 +39,16 @@ W pierwszej tabeli w tym artykule opisano metadane przypisane do każdego elemen
 
 |Metadane elementu|Opis|
 |-------------------|-----------------|
-|% (FullPath)|Zawiera pełną ścieżkę do elementu. Na przykład:<br /><br /> *C:\MyProject\Source\Program.cs*|
-|% (RootDir)|Zawiera katalog główny elementu. Na przykład:<br /><br /> *S\\*|
-|% (Filename)|Zawiera nazwę pliku elementu, bez rozszerzenia. Na przykład:<br /><br /> *Program*|
-|% (Rozszerzenie)|Zawiera rozszerzenie nazwy pliku elementu. Na przykład:<br /><br /> *. cs*|
-|%(RelativeDir)|Zawiera ścieżkę określoną w `Include` atrybucie, do końcowego ukośnika odwrotnego ( \\ ). Na przykład:<br /><br /> *Element źródłowy\\*<br /><br /> Jeśli `Include` atrybut jest pełną ścieżką, zaczyna się od `%(RelativeDir)` katalogu głównego `%(RootDir)` .  Na przykład: <br /><br /> *C:\MyProject\Source\\*|
-|% (Katalog)|Zawiera katalog elementu, bez katalogu głównego. Na przykład:<br /><br /> *Źródło projektu \\\\*|
-|%(RecursiveDir)|Jeśli `Include` atrybut zawiera symbol wieloznaczny \* \* , metadane określają część ścieżki, która zastępuje symbol wieloznaczny. Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [How to: Wybierz pliki do skompilowania](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Jeśli folder *C:\MySolution\MyProject\Source \\ * zawiera plik *program.cs*, a plik projektu zawiera ten element:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> następnie wartość `%(MyItem.RecursiveDir)` zostałaby * \\ MySolution\MyProject\Source*.|
-|% (Tożsamość)|Element określony w `Include` atrybucie. Na przykład:<br /><br /> *Source\Program.cs*|
-|%(ModifiedTime)|Zawiera sygnaturę czasową od ostatniej modyfikacji elementu. Na przykład:<br /><br /> `2004-07-01 00:21:31.5073316`|
-|%(CreatedTime)|Zawiera sygnaturę czasową od momentu utworzenia elementu. Na przykład:<br /><br /> `2004-06-25 09:26:45.8237425`|
+|% (FullPath)|Zawiera pełną ścieżkę do elementu. Przykład:<br /><br /> *C:\MyProject\Source\Program.cs*|
+|% (RootDir)|Zawiera katalog główny elementu. Przykład:<br /><br /> *S\\*|
+|% (Filename)|Zawiera nazwę pliku elementu, bez rozszerzenia. Przykład:<br /><br /> *Program*|
+|% (Rozszerzenie)|Zawiera rozszerzenie nazwy pliku elementu. Przykład:<br /><br /> *. cs*|
+|%(RelativeDir)|Zawiera ścieżkę określoną w `Include` atrybucie, do końcowego ukośnika odwrotnego ( \\ ). Przykład:<br /><br /> *Element źródłowy\\*<br /><br /> Jeśli `Include` atrybut jest pełną ścieżką, zaczyna się od `%(RelativeDir)` katalogu głównego `%(RootDir)` .  Przykład: <br /><br /> *C:\MyProject\Source\\*|
+|% (Katalog)|Zawiera katalog elementu, bez katalogu głównego. Przykład:<br /><br /> *Źródło projektu \\\\*|
+|%(RecursiveDir)|Jeśli `Include` atrybut zawiera symbol wieloznaczny \* \* , metadane określają część ścieżki, która zastępuje symbol wieloznaczny. Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [How to: Wybierz pliki do skompilowania](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Jeśli folder *C:\MySolution\MyProject\Source \\* zawiera plik *program.cs* , a plik projektu zawiera ten element:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> następnie wartość `%(MyItem.RecursiveDir)` zostałaby *\\ MySolution\MyProject\Source* .|
+|% (Tożsamość)|Element określony w `Include` atrybucie. Przykład:<br /><br /> *Source\Program.cs*|
+|%(ModifiedTime)|Zawiera sygnaturę czasową od ostatniej modyfikacji elementu. Przykład:<br /><br /> `2004-07-01 00:21:31.5073316`|
+|%(CreatedTime)|Zawiera sygnaturę czasową od momentu utworzenia elementu. Przykład:<br /><br /> `2004-06-25 09:26:45.8237425`|
 |%(AccessedTime)|Zawiera sygnaturę czasową od ostatniego dostępu do elementu.<br /><br /> `2004-08-14 16:52:36.3168743`|
 
 ## <a name="see-also"></a>Zobacz też

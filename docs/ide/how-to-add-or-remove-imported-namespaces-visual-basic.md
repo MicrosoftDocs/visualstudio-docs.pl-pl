@@ -1,5 +1,6 @@
 ---
-title: 'Instrukcje: Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic)'
+title: Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic)
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,24 +15,24 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a50fdb643029bed8a44ce6999d4a8ce062ba3dcf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff6b63db07d515e85c4c756f8d302d292c62dd50
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284742"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047101"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Instrukcje: Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic)
 
 Importowanie przestrzeni nazw pozwala używać elementów z tej przestrzeni nazw w kodzie bez w pełni zakwalifikowania elementu. Na przykład jeśli chcesz uzyskać dostęp do `Create` metody w `System.Messaging.MessageQueue` klasie, możesz zaimportować `System.Messaging` przestrzeń nazw i odwołać się do elementu, który jest potrzebny w kodzie jako `MessageQueue.Create` .
 
-Importowane przestrzenie nazw są zarządzane na stronie **odwołania** **projektanta projektu**. Importy określone w tym oknie dialogowym są przesyłane bezpośrednio do kompilatora (*/Imports —*) i stosowane do wszystkich plików w projekcie. Użyj `Imports` instrukcji, aby użyć przestrzeni nazw w jednym pliku kodu źródłowego.
+Importowane przestrzenie nazw są zarządzane na stronie **odwołania** **projektanta projektu** . Importy określone w tym oknie dialogowym są przesyłane bezpośrednio do kompilatora ( */Imports —* ) i stosowane do wszystkich plików w projekcie. Użyj `Imports` instrukcji, aby użyć przestrzeni nazw w jednym pliku kodu źródłowego.
 
 ### <a name="to-add-an-imported-namespace"></a>Aby dodać zaimportowaną przestrzeń nazw
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie węzeł **mój projekt** dla projektu.
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie węzeł **mój projekt** dla projektu.
 
-2. W **projektancie projektu**kliknij kartę **odwołania** .
+2. W **projektancie projektu** kliknij kartę **odwołania** .
 
 3. Na liście **zaimportowanych obszarów nazw** zaznacz pole wyboru dla przestrzeni nazw, którą chcesz dodać.
 
@@ -40,9 +41,9 @@ Importowane przestrzenie nazw są zarządzane na stronie **odwołania** **projek
 
 ### <a name="to-remove-an-imported-namespace"></a>Aby usunąć zaimportowaną przestrzeń nazw
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie węzeł **mój projekt** dla projektu.
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie węzeł **mój projekt** dla projektu.
 
-2. W **projektancie projektu**kliknij kartę **odwołania** .
+2. W **projektancie projektu** kliknij kartę **odwołania** .
 
 3. Na liście **zaimportowanych obszarów nazw** Usuń zaznaczenie pola wyboru dla przestrzeni nazw, która ma zostać usunięta.
 
@@ -53,9 +54,9 @@ Jeśli później zmienisz zdanie i zdecydujesz, że naprawdę była to `EventLog
 
 ### <a name="to-add-a-user-import"></a>Aby dodać Importowanie użytkownika
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie węzeł **mój projekt** dla projektu.
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie węzeł **mój projekt** dla projektu.
 
-2. W **projektancie projektu**kliknij kartę **odwołania** .
+2. W **projektancie projektu** kliknij kartę **odwołania** .
 
 3. W polu tekstowym pod listą **importowanych obszarów nazw** wprowadź pełną nazwę przestrzeni nazw, która ma zostać zaimportowana, w tym główną przestrzeń nazw.
 
@@ -66,9 +67,9 @@ Jeśli później zmienisz zdanie i zdecydujesz, że naprawdę była to `EventLog
 
 ### <a name="to-update-a-user-import"></a>Aby zaktualizować Importowanie użytkownika
 
-1. W **Eksplorator rozwiązań**kliknij dwukrotnie węzeł **mój projekt** dla projektu.
+1. W **Eksplorator rozwiązań** kliknij dwukrotnie węzeł **mój projekt** dla projektu.
 
-2. W **projektancie projektu**kliknij kartę **odwołania** .
+2. W **projektancie projektu** kliknij kartę **odwołania** .
 
 3. Z listy **zaimportowanych obszarów nazw** wybierz przestrzeń nazw, którą chcesz zmienić.
 

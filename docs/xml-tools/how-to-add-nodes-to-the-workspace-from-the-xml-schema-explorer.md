@@ -1,5 +1,7 @@
 ---
 title: Dodawanie węzłów do obszaru roboczego z Eksploratora schematu XML
+description: Dowiedz się, jak dodać węzły do obszaru roboczego projektanta schematu XML z Eksploratora schematu XML za pomocą menu kontekstowego lub przeciągając i upuszczając węzły w widoku.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
@@ -8,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 751e291188e6357343936d61d56f07bd86f97eaf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: baa4d32d14a85e27bb0bb453c8c81f0bab486379
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816400"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045725"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Instrukcje: Dodawanie węzłów do obszaru roboczego z Eksploratora schematu XML
 
-W tym temacie opisano sposób dodawania węzłów do [obszaru roboczego projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md) z **Eksploratora schematu XML**. Można to osiągnąć przez przeciąganie i upuszczanie węzłów z **Eksploratora schematu XML** do widoku projektanta XSD lub za pomocą menu kontekstowego **Eksploratora schematu XML** . Można również dodać węzły, które są wyróżnione w wyniku wyszukiwania wykonanego przez **Eksploratora schematu XML**. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie zestawu schematów wyniki wyszukiwania węzłów do obszaru roboczego](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
+W tym temacie opisano sposób dodawania węzłów do [obszaru roboczego projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md) z **Eksploratora schematu XML** . Można to osiągnąć przez przeciąganie i upuszczanie węzłów z **Eksploratora schematu XML** do widoku projektanta XSD lub za pomocą menu kontekstowego **Eksploratora schematu XML** . Można również dodać węzły, które są wyróżnione w wyniku wyszukiwania wykonanego przez **Eksploratora schematu XML** . Aby uzyskać więcej informacji, zobacz [jak: Dodawanie zestawu schematów wyniki wyszukiwania węzłów do obszaru roboczego](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
 
 > [!NOTE]
 > Tylko węzły globalne można dodać do [obszaru roboczego projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md).
@@ -26,17 +28,17 @@ W tym temacie opisano sposób dodawania węzłów do [obszaru roboczego projekta
 
 1. Wykonaj kroki opisane w temacie [How to: Create i Edit a XSD File Schema](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. Kliknij prawym przyciskiem myszy `PurchaseOrderType` węzeł w EKSPLORATORZE XSD. Wybierz pozycję **Pokaż w widoku wykresu**.
+2. Kliknij prawym przyciskiem myszy `PurchaseOrderType` węzeł w EKSPLORATORZE XSD. Wybierz pozycję **Pokaż w widoku wykresu** .
 
      `purchaseOrderType`Węzeł pojawia się na powierzchni projektowej widoku wykresu.
 
 ## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>Aby przeciągnąć i upuścić węzeł w widoku
 
-1. Kliknij prawym przyciskiem myszy `PurchaseOrderType` węzeł w widoku wykresu. Wybierz pozycję **Pokaż w Eksploratorze schematu XML**.
+1. Kliknij prawym przyciskiem myszy `PurchaseOrderType` węzeł w widoku wykresu. Wybierz pozycję **Pokaż w Eksploratorze schematu XML** .
 
-     Węzeł zostanie wyróżniony w **Eksploratorze schematu XML**.
+     Węzeł zostanie wyróżniony w **Eksploratorze schematu XML** .
 
-2. Kliknij prawym przyciskiem myszy `PurchaseOrderType` węzeł w **Eksploratorze schematu XML** i wybierz polecenie **Pokaż wszystkie odwołania**.
+2. Kliknij prawym przyciskiem myszy `PurchaseOrderType` węzeł w **Eksploratorze schematu XML** i wybierz polecenie **Pokaż wszystkie odwołania** .
 
      `purchaseOrder`Węzeł zostanie wyróżniony.
 

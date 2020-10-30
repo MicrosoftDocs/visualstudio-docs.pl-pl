@@ -1,5 +1,7 @@
 ---
 title: Zadanie XSD | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa zadania XSD do pakowania narzędzia definicji schematu XML xsd.exe, które generuje pliki schematu lub klasy ze źródła.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.topic: reference
 f1_keywords:
@@ -20,16 +22,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5aef78460197796767ec1429179e5598d0f12dbc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630785"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047202"
 ---
 # <a name="xsd-task"></a>XSD — Zadanie
 
-Zawija narzędzie definicji schematu XML (*xsd.exe*), które generuje pliki schematu lub klasy ze źródła.
+Zawija narzędzie definicji schematu XML ( *xsd.exe* ), które generuje pliki schematu lub klasy ze źródła.
 
 > [!NOTE]
 > Począwszy od programu Visual Studio 2017, obsługa projektu C++ dla *xsd.exe* jest przestarzała. Można nadal używać interfejsów API **Microsoft. VisualC. CppCodeProvider** , ręcznie dodając *CppCodeProvider.dll* do pamięci podręcznej GAC.
@@ -64,13 +66,13 @@ Zawija narzędzie definicji schematu XML (*xsd.exe*), które generuje pliki sche
 
      Wybierz pozycję z **CS** (C#, która jest domyślna), **VB** (Visual Basic) lub **js** (JScript). Można również określić w pełni kwalifikowaną nazwę dla klasy implementującej `System.CodeDom.Compiler.CodeDomProvider Class` .
 
-- **Przestrzeń nazw**
+- **Obszaru**
 
      Opcjonalny parametr **ciągu** .
 
      Określa przestrzeń nazw czasu wykonywania wygenerowany typów.
 
-- **Źródła**
+- **Źródeł**
 
      Wymagany parametr interfejsu `ITaskItem[]`.
 

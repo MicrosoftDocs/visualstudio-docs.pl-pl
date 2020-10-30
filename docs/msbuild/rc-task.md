@@ -1,5 +1,7 @@
 ---
 title: RC — zadanie | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa zadania RC do zawijania narzędzia kompilatora zasobów systemu Microsoft Windows, rc.exe, które kompiluje zasoby w pliku. res.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,16 +24,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13ae844759cb73de6dc7bcce6c8898c21132f9d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94a1babf518a3579246903f6479f999d8912dfe5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632917"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048788"
 ---
 # <a name="rc-task"></a>RC — Zadanie
 
-Zawija narzędzie kompilatora zasobów systemu Microsoft Windows, *rc.exe*. Zadanie **RC** kompiluje zasoby, takie jak kursory, ikony, mapy bitowe, okna dialogowe i czcionki, do pliku zasobów (*. res*). Aby uzyskać więcej informacji, zobacz [kompilator zasobów](/windows/desktop/menurc/resource-compiler).
+Zawija narzędzie kompilatora zasobów systemu Microsoft Windows, *rc.exe* . Zadanie **RC** kompiluje zasoby, takie jak kursory, ikony, mapy bitowe, okna dialogowe i czcionki, do pliku zasobów ( *. res* ). Aby uzyskać więcej informacji, zobacz [kompilator zasobów](/windows/desktop/menurc/resource-compiler).
 
 ## <a name="parameters"></a>Parametry
 

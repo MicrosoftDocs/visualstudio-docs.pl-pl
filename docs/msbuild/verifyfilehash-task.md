@@ -1,5 +1,7 @@
 ---
 title: VerifyFileHash — zadanie | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa zadania VerifyFileHash, aby sprawdzić, czy plik jest zgodny z oczekiwanym skrótem pliku, i czy nie jest zgodny.
+ms.custom: SEO-VS-2020
 ms.date: 01/28/2019
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d76c7de1fcf6857cbc32709490e54d5bdf3b8988
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579525"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046096"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash, zadanie
 

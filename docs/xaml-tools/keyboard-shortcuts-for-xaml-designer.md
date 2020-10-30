@@ -1,17 +1,19 @@
 ---
 title: Skróty klawiaturowe w projektancie XAML
+description: Informacje na temat skrótów klawiaturowych w projektant XAML, które mają dostęp do poleceń dotyczących pracy z elementami w obszarze kompozycji i w oknie konspektu dokumentu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f9f30dd3eaeb6905088e7eec9db1fa9cc2b0f32c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aed3ed43afcad9cfb38dc427a441512106d9749b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592960"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045898"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Skróty klawiaturowe w projektancie XAML
 
@@ -34,7 +36,7 @@ W tej tabeli przedstawiono skróty, które są dostępne do pracy z elementami w
 |Zaznacz wszystkie elementy|Naciśnij **klawisze CTRL** + **A**|
 |Wyczyść zaznaczenie wszystkich elementów|Naciśnij klawisz **Ctrl** + **SHIFT** + **A**|
 |Pokaż lub Ukryj uchwyty elementu|Naciśnij klawisz **F9**|
-|Wybierz właściwość dla elementu|Po zaznaczeniu elementu i fokus na okno Właściwości naciśnij klawisz **Tab**. (Użyj **klawisza Ctrl** + **Tab** , aby zmienić fokus na okno właściwości.) Możesz użyć klawiszy strzałek, aby wybrać wartości właściwości z list rozwijanych.|
+|Wybierz właściwość dla elementu|Po zaznaczeniu elementu i fokus na okno Właściwości naciśnij klawisz **Tab** . (Użyj **klawisza Ctrl** + **Tab** , aby zmienić fokus na okno właściwości.) Możesz użyć klawiszy strzałek, aby wybrać wartości właściwości z list rozwijanych.|
 
 ## <a name="document-outline-window-shortcuts"></a>Skróty okna konspektu dokumentu
 

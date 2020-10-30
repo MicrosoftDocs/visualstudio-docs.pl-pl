@@ -1,5 +1,7 @@
 ---
-title: Obsługa programu Visual Studio dla zatwierdzonego trybu działania FIPS 140-2
+title: Obsługa standardu FIPS w programie Visual Studio
+titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 04/14/2020
 ms.topic: conceptual
 author: TerryGLee
@@ -7,18 +9,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d06204fd1ef6ee2deb5eadc514af1ede8ae9bb6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56fe4fa2381502f01a952977fe2d506dc7792231
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84180496"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045520"
 ---
 # <a name="visual-studio-support-for-the-fips-140-2-approved-mode-of-operation"></a>Obsługa programu Visual Studio dla zatwierdzonego trybu działania FIPS 140-2
 
 Począwszy od [wersji 16,4](/visualstudio/releases/2019/release-notes-v16.4/), Visual Studio 2019 obsługuje publikacje Federal Information Processing Standard (FIPS) 140-2 zatwierdzone trybu operacji dla systemu Windows, platformy Azure i platformy .NET. I w [wersji 16,5](/visualstudio/releases/2019/release-notes-archive-v16.5)program Visual Studio obsługuje teraz tryb zatwierdzania FIPS 140-2 w przypadku tworzenia [aplikacji w języku C++ przeznaczonych dla zdalnego systemu Linux](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/).
 
-Aby skonfigurować tryb systemu operacyjnego FIPS 140-2 dla programu Visual Studio, [zainstaluj .NET Framework 4,8](https://dotnet.microsoft.com/download/dotnet-framework/net48) , a następnie włącz ustawienie zasady grupy, **Kryptografia systemu: Użyj zgodnych algorytmów FIPS do szyfrowania, mieszania i podpisywania**.
+Aby skonfigurować tryb systemu operacyjnego FIPS 140-2 dla programu Visual Studio, [zainstaluj .NET Framework 4,8](https://dotnet.microsoft.com/download/dotnet-framework/net48) , a następnie włącz ustawienie zasady grupy, **Kryptografia systemu: Użyj zgodnych algorytmów FIPS do szyfrowania, mieszania i podpisywania** .
 
 Aby uzyskać więcej informacji na temat zatwierdzonego trybu działania FIPS 140-2 i sposobu jego włączania, zobacz [Walidacja fips 140-2](/windows/security/threat-protection/fips-140-validation/).
 

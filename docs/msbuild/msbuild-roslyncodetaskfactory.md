@@ -1,5 +1,7 @@
 ---
 title: Zadania wbudowane programu MSBuild z RoslynCodeTaskFactory | Microsoft Docs
+description: Dowiedz się więcej o programie MSBuild RoslynCodeTaskFactory, który używa międzyplatformowych kompilatorów Roslyn do generowania zestawów zadań w pamięci do użycia jako zadania wbudowane.
+ms.custom: SEO-VS-2020
 ms.date: 09/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1f606ed9e3d42d9f57cb941ee9518c1abfbc47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 336c23a5e1357e8e425a74c0954d3c0e28f8a930
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289212"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049127"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Zadania wbudowane programu MSBuild przy użyciu fabryki RoslynCodeTaskFactory
 
@@ -117,7 +119,7 @@ Log.LogError("Hello, world!");
 </Project>
 ```
 
-Zadanie HelloWorld można zapisać w pliku o nazwie *HelloWorld. targets*, a następnie wywołać go z projektu w następujący sposób.
+Zadanie HelloWorld można zapisać w pliku o nazwie *HelloWorld. targets* , a następnie wywołać go z projektu w następujący sposób.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

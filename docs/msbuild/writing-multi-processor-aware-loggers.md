@@ -1,5 +1,7 @@
 ---
 title: Pisanie rejestratorów obsługujących wiele procesorów | Microsoft Docs
+description: Dowiedz się, w jaki sposób program MSBuild udostępnia Rejestrator i model rejestrowania z obsługą procesorów i umożliwia tworzenie niestandardowych "rejestratorów przekazywania".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 886e012b026ef17b512a7e134d080382744783ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd90cb92dd56d3e7ff9eb43bad1086e8a8fb548f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630750"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047306"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Zapisuj rejestratory obsługujące wiele procesorów
 
@@ -72,7 +74,7 @@ public interface INodeLogger: ILogger
 
 - Napisz własny niestandardowy Rejestrator przesyłania dalej.
 
-Możesz zmodyfikować ConfigurableForwardingLogger zgodnie z wymaganiami. W tym celu wywołaj rejestrator w wierszu polecenia przy użyciu *MSBuild.exe*i Wyświetl listę zdarzeń kompilacji, które mają być przekazywane przez rejestrator do węzła centralnego.
+Możesz zmodyfikować ConfigurableForwardingLogger zgodnie z wymaganiami. W tym celu wywołaj rejestrator w wierszu polecenia przy użyciu *MSBuild.exe* i Wyświetl listę zdarzeń kompilacji, które mają być przekazywane przez rejestrator do węzła centralnego.
 
 Alternatywnie można utworzyć niestandardowy Rejestrator przesyłania dalej. Tworząc niestandardowy Rejestrator przesyłania dalej, można dostosować zachowanie rejestratora. Tworzenie niestandardowego rejestratora przesyłania dalej jest jednak bardziej skomplikowane niż tylko Dostosowywanie ConfigurableForwardingLogger. Aby uzyskać więcej informacji, zobacz [Tworzenie rejestratorów przekazywania](../msbuild/creating-forwarding-loggers.md).
 

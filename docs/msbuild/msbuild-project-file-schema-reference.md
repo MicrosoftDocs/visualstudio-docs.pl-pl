@@ -1,5 +1,7 @@
 ---
 title: Odwołanie do schematu pliku projektu MSBuild | Microsoft Docs
+description: Zobacz tabelę zawierającą listę wszystkich elementów schematu XML programu MSBuild z ich dostępnymi atrybutami i elementami podrzędnymi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,18 +17,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 824a6f562638edb04854431c437289f2741c46d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 549e78309ef5fc5e9baf4237f9eca8c7484bc198
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78263106"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046166"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Dokumentacja schematu pliku projektu MSBuild
 
 Zawiera tabelę zawierającą wszystkie elementy schematu XML programu MSBuild z ich dostępnymi atrybutami i elementami podrzędnymi.
 
- MSBuild używa plików projektu, aby poinstruować aparat kompilacji, co należy skompilować i jak go skompilować. Pliki projektów programu MSBuild są plikami XML, które są zgodne ze schematem XML programu MSBuild. Ta sekcja dokumentuje plik definicji schematu XML (*XSD*) dla programu MSBuild.
+ MSBuild używa plików projektu, aby poinstruować aparat kompilacji, co należy skompilować i jak go skompilować. Pliki projektów programu MSBuild są plikami XML, które są zgodne ze schematem XML programu MSBuild. Ta sekcja dokumentuje plik definicji schematu XML ( *XSD* ) dla programu MSBuild.
 
 W programie Visual Studio 2017 i nowszych nie jest wymagany link do schematu w pliku projektu programu MSBuild. Jeśli jest obecny, powinna być ` http://schemas.microsoft.com/developer/msbuild/2003` bez względu na wersję programu Visual Studio.
 
@@ -37,7 +39,7 @@ W programie Visual Studio 2017 i nowszych nie jest wymagany link do schematu w p
 |Element|Elementy podrzędne|Atrybuty|
 |-------------|--------------------|----------------|
 |[Choose — element (MSBuild)](../msbuild/choose-element-msbuild.md)|Przypadku<br /><br /> Kiedy|--|
-|[Import — element (MSBuild)](../msbuild/import-element-msbuild.md)|--|Warunek<br /><br /> Projekt|
+|[Import — element (MSBuild)](../msbuild/import-element-msbuild.md)|--|Warunek<br /><br /> Project|
 |[ImportGroup, element](../msbuild/importgroup-element.md)|Importuj|Warunek|
 |[Item — element (MSBuild)](../msbuild/item-element-msbuild.md)|*ItemMetadata —*|Warunek<br /><br /> Exclude<br /><br /> Uwzględnij<br /><br /> Usuń|
 |[ItemDefinitionGroup, element (MSBuild)](../msbuild/itemdefinitiongroup-element-msbuild.md)|*Element*|Warunek|

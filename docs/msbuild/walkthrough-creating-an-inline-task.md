@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie zadania wbudowanego | Microsoft Docs'
+description: Zapoznaj się z tematem Tworzenie zadania programu MSBuild w pliku projektu, bez konieczności tworzenia oddzielnego zestawu do hostowania zadania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d345d532c29931577edbe0441003cc80b069e335
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2d72745aebedb5dad5efc86d33804a51e36b762
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289147"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046634"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Przewodnik: Tworzenie zadania wbudowanego
 
@@ -32,7 +34,7 @@ Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy, która i
 
 - Zadanie, które ma dwa parametry wejściowe i jeden parametr wyjściowy, który zwraca element MSBuild.
 
-Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersza polecenia programu Visual Studio**w następujący sposób:
+Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersza polecenia programu Visual Studio** w następujący sposób:
 
 1. Utwórz plik projektu MSBuild przy użyciu programu Visual Studio.
 
@@ -46,13 +48,13 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
 
 #### <a name="to-create-and-modify-a-project-file"></a>Aby utworzyć i zmodyfikować plik projektu
 
-1. W programie Visual Studio Utwórz nowy projekt za pomocą szablonu **aplikacji Windows Forms** C#. W polu **Nazwa** wpisz `InlineTasks`. Wpisz **lokalizację** rozwiązania, na przykład *D: \\ *. Upewnij się, że wybrano opcję **Utwórz katalog dla rozwiązania** , pole wyboru **Dodaj do kontroli źródła** jest wyczyszczone, a **Nazwa rozwiązania** to **InlineTasks**.
+1. W programie Visual Studio Utwórz nowy projekt za pomocą szablonu **aplikacji Windows Forms** C#. W polu **Nazwa** wpisz `InlineTasks`. Wpisz **lokalizację** rozwiązania, na przykład *D: \\* . Upewnij się, że wybrano opcję **Utwórz katalog dla rozwiązania** , pole wyboru **Dodaj do kontroli źródła** jest wyczyszczone, a **Nazwa rozwiązania** to **InlineTasks** .
 
 3. Kliknij przycisk **OK** , aby utworzyć plik projektu.
 
-3. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu **InlineTasks** , a następnie kliknij pozycję **Zwolnij projekt**.
+3. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł projektu **InlineTasks** , a następnie kliknij pozycję **Zwolnij projekt** .
 
-4. Ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij polecenie **Edytuj InlineTasks. csproj**.
+4. Ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij polecenie **Edytuj InlineTasks. csproj** .
 
      Plik projektu pojawi się w edytorze kodu.
 
@@ -94,20 +96,20 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
 
 ##### <a name="to-run-the-hello-task"></a>Aby uruchomić zadanie powitania
 
-1. Kliknij przycisk **Start**, kliknij pozycję **Wszystkie programy**, a następnie znajdź folder **Visual Studio Tools** i kliknij pozycję **wiersz polecenia programu Visual Studio**.
+1. Kliknij przycisk **Start** , kliknij pozycję **Wszystkie programy** , a następnie znajdź folder **Visual Studio Tools** i kliknij pozycję **wiersz polecenia programu Visual Studio** .
 
-2. W **oknie wiersza polecenia**Znajdź folder zawierający plik projektu, w tym przypadku * \\ D:\InlineTasks\InlineTasks*.
+2. W **oknie wiersza polecenia** Znajdź folder zawierający plik projektu, w tym przypadku *\\ D:\InlineTasks\InlineTasks* .
 
-3. Wpisz **MSBuild** bez przełączników polecenia, a następnie naciśnij klawisz **Enter**. Domyślnie program tworzy plik *InlineTasks. csproj* i przetwarza domyślny element docelowy TestBuild, który wywołuje zadanie powitania.
+3. Wpisz **MSBuild** bez przełączników polecenia, a następnie naciśnij klawisz **Enter** . Domyślnie program tworzy plik *InlineTasks. csproj* i przetwarza domyślny element docelowy TestBuild, który wywołuje zadanie powitania.
 
-4. Sprawdzanie danych wyjściowych w **oknie wiersza polecenia**. Powinien zostać wyświetlony następujący wiersz:
+4. Sprawdzanie danych wyjściowych w **oknie wiersza polecenia** . Powinien zostać wyświetlony następujący wiersz:
 
     `Hello, world!`
 
    > [!NOTE]
    > Jeśli komunikat powitania nie jest widoczny, spróbuj ponownie zapisać plik projektu, a następnie uruchom zadanie powitania.
 
-   Przez przemienne między edytorem kodu a **oknem wiersza polecenia**można zmienić plik projektu i szybko zobaczyć wyniki.
+   Przez przemienne między edytorem kodu a **oknem wiersza polecenia** można zmienić plik projektu i szybko zobaczyć wyniki.
 
 ## <a name="define-the-echo-task"></a>Definiowanie zadania echo
 
@@ -133,9 +135,9 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
    </Target>
    ```
 
-2. W **oknie wiersza polecenia**wpisz **MSBuild** bez przełączników polecenia, a następnie naciśnij klawisz **Enter**. Domyślnie powoduje to przetwarzanie domyślnego TestBuild docelowego, który wywołuje zadanie echo.
+2. W **oknie wiersza polecenia** wpisz **MSBuild** bez przełączników polecenia, a następnie naciśnij klawisz **Enter** . Domyślnie powoduje to przetwarzanie domyślnego TestBuild docelowego, który wywołuje zadanie echo.
 
-3. Sprawdzanie danych wyjściowych w **oknie wiersza polecenia**. Powinien zostać wyświetlony następujący wiersz:
+3. Sprawdzanie danych wyjściowych w **oknie wiersza polecenia** . Powinien zostać wyświetlony następujący wiersz:
 
     `Greetings!`
 
@@ -170,9 +172,9 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
    </Target>
    ```
 
-2. W **oknie wiersza polecenia**wpisz **MSBuild** bez przełączników polecenia, a następnie naciśnij klawisz **Enter**. Domyślnie powoduje to przetwarzanie domyślnego TestBuild docelowego, który wywołuje zadanie echo.
+2. W **oknie wiersza polecenia** wpisz **MSBuild** bez przełączników polecenia, a następnie naciśnij klawisz **Enter** . Domyślnie powoduje to przetwarzanie domyślnego TestBuild docelowego, który wywołuje zadanie echo.
 
-3. Sprawdzanie danych wyjściowych w **oknie wiersza polecenia**. Powinien zostać wyświetlony następujący wiersz:
+3. Sprawdzanie danych wyjściowych w **oknie wiersza polecenia** . Powinien zostać wyświetlony następujący wiersz:
 
     `The sum is 9`
 
@@ -226,9 +228,9 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
    </Target>
    ```
 
-2. W **oknie wiersza polecenia**wpisz **MSBuild** bez przełączników polecenia, a następnie naciśnij klawisz **Enter**. Domyślnie powoduje to przetwarzanie domyślnego TestBuild docelowego, który wywołuje zadanie RegX.
+2. W **oknie wiersza polecenia** wpisz **MSBuild** bez przełączników polecenia, a następnie naciśnij klawisz **Enter** . Domyślnie powoduje to przetwarzanie domyślnego TestBuild docelowego, który wywołuje zadanie RegX.
 
-3. Sprawdzanie danych wyjściowych w **oknie wiersza polecenia**. Powinny zostać wyświetlone następujące wiersze:
+3. Sprawdzanie danych wyjściowych w **oknie wiersza polecenia** . Powinny zostać wyświetlone następujące wiersze:
 
    ```
    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs

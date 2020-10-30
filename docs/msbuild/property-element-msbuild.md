@@ -1,5 +1,7 @@
 ---
 title: Property — element (MSBuild) | Microsoft Docs
+description: Dowiedz się więcej o elemencie właściwości programu MSBuild, który zawiera zdefiniowaną przez użytkownika nazwę właściwości i wartość, która musi być określona jako element podrzędny elementu właściwości.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e50a6dd66c2dca7fa4159c578ccd334ed1d26cae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c17906467579e8fc532372371df8be76b40e7f0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632956"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048836"
 ---
 # <a name="property-element-msbuild"></a>Property — element (MSBuild)
 
@@ -65,7 +67,7 @@ Zawiera nazwę i wartość właściwości zdefiniowane przez użytkownika. Każd
 
 ## <a name="remarks"></a>Uwagi
 
- Nazwy właściwości są ograniczone tylko do znaków ASCII. Wartości właściwości są przywoływane w projekcie przez umieszczenie nazwy właściwości między " `$(` " i " `)` ". Na przykład `$(builddir)\classes` rozwiązanie to *build\classes*, jeśli `builddir` Właściwość miała wartość `build` . Aby uzyskać więcej informacji na temat właściwości, zobacz [Właściwości programu MSBuild](../msbuild/msbuild-properties.md).
+ Nazwy właściwości są ograniczone tylko do znaków ASCII. Wartości właściwości są przywoływane w projekcie przez umieszczenie nazwy właściwości między " `$(` " i " `)` ". Na przykład `$(builddir)\classes` rozwiązanie to *build\classes* , jeśli `builddir` Właściwość miała wartość `build` . Aby uzyskać więcej informacji na temat właściwości, zobacz [Właściwości programu MSBuild](../msbuild/msbuild-properties.md).
 
 ## <a name="example"></a>Przykład
 

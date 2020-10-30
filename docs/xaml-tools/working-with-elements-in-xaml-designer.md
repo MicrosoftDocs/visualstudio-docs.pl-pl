@@ -1,17 +1,19 @@
 ---
 title: Praca z elementami w projektancie XAML
+description: Dowiedz się, jak korzystać z elementów w projektant XAML w programie Visual Studio lub Blend for Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 05/14/2018
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 3f544501a7d8a792af9ddd89c682324a21002c4f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1af793ec7ecd741de1fc1b4bb1cb48dbf2ef32f3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592925"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047132"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Praca z elementami w projektancie XAML
 
@@ -25,11 +27,11 @@ Domyślnie `Grid` panel jest używany jako kontener układu najwyższego poziomu
 
 Aby dodać element do układu w projektant XAML, wykonaj jedną z następujących czynności:
 
-- Kliknij dwukrotnie element w **przyborniku** (lub wybierz element w przyborniku, a następnie naciśnij klawisz **Enter**).
+- Kliknij dwukrotnie element w **przyborniku** (lub wybierz element w przyborniku, a następnie naciśnij klawisz **Enter** ).
 
 - Przeciągnij element z **przybornika** do obszaru kompozycji.
 
-- W **przyborniku**wybierz jeden z narzędzi do rysowania (na przykład [elipsę](xref:Windows.UI.Xaml.Shapes.Ellipse) lub [prostokąt](xref:Windows.UI.Xaml.Shapes.Rectangle)), a następnie narysuj element w aktywnym panelu.
+- W **przyborniku** wybierz jeden z narzędzi do rysowania (na przykład [elipsę](xref:Windows.UI.Xaml.Shapes.Ellipse) lub [prostokąt](xref:Windows.UI.Xaml.Shapes.Rectangle)), a następnie narysuj element w aktywnym panelu.
 
 ## <a name="change-the-layering-order-of-elements"></a>Zmiana kolejności warstw elementów
 
@@ -39,7 +41,7 @@ Aby zmienić kolejność warstw, wykonaj jedną z następujących czynności:
 
 - W oknie **Konspekt dokumentu** przeciągnij elementy w górę lub w dół, aby utworzyć żądaną kolejność warstw.
 
-- Kliknij prawym przyciskiem myszy element w oknie Konspekt dokumentu lub obszar kompozycji, dla którego chcesz zmienić kolejność warstwową, wskaż pozycję **kolejność**, a następnie kliknij jedną z następujących czynności:
+- Kliknij prawym przyciskiem myszy element w oknie Konspekt dokumentu lub obszar kompozycji, dla którego chcesz zmienić kolejność warstwową, wskaż pozycję **kolejność** , a następnie kliknij jedną z następujących czynności:
 
   - **Przesuń na wierzch** , aby przenieść element do przodu w kolejności.
 
@@ -61,9 +63,9 @@ Aby wyrównać dwa lub więcej elementów za pomocą poleceń menu:
 
 1. Wybierz elementy, które chcesz wyrównać. Możesz wybrać więcej niż jeden element, naciskając i przytrzymując klawisz **Ctrl** podczas zaznaczania elementów.
 
-2. Wybierz jedną z następujących właściwości w obszarze **HorizontalAlignment** w sekcji **layout** w okno właściwości: **Left**, **Center**, **Right**lub **Rozciągaj**.
+2. Wybierz jedną z następujących właściwości w obszarze **HorizontalAlignment** w sekcji **layout** w okno właściwości: **Left** , **Center** , **Right** lub **Rozciągaj** .
 
-3. Wybierz jedną z następujących właściwości w obszarze **VerticalAlignment** w sekcji **layout** w okno właściwości: **Top**, **Center**, **Bottom**lub **Rozciągaj**.
+3. Wybierz jedną z następujących właściwości w obszarze **VerticalAlignment** w sekcji **layout** w okno właściwości: **Top** , **Center** , **Bottom** lub **Rozciągaj** .
 
 Aby wyrównać dwa lub więcej elementów za pomocą linii wyrównania, w projektant XAML, w układ, który zawiera co najmniej dwa elementy, przeciągnij lub Zmień rozmiar jednego z elementów, aby krawędź była wyrównana do innego elementu.
 
@@ -77,7 +79,7 @@ Aby zmienić marginesy elementu w okno Właściwości:
 
 1. Wybierz element, którego marginesy chcesz zmienić.
 
-2. W **obszarze Układ** w okno właściwości Zmień wartość (w pikselach lub jednostkach niezależnych od urządzenia, które są w przybliżeniu 1/96 cala) dla dowolnej właściwości **marginesu** (**górny**, **lewy**, **prawy**lub **dolny**).
+2. W **obszarze Układ** w okno właściwości Zmień wartość (w pikselach lub jednostkach niezależnych od urządzenia, które są w przybliżeniu 1/96 cala) dla dowolnej właściwości **marginesu** ( **górny** , **lewy** , **prawy** lub **dolny** ).
 
 W obszarze kompozycji, aby zmienić marginesy elementu względem kontenera układu elementu, kliknij *marginesy* , które pojawiają się wokół elementu, gdy element jest zaznaczony i znajduje się w kontenerze układu. Ilustracja przedstawiająca moduł definiowania układu marginesów zawiera temat [Tworzenie interfejsu użytkownika przy użyciu Projektant XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
@@ -96,18 +98,18 @@ Aby zgrupować elementy w nowym kontenerze układu:
 
 1. Wybierz elementy, które chcesz zgrupować. (Aby zaznaczyć wiele elementów, naciśnij i przytrzymaj klawisz **Ctrl** podczas klikania.)
 
-2. Kliknij prawym przyciskiem myszy wybrane elementy, wskaż polecenie **Grupuj do**, a następnie kliknij typ kontenera układu, w którym ma się znajdować Grupa.
+2. Kliknij prawym przyciskiem myszy wybrane elementy, wskaż polecenie **Grupuj do** , a następnie kliknij typ kontenera układu, w którym ma się znajdować Grupa.
 
     > [!TIP]
     > W przypadku wybrania opcji [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border)lub [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) w celu grupowania elementów elementy są umieszczane w nowym panelu [siatki](xref:Windows.UI.Xaml.Controls.Grid) w obrębie [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border)lub [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer). Jeśli rozgrupujesz elementy w jednym z tych kontenerów układu, zostanie usunięty tylko [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border)lub [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) , a panel [Siatka](xref:Windows.UI.Xaml.Controls.Grid) pozostanie. Aby usunąć `Grid` panel, Rozgrupuj elementy ponownie.
 
-Aby rozgrupować elementy i usunąć układ, kliknij prawym przyciskiem myszy grupę, którą chcesz rozgrupować, a następnie kliknij pozycję **Rozgrupuj**. Można również grupować lub rozgrupować elementy, klikając prawym przyciskiem myszy wybrane elementy w oknie konspektu dokumentu i klikając pozycję **Grupuj do** lub **Rozgrupuj**.
+Aby rozgrupować elementy i usunąć układ, kliknij prawym przyciskiem myszy grupę, którą chcesz rozgrupować, a następnie kliknij pozycję **Rozgrupuj** . Można również grupować lub rozgrupować elementy, klikając prawym przyciskiem myszy wybrane elementy w oknie konspektu dokumentu i klikając pozycję **Grupuj do** lub **Rozgrupuj** .
 
 ## <a name="reset-the-element-layout"></a>Zresetuj układ elementu
 
 Można przywrócić wartości domyślne dla określonych właściwości układu elementu przy użyciu poleceń resetowania układu. Za pomocą tego polecenia można zresetować margines, wyrównanie, Szerokość, Wysokość i rozmiar elementu, pojedynczo lub zbiorczo.
 
-Aby zresetować układ elementu, kliknij prawym przyciskiem myszy element w oknie konspektu dokumentu lub obszarze kompozycji, a następnie wybierz **Layout**polecenie  >  **Resetowanie** układu *PropertyName*, gdzie *PropertyName* jest właściwością, którą chcesz zresetować (lub wybierz pozycję **Układ**  >  **Zresetuj wszystkie** , aby zresetować wszystkie właściwości układu elementu).
+Aby zresetować układ elementu, kliknij prawym przyciskiem myszy element w oknie konspektu dokumentu lub obszarze kompozycji, a następnie wybierz **Layout** polecenie  >  **Resetowanie** układu *PropertyName* , gdzie *PropertyName* jest właściwością, którą chcesz zresetować (lub wybierz pozycję **Układ**  >  **Zresetuj wszystkie** , aby zresetować wszystkie właściwości układu elementu).
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -1,5 +1,7 @@
 ---
 title: Co &apos; nowego w programie MSBuild 16,0 | Microsoft Docs
+description: Dowiedz się więcej na temat zmienionych i zaktualizowanych funkcji oraz właściwości programu MSBuild 16,0 i Utwórz link do informacji o wersji.
+ms.custom: SEO-VS-2020
 ms.date: 03/11/2019
 ms.topic: conceptual
 author: ghogen
@@ -8,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 48fc1a02ad34a3d5229ead0da79c0f6fa781670e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4e0079fa301d751962a945a0bf8348ffd3c359d
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711654"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047784"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Co nowego w programie MSBuild 16.0
 

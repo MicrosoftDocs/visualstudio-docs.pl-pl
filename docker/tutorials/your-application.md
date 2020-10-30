@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: d4538becdf7627cc63ac94f65ac456123c5d9c47
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a66b747eda633d666518bf2d8a48328a25e038d2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739983"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046189"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Kompiluj i uruchamiaj przykładową aplikację do zrobienia
 
@@ -26,7 +26,9 @@ W tym momencie zespół programistyczny jest dość mały i po prostu tworzysz a
 
 ## <a name="get-the-app"></a>Pobierz aplikację
 
-Przed uruchomieniem aplikacji należy uzyskać kod źródłowy aplikacji na komputerze. W przypadku rzeczywistych projektów zwykle zostanie Sklonowane repozytorium. Jednak w tym samouczku utworzono plik ZIP zawierający aplikację.
+Przed uruchomieniem aplikacji należy uzyskać kod źródłowy aplikacji na komputerze. W przypadku rzeczywistych projektów zwykle zostanie Sklonowane repozytorium. Jednak w tym samouczku utworzyliśmy plik ZIP zawierający aplikację.
+
+1. Upewnij się, że na komputerze lokalnym zainstalowano Docker for Windows lub platformę Docker Community Edition. Zobacz [dokumentację instalacji Docker for Windows](https://docs.docker.com/docker-for-windows/install/). Proces instalacji powoduje, że plik ZIP zawierający przykład jest dostępny pod adresem localhost.
 
 1. [Pobierz plik zip](http://localhost/assets/app.zip). Otwórz plik ZIP i upewnij się, że wyodrębnisz zawartość.
 

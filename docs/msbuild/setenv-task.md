@@ -1,5 +1,7 @@
 ---
 title: SetEnv — zadanie | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa zadania SetEnv do ustawiania lub usuwania wartości określonej zmiennej środowiskowej.
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2018
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5df538e7eb86a20dfc06e6e6558bded577ba3d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7267e90c2fe3e4617fe2bec8bb177baf42ce37b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632384"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048306"
 ---
 # <a name="setenv-task"></a>SetEnv, zadanie
 

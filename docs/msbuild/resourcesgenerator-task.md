@@ -1,5 +1,7 @@
 ---
 title: ResourcesGenerator — — zadanie | Microsoft Docs
+description: Dowiedz się, w jaki sposób MSBuild używa zadania ResourcesGenerator — do osadzenia jednego lub większej liczby zasobów w pliku Resources.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,16 +19,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5aba45292aaa55a719eb19d6f0f6f115e8b477
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 288d83cd16b9faebc9c6826a08da7c11811663d5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632514"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048478"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator, zadanie
 
-<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator>Zadanie osadza jeden lub więcej zasobów (*. jpg*, *. ico*, *. bmp*, XAML w formacie binarnym i innych typów rozszerzenia) w pliku *resources* .
+<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator>Zadanie osadza jeden lub więcej zasobów ( *. jpg* , *. ico* , *. bmp* , XAML w formacie binarnym i innych typów rozszerzenia) w pliku *resources* .
 
 ## <a name="task-parameters"></a>Parametry zadania
 

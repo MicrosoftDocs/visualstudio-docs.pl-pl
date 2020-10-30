@@ -1,5 +1,7 @@
 ---
 title: Element zestawu SDK (MSBuild) | Microsoft Docs
+description: Dowiedz się więcej na temat składni, atrybutów i elementów dla elementu zestawu MSBuild SDK, który odwołuje się do zestawu SDK projektu MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 01/25/2018
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b348cf2af76c439a28bbb58c0050cc3d458d5457
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632475"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048363"
 ---
 # <a name="sdk-element-msbuild"></a>Element zestawu SDK (MSBuild)
 

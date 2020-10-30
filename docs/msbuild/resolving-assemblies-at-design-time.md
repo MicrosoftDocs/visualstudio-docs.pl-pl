@@ -1,5 +1,7 @@
 ---
 title: Rozwiązywanie zestawów w czasie projektowania | Microsoft Docs
+description: Dowiedz się, jak MSBuild rozpoznaje odwołania do zestawów w czasie projektowania przy użyciu zestawów referencyjnych w pakiecie docelowym.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69f5ba2627e2d659665fa0bd3fbf706f9cad5573
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 515c99a4d73abcb3a287f3f4026723bd8050b360
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632566"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048496"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Rozwiązywanie zestawów w czasie projektowania
 
