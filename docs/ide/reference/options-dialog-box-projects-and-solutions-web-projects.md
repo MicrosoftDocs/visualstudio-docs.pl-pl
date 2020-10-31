@@ -1,5 +1,6 @@
 ---
-title: Okno dialogowe Opcje, Projekty i rozwiązania, Projekty sieci Web
+title: Projekty sieci Web w oknie dialogowym Opcje
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.topic: reference
 f1_keywords:
@@ -10,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b393291ccb316b62b2a056b55ca902781196b637
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efff521076b2d4a4b091ebf30b42f0d3ea4daa1f
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114483"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102639"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Okno dialogowe Opcje, Projekty i rozwiązania, Projekty sieci Web
 
-Ustawia serwer sieci Web, który będzie używany przez projekty sieci Web do programowania w ramach programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Aby uzyskać dostęp do tych opcji, wybierz pozycję **narzędzia > opcje** rozwiń pozycję **projekty i rozwiązania**, a następnie wybierz pozycję **projekty sieci Web**.
+Ustawia serwer sieci Web, który będzie używany przez projekty sieci Web do programowania w ramach programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Aby uzyskać dostęp do tych opcji, wybierz pozycję **narzędzia > opcje** rozwiń pozycję **projekty i rozwiązania** , a następnie wybierz pozycję **projekty sieci Web** .
 
 Domyślnie uruchamianie projektu sieci Web w programie Visual Studio korzysta z serwera deweloperskiego programu Visual Studio. Aby uzyskać więcej informacji, zobacz [serwery sieci Web w programie Visual Studio for ASP.NET — projekty sieci Web](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\)).
 

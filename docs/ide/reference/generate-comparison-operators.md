@@ -1,5 +1,7 @@
 ---
-title: Generuj operatory porównania dla typów, które implementują interfejs IComparable
+title: Generowanie operatorów porównania dla elementu IComparable
+ms.custom: SEO-VS-2020
+description: Aby zwiększyć wydajność, Generuj operatory porównania dla typów, które implementują interfejs IComparable.
 ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31e33b562a5a11ff77c1d610fbce9e90506b036d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 289562b1aebe981b0829a1adac107a607163a859
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290573"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102600"
 ---
 # <a name="generate-comparison-operators-for-types-that-implement-icomparable"></a>Generuj operatory porównania dla typów, które implementują interfejs IComparable
 

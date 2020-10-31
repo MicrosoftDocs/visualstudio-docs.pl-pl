@@ -1,6 +1,7 @@
 ---
-title: Uzupełnianie IntelliSense dla nieimportowanych typów i metod rozszerzających
+title: Uzupełnianie IntelliSense dla typów & metod rozszerzenia
 description: Jak używać funkcji IntelliSense dla typów i metod rozszerzających, które nie zostały jeszcze zaimportowane do `using` dyrektywy.
+ms.custom: SEO-VS-2020
 ms.date: 07/27/2020
 ms.topic: reference
 author: mikadumont
@@ -11,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6112bc3894424b9dfd3d060ed390960243b0f98
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3eb912ebb4d8d7d4596a6aae6499ac054d4514ca
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87330988"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102509"
 ---
 # <a name="intellisense-completion-for-unimported-types-and-extension-methods"></a>Uzupełnianie IntelliSense dla nieimportowanych typów i metod rozszerzających
 
@@ -28,7 +29,7 @@ To Refaktoryzacja dotyczy:
 
 **Co:** Technologia IntelliSense zapewnia uzupełnianie dla nieimportowanych typów i metod rozszerzających.
 
-**Kiedy:** Chcesz użyć typu lub metod rozszerzenia, które mają już zależność w projekcie, ale instrukcja using nie została jeszcze dodana do pliku. 
+**Kiedy:** Chcesz użyć typu lub metod rozszerzenia, które mają już zależność w projekcie, ale instrukcja using nie została jeszcze dodana do pliku.
 
 **Dlaczego:** Nie trzeba ręcznie dodawać instrukcji using do pliku.
 
@@ -37,9 +38,9 @@ To Refaktoryzacja dotyczy:
 1. Po rozpoczęciu wpisywania nazwy typu lub metody rozszerzenia, która ma zależność w projekcie, funkcja IntelliSense udzieli sugestii. Elementy z nieimportowanych przestrzeni nazw byłyby wyświetlane jako sufiksy.
 
    > [!TIP]
-   > Można pokazać/ukryć elementy z nieimportowanych przestrzeni nazw na żądanie przy użyciu **przycisku Ekspander (Alt + A)** , który pojawia się w lewym dolnym rogu listy uzupełniania. Aby zmienić zachowanie domyślne, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  **C#**  /  **podstawowa**  >  **technologia IntelliSense** i Wyszukaj pozycję **Pokaż elementy z nieimportowanych przestrzeni nazw**.
+   > Można pokazać/ukryć elementy z nieimportowanych przestrzeni nazw na żądanie przy użyciu **przycisku Ekspander (Alt + A)** , który pojawia się w lewym dolnym rogu listy uzupełniania. Aby zmienić zachowanie domyślne, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  **C#**  /  **podstawowa**  >  **technologia IntelliSense** i Wyszukaj pozycję **Pokaż elementy z nieimportowanych przestrzeni nazw** .
 
-2. Wybierz i zatwierdź nieimportowany element. 
+2. Wybierz i zatwierdź nieimportowany element.
 
    Instrukcja using zostanie automatycznie dodana do pliku.
 

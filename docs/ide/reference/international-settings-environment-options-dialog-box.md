@@ -1,5 +1,6 @@
 ---
-title: Ustawienia międzynarodowe, środowisko, opcje — Okno dialogowe
+title: Ustawienia międzynarodowe w oknie dialogowym Opcje
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1526e1c49636f4883392caa63966714625d066d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1210f217c9e1dc1f8a90eb99fec9e55970aa8eff
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595517"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102496"
 ---
 # <a name="options-dialog-box-environment--international-settings"></a>Opcje — okno dialogowe: \> międzynarodowe ustawienia środowiska
 
@@ -30,7 +31,7 @@ Strona Ustawienia międzynarodowe umożliwia zmianę języka domyślnego w przyp
 
 **Język**
 
-Wyświetla listę języków dostępnych dla zainstalowanych wersji językowych produktu. Jeśli wiele języków produktów lub instalacja języka mieszanego współużytkuje środowisko, wybór języka zostanie zmieniony na **taki sam, jak system Microsoft Windows**.
+Wyświetla listę języków dostępnych dla zainstalowanych wersji językowych produktu. Jeśli wiele języków produktów lub instalacja języka mieszanego współużytkuje środowisko, wybór języka zostanie zmieniony na **taki sam, jak system Microsoft Windows** .
 
 > [!CAUTION]
 > W systemie, w którym zainstalowano wiele języków, to ustawienie nie ma wpływ na narzędzia do kompilacji Visual C++ (cl.exe, link.exe, nmake.exe, bscmake.exe i powiązane pliki). Narzędzia te korzystają z wersji dla ostatniego zainstalowanego języka. Narzędzia kompilacji dla zainstalowanego wcześniej języka są zastępowane, ponieważ narzędzia do kompilowania Visual C++ nie używają satelitarnego modelu DLL.
