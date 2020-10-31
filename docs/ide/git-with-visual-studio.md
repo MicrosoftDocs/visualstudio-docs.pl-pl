@@ -9,10 +9,10 @@ author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
 ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
-ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 10/31/2020
 ms.locfileid: "92334210"
 ---
 # <a name="new-git-experience-in-visual-studio-preview"></a>Nowe środowisko Git w programie Visual Studio (wersja zapoznawcza)
@@ -30,7 +30,7 @@ Aby włączyć nowe środowisko git, przejdź do pozycji **Narzędzia**  >  **Op
 
 Istnieją trzy sposoby używania usługi Git w programie Visual Studio 2019:
 
-- [Otwórz istniejące repozytorium git](#open-an-existing-local-repository). Jeśli Twój kod znajduje się już na Twojej maszynie, możesz otworzyć **go za pomocą polecenia**  >  **Otwórz**  >  **projekt/rozwiązanie** (lub **folder**), a program Visual Studio automatycznie wykrywa, czy ma zainicjowane repozytorium git.
+- [Otwórz istniejące repozytorium git](#open-an-existing-local-repository). Jeśli Twój kod znajduje się już na Twojej maszynie, możesz otworzyć **go za pomocą polecenia**  >  **Otwórz**  >  **projekt/rozwiązanie** (lub **folder** ), a program Visual Studio automatycznie wykrywa, czy ma zainicjowane repozytorium git.
 - [Utwórz nowe repozytorium git](#create-a-new-git-repository). Jeśli kod nie jest skojarzony z usługą git, możesz utworzyć nowe repozytorium git.
 - [Klonuj istniejące repozytorium git](#clone-an-existing-git-repository). Jeśli kod, nad którym chcesz korzystać, nie znajduje się na komputerze, możesz sklonować wszystkie istniejące repozytoria zdalne.
 
@@ -79,26 +79,26 @@ Można przełączać się między aktualnie otwartym widokiem a listą widoków 
 
 Git śledzi zmiany plików w repozytorium podczas pracy i oddziela pliki w repozytorium do trzech kategorii. Te zmiany są równoważne z informacjami wyświetlanymi po wprowadzeniu `git status` polecenia w wierszu polecenia:
 
-- **Pliki niezmodyfikowane**: te pliki nie zostały zmienione od czasu ostatniego zatwierdzenia.
-- **Zmodyfikowane pliki**: te pliki mają zmiany od czasu ostatniego zatwierdzenia, ale jeszcze nie zostały przygotowane do następnego zatwierdzenia.
-- **Pliki przemieszczane**: te pliki zawierają zmiany, które zostaną dodane do następnego zatwierdzenia.
+- **Pliki niezmodyfikowane** : te pliki nie zostały zmienione od czasu ostatniego zatwierdzenia.
+- **Zmodyfikowane pliki** : te pliki mają zmiany od czasu ostatniego zatwierdzenia, ale jeszcze nie zostały przygotowane do następnego zatwierdzenia.
+- **Pliki przemieszczane** : te pliki zawierają zmiany, które zostaną dodane do następnego zatwierdzenia.
 
 Podczas pracy program Visual Studio śledzi zmiany plików w projekcie w sekcji **zmiany** w oknie zmiany w usłudze **git** .
 
 :::image type="content" source="media/git-changes-window.png" alt-text="Zrzut ekranu przedstawiający sekcję funkcje w wersji zapoznawczej okna dialogowego Opcje w programie Visual Studio ":::
 
-Gdy wszystko będzie gotowe do przemieszczania zmian, kliknij **+** przycisk (plus) w każdym pliku, który chcesz przygotować, lub kliknij prawym przyciskiem myszy plik, a następnie wybierz pozycję **etap**. Możesz również przemieścić wszystkie zmodyfikowane pliki jednym kliknięciem, używając przycisku przemieszczenie wszystko **+** (plus) w górnej części sekcji **zmiany** .
+Gdy wszystko będzie gotowe do przemieszczania zmian, kliknij **+** przycisk (plus) w każdym pliku, który chcesz przygotować, lub kliknij prawym przyciskiem myszy plik, a następnie wybierz pozycję **etap** . Możesz również przemieścić wszystkie zmodyfikowane pliki jednym kliknięciem, używając przycisku przemieszczenie wszystko **+** (plus) w górnej części sekcji **zmiany** .
 
-Podczas przygotowywania zmiany program Visual Studio tworzy sekcję **przemieszczone zmiany** . Tylko zmiany w sekcji **przemieszczane zmiany** są dodawane do następnego zatwierdzenia, które można wykonać, wybierając pozycję **Zatwierdź przygotowane**. Zmiany mogą być również nieprzygotowane, klikając przycisk **–** (minus). Równoważne polecenie dla tej akcji to `git commit -m "Your commit message"` .
+Podczas przygotowywania zmiany program Visual Studio tworzy sekcję **przemieszczone zmiany** . Tylko zmiany w sekcji **przemieszczane zmiany** są dodawane do następnego zatwierdzenia, które można wykonać, wybierając pozycję **Zatwierdź przygotowane** . Zmiany mogą być również nieprzygotowane, klikając przycisk **–** (minus). Równoważne polecenie dla tej akcji to `git commit -m "Your commit message"` .
 
-Możesz również zrezygnować z przygotowania zmodyfikowanych plików, pomijając obszar przejściowy. W takim przypadku program Visual Studio pozwala na zatwierdzanie zmian bezpośrednio bez konieczności ich przemieszczania. Po prostu wprowadź wiadomość dotyczącą zatwierdzenia, a następnie wybierz pozycję **Zatwierdź wszystko**. Równoważne polecenie dla tej akcji to `git commit -a` .
+Możesz również zrezygnować z przygotowania zmodyfikowanych plików, pomijając obszar przejściowy. W takim przypadku program Visual Studio pozwala na zatwierdzanie zmian bezpośrednio bez konieczności ich przemieszczania. Po prostu wprowadź wiadomość dotyczącą zatwierdzenia, a następnie wybierz pozycję **Zatwierdź wszystko** . Równoważne polecenie dla tej akcji to `git commit -a` .
 
 Program Visual Studio ułatwia również przekazywanie i synchronizowanie za pomocą jednego kliknięcia przy użyciu skrótów **Zatwierdź wszystkie i wypchnij** i **Zatwierdź wszystkie skróty i Synchronizuj** . Po dwukrotnym kliknięciu dowolnego pliku w sekcjach **zmiany** i **przemieszczane zmiany** można zobaczyć porównanie liniowe z niezmodyfikowaną wersją pliku.
 
 :::image type="content" source="media/git-file-version-compare.png" alt-text="Zrzut ekranu przedstawiający sekcję funkcje w wersji zapoznawczej okna dialogowego Opcje w programie Visual Studio ":::
 
 > [!TIP]
-> Możesz skojarzyć element roboczy usługi Azure DevOps z zatwierdzeniem, używając znaku "#", jeśli masz połączenie z repozytorium usługi Azure DevOps. Repozytorium usługi Azure DevOps można połączyć za pomocą **Team Explorer**  >  **zarządzania połączeniami**.
+> Możesz skojarzyć element roboczy usługi Azure DevOps z zatwierdzeniem, używając znaku "#", jeśli masz połączenie z repozytorium usługi Azure DevOps. Repozytorium usługi Azure DevOps można połączyć za pomocą **Team Explorer**  >  **zarządzania połączeniami** .
 
 ### <a name="select-an-existing-branch"></a>Wybierz istniejącą gałąź
 
@@ -142,7 +142,7 @@ Wskaźnik również działa jako link umożliwiający przejście do historii zat
 
 #### <a name="commit-details"></a>Szczegóły zatwierdzenia
 
-Po dwukrotnym kliknięciu **zatwierdzenia**program Visual Studio otwiera jego szczegóły w osobnym oknie narzędzi. W tym miejscu możesz cofnąć zatwierdzenie, zresetować zatwierdzenie, zmienić komunikat zatwierdzenia lub utworzyć tag w zatwierdzeniu. Po kliknięciu zmienionego pliku w zatwierdzeniu program Visual Studio otwiera widok **różnic** obok siebie zatwierdzania i jego elementu nadrzędnego.
+Po dwukrotnym kliknięciu **zatwierdzenia** program Visual Studio otwiera jego szczegóły w osobnym oknie narzędzi. W tym miejscu możesz cofnąć zatwierdzenie, zresetować zatwierdzenie, zmienić komunikat zatwierdzenia lub utworzyć tag w zatwierdzeniu. Po kliknięciu zmienionego pliku w zatwierdzeniu program Visual Studio otwiera widok **różnic** obok siebie zatwierdzania i jego elementu nadrzędnego.
 
 :::image type="content" source="media/git-branch-commit-details.png" alt-text="Zrzut ekranu przedstawiający sekcję funkcje w wersji zapoznawczej okna dialogowego Opcje w programie Visual Studio ":::
 
@@ -164,7 +164,7 @@ Jeśli jednak żadne z tych okien nie jest otwarte, a zamiast tego przejdziesz d
     >>>>>>> main
 ```
 
-Zamiast tego program Visual Studio Wyświetla złoty pasek informacyjny u góry strony, który wskazuje, że otwarty plik ma konflikty. Następnie możesz kliknąć link, aby otworzyć **Edytor scalania**.
+Zamiast tego program Visual Studio Wyświetla złoty pasek informacyjny u góry strony, który wskazuje, że otwarty plik ma konflikty. Następnie możesz kliknąć link, aby otworzyć **Edytor scalania** .
 
 :::image type="content" source="media/git-merge-conflict-gold-info-bar.png" alt-text="Zrzut ekranu przedstawiający sekcję funkcje w wersji zapoznawczej okna dialogowego Opcje w programie Visual Studio ":::
 
