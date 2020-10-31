@@ -1,95 +1,26 @@
 - name: Tworzenie aplikacji na platformie Azure przy użyciu programu Visual Studio
-  href: index.yml
   expanded: true
 - name: Publikowanie na platformie Azure
-  expanded: true
   items:
-    - name: Publikowanie usługi w chmurze
-      href: vs-azure-tools-publishing-a-cloud-service.md
-    - name: Publikowanie za pomocą środowiska IDE programu Visual Studio
-      href: vs-azure-tools-publish-azure-application-wizard.md
-    - name: Publikowanie za pomocą skryptu programu PowerShell
-      href: vs-azure-tools-publishing-using-powershell-scripts.md
     - name: Publikowanie aplikacji internetowej platformy ASP.NET na maszynie wirtualnej platformy Azure
       href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Publikowanie aplikacji internetowej w usługach w chmurze platformy Azure
-      href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
+  expanded: true
 - name: Łączenie z usługami platformy Azure
-  expanded: false
   items:
-    - name: Dodawanie magazynu Azure Storage
-      href: vs-azure-tools-connected-services-storage.md
     - name: Dodawanie usługi Azure Active Directory (AD)
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Dodawanie usług mobilnych
-      href: vs-azure-tools-connected-services-add-mobile-services.md
-- name: Programowanie usług w chmurze platformy Azure
   expanded: false
+- name: Programowanie usług w chmurze platformy Azure
   items:
     - name: Praca z projektami usług w chmurze
-      items:
-        - name: Uzyskiwanie dostępu do prywatnych chmur platformy Azure
-          href: vs-azure-tools-access-private-azure-clouds-with-visual-studio.md
-        - name: Tworzenie projektu usługi w chmurze platformy Azure
-          href: vs-azure-tools-azure-project-create.md
-        - name: Zarządzanie rolami w usługach w chmurze platformy Azure
-          href: vs-azure-tools-cloud-service-project-managing-roles.md
-        - name: Przygotowywanie do publikowania lub wdrażania usługi w chmurze
-          href: vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md
-        - name: Zachowywanie stałego wirtualnego adresu IP usługi w chmurze platformy Azure
-          href: vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md
-        - name: Tworzenie projektów platformy Azure z poziomu wiersza polecenia
-          href: vs-azure-tools-command-line-build.md
-        - name: Konfigurowanie ról usług w chmurze platformy Azure
-          href: vs-azure-tools-configure-roles-for-cloud-service.md
-        - name: Konfigurowanie projektu usługi w chmurze platformy Azure
-          href: vs-azure-tools-configuring-an-azure-project.md
-        - name: Konfigurowanie projektu platformy Azure do używania wielu konfiguracji usługi
-          href: vs-azure-tools-multiple-services-project-configurations.md
-        - name: Uaktualnianie projektów do bieżącej wersji narzędzi platformy Azure
-          href: vs-azure-tools-upgrade-projects-to-the-current-version-of-the-azure-tools.md
     - name: Testowanie i debugowanie usługi w chmurze
-      items:
-        - name: Debugowanie usługi w chmurze platformy Azure lub maszyny wirtualnej
-          href: vs-azure-tools-debug-cloud-services-virtual-machines.md
-        - name: Informacje dotyczące różnych sposobów debugowania usługi w chmurze platformy Azure
-          href: vs-azure-tools-debugging-cloud-services-overview.md
-        - name: Konfigurowanie diagnostyki dla usług w chmurze i maszyn wirtualnych platformy Azure
-          href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
-        - name: Uruchamianie i debugowanie usługi w chmurze platformy Azure na maszynie lokalnej za pomocą emulatora w wersji Express
-          href: vs-azure-tools-emulator-express-debug-run.md
-        - name: Debugowanie opublikowanej usługi w chmurze platformy Azure za pomocą funkcji IntelliTrace
-          href: vs-azure-tools-intellitrace-debug-published-cloud-services.md
-        - name: Testowanie wydajności usługi w chmurze
-          href: vs-azure-tools-performance-profiling-cloud-services.md
-        - name: Optymalizacja kodu platformy Azure
-          href: vs-azure-tools-optimizing-azure-code-in-visual-studio.md
     - name: Publikowanie usługi w chmurze na platformie Azure
-      items:
-        - name: Migrowanie i publikowanie aplikacji internetowej w usłudze w chmurze platformy Azure
-          href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
-        - name: Korzystanie z kreatora publikacji aplikacji platformy Azure programu Visual Studio
-          href: vs-azure-tools-publish-azure-application-wizard.md
-        - name: Publikowanie usługi w chmurze za pomocą programu Visual Studio
-          href: vs-azure-tools-publishing-a-cloud-service.md
-        - name: Publikowanie w środowisku deweloperskim i testowym za pomocą skryptów programu Windows PowerShell
-          href: vs-azure-tools-publishing-using-powershell-scripts.md
-        - name: Publish-WebApplicationVM (skrypt programu Windows PowerShell)
-          href: vs-azure-tools-publish-webapplicationvm.md
-        - name: Publish-WebApplicationWebSite (skrypt programu Windows PowerShell)
-          href: vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md
-        - name: Zarządzanie konfiguracjami i profilami usług
-          href: vs-azure-tools-service-configurations-and-profiles-how-to-manage.md
-        - name: Konfigurowanie nazwanych poświadczeń uwierzytelniania
-          href: vs-azure-tools-setting-up-named-authentication-credentials.md
     - name: Praca z usługą Azure Storage
       items:
         - name: Wprowadzenie do Eksploratora usługi Storage
           href: /azure/vs-azure-tools-storage-manage-with-storage-explorer?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Konfigurowanie i używanie emulatora usługi Storage
           href: /azure/vs-azure-tools-storage-emulator-using?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Konstruowanie ciągów filtrów dla projektanta tabel
-          href: vs-azure-tools-table-designer-construct-filter-strings.md
         - name: Zarządzanie zasobami usługi Azure Blob Storage za pomocą Eksploratora usługi Storage
           href: /azure/vs-azure-tools-storage-explorer-blobs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Używanie Eksploratora usługi Storage z usługą Azure File Storage
@@ -98,11 +29,5 @@
           href: /azure/vs-azure-tools-storage-explorer-relnotes?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Ułatwienia dostępu Eksploratora usługi Storage
           href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+  expanded: false
 - name: Cloud Explorer
-  items:
-    - name: Przeglądanie zasobów magazynu i zarządzanie nimi za pomocą Eksploratora serwera
-      href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
-    - name: Zarządzanie zasobami skojarzonymi z kontami platformy Azure w narzędziu Cloud Explorer
-      href: vs-azure-tools-resources-managing-with-cloud-explorer.md
-    - name: Uzyskiwanie dostępu do maszyn wirtualnych platformy Azure z poziomu Eksploratora serwera
-      href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
