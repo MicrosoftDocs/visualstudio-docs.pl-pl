@@ -1,5 +1,7 @@
 ---
 title: 'Porady: tworzenie cieniowania koloru podstawowego'
+description: Dowiedz się, jak używać projektanta cieniowania i ukierunkowanego języka cieniowania wykresów, aby utworzyć cieniowanie kolorami prostymi, które ustawia kolor końcowy na stałą wartość koloru RGB.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe0fc31f3be758e16042de6133399b2df6b65c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d966a8fdc565eae5254d21dba4ab9dfaa440de94
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769160"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134109"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Instrukcje: tworzenie cieniowania koloru podstawowego
 
@@ -27,9 +29,9 @@ Przed rozpoczęciem upewnij się, że wyświetlane jest okno **Właściwości** 
 
 1. Utwórz program do cieniowania DGSL. Aby dowiedzieć się, jak dodać cieniowanie DGSL do projektu, zobacz sekcję Wprowadzenie w [projektancie cieniowania](../designers/shader-designer.md).
 
-2. Usuń węzeł **koloru punktu** . Za pomocą narzędzia **Wybierz** wybierz węzeł **Kolor punktu** , a następnie na pasku menu wybierz polecenie **Edytuj**  >  **Usuń**.
+2. Usuń węzeł **koloru punktu** . Za pomocą narzędzia **Wybierz** wybierz węzeł **Kolor punktu** , a następnie na pasku menu wybierz polecenie **Edytuj**  >  **Usuń** .
 
-3. Dodaj węzeł **stałej koloru** do grafu. W **przyborniku**, w obszarze **stałe**, wybierz pozycję **kolor stała** i przenieś ją do powierzchni projektowej.
+3. Dodaj węzeł **stałej koloru** do grafu. W **przyborniku** , w obszarze **stałe** , wybierz pozycję **kolor stała** i przenieś ją do powierzchni projektowej.
 
 4. Określ wartość koloru dla węzła **stałego koloru** . Użyj narzędzia **Wybierz** , aby wybrać węzeł **stałej koloru** , a następnie w oknie **Właściwości** , we właściwości **Output** , określić wartość koloru. Dla elementu pomarańczowego Określ wartość (1,0, 0,5, 0,2, 1,0).
 

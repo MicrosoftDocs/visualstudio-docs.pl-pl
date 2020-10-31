@@ -1,5 +1,7 @@
 ---
 title: 'Porady: tworzenie modułu cieniującego gradientu geometrycznego'
+description: Dowiedz się, jak używać projektanta cieniowania i ukierunkowanego języka cieniowania wykresu, aby utworzyć cieniowanie gradientowe oparte na geometrii, które skaluje stałą wartość koloru RGB.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e10fd5266ba39febe6261f41437c10c19b5c82f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01d712365cc296c54f0e5d1a58660df1051e2f20
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769113"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134475"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Instrukcje: tworzenie cieniowania gradientu geometrycznego
 
@@ -27,15 +29,15 @@ Przed rozpoczęciem upewnij się, że wyświetlane jest okno **Właściwości** 
 
 1. Utwórz program do cieniowania DGSL, który będzie działał. Aby dowiedzieć się, jak dodać cieniowanie DGSL do projektu, zobacz sekcję Wprowadzenie w [projektancie cieniowania](../designers/shader-designer.md).
 
-2. Odłącz węzeł **koloru punktu** od końcowego węzła **koloru** . Wybierz Terminal **RGB** w węźle **Kolor punktu** , a następnie wybierz polecenie **Przerwij linki**. Powoduje to powolne miejsce dla węzła, który jest dodawany w następnym kroku.
+2. Odłącz węzeł **koloru punktu** od końcowego węzła **koloru** . Wybierz Terminal **RGB** w węźle **Kolor punktu** , a następnie wybierz polecenie **Przerwij linki** . Powoduje to powolne miejsce dla węzła, który jest dodawany w następnym kroku.
 
-3. Dodaj węzeł **pomnóż** do grafu. W **przyborniku**, w obszarze **Math**, zaznacz opcję **pomnóż** i przenieś ją na powierzchnię projektu.
+3. Dodaj węzeł **pomnóż** do grafu. W **przyborniku** , w obszarze **Math** , zaznacz opcję **pomnóż** i przenieś ją na powierzchnię projektu.
 
-4. Dodaj węzeł **wektora maski** do grafu. W **przyborniku**w obszarze **Narzędzia**wybierz pozycję **maska wektora** i przenieś ją na powierzchnię projektu.
+4. Dodaj węzeł **wektora maski** do grafu. W **przyborniku** w obszarze **Narzędzia** wybierz pozycję **maska wektora** i przenieś ją na powierzchnię projektu.
 
-5. Określ wartości maski dla węzła **wektora maski** . W obszarze tryb **wyboru** wybierz węzeł **Vector Mask** , a następnie w oknie **Właściwości** ustaw właściwość **Green/Y** na **wartość true**, a następnie ustaw wartość **false**dla właściwości **Red/X**, **Blue/Z** i **Alpha/W** . W tym przykładzie właściwości **Red/X**, **Green/Y**i **Blue/Z** są zgodne ze składnikami X, Y i z w węźle **pozycja świata** , a **alfa/W** nie są używane. Ponieważ tylko **zielony/Y** ma **wartość true**, tylko składnik Y wektora wejściowego pozostaje po zamaskowanyu.
+5. Określ wartości maski dla węzła **wektora maski** . W obszarze tryb **wyboru** wybierz węzeł **Vector Mask** , a następnie w oknie **Właściwości** ustaw właściwość **Green/Y** na **wartość true** , a następnie ustaw wartość **false** dla właściwości **Red/X** , **Blue/Z** i **Alpha/W** . W tym przykładzie właściwości **Red/X** , **Green/Y** i **Blue/Z** są zgodne ze składnikami X, Y i z w węźle **pozycja świata** , a **alfa/W** nie są używane. Ponieważ tylko **zielony/Y** ma **wartość true** , tylko składnik Y wektora wejściowego pozostaje po zamaskowanyu.
 
-6. Dodaj węzeł **pozycji świata** do grafu. W **przyborniku**, w obszarze **stałe**wybierz **pozycję świat** i przenieś ją do powierzchni projektowej.
+6. Dodaj węzeł **pozycji świata** do grafu. W **przyborniku** , w obszarze **stałe** wybierz **pozycję świat** i przenieś ją do powierzchni projektowej.
 
 7. Maskowanie położenia obszaru na całym świecie. W trybie **wyboru** Przenieś Terminal **wyjściowy** węzła **pozycja świata** do terminalu **wektorowego** węzła **wektora maski** . To połączenie maskuje położenie fragmentu, aby zignorować składniki x i z.
 

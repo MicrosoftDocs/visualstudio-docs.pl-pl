@@ -1,5 +1,7 @@
 ---
 title: 'Porady: tworzenie tekstury podstawowej'
+description: Dowiedz się, w jaki sposób używać edytora obrazów do tworzenia tekstury podstawowej, w tym ustawiania rozmiaru tekstury, ustawiania właściwości narzędzia i innych działań.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b356d8596581b1c289d9b9aa13a3d5b362e39e58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bb4a0a66855351e9edbb1b06dbf2aee452cd150
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769100"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134148"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Instrukcje: tworzenie tekstury podstawowej
 
@@ -47,7 +49,7 @@ Przed rozpoczęciem upewnij się, że wyświetlane jest okno **Właściwości** 
 
 3. Na pasku narzędzi edytora obrazu wybierz narzędzie **wypełnienie** . W oknie **Właściwości** są teraz wyświetlane właściwości narzędzia **wypełnienie** wraz z właściwościami obrazu.
 
-4. Ustaw kolor pierwszego planu na całkowicie przezroczysty czarny. W oknie **Właściwości** w grupie właściwości **kolory** wybierz pozycję **pierwszy plan**. Ustaw wartości **R**, **G**, **B** **i właściwości obok** selektora kolorów na `0` .
+4. Ustaw kolor pierwszego planu na całkowicie przezroczysty czarny. W oknie **Właściwości** w grupie właściwości **kolory** wybierz pozycję **pierwszy plan** . Ustaw wartości **R** , **G** , **B** **i właściwości obok** selektora kolorów na `0` .
 
 5. Na pasku narzędzi edytora obrazu wybierz narzędzie **wypełnienie** , a następnie naciśnij i przytrzymaj klawisz **SHIFT** i wybierz dowolny punkt na obrazie. Użycie klawisza **SHIFT** powoduje, że wartość alfa koloru wypełnienia zastąpi kolor obrazu. w przeciwnym razie wartość alfa służy do mieszania koloru wypełnienia ze kolorem obrazu.
 
@@ -56,9 +58,9 @@ Przed rozpoczęciem upewnij się, że wyświetlane jest okno **Właściwości** 
 
 6. Na pasku narzędzi edytora obrazu wybierz narzędzie **wielokropek** .
 
-7. Ustaw kolor pierwszego planu na całkowicie nieprzezroczysty czarny. Ustaw wartości właściwości **R**, **G**i **B** na `0` i wartość właściwości **na** `255` .
+7. Ustaw kolor pierwszego planu na całkowicie nieprzezroczysty czarny. Ustaw wartości właściwości **R** , **G** i **B** na `0` i wartość właściwości **na** `255` .
 
-8. Ustaw kolor tła na całkowicie nieprzezroczysty biały. W oknie **Właściwości** w grupie właściwości **kolory** wybierz pozycję **tło**. Ustaw **wartości właściwości** **R**, **G**, **B**i `255` .
+8. Ustaw kolor tła na całkowicie nieprzezroczysty biały. W oknie **Właściwości** w grupie właściwości **kolory** wybierz pozycję **tło** . Ustaw **wartości właściwości** **R** , **G** , **B** i `255` .
 
 9. Ustaw szerokość konturu elipsy. W oknie **Właściwości** , w grupie właściwości **wygląd** , ustaw wartość właściwości **Width** na `8` .
 
@@ -73,7 +75,7 @@ Przed rozpoczęciem upewnij się, że wyświetlane jest okno **Właściwości** 
 
 13. Rysuj inny okrąg od współrzędnych pikseli `(64, 64)` do współrzędnych pikseli `(448, 448)` .
 
-14. Zmień kolor tła z powrotem na całkowicie nieprzezroczysty biały. Ustaw wartość **R**, **G**, **B**i **na** `255` .
+14. Zmień kolor tła z powrotem na całkowicie nieprzezroczysty biały. Ustaw wartość **R** , **G** , **B** i **na** `255` .
 
 15. Rysuj inny okrąg od współrzędnych pikseli `(128, 128)` do współrzędnych pikseli `(384, 384)` .
 

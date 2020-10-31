@@ -1,5 +1,7 @@
 ---
 title: 'Porady: tworzenie podstawowego modułu cieniującego Lamberta'
+description: Dowiedz się, jak używać projektanta programów do cieniowania i języka ukierunkowanego programu do cieniowania wykresów, aby utworzyć cieniowanie oświetlenia implementujące klasyczny model oświetlenia Lamberta.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6f9e5cf95b3766b6c6ceb93c740870a91cfc6af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1677de15006dcf3bbe2f7a6b925be247518f752
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769197"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134527"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Instrukcje: tworzenie podstawowego cieniowania Lamberta
 
@@ -27,9 +29,9 @@ Przed rozpoczęciem upewnij się, że wyświetlane jest okno **Właściwości** 
 
 1. Utwórz program do cieniowania DGSL, który będzie działał. Aby dowiedzieć się, jak dodać cieniowanie DGSL do projektu, zobacz sekcję Wprowadzenie w [projektancie cieniowania](../designers/shader-designer.md).
 
-2. Odłącz węzeł **koloru punktu** od końcowego węzła **koloru** . Wybierz Terminal **RGB** w węźle **Kolor punktu** , a następnie wybierz polecenie **Przerwij linki**. Pozostaw podłączony Terminal **Alpha** .
+2. Odłącz węzeł **koloru punktu** od końcowego węzła **koloru** . Wybierz Terminal **RGB** w węźle **Kolor punktu** , a następnie wybierz polecenie **Przerwij linki** . Pozostaw podłączony Terminal **Alpha** .
 
-3. Dodaj węzeł **Lamberta** do grafu. W **przyborniku**, w obszarze **Narzędzia**, wybierz pozycję **Lamberta** i przenieś ją na powierzchnię projektu. Węzeł Lamberta oblicza całkowity udział kolorów w pikselach na podstawie parametrów oświetlenia otoczenia i rozpraszania.
+3. Dodaj węzeł **Lamberta** do grafu. W **przyborniku** , w obszarze **Narzędzia** , wybierz pozycję **Lamberta** i przenieś ją na powierzchnię projektu. Węzeł Lamberta oblicza całkowity udział kolorów w pikselach na podstawie parametrów oświetlenia otoczenia i rozpraszania.
 
 4. Połącz węzeł **koloru punktu** z węzłem **Lamberta** . W trybie **wyboru** Przenieś Terminal **RGB** węzła **koloru punktu** do terminalu **koloru rozpraszania** węzła **Lamberta** . To połączenie udostępnia węzeł Lamberta z interpolowanym kolorem rozpraszania pikseli.
 

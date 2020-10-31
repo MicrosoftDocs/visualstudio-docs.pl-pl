@@ -1,5 +1,7 @@
 ---
 title: 'Porady: eksportowanie tekstury zawierającej mipmapy'
+description: Dowiedz się, jak potok zawartości obrazu generuje mipmapy z obrazu źródłowego w ramach kompilowania projektu, co gwarantuje, że mipmapy nigdy nie przestanie być zsynchronizowany.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b46a353606fc90aa89abf68d1e901675b4880b4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3758184a10161d64add37fe1dc231326b90cb53
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768921"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134834"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Instrukcje: eksportowanie tekstury zawierającej mipmapy
 
@@ -33,12 +35,12 @@ Mipmapping zapewnia Automatyczny poziom szczegółowości ekranu dla powierzchni
 
 1. Zacznij od tekstury podstawowej. Załaduj istniejący plik obrazu lub utwórz go zgodnie z opisem w temacie [How to: Create a Basic Texture](../designers/how-to-create-a-basic-texture.md). Aby obsłużyć mipmapy, należy określić teksturę, która ma szerokość i wysokość, które są takie same jak te same wartości, na przykład 64x64, 256x256 lub 512 x 512.
 
-2. Skonfiguruj utworzony plik tekstury w taki sposób, aby był przetwarzany przez potok zawartości obrazu. W **Eksplorator rozwiązań**Otwórz menu skrótów dla utworzonego pliku tekstury, a następnie wybierz polecenie **Właściwości**. Na stronie **Ogólne właściwości konfiguracji**  >  **General** ustaw właściwość **Typ elementu** na **potok zawartości obrazu**. Upewnij się, że właściwość **Content** jest ustawiona na **wartość Yes (tak** ), a wartość **exclude z kompilacji** to **no**. Wybierz przycisk **Zastosuj**.
+2. Skonfiguruj utworzony plik tekstury w taki sposób, aby był przetwarzany przez potok zawartości obrazu. W **Eksplorator rozwiązań** Otwórz menu skrótów dla utworzonego pliku tekstury, a następnie wybierz polecenie **Właściwości** . Na stronie **Ogólne właściwości konfiguracji**  >  **General** ustaw właściwość **Typ elementu** na **potok zawartości obrazu** . Upewnij się, że właściwość **Content** jest ustawiona na **wartość Yes (tak** ), a wartość **exclude z kompilacji** to **no** . Wybierz przycisk **Zastosuj** .
 
    Zostanie wyświetlona strona właściwości konfiguracja **potoku zawartości obrazu** .
 
-3. Skonfiguruj potok zawartości obrazu w celu wygenerowania mipmapy. Na **Configuration Properties**  >  stronie Ogólne**potoku zawartości obrazu**właściwości konfiguracji  >  **General** ustaw właściwość **Generuj MIPS** na **wartość tak (/generatemips)**.
+3. Skonfiguruj potok zawartości obrazu w celu wygenerowania mipmapy. Na **Configuration Properties**  >  stronie Ogólne **potoku zawartości obrazu** właściwości konfiguracji  >  **General** ustaw właściwość **Generuj MIPS** na **wartość tak (/generatemips)** .
 
-4. Wybierz pozycję **OK**.
+4. Wybierz pozycję **OK** .
 
 Podczas kompilowania projektu potok zawartości obrazów konwertuje obraz źródłowy z formatu roboczego do formatu wyjściowego, który określiłeś, włącznie z poziomami MIP. Wynik jest kopiowany do katalogu wyjściowego projektu.

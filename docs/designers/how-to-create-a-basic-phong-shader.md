@@ -1,5 +1,7 @@
 ---
 title: 'Porady: tworzenie podstawowego modułu cieniowanie Phong'
+description: Dowiedz się, jak używać projektanta programów do cieniowania i języka ukierunkowanego programu do cieniowania wykresów, aby utworzyć cieniowanie oświetlenia implementujące klasyczny model oświetlenia podstawowego Phong.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 718607d74be1a74a799f8de9f4883e1df9fb7ef5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c158453421d9e4f899a7cfed7118be8e5871356c
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769182"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134135"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Instrukcje: tworzenie podstawowego cieniowania Phonga
 
@@ -29,11 +31,11 @@ Przed rozpoczęciem upewnij się, że wyświetlane jest okno **Właściwości** 
 
 1. Utwórz moduł cieniujący Lamberta, zgodnie z opisem w [instrukcje: Tworzenie podstawowego cieniowania Lamberta](../designers/how-to-create-a-basic-lambert-shader.md).
 
-2. Odłącz węzeł **Lamberta** od końcowego węzła **koloru** . Wybierz Terminal **RGB** węzła **Lamberta** , a następnie wybierz polecenie **Przerwij linki**. Powoduje to powolne miejsce dla węzła, który jest dodawany w następnym kroku.
+2. Odłącz węzeł **Lamberta** od końcowego węzła **koloru** . Wybierz Terminal **RGB** węzła **Lamberta** , a następnie wybierz polecenie **Przerwij linki** . Powoduje to powolne miejsce dla węzła, który jest dodawany w następnym kroku.
 
-3. Dodaj węzeł **Dodaj** do grafu. W **przyborniku**w obszarze **matematyka**wybierz pozycję **Dodaj** i przenieś ją na powierzchnię projektu.
+3. Dodaj węzeł **Dodaj** do grafu. W **przyborniku** w obszarze **matematyka** wybierz pozycję **Dodaj** i przenieś ją na powierzchnię projektu.
 
-4. Dodaj węzeł **odblasków** do grafu. W **przyborniku**, w obszarze **Narzędzia**, wybierz pozycję **odblasków** i przenieś ją na powierzchnię projektu.
+4. Dodaj węzeł **odblasków** do grafu. W **przyborniku** , w obszarze **Narzędzia** , wybierz pozycję **odblasków** i przenieś ją na powierzchnię projektu.
 
 5. Dodaj udział odblasków. Przenieś Terminal **danych wyjściowych** węzła **odblasków** do terminalu **X** w **Dodaj** węzeł, a następnie przenieś Terminal **wyjściowy** węzła **Lamberta** do terminalu **Y** w **Dodaj** węzeł. Połączenia te łączą łączne odblasków, rozpraszania i koloru w pikselach.
 

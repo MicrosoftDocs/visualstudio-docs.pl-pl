@@ -1,5 +1,7 @@
 ---
 title: 'Porady: tworzenie cieniowania tekstury skali szarości'
+description: Dowiedz się, jak używać projektanta programów do cieniowania i języka ukierunkowanego programu do cieniowania wykresów, aby utworzyć cieniowanie tekstury w skali szarości, które modyfikują kolor RGB przykładu tekstury.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a311456fd3f8eab12c24e26c32349f208e0a723
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 737c74c5d58bb15724827f15be029d3a84e21977
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769069"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134056"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Instrukcje: tworzenie cieniowania tekstury skali szarości
 
@@ -27,9 +29,9 @@ Przed rozpoczęciem upewnij się, że wyświetlane jest okno **Właściwości** 
 
 1. Utwórz cieniowanie tekstury podstawowej, zgodnie z opisem w artykule [How to: Create a Basic cieniowanie tekstury](../designers/how-to-create-a-basic-texture-shader.md).
 
-2. Odłącz Terminal **RGB** węzła **przykład tekstury** z terminalu **RGB** **końcowego węzła Color** . W obszarze tryb **wyboru** wybierz Terminal **RGB** w węźle **przykład tekstury** , a następnie wybierz polecenie **Przerwij linki**. Powoduje to powolne miejsce dla węzła, który jest dodawany w następnym kroku.
+2. Odłącz Terminal **RGB** węzła **przykład tekstury** z terminalu **RGB** **końcowego węzła Color** . W obszarze tryb **wyboru** wybierz Terminal **RGB** w węźle **przykład tekstury** , a następnie wybierz polecenie **Przerwij linki** . Powoduje to powolne miejsce dla węzła, który jest dodawany w następnym kroku.
 
-3. Dodaj do wykresu węzeł zmniejszający **nasycenie** . W **przyborniku**w obszarze **filtry**wybierz pozycję Zmniejsz **nasycenie** i przenieś ją na powierzchnię projektu.
+3. Dodaj do wykresu węzeł zmniejszający **nasycenie** . W **przyborniku** w obszarze **filtry** wybierz pozycję Zmniejsz **nasycenie** i przenieś ją na powierzchnię projektu.
 
 4. Oblicz wartość skali odcieni szarości przy użyciu węzła Zmniejsz **nasycenie** . W trybie **wyboru** Przenieś Terminal **RGB** węzła **przykład tekstury** do terminalu **RGB** w węźle **denasycenie** .
 

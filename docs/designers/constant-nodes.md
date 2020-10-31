@@ -1,5 +1,7 @@
 ---
 title: Stałe węzły
+description: Zapoznaj się z stałymi węzłami, które reprezentują wartości literałów i interpolowane atrybuty wierzchołka w obliczeniach cieniowania pikseli, w projektancie cieniowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6868a5dc7cbace1d061c43cd507d32c271436a26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb7297a5486764127efda72ea37c5c97acc05245
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769303"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134220"
 ---
 # <a name="constant-nodes"></a>Stałe węzły
 
@@ -21,7 +23,7 @@ W projektancie programu do cieniowania stałe węzły reprezentują wartości li
 
 ## <a name="vertex-attribute-interpolation"></a>Interpolacja atrybutu wierzchołka
 
-Obraz sceny 3D w grze lub aplikacji jest realizowany przez matematycznie przekształcanie wielu obiektów, które są definiowane przez wierzchołki, atrybuty wierzchołków i definicje pierwotne — do pikseli na ekranie. Wszystkie informacje, które są wymagane do uzyskania piksela jego unikatowego wyglądu, są dostarczane za pomocą atrybutów wierzchołków, które są połączone ze sobą, w zależności od odległości do różnych wierzchołków, które tworzą *pierwotną*. Element podstawowy jest podstawowym elementem renderingu; oznacza to prosty kształt, taki jak punkt, linia lub trójkąt. Piksel, który jest blisko tylko jeden z wierzchołków odbiera stałe, które są niemal identyczne z tym wierzchołkiem, ale piksel, który jest równomiernie rozłożony między wszystkimi wierzchołkami elementu pierwotnego, który jest średnią z tych wierzchołków. W programowaniu grafiki, stałe, które otrzymują piksele, są uważane za *interpolowane*. Dostarczanie stałych danych do pikseli w ten sposób zapewnia bardzo dobrą jakość wizualną i w tym samym czasie zmniejsza wymagania dotyczące pamięci i przepustowości.
+Obraz sceny 3D w grze lub aplikacji jest realizowany przez matematycznie przekształcanie wielu obiektów, które są definiowane przez wierzchołki, atrybuty wierzchołków i definicje pierwotne — do pikseli na ekranie. Wszystkie informacje, które są wymagane do uzyskania piksela jego unikatowego wyglądu, są dostarczane za pomocą atrybutów wierzchołków, które są połączone ze sobą, w zależności od odległości do różnych wierzchołków, które tworzą *pierwotną* . Element podstawowy jest podstawowym elementem renderingu; oznacza to prosty kształt, taki jak punkt, linia lub trójkąt. Piksel, który jest blisko tylko jeden z wierzchołków odbiera stałe, które są niemal identyczne z tym wierzchołkiem, ale piksel, który jest równomiernie rozłożony między wszystkimi wierzchołkami elementu pierwotnego, który jest średnią z tych wierzchołków. W programowaniu grafiki, stałe, które otrzymują piksele, są uważane za *interpolowane* . Dostarczanie stałych danych do pikseli w ten sposób zapewnia bardzo dobrą jakość wizualną i w tym samym czasie zmniejsza wymagania dotyczące pamięci i przepustowości.
 
 Chociaż każde wystąpienie programu do cieniowania pikseli otrzymuje tylko jeden zestaw wartości stałych i nie może zmienić tych wartości, różne wystąpienia programu do cieniowania pikseli otrzymują różne zestawy danych stałych. Ten projekt umożliwia programowi cieniującego wygenerowanie różnych danych wyjściowych koloru dla każdego piksela w pierwotnym.
 
@@ -31,7 +33,7 @@ Chociaż każde wystąpienie programu do cieniowania pikseli otrzymuje tylko jed
 |----------|-------------|----------------|
 |**Wektor kamery**|Wektor, który rozciąga się od bieżącego piksela do kamery w przestrzeni świata.<br /><br /> Można go użyć do obliczenia odbić w przestrzeni świata.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float3`<br /> Wektor od bieżącego piksela do aparatu.|Brak|
 |**Stała koloru**|Stała wartość koloru.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Dane wyjściowe**<br /> Wartość koloru.|
-|**Stała**|Stała wartość skalarna.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float`<br /> Wartość skalarna.|**Dane wyjściowe**<br /> Wartość skalarna.|
+|**Stałego**|Stała wartość skalarna.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float`<br /> Wartość skalarna.|**Dane wyjściowe**<br /> Wartość skalarna.|
 |**Stała 2D**|Stała wektora dwuskładnikowego.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float2`<br /> Wartość wektora.|**Dane wyjściowe**<br /> Wartość wektora.|
 |**Stała 3D**|Stała wektora z trzema składnikami.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float3`<br /> Wartość wektora.|**Dane wyjściowe**<br /> Wartość wektora.|
 |**Stała 4D**|Stała wektorowa z czterema składnikami.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Dane wyjściowe**<br /> Wartość wektora.|

@@ -11,19 +11,19 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 56a2da4e02f890e199a6ff69b5a61882d1dfa416
-ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
+ms.openlocfilehash: 8715bd00653f74d874dc077180a9978b26bff8f1
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92039799"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134732"
 ---
 # <a name="devinit-commands"></a>polecenia devinit
 
 ## <a name="init"></a>Init
 
 ```console
-> devinit init
+devinit init
 ```
 
 Zainicjuj środowisko, uruchamiając narzędzia określone w [_.devinit.js_](devinit-json.md) w pliku w bieżącym katalogu roboczym.  
@@ -70,7 +70,7 @@ Zobacz [poniżej](#options-for-run).
 ## <a name="run"></a>Uruchom
 
 ```console
-> devinit run -t <toolname>
+devinit run -t <toolname>
 ```
 
 Uruchamia określone narzędzie, parametry są wymienione poniżej. Zapoznaj się z [dokumentacją](devinit-tool-list.md) każdego narzędzia pod kątem określonego użycia.
@@ -81,7 +81,7 @@ Opcje `devinit run` polecenia.
 
 | Argument                                      | Wymagane | Opis                                                                          |
 |-----------------------------------------------|----------|--------------------------------------------------------------------------------------|
-| -t,--narzędzie                                     | Yes      | Wymagane. Nazwa narzędzia.                                                             |
+| -t,--narzędzie                                     | Tak      | Wymagane. Nazwa narzędzia.                                                             |
 | -i,--dane wejściowe                                    | Nie       | Wartość wejściowa narzędzia. Na przykład nazwa pliku, pakietu lub nazwy.                     |
 | --błąd-akcja                                | Nie       | Określa sposób obsługi błędów narzędzia: Stop, Ignoruj, Kontynuuj. Wartość domyślna to Zatrzymaj. |
 | -v,--verbose                                  | Nie       | Emituj pełne dane wyjściowe.                                                                 |
@@ -111,39 +111,39 @@ Polecenia narzędzia echo, które zostałyby uruchomione, ale nie wykonują żad
 Użycie `<arg>` , które zawiera spację w jej wartości, musi zawierać dodatkową parę cudzysłowów ucieczkowych.
 
 ```console
-> devinit run -t <toolname> -<somearg> "<some value>"
+devinit run -t <toolname> -<somearg> "<some value>"
 ```
 
 Aby zainstalować dotnet w określonym katalogu `C:\Program Files\dotnet` :
 
 ```console
-> devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
+devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
 ```
 
 ## <a name="list"></a>Lista
 
 ```console
-> devinit list
+devinit list
 ```
 
 Drukuje listę wszystkich dostępnych narzędzi.
 
-## <a name="show"></a>Pokaż
+## <a name="show"></a>Show
 
 ```console
-> devinit show -t <toolname>
+devinit show -t <toolname>
 ```
 
 | Argument       | Wymagane | Opis                                                                          |
 |----------------|----------|--------------------------------------------------------------------------------------|
-| -t,--narzędzie      | Yes      | Wymagane. Nazwa narzędzia.                                                             |
+| -t,--narzędzie      | Tak      | Wymagane. Nazwa narzędzia.                                                             |
 
 Drukuje informacje pomocy dla danego narzędzia.
 
 ## <a name="version"></a>Wersja
 
 ```console
-> devinit version
+devinit version
 ```
 
 Drukuje informacje o bieżącej wersji devinit.
@@ -151,8 +151,8 @@ Drukuje informacje o bieżącej wersji devinit.
 ## <a name="help"></a>Pomoc
 
 ```console
-> devinit help
-> devinit help list
+devinit help
+devinit help list
 ```
 
 Drukuje tekst pomocy dla devinit lub dla określonego polecenia `devinit <command>` .

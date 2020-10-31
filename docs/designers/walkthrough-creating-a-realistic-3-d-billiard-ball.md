@@ -1,5 +1,7 @@
 ---
 title: 'Przewodnik: tworzenie realistycznej kulki 3W bilardowej'
+description: Dowiedz się, jak utworzyć trójwymiarową kulkę bilardowej za pomocą projektanta cieniowania i edytora obrazów w programie Visual Studio, łącząc techniki programu do cieniowania z zasobami tekstury.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bebaa8c197d0b0a4447739d900062bef2bda37c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 646522fe5c893508cbe60a0886ba704e6829252f
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816660"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134769"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Przewodnik: Tworzenie realistycznej kuli bilardowej w 3D
 
@@ -75,7 +77,7 @@ Upewnij się, że wyświetlane jest okno **Właściwości** i **Przybornik** .
 
     ![Wykres programu do cieniowania, który stosuje teksturę do obiektu](../designers/media/gfx_shader_demo_billiard_step_1.png)
 
-3. Zastosuj teksturę utworzoną w poprzedniej procedurze przez skonfigurowanie właściwości tekstury. Ustaw wartość właściwości **tekstura** węzła **przykład tekstury** na **texture1**, a następnie określ plik tekstury przy użyciu właściwości **filename** grupy właściwości **texture1** w tym samym oknie właściwości.
+3. Zastosuj teksturę utworzoną w poprzedniej procedurze przez skonfigurowanie właściwości tekstury. Ustaw wartość właściwości **tekstura** węzła **przykład tekstury** na **texture1** , a następnie określ plik tekstury przy użyciu właściwości **filename** grupy właściwości **texture1** w tym samym oknie właściwości.
 
    Aby uzyskać więcej informacji na temat sposobu stosowania tekstury w module cieniującego, zobacz [How to: Create a Basic — cieniowanie tekstury](../designers/how-to-create-a-basic-texture-shader.md).
 
@@ -89,7 +91,7 @@ Do tej pory utworzono łatwą do rozpoznania kulkę bilardowej. Jednak jest ona 
 
 W świecie rzeczywistym światła pojawiają się najjaśniejsze na powierzchniach bezpośrednio skierowanych do źródła światła i pojawiają się mniej jasne na powierzchniach, które mają kąt skośny względem źródła światła. Wynika to z faktu, że energia w promieniach świetlnych jest dystrybuowana na najmniejszym obszarze powierzchni, gdy powierzchnia jest bezpośrednio skierowana do źródła światła. Gdy powierzchnia zostanie odłożona od źródła światła, taka sama ilość energii jest rozprowadzana na coraz większym obszarze powierzchni. Powierzchnia, która odchodzi od źródła światła, nie otrzymuje żadnej lekkiej energii, co spowodowało całkiem ciemny wygląd. Ta Wariancja w całej powierzchni obiektu jest ważnym wizualnym wskaźnikiem, który pomaga wskazać kształt obiektu; bez niego, obiekt pojawia się płaski.
 
-W przypadku grafiki komputerowej *modele oświetlenia*— uproszczone przybliżenie skomplikowanych interakcji z rzeczywistymi oświetleniem — są używane do replikowania wyglądu rzeczywistych oświetlenia. Model oświetlenia Lamberta zmienia liczbę diffusely odzwierciedlonych przez powierzchnię obiektu, zgodnie z opisem w poprzednim akapicie. Model oświetlenia Lamberta można dodać do modułu cieniującego, aby dać piłkę bilardowej bardziej przekonujący wygląd 3W.
+W przypadku grafiki komputerowej *modele oświetlenia* — uproszczone przybliżenie skomplikowanych interakcji z rzeczywistymi oświetleniem — są używane do replikowania wyglądu rzeczywistych oświetlenia. Model oświetlenia Lamberta zmienia liczbę diffusely odzwierciedlonych przez powierzchnię obiektu, zgodnie z opisem w poprzednim akapicie. Model oświetlenia Lamberta można dodać do modułu cieniującego, aby dać piłkę bilardowej bardziej przekonujący wygląd 3W.
 
 ### <a name="to-add-lambert-lighting-to-your-shader"></a>Aby dodać oświetlenie Lamberta do programu do cieniowania
 
@@ -119,7 +121,7 @@ Model oświetlenia podstawowego Phong jest oparty na modelu oświetlenia Lambert
 
     ![Wykres modułu cieniującego z dodanym oświetleniem odblasków](../designers/media/gfx_shader_demo_billiard_step_3.png)
 
-2. Opcjonalnie możesz dostosować sposób, w jaki odblasków wyróżnienia, konfigurując właściwości odblasków (**MaterialSpecular** i **MaterialSpecularPower**) grafu cieniowania. Aby uzyskać dostęp do właściwości wykresu cieniowania, wybierz pusty obszar powierzchni projektowej, a następnie w oknie **Właściwości** Znajdź właściwość, do której chcesz uzyskać dostęp.
+2. Opcjonalnie możesz dostosować sposób, w jaki odblasków wyróżnienia, konfigurując właściwości odblasków ( **MaterialSpecular** i **MaterialSpecularPower** ) grafu cieniowania. Aby uzyskać dostęp do właściwości wykresu cieniowania, wybierz pusty obszar powierzchni projektowej, a następnie w oknie **Właściwości** Znajdź właściwość, do której chcesz uzyskać dostęp.
 
    Aby uzyskać więcej informacji na temat sposobu stosowania odblaskówch świateł w module cieniującego, zobacz [How to: Create a Basic podstawowego Phong Shader](../designers/how-to-create-a-basic-phong-shader.md).
 
@@ -133,7 +135,7 @@ Po zastosowaniu wyróżnionych odblasków, kulka bilardowej wygląda dość prze
 
 Jeśli dokładnie sprawdzisz rzeczywistą kulkę z bilardowej, zobaczysz, że jej błyszcząca powierzchnia nie wykazuje odblaskówych świateł, ale również pokazuje obraz wokół niego. Można symulować to odbicie przy użyciu obrazu środowiska jako tekstury i połączyć go z teksturą modelu, aby określić końcowy kolor każdego piksela. W zależności od rodzaju dokończenia możesz łączyć więcej lub mniej tekstury odbicia razem z resztą cieniowania. Na przykład, cieniowanie, które symuluje wysoce odbijającą powierzchnię, taką jak dublowanie, może używać tylko tekstury odbicia, ale cieniowanie, które symuluje bardziej subtelne odbicie, takie jak element znaleziony w piłke bilardowej, może łączyć tylko małą część wartości tekstury odbicia wraz z resztą obliczeń cieniowania.
 
-Oczywiście nie można po prostu zastosować odbitego obrazu do modelu w taki sam sposób, w jaki stosowana jest mapa Tekstury modelu. Jeśli zachodzi taka potrzeba, odbicie świata będzie przenoszone z piłką bilardowej, tak jakby odbicie zostało przyklejony do niego. Ponieważ odbicie może pochodzić z dowolnego kierunku, potrzebny jest sposób zapewnienia wartości mapy odbicia dla dowolnego kąta i sposób zachowania mapy odbicia na całym świecie. Aby spełnić te wymagania, można użyć specjalnego rodzaju mapy tekstury — nazywanej *mapą modułu*, która oferuje sześć tekstur zorganizowanych w celu utworzenia boków modułu. Z wnętrza tego modułu można wskazać w dowolnym kierunku, aby znaleźć wartość tekstury. Jeśli tekstury na każdej stronie modułu zawierają obrazy środowiska, można symulować dowolne odbicie przez próbkowanie właściwej lokalizacji na powierzchni modułu. Utrzymując moduł wyrównany do świata, uzyskasz dokładne odbicie środowiska. Aby określić, gdzie należy próbkować moduł, wystarczy obliczyć odbicie wektora aparatu poza powierzchnią obiektu, a następnie użyć go jako współrzędnej tekstury 3D. Korzystanie z map modułów w ten sposób jest typową techniką nazywaną *mapowaniem środowiska*.
+Oczywiście nie można po prostu zastosować odbitego obrazu do modelu w taki sam sposób, w jaki stosowana jest mapa Tekstury modelu. Jeśli zachodzi taka potrzeba, odbicie świata będzie przenoszone z piłką bilardowej, tak jakby odbicie zostało przyklejony do niego. Ponieważ odbicie może pochodzić z dowolnego kierunku, potrzebny jest sposób zapewnienia wartości mapy odbicia dla dowolnego kąta i sposób zachowania mapy odbicia na całym świecie. Aby spełnić te wymagania, można użyć specjalnego rodzaju mapy tekstury — nazywanej *mapą modułu* , która oferuje sześć tekstur zorganizowanych w celu utworzenia boków modułu. Z wnętrza tego modułu można wskazać w dowolnym kierunku, aby znaleźć wartość tekstury. Jeśli tekstury na każdej stronie modułu zawierają obrazy środowiska, można symulować dowolne odbicie przez próbkowanie właściwej lokalizacji na powierzchni modułu. Utrzymując moduł wyrównany do świata, uzyskasz dokładne odbicie środowiska. Aby określić, gdzie należy próbkować moduł, wystarczy obliczyć odbicie wektora aparatu poza powierzchnią obiektu, a następnie użyć go jako współrzędnej tekstury 3D. Korzystanie z map modułów w ten sposób jest typową techniką nazywaną *mapowaniem środowiska* .
 
 Mapowanie środowiska zapewnia wydajne przybliżenie rzeczywistych odbić, jak opisano w poprzednich akapitach. Możesz mieszać odbicie mapowane w środowisku do modułu cieniującego, aby dać kulkę bilardoweją, która sprawia, że kulka bilardowej jest bardziej uziemiona w scenie.
 
@@ -161,15 +163,15 @@ Pierwszym krokiem jest utworzenie tekstury mapy modułu. W wielu rodzajach aplik
 
 ### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>Aby złożyć mapę modułu za pomocą narzędzia DirectX Texture
 
-1. W narzędziu DirectX Texture w menu głównym wybierz polecenie **plik**  >  **Nowa tekstura**. Zostanie wyświetlone okno dialogowe **Nowa tekstura** .
+1. W narzędziu DirectX Texture w menu głównym wybierz polecenie **plik**  >  **Nowa tekstura** . Zostanie wyświetlone okno dialogowe **Nowa tekstura** .
 
-2. W grupie **Typ tekstury** wybierz opcję **tekstura mapy sześciennej**.
+2. W grupie **Typ tekstury** wybierz opcję **tekstura mapy sześciennej** .
 
-3. W grupie **Wymiary** Wprowadź poprawną wartość w **polach Szerokość** i **wysokość**, a następnie wybierz przycisk **OK**. Zostanie wyświetlony nowy dokument tekstury. Domyślnie tekstura najpierw pokazywana w dokumencie tekstury odnosi się do zera modułu **dodatnie X** .
+3. W grupie **Wymiary** Wprowadź poprawną wartość w **polach Szerokość** i **wysokość** , a następnie wybierz przycisk **OK** . Zostanie wyświetlony nowy dokument tekstury. Domyślnie tekstura najpierw pokazywana w dokumencie tekstury odnosi się do zera modułu **dodatnie X** .
 
-4. Załaduj teksturę utworzoną dla boku modułu tekstury na powierzchnię modułu. W menu głównym wybierz pozycję **plik**  >  **Otwórz na tej mapy sześciennej**, wybierz teksturę utworzoną dla boku modułu, a następnie wybierz polecenie **Otwórz**.
+4. Załaduj teksturę utworzoną dla boku modułu tekstury na powierzchnię modułu. W menu głównym wybierz pozycję **plik**  >  **Otwórz na tej mapy sześciennej** , wybierz teksturę utworzoną dla boku modułu, a następnie wybierz polecenie **Otwórz** .
 
-5. Powtórz krok 4 dla powierzchni modułu **minus X**, **pozytywne Z**i **ujemne z** . Aby to zrobić, należy wyświetlić miarę, która ma zostać załadowana. Aby wyświetlić inną fasadę mapy modułu, w menu głównym wybierz polecenie **Wyświetl**  >  **powierzchnie mapy modułu**, a następnie wybierz miarę, którą chcesz wyświetlić.
+5. Powtórz krok 4 dla powierzchni modułu **minus X** , **pozytywne Z** i **ujemne z** . Aby to zrobić, należy wyświetlić miarę, która ma zostać załadowana. Aby wyświetlić inną fasadę mapy modułu, w menu głównym wybierz polecenie **Wyświetl**  >  **powierzchnie mapy modułu** , a następnie wybierz miarę, którą chcesz wyświetlić.
 
 6. Dla czołowej **osi Y** Załaduj teksturę utworzoną dla górnej części modułu tekstury.
 
@@ -197,7 +199,7 @@ Pierwszym krokiem jest utworzenie tekstury mapy modułu. W wielu rodzajach aplik
 
     ![Wykres modułu cieniującego z dodanym mapowaniem środowiska](../designers/media/gfx_shader_demo_billiard_step_4a.png)
 
-2. Zastosuj teksturę utworzoną w poprzedniej procedurze przez skonfigurowanie właściwości tekstury mapy modułu. Ustaw wartość właściwości **tekstura** węzła **przykład mapy sześciennej** na **Texture2**, a następnie określ plik tekstury przy użyciu właściwości **filename** grupy właściwości **Texture2** .
+2. Zastosuj teksturę utworzoną w poprzedniej procedurze przez skonfigurowanie właściwości tekstury mapy modułu. Ustaw wartość właściwości **tekstura** węzła **przykład mapy sześciennej** na **Texture2** , a następnie określ plik tekstury przy użyciu właściwości **filename** grupy właściwości **Texture2** .
 
 3. Opcjonalnie można dostosować współczynnik odbicia kulki bilardowej przez skonfigurowanie właściwości **Output** węzła **stałego** . Aby uzyskać dostęp do właściwości węzła, zaznacz go, a następnie w oknie **Właściwości** Znajdź właściwość, do której chcesz uzyskać dostęp.
 

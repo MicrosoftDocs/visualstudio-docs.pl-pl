@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 5697237c1bce719a4658e84435db0426f363f746
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a9731469f6725c0a4b9118c4e41235974a19c473
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005539"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134386"
 ---
 # <a name="devinit-and-github-codespaces"></a>devinit i GitHub Codespaces
 
@@ -57,11 +57,11 @@ W tym przykładzie _.devcontainer.jsw_ pliku poniżej znajduje się w katalogu g
 Gdy bieżący katalog roboczy zawiera _.devinit.js_ pliku.
 
 ```console
-> devinit init
+devinit init
 ```
 
 Gdy _.devinit.json_ znajduje się w innym katalogu.
 
 ```console
-> devinit init -f path/to/.devinit.json
+devinit init -f path/to/.devinit.json
 ```

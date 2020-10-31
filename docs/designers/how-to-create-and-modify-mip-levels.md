@@ -1,5 +1,7 @@
 ---
 title: 'Porady: tworzenie i modyfikacja poziomów MIP'
+description: Dowiedz się, w jaki sposób używać edytora obrazów, aby generować i modyfikować poziomy MIP dla poziomu przestrzeni tekstury.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e9764bdfb476d9e2c4aa8ab2c04ee3aaa4f222a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b97b57adb6fd87fa539e9dae7c37d6c5c8f2ddd6
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769060"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134449"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Instrukcje: Tworzenie i modyfikowanie poziomów MIP
 W tym dokumencie pokazano, jak za pomocą **edytora obrazów** wygenerować i zmodyfikować *poziomy MIP* dla poziomu (LOD) tekstury w miejscu.
@@ -25,7 +27,7 @@ W tym dokumencie pokazano, jak za pomocą **edytora obrazów** wygenerować i zm
 
 1. Zacznij od podstawowej tekstury, zgodnie z opisem w temacie [How to: Create a Basic Texture](../designers/how-to-create-a-basic-texture.md). Aby uzyskać najlepsze wyniki, należy określić teksturę, która ma szerokość i wysokość, które są potęgami dwóch rozmiarów, na przykład 256, 512, 1024 i tak dalej.
 
-2. Generuj poziomy MIP. Na pasku narzędzi **Tryb edytora obrazów** wybierz pozycję **Advanced**  >  **Narzędzia**zaawansowane  >  **Generuj MIPS**.
+2. Generuj poziomy MIP. Na pasku narzędzi **Tryb edytora obrazów** wybierz pozycję **Advanced**  >  **Narzędzia** zaawansowane  >  **Generuj MIPS** .
 
      Należy zauważyć, że przyciski **Przejdź do następnego poziomu MIP** i **Przejdź do poprzedniego poziomu MIP** są teraz wyświetlane na pasku narzędzi **Tryb edytora obrazów** . Jeśli zostanie wyświetlone okno **Właściwości** , Zauważ, że właściwość tylko do odczytu na **poziomie MCI** i na **poziomie MCI** jest teraz wyświetlana we właściwościach obrazu.
 

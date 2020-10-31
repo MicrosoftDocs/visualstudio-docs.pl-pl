@@ -1,5 +1,7 @@
 ---
 title: 'Porady: eksport cieniowania'
+description: Dowiedz się, jak eksportować ukierunkowany program do cieniowania grafu wykresu przy użyciu projektanta programu do cieniowania, aby można było go używać w aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9495e5aac16821927f5f61005cd16bd20e82687
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da09feffc4d2f804660f02dbda6055bf59099500
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768997"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134305"
 ---
 # <a name="how-to-export-a-shader"></a>Instrukcje: eksportowanie cieniowania
 
@@ -27,7 +29,7 @@ Po utworzeniu modułu cieniującego przy użyciu projektanta programu do cieniow
 
      Jeśli nie masz pliku **grafu programu Visual Shader (. dgsl)** do otwarcia, utwórz go zgodnie z opisem w temacie [How to: Create a Basic Color Shader](../designers/how-to-create-a-basic-color-shader.md).
 
-2. Na pasku narzędzi **projektanta cieniowania** wybierz pozycję **Zaawansowany**  >  **eksport eksportu**  >  **jako**. Zostanie wyświetlone okno dialogowe Eksportowanie programu do **cieniowania** .
+2. Na pasku narzędzi **projektanta cieniowania** wybierz pozycję **Zaawansowany**  >  **eksport eksportu**  >  **jako** . Zostanie wyświetlone okno dialogowe Eksportowanie programu do **cieniowania** .
 
 3. Z listy rozwijanej **Zapisz jako typ** wybierz format, który chcesz wyeksportować.
 

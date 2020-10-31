@@ -1,5 +1,7 @@
 ---
 title: Praca z modelami 3W
+description: Dowiedz się więcej o tworzeniu modeli 3D przy użyciu edytora modelu w programie Visual Studio, którego można użyć w przypadku gier lub aplikacji opartych na technologii DirectX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60789dece03487f3f3a6dfd71407ec03bab6700e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 886d6d24293af9f630e70defff0d95ec791f0edf
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589880"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93133952"
 ---
 # <a name="work-with-3d-models"></a>Praca z modelami 3D
 
@@ -21,7 +23,7 @@ Do tworzenia modeli 3D można użyć edytora modelu w programie Visual Studio. M
 
 ## <a name="3d-models"></a>Modele 3D
 
-modele 3W definiują kształt obiektów, tak jak istnieją w scenie 3D. Modele mogą być podstawowymi obiektami Solitary, złożonymi obiektami, które są tworzone z hierarchii obiektów podstawowych, a nawet w całości scen 3W. Obiekt 3W składa się z punktów w przestrzeni 3D (nazywanych *wierzchołkami*), indeksów, które definiują Trójkąty, linie lub inne elementy pierwotne, które składają się z tych punktów, i atrybuty, które mogą być stosowane na wierzchołku lub na początku — na przykład, normalne. Ponadto niektóre informacje mogą być stosowane w odniesieniu do poszczególnych obiektów — na przykład, który program do cieniowania i tekstur daje obiektowi jego unikatowy wygląd.
+modele 3W definiują kształt obiektów, tak jak istnieją w scenie 3D. Modele mogą być podstawowymi obiektami Solitary, złożonymi obiektami, które są tworzone z hierarchii obiektów podstawowych, a nawet w całości scen 3W. Obiekt 3W składa się z punktów w przestrzeni 3D (nazywanych *wierzchołkami* ), indeksów, które definiują Trójkąty, linie lub inne elementy pierwotne, które składają się z tych punktów, i atrybuty, które mogą być stosowane na wierzchołku lub na początku — na przykład, normalne. Ponadto niektóre informacje mogą być stosowane w odniesieniu do poszczególnych obiektów — na przykład, który program do cieniowania i tekstur daje obiektowi jego unikatowy wygląd.
 
 Edytor modelu jest jedynym narzędziem, które jest potrzebne do tworzenia podstawowych modeli 3W — Dokończ przy użyciu właściwości materiału, tekstur i programów do cieniowania pikseli, których możesz użyć w grze lub aplikacji. Można też utworzyć modele symboli zastępczych, które będą używane do tworzenia prototypów i testowania przed zaangażowaniem artystów w celu sfinalizowania modeli.
 

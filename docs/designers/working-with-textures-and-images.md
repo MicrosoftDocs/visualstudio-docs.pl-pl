@@ -1,5 +1,7 @@
 ---
 title: Praca z obrazami i teksturami
+description: Dowiedz się, jak używać edytora obrazów w programie Visual Studio, aby tworzyć i modyfikować tekstury i obrazy w formatach, takich jak te, które są używane w programowaniu aplikacji DirectX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 110cbbb01f5b86d462a9a5f196735fd4d477fb10
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc2f459fa3455d3f02953c42ad06e7f2647c79c6
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589867"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134723"
 ---
 # <a name="work-with-textures-and-images"></a>Praca z teksturami i obrazami
 
@@ -46,7 +48,7 @@ Mapy wysokości zawierają dane pól wysokości. Są one używane do zapewnienia
 
 ### <a name="cube-maps"></a>Mapy modułów
 
-Mapy modułów mogą zawierać różne typy danych — na przykład kolory lub normalne, ale są zorganizowane jako sześć tekstur na powierzchniach modułu. W związku z tym mapy modułów nie są próbkowane przez dostarczenie współrzędnych tekstury, ale przez dostarczenie wektora, którego źródłem jest środek modułu; próbka jest wykonywana w punkcie, w którym wektor przecina moduł. Mapy modułów służą do zapewnienia przybliżenia środowiska, którego można użyć do obliczenia odbić — jest to nazywane *mapowaniem środowiska*— lub w celu zapewnienia tekstury dla obiektów sferycznych o mniejszej zniekształceniu niż w przypadku warstw podstawowych.
+Mapy modułów mogą zawierać różne typy danych — na przykład kolory lub normalne, ale są zorganizowane jako sześć tekstur na powierzchniach modułu. W związku z tym mapy modułów nie są próbkowane przez dostarczenie współrzędnych tekstury, ale przez dostarczenie wektora, którego źródłem jest środek modułu; próbka jest wykonywana w punkcie, w którym wektor przecina moduł. Mapy modułów służą do zapewnienia przybliżenia środowiska, którego można użyć do obliczenia odbić — jest to nazywane *mapowaniem środowiska* — lub w celu zapewnienia tekstury dla obiektów sferycznych o mniejszej zniekształceniu niż w przypadku warstw podstawowych.
 
 ## <a name="related-topics"></a>Powiązane tematy
 

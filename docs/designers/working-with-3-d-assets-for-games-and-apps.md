@@ -1,5 +1,7 @@
 ---
 title: Praca z zasobami 3W dla gier i aplikacji
+description: Dowiedz się więcej o narzędziach programu Visual Studio, których można użyć do tworzenia lub modyfikowania modeli 3W, tekstur i programów do cieniowania dla gier i aplikacji opartych na technologii DirectX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11f031aa3e3767af3132e68f92c492dc7e3fae6f
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589802"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134566"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Praca z zasobami 3D dla gier i aplikacji
 
@@ -35,7 +37,7 @@ Możesz użyć edytora obrazów programu Visual Studio do pracy z obrazami i tek
 
 ### <a name="3d-models"></a>Modele 3D
 
-modele 3W tworzą miejsce i kształt w grach i aplikacjach. Co najmniej modele zakodować pozycje punktów w przestrzeni 3D, które są znane jako *wierzchołki*— wraz z danymi indeksowania, aby definiować linie lub Trójkąty reprezentujące kształt modelu. Dodatkowe dane można kojarzyć z tymi wierzchołkami — na przykład informacje o kolorach, wektorach normalnych lub atrybuty specyficzne dla aplikacji. Każdy model może również definiować atrybuty na poziomie obiektu — na przykład, który moduł cieniujący służy do obliczenia wyglądu powierzchni obiektu lub do której jest stosowana tekstura.
+modele 3W tworzą miejsce i kształt w grach i aplikacjach. Co najmniej modele zakodować pozycje punktów w przestrzeni 3D, które są znane jako *wierzchołki* — wraz z danymi indeksowania, aby definiować linie lub Trójkąty reprezentujące kształt modelu. Dodatkowe dane można kojarzyć z tymi wierzchołkami — na przykład informacje o kolorach, wektorach normalnych lub atrybuty specyficzne dla aplikacji. Każdy model może również definiować atrybuty na poziomie obiektu — na przykład, który moduł cieniujący służy do obliczenia wyglądu powierzchni obiektu lub do której jest stosowana tekstura.
 
 Edytor modelu programu Visual Studio umożliwia korzystanie z modeli 3D w kilku wspólnych formatach.
 

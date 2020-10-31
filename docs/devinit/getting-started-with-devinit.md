@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 62c31dcb72735304f7b28e7dfd817f6647187bc9
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: ae274e460f4404efa92c4cf3785a3c2e41fd9691
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022630"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134078"
 ---
 # <a name="getting-started-with-devinit"></a>Wprowadzenie z devinit
 
@@ -35,7 +35,7 @@ Na potrzeby tego kroku zapoznaj się z instrukcjami podanymi przez kogoś, kto m
 Teraz wszyscy osoby trzeba wykonać, gdy zostanie uruchomione klonowanie repozytorium `devinit init` .
 
 ```console
-> devinit init
+devinit init
 ```
 
 Jeśli korzystasz z usługi [GitHub Codespaces](https://github.com/features/codespaces), możesz skonfigurować program `devinit init` do uruchamiania automatycznie po zainicjowaniu obsługi administracyjnej codespace. Aby dowiedzieć się więcej, zobacz [dokumentację dotyczącą usługi devinit i serwisu GitHub Codespaces](devinit-and-codespaces.md).

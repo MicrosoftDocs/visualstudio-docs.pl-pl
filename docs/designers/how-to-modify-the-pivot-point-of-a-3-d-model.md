@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: modyfikowanie punktu obrotu modelu 3W'
+description: Dowiedz się, w jaki sposób używać edytora modelu do modyfikowania punktu obrotu modelu 3W, który jest punktem, który definiuje środek obiektu do obrotu i skalowania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f79f8f5a39a8721e433207f2fbb17fd85a1150
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f52bc260103c1679e6aa9875be15aeeadb7e3bcb
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768842"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134795"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Instrukcje: modyfikowanie punktu obrotu modelu 3D
 

@@ -1,5 +1,7 @@
 ---
 title: Jak modelować tereny 3W
+description: Dowiedz się, jak za pomocą edytora modelu utworzyć model terenu 3W, dzieląc płaszczyznę na dodatkowe twarze i manipulowanie wierzchołkami.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f19363d9024f8e7e2deb69a8038b8854eb50e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54010c46d121fd4221500afb3038013626939a1b
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768963"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134808"
 ---
 # <a name="how-to-model-3d-terrain"></a>Jak modelować tereny 3W
 
@@ -31,18 +33,18 @@ Przed rozpoczęciem upewnij się, że okno **Właściwości** i **Przybornik** s
 
 1. Utwórz model 3W, z którym chcesz korzystać. Aby uzyskać informacje o sposobach dodawania modelu do projektu, zobacz sekcję Wprowadzenie w [Edytorze modelu](../designers/model-editor.md).
 
-2. Dodaj płaszczyznę do sceny. W **przyborniku**, w obszarze **kształty**wybierz pozycję **płaszczyzna** i przenieś ją na powierzchnię projektu.
+2. Dodaj płaszczyznę do sceny. W **przyborniku** , w obszarze **kształty** wybierz pozycję **płaszczyzna** i przenieś ją na powierzchnię projektu.
 
     > [!TIP]
     > Aby obiekt płaszczyzny był łatwiejszy do pracy, możesz go ramkować na powierzchni projektowej. W obszarze tryb **wyboru** wybierz obiekt płaszczyzny, a następnie na pasku narzędzi Edytor modelu wybierz przycisk **obiekt ramki** .
 
-3. Przejdź do trybu wyboru kroju. Na pasku narzędzi Edytor modelu wybierz **pozycję Wybierz opcję**.
+3. Przejdź do trybu wyboru kroju. Na pasku narzędzi Edytor modelu wybierz **pozycję Wybierz opcję** .
 
-4. Podziel płaszczyznę. W trybie zaznaczania powierzchni wybierz płaszczyznę jednokrotną, aby ją uaktywnić do zaznaczenia, a następnie wybierz ją ponownie, aby zaznaczyć jej tylko. Na pasku narzędzi Edytor **modelu wybierz opcję**Podziel na siebie. Spowoduje to dodanie nowych wierzchołków do płaszczyzny dzielącej ją na cztery partycje o równym rozmiarze.
+4. Podziel płaszczyznę. W trybie zaznaczania powierzchni wybierz płaszczyznę jednokrotną, aby ją uaktywnić do zaznaczenia, a następnie wybierz ją ponownie, aby zaznaczyć jej tylko. Na pasku narzędzi Edytor **modelu wybierz opcję** Podziel na siebie. Spowoduje to dodanie nowych wierzchołków do płaszczyzny dzielącej ją na cztery partycje o równym rozmiarze.
 
 5. Utwórz więcej podziałów. Po wybraniu nowych **twarzy** wybierz pozycję Podziel na dwie godziny. Spowoduje to utworzenie łącznej liczby 64 twarzy. Tworząc więcej podziałów, można bardziej szczegółowo udostępnić teren.
 
-6. Przejdź do trybu wyboru punktu. Na pasku narzędzi Edytor modelu wybierz pozycję **Wybierz punkt**.
+6. Przejdź do trybu wyboru punktu. Na pasku narzędzi Edytor modelu wybierz pozycję **Wybierz punkt** .
 
 7. Zmodyfikuj punkt, aby utworzyć funkcję terenu. W trybie wyboru punktu wybierz jeden z punktów, a następnie na pasku narzędzi Edytor modelu wybierz narzędzie **tłumaczenie** . Pole reprezentujące punkt pojawia się na powierzchni projektowej. Użyj zieloną strzałkę, aby przenieść pole, a tym samym zmodyfikować wysokość punktu. Powtórz ten krok dla różnych punktów, aby utworzyć interesujące funkcje terenu.
 
