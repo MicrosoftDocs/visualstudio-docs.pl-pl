@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dowiedz się, jak maksymalnie wykorzystać subskrypcje programu Visual Studio
 ms.openlocfilehash: a865bfa5cf7d55504e022efb1b134bddde7d231c
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "92904678"
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
@@ -113,7 +113,7 @@ Odp.: w zależności od kanału zakupu firma Microsoft zachowuje dane klienta pr
 > - Jeśli zdecydujesz się zamknąć konto Microsoft lub usługę Azure AD, Twoje dane osobowe będą anonimowe od razu.
 > - Nie będziemy w pełni usuwać wszystkich Twoich danych osobowych, jeśli masz aktywne subskrypcje.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)

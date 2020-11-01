@@ -8,10 +8,10 @@ ms.date: 10/22/2020
 ms.topic: conceptual
 description: Dowiedz się więcej o rolach administratora i administratora oraz o sposobach przypisywania administratorów.
 ms.openlocfilehash: 491a8de27477f68b4344ad17b860b80b4ca96aa9
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "92467378"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Administratorzy i Administratorzy dla umów dotyczących subskrypcji programu Visual Studio
@@ -28,8 +28,8 @@ Obejrzyj pokaz dotyczący zarządzania administratorami.
 ## <a name="assigning-admins"></a>Przypisywanie administratorów
 Aby przypisać nowych administratorów (administratorów):
 1. Zaloguj się, aby https://manage.visualstudio.com korzystać z adresu e-mail, który został przypisany jako administrator z umową, w której zostały zakupione subskrypcje.
-2. Kliknij kartę z etykietą **Zarządzaj administratorami**.
-3. Kliknij pozycję **Dodaj**.
+2. Kliknij kartę z etykietą **Zarządzaj administratorami** .
+3. Kliknij pozycję **Dodaj** .
    > [!div class="mx-imgBorder"]
    > ![Dodaj administratorów](_img/admin-roles/add-admins.png "Kliknij blok zarządzanie administratorami, a następnie kliknij przycisk Dodaj, aby przypisać nowych administratorów.")
 4. Wypełnij formularz nowymi informacjami administratora.  

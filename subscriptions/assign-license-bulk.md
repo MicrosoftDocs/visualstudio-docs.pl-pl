@@ -8,10 +8,10 @@ ms.date: 10/22/2020
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do wielu subskrybentów za pomocą funkcji zbiorczego dodawania lub grup Microsoft Azure Active Directory
 ms.openlocfilehash: 6cb3613d76faca2adc9c6e946f6a8ec2c73770f1
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "92467547"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Przypisywanie subskrypcji wielu użytkownikom
@@ -35,7 +35,7 @@ Aby dodać dużych grup użytkowników, możesz użyć funkcji dodawania zbiorcz
    > [!NOTE]
    > Zawsze Pobieraj najnowszą wersję tego szablonu. Jeśli używasz starszej wersji, przekazywanie zbiorcze może zakończyć się niepowodzeniem.
 
-1. W arkuszu kalkulacyjnym programu Excel Wypełnij pola informacjami dla osób, do których chcesz przypisać subskrypcje. (*Odwołanie* jest polem opcjonalnym). Zapisz plik lokalnie po zakończeniu.
+1. W arkuszu kalkulacyjnym programu Excel Wypełnij pola informacjami dla osób, do których chcesz przypisać subskrypcje. ( *Odwołanie* jest polem opcjonalnym). Zapisz plik lokalnie po zakończeniu.
 
     > [!NOTE]
     > Jedno z pól szablonu umożliwia administratorom Włączanie lub wyłączanie możliwości pobierania oprogramowania przez subskrybentów.  Wyłączenie pobierania powoduje także wyłączenie dostępu do kluczy produktów.
@@ -48,11 +48,11 @@ Aby dodać dużych grup użytkowników, możesz użyć funkcji dodawania zbiorcz
     - Upewnij się, że wszystkie wymagane pola są wypełnione. 
     - Sprawdź kolumnę **komunikat o błędzie** .  Jeśli występują błędy, usuń je przed podjęciem próby przekazania pliku. 
 
-1. Wróć do portalu administracyjnego subskrypcji programu Visual Studio. W oknie dialogowym **przekazywanie wielu subskrybentów** wybierz pozycję **Przeglądaj**.
+1. Wróć do portalu administracyjnego subskrypcji programu Visual Studio. W oknie dialogowym **przekazywanie wielu subskrybentów** wybierz pozycję **Przeglądaj** .
    > [!div class="mx-imgBorder"]
    > ![Przejdź do zapisanego szablonu, aby przekazać wielu subskrybentów](media/bulk-add-browse-saved-template.png "Możesz przejść do lokalizacji pliku lub przeciągnąć i upuścić ją w tym oknie dialogowym.")
 
-1. Przejdź do zapisanego pliku programu Excel, a następnie wybierz przycisk **OK**.
+1. Przejdź do zapisanego pliku programu Excel, a następnie wybierz przycisk **OK** .
    > [!div class="mx-imgBorder"]
    > ![Przekaż szablon programu Excel, aby przekazać wielu subskrybentów](media/bulk-upload-subscribers.png "Szablon zawierający dane zostanie wyświetlony w tym miejscu.  Wybierz przycisk OK, aby rozpocząć przekazywanie.")
 
@@ -65,10 +65,10 @@ Aby dodać dużych grup użytkowników, możesz użyć funkcji dodawania zbiorcz
    Jeśli wystąpi błąd, wykonaj następujące kroki:
    1. Otwórz utworzony plik programu Excel, Usuń problemy i Zapisz plik.
    0. Wróć do portalu administracyjnego i Odrzuć komunikat o błędzie.
-   0. Wybierz pozycję **Dodaj**.
-   0. Wybierz pozycję **Dodaj zbiorczo**.
-   0. Ponieważ plik programu Excel został już zapisany, nie musisz pobierać szablonu.  Wybierz pozycję **Przeglądaj**, Znajdź zapisany plik, a następnie wybierz pozycję **Otwórz**.
-   0. Wybierz przycisk **OK**.
+   0. Wybierz pozycję **Dodaj** .
+   0. Wybierz pozycję **Dodaj zbiorczo** .
+   0. Ponieważ plik programu Excel został już zapisany, nie musisz pobierać szablonu.  Wybierz pozycję **Przeglądaj** , Znajdź zapisany plik, a następnie wybierz pozycję **Otwórz** .
+   0. Wybierz pozycję **OK** .
 
 
     Po pomyślnym przekazaniu zostanie wyświetlona lista subskrybentów i komunikat z potwierdzeniem.
@@ -111,7 +111,7 @@ Obejrzyj ten film wideo lub przeczytaj, aby dowiedzieć się więcej na temat do
    > [!div class="mx-imgBorder"]
    > ![Wybierz grupę usługi Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png "Wybierz nazwę grupy usługi Azure AD, aby dodać subskrybentów z tej grupy.")
 
-6. Wybierz pozycję **Dodaj** , a następnie **Potwierdź**. 
+6. Wybierz pozycję **Dodaj** , a następnie **Potwierdź** . 
 
 7. Aby wyświetlić dodaną grupę, przewiń w dół listy użytkowników.  
 

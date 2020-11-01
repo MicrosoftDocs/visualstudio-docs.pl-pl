@@ -8,10 +8,10 @@ ms.date: 10/28/2020
 ms.topic: conceptual
 description: Subskrypcje programu Visual Studio — Dlaczego widzę adresy Hotmail i Gmail dla subskrybentów?
 ms.openlocfilehash: fda7dab50c2151049e0feffa50609bf4c38e38cc
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "92904255"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Subskrypcje programu Visual Studio — Dlaczego widzę konta osobiste dla moich subskrybentów?
@@ -50,7 +50,7 @@ Kliknij przycisk Dalej **, aby przejść do** listy zmian, które mają zostać 
 > [!NOTE]
 > Podczas edytowania adresu e-mail należy tylko zaktualizować wiadomość e-mail używaną przez subskrybenta, aby zalogować się do swojej subskrypcji https://my.visualstudio.com . Jeśli subskrybent ma już aktywowane korzyści, takie jak Azure lub Pluralsight przy użyciu innego adresu e-mail, będzie musiał nadal korzystać z tych adresów e-mail w celu uzyskania dostępu do nich. W przypadku nowych korzyści, do których mają dostęp, powinny być używane nowe adresy e-mail. 
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)

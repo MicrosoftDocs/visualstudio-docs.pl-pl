@@ -8,10 +8,10 @@ ms.date: 09/08/2020
 ms.topic: how-to
 description: Dowiedz się, jak skontaktować się z administratorem subskrypcji, aby uzyskać pomoc dotyczącą pytań lub problemów.
 ms.openlocfilehash: dab5a450f5a46bab527c5982288f6e2a98ecfd0c
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "92904523"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>Uzyskaj pomoc od administratora subskrypcji
@@ -35,7 +35,7 @@ Mając na uwadze rozmiar i złożoność wielu organizacji, użytkownik może ni
 ## <a name="resources"></a>Zasoby
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)

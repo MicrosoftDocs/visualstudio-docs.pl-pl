@@ -8,10 +8,10 @@ ms.date: 10/28/2020
 ms.topic: overview
 description: Wynajęcie Visual Studio Professional lub Visual Studio Enterprise w ciągu miesiąca do miesiąca lub rocznego, bez długoterminowej umowy.
 ms.openlocfilehash: fbb4204ec5b36d865a1c8b3d9c235cdf97b4019e
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "92918087"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Kupowanie subskrypcji Visual Studio Professional i Visual Studio Enterprise w chmurze
@@ -129,7 +129,7 @@ Odp.: Chociaż nie będą mogli kupić innej rocznej subskrypcji w chmurze, istn
 - [Rozliczenia subskrypcji w chmurze programu Visual Studio — często zadawane pytania](vscloud-billing-faq.md)
 - [Kupowanie subskrypcji w chmurze programu Visual Studio dla dostawców CSP](vscloud-csp.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)

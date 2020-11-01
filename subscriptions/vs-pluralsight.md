@@ -8,10 +8,10 @@ ms.date: 08/04/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat subskrypcji szkoleniowej Pluralsight dołączonej do wybranych subskrypcji programu Visual Studio.
 ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "91005345"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści z szkolenia Pluralsight w subskrypcjach programu Visual Studio
@@ -31,7 +31,7 @@ W poniższej tabeli szczegółowo opisano, jakie korzyści z subskrypcji Plurals
 1. Nastąpi przekierowanie do strony Pluralsight, która jest dostępna w ramach subskrypcji programu Visual Studio.
    - Podaj informacje kontaktowe wymagane w formularzu
    - Kliknij pole wyboru, aby zaakceptować warunki użytkowania
-   - Kliknij pozycję **Zrealizuj**.
+   - Kliknij pozycję **Zrealizuj** .
    > [!div class="mx-imgBorder"]
    > ![Rejestracja Pluralsight](_img/vs-pluralsight/vs-pluralsight-registration.png "Wypełnij formularz rejestracji, kliknij pole wyboru, aby zaakceptować warunki, a następnie kliknij pozycję Zrealizuj.")
 
@@ -43,9 +43,9 @@ W poniższej tabeli szczegółowo opisano, jakie korzyści z subskrypcji Plurals
    > [!NOTE]
    > Jeśli Twoje konto nie kwalifikuje się do skorzystania z nowych ofert, otrzymasz wiadomość e-mail z informacją, że wystąpił problem podczas tworzenia konta, ponieważ nie jest on uprawniony.  Zawiera również informacje ułatwiające kontaktowanie się z zespołem pomocy technicznej firmy Pluralsight, który może odpowiedzieć na pytania dotyczące Twojego konta.
 
-1. Kliknij pozycję **Ustaw hasło**.
+1. Kliknij pozycję **Ustaw hasło** .
 
-1. Wprowadź wymagane hasło w polu **nowe hasło** , wprowadź je ponownie w polu **Potwierdź hasło** , a następnie kliknij przycisk **Zapisz**.
+1. Wprowadź wymagane hasło w polu **nowe hasło** , wprowadź je ponownie w polu **Potwierdź hasło** , a następnie kliknij przycisk **Zapisz** .
 
 1. Gotowe.  Teraz możesz zacząć uczenie się z tysiącami kursów Pluralsight!
 

@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "89561341"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Rejestruj informacje w oknie danych wyjściowych za pomocą punkty śledzenia w programie Visual Studio
@@ -53,7 +53,7 @@ Możesz ustawić punkty śledzenia, określając ciąg wyjściowy w obszarze pol
 
    ![Pole zaewidencjonowanych warunków](../debugger/media/checkedconditionsbox.png "Pole zaewidencjonowanych warunków")
 
-   Istnieją trzy opcje dla warunków: **wyrażenie warunkowe**, **Filtr**i **licznik trafień**.
+   Istnieją trzy opcje dla warunków: **wyrażenie warunkowe** , **Filtr** i **licznik trafień** .
 
 ## <a name="actions-menu"></a>Menu Akcje
 
@@ -63,7 +63,7 @@ Na przykład, jeśli chcesz wyświetlić wartość `counter` zmiennej w konsoli 
 
 ![Komunikat wyjściowy licznika](../debugger/media/counteroutputmessage.png "Komunikat wyjściowy licznika")
 
-Jeśli klikniesz przycisk **Zamknij** , a następnie debugujesz program (**F5**), zobaczysz następujące dane wyjściowe w oknie danych wyjściowych.
+Jeśli klikniesz przycisk **Zamknij** , a następnie debugujesz program ( **F5** ), zobaczysz następujące dane wyjściowe w oknie danych wyjściowych.
 
 ![Komunikat akcji w Okno Dane wyjściowe](../debugger/media/actionsmessageinoutputwindow.png "Komunikat akcji w Okno Dane wyjściowe")
 

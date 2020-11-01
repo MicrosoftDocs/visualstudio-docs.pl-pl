@@ -8,10 +8,10 @@ ms.date: 10/26/2020
 ms.topic: conceptual
 description: Dowiedz się, jak lokalizować i pobierać tytuły oprogramowania firmy Microsoft w subskrypcjach programu Visual Studio
 ms.openlocfilehash: e6a5b6a1caab199ec2b67108f539c1d68d545551
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "92903634"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Pobieranie tytułów oprogramowania w subskrypcjach programu Visual Studio
@@ -52,7 +52,7 @@ Aby uzyskać klucz produktu do pobrania, możesz wybrać niebieski klucz z etyki
 > [!div class="mx-imgBorder"]
 > ![Klucze produktów roszczeń programu Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png "Wybierz klucz roszczeń, aby przejąć pozostałe klucze.")
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
