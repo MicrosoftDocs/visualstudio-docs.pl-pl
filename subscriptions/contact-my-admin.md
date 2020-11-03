@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Dowiedz się, jak skontaktować się z administratorem subskrypcji, aby uzyskać pomoc dotyczącą pytań lub problemów.
-ms.openlocfilehash: dab5a450f5a46bab527c5982288f6e2a98ecfd0c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 363fc84d0607e511d259153dc3e39d4b4063ff42
+ms.sourcegitcommit: fb2a60cfdf78964fa0cb6783a5d947deae04b6bc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904523"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93289981"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>Uzyskaj pomoc od administratora subskrypcji
 Jeśli Twoja subskrypcja programu Visual Studio jest świadczona przez służbowe lub szkolne, prawdopodobnie została przypisana do Ciebie przez administratora subskrypcji lub administratora.  Administratorzy mogą przypisywać lub usuwać subskrypcje, zmieniać adresy e-mail logowania, określać, czy użytkownik ma możliwość pobrania oprogramowania i wykonywania innych funkcji związanych z subskrypcją.
@@ -27,15 +27,15 @@ Mając na uwadze rozmiar i złożoność wielu organizacji, użytkownik może ni
    > ![Skontaktuj się z moim administratorem](_img/contact-my-admin/contact-my-admin-button.png "Wybierz przycisk skontaktuj się z administratorem, Wprowadź wiadomość i wybierz pozycję Wyślij.")
 4. Wprowadź komunikat dla administratora.
 5. Jeśli chcesz otrzymać kopię wiadomości wysłanej do administratora, zaznacz pole wyboru **Wyślij do mnie kopię** . 
-6. Na koniec wybierz pozycję **Wyślij** .
+6. Na koniec wybierz pozycję **Wyślij**.
 
 > [!NOTE]
 > **Administratorzy:**  Aby ustawić adres e-mail, na który są wysyłane żądania "Skontaktuj się z administratorem", określ ten adres w [preferencjach umowy](admin-prefs.md#contact-email-address).
 
 ## <a name="resources"></a>Zasoby
-- [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/subscriptions/support/#talktous)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
