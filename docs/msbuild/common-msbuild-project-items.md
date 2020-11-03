@@ -2,7 +2,7 @@
 title: Wspólne elementy projektów MSBuild | Microsoft Docs
 description: Dowiedz się więcej na temat typowych elementów projektów programu MSBuild. Elementy są nazwanymi odwołaniami do jednego lub kilku plików i zawierają metadane, takie jak nazwy plików, ścieżki i numery wersji.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 10/29/2020
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b42ba80365b8aedd9527490235efb1228bc2a61d
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 638f67575a7214047cdb917c994179ac144e60b2
+ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796397"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93238626"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
 
@@ -84,7 +84,7 @@ Reprezentuje odwołanie do innego projektu. `ProjectReference` elementy są prze
 |---------------|-----------------|
 |Nazwa|Opcjonalny ciąg. Nazwa wyświetlana odwołania.|
 |GlobalPropertiesToRemove|Opcjonalne `string[]` . Nazwy właściwości do usunięcia podczas kompilowania przywoływanego projektu, na przykład `RuntimeIdentifier;PackOnBuild` . Wartość domyślna to Empty.|
-|Project|Opcjonalny ciąg. Identyfikator GUID odwołania w formularzu {12345678-1234-1234-1234-1234567891234} .|
+|Projekt|Opcjonalny ciąg. Identyfikator GUID odwołania w formularzu {12345678-1234-1234-1234-1234567891234} .|
 |OutputItemType|Opcjonalny ciąg. Typ elementu, do którego mają być emitowane docelowe dane wyjściowe. Wartość domyślna jest pusta. Jeśli metadane odwołania są ustawione na wartość "true" (domyślnie), docelowe dane wyjściowe staną się odwołaniami do kompilatora.|
 |ReferenceOutputAssembly|Opcjonalna wartość logiczna. Jeśli jest ustawiona na `false` , program nie uwzględnia danych wyjściowych przywoływanego projektu jako [odwołania](#reference) do tego projektu, ale nadal zapewnia, że inny projekt zostanie skompilowany przed tym. Wartość domyślna to `true` .|
 |SetConfiguration|Opcjonalny ciąg. Ustawia właściwość Global `Configuration` dla projektu, do którego istnieje odwołanie, na przykład `Configuration=Release` .|
@@ -160,7 +160,19 @@ Reprezentuje atrybuty zestawu, które mają zostać wygenerowane `[AssemblyMetad
 | Wartość | Wymagany ciąg. Jest drugim parametrem (wartość) w `AssemblyMetadataAttribute` konstruktorze atrybutu. |
 
 > [!NOTE]
-> Dotyczy to projektów korzystających tylko z zestaw .NET Core SDK.
+> Ten element ma zastosowanie do projektów korzystających z zestawu SDK dla platformy .NET 5 (i programu .NET Core) i nowszych wersji.
+
+### <a name="internalsvisibleto"></a>InternalsVisibleTo
+
+Określa zestawy, które mają być emitowane jako `[InternalsVisibleTo(..)]` atrybuty zestawu.
+
+| Nazwa metadanych elementu | Opis |
+|-----------------------| - |
+| Uwzględnij | Nazwa zestawu. |
+| Klucz | Opcjonalny ciąg. Klucz publiczny zestawu. |
+
+> [!NOTE]
+> Ten element ma zastosowanie do projektów korzystających z zestawu SDK dla platformy .NET 5 (i programu .NET Core) i nowszych wersji.
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 
@@ -174,7 +186,7 @@ Reprezentuje projekt FxCop do zaimportowania.
 
 Reprezentuje zestawy, których przestrzenie nazw powinny być importowane przez kompilator Visual Basic.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wspólne właściwości projektów MSBuild](../msbuild/common-msbuild-project-properties.md)
 - [Właściwości programu MSBuild dla projektów zestaw .NET Core SDK](/dotnet/core/project-sdk/msbuild-props)
