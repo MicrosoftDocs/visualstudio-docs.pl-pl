@@ -7,12 +7,12 @@ ms.assetid: b6fbfa3e-654a-462f-8e22-e313b6ea617f
 ms.date: 10/30/2020
 ms.topic: conceptual
 description: Dowiedz się, co się dzieje po wygaśnięciu subskrypcji programu Visual Studio
-ms.openlocfilehash: 118f9dcd1953799d74b10c682a007137474c2dd2
-ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
+ms.openlocfilehash: 3bab529f4a45a57e6cc21260fdde2d5e18bc5217
+ms.sourcegitcommit: f81984aec5341a84b87c2466461656c38d8ff681
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "93239363"
+ms.locfileid: "93245011"
 ---
 # <a name="what-happens-when-your-subscription-expires"></a>Co się stanie po wygaśnięciu subskrypcji
 Subskrypcje programu Visual Studio mają określone czasy trwania i o ile nie zostaną odnowione, wygasną.  Po wygaśnięciu subskrypcji korzyści udostępniane przez subskrypcję mają różne znaczenie.  W tym artykule wyjaśniono, w jaki sposób wygaśnięcie ma wpływ na różne aspekty subskrypcji programu Visual Studio. 
@@ -29,12 +29,12 @@ Strona klucze produktu <https://my.visualstudio.com/productkeys> nie jest już d
 Nie wszystkie korzyści są takie same, jak w przypadku wygaśnięcia subskrypcji.  Po wygaśnięciu subskrypcji nie można aktywować żadnych korzyści.  Wcześniej aktywowane korzyści mogą być nadal dostępne.  
 
 ### <a name="visual-studio-ide"></a>Visual Studio IDE
-Większość subskrypcji zapewnia bezterminowe licencje dla środowiska IDE programu Visual Studio. Pobierz [oficjalny dokument](https://aka.ms/vslicensing) dotyczący licencjonowania programu Visual Studio, aby określić, czy subskrypcja kwalifikuje się do korzystania z praw bezterminowych.  Jeśli Twoja subskrypcja kwalifikuje się do korzystania z praw bezterminowych, nadal będziesz mieć dostęp do bieżącej wersji środowiska IDE, ale nie będziesz otrzymywać aktualizacji do przyszłych wersji. Aby nadal używać środowiska IDE po wygaśnięciu, należy przejść na [stronę klucz produktu](https://my.visualstudio.com/productkeys) i pobrać klucz produktu **przed wygaśnięciem subskrypcji** .
+Większość subskrypcji zapewnia bezterminowe licencje dla środowiska IDE programu Visual Studio. Pobierz [oficjalny dokument](https://aka.ms/vslicensing) dotyczący licencjonowania programu Visual Studio, aby określić, czy subskrypcja kwalifikuje się do korzystania z praw bezterminowych.  Jeśli Twoja subskrypcja kwalifikuje się do korzystania z praw bezterminowych, nadal będziesz mieć dostęp do bieżącej wersji środowiska IDE, ale nie będziesz otrzymywać aktualizacji do przyszłych wersji. Aby nadal używać środowiska IDE po wygaśnięciu, należy przejść na [stronę klucz produktu](https://my.visualstudio.com/productkeys) i pobrać klucz produktu **przed wygaśnięciem subskrypcji**.
 
 ### <a name="azure-devops"></a>Azure DevOps
 Usługa Azure DevOps nabyta w ramach subskrypcji programu Visual Studio będzie niedostępna.  
 
-### <a name="azure-credits"></a>Kredyty na korzystanie z platformy Azure
+### <a name="azure-credits"></a>Środki na korzystanie z platformy Azure
 Miesięczne przydziały środków na korzystanie z platformy Azure będą kontynuowane przez ograniczony czas po wygaśnięciu subskrypcji.  Niewykorzystane kredyty już zastosowane do subskrypcji platformy Azure w bieżącym miesiącu będą nadal dostępne do użycia.  Jeśli chcesz nadal korzystać z zasobów platformy Azure z tej subskrypcji, po wyczerpaniu kredytów możesz [przenieść te zasoby](/azure/azure-resource-manager/management/move-resource-group-and-subscription) do innej subskrypcji platformy Azure lub [przekonwertować istniejącą subskrypcję na płatność zgodnie z rzeczywistym](/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal)użyciem.
 
 ### <a name="other-benefits"></a>Inne korzyści 
