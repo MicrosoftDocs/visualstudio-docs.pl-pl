@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 9ef41b8645e77a28c8422fff49111b41215ba971
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e837b1a0e9a1d8fe06342352e4eedf5ce0fa9117
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739879"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325947"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
 
@@ -33,10 +33,11 @@ Podróbki występują w dwóch wersjach:
 
 - Visual Studio Enterprise
 - Projekt .NET Framework
-- Obsługa projektu w stylu .NET Core i zestawu SDK jest obecnie w wersji zapoznawczej. [Przeczytaj więcej](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
+::: moniker range=">=vs-2019"
+- Obsługa projektu w stylu .NET Core i zestawu SDK w programie Visual Studio 2019 Update 6 i jest włączona domyślnie w wersji Update 8. Aby uzyskać więcej informacji, zobacz artykuły [firmy Microsoft dla projektów .NET Core i SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+::: moniker-end
 
 > [!NOTE]
-> - Projekty .NET Standard nie są obsługiwane.
 > - Profilowanie za pomocą programu Visual Studio nie jest dostępne dla testów korzystających z elementów sztucznych firmy Microsoft.
 
 ## <a name="choose-between-stub-and-shim-types"></a>Wybór między elementami zastępczymi i typami podkładki
@@ -82,11 +83,15 @@ Aby uzyskać bardziej szczegółowy opis, zobacz [Używanie wycinków do izolowa
 
 2. **Dodaj zestaw elementów sztucznych**
 
-    1. W **Eksplorator rozwiązań**rozwiń listę odwołania projektu testowego. Jeśli pracujesz w Visual Basic, musisz wybrać opcję **Pokaż wszystkie pliki** , aby zobaczyć listę odwołań.
+   1. W **Eksplorator rozwiązań** , 
+       - W przypadku starszego projektu .NET Framework (styl inny niż zestaw SDK) rozwiń węzeł **odwołania** projektu testów jednostkowych.
+       ::: moniker range=">=vs-2019"
+       - W przypadku projektu w stylu zestawu SDK .NET Framework lub .NET Core rozwiń węzeł **zależności** , aby znaleźć zestaw, który ma zostać sfałszowany w ramach **zestawów** , **projektów** lub **pakietów**.
+       ::: moniker-end
+       - Jeśli pracujesz w Visual Basic, wybierz pozycję **Pokaż wszystkie pliki** na **Eksplorator rozwiązań** pasku narzędzi, aby wyświetlić węzeł **odwołania** .
+   2. Wybierz zestaw, który zawiera definicje klas, dla których chcesz utworzyć podkładki. Na przykład, jeśli chcesz określić **datę i godzinę** dla podkładki, wybierz pozycję **System.dll**.
 
-    2. Wybierz odwołanie do zestawu, w którym zdefiniowano interfejs (na przykład IStockFeed). W menu skrótów tego odwołania wybierz pozycję **Dodaj zestaw**elementów sztucznych.
-
-    3. Ponownie skompiluj rozwiązanie.
+   3. W menu skrótów wybierz polecenie **Dodaj** elementy sztuczne.
 
 3. W testach należy skonstruować wystąpienia wycinka i podać kod dla jego metody:
 
@@ -169,9 +174,9 @@ Aby używać podkładek, nie trzeba modyfikować kodu aplikacji ani pisać go w 
 
 1. **Dodaj zestaw elementów sztucznych**
 
-     W **Eksplorator rozwiązań**Otwórz odwołania do projektu testu jednostkowego i wybierz odwołanie do zestawu, który zawiera metodę, która ma zostać sfałszowana. W tym przykładzie `DateTime` Klasa jest w *System.dll*.  Aby wyświetlić odwołania w projekcie Visual Basic, wybierz **Pokaż wszystkie pliki**.
+     W **Eksplorator rozwiązań** Otwórz odwołania do projektu testu jednostkowego i wybierz odwołanie do zestawu, który zawiera metodę, która ma zostać sfałszowana. W tym przykładzie `DateTime` Klasa jest w *System.dll*.  Aby wyświetlić odwołania w projekcie Visual Basic, wybierz **Pokaż wszystkie pliki**.
 
-     Wybierz pozycję **Dodaj zestaw**elementów sztucznych.
+     Wybierz pozycję **Dodaj zestaw** elementów sztucznych.
 
 2. **Wstaw podkładkę w ShimsContext**
 
@@ -244,6 +249,61 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 (Nie istnieje zestaw "System. IO. resztuczne" do odwołania. Przestrzeń nazw jest generowana przez proces tworzenia podkładki. Ale w zwykły sposób można użyć opcji "Using" lub "Import").
 
 Można również utworzyć podkładki dla konkretnych wystąpień, konstruktorów i właściwości. Aby uzyskać więcej informacji, zobacz [Używanie podkładki do izolowania aplikacji od innych zestawów do testowania jednostkowego](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
+
+## <a name="using-microsoft-fakes-in-the-ci"></a>Korzystanie z elementów sztucznych firmy Microsoft w CI
+
+### <a name="microsoft-fakes-assembly-generation"></a>Generacja zestawu elementów sztucznych firmy Microsoft
+Ponieważ fałszywe firmy Microsoft wymagają Visual Studio Enterprise, generacja zestawów elementów sztucznych wymaga skompilowania projektu za pomocą [zadania kompilacji programu Visual Studio](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops).
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Alternatywą dla tego jest sprawdzenie zestawów elementów sztucznych w CI i użycie [zadania MSBuild](../msbuild/msbuild-task.md?view=vs-2019). Gdy to zrobisz, musisz upewnić się, że masz odwołanie do zestawu dla wygenerowanego zestawu elementów sztucznych w projekcie testowym, podobnie jak w poniższym fragmencie kodu:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <Reference Include="FakesAssemblies\System.Fakes.dll">
+    </ItemGroup>
+</Project>
+```
+
+To odwołanie jest wymagane do dodania w ręcznie określonych projektach w stylu zestawu SDK (.NET Core i .NET Framework), ponieważ zostały przeniesione do niejawnie dodawane odwołań do zestawu do projektu testowego. Jeśli korzystasz z tej metody, musisz się upewnić, że zestaw elementów sztucznych zostanie zaktualizowany po zmianie zestawu nadrzędnego.
+::: moniker-end
+
+### <a name="running-microsoft-fakes-tests"></a>Uruchamianie testów sztucznych firmy Microsoft
+Tak długo, jak zestawy sztuczne firmy Microsoft znajdują się w skonfigurowanym `FakesAssemblies` katalogu (ustawienie domyślne `$(ProjectDir)FakesAssemblies` ), można uruchomić testy przy użyciu [zadania VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops).
+
+::: moniker range=">=vs-2019"
+Testowanie rozproszone z projektami [VSTest zadania](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) .NET Core przy użyciu elementów sztucznych firmy Microsoft wymaga programu Visual Studio 2019 Update 9 (wersja zapoznawcza) `20201020-06` lub nowszego.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-or-net-core-projects"></a>Przechodzenie do .NET Framework projektów testowych, które korzystają z elementów sztucznych firmy Microsoft do .NET Framework w stylu zestawu SDK programu .NET Core
+Konieczne będzie wprowadzenie minimalnych zmian w .NET Framework skonfigurowanych dla elementów sztucznych firmy Microsoft do przejścia na platformę .NET Core. Należy wziąć pod uwagę następujące przypadki:
+- Jeśli używasz niestandardowego szablonu projektu, musisz upewnić się, że jest to zestaw SDK i kompilacja dla zgodnej platformy docelowej.
+- Niektóre typy istnieją w różnych zestawach w .NET Framework i .NET Core (na przykład `System.DateTime` istnieje w `System` / `mscorlib` .NET Framework, i w `System.Runtime` programie .NET Core), a w tych scenariuszach należy zmienić sposób, w jaki ma zostać zmieniony.
+- Jeśli masz odwołanie do zestawu elementów sztucznych i projektu testowego, może zostać wyświetlone ostrzeżenie kompilacji dotyczące brakujących odwołań podobne do:
+  ```
+  (ResolveAssemblyReferences target) ->
+  warning MSB3245: Could not resolve this reference. Could not locate the assembly "AssemblyName.Fakes". Check to make sure the assembly exists on disk.
+  If this reference is required by your code, you may get compilation errors.
+  ```
+  To ostrzeżenie jest spowodowane niezbędnymi zmianami w generowaniu elementów sztucznych, które można zignorować. Można to uniknąć, usuwając odwołanie do zestawu z pliku projektu, ponieważ teraz niejawnie dodamy je podczas kompilacji.
+::: moniker-end
+
+## <a name="microsoft-fakes-support"></a>Wsparcie dla sztucznych firmy Microsoft 
+### <a name="microsoft-fakes-in-older-projects-targeting-net-framework-non-sdk-style"></a>Firmy Microsoft w starszych projektach mają do .NET Framework (styl inny niż zestaw SDK).
+- Generacja zestawu elementów sztucznych firmy Microsoft jest obsługiwana w Visual Studio Enterprise 2015 i nowszych.
+- Testy sztuczne firmy Microsoft mogą działać ze wszystkimi dostępnymi pakietami NuGet Microsoft. TestPlatform.
+- Pokrycie kodu jest obsługiwane dla projektów testowych korzystających z elementów sztucznych firmy Microsoft w Visual Studio Enterprise 2015 i wyższych.
+
+### <a name="microsoft-fakes-in-sdk-style-net-framework-and-net-core-projects"></a>Sztuczne firmy Microsoft w .NET Framework w stylu zestawu SDK i projekty .NET Core
+- Firma Microsoft sztuczna generacja zestawu, która jest wyświetlana w Visual Studio Enterprise 2019 Update 6 i jest domyślnie włączona w wersji Update 8.
+- Testy sztuczne firmy Microsoft dla projektów, które są przeznaczone .NET Framework mogą działać ze wszystkimi dostępnymi pakietami NuGet Microsoft. TestPlatform.
+- Testy sztuczne firmy Microsoft dla projektów przeznaczonych dla platformy .NET Core mogą działać z pakietami NuGet Microsoft. TestPlatform z wersjami [16.8.0-Preview-20200921-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.8.0-preview-20200921-01) i nowszymi.
+- Pokrycie kodu jest obsługiwane dla projektów testowych przeznaczonych dla .NET Framework przy użyciu elementów sztucznych firmy Microsoft w Visual Studio Enterprise w wersji 2015 lub nowszej.
+- Obsługa pokrycia kodu dla projektów testowych przeznaczonych dla platformy .NET Core przy użyciu elementów sztucznych firmy Microsoft jest w fazie projektowania.
+
 
 ## <a name="in-this-section"></a>W tej sekcji
 [Stosowanie wycinków kodu do izolowania od siebie poszczególnych części aplikacji w celu przeprowadzania testów jednostkowych](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)

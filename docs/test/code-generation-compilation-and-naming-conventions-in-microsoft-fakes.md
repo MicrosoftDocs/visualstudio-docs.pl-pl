@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a1ba469f460e966be581b87226f2a89faac8186
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589334"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325944"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Konwencje dotyczące generowania, kompilowania i nazywania w Microsoft Fakes
 
@@ -22,9 +22,9 @@ W tym artykule omówiono opcje i problemy związane z generowaniem kodu i kompil
 
 - Visual Studio Enterprise
 - Projekt .NET Framework
-
-> [!NOTE]
-> Projekty .NET Standard nie są obsługiwane.
+::: moniker range=">=vs-2019"
+- Obsługa projektu w stylu .NET Core i zestawu SDK w programie Visual Studio 2019 Update 6 i jest włączona domyślnie w wersji Update 8. Aby uzyskać więcej informacji, zobacz artykuły [firmy Microsoft dla projektów .NET Core i SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+::: moniker-end
 
 ## <a name="code-generation-and-compilation"></a>Generowanie i kompilowanie kodu
 
@@ -32,7 +32,7 @@ W tym artykule omówiono opcje i problemy związane z generowaniem kodu i kompil
 
 Generowanie typów zastępczych jest konfigurowane w pliku XML, który ma rozszerzenie pliku *.* Struktura sztuczna integruje się w procesie kompilacji za pomocą niestandardowych zadań programu MSBuild i wykrywa te pliki w czasie kompilacji. Generator kodu sztucznego kompiluje typy zastępcze do zestawu i dodaje odwołanie do projektu.
 
-Poniższy przykład ilustruje typy zastępcze zdefiniowane w *FileSystem.dll*:
+Poniższy przykład ilustruje typy zastępcze zdefiniowane w *FileSystem.dll* :
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -134,7 +134,7 @@ Struktura elementów sztucznych używa tego samego klucza do podpisywania wszyst
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-Możesz określić inny klucz publiczny dla zestawu sztucznego, taki jak klucz utworzony dla zestawu zastąpionym podkładką, określając pełną ścieżkę do pliku *. snk* , który zawiera klucz alternatywny jako `KeyFile` wartość atrybutu w `Fakes` \\ `Compilation` elemencie pliku *.* repliks. Na przykład:
+Możesz określić inny klucz publiczny dla zestawu sztucznego, taki jak klucz utworzony dla zestawu zastąpionym podkładką, określając pełną ścieżkę do pliku *. snk* , który zawiera klucz alternatywny jako `KeyFile` wartość atrybutu w `Fakes` \\ `Compilation` elemencie pliku *.* repliks. Przykład:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -197,7 +197,7 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-type-and-stub-type-naming-conventions"></a>Konwencje nazewnictwa typów i typów podkładki
 
-**Przestrzenie nazw**
+**Namespaces**
 
 - . Sufiks elementów sztucznych jest dodawany do przestrzeni nazw.
 
@@ -237,14 +237,14 @@ attribute of the Assembly element in the .fakes:
 |-|-|-|
 |**Konstruktor**|`.ctor`|`Constructor`|
 |Statyczny **Konstruktor**|`.cctor`|`StaticConstructor`|
-|Metoda **dostępu** o nazwie metody składająca się z dwóch części oddzielonych znakami "_" (takich jak metody pobierające właściwości)|*kind_name* (przypadek typowy, ale nie wymuszony przez ECMA)|*NameKind*, gdzie obie części są pisane wielkimi literami i wymieniane|
+|Metoda **dostępu** o nazwie metody składająca się z dwóch części oddzielonych znakami "_" (takich jak metody pobierające właściwości)|*kind_name* (przypadek typowy, ale nie wymuszony przez ECMA)|*NameKind* , gdzie obie części są pisane wielkimi literami i wymieniane|
 ||Metoda pobierająca właściwości `Prop`|`PropGet`|
 ||Metoda ustawiająca właściwości `Prop`|`PropSet`|
 ||Rozszerzanie zdarzeń|`Add`|
 ||Usuwanie zdarzenia|`Remove`|
 |**Operator** składający się z dwóch części|`op_name`|`NameOp`|
 |Przykład: + — operator|`op_Add`|`AddOp`|
-|Dla **operatora konwersji**dołączany jest typ zwracany.|`T op_Implicit`|`ImplicitOpT`|
+|Dla **operatora konwersji** dołączany jest typ zwracany.|`T op_Implicit`|`ImplicitOpT`|
 
 > [!NOTE]
 > - **Metody pobierające i metody ustawiające indeksatory** są traktowane podobnie do właściwości. Domyślną nazwą indeksatora jest `Item` .
@@ -274,6 +274,6 @@ Następujące reguły są stosowane cyklicznie:
 
 - Jeśli wynikiem występuje konflikt nazw z dowolnym elementem członkowskim typu deklarującego, schemat numeracji jest używany przez dołączenie dwucyfrowego licznika, rozpoczynając od 01.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Izolowanie testowanego kodu za pomocą elementów sztucznych firmy Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)

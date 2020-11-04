@@ -9,12 +9,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1a241fa8422a71900312198988dacfe144525b5a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 13a5c8c4058fc051cf7ec0093632220c757604f0
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810526"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325931"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Używanie podkładki do izolowania aplikacji do testów jednostkowych
 
@@ -28,9 +28,9 @@ Aby zapoznać się z omówieniem i "Szybki Start", zobacz [Izolowanie testowaneg
 
 - Visual Studio Enterprise
 - Projekt .NET Framework
-
-> [!NOTE]
-> Projekty .NET Standard nie są obsługiwane.
+::: moniker range=">=vs-2019"
+- Obsługa projektu w stylu .NET Core i zestawu SDK w programie Visual Studio 2019 Update 6 i jest włączona domyślnie w wersji Update 8. Aby uzyskać więcej informacji, zobacz artykuły [firmy Microsoft dla projektów .NET Core i SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+::: moniker-end
 
 ## <a name="example-the-y2k-bug"></a>Przykład: Usterka Y2K
 
@@ -67,13 +67,16 @@ using (ShimsContext.Create()) {
 
 Najpierw Dodaj zestaw elementów sztucznych:
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł **odwołania** projektu testów jednostkowych.
+1. W **Eksplorator rozwiązań** , 
+    - W przypadku starszego projektu .NET Framework (styl inny niż zestaw SDK) rozwiń węzeł **odwołania** projektu testów jednostkowych.
+    ::: moniker range=">=vs-2019"
+    - W przypadku projektu w stylu zestawu SDK .NET Framework lub .NET Core rozwiń węzeł **zależności** , aby znaleźć zestaw, który ma zostać sfałszowany w ramach **zestawów** , **projektów** lub **pakietów**.
+    ::: moniker-end
+    - Jeśli pracujesz w Visual Basic, wybierz pozycję **Pokaż wszystkie pliki** na **Eksplorator rozwiązań** pasku narzędzi, aby wyświetlić węzeł **odwołania** .
 
-   - Jeśli pracujesz w Visual Basic, wybierz pozycję **Pokaż wszystkie pliki** na **Eksplorator rozwiązań** pasku narzędzi, aby wyświetlić węzeł **odwołania** .
+2. Wybierz zestaw, który zawiera definicje klas, dla których chcesz utworzyć podkładki. Na przykład, jeśli chcesz określić **datę i godzinę** dla podkładki, wybierz pozycję **System.dll**.
 
-2. Wybierz zestaw, który zawiera definicje klas, dla których chcesz utworzyć podkładki. Na przykład, jeśli chcesz określić **datę i godzinę**dla podkładki, wybierz pozycję **System.dll**.
-
-3. W menu skrótów wybierz polecenie **Dodaj**elementy sztuczne.
+3. W menu skrótów wybierz polecenie **Dodaj** elementy sztuczne.
 
 ### <a name="use-shimscontext"></a>Użyj ShimsContext
 
@@ -93,7 +96,7 @@ Należy prawidłowo usunąć każdy kontekst podkładek. Jako zasada elementu kc
 
 ### <a name="write-a-test-with-shims"></a>Napisz test z podkładkami
 
-W kodzie testowym Wstaw *deprezentację* dla metody, która ma zostać sfałszowana. Na przykład:
+W kodzie testowym Wstaw *deprezentację* dla metody, która ma zostać sfałszowana. Przykład:
 
 ```csharp
 [TestClass]
@@ -281,7 +284,7 @@ var shim = new ShimMyClass();
 MyClass instance = shim; // implicit cast retrieves the runtime instance
 ```
 
-### <a name="constructors"></a>Konstruktory
+### <a name="constructors"></a>Konstruktorów
 
 Konstruktory mogą być także zastąpionym podkładką w celu dołączania typów podkładki do przyszłych obiektów. Każdy Konstruktor jest narażony jako Konstruktor metody statycznej w typie podkładki. Na przykład, biorąc pod uwagę Klasa `MyClass` z konstruktorem pobierającym liczbę całkowitą:
 
@@ -520,9 +523,9 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>Ograniczenia
 
-Podkładki nie mogą być używane dla wszystkich typów **z biblioteki MFC** i **systemu**klas podstawowych platformy .NET.
+Podkładki nie mogą być używane dla wszystkich typów z biblioteki klas bazowych .NET **mscorlib** i **system** w .NET Framework, a w programie **System. Runtime** w programie .NET Core.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
 - [Blog Peterowi Provost: podkładki dla programu Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
