@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 8715bd00653f74d874dc077180a9978b26bff8f1
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 6543dfe8298ea24aa731a74556b01be1beeed2bf
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134732"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344479"
 ---
 # <a name="devinit-commands"></a>polecenia devinit
 

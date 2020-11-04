@@ -1,7 +1,7 @@
 ---
 title: Plik konfiguracji devinit
 description: Dokumentacja .devinit.jsw pliku manifestu dla devinit.
-ms.date: 08/28/2020
+ms.date: 11/02/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b0cfb1c41d7721598bae44f950ced01d17ff494a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 29ea900b534bc03e47cfda49dba15af910189e48
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005361"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344486"
 ---
 # <a name="devinit-configuration-file"></a>plik konfiguracji devinit
 
@@ -24,11 +24,17 @@ ms.locfileid: "91005361"
 
 `devinit.exe init`Polecenie jest realizowane za pośrednictwem _.devinit.js_ pliku. Domyślnie program `devinit.exe` szuka pliku w następujących lokalizacjach:
 
-- _{Current-Directory}\\_
-- _{Current-Directory} \\ . devinit\\_
-- _{Current-Directory} \\ . devcontainer\\_
+* {Current-Directory} \\.devinit.jsna
+* {Current-Directory} \\devinit.jsna
+* {Current-Directory} \\ . devinit \\.devinit.jsna
+* {Current-Directory} \\ . devinit \\devinit.jsna
+* {Current-Directory} \\ devinit \\.devinit.jsna
+* {Current-Directory} \\ devinit \\devinit.jsna
+* {Current-Directory} \\ . devcontainer \\.devinit.jsna
+* {Current-Directory} \\ . devcontainer \\devinit.jsna
 
-_._ w katalogu i nazwy plików można pominąć.
+> [!NOTE]
+> Jeśli zostanie znalezionych wiele plików domyślnych, devinit użyje pliku, który jest wyświetlany w pierwszej kolejności na powyższej liście.
 
 _.devinit.jsw_ pliku można również jawnie określić za pomocą `--file` / `-f` opcji.
 

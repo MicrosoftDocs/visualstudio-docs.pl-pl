@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de4291d08b3a6b6897b3ae41562f70fad5372b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0d2b0964c565bab4d3a0731a14b93ccd976bb69
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89053432"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344497"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Mierzenie wydajności aplikacji z poziomu wiersza polecenia
 
@@ -33,7 +33,7 @@ W przykładzie opisanym w tym artykule zbierasz informacje o wydajności dla Not
 
 * Znajomość narzędzi wiersza polecenia
 
-* Aby zebrać informacje o wydajności na komputerze zdalnym bez zainstalowanego programu Visual Studio, zainstaluj [Narzędzia do oceny wydajności dla programu Visual Studio](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) na maszynie zdalnej. Wersja narzędzi musi być zgodna z wersją programu Visual Studio.
+* Aby zebrać informacje o wydajności na komputerze zdalnym bez zainstalowanego programu Visual Studio, zainstaluj [Remote Tools for Visual Studio](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) na komputerze zdalnym. Wersja narzędzi musi być zgodna z wersją programu Visual Studio.
 
 ## <a name="collect-performance-data"></a>Zbieranie danych wydajności
 
@@ -71,7 +71,7 @@ Profilowanie przy użyciu narzędzi interfejsu wiersza polecenia programu Visual
    VSDiagnostics.exe stop <id> /output:<path to file>
    ```
 
-1. Znajdź plik *. diagsession* danych wyjściowych z poprzedniego polecenia i otwórz go w programie Visual Studio (**File**  >  **Otwórz**plik), aby przejrzeć zebrane informacje.
+1. Znajdź plik *. diagsession* danych wyjściowych z poprzedniego polecenia i otwórz go w programie Visual Studio ( **File**  >  **Otwórz** plik), aby przejrzeć zebrane informacje.
 
    Aby przeanalizować wyniki, zapoznaj się z dokumentacją odpowiedniego narzędzia do oceny wydajności. Może to być na przykład [użycie procesora CPU](../profiling/cpu-usage.md), [Narzędzie alokacji obiektów platformy .NET](../profiling/dotnet-alloc-tool.md)lub narzędzie [bazy danych](../profiling/analyze-database.md) .
 
