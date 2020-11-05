@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 115fda00f880e9c2fa1782735dd471fc3df68936
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6e3d2fdaf6be019cae504d4f71258d410d232ff5
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005975"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400206"
 ---
 # <a name="windowsfeature-enable"></a>windowsfeature-enable
 
@@ -34,7 +34,7 @@ To `windowsfeature-enable` Narzędzie służy do włączania funkcji systemu Win
 
 `input`Właściwość powinna być `name` typu `windows feature` do zainstalowania. Listę dostępnych funkcji można znaleźć, uruchamiając `Get-WindowsFeature` polecenie cmd programu PowerShell.
 
-### <a name="additional-options"></a>Dodatkowe opcje
+### <a name="additional-options"></a>Additional-Options
 
 Brak.
 
@@ -46,7 +46,7 @@ Domyślne zachowanie `windowsfeature-enable` narzędzia to błąd, zgodnie z `in
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Installs IIS.",

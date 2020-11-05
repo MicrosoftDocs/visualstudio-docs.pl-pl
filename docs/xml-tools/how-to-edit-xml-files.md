@@ -1,6 +1,8 @@
 ---
 title: 'Instrukcje: Edytowanie plików XML'
 ms.date: 11/04/2016
+description: Informacje dotyczące edytowania plików zawierających zawartość XML lub DTD przy użyciu edytora XML w programie Visual Studio.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 author: TerryGLee
@@ -8,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f078d9293fa8b02267c5003a92d1d60134e1a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 933ce2912845b69ceb73584c0599566b0a037fef
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249509"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399985"
 ---
 # <a name="how-to-edit-xml-files"></a>Instrukcje: edytowanie plików XML
 
-Edytor XML jest nowym edytorem plików XML. Może być używany w autonomicznym pliku XML lub w pliku skojarzonym z projektem programu Visual Studio. Edytor XML jest skojarzony z następującymi rozszerzeniami plików: *. config*, *. DTD*, *. XML*, *. xsd*, *. XDR*, *. xsl*, *. XSLT*i *. vssettings*. Edytor XML jest również skojarzony z innym typem pliku, który nie ma określonego edytora, i zawiera zawartość XML lub DTD.
+Edytor XML jest nowym edytorem plików XML. Może być używany w autonomicznym pliku XML lub w pliku skojarzonym z projektem programu Visual Studio. Edytor XML jest skojarzony z następującymi rozszerzeniami plików: *. config* , *. DTD* , *. XML* , *. xsd* , *. XDR* , *. xsl* , *. XSLT* i *. vssettings*. Edytor XML jest również skojarzony z innym typem pliku, który nie ma określonego edytora, i zawiera zawartość XML lub DTD.
 
 > [!NOTE]
 > Dokumenty XHTML są obsługiwane przez Edytor HTML.
@@ -50,7 +52,7 @@ Aby edytować plik XML, Otwórz plik, który chcesz edytować.
 
 2. Wybierz **plik XML** , aby utworzyć nowy plik XML; lub wybierz opcję **plik XSLT** , aby utworzyć nowy arkusz stylów XSLT.
 
-3. Wybierz pozycję **Open** (Otwórz).
+3. Wybierz pozycję **Otwórz**.
 
 ## <a name="create-an-empty-project-for-xml-files"></a>Utwórz pusty projekt dla plików XML
 
@@ -62,7 +64,7 @@ Aby edytować plik XML, Otwórz plik, który chcesz edytować.
 
 2. Wybierz wybrany język kodu, a następnie wybierz szablon **pusty projekt (.NET Framework)** .
 
-3. Wybierz pozycję **OK**.
+3. Wybierz przycisk **OK**.
 
 ::: moniker-end
 

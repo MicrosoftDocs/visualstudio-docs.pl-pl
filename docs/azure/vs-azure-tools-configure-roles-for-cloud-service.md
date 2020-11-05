@@ -4,17 +4,16 @@ description: Dowiedz się, jak skonfigurować i skonfigurować role dla usług A
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 7107e7f9b156f4f62e798b7f4ffb283fb8a6678c
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 6b34a61bb0353bbbd4405b7f642bc63758dfa096
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740048"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399282"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurowanie ról usług w chmurze platformy Azure przy użyciu programu Visual Studio
 Usługa w chmurze platformy Azure może mieć co najmniej jedną rolę procesu roboczego lub sieci Web. Dla każdej roli należy zdefiniować sposób konfigurowania tej roli, a także skonfigurować sposób jej uruchamiania. Aby dowiedzieć się więcej o rolach w usługach w chmurze, zobacz [wprowadzenie do usługi Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -36,7 +35,7 @@ Eksplorator rozwiązań usługę w chmurze platformy Azure można skonfigurować
 
 1. Utwórz lub Otwórz projekt usługi w chmurze platformy Azure w programie Visual Studio.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie z menu kontekstowego wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt, a następnie z menu kontekstowego wybierz polecenie **Właściwości**.
 
     ![Menu kontekstowe projektu Eksplorator rozwiązań](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-project-context-menu.png)
 
@@ -44,7 +43,7 @@ Eksplorator rozwiązań usługę w chmurze platformy Azure można skonfigurować
 
     ![Strona właściwości projektu — karta programowanie](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-development-tab.png)
 
-1. Na liście **Konfiguracja usługi** wybierz nazwę konfiguracji usługi, którą chcesz edytować. (Jeśli chcesz wprowadzić zmiany we wszystkich konfiguracjach usługi dla tej roli, wybierz opcję **wszystkie konfiguracje**).
+1. Na liście **Konfiguracja usługi** wybierz nazwę konfiguracji usługi, którą chcesz edytować. (Jeśli chcesz wprowadzić zmiany we wszystkich konfiguracjach usługi dla tej roli, wybierz opcję **wszystkie konfiguracje** ).
 
     > [!IMPORTANT]
     > W przypadku wybrania określonej konfiguracji usługi niektóre właściwości są wyłączone, ponieważ mogą być ustawiane tylko dla wszystkich konfiguracji. Aby edytować te właściwości, należy wybrać **wszystkie konfiguracje**.
@@ -56,7 +55,7 @@ Aby zwiększyć wydajność usługi w chmurze, można zmienić liczbę wystąpie
 
 1. Utwórz lub Otwórz projekt usługi w chmurze platformy Azure w programie Visual Studio.
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł projektu. W węźle **role** kliknij prawym przyciskiem myszy rolę, którą chcesz zaktualizować, a następnie z menu kontekstowego wybierz pozycję **Właściwości**.
+1. W **Eksplorator rozwiązań** rozwiń węzeł projektu. W węźle **role** kliknij prawym przyciskiem myszy rolę, którą chcesz zaktualizować, a następnie z menu kontekstowego wybierz pozycję **Właściwości**.
 
     ![Menu kontekstowe Eksplorator rozwiązań roli platformy Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -66,7 +65,7 @@ Aby zwiększyć wydajność usługi w chmurze, można zmienić liczbę wystąpie
 
 1. Na liście **Konfiguracja usługi** wybierz konfigurację usługi, którą chcesz zaktualizować.
 
-    ![Lista konfiguracji usługi](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-select-configuration.png)
+    ![Lista konfiguracji usługi 1](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-select-configuration.png)
 
 1. W polu tekstowym **Liczba wystąpień** wprowadź liczbę wystąpień, które mają zostać uruchomione dla tej roli. Każde wystąpienie jest uruchamiane na oddzielnej maszynie wirtualnej po opublikowaniu usługi w chmurze na platformie Azure.
 
@@ -86,7 +85,7 @@ Przy użyciu innej wartości dla każdej konfiguracji usługi nie trzeba używa�
 
 1. Utwórz lub Otwórz projekt usługi w chmurze platformy Azure w programie Visual Studio.
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł projektu. W węźle **role** kliknij prawym przyciskiem myszy rolę, którą chcesz zaktualizować, a następnie z menu kontekstowego wybierz pozycję **Właściwości**.
+1. W **Eksplorator rozwiązań** rozwiń węzeł projektu. W węźle **role** kliknij prawym przyciskiem myszy rolę, którą chcesz zaktualizować, a następnie z menu kontekstowego wybierz pozycję **Właściwości**.
 
     ![Menu kontekstowe Eksplorator rozwiązań roli platformy Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -112,8 +111,8 @@ Przy użyciu innej wartości dla każdej konfiguracji usługi nie trzeba używa�
 
 1. W oknie dialogowym **Tworzenie parametrów połączenia magazynu** wybierz opcję **połączenia za pomocą programu**. Następnie postępuj zgodnie z instrukcjami dotyczącymi wybranej opcji:
 
-    - **Emulator magazynu Microsoft Azure** — w przypadku wybrania tej opcji pozostałe ustawienia w oknie dialogowym zostaną wyłączone, ponieważ mają zastosowanie tylko do platformy Azure. Wybierz pozycję **OK**.
-    - **Twoja subskrypcja** — w przypadku wybrania tej opcji Użyj listy rozwijanej, aby wybrać i zalogować się do konto Microsoft lub dodać konto Microsoft. Wybierz subskrypcję platformy Azure i konto magazynu. Wybierz pozycję **OK**.
+    - **Emulator magazynu Microsoft Azure** — w przypadku wybrania tej opcji pozostałe ustawienia w oknie dialogowym zostaną wyłączone, ponieważ mają zastosowanie tylko do platformy Azure. Wybierz przycisk **OK**.
+    - **Twoja subskrypcja** — w przypadku wybrania tej opcji Użyj listy rozwijanej, aby wybrać i zalogować się do konto Microsoft lub dodać konto Microsoft. Wybierz subskrypcję platformy Azure i konto magazynu. Wybierz przycisk **OK**.
     - **Ręcznie wprowadzone poświadczenia** — wprowadź nazwę konta magazynu i klucz podstawowy lub drugi. Wybierz opcję **połączenia** (protokół HTTPS jest zalecany w przypadku większości scenariuszy). Wybierz **przycisk OK**.
 
 1. Aby usunąć parametry połączenia, wybierz parametry połączenia, a następnie wybierz pozycję **Usuń ustawienie**.
@@ -148,7 +147,7 @@ Przy użyciu innej wartości dla każdej konfiguracji usługi nie trzeba używa�
 
 1. Utwórz lub Otwórz projekt usługi w chmurze platformy Azure w programie Visual Studio.
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł projektu. W węźle **role** kliknij prawym przyciskiem myszy rolę, którą chcesz zaktualizować, a następnie z menu kontekstowego wybierz pozycję **Właściwości**.
+1. W **Eksplorator rozwiązań** rozwiń węzeł projektu. W węźle **role** kliknij prawym przyciskiem myszy rolę, którą chcesz zaktualizować, a następnie z menu kontekstowego wybierz pozycję **Właściwości**.
 
     ![Menu kontekstowe Eksplorator rozwiązań roli platformy Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -158,7 +157,7 @@ Przy użyciu innej wartości dla każdej konfiguracji usługi nie trzeba używa�
 
 1. Na liście **Konfiguracja usługi** wybierz konfigurację usługi, którą chcesz zaktualizować.
 
-    ![Lista konfiguracji usługi](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
+    ![Lista konfiguracji usługi 2](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
 
 1. Aby dodać ustawienie niestandardowe, wybierz pozycję **Dodaj ustawienie**.
 
@@ -199,7 +198,7 @@ Można dodać lokalny magazyn systemu plików dla każdego wystąpienia roli. Da
 
 1. Utwórz lub Otwórz projekt usługi w chmurze platformy Azure w programie Visual Studio.
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł projektu. W węźle **role** kliknij prawym przyciskiem myszy rolę, którą chcesz zaktualizować, a następnie z menu kontekstowego wybierz pozycję **Właściwości**.
+1. W **Eksplorator rozwiązań** rozwiń węzeł projektu. W węźle **role** kliknij prawym przyciskiem myszy rolę, którą chcesz zaktualizować, a następnie z menu kontekstowego wybierz pozycję **Właściwości**.
 
     ![Menu kontekstowe Eksplorator rozwiązań roli platformy Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -209,7 +208,7 @@ Można dodać lokalny magazyn systemu plików dla każdego wystąpienia roli. Da
 
 1. Na liście **Konfiguracja usługi** upewnij się, że **wszystkie konfiguracje** są zaznaczone, ponieważ ustawienia magazynu lokalnego mają zastosowanie do wszystkich konfiguracji usługi. Każda inna wartość powoduje wyłączenie wszystkich pól wejściowych na stronie.
 
-    ![Lista konfiguracji usługi](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
+    ![Lista konfiguracji usługi 3](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
 
 1. Aby dodać wpis magazynu lokalnego, wybierz pozycję **Dodaj magazyn lokalny**.
 

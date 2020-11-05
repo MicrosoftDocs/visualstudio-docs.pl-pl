@@ -1,5 +1,7 @@
 ---
 title: Tworzenie schematu XML
+description: Dowiedz się, w jaki sposób używać edytora XML w programie Visual Studio, aby utworzyć schemat języka definicji schematu XML (XSD) z dokumentu XML.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: how-to
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10ce1c6dc5bd24b391a8cde184a32684270662ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 18081db7537eab1d14f800e9457821679c0316b8
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815451"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399525"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Instrukcje: Tworzenie schematu XML na podstawie dokumentu XML
 
@@ -23,7 +25,7 @@ Edytor XML pozwala utworzyć schemat języka XSD (XML Schema Definition Language
 
 - Jeśli dokument XML zawiera skojarzony DTD, zewnętrzna definicja DTD i podzbiór wewnętrzny są konwertowane do odpowiedniego schematu XML.
 
-- Jeśli dokument XML zawiera wbudowany schemat danych XML (XDR), schemat XDR jest konwertowany na odpowiedni schemat XML.
+- Jeśli dokument XML zawiera wbudowany XML-Data ze zmniejszonym (XDR) schematu, schemat XDR zostanie przekonwertowany na odpowiedni schemat XML.
 
 Tworzone schematy są następnie używane do udostępniania funkcji IntelliSense dla pliku XML.
 

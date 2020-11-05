@@ -3,18 +3,17 @@ title: Dodawanie pamięci podręcznej platformy Azure dla Redis za pomocą usłu
 description: Dodaj usługę Azure cache for Redis do aplikacji przy użyciu programu Visual Studio w celu dodania podłączonej usługi
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 7583848c4bbe38f9094c60998e16ca3e95cf399f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48554484781cca46ba96f8a075d18ea55ec3ef43
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643534"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398621"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>Dodawanie pamięci podręcznej platformy Azure dla Redis przy użyciu usług połączonych programu Visual Studio
 
@@ -43,7 +42,7 @@ Funkcja połączonej usługi dodaje wszystkie konieczne odwołania i kod połąc
 
 1. Otwórz projekt w programie Visual Studio.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
 
 1. Na karcie **połączone usługi** wybierz ikonę + dla **zależności usługi**.
 
@@ -55,7 +54,7 @@ Funkcja połączonej usługi dodaje wszystkie konieczne odwołania i kod połąc
 
     Zaloguj się do konta platformy Azure, jeśli jeszcze nie zalogowano się. Jeśli nie masz konta platformy Azure, możesz zarejestrować się, aby skorzystać z [bezpłatnej wersji próbnej](https://azure.microsoft.com/account/free).
 
-1. Na ekranie **Konfigurowanie usługi Azure cache for Redis** wybierz istniejącą pamięć podręczną platformy Azure dla Redis, a **następnie**wybierz przycisk Dalej.
+1. Na ekranie **Konfigurowanie usługi Azure cache for Redis** wybierz istniejącą pamięć podręczną platformy Azure dla Redis, a **następnie** wybierz przycisk Dalej.
 
     Jeśli musisz utworzyć nowy składnik, przejdź do następnego kroku. W przeciwnym razie przejdź do kroku 7.
 

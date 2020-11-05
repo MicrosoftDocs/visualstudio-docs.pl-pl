@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: f6946afa0138dc27a61f5665a9172c231392acc1
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 464460d6a33c01e5c53b66e8a03de7aa7f844953
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862240"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399654"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
@@ -50,7 +50,7 @@ Domyślne zachowanie `dotnet-toolinstall` narzędzia to błąd, zgodnie z `input
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Example that will install the dotnet-trace tool.",

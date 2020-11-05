@@ -1,5 +1,7 @@
 ---
 title: Wykonaj transformację XSLT
+description: Dowiedz się, jak za pomocą edytora XML skojarzyć arkusz stylów XSLT z dokumentem XML, przeprowadzić transformację XSLT i wyświetlić dane wyjściowe.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: how-to
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
@@ -8,20 +10,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e74beb2903cd133dfdd322ce4c297692eae3411
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1c7165f301c82dfaf5aa066a3e15bd7ab244089
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817193"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399485"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Instrukcje: wykonywanie transformacji XSLT z edytora XML
 
 Edytor XML umożliwia kojarzenie arkusza stylów XSLT z dokumentem XML, wykonywanie transformacji i wyświetlanie danych wyjściowych. Wynikowe wyniki transformacji XSLT są wyświetlane w nowym oknie dokumentu.
 
-Właściwość **Output** określa nazwę pliku dla danych wyjściowych. Jeśli właściwość **Output** jest pusta, nazwa pliku jest generowana w katalogu tymczasowym. Rozszerzenie pliku jest zależne od `xsl:output` elementu w arkuszu stylów i może być.* XML*,. *txt* lub. *htm*.
+Właściwość **Output** określa nazwę pliku dla danych wyjściowych. Jeśli właściwość **Output** jest pusta, nazwa pliku jest generowana w katalogu tymczasowym. Rozszerzenie pliku jest zależne od `xsl:output` elementu w arkuszu stylów i może być. *XML* ,. *txt* lub. *htm*.
 
-Jeśli właściwość **Output** określa nazwę pliku z. *htm* lub. rozszerzenie *HTML* , dane wyjściowe XSLT są przeglądane przy użyciu przeglądarki sieci Web. Wszystkie inne rozszerzenia plików są otwierane przy użyciu domyślnego edytora wybranego przez program Visual Studio. Na przykład, jeśli rozszerzenie pliku to. *XML*, program Visual Studio używa edytora XML.
+Jeśli właściwość **Output** określa nazwę pliku z. *htm* lub. rozszerzenie *HTML* , dane wyjściowe XSLT są przeglądane przy użyciu przeglądarki sieci Web. Wszystkie inne rozszerzenia plików są otwierane przy użyciu domyślnego edytora wybranego przez program Visual Studio. Na przykład, jeśli rozszerzenie pliku to. *XML* , program Visual Studio używa edytora XML.
 
 ## <a name="execute-an-xslt-transformation-from-an-xml-file"></a>Wykonaj transformację XSLT z pliku XML
 

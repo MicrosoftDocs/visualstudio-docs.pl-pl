@@ -3,18 +3,17 @@ title: Dodaj usługę Azure sygnalizacji przy użyciu usług połączonych | Mic
 description: Dodaj usługę Azure Signal do aplikacji przy użyciu programu Visual Studio, aby dodać podłączoną usługi
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 0e44416bd6a55796b62a7590856caab8466a6401
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c61d91ed3824d3ed9c33f579c321e471edb5a4e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643505"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398985"
 ---
 # <a name="add-azure-signalr-by-using-visual-studio-connected-services"></a>Dodawanie usługi Azure Signaler przy użyciu usług połączonych programu Visual Studio
 
@@ -43,7 +42,7 @@ Funkcja połączonej usługi dodaje wszystkie konieczne odwołania i kod połąc
 
 1. Otwórz projekt w programie Visual Studio.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
 
 1. Na karcie **połączone usługi** wybierz ikonę + dla **zależności usługi**.
 

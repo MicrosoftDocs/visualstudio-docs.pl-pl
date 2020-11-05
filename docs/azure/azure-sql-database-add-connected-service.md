@@ -3,18 +3,17 @@ title: Dodaj połączenie do Azure SQL Database | Microsoft Docs
 description: Dodawanie połączenia Azure SQL Database do aplikacji przy użyciu usług połączonych programu Visual Studio
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: e1594ea4239b4200bf72ec4a2ef2c558839ef95c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09ae5768e55ae3e08ec2549faeb7cefa70a5edd1
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643504"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399050"
 ---
 # <a name="add-a-connection-to-azure-sql-database"></a>Dodaj połączenie do Azure SQL Database
 
@@ -43,7 +42,7 @@ Funkcja połączonej usługi dodaje wszystkie konieczne odwołania i kod połąc
 
 1. Otwórz projekt w programie Visual Studio.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
 
 1. Na karcie **połączone usługi** wybierz ikonę + dla **zależności usługi**.
 

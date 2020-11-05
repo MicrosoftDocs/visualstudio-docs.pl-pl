@@ -1,5 +1,7 @@
 ---
 title: Integracja literałów XML z eksploratorem schematu XML
+description: Dowiedz się, jak korzystać z obsługi literałów XML w Eksploratorze schematu XML w programie Visual Studio, aby integrować fragmenty XML bezpośrednio z kodem Visual Basic.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 57a29998-c6e8-48ac-bdb0-5788e73f9164
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 576f403d92ae1c80d9c7fba1757278ae5c5f25ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 059263f06421fee3c90f2471df4c8b2c7bf8fc86
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592597"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398504"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Integracja literałów XML z Eksploratorem schematu XML
 
@@ -23,11 +25,11 @@ Visual Basic obsługuje literały XML, co oznacza, że można dołączyć fragme
 
 Jeśli plik XSD w projekcie Visual Basic zawiera literał XML, można wyświetlić zestaw schematu XML w **Eksploratorze schematu XML**. Aby wyświetlić zestaw schematu skojarzony z literałem XML, kliknij prawym przyciskiem myszy węzeł XML w literale XML lub Importuj przestrzeń nazw XML i wybierz **Pokaż w Eksploratorze schematu**.
 
-![Visual Basic literały XML; Eksplorator schematu XML](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer1.gif)
+![Zrzut ekranu przedstawiający okno projektu Visual Basic z menu kontekstowego nad węzłem XML z wyróżnionym zrzutem w oknie polecenia Eksploratora schematów.](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer1.gif)
 
 Spowoduje to otwarcie **Eksploratora schematu XML** obok pliku Visual Basic.
 
-![Visual Basic literały XML; Eksplorator schematu XML](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer2.gif)
+![Zrzut ekranu okna projektu Visual Basic, który pokazuje, że Eksplorator schematu XML i Eksplorator rozwiązań zostały otwarte w okienku po prawej stronie.](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer2.gif)
 
 ## <a name="see-also"></a>Zobacz też
 

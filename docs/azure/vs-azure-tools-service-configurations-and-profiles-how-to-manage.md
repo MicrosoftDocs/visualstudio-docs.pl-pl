@@ -4,17 +4,16 @@ description: Dowiedz się, jak korzystać z konfiguracji usługi i plików konfi
 author: ghogen
 manager: jillfra
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 55fc29117b1b01bd6c9b214d1db111af72127871
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42c4668b2bf9925fe92db51b6a4275c535960a61
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911684"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398881"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Jak zarządzać profilami i konfiguracjami usług
 ## <a name="overview"></a>Omówienie
@@ -86,7 +85,7 @@ Po pierwszym uruchomieniu kreatora zostanie utworzony profil domyślny. Program 
 2. Na liście **profil docelowy** wybierz pozycję **Zarządzaj**.
 3. W oknie dialogowym **Zarządzanie profilami** wybierz profil, który chcesz usunąć, a następnie wybierz pozycję **Usuń**.
 4. W wyświetlonym oknie dialogowym potwierdzenia wybierz pozycję **OK**.
-5. Wybierz pozycję **Zamknij**.
+5. Wybierz pozycję **Close** (Zamknij).
 
 ### <a name="to-change-a-profile"></a>Aby zmienić profil
 1. Otwórz menu skrótów dla projektu platformy Azure, a następnie wybierz pozycję **Publikuj**.

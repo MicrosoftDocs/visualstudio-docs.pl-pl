@@ -1,7 +1,7 @@
 ---
 title: Migrowanie i publikowanie aplikacji sieci Web w usłudze w chmurze
 description: Dowiedz się, jak przeprowadzić migrację i publikowanie aplikacji sieci Web w usłudze w chmurze platformy Azure przy użyciu programu Visual Studio
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: d5c2ae5e395f63d0c6c4fb6ac827c89daa7e3dc0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eb87aff7bf4ca1e3eac359b27a4280877eaefc50
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036538"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399822"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Instrukcje: Migrowanie i publikowanie aplikacji sieci Web w usłudze w chmurze platformy Azure z poziomu programu Visual Studio
 
@@ -43,7 +43,7 @@ Aby uzyskać więcej informacji o sposobie traktowania ostrzeżeń jako błędó
 
 ### <a name="test-the-migration-locally"></a>Testowanie migracji lokalnie
 
-1. W programie Visual Studio **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy dodany projekt usługi w chmurze i wybierz pozycję **Ustaw jako projekt startowy**.
+1. W programie Visual Studio **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy dodany projekt usługi w chmurze i wybierz pozycję **Ustaw jako projekt startowy**.
 1. Wybierz pozycję **debuguj > Rozpocznij debugowanie** (F5), aby uruchomić środowisko debugowania platformy Azure. Środowisko to zapewnia emulację różnych usług platformy Azure.
 
 ### <a name="use-an-azure-sql-database-for-your-application"></a>Użyj Azure SQL Database aplikacji
@@ -59,8 +59,8 @@ Jeśli masz parametry połączenia dla aplikacji sieci Web, która używa lokaln
 1. W programie Visual Studio kliknij prawym przyciskiem myszy projekt aplikacji i wybierz polecenie **Publikuj do Microsoft Azure...** (co różni się od "publikowanie..." polecenie.).
 1. W wyświetlonym obszarze **publikowanie aplikacji platformy Azure** Zaloguj się przy użyciu konta z subskrypcją platformy Azure i wybierz pozycję **dalej >**.
 1. Na karcie **ustawienia > wspólne ustawienia** wybierz docelową usługę w chmurze z listy rozwijanej **Usługa w chmurze** wraz z wybranym środowiskiem i konfiguracjami.
-1. W obszarze **ustawienia > ustawienia zaawansowane**wybierz konto magazynu, które ma być używane, a następnie wybierz pozycję **dalej >**.
-1. W obszarze **Diagnostyka**wybierz, czy chcesz wysyłać informacje do Application Insights.
+1. W obszarze **ustawienia > ustawienia zaawansowane** wybierz konto magazynu, które ma być używane, a następnie wybierz pozycję **dalej >**.
+1. W obszarze **Diagnostyka** wybierz, czy chcesz wysyłać informacje do Application Insights.
 1. Wybierz pozycję **dalej >** , aby wyświetlić podsumowanie, a następnie wybierz pozycję **Publikuj** , aby rozpocząć wdrażanie.
 1. Program Visual Studio otwiera okno dziennika aktywności, w którym można śledzić postęp:
 
@@ -109,14 +109,14 @@ Aplikacje, które mogą zostać zmigrowane i opublikowane w usługach w chmurze,
 
 | Grupa szablonów | Szablon projektu |
 | --- | --- |
-| Sieć Web | Aplikacja sieci Web ASP.NET (.NET Framework) |
-| Sieć Web | ASP.NET aplikacji sieci Web MVC 2 |
-| Sieć Web | Aplikacja sieci Web ASP.NET MVC 3 |
-| Sieć Web | Aplikacja sieci Web ASP.NET MVC4 |
-| Sieć Web | ASP.NET pustą aplikację sieci Web (lub lokację) |
-| Sieć Web | ASP.NETą pustą aplikację sieci Web MVC 2 |
-| Sieć Web | Aplikacja sieci Web ASP.NET dynamiczne jednostki danych |
-| Sieć Web | ASP.NET dynamiczne dane LINQ do aplikacji sieci Web SQL |
+| Internet | Aplikacja sieci Web ASP.NET (.NET Framework) |
+| Internet | ASP.NET aplikacji sieci Web MVC 2 |
+| Internet | Aplikacja sieci Web ASP.NET MVC 3 |
+| Internet | Aplikacja sieci Web ASP.NET MVC4 |
+| Internet | ASP.NET pustą aplikację sieci Web (lub lokację) |
+| Internet | ASP.NETą pustą aplikację sieci Web MVC 2 |
+| Internet | Aplikacja sieci Web ASP.NET dynamiczne jednostki danych |
+| Internet | ASP.NET dynamiczne dane LINQ do aplikacji sieci Web SQL |
 | WCF | Aplikacja usługi WCF |
 | WCF | Aplikacja usługi przepływu pracy WCF |
 | Przepływ pracy | Aplikacja usługi przepływu pracy WCF |

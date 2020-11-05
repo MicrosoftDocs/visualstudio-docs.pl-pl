@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1b5c3c478f275dac7512c4b3ada9871fe69b0f0e
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: 576f0055ab6443d991cbddaa51ca2767853bcf1e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959794"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399600"
 ---
 # <a name="require-mssql"></a>require-mssql
 
@@ -78,7 +78,7 @@ Domyślnym zachowaniem tego `require-mssql` narzędzia jest zainstalowanie progr
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Installs MSSQL.",

@@ -4,17 +4,16 @@ description: Dowiedz się, jak przeglądać zasoby platformy Azure w programie V
 author: ghogen
 manager: jillfra
 assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 175aa7111d77e92fb29a3983db7365e068abba2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12c82cca6c8873facc1a16a926d90fd0f3918c07
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800388"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399393"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Zarządzanie zasobami skojarzonymi z kontami platformy Azure w narzędziu Visual Studio Cloud Explorer
 
@@ -34,7 +33,7 @@ Podobnie jak [Azure Portal](https://portal.azure.com), Eksplorator chmury jest o
 
 Aby wyświetlić zasoby skojarzone z kontem platformy Azure, musisz najpierw dodać to konto do programu **Cloud Explorer**.
 
-1. W programie **Cloud Explorer**wybierz przycisk **Zarządzanie kontem** .
+1. W programie **Cloud Explorer** wybierz przycisk **Zarządzanie kontem** .
 
    ![Ikona ustawień konta platformy Azure w programie Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
@@ -54,13 +53,13 @@ Aby wyświetlić zasoby skojarzone z kontem platformy Azure, musisz najpierw dod
 
 ## <a name="remove-an-azure-account-from-cloud-explorer"></a>Usuwanie konta platformy Azure z poziomu programu Cloud Explorer
 
-1. W programie **Cloud Explorer**wybierz pozycję **Zarządzanie kontem**.
+1. W programie **Cloud Explorer** wybierz pozycję **Zarządzanie kontem**.
 
-   ![Ikona ustawień konta platformy Azure w programie Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
+   ![Ustawienia konta platformy Azure](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
 1. Obok konta, które chcesz usunąć, wybierz pozycję **Zarządzaj kontami**.
 
-   ![Ikona ustawień konta platformy Azure w programie Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/remove-account.png)
+   ![Usuń konto](./media/vs-azure-tools-resources-managing-with-cloud-explorer/remove-account.png)
 
 1. Wybierz pozycję **Usuń** , aby usunąć konto.
 
@@ -70,7 +69,7 @@ Aby wyświetlić zasoby skojarzone z kontem platformy Azure, musisz najpierw dod
 
 Aby wyświetlić zasoby platformy Azure, możesz wybrać opcję **typy zasobów** lub widok **grup zasobów** .
 
-1. W programie **Cloud Explorer**wybierz listę rozwijaną widok zasobów.
+1. W programie **Cloud Explorer** wybierz listę rozwijaną widok zasobów.
 
    ![Lista rozwijana programu Cloud Explorer, aby wybrać widok żądanych zasobów](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-view-dropdown.png)
 

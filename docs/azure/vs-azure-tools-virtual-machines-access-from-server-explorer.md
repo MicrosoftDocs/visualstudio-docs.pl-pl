@@ -4,17 +4,16 @@ description: Zapoznaj się z omówieniem tworzenia maszyn wirtualnych platformy 
 author: ghogen
 manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 8fd5d81e721bc2df7041d4cb724687e5ee540a7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9ca956400956ae337d8d1e0f5a881f1dc4c6377
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911659"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398556"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Uzyskiwanie dostępu do maszyn wirtualnych platformy Azure z poziomu Eksploratora serwera
 

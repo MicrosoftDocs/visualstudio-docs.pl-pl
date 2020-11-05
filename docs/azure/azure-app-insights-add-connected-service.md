@@ -3,18 +3,17 @@ title: Dodawanie Application Insights platformy Azure przy użyciu usług połą
 description: Dodawanie usługi Azure Application Insights do aplikacji przy użyciu programu Visual Studio
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: c15e7a14052efdab82388a950865557cb4425771
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d279de29664dcfc17ebd719fafc95d197a3352a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643546"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398673"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>Dodawanie Application Insights platformy Azure przy użyciu usług połączonych programu Visual Studio
 
@@ -43,7 +42,7 @@ Funkcja połączonej usługi dodaje wszystkie konieczne odwołania i kod połąc
 
 1. Otwórz projekt w programie Visual Studio.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
 
 1. Na karcie **połączone usługi** wybierz ikonę + dla **zależności usługi**.
 

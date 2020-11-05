@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f5a5545152b9bf262f652e2fce5ce04e7b71cb
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 04c725e5bcae5d72562e767a06afdee8aa84950b
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099430"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399256"
 ---
 # <a name="features-of-visual-studio"></a>Funkcje programu Visual Studio
 
@@ -82,7 +82,7 @@ Możesz użyć programu Visual Studio do tworzenia aplikacji i gier dla systemó
 
 - Używaj standardowych technologii sieci Web &mdash; HTML, CSS i JavaScript &mdash; do kompilowania aplikacji mobilnych dla systemów iOS, Android i Windows przy użyciu [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 
-- Twórz gry 2D i 3W w języku C# przy użyciu [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md).
+- Twórz gry 2D i 3W w języku C# przy użyciu [Visual Studio Tools for Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md).
 
 - Twórz natywne aplikacje C++ dla urządzeń z systemem iOS, Android i Windows. Udostępniaj wspólny kod w bibliotekach skompilowanych dla systemów iOS, Android i Windows przy użyciu [języka C++ do tworzenia aplikacji na wiele platform](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development).
 
@@ -90,7 +90,7 @@ Możesz użyć programu Visual Studio do tworzenia aplikacji i gier dla systemó
 
 ## <a name="connect-to-databases"></a>Łączenie z bazami danych
 
-**Eksplorator serwera** ułatwia przeglądanie SQL Server wystąpień i zasobów oraz zarządzanie nimi lokalnie, zdalnie i na platformie Azure, Salesforce.com, Microsoft 365 i witrynach sieci Web. Aby otworzyć **Eksplorator serwera**, w menu głównym wybierz polecenie **Wyświetl**  >  **Eksplorator serwera**. Aby uzyskać więcej informacji na temat korzystania z Eksplorator serwera, zobacz [Dodawanie nowych połączeń](../data-tools/add-new-connections.md).
+**Eksplorator serwera** ułatwia przeglądanie SQL Server wystąpień i zasobów oraz zarządzanie nimi lokalnie, zdalnie i na platformie Azure, Salesforce.com, Microsoft 365 i witrynach sieci Web. Aby otworzyć **Eksplorator serwera** , w menu głównym wybierz polecenie **Wyświetl**  >  **Eksplorator serwera**. Aby uzyskać więcej informacji na temat korzystania z Eksplorator serwera, zobacz [Dodawanie nowych połączeń](../data-tools/add-new-connections.md).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) to zaawansowane środowisko programistyczne dla SQL Server, Azure SQL Database i Azure SQL Data Warehouse. Umożliwia tworzenie, debugowanie, konserwację i refaktoryzację baz danych. Można korzystać z projektu bazy danych lub bezpośrednio z połączonym wystąpieniem bazy danych lub w środowisku lokalnym.
 
@@ -136,7 +136,7 @@ Znajdź [istniejące rozszerzenia](https://marketplace.visualstudio.com/vs) dla 
 
 Aby dowiedzieć się więcej na temat rozszerzania programu Visual Studio, zobacz [rozszerzanie środowiska IDE programu Visual Studio](https://visualstudio.microsoft.com/vs/extend/).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Środowisko IDE programu Visual Studio — omówienie](../get-started/visual-studio-ide.md)
 - [Co nowego w programie Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)

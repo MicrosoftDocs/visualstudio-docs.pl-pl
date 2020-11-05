@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e30db0eea924fcbc9587593266323d81c4ff1b40
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 3bdcf6caa52f19bc03559fb57d41fadb0ac56485
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006051"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399859"
 ---
 # <a name="choco-install"></a>choco-install
 
@@ -34,7 +34,7 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 
 ### <a name="input"></a>Dane wejściowe
 
-`input`Właściwość służy do określenia nazwy pakietu do zainstalowania (na przykład "MongoDB") lub ścieżki do pliku konfiguracji następujących formatów _packages.config_, _. nuspec_i _. nupkg_. Wartość `input` zostanie dołączona do `choco install` polecenia (na przykład `choco install mongodb` ) wraz z dowolnymi argumentami określonymi w [`additionalOptions`](#additional-options) i wbudowane `choco` Opcje (zdefiniowane [poniżej](#built-in-options)). Pakiety można znaleźć w [Galerii pakietów czekolady](https://chocolatey.org/packages). Przy użyciu pliku konfiguracji można przekazać ścieżkę do tego pliku we `input` właściwości, na przykład `"input":"packages.config"` .
+`input`Właściwość służy do określenia nazwy pakietu do zainstalowania (na przykład "MongoDB") lub ścieżki do pliku konfiguracji następujących formatów _packages.config_ , _. nuspec_ i _. nupkg_. Wartość `input` zostanie dołączona do `choco install` polecenia (na przykład `choco install mongodb` ) wraz z dowolnymi argumentami określonymi w [`additionalOptions`](#additional-options) i wbudowane `choco` Opcje (zdefiniowane [poniżej](#built-in-options)). Pakiety można znaleźć w [Galerii pakietów czekolady](https://chocolatey.org/packages). Przy użyciu pliku konfiguracji można przekazać ścieżkę do tego pliku we `input` właściwości, na przykład `"input":"packages.config"` .
 
 ### <a name="additional-options"></a>Opcje dodatkowe
 
@@ -54,7 +54,7 @@ Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOp
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Example that will trigger the Default behavior of installing packages listed in a packages.config file.",

@@ -1,5 +1,7 @@
 ---
 title: 'Instrukcje: Tworzenie fragmentów kodu XML'
+description: Dowiedz się, jak używać edytora XML w programie Visual Studio do tworzenia fragmentów kodu XML, które umożliwiają szybsze Kompilowanie plików XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b86962221dcdeff59b1152baf7b7cddcc55293e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d935f479e3133db8fb5340359d6a354058a3020a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815399"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400033"
 ---
 # <a name="how-to-create-xml-snippets"></a>Instrukcje: Tworzenie fragmentów kodu XML
 
@@ -39,7 +41,7 @@ Aby utworzyć nowy fragment kodu XML, Utwórz nowy plik XML i użyj funkcji **Ws
 
 7. Wprowadź nazwę nowego fragmentu kodu i wybierz pozycję **pliki fragmentów** z listy rozwijanej **Zapisz jako typ** .
 
-8. Użyj listy rozwijanej **Zapisz w** , aby zmienić lokalizację pliku do folderu *My Documents\Visual Studio 2005 \ Code Snippets\XML\My XML wstaweks* , a następnie naciśnij przycisk **Save (Zapisz**).
+8. Użyj listy rozwijanej **Zapisz w** , aby zmienić lokalizację pliku do folderu *My Documents\Visual Studio 2005 \ Code Snippets\XML\My XML wstaweks* , a następnie naciśnij przycisk **Save (Zapisz** ).
 
 ## <a name="snippet-description"></a>Opis fragmentu kodu
 

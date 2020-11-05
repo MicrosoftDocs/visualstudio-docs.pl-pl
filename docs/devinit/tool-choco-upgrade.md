@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 5a735b60fd318d86e97dc4db7570e952a0fcdfd8
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 39d30b08e4ca3ba3a3e355fdf123f3a05055c358
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006037"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399668"
 ---
 # <a name="choco-upgrade"></a>choco-upgrade
 
@@ -34,7 +34,7 @@ Jeśli obie `input` właściwości i `additionalOptions` zostaną pominięte lub
 
 ### <a name="input"></a>Dane wejściowe
 
-`input`Właściwość służy do określenia nazwy pakietu do uaktualnienia (na przykład "MongoDB") lub ścieżki do pliku konfiguracji następujących formatów _packages.config_, _. nuspec_i _. nupkg_. Wartość `input` zostanie dołączona do `choco upgrade` polecenia (na przykład `choco upgrade mongodb` ) wraz z dowolnymi argumentami określonymi w [`additionalOptions`](#additional-options) i wbudowane `choco` Opcje (zdefiniowane [poniżej](#built-in-options)). Pakiety można znaleźć w [Galerii pakietów czekolady](https://chocolatey.org/packages). Przy użyciu pliku konfiguracji można przekazać ścieżkę do tego pliku we `input` właściwości na przykład: `"input":"packages.config"` .
+`input`Właściwość służy do określenia nazwy pakietu do uaktualnienia (na przykład "MongoDB") lub ścieżki do pliku konfiguracji następujących formatów _packages.config_ , _. nuspec_ i _. nupkg_. Wartość `input` zostanie dołączona do `choco upgrade` polecenia (na przykład `choco upgrade mongodb` ) wraz z dowolnymi argumentami określonymi w [`additionalOptions`](#additional-options) i wbudowane `choco` Opcje (zdefiniowane [poniżej](#built-in-options)). Pakiety można znaleźć w [Galerii pakietów czekolady](https://chocolatey.org/packages). Przy użyciu pliku konfiguracji można przekazać ścieżkę do tego pliku we `input` właściwości na przykład: `"input":"packages.config"` .
 
 ### <a name="additional-options"></a>Opcje dodatkowe
 
@@ -54,7 +54,7 @@ Dodatkowe opcje konfiguracji mogą być przesyłane jako wartość `additionalOp
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Example that will trigger the Default behavior of upgrading packages listed in a packages.config file.",

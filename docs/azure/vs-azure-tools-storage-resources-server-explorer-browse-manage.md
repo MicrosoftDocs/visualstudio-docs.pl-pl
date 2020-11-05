@@ -1,7 +1,7 @@
 ---
 title: Przeglądanie zasobów magazynu i zarządzanie nimi
 description: Przeglądanie zasobów magazynu i zarządzanie nimi za pomocą Eksplorator serwera
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 059145dbce95ade9f628f26afe4f70e1d6a065e9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ab8373a24d296052b7ecfc7fcae6c85c14c74a1d
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036447"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398868"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Przeglądanie zasobów magazynu i zarządzanie nimi za pomocą Eksploratora serwera
 
@@ -34,7 +34,7 @@ Eksplorator serwera automatycznie pokazuje listę obiektów blob, kolejek i tabe
 
 Aby wyświetlić zasoby konta emulatora magazynu, rozwiń węzeł **programowanie** . Jeśli emulator magazynu nie został uruchomiony po rozwinięciu węzła **deweloperskiego** , zostanie automatycznie uruchomiony. Ten proces może potrwać kilka sekund. Podczas uruchamiania emulatora magazynu można nadal korzystać z innych obszarów programu Visual Studio.
 
-Aby wyświetlić zasoby na koncie magazynu, rozwiń węzeł konta magazynu w Eksplorator serwera, w którym znajdują się węzły **obiektów BLOB**, **kolejek**i **tabel** .
+Aby wyświetlić zasoby na koncie magazynu, rozwiń węzeł konta magazynu w Eksplorator serwera, w którym znajdują się węzły **obiektów BLOB** , **kolejek** i **tabel** .
 
 ## <a name="work-with-blob-resources"></a>Korzystanie z zasobów obiektów BLOB
 
@@ -94,7 +94,7 @@ Ponieważ foldery w kontenerach obiektów BLOB są folderami wirtualnymi, nie mo
 
 Można filtrować obiekty blob, które są wyświetlane przez określenie wspólnego prefiksu.
 
-Jeśli na przykład wprowadzisz polecenie **Hello** w polu tekstowym filtr, a następnie wybierzesz przycisk **Execute** (**!**), zostaną wyświetlone tylko obiekty blob zaczynające się od "Hello".
+Jeśli na przykład wprowadzisz polecenie **Hello** w polu tekstowym filtr, a następnie wybierzesz przycisk **Execute** ( **!** ), zostaną wyświetlone tylko obiekty blob zaczynające się od "Hello".
 
 ![Pole tekstowe filtru](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -102,7 +102,7 @@ W polu tekstowym filtr jest rozróżniana wielkość liter i nie jest obsługiwa
 
 ### <a name="to-download-blob-data"></a>Aby pobrać dane obiektów BLOB
 
-W programie **Cloud Explorer**Użyj dowolnej z następujących metod:
+W programie **Cloud Explorer** Użyj dowolnej z następujących metod:
 
 * Otwórz menu skrótów dla co najmniej jednego obiektu BLOB, a następnie wybierz polecenie **Otwórz**.
 * Wybierz nazwę obiektu BLOB, a następnie wybierz przycisk **Otwórz** .
@@ -166,12 +166,12 @@ Usługa Azure Table Storage służy do przechowywania dużych ilości danych str
 
 ### <a name="to-create-a-table"></a>Aby utworzyć tabelę
 
-1. W programie **Cloud Explorer**wybierz węzeł **tabele** konta magazynu, a następnie wybierz pozycję **Utwórz tabelę**.
+1. W programie **Cloud Explorer** wybierz węzeł **tabele** konta magazynu, a następnie wybierz pozycję **Utwórz tabelę**.
 1. W oknie dialogowym **Tworzenie tabeli** wprowadź nazwę tabeli.
 
 ### <a name="to-view-table-data"></a>Aby wyświetlić dane tabeli
 
-1. W programie **Cloud Explorer**Otwórz węzeł **Azure** , a następnie otwórz węzeł **Magazyn** .
+1. W programie **Cloud Explorer** Otwórz węzeł **Azure** , a następnie otwórz węzeł **Magazyn** .
 1. Otwórz węzeł konta magazynu, który Cię interesuje, a następnie otwórz węzeł **tabele** , aby wyświetlić listę tabel dla konta magazynu.
 1. Otwórz menu skrótów dla tabeli, a następnie wybierz polecenie **Wyświetl tabelę**.
 
@@ -181,7 +181,7 @@ Tabela jest zorganizowana według jednostek (pokazanych w wierszach) i właściw
 
 ### <a name="to-edit-table-data"></a>Aby edytować dane tabeli
 
-W **Projektancie tabel**, otwórz menu skrótów dla jednostki (pojedynczy wiersz) lub właściwość (pojedyncza komórka), a następnie wybierz pozycję **Edytuj**.
+W **Projektancie tabel** , otwórz menu skrótów dla jednostki (pojedynczy wiersz) lub właściwość (pojedyncza komórka), a następnie wybierz pozycję **Edytuj**.
 
 ![Dodawanie lub edytowanie jednostki tabeli](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
@@ -194,7 +194,7 @@ Jednostki w pojedynczej tabeli nie muszą mieć tego samego zestawu właściwoś
 
 ### <a name="to-add-entities"></a>Aby dodać jednostki
 
-1. W **Projektancie tabel**wybierz przycisk **Dodaj jednostkę** .
+1. W **Projektancie tabel** wybierz przycisk **Dodaj jednostkę** .
 
     ![Przycisk Dodaj jednostkę](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
@@ -229,17 +229,17 @@ Gdy Eksplorator serwera nawiązuje połączenie lub pobiera dane z konta magazyn
 
 ### <a name="to-refresh-blob-container-data"></a>Aby odświeżyć dane kontenera obiektów BLOB
 
-* Wybierz węzeł **obiekty blob** pod **magazynem**, a następnie wybierz przycisk **Odśwież** na pasku narzędzi Eksplorator serwera.
+* Wybierz węzeł **obiekty blob** pod **magazynem** , a następnie wybierz przycisk **Odśwież** na pasku narzędzi Eksplorator serwera.
 * Aby odświeżyć listę obiektów blob, które są wyświetlane, wybierz przycisk **Execute (wykonaj** ).
 
 ### <a name="to-refresh-table-data"></a>Aby odświeżyć dane tabeli
 
-* Wybierz węzeł **tabele** pod **magazynem**, a następnie wybierz przycisk **Odśwież** na pasku narzędzi Eksplorator serwera.
-* Aby odświeżyć listę jednostek, które są wyświetlane w **Projektancie tabel**, wybierz przycisk **Execute (wykonaj** ) w Projektancie tabel.
+* Wybierz węzeł **tabele** pod **magazynem** , a następnie wybierz przycisk **Odśwież** na pasku narzędzi Eksplorator serwera.
+* Aby odświeżyć listę jednostek, które są wyświetlane w **Projektancie tabel** , wybierz przycisk **Execute (wykonaj** ) w Projektancie tabel.
 
 ### <a name="to-refresh-queue-data"></a>Aby odświeżyć dane kolejki
 
-Wybierz węzeł **kolejki** pod **magazynem**, a następnie wybierz przycisk **Odśwież** na pasku narzędzi Eksplorator serwera.
+Wybierz węzeł **kolejki** pod **magazynem** , a następnie wybierz przycisk **Odśwież** na pasku narzędzi Eksplorator serwera.
 
 ### <a name="to-refresh-all-items-in-a-storage-account"></a>Aby odświeżyć wszystkie elementy na koncie magazynu
 
@@ -262,7 +262,7 @@ Istnieją dwa sposoby dodawania kont magazynu za pomocą Eksplorator serwera. Mo
 
    ![Tworzenie konta usługi Azure Storage](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. Wybierz pozycję **Utwórz**.
+1. Wybierz przycisk **Utwórz**.
 
 Nowe konto magazynu zostanie wyświetlone na liście **Magazyn** w Eksplorator rozwiązań.
 

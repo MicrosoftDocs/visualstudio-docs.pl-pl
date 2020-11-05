@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3374e0763a0189fb16db35b5b9ec6ec6908d9f4f
-ms.sourcegitcommit: 417ea66a8b07ec102ece2fa00e07b88edc404c00
+ms.openlocfilehash: 6bb4656dd04db576877cfdddf67869eb6d1eff35
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91106276"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399953"
 ---
 # <a name="available-tools"></a>Dostępne narzędzia
 
@@ -29,7 +29,8 @@ Poniższa tabela zawiera listę wszystkich dostępnych narzędzi dla devinit.
 | [**choco-upgrade**](tool-choco-upgrade.md)                                                       | Narzędzie do uaktualniania pakietów czekolady.                                                                       |
 | [**dotnet-restore**](tool-dotnet-restore.md)                                                     | Narzędzie do przywracania zależności i narzędzi projektu .NET.                                               |
 | [**dotnet-toolinstall**](tool-dotnet-toolinstall.md)                                             | Narzędzie do instalowania narzędzi platformy .NET Core (na przykład. dotnet-EF)                                                |
-| [**Enable — IIS**](tool-enable-iis.md)                                                             | Narzędzie do włączania funkcji usług IIS i instalowania najnowszego pakietu hostingu ASP.NET.                                  |
+| [**enable-iis**](tool-enable-iis.md)                                                             | Narzędzie do włączania funkcji usług IIS i instalowania najnowszego pakietu hostingu ASP.NET.                                  |
+| [**MSI-instalacja**](tool-msi-install.md)                                                           | Narzędzie do instalowania plików MSI przy użyciu ścieżki lub adresu URL.                                                              |
 | [**npm-install**](tool-npm-install.md)                                                           | Narzędzie do instalowania pakietów NPM.                                                                               |
 | [**nuget-restore**](tool-nuget-restore.md)                                                       | Narzędzie do przywracania pakietów NuGet.                                                                         |
 | [**require-azureartifactscredentialprovider**](tool-require-azureartifactscredentialprovider.md) | Instaluje dostawcę poświadczeń Azure Artifacts.                                                           |
@@ -44,7 +45,7 @@ Poniższa tabela zawiera listę wszystkich dostępnych narzędzi dla devinit.
 | [**require-vscomponent**](tool-require-vscomponent.md)                                           | Narzędzie do modyfikowania instalacji programu VS w oparciu o `.vsconfig` plik.                                                |
 | [**windowsfeature-enable**](tool-windowsfeature-enable.md)                                       | Zestaw narzędzi Włącz funkcje systemu Windows.                                                                           |
 | [**windowsfeature-disable**](tool-windowsfeature-disable.md)                                     | Zestaw narzędzi wyłącz funkcje systemu Windows.                                                                          |
-| [**WindowsFeature — lista**](tool-windowsfeature-list.md)                                           | Narzędzie do wyświetlania stanu Włącz/Wyłącz dla wszystkich funkcji systemu Windows.                                                                        |
+| [**windowsfeature-list**](tool-windowsfeature-list.md)                                           | Narzędzie do wyświetlania stanu Włącz/Wyłącz dla wszystkich funkcji systemu Windows.                                                                        |
 | [**set-env**](tool-set-env.md)                                                                   | Narzędzie do wyświetlania i ustawiania zmiennych środowiskowych.                                                                 |
 | [**vcpkg-install**](tool-vcpkg-install.md)                                                       | Narzędzie do instalowania pakietów za pośrednictwem vcpkg.                                                                         |
 | [**wsl-install**](tool-wsl-install.md)                                                           | Narzędzie do instalowania i konfigurowania dystrybucje systemu Linux dla podsystemu Window dla systemu Linux.                             |

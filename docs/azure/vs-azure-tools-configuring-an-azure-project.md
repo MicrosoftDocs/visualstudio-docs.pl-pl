@@ -4,17 +4,16 @@ description: Dowiedz się, jak skonfigurować projekt usługi w chmurze platform
 author: ghogen
 manager: jillfra
 assetId: 609d6965-05cc-47b1-82dc-c76a92d4f295
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: 7f207afc600402924969e4d2eee6df229c3d6f09
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 388cd20468624c6441342267f6545dfaf0e21901
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426723"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399149"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Konfigurowanie projektu usługi w chmurze platformy Azure przy użyciu programu Visual Studio
 Możesz skonfigurować projekt usługi w chmurze platformy Azure, w zależności od wymagań dla tego projektu. Można ustawić właściwości projektu dla następujących kategorii:
@@ -26,7 +25,7 @@ Możesz skonfigurować projekt usługi w chmurze platformy Azure, w zależności
 ## <a name="steps-to-configure-an-azure-cloud-service-project"></a>Procedura konfigurowania projektu usługi w chmurze platformy Azure
 1. Otwieranie lub tworzenie projektu usługi w chmurze w programie Visual Studio
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie z menu kontekstowego wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt, a następnie z menu kontekstowego wybierz polecenie **Właściwości**.
 
 1. Na stronie właściwości projektu wybierz kartę **programowanie** .
 

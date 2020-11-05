@@ -4,17 +4,16 @@ description: Zapoznaj się z procedurami konfigurowania usług w chmurze i konta
 author: ghogen
 manager: jillfra
 ms.assetid: 92ee2f9e-ec49-4c7a-900d-620abe5e9d8a
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 5cd458cca0a0b387ce816f2e7f5dde8153e08410
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a09b8f5c6efacab0f02a445ed78f8a3769031fa0
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280807"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399011"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Przygotowywanie do publikowania lub wdrażania usługi w chmurze z programu Visual Studio
 
@@ -38,7 +37,7 @@ Usługa w chmurze uruchamia Twoje role w środowisku platformy Azure. Usługę w
 
 1. Zaloguj się w witrynie [Azure Portal](https://portal.azure.com/).
 1. Wybierz pozycję **Cloud Services (klasyczny)** w lewej części strony.
-1. Wybierz pozycję **+ Dodaj**, a następnie podaj wymagane informacje (nazwa DNS, subskrypcja, Grupa zasobów i lokalizacja). Nie jest konieczne przekazywanie pakietu w tym momencie, ponieważ w dalszej części programu Visual Studio.
+1. Wybierz pozycję **+ Dodaj** , a następnie podaj wymagane informacje (nazwa DNS, subskrypcja, Grupa zasobów i lokalizacja). Nie jest konieczne przekazywanie pakietu w tym momencie, ponieważ w dalszej części programu Visual Studio.
 1. Wybierz pozycję **Utwórz** , aby ukończyć proces.
 
 ## <a name="create-a-storage-account"></a>Tworzenie konta magazynu
@@ -47,9 +46,9 @@ Konto magazynu zapewnia dostęp do usług obiektów blob, kolejek i tabel. Konto
 
 ### <a name="create-a-storage-account-from-visual-studio"></a>Tworzenie konta magazynu z poziomu programu Visual Studio
 
-1. W **Eksplorator rozwiązań** z wcześniej utworzonym projektem usługi w chmurze zlokalizuj węzeł **usługi połączone** w ramach projektu roli, kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj podłączoną usługę**. (W programie Visual Studio 2015 kliknij prawym przyciskiem myszy węzeł **Magazyn** , a następnie wybierz pozycję **Utwórz konto magazynu**).
+1. W **Eksplorator rozwiązań** z wcześniej utworzonym projektem usługi w chmurze zlokalizuj węzeł **usługi połączone** w ramach projektu roli, kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj podłączoną usługę**. (W programie Visual Studio 2015 kliknij prawym przyciskiem myszy węzeł **Magazyn** , a następnie wybierz pozycję **Utwórz konto magazynu** ).
 1. Na wyświetlonej liście **usługi połączone** wybierz pozycję **Magazyn w chmurze z usługą Azure Storage**.
-1. W wyświetlonym oknie dialogowym usługi Azure Storage wybierz pozycję **+ Utwórz nowe konto magazynu**, co spowoduje wyświetlenie okna dialogowego, w którym można określić subskrypcję, nazwę konta, warstwę cenową, grupę zasobów i lokalizację.
+1. W wyświetlonym oknie dialogowym usługi Azure Storage wybierz pozycję **+ Utwórz nowe konto magazynu** , co spowoduje wyświetlenie okna dialogowego, w którym można określić subskrypcję, nazwę konta, warstwę cenową, grupę zasobów i lokalizację.
 1. Po zakończeniu wybierz pozycję **Utwórz** . Nowe konto magazynu zostanie wyświetlone na liście dostępnych kont magazynu w ramach subskrypcji.
 1. Wybierz to konto i wybierz pozycję **Dodaj**.
 
@@ -65,11 +64,11 @@ Konto magazynu zapewnia dostęp do usług obiektów blob, kolejek i tabel. Konto
 
 Po utworzeniu konta magazynu połączenie z nim w programie Visual Studio automatycznie aktualizuje konfiguracje usługi dla projektu, w tym adresy URL i klucze dostępu.
 
-Jeśli utworzono usługę w chmurze z poziomu programu Visual Studio przy użyciu opcji **Dodaj podłączoną usługę**, możesz sprawdzić połączenia, otwierając `ServiceConfiguration.Cloud.cscfg` i `ServiceConfiguration.Local.cscfg` .
+Jeśli utworzono usługę w chmurze z poziomu programu Visual Studio przy użyciu opcji **Dodaj podłączoną usługę** , możesz sprawdzić połączenia, otwierając `ServiceConfiguration.Cloud.cscfg` i `ServiceConfiguration.Local.cscfg` .
 
 Jeśli usługa w chmurze została utworzona za pośrednictwem Azure Portal, wykonaj te same czynności w temacie [Tworzenie konta magazynu w programie Visual Studio](#create-a-storage-account-from-visual-studio) , ale zamiast tworzenia nowego konta wybierz istniejące konto. Program Visual Studio następnie aktualizuje konfigurację.
 
-Aby skonfigurować ustawienia ręcznie, użyj stron właściwości w programie Visual Studio, aby uzyskać odpowiednią rolę w projekcie usługi w chmurze (kliknij prawym przyciskiem myszy rolę i wybierz polecenie **Właściwości**). Aby uzyskać więcej informacji, zobacz [Konfigurowanie parametrów połączenia na koncie magazynu](vs-azure-tools-multiple-services-project-configurations.md#configuring-a-connection-string-for-a-storage-account).
+Aby skonfigurować ustawienia ręcznie, użyj stron właściwości w programie Visual Studio, aby uzyskać odpowiednią rolę w projekcie usługi w chmurze (kliknij prawym przyciskiem myszy rolę i wybierz polecenie **Właściwości** ). Aby uzyskać więcej informacji, zobacz [Konfigurowanie parametrów połączenia na koncie magazynu](vs-azure-tools-multiple-services-project-configurations.md#configuring-a-connection-string-for-a-storage-account).
 
 ### <a name="about-access-keys"></a>Informacje o kluczach dostępu
 

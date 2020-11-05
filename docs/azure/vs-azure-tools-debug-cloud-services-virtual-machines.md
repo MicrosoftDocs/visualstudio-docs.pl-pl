@@ -5,17 +5,16 @@ author: mikejo5000
 manager: jillfra
 ms.assetid: 945e06e0-2100-41af-b218-72347367ddab
 ms.topic: how-to
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 00b6d001a8764d3519f0584de88a55a000447054
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: cd55ebd9171a7f9cd2157194da8876f47aa22ece
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508486"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398699"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debugowanie usługi w chmurze lub maszyny wirtualnej platformy Azure w programie Visual Studio
 
@@ -49,7 +48,7 @@ Aby debugować usługę chmurową z komputera zdalnego, należy włączyć tę f
 Włączenie debugowania zdalnego dla usługi w chmurze nie powoduje obniżenia wydajności ani ponoszenia dodatkowych opłat. Nie używaj debugowania zdalnego w usłudze produkcyjnej, ponieważ może to mieć negatywny wpływ na klientów korzystających z usługi.
 
 > [!NOTE]
-> Po opublikowaniu usługi w chmurze w programie Visual Studio można włączyć **IntelliTrace** dla wszystkich ról w tej usłudze, które są przeznaczone dla .NET Framework 4 lub .NET Framework 4,5. Za pomocą **IntelliTrace**można testować zdarzenia, które wystąpiły w wystąpieniu roli w przeszłości, i odtworzyć kontekst od tego czasu. Zobacz [debugowanie opublikowanej usługi w chmurze za pomocą IntelliTrace i programu Visual Studio](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) oraz [Korzystanie z IntelliTrace](../debugger/intellitrace.md).
+> Po opublikowaniu usługi w chmurze w programie Visual Studio można włączyć **IntelliTrace** dla wszystkich ról w tej usłudze, które są przeznaczone dla .NET Framework 4 lub .NET Framework 4,5. Za pomocą **IntelliTrace** można testować zdarzenia, które wystąpiły w wystąpieniu roli w przeszłości, i odtworzyć kontekst od tego czasu. Zobacz [debugowanie opublikowanej usługi w chmurze za pomocą IntelliTrace i programu Visual Studio](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) oraz [Korzystanie z IntelliTrace](../debugger/intellitrace.md).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>Aby włączyć debugowanie zdalne dla usługi w chmurze
 
@@ -79,7 +78,7 @@ Włączenie debugowania zdalnego dla usługi w chmurze nie powoduje obniżenia w
 
     ![Okno dialogowe Wybieranie typu kodu](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. Aby zidentyfikować procesy, do których jest dołączony debuger, na pasku menu wybierz kolejno opcje **Debuguj**  >  **procesy systemu Windows**  >  **Processes**i Otwórz okno dialogowe **procesy** . (Klawiatura: Ctrl + Alt + Z) Aby odłączyć określony proces, otwórz jego menu skrótów, a następnie wybierz polecenie **Odłącz proces**. Lub zlokalizuj węzeł wystąpienia w Eksplorator serwera, Znajdź proces, otwórz jego menu skrótów, a następnie wybierz polecenie **Odłącz proces**.
+4. Aby zidentyfikować procesy, do których jest dołączony debuger, na pasku menu wybierz kolejno opcje **Debuguj**  >  **procesy systemu Windows**  >  **Processes** i Otwórz okno dialogowe **procesy** . (Klawiatura: Ctrl + Alt + Z) Aby odłączyć określony proces, otwórz jego menu skrótów, a następnie wybierz polecenie **Odłącz proces**. Lub zlokalizuj węzeł wystąpienia w Eksplorator serwera, Znajdź proces, otwórz jego menu skrótów, a następnie wybierz polecenie **Odłącz proces**.
 
     ![Debugowanie procesów](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
@@ -167,11 +166,11 @@ Projekty programu Visual Studio ASP.NET oferują opcję tworzenia przydatnej mas
 
     ![Dziennik aktywności platformy Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. Opublikuj projekt zgodnie z opisem w temacie [jak: wdrażanie projektu sieci Web za pomocą jednego kliknięcia przycisku Publikuj w programie Visual Studio](/previous-versions/aspnet/dd465337(v=vs.110)). Ponieważ chcesz debugować maszynę wirtualną, na stronie **Ustawienia** kreatora **publikacji w sieci Web** wybierz opcję **Debuguj** jako konfigurację. Daje to pewność, że symbole kodu są dostępne podczas debugowania.
+6. Opublikuj projekt zgodnie z opisem w temacie [jak: wdrażanie projektu sieci Web przy użyciu One-Click publikowanie w programie Visual Studio](/previous-versions/aspnet/dd465337(v=vs.110)). Ponieważ chcesz debugować maszynę wirtualną, na stronie **Ustawienia** kreatora **publikacji w sieci Web** wybierz opcję **Debuguj** jako konfigurację. Daje to pewność, że symbole kodu są dostępne podczas debugowania.
 
     ![Ustawienia publikowania](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
-7. W **opcjach publikowania plików**wybierz opcję **Usuń dodatkowe pliki w miejscu docelowym** , jeśli projekt został już wdrożony wcześniej.
+7. W **opcjach publikowania plików** wybierz opcję **Usuń dodatkowe pliki w miejscu docelowym** , jeśli projekt został już wdrożony wcześniej.
 
 8. Po opublikowaniu projektu w menu kontekstowym maszyny wirtualnej w Eksplorator serwera wybierz pozycję **Dołącz debuger...**
 

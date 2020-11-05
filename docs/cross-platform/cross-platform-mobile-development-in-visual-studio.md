@@ -12,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b200538f7d6bee55d12a79334811c8ba57515a
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: b50edfe91a9b497760c44d3fd548eb6d2a15a049
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959838"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399380"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Programowanie aplikacji mobilnych na wiele platform w programie Visual Studio
 
@@ -152,7 +152,7 @@ Za pomocą Visual Studio Tools dla platformy Xamarin można docelowo dla system�
 
 ## <a name="build-a-cross-platform-game-for-android-ios-and-windows-by-using-visual-studio-tools-for-unity"></a>Tworzenie wieloplatformowej gry dla systemów Android, iOS i Windows przy użyciu narzędzi Visual Studio Tools for Unity
 
- Visual Studio Tools for Unity to bezpłatne rozszerzenie programu Visual Studio, które integruje zaawansowane narzędzia do edycji kodu, produktywności i debugowania w programie Visual Studio za pomocą *aparatu Unity*, popularne aparaty do gier/grafiki dla wielu platform oraz środowisko programistyczne dla aplikacji w sieci Web przeznaczonych dla systemu Windows, iOS, Android i innych platform, w tym dla Internetu.
+ Visual Studio Tools for Unity to bezpłatne rozszerzenie programu Visual Studio, które integruje zaawansowane narzędzia do edycji kodu, produktywności i debugowania w programie Visual Studio za pomocą *aparatu Unity* , popularne aparaty do gier/grafiki dla wielu platform oraz środowisko programistyczne dla aplikacji w sieci Web przeznaczonych dla systemu Windows, iOS, Android i innych platform, w tym dla Internetu.
 
  ![Środowisko deweloperskie rozszerzenia VSTU](../cross-platform/media/vstu_overview.png "Przegląd Visual Studio Tools for Unity")
 
@@ -161,8 +161,8 @@ Za pomocą Visual Studio Tools dla platformy Xamarin można docelowo dla system�
 |**Dowiedz się więcej**|
 |--------------------|
 |[Dowiedz się więcej o tworzeniu gier Unity w programie Visual Studio](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
-|[Przeczytaj więcej na temat Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) |
-|[Zacznij korzystać z Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
+|[Przeczytaj więcej na temat Visual Studio Tools for Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md) |
+|[Zacznij korzystać z Visual Studio Tools for Unity](/gamedev/unity/get-started/getting-started-with-visual-studio-tools-for-unity.md) |
 |Zapoznaj się z [najnowszymi ulepszeniami w wersji Zapoznawczej Visual Studio Tools for Unity 2,0](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (blog programu Visual Studio)|
 |[Obejrzyj film wideo z wprowadzeniem do wersji Zapoznawczej Visual Studio Tools for Unity 2,0](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408&preserve-view=true) (wideo)|
 |[Dowiedz się więcej na temat aparatu Unity](https://unity.com/) (witryna sieci Web Unity)|

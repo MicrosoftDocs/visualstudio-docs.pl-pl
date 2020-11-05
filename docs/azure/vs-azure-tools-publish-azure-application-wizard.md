@@ -4,17 +4,16 @@ description: Dowiedz się, jak skonfigurować różne ustawienia w Kreatorze pub
 author: ghogen
 manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 477b7860c320730d6362cdb7e0fcb46ad3bc7d17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 281547356dcb8910af9426a853ceeb7e757b195d
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280534"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399459"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Korzystanie z kreatora publikacji aplikacji platformy Azure programu Visual Studio
 
@@ -31,15 +30,15 @@ Dostęp do Kreatora publikowania aplikacji platformy Azure można uzyskać na dw
 
 1. Utwórz lub Otwórz projekt usługi w chmurze platformy Azure w programie Visual Studio.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie z menu kontekstowego wybierz pozycję **Publikuj**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt, a następnie z menu kontekstowego wybierz pozycję **Publikuj**.
 
 **Jeśli masz projekt aplikacji sieci Web, który nie jest włączony dla platformy Azure:**
 
 1. Utwórz lub Otwórz projekt usługi w chmurze platformy Azure w programie Visual Studio.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie z menu kontekstowego wybierz polecenie **Konwertuj**  >  **Konwertuj na projekt usługi w chmurze platformy Azure**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt, a następnie z menu kontekstowego wybierz polecenie **Konwertuj**  >  **Konwertuj na projekt usługi w chmurze platformy Azure**.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy nowo utworzony projekt platformy Azure, a następnie z menu kontekstowego wybierz pozycję **Publikuj**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy nowo utworzony projekt platformy Azure, a następnie z menu kontekstowego wybierz pozycję **Publikuj**.
 
 ## <a name="sign-in-page"></a>Strona logowania
 
@@ -53,7 +52,7 @@ Dostęp do Kreatora publikowania aplikacji platformy Azure można uzyskać na dw
 
 ![Typowe ustawienia](./media/vs-azure-tools-publish-azure-application-wizard/settings-common-settings.png)
 
-**Usługa w chmurze** — Użyj listy rozwijanej, wybierz istniejącą usługę w chmurze lub wybierz pozycję ** &lt; Utwórz nową>** i Utwórz usługę w chmurze. Centrum danych wyświetla w nawiasach dla każdej usługi w chmurze. Zaleca się, aby lokalizacja centrum danych dla usługi w chmurze była taka sama jak lokalizacja centrum danych dla konta magazynu (Ustawienia zaawansowane).
+**Usługa w chmurze** — Użyj listy rozwijanej, wybierz istniejącą usługę w chmurze lub wybierz pozycję **&lt; Utwórz nową>** i Utwórz usługę w chmurze. Centrum danych wyświetla w nawiasach dla każdej usługi w chmurze. Zaleca się, aby lokalizacja centrum danych dla usługi w chmurze była taka sama jak lokalizacja centrum danych dla konta magazynu (Ustawienia zaawansowane).
 
 **Środowisko** — wybierz opcję **produkcyjne** lub **przejściowe**. Wybierz środowisko przejściowe, jeśli chcesz wdrożyć aplikację w środowisku testowym.
 
@@ -79,7 +78,7 @@ Konto usługi Azure Storage przechowuje pakiet dla wdrożenia aplikacji. Po wdro
 
 **Aktualizacja wdrożenia** — wybierz tę opcję, jeśli chcesz wdrożyć tylko zaktualizowane składniki. Ten typ wdrożenia może być szybszy niż w przypadku pełnego wdrożenia. Należy to sprawdzić, jeśli chcesz zachować stały wirtualny adres IP dla usługi w chmurze.
 
-**Aktualizacja wdrożenia-ustawienia** — to okno dialogowe służy do dokładniejszego określania, w jaki sposób mają być aktualizowane role. W przypadku wybrania **aktualizacji przyrostowych**każde wystąpienie aplikacji jest aktualizowane jeden po drugim, dzięki czemu aplikacja będzie zawsze dostępna. W przypadku wybrania opcji **równoczesne aktualizowanie**wszystkie wystąpienia aplikacji są aktualizowane w tym samym czasie. Jednoczesne aktualizowanie jest szybsze, ale usługa może być niedostępna w trakcie procesu aktualizacji.
+**Aktualizacja wdrożenia-ustawienia** — to okno dialogowe służy do dokładniejszego określania, w jaki sposób mają być aktualizowane role. W przypadku wybrania **aktualizacji przyrostowych** każde wystąpienie aplikacji jest aktualizowane jeden po drugim, dzięki czemu aplikacja będzie zawsze dostępna. W przypadku wybrania opcji **równoczesne aktualizowanie** wszystkie wystąpienia aplikacji są aktualizowane w tym samym czasie. Jednoczesne aktualizowanie jest szybsze, ale usługa może być niedostępna w trakcie procesu aktualizacji.
 
 ![Ustawienia wdrożenia](./media/vs-azure-tools-publish-azure-application-wizard/deployment-settings.png)
 
@@ -97,9 +96,9 @@ Diagnostyka umożliwia rozwiązywanie problemów z usługą w chmurze platformy 
 
 ## <a name="summary-page"></a>Strona podsumowania
 
-![Podsumowanie](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
+![Strona podsumowania](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**Profil docelowy** — możesz wybrać opcję utworzenia profilu publikowania na podstawie ustawień, które zostały wybrane. Na przykład można utworzyć jeden profil dla środowiska testowego i drugi dla produkcji. Aby zapisać ten profil, wybierz ikonę **Zapisz** . Kreator utworzy profil i zapisze go w projekcie programu Visual Studio. Aby zmodyfikować nazwę profilu, Otwórz listę **profil docelowy** , a następnie wybierz pozycję ** &lt; Zarządzaj &gt; .**
+**Profil docelowy** — możesz wybrać opcję utworzenia profilu publikowania na podstawie ustawień, które zostały wybrane. Na przykład można utworzyć jeden profil dla środowiska testowego i drugi dla produkcji. Aby zapisać ten profil, wybierz ikonę **Zapisz** . Kreator utworzy profil i zapisze go w projekcie programu Visual Studio. Aby zmodyfikować nazwę profilu, Otwórz listę **profil docelowy** , a następnie wybierz pozycję **&lt; Zarządzaj &gt; .**
 
    > [!Note]
    > Profil publikowania zostanie wyświetlony w Eksplorator rozwiązań w programie Visual Studio, a ustawienia profilu są zapisywane w pliku z rozszerzeniem. azurePubxml. Ustawienia są zapisywane jako atrybuty tagów XML.

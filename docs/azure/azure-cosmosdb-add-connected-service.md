@@ -3,18 +3,17 @@ title: Dodawanie usługi Azure CosmosDB za pomocą usług połączonych | Micros
 description: Dodaj obsługę usługi Azure CosmosDB do aplikacji przy użyciu programu Visual Studio, aby dodać podłączoną usługę
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2d23081f541fbc12581450c60c6eb4b09f20c64a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bdf07824c7a06a692a81a93eaa5a0fd0536705d
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643528"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398374"
 ---
 # <a name="add-azure-cosmos-db-to-your-app-by-using-visual-studio-connected-services"></a>Dodawanie Azure Cosmos DB do aplikacji przy użyciu usług połączonych programu Visual Studio
 
@@ -43,7 +42,7 @@ Funkcja połączonej usługi dodaje wszystkie konieczne odwołania i kod połąc
 
 1. Otwórz projekt w programie Visual Studio.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
 
 1. Na karcie **połączone usługi** wybierz ikonę + dla **zależności usługi**.
 

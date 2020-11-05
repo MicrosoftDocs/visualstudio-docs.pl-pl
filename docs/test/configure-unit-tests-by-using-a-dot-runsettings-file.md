@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8998a9e761716b28bd2815120e350b98804a6395
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 6361b6b3d85c970d74a624c82d052054ab66e44a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928674"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400105"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *. runsettings*
 
@@ -24,7 +24,7 @@ Pliki parametrów uruchomieniowych są opcjonalne. Jeśli nie jest wymagana żad
 
 ## <a name="create-a-run-settings-file-and-customize-it"></a>Utwórz plik parametrów uruchomieniowych i dostosuj go
 
-1. Dodaj plik parametrów uruchomieniowych do rozwiązania. W **Eksplorator rozwiązań**w menu skrótów rozwiązania wybierz pozycję **Dodaj**  >  **nowy element**i wybierz pozycję **plik XML**. Zapisz plik z nazwą, taką jak *test. runsettings*.
+1. Dodaj plik parametrów uruchomieniowych do rozwiązania. W **Eksplorator rozwiązań** w menu skrótów rozwiązania wybierz pozycję **Dodaj**  >  **nowy element** i wybierz pozycję **plik XML**. Zapisz plik z nazwą, taką jak *test. runsettings*.
 
    > [!TIP]
    > Nazwa pliku nie ma znaczenia, o ile używasz rozszerzenia *runsettings*.
@@ -61,7 +61,7 @@ Jeśli chcesz wyłączyć ustawienia niestandardowe i włączyć je w IDE, usuń
 Dostępne metody zależą od używanej wersji programu Visual Studio.
 
 ::: moniker range="vs-2017"
-Aby określić plik parametrów uruchomieniowych w środowisku IDE **, wybierz pozycję Testuj** > **Ustawienia testu** > **Wybierz plik ustawień testu**, a następnie wybierz plik *. runsettings* .
+Aby określić plik parametrów uruchomieniowych w środowisku IDE **, wybierz pozycję Testuj** > **Ustawienia testu** > **Wybierz plik ustawień testu** , a następnie wybierz plik *. runsettings* .
 
 ![Wybieranie menu plik ustawień testu w programie Visual Studio 2017](media/select-test-settings-file.png)
 
@@ -94,7 +94,7 @@ Jeśli jest włączone Autowykrywanie plików uruchomieniowych, ustawienia w tym
 
 #### <a name="manually-select-the-run-settings-file"></a>Ręcznie wybierz plik parametrów uruchomieniowych
 
-W środowisku IDE wybierz kolejno opcje **Testuj** > **Skonfiguruj Parametry uruchomieniowe** > **Wybierz pozycję plik Wide runsettings**, a następnie wybierz plik *. runsettings* .
+W środowisku IDE wybierz kolejno opcje **Testuj** > **Skonfiguruj Parametry uruchomieniowe** > **Wybierz pozycję plik Wide runsettings** , a następnie wybierz plik *. runsettings* .
 
    - Ten plik przesłania plik *. runsettings* w katalogu głównym rozwiązania, jeśli istnieje, i jest stosowany do wszystkich przebiegów testów.
    - Ten wybór pliku będzie trwały tylko lokalnie.
@@ -131,7 +131,7 @@ Plik jest wyświetlany w menu test i można go zaznaczyć lub usunąć jego zazn
 
 ## <a name="specify-a-run-settings-file-from-the-command-line"></a>Określ plik parametrów uruchomieniowych z wiersza polecenia
 
-Aby uruchomić testy z wiersza polecenia, użyj *vstest.console.exe*i określ plik ustawień przy użyciu parametru **/Settings** .
+Aby uruchomić testy z wiersza polecenia, użyj *vstest.console.exe* i określ plik ustawień przy użyciu parametru **/Settings** .
 
 1. Otwórz [wiersz polecenia dla deweloperów](/dotnet/framework/tools/developer-command-prompt-for-vs) dla programu Visual Studio.
 
@@ -172,6 +172,7 @@ Każdy element konfiguracji jest opcjonalny, ponieważ ma wartość domyślną.
     <TargetFrameworkVersion>Framework40</TargetFrameworkVersion>
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
     <TestSessionTimeout>10000</TestSessionTimeout>
+    <TreatNoTestsAsError>true</TreatNoTestsAsError>
 </RunConfiguration>
 ```
 
@@ -186,7 +187,8 @@ Element **RunConfiguration** może zawierać następujące elementy:
 |**TreatTestAdapterErrorsAsWarnings**|fałsz|fałsz, prawda|
 |**TestAdaptersPaths**||Co najmniej jedna ścieżka do katalogu, w którym znajduje się TestAdapters|
 |**TestSessionTimeout**||Umożliwia użytkownikom zakończenie sesji testowej, gdy przekroczy określony limit czasu. Ustawienie limitu czasu zapewnia, że zasoby są dobrze zużywane, a sesje testowe są ograniczone do określonego czasu. To ustawienie jest dostępne w programie **Visual Studio 2017 w wersji 15,5** lub nowszej.|
-|**DotnetHostPath**||Określ ścieżkę niestandardową do hosta dotnet, który jest używany do uruchamiania testhost. Jest to przydatne podczas tworzenia własnego dotnet, na przykład podczas kompilowania repozytorium dotnet/Runtime. Określenie tej opcji spowoduje pominięcie wyszukiwania testhost.exe i zawsze będzie korzystać z testhost.dll.
+|**DotnetHostPath**||Określ ścieżkę niestandardową do hosta dotnet, który jest używany do uruchamiania testhost. Jest to przydatne podczas tworzenia własnego dotnet, na przykład podczas kompilowania repozytorium dotnet/Runtime. Określenie tej opcji spowoduje pominięcie wyszukiwania testhost.exe i zawsze będzie korzystać z testhost.dll.|
+|**TreatNoTestsAsError**|fałsz| true lub false <br>Określ wartość logiczną, która definiuje kod zakończenia, gdy nie zostaną wykryte żadne testy. Jeśli wartość jest `true` i żadne testy nie są odnajdywane, zwracany jest niezerowy kod zakończenia. W przeciwnym razie zwracana jest wartość zero.|
 
 ## <a name="datacollectors-element-diagnostic-data-adapters"></a>Elementy datacollects (adaptery danych diagnostycznych)
 
@@ -231,7 +233,7 @@ Aby dostosować każdy inny typ adapterów danych diagnostycznych, należy uży�
 
 ### <a name="blame-data-collector"></a>Moduł zbierający dane polecenia Blame
 
-Ta opcja może pomóc wyizolować problematyczny test, który powoduje awarię hosta testowego. Uruchomienie modułu zbierającego tworzy plik wyjściowy (*Sequence.xml*) w *TestResults*, który przechwytuje kolejność wykonywania testu przed awarią.
+Ta opcja może pomóc wyizolować problematyczny test, który powoduje awarię hosta testowego. Uruchomienie modułu zbierającego tworzy plik wyjściowy ( *Sequence.xml* ) w *TestResults* , który przechwytuje kolejność wykonywania testu przed awarią.
 
 ```xml
 <DataCollector friendlyName="blame" enabled="True">
@@ -304,13 +306,13 @@ Te ustawienia są specyficzne dla adaptera testowego, który uruchamia metody te
 </MSTest>
 ```
 
-|Konfiguracja|Domyślne|Wartości|
+|Konfigurowanie|Domyślne|Wartości|
 |-|-|-|
 |**ForcedLegacyMode**|fałsz|W programie Visual Studio 2012 karta MSTest została zoptymalizowana tak, aby była szybsza i bardziej skalowalna. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość na **true** , aby użyć starszego adaptera testowego.<br /><br />Można na przykład użyć tego ustawienia, jeśli istnieje plik *app.config* określony dla testu jednostkowego.<br /><br />Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|
 |**IgnoreTestImpact**|fałsz|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w MSTest lub z Microsoft Test Manager (przestarzałe w programie Visual Studio 2017). To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz, [które testy należy uruchomić od poprzedniej kompilacji](/previous-versions/dd286589(v=vs.140)).|
 |**SettingsFile**||W tym miejscu możesz określić plik ustawień testu, który ma być używany z kartą MSTest. Możesz również określić plik ustawień testu [w menu Ustawienia](#specify-a-run-settings-file-in-the-ide).<br /><br />Jeśli określisz tę wartość, musisz także ustawić **ForcedlegacyMode** na **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|fałsz|Po zakończeniu przebiegu testu MSTest jest zamykany. Każdy proces, który jest uruchamiany jako część testu, również zostanie zamknięty. Jeśli chcesz zatrzymać program wykonujący testy, ustaw wartość na **true**. Można na przykład użyć tego ustawienia, aby zachować działanie przeglądarki między kodowanymi testami interfejsu użytkownika.|
-|**DeploymentEnabled**|true|W przypadku ustawienia wartości **false**elementy wdrożenia określone w metodzie testowej nie są kopiowane do katalogu wdrożenia.|
+|**DeploymentEnabled**|true|W przypadku ustawienia wartości **false** elementy wdrożenia określone w metodzie testowej nie są kopiowane do katalogu wdrożenia.|
 |**CaptureTraceOutput**|true|Możesz pisać do śledzenia debugowania z metody testowej przy użyciu <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType> .|
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Aby zachować katalog wdrożenia po przebiegu testu, należy ustawić tę wartość na **false**.|
 |**MapInconclusiveToFailed**|fałsz|Jeśli test zakończy się nieniejednoznacznie, jest mapowany do stanu pominięty w **Eksploratorze testów**. Jeśli chcesz, aby testy niejednoznaczne były wyświetlane jako nieudane, ustaw wartość na **true**.|
@@ -345,6 +347,10 @@ Każdy element pliku jest opcjonalny, ponieważ ma wartość domyślną.
     <!-- TestSessionTimeout was introduced in Visual Studio 2017 version 15.5 -->
     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
     <TestSessionTimeout>10000</TestSessionTimeout>
+
+    <!-- true or false -->
+    <!-- Value that specifies the exit code when no tests are discovered -->
+    <TreatNoTestsAsError>true</TreatNoTestsAsError>
   </RunConfiguration>
 
   <!-- Configurations for data collectors -->

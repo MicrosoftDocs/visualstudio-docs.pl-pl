@@ -1,5 +1,7 @@
 ---
 title: 'Przykładowy plik XSD: Schemat zamówienia zakupu'
+description: Wyświetl przykładowy plik XSD dla schematu zamówienia zakupu, który jest używany w różnych przykładach w dokumentacji projektanta schematu XSD.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d841b75b58dc977b5141dce0b8c7275e4a3ced8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f5a9d8d87af3f7d9e8583a1bc21c008d1a8571f
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592571"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398790"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>Przykładowy plik XSD: schemat zamówienia zakupu
 

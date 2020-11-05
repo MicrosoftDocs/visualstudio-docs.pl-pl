@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f8b7dc9a388699cc9e323085769d17a00ba4fa6a
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 52eee3535590842db53cd80ac761286fb4a23fa9
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467638"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398998"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio i usług platformy Azure za zaporą lub serwerem proxy
 
 Jeśli ty lub Twoja organizacja korzysta z środków zabezpieczeń, takich jak zapora lub serwer proxy, istnieją adresy URL domeny, które można dodać do listy "Lista dozwolonych" oraz portów i protokołów, które mogą być otwierane, aby zapewnić najlepsze środowisko podczas instalowania i używania usług Visual Studio i Azure.
 
-* **[Zainstaluj program Visual Studio](#install-visual-studio)**: te tabele zawierają adresy URL domeny, które mają zostać dodane do listy dozwolonych, dzięki czemu masz dostęp do wszystkich składników i obciążeń, które chcesz.
+* **[Zainstaluj program Visual Studio](#install-visual-studio)** : te tabele zawierają adresy URL domeny, które mają zostać dodane do listy dozwolonych, dzięki czemu masz dostęp do wszystkich składników i obciążeń, które chcesz.
 
-* **[Użyj programu Visual Studio i usług platformy Azure](#use-visual-studio-and-azure-services)**: Ta tabela zawiera adresy URL domeny, które mają zostać dodane do listy dozwolonych, oraz porty i protokoły do otwarcia, aby mieć dostęp do wszystkich żądanych funkcji i usług.
+* **[Użyj programu Visual Studio i usług platformy Azure](#use-visual-studio-and-azure-services)** : Ta tabela zawiera adresy URL domeny, które mają zostać dodane do listy dozwolonych, oraz porty i protokoły do otwarcia, aby mieć dostęp do wszystkich żądanych funkcji i usług.
 
 > [!NOTE]
 > Ten artykuł został zapisany dla programu Visual Studio w systemie Windows, ale pewne informacje dotyczą również [instalowania Visual Studio dla komputerów Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) za zaporą lub serwerem proxy.
@@ -43,7 +43,7 @@ Ponieważ Instalator programu Visual Studio pobiera pliki z różnych domen i ic
 
 #### <a name="microsoft-domains"></a>Domeny firmy Microsoft
 
-| Obszar | Przeznaczenie |
+| Domena | Przeznaczenie |
 | - | - |
 | go.microsoft.com | Rozwiązywanie problemów z adresem URL |
 | aka.ms | Rozwiązywanie problemów z adresem URL |
@@ -65,7 +65,7 @@ Ponieważ Instalator programu Visual Studio pobiera pliki z różnych domen i ic
 
 #### <a name="non-microsoft-domains"></a>Domeny inne niż firmy Microsoft
 
-| Obszar | Instaluje te obciążenia |
+| Domena | Instaluje te obciążenia |
 | - | - |
 | archive.apache.org | Programowanie aplikacji mobilnych za pomocą języka JavaScript (Cordova) |
 | cocos2d-x.org | Programowanie gier za pomocą języka C++ (Wyspy Kokosowe) |
@@ -81,6 +81,7 @@ Ponieważ Instalator programu Visual Studio pobiera pliki z różnych domen i ic
 | developer.apple.com | Inicjowanie obsługi platformy Xamarin. iOS |
 | appstoreconnect.apple.com | Inicjowanie obsługi platformy Xamarin. iOS |
 | idmsa.apple.com | Inicjowanie obsługi platformy Xamarin. iOS |
+| akamized.net | Content Delivery Network (technologie Akamai) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Korzystanie z programu Visual Studio i usług platformy Azure
@@ -94,7 +95,7 @@ Aby mieć pewność, że masz dostęp do wszystkiego, czego potrzebujesz, gdy ko
 | Adres URL<br>rozwiązanie | go.microsoft.com<br><br>aka.ms | | Służy do skracania adresów URL, które następnie są rozpoznawane jako dłuższe adresy URL |
 | Strona początkowa | vsstartpage.blob.core.windows.net | 443 | Służy do wyświetlania wiadomości dla deweloperów wyświetlanych na stronie startowej (tylko w programie Visual Studio 2017) |
 | Docelowe<br> Powiadomienie <br>Usługa | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | 443<br><br>443 | Służy do filtrowania globalnej listy powiadomień do listy, która ma zastosowanie tylko do określonych typów maszyn/scenariuszy użycia |
-| Wewnętrzny <br>sprawdzenie aktualizacji | marketplace.visualstudio.com<br><br>&#42;. windows.net <br>&#42;. microsoftonline.com <br>&#42;. live.com | 443 | Służy do dostarczania powiadomień, gdy dostępne jest aktualizacje z zainstalowanym rozszerzeniem <br><br> Używane jako lokalizacja logowania |
+| Rozszerzenie <br>sprawdzenie aktualizacji | marketplace.visualstudio.com<br><br>&#42;. windows.net <br>&#42;. microsoftonline.com <br>&#42;. live.com | 443 | Służy do dostarczania powiadomień, gdy dostępne jest aktualizacje z zainstalowanym rozszerzeniem <br><br> Używane jako lokalizacja logowania |
 | Projekt AI <br>Integracja | az861674.vo.msecnd.net | 443<br> | Służy do konfigurowania nowych projektów w celu wysyłania danych użycia do zarejestrowanego konta Application Insights |
 | Soczewki kodu | codelensprodscus1su0. app.<br>codelens.visualstudio.com | 443 | Służy do przekazywania informacji w edytorze o momencie ostatniej aktualizacji pliku, osi czasu zmian, elementów roboczych, do których te zmiany są skojarzone, autorów itd. |
 | Eksperymentalne <br>Włączanie funkcji | visualstudio-devdiv-c2s.msedge.net | 80 | Służy do uaktywniania eksperymentalnych nowych funkcji lub zmian funkcji |
@@ -118,7 +119,7 @@ Aby mieć pewność, że masz dostęp do wszystkiego, czego potrzebujesz, gdy ko
 | Zaktualizowano narzędzia do publikacji w sieci Web <br>sprawdzenia i rozszerzenie <br>zalecenia | marketplace.visualstudio.com | https/443 | Służy do sprawdzania dostępności zaktualizowanych narzędzi publikacji. Jeśli ta wartość jest wyłączona, możliwe jest, że zalecane rozszerzenie publikacji w sieci Web nie może być wyświetlane |
 | Zaktualizowano zasób platformy Azure <br>Informacje o punkcie końcowym tworzenia | \*.blob.core.windows.net | https/443 | Służy do aktualizowania punktów końcowych używanych do tworzenia zasobów platformy Azure dla niektórych usług platformy Azure. Jeśli ta wartość jest wyłączona, zamiast tego są używane ostatnio pobierane lub wbudowane lokalizacje punktów końcowych |
 | Debugowanie zdalne i <br>Zdalne profilowanie <br>Azure Websites | &#42;. cloudapp.net <br> &#42;. azurewebsites.net | 4022 | Służy do dołączania zdalnego debugera do usługi Azure Websites. Po wyłączeniu dołączenie zdalnego debugera do usługi Azure Websites nie będzie działało |
-| Usługa Active Directory <br>Graph | graph.windows.net | https/443 | Używane do aprowizacji nowych aplikacji Azure Active Directory. Używany także przez Microsoft 365 MSGraph-Connected Service Provider |
+| Active Directory <br>Graph | graph.windows.net | https/443 | Używane do aprowizacji nowych aplikacji Azure Active Directory. Używany także przez Microsoft 365 MSGraph-Connected Service Provider |
 | Azure Functions <br>Aktualizacja interfejsu wiersza polecenia <br>Zaznacz | functionscdn.azureedge.net | https/443 | Służy do sprawdzania dostępności zaktualizowanych wersji interfejsu wiersza polecenia Azure Functions. Jeśli ta wartość jest wyłączona, zamiast tego zostanie użyty buforowana kopia (lub kopia wykonywana przez składnik Azure Functions) interfejsu wiersza polecenia |
 | Cordova | npmjs.org<br>gradle.org | & http/80<br/>https/443 | Protokół HTTP jest używany do pobierania Gradle podczas kompilacji; Protokół HTTPS jest używany do dołączania wtyczek Cordova do projektów |
 | Eksplorator chmury | 1. &#60;clusterendpoint&#62; <br>Service Fabric <br>2. &#60;punkt końcowy zarządzania&#62;<br>Ogólna usługa wydatków w chmurze <br>3. &#60;punkt końcowy programu Graph&#62;<br>Ogólna usługa wydatków w chmurze<br>4. &#60;punktu końcowego konta magazynu&#62;<br>Węzły magazynu <br>5. &#60;adresy URL Azure Portal&#62;<br>Ogólna usługa wydatków w chmurze <br>6. &#60;punkty końcowe magazynu kluczy&#62; <br>Azure Resource Manager węzły maszyny wirtualnej<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Service Fabric debugowanie zdalne i śledzenie ETW | <br>1. https/19080<br>2. https/443<br>3. https/443<br>4. https/443<br>5. https/443<br>6. https/443<br>7. TCP/dynamiczny | 1. przykład: test12.eastus.cloudapp.com<br>2. pobiera subskrypcje i pobiera/zarządza zasobami platformy Azure<br>3. pobiera Azure Stack subskrypcje<br>4. zarządza zasobami magazynu (przykład: mystorageaccount.blob.core.windows.net)<br>5. opcja menu kontekstowego "Otwórz w portalu" (otwiera zasób w Azure Portal)<br>6. tworzy i używa magazynów kluczy na potrzeby debugowania maszyn wirtualnych (przykład: myvault.vault.azure.net) <br><br>7. dynamicznie przydziela blok portów na podstawie liczby węzłów w klastrze i dostępnych portów. <br><br>Blok portu spróbuje uzyskać trzykrotnie liczbę węzłów z co najmniej 10 portami.<br><br>W przypadku śladów przesyłania strumieniowego jest podejmowana próba pobrania bloku portu z 810. Jeśli którykolwiek z tych bloków portu jest już używany, podejmowana jest próba pobrania następnego bloku i tak dalej. (Moduł równoważenia obciążenia jest pusty, a następnie porty z 810 są najprawdopodobniej używane) <br><br>Podobnie w przypadku debugowania są zarezerwowane cztery zestawy bloków portów: <br>-connectorPort: 30398, <br>-forwarderPort: 31398, <br>-forwarderPortx86:31399,<br>-fileUploadPort: 32398<br> |
@@ -130,15 +131,15 @@ Aby mieć pewność, że masz dostęp do wszystkiego, czego potrzebujesz, gdy ko
 | Usługa tworzenia pakietów | [Account]. VisualStudio. com <br/> [konto]. \* . visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https/443 | Klasy \* . npmjs.org, \* . NuGet.org i \* . NodeJS.org są wymagane tylko w przypadku niektórych scenariuszy zadań kompilacji (na przykład: Instalatora narzędzia NuGet, Instalatora narzędzia węzła) lub jeśli zamierzasz używać publicznego przesyłania strumieniowego ze źródłami danych. Pozostałe trzy domeny są wymagane do podstawowej funkcjonalności usługi pakowania. |
 | Usługa Azure DevOps Services | \*. vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | Używane do nawiązywania połączenia z Azure DevOps Services |
 | Azure Service Bus | \*.servicebus.windows.net | ampq/5671 i 5672, </br> sbmp/9350-9354, </br> http/80, </br> https/443 | Służy do tworzenia kolejek, tematów i subskrypcji. </br> Służy również do wysyłania i odbierania komunikatów do/z Service Busch kolejek i tematów. |
-| Usługa Azure Cosmos DB | \*. documents.azure.com | https/443 | Służy do wywoływania podstawowych interfejsów API bazy danych dokumentów. |
+| Azure Cosmos DB | \*. documents.azure.com | https/443 | Służy do wywoływania podstawowych interfejsów API bazy danych dokumentów. |
 | Społeczność deweloperów | sendvsfeedback2.azurewebsites.net/api | https/443 | Służy do wywoływania interfejsów API narzędzia do oceny społeczności deweloperów (moje problemy, wyszukiwanie, głosowanie, komentarz, przesyłanie, przekazywanie, wznawianie) |
 | Rozszerzenia intellicode | \*. intellicode.vsengsaas.visualstudio.com | https/443 | Używane do wywoływania interfejsów API rozszerzenia intellicode |
 | Live Share | \*. liveshare.vsengsaas.visualstudio.com| https/443 | Używane do wywoływania Live Share interfejsów API |
-| Codespaces GitHub | \*. online.visualstudio.com | https/443 | Używane do wywoływania interfejsów API usługi GitHub Codespaces |
+| GitHub Codespaces | \*. online.visualstudio.com | https/443 | Używane do wywoływania interfejsów API usługi GitHub Codespaces |
 | Automatyczne pobieranie typu JavaScript | registry.npmjs.org | https/443 | Służy do instalowania definicji typów TypeScript w celu zapewnienia funkcji IntelliSense dla popularnych bibliotek JavaScript |
 | Usługa licencjonowania subskrypcji programu Visual Studio | app.vssps.visualstudio.com/apis/<br/>Licencjonowanie/ClientRights | https/443 | Licencjonowanie aktywacji w trybie online |
 | Debuger | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>OneCore. msvsmon. \* .. kodu<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>Służy do pobierania BITS debugera dla debugowania .NET Core w systemie UNIX/macOS za pośrednictwem protokołu SSH <br><br>2. <br>Służy do pobierania BITS debugera dla zdalnego debugowania kontenerów platformy Docker systemu Windows<br><br> 3. używane do wykonywania kroków źródłowych programu .NET Framework <br><br> 4. <br>(Jeśli założenia użytkownika) Służy do pobierania symboli publikowanych na serwerze symboli nuget.org.<br><br> 5. (Jeśli użytkownik zdecyduje się na) służący do pobierania symboli i plików binarnych firmy Microsoft, może być również wymagany do debugowania kodu zarządzanego w zrzutach |
-| Codespaces GitHub| \*. online.visualstudio.com | https/443 | Używane do wywoływania interfejsów API usługi GitHub Codespaces |
+| GitHub Codespaces| \*. online.visualstudio.com | https/443 | Używane do wywoływania interfejsów API usługi GitHub Codespaces |
 | Publikowanie aplikacji platformy Xamarin dla systemu Android | \*. googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Służy do współpracy z usługą Sklep Google Play do publikowania/przekazywania aplikacji platformy Xamarin Android bezpośrednio z programu Visual Studio. |
 | Azure Container Registry | *. azurecr.io | https/443 | Dostęp do rejestrów kontenerów hostowanych na platformie Azure w celu skonfigurowania potoków CICD |
 | | | | |

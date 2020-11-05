@@ -4,17 +4,16 @@ description: Dowiedz się, jak uzyskać dostęp do zasobów chmury prywatnej za 
 author: ghogen
 manager: jillfra
 assetId: 9d733c8d-703b-44e7-a210-bb75874c45c8
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: 6c1b46e34c688f232ee1f774ff2d19fdad7ff6bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 136c7f4f497c21de24e34c4c426707de94151ddf
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280391"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398738"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>Uzyskiwanie dostępu do prywatnych chmur platformy Azure za pomocą programu Visual Studio
 
@@ -22,7 +21,7 @@ Domyślnie program Visual Studio obsługuje punkty końcowe REST usługi Azure C
 
 1. W Azure Portal chmury prywatnej Pobierz plik Publish-Settings lub skontaktuj się z administratorem w celu uzyskania pliku ustawień publikowania. (Plik ma rozszerzenie `.publishsettings` ).
 
-1. W programie Visual Studio **Eksplorator serwera**kliknij prawym przyciskiem myszy węzeł **platformy Azure** , a następnie wybierz pozycję **Zarządzaj i Filtruj subskrypcje**.
+1. W programie Visual Studio **Eksplorator serwera** kliknij prawym przyciskiem myszy węzeł **platformy Azure** , a następnie wybierz pozycję **Zarządzaj i Filtruj subskrypcje**.
 
     ![Polecenie zarządzania subskrypcjami](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790778.png)
 

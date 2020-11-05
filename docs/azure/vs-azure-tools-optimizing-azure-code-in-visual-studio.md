@@ -5,16 +5,15 @@ author: ghogen
 manager: jillfra
 ms.assetid: ed48ee06-e2d2-4322-af22-07200fb16987
 ms.topic: conceptual
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 3ee226aac0d705da29333260966781d5b9b627ed
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 853b51fb5990d74a79f76cc55743ff9ba50f282e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508460"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399782"
 ---
 # <a name="optimizing-your-azure-code"></a>Optymalizacja kodu platformy Azure
 Podczas programowania aplikacji korzystających z Microsoft Azure, istnieją pewne wskazówki dotyczące kodowania, które należy wykonać, aby zapobiec problemom z skalowalnością, zachowaniem i wydajnością aplikacji w środowisku chmury. Firma Microsoft udostępnia Narzędzie analizy kodu platformy Azure, które rozpoznaje i identyfikuje kilka często spotykanych problemów oraz ułatwia ich rozwiązywanie. Narzędzie można pobrać w programie Visual Studio za pośrednictwem programu NuGet.
@@ -23,7 +22,7 @@ Podczas programowania aplikacji korzystających z Microsoft Azure, istnieją pew
 Narzędzie Azure Code Analysis używa następujących reguł, aby automatycznie oflagować kod platformy Azure w przypadku znalezienia znanych problemów z wydajnością. Wykryte problemy są wyświetlane w postaci ostrzeżeń lub błędów kompilatora. Poprawki kodu lub sugestie dotyczące rozpoznawania ostrzeżeń lub błędów często są udostępniane za pomocą ikony żarówki.
 
 ## <a name="avoid-using-default-in-process-session-state-mode"></a>Unikaj używania domyślnego trybu stanu sesji (w procesie)
-### <a name="id"></a>ID
+### <a name="id"></a>ID (Identyfikator)
 AP0000
 
 ### <a name="description"></a>Opis
@@ -40,7 +39,7 @@ Stan sesji ASP.NET obsługuje kilka różnych opcji magazynu dla danych stanu se
 Jednym z zalecanych rozwiązań jest przechowywanie stanu sesji na zarządzanej pamięci podręcznej. Dowiedz się, jak przechowywać stan sesji [przy użyciu dostawcy stanu sesji platformy Azure dla usługi Redis](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/) . Możesz również przechowywać stan sesji w innych miejscach, aby upewnić się, że aplikacja jest skalowalna w chmurze. Aby dowiedzieć się więcej na temat rozwiązań alternatywnych, należy odczytać [tryby stanu sesji](/previous-versions/ms178586(v=vs.140)).
 
 ## <a name="run-method-should-not-be-async"></a>Metoda run nie powinna być asynchroniczna
-### <a name="id"></a>ID
+### <a name="id"></a>ID (Identyfikator)
 AP1000
 
 ### <a name="description"></a>Opis
@@ -85,7 +84,7 @@ public async Task RunAsync()
 ```
 
 ## <a name="use-service-bus-shared-access-signature-authentication"></a>Użyj Service Bus uwierzytelniania sygnatury dostępu współdzielonego
-### <a name="id"></a>ID
+### <a name="id"></a>ID (Identyfikator)
 AP2000
 
 ### <a name="description"></a>Opis
@@ -111,7 +110,7 @@ Aby uzyskać więcej informacji, zobacz następujące tematy.
 * [Jak używać uwierzytelniania sygnatury dostępu współdzielonego z Service Bus](/azure/service-bus-messaging/service-bus-sas)
 
 ## <a name="consider-using-onmessage-method-to-avoid-receive-loop"></a>Rozważ użycie metody OnMessage, aby uniknąć "pętli odbioru"
-### <a name="id"></a>ID
+### <a name="id"></a>ID (Identyfikator)
 AP2002
 
 ### <a name="description"></a>Opis
@@ -120,7 +119,7 @@ Aby uniknąć przechodzenia do "pętli odbioru", wywołanie metody **OnMessage**
 Podziel się swoimi pomysłami i opiniami na temat [opinii o analizie kodu platformy Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Przyczyna
-Podczas wywoływania **OnMessage**klient uruchamia wewnętrzną pompę komunikatów, która stale sonduje kolejkę lub subskrypcję. Ta pompa komunikatów zawiera nieskończoną pętlę, która wystawia wywołanie do odbierania komunikatów. Jeśli wystąpiło limit czasu, wygeneruje nowe wywołanie. Interwał limitu czasu zależy od wartości właściwości [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory), która jest używana.
+Podczas wywoływania **OnMessage** klient uruchamia wewnętrzną pompę komunikatów, która stale sonduje kolejkę lub subskrypcję. Ta pompa komunikatów zawiera nieskończoną pętlę, która wystawia wywołanie do odbierania komunikatów. Jeśli wystąpiło limit czasu, wygeneruje nowe wywołanie. Interwał limitu czasu zależy od wartości właściwości [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory), która jest używana.
 
 Zaletą korzystania z funkcji **OnMessage** w porównaniu do **odbierania** jest to, że użytkownicy nie muszą ręcznie sondować o komunikaty, obsługiwać wyjątki, przetwarzać wiele komunikatów równolegle i kończyć komunikaty.
 
@@ -215,7 +214,7 @@ while (true)
 ```
 
 ## <a name="consider-using-asynchronous-service-bus-methods"></a>Rozważ użycie asynchronicznych metod Service Bus
-### <a name="id"></a>ID
+### <a name="id"></a>ID (Identyfikator)
 AP2003
 
 ### <a name="description"></a>Opis
@@ -232,7 +231,7 @@ Aby uzyskać informacje dotyczące sposobu korzystania z zalecanej metody asynch
 Aby zwiększyć wydajność infrastruktury usługi Azure Messaging, zapoznaj się z podręcznikiem [obsługi komunikatów](/previous-versions/msp-n-p/dn589781(v=pandp.10))w ramach wzorca projektowego.
 
 ## <a name="consider-partitioning-service-bus-queues-and-topics"></a>Rozważ partycjonowanie Service Bus kolejek i tematów
-### <a name="id"></a>ID
+### <a name="id"></a>ID (Identyfikator)
 AP2004
 
 ### <a name="description"></a>Opis
@@ -257,7 +256,7 @@ ns.CreateTopic(td);
 Aby uzyskać więcej informacji, zobacz [partycjonowane Service Bus kolejki i tematy | Microsoft Azure blog](https://azure.microsoft.com/blog/2013/10/29/partitioned-service-bus-queues-and-topics/) i zapoznaj się z przykładem [kolejki Microsoft Azure Service Bus z podziałem na partycje](https://code.msdn.microsoft.com/windowsazure/Service-Bus-Partitioned-7dfd3f1f) .
 
 ## <a name="do-not-set-sharedaccessstarttime"></a>Nie ustawiaj SharedAccessStartTime
-### <a name="id"></a>ID
+### <a name="id"></a>ID (Identyfikator)
 AP3001
 
 ### <a name="description"></a>Opis
@@ -289,7 +288,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 ```
 
 ## <a name="shared-access-policy-expiry-time-must-be-more-than-five-minutes"></a>Czas wygaśnięcia zasad dostępu współdzielonego musi być większy niż pięć minut
-### <a name="id"></a>ID
+### <a name="id"></a>ID (Identyfikator)
 AP3002
 
 ### <a name="description"></a>Opis
@@ -339,7 +338,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 Aby uzyskać więcej informacji, zobacz [Konfigurowanie anonimowego publicznego dostępu do odczytu dla kontenerów i obiektów BLOB](/azure/storage/blobs/anonymous-read-access-configure?tabs=portal).
 
 ## <a name="use-cloudconfigurationmanager"></a>Użyj CloudConfigurationManager
-### <a name="id"></a>ID
+### <a name="id"></a>ID (Identyfikator)
 AP4000
 
 ### <a name="description"></a>Opis
@@ -376,7 +375,7 @@ Oto przykład sposobu przechowywania ustawienia konfiguracji w pliku App.config 
 ```
 
 ## <a name="avoid-using-hard-coded-connection-strings"></a>Unikaj używania zakodowanych parametrów połączenia
-### <a name="id"></a>ID
+### <a name="id"></a>ID (Identyfikator)
 AP4001
 
 ### <a name="description"></a>Opis
@@ -397,7 +396,7 @@ Przechowywanie parametrów połączenia w plikach konfiguracji lub środowiskach
 Aby uzyskać informacje na temat korzystania z plików konfiguracji, takich jak web.config lub app.config, zobacz [wytyczne dotyczące konfiguracji sieci Web ASP.NET](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations). Aby dowiedzieć się, jak działają zmienne środowiskowe platformy Azure, zobacz [witryny sieci Web systemu Azure: jak działają ciągi aplikacji i parametry połączenia](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Aby uzyskać informacje na temat przechowywania parametrów połączenia w kontroli źródła, zobacz [unikanie umieszczania poufnych informacji, takich jak parametry połączenia w plikach przechowywanych w repozytorium kodu źródłowego](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
 
 ## <a name="use-diagnostics-configuration-file"></a>Użyj pliku konfiguracji diagnostyki
-### <a name="id"></a>ID
+### <a name="id"></a>ID (Identyfikator)
 AP5000
 
 ### <a name="description"></a>Opis
@@ -422,7 +421,7 @@ Użyj projektanta konfiguracji diagnostyki do przenoszenia ustawień diagnostycz
    Aby uzyskać więcej informacji [, zobacz Konfigurowanie diagnostyki dla Cloud Services platformy Azure i Virtual Machines](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md) .
 
 ## <a name="avoid-declaring-dbcontext-objects-as-static"></a>Unikaj deklarowania obiektów DbContext jako static
-### <a name="id"></a>ID
+### <a name="id"></a>ID (Identyfikator)
 AP6000
 
 ### <a name="description"></a>Opis

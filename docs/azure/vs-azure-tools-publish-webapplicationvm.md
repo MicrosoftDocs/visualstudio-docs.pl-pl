@@ -4,17 +4,16 @@ description: Dowiedz się, jak wdrożyć aplikację sieci Web na maszynie wirtua
 author: ghogen
 manager: jillfra
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: dd7102873047ed7331547225fa0b32efd33f853f
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: dc8c6083cb0abdcbd8bcd51de717a383cabb5068
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508421"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398569"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (skrypt programu Windows PowerShell)
 Wdraża aplikację sieci Web na maszynie wirtualnej. Skrypt tworzy wymagane zasoby w subskrypcji platformy Azure, jeśli nie istnieją.
@@ -30,7 +29,7 @@ Publish-WebApplicationVM
 -Verbose
 ```
 
-### <a name="configuration"></a>Konfiguracja
+### <a name="configuration"></a>Konfigurowanie
 Ścieżka do pliku konfiguracji JSON opisującego Szczegóły wdrożenia.
 
 | Aliasy | brak |

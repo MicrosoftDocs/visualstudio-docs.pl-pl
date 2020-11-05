@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ef802958817b43dd66973db66a80d328454aa83
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f0629228c2fcad1f8ea36db2e4d0c67a68715e4
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329256"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400314"
 ---
 # <a name="optimizing-profiler-settings"></a>Optymalizowanie ustawień profilera
 
@@ -22,7 +22,7 @@ Narzędzie Performance Profiler i okno narzędzia diagnostyczne w programie Visu
 
 ## <a name="symbol-settings"></a>Ustawienia symboli
 
-Ustawienia symboli Znalezione w opcjach debugera (**opcje > debugowania > symbole**) mają znaczny wpływ na to, jak długo trwa generowanie wyników w narzędziach. Włączenie serwerów symboli lub użycie **_NT_SYMBOL_PATH** powoduje, że profiler zażąda symboli dla każdego załadowanego modułu w raporcie. Obecnie Profiler zawsze automatycznie ładuje wszystkie symbole, niezależnie od preferencji automatycznego ładowania symboli.
+Ustawienia symboli Znalezione w opcjach debugera ( **opcje > debugowania > symbole** lub **narzędzia > opcje > debugowanie > symbole** ) mają znaczny wpływ na to, jak długo trwa generowanie wyników w narzędziach. Włączenie serwerów symboli lub użycie **_NT_SYMBOL_PATH** powoduje, że profiler zażąda symboli dla każdego załadowanego modułu w raporcie. Obecnie Profiler zawsze automatycznie ładuje wszystkie symbole, niezależnie od preferencji automatycznego ładowania symboli.
 
 ![Strona ładowania symboli](../profiling/media/symbolloading.png "Ładowanie symboli")
 
