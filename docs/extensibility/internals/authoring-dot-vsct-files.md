@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11e55da5f2eb1d8b4671543672a79b508e20a929
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 54e67a28d59cb739abbeab188ff1f100751f2aa8
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583687"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413916"
 ---
 # <a name="author-vsct-files"></a>Author. vsct — pliki
 W tym dokumencie przedstawiono sposób tworzenia pliku *. vsct* w celu dodania elementów menu, pasków narzędzi i innych elementów interfejsu użytkownika do zintegrowanego środowiska programistycznego (IDE) programu Visual Studio. Poniższe kroki umożliwiają dodanie elementów interfejsu użytkownika do pakietu programu Visual Studio (pakietu VSPackage), który nie ma jeszcze pliku *. vsct* .
@@ -51,9 +51,9 @@ W tym dokumencie przedstawiono sposób tworzenia pliku *. vsct* w celu dodania e
 
 1. W górnej części `CommandTable` elementu Dodaj jeden `Extern` element dla każdego pliku zewnętrznego, który ma zostać przywoływany, a następnie ustaw `href` atrybut na nazwę pliku. Aby uzyskać dostęp do zasobów programu Visual Studio, można odwoływać się do następujących plików nagłówkowych:
 
-   - *Stdidcmd. h*: definiuje identyfikatory wszystkich poleceń udostępnianych przez program Visual Studio.
+   - *Stdidcmd. h* : definiuje identyfikatory wszystkich poleceń udostępnianych przez program Visual Studio.
 
-   - *Vsshlids. h*: zawiera identyfikatory poleceń dla menu programu Visual Studio.
+   - *Vsshlids. h* : zawiera identyfikatory poleceń dla menu programu Visual Studio.
 
 2. Jeśli pakiet wywołuje wszystkie polecenia, które są zdefiniowane przez program Visual Studio lub przez inne pakiety, Dodaj `UsedCommands` element po `Commands` elemencie. Wypełnij ten element elementem [UsedCommand](../../extensibility/usedcommand-element.md) dla każdego wywoływanego polecenia, które nie jest częścią pakietu. Ustaw `guid` atrybuty i `id` `UsedCommand` elementów na identyfikator GUID oraz wartości identyfikatorów poleceń, które mają być wywoływane.
 
@@ -64,7 +64,7 @@ W tym dokumencie przedstawiono sposób tworzenia pliku *. vsct* w celu dodania e
 
 #### <a name="to-declare-ui-elements"></a>Aby zadeklarować elementy interfejsu użytkownika
 
-1. W `Symbols` elemencie Dodaj trzy elementy [GuidSymbol](../../extensibility/guidsymbol-element.md) . Każdy `GuidSymbol` element ma `name` atrybut i `value` atrybut. Ustaw `name` atrybut tak, aby odzwierciedlał cel elementu. `value`Atrybut przyjmuje identyfikator GUID. (Aby wygenerować identyfikator GUID, w menu **Narzędzia** wybierz polecenie **Utwórz identyfikator GUID**, a następnie wybierz pozycję **Format rejestru**).
+1. W `Symbols` elemencie Dodaj trzy elementy [GuidSymbol](../../extensibility/guidsymbol-element.md) . Każdy `GuidSymbol` element ma `name` atrybut i `value` atrybut. Ustaw `name` atrybut tak, aby odzwierciedlał cel elementu. `value`Atrybut przyjmuje identyfikator GUID. (Aby wygenerować identyfikator GUID, w menu **Narzędzia** wybierz polecenie **Utwórz identyfikator GUID** , a następnie wybierz pozycję **Format rejestru** ).
 
      Pierwszy `GuidSymbol` element reprezentuje pakiet i zwykle nie ma elementów podrzędnych. Drugi `GuidSymbol` element reprezentuje zestaw poleceń i będzie zawierać wszystkie symbole, które definiują menu, grupy i polecenia. Trzeci `GuidSymbol` element reprezentuje magazyn obrazów i zawiera symbole dla wszystkich ikon poleceń. Jeśli nie masz poleceń, które używają ikon, możesz pominąć trzeci `GuidSymbol` element.
 
@@ -108,7 +108,7 @@ W tym dokumencie przedstawiono sposób tworzenia pliku *. vsct* w celu dodania e
        > [!NOTE]
        > Przyciski paska narzędzi muszą mieć ikony.
 
-   Aby uzyskać więcej informacji, zobacz [MenuCommands vs. OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
+   Aby uzyskać więcej informacji, zobacz [MenuCommands vs. OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015).
 
 4. Jeśli którekolwiek z poleceń wymagają ikon, Dodaj element [bitmaps](../../extensibility/bitmaps-element.md) do `Commands` elementu. Następnie dla każdej ikony Dodaj element [bitmapy](../../extensibility/bitmap-element.md) do `Bitmaps` elementu. Jest to miejsce, w którym można określić lokalizację zasobu mapy bitowej. Aby uzyskać więcej informacji, zobacz [Dodawanie ikon do poleceń menu](../../extensibility/adding-icons-to-menu-commands.md).
 

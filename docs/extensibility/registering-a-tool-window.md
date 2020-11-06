@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7b82353247776eb2dac8135a0a412b396d571a1
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d70924ea503bc4e230eb30b0551b59bc5f45ae6d
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584719"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414337"
 ---
 # <a name="register-a-tool-window"></a>Rejestrowanie okna narzędzi
 Możesz zarejestrować swoje okna narzędzi za pomocą <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> i  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> .
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- W powyższym kodzie, <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> rejestruje okna `PersistedWindowPane` i `DynamicWindowPane` Narzędzia w programie Visual Studio. Utrwalone okno narzędzi jest zadokowane i z kartami **Eksplorator rozwiązań**, a okno dynamiczne ma domyślną pozycję początkową i rozmiar. Okno dynamiczne jest wykonywane przejściowo, co oznacza, że nie jest tworzone podczas uruchamiania. Spowoduje to zapisanie `DontForceCreate` wartości w `ToolWindows` kluczu rejestru systemowego. Aby uzyskać więcej informacji, zobacz [Konfiguracja wyświetlania okna narzędzi](../vs-2015/extensibility/tool-window-display-configuration.md?view=vs-2015&preserve-view=true).
+ W powyższym kodzie, <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> rejestruje okna `PersistedWindowPane` i `DynamicWindowPane` Narzędzia w programie Visual Studio. Utrwalone okno narzędzi jest zadokowane i z kartami **Eksplorator rozwiązań** , a okno dynamiczne ma domyślną pozycję początkową i rozmiar. Okno dynamiczne jest wykonywane przejściowo, co oznacza, że nie jest tworzone podczas uruchamiania. Spowoduje to zapisanie `DontForceCreate` wartości w `ToolWindows` kluczu rejestru systemowego. Aby uzyskać więcej informacji, zobacz [Konfiguracja wyświetlania okna narzędzi](/previous-versions/visualstudio/visual-studio-2015/extensibility/tool-window-display-configuration?preserve-view=true&view=vs-2015).

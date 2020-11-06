@@ -2,7 +2,7 @@
 title: 'Dokumentacja programu Visual Studio: historia nowości '
 titleSuffix: ''
 description: Historia nowości w dokumentacji programu Visual Studio
-ms.date: 09/30/2020
+ms.date: 10/04/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,16 +15,80 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 750fcb907350d3bd135bc86e5d1bc1ed211c4a7b
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 2314965dad6c77e749a62946f3372993813240bb
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400144"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414506"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historia nowości w dokumentacji programu Visual Studio
 
-Witamy w historii nowości w dokumentacji programu Visual Studio. Ten temat zawiera istotne zmiany w dokumentach sprzed 2020 września (od lipca 2020). Aby uzyskać najnowsze informacje o nowościach, zobacz [Visual Studio docs: co nowego w](whats-new-visual-studio-docs.md)dokumentacji.
+Witamy w historii nowości w dokumentacji programu Visual Studio. Ten artykuł zawiera istotne zmiany w dokumentach sprzed 2020 października (od dnia 2020 lipca). Aby uzyskać najnowsze informacje o nowościach, zobacz [Visual Studio docs: co nowego w](whats-new-visual-studio-docs.md)dokumentacji.
+
+## <a name="september-2020"></a>Wrzesień 2020
+### <a name="code-quality"></a>Jakość kodu
+
+**Nowe artykuły**
+
+- [CA1416: sprawdzanie zgodności platformy](/dotnet/fundamentals/code-analysis/quality-rules/ca1416) — dokumentowanie CA1416 sprawdzanie zgodności platformy
+- [CA1834: Użyj StringBuilder. Append (Char) dla ciągów z pojedynczym znakiem](/dotnet/fundamentals/code-analysis/quality-rules/ca1834) — docs dla CA1834
+
+**Aktualny**
+
+- [Przegląd analizy kodu źródłowego](../code-quality/roslyn-analyzers-overview.md) — aktualizacje analizy kodu dla refaktoryzacji platformy .NET
+- [Konfiguruj analizę jakości kodu](../code-quality/use-roslyn-analyzers.md) — aktualizacje analizy kodu dla refaktoryzacji platformy .NET
+
+### <a name="containers"></a>Kontenery
+
+**Nowe artykuły**
+
+- [Korzystanie z programu Bridge do Kubernetes](../containers/bridge-to-kubernetes.md) — proces lokalny z oznaczeniem Kubernetes do mostka do Kubernetes
+- [Jak działa mostek Kubernetes](../containers/overview-bridge-to-kubernetes.md) — proces lokalny z oznaczeniem Kubernetes do mostka do Kubernetes
+
+### <a name="deployment"></a>Wdrożenie
+
+**Zaktualizowane artykuły**
+
+- [Wdrażanie aplikacji w folderze, usługach IIS, na platformie Azure lub w innych](../deployment/deploying-applications-services-and-components-resources.md) aktualizacjach wdrożenia docelowego
+- [Wdrażanie aplikacji w folderze przy użyciu programu Visual Studio](../deployment/quickstart-deploy-to-local-folder.md) — aktualizacje wdrożenia
+
+### <a name="ide"></a>IDE
+
+**Nowe artykuły**
+
+- [Nowe środowisko Git w programie Visual Studio (wersja zapoznawcza)](./git-with-visual-studio.md) — Dodawanie nowej zawartości środowiska git (wersja zapoznawcza)
+- [Konwencje formatowania języka C++ EditorConfig](./cpp-editorconfig-properties.md) — nowy artykuł
+- [Co to jest GitHub Codespaces? (Wersja zapoznawcza)](./codespaces/codespaces-overview.md) -Dodaj zawartość Codespaces (wersja zapoznawcza)
+- [Jak dostosować codespace (wersja zapoznawcza)](./codespaces/customize-codespaces.md) — Dodawanie zawartości Codespaces (wersja zapoznawcza)
+- [Obsługiwane funkcje programu Visual Studio (wersja zapoznawcza)](./codespaces/supported-features-codespaces.md) — Dodawanie zawartości Codespaces (wersja zapoznawcza)
+- [Jak używać programu Visual Studio z codespace (wersja zapoznawcza)](./codespaces/use-visual-studio-with-codespaces.md) — Dodawanie zawartości Codespaces (wersja zapoznawcza)
+
+**Zaktualizowane artykuły**
+
+- [Ustawienia konwencji kodowania .NET dla EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options) — zaktualizowane EditorConfig
+- [Konwencje językowe](/dotnet/fundamentals/code-analysis/style-rules/language-rules) — brakujące przykłady
+
+### <a name="install"></a>Zainstaluj
+
+**Nowe artykuły**
+
+- [Program Visual Studio na urządzeniach opartych na architekturze ARM](../install/visual-studio-on-arm-devices.md) — Dodawanie doc dla programu vs na platformie ARM
+
+**Zaktualizowane artykuły**
+
+- [Rozwiązywanie problemów związanych z siecią podczas instalowania lub korzystania z programu Visual Studio](../install/troubleshooting-network-related-errors-in-visual-studio.md) — Dodaj obejście problemu z serwerem proxy uwierzytelniania w opinii
+
+### <a name="profiling"></a>Profilowanie
+
+**Zaktualizowane artykuły**
+
+- [Pomiar użycia pamięci w programie Visual Studio](../profiling/memory-usage.md) — aktualizacje profilowania dotyczące funkcji
+- [Funkcja PerfTip](../profiling/perftips.md) — aktualizacje dotyczące profilowania funkcji
+- [Najpierw Zobacz profilowanie narzędzi](../profiling/profiling-feature-tour.md) — aktualizacje dotyczące funkcji profilowania
+- [Uruchamianie narzędzi profilowania z debugerem lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
+  - Aktualizacje profilowania funkcji
+  - Ulepszenia wydajności zawartości
 
 ## <a name="august-2020"></a>Sierpień 2020 r.
 ### <a name="azure"></a>Azure
@@ -109,7 +173,7 @@ Witamy w historii nowości w dokumentacji programu Visual Studio. Ten temat zawi
 
 **Zaktualizowane artykuły**
 
-- [Dostosowywanie układów okien w programie Visual Studio](./customizing-window-layouts-in-visual-studio.md) — Dodawanie monikerów z zakładkami dokumentu pionowych aby dostosować układ okna tematu
+- [Dostosowywanie układów okien w programie Visual Studio](./customizing-window-layouts-in-visual-studio.md) — Dodaj krótkie monikery kart dokumentów, aby dostosować układ okien.
 - [Jak zgłosić problem z programem Visual Studio lub Instalator programu Visual Studio](./how-to-report-a-problem-with-visual-studio.md)
   - Dodano więcej informacji do NMI
   - Redid cały raport na stronie problemu

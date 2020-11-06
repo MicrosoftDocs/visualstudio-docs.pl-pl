@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0340b89ed87872833f554fb00e24aca2f4759f3
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 12f585a3e7dd4a8182d7ed80cf65a20d0a82da83
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583596"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414025"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Przewodnik: Dodawanie funkcji do edytora niestandardowego
 Po utworzeniu edytora niestandardowego można dodać do niego więcej funkcji.
@@ -34,11 +34,11 @@ Po utworzeniu edytora niestandardowego można dodać do niego więcej funkcji.
 
 3. Zaimplementuj fabrykę edytora przez skonfigurowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfejsu.
 
-     Aby uzyskać więcej informacji, zobacz [fabryki edytora](../vs-2015/extensibility/editor-factories.md?view=vs-2015&preserve-view=true).
+     Aby uzyskać więcej informacji, zobacz [fabryki edytora](/previous-versions/visualstudio/visual-studio-2015/extensibility/editor-factories?preserve-view=true&view=vs-2015).
 
 4. Zdecyduj, czy edytor ma używać aktywacji w miejscu czy uproszczonego osadzania, aby zarządzać oknem obiektu widoku dokumentu.
 
-     Uproszczone okno edytora osadzania zawiera standardowy widok dokumentu, podczas gdy okno edytora aktywacji w miejscu obsługuje formant ActiveX lub inny aktywny obiekt jako widok dokumentu. Aby uzyskać więcej informacji, zobacz [uproszczone osadzanie](../extensibility/simplified-embedding.md) i [Aktywacja w miejscu](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true).
+     Uproszczone okno edytora osadzania zawiera standardowy widok dokumentu, podczas gdy okno edytora aktywacji w miejscu obsługuje formant ActiveX lub inny aktywny obiekt jako widok dokumentu. Aby uzyskać więcej informacji, zobacz [uproszczone osadzanie](../extensibility/simplified-embedding.md) i [Aktywacja w miejscu](/previous-versions/visualstudio/visual-studio-2015/misc/in-place-activation?preserve-view=true&view=vs-2015).
 
 5. Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu w celu obsługi poleceń.
 
@@ -51,7 +51,7 @@ Po utworzeniu edytora niestandardowego można dodać do niego więcej funkcji.
         > [!NOTE]
         > Zadzwoń `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> , aby uzyskać wskaźnik do `IVsFileChangeEx` .
 
-7. Koordynuj zdarzenia edycji dokumentu z kontrolą kodu źródłowego. Wykonaj następujące kroki:
+7. Koordynuj zdarzenia edycji dokumentu z kontrolą kodu źródłowego. Wykonaj następujące czynności:
 
     1. Uzyskaj wskaźnik do `IVsQueryEditQuerySave2` przez wywołanie metody `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> .
 
@@ -63,13 +63,13 @@ Po utworzeniu edytora niestandardowego można dodać do niego więcej funkcji.
 
          Ta metoda poprosi użytkownika o zapisanie pliku, jeśli nie został on zapisany lub zmieniono od ostatniego zapisu.
 
-8. Włącz okno **Właściwości** , aby wyświetlić właściwości tekstu zaznaczonego w edytorze. Wykonaj następujące kroki:
+8. Włącz okno **Właściwości** , aby wyświetlić właściwości tekstu zaznaczonego w edytorze. Wykonaj następujące czynności:
 
     1. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> każdą zmianę zaznaczenia tekstu, przekazując ją w implementacji <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> .
 
     2. Zadzwoń do `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> usługi, aby uzyskać wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .
 
-9. Zezwól użytkownikom na przeciąganie i upuszczanie elementów między edytorem i **przybornikiem**albo między edytorami zewnętrznymi (takimi jak program Microsoft Word) i **przybornikiem**. Wykonaj następujące kroki:
+9. Zezwól użytkownikom na przeciąganie i upuszczanie elementów między edytorem i **przybornikiem** albo między edytorami zewnętrznymi (takimi jak program Microsoft Word) i **przybornikiem**. Wykonaj następujące czynności:
 
     1. Zaimplementuj `IDropTarget` w edytorze, aby ostrzec IDE, że edytorem jest obiekt docelowy upuszczania.
 
@@ -115,7 +115,7 @@ Po utworzeniu edytora niestandardowego można dodać do niego więcej funkcji.
 
 12. Zaimplementuj obsługę pomocy kontekstowej.
 
-     Ten krok pozwala udostępnić Pomoc F1 i dynamiczną obsługę okna pomocy dla elementów w edytorze. Aby uzyskać więcej informacji, zobacz [How to: zapewnianie kontekstu dla edytorów](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015&preserve-view=true).
+     Ten krok pozwala udostępnić Pomoc F1 i dynamiczną obsługę okna pomocy dla elementów w edytorze. Aby uzyskać więcej informacji, zobacz [How to: zapewnianie kontekstu dla edytorów](/previous-versions/visualstudio/visual-studio-2015/extensibility/how-to-provide-context-for-editors?preserve-view=true&view=vs-2015).
 
 13. Udostępnienie modelu obiektów automatyzacji z edytora przez implementację `IDispatch` interfejsu.
 
@@ -138,7 +138,7 @@ Po utworzeniu edytora niestandardowego można dodać do niego więcej funkcji.
   > [!NOTE]
   > `IOleInPlaceComponent`Interfejs jest używany, aby uniknąć scalania menu OLE 2.
 
-   `IOleCommandTarget`Implementacja obsługuje polecenia, takie jak **wycinanie**, **Kopiowanie**i **wklejanie**. Podczas wdrażania `IOleCommandTarget` należy zdecydować, czy Edytor wymaga własnego pliku *. vsct* , aby zdefiniować własną strukturę menu poleceń lub jeśli może zaimplementować standardowe polecenia zdefiniowane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Zazwyczaj edytory używają i zwiększają menu środowiska IDE oraz definiują własne paski narzędzi. Niemniej jednak często konieczne jest, aby Edytor mógł definiować własne poszczególne polecenia oprócz używania standardowego zestawu poleceń IDE. Edytor musi deklarować standardowe polecenia, z których korzysta, a następnie definiować nowe polecenia, menu kontekstowe, menu najwyższego poziomu i paski narzędzi w pliku *. vsct* . W przypadku utworzenia edytora aktywacji w miejscu Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> i zdefiniuj menu i paski narzędzi dla edytora w pliku *. vsct* , a nie za pomocą scalania menu OLE 2.
+   `IOleCommandTarget`Implementacja obsługuje polecenia, takie jak **wycinanie** , **Kopiowanie** i **wklejanie**. Podczas wdrażania `IOleCommandTarget` należy zdecydować, czy Edytor wymaga własnego pliku *. vsct* , aby zdefiniować własną strukturę menu poleceń lub jeśli może zaimplementować standardowe polecenia zdefiniowane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Zazwyczaj edytory używają i zwiększają menu środowiska IDE oraz definiują własne paski narzędzi. Niemniej jednak często konieczne jest, aby Edytor mógł definiować własne poszczególne polecenia oprócz używania standardowego zestawu poleceń IDE. Edytor musi deklarować standardowe polecenia, z których korzysta, a następnie definiować nowe polecenia, menu kontekstowe, menu najwyższego poziomu i paski narzędzi w pliku *. vsct* . W przypadku utworzenia edytora aktywacji w miejscu Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> i zdefiniuj menu i paski narzędzi dla edytora w pliku *. vsct* , a nie za pomocą scalania menu OLE 2.
 
 - Aby zapobiec zapisywaniu poleceń menu w interfejsie użytkownika, należy użyć istniejących poleceń w IDE przed wyjęciem nowych poleceń. Polecenia udostępnione są zdefiniowane w *SharedCmdDef. vsct* i *ShellCmdDef. vsct*. Te pliki są instalowane domyślnie w podkatalogu VisualStudioIntegration\Common\Inc [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalacji.
 

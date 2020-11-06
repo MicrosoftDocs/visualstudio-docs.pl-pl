@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87312b5db9357462c822f876220cc239b79106aa
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 13f2e3f5df236157550aa79af40f0cbc575eb8bf
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585722"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414415"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profilowanie wydajności aplikacji programu SharePoint
 
@@ -39,9 +39,9 @@ Po utworzeniu i uruchomieniu analizy profilu w aplikacji raport zawiera szczegó
 
 ## <a name="performance-session-process"></a>Proces sesji wydajności
 
-Aby profilować aplikację, należy najpierw użyć Kreatora wydajności narzędzia profilowania w celu utworzenia sesji wydajności. Na pasku menu wybierz polecenie **Analizuj**, **Uruchom Kreatora wydajności**. Po zakończeniu pracy kreatora wprowadź wymagane informacje dotyczące sesji wydajności, takie jak wybrana metoda profilu i aplikacja, którą chcesz profilować. Aby uzyskać więcej informacji, zobacz [jak: profilowanie witryny sieci Web lub aplikacji sieci Web za pomocą Kreatora wydajności](../profiling/how-to-collect-performance-data-for-a-web-site.md). Alternatywnie można użyć opcji wiersza polecenia, aby skonfigurować i uruchomić sesję wydajności. Aby uzyskać więcej informacji, zobacz [używanie narzędzia profilowania z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md). Jeśli chcesz ręcznie skonfigurować każdy aspekt sesji wydajności, zobacz [jak: ręczne tworzenie sesji wydajności przy użyciu narzędzia profilowania](../profiling/how-to-manually-create-performance-sessions.md). Możesz również utworzyć sesję wydajności na podstawie testu jednostkowego, w oknie **wyniki testów** , otwierając menu skrótów dla testu jednostkowego, a następnie wybierając pozycję **Utwórz sesję wydajności**.
+Aby profilować aplikację, należy najpierw użyć Kreatora wydajności narzędzia profilowania w celu utworzenia sesji wydajności. Na pasku menu wybierz polecenie **Analizuj** , **Uruchom Kreatora wydajności**. Po zakończeniu pracy kreatora wprowadź wymagane informacje dotyczące sesji wydajności, takie jak wybrana metoda profilu i aplikacja, którą chcesz profilować. Aby uzyskać więcej informacji, zobacz [jak: profilowanie witryny sieci Web lub aplikacji sieci Web za pomocą Kreatora wydajności](../profiling/how-to-collect-performance-data-for-a-web-site.md). Alternatywnie można użyć opcji wiersza polecenia, aby skonfigurować i uruchomić sesję wydajności. Aby uzyskać więcej informacji, zobacz [używanie narzędzia profilowania z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md). Jeśli chcesz ręcznie skonfigurować każdy aspekt sesji wydajności, zobacz [jak: ręczne tworzenie sesji wydajności przy użyciu narzędzia profilowania](../profiling/how-to-manually-create-performance-sessions.md). Możesz również utworzyć sesję wydajności na podstawie testu jednostkowego, w oknie **wyniki testów** , otwierając menu skrótów dla testu jednostkowego, a następnie wybierając pozycję **Utwórz sesję wydajności**.
 
-Po skonfigurowaniu sesji wydajności konfiguracja sesji jest zapisywana, serwer jest skonfigurowany do udostępniania danych profilowania, a aplikacja zostanie uruchomiona. Podczas korzystania z aplikacji dane o wydajności są zapisywane w pliku dziennika. Sesje wydajności są wymienione w **Eksplorator wydajności** w folderze **targets** . Po zakończeniu sesji wydajności jego raport zostanie wyświetlony w folderze **raporty** w **Eksplorator wydajności**. Aby wyświetlić raport, otwórz go w **Eksplorator wydajności**. Aby wyświetlić lub skonfigurować właściwości sesji wydajności, otwórz jej menu skrótów w **Eksplorator wydajności**, a następnie wybierz **Właściwości**. Aby uzyskać więcej informacji na temat określonych właściwości sesji wydajności, zobacz [Konfigurowanie sesji wydajności dla narzędzia profilowania](../profiling/configuring-performance-sessions.md). Aby uzyskać informacje na temat interpretacji wyników sesji wydajności, zobacz [analizowanie narzędzia profilowania danych](../profiling/analyzing-performance-tools-data.md).
+Po skonfigurowaniu sesji wydajności konfiguracja sesji jest zapisywana, serwer jest skonfigurowany do udostępniania danych profilowania, a aplikacja zostanie uruchomiona. Podczas korzystania z aplikacji dane o wydajności są zapisywane w pliku dziennika. Sesje wydajności są wymienione w **Eksplorator wydajności** w folderze **targets** . Po zakończeniu sesji wydajności jego raport zostanie wyświetlony w folderze **raporty** w **Eksplorator wydajności**. Aby wyświetlić raport, otwórz go w **Eksplorator wydajności**. Aby wyświetlić lub skonfigurować właściwości sesji wydajności, otwórz jej menu skrótów w **Eksplorator wydajności** , a następnie wybierz **Właściwości**. Aby uzyskać więcej informacji na temat określonych właściwości sesji wydajności, zobacz [Konfigurowanie sesji wydajności dla narzędzia profilowania](../profiling/configuring-performance-sessions.md). Aby uzyskać informacje na temat interpretacji wyników sesji wydajności, zobacz [analizowanie narzędzia profilowania danych](../profiling/analyzing-performance-tools-data.md).
 
 ## <a name="stress-test"></a>Test obciążeniowy
 
@@ -55,7 +55,7 @@ Testy wydajności sieci Web symulują sposób, w jaki użytkownik końcowy może
 
 ## <a name="test-user-interfaces"></a>Testowanie interfejsów użytkownika
 
-Kodowane testy interfejsu użytkownika automatycznie przełączają aplikację programu SharePoint przy użyciu interfejsu użytkownika. Te testy obejmują kontrolki interfejsu użytkownika, takie jak przyciski i menu, aby sprawdzić, czy działają poprawnie. Ten rodzaj testów jest szczególnie przydatny, jeśli Walidacja lub inna logika jest wykonywana w interfejsie użytkownika, na przykład na stronie sieci Web. Możesz również użyć kodowanych testów interfejsu użytkownika, aby zautomatyzować testy ręczne. Można tworzyć kodowane testy interfejsu użytkownika dla aplikacji programu SharePoint w taki sam sposób, jak w przypadku tworzenia testów dla innych typów aplikacji. Aby uzyskać więcej informacji, zobacz [testowanie aplikacji programu SharePoint 2010 przy użyciu kodowanych testów interfejsu użytkownika](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015&preserve-view=true).
+Kodowane testy interfejsu użytkownika automatycznie przełączają aplikację programu SharePoint przy użyciu interfejsu użytkownika. Te testy obejmują kontrolki interfejsu użytkownika, takie jak przyciski i menu, aby sprawdzić, czy działają poprawnie. Ten rodzaj testów jest szczególnie przydatny, jeśli Walidacja lub inna logika jest wykonywana w interfejsie użytkownika, na przykład na stronie sieci Web. Możesz również użyć kodowanych testów interfejsu użytkownika, aby zautomatyzować testy ręczne. Można tworzyć kodowane testy interfejsu użytkownika dla aplikacji programu SharePoint w taki sam sposób, jak w przypadku tworzenia testów dla innych typów aplikacji. Aby uzyskać więcej informacji, zobacz [testowanie aplikacji programu SharePoint 2010 przy użyciu kodowanych testów interfejsu użytkownika](/previous-versions/visualstudio/visual-studio-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests?preserve-view=true&view=vs-2015).
 
 ## <a name="related-topics"></a>Powiązane tematy
 
@@ -64,7 +64,7 @@ Kodowane testy interfejsu użytkownika automatycznie przełączają aplikację p
 |[Przewodnik: Profilowanie aplikacji SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Pokazuje, jak przeprowadzić analizę profilu próbkowania w aplikacji SharePoint.|
 |[Przetestuj wydajność aplikacji przed wydaniem](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts&preserve-view=true)|Opisuje sposób tworzenia testów obciążenia, które ułatwiają przetestowanie aplikacji programu SharePoint.|
 |[Testowanie jednostek kodu](../test/unit-test-your-code.md)|Opisuje, jak znaleźć błędy logiki w kodzie przy użyciu testów jednostkowych.|
-|[Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015&preserve-view=true)|Opisuje sposób testowania interfejsu użytkownika aplikacji programu SharePoint.|
+|[Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika](/previous-versions/visualstudio/visual-studio-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests?preserve-view=true&view=vs-2015)|Opisuje sposób testowania interfejsu użytkownika aplikacji programu SharePoint.|
 
 ## <a name="see-also"></a>Zobacz też
 

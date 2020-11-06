@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b117aace6b9b74455b09d4d0c61a82a9c84bf19
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 193d96be91839143893ac0798db723f3e94ea26c
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583622"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413919"
 ---
 # <a name="vstextbuffer-object"></a>Obiekt VSTextBuffer
 Obiekt buforu tekstu reprezentuje strumień tekstu Unicode, który jest zazwyczaj skojarzony z plikiem. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>Obiekt może być używany poza kontekstem podstawowego edytora, jak w, w kreatorze.
@@ -41,7 +41,7 @@ Obiekt buforu tekstu reprezentuje strumień tekstu Unicode, który jest zazwycza
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|Obsługuje punkty połączenia dla zdarzeń.|
 
 ## <a name="remarks"></a>Uwagi
- `VSTextBuffer`Zwykle jest to spowodowane `QueryInterface` wywołaniem `IVsTextBuffer` . Aby uzyskać więcej informacji, zobacz [bufor tekstu](../vs-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md?view=vs-2015&preserve-view=true).
+ `VSTextBuffer`Zwykle jest to spowodowane `QueryInterface` wywołaniem `IVsTextBuffer` . Aby uzyskać więcej informacji, zobacz [bufor tekstu](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api?preserve-view=true&view=vs-2015).
 
 ## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>

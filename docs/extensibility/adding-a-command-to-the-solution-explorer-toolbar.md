@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32b7de4d3e62c2f1d9de5126217ccede48dfca8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7cc2eee209129867696955eb22c9e851c17973c1
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583700"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414104"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Dodaj polecenie do paska narzędzi Eksplorator rozwiązań
 W tym instruktażu pokazano, jak dodać przycisk do paska narzędzi **Eksplorator rozwiązań** .
@@ -27,7 +27,7 @@ W tym instruktażu pokazano, jak dodać przycisk do paska narzędzi **Eksplorato
  Aby uzyskać więcej informacji na temat menu, poleceń paska narzędzi i plików *. vsct* , zobacz [polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
-> Użyj plików tabeli poleceń XML (*. vsct*) zamiast plików konfiguracji tabeli poleceń (*. CTC*), aby zdefiniować sposób wyświetlania menu i poleceń w pakietów VSPackage. Aby uzyskać więcej informacji, zobacz [tabela poleceń programu Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> Użyj plików tabeli poleceń XML ( *. vsct* ) zamiast plików konfiguracji tabeli poleceń ( *. CTC* ), aby zdefiniować sposób wyświetlania menu i poleceń w pakietów VSPackage. Aby uzyskać więcej informacji, zobacz [tabela poleceń programu Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dostępna jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
@@ -80,7 +80,7 @@ W tym instruktażu pokazano, jak dodać przycisk do paska narzędzi **Eksplorato
 
 ### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Aby wyświetlić przycisk, gdy jeden lub więcej projektów jest otwartych
 
-1. W `<Buttons>` sekcji *ToolbarButtonPackage. vsct*Dodaj dwie flagi polecenia do istniejącego `<Button>` elementu, między `<Strings>` `<Icons>` tagami i.
+1. W `<Buttons>` sekcji *ToolbarButtonPackage. vsct* Dodaj dwie flagi polecenia do istniejącego `<Button>` elementu, między `<Strings>` `<Icons>` tagami i.
 
    ```xml
    <CommandFlag>DefaultInvisible</CommandFlag>
@@ -114,7 +114,7 @@ W tym instruktażu pokazano, jak dodać przycisk do paska narzędzi **Eksplorato
 
 5. W menu **plik** kliknij polecenie **Zamknij rozwiązanie**. Przycisk znika z paska narzędzi.
 
-   Widoczność przycisku jest kontrolowana przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do momentu załadowania pakietu VSPackage. Po załadowaniu pakietu VSPackage widoczność przycisku jest kontrolowana przez pakietu VSPackage.  Aby uzyskać więcej informacji, zobacz [MenuCommands vs. OleMenuCommands](../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
+   Widoczność przycisku jest kontrolowana przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do momentu załadowania pakietu VSPackage. Po załadowaniu pakietu VSPackage widoczność przycisku jest kontrolowana przez pakietu VSPackage.  Aby uzyskać więcej informacji, zobacz [MenuCommands vs. OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015).
 
 ## <a name="see-also"></a>Zobacz też
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

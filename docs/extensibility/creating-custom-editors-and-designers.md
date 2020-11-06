@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcc047794cc79ad2909bfaa1d9866fc0a2c0dc1e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9177e6f431eb24a337822dd7de0a0b9586e1de0e
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584732"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414259"
 ---
 # <a name="create-custom-editors-and-designers"></a>Tworzenie niestandardowych edytorów i projektantów
 
@@ -59,7 +59,7 @@ Aby uzyskać informacje na temat edytora podstawowego programu Visual Studio, zo
 
 - Czy Edytor musi hostować kontrolki ActiveX?
 
-   Jeśli Edytor obsługuje kontrolki ActiveX, zaimplementuj Edytor aktywacji w miejscu, jak opisano w [aktywacji w miejscu](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true). Jeśli nie hostuje formantów ActiveX, użyj uproszczonego edytora osadzania lub Dostosuj [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Edytor domyślny.
+   Jeśli Edytor obsługuje kontrolki ActiveX, zaimplementuj Edytor aktywacji w miejscu, jak opisano w [aktywacji w miejscu](/previous-versions/visualstudio/visual-studio-2015/misc/in-place-activation?preserve-view=true&view=vs-2015). Jeśli nie hostuje formantów ActiveX, użyj uproszczonego edytora osadzania lub Dostosuj [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Edytor domyślny.
 
 - Czy Edytor będzie obsługiwał wiele widoków? Jeśli chcesz, aby widoki edytora były widoczne w tym samym czasie co domyślny edytor, musisz obsługiwać wiele widoków.
 
@@ -93,7 +93,7 @@ Wyjaśnia, jak zaimplementować dane dokumentu i widoki dokumentów w edytorach 
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
-[Starsze interfejsy w edytorze](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015&preserve-view=true)\
+[Starsze interfejsy w edytorze](/previous-versions/visualstudio/visual-studio-2015/extensibility/legacy-interfaces-in-the-editor?preserve-view=true&view=vs-2015)\
 Wyjaśnia, jak uzyskać dostęp do podstawowego edytora za pomocą starszego interfejsu API.
 
 [Opracowywanie starszej wersji usługi językowej](../extensibility/internals/developing-a-legacy-language-service.md)\

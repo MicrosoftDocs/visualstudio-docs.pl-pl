@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dec1cf1e3ec4301b1f219f7345957877ea420528
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 72749d3a58b4adae149baefff9e9ae77f6b05f18
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585644"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414181"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Kolorowanie składni w edytorach niestandardowych
 Edytory SDK środowiska programu Visual Studio, w tym podstawowy edytor, wykorzystują usługi językowe do identyfikowania określonych elementów składniowych i wyświetlania ich z określonymi kolorami dla danego widoku dokumentu.
@@ -52,7 +52,7 @@ Edytory SDK środowiska programu Visual Studio, w tym podstawowy edytor, wykorzy
 3. Użyj informacji o kolorach zwróconych przez program, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Aby odświeżyć i wyświetlić jego tekst.
 
 > [!NOTE]
-> Oprócz używania Kolorka usługi językowej pakietu VSPackage może zdecydować się na użycie mechanizmu kolorowania tekstu zestawu SDK środowiska programu Visual Studio ogólnego przeznaczenia. Aby uzyskać więcej informacji na temat tego mechanizmu, zobacz [using Fonts and Colors](../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015&preserve-view=true).
+> Oprócz używania Kolorka usługi językowej pakietu VSPackage może zdecydować się na użycie mechanizmu kolorowania tekstu zestawu SDK środowiska programu Visual Studio ogólnego przeznaczenia. Aby uzyskać więcej informacji na temat tego mechanizmu, zobacz [using Fonts and Colors](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015).
 
 ## <a name="see-also"></a>Zobacz też
 

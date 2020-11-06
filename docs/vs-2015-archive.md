@@ -7,12 +7,12 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: 9882497fec78c6560dcb40e636cb8323c1b249b3
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f8affd426593754f77760e4f924cd401167078e5
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049457"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414155"
 ---
 # <a name="visual-studio-2015-documentation"></a>Dokumentacja programu Visual Studio 2015
 
@@ -28,7 +28,7 @@ Zalecamy uaktualnienie do najnowszej wersji programu Visual Studio 2019. Aby pob
 
 W środowisku IDE programu Visual Studio 2015 należy nadal korzystać z funkcji pomocy F1. Jeśli napotkasz jakiekolwiek problemy, Skorzystaj z linku opinii w witrynie docs w dolnej części tej strony, aby utworzyć problem z naszym repozytorium GitHub.
 
-Jeśli używasz dokumentacji programu Visual Studio 2015 często, możesz chcieć poznać opcję korzystania z podglądu pomocy i pobrać książki pomocy w trybie offline dla tej wersji. Zobacz [Podgląd pomocy firmy Microsoft](/visualstudio/help-viewer/overview).
+Jeśli używasz dokumentacji programu Visual Studio 2015 często, możesz chcieć poznać opcję korzystania z podglądu pomocy i pobrać książki pomocy w trybie offline dla tej wersji. Zobacz [Podgląd pomocy firmy Microsoft](./help-viewer/overview.md).
 
 ## <a name="see-also"></a>Zobacz też
 

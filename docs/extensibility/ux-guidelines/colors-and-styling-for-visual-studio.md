@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c43281e52d5a56fd7a888e42ba0bae66f9ac0bd9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2f9123117144d12babd97264090f16899f392954
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584272"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414272"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Kolory i style dla programu Visual Studio
 
@@ -49,7 +49,7 @@ Wybierz metodę najlepiej dopasowaną do elementów interfejsu użytkownika.
 | Masz osadzone lub autonomiczne okna dialogowe. | **Kolory systemowe** | Nazwy systemu, które umożliwiają systemowi operacyjnemu Definiowanie koloru i wyglądu elementów interfejsu użytkownika, takich jak wspólne kontrolki okna dialogowego. |
 | Istnieje niestandardowy interfejs użytkownika, który ma być spójny z ogólnym środowiskiem programu VS i masz elementy interfejsu użytkownika zgodne z kategorią i semantyką znaczenia tokenów udostępnionych. | **Wspólne kolory udostępnione** | Istniejące wstępnie zdefiniowane nazwy tokenów kolorów dla określonych elementów interfejsu użytkownika |
 | Użytkownik ma konkretną funkcję lub grupę funkcji i nie ma udostępnionego koloru dla podobnych elementów. | **Kolory niestandardowe** | Nazwy tokenów kolorów, które są specyficzne dla obszaru i nie powinny być współużytkowane z innymi interfejsami użytkownika |
-| Chcesz zezwolić użytkownikowi końcowemu na Dostosowywanie interfejsu użytkownika lub zawartości (na przykład w przypadku edytorów tekstu lub wyspecjalizowanych okien projektanta). | **Dostosowywanie użytkownika końcowego**<br /><br />**(Narzędzia &gt; Okno dialogowe opcji)** | Ustawienia zdefiniowane na stronie "czcionki i kolory" okna dialogowego ** &gt; Opcje narzędzi** lub wyspecjalizowanej stronie specyficzne dla jednej funkcji interfejsu użytkownika. |
+| Chcesz zezwolić użytkownikowi końcowemu na Dostosowywanie interfejsu użytkownika lub zawartości (na przykład w przypadku edytorów tekstu lub wyspecjalizowanych okien projektanta). | **Dostosowywanie użytkownika końcowego**<br /><br />**(Narzędzia &gt; Okno dialogowe opcji)** | Ustawienia zdefiniowane na stronie "czcionki i kolory" okna dialogowego **&gt; Opcje narzędzi** lub wyspecjalizowanej stronie specyficzne dla jednej funkcji interfejsu użytkownika. |
 
 ### <a name="visual-studio-themes"></a>Motywy programu Visual Studio
 
@@ -81,7 +81,7 @@ Przed użyciem wspólnych udostępnionych kolorów upewnij się, że rozumiesz, 
 
 Zobacz: [Uwidacznianie kolorów dla użytkowników końcowych](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
-Czasami trzeba zezwolić użytkownikowi końcowemu na dostosowanie interfejsu użytkownika, na przykład podczas tworzenia edytora kodu lub powierzchni projektowej. Dostosowywalne składniki interfejsu użytkownika znajdują się w sekcji **czcionki i kolory** okna dialogowego ** &gt; Opcje narzędzi** , w którym użytkownicy mogą wybrać zmianę koloru pierwszego planu, koloru tła lub obu tych funkcji.
+Czasami trzeba zezwolić użytkownikowi końcowemu na dostosowanie interfejsu użytkownika, na przykład podczas tworzenia edytora kodu lub powierzchni projektowej. Dostosowywalne składniki interfejsu użytkownika znajdują się w sekcji **czcionki i kolory** okna dialogowego **&gt; Opcje narzędzi** , w którym użytkownicy mogą wybrać zmianę koloru pierwszego planu, koloru tła lub obu tych funkcji.
 
 ![&gt;Okno dialogowe Opcje narzędzi](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301 — a_ToolsOptionsDialog")<br />&gt;Okno dialogowe Opcje narzędzi
 
@@ -334,13 +334,13 @@ Wiele typowych elementów interfejsu użytkownika ma już zdefiniowane duży kon
 
 ### <a name="overview"></a>Omówienie
 
-Czasami chcesz zezwolić użytkownikowi końcowemu na dostosowanie interfejsu użytkownika, na przykład podczas tworzenia edytora kodu lub powierzchni projektowej. Najbardziej typowym sposobem wykonania tej czynności jest użycie okna dialogowego ** &gt; Opcje narzędzi** . Chyba że masz wysoce wyspecjalizowany interfejs użytkownika, który wymaga specjalnych kontroli, najprostszym sposobem na zaprezentowanie dostosowania jest strona **czcionki i kolory** w sekcji **środowisko** okna dialogowego. Dla każdego elementu, który można dostosowywać, użytkownik może zdecydować się na zmianę koloru pierwszego planu, koloru tła lub obu tych elementów.
+Czasami chcesz zezwolić użytkownikowi końcowemu na dostosowanie interfejsu użytkownika, na przykład podczas tworzenia edytora kodu lub powierzchni projektowej. Najbardziej typowym sposobem wykonania tej czynności jest użycie okna dialogowego **&gt; Opcje narzędzi** . Chyba że masz wysoce wyspecjalizowany interfejs użytkownika, który wymaga specjalnych kontroli, najprostszym sposobem na zaprezentowanie dostosowania jest strona **czcionki i kolory** w sekcji **środowisko** okna dialogowego. Dla każdego elementu, który można dostosowywać, użytkownik może zdecydować się na zmianę koloru pierwszego planu, koloru tła lub obu tych elementów.
 
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>Tworzenie pakietu VSPackage dla dostosowywalnych kolorów
 
 Pakietu VSPackage może kontrolować czcionki i kolory za pomocą niestandardowych kategorii i wyświetlać elementy na stronie właściwości czcionki i kolory. W przypadku korzystania z tego mechanizmu pakietów VSPackage musi implementować interfejs [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) i skojarzone z nim interfejsy.
 
-W zasadzie ten mechanizm może służyć do modyfikowania wszystkich istniejących elementów wyświetlanych i kategorii, które je zawierają. Nie należy jednak jej używać do modyfikowania kategorii edytora tekstu ani elementów wyświetlanych. Aby uzyskać więcej informacji na temat kategorii Edytor tekstu, zobacz [Omówienie czcionek i kolorów](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015&preserve-view=true).
+W zasadzie ten mechanizm może służyć do modyfikowania wszystkich istniejących elementów wyświetlanych i kategorii, które je zawierają. Nie należy jednak jej używać do modyfikowania kategorii edytora tekstu ani elementów wyświetlanych. Aby uzyskać więcej informacji na temat kategorii Edytor tekstu, zobacz [Omówienie czcionek i kolorów](/previous-versions/visualstudio/visual-studio-2015/extensibility/font-and-color-overview?preserve-view=true&view=vs-2015).
 
 Aby zaimplementować niestandardowe kategorie lub elementy wyświetlane, pakietu VSPackage musi:
 
@@ -421,9 +421,9 @@ Aby to zrobić, pakietu VSPackage musi:
 
 - **Obsługa zdarzeń generowanych przez środowisko IDE** przez implementację interfejsu [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) . IDE wywołuje odpowiednią metodę po zmodyfikowaniu przez użytkownika strony czcionki i kolory. Na przykład wywołuje metodę [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) , jeśli wybrano nową czcionkę.
 
-  **ORAZ**
+  **OR**
 
-- **sondowanie środowiska IDE pod kątem zmian**. Można to zrobić za pomocą interfejsu [Niepowodzenie IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) zaimplementowanego przez system. Chociaż głównie do obsługi trwałości, Metoda [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) może uzyskać informacje o czcionce i kolorach dla elementów wyświetlanych. Aby uzyskać więcej informacji na temat ustawień czcionek i kolorów, zobacz artykuł MSDN z [dostępem do przechowywanych ustawień czcionek i kolorów](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015&preserve-view=true).
+- **sondowanie środowiska IDE pod kątem zmian**. Można to zrobić za pomocą interfejsu [Niepowodzenie IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) zaimplementowanego przez system. Chociaż głównie do obsługi trwałości, Metoda [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) może uzyskać informacje o czcionce i kolorach dla elementów wyświetlanych. Aby uzyskać więcej informacji na temat ustawień czcionek i kolorów, zobacz artykuł MSDN z [dostępem do przechowywanych ustawień czcionek i kolorów](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-stored-font-and-color-settings?preserve-view=true&view=vs-2015).
 
 > [!NOTE]
 > Aby upewnić się, że wyniki sondowania są poprawne, użyj interfejsu [IVsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) , aby określić, czy opróżnianie pamięci podręcznej i aktualizacja jest konieczna przed wywołaniem metod pobierania interfejsu [Niepowodzenie IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) .

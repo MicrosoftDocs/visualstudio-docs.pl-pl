@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96342abce736f18d79f89b9441d9b53c068cbecf
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7c51aeea4a1637e5b1b9d2de0d8b92920334e2fc
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583895"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414519"
 ---
 # <a name="respond-to-and-propagate-changes"></a>Odpowiadanie na zmiany i propagowanie zmian
 
@@ -32,7 +32,7 @@ W ramach wytycznych należy wziąć pod uwagę następujące techniki w następu
 |Reguły|Można zdefiniować reguły, które są umieszczane w kolejce do wykonania tuż przed końcem transakcji, w której nastąpiła zmiana. Nie są wykonywane przy cofaniu ani ponawiania. Użyj ich, aby zachować synchronizację jednej części sklepu z inną.|[Reguły propagujące zmiany w modelu](../modeling/rules-propagate-changes-within-the-model.md)|
 |Zdarzenia ze sklepu|Magazyn modelowania udostępnia powiadomienia o zdarzeniach, takich jak dodawanie lub usuwanie elementu lub łącza lub zmiana wartości właściwości. To zdarzenie jest również wykonywane w przypadku cofania i ponawiania. Użyj zdarzeń ze sklepu, aby zaktualizować wartości, które nie znajdują się w sklepie.|[Programy obsługi zdarzeń propagujące zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
 |Zdarzenia platformy .NET|Kształty zawierają programy obsługi zdarzeń reagujące na kliknięcia myszą i inne gesty. Musisz zarejestrować się w celu uzyskania tych zdarzeń dla każdego obiektu. Rejestracja zwykle odbywa się w przesłonięciu InitializeInstanceResources i musi być wykonana dla każdego elementu.<br /><br /> Te zdarzenia zwykle występują poza transakcją.|[Instrukcje: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
-|Reguły dotyczące granic|Reguła granic jest używana w celu ograniczenia granic kształtu.|[BoundsRules — ograniczenie lokalizacji i rozmiaru kształtu](../vs-2015/modeling/boundsrules-constrain-shape-location-and-size.md?view=vs-2015&preserve-view=true)|
+|Reguły dotyczące granic|Reguła granic jest używana w celu ograniczenia granic kształtu.|[BoundsRules — ograniczenie lokalizacji i rozmiaru kształtu](/previous-versions/visualstudio/visual-studio-2015/modeling/boundsrules-constrain-shape-location-and-size?preserve-view=true&view=vs-2015)|
 |Reguły wyboru|Reguły wyboru ograniczają możliwości wybranych przez użytkownika.|[Porady: ograniczenie bieżącego wyboru i uzyskiwanie dostępu do niego](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Wskaż Stany elementów modelu przy użyciu funkcji kształtów i łączników, takich jak cień, groty strzałek, kolor i szerokość linii oraz styl.|[Aktualizowanie kształtów i łączników, aby odzwierciedlały model](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
@@ -55,4 +55,4 @@ Użyj zdarzeń ze sklepu, aby zsynchronizować model z obiektami spoza magazynu 
 ## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
-- [Pisanie kodu w celu dostosowania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Pisanie kodu w celu dostosowania języka Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md)

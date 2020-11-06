@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d3b125737162146af954ad8561eb41e5ee8f2e8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7d0cc0dcf40ab9231e3af6208ab2f844c69f3398
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584532"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414558"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Kolorowanie składni w starszej wersji usługi językowej
 
@@ -28,7 +28,7 @@ Program Visual Studio używa usługi kolorowania do identyfikowania elementów j
  ![Grafika dotycząca kolorowania SVC](../../extensibility/internals/media/figlgsvccolorizer.gif)
 
 > [!NOTE]
-> Usługa kolorowania składni jest oddzielona od ogólnego mechanizmu programu Visual Studio do kolorowania tekstu. Aby uzyskać więcej informacji o ogólnym [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] mechanizmie, który obsługuje kolorowanie, zobacz [using Fonts and Colors](../../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015&preserve-view=true).
+> Usługa kolorowania składni jest oddzielona od ogólnego mechanizmu programu Visual Studio do kolorowania tekstu. Aby uzyskać więcej informacji o ogólnym [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] mechanizmie, który obsługuje kolorowanie, zobacz [using Fonts and Colors](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015).
 
  Oprócz kolorowania usługa języka może dostarczać niestandardowe elementy, które są używane przez Edytor, dzięki reklamom, które udostępniają niestandardowe elementy z możliwością obsługi. Można to zrobić przez zaimplementowanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> interfejsu w tym samym obiekcie, który implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfejs. Zwraca liczbę niestandardowych elementów do oddzielenia, gdy Edytor wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> metodę i zwraca indywidualny, niestandardowy element, który jest wywoływany przez Edytor <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> .
 
@@ -60,7 +60,7 @@ Program Visual Studio używa usługi kolorowania do identyfikowania elementów j
     3. Użyj informacji o kolorach zwracanych przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metodę w celu wyświetlenia zaznaczonego tekstu.
 
 > [!NOTE]
-> Oprócz używania kolorowania usługi językowej pakietu VSPackage może również używać mechanizmu kolorowania tekstu programu Visual Studio ogólnego przeznaczenia. Aby uzyskać więcej informacji na temat tego mechanizmu, zobacz [using Fonts and Colors](../../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015&preserve-view=true).
+> Oprócz używania kolorowania usługi językowej pakietu VSPackage może również używać mechanizmu kolorowania tekstu programu Visual Studio ogólnego przeznaczenia. Aby uzyskać więcej informacji na temat tego mechanizmu, zobacz [using Fonts and Colors](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015).
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Implementowanie kolorowania składni](../../extensibility/internals/implementing-syntax-coloring.md)

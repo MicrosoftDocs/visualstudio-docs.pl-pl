@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 2fd91266f4a829193296b05c9a28dc96a9a88d31
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860498"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414064"
 ---
 # <a name="overview-of-source-code-analysis"></a>Przegląd analizy kodu źródłowego
 
@@ -25,7 +25,7 @@ Analizatory .NET Compiler Platform (Roslyn) sprawdzają kod C# lub Visual Basic 
 
 Analizatory mogą być podzielone na następujące grupy:
 
-- Analizatory [stylów kodu](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) są wbudowane w program Visual Studio. Identyfikator diagnostyki lub kod dla tych analizatorów ma format IDExxxx, na przykład IDE0067. Preferencje można skonfigurować na [stronie Opcje edytora tekstu](../ide/code-styles-and-code-cleanup.md) lub w [pliku EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options). Począwszy od platformy .NET 5,0, analizatory stylów kodu są dołączone do zestawu .NET SDK i mogą być ściśle wymuszane jako ostrzeżenia lub błędy kompilacji. Aby uzyskać więcej informacji, zobacz [tutaj](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
+- Analizatory [stylów kodu](/dotnet/fundamentals/code-analysis/code-style-rule-options?preserve-view=true&view=vs-2019#convention-categories) są wbudowane w program Visual Studio. Identyfikator diagnostyki lub kod dla tych analizatorów ma format IDExxxx, na przykład IDE0067. Preferencje można skonfigurować na [stronie Opcje edytora tekstu](../ide/code-styles-and-code-cleanup.md) lub w [pliku EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options). Począwszy od platformy .NET 5,0, analizatory stylów kodu są dołączone do zestawu .NET SDK i mogą być ściśle wymuszane jako ostrzeżenia lub błędy kompilacji. Aby uzyskać więcej informacji, zobacz [tutaj](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
 - Analizatory [jakości kodu](/dotnet/fundamentals/code-analysis/quality-rules/index) są teraz dołączone do zestawu SDK programu .NET 5 i domyślnie włączone. Identyfikator diagnostyki lub kod dla tych analizatorów ma format CAxxxx, na przykład CA1822. Aby uzyskać więcej informacji, zobacz [Omówienie analizy jakości kodu platformy .NET](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 
@@ -52,13 +52,13 @@ Naruszenia analizatora zgłoszone na liście błędów pasują do [ustawienia po
 
 ![Zygzaky w edytorze kodu w programie Visual Studio](media/diagnostics-severity-colors.png)
 
-Wiele reguł analizatorów lub *diagnostyki*ma jedną lub więcej skojarzonych *poprawek kodu* , które można zastosować, aby poprawić naruszenie reguły. Poprawki kodu są wyświetlane w menu ikony żarówki wraz z innymi typami [szybkich akcji](../ide/quick-actions.md). Aby uzyskać informacje na temat tych poprawek kodu, zobacz [Common Quick Actions](../ide/quick-actions.md).
+Wiele reguł analizatorów lub *diagnostyki* ma jedną lub więcej skojarzonych *poprawek kodu* , które można zastosować, aby poprawić naruszenie reguły. Poprawki kodu są wyświetlane w menu ikony żarówki wraz z innymi typami [szybkich akcji](../ide/quick-actions.md). Aby uzyskać informacje na temat tych poprawek kodu, zobacz [Common Quick Actions](../ide/quick-actions.md).
 
 ![Naruszenie analizatora i szybka czynność usuwania kodu](../code-quality/media/built-in-analyzer-code-fix.png)
 
 ## <a name="configure-analyzer-severity-levels"></a>Konfigurowanie poziomów ważności analizatora
 
-Można skonfigurować ważność reguł analizatora lub *diagnostyki*, w [pliku EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) lub w [menu żarówki](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
+Można skonfigurować ważność reguł analizatora lub *diagnostyki* , w [pliku EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) lub w [menu żarówki](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
 
 Analizatory można również skonfigurować w taki sposób, aby badali kod w czasie kompilacji i na żywo podczas pisania. Można skonfigurować zakres analizy kodu na żywo do wykonania tylko dla bieżącego dokumentu, wszystkie otwarte dokumenty lub całe rozwiązanie. Zobacz [jak to zrobić: Konfigurowanie zakresu analizy kodu na żywo](./configure-live-code-analysis-scope-managed-code.md).
 
