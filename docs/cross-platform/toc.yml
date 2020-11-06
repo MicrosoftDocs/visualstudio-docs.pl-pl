@@ -6,31 +6,31 @@
 - name: Narzędzia Visual Studio Tools for Unity
   items:
     - name: Narzędzia Visual Studio Tools for Unity
-      href: visual-studio-tools-for-unity.md
+      href: /gamedev/unity/get-started/visual-studio-tools-for-unity.md
     - name: Wprowadzenie do narzędzi Visual Studio Tools for Unity
-      href: getting-started-with-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/get-started/getting-started-with-visual-studio-tools-for-unity.md
     - name: Korzystanie z narzędzi Visual Studio Tools for Unity
-      href: using-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/get-started/using-visual-studio-tools-for-unity.md
     - name: Używanie platformy .NET 4.x w środowisku Unity
-      href: unity-scripting-upgrade.md
+      href: /gamedev/unity/unity-scripting-upgrade.md
     - name: Programowanie za pomocą narzędzi Visual Studio Tools for Unity
       items:
         - name: Programowanie za pomocą narzędzi Visual Studio Tools for Unity
-          href: programming-visual-studio-tools-for-unity.md
+          href: /gamedev/unity/extensibility/programming-visual-studio-tools-for-unity.md
         - name: Dostosowywanie plików projektu utworzonych za pomocą rozszerzenia VSTU
-          href: customize-project-files-created-by-vstu.md
+          href: /gamedev/unity/extensibility/customize-project-files-created-by-vstu.md
         - name: Udostępnianie wywołania zwrotnego dziennika środowiska Unity za pomocą rozszerzenia VSTU
-          href: share-the-unity-log-callback-with-vstu.md
+          href: /gamedev/unity/extensibility/share-the-unity-log-callback-with-vstu.md
     - name: Programowanie za pomocą aparatu Unity i platformy Azure
-      href: visual-studio-tools-for-unity-azure.md
+      href: /gamedev/unity/visual-studio-tools-for-unity-azure.md
     - name: Rozwiązywanie problemów i znane problemy (Visual Studio Tools dla Unity)
-      href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/troubleshooting/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
     - name: 'Dziennik zmian (narzędzia Visual Studio Tools for Unity, system Windows)'
-      href: change-log-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/change-log-visual-studio-tools-for-unity.md
     - name: 'Dziennik zmian (narzędzia Visual Studio Tools for Unity, komputery Mac)'
-      href: change-log-visual-studio-tools-for-unity-mac.md
+      href: /gamedev/unity/change-log-visual-studio-tools-for-unity-mac.md
     - name: Metodyka DevOps z użyciem aplikacji Unity
-      href: application-lifecycle-management-alm-with-unity-apps.md
+      href: /gamedev/unity/application-lifecycle-management-alm-with-unity-apps.md
 - name: Opracowywanie aplikacji mobilnych na wiele platform w języku C++
   href: /cpp/cross-platform/
 - name: Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
