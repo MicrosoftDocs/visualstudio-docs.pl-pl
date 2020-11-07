@@ -1,6 +1,8 @@
 ---
 title: Konfiguruj analizę kodu
 ms.date: 04/04/2018
+description: Dowiedz się, jak skonfigurować zestaw reguł, który jest wykorzystywany przez program Visual Studio starszej analizy kodu. Zobacz, jak zastosować zestaw reguł do jednego lub wielu projektów w rozwiązaniu.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94742b452bfd665dc35c59ef831bca2cdacf1f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c14a72ff0d797f2fcab8e4ac62d0e0a3fb1001f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801051"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348804"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Instrukcje: Konfigurowanie starszej analizy dla kodu zarządzanego
 
@@ -36,15 +38,15 @@ W programie Visual Studio można wybrać spośród listy [zestawów reguł](../c
 
 1. Otwórz kartę **Analiza kodu** na stronach właściwości projektu. Można to zrobić w jeden z następujących sposobów:
 
-   - W **Eksplorator rozwiązań**wybierz projekt. Na pasku menu wybierz pozycję **Analizuj**  >  **Skonfiguruj analizę kodu**  >  **dla \<projectname> **.
+   - W **Eksplorator rozwiązań** wybierz projekt. Na pasku menu wybierz pozycję **Analizuj**  >  **Skonfiguruj analizę kodu**  >  **dla \<projectname>**.
 
-   - Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**, a następnie wybierz kartę **Analiza kodu** .
+   - Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości** , a następnie wybierz kartę **Analiza kodu** .
 
 2. Na listach **Konfiguracja** i **platforma** wybierz konfigurację kompilacji i platformę docelową.
 
 ::: moniker range="vs-2017"
 
-3. Aby uruchomić analizę kodu za każdym razem, gdy projekt zostanie skompilowany przy użyciu wybranej konfiguracji, wybierz pozycję **Włącz analizę kodu podczas kompilacji**. Możesz również ręcznie uruchomić analizę kodu, wybierając pozycję **Analizuj**Przeprowadź analizę kodu  >  **Run Code Analysis**  >  **Uruchom analizę kodu \<projectname> na **.
+3. Aby uruchomić analizę kodu za każdym razem, gdy projekt zostanie skompilowany przy użyciu wybranej konfiguracji, wybierz pozycję **Włącz analizę kodu podczas kompilacji**. Możesz również ręcznie uruchomić analizę kodu, wybierając pozycję **Analizuj** Przeprowadź analizę kodu  >  **Run Code Analysis**  >  **Uruchom analizę kodu \<projectname> na**.
 
 ::: moniker-end
 
@@ -85,7 +87,7 @@ Domyślnie wszystkie zarządzane projekty rozwiązania są przypisane do zestawu
 
 2. W menu **Analizuj** wybierz pozycję **Konfiguruj analizę kodu dla rozwiązania**.
 
-3. W razie potrzeby rozwiń węzeł **wspólne właściwości**, a następnie wybierz pozycję **Ustawienia analizy kodu**.
+3. W razie potrzeby rozwiń węzeł **wspólne właściwości** , a następnie wybierz pozycję **Ustawienia analizy kodu**.
 
 4. Można określić zestaw reguł dla jednego lub kilku projektów:
 

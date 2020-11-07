@@ -1,6 +1,8 @@
 ---
 title: Konfigurowanie zakresu analizy kodu na żywo dla platformy .NET
 ms.date: 09/01/2020
+description: Dowiedz się więcej na temat analizy w tle w programie Visual Studio. Zobacz, jak ograniczyć analizę do widocznego dokumentu, wszystkie otwarte dokumenty lub wszystkie pliki i projekty.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
@@ -12,18 +14,18 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57ff963de193360712e92b76f3cafd7a75ee6b89
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 9690e50ccbe927702ef1b3e7e99545c07cdced41
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90035420"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348466"
 ---
 # <a name="configure-live-code-analysis-for-net"></a>Konfigurowanie analizy kodu na żywo dla platformy .NET
 
-Program Visual Studio wykonuje wiele analiz kodu na żywo, nazywanych również *analizą w tle*, podczas edytowania plików źródłowych w edytorze. Niektóre z nich są wymagane do minimalnej analizy dla akceptowalnego środowiska edytowania środowiska IDE programu Visual Studio. Niektóre z nich mają na celu zwiększenie czasu odpowiedzi dla funkcji środowiska IDE. Niektóre z nich umożliwiają włączenie dodatkowych funkcji środowiska IDE, takich jak diagnostyka i poprawki kodu z analizatorów Roslyn. W oparciu o funkcje te analizy można grupować w następujący sposób:
+Program Visual Studio wykonuje wiele analiz kodu na żywo, nazywanych również *analizą w tle* , podczas edytowania plików źródłowych w edytorze. Niektóre z nich są wymagane do minimalnej analizy dla akceptowalnego środowiska edytowania środowiska IDE programu Visual Studio. Niektóre z nich mają na celu zwiększenie czasu odpowiedzi dla funkcji środowiska IDE. Niektóre z nich umożliwiają włączenie dodatkowych funkcji środowiska IDE, takich jak diagnostyka i poprawki kodu z analizatorów Roslyn. W oparciu o funkcje te analizy można grupować w następujący sposób:
 
-- **Obliczanie danych diagnostycznych w tle**: Analiza błędów, ostrzeżeń i sugestii w plikach źródłowych. Te diagnostyki są wyświetlane jako wpisy na liście błędów i w edytorze. Mogą być klasyfikowane do dwóch kategorii:
+- **Obliczanie danych diagnostycznych w tle** : Analiza błędów, ostrzeżeń i sugestii w plikach źródłowych. Te diagnostyki są wyświetlane jako wpisy na liście błędów i w edytorze. Mogą być klasyfikowane do dwóch kategorii:
   - Diagnostyka kompilatora C# i Visual Basic
   - Diagnostyka analizatora Roslyn, która obejmuje:
 
@@ -31,7 +33,7 @@ Program Visual Studio wykonuje wiele analiz kodu na żywo, nazywanych również 
     - Wbudowane analizatory urzędów certyfikacji dla sugestii dotyczących jakości kodu
     - Pakiety analizatora innych firm [zainstalowane](./install-roslyn-analyzers.md) dla projektów w bieżącym rozwiązaniu.
 
-- **Inne analizy w tle**: Analiza w celu poprawy czasu reakcji i interakcji z programu Visual Studio na potrzeby funkcji środowiska IDE. Przykłady takich analiz są następujące:
+- **Inne analizy w tle** : Analiza w celu poprawy czasu reakcji i interakcji z programu Visual Studio na potrzeby funkcji środowiska IDE. Przykłady takich analiz są następujące:
   - Analiza otwartych plików w tle.
   - Kompilacja w tle projektów z otwartymi plikami w celu zrealizowania symboli w celu uzyskania ulepszonej reakcji niektórych funkcji środowiska IDE.
   - Tworzenie składni i pamięci podręcznych symboli.
@@ -51,9 +53,9 @@ Domyślny zakres każdej analizy w tle został dostrojony, aby zapewnić optymal
 
 Począwszy od programu Visual Studio 2019 w wersji 16,5, użytkownicy mogą jawnie dostosowywać zakres wszystkich analiz kodu na żywo, w tym obliczeń diagnostycznych, dla projektów C# i Visual Basic. Dostępne zakresy analiz to:
 
-- **Bieżący dokument**: minimalizuje zakres analizy kodu na żywo, aby można było wykonać tylko bieżący lub widoczny plik w edytorze.
-- **Otwórz dokumenty**: domyślny zakres analizy kodu na żywo, zgodnie z opisem w powyższej sekcji.
-- **Całe rozwiązanie**: maksymalizuje zakres analizy kodu na żywo do wykonania dla wszystkich plików i projektów w całym rozwiązaniu.
+- **Bieżący dokument** : minimalizuje zakres analizy kodu na żywo, aby można było wykonać tylko bieżący lub widoczny plik w edytorze.
+- **Otwórz dokumenty** : domyślny zakres analizy kodu na żywo, zgodnie z opisem w powyższej sekcji.
+- **Całe rozwiązanie** : maksymalizuje zakres analizy kodu na żywo do wykonania dla wszystkich plików i projektów w całym rozwiązaniu.
 
 W oknie dialogowym Opcje narzędzi można wybrać jeden z powyższych zakresów analizy niestandardowej, wykonując następujące czynności:
 
@@ -66,7 +68,7 @@ W oknie dialogowym Opcje narzędzi można wybrać jeden z powyższych zakresów 
 ![Zakres analizy.](./media/background-analysis-scope.png)
 
 > [!NOTE]
-> W starszych wersjach programu Visual Studio 2019 w wersji 16,5 Użytkownicy mogą dostosować zakres analizy dla obliczeń diagnostycznych do całego rozwiązania przy użyciu pola wyboru **Włącz analizę pełnej rozwiązań** z opcji **Narzędzia**  >  **Options**  >  **Edytor tekstu**  >  **C#** lub **podstawowa**  >  karta**Zaawansowane** . W poprzednich wersjach programu Visual Studio nie jest obsługiwane minimalizowanie zakresu analizy w tle.
+> W starszych wersjach programu Visual Studio 2019 w wersji 16,5 Użytkownicy mogą dostosować zakres analizy dla obliczeń diagnostycznych do całego rozwiązania przy użyciu pola wyboru **Włącz analizę pełnej rozwiązań** z opcji **Narzędzia**  >  **Options**  >  **Edytor tekstu**  >  **C#** lub **podstawowa**  >  karta **Zaawansowane** . W poprzednich wersjach programu Visual Studio nie jest obsługiwane minimalizowanie zakresu analizy w tle.
 
 ## <a name="automatically-minimize-live-code-analysis-scope"></a>Automatycznie Minimalizuj zakres analizy kodu na żywo
 
@@ -74,7 +76,7 @@ Jeśli program Visual Studio wykryje, że dostępna jest 200 MB lub mniej pamię
 
 ![Zakres analizy minimalizowania tekstu alertu](./media/fsa_alert.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Automatyczne wstrzymanie funkcji](./automatic-feature-suspension.md)
 - [Żądanie funkcji trybu oszczędzania w trybie oszczędzania](https://github.com/dotnet/roslyn/issues/38429)

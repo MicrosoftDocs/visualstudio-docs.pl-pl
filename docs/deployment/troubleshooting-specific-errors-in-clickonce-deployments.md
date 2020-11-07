@@ -1,5 +1,6 @@
 ---
 title: Rozwiązywanie problemów z błędami (wdrożenia ClickOnce)
+description: W tym artykule opisano typowe błędy, które mogą wystąpić podczas wdrażania aplikacji ClickOnce i przedstawiono kroki umożliwiające rozwiązanie każdego problemu.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 351aad83fe28251fcb769c76dd3d63b61b108b6b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: af462178cf18d57afa6b51aedaba0004615ebb6f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809456"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349269"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce
 W tym artykule wymieniono następujące typowe błędy, które mogą wystąpić podczas wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, i przedstawiono kroki umożliwiające rozwiązanie każdego problemu.
@@ -90,7 +91,7 @@ W tym artykule wymieniono następujące typowe błędy, które mogą wystąpić 
  Aby można było używać PrivatePath (łączenie ścieżek Bing), aplikacja musi zażądać pełnego uprawnienia zaufania. Spróbuj zmienić manifest aplikacji, aby zażądać pełnego zaufania, a następnie spróbuj ponownie.
 
 #### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>Podczas dezinstalacji pojawia się komunikat "nie można odinstalować aplikacji"
- Ten komunikat zazwyczaj wskazuje, że aplikacja została już usunięta lub że magazyn jest uszkodzony. Po kliknięciu przycisku **OK**zostanie usunięty wpis **Dodaj/Usuń program** .
+ Ten komunikat zazwyczaj wskazuje, że aplikacja została już usunięta lub że magazyn jest uszkodzony. Po kliknięciu przycisku **OK** zostanie usunięty wpis **Dodaj/Usuń program** .
 
 #### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>Podczas instalacji pojawia się komunikat z informacją, że zależności platformy nie są zainstalowane
  Brak wymagań wstępnych w pamięci podręcznej GAC (Global Assembly Cache) wymaganej przez aplikację w celu jej uruchomienia.
@@ -113,7 +114,7 @@ W tym artykule wymieniono następujące typowe błędy, które mogą wystąpić 
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Podjęto próbę zalogowania się za pomocą certyfikatu w magazynie certyfikatów i odebranym pustym komunikatem
  W oknie dialogowym **podpisywania** należy:
 
-- Wybierz pozycję **Podpisz z przechowywanym certyfikatem**i
+- Wybierz pozycję **Podpisz z przechowywanym certyfikatem** i
 
 - Wybierz certyfikat z listy. pierwszy certyfikat nie jest wybór domyślny.
 

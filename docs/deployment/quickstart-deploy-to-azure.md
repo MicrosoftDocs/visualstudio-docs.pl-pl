@@ -1,5 +1,7 @@
 ---
 title: Publikowanie w usłudze Azure App Service
+description: Dowiedz się więcej na temat metod publikowania aplikacji ASP.NET, ASP.NET Core, Node.js i .NET Core w systemie Azure App Service lub Azure App Service Linux.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 5881e1dfb1842e2a6d85efe73534f8db2e2f734e
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 83446ab87af07e3ac46594beeecec781f596ecff
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830746"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349584"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publish a Web app to Azure App Service using Visual Studio (Publikowanie aplikacji internetowej w usłudze Azure App Service przy użyciu programu Visual Studio)
 
@@ -31,7 +33,7 @@ W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na p
 
 ## <a name="publish-to-azure-app-service-on-windows"></a>Publikowanie w usłudze Azure App Service w systemie Windows
 
-1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Publikuj** (lub Użyj **Build**  >  elementu menu Kompiluj**publikację** ).
+1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Publikuj** (lub Użyj **Build**  >  elementu menu Kompiluj **publikację** ).
 
     ![Polecenie Publikuj w menu kontekstowym projektu w Eksplorator rozwiązań](../deployment/media/quickstart-publish.png "Wybierz pozycję Publikuj")
 
@@ -49,7 +51,7 @@ W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na p
 
     ![Link do tworzenia nowego wystąpienia Azure App Service](../deployment/media/quickstart-publish-windows-create-new-link.png)
 
-1. W oknie dialogowym **tworzenie Azure App Service (Windows)** , **Nazwa aplikacji**, **Grupa zasobów**i pola wprowadzania **planu App Service** są wypełniane. Te nazwy można zachować lub zmienić. Gdy wszystko będzie gotowe, wybierz pozycję **Utwórz**.
+1. W oknie dialogowym **tworzenie Azure App Service (Windows)** , **Nazwa aplikacji** , **Grupa zasobów** i pola wprowadzania **planu App Service** są wypełniane. Te nazwy można zachować lub zmienić. Gdy wszystko będzie gotowe, wybierz pozycję **Utwórz**.
 
     ![Wybierz Azure App Service](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 
@@ -61,12 +63,12 @@ W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na p
 
     ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-windows-summary-page.png)
 
-## <a name="clean-up-resources"></a>Czyszczenie zasobów
+## <a name="clean-up-resources"></a>Oczyszczanie zasobów
 
 W poprzednich krokach utworzono zasoby platformy Azure w grupie zasobów. Jeśli nie będziesz już potrzebować tych zasobów w przyszłości, możesz je usunąć przez usunięcie grupy zasobów.
-W menu znajdującym się po lewej stronie w witrynie Azure Portal wybierz pozycję **Grupy zasobów**, a następnie wybierz pozycję **myResourceGroup**.
+W menu znajdującym się po lewej stronie w witrynie Azure Portal wybierz pozycję **Grupy zasobów** , a następnie wybierz pozycję **myResourceGroup**.
 Na stronie grupy zasobów upewnij się, że zasoby na liście są tymi, które chcesz usunąć.
-Wybierz pozycję **Usuń**, wpisz ciąg **myResourceGroup** w polu tekstowym, a następnie wybierz opcję **Usuń**.
+Wybierz pozycję **Usuń** , wpisz ciąg **myResourceGroup** w polu tekstowym, a następnie wybierz opcję **Usuń**.
 
 ## <a name="next-steps"></a>Następne kroki
 

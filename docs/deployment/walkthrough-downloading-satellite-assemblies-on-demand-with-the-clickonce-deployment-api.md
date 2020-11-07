@@ -1,5 +1,6 @@
 ---
 title: Pobierz zestaw satelicki na żądanie (interfejs API ClickOnce)
+description: Dowiedz się, jak oznaczyć zestawy satelickie jako opcjonalne i pobrać tylko zestaw, który jest wymagany przez komputer kliencki dla bieżących ustawień kultury.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda69b1aad8e70dce14bb3f25e6bf935103642bf
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 54deb51714183497173c7df4e346bb65613366a2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809240"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349298"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Przewodnik: pobieranie zestawów satelickich na żądanie przy użyciu interfejsu API wdrażania ClickOnce
 Aplikacje Windows Forms można skonfigurować dla wielu kultur przy użyciu zestawów satelickich. *Zestaw satelicki* jest zestawem zawierającym zasoby aplikacji dla kultury innej niż domyślna kultura aplikacji.
@@ -55,7 +56,7 @@ Aplikacje Windows Forms można skonfigurować dla wielu kultur przy użyciu zest
 
 4. Kliknij kartę **pliki** .
 
-5. Kliknij przycisk **wielokropka** (**...**) i wybierz katalog zawierający wszystkie zestawy i pliki aplikacji, w tym zestawy satelickie, które zostały wygenerowane przy użyciu *Resgen.exe*. (Zestaw satelicki będzie miał nazwę w postaci * \<isoCode>\ApplicationName.resources.dll*, gdzie \<isoCode> jest identyfikatorem języka w formacie RFC 1766).
+5. Kliknij przycisk **wielokropka** ( **...** ) i wybierz katalog zawierający wszystkie zestawy i pliki aplikacji, w tym zestawy satelickie, które zostały wygenerowane przy użyciu *Resgen.exe*. (Zestaw satelicki będzie miał nazwę w postaci *\<isoCode>\ApplicationName.resources.dll* , gdzie \<isoCode> jest identyfikatorem języka w formacie RFC 1766).
 
 6. Kliknij przycisk **Wypełnij** , aby dodać pliki do wdrożenia.
 

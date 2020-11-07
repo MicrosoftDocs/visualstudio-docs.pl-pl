@@ -1,16 +1,18 @@
 ---
 title: Wyłącz analizę kodu starszej wersji
 ms.date: 10/04/2019
+description: Dowiedz się, jak włączać i wyłączać analizę kodu binarnego w programie Visual Studio. Zobacz jak skonfigurować tę funkcję w projektach kodu zarządzanego.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eb4422a12620d7650b4fe150313b10fe59835064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 582d0e0d86909b266bbb18f83745b1b2261f0d10
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801025"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348752"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Instrukcje: Włączanie i wyłączanie analizy kodu binarnego dla kodu zarządzanego
 
@@ -21,7 +23,7 @@ Można skonfigurować starszą analizę kodu (analiza binarna) do uruchomienia p
 
 Aby włączyć lub wyłączyć analizę starszego kodu:
 
-1. W **Eksplorator rozwiązań**wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy) projekt, a następnie wybierz pozycję **Właściwości**.
+1. W **Eksplorator rozwiązań** wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy) projekt, a następnie wybierz pozycję **Właściwości**.
 
 2. W oknie dialogowym właściwości projektu przejdź do karty **Analiza kodu** .
 

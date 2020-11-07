@@ -1,6 +1,8 @@
 ---
 title: Zainstaluj analizatory innych firm
 ms.date: 08/27/2020
+description: Dowiedz się, jak instalować analizatory innych firm w programie Visual Studio. Zobacz jak zainstalować analizatory w plikach VSIX i pakietach analizatora NuGet.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,16 +13,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9da78f4c8e76f4e5b79f4cbdb0739d34fc465330
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c6978c19f01b278886f72ff21d62ebf6c5cf57f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091454"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348687"
 ---
 # <a name="install-third-party-analyzers"></a>Instalowanie analizatorów innych firm
 
-Program Visual Studio zawiera podstawowe zestawy .NET Compiler Platform (*Roslyn*) analizatorów. Te analizatory są zawsze włączone. Możesz zainstalować dodatkowe analizatory jako pakiety NuGet lub jako rozszerzenia programu Visual Studio w plikach *VSIX* .
+Program Visual Studio zawiera podstawowe zestawy .NET Compiler Platform ( *Roslyn* ) analizatorów. Te analizatory są zawsze włączone. Możesz zainstalować dodatkowe analizatory jako pakiety NuGet lub jako rozszerzenia programu Visual Studio w plikach *VSIX* .
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Aby zainstalować pakiety analizatora NuGet
 
@@ -33,7 +35,7 @@ Program Visual Studio zawiera podstawowe zestawy .NET Compiler Platform (*Roslyn
    > [!NOTE]
    > Strona www.nuget.org każdego pakietu analizatora pokazuje polecenie do wklejenia do **konsoli Menedżera pakietów**. Istnieje jeszcze przycisk przydatny do kopiowania tekstu do Schowka.
 
-   Zestawy analizatora są zainstalowane i pojawiają się w **Eksplorator rozwiązań** w obszarze **References**  >  **analizatory**odwołań.
+   Zestawy analizatora są zainstalowane i pojawiają się w **Eksplorator rozwiązań** w obszarze **References**  >  **analizatory** odwołań.
 
 ## <a name="to-install-vsix-analyzers"></a>Aby zainstalować analizatory VSIX
 
@@ -63,7 +65,7 @@ Program Visual Studio zawiera podstawowe zestawy .NET Compiler Platform (*Roslyn
 
 3. W polu wyszukiwania wpisz nazwę rozszerzenia analizatora, które chcesz zainstalować. Na przykład może być konieczne [zainstalowanie analizatorów FxCop firmy Microsoft](install-fxcop-analyzers.md#vsix) w celu sprawdzenia kodu pod kątem problemów z zabezpieczeniami i wydajnością, między innymi.
 
-4. Wybierz pozycję **Pobierz**.
+4. Kliknij pozycję **Pobierz**.
 
    Rozszerzenie jest pobierane.
 
@@ -75,7 +77,7 @@ Program Visual Studio zawiera podstawowe zestawy .NET Compiler Platform (*Roslyn
 
 6. Wybierz pozycję **Modyfikuj** , aby rozpocząć instalację.
 
-7. Po minucie lub dwóch instalacjach zostanie zakończona. Wybierz pozycję **Zamknij**.
+7. Po minucie lub dwóch instalacjach zostanie zakończona. Wybierz pozycję **Close** (Zamknij).
 
 8. Otwórz ponownie program Visual Studio.
 

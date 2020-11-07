@@ -1,5 +1,6 @@
 ---
 title: Ustawianie strefy zabezpieczeń (Aplikacja ClickOnce)
+description: Dowiedz się więcej o ustawianiu uprawnień zabezpieczeń dostępu kodu dla aplikacji ClickOnce, która rozpoczyna się od podstawowego zestawu uprawnień w projektancie projektu.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59b099a406f31bf2a1c1266d76bb037ac3e85e19
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d2e8b49f833b5dd91dc6379d2a015d41a9679afe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809732"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349779"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Instrukcje: Ustawianie strefy zabezpieczeń dla aplikacji ClickOnce
 Podczas ustawiania uprawnień zabezpieczeń dostępu kodu dla aplikacji ClickOnce należy zacząć od podstawowego zestawu uprawnień na stronie **zabezpieczenia** **projektanta projektu**.
@@ -31,7 +32,7 @@ Podczas ustawiania uprawnień zabezpieczeń dostępu kodu dla aplikacji ClickOnc
 
 ### <a name="to-set-a-security-zone"></a>Aby ustawić strefę zabezpieczeń
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Zabezpieczenia**.
 

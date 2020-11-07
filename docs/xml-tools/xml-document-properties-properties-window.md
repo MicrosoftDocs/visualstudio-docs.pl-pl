@@ -1,5 +1,7 @@
 ---
 title: Właściwości dokumentu XML, Właściwości, okno
+description: Informacje o właściwościach dokumentu XML w okno Właściwości, które zawierają podstawowe informacje o aktywnym dokumencie w edytorze XML.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31098083383b1669e0fe79423c212f1f38208acc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592428"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350234"
 ---
 # <a name="xml-document-properties-properties-window"></a>Właściwości dokumentu XML, okno Właściwości
 
@@ -28,7 +30,7 @@ Kodowanie znaków dla pliku. Zmiana tej właściwości powoduje także zmianę a
 
 **Dane wejściowe**
 
-Dokument wejściowy skojarzony z arkuszem stylów XSLT. Jest on używany przez polecenia **Uruchom XSLT** , na przykład **kod XML**  >  **uruchamiania XSLT bez debugowania**. Dokument można wybrać za pomocą przycisku Przeglądaj (..**.**).
+Dokument wejściowy skojarzony z arkuszem stylów XSLT. Jest on używany przez polecenia **Uruchom XSLT** , na przykład **kod XML**  >  **uruchamiania XSLT bez debugowania**. Dokument można wybrać za pomocą przycisku Przeglądaj (.. **.** ).
 
 Ta właściwość jest widoczna tylko wtedy, gdy plik XSLT jest otwarty w edytorze.
 

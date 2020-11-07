@@ -1,5 +1,7 @@
 ---
 title: Wdrażanie w folderze lokalnym
+description: Dowiedz się, jak publikować aplikacje ASP.NET, ASP.NET Core, .NET Core i Python w folderze z programu Visual Studio za pomocą narzędzia do publikowania.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 800059dc8d5a3e6ccfb72c588fbb61423a338cba
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f392cc2dcb474487a37076229c0b10f7359b9251
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036395"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349571"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Wdrażanie aplikacji w folderze przy użyciu programu Visual Studio
 

@@ -1,5 +1,6 @@
 ---
 title: Tworzenie/aktualizowanie standardowych zasad ewidencjonowania analizy kodu
+description: Dowiedz się, jak upewnić się, że analiza kodu działa we wszystkich projektach kodu w projekcie usługi Azure DevOps. Zobacz jak skonfigurować zasady ewidencjonowania analizy kodu projektu.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad889ba106c288c07111857be965ef8d6c8295df
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d5f03cbd78944d49301362c07d01497abb22734c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808629"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348765"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Porady: tworzenie lub aktualizowanie standardowych zasad ewidencjonowania analizy kodu
 
@@ -36,7 +37,7 @@ Po określeniu zasad ewidencjonowania dla kodu zarządzanego członkowie zespoł
 
 ## <a name="to-open-the-check-in-policy-editor"></a>Aby otworzyć Edytor zasad ewidencjonowania
 
-1. W Team Explorer kliknij prawym przyciskiem myszy nazwę projektu, wskaż polecenie **Ustawienia projektu**, a następnie kliknij pozycję **Kontrola źródła**.
+1. W Team Explorer kliknij prawym przyciskiem myszy nazwę projektu, wskaż polecenie **Ustawienia projektu** , a następnie kliknij pozycję **Kontrola źródła**.
 
 1. W oknie dialogowym **Kontrola źródła** wybierz kartę **zasady ewidencjonowania** .
 

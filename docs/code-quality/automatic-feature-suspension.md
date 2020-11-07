@@ -1,6 +1,8 @@
 ---
 title: Automatyczne wstrzymanie funkcji
 ms.date: 11/04/2016
+description: Dowiedz się, w jaki sposób program Visual Studio zmniejsza zakres analizy, wyłącza tryb niskiego opóźnienia odzyskiwania pamięci i opróżnia pamięć podręczną, gdy pamięć systemowa jest ograniczona.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 976e676cda09d50e34acb88a12551b1531595888
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 12b15ed8aa02e53841b85245350735258e7ec11d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508382"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348544"
 ---
 # <a name="automatic-feature-suspension"></a>Automatyczne wstrzymanie funkcji
 
@@ -65,7 +67,7 @@ Ponadto pamięci podręczne używane na potrzeby wewnętrznych operacji programu
 > [!NOTE]
 > Ostrzeżenie o zawieszeniu funkcji automatycznych występuje tylko raz dla poszczególnych rozwiązań, a nie dla poszczególnych sesji. Oznacza to, że w przypadku przełączenia z Visual Basic do Visual C# (lub odwrotnie) i uruchomienia do innego stanu niskiej ilości pamięci można prawdopodobnie uzyskać kolejne ostrzeżenie o zawieszeniu funkcji automatycznej.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Konfigurowanie zakresu analizy kodu na żywo dla kodu zarządzanego](./configure-live-code-analysis-scope-managed-code.md)
 - [Podstawy dotyczące odzyskiwania pamięci](/dotnet/standard/garbage-collection/fundamentals)

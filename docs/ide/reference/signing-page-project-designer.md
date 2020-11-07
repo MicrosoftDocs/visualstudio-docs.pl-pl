@@ -1,5 +1,7 @@
 ---
 title: Strona podpisywania, Projektant projektu
+description: Na stronie podpisywanie projektanta projektu można podpisać aplikacje i manifesty wdrażania, a także podpisać zestaw.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: reference
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee2244792d73924793ae82def1f533b909403c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e76be0482353ffe4740956ab16f24d6ce82f4da
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418863"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348518"
 ---
 # <a name="signing-page-project-designer"></a>Strona podpisywania, Projektant projektu
 
@@ -35,7 +37,7 @@ Należy zauważyć, że podpisywanie aplikacji i manifestów wdrożenia jest pro
 
 Ponadto przechowywanie informacji o plikach klucza różni się w przypadku podpisywania manifestu i podpisywania zestawu. W przypadku podpisywania manifestu informacje o kluczu są przechowywane w bazie danych magazynu kryptograficznego komputera i w magazynie certyfikatów systemu Windows bieżącego użytkownika. W przypadku podpisywania zestawu kluczowe informacje są przechowywane tylko w bazie danych magazynu kryptograficznego komputera.
 
-Aby uzyskać dostęp do strony **podpisywania** , wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie w menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę **podpisywanie** .
+Aby uzyskać dostęp do strony **podpisywania** , wybierz węzeł projektu w **Eksplorator rozwiązań** , a następnie w menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę **podpisywanie** .
 
 ## <a name="application-and-deployment-manifest-signing"></a>Podpisywanie manifestu aplikacji i wdrożenia
 
@@ -49,7 +51,7 @@ Pozwala wybrać istniejący certyfikat z osobistego magazynu certyfikatów bież
 
 Kliknięcie pozycji **Wybierz ze sklepu** spowoduje otwarcie okna dialogowego **Wybieranie certyfikatu** zawierającego listę certyfikatów w osobistym magazynie certyfikatów, które są aktualnie prawidłowe (nie wygasłe) i które mają klucze prywatne. Wybrany certyfikat powinien obejmować podpisywanie kodu.
 
-Kliknięcie przycisku **Wyświetl właściwości certyfikatu**spowoduje wyświetlenie okna dialogowego **Szczegóły certyfikatu** . To okno dialogowe zawiera szczegółowe informacje o certyfikacie i zawiera dodatkowe opcje. Aby wyświetlić dodatkowe informacje pomocy, kliknij pozycję **Dowiedz się więcej o certyfikatach** .
+Kliknięcie przycisku **Wyświetl właściwości certyfikatu** spowoduje wyświetlenie okna dialogowego **Szczegóły certyfikatu** . To okno dialogowe zawiera szczegółowe informacje o certyfikacie i zawiera dodatkowe opcje. Aby wyświetlić dodatkowe informacje pomocy, kliknij pozycję **Dowiedz się więcej o certyfikatach** .
 
 Przycisk **Wybierz z pliku**
 
@@ -63,7 +65,7 @@ Przycisk **tworzenia certyfikatu testowego**
 
 Umożliwia utworzenie certyfikatu do testowania. Certyfikat testowy jest używany do podpisywania aplikacji ClickOnce i manifestów wdrożenia.
 
-Kliknięcie przycisku **Utwórz certyfikat testowy** otwiera okno dialogowe **Tworzenie certyfikatu testowego** , w którym można wpisać hasło dla pliku klucza o silnej nazwie dla certyfikatu testowego. Plik ma nazwę *projectname*_TemporaryKey. pfx. Jeśli klikniesz przycisk **OK** bez wpisywania hasła, plik PFX nie jest szyfrowany hasłem.
+Kliknięcie przycisku **Utwórz certyfikat testowy** otwiera okno dialogowe **Tworzenie certyfikatu testowego** , w którym można wpisać hasło dla pliku klucza o silnej nazwie dla certyfikatu testowego. Plik ma nazwę *projectname* _TemporaryKey. pfx. Jeśli klikniesz przycisk **OK** bez wpisywania hasła, plik PFX nie jest szyfrowany hasłem.
 
 Pole **adresu URL serwera znacznika czasowego**
 
@@ -73,7 +75,7 @@ Określa adres serwera, który sygnatura czasowa sygnatury. Po podaniu certyfika
 
 Pole wyboru **podpisz zestaw**
 
-Zaznacz to pole wyboru, aby podpisać zestaw i utworzyć silnie nazwany plik klucza. Aby uzyskać więcej informacji na temat podpisywania zestawu przy użyciu **projektanta projektu**, zobacz [How to: Sign a Assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+Zaznacz to pole wyboru, aby podpisać zestaw i utworzyć silnie nazwany plik klucza. Aby uzyskać więcej informacji na temat podpisywania zestawu przy użyciu **projektanta projektu** , zobacz [How to: Sign a Assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
 Ta opcja używa narzędzia Al.exe dostarczonego przez zestaw Windows Software Development Kit (SDK) do podpisywania zestawu. Aby uzyskać więcej informacji na temat Al.exe, zobacz [How to: Sign a Assembly with silnej nazwy](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 

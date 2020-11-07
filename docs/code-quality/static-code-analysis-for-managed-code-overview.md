@@ -1,6 +1,8 @@
 ---
 title: Starsza analiza dla kodu zarządzanego
 ms.date: 06/12/2019
+description: Dowiedz się więcej na temat starszej analizy w programie Visual Studio. Zobacz, jak pomijać ostrzeżenia i jak uruchamiać analizy ręcznie, automatycznie i podczas zaewidencjonowania i kompilacji.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6ab8171d2317549beabe2d8e552eeeefccd02cf
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: c6f1f12fa7fca964c857e534c1ffae50efe70b27
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927994"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348661"
 ---
 # <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Przegląd starszej analizy kodu zarządzanego w programie Visual Studio
 
@@ -26,7 +28,7 @@ Analiza kodu dla kodu zarządzanego analizuje zestawy zarządzane i raportuje in
 Narzędzie do analizy reprezentuje kontrole wykonywane podczas analizy jako komunikaty ostrzegawcze. Komunikaty ostrzegawcze identyfikują wszelkie istotne problemy związane z programowaniem i projektowaniem oraz, gdy jest to możliwe, dostarczają informacji na temat sposobu rozwiązania problemu.
 
 > [!NOTE]
-> Starsza analiza (analiza kodu statycznego) nie jest obsługiwana w przypadku projektów .NET Core i .NET Standard w programie Visual Studio. Jeśli uruchamiasz analizę kodu w projekcie .NET Core lub .NET Standard w ramach programu MSBuild, zobaczysz błąd podobny do **błędu: CA0055: nie można zidentyfikować platformy dla \<your.dll> **. Aby analizować kod w projektach .NET Core lub .NET Standard, należy zamiast tego użyć [analizatorów kodu](../code-quality/roslyn-analyzers-overview.md) .
+> Starsza analiza (analiza kodu statycznego) nie jest obsługiwana w przypadku projektów .NET Core i .NET Standard w programie Visual Studio. Jeśli uruchamiasz analizę kodu w projekcie .NET Core lub .NET Standard w ramach programu MSBuild, zobaczysz błąd podobny do **błędu: CA0055: nie można zidentyfikować platformy dla \<your.dll>**. Aby analizować kod w projektach .NET Core lub .NET Standard, należy zamiast tego użyć [analizatorów kodu](../code-quality/roslyn-analyzers-overview.md) .
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integracja IDE (zintegrowane środowisko programistyczne)
 
@@ -34,7 +36,7 @@ Możesz uruchomić analizę kodu dla projektu ręcznie lub automatycznie.
 
 Aby uruchomić analizę kodu przy każdej kompilacji projektu, wybierz opcję na stronie właściwości **Analiza kodu** projektu. Aby uzyskać więcej informacji, zobacz [jak: Włączanie i wyłączanie automatycznej analizy kodu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Aby ręcznie uruchomić analizę kodu w projekcie, na pasku menu wybierz pozycję **Analizuj**Przeprowadź  >  **analizę kodu**  >  **Uruchom analizę kodu na \<project> **.
+Aby ręcznie uruchomić analizę kodu w projekcie, na pasku menu wybierz pozycję **Analizuj** Przeprowadź  >  **analizę kodu**  >  **Uruchom analizę kodu na \<project>**.
 
 ## <a name="rule-sets"></a>Zestawy reguł
 

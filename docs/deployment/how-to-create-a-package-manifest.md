@@ -1,5 +1,7 @@
 ---
 title: Tworzenie manifestu pakietu | Microsoft Docs
+description: Dowiedz się więcej o używaniu pakietu programu inicjującego do wdrażania wymagań wstępnych dla aplikacji ClickOnce, która zawiera manifest pakietu dla każdego ustawienia regionalnego.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe51ac8bc8af07038e6bfe6ddb2c5730485ca60b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 43790914be67ddaf2e82f1bb411180d5643ebcbe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851713"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350052"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Instrukcje: tworzenie manifestu pakietu
 Aby wdrożyć wymagania wstępne dla aplikacji, można użyć pakietu programu inicjującego. Pakiet programu inicjującego zawiera jeden plik manifestu produktu, ale manifest pakietu dla każdego ustawienia regionalnego. Funkcje udostępnione w różnych zlokalizowanych wersjach powinny przechodzić do manifestu produktu.
@@ -38,7 +40,7 @@ Aby wdrożyć wymagania wstępne dla aplikacji, można użyć pakietu programu i
 
 2. Utwórz podkatalog o nazwie ustawień regionalnych, takich jak *pl* dla języka angielskiego.
 
-3. W programie Visual Studio Utwórz plik XML o nazwie *package.xml*i Zapisz go w folderze *C:\package\en* .
+3. W programie Visual Studio Utwórz plik XML o nazwie *package.xml* i Zapisz go w folderze *C:\package\en* .
 
 4. Dodaj plik XML, aby wyświetlić nazwę pakietu programu inicjującego, kulturę dla tego zlokalizowanego manifestu pakietu i opcjonalną umowę licencyjną. W poniższym kodzie XML są stosowane zmienne `DisplayName` i `Culture` , które są zdefiniowane w późniejszym elemencie.
 
@@ -98,5 +100,5 @@ installing this package.</String>
 </Package>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)

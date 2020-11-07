@@ -1,5 +1,7 @@
 ---
 title: '&lt;trustInfo, &gt; element (Aplikacja ClickOnce) | Microsoft Docs'
+description: Element trustInfo opisuje minimalne uprawnienia zabezpieczeń wymagane do uruchomienia aplikacji na komputerze klienckim. Element trustInfo jest wymagany.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5873eb18b2f803acfd5aba9444657884b1a24581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6779471edc25435f14511cc2ebcc34e6247225ee
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184435"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349220"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo, &gt; element (Aplikacja ClickOnce)
 Opisuje minimalne uprawnienia zabezpieczeń wymagane do uruchomienia aplikacji na komputerze klienckim.
@@ -70,38 +72,38 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do uruchomienia aplikacji n
  `trustInfo`Element jest wymagany i znajduje się w `asm.v2` przestrzeni nazw. Nie ma atrybutów i zawiera następujące elementy.
 
 ## <a name="security"></a>security
- Wymagany. Ten element jest elementem podrzędnym `trustInfo` elementu. Zawiera `applicationRequestMinimum` element i nie ma żadnych atrybutów.
+ Wymagane. Ten element jest elementem podrzędnym `trustInfo` elementu. Zawiera `applicationRequestMinimum` element i nie ma żadnych atrybutów.
 
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum
- Wymagany. Ten element jest elementem podrzędnym `security` elementu i zawiera `PermissionSet` `assemblyRequest` elementy,, i `defaultAssemblyRequest` . Ten element nie ma atrybutów.
+ Wymagane. Ten element jest elementem podrzędnym `security` elementu i zawiera `PermissionSet` `assemblyRequest` elementy,, i `defaultAssemblyRequest` . Ten element nie ma atrybutów.
 
 ## <a name="permissionset"></a>PermissionSet
- Wymagany. Ten element jest elementem podrzędnym `applicationRequestMinimum` elementu i zawiera `IPermission` element. Ten element ma następujące atrybuty.
+ Wymagane. Ten element jest elementem podrzędnym `applicationRequestMinimum` elementu i zawiera `IPermission` element. Ten element ma następujące atrybuty.
 
 - `ID`
 
-     Wymagany. Identyfikuje zestaw uprawnień. Ten atrybut może mieć dowolną wartość. Identyfikator jest przywoływany w `defaultAssemblyRequest` `assemblyRequest` atrybutach i.
+     Wymagane. Identyfikuje zestaw uprawnień. Ten atrybut może mieć dowolną wartość. Identyfikator jest przywoływany w `defaultAssemblyRequest` `assemblyRequest` atrybutach i.
 
 - `version`
 
-     Wymagany. Identyfikuje wersję uprawnienia. Zwykle ta wartość jest `1` .
+     Wymagane. Identyfikuje wersję uprawnienia. Zwykle ta wartość jest `1` .
 
 ## <a name="ipermission"></a>IPermission
  Opcjonalny. Ten element jest elementem podrzędnym `PermissionSet` elementu. `IPermission`Element w pełni identyfikuje klasę uprawnień w .NET Framework. `IPermission`Element ma następujące atrybuty, ale może mieć dodatkowe atrybuty odpowiadające właściwościom klasy uprawnień. Aby dowiedzieć się, jaka jest składnia określonego uprawnienia, zobacz przykłady wymienione w pliku Security.config.
 
 - `class`
 
-     Wymagany. Identyfikuje klasę uprawnień przez silną nazwę. Na przykład poniższy kod identyfikuje `FileDialogPermission` Typ.
+     Wymagane. Identyfikuje klasę uprawnień przez silną nazwę. Na przykład poniższy kod identyfikuje `FileDialogPermission` Typ.
 
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
 - `version`
 
-     Wymagany. Identyfikuje wersję uprawnienia. Zazwyczaj ta wartość jest `1` .
+     Wymagane. Identyfikuje wersję uprawnienia. Zazwyczaj ta wartość jest `1` .
 
 - `Unrestricted`
 
-     Wymagany. Określa, czy aplikacja wymaga nieograniczonych uprawnień. Jeśli `true` , przyznanie uprawnienia jest bezwarunkowe. Jeśli `false` , lub jeśli ten atrybut jest niezdefiniowany, jest ograniczony zgodnie z atrybutami specyficznymi dla uprawnień zdefiniowanymi w `IPermission` tagu. Wykonaj następujące uprawnienia:
+     Wymagane. Określa, czy aplikacja wymaga nieograniczonych uprawnień. Jeśli `true` , przyznanie uprawnienia jest bezwarunkowe. Jeśli `false` , lub jeśli ten atrybut jest niezdefiniowany, jest ograniczony zgodnie z atrybutami specyficznymi dla uprawnień zdefiniowanymi w `IPermission` tagu. Wykonaj następujące uprawnienia:
 
     ```xml
     <IPermission
@@ -121,18 +123,18 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do uruchomienia aplikacji n
 
 - `permissionSetReference`
 
-     Wymagany. Identyfikuje identyfikator zestawu uprawnień, który jest uprawnieniem domyślnym. Zestaw uprawnień jest zadeklarowany w `PermissionSet` elemencie.
+     Wymagane. Identyfikuje identyfikator zestawu uprawnień, który jest uprawnieniem domyślnym. Zestaw uprawnień jest zadeklarowany w `PermissionSet` elemencie.
 
 ## <a name="assemblyrequest"></a>assemblyRequest
  Opcjonalny. Identyfikuje uprawnienia do określonego zestawu. Ten element jest elementem podrzędnym `applicationRequestMinimum` elementu i ma następujące atrybuty.
 
 - `Name`
 
-     Wymagany. Identyfikuje nazwę zestawu.
+     Wymagane. Identyfikuje nazwę zestawu.
 
 - `permissionSetReference`
 
-     Wymagany. Identyfikuje identyfikator zestawu uprawnień wymaganego przez ten zestaw. Zestaw uprawnień jest zadeklarowany w `PermissionSet` elemencie.
+     Wymagane. Identyfikuje identyfikator zestawu uprawnień wymaganego przez ten zestaw. Zestaw uprawnień jest zadeklarowany w `PermissionSet` elemencie.
 
 ## <a name="requestedprivileges"></a>requestedPrivileges
  Opcjonalny. Ten element jest elementem podrzędnym `security` elementu i zawiera `requestedExecutionLevel` element. Ten element nie ma atrybutów.
@@ -142,7 +144,7 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do uruchomienia aplikacji n
 
 - `Level`
 
-   Wymagany. Wskazuje poziom zabezpieczeń żądania aplikacji. Możliwe wartości:
+   Wymagane. Wskazuje poziom zabezpieczeń żądania aplikacji. Możliwe wartości:
 
    `asInvoker`, żądanie braku dodatkowych uprawnień. Na tym poziomie nie są wymagane żadne dodatkowe komunikaty zaufania.
 

@@ -1,5 +1,6 @@
 ---
 title: Określ lokalizację, z której użytkownicy końcowi instalują
+description: Dowiedz się, jak ustawić właściwość adres URL instalacji, w której jest hostowana opublikowana aplikacja ClickOnce do zainstalowania.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ba02b1cf8947fa2d1907d6316e36af8f8f54a77
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 3518a2eef331414e5c73c0cebb36681ad2b72d61
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808727"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349623"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Instrukcje: Określanie lokalizacji, z której użytkownicy końcowi będą instalować
 
@@ -38,7 +39,7 @@ W takim przypadku można użyć `Installation URL` właściwości, aby określi�
 
 ### <a name="to-specify-an-installation-url"></a>Aby określić adres URL instalacji
 
-1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań** , w menu **projekt** kliknij polecenie **Właściwości**.
 
 2. Kliknij kartę **Publikowanie** .
 

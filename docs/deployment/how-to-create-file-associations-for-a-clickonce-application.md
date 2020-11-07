@@ -1,5 +1,6 @@
 ---
 title: Utwórz skojarzenia plików (Aplikacja ClickOnce)
+description: Dowiedz się, jak skojarzyć aplikację ClickOnce z co najmniej jednym rozszerzeniem nazwy pliku, aby aplikacja była uruchamiana, gdy użytkownik otworzy taki plik.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcca57415eae6480286f457755b996f22cb6507a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 21f6923185dbfa79fbe18b7b5c6a5d824a5a2cfe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809784"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350039"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Instrukcje: tworzenie skojarzeń plików dla aplikacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje mogą być skojarzone z jednym lub więcej rozszerzeniami nazw plików, dzięki czemu aplikacja zostanie uruchomiona automatycznie, gdy użytkownik otworzy plik tych typów. Dodawanie obsługi rozszerzenia nazwy pliku do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji jest proste.

@@ -1,5 +1,6 @@
 ---
 title: Publikowanie aplikacji WPF z włączonymi stylami wizualizacji
+description: Dowiedz się, jak opublikować aplikację WPF z włączonymi stylami wizualnymi, co pozwala na zmianę wyglądu kontrolek w zależności od motywu wybranego przez użytkownika.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd463fa5253d204ad4025958025235c9b75aa29e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e372d3163dcef84d76d77e54c66cf9f7c788e213
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810461"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349857"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Instrukcje: publikowanie aplikacji WPF z włączonymi stylami wizualizacji
 
@@ -50,7 +51,7 @@ Style wizualne umożliwiają zmianę wyglądu wspólnych kontrolek w zależnośc
 
     **Aby otworzyć plik manifestu w projekcie Visual Basic**
 
-    1. Na pasku menu wybierz **projekt**, **Właściwości** *ProjectName* , gdzie *ProjectName* jest nazwą projektu WPF.
+    1. Na pasku menu wybierz **projekt** , **Właściwości** *ProjectName* , gdzie *ProjectName* jest nazwą projektu WPF.
 
          Pojawią się strony właściwości projektu WPF.
 
@@ -60,7 +61,7 @@ Style wizualne umożliwiają zmianę wyglądu wspólnych kontrolek w zależnośc
 
     **Aby otworzyć plik manifestu w projekcie C#**
 
-    1. Na pasku menu wybierz **projekt**, **Właściwości** *ProjectName* , gdzie *ProjectName* jest nazwą projektu WPF.
+    1. Na pasku menu wybierz **projekt** , **Właściwości** *ProjectName* , gdzie *ProjectName* jest nazwą projektu WPF.
 
          Pojawią się strony właściwości projektu WPF.
 
@@ -69,7 +70,7 @@ Style wizualne umożliwiają zmianę wyglądu wspólnych kontrolek w zależnośc
         > [!NOTE]
         > W przypadku **osadzenia manifestu z ustawieniami domyślnymi** lub **Utwórz aplikację bez manifestu** pojawia się w polu manifestu, style wizualizacji nie są włączone. Jeśli nazwa pliku manifestu pojawia się w polu manifestu, przejdź do następnego kroku w tej procedurze.
 
-    3. W **Eksplorator rozwiązań**wybierz opcję **Pokaż wszystkie pliki**.
+    3. W **Eksplorator rozwiązań** wybierz opcję **Pokaż wszystkie pliki**.
 
          Ten przycisk pokazuje wszystkie elementy projektu, w tym te, które zostały wykluczone i te, które są zwykle ukryte. Plik manifestu jest wyświetlany jako element projektu.
 
@@ -96,7 +97,7 @@ Style wizualne umożliwiają zmianę wyglądu wspólnych kontrolek w zależnośc
     </asmv1:assembly>
     ```
 
-2. W Notatnik kliknij **plik**, a następnie kliknij przycisk **Zapisz jako**.
+2. W Notatnik kliknij **plik** , a następnie kliknij przycisk **Zapisz jako**.
 
 3. W oknie dialogowym **Zapisz jako** na liście rozwijanej **Zapisz jako typ** wybierz pozycję **wszystkie pliki**.
 
@@ -111,7 +112,7 @@ Style wizualne umożliwiają zmianę wyglądu wspólnych kontrolek w zależnośc
 
 1. Otwórz **wiersz polecenia programu Visual Studio**.
 
-    Aby uzyskać więcej informacji na temat sposobu otwierania **wiersza polecenia programu Visual Studio**, zobacz [monity poleceń](/dotnet/framework/tools/developer-command-prompt-for-vs).
+    Aby uzyskać więcej informacji na temat sposobu otwierania **wiersza polecenia programu Visual Studio** , zobacz [monity poleceń](/dotnet/framework/tools/developer-command-prompt-for-vs).
 
    > [!NOTE]
    > Pozostałe kroki dotyczą następujących założeń rozwiązania:

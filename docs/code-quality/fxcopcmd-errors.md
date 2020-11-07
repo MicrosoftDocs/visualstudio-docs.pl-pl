@@ -1,6 +1,8 @@
 ---
 title: błędy FxCopCmd
 ms.date: 10/19/2016
+description: Dowiedz się więcej o kodach błędów zwracanych przez polecenie plik FxCopCmd. Sprawdź, jaki typ błędu reprezentuje każdy kod, i Dowiedz się, jak rozpoznać błędy krytyczne.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
@@ -10,12 +12,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b72f419331b2a02c55d885a2b8855070698879a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88c900ec10ea13e7f9d7092769565703bf52fe8c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78167614"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348935"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Błędy narzędzi plik FxCopCmd
 

@@ -1,5 +1,7 @@
 ---
 title: '&lt;Produkt — &gt; element (program inicjujący) | Microsoft Docs'
+description: Element Product jest elementem XML najwyższego poziomu w pliku produktu. Element Product jest wymagany w pliku produktu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a46f24adde12415acc20a6afd7298c491a3188c0
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747452"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349480"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Product — &gt; element (program inicjujący)
 `Product`Element jest elementem XML najwyższego poziomu w pliku produktu.

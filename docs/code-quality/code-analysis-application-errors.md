@@ -1,6 +1,8 @@
 ---
 title: Błędy aplikacji analizy kodu
 ms.date: 11/04/2016
+description: Dowiedz się więcej o komunikatach o błędach, które generują narzędzia do analizy kodu zarządzanego w programie Visual Studio. Wyświetlanie kodów błędów i odpowiednich opisów.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3f92adea762058b6b4414f0bf9596d77ab698e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dccefdb0325cfd96024923c77d03565f904ea49
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85521319"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348505"
 ---
 # <a name="code-analysis-application-errors"></a>Błędy aplikacji analizy kodu
 
@@ -39,12 +41,12 @@ Ta sekcja zawiera informacje o komunikatach o błędach, które są generowane p
 |[CA0058](ca0058.md)|Nie można załadować zestawów, do których się odwołuje.|
 |[CA0059](ca0059.md)|Błąd przełączania wiersza polecenia.|
 |[CA0060](ca0060.md)|Nie można załadować zestawów, do których odwołuje się pośrednio.|
-|[CA0061](ca0061.md)|Nie można znaleźć reguły "*RuleID*".|
-|[CA0062](ca0062.md)|Nie można znaleźć reguły "*RuleID*", do której odwołuje się zestaw*reguł "RuleName".*|
+|[CA0061](ca0061.md)|Nie można znaleźć reguły " *RuleID* ".|
+|[CA0062](ca0062.md)|Nie można znaleźć reguły " *RuleID* ", do której odwołuje się zestaw *reguł "RuleName".*|
 |[CA0063](ca0063.md)|Nie można załadować pliku zestawu reguł lub jednego z jego zależnych plików zestawu reguł.|
 |[CA0064](ca0064.md)|Nie wykonano żadnej analizy, ponieważ określony zestaw reguł nie zawiera żadnych reguł FxCop.|
-|[CA0065](ca0065.md)|Nieobsługiwana konstrukcja metadanych: typ "*TypeName*" zawiera właściwość i pole o tej samej nazwie "*PropertyFieldName*"|
-|[CA0066](ca0066.md)|Wartość "*VersionId*" podana dla **dla przełącznika/TargetFrameworkVersion** nie jest rozpoznawaną wersją.|
+|[CA0065](ca0065.md)|Nieobsługiwana konstrukcja metadanych: typ " *TypeName* " zawiera właściwość i pole o tej samej nazwie " *PropertyFieldName* "|
+|[CA0066](ca0066.md)|Wartość " *VersionId* " podana dla **dla przełącznika/TargetFrameworkVersion** nie jest rozpoznawaną wersją.|
 |[CA0067](ca0067.md)|Nie znaleziono katalogu.|
 |[CA0068](ca0068.md)|Nie można znaleźć informacji debugowania dla zestawu docelowego *"AssemblyName"*.|
 |[CA0069](ca0069.md)|Korzystanie z alternatywnej platformy. Nie można znaleźć *FrameworkVersion1* . Zamiast tego należy użyć *FrameworkVersion2* . W celu uzyskania najlepszych wyników analizy upewnij się, że zainstalowano poprawną wersję platformy.|

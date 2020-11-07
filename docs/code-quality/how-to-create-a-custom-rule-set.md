@@ -1,6 +1,8 @@
 ---
 title: Tworzenie niestandardowego zestawu reguł analizy kodu
 ms.date: 11/02/2018
+description: Dowiedz się, jak dostosować zestawy reguł analizy kodu w programie Visual Studio. Zobacz, jak tworzyć nowe zestawy od podstaw lub z istniejących zestawów. Opis pierwszeństwa reguł.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe0d6ad545a197ca03c12acf68d779a42fd91ae
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: c6ad55d3d678a26489983bf276359f2141688272
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860502"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348817"
 ---
 # <a name="customize-a-rule-set"></a>Dostosowywanie zestawu reguł
 
@@ -26,7 +28,7 @@ Można utworzyć niestandardowy zestaw reguł, który spełnia wymagania projekt
 
 Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw reguł w **edytorze zestawu reguł**. Z tego miejsca można dodawać lub usuwać określone reguły, a także zmienić akcję, która występuje, gdy reguła zostanie naruszona &mdash; na przykład, pokazać ostrzeżenie lub błąd.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
 
 2. Na stronie **Właściwości** wybierz kartę **Analiza kodu** .
 
@@ -57,11 +59,11 @@ Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw re
 
 Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy plik** :
 
-1. Wybierz pozycję **plik**  >  **Nowy**  >  **plik**lub naciśnij **klawisze CTRL** + **N**.
+1. Wybierz pozycję **plik**  >  **Nowy**  >  **plik** lub naciśnij **klawisze CTRL** + **N**.
 
 2. W oknie dialogowym **nowy plik** wybierz kategorię **Ogólne** po lewej stronie, a następnie wybierz pozycję **zestaw reguł analizy kodu**.
 
-3. Wybierz pozycję **Open** (Otwórz).
+3. Wybierz pozycję **Otwórz**.
 
    *Nowy plik zestawu reguł zostanie* otwarty w edytorze zestawu reguł.
 
@@ -70,7 +72,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 > [!NOTE]
 > Poniższa procedura nie dotyczy projektów platformy .NET Core, które nie mają karty właściwości **analizy kodu** .
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
 
 2. Na stronie **Właściwości** wybierz kartę **Analiza kodu** .
 
@@ -90,7 +92,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
    ![Okno dialogowe Dodawanie lub usuwanie zestawów reguł](media/add-remove-rule-sets.png)
 
-5. Wybierz pozycję **Zapisz jako**, wprowadź nazwę pliku *. zestawu reguł* , a następnie wybierz pozycję **Zapisz**.
+5. Wybierz pozycję **Zapisz jako** , wprowadź nazwę pliku *. zestawu reguł* , a następnie wybierz pozycję **Zapisz**.
 
    Nowy zestaw reguł zostanie wybrany na liście **Uruchom ten zestaw reguł** .
 
@@ -109,7 +111,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
    </RuleSet>
    ```
 
-- Jeśli ta sama reguła zostanie wyświetlona co najmniej dwa razy w zestawie reguł o *takiej samej* ważności, w **Lista błędów**mogą pojawić się następujące ostrzeżenie:
+- Jeśli ta sama reguła zostanie wyświetlona co najmniej dwa razy w zestawie reguł o *takiej samej* ważności, w **Lista błędów** mogą pojawić się następujące ostrzeżenie:
 
    **CA0063: nie można załadować pliku zestawu reguł " \[ Twoje]. zestaw reguł" lub jeden z jego plików zależnych od tego zestawu. Plik jest niezgodny ze schematem zestawu reguł.**
 

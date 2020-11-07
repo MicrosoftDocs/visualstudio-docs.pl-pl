@@ -1,5 +1,7 @@
 ---
 title: Publikowanie aplikacji ClickOnce | Microsoft Docs
+description: Dowiedz się, jak opublikować aplikację ClickOnce po raz pierwszy przy użyciu Kreatora publikacji. Wprowadź późniejsze zmiany na stronie Opublikuj w projektancie projektu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41f8a790decbd3af20141c1c95fcaed678a2ec6a
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 737e1092d88c48227183a32072502cb833ebcd37
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641535"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349493"
 ---
 # <a name="publish-clickonce-applications"></a>Publikowanie aplikacji ClickOnce
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji po raz pierwszy, publikowanie właściwości można ustawić za pomocą Kreatora publikacji. Tylko niektóre właściwości są dostępne w Kreatorze; wszystkie inne właściwości są ustawione na wartości domyślne.

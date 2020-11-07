@@ -1,6 +1,8 @@
 ---
 title: Instruktaż Analizowanie kodu zarządzanego pod kątem wad kodu | Microsoft Docs
 ms.date: 01/29/2018
+description: Dowiedz się, jak analizować zestawy kodu zarządzanego .NET przy użyciu starszej analizy kodu. Zobacz, jak sprawdzać wady i zgodność ze wskazówkami dotyczącymi projektowania platformy .NET.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab8a834de307cf7803b93f025a68b95defe12466
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 7e862b176ab396999d3504e19c4de9a5c407b266
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659195"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349025"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Wskazówki: aby znaleźć wady kodu, użyj statycznej analizy kodu
 
@@ -75,7 +77,7 @@ Ten artykuł przeprowadzi Cię przez proces korzystania z starszej analizy w cel
 
 ::: moniker-end
 
-6. W menu **plik** kliknij polecenie **Zapisz wybrane elementy**, a następnie zamknij strony właściwości.
+6. W menu **plik** kliknij polecenie **Zapisz wybrane elementy** , a następnie zamknij strony właściwości.
 
 7. W menu **kompilacja** kliknij pozycję **Kompiluj CodeAnalysisManagedDemo**.
 
@@ -87,7 +89,7 @@ Ten artykuł przeprowadzi Cię przez proces korzystania z starszej analizy w cel
 
     W zależności od wybranego profilu dewelopera może zajść potrzeba wskaż **inne okna** w menu **Widok** , a następnie wybierz **Lista błędów**.
 
-1. W **Eksplorator rozwiązań**wybierz opcję **Pokaż wszystkie pliki**.
+1. W **Eksplorator rozwiązań** wybierz opcję **Pokaż wszystkie pliki**.
 
 1. Rozwiń węzeł właściwości, a następnie otwórz plik *AssemblyInfo.cs* .
 
@@ -127,11 +129,11 @@ Ten artykuł przeprowadzi Cię przez proces korzystania z starszej analizy w cel
 
       Zostanie wyświetlone okno dialogowe **Tworzenie klucza silnej nazwy** .
 
-   1. W obszarze **Nazwa pliku klucza**wprowadź **TestKey**.
+   1. W obszarze **Nazwa pliku klucza** wprowadź **TestKey**.
 
    1. Wprowadź hasło, a następnie wybierz przycisk **OK**.
 
-   1. W menu **plik** wybierz polecenie **Zapisz wybrane elementy**, a następnie zamknij strony właściwości.
+   1. W menu **plik** wybierz polecenie **Zapisz wybrane elementy** , a następnie zamknij strony właściwości.
 
    Po zakończeniu wszystkich zmian plik Class1.cs powinien wyglądać następująco:
 

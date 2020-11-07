@@ -1,6 +1,8 @@
 ---
 title: Podstawowy zestaw reguł poprawności dla zarządzanego kodu
 ms.date: 11/04/2016
+description: Zapoznaj się z podstawowymi regułami poprawności ustawioną w programie Visual Studio, które koncentrują się na błędach logiki i często spotykane błędy interfejsu API platformy. Zobacz opisy reguł.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: eef90c024c03c0a8346fda6b90225dd0ebf3ee51
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 532cab657403cf8761d2b53304131b70a951a7ff
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659143"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348492"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Podstawowy zestaw reguł poprawności dla zarządzanego kodu
 

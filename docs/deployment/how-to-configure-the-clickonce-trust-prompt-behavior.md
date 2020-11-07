@@ -1,5 +1,7 @@
 ---
 title: Skonfiguruj zachowanie monitu zaufania ClickOnce | Microsoft Docs
+description: Dowiedz się, jak skonfigurować monit zaufania ClickOnce, aby kontrolować, czy użytkownicy końcowi mają opcję instalowania aplikacji ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4becc0244f42507b581029b2dfe21c71570db6
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 68d39bed64ff1392c83d6fc2be0de936ac1b00d2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852234"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350065"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Instrukcje: Konfigurowanie zachowania monitowania zaufania ClickOnce
 Można skonfigurować monit zaufania ClickOnce, aby określić, czy użytkownicy końcowi mogą instalować aplikacje ClickOnce, takie jak aplikacje Windows Forms, aplikacje Windows Presentation Foundation, aplikacje konsolowe, aplikacje przeglądarki WPF i rozwiązania pakietu Office. Aby skonfigurować monit zaufania, należy ustawić klucze rejestru na komputerze użytkownika końcowego.
@@ -55,17 +57,17 @@ Można skonfigurować monit zaufania ClickOnce, aby określić, czy użytkownicy
 
 1. Otwórz edytor rejestru: 
 
-    1. Kliknij przycisk **Start**, a następnie kliknij polecenie **Uruchom**.
+    1. Kliknij przycisk **Start** , a następnie kliknij polecenie **Uruchom**.
 
     2. W polu **Otwórz** wpisz `regedit` , a następnie kliknij przycisk **OK**.
 
 2. Znajdź następujący klucz rejestru:
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ . NETFramework\Security\TrustManager\PromptingLevel**
 
      Jeśli klucz nie istnieje, utwórz go.
 
-3. Dodaj następujące podklucze jako **wartość ciągu**, jeśli jeszcze nie istnieją, ze skojarzonymi wartościami podanymi w poniższej tabeli.
+3. Dodaj następujące podklucze jako **wartość ciągu** , jeśli jeszcze nie istnieją, ze skojarzonymi wartościami podanymi w poniższej tabeli.
 
     |Podklucz wartości ciągu|Wartość|
     |-------------------------|-----------|
@@ -114,17 +116,17 @@ Można skonfigurować monit zaufania ClickOnce, aby określić, czy użytkownicy
 
 1. Otwórz edytor rejestru: 
 
-    1. Kliknij przycisk **Start**, a następnie kliknij polecenie **Uruchom**.
+    1. Kliknij przycisk **Start** , a następnie kliknij polecenie **Uruchom**.
 
     2. W polu **Otwórz** wpisz `regedit` , a następnie kliknij przycisk **OK**.
 
 2. Znajdź następujący klucz rejestru:
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ . NETFramework\Security\TrustManager\PromptingLevel**
 
      Jeśli klucz nie istnieje, utwórz go.
 
-3. Dodaj następujące podklucze jako **wartość ciągu**, jeśli jeszcze nie istnieją, ze skojarzonymi wartościami podanymi w poniższej tabeli.
+3. Dodaj następujące podklucze jako **wartość ciągu** , jeśli jeszcze nie istnieją, ze skojarzonymi wartościami podanymi w poniższej tabeli.
 
     |Podklucz wartości ciągu|Wartość|
     |-------------------------|-----------|
@@ -171,17 +173,17 @@ Można skonfigurować monit zaufania ClickOnce, aby określić, czy użytkownicy
 
 1. Otwórz edytor rejestru: 
 
-    1. Kliknij przycisk **Start**, a następnie kliknij polecenie **Uruchom**.
+    1. Kliknij przycisk **Start** , a następnie kliknij polecenie **Uruchom**.
 
     2. W polu **Otwórz** wpisz `regedit` , a następnie kliknij przycisk **OK**.
 
 2. Znajdź następujący klucz rejestru:
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ . NETFramework\Security\TrustManager\PromptingLevel**
 
      Jeśli klucz nie istnieje, utwórz go.
 
-3. Dodaj następujące podklucze jako **wartość ciągu**, jeśli jeszcze nie istnieją, ze skojarzonymi wartościami podanymi w poniższej tabeli.
+3. Dodaj następujące podklucze jako **wartość ciągu** , jeśli jeszcze nie istnieją, ze skojarzonymi wartościami podanymi w poniższej tabeli.
 
     |Podklucz wartości ciągu|Wartość|
     |-------------------------|-----------|
@@ -222,7 +224,7 @@ Można skonfigurować monit zaufania ClickOnce, aby określić, czy użytkownicy
 
 3. Skompiluj i uruchom aplikację.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce i podpis Authenticode](../deployment/clickonce-and-authenticode.md)

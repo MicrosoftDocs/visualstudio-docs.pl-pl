@@ -1,6 +1,8 @@
 ---
 title: Błędy zasad analizy kodu
 ms.date: 11/04/2016
+description: Informacje o błędach zasad analizy kodu w programie Visual Studio. Wyświetl opisy błędów, które wystąpiły, jeśli zasady nie są spełnione, gdy kod jest zaewidencjonowany.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.policyfailures
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac7a949b3f8a1e0c9d44c6194f87745b4e3f17a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587748"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349103"
 ---
 # <a name="code-analysis-policy-errors"></a>Błędy zasad analizy kodu
 
@@ -47,11 +49,11 @@ Zasady analizy kodu wymagają, aby wszystkie pliki, które zostały zaewidencjon
 
 **Wersja elementu " {0} " jest niepoprawna. Silna nazwa określona w zasadach to " {1} ".**
 
-Ten błąd dotyczy projektów platformy .NET. Reguła. dll wymagana przez zasady analizy kodu istnieje na komputerze lokalnym, ale wersja/klucz publiczny nie są zgodne. Aby naprawić ten błąd, twórca zasad musi zaktualizować pliki dll w katalogu *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\ * na swoim komputerze.
+Ten błąd dotyczy projektów platformy .NET. Reguła. dll wymagana przez zasady analizy kodu istnieje na komputerze lokalnym, ale wersja/klucz publiczny nie są zgodne. Aby naprawić ten błąd, twórca zasad musi zaktualizować pliki dll w katalogu *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* na swoim komputerze.
 
 **{0}zestaw "" określony w zasadach nie istnieje.**
 
-Ten błąd dotyczy projektów platformy .NET. Reguła wymagana przez zasady analizy kodu nie ma odpowiedniej biblioteki DLL zainstalowanej na komputerze klienckim. Aby naprawić ten błąd, twórca zasad musi zaktualizować bibliotekę DLL w katalogu *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\ * na swoim komputerze.
+Ten błąd dotyczy projektów platformy .NET. Reguła wymagana przez zasady analizy kodu nie ma odpowiedniej biblioteki DLL zainstalowanej na komputerze klienckim. Aby naprawić ten błąd, twórca zasad musi zaktualizować bibliotekę DLL w katalogu *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* na swoim komputerze.
 
 **{0}Ustawienia reguły projektu nie są zgodne z zasadami analizy kodu.**
 

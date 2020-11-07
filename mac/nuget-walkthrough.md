@@ -3,15 +3,15 @@ title: Dołączanie pakietu NuGet do projektu
 description: W tym dokumencie opisano sposób dołączania pakietu NuGet w projekcie przy użyciu Visual Studio dla komputerów Mac. Przeprowadza on wyszukiwanie i pobieranie pakietu, a także przedstawia funkcje integracji IDE.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 11/01/2019
+ms.date: 09/04/2020
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e361a1a0fba05a6fdabc66b03008049dfa34784f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74127238"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349340"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Instalowanie pakietów NuGet i zarządzanie nimi w Visual Studio dla komputerów Mac
 
@@ -23,7 +23,7 @@ Aby zapoznać się z wprowadzeniem do korzystania z narzędzia NuGet w Visual St
 
 ## <a name="find-and-install-a-package"></a>Znajdowanie i instalowanie pakietu
 
-1. Gdy projekt jest otwarty w Visual Studio dla komputerów Mac, kliknij prawym przyciskiem myszy folder **zależności** (**pakiety** , jeśli używany jest projekt Xamarin) w **okienko rozwiązania** i wybierz pozycję **Zarządzaj pakietami NuGet..**..
+1. Gdy projekt jest otwarty w Visual Studio dla komputerów Mac, kliknij prawym przyciskiem myszy folder **zależności** ( **pakiety** , jeśli używany jest projekt Xamarin) w **okienko rozwiązania** i wybierz pozycję **Zarządzaj pakietami NuGet..**..
 
     ![Dodaj nową akcję kontekstu pakietu NuGet](media/nuget-walkthrough-packages-menu.png)
 
@@ -59,17 +59,30 @@ using Newtonsoft.Json;
 
 ## <a name="updating-packages"></a>Aktualizowanie pakietów
 
-Aktualizacje pakietu można wykonać wszystkie naraz, klikając prawym przyciskiem myszy węzeł **zależności** (węzeł**pakiety** dla projektów platformy Xamarin) lub indywidualnie dla każdego pakietu. Gdy dostępna jest nowa wersja pakietu NuGet, ikona aktualizacji zostanie wyświetlona ![ strzałka z kółkiem ](media/nuget-walkthrough-update-icon.png) .
+Aktualizacje pakietu można wykonać wszystkie naraz, klikając prawym przyciskiem myszy węzeł **zależności** (węzeł **pakiety** dla projektów platformy Xamarin) lub indywidualnie dla każdego pakietu. Gdy dostępna jest nowa wersja pakietu NuGet, ikona aktualizacji zostanie wyświetlona ![ strzałka z kółkiem ](media/nuget-walkthrough-update-icon.png) .
 
 Kliknij prawym przyciskiem myszy pozycję **zależności** , aby uzyskać dostęp do menu kontekstowego, a następnie wybierz polecenie **Aktualizuj** , aby zaktualizować wszystkie pakiety:
 
-![Menu pakiety](media/nuget-walkthrough-packages-menu-update.png)
+![Menu kontekstowe zależności z wyróżnionym menu Aktualizuj](media/nuget-walkthrough-packages-menu-update.png)
 
 * **Zarządzanie pakietami NuGet** — otwiera okno w celu dodania kolejnych pakietów do projektu.
 * **Update** — sprawdza serwer źródłowy dla każdego pakietu i pobiera nowsze wersje.
 * **Restore** — pobiera wszystkie brakujące pakiety (bez aktualizowania istniejących pakietów do nowszych wersji).
 
 Opcje aktualizacji i przywracania są również dostępne na poziomie rozwiązania i wpływają na wszystkie projekty w rozwiązaniu.
+
+### <a name="updating-to-pre-release-versions-of-packages"></a>Aktualizowanie do wersji wstępnych pakietów
+Aby zaktualizować do nowszej wersji wstępnej pakietu, kliknij prawym przyciskiem myszy pozycję **zależności** , aby otworzyć menu kontekstowe i wybierz polecenie **Zarządzaj pakietami NuGet...** .
+
+![Menu kontekstowe zależności z Zarządzaj pakietami NuGet... menu wyróżnione](media/nuget-walkthrough-packages-menu-manage-nuget-packages.png)
+
+Zaznacz pole wyboru **Pokaż pakiety w wersji wstępnej** w dolnej części okna dialogowego.
+
+![Otwarto okno dialogowe zarządzania pakietami NuGet z zaznaczoną opcją "Pokaż pakiety wersji wstępnej"](media/nuget-walkthrough-show-pre-release-packages.png)
+
+Na koniec na karcie **aktualizacje** okna dialogowego wybierz pakiet, który chcesz zaktualizować, a następnie wybierz nową wersję wstępną z listy rozwijanej **Nowa wersja** i kliknij pozycję **Aktualizuj pakiet**.
+
+![Zostanie otwarte okno dialogowe Zarządzanie pakietami NuGet z zainstalowaną kartą z wybranym pakietem i otwartą listą rozwijaną Nowa wersja.](media/nuget-walkthrough-packages-nuget-dialog-update-installed-package.png)
 
 ### <a name="locating-outdated-packages"></a>Lokalizowanie nieaktualnych pakietów
 W konsoli rozwiązania możesz zobaczyć, która wersja pakietu jest aktualnie zainstalowana, a następnie kliknij prawym przyciskiem myszy pakiet, który chcesz zaktualizować.
@@ -89,7 +102,7 @@ W wyświetlonym menu są dostępne dwie opcje:
 
 Zarządzanie pakietami dla rozwiązania jest wygodnym sposobem pracy z wieloma projektami jednocześnie.
 
-1. Kliknij prawym przyciskiem myszy rozwiązanie i wybierz pozycję **Zarządzaj pakietami NuGet...**:
+1. Kliknij prawym przyciskiem myszy rozwiązanie i wybierz pozycję **Zarządzaj pakietami NuGet...** :
 
     ![Zarządzaj pakietami NuGet dla rozwiązania](media/nuget-walkthrough-manage-packages-solution.png)
 
@@ -121,11 +134,11 @@ W Visual Studio dla komputerów Mac przejdź do **okna preferencje > programu Vi
 
 Kliknij przycisk **Dodaj** , aby skonfigurować nowe źródło. Wprowadź przyjazną nazwę i adres URL (lub ścieżkę pliku) do źródła pakietu. Jeśli źródłem jest bezpieczny serwer sieci Web, wprowadź nazwę użytkownika i hasło. w przeciwnym razie pozostaw te wpisy puste:
 
-![Dodawanie źródeł pakietów](media/nuget-walkthrough-PackageSource2.png)
+![Okno dialogowe Dodawanie źródła pakietu z monitem o nazwę, adres URL lokalizacji, nazwę użytkownika i hasło.](media/nuget-walkthrough-PackageSource2.png)
 
 Podczas wyszukiwania pakietów można wybrać różne źródła:
 
-![Dodawanie źródeł pakietów](media/nuget-walkthrough-PackageSource3.png)
+![Okno dialogowe Dodawanie źródła pakietu zawierające listę źródeł pakietów.](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>Kontrola wersji
 

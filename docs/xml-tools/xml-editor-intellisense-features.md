@@ -1,5 +1,7 @@
 ---
 title: Funkcje IntelliSense edytora XML
+description: Dowiedz się więcej o funkcjach IntelliSense edytora XML w programie Visual Studio i sposobach ich używania z dokumentami XML języka definicji schematu (XSD) i XSLT.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc79d40c2cb363b79c2064bd71fb23dece04e143
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592389"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350247"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funkcje IntelliSense w edytorze XML
 
@@ -87,7 +89,7 @@ Na przykład, jeśli wybierzesz `e:Book` element z listy IntelliSense, gdzie pre
 
 ## <a name="brace-matching"></a>Dopasowywanie nawiasów klamrowych
 
-Edytor XML zawiera wyróżnione nawiasy klamrowe w celu uzyskania natychmiastowej opinii na temat elementów, które właśnie zostały zamknięte. Możesz również użyć skrótu klawiaturowego (**Ctrl** + **]**), aby przeskoczyć z jednego nawiasu klamrowego do pasującego nawiasu klamrowego.
+Edytor XML zawiera wyróżnione nawiasy klamrowe w celu uzyskania natychmiastowej opinii na temat elementów, które właśnie zostały zamknięte. Możesz również użyć skrótu klawiaturowego ( **Ctrl** + **]** ), aby przeskoczyć z jednego nawiasu klamrowego do pasującego nawiasu klamrowego.
 
 Edytor XML wykonuje tę czynności dla następujących elementów:
 
@@ -121,7 +123,7 @@ Sekcja **autoinsert** na stronie **różnej** kontroluje następujące zachowani
 
 1. Wybierz **Opcje** z menu **Narzędzia** .
 
-2. Rozwiń węzeł **Edytor tekstu**, rozwiń pozycję **XML**i wybierz pozycję **różne**.
+2. Rozwiń węzeł **Edytor tekstu** , rozwiń pozycję **XML** i wybierz pozycję **różne**.
 
 3. Wprowadź zmiany w sekcji **autoinsert** i kliknij przycisk **OK**.
 

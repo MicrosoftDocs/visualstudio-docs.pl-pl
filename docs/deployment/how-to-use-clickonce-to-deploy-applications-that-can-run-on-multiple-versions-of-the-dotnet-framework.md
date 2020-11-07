@@ -1,5 +1,7 @@
 ---
 title: Wdrażanie aplikacji wieloobiektowych przy użyciu technologii ClickOnce
+description: Dowiedz się, jak wdrożyć aplikację, która jest przeznaczona dla wielu wersji .NET Framework za pomocą technologii wdrażania ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7ede1cb4faa437d9cff8bd1239f9c271112ccf72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67dcee1fac0b5ec082a7f92285c6c0ac2523800a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381707"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349519"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Instrukcje: używanie technologii ClickOnce do wdrażania aplikacji, które mogą być uruchamiane na wielu wersjach programu .NET Framework
 Aplikację, która jest przeznaczona dla wielu wersji .NET Framework, można wdrożyć przy użyciu technologii wdrażania ClickOnce. Wymaga to wygenerowania i zaktualizowania manifestów aplikacji i wdrożenia.
@@ -61,7 +63,7 @@ Aplikację, która jest przeznaczona dla wielu wersji .NET Framework, można wdr
     |4 pełne|\<framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />|
     |Klient 3,5|\<framework targetVersion="3.5" profile="Client" supportedRuntime="2.0.50727" />|
     |3,5 pełne|\<framework targetVersion="3.5" profile="Full" supportedRuntime="2.0.50727" />|
-    |3,0|\<framework targetVersion="3.0" supportedRuntime="2.0.50727" />|
+    |3.0|\<framework targetVersion="3.0" supportedRuntime="2.0.50727" />|
 
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Aby zmienić plik app.config, aby wyświetlić listę zgodnych wersji środowiska uruchomieniowego .NET Framework
 

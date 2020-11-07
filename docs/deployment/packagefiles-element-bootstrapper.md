@@ -1,5 +1,7 @@
 ---
 title: '&lt;PackageFiles — &gt; element (program inicjujący) | Microsoft Docs'
+description: Dowiedz się więcej na temat elementu PackageFiles, który zawiera elementy PackageFile, które definiują pakiety instalacyjne wykonywane w wyniku elementu Command.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60d6491101bef33f1d8c91d4f7640be9d7277da0
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747511"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349545"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles — &gt; element (program inicjujący)
 `PackageFiles`Element zawiera `PackageFile` elementy, które definiują pakiety instalacyjne wykonywane w wyniku `Command` elementu.
@@ -55,7 +57,7 @@ ms.locfileid: "66747511"
 
 | Atrybut | Opis |
 |---------------| - |
-| `Name` | Wymagany. Nazwa pliku pakietu. Jest to nazwa, do której `Command` element będzie się odwoływać podczas definiowania warunków, w których pakiet jest instalowany. Ta wartość jest również używana jako klucz w `Strings` tabeli w celu pobrania zlokalizowanej nazwy, która [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] będzie używana przez narzędzia do opisywania pakietu. |
+| `Name` | Wymagane. Nazwa pliku pakietu. Jest to nazwa, do której `Command` element będzie się odwoływać podczas definiowania warunków, w których pakiet jest instalowany. Ta wartość jest również używana jako klucz w `Strings` tabeli w celu pobrania zlokalizowanej nazwy, która [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] będzie używana przez narzędzia do opisywania pakietu. |
 | `HomeSite` | Opcjonalny. Lokalizacja pakietu na serwerze zdalnym, jeśli nie jest zawarta w instalatorze. |
 | `CopyOnBuild` | Opcjonalny. Określa, czy program inicjujący powinien skopiować plik pakietu na dysk w czasie kompilacji. Wartość domyślna to true. |
 | `PublicKey` | Zaszyfrowany klucz publiczny podpisującego certyfikat pakietu. Wymagane `HomeSite` , jeśli jest używany; w przeciwnym razie opcjonalny. |

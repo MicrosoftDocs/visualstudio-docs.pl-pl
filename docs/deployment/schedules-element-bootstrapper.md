@@ -1,5 +1,7 @@
 ---
 title: '&lt;Schedules — &gt; element (program inicjujący) | Microsoft Docs'
+description: Element harmonogramów zawiera elementy harmonogramu, które definiują określone czasy, w których polecenia zdefiniowane przez element polecenia powinny być uruchamiane.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f6e4ae90dbd36dab4f4df7f72d5ecf57ee04b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f84727647f198c25175139412d3e8509e73fe1c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62927335"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349363"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Schedules — &gt; element (program inicjujący)
 `Schedules`Element zawiera `Schedule` elementy, które definiują określone czasy, w których polecenia zdefiniowane przez `Command` element powinny być uruchamiane.
@@ -49,7 +51,7 @@ ms.locfileid: "62927335"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Name`|Wymagany. Nazwa elementu harmonogramu. Odpowiada `ScheduleName` właściwości `Command` elementu. Gdy `Command` odwołuje się do określonego harmonogramu, zostanie on wykonany tylko w czasie wskazywanym przez ten `Schedule` element. Harmonogramy mogą również być skojarzone z `FailIf` `BypassIf` elementami i, które ograniczają te testy warunkowe do wykonania zgodnie z określonym harmonogramem. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md).|
+|`Name`|Wymagane. Nazwa elementu harmonogramu. Odpowiada `ScheduleName` właściwości `Command` elementu. Gdy `Command` odwołuje się do określonego harmonogramu, zostanie on wykonany tylko w czasie wskazywanym przez ten `Schedule` element. Harmonogramy mogą również być skojarzone z `FailIf` `BypassIf` elementami i, które ograniczają te testy warunkowe do wykonania zgodnie z określonym harmonogramem. Aby uzyskać więcej informacji, zobacz [ \<Commands> element](../deployment/commands-element-bootstrapper.md).|
 
  Dany `Schedule` element może mieć dokładnie jeden z następujących elementów podrzędnych.
 
